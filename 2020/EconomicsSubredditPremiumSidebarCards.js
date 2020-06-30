@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.02a588056ebe37151d2d.js
-// Retrieved at 6/8/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.48b6060b2df479b09ae4.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, s) {
@@ -86,13 +86,13 @@
 				h = s("./src/reddit/helpers/economics/sortBadges.ts"),
 				g = s("./src/reddit/icons/svgs/AddSquare/index.tsx"),
 				x = s("./src/reddit/models/Badge/index.ts");
-			var C = Object(m.a)({
+			var f = Object(m.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => s.e("CustomBadgeHovercardTooltip").then(s.bind(null, "./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/tooltip.tsx")).then(e => e.default)
 				}),
-				f = s("./src/reddit/components/Badges/UserDisplay/index.m.less"),
-				E = s.n(f);
+				C = s("./src/reddit/components/Badges/UserDisplay/index.m.less"),
+				E = s.n(C);
 			const O = "add-custom-badge-tooltip",
 				P = 100,
 				I = 2 * P;
@@ -124,7 +124,7 @@
 						onClick: this.props.onOpenUploadDialog
 					}, i.a.createElement(g.a, {
 						className: E.a.addCustom
-					})), i.a.createElement(C, {
+					})), i.a.createElement(f, {
 						className: E.a.badgeHovercard,
 						subredditId: this.props.subredditId,
 						targetPosition: ["left", "bottom"],
@@ -509,8 +509,8 @@
 			var h = s("./src/lib/classNames/index.ts"),
 				g = s("./src/reddit/actions/economics/banners/thunkedActions.ts"),
 				x = s("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
-				C = s("./src/reddit/actions/tooltip.ts"),
-				f = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/async.tsx"),
+				f = s("./src/reddit/actions/tooltip.ts"),
+				C = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/async.tsx"),
 				E = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				O = s("./src/reddit/endpoints/economics/banners.ts"),
 				P = s("./src/reddit/icons/svgs/Menu/index.tsx"),
@@ -524,19 +524,19 @@
 				_ = s("./src/reddit/models/Badge/managementPage.ts"),
 				B = s("./src/reddit/selectors/telemetry.ts"),
 				N = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/Controls/Button/index.m.less"),
-				M = s.n(N);
+				T = s.n(N);
 
-			function T(e) {
+			function M(e) {
 				return i.a.createElement("button", {
-					className: Object(h.a)(e.className, M.a.button),
+					className: Object(h.a)(e.className, T.a.button),
 					onClick: t => {
 						t.stopPropagation(), e.onClick()
 					}
 				}, e.children)
 			}
 			var D = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/Controls/index.m.less"),
-				H = s.n(D);
-			const U = Object(o.c)({
+				U = s.n(D);
+			const A = Object(o.c)({
 				customBadgesEnabled: d.d.spCustomBadges,
 				hasGalleryBadges: (e, t) => {
 					let {
@@ -551,7 +551,7 @@
 					return Object(a.B)(e, s)
 				}
 			});
-			var A = Object(v.c)(Object(n.b)(U, (e, t) => {
+			var H = Object(v.c)(Object(n.b)(A, (e, t) => {
 					let {
 						subredditId: s,
 						sendEvent: r
@@ -578,28 +578,28 @@
 				})((function(e) {
 					return i.a.createElement("div", {
 						className: e.className
-					}, e.userHasBadges && i.a.createElement(T, {
+					}, e.userHasBadges && i.a.createElement(M, {
 						onClick: e.onOpenBadges
 					}, i.a.createElement(y.a, {
-						className: H.a.icon
+						className: U.a.icon
 					}), S.fbt._("Edit My Badges Appearance", null, {
 						hk: "4j32cW"
-					})), e.hasGalleryBadges && i.a.createElement(T, {
+					})), e.hasGalleryBadges && i.a.createElement(M, {
 						onClick: e.onOpenGallery
 					}, i.a.createElement(k.a, {
-						className: H.a.icon
+						className: U.a.icon
 					}), S.fbt._("Buy Badges", null, {
 						hk: "3HJQ3p"
-					})), e.customBadgesEnabled && i.a.createElement(T, {
+					})), e.customBadgesEnabled && i.a.createElement(M, {
 						onClick: e.onOpenUploadDialog
 					}, i.a.createElement(w.a, {
-						className: H.a.addIcon
+						className: U.a.addIcon
 					}), S.fbt._("Upload Badge", null, {
 						hk: "49njLC"
-					})), e.onOpenPurchaseModal && i.a.createElement(T, {
+					})), e.onOpenPurchaseModal && i.a.createElement(M, {
 						onClick: e.onOpenPurchaseModal
 					}, i.a.createElement(w.a, {
-						className: H.a.addIcon
+						className: U.a.addIcon
 					}), S.fbt._("Add Months", null, {
 						hk: "4k6iqB"
 					})))
@@ -607,13 +607,13 @@
 				L = s("./src/higherOrderComponents/asTooltip.tsx"),
 				F = s("./src/reddit/controls/Dropdown/index.tsx"),
 				G = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				V = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/DismissDropdown/index.m.less"),
-				q = s.n(V);
-			const W = Object(L.a)(F.a);
+				q = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/DismissDropdown/index.m.less"),
+				W = s.n(q);
+			const R = Object(L.a)(F.a);
 
-			function R(e) {
-				return i.a.createElement(W, {
-					className: Object(h.a)(q.a.container, e.className),
+			function Q(e) {
+				return i.a.createElement(R, {
+					className: Object(h.a)(W.a.container, e.className),
 					isOpen: e.isOpen,
 					targetPosition: ["right", "bottom"],
 					tooltipId: e.tooltipId,
@@ -625,22 +625,22 @@
 					onClick: e.onClickDismiss
 				}))
 			}
-			var Q = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/loading.m.less"),
-				Z = s.n(Q);
+			var V = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/loading.m.less"),
+				K = s.n(V);
 
-			function K(e) {
+			function Z(e) {
 				return i.a.createElement("div", {
-					className: Object(h.a)(Z.a.container, e.className)
+					className: Object(h.a)(K.a.container, e.className)
 				}, i.a.createElement("div", {
-					className: Z.a.title
+					className: K.a.title
 				}), i.a.createElement("div", {
-					className: Z.a.user
+					className: K.a.user
 				}), i.a.createElement("div", {
-					className: Z.a.control
+					className: K.a.control
 				}, i.a.createElement("div", {
-					className: Z.a.icon
+					className: K.a.icon
 				}), i.a.createElement("div", {
-					className: Z.a.buttonText
+					className: K.a.buttonText
 				})))
 			}
 			var z = s("./src/reddit/components/Economics/SubredditPremium/Badges/UserPreview/index.tsx"),
@@ -781,8 +781,8 @@
 				account: e => e.user.account
 			});
 			var xe = Object(n.b)(ge)(he),
-				Ce = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/index.m.less"),
-				fe = s.n(Ce);
+				fe = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/index.m.less"),
+				Ce = s.n(fe);
 			const Ee = "subreddit-premium-commuity-card-dismiss";
 			class Oe extends i.a.Component {
 				constructor() {
@@ -815,32 +815,32 @@
 					let t;
 					return t = this.props.userIsPremiumSubscriber === a.b.Subscribed ? i.a.createElement(i.a.Fragment, null, i.a.createElement(se, {
 						subredditId: this.props.subredditId
-					}), i.a.createElement(A, {
-						className: fe.a.controlsPostPurchase,
+					}), i.a.createElement(H, {
+						className: Ce.a.controlsPostPurchase,
 						subredditId: this.props.subredditId,
 						onOpenPurchaseModal: this.props.customCrypto ? this.openCheckout : void 0
-					}), this.props.customCrypto && this.state.checkoutOpen && i.a.createElement(f.a, {
+					}), this.props.customCrypto && this.state.checkoutOpen && i.a.createElement(C.a, {
 						withOverlay: !0,
 						subredditId: this.props.subredditId,
 						onClose: this.closeCheckout
 					})) : this.props.userIsPremiumSubscriber === a.b.NotSubscribed ? i.a.createElement(i.a.Fragment, null, e && i.a.createElement(i.a.Fragment, null, i.a.createElement(P.a, {
 						id: Ee,
-						className: fe.a.menuIcon,
+						className: Ce.a.menuIcon,
 						onClick: this.props.onOpenDropdown
-					}), i.a.createElement(R, {
+					}), i.a.createElement(Q, {
 						isOpen: this.props.dropdownIsOpen,
 						tooltipId: Ee,
 						onClickDismiss: this.props.onDismissBanner
 					})), i.a.createElement(xe, {
 						hideSlideshow: !e,
 						subredditId: this.props.subredditId
-					}), i.a.createElement(A, {
-						className: Object(h.a)(fe.a.controlsPrePurchase, {
-							[fe.a.controlsBorder]: e
+					}), i.a.createElement(H, {
+						className: Object(h.a)(Ce.a.controlsPrePurchase, {
+							[Ce.a.controlsBorder]: e
 						}),
 						subredditId: this.props.subredditId
-					})) : i.a.createElement(K, null), i.a.createElement(E.a, {
-						className: Object(h.a)(this.props.className, fe.a.container),
+					})) : i.a.createElement(Z, null), i.a.createElement(E.a, {
+						className: Object(h.a)(this.props.className, Ce.a.container),
 						title: this.props.meta.membershipAlt
 					}, t)
 				}
@@ -883,7 +883,7 @@
 					onDismissBanner: () => e(Object(g.a)(s, O.a.AnimatedCard)),
 					onFetchDismissedBanners: () => e(Object(g.b)(s)),
 					onFetchSubscriptionData: () => e(Object(x.f)(s)),
-					onOpenDropdown: () => e(Object(C.h)({
+					onOpenDropdown: () => e(Object(f.h)({
 						tooltipId: Ee
 					}))
 				}
@@ -1008,19 +1008,6 @@
 				}))
 			}
 		},
-		"./src/reddit/icons/svgs/Gallery/index.tsx": function(e, t, s) {
-			"use strict";
-			var r = s("./node_modules/react/index.js"),
-				i = s.n(r);
-			t.a = e => i.a.createElement("svg", {
-				className: e.className,
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 16 16"
-			}, i.a.createElement("g", null, i.a.createElement("path", {
-				fill: "inherit",
-				d: "M1 0H6C6.55298 0 7 0.446991 7 1V6C7 6.55301 6.55298 7 6 7H1C0.447021 7 0 6.55301 0 6V1C0 0.446991 0.447021 0 1 0ZM10 0H15C15.553 0 16 0.446991 16 1V6C16 6.55301 15.553 7 15 7H10C9.44702 7 9 6.55301 9 6V1C9 0.446991 9.44702 0 10 0ZM15 9H10C9.44702 9 9 9.44699 9 10V15C9 15.553 9.44702 16 10 16H15C15.553 16 16 15.553 16 15V10C16 9.44699 15.553 9 15 9ZM1 9H6C6.55298 9 7 9.44699 7 10V15C7 15.553 6.55298 16 6 16H1C0.447021 16 0 15.553 0 15V10C0 9.44699 0.447021 9 1 9Z"
-			})))
-		},
 		"./src/reddit/icons/svgs/Menu/index.tsx": function(e, t, s) {
 			"use strict";
 			var r = s("./node_modules/react/index.js"),
@@ -1037,4 +1024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.02a588056ebe37151d2d.js.map
+//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.48b6060b2df479b09ae4.js.map

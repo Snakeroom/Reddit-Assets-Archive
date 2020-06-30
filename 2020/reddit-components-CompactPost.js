@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.237a8e802d58030329b0.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.bb794d758ff0f906227c.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -418,8 +418,8 @@
 				_ = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				w = s("./src/reddit/selectors/postFlair.ts"),
 				j = s("./src/reddit/selectors/posts.ts"),
-				P = s("./src/reddit/selectors/user.ts"),
-				k = s("./src/reddit/components/AdLinkWrapper/index.tsx"),
+				k = s("./src/reddit/selectors/user.ts"),
+				P = s("./src/reddit/components/AdLinkWrapper/index.tsx"),
 				C = s("./src/reddit/components/AwardBadges/index.tsx"),
 				T = s("./src/reddit/components/CallToActionButton/index.tsx"),
 				S = s("./src/reddit/components/CommentsChat/LiveIcon/index.tsx"),
@@ -501,7 +501,7 @@
 				je = Object(r.b)(() => Object(i.c)({
 					activeModalId: g.a,
 					crosspost: j.d,
-					currentUser: P.i,
+					currentUser: k.i,
 					flairStyleTemplate: de.R,
 					isActive: j.j,
 					isExpanded: j.m,
@@ -515,7 +515,7 @@
 					post: j.O,
 					showEditFlair: w.a,
 					subredditOrProfile: j.bb,
-					userIsOp: P.hb
+					userIsOp: k.hb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -557,7 +557,7 @@
 						})
 					}
 				}));
-			class Pe extends n.a.Component {
+			class ke extends n.a.Component {
 				componentDidUpdate(e) {
 					this.props.onSizeChanged && e.isExpanded !== this.props.isExpanded && this.props.onSizeChanged(this.props.post.id)
 				}
@@ -580,7 +580,7 @@
 						inSubredditOrProfile: _ = !1,
 						layout: w,
 						moderatorPermissions: j,
-						modModeEnabled: P,
+						modModeEnabled: k,
 						onClickPost: A,
 						onFlairChanged: Q,
 						onIgnoreReports: oe,
@@ -594,10 +594,10 @@
 						showEditFlair: _e,
 						toggleCheckbox: we,
 						tooltipType: je,
-						sendEvent: Pe
-					} = this.props, Ce = !!ie.media && ie.media.type === f.n.RTJSON, Se = le && Ce, Ie = Object(U.b)(ie.id, y), Me = Object(be.a)(j), Le = Object(me.a)(j), Ae = Object(ue.a)(j), Be = "-mod-actions-menu-".concat(ie.id), Fe = "voting-arrows-".concat(ie.id), Re = !!r && Object(h.e)(r) === ie.author, De = Object(z.c)(ie), We = Object(F.a)("View--Reports", ie.id, je), He = Object(z.a)(ie), Ve = !(y || v || O), ze = ie.media && ie.media.type === f.n.LIVEVIDEO, {
+						sendEvent: ke
+					} = this.props, Ce = !!ie.media && ie.media.type === f.o.RTJSON, Se = le && Ce, Ie = Object(U.b)(ie.id, y), Me = Object(be.a)(j), Le = Object(me.a)(j), Ae = Object(ue.a)(j), Be = "-mod-actions-menu-".concat(ie.id), Fe = "voting-arrows-".concat(ie.id), Re = !!r && Object(h.e)(r) === ie.author, De = Object(z.c)(ie), We = Object(F.a)("View--Reports", ie.id, je), He = Object(z.a)(ie), Ve = !(y || v || O), ze = ie.media && ie.media.type === f.o.LIVEVIDEO, {
 						moderationPrompt: Ge
-					} = ie, Ke = e => Pe(Object(x.f)(ie.id, e)), Ze = n.a.createElement(X.a, {
+					} = ie, Ke = e => ke(Object(x.f)(ie.id, e)), Ze = n.a.createElement(X.a, {
 						className: Object(c.a)(Oe.a.compactPostStyles, ye.a.postContainer, Object(b.a)(this.props), t),
 						isOverlay: y,
 						style: Object.assign({}, Object(b.d)(this.props), Object(b.b)(this.props.flairStyleTemplate)),
@@ -699,16 +699,16 @@
 						isCommentPermalink: O,
 						isOverlay: y,
 						postId: ie.id,
-						modModeEnabled: P,
+						modModeEnabled: k,
 						numComments: ie.numComments,
 						type: m.g.Compact
 					}), n.a.createElement(G.a, {
 						className: ye.a.modToolsFlatlist,
 						isOverlay: !1,
 						layout: w,
-						modModeEnabled: P,
+						modModeEnabled: k,
 						post: ie,
-						sendEvent: Pe,
+						sendEvent: ke,
 						showIconsOnly: !0
 					}), Me && n.a.createElement(D.a, {
 						dropdownId: Be,
@@ -719,10 +719,10 @@
 						hasModFullPerms: Ae,
 						isOverlay: !1,
 						isPostAuthor: Re,
-						modModeEnabled: P,
+						modModeEnabled: k,
 						post: ie,
 						tooltipId: Be
-					})), Me && De && !P && n.a.createElement(se.c, {
+					})), Me && De && !k && n.a.createElement(se.c, {
 						text: "".concat(He),
 						onClick: () => {
 							this.props.onOpenReportsDropdown(We), Ke("post_report_menu")
@@ -742,7 +742,7 @@
 						layout: w,
 						permalink: ie.permalink,
 						postId: ie.postId,
-						sendEvent: Pe,
+						sendEvent: ke,
 						showEditPost: Se,
 						showEditFlair: _e,
 						dropdownId: "".concat(ie.id, "-overflow-menu"),
@@ -754,7 +754,7 @@
 							hide: !1,
 							report: !1
 						})
-					}), !ve && Te(ie, o, E, !0))), ie.source && ie.source.url && ie.isSponsored && n.a.createElement(k.a, {
+					}), !ve && Te(ie, o, E, !0))), ie.source && ie.source.url && ie.isSponsored && n.a.createElement(P.a, {
 						className: ye.a.adLinkWrapper
 					}, n.a.createElement(pe.a, {
 						href: ie.source.url.replace(d.a.redditUrl, ""),
@@ -767,14 +767,14 @@
 						postId: ie.id,
 						source: ie.source,
 						isNotCardView: !0
-					}, ie.callToAction)), P && Me && De && n.a.createElement("div", {
+					}, ie.callToAction)), k && Me && De && n.a.createElement("div", {
 						className: ye.a.compactPostRow
 					}, n.a.createElement(V.a, {
 						onIgnoreReports: oe,
 						reportable: ie
 					})), n.a.createElement(R.d, {
 						postId: ie.id
-					}))), E && n.a.createElement(ke, {
+					}))), E && n.a.createElement(Pe, {
 						post: ie,
 						scrollerItemRef: Ee,
 						flairStyleTemplate: i
@@ -787,7 +787,7 @@
 					return n.a.createElement(n.a.Fragment, null, Ze)
 				}
 			}
-			const ke = e => n.a.createElement(Z.a, {
+			const Pe = e => n.a.createElement(Z.a, {
 					className: Object(c.a)(e.className, ye.a.expandedContentWrapper),
 					flairStyleTemplate: e.flairStyleTemplate
 				}, e.post.crosspostRootId ? n.a.createElement("div", {
@@ -832,7 +832,7 @@
 				})], !e.isSponsored && n.a.createElement(le.a, null, " Posted by "), n.a.createElement(te.b, {
 					post: e
 				}));
-			t.default = je(Object(p.c)(Object(ie.b)(Object(l.a)(Pe))))
+			t.default = je(Object(p.c)(Object(ie.b)(Object(l.a)(ke))))
 		},
 		"./src/reddit/components/CrosspostBox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -891,8 +891,8 @@
 			const _ = y.a.div("Container", E.a),
 				w = y.a.div("PostMetaWrapper", E.a),
 				j = y.a.wrapped(u.c, "PostTitle", E.a),
-				P = y.a.div("FlatList", E.a),
-				k = y.a.div("FlatItem", E.a),
+				k = y.a.div("FlatList", E.a),
+				P = y.a.div("FlatItem", E.a),
 				C = y.a.span("FlatListDotSpacer", E.a),
 				T = y.a.wrapped(_, "LinkContainer", E.a),
 				S = y.a.div("Content", E.a),
@@ -958,12 +958,12 @@
 					} = e, {
 						score: s
 					} = t;
-					return r.a.createElement(P, null, r.a.createElement(k, null, o.fbt._({
+					return r.a.createElement(k, null, r.a.createElement(P, null, o.fbt._({
 						"*": "{point count} points",
 						_1: "1 point"
 					}, [o.fbt._plural(s, "point count", Object(l.b)(s))], {
 						hk: "PNZhd"
-					})), r.a.createElement(C, null), r.a.createElement(k, null, F(e)))
+					})), r.a.createElement(C, null), r.a.createElement(P, null, F(e)))
 				},
 				F = e => {
 					const {
@@ -1024,8 +1024,8 @@
 				_ = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				w = s("./src/reddit/icons/fonts/Photos/index.tsx"),
 				j = s("./src/reddit/icons/fonts/Text/index.tsx"),
-				P = s("./src/reddit/icons/svgs/Poll/index.tsx"),
-				k = s("./src/reddit/models/Media/index.ts"),
+				k = s("./src/reddit/icons/svgs/Poll/index.tsx"),
+				P = s("./src/reddit/models/Media/index.ts"),
 				C = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				T = s.n(C);
 			const S = Object(a.b)(null, (e, t) => ({
@@ -1040,28 +1040,28 @@
 					if (t) return r.a.createElement(u.a, {
 						className: o
 					});
-					if (s.pollData) return r.a.createElement(P.a, {
+					if (s.pollData) return r.a.createElement(k.a, {
 						className: o
 					});
 					switch (e) {
-						case k.n.GIFVIDEO:
+						case P.o.GIFVIDEO:
 							return r.a.createElement(y.a, {
 								className: o
 							});
-						case k.n.IMAGE:
+						case P.o.IMAGE:
 							return r.a.createElement(w.a, {
 								className: o
 							});
-						case k.n.TEXT:
-						case k.n.RTJSON:
+						case P.o.TEXT:
+						case P.o.RTJSON:
 							return r.a.createElement(j.a, {
 								className: o
 							});
-						case k.n.VIDEO:
+						case P.o.VIDEO:
 							return r.a.createElement(E.a, {
 								className: o
 							});
-						case k.n.EMBED:
+						case P.o.EMBED:
 						default:
 							return r.a.createElement(g.a, {
 								className: o
@@ -1231,7 +1231,7 @@
 					shouldShowSubscribeButton: _,
 					subredditOrProfile: w,
 					tooltipType: j
-				} = e, P = !!y;
+				} = e, k = !!y;
 				return n.a.createElement("div", {
 					className: O.a.metaContainer
 				}, !o && !g.isSponsored && w && n.a.createElement(i.a, {
@@ -1266,7 +1266,7 @@
 					className: O.a.donationAmount,
 					contentId: g.id,
 					subredditId: w.id
-				}), !P && n.a.createElement(r.a, {
+				}), !k && n.a.createElement(r.a, {
 					hideCta: s,
 					isOverlay: !!E,
 					thing: g
@@ -1492,7 +1492,21 @@
 				className: "".concat(Object(r.b)("expandoMediaVideo"), " ").concat(e.className)
 			}), "TextMediaIcon", i.a);
 			t.a = d
+		},
+		"./src/reddit/icons/svgs/ChevronDown/index.tsx": function(e, t, s) {
+			"use strict";
+			var o = s("./node_modules/react/index.js"),
+				n = s.n(o);
+			t.a = e => n.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 12 12",
+				xmlns: "http://www.w3.org/2000/svg",
+				onClick: e.onClick
+			}, n.a.createElement("g", null, n.a.createElement("polygon", {
+				fill: "inherit",
+				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
+			})))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.237a8e802d58030329b0.js.map
+//# sourceMappingURL=reddit-components-CompactPost.bb794d758ff0f906227c.js.map

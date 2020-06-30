@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.79aabc04e1d114323489.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.94baebcb75480ddd30db.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e"], {
 		"./src/reddit/components/CompactPost/Placeholder/index.m.less": function(e, t, s) {
@@ -268,8 +268,8 @@
 				F = Object(d.c)({
 					loadingPostComponentForLayout: () => V
 				}),
-				B = Object(l.b)(F);
-			class U extends c.a.Component {
+				U = Object(l.b)(F);
+			class B extends c.a.Component {
 				constructor() {
 					super(...arguments), this.mounted = !1, this.state = {
 						visible: !1
@@ -308,7 +308,7 @@
 					}, c.a.Children.toArray(h))
 				}
 			}
-			t.a = B(U)
+			t.a = U(B)
 		},
 		"./src/reddit/components/PostList/SomethingWrong.tsx": function(e, t, s) {
 			"use strict";
@@ -408,7 +408,7 @@
 				};
 			const {
 				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 500, B = new I.a(F), U = new I.a(F), K = new I.a(F), H = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 500, U = new I.a(F), B = new I.a(F), K = new I.a(F), H = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
@@ -416,16 +416,16 @@
 			}, D = b.a.div("SeeMore", T.a), W = b.a.wrapped(j.a, "ArrowRight", T.a), Q = (e, t, s, o, r, n, i, a) => {
 				const c = s ? "last-".concat(o, "-").concat(r) : "",
 					l = "entered-".concat(e, "-").concat(t, "-").concat(c, "-").concat(n);
-				let d = B.get(l);
+				let d = U.get(l);
 				return void 0 === d && (d = () => {
 					s && i.onBottomViewed(o, r), i.trackOnPostEnteredViewport(e, t, a)
-				}, B.set(l, d)), d
+				}, U.set(l, d)), d
 			}, q = (e, t, s, o) => {
 				const r = "left-".concat(e, "-").concat(t);
-				let n = U.get(r);
+				let n = B.get(r);
 				return void 0 === n && (n = r => {
 					s.trackOnPostExitedViewport(e, t, r, o)
-				}, U.set(r, n)), n
+				}, B.set(r, n)), n
 			}, J = (e, t) => {
 				const s = "click-".concat(e);
 				let o = K.get(s);
@@ -614,11 +614,11 @@
 							R = Q(e, o, s, d, m, g, this.props, t),
 							N = q(e, o, this.props, t),
 							M = J(e, this.props),
-							T = j.media && j.media.type === w.n.EMBED ? j.media.provider : null;
+							T = j.media && j.media.type === w.o.EMBED ? j.media.provider : null;
 						L = {
 							estHeight: Object(_.c)(C, o),
 							id: e,
-							isFocusable: !(!j.media || !(o === P.g.Large || o === P.g.Classic && Object(w.B)(j.media))) && (w.d.has(j.media.type) && (!T || !w.q.has(T)) && !j.isSpoiler && !j.isNSFW),
+							isFocusable: !(!j.media || !(o === P.g.Large || o === P.g.Classic && Object(w.E)(j.media))) && (w.d.has(j.media.type) && (!T || !w.s.has(T)) && !j.isSpoiler && !j.isNSFW),
 							trackOnEnteredViewport: R,
 							trackOnExitedViewport: N,
 							render: t => {
@@ -820,4 +820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.79aabc04e1d114323489.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.94baebcb75480ddd30db.js.map

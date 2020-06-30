@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.501628c59484a35d9b55.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.bfe08808473cf72b9785.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -864,7 +864,7 @@
 						}),
 						id: n ? n(r.id) : r.id,
 						tabIndex: -1
-					}, t), x = !!r.media && r.media.type === c.n.VIDEO;
+					}, t), x = !!r.media && r.media.type === c.o.VIDEO;
 					return r.isSponsored || x ? o.a.createElement(i.a, {
 						post: r,
 						trackDisplay: !0
@@ -1128,7 +1128,7 @@
 						post: e
 					} = this.props;
 					if (!e.media) return null;
-					const t = !e.media || Object(T.E)(e.media) || Object(T.B)(e.media) ? "" : e.media.content,
+					const t = !e.media || Object(T.H)(e.media) || Object(T.E)(e.media) ? "" : e.media.content,
 						{
 							type: s
 						} = e.media;
@@ -1505,4 +1505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.501628c59484a35d9b55.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.bfe08808473cf72b9785.js.map

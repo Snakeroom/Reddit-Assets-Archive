@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.95f7a095b5e85afd8fc6.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.33e931eb58ecff2c8012.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -471,7 +471,7 @@
 							showFull: !1
 						}),
 						_ = !1;
-					P && k && (P.type !== V.n.RTJSON && P.type !== V.n.TEXT ? (k = i.a.createElement("div", {
+					P && k && (P.type !== V.o.RTJSON && P.type !== V.o.TEXT ? (k = i.a.createElement("div", {
 						className: J.a.mediaWrapper
 					}, k), _ = !0) : P && P.content && Object(B.a)(p) && (k = i.a.createElement("div", {
 						className: J.a.textWrapper
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.95f7a095b5e85afd8fc6.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.33e931eb58ecff2c8012.js.map

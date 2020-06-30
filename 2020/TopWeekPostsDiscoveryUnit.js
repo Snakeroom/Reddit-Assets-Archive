@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.dce5cef4faf378f687d8.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.9a2f2444870492096750.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -212,7 +212,7 @@
 						showPlaceholderContentType: !a || !a.postPlaceholderImage,
 						templatePlaceholderImage: a ? a.postPlaceholderImage : E,
 						usePreview: !0
-					})))) : p && u ? p.type !== v.n.RTJSON && p.type !== v.n.TEXT ? (P = !1, b = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+					})))) : p && u ? p.type !== v.o.RTJSON && p.type !== v.o.TEXT ? (P = !1, b = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: T.a.flexSpacer
 					}), r.a.createElement("div", {
 						className: T.a.mediaWrapper
@@ -572,7 +572,7 @@
 						}),
 						id: n ? n(o.id) : o.id,
 						tabIndex: -1
-					}, t), h = !!o.media && o.media.type === c.n.VIDEO;
+					}, t), h = !!o.media && o.media.type === c.o.VIDEO;
 					return o.isSponsored || h ? r.a.createElement(i.a, {
 						post: o,
 						trackDisplay: !0
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.dce5cef4faf378f687d8.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.9a2f2444870492096750.js.map

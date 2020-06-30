@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.045485d5ca171e942444.js
-// Retrieved at 6/30/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ad863d9a97dd43ba8a34.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3279,14 +3279,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("3d80f1e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("d5e318e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3d80f1e-production",
+						release: "d5e318e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3702,7 +3702,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "3d80f1e-production",
+							releaseClient: "d5e318e-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -7794,6 +7794,7 @@
 					langSelect: Object(a.e)(a.g, a.h),
 					reCaptchaEnterprise: Object(a.e)(a.g, a.h, Object(a.d)(Object(a.b)(...d.b))),
 					ImageGalleryCreationFlow: a.f,
+					ImageGalleryConsumption: a.f,
 					ImageGallerySubredditSetting: a.l,
 					__requiredDoNotRemove: a.k
 				},
@@ -9579,7 +9580,7 @@
 				}
 			}
 			const w = (e, t, i) => {
-				if (e.media && (e.media.type === r.n.IMAGE || e.media.type === r.n.GIFVIDEO)) {
+				if (e.media && (e.media.type === r.o.IMAGE || e.media.type === r.o.GIFVIDEO)) {
 					const n = e.media.resolutions;
 					for (let e = 0; e < n.length; e++) {
 						const r = n[e];
@@ -10039,23 +10040,23 @@
 		},
 		"./src/reddit/models/Media/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "t", (function() {
+			i.d(t, "v", (function() {
 				return n
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "G", (function() {
 				return o
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "H", (function() {
 				return d
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "E", (function() {
 				return l
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "D", (function() {
 				return a
 			})), i.d(t, "C", (function() {
 				return u
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "F", (function() {
 				return c
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "o", (function() {
 				return _
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "a", (function() {
 				return m
 			})), i.d(t, "j", (function() {
 				return p
@@ -10063,44 +10064,50 @@
 				return h
 			})), i.d(t, "l", (function() {
 				return f
-			})), i.d(t, "w", (function() {
-				return g
-			})), i.d(t, "c", (function() {
-				return b
 			})), i.d(t, "m", (function() {
+				return g
+			})), i.d(t, "y", (function() {
+				return b
+			})), i.d(t, "i", (function() {
 				return w
-			})), i.d(t, "o", (function() {
-				return y
 			})), i.d(t, "p", (function() {
+				return y
+			})), i.d(t, "c", (function() {
 				return v
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "n", (function() {
 				return T
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "q", (function() {
 				return S
 			})), i.d(t, "r", (function() {
 				return E
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "e", (function() {
 				return F
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "f", (function() {
 				return I
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "t", (function() {
 				return O
-			})), i.d(t, "q", (function() {
-				return j
-			})), i.d(t, "v", (function() {
-				return B
 			})), i.d(t, "u", (function() {
+				return j
+			})), i.d(t, "h", (function() {
+				return B
+			})), i.d(t, "b", (function() {
 				return x
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "s", (function() {
 				return R
-			})), i.d(t, "g", (function() {
-				return k
 			})), i.d(t, "x", (function() {
+				return k
+			})), i.d(t, "w", (function() {
 				return C
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "d", (function() {
 				return N
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "g", (function() {
 				return P
+			})), i.d(t, "z", (function() {
+				return A
+			})), i.d(t, "B", (function() {
+				return L
+			})), i.d(t, "A", (function() {
+				return D
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.split.js"), i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
@@ -10108,49 +10115,53 @@
 			! function(e) {
 				e.YouTube = "YouTube", e.Vimeo = "Vimeo", e.BandCamp = "BandCamp", e.Gfycat = "Gfycat", e.GfycatOld = "gfycat", e.Giphy = "Giphy", e.Imgur = "Imgur", e.RedGIFS = "RedGIFS", e.SoundCloud = "SoundCloud", e.Spotify = "Spotify", e.Streamable = "Streamable", e.Twitch = "Twitch.tv", e.Twitter = "Twitter", e.IFrameEmbed = "iframe embed"
 			}(n || (n = {}));
-			const o = e => "text" === e.type,
-				d = e => "video" === e.type,
-				l = e => "rpan" === e.type,
-				a = e => "image" === e.type,
-				u = e => "rtjson" === e.type,
-				c = {
+			const o = e => e.type === _.TEXT,
+				d = e => e.type === _.VIDEO,
+				l = e => e.type === _.LIVEVIDEO,
+				a = e => e.type === _.IMAGE,
+				u = e => e.type === _.GALLERY,
+				c = e => "rtjson" === e.type,
+				_ = {
 					TEXT: "text",
 					VIDEO: "video",
 					IMAGE: "image",
 					EMBED: "embed",
 					GIFVIDEO: "gifvideo",
 					RTJSON: "rtjson",
-					LIVEVIDEO: "rpan"
+					LIVEVIDEO: "rpan",
+					GALLERY: "gallery"
 				},
-				_ = new Set([c.TEXT, c.IMAGE, c.RTJSON]),
-				m = 512,
-				p = 250,
-				h = 60,
-				f = 0,
-				g = 608,
-				b = .5625,
-				w = 869,
-				y = 273,
-				v = 486,
-				T = 700,
-				S = 822,
-				E = 363,
-				F = 645,
-				I = new Set([n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
-				O = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
-				j = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
-				B = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
-				x = ["gif", "jpeg", "jpg", "png", "tiff"],
-				R = new Set([c.VIDEO, c.GIFVIDEO, c.EMBED, c.LIVEVIDEO]);
-			var k, C;
+				m = new Set([_.TEXT, _.IMAGE, _.RTJSON, _.GALLERY]),
+				p = 512,
+				h = 250,
+				f = 60,
+				g = 0,
+				b = 608,
+				w = 40,
+				y = 160,
+				v = .5625,
+				T = 869,
+				S = 273,
+				E = 486,
+				F = 700,
+				I = 822,
+				O = 363,
+				j = 645,
+				B = new Set([n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
+				x = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
+				R = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
+				k = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
+				C = ["gif", "jpeg", "jpg", "png", "tiff"],
+				N = new Set([_.VIDEO, _.GIFVIDEO, _.EMBED, _.LIVEVIDEO]);
+			var P, A;
 			! function(e) {
 				e.Mute = "mute", e.Pause = "pause", e.Play = "play"
-			}(k || (k = {})),
+			}(P || (P = {})),
 			function(e) {
 				e.Pause = "pauseVideo", e.Play = "playVideo", e.Mute = "mute"
-			}(C || (C = {}));
-			const N = e => e.source ? e.source.url : e.media && e.media.type !== c.VIDEO && e.media.type !== c.LIVEVIDEO && e.media.content ? e.media.content : "",
-				P = e => {
+			}(A || (A = {}));
+			const L = e => e.source ? e.source.url : e.media && e.media.type !== _.VIDEO && e.media.type !== _.LIVEVIDEO && e.media.content ? e.media.content : "",
+				D = e => {
 					if (!d(e)) return;
 					const t = e;
 					let i;
@@ -12930,7 +12941,7 @@
 							postId: r
 						});
 					if (!o) return !1;
-					const a = !!o.media && o.media.type === d.n.IMAGE,
+					const a = !!o.media && o.media.type === d.o.IMAGE,
 						u = Object(s.q)(e, {
 							pageLayer: i
 						});
@@ -13846,7 +13857,7 @@
 					}))
 				},
 				M = e => {
-					if (!e || e.type === l.n.RTJSON || e.type === l.n.TEXT || e.type === l.n.LIVEVIDEO) return null;
+					if (!e || e.type === l.o.RTJSON || e.type === l.o.TEXT || e.type === l.o.LIVEVIDEO || e.type === l.o.GALLERY) return null;
 					const t = e.obfuscated;
 					return t ? {
 						url: t,
@@ -13862,7 +13873,7 @@
 						postId: i
 					});
 					let r = null;
-					return n && (n.media && n.media.type !== l.n.GIFVIDEO && (r = Object(d.e)(n, 2 * s.b, 2 * s.a) || Object(d.e)(n, s.b, s.a)), !r && n.thumbnail && n.thumbnail.width && n.thumbnail.height && (r = n.thumbnail, (n.isNSFW || n.isSpoiler) && (r = M(n.media)))), r
+					return n && (n.media && n.media.type !== l.o.GIFVIDEO && (r = Object(d.e)(n, 2 * s.b, 2 * s.a) || Object(d.e)(n, s.b, s.a)), !r && n.thumbnail && n.thumbnail.width && n.thumbnail.height && (r = n.thumbnail, (n.isNSFW || n.isSpoiler) && (r = M(n.media)))), r
 				}
 		},
 		"./src/reddit/selectors/postCreations.ts": function(e, t, i) {
@@ -14795,13 +14806,13 @@
 					let {
 						postId: i
 					} = t;
-					return e.posts.models[i].media && (e.posts.models[i].media.type === h.n.EMBED || e.posts.models[i].media.type === h.n.IMAGE)
+					return e.posts.models[i].media && (e.posts.models[i].media.type === h.o.EMBED || e.posts.models[i].media.type === h.o.IMAGE)
 				},
 				j = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					return e.posts.models[i].media && e.posts.models[i].media.type === h.n.GIFVIDEO
+					return e.posts.models[i].media && e.posts.models[i].media.type === h.o.GIFVIDEO
 				},
 				B = Object(c.a)((e, t) => {
 					let {
@@ -14903,7 +14914,7 @@
 						const e = Object.keys(i).length;
 						r.eventGlobalCount = e
 					}
-					if (t && t.media && Object(h.E)(t.media)) {
+					if (t && t.media && Object(h.H)(t.media)) {
 						const i = Object(F.i)(e, {
 								postId: t.id
 							}),
@@ -15037,7 +15048,7 @@
 					});
 					if (!n) return "";
 					let r = n.permalink;
-					if (n.media && Object(h.B)(n.media)) {
+					if (n.media && Object(h.E)(n.media)) {
 						const {
 							id: t,
 							type: i
@@ -17361,7 +17372,7 @@
 					if (void 0 === n) return null;
 					const r = {};
 					if (r.id = n.postId, n.media && "v.redd.it" === n.domain) {
-						const e = Object(ie.y)(n.media);
+						const e = Object(ie.A)(n.media);
 						e && (r.id = e)
 					}
 					if (i) r.loadTime = i;
@@ -22008,4 +22019,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.045485d5ca171e942444.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.ad863d9a97dd43ba8a34.js.map

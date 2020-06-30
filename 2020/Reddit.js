@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.83d2e5ab786f4215847b.js
-// Retrieved at 6/30/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.09082950f7267d8b98b3.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -8308,6 +8308,7 @@
 				isCollection: "_1_ihtgX_FgdbtB-rbz84r6",
 				postDetails: "-DOLBAFWXMQX1Q3ErGO8I",
 				mediaIcon: "_33YMDoIltkTaZemWTS7Yki",
+				galleryIcon: "_16ZfB-TEDZe7GTSTpIP-RR",
 				postTitle: "P9Qd6oTCWgLr3ackKg0I5",
 				postTitleLink: "_1iZHnGYX-Wc90AM6BQQemg",
 				membershipPaywallTitle: "SHwEfOV-Wq0AnI-uha8Ci",
@@ -8341,17 +8342,18 @@
 				O = s("./src/reddit/icons/fonts/Photos/index.tsx"),
 				x = s("./src/reddit/icons/fonts/Text/index.tsx"),
 				E = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				j = s("./src/reddit/models/Media/index.ts"),
-				S = s("./src/reddit/models/Vote/index.ts"),
-				w = s("./src/reddit/selectors/experiments/categories.ts"),
-				_ = s("./src/reddit/selectors/platform.ts"),
-				k = s("./src/reddit/components/LightboxHeader/index.m.less"),
-				M = s.n(k);
-			const I = Object(i.c)({
-					isInCategoriesExperiment: w.a,
-					post: _.n
+				j = s("./src/reddit/icons/svgs/Gallery/index.tsx"),
+				S = s("./src/reddit/models/Media/index.ts"),
+				w = s("./src/reddit/models/Vote/index.ts"),
+				_ = s("./src/reddit/selectors/experiments/categories.ts"),
+				k = s("./src/reddit/selectors/platform.ts"),
+				M = s("./src/reddit/components/LightboxHeader/index.m.less"),
+				I = s.n(M);
+			const N = Object(i.c)({
+					isInCategoriesExperiment: _.a,
+					post: k.n
 				}),
-				N = Object(o.b)(I, (e, t) => {
+				T = Object(o.b)(N, (e, t) => {
 					let {
 						sendEvent: s
 					} = t;
@@ -8359,7 +8361,7 @@
 						close: () => {
 							e(Object(u.a)(s, !0))
 						},
-						toggleVote: (t, s) => e(s === S.a.upvoted ? Object(l.db)(t) : Object(l.z)(t))
+						toggleVote: (t, s) => e(s === w.a.upvoted ? Object(l.db)(t) : Object(l.z)(t))
 					}
 				}, (e, t, s) => Object.assign({}, e, t, s, {
 					onVoteClick: n => {
@@ -8367,7 +8369,7 @@
 						a && t.toggleVote(a.id, n)
 					}
 				}));
-			class T extends r.a.Component {
+			class A extends r.a.Component {
 				constructor() {
 					super(...arguments), this.closeLightbox = e => {
 						e.preventDefault(), e.stopPropagation(), this.props.close()
@@ -8380,24 +8382,24 @@
 						onVoteClick: s,
 						page: o,
 						post: i
-					} = this.props, l = A[i && i.media ? i.media.type : j.n.EMBED], u = !i && o && o.meta && o.meta.name === d.Ab.META_MEMBERSHIP_PAYWALL_PAGE;
+					} = this.props, l = R[i && i.media ? i.media.type : S.o.EMBED], u = !i && o && o.meta && o.meta.name === d.Ab.META_MEMBERSHIP_PAYWALL_PAGE;
 					return r.a.createElement("div", {
-						className: Object(c.a)(M.a.container, e, {
-							[M.a.isCollection]: i && Object(v.a)(i)
+						className: Object(c.a)(I.a.container, e, {
+							[I.a.isCollection]: i && Object(v.a)(i)
 						})
 					}, r.a.createElement("div", {
-						className: M.a.postDetails
+						className: I.a.postDetails
 					}, i && r.a.createElement(a.Fragment, null, r.a.createElement(m.a, {
-						className: M.a.horizontalVotes,
+						className: I.a.horizontalVotes,
 						compact: !1,
 						light: !0,
 						model: i,
 						onVoteClick: s,
 						redditStyle: !0
 					}), r.a.createElement(l, {
-						className: M.a.mediaIcon
+						className: I.a.mediaIcon
 					}), r.a.createElement(b.c, {
-						className: M.a.postTitle,
+						className: I.a.postTitle,
 						post: i,
 						size: b.b.Small,
 						hideSourceLink: !0,
@@ -8405,7 +8407,7 @@
 						isOverlay: !0,
 						nowrap: !0,
 						titleColor: g.a.lightboxHeaderText,
-						titleLinkClassName: M.a.postTitleLink,
+						titleLinkClassName: I.a.postTitleLink,
 						showCategoryTag: !0
 					}), r.a.createElement(p.a, {
 						post: i,
@@ -8413,13 +8415,13 @@
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: this.props.isInCategoriesExperiment
 					})), u && o && o.urlParams.subredditName && r.a.createElement("div", {
-						className: M.a.membershipPaywallTitle
+						className: I.a.membershipPaywallTitle
 					}, n.fbt._("{communityName} Special Membership", [n.fbt._param("communityName", "r/".concat(o.urlParams.subredditName))], {
 						hk: "4vP4VY"
 					}))), r.a.createElement("div", {
-						className: M.a.actions
+						className: I.a.actions
 					}, r.a.createElement(f.n, {
-						className: M.a.close,
+						className: I.a.close,
 						onClick: t || this.closeLightbox,
 						title: n.fbt._("Close", null, {
 							hk: "4gbyAA"
@@ -8428,22 +8430,25 @@
 							hk: "4gbyAA"
 						})
 					}, r.a.createElement(E.a, null), r.a.createElement("span", {
-						className: M.a.closeText
+						className: I.a.closeText
 					}, n.fbt._("Close", null, {
 						hk: "4gbyAA"
 					})))))
 				}
 			}
-			const A = {
-				[j.n.GIFVIDEO]: y.a,
-				[j.n.IMAGE]: O.a,
-				[j.n.TEXT]: x.a,
-				[j.n.RTJSON]: x.a,
-				[j.n.VIDEO]: C.a,
-				[j.n.EMBED]: P.a,
-				[j.n.LIVEVIDEO]: C.a
+			const R = {
+				[S.o.GIFVIDEO]: y.a,
+				[S.o.IMAGE]: O.a,
+				[S.o.TEXT]: x.a,
+				[S.o.RTJSON]: x.a,
+				[S.o.VIDEO]: C.a,
+				[S.o.EMBED]: P.a,
+				[S.o.LIVEVIDEO]: C.a,
+				[S.o.GALLERY]: e => r.a.createElement("i", {
+					className: Object(c.a)(I.a.galleryIcon, e.className)
+				}, r.a.createElement(j.a, null))
 			};
-			t.a = Object(h.c)(N(T))
+			t.a = Object(h.c)(T(A))
 		},
 		"./src/reddit/components/ModerationDropdown/index.tsx": function(e, t, s) {
 			"use strict";
@@ -10559,6 +10564,19 @@
 			}), a.a.createElement("path", {
 				d: "M8,5h9a1,1,0,0,0,0-2H8A1,1,0,0,0,8,5Z"
 			}))
+		},
+		"./src/reddit/icons/svgs/Gallery/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				a = s.n(n);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 16 16"
+			}, a.a.createElement("g", null, a.a.createElement("path", {
+				fill: "inherit",
+				d: "M1 0H6C6.55298 0 7 0.446991 7 1V6C7 6.55301 6.55298 7 6 7H1C0.447021 7 0 6.55301 0 6V1C0 0.446991 0.447021 0 1 0ZM10 0H15C15.553 0 16 0.446991 16 1V6C16 6.55301 15.553 7 15 7H10C9.44702 7 9 6.55301 9 6V1C9 0.446991 9.44702 0 10 0ZM15 9H10C9.44702 9 9 9.44699 9 10V15C9 15.553 9.44702 16 10 16H15C15.553 16 16 15.553 16 15V10C16 9.44699 15.553 9 15 9ZM1 9H6C6.55298 9 7 9.44699 7 10V15C7 15.553 6.55298 16 6 16H1C0.447021 16 0 15.553 0 15V10C0 9.44699 0.447021 9 1 9Z"
+			})))
 		},
 		"./src/reddit/icons/svgs/Help/index.tsx": function(e, t, s) {
 			"use strict";
@@ -13483,4 +13501,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Poll~PostCreation~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-~1a75b64b", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~Poll~PostCreation~Reddit~Subreddit~2c16ee4a", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.83d2e5ab786f4215847b.js.map
+//# sourceMappingURL=Reddit.09082950f7267d8b98b3.js.map

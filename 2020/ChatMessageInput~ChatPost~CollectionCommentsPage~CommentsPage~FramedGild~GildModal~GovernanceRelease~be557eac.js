@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.d4455c594688acaa70af.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.54b812fc1dbcafeb8b13.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -139,7 +139,7 @@
 							[E.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					return e.showFull || e.isTall || (n.maxHeight = "".concat(m.i, "px")), e.isListing || e.isTall && _(e.height) || (n.maxHeight = "".concat(m.e, "px")), e.isExpando && e.maxHeight && (n.maxHeight = "".concat(e.maxHeight, "px")), e.isExpando && e.maxWidth && (n.maxWidth = "".concat(e.maxWidth, "px")), o.a.createElement("img", {
+					return e.showFull || e.isTall || (n.maxHeight = "".concat(m.j, "px")), e.isListing || e.isTall && _(e.height) || (n.maxHeight = "".concat(m.e, "px")), e.isExpando && e.maxHeight && (n.maxHeight = "".concat(e.maxHeight, "px")), e.isExpando && e.maxWidth && (n.maxWidth = "".concat(e.maxWidth, "px")), o.a.createElement("img", {
 						alt: e.altText || s.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -150,7 +150,7 @@
 				},
 				C = e => {
 					const t = {};
-					return (!e.showFull && j(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = "".concat(m.i, "px"), e.shouldBlur && (t.maxWidth = j(e.height, e.width) ? "".concat(m.w, "px") : "".concat(e.width, "px"))), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = "".concat(e.maxHeight, "px")), o.a.createElement("div", {
+					return (!e.showFull && j(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = "".concat(m.j, "px"), e.shouldBlur && (t.maxWidth = j(e.height, e.width) ? "".concat(m.y, "px") : "".concat(e.width, "px"))), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = "".concat(e.maxHeight, "px")), o.a.createElement("div", {
 						className: Object(d.a)(E.a.container, e.className),
 						style: t
 					}, e.children)
@@ -208,7 +208,7 @@
 							maxWidth: "50%"
 						} : {},
 						target: "_blank"
-					}, S(r, n)), n.isListing && !n.showFull && n.height > m.i && j(n.height, n.width) && o.a.createElement("div", {
+					}, S(r, n)), n.isListing && !n.showFull && n.height > m.j && j(n.height, n.width) && o.a.createElement("div", {
 						className: E.a.seeMore
 					}, s.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -245,7 +245,7 @@
 				d = n.n(c);
 			const l = e => {
 				let t = null;
-				(e.showFull || e.height < a.i) && (t = e.height);
+				(e.showFull || e.height < a.j) && (t = e.height), e.maxGalleryHeight && (t = e.maxGalleryHeight);
 				const n = Object.assign({}, t ? {
 						maxHeight: "".concat(t, "px")
 					} : {}, e.showFull && !e.showCentered ? {
@@ -1167,7 +1167,7 @@
 			})), n.d(t, "f", (function() {
 				return Y
 			})), n.d(t, "h", (function() {
-				return G
+				return X
 			})), n.d(t, "g", (function() {
 				return K
 			})), n.d(t, "i", (function() {
@@ -1312,13 +1312,13 @@
 					}, "r/".concat(e))
 				}
 			}
-			const R = Object(u.c)(D),
-				H = Object(I.c)({
+			const H = Object(u.c)(D),
+				R = Object(I.c)({
 					isFeatureFlagEnabled: B.b,
 					isUserInTreatment: B.e,
 					userVariant: B.a
 				});
-			var U = Object(v.b)(H)(e => {
+			var U = Object(v.b)(R)(e => {
 					let {
 						isFeatureFlagEnabled: t,
 						isUserInTreatment: n,
@@ -1326,7 +1326,7 @@
 						userVariant: r,
 						rtJsonElementProps: o
 					} = e;
-					if (!n || !t) return a.a.createElement(R, {
+					if (!n || !t) return a.a.createElement(H, {
 						subredditName: s,
 						rtJsonElementProps: o
 					});
@@ -1343,7 +1343,7 @@
 								rtJsonElementProps: o
 							});
 						default:
-							return a.a.createElement(R, {
+							return a.a.createElement(H, {
 								subredditName: s,
 								rtJsonElementProps: o
 							})
@@ -1372,7 +1372,7 @@
 					if (!r) return;
 					const o = r.length,
 						i = [];
-					for (let a = 0; a < o; a++) i.push(X(r[a], t, n, a));
+					for (let a = 0; a < o; a++) i.push(G(r[a], t, n, a));
 					return a.a.createElement(c.c, {
 						key: s
 					}, i)
@@ -1394,7 +1394,7 @@
 						const e = o[u].c;
 						e && e.length && i.push(a.a.createElement(c.g, {
 							key: u
-						}, e.map((e, n) => X(e, t, {
+						}, e.map((e, n) => G(e, t, {
 							renderingObjectInfo: r
 						}, n))))
 					}
@@ -1403,7 +1403,7 @@
 						key: s
 					}, i)
 				},
-				X = (e, t, n, s) => {
+				G = (e, t, n, s) => {
 					switch (e.e) {
 						case h.b:
 							return V(e, t, n, s);
@@ -1418,10 +1418,10 @@
 						case h.u:
 							return K(e, t, n, s);
 						case h.z:
-							return G(e, t, n, s)
+							return X(e, t, n, s)
 					}
 				},
-				G = (e, t, n, s) => {
+				X = (e, t, n, s) => {
 					const r = e.c,
 						o = e.h,
 						i = r.length,
@@ -1810,4 +1810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.d4455c594688acaa70af.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~be557eac.54b812fc1dbcafeb8b13.js.map

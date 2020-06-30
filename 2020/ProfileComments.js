@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.d837e23b5f77c1bf5827.js
-// Retrieved at 6/30/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.75a597a76d146e7bdbb3.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -475,7 +475,7 @@
 						subredditOrProfile: re,
 						toggleCheckbox: ae,
 						userIsOp: ie
-					} = this.props, ce = ee ? void 0 : R, de = this.props.crosspost || void 0, le = Object(L.a)(J), me = Object(N.a)(J), pe = Object(T.a)(J), ue = q && L.a, be = !!$.media && $.media.type === j.n.RTJSON, he = ie && be, xe = y && !oe, fe = !!$.media && Object(j.B)($.media), ve = {
+					} = this.props, ce = ee ? void 0 : R, de = this.props.crosspost || void 0, le = Object(L.a)(J), me = Object(N.a)(J), pe = Object(T.a)(J), ue = q && L.a, be = !!$.media && $.media.type === j.o.RTJSON, he = ie && be, xe = y && !oe, fe = !!$.media && Object(j.E)($.media), ve = {
 						flairStyleTemplate: ce,
 						post: $,
 						inSubredditOrProfile: y,
@@ -3062,24 +3062,24 @@
 						className: s
 					});
 					switch (e) {
-						case j.n.GIFVIDEO:
+						case j.o.GIFVIDEO:
 							return r.a.createElement(O.a, {
 								className: s
 							});
-						case j.n.IMAGE:
+						case j.o.IMAGE:
 							return r.a.createElement(C.a, {
 								className: s
 							});
-						case j.n.TEXT:
-						case j.n.RTJSON:
+						case j.o.TEXT:
+						case j.o.RTJSON:
 							return r.a.createElement(_.a, {
 								className: s
 							});
-						case j.n.VIDEO:
+						case j.o.VIDEO:
 							return r.a.createElement(y.a, {
 								className: s
 							});
-						case j.n.EMBED:
+						case j.o.EMBED:
 						default:
 							return r.a.createElement(E.a, {
 								className: s
@@ -5438,7 +5438,7 @@
 						}),
 						id: s ? s(r.id) : r.id,
 						tabIndex: -1
-					}, t), h = !!r.media && r.media.type === c.n.VIDEO;
+					}, t), h = !!r.media && r.media.type === c.o.VIDEO;
 					return r.isSponsored || h ? o.a.createElement(a.a, {
 						post: r,
 						trackDisplay: !0
@@ -8949,7 +8949,7 @@
 				x = e => r.a.createElement(l, e),
 				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com"],
 				v = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
-				g = e => !e.media || e.media.type === d.n.EMBED && !(d.b.has(e.media.provider) || v(e)),
+				g = e => !e.media || e.media.type === d.o.EMBED && !(d.b.has(e.media.provider) || v(e)),
 				y = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
@@ -9865,4 +9865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.d837e23b5f77c1bf5827.js.map
+//# sourceMappingURL=ProfileComments.75a597a76d146e7bdbb3.js.map

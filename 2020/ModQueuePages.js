@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.7188da22f04f480af96c.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.7240a43bc524ff1f4048.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1914,7 +1914,7 @@
 				x = e => r.a.createElement(l, e),
 				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com"],
 				g = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
-				C = e => !e.media || e.media.type === c.n.EMBED && !(c.b.has(e.media.provider) || g(e)),
+				C = e => !e.media || e.media.type === c.o.EMBED && !(c.b.has(e.media.provider) || g(e)),
 				v = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
@@ -2328,4 +2328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.7188da22f04f480af96c.js.map
+//# sourceMappingURL=ModQueuePages.7240a43bc524ff1f4048.js.map

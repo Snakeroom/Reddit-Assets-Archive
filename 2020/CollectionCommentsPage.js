@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b0a3a85d47079c48e187.js
-// Retrieved at 6/30/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.32dd1311e3381d1f039f.js
+// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -576,7 +576,7 @@
 					if (!d) return;
 					let c, l = y.h.RICH_TEXT,
 						m = "";
-					d.type === O.n.TEXT ? (l = y.h.MARKDOWN, m = d.content) : d.type === O.n.RTJSON && (m = (l = d.rteMode || y.h.RICH_TEXT) === y.h.MARKDOWN ? d.markdownContent : d.richtextContent, c = d.mediaMetadata || void 0), s(S({
+					d.type === O.o.TEXT ? (l = y.h.MARKDOWN, m = d.content) : d.type === O.o.RTJSON && (m = (l = d.rteMode || y.h.RICH_TEXT) === y.h.MARKDOWN ? d.markdownContent : d.richtextContent, c = d.mediaMetadata || void 0), s(S({
 						editorMode: l,
 						mediaMetadata: c,
 						postContent: m,
@@ -5556,24 +5556,24 @@
 						className: n
 					});
 					switch (e) {
-						case P.n.GIFVIDEO:
+						case P.o.GIFVIDEO:
 							return r.a.createElement(O.a, {
 								className: n
 							});
-						case P.n.IMAGE:
+						case P.o.IMAGE:
 							return r.a.createElement(_.a, {
 								className: n
 							});
-						case P.n.TEXT:
-						case P.n.RTJSON:
+						case P.o.TEXT:
+						case P.o.RTJSON:
 							return r.a.createElement(k.a, {
 								className: n
 							});
-						case P.n.VIDEO:
+						case P.o.VIDEO:
 							return r.a.createElement(C.a, {
 								className: n
 							});
-						case P.n.EMBED:
+						case P.o.EMBED:
 						default:
 							return r.a.createElement(y.a, {
 								className: n
@@ -6120,7 +6120,7 @@
 						toggleEditStartTimeModal: W,
 						tooltipType: U,
 						userIsOp: G
-					} = this.props, K = !!i && Object(oe.e)(i) === P.author, z = Object(ae.a)("View--Reports", P.id, U), J = Object(ae.a)("View--GiveAward", P.id, U), Z = Object(M.c)(P), se = je("-mod-actions-menu", P.id, b, g), de = Object(M.a)(P), me = P.postId, pe = C === V.g.Large, he = !u && pe || l && O, be = !(b || u || p), ge = i && P.isGildable, Oe = P.media && P.media.type === te.n.LIVEVIDEO;
+					} = this.props, K = !!i && Object(oe.e)(i) === P.author, z = Object(ae.a)("View--Reports", P.id, U), J = Object(ae.a)("View--GiveAward", P.id, U), Z = Object(M.c)(P), se = je("-mod-actions-menu", P.id, b, g), de = Object(M.a)(P), me = P.postId, pe = C === V.g.Large, he = !u && pe || l && O, be = !(b || u || p), ge = i && P.isGildable, Oe = P.media && P.media.type === te.o.LIVEVIDEO;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(d.a)(ue.a.flatlistContainer, s)
 					}, r.a.createElement(v.a, {
@@ -7827,7 +7827,7 @@
 						}),
 						id: n ? n(r.id) : r.id,
 						tabIndex: -1
-					}, t), b = !!r.media && r.media.type === d.n.VIDEO;
+					}, t), b = !!r.media && r.media.type === d.o.VIDEO;
 					return r.isSponsored || b ? o.a.createElement(i.a, {
 						post: r,
 						trackDisplay: !0
@@ -8419,7 +8419,7 @@
 				} = e, F = Object(b.a)(y), A = Object(u.a)(y), B = Object(h.a)(y), W = F || A, V = ((e, t, s) => {
 					const [n, o] = e ? [Object(p.e)(e) === s.author, e.isEmployee] : [!1, !1];
 					return n || t || o
-				})(n, W, P), Q = !!P.media && (P.media.type === I.n.RTJSON || P.media.type === I.n.TEXT), Y = R && Q, Z = Object(J.c)(P);
+				})(n, W, P), Q = !!P.media && (P.media.type === I.o.RTJSON || P.media.type === I.o.TEXT), Y = R && Q, Z = Object(J.c)(P);
 				let $;
 				const le = !(E && b.a),
 					pe = Object(se.h)({
@@ -8430,7 +8430,7 @@
 					}),
 					ue = P.removedByCategory === S.g.AuthorDeleted,
 					he = n && (n.displayText === P.author || n.username === P.author),
-					be = !ue && (he || a || !(P.removedByCategory && P.media && (Object(I.D)(P.media) || Object(I.C)(P.media)))),
+					be = !ue && (he || a || !(P.removedByCategory && P.media && (Object(I.G)(P.media) || Object(I.F)(P.media)))),
 					xe = P.removedByCategory === S.g.Reddit && Object(l.e)(P.created) > 24,
 					ge = P.removedByCategory && P.removedByCategory !== S.g.Reddit || xe,
 					fe = o.a.createElement(Me, {
@@ -10153,7 +10153,7 @@
 					className: O.a.OutboundLink,
 					isSponsored: S.isSponsored,
 					postId: S.id,
-					href: Object(f.z)(e.post),
+					href: Object(f.B)(e.post),
 					source: S.source
 				}, o.a.createElement(g.a, {
 					className: O.a.outboundLinkIcon
@@ -10688,7 +10688,7 @@
 					let n = "";
 					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != s && (n += "-".concat(s)), n
 				},
-				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(C.A)(e.media) && e.media.content)),
+				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(C.D)(e.media) && e.media.content)),
 				R = e => !!e && e.isBlank,
 				F = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
@@ -13932,7 +13932,7 @@
 				x = e => r.a.createElement(l, e),
 				g = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com"],
 				f = e => e.source && e.source.url && e.isSponsored && g.some(t => e.source.url.startsWith(t)),
-				v = e => !e.media || e.media.type === c.n.EMBED && !(c.b.has(e.media.provider) || f(e)),
+				v = e => !e.media || e.media.type === c.o.EMBED && !(c.b.has(e.media.provider) || f(e)),
 				C = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
@@ -15754,8 +15754,8 @@
 						clearTimeout(this.recheckScrollTimer), this.recheckScrollTimer = -1;
 						const a = t === window ? t.scrollY : t ? t.scrollTop : 0,
 							d = null !== this.scrollY && Math.abs(a - this.scrollY) > et,
-							c = r && r.media && r.media.type === Y.n.EMBED ? r.media.provider : null,
-							l = r && r.media && Y.d.has(r.media.type) && (!c || !Y.q.has(c));
+							c = r && r.media && r.media.type === Y.o.EMBED ? r.media.provider : null,
+							l = r && r.media && Y.d.has(r.media.type) && (!c || !Y.s.has(c));
 						this.scrollY = a, !e && void 0 !== s && a >= s && (this.didScrollPastPost = !0), e && void 0 !== s && a < s && (this.didScrollPastPost = !1, n && P.a.write(() => {
 							o(Object(Pe.b)({
 								itemId: i,
@@ -16526,4 +16526,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.b0a3a85d47079c48e187.js.map
+//# sourceMappingURL=CollectionCommentsPage.32dd1311e3381d1f039f.js.map
