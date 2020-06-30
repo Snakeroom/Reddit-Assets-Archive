@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.455aa4ab3594a4fa4e81.js
-// Retrieved at 6/30/2020, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a6be0497f15c96c41a6a.js
+// Retrieved at 6/30/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -26136,22 +26136,6 @@
 				let r = "".concat(s.a.accountManagerOrigin, "/login/");
 				const o = window.location.origin;
 				n && (r += "?dest=".concat(encodeURIComponent("".concat(o).concat(n)))), window.location.href = r
-			}
-		},
-		"./src/reddit/helpers/parseUrl.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return c
-			}));
-			var s = n("./node_modules/lodash/pick.js"),
-				r = n.n(s),
-				o = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
-				a = n.n(o);
-			const c = /\b(https?|chrome):\/\/[^\s$.?#].[^\s]*\b/;
-			t.a = e => {
-				if (!e) return null;
-				const t = a.a.parse(e);
-				return r()(t, ["protocol", "hostname", "port", "pathname", "search", "hash", "host"])
 			}
 		},
 		"./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts": function(e, t, n) {
@@ -53885,4 +53869,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.455aa4ab3594a4fa4e81.js.map
+//# sourceMappingURL=Governance~Reddit.a6be0497f15c96c41a6a.js.map

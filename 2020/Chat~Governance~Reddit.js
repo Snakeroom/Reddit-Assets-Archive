@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7cf06e7bfe7aff82fd7a.js
-// Retrieved at 6/30/2020, 1:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.910d071719e40cd6ffe1.js
+// Retrieved at 6/30/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3279,14 +3279,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("1971b3e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("311a794-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1971b3e-production",
+						release: "311a794-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3702,7 +3702,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "1971b3e-production",
+							releaseClient: "311a794-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -3825,7 +3825,7 @@
 		"./src/lib/makeApiRequest/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return b
+				return w
 			}));
 			var n = i("./node_modules/lodash/isEmpty.js"),
 				r = i.n(n),
@@ -3840,14 +3840,15 @@
 				m = i("./src/lib/makeRequest/index.ts"),
 				p = i("./src/lib/sentry/index.ts"),
 				h = i("./src/config.ts"),
-				f = i("./src/reddit/singleton/tracing/index.ts");
-			const g = (e, t) => {
+				f = i("./src/reddit/helpers/parseUrl.ts"),
+				g = i("./src/reddit/singleton/tracing/index.ts");
+			const b = (e, t) => {
 				const i = Object.assign({}, t, {
 					headers: Object.assign({}, t.headers || {}, e.headers)
 				});
 				(0 === i.endpoint.indexOf(h.a.sendbirdServiceUrl) || (0 === i.endpoint.indexOf(h.a.redditUrl) || i.endpoint.indexOf(h.a.oauthUrl), 0)) && (i.headers = o()(i.headers, [_.a, _.c])), 0 !== i.endpoint.indexOf(h.a.gatewayUrl) && (i.headers = o()(i.headers, [_.b])), t.withoutRedditHeaders && (i.headers = o()(i.headers, [_.a, _.c, _.b]));
 				let n = {};
-				0 !== i.endpoint.indexOf(h.a.gatewayUrl) && 0 !== i.endpoint.indexOf(h.a.redditUrl) && 0 !== i.endpoint.indexOf(h.a.apiUrl) && 0 !== i.endpoint.indexOf(h.a.oauthUrl) || (n = f.b.getTracingHeadersWithSecret()), i.headers = Object.assign({}, i.headers, n);
+				0 !== i.endpoint.indexOf(h.a.gatewayUrl) && 0 !== i.endpoint.indexOf(h.a.redditUrl) && 0 !== i.endpoint.indexOf(h.a.apiUrl) && 0 !== i.endpoint.indexOf(h.a.oauthUrl) || (n = g.b.getTracingHeadersWithSecret()), i.headers = Object.assign({}, i.headers, n);
 				const {
 					host: r,
 					protocol: s
@@ -3865,10 +3866,14 @@
 				return i
 			};
 
-			function b(e, t) {
-				const i = t.traceRequestName || "api_call";
-				return f.b.recordRpcSpanAsync(i, async () => {
-					const i = g(e, t);
+			function w(e, t) {
+				const i = Object(f.a)(t.endpoint),
+					n = t.traceRequestName || "".concat(t.method, "_").concat(i ? i.pathname : t.endpoint),
+					s = {
+						[g.a.HttpMethod]: t.method
+					};
+				return i && i.query && (s[g.a.HttpQuery] = i.query), g.b.recordRpcSpanAsync(n, async () => {
+					const i = b(e, t);
 					return e.onBeforeRequest(i), Object(m.b)(i).then(i => {
 						if (e.onResponse(i, {
 								allowSetEmptyLoid: t.allowSetEmptyLoid
@@ -3943,7 +3948,7 @@
 							error: null
 						})
 					}).catch(e => (p.c.captureMessage(e), m.a))
-				})
+				}, s)
 			}
 		},
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, i) {
@@ -9559,6 +9564,22 @@
 				c = e => r.test(e),
 				_ = e => s.test(e),
 				m = (e, t) => !((e, t) => u(e) && u(t) && e[0].toLowerCase() !== t[0].toLowerCase())(e, t) && d(e) === d(t)
+		},
+		"./src/reddit/helpers/parseUrl.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "b", (function() {
+				return d
+			}));
+			var n = i("./node_modules/lodash/pick.js"),
+				r = i.n(n),
+				s = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
+				o = i.n(s);
+			const d = /\b(https?|chrome):\/\/[^\s$.?#].[^\s]*\b/;
+			t.a = e => {
+				if (!e) return null;
+				const t = o.a.parse(e);
+				return r()(t, ["protocol", "hostname", "port", "pathname", "search", "hash", "host", "query"])
+			}
 		},
 		"./src/reddit/helpers/path/index.ts": function(e, t, i) {
 			"use strict";
@@ -18411,7 +18432,7 @@
 					d = "Remote";
 				var l, a;
 				! function(e) {
-					e.HttpMethod = "http.method", e.HttpUrl = "http.url", e.HttpStatusCode = "http.status_code"
+					e.HttpMethod = "http.method", e.HttpUrl = "http.url", e.HttpStatusCode = "http.status_code", e.HttpQuery = "http.query"
 				}(l || (l = {})),
 				function(e) {
 					e.TraceId = "X-Trace", e.SpanId = "X-Span", e.ParentSpanId = "X-Parent", e.Sampled = "X-Sampled", e.Flags = "X-Flags", e.Hmac = "X-Trace-Hmac", e.Secret = "x-trace-secret"
@@ -18544,22 +18565,25 @@
 						}), this.recordTraceAnnotation(r, new n.Annotation.LocalOperationStop), i
 					}
 					async recordAsyncSpan(e, t) {
-						let i, r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+						let i, r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+							s = arguments.length > 3 ? arguments[3] : void 0;
 						if (!this.isEnabled) return i = await t();
-						const s = this.createChildSpanId();
-						if (this.recordServiceName(s, this.serviceName), this.recordBinary(s, "operation", r ? d : o), this.recordTraceAnnotation(s, new n.Annotation.LocalOperationStart(e)), r && this.recordTraceAnnotation(s, new n.Annotation.ClientSend), await this.context.scoped(async () => {
-								this.setParent(s), i = await t()
-							}), r && (this.recordTraceAnnotation(s, new n.Annotation.ClientRecv), i && (i.status && this.recordBinary(s, l.HttpStatusCode, i.status), i.error))) {
+						const a = this.createChildSpanId();
+						if (this.recordServiceName(a, this.serviceName), this.recordBinary(a, "operation", r ? d : o), s && Object.keys(s).forEach(e => {
+								this.recordBinary(a, e, s[e])
+							}), this.recordTraceAnnotation(a, new n.Annotation.LocalOperationStart(e)), r && this.recordTraceAnnotation(a, new n.Annotation.ClientSend), await this.context.scoped(async () => {
+								this.setParent(a), i = await t()
+							}), r && (this.recordTraceAnnotation(a, new n.Annotation.ClientRecv), i && (i.status && this.recordBinary(a, l.HttpStatusCode, i.status), i.error))) {
 							const e = i.error;
-							this.recordBinary(s, "error", e.type)
+							this.recordBinary(a, "error", e.type)
 						}
-						return this.recordTraceAnnotation(s, new n.Annotation.LocalOperationStop), i
+						return this.recordTraceAnnotation(a, new n.Annotation.LocalOperationStop), i
 					}
 					async recordLocalSpanAsync(e, t) {
 						return await this.recordAsyncSpan(e, t)
 					}
-					async recordRpcSpanAsync(e, t) {
-						return await this.recordAsyncSpan(e, t, !0)
+					async recordRpcSpanAsync(e, t, i) {
+						return await this.recordAsyncSpan(e, t, !0, i)
 					}
 					async recordRequest(e, t, i) {
 						let r;
@@ -21864,4 +21888,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.7cf06e7bfe7aff82fd7a.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.910d071719e40cd6ffe1.js.map
