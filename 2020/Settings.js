@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.49606cbad9bb5220d5ab.js
-// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.73ff48ce38070ed7929d.js
+// Retrieved at 6/30/2020, 1:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4347,11 +4347,12 @@
 			}
 			const ct = Object(c.c)({
 				hasLinkedIdentities: N,
+				isEmployee: j.E,
 				isInSSOSettingsVariant: rt.b,
 				userId: j.gb
 			});
 			var lt = Object(r.b)(ct)(e => {
-					const [t, n] = Object(a.useState)(!1), s = e.hasLinkedIdentities || e.isInSSOSettingsVariant || t;
+					const [t, n] = Object(a.useState)(!1), s = !e.isEmployee && (e.hasLinkedIdentities || e.isInSSOSettingsVariant || t);
 					return Object(a.useEffect)(() => {
 						if (e.userId) {
 							const t = !!Object(ot.F)(e.userId);
@@ -7061,4 +7062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.49606cbad9bb5220d5ab.js.map
+//# sourceMappingURL=Settings.73ff48ce38070ed7929d.js.map
