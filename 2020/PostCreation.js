@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2075cd63451fcf95335e.js
-// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.bd50f276b26cd75fbf08.js
+// Retrieved at 6/30/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Poll~~089203bf", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~Poll~ProfileComments~Prof~8c7a65fc", "CollectionCommentsPage~CommentsPage~ModerationPages~Poll~PostDraft~ProfileComments~ProfileOverview~P~0040a89a", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "d66b3c0-production"
+					SENTRY_RELEASE_VERSION: "4cc2a1d-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -2107,16 +2107,18 @@
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
-				return k
-			})), n.d(t, "b", (function() {
-				return I
-			})), n.d(t, "a", (function() {
+			n.d(t, "f", (function() {
 				return P
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return N
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "a", (function() {
 				return R
+			})), n.d(t, "c", (function() {
+				return D
+			})), n.d(t, "e", (function() {
+				return A
+			})), n.d(t, "d", (function() {
+				return F
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2127,16 +2129,17 @@
 				c = n("./src/lib/makeActionCreator/index.ts"),
 				l = n("./src/reddit/actions/toaster.ts"),
 				d = n("./src/reddit/actions/upload.ts"),
-				u = n("./src/lib/makeApiRequest/index.ts"),
-				p = n("./src/lib/omitHeaders/index.ts"),
-				m = n("./src/reddit/constants/headers.ts");
-			var h = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				b = n("./src/reddit/helpers/imagePreview/index.ts"),
-				f = n("./src/reddit/helpers/media/index.ts"),
-				g = n("./src/reddit/models/Upload/index.ts"),
-				x = n("./src/reddit/selectors/telemetry.ts"),
-				y = n("./src/telemetry/index.ts");
-			const v = async e => {
+				u = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts"),
+				p = n("./src/lib/makeApiRequest/index.ts"),
+				m = n("./src/lib/omitHeaders/index.ts"),
+				h = n("./src/reddit/constants/headers.ts");
+			var b = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				f = n("./src/reddit/helpers/imagePreview/index.ts"),
+				g = n("./src/reddit/helpers/media/index.ts"),
+				x = n("./src/reddit/models/Upload/index.ts"),
+				y = n("./src/reddit/selectors/telemetry.ts"),
+				v = n("./src/telemetry/index.ts");
+			const C = async e => {
 				let {
 					state: t,
 					uploadKey: n,
@@ -2147,7 +2150,7 @@
 					correlationId: a
 				} = e;
 				const c = t.uploads[n],
-					l = o || c.status === g.a.CANCELED,
+					l = o || c.status === x.a.CANCELED,
 					{
 						file: d,
 						url: u,
@@ -2156,28 +2159,28 @@
 					} = c,
 					h = p.mimetype || d.type,
 					b = h.startsWith("video/"),
-					f = c.status === g.a.SUCCESS;
-				let v = "";
-				m ? v = JSON.stringify(m) : l && (v = "canceled");
+					f = c.status === x.a.SUCCESS;
+				let g = "";
+				m ? g = JSON.stringify(m) : l && (g = "canceled");
 				const C = {
 					width: p.width,
 					height: p.height,
 					duration: p.videoDuration && Math.round(1e3 * p.videoDuration)
 				};
-				Object(y.a)(Object.assign({
+				Object(v.a)(Object.assign({
 					source: b ? "videoupload" : "imageupload",
 					action: "upload",
 					correlationId: a,
 					noun: b ? "video" : "image"
-				}, (e => Object.assign({}, x.defaults(e), {
-					screen: x.screen(e),
-					profile: x.profile(e),
-					subreddit: x.subreddit(e)
+				}, (e => Object.assign({}, y.defaults(e), {
+					screen: y.screen(e),
+					profile: y.profile(e),
+					subreddit: y.subreddit(e)
 				}))(t), {
-					actionInfo: Object.assign({}, x.actionInfo(t), {
+					actionInfo: Object.assign({}, y.actionInfo(t), {
 						success: f
-					}, v ? {
-						reason: v
+					}, g ? {
+						reason: g
 					} : {}),
 					media: Object.assign({
 						mimetype: h,
@@ -2193,22 +2196,24 @@
 					} : {}, C)
 				}))
 			};
-			var C = n("./src/reddit/helpers/trackers/postComposer.ts"),
-				E = n("./src/reddit/models/Toast/index.ts"),
-				O = n("./src/reddit/selectors/postCreations.ts"),
-				j = n("./src/reddit/actions/postCreation/constants.ts");
-			const S = Object(c.a)(j.v),
-				w = Object(c.a)(j.w),
-				_ = Object(c.a)(j.u),
-				k = (Object(c.a)(j.D), e => async (t, n) => {
-					t(S());
+			var E = n("./src/reddit/helpers/trackers/postComposer.ts"),
+				O = n("./src/reddit/models/PostCreationForm/index.ts"),
+				j = n("./src/reddit/models/Toast/index.ts"),
+				S = n("./src/reddit/selectors/postCreations.ts"),
+				w = n("./src/reddit/actions/postCreation/constants.ts"),
+				_ = n("./src/reddit/actions/postCreation/general.ts");
+			const k = Object(c.a)(w.v),
+				T = Object(c.a)(w.w),
+				I = Object(c.a)(w.u),
+				P = e => async (t, n) => {
+					t(k());
 					const s = e.map(e => {
 						let {
 							url: n,
 							uploadKey: s
 						} = e;
-						const o = Object(f.a)(Object(f.c)(n), "poster.png");
-						return t(M(o, s))
+						const o = Object(g.a)(Object(g.c)(n), "poster.png");
+						return t(L(o, s))
 					});
 					await Promise.all(s);
 					const o = n().uploads,
@@ -2217,10 +2222,9 @@
 								uploadKey: t
 							} = e;
 							return o[t]
-						}).find(e => e.status !== g.a.SUCCESS);
-					t(r ? _(r.error) : w())
-				}),
-				T = (e, t) => ({
+						}).find(e => e.status !== x.a.SUCCESS);
+					t(r ? I(r.error) : T())
+				}, M = (e, t) => ({
 					error: t ? {
 						type: e,
 						fields: [{
@@ -2231,25 +2235,25 @@
 						type: e
 					}
 				});
-			const I = "RTE",
-				P = "GALLERY",
-				M = (e, t, n, o) => async (r, a, c) => {
+			const N = "RTE",
+				R = "GALLERY",
+				L = (e, t, n, o) => async (r, a, c) => {
 					let {
 						apiContext: l
 					} = c;
-					const g = Object(O.g)(a()),
+					const u = Object(S.g)(a()),
 						x = Date.now();
 					let y = null,
-						E = !1,
-						j = !1,
-						S = !1;
+						v = !1,
+						O = !1,
+						j = !1;
 					const w = e => {
-						if (!S && n && E) {
-							S = !0;
+						if (!j && n && v) {
+							j = !0;
 							const s = a(),
 								o = Date.now() - x,
-								r = Object(h.c)(h.a.PostComposer);
-							j ? v({
+								r = Object(b.c)(b.a.PostComposer);
+							O ? C({
 								state: s,
 								uploadKey: t,
 								assetId: y,
@@ -2257,116 +2261,115 @@
 								fileSource: n,
 								uploadDuration: o,
 								correlationId: r
-							}) : C.q(s, t)
+							}) : E.t(s, t)
 						}
 					};
-					t.startsWith(I);
 					return await r(Object(d.l)(e, t, async c => {
-						E = !0, Object(d.k)(c.id, () => {
+						v = !0, Object(d.k)(c.id, () => {
 							w(!0)
 						});
 						const {
-							error: h,
+							error: b,
 							metadata: x
-						} = await async function(e, t, n, o) {
-							const r = n && n.allowedPostTypes,
-								a = n && n.name,
-								c = await Object(f.g)(t) || t.type,
-								l = Object(f.b)(t) || void 0;
-							if (!l) return T("UNSUPPORTED_BROWSER");
-							const d = {
-								localUrl: l,
-								mimetype: c
+						} = await async function(e, t, n) {
+							const o = n && n.allowedPostTypes,
+								r = n && n.name,
+								a = await Object(g.g)(t) || t.type,
+								c = Object(g.b)(t) || void 0;
+							if (!c) return M("UNSUPPORTED_BROWSER");
+							const l = {
+								localUrl: c,
+								mimetype: a
 							};
-							if (!c || !Object(f.i)(c)) return {
+							if (!a || !Object(g.i)(a)) return {
 								error: {
 									type: i.M
 								}
 							};
-							if (c.startsWith("image/")) {
-								if (r && !r.images) {
-									const e = s.fbt._("Images are not allowed in r/{subredditName}", [s.fbt._param("subredditName", a)], {
+							if (a.startsWith("image/")) {
+								if (o && !o.images) {
+									const e = s.fbt._("Images are not allowed in r/{subredditName}", [s.fbt._param("subredditName", r)], {
 										hk: "3C2E7Q"
 									});
-									return T(i.M, e)
+									return M(i.M, e)
 								}
-								if ("image/gif" === c) {
-									if (t.size > i.R) return T(i.H)
-								} else if (t.size > i.T) return T(i.K);
-								const e = await Object(b.a)(l);
-								d.width = e.width, d.height = e.height
-							} else if (c.startsWith("video/")) {
-								if (t.size > i.Y) return T(i.Xb);
+								if ("image/gif" === a) {
+									if (t.size > i.R) return M(i.H)
+								} else if (t.size > i.T) return M(i.K);
+								const e = await Object(f.a)(c);
+								l.width = e.width, l.height = e.height
+							} else if (a.startsWith("video/")) {
+								if (t.size > i.Y) return M(i.Xb);
 								let e;
 								try {
-									e = await Object(f.h)(l, !0)
-								} catch (u) {
-									return T(i.M)
+									e = await Object(g.h)(c, !0)
+								} catch (d) {
+									return M(i.M)
 								}
-								if (r) {
+								if (o) {
 									const {
 										videos: t,
 										images: n
-									} = r;
+									} = o;
 									if (n && !t && e.duration > i.Z) {
-										const e = s.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [s.fbt._param("subredditName", a)], {
+										const e = s.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [s.fbt._param("subredditName", r)], {
 											hk: "46ULiz"
 										});
-										return T(i.M, e)
+										return M(i.M, e)
 									}
 									if (!n && !t) {
-										const e = s.fbt._("Videos are not allowed in r/{subredditName}", [s.fbt._param("subredditName", a)], {
+										const e = s.fbt._("Videos are not allowed in r/{subredditName}", [s.fbt._param("subredditName", r)], {
 											hk: "4uTUZb"
 										});
-										return T(i.M, e)
+										return M(i.M, e)
 									}
 								}
 								if (e.duration > i.X) {
 									const e = s.fbt._("Video is too long. Maximum video length is 15 minutes.", null, {
 										hk: "26m2mj"
 									});
-									return T(i.M, e)
+									return M(i.M, e)
 								}
-								d.height = e.height, d.width = e.width, d.videoDuration = e.duration, d.videoFirstFrameUrl = e.firstFrame.dataUrl
+								l.height = e.height, l.width = e.width, l.videoDuration = e.duration, l.videoFirstFrameUrl = e.firstFrame.dataUrl
 							}
 							return {
-								metadata: d
+								metadata: l
 							}
-						}(a(), e, g);
-						if (h || !x) return {
-							error: h
+						}(a(), e, u);
+						if (b || !x) return {
+							error: b
 						};
 						r(Object(d.m)({
 							key: t,
 							metadata: Object.assign({
 								fileSource: n
 							}, x)
-						})), j = !0, o && o();
-						const v = e.name,
-							C = await (async (e, t, n) => Object(u.a)(Object(p.a)(e, [m.a]), {
+						})), O = !0, o && o();
+						const C = e.name,
+							E = await (async (e, t, n) => Object(p.a)(Object(m.a)(e, [h.a]), {
 								endpoint: "".concat(e.apiUrl, "/api/media/asset.json"),
 								method: i.cb.POST,
 								data: {
 									filepath: t,
 									mimetype: n
 								}
-							}))(l(), v, x.mimetype);
-						return C.ok ? (y = C.body.asset.asset_id, {
-							uploadLease: C.body.args
+							}))(l(), C, x.mimetype);
+						return E.ok ? (y = E.body.asset.asset_id, {
+							uploadLease: E.body.args
 						}) : {
-							error: C.error || void 0
+							error: E.error || void 0
 						}
 					}, !0)), w(!1), a().uploads[t] || null
-				}, N = e => async (t, n, s) => {
+				}, D = e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
 					const r = n().uploads[e];
-					r && !Object(g.c)(r) && await t(M(r.file, r.key, r.metadata.fileSource))
-				}, R = (e, t, n) => async (o, i) => {
+					r && !Object(x.c)(r) && await t(L(r.file, r.key, r.metadata.fileSource))
+				}, A = (e, t, n) => async (o, i) => {
 					const c = e.map((e, s) => new Promise(async s => {
-							const i = Object(g.d)(n, r()().slice(-6));
-							await o(M(e, i, t, () => s({
+							const i = Object(x.d)(n, r()().slice(-6));
+							await o(L(e, i, t, () => s({
 								uploadKey: i,
 								isValid: !0
 							}))), s({
@@ -2381,14 +2384,14 @@
 						return async (n, o) => {
 							const {
 								uploads: r
-							} = o(), i = e.map(e => r[e]).filter(e => e.status === g.a.FAILED && !e.metadata.mimetype).map(e => e.error), c = i.length > t ? t - 1 : i.length, d = i.length - c;
+							} = o(), i = e.map(e => r[e]).filter(e => e.status === x.a.FAILED && !e.metadata.mimetype).map(e => e.error), c = i.length > t ? t - 1 : i.length, d = i.length - c;
 							i.slice(0, c).forEach(e => n(Object(l.e)({
 								duration: l.a,
-								kind: E.b.Error,
+								kind: j.b.Error,
 								text: Object(a.a)(e)
 							}))), d > 0 && n(Object(l.e)({
 								duration: l.a,
-								kind: E.b.Error,
+								kind: j.b.Error,
 								text: s.fbt._({
 									"*": "Couldn't add {number} more files",
 									_1: "Couldn't add 1 more file"
@@ -2398,6 +2401,49 @@
 							}))
 						}
 					}(u)), d.filter(e => e.isValid).map(e => e.uploadKey)
+				}, F = (e, t) => async (n, o) => {
+					const r = o(),
+						i = Object(S.L)(r),
+						{
+							items: a
+						} = i,
+						c = !a.length && 1 === e.length,
+						p = Object(S.D)(r) && !c;
+					let m = !1,
+						h = e;
+					if (p) {
+						if (Object(O.v)(i)) return void n(Object(l.e)({
+							kind: j.b.Error,
+							text: s.fbt._("Please remove the existing video first. Videos aren't supported within galleries yet.", null, {
+								hk: "3lGxp4"
+							})
+						}));
+						h.some(e => Object(g.l)(e.type)) && n(Object(l.e)({
+							kind: j.b.Error,
+							text: s.fbt._("Videos aren’t supported within galleries...yet", null, {
+								hk: "9Cl20"
+							})
+						})), h = h.filter(e => Object(g.k)(e.type));
+						const e = Math.max(0, u.b - a.length);
+						h.length > e && (n(Object(l.e)({
+							kind: j.b.Error,
+							text: s.fbt._("You have hit the limit of {images_limit} images", [s.fbt._param("images_limit", "".concat(u.b))], {
+								hk: "6M4kX"
+							})
+						})), h = h.slice(0, e))
+					} else h = h.slice(0, 1), m = !0, n(Object(d.j)(R, !0));
+					const b = await n(A(h, t, R));
+					if (!b.length) return;
+					const f = b.map(e => ({
+							uploadKey: e,
+							caption: "",
+							url: ""
+						})),
+						x = 0 === a.length;
+					n(Object(_.d)(Object.assign({}, i, {
+						items: m ? f : [...a, ...f],
+						selectedKey: x ? b[0] : b[b.length - 1]
+					})))
 				}
 		},
 		"./src/reddit/actions/scheduledPosts/edit.ts": function(e, t, n) {
@@ -8966,10 +9012,11 @@
 		},
 		"./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/components/AddImageItem.m.less": function(e, t, n) {
 			e.exports = {
+				AddImageWrapper: "_3mOObaE2qUuGBwPZt06QMP",
+				addImageWrapper: "_3mOObaE2qUuGBwPZt06QMP",
 				AddImageItem: "_1PHeBCrOhYxisqmUW-NOTZ",
 				addImageItem: "_1PHeBCrOhYxisqmUW-NOTZ",
 				plusIcon: "_3fjztH0o3WW8ugsD8VUpdG",
-				disabled: "hUpG0T0KhH7ufOcIXo1eU",
 				hiddenInput: "_8GGSjoMJRi3bIAaFgk5VT"
 			}
 		},
@@ -8988,9 +9035,10 @@
 		"./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/components/ImageItemsWrapper.m.less": function(e, t, n) {
 			e.exports = {
 				itemsWrapper: "_3BGk3QOycswdTTmIh9R56y",
-				noFocusOutline: "_24ogYZvhrVc1Mcpr7dd2yz",
 				sortableImages: "_7eeHxLESKnWVh8uefc7iN",
-				addImageWrapper: "_34C25sr-ji_CshGe5bExEd"
+				imageStyles: "_2175QbehBw28eJRKOGrVKp",
+				hoverMarker: "_1q50A238Zq0unVV8sFYvEm",
+				pendingItem: "_1liymuUZSLP_05fSC0_0iQ"
 			}
 		},
 		"./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/components/InputWrapper.m.less": function(e, t, n) {
@@ -9013,8 +9061,19 @@
 		},
 		"./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/components/SelectedImage.m.less": function(e, t, n) {
 			e.exports = {
-				selectedImage: "_1HQ9Q4NlQY-2w_yLQXa4MW"
+				selectedImage: "_1HQ9Q4NlQY-2w_yLQXa4MW",
+				pendingImage: "_16rNFI0ovowGxjX85OoDQ7"
 			}
+		},
+		"./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return s
+			})), n.d(t, "a", (function() {
+				return o
+			}));
+			const s = 20,
+				o = 180
 		},
 		"./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -17355,9 +17414,9 @@
 					})
 				}, e => ({
 					onFetchEditorProducts: t => e(Object(y.e)(t)),
-					onTrackMediaDrop: t => e((e, n) => E.l(n(), t)),
+					onTrackMediaDrop: t => e((e, n) => E.o(n(), t)),
 					retryUpload: t => e(v.c(t)),
-					startUploads: (t, n, s) => e(v.d(t, n, Sa(s)))
+					startUploads: (t, n, s) => e(v.e(t, n, Sa(s)))
 				}));
 			class _a extends a.Component {
 				constructor(e) {
@@ -24853,7 +24912,7 @@
 						timer: f.timer(s, o),
 						userSubreddit: f.userSubreddit(e),
 						adblock: f.adblock(e)
-					}, c ? Object(a.j)(e, c) : {}))
+					}, c ? Object(a.m)(e, c) : {}))
 				},
 				T = (e, t) => n => Object.assign({
 					source: "coins_marketing",
@@ -25008,6 +25067,11 @@
 					return Object(s.updateIn)(t, ["modifiers"], e => Object(s.push)(e, c))
 				}, [e]))
 			}
+		},
+		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./src/reddit/components/TrackingHelper/index.tsx");
+			t.a = s.b
 		},
 		"./src/reddit/icons/fonts/Admin/index.tsx": function(e, t, n) {
 			"use strict";
@@ -27041,13 +27105,13 @@
 				ue = n("./src/reddit/models/ScheduledPost/index.ts"),
 				pe = n("./src/reddit/actions/postCreation/constants.ts");
 			const me = Object(M.a)(pe.y),
-				he = Object(M.a)(pe.O),
+				he = Object(M.a)(pe.N),
 				be = Object(M.a)(pe.p),
 				fe = Object(M.a)(pe.A),
-				ge = Object(M.a)(pe.Z),
-				xe = Object(M.a)(pe.I),
+				ge = Object(M.a)(pe.Y),
+				xe = Object(M.a)(pe.H),
 				ye = Object(M.a)(pe.a),
-				ve = Object(M.a)(pe.E),
+				ve = Object(M.a)(pe.D),
 				Ce = e => "/r/".concat(e, "/about/").concat(ue.p),
 				Ee = (e, t) => {
 					const n = t.creations.formData.govType,
@@ -27220,7 +27284,7 @@
 					const p = Object(a.o)(i.kind),
 						h = d.ok && d.body && d.body.id && Object(Z.m)(d.body.id),
 						b = n();
-					O.o(b, p, h)
+					O.r(b, p, h)
 				};
 			var _e = n("./src/reddit/actions/postCreation/subredditChange.ts"),
 				ke = n("./src/reddit/actions/upload.ts"),
@@ -27353,8 +27417,8 @@
 				ht = n("./src/lib/timezone/index.ts"),
 				bt = n("./src/lib/linkMatchers/index.ts"),
 				ft = n("./src/reddit/contexts/PageLayer/selectors.ts");
-			const gt = Object(M.a)(pe.J),
-				xt = Object(M.a)(pe.K),
+			const gt = Object(M.a)(pe.I),
+				xt = Object(M.a)(pe.J),
 				yt = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: r
@@ -27770,17 +27834,17 @@
 							})
 						},
 						toggleChatPostTag: t => {
-							e(a.t(!t)), e((e, n) => O.v(n(), !t, kn.ToggleNoun.CHAT))
+							e(a.t(!t)), e((e, n) => O.y(n(), !t, kn.ToggleNoun.CHAT))
 						},
 						toggleFlairPicker: () => e(a.y(Pn)),
 						toggleNsfwTag: t => {
-							e(a.u(!t)), e((e, n) => O.v(n(), !t, kn.ToggleNoun.NSFW))
+							e(a.u(!t)), e((e, n) => O.y(n(), !t, kn.ToggleNoun.NSFW))
 						},
 						toggleOriginalContentTag: t => {
-							e(a.v(!t)), e((e, n) => O.v(n(), !t, kn.ToggleNoun.ORIGINAL_CONTENT))
+							e(a.v(!t)), e((e, n) => O.y(n(), !t, kn.ToggleNoun.ORIGINAL_CONTENT))
 						},
 						toggleSpoilerTag: t => {
-							e(a.x(!t)), e((e, n) => O.v(n(), !t, kn.ToggleNoun.SPOILER))
+							e(a.x(!t)), e((e, n) => O.y(n(), !t, kn.ToggleNoun.SPOILER))
 						},
 						sendChatPostExposureEvent: (t, n) => {
 							e((e, s) => {
@@ -28512,7 +28576,7 @@
 					} = t;
 					return {
 						onSubredditChangeRequested: t => e(_e.b(t, s)),
-						onTrackSubredditPickerClick: () => e((e, t) => O.t(t()))
+						onTrackSubredditPickerClick: () => e((e, t) => O.w(t()))
 					}
 				});
 			class no extends o.a.PureComponent {
@@ -28920,10 +28984,10 @@
 						onChange: t => {
 							e(a.r(t)), n(t)
 						},
-						onFocus: () => e((e, t) => O.k(t(), f.k.CLICK, f.l.URL))
+						onFocus: () => e((e, t) => O.n(t(), f.k.CLICK, f.l.URL))
 					}
 				});
-			var Fr = Object(E.t)()(Ar(e => {
+			var Fr, Br = Object(E.t)()(Ar(e => {
 					const {
 						pending: t,
 						postCreationFieldErrors: n,
@@ -28950,22 +29014,19 @@
 						value: r
 					}))
 				})),
-				Br = n("./node_modules/lodash/clamp.js"),
-				Ur = n.n(Br),
-				Kr = n("./node_modules/lodash/pickBy.js"),
-				Hr = n.n(Kr),
-				Wr = n("./src/lib/formatApiError/index.ts"),
-				Vr = n("./src/lib/objectSelector/index.ts"),
-				zr = n("./src/reddit/controls/Sortable/index.tsx");
-			const qr = (e, t) => {
-				Object(s.useEffect)(() => (window.addEventListener(e, t), () => window.removeEventListener(e, t)), [e, t])
-			};
-			var Gr;
+				Ur = n("./node_modules/lodash/clamp.js"),
+				Kr = n.n(Ur),
+				Hr = n("./node_modules/lodash/pickBy.js"),
+				Wr = n.n(Hr),
+				Vr = n("./src/lib/formatApiError/index.ts"),
+				zr = n("./src/lib/objectSelector/index.ts"),
+				qr = n("./src/reddit/controls/Sortable/index.tsx"),
+				Gr = n("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.RemoveGalleryItem = "REMOVE_GALLERY_ITEM", e.SelectGalleryItem = "SELECT_GALLERY_ITEM", e.SetGalleryItems = "SET_GALLERY_ITEMS", e.SetCaptionInput = "SET_CAPTION_INPUT", e.SetURLInput = "SET_URL_INPUT", e.SelectPrevMedia = "SELECT_PREV_MEDIA", e.SelectNextMedia = "SELECT_NEXT_MEDIA"
-			}(Gr || (Gr = {}));
-			const Jr = 20;
-			var Qr = n("./node_modules/lodash/upperFirst.js"),
+			}(Fr || (Fr = {}));
+			var Jr = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts"),
+				Qr = n("./node_modules/lodash/upperFirst.js"),
 				Zr = n.n(Qr);
 			var Yr = e => o.a.createElement("svg", {
 				className: e.className,
@@ -29134,28 +29195,26 @@
 				bi = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/components/AddImageItem.m.less"),
 				fi = n.n(bi),
 				gi = e => {
-					const t = Object(s.useRef)(null),
-						n = Object(s.useCallback)(() => t && t.current && t.current.click(), []),
-						r = Object(s.useCallback)(t => {
-							e.onFileInput(t.currentTarget.files)
-						}, [e]),
-						i = Object(s.useCallback)(() => l.fbt._("You have reached the limit of 20 images", null, {
-							hk: "3ENjA8"
-						}), []);
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement("input", {
+					const {
+						onClickEvent: t,
+						onFileInput: n
+					} = e, r = Object(s.useRef)(null), i = Object(s.useCallback)(() => {
+						r && r.current && r.current.click(), t()
+					}, [t, r]), a = Object(s.useCallback)(e => {
+						n(e.currentTarget.files)
+					}, [n]);
+					return o.a.createElement("span", {
+						className: fi.a.AddImageWrapper
+					}, o.a.createElement("input", {
 						accept: ni,
 						className: fi.a.hiddenInput,
 						multiple: !0,
-						onChange: r,
-						ref: t,
+						onChange: a,
+						ref: r,
 						type: "file"
 					}), o.a.createElement("button", {
-						className: Object(Ve.a)(fi.a.AddImageItem, {
-							[fi.a.disabled]: e.isDisabled
-						}),
-						disabled: e.isDisabled,
-						title: e.isDisabled ? i() : "",
-						onClick: n
+						className: fi.a.AddImageItem,
+						onClick: i
 					}, o.a.createElement(On.a, {
 						className: fi.a.plusIcon
 					})))
@@ -29166,51 +29225,50 @@
 				Ci = n.n(vi);
 			var Ei = e => {
 					const {
-						mediaUpload: t,
-						isSelected: n,
-						removeGalleryItem: r,
-						dispatch: i
-					} = e, a = Object(s.useRef)(null), c = t.key, l = Object(s.useCallback)(() => i((e => ({
-						type: Gr.SelectGalleryItem,
+						canDrop: t,
+						mediaUpload: n,
+						isDragging: r,
+						isOver: i,
+						isSelected: a,
+						mediaItem: c,
+						removeGalleryItem: l,
+						dispatch: d
+					} = e, u = Object(s.useRef)(null), p = n.key, m = Object(s.useCallback)(() => d((e => ({
+						type: Fr.SelectGalleryItem,
 						payload: {
 							key: e
 						}
-					}))(c)), [i, c]), d = Object(s.useCallback)(e => {
-						e.stopPropagation(), r(c)
-					}, [r, c]);
-					Object(s.useEffect)(() => {
-						const e = a && a.current;
-						n && e && e.scrollIntoView()
-					}, [n, a]);
-					const u = t.metadata.localUrl;
-					return u ? o.a.createElement("span", {
-						ref: a
+					}))(p)), [d, p]), h = Object(s.useCallback)(e => {
+						e.stopPropagation(), l(c)
+					}, [l, c]), b = n.metadata.localUrl;
+					return b ? o.a.createElement("span", {
+						ref: u
 					}, o.a.createElement(xi.a, {
-						canDrop: e.canDrop,
+						canDrop: t,
 						className: Object(Ve.a)(Ci.a.GalleryMediaUpload, {
-							[Ci.a.isDragging]: e.isDragging,
-							[Ci.a.isSelected]: e.isSelected
+							[Ci.a.isDragging]: r,
+							[Ci.a.isSelected]: a
 						}),
-						isDragging: e.isDragging,
-						isOver: e.isOver
+						isDragging: r,
+						isOver: i
 					}, o.a.createElement("span", {
 						className: Object(Ve.a)(Ci.a.galleryImage, {
-							[Ci.a.isDragging]: e.isDragging,
-							[Ci.a.isSelected]: e.isSelected
+							[Ci.a.isDragging]: r,
+							[Ci.a.isSelected]: a
 						}),
-						onClick: l,
+						onClick: m,
 						style: {
-							backgroundImage: 'url("'.concat(u, '")')
+							backgroundImage: 'url("'.concat(b, '")')
 						}
 					}, o.a.createElement("button", {
 						className: Object(Ve.a)(Ci.a.deleteButton, {
-							[Ci.a.isDragging]: e.isDragging,
-							[Ci.a.showDeleteNormal]: !e.isSelected
+							[Ci.a.isDragging]: r,
+							[Ci.a.showDeleteNormal]: !a
 						}),
-						onClick: d
+						onClick: h
 					}, o.a.createElement(yi.a, {
 						className: Object(Ve.a)(Ci.a.deleteIcon, {
-							[Ci.a.isDragging]: e.isDragging
+							[Ci.a.isDragging]: r
 						})
 					}))))) : null
 				},
@@ -29222,54 +29280,52 @@
 						dispatch: n,
 						mediaState: r,
 						uploads: i
-					} = e, [a, c] = Object(s.useState)(!1), [l, d] = Object(s.useState)(!1);
-					return (e => qr("keydown", e))(Object(s.useCallback)(e => {
-						e.isComposing || 229 === e.keyCode || (e.keyCode === h.a.ArrowLeft && l && n((() => ({
-							type: Gr.SelectPrevMedia
-						}))()), e.keyCode === h.a.ArrowRight && l && n((() => ({
-							type: Gr.SelectNextMedia
-						}))()), (e.keyCode === h.a.Delete || e.keyCode === h.a.Backspace) && l && r.selectedKey && t(r.selectedKey), e.keyCode === h.a.Tab && c(!0))
-					}, [t, n, c, l, r])), o.a.createElement("div", {
-						onBlur: Object(s.useCallback)(() => d(!1), [d]),
-						onFocus: Object(s.useCallback)(() => d(!0), [d]),
-						onClick: Object(s.useCallback)(() => c(!1), [c]),
-						tabIndex: 0,
-						className: Object(Ve.a)(ji.a.itemsWrapper, {
-							[ji.a.noFocusOutline]: !a
-						})
-					}, o.a.createElement(zr.a, {
+					} = e, a = Object(Gr.a)(), c = Object(s.useCallback)(() => a(O.j()), [a]), l = Object(s.useCallback)(e => {
+						t(e.uploadKey), a(O.l())
+					}, [a, t]);
+					return o.a.createElement("div", {
+						className: ji.a.itemsWrapper
+					}, o.a.createElement(qr.a, {
 						className: ji.a.sortableImages,
 						values: r.items,
 						getReactKey: e => e.uploadKey,
-						render: (e, s, a, c, l) => {
+						render: (e, t, s, a, c) => {
 							const d = i[e.uploadKey];
 							if (!d) return null;
+							if (Object(tt.c)(d)) return o.a.createElement("span", {
+								className: Object(Ve.a)(ji.a.pendingItem, Object(Ko.b)({
+									isLoading: !0
+								}))
+							});
 							const u = e.uploadKey === r.selectedKey;
-							return o.a.createElement(Ei, {
-								canDrop: l,
+							return o.a.createElement("span", {
+								className: ji.a.imageStyles
+							}, a && o.a.createElement("span", {
+								className: ji.a.hoverMarker
+							}), o.a.createElement(Ei, {
+								canDrop: c,
 								dispatch: n,
-								isDragging: a,
-								isOver: c,
+								isDragging: s,
+								isOver: a,
 								isSelected: u,
+								mediaItem: e,
 								key: e.uploadKey,
 								mediaUpload: d,
-								removeGalleryItem: t
-							})
+								removeGalleryItem: l
+							}))
 						},
 						onDrop: (e, t, s) => {
 							n((e => ({
-								type: Gr.SetGalleryItems,
+								type: Fr.SetGalleryItems,
 								payload: {
 									items: e
 								}
 							}))(s))
 						}
-					}), o.a.createElement("span", {
-						className: ji.a.addImageWrapper
-					}, o.a.createElement(gi, {
-						isDisabled: r.items.length >= Jr,
+					}), r.items.length < Jr.b && o.a.createElement(gi, {
+						onClickEvent: c,
 						onFileInput: e.onFileInput
-					})))
+					}))
 				},
 				wi = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/components/InputWrapper.m.less"),
 				_i = n.n(wi);
@@ -29279,36 +29335,38 @@
 						galleryItem: n,
 						isSelected: r,
 						dispatch: i
-					} = e, a = t[n.uploadKey], c = n.caption, d = n.url, u = Object(s.useCallback)(e => i((e => ({
-						type: Gr.SetCaptionInput,
+					} = e, a = t[n.uploadKey], c = n.caption, d = n.url, u = Object(Gr.a)(), p = Object(s.useCallback)(e => i((e => ({
+						type: Fr.SetCaptionInput,
 						payload: {
 							input: e
 						}
-					}))(e)), [i]), p = Object(s.useCallback)(e => i((e => ({
-						type: Gr.SetURLInput,
+					}))(e)), [i]), m = Object(s.useCallback)(e => i((e => ({
+						type: Fr.SetURLInput,
 						payload: {
 							input: e
 						}
-					}))(e)), [i]), m = !r || !a || !a.url || a.status !== tt.a.SUCCESS;
+					}))(e)), [i]), h = Object(s.useCallback)(e => u(O.k(e)), [u]), b = Object(s.useCallback)(() => h(f.l.CAPTION), [h]), g = Object(s.useCallback)(() => h(f.l.OUTBOUND_URL), [h]), x = !r || !a || !a.url || Object(tt.c)(a);
 					return o.a.createElement("div", null, o.a.createElement("div", {
 						className: _i.a.inputWrapper
 					}, o.a.createElement(Nr, {
 						className: _i.a.inputStyles,
-						disabled: m,
-						maxLength: 180,
-						onValueChange: u,
+						disabled: x,
+						maxLength: Jr.a,
+						onFocus: b,
+						onValueChange: p,
 						placeholder: l.fbt._("Add a caption...", null, {
 							hk: "1fOmKi"
 						}),
 						value: c
 					}), o.a.createElement("div", {
 						className: _i.a.charsCounter
-					}, c.length, "/", 180)), o.a.createElement("div", {
+					}, c.length, "/", Jr.a)), o.a.createElement("div", {
 						className: _i.a.inputWrapper
 					}, o.a.createElement(Nr, {
 						className: Object(Ve.a)(_i.a.inputStyles, _i.a.urlInputStyles),
-						disabled: m,
-						onValueChange: p,
+						disabled: x,
+						onFocus: g,
+						onValueChange: m,
 						placeholder: l.fbt._("Add a link...", null, {
 							hk: "Z6l9K"
 						}),
@@ -29342,10 +29400,14 @@
 					const {
 						upload: t
 					} = e, n = t.metadata.localUrl;
-					return n ? o.a.createElement("img", {
+					return Object(tt.c)(t) ? o.a.createElement("span", {
+						className: Object(Ve.a)(Ni.a.pendingImage, Object(Ko.b)({
+							isLoading: !0
+						}))
+					}) : o.a.createElement("img", {
 						className: Ni.a.selectedImage,
 						src: n
-					}) : null
+					})
 				},
 				Li = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/index.m.less"),
 				Di = n.n(Li),
@@ -29558,13 +29620,13 @@
 				ka = Object(i.c)({
 					activeModalId: nt.a,
 					isPostPending: S.R,
-					uploads: Object(Vr.a)(e => Hr()(e.uploads, e => e.key.startsWith(P.a))),
+					uploads: Object(zr.a)(e => Wr()(e.uploads, e => e.key.startsWith(P.a))),
 					value: S.L,
 					isImageGalleryCreationEnabled: S.D
 				}),
 				Ta = Object(r.b)(ka, e => ({
 					onChange: t => e(a.d(t)),
-					startMediaUploads: (t, n) => e(P.d(t, n, P.a)),
+					startMediaUploads: (t, n) => e(P.d(t, n)),
 					removeUpload: t => e(ke.i(t, !0)),
 					toggleThumbnailModal: () => e(a.y(_a)),
 					toggleRemovePrompt: () => e(a.y(ga))
@@ -29575,7 +29637,7 @@
 					let s = e.findIndex(e => e.uploadKey === n);
 					if (-1 === s) {
 						const o = t.findIndex(e => e.uploadKey === n);
-						s = Ur()(o - 1, 0, e.length - 1)
+						s = Kr()(o - 1, 0, e.length - 1)
 					}
 					return e[s].uploadKey
 				};
@@ -29637,7 +29699,7 @@
 							value: t
 						} = this.props, n = function(e, t) {
 							switch (t.type) {
-								case Gr.SelectGalleryItem: {
+								case Fr.SelectGalleryItem: {
 									const {
 										key: n
 									} = t.payload;
@@ -29645,7 +29707,7 @@
 										selectedKey: n
 									})
 								}
-								case Gr.SetGalleryItems: {
+								case Fr.SetGalleryItems: {
 									const {
 										items: n
 									} = t.payload;
@@ -29653,7 +29715,7 @@
 										items: n
 									})
 								}
-								case Gr.SetCaptionInput: {
+								case Fr.SetCaptionInput: {
 									const {
 										input: n
 									} = t.payload, {
@@ -29666,7 +29728,7 @@
 										}) : e)
 									}) : e
 								}
-								case Gr.SetURLInput: {
+								case Fr.SetURLInput: {
 									const {
 										input: n
 									} = t.payload, {
@@ -29679,7 +29741,7 @@
 										}) : e)
 									}) : e
 								}
-								case Gr.SelectPrevMedia: {
+								case Fr.SelectPrevMedia: {
 									const {
 										selectedKey: t,
 										items: n
@@ -29689,7 +29751,7 @@
 										selectedKey: n[o].uploadKey
 									})
 								}
-								case Gr.SelectNextMedia: {
+								case Fr.SelectNextMedia: {
 									const {
 										selectedKey: t,
 										items: n
@@ -29726,7 +29788,7 @@
 									makeGifDisableReason: l = null
 								} = a && a.video || {},
 								d = i && i.status === tt.a.FAILED,
-								u = i && d ? Object(Wr.a)(i.error) : "",
+								u = i && d ? Object(Vr.a)(i.error) : "",
 								p = i && Object(Ki.f)(i.metadata.mimetype);
 							return s && p && i && !d ? o.a.createElement(ha, {
 								isPostSubmitPending: n,
@@ -29760,30 +29822,8 @@
 					} = this.props.value, t = 1 === e.length && e[0];
 					return t && this.props.uploads[t.uploadKey] || void 0
 				}
-				async uploadMediaFiles(e, t) {
-					const {
-						isImageGalleryCreationEnabled: n,
-						value: s
-					} = this.props, {
-						items: o
-					} = s, r = Object(f.v)(s);
-					let i = [...e];
-					if (n && !r) {
-						const e = Math.max(0, Jr - o.length);
-						i = i.slice(0, e)
-					} else i = i.slice(0, 1);
-					if (!i.length) return;
-					const a = await this.props.startMediaUploads(i, t);
-					if (!a.length) return;
-					const c = a.map(e => ({
-						uploadKey: e,
-						caption: "",
-						url: ""
-					}));
-					this.props.onChange(Object.assign({}, s, {
-						items: [...o, ...c],
-						selectedKey: s.selectedKey || a[0]
-					}))
+				uploadMediaFiles(e, t) {
+					this.props.startMediaUploads([...e], t)
 				}
 				render() {
 					const {
@@ -29851,7 +29891,7 @@
 				}),
 				oc = Object(r.b)(sc, (e, t) => ({
 					togglePostToTwitter: t => {
-						e(a.z(t)), e((e, n) => O.s(n(), t))
+						e(a.z(t)), e((e, n) => O.v(n(), t))
 					},
 					toggleSendReplies: t => {
 						e(a.A(t))
@@ -30171,7 +30211,7 @@
 						const {
 							sendEvent: t
 						} = this.props;
-						e.options.length < 7 && (t(Object(O.m)()), this.props.onUpdatePoll(Object.assign({}, e, {
+						e.options.length < 7 && (t(Object(O.p)()), this.props.onUpdatePoll(Object.assign({}, e, {
 							options: e.options.concat(this.makeOption())
 						})))
 					}, this.handleBlur = () => this.inputFocused = !1, this.handleVotingLengthDropdownClick = () => {
@@ -30179,7 +30219,7 @@
 							sendEvent: e,
 							votingLengthDropdownIsOpen: t
 						} = this.props;
-						t || e(Object(O.n)()), this.props.onToggleVotingLengthDropdown()
+						t || e(Object(O.q)()), this.props.onToggleVotingLengthDropdown()
 					}, this.handleChangeVotingLength = e => t => {
 						this.props.onUpdatePoll(Object.assign({}, e, {
 							duration: t
@@ -30235,7 +30275,7 @@
 				}
 				renderPollCreator(e) {
 					const t = this.sectionIsDisabled(Xc.Options);
-					return o.a.createElement(zr.a, {
+					return o.a.createElement(qr.a, {
 						render: (n, s, r, i, a) => o.a.createElement(Wc, {
 							className: qc.a.option,
 							index: s,
@@ -30571,7 +30611,7 @@
 						onBlur: () => {
 							s(e(yt(m.mb.BODY, o)))
 						},
-						onFocus: () => e((e, t) => O.k(t(), f.k.CLICK, f.l.BODY)),
+						onFocus: () => e((e, t) => O.n(t(), f.k.CLICK, f.l.BODY)),
 						onRTEStateChange: (t, s) => {
 							e(a.f({
 								rteState: t,
@@ -30579,7 +30619,7 @@
 							})), n()
 						},
 						onToggleEditorMode: (t, n) => e(Pc.d(f.g.POST_CREATION, t, n)),
-						onTrackToolbarClick: (t, n) => e((e, s) => O.w(s(), t, n)),
+						onTrackToolbarClick: (t, n) => e((e, s) => O.z(s(), t, n)),
 						onUpdatePoll: t => e(Object(Ic.b)(t))
 					}
 				});
@@ -30739,7 +30779,7 @@
 						onChange: t => {
 							e(a.i(t)), n(t)
 						},
-						onInputFocus: () => e((e, t) => O.k(t(), f.k.CLICK, f.l.TITLE))
+						onInputFocus: () => e((e, t) => O.n(t(), f.k.CLICK, f.l.TITLE))
 					}
 				});
 			var Yl = Object(E.t)()(Zl(e => {
@@ -30928,6 +30968,20 @@
 						details: e => l.fbt._("Aw crap, {sureddit name} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF. If you change to {suredditName} your video will be removed.", [l.fbt._param("sureddit name", "r/".concat(e)), l.fbt._param("suredditName", "r/".concat(e))], {
 							hk: "34j8hI"
 						})
+					},
+					[f.p.GalleryWillBeRemovedGalleryNotAllowed]: {
+						removePromptTitle: () => l.fbt._("Remove gallery?", null, {
+							hk: "4mddlm"
+						}),
+						removeConfirm: () => l.fbt._("Change and remove gallery", null, {
+							hk: "2JB1HN"
+						}),
+						removeCancel: () => l.fbt._("Keep gallery", null, {
+							hk: "26kW19"
+						}),
+						details: e => l.fbt._("Aw crap, {sureddit name} doesn't allow galleries. If you change to {suredditName} your gallery will be removed.", [l.fbt._param("sureddit name", "r/".concat(e)), l.fbt._param("suredditName", "r/".concat(e))], {
+							hk: "11irkw"
+						})
 					}
 				},
 				xd = dt.a.div("Wrapper", fd.a),
@@ -31015,7 +31069,7 @@
 						e(a.h({
 							submissionType: n,
 							extra: s
-						})), e((e, t) => O.p(t(), n)), e(a.w(n === m.Ib.POLL)), ((e, t, n) => {
+						})), e((e, t) => O.s(t(), n)), e(a.w(n === m.Ib.POLL)), ((e, t, n) => {
 							if (!t) return;
 							const s = Object(Sd.a)(t.url, n);
 							t.url !== s && e(Object(p.c)(s))
@@ -31247,7 +31301,7 @@
 						case m.Ib.MEDIA:
 							return o.a.createElement(Na, null);
 						case m.Ib.LINK_ONLY:
-							return o.a.createElement(Fr, {
+							return o.a.createElement(Br, {
 								onChange: this.sendStartTypingInputUrlEvent,
 								onKeyDown: this.handleKeyDown,
 								onPostFieldValidation: this.onPostFieldValidation
@@ -31362,7 +31416,7 @@
 					}), s === md && o.a.createElement(hd, {
 						onCancel: this.onToggleCurrentModal,
 						onConfirm: this.onConfirmSchedulingPostWithLimitations
-					}), i && (s === f.p.ImageWillBeRemoved || s === f.p.VideoWillBeRemovedTooLongForGif || s === f.p.VideoWillBeRemovedMediaNotAllowed) && o.a.createElement(jd, {
+					}), i && (s === f.p.ImageWillBeRemoved || s === f.p.VideoWillBeRemovedTooLongForGif || s === f.p.VideoWillBeRemovedMediaNotAllowed || s === f.p.GalleryWillBeRemovedGalleryNotAllowed) && o.a.createElement(jd, {
 						withOverlay: !0,
 						promptType: s,
 						nextSubreddit: i,
@@ -31392,7 +31446,7 @@
 								d = oe.d.rteVideoPoster(i),
 								u = Oe(i),
 								p = l === m.Ib.MEDIA;
-							u && (d || p) && (await n(P.e(u)), Oe(s())) || (e === f.q.Draft ? await n(Object(A.r)(t.draftId)) : e === f.q.ScheduledPost && Object(de.q)(i) ? await n(je(t)) : e === f.q.ScheduledPost ? await n(Se(t)) : await n(we(t)))
+							u && (d || p) && (await n(P.f(u)), Oe(s())) || (e === f.q.Draft ? await n(Object(A.r)(t.draftId)) : e === f.q.ScheduledPost && Object(de.q)(i) ? await n(je(t)) : e === f.q.ScheduledPost ? await n(Se(t)) : await n(we(t)))
 						})(t, {
 							draftId: n || void 0,
 							pageLayer: o,
@@ -31410,18 +31464,23 @@
 						onCancelSubredditChange: () => {
 							e(a.y("")), e(_e.e())
 						},
-						onCancelAndRemoveMediaUpload: () => e(ke.j(P.a, !0)),
+						onCancelAndRemoveMediaUpload: () => {
+							e(Object(a.d)({
+								items: [],
+								selectedKey: null
+							})), e(ke.j(P.a, !0))
+						},
 						onClearErrors: (t, n) => t && e(a.j(n)),
 						onRequestDraftList: () => e(A.p()),
 						onSetDestCollection: t => e(_e.d(t)),
-						onStartTypingInput: t => e((e, n) => O.k(n(), f.k.TYPE, t)),
+						onStartTypingInput: t => e((e, n) => O.n(n(), f.k.TYPE, t)),
 						onToggleIsChanged: t => e(a.s(t)),
 						onToggleModal: t => e(a.y(t)),
 						onTrackDiscardButtonClick: () => e((e, t) => O.c(t())),
 						onUnmount: () => e((e, t) => {
 							e(ke.j(P.a, !0)), e(ke.i(f.m, !0))
 						}),
-						onUploadPendingThumbnails: t => e(P.e(t)),
+						onUploadPendingThumbnails: t => e(P.f(t)),
 						startChangeUsernameFlow: () => e(Object(T.f)())
 					}
 				}, (e, t, n) => Object.assign({}, e, t, n, {
@@ -32167,4 +32226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.2075cd63451fcf95335e.js.map
+//# sourceMappingURL=PostCreation.bd50f276b26cd75fbf08.js.map

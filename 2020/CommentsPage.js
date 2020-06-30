@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.06cd42126142b218bc65.js
-// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.706920c7d7d93638e619.js
+// Retrieved at 6/30/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -559,8 +559,8 @@
 			const P = Object(o.a)(k.m),
 				w = Object(o.a)(k.n),
 				I = Object(o.a)(k.z),
-				S = Object(o.a)(k.G),
-				T = Object(o.a)(k.H),
+				S = Object(o.a)(k.F),
+				T = Object(o.a)(k.G),
 				N = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: r
@@ -589,7 +589,7 @@
 					const {
 						post: d
 					} = e, c = !d.media || "rtjson" !== d.media.type && "text" !== d.media.type ? "" : d.media.rteMode;
-					C.r(s(), Object(j.o)(c)), t(I(d.id));
+					C.u(s(), Object(j.o)(c)), t(I(d.id));
 					const l = await b(a(), e),
 						m = !1 === l.body.success;
 					if (t(P(d.id)), l.ok && !m) {
@@ -16445,4 +16445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.06cd42126142b218bc65.js.map
+//# sourceMappingURL=CommentsPage.706920c7d7d93638e619.js.map

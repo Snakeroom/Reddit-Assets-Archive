@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.266181340ef41c922cbd.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.9f26e6247b077aa89114.js
+// Retrieved at 6/30/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -2363,7 +2363,7 @@
 						timer: h.timer(r, s),
 						userSubreddit: h.userSubreddit(e),
 						adblock: h.adblock(e)
-					}, c ? Object(i.j)(e, c) : {}))
+					}, c ? Object(i.m)(e, c) : {}))
 				},
 				I = (e, t) => n => Object.assign({
 					source: "coins_marketing",
@@ -2983,4 +2983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.266181340ef41c922cbd.js.map
+//# sourceMappingURL=ModListing~Reddit.9f26e6247b077aa89114.js.map

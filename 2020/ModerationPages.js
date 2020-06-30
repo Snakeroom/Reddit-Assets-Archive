@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.6e8496d0e2bfe53aa07c.js
-// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a6532f79bf9f5b9c516d.js
+// Retrieved at 6/30/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "Poll~ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~reddit-components-ClassicPost~redd~f8abff80", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1783,8 +1783,8 @@
 			const w = Object(o.a)(y.m),
 				S = Object(o.a)(y.n),
 				I = Object(o.a)(y.z),
-				P = Object(o.a)(y.G),
-				T = Object(o.a)(y.H),
+				P = Object(o.a)(y.F),
+				T = Object(o.a)(y.G),
 				N = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: a
@@ -1813,7 +1813,7 @@
 					const {
 						post: d
 					} = e, l = !d.media || "rtjson" !== d.media.type && "text" !== d.media.type ? "" : d.media.rteMode;
-					v.r(s(), Object(j.o)(l)), t(I(d.id));
+					v.u(s(), Object(j.o)(l)), t(I(d.id));
 					const c = await h(i(), e),
 						m = !1 === c.body.success;
 					if (t(w(d.id)), c.ok && !m) {
@@ -6521,7 +6521,7 @@
 						subredditName: s,
 						update: n,
 						isChatPostsCreationEnabled: o,
-						isImageGalleryCreationEnabled: a
+						isImageGallerySettingEnabled: a
 					} = e, {
 						allowChatPostCreation: i,
 						allowGalleries: d,
@@ -6885,7 +6885,7 @@
 				crowdControlModeEnabled: g.d.enableCrowdControlMode,
 				crowdControlLevelEnabled: g.d.enableCrowdControlLevel,
 				isChatPostsCreationEnabled: (e, t) => Object(v.c)(e, t.subredditId),
-				isImageGalleryCreationEnabled: g.d.ImageGalleryCreationFlow,
+				isImageGallerySettingEnabled: g.d.ImageGallerySubredditSetting,
 				isEmployee: k.E,
 				restrictions: C.p,
 				settings: (e, t) => Object(C.T)(e, t.subredditId),
@@ -29993,4 +29993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.6e8496d0e2bfe53aa07c.js.map
+//# sourceMappingURL=ModerationPages.a6532f79bf9f5b9c516d.js.map
