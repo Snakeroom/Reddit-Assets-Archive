@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b19d0cca94ce12d70d0b.js
-// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c3f545b9cbffdc06f59f.js
+// Retrieved at 7/6/2020, 2:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOv~8a8059b8", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "4780cfa-production"
+					SENTRY_RELEASE_VERSION: "117df10-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -24081,8 +24081,10 @@
 				return r
 			})), n.d(t, "a", (function() {
 				return i
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return a
+			})), n.d(t, "c", (function() {
+				return c
 			}));
 			var s = n("./src/reddit/constants/elementIds.ts");
 			let o;
@@ -24103,6 +24105,12 @@
 				a = e => {
 					const t = e.getBoundingClientRect();
 					return window.innerWidth - (t.left + t.right)
+				},
+				c = e => {
+					if (!e || !document.body) return 0;
+					const t = a(document.body),
+						n = e.offsetWidth - e.scrollWidth;
+					return t || n
 				}
 		},
 		"./src/reddit/helpers/trackers/postCollection.ts": function(e, t, n) {
@@ -32417,4 +32425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.b19d0cca94ce12d70d0b.js.map
+//# sourceMappingURL=PostCreation.c3f545b9cbffdc06f59f.js.map

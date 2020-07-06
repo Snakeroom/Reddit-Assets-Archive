@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxPages.9f4e15e3bf9772057a21.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxPages.0bcf2609120b6664f2f8.js
+// Retrieved at 7/6/2020, 2:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxPages"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, s) {
@@ -20,8 +20,8 @@
 			var r = s("./src/config.ts"),
 				o = s("./node_modules/react/index.js"),
 				n = s.n(o),
-				c = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
+				d = s("./node_modules/react-redux/es/index.js"),
+				c = s("./node_modules/reselect/es/index.js"),
 				i = s("./src/lib/addQueryParams/index.ts"),
 				a = s("./src/lib/env/index.ts"),
 				l = s("./src/reddit/actions/platform.ts"),
@@ -80,13 +80,13 @@
 				}
 				return s
 			};
-			const x = Object(d.c)({
+			const x = Object(c.c)({
 					isSubscriptionsPinned: O.b,
 					url: e => e.platform.currentPage ? e.platform.currentPage.url : "",
 					servedOrigin: e => "".concat(e.meta.protocol, "://").concat(e.meta.domain),
 					nightmode: h.S
 				}),
-				S = Object(c.b)(x, e => ({
+				S = Object(d.b)(x, e => ({
 					onTitleChange: t => e(l.l({
 						title: t
 					}))
@@ -116,7 +116,7 @@
 							marginRight: e
 						} = document.body.style;
 						!!e != !!this.state.bodyScrollOffset && (e ? this.setState({
-							bodyScrollOffset: Object(b.c)(document.body)
+							bodyScrollOffset: Object(b.d)(document.body)
 						}) : this.setState({
 							bodyScrollOffset: 0
 						}))
@@ -144,14 +144,14 @@
 					} = this.props;
 					let o = 0;
 					e && (o += f.u), 0 !== this.state.bodyScrollOffset && (o -= this.state.bodyScrollOffset);
-					const c = Object(a.a)() ? t : "true",
-						d = Object(a.a)() ? r.a.redditUrl : "";
+					const d = Object(a.a)() ? t : "true",
+						c = Object(a.a)() ? r.a.redditUrl : "";
 					let l;
-					return l = s ? d + Object(i.a)(this.props.url, {
-						embedded: c,
+					return l = s ? c + Object(i.a)(this.props.url, {
+						embedded: d,
 						dark: "true"
-					}) : d + Object(i.a)(this.props.url, {
-						embedded: c
+					}) : c + Object(i.a)(this.props.url, {
+						embedded: d
 					}), n.a.createElement(L, {
 						offsetLeft: o
 					}, n.a.createElement(p, {
@@ -164,4 +164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InboxPages.9f4e15e3bf9772057a21.js.map
+//# sourceMappingURL=InboxPages.0bcf2609120b6664f2f8.js.map

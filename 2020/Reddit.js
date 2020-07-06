@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.fb90f57ed26ebc6939a2.js
-// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.fc4a968547db9ef74b35.js
+// Retrieved at 7/6/2020, 2:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -7169,17 +7169,19 @@
 				Lu = Object(v.a)(e => {
 					var {
 						className: t,
-						theme: s
-					} = e, n = Au(e, ["className", "theme"]);
-					const a = Object(me.a)(Object.assign({
-						theme: s
-					}, n));
+						overlayScrollContainerEl: s,
+						theme: n
+					} = e, a = Au(e, ["className", "overlayScrollContainerEl", "theme"]);
+					const r = Object(me.a)(Object.assign({
+						theme: n
+					}, a));
 					return u.a.createElement("div", Tu({
 						className: Object(g.a)(Nu.a.overlayContentWrapper, t),
 						style: {
-							"--comments-overlay-background": Object(_u.g)(a.canvas, a.canvasImgUrl, a.canvasImgPosition)
+							"--comments-overlay-background": Object(_u.g)(r.canvas, r.canvasImgUrl, r.canvasImgPosition),
+							"--comments-overlay-offset": "".concat(Object(ds.c)(s), "px")
 						}
-					}, n))
+					}, a))
 				}),
 				Fu = e => {
 					var {
@@ -7424,8 +7426,12 @@
 						this.setState({
 							mediaIsFullscreen: null !== document.webkitFullscreenElement
 						})
-					}, this.lightboxHeaderRefFn = e => this.lightboxHeaderEl = e, this.overlayRefFn = e => this.overlayScrollContainerEl = e, this.onOverlayMouseUp = e => {
-						if (this.mouseDownInWrapper && Object(x.a)(e) && 0 === e.button && e.target === this.overlayScrollContainerEl) {
+					}, this.lightboxHeaderRefFn = e => this.lightboxHeaderEl = e, this.overlayRefFn = e => {
+						this.setState({
+							overlayScrollContainerEl: e
+						})
+					}, this.onOverlayMouseUp = e => {
+						if (this.mouseDownInWrapper && Object(x.a)(e) && 0 === e.button && e.target === this.state.overlayScrollContainerEl) {
 							const {
 								location: e,
 								onClickOutsideOverlay: t
@@ -7433,8 +7439,9 @@
 							t(e.state[G.a.CloseLocation])
 						}
 					}, this.onOverlayMouseDown = e => {
-						this.mouseDownInWrapper = e.target === this.overlayScrollContainerEl && e.clientX <= window.innerWidth - 17
+						this.mouseDownInWrapper = e.target === this.state.overlayScrollContainerEl && e.clientX <= window.innerWidth - 17
 					}, this.state = {
+						overlayScrollContainerEl: null,
 						mediaIsFullscreen: !1
 					}
 				}
@@ -7451,12 +7458,15 @@
 						isPostCollection: e,
 						page: t,
 						routes: s
-					} = this.props, n = !(!t || !t.meta || t.meta.name === f.Ab.SUBREDDIT_CREATION || t.meta.name === f.Ab.PUBLIC_ACCESS_NETWORK), a = e;
+					} = this.props, {
+						overlayScrollContainerEl: n
+					} = this.state, a = !(!t || !t.meta || t.meta.name === f.Ab.SUBREDDIT_CREATION || t.meta.name === f.Ab.PUBLIC_ACCESS_NETWORK), r = e;
 					return u.a.createElement(Lu, {
 						className: Object(g.a)(Object(yu.b)(Nu.a, this.props), {
-							[Nu.a.mIsCommentsLightbox]: n,
-							[Nu.a.mIsLargeCommentsLightbox]: a
-						})
+							[Nu.a.mIsCommentsLightbox]: a,
+							[Nu.a.mIsLargeCommentsLightbox]: r
+						}),
+						overlayScrollContainerEl: n
 					}, u.a.createElement("div", {
 						className: Object(g.a)(Nu.a.overlayWrapper, Object(yu.b)(Nu.a, this.props))
 					}, u.a.createElement("div", {
@@ -7467,10 +7477,10 @@
 						ref: this.overlayRefFn,
 						onMouseDown: this.onOverlayMouseDown,
 						onMouseUp: this.onOverlayMouseUp
-					}, n && u.a.createElement(Fu, {
+					}, a && u.a.createElement(Fu, {
 						divRef: this.lightboxHeaderRefFn,
 						className: Object(g.a)(Object(yu.b)(Nu.a, this.props), {
-							[Nu.a.mIsLargeCommentsLightbox]: a
+							[Nu.a.mIsLargeCommentsLightbox]: r
 						}),
 						tabIndex: -1
 					}, u.a.createElement(Pd.a, {
@@ -13497,4 +13507,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~PostCreation~Reddit~StandalonePost~ee6bfdf1", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.fb90f57ed26ebc6939a2.js.map
+//# sourceMappingURL=Reddit.fc4a968547db9ef74b35.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.320b859bb53fe577b16f.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.acf5fd8f74d6a236d99e.js
+// Retrieved at 7/6/2020, 2:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1975,8 +1975,10 @@
 				return o
 			})), n.d(t, "a", (function() {
 				return a
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return i
+			})), n.d(t, "c", (function() {
+				return c
 			}));
 			var r = n("./src/reddit/constants/elementIds.ts");
 			let s;
@@ -1997,6 +1999,12 @@
 				i = e => {
 					const t = e.getBoundingClientRect();
 					return window.innerWidth - (t.left + t.right)
+				},
+				c = e => {
+					if (!e || !document.body) return 0;
+					const t = i(document.body),
+						n = e.offsetWidth - e.scrollWidth;
+					return t || n
 				}
 		},
 		"./src/reddit/helpers/trackers/navigation.ts": function(e, t, n) {
@@ -3010,4 +3018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.320b859bb53fe577b16f.js.map
+//# sourceMappingURL=ModListing~Reddit.acf5fd8f74d6a236d99e.js.map
