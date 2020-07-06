@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b7e68966e6effe8b95dd.js
-// Retrieved at 7/6/2020, 12:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8b39136ac65a854dba8b.js
+// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4547,9 +4547,7 @@
 		},
 		"./src/reddit/components/CommentsPageSidebar/index.m.less": function(e, t, s) {
 			e.exports = {
-				communityTipJar: "_3Rb_UoC2j8wE4ckG7Yqy2K",
-				communityTokens: "LRXVBnaKV0QUa_v8PZe5Q",
-				leaderboard: "_2Bw_-Pd7_PSh46KT8HivGh",
+				card: "_2Zqrm36MciZxq2elpbtQig",
 				inFeedAd: "_2vWBnEHUdKqzj9DabP66L1",
 				outerWrapper: "_31AVRNJbVMh2DUFRrpCQcD"
 			}
@@ -4567,25 +4565,26 @@
 				m = s("./src/lib/constants/index.ts"),
 				p = s("./src/lib/objectSelector/index.ts"),
 				u = s("./src/reddit/components/Economics/CommunityTipJar/async.tsx"),
-				h = s("./src/reddit/components/Governance/CommunityCard/async.tsx"),
-				b = s("./src/reddit/components/Governance/Leaderboard/async.tsx"),
-				x = s("./src/reddit/components/IdCard/async.tsx"),
-				g = s("./src/reddit/components/SidebarAd/CommentsPageSidebarAd.tsx"),
-				f = s("./src/reddit/components/SidebarSpacer/index.tsx"),
-				v = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				C = s("./src/reddit/components/Widgets/AdRules/index.tsx"),
-				O = s("./src/reddit/components/Widgets/Widget/index.tsx"),
-				y = s("./src/reddit/featureFlags/component.tsx"),
-				E = s("./src/reddit/helpers/createBannerProperties/index.ts"),
-				_ = s("./src/reddit/models/Post/index.ts"),
-				k = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				j = s("./src/reddit/selectors/subreddit.ts"),
-				P = s("./src/reddit/selectors/user.ts"),
-				w = s("./src/reddit/components/CommentsPageSidebar/index.m.less"),
-				I = s.n(w);
-			const S = Object(y.a)("spPoints", h.a),
-				T = Object(y.a)("spLeaderboard", b.a),
-				N = Object(n.a)({
+				h = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/async.tsx"),
+				b = s("./src/reddit/components/Governance/CommunityCard/async.tsx"),
+				x = s("./src/reddit/components/Governance/Leaderboard/async.tsx"),
+				g = s("./src/reddit/components/IdCard/async.tsx"),
+				f = s("./src/reddit/components/SidebarAd/CommentsPageSidebarAd.tsx"),
+				v = s("./src/reddit/components/SidebarSpacer/index.tsx"),
+				C = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				O = s("./src/reddit/components/Widgets/AdRules/index.tsx"),
+				y = s("./src/reddit/components/Widgets/Widget/index.tsx"),
+				E = s("./src/reddit/featureFlags/component.tsx"),
+				_ = s("./src/reddit/helpers/createBannerProperties/index.ts"),
+				k = s("./src/reddit/models/Post/index.ts"),
+				j = s("./src/reddit/selectors/experiments/postSeo.ts"),
+				P = s("./src/reddit/selectors/subreddit.ts"),
+				w = s("./src/reddit/selectors/user.ts"),
+				I = s("./src/reddit/components/CommentsPageSidebar/index.m.less"),
+				S = s.n(I);
+			const T = Object(E.a)("spPoints", b.a),
+				N = Object(E.a)("spLeaderboard", x.a),
+				M = Object(n.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-ProfileIdCard",
 					isReady(e) {
@@ -4605,13 +4604,13 @@
 						return "./src/reddit/components/ProfileIdCard/index.tsx"
 					}
 				}),
-				M = Object(c.c)({
-					isLoggedIn: P.H,
-					postSEOV2IdCardVariant: k.k,
-					widgets: Object(p.a)(j.s)
+				L = Object(c.c)({
+					isLoggedIn: w.H,
+					postSEOV2IdCardVariant: j.k,
+					widgets: Object(p.a)(P.s)
 				}),
-				L = Object(d.b)(M);
-			class R extends a.a.Component {
+				R = Object(d.b)(L);
+			class F extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						isMounted: !1
@@ -4633,16 +4632,16 @@
 						post: o,
 						isFakeOverlay: r,
 						postSEOV2IdCardVariant: i
-					} = this.props, d = !Object(k.a)(i) && !Object(k.g)(i);
-					return a.a.createElement(v.a, {
+					} = this.props, d = !Object(j.a)(i) && !Object(j.g)(i);
+					return a.a.createElement(C.a, {
 						adComponentOnFakeOverlay: r,
-						adComponent: d ? a.a.createElement(g.a, {
+						adComponent: d ? a.a.createElement(f.a, {
 							postId: o.id,
 							isOverlay: s,
 							listingName: n,
 							placement: m.c.BELOW_THE_FOLD,
 							placementIndex: e,
-							position: E.a.BOTTOM,
+							position: _.a.BOTTOM,
 							refreshKey: o.id,
 							sizes: m.n,
 							commentsPageKey: t
@@ -4662,51 +4661,54 @@
 						widgets: c
 					} = this.props;
 					let p = 0;
-					const h = Object(k.a)(r) || Object(k.g)(r),
-						b = a.a.createElement(g.a, {
+					const b = Object(j.a)(r) || Object(j.g)(r),
+						x = a.a.createElement(f.a, {
 							postId: o.id,
 							isOverlay: n,
 							listingName: d,
 							placement: m.c.ABOVE_THE_FOLD,
 							placementIndex: p++,
-							position: E.a.FIRST,
+							position: _.a.FIRST,
 							refreshKey: o.id,
 							sizes: m.h,
 							commentsPageKey: t
 						});
 					return a.a.createElement("div", {
-						className: Object(l.a)(I.a.outerWrapper, e)
-					}, Object(_.j)(o) ? a.a.createElement(N, {
+						className: Object(l.a)(S.a.outerWrapper, e)
+					}, Object(k.j)(o) ? a.a.createElement(M, {
 						profileName: d,
 						isOverlay: n || !1
-					}) : a.a.createElement(x.a, {
+					}) : a.a.createElement(g.a, {
 						commentsPageKey: t,
 						isCommentsPage: !0,
 						isOverlay: n,
 						listingName: d,
 						postId: o.id,
 						rememberPosition: o.numComments > 0,
-						isMinimal: h
-					}), a.a.createElement(u.a, {
-						className: I.a.communityTipJar,
+						isMinimal: b
+					}), a.a.createElement(h.a, {
+						cardClassName: S.a.card,
 						subredditId: i
-					}), a.a.createElement(S, {
-						className: I.a.communityTokens,
-						subredditId: i,
-						uniqueId: o.id
+					}), a.a.createElement(u.a, {
+						className: S.a.card,
+						subredditId: i
 					}), a.a.createElement(T, {
-						className: I.a.leaderboard,
+						className: S.a.card,
 						subredditId: i,
 						uniqueId: o.id
-					}), b, s && c.map((e, t) => a.a.createElement(f.a, {
+					}), a.a.createElement(N, {
+						className: S.a.card,
+						subredditId: i,
+						uniqueId: o.id
+					}), x, s && c.map((e, t) => a.a.createElement(v.a, {
 						key: "widgetSpacer".concat(t)
-					}, a.a.createElement(O.a, {
+					}, a.a.createElement(y.a, {
 						subredditName: d,
 						widget: e
-					}))), o.isSponsored && a.a.createElement(f.a, null, a.a.createElement(C.a, null)), this.renderFooter(p++))
+					}))), o.isSponsored && a.a.createElement(v.a, null, a.a.createElement(O.a, null)), this.renderFooter(p++))
 				}
 			}
-			t.a = L(R)
+			t.a = R(F)
 		},
 		"./src/reddit/components/CommentsWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -5280,6 +5282,17 @@
 				} = e, s = c(e, ["featureEnabled"]);
 				return e.featureEnabled ? o.a.createElement(l, s) : null
 			}))
+		},
+		"./src/reddit/components/Economics/SubredditPremium/SidebarCards/async.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./src/higherOrderComponents/makeAsync.tsx"),
+				o = s("./src/reddit/featureFlags/component.tsx");
+			const r = Object(n.a)({
+				ErrorComponent: () => null,
+				LoadingComponent: () => null,
+				getComponent: () => Promise.all([s.e("EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"), s.e("EconomicsSubredditPremiumSidebarCards")]).then(s.bind(null, "./src/reddit/components/Economics/SubredditPremium/SidebarCards/index.tsx")).then(e => e.default)
+			});
+			t.a = Object(o.a)("spPremium", r)
 		},
 		"./src/reddit/components/Economics/TopTippers/CommentUsername/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -16526,4 +16539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.b7e68966e6effe8b95dd.js.map
+//# sourceMappingURL=CollectionCommentsPage.8b39136ac65a854dba8b.js.map

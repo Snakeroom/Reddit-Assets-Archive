@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.dc911dfd5e25b7d63e30.js
-// Retrieved at 6/30/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.8b94a89c3b641cb4240e.js
+// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, r) {
@@ -505,7 +505,7 @@
 			function o(e, t) {
 				const r = new s.BigNumber(e),
 					n = new s.BigNumber(t);
-				return r.dividedBy(n).decimalPlaces(2).toString()
+				return r.dividedToIntegerBy(n).toString()
 			}
 
 			function d(e, t) {
@@ -728,4 +728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.dc911dfd5e25b7d63e30.js.map
+//# sourceMappingURL=reddit-components-Governance-Leaderboard.8b94a89c3b641cb4240e.js.map

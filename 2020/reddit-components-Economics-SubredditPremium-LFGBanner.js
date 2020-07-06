@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.ff6b973e1429815fb9ef.js
-// Retrieved at 6/11/2020, 1:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.935b1625c35d82581ad5.js
+// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, s) {
@@ -142,6 +142,12 @@
 		},
 		"./src/reddit/components/Economics/SubredditPremium/LFGBanner/index.m.less": function(e, t, s) {
 			e.exports = {
+				choiceSelected: "_2_PAZW9RwEcRVWBO0fhHa6",
+				close: "_308nelFEzZOnhnqbW5RpPv",
+				dismissedContainer: "_2EAX2PYbs1gAVQGLJ5XaB9",
+				dismissedText: "DBgaCJDh9aY3K_vHjS9Q3",
+				showContainer: "_2BkQlYxIdIBMsKRROdxSSP",
+				successContainer: "_1wtFNjoeAGTIux27TBYRFN",
 				claim: "_2h8JoT5ednzNOqKdVKCHlM",
 				container: "_26wdyRSALASUyhdTxV6U4k",
 				content: "_3D6as82_3SjWTXYShWM5lz",
@@ -178,15 +184,15 @@
 					}),
 					src: "".concat(p.a.assetPath, "/img/memberships/banners/how_to_apply_badge.gif")
 				},
-				y = {
+				v = {
 					description: () => n.fbt._("Want to change your badge? Visit the Gallery in the Sidebar to view the latest styles.", null, {
 						hk: "71rqs"
 					}),
 					src: "".concat(p.a.assetPath, "/img/memberships/banners/how_to_apply_badge.gif")
 				};
 
-			function v(e) {
-				const t = (e.hideEmoji ? [] : [f]).concat(e.boughtBadge ? _ : y);
+			function y(e) {
+				const t = (e.hideEmoji ? [] : [f]).concat(e.boughtBadge ? _ : v);
 				return r.a.createElement("article", {
 					className: Object(d.a)(e.className, g.a.container)
 				}, r.a.createElement("header", {
@@ -225,9 +231,9 @@
 				S = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				k = s("./src/reddit/models/Toast/index.ts"),
 				P = s("./src/reddit/selectors/economics.ts"),
-				I = s("./src/reddit/selectors/telemetry.ts"),
-				B = s("./node_modules/uuid/v4.js"),
-				L = s.n(B),
+				B = s("./src/reddit/selectors/telemetry.ts"),
+				I = s("./node_modules/uuid/v4.js"),
+				L = s.n(I),
 				D = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Claim/Card/index.m.less"),
 				F = s.n(D);
 
@@ -319,27 +325,27 @@
 				}))
 			}
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var M = s("./node_modules/lodash/sample.js"),
-				W = s.n(M),
+			var W = s("./node_modules/lodash/sample.js"),
+				M = s.n(W),
 				H = s("./node_modules/react-motion/lib/react-motion.js"),
 				z = s("./src/reddit/icons/svgs/Replay/index.tsx"),
-				Z = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Example/index.m.less"),
-				q = s.n(Z);
+				Y = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Example/index.m.less"),
+				Z = s.n(Y);
 			const K = {
 				stiffness: 210,
 				damping: 20
 			};
 
-			function Y() {
+			function q() {
 				return {
-					platform: W()(Object.keys(G.a)) || "pc",
-					playerType: W()(Object.keys(G.b)) || "casual",
-					region: W()(Object.keys(G.c)) || "nae"
+					platform: M()(Object.keys(G.a)) || "pc",
+					playerType: M()(Object.keys(G.b)) || "casual",
+					region: M()(Object.keys(G.c)) || "nae"
 				}
 			}
 			class Q extends r.a.Component {
 				constructor(e) {
-					super(e), this.state = Y()
+					super(e), this.state = q()
 				}
 				render() {
 					const {
@@ -348,11 +354,11 @@
 						region: s
 					} = this.state, a = G.a[e], i = G.b[t], o = G.c[s];
 					return r.a.createElement("article", {
-						className: Object(d.a)(q.a.container, this.props.className)
+						className: Object(d.a)(Z.a.container, this.props.className)
 					}, r.a.createElement("div", {
-						className: q.a.cover
+						className: Z.a.cover
 					}), r.a.createElement("header", {
-						className: q.a.title
+						className: Z.a.title
 					}, n.fbt._("Example", null, {
 						hk: "1siPoi"
 					})), r.a.createElement(H.TransitionMotion, {
@@ -379,19 +385,19 @@
 							rotation: Object(H.spring)(180, K)
 						})
 					}, e => r.a.createElement("div", {
-						className: q.a.preview
+						className: Z.a.preview
 					}, e.map(e => r.a.createElement("img", {
-						className: q.a.image,
+						className: Z.a.image,
 						key: e.key,
 						src: e.key,
 						style: {
 							transform: "rotateY(".concat(e.style.rotation, "deg)")
 						}
 					})))), r.a.createElement("footer", {
-						className: q.a.description
+						className: Z.a.description
 					}, "".concat(o, ", ").concat(a, ", ").concat(i)), r.a.createElement(z.a, {
-						className: q.a.redo,
-						onClick: () => this.setState(Y())
+						className: Z.a.redo,
+						onClick: () => this.setState(q())
 					}))
 				}
 			}
@@ -488,7 +494,7 @@
 						displayText: String(e.type[t]),
 						onClick: () => {
 							e.onChange(t), e.sendEvent(s => {
-								const n = I.defaults(s);
+								const n = B.defaults(s);
 								return Object.assign({
 									source: "meta",
 									action: "click",
@@ -499,7 +505,7 @@
 										paneName: de.get(e.type),
 										reason: t
 									}),
-									subreddit: I.subreddit(s)
+									subreddit: B.subreddit(s)
 								})
 							})
 						}
@@ -590,8 +596,8 @@
 									action: "click",
 									noun: "lfg_banner_generate_badge",
 									correlationId: this.props.correlationId
-								}, I.defaults(e), {
-									subreddit: I.subreddit(e)
+								}, B.defaults(e), {
+									subreddit: B.subreddit(e)
 								})))
 							}
 						}, n.fbt._("generate badge", null, {
@@ -604,7 +610,7 @@
 			! function(e) {
 				e.CanClaim = "canclaim", e.Claimed = "claimed", e.Dismissed = "dismissed", e.Generating = "generating", e.Hidden = "hidden", e.Select = "select"
 			}(ue || (ue = {}));
-			class ye extends r.a.Component {
+			class ve extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleClaim = async e => {
 						const {
@@ -624,7 +630,7 @@
 						o.ok ? (this.setState({
 							show: ue.Claimed
 						}), this.props.onDismissBanner(), this.props.onBadgeClaimed(i)) : this.props.onError(o.error), e && this.props.onOpenLandingPage(s, this.correlationId), this.props.sendEvent(t => {
-							const s = I.defaults(t);
+							const s = B.defaults(t);
 							return Object.assign({
 								source: "meta",
 								action: "click",
@@ -635,7 +641,7 @@
 									reason: i,
 									paneName: w.a.LFG
 								}),
-								subreddit: I.subreddit(t)
+								subreddit: B.subreddit(t)
 							})
 						})
 					}, this.handleDismiss = () => {
@@ -644,7 +650,7 @@
 						}) : (this.setState({
 							show: ue.Dismissed
 						}), this.props.sendEvent(e => {
-							const t = I.defaults(e);
+							const t = B.defaults(e);
 							return Object.assign({
 								source: "meta",
 								action: "click",
@@ -654,14 +660,14 @@
 								actionInfo: Object.assign({}, t.actionInfo, {
 									paneName: w.a.LFG
 								}),
-								subreddit: I.subreddit(e)
+								subreddit: B.subreddit(e)
 							})
 						})), this.props.onDismissBanner()
 					}, this.handleUndoDismiss = () => {
 						this.setState({
 							show: ue.Select
 						}), this.props.onUndismissBanner(), this.props.sendEvent(e => {
-							const t = I.defaults(e);
+							const t = B.defaults(e);
 							return Object.assign({
 								source: "meta",
 								action: "click",
@@ -671,7 +677,7 @@
 								actionInfo: Object.assign({}, t.actionInfo, {
 									paneName: w.a.LFG
 								}),
-								subreddit: I.subreddit(e)
+								subreddit: B.subreddit(e)
 							})
 						})
 					}, this.state = {
@@ -688,7 +694,7 @@
 					this.setState({
 						show: ue.Select
 					}), this.props.sendEvent(e => {
-						const t = I.defaults(e);
+						const t = B.defaults(e);
 						return Object.assign({
 							source: "meta",
 							action: "view",
@@ -698,7 +704,7 @@
 							actionInfo: Object.assign({}, t.actionInfo, {
 								paneName: w.a.LFG
 							}),
-							subreddit: I.subreddit(e)
+							subreddit: B.subreddit(e)
 						})
 					})
 				}
@@ -729,7 +735,7 @@
 					}, r.a.createElement(S.a, {
 						className: _e.a.close,
 						onClick: this.handleDismiss
-					}), r.a.createElement(v, {
+					}), r.a.createElement(y, {
 						boughtBadge: !0,
 						hideEmoji: !0
 					})) : r.a.createElement("article", {
@@ -762,7 +768,7 @@
 					})) : null
 				}
 			}
-			const ve = Object(c.c)({
+			const ye = Object(c.c)({
 					isBannerDismissed: (e, t) => {
 						let {
 							subredditId: s
@@ -783,8 +789,8 @@
 					},
 					userIsLoggedIn: e => !!e.user.account
 				}),
-				Ee = Object(E.c)(ye);
-			t.default = Object(x.b)(Object(i.b)(ve, (e, t) => {
+				Ee = Object(E.c)(ve);
+			t.default = Object(x.b)(Object(i.b)(ye, (e, t) => {
 				let {
 					subredditId: s
 				} = t;
@@ -971,4 +977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Economics-SubredditPremium-LFGBanner.ff6b973e1429815fb9ef.js.map
+//# sourceMappingURL=reddit-components-Economics-SubredditPremium-LFGBanner.935b1625c35d82581ad5.js.map

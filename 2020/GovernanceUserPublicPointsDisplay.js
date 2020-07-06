@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.68f358c194c8743e5dc3.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.0d0d28e2e162c0df0a26.js
+// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -29,7 +29,7 @@
 			})), n.d(t, "c", (function() {
 				return h
 			})), n.d(t, "f", (function() {
-				return P
+				return N
 			})), n.d(t, "g", (function() {
 				return S
 			})), n.d(t, "d", (function() {
@@ -63,8 +63,8 @@
 				I = Object(s.a)(j.j),
 				_ = Object(s.a)(j.k),
 				w = Object(s.a)(j.q),
-				P = Object(s.a)(j.r),
-				N = Object(s.a)(j.s),
+				N = Object(s.a)(j.r),
+				P = Object(s.a)(j.s),
 				T = Object(s.a)(j.t),
 				E = Object(s.a)(j.u),
 				U = Object(s.a)(j.v),
@@ -104,7 +104,7 @@
 					let {
 						apiContext: a
 					} = c;
-					n(N());
+					n(P());
 					const b = s().transfers.communityPoints.contentId || void 0,
 						m = await
 					function(e, t) {
@@ -475,7 +475,7 @@
 			function o(e, t) {
 				const n = new r.BigNumber(e),
 					s = new r.BigNumber(t);
-				return n.dividedBy(s).decimalPlaces(2).toString()
+				return n.dividedToIntegerBy(s).toString()
 			}
 
 			function d(e, t) {
@@ -530,9 +530,9 @@
 			})), n.d(t, "f", (function() {
 				return w
 			})), n.d(t, "r", (function() {
-				return P
-			})), n.d(t, "n", (function() {
 				return N
+			})), n.d(t, "n", (function() {
+				return P
 			})), n.d(t, "k", (function() {
 				return T
 			}));
@@ -601,7 +601,7 @@
 				O = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || u,
 				v = (e, t) => {
-					const n = P(e, t);
+					const n = N(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
 				h = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
@@ -619,7 +619,7 @@
 					const n = _(e, t);
 					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
-				P = (e, t) => {
+				N = (e, t) => {
 					const n = I(e, t),
 						r = _(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
@@ -636,7 +636,7 @@
 						image: d.image
 					}
 				},
-				N = (e, t) => {
+				P = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -654,4 +654,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.68f358c194c8743e5dc3.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.0d0d28e2e162c0df0a26.js.map

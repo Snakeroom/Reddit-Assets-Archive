@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.cf5dceb124f62de06ec6.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.3ff7026fb7d0f9811415.js
+// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(A, e, t) {
@@ -84,8 +84,8 @@
 				b = t("./src/reddit/helpers/trackers/communityPoints.ts"),
 				I = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				h = t("./src/reddit/selectors/economics.ts"),
-				l = t("./src/reddit/selectors/gov.ts"),
-				C = t("./src/reddit/selectors/subreddit.ts"),
+				C = t("./src/reddit/selectors/gov.ts"),
+				l = t("./src/reddit/selectors/subreddit.ts"),
 				f = t("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				S = t("./src/reddit/components/Governance/ClaimPointsBanner/banner-image.json"),
 				E = t("./src/reddit/components/Governance/ClaimPointsBanner/index.m.less"),
@@ -181,8 +181,8 @@
 				claimablePoints: h.i,
 				karmaEarnedForClaimablePoints: h.o,
 				pointsCopy: h.r,
-				subreddit: C.R,
-				tokenName: l.p
+				subreddit: l.R,
+				tokenName: C.p
 			});
 			e.default = Object(p.c)(Object(a.b)(X, (A, e) => {
 				let {
@@ -407,7 +407,7 @@
 			function s(A, e) {
 				const t = new i.BigNumber(A),
 					n = new i.BigNumber(e);
-				return t.dividedBy(n).decimalPlaces(2).toString()
+				return t.dividedToIntegerBy(n).toString()
 			}
 
 			function r(A, e) {
@@ -520,9 +520,9 @@
 			})), t.d(e, "j", (function() {
 				return h
 			})), t.d(e, "p", (function() {
-				return l
-			})), t.d(e, "q", (function() {
 				return C
+			})), t.d(e, "q", (function() {
+				return l
 			})), t.d(e, "o", (function() {
 				return f
 			})), t.d(e, "l", (function() {
@@ -604,8 +604,8 @@
 					const t = Object(i.m)(A, e);
 					return t && A.subreddits.gov.releaseNotes[t] || d
 				},
-				l = (A, e) => e && e.subredditId && (A.subreddits.gov.meta[e.subredditId] || {}).name || "Subreddit Points",
-				C = (A, e) => e && e.subredditId && (A.subreddits.gov.meta[e.subredditId] || {}).images || k,
+				C = (A, e) => e && e.subredditId && (A.subreddits.gov.meta[e.subredditId] || {}).name || "Subreddit Points",
+				l = (A, e) => e && e.subredditId && (A.subreddits.gov.meta[e.subredditId] || {}).images || k,
 				f = (A, e) => {
 					const t = X(A, e);
 					return t && t.decimals ? "1" + "0".repeat(t.decimals) : "1"
@@ -660,4 +660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.cf5dceb124f62de06ec6.js.map
+//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.3ff7026fb7d0f9811415.js.map

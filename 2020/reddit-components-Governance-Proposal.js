@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.d6c946f55e606880abd7.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.5d0514ca55d1cd9d8872.js
+// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -60,8 +60,8 @@
 				O = Object(o.a)(h.e),
 				C = (Object(o.a)(h.f), Object(o.a)(h.g), Object(o.a)(h.h)),
 				N = Object(o.a)(h.i),
-				j = Object(o.a)(h.j),
-				I = Object(o.a)(h.k),
+				I = Object(o.a)(h.j),
+				j = Object(o.a)(h.k),
 				_ = Object(o.a)(h.q),
 				E = Object(o.a)(h.r),
 				P = Object(o.a)(h.s),
@@ -76,7 +76,7 @@
 							gqlContext: i
 						} = o,
 						d = s().polls.models[e];
-					if (n(j({
+					if (n(I({
 							pollId: e
 						})), (r = d.type === m.a.GA ? await Object(l.c)(i(), e, t) : await Object(l.b)(a(), d.subredditId, e, t)).ok) {
 						if (d.type === m.a.GA) {
@@ -88,7 +88,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else n(I(r.body));
+						} else n(j(r.body));
 						const o = s();
 						if ((d = o.polls.models[e]) && Object(m.d)(d)) {
 							const {
@@ -241,8 +241,8 @@
 				O = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				C = n("./src/reddit/helpers/trackers/post.ts"),
 				N = n("./src/reddit/models/Poll/index.ts"),
-				j = n("./src/reddit/selectors/gov.ts"),
-				I = n("./src/reddit/components/Poll/MetaData/index.tsx"),
+				I = n("./src/reddit/selectors/gov.ts"),
+				j = n("./src/reddit/components/Poll/MetaData/index.tsx"),
 				_ = n("./src/lib/bigNumberUtils/percent.ts"),
 				E = n("./src/lib/prettyPrintNumber/index.ts"),
 				P = n("./src/reddit/helpers/governance/tokens.ts"),
@@ -286,8 +286,8 @@
 				B = n("./src/reddit/components/Poll/ClosedPoll/index.m.less"),
 				V = n.n(B);
 			const L = Object(i.c)({
-				tokenName: j.p,
-				tokenDisplayConversion: j.o
+				tokenName: I.p,
+				tokenDisplayConversion: I.o
 			});
 			var S = Object(c.b)(L)((function(e) {
 					let t;
@@ -308,7 +308,7 @@
 						result: e.result,
 						tokenName: e.tokenName,
 						tokenDisplayConversion: e.tokenDisplayConversion
-					})), a.a.createElement(I.a, {
+					})), a.a.createElement(j.a, {
 						className: V.a.metaData,
 						poll: e.poll
 					}))
@@ -378,7 +378,7 @@
 						className: M.a.loggedOutTooltip
 					}, U._("You must be logged in to vote", null, {
 						hk: "MnQpC"
-					}))), a.a.createElement(I.a, {
+					}))), a.a.createElement(j.a, {
 						className: M.a.metaData,
 						poll: this.props.poll
 					})))
@@ -525,7 +525,7 @@
 					} = t;
 					return e.polls.results.byVotingPower[n]
 				},
-				tokenDisplayConversion: j.o
+				tokenDisplayConversion: I.o
 			});
 			var pe = Object(c.b)(ue)((function(e) {
 					if (!(e.poll && e.poll.decisionThreshold && e.pollResult)) return null;
@@ -563,8 +563,8 @@
 				fbt: fe
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const ye = Object(i.c)({
-				tokenName: j.p,
-				tokenDisplayConversion: j.o,
+				tokenName: I.p,
+				tokenDisplayConversion: I.o,
 				distribution: (e, t) => {
 					let {
 						subredditId: n
@@ -585,7 +585,7 @@
 					const o = e.polls.models[n];
 					return !!(o && s && Object(N.e)(o, s))
 				},
-				wallet: j.g
+				wallet: I.g
 			});
 			var xe = Object(c.b)(ye)((function(e) {
 					const {
@@ -637,8 +637,8 @@
 				}
 				componentDidUpdate(e, t) {
 					if (!!this.props.pollReward && !new s.BigNumber(this.props.pollReward).isZero()) {
-						const n = je(e, t.resultType),
-							s = je(this.props, this.state.resultType);
+						const n = Ie(e, t.resultType),
+							s = Ie(this.props, this.state.resultType);
 						if (n && s && e.poll && this.props.poll) {
 							const t = !Object(N.e)(e.poll, n),
 								o = Object(N.e)(this.props.poll, s);
@@ -704,10 +704,10 @@
 				}
 			}
 
-			function je(e, t) {
+			function Ie(e, t) {
 				return t === N.b.ByVotingPower ? e.resultsByVotingPower : e.resultsByVoters
 			}
-			const Ie = Object(i.c)({
+			const je = Object(i.c)({
 				isEditing: ne.C,
 				poll: (e, t) => {
 					let {
@@ -749,7 +749,7 @@
 				},
 				subredditOrProfile: se.bb
 			});
-			t.default = Object(c.b)(Ie)(Ne)
+			t.default = Object(c.b)(je)(Ne)
 		},
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -994,7 +994,7 @@
 			function r(e, t) {
 				const n = new s.BigNumber(e),
 					o = new s.BigNumber(t);
-				return n.dividedBy(o).decimalPlaces(2).toString()
+				return n.dividedToIntegerBy(o).toString()
 			}
 
 			function a(e, t) {
@@ -1076,9 +1076,9 @@
 			})), n.d(t, "m", (function() {
 				return N
 			})), n.d(t, "s", (function() {
-				return j
-			})), n.d(t, "a", (function() {
 				return I
+			})), n.d(t, "a", (function() {
+				return j
 			})), n.d(t, "f", (function() {
 				return _
 			})), n.d(t, "r", (function() {
@@ -1103,7 +1103,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const s = j(e, {
+					const s = I(e, {
 						subredditId: n
 					});
 					return s && s.extra && s.extra.contracts && s.extra.contracts.harberger ? s.extra.contracts.harberger : {
@@ -1158,22 +1158,22 @@
 				},
 				C = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				N = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				j = (e, t) => {
+				I = (e, t) => {
 					const n = N(e, t);
 					return n && n.walletProvider
 				},
-				I = (e, t) => {
-					const n = j(e, t),
+				j = (e, t) => {
+					const n = I(e, t),
 						s = N(e, t);
 					return n && n.provider || s && s.provider
 				},
 				_ = (e, t) => {
-					const n = I(e, t);
+					const n = j(e, t);
 					return n === o.a.Ethereum || n === o.a.Rinkeby || n === o.a.EthTraderEthereum || n === o.a.EthTraderRinkeby
 				},
 				E = (e, t) => {
-					const n = j(e, t),
-						s = I(e, t);
+					const n = I(e, t),
+						s = j(e, t);
 					if (n && !n.inTransition && s === o.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
 						decimals: n.extra && n.extra.decimals || 7,
@@ -1192,7 +1192,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const s = j(e, {
+					const s = I(e, {
 						subredditId: n
 					});
 					return s && s.extra && s.extra.contracts && s.extra.contracts.subscriptions ? s.extra.contracts.subscriptions : {
@@ -1206,4 +1206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.d6c946f55e606880abd7.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.5d0514ca55d1cd9d8872.js.map

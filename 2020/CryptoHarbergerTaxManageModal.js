@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.edde44805e4156c0fb9d.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.7f15bfc6e1afd73fc250.js
+// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/Banner/index.m.less": function(e, t, a) {
@@ -168,11 +168,11 @@
 			const {
 				fbt: D
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			const P = Object(d.c)({
+			const U = Object(d.c)({
 				tokenDisplayConversion: p.o,
 				wallet: p.g
 			});
-			var U = Object(o.b)(P, e => ({
+			var P = Object(o.b)(U, e => ({
 					onClose: () => e(Object(T.f)())
 				}))((function(e) {
 					return i.a.createElement("div", {
@@ -266,7 +266,7 @@
 						tiled: this.state.tiled,
 						onImageChange: this.handleImageChange,
 						onTilingChange: this.handleTilingChange
-					}), i.a.createElement(U, {
+					}), i.a.createElement(P, {
 						className: L.a.controls,
 						subredditId: e.id,
 						submitEnabled: !s()(this.state, this.originalState),
@@ -337,7 +337,7 @@
 			function r(e, t) {
 				const a = new n.BigNumber(e),
 					s = new n.BigNumber(t);
-				return a.dividedBy(s).decimalPlaces(2).toString()
+				return a.dividedToIntegerBy(s).toString()
 			}
 
 			function i(e, t) {
@@ -352,4 +352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal.edde44805e4156c0fb9d.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal.7f15bfc6e1afd73fc250.js.map
