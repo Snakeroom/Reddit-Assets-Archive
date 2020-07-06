@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.5aa8300663d52a92b1f4.js
-// Retrieved at 6/30/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.3b1c3ae3ea4822f78295.js
+// Retrieved at 7/6/2020, 12:30:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -77,7 +77,7 @@
 						this.isWithinLoadingDistance = !0, this.refreshedOnce || (this.frame && l.e(this.frame, {
 							viewable: e.intersectionRatio > .5
 						}), this.refresh(this.props), this.refreshedOnce = !0), this.props.isRefreshableAd && (!this.refreshInterval && e.isIntersecting ? this.refreshInterval = window.setInterval(() => {
-							window.document.hasFocus() && this.props.isRefreshableAd && this.refresh(this.props)
+							this.props.isRefreshableAd && this.refresh(this.props)
 						}, o.a.dfpRefreshSlotInterval) : this.refreshInterval && !e.isIntersecting && (window.clearInterval(this.refreshInterval), this.refreshInterval = null))
 					})
 				}
@@ -304,8 +304,8 @@
 					pending: e => !e.sidebarPromotedPosts.firstFetch,
 					isSubredditPage: e => Object(S.r)(e) === E.Ab.SUBREDDIT
 				}),
-				w = Object(l.b)(j),
-				B = C.a.wrapped(b.a, "BannerAd", _.a),
+				B = Object(l.b)(j),
+				w = C.a.wrapped(b.a, "BannerAd", _.a),
 				A = C.a.wrapped(y.a, "ThemedWidget", _.a),
 				k = C.a.div("SidebarAdPlaceholder", _.a),
 				I = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && u.a.dfpRefreshSlotTestSubreddits.includes(s) && e === E.c.BELOW_THE_FOLD),
@@ -409,7 +409,7 @@
 						listingName: o,
 						placement: c,
 						placementIndex: a
-					}), d.a.createElement(B, {
+					}), d.a.createElement(w, {
 						id: P(c, n, a),
 						isRefreshableAd: I(c, y, o),
 						sizes: l,
@@ -421,7 +421,7 @@
 					})))
 				}
 			}
-			t.a = w(R)
+			t.a = B(R)
 		},
 		"./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx": function(e, t, s) {
 			"use strict";
@@ -793,7 +793,7 @@
 			s.d(t, "b", (function() {
 				return N
 			})), s.d(t, "a", (function() {
-				return w
+				return B
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
@@ -850,7 +850,7 @@
 					className: E.a.errorMsg
 				}, e.errorMsg || r.fbt._("Something went wrong.", null, {
 					hk: "pHwDP"
-				})) : a.a.createElement(a.a.Fragment, null, e.communities.map(t => a.a.createElement(w, C({
+				})) : a.a.createElement(a.a.Fragment, null, e.communities.map(t => a.a.createElement(B, C({
 					key: t.name
 				}, t, {
 					getSubscribeEventFactory: e.getSubscribeEventFactoryHandler ? e.getSubscribeEventFactoryHandler(t) : void 0,
@@ -872,7 +872,7 @@
 				j = Object(c.c)({
 					hideNSFWPref: S.z
 				}),
-				w = Object(i.b)(j)(e => a.a.createElement("div", {
+				B = Object(i.b)(j)(e => a.a.createElement("div", {
 					className: E.a.communityItemContainer
 				}, a.a.createElement(g.a, {
 					widthRight: h.t
@@ -1072,4 +1072,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.5aa8300663d52a92b1f4.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.3b1c3ae3ea4822f78295.js.map
