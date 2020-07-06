@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.4af425360303d748dacc.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.4ee37490e3c466d4f93f.js
+// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -58,9 +58,9 @@
 				p = t("./src/reddit/models/Gold/Award.ts"),
 				u = t("./src/reddit/selectors/goldPurchaseModals.ts"),
 				h = t("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const g = Object(r.a)(h.o),
+			const g = Object(r.a)(h.p),
 				b = Object(r.a)(h.d),
-				P = Object(r.a)(h.p),
+				P = Object(r.a)(h.q),
 				C = (e, a, t) => async e => {
 					e(P({
 						thingId: a
@@ -719,7 +719,7 @@
 						return e(Object(u.e)(t))
 					},
 					onPaymentSelected: a => e(Object(m.selectPaymentMethod)(a)),
-					requestPurchaseCatalog: a => e(Object(p.a)(a)),
+					requestPurchaseCatalog: a => e(Object(p.b)(a)),
 					dispatchCompletePurchase: (a, t, n, s) => {
 						e(n ? Object(l.h)(a, t, s) : Object(l.i)(a, t))
 					}
@@ -890,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinPurchaseModal.4af425360303d748dacc.js.map
+//# sourceMappingURL=CoinPurchaseModal.4ee37490e3c466d4f93f.js.map

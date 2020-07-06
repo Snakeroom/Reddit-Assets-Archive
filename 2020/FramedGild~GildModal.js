@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.026a46b08dfcb195b47f.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5687246613deb2694a06.js
+// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -329,9 +329,9 @@
 				u = s("./src/reddit/models/Gold/Award.ts"),
 				p = s("./src/reddit/selectors/goldPurchaseModals.ts"),
 				h = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const b = Object(r.a)(h.o),
+			const b = Object(r.a)(h.p),
 				g = Object(r.a)(h.d),
-				f = Object(r.a)(h.p),
+				f = Object(r.a)(h.q),
 				w = (e, t, s) => async e => {
 					e(f({
 						thingId: t
@@ -2240,7 +2240,7 @@
 						} = t;
 						e(r ? Object(E.b)(n, i, a) : Object(v.c)(s, i, a))
 					},
-					purchaseCatalogRequested: t => e(Object(O.a)(t)),
+					purchaseCatalogRequested: t => e(Object(O.b)(t)),
 					selectAward: t => e(Object(f.a)(t)),
 					setIsAnonymous: t => {
 						e(Object(g.setIsAnonymous)(t)), Object(u.T)(t)
@@ -2642,4 +2642,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.026a46b08dfcb195b47f.js.map
+//# sourceMappingURL=FramedGild~GildModal.5687246613deb2694a06.js.map

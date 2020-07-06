@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9d8d16b924b622241fb5.js
-// Retrieved at 7/6/2020, 12:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e96c97e45c993b7ec0d2.js
+// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -32,6 +32,9 @@
 		},
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
+		},
+		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
+			e.exports = JSON.parse('{"id":"33ef128566b2"}')
 		},
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
 			e.exports = JSON.parse('{"id":"1e9183c00f76"}')
@@ -5377,7 +5380,7 @@
 					const L = Object(B.a)(l) && Object(h.i)(Object(w.O)(r, {
 						postId: l
 					}));
-					await t(Object(c.a)(P));
+					await t(Object(c.b)(P));
 					const F = Object(T.d)(n()).filter(e => _.a.has(e.dealInfo.type));
 					F.length && setTimeout(() => t(Object(a.d)({
 						correlationId: P,
@@ -5723,13 +5726,13 @@
 			var y = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				E = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				I = n("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const S = Object(o.a)(I.n),
+			const S = Object(o.a)(I.o),
 				v = Object(o.a)(I.c),
 				T = e => async (t, n) => {
 					t(S(e)), t(Object(u.h)(c.a.ECON_COIN_PURCHASE))
 				}, w = () => async (e, t) => {
 					e(v()), e(Object(u.g)(c.a.ECON_COIN_PURCHASE))
-				}, C = Object(o.a)(I.r), A = e => {
+				}, C = Object(o.a)(I.s), A = e => {
 					let {
 						correlationId: t,
 						packageId: n
@@ -5755,7 +5758,7 @@
 						})), e(Object(u.i)(c.a.GOLD_TARGETED_OFFER_MODAL))) : a.c.captureMessage("Tried to show targeted offer, but could not find package id: ".concat(n))
 					}
 				}, D = (e, t, n) => async (r, o) => {
-					await r(Object(d.b)(e, n));
+					await r(Object(d.c)(e, n));
 					const a = o(),
 						c = Object(y.i)(a);
 					if (0 !== c.length) r(T({
@@ -6046,64 +6049,66 @@
 				return r
 			})), n.d(t, "g", (function() {
 				return o
-			})), n.d(t, "s", (function() {
-				return a
 			})), n.d(t, "t", (function() {
-				return c
+				return a
 			})), n.d(t, "u", (function() {
-				return i
+				return c
 			})), n.d(t, "v", (function() {
-				return d
+				return i
 			})), n.d(t, "w", (function() {
-				return u
+				return d
 			})), n.d(t, "x", (function() {
-				return l
+				return u
 			})), n.d(t, "y", (function() {
-				return b
+				return l
 			})), n.d(t, "z", (function() {
-				return p
+				return b
 			})), n.d(t, "A", (function() {
-				return f
+				return p
 			})), n.d(t, "B", (function() {
-				return m
+				return f
 			})), n.d(t, "C", (function() {
+				return m
+			})), n.d(t, "D", (function() {
 				return O
 			})), n.d(t, "f", (function() {
 				return g
-			})), n.d(t, "D", (function() {
-				return _
 			})), n.d(t, "E", (function() {
-				return h
+				return _
 			})), n.d(t, "F", (function() {
+				return h
+			})), n.d(t, "G", (function() {
 				return j
-			})), n.d(t, "h", (function() {
-				return y
 			})), n.d(t, "i", (function() {
-				return E
+				return y
 			})), n.d(t, "j", (function() {
-				return I
+				return E
 			})), n.d(t, "k", (function() {
-				return S
+				return I
 			})), n.d(t, "l", (function() {
-				return v
+				return S
 			})), n.d(t, "m", (function() {
-				return T
+				return v
 			})), n.d(t, "n", (function() {
+				return T
+			})), n.d(t, "h", (function() {
 				return w
-			})), n.d(t, "r", (function() {
-				return C
-			})), n.d(t, "c", (function() {
-				return A
 			})), n.d(t, "o", (function() {
+				return C
+			})), n.d(t, "s", (function() {
+				return A
+			})), n.d(t, "c", (function() {
 				return D
-			})), n.d(t, "d", (function() {
-				return R
 			})), n.d(t, "p", (function() {
+				return R
+			})), n.d(t, "d", (function() {
 				return P
 			})), n.d(t, "q", (function() {
 				return x
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "r", (function() {
 				return k
+			})), n.d(t, "e", (function() {
+				return N
 			}));
 			const s = "GOLD_PAYMENT__CARD_NAME_EMPTY",
 				r = "GOLD_PAYMENT__CARD_NAME_INPUT",
@@ -6129,14 +6134,15 @@
 				S = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_ERROR",
 				v = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_REQUESTED",
 				T = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_SUCCESS",
-				w = "COIN_PURCHASE_MODAL__OPEN_COIN_PURCHASE_MODAL",
-				C = "COIN_PURCHASE_MODAL__OPEN_TARGETED_OFFER_MODAL",
-				A = "COIN_PURCHASE_MODAL__CLOSE_COIN_PURCHASE_MODAL",
-				D = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL",
-				R = "PENNY_PURCHASE_MODAL__CLOSE_PENNY_PURCHASE_MODAL",
-				P = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL_TO_GILD",
-				x = "PREMIUM_PURCHASE_MODAL__OPEN_PREMIUM_PURCHASE_MODAL",
-				k = "PREMIUM_PURCHASE_MODAL__CLOSE_PREMIUM_PURCHASE_MODAL"
+				w = "COIN_SALE__FETCH_ACTIVE_SALE_SUCCESS",
+				C = "COIN_PURCHASE_MODAL__OPEN_COIN_PURCHASE_MODAL",
+				A = "COIN_PURCHASE_MODAL__OPEN_TARGETED_OFFER_MODAL",
+				D = "COIN_PURCHASE_MODAL__CLOSE_COIN_PURCHASE_MODAL",
+				R = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL",
+				P = "PENNY_PURCHASE_MODAL__CLOSE_PENNY_PURCHASE_MODAL",
+				x = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL_TO_GILD",
+				k = "PREMIUM_PURCHASE_MODAL__OPEN_PREMIUM_PURCHASE_MODAL",
+				N = "PREMIUM_PURCHASE_MODAL__CLOSE_PREMIUM_PURCHASE_MODAL"
 		},
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, n) {
 			"use strict";
@@ -6181,14 +6187,14 @@
 				a = n("./src/reddit/endpoints/gold/purchase.ts"),
 				c = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
 				i = n("./src/reddit/selectors/goldPurchaseModals.ts");
-			const d = Object(o.a)(c.w),
-				u = Object(o.a)(c.s),
+			const d = Object(o.a)(c.x),
+				u = Object(o.a)(c.t),
 				l = Object(o.a)(c.b),
 				b = Object(o.a)(c.a),
-				p = Object(o.a)(c.z),
-				f = Object(o.a)(c.B),
-				m = Object(o.a)(c.A),
-				O = Object(o.a)(c.y),
+				p = Object(o.a)(c.A),
+				f = Object(o.a)(c.C),
+				m = Object(o.a)(c.B),
+				O = Object(o.a)(c.z),
 				g = e => async (t, n) => {
 					const r = n(),
 						o = Object(i.f)(r),
@@ -6209,7 +6215,7 @@
 							message: e
 						}))
 					}
-				}, _ = Object(o.a)(c.t), h = Object(o.a)(c.C), j = Object(o.a)(c.x), y = Object(o.a)(c.g), E = e => async (t, n, s) => {
+				}, _ = Object(o.a)(c.u), h = Object(o.a)(c.D), j = Object(o.a)(c.y), y = Object(o.a)(c.g), E = e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
@@ -6220,7 +6226,7 @@
 					} catch (c) {
 						r.c.captureException(c)
 					}
-				}, I = Object(o.a)(c.u), S = Object(o.a)(c.v), v = () => async (e, t, n) => {
+				}, I = Object(o.a)(c.v), S = Object(o.a)(c.w), v = () => async (e, t, n) => {
 					let {
 						apiContext: s
 					} = n;
@@ -6264,7 +6270,7 @@
 				u = n("./src/reddit/endpoints/gold/purchase.ts"),
 				l = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				b = n("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const p = Object(o.a)(b.q),
+			const p = Object(o.a)(b.r),
 				f = Object(o.a)(b.e),
 				m = e => async (t, n, s) => {
 					let {
@@ -6327,22 +6333,26 @@
 		},
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return v
-			})), n.d(t, "b", (function() {
-				return A
+			n.d(t, "b", (function() {
+				return w
+			})), n.d(t, "c", (function() {
+				return R
+			})), n.d(t, "a", (function() {
+				return x
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/env/index.ts"),
 				o = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/lib/sentry/index.ts"),
-				c = n("./src/lib/constants/index.ts"),
-				i = n("./src/lib/makeApiRequest/index.ts"),
-				d = n("./src/lib/omitHeaders/index.ts"),
-				u = n("./src/reddit/constants/headers.ts"),
-				l = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				b = n("./src/reddit/endpoints/gold/purchase.ts");
-			const p = e => ({
+				c = n("./src/graphql/operations/FetchActiveCoinSale.json"),
+				i = n("./src/lib/constants/index.ts"),
+				d = n("./src/lib/makeApiRequest/index.ts"),
+				u = n("./src/lib/makeGqlRequest/index.ts"),
+				l = n("./src/lib/omitHeaders/index.ts"),
+				b = n("./src/reddit/constants/headers.ts"),
+				p = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				f = n("./src/reddit/endpoints/gold/purchase.ts");
+			const m = e => ({
 					baselineCoins: e.baseline_coins || e.coins,
 					baselinePennies: e.baseline_pennies || e.pennies,
 					bonusPct: e.bonus_pct,
@@ -6357,9 +6367,9 @@
 					mobileId: e.mobile_id,
 					pennies: e.pennies
 				}),
-				f = e => e.map(p),
-				m = e => e.map(e => {
-					const t = p(e);
+				O = e => e.map(m),
+				g = e => e.map(e => {
+					const t = m(e);
 					return Object.assign({}, t, {
 						dealInfo: {
 							type: e.deal_info.type,
@@ -6369,7 +6379,7 @@
 						}
 					})
 				}),
-				O = e => e.map(e => ({
+				_ = e => e.map(e => ({
 					description: e.description,
 					frequency: e.frequency,
 					frequencyDays: e.frequency_days,
@@ -6383,7 +6393,7 @@
 					periodicalCoins: e.periodical_coins,
 					signupBonusCoins: e.signup_bonus_coins
 				})),
-				g = e => e ? {
+				h = e => e ? {
 					ctaText: e.cta_text,
 					dropdownHeaderText: e.dropdown_banner_text,
 					dropdownHeaderBackgroundAsset: e.dropdown_banner_image_url,
@@ -6393,7 +6403,7 @@
 					heroText: e.hero_text
 				} : null;
 
-			function _(e) {
+			function j(e) {
 				if (!e.ok) return e;
 				const {
 					active_sale: t,
@@ -6401,38 +6411,38 @@
 					deals: s,
 					premium_packages: r
 				} = e.body, o = {
-					activeSaleConfig: g(t),
-					coinPackages: f(n),
-					dealCoinPackages: m(s),
-					premiumPackages: O(r)
+					activeSaleConfig: h(t),
+					coinPackages: O(n),
+					dealCoinPackages: g(s),
+					premiumPackages: _(r)
 				};
 				return Object.assign({}, e, {
 					body: o
 				})
 			}
 
-			function h(e) {
+			function y(e) {
 				if (!e.ok) return e;
 				const t = e.body,
 					n = {
-						coinPackages: f([t])
+						coinPackages: O([t])
 					};
 				return Object.assign({}, e, {
 					body: n
 				})
 			}
-			var j = n("./src/reddit/selectors/user.ts"),
-				y = n("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const E = Object(o.a)(y.i),
-				I = Object(o.a)(y.j),
-				S = Object(o.a)(y.h),
-				v = e => async (t, n, o) => {
+			var E = n("./src/reddit/selectors/user.ts"),
+				I = n("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const S = Object(o.a)(I.j),
+				v = Object(o.a)(I.k),
+				T = Object(o.a)(I.i),
+				w = e => async (t, n, o) => {
 					let {
-						apiContext: p
+						apiContext: c
 					} = o;
-					t(E());
-					const f = n(),
-						m = Object(j.H)(f);
+					t(S());
+					const u = n(),
+						m = Object(E.H)(u);
 					try {
 						const n = !m,
 							s = await (async e => {
@@ -6443,34 +6453,34 @@
 								} = e;
 								const r = "/api/v2/gold/purchase_package_details",
 									o = s && "undefined" != typeof window ? "".concat(window.location.origin).concat(r) : "".concat(t.apiUrl).concat(r),
-									a = Object(l.a)(o);
-								return Object(i.a)(Object(d.a)(t, [u.a]), {
-									method: c.cb.GET,
+									a = Object(p.a)(o);
+								return Object(d.a)(Object(l.a)(t, [b.a]), {
+									method: i.cb.GET,
 									endpoint: a,
 									data: {
 										correlation_id: n
 									}
-								}).then(b.c).then(_)
+								}).then(f.c).then(j)
 							})({
-								context: p(),
+								context: c(),
 								correlationId: e,
 								shouldUseCurrentOrigin: n
 							});
 						if (!s.ok) throw new Error(s.error && s.error.type || "Unknown error");
 						const r = s.body;
-						t(I(r))
+						t(v(r))
 					} catch (O) {
 						Object(r.b)() || console.error(O), a.c.captureException(O);
 						const e = s.fbt._("There was an error fetching available products", null, {
 							hk: "1Uvx37"
 						});
-						t(S(e))
+						t(T(e))
 					}
-				}, T = Object(o.a)(y.l), w = Object(o.a)(y.m), C = Object(o.a)(y.k), A = (e, t) => async (n, o, p) => {
+				}, C = Object(o.a)(I.m), A = Object(o.a)(I.n), D = Object(o.a)(I.l), R = (e, t) => async (n, o, c) => {
 					let {
-						apiContext: f
-					} = p;
-					n(T());
+						apiContext: u
+					} = c;
+					n(C());
 					try {
 						const s = await (async e => {
 							let {
@@ -6479,30 +6489,46 @@
 								correlationId: s
 							} = e;
 							const r = "".concat(t.apiUrl, "/api/v2/gold/recommended_coin_package_details"),
-								o = Object(l.a)(r);
-							return Object(i.a)(Object(d.a)(t, [u.a]), {
-								method: c.cb.GET,
+								o = Object(p.a)(r);
+							return Object(d.a)(Object(l.a)(t, [b.a]), {
+								method: i.cb.GET,
 								endpoint: o,
 								data: {
 									correlation_id: s,
 									intended_award: n
 								}
-							}).then(b.c).then(h)
+							}).then(f.c).then(y)
 						})({
 							awardId: e,
-							context: f(),
+							context: u(),
 							correlationId: t
 						});
 						if (!s.ok) throw new Error(s.error && s.error.type || "Unknown error");
 						const r = s.body;
 						if (!r.coinPackages || !r.coinPackages.length) throw new Error("Recommended coin packages returned empty for award id ".concat(e));
-						n(w(r))
+						n(A(r))
 					} catch (m) {
 						Object(r.b)() || console.error(m), a.c.captureException(m);
 						const e = s.fbt._("There was an error fetching purchasable coins package", null, {
 							hk: "47Fxzt"
 						});
-						n(C(e))
+						n(D(e))
+					}
+				}, P = Object(o.a)(I.h), x = () => async (e, t, n) => {
+					let {
+						gqlContext: s
+					} = n;
+					try {
+						const t = await (e => Object(u.a)(e, Object.assign({}, c)))(s());
+						if (t.ok) {
+							const n = t.body.data.coinSale;
+							await e(P({
+								activeSaleConfig: n
+							}))
+						}
+						if (!t.ok) throw new Error("Got bad response in GQL call for active coin sale: ".concat(t))
+					} catch (o) {
+						Object(r.b)() || console.error(o), a.c.captureException(o)
 					}
 				}
 		},
@@ -37515,7 +37541,7 @@
 						} = t.payload;
 						return e
 					}
-					case zd.w:
+					case zd.x:
 						return t.payload !== Ke.vb ? "" : e;
 					case zd.c:
 					case zd.d:
@@ -37531,14 +37557,14 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.z: {
+					case zd.A: {
 						const {
 							error: n,
 							elementType: s
 						} = t.payload;
 						return "cardCvc" === s ? n && n.message || "" : e
 					}
-					case zd.w:
+					case zd.x:
 						return t.payload !== Ke.vb ? "" : e;
 					case zd.c:
 					case zd.d:
@@ -37554,14 +37580,14 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.z: {
+					case zd.A: {
 						const {
 							error: n,
 							elementType: s
 						} = t.payload;
 						return "cardExpiry" === s ? n && n.message || "" : e
 					}
-					case zd.w:
+					case zd.x:
 						return t.payload !== Ke.vb ? "" : e;
 					case zd.c:
 					case zd.d:
@@ -37577,14 +37603,14 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.z: {
+					case zd.A: {
 						const {
 							error: n,
 							elementType: s
 						} = t.payload;
 						return "cardNumber" === s ? n && n.message || "" : e
 					}
-					case zd.w:
+					case zd.x:
 						return t.payload !== Ke.vb ? "" : e;
 					case zd.c:
 					case zd.d:
@@ -37604,7 +37630,7 @@
 						return t.payload.message || e;
 					case zd.b:
 						return "";
-					case zd.w:
+					case zd.x:
 						return t.payload !== Ke.vb ? "" : e;
 					case zd.c:
 					case zd.d:
@@ -37620,14 +37646,14 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.z: {
+						case zd.A: {
 							const {
 								error: n,
 								elementType: s
 							} = t.payload;
 							return "postalCode" === s ? n && n.message || "" : e
 						}
-						case zd.w:
+						case zd.x:
 							return t.payload !== Ke.vb ? "" : e;
 						case zd.c:
 						case zd.d:
@@ -37651,11 +37677,11 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : nu,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.n:
 					case zd.o:
-					case zd.q:
+					case zd.p:
+					case zd.r:
 						return nu;
-					case zd.w:
+					case zd.x:
 						return t.payload;
 					default:
 						return e
@@ -37665,17 +37691,17 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.t:
+						case zd.u:
 							return t.payload || e;
-						case zd.w: {
+						case zd.x: {
 							const {
 								method: n
 							} = t.payload;
 							return n === Ke.wb ? null : e
 						}
-						case zd.n:
 						case zd.o:
-						case zd.q:
+						case zd.p:
+						case zd.r:
 						case ge.J:
 							return null;
 						default:
@@ -37687,7 +37713,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.q:
+						case zd.r:
 							return "";
 						case ou.a: {
 							const e = t.payload;
@@ -37705,9 +37731,9 @@
 				let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.C:
+					case zd.D:
 						return !e;
-					case zd.w:
+					case zd.x:
 						return t.payload !== Ke.vb || e;
 					case zd.c:
 					case zd.d:
@@ -37723,7 +37749,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : du,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.v:
+					case zd.w:
 						return t.payload;
 					case zd.g: {
 						const n = t.payload;
@@ -37737,9 +37763,9 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.u:
-						return !0;
 					case zd.v:
+						return !0;
+					case zd.w:
 						return !1;
 					default:
 						return e
@@ -37750,15 +37776,15 @@
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case zd.a:
-					case zd.A:
-						return t.payload.message || e;
-					case zd.y:
-						return t.payload;
-					case zd.z:
-					case zd.b:
 					case zd.B:
+						return t.payload.message || e;
+					case zd.z:
+						return t.payload;
+					case zd.A:
+					case zd.b:
+					case zd.C:
 						return null;
-					case zd.w:
+					case zd.x:
 						return t.payload === Ke.vb ? null : e;
 					default:
 						return e
@@ -37770,12 +37796,12 @@
 					switch (t.type) {
 						case s.c:
 						case zd.a:
-						case zd.y:
-						case zd.A:
-							return !1;
-						case zd.w:
-							return t.payload !== Ke.vb && e;
+						case zd.z:
 						case zd.B:
+							return !1;
+						case zd.x:
+							return t.payload !== Ke.vb && e;
+						case zd.C:
 							return !0;
 						default:
 							return e
@@ -37789,7 +37815,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.x:
+						case zd.y:
 							return t.payload;
 						case zd.g:
 							return t.payload === e ? null : e;
@@ -37882,9 +37908,9 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "selectPayment",
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.q:
+					case zd.r:
 						return "selectPayment";
-					case zd.s:
+					case zd.t:
 						return "paymentCompleted";
 					default:
 						return e
@@ -37894,7 +37920,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.q:
+						case zd.r:
 							return !0;
 						case b.a:
 						case zd.e:
@@ -37911,8 +37937,13 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.j:
-						return t.payload.activeSaleConfig;
+					case zd.h:
+					case zd.k: {
+						const {
+							activeSaleConfig: e
+						} = t.payload;
+						return e
+					}
 					default:
 						return e
 				}
@@ -37921,13 +37952,13 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case zd.n:
 					case zd.m:
-					case zd.l:
-					case zd.j:
-					case zd.i:
-						return null;
 					case zd.k:
-					case zd.h:
+					case zd.j:
+						return null;
+					case zd.l:
+					case zd.i:
 						return t.payload;
 					default:
 						return e
@@ -37937,10 +37968,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.k:
-					case zd.m:
-						return !1;
 					case zd.l:
+					case zd.n:
+						return !1;
+					case zd.m:
 						return !0;
 					default:
 						return e
@@ -37950,10 +37981,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.h:
-						case zd.j:
-							return !1;
 						case zd.i:
+						case zd.k:
+							return !1;
+						case zd.j:
 							return !0;
 						default:
 							return e
@@ -37969,7 +38000,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ru,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.j: {
+					case zd.k: {
 						const {
 							dealCoinPackages: e
 						} = t.payload;
@@ -37984,13 +38015,13 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : xu,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.m: {
+					case zd.n: {
 						const {
 							coinPackages: n
 						} = t.payload, s = n.reduce((e, t) => (e[t.mobileId] = t, e), {});
 						return Object.assign({}, e, s)
 					}
-					case zd.j: {
+					case zd.k: {
 						const {
 							coinPackages: n,
 							dealCoinPackages: s
@@ -38006,13 +38037,13 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Nu,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.m: {
+					case zd.n: {
 						const {
 							coinPackages: e
 						} = t.payload;
 						return e.map(e => e.mobileId)
 					}
-					case zd.l:
+					case zd.m:
 						return Nu;
 					default:
 						return e
@@ -38023,7 +38054,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Uu,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.j: {
+						case zd.k: {
 							const {
 								coinPackages: e
 							} = t.payload;
@@ -38044,7 +38075,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Gu,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.j:
+						case zd.k:
 							return t.payload.premiumPackages;
 						default:
 							return e
@@ -38060,10 +38091,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "selectPayment",
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.n:
 					case zd.o:
+					case zd.p:
 						return "selectPayment";
-					case zd.s:
+					case zd.t:
 						return "paymentCompleted";
 					default:
 						return e
@@ -38073,10 +38104,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.q:
 					case zd.r:
-					case zd.n:
-					case zd.o: {
+					case zd.s:
+					case zd.o:
+					case zd.p: {
 						if (!t.payload) return null;
 						const {
 							correlationId: e
@@ -38086,7 +38117,7 @@
 					case zd.e:
 					case zd.c:
 					case zd.d:
-					case zd.s:
+					case zd.t:
 						return null;
 					default:
 						return e
@@ -38101,13 +38132,13 @@
 					case ge.c:
 					case ge.r:
 						return null;
-					case zd.n: {
+					case zd.o: {
 						const {
 							thingId: e
 						} = t.payload;
 						return e || null
 					}
-					case zd.p:
+					case zd.q:
 						return t.payload && t.payload.thingId ? t.payload.thingId : e;
 					default:
 						return e
@@ -38117,13 +38148,13 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case zd.n: {
+					case zd.o: {
 						const {
 							packageId: e
 						} = t.payload;
 						return e
 					}
-					case zd.s:
+					case zd.t:
 					case zd.c:
 						return null;
 					default:
@@ -38134,8 +38165,8 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.n:
 						case zd.o:
+						case zd.p:
 							return !0;
 						case ge.J:
 						case b.a:
@@ -38157,7 +38188,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.r: {
+						case zd.s: {
 							const {
 								packageId: e
 							} = t.payload;
@@ -38174,10 +38205,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case zd.D:
-						case zd.F:
-							return !1;
 						case zd.E:
+						case zd.G:
+							return !1;
+						case zd.F:
 							return !0;
 						default:
 							return e
@@ -49531,7 +49562,7 @@
 							totalKarma: c
 						})
 					}
-					case zd.s: {
+					case zd.t: {
 						const {
 							coins: n
 						} = t.payload;
@@ -54046,4 +54077,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.9d8d16b924b622241fb5.js.map
+//# sourceMappingURL=Governance~Reddit.e96c97e45c993b7ec0d2.js.map

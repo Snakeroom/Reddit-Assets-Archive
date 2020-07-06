@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.fc2f1b40b724c67f0735.js
-// Retrieved at 6/30/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.fb90f57ed26ebc6939a2.js
+// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -5575,7 +5575,7 @@
 					onClickPremiumPackage: t => e(Object(di.d)({
 						correlationId: t
 					})),
-					requestPurchaseCatalog: t => e(Object(ii.a)(t))
+					requestPurchaseCatalog: t => e(Object(ii.b)(t))
 				}))(Object(ce.c)(ji)),
 				wi = s("./src/reddit/components/CoinPurchaseDropdown/index.m.less"),
 				_i = s.n(wi);
@@ -5668,10 +5668,8 @@
 				Di = Object(h.c)({
 					activeSaleConfig: vi.a,
 					activeTooltipId: yo.a,
-					coinPackages: vi.b,
 					coinPurchaseDropdownIsOpen: e => Object(yo.b)(Fi)(e),
-					premiumPurchaseModalIsOpen: Ai.m,
-					purchaseCatalogPending: vi.g
+					premiumPurchaseModalIsOpen: Ai.m
 				});
 			class Ui extends u.a.Component {
 				constructor() {
@@ -5688,11 +5686,9 @@
 				componentDidMount() {
 					const {
 						activeSaleConfig: e,
-						coinPackages: t,
-						purchaseCatalogPending: s,
-						requestPurchaseCatalog: n
+						requestActiveSale: t
 					} = this.props;
-					e || t.length || s || n()
+					e || t()
 				}
 				render() {
 					const {
@@ -5732,7 +5728,7 @@
 			}
 			var Gi = Object(m.b)(Di, (e, t) => ({
 					closeTooltip: () => e(Object(Er.i)()),
-					requestPurchaseCatalog: () => e(Object(ii.a)()),
+					requestActiveSale: () => e(Object(ii.a)()),
 					toggleTooltip: t => {
 						e(t === Fi ? Object(Er.i)() : Object(Er.f)({
 							tooltipId: Fi
@@ -13501,4 +13497,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~PostCreation~Reddit~StandalonePost~ee6bfdf1", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.fc2f1b40b724c67f0735.js.map
+//# sourceMappingURL=Reddit.fb90f57ed26ebc6939a2.js.map

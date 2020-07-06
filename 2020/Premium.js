@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.a163f2119969ed01fe5b.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.32c2cfc3c07a0cbc4c3b.js
+// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -667,7 +667,7 @@
 					onPurchasePremium: t => e(Object(j.d)({
 						correlationId: t
 					})),
-					requestPurchaseCatalog: t => e(Object(O.a)(t)),
+					requestPurchaseCatalog: t => e(Object(O.b)(t)),
 					toggleClaimGoldModal: () => e(Object(M.i)())
 				}));
 			class X extends i.a.Component {
@@ -799,4 +799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.a163f2119969ed01fe5b.js.map
+//# sourceMappingURL=Premium.32c2cfc3c07a0cbc4c3b.js.map
