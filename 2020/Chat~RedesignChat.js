@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9847702cd34bce58d097.js
-// Retrieved at 6/24/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9139ce932467839456bd.js
+// Retrieved at 7/6/2020, 12:10:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -14,97 +14,93 @@
 		"./src/chat/actions/channel.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return A
+				return M
 			})), n.d(t, "d", (function() {
-				return D
+				return A
 			})), n.d(t, "e", (function() {
-				return L
+				return D
 			})), n.d(t, "p", (function() {
-				return U
+				return L
 			})), n.d(t, "o", (function() {
-				return R
+				return U
 			})), n.d(t, "q", (function() {
-				return P
+				return R
 			})), n.d(t, "g", (function() {
-				return B
+				return P
 			})), n.d(t, "c", (function() {
+				return B
+			})), n.d(t, "v", (function() {
 				return H
 			})), n.d(t, "w", (function() {
 				return F
 			})), n.d(t, "x", (function() {
 				return K
-			})), n.d(t, "y", (function() {
-				return G
-			})), n.d(t, "u", (function() {
-				return z
-			})), n.d(t, "j", (function() {
-				return W
-			})), n.d(t, "k", (function() {
-				return V
-			})), n.d(t, "h", (function() {
-				return q
-			})), n.d(t, "i", (function() {
-				return J
-			})), n.d(t, "a", (function() {
-				return Z
-			})), n.d(t, "b", (function() {
-				return Q
 			})), n.d(t, "t", (function() {
-				return Y
-			})), n.d(t, "r", (function() {
-				return X
-			})), n.d(t, "m", (function() {
-				return $
-			})), n.d(t, "v", (function() {
-				return ee
-			})), n.d(t, "n", (function() {
-				return te
-			})), n.d(t, "l", (function() {
-				return ne
+				return G
+			})), n.d(t, "j", (function() {
+				return z
+			})), n.d(t, "k", (function() {
+				return W
+			})), n.d(t, "h", (function() {
+				return V
+			})), n.d(t, "i", (function() {
+				return q
+			})), n.d(t, "a", (function() {
+				return J
+			})), n.d(t, "b", (function() {
+				return Z
 			})), n.d(t, "s", (function() {
-				return ae
-			})), n.d(t, "M", (function() {
-				return se
+				return Q
+			})), n.d(t, "r", (function() {
+				return Y
+			})), n.d(t, "m", (function() {
+				return X
+			})), n.d(t, "u", (function() {
+				return $
+			})), n.d(t, "n", (function() {
+				return ee
+			})), n.d(t, "l", (function() {
+				return te
 			})), n.d(t, "L", (function() {
-				return re
-			})), n.d(t, "z", (function() {
-				return ie
-			})), n.d(t, "D", (function() {
-				return le
-			})), n.d(t, "T", (function() {
-				return me
-			})), n.d(t, "S", (function() {
-				return ge
-			})), n.d(t, "R", (function() {
-				return je
-			})), n.d(t, "O", (function() {
-				return ve
+				return ne
 			})), n.d(t, "K", (function() {
-				return ye
+				return se
+			})), n.d(t, "y", (function() {
+				return re
 			})), n.d(t, "C", (function() {
-				return Ne
-			})), n.d(t, "B", (function() {
-				return we
-			})), n.d(t, "I", (function() {
-				return Te
+				return oe
+			})), n.d(t, "R", (function() {
+				return ue
+			})), n.d(t, "Q", (function() {
+				return be
 			})), n.d(t, "P", (function() {
-				return Le
+				return fe
+			})), n.d(t, "N", (function() {
+				return _e
+			})), n.d(t, "J", (function() {
+				return Ee
+			})), n.d(t, "B", (function() {
+				return Se
+			})), n.d(t, "A", (function() {
+				return ke
+			})), n.d(t, "H", (function() {
+				return Ne
+			})), n.d(t, "O", (function() {
+				return Ae
+			})), n.d(t, "E", (function() {
+				return Fe
 			})), n.d(t, "F", (function() {
 				return Ge
 			})), n.d(t, "G", (function() {
-				return We
-			})), n.d(t, "H", (function() {
+				return ze
+			})), n.d(t, "D", (function() {
 				return Ve
-			})), n.d(t, "E", (function() {
+			})), n.d(t, "z", (function() {
+				return qe
+			})), n.d(t, "M", (function() {
 				return Je
-			})), n.d(t, "A", (function() {
+			})), n.d(t, "I", (function() {
 				return Ze
-			})), n.d(t, "N", (function() {
-				return Qe
-			})), n.d(t, "J", (function() {
-				return Ye
-			})), n.d(t, "Q", (function() {
-				return et
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.split.js");
 			var a = n("./node_modules/lodash/isEqual.js"),
@@ -127,55 +123,53 @@
 				C = n("./src/chat/models/Channel/index.ts"),
 				_ = n("./src/chat/models/Channel/platform.ts"),
 				E = n("./src/chat/models/Channel/utils/index.ts"),
-				v = n("./src/chat/models/Message/index.ts"),
-				y = n("./src/chat/models/Subreddit/index.ts"),
-				I = n("./src/chat/selectors/channels.ts"),
-				x = n("./src/chat/selectors/channels/next.tsx"),
-				S = n("./src/chat/selectors/experiments.ts"),
-				k = n("./src/chat/selectors/platform.ts"),
-				N = n("./src/chat/selectors/promos.ts"),
-				w = n("./src/chat/selectors/sidebar.ts"),
-				T = n("./src/chat/selectors/subreddit.ts"),
-				M = n("./src/chat/singleton/SendbirdSDK.ts");
-			const A = "CHANNEL__ADD_SUCCESS",
-				D = "CHANNEL__ADD_FAIL",
-				L = "CHANNEL__CREATE_CHANNEL_START",
-				U = "CHANNEL__SELECT_BEGIN",
-				R = "CHANNEL__RESET_UNREAD_COUNT",
-				P = "CHANNEL__SELECT_END",
-				B = "CHANNEL__EXPAND_INVITE_LIST",
-				H = "CHANNEL__COLLAPSE_INVITE_LIST",
-				F = "CHANNEL__UPDATE_MODEL",
-				K = "CHANNEL__INVITED_UPDATE",
-				G = "CHANNEL__JOINED_UPDATE",
-				z = "CHANNEL__SET_UPDATED_CHANNEL_ON_TOP",
-				W = "CHANNEL__FETCHING_JOINED_CHANNELS",
-				V = "CHANNEL__FETCHING_JOINED_CHANNELS_FAILED",
-				q = "CHANNEL__FETCHING_INVITED_CHANNELS",
-				J = "CHANNEL__FETCHING_INVITED_CHANNELS_FAILED",
-				Z = "CHANNEL__ADD_EXISTING_INVITED_CHANNELS",
-				Q = "CHANNEL__ADD_EXISTING_JOINED_CHANNELS",
-				Y = "CHANNEL__SET_INVITED_CHANNEL_TO_JOINED",
-				X = "CHANNEL__SET_EXISTING_CHANNELS_END",
-				$ = "CHANNEL__REMOVE_CHANNEL",
-				ee = "CHANNEL__UNSORT_CHANNEL",
-				te = "CHANNEL__RESET_CHANNEL_MESSAGE_LIST",
-				ne = "CHANNEL__FETCH_FIRST_MESSAGE",
-				ae = "CHANNEL__SET_FIRST_MESSAGE_ID",
-				se = Object(r.a)($),
-				ce = Object(r.a)(ee),
-				re = (e, t) => async (n, a) => {
+				v = n("./src/chat/models/Subreddit/index.ts"),
+				y = n("./src/chat/selectors/channels.ts"),
+				I = n("./src/chat/selectors/channels/next.tsx"),
+				x = n("./src/chat/selectors/experiments.ts"),
+				S = n("./src/chat/selectors/platform.ts"),
+				k = n("./src/chat/selectors/promos.ts"),
+				N = n("./src/chat/selectors/sidebar.ts"),
+				w = n("./src/chat/selectors/subreddit.ts"),
+				T = n("./src/chat/singleton/SendbirdSDK.ts");
+			const M = "CHANNEL__ADD_SUCCESS",
+				A = "CHANNEL__ADD_FAIL",
+				D = "CHANNEL__CREATE_CHANNEL_START",
+				L = "CHANNEL__SELECT_BEGIN",
+				U = "CHANNEL__RESET_UNREAD_COUNT",
+				R = "CHANNEL__SELECT_END",
+				P = "CHANNEL__EXPAND_INVITE_LIST",
+				B = "CHANNEL__COLLAPSE_INVITE_LIST",
+				H = "CHANNEL__UPDATE_MODEL",
+				F = "CHANNEL__INVITED_UPDATE",
+				K = "CHANNEL__JOINED_UPDATE",
+				G = "CHANNEL__SET_UPDATED_CHANNEL_ON_TOP",
+				z = "CHANNEL__FETCHING_JOINED_CHANNELS",
+				W = "CHANNEL__FETCHING_JOINED_CHANNELS_FAILED",
+				V = "CHANNEL__FETCHING_INVITED_CHANNELS",
+				q = "CHANNEL__FETCHING_INVITED_CHANNELS_FAILED",
+				J = "CHANNEL__ADD_EXISTING_INVITED_CHANNELS",
+				Z = "CHANNEL__ADD_EXISTING_JOINED_CHANNELS",
+				Q = "CHANNEL__SET_INVITED_CHANNEL_TO_JOINED",
+				Y = "CHANNEL__SET_EXISTING_CHANNELS_END",
+				X = "CHANNEL__REMOVE_CHANNEL",
+				$ = "CHANNEL__UNSORT_CHANNEL",
+				ee = "CHANNEL__RESET_CHANNEL_MESSAGE_LIST",
+				te = "CHANNEL__FETCH_FIRST_MESSAGE",
+				ne = Object(r.a)(X),
+				ae = Object(r.a)($),
+				se = (e, t) => async (n, a) => {
 					const s = a(),
-						c = Object(I.K)(s, e);
-					n(c ? ce({
+						c = Object(y.K)(s, e);
+					n(c ? ae({
 						channelId: e,
 						subredditName: t,
 						isRecommended: c
-					}) : se({
+					}) : ne({
 						channelId: e,
 						subredditName: t
 					}))
-				}, oe = Object(r.a)(Y), ie = e => async (t, n) => {
+				}, ce = Object(r.a)(Q), re = e => async (t, n) => {
 					const a = n(),
 						{
 							channels: {
@@ -187,46 +181,46 @@
 						} = a,
 						o = e || s.channelId;
 					if (!o) throw new O.a("accepted channelId", e);
-					const i = Object(I.k)(a),
+					const i = Object(y.k)(a),
 						d = i && i.firstMessageId,
 						u = !!(i && d && i.hasMoreMessages),
-						h = Object(I.b)(a, r),
-						m = Object(N.a)(a);
-					h && m ? t(Object(c.b)(Object(j.channelAction)(o, p.a.VIEW_NSFW_CONFIRMATION))) : await M.b.acceptChannelInvite().then(() => u && t(Object(l.p)(d))).then(() => t(oe({
+						h = Object(y.b)(a, r),
+						m = Object(k.a)(a);
+					h && m ? t(Object(c.b)(Object(j.channelAction)(o, p.a.VIEW_NSFW_CONFIRMATION))) : await T.b.acceptChannelInvite().then(() => u && t(Object(l.p)(d))).then(() => t(ce({
 						channelId: o
 					}))).then(() => t(Object(c.b)(Object(j.channelUrl)(o))))
-				}, le = e => async (t, n) => {
+				}, oe = e => async (t, n) => {
 					const a = n(),
-						s = Object(I.A)(a, "channelState"),
-						c = Object(I.A)(a, "channelId"),
+						s = Object(y.A)(a, "channelState"),
+						c = Object(y.A)(a, "channelId"),
 						r = a.channels.models[c];
 					if (!c) throw new O.a("declinedChannelId", c);
 					if (!s) throw new O.a("declinedChannelType", s);
 					try {
-						await M.b.declineChannelInvite()
+						await T.b.declineChannelInvite()
 					} catch (o) {
 						return Object(O.b)("Error declining channel: ".concat(o.message))
 					}
-					t(ye(c)), t(((e, t) => async n => n(re(e, t)))(c, e)), t(Me(r.channelState))
-				}, de = Object(r.a)(K), ue = Object(r.a)(G), he = Object(r.a)(F), me = e => async (t, n) => {
+					t(Ee(c)), t(((e, t) => async n => n(se(e, t)))(c, e)), t(we(r.channelState))
+				}, ie = Object(r.a)(F), le = Object(r.a)(K), de = Object(r.a)(H), ue = e => async (t, n) => {
 					const a = n();
-					Object(I.K)(a, e.channelId) && e.channelState === p.b.UNSORTED && (e.channelState = p.b.PARTIAL), t(he({
+					Object(y.K)(a, e.channelId) && e.channelState === p.b.UNSORTED && (e.channelState = p.b.PARTIAL), t(de({
 						channel: e
 					}))
-				}, be = e => async t => {
+				}, he = e => async t => {
 					if (e.type === C.a.Subreddit) {
-						const n = Object(y.c)([e]);
+						const n = Object(v.c)([e]);
 						await t(Object(o.o)(n)), t(Object(o.w)({
 							channel: e
 						}))
-					} else await t(de({
+					} else await t(ie({
 						channel: e
 					})), t((e => async (t, n) => {
 						const a = n().user.account.id,
 							s = e.members.filter(e => e.id !== a).map(e => e.id);
 						t(Object(h.v)(s))
 					})(e))
-				}, pe = e => async (t, n) => {
+				}, me = e => async (t, n) => {
 					const a = n(),
 						{
 							channelId: s
@@ -239,26 +233,26 @@
 								return t && t.name
 							}
 						})(e),
-						r = Object(I.w)(a);
-					r && r.channelId === e.channelId && (await t(se({
+						r = Object(y.w)(a);
+					r && r.channelId === e.channelId && (await t(ne({
 						channelId: s,
 						subredditName: c
-					})), await t(me(e)), t(Me(r.channelState)))
-				}, ge = (e, t) => async (n, a) => {
+					})), await t(ue(e)), t(we(r.channelState)))
+				}, be = (e, t) => async (n, a) => {
 					if (e) {
 						const c = a(),
-							r = Object(I.h)(c, e.channelId);
+							r = Object(y.h)(c, e.channelId);
 						if (e.channelState !== p.b.INVITED && !r || t) return;
-						if (e = fe(c, e), s()(e, r)) return;
+						if (e = pe(c, e), s()(e, r)) return;
 						switch (e.channelState) {
 							case p.b.INVITED:
-								await n(be(e));
+								await n(he(e));
 								break;
 							case p.b.UNSORTED:
-								await n(pe(e));
+								await n(me(e));
 								break;
 							case p.b.JOINED:
-								await n(ue({
+								await n(le({
 									channel: e
 								}));
 								break;
@@ -267,24 +261,24 @@
 						}
 						n(Object(d.b)())
 					}
-				}, fe = (e, t) => {
-					const n = Object(k.d)(e),
-						a = Object(I.h)(e, t.channelId),
+				}, pe = (e, t) => {
+					const n = Object(S.d)(e),
+						a = Object(y.h)(e, t.channelId),
 						s = n === t.channelId,
 						c = t.type === C.a.Subreddit;
 					return s && (t.unreadMessageCount = 0), !s && c && (t.unreadMessageCount = t.unreadMessageCount ? 1 : 0), a && c && (t.lastMessage = a.lastMessage, t.isMessageListLoaded = a.isMessageListLoaded, t.hasMoreMessages = a.hasMoreMessages), t
-				}, Oe = Object(r.a)(z), je = e => async (t, n) => {
+				}, ge = Object(r.a)(G), fe = e => async (t, n) => {
 					const {
 						channelId: a,
 						type: s
 					} = e;
-					s !== C.a.Subreddit && t(Oe({
+					s !== C.a.Subreddit && t(ge({
 						channelId: a
 					}))
-				}, Ce = Object(r.a)(R), _e = Object(r.a)(U), Ee = Object(r.a)(P), ve = () => async (e, t) => {
+				}, Oe = Object(r.a)(U), je = Object(r.a)(L), Ce = Object(r.a)(R), _e = () => async (e, t) => {
 					const n = t(),
-						a = Object(k.d)(n),
-						s = Object(k.c)(n),
+						a = Object(S.d)(n),
+						s = Object(S.c)(n),
 						{
 							CREATE: r,
 							DENY: o,
@@ -298,40 +292,40 @@
 						channelId: a,
 						tabIndex: u
 					}));
-					const h = a && Object(I.h)(n, a),
-						b = h && Object(T.b)(n, h.channelId),
+					const h = a && Object(y.h)(n, a),
+						b = h && Object(w.b)(n, h.channelId),
 						f = b && b.name || void 0;
 					if (!h && (s === o || s === r)) return;
 					const O = !(!h || h.channelState !== p.b.UNSORTED),
-						C = !(!a || !Object(I.L)(n, a));
+						C = !(!a || !Object(y.L)(n, a));
 					if ((C || O) && h && !s) return void e(Object(c.b)(Object(j.channelAction)(h.channelId, d, f)));
 					const _ = !(!h || h.channelState !== p.b.JOINED);
 					if (h && _ && s && p.g.includes(s)) e(Object(c.b)(Object(j.channelUrl)(h.channelId, f)));
 					else if (h && a) {
-						e(_e({
+						e(je({
 							channelId: a
 						}));
 						const t = C || O,
-							n = await M.b.enterChannel(h, !1, t);
+							n = await T.b.enterChannel(h, !1, t);
 						if (n && !n.error) {
 							const {
 								messageListData: t
 							} = n.data;
-							await e(Object(l.m)(t)), await e(Ee()), e(ye(a)), e(Object(i.f)())
-						} else e(Object(l.y)()), e(Ee())
+							await e(Object(l.m)(t)), await e(Ce()), e(Ee(a)), e(Object(i.f)())
+						} else e(Object(l.x)()), e(Ce())
 					} else {
 						const t = n.sendbird.sdk.connectionStatus === g.b.Open;
 						if (!h && a && t) {
-							const t = await M.b.addChannelModelByChannelId(a);
+							const t = await T.b.addChannelModelByChannelId(a);
 							if (t && !s) return void e(Object(c.b)(Object(j.channelAction)(t.channelId, d, f)))
 						}
-						e(Le()), e(Object(l.y)())
+						e(Ae()), e(Object(l.x)())
 					}
-				}, ye = (Object(r.a)("MESSAGE__MARK_AS_READ"), e => async (t, n) => {
+				}, Ee = (Object(r.a)("MESSAGE__MARK_AS_READ"), e => async (t, n) => {
 					const a = n(),
-						s = e || Object(k.d)(a);
-					s && (await t(Ce(s)), await M.b.markChannelAsRead(), t(Object(d.b)()))
-				}), Ie = Object(r.a)(L), xe = Object(r.a)(A), Se = Object(r.a)(D), ke = (e, t, n) => {
+						s = e || Object(S.d)(a);
+					s && (await t(Oe(s)), await T.b.markChannelAsRead(), t(Object(d.b)()))
+				}), ve = Object(r.a)(D), ye = Object(r.a)(M), Ie = Object(r.a)(A), xe = (e, t, n) => {
 					const a = e.map(e => ({
 						user_id: e,
 						nickname: t[e].name
@@ -346,7 +340,7 @@
 						})
 					}
 					return a
-				}, Ne = (e, t) => async (n, a, s) => {
+				}, Se = (e, t) => async (n, a, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -365,8 +359,8 @@
 							}
 						} = o;
 					if (i && l) {
-						n(Ie());
-						const a = ke(e, d, i);
+						n(ve());
+						const a = xe(e, d, i);
 						if (a.length < 2) return;
 						const s = await Object(f.c)(r(), l, a, t);
 						if (s.ok) {
@@ -375,14 +369,14 @@
 								{
 									channelId: r
 								} = a;
-							m.sortedKeys.includes(r) ? (n(ie(r)), n(Object(u.h)(e, r))) : h.sortedKeys.includes(r) ? (n(Object(c.b)(Object(j.channelUrl)(r))), n(Object(u.h)(e, r))) : (await n(xe({
+							m.sortedKeys.includes(r) ? (n(re(r)), n(Object(u.h)(e, r))) : h.sortedKeys.includes(r) ? (n(Object(c.b)(Object(j.channelUrl)(r))), n(Object(u.h)(e, r))) : (await n(ye({
 								[r]: a
 							})), n(Object(u.h)(e, r)), n(Object(c.b)(Object(j.channelUrl)(r))))
-						} else n(Se()), n(Object(u.x)(e))
+						} else n(Ie()), n(Object(u.x)(e))
 					}
-				}, we = e => async t => {
-					e = e.slice(0, 1), await t(Object(h.v)(e)), t(Ne(e)), t(Object(u.i)(e))
-				}, Te = e => async (t, n, a) => {
+				}, ke = e => async t => {
+					e = e.slice(0, 1), await t(Object(h.v)(e)), t(Se(e)), t(Object(u.i)(e))
+				}, Ne = e => async (t, n, a) => {
 					let {
 						apiContext: s
 					} = a;
@@ -396,31 +390,31 @@
 								models: l
 							}
 						} = r,
-						d = Object(I.A)(r, "channelSendbirdUrl");
+						d = Object(y.A)(r, "channelSendbirdUrl");
 					if (o && i) {
-						const n = ke(e, l);
+						const n = xe(e, l);
 						(await Object(f.k)(s(), i, n, d)).body ? (t(Object(u.b)()), t(Object(c.a)())) : Object(O.b)("Error inviting user to existing channel")
 					}
-				}, Me = e => async (t, n) => {
+				}, we = e => async (t, n) => {
 					const a = n(),
-						s = Object(w.b)(a),
+						s = Object(N.b)(a),
 						c = e === p.b.INVITED,
-						r = Object(x.d)(a),
-						o = Object(x.f)(a),
-						i = Object(x.g)(a),
-						l = Object(x.c)(a),
-						d = Object(x.e)(a);
-					s && c && Object(S.b)(a) ? r.channelId ? t(De(r)) : t(De(o)) : s && !c && Object(S.b)(a) ? o.channelId ? t(De(o)) : t(De(i)) : s || !c ? s || c ? t(Ae()) : d.channelId ? t(De(d)) : t(Ae()) : l.channelId ? t(De(l)) : t(De(d))
-				}, Ae = () => async (e, t) => {
+						r = Object(I.d)(a),
+						o = Object(I.f)(a),
+						i = Object(I.g)(a),
+						l = Object(I.c)(a),
+						d = Object(I.e)(a);
+					s && c && Object(x.b)(a) ? r.channelId ? t(Me(r)) : t(Me(o)) : s && !c && Object(x.b)(a) ? o.channelId ? t(Me(o)) : t(Me(i)) : s || !c ? s || c ? t(Te()) : d.channelId ? t(Me(d)) : t(Te()) : l.channelId ? t(Me(l)) : t(Me(d))
+				}, Te = () => async (e, t) => {
 					const n = t();
 					if (n.channels.firstLoaded) {
 						const t = !!n.platform.currentPage,
-							a = Object(x.b)(n, t);
-						e(De(a))
+							a = Object(I.b)(n, t);
+						e(Me(a))
 					}
-				}, De = e => async (t, n) => {
+				}, Me = e => async (t, n) => {
 					e && e.channelId ? e.channelAction ? t(Object(c.c)(Object(j.channelAction)(e.channelId, e.channelAction, e.subredditName))) : t(Object(c.c)(Object(j.channelUrl)(e.channelId, e.subredditName))) : t(Object(c.c)(j.rootUrl))
-				}, Le = e => async (t, n) => {
+				}, Ae = e => async (t, n) => {
 					const {
 						platform: {
 							currentPage: a
@@ -428,14 +422,14 @@
 					} = n();
 					if (a && a.urlParams.userIds) {
 						const e = a.urlParams.userIds.split(",");
-						return t(we(e))
+						return t(ke(e))
 					}
-					return t(e ? Me(e) : Ae())
-				}, Ue = Object(r.a)(q), Re = Object(r.a)(J), Pe = Object(r.a)(W), Be = Object(r.a)(V), He = Object(r.a)(Z), Fe = Object(r.a)(Q), Ke = Object(r.a)(X), Ge = () => async (e, t) => {
-					await Promise.all([e(qe()), e(Object(o.r)()), e(Object(o.q)()), e(Object(o.p)()), e(We()), e(Ve())]);
+					return t(e ? we(e) : Te())
+				}, De = Object(r.a)(V), Le = Object(r.a)(q), Ue = Object(r.a)(z), Re = Object(r.a)(W), Pe = Object(r.a)(J), Be = Object(r.a)(Z), He = Object(r.a)(Y), Fe = () => async (e, t) => {
+					await Promise.all([e(We()), e(Object(o.r)()), e(Object(o.q)()), e(Object(o.p)()), e(Ge()), e(ze())]);
 					const n = t().channels.models;
-					await e(ze(n)), e(Ke()), e(ve())
-				}, ze = e => async t => {
+					await e(Ke(n)), e(He()), e(_e())
+				}, Ke = e => async t => {
 					const n = Object(E.c)(e, [C.a.Direct, C.a.Group, C.a.Subreddit]);
 					if (!n) return;
 					const a = {};
@@ -448,62 +442,42 @@
 						for (const t in a) a[t].members.map(t => e.push(t.id));
 						t(Object(h.v)(e))
 					}
-				}, We = () => async (e, t) => {
-					e(Ue());
-					const n = await M.b.getExistingChannels(p.b.INVITED, p.f.NonSuper).catch(() => null);
+				}, Ge = () => async (e, t) => {
+					e(De());
+					const n = await T.b.getExistingChannels(p.b.INVITED, p.f.NonSuper).catch(() => null);
 					if (n) {
 						const {
 							hasMoreChannels: t
 						} = n, a = Object(C.e)(n.channels);
-						return e(ze(a)), void e(He({
+						return e(Ke(a)), void e(Pe({
 							channels: a,
 							hasMoreChannels: t
 						}))
 					}
-					e(Re()), Object(O.b)("Error fetching invited channels")
-				}, Ve = () => async (e, t) => {
-					e(Pe());
-					const n = await M.b.getExistingChannels(p.b.JOINED, p.f.NonSuper).catch(t => {
-						Object(O.b)(t), e(Be())
+					e(Le()), Object(O.b)("Error fetching invited channels")
+				}, ze = () => async (e, t) => {
+					e(Ue());
+					const n = await T.b.getExistingChannels(p.b.JOINED, p.f.NonSuper).catch(t => {
+						Object(O.b)(t), e(Re())
 					});
 					if (n) {
 						const {
 							hasMoreChannels: a
-						} = n, s = Object(C.e)(n.channels), c = Object(I.r)(t());
-						return e(Fe({
+						} = n, s = Object(C.e)(n.channels), c = Object(y.r)(t());
+						return e(Be({
 							channels: s,
 							hasMoreChannels: a
-						})), void(a && c < b.a.InitChannels && e(Ve()))
+						})), void(a && c < b.a.InitChannels && e(ze()))
 					}
-					e(Be())
-				}, qe = () => async (e, t) => {
+					e(Re())
+				}, We = () => async (e, t) => {
 					const n = t(),
-						a = Object(k.d)(n);
-					a && await M.b.addChannelModelByChannelId(a)
-				}, Je = Object(r.a)(B), Ze = Object(r.a)(H), Qe = (Object(r.a)("CHANNEL__MESSAGES_LOADED"), Object(r.a)(te)), Ye = (e, t) => async (n, a) => {
+						a = Object(S.d)(n);
+					a && await T.b.addChannelModelByChannelId(a)
+				}, Ve = Object(r.a)(P), qe = Object(r.a)(B), Je = (Object(r.a)("CHANNEL__MESSAGES_LOADED"), Object(r.a)(ee)), Ze = (e, t) => async (n, a) => {
 					const s = a(),
-						c = Object(I.A)(s, "channelState");
-					M.b.leaveChannel().then(() => n(re(e, t))).then(() => n(Me(c))).catch(e => Object(O.b)("Error leaving channels: ".concat(e.message)))
-				}, Xe = Object(r.a)(ne), $e = Object(r.a)(ae), et = e => async (t, n) => {
-					const a = n(),
-						s = Object(I.k)(a);
-					t(Xe({
-						channelId: e
-					})), M.b.getFirstMessage().then(e => {
-						const n = e[0];
-						if (n) {
-							if (s && s.hasMoreMessages) {
-								const e = Object(v.b)(n);
-								t(Object(l.s)({
-									[n.messageId]: e
-								}))
-							}
-							return n.messageId
-						}
-					}).then(n => n && t($e({
-						channelId: e,
-						firstMessageId: n
-					}))).catch(e => Object(O.b)("Error setting of first message: ".concat(e.message)))
+						c = Object(y.A)(s, "channelState");
+					T.b.leaveChannel().then(() => n(se(e, t))).then(() => n(we(c))).catch(e => Object(O.b)("Error leaving channels: ".concat(e.message)))
 				}
 		},
 		"./src/chat/actions/channel/dropdown.ts": function(e, t, n) {
@@ -829,7 +803,7 @@
 						l = Object(p.x)(r),
 						d = Object(g.b)(r, o),
 						h = Object(f.a)(r);
-					d && t === h && (n(Object(c.L)(o, d.name)), o === l && n(Object(a.b)(Object(u.channelAction)(o, i.a.DENY, d.name))))
+					d && t === h && (n(Object(c.K)(o, d.name)), o === l && n(Object(a.b)(Object(u.channelAction)(o, i.a.DENY, d.name))))
 				}, ae = (e, t) => async (n, a) => {
 					await e ? O.b.lockChannel() : O.b.unlockChannel(), Object(C.e)(a(), e, t)
 				}
@@ -934,18 +908,16 @@
 				return A
 			})), n.d(t, "n", (function() {
 				return L
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "u", (function() {
 				return U
 			})), n.d(t, "l", (function() {
 				return R
 			})), n.d(t, "j", (function() {
 				return B
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "t", (function() {
 				return H
 			})), n.d(t, "h", (function() {
 				return K
-			})), n.d(t, "s", (function() {
-				return G
 			})), n.d(t, "r", (function() {
 				return z
 			})), n.d(t, "b", (function() {
@@ -954,7 +926,7 @@
 				return q
 			})), n.d(t, "k", (function() {
 				return J
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "x", (function() {
 				return Z
 			})), n.d(t, "d", (function() {
 				return Q
@@ -964,7 +936,7 @@
 				return X
 			})), n.d(t, "i", (function() {
 				return $
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "s", (function() {
 				return te
 			})), n.d(t, "g", (function() {
 				return ne
@@ -974,9 +946,9 @@
 				return se
 			})), n.d(t, "q", (function() {
 				return ie
-			})), n.d(t, "x", (function() {
-				return le
 			})), n.d(t, "w", (function() {
+				return le
+			})), n.d(t, "v", (function() {
 				return de
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -1050,7 +1022,7 @@
 					a(D(r)), a(T(e, o, r.data))
 				}, U = (e, t) => async (n, a) => {
 					const s = a(),
-						c = Object(S.h)(s, t);
+						c = Object(S.g)(s, t);
 					c && (n(P({
 						clientMessageId: t,
 						toggle: !1
@@ -1100,7 +1072,7 @@
 					} = a;
 					const c = n(),
 						r = Object(I.x)(c) === e.channelId;
-					Object(y.c)(c) && r && t(Object(i.K)(e.channelId)), t(G({
+					Object(y.c)(c) && r && t(Object(i.J)(e.channelId)), t(G({
 						[e.messageId]: e
 					}))
 				}, W = "MESSAGE__ADD_LIST", V = Object(o.a)(W), q = e => async (t, n, a) => {
@@ -1113,7 +1085,7 @@
 					}, e)))
 				}, J = "MESSAGE__SET_MESSAGE_LIST_IS_LOADED", Z = Object(o.a)(J), Q = "MESSAGE__DELETE_ONE", Y = Object(o.a)(Q), X = e => async (t, n) => {
 					const a = n(),
-						s = Object(S.d)(a, e);
+						s = Object(S.c)(a, e);
 					s && k.b.deleteMessage(s).then(() => t(Y(s.messageId))).then(() => t(Object(c.a)()))
 				}, $ = "MESSAGE__RECEIVE_DELETE_ONE", ee = Object(o.a)($), te = e => async (t, n) => {
 					t(ee(e))
@@ -1247,7 +1219,7 @@
 					} = t();
 					if (n && n.urlParams.userIds) {
 						const t = n.urlParams.userIds.split(",");
-						e(Object(a.B)(t))
+						e(Object(a.A)(t))
 					}
 				})
 		},
@@ -1297,7 +1269,7 @@
 								})
 							}
 						}
-						n.match.params.subredditName && c(Object(o.l)()), n.match.params.channelId && c(Object(r.O)())
+						n.match.params.subredditName && c(Object(o.l)()), n.match.params.channelId && c(Object(r.N)())
 					}
 				}, h = Object(c.a)(i);
 			Object(c.a)(l), Object(c.a)(d), Object(c.a)("PLATFORM__MODAL_TOGGLED")
@@ -1365,7 +1337,7 @@
 						s = Object(d.e)(n),
 						c = Object(i.a)(n),
 						r = Object(i.b)(n);
-					!a && !s && c && r && (await e(b(o.a.SubredditChatFtux)), await e(j(Object(l.i)(n))), Object(u.b)(n))
+					!a && !s && c && r && (await e(b(o.a.SubredditChatFtux)), await e(j(Object(l.h)(n))), Object(u.b)(n))
 				}
 		},
 		"./src/chat/actions/sendbird/config.ts": function(e, t, n) {
@@ -1591,7 +1563,7 @@
 								toast: d.a.ConnectionClosed
 							}))) : (t(j()), o && (t(Object(c.q)(!0)), t(Object(i.e)({
 								toast: d.a.ConnectionOpen
-							})), t(Object(i.c)(3))), t(Object(r.b)()), t(Object(s.F)()))
+							})), t(Object(i.c)(3))), t(Object(r.b)()), t(Object(s.E)()))
 						})
 					}
 				}, _ = Object(a.a)(g), E = () => async e => {
@@ -2200,7 +2172,7 @@
 					C && C.ok && p ? (await v.b.hideChannel(), n(X({
 						userId: e,
 						username: d
-					})), t || (n(Object(l.L)(j)), n(Object(l.P)(b)))) : C && C.ok && !p ? (n(X({
+					})), t || (n(Object(l.K)(j)), n(Object(l.O)(b)))) : C && C.ok && !p ? (n(X({
 						userId: e,
 						username: d
 					})), t || n(Object(o.a)())) : C && n($(C.error))
@@ -2766,8 +2738,8 @@
 						channelId: n
 					} = t;
 					return {
-						onResend: t => e(Object(g.v)(n, t)),
-						onDelete: t => e(Object(g.u)({
+						onResend: t => e(Object(g.u)(n, t)),
+						onDelete: t => e(Object(g.t)({
 							clientMessageId: t
 						}))
 					}
@@ -2832,8 +2804,8 @@
 				}
 			}
 			var lt = Object(o.b)(void 0, e => ({
-					onDelete: (t, n) => e(Object(g.w)(t, n)),
-					onIgnore: (t, n) => e(Object(g.x)(t, n))
+					onDelete: (t, n) => e(Object(g.v)(t, n)),
+					onIgnore: (t, n) => e(Object(g.w)(t, n))
 				}))(it),
 				dt = n("./node_modules/lodash/difference.js"),
 				ut = n.n(dt),
@@ -4719,7 +4691,7 @@
 			}), Vr = Object(o.b)(Wr, e => ({
 				getPreviousMessages: () => e(Object(g.q)()),
 				removeAndResetMessages: t => e(Object(f.c)(t)),
-				resetChannelMessageList: t => e(Object(p.N)(t))
+				resetChannelMessageList: t => e(Object(p.M)(t))
 			})), qr = 30, Jr = 2 * Ar.a.Messages;
 			class Zr extends r.a.Component {
 				constructor(e) {
@@ -5202,8 +5174,8 @@
 					selectedUsersCount: $o.l
 				}),
 				gi = Object(o.b)(pi, e => ({
-					onCreateNewChannel: (t, n) => e(Object(p.C)(t, n)),
-					onInviteUsersToExistingChannel: t => e(Object(p.I)(t)),
+					onCreateNewChannel: (t, n) => e(Object(p.B)(t, n)),
+					onInviteUsersToExistingChannel: t => e(Object(p.H)(t)),
 					onIdentifyContact: t => e(Object(xo.k)({
 						username: t
 					})),
@@ -5719,9 +5691,9 @@
 			}
 			var jl = Object(o.b)(null, e => ({
 				onTrackExpandToggle: t => e(t ? Object(gt.j)() : Object(gt.e)()),
-				expandInviteList: () => e(Object(p.E)()),
-				collapseInviteList: () => e(Object(p.A)()),
-				fetchInvitedChannels: () => e(Object(p.G)())
+				expandInviteList: () => e(Object(p.D)()),
+				collapseInviteList: () => e(Object(p.z)()),
+				fetchInvitedChannels: () => e(Object(p.F)())
 			}))(Ol);
 			const Cl = (e, t) => t.type === C.a.Group ? t.name && "Group Channel" !== t.name ? t.name : t.members.map(e => e.name).join(", ") : e.firstUser.name,
 				_l = (e, t) => {
@@ -5811,7 +5783,7 @@
 					selectedChannelId: e => Object(I.A)(e, "channelId")
 				});
 			var Nl = Object(o.b)(kl, e => ({
-					fetchJoinedChannels: () => e(Object(p.H)())
+					fetchJoinedChannels: () => e(Object(p.G)())
 				}))(e => {
 					const {
 						className: t,
@@ -5864,7 +5836,7 @@
 					hasMoreJoinedChannels: I.E
 				});
 			var Dl = Object(o.b)(Al, e => ({
-				fetchJoinedChannels: () => e(Object(p.H)())
+				fetchJoinedChannels: () => e(Object(p.G)())
 			}))(e => {
 				const {
 					fetchingJoinedChannels: t,
@@ -6236,7 +6208,7 @@
 					displaySubredditChatFtux: Bd.c,
 					sidebarActiveIndex: Hd.a,
 					subredditChatEnabled: Rd.b,
-					unreadCount: Pd.k
+					unreadCount: Pd.j
 				});
 			class qd extends r.a.Component {
 				shouldComponentUpdate(e) {
@@ -6419,26 +6391,26 @@
 				}, e.children), "MemberListHeader", yu.a),
 				Pu = Object(F.a)({
 					currentUserId: ls.a,
-					firstMessage: Pd.b,
 					channel: e => Object(I.k)(e),
 					inviterContact: (e, t) => {
 						const n = e.channels.models[t.channelId];
 						return Object($o.e)(e, n)
-					}
+					},
+					channelMessages: e => Object(I.y)(e)
 				});
 			class Bu extends r.a.Component {
-				componentWillReceiveProps(e) {
+				UNSAFE_componentWillReceiveProps(e) {
 					const {
 						channel: t,
-						setFirstMessageId: n
+						getPreviousMessages: n
 					} = this.props;
 					if (t && e.channel) {
 						const a = e.channel.channelId === t.channelId;
-						t.type === C.a.Direct && !t.firstMessageId && !t.fetchingFirstMessage && a && n(t.channelId)
+						t.type === C.a.Direct && !t.firstMessageId && !t.fetchingFirstMessage && a && n()
 					}
 				}
 				constructor(e) {
-					super(e), this.renderContent = this.renderContent.bind(this), this.renderUserInfo = this.renderUserInfo.bind(this), this.renderPreviewMessage = this.renderPreviewMessage.bind(this), this.onDeclineChannelRequest = this.onDeclineChannelRequest.bind(this)
+					super(e), this.renderContent = this.renderContent.bind(this), this.renderUserInfo = this.renderUserInfo.bind(this), this.renderPreviewMessages = this.renderPreviewMessages.bind(this), this.onDeclineChannelRequest = this.onDeclineChannelRequest.bind(this)
 				}
 				onDeclineChannelRequest() {
 					this.props.onDeclineChannelRequest(this.props.channelId)
@@ -6462,18 +6434,23 @@
 						}))
 					}
 				}
-				renderPreviewMessage() {
-					return this.props.channel && this.props.firstMessage && r.a.createElement(xu, null, r.a.createElement(Au, null, O.fbt._("Preview of this chat", null, {
-						hk: "42xxX4"
-					})), r.a.createElement(Uu, {
-						darkBackground: !0,
-						message: this.props.firstMessage,
-						inPreview: !0,
-						fromCurrentUser: !1,
-						fromInvite: !0,
-						embedText: !0,
-						withButton: !0
-					}))
+				renderPreviewMessages() {
+					if (this.props.channel && this.props.channelMessages && this.props.channelMessages.length) {
+						const e = m()([...this.props.channelMessages], "createdAt");
+						return r.a.createElement(xu, null, r.a.createElement(Au, null, O.fbt._("Preview of this chat", null, {
+							hk: "42xxX4"
+						})), e.map(e => r.a.createElement(r.a.Fragment, {
+							key: e.createdAt
+						}, r.a.createElement(Uu, {
+							message: e,
+							inPreview: !0,
+							fromCurrentUser: !1,
+							fromInvite: !0,
+							embedText: !0,
+							withButton: !0,
+							darkBackground: !0
+						}))))
+					}
 				}
 				renderBlockedUserHeader() {
 					return this.props.hasBlockedUsers() && r.a.createElement(Tu, null, r.a.createElement(Lu, null, O.fbt._("Heads up: you previously blocked at least one person in this group.", null, {
@@ -6533,7 +6510,7 @@
 						hk: "3rI4EF"
 					}))), this.renderUserInfo()), r.a.createElement(Tu, null, O.fbt._("Accept their request if you'd like to continue the conversation. We won't notify them if you decline.", null, {
 						hk: "1wbHBD"
-					})), t && t.type === C.a.Group ? this.renderMembersList() : this.renderPreviewMessage())
+					})), t && t.type === C.a.Group ? this.renderMembersList() : this.renderPreviewMessages())
 				}
 				render() {
 					const {
@@ -6566,12 +6543,12 @@
 			}
 			var Hu = Object(o.b)(Pu, e => ({
 					onAcceptChannelRequest: () => {
-						e(Object(gt.k)()), e(Object(p.z)())
+						e(Object(gt.k)()), e(Object(p.y)())
 					},
 					onDeclineChannelRequest: t => {
 						e(Object(_e.b)(Object(ye.channelAction)(t, pc.a.DECLINE_REQUEST)))
 					},
-					setFirstMessageId: t => e(Object(p.Q)(t))
+					getPreviousMessages: g.q
 				}), (e, t, n) => Object.assign({}, e, t, n, {
 					hasBlockedUsers: () => {
 						const {
@@ -6654,7 +6631,7 @@
 			Yu.displayName = "Text";
 			var Xu = Object(o.b)(null, e => ({
 					onDeclineChannelRequest: t => {
-						e(Object(gt.l)()), e(Object(p.D)(t))
+						e(Object(gt.l)()), e(Object(p.C)(t))
 					}
 				}))(e => {
 					let {
@@ -6684,7 +6661,7 @@
 				rh = Object(F.a)({
 					isModerator: I.a,
 					message: (e, t) => e.messages.models[t.messageId],
-					senderUserId: (e, t) => Object(Pd.f)(e, t.messageId),
+					senderUserId: (e, t) => Object(Pd.e)(e, t.messageId),
 					subredditId: I.B
 				});
 			class oh extends c.Component {
@@ -6973,7 +6950,7 @@
 				Qh = i.a.wrapped(Zh, "TextBold", qh.a);
 			var Yh = Object(o.b)(void 0, e => ({
 					onChannelLeave: (t, n) => {
-						e(Object(gt.n)()), e(Object(p.J)(t, n))
+						e(Object(gt.n)()), e(Object(p.I)(t, n))
 					}
 				}))(e => {
 					const {
@@ -7070,7 +7047,7 @@
 				dm = i.a.p("Text", im.a);
 			var um = Object(o.b)(null, e => ({
 					onAccept: () => {
-						e(Object(l.d)(rm.b.NSFWWarning)), e(Object(p.z)())
+						e(Object(l.d)(rm.b.NSFWWarning)), e(Object(p.y)())
 					}
 				}))(e => r.a.createElement(no, null, r.a.createElement(Mr, {
 					title: O.fbt._("NSFW User", null, {
@@ -9103,7 +9080,7 @@
 							const t = e.getState();
 							e.dispatch(Object(u.sizeChanged)(b.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === i.Ab.CHAT_MINIMIZE && e.dispatch(Object(d.P)());
+							a && a.meta && a.meta.name === i.Ab.CHAT_MINIMIZE && e.dispatch(Object(d.O)());
 							const {
 								action: s,
 								noun: c,
@@ -9223,7 +9200,7 @@
 						}
 						case l.a: {
 							const t = j(f, g);
-							C && t ? n() : t && e.dispatch(Object(r.P)());
+							C && t ? n() : t && e.dispatch(Object(r.O)());
 							break
 						}
 						case d.h:
@@ -9306,7 +9283,7 @@
 				} catch (h) {
 					Object(i.b)("Token Refresher Error: ".concat(h))
 				}
-				return e => t => (t.type !== o.a && t.type !== o.c || d(t.payload), t.type === r.w && c(), t.type === o.b && (clearTimeout(n), n = null), e(t))
+				return e => t => (t.type !== o.a && t.type !== o.c || d(t.payload), t.type === r.v && c(), t.type === o.b && (clearTimeout(n), n = null), e(t))
 			}
 		},
 		"./src/chat/customMiddleware/tracking.ts": function(e, t, n) {
@@ -10164,7 +10141,7 @@
 							sortedKeys: [...e.sortedKeys, ...c]
 						})
 					}
-					case s.t: {
+					case s.s: {
 						const {
 							channelId: n
 						} = t.payload;
@@ -10172,7 +10149,7 @@
 							sortedKeys: e.sortedKeys.filter(e => e !== n)
 						})
 					}
-					case s.v:
+					case s.u:
 					case s.m: {
 						const {
 							channelId: n
@@ -10181,13 +10158,13 @@
 							sortedKeys: e.sortedKeys.filter(e => e !== n)
 						})
 					}
-					case s.y: {
+					case s.x: {
 						const n = t.payload.channel.channelId;
 						return e.sortedKeys.indexOf(n) > -1 ? Object.assign({}, e, {
 							sortedKeys: e.sortedKeys.filter(e => e !== n)
 						}) : e
 					}
-					case s.x: {
+					case s.w: {
 						const {
 							channel: n
 						} = t.payload;
@@ -10243,7 +10220,7 @@
 								sortedKeys: [...e.sortedKeys, ...c]
 							})
 						}
-						case s.v:
+						case s.u:
 						case s.m: {
 							const {
 								channelId: n
@@ -10252,7 +10229,7 @@
 								sortedKeys: e.sortedKeys.filter(e => e !== n)
 							})
 						}
-						case s.t: {
+						case s.s: {
 							const {
 								channelId: n
 							} = t.payload;
@@ -10266,7 +10243,7 @@
 								sortedKeys: o()([...n, ...e.sortedKeys])
 							})
 						}
-						case s.u:
+						case s.t:
 						case m.a: {
 							const {
 								channelId: n
@@ -10325,7 +10302,7 @@
 							})
 						})
 					}
-					case s.t:
+					case s.s:
 					case I.b: {
 						const {
 							channelId: n
@@ -10336,7 +10313,7 @@
 							[a.channelId]: a
 						})
 					}
-					case s.y: {
+					case s.x: {
 						const n = t.payload.channel,
 							a = e[n.channelId],
 							s = Object.assign({}, a, _()(n, "hasMoreMessages", "isMessageListLoaded")),
@@ -10346,7 +10323,7 @@
 						return Object.assign({}, e, c)
 					}
 					case I.m:
-					case s.x: {
+					case s.w: {
 						const n = t.payload.channel,
 							a = e[n.channelId],
 							s = Object.assign({}, a, n, {
@@ -10357,7 +10334,7 @@
 							};
 						return Object.assign({}, e, c)
 					}
-					case s.w: {
+					case s.v: {
 						const {
 							channel: n
 						} = t.payload;
@@ -10371,7 +10348,7 @@
 						} = t.payload;
 						return _()(e, n)
 					}
-					case s.v: {
+					case s.u: {
 						const {
 							channelId: n,
 							isRecommended: a
@@ -10446,18 +10423,6 @@
 							})
 						})
 					}
-					case s.s: {
-						const {
-							channelId: n,
-							firstMessageId: a
-						} = t.payload;
-						return Object.assign({}, e, {
-							[n]: Object.assign({}, e[n], {
-								fetchingFirstMessage: !1,
-								firstMessageId: a
-							})
-						})
-					}
 					case x.b: {
 						const {
 							channelId: n
@@ -10494,7 +10459,7 @@
 						return Object.assign({}, e, {
 							isLoaded: !0
 						});
-					case s.v:
+					case s.u:
 					case s.m:
 						return t.payload.channelId !== e.channelId ? e : Object.assign({}, e, {
 							channelId: ""
@@ -10550,7 +10515,7 @@
 							sortedKeys: [...c]
 						} : e
 					}
-					case s.v:
+					case s.u:
 					case s.m:
 					case I.b: {
 						const {
@@ -10599,7 +10564,7 @@
 							sortedKeys: Object.assign({}, e)
 						}
 					}
-					case s.v:
+					case s.u:
 					case s.m: {
 						const {
 							channelId: n,
@@ -10611,7 +10576,7 @@
 							sortedKeys: c
 						})
 					}
-					case s.w: {
+					case s.v: {
 						const {
 							sortedKeys: n
 						} = e, {
@@ -12264,7 +12229,7 @@
 					s = Object(b.w)(a),
 					c = Object(p.b)(a, e),
 					r = c && c.name.toLowerCase();
-				r && (t(Object(d.M)({
+				r && (t(Object(d.L)({
 					channelId: e,
 					subredditName: r
 				})), s && s.channelId === e && t(Object(u.b)(Object(m.channelAction)(e, h.a.DENY, r))))
@@ -12356,7 +12321,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(C.h)(t)), this.dispatch(Object(_.e)({
 							toast: x.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Eb), this.dispatch(Object(O.q)(!0)), this.dispatch(Object(d.F)())
+						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Eb), this.dispatch(Object(O.q)(!0)), this.dispatch(Object(d.E)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
 				onReconnectFailed() {
@@ -12374,14 +12339,14 @@
 					const e = new this.self.ChannelHandler;
 					e.onUserReceivedInvitation = e => {
 						const t = Object(k.f)(e);
-						this.dispatch(Object(d.S)(t))
+						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("RECEIVE_CHANNEL_INVITE", e), this.channelUniqueHandlerID.push("RECEIVE_CHANNEL_INVITE")
 				}
 				onReceiveMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageReceived = (e, t) => {
 						const n = Object(k.f)(e);
-						this.dispatch(Object(d.R)(n));
+						this.dispatch(Object(d.P)(n));
 						const a = Object(A.b)(t);
 						a && this.dispatch(Object(O.r)(a))
 					}, this.self.addChannelHandler("RECEIVE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("RECEIVE_CHANNEL_MESSAGE")
@@ -12390,7 +12355,7 @@
 					const e = new this.self.ChannelHandler;
 					e.onMessageUpdated = (e, t) => {
 						const n = Object(k.f)(e);
-						this.dispatch(Object(d.R)(n));
+						this.dispatch(Object(d.P)(n));
 						const a = Object(A.b)(t);
 						a && this.dispatch(Object(O.r)(a))
 					}, this.self.addChannelHandler("UPDATE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("UPDATE_CHANNEL_MESSAGE")
@@ -12398,7 +12363,7 @@
 				onDeleteMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageDeleted = (e, t) => {
-						this.dispatch(Object(O.t)(t))
+						this.dispatch(Object(O.s)(t))
 					}, this.self.addChannelHandler("DELETE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("DELETE_CHANNEL_MESSAGE")
 				}
 				onTypingStatusUpdated() {
@@ -12422,7 +12387,7 @@
 							s = e[n];
 						a[n] = e => {
 							const t = Object(k.f)(e);
-							this.dispatch(Object(d.S)(t, !0))
+							this.dispatch(Object(d.Q)(t, !0))
 						}, this.self.addChannelHandler(s, a), this.channelUniqueHandlerID.push(s)
 					})
 				}
@@ -12430,7 +12395,7 @@
 					const e = new this.self.ChannelHandler;
 					e.onChannelChanged = e => {
 						const t = Object(k.f)(e);
-						this.dispatch(Object(d.S)(t))
+						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_CHANGED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_CHANGED")
 				}
 				onChannelDeleted() {
@@ -12444,28 +12409,28 @@
 					const e = new this.self.ChannelHandler;
 					e.onUserMuted = e => {
 						const t = Object(k.f)(e);
-						this.dispatch(Object(d.S)(t))
+						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_MUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_MUTED")
 				}
 				onChannelUnmuted() {
 					const e = new this.self.ChannelHandler;
 					e.onUserUnmuted = e => {
 						const t = Object(k.f)(e);
-						this.dispatch(Object(d.S)(t))
+						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNMUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNMUTED")
 				}
 				onChannelLocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelFrozen = e => {
 						const t = Object(k.f)(e);
-						this.dispatch(Object(d.S)(t))
+						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_LOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_LOCKED")
 				}
 				onChannelUnlocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelUnfrozen = e => {
 						const t = Object(k.f)(e);
-						this.dispatch(Object(d.S)(t))
+						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNLOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNLOCKED")
 				}
 				mapCodeToError(e) {
@@ -12500,7 +12465,7 @@
 						PARTIAL: n,
 						UNSORTED: a
 					} = h.b;
-					t === n && e.channelState === a && (e.channelState = n, this.dispatch(Object(d.T)(e)))
+					t === n && e.channelState === a && (e.channelState = n, this.dispatch(Object(d.R)(e)))
 				}
 				getChannelByChannelId(e) {
 					return new Promise((t, n) => {
@@ -12524,7 +12489,7 @@
 									[e.id]: e
 								}))
 							}
-							this.dispatch(Object(d.T)(n)), t(n)
+							this.dispatch(Object(d.R)(n)), t(n)
 						}).catch(e => {
 							Object(S.b)("Error: can't add channel by id"), n(e)
 						})
@@ -12554,7 +12519,7 @@
 							const o = Object(k.f)(r);
 							if (this.updatePartialChannelModel(o, e.channelState), t && o.type === k.a.Subreddit) return this.autoJoinSubredditChannel(r, o).then(e => {
 								const t = Object(N.a)(e, h.b.JOINED);
-								this.dispatch(Object(d.T)(t)), this.switchChannel(r).then(e => {
+								this.dispatch(Object(d.R)(t)), this.switchChannel(r).then(e => {
 									let [t] = e;
 									return a(s({
 										messageListData: t
@@ -13339,7 +13304,7 @@
 					}
 				},
 				C = (e, t) => {
-					const n = Object(u.e)(e, t);
+					const n = Object(u.d)(e, t);
 					return {
 						sender_user_id: n && n.userId || e.user.account.id
 					}
@@ -13354,7 +13319,7 @@
 					members: t
 				}),
 				v = e => ({
-					number_unreads: Object(u.j)(e)
+					number_unreads: Object(u.i)(e)
 				}),
 				y = (e, t) => {
 					const n = Object(l.m)(e),
@@ -13379,10 +13344,10 @@
 					}
 				},
 				k = (e, t) => ({
-					message_type: Object(u.g)(e, t) || "text"
+					message_type: Object(u.f)(e, t) || "text"
 				}),
 				N = (e, t) => {
-					const n = Object(u.h)(e, t);
+					const n = Object(u.g)(e, t);
 					return n && {
 						message_type: n.messageData.type
 					}
@@ -14077,4 +14042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.9847702cd34bce58d097.js.map
+//# sourceMappingURL=Chat~RedesignChat.9139ce932467839456bd.js.map
