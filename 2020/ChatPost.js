@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.3b7eeac31bdab536018a.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.df4cb59341e19ec03578.js
+// Retrieved at 7/6/2020, 12:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1238,7 +1238,7 @@
 						voteState: J,
 						score: X,
 						isDeleted: $
-					} = t, ee = !$ && (0 === X || 1 === X) && J === k.a.notVoted;
+					} = t, ee = !$ && (0 === X || 1 === X || J === k.a.notVoted);
 					return s.a.createElement("div", {
 						className: o
 					}, s.a.createElement("div", {
@@ -1405,7 +1405,7 @@
 						voteState: a,
 						score: i,
 						isDeleted: c
-					} = e, l = !(c || (0 === i || 1 === i) && a === k.a.notVoted);
+					} = e, l = !c && !(0 === i || 1 === i || a === k.a.notVoted);
 					return (n || r) && l && s.a.createElement("div", {
 						className: Object(Q.a)(At.a.ChatHorizontalVotesWrapper, o)
 					}, s.a.createElement(Pt, {
@@ -2549,4 +2549,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.3b7eeac31bdab536018a.js.map
+//# sourceMappingURL=ChatPost.df4cb59341e19ec03578.js.map
