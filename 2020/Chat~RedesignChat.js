@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b0016571e8476aa93a9e.js
-// Retrieved at 7/7/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a5171201dce4af4c83e8.js
+// Retrieved at 7/7/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -11466,7 +11466,6 @@
 				isRedesign: !1,
 				isSessionSeo: !1,
 				method: "",
-				platform: null,
 				protocol: "",
 				sessionReferrerDomain: "",
 				userAgent: ""
@@ -12152,22 +12151,20 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return l
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "g", (function() {
 				return d
 			})), n.d(t, "h", (function() {
 				return u
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "e", (function() {
 				return h
 			})), n.d(t, "f", (function() {
 				return m
-			})), n.d(t, "g", (function() {
-				return b
-			})), n.d(t, "d", (function() {
-				return p
 			})), n.d(t, "c", (function() {
+				return b
+			})), n.d(t, "b", (function() {
+				return p
+			})), n.d(t, "d", (function() {
 				return g
-			})), n.d(t, "e", (function() {
-				return f
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.split.js");
 			var a = n("./node_modules/js-cookie/src/js.cookie.js"),
@@ -12179,18 +12176,17 @@
 			const l = e => ({
 					pageType: Object(i.d)(e) ? "chat" : "chat_fullscreen"
 				}),
-				d = e => e.meta.platform || void 0,
-				u = e => {
+				d = e => {
 					const t = s.a.get(o.f);
 					return {
 						id: (e.user.sessionTracker || t).split(".")[0]
 					}
 				},
-				h = e => ({
+				u = e => ({
 					id: e.user.account ? e.user.account.id : "accessed_chat_without_login",
 					isLoggedIn: !!e.user.account
 				}),
-				m = e => {
+				h = e => {
 					const t = e.platform.currentPage ? e.platform.referrers[e.platform.currentPage.key] : void 0;
 					if (t) {
 						const {
@@ -12202,10 +12198,10 @@
 						}
 					}
 				},
-				b = e => ({}),
-				p = e => e.meta.externalData.post,
-				g = e => e.meta.externalData.comment,
-				f = e => e.meta.externalData.profile
+				m = e => ({}),
+				b = e => e.meta.externalData.post,
+				p = e => e.meta.externalData.comment,
+				g = e => e.meta.externalData.profile
 		},
 		"./src/chat/singleton/SendbirdSDK.ts": function(e, t, n) {
 			"use strict";
@@ -13449,17 +13445,16 @@
 					app: {
 						name: e.meta.isRedesign || e.container.size === s.a.FULL ? a.a.telemetry.appName.chat2x : a.a.telemetry.appName.chatR2
 					},
-					platform: Object(c.b)(e),
-					user: Object(c.i)(e),
-					screen: Object(c.g)(e),
-					session: Object(c.h)(e),
-					referrer: Object(c.f)(e),
+					user: Object(c.h)(e),
+					screen: Object(c.f)(e),
+					session: Object(c.g)(e),
+					referrer: Object(c.e)(e),
 					actionInfo: Object(c.a)(e)
 				}),
 				o = e => ({
-					comment: Object(c.c)(e),
-					post: Object(c.d)(e),
-					profile: Object(c.e)(e)
+					comment: Object(c.b)(e),
+					post: Object(c.c)(e),
+					profile: Object(c.d)(e)
 				})
 		},
 		"./src/chat/tracking/fields/subreddit.ts": function(e, t, n) {
@@ -14047,4 +14042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.b0016571e8476aa93a9e.js.map
+//# sourceMappingURL=Chat~RedesignChat.a5171201dce4af4c83e8.js.map
