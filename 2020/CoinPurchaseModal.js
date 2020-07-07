@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.4ee37490e3c466d4f93f.js
-// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2eccf4d13f2e79e6a9a4.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -91,16 +91,16 @@
 						if (!j) return void r(Object(o.stripeApiError)(n.fbt._("Trying to purchase award with zero price", null, {
 							hk: "3FhAjz"
 						})));
-						const v = {
+						const x = {
 								gildType: u,
 								includeMessage: !!i,
 								isAnonymous: c,
 								message: i
 							},
-							x = await Object(d.f)({
+							E = await Object(d.f)({
 								context: h(),
 								correlationId: P,
-								gildParams: v,
+								gildParams: x,
 								isOldReddit: a,
 								pennies: j,
 								rememberCard: y,
@@ -108,8 +108,8 @@
 								thingId: e,
 								token: C
 							});
-						if (x.error) {
-							const e = Object(s.a)(x.error, x.status);
+						if (E.error) {
+							const e = Object(s.a)(E.error, E.status);
 							return void r(Object(o.stripeApiError)(e))
 						} {
 							const {
@@ -123,7 +123,7 @@
 								awarder_karma_received: s,
 								coins: c,
 								treatment_tags: i
-							} = x.body;
+							} = E.body;
 							return void r(a({
 								awardKarmaReceived: s || 0,
 								awardId: u,
@@ -340,12 +340,12 @@
 				y = t("./node_modules/react-redux/es/index.js"),
 				k = t("./node_modules/reselect/es/index.js"),
 				j = t("./src/higherOrderComponents/makeAsync.tsx"),
-				v = t("./src/reddit/helpers/loadThirdPartyScript.ts"),
-				x = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				E = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
-				w = t("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts");
+				x = t("./src/reddit/helpers/loadThirdPartyScript.ts"),
+				E = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				w = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
+				v = t("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts");
 			const f = Object(k.c)({
-				isGild: e => !!Object(x.p)(e)
+				isGild: e => !!Object(E.p)(e)
 			});
 			class _ extends r.a.Component {
 				constructor() {
@@ -387,16 +387,16 @@
 				}
 			}
 			const O = Object(y.b)(f, (e, a) => ({
-				createPayment: () => "coinPackage" in a ? e(Object(E.e)(a.coinPackage)) : "awardId" in a ? e(Object(w.d)(a.awardId, a.pennies, a.thingId)) : void 0,
+				createPayment: () => "coinPackage" in a ? e(Object(w.e)(a.coinPackage)) : "awardId" in a ? e(Object(v.d)(a.awardId, a.pennies, a.thingId)) : void 0,
 				executePayment: (t, n) => {
 					if ("coinPackage" in a) {
-						if (t) return void e(Object(E.g)(n, a.coinPackage));
-						e(Object(E.f)(n, a.coinPackage))
-					} else "awardId" in a && e(Object(w.c)(n))
+						if (t) return void e(Object(w.g)(n, a.coinPackage));
+						e(Object(w.f)(n, a.coinPackage))
+					} else "awardId" in a && e(Object(v.c)(n))
 				}
 			}))(_);
 			var N = Object(j.a)({
-					getComponent: () => Object(v.c)().then(() => O),
+					getComponent: () => Object(x.c)().then(() => O),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -433,7 +433,7 @@
 					}, r.a.createElement(u.a, {
 						className: T.a.balance,
 						coinBalance: a
-					}), c === i.wb ? e && e.pennyPrice && t ? r.a.createElement(N, {
+					}), c === i.xb ? e && e.pennyPrice && t ? r.a.createElement(N, {
 						awardId: e.id,
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
@@ -441,7 +441,7 @@
 					}) : n && r.a.createElement(N, {
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						coinPackage: n
-					}) : null, c === i.vb && r.a.createElement(g.f, {
+					}) : null, c === i.wb && r.a.createElement(g.f, {
 						className: T.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: o || s,
@@ -537,7 +537,7 @@
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
-			}), e.selectedPayment === i.vb && r.a.createElement(l.a, {
+			}), e.selectedPayment === i.wb && r.a.createElement(l.a, {
 				nightmode: e.nightmode
 			}), r.a.createElement("div", {
 				className: T.a.checkoutFooter
@@ -545,9 +545,9 @@
 				className: T.a.purchaseTotal
 			}, n.fbt._("Total: {totalAmount}", [n.fbt._param("totalAmount", "$" + ((e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0) / 100).toLocaleString())], {
 				hk: "3dx6W8"
-			}))), e.selectedPayment === i.wb && e.paypalErrorMessage && r.a.createElement("div", {
+			}))), e.selectedPayment === i.xb && e.paypalErrorMessage && r.a.createElement("div", {
 				className: T.a.errorMessage
-			}, e.paypalErrorMessage), e.selectedPayment === i.vb && e.stripeErrorMessage && r.a.createElement("div", {
+			}, e.paypalErrorMessage), e.selectedPayment === i.wb && e.stripeErrorMessage && r.a.createElement("div", {
 				className: T.a.errorMessage
 			}, e.stripeErrorMessage), r.a.createElement("div", {
 				className: T.a.agreementLink
@@ -629,10 +629,10 @@
 				y = t("./src/reddit/models/User/index.ts"),
 				k = t("./src/reddit/selectors/gild.ts"),
 				j = t("./src/reddit/selectors/gold/giveAwards.ts"),
-				v = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				x = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				E = t("./src/reddit/selectors/platform.ts"),
-				w = t("./src/reddit/selectors/user.ts"),
+				x = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				E = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				w = t("./src/reddit/selectors/platform.ts"),
+				v = t("./src/reddit/selectors/user.ts"),
 				f = t("./src/lib/classNames/index.ts"),
 				_ = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				O = t("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -680,29 +680,29 @@
 				}).apply(this, arguments)
 			}
 			const F = Object(c.c)({
-					activePage: x.n,
+					activePage: E.n,
 					allowNavigationCallback: e => {
-						const a = Object(E.a)(e);
+						const a = Object(w.a)(e);
 						return null === a ? void 0 : a
 					},
-					coinBalance: w.d,
-					coinPackages: v.b,
-					correlationId: e => Object(x.o)(e) || Object(b.d)(b.a.GoldPayment, !1),
-					dealCoinPackages: v.d,
-					gildThingId: x.p,
+					coinBalance: v.d,
+					coinPackages: x.b,
+					correlationId: e => Object(E.o)(e) || Object(b.d)(b.a.GoldPayment, !1),
+					dealCoinPackages: x.d,
+					gildThingId: E.p,
 					isIframed: k.h,
-					nightmode: w.S,
-					savedCardsPending: x.t,
+					nightmode: v.S,
+					savedCardsPending: E.t,
 					selectedAward: j.a,
-					selectedPayment: x.a,
-					stripeErrorMessage: x.h,
-					stripeTokenPending: x.k,
-					paypalErrorMessage: x.b,
-					purchaseCatalogError: v.f,
-					purchaseCatalogPending: v.g,
-					purchasePackageId: x.q,
+					selectedPayment: E.a,
+					stripeErrorMessage: E.h,
+					stripeTokenPending: E.k,
+					paypalErrorMessage: E.b,
+					purchaseCatalogError: x.f,
+					purchaseCatalogPending: x.g,
+					purchasePackageId: E.q,
 					userName: e => {
-						const a = Object(w.i)(e);
+						const a = Object(v.i)(e);
 						return "u/".concat(Object(y.e)(a))
 					}
 				}),
@@ -788,12 +788,12 @@
 					} = this.props;
 					if (p) return i(p), l(), null;
 					const j = !!r,
-						v = [...t, ...n].filter(e => e.mobileId === h)[0];
+						x = [...t, ...n].filter(e => e.mobileId === h)[0];
 					return "paymentCompleted" === e ? s.a.createElement("div", null, s.a.createElement(A.a, {
 						isGild: j,
 						onCloseClick: l,
 						userName: k
-					})) : u || !v ? s.a.createElement("div", null, s.a.createElement(I, {
+					})) : u || !x ? s.a.createElement("div", null, s.a.createElement(I, {
 						award: b,
 						onClickClose: l
 					})) : s.a.createElement("div", null, "selectPayment" === e && s.a.createElement(B.a, {
@@ -804,7 +804,7 @@
 						onCompletePurchaseClick: o,
 						onPaymentSelected: d,
 						paypalErrorMessage: m,
-						purchasePackage: v,
+						purchasePackage: x,
 						savedCardsPending: g,
 						selectedAward: b,
 						selectedPayment: P,
@@ -890,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinPurchaseModal.4ee37490e3c466d4f93f.js.map
+//# sourceMappingURL=CoinPurchaseModal.2eccf4d13f2e79e6a9a4.js.map

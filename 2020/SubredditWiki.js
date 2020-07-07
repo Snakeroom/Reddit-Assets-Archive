@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.195d2e142c6dd06b5c75.js
-// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.9b20f09f4b4ddae1e493.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -349,7 +349,7 @@
 							const {
 								pageName: e
 							} = t;
-							w = e === o.Pb.WikiContributors, v = e === o.Pb.WikiBanned
+							w = e === o.Qb.WikiContributors, v = e === o.Qb.WikiBanned
 						}
 						const C = a(),
 							E = (k || r) && !K(C, c),
@@ -539,7 +539,7 @@
 				}, w = Object(i.a)(h.e), v = (e, t) => async (n, i, d) => {
 					const l = await ((e, t, n) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/friend"),
-						method: r.cb.POST,
+						method: r.db.POST,
 						data: {
 							api_type: "json",
 							name: n.username,
@@ -584,7 +584,7 @@
 				}, C = Object(i.a)(h.f), E = (e, t) => async (n, i, d) => {
 					const l = await ((e, t, n) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/unfriend"),
-						method: r.cb.POST,
+						method: r.db.POST,
 						data: {
 							api_type: "json",
 							id: n,
@@ -769,7 +769,7 @@
 				}, w = Object(i.a)(h.e), v = (e, t) => async (n, i, d) => {
 					const l = await ((e, t, n) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/friend"),
-						method: r.cb.POST,
+						method: r.db.POST,
 						data: {
 							api_type: "json",
 							name: n,
@@ -815,7 +815,7 @@
 				}, C = Object(i.a)(h.f), E = (e, t) => async (n, i, d) => {
 					const l = await ((e, t, n) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: "".concat(e.apiUrl, "/r/").concat(t, "/api/unfriend"),
-						method: r.cb.POST,
+						method: r.db.POST,
 						data: {
 							api_type: "json",
 							id: n,
@@ -1024,7 +1024,7 @@
 					return async (e, a, o) => {
 						const c = await (e => Object(d.a)(Object(l.a)(e.context, [u.a]), {
 							endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/wiki/settings/").concat(e.wikiPageName),
-							method: r.cb.POST,
+							method: r.db.POST,
 							data: {
 								permlevel: h[e.editPermissions],
 								listed: e.isVisible ? "on" : void 0
@@ -1054,7 +1054,7 @@
 					return async (e, a, c) => {
 						const m = await (e => Object(d.a)(Object(l.a)(e.context, [u.a]), {
 							endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/alloweditor/add"),
-							method: r.cb.POST,
+							method: r.db.POST,
 							data: {
 								page: e.wikiPageName,
 								username: e.username
@@ -1092,7 +1092,7 @@
 					return async (e, i, a) => {
 						const c = await (e => Object(d.a)(Object(l.a)(e.context, [u.a]), {
 							endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/alloweditor/del"),
-							method: r.cb.POST,
+							method: r.db.POST,
 							data: {
 								page: e.wikiPageName,
 								username: e.username
@@ -1157,7 +1157,7 @@
 				p = n("./src/reddit/helpers/wiki/wikiRevision.ts");
 			var b = (e, t) => Object(l.a)(Object(u.a)(e, [m.a]), {
 				endpoint: "".concat(e.apiUrl, "/r/").concat(t.subredditName, "/api/wiki/hide"),
-				method: r.cb.POST,
+				method: r.db.POST,
 				data: {
 					page: t.wikiPageName,
 					revision: Object(p.b)(t.revisionId)
@@ -1165,7 +1165,7 @@
 			});
 			var h = (e, t) => Object(l.a)(Object(u.a)(e, [m.a]), {
 				endpoint: "".concat(e.apiUrl, "/r/").concat(t.subredditName, "/api/wiki/revert"),
-				method: r.cb.POST,
+				method: r.db.POST,
 				data: {
 					page: t.wikiPageName,
 					revision: Object(p.b)(t.revisionId)
@@ -3695,7 +3695,7 @@
 				fbt: M
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const D = Object(d.t)(),
-				W = [L.Ab.SUBREDDIT, L.Ab.COMMENTS, L.Ab.COLLECTION_COMMENTS],
+				W = [L.Bb.SUBREDDIT, L.Bb.COMMENTS, L.Bb.COLLECTION_COMMENTS],
 				B = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && W.indexOf(t.pageLayer.meta.name) > -1
@@ -3778,7 +3778,7 @@
 					homeUrl: t,
 					isTopBannerVariant: n,
 					pageLayer: s
-				} = e, i = !!s && !!s.meta && s.meta.name === L.Ab.SUBREDDIT_WIKI, a = "wiki/".concat(X.i), o = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
+				} = e, i = !!s && !!s.meta && s.meta.name === L.Bb.SUBREDDIT_WIKI, a = "wiki/".concat(X.i), o = t.endsWith("/") ? t + a : "".concat(t, "/").concat(a);
 				return r.a.createElement(O, {
 					isActive: i,
 					isTopBannerVariant: n,
@@ -4187,7 +4187,7 @@
 				He = n.n(Ue);
 			const Ve = 10,
 				Ke = Object(c.a)((e, t) => t.subredditName, e => Object(re.a)(e, l.O.TOP, {
-					t: l.Rb.WEEK
+					t: l.Sb.WEEK
 				})),
 				Ge = Object(c.c)({
 					discoveryUnit: e => Object(Ae.c)(e, {
@@ -4267,7 +4267,7 @@
 						loadMorePosts: () => e(Object(ie.r)({
 							sort: l.O.TOP,
 							subredditName: n,
-							t: l.Rb.WEEK
+							t: l.Sb.WEEK
 						}))
 					}
 				})(Object(z.c)(ze)),
@@ -7190,4 +7190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.195d2e142c6dd06b5c75.js.map
+//# sourceMappingURL=SubredditWiki.9b20f09f4b4ddae1e493.js.map

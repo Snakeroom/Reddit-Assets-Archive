@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.bb2e1c90522652265470.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.ad98baa389c500c86fda.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -79,7 +79,7 @@
 					correlation_id: c
 				};
 				return Object(O.a)(Object(f.a)(e, [k.a]), {
-					method: b.cb.POST,
+					method: b.db.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
 					data: a
 				}).then(e => e.ok ? Object.assign({}, e) : e.error && e.error.type ? e : Object.assign({}, e, {
@@ -796,4 +796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.bb2e1c90522652265470.js.map
+//# sourceMappingURL=GivePremiumModal.ad98baa389c500c86fda.js.map

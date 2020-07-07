@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.32c2cfc3c07a0cbc4c3b.js
-// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.839eb9b4a8812985025a.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -499,13 +499,13 @@
 				O = a("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				G = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
 				S = a("./src/reddit/components/MarketingPageFooter/index.tsx"),
-				A = a("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
-				F = a("./src/reddit/controls/Button/index.tsx"),
+				F = a("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
+				A = a("./src/reddit/controls/Button/index.tsx"),
 				L = a("./src/reddit/models/Gold/Premium/index.ts"),
 				R = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				T = a("./src/reddit/selectors/goldPurchaseModals.ts"),
-				z = a("./src/reddit/selectors/user.ts"),
-				B = e => i.a.createElement("svg", {
+				B = a("./src/reddit/selectors/user.ts"),
+				z = e => i.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 558 98",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -575,7 +575,7 @@
 						className: Object(D.a)(J.a.miscItem, J.a.renewalSubtext)
 					}, s.fbt._("Subscription automatically renews monthly", null, {
 						hk: "21TCR6"
-					})), i.a.createElement(F.n, {
+					})), i.a.createElement(A.n, {
 						className: J.a.redeemCodeLink,
 						onClick: this.onClaimGoldClick
 					}, s.fbt._("Redeem a gift code", null, {
@@ -594,7 +594,7 @@
 						}),
 						onChange: c,
 						value: t
-					}), i.a.createElement(F.f, {
+					}), i.a.createElement(A.f, {
 						className: J.a.redeemButton
 					}, s.fbt._("Redeem", null, {
 						hk: "1d2cH2"
@@ -637,7 +637,7 @@
 						className: J.a.checkmark
 					}), s.fbt._("{monthly-coins} Coins every month", [s.fbt._param("monthly-coins", d)], {
 						hk: "CngQz"
-					}))), i.a.createElement(F.e, {
+					}))), i.a.createElement(A.e, {
 						className: J.a.premiumButton,
 						onClick: t ? n : a
 					}, t ? s.fbt._("Manage", null, {
@@ -649,9 +649,9 @@
 				Y = Object(o.c)({
 					giftCode: y.a,
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
-					isGold: z.p,
-					isPremiumSubscriber: z.q,
-					isLoggedIn: z.H,
+					isGold: B.p,
+					isPremiumSubscriber: B.q,
+					isLoggedIn: B.H,
 					premiumPackages: R.e,
 					purchaseCatalogPending: R.g,
 					shouldShowPremiumPurchaseModal: T.m,
@@ -686,7 +686,7 @@
 						sendEvent: n
 					} = this.props;
 					e.length || t || a(this.correlationId);
-					const s = m.Ab.PREMIUM;
+					const s = m.Bb.PREMIUM;
 					_.c.has(s) && n(Object(E.j)(w.TimerType.InApp, _.c.end(s))), Object(u.a)()
 				}
 				render() {
@@ -712,13 +712,13 @@
 						className: x.a.heroInner
 					}, i.a.createElement("h1", {
 						className: x.a.heroTitle
-					}, i.a.createElement(B, {
+					}, i.a.createElement(z, {
 						className: x.a.heroLogo
 					})), i.a.createElement("p", {
 						className: x.a.heroDescription
 					}, s.fbt._("Reddit Premium gives you an ad-free experience, special benefits, and directly supports Reddit. The more Reddit is user-supported, the freer we are to make Reddit the best it can be.", null, {
 						hk: "3BejFp"
-					})), i.a.createElement(F.e, {
+					})), i.a.createElement(A.e, {
 						className: x.a.heroCTA,
 						onClick: this.onClickGetPremium
 					}, a ? s.fbt._("Manage Premium", null, {
@@ -789,7 +789,7 @@
 					}, e.answer()))))
 				}
 				renderModal() {
-					return this.props.shouldShowPremiumPurchaseModal && i.a.createElement(A.a, null)
+					return this.props.shouldShowPremiumPurchaseModal && i.a.createElement(F.a, null)
 				}
 				componentWillUnmount() {
 					Object(p.b)(p.a.GoldPayment)
@@ -799,4 +799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.32c2cfc3c07a0cbc4c3b.js.map
+//# sourceMappingURL=Premium.839eb9b4a8812985025a.js.map

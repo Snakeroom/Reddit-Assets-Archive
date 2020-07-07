@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.35f2ac94502dc8bd1705.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.6895a300f22fb5cb8fae.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -717,7 +717,7 @@
 				const {
 					className: t,
 					submissionType: n
-				} = e, o = n === d.Ib.CROSSPOST;
+				} = e, o = n === d.Jb.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(f, null, r.a.createElement(p, null), o ? s.fbt._("Crossposting to Reddit", null, {
@@ -2075,4 +2075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.35f2ac94502dc8bd1705.js.map
+//# sourceMappingURL=PostDraft.6895a300f22fb5cb8fae.js.map

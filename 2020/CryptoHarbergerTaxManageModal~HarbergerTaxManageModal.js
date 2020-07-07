@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.3915703bb61a5325a3a0.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.3973f3a8841549fffb60.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -551,7 +551,7 @@
 				d = n("./src/reddit/constants/headers.ts");
 			const c = async (e, t, n, c, i) => Object(a.a)(Object(o.a)(e, [d.a]), {
 				endpoint: "".concat(r.a.metaUrl, "/communities/").concat(t, "/upload-lease"),
-				method: s.cb.POST,
+				method: s.db.POST,
 				data: {
 					filepath: n,
 					imagetype: c,
@@ -808,4 +808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.3915703bb61a5325a3a0.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.3973f3a8841549fffb60.js.map

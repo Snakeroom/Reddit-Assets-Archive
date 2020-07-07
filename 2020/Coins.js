@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.1d12fadf821995129448.js
-// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.4fff32347bc57759eea5.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -552,9 +552,9 @@
 				M = t("./src/reddit/models/Gold/Coins/index.ts"),
 				A = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				D = t("./src/reddit/selectors/user.ts"),
-				G = t("./src/reddit/components/CoinPurchasePackage/index.m.less"),
-				S = t.n(G),
-				B = t("./src/lib/classNames/index.ts"),
+				B = t("./src/reddit/components/CoinPurchasePackage/index.m.less"),
+				G = t.n(B),
+				S = t("./src/lib/classNames/index.ts"),
 				V = t("./src/reddit/controls/Button/index.tsx"),
 				z = t("./src/reddit/icons/svgs/Coin/index.tsx"),
 				F = e => l.a.createElement("svg", {
@@ -581,48 +581,48 @@
 						pennies: h
 					} = t, g = "$".concat(h / 100), f = m.toLocaleString(), b = s ? u.marketing["4x"].url : u.marketing["2x"].url, k = o > 0 && "".concat(o.toLocaleString(), "%"), E = n.fbt._("bonus", null, {
 						hk: "L8mcp"
-					}), N = s ? S.a.large : "", v = r !== m, _ = i !== h;
+					}), N = s ? G.a.large : "", v = r !== m, _ = i !== h;
 					return l.a.createElement("div", {
-						className: Object(B.a)(a, S.a.coinPurchasePackage, N)
+						className: Object(S.a)(a, G.a.coinPurchasePackage, N)
 					}, l.a.createElement("div", {
-						className: Object(B.a)(N, S.a.imageContainer)
+						className: Object(S.a)(N, G.a.imageContainer)
 					}, l.a.createElement("img", {
 						src: b
 					}), p && l.a.createElement("div", {
-						className: S.a.badge
+						className: G.a.badge
 					}, p), k && l.a.createElement("div", {
-						className: Object(B.a)(S.a.stamp, N)
+						className: Object(S.a)(G.a.stamp, N)
 					}, l.a.createElement(F, {
-						className: S.a.stampIcon
+						className: G.a.stampIcon
 					}), l.a.createElement("div", {
-						className: Object(B.a)(S.a.stampValue, N)
+						className: Object(S.a)(G.a.stampValue, N)
 					}, k), l.a.createElement("div", {
-						className: Object(B.a)(S.a.stampText, N)
+						className: Object(S.a)(G.a.stampText, N)
 					}, E))), l.a.createElement("div", {
-						className: Object(B.a)(S.a.contentContainer, N)
+						className: Object(S.a)(G.a.contentContainer, N)
 					}, l.a.createElement("div", {
-						className: Object(B.a)(S.a.price, N)
+						className: Object(S.a)(G.a.price, N)
 					}, l.a.createElement(z.a, {
-						className: S.a.priceCoinIcon
+						className: G.a.priceCoinIcon
 					}), l.a.createElement("div", null, l.a.createElement("div", {
-						className: S.a.priceValue
+						className: G.a.priceValue
 					}, f), v ? l.a.createElement("div", {
-						className: Object(B.a)(S.a.priceCurrency, S.a.crossout)
+						className: Object(S.a)(G.a.priceCurrency, G.a.crossout)
 					}, n.fbt._("{Non-sale number of coins} Coins", [n.fbt._param("Non-sale number of coins", r.toLocaleString())], {
 						hk: "26szgy"
 					})) : l.a.createElement("div", {
-						className: S.a.priceCurrency
+						className: G.a.priceCurrency
 					}, n.fbt._("Coins", null, {
 						hk: "PSM7c"
 					})))), l.a.createElement("div", {
-						className: Object(B.a)(S.a.description, N)
+						className: Object(S.a)(G.a.description, N)
 					}, d), l.a.createElement("div", {
-						className: S.a.ctaContainer
+						className: G.a.ctaContainer
 					}, l.a.createElement(V.f, {
-						className: Object(B.a)(S.a.cta, N),
+						className: Object(S.a)(G.a.cta, N),
 						onClick: c
 					}, g), _ && l.a.createElement("div", {
-						className: S.a.priceCrossout
+						className: G.a.priceCrossout
 					}, "$".concat(i / 100)))))
 				},
 				R = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./src/reddit/helpers/styles/mixins/loading.ts")),
@@ -645,7 +645,7 @@
 					const n = t ? H.a.large : "",
 						c = Object(R.b)(s);
 					return l.a.createElement("div", {
-						className: Object(B.a)(c, H.a.packagePlaceholder, n, a)
+						className: Object(S.a)(c, H.a.packagePlaceholder, n, a)
 					})
 				},
 				X = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
@@ -667,7 +667,7 @@
 					periodicalCoins: o
 				} = r, m = "$".concat((i / 100).toLocaleString()), d = o.toLocaleString(), p = "".concat(s.a.assetPath, "/img/gold/coins-premium-g.png");
 				return l.a.createElement("div", {
-					className: Object(B.a)(K.a.premiumBanner, a)
+					className: Object(S.a)(K.a.premiumBanner, a)
 				}, l.a.createElement("img", {
 					className: K.a.premiumCrest,
 					src: p
@@ -738,9 +738,9 @@
 					}, l.a.createElement("div", {
 						className: ce.a.heroInner
 					}, l.a.createElement("h1", {
-						className: Object(B.a)(ce.a.heroTitle, ce.a.activeSale)
+						className: Object(S.a)(ce.a.heroTitle, ce.a.activeSale)
 					}, n), l.a.createElement("p", {
-						className: Object(B.a)(ce.a.heroDescription, ce.a.activeSale)
+						className: Object(S.a)(ce.a.heroDescription, ce.a.activeSale)
 					}, s), l.a.createElement(se.a, {
 						className: ce.a.expiresText,
 						expirationDate: new Date(1e3 * e)
@@ -823,7 +823,7 @@
 						requestPurchaseCatalog: t
 					} = this.props;
 					e.length || a || t(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const s = p.Ab.COINS;
+					const s = p.Bb.COINS;
 					C.c.has(s) && this.props.sendEvent(Object(_.a)(x.TimerType.InApp, C.c.end(s))), Object(u.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
@@ -979,4 +979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.1d12fadf821995129448.js.map
+//# sourceMappingURL=Coins.4fff32347bc57759eea5.js.map

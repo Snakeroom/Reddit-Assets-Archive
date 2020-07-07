@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.df4cb59341e19ec03578.js
-// Retrieved at 7/6/2020, 12:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.fb3926b4bf482353b483.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -316,7 +316,7 @@
 					userId: t
 				} = e, {
 					processingAvatarImageUrl: o
-				} = n.a, s = (e => e.replace(c.xb.Account + "_", ""))(t), {
+				} = n.a, s = (e => e.replace(c.yb.Account + "_", ""))(t), {
 					avatar: r,
 					color: a
 				} = (e => {
@@ -2549,4 +2549,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.df4cb59341e19ec03578.js.map
+//# sourceMappingURL=ChatPost.fb3926b4bf482353b483.js.map

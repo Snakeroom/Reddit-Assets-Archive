@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.49f3d4c1628a1fbdae73.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.54f586fdc574796a7083.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -109,12 +109,12 @@
 				y = t("./node_modules/react-redux/es/index.js"),
 				k = t("./node_modules/reselect/es/index.js"),
 				v = t("./src/higherOrderComponents/makeAsync.tsx"),
-				E = t("./src/reddit/helpers/loadThirdPartyScript.ts"),
-				x = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				x = t("./src/reddit/helpers/loadThirdPartyScript.ts"),
+				E = t("./src/reddit/selectors/goldPurchaseModals.ts"),
 				w = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				_ = t("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts");
 			const f = Object(k.c)({
-				isGild: e => !!Object(x.p)(e)
+				isGild: e => !!Object(E.p)(e)
 			});
 			class N extends r.a.Component {
 				constructor() {
@@ -165,7 +165,7 @@
 				}
 			}))(N);
 			var M = Object(v.a)({
-					getComponent: () => Object(E.c)().then(() => j),
+					getComponent: () => Object(x.c)().then(() => j),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -202,7 +202,7 @@
 					}, r.a.createElement(u.a, {
 						className: T.a.balance,
 						coinBalance: a
-					}), c === d.wb ? e && e.pennyPrice && t ? r.a.createElement(M, {
+					}), c === d.xb ? e && e.pennyPrice && t ? r.a.createElement(M, {
 						awardId: e.id,
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						pennies: e.pennyPrice,
@@ -210,7 +210,7 @@
 					}) : s && r.a.createElement(M, {
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						coinPackage: s
-					}) : null, c === d.vb && r.a.createElement(g.f, {
+					}) : null, c === d.wb && r.a.createElement(g.f, {
 						className: T.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: o || n,
@@ -306,7 +306,7 @@
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
-			}), e.selectedPayment === d.vb && r.a.createElement(l.a, {
+			}), e.selectedPayment === d.wb && r.a.createElement(l.a, {
 				nightmode: e.nightmode
 			}), r.a.createElement("div", {
 				className: T.a.checkoutFooter
@@ -314,9 +314,9 @@
 				className: T.a.purchaseTotal
 			}, s.fbt._("Total: {totalAmount}", [s.fbt._param("totalAmount", "$" + ((e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0) / 100).toLocaleString())], {
 				hk: "3dx6W8"
-			}))), e.selectedPayment === d.wb && e.paypalErrorMessage && r.a.createElement("div", {
+			}))), e.selectedPayment === d.xb && e.paypalErrorMessage && r.a.createElement("div", {
 				className: T.a.errorMessage
-			}, e.paypalErrorMessage), e.selectedPayment === d.vb && e.stripeErrorMessage && r.a.createElement("div", {
+			}, e.paypalErrorMessage), e.selectedPayment === d.wb && e.stripeErrorMessage && r.a.createElement("div", {
 				className: T.a.errorMessage
 			}, e.stripeErrorMessage), r.a.createElement("div", {
 				className: T.a.agreementLink
@@ -429,8 +429,8 @@
 				y = t("./src/reddit/selectors/gold/giveAwards.ts"),
 				k = t("./src/reddit/selectors/goldPurchaseModals.ts"),
 				v = t("./src/reddit/selectors/platform.ts"),
-				E = t("./src/reddit/selectors/user.ts"),
-				x = t("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
+				x = t("./src/reddit/selectors/user.ts"),
+				E = t("./src/reddit/components/CoinPurchaseModal/PaymentCompletePage.tsx"),
 				w = t("./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx"),
 				_ = t("./src/reddit/components/PennyPurchaseModal/index.m.less"),
 				f = t.n(_);
@@ -450,10 +450,10 @@
 						const a = Object(v.a)(e);
 						return null === a ? void 0 : a
 					},
-					coinBalance: E.d,
+					coinBalance: x.d,
 					gildThingId: k.p,
 					isIframed: b.h,
-					nightmode: E.S,
+					nightmode: x.S,
 					savedCardsPending: k.t,
 					selectedAward: y.a,
 					selectedPayment: k.a,
@@ -461,7 +461,7 @@
 					stripeTokenPending: k.k,
 					paypalErrorMessage: k.b,
 					userName: e => {
-						const a = Object(E.i)(e);
+						const a = Object(x.i)(e);
 						return "u/".concat(Object(C.e)(a))
 					}
 				}),
@@ -541,7 +541,7 @@
 						stripeErrorMessage: p,
 						stripeTokenPending: u,
 						userName: g
-					}), "paymentCompleted" === e && n.a.createElement(x.a, {
+					}), "paymentCompleted" === e && n.a.createElement(E.a, {
 						gildThingId: s,
 						isGild: !0,
 						onCloseClick: i,
@@ -583,4 +583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.49f3d4c1628a1fbdae73.js.map
+//# sourceMappingURL=PennyPurchaseModal.54f586fdc574796a7083.js.map

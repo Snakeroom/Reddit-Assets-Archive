@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.acf5fd8f74d6a236d99e.js
-// Retrieved at 7/6/2020, 2:00:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.af17df7f6080adc51dfe.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -869,15 +869,15 @@
 			}(s || (s = {}));
 			var d = n("./src/lib/constants/index.ts"),
 				l = n("./src/reddit/helpers/postCollection.ts");
-			const u = [d.Ab.COMMENTS, d.Ab.COLLECTION_COMMENTS],
+			const u = [d.Bb.COMMENTS, d.Bb.COLLECTION_COMMENTS],
 				m = (e, t) => {
 					if (!e) return [];
 					const n = u.includes(e),
-						s = e === d.Ab.COLLECTION_COMMENTS || t && Object(l.a)(t),
+						s = e === d.Bb.COLLECTION_COMMENTS || t && Object(l.a)(t),
 						o = d.N.has(e),
-						a = d.rb.has(e),
-						i = e === d.Ab.SUBREDDIT,
-						c = e === d.Ab.TOPIC;
+						a = d.sb.has(e),
+						i = e === d.Bb.SUBREDDIT,
+						c = e === d.Bb.TOPIC;
 					let m, p, f;
 					return o && !i || a ? m = r.HeaderSelector : s ? m = r.Collection : n ? m = r.PostComments : c && (m = r.TopicHeader), (o || a || s || n) && (p = r.Widget), (o || n) && (f = r.PostItem), [m, p, f]
 				};
@@ -1021,7 +1021,7 @@
 				C = y.a.div("BackupImage", h.a),
 				_ = Object(l.t)(),
 				E = Object(i.c)({
-					isSubredditImageAltTextVariant: f.e
+					isSubredditImageAltTextVariant: f.c
 				}),
 				S = Object(a.b)(E);
 			t.b = _(S(e => {
@@ -2066,7 +2066,7 @@
 			})), n.d(t, "j", (function() {
 				return P
 			})), n.d(t, "o", (function() {
-				return B
+				return T
 			})), n.d(t, "q", (function() {
 				return L
 			})), n.d(t, "d", (function() {
@@ -2099,7 +2099,7 @@
 						name: m
 					} = u.meta;
 					if (m) switch (m) {
-						case r.Ab.COMMENTS: {
+						case r.Bb.COMMENTS: {
 							const {
 								partialCommentId: r,
 								partialPostId: s
@@ -2112,10 +2112,10 @@
 							Object(y.a)(C(u, c, m, n, i, p)(t));
 							break
 						}
-						case r.Ab.INDEX:
-						case r.Ab.LISTING:
-						case r.Ab.MULTIREDDIT:
-						case r.Ab.SUBREDDIT: {
+						case r.Bb.INDEX:
+						case r.Bb.LISTING:
+						case r.Bb.MULTIREDDIT:
+						case r.Bb.SUBREDDIT: {
 							const s = Object(a.c)(e, t);
 							if (!s.listingKey) return;
 							const {
@@ -2127,7 +2127,7 @@
 							Object(y.a)(g(s.listingKey, d, n, i, l)(t));
 							break
 						}
-						case r.Ab.TOPIC: {
+						case r.Bb.TOPIC: {
 							const s = Object(a.c)(e, t);
 							if (!s.listingKey) return;
 							const {
@@ -2138,48 +2138,48 @@
 							Object(y.a)(g(s.listingKey, d, n, i)(t));
 							break
 						}
-						case r.Ab.PROFILE_OVERVIEW: {
+						case r.Bb.PROFILE_OVERVIEW: {
 							const s = Object(a.d)(e, t);
 							if (!s) return;
 							const {
 								params: o,
 								queryParams: c
 							} = e.match, {
-								sort: d = r.tb
+								sort: d = r.ub
 							} = o, l = c.t;
 							Object(y.a)(x(s, d, n, i, l)(t));
 							break
 						}
-						case r.Ab.PROFILE_POSTS: {
+						case r.Bb.PROFILE_POSTS: {
 							const s = Object(a.d)(e, t);
 							if (!s) return;
 							const {
 								queryParams: o
 							} = e.match, {
-								sort: c = r.tb,
-								t: d = r.Sb
+								sort: c = r.ub,
+								t: d = r.Tb
 							} = o;
 							Object(y.a)(O(s, c, n, i, d)(t));
 							break
 						}
-						case r.Ab.PROFILE_COMMENTS: {
+						case r.Bb.PROFILE_COMMENTS: {
 							const s = Object(a.d)(e, t);
 							if (!s) return;
 							const {
 								queryParams: o
 							} = e.match, {
-								sort: c = r.tb,
-								t: d = r.Sb
+								sort: c = r.ub,
+								t: d = r.Tb
 							} = o;
 							Object(y.a)(j(s, c, n, i, d)(t));
 							break
 						}
-						case r.Ab.SETTINGS:
-							e.match.params.page === r.Nb.Profile ? Object(c.j)(t) : Object(y.a)(T(n, i)(t));
+						case r.Bb.SETTINGS:
+							e.match.params.page === r.Ob.Profile ? Object(c.j)(t) : Object(y.a)(B(n, i)(t));
 							break;
-						case r.Ab.POST_CREATION:
+						case r.Bb.POST_CREATION:
 							break;
-						case r.Ab.POST_DRAFT: {
+						case r.Bb.POST_DRAFT: {
 							const {
 								draftId: r
 							} = e.match.params, o = Object(s.a)(e.match.params);
@@ -2187,16 +2187,16 @@
 							N(t, o, r, n, i);
 							break
 						}
-						case r.Ab.SUBREDDIT_WIKI:
+						case r.Bb.SUBREDDIT_WIKI:
 							Object(y.a)(U(n, i)(t));
 							break;
-						case r.Ab.COINS:
+						case r.Bb.COINS:
 							Object(y.a)(I(n, i)(t));
 							break;
-						case r.Ab.PREMIUM:
+						case r.Bb.PREMIUM:
 							Object(y.a)(P(n, i)(t));
 							break;
-						case r.Ab.APPEAL:
+						case r.Bb.APPEAL:
 							Object(y.a)(k(n, i)(t))
 					}
 				},
@@ -2425,14 +2425,14 @@
 				}, h.defaults(n), {
 					timer: h.timer(e, t)
 				}),
-				T = (e, t) => n => Object.assign({
+				B = (e, t) => n => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, h.defaults(n), {
 					timer: h.timer(e, t)
 				}),
-				B = () => e => Object.assign({
+				T = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2466,13 +2466,13 @@
 				}, h.defaults(e)),
 				F = (e, t, n, s, o) => a => {
 					let i = !0;
-					if (t.type.indexOf(r.Mb.Posts) > -1) {
+					if (t.type.indexOf(r.Nb.Posts) > -1) {
 						const {
 							api: t
 						} = a.listings.listingOrder;
 						i = i && !t.error[e] && !t.pending[e]
 					}
-					if (t.type.indexOf(r.Mb.Subreddits) > -1 || t.type.indexOf(r.Mb.Users) > -1) {
+					if (t.type.indexOf(r.Nb.Subreddits) > -1 || t.type.indexOf(r.Nb.Users) > -1) {
 						const {
 							api: t
 						} = a.listings.postOrder;
@@ -3018,4 +3018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.acf5fd8f74d6a236d99e.js.map
+//# sourceMappingURL=ModListing~Reddit.af17df7f6080adc51dfe.js.map

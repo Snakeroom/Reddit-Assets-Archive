@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.306af7b3df026fb89fc0.js
-// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.fc524811436f6a852e63.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -3912,7 +3912,7 @@
 				fbt: B
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const M = Object(c.t)(),
-				F = [L.Ab.SUBREDDIT, L.Ab.COMMENTS, L.Ab.COLLECTION_COMMENTS],
+				F = [L.Bb.SUBREDDIT, L.Bb.COMMENTS, L.Bb.COLLECTION_COMMENTS],
 				D = Object(i.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && F.indexOf(t.pageLayer.meta.name) > -1
@@ -3995,7 +3995,7 @@
 					homeUrl: t,
 					isTopBannerVariant: n,
 					pageLayer: s
-				} = e, a = !!s && !!s.meta && s.meta.name === L.Ab.SUBREDDIT_WIKI, i = "wiki/".concat(Y.i), o = t.endsWith("/") ? t + i : "".concat(t, "/").concat(i);
+				} = e, a = !!s && !!s.meta && s.meta.name === L.Bb.SUBREDDIT_WIKI, i = "wiki/".concat(Y.i), o = t.endsWith("/") ? t + i : "".concat(t, "/").concat(i);
 				return r.a.createElement(E, {
 					isActive: a,
 					isTopBannerVariant: n,
@@ -4404,7 +4404,7 @@
 				He = n.n(Ue);
 			const Ve = 10,
 				Ge = Object(d.a)((e, t) => t.subredditName, e => Object(re.a)(e, l.O.TOP, {
-					t: l.Rb.WEEK
+					t: l.Sb.WEEK
 				})),
 				Ke = Object(d.c)({
 					discoveryUnit: e => Object(We.c)(e, {
@@ -4484,7 +4484,7 @@
 						loadMorePosts: () => e(Object(ae.r)({
 							sort: l.O.TOP,
 							subredditName: n,
-							t: l.Rb.WEEK
+							t: l.Sb.WEEK
 						}))
 					}
 				})(Object(z.c)(ze)),
@@ -6665,7 +6665,7 @@
 				isInTrendingEntrypointExperiment: xe.a
 			}), He = e => {
 				const t = se.u in e && e[se.u].toUpperCase();
-				if ("string" == typeof t && t in O.Rb) return O.Rb[t]
+				if ("string" == typeof t && t in O.Sb) return O.Sb[t]
 			}, Ve = Object(C.a)((e, t) => {
 				const {
 					sort: n,
@@ -6808,7 +6808,7 @@
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
 				})),
-				onLoadMoreSearchResults: () => e(Object(P.g)([O.Mb.Posts])),
+				onLoadMoreSearchResults: () => e(Object(P.g)([O.Nb.Posts])),
 				refreshFeed: () => e(S.s({
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
@@ -7019,9 +7019,9 @@
 									subredditId: C.id
 								})
 							}
-						}), !a && he && N !== O.Rb.WEEK && o === re.g.Large) {
+						}), !a && he && N !== O.Sb.WEEK && o === re.g.Large) {
 						const e = Object(_.a)(k, O.O.TOP, {
-							t: O.Rb.WEEK
+							t: O.Sb.WEEK
 						});
 						Ce[Te] = {
 							estHeight: 0,
@@ -7481,11 +7481,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.kc.Enabled === Object(r.c)(e, {
+			const a = e => s.ac.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.fc
+				experimentName: s.Vb
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.306af7b3df026fb89fc0.js.map
+//# sourceMappingURL=Subreddit.fc524811436f6a852e63.js.map

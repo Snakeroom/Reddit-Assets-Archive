@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.a5299677e196595fdb34.js
-// Retrieved at 6/30/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.fef448421349bee253c2.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -9,7 +9,7 @@
 			})), o.d(e, "e", (function() {
 				return U
 			})), o.d(e, "g", (function() {
-				return A
+				return K
 			})), o.d(e, "a", (function() {
 				return R
 			})), o.d(e, "c", (function() {
@@ -35,7 +35,7 @@
 				b = o("./src/reddit/constants/headers.ts");
 			var O = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/add_post_to_collection.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					link_fullname: o
@@ -43,7 +43,7 @@
 			});
 			var m = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/create_collection.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					title: e,
 					sr_fullname: o
@@ -51,7 +51,7 @@
 			});
 			var j = (t, e) => Object(u.a)(Object(p.a)(t, [b.a]), {
 					endpoint: "".concat(t.apiUrl, "/api/v1/collections/delete_collection.json"),
-					method: a.cb.POST,
+					method: a.db.POST,
 					data: {
 						collection_id: e
 					}
@@ -59,11 +59,11 @@
 				f = o("./src/config.ts");
 			var _ = (t, e) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(f.a.gatewayUrl, "/desktopapi/v1/subreddit_collections/").concat(e),
-				method: a.cb.GET
+				method: a.db.GET
 			});
 			var C = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/remove_post_in_collection.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					link_fullname: o
@@ -71,7 +71,7 @@
 			});
 			var I = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_title.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					title: o
@@ -79,7 +79,7 @@
 			});
 			var w = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/reorder_collection.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					link_ids: o.join(",")
@@ -87,7 +87,7 @@
 			});
 			var k = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 				endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_description.json"),
-				method: a.cb.POST,
+				method: a.db.POST,
 				data: {
 					collection_id: e,
 					description: o
@@ -95,7 +95,7 @@
 			});
 			var v = (t, e, o) => Object(u.a)(Object(p.a)(t, [b.a]), {
 					endpoint: "".concat(t.apiUrl, "/api/v1/collections/update_collection_display_layout.json"),
-					method: a.cb.POST,
+					method: a.db.POST,
 					data: {
 						collection_id: e,
 						display_layout: o
@@ -154,7 +154,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, K = Object(i.a)(l.g), A = (t, e, o) => async (c, s, i) => {
+				}, F = Object(i.a)(l.g), K = (t, e, o) => async (c, s, i) => {
 					let {
 						apiContext: l
 					} = i;
@@ -168,7 +168,7 @@
 								collectionId: t
 							}),
 							u = (a && a.postIds && a.postIds.indexOf(e) || -1) - 1;
-						if (c(K({
+						if (c(F({
 								collectionId: t,
 								postId: e
 							})), o && u >= 0) {
@@ -198,16 +198,16 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, B = Object(i.a)(l.a), F = Object(i.a)(l.t), R = (t, e) => async (o, c, s) => {
+				}, A = Object(i.a)(l.a), B = Object(i.a)(l.t), R = (t, e) => async (o, c, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const l = c();
 					if ((await O(i(), t, e)).ok) {
-						o(B({
+						o(A({
 							collectionId: t,
 							postId: e
-						})), o(F({
+						})), o(B({
 							collectionId: t,
 							postId: e
 						}));
@@ -701,12 +701,12 @@
 				k = t => {
 					return {
 						postScheduled: !!t,
-						submitScheduledTime: t && t.submitTime === r.i.AtEventTime ? Object(i.f)(t.startDate).getTime() / c.Eb : void 0
+						submitScheduledTime: t && t.submitTime === r.i.AtEventTime ? Object(i.f)(t.startDate).getTime() / c.Fb : void 0
 					}
 				},
 				v = t => {
-					const e = Object(i.f)(t.startDate).getTime() / c.Eb,
-						o = Object(i.f)(t.endDate).getTime() / c.Eb;
+					const e = Object(i.f)(t.startDate).getTime() / c.Fb,
+						o = Object(i.f)(t.endDate).getTime() / c.Fb;
 					return {
 						eventStartTimestamp: e,
 						eventEndTimestamp: o,
@@ -732,4 +732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.a5299677e196595fdb34.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.fef448421349bee253c2.js.map

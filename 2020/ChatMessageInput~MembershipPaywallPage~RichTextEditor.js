@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.21db917816b9a8402fd6.js
-// Retrieved at 6/30/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.53bbcacb1ca2cfbec5e8.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -304,7 +304,7 @@
 								const t = await Object(f.a)(a);
 								l.width = t.width, l.height = t.height
 							} else if (c.startsWith("video/")) {
-								if (e.size > i.Y) return I(i.Xb);
+								if (e.size > i.Y) return I(i.Yb);
 								let t;
 								try {
 									t = await Object(b.h)(a, !0)
@@ -353,7 +353,7 @@
 						const x = t.name,
 							C = await (async (t, e, n) => Object(p.a)(Object(h.a)(t, [g.a]), {
 								endpoint: "".concat(t.apiUrl, "/api/media/asset.json"),
-								method: i.cb.POST,
+								method: i.db.POST,
 								data: {
 									filepath: e,
 									mimetype: n
@@ -979,9 +979,9 @@
 			})), n.d(e, "k", (function() {
 				return G
 			})), n.d(e, "d", (function() {
-				return Q
-			})), n.d(e, "l", (function() {
 				return Y
+			})), n.d(e, "l", (function() {
+				return Q
 			})), n.d(e, "h", (function() {
 				return Z
 			})), n.d(e, "a", (function() {
@@ -1128,7 +1128,7 @@
 						hk: "sqKFn"
 					})
 				},
-				Q = {
+				Y = {
 					type: "block",
 					name: "heading",
 					Icon: K,
@@ -1137,7 +1137,7 @@
 						hk: "4jnBPs"
 					})
 				},
-				Y = {
+				Q = {
 					type: "block",
 					name: "unordered_list",
 					Icon: U,
@@ -2687,8 +2687,8 @@
 				W = n("./src/reddit/components/RichTextEditor/table/helpers.ts"),
 				q = n("./node_modules/lodash/last.js"),
 				G = n.n(q),
-				Q = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
-				Y = n("./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts"),
+				Y = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
+				Q = n("./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts"),
 				Z = n("./node_modules/lodash/find.js"),
 				J = n.n(Z);
 			var X = (t, e) => {
@@ -2739,7 +2739,7 @@
 					focusOffset: v.getLength(),
 					anchorOffset: v.getLength()
 				});
-				let R = o.EditorState.push(t, k, Q.e);
+				let R = o.EditorState.push(t, k, Y.e);
 				return R = o.EditorState.forceSelection(R, j)
 			};
 			var $ = function(t) {
@@ -2760,7 +2760,7 @@
 					l[i.getKey()] = Object(W.j)(i, [t, e]), d = n
 				} else {
 					if (c.blocks[0].getKey() === n.getStartKey() && G()(c.blocks).getKey() === n.getEndKey()) return X(t, "rows");
-					Object(Y.a)(s, n, (t, e) => {
+					Object(Q.a)(s, n, (t, e) => {
 						l[e] = Object(W.n)(t, 0, 0)
 					}), d = n.merge({
 						anchorOffset: 0,
@@ -2771,7 +2771,7 @@
 					blockMap: s.getBlockMap().merge(l),
 					selectionAfter: d
 				});
-				return o.EditorState.push(t, u, Q.f)
+				return o.EditorState.push(t, u, Y.f)
 			};
 			const tt = (t, e, n, o) => {
 					const {
@@ -3259,8 +3259,8 @@
 					}))
 				}, "Component", Vt.a),
 				Gt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/Placeholder/index.m.less"),
-				Qt = n.n(Gt);
-			const Yt = m.a.div("Message", Qt.a);
+				Yt = n.n(Gt);
+			const Qt = m.a.div("Message", Yt.a);
 			var Zt = m.a.wrapped(t => {
 					const {
 						className: e,
@@ -3268,12 +3268,12 @@
 					} = t;
 					return a.a.createElement("div", {
 						className: e
-					}, a.a.createElement(Yt, null, n ? s.fbt._("Processing video...", null, {
+					}, a.a.createElement(Qt, null, n ? s.fbt._("Processing video...", null, {
 						hk: "3g3QoU"
 					}) : s.fbt._("Processing image...", null, {
 						hk: "1xoNB3"
 					})))
-				}, "Component", Qt.a),
+				}, "Component", Yt.a),
 				Jt = n("./src/lib/formatApiError/index.ts"),
 				Xt = n("./src/reddit/components/ProgressBar/index.tsx"),
 				$t = n("./src/reddit/controls/Button/index.tsx"),
@@ -3619,22 +3619,22 @@
 					})))
 				},
 				Ge = n("./src/reddit/components/RichTextEditor/media/MediaBlock/index.m.less"),
-				Qe = n.n(Ge);
-			const Ye = t => "RTE_VIDEO_THUMBNAIL_SELECTOR_".concat(t.getKey()),
+				Ye = n.n(Ge);
+			const Qe = t => "RTE_VIDEO_THUMBNAIL_SELECTOR_".concat(t.getKey()),
 				Ze = Object(d.a)(t => t.uploads, (t, e) => {
 					const n = Object(A.h)(e.block);
 					return n && n.uploadInfo && n.uploadInfo.uploadKey
 				}, (t, e) => e ? t[e] : void 0),
 				Je = Object(l.b)((t, e) => ({
 					upload: Ze(t, e),
-					isThumbnailSelectorOpen: Object(Pt.a)(t) === Ye(e.block),
+					isThumbnailSelectorOpen: Object(Pt.a)(t) === Qe(e.block),
 					isRteVideoPosterEnabled: x.d.rteVideoPoster(t)
 				}), (t, e) => ({
 					onCancelUpload: e => t(Mt.i(e, !1)),
-					toggleVideoThumbnailsSelector: () => t(Object(Kt.i)(Ye(e.block)))
+					toggleVideoThumbnailsSelector: () => t(Object(Kt.i)(Qe(e.block)))
 				})),
-				Xe = m.a.div("MediaContainer", Qe.a),
-				$e = m.a.div("Container", Qe.a);
+				Xe = m.a.div("MediaContainer", Ye.a),
+				$e = m.a.div("Container", Ye.a);
 			class tn extends a.a.Component {
 				constructor(t) {
 					super(t), this.onNativeSelectionChange = () => {
@@ -3849,7 +3849,7 @@
 						}),
 						v = J()(O, t => Object(W.h)(S, Object(W.g)(t))),
 						j = Object(W.o)(s, v, v);
-					let R = o.EditorState.push(t, T, Q.e);
+					let R = o.EditorState.push(t, T, Y.e);
 					return R = o.EditorState.forceSelection(R, j)
 				},
 				an = n("./node_modules/lodash/clamp.js"),
@@ -3965,7 +3965,7 @@
 				if (c && c === a) {
 					const r = Object(W.o)(n, i, i, !1),
 						c = V.b(s, r, e);
-					return o.EditorState.push(t, c, Q.d)
+					return o.EditorState.push(t, c, Y.d)
 				}
 			};
 			var bn = n("./node_modules/lodash/forEach.js"),
@@ -4268,8 +4268,8 @@
 				}), a.a.createElement("path", {
 					d: "M8.6 7.17l4.23 4.24c.4.4.4 1.04 0 1.43-.4.4-1.03.4-1.42 0L7.18 8.6c-.4-.4-.4-1.04 0-1.43.4-.4 1.03-.4 1.42 0z"
 				}))),
-				Qn = n("./src/reddit/icons/svgs/FormattingInsertRow/index.m.less"),
-				Yn = n.n(Qn);
+				Yn = n("./src/reddit/icons/svgs/FormattingInsertRow/index.m.less"),
+				Qn = n.n(Yn);
 			const Zn = {
 				up: "rotate(180 10 10)",
 				down: "",
@@ -4277,7 +4277,7 @@
 				right: "rotate(-90 10 10)"
 			};
 			var Jn = t => a.a.createElement("svg", {
-					className: Object(h.a)(Yn.a.icon, t.className),
+					className: Object(h.a)(Qn.a.icon, t.className),
 					viewBox: "0 0 20 20",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, a.a.createElement("g", {
@@ -4337,7 +4337,7 @@
 							selectionAfter: n,
 							selectionBefore: n
 						});
-					return o.EditorState.push(t, m, Q.b)
+					return o.EditorState.push(t, m, Y.b)
 				},
 				eo = n("./src/reddit/components/RichTextEditor/table/Toolbar/index.m.less"),
 				no = n.n(eo);
@@ -4656,7 +4656,7 @@
 						return !0
 					})(e, t))
 				},
-				Qo = (t, e, n, s, r, i) => {
+				Yo = (t, e, n, s, r, i) => {
 					const c = t.getBlockForKey(e),
 						a = o.SelectionState.createEmpty(e),
 						l = [],
@@ -4728,7 +4728,7 @@
 						e <= n ? m(t, e) : (t < n && m(t, n - 1), e > o && m(o, e), y++)
 					}), u
 				},
-				Yo = (t, e) => {
+				Qo = (t, e) => {
 					const n = t.getCurrentContent(),
 						s = e.getCurrentContent();
 					if (n === s) return t;
@@ -4738,7 +4738,7 @@
 					return r.forEach((e, n) => {
 						if (n) {
 							if (e === i.get(n)) return;
-							c = Qo(c, n, M.a.SUBREDDIT_LINK, qo.f), c = Qo(c, n, M.a.USER_LINK, qo.i), c = Qo(c, n, M.a.USER_MENTION, qo.d, t, e => t = e)
+							c = Yo(c, n, M.a.SUBREDDIT_LINK, qo.f), c = Yo(c, n, M.a.USER_LINK, qo.i), c = Yo(c, n, M.a.USER_MENTION, qo.d, t, e => t = e)
 						}
 					}), t.getCurrentContent() === c ? t : (c = c.merge({
 						selectionAfter: t.getCurrentContent().getSelectionAfter(),
@@ -4761,7 +4761,7 @@
 					let i = n,
 						c = s.getAnchorOffset(),
 						a = s.getFocusOffset();
-					if (Object(Y.a)(n, s, (t, e) => {
+					if (Object(Q.a)(n, s, (t, e) => {
 							const n = t.getType();
 							if ("paragraph" === n || !$o.has(n)) return !1;
 							let l = null;
@@ -4807,7 +4807,7 @@
 						}
 						if (!Object(A.q)(e) && Object(K.g)(r)) {
 							const e = s.getBlockBefore(r.getKey());
-							if (e && Object(T.o)(e.getType())) return t = o.EditorState.push(t, Object(K.i)(s, r.getKey()), Q.f), o.EditorState.forceSelection(t, Object(K.b)(e))
+							if (e && Object(T.o)(e.getType())) return t = o.EditorState.push(t, Object(K.i)(s, r.getKey()), Y.f), o.EditorState.forceSelection(t, Object(K.b)(e))
 						}
 					}
 				})(t, e),
@@ -4833,7 +4833,7 @@
 							const i = s.getBlockAfter(n.getEndKey());
 							if (i && Object(T.o)(i.getType())) {
 								if (Object(A.q)(e)) return Object(A.d)(t, i.getKey());
-								if (Object(K.g)(r)) return t = o.EditorState.push(t, Object(K.i)(s, r.getKey()), Q.f), o.EditorState.forceSelection(t, Object(K.b)(i))
+								if (Object(K.g)(r)) return t = o.EditorState.push(t, Object(K.i)(s, r.getKey()), Y.f), o.EditorState.forceSelection(t, Object(K.b)(i))
 							}
 						}
 					}
@@ -4871,7 +4871,7 @@
 					let s = o.Modifier.replaceText(n.getCurrentContent(), n.getSelection().merge({
 						anchorOffset: 0
 					}), "");
-					return s = o.Modifier.setBlockType(s, s.getSelectionAfter(), e), o.EditorState.push(n, s, Q.c)
+					return s = o.Modifier.setBlockType(s, s.getSelectionAfter(), e), o.EditorState.push(n, s, Y.c)
 				};
 			var cs = n("./src/reddit/components/RichTextEditor/helpers/styles.ts");
 			const as = Object(Do.a)({
@@ -5123,12 +5123,12 @@
 					if (n.isEmpty()) return t;
 					let o = it(t, e, n) || Ot(t, e, n);
 					return o || (o = V.c(t, e, n))
-				}(h, l, p), o.EditorState.push(t, h, Q.e)
+				}(h, l, p), o.EditorState.push(t, h, Y.e)
 			}
 			var Gs = n("./src/reddit/components/RichTextEditor/entity/getSelectionEntityInfo.ts"),
-				Qs = n("./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts"),
-				Ys = n("./src/reddit/components/RichTextEditor/LinksController/LinkDetailsPopup/index.m.less"),
-				Zs = n.n(Ys);
+				Ys = n("./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts"),
+				Qs = n("./src/reddit/components/RichTextEditor/LinksController/LinkDetailsPopup/index.m.less"),
+				Zs = n.n(Qs);
 			const Js = m.a.div("LinkDetailsBox", Zs.a),
 				Xs = m.a.a("Link", Zs.a),
 				$s = m.a.a("LinkButton", Zs.a);
@@ -5291,7 +5291,7 @@
 						if (i) {
 							if (r.getEntity(i.entityKey).getType() !== M.a.LINK) return !1;
 							n = i.entitySelection
-						} else this.isEditorFocused() && (this.lastEditorSelectionClientRect = Object(Qs.a)());
+						} else this.isEditorFocused() && (this.lastEditorSelectionClientRect = Object(Ys.a)());
 						return this.state.linkSelection && (s = fr(e, this.state.linkSelection)), s = function(t, e) {
 							return o.EditorState.set(t, {
 								currentContent: o.Modifier.applyInlineStyle(t.getCurrentContent(), e, T.k.HIGHLIGHT)
@@ -5495,9 +5495,9 @@
 			var Wr = n("./src/reddit/contexts/InsideOverlay.tsx"),
 				qr = n("./node_modules/lodash/debounce.js"),
 				Gr = n.n(qr),
-				Qr = n("./src/reddit/actions/subredditAutocomplete.ts"),
-				Yr = n("./src/reddit/controls/SubredditDropdown/index.m.less"),
-				Zr = n.n(Yr);
+				Yr = n("./src/reddit/actions/subredditAutocomplete.ts"),
+				Qr = n("./src/reddit/controls/SubredditDropdown/index.m.less"),
+				Zr = n.n(Qr);
 
 			function Jr() {
 				return (Jr = Object.assign || function(t) {
@@ -5625,7 +5625,7 @@
 			}
 			var ri = Object(l.b)(oi, (t, e) => ({
 					onGetSubredditAutocomplete: e => {
-						t(Qr.d(e))
+						t(Yr.d(e))
 					}
 				}))(si),
 				ii = n("./src/reddit/selectors/comments.ts");
@@ -6042,7 +6042,7 @@
 				}
 			};
 
-			function Qi(t, e, n) {
+			function Yi(t, e, n) {
 				const s = t.id,
 					r = t.c,
 					i = Xn.E(e, s),
@@ -6062,7 +6062,7 @@
 				}
 				return a
 			}
-			const Yi = Object.keys(Ti),
+			const Qi = Object.keys(Ti),
 				Zi = (t, e, n) => {
 					switch (e.e) {
 						case Xn.u:
@@ -6081,7 +6081,7 @@
 						case Xn.m:
 						case Xn.a:
 						case Xn.D:
-							return void t.blocks.push(...Qi(e, n.mediaMetadataMap, Object(A.q)(n.editorType)))
+							return void t.blocks.push(...Yi(e, n.mediaMetadataMap, Object(A.q)(n.editorType)))
 					}
 				},
 				Ji = (t, e, n) => {
@@ -6137,7 +6137,7 @@
 					const a = t.content;
 					if (1 === e.length && (e[0].e === Xn.m || e[0].e === Xn.a)) {
 						const n = e[0];
-						if (Object(Oi.d)(n.id)) return void t.blocks.push(...Qi(n, s.mediaMetadataMap, Object(A.q)(s.editorType)))
+						if (Object(Oi.d)(n.id)) return void t.blocks.push(...Yi(n, s.mediaMetadataMap, Object(A.q)(s.editorType)))
 					}
 					const {
 						charList: l,
@@ -6255,7 +6255,7 @@
 					}
 				},
 				rc = t => {
-					const e = Yi.filter(e => !!(Ti[e] & t));
+					const e = Qi.filter(e => !!(Ti[e] & t));
 					return Object(L.OrderedSet)(e)
 				},
 				ic = function(t, e) {
@@ -6428,7 +6428,7 @@
 						n.getSelection().getHasFocus() || (n = o.EditorState.forceSelection(n, n.getSelection()), e && (n = o.EditorState.setInlineStyleOverride(n, e))), this.onChange(n)
 					}, this.onChange = (t, e) => {
 						let n = t;
-						n = Sn(n, this.state.editorState), n = At(n, this.props.editorType), this.emotesTooltipApi && (n = Object(Io.d)(n, this.state.editorState)), n = Yo(n, this.state.editorState), n = Object(cs.d)(n, this.state.editorState), this.setEditorState(n, e);
+						n = Sn(n, this.state.editorState), n = At(n, this.props.editorType), this.emotesTooltipApi && (n = Object(Io.d)(n, this.state.editorState)), n = Qo(n, this.state.editorState), n = Object(cs.d)(n, this.state.editorState), this.setEditorState(n, e);
 						let {
 							suppressAutocompleteForLink: o
 						} = this.state;
@@ -8044,4 +8044,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.21db917816b9a8402fd6.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.53bbcacb1ca2cfbec5e8.js.map

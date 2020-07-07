@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9139ce932467839456bd.js
-// Retrieved at 7/6/2020, 12:10:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a5171201dce4af4c83e8.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1044,7 +1044,7 @@
 							} = e;
 							return Object(p.b)({
 								endpoint: "https://api.embed.ly/1/extract",
-								method: b.cb.GET,
+								method: b.db.GET,
 								data: {
 									key: g,
 									url: a,
@@ -1164,7 +1164,7 @@
 							Object(d.b)("Error getting proxy unread count: ".concat(a))
 						}
 					})(i, o)) && !r()(i.messages.unread, m) && await a(b(m))
-				}, o.Eb, {
+				}, o.Fb, {
 					leading: !0
 				})
 		},
@@ -1319,7 +1319,7 @@
 					t(p(e)), (e => {
 						if (!h(e)) {
 							const t = [...Object(a.a)("chat.promo") || [], e];
-							Object(a.c)("chat.promo", t, s.Zb)
+							Object(a.c)("chat.promo", t, s.ac)
 						}
 					})(e)
 				}, f = () => async (e, t) => {
@@ -1600,7 +1600,7 @@
 						const t = await ((e, t) => Object(c.a)(e, {
 							data: t,
 							endpoint: "/refreshproxy",
-							method: s.cb.POST
+							method: s.db.POST
 						}))(a(), r);
 						if (t.ok) {
 							const n = t.body;
@@ -1685,7 +1685,7 @@
 					if (l.sitewideRules && l.sitewideRules.length) return;
 					const u = await (e => Object(c.a)(Object(r.a)(e, [o.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/sitewide_rules.json"),
-						method: s.cb.GET
+						method: s.db.GET
 					}))(a());
 					if (u.ok) {
 						const {
@@ -1755,7 +1755,7 @@
 				o = "TOAST__UPDATE_TOAST",
 				i = Object(a.a)(o),
 				l = e => async (t, n) => {
-					setTimeout(() => t(r()), e * s.Eb)
+					setTimeout(() => t(r()), e * s.Fb)
 				}
 		},
 		"./src/chat/actions/tooltip.ts": function(e, t, n) {
@@ -2503,7 +2503,7 @@
 			var J = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
 				Z = n("./src/chat/icons/Userpic/index.m.less"),
 				Q = n.n(Z);
-			const Y = e => e.replace(b.xb.Account + "_", ""),
+			const Y = e => e.replace(b.yb.Account + "_", ""),
 				X = i.a.i("FallbackAvatar", Q.a),
 				$ = i.a.wrapped(X, "FallbackAvatarWrapper", Q.a),
 				ee = i.a.wrapped(e => {
@@ -3772,7 +3772,7 @@
 					super(e), t = this, this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = xa()((function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
 						t.props.fetchSubredditChannelUsers(e)
-					}), b.Eb, {
+					}), b.Fb, {
 						leading: !0,
 						trailing: !1
 					}), this.onKeyUpListener = e => {
@@ -4729,7 +4729,7 @@
 									createdAt: c,
 									messageData: o,
 									sender: i
-								} = e, l = i && i.userId, d = i && i.nickname, u = n.id === l, h = this.isSplitterDisplayed(e, t, s), m = this.getPreviousTime(t, s), p = this.getPreviousUserId(t, s) === l, g = c - m < 5 * b.db, f = !(p && g), O = o.type === Ee.b.EMBED, j = h && r.a.createElement(B, {
+								} = e, l = i && i.userId, d = i && i.nickname, u = n.id === l, h = this.isSplitterDisplayed(e, t, s), m = this.getPreviousTime(t, s), p = this.getPreviousUserId(t, s) === l, g = c - m < 5 * b.eb, f = !(p && g), O = o.type === Ee.b.EMBED, j = h && r.a.createElement(B, {
 									date: c
 								}), C = f && d && l && r.a.createElement(On, {
 									createdAt: c,
@@ -9030,7 +9030,7 @@
 							size: e
 						} = t.container;
 						e !== a.a.EMBED && e !== a.a.FULL || !document.hasFocus() || o(t), n()
-					}, 30 * i.Eb)
+					}, 30 * i.Fb)
 				};
 				return n(), n => a => {
 					const s = n(a);
@@ -9080,7 +9080,7 @@
 							const t = e.getState();
 							e.dispatch(Object(u.sizeChanged)(b.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === i.Ab.CHAT_MINIMIZE && e.dispatch(Object(d.O)());
+							a && a.meta && a.meta.name === i.Bb.CHAT_MINIMIZE && e.dispatch(Object(d.O)());
 							const {
 								action: s,
 								noun: c,
@@ -9162,7 +9162,7 @@
 			const j = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === b.a.MINIMIZED || n === b.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Ab.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Ab.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Bb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Bb.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -9182,7 +9182,7 @@
 					})(n) : s()(() => e.dispatch(Object(d.m)()))
 				};
 				let a;
-				Object(f.a)(e.getState()) === c.Ab.CHAT_MINIMIZE ? s()(async () => {
+				Object(f.a)(e.getState()) === c.Bb.CHAT_MINIMIZE ? s()(async () => {
 					j(e.getState()) ? n() : (await e.dispatch(Object(d.m)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.b)()))
 				}) : n();
 				return i => g => {
@@ -9195,7 +9195,7 @@
 							const t = g.payload !== b.a.MINIMIZED && g.payload !== b.a.HIDDEN;
 							t && (clearTimeout(a), a = null), C && t && !_ && n(), !_ || g.payload !== b.a.HIDDEN && g.payload !== b.a.MINIMIZED || (a = setTimeout(() => {
 								e.dispatch(Object(h.f)())
-							}, 10 * c.db));
+							}, 10 * c.eb));
 							break
 						}
 						case l.a: {
@@ -9256,7 +9256,7 @@
 				r = n("./src/chat/actions/channel.ts"),
 				o = n("./src/chat/actions/session.ts"),
 				i = n("./src/chat/helpers/errors.ts");
-			const l = 5 * c.db;
+			const l = 5 * c.eb;
 			t.a = e => {
 				const t = s()(() => {
 					e.dispatch(Object(o.d)())
@@ -9391,8 +9391,8 @@
 				i = n("./src/lib/constants/index.ts");
 			let l, d;
 			const u = s()(e => {
-				Object(o.c)(l, e, 5 * i.db)
-			}, 5 * i.Eb, {
+				Object(o.c)(l, e, 5 * i.eb)
+			}, 5 * i.Fb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -9400,7 +9400,7 @@
 			const m = () => {
 				h && clearInterval(h), h = setInterval(() => {
 					void 0 === Object(o.a)(l) && Object(c.b)()
-				}, 5 * i.db)
+				}, 5 * i.eb)
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return r.a;
@@ -9443,7 +9443,7 @@
 				s = n("./src/lib/makeApiRequest/index.ts");
 			const c = async e => Object(s.a)(e, {
 				endpoint: "".concat(e.apiUrl, "/api/v1/me"),
-				method: a.cb.GET,
+				method: a.db.GET,
 				data: {
 					raw_json: 1
 				}
@@ -9453,10 +9453,10 @@
 					raw_json: 1
 				},
 				endpoint: "".concat(e.apiUrl, "/api/block_user"),
-				method: a.cb.POST
+				method: a.db.POST
 			}), o = async (e, t) => Object(s.a)(e, {
 				endpoint: "".concat(e.apiUrl, "/user/").concat(t, "/about"),
-				method: a.cb.GET,
+				method: a.db.GET,
 				data: {
 					raw_json: 1
 				}
@@ -9481,7 +9481,7 @@
 				r = n("./src/reddit/constants/headers.ts"),
 				o = n("./src/chat/models/Message/report.ts");
 			const i = (e, t) => Object(s.a)(e, {
-					method: a.cb.POST,
+					method: a.db.POST,
 					endpoint: "".concat(e.apiUrl, "/api/report_user"),
 					data: {
 						reason: t.reason,
@@ -9491,7 +9491,7 @@
 				l = (e, t, n) => {
 					const c = Object(o.c)(t, n);
 					return Object(s.a)(e, {
-						method: a.cb.POST,
+						method: a.db.POST,
 						endpoint: "".concat(e.apiUrl, "/api/report_user"),
 						data: {
 							details: JSON.stringify(c),
@@ -9501,7 +9501,7 @@
 					})
 				},
 				d = (e, t) => Object(s.a)(e, {
-					method: a.cb.GET,
+					method: a.db.GET,
 					endpoint: "".concat(e.apiUrl, "/api/user_data_by_account_ids"),
 					data: {
 						raw_json: 1,
@@ -9509,11 +9509,11 @@
 					}
 				}),
 				u = e => Object(s.a)(e, {
-					method: a.cb.GET,
+					method: a.db.GET,
 					endpoint: "".concat(e.apiUrl, "/prefs/blocked.json")
 				}),
 				h = e => Object(s.a)(Object(c.a)(e, [r.a]), {
-					method: a.cb.POST,
+					method: a.db.POST,
 					endpoint: "".concat(e.apiUrl, "/api/seen_subreddit_chat_ftux")
 				})
 		},
@@ -9769,7 +9769,7 @@
 
 			function r(e) {
 				if (e.contact_account_id || e.id) return {
-					id: e.contact_account_id || "".concat(a.xb.Account, "_").concat(e.id),
+					id: e.contact_account_id || "".concat(a.yb.Account, "_").concat(e.id),
 					name: e.name,
 					lastInteraction: e.last_interaction,
 					created: e.created_utc,
@@ -10064,7 +10064,7 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/convertToCamelCase/index.ts");
-			const c = "".concat(a.xb.Account, "_"),
+			const c = "".concat(a.yb.Account, "_"),
 				r = e => {
 					const t = {};
 					for (const n in e) t[n] = o(Object.assign({
@@ -11661,7 +11661,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Ab.CHAT
+						name: s.Bb.CHAT
 					},
 					path: "/chat/"
 				},
@@ -11692,7 +11692,7 @@
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.Ab.CHAT_EMPTY
+						name: s.Bb.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -11723,7 +11723,7 @@
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.Ab.CHAT_MINIMIZE
+						name: s.Bb.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
@@ -11734,7 +11734,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Ab.CHAT
+						name: s.Bb.CHAT
 					},
 					path: m
 				},
@@ -11745,7 +11745,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Ab.CHAT
+						name: s.Bb.CHAT
 					},
 					path: p
 				};
@@ -11759,7 +11759,7 @@
 				chunk: a.p.CHAT,
 				exact: !0,
 				meta: {
-					name: a.Ab.CHAT
+					name: a.Bb.CHAT
 				},
 				path: "/chat/*"
 			};
@@ -12321,7 +12321,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(C.h)(t)), this.dispatch(Object(_.e)({
 							toast: x.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Eb), this.dispatch(Object(O.q)(!0)), this.dispatch(Object(d.E)())
+						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Fb), this.dispatch(Object(O.q)(!0)), this.dispatch(Object(d.E)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
 				onReconnectFailed() {
@@ -14042,4 +14042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.9139ce932467839456bd.js.map
+//# sourceMappingURL=Chat~RedesignChat.a5171201dce4af4c83e8.js.map

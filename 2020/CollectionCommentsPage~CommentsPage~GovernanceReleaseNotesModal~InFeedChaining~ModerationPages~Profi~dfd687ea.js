@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7eb80336a800fcc197d4.js
-// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.e90929ab381bf3a677c0.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const m = Object(o.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.Gb
+					experimentName: l.wb
 				});
-				return Object(l.Fc)(t) ? void 0 : t
+				return Object(l.rc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: l.Hb
+					experimentName: l.xb
 				});
-				return Object(l.Fc)(t) ? void 0 : t
-			}, (e, t) => e === l.Ib.Enabled && t === l.Ib.Enabled);
+				return Object(l.rc)(t) ? void 0 : t
+			}, (e, t) => e === l.yb.Enabled && t === l.yb.Enabled);
 			var u = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -54,8 +54,8 @@
 				return Array.from(new Uint8Array(i)).map(b).join("")
 			})(f.SHA1, e);
 
-			function v() {
-				return (v = Object.assign || function(e) {
+			function y() {
+				return (y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -63,7 +63,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var y = function(e, t) {
+			var v = function(e, t) {
 				var s = {};
 				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "6739b30-production"
+					SENTRY_RELEASE_VERSION: "e84bc63-production"
 				}),
 				O = {
 					anonymousUserId: "t2_anonymous",
@@ -133,8 +133,8 @@
 							{
 								forwardedRef: s
 							} = t,
-							i = y(t, ["forwardedRef"]);
-						return a.a.createElement(e, v({}, i, {
+							i = v(t, ["forwardedRef"]);
+						return a.a.createElement(e, y({}, i, {
 							onDashCreate: this.handleDashCreate,
 							onDashDestroy: this.handleDashDestroy,
 							onHlsCreate: this.handleHlsCreate,
@@ -245,7 +245,7 @@
 					}
 				}
 				L.displayName = w(e), L.ANONYMOUS_USER_ID = s, L.DEBUG = d, L.DISABLE_COOKIES = l, L.DURATION_LIVE = 1 / 0, L.ENV_KEY = h, L.LOCAL_STORAGE_SALT_KEY = u, L.LOCAL_STORAGE_VIEWER_USER_ID_KEY = b, L.PLAYER_NAME = f, L.PLAYER_VERSION = I, L.RESPECT_DO_NOT_TRACK = S, L.SALT_LENGTH = C, L.SALT_TIME_TO_LIVE = M, L.STREAM_TYPE_LIVE = "live", L.STREAM_TYPE_ON_DEMAND = "on-demand", L.VIEWER_USER_ID_LENGTH = j;
-				const N = Object(i.forwardRef)((e, t) => a.a.createElement(L, v({}, e, {
+				const N = Object(i.forwardRef)((e, t) => a.a.createElement(L, y({}, e, {
 						forwardedRef: t
 					}))),
 					T = Object(o.c)({
@@ -369,12 +369,12 @@
 				p.height = r;
 				const g = {};
 				g.height = t;
-				const [x, b] = Object(i.useState)(0), f = x > 0, E = x < s.length - 1, v = Object(i.useCallback)(() => {
+				const [x, b] = Object(i.useState)(0), f = x > 0, E = x < s.length - 1, y = Object(i.useCallback)(() => {
 					E && b(x + 1)
-				}, [E, x, b]), y = Object(i.useCallback)(() => {
+				}, [E, x, b]), v = Object(i.useCallback)(() => {
 					f && b(x - 1)
 				}, [f, x, b]), w = Object(i.useRef)(null), I = Object(i.useRef)(null);
-				return o(d.a.ArrowLeft, w.current, y), o(d.a.ArrowRight, w.current, v), a.a.createElement("div", {
+				return o(d.a.ArrowLeft, w.current, v), o(d.a.ArrowRight, w.current, y), a.a.createElement("div", {
 					className: Object(n.a)(l.a.outerContainer),
 					ref: w,
 					tabIndex: 0
@@ -397,14 +397,14 @@
 						key: s
 					}) : null
 				})), a.a.createElement(m, {
-					onClick: y,
+					onClick: v,
 					setFocusTo: I,
 					hasMoreSlides: f,
 					title: "Previous",
 					iconClassName: l.a.prevIcon,
 					className: l.a.prevButton
 				}), a.a.createElement(m, {
-					onClick: v,
+					onClick: y,
 					setFocusTo: I,
 					hasMoreSlides: E,
 					title: "Next",
@@ -505,17 +505,17 @@
 					postId: b,
 					showFull: f
 				} = e, E = x(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
-				const v = {
+				const y = {
 						[m.a.richTextContainerFull]: f,
 						[m.a.richTextContainerTitleOnly]: u && !f,
 						[m.a.richTextContainer]: !f && !u
 					},
-					y = {};
-				f || (y.maxHeight = "".concat(u ? r.m : c ? r.l : r.k, "px")), d && (y.maxWidth = "".concat(o.d, "px"));
+					v = {};
+				f || (v.maxHeight = "".concat(u ? r.m : c ? r.l : r.k, "px")), d && (v.maxWidth = "".concat(o.d, "px"));
 				const w = l && f;
 				return a.a.createElement("div", g({
-					className: Object(n.a)(v, i),
-					style: y
+					className: Object(n.a)(y, i),
+					style: v
 				}, E), s, w && a.a.createElement(p, {
 					canLoadContent: !!t,
 					isExpando: h,
@@ -695,8 +695,8 @@
 				b = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
 				f = s("./src/lib/sentry/index.ts"),
 				E = s("./src/reddit/components/AdViewability/index.tsx"),
-				v = s("./src/reddit/components/Governance/Proposal/async.ts"),
-				y = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
+				y = s("./src/reddit/components/Governance/Proposal/async.ts"),
+				v = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				w = s("./src/reddit/components/Media/constants.ts"),
 				I = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
 				O = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
@@ -758,7 +758,7 @@
 				}, {
 					ssr: !1
 				}),
-				$ = Object(m.a)(y.b, {
+				$ = Object(m.a)(v.b, {
 					playerName: "Reddit Player"
 				}),
 				ee = 1200,
@@ -1039,7 +1039,7 @@
 						post: u,
 						showCentered: x,
 						showFull: b = !1,
-						subredditOrProfileDisplayText: y
+						subredditOrProfileDisplayText: v
 					} = this.props, {
 						canLoadContent: w,
 						forcePause: D,
@@ -1113,7 +1113,7 @@
 								postId: u.id,
 								rtJsonElementProps: me(this.props),
 								renderMediaAsLinks: o
-							})), c.a.createElement(v.a, {
+							})), c.a.createElement(y.a, {
 								postId: u.id,
 								isCommentsPage: !!a
 							})) : null;
@@ -1269,7 +1269,7 @@
 							const D = this.state.viewportHeight - 2 * te,
 								R = this.state.viewportWidth - 2 * te;
 							let V, J = K;
-							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (u.thumbnail && Object(g.a)(u.thumbnail.url) ? J = u.thumbnail.url : u.preview && Object(g.a)(u.preview.url) && (J = u.preview.url)), h && (V = y ? "".concat(y, " - ").concat(u.title) : u.title), c.a.createElement(C.a, X({}, ie, {
+							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (u.thumbnail && Object(g.a)(u.thumbnail.url) ? J = u.thumbnail.url : u.preview && Object(g.a)(u.preview.url) && (J = u.preview.url)), h && (V = v ? "".concat(v, " - ").concat(u.title) : u.title), c.a.createElement(C.a, X({}, ie, {
 								blurSrc: ee ? J : void 0,
 								isExpando: !!n
 							}), c.a.createElement(ae, {
@@ -1441,4 +1441,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7eb80336a800fcc197d4.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.e90929ab381bf3a677c0.js.map

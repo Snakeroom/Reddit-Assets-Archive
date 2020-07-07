@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.f98743a77a05e73a08e4.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.7f9aa53170199e2846f7.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -608,7 +608,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId, "/me"),
-					method: r.cb.GET
+					method: r.db.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -629,7 +629,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId),
-					method: r.cb.POST,
+					method: r.db.POST,
 					data: t.userIds
 				}).then(e => e.ok ? Object.assign({}, e, {
 					body: {
@@ -689,4 +689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal.f98743a77a05e73a08e4.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal.7f9aa53170199e2846f7.js.map

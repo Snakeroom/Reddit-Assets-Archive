@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.9c890197adc481f05d18.js
-// Retrieved at 6/30/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.e0fef425435583c58bd0.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -320,8 +320,8 @@
 						trendingSubredditIds: p
 					} = this.props, b = o && d, g = [...ne.l];
 					b && g.unshift(ne.g);
-					const h = c === te.Eb.Rotate,
-						x = c === te.Eb.RotateAll;
+					const h = c === te.ub.Rotate,
+						x = c === te.ub.RotateAll;
 					let _ = ne.m;
 					return b && (h ? _ = this.state.random > .5 ? ne.g : ne.m : x && (_ = g[this.state.randomIndex])), i.a.createElement(P.a, {
 						className: t
@@ -1026,16 +1026,16 @@
 
 			function r(e) {
 				const t = o(e);
-				return t === s.Eb.Rotate || t === s.Eb.RotateAll
+				return t === s.ub.Rotate || t === s.ub.RotateAll
 			}
 
 			function o(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Db
+					experimentName: s.tb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.9c890197adc481f05d18.js.map
+//# sourceMappingURL=FrontpageSidebar.e0fef425435583c58bd0.js.map

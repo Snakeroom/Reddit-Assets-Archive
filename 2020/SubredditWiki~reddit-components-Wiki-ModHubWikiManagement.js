@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.b4d11cdc8363f12208da.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.8693d704072fe4515c13.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
@@ -1014,7 +1014,7 @@
 				f = i("./src/reddit/constants/headers.ts");
 			var x = e => Object(k.a)(Object(g.a)(e.context, [f.a]), {
 					endpoint: "".concat(e.context.apiUrl, "/r/").concat(e.subredditName, "/api/wiki/edit"),
-					method: b.cb.POST,
+					method: b.db.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -1918,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.b4d11cdc8363f12208da.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.8693d704072fe4515c13.js.map

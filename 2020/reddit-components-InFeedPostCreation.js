@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f4a4aeda0702ec2f6f6d.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.92e0be9f9258a007b24b.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -31,8 +31,8 @@
 				m = n("./src/reddit/actions/tooltip.ts"),
 				p = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				b = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				I = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
-				x = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
+				x = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
+				I = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
 				_ = n("./src/reddit/controls/InternalLink/index.tsx"),
 				E = n("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
 				g = n("./src/reddit/icons/svgs/Media/index.tsx"),
@@ -41,16 +41,16 @@
 				f = n("./src/reddit/selectors/user.ts"),
 				k = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
 				v = n.n(k);
-			const M = u.a.wrapped(I.a, "CurrentUserIcon", v.a);
+			const M = u.a.wrapped(x.a, "CurrentUserIcon", v.a);
 			var L;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
 			}(L || (L = {}));
 			const O = e => {
 					switch (e) {
-						case l.Ib.MEDIA:
+						case l.Jb.MEDIA:
 							return "?media=true";
-						case l.Ib.LINK_ONLY:
+						case l.Jb.LINK_ONLY:
 							return "?url";
 						default:
 							return ""
@@ -58,9 +58,9 @@
 				},
 				w = e => {
 					switch (e) {
-						case l.Ib.MEDIA:
+						case l.Jb.MEDIA:
 							return "media_post";
-						case l.Ib.LINK_ONLY:
+						case l.Jb.LINK_ONLY:
 							return "link_post";
 						default:
 							return "create_post"
@@ -114,7 +114,7 @@
 							media: (c || s) && !e.isNSFW
 						}
 					}(r, n),
-					I = e => {
+					x = e => {
 						o(t => Object.assign({
 							source: "post_composer_du",
 							action: "click",
@@ -122,10 +122,10 @@
 						}, N.defaults(t)))
 					},
 					C = () => {
-						I(l.Ib.POST), d(m)
+						x(l.Jb.POST), d(m)
 					};
 				let f;
-				return t && (f = Object(x.b)(t.accountIcon) ? c.a.createElement(_.a, {
+				return t && (f = Object(I.b)(t.accountIcon) ? c.a.createElement(_.a, {
 					className: v.a.UserIcon,
 					to: "/settings/profile"
 				}, c.a.createElement(M, null)) : c.a.createElement("span", {
@@ -145,10 +145,10 @@
 					"aria-label": j(),
 					className: v.a.Button,
 					id: L.Media,
-					onClick: () => I(l.Ib.MEDIA),
+					onClick: () => x(l.Jb.MEDIA),
 					onMouseEnter: () => u(L.Media),
 					onMouseLeave: () => u(L.Media),
-					to: m + O(l.Ib.MEDIA)
+					to: m + O(l.Jb.MEDIA)
 				}, c.a.createElement(g.a, null), c.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: L.Media,
@@ -157,10 +157,10 @@
 					"aria-label": U(),
 					className: v.a.Button,
 					id: L.Link,
-					onClick: () => I(l.Ib.LINK_ONLY),
+					onClick: () => x(l.Jb.LINK_ONLY),
 					onMouseEnter: () => u(L.Link),
 					onMouseLeave: () => u(L.Link),
-					to: m + O(l.Ib.LINK_ONLY)
+					to: m + O(l.Jb.LINK_ONLY)
 				}, c.a.createElement(E.a, null), c.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: L.Link,
@@ -206,4 +206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-InFeedPostCreation.f4a4aeda0702ec2f6f6d.js.map
+//# sourceMappingURL=reddit-components-InFeedPostCreation.92e0be9f9258a007b24b.js.map

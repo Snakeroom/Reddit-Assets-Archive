@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.c89f243d896cc5584499.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.e7f60faf428cf1fe5436.js
+// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -373,8 +373,8 @@
 				C = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				E = a("./src/reddit/selectors/platform.ts"),
 				P = a("./src/reddit/selectors/user.ts"),
-				N = a("./node_modules/fbt/lib/FbtPublic.js"),
-				x = a("./src/lib/loadRedditAdsPixel.ts"),
+				x = a("./node_modules/fbt/lib/FbtPublic.js"),
+				N = a("./src/lib/loadRedditAdsPixel.ts"),
 				v = a("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
 				k = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				f = a("./src/reddit/helpers/createEmojiText/index.tsx"),
@@ -386,7 +386,7 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(b.j)()), Object(x.b)()
+					e(Object(b.j)()), Object(N.b)()
 				}
 				render() {
 					const e = this.props;
@@ -397,29 +397,29 @@
 						}
 					}, s.a.createElement(_.a, {
 						className: M.a.premiumIcon,
-						title: N.fbt._("Reddit Premium", null, {
+						title: x.fbt._("Reddit Premium", null, {
 							hk: "34acNx"
 						})
 					}), s.a.createElement("div", {
 						className: M.a.paymentCompleteTitleMain
-					}, N.fbt._("Thanks for purchasing Reddit Premium!", null, {
+					}, x.fbt._("Thanks for purchasing Reddit Premium!", null, {
 						hk: "27KGKp"
 					})), s.a.createElement("div", {
 						className: M.a.paymentCompleteTitleDescription
 					}, s.a.createElement("div", {
 						className: M.a.paymentCompleteTitleItem
-					}, N.fbt._("You will receive a message in your inbox once your purchase is confirmed.", null, {
+					}, x.fbt._("You will receive a message in your inbox once your purchase is confirmed.", null, {
 						hk: "27tvU4"
 					})), s.a.createElement("div", {
 						className: M.a.paymentCompleteTitleItem
 					}, s.a.createElement("a", {
 						href: "/settings/premium",
 						target: "_blank"
-					}, N.fbt._("Manage your ads-free experience.", null, {
+					}, x.fbt._("Manage your ads-free experience.", null, {
 						hk: "1RxPah"
 					}))), s.a.createElement("div", {
 						className: M.a.paymentCompleteTitleItemLast
-					}, Object(f.a)(N.fbt._("Find more about {anchor text} on Reddit.", [N.fbt._param("anchor text", ":loungeLink:")], {
+					}, Object(f.a)(x.fbt._("Find more about {anchor text} on Reddit.", [x.fbt._param("anchor text", ":loungeLink:")], {
 						hk: "2RGr1F"
 					}), {
 						":loungeLink:": s.a.createElement("a", {
@@ -502,22 +502,22 @@
 					} = this.props;
 					return s.a.createElement("div", {
 						className: M.a.premiumPurchaseSelectPaymentFooter
-					}, a === i.wb && s.a.createElement(F, {
+					}, a === i.xb && s.a.createElement(F, {
 						buttonId: t,
 						className: M.a.premiumPurchaseButton,
 						customField: e,
 						"data-redditstyle": !0,
 						disabled: !e,
 						onSubmit: this.onPaypalSubmit,
-						title: N.fbt._("Continue to PayPal", null, {
+						title: x.fbt._("Continue to PayPal", null, {
 							hk: "2TCl83"
 						})
-					}), a === i.vb && s.a.createElement(w.f, {
+					}), a === i.wb && s.a.createElement(w.f, {
 						className: M.a.premiumPurchaseButton,
 						"data-redditstyle": !0,
 						disabled: n,
 						onClick: this.onCompletePurchaseClick
-					}, N.fbt._("Complete purchase", null, {
+					}, x.fbt._("Complete purchase", null, {
 						hk: "15ZI2y"
 					})))
 				}
@@ -530,16 +530,16 @@
 				}
 			}, s.a.createElement(_.a, {
 				className: M.a.premiumIcon,
-				title: N.fbt._("Reddit Premium", null, {
+				title: x.fbt._("Reddit Premium", null, {
 					hk: "34acNx"
 				})
 			}), s.a.createElement("div", {
 				className: M.a.titleMain
-			}, N.fbt._("Buy Reddit Premium!", null, {
+			}, x.fbt._("Buy Reddit Premium!", null, {
 				hk: "3XxwQZ"
 			})), s.a.createElement("div", {
 				className: M.a.titleDescription
-			}, N.fbt._("You're purchasing Reddit Premium for yourself, {username}!", [N.fbt._param("username", e.userName)], {
+			}, x.fbt._("You're purchasing Reddit Premium for yourself, {username}!", [x.fbt._param("username", e.userName)], {
 				hk: "bCrwe"
 			})), s.a.createElement("button", {
 				className: M.a.closeButton,
@@ -560,37 +560,37 @@
 				nightmode: e.nightmode,
 				selectedPayment: e.selectedPayment,
 				onPaymentSelected: e.onPaymentSelected
-			}), e.selectedPayment === i.vb && s.a.createElement(S.a, {
+			}), e.selectedPayment === i.wb && s.a.createElement(S.a, {
 				className: M.a.creditCard
 			}), s.a.createElement("div", {
 				className: M.a.checkoutFooter
 			}, s.a.createElement("div", {
 				className: M.a.premiumPurchaseTotal
-			}, N.fbt._("Total: {Price}/monthly", [N.fbt._param("Price", "$".concat(e.total / 100))], {
+			}, x.fbt._("Total: {Price}/monthly", [x.fbt._param("Price", "$".concat(e.total / 100))], {
 				hk: "1KYlb8"
-			})), e.selectedPayment === i.vb && s.a.createElement("a", {
+			})), e.selectedPayment === i.wb && s.a.createElement("a", {
 				href: "https://stripe.com",
 				target: "_blank"
 			}, s.a.createElement("img", {
 				className: M.a.poweredByStripeIcon,
 				src: "".concat(c.a.assetPath, "/img/payment-icons/powered-by-stripe.png")
-			}))), e.selectedPayment === i.wb && e.paypalErrorMessage && s.a.createElement("div", {
+			}))), e.selectedPayment === i.xb && e.paypalErrorMessage && s.a.createElement("div", {
 				className: M.a.errorMessage
-			}, e.paypalErrorMessage), e.selectedPayment === i.vb && e.stripeErrorMessage && s.a.createElement("div", {
+			}, e.paypalErrorMessage), e.selectedPayment === i.wb && e.stripeErrorMessage && s.a.createElement("div", {
 				className: M.a.errorMessage
 			}, e.stripeErrorMessage), s.a.createElement("div", {
 				className: M.a.membershipDescription
-			}, N.fbt._("Your Reddit Premium membership automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.", null, {
+			}, x.fbt._("Your Reddit Premium membership automatically renews on a monthly basis. Cancel anytime. There are no refunds for partial months.", null, {
 				hk: "2yMRNq"
 			})), s.a.createElement("div", {
 				className: M.a.agreementLink
-			}, Object(f.a)(N.fbt._("By purchasing Reddit Premium, you agree to the {Link text}.", [N.fbt._param("Link text", ":agreement:")], {
+			}, Object(f.a)(x.fbt._("By purchasing Reddit Premium, you agree to the {Link text}.", [x.fbt._param("Link text", ":agreement:")], {
 				hk: "fXr9v"
 			}), {
 				":agreement:": s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/user-agreement",
 					target: "_blank"
-				}, N.fbt._("Reddit User Agreement", null, {
+				}, x.fbt._("Reddit User Agreement", null, {
 					hk: "43YI6N"
 				}))
 			}))), s.a.createElement(B, {
@@ -688,7 +688,7 @@
 						stripeErrorMessage: m,
 						stripeTokenPending: p,
 						paypalErrorMessage: u,
-						total: i.nb,
+						total: i.ob,
 						userName: h
 					}), "paymentCompleted" === e && s.a.createElement(I, {
 						onCloseClick: l
@@ -740,4 +740,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PremiumPurchaseModal.c89f243d896cc5584499.js.map
+//# sourceMappingURL=PremiumPurchaseModal.e7f60faf428cf1fe5436.js.map
