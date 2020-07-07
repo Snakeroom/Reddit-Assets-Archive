@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.72e7500d7cfae7e317c1.js
-// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.23c82aa8d067cbda3068.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -511,7 +511,7 @@
 						subredditOrProfile: re,
 						toggleCheckbox: ae,
 						userIsOp: ie
-					} = this.props, de = ee ? void 0 : B, ce = this.props.crosspost || void 0, le = Object(M.a)(U), me = Object(T.a)(U), pe = Object(I.a)(U), ue = K && M.a, xe = !!$.media && $.media.type === C.o.RTJSON, be = ie && xe, he = y && !ne, fe = !!$.media && Object(C.E)($.media), ve = {
+					} = this.props, de = ee ? void 0 : B, ce = this.props.crosspost || void 0, le = Object(M.a)(U), me = Object(T.a)(U), pe = Object(I.a)(U), ue = K && M.a, xe = !!$.media && $.media.type === C.o.RTJSON, be = ie && xe, he = y && !ne, fe = !!$.media && Object(C.F)($.media), ve = {
 						flairStyleTemplate: de,
 						post: $,
 						inSubredditOrProfile: y,
@@ -1433,4 +1433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.72e7500d7cfae7e317c1.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.23c82aa8d067cbda3068.js.map

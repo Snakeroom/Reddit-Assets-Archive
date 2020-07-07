@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.c00017ae46c86e5e2294.js
-// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7eb80336a800fcc197d4.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "d894a37-production"
+					SENTRY_RELEASE_VERSION: "6739b30-production"
 				}),
 				O = {
 					anonymousUserId: "t2_anonymous",
@@ -882,7 +882,7 @@
 					}, this.pauseEmbed = (e, t) => {
 						e.contentWindow && (t === G.v.YouTube ? e.contentWindow.postMessage(JSON.stringify({
 							event: "command",
-							func: G.z.Pause
+							func: G.A.Pause
 						}), w.a) : e.contentWindow.postMessage({
 							context: se,
 							method: G.g.Pause
@@ -967,15 +967,15 @@
 						isListing: i,
 						post: a
 					} = e;
-					if (Object(G.E)(a.media)) return {
+					if (Object(G.F)(a.media)) return {
 						source: a.media.scrubberThumbSource,
 						width: this.state.viewportWidth - 2 * te,
 						height: this.state.viewportHeight - 2 * te
 					};
 					const n = a.media && a.media.obfuscated || "";
-					let o = !a.media || Object(G.H)(a.media) || Object(G.C)(a.media) ? "" : a.media.content,
-						[r, d] = !a.media || Object(G.F)(a.media) || Object(G.G)(a.media) || Object(G.C)(a.media) ? [0, 0] : [a.media.height, a.media.width];
-					if (s && a.media && Object(G.C)(a.media)) {
+					let o = !a.media || Object(G.I)(a.media) || Object(G.D)(a.media) ? "" : a.media.content,
+						[r, d] = !a.media || Object(G.G)(a.media) || Object(G.H)(a.media) || Object(G.D)(a.media) ? [0, 0] : [a.media.height, a.media.width];
+					if (s && a.media && Object(G.D)(a.media)) {
 						r = Object(H.a)(a.media.mediaMetadata || {}, i ? G.j : G.e, G.p) + G.i, d = s
 					}
 					if (s && a.media && (a.media.type === G.o.IMAGE || a.media.type === G.o.GIFVIDEO)) {
@@ -1441,4 +1441,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.c00017ae46c86e5e2294.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7eb80336a800fcc197d4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.266348fb600993f3f0f1.js
-// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a2470380fa3e2361e005.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOv~8a8059b8", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "d894a37-production"
+					SENTRY_RELEASE_VERSION: "6739b30-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -1006,8 +1006,8 @@
 				let i = "";
 				if (n) {
 					if (t && t.displayText) return t.displayText.length > 30 ? t.displayText.substring(0, 30) + "..." : t.displayText;
-					i = o || Object(s.B)(e)
-				} else i = Object(s.B)(e);
+					i = o || Object(s.C)(e)
+				} else i = Object(s.C)(e);
 				const a = r.a.parse(i),
 					c = a.path || "",
 					l = c.length > 7 ? c.substring(0, 7) + "..." : c;
@@ -7352,7 +7352,7 @@
 					}, this.pauseEmbed = (e, t) => {
 						e.contentWindow && (t === V.v.YouTube ? e.contentWindow.postMessage(JSON.stringify({
 							event: "command",
-							func: V.z.Pause
+							func: V.A.Pause
 						}), E.a) : e.contentWindow.postMessage({
 							context: ne,
 							method: V.g.Pause
@@ -7437,15 +7437,15 @@
 						isListing: s,
 						post: o
 					} = e;
-					if (Object(V.E)(o.media)) return {
+					if (Object(V.F)(o.media)) return {
 						source: o.media.scrubberThumbSource,
 						width: this.state.viewportWidth - 2 * te,
 						height: this.state.viewportHeight - 2 * te
 					};
 					const r = o.media && o.media.obfuscated || "";
-					let i = !o.media || Object(V.H)(o.media) || Object(V.C)(o.media) ? "" : o.media.content,
-						[a, c] = !o.media || Object(V.F)(o.media) || Object(V.G)(o.media) || Object(V.C)(o.media) ? [0, 0] : [o.media.height, o.media.width];
-					if (n && o.media && Object(V.C)(o.media)) {
+					let i = !o.media || Object(V.I)(o.media) || Object(V.D)(o.media) ? "" : o.media.content,
+						[a, c] = !o.media || Object(V.G)(o.media) || Object(V.H)(o.media) || Object(V.D)(o.media) ? [0, 0] : [o.media.height, o.media.width];
+					if (n && o.media && Object(V.D)(o.media)) {
 						a = Object(B.a)(o.media.mediaMetadata || {}, s ? V.j : V.e, V.p) + V.i, c = n
 					}
 					if (n && o.media && (o.media.type === V.o.IMAGE || o.media.type === V.o.GIFVIDEO)) {
@@ -10674,7 +10674,7 @@
 						postId: t.id,
 						source: t.source
 					}, r.a.createElement(Z, e)); {
-						const o = t.media && Object(E.E)(t.media) ? Object(y.b)(t.id, n) : t.permalink,
+						const o = t.media && Object(E.F)(t.media) ? Object(y.b)(t.id, n) : t.permalink,
 							i = e.isCommentPermalink ? Object(x.b)(o) : Object(f.a)(o);
 						return r.a.createElement(z, {
 							disableVisited: e.disableVisited,
@@ -10715,11 +10715,11 @@
 						post: n
 					} = e, {
 						isSponsored: s
-					} = n, o = !t && !e.isCrosspost && e.size !== K.Large && !n.isSponsored && !(n.media && Object(E.E)(n.media)) && (n.source || n.media && (n.media.type === E.o.GIFVIDEO || n.media.type === E.o.IMAGE || n.media.type === E.o.EMBED));
+					} = n, o = !t && !e.isCrosspost && e.size !== K.Large && !n.isSponsored && !(n.media && Object(E.F)(n.media)) && (n.source || n.media && (n.media.type === E.o.GIFVIDEO || n.media.type === E.o.IMAGE || n.media.type === E.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (o) return r.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
-							href: Object(E.B)(n),
+							href: Object(E.C)(n),
 							isSponsored: s,
 							postId: n.id,
 							source: n.source
@@ -19662,11 +19662,11 @@
 						placeholderImage: g,
 						redditStyle: h,
 						theme: y
-					}), O = V(e), j = q(m, t, E, C, x, y, O, l, f, b, h, d, u, p, o), S = Object(k.B)(m);
+					}), O = V(e), j = q(m, t, E, C, x, y, O, l, f, b, h, d, u, p, o), S = Object(k.C)(m);
 					return Object(s.a)(S) && !b && S.indexOf("redditmedia") < 0 ? r.a.createElement("div", {
 						className: Object(i.a)(M.a.container, v ? M.a.usePreview : "", n)
 					}, r.a.createElement(w.a, {
-						href: Object(k.B)(m),
+						href: Object(k.C)(m),
 						isSponsored: m.isSponsored,
 						postId: m.id,
 						source: m.source
@@ -32425,4 +32425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.266348fb600993f3f0f1.js.map
+//# sourceMappingURL=PostCreation.a2470380fa3e2361e005.js.map

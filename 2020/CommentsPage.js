@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.788f4471efe75062e204.js
-// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.f7c770dd5f7bea59bffc.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -8443,7 +8443,7 @@
 					}),
 					ue = P.removedByCategory === S.g.AuthorDeleted,
 					he = n && (n.displayText === P.author || n.username === P.author),
-					be = !ue && (he || a || !(P.removedByCategory && P.media && (Object(I.G)(P.media) || Object(I.F)(P.media)))),
+					be = !ue && (he || a || !(P.removedByCategory && P.media && (Object(I.H)(P.media) || Object(I.G)(P.media)))),
 					xe = P.removedByCategory === S.g.Reddit && Object(l.e)(P.created) > 24,
 					ge = P.removedByCategory && P.removedByCategory !== S.g.Reddit || xe,
 					fe = o.a.createElement(Me, {
@@ -10166,7 +10166,7 @@
 					className: O.a.OutboundLink,
 					isSponsored: S.isSponsored,
 					postId: S.id,
-					href: Object(f.B)(e.post),
+					href: Object(f.C)(e.post),
 					source: S.source
 				}, o.a.createElement(g.a, {
 					className: O.a.outboundLinkIcon
@@ -10701,7 +10701,7 @@
 					let n = "";
 					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != s && (n += "-".concat(s)), n
 				},
-				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(C.D)(e.media) && e.media.content)),
+				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(C.E)(e.media) && e.media.content)),
 				R = e => !!e && e.isBlank,
 				F = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
@@ -16466,4 +16466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.788f4471efe75062e204.js.map
+//# sourceMappingURL=CommentsPage.f7c770dd5f7bea59bffc.js.map

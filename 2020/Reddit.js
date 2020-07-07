@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.da5026d88ccec8aa5425.js
-// Retrieved at 7/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.f0fae6603de05dc0c800.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -13532,4 +13532,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~PostCreation~Reddit~StandalonePost~ee6bfdf1", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.da5026d88ccec8aa5425.js.map
+//# sourceMappingURL=Reddit.f0fae6603de05dc0c800.js.map

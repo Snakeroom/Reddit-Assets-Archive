@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.94baebcb75480ddd30db.js
-// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.60637da63ff7f00089b9.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e"], {
 		"./src/reddit/components/CompactPost/Placeholder/index.m.less": function(e, t, s) {
@@ -618,7 +618,7 @@
 						L = {
 							estHeight: Object(_.c)(C, o),
 							id: e,
-							isFocusable: !(!j.media || !(o === P.g.Large || o === P.g.Classic && Object(w.E)(j.media))) && (w.d.has(j.media.type) && (!T || !w.s.has(T)) && !j.isSpoiler && !j.isNSFW),
+							isFocusable: !(!j.media || !(o === P.g.Large || o === P.g.Classic && Object(w.F)(j.media))) && (w.d.has(j.media.type) && (!T || !w.s.has(T)) && !j.isSpoiler && !j.isNSFW),
 							trackOnEnteredViewport: R,
 							trackOnExitedViewport: N,
 							render: t => {
@@ -820,4 +820,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.94baebcb75480ddd30db.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.60637da63ff7f00089b9.js.map

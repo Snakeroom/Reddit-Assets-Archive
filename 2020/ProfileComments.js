@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.8f14614206456f4de7a6.js
-// Retrieved at 6/30/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.e1348345afdbdb56084c.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -475,7 +475,7 @@
 						subredditOrProfile: re,
 						toggleCheckbox: ae,
 						userIsOp: ie
-					} = this.props, ce = ee ? void 0 : R, de = this.props.crosspost || void 0, le = Object(L.a)(J), me = Object(N.a)(J), pe = Object(T.a)(J), ue = q && L.a, be = !!$.media && $.media.type === j.o.RTJSON, he = ie && be, xe = y && !oe, fe = !!$.media && Object(j.E)($.media), ve = {
+					} = this.props, ce = ee ? void 0 : R, de = this.props.crosspost || void 0, le = Object(L.a)(J), me = Object(N.a)(J), pe = Object(T.a)(J), ue = q && L.a, be = !!$.media && $.media.type === j.o.RTJSON, he = ie && be, xe = y && !oe, fe = !!$.media && Object(j.F)($.media), ve = {
 						flairStyleTemplate: ce,
 						post: $,
 						inSubredditOrProfile: y,
@@ -9865,4 +9865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.8f14614206456f4de7a6.js.map
+//# sourceMappingURL=ProfileComments.e1348345afdbdb56084c.js.map

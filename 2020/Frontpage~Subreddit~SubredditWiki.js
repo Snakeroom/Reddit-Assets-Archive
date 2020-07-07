@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.3b1c3ae3ea4822f78295.js
-// Retrieved at 7/6/2020, 12:30:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.1d2139e687e927891a82.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, s) {
@@ -313,7 +313,7 @@
 					let r = "";
 					return t && (r += "overlay-"), r += "sidebar-".concat(e), null != s && (r += "-".concat(s)), r
 				},
-				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(v.D)(e.media) && e.media.content)),
+				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(v.E)(e.media) && e.media.content)),
 				F = e => !!e && e.isBlank,
 				D = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
@@ -1072,4 +1072,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.3b1c3ae3ea4822f78295.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.1d2139e687e927891a82.js.map

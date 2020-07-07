@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.25595f17fa3799c0fdc0.js
-// Retrieved at 6/30/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ec46945f70b863ae05fb.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -4196,7 +4196,7 @@
 						subredditOrProfile: ae,
 						toggleCheckbox: re,
 						userIsOp: ie
-					} = this.props, de = ee ? void 0 : L, le = this.props.crosspost || void 0, ce = Object(M.a)(z), me = Object(T.a)(z), ue = Object(N.a)(z), pe = Q && M.a, be = !!$.media && $.media.type === w.o.RTJSON, he = ie && be, ge = v && !oe, fe = !!$.media && Object(w.E)($.media), xe = {
+					} = this.props, de = ee ? void 0 : L, le = this.props.crosspost || void 0, ce = Object(M.a)(z), me = Object(T.a)(z), ue = Object(N.a)(z), pe = Q && M.a, be = !!$.media && $.media.type === w.o.RTJSON, he = ie && be, ge = v && !oe, fe = !!$.media && Object(w.F)($.media), xe = {
 						flairStyleTemplate: de,
 						post: $,
 						inSubredditOrProfile: v,
@@ -30007,4 +30007,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.25595f17fa3799c0fdc0.js.map
+//# sourceMappingURL=ModerationPages.ec46945f70b863ae05fb.js.map

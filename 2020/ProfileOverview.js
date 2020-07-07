@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.6d4d064fa264a8a71783.js
-// Retrieved at 6/30/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.d12b85534a2215602145.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -760,7 +760,7 @@
 						subredditOrProfile: re,
 						toggleCheckbox: ae,
 						userIsOp: ie
-					} = this.props, ce = ee ? void 0 : R, de = this.props.crosspost || void 0, le = Object(M.a)(J), me = Object(N.a)(J), pe = Object(T.a)(J), ue = q && M.a, be = !!$.media && $.media.type === P.o.RTJSON, he = ie && be, xe = O && !oe, fe = !!$.media && Object(P.E)($.media), ge = {
+					} = this.props, ce = ee ? void 0 : R, de = this.props.crosspost || void 0, le = Object(M.a)(J), me = Object(N.a)(J), pe = Object(T.a)(J), ue = q && M.a, be = !!$.media && $.media.type === P.o.RTJSON, he = ie && be, xe = O && !oe, fe = !!$.media && Object(P.F)($.media), ge = {
 						flairStyleTemplate: ce,
 						post: $,
 						inSubredditOrProfile: O,
@@ -5931,7 +5931,7 @@
 						size: K.b.Large,
 						titleColor: he && he.postTitleColor,
 						isOverlay: y
-					}), re.source && !re.isSponsored && !(re.media && Object(h.E)(re.media)) && o.a.createElement(q.a, {
+					}), re.source && !re.isSponsored && !(re.media && Object(h.F)(re.media)) && o.a.createElement(q.a, {
 						className: le.a.sourceLink,
 						post: re
 					}), o.a.createElement("div", {
@@ -9180,7 +9180,7 @@
 					className: C.a.OutboundLink,
 					isSponsored: I.isSponsored,
 					postId: I.id,
-					href: Object(g.B)(e.post),
+					href: Object(g.C)(e.post),
 					source: I.source
 				}, o.a.createElement(f.a, {
 					className: C.a.outboundLinkIcon
@@ -14960,4 +14960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.6d4d064fa264a8a71783.js.map
+//# sourceMappingURL=ProfileOverview.d12b85534a2215602145.js.map

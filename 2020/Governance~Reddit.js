@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9c88296697b21e4d5250.js
-// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.733304df749b7bf90774.js
+// Retrieved at 7/7/2020, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -12132,7 +12132,7 @@
 						const o = r(),
 							a = s && s.hasNewTabModifier;
 						let i = t.permalink;
-						if (Object(D.b)(t) && t.media && Object(x.E)(t.media)) {
+						if (Object(D.b)(t) && t.media && Object(x.F)(t.media)) {
 							const {
 								id: e,
 								type: n
@@ -12146,7 +12146,7 @@
 						a = Object(j.O)(o, {
 							postId: e
 						});
-					if (!(a && a.media && Object(x.F)(a.media) && a.media.isRichtextPreview)) return;
+					if (!(a && a.media && Object(x.G)(a.media) && a.media.isRichtextPreview)) return;
 					const c = await ((e, t) => Object(N.a)(e, Object.assign({}, L, {
 						variables: t
 					})))(s.gqlContext(), {
@@ -42741,10 +42741,10 @@
 					const n = e[t.id];
 					return n && n.isSponsored && (t.isSponsored = n.isSponsored), t
 				},
-				Xg = e => e.media && Object(Vg.C)(e.media) ? Object.assign({}, Object(F.unsetIn)(e, ["source"])) : e,
+				Xg = e => e.media && Object(Vg.D)(e.media) ? Object.assign({}, Object(F.unsetIn)(e, ["source"])) : e,
 				Zg = e => t => {
 					const n = e[t.id];
-					return t && t.media && n && n.media && Object(Vg.F)(t.media) && t.media.isRichtextPreview && Object(Vg.F)(n.media) && !n.media.isRichtextPreview && (t.media.richtextContent = n.media.richtextContent, t.media.isRichtextPreview = !1), t
+					return t && t.media && n && n.media && Object(Vg.G)(t.media) && t.media.isRichtextPreview && Object(Vg.G)(n.media) && !n.media.isRichtextPreview && (t.media.richtextContent = n.media.richtextContent, t.media.isRichtextPreview = !1), t
 				},
 				$g = e => t => {
 					const n = e[t.id];
@@ -43031,7 +43031,7 @@
 							postId: n,
 							richtextContent: s
 						} = t.payload, r = e[n];
-						return r && r.media && Object(Vg.F)(r.media) ? Object.assign({}, e, {
+						return r && r.media && Object(Vg.G)(r.media) ? Object.assign({}, e, {
 							[n]: Object.assign({}, r, {
 								media: Object.assign({}, r.media, {
 									richtextContent: s,
@@ -54077,4 +54077,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.9c88296697b21e4d5250.js.map
+//# sourceMappingURL=Governance~Reddit.733304df749b7bf90774.js.map
