@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.10b3ff79f3252a47f1ae.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.13fe45e7d5f42a2a8a5a.js
+// Retrieved at 7/8/2020, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3276,14 +3276,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("15b749f-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("f8acca5-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "15b749f-production",
+						release: "f8acca5-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3699,7 +3699,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "15b749f-production",
+							releaseClient: "f8acca5-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -6079,13 +6079,13 @@
 			})), i.d(t, "Ab", (function() {
 				return Nt
 			})), i.d(t, "e", (function() {
-				return Pt
-			})), i.d(t, "fb", (function() {
 				return Lt
-			})), i.d(t, "qc", (function() {
+			})), i.d(t, "fb", (function() {
 				return At
-			})), i.d(t, "vb", (function() {
+			})), i.d(t, "qc", (function() {
 				return Dt
+			})), i.d(t, "vb", (function() {
+				return Gt
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			const n = "typeahead_redesign",
@@ -6159,7 +6159,7 @@
 				e.Control1 = "control_1", e.Control2 = "control_2"
 			}(he || (he = {}));
 			const fe = e => e === he.Control1 || e === he.Control2;
-			var ge, be, we, ye, ve, Te, Se, Ee, Fe, Ie, Oe, Be, je, xe, Re, ke, Ce, Ne, Pe, Le, Ae, De, Ge, Me, Ue, qe, Ve, He, We, ze, Ke, Qe, Je, Ye, Xe, Ze, $e, et, tt, it, nt, rt, st, ot, dt, lt, at, ut, ct, _t, mt, pt, ht, ft, gt, bt, wt, yt, vt, Tt, St, Et, Ft, It, Ot, Bt, jt, xt, Rt, kt, Ct, Nt;
+			var ge, be, we, ye, ve, Te, Se, Ee, Fe, Ie, Oe, Be, je, xe, Re, ke, Ce, Ne, Pe, Le, Ae, De, Ge, Me, Ue, qe, Ve, He, We, ze, Ke, Qe, Je, Ye, Xe, Ze, $e, et, tt, it, nt, rt, st, ot, dt, lt, at, ut, ct, _t, mt, pt, ht, ft, gt, bt, wt, yt, vt, Tt, St, Et, Ft, It, Ot, Bt, jt, xt, Rt, kt, Ct, Nt, Pt;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(ge || (ge = {})),
@@ -6375,12 +6375,16 @@
 			}(Ct || (Ct = {})),
 			function(e) {
 				e.Enabled = "enabled"
-			}(Nt || (Nt = {}));
-			const Pt = {
+			}(Nt || (Nt = {})),
+			function(e) {
+				e.Redesign = "redesign"
+			}(Pt || (Pt = {}));
+			const Lt = {
 					[pe]: [Nt.Enabled],
 					[_e]: [kt.FeedAndTheatre, kt.FeedOnly, kt.TheatreOnly],
 					[me]: [Ct.Enabled],
 					[ue]: [xt.UpvoteOnly, xt.UpvoteDownvote],
+					web2x_inbox_redesign: [Pt.Redesign],
 					[le]: [Bt.Enabled],
 					[oe]: [It.Enabled],
 					[ae]: [jt.Rotate, jt.RotateAll],
@@ -6446,9 +6450,9 @@
 					[J]: [yt.Active],
 					[A]: [ut.Enabled]
 				},
-				Lt = new Set([O, u, j, J, N, se]),
-				At = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
-				Dt = At(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"])
+				At = new Set([O, u, j, J, N, se]),
+				Dt = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
+				Gt = Dt(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"])
 		},
 		"./src/reddit/constants/featureThrottling.ts": function(e, t, i) {
 			"use strict";
@@ -21902,4 +21906,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.10b3ff79f3252a47f1ae.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.13fe45e7d5f42a2a8a5a.js.map
