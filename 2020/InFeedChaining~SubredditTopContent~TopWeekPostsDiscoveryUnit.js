@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.4eb6576809941785f279.js
-// Retrieved at 7/7/2020, 8:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.d91e868d44fa9d482d2e.js
+// Retrieved at 7/8/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -414,9 +414,9 @@
 				F = s("./src/reddit/models/Subreddit/index.ts"),
 				H = s("./src/reddit/models/Widgets/index.ts"),
 				Q = s("./src/reddit/components/MiniCardPost/index.m.less"),
-				G = s.n(Q),
-				z = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				Z = s.n(z),
+				z = s.n(Q),
+				G = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				Z = s.n(G),
 				q = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
 				J = s.n(q);
 
@@ -456,10 +456,10 @@
 					let k = P && i.a.createElement(S.a, {
 							autoplayPref: e,
 							availableWidth: t,
-							className: G.a.media,
+							className: z.a.media,
 							forceAspectRatio: V.c,
-							imageBoxClassName: G.a.mediaImageBox,
-							imageBoxContentImageClassName: G.a.mediaImageBoxContentImage,
+							imageBoxClassName: z.a.mediaImageBox,
+							imageBoxContentImageClassName: z.a.mediaImageBoxContentImage,
 							isListing: !0,
 							isMiniCard: m,
 							isNotCardView: !0,
@@ -479,16 +479,16 @@
 					const j = !_ && !O;
 					let w;
 					return y && (w = Object(F.f)(y) ? Object(H.h)(y) : Object(H.i)(y)), i.a.createElement(A.a, {
-						className: Object(c.a)(J.a.container, Z.a.largeAndMediumActiveStyles, Z.a.largeAndMediumPostStyles, G.a.postContainer, Object(R.a)(this.props), s),
+						className: Object(c.a)(J.a.container, Z.a.largeAndMediumActiveStyles, Z.a.largeAndMediumPostStyles, z.a.postContainer, Object(R.a)(this.props), s),
 						post: p,
 						onClick: u,
 						eventFactory: r,
 						style: Object.assign({}, Object(R.b)(this.props.flairStyleTemplate), Object(R.d)(this.props), this.props.style)
 					}, i.a.createElement(D.a, {
-						className: G.a.backgroundWrapper,
+						className: z.a.backgroundWrapper,
 						flairStyleTemplate: o
 					}, i.a.createElement("div", {
-						className: Object(c.a)(J.a.innerContainer, G.a.innerContainer)
+						className: Object(c.a)(J.a.innerContainer, z.a.innerContainer)
 					}, E && y && i.a.createElement(I, Y({
 						created: p.created
 					}, w)), f && y && i.a.createElement(N, Y({
@@ -720,7 +720,7 @@
 							searchOptions: o
 						} = this.props;
 						let c;
-						return (c = "subreddit" === t && o ? p.I(o, i, n, r) : r && o ? p.G(o, i, n, r) : p.u(s, a))(e)
+						return (c = "subreddit" === t && o ? p.H(o, i, n, r) : r && o ? p.I(o, i, n, r) : p.u(s, a))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.4eb6576809941785f279.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.d91e868d44fa9d482d2e.js.map

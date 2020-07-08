@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d3b877a5051eb5910982.js
-// Retrieved at 7/8/2020, 2:30:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.6ec94707aac9b977a6fd.js
+// Retrieved at 7/8/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2262,7 +2262,7 @@
 							searchOptions: i
 						} = this.props;
 						let c;
-						return (c = "subreddit" === t && i ? u.I(i, o, r, a) : a && i ? u.G(i, o, r, a) : u.u(s, n))(e)
+						return (c = "subreddit" === t && i ? u.H(i, o, r, a) : a && i ? u.I(i, o, r, a) : u.u(s, n))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -4460,11 +4460,17 @@
 					super(e), this.onSubscribeClick = this.onSubscribeClick.bind(this), this.onTitleClick = this.onTitleClick.bind(this)
 				}
 				onSubscribeClick(e, t) {
-					e.stopPropagation(), this.props.id && t(this.props.id)
+					e.stopPropagation(), this.props.id && t({
+						id: this.props.id,
+						type: this.props.type
+					})
 				}
 				onTitleClick(e) {
 					return () => {
-						this.props.id && e(this.props.id)
+						this.props.id && e({
+							id: this.props.id,
+							type: this.props.type
+						})
 					}
 				}
 				render() {
@@ -4705,10 +4711,13 @@
 					navigateToSubreddit: t => {
 						e((e, n) => {
 							s ? h.s(n(), s, t) : o && h.M(n(), o, t), t.displayText && e(Object(j.b)("/".concat(t.displayText)))
-						}), o && a && t.id && e((e, s) => h.H(s(), a, r, t.id, n, o))
+						}), o && a && t.id && e((e, s) => h.G(s(), a, r, {
+							id: t.id,
+							type: t.type
+						}, n, o))
 					},
 					onCommunityClick: t => {
-						o && a && e((e, s) => h.H(s(), a, r, t, n, o))
+						o && a && e((e, s) => h.G(s(), a, r, t, n, o))
 					}
 				}
 			});
@@ -4835,10 +4844,10 @@
 					} = e, c = Object(Me.a)(), d = Object(n.useCallback)(() => {
 						c(Object(Ee.m)(t.type, a, Ue({
 							pageLayer: o
-						}))), c(Object(Ee.j)(a, o, i.id, s))
-					}, [c, a, o, i.id, s, t]), m = Object(n.useCallback)(e => {
-						e.preventDefault(), e.stopPropagation(), c(Object(Ee.j)(a, o, i.id, s))
-					}, [c, a, o, i.id, s]);
+						}))), c(Object(Ee.j)(a, o, t, s))
+					}, [c, a, o, s, t]), m = Object(n.useCallback)(e => {
+						e.preventDefault(), e.stopPropagation(), c(Object(Ee.j)(a, o, t, s))
+					}, [c, a, o, t, s]);
 					if (!i) return null;
 					const p = e.subredditOrProfile.displayText,
 						u = e.subredditOrProfileAboutInfo.publicDescription;
@@ -6092,7 +6101,7 @@
 							post: a
 						} = this.props;
 						let i;
-						return (i = "subreddit" === t ? h.I(r, o, s, n) : a && a.isSponsored ? h.F(r, o, s, n) : h.G(r, o, s, n))(e)
+						return (i = "subreddit" === t ? h.H(r, o, s, n) : a && a.isSponsored ? h.F(r, o, s, n) : h.I(r, o, s, n))(e)
 					}
 				}
 				componentDidMount() {
@@ -9602,4 +9611,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.d3b877a5051eb5910982.js.map
+//# sourceMappingURL=SearchResults.6ec94707aac9b977a6fd.js.map
