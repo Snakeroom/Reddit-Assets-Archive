@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.bd1f2374a726d3d57458.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.dc157ca8408aec85d05a.js
+// Retrieved at 7/7/2020, 8:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -851,7 +851,7 @@
 		"./src/reddit/components/IdCard/Title.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return m
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -861,70 +861,64 @@
 				c = n("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
 				d = n("./src/reddit/components/IdCard/index.m.less"),
 				l = n.n(d);
-
-			function u() {
-				return (u = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
 			const {
-				fbt: m
+				fbt: u
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function p(e) {
-				const {
-					canEditIcon: t,
-					isTargetBlank: n,
-					largeSubredditIcon: s,
-					linkUrl: d,
-					subredditIcon: p,
-					titleText: b,
-					primaryColor: h,
-					subreddit: g,
-					onOpenFilePicker: f
-				} = e, x = p.url ? m._("Update icon", null, {
-					hk: "GXdPy"
-				}) : m._("Add icon", null, {
-					hk: "31odkm"
-				});
+			function m(e) {
+				const t = Object(s.useCallback)(t => {
+						t.stopPropagation(), e.onTitleClick && e.onTitleClick()
+					}, [e.onTitleClick]),
+					{
+						canEditIcon: n,
+						isTargetBlank: d,
+						largeSubredditIcon: m,
+						linkUrl: p,
+						subredditIcon: b,
+						titleText: h,
+						primaryColor: g,
+						subreddit: f,
+						onOpenFilePicker: x
+					} = e,
+					v = b.url ? u._("Update icon", null, {
+						hk: "GXdPy"
+					}) : u._("Add icon", null, {
+						hk: "31odkm"
+					});
 				return r.a.createElement("div", {
 					className: Object(i.a)(l.a.Title, e.className)
-				}, t && g ? r.a.createElement(c.a, {
-					className: s ? l.a.largeSubredditIcon : l.a.subredditIcon,
-					key: p.url,
-					iconUrl: p.url,
-					primaryColor: h,
-					subreddit: g,
+				}, n && f ? r.a.createElement(c.a, {
+					className: m ? l.a.largeSubredditIcon : l.a.subredditIcon,
+					key: b.url,
+					iconUrl: b.url,
+					primaryColor: g,
+					subreddit: f,
 					inTopBar: !1
 				}) : r.a.createElement(a.b, {
-					altText: p.altText,
-					className: s ? l.a.largeSubredditIcon : l.a.subredditIcon,
-					key: p.url,
-					iconUrl: p.url,
-					primaryColor: h
+					altText: b.altText,
+					className: m ? l.a.largeSubredditIcon : l.a.subredditIcon,
+					key: b.url,
+					iconUrl: b.url,
+					primaryColor: g
 				}), r.a.createElement("div", {
 					className: l.a.titleTextContainer
-				}, d ? r.a.createElement(o.a, u({
+				}, p ? r.a.createElement(o.a, {
 					className: l.a.TitleLink,
-					key: d,
-					to: d,
-					onClick: e => e.stopPropagation()
-				}, n ? {
-					target: "_blank"
-				} : {}), r.a.createElement("span", {
+					key: p,
+					to: p,
+					onClick: t,
+					target: d ? "_blank" : void 0,
+					rel: d ? "noopener noreferrer" : void 0
+				}, r.a.createElement("span", {
 					className: l.a.TitleText,
-					title: b
-				}, b)) : r.a.createElement("span", {
+					title: h
+				}, h)) : r.a.createElement("span", {
 					className: l.a.TitleText,
-					key: b
-				}, b), t && g && f && r.a.createElement("div", {
+					key: h
+				}, h), n && f && x && r.a.createElement("div", {
 					className: l.a.editIconText,
-					onClick: f
-				}, x)))
+					onClick: x
+				}, v)))
 			}
 		},
 		"./src/reddit/components/IdCard/index.tsx": function(e, t, n) {
@@ -2884,4 +2878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.bd1f2374a726d3d57458.js.map
+//# sourceMappingURL=IdCard.dc157ca8408aec85d05a.js.map
