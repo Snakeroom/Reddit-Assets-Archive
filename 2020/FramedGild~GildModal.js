@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5687246613deb2694a06.js
-// Retrieved at 7/6/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.816c627b77aec4aa4eb7.js
+// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2642,4 +2642,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.5687246613deb2694a06.js.map
+//# sourceMappingURL=FramedGild~GildModal.816c627b77aec4aa4eb7.js.map

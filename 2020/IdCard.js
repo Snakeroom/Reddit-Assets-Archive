@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.dc157ca8408aec85d05a.js
-// Retrieved at 7/7/2020, 8:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.c58215d0b590550471a7.js
+// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2464,7 +2464,7 @@
 				o = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: i.cb
+				userIsSubscriber: i.db
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -2878,4 +2878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.dc157ca8408aec85d05a.js.map
+//# sourceMappingURL=IdCard.c58215d0b590550471a7.js.map

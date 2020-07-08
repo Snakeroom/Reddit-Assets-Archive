@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging~Topic.0fc386955000dd94643e.js
-// Retrieved at 7/8/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging~Topic.3b648d20c1deaacecb3a.js
+// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging~Topic"], {
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
@@ -667,7 +667,7 @@
 				a = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(n.c)({
-				userIsSubscriber: o.cb
+				userIsSubscriber: o.db
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -707,4 +707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging~Topic.0fc386955000dd94643e.js.map
+//# sourceMappingURL=Geotagging~Topic.3b648d20c1deaacecb3a.js.map

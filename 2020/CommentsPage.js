@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.099952e1d106b77b1587.js
-// Retrieved at 7/8/2020, 1:30:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.68f770e8083523ec4a38.js
+// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5549,51 +5549,56 @@
 				E = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				_ = s("./src/reddit/icons/fonts/Photos/index.tsx"),
 				k = s("./src/reddit/icons/fonts/Text/index.tsx"),
-				j = s("./src/reddit/icons/svgs/Poll/index.tsx"),
-				w = s("./src/reddit/models/Media/index.ts"),
-				P = s("./src/reddit/components/ExpandoButton/index.m.less"),
-				I = s.n(P);
-			const S = Object(i.b)(null, (e, t) => ({
+				j = s("./src/reddit/icons/svgs/Gallery/index.tsx"),
+				w = s("./src/reddit/icons/svgs/Poll/index.tsx"),
+				P = s("./src/reddit/models/Media/index.ts"),
+				I = s("./src/reddit/components/ExpandoButton/index.m.less"),
+				S = s.n(I);
+			const T = Object(i.b)(null, (e, t) => ({
 					toggle: () => e(Object(l.A)({
 						postId: t.post.id
 					}))
 				})),
-				T = function(e) {
+				N = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
 						s = arguments.length > 2 ? arguments[2] : void 0;
-					const n = Object(d.a)(I.a.icon, I.a.hideOnHover);
+					const n = Object(d.a)(S.a.icon, S.a.hideOnHover);
 					if (t) return r.a.createElement(u.a, {
 						className: n
 					});
-					if (s.pollData) return r.a.createElement(j.a, {
+					if (s.pollData) return r.a.createElement(w.a, {
 						className: n
 					});
 					switch (e) {
-						case w.o.GIFVIDEO:
+						case P.o.GIFVIDEO:
 							return r.a.createElement(O.a, {
 								className: n
 							});
-						case w.o.IMAGE:
+						case P.o.IMAGE:
 							return r.a.createElement(_.a, {
 								className: n
 							});
-						case w.o.TEXT:
-						case w.o.RTJSON:
+						case P.o.TEXT:
+						case P.o.RTJSON:
 							return r.a.createElement(k.a, {
 								className: n
 							});
-						case w.o.VIDEO:
+						case P.o.VIDEO:
 							return r.a.createElement(C.a, {
 								className: n
 							});
-						case w.o.EMBED:
+						case P.o.GALLERY:
+							return r.a.createElement(j.a, {
+								className: n
+							});
+						case P.o.EMBED:
 						default:
 							return r.a.createElement(y.a, {
 								className: n
 							})
 					}
 				};
-			t.a = S(e => {
+			t.a = T(e => {
 				const {
 					className: t,
 					crosspost: s,
@@ -5609,20 +5614,20 @@
 					"aria-label": n.fbt._("Expand content", null, {
 						hk: "1e35IG"
 					}),
-					className: Object(d.a)(t, I.a.outer),
+					className: Object(d.a)(t, S.a.outer),
 					"data-click-id": i ? "expando_close" : "expando_open",
 					onClick: u
 				}, i ? r.a.createElement(h.a, {
-					className: I.a.icon
-				}) : x ? r.a.createElement(r.a.Fragment, null, T(g.media && g.media.type, f, l), r.a.createElement(b.a, {
-					className: Object(d.a)(I.a.icon, I.a.showOnHover)
+					className: S.a.icon
+				}) : x ? r.a.createElement(r.a.Fragment, null, N(g.media && g.media.type, f, l), r.a.createElement(b.a, {
+					className: Object(d.a)(S.a.icon, S.a.showOnHover)
 				})) : r.a.createElement(b.a, {
-					className: I.a.icon
+					className: S.a.icon
 				})) : g.source && g.source.url ? r.a.createElement(m.a, {
 					"aria-label": n.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
-					className: Object(d.a)(t, I.a.outer),
+					className: Object(d.a)(t, S.a.outer),
 					"data-click-id": "expando_open",
 					href: g.source.url,
 					isSponsored: l.isSponsored,
@@ -5630,17 +5635,17 @@
 					source: l.source,
 					target: "_blank"
 				}, r.a.createElement(E.a, {
-					className: Object(d.a)(I.a.icon, I.a.outboundLinkIcon)
+					className: Object(d.a)(S.a.icon, S.a.outboundLinkIcon)
 				})) : r.a.createElement(a.a, {
 					"aria-label": n.fbt._("View content", null, {
 						hk: "24KLWF"
 					}),
-					className: Object(d.a)(t, I.a.outer),
+					className: Object(d.a)(t, S.a.outer),
 					"data-click-id": "expando_open",
 					to: Object(c.a)(g.permalink),
 					rel: "nofollow"
 				}, r.a.createElement(v, {
-					className: I.a.icon
+					className: S.a.icon
 				}))
 			})
 		},
@@ -8443,7 +8448,7 @@
 					}),
 					ue = w.removedByCategory === S.g.AuthorDeleted,
 					he = n && (n.displayText === w.author || n.username === w.author),
-					be = !ue && (he || a || !(w.removedByCategory && w.media && (Object(I.H)(w.media) || Object(I.G)(w.media)))),
+					be = !ue && (he || a || !(w.removedByCategory && w.media && (Object(I.I)(w.media) || Object(I.G)(w.media)))),
 					xe = w.removedByCategory === S.g.Reddit && Object(l.e)(w.created) > 24,
 					ge = w.removedByCategory && w.removedByCategory !== S.g.Reddit || xe,
 					fe = o.a.createElement(Me, {
@@ -13170,7 +13175,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.cb
+				userIsSubscriber: i.db
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -16466,4 +16471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.099952e1d106b77b1587.js.map
+//# sourceMappingURL=CommentsPage.68f770e8083523ec4a38.js.map

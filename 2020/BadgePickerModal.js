@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.a33188d8c593c09af623.js
-// Retrieved at 6/30/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.86603da794d3e0c5a6c4.js
+// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1247,4 +1247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePickerModal.a33188d8c593c09af623.js.map
+//# sourceMappingURL=BadgePickerModal.86603da794d3e0c5a6c4.js.map
