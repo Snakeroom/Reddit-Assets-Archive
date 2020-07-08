@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d8e57c32a3bca0ae8e3c.js
-// Retrieved at 7/8/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d5dc5c21ff25cb3a030a.js
+// Retrieved at 7/8/2020, 3:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4706,7 +4706,7 @@
 						const {
 							props: e
 						} = this;
-						e.onSetRecentSearch(e.item), e.onSendDropdownClickEvent(e.item.searchQuery, e.item.searchQuery, Y.StructureType.Search, e.item.isProfile ? Y.SearchDropdownNouns.TypeaheadProfile : Y.SearchDropdownNouns.TypeaheadSubreddit), e.onClearSearchQuery()
+						e.onSetRecentSearch(e.item), e.onSendSearchClickTypeaheadEvent(e.item.searchQuery, e.item, e.indexOfItem, e.subredditSuggestions), e.onClearSearchQuery()
 					}
 				}
 				render() {
@@ -4772,7 +4772,11 @@
 					overflow: "scroll"
 				};
 				e.isFixed && (o.zIndex = Xr.h);
-				const i = 0 === e.typeaheadSuggestions.length && !e.isTypeaheadPending;
+				const i = 0 === e.typeaheadSuggestions.length && !e.isTypeaheadPending,
+					{
+						typeaheadSuggestions: c
+					} = e,
+					d = Object(l.useMemo)(() => c.filter(e => e.isSubreddit), c);
 				return u.a.createElement(no, {
 					className: Object(g.a)(Rr.a.dropdown, ra.a.listContainer),
 					isFixed: t,
@@ -4781,12 +4785,14 @@
 					tooltipId: to,
 					noFocus: !0,
 					style: o
-				}, e.typeaheadSuggestions.map(t => u.a.createElement(Jr, {
+				}, e.typeaheadSuggestions.map((t, s) => u.a.createElement(Jr, {
 					focusedItem: e.typeaheadSuggestions[e.focusedItemIndex],
+					indexOfItem: s,
+					subredditSuggestions: d,
 					item: t,
 					key: t.id,
 					onClearSearchQuery: e.onClearSearchQuery,
-					onSendDropdownClickEvent: e.onSendDropdownClickEvent,
+					onSendSearchClickTypeaheadEvent: e.onSendSearchClickTypeaheadEvent,
 					onSetRecentSearch: e.onSetRecentSearch,
 					fireAdPixelsOfType: e.fireAdPixelsOfType
 				})), i && e.recentSearches.map((t, s) => u.a.createElement(Ur, {
@@ -5011,7 +5017,7 @@
 					}, 250), this.onSearch = async e => {
 						if (this.close(), this.state.searchQuery) {
 							let t = Object.assign({}, _r.a);
-							if (this.state.selectedItem && this.state.selectedItem.searchQuery === this.state.searchQuery)(t = this.state.selectedItem).id || (t.id = Cr()()), t.section === _r.c.recent ? this.onSendSearchClickRecentEvent(this.state.searchQuery, t, this.state.focusedItemIndex) : this.props.typeaheadSuggestions && t.isTypeaheadSuggestion ? this.onSendDropdownClickEvent(this.state.searchQuery, this.state.searchQuery, Y.StructureType.Search, t.isProfile ? Y.SearchDropdownNouns.TypeaheadProfile : Y.SearchDropdownNouns.TypeaheadSubreddit) : this.onSendDropdownClickEvent(this.state.searchQuery, this.state.searchQuery, Y.StructureType.Search, Y.SearchDropdownNouns.Recent);
+							if (this.state.selectedItem && this.state.selectedItem.searchQuery === this.state.searchQuery)(t = this.state.selectedItem).id || (t.id = Cr()()), t.section === _r.c.recent ? this.onSendSearchClickRecentEvent(this.state.searchQuery, t, this.state.focusedItemIndex) : t.section === _r.c.typeahead ? this.onSendSearchClickTypeaheadEvent(this.state.searchQuery, t, this.state.focusedItemIndex, this.state.itemList.filter(e => e.isSubreddit)) : this.onSendDropdownClickEvent(this.state.searchQuery, this.state.searchQuery, Y.StructureType.Search, Y.SearchDropdownNouns.Recent);
 							else {
 								const e = this.props.subreddit && this.props.subreddit.icon ? this.props.subreddit.icon.url : "",
 									s = this.props.subreddit ? this.props.subreddit.displayText : void 0,
@@ -5047,6 +5053,8 @@
 						this.props.sendEvent(Object(ho.s)(n, a))
 					}, this.onSendSearchClickRecentEvent = (e, t, s) => {
 						this.props.sendEvent(Object(ho.u)(e, t, s))
+					}, this.onSendSearchClickTypeaheadEvent = (e, t, s, n) => {
+						this.props.sendEvent(Object(ho.w)(e, t, s, n))
 					}, this.onSendDropdownViewEvent = (e, t, s, n) => {
 						const a = {
 							displayQuery: s,
@@ -5175,6 +5183,7 @@
 						onRemoveRecentSearch: this.onRemoveRecentSearch,
 						onSendDropdownClickEvent: this.onSendDropdownClickEvent,
 						onSendSearchClickRecentEvent: this.onSendSearchClickRecentEvent,
+						onSendSearchClickTypeaheadEvent: this.onSendSearchClickTypeaheadEvent,
 						onSetRecentSearch: this.onSetRecentSearch,
 						onUpdateSearchQuery: this.onUpdateSearchQuery,
 						recentSearches: t.recentSearches,
@@ -13536,4 +13545,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~PostCreation~Reddit~StandalonePost~ee6bfdf1", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.d8e57c32a3bca0ae8e3c.js.map
+//# sourceMappingURL=Reddit.d5dc5c21ff25cb3a030a.js.map

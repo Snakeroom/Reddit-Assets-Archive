@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.6ec94707aac9b977a6fd.js
-// Retrieved at 7/8/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.4fdc0594b71d422e8d37.js
+// Retrieved at 7/8/2020, 3:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -6533,7 +6533,7 @@
 					}, this.onShare = () => {
 						this.props.sendEvent(Object(g.f)("trending_header", "share", this.props.searchOptions))
 					}, this.onShareMenuClick = e => {
-						this.props.sendEvent(Object(g.w)(e, this.props.searchOptions))
+						this.props.sendEvent(Object(g.x)(e, this.props.searchOptions))
 					}, this.state = {
 						isFollowed: !1
 					}
@@ -9611,4 +9611,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.6ec94707aac9b977a6fd.js.map
+//# sourceMappingURL=SearchResults.4fdc0594b71d422e8d37.js.map

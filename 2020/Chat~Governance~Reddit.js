@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f6a35193c63fc961a39b.js
-// Retrieved at 7/8/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.280f18b974a7a39662f4.js
+// Retrieved at 7/8/2020, 3:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3276,14 +3276,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("52fcb1a-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("5157957-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "52fcb1a-production",
+						release: "5157957-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3699,7 +3699,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "52fcb1a-production",
+							releaseClient: "5157957-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17370,7 +17370,7 @@
 					return i ? {
 						id: i.id,
 						name: i.name,
-						nsfw: i.isNSFW
+						nsfw: !!i.isNSFW
 					} : null
 				},
 				ut = e => {
@@ -17608,7 +17608,7 @@
 				};
 			var It, Ot, Bt;
 			! function(e) {
-				e.Recent = "recent_search", e.Trending = "trending_search", e.TypeaheadSubreddit = "search_results_subreddit", e.TypeaheadProfile = "search_results_profile"
+				e.Recent = "recent_search", e.Trending = "trending_search", e.TypeaheadSubreddit = "search_results_subreddit", e.TypeaheadProfile = "search_results_profile", e.Typeahead = "typeahead"
 			}(It || (It = {})),
 			function(e) {
 				e.Recent = "history", e.Search = "search", e.Topics = "topics", e.Trending = "trending", e.PromotedTrend = "promoted_trend"
@@ -21395,6 +21395,7 @@
 				});
 			var pt = i("./src/telemetry/eventSchemas/search_types.js");
 			const ht = e => new pt.Search({
+				number_subreddits: e.numberSubreddits,
 				origin_element: e.originElement,
 				origin_page_type: e.originPageType,
 				post_flair_name: e.postFlairName,
@@ -21405,6 +21406,7 @@
 				structure_type: e.structureType,
 				subreddit_name: e.subredditName,
 				subreddit_id: e.subredditId,
+				subreddit_ids: e.subredditIds,
 				typeahead_active: e.typeaheadActive
 			});
 			var ft = i("./src/telemetry/eventSchemas/seo_types.js");
@@ -21868,4 +21870,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.f6a35193c63fc961a39b.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.280f18b974a7a39662f4.js.map
