@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.c03193cd98d7809e28cf.js
-// Retrieved at 7/8/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.82d730273495ba6a87a0.js
+// Retrieved at 7/8/2020, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1479,11 +1479,12 @@
 					v = d ? r.a.createElement(M, {
 						src: a || void 0
 					}) : r.a.createElement(L, null),
-					C = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0);
+					C = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
+					E = e.layout ? e.layout === g.g.Large ? "".concat(984, "px") : "100%" : "".concat(1086, "px");
 				return r.a.createElement("div", {
 					className: R.a.container,
 					style: {
-						maxWidth: e.layout === g.g.Large ? "".concat(984, "px") : "100%"
+						maxWidth: E
 					}
 				}, r.a.createElement("div", {
 					className: R.a.subredditMetaContainer
@@ -6337,35 +6338,33 @@
 					const {
 						className: e,
 						contentGateInfo: t,
-						layout: n,
-						subreddit: s,
-						subredditName: i
-					} = this.props, a = !!s && s.isNSFW && !W.V, o = Object(L.a)(t, a, i);
-					if (o) return r.a.createElement(c.default, o);
-					const u = "/r/".concat(i, "/");
+						subreddit: n,
+						subredditName: s
+					} = this.props, i = !!n && n.isNSFW && !W.V, a = Object(L.a)(t, i, s);
+					if (a) return r.a.createElement(c.default, a);
+					const o = "/r/".concat(s, "/");
 					return r.a.createElement(M.a, {
 						className: e,
 						disableFullscreen: !0,
 						maxWidth: R.i,
 						navBar: r.a.createElement(r.a.Fragment, null, r.a.createElement(l.a, {
 							disableFullscreen: !0,
-							headerText: s ? s.name : i,
+							headerText: n ? n.name : s,
 							maxWidth: R.i,
-							subredditOrProfile: s,
-							url: u
+							subredditOrProfile: n,
+							url: o
 						}), r.a.createElement(d.a, {
-							layout: n,
-							subreddit: s || void 0,
-							subredditId: s ? s.id : void 0,
-							subredditName: i,
-							subredditUrl: u
+							subreddit: n || void 0,
+							subredditId: n ? n.id : void 0,
+							subredditName: s,
+							subredditUrl: o
 						})),
 						content: r.a.createElement(P, {
-							subredditName: i
+							subredditName: s
 						}),
-						sidebar: s && r.a.createElement(b, {
-							subreddit: s,
-							subredditName: i
+						sidebar: n && r.a.createElement(b, {
+							subreddit: n,
+							subredditName: s
 						})
 					})
 				}
@@ -7190,4 +7189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.c03193cd98d7809e28cf.js.map
+//# sourceMappingURL=SubredditWiki.82d730273495ba6a87a0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.68e0b5f6eb5a243a8d61.js
-// Retrieved at 7/8/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.a608f0a6c3f014de76ed.js
+// Retrieved at 7/8/2020, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -334,11 +334,12 @@
 					C = c ? r.a.createElement(B, {
 						src: i || void 0
 					}) : r.a.createElement(L, null),
-					O = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0);
+					O = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
+					j = e.layout ? e.layout === g.g.Large ? "".concat(984, "px") : "100%" : "".concat(1086, "px");
 				return r.a.createElement("div", {
 					className: A.a.container,
 					style: {
-						maxWidth: e.layout === g.g.Large ? "".concat(984, "px") : "100%"
+						maxWidth: j
 					}
 				}, r.a.createElement("div", {
 					className: A.a.subredditMetaContainer
@@ -7488,4 +7489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.68e0b5f6eb5a243a8d61.js.map
+//# sourceMappingURL=Subreddit.a608f0a6c3f014de76ed.js.map

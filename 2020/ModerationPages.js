@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e28c2c4af177edd977d8.js
-// Retrieved at 7/8/2020, 1:30:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.265f61ec02585e068c5a.js
+// Retrieved at 7/8/2020, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -22564,7 +22564,7 @@
 							reportReason: e.currentTarget.value
 						})
 					}, this.onDescriptionInputChange = e => {
-						e.currentTarget.value.trim().length <= H.d && this.setState({
+						e.currentTarget.value.trim().length <= H.a && this.setState({
 							description: e.currentTarget.value
 						})
 					}, this.onSave = () => {
@@ -22583,7 +22583,7 @@
 							props: e,
 							state: t
 						} = this, s = t.rule.trim(), n = t.reportReason.trim(), o = t.description.trim(), a = !e.ruleNames.includes(s) || e.ruleNames.includes(s) && e.rule && e.rule.shortName === s, r = !e.rule || (e.rule.shortName !== s || e.rule.violationReason !== t.reportReason || e.rule.kind !== t.kind || e.rule.description !== o);
-						return a && r && s.length > 0 && s.length <= H.g && n.length <= H.f && o.length <= H.d && t.kind
+						return a && r && s.length > 0 && s.length <= H.g && n.length <= H.f && o.length <= H.a && t.kind
 					}, this.selectRuleKind = e => {
 						this.setState({
 							kind: e
@@ -22704,7 +22704,7 @@
 						}),
 						value: t.description
 					}), c.a.createElement(X.a, {
-						maxChars: H.d,
+						maxChars: H.a,
 						text: t.description.trim()
 					}))), c.a.createElement(Y.f, {
 						className: G.a.modalFooter
@@ -30007,4 +30007,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.e28c2c4af177edd977d8.js.map
+//# sourceMappingURL=ModerationPages.265f61ec02585e068c5a.js.map
