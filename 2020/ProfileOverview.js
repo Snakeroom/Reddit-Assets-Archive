@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.2dc0bb6f95cbee8734a0.js
-// Retrieved at 7/7/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.e4de71037521ef7339f0.js
+// Retrieved at 7/8/2020, 1:30:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -12795,7 +12795,7 @@
 					[c.g.Compact]: p
 				},
 				x = e => r.a.createElement(l, e),
-				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com"],
+				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com"],
 				g = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
 				v = e => !e.media || e.media.type === d.o.EMBED && !(d.b.has(e.media.provider) || g(e)),
 				O = (e, t) => {
@@ -14960,4 +14960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.2dc0bb6f95cbee8734a0.js.map
+//# sourceMappingURL=ProfileOverview.e4de71037521ef7339f0.js.map

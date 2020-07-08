@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b656a4aa9d7d148de9ca.js
-// Retrieved at 7/7/2020, 8:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.16a1a4674d089b86fa91.js
+// Retrieved at 7/8/2020, 1:30:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -9114,7 +9114,7 @@
 					[c.g.Compact]: p
 				},
 				x = e => o.a.createElement(l, e),
-				y = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com"],
+				y = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com"],
 				f = e => e.source && e.source.url && e.isSponsored && y.some(t => e.source.url.startsWith(t)),
 				g = e => !e.media || e.media.type === d.o.EMBED && !(d.b.has(e.media.provider) || f(e)),
 				v = (e, t) => {
@@ -9596,4 +9596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.b656a4aa9d7d148de9ca.js.map
+//# sourceMappingURL=SearchResults.16a1a4674d089b86fa91.js.map
