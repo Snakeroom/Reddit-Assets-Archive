@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.935b1625c35d82581ad5.js
-// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.e7d3855055fdc78b80c5.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, s) {
@@ -221,8 +221,8 @@
 					}, t()))
 				})))
 			}
-			var E = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				x = s("./src/reddit/contexts/ApiContext.tsx"),
+			var x = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				E = s("./src/reddit/contexts/ApiContext.tsx"),
 				C = s("./src/reddit/controls/Button/index.tsx"),
 				w = s("./src/reddit/endpoints/economics/banners.ts"),
 				j = s("./src/reddit/endpoints/economics/emojis.ts"),
@@ -408,7 +408,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(P.x)(e, s)
+					return Object(P.s)(e, s)
 				},
 				subreddit: (e, t) => {
 					let {
@@ -473,7 +473,7 @@
 				className: oe.a.planet
 			}));
 			const me = Object(ee.a)(te.a);
-			var ue, pe = Object(E.c)((function(e) {
+			var ue, pe = Object(x.c)((function(e) {
 					const t = le.get(e.type),
 						s = ce.get(e.type);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
@@ -513,7 +513,7 @@
 				})),
 				be = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Setup/index.m.less"),
 				he = s.n(be),
-				ge = Object(E.c)(class extends r.a.Component {
+				ge = Object(x.c)(class extends r.a.Component {
 					constructor() {
 						super(...arguments), this.state = {
 							selectedPlatform: void 0,
@@ -621,7 +621,7 @@
 							selectedPlatform: a,
 							selectedPlayerType: r
 						} = this.state;
-						if (!(n && a && r && s && t !== P.b.DontKnow)) return null;
+						if (!(n && a && r && s && t !== P.a.DontKnow)) return null;
 						const i = "".concat(n, "_").concat(a, "_").concat(r, "_badge"),
 							o = await Object(j.a)(this.props.apiContext(), {
 								productId: i,
@@ -720,7 +720,7 @@
 						selectedPlatform: c,
 						selectedPlayerType: l
 					} = this.state;
-					return a && s !== P.b.DontKnow && i !== ue.Hidden ? this.state.show === ue.Dismissed ? r.a.createElement("div", {
+					return a && s !== P.a.DontKnow && i !== ue.Hidden ? this.state.show === ue.Dismissed ? r.a.createElement("div", {
 						className: Object(d.a)(_e.a.dismissedContainer, e)
 					}, r.a.createElement("div", {
 						className: _e.a.dismissedText
@@ -760,7 +760,7 @@
 						platform: c,
 						playerType: l,
 						region: o,
-						userIsSubscriber: s === P.b.Subscribed,
+						userIsSubscriber: s === P.a.Subscribed,
 						onClaim: e => this.handleClaim(e)
 					})), r.a.createElement(S.a, {
 						className: _e.a.close,
@@ -773,7 +773,7 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(P.h)(e, s, w.a.LFG)
+						return Object(P.g)(e, s, w.a.LFG)
 					},
 					subreddit: (e, t) => {
 						let {
@@ -785,12 +785,12 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(P.E)(e, s)
+						return Object(P.x)(e, s)
 					},
 					userIsLoggedIn: e => !!e.user.account
 				}),
-				Ee = Object(E.c)(ve);
-			t.default = Object(x.b)(Object(i.b)(ye, (e, t) => {
+				xe = Object(x.c)(ve);
+			t.default = Object(E.b)(Object(i.b)(ye, (e, t) => {
 				let {
 					subredditId: s
 				} = t;
@@ -810,7 +810,7 @@
 					},
 					onUndismissBanner: () => e(Object(l.c)(s, w.a.LFG))
 				}
-			})(Ee))
+			})(xe))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/LFGBanner/models.ts": function(e, t, s) {
 			"use strict";
@@ -977,4 +977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Economics-SubredditPremium-LFGBanner.935b1625c35d82581ad5.js.map
+//# sourceMappingURL=reddit-components-Economics-SubredditPremium-LFGBanner.e7d3855055fdc78b80c5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.b22e8768c352b9162285.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.743ddcf191f6bbe19fcf.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -31,7 +31,7 @@
 			})), n.d(t, "f", (function() {
 				return N
 			})), n.d(t, "g", (function() {
-				return S
+				return G
 			})), n.d(t, "d", (function() {
 				return B
 			})), n.d(t, "e", (function() {
@@ -68,8 +68,8 @@
 				T = Object(s.a)(j.t),
 				E = Object(s.a)(j.u),
 				U = Object(s.a)(j.v),
-				G = Object(s.a)(j.w),
-				S = Object(s.a)(j.x),
+				S = Object(s.a)(j.w),
+				G = Object(s.a)(j.x),
 				B = (e, t) => async (n, r, s) => {
 					let o, {
 							apiContext: d,
@@ -139,7 +139,7 @@
 					} = r;
 					t(U());
 					const o = await Object(b.a)(s(), e);
-					o.ok ? t(G(o.body)) : t(E({
+					o.ok ? t(S(o.body)) : t(E({
 						error: o.error
 					}))
 				}
@@ -222,7 +222,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return Object(g.G)(e, n)
+					return Object(g.z)(e, n)
 				}
 			});
 			t.default = Object(p.a)("spPublicPoints", Object(d.b)(y, e => ({
@@ -654,4 +654,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.b22e8768c352b9162285.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.743ddcf191f6bbe19fcf.js.map

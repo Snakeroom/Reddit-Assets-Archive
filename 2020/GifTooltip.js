@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.3c17e2ce7f74bd0e3cde.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.6bc2d31d3df2f08e3ca0.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -53,8 +53,8 @@
 				v || (v = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var N = s("./node_modules/lodash/debounce.js"),
-				j = s.n(N),
-				w = s("./src/lib/classNames/index.ts"),
+				w = s.n(N),
+				j = s("./src/lib/classNames/index.ts"),
 				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				R = s("./src/reddit/selectors/user.ts"),
 				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
@@ -68,7 +68,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = j()(() => {
+					}, this.dispatchOnChange = w()(() => {
 						this.props.onChange(this.state.query)
 					}, k), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -84,7 +84,7 @@
 						query: t
 					} = this.state, s = "powered-by-giphy-".concat(e ? "dark" : "light", ".png");
 					return l.a.createElement("div", {
-						className: Object(w.a)(O.a.searchBox, this.props.className)
+						className: Object(j.a)(O.a.searchBox, this.props.className)
 					}, l.a.createElement("button", {
 						className: O.a.searchIconButton,
 						onClick: this.focusOnInput
@@ -297,7 +297,7 @@
 					let {
 						subreddit: s
 					} = t;
-					return Object(E.D)(e, s.id)
+					return Object(E.w)(e, s.id)
 				}
 			});
 			t.a = Object(u.c)(Object(d.b)(q, e => ({
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.3c17e2ce7f74bd0e3cde.js.map
+//# sourceMappingURL=GifTooltip.6bc2d31d3df2f08e3ca0.js.map

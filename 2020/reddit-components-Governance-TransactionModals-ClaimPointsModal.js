@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e5c81978e8248b630080.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.f5e29cd8cd1ad67166dd.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -158,7 +158,7 @@
 				fbt: E
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			const M = Object(r.c)({
-				claimablePoints: u.i,
+				claimablePoints: u.h,
 				tokenDisplayConversion: p.o,
 				tokenName: p.p,
 				userId: e => {
@@ -221,4 +221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.e5c81978e8248b630080.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.f5e29cd8cd1ad67166dd.js.map

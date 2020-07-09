@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.9c7aedd5836ec79190e1.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.92267c12ec48cd365a8d.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -185,7 +185,7 @@
 					super(...arguments), this.state = {
 						loading: !0,
 						submitting: !1
-					}, this.alreadyPurchased = () => this.props.userIsPremiumSubscriber === y.b.Subscribed, this.getId = () => O + (this.props.uniqueId || "")
+					}, this.alreadyPurchased = () => this.props.userIsPremiumSubscriber === y.a.Subscribed, this.getId = () => O + (this.props.uniqueId || "")
 				}
 				componentDidMount() {
 					if (!this.alreadyPurchased()) {
@@ -274,19 +274,19 @@
 					let {
 						subreddit: r
 					} = t;
-					return Object(y.p)(e, r.id)
+					return Object(y.l)(e, r.id)
 				},
 				meta: (e, t) => {
 					let {
 						subreddit: r
 					} = t;
-					return Object(y.x)(e, r.id)
+					return Object(y.s)(e, r.id)
 				},
 				userIsPremiumSubscriber: (e, t) => {
 					let {
 						subreddit: r
 					} = t;
-					return Object(y.E)(e, r.id)
+					return Object(y.x)(e, r.id)
 				}
 			});
 			t.a = Object(g.b)(Object(a.b)(S, (e, t) => {
@@ -399,7 +399,7 @@
 					let {
 						subreddit: r
 					} = t;
-					return Object(E.x)(e, r.id)
+					return Object(E.s)(e, r.id)
 				}
 			});
 			var N = Object(i.b)(O)((function(e) {
@@ -708,4 +708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.9c7aedd5836ec79190e1.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.92267c12ec48cd365a8d.js.map

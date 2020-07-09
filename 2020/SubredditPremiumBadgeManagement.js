@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.29570acc611a9529c72e.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.73eafb4b6f156ea2f279.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -63,7 +63,7 @@
 			var u = Object(m.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
-					getComponent: () => Promise.all([a.e("vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~PostCreation~Reddit~StandalonePost~ee6bfdf1"), a.e("EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"), a.e("SubredditPremiumBadgeHovercardTooltip")]).then(a.bind(null, "./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/tooltip.tsx")).then(e => e.default)
+					getComponent: () => Promise.all([a.e("vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip"), a.e("EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"), a.e("SubredditPremiumBadgeHovercardTooltip")]).then(a.bind(null, "./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/tooltip.tsx")).then(e => e.default)
 				}),
 				p = a("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				g = a("./src/reddit/featureFlags/index.ts"),
@@ -367,7 +367,7 @@
 						const t = Object.keys(a.collections);
 						if (t.length) {
 							const a = t[0];
-							return Object(m.j)(e, {
+							return Object(m.i)(e, {
 								collectionId: a,
 								subredditId: n
 							})
@@ -863,7 +863,7 @@
 					let {
 						subredditId: a
 					} = t;
-					return Object(p.s)(e, a, m.a.Achievement)
+					return Object(p.o)(e, a, m.a.Achievement)
 				}
 			});
 			var q = Object(d.b)(W)((function(e) {
@@ -961,7 +961,7 @@
 					let {
 						subredditId: a
 					} = t;
-					const n = Object(p.s)(e, a, m.a.Achievement);
+					const n = Object(p.o)(e, a, m.a.Achievement);
 					for (const s of n)
 						if (s.locked.length || s.unlocked.length) return !0;
 					return !1
@@ -997,7 +997,7 @@
 					let {
 						subredditId: a
 					} = t;
-					return Object(p.s)(e, a, m.a.Cosmetic, m.c.Gallery)
+					return Object(p.o)(e, a, m.a.Cosmetic, m.c.Gallery)
 				}
 			});
 			var ce = Object(d.b)(re)((function(e) {
@@ -1027,13 +1027,13 @@
 					let {
 						subredditId: a
 					} = t;
-					return Object(p.s)(e, a, m.a.Loyalty)
+					return Object(p.o)(e, a, m.a.Loyalty)
 				},
 				meta: (e, t) => {
 					let {
 						subredditId: a
 					} = t;
-					return Object(p.x)(e, a)
+					return Object(p.s)(e, a)
 				}
 			});
 			var me = Object(d.b)(le)((function(e) {
@@ -1096,7 +1096,7 @@
 					let {
 						subredditId: a
 					} = t;
-					return Object(p.x)(e, a)
+					return Object(p.s)(e, a)
 				},
 				subreddit: (e, t) => {
 					let {
@@ -1155,7 +1155,7 @@
 					let {
 						subredditId: a
 					} = t;
-					return Object(p.s)(e, a, m.a.Cosmetic, m.c.MyBadges)
+					return Object(p.o)(e, a, m.a.Cosmetic, m.c.MyBadges)
 				},
 				customBadgesEnabled: pe.d.spCustomBadges
 			});
@@ -1247,7 +1247,7 @@
 					let {
 						subredditId: a
 					} = t;
-					return Object(p.n)(e, a)
+					return Object(p.j)(e, a)
 				},
 				view: e => e.economics.currentBadgeManagementScreen.view
 			});
@@ -1338,9 +1338,9 @@
 					let {
 						subredditId: a
 					} = t;
-					return Object(p.x)(e, a)
+					return Object(p.s)(e, a)
 				},
-				ownedBadge: p.q,
+				ownedBadge: p.m,
 				subreddit: (e, t) => {
 					let {
 						subredditId: a
@@ -1493,14 +1493,14 @@
 						subredditId: n,
 						type: s
 					} = t;
-					const d = Object(p.g)(e, n)[s];
+					const d = Object(p.f)(e, n)[s];
 					return d ? d.id === a.id : "removeBadge" === a.type
 				},
 				lastUnlockedLoyaltyBadge: (e, t) => {
 					let {
 						subredditId: a
 					} = t;
-					const n = Object(p.s)(e, a, m.a.Loyalty)[0];
+					const n = Object(p.o)(e, a, m.a.Loyalty)[0];
 					if (n) return Ke()(n.unlocked)
 				}
 			});
@@ -1706,7 +1706,7 @@
 					account: e => e.user.account,
 					appliedBadges: (e, t) => {
 						const a = Object(i.q)(e, t);
-						return a ? Object(p.g)(e, a.id) : {
+						return a ? Object(p.f)(e, a.id) : {
 							[m.a.Loyalty]: void 0,
 							[m.a.Achievement]: void 0,
 							[m.a.Cosmetic]: void 0
@@ -1726,7 +1726,7 @@
 							}
 						}
 						if (n && !s && a === m.c.Gallery) {
-							const t = Object(p.s)(e, n.id, m.a.Cosmetic, m.c.Gallery)[0];
+							const t = Object(p.o)(e, n.id, m.a.Cosmetic, m.c.Gallery)[0];
 							if (t) {
 								const e = t.locked[0];
 								e && (Object(l.d)(e) || e.price) && (s = t.locked[0])
@@ -1787,7 +1787,7 @@
 						subredditId: a,
 						userId: n
 					} = t;
-					return Object(u.w)(e, a, n)
+					return Object(u.r)(e, a, n)
 				},
 				customBadgesEnabled: m.d.spCustomBadges,
 				premiumEnabled: e => m.d.spPremium(e)
@@ -1914,7 +1914,7 @@
 						subredditId: a,
 						userId: n
 					} = t;
-					return Object(c.w)(e, a, n)
+					return Object(c.r)(e, a, n)
 				}
 			}))(i)
 		},
@@ -2423,4 +2423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeManagement.29570acc611a9529c72e.js.map
+//# sourceMappingURL=SubredditPremiumBadgeManagement.73eafb4b6f156ea2f279.js.map

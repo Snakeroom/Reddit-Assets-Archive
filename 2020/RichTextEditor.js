@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.1d8287ef6479bba068bb.js
-// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.30c354d6cebafd66e34b.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -133,7 +133,7 @@
 				} = o;
 				const i = n(),
 					a = i.user.account,
-					d = Object(x.g)(i, e.subredditId),
+					d = Object(x.f)(i, e.subredditId),
 					l = Object.keys(d).map(e => d[e]).filter(Boolean);
 				if (a && e.badge) {
 					let n, o;
@@ -189,10 +189,10 @@
 				} = r;
 				if (await o(k(e, !0)), n && t) {
 					const n = s(),
-						r = Object(x.g)(n, e),
+						r = Object(x.f)(n, e),
 						i = Object(g.a)(n, t);
 					if (!r[Object(h.d)(i.placement)] && i) {
-						const t = Object(x.q)(n, {
+						const t = Object(x.m)(n, {
 							subredditId: e,
 							badge: i
 						});
@@ -1054,7 +1054,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const o = Object(z.c)(e, n);
+					const o = Object(z.b)(e, n);
 					if (o) {
 						const e = o.reduce((e, t) => Object.assign({}, e, t.emotes), {});
 						return Object.keys(e).slice(0, 3).map(t => e[t])
@@ -1229,7 +1229,7 @@
 					draft: _e.i,
 					userCanUseGifs: (e, t) => {
 						const n = Object(ge.p)(e, t);
-						return Object(z.A)(e, n ? n.id : void 0, t.parentCommentId)
+						return Object(z.t)(e, n ? n.id : void 0, t.parentCommentId)
 					}
 				}), (e, t) => ({
 					cancelModalToggled: () => e(Object(pe.i)(Object(le.a)(t.draftKey)))
@@ -2799,4 +2799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.1d8287ef6479bba068bb.js.map
+//# sourceMappingURL=RichTextEditor.30c354d6cebafd66e34b.js.map

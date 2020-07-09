@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.107602fbbe360baca656.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.1b1a2ef9a143c12bd49f.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -322,7 +322,7 @@
 				return "".concat(r.a.assetPath, "/img/communityPoints/learnMore/slide").concat(e).concat(t ? "@2x" : "", ".png")
 			}
 			var M = function(e) {
-					const [t, a] = Object(n.useState)(0), r = Object(c.d)(v.r), o = r && r.learnMore.pages || [], i = o.map(e => e.body).reduce((e, t) => t.length > e.length ? t : e, ""), l = t => {
+					const [t, a] = Object(n.useState)(0), r = Object(c.d)(v.n), o = r && r.learnMore.pages || [], i = o.map(e => e.body).reduce((e, t) => t.length > e.length ? t : e, ""), l = t => {
 						a(t), t + 1 === o.length && e.onComplete()
 					};
 					return s.a.createElement("div", {
@@ -403,7 +403,7 @@
 				})
 			}
 			var w = function() {
-					const e = Object(c.d)(v.r),
+					const e = Object(c.d)(v.n),
 						t = Object(g.a)();
 					Object(n.useEffect)(() => {
 						t(Object(f.g)())
@@ -436,7 +436,7 @@
 				fbt: S
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = function() {
-				const [e, t] = Object(n.useState)(!1), [a, i] = Object(n.useState)(!1), l = Object(c.d)(o.e), d = Object(c.d)(v.r), m = Object(g.a)();
+				const [e, t] = Object(n.useState)(!1), [a, i] = Object(n.useState)(!1), l = Object(c.d)(o.e), d = Object(c.d)(v.n), m = Object(g.a)();
 				Object(n.useEffect)(() => {
 					m(Object(f.i)())
 				}, [m]);
@@ -461,4 +461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommunityPointsLearnMore.107602fbbe360baca656.js.map
+//# sourceMappingURL=CommunityPointsLearnMore.1b1a2ef9a143c12bd49f.js.map

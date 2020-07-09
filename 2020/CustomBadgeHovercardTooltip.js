@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.63e14676b1113038e23f.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.6b88c9cb1bc83f91aaae.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less": function(e, t, s) {
@@ -55,7 +55,7 @@
 					this.props.onHideTooltip(), this.props.onOpenUploadDialog()
 				}
 				render() {
-					const e = this.props.userIsPremiumSubscriber === f.b.Subscribed,
+					const e = this.props.userIsPremiumSubscriber === f.a.Subscribed,
 						t = this.props.subreddit && this.props.subreddit.name || "",
 						s = this.props.meta;
 					return o.a.createElement("div", {
@@ -108,7 +108,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(f.x)(e, s)
+					return Object(f.s)(e, s)
 				},
 				subreddit: (e, t) => {
 					let {
@@ -120,7 +120,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(f.E)(e, s)
+					return Object(f.x)(e, s)
 				}
 			});
 			var E = Object(h.c)(Object(n.b)(A, e => ({
@@ -170,4 +170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CustomBadgeHovercardTooltip.63e14676b1113038e23f.js.map
+//# sourceMappingURL=CustomBadgeHovercardTooltip.6b88c9cb1bc83f91aaae.js.map

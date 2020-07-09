@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6a97e181e5e6ba9a2631.js
-// Retrieved at 7/9/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3a2385880b8bab55406a.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -466,8 +466,8 @@
 				F = s("./src/reddit/components/ClassicPost/index.m.less"),
 				W = s.n(F);
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (e[o] = s[o])
@@ -475,7 +475,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const V = 16;
+			const D = 16;
 			class H extends n.a.Component {
 				componentDidUpdate(e) {
 					this.props.onSizeChanged && e.isExpanded !== this.props.isExpanded && this.props.onSizeChanged(this.props.post.id)
@@ -499,9 +499,9 @@
 						isOverlay: U,
 						moderatorPermissions: K,
 						modModeEnabled: Q,
-						onClickPost: q,
-						onIgnoreReports: Z,
-						onOpenReportsDropdown: Y,
+						onClickPost: Z,
+						onIgnoreReports: Y,
+						onOpenReportsDropdown: q,
 						poll: $,
 						post: ee,
 						redditStyle: te,
@@ -525,7 +525,7 @@
 						isOverlay: U,
 						style: Object.assign({}, Object(B.d)(this.props), Object(B.b)(this.props.flairStyleTemplate)),
 						post: ee,
-						onClick: q,
+						onClick: Z,
 						eventFactory: N
 					}, n.a.createElement(E.a, {
 						model: ee,
@@ -564,7 +564,7 @@
 						className: W.a.content,
 						"data-click-id": "body",
 						style: {
-							paddingBottom: "".concat(V, "px")
+							paddingBottom: "".concat(D, "px")
 						}
 					}, n.a.createElement(w.c, {
 						className: $ ? W.a.titleWithPoll : void 0,
@@ -580,10 +580,10 @@
 						isSponsored: ee.isSponsored,
 						postId: ee.id,
 						source: ee.source
-					}, Object(d.a)(ee))), n.a.createElement(g.a, D({
+					}, Object(d.a)(ee))), n.a.createElement(g.a, V({
 						key: "PostMeta"
 					}, Oe)), Q && me && Object(f.c)(ee) && n.a.createElement(h.a, {
-						onIgnoreReports: Z,
+						onIgnoreReports: Y,
 						reportable: ee
 					}), n.a.createElement("div", {
 						className: W.a.spacer
@@ -623,8 +623,8 @@
 						hasModFullPerms: ue,
 						isOverlay: !!U,
 						modModeEnabled: Q,
-						onIgnoreReports: Z,
-						onOpenReportsDropdown: Y,
+						onIgnoreReports: Y,
+						onOpenReportsDropdown: q,
 						post: ee,
 						showEditPost: he,
 						showEditFlair: ne,
@@ -1024,7 +1024,6 @@
 		},
 		"./src/reddit/components/PostMeta/index.m.less": function(e, t, s) {
 			e.exports = {
-				donationAmount: "_1x9gNS8wlrugqgwofOEcGq",
 				metaContainer: "Ywkt6EDfNWINeTr9lP29H",
 				postTopMeta: "iaAYGvTNtknkTxuHArCzL",
 				subredditName: "_1L0pdcPf58t25Jy6ljHIKR"
@@ -1035,71 +1034,66 @@
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				r = s("./src/reddit/components/AwardBadges/index.tsx"),
-				a = s("./src/reddit/components/Economics/Support/DonationAmount/async.tsx"),
-				i = s("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				d = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				c = s("./src/reddit/components/PostBadges/index.tsx"),
-				l = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				m = s("./src/reddit/components/QuarantinedLabel/index.tsx"),
-				p = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				u = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				x = s("./src/reddit/constants/posts.ts"),
-				b = s("./src/reddit/controls/MetaSeparator/index.tsx"),
-				h = s("./src/reddit/helpers/trackers/post.ts"),
-				f = s("./src/reddit/models/Subreddit/index.ts"),
-				v = s("./src/reddit/components/PostMeta/index.m.less"),
-				O = s.n(v);
+				a = s("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
+				i = s("./src/reddit/components/JSAPIContainers/index.tsx"),
+				d = s("./src/reddit/components/PostBadges/index.tsx"),
+				c = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				l = s("./src/reddit/components/QuarantinedLabel/index.tsx"),
+				m = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				p = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				u = s("./src/reddit/constants/posts.ts"),
+				x = s("./src/reddit/controls/MetaSeparator/index.tsx"),
+				b = s("./src/reddit/helpers/trackers/post.ts"),
+				h = s("./src/reddit/models/Subreddit/index.ts"),
+				f = s("./src/reddit/components/PostMeta/index.m.less"),
+				v = s.n(f);
 			t.a = e => {
 				const {
 					flairStyleTemplate: t,
 					hideGildCta: s,
 					inSubredditOrProfile: o,
-					isCurrentUserProfilePost: v,
-					isOverlay: y,
-					isTopicPage: g,
-					post: P,
-					shouldShowSubscribeButton: E,
-					subredditOrProfile: w,
-					tooltipType: j
-				} = e, k = !!g;
+					isCurrentUserProfilePost: f,
+					isOverlay: O,
+					isTopicPage: y,
+					post: g,
+					shouldShowSubscribeButton: P,
+					subredditOrProfile: E,
+					tooltipType: w
+				} = e, j = !!y;
 				return n.a.createElement("div", {
-					className: O.a.metaContainer
-				}, !o && !P.isSponsored && w && n.a.createElement(i.a, {
-					postId: P.id,
-					subredditName: w.name
-				}, n.a.createElement(p.a, {
-					className: O.a.subredditName,
+					className: v.a.metaContainer
+				}, !o && !g.isSponsored && E && n.a.createElement(a.a, {
+					postId: g.id,
+					subredditName: E.name
+				}, n.a.createElement(m.a, {
+					className: v.a.subredditName,
 					"data-click-id": "subreddit",
-					to: w.url
-				}, w.displayText)), w && w.isQuarantined && n.a.createElement(m.a, null), !o && !P.isSponsored && w && E && !v && n.a.createElement(u.a, {
-					getEventFactory: e => Object(h.f)(P.id, e ? "unsubscribe" : "subscribe"),
+					to: E.url
+				}, E.displayText)), E && E.isQuarantined && n.a.createElement(l.a, null), !o && !g.isSponsored && E && P && !f && n.a.createElement(p.a, {
+					getEventFactory: e => Object(b.f)(g.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
-						name: w.name,
-						type: Object(f.f)(w) ? x.a.PROFILE : x.a.SUBREDDIT
+						name: E.name,
+						type: Object(h.f)(E) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
-					postId: P.id,
+					postId: g.id,
 					small: !0
-				}), !o && !P.isSponsored && n.a.createElement(b.b, null), !o && !P.isSponsored && n.a.createElement(d.h, {
-					type: P.belongsTo.type,
-					id: P.belongsTo.id
-				}), n.a.createElement(l.d, {
-					className: O.a.postTopMeta,
+				}), !o && !g.isSponsored && n.a.createElement(x.b, null), !o && !g.isSponsored && n.a.createElement(i.h, {
+					type: g.belongsTo.type,
+					id: g.belongsTo.id
+				}), n.a.createElement(c.d, {
+					className: v.a.postTopMeta,
 					flairStyleTemplate: t,
-					post: P,
-					tooltipType: j
-				}), n.a.createElement(c.a, {
-					displayText: w ? w.displayText : null,
+					post: g,
+					tooltipType: w
+				}), n.a.createElement(d.a, {
+					displayText: E ? E.displayText : null,
 					inSubredditOrProfile: !!o,
-					post: P,
-					tooltipType: j
-				}), w && n.a.createElement(a.a, {
-					className: O.a.donationAmount,
-					contentId: P.id,
-					subredditId: w.id
-				}), !k && n.a.createElement(r.a, {
+					post: g,
+					tooltipType: w
+				}), !j && n.a.createElement(r.a, {
 					hideCta: s,
-					isOverlay: !!y,
-					thing: P
+					isOverlay: !!O,
+					thing: g
 				}))
 			}
 		},
@@ -1453,4 +1447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.6a97e181e5e6ba9a2631.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.3a2385880b8bab55406a.js.map

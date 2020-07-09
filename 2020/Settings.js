@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.0d75c74c6da6f8172203.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.1c17c4c1086aae23e3c2.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1882,28 +1882,28 @@
 				H = n("./src/lib/loadWithRetries/index.ts"),
 				W = n("./src/reddit/helpers/loadThirdPartyScript.ts");
 			var G = Object(F.a)({
-					getComponent: () => Object(H.a)(() => Promise.all([Promise.all([n.e("vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~EconomicsCommunityTipJar~EconomicsEntryPointsCom~c2417cdc"), n.e("UpdateCardModal")]).then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(W.d)()])).then(e => e[0].default),
+					getComponent: () => Object(H.a)(() => Promise.all([Promise.all([n.e("vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal"), n.e("UpdateCardModal")]).then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(W.d)()])).then(e => e[0].default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
 				z = n("./src/reddit/helpers/trackers/premiumSettings.ts"),
 				V = n("./src/reddit/selectors/activeModalId.ts"),
-				J = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
-				q = n("./src/reddit/selectors/user.ts"),
+				q = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
+				J = n("./src/reddit/selectors/user.ts"),
 				Z = n("./src/reddit/components/Settings/index.m.less"),
 				Y = n.n(Z);
 			const Q = "https://www.paypal.com/myaccount/autopay",
 				K = "update_card_modal_id",
 				X = Object(l.c)({
-					arePowerupsEnabled: J.a,
+					arePowerupsEnabled: q.a,
 					cancelSubscriptionModalIsOpen: Object(V.b)("settings_optout_modal_id"),
-					goldExpiration: q.n,
-					hasAndroidSubscription: q.o,
-					hasIOSSubscription: q.r,
-					hasStripeSubscription: q.v,
-					hasPaypalSubscription: q.t,
-					isGold: q.p,
-					isPremiumSubscriber: q.q,
+					goldExpiration: J.n,
+					hasAndroidSubscription: J.o,
+					hasIOSSubscription: J.r,
+					hasStripeSubscription: J.v,
+					hasPaypalSubscription: J.t,
+					isGold: J.p,
+					isPremiumSubscriber: J.q,
 					updateCardModalIsOpen: Object(V.b)(K)
 				}),
 				$ = Object(i.b)(X, e => ({
@@ -3844,12 +3844,12 @@
 				}) : o.a.createElement(D.a, {
 					className: Object(m.a)(W.a.image, W.a.error)
 				}),
-				J = e => e ? s.fbt._("Check your email. Please allow some time for the email to arrive. If you do not receive it, please check it was not flagged as spam or try resending the email below.", null, {
+				q = e => e ? s.fbt._("Check your email. Please allow some time for the email to arrive. If you do not receive it, please check it was not flagged as spam or try resending the email below.", null, {
 					hk: "3Y172d"
 				}) : s.fbt._("We have detected suspicious activity on your account. For your safety we have suspended your account until you reset your password to confirm your identity.", null, {
 					hk: "YIzQQ"
 				}),
-				q = e => e ? s.fbt._("Reset password email sent", null, {
+				J = e => e ? s.fbt._("Reset password email sent", null, {
 					hk: "cLjlN"
 				}) : s.fbt._("Send a reset password email to access your account", null, {
 					hk: "4jgOhY"
@@ -3918,9 +3918,9 @@
 						className: W.a.status
 					}, V(e), o.a.createElement("h3", {
 						className: W.a.statusText
-					}, q(e))), o.a.createElement("p", {
+					}, J(e))), o.a.createElement("p", {
 						className: W.a.description
-					}, J(e)), o.a.createElement("div", {
+					}, q(e)), o.a.createElement("div", {
 						className: W.a.actionContainer
 					}, o.a.createElement("div", {
 						className: W.a.emailContainer
@@ -4238,8 +4238,8 @@
 				Ge = n("./src/reddit/icons/svgs/Twitter/index.tsx"),
 				ze = n("./src/reddit/models/ExternalAccount/index.ts");
 			const Ve = Ce.a.wrapped(Ge.a, "TwitterIcon", ke.a),
-				Je = Ce.a.wrapped(We.a, "LoadingIcon", ke.a),
-				qe = Ce.a.wrapped(ee.c, "ConnectTwitter", ke.a),
+				qe = Ce.a.wrapped(We.a, "LoadingIcon", ke.a),
+				Je = Ce.a.wrapped(ee.c, "ConnectTwitter", ke.a),
 				Ze = Ce.a.wrapped(w.f, "ConnectTwitterButton", ke.a),
 				Ye = Ce.a.span("TextAndIconWrapper", ke.a),
 				Qe = Ce.a.wrapped(w.j, "DisconnectButton", ke.a),
@@ -4288,7 +4288,7 @@
 					} = e, r = Object(m.a)({
 						[ke.a["m-responsive"]]: n
 					});
-					return o.a.createElement(qe, {
+					return o.a.createElement(Je, {
 						className: r,
 						label: s.fbt._("Connect to Twitter", null, {
 							hk: "4rhAYG"
@@ -4299,7 +4299,7 @@
 					}, o.a.createElement(Ze, {
 						className: r,
 						onClick: t
-					}, a ? o.a.createElement(Je, {
+					}, a ? o.a.createElement(qe, {
 						sizePx: 15
 					}) : o.a.createElement(Ye, null, o.a.createElement(Ve, null), s.fbt._("Connect to Twitter", null, {
 						hk: "3r8ltg"
@@ -4545,8 +4545,8 @@
 				Gt = Ce.a.h4("ListHeading", Ht.a),
 				zt = Ce.a.div("ListBox", Ht.a),
 				Vt = Ce.a.div("MoreWrapper", Ht.a),
-				Jt = Ce.a.button("MoreButton", Ht.a),
-				qt = Ce.a.wrapped(ee.m, "Subtext", Ht.a);
+				qt = Ce.a.button("MoreButton", Ht.a),
+				Jt = Ce.a.wrapped(ee.m, "Subtext", Ht.a);
 			class Zt extends o.a.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -4578,7 +4578,7 @@
 						className: Object(m.a)(Ht.a.container, n, {
 							[Ht.a.mPadBottom]: !!i
 						})
-					}, o.a.createElement(Gt, null, u), void 0 !== p && o.a.createElement(qt, null, p), o.a.createElement(R.a, {
+					}, o.a.createElement(Gt, null, u), void 0 !== p && o.a.createElement(Jt, null, p), o.a.createElement(R.a, {
 						buttonText: s.fbt._("Add", null, {
 							hk: "2wi3d4"
 						}),
@@ -4596,7 +4596,7 @@
 						onClick: () => c(e.name),
 						img: e.icon_img,
 						date: 1e3 * e.date
-					})), l.length > Wt && !e ? o.a.createElement(Vt, null, o.a.createElement(Jt, {
+					})), l.length > Wt && !e ? o.a.createElement(Vt, null, o.a.createElement(qt, {
 						onClick: () => this.setState({
 							showAll: !0
 						})
@@ -4782,7 +4782,7 @@
 				}
 			}
 			const hn = Object(c.c)({
-					stripeConnected: ln.C
+					stripeConnected: ln.v
 				}),
 				gn = Object(r.b)(hn, e => ({
 					onError: t => e(Object(A.e)({
@@ -4955,14 +4955,14 @@
 			}
 			var zn = n("./src/reddit/constants/postLayout.ts"),
 				Vn = n("./src/reddit/icons/svgs/ClassicPosts/index.tsx"),
-				Jn = n("./src/reddit/icons/svgs/CompactPosts/index.tsx"),
-				qn = n("./src/reddit/icons/svgs/LargePosts/index.tsx"),
+				qn = n("./src/reddit/icons/svgs/CompactPosts/index.tsx"),
+				Jn = n("./src/reddit/icons/svgs/LargePosts/index.tsx"),
 				Zn = n("./src/reddit/controls/Dropdown/index.m.less"),
 				Yn = n.n(Zn);
 			const Qn = {
-				[zn.d.Card]: qn.a,
+				[zn.d.Card]: Jn.a,
 				[zn.d.Classic]: Vn.a,
-				[zn.d.Compact]: Jn.a
+				[zn.d.Compact]: qn.a
 			};
 			var Kn = e => {
 				const t = Qn[e.layout];
@@ -5801,8 +5801,8 @@
 			}
 			var zs = n("./src/reddit/actions/economics/paymentSystems/actionCreators.ts"),
 				Vs = n("./src/reddit/models/Payments/index.ts"),
-				Js = n("./src/reddit/components/Settings/Payments/PaymentMethods/index.m.less"),
-				qs = n.n(Js);
+				qs = n("./src/reddit/components/Settings/Payments/PaymentMethods/index.m.less"),
+				Js = n.n(qs);
 			class Zs extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -5813,7 +5813,7 @@
 								[e.id]: !0
 							})
 						}));
-						const t = e.type === Vs.b.SavedStripe ? await Object(on.b)(this.props.apiContext(), e.id) : await Object(on.c)(this.props.apiContext(), e.id);
+						const t = e.type === Vs.a.SavedStripe ? await Object(on.b)(this.props.apiContext(), e.id) : await Object(on.c)(this.props.apiContext(), e.id);
 						t.ok ? this.props.onRemovePayment(e) : this.props.onError(t.error), this.setState(t => ({
 							paymentsBeingRemoved: Object.assign({}, t.paymentsBeingRemoved, {
 								[e.id]: !1
@@ -5829,12 +5829,12 @@
 					})), this.props.savedPayments.map(e => {
 						const t = !!this.state.paymentsBeingRemoved[e.id];
 						return o.a.createElement("div", {
-							className: qs.a.payment,
+							className: Js.a.payment,
 							key: e.id
 						}, o.a.createElement("div", {
-							className: qs.a.paymentDisplay
+							className: Js.a.paymentDisplay
 						}, o.a.createElement(ys.a, {
-							className: qs.a.lock
+							className: Js.a.lock
 						}), e.display), o.a.createElement(w.n, {
 							disabled: t,
 							onClick: () => this.removePayment(e)
@@ -5844,14 +5844,14 @@
 							hk: "2j7wjS"
 						})))
 					}), !this.props.savedPayments.length && o.a.createElement("div", {
-						className: qs.a.noSavedPayment
+						className: Js.a.noSavedPayment
 					}, s.fbt._("You have no saved payment methods", null, {
 						hk: "3JiSmk"
 					})))
 				}
 			}
 			const Ys = Object(c.c)({
-					savedPayments: ln.u
+					savedPayments: ln.q
 				}),
 				Qs = Object(r.b)(Ys, e => ({
 					onError: t => e(Object(A.e)({
@@ -5860,9 +5860,9 @@
 						text: Object(rn.a)(t)
 					})),
 					onRemovePayment: t => {
-						t.type === Vs.b.SavedStripe && e(Object(zs.a)({
+						t.type === Vs.a.SavedStripe && e(Object(zs.a)({
 							cardId: t.id
-						})), t.type === Vs.b.SavedPayPal && e(Object(zs.e)({
+						})), t.type === Vs.a.SavedPayPal && e(Object(zs.e)({
 							sourceId: t.id
 						}))
 					}
@@ -6402,8 +6402,8 @@
 				})))
 			}
 			var Va = n("./src/reddit/actions/governance/communityDetails.ts"),
-				Ja = n("./src/lib/addQueryParams/index.ts"),
-				qa = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
+				qa = n("./src/lib/addQueryParams/index.ts"),
+				Ja = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
 				Za = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/QRCode.tsx"),
 				Ya = n("./src/reddit/components/Governance/TransactionModals/CancelMembershipCard/index.m.less"),
 				Qa = n.n(Ya);
@@ -6420,7 +6420,7 @@
 					const {
 						subreddit: t,
 						userId: n
-					} = e, s = Object(Ja.a)("http://www.reddit.com/vault/unsubscribe", {
+					} = e, s = Object(qa.a)("http://www.reddit.com/vault/unsubscribe", {
 						u: n,
 						s: t.id
 					});
@@ -6432,15 +6432,15 @@
 						className: Qa.a.sectionHeader
 					}, "Cancel your subscription with your mobile device"), o.a.createElement("div", {
 						className: Qa.a.content
-					}, o.a.createElement(qa.a, {
+					}, o.a.createElement(Ja.a, {
 						index: "1"
 					}, Ka._("Scan the QR code with your Camera app", null, {
 						hk: "3rbMTX"
-					})), o.a.createElement(qa.a, {
+					})), o.a.createElement(Ja.a, {
 						index: "2"
 					}, Ka._("Use that link to open the Reddit app", null, {
 						hk: "1MKSkG"
-					})), o.a.createElement(qa.a, {
+					})), o.a.createElement(Ja.a, {
 						index: "3"
 					}, Ka._("Approve your subscription cancellation", null, {
 						hk: "2oJWUP"
@@ -6836,8 +6836,8 @@
 					})
 				}],
 				Vo = Object(c.c)({
-					savedPayments: ln.u,
-					userIsWhitelistedCreator: ln.F,
+					savedPayments: ln.q,
+					userIsWhitelistedCreator: ln.y,
 					allowNavigationCallback: Ho.a,
 					arePowerupsEnabled: Fo.a,
 					isResponsiveSettingsEnabled: hs.a,
@@ -6850,8 +6850,8 @@
 						return !1
 					}
 				}),
-				Jo = Object(pe.t)(),
-				qo = Object(r.b)(Vo, (e, t) => ({
+				qo = Object(pe.t)(),
+				Jo = Object(r.b)(Vo, (e, t) => ({
 					changeTab: t => e(Object(i.b)("/settings/".concat(t))),
 					updatePrefs: t => e(Object(E.H)(t)),
 					onPageViewed: () => e(Object(h.a)())
@@ -7052,7 +7052,7 @@
 					}, zo(a, r, e, i).filter(e => !e.disabled).map(this.renderTab)), this.renderForm(t.params.page))
 				}
 			}
-			t.default = Jo(qo(Object(ms.c)(Yo)))
+			t.default = qo(Jo(Object(ms.c)(Yo)))
 		},
 		"./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts": function(e, t, n) {
 			"use strict";
@@ -7064,4 +7064,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.0d75c74c6da6f8172203.js.map
+//# sourceMappingURL=Settings.1c17c4c1086aae23e3c2.js.map

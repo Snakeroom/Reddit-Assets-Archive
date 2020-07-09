@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.b26877f993e69570d9ba.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.c9d152a3c30f3e8b9183.js
+// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -98,7 +98,7 @@
 						const t = Object.keys(s.collections);
 						if (t.length) {
 							const s = t[0];
-							return Object(m.j)(e, {
+							return Object(m.i)(e, {
 								collectionId: s,
 								subredditId: n
 							})
@@ -317,7 +317,7 @@
 					let {
 						subreddit: s
 					} = t;
-					return Object(_.x)(e, s.id)
+					return Object(_.s)(e, s.id)
 				}
 			});
 			var M = Object(m.c)(Object(a.b)(L)((function(e) {
@@ -478,7 +478,7 @@
 			const $ = Object(c.c)({
 					bannerIsDismissed: (e, t) => {
 						const s = Object(p.m)(e, t);
-						return s ? Object(_.h)(e, s, g.a.NewUserWelcome) : void 0
+						return s ? Object(_.g)(e, s, g.a.NewUserWelcome) : void 0
 					},
 					eligibleForBanner: (e, t) => {
 						const s = e.user.account,
@@ -486,7 +486,7 @@
 						if (!s) return !1;
 						if (Object(p.N)(e, t) !== u.g.Large) return !1;
 						if (n) {
-							const t = Object(_.g)(e, n.id)[f.a.Achievement];
+							const t = Object(_.f)(e, n.id)[f.a.Achievement];
 							if (t && t.type === z) return !1
 						}
 						return !0
@@ -1012,4 +1012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.b26877f993e69570d9ba.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.c9d152a3c30f3e8b9183.js.map
