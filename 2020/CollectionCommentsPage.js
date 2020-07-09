@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f61d64d8a08467258e9d.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ca1c809af5f379d3fa29.js
+// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3459,7 +3459,7 @@
 			const Nt = e => {
 				const t = Object(Tt.c)(e, {
 					experimentEligibilitySelector: Tt.a,
-					experimentName: St.bb
+					experimentName: St.Z
 				});
 				return !(!t || Object(St.rc)(t))
 			};
@@ -3509,7 +3509,7 @@
 					highlightAnimationEnabled: e => (e => {
 						const t = Object(Tt.c)(e, {
 							experimentEligibilitySelector: Tt.a,
-							experimentName: St.ab
+							experimentName: St.Y
 						});
 						return !(!t || Object(St.rc)(t))
 					})(e) && !Object(Mt.c)(e),
@@ -4452,7 +4452,7 @@
 				O = s.n(C);
 			const y = Object(i.b)(() => Object(d.c)({
 					isChatPostExperiment: x.d,
-					isPostSEOEligible: g.d,
+					isPostSEOEligible: g.f,
 					postPermalink: f.M,
 					shouldOpenPostInNewTab: v.U
 				})),
@@ -4606,7 +4606,7 @@
 				}),
 				L = Object(c.c)({
 					isLoggedIn: w.H,
-					postSEOV2IdCardVariant: j.g,
+					postSEOV2IdCardVariant: j.i,
 					widgets: Object(p.a)(P.s)
 				}),
 				R = Object(d.b)(L);
@@ -4632,7 +4632,7 @@
 						post: o,
 						isFakeOverlay: r,
 						postSEOV2IdCardVariant: i
-					} = this.props, d = !Object(j.a)(i) && !Object(j.e)(i);
+					} = this.props, d = !Object(j.d)(i) && !Object(j.g)(i);
 					return a.a.createElement(C.a, {
 						adComponentOnFakeOverlay: r,
 						adComponent: d ? a.a.createElement(f.a, {
@@ -4661,7 +4661,7 @@
 						widgets: c
 					} = this.props;
 					let p = 0;
-					const b = Object(j.a)(r) || Object(j.e)(r),
+					const b = Object(j.d)(r) || Object(j.g)(r),
 						x = a.a.createElement(f.a, {
 							postId: o.id,
 							isOverlay: n,
@@ -4743,8 +4743,8 @@
 				hasDismissedTruncation: u.b,
 				isGQLLoggedIn: b.G,
 				isLoggedIn: b.H,
-				isPostSEOEligible: h.d,
-				postSEOV2TruncatedVariant: h.h
+				isPostSEOEligible: h.f,
+				postSEOV2TruncatedVariant: h.j
 			}), y = Object(r.b)(O);
 			class E extends o.a.Component {
 				render() {
@@ -15694,7 +15694,7 @@
 					isTooltipOpen: (e, t) => !!Object(pe.a)(e),
 					origin: de.l,
 					post: ee.F,
-					postSEOV2IdCardVariant: ae.g,
+					postSEOV2IdCardVariant: ae.i,
 					profileCollectionsEnabled: X.a,
 					replyComment: (e, t) => {
 						let {
@@ -15988,7 +15988,7 @@
 						subredditOrProfile: u,
 						profileCollectionsEnabled: h,
 						isInCommentsPageAdExperiment: b
-					} = this.props, x = Object(ae.e)(l);
+					} = this.props, x = Object(ae.g)(l);
 					if (!d) {
 						if (t) return g.a.createElement(fe.f, null);
 						const s = this.renderPageError();
@@ -16525,7 +16525,7 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.X
+					experimentName: n.V
 				});
 				return !(!t || Object(n.rc)(t))
 			}
@@ -16544,4 +16544,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.f61d64d8a08467258e9d.js.map
+//# sourceMappingURL=CollectionCommentsPage.ca1c809af5f379d3fa29.js.map

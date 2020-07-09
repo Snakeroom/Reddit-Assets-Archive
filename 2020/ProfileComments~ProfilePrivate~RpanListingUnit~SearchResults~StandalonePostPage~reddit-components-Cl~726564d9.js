@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.459dc5228ab33c3796f5.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.0618f607a0eecd759864.js
+// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -629,7 +629,7 @@
 				_ = s.n(v);
 			const C = Object(i.b)(() => Object(c.c)({
 					isChatPostExperiment: x.d,
-					isPostSEOEligible: f.d,
+					isPostSEOEligible: f.f,
 					postPermalink: g.M,
 					shouldOpenPostInNewTab: O.U
 				})),
@@ -4054,4 +4054,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.459dc5228ab33c3796f5.js.map
+//# sourceMappingURL=ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.0618f607a0eecd759864.js.map

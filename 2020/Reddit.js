@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.de2e3f279d82eef14ab2.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.8b61cd734a83f2b20ad2.js
+// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2323,7 +2323,7 @@
 					super(...arguments), this.subscriptions = [], this.state = {
 						isSSOLinkActionFailedModal: !1
 					}, this.closeModal = () => {
-						this.props.closeModal(this.props.path), this.props.path === U.b.Register && Object(K.f)(this.props.frontpageSignupVariant) && fs.a.throttleFeature(hs.Q), this.props.sendEvent(le(this.subscriptions))
+						this.props.closeModal(this.props.path), this.props.path === U.b.Register && Object(K.f)(this.props.frontpageSignupVariant) && fs.a.throttleFeature(hs.P), this.props.sendEvent(le(this.subscriptions))
 					}, this.updateSubscriptions = e => {
 						this.subscriptions = e
 					}, this.handleSSOLinkActionFail = () => {
@@ -11128,7 +11128,7 @@
 								n = Object(bt.a)(e) + s;
 							Object(pt.b)(n, t)
 						})(t, a.title) : mt.a.write(() => {
-							document.title = a.title, Object(ht.b)(t, document)
+							document.title = a.title, Object(ht.c)(t, document)
 						})
 					}
 					return n
@@ -11334,8 +11334,8 @@
 			const ps = {
 					displayDelay: 15,
 					displayOnRoutes: [g.Bb.SUBREDDIT, g.Bb.COMMENTS],
-					experimentName: ms.pb,
-					experimentVariant: ms.sb.On,
+					experimentName: ms.nb,
+					experimentVariant: ms.qb.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -13343,7 +13343,7 @@
 				p = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, u, c.a, d.d, l.a, (e, t, s, a, c, l) => {
 					let u = "".concat(n.a.accountManagerOrigin).concat(e);
 					if (a && (u = Object(r.a)(u, {
-							[i.Q]: a,
+							[i.P]: a,
 							uiMode: t
 						})), c) {
 						const e = Object(d.a)(c) || c;
@@ -13532,4 +13532,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~EconomicsEntryPointsPostFlatlistSupportCTA~InFeedChaining~PostCreation~Reddit~StandalonePost~ee6bfdf1", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.de2e3f279d82eef14ab2.js.map
+//# sourceMappingURL=Reddit.8b61cd734a83f2b20ad2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4f306f90779e5aada54f.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b336d85c5da7af99dbf0.js
+// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5622,7 +5622,7 @@
 				C = s.n(v);
 			const _ = Object(r.b)(() => Object(d.c)({
 					isChatPostExperiment: g.d,
-					isPostSEOEligible: f.d,
+					isPostSEOEligible: f.f,
 					postPermalink: x.M,
 					shouldOpenPostInNewTab: E.U
 				})),
@@ -30012,4 +30012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.4f306f90779e5aada54f.js.map
+//# sourceMappingURL=ModerationPages.b336d85c5da7af99dbf0.js.map

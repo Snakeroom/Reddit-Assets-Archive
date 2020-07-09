@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.f9bc8dcdd3915be1e2fb.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.ea2ed3cedbc30399e04b.js
+// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -1747,10 +1747,10 @@
 			const r = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.mb
-				}) === n.qb.Enabled
+					experimentName: n.kb
+				}) === n.ob.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.f9bc8dcdd3915be1e2fb.js.map
+//# sourceMappingURL=ChatMessageInput.ea2ed3cedbc30399e04b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.596cc3c124909be4d12d.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.2bfa1ecebb80028c2720.js
+// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -957,27 +957,24 @@
 		"./src/reddit/components/SubredditIcon/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return C
+				return O
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
 				o = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/reddit/components/UserIcon/index.tsx"),
-				d = n("./src/reddit/constants/colors.ts"),
-				l = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				u = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
-				m = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				p = n("./src/reddit/models/Subreddit/index.ts"),
-				f = n("./src/reddit/selectors/experiments/postSeo.ts"),
-				b = n("./src/reddit/components/SubredditIcon/index.m.less"),
-				h = n.n(b),
-				y = n("./src/lib/lessComponent.tsx");
+				a = n("./src/reddit/components/UserIcon/index.tsx"),
+				i = n("./src/reddit/constants/colors.ts"),
+				c = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				d = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
+				l = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+				u = n("./src/reddit/models/Subreddit/index.ts"),
+				m = n("./src/reddit/components/SubredditIcon/index.m.less"),
+				p = n.n(m),
+				f = n("./src/lib/lessComponent.tsx");
 
-			function v() {
-				return (v = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -985,7 +982,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var g = function(e, t) {
+			var h = function(e, t) {
 				var n = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -994,69 +991,65 @@
 				}
 				return n
 			};
-			const x = y.a.wrapped(c.a, "UserIcon", h.a),
-				O = y.a.img("Image", h.a),
-				j = e => {
+			const y = f.a.wrapped(a.a, "UserIcon", p.a),
+				v = f.a.img("Image", p.a),
+				g = e => {
 					var {
 						iconColor: t
-					} = e, n = g(e, ["iconColor"]);
-					return o.a.createElement(O, v({
+					} = e, n = h(e, ["iconColor"]);
+					return o.a.createElement(v, b({
 						style: {
 							backgroundColor: t || ""
 						}
 					}, n))
 				},
-				w = y.a.wrapped(e => {
+				x = f.a.wrapped(e => {
 					var {
 						className: t,
 						color: n
-					} = e, r = g(e, ["className", "color"]);
-					return o.a.createElement(m.a, v({
+					} = e, r = h(e, ["className", "color"]);
+					return o.a.createElement(l.a, b({
 						className: t,
 						style: {
 							background: n || ""
 						}
 					}, r))
-				}, "PlanetIcon", h.a),
-				C = y.a.div("BackupImage", h.a),
-				_ = Object(l.t)(),
-				E = Object(i.c)({
-					isSubredditImageAltTextVariant: f.c
-				}),
-				S = Object(a.b)(E);
-			t.b = _(S(e => {
-				let t, n, s, a = r.fbt._("Subreddit Icon", null, {
-					hk: "134aM1"
-				});
-				if (e.isSubredditImageAltTextVariant && e.altText && (a = e.altText), e.subredditOrProfile) {
+				}, "PlanetIcon", p.a),
+				O = f.a.div("BackupImage", p.a),
+				j = Object(c.t)();
+			t.b = j(e => {
+				let t, n, s;
+				if (e.subredditOrProfile) {
 					const {
 						url: r,
 						color: a
-					} = Object(u.a)({
+					} = Object(d.a)({
 						shouldHideNsfwIcon: !!e.shouldHideNsfwIcon,
 						subredditOrProfile: e.subredditOrProfile
 					});
-					Object(p.f)(e.subredditOrProfile) ? s = o.a.createElement(x, {
+					Object(u.f)(e.subredditOrProfile) ? s = o.a.createElement(y, {
 						className: e.className,
 						iconUrl: r,
 						isNSFW: e.subredditOrProfile.isNSFW,
 						userName: e.subredditOrProfile.name
 					}) : (t = r, n = a)
-				} else t = e.iconUrl, n = e.primaryColor || d.a.alienblue;
-				return t ? s = o.a.createElement(j, {
-					alt: a,
+				} else t = e.iconUrl, n = e.primaryColor || i.a.alienblue;
+				return t ? s = o.a.createElement(g, {
+					alt: r.fbt._("Subreddit Icon", null, {
+						hk: "134aM1"
+					}),
 					className: e.className,
 					iconColor: n,
 					role: "presentation",
 					src: t
-				}) : s || (s = o.a.createElement(w, {
+				}) : s || (s = o.a.createElement(x, {
 					className: e.className,
-					color: e.redditStyle ? d.a.alienblue : n,
+					color: e.redditStyle ? i.a.alienblue : n,
 					role: "presentation"
 				})), e.linkTo ? o.a.createElement("a", {
 					href: e.linkTo
 				}, s) : o.a.createElement(o.a.Fragment, null, s)
-			}))
+			})
 		},
 		"./src/reddit/components/UserIcon/UserIcon.m.less": function(e, t, n) {
 			e.exports = {
@@ -3018,4 +3011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.596cc3c124909be4d12d.js.map
+//# sourceMappingURL=ModListing~Reddit.2bfa1ecebb80028c2720.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.a8618af137927685c23b.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.eec4889515d16d51cda9.js
+// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -842,53 +842,54 @@
 				C = e => e.findIndex(_),
 				v = e => {
 					const {
-						className: t,
-						content: n,
-						postId: s,
-						renderMediaAsLinks: r,
-						rtJsonElementProps: o,
-						useExplicitTextColor: c
-					} = e, d = n.document, u = [], p = e.mediaMetadata || null, f = C(d), x = w(d);
-					if (-1 !== f)
-						for (let i = f; i <= x; i++) {
-							const e = d[i];
+						altText: t,
+						className: n,
+						content: s,
+						postId: r,
+						renderMediaAsLinks: o,
+						rtJsonElementProps: c,
+						useExplicitTextColor: d
+					} = e, u = s.document, p = [], f = e.mediaMetadata || null, x = C(u), g = w(u);
+					if (-1 !== x)
+						for (let i = x; i <= g; i++) {
+							const e = u[i];
 							switch (e.e) {
 								case h.k:
-									u.push(b.c(e, o, i));
+									p.push(b.c(e, c, i));
 									break;
 								case h.l:
-									u.push(b.d(i));
+									p.push(b.d(i));
 									break;
 								case h.b:
-									u.push(b.a(e, p, o, i));
+									p.push(b.a(e, f, c, i));
 									break;
 								case h.c:
-									u.push(b.b(e, i));
+									p.push(b.b(e, i));
 									break;
 								case h.p:
-									u.push(b.f(e, p, o, i));
+									p.push(b.f(e, f, c, i));
 									break;
 								case h.z:
-									u.push(b.h(e, p, o, i));
+									p.push(b.h(e, f, c, i));
 									break;
 								case h.u:
-									u.push(b.g(e, p, o, i));
+									p.push(b.g(e, f, c, i));
 									break;
 								case h.h:
-									u.push(Object(m.a)(e, i));
+									p.push(Object(m.a)(e, i));
 									break;
 								case h.m:
 								case h.a:
 								case h.D:
-									u.push(...Object(m.b)(e, i, p, r, s))
+									p.push(...Object(m.b)(e, i, f, o, r, t))
 							}
 						}
-					return c ? i.a.createElement(y, {
-						className: Object(a.a)(l.j, t)
-					}, u) : i.a.createElement(j, {
-						className: Object(a.a)(l.j, t),
+					return d ? i.a.createElement(y, {
+						className: Object(a.a)(l.j, n)
+					}, p) : i.a.createElement(j, {
+						className: Object(a.a)(l.j, n),
 						flairStyleTemplate: e.flairStyleTemplate
-					}, u)
+					}, p)
 				};
 			class I extends i.a.Component {
 				constructor() {
@@ -1038,38 +1039,39 @@
 						title: s
 					}, s || r) : null
 				},
-				T = (e, t, n, s, r) => {
-					const a = m.E(n, e.id);
-					if (s) return [S(e, t, a)];
-					const d = [];
-					return a ? a.e === m.s ? d.push(((e, t, n) => {
+				T = (e, t, n, s, r, a) => {
+					const d = m.E(n, e.id);
+					if (s) return [S(e, t, d)];
+					const l = [];
+					return d ? d.e === m.s ? l.push(((e, t, n, s) => {
 						let {
-							id: s,
-							s: r
+							id: r,
+							s: a
 						} = e;
 						return o.a.createElement("div", {
 							className: Object(i.a)(x.a.MediaWrapper, {
 								[x.a.mHasCaption]: n
 							})
 						}, o.a.createElement(u.a, {
-							height: r.y,
+							height: a.y,
 							isListing: !1,
 							key: t,
 							showCentered: !0,
 							showFull: !0,
-							width: r.x
+							width: a.x
 						}, o.a.createElement(_, {
-							originalSource: r.u,
-							postId: s,
-							source: r.u,
-							height: r.y,
-							width: r.x,
+							altText: s,
+							originalSource: a.u,
+							postId: r,
+							source: a.u,
+							height: a.y,
+							width: a.x,
 							shouldBlur: !1,
 							showCentered: !0,
 							showFull: !0,
 							isListing: !1
 						})))
-					})(a, t, !!e.c)) : a.e === m.r ? d.push(((e, t, n) => {
+					})(d, t, !!e.c, a)) : d.e === m.r ? l.push(((e, t, n) => {
 						let {
 							id: s,
 							ext: r,
@@ -1120,7 +1122,7 @@
 							shouldLoad: !0,
 							showFull: !0
 						})))
-					})(a, t, !!e.c)) : a.e === m.t && d.push(((e, t, n, s) => {
+					})(d, t, !!e.c)) : d.e === m.t && l.push(((e, t, n, s) => {
 						let {
 							hlsUrl: r,
 							dashUrl: a,
@@ -1149,12 +1151,12 @@
 							postId: s,
 							isGif: p
 						})))
-					})(a, t, !!e.c, r)) : d.push(((e, t) => o.a.createElement(v, {
+					})(d, t, !!e.c, r)) : l.push(((e, t) => o.a.createElement(v, {
 						e,
 						key: t
-					}))(e.e, t)), e.c && d.push(((e, t) => o.a.createElement(w, {
+					}))(e.e, t)), e.c && l.push(((e, t) => o.a.createElement(w, {
 						key: t
-					}, e))(e.c, "caption".concat(t))), d
+					}, e))(e.c, "caption".concat(t))), l
 				}
 		},
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
@@ -1813,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.a8618af137927685c23b.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.eec4889515d16d51cda9.js.map
