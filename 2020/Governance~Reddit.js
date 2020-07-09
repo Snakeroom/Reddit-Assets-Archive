@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7f24fc5ebea4423cfb3d.js
-// Retrieved at 7/9/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.fb853543bcbaeeb8f049.js
+// Retrieved at 7/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -387,8 +387,9 @@
 				};
 
 			function g(e, t, n) {
-				const s = n && n.traceRequestName ? n.traceRequestName : "gql_api_call";
-				return f.b.recordRpcSpanAsync(s, async () => {
+				const s = n && n.traceRequestName ? n.traceRequestName : "gql_api_call",
+					r = {};
+				return "id" in t && (r[f.a.OperationId] = t.id), f.b.recordRpcSpanAsync(s, async () => {
 					const s = Object(p.b)(e),
 						r = Object.assign({}, n ? Object.assign({}, n) : {}, {
 							data: t,
@@ -416,7 +417,7 @@
 					})) : (e.ok && e.body, Object.assign({}, e, {
 						error: null
 					}))))
-				})
+				}, r)
 			}
 		},
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, n) {
@@ -54650,4 +54651,4 @@
 		"ignored /drone/src/node_modules/clean-stack os": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.7f24fc5ebea4423cfb3d.js.map
+//# sourceMappingURL=Governance~Reddit.fb853543bcbaeeb8f049.js.map
