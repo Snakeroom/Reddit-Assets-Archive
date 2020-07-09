@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.34276d55203633fe5396.js
-// Retrieved at 7/9/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6ba11217118867fe03fb.js
+// Retrieved at 7/9/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3276,14 +3276,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("bb1b798-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("b588203-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bb1b798-production",
+						release: "b588203-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3699,7 +3699,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "bb1b798-production",
+							releaseClient: "b588203-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -14768,41 +14768,53 @@
 				},
 				M = e => e.posts.models,
 				U = () => {
-					return [1, 50, 100].reduce((e, t) => (e[t] = {
+					return [1, 50, 100].reduce((e, t) => (e.thresholdData[t] = {
 						maxContinuousTime: 0,
 						totalTime: 0
-					}, e), {})
+					}, e.videoThresholdData[t] = {
+						maxContinuousTime: 0,
+						totalTime: 0
+					}, e), {
+						thresholdData: {},
+						videoThresholdData: {}
+					})
 				},
 				q = Object(a.a)(e => e, (e, t) => P(e, {
 					postId: t
 				}), y.a, (e, t) => e.posts.pixelMetadata[t] || U(), (e, t, i, n) => {
-					const r = Object.assign({}, n);
+					const r = Object.assign({}, n, {
+						videoData: {
+							isVideo: !1,
+							cumulativeViewedTime: 0,
+							videoThresholdData: Object.assign({}, n.videoThresholdData)
+						}
+					});
 					if (i && !r.timeImpressionViewed && (r.timeImpressionViewed = i.adImpression), i && (r.isGroupMViewable = !!i.groupMViewable), i) {
 						const e = Object.keys(i).length;
 						r.eventGlobalCount = e
 					}
 					if (t && t.media && Object(h.J)(t.media)) {
-						const i = Object(F.i)(e, {
+						const n = Object(F.i)(e, {
 								postId: t.id
 							}),
-							n = Object(F.h)(e, {
+							s = Object(F.h)(e, {
 								postId: t.id
 							});
-						r.videoData = {
+						r.videoData = Object.assign({}, r.videoData, {
 							isVideo: !0,
-							videoDuration: i ? i.length : 0,
+							videoDuration: n ? n.length : 0,
 							videoVolume: Math.floor(100 * (Object(v.b)(e) || 0)),
-							cumulativeViewedTime: n || 0
-						}
+							cumulativeViewedTime: s || 0
+						}), i && (r.videoData.wasFullScreen = i.adVideoPlayedExpanded ? 1 : 0)
 					}
 					return r
 				}),
 				V = e => {
 					return [1, 50, 100].reduce((e, t) => {
 						const i = e[t];
-						if (i && i.timeAdEntered) {
+						if (i && i.timeEntered) {
 							const n = i.totalTime || 0,
-								r = Date.now() - i.timeAdEntered,
+								r = Date.now() - i.timeEntered,
 								s = i.maxContinuousTime || 0;
 							e[t] = {
 								totalTime: n + r,
@@ -21948,4 +21960,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.34276d55203633fe5396.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.6ba11217118867fe03fb.js.map
