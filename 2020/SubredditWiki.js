@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3d1d34417ca845d0eea0.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.27a8cbc3b1568e9e5fdb.js
+// Retrieved at 7/9/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1398,136 +1398,138 @@
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				i = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js"),
-				o = n("./src/lib/classNames/index.ts"),
-				d = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				c = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/reddit/constants/modals.ts"),
-				u = n("./src/reddit/actions/modal.ts"),
-				m = n("./src/reddit/components/DownToChatBanner/StartChattingButton/index.tsx"),
-				p = n("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
-				b = n("./src/reddit/components/SubredditNav/index.tsx"),
-				h = n("./src/reddit/components/SubscribeButton/index.tsx"),
-				g = n("./src/reddit/constants/postLayout.ts"),
-				f = n("./src/reddit/constants/posts.ts"),
-				x = n("./src/reddit/featureFlags/index.ts"),
-				k = n("./src/reddit/helpers/getSubredditIcon/index.ts"),
-				y = n("./src/reddit/constants/tracking.ts"),
-				O = n("./src/reddit/selectors/telemetry.ts");
-			var w = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				v = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
-				C = n("./src/reddit/selectors/gold/powerups.ts"),
-				E = n("./src/reddit/selectors/inlineSubredditEditing.ts"),
-				_ = n("./src/reddit/selectors/widgets.ts"),
-				j = n("./src/reddit/icons/svgs/Powerup/index.tsx"),
-				N = n("./src/reddit/components/CommunityIdTopBar/LevelBadge/index.m.less"),
-				S = n.n(N);
+				a = n("./src/reddit/hooks/useTracking.ts"),
+				o = n("./node_modules/reselect/es/index.js"),
+				d = n("./src/lib/classNames/index.ts"),
+				c = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				l = n("./src/lib/lessComponent.tsx"),
+				u = n("./src/reddit/constants/modals.ts"),
+				m = n("./src/reddit/helpers/trackers/powerups.ts"),
+				p = n("./src/reddit/actions/modal.ts"),
+				b = n("./src/reddit/components/DownToChatBanner/StartChattingButton/index.tsx"),
+				h = n("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
+				g = n("./src/reddit/components/SubredditNav/index.tsx"),
+				f = n("./src/reddit/components/SubscribeButton/index.tsx"),
+				x = n("./src/reddit/constants/postLayout.ts"),
+				k = n("./src/reddit/constants/posts.ts"),
+				y = n("./src/reddit/featureFlags/index.ts"),
+				O = n("./src/reddit/helpers/getSubredditIcon/index.ts"),
+				w = n("./src/reddit/constants/tracking.ts"),
+				v = n("./src/reddit/selectors/telemetry.ts");
+			var C = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+				E = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
+				_ = n("./src/reddit/selectors/gold/powerups.ts"),
+				j = n("./src/reddit/selectors/inlineSubredditEditing.ts"),
+				N = n("./src/reddit/selectors/widgets.ts"),
+				S = n("./src/reddit/icons/svgs/Powerup/index.tsx"),
+				I = n("./src/reddit/components/CommunityIdTopBar/LevelBadge/index.m.less"),
+				T = n.n(I);
 			const {
-				fbt: I
+				fbt: P
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var T = e => r.a.createElement("button", {
-					className: Object(o.a)(e.className, S.a.container),
+			var R = e => r.a.createElement("button", {
+					className: Object(d.a)(e.className, T.a.container),
 					onClick: e.onClick
-				}, r.a.createElement(j.a, {
-					className: S.a.icon
+				}, r.a.createElement(S.a, {
+					className: T.a.icon
 				}), r.a.createElement("div", {
-					className: S.a.text
-				}, I._("Level {level}", [I._param("level", e.level)], {
+					className: T.a.text
+				}, P._("Level {level}", [P._param("level", e.level)], {
 					hk: "4BNMWs"
 				}))),
-				P = n("./src/reddit/components/CommunityIdTopBar/index.m.less"),
-				R = n.n(P);
-			const L = c.a.wrapped(w.a, "Planet", R.a),
-				D = c.a.img("SubredditIcon", R.a),
-				M = Object(a.c)({
-					arePowerupsEnabled: v.a,
-					powerups: C.g,
-					spPollsEnabled: x.d.spPolls,
+				L = n("./src/reddit/components/CommunityIdTopBar/index.m.less"),
+				D = n.n(L);
+			const M = l.a.wrapped(C.a, "Planet", D.a),
+				W = l.a.img("SubredditIcon", D.a),
+				B = Object(o.c)({
+					arePowerupsEnabled: E.a,
+					powerups: _.g,
+					spPollsEnabled: y.d.spPolls,
 					subredditInlineEditingEnabled: (e, t) => {
 						let {
 							subredditId: n
 						} = t;
-						return Object(E.a)(e, {
+						return Object(j.a)(e, {
 							subredditId: n
 						})
 					},
-					widget: _.f
+					widget: N.f
 				});
-			t.a = Object(i.b)(M, (e, t) => ({
-				openPowerupsModal: () => {
-					e(Object(u.i)(l.a.ECON_POWERUPS_PURCHASE))
-				}
-			}))(Object(d.a)(e => {
-				const t = e.subreddit ? e.subreddit.id : e.subredditId,
-					n = e.subreddit ? e.subreddit.name : e.subredditName,
-					s = e.subreddit ? e.subreddit.url : e.subredditUrl,
-					i = e.subreddit ? e.subreddit.title : "",
-					a = e.subreddit && Object(k.a)(e),
-					d = !(!e.theme || !a),
-					c = n.charAt(0).toUpperCase() + n.slice(1),
-					l = !!e.subreddit && e.subredditInlineEditingEnabled,
-					u = Object(o.a)(R.a.SubredditIcon, R.a.editableIcon, {
-						[R.a.emptyEditableIcon]: !a
+			t.a = Object(i.b)(B)(Object(c.a)(e => {
+				const t = Object(i.c)(),
+					n = Object(a.a)(),
+					s = e.subreddit ? e.subreddit.id : e.subredditId,
+					o = e.subreddit ? e.subreddit.name : e.subredditName,
+					c = e.subreddit ? e.subreddit.url : e.subredditUrl,
+					l = e.subreddit ? e.subreddit.title : "",
+					y = e.subreddit && Object(O.a)(e),
+					C = !(!e.theme || !y),
+					E = o.charAt(0).toUpperCase() + o.slice(1),
+					_ = !!e.subreddit && e.subredditInlineEditingEnabled,
+					j = Object(d.a)(D.a.SubredditIcon, D.a.editableIcon, {
+						[D.a.emptyEditableIcon]: !y
 					}),
-					x = e.arePowerupsEnabled && e.powerups && e.powerups.tiersInfo.length > 1,
-					w = r.a.createElement(p.a, {
-						className: u,
+					N = e.arePowerupsEnabled && e.powerups && e.powerups.tiersInfo.length > 1,
+					S = r.a.createElement(h.a, {
+						className: j,
 						subreddit: e.subreddit,
-						iconUrl: a || void 0,
+						iconUrl: y || void 0,
 						inTopBar: !0
 					}),
-					v = d ? r.a.createElement(D, {
-						src: a || void 0
-					}) : r.a.createElement(L, null),
-					C = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
-					E = e.layout ? e.layout === g.g.Large ? "".concat(984, "px") : "100%" : "".concat(1086, "px");
+					I = C ? r.a.createElement(W, {
+						src: y || void 0
+					}) : r.a.createElement(M, null),
+					T = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
+					P = e.layout ? e.layout === x.g.Large ? "".concat(984, "px") : "100%" : "".concat(1086, "px");
 				return r.a.createElement("div", {
-					className: R.a.container,
+					className: D.a.container,
 					style: {
-						maxWidth: E
+						maxWidth: P
 					}
 				}, r.a.createElement("div", {
-					className: R.a.subredditMetaContainer
-				}, l ? w : v, r.a.createElement("div", {
-					className: Object(o.a)(R.a.textContainer, {
-						[R.a.textContainerNoIcon]: !d
+					className: D.a.subredditMetaContainer
+				}, _ ? S : I, r.a.createElement("div", {
+					className: Object(d.a)(D.a.textContainer, {
+						[D.a.textContainerNoIcon]: !C
 					})
 				}, r.a.createElement("div", {
-					className: R.a.text
+					className: D.a.text
 				}, r.a.createElement("h1", {
-					className: R.a.title
-				}, i || c), !!i && r.a.createElement("h2", {
-					className: R.a.description
-				}, "r/", n), x && r.a.createElement(T, {
+					className: D.a.title
+				}, l || E), !!l && r.a.createElement("h2", {
+					className: D.a.description
+				}, "r/", o), N && r.a.createElement(R, {
 					level: e.powerups.tier,
-					className: R.a.levelBadge,
-					onClick: e.openPowerupsModal
+					className: D.a.levelBadge,
+					onClick: () => {
+						n(Object(m.e)()), t(Object(p.i)(u.a.ECON_POWERUPS_PURCHASE))
+					}
 				})), r.a.createElement("div", {
-					className: R.a.subscribeButtonContainer
-				}, r.a.createElement(h.a, {
-					className: R.a.subscribeButton,
+					className: D.a.subscribeButtonContainer
+				}, r.a.createElement(f.a, {
+					className: D.a.subscribeButton,
 					getEventFactory: e => {
-						return (e => t => Object.assign({}, O.defaults(t), {
+						return (e => t => Object.assign({}, v.defaults(t), {
 							source: "id_banner",
-							action: y.c.CLICK,
+							action: w.c.CLICK,
 							noun: e,
-							subreddit: O.subreddit(t)
+							subreddit: v.subreddit(t)
 						}))(e ? "unsubscribe" : "subscribe")
 					},
 					identifier: {
-						name: n,
-						type: f.a.SUBREDDIT
+						name: o,
+						type: k.a.SUBREDDIT
 					},
 					small: !0
-				})), e.subreddit && r.a.createElement(m.a, {
+				})), e.subreddit && r.a.createElement(b.a, {
 					subreddit: e.subreddit,
 					headerButton: !0
-				}))), C && r.a.createElement(b.a, {
+				}))), T && r.a.createElement(g.a, {
 					disableFullscreen: !0,
 					isTopBannerVariant: !0,
-					homeUrl: s,
-					subredditId: t,
-					subredditNavContainerClassName: R.a.subredditNavContainer
+					homeUrl: c,
+					subredditId: s,
+					subredditNavContainerClassName: D.a.subredditNavContainer
 				}))
 			}))
 		},
@@ -5916,6 +5918,60 @@
 					noun: "widget"
 				})
 		},
+		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "e", (function() {
+				return a
+			})), n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "a", (function() {
+				return d
+			})), n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "c", (function() {
+				return l
+			}));
+			var s = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				r = n("./src/reddit/selectors/telemetry.ts");
+			const i = (e, t, n) => Object.assign({}, r.defaults(e), {
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !1),
+					profile: r.profile(e),
+					subreddit: r.subreddit(e),
+					powerups: Object.assign({}, r.subredditPowerups(e), {
+						freeCount: t,
+						paidCount: n
+					})
+				}),
+				a = () => e => Object.assign({
+					source: "postlist",
+					action: "click",
+					noun: "powerups_tier_cta"
+				}, i(e), {
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				o = () => e => Object.assign({
+					source: "postlist",
+					action: "click",
+					noun: "powerups_supporters_cta"
+				}, i(e), {
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				d = (e, t) => n => Object.assign({
+					source: "powerups_modal",
+					action: "view",
+					noun: "marketing_step"
+				}, i(n, e, t)),
+				c = (e, t) => n => Object.assign({
+					source: "powerups_modal",
+					action: "view",
+					noun: "purchase_step"
+				}, i(n, e, t)),
+				l = (e, t) => n => Object.assign({
+					source: "powerups_modal",
+					action: "view",
+					noun: "receipt_step"
+				}, i(n, e, t))
+		},
 		"./src/reddit/helpers/wiki/buildWikiPagesTree.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -7157,4 +7213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.3d1d34417ca845d0eea0.js.map
+//# sourceMappingURL=SubredditWiki.27a8cbc3b1568e9e5fdb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.a38a8afbb4612c807c6a.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.43d96d86b623418bebd1.js
+// Retrieved at 7/9/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PowerupsBanner"], {
 		"./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.m.less": function(e, s, t) {
@@ -17,9 +17,9 @@
 				a = t("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				c = t("./src/reddit/icons/svgs/Lock/index.tsx"),
 				i = t("./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.m.less"),
-				l = t.n(i);
+				d = t.n(i);
 			const {
-				fbt: d
+				fbt: l
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			s.a = e => {
 				const {
@@ -32,14 +32,14 @@
 					supportersCount: p
 				} = t, m = u[n] ? u[n].powerupsCost : 0, x = Math.max(m - i, 0);
 				return r.a.createElement("div", {
-					className: Object(o.a)(s, l.a.container)
+					className: Object(o.a)(s, d.a.container)
 				}, x ? r.a.createElement(r.a.Fragment, null, r.a.createElement(c.a, {
-					className: l.a.lockIcon
-				}), r.a.createElement("span", null, d._("{remainingToUnlock} more supporters to unlock!", [d._param("remainingToUnlock", x)], {
+					className: d.a.lockIcon
+				}), r.a.createElement("span", null, l._("{remainingToUnlock} more supporters to unlock!", [l._param("remainingToUnlock", x)], {
 					hk: "4k6uGF"
 				}))) : r.a.createElement(r.a.Fragment, null, r.a.createElement(a.a, {
-					className: l.a.checkmarkIcon
-				}), r.a.createElement("span", null, d._("Unlocked by {unlockedAlready} supporters", [d._param("unlockedAlready", p)], {
+					className: d.a.checkmarkIcon
+				}), r.a.createElement("span", null, l._("Unlocked by {unlockedAlready} supporters", [l._param("unlockedAlready", p)], {
 					hk: "2zLbrH"
 				}))))
 			}
@@ -66,16 +66,16 @@
 				a = t("./src/lib/classNames/index.ts"),
 				c = t("./src/lib/timeAgo/index.ts"),
 				i = t("./src/reddit/components/UserIcon/index.tsx"),
-				l = t("./src/reddit/icons/svgs/Powerup/index.tsx"),
-				d = t("./src/reddit/components/PowerupsBanner/Supporters/Supporter/index.m.less"),
-				u = t.n(d);
+				d = t("./src/reddit/icons/svgs/Powerup/index.tsx"),
+				l = t("./src/reddit/components/PowerupsBanner/Supporters/Supporter/index.m.less"),
+				u = t.n(l);
 			s.a = function(e) {
 				const {
 					className: s,
 					hideDate: t,
 					supporter: r
 				} = e, {
-					score: d,
+					score: l,
 					lastSupportedAt: p,
 					supporterInfo: m
 				} = r, x = p && p.indexOf("+") ? p.split("+")[0] : null, b = x ? new Date(x).valueOf() / 1e3 : null, _ = m ? m.name : n.fbt._("Anonymous", null, {
@@ -100,9 +100,9 @@
 					className: u.a.lastSupported
 				}, Object(c.d)(b)))), o.a.createElement("div", {
 					className: u.a.counter
-				}, o.a.createElement(l.a, {
+				}, o.a.createElement(d.a, {
 					className: u.a.powerupIcon
-				}), d))
+				}), l))
 			}
 		},
 		"./src/reddit/components/PowerupsBanner/Supporters/index.m.less": function(e, s, t) {
@@ -121,8 +121,8 @@
 				c = t("./src/reddit/components/PowerupsBanner/Supporters/index.m.less"),
 				i = t.n(c);
 			const {
-				fbt: l
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), d = 2, u = 500;
+				fbt: d
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), l = 2, u = 500;
 			s.a = function(e) {
 				const {
 					className: s,
@@ -133,11 +133,11 @@
 				const c = n.sort((e, s) => e.supporterInfo && !s.supporterInfo ? -1 : !e.supporterInfo && s.supporterInfo ? 1 : 0).slice(0, t || u);
 				return r.a.createElement("div", {
 					className: Object(o.a)(s, {
-						[i.a.withShade]: c.length >= d && (!t || t < n.length)
+						[i.a.withShade]: c.length >= l && (!t || t < n.length)
 					})
 				}, r.a.createElement("h3", {
 					className: i.a.title
-				}, l._("Recent Supporters", null, {
+				}, d._("Recent Supporters", null, {
 					hk: "1cY1Du"
 				})), c.map(e => r.a.createElement(a.a, {
 					className: i.a.supporter,
@@ -165,90 +165,94 @@
 			var n = t("./node_modules/react/index.js"),
 				r = t.n(n),
 				o = t("./node_modules/react-redux/es/index.js"),
-				a = t("./node_modules/reselect/es/index.js"),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/lib/localStorageAvailable/index.ts"),
+				a = t("./src/reddit/hooks/useTracking.ts"),
+				c = t("./node_modules/reselect/es/index.js"),
+				i = t("./src/lib/classNames/index.ts"),
+				d = t("./src/lib/localStorageAvailable/index.ts"),
 				l = t("./src/reddit/constants/banners.ts"),
-				d = t("./src/reddit/constants/modals.ts"),
-				u = t("./src/reddit/helpers/localStorage/index.ts"),
-				p = t("./src/reddit/actions/modal.ts"),
-				m = t("./src/reddit/components/TrackingHelper/index.tsx"),
-				x = t("./src/reddit/contexts/ApiContext.tsx"),
-				b = t("./src/reddit/selectors/gold/powerups.ts"),
-				_ = t("./src/reddit/selectors/subreddit.ts"),
-				w = t("./src/reddit/selectors/user.ts"),
-				E = t("./src/reddit/components/SubredditIcon/index.tsx"),
-				N = t("./src/reddit/controls/Button/index.tsx"),
-				f = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				h = t("./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.tsx"),
-				k = t("./src/reddit/components/PowerupsBanner/Supporters/index.tsx"),
-				P = t("./src/reddit/components/PowerupsBanner/index.m.less"),
-				g = t.n(P);
+				u = t("./src/reddit/constants/modals.ts"),
+				p = t("./src/reddit/helpers/localStorage/index.ts"),
+				m = t("./src/reddit/helpers/trackers/powerups.ts"),
+				x = t("./src/reddit/actions/modal.ts"),
+				b = t("./src/reddit/components/TrackingHelper/index.tsx"),
+				_ = t("./src/reddit/contexts/ApiContext.tsx"),
+				w = t("./src/reddit/selectors/gold/powerups.ts"),
+				E = t("./src/reddit/selectors/subreddit.ts"),
+				N = t("./src/reddit/selectors/user.ts"),
+				f = t("./src/reddit/components/SubredditIcon/index.tsx"),
+				h = t("./src/reddit/controls/Button/index.tsx"),
+				k = t("./src/reddit/icons/svgs/Close/index.tsx"),
+				g = t("./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.tsx"),
+				P = t("./src/reddit/components/PowerupsBanner/Supporters/index.tsx"),
+				S = t("./src/reddit/components/PowerupsBanner/index.m.less"),
+				j = t.n(S);
 			const {
-				fbt: S
+				fbt: v
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
-			var j;
+			var O;
 			! function(e) {
 				e.Dismissed = "dismissed", e.Hidden = "hidden", e.Select = "select"
-			}(j || (j = {}));
-			const v = Object(a.c)({
-					currentUser: w.i,
-					powerups: b.g,
-					subreddit: _.R,
-					topSupporters: b.h
+			}(O || (O = {}));
+			const I = Object(c.c)({
+					currentUser: N.i,
+					powerups: w.g,
+					subreddit: E.R,
+					topSupporters: w.h
 				}),
-				O = Object(m.c)(e => {
+				B = Object(b.c)(e => {
 					const {
 						className: s,
 						currentUser: t,
-						powerups: a,
-						subreddit: m,
-						subredditId: x,
-						topSupporters: b
-					} = e, [_, w] = Object(n.useState)(j.Hidden), P = Object(o.c)();
-					Object(i.a)() && !Object(u.f)(l.a.POWERUPS_BANNER, x) && _ === j.Hidden && w(j.Select);
-					const v = () => {
-						w(j.Select), Object(u.L)(l.a.POWERUPS_BANNER, !1, x)
+						powerups: c,
+						subreddit: b,
+						subredditId: _,
+						topSupporters: w
+					} = e, [E, N] = Object(n.useState)(O.Hidden), S = Object(o.c)(), I = Object(a.a)();
+					Object(d.a)() && !Object(p.f)(l.a.POWERUPS_BANNER, _) && E === O.Hidden && N(O.Select);
+					const B = () => {
+						N(O.Select), Object(p.L)(l.a.POWERUPS_BANNER, !1, _)
 					};
-					return t && _ !== j.Hidden && a && 1 !== a.tiersInfo.length ? _ === j.Dismissed ? r.a.createElement("div", {
-						className: Object(c.a)(g.a.dismissedContainer, s)
+					return t && E !== O.Hidden && c && 1 !== c.tiersInfo.length ? E === O.Dismissed ? r.a.createElement("div", {
+						className: Object(i.a)(j.a.dismissedContainer, s)
 					}, r.a.createElement("div", {
-						className: g.a.dismissedText
-					}, S._("Ok, we won't show you this again.", null, {
+						className: j.a.dismissedText
+					}, v._("Ok, we won't show you this again.", null, {
 						hk: "4z33KK"
-					})), r.a.createElement(N.f, {
-						onClick: v
-					}, S._("undo", null, {
+					})), r.a.createElement(h.f, {
+						onClick: B
+					}, v._("undo", null, {
 						hk: "1A9z3Y"
 					}))) : r.a.createElement("article", {
-						className: Object(c.a)(g.a.container, s)
-					}, m && r.a.createElement(E.b, {
-						subredditOrProfile: m,
-						className: g.a.subredditIcon
+						className: Object(i.a)(j.a.container, s)
+					}, b && r.a.createElement(f.b, {
+						subredditOrProfile: b,
+						className: j.a.subredditIcon
 					}), r.a.createElement("h2", {
-						className: g.a.title
-					}, S._("Powerups unlock features for the whole community", null, {
+						className: j.a.title
+					}, v._("Powerups unlock features for the whole community", null, {
 						hk: "2ZaVtr"
-					})), b && r.a.createElement(k.a, {
-						supporters: b,
-						className: g.a.topSupporters,
+					})), w && r.a.createElement(P.a, {
+						supporters: w,
+						className: j.a.topSupporters,
 						maxSupporters: 3
-					}), r.a.createElement(h.a, {
-						className: g.a.powerupsRemainingToUnlock,
-						powerups: a
-					}), r.a.createElement(N.f, {
-						className: g.a.button,
-						onClick: () => P(Object(p.h)(d.a.ECON_POWERUPS_PURCHASE))
-					}, S._("Powerup", null, {
-						hk: "261t2N"
-					})), r.a.createElement(f.a, {
-						className: g.a.close,
+					}), r.a.createElement(g.a, {
+						className: j.a.powerupsRemainingToUnlock,
+						powerups: c
+					}), r.a.createElement(h.f, {
+						className: j.a.button,
 						onClick: () => {
-							w(j.Dismissed), Object(u.L)(l.a.POWERUPS_BANNER, !0, x)
+							I(Object(m.d)()), S(Object(x.h)(u.a.ECON_POWERUPS_PURCHASE))
+						}
+					}, v._("Powerup", null, {
+						hk: "261t2N"
+					})), r.a.createElement(k.a, {
+						className: j.a.close,
+						onClick: () => {
+							N(O.Dismissed), Object(p.L)(l.a.POWERUPS_BANNER, !0, _)
 						}
 					})) : null
 				});
-			s.default = Object(x.b)(Object(o.b)(v)(O))
+			s.default = Object(_.b)(Object(o.b)(I)(B))
 		},
 		"./src/reddit/icons/svgs/Lock/index.tsx": function(e, s, t) {
 			"use strict";
@@ -274,4 +278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-PowerupsBanner.a38a8afbb4612c807c6a.js.map
+//# sourceMappingURL=reddit-components-PowerupsBanner.43d96d86b623418bebd1.js.map
