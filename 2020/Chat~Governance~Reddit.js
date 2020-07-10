@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6aa7e15572beed632d14.js
-// Retrieved at 7/9/2020, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a82190e1973271cf5326.js
+// Retrieved at 7/9/2020, 8:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3276,14 +3276,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("51cb950-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("cf30690-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "51cb950-production",
+						release: "cf30690-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3699,7 +3699,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "51cb950-production",
+							releaseClient: "cf30690-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -20961,173 +20961,173 @@
 		"./src/telemetry/models/Event.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return At
-			})), i.d(t, "e", (function() {
-				return Dt
-			})), i.d(t, "c", (function() {
-				return Gt
-			})), i.d(t, "d", (function() {
 				return Mt
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "e", (function() {
 				return Ut
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "c", (function() {
 				return qt
+			})), i.d(t, "d", (function() {
+				return Vt
+			})), i.d(t, "b", (function() {
+				return Ht
+			})), i.d(t, "f", (function() {
+				return Wt
 			}));
 			var n = {};
 			i.r(n), i.d(n, "toThrift", (function() {
-				return ee
+				return te
 			}));
 			var r = {};
 			i.r(r), i.d(r, "toThrift", (function() {
-				return ie
+				return ne
 			}));
 			var s = {};
 			i.r(s), i.d(s, "toThrift", (function() {
-				return re
+				return se
 			}));
 			var o = {};
 			i.r(o), i.d(o, "toThrift", (function() {
-				return de
+				return le
 			}));
 			var d = {};
 			i.r(d), i.d(d, "toThrift", (function() {
-				return ae
+				return ue
 			}));
 			var l = {};
 			i.r(l), i.d(l, "toThrift", (function() {
-				return ce
+				return _e
 			}));
 			var a = {};
 			i.r(a), i.d(a, "toThrift", (function() {
-				return me
+				return pe
 			}));
 			var u = {};
 			i.r(u), i.d(u, "toThrift", (function() {
-				return pe
+				return he
 			}));
 			var c = {};
 			i.r(c), i.d(c, "toThrift", (function() {
-				return fe
+				return ge
 			}));
 			var _ = {};
 			i.r(_), i.d(_, "toThrift", (function() {
-				return be
+				return we
 			}));
 			var m = {};
 			i.r(m), i.d(m, "toThrift", (function() {
-				return we
+				return ye
 			}));
 			var p = {};
 			i.r(p), i.d(p, "toThrift", (function() {
-				return Te
+				return Se
 			}));
 			var h = {};
 			i.r(h), i.d(h, "toThrift", (function() {
-				return Se
+				return Ee
 			}));
 			var f = {};
 			i.r(f), i.d(f, "toThrift", (function() {
-				return Fe
+				return Ie
 			}));
 			var g = {};
 			i.r(g), i.d(g, "toThrift", (function() {
-				return Oe
+				return Be
 			}));
 			var b = {};
 			i.r(b), i.d(b, "toThrift", (function() {
-				return je
+				return Re
 			}));
 			var w = {};
 			i.r(w), i.d(w, "toThrift", (function() {
-				return Re
+				return ke
 			}));
 			var y = {};
 			i.r(y), i.d(y, "toThrift", (function() {
-				return Ce
+				return Ne
 			}));
 			var v = {};
 			i.r(v), i.d(v, "toThrift", (function() {
-				return Ne
+				return Pe
 			}));
 			var T = {};
 			i.r(T), i.d(T, "toThrift", (function() {
-				return De
+				return Ge
 			}));
 			var S = {};
 			i.r(S), i.d(S, "toThrift", (function() {
-				return Me
+				return Ue
 			}));
 			var E = {};
 			i.r(E), i.d(E, "toThrift", (function() {
-				return qe
+				return Ve
 			}));
 			var F = {};
 			i.r(F), i.d(F, "toThrift", (function() {
-				return He
+				return We
 			}));
 			var I = {};
 			i.r(I), i.d(I, "toThrift", (function() {
-				return We
+				return ze
 			}));
 			var O = {};
 			i.r(O), i.d(O, "toThrift", (function() {
-				return ze
+				return Ke
 			}));
 			var B = {};
 			i.r(B), i.d(B, "toThrift", (function() {
-				return Je
+				return Ye
 			}));
 			var x = {};
 			i.r(x), i.d(x, "toThrift", (function() {
-				return Xe
+				return Ze
 			}));
 			var j = {};
 			i.r(j), i.d(j, "toThrift", (function() {
-				return et
+				return tt
 			}));
 			var R = {};
 			i.r(R), i.d(R, "toThrift", (function() {
-				return it
+				return nt
 			}));
 			var k = {};
 			i.r(k), i.d(k, "toThrift", (function() {
-				return rt
+				return st
 			}));
 			var C = {};
 			i.r(C), i.d(C, "toThrift", (function() {
-				return st
+				return dt
 			}));
 			var N = {};
 			i.r(N), i.d(N, "toThrift", (function() {
-				return ot
+				return lt
 			}));
 			var P = {};
 			i.r(P), i.d(P, "toThrift", (function() {
-				return dt
+				return at
 			}));
 			var L = {};
 			i.r(L), i.d(L, "toThrift", (function() {
-				return at
+				return ut
 			}));
 			var A = {};
 			i.r(A), i.d(A, "toThrift", (function() {
-				return mt
+				return _t
 			}));
 			var D = {};
 			i.r(D), i.d(D, "toThrift", (function() {
-				return ht
+				return ft
 			}));
 			var G = {};
 			i.r(G), i.d(G, "toThrift", (function() {
-				return gt
+				return bt
 			}));
 			var M = {};
 			i.r(M), i.d(M, "toThrift", (function() {
-				return wt
+				return yt
 			}));
 			var U = {};
 			i.r(U), i.d(U, "toThrift", (function() {
-				return vt
+				return Tt
 			}));
 			var q = {};
 			i.r(q), i.d(q, "toThrift", (function() {
@@ -21139,34 +21139,38 @@
 			}));
 			var H = {};
 			i.r(H), i.d(H, "toThrift", (function() {
-				return xt
+				return jt
 			}));
 			var W = {};
 			i.r(W), i.d(W, "toThrift", (function() {
-				return Rt
+				return kt
 			}));
 			var z = {};
 			i.r(z), i.d(z, "toThrift", (function() {
-				return Ct
+				return Nt
 			}));
 			var K = {};
 			i.r(K), i.d(K, "toThrift", (function() {
-				return Nt
+				return Lt
 			}));
 			var Q = {};
 			i.r(Q), i.d(Q, "toThrift", (function() {
-				return Pt
+				return At
 			}));
 			var J = {};
 			i.r(J), i.d(J, "toThrift", (function() {
-				return Lt
+				return Dt
+			}));
+			var Y = {};
+			i.r(Y), i.d(Y, "toThrift", (function() {
+				return Gt
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.search.js");
-			var Y = i("./node_modules/uuid/v4.js"),
-				X = i.n(Y),
-				Z = i("./src/telemetry/eventSchemas/event_types.js"),
-				$ = i("./src/telemetry/eventSchemas/action_types.js");
-			const ee = e => new $.ActionInfo({
+			var X = i("./node_modules/uuid/v4.js"),
+				Z = i.n(X),
+				$ = i("./src/telemetry/eventSchemas/event_types.js"),
+				ee = i("./src/telemetry/eventSchemas/action_types.js");
+			const te = e => new ee.ActionInfo({
 				count: e.count,
 				page_type: e.pageType || null,
 				pane_name: e.paneName,
@@ -21177,32 +21181,32 @@
 				relative_position: e.relativePosition,
 				type: e.type
 			});
-			var te = i("./src/telemetry/eventSchemas/adblock_types.js");
-			const ie = e => new te.Adblock({
+			var ie = i("./src/telemetry/eventSchemas/adblock_types.js");
+			const ne = e => new ie.Adblock({
 				enabled: e.enabled,
 				acceptable_ads: e.acceptableAds
 			});
-			var ne = i("./src/telemetry/eventSchemas/announcement_types.js");
-			const re = e => {
+			var re = i("./src/telemetry/eventSchemas/announcement_types.js");
+			const se = e => {
 				let {
 					id: t,
 					title: i,
 					body: n
 				} = e;
-				return new ne.Announcement({
+				return new re.Announcement({
 					id: t,
 					title: i,
 					body: n
 				})
 			};
-			var se = i("./src/telemetry/models/App.ts"),
-				oe = i("./src/telemetry/eventSchemas/banner_types.js");
-			const de = e => new oe.Banner({
+			var oe = i("./src/telemetry/models/App.ts"),
+				de = i("./src/telemetry/eventSchemas/banner_types.js");
+			const le = e => new de.Banner({
 				button_text: e.buttonText,
 				id: e.id
 			});
-			var le = i("./src/telemetry/eventSchemas/chat_types.js");
-			const ae = e => new le.Chat({
+			var ae = i("./src/telemetry/eventSchemas/chat_types.js");
+			const ue = e => new ae.Chat({
 				blocked_user_id: e.blocked_user_id,
 				id: e.id,
 				type: e.type,
@@ -21229,8 +21233,8 @@
 				message_id: e.message_id,
 				report_reason: e.report_reason
 			});
-			var ue = i("./src/telemetry/eventSchemas/experiment_types.js");
-			const ce = e => new ue.ClickTest({
+			var ce = i("./src/telemetry/eventSchemas/experiment_types.js");
+			const _e = e => new ce.ClickTest({
 				id: e.id,
 				name: e.name,
 				owner: e.owner,
@@ -21239,8 +21243,8 @@
 				response: e.response,
 				page_type: e.pageType
 			});
-			var _e = i("./src/telemetry/eventSchemas/content_types.js");
-			const me = e => new _e.Comment({
+			var me = i("./src/telemetry/eventSchemas/content_types.js");
+			const pe = e => new me.Comment({
 					id: e.id,
 					post_id: e.postId,
 					parent_id: e.parentId,
@@ -21252,15 +21256,15 @@
 					created_timestamp: e.created,
 					type: e.type
 				}),
-				pe = e => new _e.CommentComposer({
+				he = e => new me.CommentComposer({
 					editor_mode: e.editorMode
 				});
-			var he = i("./src/telemetry/eventSchemas/crawler_types.js");
-			const fe = e => new he.Crawler({
+			var fe = i("./src/telemetry/eventSchemas/crawler_types.js");
+			const ge = e => new fe.Crawler({
 				name: e.name
 			});
-			var ge = i("./src/telemetry/eventSchemas/custom_feed_types.js");
-			const be = e => new ge.CustomFeed({
+			var be = i("./src/telemetry/eventSchemas/custom_feed_types.js");
+			const we = e => new be.CustomFeed({
 					id: e.id,
 					is_nsfw: e.isNsfw,
 					number_followers: e.numberFollowers,
@@ -21268,34 +21272,34 @@
 					owner_id: e.ownerId,
 					visibility: e.visibility
 				}),
-				we = e => new _e.DiscoveryUnit({
+				ye = e => new me.DiscoveryUnit({
 					id: e.id,
 					type: e.type,
 					title: e.title,
 					name: e.name,
 					items: e.items
 				});
-			var ye = i("./src/telemetry/eventSchemas/timer_types.js");
-			const ve = (e, t) => e && t ? t - e == 0 ? null : t - e : null,
-				Te = e => {
+			var ve = i("./src/telemetry/eventSchemas/timer_types.js");
+			const Te = (e, t) => e && t ? t - e == 0 ? null : t - e : null,
+				Se = e => {
 					if (!performance || !performance.timing) return null;
 					const t = performance.timing;
-					return new ye.DOMTimers({
-						request: ve(t.requestStart, t.responseStart),
-						loading: ve(t.domLoading, t.domInteractive),
-						loaded: ve(t.domContentLoadedEventStart, t.domContentLoadedEventEnd)
+					return new ve.DOMTimers({
+						request: Te(t.requestStart, t.responseStart),
+						loading: Te(t.domLoading, t.domInteractive),
+						loaded: Te(t.domContentLoadedEventStart, t.domContentLoadedEventEnd)
 					})
 				},
-				Se = e => new ue.Experiment({
+				Ee = e => new ce.Experiment({
 					id: e.id,
 					is_override: e.isOverride,
 					name: e.name,
 					variant: e.variant,
 					version: e.version
 				});
-			var Ee = i("./src/telemetry/models/GoldPurchase.ts");
+			var Fe = i("./src/telemetry/models/GoldPurchase.ts");
 			i("./node_modules/core-js/modules/es6.array.sort.js");
-			const Fe = e => new _e.Listing({
+			const Ie = e => new me.Listing({
 				length: e.length,
 				links: e.links,
 				sort: e.sort,
@@ -21304,14 +21308,14 @@
 				old_sort: e.oldSort,
 				depth: e.depth
 			});
-			var Ie = i("./src/telemetry/eventSchemas/live_thread_types.js");
-			const Oe = e => new Ie.LiveThread({
+			var Oe = i("./src/telemetry/eventSchemas/live_thread_types.js");
+			const Be = e => new Oe.LiveThread({
 				id: e.id,
 				is_announcement: e.isAnnouncement
 			});
-			var Be = i("./src/telemetry/models/Media.ts"),
-				xe = i("./src/telemetry/eventSchemas/metasearch_types.js");
-			const je = e => new xe.MetaSearch({
+			var xe = i("./src/telemetry/models/Media.ts"),
+				je = i("./src/telemetry/eventSchemas/metasearch_types.js");
+			const Re = e => new je.MetaSearch({
 					display_query: e.displayQuery,
 					raw_query: e.rawQuery,
 					structure_type: e.structureType,
@@ -21323,15 +21327,15 @@
 					meta_flair_id: e.metaFlairId,
 					meta_flair_name: e.metaFlairName
 				}),
-				Re = e => new _e.Notification({
+				ke = e => new me.Notification({
 					id: e.id,
 					type: e.type
 				});
-			var ke = i("./src/telemetry/eventSchemas/request_types.js");
-			const Ce = e => new ke.Oauth({
+			var Ce = i("./src/telemetry/eventSchemas/request_types.js");
+			const Ne = e => new Ce.Oauth({
 					client_app_type: "web"
 				}),
-				Ne = e => new _e.Onboarding({
+				Pe = e => new me.Onboarding({
 					id: e.id,
 					action_source: e.actionSource,
 					process_notes: e.processNotes,
@@ -21358,10 +21362,10 @@
 					number_subreddits: e.numberSubreddits,
 					is_similar_subreddit: e.isSimilarSubreddit
 				});
-			var Pe = i("./src/telemetry/models/Outbound.ts"),
-				Le = i("./src/telemetry/models/Payment.ts"),
-				Ae = i("./src/telemetry/eventSchemas/device_types.js");
-			const De = e => new Ae.Platform({
+			var Le = i("./src/telemetry/models/Outbound.ts"),
+				Ae = i("./src/telemetry/models/Payment.ts"),
+				De = i("./src/telemetry/eventSchemas/device_types.js");
+			const Ge = e => new De.Platform({
 				browser_name: e.browserName,
 				browser_version: e.browserVersion,
 				device_id: e.deviceId,
@@ -21372,8 +21376,8 @@
 				os_name: e.osName,
 				os_version: e.osVersion
 			});
-			var Ge = i("./src/telemetry/eventSchemas/playback_types.js");
-			const Me = e => new Ge.Playback({
+			var Me = i("./src/telemetry/eventSchemas/playback_types.js");
+			const Ue = e => new Me.Playback({
 				chat_state: e.chatState,
 				heartbeat_duration_ms: e.heartbeatDurationMs,
 				id: e.id,
@@ -21388,19 +21392,19 @@
 				watch_duration_ms: e.watchDurationMs,
 				player_type: e.playerType
 			});
-			var Ue = i("./src/telemetry/eventSchemas/poll_types.js");
-			const qe = e => new Ue.Poll({
+			var qe = i("./src/telemetry/eventSchemas/poll_types.js");
+			const Ve = e => new qe.Poll({
 				options: e.options,
 				options_length: e.optionsLength,
 				user_vote: e.userVote
 			});
-			var Ve = i("./src/telemetry/eventSchemas/popup_types.js");
-			const He = e => new Ve.Popup({
+			var He = i("./src/telemetry/eventSchemas/popup_types.js");
+			const We = e => new He.Popup({
 					button_text: e.buttonText,
 					id: e.id,
 					text: e.text
 				}),
-				We = e => new _e.Post({
+				ze = e => new me.Post({
 					archived: e.archived,
 					author_id: e.authorId,
 					comment_type: e.commentType,
@@ -21424,29 +21428,39 @@
 					url: e.url,
 					promoted: e.promoted
 				}),
-				ze = e => new _e.PostCollection({
+				Ke = e => new me.PostCollection({
 					id: e.id,
 					title: e.title,
 					author_id: e.authorId,
 					post_ids: e.postIds,
 					display_layout: e.displayLayout
 				});
-			var Ke = i("./src/telemetry/models/PostComposer.ts"),
-				Qe = i("./src/telemetry/models/PostDraft.ts");
-			const Je = e => new _e.PostEvent({
+			var Qe = i("./src/telemetry/models/PostComposer.ts"),
+				Je = i("./src/telemetry/models/PostDraft.ts");
+			const Ye = e => new me.PostEvent({
 				type: e.type,
 				event_state: e.eventState,
 				event_start_timestamp: e.eventStartTimestamp,
 				event_end_timestamp: e.eventEndTimestamp
 			});
-			var Ye = i("./src/telemetry/eventSchemas/postflair_types.js");
-			const Xe = e => new Ye.PostFlair({
+			var Xe = i("./src/telemetry/eventSchemas/postflair_types.js");
+			const Ze = e => new Xe.PostFlair({
 				id: e.id,
 				title: e.title
 			});
-			var Ze = i("./src/telemetry/models/PostRequirement.ts"),
-				$e = i("./src/telemetry/eventSchemas/subreddit_types.js");
-			const et = e => new $e.Profile({
+			var $e = i("./src/telemetry/models/PostRequirement.ts"),
+				et = i("./src/telemetry/eventSchemas/powerups_types.js");
+			const tt = e => new et.Powerups({
+				subscription_id: e.subscriptionId,
+				count: e.count,
+				free_count: e.freeCount,
+				paid_count: e.paidCount,
+				tier: e.tier,
+				current_subreddit_powerups: e.currentSubredditPowerups,
+				benefit: e.benefit && e.benefit.toLocaleLowerCase()
+			});
+			var it = i("./src/telemetry/eventSchemas/subreddit_types.js");
+			const nt = e => new it.Profile({
 				id: e.id,
 				name: e.name,
 				type: e.type || "default",
@@ -21458,25 +21472,25 @@
 				content_visible: e.content_visible,
 				communities_visible: e.communities_visible
 			});
-			var tt = i("./src/telemetry/eventSchemas/ad_types.js");
-			const it = e => new tt.Programmatic({
+			var rt = i("./src/telemetry/eventSchemas/ad_types.js");
+			const st = e => new rt.Programmatic({
 				ad_unit: e.adUnit,
 				count: e.count,
 				partner: e.partner,
 				type: e.type
 			});
-			var nt = i("./src/telemetry/eventSchemas/pwa_types.js");
-			const rt = e => new nt.PWA({
+			var ot = i("./src/telemetry/eventSchemas/pwa_types.js");
+			const dt = e => new ot.PWA({
 					installable: e.installable,
 					installed: e.installed,
 					install_timestamp: e.installTimestamp
 				}),
-				st = e => new ke.Referrer({
+				lt = e => new Ce.Referrer({
 					domain: e.domain,
 					element: e.element,
 					url: e.url
 				}),
-				ot = e => new ke.Request({
+				at = e => new Ce.Request({
 					base_url: e.base_url,
 					domain: e.domain,
 					google_client_id: e.google_client_id,
@@ -21486,12 +21500,12 @@
 					canonical_url: e.canonical_url,
 					robots_meta_tag: e.robots_meta_tag
 				}),
-				dt = e => new ke.Response({
+				ut = e => new Ce.Response({
 					last_modified_timestamp: e.lastModifiedTimestamp,
 					code: e.code
 				});
-			var lt = i("./src/telemetry/eventSchemas/scheduled_post_types.js");
-			const at = e => new lt.ScheduledPost({
+			var ct = i("./src/telemetry/eventSchemas/scheduled_post_types.js");
+			const _t = e => new ct.ScheduledPost({
 				id: e.id,
 				creator_user_id: e.owner,
 				last_modified_user_id: e.lastModifiedUserId,
@@ -21500,11 +21514,11 @@
 				timezone: e.clientTimezone,
 				is_recurring: e.isRecurring
 			});
-			var ut = i("./src/reddit/constants/postLayout.ts");
-			const ct = X()(),
-				_t = e => e ? ut.e[e] : void 0,
-				mt = e => new Ae.Screen({
-					browser_tab_id: ct,
+			var mt = i("./src/reddit/constants/postLayout.ts");
+			const pt = Z()(),
+				ht = e => e ? mt.e[e] : void 0,
+				ft = e => new De.Screen({
+					browser_tab_id: pt,
 					in_focus: "undefined" != typeof window && document.hasFocus ? document.hasFocus() : null,
 					theme: e.theme,
 					width: "undefined" != typeof window ? window.screen.width : null,
@@ -21512,10 +21526,10 @@
 					scroll_position: e.scrollPosition,
 					viewport_width: "undefined" != typeof window ? window.innerWidth : null,
 					viewport_height: "undefined" != typeof window ? window.innerHeight : null,
-					view_type: e.viewType || _t(e.layout)
+					view_type: e.viewType || ht(e.layout)
 				});
-			var pt = i("./src/telemetry/eventSchemas/search_types.js");
-			const ht = e => new pt.Search({
+			var gt = i("./src/telemetry/eventSchemas/search_types.js");
+			const bt = e => new gt.Search({
 				number_subreddits: e.numberSubreddits,
 				origin_element: e.originElement,
 				origin_page_type: e.originPageType,
@@ -21530,12 +21544,12 @@
 				subreddit_ids: e.subredditIds,
 				typeahead_active: e.typeaheadActive
 			});
-			var ft = i("./src/telemetry/eventSchemas/seo_types.js");
-			const gt = e => new ft.SEO({
+			var wt = i("./src/telemetry/eventSchemas/seo_types.js");
+			const yt = e => new wt.SEO({
 				internal_link_url: e.internalLinkUrl
 			});
-			var bt = i("./src/telemetry/eventSchemas/session_types.js");
-			const wt = e => new bt.Session({
+			var vt = i("./src/telemetry/eventSchemas/session_types.js");
+			const Tt = e => new vt.Session({
 				id: e.id,
 				referrer_url: e.referrerUrl,
 				referrer_domain: e.referrerDomain,
@@ -21543,34 +21557,34 @@
 				type: e.type,
 				created_timestamp: e.createdTimestamp
 			});
-			var yt = i("./src/telemetry/eventSchemas/setting_types.js");
-			const vt = e => new yt.Setting({
+			var St = i("./src/telemetry/eventSchemas/setting_types.js");
+			const Et = e => new St.Setting({
 				value: e.value,
 				old_value: e.oldValue
 			});
-			var Tt = i("./src/telemetry/models/Subreddit.ts"),
-				St = i("./src/telemetry/eventSchemas/survey_types.js");
-			const Et = e => new St.Survey(e);
-			var Ft = i("./src/telemetry/models/Timer.ts"),
-				It = i("./src/telemetry/eventSchemas/tooltip_types.js");
-			const Ot = e => new It.Tooltip({
+			var Ft = i("./src/telemetry/models/Subreddit.ts"),
+				It = i("./src/telemetry/eventSchemas/survey_types.js");
+			const Ot = e => new It.Survey(e);
+			var Bt = i("./src/telemetry/models/Timer.ts"),
+				xt = i("./src/telemetry/eventSchemas/tooltip_types.js");
+			const jt = e => new xt.Tooltip({
 				id: e.id,
 				text: e.text
 			});
-			var Bt = i("./src/telemetry/eventSchemas/topic_metadata_types.js");
-			const xt = e => new Bt.TopicMetadata({
+			var Rt = i("./src/telemetry/eventSchemas/topic_metadata_types.js");
+			const kt = e => new Rt.TopicMetadata({
 				id: e.id,
 				display_name: e.displayName
 			});
-			var jt = i("./src/telemetry/eventSchemas/topic_tag_types.js");
-			const Rt = e => new jt.TopicTag({
+			var Ct = i("./src/telemetry/eventSchemas/topic_tag_types.js");
+			const Nt = e => new Ct.TopicTag({
 				id: e.id,
 				content: e.content,
 				type: e.type ? e.type.toLowerCase() : e.type,
 				is_primary: e.isPrimary
 			});
-			var kt = i("./src/telemetry/eventSchemas/user_types.js");
-			const Ct = e => new kt.User({
+			var Pt = i("./src/telemetry/eventSchemas/user_types.js");
+			const Lt = e => new Pt.User({
 					id: e.id,
 					is_admin: e.isAdmin,
 					created_timestamp: e.createdTimestamp,
@@ -21582,13 +21596,13 @@
 					number_coins: e.numberCoins,
 					number_premium_days_remaining: e.numberPremiumDaysRemaining
 				}),
-				Nt = e => new kt.UserPreferences({
+				At = e => new Pt.UserPreferences({
 					in_beta: e.inBeta,
 					language: e.language,
 					hide_nsfw: e.hideNsfw,
 					expando: e.expando
 				}),
-				Pt = e => new kt.UserSubreddit({
+				Dt = e => new Pt.UserSubreddit({
 					is_mod: e.isMod,
 					mod_access: e.modAccess,
 					mod_config: e.modConfig,
@@ -21600,95 +21614,96 @@
 					mod_wiki: e.modWiki,
 					is_subscriber: e.isSubscriber
 				}),
-				Lt = e => new $.Widget({
+				Gt = e => new ee.Widget({
 					type: e.type,
 					target_subreddit_name: e.targetSubredditName,
 					target_subreddit_id: e.targetSubredditId
 				});
-			var At, Dt, Gt, Mt, Ut;
+			var Mt, Ut, qt, Vt, Ht;
 			! function(e) {
 				e.Ban = "ban", e.Click = "click", e.Dismiss = "dismiss", e.Heartbeat = "heartbeat", e.Kick = "kick", e.Load = "load", e.ModDelete = "mod_delete", e.OptOut = "opt_out", e.Submit = "submit", e.View = "view"
-			}(At || (At = {})),
-			function(e) {
-				e.Experiment = "experiment", e.Page = "page"
-			}(Dt || (Dt = {})),
-			function(e) {
-				e.Expose = "expose", e.Load = "load"
-			}(Gt || (Gt = {})),
-			function(e) {
-				e.UserId = "user_id", e.CanonicalUrl = "canonical_url"
 			}(Mt || (Mt = {})),
 			function(e) {
+				e.Experiment = "experiment", e.Page = "page"
+			}(Ut || (Ut = {})),
+			function(e) {
+				e.Expose = "expose", e.Load = "load"
+			}(qt || (qt = {})),
+			function(e) {
+				e.UserId = "user_id", e.CanonicalUrl = "canonical_url"
+			}(Vt || (Vt = {})),
+			function(e) {
 				e.Chat = "chat", e.ChatKeyboard = "chat_keyboard", e.ChatPerformance = "chat_performance", e.ChatPreview = "chat_preview", e.ChatSettings = "chat_settings", e.ChatSetup = "chat_setup", e.ChatSidebarModal = "chat_sidebar_modal", e.ChatSidebarWidget = "chat_sidebar_widget", e.ChatView = "chat_view", e.ContactsList = "contacts_list", e.Global = "global", e.InvitationInbox = "invitation_inbox", e.MessageInbox = "messages_inbox", e.Nav = "nav", e.UserHovercard = "user_hovercard"
-			}(Ut || (Ut = {}));
-			const qt = e => new Z.Event({
+			}(Ht || (Ht = {}));
+			const Wt = e => new $.Event({
 					action: e.action,
 					source: e.source,
 					noun: e.noun,
 					client_timestamp: Date.now(),
-					uuid: X()(),
+					uuid: Z()(),
 					correlation_id: e.correlationId || null,
-					action_info: Vt(e.actionInfo, n),
-					announcement: Vt(e.announcement, s),
-					app: Vt(e.app, se),
-					banner: Vt(e.banner, o),
-					chat: Vt(e.chat, d),
-					click_test: Vt(e.clickTest, l),
-					comment: Vt(e.comment, a),
-					comment_composer: Vt(e.commentComposer, u),
-					crawler: Vt(e.crawler, c),
-					custom_feed: Vt(e.customFeed, _),
-					dom_timer: Vt(e.domTimer, p),
-					experiment: Vt(e.experiment, h),
-					gold_purchase: Vt(e.goldPurchase, Ee),
-					listing: Vt(e.listing, f),
-					live_thread: Vt(e.liveThread, g),
-					media: Vt(e.media, Be),
-					meta_search: Vt(e.metaSearch, b),
-					notification: Vt(e.notification, w),
-					oauth: Vt(e.oauth, y),
-					onboarding: Vt(e.onboarding, v),
-					outbound: Vt(e.outbound, Pe),
-					payment: Vt(e.payment, Le),
-					platform: Vt(e.platform, T),
-					playback: Vt(e.playback, S),
-					poll: Vt(e.poll, E),
-					popup: Vt(e.popup, F),
-					post: Vt(e.post, I),
-					post_draft: Vt(e.postDraft, Qe),
-					post_collection: Vt(e.postCollection, O),
-					post_composer: Vt(e.postComposer, Ke),
-					post_event: Vt(e.postEvent, B),
-					post_flair: Vt(e.postFlair, x),
-					post_requirement: Vt(e.postRequirement, Ze),
-					profile: Vt(e.profile, j),
-					programmatic: Vt(e.programmatic, R),
-					pwa: Vt(e.pwa, k),
-					referrer: Vt(e.referrer, C),
-					request: Vt(e.request, N),
-					response: Vt(e.response, P),
-					scheduled_post: Vt(e.scheduledPost, L),
-					screen: Vt(e.screen, A),
-					search: Vt(e.search, D),
-					seo: Vt(e.seo, G),
-					session: Vt(e.session, M),
-					setting: Vt(e.setting, U),
-					subreddit: Vt(e.subreddit, Tt),
-					survey: Vt(e.survey, q),
-					target_post: Vt(e.targetPost, I),
-					target_subreddit: Vt(e.targetSubreddit, Tt),
-					timer: Vt(e.timer, Ft),
-					tooltip: Vt(e.tooltip, V),
-					topic_metadata: Vt(e.topicMetadata, H),
-					topic_tag: Vt(e.topicTag, W),
-					user: Vt(e.user, z),
-					user_preferences: Vt(e.userPreferences, K),
-					user_subreddit: Vt(e.userSubreddit, Q),
-					widget: Vt(e.widget, J),
-					adblock: Vt(e.adblock, r),
-					discovery_unit: Vt(e.discoveryUnit, m)
+					action_info: zt(e.actionInfo, n),
+					announcement: zt(e.announcement, s),
+					app: zt(e.app, oe),
+					banner: zt(e.banner, o),
+					chat: zt(e.chat, d),
+					click_test: zt(e.clickTest, l),
+					comment: zt(e.comment, a),
+					comment_composer: zt(e.commentComposer, u),
+					crawler: zt(e.crawler, c),
+					custom_feed: zt(e.customFeed, _),
+					dom_timer: zt(e.domTimer, p),
+					experiment: zt(e.experiment, h),
+					gold_purchase: zt(e.goldPurchase, Fe),
+					listing: zt(e.listing, f),
+					live_thread: zt(e.liveThread, g),
+					media: zt(e.media, xe),
+					meta_search: zt(e.metaSearch, b),
+					notification: zt(e.notification, w),
+					oauth: zt(e.oauth, y),
+					onboarding: zt(e.onboarding, v),
+					outbound: zt(e.outbound, Le),
+					payment: zt(e.payment, Ae),
+					platform: zt(e.platform, T),
+					playback: zt(e.playback, S),
+					poll: zt(e.poll, E),
+					popup: zt(e.popup, F),
+					post: zt(e.post, I),
+					post_draft: zt(e.postDraft, Je),
+					post_collection: zt(e.postCollection, O),
+					post_composer: zt(e.postComposer, Qe),
+					post_event: zt(e.postEvent, B),
+					post_flair: zt(e.postFlair, x),
+					post_requirement: zt(e.postRequirement, $e),
+					powerups: zt(e.powerups, j),
+					profile: zt(e.profile, R),
+					programmatic: zt(e.programmatic, k),
+					pwa: zt(e.pwa, C),
+					referrer: zt(e.referrer, N),
+					request: zt(e.request, P),
+					response: zt(e.response, L),
+					scheduled_post: zt(e.scheduledPost, A),
+					screen: zt(e.screen, D),
+					search: zt(e.search, G),
+					seo: zt(e.seo, M),
+					session: zt(e.session, U),
+					setting: zt(e.setting, q),
+					subreddit: zt(e.subreddit, Ft),
+					survey: zt(e.survey, V),
+					target_post: zt(e.targetPost, I),
+					target_subreddit: zt(e.targetSubreddit, Ft),
+					timer: zt(e.timer, Bt),
+					tooltip: zt(e.tooltip, H),
+					topic_metadata: zt(e.topicMetadata, W),
+					topic_tag: zt(e.topicTag, z),
+					user: zt(e.user, K),
+					user_preferences: zt(e.userPreferences, Q),
+					user_subreddit: zt(e.userSubreddit, J),
+					widget: zt(e.widget, Y),
+					adblock: zt(e.adblock, r),
+					discovery_unit: zt(e.discoveryUnit, m)
 				}),
-				Vt = (e, t) => e ? t.toThrift(e) : null
+				zt = (e, t) => e ? t.toThrift(e) : null
 		},
 		"./src/telemetry/models/GoldPurchase.ts": function(e, t, i) {
 			"use strict";
@@ -21991,4 +22006,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.6aa7e15572beed632d14.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.a82190e1973271cf5326.js.map
