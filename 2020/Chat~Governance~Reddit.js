@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a0a6da01abe5c29af54b.js
-// Retrieved at 7/13/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.06cfd1e03d317284b1f6.js
+// Retrieved at 7/13/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3276,14 +3276,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("637f74b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("ad03f0c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "637f74b-production",
+						release: "ad03f0c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3643,16 +3643,15 @@
 		},
 		"./src/lib/logs/console.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
-				return s
-			})), i.d(t, "b", (function() {
-				return o
-			}));
 			var n;
-			i("./node_modules/core-js/modules/es6.regexp.split.js"), i("./src/lib/logSafeJSONStringify/index.ts");
-			! function(e) {
-				e.Warn = "WARN", e.Error = "ERROR"
-			}(n || (n = {}));
+			i.d(t, "a", (function() {
+					return s
+				})), i.d(t, "b", (function() {
+					return o
+				})),
+				function(e) {
+					e.Warn = "WARN", e.Error = "ERROR"
+				}(n || (n = {}));
 			const r = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "",
 						i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n.Error;
@@ -3699,7 +3698,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "637f74b-production",
+							releaseClient: "ad03f0c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -3719,7 +3718,7 @@
 					const u = {
 						isLoggedOut: !r()(t, "user.account"),
 						url: r()(t, "extra.pageInfo.currentPage.url"),
-						_: o,
+						message: o,
 						stacktrace: a.slice(0, 8),
 						breadcrumbs: n.slice(0, 8),
 						tags: t.tags
@@ -22006,4 +22005,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.a0a6da01abe5c29af54b.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.06cfd1e03d317284b1f6.js.map
