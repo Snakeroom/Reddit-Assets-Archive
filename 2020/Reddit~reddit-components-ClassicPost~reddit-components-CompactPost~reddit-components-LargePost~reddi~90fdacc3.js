@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5e29ac8a101a722f7bcc.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.a59ef6a6920312698bd0.js
+// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -2916,34 +2916,51 @@
 		"./src/reddit/helpers/richTextJson/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return i
-			})), s.d(t, "d", (function() {
 				return o
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "e", (function() {
 				return a
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "a", (function() {
 				return c
+			})), s.d(t, "d", (function() {
+				return l
+			})), s.d(t, "c", (function() {
+				return u
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.split.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
-			const n = "giphy|",
-				r = "|downsized";
+			var n = s("./src/reddit/models/RichTextJson/index.ts");
+			const r = "giphy|",
+				i = "|downsized";
 
-			function i(e, t) {
-				return n + e + (t ? r : "")
-			}
-
-			function o(e) {
-				return e && 0 === e.indexOf(n)
+			function o(e, t) {
+				return r + e + (t ? i : "")
 			}
 
 			function a(e) {
-				const t = e && e.media && e.media.mediaMetadata;
-				return !!t && Object.keys(t).some(o)
+				return e && 0 === e.indexOf(r)
 			}
 
 			function c(e) {
-				let t = e.substring(n.length);
+				const t = e && e.media && e.media.mediaMetadata;
+				return !!t && Object.keys(t).some(a)
+			}
+
+			function l(e) {
+				let t = e.substring(r.length);
 				return t.indexOf("|") && (t = t.split("|")[0]), "https://giphy.com/gifs/".concat(t)
+			}
+
+			function d(e) {
+				return "object" == typeof e && null !== e && !!e.e
+			}
+
+			function u(e) {
+				const t = e => {
+					let s = [];
+					const r = e.c && Array.isArray(e.c) ? e.c : [];
+					for (const n of r) d(n) && (s = [...s, ...t(n)]);
+					return n.F(e) && s.push(e.id), s
+				};
+				return e.reduce((e, s) => [...e, ...t(s)], [])
 			}
 		},
 		"./src/reddit/helpers/trackers/lightbox.ts": function(e, t, s) {
@@ -3965,4 +3982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5e29ac8a101a722f7bcc.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.a59ef6a6920312698bd0.js.map

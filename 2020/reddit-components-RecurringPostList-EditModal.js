@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.c95f1a0fe0f06bc61c3d.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.18cd3c44b1cfe18798dc.js
+// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RecurringPostList-EditModal"], {
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, n) {
@@ -127,9 +127,9 @@
 					}, e))))
 				}
 			}
-			var g = C,
-				x = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
-				D = n.n(x);
+			var x = C,
+				g = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
+				D = n.n(g);
 
 			function S() {
 				return (S = Object.assign || function(e) {
@@ -149,7 +149,7 @@
 				type: "date"
 			}, e, {
 				onChange: t => e.onChange(t.target.value)
-			})) : r.a.createElement(g, e)
+			})) : r.a.createElement(x, e)
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -252,9 +252,9 @@
 					}))
 				}
 			}
-			var g = C,
-				x = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
-				D = n.n(x);
+			var x = C,
+				g = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
+				D = n.n(g);
 
 			function S() {
 				return (S = Object.assign || function(e) {
@@ -274,7 +274,7 @@
 				type: "time"
 			}, e, {
 				onChange: t => e.onChange(t.target.value)
-			})) : r.a.createElement(g, e)
+			})) : r.a.createElement(x, e)
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -403,8 +403,8 @@
 				y = n("./src/reddit/components/RecurringPostList/RecurringPost/index.tsx"),
 				f = n("./src/reddit/components/ScheduledPost/index.tsx"),
 				C = n("./src/reddit/components/ScheduledPost/MetaLine/index.tsx"),
-				g = n("./src/reddit/components/ScheduledPost/PostTitle/index.tsx"),
-				x = n("./src/reddit/components/ScheduledPost/SchedulePicker/index.tsx"),
+				x = n("./src/reddit/components/ScheduledPost/PostTitle/index.tsx"),
+				g = n("./src/reddit/components/ScheduledPost/SchedulePicker/index.tsx"),
 				D = n("./src/reddit/components/ScheduledPost/SchedulePicker/withSchedulePicker.ts"),
 				S = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				k = n("./src/reddit/controls/Button/index.tsx"),
@@ -528,7 +528,7 @@
 						post: a
 					})), o.a.createElement("div", {
 						className: F.a.scheduledPostMetadata
-					}, o.a.createElement("div", null, o.a.createElement(g.a, {
+					}, o.a.createElement("div", null, o.a.createElement(x.a, {
 						title: e.title
 					}), o.a.createElement(h.a, {
 						className: F.a.flairList,
@@ -549,7 +549,7 @@
 						className: F.a.mainSectionHeader
 					}, T._("When do you want to submit this post", null, {
 						hk: "Phpmz"
-					})), o.a.createElement(x.a, {
+					})), o.a.createElement(g.a, {
 						frequencyOption: i,
 						timezoneName: f,
 						maxDate: this.maxDate,
@@ -714,8 +714,8 @@
 				}
 			}
 			var C = Object(l.c)(f),
-				g = n("./src/lib/classNames/index.ts"),
-				x = n("./src/reddit/helpers/ordinal/index.ts"),
+				x = n("./src/lib/classNames/index.ts"),
+				g = n("./src/reddit/helpers/ordinal/index.ts"),
 				D = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.m.less"),
 				S = n.n(D);
 			const {
@@ -741,7 +741,7 @@
 							[m.d.Weekly]: k._("Weekly on {day of the week}", [k._param("day of the week", t)], {
 								hk: "4cJaZJ"
 							}),
-							[m.d.Monthly]: k._("Monthly on day {day of the month}", [k._param("day of the month", Object(x.a)(n))], {
+							[m.d.Monthly]: k._("Monthly on day {day of the month}", [k._param("day of the month", Object(g.a)(n))], {
 								hk: "3H4TV9"
 							}),
 							[m.b]: k._("Custom...", null, {
@@ -758,13 +758,13 @@
 						displayText: r(t),
 						options: c,
 						onSelect: e => s(e.value),
-						className: Object(g.a)(e.className, S.a.dropdownSelector)
+						className: Object(x.a)(e.className, S.a.dropdownSelector)
 					})
 				},
 				P = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/DaySelector/index.m.less"),
 				v = n.n(P);
 			var I = e => o.a.createElement("div", {
-					className: Object(g.a)(v.a.daySelector, {
+					className: Object(x.a)(v.a.daySelector, {
 						[v.a.selected]: e.isSelected
 					}),
 					onClick: () => e.onClick(!e.isSelected)
@@ -779,7 +779,7 @@
 				e.Default = "default", e.Custom = "custom"
 			}(M || (M = {}));
 			const F = e => ({
-				[M.Default]: E._("Monthly on {submit day} day", [E._param("submit day", Object(x.a)(e))], {
+				[M.Default]: E._("Monthly on {submit day} day", [E._param("submit day", Object(g.a)(e))], {
 					hk: "nXxbI"
 				}),
 				[M.Custom]: E._("Monthly on days...", null, {
@@ -858,10 +858,10 @@
 					super(...arguments), this.dayOfWeekValues = Object.keys(m.c).map(e => parseInt(e)).filter(e => !isNaN(e)), this.getCheckboxes = () => {
 						const e = new Date;
 						return this.dayOfWeekValues.map(t => {
-							const n = Object(m.h)(t) - e.getDay();
+							const n = Object(m.i)(t) - e.getDay();
 							e.setDate(e.getDate() + n);
 							const s = e.toLocaleDateString(void 0, {
-								weekday: "narrow"
+								weekday: "short"
 							});
 							return o.a.createElement(z.a, {
 								key: t,
@@ -910,8 +910,8 @@
 						onTimezoneChange: b,
 						recurrenceInfo: y,
 						submitDate: f,
-						submitMonthDay: g,
-						submitTime: x,
+						submitMonthDay: x,
+						submitTime: g,
 						timezoneName: D
 					} = this.props, S = y && e === m.b, k = S && y.frequency === m.d.Weekly, P = S && y.frequency === m.d.Monthly;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(r.a, {
@@ -920,7 +920,7 @@
 						value: f
 					}), o.a.createElement(c.a, {
 						onChange: p,
-						value: x,
+						value: g,
 						className: K.a.timeInput
 					}), o.a.createElement("label", {
 						className: K.a.timezoneLabel
@@ -951,10 +951,10 @@
 						selectedFrequency: y.frequency,
 						onSelect: n
 					})), k && o.a.createElement(B, {
-						selectedWeekDays: y.byWeekDays.map(m.i),
+						selectedWeekDays: y.byWeekDays.map(m.j),
 						onChange: d
 					}), P && o.a.createElement(w, {
-						submitDay: g,
+						submitDay: x,
 						selectedMonthDays: y.byMonthDays,
 						onChange: l
 					})))
@@ -981,9 +981,9 @@
 			})), n.d(t, "g", (function() {
 				return C
 			})), n.d(t, "f", (function() {
-				return g
-			})), n.d(t, "b", (function() {
 				return x
+			})), n.d(t, "b", (function() {
+				return g
 			})), n.d(t, "c", (function() {
 				return D
 			}));
@@ -1021,7 +1021,7 @@
 				}) : Object.assign({}, e.state.recurrenceInfo) : null,
 				m = e => t => {
 					const n = Object(a.f)(Object(r.a)(t, e.state.submitTime)),
-						s = Object(i.o)(n.getDay()),
+						s = Object(i.p)(n.getDay()),
 						o = n.getDate();
 					e.setState({
 						submitDate: t,
@@ -1093,27 +1093,35 @@
 				C = e => t => {
 					e.state.recurrenceInfo && e.setState({
 						recurrenceInfo: Object.assign({}, e.state.recurrenceInfo, {
-							byWeekDays: t.map(i.g)
+							byWeekDays: t.map(i.h)
 						})
 					})
 				},
-				g = e => t => {
+				x = e => t => {
 					e.state.recurrenceInfo && e.setState({
 						recurrenceInfo: Object.assign({}, e.state.recurrenceInfo, {
 							byMonthDays: t
 						})
 					})
 				},
-				x = e => () => {
+				g = e => () => {
 					const {
 						submitDate: t,
 						submitTime: n
 					} = e.state;
-					return t && n ? Object(a.f)(Object(r.a)(t, n)) < (Object(a.b)() === e.state.timezoneName ? new Date : new Date(Date.now() - o.x)) ? s.fbt._("Submit time needs to be in the future", null, {
-						hk: "3YJESf"
-					}) : null : s.fbt._("Please enter valid submit time", null, {
+					if (!t || !n) return s.fbt._("Please enter valid submit time", null, {
 						hk: "sKXJR"
-					})
+					});
+					const c = Object(a.f)(Object(r.a)(t, n));
+					if (c < (Object(a.b)() === e.state.timezoneName ? new Date : new Date(Date.now() - o.x))) return s.fbt._("Submit time needs to be in the future", null, {
+						hk: "3YJESf"
+					});
+					if (e.maxDate) {
+						if (c > new Date(e.maxDate)) return s.fbt._("Submit time is too far in the future", null, {
+							hk: "2Ni1MR"
+						})
+					}
+					return null
 				},
 				D = e => {
 					const t = e.schedule || (() => {
@@ -1130,7 +1138,7 @@
 						c = o.getDate();
 					return {
 						submitDate: n,
-						submitWeekDay: Object(i.o)(o.getDay()),
+						submitWeekDay: Object(i.p)(o.getDay()),
 						submitMonthDay: c,
 						submitTime: s,
 						timezoneName: t.timezoneName,
@@ -1246,4 +1254,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-RecurringPostList-EditModal.c95f1a0fe0f06bc61c3d.js.map
+//# sourceMappingURL=reddit-components-RecurringPostList-EditModal.18cd3c44b1cfe18798dc.js.map

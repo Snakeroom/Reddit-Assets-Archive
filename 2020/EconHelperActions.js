@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.b0ad3e7502a36bc3b122.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.38f488e53cd68421e960.js
+// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -573,34 +573,51 @@
 		"./src/reddit/helpers/richTextJson/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return c
-			})), r.d(t, "d", (function() {
 				return o
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "e", (function() {
 				return d
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "a", (function() {
 				return i
+			})), r.d(t, "d", (function() {
+				return a
+			})), r.d(t, "c", (function() {
+				return m
 			}));
 			r("./node_modules/core-js/modules/es6.regexp.split.js"), r("./node_modules/core-js/modules/web.dom.iterable.js");
-			const s = "giphy|",
-				n = "|downsized";
+			var s = r("./src/reddit/models/RichTextJson/index.ts");
+			const n = "giphy|",
+				c = "|downsized";
 
-			function c(e, t) {
-				return s + e + (t ? n : "")
-			}
-
-			function o(e) {
-				return e && 0 === e.indexOf(s)
+			function o(e, t) {
+				return n + e + (t ? c : "")
 			}
 
 			function d(e) {
-				const t = e && e.media && e.media.mediaMetadata;
-				return !!t && Object.keys(t).some(o)
+				return e && 0 === e.indexOf(n)
 			}
 
 			function i(e) {
-				let t = e.substring(s.length);
+				const t = e && e.media && e.media.mediaMetadata;
+				return !!t && Object.keys(t).some(d)
+			}
+
+			function a(e) {
+				let t = e.substring(n.length);
 				return t.indexOf("|") && (t = t.split("|")[0]), "https://giphy.com/gifs/".concat(t)
+			}
+
+			function u(e) {
+				return "object" == typeof e && null !== e && !!e.e
+			}
+
+			function m(e) {
+				const t = e => {
+					let r = [];
+					const n = e.c && Array.isArray(e.c) ? e.c : [];
+					for (const s of n) u(s) && (r = [...r, ...t(s)]);
+					return s.F(e) && r.push(e.id), r
+				};
+				return e.reduce((e, r) => [...e, ...t(r)], [])
 			}
 		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, r) {
@@ -969,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconHelperActions.b0ad3e7502a36bc3b122.js.map
+//# sourceMappingURL=EconHelperActions.38f488e53cd68421e960.js.map

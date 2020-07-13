@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.6df5c6cde6c94a592d43.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.da904e3cba0189bda3f0.js
+// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -719,8 +719,8 @@
 				M = B(E.a),
 				L = B(y.a),
 				D = B(S.a),
-				F = B(x.a, 1),
-				N = B(C.a),
+				N = B(x.a, 1),
+				F = B(C.a),
 				P = B(O.a),
 				U = B(k.a),
 				H = {
@@ -744,7 +744,7 @@
 				W = {
 					type: "style",
 					name: "strikethrough",
-					Icon: N,
+					Icon: F,
 					style: T.k.STRIKETHROUGH,
 					tooltipTranslation: () => o.fbt._("Strikethrough", null, {
 						hk: "U4hXC"
@@ -762,7 +762,7 @@
 				q = {
 					type: "style",
 					name: "spoiler",
-					Icon: F,
+					Icon: N,
 					style: T.k.SPOILER,
 					tooltipTranslation: () => o.fbt._("Spoiler", null, {
 						hk: "1tb6Ht"
@@ -839,7 +839,7 @@
 			n.d(e, "c", (function() {
 				return L
 			})), n.d(e, "g", (function() {
-				return N
+				return F
 			})), n.d(e, "f", (function() {
 				return P
 			})), n.d(e, "h", (function() {
@@ -950,7 +950,7 @@
 				})),
 				L = a.a.div("SectionSpacer", _.a),
 				D = a.a.div("Spacer", _.a),
-				F = (t, e, n, s, r) => {
+				N = (t, e, n, s, r) => {
 					const {
 						name: c,
 						Icon: a,
@@ -988,7 +988,7 @@
 						})
 					}
 				},
-				N = (t, e, n, o, s) => t.map(t => F(t, e, n, o, s)),
+				F = (t, e, n, o, s) => t.map(t => N(t, e, n, o, s)),
 				P = [y.b, y.e],
 				U = [y.j, y.g, y.k, y.i],
 				H = [y.d, y.l, y.h, y.a, y.c],
@@ -1032,11 +1032,11 @@
 						className: Object(c.a)(_.a.toolbarContent, e, {
 							[_.a.isSticky]: !r
 						})
-					}, N(P, m, s, a, u), i.a.createElement(z, {
+					}, F(P, m, s, a, u), i.a.createElement(z, {
 						controlsState: m,
 						trackOnClick: u,
 						onLinkButtonClick: h
-					}), N(U, m, s, a, u), i.a.createElement(L, null), N(H, m, s, a, u), i.a.createElement(L, null), i.a.createElement(W, {
+					}), F(U, m, s, a, u), i.a.createElement(L, null), F(H, m, s, a, u), i.a.createElement(L, null), i.a.createElement(W, {
 						controlsState: m,
 						editorState: s,
 						trackOnClick: u,
@@ -2326,8 +2326,8 @@
 				M = n("./src/reddit/components/RichTextEditor/entity/entityTypes.ts"),
 				L = n("./node_modules/immutable/dist/immutable.js"),
 				D = n("./src/reddit/helpers/dom/index.ts"),
-				F = (n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/lodash/chunk.js")),
-				N = n.n(F),
+				N = (n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/lodash/chunk.js")),
+				F = n.n(N),
 				P = n("./node_modules/lodash/flatten.js"),
 				U = n.n(P),
 				H = n("./node_modules/lodash/takeWhile.js"),
@@ -2372,7 +2372,7 @@
 					});
 				y.sort(V.b);
 				const S = "rows" === e ? h : y.length / g,
-					x = U()(Object(V.d)(N()(y, S))),
+					x = U()(Object(V.d)(F()(y, S))),
 					C = s.getBlocksAsArray(),
 					O = [...C.slice(0, p), ...x, ...C.slice(p + u.length)],
 					k = s.merge({
@@ -2439,7 +2439,7 @@
 							maxCol: r
 						} = Object(V.f)(Object(V.g)(e), Object(V.g)(n)),
 						i = r - s + 1;
-					return Object(V.d)(N()(o, i))
+					return Object(V.d)(F()(o, i))
 				},
 				nt = (t, e, n) => {
 					n ? bt(t[0], e) : ((t, e) => {
@@ -2510,7 +2510,7 @@
 						let {
 							colCount: u
 						} = d;
-						const p = N()(a, u);
+						const p = F()(a, u);
 						let h = p.length;
 						const {
 							minRow: g,
@@ -2520,7 +2520,7 @@
 							const n = z()(f, t => Object(T.v)(t.getType()));
 							n.sort(V.b);
 							const s = Object(V.g)(n[0]).colCount,
-								r = N()(n, s),
+								r = F()(n, s),
 								i = r.length,
 								c = g + i - 1,
 								d = m + s - 1;
@@ -2528,7 +2528,7 @@
 							if (d >= u && p.forEach(t => {
 									t.push(...Object(V.l)(d - u + 1, 1))
 								}), u = p[0].length, c >= h) {
-								const t = N()(Object(V.l)(u, c - h + 1), u);
+								const t = F()(Object(V.l)(u, c - h + 1), u);
 								p.push(...t)
 							}
 							h = p.length;
@@ -2886,8 +2886,8 @@
 				Mt = n("./src/reddit/actions/upload.ts"),
 				Lt = n("./src/reddit/components/ThumbnailSelector/index.tsx"),
 				Dt = t => null,
-				Ft = n("./src/reddit/helpers/media/index.ts"),
-				Nt = n("./src/reddit/helpers/richTextEditor/index.ts"),
+				Nt = n("./src/reddit/helpers/media/index.ts"),
+				Ft = n("./src/reddit/helpers/richTextEditor/index.ts"),
 				Pt = n("./src/reddit/selectors/activeModalId.ts");
 			const Ut = "application/x-reddit-rte-block";
 			n("./node_modules/core-js/modules/es6.symbol.js");
@@ -3147,7 +3147,7 @@
 						thumbnail: l
 					} = t, d = Te(t, ["alignCenter", "isSelected", "onCancel", "onRetry", "onRemove", "upload", "mediaAsset", "thumbnail"]);
 					let u = !1;
-					if (i) u = "image" === Object(Ft.f)(i.metadata.mimetype);
+					if (i) u = "image" === Object(Nt.f)(i.metadata.mimetype);
 					else {
 						if (!c) return null;
 						u = c.type === A.a.Image || c.type === A.a.AnimatedImage
@@ -3220,13 +3220,13 @@
 				Me = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				Le = n("./src/reddit/layout/row/Inline/index.tsx"),
 				De = n("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
-				Fe = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
-				Ne = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
+				Ne = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
+				Fe = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
 				Pe = n("./src/reddit/components/RichTextEditor/media/MediaBlock/Toolbar/index.m.less"),
 				Ue = n.n(Pe);
-			const He = m.a.wrapped(Fe.a, "FormatterButton", Ue.a),
-				ze = Object(Ne.f)(Me.b),
-				We = Object(Ne.f)(Ke.a),
+			const He = m.a.wrapped(Ne.a, "FormatterButton", Ue.a),
+				ze = Object(Fe.f)(Me.b),
+				We = Object(Fe.f)(Ke.a),
 				Ve = m.a.wrapped(Le.a, "ToolbarContent", Ue.a);
 			var qe = t => {
 					const {
@@ -3374,10 +3374,10 @@
 						isRteVideoPosterEnabled: n,
 						offsetKey: o,
 						upload: s
-					} = this.props, r = Object(A.h)(t), i = r ? r.thumbnail : void 0, c = !!s && Object(Ft.l)(s.metadata.mimetype || ""), {
+					} = this.props, r = Object(A.h)(t), i = r ? r.thumbnail : void 0, c = !!s && Object(Nt.l)(s.metadata.mimetype || ""), {
 						active: l,
 						isInSelection: d
-					} = this.state, u = e.editorType === Nt.a.Comment;
+					} = this.state, u = e.editorType === Ft.a.Comment;
 					return a.a.createElement($e, {
 						innerRef: t => this.rootContainer = t
 					}, l && a.a.createElement(qe, {
@@ -3468,7 +3468,7 @@
 						colCount: g
 					} = h;
 					d.sort(V.b);
-					const m = N()(d, g),
+					const m = F()(d, g),
 						{
 							minCol: f,
 							minRow: b,
@@ -3481,7 +3481,7 @@
 						};
 					if ("rows" === e) {
 						const t = "before" === n ? b : y + 1,
-							e = N()(Object(V.l)(g, y - b + 1), g);
+							e = F()(Object(V.l)(g, y - b + 1), g);
 						m.splice(t, 0, ...e), S.rowIndex = t
 					} else {
 						const t = "before" === n ? f : E + 1;
@@ -3757,7 +3757,7 @@
 							colCount: i
 						} = Object(V.g)(r);
 					e.sort((t, e) => Object(V.b)(Object(K.c)(t), Object(K.c)(e)));
-					const c = N()(e, i);
+					const c = F()(e, i);
 					let l, d, u = !1;
 					if (o.getAnchorKey() !== o.getFocusKey()) {
 						const t = s.getBlocksAsArray(),
@@ -3866,7 +3866,7 @@
 				Mn = n("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
 				Ln = n("./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less"),
 				Dn = n.n(Ln);
-			var Fn = t => a.a.createElement("svg", {
+			var Nn = t => a.a.createElement("svg", {
 					className: Object(h.a)(Dn.a.icon, t.className),
 					viewBox: "0 0 20 20",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -3876,8 +3876,8 @@
 				}, a.a.createElement("path", {
 					d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM7.42 16h5.08c.55 0 1-.45 1-1s-.45-1-1-1H7.42c-.56 0-1 .45-1 1s.44 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
 				}))),
-				Nn = n("./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less"),
-				Pn = n.n(Nn);
+				Fn = n("./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less"),
+				Pn = n.n(Fn);
 			var Un = t => a.a.createElement("svg", {
 					className: Object(h.a)(Pn.a.icon, t.className),
 					viewBox: "0 0 20 20",
@@ -4001,7 +4001,7 @@
 				}).apply(this, arguments)
 			}
 			const so = (t, e) => n => a.a.createElement(t, oo({}, e, n)),
-				ro = Object(Ne.f)(Jn),
+				ro = Object(Fe.f)(Jn),
 				io = so(ro, {
 					orientation: "up"
 				}),
@@ -4011,16 +4011,16 @@
 				ao = so(ro, {
 					orientation: "left"
 				}),
-				lo = Object(Ne.f)(Gn),
+				lo = Object(Fe.f)(Gn),
 				uo = so(lo, {
 					orientation: "vertical"
 				}),
-				po = Object(Ne.f)(Fn),
-				ho = Object(Ne.f)(Un),
-				go = Object(Ne.f)(Wn),
-				mo = Object(Ne.f)(Me.b),
+				po = Object(Fe.f)(Nn),
+				ho = Object(Fe.f)(Un),
+				go = Object(Fe.f)(Wn),
+				mo = Object(Fe.f)(Me.b),
 				fo = m.a.wrapped(Le.a, "ToolbarContent", no.a),
-				bo = t => a.a.createElement(Fe.a, oo({}, t, {
+				bo = t => a.a.createElement(Ne.a, oo({}, t, {
 					className: Object(h.a)(no.a.formatterButton, t.className),
 					tooltipContentClass: no.a.tooltip
 				}));
@@ -4267,12 +4267,12 @@
 				},
 				Lo = () => Mo;
 			var Do = n("./src/higherOrderComponents/makeAsync.tsx"),
-				Fo = Object(Do.a)({
+				No = Object(Do.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => n.e("EmotesTooltip").then(n.bind(null, "./src/reddit/components/RichTextEditor/emotes/tooltip.tsx")).then(t => t.default)
 				});
-			const No = new Set([M.a.LINK]);
+			const Fo = new Set([M.a.LINK]);
 			var Po = n("./src/reddit/components/RichTextEditor/entity/link/helpers.tsx"),
 				Uo = n("./src/reddit/components/RichTextEditor/entity/link/decorator.m.less"),
 				Ho = n.n(Uo);
@@ -4658,8 +4658,8 @@
 				Ms = n.n(Ks),
 				Ls = n("./node_modules/draft-js/lib/getEntityKeyForSelection.js"),
 				Ds = n.n(Ls),
-				Fs = n("./node_modules/draft-js/lib/splitTextIntoTextBlocks.js"),
-				Ns = n.n(Fs),
+				Ns = n("./node_modules/draft-js/lib/splitTextIntoTextBlocks.js"),
+				Fs = n.n(Ns),
 				Ps = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts"),
 				Us = n("./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts");
 
@@ -4681,7 +4681,7 @@
 			}
 
 			function zs(t, e, n) {
-				const s = Ns()(e),
+				const s = Fs()(e),
 					r = n && 1 === s.length ? n : o.CharacterMetadata.create(),
 					i = Ms.a.processText(s, r).map(t => t.merge({
 						type: T.n
@@ -5116,17 +5116,17 @@
 				Mr = m.a.div("H4", Br.a),
 				Lr = m.a.div("H5", Br.a),
 				Dr = m.a.div("H6", Br.a),
-				Fr = t => ({
+				Nr = t => ({
 					component: e => a.a.createElement(t, null, a.a.createElement(o.EditorBlock, e)),
 					editable: !0
 				}),
-				Nr = {
-					[T.g.H1]: Fr(Ir),
-					[T.g.H2]: Fr(Ar),
-					[T.g.H3]: Fr(Kr),
-					[T.g.H4]: Fr(Mr),
-					[T.g.H5]: Fr(Lr),
-					[T.g.H6]: Fr(Dr)
+				Fr = {
+					[T.g.H1]: Nr(Ir),
+					[T.g.H2]: Nr(Ar),
+					[T.g.H3]: Nr(Kr),
+					[T.g.H4]: Nr(Mr),
+					[T.g.H5]: Nr(Lr),
+					[T.g.H6]: Nr(Dr)
 				},
 				Pr = ["italic normal 1em 'Noto Sans'", "italic bold 1em 'Noto Sans'", "normal bold 1em 'Noto Sans'"],
 				Ur = () => {
@@ -5435,12 +5435,12 @@
 									popped: n,
 									stack: r
 								} = Ci(s, t => Object(T.v)(t.getType()));
-								s = r, o.push(Fi([t, ...n], e));
+								s = r, o.push(Ni([t, ...n], e));
 								break
 							}
 							case T.a: {
 								let e = s.first();
-								e && Object(T.u)(e.getType()) ? s = s.shift() : e = void 0, o.push(Ni(t, e, n));
+								e && Object(T.u)(e.getType()) ? s = s.shift() : e = void 0, o.push(Fi(t, e, n));
 								break
 							}
 							case T.n:
@@ -5538,13 +5538,13 @@
 						t.getDepth() > n ? r.push(t) : (i() && c(), o = Object(Ti.l)(_i(t, e)))
 					}), i() && c(), Object(Ti.k)(s, t[0].getType() === T.i.ORDERED)
 				},
-				Fi = (t, e) => {
+				Ni = (t, e) => {
 					const n = [...t].sort(V.b),
 						o = n[0],
 						{
 							colCount: s
 						} = Object(V.g)(o),
-						r = N()(n, s),
+						r = F()(n, s),
 						i = r[0].map(t => {
 							const {
 								alignment: n
@@ -5554,7 +5554,7 @@
 						c = r.slice(1).map(t => t.map(t => Object(Ti.p)(_i(t, e))));
 					return Object(Ti.r)(i, c)
 				},
-				Ni = (t, e, n) => {
+				Fi = (t, e, n) => {
 					const o = Object(A.h)(t);
 					if (!o) throw new Error("Invalid atomic block!");
 					const {
@@ -5569,7 +5569,7 @@
 								assetId: r,
 								thumbnailAssetId: a
 							} = Object(A.f)(o, n);
-						return Object(Ft.j)(e) ? Object(Ti.b)(r, c) : Object(Ft.k)(e) ? Object(Ti.g)(r, c) : Object(Ti.u)(r, c, a, i)
+						return Object(Nt.j)(e) ? Object(Ti.b)(r, c) : Object(Nt.k)(e) ? Object(Ti.g)(r, c) : Object(Ti.u)(r, c, a, i)
 					} {
 						const {
 							assetId: t,
@@ -5589,7 +5589,7 @@
 							default:
 								throw new Error("Invalid media type")
 						}
-						return Object(ki.d)(t) ? Object(Ti.l)([n]) : n
+						return Object(ki.e)(t) ? Object(Ti.l)([n]) : n
 					}
 				};
 			var Pi, Ui = n("./src/reddit/constants/componentSizes.ts"),
@@ -5788,7 +5788,7 @@
 					const a = t.content;
 					if (1 === e.length && (e[0].e === Xn.m || e[0].e === Xn.a)) {
 						const n = e[0];
-						if (Object(ki.d)(n.id)) return void t.blocks.push(...Yi(n, s.mediaMetadataMap, Object(A.q)(s.editorType)))
+						if (Object(ki.e)(n.id)) return void t.blocks.push(...Yi(n, s.mediaMetadataMap, Object(A.q)(s.editorType)))
 					}
 					const {
 						charList: l,
@@ -6116,7 +6116,7 @@
 								l = c.getEntityAt(s);
 							if (!(a && (!l || l !== a))) return;
 							const d = i.getEntity(a),
-								u = No.has(d.getType());
+								u = Fo.has(d.getType());
 							if ("MUTABLE" === d.getMutability() && u) {
 								const s = o.Modifier.insertText(i, n, e, t.getCurrentInlineStyle());
 								return o.EditorState.push(t, s, "insert-characters")
@@ -6332,7 +6332,7 @@
 						}
 					}), this.blockRendererFn = t => {
 						const e = t.getType();
-						return e === T.a ? this.getAtomicBlocksRenderConfig() : e in Nr ? Nr[e] : void 0
+						return e === T.a ? this.getAtomicBlocksRenderConfig() : e in Fr ? Fr[e] : void 0
 					}, this.renderToolbar = t => a.a.createElement(De.b, t), this.entityElementRegistry = wo(), this.tableOnEnterHandler = new mn;
 					const {
 						activeEmotes: e,
@@ -6343,7 +6343,7 @@
 						rteState: c
 					} = t;
 					let l;
-					c.isBound ? l = c.editorState : Object(Xn.F)(c.initialRTJSON) ? l = this.createInitialState(c.editorKey) : (l = o.EditorState.createWithContent(lc(c.initialRTJSON, n, c.mediaMetadataMap, e), this.editorDecorators()), l = this.moveSelectionToEnd(l)), this.state = {
+					c.isBound ? l = c.editorState : Object(Xn.G)(c.initialRTJSON) ? l = this.createInitialState(c.editorKey) : (l = o.EditorState.createWithContent(lc(c.initialRTJSON, n, c.mediaMetadataMap, e), this.editorDecorators()), l = this.moveSelectionToEnd(l)), this.state = {
 						noBorder: s,
 						containerRef: null,
 						confirmModalOpen: !1,
@@ -6513,7 +6513,7 @@
 						editorState: _,
 						mediaToInsert: I,
 						confirmModalOpen: A
-					} = this.state, K = this.props.readOnly || !!I, M = j(_), L = this.isEmpty(), D = !(!e || !Object.keys(e).length), F = (u || d) && D, N = m || g, P = v({
+					} = this.state, K = this.props.readOnly || !!I, M = j(_), L = this.isEmpty(), D = !(!e || !Object.keys(e).length), N = (u || d) && D, F = m || g, P = v({
 						allowMediaUploads: r,
 						destSubreddit: c,
 						editorKey: R,
@@ -6523,8 +6523,8 @@
 						onFilesSelect: this.onFilesSelect,
 						trackOnClick: this.props.trackToolbarClick,
 						readOnly: K,
-						onEmoteButtonClick: F ? this.onToolbarEmoteButtonClick : void 0,
-						onGifButtonClick: N ? this.onToolbarGifButtonClick : void 0,
+						onEmoteButtonClick: N ? this.onToolbarEmoteButtonClick : void 0,
+						onGifButtonClick: F ? this.onToolbarGifButtonClick : void 0,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
 						onMarkdownButtonClick: this.onToolbarMarkdownSwitchClick,
 						userCanUseGifs: !!n
@@ -6605,13 +6605,13 @@
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange
-					}), F && !!c && l === Nt.a.Comment && a.a.createElement(Fo, {
+					}), N && !!c && l === Ft.a.Comment && a.a.createElement(No, {
 						editorState: _,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: c,
 						shouldHideAddEmote: !u
-					}), N && c && a.a.createElement(ls, {
+					}), F && c && a.a.createElement(ls, {
 						editorState: _,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
@@ -7685,4 +7685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.6df5c6cde6c94a592d43.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.da904e3cba0189bda3f0.js.map

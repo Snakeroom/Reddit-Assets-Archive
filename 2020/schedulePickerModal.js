@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/schedulePickerModal.d6db8cbea502843894b1.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/schedulePickerModal.adab891e85120153a697.js
+// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["schedulePickerModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -84,19 +84,19 @@
 				r = (n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/lodash/range.js")),
 				l = n.n(r),
 				c = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/FallbackDateInput/index.m.less"),
-				u = n.n(c),
-				d = n("./src/lib/lessComponent.tsx");
-			const m = d.a.div("Container", u.a),
-				h = d.a.select("Select", u.a),
-				p = d.a.span("Delimiter", u.a),
-				b = 2018,
-				C = e => {
+				d = n.n(c),
+				u = n("./src/lib/lessComponent.tsx");
+			const m = u.a.div("Container", d.a),
+				h = u.a.select("Select", d.a),
+				p = u.a.span("Delimiter", d.a),
+				C = 2018,
+				b = e => {
 					const t = new Date;
 					return new Date(t.getFullYear(), e).toLocaleDateString([], {
 						month: "short"
 					})
 				},
-				_ = e => {
+				v = e => {
 					const [t, n, s] = e.split("-").map(Number);
 					return {
 						year: t,
@@ -107,7 +107,7 @@
 			class g extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = e => {
-						const t = Object.assign({}, _(this.props.value), e),
+						const t = Object.assign({}, v(this.props.value), e),
 							{
 								year: n,
 								month: s,
@@ -137,7 +137,7 @@
 						year: e,
 						month: t,
 						day: n
-					} = _(this.props.value);
+					} = v(this.props.value);
 					return i.a.createElement(m, {
 						className: this.props.className
 					}, i.a.createElement(h, {
@@ -146,7 +146,7 @@
 					}, l()(12).map(e => i.a.createElement("option", {
 						key: e,
 						value: e
-					}, C(e)))), i.a.createElement(p, null, "/"), i.a.createElement(h, {
+					}, b(e)))), i.a.createElement(p, null, "/"), i.a.createElement(h, {
 						onChange: this.onChangeDay,
 						value: n
 					}, l()(1, 32).map(e => i.a.createElement("option", {
@@ -155,15 +155,15 @@
 					}, ("0" + e).slice(-2)))), i.a.createElement(p, null, "/"), i.a.createElement(h, {
 						onChange: this.onChangeYear,
 						value: e
-					}, l()(b, b + 10).map(e => i.a.createElement("option", {
+					}, l()(C, C + 10).map(e => i.a.createElement("option", {
 						key: e,
 						value: e
 					}, e))))
 				}
 			}
-			var T = g,
-				v = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
-				x = n.n(v);
+			var x = g,
+				_ = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
+				T = n.n(_);
 
 			function E() {
 				return (E = Object.assign || function(e) {
@@ -174,16 +174,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = a()(() => {
+			const S = a()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "date"), e.setAttribute("value", "not-a-date"), "not-a-date" !== e.value
 				}),
-				S = d.a.input("Input", x.a);
-			t.a = e => D() ? i.a.createElement(S, E({
+				D = u.a.input("Input", T.a);
+			t.a = e => S() ? i.a.createElement(D, E({
 				type: "date"
 			}, e, {
 				onChange: t => e.onChange(t.target.value)
-			})) : i.a.createElement(T, e)
+			})) : i.a.createElement(x, e)
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -210,14 +210,14 @@
 				r = (n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./node_modules/lodash/clamp.js")),
 				l = n.n(r),
 				c = n("./src/reddit/components/FocusableContent/index.tsx"),
-				u = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less"),
-				d = n.n(u),
+				d = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less"),
+				u = n.n(d),
 				m = n("./src/lib/lessComponent.tsx");
-			const h = m.a.wrapped(c.a, "Container", d.a),
-				p = m.a.input("Input", d.a),
-				b = m.a.span("Delimiter", d.a),
-				C = e => ("0" + e).slice(-2),
-				_ = (e, t) => {
+			const h = m.a.wrapped(c.a, "Container", u.a),
+				p = m.a.input("Input", u.a),
+				C = m.a.span("Delimiter", u.a),
+				b = e => ("0" + e).slice(-2),
+				v = (e, t) => {
 					const n = +e.slice(-2);
 					if (Number.isInteger(n)) return n > t ? 0 : n
 				};
@@ -230,15 +230,15 @@
 							hour: e,
 							minute: t
 						});
-						const n = "".concat(C(e), ":").concat(C(t));
+						const n = "".concat(b(e), ":").concat(b(t));
 						this.props.onChange(n)
 					}, this.onChangeHour = e => {
-						const t = _(e.target.value, 24);
+						const t = v(e.target.value, 24);
 						void 0 !== t && this.setState({
 							hour: t
 						}, this.callOnChange)
 					}, this.onChangeMinute = e => {
-						const t = _(e.target.value, 59);
+						const t = v(e.target.value, 59);
 						void 0 !== t && this.setState({
 							minute: t
 						}, this.callOnChange)
@@ -276,19 +276,19 @@
 						onChange: this.onChangeHour,
 						onFocus: this.onHourInputFocus,
 						onBlur: this.onHourInputBlur,
-						value: C(this.state.hour)
-					}), i.a.createElement(b, null, ":"), i.a.createElement(p, {
+						value: b(this.state.hour)
+					}), i.a.createElement(C, null, ":"), i.a.createElement(p, {
 						type: "number",
 						onChange: this.onChangeMinute,
 						onFocus: this.onMinuteInputFocus,
 						onBlur: this.onMinuteInputBlur,
-						value: C(this.state.minute)
+						value: b(this.state.minute)
 					}))
 				}
 			}
-			var T = g,
-				v = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
-				x = n.n(v);
+			var x = g,
+				_ = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
+				T = n.n(_);
 
 			function E() {
 				return (E = Object.assign || function(e) {
@@ -299,16 +299,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = a()(() => {
+			const S = a()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "time"), e.setAttribute("value", "not-a-time"), "not-a-time" !== e.value
 				}),
-				S = m.a.input("TimeInput", x.a);
-			t.a = e => D() ? i.a.createElement(S, E({
+				D = m.a.input("TimeInput", T.a);
+			t.a = e => S() ? i.a.createElement(D, E({
 				type: "time"
 			}, e, {
 				onChange: t => e.onChange(t.target.value)
-			})) : i.a.createElement(T, e)
+			})) : i.a.createElement(x, e)
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -325,7 +325,7 @@
 				r = n("./src/reddit/helpers/scheduledPosts/index.ts"),
 				l = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.m.less"),
 				c = n.n(l);
-			const u = e => {
+			const d = e => {
 				const t = e.map(r.d);
 				return t.sort((e, t) => {
 					const n = -1440,
@@ -338,26 +338,26 @@
 					return a - s || (e.displayText < t.displayText ? -1 : 1) || 0
 				}), t
 			};
-			class d extends a.a.PureComponent {
+			class u extends a.a.PureComponent {
 				constructor(e) {
 					super(e), this.onSelect = e => {
 						const t = e.target.value;
 						this.props.onChange(t)
 					};
-					const t = d.cachedTimezoneOptions || u([this.props.selectedTimezoneName]);
+					const t = u.cachedTimezoneOptions || d([this.props.selectedTimezoneName]);
 					this.state = {
 						timezoneOptions: t
 					}
 				}
 				async loadTimezones() {
 					const e = (await Object(i.a)(() => n.e("TimezoneList").then(n.bind(null, "./src/lib/timezone/timezoneList.ts")))).default,
-						t = u(e);
+						t = d(e);
 					this.setState({
 						timezoneOptions: t
-					}), d.cachedTimezoneOptions = t
+					}), u.cachedTimezoneOptions = t
 				}
 				componentDidMount() {
-					d.cachedTimezoneOptions || this.loadTimezones()
+					u.cachedTimezoneOptions || this.loadTimezones()
 				}
 				render() {
 					return a.a.createElement("select", {
@@ -376,7 +376,7 @@
 					}))
 				}
 			}
-			t.a = d
+			t.a = u
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -410,8 +410,8 @@
 				deleteButton: "_3mKiK6bFRKi6y6Wkk1xLyp",
 				ErrorMessage: "ZK5-SDSIvd4eGlmmbaRoO",
 				errorMessage: "ZK5-SDSIvd4eGlmmbaRoO",
-				TrashIcon: "_2rZU2BjKngPFo_E6bCLhXM",
-				trashIcon: "_2rZU2BjKngPFo_E6bCLhXM"
+				ClearIcon: "E0CXpIVd8SDvRSwZFAmCn",
+				clearIcon: "E0CXpIVd8SDvRSwZFAmCn"
 			}
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/index.tsx": function(e, t, n) {
@@ -424,22 +424,22 @@
 				r = n("./src/lib/constants/index.ts"),
 				l = n("./src/lib/lessComponent.tsx"),
 				c = n("./src/lib/timezone/index.ts"),
-				u = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				d = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/utils.ts"),
+				d = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				u = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/utils.ts"),
 				m = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				h = n("./src/reddit/controls/Button/index.tsx"),
 				p = n("./src/reddit/controls/RadioInput/index.tsx"),
-				b = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				C = n("./src/reddit/helpers/scheduledPosts/index.ts"),
-				_ = n("./src/reddit/helpers/trackers/postEvent.ts"),
-				g = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				T = n("./src/reddit/layout/row/Inline/index.tsx"),
-				v = n("./src/reddit/models/PostCreationForm/index.ts"),
-				x = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
+				C = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				b = n("./src/reddit/helpers/scheduledPosts/index.ts"),
+				v = n("./src/reddit/helpers/trackers/postEvent.ts"),
+				g = n("./src/reddit/icons/svgs/Clear/index.tsx"),
+				x = n("./src/reddit/layout/row/Inline/index.tsx"),
+				_ = n("./src/reddit/models/PostCreationForm/index.ts"),
+				T = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
 				E = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
-				D = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.tsx"),
-				S = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/index.m.less"),
-				f = n.n(S);
+				S = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.tsx"),
+				D = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/index.m.less"),
+				f = n.n(D);
 			const F = 240,
 				k = () => {
 					const e = new Date;
@@ -448,31 +448,31 @@
 					return e.setMinutes(e.getMinutes() + F), {
 						startDate: t,
 						endDate: Object(c.g)(e),
-						submitTime: v.i.Now,
+						submitTime: _.i.Now,
 						timezoneName: Object(c.b)() || c.a
 					}
 				},
 				j = l.a.div("Container", f.a),
-				O = l.a.div("Content", f.a),
-				y = l.a.div("TitleRow", f.a),
-				I = l.a.hr("Hr", f.a),
+				I = l.a.div("Content", f.a),
+				O = l.a.div("TitleRow", f.a),
+				y = l.a.hr("Hr", f.a),
 				M = l.a.wrapped(E.a, "TimeInput", f.a),
-				P = l.a.div("TimeSelectionRow", f.a),
+				w = l.a.div("TimeSelectionRow", f.a),
 				z = l.a.div("RadioOptionContent", f.a),
-				w = l.a.span("OptionDetails", f.a),
+				P = l.a.span("OptionDetails", f.a),
 				R = l.a.wrapped(p.a, "RadioInput", f.a),
-				N = l.a.wrapped(b.a, "RadioOption", f.a),
+				N = l.a.wrapped(C.a, "RadioOption", f.a),
 				B = l.a.span("Delimiter", f.a),
-				L = l.a.wrapped(u.f, "Footer", f.a),
+				L = l.a.wrapped(d.f, "Footer", f.a),
 				A = l.a.wrapped(h.i, "CancelButton", f.a),
 				K = l.a.wrapped(h.i, "DeleteButton", f.a),
 				V = l.a.div("ErrorMessage", f.a),
-				H = l.a.wrapped(g.b, "TrashIcon", f.a);
+				H = l.a.wrapped(g.a, "ClearIcon", f.a);
 			class U extends o.a.PureComponent {
 				constructor(e) {
-					super(e), this.currentTimezone = Object(c.b)(), this.maxDate = Object(d.a)(), this.buildEventSchedule = () => ({
-						startDate: Object(C.a)(this.state.startDate, this.state.startTime),
-						endDate: Object(C.a)(this.state.endDate, this.state.endTime),
+					super(e), this.currentTimezone = Object(c.b)(), this.maxDate = Object(u.a)(), this.buildEventSchedule = () => ({
+						startDate: Object(b.a)(this.state.startDate, this.state.startTime),
+						endDate: Object(b.a)(this.state.endDate, this.state.endTime),
 						timezoneName: this.state.timezoneName,
 						submitTime: this.state.submitTime
 					}), this.onStartDateChange = e => {
@@ -490,9 +490,9 @@
 							startTime: t
 						} = this.state;
 						if (e && t) {
-							const n = Object(c.f)(Object(C.a)(e, t));
+							const n = Object(c.f)(Object(b.a)(e, t));
 							n.setMinutes(n.getMinutes() + F);
-							const [s, a] = Object(C.i)(Object(c.g)(n));
+							const [s, a] = Object(b.i)(Object(c.g)(n));
 							this.setState({
 								endDate: s,
 								endTime: a
@@ -518,12 +518,12 @@
 						})
 					}, this.onApplyClick = () => {
 						const e = this.buildEventSchedule();
-						this.props.sendEvent(Object(_.b)(e)), this.props.onChange(e), this.props.onClose()
+						this.props.sendEvent(Object(v.b)(e)), this.props.onChange(e), this.props.onClose()
 					}, this.onDeleteButtonClick = () => {
 						const e = this.buildEventSchedule();
-						this.props.sendEvent(Object(_.d)(e)), this.props.onChange(null), this.props.onClose()
+						this.props.sendEvent(Object(v.d)(e)), this.props.onChange(null), this.props.onClose()
 					}, this.onCancelButtonClick = () => {
-						this.props.sendEvent(Object(_.c)()), this.props.onClose()
+						this.props.sendEvent(Object(v.c)()), this.props.onClose()
 					}, this.getValidationError = () => {
 						const {
 							endDate: e,
@@ -534,8 +534,8 @@
 						if (!(n && a && e && t)) return s.fbt._("Please enter valid start and end time", null, {
 							hk: "2IyBsT"
 						});
-						const o = Object(c.f)(Object(C.a)(n, a)),
-							i = Object(c.f)(Object(C.a)(e, t));
+						const o = Object(c.f)(Object(b.a)(n, a)),
+							i = Object(c.f)(Object(b.a)(e, t));
 						return o < (this.currentTimezone === this.state.timezoneName ? new Date : new Date(Date.now() - r.x)) ? s.fbt._("Event start time needs to be in the future", null, {
 							hk: "3oL3LM"
 						}) : i < o ? s.fbt._("End time must be after start time", null, {
@@ -546,27 +546,27 @@
 							startDate: e,
 							startTime: t
 						} = this.state;
-						return Object(C.b)(e, t)
+						return Object(b.b)(e, t)
 					}, this.renderSubmitTimeRadio = () => o.a.createElement(R, {
 						value: this.state.submitTime,
 						name: "submit_time",
 						onChange: this.onSubmitTimeChange
 					}, o.a.createElement(N, {
 						showButton: !0,
-						value: v.i.Now
+						value: _.i.Now
 					}, o.a.createElement(z, null, o.a.createElement("span", null, s.fbt._("Submit post now", null, {
 						hk: "2ueTnc"
-					})), o.a.createElement(w, null, s.fbt._("Submitting post before your event allows people to follow your event and come back at the event time", null, {
+					})), o.a.createElement(P, null, s.fbt._("Submitting post before your event allows people to follow your event and come back at the event time", null, {
 						hk: "3LTavv"
 					})))), o.a.createElement(N, {
 						showButton: !0,
-						value: v.i.AtEventTime
-					}, o.a.createElement(z, null, o.a.createElement("span", null, this.getSubmitAtLabel()), o.a.createElement(w, null, s.fbt._("This post will be visible to only Mods and editable until the event time.", null, {
+						value: _.i.AtEventTime
+					}, o.a.createElement(z, null, o.a.createElement("span", null, this.getSubmitAtLabel()), o.a.createElement(P, null, s.fbt._("This post will be visible to only Mods and editable until the event time.", null, {
 						hk: "1Hm60w"
 					})))));
 					const t = e.schedule || k(),
-						[n, a] = Object(C.i)(t.startDate),
-						[i, l] = Object(C.i)(t.endDate);
+						[n, a] = Object(b.i)(t.startDate),
+						[i, l] = Object(b.i)(t.endDate);
 					this.state = {
 						startDate: n,
 						startTime: a,
@@ -578,17 +578,17 @@
 					}
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(_.e)())
+					this.props.sendEvent(Object(v.e)())
 				}
 				render() {
 					const {
 						shouldShowSubmitTime: e
 					} = this.props, t = this.getValidationError();
-					return o.a.createElement(j, null, o.a.createElement(O, null, o.a.createElement(y, null, s.fbt._("When is the event?", null, {
+					return o.a.createElement(j, null, o.a.createElement(I, null, o.a.createElement(O, null, s.fbt._("When is the event?", null, {
 						hk: "2fTD7f"
-					})), o.a.createElement(P, null, s.fbt._("{start time}{to}{end time}", [s.fbt._param("start time", o.a.createElement("fieldset", null, o.a.createElement("legend", null, s.fbt._("Start time", null, {
+					})), o.a.createElement(w, null, s.fbt._("{start time}{to}{end time}", [s.fbt._param("start time", o.a.createElement("fieldset", null, o.a.createElement("legend", null, s.fbt._("Start time", null, {
 						hk: "3nqplI"
-					})), o.a.createElement(x.a, {
+					})), o.a.createElement(T.a, {
 						max: this.maxDate,
 						onChange: this.onStartDateChange,
 						value: this.state.startDate
@@ -603,7 +603,7 @@
 						}
 					}, o.a.createElement("legend", null, s.fbt._("End time (optional)", null, {
 						hk: "2XKdsz"
-					})), o.a.createElement(x.a, {
+					})), o.a.createElement(T.a, {
 						max: this.maxDate,
 						onChange: this.onEndDateChange,
 						value: this.state.endDate
@@ -614,15 +614,15 @@
 						hk: "3MRWfF"
 					})), o.a.createElement("div", null, o.a.createElement("label", null, s.fbt._("Time zone", null, {
 						hk: "3F7Bko"
-					}), o.a.createElement(D.a, {
+					}), o.a.createElement(S.a, {
 						selectedTimezoneName: this.state.timezoneName,
 						onChange: this.onTimezoneChange
-					}))), e && o.a.createElement(o.a.Fragment, null, o.a.createElement(I, null), o.a.createElement("fieldset", null, o.a.createElement("legend", null, s.fbt._("When do you want to submit this post?", null, {
+					}))), e && o.a.createElement(o.a.Fragment, null, o.a.createElement(y, null), o.a.createElement("fieldset", null, o.a.createElement("legend", null, s.fbt._("When do you want to submit this post?", null, {
 						hk: "3kBgxg"
-					})), this.renderSubmitTimeRadio()))), o.a.createElement(L, null, o.a.createElement(T.a, null, this.props.schedule && this.props.shouldShowDeleteButton && o.a.createElement(K, {
+					})), this.renderSubmitTimeRadio()))), o.a.createElement(L, null, o.a.createElement(x.a, null, this.props.schedule && this.props.shouldShowDeleteButton && o.a.createElement(K, {
 						onClick: this.onDeleteButtonClick
-					}, o.a.createElement(H, null), s.fbt._("Delete", null, {
-						hk: "1EXQ67"
+					}, o.a.createElement(H, null), s.fbt._("Clear", null, {
+						hk: "npkgK"
 					})), o.a.createElement(A, {
 						onClick: this.onCancelButtonClick
 					}, s.fbt._("Cancel", null, {
@@ -650,7 +650,20 @@
 				const [t] = Object(a.i)(Object(s.g)(e));
 				return t
 			}
+		},
+		"./src/reddit/icons/svgs/Clear/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				onClick: e.onClick,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 40 40"
+			}, a.a.createElement("path", {
+				d: "M20 2.5C10.3 2.5 2.5 10.3 2.5 20c0 9.7 7.8 17.5 17.5 17.5S37.5 29.7 37.5 20C37.5 10.3 29.7 2.5 20 2.5zM24.2 27.7L20 23.5l-4.2 4.2c-1.1 1.1-2.5 1.1-3.5 0-1.1-1.1-1.1-2.4 0-3.5l4.2-4.2-4.2-4.2c-1.1-1.1-1.1-2.5 0-3.5 1.1-1.1 2.4-1.1 3.5 0l4.2 4.2 4.2-4.2c1.1-1.1 2.5-1.1 3.5 0 1.1 1.1 1.1 2.4 0 3.5L23.5 20l4.2 4.2c1.1 1.1 1.1 2.5 0 3.5C26.7 28.8 25.3 28.8 24.2 27.7z"
+			}))
 		}
 	}
 ]);
-//# sourceMappingURL=schedulePickerModal.d6db8cbea502843894b1.js.map
+//# sourceMappingURL=schedulePickerModal.adab891e85120153a697.js.map

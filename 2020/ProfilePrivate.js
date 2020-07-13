@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.223b1b85ae04cc99f7c6.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.dee06a11fdf372905e65.js
+// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -206,8 +206,8 @@
 					type: "rtjson",
 					rteMode: O.h.RICH_TEXT
 				}),
-				w = (e, t) => !(!e || !t || Object(y.c)(t) || !t.authorInfo) && Object(C.b)(e) === Object(C.b)(t.authorInfo),
-				j = e => e && !Object(y.c)(e) && e.authorInfo ? Object(C.b)(e.authorInfo) : null;
+				w = (e, t) => !(!e || !t || Object(y.d)(t) || !t.authorInfo) && Object(C.b)(e) === Object(C.b)(t.authorInfo),
+				j = e => e && !Object(y.d)(e) && e.authorInfo ? Object(C.b)(e.authorInfo) : null;
 			var k = e => {
 					const {
 						associatedAward: t,
@@ -7566,4 +7566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.223b1b85ae04cc99f7c6.js.map
+//# sourceMappingURL=ProfilePrivate.dee06a11fdf372905e65.js.map

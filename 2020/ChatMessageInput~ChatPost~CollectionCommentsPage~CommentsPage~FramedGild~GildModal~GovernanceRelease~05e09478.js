@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.eec4889515d16d51cda9.js
-// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.5ddbf5b3d9407e268bd9.js
+// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -1077,8 +1077,8 @@
 							ext: r,
 							s: a
 						} = e;
-						if (Object(h.d)(s)) {
-							const e = r || Object(h.c)(s);
+						if (Object(h.e)(s)) {
+							const e = r || Object(h.d)(s);
 							return o.a.createElement("div", {
 								className: Object(i.a)(x.a.MediaWrapper, {
 									[x.a.mHasCaption]: n
@@ -1473,7 +1473,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
-					return r.e !== h.m && r.e !== h.a || !Object(F.d)(r.id) ? a.a.createElement(c.j, {
+					return r.e !== h.m && r.e !== h.a || !Object(F.e)(r.id) ? a.a.createElement(c.j, {
 						key: s
 					}, q(e.c, t, n)) : Object(w.b)(r, s, t)
 				},
@@ -1815,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.eec4889515d16d51cda9.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.5ddbf5b3d9407e268bd9.js.map
