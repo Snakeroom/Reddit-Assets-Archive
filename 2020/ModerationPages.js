@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0817fbb019765017d66c.js
-// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8440351bae25aba7fde1.js
+// Retrieved at 7/14/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -25104,7 +25104,7 @@
 					case n.Qb.Removal:
 						return !(!t || !t.posts);
 					case n.Qb.ChatSettings:
-						return !(!t || !(t.chatConfig || t.chatOperator || t.all));
+						return !!t;
 					case n.Qb.Badges:
 					case n.Qb.Emojis:
 						return !!t;
@@ -29949,4 +29949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.0817fbb019765017d66c.js.map
+//# sourceMappingURL=ModerationPages.8440351bae25aba7fde1.js.map

@@ -1,7 +1,12 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.32d7db1f68ebbea21691.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.921e06f5b276774b6ec8.js
+// Retrieved at 7/14/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ChatSettings"], {
+		"./src/reddit/components/ModHub/ChatSettings/AccessDisabledBanner/index.m.less": function(e, t, s) {
+			e.exports = {
+				icon: "_1AXwtRo5csnVZ0TFBa4HHd"
+			}
+		},
 		"./src/reddit/components/ModHub/ChatSettings/FormPlaceholder/index.m.less": function(e, t, s) {
 			e.exports = {
 				container: "_30AE9xRvd4PQWXY5uFMqK",
@@ -22,7 +27,8 @@
 				formBody: "y0rInsl7cacVfv6zL2Lyg",
 				toggleSetting: "_3GUvZqYYfe48eKxwYn7H0Q",
 				sectionLegend: "_3XEvU7yIfmDgKL7GiPBkM2",
-				loadingIcon: "_1POrXTV5EKVs2RJjGRPIRx"
+				loadingIcon: "_1POrXTV5EKVs2RJjGRPIRx",
+				modAccessBanner: "_3ISR6CN21VNsb1Xe7g5eYL"
 			}
 		},
 		"./src/reddit/components/ModHub/ChatSettings/index.tsx": function(e, t, s) {
@@ -34,63 +40,81 @@
 				i = s("./node_modules/lodash/isEqual.js"),
 				r = s.n(i),
 				d = s("./node_modules/react/index.js"),
-				l = s.n(d),
-				c = s("./node_modules/react-redux/es/index.js"),
-				g = s("./node_modules/reselect/es/index.js"),
-				m = s("./src/reddit/actions/modal.ts"),
+				c = s.n(d),
+				l = s("./node_modules/react-redux/es/index.js"),
+				m = s("./node_modules/reselect/es/index.js"),
+				g = s("./src/reddit/actions/modal.ts"),
 				h = s("./src/reddit/actions/pages/chatSettings.ts"),
 				u = s("./src/reddit/components/BlockNavigation/index.tsx"),
 				p = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				b = s("./node_modules/lodash/times.js"),
-				S = s.n(b),
-				f = s("./src/lib/classNames/index.ts"),
-				v = s("./src/lib/lessComponent.tsx"),
-				C = s("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
-				x = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				_ = s("./src/reddit/icons/svgs/Settings/index.tsx"),
-				E = s("./src/reddit/components/ModHub/ChatSettings/FormPlaceholder/index.m.less"),
-				L = s.n(E);
-			const N = v.a.wrapped(_.a, "SettingsIcon", L.a),
-				j = e => {
+				b = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
+				f = s("./src/reddit/constants/colors.ts"),
+				S = s("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
+				v = s("./src/reddit/components/ModHub/ChatSettings/AccessDisabledBanner/index.m.less"),
+				C = s.n(v);
+			var x = e => c.a.createElement(b.a, {
+					className: e.className,
+					color: f.a.quarantine,
+					icon: c.a.createElement(S.a, {
+						className: C.a.icon
+					}),
+					title: n.fbt._("Chat mod permissions required", null, {
+						hk: "AFact"
+					}),
+					subtitle: n.fbt._("This page requires chat permissions to modify settings", null, {
+						hk: "1puJwl"
+					})
+				}),
+				_ = s("./node_modules/lodash/times.js"),
+				E = s.n(_),
+				N = s("./src/lib/classNames/index.ts"),
+				L = s("./src/lib/lessComponent.tsx"),
+				j = s("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
+				O = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				k = s("./src/reddit/icons/svgs/Settings/index.tsx"),
+				w = s("./src/reddit/components/ModHub/ChatSettings/FormPlaceholder/index.m.less"),
+				y = s.n(w);
+			const B = L.a.wrapped(k.a, "SettingsIcon", y.a),
+				M = e => {
 					let {
 						subredditName: t
 					} = e;
-					return l.a.createElement(C.c, {
+					return c.a.createElement(j.c, {
 						text: n.fbt._("No chat settings in r/{subredditName}", [n.fbt._param("subredditName", t)], {
 							hk: "268tZg"
 						})
-					}, l.a.createElement(N, null))
+					}, c.a.createElement(B, null))
 				};
-			var O = e => {
+			var H = e => {
 					let {
 						isLoading: t
 					} = e;
-					return l.a.createElement("div", {
-						className: Object(f.a)(L.a.container, Object(x.a)({
+					return c.a.createElement("div", {
+						className: Object(N.a)(y.a.container, Object(O.a)({
 							isLoading: !1
 						}))
-					}, l.a.createElement("div", {
-						className: L.a.section
-					}, l.a.createElement("div", {
-						className: Object(f.a)(L.a.sectionTitle, Object(x.b)({
+					}, c.a.createElement("div", {
+						className: y.a.section
+					}, c.a.createElement("div", {
+						className: Object(N.a)(y.a.sectionTitle, Object(O.b)({
 							isLoading: t
 						}))
-					}), l.a.createElement("div", {
-						className: L.a.line
-					}), S()(5).map(e => l.a.createElement("div", {
+					}), c.a.createElement("div", {
+						className: y.a.line
+					}), E()(5).map(e => c.a.createElement("div", {
 						key: e,
-						className: Object(f.a)(L.a.sectionBodyRow, Object(x.b)({
+						className: Object(N.a)(y.a.sectionBodyRow, Object(O.b)({
 							isLoading: t
 						}))
 					}))))
 				},
-				k = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/logs/console.ts")),
-				w = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				y = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				U = s("./src/reddit/components/ModHub/ChatSettings/index.m.less"),
-				M = s.n(U);
-			const H = v.a.wrapped(w.o, "toggleSetting", M.a);
-			var P = e => {
+				I = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/logs/console.ts")),
+				U = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				P = s("./src/reddit/controls/OutboundLink/styled.tsx"),
+				A = s("./src/reddit/components/ModHub/ChatSettings/index.m.less"),
+				F = s.n(A);
+			const D = L.a.wrapped(U.o, "toggleSetting", F.a);
+			var R = e => {
 					let {
 						controlState: t,
 						controlState: {
@@ -102,7 +126,7 @@
 						},
 						onChange: d
 					} = e;
-					return l.a.createElement(H, {
+					return c.a.createElement(D, {
 						on: s,
 						forceOn: !0,
 						disabled: !a,
@@ -110,8 +134,8 @@
 							state: !s
 						})),
 						label: o,
-						subtext: i && l.a.createElement("span", null, i, r && l.a.createElement(y.a, {
-							className: M.a.welcomeMessageHelpLink,
+						subtext: i && c.a.createElement("span", null, i, r && c.a.createElement(P.a, {
+							className: F.a.welcomeMessageHelpLink,
 							isSponsored: !1,
 							source: null,
 							href: r,
@@ -122,10 +146,10 @@
 						})))
 					})
 				},
-				I = s("./src/reddit/models/ChatSettingsPage/index.ts");
+				T = s("./src/reddit/models/ChatSettingsPage/index.ts");
 
-			function B() {
-				return (B = Object.assign || function(e) {
+			function K() {
+				return (K = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -133,7 +157,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var F = class extends l.a.Component {
+			var Y = class extends c.a.Component {
 					get groupSettings() {
 						const e = {},
 							t = [];
@@ -153,14 +177,14 @@
 								isLoading: t,
 								onChange: s
 							} = this.props;
-							return l.a.createElement(l.a.Fragment, null, e.map((e, n) => ((e, t) => {
+							return c.a.createElement(c.a.Fragment, null, e.map((e, n) => ((e, t) => {
 								switch (e.controlState.settingType) {
-									case I.a.Toggle:
-										return l.a.createElement(P, B({
+									case T.a.Toggle:
+										return c.a.createElement(R, K({
 											key: "settings-control-".concat(t)
 										}, e));
 									default:
-										return Object(k.a)("Undefined settings control type: ".concat(e.controlState.settingType)), null
+										return Object(I.a)("Undefined settings control type: ".concat(e.controlState.settingType)), null
 								}
 							})({
 								controlState: e,
@@ -175,40 +199,50 @@
 							groupSettings: e,
 							otherSettings: t
 						} = this.groupSettings;
-						return l.a.createElement(l.a.Fragment, null, Object.keys(e).map((t, s) => l.a.createElement("fieldset", {
+						return c.a.createElement(c.a.Fragment, null, Object.keys(e).map((t, s) => c.a.createElement("fieldset", {
 							key: "settings-group-".concat(s)
-						}, l.a.createElement("legend", {
-							className: M.a.sectionLegend
+						}, c.a.createElement("legend", {
+							className: F.a.sectionLegend
 						}, t), this.buildControls(e[t]))), this.buildControls(t))
 					}
 				},
-				D = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				A = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				R = s("./src/reddit/controls/Button/index.tsx"),
-				T = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				K = s("./src/reddit/selectors/activeModalId.ts"),
-				Y = s("./src/reddit/selectors/chatSettingsPage.ts"),
-				Z = s("./src/reddit/selectors/platform.ts");
-			const W = "chat-settings-discard-confirmation",
-				Q = Object(g.c)({
-					allowNavigationCallback: Z.a,
-					isDiscardModalOpen: Object(K.b)(W),
-					isLoading: Y.b,
-					settings: Y.a
+				Z = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				W = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				X = s("./src/reddit/controls/Button/index.tsx"),
+				q = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				Q = s("./src/reddit/selectors/activeModalId.ts"),
+				J = s("./src/reddit/selectors/chat.ts"),
+				V = s("./src/reddit/selectors/chatSettingsPage.ts"),
+				z = s("./src/reddit/selectors/platform.ts");
+			const G = "chat-settings-discard-confirmation",
+				$ = Object(m.c)({
+					allowNavigationCallback: z.a,
+					isDiscardModalOpen: Object(Q.b)(G),
+					isLoading: V.b,
+					settings: V.a,
+					isChatModerator: (e, t) => {
+						let {
+							subredditId: s
+						} = t;
+						const n = {
+							subredditId: s
+						};
+						return Object(J.e)(e, n)
+					}
 				}),
-				X = Object(c.b)(Q, (e, t) => {
+				ee = Object(l.b)($, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
 					return {
-						closeAllModals: () => e(Object(m.f)()),
-						toggleModal: t => e(Object(m.i)(t)),
+						closeAllModals: () => e(Object(g.f)()),
+						toggleModal: t => e(Object(g.i)(t)),
 						onSave: (t, n) => e(Object(h.f)(s, t, n))
 					}
 				});
-			class z extends l.a.Component {
+			class te extends c.a.Component {
 				constructor(e) {
-					super(e), this.formBodyRef = l.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
+					super(e), this.formBodyRef = c.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!1)
 					}, this.performPendingNavigationIfNeeded = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!0)
@@ -289,46 +323,49 @@
 						state: e
 					} = this, {
 						isLoading: t,
-						subredditName: s
+						subredditName: s,
+						isChatModerator: a
 					} = this.props, {
-						isLoaded: a,
-						hasUnsavedChanges: o
+						isLoaded: o,
+						hasUnsavedChanges: i
 					} = e;
-					return l.a.createElement("div", {
-						className: M.a.container
-					}, l.a.createElement(D.c, {
-						className: M.a.topBar
-					}, l.a.createElement(R.f, {
-						disabled: t || !o,
+					return c.a.createElement("div", {
+						className: F.a.container
+					}, c.a.createElement(Z.c, {
+						className: F.a.topBar
+					}, c.a.createElement(X.f, {
+						disabled: t || !i,
 						onClick: this.onSaveClick
 					}, e.hasJustSaved ? n.fbt._("Saved", null, {
 						hk: "38ZPdi"
-					}) : e.isSavePending ? l.a.createElement(T.a, {
-						className: M.a.loadingIcon,
+					}) : e.isSavePending ? c.a.createElement(q.a, {
+						className: F.a.loadingIcon,
 						sizePx: 10
 					}) : n.fbt._("Save changes", null, {
 						hk: "TTPsK"
-					}))), l.a.createElement(D.a, {
-						className: M.a.contentContainer
-					}, l.a.createElement(D.b, null, n.fbt._("Chat settings", null, {
+					}))), c.a.createElement(Z.a, {
+						className: F.a.contentContainer
+					}, c.a.createElement(Z.b, null, n.fbt._("Chat settings", null, {
 						hk: "174Drb"
-					})), a ? l.a.createElement("div", {
-						className: M.a.formBody,
+					})), !a && c.a.createElement(x, {
+						className: F.a.modAccessBanner
+					}), o ? c.a.createElement("div", {
+						className: F.a.formBody,
 						onBlur: this.onFormFieldBlur,
 						ref: this.formBodyRef
-					}, this.state.formState && this.state.formState.length ? l.a.createElement(F, {
+					}, this.state.formState && this.state.formState.length ? c.a.createElement(Y, {
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
-					}) : l.a.createElement(j, {
+					}) : c.a.createElement(M, {
 						subredditName: s
-					})) : l.a.createElement(O, {
+					})) : c.a.createElement(H, {
 						isLoading: t
-					})), l.a.createElement(u.a, {
+					})), c.a.createElement(u.a, {
 						blockOnBeforeUnload: !0,
-						dialogId: W,
-						enabled: o
-					}), this.props.isDiscardModalOpen && l.a.createElement(p.a, {
+						dialogId: G,
+						enabled: i
+					}), this.props.isDiscardModalOpen && c.a.createElement(p.a, {
 						actionText: n.fbt._("Discard", null, {
 							hk: "1SiwLl"
 						}),
@@ -344,8 +381,8 @@
 					}))
 				}
 			}
-			t.default = X(Object(A.c)(z))
+			t.default = ee(Object(W.c)(te))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-ChatSettings.32d7db1f68ebbea21691.js.map
+//# sourceMappingURL=reddit-components-ModHub-ChatSettings.921e06f5b276774b6ec8.js.map

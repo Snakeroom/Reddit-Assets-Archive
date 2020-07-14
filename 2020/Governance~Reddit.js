@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.428dd2f2d2916dc28154.js
-// Retrieved at 7/14/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ec98b307020e67b51bc1.js
+// Retrieved at 7/14/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -8913,17 +8913,17 @@
 		"./src/reddit/actions/pages/chatSettings.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return y
-			})), n.d(t, "b", (function() {
 				return E
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return I
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return S
+			})), n.d(t, "d", (function() {
+				return v
 			})), n.d(t, "e", (function() {
-				return A
-			})), n.d(t, "f", (function() {
 				return P
+			})), n.d(t, "f", (function() {
+				return R
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/lodash/difference.js"),
@@ -8946,45 +8946,47 @@
 				g = n("./src/telemetry/models/Event.ts");
 			var _ = n("./src/reddit/models/ChatSettingsPage/index.ts"),
 				h = n("./src/reddit/models/Toast/index.ts"),
-				j = n("./src/reddit/selectors/chatSettingsPage.ts");
-			const y = "FETCH_CHAT_SETTINGS__LOADED",
-				E = "FETCH_CHAT_SETTINGS__FAILED",
-				I = "FETCH_CHAT_SETTINGS__PENDING",
-				S = "UPDATE_CHAT_SETTINGS__LOADED",
-				v = Object(c.a)(y),
+				j = n("./src/reddit/selectors/chat.ts"),
+				y = n("./src/reddit/selectors/chatSettingsPage.ts");
+			const E = "FETCH_CHAT_SETTINGS__LOADED",
+				I = "FETCH_CHAT_SETTINGS__FAILED",
+				S = "FETCH_CHAT_SETTINGS__PENDING",
+				v = "UPDATE_CHAT_SETTINGS__LOADED",
 				T = Object(c.a)(E),
 				w = Object(c.a)(I),
 				C = Object(c.a)(S),
-				D = e => async (t, n) => {
+				D = Object(c.a)(v),
+				A = e => async (t, n) => {
 					const s = {
 						subredditId: e
 					};
-					return !!Object(j.b)(n(), s) || (t(w(s)), !1)
-				}, A = e => async (t, n, s) => {
+					return !!Object(y.b)(n(), s) || (t(C(s)), !1)
+				}, P = e => async (t, n, s) => {
 					let {
 						gqlContext: r
 					} = s;
 					const o = {
 						subredditId: e
 					};
-					if (await t(D(e))) return;
+					if (await t(A(e))) return;
 					let a = null;
 					const c = await p(r(), o);
 					if (c.ok) {
 						const t = c.body || {},
-							n = t.data && t.data.subredditInfoById,
-							s = n && n.chatSettings,
-							r = Object(_.c)(s, e);
+							s = t.data && t.data.subredditInfoById,
+							r = s && s.chatSettings,
+							i = !Object(j.e)(n(), o),
+							d = Object(_.c)(r, e, i);
 						a = Object.assign({}, o, {
-							chatSettings: r
+							chatSettings: d
 						})
 					}
-					if (a) t(v(a));
+					if (a) t(T(a));
 					else {
 						const n = c.error || {
 							type: i.E.UNKNOWN_ERROR
 						};
-						t(T(Object.assign({}, o, {
+						t(w(Object.assign({}, o, {
 							error: n
 						}))), d.c.withScope(t => {
 							t.setExtra("info", {
@@ -8994,11 +8996,11 @@
 							}), d.c.captureMessage("Missing subreddit chat settings!")
 						})
 					}
-				}, P = (e, t, n) => async (r, a, c) => {
+				}, R = (e, t, n) => async (r, a, c) => {
 					let {
 						gqlContext: d
 					} = c;
-					if (await r(D(e))) return [];
+					if (await r(A(e))) return [];
 					let l, b = !1;
 					const p = o()(n, t),
 						f = Object(_.b)(p);
@@ -9017,13 +9019,13 @@
 							type: i.E.UNKNOWN_ERROR
 						}
 					}
-					return b ? (r(C({
+					return b ? (r(D({
 						subredditId: e,
 						chatSettings: n
-					})), r(x(t, p)), n) : (l && r(T({
+					})), r(k(t, p)), n) : (l && r(w({
 						subredditId: e,
 						error: l
-					})), r(C({
+					})), r(D({
 						subredditId: e,
 						chatSettings: t
 					})), r(Object(u.e)({
@@ -9034,7 +9036,7 @@
 							hk: "3HpR6h"
 						})
 					})), t)
-				}, R = {
+				}, x = {
 					start_chatting_opt_out: (e, t, n) => Object.assign({
 						source: g.b.Chat,
 						action: g.a.OptOut,
@@ -9045,10 +9047,10 @@
 							value: n
 						}
 					}, Object(O.defaults)(e))
-				}, x = (e, t) => async (n, s) => {
+				}, k = (e, t) => async (n, s) => {
 					t.forEach(t => {
 						if (t && t.settingId) {
-							const n = R[t.settingId],
+							const n = x[t.settingId],
 								r = e.find(e => e.settingId === t.settingId);
 							if (n && r) {
 								const e = n(s(), r.state, t.state);
@@ -30482,36 +30484,39 @@
 				function(e) {
 					e.Unknown = "unknown", e.Toggle = "BOOLEAN"
 				}(s || (s = {}));
-			const r = (e, t) => e && Array.isArray(e) && e.length ? e.reduce((e, n) => {
-					if (n && n.id && n.type && n.title && n.hasOwnProperty("state")) switch (n.type) {
-						case s.Toggle:
-							e.push({
-								settingType: s.Toggle,
-								settingId: n.id,
-								subredditId: t,
-								description: n.description,
-								descriptionUrl: n.descriptionUrl,
-								groupName: n.groupName,
-								isEditable: n.isEditable,
-								state: "true" === String(n.state).toLowerCase(),
-								title: n.title
-							});
-							break;
-						default:
-							e.push({
-								settingType: s.Unknown,
-								settingId: n.id,
-								subredditId: t,
-								description: n.description,
-								descriptionUrl: n.descriptionUrl,
-								groupName: n.groupName,
-								isEditable: n.isEditable,
-								state: n.state,
-								title: n.title
-							})
-					}
-					return e
-				}, []) : [],
+			const r = function(e, t) {
+					let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+					return e && Array.isArray(e) && e.length ? e.reduce((e, r) => {
+						if (r && r.id && r.type && r.title && r.hasOwnProperty("state")) switch (r.type) {
+							case s.Toggle:
+								e.push({
+									settingType: s.Toggle,
+									settingId: r.id,
+									subredditId: t,
+									description: r.description,
+									descriptionUrl: r.descriptionUrl,
+									groupName: r.groupName,
+									isEditable: !n && r.isEditable,
+									state: "true" === String(r.state).toLowerCase(),
+									title: r.title
+								});
+								break;
+							default:
+								e.push({
+									settingType: s.Unknown,
+									settingId: r.id,
+									subredditId: t,
+									description: r.description,
+									descriptionUrl: r.descriptionUrl,
+									groupName: r.groupName,
+									isEditable: !n && r.isEditable,
+									state: r.state,
+									title: r.title
+								})
+						}
+						return e
+					}, []) : []
+				},
 				o = e => e.reduce((e, t) => (t.isEditable && e.push({
 					id: t.settingId,
 					state: String(t.state)
@@ -54686,4 +54691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.428dd2f2d2916dc28154.js.map
+//# sourceMappingURL=Governance~Reddit.ec98b307020e67b51bc1.js.map
