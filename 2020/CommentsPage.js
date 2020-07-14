@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b626ba2b2536682c8a4c.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.4f7c59f852a0f9cc612d.js
+// Retrieved at 7/14/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -646,7 +646,7 @@
 				}, 0);
 			class E extends o.a.Component {
 				constructor() {
-					super(...arguments), this.frame = null, this.loader = null, this.refreshedAt = 1 / 0, this.isWithinLoadingDistance = !1, this.refreshedOnce = !1, this.refreshInterval = null
+					super(...arguments), this.frame = null, this.loader = null, this.refreshedAt = 1 / 0, this.isWithinLoadingDistance = !1, this.refreshedOnce = !1, this.refreshTimeout = null
 				}
 				componentDidCatch(e) {
 					y(e)
@@ -671,7 +671,7 @@
 				}
 				destroySlot() {
 					try {
-						this.refreshInterval && window.clearInterval(this.refreshInterval), this.frame && l.b(this.frame)
+						this.refreshTimeout && window.clearTimeout(this.refreshTimeout), this.frame && l.b(this.frame)
 					} catch (e) {
 						y(e)
 					}
@@ -686,9 +686,9 @@
 					this.loader && m.a(this.loader, e => {
 						this.isWithinLoadingDistance = !0, this.refreshedOnce || (this.frame && l.e(this.frame, {
 							viewable: e.intersectionRatio > .5
-						}), this.refresh(this.props), this.refreshedOnce = !0), this.props.isRefreshableAd && (!this.refreshInterval && e.isIntersecting ? this.refreshInterval = window.setInterval(() => {
+						}), this.refresh(this.props), this.refreshedOnce = !0), this.props.isRefreshableAd && (!this.refreshTimeout && e.isIntersecting ? this.refreshTimeout = window.setTimeout(() => {
 							this.props.isRefreshableAd && this.refresh(this.props)
-						}, a.a.dfpRefreshSlotInterval) : this.refreshInterval && !e.isIntersecting && (window.clearInterval(this.refreshInterval), this.refreshInterval = null))
+						}, a.a.dfpRefreshSlotInterval) : this.refreshTimeout && !e.isIntersecting && (window.clearTimeout(this.refreshTimeout), this.refreshTimeout = null))
 					})
 				}
 				componentWillUnmount() {
@@ -16247,4 +16247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.b626ba2b2536682c8a4c.js.map
+//# sourceMappingURL=CommentsPage.4f7c59f852a0f9cc612d.js.map
