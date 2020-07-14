@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.9f6ecab9a6bb14733257.js
-// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b626ba2b2536682c8a4c.js
+// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3365,9 +3365,9 @@
 			const wt = e => {
 				const t = Object(jt.c)(e, {
 					experimentEligibilitySelector: jt.a,
-					experimentName: kt.Z
+					experimentName: kt.bb
 				});
-				return !(!t || Object(kt.tc)(t))
+				return !(!t || Object(kt.vc)(t))
 			};
 			var Pt = s("./src/reddit/selectors/userPrefs.ts"),
 				It = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -3415,9 +3415,9 @@
 					highlightAnimationEnabled: e => (e => {
 						const t = Object(jt.c)(e, {
 							experimentEligibilitySelector: jt.a,
-							experimentName: kt.Y
+							experimentName: kt.ab
 						});
-						return !(!t || Object(kt.tc)(t))
+						return !(!t || Object(kt.vc)(t))
 					})(e) && !Object(Pt.c)(e),
 					highlightTagsEnabled: wt,
 					isEditing: C.z,
@@ -10136,7 +10136,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.tc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.vc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -10166,7 +10166,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.tc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.vc)(o), p = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -12922,8 +12922,8 @@
 					postListPlaceholderComponent: () => b.a,
 					isNpsScrollSurveyEnabled: e => Object(f.c)(e, {
 						experimentEligibilitySelector: f.a,
-						experimentName: g.Bb
-					}) === g.Cb.Enabled
+						experimentName: g.Db
+					}) === g.Eb.Enabled
 				},
 				j = Object(o.c)(k),
 				w = (e, t) => {
@@ -15456,8 +15456,8 @@
 					onToggleTooltip: t => e(Object(A.h)({
 						tooltipId: t
 					})),
-					openLoginModal: () => e(Object(R.g)()),
-					openRegisterModal: () => e(Object(R.h)()),
+					openLoginModal: () => e(Object(R.h)()),
+					openRegisterModal: () => e(Object(R.i)()),
 					goToSubredditPage: t => e(Object(v.b)(t)),
 					sendChatPostExposureEvent: (t, s) => e((e, n) => Object(re.g)(n(), t, s)),
 					truncateCommentsList: () => e(Object(L.b)()),
@@ -16185,8 +16185,8 @@
 			const a = e => o.e[Object(r.N)(e, {})] === o.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.C
-				}) === n.K.Treatment
+					experimentName: n.D
+				}) === n.M.Treatment
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
 			"use strict";
@@ -16213,9 +16213,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.E
+					experimentName: n.F
 				});
-				return !!t && !Object(n.tc)(t)
+				return !!t && !Object(n.vc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -16228,9 +16228,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.V
+					experimentName: n.X
 				});
-				return !(!t || Object(n.tc)(t))
+				return !(!t || Object(n.vc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16247,4 +16247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.9f6ecab9a6bb14733257.js.map
+//# sourceMappingURL=CommentsPage.b626ba2b2536682c8a4c.js.map

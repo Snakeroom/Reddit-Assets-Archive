@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b68eef8cb93cf3abacd8.js
-// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b3f13f7a67e891e23c4f.js
+// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -855,16 +855,16 @@
 				B = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				_ = s("./src/reddit/selectors/experiments/utils.ts");
 			const N = Object(d.a)(e => Object(B.c)(e, {
-					experimentName: V.mc,
+					experimentName: V.oc,
 					experimentEligibilitySelector: B.a
 				}), _.a),
 				O = Object(d.a)(N, (function(e) {
 					switch (e) {
-						case V.pc.BufferTwoSeconds:
+						case V.rc.BufferTwoSeconds:
 							return 2;
-						case V.pc.BufferFiveSeconds:
+						case V.rc.BufferFiveSeconds:
 							return 5;
-						case V.pc.BufferTenSeconds:
+						case V.rc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1800,8 +1800,8 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("3c83607-production", " ").concat(t);
-									return i && (s += " [".concat(V.mc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("0fa1716-production", " ").concat(t);
+									return i && (s += " [".concat(V.oc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2227,13 +2227,13 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: a.nc
+					experimentName: a.pc
 				}),
-				r = [a.qc.FeedAndTheatre, a.qc.FeedOnly],
+				r = [a.sc.FeedAndTheatre, a.sc.FeedOnly],
 				l = Object(i.a)(n, e => r.includes(e)),
-				c = [a.qc.FeedAndTheatre, a.qc.TheatreOnly],
+				c = [a.sc.FeedAndTheatre, a.sc.TheatreOnly],
 				d = Object(i.a)(n, e => c.includes(e))
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b68eef8cb93cf3abacd8.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b3f13f7a67e891e23c4f.js.map

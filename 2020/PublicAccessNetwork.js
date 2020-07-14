@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c1d29bdae48f2fcf98ef.js
-// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.eff7f36f7c813424725f.js
+// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const u = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.yb
+					experimentName: d.Ab
 				});
-				return Object(d.tc)(t) ? void 0 : t
+				return Object(d.vc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: d.zb
+					experimentName: d.Bb
 				});
-				return Object(d.tc)(t) ? void 0 : t
-			}, (e, t) => e === d.Ab.Enabled && t === d.Ab.Enabled);
+				return Object(d.vc)(t) ? void 0 : t
+			}, (e, t) => e === d.Cb.Enabled && t === d.Cb.Enabled);
 			var p = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -341,7 +341,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "3c83607-production"
+					SENTRY_RELEASE_VERSION: "0fa1716-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -2222,7 +2222,7 @@
 						const s = Object(ae.k)(r(), e);
 						null !== s.post.voteState && Object(kt.e)(s.post.voteState) === t || await Object(Pt.g)(n(), e, t)
 					}
-				else s(Object(u.g)())
+				else s(Object(u.h)())
 			};
 			var At = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
 				Vt = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
@@ -3592,8 +3592,8 @@
 						loadComments: () => e(Object(ur.q)(s, void 0, {
 							sort: dr.r.CHAT
 						}, dr.r.CHAT)),
-						openLoginModal: () => e(Object(u.g)()),
-						openRegisterModal: () => e(Object(u.h)())
+						openLoginModal: () => e(Object(u.h)()),
+						openRegisterModal: () => e(Object(u.i)())
 					}
 				})(Pr),
 				jr = e => i.a.createElement("svg", {
@@ -4276,7 +4276,7 @@
 					return "home" === n || "r/popular" === n ? n : "popular" === i ? "r/popular" : i ? void 0 : "home"
 				}
 			}), ea = Object(o.b)($r, (e, t) => ({
-				onOpenLoginModal: () => e(Object(u.g)()),
+				onOpenLoginModal: () => e(Object(u.h)()),
 				onStreamByIdRequested: t => e(Object(p.d)(t)),
 				updateLocation: (t, s) => {
 					let {
@@ -4359,10 +4359,10 @@
 			const n = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.kb
-				}) === r.pb.Enabled
+					experimentName: r.mb
+				}) === r.rb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.c1d29bdae48f2fcf98ef.js.map
+//# sourceMappingURL=PublicAccessNetwork.eff7f36f7c813424725f.js.map

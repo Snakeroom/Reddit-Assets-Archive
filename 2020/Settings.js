@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.1c17c4c1086aae23e3c2.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.166241d5bd773b962895.js
+// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4130,8 +4130,8 @@
 			var Ie = Object(r.b)(Ne, e => ({
 				openSSOCreatePasswordForLinkAppleModal: () => e(Object(_.h)(X.h)),
 				openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(_.h)(X.i)),
-				openLinkAppleSSOModal: () => e(Object(y.e)()),
-				openUnlinkAppleSSOModal: () => e(Object(y.i)())
+				openLinkAppleSSOModal: () => e(Object(y.f)()),
+				openUnlinkAppleSSOModal: () => e(Object(y.j)())
 			}))(e => {
 				const t = Object(ye.a)();
 				return o.a.createElement(Pe, {
@@ -4216,8 +4216,8 @@
 			var Fe = Object(r.b)(Ue, e => ({
 					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(X.l)),
 					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(_.h)(X.m)),
-					openLinkGoogleSSOModal: () => e(Object(y.f)()),
-					openUnlinkGoogleSSOModal: () => e(Object(y.j)())
+					openLinkGoogleSSOModal: () => e(Object(y.g)()),
+					openUnlinkGoogleSSOModal: () => e(Object(y.k)())
 				}))(e => {
 					const t = Object(ye.a)();
 					return o.a.createElement(De, {
@@ -7064,4 +7064,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.1c17c4c1086aae23e3c2.js.map
+//# sourceMappingURL=Settings.166241d5bd773b962895.js.map

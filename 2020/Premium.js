@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.839eb9b4a8812985025a.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.0f129c1257bef1e50eee.js
+// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -663,7 +663,7 @@
 					},
 					onGiftCodeRedeem: () => e(Object(M.h)()),
 					onManagePremium: () => e(Object(c.b)("/settings/gold")),
-					onOpenLoginModal: () => e(Object(I.g)()),
+					onOpenLoginModal: () => e(Object(I.h)()),
 					onPurchasePremium: t => e(Object(j.d)({
 						correlationId: t
 					})),
@@ -799,4 +799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.839eb9b4a8812985025a.js.map
+//# sourceMappingURL=Premium.0f129c1257bef1e50eee.js.map
