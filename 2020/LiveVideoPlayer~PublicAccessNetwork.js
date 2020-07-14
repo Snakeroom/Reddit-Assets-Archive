@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.30b717bae83716c005e9.js
-// Retrieved at 6/30/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.82a72c359129719a1217.js
+// Retrieved at 7/14/2020, 6:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -382,7 +382,8 @@
 			const c = (e, t) => {
 					if (t) {
 						const s = o.media(e, t.post.id),
-							r = o.post(e, t.post.id);
+							r = o.post(e, t.post.id),
+							i = o.subreddit(e);
 						if (t.post.authorInfo && r && (r.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const r = Object(n.h)(e, {
@@ -390,19 +391,10 @@
 							});
 							r === n.a.LIVE ? s.type = "stream_live" : r === n.a.VOD ? s.type = "stream_vod" : r === n.a.UNAVAILABLE && (s.type = "stream_unavailable")
 						}
-						if (t.post.subreddit) {
-							return {
-								post: r,
-								media: s,
-								subreddit: {
-									id: t.post.subreddit.id,
-									name: t.post.subreddit.name
-								}
-							}
-						}
 						return {
 							post: r,
-							media: s
+							media: s,
+							subreddit: i
 						}
 					}
 					return {
@@ -839,4 +831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.30b717bae83716c005e9.js.map
+//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.82a72c359129719a1217.js.map

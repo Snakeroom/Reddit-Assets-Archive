@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.43e962ee5148ab7a2386.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.39dbf96bc94d004a408c.js
+// Retrieved at 7/14/2020, 6:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -1216,7 +1216,8 @@
 			const c = (e, t) => {
 					if (t) {
 						const s = i.media(e, t.post.id),
-							n = i.post(e, t.post.id);
+							n = i.post(e, t.post.id),
+							a = i.subreddit(e);
 						if (t.post.authorInfo && n && (n.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const n = Object(o.h)(e, {
@@ -1224,19 +1225,10 @@
 							});
 							n === o.a.LIVE ? s.type = "stream_live" : n === o.a.VOD ? s.type = "stream_vod" : n === o.a.UNAVAILABLE && (s.type = "stream_unavailable")
 						}
-						if (t.post.subreddit) {
-							return {
-								post: n,
-								media: s,
-								subreddit: {
-									id: t.post.subreddit.id,
-									name: t.post.subreddit.name
-								}
-							}
-						}
 						return {
 							post: n,
-							media: s
+							media: s,
+							subreddit: a
 						}
 					}
 					return {
@@ -1753,4 +1745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.43e962ee5148ab7a2386.js.map
+//# sourceMappingURL=ChatMessageInput.39dbf96bc94d004a408c.js.map
