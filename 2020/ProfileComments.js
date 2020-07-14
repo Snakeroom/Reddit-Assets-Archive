@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.af580cc4d5ba3a8d1d47.js
-// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.f3306b63efd7ff40a7e6.js
+// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -4404,7 +4404,7 @@
 					w && O("modal", "show")
 				}, [w]);
 				const C = e => {
-					v(s.Closed), O("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), y(Object(l.j)(n.id, void 0, void 0, e))
+					v(s.Closed), O("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), y(Object(l.j)(n.id, void 0, e))
 				};
 				if (!w) return null;
 				let _ = null;
@@ -9777,4 +9777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.af580cc4d5ba3a8d1d47.js.map
+//# sourceMappingURL=ProfileComments.f3306b63efd7ff40a7e6.js.map

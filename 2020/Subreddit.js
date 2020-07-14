@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c7c99953408e0d3a64f0.js
-// Retrieved at 7/14/2020, 6:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1202d2d720607a309cfb.js
+// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -7278,7 +7278,7 @@
 						const n = e[t];
 						if (!n) return e;
 						const s = n.stream.state,
-							r = R(s, o.b.ENDED) ? o.b.ENDED : s,
+							r = R(s, o.a.ENDED) ? o.a.ENDED : s,
 							a = n.stream.vod_accessible;
 						return r === s && !0 === a ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, n, {
@@ -7293,7 +7293,7 @@
 						const n = e[t];
 						if (!n) return e;
 						const s = n.stream.state,
-							r = R(s, o.b.ENDED) ? o.b.ENDED : s,
+							r = R(s, o.a.ENDED) ? o.a.ENDED : s,
 							a = n.stream.vod_accessible;
 						return r === s && !1 === a ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, n, {
@@ -7325,11 +7325,11 @@
 							l = new Set([...s, ...r]);
 						return d.filter(e => {
 							const t = n[e];
-							return !l.has(e) && !t.post.isHidden && t.stream.state !== o.b.KILLED && t.stream.state !== o.b.PURGED
+							return !l.has(e) && !t.post.isHidden && t.stream.state !== o.a.KILLED && t.stream.state !== o.a.PURGED
 						})
 					}
 					const d = new Set([...s, ...r]);
-					return Object.keys(n).filter(e => !d.has(e)).map(e => n[e]).filter(e => e.rank !== a.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== o.b.KILLED && e.stream.state !== o.b.PURGED).map(e => e.post.id)
+					return Object.keys(n).filter(e => !d.has(e)).map(e => n[e]).filter(e => e.rank !== a.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== o.a.KILLED && e.stream.state !== o.a.PURGED).map(e => e.post.id)
 				}),
 				j = Object(s.a)((e, t) => {
 					let {
@@ -7353,7 +7353,7 @@
 					const n = t[0];
 					if (n) return e[n]
 				}),
-				w = Object(s.a)(E, j, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				w = Object(s.a)(E, j, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				N = Object(s.a)(f, (e, t) => {
 					let {
 						related: n,
@@ -7387,7 +7387,7 @@
 				}, g, (e, t, n, s) => {
 					if (!n.length) return;
 					const r = n.map(e => t[e]).filter(t => t && t.post.id !== e),
-						a = r.find(e => e.stream.state === o.b.IS_LIVE);
+						a = r.find(e => e.stream.state === o.a.IS_LIVE);
 					if (a) return a.post.id;
 					const i = r.find(e => {
 						if (!e.stream.vod_accessible) return !1;
@@ -7436,13 +7436,13 @@
 
 			function R(e, t) {
 				const n = {
-					[o.b.NOT_STARTED]: 0,
-					[o.b.PUBLISHED]: 1,
-					[o.b.IS_LIVE]: 2,
-					[o.b.DISCONNECTED]: 2,
-					[o.b.ENDED]: 3,
-					[o.b.KILLED]: 4,
-					[o.b.PURGED]: 4
+					[o.a.NOT_STARTED]: 0,
+					[o.a.PUBLISHED]: 1,
+					[o.a.IS_LIVE]: 2,
+					[o.a.DISCONNECTED]: 2,
+					[o.a.ENDED]: 3,
+					[o.a.KILLED]: 4,
+					[o.a.PURGED]: 4
 				};
 				return n[t] >= n[e]
 			}
@@ -7456,7 +7456,7 @@
 					const s = e && t[e];
 					if (!s) return U.UNAVAILABLE;
 					const r = s.stream.state;
-					return r === o.b.IS_LIVE || r === o.b.DISCONNECTED ? U.LIVE : r === o.b.ENDED && s.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
+					return r === o.a.IS_LIVE || r === o.a.DISCONNECTED ? U.LIVE : r === o.a.ENDED && s.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
 				}),
 				V = Object(s.a)(L, H, b.b, l.b, l.o, (e, t, n, s, r) => n ? s : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : r : void 0),
 				G = Object(s.a)(L, H, W, (e, t, n) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && n < e.broadcast_time ? n : 0 : 0)
@@ -7505,4 +7505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.c7c99953408e0d3a64f0.js.map
+//# sourceMappingURL=Subreddit.1202d2d720607a309cfb.js.map

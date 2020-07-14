@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.39dbf96bc94d004a408c.js
-// Retrieved at 7/14/2020, 6:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.9dd54cdadf3f3072a5ce.js
+// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -1529,7 +1529,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							a = B(n, i.b.ENDED) ? i.b.ENDED : n,
+							a = B(n, i.a.ENDED) ? i.a.ENDED : n,
 							r = s.stream.vod_accessible;
 						return a === n && !0 === r ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, s, {
@@ -1544,7 +1544,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							a = B(n, i.b.ENDED) ? i.b.ENDED : n,
+							a = B(n, i.a.ENDED) ? i.a.ENDED : n,
 							r = s.stream.vod_accessible;
 						return a === n && !1 === r ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, s, {
@@ -1576,11 +1576,11 @@
 							l = new Set([...n, ...a]);
 						return d.filter(e => {
 							const t = s[e];
-							return !l.has(e) && !t.post.isHidden && t.stream.state !== i.b.KILLED && t.stream.state !== i.b.PURGED
+							return !l.has(e) && !t.post.isHidden && t.stream.state !== i.a.KILLED && t.stream.state !== i.a.PURGED
 						})
 					}
 					const d = new Set([...n, ...a]);
-					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== r.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.b.KILLED && e.stream.state !== i.b.PURGED).map(e => e.post.id)
+					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== r.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.a.KILLED && e.stream.state !== i.a.PURGED).map(e => e.post.id)
 				}),
 				I = Object(n.a)((e, t) => {
 					let {
@@ -1604,7 +1604,7 @@
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				w = Object(n.a)(v, I, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === i.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				w = Object(n.a)(v, I, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === i.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				k = Object(n.a)(g, (e, t) => {
 					let {
 						related: s,
@@ -1638,7 +1638,7 @@
 				}, _, (e, t, s, n) => {
 					if (!s.length) return;
 					const a = s.map(e => t[e]).filter(t => t && t.post.id !== e),
-						r = a.find(e => e.stream.state === i.b.IS_LIVE);
+						r = a.find(e => e.stream.state === i.a.IS_LIVE);
 					if (r) return r.post.id;
 					const o = a.find(e => {
 						if (!e.stream.vod_accessible) return !1;
@@ -1687,13 +1687,13 @@
 
 			function B(e, t) {
 				const s = {
-					[i.b.NOT_STARTED]: 0,
-					[i.b.PUBLISHED]: 1,
-					[i.b.IS_LIVE]: 2,
-					[i.b.DISCONNECTED]: 2,
-					[i.b.ENDED]: 3,
-					[i.b.KILLED]: 4,
-					[i.b.PURGED]: 4
+					[i.a.NOT_STARTED]: 0,
+					[i.a.PUBLISHED]: 1,
+					[i.a.IS_LIVE]: 2,
+					[i.a.DISCONNECTED]: 2,
+					[i.a.ENDED]: 3,
+					[i.a.KILLED]: 4,
+					[i.a.PURGED]: 4
 				};
 				return s[t] >= s[e]
 			}
@@ -1707,7 +1707,7 @@
 					const n = e && t[e];
 					if (!n) return V.UNAVAILABLE;
 					const a = n.stream.state;
-					return a === i.b.IS_LIVE || a === i.b.DISCONNECTED ? V.LIVE : a === i.b.ENDED && n.stream.vod_accessible ? V.VOD : V.UNAVAILABLE
+					return a === i.a.IS_LIVE || a === i.a.DISCONNECTED ? V.LIVE : a === i.a.ENDED && n.stream.vod_accessible ? V.VOD : V.UNAVAILABLE
 				}),
 				W = Object(n.a)(R, G, p.b, l.b, l.o, (e, t, s, n, a) => s ? n : e ? t === V.LIVE || t === V.VOD ? e.stream.hls_url : a : void 0),
 				K = Object(n.a)(R, G, U, (e, t, s) => e ? t === V.LIVE ? e.broadcast_time : t === V.VOD && s < e.broadcast_time ? s : 0 : 0)
@@ -1745,4 +1745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.39dbf96bc94d004a408c.js.map
+//# sourceMappingURL=ChatMessageInput.9dd54cdadf3f3072a5ce.js.map

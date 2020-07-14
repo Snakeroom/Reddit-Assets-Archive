@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d30b5dda7d6b360ed3ca.js
-// Retrieved at 7/14/2020, 6:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.87000bf7e9968721ecb5.js
+// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3276,14 +3276,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("017ffae-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("c9a8f14-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "017ffae-production",
+						release: "c9a8f14-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3698,7 +3698,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "017ffae-production",
+							releaseClient: "c9a8f14-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -5067,164 +5067,6 @@
 				d = Object(n.a)(s),
 				l = Object(n.a)(r),
 				a = Object(n.a)(o)
-		},
-		"./src/reddit/actions/publicAccessNetwork/constants.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "D", (function() {
-				return r
-			})), i.d(t, "X", (function() {
-				return s
-			})), i.d(t, "W", (function() {
-				return o
-			})), i.d(t, "N", (function() {
-				return d
-			})), i.d(t, "v", (function() {
-				return l
-			})), i.d(t, "w", (function() {
-				return a
-			})), i.d(t, "E", (function() {
-				return u
-			})), i.d(t, "G", (function() {
-				return c
-			})), i.d(t, "F", (function() {
-				return _
-			})), i.d(t, "s", (function() {
-				return m
-			})), i.d(t, "t", (function() {
-				return p
-			})), i.d(t, "x", (function() {
-				return h
-			})), i.d(t, "L", (function() {
-				return f
-			})), i.d(t, "K", (function() {
-				return g
-			})), i.d(t, "M", (function() {
-				return b
-			})), i.d(t, "y", (function() {
-				return w
-			})), i.d(t, "J", (function() {
-				return y
-			})), i.d(t, "u", (function() {
-				return v
-			})), i.d(t, "H", (function() {
-				return T
-			})), i.d(t, "I", (function() {
-				return S
-			})), i.d(t, "C", (function() {
-				return F
-			})), i.d(t, "A", (function() {
-				return E
-			})), i.d(t, "T", (function() {
-				return I
-			})), i.d(t, "B", (function() {
-				return O
-			})), i.d(t, "b", (function() {
-				return B
-			})), i.d(t, "r", (function() {
-				return x
-			})), i.d(t, "z", (function() {
-				return j
-			})), i.d(t, "R", (function() {
-				return R
-			})), i.d(t, "m", (function() {
-				return k
-			})), i.d(t, "l", (function() {
-				return C
-			})), i.d(t, "d", (function() {
-				return N
-			})), i.d(t, "e", (function() {
-				return P
-			})), i.d(t, "f", (function() {
-				return L
-			})), i.d(t, "g", (function() {
-				return A
-			})), i.d(t, "j", (function() {
-				return D
-			})), i.d(t, "c", (function() {
-				return G
-			})), i.d(t, "h", (function() {
-				return M
-			})), i.d(t, "k", (function() {
-				return U
-			})), i.d(t, "p", (function() {
-				return q
-			})), i.d(t, "q", (function() {
-				return V
-			})), i.d(t, "Y", (function() {
-				return H
-			})), i.d(t, "V", (function() {
-				return W
-			})), i.d(t, "U", (function() {
-				return z
-			})), i.d(t, "a", (function() {
-				return K
-			})), i.d(t, "P", (function() {
-				return Q
-			})), i.d(t, "i", (function() {
-				return J
-			})), i.d(t, "o", (function() {
-				return Y
-			})), i.d(t, "n", (function() {
-				return X
-			})), i.d(t, "O", (function() {
-				return Z
-			})), i.d(t, "Q", (function() {
-				return $
-			})), i.d(t, "S", (function() {
-				return ee
-			}));
-			var n = i("./src/config.ts");
-			const r = "RPAN__REMOVE_STREAM_FROM_HISTORY",
-				s = "RPAN__VISIT_STREAM",
-				o = -1,
-				d = "RPAN__RESET_HISTORY",
-				l = "RPAN__RECEIVE_GLOBAL_CONFIG",
-				a = "RPAN__RECEIVE_SUBREDDIT_CONFIG",
-				u = "RPAN__REQUEST_CONFIG",
-				c = "RPAN__REQUEST_CONFIG_FAILED",
-				_ = "RPAN__REQUEST_CONFIG_CANCELED",
-				m = "RPAN__RECEIVE_HLS_STREAM_ENDED",
-				p = "RPAN__RECEIVE_HLS_STREAM_REMOVED",
-				h = "RPAN__RECEIVE_STREAM_MODEL",
-				f = "RPAN__REQUEST_STREAM_MODEL",
-				g = "RPAN__REQUEST_STREAM_FAILED",
-				b = "RPAN__REQUEST_STREAM_MODEL_BATCH",
-				w = "RPAN__RECEIVE_STREAM_MODEL_BATCH",
-				y = "RPAN__REQUEST_STREAM_BATCH_FAILED",
-				v = "RPAN__RECEIVE_RECOMMENDED_VIEWER_SUBREDDITS",
-				T = "RPAN__REQUEST_RECOMMENDED_VIEWER_SUBREDDITS",
-				S = "RPAN__REQUEST_RECOMMENDED_VIEWER_SUBREDDITS_FAILED",
-				F = "RPAN__RECEIVE_VOTE",
-				E = "RPAN__RECEIVE_THEATER_SETTINGS",
-				I = "RPAN__UPDATE_VIDEO_TIMESTAMP",
-				O = "RPAN__RECEIVE_USER_SETTINGS",
-				B = "RPAN__BATCH_OP",
-				x = "RPAN__RECEIVE_DISCOVERY_UNIT_THUMBNAILS",
-				j = "RPAN__RECEIVE_STREAM_PREVIEWS",
-				R = "RPAN__SEND_HEARTBEAT",
-				k = 0,
-				C = 9999,
-				N = 30,
-				P = 6,
-				L = 5,
-				A = 15,
-				D = 5,
-				G = 57,
-				M = 60,
-				U = 7e3,
-				q = 1e3,
-				V = 400,
-				H = 1e3,
-				W = "https://watch.redd.it/",
-				z = ".m3u8",
-				K = 3e4,
-				Q = ("".concat(n.a.assetPath, "/img/trending-placeholder.png"), "home"),
-				J = 3,
-				Y = 500,
-				X = 2e3,
-				Z = "".concat(n.a.redditUrl, "/r/").concat("pan"),
-				$ = "https://www.redditinc.com/policies/broadcasting-content-policy",
-				ee = ("".concat(n.a.assetPath, "/img/rpan-broadcast-over.png"), "".concat(n.a.assetPath, "/img/rpan-broadcast-over-thumbnail.png"))
 		},
 		"./src/reddit/actions/session.ts": function(e, t, i) {
 			"use strict";
@@ -10621,7 +10463,7 @@
 			}));
 			var n, r, s = i("./src/reddit/constants/posts.ts"),
 				o = i("./src/reddit/constants/things.ts"),
-				d = i("./src/reddit/models/PublicAccessNetwork/index.ts"),
+				d = i("./src/reddit/models/Media/index.ts"),
 				l = i("./src/lib/constants/index.ts");
 			! function(e) {
 				e.Chat = "CHAT", e.Comment = "COMMENT"
@@ -10653,7 +10495,7 @@
 			}(g || (g = {}));
 			const b = e => e.belongsTo.type === s.a.PROFILE,
 				w = e => e.belongsTo.type === s.a.SUBREDDIT,
-				y = e => !!e.source && Object(d.a)(e.source.url),
+				y = e => !!e.media && e.media.type === d.o.LIVEVIDEO,
 				v = e => e.isStickied && !e.isSponsored
 		},
 		"./src/reddit/models/PostCollection/index.ts": function(e, t, i) {
@@ -10868,16 +10710,13 @@
 		},
 		"./src/reddit/models/PublicAccessNetwork/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
-				return n
-			})), i.d(t, "a", (function() {
-				return s
-			}));
-			var n, r = i("./src/reddit/actions/publicAccessNetwork/constants.ts");
-			! function(e) {
-				e.NOT_STARTED = "NOT_STARTED", e.PUBLISHED = "PUBLISHED", e.IS_LIVE = "IS_LIVE", e.DISCONNECTED = "DISCONNECTED", e.KILLED = "KILLED", e.PURGED = "PURGED", e.ENDED = "ENDED"
-			}(n || (n = {}));
-			const s = e => !!e && e.toLowerCase().startsWith(r.V) && e.toLowerCase().endsWith(r.U)
+			var n;
+			i.d(t, "a", (function() {
+					return n
+				})),
+				function(e) {
+					e.NOT_STARTED = "NOT_STARTED", e.PUBLISHED = "PUBLISHED", e.IS_LIVE = "IS_LIVE", e.DISCONNECTED = "DISCONNECTED", e.KILLED = "KILLED", e.PURGED = "PURGED", e.ENDED = "ENDED"
+				}(n || (n = {}))
 		},
 		"./src/reddit/models/RichTextJson/index.ts": function(e, t, i) {
 			"use strict";
@@ -17046,7 +16885,6 @@
 				xe = e => {
 					if (e.isMeta) return "poll";
 					if (!e.media) return "link";
-					if (Object(ne.i)(e)) return "stream";
 					switch (e.media.type) {
 						case "gifvideo":
 							return "gif";
@@ -22065,4 +21903,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.d30b5dda7d6b360ed3ca.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.87000bf7e9968721ecb5.js.map

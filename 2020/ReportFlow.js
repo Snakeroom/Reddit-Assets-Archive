@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.b03a5e89f13d4168f4f3.js
-// Retrieved at 7/8/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.3ac60e791a948ccdf5be.js
+// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow"], {
 		"./src/reddit/components/CrisisFlow/async.tsx": function(e, t, o) {
@@ -129,8 +129,8 @@
 				a = o("./src/higherOrderComponents/asModal/index.tsx"),
 				d = o("./src/lib/formatPythonString/index.ts"),
 				c = o("./src/lib/lessComponent.tsx"),
-				u = o("./src/reddit/components/CrisisFlow/async.tsx"),
-				p = o("./src/reddit/actions/reportFlow.ts"),
+				p = o("./src/reddit/components/CrisisFlow/async.tsx"),
+				u = o("./src/reddit/actions/reportFlow.ts"),
 				m = o("./src/reddit/components/ContentPolicy/index.tsx"),
 				h = o("./src/reddit/layout/row/Inline/index.tsx"),
 				R = (o("./node_modules/core-js/modules/es6.symbol.js"), o("./src/higherOrderComponents/asTooltip.tsx")),
@@ -298,8 +298,8 @@
 				})(ie),
 				de = o("./src/reddit/components/AccordionSection/index.tsx"),
 				ce = o("./src/reddit/actions/tooltip.ts"),
-				ue = o("./src/reddit/components/ReportPage/CustomTextInput/index.tsx"),
-				pe = o("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx"),
+				pe = o("./src/reddit/components/ReportPage/CustomTextInput/index.tsx"),
+				ue = o("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx"),
 				me = o("./src/reddit/endpoints/post/index.tsx"),
 				he = o("./src/reddit/selectors/tooltip.ts");
 			const Re = "ReportFlow--RedditRules",
@@ -363,7 +363,7 @@
 						const n = a === o;
 						return r.a.createElement("div", {
 							key: e.reasonTextToShow
-						}, r.a.createElement(pe.a, {
+						}, r.a.createElement(ue.a, {
 							value: e.reasonText ? e.reasonText : "",
 							label: e.reasonTextToShow,
 							selected: n,
@@ -372,7 +372,7 @@
 							} : () => {
 								this.props.onUpdateRulesSequence(o, t + 1), this.onRedditRuleChange(e)
 							}
-						}), n && e.canWriteNotes && r.a.createElement(ue.a, {
+						}), n && e.canWriteNotes && r.a.createElement(pe.a, {
 							depth: t + 1,
 							onCustomTextChange: this.onCustomTextChange,
 							title: e.notesInputTitle,
@@ -507,7 +507,7 @@
 						props: t,
 						state: o
 					} = this, s = o.rulesSequence.getSequence(), l = t.subredditOrProfile ? t.subredditOrProfile.name : "";
-					return t.isLiveStreaming ? null : r.a.createElement(de.a, {
+					return r.a.createElement(de.a, {
 						key: "subreddit_rules_section_key",
 						title: t.subredditOrProfile && t.subredditOrProfile.type === Ie.d.User ? n.fbt._("It breaks u/{subredditName}'s rules", [n.fbt._param("subredditName", l)], {
 							hk: "QcQnb"
@@ -604,11 +604,10 @@
 					},
 					isLiveStreaming: (e, t) => {
 						let {
-							postId: o,
-							useLiveStreamingFlow: n
+							postId: o
 						} = t;
-						const s = o && e.posts.models[o];
-						return n || !!s && Object(Me.i)(s)
+						const n = o && e.posts.models[o];
+						return !!n && Object(Me.i)(n)
 					},
 					liveStreamingRules: e => e.reportRules.liveStreamingRules,
 					rulesCategory: e => e.reportFlow.rulesCategory,
@@ -758,7 +757,7 @@
 						let e;
 						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(s.Fragment, null, r.a.createElement(Ze, {
 							onClick: this.handleReportFlowClose
-						}, r.a.createElement($e, null)), r.a.createElement(u.a, {
+						}, r.a.createElement($e, null)), r.a.createElement(p.a, {
 							onCloseReportFlow: this.handleReportFlowClose,
 							thingId: t.commentId ? t.commentId : t.postId,
 							username: e
@@ -788,10 +787,10 @@
 				} = t;
 				return {
 					onCloseReportFlow: () => {
-						e(Object(p.i)())
+						e(Object(u.i)())
 					},
 					onReportPostOrComment: (t, n, s) => {
-						e(Object(p.h)({
+						e(Object(u.h)({
 							id: t,
 							reportFlowPayload: n,
 							timestamp: o
@@ -875,4 +874,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow.b03a5e89f13d4168f4f3.js.map
+//# sourceMappingURL=ReportFlow.3ac60e791a948ccdf5be.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.8b4721042800a263679b.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.4b9fba7500addbfb96a2.js
+// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -3228,7 +3228,7 @@
 					C && E("modal", "show")
 				}, [C]);
 				const j = e => {
-					f(n.Closed), E("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), v(Object(l.j)(s.id, void 0, void 0, e))
+					f(n.Closed), E("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), v(Object(l.j)(s.id, void 0, e))
 				};
 				if (!C) return null;
 				let _ = null;
@@ -9523,4 +9523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.8b4721042800a263679b.js.map
+//# sourceMappingURL=SearchResults.4b9fba7500addbfb96a2.js.map

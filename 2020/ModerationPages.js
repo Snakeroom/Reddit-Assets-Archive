@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8440351bae25aba7fde1.js
-// Retrieved at 7/14/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e3e69bc2118308bde11e.js
+// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -15342,7 +15342,7 @@
 					_ && k("modal", "show")
 				}, [_]);
 				const O = e => {
-					x(n.Closed), k("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), E(Object(c.j)(s.id, void 0, void 0, e))
+					x(n.Closed), k("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), E(Object(c.j)(s.id, void 0, e))
 				};
 				if (!_) return null;
 				let y = null;
@@ -29949,4 +29949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.8440351bae25aba7fde1.js.map
+//# sourceMappingURL=ModerationPages.e3e69bc2118308bde11e.js.map

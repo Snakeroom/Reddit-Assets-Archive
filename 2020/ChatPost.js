@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.624800c594683a934951.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.70b76a8ec150768f5005.js
+// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -151,8 +151,8 @@
 				h = o("./src/reddit/helpers/describeApiError/index.ts"),
 				C = o("./src/reddit/helpers/path/index.ts"),
 				g = o("./src/reddit/helpers/styles/mixins/loading.ts"),
-				v = o("./src/reddit/icons/fonts/Downvote/index.tsx"),
-				b = o("./src/reddit/icons/fonts/Upvote/index.tsx"),
+				b = o("./src/reddit/icons/fonts/Downvote/index.tsx"),
+				v = o("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				_ = o("./src/reddit/icons/svgs/Comments/index.tsx"),
 				x = o("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
 				f = o("./src/reddit/components/Comments/States/index.m.less"),
@@ -256,8 +256,8 @@
 				P = d.a.div("Avatar", k.a),
 				B = d.a.div("VoteColumn", k.a),
 				D = d.a.div("TextColumn", k.a),
-				U = d.a.wrapped(b.b, "Upvote", k.a),
-				W = d.a.wrapped(v.b, "Downvote", k.a),
+				U = d.a.wrapped(v.b, "Upvote", k.a),
+				W = d.a.wrapped(b.b, "Downvote", k.a),
 				F = () => i.a.createElement("div", {
 					className: Object(l.a)(k.a.TopMetaPlaceholder, Object(g.a)({
 						isLoading: !0
@@ -557,8 +557,8 @@
 				h = o.n(u),
 				C = o("./node_modules/lodash/isArray.js"),
 				g = o.n(C),
-				v = o("./src/reddit/helpers/isComment.ts"),
-				b = o("./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts"),
+				b = o("./src/reddit/helpers/isComment.ts"),
+				v = o("./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts"),
 				_ = o("./src/reddit/models/Comment/index.ts"),
 				x = o("./src/reddit/models/Flair/index.ts"),
 				f = o("./src/reddit/models/PostCreationForm/index.ts"),
@@ -568,7 +568,7 @@
 						const t = I(e.attribs);
 						return {
 							allAwardings: [],
-							associatedAward: e.associated_award ? Object(b.b)(e.associated_award) : void 0,
+							associatedAward: e.associated_award ? Object(v.b)(e.associated_award) : void 0,
 							author: e.author,
 							authorId: e.author_fullname,
 							body: e.body_html,
@@ -596,7 +596,7 @@
 								},
 								rteMode: f.h.RICH_TEXT
 							},
-							parentId: e.parent_id && Object(v.a)(e.parent_id) ? e.parent_id : null,
+							parentId: e.parent_id && Object(b.a)(e.parent_id) ? e.parent_id : null,
 							permalink: e.context,
 							postId: e.link_id,
 							score: e.score,
@@ -940,7 +940,7 @@
 				he = o("./src/reddit/components/CommentsChat/Comment/CollapsedComment/index.m.less"),
 				Ce = o.n(he);
 			const ge = X.a.div("CollapsedComment", Ce.a);
-			var ve = e => {
+			var be = e => {
 					let {
 						commentCount: t,
 						onClick: o
@@ -956,7 +956,7 @@
 						hk: "3equVw"
 					}))
 				},
-				be = o("./src/lib/humanizeDateTime/index.ts"),
+				ve = o("./src/lib/humanizeDateTime/index.ts"),
 				_e = o("./src/reddit/actions/postCreation/general.ts"),
 				xe = o("./src/reddit/actions/reportFlow.ts"),
 				fe = o("./src/reddit/actions/tooltip.ts"),
@@ -1093,7 +1093,7 @@
 				ht = X.a.wrapped(He.a, "ApproveIcon", Le.a),
 				Ct = X.a.wrapped(Xe, "ReplyIcon", Le.a),
 				gt = X.a.wrapped(Ge.a, "RemoveIcon", Le.a),
-				vt = X.a.wrapped(e => s.a.createElement("svg", {
+				bt = X.a.wrapped(e => s.a.createElement("svg", {
 					className: e.className,
 					id: e.id,
 					onMouseEnter: e.onMouseEnter,
@@ -1104,7 +1104,7 @@
 					fillRule: "evenodd",
 					d: "M12.3535,14.6465 C12.5485,14.8415 12.5485,15.1585 12.3535,15.3535 C12.2555,15.4515 12.1275,15.5005 11.9995,15.5005 C11.8725,15.5005 11.7445,15.4515 11.6465,15.3535 L9.9995,13.7075 L8.3535,15.3535 C8.2555,15.4515 8.1275,15.5005 7.9995,15.5005 C7.8725,15.5005 7.7445,15.4515 7.6465,15.3535 C7.4515,15.1585 7.4515,14.8415 7.6465,14.6465 L9.2925,13.0005 L7.6465,11.3535 C7.4515,11.1585 7.4515,10.8415 7.6465,10.6465 C7.8415,10.4515 8.1585,10.4515 8.3535,10.6465 L9.9995,12.2925 L11.6465,10.6465 C11.8415,10.4515 12.1585,10.4515 12.3535,10.6465 C12.5485,10.8415 12.5485,11.1585 12.3535,11.3535 L10.7075,13.0005 L12.3535,14.6465 Z M15.9995,8.0005 C17.1045,8.0005 17.9995,8.8955 17.9995,10.0005 L17.9995,16.0005 C17.9995,17.1045 17.1045,18.0005 15.9995,18.0005 L3.9995,18.0005 C2.8955,18.0005 1.9995,17.1045 1.9995,16.0005 L1.9995,10.0005 C1.9995,8.8955 2.8955,8.0005 3.9995,8.0005 L15.9995,8.0005 Z M4,7 C3.229,7 2.532,7.301 2,7.78 L2,7 C2,6.586 2.126,6.201 2.342,5.882 C2.485,5.669 2.669,5.485 2.882,5.342 C3.201,5.126 3.586,5 4,5 L16,5 C16.414,5 16.799,5.126 17.118,5.342 C17.225,5.414 17.324,5.495 17.414,5.586 C17.505,5.676 17.587,5.775 17.658,5.882 C17.874,6.201 18,6.586 18,7 L18,7.78 C17.468,7.301 16.771,7 16,7 L4,7 Z M4,4 C3.229,4 2.532,4.301 2,4.78 L2,4 C2,2.896 2.896,2 4,2 L16,2 C17.104,2 18,2.896 18,4 L18,4.78 C17.468,4.301 16.771,4 16,4 L4,4 Z"
 				}))), "SpamIcon", Le.a),
-				bt = X.a.wrapped($e.a, "UnblockIcon", Le.a),
+				vt = X.a.wrapped($e.a, "UnblockIcon", Le.a),
 				_t = X.a.wrapped(Fe.a, "UpvoteIcon", Le.a),
 				xt = X.a.wrapped(We.a, "DownvoteIcon", Le.a),
 				ft = X.a.wrapped(Ze.a, "ModeratorIcon", Le.a),
@@ -1162,8 +1162,7 @@
 			var It = Object(r.b)(Tt, (e, t) => {
 					let {
 						comment: o,
-						commentsPageKey: n,
-						isLivestreaming: s
+						commentsPageKey: n
 					} = t;
 					return {
 						onReplyClick: () => e(Object(m.ob)({
@@ -1171,7 +1170,7 @@
 							commentsPageKey: n,
 							singleOpen: !0
 						})),
-						onReportClick: () => e(Object(xe.j)(o.id, void 0, s)),
+						onReportClick: () => e(Object(xe.j)(o.id, !1)),
 						onHideTooltip: () => e(Object(fe.i)()),
 						onShowTooltip: t => e(Object(fe.f)({
 							tooltipId: t
@@ -1213,8 +1212,8 @@
 						isMod: h,
 						isSimpleReply: C,
 						onApproveClick: g,
-						onBlockClick: v,
-						onDeleteClick: b,
+						onBlockClick: b,
+						onDeleteClick: v,
 						onEditClick: _,
 						onHideTooltip: x,
 						onRemoveClick: f,
@@ -1300,7 +1299,7 @@
 							hk: "15R6K5"
 						}),
 						trackingNoun: "spam"
-					}, e), s.a.createElement(vt, null)), !z && s.a.createElement(Me, dt({
+					}, e), s.a.createElement(bt, null)), !z && s.a.createElement(Me, dt({
 						onClick: T,
 						tooltipId: R,
 						tooltipText: Z.fbt._("Report", null, {
@@ -1309,7 +1308,6 @@
 						trackingNoun: "report"
 					}, e), s.a.createElement(pt, null)), S && s.a.createElement(De.a, {
 						commentId: t.id,
-						useLiveStreamingFlow: u,
 						overlayCustomStyles: De.b,
 						postId: t.postId,
 						withOverlay: !0
@@ -1330,7 +1328,7 @@
 						}),
 						trackingNoun: t.bannedBy === i.k ? "confirm_remove" : "remove"
 					}, X), s.a.createElement(gt, null)) : z && s.a.createElement(Me, dt({
-						onClick: b,
+						onClick: v,
 						tooltipId: c,
 						tooltipText: Z.fbt._("Delete", null, {
 							hk: "48iIX1"
@@ -1353,7 +1351,7 @@
 						toggleModal: H,
 						withOverlay: !0
 					}), !u && s.a.createElement(Me, dt({
-						onClick: () => m ? w() : v(),
+						onClick: () => m ? w() : b(),
 						tooltipId: A,
 						tooltipText: m ? Z.fbt._("Unblock User", null, {
 							hk: "26F2c9"
@@ -1361,9 +1359,9 @@
 							hk: "1XKY2A"
 						}),
 						trackingNoun: "sitewide_".concat(m ? "unblock" : "block")
-					}, X), m ? s.a.createElement(bt, null) : s.a.createElement(mt, null))), !u && s.a.createElement(Ae, dt({}, e, {
+					}, X), m ? s.a.createElement(vt, null) : s.a.createElement(mt, null))), !u && s.a.createElement(Ae, dt({}, e, {
 						tooltipId: n,
-						tooltipText: Object(be.a)(t.created),
+						tooltipText: Object(ve.a)(t.created),
 						timestampUpdateTrigger: K
 					}), Object(l.d)(t.created)))
 				})),
@@ -1556,15 +1554,15 @@
 						sendEvent: h,
 						targetComment: C,
 						timestampUpdateTrigger: g,
-						addToRefList: v,
-						onReplyClick: b
+						addToRefList: b,
+						onReplyClick: v
 					} = this.props, {
 						isCollapsed: _,
 						isExpanded: x,
 						isTruncated: f
 					} = this.state;
 					if (!o) return null;
-					i && J()(() => this.elemRef.current && this.elemRef.current.focus()), J()(() => this.elemRef && this.elemRef.current && v && v(this.elemRef));
+					i && J()(() => this.elemRef.current && this.elemRef.current.focus()), J()(() => this.elemRef && this.elemRef.current && b && b(this.elemRef));
 					const k = !c && !o.isDeleted,
 						E = !!e,
 						T = Object(Q.a)({
@@ -1574,7 +1572,7 @@
 							[Zt.a.HighlightTarget]: C,
 							[Zt.a.LivestreamingCommentWrapper]: d
 						});
-					return _ ? s.a.createElement(ve, {
+					return _ ? s.a.createElement(be, {
 						commentCount: 1,
 						onClick: this.expandCollapsedComment
 					}) : s.a.createElement("div", {
@@ -1611,7 +1609,7 @@
 						userId: o.authorId
 					})), o.parentId && s.a.createElement(eo, {
 						commentId: o.parentId,
-						onReplyClick: b,
+						onReplyClick: v,
 						isLivestreaming: d
 					}), d && s.a.createElement("span", {
 						className: Zt.a.livestreamingTimeStamp
@@ -1684,8 +1682,8 @@
 					}
 					return o
 				};
-			const vo = X.a.div("ButtonWrapper", Co.a),
-				bo = e => {
+			const bo = X.a.div("ButtonWrapper", Co.a),
+				vo = e => {
 					let {
 						top: t
 					} = e;
@@ -1711,9 +1709,9 @@
 							[Co.a.LivestreamingWrapper]: o,
 							[Co.a.loading]: n
 						})
-					}, !n && a.isPrevLoading && !o && s.a.createElement(bo, {
+					}, !n && a.isPrevLoading && !o && s.a.createElement(vo, {
 						top: !0
-					}), a.children, !n && a.isNextLoading && !o && s.a.createElement(bo, null))
+					}), a.children, !n && a.isNextLoading && !o && s.a.createElement(vo, null))
 				};
 			class xo extends s.a.Component {
 				constructor(e) {
@@ -1885,7 +1883,7 @@
 						key: "nextActiveCommentsSection",
 						ref: this._refNextActiveComments,
 						className: Co.a.ScrollerSection
-					}, this.state.chunks[this.state.activeChunkIndex + 1])), s.a.createElement(vo, null, s.a.createElement(uo.f, {
+					}, this.state.chunks[this.state.activeChunkIndex + 1])), s.a.createElement(bo, null, s.a.createElement(uo.f, {
 						className: o,
 						onClick: () => this.scrollToLastBottomChunk()
 					}, this.state.newCommentsCount, " ", Z.fbt._({
@@ -2060,7 +2058,7 @@
 						loadMore: this.loadMoreComments,
 						hasMoreComments: !!this.props.moreCommentsLink,
 						targetCommentIndex: h
-					}, t.map(t => To(e, u, t) ? s.a.createElement(ve, {
+					}, t.map(t => To(e, u, t) ? s.a.createElement(be, {
 						commentCount: 1,
 						key: "scroll-node-".concat(t.id),
 						onClick: () => this.expandComment(t.id)
@@ -2131,7 +2129,7 @@
 				h = o("./src/reddit/components/RichTextJsonChatReply/index.m.less"),
 				C = o.n(h);
 			const g = o("./src/lib/lessComponent.tsx").a.div("Container", C.a),
-				v = {
+				b = {
 					[l.a]: "<animated image>",
 					[l.b]: "<quote>",
 					[l.c]: "<code block>",
@@ -2149,7 +2147,7 @@
 				if (-1 !== c)
 					for (let s = c; s <= h; s++) {
 						const e = n[s],
-							t = e && v[e.e];
+							t = e && b[e.e];
 						switch (e.e) {
 							case l.l:
 								break;
@@ -2212,9 +2210,9 @@
 				h = o("./src/reddit/selectors/activeModalId.ts"),
 				C = o("./src/higherOrderComponents/asModal/index.tsx"),
 				g = o("./src/reddit/controls/Button/index.tsx"),
-				v = o("./src/reddit/layout/row/Inline/index.tsx"),
-				b = o("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				_ = o.n(b);
+				b = o("./src/reddit/layout/row/Inline/index.tsx"),
+				v = o("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				_ = o.n(v);
 			var x = Object(C.a)(e => {
 					const {
 						children: t,
@@ -2222,11 +2220,11 @@
 					} = e;
 					return l.a.createElement("div", {
 						className: _.a.wrapper
-					}, l.a.createElement(v.a, {
+					}, l.a.createElement(b.a, {
 						className: _.a.titleRow
 					}, o), l.a.createElement("div", {
 						className: _.a.detailsContainer
-					}, t), l.a.createElement(v.a, {
+					}, t), l.a.createElement(b.a, {
 						className: _.a.buttonRow
 					}, l.a.createElement(g.f, {
 						className: _.a.confirmButton,
@@ -2569,4 +2567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.624800c594683a934951.js.map
+//# sourceMappingURL=ChatPost.70b76a8ec150768f5005.js.map

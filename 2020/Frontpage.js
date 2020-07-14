@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0f0628ed9952b63c784e.js
-// Retrieved at 7/14/2020, 6:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.22a4a8b980b23c2feeb5.js
+// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1690,7 +1690,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							r = M(n, c.b.ENDED) ? c.b.ENDED : n,
+							r = M(n, c.a.ENDED) ? c.a.ENDED : n,
 							o = s.stream.vod_accessible;
 						return r === n && !0 === o ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, s, {
@@ -1705,7 +1705,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							r = M(n, c.b.ENDED) ? c.b.ENDED : n,
+							r = M(n, c.a.ENDED) ? c.a.ENDED : n,
 							o = s.stream.vod_accessible;
 						return r === n && !1 === o ? e : Object.assign({}, e, {
 							[t]: Object.assign({}, s, {
@@ -1737,11 +1737,11 @@
 							l = new Set([...n, ...r]);
 						return d.filter(e => {
 							const t = s[e];
-							return !l.has(e) && !t.post.isHidden && t.stream.state !== c.b.KILLED && t.stream.state !== c.b.PURGED
+							return !l.has(e) && !t.post.isHidden && t.stream.state !== c.a.KILLED && t.stream.state !== c.a.PURGED
 						})
 					}
 					const d = new Set([...n, ...r]);
-					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== o.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== c.b.KILLED && e.stream.state !== c.b.PURGED).map(e => e.post.id)
+					return Object.keys(s).filter(e => !d.has(e)).map(e => s[e]).filter(e => e.rank !== o.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== c.a.KILLED && e.stream.state !== c.a.PURGED).map(e => e.post.id)
 				}),
 				P = Object(n.a)((e, t) => {
 					let {
@@ -1765,7 +1765,7 @@
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				C = Object(n.a)(x, P, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === c.b.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				C = Object(n.a)(x, P, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === c.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				N = Object(n.a)(f, (e, t) => {
 					let {
 						related: s,
@@ -1799,7 +1799,7 @@
 				}, g, (e, t, s, n) => {
 					if (!s.length) return;
 					const r = s.map(e => t[e]).filter(t => t && t.post.id !== e),
-						o = r.find(e => e.stream.state === c.b.IS_LIVE);
+						o = r.find(e => e.stream.state === c.a.IS_LIVE);
 					if (o) return o.post.id;
 					const i = r.find(e => {
 						if (!e.stream.vod_accessible) return !1;
@@ -1848,13 +1848,13 @@
 
 			function M(e, t) {
 				const s = {
-					[c.b.NOT_STARTED]: 0,
-					[c.b.PUBLISHED]: 1,
-					[c.b.IS_LIVE]: 2,
-					[c.b.DISCONNECTED]: 2,
-					[c.b.ENDED]: 3,
-					[c.b.KILLED]: 4,
-					[c.b.PURGED]: 4
+					[c.a.NOT_STARTED]: 0,
+					[c.a.PUBLISHED]: 1,
+					[c.a.IS_LIVE]: 2,
+					[c.a.DISCONNECTED]: 2,
+					[c.a.ENDED]: 3,
+					[c.a.KILLED]: 4,
+					[c.a.PURGED]: 4
 				};
 				return s[t] >= s[e]
 			}
@@ -1868,7 +1868,7 @@
 					const n = e && t[e];
 					if (!n) return B.UNAVAILABLE;
 					const r = n.stream.state;
-					return r === c.b.IS_LIVE || r === c.b.DISCONNECTED ? B.LIVE : r === c.b.ENDED && n.stream.vod_accessible ? B.VOD : B.UNAVAILABLE
+					return r === c.a.IS_LIVE || r === c.a.DISCONNECTED ? B.LIVE : r === c.a.ENDED && n.stream.vod_accessible ? B.VOD : B.UNAVAILABLE
 				}),
 				K = Object(n.a)(D, H, h.b, l.b, l.o, (e, t, s, n, r) => s ? n : e ? t === B.LIVE || t === B.VOD ? e.stream.hls_url : r : void 0),
 				W = Object(n.a)(D, H, V, (e, t, s) => e ? t === B.LIVE ? e.broadcast_time : t === B.VOD && s < e.broadcast_time ? s : 0 : 0)
@@ -1914,4 +1914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.0f0628ed9952b63c784e.js.map
+//# sourceMappingURL=Frontpage.22a4a8b980b23c2feeb5.js.map
