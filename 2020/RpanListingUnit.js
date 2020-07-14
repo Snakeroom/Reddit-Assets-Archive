@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.24305919709346ab7289.js
-// Retrieved at 7/14/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.3589289780250da7b378.js
+// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -25,16 +25,16 @@
 			const u = Object(n.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: l.wb
+					experimentName: l.yb
 				});
-				return Object(l.rc)(t) ? void 0 : t
+				return Object(l.tc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: l.xb
+					experimentName: l.zb
 				});
-				return Object(l.rc)(t) ? void 0 : t
-			}, (e, t) => e === l.yb.Enabled && t === l.yb.Enabled);
+				return Object(l.tc)(t) ? void 0 : t
+			}, (e, t) => e === l.Ab.Enabled && t === l.Ab.Enabled);
 			var h = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -71,7 +71,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var x = function(e, t) {
+			var g = function(e, t) {
 				var s = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (s[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -80,9 +80,9 @@
 				}
 				return s
 			};
-			const g = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
+			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "fdb4411-production"
+					SENTRY_RELEASE_VERSION: "3c83607-production"
 				}),
 				T = {
 					anonymousUserId: "t2_anonymous",
@@ -141,7 +141,7 @@
 							{
 								forwardedRef: s
 							} = t,
-							r = x(t, ["forwardedRef"]);
+							r = g(t, ["forwardedRef"]);
 						return i.a.createElement(e, y({}, r, {
 							onDashCreate: this.handleDashCreate,
 							onDashDestroy: this.handleDashDestroy,
@@ -252,7 +252,7 @@
 						}
 					}
 				}
-				I.displayName = g(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = l, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = m, I.LOCAL_STORAGE_SALT_KEY = h, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, I.PLAYER_NAME = S, I.PLAYER_VERSION = O, I.RESPECT_DO_NOT_TRACK = _, I.SALT_LENGTH = C, I.SALT_TIME_TO_LIVE = R, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = w;
+				I.displayName = x(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = l, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = m, I.LOCAL_STORAGE_SALT_KEY = h, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = v, I.PLAYER_NAME = S, I.PLAYER_VERSION = O, I.RESPECT_DO_NOT_TRACK = _, I.SALT_LENGTH = C, I.SALT_TIME_TO_LIVE = R, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = w;
 				const N = Object(r.forwardRef)((e, t) => i.a.createElement(I, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -591,7 +591,7 @@
 			})), s.d(t, "b", (function() {
 				return y
 			})), s.d(t, "c", (function() {
-				return x
+				return g
 			})), s.d(t, "d", (function() {
 				return O
 			})), s.d(t, "e", (function() {
@@ -724,7 +724,7 @@
 					}
 				}
 			}));
-			var x = Object(a.b)(() => Object(n.c)({
+			var g = Object(a.b)(() => Object(n.c)({
 					subreddit: f.R
 				}))(e => i.a.createElement(p, {
 					className: e.className,
@@ -738,12 +738,12 @@
 						} : {}
 					}
 				})),
-				g = s("./src/reddit/selectors/posts.ts");
+				x = s("./src/reddit/selectors/posts.ts");
 			var O = Object(a.b)(() => Object(n.c)({
-				post: g.O,
-				subredditOrProfile: g.bb,
+				post: x.O,
+				subredditOrProfile: x.bb,
 				isModerator: (e, t) => {
-					const s = Object(g.bb)(e, t);
+					const s = Object(x.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => i.a.createElement(p, {
@@ -777,11 +777,11 @@
 				}
 			}));
 			var T = Object(a.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(g.bb)(e, {
+				subredditOrProfile: (e, t) => Object(x.bb)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(g.bb)(e, {
+					const s = Object(x.bb)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -803,10 +803,10 @@
 				}
 			}));
 			var _ = Object(a.b)(() => Object(n.c)({
-				post: g.O,
-				subredditOrProfile: g.bb,
+				post: x.O,
+				subredditOrProfile: x.bb,
 				isModerator: (e, t) => {
-					const s = Object(g.bb)(e, t);
+					const s = Object(x.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => i.a.createElement(p, {
@@ -913,8 +913,8 @@
 				S = s("./src/reddit/helpers/trackers/rpan.ts"),
 				E = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				y = s("./src/reddit/models/Vote/index.ts"),
-				x = s("./src/reddit/selectors/platform.ts"),
-				g = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				g = s("./src/reddit/selectors/platform.ts"),
+				x = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				O = s("./src/reddit/selectors/user.ts"),
 				T = s("./src/telemetry/index.ts"),
 				_ = s("./node_modules/uuid/v4.js"),
@@ -945,12 +945,12 @@
 			}), J = Object(a.b)(() => Object(n.c)({
 				autoplay: O.b,
 				isLoggedIn: O.H,
-				isOverlayOpen: x.i,
+				isOverlayOpen: g.i,
 				location: (e, t) => {
 					let {
 						listingName: s
 					} = t;
-					const r = Object(g.l)(e, {
+					const r = Object(x.l)(e, {
 						listingName: s
 					});
 					let i;
@@ -968,11 +968,11 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(g.l)(e, {
+					return Object(x.l)(e, {
 						listingName: s
 					})
 				},
-				totalLiveWatchers: g.m
+				totalLiveWatchers: x.m
 			}), (e, t) => ({
 				onHideRpanUnit: () => e(Object(l.D)(t.listingName)),
 				openOverlay: t => e(Object(f.a)(t)),
@@ -1583,4 +1583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.24305919709346ab7289.js.map
+//# sourceMappingURL=RpanListingUnit.3589289780250da7b378.js.map

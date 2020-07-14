@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f3f5553c0c8904ec49d4.js
-// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b708975996a1a76a3159.js
+// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1547,7 +1547,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				xe = Object(u.qc)(p.f),
+				xe = Object(u.sc)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: xe
@@ -1648,16 +1648,16 @@
 
 			function a(e) {
 				const t = o(e);
-				return t === s.ub.Rotate || t === s.ub.RotateAll
+				return t === s.wb.Rotate || t === s.wb.RotateAll
 			}
 
 			function o(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.tb
+					experimentName: s.vb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.f3f5553c0c8904ec49d4.js.map
+//# sourceMappingURL=SubredditLeaderboard.b708975996a1a76a3159.js.map

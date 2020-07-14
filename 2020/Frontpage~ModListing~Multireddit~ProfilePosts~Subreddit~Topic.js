@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.e2f4ebdc6600878e5ccb.js
-// Retrieved at 7/9/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.5d243464dd83e7815d2f.js
+// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -831,8 +831,8 @@
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: e => Object(f.c)(e, {
 						experimentEligibilitySelector: f.a,
-						experimentName: y.zb
-					}) === y.Ab.Enabled
+						experimentName: y.Bb
+					}) === y.Cb.Enabled
 				},
 				j = Object(n.c)(S),
 				_ = (e, t) => {
@@ -864,7 +864,7 @@
 					}
 				},
 				k = Object(o.b)(j, _, (e, t, s) => Object.assign({}, e, t, s, {
-					postClickEvent: h.f,
+					postClickEvent: (e, t, o) => Object(h.f)(e, t, o, s.listingKey, s.hostPostId, s.listingBelowVariant),
 					postComponentForLayout: e => Object(u.b)(Object.assign({}, e))
 				}));
 			t.a = e => Object(m.c)(O(k(e)))
@@ -1301,4 +1301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.e2f4ebdc6600878e5ccb.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.5d243464dd83e7815d2f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.25e99f8ea932de1b12a6.js
-// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.ebda896d60128a4cf2e1.js
+// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1336,11 +1336,13 @@
 						this.props.addPostToCollection(e.id, this.props.post.id).then(() => this.onToggleCurrentModal())
 					}, this.sendEventWithName = e => {
 						const {
-							isOverlay: t,
-							post: s,
-							sendEvent: n
+							hostPostId: t,
+							isOverlay: s,
+							listingKey: n,
+							post: o,
+							sendEvent: r
 						} = this.props;
-						n(Object(X.f)(s.id, e, t ? "post_detail" : "post"))
+						r(Object(X.f)(o.id, e, s ? "post_detail" : "post", n, t))
 					}, this.onSaveClick = () => {
 						this.props.onToggleSave(), this.sendEventWithName(this.props.post.saved ? "unsave" : "save")
 					}, this.onHideClick = () => {
@@ -4055,4 +4057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.25e99f8ea932de1b12a6.js.map
+//# sourceMappingURL=ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.ebda896d60128a4cf2e1.js.map

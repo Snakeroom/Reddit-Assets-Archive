@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.62c1edd87ff82b13a9ae.js
-// Retrieved at 7/14/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b68eef8cb93cf3abacd8.js
+// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -149,7 +149,7 @@
 				B = r.a.video("PreviewVideo", T.a),
 				_ = r.a.div("PreviewTime", T.a),
 				N = r.a.div("VideoSeekbar", T.a);
-			class k extends o.a.PureComponent {
+			class O extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.setParentRect = e => this.parentRect = e, this.setPreviewThumbnailContainer = e => this.previewThumbnailContainer = e, this.setPreviewThumbnailVideo = e => this.previewThumbnailVideo = e, this.setPreviewThumbnailTime = e => this.previewThumbnailTime = e, this.setProgressBar = e => this.progressBar = e, this.handleMouseDown = e => {
 						if (0 === e.button && this.parentRect) {
@@ -310,7 +310,7 @@
 					})))
 				}
 			}
-			var O = s("./node_modules/react-router-dom/esm/react-router-dom.js");
+			var k = s("./node_modules/react-router-dom/esm/react-router-dom.js");
 			var R = e => o.a.createElement("svg", {
 					xmlns: "http://www.w3.org/2000/svg",
 					width: "16px",
@@ -333,7 +333,7 @@
 			var A = e => "string" == typeof e.postUrl ? o.a.createElement("a", {
 					href: e.postUrl,
 					className: I.a.button
-				}, o.a.createElement(H, null)) : o.a.createElement(O.a, {
+				}, o.a.createElement(H, null)) : o.a.createElement(k.a, {
 					to: e.postUrl,
 					className: I.a.button
 				}, o.a.createElement(H, null)),
@@ -532,7 +532,7 @@
 						"aria-label": V,
 						className: Y.a.button,
 						onClick: this.props.playPauseVideo
-					}, this.props.isPaused ? o.a.createElement(u, null) : o.a.createElement(p, null))), o.a.createElement(ee, null, E(b, C)), o.a.createElement(ie, null, o.a.createElement(k, {
+					}, this.props.isPaused ? o.a.createElement(u, null) : o.a.createElement(p, null))), o.a.createElement(ee, null, E(b, C)), o.a.createElement(ie, null, o.a.createElement(O, {
 						active: h === l.a.SeekBar,
 						bufferedRanges: this.state.bufferedRanges,
 						controlBarIsHidden: this.props.hideControlBar,
@@ -855,22 +855,22 @@
 				B = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				_ = s("./src/reddit/selectors/experiments/utils.ts");
 			const N = Object(d.a)(e => Object(B.c)(e, {
-					experimentName: V.kc,
+					experimentName: V.mc,
 					experimentEligibilitySelector: B.a
 				}), _.a),
-				k = Object(d.a)(N, (function(e) {
+				O = Object(d.a)(N, (function(e) {
 					switch (e) {
-						case V.nc.BufferTwoSeconds:
+						case V.pc.BufferTwoSeconds:
 							return 2;
-						case V.nc.BufferFiveSeconds:
+						case V.pc.BufferFiveSeconds:
 							return 5;
-						case V.nc.BufferTenSeconds:
+						case V.pc.BufferTenSeconds:
 							return 10;
 						default:
 							return
 					}
 				}));
-			var O = s("./src/reddit/selectors/media.ts"),
+			var k = s("./src/reddit/selectors/media.ts"),
 				R = s("./src/reddit/selectors/platform.ts"),
 				j = s("./src/reddit/selectors/posts.ts"),
 				I = s("./src/reddit/selectors/user.ts"),
@@ -1199,10 +1199,10 @@
 					fill: "#fff",
 					d: "M32.5,23.5c-0.7,0-1.4-0.6-1.4-1.4c0-0.7,0.6-1.4,1.4-1.4s1.4,0.6,1.4,1.4 C33.8,22.8,33.2,23.5,32.5,23.5 M29.8,26.2c-0.7,0-1.4-0.6-1.4-1.4c0-0.7,0.6-1.4,1.4-1.4c0.7,0,1.4,0.6,1.4,1.4 C31.1,25.6,30.5,26.2,29.8,26.2 M27.1,23.5c-0.7,0-1.4-0.6-1.4-1.4c0-0.7,0.6-1.4,1.4-1.4c0.7,0,1.4,0.6,1.4,1.4 C28.4,22.8,27.8,23.5,27.1,23.5 M21.6,23.1H20v1.7c0,0.6-0.5,1-1,1s-1-0.5-1-1v-1.7h-1.7c-0.6,0-1-0.5-1-1c0-0.6,0.5-1,1-1H18 v-1.7c0-0.6,0.5-1,1-1s1,0.5,1,1v1.7h1.7c0.6,0,1,0.5,1,1C22.7,22.7,22.2,23.1,21.6,23.1 M29.8,18c0.7,0,1.4,0.6,1.4,1.4 c0,0.7-0.6,1.4-1.4,1.4c-0.7,0-1.4-0.6-1.4-1.4C28.4,18.6,29,18,29.8,18 M37.3,28.1l-1.7-9.5c-0.4-1.9-2-3.3-4-3.3H17.1 c-2,0-3.6,1.4-4,3.3l-1.7,9.5c-0.2,1.2,0.1,2.4,0.9,3.3c0.8,0.9,1.9,1.5,3.1,1.5h0.2c1.8,0,3.3-1.1,3.9-2.8l0.4-1.3h8.9 l0.4,1.3c0.6,1.7,2.1,2.8,3.9,2.8h0.2c1.2,0,2.3-0.5,3.1-1.5C37.2,30.5,37.5,29.3,37.3,28.1"
 				}))),
-				ke = s("./src/reddit/icons/svgs/VideoSeeMenu/index.m.less"),
-				Oe = s.n(ke);
+				Oe = s("./src/reddit/icons/svgs/VideoSeeMenu/index.m.less"),
+				ke = s.n(Oe);
 			var Re = e => l.a.createElement("svg", {
-					className: Object(u.a)(Oe.a.icon, e.className),
+					className: Object(u.a)(ke.a.icon, e.className),
 					viewBox: "0 0 50 50",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, l.a.createElement("g", {
@@ -1414,16 +1414,16 @@
 					currentUser: I.i,
 					inVideoNewVolumePolicyFeed: L.a,
 					inVideoNewVolumePolicyTheatre: L.b,
-					isMutedPreference: O.a,
+					isMutedPreference: k.a,
 					isOverlayOpen: R.i,
 					loadTimes: H.g,
 					metadata: H.i,
 					mutedInFeed: H.j,
 					postUrl: j.Q,
 					started: H.l,
-					videoBufferTime: k,
+					videoBufferTime: O,
 					videoBufferVariant: N,
-					volume: O.b
+					volume: k.b
 				}), (e, t) => {
 					let {
 						postId: s
@@ -1800,8 +1800,8 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("fdb4411-production", " ").concat(t);
-									return i && (s += " [".concat(V.kc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("3c83607-production", " ").concat(t);
+									return i && (s += " [".concat(V.mc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2227,13 +2227,13 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: a.lc
+					experimentName: a.nc
 				}),
-				r = [a.oc.FeedAndTheatre, a.oc.FeedOnly],
+				r = [a.qc.FeedAndTheatre, a.qc.FeedOnly],
 				l = Object(i.a)(n, e => r.includes(e)),
-				c = [a.oc.FeedAndTheatre, a.oc.TheatreOnly],
+				c = [a.qc.FeedAndTheatre, a.qc.TheatreOnly],
 				d = Object(i.a)(n, e => c.includes(e))
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.62c1edd87ff82b13a9ae.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b68eef8cb93cf3abacd8.js.map

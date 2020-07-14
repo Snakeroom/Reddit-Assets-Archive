@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.a061a71a47b2698deba3.js
-// Retrieved at 7/14/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.d7910fc9e87462bf9d25.js
+// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const m = Object(o.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: c.wb
+					experimentName: c.yb
 				});
-				return Object(c.rc)(t) ? void 0 : t
+				return Object(c.tc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: c.xb
+					experimentName: c.zb
 				});
-				return Object(c.rc)(t) ? void 0 : t
-			}, (e, t) => e === c.yb.Enabled && t === c.yb.Enabled);
+				return Object(c.tc)(t) ? void 0 : t
+			}, (e, t) => e === c.Ab.Enabled && t === c.Ab.Enabled);
 			var h = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -74,7 +74,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "fdb4411-production"
+					SENTRY_RELEASE_VERSION: "3c83607-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -1565,4 +1565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.a061a71a47b2698deba3.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.d7910fc9e87462bf9d25.js.map

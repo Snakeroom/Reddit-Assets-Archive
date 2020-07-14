@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1e301482f4f9a37473cf.js
-// Retrieved at 7/14/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c5c95569ad752662cc1d.js
+// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOv~8a8059b8", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -670,16 +670,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: d.wb
+					experimentName: d.yb
 				});
-				return Object(d.rc)(t) ? void 0 : t
+				return Object(d.tc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: d.xb
+					experimentName: d.zb
 				});
-				return Object(d.rc)(t) ? void 0 : t
-			}, (e, t) => e === d.yb.Enabled && t === d.yb.Enabled);
+				return Object(d.tc)(t) ? void 0 : t
+			}, (e, t) => e === d.Ab.Enabled && t === d.Ab.Enabled);
 			var m = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "fdb4411-production"
+					SENTRY_RELEASE_VERSION: "3c83607-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -32157,4 +32157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.1e301482f4f9a37473cf.js.map
+//# sourceMappingURL=PostCreation.c5c95569ad752662cc1d.js.map

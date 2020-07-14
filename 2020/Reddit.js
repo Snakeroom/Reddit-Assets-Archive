@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c196483292f4a68f7e2b.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b4a66176734f8c3ec061.js
+// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4833,9 +4833,9 @@
 				po = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				bo = s("./src/reddit/selectors/experiments/trending.ts"),
 				ho = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const go = e => Object(Wt.E)(e) || ps.jc.Treatment1 === Object(ho.c)(e, {
+			const go = e => Object(Wt.E)(e) || ps.lc.Treatment1 === Object(ho.c)(e, {
 				experimentEligibilitySelector: ho.a,
-				experimentName: ps.gc
+				experimentName: ps.ic
 			});
 			var fo = s("./src/reddit/selectors/searchResults.ts"),
 				vo = s("./src/reddit/selectors/tooltip.ts"),
@@ -11305,8 +11305,8 @@
 			const ps = {
 					displayDelay: 15,
 					displayOnRoutes: [g.Bb.SUBREDDIT, g.Bb.COMMENTS],
-					experimentName: ms.nb,
-					experimentVariant: ms.qb.On,
+					experimentName: ms.ob,
+					experimentVariant: ms.sb.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -13382,9 +13382,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.ic.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.kc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.fc
+				experimentName: n.hc
 			}))
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, s) {
@@ -13503,4 +13503,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.c196483292f4a68f7e2b.js.map
+//# sourceMappingURL=Reddit.b4a66176734f8c3ec061.js.map
