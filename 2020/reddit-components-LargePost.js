@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.18310d5721759da90472.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.01b10cc474325b4aab4c.js
+// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -817,7 +817,7 @@
 						size: X.b.Large,
 						titleColor: fe && fe.postTitleColor,
 						isOverlay: V
-					}), de.source && !de.isSponsored && !(de.media && Object(h.F)(de.media)) && r.a.createElement(Z.a, {
+					}), de.source && !de.isSponsored && !(de.media && Object(h.G)(de.media)) && r.a.createElement(Z.a, {
 						className: pe.a.sourceLink,
 						post: de
 					}), r.a.createElement("div", {
@@ -1207,7 +1207,7 @@
 					className: g.a.OutboundLink,
 					isSponsored: N.isSponsored,
 					postId: N.id,
-					href: Object(v.C)(e.post),
+					href: Object(v.D)(e.post),
 					source: N.source
 				}, r.a.createElement(h.a, {
 					className: g.a.outboundLinkIcon
@@ -1350,4 +1350,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.18310d5721759da90472.js.map
+//# sourceMappingURL=reddit-components-LargePost.01b10cc474325b4aab4c.js.map

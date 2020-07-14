@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5362a1ae4ff4c3be337f.js
-// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.13f4f481ae7d5a0d6dbc.js
+// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -52,8 +52,8 @@
 				let o = "";
 				if (s) {
 					if (t && t.displayText) return t.displayText.length > 30 ? t.displayText.substring(0, 30) + "..." : t.displayText;
-					o = r || Object(n.C)(e)
-				} else o = Object(n.C)(e);
+					o = r || Object(n.D)(e)
+				} else o = Object(n.D)(e);
 				const a = i.a.parse(o),
 					c = a.path || "",
 					l = c.length > 7 ? c.substring(0, 7) + "..." : c;
@@ -377,7 +377,7 @@
 						});
 						if (n) return n.length
 					},
-					isAudible: e => !Object(p.a)(e) && !!Object(p.b)(e),
+					isAudible: e => !Object(p.b)(e) && !!Object(p.c)(e),
 					isPlaying: (e, t) => {
 						let {
 							post: s
@@ -913,7 +913,7 @@
 							return Object(o.j)(.1, Object(_.a)(i()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				U = p.a.wrapped(e => {
+				G = p.a.wrapped(e => {
 					const t = Z(e),
 						s = c.a.createElement("span", {
 							className: e.className,
@@ -991,7 +991,7 @@
 						});
 					case E.f.Nsfw:
 					case E.f.Spoiler:
-						return c.a.createElement(U, {
+						return c.a.createElement(G, {
 							className: t,
 							text: r.text,
 							type: r.type
@@ -1998,11 +1998,11 @@
 						})
 					}))
 				},
-				U = Object(p.t)({
+				G = Object(p.t)({
 					isCommentPermalink: p.v,
 					pageLayer: e => e
 				}),
-				G = Object(c.c)({
+				U = Object(c.c)({
 					flairPosition: (e, t) => {
 						let {
 							pageLayer: s
@@ -2029,7 +2029,7 @@
 					},
 					shouldOpenPostInNewTab: M.U
 				}),
-				Q = Object(o.b)(G),
+				Q = Object(o.b)(U),
 				K = e => {
 					const {
 						post: t,
@@ -2046,7 +2046,7 @@
 						postId: t.id,
 						source: t.source
 					}, i.a.createElement(J, e)); {
-						const r = t.media && Object(O.F)(t.media) ? Object(v.b)(t.id, s) : t.permalink,
+						const r = t.media && Object(O.G)(t.media) ? Object(v.b)(t.id, s) : t.permalink,
 							o = e.isCommentPermalink ? Object(g.b)(r) : Object(f.a)(r);
 						return i.a.createElement(Z, {
 							disableVisited: e.disableVisited,
@@ -2087,11 +2087,11 @@
 						post: s
 					} = e, {
 						isSponsored: n
-					} = s, r = !t && !e.isCrosspost && e.size !== B.Large && !s.isSponsored && !(s.media && Object(O.F)(s.media)) && (s.source || s.media && (s.media.type === O.o.GIFVIDEO || s.media.type === O.o.IMAGE || s.media.type === O.o.EMBED));
+					} = s, r = !t && !e.isCrosspost && e.size !== B.Large && !s.isSponsored && !(s.media && Object(O.G)(s.media)) && (s.source || s.media && (s.media.type === O.o.GIFVIDEO || s.media.type === O.o.IMAGE || s.media.type === O.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (r) return i.a.createElement(h.a, {
 							className: e.outboundLinkClassName,
-							href: Object(O.C)(s),
+							href: Object(O.D)(s),
 							isSponsored: n,
 							postId: s.id,
 							source: s.source
@@ -2158,7 +2158,7 @@
 					}), this.getDynamicStyleTags())
 				}
 			}
-			t.c = u.a.wrapped(U(Q(Object(d.a)(Object(m.c)(X)))), "Component", D.a)
+			t.c = u.a.wrapped(G(Q(Object(d.a)(Object(m.c)(X)))), "Component", D.a)
 		},
 		"./src/reddit/components/Thumbnail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2361,11 +2361,11 @@
 						placeholderImage: x,
 						redditStyle: b,
 						theme: v
-					}), C = Z(e), w = G(p, t, O, y, g, v, C, l, f, h, b, d, u, m, r), k = Object(T.C)(p);
+					}), C = Z(e), w = U(p, t, O, y, g, v, C, l, f, h, b, d, u, m, r), k = Object(T.D)(p);
 					return Object(n.a)(k) && !h && k.indexOf("redditmedia") < 0 ? i.a.createElement("div", {
 						className: Object(o.a)(F.a.container, j ? F.a.usePreview : "", s)
 					}, i.a.createElement(_.a, {
-						href: Object(T.C)(p),
+						href: Object(T.D)(p),
 						isSponsored: p.isSponsored,
 						postId: p.id,
 						source: p.source
@@ -2386,13 +2386,13 @@
 						media: o,
 						thumbnail: a
 					} = t || s;
-					return r && i ? i.url : U(o) ? o.scrubberThumbSource : a.url
+					return r && i ? i.url : G(o) ? o.scrubberThumbSource : a.url
 				},
-				U = e => !!e && e.type === T.o.LIVEVIDEO,
-				G = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
+				G = e => !!e && e.type === T.o.LIVEVIDEO,
+				U = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
 					const v = e.source && !e.isSponsored || !1;
 					if (Object(n.a)(d)) {
-						const s = U(e.media),
+						const s = G(e.media),
 							n = s ? {
 								errorSrc: l.S
 							} : {},
@@ -3982,4 +3982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5362a1ae4ff4c3be337f.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.13f4f481ae7d5a0d6dbc.js.map

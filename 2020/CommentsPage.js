@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a051346f3ddaf07019a6.js
-// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.8e1e1ec3f0bc36bbf0c9.js
+// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2811,17 +2811,8 @@
 				j = s("./src/reddit/models/PostDraft/index.ts"),
 				w = s("./src/lib/makeDraftKey/index.ts"),
 				P = s("./src/lib/objectSelector/index.ts"),
-				I = s("./src/reddit/components/CommentCreation/Loader.tsx");
-			var S = function(e, t, s) {
-					Object(r.useEffect)(() => {
-						const n = e && e.current;
-						if (!n || "undefined" == typeof IntersectionObserver) return;
-						const o = new IntersectionObserver(t, s);
-						return o.observe(n), () => {
-							o.unobserve(n)
-						}
-					}, [e, t, s])
-				},
+				I = s("./src/reddit/components/CommentCreation/Loader.tsx"),
+				S = s("./src/reddit/hooks/useIntersectionObserver.ts"),
 				T = s("./src/reddit/components/Comments/Comment/BubbleHighlight/index.m.less"),
 				N = s.n(T);
 			var M = i.a.memo(e => {
@@ -2837,7 +2828,7 @@
 					}, []), d = Object(r.useMemo)(() => ({
 						threshold: [.75, .001]
 					}), []);
-					return S(o, a, d), i.a.createElement("div", {
+					return Object(S.a)(o, a, d), i.a.createElement("div", {
 						"aria-role": "presentation",
 						className: N.a.bubbleHighlightContainer
 					}, i.a.createElement("div", {
@@ -7529,14 +7520,37 @@
 				o = s.n(n),
 				r = s("./node_modules/reselect/es/index.js"),
 				i = s("./src/reddit/components/AdViewability/index.tsx"),
-				a = s("./src/reddit/connectors/PostViewable/index.ts"),
-				d = s("./src/reddit/models/Media/index.ts"),
-				c = s("./src/reddit/selectors/video.ts"),
-				l = s("./src/lib/classNames/index.ts"),
-				m = s("./src/higherOrderComponents/withClickTracking.tsx"),
-				p = s("./src/reddit/components/PostContainer/index.m.less"),
-				u = s.n(p);
-			const h = Object(r.c)({
+				a = s("./src/reddit/helpers/trackers/gallery.ts"),
+				d = s("./src/reddit/hooks/useIntersectionObserver.ts"),
+				c = s("./src/reddit/hooks/useTracking.ts");
+			var l = o.a.memo(e => {
+					const t = Object(n.useRef)(null),
+						s = Object(c.a)(),
+						r = Object(n.useCallback)(t => {
+							t.forEach(t => {
+								const {
+									intersectionRatio: n
+								} = t;
+								n >= .5 && s(a.d(e.postId))
+							})
+						}, [s, e.postId]),
+						i = Object(n.useMemo)(() => ({
+							threshold: [.5]
+						}), []);
+					return Object(d.a)(t, r, i), o.a.createElement("div", {
+						"aria-role": "presentation"
+					}, o.a.createElement("div", {
+						ref: t
+					}, e.children))
+				}),
+				m = s("./src/reddit/connectors/PostViewable/index.ts"),
+				p = s("./src/reddit/models/Media/index.ts"),
+				u = s("./src/reddit/selectors/video.ts"),
+				h = s("./src/lib/classNames/index.ts"),
+				b = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				x = s("./src/reddit/components/PostContainer/index.m.less"),
+				g = s.n(x);
+			const f = Object(r.c)({
 					clickTrackingId: (e, t) => {
 						let {
 							post: s
@@ -7547,7 +7561,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(c.a)(e, {
+						return Object(u.a)(e, {
 							postId: s.id
 						})
 					},
@@ -7555,7 +7569,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(c.f)(e, {
+						return Object(u.f)(e, {
 							postId: s.id
 						})
 					},
@@ -7563,18 +7577,18 @@
 						let {
 							post: s
 						} = t;
-						return Object(c.c)(e, {
+						return Object(u.c)(e, {
 							postId: s.id
 						})
 					}
 				}),
-				b = Object(a.a)(h),
-				x = e => {
-					const t = Object(m.d)(e.target, e.currentTarget),
-						s = Object(m.b)(e.target, e.currentTarget, m.a.buttons);
+				v = Object(m.a)(f),
+				C = e => {
+					const t = Object(b.d)(e.target, e.currentTarget),
+						s = Object(b.b)(e.target, e.currentTarget, b.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class g extends o.a.Component {
+			class O extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -7586,33 +7600,35 @@
 						makePostContainerId: n,
 						post: r,
 						onClick: a,
-						onPostContentClick: c,
-						style: m,
-						ref: p
-					} = this.props, h = o.a.createElement("div", {
-						style: m,
-						ref: p,
+						onPostContentClick: d,
+						style: c,
+						ref: m
+					} = this.props, u = o.a.createElement("div", {
+						style: c,
+						ref: m,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: t => {
-							!this.cancelClick && t.button < 2 && (e(() => a && a(t, r))(t), c && x(t) && c(t, r))
+							!this.cancelClick && t.button < 2 && (e(() => a && a(t, r))(t), d && C(t) && d(t, r))
 						},
-						className: Object(l.a)(u.a.WrappedPost, s, "Post ".concat(r.id), {
+						className: Object(h.a)(g.a.WrappedPost, s, "Post ".concat(r.id), {
 							promotedlink: r.isSponsored
 						}),
 						id: n ? n(r.id) : r.id,
 						tabIndex: -1
-					}, t), b = !!r.media && r.media.type === d.o.VIDEO;
+					}, t), b = !!r.media && r.media.type === p.o.VIDEO;
 					return r.isSponsored || b ? o.a.createElement(i.a, {
 						post: r,
 						trackDisplay: !0
-					}, h) : h
+					}, u) : r.media && Object(p.E)(r.media) ? o.a.createElement(l, {
+						postId: r.id
+					}, u) : u
 				}
 			}
-			t.a = b(Object(m.c)(g))
+			t.a = v(Object(b.c)(O))
 		},
 		"./src/reddit/components/PostContent/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -8208,7 +8224,7 @@
 					}),
 					ue = w.removedByCategory === S.g.AuthorDeleted,
 					he = n && (n.displayText === w.author || n.username === w.author),
-					be = !ue && (he || a || !(w.removedByCategory && w.media && (Object(I.I)(w.media) || Object(I.G)(w.media)))),
+					be = !ue && (he || a || !(w.removedByCategory && w.media && (Object(I.J)(w.media) || Object(I.H)(w.media)))),
 					xe = w.removedByCategory === S.g.Reddit && Object(l.e)(w.created) > 24,
 					ge = w.removedByCategory && w.removedByCategory !== S.g.Reddit || xe,
 					fe = o.a.createElement(Me, {
@@ -9924,7 +9940,7 @@
 					className: C.a.OutboundLink,
 					isSponsored: T.isSponsored,
 					postId: T.id,
-					href: Object(g.C)(e.post),
+					href: Object(g.D)(e.post),
 					source: T.source
 				}, o.a.createElement(x.a, {
 					className: C.a.outboundLinkIcon
@@ -10498,7 +10514,7 @@
 					let n = "";
 					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != s && (n += "-".concat(s)), n
 				},
-				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(C.E)(e.media) && e.media.content)),
+				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(C.F)(e.media) && e.media.content)),
 				R = e => !!e && e.isBlank,
 				F = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
@@ -13788,6 +13804,50 @@
 				largeAndMediumActiveStyles: "_1qftyZQ2bhqP62lbPjoGAh"
 			}
 		},
+		"./src/reddit/helpers/trackers/gallery.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "d", (function() {
+				return a
+			})), s.d(t, "c", (function() {
+				return d
+			})), s.d(t, "b", (function() {
+				return c
+			})), s.d(t, "a", (function() {
+				return l
+			}));
+			var n = s("./src/reddit/constants/tracking.ts"),
+				o = s("./src/reddit/helpers/parseUrl.ts"),
+				r = s("./src/reddit/selectors/telemetry.ts");
+			const i = (e, t, s) => Object.assign({
+					gallery: r.gallery(e, t, s),
+					post: r.post(e, t)
+				}, r.defaults(e)),
+				a = (e, t) => s => Object.assign({}, i(s, e, t), {
+					action: n.c.VIEW,
+					noun: "media",
+					source: "gallery",
+					media: r.media(s, e)
+				}),
+				d = (e, t, s) => a => {
+					const d = Object(o.a)(t);
+					return Object.assign({}, i(a, e, s), {
+						action: n.c.CLICK,
+						noun: "outbound_url",
+						source: "gallery",
+						media: Object.assign({}, r.media(a, e), {
+							outboundUrl: t,
+							outboundDomain: d ? d.hostname : void 0
+						})
+					})
+				},
+				c = (e, t) => m(e, !0, t),
+				l = (e, t) => m(e, !1, t),
+				m = (e, t, s) => o => Object.assign({}, i(o, e, s), {
+					action: n.c.CLICK,
+					noun: t ? "forward" : "backward",
+					source: "gallery"
+				})
+		},
 		"./src/reddit/helpers/trackers/otherDiscussions.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -14201,6 +14261,20 @@
 						settingValue: E[e]
 					})
 				})
+		},
+		"./src/reddit/hooks/useIntersectionObserver.ts": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js");
+			t.a = function(e, t, s) {
+				Object(n.useEffect)(() => {
+					const n = e && e.current;
+					if (!n || "undefined" == typeof IntersectionObserver) return;
+					const o = new IntersectionObserver(t, s);
+					return o.observe(n), () => {
+						o.unobserve(n)
+					}
+				}, [e, t, s])
+			}
 		},
 		"./src/reddit/hooks/useOnClickOutside.ts": function(e, t, s) {
 			"use strict";
@@ -16247,4 +16321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.a051346f3ddaf07019a6.js.map
+//# sourceMappingURL=CommentsPage.8e1e1ec3f0bc36bbf0c9.js.map

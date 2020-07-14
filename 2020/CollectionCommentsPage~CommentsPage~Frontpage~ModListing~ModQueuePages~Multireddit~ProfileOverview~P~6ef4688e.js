@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.80bcb60792d6941941ec.js
-// Retrieved at 7/14/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.0802fbe3c229c71e0a87.js
+// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e"], {
 		"./src/reddit/components/CompactPost/Placeholder/index.m.less": function(e, t, s) {
@@ -361,7 +361,7 @@
 			s.d(t, "b", (function() {
 				return J
 			})), s.d(t, "a", (function() {
-				return Y
+				return X
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var o = s("./node_modules/history/esm/history.js"),
@@ -435,13 +435,13 @@
 						clickInfo: Object(C.a)(e)
 					})
 				}, K.set(s, o)), o
-			}, X = (e, t) => {
+			}, G = (e, t) => {
 				const s = [...e];
 				return Object.keys(t).map(e => parseInt(e, 10)).sort((e, t) => t - e).forEach(e => {
 					s.splice(e, 0, t[e])
 				}), s
 			};
-			class Y extends p.a.Component {
+			class X extends p.a.Component {
 				constructor() {
 					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new k.a(F), this.surveyTriggerCounted = !1, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
@@ -619,7 +619,7 @@
 						S = {
 							estHeight: Object(_.c)(j, o),
 							id: e,
-							isFocusable: !(!I.media || !(o === P.g.Large || o === P.g.Classic && Object(w.F)(I.media))) && (w.d.has(I.media.type) && (!V || !w.s.has(V)) && !I.isSpoiler && !I.isNSFW),
+							isFocusable: !(!I.media || !(o === P.g.Large || o === P.g.Classic && Object(w.G)(I.media))) && (w.d.has(I.media.type) && (!V || !w.s.has(V)) && !I.isSpoiler && !I.isNSFW),
 							trackOnEnteredViewport: N,
 							trackOnExitedViewport: M,
 							render: t => {
@@ -730,7 +730,7 @@
 						const o = t === l.length - 1;
 						return this.scrollChildForPost(e, t, o, i)
 					});
-					r && (b = X(b, r));
+					r && (b = G(b, r));
 					const y = this.props.measureScrollFPS ? "post-listings-".concat(i) : void 0,
 						f = a ? Object(o.e)(a) : null,
 						E = f || n;
@@ -763,7 +763,7 @@
 					}), p.a.createElement(W, null))), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
-			Y.defaultProps = {
+			X.defaultProps = {
 				enableElementHiding: !0,
 				listingKey: "",
 				listingName: "",
@@ -822,4 +822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.80bcb60792d6941941ec.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.0802fbe3c229c71e0a87.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.4ab8b52f1c2dc6aa2939.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0ee2d664888dc37bf607.js
+// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -646,7 +646,7 @@
 					className: O.a.OutboundLink,
 					isSponsored: T.isSponsored,
 					postId: T.id,
-					href: Object(g.C)(e.post),
+					href: Object(g.D)(e.post),
 					source: T.source
 				}, o.a.createElement(h.a, {
 					className: O.a.outboundLinkIcon
@@ -746,4 +746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.4ab8b52f1c2dc6aa2939.js.map
+//# sourceMappingURL=reddit-components-MediumPost.0ee2d664888dc37bf607.js.map

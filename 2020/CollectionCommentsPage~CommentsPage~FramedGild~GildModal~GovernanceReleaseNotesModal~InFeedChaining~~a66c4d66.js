@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b050045f962ceb72e0db.js
-// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.215d91c4b1ef26c3383d.js
+// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1414,7 +1414,7 @@
 					currentUser: I.i,
 					inVideoNewVolumePolicyFeed: L.a,
 					inVideoNewVolumePolicyTheatre: L.b,
-					isMutedPreference: k.a,
+					isMutedPreference: k.b,
 					isOverlayOpen: R.i,
 					loadTimes: H.g,
 					metadata: H.i,
@@ -1423,7 +1423,7 @@
 					started: H.l,
 					videoBufferTime: O,
 					videoBufferVariant: N,
-					volume: k.b
+					volume: k.c
 				}), (e, t) => {
 					let {
 						postId: s
@@ -1466,8 +1466,8 @@
 						setVideoFullscreen: () => {
 							s && e(b.Q(s))
 						},
-						setVideoMuted: t => e(P.d(t, s)),
-						setVideoVolume: t => e(P.e(t)),
+						setVideoMuted: t => e(P.f(t, s)),
+						setVideoVolume: t => e(P.g(t)),
 						onWatchedPercent: t => {
 							s && e(b.W(t, s))
 						},
@@ -1800,7 +1800,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("c9a8f14-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("2787b98-production", " ").concat(t);
 									return i && (s += " [".concat(V.oc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2236,4 +2236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b050045f962ceb72e0db.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.215d91c4b1ef26c3383d.js.map

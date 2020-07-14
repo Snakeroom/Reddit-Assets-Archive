@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4341fe353441ab7a9d82.js
-// Retrieved at 7/14/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fd29b8976e1dc37123e5.js
+// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -341,7 +341,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "c9a8f14-production"
+					SENTRY_RELEASE_VERSION: "2787b98-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -3680,7 +3680,7 @@
 					playbackState: ae.h,
 					previousStream: ae.j,
 					unavailableVideoUrl: re.o,
-					volume: te.b
+					volume: te.c
 				}),
 				Wr = Object(o.b)(Ur, (e, t) => ({
 					closeLocation: () => e(Object(c.b)(t.location.state[Y.a.CloseLocation])),
@@ -3703,7 +3703,7 @@
 						isMuted: t
 					})),
 					setMutedInFeed: t => e(U.R(t)),
-					setVideoVolume: t => e(T.e(t)),
+					setVideoVolume: t => e(T.g(t)),
 					updateVideoTimestamp: (t, s) => e(V({
 						streamId: t,
 						timestamp: s
@@ -4364,4 +4364,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.4341fe353441ab7a9d82.js.map
+//# sourceMappingURL=PublicAccessNetwork.fd29b8976e1dc37123e5.js.map
