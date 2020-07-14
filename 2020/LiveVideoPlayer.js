@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.0973c1610da70b8f6814.js
-// Retrieved at 7/9/2020, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.523a08b8706c17bc041f.js
+// Retrieved at 7/14/2020, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -45,8 +45,8 @@
 				c = s("./src/higherOrderComponents/withMux/index.tsx"),
 				m = s("./src/lib/classNames/index.ts"),
 				p = s("./src/lib/focusVisible/index.js"),
-				v = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
-				b = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
+				b = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
+				v = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
 				S = s("./src/reddit/actions/video.ts"),
 				T = s("./src/reddit/components/HlsVideo/index.tsx"),
 				g = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
@@ -60,19 +60,19 @@
 				I = s("./src/reddit/selectors/platform.ts"),
 				D = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				L = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				k = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/selectors/video.ts"),
-				E = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				O = s.n(E);
+				x = s("./src/reddit/selectors/user.ts"),
+				H = s("./src/reddit/selectors/video.ts"),
+				k = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				O = s.n(k);
 			const {
-				fbt: H
+				fbt: E
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(c.a)(T.a, {
 				playerName: "RPAN Listing Player"
 			}), _ = 3e3, j = Object(d.c)({
-				autoplay: k.b,
+				autoplay: x.b,
 				inVideoNewVolumePolicyFeed: C.a,
 				isOverlayOpen: I.i,
-				mutedInFeed: x.j,
+				mutedInFeed: H.j,
 				unavailableVideoUrl: D.o,
 				currentStream: (e, t) => {
 					let {
@@ -82,8 +82,8 @@
 				}
 			}), N = Object(o.b)(j, (e, t) => ({
 				setMutedInFeed: t => e(Object(S.R)(t)),
-				onHeartbeatSubscribe: t => e(v.a.subscribeHeartbeat(t)),
-				onStreamByIdRequested: t => e(Object(b.d)(t))
+				onHeartbeatSubscribe: t => e(b.a.subscribeHeartbeat(t)),
+				onStreamByIdRequested: t => e(Object(v.d)(t))
 			}));
 			class A extends r.Component {
 				constructor(e) {
@@ -98,13 +98,9 @@
 							settingChange: void 0
 						}))
 					}, this.handleEnded = () => {
-						this.props.currentStream && this.props.sendEvent(Object(V.r)(this.props.currentStream, this.getPlaybackStats())), this.endTimers(), this.setState({
-							watchDuration: 0,
-							sessionDuration: 0,
-							heartbeatDurationOffset: 0,
-							isEnded: !0,
-							hasVideoPlayed: !1
-						})
+						this.setState({
+							isEnded: !0
+						}), this.endHeartbeats()
 					}, this.handleError = () => {
 						this.setState({
 							hasError: !0
@@ -285,12 +281,12 @@
 					} = this.state;
 					!e.shouldPause && this.props.shouldPause && (this.setState({
 						userShowedIntent: !1
-					}), this.state.hasVideoPlayed && this.handleEnded()), this.controlBar && (s !== t.currentTime && this.controlBar.setCurrentTime(s), i !== t.duration && this.controlBar.setTotalTime(i)), this.props.inVideoNewVolumePolicyFeed && (this.state.isPlaying || this.props.mutedInFeed !== e.mutedInFeed && this.setState({
+					}), this.state.hasVideoPlayed && this.endHeartbeats()), this.controlBar && (s !== t.currentTime && this.controlBar.setCurrentTime(s), i !== t.duration && this.controlBar.setTotalTime(i)), this.props.inVideoNewVolumePolicyFeed && (this.state.isPlaying || this.props.mutedInFeed !== e.mutedInFeed && this.setState({
 						muted: this.props.mutedInFeed
 					}))
 				}
 				componentWillUnmount() {
-					this.unsubscribeHeartbeat(), this.handleEnded()
+					this.unsubscribeHeartbeat(), this.endHeartbeats()
 				}
 				render() {
 					return n.a.createElement("div", {
@@ -340,6 +336,14 @@
 				}
 				getSessionDuration() {
 					return h.c.has(this.state.sessionTimerId) ? h.c.getTime(this.state.sessionTimerId) : 0
+				}
+				endHeartbeats() {
+					this.onSendHeartbeat(), this.endTimers(), this.setState({
+						watchDuration: 0,
+						sessionDuration: 0,
+						heartbeatDurationOffset: 0,
+						hasVideoPlayed: !1
+					})
 				}
 				endTimers() {
 					h.c.has(this.state.watchTimerId) && h.c.end(this.state.watchTimerId), h.c.has(this.state.sessionTimerId) && h.c.end(this.state.sessionTimerId), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
@@ -455,7 +459,7 @@
 				},
 				U = () => n.a.createElement("span", {
 					className: O.a.LiveIndicator
-				}, H._("Live", null, {
+				}, E._("Live", null, {
 					hk: "TwJSs"
 				}))
 		},
@@ -487,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.0973c1610da70b8f6814.js.map
+//# sourceMappingURL=LiveVideoPlayer.523a08b8706c17bc041f.js.map
