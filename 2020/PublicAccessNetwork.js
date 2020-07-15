@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8b5c5ca95812d980503d.js
-// Retrieved at 7/14/2020, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.84cbab1977899a3a1521.js
+// Retrieved at 7/15/2020, 10:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -341,7 +341,7 @@
 			};
 			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "f45f3c0-production"
+					SENTRY_RELEASE_VERSION: "f01c22d-production"
 				}),
 				x = {
 					anonymousUserId: "t2_anonymous",
@@ -3702,7 +3702,7 @@
 					setMuteSettings: t => e(Object(F.b)({
 						isMuted: t
 					})),
-					setMutedInFeed: t => e(U.R(t)),
+					setMutedInFeed: t => e(U.P(t)),
 					setVideoVolume: t => e(T.g(t)),
 					updateVideoTimestamp: (t, s) => e(V({
 						streamId: t,
@@ -4364,4 +4364,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.8b5c5ca95812d980503d.js.map
+//# sourceMappingURL=PublicAccessNetwork.84cbab1977899a3a1521.js.map

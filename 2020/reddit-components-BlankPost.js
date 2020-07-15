@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.ff65175782620dab65dd.js
-// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.f3d7bab59efe1a7a5854.js
+// Retrieved at 7/15/2020, 10:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -416,7 +416,7 @@
 			class I extends s.Component {
 				constructor(e) {
 					super(e), this.viewabilityStats = w(), this.videoStats = y(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
-						this.checkViewabilityByType(e), this.props.trackDisplay && this.handleThresholds(e, S), this.props.trackVideo && this.handleThresholds(e, _, !0)
+						this.props.trackDisplay && this.handleThresholds(e, S), this.props.trackVideo && this.handleThresholds(e, _, !0), this.checkViewabilityByType(e)
 					}, this.checkViewabilityByType = e => {
 						n()(this.state.event, e) || this.setState({
 							event: e
@@ -575,4 +575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.ff65175782620dab65dd.js.map
+//# sourceMappingURL=reddit-components-BlankPost.f3d7bab59efe1a7a5854.js.map

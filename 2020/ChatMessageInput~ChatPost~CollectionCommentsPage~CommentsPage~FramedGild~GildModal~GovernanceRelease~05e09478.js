@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.e522ea74aa0e49fc2acd.js
-// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.78ade89441f5285273b7.js
+// Retrieved at 7/15/2020, 10:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -405,24 +405,23 @@
 					} = t;
 					return {
 						onBufferingChanged: t => {
-							e(t ? l.A(n) : l.P(n))
+							e(t ? l.z(n) : l.N(n))
 						},
-						onLoadStarted: t => e(l.z(n, t)),
-						onMetadataReceived: t => e(l.O({
+						onLoadStarted: t => e(l.y(n, t)),
+						onMetadataReceived: t => e(l.M({
 							metadata: t,
 							postId: n
 						})),
-						onPaused: () => e(l.K({
+						onPaused: () => e(l.I({
 							postId: n
 						})),
-						onPlayable: t => e(l.L(n, t)),
-						onPlaying: () => e(l.N(n)),
-						onWatched: () => e(l.B(n)),
-						onViewableImpression: () => e(l.I(n)),
-						onFullyViewableImpression: () => e(l.F(n)),
-						onMRCViewableImpression: () => e(l.E(n)),
-						onPlayedWithSound: () => e(l.M(n)),
-						onWatchedPercent: t => e(l.W(t, n))
+						onPlayable: t => e(l.J(n, t)),
+						onPlaying: () => e(l.L(n)),
+						onWatched: () => e(l.A(n)),
+						onViewableImpression: () => e(l.G(n)),
+						onFullyViewableImpression: () => e(l.D(n)),
+						onPlayedWithSound: () => e(l.K(n)),
+						onWatchedPercent: t => e(l.U(t, n))
 					}
 				});
 			class v extends i.a.Component {
@@ -1815,4 +1814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.e522ea74aa0e49fc2acd.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.78ade89441f5285273b7.js.map
