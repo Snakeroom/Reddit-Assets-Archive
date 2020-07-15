@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.26d0a7592a7952c3df3f.js
-// Retrieved at 7/14/2020, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.9fdadb59700bbf5bfc98.js
+// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "AuthorHovercard~Settings~SubredditWiki", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -23606,7 +23606,7 @@
 				a = s("./src/reddit/actions/subscription/index.ts"),
 				r = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: r.db
+				userIsSubscriber: r.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -30032,4 +30032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.26d0a7592a7952c3df3f.js.map
+//# sourceMappingURL=ModerationPages.9fdadb59700bbf5bfc98.js.map

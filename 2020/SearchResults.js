@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.61e50c67a44219354b91.js
-// Retrieved at 7/14/2020, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.de9a65b815b4f618e72e.js
+// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -4768,7 +4768,7 @@
 					hideNSFWPref: We.z,
 					subredditOrProfile: P.L,
 					subredditOrProfileAboutInfo: P.H,
-					userIsSubscriber: P.db
+					userIsSubscriber: P.cb
 				}),
 				Ge = Object(o.b)(ze);
 			var Je = Ke(Ge(e => {
@@ -8502,7 +8502,7 @@
 				o = s("./src/reddit/actions/subscription/index.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: a.db
+				userIsSubscriber: a.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -9606,4 +9606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.61e50c67a44219354b91.js.map
+//# sourceMappingURL=SearchResults.de9a65b815b4f618e72e.js.map

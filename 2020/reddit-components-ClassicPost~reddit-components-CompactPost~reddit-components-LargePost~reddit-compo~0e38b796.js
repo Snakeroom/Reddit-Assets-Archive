@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.dbcad36234ea892c79d7.js
-// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.d7793772ecaa8381f443.js
+// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1237,7 +1237,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				c = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: c.db
+				userIsSubscriber: c.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1488,4 +1488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.dbcad36234ea892c79d7.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.d7793772ecaa8381f443.js.map

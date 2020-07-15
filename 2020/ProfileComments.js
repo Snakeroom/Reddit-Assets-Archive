@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.cb190538b0f89c9956a5.js
-// Retrieved at 7/14/2020, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.9d543b883c460d3551d9.js
+// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -8343,7 +8343,7 @@
 				r = n("./src/reddit/actions/subscription/index.ts"),
 				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(o.c)({
-				userIsSubscriber: a.db
+				userIsSubscriber: a.cb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -9860,4 +9860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.cb190538b0f89c9956a5.js.map
+//# sourceMappingURL=ProfileComments.9d543b883c460d3551d9.js.map

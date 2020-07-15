@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.166241d5bd773b962895.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.87102c91d6ba52e2393c.js
+// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -2944,7 +2944,7 @@
 				o = n("./src/reddit/actions/subscription/index.ts"),
 				r = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(a.c)({
-				userIsSubscriber: r.db
+				userIsSubscriber: r.cb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -7064,4 +7064,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.166241d5bd773b962895.js.map
+//# sourceMappingURL=Settings.87102c91d6ba52e2393c.js.map

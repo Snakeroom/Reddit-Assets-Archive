@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.7d47e18adbdd44168669.js
-// Retrieved at 7/14/2020, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.84d5fd7523af383f8a57.js
+// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -6549,7 +6549,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(o.b)(() => Object(n.c)({
-				userIsSubscriber: i.db
+				userIsSubscriber: i.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -7651,4 +7651,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.7d47e18adbdd44168669.js.map
+//# sourceMappingURL=ProfilePrivate.84d5fd7523af383f8a57.js.map

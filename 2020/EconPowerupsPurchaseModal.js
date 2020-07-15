@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.5fa9936c418e2ef501bf.js
-// Retrieved at 7/9/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.f42e438276b9657ff657.js
+// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, r) {
@@ -1035,4 +1035,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconPowerupsPurchaseModal.5fa9936c418e2ef501bf.js.map
+//# sourceMappingURL=EconPowerupsPurchaseModal.f42e438276b9657ff657.js.map

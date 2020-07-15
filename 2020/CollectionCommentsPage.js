@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.cbc5b4754d7911f0adcd.js
-// Retrieved at 7/14/2020, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.35a6bf0a1bd4acd4f850.js
+// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -12983,7 +12983,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.db
+				userIsSubscriber: i.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -16394,4 +16394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.cbc5b4754d7911f0adcd.js.map
+//# sourceMappingURL=CollectionCommentsPage.35a6bf0a1bd4acd4f850.js.map
