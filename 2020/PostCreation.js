@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.47e5f885c35113b65c31.js
-// Retrieved at 7/15/2020, 10:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7d3d666aaf4eb2917c41.js
+// Retrieved at 7/15/2020, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOv~8a8059b8", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "f01c22d-production"
+					SENTRY_RELEASE_VERSION: "be27973-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -6858,7 +6858,9 @@
 					e.onClick(), t.stopPropagation()
 				},
 				onMouseDown: t => {
-					e.setFocusTo.current && e.setFocusTo.current.focus(), t.preventDefault()
+					e.setFocusTo.current && e.setFocusTo.current.focus({
+						preventScroll: !0
+					}), t.preventDefault()
 				},
 				title: e.title
 			}, e.hasMoreSlides && o.a.createElement("i", {
@@ -6997,7 +6999,7 @@
 					onClickEvent: M,
 					outboundUrl: D,
 					captionHeight: n
-				}) : n && o.a.createElement("div", {
+				}) : !!n && o.a.createElement("div", {
 					className: y.a.emptyCaptionBlock,
 					style: {
 						height: n
@@ -7255,7 +7257,8 @@
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
 			e.exports = {
 				hiddenLink: "_3dhFVFchWAAFXfLFTa94n9",
-				displayNone: "_1Q2mF3u7v9hBVu_4bkC7R4"
+				displayNone: "_1Q2mF3u7v9hBVu_4bkC7R4",
+				galleryMediaContainer: "_3ozFpM1W8BRdrzkr_ssGxZ"
 			}
 		},
 		"./src/reddit/components/Media/index.tsx": function(e, t, n) {
@@ -7896,7 +7899,8 @@
 							return l.a.createElement(k.a, $({}, Z, {
 								blurSrc: J ? B : void 0,
 								isExpando: !!r,
-								maxGalleryHeight: z + oe
+								maxGalleryHeight: z + oe,
+								className: X.a.galleryMediaContainer
 							}), l.a.createElement(ie, {
 								isVisible: g
 							}, l.a.createElement(w.a, {
@@ -32699,4 +32703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.47e5f885c35113b65c31.js.map
+//# sourceMappingURL=PostCreation.7d3d666aaf4eb2917c41.js.map
