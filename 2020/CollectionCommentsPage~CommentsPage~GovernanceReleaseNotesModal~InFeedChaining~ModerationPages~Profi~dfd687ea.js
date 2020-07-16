@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.a165e9e02c7723dce901.js
-// Retrieved at 7/16/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.c8d76c9f644a0b7c9c6b.js
+// Retrieved at 7/16/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -74,7 +74,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				w = Object({
-					SENTRY_RELEASE_VERSION: "d0d65de-production"
+					SENTRY_RELEASE_VERSION: "772f1cc-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -416,7 +416,7 @@
 						preventScroll: !0
 					}), t.preventDefault()
 				},
-				title: e.title
+				title: e.hasMoreSlides ? e.title : void 0
 			}, e.hasMoreSlides && a.a.createElement("i", {
 				className: Object(o.a)(e.iconClassName, E.a.icon)
 			}, a.a.createElement(c.a, {
@@ -1658,4 +1658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.a165e9e02c7723dce901.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.c8d76c9f644a0b7c9c6b.js.map
