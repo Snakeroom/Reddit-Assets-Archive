@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.9dc45d779e238811f51e.js
-// Retrieved at 7/16/2020, 3:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.8d184da6d7f198cdd932.js
+// Retrieved at 7/16/2020, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -30,13 +30,13 @@
 			var h = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
-			const b = e => {
+			const g = e => {
 					const t = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						s = t.length,
 						i = new Uint32Array(e);
 					return crypto.getRandomValues(i), Array.from(i).map(e => t.charAt(e % s)).join("")
 				},
-				g = function() {
+				b = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : new Date;
 					return new Date(e).toISOString().replace(/^(\d{4})-(\d{2})-(\d{2}).*/, "$1$2$3")
 				},
@@ -74,7 +74,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				w = Object({
-					SENTRY_RELEASE_VERSION: "f6b6b09-production"
+					SENTRY_RELEASE_VERSION: "6e25183-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -180,7 +180,7 @@
 					async encryptViewerUserId() {
 						const e = this.props.redditUserId || L.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
-							s = g(),
+							s = b(),
 							i = "".concat(s).concat(e).concat(t);
 						return (await E(i)).substr(0, L.VIEWER_USER_ID_LENGTH)
 					}
@@ -224,7 +224,7 @@
 					getOrCreateSalt() {
 						const e = L.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(r.a)(e);
-						return t || (t = b(L.SALT_LENGTH), Object(r.b)(e, t, L.SALT_TIME_TO_LIVE)), t
+						return t || (t = g(L.SALT_LENGTH), Object(r.b)(e, t, L.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return Object.assign({}, this.getDashInstanceData(), this.getHlsInstanceData())
@@ -337,8 +337,8 @@
 				m = s("./src/reddit/actions/media.ts"),
 				h = s("./src/reddit/constants/keycodes.ts"),
 				p = s("./src/reddit/helpers/mediaGallery/index.tsx"),
-				b = s("./src/reddit/models/Media/index.ts"),
-				g = s("./src/reddit/selectors/media.ts"),
+				g = s("./src/reddit/models/Media/index.ts"),
+				b = s("./src/reddit/selectors/media.ts"),
 				x = s("./src/reddit/components/Media/blurredContent.ts"),
 				f = s("./src/reddit/components/Media/GalleryBox/index.m.less"),
 				E = s.n(f);
@@ -375,7 +375,7 @@
 					left: "0px"
 				} : {
 					left: s > t ? "-100%" : "100%"
-				}, c = Object(p.c)(d), u = r.y > c && Object(b.I)(r.y, r.x), m = u ? {} : {
+				}, c = Object(p.c)(d), u = r.y > c && Object(g.I)(r.y, r.x), m = u ? {} : {
 					maxHeight: "100%"
 				};
 				let h;
@@ -454,7 +454,7 @@
 						mediaMetadata: f = {},
 						postId: v
 					} = e,
-					y = Object(n.d)(e => Object(g.a)(e, v)),
+					y = Object(n.d)(e => Object(b.a)(e, v)),
 					S = y > 0,
 					j = y < c.length - 1,
 					M = Object(l.a)(),
@@ -489,11 +489,11 @@
 							a = Object(p.g)(i),
 							n = a.x / a.y < 1,
 							o = Object(p.h)(e),
-							r = Object(p.i)(e || {}, Object(p.c)(s), b.p);
+							r = Object(p.i)(e || {}, Object(p.c)(s), g.p);
 						if (s || r || o || n) return {
 							height: t
 						};
-						const d = Object(b.B)(a.y, a.x);
+						const d = Object(g.B)(a.y, a.x);
 						return {
 							paddingBottom: "".concat(d, "%")
 						}
@@ -613,8 +613,8 @@
 				onLoadRichTextContentIfNeeded: t => e(Object(l.B)(t))
 			}))(h);
 
-			function b() {
-				return (b = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -622,7 +622,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var g = function(e, t) {
+			var b = function(e, t) {
 				var s = {};
 				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -643,7 +643,7 @@
 					isTitleOnly: h,
 					postId: x,
 					showFull: f
-				} = e, E = g(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
+				} = e, E = b(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
 				const v = {
 						[m.a.richTextContainerFull]: f,
 						[m.a.richTextContainerTitleOnly]: h && !f,
@@ -652,7 +652,7 @@
 					y = {};
 				f || (y.maxHeight = "".concat(h ? r.m : l ? r.l : r.k, "px")), d && (y.maxWidth = "".concat(o.d, "px"));
 				const O = c && f;
-				return a.a.createElement("div", b({
+				return a.a.createElement("div", g({
 					className: Object(n.a)(v, i),
 					style: y
 				}, E), s, O && a.a.createElement(p, {
@@ -689,8 +689,8 @@
 				h = s("./src/reddit/components/Media/TwitterEmbed/index.m.less"),
 				p = s.n(h);
 
-			function b() {
-				return (b = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -698,7 +698,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const g = 350,
+			const b = 350,
 				x = 100,
 				f = 300;
 			class E extends n.a.Component {
@@ -732,11 +732,11 @@
 					} = this.props, {
 						isFullyLoaded: h
 					} = this.state, E = s.height || (t.isDeleted ? x : f);
-					return n.a.createElement(c.a, b({}, s, {
+					return n.a.createElement(c.a, g({}, s, {
 						alwaysWrapMedia: !0,
 						height: E,
 						showFull: !s.isListing,
-						width: g
+						width: b
 					}), e && n.a.createElement(n.a.Fragment, null, (!s.height || !h) && (t.isDeleted ? n.a.createElement("p", {
 						className: p.a.tweetDeleted
 					}, i.fbt._("This Tweet has been deleted.", null, {
@@ -759,7 +759,7 @@
 						showFull: !0,
 						source: r,
 						title: d,
-						width: g
+						width: b
 					}), s.isListing && E > m.j && n.a.createElement("div", {
 						className: p.a.seeMore
 					}, i.fbt._("See full tweet", null, {
@@ -830,8 +830,8 @@
 				m = s("./src/higherOrderComponents/withMux/index.tsx"),
 				h = s("./src/lib/constants/index.ts"),
 				p = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				b = s("./src/lib/env/index.ts"),
-				g = s("./src/lib/isUrl/index.ts"),
+				g = s("./src/lib/env/index.ts"),
+				b = s("./src/lib/isUrl/index.ts"),
 				x = s("./src/lib/objectSelector/index.ts"),
 				f = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
 				E = s("./src/lib/sentry/index.ts"),
@@ -953,7 +953,7 @@
 					renderingObjectInfo: e.post,
 					pageLayer: e.pageLayer
 				}));
-			class be extends l.a.Component {
+			class ge extends l.a.Component {
 				constructor(e) {
 					super(e), this.pauseContent = () => {
 						this.shouldFocusContentDebouncer(!1)
@@ -1281,7 +1281,7 @@
 										isListing: o,
 										isCommentsPage: a
 									}), E.c.captureMessage(t)
-								}), Object(b.a)() && console.log("".concat(m.id, ": ").concat(t)), l.a.createElement(L.a, {
+								}), Object(g.a)() && console.log("".concat(m.id, ": ").concat(t)), l.a.createElement(L.a, {
 									postId: m.id,
 									className: e,
 									"data-click-id": "text",
@@ -1424,7 +1424,7 @@
 							const f = this.state.viewportHeight - 2 * ie,
 								w = this.state.viewportWidth - 2 * ie;
 							let I = V;
-							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (m.thumbnail && Object(g.a)(m.thumbnail.url) ? I = m.thumbnail.url : m.preview && Object(g.a)(m.preview.url) && (I = m.preview.url)), l.a.createElement(M.a, $({}, q, {
+							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (m.thumbnail && Object(b.a)(m.thumbnail.url) ? I = m.thumbnail.url : m.preview && Object(b.a)(m.preview.url) && (I = m.preview.url)), l.a.createElement(M.a, $({}, q, {
 								blurSrc: J ? I : void 0,
 								isExpando: !!n
 							}), l.a.createElement(oe, {
@@ -1477,7 +1477,7 @@
 					}
 				}
 			}
-			t.a = ue(he(Object(p.a)(be)))
+			t.a = ue(he(Object(p.a)(ge)))
 		},
 		"./src/reddit/components/RawHTMLDisplay/Media.tsx": function(e, t, s) {
 			"use strict";
@@ -1542,9 +1542,9 @@
 			})), s.d(t, "g", (function() {
 				return m
 			})), s.d(t, "a", (function() {
-				return b
-			})), s.d(t, "e", (function() {
 				return g
+			})), s.d(t, "e", (function() {
+				return b
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.replace.js"), s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.array.sort.js");
 			var i = s("./node_modules/node-libs-browser/node_modules/url/url.js"),
@@ -1593,10 +1593,10 @@
 				},
 				p = (e, t) => e.some(e => e.y > t && Object(n.I)(e.y, e.x));
 
-			function b(e) {
+			function g(e) {
 				return e && e.items && e.items.some(e => void 0 !== e.caption || void 0 !== e.outboundUrl) ? n.i : 0
 			}
-			const g = e => {
+			const b = e => {
 				const t = a.a.parse(e),
 					s = t.path || "",
 					i = s.length > 7 ? s.substring(0, 7) + "..." : s;
@@ -1659,4 +1659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.9dc45d779e238811f51e.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.8d184da6d7f198cdd932.js.map
