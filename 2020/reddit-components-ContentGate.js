@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.0888263bd1dba16e3cd8.js
-// Retrieved at 7/7/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.83e60da06790469b8e97.js
+// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -115,7 +115,7 @@
 					})(e))), o.a.createElement(o.a.Fragment, null, " ", t.map((t, n) => {
 						if (Array.isArray(t)) {
 							const [a, r] = t;
-							return o.a.createElement(T.a, {
+							return o.a.createElement(T.b, {
 								className: e.linkClassName,
 								href: a,
 								isSponsored: !1,
@@ -476,4 +476,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ContentGate.0888263bd1dba16e3cd8.js.map
+//# sourceMappingURL=reddit-components-ContentGate.83e60da06790469b8e97.js.map

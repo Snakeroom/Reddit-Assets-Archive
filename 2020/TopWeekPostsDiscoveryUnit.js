@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.1a5eedfbf6523dc1e6c6.js
-// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.0c4f578c7249a645e11a.js
+// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -521,12 +521,19 @@
 				}),
 				m = s("./src/reddit/connectors/PostViewable/index.ts"),
 				u = s("./src/reddit/models/Media/index.ts"),
-				p = s("./src/reddit/selectors/video.ts"),
-				b = s("./src/lib/classNames/index.ts"),
-				h = s("./src/higherOrderComponents/withClickTracking.tsx"),
-				f = s("./src/reddit/components/PostContainer/index.m.less"),
-				x = s.n(f);
-			const y = Object(o.c)({
+				p = s("./src/reddit/selectors/posts.ts"),
+				b = s("./src/reddit/selectors/video.ts"),
+				h = s("./src/lib/classNames/index.ts"),
+				f = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				x = s("./src/reddit/components/PostContainer/index.m.less"),
+				y = s.n(x);
+			const g = Object(o.c)({
+					basePixelMetadata: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(p.b)(e, s.id)
+					},
 					clickTrackingId: (e, t) => {
 						let {
 							post: s
@@ -537,7 +544,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(p.a)(e, {
+						return Object(b.a)(e, {
 							postId: s.id
 						})
 					},
@@ -545,7 +552,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(p.f)(e, {
+						return Object(b.f)(e, {
 							postId: s.id
 						})
 					},
@@ -553,58 +560,59 @@
 						let {
 							post: s
 						} = t;
-						return Object(p.c)(e, {
+						return Object(b.c)(e, {
 							postId: s.id
 						})
 					}
 				}),
-				g = Object(m.a)(y),
-				O = e => {
-					const t = Object(h.d)(e.target, e.currentTarget),
-						s = Object(h.b)(e.target, e.currentTarget, h.a.buttons);
+				O = Object(m.a)(g),
+				v = e => {
+					const t = Object(f.d)(e.target, e.currentTarget),
+						s = Object(f.b)(e.target, e.currentTarget, f.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class v extends r.a.Component {
+			class C extends r.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
 				render() {
 					const {
 						afterClickTracking: e,
-						children: t,
-						className: s,
-						makePostContainerId: n,
-						post: o,
-						onClick: a,
-						onPostContentClick: c,
-						style: d,
-						ref: m
-					} = this.props, p = r.a.createElement("div", {
-						style: d,
-						ref: m,
+						basePixelMetadata: t,
+						children: s,
+						className: n,
+						makePostContainerId: o,
+						post: a,
+						onClick: c,
+						onPostContentClick: d,
+						style: m,
+						ref: p
+					} = this.props, b = r.a.createElement("div", {
+						style: m,
+						ref: p,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
-						onClick: t => {
-							!this.cancelClick && t.button < 2 && (e(() => a && a(t, o))(t), c && O(t) && c(t, o))
+						onClick: s => {
+							!this.cancelClick && s.button < 2 && (e(() => c && c(s, a, t))(s), d && v(s) && d(s, a))
 						},
-						className: Object(b.a)(x.a.WrappedPost, s, "Post ".concat(o.id), {
-							promotedlink: o.isSponsored
+						className: Object(h.a)(y.a.WrappedPost, n, "Post ".concat(a.id), {
+							promotedlink: a.isSponsored
 						}),
-						id: n ? n(o.id) : o.id,
+						id: o ? o(a.id) : a.id,
 						tabIndex: -1
-					}, t), h = !!o.media && o.media.type === u.o.VIDEO;
-					return o.isSponsored || h ? r.a.createElement(i.a, {
-						post: o,
+					}, s), f = !!a.media && a.media.type === u.o.VIDEO;
+					return a.isSponsored || f ? r.a.createElement(i.a, {
+						post: a,
 						trackDisplay: !0
-					}, p) : o.media && Object(u.E)(o.media) ? r.a.createElement(l, {
-						postId: o.id
-					}, p) : p
+					}, b) : a.media && Object(u.E)(a.media) ? r.a.createElement(l, {
+						postId: a.id
+					}, b) : b
 				}
 			}
-			t.a = g(Object(h.c)(v))
+			t.a = O(Object(f.c)(C))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -824,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.1a5eedfbf6523dc1e6c6.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.0c4f578c7249a645e11a.js.map

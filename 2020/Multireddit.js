@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.dcb8f087ccd16625cc5f.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.fa0af1cc0dee6231e7ce.js
+// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -241,7 +241,7 @@
 					})(e))), a.a.createElement(a.a.Fragment, null, " ", t.map((t, n) => {
 						if (Array.isArray(t)) {
 							const [r, s] = t;
-							return a.a.createElement(T.a, {
+							return a.a.createElement(T.b, {
 								className: e.linkClassName,
 								href: r,
 								isSponsored: !1,
@@ -1803,4 +1803,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.dcb8f087ccd16625cc5f.js.map
+//# sourceMappingURL=Multireddit.fa0af1cc0dee6231e7ce.js.map

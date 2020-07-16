@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.ffb76e33fe781000718b.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.60500447bb1b39bd202f.js
+// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1684,7 +1684,7 @@
 					})(e))), i.a.createElement(i.a.Fragment, null, " ", t.map((t, n) => {
 						if (Array.isArray(t)) {
 							const [s, r] = t;
-							return i.a.createElement(N.a, {
+							return i.a.createElement(N.b, {
 								className: e.linkClassName,
 								href: s,
 								isSponsored: !1,
@@ -5235,7 +5235,7 @@
 						className: y.a.textButtonHoverText
 					}, t.hoverState.text))
 				}),
-				E = e => r.a.createElement(l.a, {
+				E = e => r.a.createElement(l.b, {
 					href: v(e.button),
 					isSponsored: !1,
 					source: null
@@ -5410,7 +5410,7 @@
 							}),
 							src: n.url
 						}));
-					return n.linkUrl ? r.a.createElement(l.a, {
+					return n.linkUrl ? r.a.createElement(l.b, {
 						href: n.linkUrl,
 						isSponsored: !1,
 						source: null
@@ -7213,4 +7213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.ffb76e33fe781000718b.js.map
+//# sourceMappingURL=SubredditWiki.60500447bb1b39bd202f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ba10d45b5bf4a566d14a.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4141aa681be681438abe.js
+// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -494,7 +494,7 @@
 					})(e))), a.a.createElement(a.a.Fragment, null, " ", t.map((t, n) => {
 						if (Array.isArray(t)) {
 							const [s, r] = t;
-							return a.a.createElement(N.a, {
+							return a.a.createElement(N.b, {
 								className: e.linkClassName,
 								href: s,
 								isSponsored: !1,
@@ -5361,7 +5361,7 @@
 						className: y.a.textButtonHoverText
 					}, t.hoverState.text))
 				}),
-				j = e => r.a.createElement(l.a, {
+				j = e => r.a.createElement(l.b, {
 					href: C(e.button),
 					isSponsored: !1,
 					source: null
@@ -5536,7 +5536,7 @@
 							}),
 							src: n.url
 						}));
-					return n.linkUrl ? r.a.createElement(l.a, {
+					return n.linkUrl ? r.a.createElement(l.b, {
 						href: n.linkUrl,
 						isSponsored: !1,
 						source: null
@@ -7505,4 +7505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.ba10d45b5bf4a566d14a.js.map
+//# sourceMappingURL=Subreddit.4141aa681be681438abe.js.map

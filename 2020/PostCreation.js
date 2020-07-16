@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5ad7c624b61470b7b5da.js
-// Retrieved at 7/16/2020, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6fb9ee36e315c2cc1717.js
+// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOv~8a8059b8", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "772f1cc-production"
+					SENTRY_RELEASE_VERSION: "ad86e8f-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -7892,6 +7892,7 @@
 								shouldBlur: Y,
 								source: j,
 								outboundUrl: ne && p.source.outboundUrl || void 0,
+								isSponsored: p.isSponsored,
 								originalSource: p.media.content
 							}))));
 						case W.o.GALLERY:
@@ -10812,7 +10813,7 @@
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(z, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Z, e));
-					if (e.isCommentsPageAd && t.source && t.source.url) return r.a.createElement(h.a, {
+					if (e.isCommentsPageAd && t.source && t.source.url) return r.a.createElement(h.b, {
 						href: t.source.url,
 						isSponsored: s,
 						postId: t.id,
@@ -10823,7 +10824,12 @@
 						return r.a.createElement(z, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
-						}, s ? r.a.createElement(Z, e) : r.a.createElement(W, {
+						}, s ? ((e, t) => e.source ? r.a.createElement(h.b, {
+							href: e.source.url,
+							isSponsored: e.isSponsored,
+							postId: e.id,
+							source: e.source
+						}, r.a.createElement(Z, t)) : r.a.createElement(Z, t))(t, e) : r.a.createElement(W, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -19809,7 +19815,7 @@
 					}), O = z(e), j = G(m, t, E, C, x, y, O, l, f, b, h, d, u, p, o), S = Object(T.D)(m);
 					return Object(s.a)(S) && !b && S.indexOf("redditmedia") < 0 ? r.a.createElement("div", {
 						className: Object(i.a)(N.a.container, v ? N.a.usePreview : "", n)
-					}, r.a.createElement(_.a, {
+					}, r.a.createElement(_.b, {
 						href: Object(T.D)(m),
 						isSponsored: m.isSponsored,
 						postId: m.id,
@@ -22101,6 +22107,11 @@
 		},
 		"./src/reddit/controls/OutboundLink/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return E
+			})), n.d(t, "c", (function() {
+				return O
+			}));
 			var s = n("./node_modules/lodash/omit.js"),
 				o = n.n(s),
 				r = n("./node_modules/query-string/index.js"),
@@ -22143,52 +22154,57 @@
 				C = (e, t, n, s) => {
 					s && t.outboundUrl && t.outboundUrlExpiration && t.outboundUrlExpiration > Date.now() && (e.href = p(t.outboundUrl, n))
 				},
-				E = v(e => {
+				E = (e, t, n) => {
+					if (e && t && /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(n)) {
+						const s = Object(b.b)(e, Object(f.eb)(t)),
+							{
+								url: o,
+								query: r
+							} = i.a.parseUrl(n);
+						return i.a.stringifyUrl({
+							url: o,
+							query: Object.assign({}, r, s)
+						})
+					}
+					return n
+				},
+				O = (e, t, n) => e.href = E(t, n, e.href),
+				j = v(e => {
 					const {
 						allowClickTracking: t,
 						basePixelMetadata: n,
 						href: s,
 						isSponsored: r,
-						postId: a,
-						source: l,
-						userId: d
+						postId: i,
+						source: a,
+						userId: l
 					} = e;
-					let u = o()(e, ["allowClickTracking", "basePixelMetadata", "isSponsored", "postId", "source", "userId"]);
-					const p = l && l.outboundUrl && r ? l.outboundUrl : s;
-					return u = Object.assign({}, u, {
-						href: p,
+					let d = o()(e, ["allowClickTracking", "basePixelMetadata", "isSponsored", "postId", "source", "userId"]);
+					const u = a && a.outboundUrl && r ? a.outboundUrl : s;
+					return d = Object.assign({}, d, {
+						href: u,
 						rel: m.a,
 						target: m.c.BLANK
-					}), !l || (e => {
+					}), !a || (e => {
 						const {
 							outboundUrlCreated: t,
 							outboundUrlReceived: n
 						} = e;
 						return !(!t || !n) && (t > n + 3e5 || t < n - 36e5)
-					})(l) ? c.a.createElement("a", u) : c.a.createElement("a", x({}, u, {
+					})(a) ? c.a.createElement("a", d) : c.a.createElement("a", x({}, d, {
 						onMouseDown: e => {
-							if (l && l.outboundUrl && r && ((e, t, n) => {
-									if (t && n && /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(e.href)) {
-										const s = Object(b.b)(t, Object(f.eb)(n)),
-											{
-												url: o,
-												query: r
-											} = i.a.parseUrl(e.href);
-										e.href = i.a.stringifyUrl({
-											url: o,
-											query: Object.assign({}, r, s)
-										})
-									}
-								})(e.currentTarget, a, n), 1 === e.button || 2 === e.button || e.ctrlKey) return !0;
-							C(e.currentTarget, l, d, t)
+							if (!(a && a.outboundUrl && r)) return !(1 !== e.button && 2 !== e.button && !e.ctrlKey) || void C(e.currentTarget, a, l, t);
+							O(e.currentTarget, i, n)
 						},
-						onMouseLeave: e => ((e, t) => {
-							e.href = t
-						})(e.currentTarget, p),
-						onTouchStart: e => C(e.currentTarget, l, d, t)
+						onMouseLeave: e => {
+							r || ((e, t) => {
+								e.href = t
+							})(e.currentTarget, u)
+						},
+						onTouchStart: e => C(e.currentTarget, a, l, t)
 					}))
 				});
-			t.a = E
+			t.b = j
 		},
 		"./src/reddit/controls/OutboundLink/styled.tsx": function(e, t, n) {
 			"use strict";
@@ -22197,7 +22213,7 @@
 				r = n("./src/reddit/controls/OutboundLink/index.tsx"),
 				i = n("./src/reddit/controls/OutboundLink/styles.m.less"),
 				a = n.n(i);
-			t.a = s.a.wrapped(r.a, "styledOutboundLink", {
+			t.a = s.a.wrapped(r.b, "styledOutboundLink", {
 				styledOutboundLink: "".concat(a.a.styledOutboundLink, " ").concat(o.l)
 			})
 		},
@@ -30483,7 +30499,7 @@
 				ic = n("./src/reddit/components/PostCreationForm/PostCreationFooter/PostSettings/index.m.less"),
 				ac = n.n(ic);
 			const cc = dt.a.wrapped(Za.a, "CheckboxInput", ac.a),
-				lc = dt.a.wrapped(Ya.a, "ConnectAccountLink", ac.a),
+				lc = dt.a.wrapped(Ya.b, "ConnectAccountLink", ac.a),
 				dc = dt.a.div("Container", ac.a),
 				uc = dt.a.div("ContainerLeft", ac.a),
 				pc = dt.a.div("ContainerRight", ac.a),
@@ -32705,4 +32721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.5ad7c624b61470b7b5da.js.map
+//# sourceMappingURL=PostCreation.6fb9ee36e315c2cc1717.js.map

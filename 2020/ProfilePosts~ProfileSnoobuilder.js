@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.9d3e03bc30c13a7747b9.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.402eba5e17fb711f9e49.js
+// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less": function(e, t, n) {
@@ -860,7 +860,7 @@
 				});
 				return i.a.createElement(g, {
 					key: t.id
-				}, i.a.createElement(E, null, t.url ? i.a.createElement(d.a, {
+				}, i.a.createElement(E, null, t.url ? i.a.createElement(d.b, {
 					href: t.url,
 					source: void 0,
 					isSponsored: !1
@@ -1405,7 +1405,7 @@
 						hk: "39S5oy"
 					}), o = "@".concat(t.username), r.a.createElement(v.a, null, r.a.createElement("span", {
 						className: E.a.icon
-					}, i), r.a.createElement(f.a, {
+					}, i), r.a.createElement(f.b, {
 						className: E.a.link,
 						href: t.link,
 						isSponsored: !1,
@@ -1546,4 +1546,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.9d3e03bc30c13a7747b9.js.map
+//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.402eba5e17fb711f9e49.js.map

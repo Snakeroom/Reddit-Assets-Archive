@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.e4d9b72da4bc30c6fcd8.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.bf46f72ad7ee5e13613d.js
+// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2729,7 +2729,7 @@
 					})(e))), r.a.createElement(r.a.Fragment, null, " ", t.map((t, s) => {
 						if (Array.isArray(t)) {
 							const [n, o] = t;
-							return r.a.createElement(j.a, {
+							return r.a.createElement(j.b, {
 								className: e.linkClassName,
 								href: n,
 								isSponsored: !1,
@@ -3939,7 +3939,7 @@
 					className: Object(c.a)(I.a.icon, I.a.showOnHover)
 				})) : r.a.createElement(h.a, {
 					className: I.a.icon
-				})) : f.source && f.source.url ? r.a.createElement(m.a, {
+				})) : f.source && f.source.url ? r.a.createElement(m.b, {
 					"aria-label": n.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
@@ -7543,12 +7543,19 @@
 				}),
 				m = s("./src/reddit/connectors/PostViewable/index.ts"),
 				p = s("./src/reddit/models/Media/index.ts"),
-				u = s("./src/reddit/selectors/video.ts"),
-				b = s("./src/lib/classNames/index.ts"),
-				h = s("./src/higherOrderComponents/withClickTracking.tsx"),
-				x = s("./src/reddit/components/PostContainer/index.m.less"),
-				f = s.n(x);
-			const g = Object(r.c)({
+				u = s("./src/reddit/selectors/posts.ts"),
+				b = s("./src/reddit/selectors/video.ts"),
+				h = s("./src/lib/classNames/index.ts"),
+				x = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				f = s("./src/reddit/components/PostContainer/index.m.less"),
+				g = s.n(f);
+			const v = Object(r.c)({
+					basePixelMetadata: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(u.b)(e, s.id)
+					},
 					clickTrackingId: (e, t) => {
 						let {
 							post: s
@@ -7559,7 +7566,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(u.a)(e, {
+						return Object(b.a)(e, {
 							postId: s.id
 						})
 					},
@@ -7567,7 +7574,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(u.f)(e, {
+						return Object(b.f)(e, {
 							postId: s.id
 						})
 					},
@@ -7575,58 +7582,59 @@
 						let {
 							post: s
 						} = t;
-						return Object(u.c)(e, {
+						return Object(b.c)(e, {
 							postId: s.id
 						})
 					}
 				}),
-				v = Object(m.a)(g),
-				O = e => {
-					const t = Object(h.d)(e.target, e.currentTarget),
-						s = Object(h.b)(e.target, e.currentTarget, h.a.buttons);
+				O = Object(m.a)(v),
+				C = e => {
+					const t = Object(x.d)(e.target, e.currentTarget),
+						s = Object(x.b)(e.target, e.currentTarget, x.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class C extends o.a.Component {
+			class E extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
 				render() {
 					const {
 						afterClickTracking: e,
-						children: t,
-						className: s,
-						makePostContainerId: n,
-						post: r,
-						onClick: a,
-						onPostContentClick: c,
-						style: d,
-						ref: m
-					} = this.props, u = o.a.createElement("div", {
-						style: d,
-						ref: m,
+						basePixelMetadata: t,
+						children: s,
+						className: n,
+						makePostContainerId: r,
+						post: a,
+						onClick: c,
+						onPostContentClick: d,
+						style: m,
+						ref: u
+					} = this.props, b = o.a.createElement("div", {
+						style: m,
+						ref: u,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
-						onClick: t => {
-							!this.cancelClick && t.button < 2 && (e(() => a && a(t, r))(t), c && O(t) && c(t, r))
+						onClick: s => {
+							!this.cancelClick && s.button < 2 && (e(() => c && c(s, a, t))(s), d && C(s) && d(s, a))
 						},
-						className: Object(b.a)(f.a.WrappedPost, s, "Post ".concat(r.id), {
-							promotedlink: r.isSponsored
+						className: Object(h.a)(g.a.WrappedPost, n, "Post ".concat(a.id), {
+							promotedlink: a.isSponsored
 						}),
-						id: n ? n(r.id) : r.id,
+						id: r ? r(a.id) : a.id,
 						tabIndex: -1
-					}, t), h = !!r.media && r.media.type === p.o.VIDEO;
-					return r.isSponsored || h ? o.a.createElement(i.a, {
-						post: r,
+					}, s), x = !!a.media && a.media.type === p.o.VIDEO;
+					return a.isSponsored || x ? o.a.createElement(i.a, {
+						post: a,
 						trackDisplay: !0
-					}, u) : r.media && Object(p.E)(r.media) ? o.a.createElement(l, {
-						postId: r.id
-					}, u) : u
+					}, b) : a.media && Object(p.E)(a.media) ? o.a.createElement(l, {
+						postId: a.id
+					}, b) : b
 				}
 			}
-			t.a = v(Object(h.c)(C))
+			t.a = O(Object(x.c)(E))
 		},
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -9095,7 +9103,7 @@
 						type: Object(g.f)(F) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
 					postId: N.id
-				}, "Subscribe"), M && o.a.createElement(b.a, {
+				}, "Subscribe"), M && o.a.createElement(b.b, {
 					className: O.a.OutboundLink,
 					isSponsored: N.isSponsored,
 					postId: N.id,
@@ -10635,7 +10643,7 @@
 				});
 				return r.a.createElement(O, {
 					key: t.id
-				}, r.a.createElement(C, null, t.url ? r.a.createElement(d.a, {
+				}, r.a.createElement(C, null, t.url ? r.a.createElement(d.b, {
 					href: t.url,
 					source: void 0,
 					isSponsored: !1
@@ -11417,7 +11425,7 @@
 						hk: "39S5oy"
 					}), i = "@".concat(t.username), o.a.createElement(v.a, null, o.a.createElement("span", {
 						className: C.a.icon
-					}, r), o.a.createElement(x.a, {
+					}, r), o.a.createElement(x.b, {
 						className: C.a.link,
 						href: t.link,
 						isSponsored: !1,
@@ -14963,4 +14971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.e4d9b72da4bc30c6fcd8.js.map
+//# sourceMappingURL=ProfileOverview.bf46f72ad7ee5e13613d.js.map

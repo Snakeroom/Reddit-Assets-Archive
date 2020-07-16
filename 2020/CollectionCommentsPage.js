@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.35a6bf0a1bd4acd4f850.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.94998ed560a6dd2904e3.js
+// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5400,7 +5400,7 @@
 					className: Object(d.a)(S.a.icon, S.a.showOnHover)
 				})) : r.a.createElement(b.a, {
 					className: S.a.icon
-				})) : g.source && g.source.url ? r.a.createElement(m.a, {
+				})) : g.source && g.source.url ? r.a.createElement(m.b, {
 					"aria-label": n.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
@@ -7545,12 +7545,19 @@
 				}),
 				m = s("./src/reddit/connectors/PostViewable/index.ts"),
 				p = s("./src/reddit/models/Media/index.ts"),
-				u = s("./src/reddit/selectors/video.ts"),
-				h = s("./src/lib/classNames/index.ts"),
-				b = s("./src/higherOrderComponents/withClickTracking.tsx"),
-				x = s("./src/reddit/components/PostContainer/index.m.less"),
-				g = s.n(x);
-			const f = Object(r.c)({
+				u = s("./src/reddit/selectors/posts.ts"),
+				h = s("./src/reddit/selectors/video.ts"),
+				b = s("./src/lib/classNames/index.ts"),
+				x = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				g = s("./src/reddit/components/PostContainer/index.m.less"),
+				f = s.n(g);
+			const v = Object(r.c)({
+					basePixelMetadata: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(u.b)(e, s.id)
+					},
 					clickTrackingId: (e, t) => {
 						let {
 							post: s
@@ -7561,7 +7568,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(u.a)(e, {
+						return Object(h.a)(e, {
 							postId: s.id
 						})
 					},
@@ -7569,7 +7576,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(u.f)(e, {
+						return Object(h.f)(e, {
 							postId: s.id
 						})
 					},
@@ -7577,58 +7584,59 @@
 						let {
 							post: s
 						} = t;
-						return Object(u.c)(e, {
+						return Object(h.c)(e, {
 							postId: s.id
 						})
 					}
 				}),
-				v = Object(m.a)(f),
-				C = e => {
-					const t = Object(b.d)(e.target, e.currentTarget),
-						s = Object(b.b)(e.target, e.currentTarget, b.a.buttons);
+				C = Object(m.a)(v),
+				O = e => {
+					const t = Object(x.d)(e.target, e.currentTarget),
+						s = Object(x.b)(e.target, e.currentTarget, x.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class O extends o.a.Component {
+			class y extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
 				render() {
 					const {
 						afterClickTracking: e,
-						children: t,
-						className: s,
-						makePostContainerId: n,
-						post: r,
-						onClick: a,
-						onPostContentClick: d,
-						style: c,
-						ref: m
-					} = this.props, u = o.a.createElement("div", {
-						style: c,
-						ref: m,
+						basePixelMetadata: t,
+						children: s,
+						className: n,
+						makePostContainerId: r,
+						post: a,
+						onClick: d,
+						onPostContentClick: c,
+						style: m,
+						ref: u
+					} = this.props, h = o.a.createElement("div", {
+						style: m,
+						ref: u,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
-						onClick: t => {
-							!this.cancelClick && t.button < 2 && (e(() => a && a(t, r))(t), d && C(t) && d(t, r))
+						onClick: s => {
+							!this.cancelClick && s.button < 2 && (e(() => d && d(s, a, t))(s), c && O(s) && c(s, a))
 						},
-						className: Object(h.a)(g.a.WrappedPost, s, "Post ".concat(r.id), {
-							promotedlink: r.isSponsored
+						className: Object(b.a)(f.a.WrappedPost, n, "Post ".concat(a.id), {
+							promotedlink: a.isSponsored
 						}),
-						id: n ? n(r.id) : r.id,
+						id: r ? r(a.id) : a.id,
 						tabIndex: -1
-					}, t), b = !!r.media && r.media.type === p.o.VIDEO;
-					return r.isSponsored || b ? o.a.createElement(i.a, {
-						post: r,
+					}, s), x = !!a.media && a.media.type === p.o.VIDEO;
+					return a.isSponsored || x ? o.a.createElement(i.a, {
+						post: a,
 						trackDisplay: !0
-					}, u) : r.media && Object(p.E)(r.media) ? o.a.createElement(l, {
-						postId: r.id
-					}, u) : u
+					}, h) : a.media && Object(p.E)(a.media) ? o.a.createElement(l, {
+						postId: a.id
+					}, h) : h
 				}
 			}
-			t.a = v(Object(b.c)(O))
+			t.a = C(Object(x.c)(y))
 		},
 		"./src/reddit/components/PostContent/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -9936,7 +9944,7 @@
 						type: Object(f.f)(F) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
 					postId: T.id
-				}, "Subscribe"), M && o.a.createElement(h.a, {
+				}, "Subscribe"), M && o.a.createElement(h.b, {
 					className: C.a.OutboundLink,
 					isSponsored: T.isSponsored,
 					postId: T.id,
@@ -12592,7 +12600,7 @@
 						className: C.a.textButtonHoverText
 					}, t.hoverState.text))
 				}),
-				k = e => o.a.createElement(l.a, {
+				k = e => o.a.createElement(l.b, {
 					href: E(e.button),
 					isSponsored: !1,
 					source: null
@@ -12767,7 +12775,7 @@
 							}),
 							src: s.url
 						}));
-					return s.linkUrl ? o.a.createElement(l.a, {
+					return s.linkUrl ? o.a.createElement(l.b, {
 						href: s.linkUrl,
 						isSponsored: !1,
 						source: null
@@ -16394,4 +16402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.35a6bf0a1bd4acd4f850.js.map
+//# sourceMappingURL=CollectionCommentsPage.94998ed560a6dd2904e3.js.map
