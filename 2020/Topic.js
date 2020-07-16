@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.61cb6c694d61ebc3fc48.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.3bff7d0a00d3bc5b9a63.js
+// Retrieved at 7/16/2020, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -420,14 +420,15 @@
 					const {
 						topic: t
 					} = e;
-					return n.a.createElement("div", {
+					return n.a.createElement("span", {
 						className: T.a.Container
 					}, n.a.createElement(_.a, {
 						className: T.a.Link,
+						title: t.name,
 						to: t.url
-					}, n.a.createElement("div", {
+					}, n.a.createElement("span", {
 						className: T.a.IconContainer
-					}, n.a.createElement(v.a, null)), n.a.createElement("div", {
+					}, n.a.createElement(v.a, null)), n.a.createElement("span", {
 						className: T.a.Name
 					}, t.namePlural)))
 				},
@@ -785,4 +786,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.61cb6c694d61ebc3fc48.js.map
+//# sourceMappingURL=Topic.3bff7d0a00d3bc5b9a63.js.map

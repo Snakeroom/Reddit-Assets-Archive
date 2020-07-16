@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a506b3d60ba82ae2b44c.js
-// Retrieved at 7/15/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6583a36d0adf4d8da08b.js
+// Retrieved at 7/16/2020, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3276,14 +3276,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("abe6e82-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("0fb756b-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "abe6e82-production",
+						release: "0fb756b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3698,7 +3698,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "abe6e82-production",
+							releaseClient: "0fb756b-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -17809,8 +17809,8 @@
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
-				r = i("./node_modules/reselect/es/index.js"),
-				s = i("./src/reddit/selectors/subreddit.ts");
+				r = i("./node_modules/reselect/es/index.js");
+			var s = i("./src/reddit/selectors/subreddit.ts");
 			const o = Object(r.a)(e => e.topics.models, e => {
 					const t = {};
 					for (const i of Object.keys(e)) {
@@ -17845,7 +17845,21 @@
 						[a.Parent]: i.parentRelationships,
 						[a.Child]: i.childRelationships,
 						[a.Sibling]: i.siblingRelationships
-					} [e].reduce((e, t) => e.concat(t.relatedTopics), []).slice(0, t)
+					} [e].reduce((e, t) => e = function(e, t, i) {
+						const n = e.length + t.length,
+							r = Array(n);
+						let s = 0,
+							o = 0,
+							d = 0;
+						for (; o < e.length && d < t.length;) {
+							const n = e[o],
+								l = t[d];
+							i(n, l) < 0 ? (r[s] = n, o++) : (r[s] = l, d++), s++
+						}
+						for (; o < e.length;) r[s] = e[o], o++, s++;
+						for (; d < t.length;) r[s] = t[d], d++, s++;
+						return r
+					}(e, t.relatedTopics, (e, t) => e.name.localeCompare(t.name)), []).slice(0, t)
 				}),
 				_ = c(a.Parent, 3),
 				m = c(a.Sibling, 5),
@@ -21926,4 +21940,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.a506b3d60ba82ae2b44c.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.6583a36d0adf4d8da08b.js.map
