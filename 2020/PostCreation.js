@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8bfc26a9bc45a6b08d52.js
-// Retrieved at 7/16/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7cd1aa7127f3d7ef1ea1.js
+// Retrieved at 7/16/2020, 3:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOv~8a8059b8", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "20f0ef3-production"
+					SENTRY_RELEASE_VERSION: "f6b6b09-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -2582,7 +2582,7 @@
 						let {
 							gqlContext: a
 						} = i;
-						if (Object(m.g)(r(), {
+						if (Object(m.h)(r(), {
 								subredditId: t
 							})) return;
 						e(x());
@@ -2600,16 +2600,16 @@
 						gqlContext: o
 					} = s;
 					const r = n();
-					if (!Object(m.g)(r, {
+					if (!Object(m.h)(r, {
 							subredditId: e
 						})) return t(I({
 						subredditId: e
 					}));
-					if (!Object(m.f)(r, {
+					if (!Object(m.g)(r, {
 							subredditId: e,
 							type: u.g.standalonePosts
 						})) return;
-					const i = Object(m.b)(r, {
+					const i = Object(m.c)(r, {
 						subredditId: e,
 						type: u.g.standalonePosts
 					});
@@ -27653,7 +27653,7 @@
 						i = Object(S.U)(r),
 						a = Object(S.V)(r, e),
 						c = Object(S.g)(r),
-						l = Object(de.q)(r),
+						l = Object(de.r)(r),
 						d = Object(S.Y)(r);
 					if (!(a && c.id && i && Object(ie.f)(l))) return;
 					const u = c.id,
@@ -27683,24 +27683,28 @@
 						i = Object(S.U)(r),
 						a = Object(S.V)(r, e),
 						c = Object(S.g)(r),
-						l = Object(S.Y)(r);
+						l = Object(S.Y)(r),
+						d = Object(de.b)(r);
 					if (!a || !c.id || !i) return;
 					if (t(me(a)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(S.s)(n()))) return;
-					const d = await Object(ne.a)(o(), Object(ne.d)({
-						isRichTextMediaEnabled: l,
-						submission: a,
-						schedule: i,
-						subredditId: c.id
-					}));
-					if (d.ok) {
+					const u = Object.assign({}, Object(ne.d)({
+							isRichTextMediaEnabled: l,
+							submission: a,
+							schedule: i,
+							subredditId: c.id
+						}), {
+							creationToken: d
+						}),
+						p = await Object(ne.a)(o(), u);
+					if (p.ok) {
 						t(Object(F.e)({
 							subredditId: c.id
 						}));
-						const e = d.body.data.createScheduledPost.scheduledPost;
+						const e = p.body.data.createScheduledPost.scheduledPost;
 						return e && Object(N.a)(Object(ae.s)(Object(re.d)(e))(r)), void t(Object(L.G)(Ce(c.name), !1))
 					}
-					const u = d.error;
-					t(be(u))
+					const m = p.error;
+					t(be(m))
 				}, we = e => async (t, n, s) => {
 					let {
 						apiContext: o
@@ -27804,7 +27808,7 @@
 				Ne = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
 			const Re = "DISCARD_POST_ON_NAVIGATION_MODAL_ID",
 				Le = Object(i.c)({
-					isEditingScheduledPost: e => !!Object(de.q)(e),
+					isEditingScheduledPost: e => !!Object(de.r)(e),
 					isScheduledPost: S.I
 				});
 			var De = Object(r.b)(Le)(e => {
@@ -28937,7 +28941,7 @@
 					},
 					isScheduledPost: S.I,
 					postSchedule: S.U,
-					isEditingScheduledPost: e => !!Object(de.q)(e),
+					isEditingScheduledPost: e => !!Object(de.r)(e),
 					showContributorRequestFlow: e => Object(_.r)(e, g.e.Post),
 					showScheduledPosts: S.bb,
 					submissionType: S.a,
@@ -32023,7 +32027,7 @@
 								d = oe.d.rteVideoPoster(i),
 								u = Oe(i),
 								p = l === m.Jb.MEDIA;
-							u && (d || p) && (await n(P.f(u)), Oe(s())) || (e === f.q.Draft ? await n(Object(B.r)(t.draftId)) : e === f.q.ScheduledPost && Object(de.q)(i) ? await n(je(t)) : e === f.q.ScheduledPost ? await n(Se(t)) : await n(we(t)))
+							u && (d || p) && (await n(P.f(u)), Oe(s())) || (e === f.q.Draft ? await n(Object(B.r)(t.draftId)) : e === f.q.ScheduledPost && Object(de.r)(i) ? await n(je(t)) : e === f.q.ScheduledPost ? await n(Se(t)) : await n(we(t)))
 						})(t, {
 							draftId: n || void 0,
 							pageLayer: o,
@@ -32721,4 +32725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.8bfc26a9bc45a6b08d52.js.map
+//# sourceMappingURL=PostCreation.7cd1aa7127f3d7ef1ea1.js.map
