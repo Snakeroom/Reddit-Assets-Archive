@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ac7cc15a6129a28a2f62.js
-// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.75675f3ebcd411010420.js
+// Retrieved at 7/16/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3276,14 +3276,14 @@
 					}))
 				},
 				V = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("ad86e8f-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("20f0ef3-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ad86e8f-production",
+						release: "20f0ef3-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(C.d)(), new s.Integrations.Breadcrumbs({
@@ -3698,7 +3698,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "ad86e8f-production",
+							releaseClient: "20f0ef3-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -9918,7 +9918,7 @@
 			var n, r = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				s = i.n(r);
 			! function(e) {
-				e.YouTube = "YouTube", e.Vimeo = "Vimeo", e.BandCamp = "BandCamp", e.Gfycat = "Gfycat", e.GfycatOld = "gfycat", e.Giphy = "Giphy", e.Imgur = "Imgur", e.RedGIFS = "RedGIFS", e.SoundCloud = "SoundCloud", e.Spotify = "Spotify", e.Streamable = "Streamable", e.Twitch = "Twitch.tv", e.Twitter = "Twitter", e.IFrameEmbed = "iframe embed"
+				e.YouTube = "YouTube", e.Vimeo = "Vimeo", e.BandCamp = "BandCamp", e.Clyp = "Clyp", e.Gfycat = "Gfycat", e.GfycatOld = "gfycat", e.Giphy = "Giphy", e.Imgur = "Imgur", e.RedGIFS = "RedGIFS", e.SoundCloud = "SoundCloud", e.Spotify = "Spotify", e.Streamable = "Streamable", e.Twitch = "Twitch.tv", e.Twitter = "Twitter", e.IFrameEmbed = "iframe embed"
 			}(n || (n = {}));
 			const o = e => e.type === _.TEXT,
 				d = e => e.type === _.VIDEO,
@@ -9953,7 +9953,7 @@
 				O = 822,
 				B = 363,
 				x = 645,
-				j = new Set([n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
+				j = new Set([n.Clyp, n.Gfycat, n.GfycatOld, n.Giphy, n.RedGIFS, n.SoundCloud, n.Spotify, n.Twitter, n.Vimeo, n.YouTube]),
 				R = new Set([n.BandCamp, n.Gfycat, n.GfycatOld, n.Giphy, n.Imgur, n.RedGIFS, n.SoundCloud, n.Spotify, n.Streamable, n.Twitch, n.Twitter, n.YouTube, n.Vimeo]),
 				k = new Set([n.SoundCloud, n.Spotify, n.Streamable, n.Twitter, n.Vimeo, n.YouTube]),
 				C = new Set([n.Gfycat, n.GfycatOld, n.Imgur, n.RedGIFS]),
@@ -21940,4 +21940,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.ac7cc15a6129a28a2f62.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.75675f3ebcd411010420.js.map
