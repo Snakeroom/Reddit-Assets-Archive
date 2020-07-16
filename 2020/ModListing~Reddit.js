@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.43f75a90cd21edc29f74.js
-// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.38d4e7a6418a5fdaeb98.js
+// Retrieved at 7/16/2020, 5:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -798,9 +798,9 @@
 			})), n.d(t, "q", (function() {
 				return E
 			})), n.d(t, "a", (function() {
-				return S
-			})), n.d(t, "r", (function() {
 				return N
+			})), n.d(t, "r", (function() {
+				return S
 			}));
 			var r = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/controls/Button/index.tsx"),
@@ -826,8 +826,8 @@
 				C = r.a.textarea("TextArea", c.a),
 				_ = r.a.wrapped(s.f, "WarningButton", c.a),
 				E = r.a.wrapped(s.f, "PrimaryButton", c.a),
-				S = r.a.wrapped(s.i, "CancelButton", c.a),
-				N = r.a.wrapped(s.n, "RemoveButton", c.a)
+				N = r.a.wrapped(s.i, "CancelButton", c.a),
+				S = r.a.wrapped(s.n, "RemoveButton", c.a)
 		},
 		"./src/reddit/components/Portal/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1207,9 +1207,9 @@
 			})), n.d(t, "b", (function() {
 				return E
 			})), n.d(t, "c", (function() {
-				return S
-			})), n.d(t, "d", (function() {
 				return N
+			})), n.d(t, "d", (function() {
+				return S
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
@@ -1320,11 +1320,11 @@
 						style: n
 					}))
 				}),
-				S = e => s.a.createElement(c.b, {
+				N = e => s.a.createElement(c.b, {
 					className: m(e),
 					compact: e.compact
 				}),
-				N = e => s.a.createElement(p.b, {
+				S = e => s.a.createElement(p.b, {
 					className: h(e),
 					compact: e.compact
 				})
@@ -1646,9 +1646,9 @@
 			})), n.d(t, "e", (function() {
 				return E
 			})), n.d(t, "a", (function() {
-				return S
-			})), n.d(t, "d", (function() {
 				return N
+			})), n.d(t, "d", (function() {
+				return S
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
@@ -1731,8 +1731,8 @@
 				C = (i.a.wrapped(f, "TertiaryLinkButton", d.a), i.a.wrapped(p, "TertiaryRouterLink", d.a)),
 				_ = i.a.wrapped(b, "GoldButton", d.a),
 				E = i.a.wrapped(b, "PremiumButton", d.a),
-				S = i.a.wrapped(b, "ChatButton", d.a),
-				N = i.a.wrapped(b, "InlineTextButton", d.a)
+				N = i.a.wrapped(b, "ChatButton", d.a),
+				S = i.a.wrapped(b, "InlineTextButton", d.a)
 		},
 		"./src/reddit/controls/Downvote/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2154,7 +2154,7 @@
 			})), n.d(t, "f", (function() {
 				return E
 			})), n.d(t, "g", (function() {
-				return S
+				return N
 			})), n.d(t, "a", (function() {
 				return I
 			})), n.d(t, "j", (function() {
@@ -2278,7 +2278,7 @@
 								draftId: r
 							} = e.match.params, o = Object(s.a)(e.match.params);
 							if (!o) return;
-							N(t, o, r, n, i);
+							S(t, o, r, n, i);
 							break
 						}
 						case r.Bb.SUBREDDIT_WIKI:
@@ -2464,7 +2464,7 @@
 						adblock: h.adblock(e)
 					}))
 				},
-				S = (e, t, n, r) => {
+				N = (e, t, n, r) => {
 					Object(y.a)(Object.assign({
 						source: "global",
 						action: "view",
@@ -2476,7 +2476,7 @@
 						adblock: h.adblock(e)
 					}))
 				},
-				N = (e, t, n, r, s) => {
+				S = (e, t, n, r, s) => {
 					const o = e.creations.api.page.pending[t],
 						a = !e.creations.api.page.error[t] && !o && !!n,
 						c = Object(b.h)(e, n);
@@ -2558,33 +2558,46 @@
 					action: "view",
 					noun: "screen"
 				}, h.defaults(e)),
-				F = (e, t, n, s, o) => a => {
-					let i = !0;
+				F = (e, t, n, s, o, a) => i => {
+					let c = !0;
 					if (t.type.indexOf(r.Nb.Posts) > -1) {
 						const {
 							api: t
-						} = a.listings.listingOrder;
-						i = i && !t.error[e] && !t.pending[e]
+						} = i.listings.listingOrder;
+						c = c && !t.error[e] && !t.pending[e]
 					}
 					if (t.type.indexOf(r.Nb.Subreddits) > -1 || t.type.indexOf(r.Nb.Users) > -1) {
 						const {
 							api: t
-						} = a.listings.postOrder;
-						i = i && !t.error[e] && !t.pending[e]
+						} = i.listings.postOrder;
+						c = c && !t.error[e] && !t.pending[e]
 					}
-					return Object.assign({}, f.c(a, t), {
+					const d = h.paneName(i, o),
+						l = h.structureType(i, o),
+						u = i.platform.currentPage && i.platform.currentPage.urlParams && i.platform.currentPage.urlParams.subredditName ? h.subredditByName(i, i.platform.currentPage.urlParams.subredditName) : void 0;
+					return Object.assign({}, f.c(i, t), {
 						source: "global",
 						action: "view",
 						noun: "screen",
-						actionInfo: h.actionInfo(a, {
-							success: i
+						actionInfo: h.actionInfo(i, {
+							success: c,
+							paneName: d
 						}),
 						timer: h.timer(n, s),
-						search: Object.assign({}, h.search(a, t), !!o && {
-							originElement: o
+						search: Object.assign({}, h.search(i, t, !0, o || void 0), !!a && {
+							originElement: a
+						}, {
+							queryId: Object(p.c)(p.a.SearchResults),
+							structureType: l,
+							subredditId: t.restrict_sr && u && u.id ? u.id : void 0,
+							subredditName: t.restrict_sr && u && u.name ? u.name : void 0
 						})
-					}, !!o && {
+					}, !!a && {
 						correlationId: Object(p.c)(p.a.SearchResults)
+					}, {
+						userPreferences: {
+							hideNsfw: !i.user.prefs.over18
+						}
 					})
 				}
 		},
@@ -3112,4 +3125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.43f75a90cd21edc29f74.js.map
+//# sourceMappingURL=ModListing~Reddit.38d4e7a6418a5fdaeb98.js.map

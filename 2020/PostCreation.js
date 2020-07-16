@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.da85ade421405083d635.js
-// Retrieved at 7/16/2020, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5e62b97a67a50609764d.js
+// Retrieved at 7/16/2020, 5:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOv~8a8059b8", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "6e25183-production"
+					SENTRY_RELEASE_VERSION: "a16771f-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -25470,33 +25470,46 @@
 					action: "view",
 					noun: "screen"
 				}, f.defaults(e)),
-				F = (e, t, n, o, r) => i => {
-					let a = !0;
+				F = (e, t, n, o, r, i) => a => {
+					let c = !0;
 					if (t.type.indexOf(s.Nb.Posts) > -1) {
 						const {
 							api: t
-						} = i.listings.listingOrder;
-						a = a && !t.error[e] && !t.pending[e]
+						} = a.listings.listingOrder;
+						c = c && !t.error[e] && !t.pending[e]
 					}
 					if (t.type.indexOf(s.Nb.Subreddits) > -1 || t.type.indexOf(s.Nb.Users) > -1) {
 						const {
 							api: t
-						} = i.listings.postOrder;
-						a = a && !t.error[e] && !t.pending[e]
+						} = a.listings.postOrder;
+						c = c && !t.error[e] && !t.pending[e]
 					}
-					return Object.assign({}, h.c(i, t), {
+					const l = f.paneName(a, r),
+						d = f.structureType(a, r),
+						u = a.platform.currentPage && a.platform.currentPage.urlParams && a.platform.currentPage.urlParams.subredditName ? f.subredditByName(a, a.platform.currentPage.urlParams.subredditName) : void 0;
+					return Object.assign({}, h.c(a, t), {
 						source: "global",
 						action: "view",
 						noun: "screen",
-						actionInfo: f.actionInfo(i, {
-							success: a
+						actionInfo: f.actionInfo(a, {
+							success: c,
+							paneName: l
 						}),
 						timer: f.timer(n, o),
-						search: Object.assign({}, f.search(i, t), !!r && {
-							originElement: r
+						search: Object.assign({}, f.search(a, t, !0, r || void 0), !!i && {
+							originElement: i
+						}, {
+							queryId: Object(m.c)(m.a.SearchResults),
+							structureType: d,
+							subredditId: t.restrict_sr && u && u.id ? u.id : void 0,
+							subredditName: t.restrict_sr && u && u.name ? u.name : void 0
 						})
-					}, !!r && {
+					}, !!i && {
 						correlationId: Object(m.c)(m.a.SearchResults)
+					}, {
+						userPreferences: {
+							hideNsfw: !a.user.prefs.over18
+						}
 					})
 				}
 		},
@@ -32725,4 +32738,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.da85ade421405083d635.js.map
+//# sourceMappingURL=PostCreation.5e62b97a67a50609764d.js.map
