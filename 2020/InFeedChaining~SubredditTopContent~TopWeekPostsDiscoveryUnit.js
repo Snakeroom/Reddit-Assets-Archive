@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.01820a36562c50114cfc.js
-// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.66ea6331e57783e1fbc4.js
+// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -417,11 +417,11 @@
 				z = s.n(Q),
 				G = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				Z = s.n(G),
-				q = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
-				J = s.n(q);
+				J = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
+				q = s.n(J);
 
-			function Y() {
-				return (Y = Object.assign || function(e) {
+			function K() {
+				return (K = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -429,7 +429,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			class K extends i.a.Component {
+			class Y extends i.a.Component {
 				render() {
 					const {
 						autoplayPref: e,
@@ -472,14 +472,14 @@
 						}),
 						_ = !1;
 					P && k && (P.type !== V.o.RTJSON && P.type !== V.o.TEXT ? (k = i.a.createElement("div", {
-						className: J.a.mediaWrapper
+						className: q.a.mediaWrapper
 					}, k), _ = !0) : P && P.content && Object(B.a)(p) && (k = i.a.createElement("div", {
-						className: J.a.textWrapper
+						className: q.a.textWrapper
 					}, k)));
 					const j = !_ && !O;
 					let w;
 					return y && (w = Object(F.f)(y) ? Object(H.h)(y) : Object(H.i)(y)), i.a.createElement(A.a, {
-						className: Object(c.a)(J.a.container, Z.a.largeAndMediumActiveStyles, Z.a.largeAndMediumPostStyles, z.a.postContainer, Object(R.a)(this.props), s),
+						className: Object(c.a)(q.a.container, Z.a.largeAndMediumActiveStyles, Z.a.largeAndMediumPostStyles, z.a.postContainer, Object(R.a)(this.props), s),
 						post: p,
 						onClick: u,
 						eventFactory: r,
@@ -488,46 +488,46 @@
 						className: z.a.backgroundWrapper,
 						flairStyleTemplate: o
 					}, i.a.createElement("div", {
-						className: Object(c.a)(J.a.innerContainer, z.a.innerContainer)
-					}, E && y && i.a.createElement(I, Y({
+						className: Object(c.a)(q.a.innerContainer, z.a.innerContainer)
+					}, E && y && i.a.createElement(I, K({
 						created: p.created
-					}, w)), f && y && i.a.createElement(N, Y({
+					}, w)), f && y && i.a.createElement(N, K({
 						created: p.created,
 						author: p.author
 					}, w)), i.a.createElement(T.c, {
-						className: j ? J.a.postTitle : J.a.postTitleCompact,
+						className: j ? q.a.postTitle : q.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
 						post: p,
 						size: T.b.Large,
 						titleColor: o && o.postTitleColor
 					}), v && y && i.a.createElement(M.a, {
-						className: J.a.metaLine,
+						className: q.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
 						post: p,
 						subredditOrProfile: y
 					}), (_ || O) && i.a.createElement("div", {
-						className: J.a.flexSpacer
+						className: q.a.flexSpacer
 					}), O && i.a.createElement("div", {
-						className: J.a.mediaWrapper
+						className: q.a.mediaWrapper
 					}, i.a.createElement(W.a, {
-						className: J.a.thumbnailWrapper,
-						thumbnailClassName: J.a.thumbnail,
-						thumbnailContainerClassName: J.a.thumbnailContainer,
+						className: q.a.thumbnailWrapper,
+						thumbnailClassName: q.a.thumbnail,
+						thumbnailContainerClassName: q.a.thumbnailContainer,
 						post: p,
 						templatePlaceholderImage: o && o.postPlaceholderImage
 					})), k, i.a.createElement("div", {
-						className: J.a.metaWrapper
+						className: q.a.metaWrapper
 					}, i.a.createElement("span", {
-						className: J.a.meta
+						className: q.a.meta
 					}, h.fbt._({
 						"*": "{number} points",
 						_1: "1 score"
 					}, [h.fbt._plural(p.score, "number", Object(x.b)(p.score))], {
 						hk: "2ncFte"
 					})), i.a.createElement("span", {
-						className: J.a.meta
+						className: q.a.meta
 					}, h.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
@@ -538,7 +538,7 @@
 					}))
 				}
 			}
-			const X = Object(U.a)(Object(C.a)(K));
+			const X = Object(U.a)(Object(C.a)(Y));
 			var $ = class extends i.a.Component {
 					render() {
 						return i.a.createElement(X, this.props)
@@ -696,8 +696,8 @@
 					} = t;
 					return {
 						openOverlay: t => e(Object(u.a)(t.permalink)),
-						trackPostClick: (t, s) => e((e, n) => a ? p.v(n(), a, t, s) : null),
-						trackPostSubredditClick: t => e((e, n) => s ? p.x(n(), s, t) : a ? p.x(n(), a, t) : null)
+						trackPostClick: (t, s) => e((e, n) => a ? p.w(n(), a, t, s) : null),
+						trackPostSubredditClick: t => e((e, n) => s ? p.y(n(), s, t) : a ? p.y(n(), a, t) : null)
 					}
 				}),
 				ke = Object(m.t)();
@@ -720,7 +720,7 @@
 							searchOptions: o
 						} = this.props;
 						let c;
-						return (c = "subreddit" === t && o ? p.H(o, i, n, r) : r && o ? p.I(o, i, n, r) : p.u(s, a))(e)
+						return (c = "subreddit" === t && o ? p.J(o, i, n, r) : r && o ? p.K(o, i, n, r) : p.v(s, a))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.01820a36562c50114cfc.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.66ea6331e57783e1fbc4.js.map

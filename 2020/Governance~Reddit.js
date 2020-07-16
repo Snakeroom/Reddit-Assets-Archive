@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1c724f73fa266f8848a9.js
-// Retrieved at 7/16/2020, 5:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3ef34d6ea7c72c0000e0.js
+// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -7030,10 +7030,10 @@
 							}))
 						})(T.map(e => e.name))), l = a(), Object(g.f)(l, {
 							postId: s
-						}).length < b.c ? Object(r.a)(Object(m.b)(j, "other", I)(l)) : (Object(f.a)(s, I.id), Object(r.a)(Object(m.c)(j, I)(l)), e(y({
+						}).length < b.c ? Object(r.a)(Object(m.c)(j, "other", I)(l)) : (Object(f.a)(s, I.id), Object(r.a)(Object(m.d)(j, I)(l)), e(y({
 							listingKey: n,
 							postId: s
-						})))) : Object(r.a)(Object(m.b)(j, "no_chaining", I)(l))
+						})))) : Object(r.a)(Object(m.c)(j, "no_chaining", I)(l))
 					}
 				},
 				S = "FEED_CHAINING__CHAIN_TOGGLED",
@@ -28172,83 +28172,85 @@
 		},
 		"./src/reddit/helpers/trackers/discoveryUnit.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "f", (function() {
-				return h
-			})), n.d(t, "g", (function() {
-				return j
-			})), n.d(t, "J", (function() {
-				return S
-			})), n.d(t, "K", (function() {
-				return v
-			})), n.d(t, "L", (function() {
-				return T
-			})), n.d(t, "A", (function() {
-				return w
-			})), n.d(t, "B", (function() {
-				return C
-			})), n.d(t, "C", (function() {
-				return A
+			n.d(t, "g", (function() {
+				return _
 			})), n.d(t, "h", (function() {
-				return D
-			})), n.d(t, "v", (function() {
-				return R
-			})), n.d(t, "w", (function() {
-				return P
-			})), n.d(t, "I", (function() {
-				return x
-			})), n.d(t, "H", (function() {
-				return k
-			})), n.d(t, "F", (function() {
-				return N
-			})), n.d(t, "u", (function() {
-				return L
-			})), n.d(t, "x", (function() {
-				return U
-			})), n.d(t, "y", (function() {
-				return M
-			})), n.d(t, "z", (function() {
-				return F
-			})), n.d(t, "M", (function() {
-				return G
-			})), n.d(t, "G", (function() {
-				return B
-			})), n.d(t, "s", (function() {
-				return q
-			})), n.d(t, "E", (function() {
-				return V
-			})), n.d(t, "c", (function() {
-				return H
-			})), n.d(t, "b", (function() {
-				return K
+				return h
 			})), n.d(t, "a", (function() {
-				return W
-			})), n.d(t, "e", (function() {
-				return Y
-			})), n.d(t, "d", (function() {
-				return z
-			})), n.d(t, "r", (function() {
-				return X
-			})), n.d(t, "l", (function() {
-				return Z
-			})), n.d(t, "q", (function() {
-				return $
-			})), n.d(t, "j", (function() {
-				return ee
-			})), n.d(t, "k", (function() {
-				return te
-			})), n.d(t, "m", (function() {
-				return ne
-			})), n.d(t, "o", (function() {
-				return se
-			})), n.d(t, "p", (function() {
-				return re
-			})), n.d(t, "n", (function() {
-				return oe
-			})), n.d(t, "i", (function() {
-				return ae
-			})), n.d(t, "t", (function() {
-				return ce
+				return I
+			})), n.d(t, "E", (function() {
+				return S
+			})), n.d(t, "L", (function() {
+				return v
+			})), n.d(t, "M", (function() {
+				return T
+			})), n.d(t, "B", (function() {
+				return w
+			})), n.d(t, "C", (function() {
+				return C
 			})), n.d(t, "D", (function() {
+				return A
+			})), n.d(t, "i", (function() {
+				return D
+			})), n.d(t, "w", (function() {
+				return R
+			})), n.d(t, "x", (function() {
+				return P
+			})), n.d(t, "K", (function() {
+				return x
+			})), n.d(t, "J", (function() {
+				return k
+			})), n.d(t, "H", (function() {
+				return N
+			})), n.d(t, "v", (function() {
+				return L
+			})), n.d(t, "y", (function() {
+				return U
+			})), n.d(t, "z", (function() {
+				return M
+			})), n.d(t, "A", (function() {
+				return F
+			})), n.d(t, "N", (function() {
+				return G
+			})), n.d(t, "I", (function() {
+				return B
+			})), n.d(t, "t", (function() {
+				return q
+			})), n.d(t, "G", (function() {
+				return V
+			})), n.d(t, "d", (function() {
+				return H
+			})), n.d(t, "c", (function() {
+				return K
+			})), n.d(t, "b", (function() {
+				return W
+			})), n.d(t, "f", (function() {
+				return Y
+			})), n.d(t, "e", (function() {
+				return z
+			})), n.d(t, "s", (function() {
+				return X
+			})), n.d(t, "m", (function() {
+				return Z
+			})), n.d(t, "r", (function() {
+				return $
+			})), n.d(t, "k", (function() {
+				return ee
+			})), n.d(t, "l", (function() {
+				return te
+			})), n.d(t, "n", (function() {
+				return ne
+			})), n.d(t, "p", (function() {
+				return se
+			})), n.d(t, "q", (function() {
+				return re
+			})), n.d(t, "o", (function() {
+				return oe
+			})), n.d(t, "j", (function() {
+				return ae
+			})), n.d(t, "u", (function() {
+				return ce
+			})), n.d(t, "F", (function() {
 				return ie
 			}));
 			var s, r = n("./src/lib/stringInterpolate/index.ts"),
@@ -28283,22 +28285,11 @@
 					action: "view",
 					noun: "discovery_unit"
 				}),
-				_ = (e, t) => Object.assign({}, b.defaults(e), {
-					correlationId: Object(c.c)(c.a.SearchResults),
-					screen: b.screen(e),
-					noun: "search_result_discovery_unit",
-					post: t ? b.post(e, t) : null,
-					discoveryUnit: {
-						name: d.l,
-						id: "xd_72",
-						type: "listing"
-					}
-				}),
-				h = (e, t) => {
-					Object(f.a)(j(t)(e))
+				_ = (e, t) => {
+					Object(f.a)(h(t)(e))
 				},
-				j = (e, t) => n => g(n, e, t),
-				y = (e, t, n, s) => "unitName" in t ? O(e, t, s) : ((e, t, n) => Object.assign({}, b.defaults(e), {
+				h = (e, t) => n => g(n, e, t),
+				j = (e, t, n, s) => "unitName" in t ? O(e, t, s) : ((e, t, n) => Object.assign({}, b.defaults(e), {
 					source: "search",
 					screen: b.screen(e),
 					search: n ? Object.assign({}, b.search(e, n), {
@@ -28311,12 +28302,12 @@
 						name: t.name
 					}
 				}))(e, t, n),
-				E = (e, t, n, r, o) => Object.assign({}, y(e, t, r, o), {
+				y = (e, t, n, r, o) => Object.assign({}, j(e, t, r, o), {
 					action: "view",
 					noun: s.ITEM_POST,
 					post: b.post(e, n)
 				}),
-				I = e => {
+				E = e => {
 					let {
 						post: t,
 						rawQuery: n,
@@ -28327,19 +28318,50 @@
 						rawQuery: n ? decodeURIComponent(n) : void 0,
 						structureType: t && t.isSponsored ? b.StructureType.PromotedTrend : b.StructureType.Trending
 					}
-				},
-				S = (e, t) => {
-					const n = t.post ? t.post.id : void 0;
-					Object(f.a)(Object.assign({}, _(e, n), {
-						metaSearch: I(t),
+				};
+			var I;
+			! function(e) {
+				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
+			}(I || (I = {}));
+			const S = (e, t, n) => {
+					const s = e.trending.models.filter(e => !e.post || !e.post.isSponsored).findIndex(e => e.id === t.id) + 1;
+					Object(f.a)(Object.assign({}, b.defaults(e), {
 						source: "search",
-						action: "click"
+						action: "click",
+						noun: "trending",
+						metaSearch: E(t),
+						discoveryUnit: n === I.POPULAR_CAROUSEL ? {
+							name: d.l,
+							id: d.l,
+							title: d.l,
+							type: "query"
+						} : void 0,
+						actionInfo: b.actionInfo(e, {
+							paneName: n,
+							position: s
+						}),
+						search: {
+							originPageType: e.platform.currentPage ? b.getPageTypeFromCurrentPage(e.platform.currentPage) : void 0,
+							query: t.rawQuery,
+							structureType: b.StructureType.Trending,
+							queryId: Object(c.c)(c.a.SearchResults)
+						}
 					}))
 				},
 				v = (e, t) => {
 					const n = t.post ? t.post.id : void 0;
-					Object(f.a)(Object.assign({}, _(e, n), {
-						metaSearch: I(t),
+					Object(f.a)(Object.assign({}, ((e, t) => Object.assign({}, b.defaults(e), {
+						correlationId: Object(c.c)(c.a.SearchResults),
+						screen: b.screen(e),
+						noun: "search_result_discovery_unit",
+						post: t ? b.post(e, t) : null,
+						discoveryUnit: {
+							name: d.l,
+							id: "xd_72",
+							type: "listing"
+						}
+					}))(e, n), {
+						metaSearch: E(t),
 						source: "search",
 						action: "view"
 					}))
@@ -28351,11 +28373,11 @@
 					}))
 				},
 				w = (e, t, n, s) => {
-					Object(f.a)(E(e, t, n, s))
+					Object(f.a)(y(e, t, n, s))
 				},
-				C = (e, t, n, s) => r => E(r, e, t, n, s),
+				C = (e, t, n, s) => r => y(r, e, t, n, s),
 				A = (e, t, n, r) => {
-					const o = y(e, t, r);
+					const o = j(e, t, r);
 					Object(f.a)(Object.assign({}, o, Object(p.b)(e, n), {
 						action: "view",
 						noun: s.ITEM_SUBREDDIT
@@ -28372,7 +28394,7 @@
 					Object(f.a)(P(t, n, s)(e))
 				},
 				P = (e, t, n, r) => o => {
-					const c = y(o, e, n, r);
+					const c = j(o, e, n, r);
 					return Object.assign({}, c, {
 						source: m,
 						action: a.c.CLICK,
@@ -28399,7 +28421,7 @@
 							postId: t
 						}),
 						c = o ? Object(p.b)(r, o) : void 0,
-						i = y(r, e, n, s);
+						i = j(r, e, n, s);
 					return Object.assign({}, i, c, {
 						source: m,
 						action: a.c.CLICK,
@@ -28412,7 +28434,7 @@
 							postId: t
 						}),
 						c = o ? Object(p.b)(r, o) : void 0,
-						i = y(r, e, void 0, n);
+						i = j(r, e, void 0, n);
 					return Object.assign({}, i, c, {
 						source: m,
 						action: a.c.CLICK,
@@ -28421,7 +28443,7 @@
 					})
 				},
 				G = (e, t, n) => {
-					const s = y(e, t);
+					const s = j(e, t);
 					Object(f.a)(Object.assign({}, s, Object(p.b)(e, n), {
 						source: "search",
 						action: a.c.CLICK,
@@ -28432,7 +28454,7 @@
 					Object(f.a)(Object.assign({}, b.defaults(e), Object(i.d)(e, t, n, s, r, void 0, o)))
 				},
 				q = (e, t, n) => {
-					const s = y(e, t);
+					const s = j(e, t);
 					Object(f.a)(Object.assign({}, s, Object(p.b)(e, n), {
 						source: m,
 						action: a.c.CLICK,
@@ -28466,7 +28488,7 @@
 					action: "click",
 					noun: "close"
 				}),
-				Y = (e, t, n) => s => Object.assign({}, y(s, e, t, n), {
+				Y = (e, t, n) => s => Object.assign({}, j(s, e, t, n), {
 					action: "click",
 					noun: "scroll"
 				}),
@@ -28497,7 +28519,7 @@
 				},
 				Z = (e, t, n) => {
 					const s = J();
-					return e => Object.assign({}, E(e, s, t), {
+					return e => Object.assign({}, y(e, s, t), {
 						actionInfo: Q(e, 0, n)
 					})
 				},
@@ -54549,4 +54571,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.1c724f73fa266f8848a9.js.map
+//# sourceMappingURL=Governance~Reddit.3ef34d6ea7c72c0000e0.js.map

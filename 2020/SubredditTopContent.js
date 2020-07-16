@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.163cd5608d322a4113a0.js
-// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.faf4f729b15ee0a13649.js
+// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -118,13 +118,13 @@
 				m = s("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.tsx"),
 				h = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				b = s("./src/reddit/components/Widgets/Base/index.tsx"),
-				f = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
-				g = s("./src/reddit/constants/experiments.ts"),
+				g = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
+				f = s("./src/reddit/constants/experiments.ts"),
 				x = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				y = s("./src/reddit/selectors/user.ts");
-			const O = e => Object(y.E)(e) || g.ic.ShowTopContent === Object(x.c)(e, {
+			const O = e => Object(y.E)(e) || f.ic.ShowTopContent === Object(x.c)(e, {
 				experimentEligibilitySelector: x.a,
-				experimentName: g.dc
+				experimentName: f.dc
 			});
 			var j = s("./src/reddit/selectors/subreddit.ts"),
 				v = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -133,9 +133,9 @@
 				inSubredditTopContentExperiment: O,
 				subredditUrl: j.d
 			}), e => ({
-				trackDiscoveryUnitView: t => e((e, s) => f.f(s(), t)),
-				trackDismissClick: t => e((e, s) => f.h(s(), t)),
-				trackPostView: o()((t, s, n) => e((e, r) => f.A(r(), t, s, n)), (e, t) => {
+				trackDiscoveryUnitView: t => e((e, s) => g.g(s(), t)),
+				trackDismissClick: t => e((e, s) => g.i(s(), t)),
+				trackPostView: o()((t, s, n) => e((e, r) => g.B(r(), t, s, n)), (e, t) => {
 					let {
 						id: s
 					} = e;
@@ -247,9 +247,9 @@
 				m = s("./src/reddit/selectors/posts.ts"),
 				h = s("./src/reddit/selectors/video.ts"),
 				b = s("./src/lib/classNames/index.ts"),
-				f = s("./src/higherOrderComponents/withClickTracking.tsx"),
-				g = s("./src/reddit/components/PostContainer/index.m.less"),
-				x = s.n(g);
+				g = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				f = s("./src/reddit/components/PostContainer/index.m.less"),
+				x = s.n(f);
 			const y = Object(o.c)({
 					basePixelMetadata: (e, t) => {
 						let {
@@ -290,8 +290,8 @@
 				}),
 				O = Object(u.a)(y),
 				j = e => {
-					const t = Object(f.d)(e.target, e.currentTarget),
-						s = Object(f.b)(e.target, e.currentTarget, f.a.buttons);
+					const t = Object(g.d)(e.target, e.currentTarget),
+						s = Object(g.b)(e.target, e.currentTarget, g.a.buttons);
 					return "subreddit" !== t && s
 				};
 			class v extends r.a.Component {
@@ -326,8 +326,8 @@
 						}),
 						id: o ? o(c.id) : c.id,
 						tabIndex: -1
-					}, s), f = !!c.media && c.media.type === p.o.VIDEO;
-					return c.isSponsored || f ? r.a.createElement(i.a, {
+					}, s), g = !!c.media && c.media.type === p.o.VIDEO;
+					return c.isSponsored || g ? r.a.createElement(i.a, {
 						post: c,
 						trackDisplay: !0
 					}, h) : c.media && Object(p.E)(c.media) ? r.a.createElement(l, {
@@ -335,7 +335,7 @@
 					}, h) : h
 				}
 			}
-			t.a = O(Object(f.c)(v))
+			t.a = O(Object(g.c)(v))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -359,8 +359,8 @@
 			const m = ["center", "top"],
 				h = ["center", "bottom"],
 				b = c.a.div("Container", p.a),
-				f = Object(i.a)(a.b),
-				g = Object(d.t)({
+				g = Object(i.a)(a.b),
+				f = Object(d.t)({
 					isProfileListingPage: d.F
 				});
 			class x extends o.a.Component {
@@ -393,7 +393,7 @@
 						className: p.a.quarantineIcon
 					}), n.fbt._("quarantined", null, {
 						hk: "3hfN4T"
-					}), o.a.createElement(f, {
+					}), o.a.createElement(g, {
 						text: n.fbt._("This post was submitted in a quarantined community", null, {
 							hk: "1Rebnc"
 						}),
@@ -404,7 +404,7 @@
 					}))
 				}
 			}
-			t.a = g(x)
+			t.a = f(x)
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -555,4 +555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.163cd5608d322a4113a0.js.map
+//# sourceMappingURL=SubredditTopContent.faf4f729b15ee0a13649.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.9a81c969efe4b6daff62.js
-// Retrieved at 7/14/2020, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.146af95b99d2dc78d479.js
+// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -335,7 +335,7 @@
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return q
+				return Y
 			}));
 			t("./node_modules/core-js/modules/es6.symbol.js");
 			var r = t("./node_modules/react/index.js"),
@@ -573,10 +573,10 @@
 					}))
 				}
 			}
-			const Y = Object(m.a)(Object(a.a)(Z));
-			class q extends i.a.Component {
+			const G = Object(m.a)(Object(a.a)(Z));
+			class Y extends i.a.Component {
 				render() {
-					return i.a.createElement(Y, this.props)
+					return i.a.createElement(G, this.props)
 				}
 			}
 		},
@@ -687,48 +687,48 @@
 							discoveryUnit: e,
 							postSubreddit: s
 						} = this.props;
-						e && this.props.sendEvent(Object(y.d)(e, s))
+						e && this.props.sendEvent(Object(y.e)(e, s))
 					}, this.onShowMeLessClick = () => {
 						const {
 							discoveryUnit: e,
 							dismissPostChaining: s,
 							postSubreddit: t
 						} = this.props;
-						s(), e && this.props.sendEvent(Object(y.a)(e, t))
+						s(), e && this.props.sendEvent(Object(y.b)(e, t))
 					}, this.getItemPostSubredditSubscribeEventFactory = e => {
 						const {
 							discoveryUnit: s,
 							postSubreddit: t
 						} = this.props;
-						if (s) return Object(y.z)(s, e, t)
+						if (s) return Object(y.A)(s, e, t)
 					}, this.trackDiscoveryUnitViewed = () => {
 						const {
 							discoveryUnit: e,
 							postSubreddit: s
 						} = this.props;
-						e && this.props.sendEvent(Object(y.g)(e, s))
+						e && this.props.sendEvent(Object(y.h)(e, s))
 					}, this.trackArrowClicked = e => {
 						const {
 							postSubreddit: s
 						} = this.props;
-						this.props.sendEvent(Object(y.e)(e, void 0, s))
+						this.props.sendEvent(Object(y.f)(e, void 0, s))
 					}, this.trackPostViewed = (e, s) => {
 						const {
 							postSubreddit: t
 						} = this.props;
-						this.props.sendEvent(Object(y.B)(e, s, void 0, t))
+						this.props.sendEvent(Object(y.C)(e, s, void 0, t))
 					}, this.trackSubredditClicked = () => {
 						const {
 							discoveryUnit: e,
 							postSubreddit: s
 						} = this.props;
-						e && s && this.props.sendEvent(Object(y.E)(e, s))
+						e && s && this.props.sendEvent(Object(y.G)(e, s))
 					}, this.trackPostSubredditOrProfileClicked = e => {
 						const {
 							discoveryUnit: s,
 							postSubreddit: t
 						} = this.props;
-						s && this.props.sendEvent(Object(y.y)(s, e, void 0, t))
+						s && this.props.sendEvent(Object(y.z)(s, e, void 0, t))
 					}, this.openPost = (e, s) => {
 						this.props.openPost(s);
 						const {
@@ -1230,4 +1230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.9a81c969efe4b6daff62.js.map
+//# sourceMappingURL=InFeedChaining.146af95b99d2dc78d479.js.map

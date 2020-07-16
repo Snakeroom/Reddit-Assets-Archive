@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d6ed5755c63d16f3d462.js
-// Retrieved at 7/16/2020, 5:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.7762ba01b07fcc9bb7aa.js
+// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2174,8 +2174,8 @@
 					} = t;
 					return {
 						openOverlay: t => e(Object(p.a)(t.permalink)),
-						trackPostClick: (t, s) => e((e, r) => n ? u.v(r(), n, t, s) : null),
-						trackPostSubredditClick: t => e((e, r) => s ? u.x(r(), s, t) : n ? u.x(r(), n, t) : null)
+						trackPostClick: (t, s) => e((e, r) => n ? u.w(r(), n, t, s) : null),
+						trackPostSubredditClick: t => e((e, r) => s ? u.y(r(), s, t) : n ? u.y(r(), n, t) : null)
 					}
 				}),
 				_e = Object(m.t)();
@@ -2198,7 +2198,7 @@
 							searchOptions: i
 						} = this.props;
 						let c;
-						return (c = "subreddit" === t && i ? u.H(i, o, r, a) : a && i ? u.I(i, o, r, a) : u.u(s, n))(e)
+						return (c = "subreddit" === t && i ? u.J(i, o, r, a) : a && i ? u.K(i, o, r, a) : u.v(s, n))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -4341,7 +4341,7 @@
 						}
 					})
 				}, e => ({
-					trackPostView: (t, s, n, r, o) => "unitName" in t ? e((e, r) => h.A(r(), t, s, n)) : n ? e((e, a) => h.L(a(), t, s, n, o, r)) : void 0
+					trackPostView: (t, s, n, r, o) => "unitName" in t ? e((e, r) => h.B(r(), t, s, n)) : n ? e((e, a) => h.M(a(), t, s, n, o, r)) : void 0
 				}))(e => {
 					const t = r.a.createElement(r.a.Fragment, null, r.a.createElement(b.a, {
 						className: v.a.widgetHeader
@@ -4645,7 +4645,7 @@
 					searchOptions: a
 				} = t;
 				return {
-					trackSubredditView: E()((t, s) => e((e, n) => h.C(n(), t, s, a)), (e, t) => {
+					trackSubredditView: E()((t, s) => e((e, n) => h.D(n(), t, s, a)), (e, t) => {
 						let {
 							id: s
 						} = e, {
@@ -4655,14 +4655,14 @@
 					}),
 					navigateToSubreddit: t => {
 						e((e, n) => {
-							s ? h.s(n(), s, t) : o && h.M(n(), o, t), t.displayText && e(Object(j.b)("/".concat(t.displayText)))
-						}), o && a && t.id && e((e, s) => h.G(s(), a, r, {
+							s ? h.t(n(), s, t) : o && h.N(n(), o, t), t.displayText && e(Object(j.b)("/".concat(t.displayText)))
+						}), o && a && t.id && e((e, s) => h.I(s(), a, r, {
 							id: t.id,
 							type: t.type
 						}, n, o))
 					},
 					onCommunityClick: t => {
-						o && a && e((e, s) => h.G(s(), a, r, t, n, o))
+						o && a && e((e, s) => h.I(s(), a, r, t, n, o))
 					}
 				}
 			});
@@ -6048,7 +6048,7 @@
 							post: a
 						} = this.props;
 						let i;
-						return (i = "subreddit" === t ? h.H(r, o, s, n) : a && a.isSponsored ? h.F(r, o, s, n) : h.I(r, o, s, n))(e)
+						return (i = "subreddit" === t ? h.J(r, o, s, n) : a && a.isSponsored ? h.H(r, o, s, n) : h.K(r, o, s, n))(e)
 					}
 				}
 				componentDidMount() {
@@ -6217,7 +6217,7 @@
 			}));
 			const fr = new ve.a(1),
 				gr = Object(o.b)(null, e => ({
-					trackOnHeroUnitEnteredViewport: (t, s, n, r, o, a) => e((e, i) => h.L(i(), t, s, n, o, r, a))
+					trackOnHeroUnitEnteredViewport: (t, s, n, r, o, a) => e((e, i) => h.M(i(), t, s, n, o, r, a))
 				}));
 			var vr = Object(k.t)()(gr(Object(we.c)(e => {
 					const {
@@ -9616,4 +9616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.d6ed5755c63d16f3d462.js.map
+//# sourceMappingURL=SearchResults.7762ba01b07fcc9bb7aa.js.map

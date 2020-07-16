@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4141aa681be681438abe.js
-// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7ebe767cdbdc1b667fa6.js
+// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -4400,19 +4400,19 @@
 							discoveryUnit: e,
 							subreddit: t
 						} = this.props;
-						e && this.props.sendEvent(Object(Fe.g)(e, t))
+						e && this.props.sendEvent(Object(Fe.h)(e, t))
 					}, this.trackPostClicked = e => {
 						const {
 							discoveryUnit: t,
 							subreddit: n
 						} = this.props;
-						t && this.props.sendEvent(Object(Fe.w)(t, e, void 0, n))
+						t && this.props.sendEvent(Object(Fe.x)(t, e, void 0, n))
 					}, this.trackPostViewed = e => {
 						const {
 							discoveryUnit: t,
 							subreddit: n
 						} = this.props;
-						t && this.props.sendEvent(Object(Fe.B)(t, e, void 0, n))
+						t && this.props.sendEvent(Object(Fe.C)(t, e, void 0, n))
 					}
 				}
 				componentDidMount() {
@@ -7505,4 +7505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.4141aa681be681438abe.js.map
+//# sourceMappingURL=Subreddit.7ebe767cdbdc1b667fa6.js.map

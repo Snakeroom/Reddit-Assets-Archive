@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c109afbf48aed672a557.js
-// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.06f760edb8f89d765e97.js
+// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -182,7 +182,7 @@
 			class x extends r.a.Component {
 				constructor(e) {
 					super(e), this.hasFiredViewEvent = !1, this.getLocalStorageDisabled = () => !0, this.setLocalStorageDisabled = () => void 0, this.trackViewEvent = () => {
-						this.hasFiredViewEvent || (this.props.sendEvent(Object(b.r)(this.props.listingKey, this.props.interactedSubredditId, this.props.listingPosition)), this.hasFiredViewEvent = !0)
+						this.hasFiredViewEvent || (this.props.sendEvent(Object(b.s)(this.props.listingKey, this.props.interactedSubredditId, this.props.listingPosition)), this.hasFiredViewEvent = !0)
 					}, this.onHideComponent = () => {
 						const {
 							hideComponent: e,
@@ -190,14 +190,14 @@
 							listingKey: s,
 							listingPosition: n
 						} = this.props;
-						this.setLocalStorageDisabled(), e(), this.props.sendEvent(Object(b.n)(s, t, n))
+						this.setLocalStorageDisabled(), e(), this.props.sendEvent(Object(b.o)(s, t, n))
 					}, this.onSubredditClick = () => {
 						const {
 							interactedSubredditId: e,
 							listingKey: t,
 							listingPosition: s
 						} = this.props;
-						this.props.sendEvent(Object(b.i)(t, e, s))
+						this.props.sendEvent(Object(b.j)(t, e, s))
 					}, this.getLocalStorageDisabled = Object(u.B)(), this.setLocalStorageDisabled = Object(u.S)()
 				}
 				componentDidMount() {
@@ -269,7 +269,7 @@
 			class B extends r.a.Component {
 				constructor() {
 					super(...arguments), this.hasFiredViewEvent = !1, this.trackViewEvent = () => {
-						this.props.post && !this.hasFiredViewEvent && (this.props.sendEvent(Object(b.l)(this.props.listingKey, this.props.postId, this.props.position)), this.hasFiredViewEvent = !0)
+						this.props.post && !this.hasFiredViewEvent && (this.props.sendEvent(Object(b.m)(this.props.listingKey, this.props.postId, this.props.position)), this.hasFiredViewEvent = !0)
 					}, this.onPostClick = () => {
 						const {
 							listingKey: e,
@@ -279,7 +279,7 @@
 							sendEvent: r,
 							position: o
 						} = this.props;
-						t(s), r(Object(b.j)(e, n, o))
+						t(s), r(Object(b.k)(e, n, o))
 					}, this.onSubredditNameClick = () => {
 						const {
 							listingKey: e,
@@ -288,7 +288,7 @@
 							subreddit: n,
 							position: r
 						} = this.props;
-						n && s(Object(b.k)(e, t, n.id, r))
+						n && s(Object(b.l)(e, t, n.id, r))
 					}, this.getSubscribeEventFactory = e => {
 						const {
 							listingKey: t,
@@ -296,7 +296,7 @@
 							postId: n,
 							position: r
 						} = this.props;
-						return e ? Object(b.p)(t, s && s.id || "", r, n) : Object(b.o)(t, s && s.id || "", r, n)
+						return e ? Object(b.q)(t, s && s.id || "", r, n) : Object(b.p)(t, s && s.id || "", r, n)
 					}
 				}
 				componentDidMount() {
@@ -538,7 +538,7 @@
 							position: r,
 							sendEvent: o
 						} = this.props;
-						e && t && !this.hasFiredViewEvent && (o(Object(E.q)(s, n, r)), this.hasFiredViewEvent = !0)
+						e && t && !this.hasFiredViewEvent && (o(Object(E.r)(s, n, r)), this.hasFiredViewEvent = !0)
 					}, this.onSubredditClick = () => {
 						const {
 							listingKey: e,
@@ -547,7 +547,7 @@
 							subredditId: n,
 							position: r
 						} = this.props;
-						s(t ? Object(O.c)(n) : Object(E.m)(e, n, r))
+						s(t ? Object(O.c)(n) : Object(E.n)(e, n, r))
 					}, this.getSubscribeEventFactory = e => {
 						const {
 							listingKey: t,
@@ -555,7 +555,7 @@
 							subredditId: n,
 							position: r
 						} = this.props;
-						return e ? s ? Object(O.e)(n) : Object(E.p)(t, n, r) : s ? Object(O.d)(n) : Object(E.o)(t, n, r)
+						return e ? s ? Object(O.e)(n) : Object(E.q)(t, n, r) : s ? Object(O.d)(n) : Object(E.p)(t, n, r)
 					}
 				}
 				componentDidMount() {
@@ -1335,4 +1335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c109afbf48aed672a557.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.06f760edb8f89d765e97.js.map

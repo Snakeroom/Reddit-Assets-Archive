@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d9ef7853308f7f77e23d.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.ed878069b3eddaebf901.js
+// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -230,7 +230,7 @@
 							position: i,
 							sendEvent: r
 						} = this.props;
-						e && t && !this.hasFiredViewEvent && (r(Object(v.q)(s, n, i)), this.hasFiredViewEvent = !0)
+						e && t && !this.hasFiredViewEvent && (r(Object(v.r)(s, n, i)), this.hasFiredViewEvent = !0)
 					}, this.onSubredditClick = () => {
 						const {
 							listingKey: e,
@@ -239,7 +239,7 @@
 							subredditId: n,
 							position: i
 						} = this.props;
-						s(t ? Object(O.c)(n) : Object(v.m)(e, n, i))
+						s(t ? Object(O.c)(n) : Object(v.n)(e, n, i))
 					}, this.getSubscribeEventFactory = e => {
 						const {
 							listingKey: t,
@@ -247,7 +247,7 @@
 							subredditId: n,
 							position: i
 						} = this.props;
-						return e ? s ? Object(O.e)(n) : Object(v.p)(t, n, i) : s ? Object(O.d)(n) : Object(v.o)(t, n, i)
+						return e ? s ? Object(O.e)(n) : Object(v.q)(t, n, i) : s ? Object(O.d)(n) : Object(v.p)(t, n, i)
 					}
 				}
 				componentDidMount() {
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.d9ef7853308f7f77e23d.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.ed878069b3eddaebf901.js.map
