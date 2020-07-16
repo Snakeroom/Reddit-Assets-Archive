@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.bee00884346c1e940d2f.js
-// Retrieved at 7/16/2020, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e05084c1ebeb5fedb68f.js
+// Retrieved at 7/16/2020, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOv~8a8059b8", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -727,7 +727,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				O = Object({
-					SENTRY_RELEASE_VERSION: "0fb756b-production"
+					SENTRY_RELEASE_VERSION: "d0d65de-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -6757,7 +6757,6 @@
 				emptyCaptionBlock: "cKdLDCF6ney9RBLRzJt8j",
 				imageCaption: "_15nNdGlBIgryHV04IfAfpA",
 				slideIndicator: "_61i6grM3um1yuw4GrN97P",
-				blurredContent: "kYRcqD1CH-tXu0xGsAOLH",
 				unblurButtonContainer: "XU8P4L1nSifowaG9_gEQu",
 				unblurButton: "_2xd9ygloNjk8lC1O8LrxPo"
 			}
@@ -6815,40 +6814,42 @@
 				const {
 					slideIndex: t,
 					currentIndex: n,
-					optimalImage: s,
-					originalImage: r,
-					isListing: a
-				} = e, c = n === t ? {
+					obfuscatedImage: s,
+					optimalImage: r,
+					originalImage: a,
+					isListing: c
+				} = e, l = n === t ? {
 					left: "0px"
 				} : {
 					left: n > t ? "-100%" : "100%"
-				}, l = Object(h.c)(a), d = r.y > l && Object(b.I)(r.y, r.x), u = d ? {} : {
+				}, d = Object(h.c)(c), u = a.y > d && Object(b.I)(a.y, a.x), p = u ? {} : {
 					maxHeight: "100%"
-				}, p = d ? r : s;
-				return o.a.createElement("li", {
-					style: c,
+				};
+				let m;
+				return m = s || (u ? a : r), o.a.createElement("li", {
+					style: l,
 					className: y.a.slide
 				}, o.a.createElement("figure", {
 					className: Object(i.a)({
-						[y.a.tallImage]: d,
-						[y.a.commonImage]: !d
+						[y.a.tallImage]: u,
+						[y.a.commonImage]: !u
 					}, y.a.figure)
-				}, a ? o.a.createElement(C, {
-					displayImage: p,
-					style: u,
-					showSeeMore: d
+				}, c ? o.a.createElement(C, {
+					displayImage: m,
+					style: p,
+					showSeeMore: u
 				}) : o.a.createElement("a", {
-					href: "u" in r ? r.u : r.gif,
+					href: "u" in a ? a.u : a.gif,
 					rel: "noopener noreferrer",
 					target: "_blank",
 					className: Object(i.a)({
-						[y.a.tallImage]: d,
-						[y.a.commonImage]: !d
+						[y.a.tallImage]: u,
+						[y.a.commonImage]: !u
 					}, y.a.imageLink)
 				}, o.a.createElement(C, {
-					displayImage: p,
-					style: u,
-					showSeeMore: d
+					displayImage: m,
+					style: p,
+					showSeeMore: u
 				}))))
 			}, O = e => o.a.createElement("a", {
 				className: Object(i.a)(e.className, y.a.navigationUnderlay, {
@@ -6957,22 +6958,23 @@
 				}, o.a.createElement("div", {
 					className: y.a.imagesWrapper
 				}, o.a.createElement("ul", {
-					className: Object(i.a)(y.a.slideWrapper, {
-						[y.a.blurredContent]: e.shouldBlur
-					})
+					className: y.a.slideWrapper
 				}, d.map((t, n) => {
 					const s = t.mediaId,
 						r = x && x[s];
 					if (!r || !r.s) return null;
 					const i = Object(h.d)(u, r);
-					return i ? o.a.createElement(E, {
+					if (!i) return null;
+					const a = e.shouldBlur && r.o && r.o.length > 0 ? r.o[0] : void 0;
+					return o.a.createElement(E, {
 						slideIndex: n,
 						currentIndex: C,
+						obfuscatedImage: a,
 						optimalImage: i,
 						originalImage: r.s,
 						isListing: e.isListing,
 						key: s
-					}) : null
+					})
 				})), e.shouldBlur && !e.isListing && o.a.createElement("div", {
 					className: y.a.unblurButtonContainer
 				}, o.a.createElement("button", {
@@ -32703,4 +32705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.bee00884346c1e940d2f.js.map
+//# sourceMappingURL=PostCreation.e05084c1ebeb5fedb68f.js.map
