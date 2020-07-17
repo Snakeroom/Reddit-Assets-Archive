@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.3e8dedc96109a746aa8d.js
-// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.0fc646a3091daf6e1bf2.js
+// Retrieved at 7/17/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -9227,7 +9227,7 @@
 					path: "".concat(u, "news/")
 				}, {
 					name: "Gaming",
-					id: "c1005",
+					id: "c1019",
 					path: "".concat(u, "gaming/")
 				}, {
 					name: "Aww",
@@ -13572,4 +13572,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.3e8dedc96109a746aa8d.js.map
+//# sourceMappingURL=Reddit.0fc646a3091daf6e1bf2.js.map
