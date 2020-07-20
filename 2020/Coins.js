@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.a1c00dbaa3181b04d09e.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.8cd36273ae57cd2006cb.js
+// Retrieved at 7/20/2020, 11:00:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -285,7 +285,7 @@
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
-				href: "http://redditgifts.com/"
+				href: "https://redditgifts.com/"
 			}, l._("reddit gifts", null, {
 				hk: "3WNNEy"
 			}))))), n.a.createElement("div", {
@@ -979,4 +979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.a1c00dbaa3181b04d09e.js.map
+//# sourceMappingURL=Coins.8cd36273ae57cd2006cb.js.map

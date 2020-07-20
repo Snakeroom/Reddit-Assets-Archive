@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.94998ed560a6dd2904e3.js
-// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3aac9ed76aebfc78ac6f.js
+// Retrieved at 7/20/2020, 11:00:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -10728,7 +10728,7 @@
 			}, l._("Reddit premium", null, {
 				hk: "RuO3A"
 			})), o.a.createElement(m, {
-				href: "http://redditgifts.com/"
+				href: "https://redditgifts.com/"
 			}, l._("Reddit gifts", null, {
 				hk: "2XziRN"
 			})), e.isFrontpage && o.a.createElement(o.a.Fragment, null, o.a.createElement(m, {
@@ -16402,4 +16402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.94998ed560a6dd2904e3.js.map
+//# sourceMappingURL=CollectionCommentsPage.3aac9ed76aebfc78ac6f.js.map

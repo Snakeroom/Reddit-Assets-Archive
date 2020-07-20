@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.6e663742a956e0983e01.js
-// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.febe9076544e32d99219.js
+// Retrieved at 7/20/2020, 11:00:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -6815,7 +6815,7 @@
 			}, l._("Reddit premium", null, {
 				hk: "RuO3A"
 			})), o.a.createElement(m, {
-				href: "http://redditgifts.com/"
+				href: "https://redditgifts.com/"
 			}, l._("Reddit gifts", null, {
 				hk: "2XziRN"
 			})), e.isFrontpage && o.a.createElement(o.a.Fragment, null, o.a.createElement(m, {
@@ -9868,4 +9868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.6e663742a956e0983e01.js.map
+//# sourceMappingURL=ProfileComments.febe9076544e32d99219.js.map

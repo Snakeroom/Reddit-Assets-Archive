@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.7762ba01b07fcc9bb7aa.js
-// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d61a9e156b740d3fa91e.js
+// Retrieved at 7/20/2020, 11:00:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -6879,7 +6879,7 @@
 			}, l._("Reddit premium", null, {
 				hk: "RuO3A"
 			})), r.a.createElement(m, {
-				href: "http://redditgifts.com/"
+				href: "https://redditgifts.com/"
 			}, l._("Reddit gifts", null, {
 				hk: "2XziRN"
 			})), e.isFrontpage && r.a.createElement(r.a.Fragment, null, r.a.createElement(m, {
@@ -9616,4 +9616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.7762ba01b07fcc9bb7aa.js.map
+//# sourceMappingURL=SearchResults.d61a9e156b740d3fa91e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.0f129c1257bef1e50eee.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.8a5933498dc47fb18f3c.js
+// Retrieved at 7/20/2020, 11:00:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -218,7 +218,7 @@
 				className: i.a.linkItem
 			}, s.a.createElement("a", {
 				className: i.a.link,
-				href: "http://redditgifts.com/"
+				href: "https://redditgifts.com/"
 			}, c._("reddit gifts", null, {
 				hk: "3WNNEy"
 			}))))), s.a.createElement("div", {
@@ -799,4 +799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Premium.0f129c1257bef1e50eee.js.map
+//# sourceMappingURL=Premium.8a5933498dc47fb18f3c.js.map
