@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.6b88c9cb1bc83f91aaae.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.b2aa744222942d38bdf0.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less": function(e, t, s) {
@@ -32,72 +32,72 @@
 				_ = s("./src/reddit/controls/Button/index.tsx"),
 				C = s("./src/reddit/helpers/economics/membershipPage.ts"),
 				O = s("./src/reddit/icons/svgs/AddSquare/index.tsx"),
-				x = s("./src/reddit/icons/svgs/Crown/index.tsx"),
-				f = s("./src/reddit/selectors/economics.ts"),
-				g = s("./src/reddit/selectors/telemetry.ts"),
-				v = s("./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less"),
-				j = s.n(v);
+				g = s("./src/reddit/icons/svgs/Crown/index.tsx"),
+				x = s("./src/reddit/selectors/economics.ts"),
+				f = s("./src/reddit/selectors/telemetry.ts"),
+				j = s("./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less"),
+				v = s.n(j);
 			class w extends o.a.Component {
 				constructor(e) {
 					super(e), this.correlationId = e.correlationId || u()()
 				}
 				componentDidMount() {
-					this.props.sendEvent(e => Object.assign({
+					this.props.sendEvent(e => Object.assign(Object.assign({
 						source: "meta",
 						action: "open",
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId
-					}, g.defaults(e), {
-						subreddit: g.subreddit(e)
+					}, f.defaults(e)), {
+						subreddit: f.subreddit(e)
 					}))
 				}
 				onOpenUploadDialog() {
 					this.props.onHideTooltip(), this.props.onOpenUploadDialog()
 				}
 				render() {
-					const e = this.props.userIsPremiumSubscriber === f.a.Subscribed,
+					const e = this.props.userIsPremiumSubscriber === x.a.Subscribed,
 						t = this.props.subreddit && this.props.subreddit.name || "",
 						s = this.props.meta;
 					return o.a.createElement("div", {
-						className: Object(p.a)(this.props.className, j.a.container),
+						className: Object(p.a)(this.props.className, v.a.container),
 						style: this.props.style
 					}, o.a.createElement("header", {
-						className: j.a.header
+						className: v.a.header
 					}, e ? l.fbt._("Custom Badge", null, {
 						hk: "4xui7o"
 					}) : l.fbt._("Upload Badge", null, {
 						hk: "41J8Iq"
 					})), o.a.createElement("article", {
-						className: j.a.content
+						className: v.a.content
 					}, e ? l.fbt._("Create a custom badge. Share it with other {memberAltPlural} for a reward.", [l.fbt._param("memberAltPlural", s.memberAltPlural)], {
 						hk: "1GYswu"
 					}) : l.fbt._("Users without a {membershipAlt} can design and upload badges and receive 3 months of {membership} for free.", [l.fbt._param("membershipAlt", s.membershipAlt), l.fbt._param("membership", s.membership)], {
 						hk: "lVti0"
 					})), o.a.createElement("footer", {
-						className: j.a.footer
+						className: v.a.footer
 					}, o.a.createElement(_.n, {
-						className: j.a.link,
+						className: v.a.link,
 						onClick: () => this.onOpenUploadDialog()
 					}, o.a.createElement(O.a, {
-						className: j.a.addCustomIcon
+						className: v.a.addCustomIcon
 					}), l.fbt._("upload custom badge", null, {
 						hk: "26VOvM"
 					})), !e && o.a.createElement(_.o, {
-						className: j.a.link,
+						className: v.a.link,
 						disabled: !this.props.subreddit,
 						to: Object(C.a)(t, this.correlationId),
 						onClick: e => {
-							e.stopPropagation(), this.props.sendEvent(e => Object.assign({
+							e.stopPropagation(), this.props.sendEvent(e => Object.assign(Object.assign({
 								source: "meta",
 								action: "click",
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId
-							}, g.defaults(e), {
-								subreddit: g.subreddit(e)
+							}, f.defaults(e)), {
+								subreddit: f.subreddit(e)
 							}))
 						}
-					}, o.a.createElement(x.a, {
-						className: j.a.crown
+					}, o.a.createElement(g.a, {
+						className: v.a.crown
 					}), l.fbt._("Get {membershipAlt}", [l.fbt._param("membershipAlt", s.membershipAlt)], {
 						hk: "2RRNNM"
 					}))))
@@ -108,7 +108,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(f.s)(e, s)
+					return Object(x.s)(e, s)
 				},
 				subreddit: (e, t) => {
 					let {
@@ -120,7 +120,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(f.x)(e, s)
+					return Object(x.x)(e, s)
 				}
 			});
 			var E = Object(h.c)(Object(n.b)(A, e => ({
@@ -170,4 +170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CustomBadgeHovercardTooltip.6b88c9cb1bc83f91aaae.js.map
+//# sourceMappingURL=CustomBadgeHovercardTooltip.b2aa744222942d38bdf0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.228a2ec864bcf7f6f875.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.76ba6d494b4f88464417.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-PostRequirements"], {
 		"./src/reddit/components/ModHub/PostRequirements/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -61,8 +61,8 @@
 				l = n("./node_modules/react/index.js"),
 				d = n.n(l),
 				c = n("./node_modules/react-redux/es/index.js"),
-				m = n("./node_modules/reselect/es/index.js"),
-				g = n("./src/reddit/actions/modal.ts"),
+				g = n("./node_modules/reselect/es/index.js"),
+				m = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/actions/postRequirements/index.ts"),
 				h = n("./src/reddit/components/BlockNavigation/index.tsx"),
 				b = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
@@ -99,20 +99,20 @@
 					};
 					return S()(t, e => Array.isArray(e) && !e.length)
 				},
-				B = e => t => Object.assign({
+				O = e => t => Object.assign(Object.assign({
 					source: "post_requirements",
 					action: "save",
 					noun: "settings"
-				}, q.defaults(t), {
+				}, q.defaults(t)), {
 					postRequirement: _(e),
 					subreddit: q.subreddit(t),
 					userSubreddit: q.userSubreddit(t)
 				});
-			var T = n("./src/reddit/selectors/activeModalId.ts"),
-				L = n("./src/reddit/selectors/platform.ts"),
-				O = n("./src/reddit/selectors/postRequirements.ts"),
-				j = n("./src/config.ts");
-			const w = "".concat(j.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360010322091"),
+			var j = n("./src/reddit/selectors/activeModalId.ts"),
+				B = n("./src/reddit/selectors/platform.ts"),
+				T = n("./src/reddit/selectors/postRequirements.ts"),
+				L = n("./src/config.ts");
+			const w = "".concat(L.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360010322091"),
 				N = 15,
 				P = 40,
 				F = {
@@ -245,7 +245,7 @@
 								titleRegexes: e
 							} = this.props.formState;
 							this.props.onChange({
-								titleRegexes: Object.assign({}, e, {
+								titleRegexes: Object.assign(Object.assign({}, e), {
 									enabled: !e.enabled
 								})
 							})
@@ -254,7 +254,7 @@
 								bodyRegexes: e
 							} = this.props.formState;
 							this.props.onChange({
-								bodyRegexes: Object.assign({}, e, {
+								bodyRegexes: Object.assign(Object.assign({}, e), {
 									enabled: !e.enabled
 								})
 							})
@@ -263,7 +263,7 @@
 								titleRegexes: t
 							} = this.props.formState;
 							this.props.onChange({
-								titleRegexes: Object.assign({}, t, {
+								titleRegexes: Object.assign(Object.assign({}, t), {
 									regexes: e,
 									serverErrors: []
 								})
@@ -273,7 +273,7 @@
 								bodyRegexes: t
 							} = this.props.formState;
 							this.props.onChange({
-								bodyRegexes: Object.assign({}, t, {
+								bodyRegexes: Object.assign(Object.assign({}, t), {
 									regexes: e,
 									serverErrors: []
 								})
@@ -349,7 +349,7 @@
 								formState: e
 							} = this.props;
 							this.props.onChange({
-								flairRequirement: Object.assign({}, e.flairRequirement, {
+								flairRequirement: Object.assign(Object.assign({}, e.flairRequirement), {
 									enabled: !e.flairRequirement.enabled
 								})
 							})
@@ -379,13 +379,13 @@
 				de = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/lodash/mapValues.js")),
 				ce = n.n(de);
 			n("./node_modules/core-js/modules/es6.regexp.split.js");
-			const me = e => e.split(/[,;\s]/).filter(Boolean),
-				ge = e => e.join(", "),
+			const ge = e => e.split(/[,;\s]/).filter(Boolean),
+				me = e => e.join(", "),
 				ue = ["i.redd.it", "v.redd.it"],
 				he = /^(?:[\w-]+\.)+[\w]+$/,
 				be = e => ue.includes(e.toLowerCase());
 			var pe = e => {
-					const t = me(e),
+					const t = ge(e),
 						n = [],
 						i = t.find(e => !(e => he.test(e))(e));
 					return i && n.push(s.fbt._('Invalid domain: "{domainName}"', [s.fbt._param("domainName", i)], {
@@ -477,12 +477,12 @@
 						}
 					}), n
 				},
-				Be = e => e.enabled && !e.guidelineText.trim() ? [s.fbt._("Guideline text cannot be empty", null, {
+				Oe = e => e.enabled && !e.guidelineText.trim() ? [s.fbt._("Guideline text cannot be empty", null, {
 					hk: "4pncO7"
 				})] : [],
-				Te = e => {
+				je = e => {
 					const t = Ce(e);
-					return t.guidelines.clientErrors = Be(t.guidelines), t.linkDomains.clientErrors = pe(t.linkDomains.domainsText), t.titleLength.clientErrors = (e => {
+					return t.guidelines.clientErrors = Oe(t.guidelines), t.linkDomains.clientErrors = pe(t.linkDomains.domainsText), t.titleLength.clientErrors = (e => {
 						let {
 							min: t,
 							max: n
@@ -501,18 +501,18 @@
 						return [...ke(t.requiredStrings, t.blacklistedStrings), ...Re(t.requiredStrings, t.maxTitleLength)]
 					})(t), t
 				},
-				Le = e => Object.keys(e).some(t => {
+				Be = e => Object.keys(e).some(t => {
 					const n = e[t];
 					return n.enabled && !(o()(n.clientErrors) && o()(n.serverErrors))
 				});
-			var Oe = class extends d.a.Component {
+			var Te = class extends d.a.Component {
 					constructor() {
 						super(...arguments), this.onToggleGuidelines = () => {
 							const {
 								formState: e
 							} = this.props;
 							this.props.onChange({
-								guidelines: Object.assign({}, e.guidelines, {
+								guidelines: Object.assign(Object.assign({}, e.guidelines), {
 									enabled: !e.guidelines.enabled
 								})
 							})
@@ -522,9 +522,9 @@
 									formState: n
 								} = this.props;
 							this.props.onChange({
-								guidelines: Object.assign({}, n.guidelines, {
+								guidelines: Object.assign(Object.assign({}, n.guidelines), {
 									guidelineText: t,
-									clientErrors: Be(Object.assign({}, n.guidelines, {
+									clientErrors: Oe(Object.assign(Object.assign({}, n.guidelines), {
 										guidelineText: t
 									}))
 								})
@@ -571,7 +571,7 @@
 						})))
 					}
 				},
-				je = (e, t, n) => {
+				Le = (e, t, n) => {
 					let s = Math.abs(parseInt(e, 10));
 					return Number.isInteger(s) ? (void 0 !== t && s < t && (s = t), void 0 !== n && s > n && (s = n), s) : null
 				},
@@ -584,7 +584,7 @@
 								formState: e
 							} = this.props;
 							this.props.onChange({
-								linkDomains: Object.assign({}, e.linkDomains, {
+								linkDomains: Object.assign(Object.assign({}, e.linkDomains), {
 									enabled: !e.linkDomains.enabled
 								})
 							})
@@ -593,16 +593,16 @@
 								formState: e
 							} = this.props;
 							this.props.onChange({
-								repostFrequency: Object.assign({}, e.repostFrequency, {
+								repostFrequency: Object.assign(Object.assign({}, e.repostFrequency), {
 									enabled: !e.repostFrequency.enabled
 								})
 							})
 						}, this.onRepostFrequencyChange = e => {
 							const {
 								formState: t
-							} = this.props, n = je(e.target.value, 1, 90);
+							} = this.props, n = Le(e.target.value, 1, 90);
 							this.props.onChange({
-								repostFrequency: Object.assign({}, t.repostFrequency, {
+								repostFrequency: Object.assign(Object.assign({}, t.repostFrequency), {
 									days: n
 								})
 							})
@@ -611,7 +611,7 @@
 								formState: t
 							} = this.props;
 							this.props.onChange({
-								linkDomains: Object.assign({}, t.linkDomains, {
+								linkDomains: Object.assign(Object.assign({}, t.linkDomains), {
 									restrictionPolicy: e
 								})
 							})
@@ -620,7 +620,7 @@
 								formState: t
 							} = this.props, n = e.target.value;
 							this.props.onChange({
-								linkDomains: Object.assign({}, t.linkDomains, {
+								linkDomains: Object.assign(Object.assign({}, t.linkDomains), {
 									domainsText: n,
 									serverErrors: []
 								})
@@ -628,9 +628,9 @@
 						}, this.onLinkDomainsBlur = () => {
 							const {
 								linkDomains: e
-							} = this.props.formState, t = (e => ge(me(e)))(e.domainsText), n = pe(t);
+							} = this.props.formState, t = (e => me(ge(e)))(e.domainsText), n = pe(t);
 							this.props.onChange({
-								linkDomains: Object.assign({}, e, {
+								linkDomains: Object.assign(Object.assign({}, e), {
 									domainsText: t,
 									clientErrors: n
 								})
@@ -774,7 +774,7 @@
 								formState: e
 							} = this.props;
 							this.props.onChange({
-								bodyRequiredStrings: Object.assign({}, e.bodyRequiredStrings, {
+								bodyRequiredStrings: Object.assign(Object.assign({}, e.bodyRequiredStrings), {
 									enabled: !e.bodyRequiredStrings.enabled
 								})
 							})
@@ -783,7 +783,7 @@
 								formState: e
 							} = this.props;
 							this.props.onChange({
-								bodyBlacklistedStrings: Object.assign({}, e.bodyBlacklistedStrings, {
+								bodyBlacklistedStrings: Object.assign(Object.assign({}, e.bodyBlacklistedStrings), {
 									enabled: !e.bodyBlacklistedStrings.enabled
 								})
 							})
@@ -792,7 +792,7 @@
 								bodyRequirement: t
 							} = this.props.formState;
 							this.props.onChange({
-								bodyRequirement: Object.assign({}, t, {
+								bodyRequirement: Object.assign(Object.assign({}, t), {
 									restrictionPolicy: e
 								})
 							})
@@ -801,7 +801,7 @@
 								bodyRequiredStrings: t
 							} = this.props.formState;
 							this.props.onChange({
-								bodyRequiredStrings: Object.assign({}, t, {
+								bodyRequiredStrings: Object.assign(Object.assign({}, t), {
 									strings: e
 								})
 							}, !0)
@@ -810,7 +810,7 @@
 								bodyBlacklistedStrings: t
 							} = this.props.formState;
 							this.props.onChange({
-								bodyBlacklistedStrings: Object.assign({}, t, {
+								bodyBlacklistedStrings: Object.assign(Object.assign({}, t), {
 									strings: e
 								})
 							}, !0)
@@ -904,12 +904,12 @@
 							max: s,
 							minLimit: i,
 							maxLimit: r
-						} = this.props, a = Math.min(i, 1), o = je(e.target.value, a, r), l = {
+						} = this.props, a = Math.min(i, 1), o = Le(e.target.value, a, r), l = {
 							min: "min" === t ? o : n,
 							max: "max" === t ? o : s
 						};
-						this.props.onChange(Object.assign({}, l, {
-							clientErrors: xe(Object.assign({}, l, {
+						this.props.onChange(Object.assign(Object.assign({}, l), {
+							clientErrors: xe(Object.assign(Object.assign({}, l), {
 								maxLimit: r,
 								minLimit: i
 							}))
@@ -972,14 +972,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ye = [Oe, class extends d.a.Component {
+			const Ye = [Te, class extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleTitleRequiredStrings = () => {
 						const {
 							formState: e
 						} = this.props;
 						this.props.onChange({
-							titleRequiredStrings: Object.assign({}, e.titleRequiredStrings, {
+							titleRequiredStrings: Object.assign(Object.assign({}, e.titleRequiredStrings), {
 								enabled: !e.titleRequiredStrings.enabled
 							})
 						})
@@ -988,7 +988,7 @@
 							formState: e
 						} = this.props;
 						this.props.onChange({
-							titleBlacklistedStrings: Object.assign({}, e.titleBlacklistedStrings, {
+							titleBlacklistedStrings: Object.assign(Object.assign({}, e.titleBlacklistedStrings), {
 								enabled: !e.titleBlacklistedStrings.enabled
 							})
 						})
@@ -997,7 +997,7 @@
 							formState: e
 						} = this.props;
 						this.props.onChange({
-							titleLength: Object.assign({}, e.titleLength, {
+							titleLength: Object.assign(Object.assign({}, e.titleLength), {
 								enabled: !e.titleLength.enabled
 							})
 						})
@@ -1006,7 +1006,7 @@
 							titleRequiredStrings: t
 						} = this.props.formState;
 						this.props.onChange({
-							titleRequiredStrings: Object.assign({}, t, {
+							titleRequiredStrings: Object.assign(Object.assign({}, t), {
 								strings: e
 							})
 						}, !0)
@@ -1015,7 +1015,7 @@
 							titleBlacklistedStrings: t
 						} = this.props.formState;
 						this.props.onChange({
-							titleBlacklistedStrings: Object.assign({}, t, {
+							titleBlacklistedStrings: Object.assign(Object.assign({}, t), {
 								strings: e
 							})
 						}, !0)
@@ -1024,7 +1024,7 @@
 							titleLength: t
 						} = this.props.formState;
 						this.props.onChange({
-							titleLength: Object.assign({}, t, e)
+							titleLength: Object.assign(Object.assign({}, t), e)
 						})
 					}
 				}
@@ -1115,7 +1115,7 @@
 				},
 				Xe = e => e.filter(e => !!e);
 			var Ze = e => {
-					const t = Object.assign({}, Je, {
+					const t = Object.assign(Object.assign({}, Je), {
 							bodyRestrictionPolicy: e.bodyRequirement.restrictionPolicy,
 							guidelinesText: e.guidelines.enabled ? e.guidelines.guidelineText : null,
 							isFlairRequired: e.flairRequirement.enabled,
@@ -1130,7 +1130,7 @@
 						n = e.bodyRequirement.restrictionPolicy !== E.a.NotAllowed,
 						s = e.bodyRequirement.restrictionPolicy === E.a.Required;
 					if (n && (t.bodyBlacklistedStrings = e.bodyBlacklistedStrings.enabled ? e.bodyBlacklistedStrings.strings : [], t.bodyRequiredStrings = s && e.bodyRequiredStrings.enabled ? e.bodyRequiredStrings.strings : [], t.bodyRegexes = e.bodyRegexes.enabled ? Xe(e.bodyRegexes.regexes) : []), e.linkDomains.enabled) {
-						const n = me(e.linkDomains.domainsText);
+						const n = ge(e.linkDomains.domainsText);
 						e.linkDomains.restrictionPolicy === E.b.Whitelist ? t.domainWhitelist = n : e.linkDomains.restrictionPolicy === E.b.Blacklist && (t.domainBlacklist = n)
 					}
 					return t
@@ -1155,13 +1155,13 @@
 						isFlairRequired: l,
 						linkRepostAge: d,
 						linkRestrictionPolicy: c,
-						titleBlacklistedStrings: m,
-						titleRegexes: g,
+						titleBlacklistedStrings: g,
+						titleRegexes: m,
 						titleRequiredStrings: u,
 						titleTextMaxLength: h,
 						titleTextMinLength: b
 					} = e;
-					return Object.assign({}, F, {
+					return Object.assign(Object.assign(Object.assign(Object.assign({}, F), {
 						guidelines: {
 							enabled: !(!o || !o.trim()),
 							guidelineText: o || "",
@@ -1173,8 +1173,8 @@
 							clientErrors: []
 						},
 						titleBlacklistedStrings: {
-							enabled: !!m.length,
-							strings: m,
+							enabled: !!g.length,
+							strings: g,
 							clientErrors: []
 						},
 						titleLength: {
@@ -1187,7 +1187,7 @@
 							enabled: !0,
 							restrictionPolicy: i
 						}
-					}, i !== E.a.NotAllowed ? {
+					}), i !== E.a.NotAllowed ? {
 						bodyRequiredStrings: {
 							enabled: !!s.length,
 							strings: s,
@@ -1203,16 +1203,16 @@
 							regexes: n,
 							serverErrors: []
 						}
-					} : null, {
+					} : null), {
 						titleRegexes: {
-							enabled: !!g.length,
-							regexes: g,
+							enabled: !!m.length,
+							regexes: m,
 							serverErrors: []
 						},
 						linkDomains: {
 							enabled: c !== E.b.None,
 							restrictionPolicy: c === E.b.None ? E.b.Whitelist : c,
-							domainsText: c !== E.b.None ? ge(c === E.b.Whitelist ? a : r) : "",
+							domainsText: c !== E.b.None ? me(c === E.b.Whitelist ? a : r) : "",
 							clientErrors: [],
 							serverErrors: []
 						},
@@ -1227,16 +1227,16 @@
 				};
 			const tt = "PostReq-discard-confirmation",
 				nt = 150,
-				st = Object(m.c)({
-					allowNavigationCallback: L.a,
-					isDiscardModalOpen: Object(T.b)(tt),
-					isLoading: O.a,
-					requirements: O.b
+				st = Object(g.c)({
+					allowNavigationCallback: B.a,
+					isDiscardModalOpen: Object(j.b)(tt),
+					isLoading: T.a,
+					requirements: T.b
 				}),
 				it = Object(c.b)(st, (e, t) => ({
-					closeAllModals: () => e(Object(g.f)()),
+					closeAllModals: () => e(Object(m.f)()),
 					onSave: n => e(Object(u.b)(t.subredditName, n)),
-					toggleModal: t => e(Object(g.i)(t))
+					toggleModal: t => e(Object(m.i)(t))
 				}));
 			class rt extends d.a.Component {
 				constructor(e) {
@@ -1252,8 +1252,8 @@
 							initialFormState: t
 						} = this.state;
 						if (!e) return;
-						const n = Te(this.state.formState);
-						if (Le(n)) return void this.setState({
+						const n = je(this.state.formState);
+						if (Be(n)) return void this.setState({
 							formState: n
 						}, this.focusErrorField);
 						const s = $e(n, t);
@@ -1265,7 +1265,7 @@
 						if (!this.isUnmounted)
 							if (this.setState({
 									isSavePending: !1
-								}), i.success) this.props.sendEvent(B(Ze(n))), this.setState({
+								}), i.success) this.props.sendEvent(O(Ze(n))), this.setState({
 								formState: n,
 								initialFormState: n,
 								hasJustSaved: !0
@@ -1302,8 +1302,8 @@
 					}, this.onFormStateChange = function(e) {
 						let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 						t.setState(t => {
-							let s = Object.assign({}, t.formState, e);
-							return n && (s = Te(s)), {
+							let s = Object.assign(Object.assign({}, t.formState), e);
+							return n && (s = je(s)), {
 								formState: s,
 								hasJustSaved: !1
 							}
@@ -1436,4 +1436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-PostRequirements.228a2ec864bcf7f6f875.js.map
+//# sourceMappingURL=reddit-components-ModHub-PostRequirements.76ba6d494b4f88464417.js.map

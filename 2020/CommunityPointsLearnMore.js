@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.1b1a2ef9a143c12bd49f.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.a36973d9a08fab299549.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -149,7 +149,7 @@
 				return b
 			}));
 			var n = a("./src/reddit/selectors/telemetry.ts");
-			const s = e => t => Object.assign({}, Object(n.defaults)(t), {
+			const s = e => t => Object.assign(Object.assign({}, Object(n.defaults)(t)), {
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
@@ -158,7 +158,7 @@
 				c = () => s("view"),
 				r = () => s("tap"),
 				o = () => s("dismiss"),
-				i = () => e => Object.assign({}, Object(n.defaults)(e), {
+				i = () => e => Object.assign(Object.assign({}, Object(n.defaults)(e)), {
 					source: "meta",
 					action: "view",
 					noun: "points_learn_more",
@@ -166,7 +166,7 @@
 						reason: "deep_link"
 					}
 				}),
-				l = () => e => Object.assign({}, Object(n.defaults)(e), {
+				l = () => e => Object.assign(Object.assign({}, Object(n.defaults)(e)), {
 					source: "meta",
 					action: "view",
 					noun: "points_faq",
@@ -174,7 +174,7 @@
 						reason: "learn_more"
 					}
 				}),
-				d = e => t => Object.assign({}, Object(n.defaults)(t), {
+				d = e => t => Object.assign(Object.assign({}, Object(n.defaults)(t)), {
 					source: "meta",
 					action: "view",
 					noun: "points_faq_section",
@@ -182,19 +182,19 @@
 						paneName: e
 					}
 				}),
-				m = () => e => Object.assign({}, Object(n.defaults)(e), {
+				m = () => e => Object.assign(Object.assign({}, Object(n.defaults)(e)), {
 					source: "meta",
 					action: "click",
 					noun: "learn_more_create_vault_button"
 				}),
-				u = e => t => Object.assign({}, Object(n.defaults)(t), {
+				u = e => t => Object.assign(Object.assign({}, Object(n.defaults)(t)), {
 					source: "meta",
 					action: "click",
 					noun: "buy_membership_with_points",
 					subreddit: Object(n.subreddit)(t),
 					correlationId: e
 				}),
-				b = e => t => Object.assign({}, Object(n.defaults)(t), {
+				b = e => t => Object.assign(Object.assign({}, Object(n.defaults)(t)), {
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
@@ -260,13 +260,13 @@
 			const {
 				fbt: p
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			const h = Object(i.c)({
+			const g = Object(i.c)({
 				userId: e => {
 					const t = Object(m.i)(e);
 					return t ? t.id : ""
 				}
 			});
-			var x = Object(l.a)(Object(c.b)(h)((function(e) {
+			var h = Object(l.a)(Object(c.b)(g)((function(e) {
 					const {
 						onClose: t,
 						userId: a
@@ -301,9 +301,9 @@
 						})
 					})
 				}))),
-				_ = a("./src/reddit/controls/Button/index.tsx"),
-				f = a("./src/reddit/helpers/trackers/communityPoints.ts"),
-				g = a("./src/reddit/hooks/useTracking.ts"),
+				x = a("./src/reddit/controls/Button/index.tsx"),
+				_ = a("./src/reddit/helpers/trackers/communityPoints.ts"),
+				f = a("./src/reddit/hooks/useTracking.ts"),
 				v = a("./src/reddit/selectors/economics.ts"),
 				E = a("./src/lib/classNames/index.ts"),
 				O = e => s.a.createElement("svg", {
@@ -375,13 +375,13 @@
 				k = a.n(T);
 
 			function L(e) {
-				const [t, a] = Object(n.useState)(!1), c = Object(g.a)();
+				const [t, a] = Object(n.useState)(!1), c = Object(f.a)();
 				return s.a.createElement("div", {
 					className: k.a.section
 				}, s.a.createElement("div", {
 					className: k.a.sectionTitle,
 					onClick: () => {
-						t || c(Object(f.h)(e.id)), a(!t)
+						t || c(Object(_.h)(e.id)), a(!t)
 					}
 				}, e.title, s.a.createElement("button", {
 					className: Object(E.a)(k.a.expando, {
@@ -404,9 +404,9 @@
 			}
 			var w = function() {
 					const e = Object(c.d)(v.n),
-						t = Object(g.a)();
+						t = Object(f.a)();
 					Object(n.useEffect)(() => {
-						t(Object(f.g)())
+						t(Object(_.g)())
 					}, [t]);
 					const a = e && e.faq || [];
 					return s.a.createElement("div", {
@@ -436,9 +436,9 @@
 				fbt: S
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = function() {
-				const [e, t] = Object(n.useState)(!1), [a, i] = Object(n.useState)(!1), l = Object(c.d)(o.e), d = Object(c.d)(v.n), m = Object(g.a)();
+				const [e, t] = Object(n.useState)(!1), [a, i] = Object(n.useState)(!1), l = Object(c.d)(o.e), d = Object(c.d)(v.n), m = Object(f.a)();
 				Object(n.useEffect)(() => {
-					m(Object(f.i)())
+					m(Object(_.i)())
 				}, [m]);
 				const u = d && d.learnMore.title;
 				return s.a.createElement("div", {
@@ -447,18 +447,18 @@
 					className: U.a.title
 				}, u), s.a.createElement(M, {
 					onComplete: () => t(!0)
-				}), e && s.a.createElement(s.a.Fragment, null, s.a.createElement(_.f, {
+				}), e && s.a.createElement(s.a.Fragment, null, s.a.createElement(x.f, {
 					className: U.a.createVaultButton,
 					onClick: () => {
-						m(Object(f.c)()), l ? window.location.href = "".concat(r.a.redditUrl, "/vault/") : i(!0)
+						m(Object(_.c)()), l ? window.location.href = "".concat(r.a.redditUrl, "/vault/") : i(!0)
 					}
 				}, S._("Create My Vault", null, {
 					hk: "3ZzMgD"
-				})), s.a.createElement(w, null)), a && s.a.createElement(x, {
+				})), s.a.createElement(w, null)), a && s.a.createElement(h, {
 					onClose: () => i(!1)
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=CommunityPointsLearnMore.1b1a2ef9a143c12bd49f.js.map
+//# sourceMappingURL=CommunityPointsLearnMore.a36973d9a08fab299549.js.map

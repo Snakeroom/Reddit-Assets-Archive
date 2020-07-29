@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.ba9a980c299508cbdab3.js
-// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.5d8c4df9875512c88a6c.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e"], {
 		"./src/reddit/components/CompactPost/Placeholder/index.m.less": function(e, t, s) {
@@ -359,9 +359,9 @@
 		"./src/reddit/components/PostList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return G
+				return X
 			})), s.d(t, "a", (function() {
-				return Y
+				return G
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var o = s("./node_modules/history/esm/history.js"),
@@ -427,7 +427,7 @@
 				return void 0 === n && (n = r => {
 					s.trackOnPostExitedViewport(e, t, r, o)
 				}, K.set(r, n)), n
-			}, G = (e, t) => {
+			}, X = (e, t) => {
 				const s = "click-".concat(e);
 				let o = H.get(s);
 				return void 0 === o && (o = (e, s, o) => {
@@ -439,13 +439,13 @@
 						clickInfo: Object(j.a)(e)
 					})
 				}, H.set(s, o)), o
-			}, X = (e, t) => {
+			}, Y = (e, t) => {
 				const s = [...e];
 				return Object.keys(t).map(e => parseInt(e, 10)).sort((e, t) => t - e).forEach(e => {
 					s.splice(e, 0, t[e])
 				}), s
 			};
-			class Y extends p.a.Component {
+			class G extends p.a.Component {
 				constructor() {
 					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new R.a(U), this.surveyTriggerCounted = !1, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
@@ -618,12 +618,12 @@
 							R = "post-list-item-[layout: ".concat(o, "]-[postId: ").concat(e, "]"),
 							N = q(e, o, s, m, h, b, this.props, t),
 							M = J(e, o, this.props, t),
-							T = G(e, this.props),
+							T = X(e, this.props),
 							V = w.media && w.media.type === k.o.EMBED ? w.media.provider : null;
 						S = {
 							estHeight: Object(_.c)(j, o),
 							id: e,
-							isFocusable: !(!w.media || !(o === P.g.Large || o === P.g.Classic && Object(k.G)(w.media))) && (k.d.has(w.media.type) && (!V || !k.s.has(V)) && !w.isSpoiler && !w.isNSFW),
+							isFocusable: !(!w.media || !(o === P.g.Large || o === P.g.Classic && Object(k.H)(w.media))) && (k.d.has(w.media.type) && (!V || !k.s.has(V)) && !w.isSpoiler && !w.isNSFW),
 							trackOnEnteredViewport: N,
 							trackOnExitedViewport: M,
 							render: t => {
@@ -734,7 +734,7 @@
 						const o = t === d.length - 1;
 						return this.scrollChildForPost(e, t, o, i)
 					});
-					r && (b = X(b, r));
+					r && (b = Y(b, r));
 					const y = this.props.measureScrollFPS ? "post-listings-".concat(i) : void 0,
 						f = a ? Object(o.e)(a) : null,
 						E = f || n;
@@ -767,7 +767,7 @@
 					}), p.a.createElement(Q, null))), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
-			Y.defaultProps = {
+			G.defaultProps = {
 				enableElementHiding: !0,
 				listingKey: "",
 				listingName: "",
@@ -826,4 +826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.ba9a980c299508cbdab3.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.5d8c4df9875512c88a6c.js.map

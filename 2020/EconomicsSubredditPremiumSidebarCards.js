@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.0b03b28dd33a663c42b2.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.999bcc32ebb1b90037df.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, s) {
@@ -92,8 +92,8 @@
 					getComponent: () => s.e("CustomBadgeHovercardTooltip").then(s.bind(null, "./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/tooltip.tsx")).then(e => e.default)
 				}),
 				C = s("./src/reddit/components/Badges/UserDisplay/index.m.less"),
-				E = s.n(C);
-			const O = "add-custom-badge-tooltip",
+				O = s.n(C);
+			const E = "add-custom-badge-tooltip",
 				P = 100,
 				I = 2 * P;
 			class S extends i.a.Component {
@@ -110,22 +110,22 @@
 				}
 				render() {
 					if (this.props.usePlaceholder && !this.props.badges.length) return i.a.createElement("img", {
-						className: Object(a.a)(E.a.image, this.props.className),
+						className: Object(a.a)(O.a.image, this.props.className),
 						src: "".concat(d.a.assetPath, "/img/badges/placeholder.png")
 					});
-					const e = "".concat(O, "-").concat(this.props.uniqueIdentifier);
+					const e = "".concat(E, "-").concat(this.props.uniqueIdentifier);
 					return i.a.createElement(r.Fragment, null, this.props.showAddCustom && i.a.createElement("div", {
-						className: E.a.wrapper,
+						className: O.a.wrapper,
 						id: e,
 						onMouseEnter: () => this.handleMouseEnter(e),
 						onMouseLeave: () => this.handleMouseLeave()
 					}, i.a.createElement("button", {
-						className: E.a.addCustomLink,
+						className: O.a.addCustomLink,
 						onClick: this.props.onOpenUploadDialog
 					}, i.a.createElement(g.a, {
-						className: E.a.addCustom
+						className: O.a.addCustom
 					})), i.a.createElement(f, {
-						className: E.a.badgeHovercard,
+						className: O.a.badgeHovercard,
 						subredditId: this.props.subredditId,
 						targetPosition: ["left", "bottom"],
 						tooltipId: e,
@@ -137,12 +137,12 @@
 						return i.a.createElement(r.Fragment, {
 							key: "badges-fragement-".concat(e.id)
 						}, i.a.createElement("div", {
-							className: Object(a.a)(E.a.wrapper, this.props.className),
+							className: Object(a.a)(O.a.wrapper, this.props.className),
 							key: "wrapper-".concat(e.id),
 							onMouseEnter: () => this.handleMouseEnter(s),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, i.a.createElement("img", {
-							className: E.a.image,
+							className: O.a.image,
 							id: s,
 							key: e.id,
 							src: t.url2x,
@@ -150,7 +150,7 @@
 						}), this.props.useHovercard ? i.a.createElement(u, {
 							badge: e,
 							correlationId: this.props.correlationId,
-							className: E.a.badgeHovercard,
+							className: O.a.badgeHovercard,
 							key: "tooltip-".concat(e.id),
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
@@ -361,7 +361,7 @@
 					badges: t
 				} = e, s = t[t.length - 1];
 				return s && !e.ignore ? i.a.cloneElement(e.children, {
-					style: s.extra && s.extra.style && s.extra.style.color ? Object.assign({}, e.children.props.style || {}, {
+					style: s.extra && s.extra.style && s.extra.style.color ? Object.assign(Object.assign({}, e.children.props.style || {}), {
 						color: s.extra.style.color,
 						fontWeight: 700
 					}) : e.children.props.style
@@ -511,8 +511,8 @@
 				x = s("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
 				f = s("./src/reddit/actions/tooltip.ts"),
 				C = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/async.tsx"),
-				E = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				O = s("./src/reddit/endpoints/economics/banners.ts");
+				O = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				E = s("./src/reddit/endpoints/economics/banners.ts");
 			var P = e => i.a.createElement("svg", {
 					className: e.className,
 					id: e.id,
@@ -573,11 +573,11 @@
 							e(Object(j.c)({
 								subredditId: s,
 								initialView: _.c.Gallery
-							})), r(e => Object.assign({
+							})), r(e => Object.assign(Object.assign({
 								source: "meta",
 								action: "click",
 								noun: "subscription_sidebar_open_badge_gallery"
-							}, B.defaults(e), {
+							}, B.defaults(e)), {
 								subreddit: B.subreddit(e)
 							}))
 						},
@@ -753,12 +753,12 @@
 						disabled: !e.subreddit,
 						to: Object(ne.a)(t, s),
 						onClick: t => {
-							t.stopPropagation(), e.sendEvent(e => Object.assign({
+							t.stopPropagation(), e.sendEvent(e => Object.assign(Object.assign({
 								correlationId: s,
 								source: "meta",
 								action: "click",
 								noun: "subscription_sidebar_open_learn_more"
-							}, B.defaults(e), {
+							}, B.defaults(e)), {
 								subreddit: B.subreddit(e)
 							}))
 						}
@@ -791,8 +791,8 @@
 			var xe = Object(n.b)(ge)(he),
 				fe = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/index.m.less"),
 				Ce = s.n(fe);
-			const Ee = "subreddit-premium-commuity-card-dismiss";
-			class Oe extends i.a.Component {
+			const Oe = "subreddit-premium-commuity-card-dismiss";
+			class Ee extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						checkoutOpen: !1
@@ -832,12 +832,12 @@
 						subredditId: this.props.subredditId,
 						onClose: this.closeCheckout
 					})) : this.props.userIsPremiumSubscriber === a.a.NotSubscribed ? i.a.createElement(i.a.Fragment, null, e && i.a.createElement(i.a.Fragment, null, i.a.createElement(P, {
-						id: Ee,
+						id: Oe,
 						className: Ce.a.menuIcon,
 						onClick: this.props.onOpenDropdown
 					}), i.a.createElement(Q, {
 						isOpen: this.props.dropdownIsOpen,
-						tooltipId: Ee,
+						tooltipId: Oe,
 						onClickDismiss: this.props.onDismissBanner
 					})), i.a.createElement(xe, {
 						hideSlideshow: !e,
@@ -847,7 +847,7 @@
 							[Ce.a.controlsBorder]: e
 						}),
 						subredditId: this.props.subredditId
-					})) : i.a.createElement(Z, null), i.a.createElement(E.a, {
+					})) : i.a.createElement(Z, null), i.a.createElement(O.a, {
 						className: Object(h.a)(this.props.className, Ce.a.container),
 						title: this.props.meta.membershipAlt
 					}, t)
@@ -855,7 +855,7 @@
 			}
 			const Pe = Object(o.c)({
 				customCrypto: d.d.spCustomCrypto,
-				dropdownIsOpen: Object(I.b)(Ee),
+				dropdownIsOpen: Object(I.b)(Oe),
 				meta: (e, t) => {
 					let {
 						subredditId: s
@@ -867,7 +867,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return !1 === Object(a.g)(e, s, O.a.AnimatedCard)
+					return !1 === Object(a.g)(e, s, E.a.AnimatedCard)
 				},
 				userHasBadges: (e, t) => {
 					let {
@@ -888,14 +888,14 @@
 					subredditId: s
 				} = t;
 				return {
-					onDismissBanner: () => e(Object(g.a)(s, O.a.AnimatedCard)),
+					onDismissBanner: () => e(Object(g.a)(s, E.a.AnimatedCard)),
 					onFetchDismissedBanners: () => e(Object(g.b)(s)),
 					onFetchSubscriptionData: () => e(Object(x.f)(s)),
 					onOpenDropdown: () => e(Object(f.h)({
-						tooltipId: Ee
+						tooltipId: Oe
 					}))
 				}
-			})(Oe);
+			})(Ee);
 			class Se extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -974,7 +974,7 @@
 			}
 			async function c(e, t, s, i) {
 					const n = await a(e, t),
-						o = Object.assign({}, n, {
+						o = Object.assign(Object.assign({}, n), {
 							[s]: i
 						});
 					return (await d(e, t, r.UpsellBanners, o)).ok ? o : n
@@ -1018,4 +1018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.0b03b28dd33a663c42b2.js.map
+//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.999bcc32ebb1b90037df.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.53893ea1e941d3795147.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.9f13e22ec9d7a25be8dc.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,27 +26,27 @@
 				l = s("./src/chat/actions/apiRequestHeaders.ts"),
 				h = s("./src/chat/actions/platform.ts"),
 				m = s("./src/chat/actions/session.ts"),
-				p = s("./src/chat/actions/user.ts"),
-				b = s("./src/chat/components/PortalContainer/index.tsx"),
+				b = s("./src/chat/actions/user.ts"),
+				p = s("./src/chat/components/PortalContainer/index.tsx"),
 				g = s("./src/chat/customMiddleware/containerSize.ts"),
-				x = s("./src/chat/customMiddleware/heartbeat.ts"),
+				f = s("./src/chat/customMiddleware/heartbeat.ts"),
 				j = s("./src/chat/customMiddleware/iframeDispatcher.ts"),
-				O = s("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
-				f = s("./src/chat/customMiddleware/sendbirdToken.ts"),
-				C = s("./src/chat/customMiddleware/title.ts"),
+				x = s("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				O = s("./src/chat/customMiddleware/sendbirdToken.ts"),
+				v = s("./src/chat/customMiddleware/title.ts"),
 				w = s("./src/chat/customMiddleware/tokenRefresher.ts"),
-				_ = s("./src/chat/customMiddleware/tracking.ts"),
-				v = s("./src/chat/customMiddleware/unreadMessageCount.ts"),
-				R = s("./node_modules/lodash/uniqueId.js"),
-				k = s.n(R),
-				y = s("./src/chat/constants/theme.ts"),
+				C = s("./src/chat/customMiddleware/tracking.ts"),
+				k = s("./src/chat/customMiddleware/unreadMessageCount.ts"),
+				y = s("./node_modules/lodash/uniqueId.js"),
+				_ = s.n(y),
+				R = s("./src/chat/constants/theme.ts"),
 				M = s("./src/chat/models/Theme/index.ts"),
 				S = s("./src/chat/reducers/meta/index.ts"),
 				D = s("./src/chat/reducers/platform/index.ts"),
 				T = s("./src/chat/reducers/promos/index.ts"),
 				A = s("./src/chat/selectors/platform.ts");
-			const I = (e, t) => (e.chat && e.chat.promos && (t.promos = Object.assign({}, T.a, e.chat.promos)), t),
-				E = (e, t) => {
+			const E = (e, t) => (e.chat && e.chat.promos && (t.promos = Object.assign(Object.assign({}, T.a), e.chat.promos)), t),
+				I = (e, t) => {
 					const {
 						account: s,
 						language: a,
@@ -56,9 +56,7 @@
 						session: n,
 						sessionTracker: o
 					} = e.user;
-					return t.user = Object.assign({
-						experiments: {}
-					}, t.user, {
+					return t.user = Object.assign(Object.assign({}, t.user), {
 						account: s ? {
 							commentKarma: s.commentKarma,
 							created: s.created,
@@ -79,15 +77,15 @@
 						session: n && n.unsafeLoggedOut ? null : n
 					}), t
 				},
-				L = e => (e.meta = Object.assign({}, S.a, {
+				L = e => (e.meta = Object.assign(Object.assign({}, S.a), {
 					isRedesign: !0
 				}), e),
-				N = e => {
+				W = e => {
 					if (e.user && e.user.prefs && e.user.prefs.nightmode) {
 						const {
 							NIGHT: t,
 							REDDIT: s
-						} = y.b, {
+						} = R.b, {
 							nightmode: a
 						} = e.user.prefs, r = a ? t : s;
 						e.themes = {
@@ -97,8 +95,8 @@
 					}
 					return e
 				},
-				F = (e, t, s) => {
-					const r = k()(),
+				N = (e, t, s) => {
+					const r = _()(),
 						c = Object(a.c)(t.location.pathname, void 0, r),
 						i = Object(d.a)(Object(a.e)(c), s),
 						n = Object(D.b)(D.a, Object(h.e)({
@@ -108,27 +106,28 @@
 						}));
 					return e.platform = Object.assign({}, n), e
 				},
-				H = e => {
+				F = e => {
 					const t = Object(A.f)(e);
 					return e.sidebarTabs = {
 						activeIndex: t,
 						lastChannelIdPerTab: {}
 					}, e
 				};
-			var K = s("./src/chat/reducers/index.ts"),
-				q = s("./src/chat/routes/index.ts");
+			var H = s("./src/chat/reducers/index.ts"),
+				K = s("./src/chat/routes/index.ts"),
+				q = s("./src/lib/serviceWorker/index.ts");
 			const P = Object(u.a)({
 				actionDispatchers: {
-					reddaidReceived: p.r,
-					loidReceived: p.q,
-					sessionTrackerReceived: p.u
+					reddaidReceived: b.r,
+					loidReceived: b.q,
+					sessionTrackerReceived: b.u
 				},
 				cookies: c.a,
 				receivedActions: {
 					headersReceived: l.a,
-					loidReceived: p.e,
-					reddaidReceived: p.f,
-					sessionTrackerReceived: p.g,
+					loidReceived: b.e,
+					reddaidReceived: b.f,
+					sessionTrackerReceived: b.g,
 					userAuthenticated: m.a,
 					userLoggedOut: m.b,
 					userReauthenticated: m.c
@@ -140,26 +139,28 @@
 				let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "/chat/minimize";
 				const r = document.getElementById("2x-container"),
 					c = document.createElement("div");
-				return r.appendChild(c), Object(o.a)({
-					reducerMap: K.a,
-					routes: q.a,
+				return r.appendChild(c), "undefined" != typeof window && window.addEventListener("load", async () => {
+					await Object(q.a)()
+				}), Object(o.a)({
+					reducerMap: H.a,
+					routes: K.a,
 					apiContext: P.apiContext,
-					appFactory: b.a,
+					appFactory: p.a,
 					appName: n.l.Chat,
 					history: Object(a.d)({
 						initialEntries: [s],
 						initialIndex: 0
 					}),
 					customMiddleware: [i.a.withExtraArgument({
-						routes: q.a,
+						routes: K.a,
 						apiContext: P.apiContext
-					}), P.middleware, w.a, f.a, j.a, x.a, O.a, Object(_.a)(t), g.a, v.a, C.a],
+					}), P.middleware, w.a, O.a, j.a, f.a, x.a, Object(C.a)(t), g.a, k.a, v.a],
 					modifyInitialData: t => {
 						let {
 							initialData: s,
 							browserHistory: a
 						} = t;
-						return s = E(e, s), s = L(s), s = N(s), s = I(e, s), s = F(s, a, q.a), s = H(s)
+						return s = I(e, s), s = L(s), s = W(s), s = E(e, s), s = N(s, a, K.a), s = F(s)
 					},
 					preRender: e => {
 						let {
@@ -167,13 +168,31 @@
 							routes: s,
 							store: r
 						} = e;
-						return r.dispatch(Object(p.l)()), t.listen((e, t) => {
+						return r.dispatch(Object(b.l)()), t.listen((e, t) => {
 							const c = Object(d.a)(Object(a.e)(e), s);
-							r.dispatch(Object(h.d)(e, t, c)), r.dispatch(Object(p.l)())
+							r.dispatch(Object(h.d)(e, t, c)), r.dispatch(Object(b.l)())
 						}), {}
 					},
 					target: c,
 					timingsSampleRate: 1
+				})
+			}
+		},
+		"./src/lib/serviceWorker/index.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			})), s.d(t, "b", (function() {
+				return c
+			}));
+			const a = "/sw.js";
+			async function r(e) {
+				if ("undefined" != typeof window && "serviceWorker" in navigator) return navigator.serviceWorker.register(a, e)
+			}
+			const c = (e, t) => {
+				navigator && navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
+					command: e,
+					payload: t
 				})
 			}
 		},
@@ -206,4 +225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RedesignChat.53893ea1e941d3795147.js.map
+//# sourceMappingURL=RedesignChat.9f13e22ec9d7a25be8dc.js.map

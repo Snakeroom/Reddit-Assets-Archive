@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.8693d704072fe4515c13.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.f62d62e8adb431fc20e3.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
@@ -567,7 +567,7 @@
 			const Q = Object(o.b)(Y, (e, t) => ({
 				toggleRevetConfirmationModal: () => e(Object(d.i)("wiki-revert-confirmation")),
 				onRevertToRevision: t => e(Object(l.a)(t)),
-				onLoadMoreRevisions: () => e(Object(l.c)(Object.assign({}, t, {
+				onLoadMoreRevisions: () => e(Object(l.c)(Object.assign(Object.assign({}, t), {
 					canLoadMore: !0,
 					canShowFailToast: !0,
 					isRecent: !!t.isRecentRevisionsMode
@@ -575,7 +575,7 @@
 			}))(Object(h.c)(X));
 			t.a = e => {
 				const t = !!e.isRecentRevisionsMode,
-					i = Object(w.a)(Object.assign({}, e, {
+					i = Object(w.a)(Object.assign(Object.assign({}, e), {
 						isRecent: t
 					}));
 				return a.a.createElement(Q, Z({
@@ -1846,7 +1846,7 @@
 			}));
 			var n = i("./src/reddit/models/SubredditWikiPage/index.ts"),
 				s = i("./src/reddit/selectors/telemetry.ts");
-			const a = e => Object.assign({}, s.defaults(e), {
+			const a = e => Object.assign(Object.assign({}, s.defaults(e)), {
 					subreddit: s.subreddit(e),
 					userSubreddit: s.userSubreddit(e)
 				}),
@@ -1887,7 +1887,7 @@
 					[n.a.Contributors]: "only_wiki_contributors",
 					[n.a.Mods]: "only_mods"
 				},
-				E = e => t => Object.assign({}, a(t), {
+				E = e => t => Object.assign(Object.assign({}, a(t)), {
 					source: "wiki",
 					action: "click",
 					noun: "hide_show_page",
@@ -1895,7 +1895,7 @@
 						settingValue: e ? "show" : "hide"
 					})
 				}),
-				P = e => t => Object.assign({}, a(t), {
+				P = e => t => Object.assign(Object.assign({}, a(t)), {
 					source: "wiki",
 					action: "click",
 					noun: "editing_permissions",
@@ -1918,4 +1918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.8693d704072fe4515c13.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.f62d62e8adb431fc20e3.js.map

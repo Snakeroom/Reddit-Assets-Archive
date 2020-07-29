@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.d1c882d13122ddfc4835.js
-// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.157227d21c5bfc5370c8.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -48,8 +48,8 @@
 				g = p.a.wrapped(b.l, "InvertedTertiaryButton", h.a);
 			var x = n("./src/reddit/endpoints/governance/poll.ts"),
 				j = n("./src/reddit/featureFlags/component.tsx"),
-				E = n("./src/reddit/helpers/overlay/index.ts"),
-				O = n("./src/reddit/icons/svgs/GovSmall/index.tsx"),
+				O = n("./src/reddit/helpers/overlay/index.ts"),
+				E = n("./src/reddit/icons/svgs/GovSmall/index.tsx"),
 				y = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
 				w = n("./src/reddit/selectors/gov.ts"),
 				_ = n("./src/reddit/components/Governance/VotingBanner/index.m.less"),
@@ -140,9 +140,9 @@
 						hk: "3jW79t"
 					})), a.a.createElement(v, {
 						className: I.a.button,
-						to: Object(E.b)(this.state.postUrl),
+						to: Object(O.b)(this.state.postUrl),
 						onClick: this.dismissBanner
-					}, a.a.createElement(O.a, {
+					}, a.a.createElement(E.a, {
 						className: I.a.govIcon
 					}), r.fbt._("vote", null, {
 						hk: "3WuKai"
@@ -255,7 +255,7 @@
 					endpoint: "".concat(a.a.metaUrl, "/polls/").concat(t, "/").concat(n, "/votes/me/").concat(r)
 				})
 			}
-			const m = (e, t, n) => Object(i.a)(e, Object.assign({}, o, {
+			const m = (e, t, n) => Object(i.a)(e, Object.assign(Object.assign({}, o), {
 				variables: {
 					input: {
 						postId: t,
@@ -268,7 +268,7 @@
 				return Object(l.a)(Object(d.a)(e, [c.a]), {
 					method: "get",
 					endpoint: "".concat(e.apiUrl, "/by_id/").concat(t, ".json")
-				}).then(e => e.ok ? Object.assign({}, e, {
+				}).then(e => e.ok ? Object.assign(Object.assign({}, e), {
 					body: {
 						title: s()(e.body, ["data", "children", 0, "data", "title"], ""),
 						url: s()(e.body, ["data", "children", 0, "data", "permalink"], "")
@@ -359,9 +359,9 @@
 			})), n.d(t, "q", (function() {
 				return j
 			})), n.d(t, "o", (function() {
-				return E
-			})), n.d(t, "l", (function() {
 				return O
+			})), n.d(t, "l", (function() {
+				return E
 			})), n.d(t, "m", (function() {
 				return y
 			})), n.d(t, "s", (function() {
@@ -404,15 +404,15 @@
 					}
 				},
 				m = (e, t) => {
-					const n = O(e, t);
+					const n = E(e, t);
 					if (n) return n.mainHeader
 				},
 				p = (e, t) => {
-					const n = O(e, t);
+					const n = E(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				b = (e, t) => {
-					const n = O(e, t);
+					const n = E(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
@@ -441,11 +441,11 @@
 				},
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				j = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
-				E = (e, t) => {
+				O = (e, t) => {
 					const n = P(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
-				O = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				E = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				y = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				w = (e, t) => {
 					const n = y(e, t);
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceVotingBanner.d1c882d13122ddfc4835.js.map
+//# sourceMappingURL=GovernanceVotingBanner.157227d21c5bfc5370c8.js.map

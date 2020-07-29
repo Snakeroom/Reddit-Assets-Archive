@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-UserFlairManagement.ed79cc05ace389c8f4de.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-UserFlairManagement.4feaedd5e7a3f14e0589.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/components/ModHub/flairs/UserFlairManagement/index.tsx": function(e, t, r) {
@@ -25,7 +25,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var m = function(e, t) {
+			var b = function(e, t) {
 				var r = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (r[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -34,11 +34,11 @@
 				}
 				return r
 			};
-			const b = Object(i.c)(Object.assign({}, u.b, {
+			const m = Object(i.c)(Object.assign(Object.assign({}, u.b), {
 					userFlairData: d.c,
 					userFlairSettings: d.e
 				})),
-				O = Object(a.b)(b, (e, t) => Object.assign({}, Object(u.a)(e, t), {
+				O = Object(a.b)(m, (e, t) => Object.assign(Object.assign({}, Object(u.a)(e, t)), {
 					onRemoveTemplate: r => e(Object(o.j)(r, t.subredditId)),
 					onReorderTemplates: r => e(Object(o.k)(r, t.subredditId)),
 					onSaveTemplate: r => e(Object(o.l)(r, t.subredditId))
@@ -47,7 +47,7 @@
 				const {
 					userFlairData: t,
 					userFlairSettings: r
-				} = e, s = m(e, ["userFlairData", "userFlairSettings"]);
+				} = e, s = b(e, ["userFlairData", "userFlairSettings"]);
 				return t && r ? n.a.createElement(c.a, p({
 					flairSettings: r,
 					flairTemplateType: l.d.UserFlair,
@@ -59,4 +59,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-UserFlairManagement.ed79cc05ace389c8f4de.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-UserFlairManagement.4feaedd5e7a3f14e0589.js.map

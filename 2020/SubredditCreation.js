@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.e77061357160eabac301.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.c36af871a63a994b0d23.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -248,13 +248,13 @@
 						a = e.filter(e => !!e.displayText.trim()),
 						s = a.slice(0, t);
 					s.forEach(e => {
-						this.props.optionSelected(Object.assign({}, e, {
+						this.props.optionSelected(Object.assign(Object.assign({}, e), {
 							displayText: e.displayText.trim()
 						}))
 					}), s.length !== a.length && this.props.onMaxTopicsHit()
 				}
 				onOptionDeselected(e) {
-					this.props.optionDeselected(Object.assign({}, e, {
+					this.props.optionDeselected(Object.assign(Object.assign({}, e), {
 						displayText: e.displayText.trim()
 					}))
 				}
@@ -300,9 +300,9 @@
 					})),
 					onSearchBarFocused: () => e((e, t) => {}),
 					onMaxTopicsHit: () => e((e, t) => {
-						e(Object(h.e)(Object.assign({}, Object(h.d)(s.fbt._("You can only add up to {max number of topics} community topics", [s.fbt._param("max number of topics", x.a.toString())], {
+						e(Object(h.e)(Object.assign(Object.assign({}, Object(h.d)(s.fbt._("You can only add up to {max number of topics} community topics", [s.fbt._param("max number of topics", x.a.toString())], {
 							hk: "1OySAh"
-						}), v.b.Error), {
+						}), v.b.Error)), {
 							duration: h.a
 						})))
 					})
@@ -696,4 +696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.e77061357160eabac301.js.map
+//# sourceMappingURL=SubredditCreation.c36af871a63a994b0d23.js.map

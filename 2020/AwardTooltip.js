@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.8d453e75419c834b5137.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.0ae29528eb097ce1fe58.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, o) {
@@ -26,21 +26,21 @@
 		"./src/reddit/components/AwardTooltip/index.tsx": function(e, t, o) {
 			"use strict";
 			o.r(t);
-			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
-				s = o("./node_modules/react/index.js"),
-				n = o.n(s),
+			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
+				r = o("./node_modules/react/index.js"),
+				n = o.n(r),
 				i = o("./node_modules/react-redux/es/index.js"),
 				a = o("./node_modules/react-router-redux/es/index.js"),
 				d = o("./node_modules/reselect/es/index.js"),
 				c = o("./src/lib/classNames/index.ts"),
-				l = o("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				l = o("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				m = o("./src/reddit/constants/colors.ts"),
 				p = o("./src/lib/makeActionCreator/index.ts"),
 				u = o("./src/reddit/actions/toaster.ts"),
 				h = o("./src/reddit/models/Toast/index.ts"),
 				w = o("./src/reddit/endpoints/gold/communityAwards.ts"),
 				b = o("./src/reddit/actions/gold/constants.ts");
-			const C = Object(p.a)(b.W);
+			const C = Object(p.a)(b.Z);
 			var x = o("./src/reddit/actions/tooltip.ts"),
 				f = o("./src/reddit/models/Gold/Award.ts"),
 				g = o("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -74,11 +74,11 @@
 						let {
 							postOrComment: o
 						} = t;
-						const r = Object(O.J)(e, {
+						const s = Object(O.J)(e, {
 							thingId: o.id
 						});
-						return r ? Object(g.j)(e, {
-							subredditId: r.id
+						return s ? Object(g.j)(e, {
+							subredditId: s.id
 						}) : null
 					},
 					subreddit: (e, t) => {
@@ -93,19 +93,19 @@
 				S = Object(i.b)(R, (e, t) => {
 					let {
 						award: o,
-						tooltipId: s
+						tooltipId: r
 					} = t;
 					return {
 						close: () => e(Object(x.h)({
-							tooltipId: s
+							tooltipId: r
 						})),
 						onClickPremium: () => e(Object(a.b)("/premium")),
-						reportAward: () => e((e => async (t, o, s) => {
+						reportAward: () => e((e => async (t, o, r) => {
 							let {
 								apiContext: n
-							} = s;
+							} = r;
 							t(C());
-							const i = r.fbt._("Something went wrong. The report could not be created at this time.", null, {
+							const i = s.fbt._("Something went wrong. The report could not be created at this time.", null, {
 								hk: "1ewigu"
 							});
 							try {
@@ -145,7 +145,7 @@
 								isReported: !0
 							}), e())
 						}
-					}, t ? r.fbt._("Reported", null, {
+					}, t ? s.fbt._("Reported", null, {
 						hk: "4C0VOl"
 					}) : null, t ? n.a.createElement(v.a, {
 						className: A.a.awardReportIcon
@@ -165,7 +165,7 @@
 						}
 					}, n.a.createElement(y.a, {
 						className: A.a.awardHideIcon
-					}), r.fbt._("Hide", null, {
+					}), s.fbt._("Hide", null, {
 						hk: "4kciEW"
 					}))
 				}
@@ -174,17 +174,17 @@
 						award: e,
 						currentUser: t,
 						onClickPremium: o
-					} = this.props, s = e.awardSubType === f.d.Premium, i = !!t && t.isGold;
-					return s ? i ? null : n.a.createElement(E.e, {
+					} = this.props, r = e.awardSubType === f.d.Premium, i = !!t && t.isGold;
+					return r ? i ? null : n.a.createElement(E.e, {
 						className: A.a.premiumCta,
 						onClick: o
-					}, r.fbt._("Get Premium", null, {
+					}, s.fbt._("Get Premium", null, {
 						hk: "Yapo5"
 					})) : n.a.createElement("a", {
 						className: A.a.howToLink,
 						href: "https://www.reddithelp.com/en/categories/reddit-101/reddit-basics/what-are-awards",
 						target: "_blank"
-					}, r.fbt._("How do I award?", null, {
+					}, s.fbt._("How do I award?", null, {
 						hk: "RgVTd"
 					}))
 				}
@@ -193,10 +193,10 @@
 						award: e,
 						currentUser: t,
 						moderatorPermissions: o,
-						postOrComment: s,
+						postOrComment: r,
 						subreddit: i,
 						tooltipId: a
-					} = this.props, d = e.awardSubType === f.d.Premium, p = t && s.authorId === t.id || Object(l.a)(o);
+					} = this.props, d = e.awardSubType === f.d.Premium, p = t && r.authorId === t.id || Object(l.a)(o);
 					return n.a.createElement(P.a, {
 						caretColor: {
 							top: d ? m.a.orangered : m.a.alienblue
@@ -222,7 +222,7 @@
 						}
 					})), n.a.createElement("div", {
 						className: A.a.awardName
-					}, r.fbt._("{award-name} Award", [r.fbt._param("award-name", e.name)], {
+					}, s.fbt._("{award-name} Award", [s.fbt._param("award-name", e.name)], {
 						hk: "2QpjYF"
 					})), n.a.createElement("p", {
 						className: A.a.awardDescription
@@ -237,7 +237,7 @@
 						className: A.a.subreddit
 					}, n.a.createElement(N.a, {
 						className: Object(c.a)(A.a.subredditIcon, A.a.modShield)
-					}), r.fbt._("Exclusive mod-given Award", null, {
+					}), s.fbt._("Exclusive mod-given Award", null, {
 						hk: "1VGGho"
 					})), this.renderCta()))
 				}
@@ -258,9 +258,9 @@
 		"./src/reddit/components/ContentTooltip/index.tsx": function(e, t, o) {
 			"use strict";
 			o("./node_modules/core-js/modules/es6.symbol.js");
-			var r = o("./src/higherOrderComponents/addOverlayEvents.tsx"),
-				s = o("./node_modules/react/index.js"),
-				n = o.n(s),
+			var s = o("./src/higherOrderComponents/addOverlayEvents.tsx"),
+				r = o("./node_modules/react/index.js"),
+				n = o.n(r),
 				i = o("./node_modules/react-redux/es/index.js"),
 				a = o("./node_modules/reselect/es/index.js"),
 				d = o("./src/higherOrderComponents/asTooltip.tsx"),
@@ -276,17 +276,17 @@
 				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var o = arguments[t];
-						for (var r in o) Object.prototype.hasOwnProperty.call(o, r) && (e[r] = o[r])
+						for (var s in o) Object.prototype.hasOwnProperty.call(o, s) && (e[s] = o[s])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 			var C = function(e, t) {
 				var o = {};
-				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (o[r] = e[r]);
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (o[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var s = 0;
-					for (r = Object.getOwnPropertySymbols(e); s < r.length; s++) t.indexOf(r[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[s]) && (o[r[s]] = e[r[s]])
+					var r = 0;
+					for (s = Object.getOwnPropertySymbols(e); r < s.length; r++) t.indexOf(s[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[r]) && (o[s[r]] = e[s[r]])
 				}
 				return o
 			};
@@ -311,19 +311,19 @@
 					const {
 						children: t,
 						className: o,
-						style: r,
-						caretPosition: s,
+						style: s,
+						caretPosition: r,
 						caretColor: i
 					} = e, a = C(e, ["children", "className", "style", "caretPosition", "caretColor"]);
 					return n.a.createElement("div", b({
 						className: Object(c.a)(o, w.a.StyledTooltipContainer, {
-							[w.a.caretOnTop]: "top" === s,
-							[w.a.caretOnLeft]: "left" === s,
-							[w.a.caretOnRight]: "right" === s,
-							[w.a.caretOnBottom]: "bottom" === s
+							[w.a.caretOnTop]: "top" === r,
+							[w.a.caretOnLeft]: "left" === r,
+							[w.a.caretOnRight]: "right" === r,
+							[w.a.caretOnBottom]: "bottom" === r
 						}),
-						style: Object.assign({}, r, {
-							"--contentTooltip-caretColor": i && i[s] ? i[s] : Object(p.a)(e).body
+						style: Object.assign(Object.assign({}, s), {
+							"--contentTooltip-caretColor": i && i[r] ? i[r] : Object(p.a)(e).body
 						})
 					}, a), t)
 				}),
@@ -335,7 +335,7 @@
 						return Object(u.b)(o)(e)
 					}
 				}),
-				_ = Object(d.a)(g, [r.a.Click, r.a.Keydown]),
+				_ = Object(d.a)(g, [s.a.Click, s.a.Keydown]),
 				P = Object(i.b)(O);
 			class j extends n.a.Component {
 				constructor(e) {
@@ -347,27 +347,27 @@
 						m.a.read(() => {
 							const o = document.getElementById(e);
 							if (!o) return;
-							const r = o.getBoundingClientRect();
+							const s = o.getBoundingClientRect();
 							if (!("undefined" != typeof window)) return void this.setState({
 								position: this.props.defaultTooltipPosition
 							});
-							let s = !0;
+							let r = !0;
 							switch (this.props.defaultTooltipPosition) {
 								case "bottom":
-									s = window.innerHeight - r.bottom > t.height;
+									r = window.innerHeight - s.bottom > t.height;
 									break;
 								case "left":
-									s = r.left > t.width;
+									r = s.left > t.width;
 									break;
 								case "right":
-									s = r.right <= window.innerWidth - t.width;
+									r = s.right <= window.innerWidth - t.width;
 									break;
 								case "top":
 								default:
-									s = r.top > t.height
+									r = s.top > t.height
 							}
 							this.setState({
-								position: s ? this.props.defaultTooltipPosition : f(this.props.defaultTooltipPosition)
+								position: r ? this.props.defaultTooltipPosition : f(this.props.defaultTooltipPosition)
 							})
 						})
 					}, this.state = {
@@ -406,10 +406,10 @@
 					} = this.state, {
 						targetPosition: t,
 						tooltipPosition: o,
-						caretPosition: r
+						caretPosition: s
 					} = this.getPositions(e);
 					return n.a.createElement(_, b({}, this.props, {
-						caretPosition: r,
+						caretPosition: s,
 						targetPosition: t,
 						tooltipPosition: o
 					}))
@@ -417,9 +417,9 @@
 			}
 			t.a = P(j)
 		},
-		"./src/reddit/helpers/hasModFullPermissions/index.ts": function(e, t, o) {
+		"./src/reddit/helpers/hasModPostPermissions/index.ts": function(e, t, o) {
 			"use strict";
-			t.a = e => !!e && !!e.all
+			t.a = e => !!e && !!e.posts
 		},
 		"./src/reddit/icons/fonts/Coin/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -429,13 +429,13 @@
 		},
 		"./src/reddit/icons/fonts/Coin/index.tsx": function(e, t, o) {
 			"use strict";
-			var r = o("./node_modules/react/index.js"),
-				s = o.n(r),
+			var s = o("./node_modules/react/index.js"),
+				r = o.n(s),
 				n = o("./src/reddit/constants/colors.ts"),
 				i = o("./src/reddit/icons/fonts/helpers.tsx"),
 				a = o("./src/reddit/icons/fonts/Coin/index.m.less"),
 				d = o.n(a);
-			const c = o("./src/lib/lessComponent.tsx").a.wrapped(e => s.a.createElement("i", {
+			const c = o("./src/lib/lessComponent.tsx").a.wrapped(e => r.a.createElement("i", {
 				className: "".concat(Object(i.b)("coin"), " ").concat(e.className),
 				style: {
 					color: e.fillColor || n.a.gold
@@ -445,44 +445,44 @@
 		},
 		"./src/reddit/icons/svgs/CircleCheck/index.tsx": function(e, t, o) {
 			"use strict";
-			var r = o("./node_modules/react/index.js"),
-				s = o.n(r);
-			t.a = e => s.a.createElement("svg", {
+			var s = o("./node_modules/react/index.js"),
+				r = o.n(s);
+			t.a = e => r.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 21 21",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("path", {
+			}, r.a.createElement("path", {
 				d: "M20.5 10.5C20.5 16.0228 16.0228 20.5 10.5 20.5C4.97715 20.5 0.5 16.0228 0.5 10.5C0.5 4.97715 4.97715 0.5 10.5 0.5C16.0228 0.5 20.5 4.97715 20.5 10.5ZM9.35975 14.8725L15.2398 8.71852L15.2418 8.72352C15.5868 8.36252 15.5868 7.77752 15.2418 7.41752C14.8968 7.05752 14.3388 7.05752 13.9938 7.41752L8.73675 12.9175L7.00675 11.1075C6.66175 10.7475 6.10375 10.7465 5.75875 11.1075C5.41375 11.4685 5.41375 12.0535 5.75875 12.4135L8.11175 14.8735C8.28475 15.0535 8.50975 15.1435 8.73675 15.1435C8.85356 15.143 8.96904 15.1187 9.07615 15.0721C9.18326 15.0256 9.27975 14.9576 9.35975 14.8725Z",
 				fill: "inherit"
 			}))
 		},
 		"./src/reddit/icons/svgs/Hide/index.tsx": function(e, t, o) {
 			"use strict";
-			var r = o("./node_modules/react/index.js"),
-				s = o.n(r);
-			t.a = e => s.a.createElement("svg", {
+			var s = o("./node_modules/react/index.js"),
+				r = o.n(s);
+			t.a = e => r.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
-			}, s.a.createElement("g", null, s.a.createElement("path", {
+			}, r.a.createElement("g", null, r.a.createElement("path", {
 				d: "M10,16.25 C8.728,16.25 7.544,15.867 6.556,15.212 L15.212,6.556 C15.867,7.544 16.25,8.728 16.25,10 C16.25,13.4465 13.446,16.25 10,16.25 M3.75,10 C3.75,6.5535 6.554,3.75 10,3.75 C11.272,3.75 12.456,4.133 13.444,4.788 L4.788,13.444 C4.133,12.456 3.75,11.272 3.75,10 M10,1.25 C5.1675,1.25 1.25,5.1675 1.25,10 C1.25,14.8325 5.1675,18.75 10,18.75 C14.8325,18.75 18.75,14.8325 18.75,10 C18.75,5.1675 14.8325,1.25 10,1.25"
 			})))
 		},
 		"./src/reddit/icons/svgs/Report/index.tsx": function(e, t, o) {
 			"use strict";
-			var r = o("./node_modules/react/index.js"),
-				s = o.n(r);
-			t.a = e => s.a.createElement("svg", {
+			var s = o("./node_modules/react/index.js"),
+				r = o.n(s);
+			t.a = e => r.a.createElement("svg", {
 				className: e.className,
 				id: e.id,
 				onMouseEnter: e.onMouseEnter,
 				onMouseLeave: e.onMouseLeave,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("path", {
+			}, r.a.createElement("g", null, r.a.createElement("path", {
 				d: "M14.7861,8.4019 L16.8831,4.4709 C17.0481,4.1609 17.0381,3.7869 16.8571,3.4849 C16.6771,3.1839 16.3511,2.9999 16.0001,2.9999 L4.0001,2.9999 C3.4471,2.9999 3.0001,3.4479 3.0001,3.9999 L3.0001,8.5869 L3.0001,12.8039 L3.0001,16.8039 C3.0001,17.3569 3.4471,17.8039 4.0001,17.8039 C4.5531,17.8039 5.0001,17.3569 5.0001,16.8039 L5.0001,13.8039 L16.0001,13.8039 C16.3511,13.8039 16.6771,13.6199 16.8571,13.3189 C17.0381,13.0179 17.0481,12.6439 16.8831,12.3339 L14.7861,8.4019 Z"
 			})))
 		}
 	}
 ]);
-//# sourceMappingURL=AwardTooltip.8d453e75419c834b5137.js.map
+//# sourceMappingURL=AwardTooltip.0ae29528eb097ce1fe58.js.map

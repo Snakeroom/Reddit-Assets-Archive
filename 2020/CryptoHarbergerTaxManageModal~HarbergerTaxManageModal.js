@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.6e2381f13540f8117378.js
-// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.8ab1aea3c91593647999.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -61,8 +61,8 @@
 				return Object(l.a)(e, {
 					method: "post",
 					endpoint: "".concat(i.a.metaUrl, "/orders"),
-					data: Object.assign({}, t, {
-						products: t.products.map(e => Object.assign({}, e, {
+					data: Object.assign(Object.assign({}, t), {
+						products: t.products.map(e => Object.assign(Object.assign({}, e), {
 							productId: "mainHeader",
 							quantity: "1"
 						}))
@@ -808,4 +808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.6e2381f13540f8117378.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.8ab1aea3c91593647999.js.map

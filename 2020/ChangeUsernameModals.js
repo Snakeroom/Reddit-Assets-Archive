@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.4a0f413b360839add57c.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.7485b890258b60604bff.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -13,8 +13,8 @@
 		},
 		"./src/chat/controls/Svg/index.tsx": function(e, t, n) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/lib/lessComponent.tsx"),
 				c = n("./src/chat/controls/Svg/index.m.less"),
@@ -26,13 +26,13 @@
 					},
 					{
 						disable: n,
-						active: a,
+						active: s,
 						hover: o
 					} = e;
-				return s.a.createElement("svg", {
+				return a.a.createElement("svg", {
 					className: Object(r.a)(e.className, {
 						[i.a.disable]: n,
-						[i.a.active]: a,
+						[i.a.active]: s,
 						[i.a.hover]: !!o
 					}),
 					viewBox: e.viewBox,
@@ -42,31 +42,31 @@
 		},
 		"./src/chat/icons/svgs/Refresh/index.tsx": function(e, t, n) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
 				r = n("./src/chat/controls/Svg/index.tsx");
 
 			function o() {
 				return (o = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			t.a = e => s.a.createElement(r.a, o({}, e, {
+			t.a = e => a.a.createElement(r.a, o({}, e, {
 				viewBox: "0 0 20 20"
-			}), s.a.createElement("path", {
+			}), a.a.createElement("path", {
 				d: "M18 9a1 1 0 0 1 1 1v2c0 2.757-2.243 5-5 5H5v1.5a.5.5 0 0 1-.82.384l-3-2.5a.497.497 0 0 1 0-.768l3-2.5A.5.5 0 0 1 5 13.5V15h9c1.654 0 3-1.346 3-3v-2a1 1 0 0 1 1-1zM2 11a1 1 0 0 1-1-1V8c0-2.757 2.243-5 5-5h9V1.5a.5.5 0 0 1 .82-.384l3 2.5a.497.497 0 0 1 0 .768l-3 2.5A.5.5 0 0 1 15 6.5V5H6C4.346 5 3 6.346 3 8v2a1 1 0 0 1-1 1z"
 			}))
 		},
 		"./src/reddit/components/ChangeUsernameModals/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t);
-			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				r = n.n(s),
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				o = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/higherOrderComponents/asModal/index.tsx"),
@@ -76,29 +76,29 @@
 				u = n("./src/reddit/actions/toaster.ts"),
 				p = n("./node_modules/lodash/debounce.js"),
 				h = n.n(p),
-				A = n("./src/lib/classNames/index.ts"),
-				g = n("./src/reddit/components/EmailCollection/Input/index.tsx"),
+				g = n("./src/lib/classNames/index.ts"),
+				A = n("./src/reddit/components/EmailCollection/Input/index.tsx"),
 				C = n("./src/lib/constants/index.ts"),
 				b = n("./src/lib/lessComponent.tsx"),
 				f = n("./src/chat/icons/svgs/Refresh/index.tsx"),
-				E = n("./src/reddit/contexts/ApiContext.tsx"),
-				O = n("./src/lib/makeApiRequest/index.ts"),
+				O = n("./src/reddit/contexts/ApiContext.tsx"),
+				E = n("./src/lib/makeApiRequest/index.ts"),
 				v = n("./src/lib/omitHeaders/index.ts"),
 				j = n("./src/reddit/constants/headers.ts"),
-				N = n("./src/reddit/components/Settings/SuggestedUsernames/index.m.less"),
-				x = n.n(N);
-			const U = b.a.wrapped(f.a, "refreshIcon", x.a),
-				M = b.a.button("refreshButton", x.a),
+				x = n("./src/reddit/components/Settings/SuggestedUsernames/index.m.less"),
+				N = n.n(x);
+			const U = b.a.wrapped(f.a, "refreshIcon", N.a),
+				M = b.a.button("refreshButton", N.a),
 				k = e => e > 3 ? 3 : e;
-			var w = Object(E.b)(e => {
+			var w = Object(O.b)(e => {
 					const {
 						apiContext: t,
 						onSuggestedUsernameClick: n
-					} = e, [o, c] = Object(s.useState)([0, 0]), [i, l] = Object(s.useState)([]), [d, m] = Object(s.useState)(!1), u = Object(s.useCallback)(async () => {
+					} = e, [o, c] = Object(a.useState)([0, 0]), [i, l] = Object(a.useState)([]), [d, m] = Object(a.useState)(!1), u = Object(a.useCallback)(async () => {
 						m(!0), setTimeout(() => {
 							m(!1)
 						}, 10 * C.Fb);
-						const e = await (e => Object(O.a)(Object(v.a)(e, [j.a]), {
+						const e = await (e => Object(E.a)(Object(v.a)(e, [j.a]), {
 							endpoint: "".concat(e.apiUrl, "/api/v1/generate_username.json"),
 							method: C.db.GET
 						}))(t());
@@ -118,7 +118,7 @@
 							const e = k(i.length);
 							c([0, e])
 						}
-					}, [t, m, l, c, i, o]), p = Object(s.useCallback)(() => {
+					}, [t, m, l, c, i, o]), p = Object(a.useCallback)(() => {
 						const e = o[1],
 							t = i.length - e;
 						if (t > 0) {
@@ -126,19 +126,19 @@
 							c([e, e + n])
 						} else u()
 					}, [u, c, i, o]);
-					return Object(s.useEffect)(() => {
+					return Object(a.useEffect)(() => {
 						u()
 					}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: x.a.refreshContainer
-					}, a.fbt._("Can’t think of one? Use one of these:", null, {
+						className: N.a.refreshContainer
+					}, s.fbt._("Can’t think of one? Use one of these:", null, {
 						hk: "23kfek"
 					}), r.a.createElement(M, {
 						disabled: d,
 						onClick: p
 					}, r.a.createElement(U, null))), r.a.createElement("ul", {
-						className: x.a.suggestedUsernames
+						className: N.a.suggestedUsernames
 					}, i.slice(...o).map(e => r.a.createElement("li", {
-						className: x.a.suggestedUsername,
+						className: N.a.suggestedUsername,
 						key: e,
 						onClick: () => n(e)
 					}, e))))
@@ -153,16 +153,16 @@
 			const _ = 500,
 				Q = 20,
 				L = 3,
-				P = () => a.fbt._("Great name! It's not taken, so it's all yours.", null, {
+				P = () => s.fbt._("Great name! It's not taken, so it's all yours.", null, {
 					hk: "42rpS"
 				}),
-				K = () => a.fbt._("Sorry, this username is taken. Try another.", null, {
+				K = () => s.fbt._("Sorry, this username is taken. Try another.", null, {
 					hk: "2HkykK"
 				}),
-				H = () => a.fbt._("Username must be between 3 and 20 characters.", null, {
+				J = () => s.fbt._("Username must be between 3 and 20 characters.", null, {
 					hk: "1V72yV"
 				}),
-				J = () => a.fbt._("Sorry, something went wrong. Try again later.", null, {
+				H = () => s.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "48Ga9f"
 				}),
 				V = {
@@ -171,28 +171,28 @@
 				},
 				F = {
 					error: null,
-					state: g.a.Valid
+					state: A.a.Valid
 				};
 			class Y extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = V, this.checkUsername = async e => e.length < L || e.length > Q ? {
-						error: H(),
-						state: g.a.Invalid
+						error: J(),
+						state: A.a.Invalid
 					} : e === this.props.initialUsername ? F : await this.validateUsername(e), this.validateUsername = async e => {
 						const {
 							apiContext: t
-						} = this.props, n = t(), a = await Object(S.a)(n, {
+						} = this.props, n = t(), s = await Object(S.a)(n, {
 							username: e
 						});
-						return a.ok ? !0 === a.body ? F : {
+						return s.ok ? !0 === s.body ? F : {
 							error: K(),
-							state: g.a.Invalid
-						} : a.error && a.error.fields && a.error.fields[0] ? {
-							error: a.error.fields[0].msg,
-							state: g.a.Invalid
+							state: A.a.Invalid
+						} : s.error && s.error.fields && s.error.fields[0] ? {
+							error: s.error.fields[0].msg,
+							state: A.a.Invalid
 						} : {
-							error: J(),
-							state: g.a.Invalid
+							error: H(),
+							state: A.a.Invalid
 						}
 					}, this.callCheckUsername = async e => {
 						const {
@@ -213,7 +213,7 @@
 						this.setState({
 							error: t,
 							state: n
-						}), n === g.a.Valid && this.props.onContinue()
+						}), n === A.a.Valid && this.props.onContinue()
 					}, this.updateUsernameField = async e => {
 						const t = e.currentTarget.value;
 						this.props.onUsernameChange(t), this.debounceCheckUsername(t)
@@ -235,19 +235,19 @@
 						isResponsive: t,
 						username: n
 					} = this.props, {
-						error: s,
+						error: a,
 						state: o
-					} = this.state, c = o === g.a.Valid, i = n === e;
+					} = this.state, c = o === A.a.Valid, i = n === e;
 					return r.a.createElement(B.a, {
 						bodyClassName: R.a.changeUsernameModalBody,
-						className: Object(A.a)(R.a.changeUsernameModalContainer, {
+						className: Object(g.a)(R.a.changeUsernameModalContainer, {
 							[R.a["m-responsive"]]: t
 						}),
 						onClose: this.onCloseModal,
 						title: this.props.title
-					}, r.a.createElement(g.b, {
-						className: Object(A.a)(R.a.input, R.a.usernameInput),
-						errorMessage: s || void 0,
+					}, r.a.createElement(A.b, {
+						className: Object(g.a)(R.a.input, R.a.usernameInput),
+						errorMessage: a || void 0,
 						onChange: this.updateUsernameField,
 						spellCheck: !1,
 						successMessage: c && !i && P() || void 0,
@@ -255,18 +255,16 @@
 						validityState: o || void 0
 					}), r.a.createElement(w, {
 						onSuggestedUsernameClick: this.onSuggestedUsernameClickHandler
-					}), r.a.createElement("div", {
-						className: T.a.buttonWrapper
-					}, r.a.createElement(y.f, {
-						className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
+					}), r.a.createElement("div", null, r.a.createElement(y.f, {
+						className: Object(g.a)(T.a.commonBtn, T.a.primaryBtn),
 						disabled: !c,
 						onClick: this.handleContinue
-					}, a.fbt._("Continue", null, {
+					}, s.fbt._("Continue", null, {
 						hk: "3a8GoU"
 					}))))
 				}
 			}
-			var z = Object(E.b)(Y),
+			var z = Object(O.b)(Y),
 				Z = e => r.a.createElement("svg", {
 					className: e.className,
 					fill: "none",
@@ -292,18 +290,18 @@
 					y: "0",
 					href: "data:image/png;base64,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 NDQ6NDArMDA6MDCOM4QYAAAAAElFTkSuQmCC"
 				}));
-			var q = e => (Object(s.useEffect)(e.onView, []), r.a.createElement(B.a, {
+			var q = e => (Object(a.useEffect)(e.onView, []), r.a.createElement(B.a, {
 					bodyClassName: R.a.confirmModalBody,
-					className: Object(A.a)(R.a.confirmModalContainer, {
+					className: Object(g.a)(R.a.confirmModalContainer, {
 						[R.a["m-responsive"]]: e.isResponsive
 					}),
 					description: e.description,
-					descriptionClassName: Object(A.a)(R.a.confirmModalDescription, {
+					descriptionClassName: Object(g.a)(R.a.confirmModalDescription, {
 						[R.a.saveDescription]: e.isSaveConfirm
 					}),
 					headerClassName: R.a.confirmModalHeader,
 					icon: e.isSecondConfirm ? r.a.createElement(Z, null) : r.a.createElement(W, null),
-					iconClassName: Object(A.a)(R.a.confirmModalIcon, {
+					iconClassName: Object(g.a)(R.a.confirmModalIcon, {
 						[R.a.questionIcon]: e.isSecondConfirm
 					}),
 					onClose: e.onClose
@@ -311,14 +309,12 @@
 					className: T.a.username
 				}, r.a.createElement("span", {
 					className: T.a.usernamePrefix
-				}, "u/"), e.username), r.a.createElement("div", {
-					className: T.a.buttonWrapper
-				}, r.a.createElement(y.f, {
-					className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
+				}, "u/"), e.username), r.a.createElement("div", null, r.a.createElement(y.f, {
+					className: Object(g.a)(T.a.commonBtn, T.a.primaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onPrimaryButtonClick
 				}, e.primaryButtonText()), r.a.createElement(y.n, {
-					className: Object(A.a)(T.a.commonBtn, T.a.secondaryBtn),
+					className: Object(g.a)(T.a.commonBtn, T.a.secondaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onSecondaryButtonClick
 				}, e.secondaryButtonText())))),
@@ -327,22 +323,22 @@
 				$ = n("./src/reddit/hooks/useTracking.ts"),
 				ee = n("./src/reddit/models/Toast/index.ts"),
 				te = n("./src/reddit/selectors/activeModalId.ts");
-			const ne = () => a.fbt._("Change Username", null, {
+			const ne = () => s.fbt._("Change Username", null, {
 					hk: "1nRhNE"
 				}),
-				ae = () => a.fbt._("Keep Username", null, {
+				se = () => s.fbt._("Keep Username", null, {
 					hk: "4hDTRV"
 				}),
-				se = () => a.fbt._("Save Username", null, {
+				ae = () => s.fbt._("Save Username", null, {
 					hk: "2Ufmnc"
 				}),
-				re = () => a.fbt._("Saving Username", null, {
+				re = () => s.fbt._("Saving Username", null, {
 					hk: "deHEB"
 				}),
-				oe = () => a.fbt._("Go Back", null, {
+				oe = () => s.fbt._("Go Back", null, {
 					hk: "3hUBIW"
 				}),
-				ce = e => a.fbt._("Nice name, u/{username}. May it serve you well.", [a.fbt._param("username", e)], {
+				ce = e => s.fbt._("Nice name, u/{username}. May it serve you well.", [s.fbt._param("username", e)], {
 					hk: "3TWtHg"
 				}),
 				ie = e => e && e.fields && e.fields.length ? e.fields.map(e => {
@@ -350,7 +346,7 @@
 						msg: t
 					} = e;
 					return t
-				}).join(", ") : (() => a.fbt._("Sorry, something went wrong. Try again later.", null, {
+				}).join(", ") : (() => s.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "3HcWgL"
 				}))(),
 				le = Object(c.c)({
@@ -389,7 +385,7 @@
 						})), e(Object(l.e)(t, n))
 					}
 				}));
-			t.default = Object(i.a)(Object(E.b)(de(e => {
+			t.default = Object(i.a)(Object(O.b)(de(e => {
 				let {
 					apiContext: t,
 					changeUsernameModalOpen: n,
@@ -402,13 +398,13 @@
 					interceptActionModalOpen: u,
 					isResponsiveSettingsEnabled: p,
 					saveUsernameError: h,
-					saveUsernameSuccess: A,
-					secondConfirmKeepUsernameModalOpen: g,
+					saveUsernameSuccess: g,
+					secondConfirmKeepUsernameModalOpen: A,
 					username: b
 				} = e;
-				const [f, E] = Object(s.useState)(b || ""), [N, x] = Object(s.useState)(!1), U = Object($.a)(), M = Object(s.useCallback)(async () => {
-					x(!0);
-					const e = await ((e, t) => Object(O.a)(Object(v.a)(e, [j.a]), {
+				const [f, O] = Object(a.useState)(b || ""), [x, N] = Object(a.useState)(!1), U = Object($.a)(), M = Object(a.useCallback)(async () => {
+					N(!0);
+					const e = await ((e, t) => Object(E.a)(Object(v.a)(e, [j.a]), {
 						method: C.db.POST,
 						endpoint: "".concat(e.apiUrl, "/api/update_name"),
 						data: {
@@ -417,10 +413,10 @@
 						},
 						type: "form"
 					}))(t(), f);
-					e.ok ? (A(f, b), U(Object(X.j)())) : h(ie(e.error)), x(!1)
-				}, [t, b, U, h, A, f]);
-				return r.a.createElement(s.Fragment, null, u && r.a.createElement(q, {
-					description: a.fbt._("Before continuing, confirm that you want to keep this as your Reddit username.", null, {
+					e.ok ? (g(f, b), U(Object(X.j)())) : h(ie(e.error)), N(!1)
+				}, [t, b, U, h, g, f]);
+				return r.a.createElement(a.Fragment, null, u && r.a.createElement(q, {
+					description: s.fbt._("Before continuing, confirm that you want to keep this as your Reddit username.", null, {
 						hk: "14rKrO"
 					}),
 					isResponsive: p,
@@ -434,14 +430,14 @@
 						U(Object(X.h)(X.a, !0))
 					},
 					primaryButtonText: ne,
-					secondaryButtonText: ae,
+					secondaryButtonText: se,
 					username: f
-				}), g && r.a.createElement(q, {
-					description: a.fbt._("Ok, just to confirm your confirmation… Are you absolutely sure? This will be your name forever.", null, {
+				}), A && r.a.createElement(q, {
+					description: s.fbt._("Ok, just to confirm your confirmation… Are you absolutely sure? This will be your name forever.", null, {
 						hk: "4lvkUG"
 					}),
 					isResponsive: p,
-					isSaving: N,
+					isSaving: x,
 					isSecondConfirm: !0,
 					onClose: o,
 					onPrimaryButtonClick: () => {
@@ -453,7 +449,7 @@
 					onView: () => {
 						U(Object(X.g)())
 					},
-					primaryButtonText: N ? re : ae,
+					primaryButtonText: x ? re : se,
 					secondaryButtonText: ne,
 					username: f
 				}), n && r.a.createElement(z, {
@@ -466,21 +462,21 @@
 					onSelect: () => {
 						U(Object(X.f)())
 					},
-					onUsernameChange: E,
+					onUsernameChange: O,
 					onView: () => {
 						U(Object(X.i)())
 					},
-					title: a.fbt._("Change username", null, {
+					title: s.fbt._("Change username", null, {
 						hk: "17XB7v"
 					}),
 					username: f
 				}), l && r.a.createElement(q, {
-					description: a.fbt._("Are you sure? This will be your username forever.", null, {
+					description: s.fbt._("Are you sure? This will be your username forever.", null, {
 						hk: "3JACTO"
 					}),
 					isResponsive: p,
 					isSaveConfirm: !0,
-					isSaving: N,
+					isSaving: x,
 					onClose: o,
 					onPrimaryButtonClick: () => {
 						M(), U(Object(X.c)("save"))
@@ -491,7 +487,7 @@
 					onView: () => {
 						U(Object(X.g)())
 					},
-					primaryButtonText: N ? re : se,
+					primaryButtonText: x ? re : ae,
 					secondaryButtonText: oe,
 					username: f
 				}))
@@ -506,7 +502,6 @@
 				title: "_3pcdqdRWruf7eepiLXw4CB",
 				username: "_1G1CITYgxpC6TIO7TGwhG3",
 				usernamePrefix: "_1Tq29ay6ogsCeK60Ouhv_q",
-				buttonWrapper: "lvHFLjGg76LoUfNXv4eik",
 				commonBtn: "_2c8uIH6hCLT9iEVO5N8-9o",
 				primaryBtn: "qUwq87ZWjStAxoxwoPOJA",
 				secondaryBtn: "MnLwM5PL1ET2BmK5lLIvR"
@@ -529,8 +524,8 @@
 				return m
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/icons/svgs/Approve/index.tsx"),
 				c = n("./src/reddit/icons/svgs/Warning/index.tsx"),
@@ -541,17 +536,17 @@
 				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 			var m, u = function(e, t) {
 				var n = {};
-				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var s = 0;
-					for (a = Object.getOwnPropertySymbols(e); s < a.length; s++) t.indexOf(a[s]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[s]) && (n[a[s]] = e[a[s]])
+					var a = 0;
+					for (s = Object.getOwnPropertySymbols(e); a < s.length; a++) t.indexOf(s[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[a]) && (n[s[a]] = e[s[a]])
 				}
 				return n
 			};
@@ -562,22 +557,22 @@
 				const {
 					className: t,
 					errorMessage: n,
-					successMessage: a,
+					successMessage: s,
 					validityState: i
-				} = e, p = u(e, ["className", "errorMessage", "successMessage", "validityState"]), h = i === m.Valid, A = i === m.Invalid;
-				return s.a.createElement("div", {
-					className: Object(r.a)(l.a.container, h && l.a.valid, A && l.a.invalid, t)
-				}, s.a.createElement("input", d({}, p, {
+				} = e, p = u(e, ["className", "errorMessage", "successMessage", "validityState"]), h = i === m.Valid, g = i === m.Invalid;
+				return a.a.createElement("div", {
+					className: Object(r.a)(l.a.container, h && l.a.valid, g && l.a.invalid, t)
+				}, a.a.createElement("input", d({}, p, {
 					className: l.a.input
-				})), h && s.a.createElement("div", {
+				})), h && a.a.createElement("div", {
 					className: l.a.icon
-				}, s.a.createElement(o.a, null)), A && s.a.createElement("div", {
+				}, a.a.createElement(o.a, null)), g && a.a.createElement("div", {
 					className: l.a.icon
-				}, s.a.createElement(c.a, null)), A && n && s.a.createElement("p", {
+				}, a.a.createElement(c.a, null)), g && n && a.a.createElement("p", {
 					className: l.a.error
-				}, n), h && a && s.a.createElement("p", {
+				}, n), h && s && a.a.createElement("p", {
 					className: l.a.success
-				}, a))
+				}, s))
 			}
 		},
 		"./src/reddit/components/Settings/ModalContainer/index.m.less": function(e, t, n) {
@@ -594,8 +589,8 @@
 		},
 		"./src/reddit/components/Settings/ModalContainer/index.tsx": function(e, t, n) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				c = n("./src/reddit/components/Settings/ModalContainer/index.m.less"),
@@ -604,7 +599,7 @@
 				const {
 					bodyClassName: t,
 					children: n,
-					className: a,
+					className: s,
 					description: c,
 					descriptionClassName: l,
 					headerClassName: d,
@@ -613,22 +608,22 @@
 					onClose: p,
 					title: h
 				} = e;
-				return s.a.createElement("div", {
-					className: Object(r.a)(i.a.container, a)
-				}, p && s.a.createElement("button", {
+				return a.a.createElement("div", {
+					className: Object(r.a)(i.a.container, s)
+				}, p && a.a.createElement("button", {
 					className: i.a.closeButton,
 					onClick: p
-				}, s.a.createElement(o.a, {
+				}, a.a.createElement(o.a, {
 					className: i.a.closeIcon
-				})), s.a.createElement("div", {
+				})), a.a.createElement("div", {
 					className: Object(r.a)(i.a.header, d)
-				}, m && s.a.createElement("div", {
+				}, m && a.a.createElement("div", {
 					className: Object(r.a)(i.a.icon, u)
-				}, m), s.a.createElement("h2", {
+				}, m), a.a.createElement("h2", {
 					className: i.a.title
-				}, h)), c && s.a.createElement("p", {
+				}, h)), c && a.a.createElement("p", {
 					className: Object(r.a)(i.a.description, l)
-				}, c), s.a.createElement("div", {
+				}, c), a.a.createElement("div", {
 					className: Object(r.a)(i.a.body, t)
 				}, n))
 			}
@@ -677,17 +672,17 @@
 			})), n.d(t, "g", (function() {
 				return f
 			})), n.d(t, "c", (function() {
-				return E
-			})), n.d(t, "i", (function() {
 				return O
+			})), n.d(t, "i", (function() {
+				return E
 			})), n.d(t, "e", (function() {
 				return v
 			})), n.d(t, "f", (function() {
 				return j
 			})), n.d(t, "j", (function() {
-				return N
+				return x
 			}));
-			var a, s, r = n("./src/reddit/actions/comment/index.ts"),
+			var s, a, r = n("./src/reddit/actions/comment/index.ts"),
 				o = n("./src/reddit/actions/modal.ts"),
 				c = n("./src/reddit/constants/actions.ts"),
 				i = n("./src/reddit/constants/modals.ts"),
@@ -697,96 +692,96 @@
 				u = n("./src/reddit/selectors/telemetry.ts");
 			! function(e) {
 				e.CHANGE_USERNAME_INITIAL = "change_username_initial", e.CHANGE_USERNAME_CONFIRMATION = "change_username_confirmation", e.CHANGE_USERNAME_INPUT = "change_username_input", e.CHANGE_USERNAME_SUCCESS = "change_username_success"
-			}(a || (a = {})),
+			}(s || (s = {})),
 			function(e) {
 				e.COMMENT = "comment", e.CUSTOM_FEED = "custom_feed", e.POST = "post", e.PROFILE = "profile", e.UNKNOWN = "unknown"
-			}(s || (s = {}));
+			}(a || (a = {}));
 			const p = "popup",
 				h = "tooltip",
-				A = e => {
-					if (!e) return s.UNKNOWN;
+				g = e => {
+					if (!e) return a.UNKNOWN;
 					switch (e.type) {
 						case r.p:
 						case r.j:
-							return s.COMMENT;
+							return a.COMMENT;
 						case o.c:
-							if (e.payload === i.a.MULTIREDDIT_ADD_SUBREDDIT || e.payload === i.a.MULTIREDDIT_CREATE) return s.CUSTOM_FEED;
+							if (e.payload === i.a.MULTIREDDIT_ADD_SUBREDDIT || e.payload === i.a.MULTIREDDIT_CREATE) return a.CUSTOM_FEED;
 							break;
 						case c.a: {
-							const t = g(e);
-							if (t.startsWith("/user/")) return s.PROFILE;
-							if (t.includes(d.b)) return s.POST;
+							const t = A(e);
+							if (t.startsWith("/user/")) return a.PROFILE;
+							if (t.includes(d.b)) return a.POST;
 							break
 						}
 					}
-					return s.UNKNOWN
+					return a.UNKNOWN
 				},
-				g = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
-				C = (e, t) => n => Object.assign({}, Object(u.defaults)(n), {
+				A = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
+				C = (e, t) => n => Object.assign(Object.assign({}, Object(u.defaults)(n)), {
 					action: l.c.VIEW,
 					actionInfo: Object(u.actionInfo)(n, {
-						reason: t ? A(Object(m.a)(n)) : void 0
+						reason: t ? g(Object(m.a)(n)) : void 0
 					}),
-					noun: a.CHANGE_USERNAME_INITIAL,
+					noun: s.CHANGE_USERNAME_INITIAL,
 					source: e
 				}),
-				b = (e, t) => n => Object.assign({}, Object(u.defaults)(n), {
+				b = (e, t) => n => Object.assign(Object.assign({}, Object(u.defaults)(n)), {
 					action: l.c.CLICK,
-					noun: a.CHANGE_USERNAME_INITIAL,
+					noun: s.CHANGE_USERNAME_INITIAL,
 					popup: {
 						buttonText: t
 					},
 					source: e
 				}),
-				f = () => e => Object.assign({}, Object(u.defaults)(e), {
+				f = () => e => Object.assign(Object.assign({}, Object(u.defaults)(e)), {
 					action: l.c.VIEW,
-					noun: a.CHANGE_USERNAME_CONFIRMATION,
+					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: p
 				}),
-				E = e => t => Object.assign({}, Object(u.defaults)(t), {
+				O = e => t => Object.assign(Object.assign({}, Object(u.defaults)(t)), {
 					action: l.c.CLICK,
-					noun: a.CHANGE_USERNAME_CONFIRMATION,
+					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: p,
 					popup: {
 						buttonText: e
 					}
 				}),
-				O = () => e => Object.assign({}, Object(u.defaults)(e), {
+				E = () => e => Object.assign(Object.assign({}, Object(u.defaults)(e)), {
 					action: l.c.VIEW,
-					noun: a.CHANGE_USERNAME_INPUT,
+					noun: s.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
-				v = () => e => Object.assign({}, Object(u.defaults)(e), {
+				v = () => e => Object.assign(Object.assign({}, Object(u.defaults)(e)), {
 					action: l.c.CLICK,
-					noun: a.CHANGE_USERNAME_INPUT,
+					noun: s.CHANGE_USERNAME_INPUT,
 					popup: {
 						buttonText: "next"
 					},
 					source: p
 				}),
-				j = () => e => Object.assign({}, Object(u.defaults)(e), {
+				j = () => e => Object.assign(Object.assign({}, Object(u.defaults)(e)), {
 					action: l.c.SELECT,
-					noun: a.CHANGE_USERNAME_INPUT,
+					noun: s.CHANGE_USERNAME_INPUT,
 					source: p
 				}),
-				N = () => e => Object.assign({}, Object(u.defaults)(e), {
+				x = () => e => Object.assign(Object.assign({}, Object(u.defaults)(e)), {
 					action: l.c.VIEW,
-					noun: a.CHANGE_USERNAME_SUCCESS,
+					noun: s.CHANGE_USERNAME_SUCCESS,
 					source: "toast"
 				})
 		},
 		"./src/reddit/icons/svgs/Approve/index.tsx": function(e, t, n) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-			t.a = e => s.a.createElement("svg", {
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s);
+			t.a = e => a.a.createElement("svg", {
 				className: e.className,
 				id: e.id,
 				onMouseEnter: e.onMouseEnter,
 				onMouseLeave: e.onMouseLeave,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("path", {
+			}, a.a.createElement("g", null, a.a.createElement("path", {
 				d: "m17.707 5.6934-1.399-1.4c-.188-.188-.442-.293-.707-.293-.266 0-.52.105-.707.293l-6.994 6.993-2.793-2.793c-.39-.391-1.023-.391-1.414 0l-1.4 1.4c-.391.391-.391 1.024 0 1.414l4.9 4.9c.196.195.451.293.707.293s.512-.098.707-.293l9.1-9.1c.391-.391.391-1.023 0-1.414",
 				fill: "inherit"
 			})))
@@ -798,20 +793,20 @@
 		},
 		"./src/reddit/icons/svgs/Warning/index.tsx": function(e, t, n) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/icons/svgs/Warning/index.m.less"),
 				c = n.n(o);
-			t.a = e => s.a.createElement("svg", {
+			t.a = e => a.a.createElement("svg", {
 				className: Object(r.a)(c.a.warning, e.className),
 				viewBox: "0 0 18 18",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("circle", {
+			}, a.a.createElement("circle", {
 				r: "9",
 				cx: "9",
 				cy: "9"
-			}), s.a.createElement("path", {
+			}), a.a.createElement("path", {
 				d: "m10.4893 10.9385c-.05.23-.254.395-.489.395-.236 0-.44-.165-.49-.395l-1-4.667c-.031-.148.006-.302.101-.419.095-.118.237-.186.389-.186h2c.151 0 .294.068.388.186.095.117.132.271.101.419zm.431 3.281c-.05.12-.12.23-.21.321-.05.049-.101.089-.151.129l-.179.09c-.061.02-.12.04-.18.051-.07.019-.131.019-.2.019-.26 0-.521-.099-.71-.289-.09-.091-.16-.201-.21-.321-.061-.13-.08-.26-.08-.39 0-.26.109-.519.29-.7.09-.1.2-.17.33-.22.37-.15.809-.06 1.09.22.179.181.29.44.29.7 0 .13-.031.26-.08.39zm-.92-12.219c-4.411 0-8 3.588-8 8 0 4.411 3.589 8 8 8s8-3.589 8-8c0-4.412-3.589-8-8-8z",
 				fill: "inherit",
 				fillRule: "evenodd",
@@ -820,4 +815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChangeUsernameModals.4a0f413b360839add57c.js.map
+//# sourceMappingURL=ChangeUsernameModals.7485b890258b60604bff.js.map

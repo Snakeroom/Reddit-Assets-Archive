@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.41f5f053476d78870d83.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.0ae8eccb8e8b37672c39.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -47,7 +47,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var y = function(e, t) {
+			var g = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -56,7 +56,7 @@
 				}
 				return s
 			};
-			const g = Object(c.c)({
+			const y = Object(c.c)({
 				subredditId: O.d,
 				optionIsRelevant: (e, t) => {
 					let {
@@ -70,7 +70,7 @@
 					return !o || o.isRelevant
 				}
 			});
-			var C = Object(r.b)(g, (e, t) => ({
+			var C = Object(r.b)(y, (e, t) => ({
 					onModeratorSelectedOptionClicked: (s, n) => {
 						s && t.option.id && e(Object(a.r)(s, [{
 							subredditId: s,
@@ -88,7 +88,7 @@
 						subredditId: a,
 						onModeratorSelectedOptionClicked: d,
 						optionIsRelevant: p
-					} = e, c = y(e, ["className", "innerRef", "onClickHandler", "option", "maxLength", "subredditId", "onModeratorSelectedOptionClicked", "optionIsRelevant"]), h = [x.a.selectedOptionComponentContainer, t];
+					} = e, c = g(e, ["className", "innerRef", "onClickHandler", "option", "maxLength", "subredditId", "onModeratorSelectedOptionClicked", "optionIsRelevant"]), h = [x.a.selectedOptionComponentContainer, t];
 					return r && r < o.displayText.length && h.push(x.a.selectedOptionComponentContainerError), p || h.push(x.a.irrelevantSelectedOption), i.a.createElement("div", f({
 						className: Object(l.a)(...h),
 						ref: s,
@@ -100,8 +100,8 @@
 				v = s("./src/reddit/controls/Button/index.tsx"),
 				S = s("./src/reddit/helpers/readOnlyMode/index.ts"),
 				T = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				I = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				j = s("./src/reddit/models/Tags/index.ts"),
+				j = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				I = s("./src/reddit/models/Tags/index.ts"),
 				E = s("./src/reddit/models/Toast/index.ts"),
 				w = s("./src/reddit/reducers/tags/selected/index.ts"),
 				R = s("./src/reddit/components/CommunityTopics/AdminCommunityTopics/index.m.less"),
@@ -159,7 +159,7 @@
 							e(Object(a.q)({
 								subredditId: s,
 								option: t
-							})), e(Object(a.h)(s, Object.assign({}, t, {
+							})), e(Object(a.h)(s, Object.assign(Object.assign({}, t), {
 								action: w.a.ADD
 							}), h.a.communitySettings))
 						},
@@ -167,7 +167,7 @@
 							e(Object(a.p)({
 								subredditId: s,
 								option: t
-							})), e(Object(a.e)(s, Object.assign({}, t, {
+							})), e(Object(a.e)(s, Object.assign(Object.assign({}, t), {
 								action: w.a.REMOVE
 							}), h.a.communitySettings))
 						},
@@ -177,9 +177,9 @@
 						})),
 						onSearchBarFocused: () => e(() => {}),
 						onMaxTopicsHit: () => e((e, t) => {
-							e(Object(d.e)(Object.assign({}, Object(d.d)(n.fbt._("You can only add up to {max number of topics} community topics", [n.fbt._param("max number of topics", j.a.toString())], {
+							e(Object(d.e)(Object.assign(Object.assign({}, Object(d.d)(n.fbt._("You can only add up to {max number of topics} community topics", [n.fbt._param("max number of topics", I.a.toString())], {
 								hk: "1OySAh"
-							}), E.b.Error), {
+							}), E.b.Error)), {
 								duration: d.a
 							})))
 						})
@@ -207,7 +207,7 @@
 						onClick: this.onExpandButtonClick
 					}, n.fbt._("Admin Community Topics", null, {
 						hk: "37srVU"
-					}), this.state.isOpen ? i.a.createElement(I.a, null) : i.a.createElement(T.a, null)), this.state.isOpen && i.a.createElement("div", {
+					}), this.state.isOpen ? i.a.createElement(j.a, null) : i.a.createElement(T.a, null)), this.state.isOpen && i.a.createElement("div", {
 						className: D.a.content
 					}, i.a.createElement("div", {
 						className: D.a.header
@@ -323,7 +323,7 @@
 							const t = Object(O.c)(e.displayText, this.props.availableSubredditTags);
 							t && (e = Object(h.f)(t, !0))
 						}
-						this.props.optionSelected(Object.assign({}, e, {
+						this.props.optionSelected(Object.assign(Object.assign({}, e), {
 							displayText: e.displayText.trim()
 						}))
 					}), n.length !== s.length && this.props.onMaxTopicsHit()
@@ -398,12 +398,12 @@
 						})
 					}),
 					onMaxTopicsHit: () => e((e, t) => {
-						e(Object(p.e)(Object.assign({}, Object(p.d)(n.fbt._({
+						e(Object(p.e)(Object.assign(Object.assign({}, Object(p.d)(n.fbt._({
 							"*": "You can only add up to max {number} community topics",
 							_1: "You can only add up to max 1 community topic"
 						}, [n.fbt._plural(h.a, "number")], {
 							hk: "s07I1"
-						}), u.b.Error), {
+						}), u.b.Error)), {
 							duration: p.a
 						})))
 					})
@@ -536,7 +536,7 @@
 					this.handleOptionsSelected([e])
 				}
 				handleOptionsSelected(e) {
-					this.props.onOptionsChanged(e.map(e => Object.assign({}, e, {
+					this.props.onOptionsChanged(e.map(e => Object.assign(Object.assign({}, e), {
 						selected: !0
 					})))
 				}
@@ -631,7 +631,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var y = function(e, t) {
+			var g = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -640,14 +640,14 @@
 				}
 				return s
 			};
-			var g = e => {
+			var y = e => {
 					const {
 						className: t,
 						innerRef: s,
 						onClickHandler: n,
 						option: o,
 						maxLength: i
-					} = e, d = y(e, ["className", "innerRef", "onClickHandler", "option", "maxLength"]), p = [x.a.selectedOptionComponentContainer, t];
+					} = e, d = g(e, ["className", "innerRef", "onClickHandler", "option", "maxLength"]), p = [x.a.selectedOptionComponentContainer, t];
 					return i && i < o.displayText.length && p.push(x.a.selectedOptionComponentContainerError), r.a.createElement("div", f({
 						className: Object(a.a)(...p),
 						ref: s
@@ -662,8 +662,8 @@
 				S = s("./src/reddit/components/MultiOptionSelect/OptionSearchBar/index.m.less"),
 				T = s.n(S);
 
-			function I() {
-				return (I = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -671,7 +671,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = 10,
+			const I = 10,
 				E = e => e.stopPropagation();
 			class w extends r.a.Component {
 				constructor(e) {
@@ -708,7 +708,7 @@
 					this.inputRef.current && (this.inputRef.current.value = "")
 				}
 				deselectOption(e) {
-					this.props.onOptionsChanged([Object.assign({}, e, {
+					this.props.onOptionsChanged([Object.assign(Object.assign({}, e), {
 						selected: !1
 					})]), this.setState({
 						isHoveringOverSelectedOption: !1
@@ -720,9 +720,9 @@
 				render() {
 					const e = {};
 					Object(v.c)(this.props.readOnlyMode) || (e.tabIndex = 0);
-					const t = this.props.selectedOptionComponent || g,
+					const t = this.props.selectedOptionComponent || y,
 						s = "number" == typeof this.props.maxOptionsToDisplay && this.props.options.length > this.props.maxOptionsToDisplay;
-					return r.a.createElement("div", I({
+					return r.a.createElement("div", j({
 						"aria-invalid": this.props.isError,
 						className: Object(a.a)(this.props.className, T.a.optionSearchBarContainer, {
 							[T.a.optionSearchBarError]: this.props.isError,
@@ -760,7 +760,7 @@
 						maxLength: this.props.maxLength
 					}), this.props.isLoading && r.a.createElement(C.a, {
 						className: T.a.loadingIcon,
-						sizePx: j
+						sizePx: I
 					}), this.state.isFocused && r.a.createElement(O, {
 						className: this.props.dropdownClassName,
 						dropdownHeaderText: this.props.dropdownHeaderText,
@@ -788,7 +788,7 @@
 							searchBarIsFocused: !0
 						}), this.props.onSearchBarFocus && this.props.onSearchBarFocus())
 					}, this.onSearchBarBlur = e => {
-						if (!Object(v.c)(this.props.readOnlyMode)) return this.optionsListDropdownRef.current && this.optionsListDropdownRef.current.matchesDOMElement(e.relatedTarget) ? (e.stopPropagation(), e.preventDefault(), void setTimeout(() => {
+						if (!Object(v.c)(this.props.readOnlyMode)) return e.relatedTarget && this.optionsListDropdownRef.current && this.optionsListDropdownRef.current.matchesDOMElement(e.relatedTarget) ? (e.stopPropagation(), e.preventDefault(), void setTimeout(() => {
 							this.optionSearchBarRef.current && this.optionSearchBarRef.current.focus()
 						}, 0)) : (this.setState({
 							searchBarIsFocused: !1
@@ -865,4 +865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminCommunityTopics.41f5f053476d78870d83.js.map
+//# sourceMappingURL=AdminCommunityTopics.0ae8eccb8e8b37672c39.js.map

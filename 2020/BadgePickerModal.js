@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.c350758a9679da7499fa.js
-// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.6e58235e4c0de6adc4be.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -254,16 +254,16 @@
 					onApplyFlair: (t, a, s, r, n) => {
 						e(Object(m.o)(t, a, s, r, n)), e(Object(u.f)())
 					}
-				}), (e, t, a) => Object.assign({}, e, t, a, {
+				}), (e, t, a) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), a), {
 					onApplyFlair: (s, r, n) => {
 						t.onApplyFlair(s, r, n, e.user && e.user.displayText ? e.user.displayText : "", a.subredditId)
 					}
 				}))(k),
 				_ = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./node_modules/core-js/modules/es6.array.sort.js"), a("./node_modules/bignumber.js/bignumber.js")),
 				I = a("./node_modules/shallowequal/index.js"),
-				w = a.n(I);
+				j = a.n(I);
 
-			function j(e) {
+			function w(e) {
 				return e instanceof Set ? Array.from(e) : e
 			}
 
@@ -271,7 +271,7 @@
 				let t;
 				return function() {
 					const a = e(...arguments);
-					return w()(j(t), j(a)) || (t = a), t
+					return j()(w(t), w(a)) || (t = a), t
 				}
 			}
 			var F = a("./src/lib/prettyPrintNumber/index.ts"),
@@ -572,7 +572,7 @@
 				} = e;
 				return r.a.createElement("div", {
 					className: ge.a.tooltip,
-					style: Object.assign({}, a, {
+					style: Object.assign(Object.assign({}, a), {
 						zIndex: ue.h
 					})
 				}, r.a.createElement("div", {
@@ -685,7 +685,7 @@
 				}
 				renderApply() {
 					return r.a.createElement(g.f, {
-						disabled: 0 === this.props.badgeIds.length || w()(Array.from(this.props.appliedBadges), Array.from(this.state.selectedBadges)),
+						disabled: 0 === this.props.badgeIds.length || j()(Array.from(this.props.appliedBadges), Array.from(this.state.selectedBadges)),
 						onClick: this.handleApplyBadges
 					}, Ce._("apply", null, {
 						hk: "2vTZSt"
@@ -738,8 +738,8 @@
 				})(ke),
 				_e = a("./src/reddit/components/Governance/ModalClose/index.tsx"),
 				Ie = a("./src/reddit/components/Flair/index.tsx"),
-				we = a("./src/reddit/components/Badges/PickerModal/UserDisplay/index.m.less"),
-				je = a.n(we);
+				je = a("./src/reddit/components/Badges/PickerModal/UserDisplay/index.m.less"),
+				we = a.n(je);
 			const Oe = Object(d.c)({
 				badges: (e, t) => {
 					let {
@@ -755,12 +755,12 @@
 					}, e.badges.map(e => {
 						const t = Object(L.b)(24, 24, e);
 						return r.a.createElement("img", {
-							className: je.a.badge,
+							className: we.a.badge,
 							src: t.url2x,
 							srcSet: "".concat(t.url, ", ").concat(t.url2x, " 2x")
 						})
 					}), r.a.createElement("span", null, e.user ? "u/".concat(e.user.displayText) : "u/username"), e.flair && r.a.createElement("span", {
-						className: je.a.flair
+						className: we.a.flair
 					}, r.a.createElement(Ie.b, {
 						flair: e.flair
 					})))
@@ -1125,9 +1125,9 @@
 			})), a.d(t, "r", (function() {
 				return I
 			})), a.d(t, "n", (function() {
-				return w
-			})), a.d(t, "k", (function() {
 				return j
+			})), a.d(t, "k", (function() {
+				return w
 			}));
 			var s = a("./src/reddit/contexts/PageLayer/index.tsx"),
 				r = a("./src/reddit/endpoints/governance/crypto.ts"),
@@ -1229,7 +1229,7 @@
 						image: d.image
 					}
 				},
-				w = (e, t) => {
+				j = (e, t) => {
 					let {
 						subredditId: a
 					} = t;
@@ -1240,11 +1240,11 @@
 						address: void 0
 					}
 				},
-				j = (e, t) => {
+				w = (e, t) => {
 					const a = k(e, t);
 					return !!a && !!a.walletProvider && !a.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePickerModal.c350758a9679da7499fa.js.map
+//# sourceMappingURL=BadgePickerModal.6e58235e4c0de6adc4be.js.map

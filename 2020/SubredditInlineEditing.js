@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.9760be03c7e33f125069.js
-// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.1a939fdbd2c173c7c5a0.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -105,9 +105,9 @@
 								const r = d();
 								Object(T.v)(r, {
 									subredditId: s
-								}).length >= O.a ? e(Object(l.e)(Object.assign({}, Object(l.d)(n.fbt._("You can only add up to {max number of topics} community topics", [n.fbt._param("max number of topics", O.a.toString())], {
+								}).length >= O.a ? e(Object(l.e)(Object.assign(Object.assign({}, Object(l.d)(n.fbt._("You can only add up to {max number of topics} community topics", [n.fbt._param("max number of topics", O.a.toString())], {
 									hk: "1OySAh"
-								}), x.b.Error), {
+								}), x.b.Error)), {
 									duration: l.a
 								}))) : (e(Object(c.n)({
 									subredditId: s,
@@ -213,7 +213,7 @@
 							const t = Object(b.c)(e.displayText, this.props.availableSubredditTags);
 							t && (e = Object(u.f)(t, !0))
 						}
-						this.props.optionSelected(Object.assign({}, e, {
+						this.props.optionSelected(Object.assign(Object.assign({}, e), {
 							displayText: e.displayText.trim()
 						}))
 					}), n.length !== s.length && this.props.onMaxTopicsHit()
@@ -288,12 +288,12 @@
 						})
 					}),
 					onMaxTopicsHit: () => e((e, t) => {
-						e(Object(c.e)(Object.assign({}, Object(c.d)(n.fbt._({
+						e(Object(c.e)(Object.assign(Object.assign({}, Object(c.d)(n.fbt._({
 							"*": "You can only add up to max {number} community topics",
 							_1: "You can only add up to max 1 community topic"
 						}, [n.fbt._plural(u.a, "number")], {
 							hk: "s07I1"
-						}), m.b.Error), {
+						}), m.b.Error)), {
 							duration: c.a
 						})))
 					})
@@ -687,4 +687,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditInlineEditing.9760be03c7e33f125069.js.map
+//# sourceMappingURL=SubredditInlineEditing.1a939fdbd2c173c7c5a0.js.map

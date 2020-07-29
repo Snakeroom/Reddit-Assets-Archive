@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.613c732f8caba7b48439.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.4c3144d2a30a9f83f61b.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -57,15 +57,15 @@
 				h = n.n(C),
 				F = n("./src/lib/lessComponent.tsx");
 			const y = F.a.div("DescriptionPending", h.a),
-				E = F.a.wrapped(u.d, "ModalBody", h.a),
-				g = Object(i.c)({
+				g = F.a.wrapped(u.d, "ModalBody", h.a),
+				E = Object(i.c)({
 					restrictions: f.p,
 					subreddit: x.f
 				}),
-				R = Object(o.b)(g, e => ({
+				R = Object(o.b)(E, e => ({
 					openContributorRequestPendingModal: () => e(Object(d.i)(m.a.CONTRIBUTOR_REQUEST_PENDING))
 				}));
-			class q extends r.a.Component {
+			class j extends r.a.Component {
 				render() {
 					const {
 						openContributorRequestPendingModal: e,
@@ -74,7 +74,7 @@
 					} = this.props;
 					if (!n) return null;
 					const a = t === _.e.Comment ? _.a.Create : _.a.Draft;
-					return r.a.createElement(E, null, r.a.createElement(c.ModalHeader, null, r.a.createElement(b.a, null, r.a.createElement(c.ModalTitle, null, s.fbt._("Request sent and pending...", null, {
+					return r.a.createElement(g, null, r.a.createElement(c.ModalHeader, null, r.a.createElement(b.a, null, r.a.createElement(c.ModalTitle, null, s.fbt._("Request sent and pending...", null, {
 						hk: "8x2US"
 					})), r.a.createElement(p.a, {
 						onClick: () => e()
@@ -87,7 +87,7 @@
 					}))))
 				}
 			}
-			t.default = F.a.wrapped(Object(l.a)(R(q)), "Component", h.a)
+			t.default = F.a.wrapped(Object(l.a)(R(j)), "Component", h.a)
 		},
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -111,9 +111,9 @@
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "ModalHeader", (function() {
-				return M
-			})), n.d(t, "ModalTitle", (function() {
 				return O
+			})), n.d(t, "ModalTitle", (function() {
+				return M
 			})), n.d(t, "CloseIcon", (function() {
 				return I
 			}));
@@ -136,18 +136,18 @@
 				h = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				F = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				y = n("./src/reddit/models/Theme/index.ts"),
-				E = n("./src/reddit/selectors/platform.ts"),
-				g = n("./src/reddit/selectors/structuredStyles.ts"),
+				g = n("./src/reddit/selectors/platform.ts"),
+				E = n("./src/reddit/selectors/structuredStyles.ts"),
 				R = n("./src/reddit/selectors/subreddit.ts"),
-				q = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
-				j = n.n(q),
+				j = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
+				q = n.n(j),
 				v = n("./src/lib/lessComponent.tsx");
-			const k = v.a.wrapped(m.d, "ModalBody", j.a),
-				M = v.a.wrapped(m.h, "ModalHeader", j.a),
-				O = v.a.div("ModalTitle", j.a),
-				w = v.a.div("Title", j.a),
-				S = v.a.div("Description", j.a),
-				I = v.a.wrapped(m.b, "CloseIcon", j.a);
+			const k = v.a.wrapped(m.d, "ModalBody", q.a),
+				O = v.a.wrapped(m.h, "ModalHeader", q.a),
+				M = v.a.div("ModalTitle", q.a),
+				w = v.a.div("Title", q.a),
+				S = v.a.div("Description", q.a),
+				I = v.a.wrapped(m.b, "CloseIcon", q.a);
 			class T extends o.a.Component {
 				constructor(e) {
 					super(e), this.onTextAreaChange = e => {
@@ -168,8 +168,8 @@
 						t = this.props.subredditAboutInfo.disableContributorRequests,
 						n = this.props.theme ? Object(y.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
 					return o.a.createElement(k, {
-						className: j.a.requestModal
-					}, o.a.createElement(M, null, o.a.createElement(h.a, null, o.a.createElement("div", null, o.a.createElement(O, {
+						className: q.a.requestModal
+					}, o.a.createElement(O, null, o.a.createElement(h.a, null, o.a.createElement("div", null, o.a.createElement(M, {
 						style: {
 							color: n
 						}
@@ -180,7 +180,7 @@
 							color: n
 						}
 					}, o.a.createElement(b.b, {
-						className: j.a.subredditIcon,
+						className: q.a.subredditIcon,
 						iconUrl: this.props.subredditIcon.url,
 						primaryColor: this.props.subredditIcon.color
 					}), o.a.createElement("span", null, e))), o.a.createElement(f.a, {
@@ -190,7 +190,7 @@
 					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(S, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", F.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
 						hk: "1q9PJW"
 					})), o.a.createElement(p.c, {
-						className: j.a.textarea,
+						className: q.a.textarea,
 						label: s.fbt._("Request to moderators", null, {
 							hk: "4hiUqP"
 						}),
@@ -219,12 +219,12 @@
 			t.default = v.a.wrapped(Object(a.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
 				subredditAboutInfo: R.j,
 				restrictions: R.p,
-				subreddit: E.f,
-				subredditIcon: g.c
+				subreddit: g.f,
+				subredditIcon: E.c
 			}), e => ({
 				makeContributorRequest: (t, n, s) => e(Object(u.n)(t, n, s)),
 				toggleContributorRequestModal: () => e(Object(c.i)(x.a.CONTRIBUTOR_REQUEST))
-			}))(Object(_.c)(T)))), "Component", j.a)
+			}))(Object(_.c)(T)))), "Component", q.a)
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -383,13 +383,13 @@
 				return r
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
-			const a = e => t => Object.assign({}, s.defaults(t), {
+			const a = e => t => Object.assign(Object.assign({}, s.defaults(t)), {
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
 					subreddit: s.subreddit(t)
 				}),
-				r = e => t => Object.assign({}, s.defaults(t), {
+				r = e => t => Object.assign(Object.assign({}, s.defaults(t)), {
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
@@ -411,4 +411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ContributorRequestPendingModal.613c732f8caba7b48439.js.map
+//# sourceMappingURL=ContributorRequestPendingModal.4c3144d2a30a9f83f61b.js.map

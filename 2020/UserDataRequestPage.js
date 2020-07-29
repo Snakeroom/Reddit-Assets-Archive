@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.debd52d72d4727d724a7.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.138ffaaae3428ea48006.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/graphql/operations/RequestUserDataExport.json": function(e) {
@@ -230,7 +230,7 @@
 				p = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				b = a("./src/graphql/operations/RequestUserDataExport.json"),
 				h = a("./src/lib/makeGqlRequest/index.ts"),
-				f = (e, t) => Object(h.a)(e, Object.assign({}, b, {
+				f = (e, t) => Object(h.a)(e, Object.assign(Object.assign({}, b), {
 					variables: t
 				}));
 			const x = () => "/message/inbox";
@@ -498,4 +498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=UserDataRequestPage.debd52d72d4727d724a7.js.map
+//# sourceMappingURL=UserDataRequestPage.138ffaaae3428ea48006.js.map

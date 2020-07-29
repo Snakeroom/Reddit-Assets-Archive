@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.ad98baa389c500c86fda.js
-// Retrieved at 7/14/2020, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.81b376a3f48b9c17f30f.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -68,8 +68,8 @@
 				g = n("./src/reddit/actions/toaster.ts"),
 				O = n("./src/lib/makeApiRequest/index.ts"),
 				f = n("./src/lib/omitHeaders/index.ts"),
-				k = n("./src/reddit/constants/headers.ts"),
-				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+				v = n("./src/reddit/constants/headers.ts"),
+				k = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var y = async (e, t, n, s, o, c) => {
 				const a = {
 					recipient: n,
@@ -78,20 +78,20 @@
 					message: o,
 					correlation_id: c
 				};
-				return Object(O.a)(Object(f.a)(e, [k.a]), {
+				return Object(O.a)(Object(f.a)(e, [v.a]), {
 					method: b.db.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
 					data: a
-				}).then(e => e.ok ? Object.assign({}, e) : e.error && e.error.type ? e : Object.assign({}, e, {
-					error: Object(v.a)(e)
+				}).then(e => e.ok ? Object.assign({}, e) : e.error && e.error.type ? e : Object.assign(Object.assign({}, e), {
+					error: Object(k.a)(e)
 				}))
-			}, C = n("./src/reddit/helpers/correlationIdTracker.ts"), w = n("./src/reddit/models/Toast/index.ts"), E = n("./src/reddit/selectors/premium.ts"), j = n("./src/reddit/actions/gold/constants.ts");
-			Object(x.a)(j.y), Object(x.a)(j.A), Object(x.a)(j.z), Object(x.a)(j.C);
-			const _ = Object(x.a)(j.x),
-				I = Object(x.a)(j.w),
+			}, j = n("./src/reddit/helpers/correlationIdTracker.ts"), C = n("./src/reddit/models/Toast/index.ts"), w = n("./src/reddit/selectors/premium.ts"), E = n("./src/reddit/actions/gold/constants.ts");
+			Object(x.a)(E.x), Object(x.a)(E.z), Object(x.a)(E.y), Object(x.a)(E.B);
+			const _ = Object(x.a)(E.w),
+				I = Object(x.a)(E.v),
 				N = e => async (t, n) => {
 					await t(I(e));
-					const o = Object(E.a)(n());
+					const o = Object(w.a)(n());
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
@@ -108,20 +108,20 @@
 							}
 						})(e, o);
 						t(Object(g.e)({
-							kind: w.b.Error,
+							kind: C.b.Error,
 							duration: g.a,
 							text: n
 						}))
 					}
-				}, M = Object(x.a)(j.B), S = e => async (t, n) => {
+				}, S = Object(x.a)(E.A), M = e => async (t, n) => {
 					const o = n(),
-						c = Object(E.d)(o);
-					t(M(e));
+						c = Object(w.d)(o);
+					t(S(e));
 					const a = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", "u/".concat(c))], {
 						hk: "3cBrLk"
 					});
 					t(Object(g.e)({
-						kind: w.b.SuccessCommunity,
+						kind: C.b.SuccessCommunity,
 						text: a
 					}))
 				};
@@ -149,8 +149,8 @@
 				H = Object(i.c)({
 					coinBalance: F.d,
 					isEmployee: F.E,
-					isPending: E.b,
-					recipientName: E.d
+					isPending: w.b,
+					recipientName: w.d
 				}),
 				U = Object(a.b)(H, e => ({
 					closeModal: () => e(Object(D.b)()),
@@ -161,11 +161,11 @@
 							} = a;
 							o(_());
 							try {
-								const c = await y(i(), t, e, n, s, Object(C.c)(C.a.GiftPremiumFlow));
+								const c = await y(i(), t, e, n, s, Object(j.c)(j.a.GiftPremiumFlow));
 								if (c.error) await o(N(c));
 								else {
 									const e = c.body;
-									await o(S(e)), Object(C.b)(C.a.GiftPremiumFlow)
+									await o(M(e)), Object(j.b)(j.a.GiftPremiumFlow)
 								}
 							} catch (r) {
 								await o(N(r))
@@ -251,7 +251,7 @@
 					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(p.T)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.S)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
@@ -708,47 +708,47 @@
 			var s = n("./src/reddit/selectors/telemetry.ts"),
 				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				c = n("./src/reddit/selectors/gild.ts");
-			const a = e => Object.assign({}, s.defaults(e), {
+			const a = e => Object.assign(Object.assign({}, s.defaults(e)), {
 					correlationId: Object(c.b)(e) || Object(o.d)(o.a.GiftPremiumFlow, !1),
 					screen: s.screen(e),
 					subreddit: s.subreddit(e)
 				}),
-				i = () => e => Object.assign({}, a(e), {
+				i = () => e => Object.assign(Object.assign({}, a(e)), {
 					source: "profile",
 					action: "click",
 					noun: "give_premium"
 				}),
-				r = () => e => Object.assign({}, a(e), {
+				r = () => e => Object.assign(Object.assign({}, a(e)), {
 					source: "give_premium",
 					action: "view",
 					noun: "modal"
 				}),
-				l = e => t => Object.assign({}, a(t), {
+				l = e => t => Object.assign(Object.assign({}, a(t)), {
 					source: "give_premium",
 					action: "select",
 					noun: "premium_".concat(e.monthsOfPremium)
 				}),
-				d = e => t => Object.assign({}, a(t), {
+				d = e => t => Object.assign(Object.assign({}, a(t)), {
 					source: "give_premium",
 					action: e,
 					noun: "anonymous"
 				}),
-				m = () => e => Object.assign({}, a(e), {
+				m = () => e => Object.assign(Object.assign({}, a(e)), {
 					source: "give_premium",
 					action: "click",
 					noun: "message_input"
 				}),
-				u = () => e => Object.assign({}, a(e), {
+				u = () => e => Object.assign(Object.assign({}, a(e)), {
 					source: "give_premium",
 					action: "type",
 					noun: "message_input"
 				}),
-				p = () => e => Object.assign({}, a(e), {
+				p = () => e => Object.assign(Object.assign({}, a(e)), {
 					source: "give_premium",
 					action: "click",
 					noun: "confirm"
 				}),
-				h = () => e => Object.assign({}, a(e), {
+				h = () => e => Object.assign(Object.assign({}, a(e)), {
 					source: "give_premium",
 					action: "click",
 					noun: "close"
@@ -796,4 +796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.ad98baa389c500c86fda.js.map
+//# sourceMappingURL=GivePremiumModal.81b376a3f48b9c17f30f.js.map

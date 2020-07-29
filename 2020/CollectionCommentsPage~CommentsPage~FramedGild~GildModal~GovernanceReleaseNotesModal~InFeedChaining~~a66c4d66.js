@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.d0641183beb60f166d37.js
-// Retrieved at 7/20/2020, 11:00:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.e290d052c11d7ada3627.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -166,7 +166,7 @@
 					}, this.handleMouseUp = e => {
 						if (this.props.active) {
 							const e = this.state.progressPercent * this.props.totalTime / 100;
-							this.props.updatePosition(e), this.progressBar && this.progressThumb && (this.progressBar.style.width = null, this.progressThumb.style.marginLeft = null)
+							this.props.updatePosition(e), this.progressBar && this.progressThumb && (this.progressBar.style.width = "", this.progressThumb.style.marginLeft = "")
 						}
 					}, this.handleMouseLeave = e => {
 						this.setLookahead(0)
@@ -855,16 +855,16 @@
 				B = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				_ = s("./src/reddit/selectors/experiments/utils.ts");
 			const N = Object(d.a)(e => Object(B.c)(e, {
-					experimentName: V.oc,
+					experimentName: V.sc,
 					experimentEligibilitySelector: B.a
 				}), _.a),
 				O = Object(d.a)(N, (function(e) {
 					switch (e) {
-						case V.rc.BufferTwoSeconds:
+						case V.vc.BufferTwoSeconds:
 							return 2;
-						case V.rc.BufferFiveSeconds:
+						case V.vc.BufferFiveSeconds:
 							return 5;
-						case V.rc.BufferTenSeconds:
+						case V.vc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1321,7 +1321,7 @@
 					} = e;
 					return l.a.createElement(he.a, {
 						className: Qe.a.ctaLink,
-						onClick: e => i(e => Object.assign({}, Object(pe.defaults)(e), {
+						onClick: e => i(e => Object.assign(Object.assign({}, Object(pe.defaults)(e)), {
 							source: "videoplayer",
 							action: "click",
 							noun: "callToAction"
@@ -1414,7 +1414,7 @@
 					currentUser: I.i,
 					inVideoNewVolumePolicyFeed: L.a,
 					inVideoNewVolumePolicyTheatre: L.b,
-					isMutedPreference: k.b,
+					isMutedPreference: k.c,
 					isOverlayOpen: R.i,
 					loadTimes: H.g,
 					metadata: H.i,
@@ -1423,7 +1423,7 @@
 					started: H.l,
 					videoBufferTime: O,
 					videoBufferVariant: N,
-					volume: k.c
+					volume: k.d
 				}), (e, t) => {
 					let {
 						postId: s
@@ -1466,8 +1466,8 @@
 						setVideoFullscreen: () => {
 							s && e(b.O(s))
 						},
-						setVideoMuted: t => e(P.f(t, s)),
-						setVideoVolume: t => e(P.g(t)),
+						setVideoMuted: t => e(P.g(t, s)),
+						setVideoVolume: t => e(P.h(t)),
 						onWatchedPercent: t => {
 							s && e(b.U(t, s))
 						},
@@ -1800,8 +1800,8 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("66b4cd6-production", " ").concat(t);
-									return i && (s += " [".concat(V.oc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("55eb65c-production", " ").concat(t);
+									return i && (s += " [".concat(V.sc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -1940,7 +1940,7 @@
 						settingChange: d,
 						videoEnded: h,
 						videoLoaded: p
-					} = this.state, m = this.HTML5StreamPlayerVideo, f = d === dt.SeekBar, g = p || !t, v = g && m && 0 !== m.currentTime, y = !n && c, x = h && !f, P = Object.assign({}, this.props, {
+					} = this.state, m = this.HTML5StreamPlayerVideo, f = d === dt.SeekBar, g = p || !t, v = g && m && 0 !== m.currentTime, y = !n && c, x = h && !f, P = Object.assign(Object.assign({}, this.props), {
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
 						setAutoplay: this.setAutoplay,
@@ -2227,13 +2227,13 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const n = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: a.pc
+					experimentName: a.tc
 				}),
-				r = [a.sc.FeedAndTheatre, a.sc.FeedOnly],
+				r = [a.wc.FeedAndTheatre, a.wc.FeedOnly],
 				l = Object(i.a)(n, e => r.includes(e)),
-				c = [a.sc.FeedAndTheatre, a.sc.TheatreOnly],
+				c = [a.wc.FeedAndTheatre, a.wc.TheatreOnly],
 				d = Object(i.a)(n, e => c.includes(e))
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.d0641183beb60f166d37.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.e290d052c11d7ada3627.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.f99ff799b28fb25534e6.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.4a9a87621a9486546e3f.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, n) {
@@ -152,12 +152,12 @@
 				_ = n("./src/reddit/selectors/user.ts"),
 				h = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx"),
 				v = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
-				x = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.m.less"),
-				f = n.n(x);
+				j = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.m.less"),
+				O = n.n(j);
 			const {
-				fbt: j
+				fbt: x
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const O = Object(r.c)({
+			const f = Object(r.c)({
 				subredditName: (e, t) => {
 					let {
 						subredditId: n
@@ -174,7 +174,7 @@
 					return t ? t.id : ""
 				}
 			});
-			t.default = Object(o.b)(O)((function(e) {
+			t.default = Object(o.b)(f)((function(e) {
 				const {
 					correlationId: t,
 					onClose: n,
@@ -183,44 +183,44 @@
 					subredditName: b,
 					tokenDisplayConversion: p,
 					tokenName: _,
-					userId: x
-				} = e, O = Object(m.a)();
+					userId: j
+				} = e, f = Object(m.a)();
 				return Object(a.useEffect)(() => {
-					O(Object(u.a)(t))
-				}, [t, O]), s.a.createElement(h.a, {
+					f(Object(u.a)(t))
+				}, [t, f]), s.a.createElement(h.a, {
 					onClose: n,
-					title: j._("Continue in the Mobile App", null, {
+					title: x._("Continue in the Mobile App", null, {
 						hk: "3seGfx"
 					}),
-					header: j._("Approve this transaction with Reddit Vault", null, {
+					header: x._("Approve this transaction with Reddit Vault", null, {
 						hk: "4dRYKa"
 					}),
 					content: s.a.createElement(s.a.Fragment, null, s.a.createElement(v.a, {
 						index: "1"
-					}, j._("Scan the QR code with your Camera app", null, {
+					}, x._("Scan the QR code with your Camera app", null, {
 						hk: "DeLcL"
 					})), s.a.createElement(v.a, {
 						index: "2"
-					}, j._("Use that link to open your Vault in the Reddit app", null, {
+					}, x._("Use that link to open your Vault in the Reddit app", null, {
 						hk: "2KCtg7"
 					})), s.a.createElement(v.a, {
 						index: "3"
-					}, j._("Approve the transaction to start your monthly membership subscription", null, {
+					}, x._("Approve the transaction to start your monthly membership subscription", null, {
 						hk: "1XiP6x"
 					}))),
 					qrUrl: Object(c.a)("http://www.reddit.com/vault/subscribe", {
-						u: x,
+						u: j,
 						s: r,
 						sn: b
 					}),
 					amount: s.a.createElement("div", {
-						className: f.a.amount
+						className: O.a.amount
 					}, s.a.createElement("div", null, s.a.createElement(d.a, {
-						className: f.a.tokenIcon,
+						className: O.a.tokenIcon,
 						subredditId: r
 					})), s.a.createElement("div", {
-						className: f.a.total
-					}, j._("{price} /mo", [j._param("price", Object(i.a)(Object(l.b)(o, p)) + " " + _)], {
+						className: O.a.total
+					}, x._("{price} /mo", [x._param("price", Object(i.a)(Object(l.b)(o, p)) + " " + _)], {
 						hk: "2sgoC6"
 					})))
 				})
@@ -248,7 +248,7 @@
 				return b
 			}));
 			var a = n("./src/reddit/selectors/telemetry.ts");
-			const s = e => t => Object.assign({}, Object(a.defaults)(t), {
+			const s = e => t => Object.assign(Object.assign({}, Object(a.defaults)(t)), {
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
@@ -257,7 +257,7 @@
 				o = () => s("view"),
 				r = () => s("tap"),
 				c = () => s("dismiss"),
-				i = () => e => Object.assign({}, Object(a.defaults)(e), {
+				i = () => e => Object.assign(Object.assign({}, Object(a.defaults)(e)), {
 					source: "meta",
 					action: "view",
 					noun: "points_learn_more",
@@ -265,7 +265,7 @@
 						reason: "deep_link"
 					}
 				}),
-				d = () => e => Object.assign({}, Object(a.defaults)(e), {
+				d = () => e => Object.assign(Object.assign({}, Object(a.defaults)(e)), {
 					source: "meta",
 					action: "view",
 					noun: "points_faq",
@@ -273,7 +273,7 @@
 						reason: "learn_more"
 					}
 				}),
-				l = e => t => Object.assign({}, Object(a.defaults)(t), {
+				l = e => t => Object.assign(Object.assign({}, Object(a.defaults)(t)), {
 					source: "meta",
 					action: "view",
 					noun: "points_faq_section",
@@ -281,19 +281,19 @@
 						paneName: e
 					}
 				}),
-				u = () => e => Object.assign({}, Object(a.defaults)(e), {
+				u = () => e => Object.assign(Object.assign({}, Object(a.defaults)(e)), {
 					source: "meta",
 					action: "click",
 					noun: "learn_more_create_vault_button"
 				}),
-				m = e => t => Object.assign({}, Object(a.defaults)(t), {
+				m = e => t => Object.assign(Object.assign({}, Object(a.defaults)(t)), {
 					source: "meta",
 					action: "click",
 					noun: "buy_membership_with_points",
 					subreddit: Object(a.subreddit)(t),
 					correlationId: e
 				}),
-				b = e => t => Object.assign({}, Object(a.defaults)(t), {
+				b = e => t => Object.assign(Object.assign({}, Object(a.defaults)(t)), {
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
@@ -302,4 +302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.f99ff799b28fb25534e6.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.4a9a87621a9486546e3f.js.map

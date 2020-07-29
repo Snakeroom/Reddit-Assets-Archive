@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.88b828abd3acf1ded260.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.8ea845e38b24a4d45bb0.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -81,12 +81,12 @@
 				y = r("./src/reddit/constants/posts.ts"),
 				E = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				v = r("./src/reddit/controls/Button/index.tsx"),
-				k = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				O = r("./src/reddit/helpers/multireddit/index.ts"),
+				O = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				k = r("./src/reddit/helpers/multireddit/index.ts"),
 				N = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				w = r("./src/reddit/models/Multireddit/index.ts"),
-				F = r("./src/reddit/models/Subreddit/index.ts"),
-				j = r("./src/reddit/selectors/multireddit.ts"),
+				j = r("./src/reddit/models/Subreddit/index.ts"),
+				F = r("./src/reddit/selectors/multireddit.ts"),
 				P = r("./src/reddit/controls/Checkbox/index.tsx"),
 				R = r("./src/reddit/components/MultiredditAddSubredditModal/index.m.less"),
 				M = r.n(R);
@@ -136,9 +136,9 @@
 					createApiFetched: e => e.multireddits.api.create.fetched,
 					createApiPending: e => e.multireddits.api.create.pending,
 					currentSubredditOrProfile: E.o,
-					mineApiFetched: j.h,
-					mineApiPending: j.i,
-					myMultireddits: j.j,
+					mineApiFetched: F.h,
+					mineApiPending: F.i,
+					myMultireddits: F.j,
 					submitApiFetched: e => e.multireddits.api.addSubreddit.fetched,
 					submitApiPending: e => e.multireddits.api.addSubreddit.pending
 				}),
@@ -154,11 +154,11 @@
 							shouldNavigate: !1
 						}))
 					}
-				}), (e, t, r) => Object.assign({}, r, e, t, {
+				}), (e, t, r) => Object.assign(Object.assign(Object.assign(Object.assign({}, r), e), t), {
 					onSubmit: r => {
 						e.currentSubredditOrProfile && t.onAddToMulireddits({
 							name: e.currentSubredditOrProfile.name,
-							type: e.currentSubredditOrProfile.type === F.d.User ? y.a.PROFILE : y.a.SUBREDDIT
+							type: e.currentSubredditOrProfile.type === j.d.User ? y.a.PROFILE : y.a.SUBREDDIT
 						}, r)
 					}
 				}));
@@ -188,7 +188,7 @@
 							showCreateSuccess: !1
 						})
 					}, this.onCreateSubmit = () => {
-						const e = Object(O.a)({
+						const e = Object(k.a)({
 							displayText: this.state.creatingName,
 							myMultireddits: this.props.myMultireddits,
 							thisMultireddit: null
@@ -233,7 +233,7 @@
 						const {
 							currentSubredditOrProfile: t
 						} = this.props;
-						return t && (t.type === F.d.User && e.profileIds && e.profileIds.indexOf(t.id) > -1 || t.type !== F.d.User && e.subredditIds && e.subredditIds.indexOf(t.id) > -1) || !1
+						return t && (t.type === j.d.User && e.profileIds && e.profileIds.indexOf(t.id) > -1 || t.type !== j.d.User && e.subredditIds && e.subredditIds.indexOf(t.id) > -1) || !1
 					}, this.inputRef = null, this.recentRef = null, this.scrollRef = null, this.onCheckFnCache = {}
 				}
 				render() {
@@ -268,7 +268,7 @@
 						ref: this.setScrollRef
 					}, t ? l.a.createElement("div", {
 						className: M.a.loadingContainer
-					}, l.a.createElement(k.a, {
+					}, l.a.createElement(O.a, {
 						className: Object(h.a)(M.a.loadingIcon, M.a.forUser),
 						sizePx: T
 					})) : r.map(e => l.a.createElement(I, {
@@ -301,7 +301,7 @@
 					})) : l.a.createElement(f.a, {
 						text: o,
 						maxChars: w.c
-					}), !b && !p && (e ? l.a.createElement(k.a, {
+					}), !b && !p && (e ? l.a.createElement(O.a, {
 						className: Object(h.a)(M.a.createSubmitBtn, M.a.loading),
 						sizePx: L
 					}) : l.a.createElement(v.n, {
@@ -317,7 +317,7 @@
 					})))), l.a.createElement(x.f, null, l.a.createElement(x.q, {
 						disabled: !!i || !u.length || e,
 						onClick: this.onSubmit
-					}, i ? l.a.createElement(k.a, {
+					}, i ? l.a.createElement(O.a, {
 						className: M.a.loadingIcon,
 						sizePx: L
 					}) : a.fbt._("Update", null, {
@@ -703,4 +703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditAddSubredditModal.88b828abd3acf1ded260.js.map
+//# sourceMappingURL=MultiredditAddSubredditModal.8ea845e38b24a4d45bb0.js.map

@@ -1,64 +1,64 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement.352895fb9c304a1b7c37.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement.90718ce8ca7158bf8678.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement"], {
-		"./src/reddit/components/ModHub/flairs/PostFlairManagement/index.tsx": function(e, t, r) {
+		"./src/reddit/components/ModHub/flairs/PostFlairManagement/index.tsx": function(e, t, s) {
 			"use strict";
-			r.r(t);
-			r("./node_modules/core-js/modules/es6.symbol.js");
-			var s = r("./node_modules/react/index.js"),
-				n = r.n(s),
-				a = r("./node_modules/react-redux/es/index.js"),
-				o = r("./node_modules/reselect/es/index.js"),
-				i = r("./src/reddit/actions/postFlair.ts"),
-				l = r("./src/reddit/models/Flair/index.ts"),
-				d = r("./src/reddit/selectors/postFlair.ts"),
-				c = r("./src/reddit/selectors/structuredStyles.ts"),
-				p = r("./src/reddit/components/ModHub/flairs/FlairManagement/index.tsx"),
-				u = r("./src/reddit/components/ModHub/flairs/FlairManagement/connector.ts");
+			s.r(t);
+			s("./node_modules/core-js/modules/es6.symbol.js");
+			var r = s("./node_modules/react/index.js"),
+				n = s.n(r),
+				a = s("./node_modules/react-redux/es/index.js"),
+				o = s("./node_modules/reselect/es/index.js"),
+				i = s("./src/reddit/actions/postFlair.ts"),
+				l = s("./src/reddit/models/Flair/index.ts"),
+				d = s("./src/reddit/selectors/postFlair.ts"),
+				c = s("./src/reddit/selectors/structuredStyles.ts"),
+				p = s("./src/reddit/components/ModHub/flairs/FlairManagement/index.tsx"),
+				u = s("./src/reddit/components/ModHub/flairs/FlairManagement/connector.ts");
 
-			function m() {
-				return (m = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
+						var s = arguments[t];
+						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			var b = function(e, t) {
-				var r = {};
-				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (r[s] = e[s]);
+			var m = function(e, t) {
+				var s = {};
+				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (s[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
 					var n = 0;
-					for (s = Object.getOwnPropertySymbols(e); n < s.length; n++) t.indexOf(s[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[n]) && (r[s[n]] = e[s[n]])
+					for (r = Object.getOwnPropertySymbols(e); n < r.length; n++) t.indexOf(r[n]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[n]) && (s[r[n]] = e[r[n]])
 				}
-				return r
+				return s
 			};
-			const O = Object(o.c)(Object.assign({}, u.b, {
+			const O = Object(o.c)(Object.assign(Object.assign({}, u.b), {
 					postFlairData: d.d,
 					postFlairSettings: d.e,
 					styleTemplates: c.f
 				})),
-				f = Object(a.b)(O, (e, t) => Object.assign({}, Object(u.a)(e, t), {
-					onRemoveTemplate: r => e(Object(i.g)(r, t.subredditId)),
-					onReorderTemplates: r => e(Object(i.i)(r, t.subredditId)),
-					onSaveTemplate: r => e(Object(i.j)(r, t.subredditId))
+				j = Object(a.b)(O, (e, t) => Object.assign(Object.assign({}, Object(u.a)(e, t)), {
+					onRemoveTemplate: s => e(Object(i.g)(s, t.subredditId)),
+					onReorderTemplates: s => e(Object(i.i)(s, t.subredditId)),
+					onSaveTemplate: s => e(Object(i.j)(s, t.subredditId))
 				}));
-			t.default = f(e => {
+			t.default = j(e => {
 				const {
 					postFlairData: t,
-					postFlairSettings: r
-				} = e, s = b(e, ["postFlairData", "postFlairSettings"]);
-				return t && r ? n.a.createElement(p.a, m({
-					flairSettings: r,
+					postFlairSettings: s
+				} = e, r = m(e, ["postFlairData", "postFlairSettings"]);
+				return t && s ? n.a.createElement(p.a, b({
+					flairSettings: s,
 					flairTemplateType: l.d.LinkFlair,
 					helpCenterLink: "hc/en-us/articles/360010513191-Post-Flair",
 					templateIds: t.templateIds,
 					templates: t.templates
-				}, s)) : null
+				}, r)) : null
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement.352895fb9c304a1b7c37.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement.90718ce8ca7158bf8678.js.map

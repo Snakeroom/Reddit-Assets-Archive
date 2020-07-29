@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.38f488e53cd68421e960.js
-// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.93b4057e2ab90df714ad.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -244,11 +244,11 @@
 					u = Object.keys(i).map(e => i[e]).filter(Boolean);
 				if (d && e.badge) {
 					let r, s;
-					r = e.placement === l.a.First ? i[p.a.Loyalty] : e.placement === l.a.Second ? i[p.a.Achievement] : i[p.a.Cosmetic], t(Object(O.a)(Object.assign({}, e, {
+					r = e.placement === l.a.First ? i[p.a.Loyalty] : e.placement === l.a.Second ? i[p.a.Achievement] : i[p.a.Cosmetic], t(Object(O.a)(Object.assign(Object.assign({}, e), {
 						badge: v(e.badge),
 						currentAppliedBadges: u,
 						userId: d.id
-					}))), w(e.badge) && r ? s = await Object(a.a)(n(), e.subredditId, r.id, !1) : w(e.badge) || (s = await Object(a.a)(n(), e.subredditId, e.badge.id)), s && !s.ok && (t(Object(O.a)(Object.assign({}, e, {
+					}))), w(e.badge) && r ? s = await Object(a.a)(n(), e.subredditId, r.id, !1) : w(e.badge) || (s = await Object(a.a)(n(), e.subredditId, e.badge.id)), s && !s.ok && (t(Object(O.a)(Object.assign(Object.assign({}, e), {
 						badge: r,
 						currentAppliedBadges: u,
 						userId: d.id
@@ -470,7 +470,7 @@
 							} = e;
 							return Object(d.a)(t)
 						}).reduce((e, t) => (e[t.id] = t, e), {});
-						return Object.assign({}, e, {
+						return Object.assign(Object.assign({}, e), {
 							body: t
 						})
 					}
@@ -547,7 +547,7 @@
 							s = {
 								[t.subredditId]: r
 							};
-						return Object.assign({}, e, {
+						return Object.assign(Object.assign({}, e), {
 							body: s
 						})
 					}
@@ -563,7 +563,7 @@
 					endpoint: "".concat(s.a.metaUrl, "/wallets/").concat(t.subredditId),
 					method: n.db.POST,
 					data: t.userIds
-				}).then(e => e.ok ? Object.assign({}, e, {
+				}).then(e => e.ok ? Object.assign(Object.assign({}, e), {
 					body: {
 						wallets: e.body
 					}
@@ -986,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconHelperActions.38f488e53cd68421e960.js.map
+//# sourceMappingURL=EconHelperActions.93b4057e2ab90df714ad.js.map

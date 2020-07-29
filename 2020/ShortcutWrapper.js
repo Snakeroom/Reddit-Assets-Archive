@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.f80193fead8629f0e313.js
-// Retrieved at 6/24/2020, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.19ee59fc2c298ec17766.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./src/reddit/components/Comments/helpers/hiddenComments.ts": function(t, e, s) {
@@ -32,15 +32,15 @@
 				c = s.n(o),
 				n = s("./node_modules/prop-types/index.js"),
 				d = s.n(n),
-				r = s("./node_modules/react/index.js"),
-				i = s.n(r),
+				i = s("./node_modules/react/index.js"),
+				r = s.n(i),
 				a = s("./node_modules/react-redux/es/index.js"),
 				l = s("./node_modules/react-shortcuts/lib/index.js"),
 				m = s("./node_modules/reselect/es/index.js"),
 				p = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = s("./src/reddit/constants/shortcuts.ts");
 			var b = s("./src/reddit/selectors/structuredStyles.ts");
-			const h = {
+			const O = {
 					[u.c.OpenIndex]: {
 						osx: ["cmd + ?", "?"],
 						windows: ["ctrl + ?", "?"],
@@ -50,27 +50,27 @@
 					[u.c.Close]: "esc",
 					[u.c.Konami]: "up up down down left right left right b a enter"
 				},
-				x = {
+				h = {
 					[u.c.Upvote]: "a",
 					[u.c.Downvote]: "z",
 					[u.c.Save]: "s",
 					[u.c.Hide]: "h",
 					[u.c.OpenLink]: "l"
 				},
-				O = {
+				x = {
 					[u.c.CollapseOrLoad]: "enter",
 					[u.c.NextComment]: "j",
 					[u.c.PrevComment]: "k",
 					[u.c.Reply]: "r"
 				};
-			var v = {
-					[u.d.CommentPage]: Object.assign({}, h, x, O),
-					[u.d.Global]: Object.assign({}, h),
-					[u.d.Lightbox]: Object.assign({}, h, x, O, {
+			var j = {
+					[u.d.CommentPage]: Object.assign(Object.assign(Object.assign({}, O), h), x),
+					[u.d.Global]: Object.assign({}, O),
+					[u.d.Lightbox]: Object.assign(Object.assign(Object.assign(Object.assign({}, O), h), x), {
 						[u.c.NextPost]: "n",
 						[u.c.PrevPost]: "p"
 					}),
-					[u.d.Listing]: Object.assign({}, h, x, {
+					[u.d.Listing]: Object.assign(Object.assign(Object.assign({}, O), h), {
 						[u.c.OpenLightbox]: "enter",
 						[u.c.NextPost]: "j",
 						[u.c.PrevPost]: "k",
@@ -78,7 +78,7 @@
 						[u.c.NewPost]: "c",
 						Reserved: ["n", "p", "r"]
 					}),
-					[u.d.Modqueue]: Object.assign({}, h, x, {
+					[u.d.Modqueue]: Object.assign(Object.assign(Object.assign({}, O), h), {
 						[u.c.OpenLightbox]: "enter",
 						[u.c.NextPost]: "j",
 						[u.c.PrevPost]: "k",
@@ -86,10 +86,10 @@
 						[u.c.NewPost]: "c"
 					})
 				},
-				j = s("./node_modules/react-router-redux/es/index.js"),
-				C = s("./src/reddit/actions/comment/index.ts"),
-				f = s("./src/reddit/actions/modal.ts"),
-				g = s("./src/reddit/actions/post.ts"),
+				v = s("./node_modules/react-router-redux/es/index.js"),
+				g = s("./src/reddit/actions/comment/index.ts"),
+				C = s("./src/reddit/actions/modal.ts"),
+				f = s("./src/reddit/actions/post.ts"),
 				P = s("./src/reddit/components/Comments/helpers/hiddenComments.ts"),
 				y = s("./src/reddit/constants/elementIds.ts"),
 				I = s("./src/reddit/constants/modals.ts"),
@@ -106,21 +106,21 @@
 					apiContext: n
 				} = c;
 				const d = o(),
-					r = d.shortcuts.activePostId,
-					i = d.listings.activeKey,
-					a = d.listings.postOrder.ids[i];
-				if (!r || a && a.indexOf(r) < 0) {
+					i = d.shortcuts.activePostId,
+					r = d.listings.activeKey,
+					a = d.listings.postOrder.ids[r];
+				if (!i || a && a.indexOf(i) < 0) {
 					const t = a[0];
 					return s(Object(N.b)(t)), void Object(S.a)(t)
 				}
-				let l, m = r;
+				let l, m = i;
 				do {
 					if (!(l = Object(k.b)(d, {
 							postId: m
 						})) || !l.nextPost) return;
 					m = l.nextPost.id
 				} while (d.posts.models[m].hidden);
-				d.shortcuts.namespace === u.d.Lightbox ? (D(s, l.nextPost), t(e ? _.b(r, "next_post", !0) : L.l(m))) : (s(Object(N.b)(m)), Object(S.a)(m), t(L.k(m)))
+				d.shortcuts.namespace === u.d.Lightbox ? (D(s, l.nextPost), t(e ? _.b(i, "next_post", !0) : L.l(m))) : (s(Object(N.b)(m)), Object(S.a)(m), t(L.k(m)))
 			}, K = t => async (e, s, o) => {
 				let {
 					apiContext: c
@@ -128,17 +128,17 @@
 				const n = s(),
 					d = Object(S.c)(n);
 				if (!d) return;
-				let r;
-				const i = n.shortcuts.activeCommentId;
-				if (i && i !== n.commentsPage.keyToHeadCommentId[d]) {
+				let i;
+				const r = n.shortcuts.activeCommentId;
+				if (r && r !== n.commentsPage.keyToHeadCommentId[d]) {
 					const t = n.commentsPage.keyToCommentThreadLinkSets[d];
-					for (r = t[i].prev.id; P.b(r);) r = t[r].prev.id
+					for (i = t[r].prev.id; P.b(i);) i = t[i].prev.id
 				} else {
 					const t = n.commentsPage.keyToHeadCommentId[d];
-					if (!t || i === t) return;
-					r = t
+					if (!t || r === t) return;
+					i = t
 				}
-				e(Object(N.a)(r)), Object(S.a)(r), t(L.n(r))
+				e(Object(N.a)(i)), Object(S.a)(i), t(L.n(i))
 			}, D = (t, e) => {
 				Object(S.b)(u.b), t(Object(N.b)(e.id)), document.body.style.overflow = "", Object(S.a)(e.id), document.body.style.overflow = "hidden", t(Object(T.a)(e.permalink));
 				const s = document.getElementById(y.d);
@@ -153,18 +153,18 @@
 						} = o;
 						const n = s(),
 							d = n.shortcuts.activeCommentId,
-							r = Object(S.c)(n);
-						if (r && d) {
-							if (n.comments.models[d]) e(C.nb({
+							i = Object(S.c)(n);
+						if (i && d) {
+							if (n.comments.models[d]) e(g.nb({
 								commentId: d,
-								commentsPageKey: r,
+								commentsPageKey: i,
 								scrollToAndRemeasure: () => null
 							}));
 							else if (n.continueThreads.models[d]) {
 								const t = n.continueThreads.models[d].parentId,
 									s = n.comments.models[t].permalink;
-								e(Object(j.b)(s))
-							} else e(K(t)), e(C.Z(r, d));
+								e(Object(v.b)(s))
+							} else e(K(t)), e(g.Z(i, d));
 							t(L.b(d))
 						}
 					},
@@ -175,10 +175,10 @@
 						const n = s(),
 							{
 								activeCommentId: d,
-								activePostId: r
+								activePostId: i
 							} = n.shortcuts,
-							i = Object(S.c)(n);
-						i && (d && !n.comments.collapsed[i][d] ? (e(C.T(d)), t(L.e(d))) : r && (e(g.z(r)), t(L.f(r))))
+							r = Object(S.c)(n);
+						r && (d && !n.comments.collapsed[r][d] ? (e(g.T(d)), t(L.e(d))) : i && (e(f.z(i)), t(L.f(i))))
 					},
 					[u.c.Expando]: t => async (e, s, o) => {
 						let {
@@ -186,10 +186,10 @@
 						} = o;
 						const n = s(),
 							d = n.shortcuts.activePostId,
-							r = w.b[n.user.prefs.layout];
-						if (d && (r === w.g.Compact || r === w.g.Classic)) {
+							i = w.b[n.user.prefs.layout];
+						if (d && (i === w.g.Compact || i === w.g.Classic)) {
 							const s = n.posts.models[d].crosspostRootId;
-							(n.posts.models[d].media || s && n.posts.models[s] && n.posts.models[s].media) && (e(g.A({
+							(n.posts.models[d].media || s && n.posts.models[s] && n.posts.models[s].media) && (e(f.A({
 								postId: d
 							})), t(L.g(d)))
 						}
@@ -200,7 +200,7 @@
 						} = o;
 						const n = s(),
 							d = n.shortcuts.activePostId;
-						d && !n.posts.models[d].isSponsored && (e(g.ab(d, !n.posts.models[d].hidden, n.shortcuts.namespace === u.d.Lightbox, !0)), e(A(t)), t(L.i(d)))
+						d && !n.posts.models[d].isSponsored && (e(f.ab(d, !n.posts.models[d].hidden, n.shortcuts.namespace === u.d.Lightbox, !0)), e(A(t)), t(L.i(d)))
 					},
 					[u.c.NextComment]: t => async (e, s, o) => {
 						let {
@@ -209,23 +209,23 @@
 						const n = s(),
 							d = Object(S.c)(n);
 						if (!d) return;
-						let r;
-						const i = n.shortcuts.activeCommentId;
-						if (i) {
+						let i;
+						const r = n.shortcuts.activeCommentId;
+						if (r) {
 							const t = n.comments.collapsed[d],
 								e = n.commentsPage.keyToCommentThreadLinkSets[d];
-							if (t[r = i])
+							if (t[i = r])
 								do {
-									if (!e[r].next) return;
-									r = e[r].next.id
-								} while (P.b(r));
-							else r = e[r].next.id
+									if (!e[i].next) return;
+									i = e[i].next.id
+								} while (P.b(i));
+							else i = e[i].next.id
 						} else {
 							const t = n.commentsPage.keyToHeadCommentId[d];
 							if (!t) return;
-							r = t
+							i = t
 						}
-						e(Object(N.a)(r)), Object(S.a)(r), t(L.j(r))
+						e(Object(N.a)(i)), Object(S.a)(i), t(L.j(i))
 					},
 					[u.c.NextPost]: A,
 					[u.c.NewPost]: t => async (e, s, o) => {
@@ -235,14 +235,14 @@
 						const n = s();
 						if (!n.user.account) return;
 						const d = Object(E.f)(n),
-							r = d ? d.url : "/";
-						e(Object(j.b)("".concat(r, "submit"))), t(L.d)
+							i = d ? d.url : "/";
+						e(Object(v.b)("".concat(i, "submit"))), t(L.d)
 					},
 					[u.c.OpenIndex]: t => async (e, s, o) => {
 						let {
 							apiContext: c
 						} = o;
-						e(Object(f.i)(I.a.KEYBOARD_SHORTCUTS)), t(L.s)
+						e(Object(C.i)(I.a.KEYBOARD_SHORTCUTS)), t(L.s)
 					},
 					[u.c.OpenLightbox]: t => async (e, s, o) => {
 						let {
@@ -250,9 +250,9 @@
 						} = o;
 						const n = s(),
 							d = n.listings.activeKey,
-							r = n.listings.postOrder.ids[d],
-							i = n.shortcuts.activePostId;
-						!r || !i || r.indexOf(i) < 0 || (e(Object(T.a)(n.posts.models[i].permalink)), t(L.m(i)))
+							i = n.listings.postOrder.ids[d],
+							r = n.shortcuts.activePostId;
+						!i || !r || i.indexOf(r) < 0 || (e(Object(T.a)(n.posts.models[r].permalink)), t(L.m(r)))
 					},
 					[u.c.OpenLink]: t => async (e, s, o) => {
 						let {
@@ -278,10 +278,10 @@
 						} = o;
 						const n = s(),
 							d = n.shortcuts.activePostId,
-							r = n.listings.activeKey,
-							i = n.listings.postOrder.ids[r];
-						if (!d || i && i.indexOf(d) < 0) return e(Object(N.b)(i[0])), void Object(S.a)(i[0]);
-						if (0 === i.indexOf(d)) return;
+							i = n.listings.activeKey,
+							r = n.listings.postOrder.ids[i];
+						if (!d || r && r.indexOf(d) < 0) return e(Object(N.b)(r[0])), void Object(S.a)(r[0]);
+						if (0 === r.indexOf(d)) return;
 						let a, l = d;
 						do {
 							if (!(a = Object(k.b)(n, {
@@ -298,12 +298,12 @@
 						const n = s(),
 							d = Object(S.c)(n),
 							{
-								activeCommentId: r
+								activeCommentId: i
 							} = n.shortcuts;
-						r && d && d !== n.listings.activeKey && (e(C.ob({
+						i && d && d !== n.listings.activeKey && (e(g.ob({
 							commentsPageKey: d,
-							parentCommentId: r
-						})), t(L.c(r)))
+							parentCommentId: i
+						})), t(L.c(i)))
 					},
 					[u.c.Save]: t => async (e, s, o) => {
 						let {
@@ -312,10 +312,10 @@
 						const n = s(),
 							{
 								activeCommentId: d,
-								activePostId: r
+								activePostId: i
 							} = n.shortcuts,
-							i = Object(S.c)(n);
-						i && (d && !n.comments.collapsed[i][d] ? (e(C.gb(d)), t(L.q(d))) : r && (e(g.W(r)), t(L.r(r))))
+							r = Object(S.c)(n);
+						r && (d && !n.comments.collapsed[r][d] ? (e(g.gb(d)), t(L.q(d))) : i && (e(f.W(i)), t(L.r(i))))
 					},
 					[u.c.Upvote]: t => async (e, s, o) => {
 						let {
@@ -324,10 +324,10 @@
 						const n = s(),
 							{
 								activeCommentId: d,
-								activePostId: r
+								activePostId: i
 							} = n.shortcuts,
-							i = Object(S.c)(n);
-						i && (d && !n.comments.collapsed[i][d] ? (e(C.rb(d)), t(L.t(d))) : r && (e(g.db(r)), t(L.u(r))))
+							r = Object(S.c)(n);
+						r && (d && !n.comments.collapsed[r][d] ? (e(g.rb(d)), t(L.t(d))) : i && (e(f.db(i)), t(L.u(i))))
 					},
 					[u.c.Konami]: null
 				},
@@ -338,7 +338,7 @@
 					const n = R[s];
 					n && t(n(e))
 				},
-				U = new l.ShortcutManager(v),
+				U = new l.ShortcutManager(j),
 				M = Object(m.c)({
 					isBladeOpen: b.j,
 					namespace: t => t.activeModalId ? u.d.Global : t.shortcuts.namespace
@@ -346,7 +346,7 @@
 				q = Object(a.b)(M, t => ({
 					dispatchAction: e => t(e)
 				}));
-			class W extends r.Component {
+			class W extends i.Component {
 				getChildContext() {
 					return {
 						shortcuts: U
@@ -367,7 +367,7 @@
 						namespace: s,
 						sendEvent: o
 					} = this.props;
-					return i.a.createElement(l.Shortcuts, {
+					return r.a.createElement(l.Shortcuts, {
 						handler: e ? c.a : B(t, o),
 						isolate: !0,
 						name: s,
@@ -382,4 +382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ShortcutWrapper.f80193fead8629f0e313.js.map
+//# sourceMappingURL=ShortcutWrapper.19ee59fc2c298ec17766.js.map

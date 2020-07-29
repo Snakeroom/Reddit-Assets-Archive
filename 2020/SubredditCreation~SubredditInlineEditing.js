@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.11df952f7961c2c780a0.js
-// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.430214592ffe5ddb8c19.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation~SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/PrimaryTopic/index.m.less": function(e, t, s) {
@@ -60,15 +60,15 @@
 					})))
 				}
 			}
-			var b = Object(r.b)(void 0, e => ({
+			var g = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.U)()
+					e(Object(c.i)()), Object(u.T)()
 				},
 				onViewTooltip: () => {
-					Object(u.hb)()
+					Object(u.fb)()
 				}
 			}))(Object(d.c)(y));
-			const g = "editable-primary-topic-idcard";
+			const b = "editable-primary-topic-idcard";
 			var v = s("./src/reddit/controls/DropdownSelector/index.tsx"),
 				S = s("./src/reddit/models/Tags/index.ts"),
 				C = s("./src/reddit/selectors/tags.ts"),
@@ -92,13 +92,13 @@
 						hk: "XayPA"
 					})), i.a.createElement(l.a, {
 						className: w.a.tooltip,
-						tooltipId: g,
+						tooltipId: b,
 						defaultTooltipPosition: "left",
 						tooltipSizeEstimate: {
 							height: 150,
 							width: 320
 						}
-					}, i.a.createElement(b, {
+					}, i.a.createElement(g, {
 						translatedTitle: n,
 						translatedDesc: r
 					}))
@@ -106,7 +106,7 @@
 				I = {
 					availablePrimaryTags: C.t
 				},
-				j = Object(a.c)(Object.assign({}, I, {
+				j = Object(a.c)(Object.assign(Object.assign({}, I), {
 					selectedPrimaryTag: (e, t) => {
 						let {
 							subredditId: s
@@ -125,7 +125,7 @@
 					},
 					isSaving: C.G
 				})),
-				E = Object(a.c)(Object.assign({}, I, {
+				E = Object(a.c)(Object.assign(Object.assign({}, I), {
 					selectedPrimaryTag: C.y,
 					hasSecondaryTags: () => !1,
 					isSaving: e => Object(C.G)(e)
@@ -161,7 +161,7 @@
 						selectedPrimaryTag: a
 					} = this.props, p = a && a.text;
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement(v.b, {
-						id: this.isTooltipEnabled() ? g : void 0,
+						id: this.isTooltipEnabled() ? b : void 0,
 						className: t,
 						isTopicsStyle: !0,
 						displayText: p || o.fbt._("Add a Primary Topic", null, {
@@ -203,7 +203,7 @@
 						},
 						onShowTooltip: () => {
 							e(Object(c.f)({
-								tooltipId: g
+								tooltipId: b
 							}))
 						}
 					}
@@ -265,7 +265,7 @@
 					height: 200,
 					width: 200
 				},
-				b = e => {
+				g = e => {
 					switch (e) {
 						case "top":
 							return "bottom";
@@ -278,7 +278,7 @@
 							return "top"
 					}
 				},
-				g = Object(l.a)(e => {
+				b = Object(l.a)(e => {
 					const {
 						children: t,
 						className: s,
@@ -293,7 +293,7 @@
 							[O.a.caretOnRight]: "right" === n,
 							[O.a.caretOnBottom]: "bottom" === n
 						}),
-						style: Object.assign({}, o, {
+						style: Object.assign(Object.assign({}, o), {
 							"--contentTooltip-caretColor": r && r[n] ? r[n] : Object(h.a)(e).body
 						})
 					}, a), t)
@@ -306,7 +306,7 @@
 						return Object(u.b)(s)(e)
 					}
 				}),
-				S = Object(p.a)(g, [o.a.Click, o.a.Keydown]),
+				S = Object(p.a)(b, [o.a.Click, o.a.Keydown]),
 				C = Object(r.b)(v);
 			class T extends i.a.Component {
 				constructor(e) {
@@ -338,7 +338,7 @@
 									n = o.top > t.height
 							}
 							this.setState({
-								position: n ? this.props.defaultTooltipPosition : b(this.props.defaultTooltipPosition)
+								position: n ? this.props.defaultTooltipPosition : g(this.props.defaultTooltipPosition)
 							})
 						})
 					}, this.state = {
@@ -523,7 +523,7 @@
 					this.handleOptionsSelected([e])
 				}
 				handleOptionsSelected(e) {
-					this.props.onOptionsChanged(e.map(e => Object.assign({}, e, {
+					this.props.onOptionsChanged(e.map(e => Object.assign(Object.assign({}, e), {
 						selected: !0
 					})))
 				}
@@ -618,7 +618,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var b = function(e, t) {
+			var g = function(e, t) {
 				var s = {};
 				for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (s[o] = e[o]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -627,14 +627,14 @@
 				}
 				return s
 			};
-			var g = e => {
+			var b = e => {
 					const {
 						className: t,
 						innerRef: s,
 						onClickHandler: o,
 						option: n,
 						maxLength: i
-					} = e, p = b(e, ["className", "innerRef", "onClickHandler", "option", "maxLength"]), c = [x.a.selectedOptionComponentContainer, t];
+					} = e, p = g(e, ["className", "innerRef", "onClickHandler", "option", "maxLength"]), c = [x.a.selectedOptionComponentContainer, t];
 					return i && i < n.displayText.length && c.push(x.a.selectedOptionComponentContainerError), r.a.createElement("div", y({
 						className: Object(a.a)(...c),
 						ref: s
@@ -695,7 +695,7 @@
 					this.inputRef.current && (this.inputRef.current.value = "")
 				}
 				deselectOption(e) {
-					this.props.onOptionsChanged([Object.assign({}, e, {
+					this.props.onOptionsChanged([Object.assign(Object.assign({}, e), {
 						selected: !1
 					})]), this.setState({
 						isHoveringOverSelectedOption: !1
@@ -707,7 +707,7 @@
 				render() {
 					const e = {};
 					Object(S.c)(this.props.readOnlyMode) || (e.tabIndex = 0);
-					const t = this.props.selectedOptionComponent || g,
+					const t = this.props.selectedOptionComponent || b,
 						s = "number" == typeof this.props.maxOptionsToDisplay && this.props.options.length > this.props.maxOptionsToDisplay;
 					return r.a.createElement("div", w({
 						"aria-invalid": this.props.isError,
@@ -775,7 +775,7 @@
 							searchBarIsFocused: !0
 						}), this.props.onSearchBarFocus && this.props.onSearchBarFocus())
 					}, this.onSearchBarBlur = e => {
-						if (!Object(S.c)(this.props.readOnlyMode)) return this.optionsListDropdownRef.current && this.optionsListDropdownRef.current.matchesDOMElement(e.relatedTarget) ? (e.stopPropagation(), e.preventDefault(), void setTimeout(() => {
+						if (!Object(S.c)(this.props.readOnlyMode)) return e.relatedTarget && this.optionsListDropdownRef.current && this.optionsListDropdownRef.current.matchesDOMElement(e.relatedTarget) ? (e.stopPropagation(), e.preventDefault(), void setTimeout(() => {
 							this.optionSearchBarRef.current && this.optionSearchBarRef.current.focus()
 						}, 0)) : (this.setState({
 							searchBarIsFocused: !1
@@ -1012,4 +1012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.11df952f7961c2c780a0.js.map
+//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.430214592ffe5ddb8c19.js.map

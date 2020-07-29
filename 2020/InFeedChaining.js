@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.146af95b99d2dc78d479.js
-// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.9f755c05c09c3905385f.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -555,7 +555,7 @@
 						eventFactory: r,
 						onClick: a,
 						post: m,
-						style: Object.assign({}, Object(u.b)(this.props.flairStyleTemplate), Object(u.d)(this.props))
+						style: Object.assign(Object.assign({}, Object(u.b)(this.props.flairStyleTemplate)), Object(u.d)(this.props))
 					}, i.a.createElement(c.a, {
 						className: J.a.background,
 						"data-redditstyle": !0,
@@ -887,7 +887,7 @@
 							e.target.classList && e.target.classList.contains("md-spoiler-text") && (e.target.dataset.revealed = !0), t && t(e)
 						})(s, e.onNavigate, e.onClick)
 					},
-					style: Object.assign({}, e.style, {
+					style: Object.assign(Object.assign({}, e.style), {
 						"--RawHTMLDisplay-tr-even": Object(r.g)(Object(l.a)(e).body, .8),
 						"--RawHTMLDisplay-tr-odd": Object(r.g)(Object(l.a)(e).line, .8)
 					})
@@ -1014,8 +1014,8 @@
 					var {
 						border: s,
 						small: t,
-						type: i
-					} = e, o = v(e, ["border", "small", "type"]);
+						buttonType: i
+					} = e, o = v(e, ["border", "small", "buttonType"]);
 					const d = n.a.createElement(n.a.Fragment, null, n.a.createElement("span", {
 							className: u.a.UnsubscribeButtonDefault
 						}, "subreddit" === i ? r.fbt._("Joined", null, {
@@ -1033,12 +1033,10 @@
 							[u.a.isSmall]: t
 						});
 					return s ? n.a.createElement(a.i, h({}, o, {
-						className: c,
-						children: d
-					})) : n.a.createElement(a.n, h({}, o, {
-						className: c,
-						children: d
-					}))
+						className: c
+					}), d) : n.a.createElement(a.n, h({}, o, {
+						className: c
+					}), d)
 				}, "UnsubscribeButton", u.a),
 				_ = e => {
 					var {
@@ -1081,7 +1079,7 @@
 						small: i
 					};
 					return this.props.userIsSubscriber ? n.a.createElement(_, h({}, o, {
-						type: this.props.identifier.type
+						buttonType: this.props.identifier.type
 					})) : n.a.createElement(C, h({}, o, {
 						id: r
 					}), this.props.children, Object(l.a)({
@@ -1171,7 +1169,7 @@
 						tooltipId: s
 					}))
 				}
-			}, (e, s, t) => Object.assign({}, t, e, s, {
+			}, (e, s, t) => Object.assign(Object.assign(Object.assign(Object.assign({}, t), e), s), {
 				onFlairChanged: t => {
 					let {
 						previewFlair: r,
@@ -1230,4 +1228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.146af95b99d2dc78d479.js.map
+//# sourceMappingURL=InFeedChaining.9f755c05c09c3905385f.js.map

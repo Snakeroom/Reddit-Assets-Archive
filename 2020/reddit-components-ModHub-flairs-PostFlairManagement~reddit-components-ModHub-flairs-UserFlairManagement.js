@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.8b9eb39cda9345f2352c.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.405495177313ce72be75.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -64,7 +64,6 @@
 					} = e, s = t.slice(3);
 					return Object.assign({
 						id: t,
-						postId: t,
 						allAwardings: [],
 						approvedAtUTC: void 0,
 						approvedBy: void 0,
@@ -302,16 +301,16 @@
 				f = s("./src/reddit/models/Flair/index.ts"),
 				C = s("./src/reddit/selectors/telemetry.ts");
 			const v = e => e === f.d.LinkFlair ? "postflairmanagement" : "userflairmanagement",
-				E = e => Object.assign({}, C.defaults(e), {
+				E = e => Object.assign(Object.assign({}, C.defaults(e)), {
 					subreddit: C.subreddit(e),
 					userSubreddit: C.userSubreddit(e)
 				}),
-				x = e => t => s => Object.assign({}, E(s), {
+				x = e => t => s => Object.assign(Object.assign({}, E(s)), {
 					source: v(t),
 					action: "click",
 					noun: e
 				}),
-				y = e => (t, s) => a => Object.assign({}, E(a), {
+				y = e => (t, s) => a => Object.assign(Object.assign({}, E(a)), {
 					source: v(t),
 					action: "toggle",
 					noun: e,
@@ -321,15 +320,15 @@
 				}),
 				T = x("remove"),
 				S = x("edit"),
-				_ = x("save_settings"),
-				k = x("add"),
-				w = y("assign_own"),
-				O = y("enable"),
+				O = x("save_settings"),
+				_ = x("add"),
+				k = y("assign_own"),
+				w = y("enable"),
 				j = y("mods_only"),
 				I = y("edit_text"),
-				P = (e, t) => t ? k(e) : S(e),
+				P = (e, t) => t ? _(e) : S(e),
 				D = e => y("post_flair_template")(f.d.LinkFlair, e),
-				N = (e, t) => s => Object.assign({}, E(s), {
+				N = (e, t) => s => Object.assign(Object.assign({}, E(s)), {
 					source: v(e),
 					action: "click",
 					noun: "reorder",
@@ -345,7 +344,7 @@
 				M = (e, t) => {
 					return x(F[t] || "text_and_emoji")(e)
 				},
-				R = (e, t) => s => Object.assign({}, E(s), {
+				R = (e, t) => s => Object.assign(Object.assign({}, E(s)), {
 					source: v(e),
 					action: "click",
 					noun: "limit_number_emojis",
@@ -421,16 +420,16 @@
 						const e = this.props.settings,
 							t = this.state.settings,
 							s = t.type;
-						t.displaySettings.isEnabled !== e.displaySettings.isEnabled && this.props.sendEvent(O(s, t.displaySettings.isEnabled)), t.permissions.canAssignOwn !== e.permissions.canAssignOwn && this.props.sendEvent(w(s, t.permissions.canAssignOwn)), this.props.sendEvent(_(s))
+						t.displaySettings.isEnabled !== e.displaySettings.isEnabled && this.props.sendEvent(w(s, t.displaySettings.isEnabled)), t.permissions.canAssignOwn !== e.permissions.canAssignOwn && this.props.sendEvent(k(s, t.permissions.canAssignOwn)), this.props.sendEvent(O(s))
 					}, this.onToggleIsEnabled = () => {
 						const {
 							settings: e
-						} = this.state, t = !e.displaySettings.isEnabled, s = Object.assign({}, e, {
-							displaySettings: Object.assign({}, e.displaySettings, {
+						} = this.state, t = !e.displaySettings.isEnabled, s = Object.assign(Object.assign(Object.assign({}, e), {
+							displaySettings: Object.assign(Object.assign({}, e.displaySettings), {
 								isEnabled: t
 							})
-						}, !t && {
-							permissions: Object.assign({}, e.permissions, {
+						}), !t && {
+							permissions: Object.assign(Object.assign({}, e.permissions), {
 								canAssignOwn: !1
 							})
 						});
@@ -440,8 +439,8 @@
 					}, this.onToggleCanAssignOwn = () => {
 						const {
 							settings: e
-						} = this.state, t = !e.permissions.canAssignOwn, s = Object.assign({}, e, {
-							permissions: Object.assign({}, e.permissions, {
+						} = this.state, t = !e.permissions.canAssignOwn, s = Object.assign(Object.assign({}, e), {
+							permissions: Object.assign(Object.assign({}, e.permissions), {
 								canAssignOwn: t
 							})
 						});
@@ -517,7 +516,7 @@
 			var ie = Object(q.a)(oe),
 				le = s("./src/reddit/helpers/validateFlairCssClass.ts");
 			const re = e => !e || e === A.b,
-				de = e => Object.assign({}, e, {
+				de = e => Object.assign(Object.assign({}, e), {
 					backgroundColor: re(e.backgroundColor) ? A.a.defaultFlair : A.b
 				}),
 				ce = e => !(!e.textEditable || e.modOnly),
@@ -563,13 +562,13 @@
 				ye = s("./src/reddit/controls/DropdownSelector/index.tsx"),
 				Te = s("./src/reddit/controls/RadioInput/index.tsx"),
 				Se = s("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				_e = s("./node_modules/react-redux/es/index.js"),
-				ke = s("./node_modules/reselect/es/index.js"),
-				we = s("./src/reddit/actions/tooltip.ts"),
-				Oe = s("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
+				Oe = s("./node_modules/react-redux/es/index.js"),
+				_e = s("./node_modules/reselect/es/index.js"),
+				ke = s("./src/reddit/actions/tooltip.ts"),
+				we = s("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
 				je = s("./src/reddit/selectors/tooltip.ts");
 			const Ie = ["right", "top"],
-				Pe = Object(ke.c)({
+				Pe = Object(_e.c)({
 					isDropdownOpen: (e, t) => {
 						let {
 							tooltipId: s
@@ -577,11 +576,11 @@
 						return Object(je.b)(s)(e)
 					}
 				});
-			var De = Object(_e.b)(Pe, (e, t) => ({
-					onToggleDropdown: () => e(Object(we.h)(t))
+			var De = Object(Oe.b)(Pe, (e, t) => ({
+					onToggleDropdown: () => e(Object(ke.h)(t))
 				}))(e => o.a.createElement("div", {
 					id: e.tooltipId
-				}, o.a.createElement(Oe.a, {
+				}, o.a.createElement(we.a, {
 					dropdownPosition: Ie,
 					isDropdownOpen: e.isDropdownOpen,
 					onChange: e.onChange,
@@ -645,7 +644,7 @@
 					})(s.styleTemplate, e);
 					return a ? t.imageUploads[a] : void 0
 				},
-				at = Object(ke.c)({
+				at = Object(_e.c)({
 					subredditDefaultStyles: Ye.p,
 					postBackgroundImage: st(Ge.e),
 					postPlaceholderImage: st(Ge.f)
@@ -656,12 +655,12 @@
 			class ot extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onChangePostTitleColor = e => {
-						const t = Object.assign({}, this.props.styleTemplate, {
+						const t = Object.assign(Object.assign({}, this.props.styleTemplate), {
 							postTitleColor: e
 						});
 						this.props.onChange(t)
 					}, this.onChangePostBackgroundColor = e => {
-						const t = Object.assign({}, this.props.styleTemplate, {
+						const t = Object.assign(Object.assign({}, this.props.styleTemplate), {
 							postBackgroundColor: e
 						});
 						this.props.onChange(t)
@@ -673,9 +672,9 @@
 						const {
 							styleTemplate: s
 						} = this.props, a = await Object(qe.f)(e);
-						this.props.onChange(Object.assign({}, s, {
+						this.props.onChange(Object.assign(Object.assign({}, s), {
 							[t]: a.url,
-							pendingImages: Object.assign({}, s.pendingImages, {
+							pendingImages: Object.assign(Object.assign({}, s.pendingImages), {
 								[t]: a
 							})
 						}))
@@ -686,7 +685,7 @@
 						const {
 							styleTemplate: t
 						} = this.props, s = t.pendingImages || {};
-						this.cancelUpload(e), this.props.onChange(Object.assign({}, Object(Je.a)(t, e), {
+						this.cancelUpload(e), this.props.onChange(Object.assign(Object.assign({}, Object(Je.a)(t, e)), {
 							pendingImages: Object(Je.a)(s, e)
 						}))
 					}, this.getImageUpload = e => {
@@ -779,15 +778,15 @@
 					})))))
 				}
 			}
-			var it = Object(_e.b)(at, nt)(ot),
+			var it = Object(Oe.b)(at, nt)(ot),
 				lt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/index.m.less"),
 				rt = s.n(lt);
-			const dt = Object(ke.c)({
+			const dt = Object(_e.c)({
 					examplePost: e => Object(Qe.O)(e, {
 						postId: u.e
 					})
 				}),
-				ct = Object(_e.b)(dt, (e, t) => ({
+				ct = Object(Oe.b)(dt, (e, t) => ({
 					deleteExamplePost: () => e(Object(Re.b)(u.e)),
 					makeExamplePost: s => e(Object(Re.c)(t.subredditId, s)),
 					updateExamplePost: t => e(Object(Be.U)({
@@ -804,7 +803,7 @@
 						const {
 							templateDraft: t
 						} = this.props;
-						this.props.onChange(Object.assign({}, t, {
+						this.props.onChange(Object.assign(Object.assign({}, t), {
 							styleTemplate: e
 						}))
 					}, this.onChangePreviewLayout = e => {
@@ -909,49 +908,49 @@
 						const {
 							templateDraft: e
 						} = this.props;
-						this.props.onChange(Object.assign({}, e, {
+						this.props.onChange(Object.assign(Object.assign({}, e), {
 							textColor: e.textColor === f.e.Light ? f.e.Dark : f.e.Light
 						}))
 					}, this.onToggleModOnly = () => {
 						const {
 							templateDraft: e
 						} = this.props, t = !e.modOnly;
-						this.props.onChange(this.normalizeTemplate(Object.assign({}, e, {
+						this.props.onChange(this.normalizeTemplate(Object.assign(Object.assign({}, e), {
 							modOnly: t
 						})))
 					}, this.onToggleAllowUserEdits = () => {
 						const {
 							templateDraft: e
 						} = this.props, t = !e.textEditable;
-						this.props.onChange(this.normalizeTemplate(Object.assign({}, e, {
+						this.props.onChange(this.normalizeTemplate(Object.assign(Object.assign({}, e), {
 							textEditable: t
 						})))
 					}, this.onTogglePostAppearanceSettings = () => {
 						const {
 							templateDraft: e
 						} = this.props, t = e.styleTemplate ? void 0 : bt;
-						this.props.onChange(Object.assign({}, e, {
+						this.props.onChange(Object.assign(Object.assign({}, e), {
 							styleTemplate: t
 						}))
 					}, this.onChangeBackgroundColor = e => {
 						const {
 							templateDraft: t
 						} = this.props;
-						this.props.onChange(Object.assign({}, t, {
+						this.props.onChange(Object.assign(Object.assign({}, t), {
 							backgroundColor: e
 						}))
 					}, this.onChangeTextColor = e => {
 						const {
 							templateDraft: t
 						} = this.props;
-						this.props.onChange(Object.assign({}, t, {
+						this.props.onChange(Object.assign(Object.assign({}, t), {
 							textColor: e ? f.e.Dark : f.e.Light
 						}))
 					}, this.onCSSClassValueChange = e => {
 						const {
 							templateDraft: t
 						} = this.props;
-						this.props.onChange(Object.assign({}, t, {
+						this.props.onChange(Object.assign(Object.assign({}, t), {
 							cssClass: e.target.value
 						}))
 					}, this.onFlairContentChanged = e => {
@@ -966,14 +965,14 @@
 					}, this.onAllowableContentChange = e => {
 						const {
 							templateDraft: t
-						} = this.props, s = Object.assign({}, t, {
+						} = this.props, s = Object.assign(Object.assign({}, t), {
 							allowableContent: e
 						});
 						this.props.onChange(this.normalizeTemplate(s))
 					}, this.onEmojiLimitChange = e => {
 						const {
 							templateDraft: t
-						} = this.props, s = Object.assign({}, t, {
+						} = this.props, s = Object.assign(Object.assign({}, t), {
 							maxEmojis: e.value
 						});
 						this.props.onChange(this.normalizeTemplate(s))
@@ -1173,7 +1172,7 @@
 				}) : U.fbt._("Editable", null, {
 					hk: "33SB9g"
 				}) : "",
-				xt = e => Object.assign({}, u.a, {
+				xt = e => Object.assign(Object.assign({}, u.a), {
 					backgroundColor: e === f.d.UserFlair ? A.b : A.a.defaultFlair
 				});
 			var yt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateRow/index.m.less"),
@@ -1239,21 +1238,21 @@
 					}))
 				}
 			}
-			var _t = s("./src/reddit/icons/svgs/Tag/index.tsx"),
-				kt = s("./src/reddit/components/ModHub/flairs/FlairManagement/Placeholder/index.m.less"),
-				wt = s.n(kt),
-				Ot = e => o.a.createElement("div", {
-					className: wt.a.container
-				}, o.a.createElement(_t.a, {
-					className: wt.a.icon
+			var Ot = s("./src/reddit/icons/svgs/Tag/index.tsx"),
+				_t = s("./src/reddit/components/ModHub/flairs/FlairManagement/Placeholder/index.m.less"),
+				kt = s.n(_t),
+				wt = e => o.a.createElement("div", {
+					className: kt.a.container
+				}, o.a.createElement(Ot.a, {
+					className: kt.a.icon
 				}), o.a.createElement("h3", {
-					className: wt.a.header
+					className: kt.a.header
 				}, e.flairTemplateType === f.d.UserFlair ? U.fbt._("You do not have any user flair", null, {
 					hk: "VFnhz"
 				}) : U.fbt._("You do not have any post flair", null, {
 					hk: "26g8jc"
 				})), o.a.createElement("p", {
-					className: wt.a.details
+					className: kt.a.details
 				}, e.flairTemplateType === f.d.UserFlair ? U.fbt._("Create user flair in your community today", null, {
 					hk: "1OHj7g"
 				}) : U.fbt._("Create post flair in your community today", null, {
@@ -1326,7 +1325,7 @@
 						this.props.onRemoveTemplate(this.state.templateIdToRemove), this.props.sendEvent(T(this.props.flairTemplateType))
 					}, this.onStartEditingExistingTemplate = e => {
 						if (this.hasUnsavedChanges()) return void this.props.toggleModal(Dt);
-						const t = he(Object.assign({}, this.props.templates[e], {
+						const t = he(Object.assign(Object.assign({}, this.props.templates[e]), {
 							styleTemplate: this.props.styleTemplates && this.props.styleTemplates[e]
 						}), this.props.flairTemplateType, this.props.subredditEmojiData);
 						this.setState({
@@ -1485,7 +1484,7 @@
 						})
 					}))), o.a.createElement("div", {
 						className: It.a.tableBody
-					}, s === Mt.Default && !t.length && o.a.createElement(Ot, {
+					}, s === Mt.Default && !t.length && o.a.createElement(wt, {
 						flairTemplateType: this.props.flairTemplateType
 					}), s === Mt.Reordering ? o.a.createElement(g.a, {
 						values: this.state.templateIdsNewOrder,
@@ -1860,7 +1859,7 @@
 						})
 					}, n))
 				},
-				_ = e => {
+				O = e => {
 					var {
 						className: t,
 						disabled: s,
@@ -1874,7 +1873,7 @@
 						})
 					}, n))
 				},
-				k = e => {
+				_ = e => {
 					var {
 						className: t,
 						disabled: s,
@@ -1888,7 +1887,7 @@
 						})
 					}, n))
 				},
-				w = e => {
+				k = e => {
 					var {
 						isActive: t
 					} = e, s = y(e, ["isActive"]);
@@ -1898,7 +1897,7 @@
 						})
 					}, s))
 				},
-				O = Object(f.t)(),
+				w = Object(f.t)(),
 				j = Object(l.c)({
 					postLayout: f.N,
 					redditStyle: f.A
@@ -1908,10 +1907,10 @@
 					toggleTooltip: t => e(Object(p.h)({
 						tooltipId: t
 					}))
-				}), (e, t, s) => Object.assign({}, e, t, s, {
+				}), (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), s), {
 					toggleTooltip: e => t.toggleTooltip(e)
 				}));
-			t.a = O(I(Object(b.c)(e => {
+			t.a = w(I(Object(b.c)(e => {
 				const {
 					sendEvent: t,
 					subredditId: s
@@ -1927,13 +1926,13 @@
 					className: E.a.iconContainer
 				}, (() => [{
 					layout: m.d.Card,
-					Icon: k,
+					Icon: _,
 					text: a.fbt._("Card", null, {
 						hk: "22FueJ"
 					})
 				}, {
 					layout: m.d.Classic,
-					Icon: _,
+					Icon: O,
 					text: a.fbt._("Classic", null, {
 						hk: "1Djx18"
 					})
@@ -1956,7 +1955,7 @@
 						l = () => e.toggleTooltip(r),
 						r = "layoutSwitch--" + a.layout,
 						c = a.layout === n;
-					return o.a.createElement(w, {
+					return o.a.createElement(k, {
 						"aria-label": a.text,
 						"aria-pressed": c,
 						id: r,
@@ -2054,4 +2053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.8b9eb39cda9345f2352c.js.map
+//# sourceMappingURL=reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.405495177313ce72be75.js.map

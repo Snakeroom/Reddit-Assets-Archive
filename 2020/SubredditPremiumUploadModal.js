@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.0be7eec57b0ab909b34f.js
-// Retrieved at 7/14/2020, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.e1f0d60f6d343bb5549e.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, n) {
@@ -119,11 +119,11 @@
 				y = n("./src/lib/classNames/index.ts"),
 				w = n("./src/reddit/controls/FileDrop/index.tsx"),
 				k = n("./src/reddit/icons/svgs/Remove/index.tsx"),
-				S = n("./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less"),
-				O = n.n(S),
-				N = function() {
+				O = n("./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less"),
+				S = n.n(O),
+				j = function() {
 					return o.a.createElement("svg", {
-						className: O.a.uploadDropImage,
+						className: S.a.uploadDropImage,
 						width: "120",
 						height: "120",
 						viewBox: "0 0 148 148",
@@ -145,7 +145,7 @@
 					}))
 				};
 			const {
-				fbt: j
+				fbt: N
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var M = function(e) {
 					const {
@@ -155,28 +155,28 @@
 					return o.a.createElement(w.a, {
 						onDrop: e => n(e[0]),
 						render: s => o.a.createElement("div", {
-							className: Object(y.a)(O.a.container, {
-								[O.a.isOver]: s
+							className: Object(y.a)(S.a.container, {
+								[S.a.isOver]: s
 							})
 						}, o.a.createElement("div", {
-							className: O.a.label
-						}, j._("Image", null, {
+							className: S.a.label
+						}, N._("Image", null, {
 							hk: "34LRIF"
 						}), t && o.a.createElement("button", {
-							className: O.a.trashIcon,
+							className: S.a.trashIcon,
 							onClick: () => e.onChange()
 						}, o.a.createElement(k.a, null))), o.a.createElement("label", {
-							className: O.a.dropTarget
+							className: S.a.dropTarget
 						}, t ? o.a.createElement("div", {
-							className: O.a.imagePreview
+							className: S.a.imagePreview
 						}, o.a.createElement("div", {
-							className: O.a.image,
+							className: S.a.image,
 							style: {
 								backgroundImage: "url(".concat(t.url, ")")
 							}
-						})) : o.a.createElement(N, null), o.a.createElement("input", {
+						})) : o.a.createElement(j, null), o.a.createElement("input", {
 							type: "file",
-							className: O.a.imageInput,
+							className: S.a.imageInput,
 							onChange: e => {
 								const t = e.currentTarget.files && e.currentTarget.files[0];
 								t && n(t)
@@ -435,7 +435,7 @@
 					}, o.a.createElement(ie.a, {
 						className: ce.a.selector,
 						displayText: t.displayText(),
-						options: de.map(e => Object.assign({}, e, {
+						options: de.map(e => Object.assign(Object.assign({}, e), {
 							displayText: e.displayText()
 						})),
 						onSelect: t => e.onItemTypeSelected(t.value),
@@ -496,8 +496,8 @@
 				Ee = n.n(Ce);
 			const {
 				fbt: _e
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ye = e => !!e.match(/^[a-zA-Z0-9][-'!a-zA-Z0-9_ ]{0,62}[a-zA-Z0-9]$/), we = e => !!e.match(/^[a-zA-Z0-9][a-zA-Z0-9_]{0,18}[a-zA-Z0-9]$/), ke = e => !!e.match(/^[a-zA-Z0-9]{1}.{1,119}$/), Se = /[^a-z0-9_]/g, Oe = .65, Ne = .075;
-			class je extends o.a.Component {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ye = e => !!e.match(/^[a-zA-Z0-9][-'!a-zA-Z0-9_ ]{0,62}[a-zA-Z0-9]$/), we = e => !!e.match(/^[a-zA-Z0-9][a-zA-Z0-9_]{0,18}[a-zA-Z0-9]$/), ke = e => !!e.match(/^[a-zA-Z0-9]{1}.{1,119}$/), Oe = /[^a-z0-9_]/g, Se = .65, je = .075;
+			class Ne extends o.a.Component {
 				constructor(e) {
 					super(e), this.onTypeSelected = e => {
 						this.setState({
@@ -521,15 +521,15 @@
 							})
 						})
 					}, this.onEmoteNameChanged = e => {
-						e === ":" + this.state.name && (e = e.slice(1, e.length - 1)), e = e.replace(/[- ]/g, "_").toLowerCase().replace(Se, ""), this.setState({
+						e === ":" + this.state.name && (e = e.slice(1, e.length - 1)), e = e.replace(/[- ]/g, "_").toLowerCase().replace(Oe, ""), this.setState({
 							name: e
 						})
 					}, this.onUsernameColorChanged = e => {
 						let t;
 						const n = Object(s.b)(e);
-						n > Oe ? t = _e._("Darker please", null, {
+						n > Se ? t = _e._("Darker please", null, {
 							hk: "3ld2n2"
-						}) : n < Ne && (t = _e._("Lighter please", null, {
+						}) : n < je && (t = _e._("Lighter please", null, {
 							hk: "4zH6v4"
 						})), this.setState({
 							usernameColor: e,
@@ -577,12 +577,12 @@
 				sendEvent(e, t) {
 					this.props.sendEvent(n => {
 						const s = E.defaults(n);
-						return Object.assign({
+						return Object.assign(Object.assign({
 							source: "meta",
 							action: e,
 							noun: "subscription_upload_modal"
-						}, s, {
-							actionInfo: Object.assign({}, s.actionInfo, t),
+						}, s), {
+							actionInfo: Object.assign(Object.assign({}, s.actionInfo), t),
 							subreddit: E.subreddit(n)
 						})
 					})
@@ -768,7 +768,7 @@
 				onGovernanceError: t => {
 					Object(c.a)(e, t)
 				}
-			}))(je)))))
+			}))(Ne)))))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -1252,4 +1252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumUploadModal.0be7eec57b0ab909b34f.js.map
+//# sourceMappingURL=SubredditPremiumUploadModal.e1f0d60f6d343bb5549e.js.map

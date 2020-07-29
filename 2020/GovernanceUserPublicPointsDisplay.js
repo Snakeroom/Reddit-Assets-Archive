@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.2b5d1636a5cd0c463b88.js
-// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.5f20f6b4c9a0518cc05b.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -23,7 +23,7 @@
 		"./src/reddit/actions/governance/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return O
+				return x
 			})), n.d(t, "b", (function() {
 				return y
 			})), n.d(t, "c", (function() {
@@ -54,8 +54,8 @@
 				f = n("./src/reddit/models/Vote/index.ts"),
 				g = n("./src/reddit/selectors/gov.ts"),
 				j = n("./src/reddit/actions/governance/constants.ts"),
-				x = n("./src/reddit/actions/governance/errorToast.ts");
-			const O = Object(s.a)(j.b),
+				O = n("./src/reddit/actions/governance/errorToast.ts");
+			const x = Object(s.a)(j.b),
 				y = Object(s.a)(j.c),
 				v = Object(s.a)(j.e),
 				h = (Object(s.a)(j.f), Object(s.a)(j.g), Object(s.a)(j.h)),
@@ -99,7 +99,7 @@
 					} else n(k({
 						pollId: e,
 						error: o.error || o.errors[0].message
-					})), Object(x.a)(n, o.error || o.errors[0].messsage)
+					})), Object(O.a)(n, o.error || o.errors[0].messsage)
 				}, C = (e, t) => async (n, s, c) => {
 					let {
 						apiContext: a
@@ -118,10 +118,10 @@
 							endpoint: "".concat(u.a.metaUrl, "/wallets/me/").concat(t.subredditId, "/transfers"),
 							method: "post"
 						})
-					}(a(), Object.assign({}, e, {
+					}(a(), Object.assign(Object.assign({}, e), {
 						contentId: b
 					}));
-					m.ok ? (n(T(Object.assign({}, m.body, {
+					m.ok ? (n(T(Object.assign(Object.assign({}, m.body), {
 						subredditId: e.subredditId
 					}))), n(Object(i.e)({
 						kind: p.b.SuccessCommunity,
@@ -132,7 +132,7 @@
 						})
 					})), t && n(Object(d.f)())) : (n(w({
 						error: m.error
-					})), Object(x.a)(n, m.error))
+					})), Object(O.a)(n, m.error))
 				}, q = e => async (t, n, r) => {
 					let {
 						apiContext: s
@@ -210,8 +210,8 @@
 				f = n("./src/reddit/helpers/governance/tokens.ts"),
 				g = n("./src/reddit/selectors/economics.ts"),
 				j = n("./src/reddit/selectors/gov.ts"),
-				x = n("./src/reddit/components/Governance/UserPublicPointsDisplay/index.m.less"),
-				O = n.n(x);
+				O = n("./src/reddit/components/Governance/UserPublicPointsDisplay/index.m.less"),
+				x = n.n(O);
 			const y = Object(c.c)({
 				publicWallet: j.i,
 				tippingEnabled: m.d.spTipping,
@@ -250,16 +250,16 @@
 				} = e, g = s && s.amount || void 0;
 				if (!g) return null;
 				const j = "public-wallets-".concat(p, "-").concat(d, "-").concat(t),
-					x = s && s.publicAddress;
-				if (m && !x) return null;
+					O = s && s.publicAddress;
+				if (m && !O) return null;
 				const y = Object(f.c)(g, a);
 				return o.a.createElement("div", {
-					className: Object(i.a)(e.className, O.a.container, {
-						[O.a.tippable]: c
+					className: Object(i.a)(e.className, x.a.container, {
+						[x.a.tippable]: c
 					}),
 					id: j,
 					onClick: t => {
-						c && (t.stopPropagation(), e.onTip(e.username, e.contentId, x))
+						c && (t.stopPropagation(), e.onTip(e.username, e.contentId, O))
 					},
 					onMouseEnter: () => e.onShowTooltip(j),
 					onMouseLeave: () => e.onHideTooltip(),
@@ -267,14 +267,14 @@
 						hk: "6WL3V"
 					})
 				}, o.a.createElement(l.a, {
-					className: O.a.tokenFilled,
+					className: x.a.tokenFilled,
 					subredditId: e.subredditId
 				}), o.a.createElement(l.a, {
 					grey: !0,
-					className: O.a.tokenGrey,
+					className: x.a.tokenGrey,
 					subredditId: e.subredditId
 				}), o.a.createElement("span", {
-					className: O.a.amount
+					className: x.a.amount
 				}, y), n, c && o.a.createElement(b.c, {
 					caretOnTop: !0,
 					tooltipId: j,
@@ -361,7 +361,7 @@
 					endpoint: "".concat(o.a.metaUrl, "/polls/").concat(t, "/").concat(n, "/votes/me/").concat(r)
 				})
 			}
-			const b = (e, t, n) => Object(c.a)(e, Object.assign({}, d, {
+			const b = (e, t, n) => Object(c.a)(e, Object.assign(Object.assign({}, d), {
 				variables: {
 					input: {
 						postId: t,
@@ -374,7 +374,7 @@
 				return Object(u.a)(Object(i.a)(e, [a.a]), {
 					method: "get",
 					endpoint: "".concat(e.apiUrl, "/by_id/").concat(t, ".json")
-				}).then(e => e.ok ? Object.assign({}, e, {
+				}).then(e => e.ok ? Object.assign(Object.assign({}, e), {
 					body: {
 						title: s()(e.body, ["data", "children", 0, "data", "title"], ""),
 						url: s()(e.body, ["data", "children", 0, "data", "permalink"], "")
@@ -403,7 +403,7 @@
 							r = {
 								[t.subredditId]: n
 							};
-						return Object.assign({}, e, {
+						return Object.assign(Object.assign({}, e), {
 							body: r
 						})
 					}
@@ -419,7 +419,7 @@
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId),
 					method: s.db.POST,
 					data: t.userIds
-				}).then(e => e.ok ? Object.assign({}, e, {
+				}).then(e => e.ok ? Object.assign(Object.assign({}, e), {
 					body: {
 						wallets: e.body
 					}
@@ -512,9 +512,9 @@
 			})), n.d(t, "i", (function() {
 				return j
 			})), n.d(t, "j", (function() {
-				return x
-			})), n.d(t, "p", (function() {
 				return O
+			})), n.d(t, "p", (function() {
+				return x
 			})), n.d(t, "q", (function() {
 				return y
 			})), n.d(t, "o", (function() {
@@ -594,11 +594,11 @@
 				j = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				x = (e, t) => {
+				O = (e, t) => {
 					const n = Object(r.m)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || i
 				},
-				O = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || u,
 				v = (e, t) => {
 					const n = N(e, t);
@@ -654,4 +654,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.2b5d1636a5cd0c463b88.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.5f20f6b4c9a0518cc05b.js.map

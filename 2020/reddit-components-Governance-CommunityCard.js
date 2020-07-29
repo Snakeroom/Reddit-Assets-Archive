@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.bd8973c4d745a77034ed.js
-// Retrieved at 7/14/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.e32341377a7abd6cd637.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -118,10 +118,10 @@
 							endpoint: "".concat(l.a.metaUrl, "/wallets/me/").concat(t.subredditId, "/transfers"),
 							method: "post"
 						})
-					}(c(), Object.assign({}, e, {
+					}(c(), Object.assign(Object.assign({}, e), {
 						contentId: m
 					}));
-					b.ok ? (n(E(Object.assign({}, b.body, {
+					b.ok ? (n(E(Object.assign(Object.assign({}, b.body), {
 						subredditId: e.subredditId
 					}))), n(Object(d.e)({
 						kind: p.b.SuccessCommunity,
@@ -797,7 +797,7 @@
 					endpoint: "".concat(o.a.metaUrl, "/polls/").concat(t, "/").concat(n, "/votes/me/").concat(r)
 				})
 			}
-			const m = (e, t, n) => Object(i.a)(e, Object.assign({}, a, {
+			const m = (e, t, n) => Object(i.a)(e, Object.assign(Object.assign({}, a), {
 				variables: {
 					input: {
 						postId: t,
@@ -810,7 +810,7 @@
 				return Object(l.a)(Object(d.a)(e, [c.a]), {
 					method: "get",
 					endpoint: "".concat(e.apiUrl, "/by_id/").concat(t, ".json")
-				}).then(e => e.ok ? Object.assign({}, e, {
+				}).then(e => e.ok ? Object.assign(Object.assign({}, e), {
 					body: {
 						title: s()(e.body, ["data", "children", 0, "data", "title"], ""),
 						url: s()(e.body, ["data", "children", 0, "data", "permalink"], "")
@@ -839,7 +839,7 @@
 							r = {
 								[t.subredditId]: n
 							};
-						return Object.assign({}, e, {
+						return Object.assign(Object.assign({}, e), {
 							body: r
 						})
 					}
@@ -855,7 +855,7 @@
 					endpoint: "".concat(r.a.metaUrl, "/wallets/").concat(t.subredditId),
 					method: s.db.POST,
 					data: t.userIds
-				}).then(e => e.ok ? Object.assign({}, e, {
+				}).then(e => e.ok ? Object.assign(Object.assign({}, e), {
 					body: {
 						wallets: e.body
 					}
@@ -1235,4 +1235,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-CommunityCard.bd8973c4d745a77034ed.js.map
+//# sourceMappingURL=reddit-components-Governance-CommunityCard.e32341377a7abd6cd637.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.78664dc35ebedf9c95c7.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModStatsChart.93c70f20a8835505112d.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModStatsChart"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, s) {
@@ -397,7 +397,7 @@
 					borderWidth: 1,
 					spanGaps: !0
 				},
-				k = (e, o, s) => Object.assign({}, g, {
+				k = (e, o, s) => Object.assign(Object.assign({}, g), {
 					label: s,
 					backgroundColor: f[o],
 					borderColor: f[o],
@@ -410,7 +410,7 @@
 				x = s.n(w);
 			const v = 62.5,
 				y = 65;
-			class z extends n.Component {
+			class O extends n.Component {
 				constructor(e) {
 					super(e), this.chartRef = m.a.createRef(), this.onClickLegend = e => {
 						const o = this.chartRef.current;
@@ -454,7 +454,7 @@
 							tooltipText: i,
 							showTooltip: !0
 						})
-					}, this.getOptions = () => Object.assign({}, b(this.props, this.props.statsTime === u.b.Hour ? 10 : 12), {
+					}, this.getOptions = () => Object.assign(Object.assign({}, b(this.props, this.props.statsTime === u.b.Hour ? 10 : 12)), {
 						tooltips: {
 							enabled: !1,
 							custom: this.tooltipOptions
@@ -572,7 +572,7 @@
 					})))))
 				}
 			}
-			o.default = Object(a.a)(z)
+			o.default = Object(a.a)(O)
 		},
 		"./src/reddit/components/RichTextEditor/Tooltip/index.m.less": function(e, o, s) {
 			e.exports = {
@@ -727,4 +727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModStatsChart.78664dc35ebedf9c95c7.js.map
+//# sourceMappingURL=ModStatsChart.93c70f20a8835505112d.js.map

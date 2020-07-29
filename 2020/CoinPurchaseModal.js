@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.d2195d21dac7caff9228.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e9bea1d2b14cdf802062.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -93,7 +93,6 @@
 						})));
 						const x = {
 								gildType: u,
-								includeMessage: !!i,
 								isAnonymous: c,
 								message: i
 							},
@@ -723,7 +722,7 @@
 					dispatchCompletePurchase: (a, t, n, s) => {
 						e(n ? Object(l.h)(a, t, s) : Object(l.i)(a, t))
 					}
-				}), (e, a, t) => Object.assign({}, e, a, t, {
+				}), (e, a, t) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), a), t), {
 					onCompletePurchaseClick: (t, n) => a.dispatchCompletePurchase(t, n, !!e.gildThingId, e.isIframed)
 				}));
 			class D extends s.a.Component {
@@ -890,4 +889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinPurchaseModal.d2195d21dac7caff9228.js.map
+//# sourceMappingURL=CoinPurchaseModal.e9bea1d2b14cdf802062.js.map

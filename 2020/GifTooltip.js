@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.6bc2d31d3df2f08e3ca0.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.e2d798a00c5ea5b878ce.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -53,12 +53,12 @@
 				v || (v = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var N = s("./node_modules/lodash/debounce.js"),
-				w = s.n(N),
-				j = s("./src/lib/classNames/index.ts"),
+				j = s.n(N),
+				w = s("./src/lib/classNames/index.ts"),
 				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				R = s("./src/reddit/selectors/user.ts"),
-				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
-				O = s.n(B);
+				O = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
+				B = s.n(O);
 			const k = 400;
 			class M extends l.a.Component {
 				constructor() {
@@ -68,7 +68,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = w()(() => {
+					}, this.dispatchOnChange = j()(() => {
 						this.props.onChange(this.state.query)
 					}, k), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -84,23 +84,23 @@
 						query: t
 					} = this.state, s = "powered-by-giphy-".concat(e ? "dark" : "light", ".png");
 					return l.a.createElement("div", {
-						className: Object(j.a)(O.a.searchBox, this.props.className)
+						className: Object(w.a)(B.a.searchBox, this.props.className)
 					}, l.a.createElement("button", {
-						className: O.a.searchIconButton,
+						className: B.a.searchIconButton,
 						onClick: this.focusOnInput
 					}, l.a.createElement(S.a, {
-						className: O.a.searchIcon
+						className: B.a.searchIcon
 					})), l.a.createElement("input", {
 						ref: e => this.elementRef = e,
 						type: "text",
-						className: O.a.searchInput,
+						className: B.a.searchInput,
 						placeholder: i.fbt._("Search GIFs", null, {
 							hk: "3upjCv"
 						}),
 						value: t,
 						onChange: this.onQueryChange
 					}), t.length < 25 && l.a.createElement("div", {
-						className: O.a.poweredByGiphy,
+						className: B.a.poweredByGiphy,
 						style: {
 							backgroundImage: "url(".concat(g.a.assetPath, "/img/memberships/").concat(s)
 						},
@@ -159,14 +159,14 @@
 					}, 300), this.onResultClick = e => {
 						this.props.sendEvent(e => {
 							const t = _.defaults(e);
-							return Object.assign({}, t, {
+							return Object.assign(Object.assign({}, t), {
 								source: "meta",
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
 								subreddit: this.props.subreddit.id ? _.subredditById(e, this.props.subreddit.id) : void 0,
 								post: _.currentPost(e),
-								actionInfo: Object.assign({}, t.actionInfo, {
+								actionInfo: Object.assign(Object.assign({}, t.actionInfo), {
 									reason: this.props.hasGifProduct ? "has-gif-product" : "gif-train"
 								})
 							})
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.6bc2d31d3df2f08e3ca0.js.map
+//# sourceMappingURL=GifTooltip.e2d798a00c5ea5b878ce.js.map

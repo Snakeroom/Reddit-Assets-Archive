@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.921e06f5b276774b6ec8.js
-// Retrieved at 7/14/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.aac6d0b9c338de80a814.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ChatSettings"], {
 		"./src/reddit/components/ModHub/ChatSettings/AccessDisabledBanner/index.m.less": function(e, t, s) {
@@ -61,8 +61,8 @@
 					title: n.fbt._("Chat mod permissions required", null, {
 						hk: "AFact"
 					}),
-					subtitle: n.fbt._("This page requires chat permissions to modify settings", null, {
-						hk: "1puJwl"
+					subtitle: n.fbt._('This page requires "chat config" or "chat operator" moderator permissions to modify settings', null, {
+						hk: "3ELZle"
 					})
 				}),
 				_ = s("./node_modules/lodash/times.js"),
@@ -130,7 +130,7 @@
 						on: s,
 						forceOn: !0,
 						disabled: !a,
-						onClick: () => d(Object.assign({}, t, {
+						onClick: () => d(Object.assign(Object.assign({}, t), {
 							state: !s
 						})),
 						label: o,
@@ -157,7 +157,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Y = class extends c.a.Component {
+			var Z = class extends c.a.Component {
 					get groupSettings() {
 						const e = {},
 							t = [];
@@ -206,20 +206,20 @@
 						}, t), this.buildControls(e[t]))), this.buildControls(t))
 					}
 				},
-				Z = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				Y = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
 				W = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				X = s("./src/reddit/controls/Button/index.tsx"),
 				q = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				Q = s("./src/reddit/selectors/activeModalId.ts"),
-				J = s("./src/reddit/selectors/chat.ts"),
-				V = s("./src/reddit/selectors/chatSettingsPage.ts"),
-				z = s("./src/reddit/selectors/platform.ts");
-			const G = "chat-settings-discard-confirmation",
+				V = s("./src/reddit/selectors/chat.ts"),
+				z = s("./src/reddit/selectors/chatSettingsPage.ts"),
+				G = s("./src/reddit/selectors/platform.ts");
+			const J = "chat-settings-discard-confirmation",
 				$ = Object(m.c)({
-					allowNavigationCallback: z.a,
-					isDiscardModalOpen: Object(Q.b)(G),
-					isLoading: V.b,
-					settings: V.a,
+					allowNavigationCallback: G.a,
+					isDiscardModalOpen: Object(Q.b)(J),
+					isLoading: z.b,
+					settings: z.a,
 					isChatModerator: (e, t) => {
 						let {
 							subredditId: s
@@ -227,7 +227,7 @@
 						const n = {
 							subredditId: s
 						};
-						return Object(J.e)(e, n)
+						return Object(V.e)(e, n)
 					}
 				}),
 				ee = Object(l.b)($, (e, t) => {
@@ -331,7 +331,7 @@
 					} = e;
 					return c.a.createElement("div", {
 						className: F.a.container
-					}, c.a.createElement(Z.c, {
+					}, c.a.createElement(Y.c, {
 						className: F.a.topBar
 					}, c.a.createElement(X.f, {
 						disabled: t || !i,
@@ -343,9 +343,9 @@
 						sizePx: 10
 					}) : n.fbt._("Save changes", null, {
 						hk: "TTPsK"
-					}))), c.a.createElement(Z.a, {
+					}))), c.a.createElement(Y.a, {
 						className: F.a.contentContainer
-					}, c.a.createElement(Z.b, null, n.fbt._("Chat settings", null, {
+					}, c.a.createElement(Y.b, null, n.fbt._("Chat settings", null, {
 						hk: "174Drb"
 					})), !a && c.a.createElement(x, {
 						className: F.a.modAccessBanner
@@ -353,7 +353,7 @@
 						className: F.a.formBody,
 						onBlur: this.onFormFieldBlur,
 						ref: this.formBodyRef
-					}, this.state.formState && this.state.formState.length ? c.a.createElement(Y, {
+					}, this.state.formState && this.state.formState.length ? c.a.createElement(Z, {
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
@@ -363,7 +363,7 @@
 						isLoading: t
 					})), c.a.createElement(u.a, {
 						blockOnBeforeUnload: !0,
-						dialogId: G,
+						dialogId: J,
 						enabled: i
 					}), this.props.isDiscardModalOpen && c.a.createElement(p.a, {
 						actionText: n.fbt._("Discard", null, {
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-ChatSettings.921e06f5b276774b6ec8.js.map
+//# sourceMappingURL=reddit-components-ModHub-ChatSettings.aac6d0b9c338de80a814.js.map

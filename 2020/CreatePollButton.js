@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatePollButton.f2f2beb76a4b85a5485c.js
-// Retrieved at 6/24/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatePollButton.d9783d665b65c41b2901.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatePollButton"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -77,7 +77,7 @@
 					}, this.onCreatePostButtonClick = () => {
 						this.setState({
 							isModalOpen: !0
-						}), Object(d.N)(), this.props.sendEvent(e => Object.assign({
+						}), Object(d.M)(), this.props.sendEvent(e => Object.assign({
 							source: "id_card",
 							action: "click",
 							noun: "create_poll"
@@ -111,4 +111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CreatePollButton.f2f2beb76a4b85a5485c.js.map
+//# sourceMappingURL=CreatePollButton.d9783d665b65c41b2901.js.map

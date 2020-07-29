@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f00db4f1f611b1ee72cb.js
-// Retrieved at 7/20/2020, 11:00:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fe977abd20b075d6b694.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -277,52 +277,53 @@
 				n = s("./node_modules/react-redux/es/index.js"),
 				i = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/lib/cache/localStorage/index.ts"),
-				c = s("./src/lib/loadWithRetries/index.ts"),
-				l = () => Object(c.a)(() => s.e("vendors~MuxEmbed").then(s.t.bind(null, "./node_modules/mux-embed/dist/mux.js", 7))),
-				d = s("./src/reddit/constants/experiments.ts"),
-				m = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const u = Object(i.a)(e => {
-				const t = Object(m.c)(e, {
-					experimentEligibilitySelector: m.a,
-					experimentName: d.Ab
+				c = s("./src/lib/combineRefs/index.tsx"),
+				l = s("./src/lib/loadWithRetries/index.ts"),
+				d = () => Object(l.a)(() => s.e("vendors~MuxEmbed").then(s.t.bind(null, "./node_modules/mux-embed/dist/mux.js", 7))),
+				m = s("./src/reddit/constants/experiments.ts"),
+				u = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const p = Object(i.a)(e => {
+				const t = Object(u.c)(e, {
+					experimentEligibilitySelector: u.a,
+					experimentName: m.Cb
 				});
-				return Object(d.vc)(t) ? void 0 : t
+				return Object(m.zc)(t) ? void 0 : t
 			}, e => {
-				const t = Object(m.c)(e, {
-					experimentEligibilitySelector: m.a,
-					experimentName: d.Bb
+				const t = Object(u.c)(e, {
+					experimentEligibilitySelector: u.a,
+					experimentName: m.Db
 				});
-				return Object(d.vc)(t) ? void 0 : t
-			}, (e, t) => e === d.Cb.Enabled && t === d.Cb.Enabled);
-			var p = s("./src/config.ts");
-			var h = s("./src/reddit/selectors/user.ts");
+				return Object(m.zc)(t) ? void 0 : t
+			}, (e, t) => e === m.Eb.Enabled && t === m.Eb.Enabled);
+			var h = s("./src/config.ts");
+			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
-			const b = e => {
+			const v = e => {
 					const t = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
 						s = t.length,
 						r = new Uint32Array(e);
 					return crypto.getRandomValues(r), Array.from(r).map(e => t.charAt(e % s)).join("")
 				},
-				v = function() {
+				g = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : new Date;
 					return new Date(e).toISOString().replace(/^(\d{4})-(\d{2})-(\d{2}).*/, "$1$2$3")
 				},
-				g = function(e) {
+				w = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return Math.trunc(e).toString(16).padStart(t, "0")
 				};
-			var w;
+			var S;
 			! function(e) {
 				e.SHA1 = "SHA-1", e.SHA256 = "SHA-256", e.SHA384 = "SHA-384", e.SHA512 = "SHA-512"
-			}(w || (w = {}));
-			const S = async e => (async (e, t) => {
+			}(S || (S = {}));
+			const C = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					r = await crypto.subtle.digest(e, s);
-				return Array.from(new Uint8Array(r)).map(g).join("")
-			})(w.SHA1, e);
+				return Array.from(new Uint8Array(r)).map(w).join("")
+			})(S.SHA1, e);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function f() {
+				return (f = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -330,7 +331,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var f = function(e, t) {
+			var _ = function(e, t) {
 				var s = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (s[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -339,18 +340,18 @@
 				}
 				return s
 			};
-			const _ = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
-				E = Object({
-					SENTRY_RELEASE_VERSION: "66b4cd6-production"
+			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
+				x = Object({
+					SENTRY_RELEASE_VERSION: "55eb65c-production"
 				}),
-				x = {
+				y = {
 					anonymousUserId: "t2_anonymous",
 					debug: !1,
 					disableCookies: !0,
-					envKey: p.a.muxApiKey,
+					envKey: h.a.muxApiKey,
 					localStorageSaltKey: "muxSalt",
 					localStorageViewerUserIdKey: "muxViewerUserId",
-					playerVersion: "Reddit/Version Build ".concat(E.SENTRY_RELEASE_VERSION, " ").concat(p.a.appName),
+					playerVersion: "Reddit/Version Build ".concat(x.SENTRY_RELEASE_VERSION, " ").concat(h.a.appName),
 					respectDoNotTrack: !0,
 					saltLength: 20,
 					saltTimeToLive: 2592e3,
@@ -359,21 +360,21 @@
 			t.a = function(e, t) {
 				const {
 					anonymousUserId: s,
-					debug: c,
-					disableCookies: d,
-					envKey: m,
-					localStorageSaltKey: p,
-					localStorageViewerUserIdKey: g,
-					playerName: w,
-					playerVersion: E,
-					respectDoNotTrack: y,
-					saltLength: O,
-					saltTimeToLive: T,
-					viewerUserIdLength: I
-				} = Object.assign({}, x, t);
-				class L extends r.Component {
-					constructor() {
-						super(...arguments), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(r.createRef)(), this.handleDashCreate = e => {
+					debug: l,
+					disableCookies: m,
+					envKey: u,
+					localStorageSaltKey: h,
+					localStorageViewerUserIdKey: w,
+					playerName: S,
+					playerVersion: x,
+					respectDoNotTrack: O,
+					saltLength: T,
+					saltTimeToLive: I,
+					viewerUserIdLength: L
+				} = Object.assign(Object.assign({}, y), t);
+				class N extends r.Component {
+					constructor(e) {
+						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(r.createRef)(), this.handleDashCreate = e => {
 							this.setDashInstance(e)
 						}, this.handleDashDestroy = () => {
 							this.setDashInstance(null)
@@ -381,7 +382,7 @@
 							this.setHlsInstance(e)
 						}, this.handleHlsDestroy = () => {
 							this.setHlsInstance(null)
-						}
+						}, this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
 					get experimentName() {
 						return ""
@@ -393,28 +394,31 @@
 						this.doMuxThings()
 					}
 					componentDidUpdate(e) {
-						this.props.muxVideoId !== e.muxVideoId && this.doMuxThings()
+						this.props.muxVideoId !== e.muxVideoId && this.doMuxThings(), this.props.videoRef !== e.videoRef && (this.combinedVideoRefs = this.combineExternalVideoRef(this.props.videoRef))
+					}
+					combineExternalVideoRef(e) {
+						return e ? Object(c.a)(this.videoRef, e) : this.videoRef
 					}
 					render() {
 						const t = this.props,
 							{
 								forwardedRef: s
 							} = t,
-							r = f(t, ["forwardedRef"]);
-						return a.a.createElement(e, C({}, r, {
+							r = _(t, ["forwardedRef"]);
+						return a.a.createElement(e, f({}, r, {
 							onDashCreate: this.handleDashCreate,
 							onDashDestroy: this.handleDashDestroy,
 							onHlsCreate: this.handleHlsCreate,
 							onHlsDestroy: this.handleHlsDestroy,
 							ref: s,
-							videoRef: this.videoRef
+							videoRef: this.combinedVideoRefs
 						}))
 					}
 					async setDashInstance(e) {
 						if (!this.props.isMuxEnabled) return;
 						const t = e || null;
 						if (t !== this.dashInstance && (this.dashInstance = t, this.isMonitoring)) try {
-							const e = await l();
+							const e = await d();
 							e.removeDashJS(this.video), this.dashInstance && e.addDashJS(this.video, this.getDashInstanceData())
 						} catch (s) {
 							console.error(s)
@@ -424,7 +428,7 @@
 						if (!this.props.isMuxEnabled) return;
 						const t = e || null;
 						if (t !== this.hlsInstance && (this.hlsInstance = t, this.isMonitoring)) try {
-							const e = await l();
+							const e = await d();
 							e.removeHLSJS(this.video), this.hlsInstance && e.addHLSJS(this.video, this.getHlsInstanceData())
 						} catch (s) {
 							console.error(s)
@@ -432,7 +436,7 @@
 					}
 					async doMuxThings() {
 						if (this.props.isMuxEnabled) try {
-							const e = await l();
+							const e = await d();
 							if (this.isMonitoring) {
 								const t = this.getVideoData();
 								e.emit(this.video, "videochange", t)
@@ -445,11 +449,11 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || L.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || N.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
-							s = v(),
+							s = g(),
 							r = "".concat(s).concat(e).concat(t);
-						return (await S(r)).substr(0, L.VIEWER_USER_ID_LENGTH)
+						return (await C(r)).substr(0, N.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -472,29 +476,29 @@
 						const e = await this.encryptViewerUserId(),
 							t = this.getVideoData(),
 							s = this.getThirdPartyLibData();
-						return Object.assign({
-							debug: L.DEBUG,
-							disableCookies: L.DISABLE_COOKIES,
-							respectDoNotTrack: L.RESPECT_DO_NOT_TRACK
-						}, s, {
-							data: Object.assign({
-								env_key: L.ENV_KEY,
+						return Object.assign(Object.assign({
+							debug: N.DEBUG,
+							disableCookies: N.DISABLE_COOKIES,
+							respectDoNotTrack: N.RESPECT_DO_NOT_TRACK
+						}, s), {
+							data: Object.assign(Object.assign({
+								env_key: N.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: L.PLAYER_NAME,
-								player_version: L.PLAYER_VERSION
-							}, t, {
+								player_name: N.PLAYER_NAME,
+								player_version: N.PLAYER_VERSION
+							}, t), {
 								viewer_user_id: e
 							})
 						})
 					}
 					getOrCreateSalt() {
-						const e = L.LOCAL_STORAGE_SALT_KEY;
+						const e = N.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(o.a)(e);
-						return t || (t = b(L.SALT_LENGTH), Object(o.b)(e, t, L.SALT_TIME_TO_LIVE)), t
+						return t || (t = v(N.SALT_LENGTH), Object(o.b)(e, t, N.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
-						return Object.assign({}, this.getDashInstanceData(), this.getHlsInstanceData())
+						return Object.assign(Object.assign({}, this.getDashInstanceData()), this.getHlsInstanceData())
 					}
 					getVideoData() {
 						const {
@@ -504,24 +508,24 @@
 							muxVideoTitle: r
 						} = this.props;
 						return {
-							video_duration: s ? L.DURATION_LIVE : e,
+							video_duration: s ? N.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: s ? L.STREAM_TYPE_LIVE : L.STREAM_TYPE_ON_DEMAND,
+							video_stream_type: s ? N.STREAM_TYPE_LIVE : N.STREAM_TYPE_ON_DEMAND,
 							video_title: r
 						}
 					}
 				}
-				L.displayName = _(e), L.ANONYMOUS_USER_ID = s, L.DEBUG = c, L.DISABLE_COOKIES = d, L.DURATION_LIVE = 1 / 0, L.ENV_KEY = m, L.LOCAL_STORAGE_SALT_KEY = p, L.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, L.PLAYER_NAME = w, L.PLAYER_VERSION = E, L.RESPECT_DO_NOT_TRACK = y, L.SALT_LENGTH = O, L.SALT_TIME_TO_LIVE = T, L.STREAM_TYPE_LIVE = "live", L.STREAM_TYPE_ON_DEMAND = "on-demand", L.VIEWER_USER_ID_LENGTH = I;
-				const N = Object(r.forwardRef)((e, t) => a.a.createElement(L, C({}, e, {
+				N.displayName = E(e), N.ANONYMOUS_USER_ID = s, N.DEBUG = l, N.DISABLE_COOKIES = m, N.DURATION_LIVE = 1 / 0, N.ENV_KEY = u, N.LOCAL_STORAGE_SALT_KEY = h, N.LOCAL_STORAGE_VIEWER_USER_ID_KEY = w, N.PLAYER_NAME = S, N.PLAYER_VERSION = x, N.RESPECT_DO_NOT_TRACK = O, N.SALT_LENGTH = T, N.SALT_TIME_TO_LIVE = I, N.STREAM_TYPE_LIVE = "live", N.STREAM_TYPE_ON_DEMAND = "on-demand", N.VIEWER_USER_ID_LENGTH = L;
+				const P = Object(r.forwardRef)((e, t) => a.a.createElement(N, f({}, e, {
 						forwardedRef: t
 					}))),
-					P = Object(i.c)({
-						redditUserId: h.g,
-						isMuxEnabled: u
+					k = Object(i.c)({
+						redditUserId: b.g,
+						isMuxEnabled: p
 					});
-				return Object(n.b)(P, null, null, {
+				return Object(n.b)(k, null, null, {
 					forwardRef: !0
-				})(N)
+				})(P)
 			}
 		},
 		"./src/lib/loginHref/index.ts": function(e, t, s) {
@@ -754,7 +758,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => Promise.all([s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOv~8a8059b8"), s.e("ChatPost~ModQueuePages"), s.e("ChatPost")]).then(s.bind(null, "./src/reddit/components/CommentsChat/index.tsx")),
+				importAsync: () => Promise.all([s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"), s.e("ChatPost~ModQueuePages"), s.e("ChatPost")]).then(s.bind(null, "./src/reddit/components/CommentsChat/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1667,7 +1671,7 @@
 				M = e => async t => {
 					t(k(e))
 				}, A = Object(P.a)(N.N), V = Object(P.a)(N.T);
-			var D, R = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
+			var R, D = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				B = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
 				F = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
 				H = s("./src/reddit/actions/reportFlow.ts"),
@@ -1691,7 +1695,7 @@
 				ne = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
 			! function(e) {
 				e[e.CRITICAL = 0] = "CRITICAL", e[e.LOW = 1] = "LOW", e[e.NORMAL = 2] = "NORMAL", e[e.EXTENDED = 3] = "EXTENDED"
-			}(D || (D = {}));
+			}(R || (R = {}));
 			const ie = 60,
 				oe = 30,
 				ce = 3 * ie,
@@ -1748,32 +1752,32 @@
 				Me = s("./src/reddit/icons/svgs/Star/index.tsx"),
 				Ae = s("./src/reddit/icons/svgs/Star2/index.tsx"),
 				Ve = s("./src/reddit/components/PublicAccessNetwork/Theater/AwardOverlay/AwardIconWithAttributionAnimation/TierAwardIcon/index.m.less"),
-				De = s.n(Ve);
+				Re = s.n(Ve);
 
-			function Re(e) {
+			function De(e) {
 				const {
 					iconUrl: t,
 					tier: s,
 					className: r
-				} = e, a = s === Oe.e.Silver ? De.a.silverTierAwardIcon : s === Oe.e.Gold ? De.a.goldTierAwardIcon : De.a.platinumTierAwardIcon, n = s !== Oe.e.Silver, o = s === Oe.e.Platinum;
+				} = e, a = s === Oe.e.Silver ? Re.a.silverTierAwardIcon : s === Oe.e.Gold ? Re.a.goldTierAwardIcon : Re.a.platinumTierAwardIcon, n = s !== Oe.e.Silver, o = s === Oe.e.Platinum;
 				return i.a.createElement("div", {
 					"aria-role": "presentation",
-					className: Object(d.a)(r, De.a.tierAwardIcon)
+					className: Object(d.a)(r, Re.a.tierAwardIcon)
 				}, i.a.createElement("div", {
-					className: De.a.awardIconContainer
+					className: Re.a.awardIconContainer
 				}, n && i.a.createElement(i.a.Fragment, null, i.a.createElement(Me.a, {
-					className: Object(d.a)(De.a.backgroundAnimation, De.a.backgroundStar)
+					className: Object(d.a)(Re.a.backgroundAnimation, Re.a.backgroundStar)
 				}), i.a.createElement(Ae.a, {
-					className: Object(d.a)(De.a.backgroundAnimation, De.a.backgroundStar, De.a.backgroundStar2)
+					className: Object(d.a)(Re.a.backgroundAnimation, Re.a.backgroundStar, Re.a.backgroundStar2)
 				})), i.a.createElement("img", {
 					src: t,
 					className: a
 				}), o && i.a.createElement(i.a.Fragment, null, i.a.createElement(je.a, {
-					className: Object(d.a)(De.a.backgroundAnimation, De.a.backgroundSparkle, De.a.sparkleBottomLeft)
+					className: Object(d.a)(Re.a.backgroundAnimation, Re.a.backgroundSparkle, Re.a.sparkleBottomLeft)
 				}), i.a.createElement(je.a, {
-					className: Object(d.a)(De.a.backgroundAnimation, De.a.backgroundSparkle, De.a.sparkleTopRight)
+					className: Object(d.a)(Re.a.backgroundAnimation, Re.a.backgroundSparkle, Re.a.sparkleTopRight)
 				}), i.a.createElement(je.a, {
-					className: Object(d.a)(De.a.backgroundAnimation, De.a.backgroundSparkle, De.a.sparkleBottomRight)
+					className: Object(d.a)(Re.a.backgroundAnimation, Re.a.backgroundSparkle, Re.a.sparkleBottomRight)
 				}))))
 			}
 			var Be = s("./src/reddit/components/PublicAccessNetwork/Theater/AwardOverlay/AwardIconWithAttributionAnimation/index.m.less"),
@@ -1789,7 +1793,7 @@
 				return i.a.createElement("div", {
 					"aria-role": "presentation",
 					className: Object(d.a)(s, Fe.a.container)
-				}, i.a.createElement(Re, {
+				}, i.a.createElement(De, {
 					iconUrl: o,
 					tier: n,
 					className: Fe.a.awardIconAnimation
@@ -1896,7 +1900,7 @@
 				}
 			}
 			var Ze = Je(ze);
-			const Qe = (e, t) => e > t ? D.EXTENDED : e < ce ? D.CRITICAL : e < le ? D.LOW : D.NORMAL,
+			const Qe = (e, t) => e > t ? R.EXTENDED : e < ce ? R.CRITICAL : e < le ? R.LOW : R.NORMAL,
 				$e = e => e / ie,
 				et = e => tt(e) % me == 0,
 				tt = e => Math.round(e / de) * de;
@@ -2047,9 +2051,9 @@
 					r !== t.estimatedTimeRemaining && Math.abs(a.timer - r) > ue && (a.timer = r, a.timerDiff = r - t.timer, a.timerPausedAt = null), null !== a.timerPausedAt && a.timerPausedAt - a.timer > pe && (a.timerDiff = 0, a.timerPausedAt = null);
 					const n = ht.getPillLabel(e, a),
 						i = ht.isPillVisible(a.timer, e.overlayOpen, a.timerDiff);
-					return Object.assign({
+					return Object.assign(Object.assign({
 						estimatedTimeRemaining: r
-					}, a, {
+					}, a), {
 						streamId: s,
 						pillLabel: n,
 						previouslyVisible: t.visible,
@@ -2082,9 +2086,9 @@
 						className: Object(d.a)(rt.a.meterPillContainer, {
 							[rt.a.animateMeterInAndOut]: c && !l,
 							[rt.a.animateMeterInOnly]: c && l,
-							[rt.a.fillMeterCritical]: o === D.CRITICAL,
-							[rt.a.fillMeterLow]: o === D.LOW,
-							[rt.a.fillMeterNormal]: o === D.NORMAL || o === D.EXTENDED,
+							[rt.a.fillMeterCritical]: o === R.CRITICAL,
+							[rt.a.fillMeterLow]: o === R.LOW,
+							[rt.a.fillMeterNormal]: o === R.NORMAL || o === R.EXTENDED,
 							[rt.a.fillMeterFed]: m
 						}),
 						onClick: () => this.props.openGildModal()
@@ -2226,8 +2230,8 @@
 			};
 			var At = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
 				Vt = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
-				Dt = s("./src/reddit/components/PublicAccessNetwork/Theater/VotePanel/index.m.less"),
-				Rt = s.n(Dt);
+				Rt = s("./src/reddit/components/PublicAccessNetwork/Theater/VotePanel/index.m.less"),
+				Dt = s.n(Rt);
 			const Bt = Object(l.c)({
 				currentStream: (e, t) => {
 					let {
@@ -2255,14 +2259,14 @@
 				}
 				componentDidMount() {
 					const e = this.props.currentStream;
-					e && e.post.voteState && this.setState(Object.assign({}, this.state, {
+					e && e.post.voteState && this.setState(Object.assign(Object.assign({}, this.state), {
 						displayedVoteState: Object(kt.e)(e.post.voteState)
 					}))
 				}
 				componentDidUpdate(e) {
 					const t = this.props.currentStream,
 						s = e.currentStream;
-					t && (s && s.post.id === t.post.id || this.setState(Object.assign({}, this.state, {
+					t && (s && s.post.id === t.post.id || this.setState(Object.assign(Object.assign({}, this.state), {
 						displayedVoteState: null !== t.post.voteState ? Object(kt.e)(t.post.voteState) : kt.a.notVoted
 					})))
 				}
@@ -2271,12 +2275,12 @@
 					if (!e) return null;
 					const t = this.props.isLive ? e.continuous_watchers : e.unique_watchers;
 					return i.a.createElement("div", {
-						className: Rt.a.statsPanel
+						className: Dt.a.statsPanel
 					}, i.a.createElement("div", {
-						className: Rt.a.voteContainer
+						className: Dt.a.voteContainer
 					}, i.a.createElement("button", {
-						className: Object(d.a)(Rt.a.upButton, {
-							[Rt.a.activeVote]: this.isVoteActive(kt.a.upvoted)
+						className: Object(d.a)(Dt.a.upButton, {
+							[Dt.a.activeVote]: this.isVoteActive(kt.a.upvoted)
 						}),
 						onClick: this.onVoteUp,
 						value: "upvote",
@@ -2284,24 +2288,24 @@
 							hk: "4ijw7j"
 						})
 					}, i.a.createElement(Vt.b, {
-						className: Rt.a.voteIcon
+						className: Dt.a.voteIcon
 					})), i.a.createElement("p", {
-						className: Rt.a.votesCounter
+						className: Dt.a.votesCounter
 					}, Object(Nt.b)(this.upVotes()))), i.a.createElement("div", {
-						className: Rt.a.watchingContainer
+						className: Dt.a.watchingContainer
 					}, i.a.createElement("div", {
-						className: Rt.a.watchingCounter
+						className: Dt.a.watchingCounter
 					}, Object(Nt.b)(t)), i.a.createElement("p", {
-						className: Rt.a.watchingCaption
+						className: Dt.a.watchingCaption
 					}, this.props.isLive ? w.fbt._("Watching", null, {
 						hk: "2Fql0m"
 					}) : w.fbt._("Views", null, {
 						hk: "ixhZU"
 					}))), i.a.createElement("div", {
-						className: Rt.a.voteContainer
+						className: Dt.a.voteContainer
 					}, i.a.createElement("button", {
-						className: Object(d.a)(Rt.a.downButton, {
-							[Rt.a.activeVote]: this.isVoteActive(kt.a.downvoted)
+						className: Object(d.a)(Dt.a.downButton, {
+							[Dt.a.activeVote]: this.isVoteActive(kt.a.downvoted)
 						}),
 						onClick: this.onVoteDown,
 						value: "downvote",
@@ -2309,18 +2313,18 @@
 							hk: "1PcDeu"
 						})
 					}, i.a.createElement(At.b, {
-						className: Rt.a.voteIcon
+						className: Dt.a.voteIcon
 					})), i.a.createElement("p", {
-						className: Rt.a.votesCounter
+						className: Dt.a.votesCounter
 					}, Object(Nt.b)(this.downVotes()))))
 				}
 				vote(e) {
 					const t = this.props.currentStream;
 					if (t) {
-						if (e === this.state.displayedVoteState) return this.props.vote(t.post.id, kt.a.notVoted), void this.setState(Object.assign({}, this.state, {
+						if (e === this.state.displayedVoteState) return this.props.vote(t.post.id, kt.a.notVoted), void this.setState(Object.assign(Object.assign({}, this.state), {
 							displayedVoteState: kt.a.notVoted
 						}));
-						this.props.vote(t.post.id, e), this.setState(Object.assign({}, this.state, {
+						this.props.vote(t.post.id, e), this.setState(Object.assign(Object.assign({}, this.state), {
 							displayedVoteState: e
 						})), e === kt.a.upvoted ? this.props.onUpvote() : this.props.onDownvote()
 					}
@@ -2792,7 +2796,7 @@
 				hk: "3dG7Ks"
 			})), Vs = () => i.a.createElement(js, null, vs._("Broadcast paused", null, {
 				hk: "jxvku"
-			})), Ds = e => {
+			})), Rs = e => {
 				let {
 					onClickReplay: t,
 					onClickShare: s
@@ -2804,7 +2808,7 @@
 				}), i.a.createElement(ls, {
 					onClick: s
 				})))
-			}, Rs = e => {
+			}, Ds = e => {
 				let {
 					onClickAward: t
 				} = e;
@@ -3206,12 +3210,12 @@
 					if (m || !t && !a && !n && p) return null;
 					if (l) return i.a.createElement(As, null);
 					if (e && e.stream.state === fe.a.DISCONNECTED) return i.a.createElement(Vs, null);
-					if (v) return i.a.createElement(Ds, {
+					if (v) return i.a.createElement(Rs, {
 						onClickReplay: h,
 						onClickShare: this.onCopyLink
 					});
 					const w = e && e.meter && e.estimated_remaining_time < oe;
-					return u && w ? i.a.createElement(Rs, {
+					return u && w ? i.a.createElement(Ds, {
 						onClickAward: s
 					}) : null
 				}
@@ -3614,7 +3618,7 @@
 				})),
 				Ar = s("./src/reddit/components/PublicAccessNetwork/Theater/SwitchButtons/index.m.less"),
 				Vr = s.n(Ar);
-			const Dr = e => {
+			const Rr = e => {
 				let {
 					isNext: t,
 					onClick: s,
@@ -3643,11 +3647,11 @@
 					className: Vr.a.arrowIcon
 				})))
 			};
-			var Rr = e => i.a.createElement(i.a.Fragment, null, i.a.createElement(Dr, {
+			var Dr = e => i.a.createElement(i.a.Fragment, null, i.a.createElement(Rr, {
 					isNext: !1,
 					onClick: e.onPrevious,
 					stream: e.previousStream
-				}), i.a.createElement(Dr, {
+				}), i.a.createElement(Rr, {
 					isNext: !0,
 					onClick: e.onNext,
 					stream: e.nextStream
@@ -3680,18 +3684,18 @@
 					playbackState: ae.h,
 					previousStream: ae.j,
 					unavailableVideoUrl: re.o,
-					volume: te.c
+					volume: te.d
 				}),
 				Wr = Object(o.b)(Ur, (e, t) => ({
 					closeLocation: () => e(Object(c.b)(t.location.state[Y.a.CloseLocation])),
 					fetchBroadcasterProfileInfo: t => e(Object(I.d)(t, !0)),
 					fetchPostForStream: t => e(Object(L.a)(t)),
-					subscribeConfig: () => e(R.a.subscribeConfig(t.related || t.subreddit)),
-					subscribeStreams: () => e(R.a.subscribeStreams(t.related || t.subreddit)),
-					onRecommendedViewerSubredditsSubscribe: () => e(R.a.subscribeRecommendedViewerSubreddits()),
+					subscribeConfig: () => e(D.a.subscribeConfig(t.related || t.subreddit)),
+					subscribeStreams: () => e(D.a.subscribeStreams(t.related || t.subreddit)),
+					onRecommendedViewerSubredditsSubscribe: () => e(D.a.subscribeRecommendedViewerSubreddits()),
 					onReportModalRequested: (t, s) => e(Object(H.j)(t, s)),
-					onStatsSubscribe: t => e(R.a.subscribeStats(t)),
-					onHeartbeatSubscribe: t => e(R.a.subscribeHeartbeat(t)),
+					onStatsSubscribe: t => e(D.a.subscribeStats(t)),
+					onHeartbeatSubscribe: t => e(D.a.subscribeHeartbeat(t)),
 					receiveHlsStreamEnded: t => e(Object(p.a)(t)),
 					receiveHlsStreamRemoved: t => e(Object(p.b)(t)),
 					removeStreamFromHistory: t => e(M(t)),
@@ -3703,7 +3707,7 @@
 						isMuted: t
 					})),
 					setMutedInFeed: t => e(U.P(t)),
-					setVideoVolume: t => e(T.g(t)),
+					setVideoVolume: t => e(T.h(t)),
 					updateVideoTimestamp: (t, s) => e(V({
 						streamId: t,
 						timestamp: s
@@ -3729,7 +3733,7 @@
 						} = this.props;
 						!s && t && this.isCurrentStreamWatchable() && r(t.post.id, e)
 					}, N.p), this.onVideoPlayerPositionUpdate = e => {
-						this.state.videoCurrentTime !== e && (this.props.sendEvent(Object(z.p)(this.props.currentStream, Object.assign({}, this.getPlaybackStats(), {
+						this.state.videoCurrentTime !== e && (this.props.sendEvent(Object(z.p)(this.props.currentStream, Object.assign(Object.assign({}, this.getPlaybackStats()), {
 							scrubbingStartMs: this.convertToMs(this.state.videoCurrentTime),
 							scrubbingEndMs: this.convertToMs(e)
 						}))), this.setState({
@@ -3852,7 +3856,7 @@
 						isVodStreamJustFinished: !1
 					}), this.showStreamEndedPrompt()), this.state.isUnavailableVideoJustFinished && this.setState({
 						isUnavailableVideoJustFinished: !1
-					}), s || t || this.state.isLoading || this.state.isError || this.setState(Object.assign({}, this.state, {
+					}), s || t || this.state.isLoading || this.state.isError || this.setState(Object.assign(Object.assign({}, this.state), {
 						isError: !0
 					})), n && this.state.isVideoPaused && this.setState({
 						isVideoPaused: !0
@@ -3965,7 +3969,7 @@
 						postId: e.post.id,
 						sendEvent: h,
 						subredditId: e.post.subreddit.id
-					}))), e && !a && i.a.createElement(Rr, {
+					}))), e && !a && i.a.createElement(Dr, {
 						nextStream: l,
 						onNext: this.onNextStream,
 						onPrevious: this.onPreviousStream,
@@ -4042,7 +4046,7 @@
 					} = this.props;
 					if (this.pauseWatch(), this.setState({
 							isVideoPaused: !0
-						}), t) return a(!0), void this.setState(Object.assign({}, this.state, {
+						}), t) return a(!0), void this.setState(Object.assign(Object.assign({}, this.state), {
 						isLoading: !!e
 					}));
 					e && r(Object(z.s)(e, this.getPlaybackStats())), s !== ae.a.VOD || this.state.isVodStreamJustFinished || this.setState({
@@ -4052,7 +4056,7 @@
 					})
 				}
 				onPlayerError() {
-					this.props.sendEvent(Object(z.t)(this.props.currentStream, this.getPlaybackStats())), this.setState(Object.assign({}, this.state, {
+					this.props.sendEvent(Object(z.t)(this.props.currentStream, this.getPlaybackStats())), this.setState(Object.assign(Object.assign({}, this.state), {
 						isError: !0
 					}))
 				}
@@ -4086,7 +4090,7 @@
 				endTimers() {
 					const e = this.getWatchDurationTimer(this.state.id),
 						t = this.getSessionDurationTimer(this.state.id);
-					f.c.has(e) && f.c.end(e), f.c.has(t) && f.c.end(t), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearTimeout(this.minuteSessionTimer), this.fiveSecondSessionTimer = 0, this.fifteenSecondSessionTimer = 0, this.thirtySecondSessionTimer = 0, this.fortyfiveSecondSessionTimer = 0, this.minuteSessionTimer = 0
+					f.c.has(e) && f.c.end(e), f.c.has(t) && f.c.end(t), clearTimeout(this.fiveSecondSessionTimer), clearTimeout(this.fifteenSecondSessionTimer), clearTimeout(this.thirtySecondSessionTimer), clearTimeout(this.fortyfiveSecondSessionTimer), clearInterval(this.minuteSessionTimer)
 				}
 				getWatchDuration() {
 					let e = 0;
@@ -4156,7 +4160,7 @@
 							nextTopStream: s
 						} = this.props;
 						s && !e && !Object(ne.a)(t) && this.state.isSwitchingOnStreamEndedScheduled ? this.goToStream(s) : this.cancelSwitchingOnStreamEnded()
-					}, N.k), this.setState(Object.assign({}, this.state, {
+					}, N.k), this.setState(Object.assign(Object.assign({}, this.state), {
 						isSwitchingOnStreamEndedScheduled: !0
 					}))
 				}
@@ -4358,10 +4362,10 @@
 			const n = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.mb
-				}) === r.rb.Enabled
+					experimentName: r.ob
+				}) === r.tb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.f00db4f1f611b1ee72cb.js.map
+//# sourceMappingURL=PublicAccessNetwork.fe977abd20b075d6b694.js.map

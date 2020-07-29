@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.faf4f729b15ee0a13649.js
-// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.ea531255fd84a1e1a3e0.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -9,9 +9,9 @@
 			})), s.d(t, "a", (function() {
 				return m
 			})), s.d(t, "b", (function() {
-				return h
-			})), s.d(t, "d", (function() {
 				return b
+			})), s.d(t, "d", (function() {
+				return h
 			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/lodash/omit.js"),
@@ -42,8 +42,8 @@
 			const u = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return r => {
-					const o = b(r.target, r.currentTarget);
-					h(r.target, r.currentTarget, m.anchors) ? o && t && e(t(s, o)) : o && t && e(e => {
+					const o = h(r.target, r.currentTarget);
+					b(r.target, r.currentTarget, m.anchors) ? o && t && e(t(s, o)) : o && t && e(e => {
 						const n = t(s, o)(e);
 						let r;
 						if (n && n.actionInfo) {
@@ -53,10 +53,10 @@
 								} = e;
 							r = l(e, ["pageType"])
 						}
-						return Object.assign({}, n, {
+						return Object.assign(Object.assign({}, n), {
 							actionInfo: Object(a.previousPageActionInfo)(e, r)
 						})
-					}), h(r.target, r.currentTarget, m.anchorsAndButtons) && n(r)
+					}), b(r.target, r.currentTarget, m.anchorsAndButtons) && n(r)
 				}
 			});
 
@@ -83,10 +83,10 @@
 					buttons: ["BUTTON"],
 					anchors: ["A"]
 				},
-				h = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && h(e.parentElement, t, s)),
-				b = (e, t) => {
+				b = (e, t, s) => !s.includes(e.tagName) && (e === t || !!e.parentElement && b(e.parentElement, t, s)),
+				h = (e, t) => {
 					const s = e.dataset.clickId;
-					return s || (e === t ? null : !!e.parentElement && b(e.parentElement, t))
+					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
 				}
 		},
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, s) {
@@ -116,21 +116,21 @@
 				u = s("./src/lib/constants/index.ts"),
 				p = s("./src/reddit/components/DiscoveryUnit/Layout/index.tsx"),
 				m = s("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.tsx"),
-				h = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				b = s("./src/reddit/components/Widgets/Base/index.tsx"),
+				b = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				h = s("./src/reddit/components/Widgets/Base/index.tsx"),
 				g = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				f = s("./src/reddit/constants/experiments.ts"),
 				x = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				y = s("./src/reddit/selectors/user.ts");
-			const O = e => Object(y.E)(e) || f.ic.ShowTopContent === Object(x.c)(e, {
+				O = s("./src/reddit/selectors/user.ts");
+			const y = e => Object(O.E)(e) || f.mc.ShowTopContent === Object(x.c)(e, {
 				experimentEligibilitySelector: x.a,
-				experimentName: f.dc
+				experimentName: f.hc
 			});
 			var j = s("./src/reddit/selectors/subreddit.ts"),
 				v = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
 				C = s.n(v);
 			const k = Object(a.b)(() => Object(l.c)({
-				inSubredditTopContentExperiment: O,
+				inSubredditTopContentExperiment: y,
 				subredditUrl: j.d
 			}), e => ({
 				trackDiscoveryUnitView: t => e((e, s) => g.g(s(), t)),
@@ -170,12 +170,12 @@
 					const {
 						postIds: r,
 						range: o
-					} = s, i = "".concat(t).concat(u.O.TOP, "?t=").concat(o), a = c.a.createElement(b.a, {
+					} = s, i = "".concat(t).concat(u.O.TOP, "?t=").concat(o), a = c.a.createElement(h.a, {
 						className: C.a.widgetHeader
 					}, c.a.createElement("button", {
 						className: C.a.closeButton,
 						onClick: this.onCloseClick
-					}, c.a.createElement(h.b, {
+					}, c.a.createElement(b.b, {
 						className: C.a.closeIcon,
 						"data-redditstyle": !0
 					})), c.a.createElement(d.a, {
@@ -245,12 +245,12 @@
 				u = s("./src/reddit/connectors/PostViewable/index.ts"),
 				p = s("./src/reddit/models/Media/index.ts"),
 				m = s("./src/reddit/selectors/posts.ts"),
-				h = s("./src/reddit/selectors/video.ts"),
-				b = s("./src/lib/classNames/index.ts"),
+				b = s("./src/reddit/selectors/video.ts"),
+				h = s("./src/lib/classNames/index.ts"),
 				g = s("./src/higherOrderComponents/withClickTracking.tsx"),
 				f = s("./src/reddit/components/PostContainer/index.m.less"),
 				x = s.n(f);
-			const y = Object(o.c)({
+			const O = Object(o.c)({
 					basePixelMetadata: (e, t) => {
 						let {
 							post: s
@@ -267,7 +267,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(h.a)(e, {
+						return Object(b.a)(e, {
 							postId: s.id
 						})
 					},
@@ -275,7 +275,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(h.f)(e, {
+						return Object(b.f)(e, {
 							postId: s.id
 						})
 					},
@@ -283,12 +283,12 @@
 						let {
 							post: s
 						} = t;
-						return Object(h.c)(e, {
+						return Object(b.c)(e, {
 							postId: s.id
 						})
 					}
 				}),
-				O = Object(u.a)(y),
+				y = Object(u.a)(O),
 				j = e => {
 					const t = Object(g.d)(e.target, e.currentTarget),
 						s = Object(g.b)(e.target, e.currentTarget, g.a.buttons);
@@ -310,7 +310,7 @@
 						onPostContentClick: d,
 						style: u,
 						ref: m
-					} = this.props, h = r.a.createElement("div", {
+					} = this.props, b = r.a.createElement("div", {
 						style: u,
 						ref: m,
 						onMouseUp: e => {
@@ -321,7 +321,7 @@
 						onClick: s => {
 							!this.cancelClick && s.button < 2 && (e(() => a && a(s, c, t))(s), d && j(s) && d(s, c))
 						},
-						className: Object(b.a)(x.a.WrappedPost, n, "Post ".concat(c.id), {
+						className: Object(h.a)(x.a.WrappedPost, n, "Post ".concat(c.id), {
 							promotedlink: c.isSponsored
 						}),
 						id: o ? o(c.id) : c.id,
@@ -330,12 +330,12 @@
 					return c.isSponsored || g ? r.a.createElement(i.a, {
 						post: c,
 						trackDisplay: !0
-					}, h) : c.media && Object(p.E)(c.media) ? r.a.createElement(l, {
+					}, b) : c.media && Object(p.F)(c.media) ? r.a.createElement(l, {
 						postId: c.id
-					}, h) : h
+					}, b) : b
 				}
 			}
-			t.a = O(Object(g.c)(v))
+			t.a = y(Object(g.c)(v))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -357,8 +357,8 @@
 				u = s("./src/reddit/components/QuarantinedLabel/index.m.less"),
 				p = s.n(u);
 			const m = ["center", "top"],
-				h = ["center", "bottom"],
-				b = c.a.div("Container", p.a),
+				b = ["center", "bottom"],
+				h = c.a.div("Container", p.a),
 				g = Object(i.a)(a.b),
 				f = Object(d.t)({
 					isProfileListingPage: d.F
@@ -385,7 +385,7 @@
 					const {
 						showTooltip: t
 					} = this.state;
-					return o.a.createElement(b, {
+					return o.a.createElement(h, {
 						innerRef: this.setTooltipTargetRef,
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
@@ -400,7 +400,7 @@
 						isOpen: t,
 						tooltipTarget: this.tooltipTargetElement,
 						targetPosition: m,
-						tooltipPosition: h
+						tooltipPosition: b
 					}))
 				}
 			}
@@ -438,7 +438,7 @@
 					gallery: o.gallery(e, t, s),
 					post: o.post(e, t)
 				}, o.defaults(e)),
-				c = (e, t) => s => Object.assign({}, i(s, e, t), {
+				c = (e, t) => s => Object.assign(Object.assign({}, i(s, e, t)), {
 					action: n.c.VIEW,
 					noun: "media",
 					source: "gallery",
@@ -446,11 +446,11 @@
 				}),
 				a = (e, t, s) => c => {
 					const a = Object(r.a)(t);
-					return Object.assign({}, i(c, e, s), {
+					return Object.assign(Object.assign({}, i(c, e, s)), {
 						action: n.c.CLICK,
 						noun: "outbound_url",
 						source: "gallery",
-						media: Object.assign({}, o.media(c, e), {
+						media: Object.assign(Object.assign({}, o.media(c, e)), {
 							outboundUrl: t,
 							outboundDomain: a ? a.hostname : void 0
 						})
@@ -458,7 +458,7 @@
 				},
 				d = (e, t) => u(e, !0, t),
 				l = (e, t) => u(e, !1, t),
-				u = (e, t, s) => r => Object.assign({}, i(r, e, s), {
+				u = (e, t, s) => r => Object.assign(Object.assign({}, i(r, e, s)), {
 					action: n.c.CLICK,
 					noun: t ? "forward" : "backward",
 					source: "gallery"
@@ -555,4 +555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.faf4f729b15ee0a13649.js.map
+//# sourceMappingURL=SubredditTopContent.ea531255fd84a1e1a3e0.js.map

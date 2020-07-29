@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.626caba0adcd97ae04f0.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7ad072ae84c6d112ee2c.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -104,8 +104,8 @@
 				h = t("./src/reddit/components/TrackingHelper/index.tsx"),
 				g = t("./src/reddit/controls/Button/index.tsx"),
 				P = t("./src/reddit/helpers/trackers/goldPayment.ts"),
-				C = t("./node_modules/react-dom/index.js"),
-				b = t.n(C),
+				b = t("./node_modules/react-dom/index.js"),
+				C = t.n(b),
 				y = t("./node_modules/react-redux/es/index.js"),
 				k = t("./node_modules/reselect/es/index.js"),
 				v = t("./src/higherOrderComponents/makeAsync.tsx"),
@@ -116,7 +116,7 @@
 			const f = Object(k.c)({
 				isGild: e => !!Object(E.p)(e)
 			});
-			class N extends r.a.Component {
+			class j extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onPayment = () => this.props.createPayment(), this.onAuthorize = e => {
 						const {
@@ -132,7 +132,7 @@
 						className: e
 					} = this.props, a = paypalCheckout.Button.driver("react", {
 						React: r.a,
-						ReactDOM: b.a
+						ReactDOM: C.a
 					}), t = {
 						sandbox: o.a.paypal.apiKey,
 						production: o.a.paypal.apiKey
@@ -155,7 +155,7 @@
 					}))
 				}
 			}
-			const j = Object(y.b)(f, (e, a) => ({
+			const N = Object(y.b)(f, (e, a) => ({
 				createPayment: () => "coinPackage" in a ? e(Object(w.e)(a.coinPackage)) : "awardId" in a ? e(Object(_.d)(a.awardId, a.pennies, a.thingId)) : void 0,
 				executePayment: (t, s) => {
 					if ("coinPackage" in a) {
@@ -163,9 +163,9 @@
 						e(Object(w.f)(s, a.coinPackage))
 					} else "awardId" in a && e(Object(_.c)(s))
 				}
-			}))(N);
+			}))(j);
 			var M = Object(v.a)({
-					getComponent: () => Object(x.c)().then(() => j),
+					getComponent: () => Object(x.c)().then(() => N),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -424,8 +424,8 @@
 				h = t("./src/reddit/constants/colors.ts"),
 				g = t("./src/reddit/helpers/correlationIdTracker.ts"),
 				P = t("./src/reddit/helpers/trackers/goldPayment.ts"),
-				C = t("./src/reddit/models/User/index.ts"),
-				b = t("./src/reddit/selectors/gild.ts"),
+				b = t("./src/reddit/models/User/index.ts"),
+				C = t("./src/reddit/selectors/gild.ts"),
 				y = t("./src/reddit/selectors/gold/giveAwards.ts"),
 				k = t("./src/reddit/selectors/goldPurchaseModals.ts"),
 				v = t("./src/reddit/selectors/platform.ts"),
@@ -435,8 +435,8 @@
 				_ = t("./src/reddit/components/PennyPurchaseModal/index.m.less"),
 				f = t.n(_);
 
-			function N() {
-				return (N = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var a = 1; a < arguments.length; a++) {
 						var t = arguments[a];
 						for (var s in t) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s])
@@ -444,7 +444,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = Object(c.c)({
+			const N = Object(c.c)({
 					activePage: k.n,
 					allowNavigationCallback: e => {
 						const a = Object(v.a)(e);
@@ -452,7 +452,7 @@
 					},
 					coinBalance: x.d,
 					gildThingId: k.p,
-					isIframed: b.h,
+					isIframed: C.h,
 					nightmode: x.S,
 					savedCardsPending: k.t,
 					selectedAward: y.a,
@@ -462,10 +462,10 @@
 					paypalErrorMessage: k.b,
 					userName: e => {
 						const a = Object(x.i)(e);
-						return "u/".concat(Object(C.e)(a))
+						return "u/".concat(Object(b.e)(a))
 					}
 				}),
-				M = Object(r.b)(j, (e, a) => ({
+				M = Object(r.b)(N, (e, a) => ({
 					closeModal: () => {
 						e(Object(p.a)()), e(Object(l.a)())
 					},
@@ -474,7 +474,7 @@
 					dispatchCompletePurchase: (a, t) => {
 						e(Object(p.e)(a, t))
 					}
-				}), (e, a, t) => Object.assign({}, e, a, t, {
+				}), (e, a, t) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), a), t), {
 					onCompletePurchaseClick: t => a.dispatchCompletePurchase(t, e.isIframed)
 				}));
 			class O extends n.a.Component {
@@ -570,7 +570,7 @@
 						paddingTop: 12,
 						paddingBottom: 12
 					} : {});
-					return n.a.createElement(T, N({}, this.props, {
+					return n.a.createElement(T, j({}, this.props, {
 						className: Object(i.a)(this.props.className, f.a.pennyPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -583,4 +583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.626caba0adcd97ae04f0.js.map
+//# sourceMappingURL=PennyPurchaseModal.7ad072ae84c6d112ee2c.js.map

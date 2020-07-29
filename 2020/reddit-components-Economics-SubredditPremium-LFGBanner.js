@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.e7d3855055fdc78b80c5.js
-// Retrieved at 7/9/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.99a89e3ece4622ea4545.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, s) {
@@ -223,10 +223,10 @@
 			}
 			var x = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				E = s("./src/reddit/contexts/ApiContext.tsx"),
-				C = s("./src/reddit/controls/Button/index.tsx"),
-				w = s("./src/reddit/endpoints/economics/banners.ts"),
-				j = s("./src/reddit/endpoints/economics/emojis.ts"),
-				O = s("./src/reddit/helpers/economics/membershipPage.ts"),
+				j = s("./src/reddit/controls/Button/index.tsx"),
+				O = s("./src/reddit/endpoints/economics/banners.ts"),
+				C = s("./src/reddit/endpoints/economics/emojis.ts"),
+				w = s("./src/reddit/helpers/economics/membershipPage.ts"),
 				N = s("./src/reddit/helpers/governanceErrorText/index.ts"),
 				S = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				k = s("./src/reddit/models/Toast/index.ts"),
@@ -251,7 +251,7 @@
 					src: e.img
 				}), r.a.createElement("div", {
 					className: F.a.description
-				}, e.description), r.a.createElement(C.n, {
+				}, e.description), r.a.createElement(j.n, {
 					className: F.a.button,
 					onClick: e.onClaim
 				}, e.cta))
@@ -363,7 +363,7 @@
 						hk: "1siPoi"
 					})), r.a.createElement(H.TransitionMotion, {
 						defaultStyles: [{
-							key: Object(G.d)(Object.assign({}, this.state, {
+							key: Object(G.d)(Object.assign(Object.assign({}, this.state), {
 								style: "color"
 							})),
 							style: {
@@ -371,7 +371,7 @@
 							}
 						}],
 						styles: [{
-							key: Object(G.d)(Object.assign({}, this.state, {
+							key: Object(G.d)(Object.assign(Object.assign({}, this.state), {
 								style: "color"
 							})),
 							style: {
@@ -495,13 +495,13 @@
 						onClick: () => {
 							e.onChange(t), e.sendEvent(s => {
 								const n = B.defaults(s);
-								return Object.assign({
+								return Object.assign(Object.assign({
 									source: "meta",
 									action: "click",
 									noun: "lfg_banner_customize_badge",
 									correlationId: e.correlationId
-								}, n, {
-									actionInfo: Object.assign({}, n.actionInfo, {
+								}, n), {
+									actionInfo: Object.assign(Object.assign({}, n.actionInfo), {
 										paneName: de.get(e.type),
 										reason: t
 									}),
@@ -583,7 +583,7 @@
 							onToggleDropdown: () => this.setState(e => ({
 								visibleDropdown: e.visibleDropdown ? void 0 : "playerType"
 							}))
-						}), r.a.createElement(C.f, {
+						}), r.a.createElement(j.f, {
 							className: he.a.button,
 							disabled: !s || !a || !i,
 							onClick: () => {
@@ -591,12 +591,12 @@
 									platform: s,
 									playerType: a,
 									region: i
-								}), this.props.sendEvent(e => Object.assign({
+								}), this.props.sendEvent(e => Object.assign(Object.assign({
 									source: "meta",
 									action: "click",
 									noun: "lfg_banner_generate_badge",
 									correlationId: this.props.correlationId
-								}, B.defaults(e), {
+								}, B.defaults(e)), {
 									subreddit: B.subreddit(e)
 								})))
 							}
@@ -623,7 +623,7 @@
 						} = this.state;
 						if (!(n && a && r && s && t !== P.a.DontKnow)) return null;
 						const i = "".concat(n, "_").concat(a, "_").concat(r, "_badge"),
-							o = await Object(j.a)(this.props.apiContext(), {
+							o = await Object(C.a)(this.props.apiContext(), {
 								productId: i,
 								subredditId: this.props.subredditId
 							});
@@ -631,15 +631,15 @@
 							show: ue.Claimed
 						}), this.props.onDismissBanner(), this.props.onBadgeClaimed(i)) : this.props.onError(o.error), e && this.props.onOpenLandingPage(s, this.correlationId), this.props.sendEvent(t => {
 							const s = B.defaults(t);
-							return Object.assign({
+							return Object.assign(Object.assign({
 								source: "meta",
 								action: "click",
 								noun: e && this.correlationId ? "lfg_banner_claim_premium" : "lfg_banner_claim",
 								correlationId: this.correlationId
-							}, s, {
-								actionInfo: Object.assign({}, s.actionInfo, {
+							}, s), {
+								actionInfo: Object.assign(Object.assign({}, s.actionInfo), {
 									reason: i,
-									paneName: w.a.LFG
+									paneName: O.a.LFG
 								}),
 								subreddit: B.subreddit(t)
 							})
@@ -651,14 +651,14 @@
 							show: ue.Dismissed
 						}), this.props.sendEvent(e => {
 							const t = B.defaults(e);
-							return Object.assign({
+							return Object.assign(Object.assign({
 								source: "meta",
 								action: "click",
 								noun: "lfg_banner_dismiss",
 								correlationId: this.correlationId
-							}, t, {
-								actionInfo: Object.assign({}, t.actionInfo, {
-									paneName: w.a.LFG
+							}, t), {
+								actionInfo: Object.assign(Object.assign({}, t.actionInfo), {
+									paneName: O.a.LFG
 								}),
 								subreddit: B.subreddit(e)
 							})
@@ -668,14 +668,14 @@
 							show: ue.Select
 						}), this.props.onUndismissBanner(), this.props.sendEvent(e => {
 							const t = B.defaults(e);
-							return Object.assign({
+							return Object.assign(Object.assign({
 								source: "meta",
 								action: "click",
 								noun: "lfg_banner_undo_dismiss",
 								correlationId: this.correlationId
-							}, t, {
-								actionInfo: Object.assign({}, t.actionInfo, {
-									paneName: w.a.LFG
+							}, t), {
+								actionInfo: Object.assign(Object.assign({}, t.actionInfo), {
+									paneName: O.a.LFG
 								}),
 								subreddit: B.subreddit(e)
 							})
@@ -695,14 +695,14 @@
 						show: ue.Select
 					}), this.props.sendEvent(e => {
 						const t = B.defaults(e);
-						return Object.assign({
+						return Object.assign(Object.assign({
 							source: "meta",
 							action: "view",
 							noun: "lfg_banner",
 							correlationId: this.correlationId
-						}, t, {
-							actionInfo: Object.assign({}, t.actionInfo, {
-								paneName: w.a.LFG
+						}, t), {
+							actionInfo: Object.assign(Object.assign({}, t.actionInfo), {
+								paneName: O.a.LFG
 							}),
 							subreddit: B.subreddit(e)
 						})
@@ -726,7 +726,7 @@
 						className: _e.a.dismissedText
 					}, n.fbt._("Ok, we won't show you this again.", null, {
 						hk: "4z33KK"
-					})), r.a.createElement(C.f, {
+					})), r.a.createElement(j.f, {
 						onClick: this.handleUndoDismiss
 					}, n.fbt._("undo", null, {
 						hk: "1A9z3Y"
@@ -773,7 +773,7 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(P.g)(e, s, w.a.LFG)
+						return Object(P.g)(e, s, O.a.LFG)
 					},
 					subreddit: (e, t) => {
 						let {
@@ -795,7 +795,7 @@
 					subredditId: s
 				} = t;
 				return {
-					onDismissBanner: () => e(Object(l.a)(s, w.a.LFG)),
+					onDismissBanner: () => e(Object(l.a)(s, O.a.LFG)),
 					onError: t => e(Object(u.e)({
 						duration: 5e3,
 						kind: k.b.Error,
@@ -806,9 +806,9 @@
 						e(Object(m.c)(s, t))
 					},
 					onOpenLandingPage: (t, s) => {
-						e(Object(o.b)(Object(O.a)(t.name, s)))
+						e(Object(o.b)(Object(w.a)(t.name, s)))
 					},
-					onUndismissBanner: () => e(Object(l.c)(s, w.a.LFG))
+					onUndismissBanner: () => e(Object(l.c)(s, O.a.LFG))
 				}
 			})(xe))
 		},
@@ -881,7 +881,7 @@
 			}
 			async function d(e, t, s, a) {
 					const r = await c(e, t),
-						i = Object.assign({}, r, {
+						i = Object.assign(Object.assign({}, r), {
 							[s]: a
 						});
 					return (await o(e, t, n.UpsellBanners, i)).ok ? i : r
@@ -977,4 +977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Economics-SubredditPremium-LFGBanner.e7d3855055fdc78b80c5.js.map
+//# sourceMappingURL=reddit-components-Economics-SubredditPremium-LFGBanner.99a89e3ece4622ea4545.js.map

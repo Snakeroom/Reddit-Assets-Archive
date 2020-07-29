@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.8cd36273ae57cd2006cb.js
-// Retrieved at 7/20/2020, 11:00:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.5b291555fe3fcd8c1c27.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -513,28 +513,28 @@
 				u = t("./src/lib/loadRedditAdsPixel.ts"),
 				h = t("./src/reddit/components/TrackingHelper/index.tsx"),
 				g = t("./src/reddit/helpers/correlationIdTracker.ts"),
-				f = t("./src/reddit/helpers/trackers/goldPayment.ts");
-			const b = "coins_marketing",
+				b = t("./src/reddit/helpers/trackers/goldPayment.ts");
+			const f = "coins_marketing",
 				k = function(e) {
 					let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-					return Object.assign({}, Object(f.h)(e, a), {
+					return Object.assign(Object.assign({}, Object(b.h)(e, a)), {
 						correlationId: Object(g.d)(g.a.GoldPayment, !1)
 					})
 				},
-				E = () => e => Object.assign({}, k(e), {
-					source: b,
+				E = () => e => Object.assign(Object.assign({}, k(e)), {
+					source: f,
 					action: "click",
 					noun: "get_coins"
 				}),
-				N = e => a => Object.assign({}, k(a, {
+				N = e => a => Object.assign(Object.assign({}, k(a, {
 					packageId: e
-				}), {
-					source: b,
+				})), {
+					source: f,
 					action: "click",
 					noun: "coins_package"
 				}),
-				v = () => e => Object.assign({}, k(e), {
-					source: b,
+				v = () => e => Object.assign(Object.assign({}, k(e)), {
+					source: f,
 					action: "click",
 					noun: "get_premium"
 				});
@@ -579,7 +579,7 @@
 						featuredLabel: p,
 						images: u,
 						pennies: h
-					} = t, g = "$".concat(h / 100), f = m.toLocaleString(), b = s ? u.marketing["4x"].url : u.marketing["2x"].url, k = o > 0 && "".concat(o.toLocaleString(), "%"), E = n.fbt._("bonus", null, {
+					} = t, g = "$".concat(h / 100), b = m.toLocaleString(), f = s ? u.marketing["4x"].url : u.marketing["2x"].url, k = o > 0 && "".concat(o.toLocaleString(), "%"), E = n.fbt._("bonus", null, {
 						hk: "L8mcp"
 					}), N = s ? G.a.large : "", v = r !== m, _ = i !== h;
 					return l.a.createElement("div", {
@@ -587,7 +587,7 @@
 					}, l.a.createElement("div", {
 						className: Object(S.a)(N, G.a.imageContainer)
 					}, l.a.createElement("img", {
-						src: b
+						src: f
 					}), p && l.a.createElement("div", {
 						className: G.a.badge
 					}, p), k && l.a.createElement("div", {
@@ -606,7 +606,7 @@
 						className: G.a.priceCoinIcon
 					}), l.a.createElement("div", null, l.a.createElement("div", {
 						className: G.a.priceValue
-					}, f), v ? l.a.createElement("div", {
+					}, b), v ? l.a.createElement("div", {
 						className: Object(S.a)(G.a.priceCurrency, G.a.crossout)
 					}, n.fbt._("{Non-sale number of coins} Coins", [n.fbt._param("Non-sale number of coins", r.toLocaleString())], {
 						hk: "26szgy"
@@ -979,4 +979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Coins.8cd36273ae57cd2006cb.js.map
+//# sourceMappingURL=Coins.5b291555fe3fcd8c1c27.js.map

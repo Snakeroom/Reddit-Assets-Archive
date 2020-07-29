@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.fa0af1cc0dee6231e7ce.js
-// Retrieved at 7/16/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.3eb9f4107b4c29e69005.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -688,7 +688,7 @@
 							e.target.classList && e.target.classList.contains("md-spoiler-text") && (e.target.dataset.revealed = !0), n && n(e)
 						})(t, e.onNavigate, e.onClick)
 					},
-					style: Object.assign({}, e.style, {
+					style: Object.assign(Object.assign({}, e.style), {
 						"--RawHTMLDisplay-tr-even": Object(r.g)(Object(d.a)(e).body, .8),
 						"--RawHTMLDisplay-tr-odd": Object(r.g)(Object(d.a)(e).line, .8)
 					})
@@ -815,8 +815,8 @@
 					var {
 						border: t,
 						small: n,
-						type: s
-					} = e, i = x(e, ["border", "small", "type"]);
+						buttonType: s
+					} = e, i = x(e, ["border", "small", "buttonType"]);
 					const l = a.a.createElement(a.a.Fragment, null, a.a.createElement("span", {
 							className: m.a.UnsubscribeButtonDefault
 						}, "subreddit" === s ? r.fbt._("Joined", null, {
@@ -834,12 +834,10 @@
 							[m.a.isSmall]: n
 						});
 					return t ? a.a.createElement(o.i, h({}, i, {
-						className: c,
-						children: l
-					})) : a.a.createElement(o.n, h({}, i, {
-						className: c,
-						children: l
-					}))
+						className: c
+					}), l) : a.a.createElement(o.n, h({}, i, {
+						className: c
+					}), l)
 				}, "UnsubscribeButton", m.a),
 				O = e => {
 					var {
@@ -882,7 +880,7 @@
 						small: s
 					};
 					return this.props.userIsSubscriber ? a.a.createElement(O, h({}, i, {
-						type: this.props.identifier.type
+						buttonType: this.props.identifier.type
 					})) : a.a.createElement(k, h({}, i, {
 						id: r
 					}), this.props.children, Object(d.a)({
@@ -1803,4 +1801,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.fa0af1cc0dee6231e7ce.js.map
+//# sourceMappingURL=Multireddit.3eb9f4107b4c29e69005.js.map

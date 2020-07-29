@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.8a94880fb27b81f253e5.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.ccff52d1bb1353437992.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -266,8 +266,8 @@
 				g = s("./src/reddit/endpoints/economics/banners.ts"),
 				h = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				f = s("./src/reddit/models/Badge/managementPage.ts"),
-				_ = s("./src/reddit/selectors/economics.ts"),
-				j = s("./src/reddit/selectors/subreddit.ts"),
+				j = s("./src/reddit/selectors/economics.ts"),
+				_ = s("./src/reddit/selectors/subreddit.ts"),
 				x = s("./src/reddit/selectors/telemetry.ts"),
 				y = s("./node_modules/fbt/lib/FbtPublic.js"),
 				w = s("./src/reddit/icons/svgs/Admin/index.tsx"),
@@ -317,7 +317,7 @@
 					let {
 						subreddit: s
 					} = t;
-					return Object(_.s)(e, s.id)
+					return Object(j.s)(e, s.id)
 				}
 			});
 			var M = Object(m.c)(Object(a.b)(L)((function(e) {
@@ -339,12 +339,12 @@
 					}), r.a.createElement(I.a, {
 						className: W.a.link,
 						to: Object(A.a)(e.subreddit.name, e.correlationId),
-						onClick: () => e.sendEvent(t => Object.assign({
+						onClick: () => e.sendEvent(t => Object.assign(Object.assign({
 							source: "meta",
 							action: "click",
 							noun: "new_user_welcome_learn_more",
 							correlationId: e.correlationId
-						}, x.defaults(t), {
+						}, x.defaults(t)), {
 							subreddit: x.subreddit(t)
 						}))
 					}, y.fbt._("You can learn more here", null, {
@@ -368,12 +368,12 @@
 						(await Object(H.a)(this.props.apiContext(), {
 							productId: z,
 							subredditId: this.props.subredditId
-						})).ok && (this.props.onBadgeApplied(), this.props.sendEvent(e => Object.assign({
+						})).ok && (this.props.onBadgeApplied(), this.props.sendEvent(e => Object.assign(Object.assign({
 							source: "meta",
 							action: "click",
 							noun: "new_user_welcome_claim_badge",
 							correlationId: this.props.correlationId
-						}, x.defaults(e), {
+						}, x.defaults(e)), {
 							subreddit: x.subreddit(e)
 						})))
 					}
@@ -446,12 +446,12 @@
 						eligibleForBanner: t,
 						subreddit: s
 					} = this.props;
-					return s && this.props.userIsSubscribed && this.state.userWasUnsubscribed && !1 === this.props.bannerIsDismissed && t ? (this.hasFiredViewEvent || (this.hasFiredViewEvent = !0, this.props.sendEvent(e => Object.assign({
+					return s && this.props.userIsSubscribed && this.state.userWasUnsubscribed && !1 === this.props.bannerIsDismissed && t ? (this.hasFiredViewEvent || (this.hasFiredViewEvent = !0, this.props.sendEvent(e => Object.assign(Object.assign({
 						source: "meta",
 						action: "view",
 						noun: "new_user_welcome",
 						correlationId: this.correlationId
-					}, x.defaults(e), {
+					}, x.defaults(e)), {
 						subreddit: x.subreddit(e)
 					}))), r.a.createElement("article", {
 						className: Object(d.a)(X.a.container, e)
@@ -478,7 +478,7 @@
 			const $ = Object(c.c)({
 					bannerIsDismissed: (e, t) => {
 						const s = Object(p.m)(e, t);
-						return s ? Object(_.g)(e, s, g.a.NewUserWelcome) : void 0
+						return s ? Object(j.g)(e, s, g.a.NewUserWelcome) : void 0
 					},
 					eligibleForBanner: (e, t) => {
 						const s = e.user.account,
@@ -486,7 +486,7 @@
 						if (!s) return !1;
 						if (Object(p.N)(e, t) !== u.g.Large) return !1;
 						if (n) {
-							const t = Object(_.f)(e, n.id)[f.a.Achievement];
+							const t = Object(j.f)(e, n.id)[f.a.Achievement];
 							if (t && t.type === z) return !1
 						}
 						return !0
@@ -494,7 +494,7 @@
 					subreddit: p.q,
 					userIsSubscribed: (e, t) => {
 						const s = Object(p.q)(e, t);
-						return !!s && Object(j.cb)(e, {
+						return !!s && Object(_.cb)(e, {
 							identifier: {
 								name: s.name,
 								type: "subreddit"
@@ -593,8 +593,8 @@
 							n = this.props.scrollRange[1],
 							a = r()(e, s, n),
 							c = Math.min(Math.floor((a - s) / (n - s) * 1e3), 999);
-						return Object.assign({}, t, {
-							styles: Object.assign({}, t.styles, {
+						return Object.assign(Object.assign({}, t), {
+							styles: Object.assign(Object.assign({}, t.styles), {
 								animationDelay: "-".concat(c, "s")
 							})
 						})
@@ -655,7 +655,7 @@
 			}
 			async function d(e, t, s, r) {
 					const a = await o(e, t),
-						c = Object.assign({}, a, {
+						c = Object.assign(Object.assign({}, a), {
 							[s]: r
 						});
 					return (await i(e, t, n.UpsellBanners, c)).ok ? c : a
@@ -870,9 +870,9 @@
 			})), s.d(t, "i", (function() {
 				return f
 			})), s.d(t, "j", (function() {
-				return _
-			})), s.d(t, "p", (function() {
 				return j
+			})), s.d(t, "p", (function() {
+				return _
 			})), s.d(t, "q", (function() {
 				return x
 			})), s.d(t, "o", (function() {
@@ -952,11 +952,11 @@
 				f = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				_ = (e, t) => {
+				j = (e, t) => {
 					const s = Object(n.m)(e, t);
 					return s && e.subreddits.gov.releaseNotes[s] || o
 				},
-				j = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				_ = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				y = (e, t) => {
 					const s = C(e, t);
@@ -1012,4 +1012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.8a94880fb27b81f253e5.js.map
+//# sourceMappingURL=SubredditPremiumNewUserWelcome.ccff52d1bb1353437992.js.map

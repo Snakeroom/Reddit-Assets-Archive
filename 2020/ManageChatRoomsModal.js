@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.92aa4c01b268bdedac6b.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.1a1f8a728b8f81819b43.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ManageChatRoomsModal"], {
 		"./node_modules/lodash/_basePullAt.js": function(e, t, n) {
@@ -197,7 +197,7 @@
 				v = (i.a.wrapped(C.a, "Toggle", _.a), i.a.ol("List", _.a)),
 				w = i.a.li("ListItem", _.a),
 				I = i.a.span("ErrorMarker", _.a),
-				D = e => s.a.createElement("button", {
+				O = e => s.a.createElement("button", {
 					className: e.className,
 					type: "button",
 					onClick: e.onChange,
@@ -205,28 +205,28 @@
 					"aria-checked": e.checked
 				}, e.checked ? s.a.createElement(g.b, null) : s.a.createElement(g.a, null));
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js");
-			var L = n("./src/higherOrderComponents/asTooltip.tsx"),
-				y = n("./src/reddit/actions/tooltip.ts"),
-				O = n("./src/reddit/controls/Dropdown/index.tsx"),
-				j = n("./src/reddit/controls/Dropdown/Row.tsx"),
+			var j = n("./src/higherOrderComponents/asTooltip.tsx"),
+				D = n("./src/reddit/actions/tooltip.ts"),
+				L = n("./src/reddit/controls/Dropdown/index.tsx"),
+				y = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				T = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				R = n("./src/reddit/selectors/tooltip.ts"),
 				A = n("./src/reddit/components/ManageChatRoomsModal/_DomainFilterDropDown.m.less"),
 				N = n.n(A);
 			const B = i.a.button("DropdownTarget", N.a),
-				P = i.a.wrapped(j.b, "DropdownRow", N.a),
+				P = i.a.wrapped(y.b, "DropdownRow", N.a),
 				F = i.a.wrapped(T.b, "DropdownTriangle", N.a),
 				U = Object(r.c)({
 					isOpen: (e, t) => Object(R.b)(t.id)(e)
 				}),
 				H = Object(o.b)(U, (e, t) => ({
 					openDropdown: () => {
-						e(Object(y.h)({
+						e(Object(D.h)({
 							tooltipId: t.id
 						}))
 					}
 				})),
-				W = Object(L.a)(O.a);
+				W = Object(j.a)(L.a);
 			var K = H(e => s.a.createElement(s.a.Fragment, null, s.a.createElement(B, {
 					type: "button",
 					id: e.id,
@@ -272,7 +272,7 @@
 				de = n("./src/reddit/components/ManageChatRoomsModal/ChannelForm.m.less"),
 				ce = n.n(de);
 			const ue = i.a.wrapped(I, "ErrorMarker", ce.a),
-				me = i.a.wrapped(D, "Checkbox", ce.a),
+				me = i.a.wrapped(O, "Checkbox", ce.a),
 				he = Object(r.c)({
 					channelNames: ie.d,
 					subredditChannel: (e, t) => {
@@ -323,36 +323,36 @@
 							} = this.props,
 							s = a && a.name,
 							o = ae(t, n, s);
-						this.setState(e => Object.assign({}, e, {
+						this.setState(e => Object.assign(Object.assign({}, e), {
 							doesNameExistError: o,
-							subredditChannel: Object.assign({}, e.subredditChannel, {
+							subredditChannel: Object.assign(Object.assign({}, e.subredditChannel), {
 								name: t
 							})
 						}))
 					}, this.onDescriptionAreaChange = e => {
 						const t = e.currentTarget.value;
-						this.setState(e => Object.assign({}, e, {
-							subredditChannel: Object.assign({}, e.subredditChannel, {
+						this.setState(e => Object.assign(Object.assign({}, e), {
+							subredditChannel: Object.assign(Object.assign({}, e.subredditChannel), {
 								description: t
 							})
 						}))
 					}, this.onCheckboxChange = e => {
 						e.preventDefault(), e.stopPropagation();
 						const t = this.state.subredditChannel.type === re.c.Private ? re.c.Public : re.c.Private;
-						this.setState(e => Object.assign({}, e, {
-							subredditChannel: Object.assign({}, e.subredditChannel, {
+						this.setState(e => Object.assign(Object.assign({}, e), {
+							subredditChannel: Object.assign(Object.assign({}, e.subredditChannel), {
 								type: t
 							})
 						}))
 					}, this.onSelectMinimumAcctAge = e => {
-						this.setState(t => Object.assign({}, t, {
-							subredditChannel: Object.assign({}, t.subredditChannel, {
+						this.setState(t => Object.assign(Object.assign({}, t), {
+							subredditChannel: Object.assign(Object.assign({}, t.subredditChannel), {
 								minimumAcctAge: e.value
 							})
 						}))
 					}, this.onSelectNewMemberAge = e => {
-						this.setState(t => Object.assign({}, t, {
-							subredditChannel: Object.assign({}, t.subredditChannel, {
+						this.setState(t => Object.assign(Object.assign({}, t), {
+							subredditChannel: Object.assign(Object.assign({}, t.subredditChannel), {
 								newMemberAge: e.value
 							})
 						}))
@@ -403,7 +403,7 @@
 						e.preventDefault(), this.isValid() && (this.props.isEditing ? this.onEditChannel() : this.onCreateChannel())
 					}, this.props.sendEvent(Object(se.k)()), this.state = {
 						doesNameExistError: !1,
-						subredditChannel: Object.assign({}, re.b, this.props.subredditChannel)
+						subredditChannel: Object.assign(Object.assign({}, re.b), this.props.subredditChannel)
 					}
 				}
 				render() {
@@ -554,8 +554,8 @@
 				we = n("./src/reddit/components/ManageChatRoomsModal/Listing.m.less"),
 				Ie = n.n(we);
 			const {
-				fbt: De
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Le = i.a.wrapped(V.h, "ModalHeader", Ie.a), ye = i.a.wrapped(Se.b, "SubredditChannelList", Ie.a), Oe = i.a.button("ModalHeadButton", Ie.a), je = Object(r.c)({
+				fbt: Oe
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), je = i.a.wrapped(V.h, "ModalHeader", Ie.a), De = i.a.wrapped(Se.b, "SubredditChannelList", Ie.a), Le = i.a.button("ModalHeadButton", Ie.a), ye = Object(r.c)({
 				isModerator: ve.e
 			});
 			class Te extends s.a.Component {
@@ -568,24 +568,24 @@
 							subredditId: a
 						}
 					} = this;
-					return s.a.createElement("div", null, s.a.createElement(Le, null, s.a.createElement(V.p, null, De._("Rooms", null, {
+					return s.a.createElement("div", null, s.a.createElement(je, null, s.a.createElement(V.p, null, Oe._("Rooms", null, {
 						hk: "TpZ9p"
-					})), n && s.a.createElement(ke.a, null, s.a.createElement(Oe, {
+					})), n && s.a.createElement(ke.a, null, s.a.createElement(Le, {
 						onClick: t
-					}, s.a.createElement(Me.a, null), De._("Settings", null, {
+					}, s.a.createElement(Me.a, null), Oe._("Settings", null, {
 						hk: "r8zYB"
-					})), s.a.createElement(Oe, {
+					})), s.a.createElement(Le, {
 						onClick: e
-					}, De._("+ Add room", null, {
+					}, Oe._("+ Add room", null, {
 						hk: "2nISIO"
-					})))), a && s.a.createElement(ye, {
+					})))), a && s.a.createElement(De, {
 						subredditId: a,
 						onAddChannel: e,
 						parentContext: Se.a.Modal
 					}))
 				}
 			}
-			var Re = Object(o.b)(je)(Te),
+			var Re = Object(o.b)(ye)(Te),
 				Ae = n("./src/reddit/actions/chat/subredditSettings.ts");
 			var Ne = e => {
 					let {
@@ -726,7 +726,7 @@
 							l = a.regexes ? [...a.regexes] : [],
 							i = We()(l, e => e.id !== n);
 						t({
-							settings: Object.assign({}, a, {
+							settings: Object.assign(Object.assign({}, a), {
 								regexes: [Ze(e, r, n), ...i]
 							})
 						})
@@ -745,7 +745,7 @@
 						}
 					} = this, o = s ? [...s] : [], r = We()(o, e => e.id !== n);
 					t({
-						settings: Object.assign({}, a, {
+						settings: Object.assign(Object.assign({}, a), {
 							regexes: r
 						})
 					})
@@ -853,7 +853,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ot = i.a.wrapped(D, "Checkbox", at.a);
+			const ot = i.a.wrapped(O, "Checkbox", at.a);
 			var rt;
 			! function(e) {
 				e[e.ALLOWED_DOMAINS = 0] = "ALLOWED_DOMAINS", e[e.BANNED_WORDS = 1] = "BANNED_WORDS", e[e.REGEX_RULES = 2] = "REGEX_RULES"
@@ -892,14 +892,14 @@
 					}, this.onRateLimitChange = e => {
 						const t = Number(e.currentTarget.value);
 						t > 0 && this.setState(e => ({
-							settings: Object.assign({}, e.settings, {
+							settings: Object.assign(Object.assign({}, e.settings), {
 								rateLimit: t
 							})
 						}))
 					}, this.onUseDefaultProfanityFilterChange = () => {
 						const e = !this.state.settings.useDefaultProfanityFilter;
 						this.setState(t => ({
-							settings: Object.assign({}, t.settings, {
+							settings: Object.assign(Object.assign({}, t.settings), {
 								useDefaultProfanityFilter: e
 							})
 						}))
@@ -921,7 +921,7 @@
 						settings: t,
 						subredditId: n
 					} = e;
-					!this.state.receivedProps && t && n === t.subredditId && this.setState(e => Object.assign({}, e, {
+					!this.state.receivedProps && t && n === t.subredditId && this.setState(e => Object.assign(Object.assign({}, e), {
 						receivedProps: !0,
 						settings: Object.assign({}, t)
 					}))
@@ -930,35 +930,35 @@
 					this.setState(dt.resetSubScreen)
 				}
 				onUpdateState(e) {
-					this.setState(t => Object.assign({}, t, dt.resetSubScreen(t), {
-						settings: Object.assign({}, t.settings, e.settings)
+					this.setState(t => Object.assign(Object.assign(Object.assign({}, t), dt.resetSubScreen(t)), {
+						settings: Object.assign(Object.assign({}, t.settings), e.settings)
 					}))
 				}
 				static resetSubScreen(e) {
-					return Object.assign({}, e, {
+					return Object.assign(Object.assign({}, e), {
 						settingsSubScreen: void 0,
 						selectedRegexId: void 0
 					})
 				}
 				onShowEditBannedWords() {
-					this.setState(e => Object.assign({}, e, {
+					this.setState(e => Object.assign(Object.assign({}, e), {
 						settingsSubScreen: rt.BANNED_WORDS
 					}))
 				}
 				onShowEditRegexRules(e) {
-					this.setState(t => Object.assign({}, t, {
+					this.setState(t => Object.assign(Object.assign({}, t), {
 						selectedRegexId: e,
 						settingsSubScreen: rt.REGEX_RULES
 					}))
 				}
 				onShowEditDomains() {
-					this.setState(e => Object.assign({}, e, {
+					this.setState(e => Object.assign(Object.assign({}, e), {
 						settingsSubScreen: rt.ALLOWED_DOMAINS
 					}))
 				}
 				onSelectDomainFilter(e) {
-					this.setState(t => Object.assign({}, t, {
-						settings: Object.assign({}, t.settings, {
+					this.setState(t => Object.assign(Object.assign({}, t), {
+						settings: Object.assign(Object.assign({}, t.settings), {
 							domainFilterOption: e.value
 						})
 					}))
@@ -1397,11 +1397,11 @@
 				v = n("./src/reddit/selectors/chat.ts"),
 				w = n("./src/reddit/selectors/subreddit.ts"),
 				I = n("./src/reddit/selectors/subredditChannel.ts"),
-				D = n("./src/reddit/components/SubredditChannelList/index.m.less"),
-				L = n.n(D);
+				O = n("./src/reddit/components/SubredditChannelList/index.m.less"),
+				j = n.n(O);
 			const {
-				fbt: y
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), O = d.a.wrapped(g.g, "ModalFormItem", L.a), j = d.a.wrapped(_.f, "PrimaryButton", L.a), T = d.a.wrapped(g.o, "ModalText", L.a), R = d.a.a("ItemLink", L.a), A = d.a.p("Detail", L.a), N = d.a.p("DescText", L.a), B = d.a.div("Title", L.a), P = d.a.div("Header", L.a), F = d.a.wrapped(S.a, "ChatIcon", L.a), U = d.a.wrapped(M.a, "PlanetIcon", L.a), H = d.a.wrapped(f.a, "Pencil", L.a), W = d.a.wrapped(e => {
+				fbt: D
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), L = d.a.wrapped(g.g, "ModalFormItem", j.a), y = d.a.wrapped(_.f, "PrimaryButton", j.a), T = d.a.wrapped(g.o, "ModalText", j.a), R = d.a.a("ItemLink", j.a), A = d.a.p("Detail", j.a), N = d.a.p("DescText", j.a), B = d.a.div("Title", j.a), P = d.a.div("Header", j.a), F = d.a.wrapped(S.a, "ChatIcon", j.a), U = d.a.wrapped(M.a, "PlanetIcon", j.a), H = d.a.wrapped(f.a, "Pencil", j.a), W = d.a.wrapped(e => {
 				let {
 					className: t
 				} = e;
@@ -1414,7 +1414,7 @@
 				}, r.a.createElement("path", {
 					d: "M30.7205152,44.3911599 L31.8223802,44.3911599 C32.9364596,44.3911599 33.8428946,45.2673804 33.8428946,46.3443238 C33.8428946,46.6873548 33.5548926,46.9657568 33.2000329,46.9657568 L29.3428625,46.9657568 C28.9880028,46.9657568 28.7000008,46.6873548 28.7000008,46.3443238 C28.7000008,45.2673804 29.6064358,44.3911599 30.7205152,44.3911599 Z M32.7044508,42.3845527 C32.7044508,43.1482939 32.0615891,43.7697269 31.271512,43.7697269 C30.4814349,43.7697269 29.8385732,43.1482939 29.8385732,42.3845527 C29.8385732,41.6208116 30.4814349,41 31.271512,41 C32.0615891,41 32.7044508,41.6208116 32.7044508,42.3845527 Z M35.8634091,47.1254029 L36.9652741,47.1254029 C38.0793535,47.1254029 38.9857885,48.0016234 38.9857885,49.0785668 C38.9857885,49.4215978 38.6977865,49.6999998 38.3429268,49.6999998 L34.4857564,49.6999998 C34.1308967,49.6999998 33.8428946,49.4215978 33.8428946,49.0785668 C33.8428946,48.0016234 34.7493297,47.1254029 35.8634091,47.1254029 Z M37.8473447,45.1187958 C37.8473447,45.8825369 37.2044829,46.5039699 36.4144059,46.5039699 C35.6243288,46.5039699 34.9814671,45.8825369 34.9814671,45.1187958 C34.9814671,44.3550546 35.6243288,43.734243 36.4144059,43.734243 C37.2044829,43.734243 37.8473447,44.3550546 37.8473447,45.1187958 Z"
 				})))
-			}, "Group", L.a), K = d.a.wrapped(e => {
+			}, "Group", j.a), K = d.a.wrapped(e => {
 				let {
 					className: t
 				} = e;
@@ -1425,7 +1425,7 @@
 				}, r.a.createElement("path", {
 					d: "M10.224 7.109c-.623.623-1.709.623-2.332 0a1.652 1.652 0 0 1 0-2.332 1.64 1.64 0 0 1 1.166-.483c.44 0 .855.172 1.166.483a1.652 1.652 0 0 1 0 2.332m.915-3.247A2.923 2.923 0 0 0 9.06 3c-.787 0-1.525.306-2.082.862a2.946 2.946 0 0 0-.403 3.65l-1.76 1.761-.812.811v.001L4 10.087l-.81.81a.646.646 0 0 0 0 .915l.81.811h.001l.27.27a.643.643 0 0 0 .916 0 .648.648 0 0 0 0-.914l-.271-.27a.502.502 0 0 1 0-.708.512.512 0 0 1 .709 0l.27.27a.648.648 0 0 0 .915-.915l-.624-.625L7.49 8.427a2.924 2.924 0 0 0 3.65-.403 2.945 2.945 0 0 0 0-4.162"
 				}))
-			}, "Key", L.a), V = d.a.wrapped(b.b, "SubredditIcon", L.a), G = d.a.button("EditButton", L.a), z = d.a.button("ShowAllLink", L.a), Z = d.a.span("ChannelName", L.a), X = d.a.div("HeaderText", L.a);
+			}, "Key", j.a), V = d.a.wrapped(b.b, "SubredditIcon", j.a), G = d.a.button("EditButton", j.a), z = d.a.button("ShowAllLink", j.a), Z = d.a.span("ChannelName", j.a), X = d.a.div("HeaderText", j.a);
 			var J;
 			! function(e) {
 				e[e.Modal = 0] = "Modal", e[e.Widget = 1] = "Widget"
@@ -1538,7 +1538,7 @@
 					const d = this.displayChannelsList();
 					return r.a.createElement("div", {
 						className: e
-					}, d.length ? r.a.createElement(O, null, d.map((e, t) => r.a.createElement(R, {
+					}, d.length ? r.a.createElement(L, null, d.map((e, t) => r.a.createElement(R, {
 						key: "item-link-".concat(t),
 						href: this.getLinkURL(e),
 						target: c.c.BLANK,
@@ -1562,10 +1562,10 @@
 						key: "item-header-text-".concat(t)
 					}, r.a.createElement(A, {
 						key: "item-detail-".concat(t)
-					}, o.name, y._({
+					}, o.name, D._({
 						"*": "• {number} Members",
 						_1: "• 1 Member"
-					}, [y._plural(e.membersCount, "number")], {
+					}, [D._plural(e.membersCount, "number")], {
 						hk: "4bUTpG"
 					})), r.a.createElement(Z, {
 						key: "channel-name-".concat(t)
@@ -1579,15 +1579,15 @@
 					}, e.description))), this.displayShowAllLink() && r.a.createElement(z, {
 						type: "button",
 						onClick: () => this.onShowAllClick()
-					}, y._("See more", null, {
+					}, D._("See more", null, {
 						hk: "lhTm0"
-					}))) : n ? r.a.createElement(O, null, r.a.createElement(T, null, y._("Create your first room and get your community chatting in real time.", null, {
+					}))) : n ? r.a.createElement(L, null, r.a.createElement(T, null, D._("Create your first room and get your community chatting in real time.", null, {
 						hk: "2zKL0L"
-					})), r.a.createElement(j, {
+					})), r.a.createElement(y, {
 						onClick: a || i
-					}, y._("+ Add room", null, {
+					}, D._("+ Add room", null, {
 						hk: "2vBAvZ"
-					}))) : r.a.createElement(O, null, r.a.createElement(T, null, y._("There are no joined chatrooms yet", null, {
+					}))) : r.a.createElement(L, null, r.a.createElement(T, null, D._("There are no joined chatrooms yet", null, {
 						hk: "3n65KN"
 					}))))
 				}
@@ -1788,4 +1788,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ManageChatRoomsModal.92aa4c01b268bdedac6b.js.map
+//# sourceMappingURL=ManageChatRoomsModal.1a1f8a728b8f81819b43.js.map

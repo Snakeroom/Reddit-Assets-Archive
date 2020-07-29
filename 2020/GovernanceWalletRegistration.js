@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.93e9be3b40c99fac97eb.js
-// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.e629ed6c0e7e0e8dd716.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -88,7 +88,7 @@
 			})), n.d(t, "c", (function() {
 				return y
 			})), n.d(t, "f", (function() {
-				return N
+				return _
 			})), n.d(t, "g", (function() {
 				return S
 			})), n.d(t, "d", (function() {
@@ -118,12 +118,12 @@
 				x = Object(s.a)(v.c),
 				k = Object(s.a)(v.e),
 				y = (Object(s.a)(v.f), Object(s.a)(v.g), Object(s.a)(v.h)),
-				w = Object(s.a)(v.i),
-				j = Object(s.a)(v.j),
+				j = Object(s.a)(v.i),
+				w = Object(s.a)(v.j),
 				E = Object(s.a)(v.k),
-				_ = Object(s.a)(v.q),
-				N = Object(s.a)(v.r),
-				O = Object(s.a)(v.s),
+				O = Object(s.a)(v.q),
+				_ = Object(s.a)(v.r),
+				N = Object(s.a)(v.s),
 				I = Object(s.a)(v.t),
 				M = Object(s.a)(v.u),
 				P = Object(s.a)(v.v),
@@ -135,7 +135,7 @@
 							gqlContext: i
 						} = s,
 						l = a().polls.models[e];
-					if (n(j({
+					if (n(w({
 							pollId: e
 						})), (r = l.type === b.a.GA ? await Object(d.c)(i(), e, t) : await Object(d.b)(o(), l.subredditId, e, t)).ok) {
 						if (l.type === b.a.GA) {
@@ -155,7 +155,7 @@
 							} = l, t = s.posts.models[e];
 							t && t.voteState === h.a.notVoted && n(Object(c.db)(e))
 						}
-					} else n(w({
+					} else n(j({
 						pollId: e,
 						error: r.error || r.errors[0].message
 					})), Object(f.a)(n, r.error || r.errors[0].messsage)
@@ -163,7 +163,7 @@
 					let {
 						apiContext: d
 					} = c;
-					n(O());
+					n(N());
 					const m = s().transfers.communityPoints.contentId || void 0,
 						b = await
 					function(e, t) {
@@ -177,10 +177,10 @@
 							endpoint: "".concat(l.a.metaUrl, "/wallets/me/").concat(t.subredditId, "/transfers"),
 							method: "post"
 						})
-					}(d(), Object.assign({}, e, {
+					}(d(), Object.assign(Object.assign({}, e), {
 						contentId: m
 					}));
-					b.ok ? (n(I(Object.assign({}, b.body, {
+					b.ok ? (n(I(Object.assign(Object.assign({}, b.body), {
 						subredditId: e.subredditId
 					}))), n(Object(i.e)({
 						kind: p.b.SuccessCommunity,
@@ -189,7 +189,7 @@
 						})), a.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(o.f)())) : (n(_({
+					})), t && n(Object(o.f)())) : (n(O({
 						error: b.error
 					})), Object(f.a)(n, b.error))
 				}, T = e => async (t, n, a) => {
@@ -494,9 +494,9 @@
 				},
 				y = n("./src/reddit/icons/svgs/Link/index.tsx");
 			const {
-				fbt: w
+				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class j extends s.a.Component {
+			class w extends s.a.Component {
 				componentDidMount() {
 					this.intervalId = window.setInterval(() => {
 						Object(l.c)() && (this.props.onNextStep(), window.clearInterval(this.intervalId))
@@ -513,11 +513,11 @@
 						className: C.a.text
 					}, s.a.createElement("div", {
 						className: C.a.header
-					}, w._("Connect Reddit to MetaMask", null, {
+					}, j._("Connect Reddit to MetaMask", null, {
 						hk: "1uL476"
 					})), s.a.createElement("div", {
 						className: C.a.body
-					}, w._("This will allow Reddit to see your wallet’s public key and allow Reddit to request your signature on messages and transactions.", null, {
+					}, j._("This will allow Reddit to see your wallet’s public key and allow Reddit to request your signature on messages and transactions.", null, {
 						hk: "1IBG48"
 					}))), s.a.createElement("div", {
 						className: C.a.cta
@@ -529,7 +529,7 @@
 					}), s.a.createElement(g.i, {
 						className: C.a.button,
 						onClick: l.b
-					}, w._("Connect", null, {
+					}, j._("Connect", null, {
 						hk: "3rApnz"
 					}), s.a.createElement(y.a, {
 						className: C.a.buttonIcon
@@ -537,8 +537,8 @@
 				}
 			}
 			var E = n("./src/chat/icons/svgs/Refresh/index.tsx"),
-				_ = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				N = e => s.a.createElement("svg", {
+				O = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				_ = e => s.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 16 16",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -547,7 +547,7 @@
 					clipRule: "evenodd",
 					d: "M10.5554 7.77144L7.88871 10.4381C7.81404 10.5128 7.71652 10.5493 7.619 10.5493C7.52224 10.5493 7.42471 10.5128 7.35004 10.4381L4.68338 7.77144C4.57443 7.66249 4.54166 7.49868 4.60109 7.3562C4.65976 7.21449 4.79843 7.12077 4.95233 7.12077H6.44338V5.06896C6.44338 4.85868 6.61404 4.68801 6.82433 4.68801H8.41443C8.62471 4.68801 8.79538 4.85868 8.79538 5.06896V7.12077H10.2857C10.4403 7.12077 10.579 7.21449 10.6377 7.3562C10.6971 7.49868 10.6643 7.66249 10.5554 7.77144M7.61926 1.14285C4.04821 1.14285 1.14307 4.048 1.14307 7.61904C1.14307 11.1893 4.04821 14.0952 7.61926 14.0952C11.1903 14.0952 14.0954 11.1893 14.0954 7.61904C14.0954 4.048 11.1903 1.14285 7.61926 1.14285"
 				})),
-				O = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
+				N = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const {
 				fbt: I
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = "https://metamask.io/", P = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
@@ -571,7 +571,7 @@
 						className: C.a.header
 					}, I._("Install the MetaMask Browser Extension", null, {
 						hk: "3MOJpi"
-					}), t && s.a.createElement(_.a, {
+					}), t && s.a.createElement(O.a, {
 						className: C.a.installedCheckmark
 					})), s.a.createElement("div", {
 						className: C.a.body
@@ -606,7 +606,7 @@
 						className: C.a.buttonIcon
 					})) : e ? s.a.createElement(g.f, {
 						className: C.a.button,
-						onClick: O.a
+						onClick: N.a
 					}, I._("Reload page", null, {
 						hk: "14fa9z"
 					}), s.a.createElement(E.a, {
@@ -620,7 +620,7 @@
 						})
 					}, I._("Get Extension", null, {
 						hk: "ey9hD"
-					}), s.a.createElement(N, {
+					}), s.a.createElement(_, {
 						className: C.a.buttonIcon
 					}))))
 				}
@@ -907,12 +907,12 @@
 						} = this.state;
 						if (e === Z.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
 							const t = m.defaults(e);
-							return Object.assign({
+							return Object.assign(Object.assign({
 								source: "meta",
 								action: "complete",
 								noun: "wallet_registration",
 								correlationId: this.correlationId
-							}, t, {
+							}, t), {
 								subreddit: m.subreddit(e)
 							})
 						});
@@ -921,7 +921,7 @@
 							activeTab: t
 						}), this.sendViewTabEvent(t)
 					}, this.correlationId = p()();
-					const t = Object(O.b)(e.pageLayer);
+					const t = Object(N.b)(e.pageLayer);
 					this.state = {
 						activeTab: t && Object(l.e)() ? Z.Wallet : Z.About
 					}
@@ -932,13 +932,13 @@
 				sendViewTabEvent(e) {
 					this.props.sendEvent(t => {
 						const n = m.defaults(t);
-						return Object.assign({
+						return Object.assign(Object.assign({
 							source: "meta",
 							action: "view",
 							noun: "wallet_registration",
 							correlationId: this.correlationId
-						}, n, {
-							actionInfo: Object.assign({}, n.actionInfo, {
+						}, n), {
+							actionInfo: Object.assign(Object.assign({}, n.actionInfo), {
 								paneName: e + ""
 							}),
 							subreddit: m.subreddit(t)
@@ -954,7 +954,7 @@
 						token: r
 					} = this.props, {
 						activeTab: c
-					} = this.state, i = c === Z.About ? k : c === Z.MetaMask ? R : c === Z.Wallet ? X : c === Z.Connect ? j : c === Z.Verify ? F : L;
+					} = this.state, i = c === Z.About ? k : c === Z.MetaMask ? R : c === Z.Wallet ? X : c === Z.Connect ? w : c === Z.Verify ? F : L;
 					return s.a.createElement("article", {
 						className: Object(o.a)(Q.a.container, e)
 					}, s.a.createElement(Y.a, {
@@ -1192,7 +1192,7 @@
 			}
 			async function d(e, t, n, s) {
 					const r = await i(e, t),
-						o = Object.assign({}, r, {
+						o = Object.assign(Object.assign({}, r), {
 							[n]: s
 						});
 					return (await c(e, t, a.UpsellBanners, o)).ok ? o : r
@@ -1281,7 +1281,7 @@
 					endpoint: "".concat(r.a.metaUrl, "/polls/").concat(t, "/").concat(n, "/votes/me/").concat(a)
 				})
 			}
-			const m = (e, t, n) => Object(c.a)(e, Object.assign({}, o, {
+			const m = (e, t, n) => Object(c.a)(e, Object.assign(Object.assign({}, o), {
 				variables: {
 					input: {
 						postId: t,
@@ -1294,7 +1294,7 @@
 				return Object(l.a)(Object(i.a)(e, [d.a]), {
 					method: "get",
 					endpoint: "".concat(e.apiUrl, "/by_id/").concat(t, ".json")
-				}).then(e => e.ok ? Object.assign({}, e, {
+				}).then(e => e.ok ? Object.assign(Object.assign({}, e), {
 					body: {
 						title: s()(e.body, ["data", "children", 0, "data", "title"], ""),
 						url: s()(e.body, ["data", "children", 0, "data", "permalink"], "")
@@ -1323,7 +1323,7 @@
 							a = {
 								[t.subredditId]: n
 							};
-						return Object.assign({}, e, {
+						return Object.assign(Object.assign({}, e), {
 							body: a
 						})
 					}
@@ -1339,7 +1339,7 @@
 					endpoint: "".concat(a.a.metaUrl, "/wallets/").concat(t.subredditId),
 					method: s.db.POST,
 					data: t.userIds
-				}).then(e => e.ok ? Object.assign({}, e, {
+				}).then(e => e.ok ? Object.assign(Object.assign({}, e), {
 					body: {
 						wallets: e.body
 					}
@@ -1584,17 +1584,17 @@
 			})), n.d(t, "l", (function() {
 				return y
 			})), n.d(t, "m", (function() {
-				return w
-			})), n.d(t, "s", (function() {
 				return j
+			})), n.d(t, "s", (function() {
+				return w
 			})), n.d(t, "a", (function() {
 				return E
 			})), n.d(t, "f", (function() {
-				return _
-			})), n.d(t, "r", (function() {
-				return N
-			})), n.d(t, "n", (function() {
 				return O
+			})), n.d(t, "r", (function() {
+				return _
+			})), n.d(t, "n", (function() {
+				return N
 			})), n.d(t, "k", (function() {
 				return I
 			}));
@@ -1613,7 +1613,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const a = j(e, {
+					const a = w(e, {
 						subredditId: n
 					});
 					return a && a.extra && a.extra.contracts && a.extra.contracts.harberger ? a.extra.contracts.harberger : {
@@ -1663,26 +1663,26 @@
 				C = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				k = (e, t) => {
-					const n = N(e, t);
+					const n = _(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
 				y = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				w = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				j = (e, t) => {
-					const n = w(e, t);
+				j = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				w = (e, t) => {
+					const n = j(e, t);
 					return n && n.walletProvider
 				},
 				E = (e, t) => {
-					const n = j(e, t),
-						a = w(e, t);
+					const n = w(e, t),
+						a = j(e, t);
 					return n && n.provider || a && a.provider
 				},
-				_ = (e, t) => {
+				O = (e, t) => {
 					const n = E(e, t);
 					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
-				N = (e, t) => {
-					const n = j(e, t),
+				_ = (e, t) => {
+					const n = w(e, t),
 						a = E(e, t);
 					if (n && !n.inTransition && a === s.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
@@ -1698,11 +1698,11 @@
 						image: o.image
 					}
 				},
-				O = (e, t) => {
+				N = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
-					const a = j(e, {
+					const a = w(e, {
 						subredditId: n
 					});
 					return a && a.extra && a.extra.contracts && a.extra.contracts.subscriptions ? a.extra.contracts.subscriptions : {
@@ -1710,10 +1710,10 @@
 					}
 				},
 				I = (e, t) => {
-					const n = w(e, t);
+					const n = j(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.93e9be3b40c99fac97eb.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.e629ed6c0e7e0e8dd716.js.map

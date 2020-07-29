@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.44001459b3c0ddc3d72c.js
-// Retrieved at 7/16/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.64e5221f0d0fb5d4e609.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -58,15 +58,15 @@
 				h = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				g = s("./src/reddit/controls/InternalLink/index.tsx"),
 				x = s("./src/reddit/controls/Search/RelatedSubredditMetaData.tsx"),
-				_ = s("./src/reddit/helpers/name/index.ts"),
-				P = s("./src/reddit/models/Flair/index.ts"),
-				O = s("./src/reddit/models/Theme/index.ts"),
+				O = s("./src/reddit/helpers/name/index.ts"),
+				_ = s("./src/reddit/models/Flair/index.ts"),
+				P = s("./src/reddit/models/Theme/index.ts"),
 				j = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				C = s("./src/reddit/components/MiniCardPost/index.m.less"),
 				f = s.n(C),
 				v = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.m.less"),
 				y = s.n(v);
-			const k = e => e.type === P.f.Spoiler,
+			const k = e => e.type === _.f.Spoiler,
 				N = Object(h.t)();
 			t.a = N(Object(u.a)(Object(c.a)(e => {
 				const {
@@ -75,7 +75,7 @@
 					innerContainerClassName: c,
 					onPostClick: u,
 					trendingPost: h,
-					trendingSearch: P,
+					trendingSearch: _,
 					shouldOpenPost: C,
 					showSubredditMeta: v = !0,
 					showSubredditName: N,
@@ -83,17 +83,17 @@
 					trackPostView: S
 				} = e;
 				Object(a.useEffect)(() => {
-					S && S(P)
-				}, [S, P]);
+					S && S(_)
+				}, [S, _]);
 				const w = h && h.preview && h.preview.url || void 0,
 					D = h && h.isSponsored ? "promoted_trend" : "trending",
 					U = h && Object(l.a)(h.permalink) || "",
-					E = C && U || P && Object(o.a)("/search", {
-						q: P.rawQuery,
+					E = C && U || _ && Object(o.a)("/search", {
+						q: _.rawQuery,
 						source: D
 					}) || U,
-					I = P ? P.subredditInfo && P.subredditInfo.icon : T && T.icon.url,
-					L = P ? P.subredditInfo && P.subredditInfo.displayText : T && (T.displayText || T.name),
+					I = _ ? _.subredditInfo && _.subredditInfo.icon : T && T.icon.url,
+					L = _ ? _.subredditInfo && _.subredditInfo.displayText : T && (T.displayText || T.name),
 					V = h ? h.flair.filter(k) : [],
 					W = h ? h.score : 0,
 					A = h ? h.numComments : 0,
@@ -109,7 +109,7 @@
 					}, i.a.createElement("div", {
 						className: Object(d.a)(y.a.backgroundWrapper, f.a.backgroundWrapper, t),
 						style: {
-							background: Object(O.g)(Object(j.a)(e).body, w || Object(j.a)(e).banner.backgroundImage, "cover"),
+							background: Object(P.g)(Object(j.a)(e).body, w || Object(j.a)(e).banner.backgroundImage, "cover"),
 							"--SearchDiscoveryUnits-TrendingPosts-Post-background": R
 						}
 					}, F && i.a.createElement("div", {
@@ -143,7 +143,7 @@
 						className: y.a.metaLine
 					}, N && L && i.a.createElement("span", {
 						className: y.a.meta
-					}, Object(_.b)(L)), i.a.createElement("span", {
+					}, Object(O.b)(L)), i.a.createElement("span", {
 						className: y.a.meta
 					}, r.fbt._({
 						"*": "{number} points",
@@ -220,19 +220,19 @@
 					}))))
 				}
 			}
-			var _ = Object(a.b)(null, e => ({
+			var O = Object(a.b)(null, e => ({
 					fireAdPixelsOfType: (t, s) => e(Object(l.C)(t, s)),
 					trackPostView: t => e((e, s) => b.L(s(), t)),
 					trackPostClick: t => e((e, s) => b.E(s(), t, b.a.POPULAR_CAROUSEL))
 				}))(x),
-				P = s("./src/reddit/contexts/ApiContext.tsx"),
-				O = s("./src/reddit/selectors/trending.ts"),
+				_ = s("./src/reddit/contexts/ApiContext.tsx"),
+				P = s("./src/reddit/selectors/trending.ts"),
 				j = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Container/index.tsx"),
 				C = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx");
 			const {
 				fbt: f
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = Object(a.b)(() => Object(i.c)({
-				trendingItems: O.a
+				trendingItems: P.a
 			}), e => ({
 				fetchTrendingItems: () => e(Object(o.b)())
 			}));
@@ -255,13 +255,13 @@
 						className: this.props.className,
 						header: e,
 						showCardView: this.props.showCardView
-					}, n.a.createElement(_, {
+					}, n.a.createElement(O, {
 						styleCustomizations: this.props.trendingPostCustomizations,
 						trendingSearches: t
 					}))
 				}
 			}
-			t.default = Object(P.b)(v(y))
+			t.default = Object(_.b)(v(y))
 		},
 		"./src/reddit/connectors/miniCardPost.ts": function(e, t, s) {
 			"use strict";
@@ -318,7 +318,7 @@
 						tooltipId: t
 					}))
 				}
-			}, (e, t, s) => Object.assign({}, s, e, t, {
+			}, (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, s), e), t), {
 				onFlairChanged: s => {
 					let {
 						previewFlair: r,
@@ -337,4 +337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.44001459b3c0ddc3d72c.js.map
+//# sourceMappingURL=Trending.64e5221f0d0fb5d4e609.js.map

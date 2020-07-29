@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/schedulePickerModal.adab891e85120153a697.js
-// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/schedulePickerModal.556dafa134eed310072d.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["schedulePickerModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -107,7 +107,7 @@
 			class g extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = e => {
-						const t = Object.assign({}, v(this.props.value), e),
+						const t = Object.assign(Object.assign({}, v(this.props.value)), e),
 							{
 								year: n,
 								month: s,
@@ -453,8 +453,8 @@
 					}
 				},
 				j = l.a.div("Container", f.a),
-				I = l.a.div("Content", f.a),
-				O = l.a.div("TitleRow", f.a),
+				O = l.a.div("Content", f.a),
+				I = l.a.div("TitleRow", f.a),
 				y = l.a.hr("Hr", f.a),
 				M = l.a.wrapped(E.a, "TimeInput", f.a),
 				w = l.a.div("TimeSelectionRow", f.a),
@@ -584,7 +584,7 @@
 					const {
 						shouldShowSubmitTime: e
 					} = this.props, t = this.getValidationError();
-					return o.a.createElement(j, null, o.a.createElement(I, null, o.a.createElement(O, null, s.fbt._("When is the event?", null, {
+					return o.a.createElement(j, null, o.a.createElement(O, null, o.a.createElement(I, null, s.fbt._("When is the event?", null, {
 						hk: "2fTD7f"
 					})), o.a.createElement(w, null, s.fbt._("{start time}{to}{end time}", [s.fbt._param("start time", o.a.createElement("fieldset", null, o.a.createElement("legend", null, s.fbt._("Start time", null, {
 						hk: "3nqplI"
@@ -666,4 +666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=schedulePickerModal.adab891e85120153a697.js.map
+//# sourceMappingURL=schedulePickerModal.556dafa134eed310072d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.705b37076ac2e4435ff0.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.ed40aa21c1d372326f25.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -217,8 +217,8 @@
 						hk: "4e4dcC"
 					})), r.a.createElement("p", {
 						className: _.a.introText
-					}, n ? a.fbt._("Hi {username}! Now that you’ve been a redditor for a while, take this one minute survey and let us know what you think.", [a.fbt._param("username", n.displayText || "there")], {
-						hk: "1XuOwr"
+					}, n ? a.fbt._("Hi {username}, take this one-minute survey and let us know what you think.", [a.fbt._param("username", n.displayText || "there")], {
+						hk: "4Fp8eT"
 					}) : a.fbt._("Hi! Now that you’ve been a redditor for a while, take this one minute survey and let us know what you think.", null, {
 						hk: "1PnKyn"
 					})), r.a.createElement(h.f, {
@@ -263,8 +263,8 @@
 					}, t.follow_up_question), r.a.createElement(f.s, {
 						className: _.a.textArea,
 						value: s,
-						placeholder: a.fbt._("Share your thoughts", null, {
-							hk: "LkEws"
+						placeholder: a.fbt._("Share your thoughts (Optional)", null, {
+							hk: "2uAPqk"
 						}),
 						maxLength: 240,
 						onChange: o
@@ -355,8 +355,8 @@
 					textResponse: f
 				}), {
 					isLeavingModalShowing: O,
-					onClose: w,
-					onLeaveCancel: T,
+					onClose: T,
+					onLeaveCancel: w,
 					onLeaveConfirm: L
 				} = Object(m.a)({
 					activeSurvey: t,
@@ -379,15 +379,15 @@
 					modalText: a.fbt._("If you don't finish the survey, your feedback won't be submitted.", null, {
 						hk: "377HNX"
 					}),
-					onConfirm: T,
+					onConfirm: w,
 					onCancel: L,
-					onClose: T
+					onClose: w
 				}), r.a.createElement("div", {
 					className: b,
 					onTransitionEnd: x
 				}, r.a.createElement(l.a, {
 					className: _.a.closeBtn,
-					onClick: w
+					onClick: T
 				}), r.a.createElement("div", {
 					className: _.a.surveyContent
 				}, -1 === v ? r.a.createElement(E, {
@@ -430,4 +430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SurveyAsync.705b37076ac2e4435ff0.js.map
+//# sourceMappingURL=SurveyAsync.ed40aa21c1d372326f25.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.84ce09e1dbcf4bb5034f.js
-// Retrieved at 7/13/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.dcbee88e8bdefafb35dc.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -331,7 +331,7 @@
 						error: new Error(le)
 					}
 				}, me = async (e, t) => {
-					const a = await Object(ae.q)(e, t.file);
+					const a = await Object(ae.r)(e, t.file);
 					if (!a.ok) {
 						const e = new Error("Error uploading award imagine to S3 temp bucket: ".concat(a.error && a.error.type));
 						return ee.c.captureException(e), {
@@ -1570,7 +1570,7 @@
 			class f extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = e => {
-						const t = Object.assign({}, C(this.props.value), e),
+						const t = Object.assign(Object.assign({}, C(this.props.value)), e),
 							{
 								year: a,
 								month: n,
@@ -2030,4 +2030,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.84ce09e1dbcf4bb5034f.js.map
+//# sourceMappingURL=AwardCreationModal.dcbee88e8bdefafb35dc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.6c569da3be98d2f3722d.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.1e0a238e47d20c2427a4.js
+// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -88,7 +88,7 @@
 					subredditOrProfile: n
 				}), r.a.createElement(x, null, n.displayText)))
 			});
-			var S = e => {
+			var g = e => {
 					let {
 						children: t,
 						className: n,
@@ -103,10 +103,10 @@
 						className: n
 					}, i)
 				},
-				g = n("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/SubredditsOrProfilesList.m.less"),
-				y = n.n(g);
+				S = n("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/SubredditsOrProfilesList.m.less"),
+				y = n.n(S);
 			const C = b.a.div("CommunityCount", y.a),
-				O = b.a.wrapped(S, "SubredditsOrProfiles", y.a),
+				O = b.a.wrapped(g, "SubredditsOrProfiles", y.a),
 				w = b.a.wrapped(o.a, "SidebarSubreddit", y.a),
 				v = b.a.wrapped(o.a, "ModalSubreddit", y.a);
 			var _;
@@ -233,8 +233,8 @@
 						onClick: () => n(i)
 					})) : null
 				}),
-				S = n("./src/reddit/components/SidebarExpandableList/index.tsx"),
-				g = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				g = n("./src/reddit/components/SidebarExpandableList/index.tsx"),
+				S = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				y = n("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
 				C = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				O = n("./src/reddit/selectors/multireddit.ts"),
@@ -261,12 +261,12 @@
 					type: t.type
 				})
 			};
-			var k = Object(g.c)(M(e => {
+			var k = Object(S.c)(M(e => {
 					const {
 						communities: t,
 						titleText: n
 					} = e;
-					return t.length ? d.a.createElement(S.a, {
+					return t.length ? d.a.createElement(g.a, {
 						items: t,
 						minimizedLength: 5,
 						title: n,
@@ -400,11 +400,11 @@
 				xe = n("./src/reddit/models/Widgets/index.ts"),
 				fe = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.tsx"),
 				Ee = n("./src/reddit/selectors/subredditAutocomplete.ts");
-			const Se = Object(c.c)({
+			const ge = Object(c.c)({
 				isAutocompletePending: Ee.c,
 				items: Ee.e
 			});
-			class ge extends d.a.Component {
+			class Se extends d.a.Component {
 				constructor() {
 					super(...arguments), this.onDropdownContainerMouseDown = e => {
 						e.preventDefault()
@@ -433,7 +433,7 @@
 					})
 				}
 			}
-			var ye = Object(a.b)(Se)(ge),
+			var ye = Object(a.b)(ge)(Se),
 				Ce = n("./src/reddit/components/MultiredditManageWidget/index.m.less"),
 				Oe = n.n(Ce);
 
@@ -534,7 +534,7 @@
 					}, this.onQueryUpdated = () => {
 						this.props.subredditAutocompleteRequested(this.state.query)
 					}, this.onDropdownItemSelect = e => {
-						this.setState(Object.assign({}, ke, {
+						this.setState(Object.assign(Object.assign({}, ke), {
 							choice: e,
 							isListExpanded: this.state.isListExpanded,
 							memoizedShortList: this.state.memoizedShortList
@@ -579,7 +579,7 @@
 						}, this.onRemoveClickedFnCache[t])
 					}, this.onToggleExpand = () => this.setState({
 						isListExpanded: !this.state.isListExpanded
-					}), this.state = Object.assign({}, ke, {
+					}), this.state = Object.assign(Object.assign({}, ke), {
 						memoizedShortList: e.communityInformations.slice(0, _e)
 					}), this.onQueryUpdated = se()(this.onQueryUpdated, Ie)
 				}
@@ -942,8 +942,8 @@
 				x = n("./src/reddit/components/OverflowMenu/index.m.less"),
 				f = n.n(x);
 			const E = c.a.wrapped(m.a, "_Dropdown", f.a),
-				S = Object(u.a)(E),
-				g = c.a.button("MenuButton", f.a),
+				g = Object(u.a)(E),
+				S = c.a.button("MenuButton", f.a),
 				y = c.a.wrapped(b.a, "MenuIcon", f.a),
 				C = c.a.wrapped(p.b, "DropdownRow", f.a),
 				O = Object(d.c)({
@@ -967,7 +967,7 @@
 				v = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = w(e => r.a.createElement(g, {
+			t.b = w(e => r.a.createElement(S, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
 				"aria-label": s.fbt._("more options", null, {
@@ -980,7 +980,7 @@
 				onClick: v(e),
 				onMouseDown: e.handleMouseDown,
 				id: e.dropdownId
-			}, e.icon ? e.icon : r.a.createElement(y, null), r.a.createElement(S, {
+			}, e.icon ? e.icon : r.a.createElement(y, null), r.a.createElement(g, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
 				tooltipId: e.dropdownId,
@@ -1013,7 +1013,7 @@
 				x = n("./src/lib/lessComponent.tsx");
 			const f = 10,
 				E = x.a.wrapped(l.n, "TertiaryButton", h.a);
-			class S extends d.a.Component {
+			class g extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						expanded: !1
@@ -1069,9 +1069,9 @@
 					}, b, d.a.createElement(m.a, null, d.a.createElement(p.a, null, u && this.renderToggleButton())))
 				}
 			}
-			S.defaultProps = {
+			g.defaultProps = {
 				minimizedLength: a.Gb
-			}, t.a = S
+			}, t.a = g
 		},
 		"./src/reddit/components/SidebarSectionHeader/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1136,7 +1136,7 @@
 			};
 			var l = function(e, t, n) {
 					let s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : c;
-					const i = Object.assign({}, c, s),
+					const i = Object.assign(Object.assign({}, c), s),
 						r = t > e ? 1 : -1;
 					let o = e;
 					if (e !== t) {
@@ -1184,7 +1184,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var S = function(e, t) {
+			var g = function(e, t) {
 					var n = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1193,12 +1193,12 @@
 					}
 					return n
 				},
-				g = e => {
+				S = e => {
 					var {
 						className: t,
 						children: n,
 						title: s
-					} = e, i = S(e, ["className", "children", "title"]);
+					} = e, i = g(e, ["className", "children", "title"]);
 					return d.a.createElement("div", E({
 						className: Object(a.a)(f.a.dropdownSection, t)
 					}, i), s && d.a.createElement("div", {
@@ -1387,7 +1387,7 @@
 						focusedIndex: e,
 						items: t
 					} = this.props, n = [];
-					return this.props.showNoMatchesCaption && n.push(d.a.createElement(g, {
+					return this.props.showNoMatchesCaption && n.push(d.a.createElement(S, {
 						key: "no-matches"
 					}, d.a.createElement("div", {
 						className: G.a.noMatches
@@ -1414,7 +1414,7 @@
 							})))
 						});
 						const c = V[i];
-						n.push(d.a.createElement(g, {
+						n.push(d.a.createElement(S, {
 							key: i,
 							title: c && c()
 						}, a))
@@ -1444,7 +1444,7 @@
 				r = n("./src/reddit/selectors/widgets.ts"),
 				o = n("./src/telemetry/index.ts");
 			const d = e => {
-					Object(o.a)(Object.assign({}, i.defaults(e), {
+					Object(o.a)(Object.assign(Object.assign({}, i.defaults(e)), {
 						action: s.c.CLICK,
 						noun: "multi_detail",
 						source: "id_card"
@@ -1455,12 +1455,12 @@
 						subreddit: d,
 						profile: a
 					} = Object(r.b)(e, t);
-					Object(o.a)(Object.assign({}, i.defaults(e), {
+					Object(o.a)(Object.assign(Object.assign({}, i.defaults(e)), {
 						action: s.c.CLICK,
 						noun: "multi_detail_subreddit",
 						profile: a,
 						source: "id_card",
-						subreddit: Object.assign({}, d, {
+						subreddit: Object.assign(Object.assign({}, d), {
 							categoryName: n
 						})
 					}))
@@ -1555,4 +1555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.6c569da3be98d2f3722d.js.map
+//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.1e0a238e47d20c2427a4.js.map
