@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b86b6f192031918d3d54.js
-// Retrieved at 7/29/2020, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.12239ba9f39ac364caa2.js
+// Retrieved at 7/29/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1512,6 +1512,7 @@
 				dfpRefreshSlotId: "/32173961/Desktop-Refresh",
 				dfpRefreshSlotTestSubreddits: ["ps4", "askreddit", "economics", "eyebleach", "funny", "games", "gaming", "jokes", "memes", "movies", "news", "pcgaming", "personalfinance", "pics", "prequelmemes", "programming", "stocks", "television", "todayilearned", "videos", "worldnews"],
 				dfpRefreshSlotInterval: 24e4,
+				dfpRefreshSlotIntervalLimit: 3,
 				apiHeaders: (e => e.split(";").reduce((e, t) => {
 					if (t && t.indexOf("=") > 0) {
 						const [i, n] = t.split("=");
@@ -3280,14 +3281,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("d371a76-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("72d1376-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d371a76-production",
+						release: "72d1376-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3715,7 +3716,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d371a76-production",
+							releaseClient: "72d1376-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -22016,4 +22017,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.b86b6f192031918d3d54.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.12239ba9f39ac364caa2.js.map

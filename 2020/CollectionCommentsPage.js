@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d449f97fc37f1bf2e3b8.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1b8a4ee180002cd4f935.js
+// Retrieved at 7/29/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -653,7 +653,7 @@
 				}, 0);
 			class E extends o.a.Component {
 				constructor() {
-					super(...arguments), this.frame = null, this.loader = null, this.refreshedAt = 1 / 0, this.isWithinLoadingDistance = !1, this.refreshedOnce = !1, this.refreshTimeout = null
+					super(...arguments), this.frame = null, this.loader = null, this.refreshedAt = 1 / 0, this.isWithinLoadingDistance = !1, this.refreshedOnce = !1, this.refreshInterval = null
 				}
 				componentDidCatch(e) {
 					y(e)
@@ -678,10 +678,13 @@
 				}
 				destroySlot() {
 					try {
-						this.refreshTimeout && window.clearTimeout(this.refreshTimeout), this.frame && l.b(this.frame)
+						this.refreshInterval && window.clearInterval(this.refreshInterval), this.frame && l.b(this.frame)
 					} catch (e) {
 						y(e)
 					}
+				}
+				refreshPeriodically() {
+					this.props.isRefreshableAd && null != this.props.incrementRefreshCounter && null != this.props.refreshCount && (this.props.refreshCount >= a.a.dfpRefreshSlotIntervalLimit ? (this.refreshInterval && window.clearInterval(this.refreshInterval), this.refreshInterval = null) : (this.refresh(this.props), this.props.incrementRefreshCounter()))
 				}
 				async componentDidMount() {
 					this.props.sendEvent(Object(x.a)());
@@ -693,9 +696,7 @@
 					this.loader && m.a(this.loader, e => {
 						this.isWithinLoadingDistance = !0, this.refreshedOnce || (this.frame && l.e(this.frame, {
 							viewable: e.intersectionRatio > .5
-						}), this.refresh(this.props), this.refreshedOnce = !0), this.props.isRefreshableAd && (!this.refreshTimeout && e.isIntersecting ? this.refreshTimeout = window.setTimeout(() => {
-							this.props.isRefreshableAd && this.refresh(this.props)
-						}, a.a.dfpRefreshSlotInterval) : this.refreshTimeout && !e.isIntersecting && (window.clearTimeout(this.refreshTimeout), this.refreshTimeout = null))
+						}), this.refresh(this.props), this.refreshedOnce = !0), this.props.isRefreshableAd && (!this.refreshInterval && e.isIntersecting && null != this.props.refreshCount ? this.props.refreshCount < a.a.dfpRefreshSlotIntervalLimit && (this.refreshInterval = window.setInterval(this.refreshPeriodically.bind(this), a.a.dfpRefreshSlotInterval)) : this.refreshInterval && !e.isIntersecting && (window.clearInterval(this.refreshInterval), this.refreshInterval = null))
 					})
 				}
 				componentWillUnmount() {
@@ -10577,6 +10578,16 @@
 					}
 				});
 			class B extends c.a.Component {
+				constructor(e) {
+					super(e), this.incrementRefreshCounter = this.incrementRefreshCounter.bind(this), this.state = {
+						refreshCount: 0
+					}
+				}
+				incrementRefreshCounter() {
+					this.setState(e => ({
+						refreshCount: e.refreshCount + 1
+					}))
+				}
 				render() {
 					const {
 						className: e,
@@ -10628,10 +10639,12 @@
 					}), c.a.createElement(I, {
 						id: M(d, o, r),
 						isRefreshableAd: N(d, g, a),
+						incrementRefreshCounter: this.incrementRefreshCounter,
 						sizes: l,
 						placement: d,
 						listingName: a,
 						refreshKey: i,
+						refreshCount: this.state.refreshCount,
 						position: m,
 						dataBeforeContent: v
 					})))
@@ -16548,4 +16561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.d449f97fc37f1bf2e3b8.js.map
+//# sourceMappingURL=CollectionCommentsPage.1b8a4ee180002cd4f935.js.map
