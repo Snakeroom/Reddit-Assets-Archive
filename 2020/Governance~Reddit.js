@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e48c82c8b8b3cb431ff1.js
-// Retrieved at 7/30/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.542f1c323a9223ba99d0.js
+// Retrieved at 7/30/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -4229,6 +4229,7 @@
 					t(T(i));
 					const O = await ((e, t) => Object(d.a)(Object(u.a)(e, [l.a]), {
 						endpoint: Object(b.a)("".concat(e.apiUrl, "/api/v1/external_account/user/").concat(t, ".json")),
+						traceRequestName: "get_external_accounts",
 						method: o.db.GET
 					}))(r(), i);
 					if (O.ok) {
@@ -10126,15 +10127,19 @@
 						t: D
 					} = Object(c.a)(s(), m), {
 						profileName: R
-					} = C, P = u.e[Object(b.N)(s(), {})], x = R.toLowerCase(), G = Object.assign(Object.assign({}, r()(e.queryParams, l.l)), {
-						sort: A,
-						layout: P,
-						t: D
-					});
-					if (await t(I.d(x)), P === u.e[u.g.Compact]) {
-						const n = Object(T.a)(x, d.kb, A, e.queryParams);
-						if (s().profileOverviewPage.chrono.ids[n]) return;
-						await t(((e, t, s, n) => async (n, r, a) => {
+					} = C;
+					let P = !1;
+					const x = u.e[Object(b.N)(s(), {})],
+						G = R.toLowerCase(),
+						q = Object.assign(Object.assign({}, r()(e.queryParams, l.l)), {
+							sort: A,
+							layout: x,
+							t: D
+						}),
+						V = [t(I.d(G))];
+					if (x === u.e[u.g.Compact]) {
+						const n = Object(T.a)(G, d.kb, A, e.queryParams);
+						s().profileOverviewPage.chrono.ids[n] ? P = !0 : V.push(t(((e, t, s, n) => async (n, r, a) => {
 							const c = r(),
 								i = !!Object(g.f)(c, {
 									listingKey: e
@@ -10172,11 +10177,10 @@
 							})), u.body.reason === v.a.DeletedProfile && n(Object(_.p)({
 								profileName: t
 							})), n(Object(E.m)(u.status))
-						})(n, x, G))
+						})(n, G, q)))
 					} else {
-						const n = Object(T.a)(x, d.lb, A, e.queryParams);
-						if (s().listings.postOrder.ids[n] && !s().listings.postOrder.api.error[n]) return;
-						await t(((e, t, s, n) => async (n, r, a) => {
+						const n = Object(T.a)(G, d.lb, A, e.queryParams);
+						s().listings.postOrder.ids[n] && !s().listings.postOrder.api.error[n] ? P = !0 : V.push(t(((e, t, s, n) => async (n, r, a) => {
 							const c = r(),
 								i = !!c.listings.postOrder.ids[e],
 								d = !!Object(p.c)(c, {
@@ -10216,18 +10220,18 @@
 							})), u.body.reason === v.a.DeletedProfile && n(Object(_.p)({
 								profileName: t
 							})), n(Object(E.m)(u.status))
-						})(n, x, G))
+						})(n, G, q)))
 					}
-					await t(Object(i.q)()), await t(Object(a.b)());
-					const q = s();
-					if (!q.platform.currentPage) return;
-					if (200 !== q.platform.currentPage.status) return;
-					const V = Object(O.m)(s(), x);
-					await t(S.b(x, V)), t(E.l({
+					if (V.push(t(Object(a.b)())), await Promise.all(V), P) return;
+					const H = s();
+					if (!H.platform.currentPage) return;
+					if (200 !== H.platform.currentPage.status) return;
+					const K = Object(O.m)(s(), G);
+					t(E.l({
 						title: B(s(), R)
-					})), Object(f.J)(q) && Object(f.L)(q, R) && t(Object(j.f)());
-					const H = [t(I.b(x)), t(h.o(R)), t(I.f(R))];
-					await Promise.all(H)
+					})), Object(f.J)(H) && Object(f.L)(H, R) && t(Object(j.f)());
+					const W = [t(Object(i.q)()), t(S.b(G, K)), t(I.b(G)), t(h.o(R)), t(I.f(R))];
+					await Promise.all(W)
 				}, B = (e, t) => Object(O.q)(e, {
 					profileName: t
 				})
@@ -14527,6 +14531,7 @@
 					const i = await ((e, t) => Object(u.a)(Object(b.a)(e, [p.a]), {
 						endpoint: "".concat(e.apiUrl, "/user/").concat(t, "/moderated_subreddits.json"),
 						method: r.db.GET,
+						traceRequestName: "get_profile_moderated_subreddits",
 						data: {
 							raw_json: 1
 						}
@@ -14614,7 +14619,9 @@
 					s(G(d));
 					const b = await ((e, t) => Object(l.a)(e, Object.assign(Object.assign({}, O), {
 							variables: t
-						})))(a.gqlContext(), {
+						}), {
+							traceRequestName: "get_profile_multireddits"
+						}))(a.gqlContext(), {
 							name: o,
 							first: t ? i.h : r.Gb,
 							after: t ? u[o].endCursor : void 0
@@ -19519,7 +19526,9 @@
 					} = i;
 					const l = await ((e, t) => Object(a.a)(e, Object.assign(Object.assign({}, r), {
 							variables: t
-						})))(u(), {
+						}), {
+							traceRequestName: "get_profile_trophies"
+						}))(u(), {
 							profileName: e
 						}),
 						b = l.body.data;
@@ -23139,6 +23148,7 @@
 			const o = (e, t, s) => Object(c.a)(e, {
 					data: s,
 					endpoint: Object(r.a)(Object(i.a)("".concat(n.a.gatewayUrl, "/desktopapi/v1/user/").concat(t, "/conversations"))),
+					traceRequestName: "get_profile_conversations",
 					method: a.db.GET
 				}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? Object.assign(Object.assign({}, e), {
 					body: Object.assign(Object.assign({}, e.body), {
@@ -54969,4 +54979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.e48c82c8b8b3cb431ff1.js.map
+//# sourceMappingURL=Governance~Reddit.542f1c323a9223ba99d0.js.map
