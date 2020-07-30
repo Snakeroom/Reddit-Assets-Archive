@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.cb3025060606563cdecc.js
-// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.745ce461f808031602f8.js
+// Retrieved at 7/30/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1972,7 +1972,8 @@
 						post: u,
 						onClick: p,
 						eventFactory: a,
-						style: Object.assign(Object.assign(Object.assign({}, Object(U.b)(this.props.flairStyleTemplate)), Object(U.d)(this.props)), this.props.style)
+						style: Object.assign(Object.assign(Object.assign({}, Object(U.b)(this.props.flairStyleTemplate)), Object(U.d)(this.props)), this.props.style),
+						"data-click-id": this.props["data-click-id"]
 					}, o.a.createElement(R.a, {
 						className: K.a.backgroundWrapper,
 						flairStyleTemplate: i
@@ -2164,7 +2165,8 @@
 					damping: 30
 				},
 				Ee = 100,
-				je = e => {
+				je = "post_carousel_item",
+				_e = e => {
 					var {
 						root: t,
 						handleVisibilityChange: s,
@@ -2178,7 +2180,7 @@
 						onChange: s
 					}, i)
 				},
-				_e = Object(i.b)(null, (e, t) => {
+				ke = Object(i.b)(null, (e, t) => {
 					let {
 						discoveryUnit: s,
 						searchDiscoveryUnit: n
@@ -2189,8 +2191,8 @@
 						trackPostSubredditClick: t => e((e, r) => s ? u.y(r(), s, t) : n ? u.y(r(), n, t) : null)
 					}
 				}),
-				ke = Object(m.t)();
-			class Pe extends d.c {
+				Pe = Object(m.t)();
+			class Se extends d.c {
 				constructor(e) {
 					super(e), this.state = {
 						scrollIndex: 0,
@@ -2216,7 +2218,8 @@
 							renderPost: n,
 							singleSubredditMode: r
 						} = this.props;
-						return o.a.createElement(je, {
+						return o.a.createElement(_e, {
+							"data-click-id": je,
 							className: fe.a.largePost,
 							eventFactory: this.itemPostClickEventFactory,
 							forceLoadMedia: !0,
@@ -2317,7 +2320,7 @@
 					}))
 				}
 			}
-			t.a = ke(_e(Object(l.c)(Pe)))
+			t.a = Pe(ke(Object(l.c)(Se)))
 		},
 		"./src/reddit/components/DiscoveryUnit/Layout/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3789,6 +3792,7 @@
 						style: m,
 						ref: u
 					} = this.props, b = r.a.createElement("div", {
+						"data-click-id": this.props["data-click-id"],
 						style: m,
 						ref: u,
 						onMouseUp: e => {
@@ -6173,7 +6177,8 @@
 						className: l.container,
 						eventFactory: this.itemPostClickEventFactory,
 						onClick: e => this.onClickPost(e),
-						post: o
+						post: o,
+						"data-click-id": "hero_unit"
 					}, r.a.createElement(p.a, {
 						className: l.layout,
 						headerClassName: Object(L.a)({
@@ -9691,4 +9696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.cb3025060606563cdecc.js.map
+//# sourceMappingURL=SearchResults.745ce461f808031602f8.js.map

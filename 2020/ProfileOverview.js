@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.a5620782b86537886506.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.e3c125f5a42fd8169c18.js
+// Retrieved at 7/30/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -7626,6 +7626,7 @@
 						style: m,
 						ref: u
 					} = this.props, b = o.a.createElement("div", {
+						"data-click-id": this.props["data-click-id"],
 						style: m,
 						ref: u,
 						onMouseUp: e => {
@@ -15126,4 +15127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.a5620782b86537886506.js.map
+//# sourceMappingURL=ProfileOverview.e3c125f5a42fd8169c18.js.map

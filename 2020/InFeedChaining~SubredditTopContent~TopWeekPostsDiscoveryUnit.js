@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.db8c98c614cb9c43c985.js
-// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.bfad9620630f6238ae6e.js
+// Retrieved at 7/30/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -371,14 +371,14 @@
 					}, Object(f.d)(e.created / 1e3)))))
 				},
 				k = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				j = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				_ = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
-				w = s.n(_);
+				_ = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				j = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
+				w = s.n(j);
 			var I = e => {
 					const t = Object(E.a)(e.name, e.type);
 					return i.a.createElement("div", {
 						className: Object(c.a)(w.a.container, e.className)
-					}, i.a.createElement(j.a, {
+					}, i.a.createElement(_.a, {
 						className: w.a.layout
 					}, i.a.createElement("div", {
 						className: w.a.iconContainer
@@ -470,20 +470,21 @@
 							showCentered: !1,
 							showFull: !1
 						}),
-						j = !1;
+						_ = !1;
 					O && k && (O.type !== V.o.RTJSON && O.type !== V.o.TEXT ? (k = i.a.createElement("div", {
 						className: J.a.mediaWrapper
-					}, k), j = !0) : O && O.content && Object(B.a)(p) && (k = i.a.createElement("div", {
+					}, k), _ = !0) : O && O.content && Object(B.a)(p) && (k = i.a.createElement("div", {
 						className: J.a.textWrapper
 					}, k)));
-					const _ = !j && !P;
+					const j = !_ && !P;
 					let w;
 					return y && (w = Object(F.f)(y) ? Object(H.h)(y) : Object(H.i)(y)), i.a.createElement(A.a, {
 						className: Object(c.a)(J.a.container, Z.a.largeAndMediumActiveStyles, Z.a.largeAndMediumPostStyles, z.a.postContainer, Object(R.a)(this.props), s),
 						post: p,
 						onClick: u,
 						eventFactory: r,
-						style: Object.assign(Object.assign(Object.assign({}, Object(R.b)(this.props.flairStyleTemplate)), Object(R.d)(this.props)), this.props.style)
+						style: Object.assign(Object.assign(Object.assign({}, Object(R.b)(this.props.flairStyleTemplate)), Object(R.d)(this.props)), this.props.style),
+						"data-click-id": this.props["data-click-id"]
 					}, i.a.createElement(D.a, {
 						className: z.a.backgroundWrapper,
 						flairStyleTemplate: o
@@ -495,7 +496,7 @@
 						created: p.created,
 						author: p.author
 					}, w)), i.a.createElement(T.c, {
-						className: _ ? J.a.postTitle : J.a.postTitleCompact,
+						className: j ? J.a.postTitle : J.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
 						post: p,
@@ -507,7 +508,7 @@
 						hideNSFWPref: d,
 						post: p,
 						subredditOrProfile: y
-					}), (j || P) && i.a.createElement("div", {
+					}), (_ || P) && i.a.createElement("div", {
 						className: J.a.flexSpacer
 					}), P && i.a.createElement("div", {
 						className: J.a.mediaWrapper
@@ -675,7 +676,8 @@
 					damping: 30
 				},
 				Oe = 100,
-				Pe = e => {
+				Pe = "post_carousel_item",
+				Ne = e => {
 					var {
 						root: t,
 						handleVisibilityChange: s,
@@ -689,7 +691,7 @@
 						onChange: s
 					}, o)
 				},
-				Ne = Object(o.b)(null, (e, t) => {
+				ke = Object(o.b)(null, (e, t) => {
 					let {
 						discoveryUnit: s,
 						searchDiscoveryUnit: a
@@ -700,7 +702,7 @@
 						trackPostSubredditClick: t => e((e, n) => s ? p.y(n(), s, t) : a ? p.y(n(), a, t) : null)
 					}
 				}),
-				ke = Object(m.t)();
+				_e = Object(m.t)();
 			class je extends l.c {
 				constructor(e) {
 					super(e), this.state = {
@@ -727,7 +729,8 @@
 							renderPost: a,
 							singleSubredditMode: n
 						} = this.props;
-						return i.a.createElement(Pe, {
+						return i.a.createElement(Ne, {
+							"data-click-id": Pe,
 							className: ge.a.largePost,
 							eventFactory: this.itemPostClickEventFactory,
 							forceLoadMedia: !0,
@@ -828,7 +831,7 @@
 					}))
 				}
 			}
-			t.a = ke(Ne(Object(d.c)(je)))
+			t.a = _e(ke(Object(d.c)(je)))
 		},
 		"./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -966,4 +969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.db8c98c614cb9c43c985.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.bfad9620630f6238ae6e.js.map

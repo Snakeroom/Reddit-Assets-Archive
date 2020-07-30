@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.1968a0e4fe92846deb54.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.846a9b4a14bb7a4cdc13.js
+// Retrieved at 7/30/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -234,8 +234,8 @@
 						titleColor: a && a.postTitleColor
 					}), b)
 				},
-				N = s("./node_modules/fbt/lib/FbtPublic.js"),
-				k = s("./src/lib/prettyPrintNumber/index.ts"),
+				k = s("./node_modules/fbt/lib/FbtPublic.js"),
+				N = s("./src/lib/prettyPrintNumber/index.ts"),
 				w = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Footer/index.m.less"),
 				S = s.n(w);
 			var F = e => {
@@ -247,17 +247,17 @@
 						className: Object(i.a)(S.a.footer, t)
 					}, r.a.createElement("span", {
 						className: S.a.metaText
-					}, N.fbt._({
+					}, k.fbt._({
 						"*": "{number} points",
 						_1: "1 score"
-					}, [N.fbt._plural(s.score, "number", Object(k.b)(s.score))], {
+					}, [k.fbt._plural(s.score, "number", Object(N.b)(s.score))], {
 						hk: "2ncFte"
 					})), r.a.createElement("span", {
 						className: S.a.metaText
-					}, N.fbt._({
+					}, k.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
-					}, [N.fbt._plural(s.numComments, "number", Object(k.b)(s.numComments))], {
+					}, [k.fbt._plural(s.numComments, "number", Object(N.b)(s.numComments))], {
 						hk: "1QQoSA"
 					})))
 				},
@@ -588,6 +588,7 @@
 						style: m,
 						ref: p
 					} = this.props, b = r.a.createElement("div", {
+						"data-click-id": this.props["data-click-id"],
 						style: m,
 						ref: p,
 						onMouseUp: e => {
@@ -832,4 +833,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.1968a0e4fe92846deb54.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.846a9b4a14bb7a4cdc13.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9c66e8987d93655b9d16.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b79cb37aed3e4a6b6479.js
+// Retrieved at 7/30/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -7620,6 +7620,7 @@
 						style: m,
 						ref: u
 					} = this.props, h = o.a.createElement("div", {
+						"data-click-id": this.props["data-click-id"],
 						style: m,
 						ref: u,
 						onMouseUp: e => {
@@ -16561,4 +16562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.9c66e8987d93655b9d16.js.map
+//# sourceMappingURL=CollectionCommentsPage.b79cb37aed3e4a6b6479.js.map
