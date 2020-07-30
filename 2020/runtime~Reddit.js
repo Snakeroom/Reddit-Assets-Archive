@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.ac2e17bb7b892dce0dec.js
-// Retrieved at 7/30/2020, 2:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.2433e71fb5d6b21a9d75.js
+// Retrieved at 7/30/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var d, t, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) t = i[l], Object.prototype.hasOwnProperty.call(r, t) && r[t] && P.push(r[t][0]), r[t] = 0;
@@ -970,7 +970,7 @@
 						EconTopAwardersModal: "18227b41f0875ae2548e",
 						Coins: "5b291555fe3fcd8c1c27",
 						CoinsMobile: "aa5f3190b3780288ca8d",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "9c762a5eadebb0dfaaec",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "f1cedf6e58f568f74f99",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478": "900fbea4b99b9fc1b66a",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0": "5712e21eacf77d6eb36c",
 						PostDraft: "69df61c1326b9f7138a1",
@@ -1037,17 +1037,17 @@
 						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "ada3ff0faf89ac6c3f0b",
 						MembershipPaywallPage: "4bc8f68c538cdf091d07",
 						"vendors~Chat~RedesignChat": "4a9e27bcd41a7d62e436",
-						"Chat~RedesignChat": "800bc9aae020a63b1740",
+						"Chat~RedesignChat": "906ed94a1242a81ea84f",
 						RedesignChat: "9f13e22ec9d7a25be8dc",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~StandalonePostPage~Subreddit": "163e57e27ed37da29b28",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "6b3cc6bc478ffa9fb0c3",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "f1d8a649a6112beb09ec",
 						CollectionCommentsPage: "1b8a4ee180002cd4f935",
 						CommentsPage: "91c022bb680ab623c160",
 						Subreddit: "941f2e7778eebcc67423",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
 						ModerationPages: "f533531e96dbab348798",
 						"vendors~PostCreation~RichTextEditor": "5b0fd1eb43ebf9e6b414",
-						PostCreation: "f3c82f894a6aa35442df",
+						PostCreation: "ec8f35f0c9f1f63e1096",
 						"vendors~Multireddit": "c9ea46fd1c2e6dcd587d",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "1e0a238e47d20c2427a4",
 						Multireddit: "3eb9f4107b4c29e69005",
@@ -1083,7 +1083,7 @@
 						GovernanceReleaseNotesModal: "8a5888c322495db930c4",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"LiveVideoPlayer~PublicAccessNetwork": "381d2109cc39e6ce21c8",
-						PublicAccessNetwork: "a6fd9e9d311fbf8c8549",
+						PublicAccessNetwork: "3bdd91a3972d3695f292",
 						"vendors~ModListing": "c3f87928276a47214bb2",
 						ModListing: "7b96a236a23d4710d5de",
 						"vendors~ModQueuePages": "707b386648ad89d65795",
@@ -1117,7 +1117,7 @@
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "847d478c9ea9def9f09b",
 						"reddit-components-InFeedPostCreation": "92e0be9f9258a007b24b",
 						"reddit-components-TabBadger-Component": "b1aa497fb89c4701cf14",
-						RpanListingUnit: "fcb16bbcc310ecb6fcdc",
+						RpanListingUnit: "1bee90fda9ba6cd876fa",
 						"reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796": "04c263a0b3eb357c39d6",
 						"reddit-components-MediumPost": "aa2088973a0f268c8624",
 						"reddit-components-ClassicPost": "551fb56b109e1284fe55",
@@ -1256,4 +1256,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=runtime~Reddit.ac2e17bb7b892dce0dec.js.map
+//# sourceMappingURL=runtime~Reddit.2433e71fb5d6b21a9d75.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.800bc9aae020a63b1740.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.906ed94a1242a81ea84f.js
+// Retrieved at 7/30/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -2375,7 +2375,7 @@
 		"./src/chat/components/FrameContent/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Qm
+				return Zm
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var a = n("./node_modules/lodash/isEqual.js"),
@@ -7110,41 +7110,40 @@
 				}
 			}
 			var _m = Object(o.b)(jm)(Cm),
-				Em = n("./src/chat/endpoints/sendbird/index.ts"),
-				vm = n("./src/chat/endpoints/users/index.ts"),
-				ym = n("./src/chat/models/Message/report.ts");
-			var Im = n("./src/higherOrderComponents/makeAsync.tsx"),
-				xm = n("./src/lib/loadWithRetries/index.ts");
-			const Sm = () => null;
-			var km = Object(Im.a)({
-				ErrorComponent: Sm,
-				getComponent: () => Object(xm.a)(() => n.e("ChatReportFlow").then(n.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
-				LoadingComponent: Sm
+				Em = n("./src/chat/endpoints/users/index.ts"),
+				vm = n("./src/chat/models/Message/report.ts");
+			var ym = n("./src/higherOrderComponents/makeAsync.tsx"),
+				Im = n("./src/lib/loadWithRetries/index.ts");
+			const xm = () => null;
+			var Sm = Object(ym.a)({
+				ErrorComponent: xm,
+				getComponent: () => Object(Im.a)(() => n.e("ChatReportFlow").then(n.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
+				LoadingComponent: xm
 			});
-			const Nm = "reportReason";
-			var wm;
+			const km = "reportReason";
+			var Nm;
 			! function(e) {
 				e.Threats = "threats", e.Violence = "violence", e.Personal = "personal", e.Impersonation = "impersonation", e.MinorSexualization = "minorSexualization"
-			}(wm || (wm = {}));
-			var Tm = n("./src/chat/models/ReportFlow/index.ts"),
-				Mm = n("./src/chat/components/OverlayReport/index.m.less"),
-				Am = n.n(Mm);
-			const Dm = i.a.wrapped(Po.a, "Checkbox", Am.a),
-				Lm = i.a.div("ListItem", Am.a),
-				Um = Object(F.a)({
+			}(Nm || (Nm = {}));
+			var wm = n("./src/chat/models/ReportFlow/index.ts"),
+				Tm = n("./src/chat/components/OverlayReport/index.m.less"),
+				Mm = n.n(Tm);
+			const Am = i.a.wrapped(Po.a, "Checkbox", Mm.a),
+				Dm = i.a.div("ListItem", Mm.a),
+				Lm = Object(F.a)({
 					user: (e, t) => t.attr === Nh.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === Nh.a.Invite || t.attr === Nh.a.Message ? e.messages.models[t.attrId] : void 0,
 					messageList: e => Object(I.y)(e),
 					currentUserId: (e, t) => Object(ls.a)(e)
 				});
-			class Rm extends c.Component {
+			class Um extends c.Component {
 				constructor(e) {
 					super(e), this.selectReason = e => this.setState({
 						selectedReason: e
-					}), this.isMessageReportFlow = () => this.props.attr === Nh.a.Invite || this.props.attr === Nh.a.Message, this.isSubmitDisabled = () => !this.state.selectedReason, this.isCTLControls = () => this.state.currentFlow === Tm.a.CrisisTextLine && !this.state.ctlSubmitted, this.isSingleButton = () => this.state.currentFlow === Tm.a.CrisisTextLine && !0 === this.state.ctlSubmitted || this.state.currentFlow === Tm.a.BlockUser || this.state.currentFlow === Tm.a.FileComplaint, this.nextReportFlow = () => {
+					}), this.isMessageReportFlow = () => this.props.attr === Nh.a.Invite || this.props.attr === Nh.a.Message, this.isSubmitDisabled = () => !this.state.selectedReason, this.isCTLControls = () => this.state.currentFlow === wm.a.CrisisTextLine && !this.state.ctlSubmitted, this.isSingleButton = () => this.state.currentFlow === wm.a.CrisisTextLine && !0 === this.state.ctlSubmitted || this.state.currentFlow === wm.a.BlockUser || this.state.currentFlow === wm.a.FileComplaint, this.nextReportFlow = () => {
 						const {
 							selectedReason: e
-						} = this.state, t = e && e.requestCrisisSupport ? Tm.a.CrisisTextLine : e && e.fileComplaint ? Tm.a.FileComplaint : Tm.a.BlockUser;
+						} = this.state, t = e && e.requestCrisisSupport ? wm.a.CrisisTextLine : e && e.fileComplaint ? wm.a.FileComplaint : wm.a.BlockUser;
 						this.setState({
 							currentFlow: t
 						})
@@ -7152,7 +7151,7 @@
 						const {
 							message: e
 						} = this.props;
-						if (e && e.sender) return r.a.createElement(km, {
+						if (e && e.sender) return r.a.createElement(Sm, {
 							onRuleChange: e => this.selectReason(e),
 							currentFlow: this.state.currentFlow,
 							blockedUserId: e.sender.userId,
@@ -7161,35 +7160,35 @@
 						})
 					}, this.getReportReasonText = e => {
 						switch (e) {
-							case wm.Threats:
+							case Nm.Threats:
 								return f.fbt._("Threatens, harrasses, or bullies", null, {
 									hk: "9lzw2"
 								});
-							case wm.Violence:
+							case Nm.Violence:
 								return f.fbt._("It threatens violence or physical harm", null, {
 									hk: "2LziPg"
 								});
-							case wm.Personal:
+							case Nm.Personal:
 								return f.fbt._("It's personal and confidential information", null, {
 									hk: "2w0qDN"
 								});
-							case wm.Impersonation:
+							case Nm.Impersonation:
 								return f.fbt._("Impersonation", null, {
 									hk: "2dg9bu"
 								});
-							case wm.MinorSexualization:
+							case Nm.MinorSexualization:
 								return f.fbt._("It's sexual or suggestive content involving minors", null, {
 									hk: "Ofq3r"
 								})
 						}
-					}, this.getUserReportFlow = () => u()(wm, e => {
+					}, this.getUserReportFlow = () => u()(Nm, e => {
 						const t = this.getReportReasonText(e);
-						return r.a.createElement(Lm, {
+						return r.a.createElement(Dm, {
 							key: t
-						}, r.a.createElement(Dm, {
+						}, r.a.createElement(Am, {
 							type: "radio",
 							value: t,
-							name: Nm,
+							name: km,
 							onChange: e => this.selectReason({
 								reasonText: e.target.value
 							})
@@ -7204,31 +7203,20 @@
 						e && e.reasonText && (this.isMessageReportFlow() ? this.onMessageSubmit() : n && t(e.reasonText, n))
 					}, this.onMessageSubmit = () => {
 						const {
-							currentUserId: e,
-							message: t,
-							messageList: n,
-							onReportMessage: a,
-							onReportInvite: s
+							message: e,
+							messageList: t,
+							onReportMessage: n
 						} = this.props, {
-							currentFlow: c,
-							selectedReason: r
+							currentFlow: a,
+							selectedReason: s
 						} = this.state;
-						if (console.log(r, c, Tm.a), r && r.requestCrisisSupport && t) return c === Tm.a.CrisisTextLine ? (a(r.reasonText, t, n), this.setState({
+						if (console.log(s, a, wm.a), s && s.requestCrisisSupport && e) return a === wm.a.CrisisTextLine ? (n(s.reasonText, e, t), this.setState({
 							ctlSubmitted: !0
 						})) : this.nextReportFlow();
-						if (r && r.reasonText && t) {
-							switch (c) {
-								case Tm.a.Default:
-									a(r.reasonText, t, n);
-									break;
-								case Tm.a.Invite:
-									s(t.channelId, e, t.sender.userId, r.reasonText)
-							}
-							this.nextReportFlow()
-						}
+						s && s.reasonText && e && (n(s.reasonText, e, t), this.nextReportFlow())
 					}, this.state = {
 						selectedReason: void 0,
-						currentFlow: this.props.attr === Nh.a.Invite ? Tm.a.Invite : Tm.a.Default,
+						currentFlow: this.props.attr === Nh.a.Invite ? wm.a.Invite : wm.a.Default,
 						ctlSubmitted: !1
 					}
 				}
@@ -7261,7 +7249,7 @@
 					}))
 				}
 			}
-			var Pm = Object(o.b)(Um, e => ({
+			var Rm = Object(o.b)(Lm, e => ({
 					onReportUser: (t, n) => {
 						e(Object(gt.u)(n.id)), e((e => async (t, n, a) => {
 							let {
@@ -7274,7 +7262,7 @@
 								reason: r,
 								userNickname: c.name
 							};
-							await Object(vm.a)(s(), o)
+							await Object(Em.a)(s(), o)
 						})({
 							user: n,
 							reason: t
@@ -7285,31 +7273,23 @@
 							let {
 								apiContext: r
 							} = c;
-							const o = Object(ym.a)(e, t),
-								i = Object(ym.b)(e, t, n);
-							o && await Object(vm.b)(r(), o, i)
+							const o = Object(vm.a)(e, t),
+								i = Object(vm.b)(e, t, n);
+							o && await Object(Em.b)(r(), o, i)
 						})(t, n, a))
-					},
-					onReportInvite: (t, n, a, s) => {
-						e(((e, t, n, a) => async (s, c, r) => {
-							let {
-								apiContext: o
-							} = r;
-							await Object(Em.n)(o(), e, t, n, a)
-						})(t, n, a, s))
 					}
-				}))(Rm),
-				Bm = n("./src/chat/components/OverlaySubredditChatRequest/index.m.less"),
-				Hm = n.n(Bm);
-			const Fm = i.a.wrapped(Jl, "SubredditHeader", Hm.a),
-				Km = i.a.h4("Title", Hm.a),
-				Gm = i.a.p("Text", Hm.a),
-				zm = Object(F.a)({
+				}))(Um),
+				Pm = n("./src/chat/components/OverlaySubredditChatRequest/index.m.less"),
+				Bm = n.n(Pm);
+			const Hm = i.a.wrapped(Jl, "SubredditHeader", Bm.a),
+				Fm = i.a.h4("Title", Bm.a),
+				Km = i.a.p("Text", Bm.a),
+				Gm = Object(F.a)({
 					currentUserId: ls.a,
 					subredditChannel: e => Object(I.k)(e),
 					subreddit: e => Object(Dr.b)(e)
 				});
-			class Wm extends r.a.Component {
+			class zm extends r.a.Component {
 				constructor(e) {
 					super(e), this.renderContent = this.renderContent.bind(this), this.onDeclineChannelRequest = this.onDeclineChannelRequest.bind(this)
 				}
@@ -7320,9 +7300,9 @@
 					const {
 						subredditChannel: e
 					} = this.props;
-					if (e && e.type === C.a.Subreddit) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Km, null, f.fbt._("Description", null, {
+					if (e && e.type === C.a.Subreddit) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Fm, null, f.fbt._("Description", null, {
 						hk: "EsHcE"
-					})), r.a.createElement(Gm, null, e.customData.description))
+					})), r.a.createElement(Km, null, e.customData.description))
 				}
 				renderMembersList() {
 					const {
@@ -7339,7 +7319,7 @@
 							} = e;
 							return t !== n
 						});
-						return r.a.createElement(r.a.Fragment, null, r.a.createElement(Km, null, f.fbt._("Members", null, {
+						return r.a.createElement(r.a.Fragment, null, r.a.createElement(Fm, null, f.fbt._("Members", null, {
 							hk: "2IDokz"
 						})), r.a.createElement(Cs, {
 							channelId: t,
@@ -7354,7 +7334,7 @@
 						subredditChannel: e,
 						subreddit: t
 					} = this.props, n = t && t.nsfw;
-					if (t && e) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Fm, {
+					if (t && e) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Hm, {
 						channelName: e.name,
 						subredditName: t.name,
 						subredditIconUrl: t.iconImg,
@@ -7395,18 +7375,18 @@
 					}))
 				}
 			}
-			var Vm = Object(o.b)(zm, e => ({
+			var Wm = Object(o.b)(Gm, e => ({
 				onAcceptSubredditChannelRequest: (t, n) => {
 					e(Object(gt.k)()), e(Object(la.n)(t, n))
 				},
 				onDeclineChannelRequest: (t, n) => {
 					e(Object(_e.b)(Object(ye.channelAction)(t, pc.a.DECLINE_REQUEST, n)))
 				}
-			}))(Wm);
-			const qm = e => e.channelId || e.subredditName ? e.subredditName && e.action === pc.a.VIEW_JOIN && e.channelId ? r.a.createElement(xh, {
+			}))(zm);
+			const Vm = e => e.channelId || e.subredditName ? e.subredditName && e.action === pc.a.VIEW_JOIN && e.channelId ? r.a.createElement(xh, {
 				channelId: e.channelId,
 				subredditName: e.subredditName
-			}) : e.subredditName && e.action === pc.a.VIEW_INVITE && e.channelId ? r.a.createElement(Vm, {
+			}) : e.subredditName && e.action === pc.a.VIEW_INVITE && e.channelId ? r.a.createElement(Wm, {
 				channelId: e.channelId,
 				subredditName: e.subredditName
 			}) : e.action === pc.a.VIEW_INVITE && e.channelId ? r.a.createElement(Hu, {
@@ -7430,7 +7410,7 @@
 				subredditName: e.subredditName
 			}) : e.action === Ee.a.DELETE && e.attrId ? r.a.createElement(ih, {
 				messageId: parseInt(e.attrId)
-			}) : e.action === Ee.a.REPORT && e.attr && e.attrId && e.channelId ? r.a.createElement(Pm, {
+			}) : e.action === Ee.a.REPORT && e.attr && e.attrId && e.channelId ? r.a.createElement(Rm, {
 				attr: e.attr,
 				attrId: e.attrId,
 				channelId: e.channelId
@@ -7443,21 +7423,21 @@
 			}) : e.action === pc.a.DENY && e.channelId ? r.a.createElement(Ju, {
 				channelId: e.channelId
 			}) : void 0 : r.a.createElement(gh, null);
-			var Jm = n("./src/chat/components/FrameContent/index.m.less"),
-				Zm = n.n(Jm);
-			const Qm = Zm.a.Main,
-				Ym = Object(F.a)({
+			var qm = n("./src/chat/components/FrameContent/index.m.less"),
+				Jm = n.n(qm);
+			const Zm = Jm.a.Main,
+				Qm = Object(F.a)({
 					channel: e => Object(I.l)(e),
 					container: e => e && e.container && e.container.size,
 					isUserAccountEmpty: e => !e.user.account
 				}),
-				Xm = Object(o.b)(Ym, e => ({
+				Ym = Object(o.b)(Qm, e => ({
 					setInternalPromos: () => e(Object(l.e)())
 				})),
-				$m = i.a.main("Main", Zm.a),
-				eb = i.a.div("Content", Zm.a),
-				tb = i.a.div("Modal", Zm.a);
-			class nb extends r.a.Component {
+				Xm = i.a.main("Main", Jm.a),
+				$m = i.a.div("Content", Jm.a),
+				eb = i.a.div("Modal", Jm.a);
+			class tb extends r.a.Component {
 				componentDidMount() {
 					this.props.setInternalPromos()
 				}
@@ -7487,22 +7467,22 @@
 						case t === Ma.a.MINIMIZED:
 							return r.a.createElement(Yr.a, null);
 						default: {
-							const t = qm(a);
+							const t = Vm(a);
 							return r.a.createElement(r.a.Fragment, null, r.a.createElement(Jd, {
 								routeAction: a.action
-							}), r.a.createElement(eb, null, t ? r.a.createElement(tb, null, t) : e && r.a.createElement(Qr, {
+							}), r.a.createElement($m, null, t ? r.a.createElement(eb, null, t) : e && r.a.createElement(Qr, {
 								channel: e
 							})))
 						}
 					}
 				}
 				render() {
-					return r.a.createElement($m, {
+					return r.a.createElement(Xm, {
 						id: Aa.a
 					}, this.getContent())
 				}
 			}
-			t.b = Xm(nb)
+			t.b = Ym(tb)
 		},
 		"./src/chat/components/Intro/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -14047,4 +14027,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.800bc9aae020a63b1740.js.map
+//# sourceMappingURL=Chat~RedesignChat.906ed94a1242a81ea84f.js.map

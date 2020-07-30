@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6413a7880e598df5cb41.js
-// Retrieved at 7/30/2020, 2:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8d878c1bc1365ccfe8ad.js
+// Retrieved at 7/30/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -252,8 +252,6 @@
 				return T
 			})), i.d(t, "d", (function() {
 				return S
-			})), i.d(t, "n", (function() {
-				return F
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./src/lib/constants/index.ts"),
@@ -339,16 +337,6 @@
 					},
 					method: r.db.DELETE,
 					endpoint: "".concat(n.a.sendbirdServiceUrl, "/").concat("api/v1", "/chat/message/report"),
-					headers: u
-				}), F = (e, t, i, o, d) => Object(s.a)(e, {
-					data: {
-						channel_id: Object(l.a)(t),
-						invitee_id: i,
-						inviter_id: o,
-						reason: d
-					},
-					method: r.db.POST,
-					endpoint: "".concat(n.a.sendbirdServiceUrl, "/").concat("api/v1", "/chat/report/invite"),
 					headers: u
 				})
 		},
@@ -3281,14 +3269,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("5ad7b2a-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("69a2702-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5ad7b2a-production",
+						release: "69a2702-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3716,7 +3704,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "5ad7b2a-production",
+							releaseClient: "69a2702-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -22017,4 +22005,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.6413a7880e598df5cb41.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.8d878c1bc1365ccfe8ad.js.map
