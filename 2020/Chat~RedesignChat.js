@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.906ed94a1242a81ea84f.js
-// Retrieved at 7/30/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b52ba1796972c46c1178.js
+// Retrieved at 7/30/2020, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -3120,7 +3120,8 @@
 					messageId: i,
 					reason: l,
 					reportedUserId: d,
-					reportedUserName: u
+					reportedUserName: u,
+					reporterUserName: h
 				} = e.report;
 				return r.a.createElement(r.a.Fragment, null, n && s && a && i && c && d && u && r.a.createElement(Mn, {
 					channelId: n,
@@ -3132,6 +3133,8 @@
 					reportedUserName: u
 				}), o, r.a.createElement(Un, null, Ln._("Reported for {reason}", [Ln._param("reason", l)], {
 					hk: "2BwGqI"
+				}), " ", h && Ln._("by /u{reporter}", [Ln._param("reporter", h)], {
+					hk: "1hrZNZ"
 				})), t && t.deleted && r.a.createElement(Rn, null, Ln._("Deleted by {username}", [Ln._param("username", "u/".concat(t.deleted.userName))], {
 					hk: "4mxZZS"
 				})), t && t.ignored && r.a.createElement(Pn, null, Ln._("Approved by {username}", [Ln._param("username", "u/".concat(t.ignored.userName))], {
@@ -14027,4 +14030,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.906ed94a1242a81ea84f.js.map
+//# sourceMappingURL=Chat~RedesignChat.b52ba1796972c46c1178.js.map

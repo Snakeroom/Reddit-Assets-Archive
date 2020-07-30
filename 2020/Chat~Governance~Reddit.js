@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b57273ff354015293dca.js
-// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.db8f052e73d908432bad.js
+// Retrieved at 7/30/2020, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -844,6 +844,8 @@
 					reason: e.reason,
 					reportedUserId: e.reported_user_id,
 					reportedUserName: e.reported_user_name,
+					reporterUserId: e.reporter_user_id,
+					reporterUserName: e.reporter_user_name,
 					subredditId: e.subreddit_id,
 					subredditName: e.subreddit_name,
 					actions: Object.assign(Object.assign({}, e.actions && e.actions.deleted && {
@@ -3269,14 +3271,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("0d8ae79-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("f9e833c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0d8ae79-production",
+						release: "f9e833c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3704,7 +3706,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "0d8ae79-production",
+							releaseClient: "f9e833c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -22009,4 +22011,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.b57273ff354015293dca.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.db8f052e73d908432bad.js.map
