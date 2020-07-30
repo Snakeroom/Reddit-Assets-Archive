@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.f3e4d57def3bc89bf0e2.js
-// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.1a1f8a728b8f81819b43.js
+// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ManageChatRoomsModal"], {
 		"./node_modules/lodash/_basePullAt.js": function(e, t, n) {
@@ -1433,7 +1433,7 @@
 			const q = Object(i.c)({
 					isCollectionReady: I.e,
 					isModerator: v.e,
-					selectedSubreddit: w.Q,
+					selectedSubreddit: w.R,
 					shouldRequestCollection: I.f,
 					subredditChannels: I.a
 				}),
@@ -1788,4 +1788,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ManageChatRoomsModal.f3e4d57def3bc89bf0e2.js.map
+//# sourceMappingURL=ManageChatRoomsModal.1a1f8a728b8f81819b43.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.a17bd5dc355af1720d9a.js
-// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.895c26ca952ece779da9.js
+// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -318,16 +318,16 @@
 				k = s("./src/lib/fastdom/index.ts"),
 				B = s("./src/reddit/models/Gold/TopAwarded/index.ts"),
 				L = s("./src/reddit/icons/fonts/Gift/index.tsx"),
-				H = s("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
-				R = s.n(H);
+				R = s("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
+				H = s.n(R);
 			var F = n.a.memo(e => n.a.createElement("button", {
-					className: Object(M.a)(e.className, R.a.addAwardPill),
+					className: Object(M.a)(e.className, H.a.addAwardPill),
 					name: r.fbt._("Give award", null, {
 						hk: "dQR06"
 					}),
 					onClick: e.onAddAward
 				}, n.a.createElement(L.a, {
-					className: R.a.giftIcon
+					className: H.a.giftIcon
 				}))),
 				U = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				D = s("./src/reddit/helpers/awards/getIconForSize.ts"),
@@ -985,7 +985,7 @@
 						triggerOverlayAnimation: () => e(Object(i.b)())
 					}
 				});
-			class He extends n.a.Component {
+			class Re extends n.a.Component {
 				constructor(e) {
 					super(e), this.handleAddAward = async e => {
 						const t = Object(A.d)(A.a.GildingFlow, !0),
@@ -1138,7 +1138,7 @@
 					}))
 				}
 			}
-			t.a = Le(Object(j.c)(He))
+			t.a = Le(Object(j.c)(Re))
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1530,7 +1530,7 @@
 				g = s("./src/reddit/selectors/subreddit.ts");
 			const w = (e, t) => {
 				const s = Object(b.n)(e, t),
-					r = Object(g.H)(e, t);
+					r = Object(g.I)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -1568,7 +1568,7 @@
 			}));
 			const x = (e, t) => {
 				const s = Object(b.n)(e, t),
-					r = Object(g.H)(e, t);
+					r = Object(g.I)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -1594,7 +1594,7 @@
 				}
 			}));
 			var v = Object(n.b)(() => Object(o.c)({
-					subreddit: g.Q
+					subreddit: g.R
 				}))(e => a.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -1706,7 +1706,7 @@
 				}
 			}));
 			var C = Object(n.b)(() => Object(o.c)({
-				subreddit: g.Q
+				subreddit: g.R
 			}))(e => a.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -1719,7 +1719,7 @@
 				}
 			}));
 			var y = Object(n.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(g.K)(e, {
+				subredditOrProfile: (e, t) => Object(g.L)(e, {
 					identifier: t
 				})
 			}))(e => a.a.createElement(h, {
@@ -1738,7 +1738,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(g.Q)(e, {
+					return s ? Object(g.R)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -1844,8 +1844,8 @@
 				k = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				B = s("./src/reddit/helpers/styles/smartTextColor.ts"),
 				L = s("./src/reddit/icons/fonts/Admin/index.tsx"),
-				H = (s("./src/reddit/icons/fonts/Premium/index.tsx"), s("./src/reddit/models/Flair/index.ts")),
-				R = s("./src/reddit/models/NewStructuredStyles/index.ts"),
+				R = (s("./src/reddit/icons/fonts/Premium/index.tsx"), s("./src/reddit/models/Flair/index.ts")),
+				H = s("./src/reddit/models/NewStructuredStyles/index.ts"),
 				F = s("./src/reddit/models/Post/index.ts"),
 				U = s("./src/reddit/models/Subreddit/index.ts"),
 				D = s("./src/reddit/selectors/authorFlair.ts"),
@@ -1860,7 +1860,7 @@
 			! function(e) {
 				e.StickyPost = "sticky", e.Lightbox = "lightbox", e.TopAwardedModal = "topAwarded"
 			}(Q || (Q = {}));
-			const J = e => Object(B.a)(Object(k.a)(e), R.a.metaText, R.b.metaText),
+			const J = e => Object(B.a)(Object(k.a)(e), H.a.metaText, H.b.metaText),
 				Y = l.a.wrapped(_.b, "MetaSeparator", z.a),
 				K = l.a.span("text", z.a),
 				X = Object(G.t)(),
@@ -1895,9 +1895,9 @@
 						post: l
 					}), [l]), k = Object(n.d)(N), B = Object(r.useCallback)(e => Object(q.a)(e, {
 						subredditId: P
-					}), [P]), L = Object(n.d)(B), R = Object(r.useCallback)(e => Object(q.d)(e, {
+					}), [P]), L = Object(n.d)(B), H = Object(r.useCallback)(e => Object(q.d)(e, {
 						subredditId: P
-					}), [P]), G = Object(n.d)(R), W = Object(p.a)(V), Q = i && i.meta && i.meta.name === d.Bb.COMMENTS, X = Object(u.a)(l), $ = G === H.b.Left, ee = l.authorIsContractor && !!S && S.type === U.d.EmployeesOnly, te = !s && !Q, se = () => a.a.createElement(Y, {
+					}), [P]), G = Object(n.d)(H), W = Object(p.a)(V), Q = i && i.meta && i.meta.name === d.Bb.COMMENTS, X = Object(u.a)(l), $ = G === R.b.Left, ee = l.authorIsContractor && !!S && S.type === U.d.EmployeesOnly, te = !s && !Q, se = () => a.a.createElement(Y, {
 						className: e.metaSeparatorClassName
 					}, "•"), re = a.a.createElement(a.a.Fragment, null, !X && a.a.createElement(K, {
 						style: {
@@ -2371,4 +2371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.a17bd5dc355af1720d9a.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.895c26ca952ece779da9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging~Topic.92a2edad69475767f192.js
-// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging~Topic.4ebd6f94f5019e929b69.js
+// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging~Topic"], {
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
@@ -48,7 +48,7 @@
 				f = s("./src/reddit/selectors/userPrefs.ts"),
 				h = s("./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less"),
 				E = s.n(h),
-				v = function(e, t) {
+				S = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -58,10 +58,10 @@
 					return s
 				};
 			const {
-				fbt: S
+				fbt: v
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = u.a.div("BladeContainer", E.a), y = u.a.wrapped(_.a, "CloseIcon", E.a), O = u.a.div("LoadingTitleContainer", E.a), j = u.a.div("LoadingNavContainer", E.a), C = u.a.div("ShortLoadingNav", E.a), L = u.a.wrapped(p.a, "ThemedChevron", E.a), T = e => {
-				var t = v(e, []);
-				return o.a.createElement(N, null, o.a.createElement(y, null), o.a.createElement(b.k, null, o.a.createElement(b.p, null, S._("Back to mod tools", null, {
+				var t = S(e, []);
+				return o.a.createElement(N, null, o.a.createElement(y, null), o.a.createElement(b.k, null, o.a.createElement(b.p, null, v._("Back to mod tools", null, {
 					hk: "1YCI0W"
 				})), o.a.createElement(b.o, null, o.a.createElement(O, null, o.a.createElement("div", {
 					className: Object(d.a)(E.a.LoadingTitle, t.isLoading && E.a.loading)
@@ -165,7 +165,7 @@
 			})), s.d(t, "d", (function() {
 				return E
 			})), s.d(t, "j", (function() {
-				return v
+				return S
 			}));
 			var n = s("./src/lib/lessComponent.tsx"),
 				r = s("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -185,7 +185,7 @@
 				f = n.a.div("FormElementDescription", a.a),
 				h = n.a.div("FormElementError", a.a),
 				E = n.a.div("FormElementSubGroup", a.a),
-				v = n.a.li("FormListItem", a.a)
+				S = n.a.li("FormListItem", a.a)
 		},
 		"./src/reddit/components/SubscribeButton/Base.m.less": function(e, t, s) {
 			e.exports = {
@@ -262,7 +262,7 @@
 						})
 					}))
 				}, "SubscribeIconButton", m.a),
-				v = p.a.wrapped(e => {
+				S = p.a.wrapped(e => {
 					var {
 						border: t,
 						small: s
@@ -277,7 +277,7 @@
 						})
 					}))
 				}, "SubscribeInternalButton", m.a),
-				S = e => {
+				v = e => {
 					var {
 						icon: t
 					} = e, s = x(e, ["icon"]);
@@ -285,7 +285,7 @@
 						className: Object(b.a)(s.className, {
 							[m.a.isSmall]: s.small
 						})
-					})) : a.a.createElement(v, _({}, s, {
+					})) : a.a.createElement(S, _({}, s, {
 						className: Object(b.a)(s.className, {
 							[m.a.isSmall]: s.small
 						})
@@ -373,7 +373,7 @@
 					};
 					return this.props.userIsSubscriber ? a.a.createElement(O, _({}, o, {
 						buttonType: this.props.identifier.type
-					})) : a.a.createElement(S, _({}, o, {
+					})) : a.a.createElement(v, _({}, o, {
 						id: n
 					}), this.props.children, Object(d.a)({
 						type: this.props.identifier.type,
@@ -487,16 +487,16 @@
 				f = s("./src/reddit/components/SubscribeButton/index.tsx"),
 				h = s("./src/reddit/constants/posts.ts"),
 				E = s("./src/reddit/controls/InternalLink/index.tsx"),
-				v = s("./src/reddit/helpers/name/index.ts"),
-				S = s("./src/reddit/models/Widgets/index.ts"),
+				S = s("./src/reddit/helpers/name/index.ts"),
+				v = s("./src/reddit/models/Widgets/index.ts"),
 				N = s("./src/reddit/selectors/subreddit.ts"),
 				y = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				j = s.n(O);
 			const C = Object(_.c)({
 				isLoggedIn: y.H,
-				subreddit: N.Q,
-				subredditAboutInfo: N.v
+				subreddit: N.R,
+				subredditAboutInfo: N.w
 			});
 			class L extends r.a.Component {
 				constructor() {
@@ -508,7 +508,7 @@
 							subredditAboutInfo: n
 						} = this.props;
 						if (!s) return;
-						const r = Object(S.i)(s, n);
+						const r = Object(v.i)(s, n);
 						t(Object(u.u)(e, r))
 					}
 				}
@@ -531,7 +531,7 @@
 						to: s.url
 					}, r.a.createElement("div", {
 						className: j.a.Name
-					}, Object(v.b)(s.displayText || s.name)), r.a.createElement("div", {
+					}, Object(S.b)(s.displayText || s.name)), r.a.createElement("div", {
 						className: j.a.Members
 					}, b.fbt._({
 						"*": "{subscribers count} members",
@@ -665,7 +665,7 @@
 				a = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: o.bb
+				userIsSubscriber: o.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -705,4 +705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging~Topic.92a2edad69475767f192.js.map
+//# sourceMappingURL=Geotagging~Topic.4ebd6f94f5019e929b69.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.13f803d20e376ea60ce6.js
-// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.1e0a238e47d20c2427a4.js
+// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -77,7 +77,7 @@
 			const h = b.a.wrapped(l.b, "SubredditIcon", p.a),
 				x = b.a.span("Label", p.a),
 				f = Object(c.c)({
-					subredditOrProfile: u.K
+					subredditOrProfile: u.L
 				});
 			var E = Object(a.b)(f)(e => {
 				let {
@@ -1555,4 +1555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.13f803d20e376ea60ce6.js.map
+//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.1e0a238e47d20c2427a4.js.map

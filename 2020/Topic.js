@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.188dd961c4b0914d2fa5.js
-// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.7c41f6ad7039466ca0c9.js
+// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -654,7 +654,7 @@
 				fbt: oe
 			} = i("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(r.c)({
 				isLoggedIn: ne.H,
-				subreddit: se.Q,
+				subreddit: se.R,
 				subredditAboutInfo: (e, t) => {
 					let {
 						subredditId: i
@@ -966,4 +966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Topic.188dd961c4b0914d2fa5.js.map
+//# sourceMappingURL=Topic.7c41f6ad7039466ca0c9.js.map
