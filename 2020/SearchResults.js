@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.3f61705bc6ab05e8ebd7.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.cb3025060606563cdecc.js
+// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2209,7 +2209,7 @@
 							searchOptions: i
 						} = this.props;
 						let c;
-						return (c = "subreddit" === t && i ? u.J(i, o, r, a) : a && i ? u.K(i, o, r, a) : u.v(s, n))(e)
+						return (c = "subreddit" === t && i ? u.K(i, o, r, a) : a && i ? u.L(i, o, r, a) : u.v(s, n))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -4667,13 +4667,13 @@
 					navigateToSubreddit: t => {
 						e((e, n) => {
 							s ? h.t(n(), s, t) : o && h.N(n(), o, t), t.displayText && e(Object(j.b)("/".concat(t.displayText)))
-						}), o && a && t.id && e((e, s) => h.I(s(), a, r, {
+						}), o && a && t.id && e((e, s) => h.J(s(), a, r, {
 							id: t.id,
 							type: t.type
 						}, n, o))
 					},
 					onCommunityClick: t => {
-						o && a && e((e, s) => h.I(s(), a, r, t, n, o))
+						o && a && e((e, s) => h.J(s(), a, r, t, n, o))
 					}
 				}
 			});
@@ -6059,7 +6059,7 @@
 							post: a
 						} = this.props;
 						let i;
-						return (i = "subreddit" === t ? h.J(r, o, s, n) : a && a.isSponsored ? h.H(r, o, s, n) : h.K(r, o, s, n))(e)
+						return (i = "subreddit" === t ? h.K(r, o, s, n) : a && a.isSponsored ? h.I(r, o, s, n) : h.L(r, o, s, n))(e)
 					}
 				}
 				componentDidMount() {
@@ -9691,4 +9691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.3f61705bc6ab05e8ebd7.js.map
+//# sourceMappingURL=SearchResults.cb3025060606563cdecc.js.map

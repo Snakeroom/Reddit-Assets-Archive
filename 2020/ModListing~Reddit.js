@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.f9cec58351fc711368c3.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.543204a045ae307e9829.js
+// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1772,7 +1772,7 @@
 				d = n.n(c);
 			class l extends s.a.Component {
 				componentDidMount() {
-					this.props.noFocus || this.ref && this.ref.focus({
+					this.props.onDropdownMounted && this.props.onDropdownMounted(), this.props.noFocus || this.ref && this.ref.focus({
 						preventScroll: this.props.isOverlay
 					})
 				}
@@ -1784,10 +1784,12 @@
 						t = {};
 					return (e.isFixed || e.isOverlay) && (e.isFixed && (t.position = "fixed"), e.isOverlay && (t.zIndex = e.isFixed ? i.d + 1 : i.c)), s.a.createElement("div", {
 						className: Object(o.a)(d.a.dropdown, e.className),
+						id: this.props.id,
 						ref: e => this.ref = e,
 						role: "menu",
 						style: Object.assign(Object.assign({}, t), e.style),
-						tabIndex: -1
+						tabIndex: -1,
+						onScroll: e.onScroll
 					}, e.children)
 				}
 			}
@@ -2170,9 +2172,9 @@
 			})), n.d(t, "o", (function() {
 				return B
 			})), n.d(t, "q", (function() {
-				return L
-			})), n.d(t, "d", (function() {
 				return M
+			})), n.d(t, "d", (function() {
+				return L
 			})), n.d(t, "c", (function() {
 				return D
 			})), n.d(t, "p", (function() {
@@ -2540,12 +2542,12 @@
 					noun: "screen",
 					subreddit: h.subreddit(e)
 				}, h.defaults(e)),
-				L = () => e => Object.assign({
+				M = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, h.defaults(e)),
-				M = () => e => Object.assign({
+				L = () => e => Object.assign({
 					action: "view",
 					source: "global",
 					noun: "screen"
@@ -3157,4 +3159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.f9cec58351fc711368c3.js.map
+//# sourceMappingURL=ModListing~Reddit.543204a045ae307e9829.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.759cd2d1e806c0b78b5b.js
-// Retrieved at 7/30/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.06f3aaf7ebfb17e4f9be.js
+// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -28322,78 +28322,78 @@
 				return I
 			})), s.d(t, "E", (function() {
 				return S
-			})), s.d(t, "L", (function() {
+			})), s.d(t, "F", (function() {
 				return v
 			})), s.d(t, "M", (function() {
-				return T
-			})), s.d(t, "B", (function() {
 				return w
-			})), s.d(t, "C", (function() {
+			})), s.d(t, "B", (function() {
 				return C
-			})), s.d(t, "D", (function() {
+			})), s.d(t, "C", (function() {
 				return A
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "D", (function() {
 				return D
-			})), s.d(t, "w", (function() {
+			})), s.d(t, "i", (function() {
 				return R
-			})), s.d(t, "x", (function() {
+			})), s.d(t, "w", (function() {
 				return P
-			})), s.d(t, "K", (function() {
+			})), s.d(t, "x", (function() {
 				return x
-			})), s.d(t, "J", (function() {
+			})), s.d(t, "L", (function() {
 				return k
-			})), s.d(t, "H", (function() {
+			})), s.d(t, "K", (function() {
 				return N
-			})), s.d(t, "v", (function() {
-				return L
-			})), s.d(t, "y", (function() {
-				return U
-			})), s.d(t, "z", (function() {
-				return M
-			})), s.d(t, "A", (function() {
-				return F
-			})), s.d(t, "N", (function() {
-				return G
 			})), s.d(t, "I", (function() {
+				return L
+			})), s.d(t, "v", (function() {
+				return U
+			})), s.d(t, "y", (function() {
+				return M
+			})), s.d(t, "z", (function() {
+				return F
+			})), s.d(t, "A", (function() {
+				return G
+			})), s.d(t, "N", (function() {
 				return B
-			})), s.d(t, "t", (function() {
+			})), s.d(t, "J", (function() {
 				return q
-			})), s.d(t, "G", (function() {
+			})), s.d(t, "t", (function() {
 				return V
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "H", (function() {
 				return H
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return K
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "c", (function() {
 				return W
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "b", (function() {
 				return Y
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "f", (function() {
 				return z
+			})), s.d(t, "e", (function() {
+				return Q
 			})), s.d(t, "s", (function() {
-				return X
-			})), s.d(t, "m", (function() {
 				return Z
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "m", (function() {
 				return $
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "r", (function() {
 				return ee
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "k", (function() {
 				return te
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "l", (function() {
 				return se
-			})), s.d(t, "p", (function() {
+			})), s.d(t, "n", (function() {
 				return ne
-			})), s.d(t, "q", (function() {
+			})), s.d(t, "p", (function() {
 				return re
-			})), s.d(t, "o", (function() {
+			})), s.d(t, "q", (function() {
 				return ae
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "o", (function() {
 				return ce
-			})), s.d(t, "u", (function() {
+			})), s.d(t, "j", (function() {
 				return ie
-			})), s.d(t, "F", (function() {
+			})), s.d(t, "u", (function() {
 				return oe
+			})), s.d(t, "G", (function() {
+				return de
 			}));
 			var n, r = s("./src/lib/stringInterpolate/index.ts"),
 				a = s("./src/reddit/actions/focusedVerticals/constants.ts"),
@@ -28466,10 +28466,16 @@
 				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
 			}(I || (I = {}));
 			const S = (e, t, s) => {
-					const n = e.trending.models.filter(e => !e.post || !e.post.isSponsored).findIndex(e => e.id === t.id) + 1;
-					Object(O.a)(Object.assign(Object.assign({}, b.defaults(e)), {
+					Object(O.a)(T(e, t, s, c.c.CLICK))
+				},
+				v = (e, t, s) => {
+					Object(O.a)(T(e, t, s, c.c.VIEW))
+				},
+				T = (e, t, s, n) => {
+					const r = e.trending.models.filter(e => !e.post || !e.post.isSponsored).findIndex(e => e.id === t.id) + 1;
+					return Object.assign(Object.assign({}, b.defaults(e)), {
 						source: "search",
-						action: "click",
+						action: n,
 						noun: "trending",
 						metaSearch: E(t),
 						discoveryUnit: s === I.POPULAR_CAROUSEL ? {
@@ -28480,62 +28486,44 @@
 						} : void 0,
 						actionInfo: b.actionInfo(e, {
 							paneName: s,
-							position: n
+							position: r
 						}),
 						search: {
 							originPageType: e.platform.currentPage ? b.getPageTypeFromCurrentPage(e.platform.currentPage) : void 0,
 							query: t.rawQuery,
 							structureType: b.StructureType.Trending,
-							queryId: Object(i.c)(i.a.SearchResults)
+							queryId: n === c.c.CLICK ? Object(i.c)(i.a.SearchResults) : void 0
 						}
-					}))
+					})
 				},
-				v = (e, t) => {
-					const s = t.post ? t.post.id : void 0;
-					Object(O.a)(Object.assign(Object.assign({}, ((e, t) => Object.assign(Object.assign({}, b.defaults(e)), {
-						correlationId: Object(i.c)(i.a.SearchResults),
-						screen: b.screen(e),
-						noun: "search_result_discovery_unit",
-						post: t ? b.post(e, t) : null,
-						discoveryUnit: {
-							name: d.l,
-							id: "xd_72",
-							type: "listing"
-						}
-					}))(e, s)), {
-						metaSearch: E(t),
-						source: "search",
-						action: "view"
-					}))
-				},
-				T = (e, t, s, n, r, a, i) => {
+				w = (e, t, s, n, r, a, i) => {
 					Object(O.a)(Object.assign(Object.assign(Object.assign({}, b.defaults(e)), Object(o.e)(e, s, n, r, a, t)), {
 						action: c.c.VIEW,
 						noun: i ? "ad" : "post"
 					}))
 				},
-				w = (e, t, s, n) => {
+				C = (e, t, s, n) => {
 					Object(O.a)(y(e, t, s, n))
 				},
-				C = (e, t, s, n) => r => y(r, e, t, s, n),
-				A = (e, t, s, r) => {
+				A = (e, t, s, n) => r => y(r, e, t, s, n),
+				D = (e, t, s, r) => {
 					const a = h(e, t, r);
 					Object(O.a)(Object.assign(Object.assign(Object.assign({}, a), Object(p.b)(e, s)), {
 						action: "view",
 						noun: n.ITEM_SUBREDDIT
 					}))
 				},
-				D = (e, t) => {
+				R = (e, t) => {
 					Object(O.a)(Object.assign(Object.assign({}, f(e, t)), {
 						source: g,
 						action: c.c.CLICK,
 						noun: "show_less_often"
 					}))
 				},
-				R = (e, t, s, n) => {
-					Object(O.a)(P(t, s, n)(e))
+				P = (e, t, s, n) => {
+					Object(O.a)(x(t, s, n)(e))
 				},
-				P = (e, t, s, r) => a => {
+				x = (e, t, s, r) => a => {
 					const i = h(a, e, s, r);
 					return Object.assign(Object.assign({}, i), {
 						source: g,
@@ -28544,21 +28532,21 @@
 						post: b.post(a, t)
 					})
 				},
-				x = (e, t, s, n) => r => a => Object(o.e)(a, r, e, t, s, n),
-				k = (e, t, s, n) => r => a => Object(o.d)(a, e, t, void 0, s, r, n),
-				N = (e, t, s, n) => r => a => Object.assign(Object.assign({}, Object(o.e)(a, r, e, t, s, n)), {
+				k = (e, t, s, n) => r => a => Object(o.e)(a, r, e, t, s, n),
+				N = (e, t, s, n) => r => a => Object(o.d)(a, e, t, void 0, s, r, n),
+				L = (e, t, s, n) => r => a => Object.assign(Object.assign({}, Object(o.e)(a, r, e, t, s, n)), {
 					noun: "ad"
 				}),
-				L = (e, t) => s => r => Object.assign(Object.assign({}, e ? f(r, e, t) : {}), {
+				U = (e, t) => s => r => Object.assign(Object.assign({}, e ? f(r, e, t) : {}), {
 					source: g,
 					action: c.c.CLICK,
 					noun: n.ITEM_POST,
 					post: b.post(r, s)
 				}),
-				U = (e, t, s, n) => {
-					Object(O.a)(M(t, s, n)(e))
+				M = (e, t, s, n) => {
+					Object(O.a)(F(t, s, n)(e))
 				},
-				M = (e, t, s, n) => r => {
+				F = (e, t, s, n) => r => {
 					const a = Object(l.c)(r, {
 							postId: t
 						}),
@@ -28571,7 +28559,7 @@
 						post: b.post(r, t)
 					})
 				},
-				F = (e, t, s) => n => r => {
+				G = (e, t, s) => n => r => {
 					const a = Object(l.c)(r, {
 							postId: t
 						}),
@@ -28584,7 +28572,7 @@
 						post: b.post(r, t)
 					})
 				},
-				G = (e, t, s) => {
+				B = (e, t, s) => {
 					const n = h(e, t);
 					Object(O.a)(Object.assign(Object.assign(Object.assign({}, n), Object(p.b)(e, s)), {
 						source: "search",
@@ -28592,10 +28580,10 @@
 						noun: "search_result_discovery_unit_subreddit"
 					}))
 				},
-				B = (e, t, s, n, r, a) => {
+				q = (e, t, s, n, r, a) => {
 					Object(O.a)(Object.assign(Object.assign({}, b.defaults(e)), Object(o.d)(e, t, s, n, r, void 0, a)))
 				},
-				q = (e, t, s) => {
+				V = (e, t, s) => {
 					const n = h(e, t);
 					Object(O.a)(Object.assign(Object.assign(Object.assign({}, n), Object(p.b)(e, s)), {
 						source: g,
@@ -28603,7 +28591,7 @@
 						noun: "footer_subreddit"
 					}))
 				},
-				V = (e, t) => s => {
+				H = (e, t) => s => {
 					const n = Object(u.j)(t);
 					return Object.assign(Object.assign(Object.assign({}, f(s, e, t)), Object(p.b)(s, n)), {
 						source: g,
@@ -28611,14 +28599,14 @@
 						noun: "title_subreddit"
 					})
 				},
-				H = (e, t) => s => Object.assign(Object.assign({}, f(s, e, t)), {
+				K = (e, t) => s => Object.assign(Object.assign({}, f(s, e, t)), {
 					action: "status",
 					actionInfo: b.actionInfo(s, {
 						success: !0
 					}),
 					noun: "loading"
 				}),
-				K = (e, t, s) => n => Object.assign(Object.assign({}, f(n, e, s)), {
+				W = (e, t, s) => n => Object.assign(Object.assign({}, f(n, e, s)), {
 					action: "status",
 					actionInfo: b.actionInfo(n, {
 						reason: t,
@@ -28626,19 +28614,19 @@
 					}),
 					noun: "loading"
 				}),
-				W = (e, t) => s => Object.assign(Object.assign({}, f(s, e, t)), {
+				Y = (e, t) => s => Object.assign(Object.assign({}, f(s, e, t)), {
 					action: "click",
 					noun: "close"
 				}),
-				Y = (e, t, s) => n => Object.assign(Object.assign({}, h(n, e, t, s)), {
+				z = (e, t, s) => n => Object.assign(Object.assign({}, h(n, e, t, s)), {
 					action: "click",
 					noun: "scroll"
 				}),
-				z = (e, t) => s => Object.assign(Object.assign({}, f(s, e, t)), {
+				Q = (e, t) => s => Object.assign(Object.assign({}, f(s, e, t)), {
 					action: "click",
 					noun: "overflow_menu"
 				}),
-				Q = () => ({
+				J = () => ({
 					id: "xd_focus_verticals",
 					unitType: d.f.Listing,
 					experiment: "",
@@ -28649,46 +28637,46 @@
 					surface: d.e.Frontpage,
 					url: "gql.reddit.com"
 				}),
-				J = (e, t, s) => b.actionInfo(e, {
+				X = (e, t, s) => b.actionInfo(e, {
 					position: s
 				}),
-				X = (e, t, s) => {
-					const n = Q();
+				Z = (e, t, s) => {
+					const n = J();
 					return e => Object.assign(Object.assign({}, m(e, n)), {
-						actionInfo: J(e, 0, s),
+						actionInfo: X(e, 0, s),
 						subreddit: b.subredditById(e, t)
 					})
 				},
-				Z = (e, t, s) => {
-					const n = Q();
+				$ = (e, t, s) => {
+					const n = J();
 					return e => Object.assign(Object.assign({}, y(e, n, t)), {
-						actionInfo: J(e, 0, s)
+						actionInfo: X(e, 0, s)
 					})
 				},
-				$ = (e, t, s) => {
-					const r = Q();
+				ee = (e, t, s) => {
+					const r = J();
 					return e => Object.assign(Object.assign({}, f(e, r)), {
-						actionInfo: J(e, 0, s),
+						actionInfo: X(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						source: g,
 						action: c.c.VIEW,
 						noun: n.ITEM_SUBREDDIT
 					})
 				},
-				ee = (e, t, s) => {
-					const r = Q();
+				te = (e, t, s) => {
+					const r = J();
 					return e => Object.assign(Object.assign({}, f(e, r)), {
-						actionInfo: J(e, 0, s),
+						actionInfo: X(e, 0, s),
 						post: b.post(e, t) || null,
 						source: g,
 						action: c.c.CLICK,
 						noun: n.ITEM_POST
 					})
 				},
-				te = (e, t, s, r) => {
-					const a = Q();
+				se = (e, t, s, r) => {
+					const a = J();
 					return e => Object.assign(Object.assign({}, f(e, a)), {
-						actionInfo: J(e, 0, r),
+						actionInfo: X(e, 0, r),
 						subreddit: b.subredditById(e, s) || null,
 						post: b.post(e, t) || null,
 						source: g,
@@ -28696,20 +28684,20 @@
 						noun: n.ITEM_POST_SUBREDDIT
 					})
 				},
-				se = (e, t, s) => {
-					const r = Q();
+				ne = (e, t, s) => {
+					const r = J();
 					return e => Object.assign(Object.assign({}, f(e, r)), {
-						actionInfo: J(e, 0, s),
+						actionInfo: X(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						source: g,
 						action: c.c.CLICK,
 						noun: n.ITEM_SUBREDDIT
 					})
 				},
-				ne = (e, t, s, r) => {
-					const a = Q();
+				re = (e, t, s, r) => {
+					const a = J();
 					return e => Object.assign(Object.assign({}, f(e, a)), {
-						actionInfo: J(e, 0, s),
+						actionInfo: X(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						post: r ? b.post(e, r) : null,
 						source: g,
@@ -28717,10 +28705,10 @@
 						noun: n.ITEM_SUBREDDIT_SUBSCRIBE
 					})
 				},
-				re = (e, t, s, r) => {
-					const a = Q();
+				ae = (e, t, s, r) => {
+					const a = J();
 					return e => Object.assign(Object.assign({}, f(e, a)), {
-						actionInfo: J(e, 0, s),
+						actionInfo: X(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						post: r ? b.post(e, r) : null,
 						source: g,
@@ -28728,32 +28716,32 @@
 						noun: n.ITEM_SUBREDDIT_UNSUBSCRIBE
 					})
 				},
-				ae = (e, t, s) => {
-					const r = Q();
+				ce = (e, t, s) => {
+					const r = J();
 					return e => Object.assign(Object.assign({}, f(e, r)), {
-						actionInfo: J(e, 0, s),
+						actionInfo: X(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						source: g,
 						action: c.c.CLICK,
 						noun: n.ITEM_SUBREDDIT_HIDE
 					})
 				},
-				ce = (e, t, s) => {
-					const r = Q();
+				ie = (e, t, s) => {
+					const r = J();
 					return e => Object.assign(Object.assign({}, f(e, r)), {
-						actionInfo: J(e, 0, s),
+						actionInfo: X(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						source: g,
 						action: c.c.CLICK,
 						noun: n.HEADER_SUBREDDIT
 					})
 				},
-				ie = (e, t) => s => Object.assign(Object.assign(Object.assign({}, f(s, e)), t && Object(p.b)(s, t)), {
+				oe = (e, t) => s => Object.assign(Object.assign(Object.assign({}, f(s, e)), t && Object(p.b)(s, t)), {
 					source: g,
 					action: c.c.CLICK,
 					noun: "item"
 				}),
-				oe = e => t => Object.assign(Object.assign({}, f(t, e)), {
+				de = e => t => Object.assign(Object.assign({}, f(t, e)), {
 					source: g,
 					action: c.c.CLICK,
 					noun: "see_all"
@@ -54981,4 +54969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.759cd2d1e806c0b78b5b.js.map
+//# sourceMappingURL=Governance~Reddit.06f3aaf7ebfb17e4f9be.js.map

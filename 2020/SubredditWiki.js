@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.b9e98b1deca63cc14f0a.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.bc737b7118301a9cb9e4.js
+// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -2796,6 +2796,7 @@
 				const {
 					backgroundWrapperClassName: t,
 					descriptionClassName: s,
+					id: i,
 					innerContainerClassName: c,
 					onPostClick: p,
 					trendingPost: h,
@@ -2803,88 +2804,72 @@
 					shouldOpenPost: w,
 					showSubredditMeta: j = !0,
 					showSubredditName: _,
-					subredditOrProfile: N,
-					trackPostView: S
-				} = e;
-				Object(i.useEffect)(() => {
-					S && S(k)
-				}, [S, k]);
-				const I = h && h.preview && h.preview.url || void 0,
-					T = h && h.isSponsored ? "promoted_trend" : "trending",
-					P = h && Object(l.a)(h.permalink) || "",
-					R = w && P || k && Object(o.a)("/search", {
-						q: k.rawQuery,
-						source: T
-					}) || P,
-					L = k ? k.subredditInfo && k.subredditInfo.icon : N && N.icon.url,
-					D = k ? k.subredditInfo && k.subredditInfo.displayText : N && (N.displayText || N.name),
-					M = h ? h.flair.filter(E) : [],
-					W = h ? h.score : 0,
-					B = h ? h.numComments : 0,
-					F = h && h.isSponsored,
-					A = Object(y.a)(e).body,
-					U = "linear-gradient(\n      ".concat(Object(r.g)(A, .2), ",\n      ").concat(Object(r.g)(A, .3), ",\n      ").concat(Object(r.g)(A, .4), ",\n      ").concat(Object(r.g)(A, .6), ",\n      ").concat(Object(r.g)(A, .8), ",\n      ").concat(A, "\n    )"),
-					H = a.a.createElement("div", {
-						className: Object(d.a)(C.a.trendingPost, {
-							[C.a["m-background"]]: !!I
-						})
-					}, a.a.createElement(g.a, {
-						to: R
-					}, a.a.createElement("div", {
-						className: Object(d.a)(C.a.backgroundWrapper, v.a.backgroundWrapper, t),
-						style: {
-							background: Object(O.g)(Object(y.a)(e).body, I || Object(y.a)(e).banner.backgroundImage, "cover"),
-							"--SearchDiscoveryUnits-TrendingPosts-Post-background": U
-						}
-					}, F && a.a.createElement("div", {
-						className: C.a.promoted
-					}, n.fbt._("promoted", null, {
-						hk: "1mLJfa"
-					})), a.a.createElement("div", {
-						className: Object(d.a)(C.a.innerContainer, v.a.innerContainer, c),
-						onClick: p,
-						title: h ? h.title : ""
-					}, a.a.createElement("h2", {
-						className: h ? C.a.title : C.a.titleNoDescription
-					}, e.title), h ? a.a.createElement("div", {
-						className: Object(d.a)(C.a.description, s)
-					}, M.length > 0 && a.a.createElement(m.a, {
-						className: C.a.flair,
-						titleFlair: M,
-						nowrap: !0,
-						post: h,
-						showCategoryTag: !1
-					}), h.title) : a.a.createElement("div", {
-						className: C.a.spacer
-					}), j && L && D && a.a.createElement(f.a, {
-						className: C.a.relatedSubredditMetaData,
-						iconClassName: C.a.subredditIcon,
-						iconUrl: L || void 0,
-						suffix: n.fbt._("{subredditName} and more", [n.fbt._param("subredditName", D)], {
-							hk: "2YTyJf"
-						})
-					}), !j && h && a.a.createElement("div", {
-						className: C.a.metaLine
-					}, _ && D && a.a.createElement("span", {
-						className: C.a.meta
-					}, Object(x.b)(D)), a.a.createElement("span", {
-						className: C.a.meta
-					}, n.fbt._({
-						"*": "{number} points",
-						_1: "1 point"
-					}, [n.fbt._plural(W, "number", Object(u.b)(W))], {
-						hk: "1Jm6il"
-					})), a.a.createElement("span", {
-						className: C.a.meta
-					}, n.fbt._({
-						"*": "{number} comments",
-						_1: "1 comment"
-					}, [n.fbt._plural(B, "number", Object(u.b)(B))], {
-						hk: "311aXY"
-					})))))));
-				return F ? a.a.createElement(b.a, {
+					subredditOrProfile: N
+				} = e, S = h && h.preview && h.preview.url || void 0, I = h && h.isSponsored ? "promoted_trend" : "trending", T = h && Object(l.a)(h.permalink) || "", P = w && T || k && Object(o.a)("/search", {
+					q: k.rawQuery,
+					source: I
+				}) || T, R = k ? k.subredditInfo && k.subredditInfo.icon : N && N.icon.url, L = k ? k.subredditInfo && k.subredditInfo.displayText : N && (N.displayText || N.name), D = h ? h.flair.filter(E) : [], M = h ? h.score : 0, W = h ? h.numComments : 0, B = h && h.isSponsored, F = Object(y.a)(e).body, A = "linear-gradient(\n      ".concat(Object(r.g)(F, .2), ",\n      ").concat(Object(r.g)(F, .3), ",\n      ").concat(Object(r.g)(F, .4), ",\n      ").concat(Object(r.g)(F, .6), ",\n      ").concat(Object(r.g)(F, .8), ",\n      ").concat(F, "\n    )"), U = a.a.createElement("div", {
+					id: i,
+					className: Object(d.a)(C.a.trendingPost, {
+						[C.a["m-background"]]: !!S
+					})
+				}, a.a.createElement(g.a, {
+					to: P
+				}, a.a.createElement("div", {
+					className: Object(d.a)(C.a.backgroundWrapper, v.a.backgroundWrapper, t),
+					style: {
+						background: Object(O.g)(Object(y.a)(e).body, S || Object(y.a)(e).banner.backgroundImage, "cover"),
+						"--SearchDiscoveryUnits-TrendingPosts-Post-background": A
+					}
+				}, B && a.a.createElement("div", {
+					className: C.a.promoted
+				}, n.fbt._("promoted", null, {
+					hk: "1mLJfa"
+				})), a.a.createElement("div", {
+					className: Object(d.a)(C.a.innerContainer, v.a.innerContainer, c),
+					onClick: p,
+					title: h ? h.title : ""
+				}, a.a.createElement("h2", {
+					className: h ? C.a.title : C.a.titleNoDescription
+				}, e.title), h ? a.a.createElement("div", {
+					className: Object(d.a)(C.a.description, s)
+				}, D.length > 0 && a.a.createElement(m.a, {
+					className: C.a.flair,
+					titleFlair: D,
+					nowrap: !0,
+					post: h,
+					showCategoryTag: !1
+				}), h.title) : a.a.createElement("div", {
+					className: C.a.spacer
+				}), j && R && L && a.a.createElement(f.a, {
+					className: C.a.relatedSubredditMetaData,
+					iconClassName: C.a.subredditIcon,
+					iconUrl: R || void 0,
+					suffix: n.fbt._("{subredditName} and more", [n.fbt._param("subredditName", L)], {
+						hk: "2YTyJf"
+					})
+				}), !j && h && a.a.createElement("div", {
+					className: C.a.metaLine
+				}, _ && L && a.a.createElement("span", {
+					className: C.a.meta
+				}, Object(x.b)(L)), a.a.createElement("span", {
+					className: C.a.meta
+				}, n.fbt._({
+					"*": "{number} points",
+					_1: "1 point"
+				}, [n.fbt._plural(M, "number", Object(u.b)(M))], {
+					hk: "1Jm6il"
+				})), a.a.createElement("span", {
+					className: C.a.meta
+				}, n.fbt._({
+					"*": "{number} comments",
+					_1: "1 comment"
+				}, [n.fbt._plural(W, "number", Object(u.b)(W))], {
+					hk: "311aXY"
+				})))))));
+				return B ? a.a.createElement(b.a, {
 					post: h
-				}, H) : H
+				}, U) : U
 			})))
 		},
 		"./src/reddit/components/SidebarContainer/index.m.less": function(e, t, s) {
@@ -7214,4 +7199,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.b9e98b1deca63cc14f0a.js.map
+//# sourceMappingURL=SubredditWiki.bc737b7118301a9cb9e4.js.map

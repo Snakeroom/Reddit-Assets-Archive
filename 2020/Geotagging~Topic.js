@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging~Topic.4ebd6f94f5019e929b69.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging~Topic.dfe062543088dbd43450.js
+// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging~Topic"], {
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
@@ -578,9 +578,9 @@
 				k = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
 				I = s.n(k);
 			const {
-				fbt: F
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = 8, A = Array.from({
-				length: w
+				fbt: w
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, A = Array.from({
+				length: F
 			}).map((e, t) => r.a.createElement(B, {
 				className: I.a.Subreddit,
 				key: t
@@ -596,7 +596,7 @@
 			class W extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.F)(J)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.G)(J)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -604,14 +604,14 @@
 						className: e,
 						subredditIds: t,
 						topicUrl: s
-					} = this.props, n = t.slice(0, w);
+					} = this.props, n = t.slice(0, F);
 					return r.a.createElement(i.a, {
 						className: Object(o.a)(I.a.Container, e)
 					}, r.a.createElement("div", {
 						className: I.a.Title
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
-					}, F._("Top Communities", null, {
+					}, w._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
 						className: I.a.SubredditList
@@ -620,12 +620,12 @@
 						discoveryUnit: J,
 						key: e,
 						subredditId: e
-					})) : A), t.length > w && r.a.createElement(a.a, {
+					})) : A), t.length > F && r.a.createElement(a.a, {
 						to: s
 					}, r.a.createElement(d.n, {
 						className: I.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
-					}, F._("See more", null, {
+					}, w._("See more", null, {
 						hk: "2qkY6H"
 					}))))
 				}
@@ -705,4 +705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging~Topic.4ebd6f94f5019e929b69.js.map
+//# sourceMappingURL=Geotagging~Topic.dfe062543088dbd43450.js.map

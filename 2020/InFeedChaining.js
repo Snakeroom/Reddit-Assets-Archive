@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.9f755c05c09c3905385f.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.3309181a405ac9020200.js
+// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -335,7 +335,7 @@
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return Y
+				return q
 			}));
 			t("./node_modules/core-js/modules/es6.symbol.js");
 			var r = t("./node_modules/react/index.js"),
@@ -573,10 +573,10 @@
 					}))
 				}
 			}
-			const G = Object(m.a)(Object(a.a)(Z));
-			class Y extends i.a.Component {
+			const Y = Object(m.a)(Object(a.a)(Z));
+			class q extends i.a.Component {
 				render() {
-					return i.a.createElement(G, this.props)
+					return i.a.createElement(Y, this.props)
 				}
 			}
 		},
@@ -722,7 +722,7 @@
 							discoveryUnit: e,
 							postSubreddit: s
 						} = this.props;
-						e && s && this.props.sendEvent(Object(y.G)(e, s))
+						e && s && this.props.sendEvent(Object(y.H)(e, s))
 					}, this.trackPostSubredditOrProfileClicked = e => {
 						const {
 							discoveryUnit: s,
@@ -1228,4 +1228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.9f755c05c09c3905385f.js.map
+//# sourceMappingURL=InFeedChaining.3309181a405ac9020200.js.map

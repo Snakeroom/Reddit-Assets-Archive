@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c012e9748ebb1e80181a.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.98f207a6ddbfeb710742.js
+// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -804,18 +804,20 @@
 			t.a = e => {
 				const {
 					className: t,
-					layoutBodyClassName: s,
-					showCardView: n
-				} = e, a = {
-					[c.a["m-card"]]: n
+					id: s,
+					layoutBodyClassName: n,
+					showCardView: a
+				} = e, d = {
+					[c.a["m-card"]]: a
 				};
 				return r.a.createElement("div", {
-					className: Object(o.a)(c.a.container, a, t)
+					id: s,
+					className: Object(o.a)(c.a.container, d, t)
 				}, r.a.createElement(i.a, {
 					className: c.a.layout,
-					bodyClassName: Object(o.a)(c.a.layoutBody, a, s),
+					bodyClassName: Object(o.a)(c.a.layoutBody, d, n),
 					header: e.header,
-					headerClassName: Object(o.a)(c.a.layoutHeader, a)
+					headerClassName: Object(o.a)(c.a.layoutHeader, d)
 				}, e.children))
 			}
 		},
@@ -2086,4 +2088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.c012e9748ebb1e80181a.js.map
+//# sourceMappingURL=Frontpage.98f207a6ddbfeb710742.js.map
