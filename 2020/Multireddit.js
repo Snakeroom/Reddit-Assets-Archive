@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.3eb9f4107b4c29e69005.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.426910d163ed94321b50.js
+// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -117,7 +117,7 @@
 				}
 			}, a.a.createElement(o.b, null)))), a.a.createElement(o.k, null, a.a.createElement(o.o, {
 				className: u.a.ModalText
-			}, e.modalText)), a.a.createElement(o.f, null, a.a.createElement(o.a, {
+			}, e.modalText)), a.a.createElement(o.f, null, !e.hideCancelButton && a.a.createElement(o.a, {
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: () => {
@@ -1801,4 +1801,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.3eb9f4107b4c29e69005.js.map
+//# sourceMappingURL=Multireddit.426910d163ed94321b50.js.map

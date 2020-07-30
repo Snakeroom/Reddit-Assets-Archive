@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.ed40aa21c1d372326f25.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.6a8f46d67bbaaf1b9f9f.js
+// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -55,7 +55,7 @@
 				}
 			}, r.a.createElement(l.b, null)))), r.a.createElement(l.k, null, r.a.createElement(l.o, {
 				className: u.a.ModalText
-			}, e.modalText)), r.a.createElement(l.f, null, r.a.createElement(l.a, {
+			}, e.modalText)), r.a.createElement(l.f, null, !e.hideCancelButton && r.a.createElement(l.a, {
 				className: u.a.buttonWidth,
 				onMouseDown: d,
 				onClick: () => {
@@ -430,4 +430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SurveyAsync.ed40aa21c1d372326f25.js.map
+//# sourceMappingURL=SurveyAsync.6a8f46d67bbaaf1b9f9f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.4bc8f68c538cdf091d07.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.b98aff4995fbd19ae3cc.js
+// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -67,7 +67,7 @@
 				}
 			}, r.a.createElement(n.b, null)))), r.a.createElement(n.k, null, r.a.createElement(n.o, {
 				className: l.a.ModalText
-			}, e.modalText)), r.a.createElement(n.f, null, r.a.createElement(n.a, {
+			}, e.modalText)), r.a.createElement(n.f, null, !e.hideCancelButton && r.a.createElement(n.a, {
 				className: l.a.buttonWidth,
 				onMouseDown: p,
 				onClick: () => {
@@ -3794,4 +3794,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.4bc8f68c538cdf091d07.js.map
+//# sourceMappingURL=MembershipPaywallPage.b98aff4995fbd19ae3cc.js.map

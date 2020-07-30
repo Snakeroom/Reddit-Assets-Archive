@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1bee90fda9ba6cd876fa.js
-// Retrieved at 7/30/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.c9b394349ee9f7699e9f.js
+// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const m = Object(n.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Cb
+					experimentName: u.Eb
 				});
-				return Object(u.zc)(t) ? void 0 : t
+				return Object(u.Bc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Db
+					experimentName: u.Fb
 				});
-				return Object(u.zc)(t) ? void 0 : t
-			}, (e, t) => e === u.Eb.Enabled && t === u.Eb.Enabled);
+				return Object(u.Bc)(t) ? void 0 : t
+			}, (e, t) => e === u.Gb.Enabled && t === u.Gb.Enabled);
 			var b = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				R = Object({
-					SENTRY_RELEASE_VERSION: "69a2702-production"
+					SENTRY_RELEASE_VERSION: "6379bd5-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -406,7 +406,7 @@
 				}
 			}, a.a.createElement(o.b, null)))), a.a.createElement(o.k, null, a.a.createElement(o.o, {
 				className: u.a.ModalText
-			}, e.modalText)), a.a.createElement(o.f, null, a.a.createElement(o.a, {
+			}, e.modalText)), a.a.createElement(o.f, null, !e.hideCancelButton && a.a.createElement(o.a, {
 				className: u.a.buttonWidth,
 				onMouseDown: h,
 				onClick: () => {
@@ -995,8 +995,8 @@
 				W = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				B = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				K = s("./src/reddit/controls/InternalLink/index.tsx"),
-				z = s("./src/reddit/controls/Score/index.tsx"),
-				G = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
+				G = s("./src/reddit/controls/Score/index.tsx"),
+				z = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
 				Y = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				J = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				Q = s.n(J),
@@ -1285,7 +1285,7 @@
 				renderExpandIcon() {
 					return r.a.createElement("div", {
 						className: q.a.bigExpando
-					}, r.a.createElement(G.a, {
+					}, r.a.createElement(z.a, {
 						className: q.a.bigExpandoIcon
 					}))
 				}
@@ -1442,7 +1442,7 @@
 						[q.a.verticalVotes]: e.isVertical,
 						[q.a.horizontalVotes]: !e.isVertical
 					})
-				}, r.a.createElement(z.a, {
+				}, r.a.createElement(G.a, {
 					className: q.a.score,
 					isScoreHidden: !0,
 					score: 0,
@@ -1455,7 +1455,7 @@
 					return r.a.createElement("button", {
 						className: q.a.expandoButton,
 						onClick: t
-					}, r.a.createElement(G.a, {
+					}, r.a.createElement(z.a, {
 						className: q.a.expandoIcon
 					}))
 				},
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.1bee90fda9ba6cd876fa.js.map
+//# sourceMappingURL=RpanListingUnit.c9b394349ee9f7699e9f.js.map

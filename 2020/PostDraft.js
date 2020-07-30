@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.69df61c1326b9f7138a1.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.0dc2a4eaaee36bed264a.js
+// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -315,7 +315,7 @@
 				}
 			}, r.a.createElement(a.b, null)))), r.a.createElement(a.k, null, r.a.createElement(a.o, {
 				className: m.a.ModalText
-			}, e.modalText)), r.a.createElement(a.f, null, r.a.createElement(a.a, {
+			}, e.modalText)), r.a.createElement(a.f, null, !e.hideCancelButton && r.a.createElement(a.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
@@ -2075,4 +2075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.69df61c1326b9f7138a1.js.map
+//# sourceMappingURL=PostDraft.0dc2a4eaaee36bed264a.js.map

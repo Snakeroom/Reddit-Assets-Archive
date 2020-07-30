@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.b344ec6631c9b6ef3f9b.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.b9e98b1deca63cc14f0a.js
+// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1560,7 +1560,7 @@
 				}
 			}, i.a.createElement(o.b, null)))), i.a.createElement(o.k, null, i.a.createElement(o.o, {
 				className: u.a.ModalText
-			}, e.modalText)), i.a.createElement(o.f, null, i.a.createElement(o.a, {
+			}, e.modalText)), i.a.createElement(o.f, null, !e.hideCancelButton && i.a.createElement(o.a, {
 				className: u.a.buttonWidth,
 				onMouseDown: m,
 				onClick: () => {
@@ -7214,4 +7214,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.b344ec6631c9b6ef3f9b.js.map
+//# sourceMappingURL=SubredditWiki.b9e98b1deca63cc14f0a.js.map

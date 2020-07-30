@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3bdd91a3972d3695f292.js
-// Retrieved at 7/30/2020, 2:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ba79b3045ec643daea44.js
+// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -285,16 +285,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Cb
+					experimentName: m.Eb
 				});
-				return Object(m.zc)(t) ? void 0 : t
+				return Object(m.Bc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Db
+					experimentName: m.Fb
 				});
-				return Object(m.zc)(t) ? void 0 : t
-			}, (e, t) => e === m.Eb.Enabled && t === m.Eb.Enabled);
+				return Object(m.Bc)(t) ? void 0 : t
+			}, (e, t) => e === m.Gb.Enabled && t === m.Gb.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "69a2702-production"
+					SENTRY_RELEASE_VERSION: "6379bd5-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -1678,9 +1678,9 @@
 				U = s("./src/reddit/actions/video.ts"),
 				W = s("./src/reddit/components/HlsVideo/index.tsx"),
 				K = s("./src/reddit/components/ReportFlow/index.tsx"),
-				X = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				Y = s("./src/reddit/constants/history.ts"),
-				G = s("./src/reddit/constants/keycodes.ts"),
+				G = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				X = s("./src/reddit/constants/history.ts"),
+				Y = s("./src/reddit/constants/keycodes.ts"),
 				J = s("./src/reddit/helpers/dom/index.ts"),
 				q = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				z = s("./src/reddit/helpers/trackers/rpan.ts"),
@@ -1825,7 +1825,7 @@
 					})) : null
 				}
 			}
-			var Xe = Object(o.b)(() => Object(l.a)(e => e, xe.n, (e, t) => {
+			var Ge = Object(o.b)(() => Object(l.a)(e => e, xe.n, (e, t) => {
 					if (!t) return {};
 					const {
 						associatedAwardId: s,
@@ -1838,8 +1838,8 @@
 						giverName: r
 					}
 				}))(Ke),
-				Ye = s("./src/reddit/components/PublicAccessNetwork/Theater/AwardOverlaySpectacle/index.m.less"),
-				Ge = s.n(Ye);
+				Xe = s("./src/reddit/components/PublicAccessNetwork/Theater/AwardOverlaySpectacle/index.m.less"),
+				Ye = s.n(Xe);
 			const Je = Object(o.b)(() => Object(l.c)({
 					awardedCommentLinks: (e, t) => {
 						let {
@@ -1891,9 +1891,9 @@
 					const a = e.slice(r);
 					return a.length ? i.a.createElement("div", {
 						"aria-role": "presentation",
-						className: Object(d.a)(t, Ge.a.awardOverlaySpectacle)
-					}, a.map(e => i.a.createElement(Xe, {
-						className: Ge.a.awardOverlay,
+						className: Object(d.a)(t, Ye.a.awardOverlaySpectacle)
+					}, a.map(e => i.a.createElement(Ge, {
+						className: Ye.a.awardOverlay,
 						commentId: e.id,
 						key: e.id
 					}))) : null
@@ -2336,9 +2336,9 @@
 				Ut = s("./src/lib/lessComponent.tsx"),
 				Wt = s("./src/lib/opener/index.ts"),
 				Kt = s("./src/reddit/icons/fonts/Menu/index.tsx"),
-				Xt = s("./src/reddit/icons/fonts/Share/index.tsx"),
-				Yt = s("./src/reddit/icons/svgs/Hide/index.tsx"),
-				Gt = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
+				Gt = s("./src/reddit/icons/fonts/Share/index.tsx"),
+				Xt = s("./src/reddit/icons/svgs/Hide/index.tsx"),
+				Yt = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				Jt = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				qt = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				zt = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
@@ -2374,7 +2374,7 @@
 							hk: "2e71ai"
 						}),
 						value: "share"
-					}, i.a.createElement(Xt.a, {
+					}, i.a.createElement(Gt.a, {
 						className: rs.a.menuIcon
 					}))
 				},
@@ -2427,7 +2427,7 @@
 						iconWrapperClassName: rs.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-community"),
 						onClick: () => Object(Wt.d)(N.O, Wt.c.BLANK)
-					}, i.a.createElement(Gt.a, {
+					}, i.a.createElement(Yt.a, {
 						className: rs.a.overflowItemIcon
 					})), i.a.createElement(gt.b, {
 						className: rs.a.overflowItem,
@@ -2447,7 +2447,7 @@
 						iconWrapperClassName: rs.a.overflowItemIconWrapper,
 						key: "".concat("rpan-overlay-menu", "-hide"),
 						onClick: s
-					}, i.a.createElement(Yt.a, {
+					}, i.a.createElement(Xt.a, {
 						className: rs.a.overflowItemIcon
 					})))
 				},
@@ -2607,7 +2607,7 @@
 						hk: "I91IP"
 					}),
 					value: "share"
-				}, i.a.createElement(Xt.a, {
+				}, i.a.createElement(Gt.a, {
 					className: bs.a.shareIcon
 				}))
 			}, Ts = Ut.a.wrapped(Kt.a, "menuIcon", bs.a), Is = e => {
@@ -2640,7 +2640,7 @@
 					iconWrapperClassName: bs.a.overflowItemIconWrapper,
 					key: "".concat("rpan-overlay-menu", "-community"),
 					onClick: () => Object(Wt.d)(N.O, Wt.c.BLANK)
-				}, i.a.createElement(Gt.a, {
+				}, i.a.createElement(Yt.a, {
 					className: bs.a.overflowItemIcon
 				})), i.a.createElement(gt.b, {
 					className: bs.a.overflowItem,
@@ -2660,7 +2660,7 @@
 					iconWrapperClassName: bs.a.overflowItemIconWrapper,
 					key: "".concat("rpan-overlay-menu", "-hide"),
 					onClick: s
-				}, i.a.createElement(Yt.a, {
+				}, i.a.createElement(Xt.a, {
 					className: bs.a.overflowItemIcon
 				})))
 			}, Ls = Object(o.b)(null, e => ({
@@ -2834,7 +2834,7 @@
 				} = e;
 				const {
 					name: s
-				} = t, r = Ys(s), a = Gs(s, !r), n = r ? vs._("Unfollow u/{name}", [vs._param("name", s)], {
+				} = t, r = Xs(s), a = Ys(s, !r), n = r ? vs._("Unfollow u/{name}", [vs._param("name", s)], {
 					hk: "2n0wqa"
 				}) : vs._("Follow u/{name}", [vs._param("name", s)], {
 					hk: "20X8Bw"
@@ -2857,7 +2857,7 @@
 					name: r
 				} = t, a = Object(o.d)(e => Object(jt.eb)(e, {
 					userName: r
-				})), n = Xs(a);
+				})), n = Gs(a);
 				return i.a.createElement("div", {
 					className: bs.a.subscribeToProfileAvatar
 				}, a ? n ? i.a.createElement("img", {
@@ -2884,17 +2884,17 @@
 				xmlns: "http://www.w3.org/2000/svg"
 			}, i.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
-			})), Xs = e => {
+			})), Gs = e => {
 				const t = Object(o.d)(jt.i),
 					s = Object(o.d)(jt.z),
 					r = Object(o.d)(jt.V);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!r && !s))))
-			}, Ys = e => Object(o.d)(t => Object(Ee.cb)(t, {
+			}, Xs = e => Object(o.d)(t => Object(Ee.cb)(t, {
 				identifier: {
 					name: e,
 					type: Se.a.PROFILE
 				}
-			})), Gs = (e, t) => {
+			})), Ys = (e, t) => {
 				const s = Object(o.c)();
 				return Object(n.useCallback)(() => s(Object(ge.d)([{
 					name: e,
@@ -3687,7 +3687,7 @@
 					volume: te.d
 				}),
 				Wr = Object(o.b)(Ur, (e, t) => ({
-					closeLocation: () => e(Object(c.b)(t.location.state[Y.a.CloseLocation])),
+					closeLocation: () => e(Object(c.b)(t.location.state[X.a.CloseLocation])),
 					fetchBroadcasterProfileInfo: t => e(Object(I.d)(t, !0)),
 					fetchPostForStream: t => e(Object(L.a)(t)),
 					subscribeConfig: () => e(D.a.subscribeConfig(t.related || t.subreddit)),
@@ -3756,7 +3756,7 @@
 						leading: !0,
 						trailing: !1
 					}), this.onNextStreamKeyHandler = e => {
-						Object(J.g)(e.target) ? e.stopPropagation() : e.keyCode === G.a.ArrowRight ? this.onNextStream() : e.keyCode === G.a.ArrowLeft && this.onPreviousStream()
+						Object(J.g)(e.target) ? e.stopPropagation() : e.keyCode === Y.a.ArrowRight ? this.onNextStream() : e.keyCode === Y.a.ArrowLeft && this.onPreviousStream()
 					}, this.onPlayPauseToggle = () => {
 						this.cancelSwitchingOnStreamEnded(), this.state.isVideoPaused ? this.playVideo() : this.pauseVideo()
 					}, this.onToggleMuteVideo = () => {
@@ -3852,7 +3852,7 @@
 					if (e.currentStream && this.props.currentStream && e.currentStream.post.id !== this.props.currentStream.post.id && this.handleOldStream(), b !== h) return this.props.resetHistory(), this.handleNewStream(), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), void(t || this.setState({
 						isLoading: !0
 					}));
-					!s && e.isIntroInProgress && this.handleNewStream(), s || e.isIntroInProgress || !Yr(t, e.currentStream) || this.handleNewStream(), this.state.isSwitchingOnStreamEndedScheduled || s || !(!t && !this.state.isLoading || l === ae.a.VOD && this.state.isVodStreamJustFinished || !this.isCurrentStreamWatchable() && this.state.isUnavailableVideoJustFinished) || (this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.scheduleSwitchingOnStreamEnded()), this.state.isVodStreamJustFinished && (this.setState({
+					!s && e.isIntroInProgress && this.handleNewStream(), s || e.isIntroInProgress || !Xr(t, e.currentStream) || this.handleNewStream(), this.state.isSwitchingOnStreamEndedScheduled || s || !(!t && !this.state.isLoading || l === ae.a.VOD && this.state.isVodStreamJustFinished || !this.isCurrentStreamWatchable() && this.state.isUnavailableVideoJustFinished) || (this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.scheduleSwitchingOnStreamEnded()), this.state.isVodStreamJustFinished && (this.setState({
 						isVodStreamJustFinished: !1
 					}), this.showStreamEndedPrompt()), this.state.isUnavailableVideoJustFinished && this.setState({
 						isUnavailableVideoJustFinished: !1
@@ -3974,7 +3974,7 @@
 						onNext: this.onNextStream,
 						onPrevious: this.onPreviousStream,
 						previousStream: u
-					}), e && !a && n && i.a.createElement(Xr, {
+					}), e && !a && n && i.a.createElement(Gr, {
 						onClick: this.onClose
 					}), e && !a && o && i.a.createElement(K.a, {
 						overlayCustomStyles: K.b,
@@ -4241,7 +4241,7 @@
 					e && this.isCurrentStreamWatchable() && (t(e.post.id).then(e => this.unsubscribeStats = e), s(e.post.id).then(e => this.unsubscribeHeartbeat = e))
 				}
 			}
-			const Xr = e => {
+			const Gr = e => {
 					let {
 						onClick: t
 					} = e;
@@ -4255,8 +4255,8 @@
 						className: Fr.a.closeIcon
 					}))
 				},
-				Yr = (e, t) => (e && e.post.id) !== (t && t.post.id);
-			var Gr = Wr(Object(X.c)(Kr)),
+				Xr = (e, t) => (e && e.post.id) !== (t && t.post.id);
+			var Yr = Wr(Object(G.c)(Kr)),
 				Jr = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				qr = s("./src/reddit/helpers/overlay/index.ts"),
 				zr = s("./src/reddit/pages/PublicAccessNetwork/index.m.less"),
@@ -4335,7 +4335,7 @@
 						className: Object(d.a)(Zr.a.rpanContainer, {
 							[Zr.a.overlay]: r
 						})
-					}, i.a.createElement(Gr, {
+					}, i.a.createElement(Yr, {
 						isOverlay: !!r,
 						location: a,
 						onNavigation: this.onNavigation,
@@ -4350,7 +4350,7 @@
 			}, i.a.createElement("h2", null, Qr._("Not Found", null, {
 				hk: "2ijDv5"
 			})));
-			t.default = ea(Object(X.c)(Object(Jr.b)(ta)))
+			t.default = ea(Object(G.c)(Object(Jr.b)(ta)))
 		},
 		"./src/reddit/selectors/experiments/goldRpanLivePreview.ts": function(e, t, s) {
 			"use strict";
@@ -4362,10 +4362,10 @@
 			const n = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.ob
-				}) === r.tb.Enabled
+					experimentName: r.qb
+				}) === r.vb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.3bdd91a3972d3695f292.js.map
+//# sourceMappingURL=PublicAccessNetwork.ba79b3045ec643daea44.js.map
