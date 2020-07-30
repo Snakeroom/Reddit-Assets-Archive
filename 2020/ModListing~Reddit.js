@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.f9cec58351fc711368c3.js
-// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.6781103b4825f12988c1.js
+// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -2467,7 +2467,7 @@
 						actionInfo: h.actionInfo(e, {
 							success: t
 						}),
-						subreddit: h.subredditById(e, Object(m.F)(e, n)),
+						subreddit: h.subredditById(e, Object(m.E)(e, n)),
 						userSubreddit: h.userSubreddit(e),
 						adblock: h.adblock(e)
 					}))
@@ -2479,7 +2479,7 @@
 						noun: "screen"
 					}, h.defaults(e)), {
 						profile: h.profileById(e, Object(u.m)(e, r)),
-						subreddit: h.subredditById(e, Object(m.F)(e, n)),
+						subreddit: h.subredditById(e, Object(m.E)(e, n)),
 						userSubreddit: h.userSubreddit(e),
 						adblock: h.adblock(e)
 					}))
@@ -3157,4 +3157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.f9cec58351fc711368c3.js.map
+//# sourceMappingURL=ModListing~Reddit.6781103b4825f12988c1.js.map

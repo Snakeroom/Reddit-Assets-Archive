@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.7b96a236a23d4710d5de.js
-// Retrieved at 7/15/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.d82b81603c624b0056ae.js
+// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -250,7 +250,7 @@
 			const h = p.a.wrapped(c.b, "SubredditIcon", b.a),
 				_ = p.a.span("Label", b.a),
 				f = Object(l.c)({
-					subredditOrProfile: u.L
+					subredditOrProfile: u.K
 				});
 			var g = Object(a.b)(f)(e => {
 				let {
@@ -499,7 +499,7 @@
 				de = Object(a.c)({
 					isApiPending: A,
 					subredditOrProfile: (e, t) => {
-						const s = Object(re.A)(e, {
+						const s = Object(re.z)(e, {
 							subredditName: t.subredditName
 						});
 						if (!s) {
@@ -689,4 +689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing.7b96a236a23d4710d5de.js.map
+//# sourceMappingURL=ModListing.d82b81603c624b0056ae.js.map

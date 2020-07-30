@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.94c2c09c9e592ecc6c2f.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.b97f95b9aa3470fc3a15.js
+// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -934,7 +934,7 @@
 				a = r("./src/reddit/actions/subscription/index.ts"),
 				o = r("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(n.c)({
-				userIsSubscriber: o.cb
+				userIsSubscriber: o.bb
 			}), (e, t) => {
 				let {
 					identifier: r
@@ -1284,4 +1284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.94c2c09c9e592ecc6c2f.js.map
+//# sourceMappingURL=AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.b97f95b9aa3470fc3a15.js.map

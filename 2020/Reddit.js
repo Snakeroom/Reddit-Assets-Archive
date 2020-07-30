@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.36cb1fb58411ade2f475.js
-// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.708d977e6b669cec4466.js
+// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1128,7 +1128,7 @@
 						Object(c.H)(l) || s.push(e(Object(o.r)()));
 						const u = Object(n.a)(d, null);
 						s.push(e(Object(r.i)(u, d, {}))), await Promise.all(s);
-						const m = Object(i.F)(t(), d);
+						const m = Object(i.E)(t(), d);
 						await e(Object(a.a)({
 							subredditId: m,
 							skip: ["badges", "tips", "wallets"]
@@ -3044,7 +3044,7 @@
 						const t = Object(fs.n)(e, {
 								pageLayer: s
 							}) || da.e,
-							n = Object(ua.A)(e, {
+							n = Object(ua.z)(e, {
 								subredditName: t
 							});
 						if (n) return {
@@ -9095,7 +9095,7 @@
 				if (Object(p.j)(e) || Object(h.cb)(e)) return;
 				const s = v(e, t);
 				if (!s) return;
-				const n = Object(b.F)(e, s);
+				const n = Object(b.E)(e, s);
 				if (!n) return;
 				if (Object(h.bb)(e, {
 						subredditId: n
@@ -9105,7 +9105,7 @@
 			}), (e, t) => {
 				const s = v(e, t);
 				if (!s) return;
-				const n = Object(b.x)(e, {
+				const n = Object(b.w)(e, {
 					subredditName: s
 				});
 				return n ? n.emojisCustomSize : void 0
@@ -9116,7 +9116,7 @@
 				if (!Object(h.lb)(e).hideNSFW) return !0;
 				const s = v(e, t);
 				if (s) {
-					const t = Object(b.A)(e, {
+					const t = Object(b.z)(e, {
 						subredditName: s
 					});
 					return !(!t || !t.isNSFW)
@@ -9591,7 +9591,7 @@
 				subredditsByName: Object(c.a)((e, t) => {
 					const s = {};
 					return t.subredditIcons && t.subredditIcons.map(t => {
-						s[t.subredditName] = Object(u.A)(e, {
+						s[t.subredditName] = Object(u.z)(e, {
 							subredditName: t.subredditName
 						})
 					}), s
@@ -11210,7 +11210,7 @@
 					if (s.type === U.a) {
 						const n = e.getState(),
 							a = (n.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-							o = Object(Bt.F)(n, a) || "",
+							o = Object(Bt.E)(n, a) || "",
 							i = (n.subreddits.about[o] || {}).advertiserCategory;
 						r.trigger("pageview", Object.assign(Object.assign({}, it()(s.payload.location, "pathname", "search", "hash")), {
 							subreddit: a,
@@ -11577,12 +11577,12 @@
 								queryParams: a
 							},
 							o = n.subredditName,
-							i = Object(Bt.F)(s, o) || "";
+							i = Object(Bt.E)(s, o) || "";
 						cs(i), Os.a.publish(Be.c, r, document)
 					});
 					const u = d.getState(),
 						m = (u.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-						p = Object(Bt.F)(u, m) || "",
+						p = Object(Bt.E)(u, m) || "",
 						C = (u.subreddits.about[p] || {}).advertiserCategory;
 					r.setup({
 						jailUrl: "https://www.redditmedia.com/gtm/jail",
@@ -11601,7 +11601,7 @@
 								currentPage: r
 							} = e.platform,
 							o = (r.urlParams.subredditName || "").toLowerCase(),
-							i = Object(Bt.F)(e, o) || "";
+							i = Object(Bt.E)(e, o) || "";
 						if (cs(i), r && r.meta) {
 							const s = r.meta.name;
 							if (Object(w.b)(g.l.Redesign, {
@@ -13550,4 +13550,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.36cb1fb58411ade2f475.js.map
+//# sourceMappingURL=Reddit.708d977e6b669cec4466.js.map

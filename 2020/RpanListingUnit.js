@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.c9b394349ee9f7699e9f.js
-// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.c9061104f166d2f4059d.js
+// Retrieved at 7/30/2020, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				R = Object({
-					SENTRY_RELEASE_VERSION: "6379bd5-production"
+					SENTRY_RELEASE_VERSION: "0d8ae79-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -665,7 +665,7 @@
 				f = s("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
 				const s = Object(p.n)(e, t),
-					i = Object(f.I)(e, t);
+					i = Object(f.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!i || !i.name) && !!e.moderatingSubreddits[i.name],
@@ -703,7 +703,7 @@
 			}));
 			const E = (e, t) => {
 				const s = Object(p.n)(e, t),
-					i = Object(f.I)(e, t);
+					i = Object(f.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!i || !i.name) && !!e.moderatingSubreddits[i.name],
@@ -729,7 +729,7 @@
 				}
 			}));
 			var y = Object(a.b)(() => Object(n.c)({
-					subreddit: f.R
+					subreddit: f.Q
 				}))(e => r.a.createElement(b, {
 					className: e.className,
 					type: "communityTools",
@@ -841,7 +841,7 @@
 				}
 			}));
 			var _ = Object(a.b)(() => Object(n.c)({
-				subreddit: f.R
+				subreddit: f.Q
 			}))(e => r.a.createElement(b, {
 				className: e.className,
 				type: "sidebar",
@@ -854,7 +854,7 @@
 				}
 			}));
 			var I = Object(a.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(f.L)(e, {
+				subredditOrProfile: (e, t) => Object(f.K)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(b, {
@@ -873,7 +873,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(f.R)(e, {
+					return s ? Object(f.Q)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.c9b394349ee9f7699e9f.js.map
+//# sourceMappingURL=RpanListingUnit.c9061104f166d2f4059d.js.map
