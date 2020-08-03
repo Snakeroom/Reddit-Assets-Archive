@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.53297f87cb95465698e4.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.9fe8eea556466310f121.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -815,14 +815,14 @@
 					measureScrollFPS: b.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(p.N)(e, t),
 					loadMore: f.g,
-					postsById: P.Z,
+					postsById: P.X,
 					postIds: Object(r.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: o,
 							inSubredditOrProfile: n
 						} = t;
-						return Object(P.K)(e, s, o, n)
+						return Object(P.J)(e, s, o, n)
 					}),
 					subredditsById: v.Y,
 					viewportDataLoaded: x.a,
@@ -845,16 +845,16 @@
 						openPost: t => {
 							s && e(Object(i.a)({
 								lastLoadedEnv: "server"
-							})), e(c.N(t))
+							})), e(c.I(t))
 						},
 						fireAdPixelsOfType: (t, s) => {
-							e(c.C(t, s))
+							e(c.z(t, s))
 						},
 						trackOnPostEnteredViewport: (t, s, o) => {
-							e(c.Q(t, o))
+							e(c.L(t, o))
 						},
 						trackOnPostExitedViewport: (t, s, o, n) => {
-							e(c.R(t, o, n))
+							e(c.M(t, o, n))
 						},
 						surveyTriggerScrollCounted: () => e(Object(l.b)())
 					}
@@ -1297,4 +1297,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.53297f87cb95465698e4.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit~Topic.9fe8eea556466310f121.js.map

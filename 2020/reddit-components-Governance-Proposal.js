@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.4871909456c9c02760ed.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.40be36e6b605d373aacd.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -94,7 +94,7 @@
 							const {
 								postId: e
 							} = d, t = o.posts.models[e];
-							t && t.voteState === g.a.notVoted && n(Object(c.db)(e))
+							t && t.voteState === g.a.notVoted && n(Object(c.Y)(e))
 						}
 					} else n(j({
 						pollId: e,
@@ -728,7 +728,7 @@
 					});
 					if (s) return e.polls.rewards[s]
 				},
-				post: se.O,
+				post: se.M,
 				resultsByVoters: (e, t) => {
 					let {
 						postId: n
@@ -747,7 +747,7 @@
 					});
 					if (s) return e.polls.results.byVotingPower[s]
 				},
-				subredditOrProfile: se.bb
+				subredditOrProfile: se.Z
 			});
 			t.default = Object(c.b)(Ie)(je)
 		},
@@ -1206,4 +1206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.4871909456c9c02760ed.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.40be36e6b605d373aacd.js.map

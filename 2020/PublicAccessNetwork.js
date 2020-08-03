@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1657fd0d58237262e39a.js
-// Retrieved at 7/30/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5fbfd9212db149768c1c.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -342,7 +342,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "14b4cc2-production"
+					SENTRY_RELEASE_VERSION: "ad62c6f-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -3307,9 +3307,9 @@
 				}
 			}
 			var er = Object(o.b)(Qs, (e, t) => ({
-				copyLink: t => e(Object(ve.G)(t)),
+				copyLink: t => e(Object(ve.B)(t)),
 				onHide: () => {
-					t.currentStreamId && (e(Object(ve.ab)(t.currentStreamId, !0, !0, !0)), e(M(t.currentStreamId)))
+					t.currentStreamId && (e(Object(ve.V)(t.currentStreamId, !0, !0, !0)), e(M(t.currentStreamId)))
 				},
 				handleGiveAward: () => {
 					if (t.currentStreamId) {
@@ -3431,7 +3431,7 @@
 						let {
 							postId: s
 						} = t;
-						return Object(vr.O)(e, {
+						return Object(vr.M)(e, {
 							postId: s
 						})
 					}
@@ -3508,7 +3508,7 @@
 					let {
 						postId: s
 					} = t;
-					return !!Object(vr.O)(e, {
+					return !!Object(vr.M)(e, {
 						postId: s
 					})
 				},
@@ -4368,4 +4368,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.1657fd0d58237262e39a.js.map
+//# sourceMappingURL=PublicAccessNetwork.5fbfd9212db149768c1c.js.map

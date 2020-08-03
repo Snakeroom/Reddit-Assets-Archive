@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.98f207a6ddbfeb710742.js
-// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.17bec75be413843325ee.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1159,7 +1159,7 @@
 				d = s("./src/reddit/selectors/platform.ts"),
 				l = s("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
-					postCount: l.T,
+					postCount: l.R,
 					previousPageIsOverlay: d.p,
 					tabBadged: e => e.tabBadged
 				}),
@@ -1540,8 +1540,8 @@
 				D = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				A = s("./src/reddit/constants/parameters.ts"),
 				U = s("./src/reddit/constants/postLayout.ts"),
-				B = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				R = s("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
+				R = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				B = s("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				F = s("./src/reddit/helpers/trackers/screenview.ts"),
 				M = s("./src/reddit/layout/page/Listing/index.tsx"),
 				V = s("./src/reddit/selectors/experiments/trending.ts"),
@@ -1568,7 +1568,7 @@
 			}
 			const {
 				fbt: ee
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = Object(B.t)(), se = Object(h.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = Object(R.t)(), se = Object(h.c)({
 				queryParams: Object(G.a)((e, t) => {
 					let {
 						location: s
@@ -1588,19 +1588,19 @@
 			}), re = Object(h.c)({
 				isInTrendingEntrypointExperiment: V.a,
 				isLoggedIn: J.H,
-				isPopular: B.C,
+				isPopular: R.C,
 				isRpanDuVisible: e => Object(q.a)(e, {
 					listingName: Z.P
 				}),
 				rpanInjectionIndex: e => Object(q.b)(e, {
 					listingName: Z.P
 				}),
-				layout: B.N
+				layout: R.N
 			}), oe = () => Object(h.a)(ne, se, re, e => Object(q.a)(e, {
 				listingName: Z.P
 			}), e => Object(q.b)(e, {
 				listingName: Z.P
-			}), e => e, R.a, (e, t, s, n, r, o, i) => {
+			}), e => e, B.a, (e, t, s, n, r, o, i) => {
 				let {
 					countryMeta: a,
 					geopopular: c
@@ -1670,7 +1670,7 @@
 						} = this.props;
 						f.a.read(() => {
 							const n = "".concat(_.c.FrontPage, "-").concat(s),
-								r = [Object(R.d)(e)];
+								r = [Object(B.d)(e)];
 							Object(_.d)(n, t, r)
 						})
 					}
@@ -1839,9 +1839,9 @@
 			})), s.d(t, "j", (function() {
 				return U
 			})), s.d(t, "i", (function() {
-				return B
-			})), s.d(t, "e", (function() {
 				return R
+			})), s.d(t, "e", (function() {
+				return B
 			})), s.d(t, "a", (function() {
 				return V
 			})), s.d(t, "h", (function() {
@@ -1911,7 +1911,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => p(t.listingName)(e, t), j, h, c.i, d.c, (e, t, s, n, r, c) => {
+				}, (e, t) => p(t.listingName)(e, t), j, h, c.h, d.c, (e, t, s, n, r, c) => {
 					if (c) {
 						const o = [];
 						if (e) {
@@ -1999,7 +1999,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s ? Object(i.g)(s) : void 0
-				}, C, h, c.i, (e, t) => {
+				}, C, h, c.h, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: n,
@@ -2017,7 +2017,7 @@
 				D = Object(r.a)(Object(n.a)(S, j, (e, t) => e ? t[e] : void 0)),
 				A = Object(r.a)(Object(n.a)(L, j, (e, t) => e ? t[e] : void 0)),
 				U = Object(r.a)(Object(n.a)(T, j, (e, t) => e ? t[e] : void 0)),
-				B = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, j, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
+				R = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, j, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)((e, t) => {
 					let {
@@ -2025,7 +2025,7 @@
 					} = t;
 					return s
 				}, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => t[e])),
-				R = Object(n.a)((e, t) => {
+				B = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -2088,4 +2088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.98f207a6ddbfeb710742.js.map
+//# sourceMappingURL=Frontpage.17bec75be413843325ee.js.map

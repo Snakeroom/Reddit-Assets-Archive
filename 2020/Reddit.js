@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c66121842a60886e725a.js
-// Retrieved at 7/30/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.8aba5fa8dcbcba8b0601.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -5019,7 +5019,7 @@
 					typeaheadSuggestions: xo.i
 				}), (e, t) => ({
 					fetchTrendingItems: () => e(Object(Er.b)()),
-					fireAdPixelsOfType: (t, s) => e(Object(xr.C)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(xr.z)(t, s)),
 					onChange: t => e(Object(Pr.j)({
 						searchQuery: t
 					})),
@@ -7406,7 +7406,7 @@
 					isSubscriptionsPinned: Fn.b,
 					isSuspended: zt.M,
 					isFPR: zt.F,
-					posts: Xu.R,
+					posts: Xu.P,
 					profileCollectionsEnabled: ju.a,
 					showEmailCollectionBanner: e => !Object(fs.J)(Object(rs.b)(e)) && rm(e)
 				}), e => ({
@@ -7720,15 +7720,13 @@
 				c = s("./src/reddit/selectors/posts.ts"),
 				d = s("./src/lib/classNames/index.ts");
 			const l = Object(i.a)(() => Object(r.c)({
-					post: c.O
+					post: c.M
 				})),
 				u = e => {
 					let {
 						className: t,
 						post: s,
-						onPostViewable: n,
-						pixelPostHasEnteredView: r,
-						pixelPostHasExitedView: i
+						onPostViewable: n
 					} = e;
 					return s.isSponsored ? a.a.createElement(o.a, {
 						post: s,
@@ -8626,7 +8624,7 @@
 						close: () => {
 							e(Object(u.a)(s, !0))
 						},
-						toggleVote: (t, s) => e(s === w.a.upvoted ? Object(l.db)(t) : Object(l.z)(t))
+						toggleVote: (t, s) => e(s === w.a.upvoted ? Object(l.Y)(t) : Object(l.w)(t))
 					}
 				}, (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), s), {
 					onVoteClick: n => {
@@ -9285,21 +9283,17 @@
 			class d extends a.a.Component {
 				render() {
 					const {
-						pixelPostHasEnteredView: e,
-						pixelPostHasExitedView: t,
-						children: s,
-						post: n,
-						onPostViewable: i
+						children: e,
+						post: t,
+						onPostViewable: s
 					} = this.props;
-					if (n) return n.isBlank ? a.a.createElement(o.BlankPost, {
-						post: n,
-						onPostViewable: i,
-						pixelPostHasEnteredView: e,
-						pixelPostHasExitedView: t
+					if (t) return t.isBlank ? a.a.createElement(o.BlankPost, {
+						post: t,
+						onPostViewable: s
 					}) : a.a.createElement(r.a, {
-						post: n,
+						post: t,
 						trackDisplay: !0
-					}, s)
+					}, e)
 				}
 			}
 			t.a = c(d)
@@ -13593,4 +13587,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.c66121842a60886e725a.js.map
+//# sourceMappingURL=Reddit.8aba5fa8dcbcba8b0601.js.map

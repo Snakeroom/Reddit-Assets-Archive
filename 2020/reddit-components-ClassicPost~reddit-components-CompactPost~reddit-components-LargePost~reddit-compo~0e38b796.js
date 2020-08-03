@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.fc607be72285adc09384.js
-// Retrieved at 7/30/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.b36b0b0870a8219c6771.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -338,14 +338,14 @@
 					id: h,
 					title: O,
 					onClose: () => {
-						x(!1), j("close", "click"), k(Object(i.J)()), k(Object(i.U)({
+						x(!1), j("close", "click"), k(Object(i.E)()), k(Object(i.P)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						k(Object(i.J)())
+						k(Object(i.E)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -405,10 +405,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						h(n.Closed), O("close", "click"), E(Object(d.J)())
+						h(n.Closed), O("close", "click"), E(Object(d.E)())
 					},
 					onClickOutside: () => {
-						E(Object(d.J)())
+						E(Object(d.E)())
 					}
 				};
 				switch (x) {
@@ -629,7 +629,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(k.u)(e, {
+						return Object(k.t)(e, {
 							postId: s.id
 						})
 					},
@@ -665,9 +665,9 @@
 					},
 					G = z.isRemoved && !z.modRemovalReason && !z.modNote && z.belongsTo.type === p.a.SUBREDDIT,
 					W = A("Approve", z.id, V),
-					J = A("Archived", z.id, V),
-					X = A("Automod", z.id, V),
-					K = A("Lock", z.id, V),
+					X = A("Archived", z.id, V),
+					K = A("Automod", z.id, V),
+					J = A("Lock", z.id, V),
 					q = A("Mod", z.id, V),
 					Y = A("Remove", z.id, V),
 					Q = A("Report", z.id, V),
@@ -688,20 +688,20 @@
 				}, Z))), z.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
 					className: M.a.archivedIcon,
 					desc: T(),
+					id: X,
+					onMouseEnter: U(X),
+					onMouseLeave: D
+				}), r.a.createElement(u.c, I({
+					tooltipId: X,
+					text: T()
+				}, Z))), z.isLocked && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
+					className: M.a.lockIcon,
+					desc: N(),
 					id: J,
 					onMouseEnter: U(J),
 					onMouseLeave: D
 				}), r.a.createElement(u.c, I({
 					tooltipId: J,
-					text: T()
-				}, Z))), z.isLocked && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
-					className: M.a.lockIcon,
-					desc: N(),
-					id: K,
-					onMouseEnter: U(K),
-					onMouseLeave: D
-				}), r.a.createElement(u.c, I({
-					tooltipId: K,
 					text: N()
 				}, Z))), c && Object(h.k)(z) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(C.a, {
 					className: M.a.stickyIcon,
@@ -762,11 +762,11 @@
 				}, Z))), ("AutoModerator" === z.approvedBy || "AutoModerator" === z.bannedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(S.a, {
 					className: Object(i.a)(M.a.automoderator, !!z.bannedBy && M.a.isRemoved),
 					desc: v.b,
-					id: X,
-					onMouseEnter: U(X),
+					id: K,
+					onMouseEnter: U(K),
 					onMouseLeave: D
 				}), r.a.createElement(u.c, I({
-					tooltipId: X,
+					tooltipId: K,
 					text: v.b
 				}, Z))), Object(x.a)(z) && !w && r.a.createElement(o.Fragment, null, r.a.createElement(y.a, {
 					className: M.a.reportIcon,
@@ -997,7 +997,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(d.F)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(d.A)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(l.c)(b))
 		},
@@ -1574,4 +1574,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.fc607be72285adc09384.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.b36b0b0870a8219c6771.js.map

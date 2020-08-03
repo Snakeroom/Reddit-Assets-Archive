@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.54bff88908ba2afddbcf.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.e66a69f37eb40c552804.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -307,7 +307,7 @@
 			}
 			const {
 				fbt: P
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = O.a.wrapped(I.b, "SubredditIcon", g.a), H = O.a.wrapped(f.a, "SubredditNameDisplay", g.a), A = O.a.div("SubredditDescription", g.a), M = O.a.div("SubredditNameContainer", g.a), L = O.a.div("SubredditInfoContainer", g.a), D = O.a.div("Subscribers", g.a), k = O.a.div("Online", g.a), B = O.a.div("Count", g.a), U = O.a.div("CountLabel", g.a), R = O.a.div("Container", g.a), Z = O.a.div("CardContainer", g.a), K = e => o.a.createElement(L, null, o.a.createElement(D, null, o.a.createElement(B, null, Object(x.b)(e.subredditAboutInfo.subscribers)), o.a.createElement(U, null, P._({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = O.a.wrapped(I.b, "SubredditIcon", g.a), H = O.a.wrapped(f.a, "SubredditNameDisplay", g.a), M = O.a.div("SubredditDescription", g.a), A = O.a.div("SubredditNameContainer", g.a), L = O.a.div("SubredditInfoContainer", g.a), D = O.a.div("Subscribers", g.a), k = O.a.div("Online", g.a), B = O.a.div("Count", g.a), U = O.a.div("CountLabel", g.a), Z = O.a.div("Container", g.a), R = O.a.div("CardContainer", g.a), K = e => o.a.createElement(L, null, o.a.createElement(D, null, o.a.createElement(B, null, Object(x.b)(e.subredditAboutInfo.subscribers)), o.a.createElement(U, null, P._({
 				"*": "Members",
 				_1: " Member"
 			}, [P._plural(e.subredditAboutInfo.subscribers)], {
@@ -332,11 +332,11 @@
 				}, [d, i, l]), b = Object(r.useCallback)(() => {
 					d(c(l.id, "visit", i)), i && m(i)
 				}, [d, i, l]);
-				return l && u ? o.a.createElement(R, {
+				return l && u ? o.a.createElement(Z, {
 					className: t,
 					id: n,
 					style: a
-				}, o.a.createElement(Z, null, o.a.createElement(M, null, o.a.createElement(S, {
+				}, o.a.createElement(R, null, o.a.createElement(A, null, o.a.createElement(S, {
 					subredditOrProfile: l,
 					shouldHideNsfwIcon: s
 				}), o.a.createElement(H, {
@@ -346,7 +346,7 @@
 					subredditAboutInfo: u
 				}), o.a.createElement(E.a, {
 					subreddit: l
-				}), o.a.createElement(A, null, Object(T.a)(u.publicDescription || "", 140)), o.a.createElement(C.h, {
+				}), o.a.createElement(M, null, Object(T.a)(u.publicDescription || "", 140)), o.a.createElement(C.h, {
 					onClick: b,
 					to: "".concat(l.url)
 				}, P._("View Community", null, {
@@ -354,7 +354,7 @@
 				})), o.a.createElement(y.h, {
 					id: l.id,
 					type: "subreddit"
-				}))) : o.a.createElement(R, {
+				}))) : o.a.createElement(Z, {
 					style: a
 				})
 			});
@@ -607,10 +607,10 @@
 				})),
 				j = s("./src/reddit/selectors/posts.ts");
 			var I = Object(n.b)(() => Object(i.c)({
-				post: j.O,
-				subredditOrProfile: j.bb,
+				post: j.M,
+				subredditOrProfile: j.Z,
 				isModerator: (e, t) => {
-					const s = Object(j.bb)(e, t);
+					const s = Object(j.Z)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => o.a.createElement(b, {
@@ -644,11 +644,11 @@
 				}
 			}));
 			var C = Object(n.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(j.bb)(e, {
+				subredditOrProfile: (e, t) => Object(j.Z)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(j.bb)(e, {
+					const s = Object(j.Z)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -670,10 +670,10 @@
 				}
 			}));
 			var T = Object(n.b)(() => Object(i.c)({
-				post: j.O,
-				subredditOrProfile: j.bb,
+				post: j.M,
+				subredditOrProfile: j.Z,
 				isModerator: (e, t) => {
-					const s = Object(j.bb)(e, t);
+					const s = Object(j.Z)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => o.a.createElement(b, {
@@ -904,4 +904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditHovercard.54bff88908ba2afddbcf.js.map
+//# sourceMappingURL=SubredditHovercard.e66a69f37eb40c552804.js.map

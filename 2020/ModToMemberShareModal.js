@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.becf75560cf4cc155f90.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.bc594ee40ec158acf82a.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -60,7 +60,7 @@
 				h = s("./src/reddit/selectors/subreddit.ts"),
 				_ = s("./src/reddit/components/MiniPost/index.m.less"),
 				x = s.n(_);
-			const f = Object(a.a)(e => e, b.O, b.d, (e, t, s) => {
+			const f = Object(a.a)(e => e, b.M, b.d, (e, t, s) => {
 					return {
 						crosspost: s,
 						post: t,
@@ -192,12 +192,12 @@
 				}),
 				E = s("./src/reddit/selectors/posts.ts"),
 				N = s("./src/reddit/selectors/telemetry.ts"),
-				O = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
-				F = s.n(O);
+				F = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
+				O = s.n(F);
 			const P = 400,
 				j = Object(a.c)({
-					post: E.A,
-					subreddit: E.B
+					post: E.z,
+					subreddit: E.A
 				}),
 				v = Object(i.b)(j, (e, t) => ({
 					onClose: () => e(Object(c.f)()),
@@ -276,25 +276,25 @@
 						}
 					} = this;
 					if (e && t) return o.a.createElement(p.d, {
-						className: F.a.body
+						className: O.a.body
 					}, o.a.createElement(p.h, {
-						className: F.a.header
+						className: O.a.header
 					}, o.a.createElement(p.p, {
-						className: F.a.title
+						className: O.a.title
 					}, n.fbt._("Send message with link", null, {
 						hk: "mnEN"
 					})), o.a.createElement("button", {
 						onClick: this.onCloseClicked
 					}, o.a.createElement(p.b, null))), o.a.createElement(p.k, {
-						className: F.a.main
+						className: O.a.main
 					}, o.a.createElement(u.a, {
-						className: F.a.miniPost,
+						className: O.a.miniPost,
 						openLinksNewTab: !0,
 						postId: e.id,
 						showSubreddit: !0,
 						subredditSameLine: !0
 					}), o.a.createElement(p.s, {
-						className: F.a.textarea,
+						className: O.a.textarea,
 						maxLength: P,
 						onChange: this.onMessageChange,
 						onFocus: this.onMessageFocus,
@@ -304,7 +304,7 @@
 						text: s,
 						maxChars: P
 					})), o.a.createElement(p.f, null, !1 === i && o.a.createElement("p", {
-						className: F.a.errorText
+						className: O.a.errorText
 					}, "Something went wrong. Try again in a bit."), o.a.createElement(p.a, {
 						onClick: this.onCloseClicked
 					}, n.fbt._("Cancel", null, {
@@ -429,4 +429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModToMemberShareModal.becf75560cf4cc155f90.js.map
+//# sourceMappingURL=ModToMemberShareModal.bc594ee40ec158acf82a.js.map

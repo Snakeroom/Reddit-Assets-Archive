@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.5712e21eacf77d6eb36c.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.7f9137ee2b2a0de20334.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -160,7 +160,7 @@
 					} = i;
 					if ((await C(l(), t, e)).ok) {
 						const i = s(),
-							l = Object(y.O)(i, {
+							l = Object(y.M)(i, {
 								postId: e
 							}),
 							d = l && l.title || "",
@@ -177,7 +177,7 @@
 									collectionId: t
 								}),
 								n = o && o.postIds && o.postIds[u] || "",
-								i = Object(y.O)(e, {
+								i = Object(y.M)(e, {
 									postId: n
 								});
 							i && i.permalink && c(Object(v.a)(i.permalink))
@@ -211,7 +211,7 @@
 							collectionId: t,
 							postId: e
 						}));
-						const c = Object(y.O)(l, {
+						const c = Object(y.M)(l, {
 								postId: e
 							}),
 							s = Object(E.r)(l, {
@@ -732,4 +732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.5712e21eacf77d6eb36c.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.7f9137ee2b2a0de20334.js.map

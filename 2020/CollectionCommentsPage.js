@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b79cb37aed3e4a6b6479.js
-// Retrieved at 7/30/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1bba1cad517f2450cd73.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -464,7 +464,7 @@
 							postId: e
 						}));
 						const r = s(),
-							i = Object(f.O)(r, {
+							i = Object(f.M)(r, {
 								postId: e
 							}),
 							d = i && i.title || "";
@@ -496,7 +496,7 @@
 							eventInfo: m
 						}));
 						const p = r(),
-							u = Object(f.O)(p, {
+							u = Object(f.M)(p, {
 								postId: e
 							}),
 							h = u && u.title || "",
@@ -573,7 +573,7 @@
 						apiContext: r
 					} = o;
 					const i = n(),
-						a = Object(_.O)(i, {
+						a = Object(_.M)(i, {
 							postId: e
 						});
 					t ? (s(Object(x.a)(a.permalink)), Object(f.d)(e, "edit")(i)) : Object(v.b)(e, "edit")(i);
@@ -607,7 +607,7 @@
 							})
 						})), t(T(d.id));
 						const e = Object(g.a)(l.body);
-						t(Object(r.U)({
+						t(Object(r.P)({
 							[d.id]: e
 						}))
 					} else t(P(l.error))
@@ -1225,7 +1225,7 @@
 					d = "error-block-".concat(t),
 					l = "success-block-".concat(t);
 				if (a.ok) {
-					s(Object(h.U)({
+					s(Object(h.P)({
 						[e]: {
 							suggestedSort: t
 						}
@@ -1400,7 +1400,7 @@
 							commentId: s
 						})
 					},
-					contestModeIsEnabled: W.F,
+					contestModeIsEnabled: W.E,
 					contestModeModalIsOpen: Object(A.b)("CommentSort--ContestMode--Modal"),
 					dropdownIsOpen: Object(H.b)($),
 					highlightIsOpen: Object(H.b)(ee),
@@ -1413,7 +1413,7 @@
 						});
 						return !!n && n.posts
 					},
-					postPermalink: W.M,
+					postPermalink: W.L,
 					showCommentHighlighter: (e, t) => {
 						let {
 							postId: s
@@ -1422,7 +1422,7 @@
 							o = !!Object(D.i)(e, {
 								postId: s
 							}),
-							r = Object(W.O)(e, {
+							r = Object(W.M)(e, {
 								postId: s
 							});
 						return (o || n) && !!r && !!r.previousVisits && r.previousVisits.length > 0
@@ -1447,7 +1447,7 @@
 						},
 						onSetSuggestedSort: t => e(C(s, t)),
 						hideTooltip: () => e(Object(m.i)()),
-						setContestMode: t => e(Object(h.Y)(t, s)),
+						setContestMode: t => e(Object(h.T)(t, s)),
 						showTooltip: () => e(Object(m.h)({
 							tooltipId: te
 						})),
@@ -2959,7 +2959,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(E.I)(e, {
+						return Object(E.H)(e, {
 							postId: s.postId
 						})
 					},
@@ -2967,7 +2967,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(E.J)(e, {
+						return Object(E.I)(e, {
 							postId: s.postId
 						})
 					},
@@ -2975,7 +2975,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(E.M)(e, {
+						return Object(E.L)(e, {
 							postId: s.postId
 						})
 					},
@@ -3005,7 +3005,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(E.bb)(e, {
+						return Object(E.Z)(e, {
 							postId: s.postId
 						})
 					}
@@ -3835,7 +3835,7 @@
 						a = !!Object(y.i)(e, {
 							postId: r.postId
 						}),
-						d = Object(E.O)(e, {
+						d = Object(E.M)(e, {
 							postId: r.postId
 						});
 					if (!d || !d.previousVisits || d.previousVisits.length < 1) return !1;
@@ -3988,7 +3988,7 @@
 					commentThreadLinkSet: C.p,
 					measureScrollFPS: As.d.measureScrollFPS,
 					moreComments: C.b,
-					postPermalink: E.M
+					postPermalink: E.L
 				}),
 				qs = Object(a.b)(zs, (e, t) => ({
 					onCommentEnteredViewport: t => e(Object(p.L)(t)),
@@ -4359,7 +4359,7 @@
 			const y = Object(i.b)(() => Object(d.c)({
 					isChatPostExperiment: x.d,
 					isPostSEOEligible: g.f,
-					postPermalink: f.M,
+					postPermalink: f.L,
 					shouldOpenPostInNewTab: v.U
 				})),
 				E = e => {
@@ -4922,11 +4922,11 @@
 				S = O.a.div("Content", C.a),
 				T = O.a.div("ThumbnailContainer", C.a),
 				N = Object(d.c)({
-					isCurrentUserProfilePost: g.k,
+					isCurrentUserProfilePost: g.j,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
-					post: g.O,
+					post: g.M,
 					shouldOpenPostInNewTab: f.U,
-					subreddit: g.bb
+					subreddit: g.Z
 				}),
 				M = Object(i.b)(N);
 			t.a = M(e => {
@@ -5340,7 +5340,7 @@
 				I = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				S = s.n(I);
 			const T = Object(i.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.A)({
+					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					}))
 				})),
@@ -5804,8 +5804,8 @@
 					return {
 						addPostToCollection: (t, s) => e(Object(ne.a)(t, s)),
 						onToggleModal: t => e(Object(u.i)(t)),
-						onToggleSave: () => e(Object(h.W)(n.postId)),
-						onHide: t => e(Object(h.ab)(n.postId, !n.hidden, o, !0)),
+						onToggleSave: () => e(Object(h.R)(n.postId)),
+						onHide: t => e(Object(h.V)(n.postId, !n.hidden, o, !0)),
 						onReportClick: () => e(Object(g.j)(n.postId, o)),
 						onEdit: () => {
 							const t = !o && !r;
@@ -6957,12 +6957,12 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(m.v)(s.id)),
+						onApprovePost: () => e(Object(m.s)(s.id)),
 						onOpenPostModModeDropdown: t => e(Object(p.h)({
 							tooltipId: t
 						})),
-						onRemovePost: () => e(Object(m.V)(s.id, !1)),
-						onSpamPost: () => e(Object(m.V)(s.id, !0)),
+						onRemovePost: () => e(Object(m.Q)(s.id, !1)),
+						onSpamPost: () => e(Object(m.Q)(s.id, !0)),
 						onFlairPost: t => () => e(Object(l.i)(t))
 					}
 				});
@@ -7073,14 +7073,14 @@
 					id: f,
 					title: E,
 					onClose: () => {
-						g(!1), y("close", "click"), v(Object(d.J)()), v(Object(d.U)({
+						g(!1), y("close", "click"), v(Object(d.E)()), v(Object(d.P)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						v(Object(d.J)())
+						v(Object(d.E)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -7140,10 +7140,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						f(n.Closed), E("close", "click"), C(Object(c.J)())
+						f(n.Closed), E("close", "click"), C(Object(c.E)())
 					},
 					onClickOutside: () => {
-						C(Object(c.J)())
+						C(Object(c.E)())
 					}
 				};
 				switch (g) {
@@ -7364,7 +7364,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(v.u)(e, {
+						return Object(v.t)(e, {
 							postId: s.id
 						})
 					},
@@ -8132,22 +8132,22 @@
 					crosspost: A.d,
 					hideNSFWPref: B.z,
 					isAdminOrMod: (e, t) => {
-						const s = Object(A.bb)(e, {
+						const s = Object(A.Z)(e, {
 							postId: t.postId
 						});
 						return !!s && Object(R.g)(e, {
 							subredditId: s.id
 						})
 					},
-					isCurrentUserProfilePost: A.k,
-					isExpanded: A.m,
-					post: A.O,
+					isCurrentUserProfilePost: A.j,
+					isExpanded: A.l,
+					post: A.M,
 					moderatorPermissions: R.i,
 					modModeEnabled: le.P,
 					isInCategoriesExperiment: M.a,
 					showAwardsPlaque: L.a,
 					showEditFlair: pe.a,
-					subredditOrProfile: A.bb,
+					subredditOrProfile: A.Z,
 					isEditing: F.C,
 					userIsOp: B.hb
 				}), (e, t) => {
@@ -8155,12 +8155,12 @@
 						postId: s
 					} = t;
 					return {
-						onIgnoreReports: () => e(Object(v.bb)(s)),
+						onIgnoreReports: () => e(Object(v.W)(s)),
 						onOpenReportsDropdown: t => e(Object(C.h)({
 							tooltipId: t
 						})),
 						onVoteClick: t => {
-							const n = t === T.a.upvoted ? Object(v.db)(s) : Object(v.z)(s);
+							const n = t === T.a.upvoted ? Object(v.Y)(s) : Object(v.w)(s);
 							e(n)
 						}
 					}
@@ -9105,7 +9105,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(c.F)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(c.A)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(l.c)(h))
 		},
@@ -9466,15 +9466,15 @@
 						return Object(ne.a)(e) === "".concat("POST_OVERFLOW_DELETE_CONFIRMATION", "_").concat(s)
 					},
 					isFutureEvent: pe.j,
-					isSaved: oe.x,
-					isHidden: oe.p,
-					isSponsored: oe.z,
-					isNSFW: oe.s,
-					isOC: oe.t,
-					isPinned: oe.u,
-					isSpoiler: oe.y,
-					post: oe.O,
-					postSubredditAboutInfo: oe.P,
+					isSaved: oe.w,
+					isHidden: oe.o,
+					isSponsored: oe.y,
+					isNSFW: oe.r,
+					isOC: oe.s,
+					isPinned: oe.t,
+					isSpoiler: oe.x,
+					post: oe.M,
+					postSubredditAboutInfo: oe.N,
 					reportFlowIsOpen: (e, t) => {
 						let {
 							isOverlay: s,
@@ -9482,18 +9482,18 @@
 						} = t;
 						return e.reportFlow.openedFromModalPage === s && e.reportFlow.postOrCommentId === n
 					},
-					sendRepliesToggled: oe.Y,
+					sendRepliesToggled: oe.W,
 					showPinAction: (e, t) => {
 						var {
 							isProfilePostListing: s
 						} = t, n = be(t, ["isProfilePostListing"]);
 						return Object(z.B)(e, n) && s && Object(ie.hb)(e, n) && Object(ie.fb)(e, {
-							userName: Object(oe.O)(e, {
+							userName: Object(oe.M)(e, {
 								postId: n.postId
 							}).author
 						})
 					},
-					subredditOrProfile: oe.bb,
+					subredditOrProfile: oe.Z,
 					hasSubredditRules: re.k,
 					userIsOp: ie.hb,
 					isPostPartOfACollection: pe.l,
@@ -9501,10 +9501,10 @@
 						let {
 							postId: s
 						} = t;
-						if (Object(oe.O)(e, {
+						if (Object(oe.M)(e, {
 								postId: s
 							}).isSponsored) return !1;
-						const n = Object(oe.bb)(e, {
+						const n = Object(oe.Z)(e, {
 							postId: s
 						});
 						if (!n) return !1;
@@ -9519,19 +9519,19 @@
 						isCommentsPage: r
 					} = t;
 					return {
-						onCopyLink: () => e(Object(g.G)(s)),
-						onDelete: t => e(Object(g.P)(n, t, o)),
-						onDistinguishPost: t => e(Object(g.y)(n, t)),
+						onCopyLink: () => e(Object(g.B)(s)),
+						onDelete: t => e(Object(g.K)(n, t, o)),
+						onDistinguishPost: t => e(Object(g.v)(n, t)),
 						onGildClick: t => e(Object(h.d)({
 							correlationId: t,
 							thingId: n
 						})),
-						onToggleSave: () => e(Object(g.W)(n)),
-						onToggleNSFW: () => e(Object(g.L)(n)),
-						onToggleOC: () => e(Object(g.M)(n)),
+						onToggleSave: () => e(Object(g.R)(n)),
+						onToggleNSFW: () => e(Object(g.G)(n)),
+						onToggleOC: () => e(Object(g.H)(n)),
 						onTogglePinned: () => e(Object(x.i)(n)),
-						onToggleSpoiler: () => e(Object(g.Z)(n)),
-						onHide: t => e(Object(g.ab)(n, !t, o, !0)),
+						onToggleSpoiler: () => e(Object(g.U)(n)),
+						onHide: t => e(Object(g.V)(n, !t, o, !0)),
 						onReportClick: () => e(Object(v.j)(n, o)),
 						onStartEventNow: () => {
 							e((e, t) => Object(l.a)(Object(y.p)()(t()))), e(Object(u.startEventNowRequested)(n))
@@ -9541,7 +9541,7 @@
 							e(Object(f.a)(n, t))
 						},
 						onFlairPost: () => e(Object(b.i)(Object(de.b)(n, o))),
-						onToggleSendReplies: () => e(Object(g.X)(n)),
+						onToggleSendReplies: () => e(Object(g.S)(n)),
 						showCollectionsList: (t, s) => {
 							e(Object(ce.e)(t)).then(() => {
 								const t = Object(me.s)(s, o);
@@ -10405,7 +10405,7 @@
 								tooltipId: s
 							}))
 						},
-						copyLink: () => e(Object(p.G)(Object(m.a)(n, {
+						copyLink: () => e(Object(p.B)(Object(m.a)(n, {
 							utm_source: "share",
 							utm_medium: "web2x"
 						})))
@@ -12949,14 +12949,14 @@
 					measureScrollFPS: x.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(p.N)(e, t),
 					loadMore: f.g,
-					postsById: v.Z,
+					postsById: v.X,
 					postIds: Object(r.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: n,
 							inSubredditOrProfile: o
 						} = t;
-						return Object(v.K)(e, s, n, o)
+						return Object(v.J)(e, s, n, o)
 					}),
 					subredditsById: C.Y,
 					viewportDataLoaded: O.a,
@@ -12979,16 +12979,16 @@
 						openPost: t => {
 							s && e(Object(a.a)({
 								lastLoadedEnv: "server"
-							})), e(d.N(t))
+							})), e(d.I(t))
 						},
 						fireAdPixelsOfType: (t, s) => {
-							e(d.C(t, s))
+							e(d.z(t, s))
 						},
 						trackOnPostEnteredViewport: (t, s, n) => {
-							e(d.Q(t, n))
+							e(d.L(t, n))
 						},
 						trackOnPostExitedViewport: (t, s, n, o) => {
-							e(d.R(t, n, o))
+							e(d.M(t, n, o))
 						},
 						surveyTriggerScrollCounted: () => e(Object(l.b)())
 					}
@@ -15385,7 +15385,7 @@
 				fbt: x
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = Object(r.b)(() => Object(i.c)({
 				headComment: p.y,
-				otherDiscussionsCount: u.D,
+				otherDiscussionsCount: u.C,
 				post: p.F
 			}));
 			t.a = Object(c.c)(g(e => {
@@ -15694,7 +15694,7 @@
 						let {
 							postId: s
 						} = t;
-						const n = Object(le.bb)(e, {
+						const n = Object(le.Z)(e, {
 							postId: s
 						});
 						return !!(n && n.id && e.moderatingSubreddits[n.id])
@@ -15707,7 +15707,7 @@
 						} = t;
 						return Object(ue.e)(e, s)
 					},
-					contestModeIsEnabled: le.F,
+					contestModeIsEnabled: le.E,
 					currentUserShowNSFW: ue.V,
 					dismissedSubreddits: ne.a,
 					fullyLoaded: ee.v,
@@ -15747,7 +15747,7 @@
 							subredditName: s
 						}) : void 0
 					},
-					subredditOrProfile: le.bb,
+					subredditOrProfile: le.Z,
 					userHovercardIsOpen: (e, t) => Object(pe.b)(Object(ke.b)({
 						itemId: t.postId,
 						tooltipIdPrefix: D.a,
@@ -16465,7 +16465,7 @@
 				},
 				i = (e, t) => {
 					const s = r(e, t);
-					return Object(o.U)(e, {
+					return Object(o.S)(e, {
 						listingKey: s
 					}) || []
 				},
@@ -16562,4 +16562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.b79cb37aed3e4a6b6479.js.map
+//# sourceMappingURL=CollectionCommentsPage.1bba1cad517f2450cd73.js.map

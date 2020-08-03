@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6095995ca7ea495287e7.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.185a0134333d0bf17937.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -663,31 +663,31 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(l.v)(s.id)),
-						onDistinguishPost: t => e(Object(l.y)(s.id, t)),
+						onApprovePost: () => e(Object(l.s)(s.id)),
+						onDistinguishPost: t => e(Object(l.v)(s.id, t)),
 						onFlairChanged: (t, o) => e(Object(d.h)({
 							post: s,
 							previewFlair: t,
 							selectedTemplateId: o
 						})),
 						onFlairPost: t => e(Object(c.i)(t)),
-						onLockPost: () => e(Object(l.H)(s.id)),
-						onNsfwPost: () => e(Object(l.L)(s.id)),
-						onOcPost: () => e(Object(l.M)(s.id)),
+						onLockPost: () => e(Object(l.C)(s.id)),
+						onNsfwPost: () => e(Object(l.G)(s.id)),
+						onOcPost: () => e(Object(l.H)(s.id)),
 						onCcPost: () => {
-							e(Object(c.i)(x.a.CROWD_CONTROL)), e(Object(l.x)(s.id))
+							e(Object(c.i)(x.a.CROWD_CONTROL)), e(Object(l.u)(s.id))
 						},
-						onRemovePost: () => e(Object(l.V)(s.id, !1)),
+						onRemovePost: () => e(Object(l.Q)(s.id, !1)),
 						onModToMemberShareOpened: () => {
-							e(Object(c.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(l.I)(s.id))
+							e(Object(c.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(l.D)(s.id))
 						},
-						onSpamPost: () => e(Object(l.V)(s.id, !0)),
-						onSpoilerPost: () => e(Object(l.Z)(s.id)),
-						onStickyPost: () => e(Object(l.cb)(s.id))
+						onSpamPost: () => e(Object(l.Q)(s.id, !0)),
+						onSpoilerPost: () => e(Object(l.U)(s.id)),
+						onStickyPost: () => e(Object(l.X)(s.id))
 					}
 				}),
-				V = Object(p.a)(h.a),
-				G = A(W(Object(u.c)(e => {
+				G = Object(p.a)(h.a),
+				V = A(W(Object(u.c)(e => {
 					const {
 						canEditFlair: t,
 						hasModFullPerms: s,
@@ -715,7 +715,7 @@
 						sendEvent: j,
 						tooltipId: N
 					} = e, L = R.distinguishType === i.C.MODERATOR, I = L ? i.C.NONE : i.C.MODERATOR, P = Object(m.b)(R.id, c);
-					return n.a.createElement(V, {
+					return n.a.createElement(G, {
 						className: F.a.dropdown,
 						isOpen: r,
 						tooltipId: N
@@ -769,7 +769,7 @@
 						post: R
 					}))
 				})));
-			t.default = G
+			t.default = V
 		},
 		"./src/reddit/components/Reports/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1405,4 +1405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.6095995ca7ea495287e7.js.map
+//# sourceMappingURL=ModerationDropdowns.185a0134333d0bf17937.js.map

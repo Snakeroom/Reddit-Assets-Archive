@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.63b19890d4bd1adc36cb.js
-// Retrieved at 6/1/2020, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.d41180fc4ef62231b25d.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-CommentsPage-OtherDiscussions"], {
 		"./src/reddit/pages/CommentsPage/OtherDiscussions/index.m.less": function(e, s, t) {
@@ -30,8 +30,8 @@
 				O = t("./src/reddit/components/TrackingHelper/index.tsx"),
 				p = t("./src/reddit/constants/page.ts"),
 				b = t("./src/reddit/constants/postLayout.ts"),
-				h = t("./src/reddit/helpers/path/index.ts"),
-				C = t("./src/reddit/helpers/trackers/otherDiscussions.ts"),
+				C = t("./src/reddit/helpers/path/index.ts"),
+				h = t("./src/reddit/helpers/trackers/otherDiscussions.ts"),
 				g = t("./src/reddit/helpers/trackers/screenview.ts"),
 				x = t("./src/reddit/icons/fonts/Comment/index.tsx"),
 				D = t("./src/reddit/selectors/listings.ts"),
@@ -63,7 +63,7 @@
 						})
 					})
 				},
-				otherDiscussionsCount: _.D
+				otherDiscussionsCount: _.C
 			}));
 			s.default = Object(O.c)(I(e => {
 				let {
@@ -92,8 +92,8 @@
 				})), i.a.createElement(m.a, {
 					className: L.a.OtherDiscussionsLink,
 					isOverlay: r,
-					onClick: () => D(Object(C.b)(a)),
-					to: Object(h.b)(O)
+					onClick: () => D(Object(h.b)(a)),
+					to: Object(C.b)(O)
 				}, i.a.createElement(x.a, {
 					className: P.a.CommentIcon,
 					role: "presentation"
@@ -118,4 +118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.63b19890d4bd1adc36cb.js.map
+//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.d41180fc4ef62231b25d.js.map

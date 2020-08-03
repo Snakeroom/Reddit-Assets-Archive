@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.d467b56a8829c3cb371e.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.eb5fcf30c0502540af7f.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow"], {
 		"./src/reddit/components/CrisisFlow/async.tsx": function(e, t, o) {
@@ -202,9 +202,9 @@
 					hk: "4gbyAA"
 				})))),
 				J = o("./src/reddit/actions/userBlocks.ts"),
-				X = o("./src/reddit/models/WhitelistAndBlocked.ts"),
-				M = o("./src/reddit/icons/svgs/ProfileSlashed/index.m.less"),
-				Y = o.n(M);
+				M = o("./src/reddit/models/WhitelistAndBlocked.ts"),
+				X = o("./src/reddit/icons/svgs/ProfileSlashed/index.m.less"),
+				Y = o.n(X);
 			var z = e => r.a.createElement("svg", {
 					className: Object(C.a)(Y.a.icon, e.className),
 					xmlns: "http://www.w3.org/2000/svg",
@@ -236,14 +236,14 @@
 						const {
 							blockUserPending: t
 						} = this.props;
-						t.new !== X.a.pending && this.props.onBlockUser(e)
+						t.new !== M.a.pending && this.props.onBlockUser(e)
 					}, this.getBlockUserHeaderText = () => {
 						const {
 							authorName: e,
 							blockedUser: t,
 							blockUserPending: o
 						} = this.props;
-						return o.new === X.a.pending ? n.fbt._("Pending...", null, {
+						return o.new === M.a.pending ? n.fbt._("Pending...", null, {
 							hk: "4x1oRk"
 						}) : t ? n.fbt._("{username} is blocked", [n.fbt._param("username", e)], {
 							hk: "3jnr1Z"
@@ -579,10 +579,10 @@
 			const qe = c.a.wrapped(h.a, "Title", Ne.a),
 				We = c.a.div("CloseWrapper", Ne.a),
 				Ke = c.a.wrapped(He.a, "Close", Ne.a);
-			var Je, Xe = e => r.a.createElement(qe, null, r.a.createElement("div", null, e.title), r.a.createElement(We, {
+			var Je, Me = e => r.a.createElement(qe, null, r.a.createElement("div", null, e.title), r.a.createElement(We, {
 					onClick: e.onClosePressed
 				}, r.a.createElement(Ke, null))),
-				Me = o("./src/reddit/models/Post/index.ts");
+				Xe = o("./src/reddit/models/Post/index.ts");
 			! function(e) {
 				e.All = "all", e.Comment = "comment", e.Post = "post"
 			}(Je || (Je = {}));
@@ -607,7 +607,7 @@
 							postId: o
 						} = t;
 						const n = o && e.posts.models[o];
-						return !!n && Object(Me.i)(n)
+						return !!n && Object(Xe.i)(n)
 					},
 					liveStreamingRules: e => e.reportRules.liveStreamingRules,
 					rulesCategory: e => e.reportFlow.rulesCategory,
@@ -615,7 +615,7 @@
 						let {
 							postId: o
 						} = t;
-						return o ? Object(Qe.O)(e, {
+						return o ? Object(Qe.M)(e, {
 							postId: o
 						}) : null
 					},
@@ -626,7 +626,7 @@
 						let {
 							postId: o
 						} = t;
-						return o ? Object(Qe.bb)(e, {
+						return o ? Object(Qe.Z)(e, {
 							postId: o
 						}) : null
 					},
@@ -770,7 +770,7 @@
 					}) : n.fbt._("Report comment", null, {
 						hk: "Buqls"
 					});
-					return r.a.createElement(s.Fragment, null, r.a.createElement(Xe, {
+					return r.a.createElement(s.Fragment, null, r.a.createElement(Me, {
 						onClosePressed: t.onCloseReportFlow,
 						title: o
 					}), r.a.createElement("div", null, this.getInnerContent()))
@@ -874,4 +874,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow.d467b56a8829c3cb371e.js.map
+//# sourceMappingURL=ReportFlow.eb5fcf30c0502540af7f.js.map

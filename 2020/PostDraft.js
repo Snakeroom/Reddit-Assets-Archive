@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.0dc2a4eaaee36bed264a.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.220636fd754c26057138.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1073,7 +1073,7 @@
 					shouldShowCollectionEditOptions: g.t
 				}),
 				M = Object(a.b)(P, (e, t) => ({
-					copyLink: () => e(Object(m.G)(t.permalink)),
+					copyLink: () => e(Object(m.B)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(d.b)(n))
 					},
@@ -1326,7 +1326,7 @@
 			const O = ["right", "bottom"],
 				P = ["right", "top"];
 			var M = Object(a.b)(() => Object(d.c)({
-					post: v.O
+					post: v.M
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(g.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -2075,4 +2075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.0dc2a4eaaee36bed264a.js.map
+//# sourceMappingURL=PostDraft.220636fd754c26057138.js.map

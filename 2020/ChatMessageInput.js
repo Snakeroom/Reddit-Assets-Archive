@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.423a9b33f6a74f7b0da5.js
-// Retrieved at 7/30/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.6e5aee837f956be50d17.js
+// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -462,9 +462,9 @@
 				L = s("./src/reddit/selectors/comments.ts"),
 				S = s("./src/reddit/selectors/posts.ts"),
 				T = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				R = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
-				F = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
-				M = s("./src/reddit/helpers/awards/getIconForSize.ts"),
+				M = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
+				R = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
+				F = s("./src/reddit/helpers/awards/getIconForSize.ts"),
 				D = s("./src/reddit/selectors/communityAwards.ts"),
 				P = s("./src/reddit/icons/fonts/Gift/index.tsx"),
 				B = s("./src/reddit/components/CommentsChat/Comment/AwardCountSpectacle/AwardCountAnimation/index.m.less"),
@@ -476,7 +476,7 @@
 						className: t,
 						count: s,
 						isAnimated: n
-					} = this.props, a = e ? Object(M.a)(e, 64) : void 0;
+					} = this.props, a = e ? Object(F.a)(e, 64) : void 0;
 					return d.a.createElement("div", {
 						className: Object(m.a)(U.a.container, t, {
 							[U.a.isAnimated]: n
@@ -506,16 +506,16 @@
 						postId: s
 					} = t;
 					return Object(L.g)(e, {
-						commentsPageKey: Object(R.a)(s)
+						commentsPageKey: Object(M.a)(s)
 					})
-				}, S.O, (e, t) => {
+				}, S.M, (e, t) => {
 					let {
 						postId: s
 					} = t;
 					return Object(L.v)(e, {
-						commentsPageKey: Object(R.a)(s)
+						commentsPageKey: Object(M.a)(s)
 					})
-				}, F.a, (e, t, s, n, a) => {
+				}, R.a, (e, t, s, n, a) => {
 					return {
 						commentAwardIds: t.length ? t.reduce((t, s) => {
 							const n = Object(L.n)(e, {
@@ -599,7 +599,7 @@
 					hasError: L.w,
 					liveStreamingChatCharacterLimit: T.a,
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
-					post: S.O
+					post: S.M
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -1486,11 +1486,11 @@
 			})), s.d(t, "g", (function() {
 				return N
 			})), s.d(t, "c", (function() {
-				return R
-			})), s.d(t, "f", (function() {
-				return F
-			})), s.d(t, "j", (function() {
 				return M
+			})), s.d(t, "f", (function() {
+				return R
+			})), s.d(t, "j", (function() {
+				return F
 			})), s.d(t, "i", (function() {
 				return D
 			})), s.d(t, "e", (function() {
@@ -1564,7 +1564,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => h(t.listingName)(e, t), v, b, c.i, d.c, (e, t, s, n, a, c) => {
+				}, (e, t) => h(t.listingName)(e, t), v, b, c.h, d.c, (e, t, s, n, a, c) => {
 					if (c) {
 						const r = [];
 						if (e) {
@@ -1652,7 +1652,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s ? Object(o.g)(s) : void 0
-				}, A, b, c.i, (e, t) => {
+				}, A, b, c.h, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: n,
@@ -1667,9 +1667,9 @@
 				T = Object(n.a)(_, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				R = Object(a.a)(Object(n.a)(L, v, (e, t) => e ? t[e] : void 0)),
-				F = Object(a.a)(Object(n.a)(S, v, (e, t) => e ? t[e] : void 0)),
-				M = Object(a.a)(Object(n.a)(T, v, (e, t) => e ? t[e] : void 0)),
+				M = Object(a.a)(Object(n.a)(L, v, (e, t) => e ? t[e] : void 0)),
+				R = Object(a.a)(Object(n.a)(S, v, (e, t) => e ? t[e] : void 0)),
+				F = Object(a.a)(Object(n.a)(T, v, (e, t) => e ? t[e] : void 0)),
 				D = (Object(a.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, v, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)((e, t) => {
@@ -1709,8 +1709,8 @@
 					const a = n.stream.state;
 					return a === i.a.IS_LIVE || a === i.a.DISCONNECTED ? V.LIVE : a === i.a.ENDED && n.stream.vod_accessible ? V.VOD : V.UNAVAILABLE
 				}),
-				W = Object(n.a)(R, G, p.b, l.b, l.o, (e, t, s, n, a) => s ? n : e ? t === V.LIVE || t === V.VOD ? e.stream.hls_url : a : void 0),
-				K = Object(n.a)(R, G, U, (e, t, s) => e ? t === V.LIVE ? e.broadcast_time : t === V.VOD && s < e.broadcast_time ? s : 0 : 0)
+				W = Object(n.a)(M, G, p.b, l.b, l.o, (e, t, s, n, a) => s ? n : e ? t === V.LIVE || t === V.VOD ? e.stream.hls_url : a : void 0),
+				K = Object(n.a)(M, G, U, (e, t, s) => e ? t === V.LIVE ? e.broadcast_time : t === V.VOD && s < e.broadcast_time ? s : 0 : 0)
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts": function(e, t, s) {
 			"use strict";
@@ -1745,4 +1745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.423a9b33f6a74f7b0da5.js.map
+//# sourceMappingURL=ChatMessageInput.6e5aee837f956be50d17.js.map
