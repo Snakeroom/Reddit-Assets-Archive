@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.172f644a69fba9c69b64.js
-// Retrieved at 8/3/2020, 12:20:22 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f1c562360da1bd336e02.js
+// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9220,26 +9220,25 @@
 		"./src/chat/customMiddleware/loggedOutPreferencesSync.ts": function(e, t, n) {
 			"use strict";
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = n("./node_modules/js-cookie/src/js.cookie.js"),
-				s = n.n(a),
-				c = n("./node_modules/lodash/pick.js"),
-				r = n.n(c),
-				o = n("./src/config.ts"),
-				i = n("./src/chat/actions/theme.ts");
-			const l = new Set([i.THEME_CHANGED]);
+			var a = n("./node_modules/@reddit/onetrust-integration/dist/esm/index.js"),
+				s = n("./node_modules/lodash/pick.js"),
+				c = n.n(s),
+				r = n("./src/config.ts"),
+				o = n("./src/chat/actions/theme.ts");
+			const i = new Set([o.THEME_CHANGED]);
 			t.a = e => t => n => {
-				const a = t(n);
-				if (l.has(n.type)) {
+				const s = t(n);
+				if (i.has(n.type)) {
 					const t = e.getState().user,
 						n = {
-							prefs: r()(t.prefs, ["layout", "globalTheme", "subscriptionsPinned"]),
+							prefs: c()(t.prefs, ["layout", "globalTheme", "subscriptionsPinned"]),
 							language: t.language
 						};
-					s.a.set("USER", btoa(JSON.stringify(n)), {
-						domain: o.a.cookieDomain
+					Object(a.b)("USER", btoa(JSON.stringify(n)), {
+						domain: r.a.cookieDomain
 					})
 				}
-				return a
+				return s
 			}
 		},
 		"./src/chat/customMiddleware/sendbirdToken.ts": function(e, t, n) {
@@ -14177,4 +14176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.172f644a69fba9c69b64.js.map
+//# sourceMappingURL=Chat~RedesignChat.f1c562360da1bd336e02.js.map

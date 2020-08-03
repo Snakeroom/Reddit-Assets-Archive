@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.45e4a45facc319c3fd30.js
-// Retrieved at 8/3/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.4a1504b7b2daf3142519.js
+// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1071,11 +1071,11 @@
 				nt = o("./src/reddit/constants/experiments.ts"),
 				at = o("./src/reddit/helpers/chooseVariant/index.ts");
 			const rt = Object(r.a)(e => Object(at.c)(e, {
-					experimentName: nt.D,
+					experimentName: nt.E,
 					experimentEligibilitySelector: at.a
 				}), e => e),
-				it = e => rt(e) === nt.z.UpvoteOnly,
-				ct = e => rt(e) === nt.z.UpvoteDownvote;
+				it = e => rt(e) === nt.A.UpvoteOnly,
+				ct = e => rt(e) === nt.A.UpvoteDownvote;
 			var lt = o("./src/reddit/selectors/user.ts");
 
 			function dt() {
@@ -2642,4 +2642,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.45e4a45facc319c3fd30.js.map
+//# sourceMappingURL=ChatPost.4a1504b7b2daf3142519.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.aa6314d5b9a0273adc85.js
-// Retrieved at 7/7/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.7af8c60b16387148159e.js
+// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -275,6 +275,142 @@
 			var k = v;
 			k.lib = w, g.lib = x;
 			t.a = k
+		},
+		"./node_modules/@reddit/onetrust-integration/dist/esm/index.js": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "b", (function() {
+				return l
+			}));
+			var r = function(e, t) {
+				return e(t = {
+					exports: {}
+				}, t.exports), t.exports
+			}((function(e, t) {
+				var n;
+				n = function() {
+					function e() {
+						for (var e = 0, t = {}; e < arguments.length; e++) {
+							var n = arguments[e];
+							for (var r in n) t[r] = n[r]
+						}
+						return t
+					}
+					return function t(n) {
+						function r(t, o, i) {
+							var s;
+							if ("undefined" != typeof document) {
+								if (arguments.length > 1) {
+									if ("number" == typeof(i = e({
+											path: "/"
+										}, r.defaults, i)).expires) {
+										var a = new Date;
+										a.setMilliseconds(a.getMilliseconds() + 864e5 * i.expires), i.expires = a
+									}
+									try {
+										s = JSON.stringify(o), /^[\{\[]/.test(s) && (o = s)
+									} catch (p) {}
+									return o = n.write ? n.write(o, t) : encodeURIComponent(String(o)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent), t = (t = (t = encodeURIComponent(String(t))).replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent)).replace(/[\(\)]/g, escape), document.cookie = [t, "=", o, i.expires ? "; expires=" + i.expires.toUTCString() : "", i.path ? "; path=" + i.path : "", i.domain ? "; domain=" + i.domain : "", i.secure ? "; secure" : ""].join("")
+								}
+								t || (s = {});
+								for (var u = document.cookie ? document.cookie.split("; ") : [], c = /(%[0-9A-Z]{2})+/g, l = 0; l < u.length; l++) {
+									var d = u[l].split("="),
+										f = d.slice(1).join("=");
+									'"' === f.charAt(0) && (f = f.slice(1, -1));
+									try {
+										var h = d[0].replace(c, decodeURIComponent);
+										if (f = n.read ? n.read(f, h) : n(f, h) || f.replace(c, decodeURIComponent), this.json) try {
+											f = JSON.parse(f)
+										} catch (p) {}
+										if (t === h) {
+											s = f;
+											break
+										}
+										t || (s[h] = f)
+									} catch (p) {}
+								}
+								return s
+							}
+						}
+						return r.set = r, r.get = function(e) {
+							return r.call(r, e)
+						}, r.getJSON = function() {
+							return r.apply({
+								json: !0
+							}, [].slice.call(arguments))
+						}, r.defaults = {}, r.remove = function(t, n) {
+							r(t, "", e(n, {
+								expires: -1
+							}))
+						}, r.withConverter = t, r
+					}((function() {}))
+				}, e.exports = n()
+			}));
+
+			function o(e) {
+				const t = decodeURIComponent(e).split("&").filter(e => e.startsWith("groups="))[0];
+				if (!t) throw new Error;
+				return t.replace("groups=", "").split(",").map(e => e.split(":")).filter(([e, t]) => !parseInt(t)).map(([e, t]) => e)
+			}
+
+			function i(e, t) {
+				return e.filter(e => t.includes(e.OptanonGroupId)).map(e => e.FirstPartyCookies).reduce((e, t) => e.concat(t), []).map(e => e.Name)
+			}
+
+			function s(e) {
+				return fetch("https://cookies-data.onetrust.com/bannersdk/domaindata", {
+					method: "GET",
+					headers: {
+						domain: e,
+						lang: "en",
+						location: "cdn.cookielaw.org"
+					},
+					mode: "cors"
+				}).then(e => e.json()).then(e => ({
+					bannerWillShow: e.culture.DomainData.ShowAlertNotice,
+					groups: e.culture.DomainData.Groups
+				}))
+			}
+
+			function a() {
+				const e = r.get("OptanonConsent");
+				if (e && e.includes("groups=")) return e
+			}
+			var u = "__rCookieDenylist";
+			async function c(e) {
+				const {
+					clientId: t,
+					enabled: n = !0
+				} = e;
+				n ? (self[u] = new Promise((e, n) => {
+					s(t).then(r => {
+						if (!r.bannerWillShow) return e([]);
+						new Promise(e => {
+								a() ? e(a()) : self.OptanonWrapper = function() {
+									a() && e(a())
+								}
+							}).then(t => {
+								if (!t) return n(new Error("Could not establish Optanon cookie"));
+								const s = o(t),
+									a = i(r.groups, s);
+								return e(a)
+							}),
+							function(e) {
+								const t = document.createElement("script");
+								t.setAttribute("data-domain-script", e), t.setAttribute("type", "text/javascript"), t.setAttribute("src", "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"), document.head.append(t)
+							}(t)
+					})
+				}), self[u].then(e => {
+					e.forEach(e => r.remove(e))
+				})) : self[u] = Promise.resolve([])
+			}
+
+			function l(e, t, n) {
+				(self[u] || Promise.resolve([])).then(o => {
+					o.includes(e) || r.set(e, t, n)
+				}).catch(() => r.set(e, t, n))
+			}
 		},
 		"./node_modules/@sentry/browser/esm/client.js": function(e, t, n) {
 			"use strict";
@@ -34274,4 +34410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~Governance~Reddit.aa6314d5b9a0273adc85.js.map
+//# sourceMappingURL=vendors~Chat~Governance~Reddit.7af8c60b16387148159e.js.map

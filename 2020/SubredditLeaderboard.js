@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9fc7c4676f83241db78f.js
-// Retrieved at 8/3/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.22b3d0c77937042bce2d.js
+// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1257,10 +1257,10 @@
 				W = r("./src/reddit/models/GoodContent/index.ts"),
 				B = r("./src/reddit/selectors/subreddit.ts"),
 				R = r("./src/reddit/selectors/subredditLeaderboard.ts"),
-				M = r("./src/reddit/selectors/user.ts");
-			const D = 25,
-				A = .5,
-				H = Object(d.c)({
+				D = r("./src/reddit/selectors/user.ts");
+			const M = 25,
+				H = .5,
+				A = Object(d.c)({
 					hasPreviousPage: (e, t) => {
 						let {
 							categoryId: r
@@ -1273,7 +1273,7 @@
 						} = t;
 						return Object(R.b)(e, r)
 					},
-					isMod: M.I,
+					isMod: D.I,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
@@ -1282,7 +1282,7 @@
 					},
 					subreddits: B.Y
 				}),
-				G = Object(i.b)(H, e => ({
+				G = Object(i.b)(A, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.a)(t, r))
 				}));
 			class Q extends o.a.Component {
@@ -1318,7 +1318,7 @@
 						after: a,
 						categoryId: e === p.a ? p.d : e,
 						filter: W.a,
-						first: D,
+						first: M,
 						isOnlyModIncluded: o
 					}
 				}
@@ -1350,7 +1350,7 @@
 						className: C.a.subredditRankingsList
 					}, n ? this.renderSubredditRankItems(d) : this.renderSubredditRankItemPlaceholders(), a && o.a.createElement(v.a, {
 						onChange: this.fetchMoreSubreddits,
-						threshold: A,
+						threshold: H,
 						rootMargin: "0px 0px 0px 0px"
 					}, o.a.createElement("li", null, o.a.createElement(F.a, {
 						large: !0
@@ -1547,7 +1547,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				xe = Object(u.Ac)(p.f),
+				xe = Object(u.Bc)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: xe
@@ -1648,16 +1648,16 @@
 
 			function a(e) {
 				const t = o(e);
-				return t === s.Cb.Rotate || t === s.Cb.RotateAll
+				return t === s.Db.Rotate || t === s.Db.RotateAll
 			}
 
 			function o(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.Bb
+					experimentName: s.Cb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.9fc7c4676f83241db78f.js.map
+//# sourceMappingURL=SubredditLeaderboard.22b3d0c77937042bce2d.js.map

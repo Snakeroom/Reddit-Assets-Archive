@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.c06efbf8de1d01e9a7d5.js
-// Retrieved at 8/3/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.b3aa4810d5b382658212.js
+// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -190,11 +190,11 @@
 				F = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				I = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
 				B = n("./src/reddit/actions/post.ts"),
-				A = n("./src/reddit/components/MiniPost/index.tsx"),
-				D = n("./src/reddit/components/Widgets/Base/index.tsx");
+				D = n("./src/reddit/components/MiniPost/index.tsx"),
+				A = n("./src/reddit/components/Widgets/Base/index.tsx");
 			class R extends o.a.Component {
 				render() {
-					return o.a.createElement("div", null, o.a.createElement(D.a, null, this.props.headerText), this.props.posts.map(e => o.a.createElement(A.a, {
+					return o.a.createElement("div", null, o.a.createElement(A.a, null, this.props.headerText), this.props.posts.map(e => o.a.createElement(D.a, {
 						key: e.id,
 						postId: e.id
 					})))
@@ -212,7 +212,7 @@
 				V = Q.a.button("ClearButton", J.a);
 			class H extends o.a.Component {
 				render() {
-					return o.a.createElement(D.b, null, o.a.createElement(W, {
+					return o.a.createElement(A.b, null, o.a.createElement(W, {
 						className: this.props.className,
 						headerText: s.fbt._("Recent posts", null, {
 							hk: "1olaOT"
@@ -320,8 +320,8 @@
 						trendingSubredditIds: b
 					} = this.props, p = i && d, g = [...ne.l];
 					p && g.unshift(ne.g);
-					const h = c === te.Cb.Rotate,
-						x = c === te.Cb.RotateAll;
+					const h = c === te.Db.Rotate,
+						x = c === te.Db.RotateAll;
 					let _ = ne.m;
 					return p && (h ? _ = this.state.random > .5 ? ne.g : ne.m : x && (_ = g[this.state.randomIndex])), o.a.createElement(P.a, {
 						className: t
@@ -1026,16 +1026,16 @@
 
 			function r(e) {
 				const t = i(e);
-				return t === s.Cb.Rotate || t === s.Cb.RotateAll
+				return t === s.Db.Rotate || t === s.Db.RotateAll
 			}
 
 			function i(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Bb
+					experimentName: s.Cb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.c06efbf8de1d01e9a7d5.js.map
+//# sourceMappingURL=FrontpageSidebar.b3aa4810d5b382658212.js.map

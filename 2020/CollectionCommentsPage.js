@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e0799fd8b91ff548c9dc.js
-// Retrieved at 8/3/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.29e421810f9556e0a7d9.js
+// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3364,9 +3364,9 @@
 			const wt = e => {
 				const t = Object(jt.c)(e, {
 					experimentEligibilitySelector: jt.a,
-					experimentName: kt.bb
+					experimentName: kt.cb
 				});
-				return !(!t || Object(kt.Bc)(t))
+				return !(!t || Object(kt.Cc)(t))
 			};
 			var Pt = s("./src/reddit/selectors/userPrefs.ts"),
 				It = s("./src/reddit/selectors/moderatingComments.ts"),
@@ -3414,9 +3414,9 @@
 					highlightAnimationEnabled: e => (e => {
 						const t = Object(jt.c)(e, {
 							experimentEligibilitySelector: jt.a,
-							experimentName: kt.Z
+							experimentName: kt.ab
 						});
-						return !(!t || Object(kt.Bc)(t))
+						return !(!t || Object(kt.Cc)(t))
 					})(e) && !Object(Pt.c)(e),
 					highlightTagsEnabled: wt,
 					isEditing: C.z,
@@ -10169,7 +10169,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.Bc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.Cc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -10199,7 +10199,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Bc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Cc)(o), p = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -16500,8 +16500,8 @@
 			const a = e => o.e[Object(r.N)(e, {})] === o.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.C
-				}) === n.L.Treatment
+					experimentName: n.D
+				}) === n.M.Treatment
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
 			"use strict";
@@ -16516,7 +16516,7 @@
 				d = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: o.r
-				}), e => e === o.x.Enabled)
+				}), e => e === o.y.Enabled)
 		},
 		"./src/reddit/selectors/experiments/commentsPageAd.ts": function(e, t, s) {
 			"use strict";
@@ -16528,9 +16528,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.E
+					experimentName: n.F
 				});
-				return !!t && !Object(n.Bc)(t)
+				return !!t && !Object(n.Cc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -16543,9 +16543,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.W
+					experimentName: n.X
 				});
-				return !(!t || Object(n.Bc)(t))
+				return !(!t || Object(n.Cc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16562,4 +16562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.e0799fd8b91ff548c9dc.js.map
+//# sourceMappingURL=CollectionCommentsPage.29e421810f9556e0a7d9.js.map

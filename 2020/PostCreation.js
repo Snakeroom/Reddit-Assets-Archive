@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.eddf55b4dc0523912741.js
-// Retrieved at 8/3/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.df4541069090e3f34778.js
+// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -677,16 +677,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Eb
+					experimentName: u.Fb
 				});
-				return Object(u.Bc)(t) ? void 0 : t
+				return Object(u.Cc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Fb
+					experimentName: u.Gb
 				});
-				return Object(u.Bc)(t) ? void 0 : t
-			}, (e, t) => e === u.Gb.Enabled && t === u.Gb.Enabled);
+				return Object(u.Cc)(t) ? void 0 : t
+			}, (e, t) => e === u.Hb.Enabled && t === u.Hb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "a1a9726-production"
+					SENTRY_RELEASE_VERSION: "42864c4-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3828,9 +3828,9 @@
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(k.c)(e, {
 							experimentEligibilitySelector: T.H,
-							experimentName: S.db
+							experimentName: S.eb
 						});
-						return !(!t || Object(S.Bc)(t))
+						return !(!t || Object(S.Cc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: I.c
@@ -33379,4 +33379,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.eddf55b4dc0523912741.js.map
+//# sourceMappingURL=PostCreation.df4541069090e3f34778.js.map
