@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9e04c16c82775f897c64.js
-// Retrieved at 8/3/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.209bcd2d97de9d09595e.js
+// Retrieved at 8/3/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "766dc3c-production"
+					SENTRY_RELEASE_VERSION: "9f6aa4a-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -2503,12 +2503,12 @@
 					}(u)), d.filter(e => e.isValid).map(e => e.uploadKey)
 				}, B = (e, t) => async (n, o) => {
 					const r = o(),
-						i = Object(w.M)(r),
+						i = Object(w.L)(r),
 						{
 							items: a
 						} = i,
 						c = !a.length && 1 === e.length,
-						p = Object(w.E)(r) && !c;
+						p = Object(w.D)(r) && !c;
 					let m = !1,
 						h = e;
 					if (p) {
@@ -7698,7 +7698,6 @@
 				},
 				pe = Object(D.t)(),
 				me = Object(u.c)({
-					isImageGalleriesEnabled: G.D,
 					isInImgAltTextVariant: (e, t) => Object(z.e)(e, t),
 					subredditOrProfileDisplayText: (e, t) => Object(z.k)(e, t),
 					subredditOrProfile: (e, t) => {
@@ -7973,292 +7972,290 @@
 						isCommentsPage: o,
 						isExpando: r,
 						isGalleryTileLayout: i,
-						isImageGalleriesEnabled: a,
-						isListing: c,
-						isMediumHeight: d,
-						isNotCardView: u,
-						isTitleOnly: p,
-						post: m,
-						showCentered: h,
-						showFull: g = !1
+						isListing: a,
+						isMediumHeight: c,
+						isNotCardView: d,
+						isTitleOnly: u,
+						post: p,
+						showCentered: m,
+						showFull: h = !1
 					} = this.props, {
-						canLoadContent: x,
-						forcePause: v,
-						shouldPause: C,
-						shouldStop: j,
-						viewportWidth: L
+						canLoadContent: g,
+						forcePause: x,
+						shouldPause: v,
+						shouldStop: C,
+						viewportWidth: j
 					} = this.state;
-					if (!m.media) return null;
-					const A = v || C,
-						D = j,
+					if (!p.media) return null;
+					const L = x || v,
+						A = C,
 						{
-							source: z,
-							obfuscated: q,
-							height: G,
-							width: J,
-							needsBackgroundBlur: Q
+							source: D,
+							obfuscated: z,
+							height: q,
+							width: G,
+							needsBackgroundBlur: J
 						} = this.getMediaInfo(this.props, this.state),
-						Y = {
-							showCentered: h,
-							isListing: c,
-							showFull: g,
-							height: G,
-							width: J
+						Q = {
+							showCentered: m,
+							isListing: a,
+							showFull: h,
+							height: q,
+							width: G
 						},
-						Z = Object.assign(Object.assign({}, Y), {
+						Y = Object.assign(Object.assign({}, Q), {
 							className: e,
 							forceAspectRatio: s,
-							viewportWidth: L
+							viewportWidth: j
 						}),
-						X = this.shouldBlur(),
-						se = !(!m.isSponsored || !m.source);
-					if (q && X) return l.a.createElement(k.a, ee({}, Z, {
-						blurSrc: q
+						Z = this.shouldBlur(),
+						X = !(!p.isSponsored || !p.source);
+					if (z && Z) return l.a.createElement(k.a, ee({}, Y, {
+						blurSrc: z
 					}), l.a.createElement(ae, {
-						isVisible: x
-					}, l.a.createElement(S.a, ee({}, Y, {
+						isVisible: g
+					}, l.a.createElement(S.a, ee({}, Q, {
 						altText: this.getAltText(),
 						className: this.props.imageBoxClassName,
 						contentImageClassName: this.props.imageBoxContentImageClassName,
 						imageClassName: this.props.imageBoxClassName,
-						isListing: c,
+						isListing: a,
 						isNSFW: this.isNSFW(),
 						isSpoiler: this.isSpoiler(),
-						isVideoThumbnail: !!m.media && m.media.type === W.o.VIDEO,
+						isVideoThumbnail: !!p.media && p.media.type === W.o.VIDEO,
 						onClick: this.onClickRevealBlurred,
-						postId: m.id,
-						shouldBlur: X,
-						source: q,
-						outboundUrl: se && m.source.outboundUrl || void 0,
-						originalSource: z
+						postId: p.id,
+						shouldBlur: Z,
+						source: z,
+						outboundUrl: X && p.source.outboundUrl || void 0,
+						originalSource: D
 					}))));
-					if (!m.media) return null;
-					switch (m.media.type) {
+					if (!p.media) return null;
+					switch (p.media.type) {
 						case W.o.RTJSON:
-							const s = Object(F.a)(m, null);
+							const s = Object(F.a)(p, null);
 							if (null === s) return;
-							return g || Object(B.a)(m) ? l.a.createElement(l.a.Fragment, null, l.a.createElement(T.a, {
-								canLoadContent: x,
+							return h || Object(B.a)(p) ? l.a.createElement(l.a.Fragment, null, l.a.createElement(T.a, {
+								canLoadContent: g,
 								className: e,
 								"data-click-id": "text",
 								isCommentsPage: o,
 								isExpando: r,
-								isMediumHeight: d,
-								isRichTextTruncated: m.media.isRichtextPreview,
-								isTitleOnly: p,
-								postId: m.id,
-								showFull: g
+								isMediumHeight: c,
+								isRichTextTruncated: p.media.isRichtextPreview,
+								isTitleOnly: u,
+								postId: p.id,
+								showFull: h
 							}, l.a.createElement(R.a, {
 								altText: this.getAltText(),
 								flairStyleTemplate: n,
-								content: m.isMeta ? Object(V.a)(s, m.id) : s,
-								mediaMetadata: m.media.mediaMetadata,
-								postId: m.id,
+								content: p.isMeta ? Object(V.a)(s, p.id) : s,
+								mediaMetadata: p.media.mediaMetadata,
+								postId: p.id,
 								rtJsonElementProps: be(this.props),
-								renderMediaAsLinks: c
+								renderMediaAsLinks: a
 							})), l.a.createElement(O.a, {
-								postId: m.id,
+								postId: p.id,
 								isCommentsPage: !!o
 							})) : null;
 						case W.o.TEXT:
-							if (Object(H.a)(m)) {
+							if (Object(H.a)(p)) {
 								const t = "Text post should not include body content";
 								return y.c.withScope(e => {
 									e.setExtra("info", {
-										post: m,
-										isListing: c,
+										post: p,
+										isListing: a,
 										isCommentsPage: o
 									}), y.c.captureMessage(t)
-								}), Object(b.a)() && console.log("".concat(m.id, ": ").concat(t)), l.a.createElement(T.a, {
-									postId: m.id,
+								}), Object(b.a)() && console.log("".concat(p.id, ": ").concat(t)), l.a.createElement(T.a, {
+									postId: p.id,
 									className: e,
 									"data-click-id": "text",
 									isCommentsPage: o,
-									showFull: g
+									showFull: h
 								}, l.a.createElement(N.a, {
 									flairStyleTemplate: n,
-									html: m.isMeta ? Object(K.a)(m.media.content, m.id, $.a.hiddenLink) : m.media.content
+									html: p.isMeta ? Object(K.a)(p.media.content, p.id, $.a.hiddenLink) : p.media.content
 								}))
 							}
 							return null;
 						case W.o.EMBED:
-							return this.props.isMiniCard && m.preview && m.preview.url ? l.a.createElement(k.a, ee({}, Z, {
+							return this.props.isMiniCard && p.preview && p.preview.url ? l.a.createElement(k.a, ee({}, Y, {
 								alwaysWrapMedia: !0
 							}), l.a.createElement(ae, {
-								isVisible: x
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, ee({}, Y, {
+								isVisible: g
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, ee({}, Q, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
 								isExpando: r,
-								isListing: c,
+								isListing: a,
 								isNSFW: this.isNSFW(),
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
-								postId: m.id,
-								shouldBlur: X,
-								source: m.preview.url,
-								originalSource: m.preview.url
-							})), l.a.createElement(M.a, null)))) : W.h.has(m.media.provider) ? m.media.provider === W.v.Twitter ? l.a.createElement(I.a, {
-								canLoadContent: x,
+								postId: p.id,
+								shouldBlur: Z,
+								source: p.preview.url,
+								originalSource: p.preview.url
+							})), l.a.createElement(M.a, null)))) : W.h.has(p.media.provider) ? p.media.provider === W.v.Twitter ? l.a.createElement(I.a, {
+								canLoadContent: g,
 								embedBoxChildRef: this.storeChildRef,
-								media: m.media,
-								mediaContainerProps: Z,
+								media: p.media,
+								mediaContainerProps: Y,
 								onIframeLoaded: this.onIframeLoaded,
-								source: z,
-								title: m.title
-							}) : l.a.createElement(k.a, ee({}, Z, {
+								source: D,
+								title: p.title
+							}) : l.a.createElement(k.a, ee({}, Y, {
 								alwaysWrapMedia: !0,
-								height: r ? G : W.j,
-								width: r ? J : W.j * (16 / 9)
-							}), x && l.a.createElement(w.a, {
+								height: r ? q : W.j,
+								width: r ? G : W.j * (16 / 9)
+							}), g && l.a.createElement(w.a, {
 								childRef: this.storeChildRef,
-								height: r ? G : W.j,
-								width: r ? J : void 0,
-								isListing: c,
+								height: r ? q : W.j,
+								width: r ? G : void 0,
+								isListing: a,
 								isResponsive: !0,
 								onLoad: this.onIframeLoaded,
-								showCentered: h,
-								showFull: g,
-								source: z,
-								title: m.title
-							})) : l.a.createElement(k.a, ee({}, Z, {
+								showCentered: m,
+								showFull: h,
+								source: D,
+								title: p.title
+							})) : l.a.createElement(k.a, ee({}, Y, {
 								alwaysWrapMedia: !0
-							}), x && l.a.createElement(w.a, ee({}, Y, {
-								isResponsive: r || m.media.provider === W.v.IFrameEmbed,
-								title: m.title,
+							}), g && l.a.createElement(w.a, ee({}, Q, {
+								isResponsive: r || p.media.provider === W.v.IFrameEmbed,
+								title: p.title,
 								childRef: this.storeChildRef,
 								onLoad: this.onIframeLoaded,
-								source: z,
-								fullWidth: m.media.provider === W.v.IFrameEmbed
+								source: D,
+								fullWidth: p.media.provider === W.v.IFrameEmbed
 							})));
 						case W.o.GIFVIDEO: {
-							let e = G,
-								t = J;
-							return e > W.j && (t = J / G * (e = W.j)), l.a.createElement(k.a, ee({}, Z, {
-								blurSrc: Q ? m.media.gifBackgroundImage : void 0
+							let e = q,
+								t = G;
+							return e > W.j && (t = G / q * (e = W.j)), l.a.createElement(k.a, ee({}, Y, {
+								blurSrc: J ? p.media.gifBackgroundImage : void 0
 							}), l.a.createElement(ae, {
-								isVisible: x
-							}, l.a.createElement(P.a, ee({}, Y, {
-								isNotCardView: u,
+								isVisible: g
+							}, l.a.createElement(P.a, ee({}, Q, {
+								isNotCardView: d,
 								height: r ? void 0 : e,
 								width: r ? void 0 : t,
-								postId: m.id,
+								postId: p.id,
 								shouldLoad: !0,
-								shouldPause: A,
-								source: z,
-								originalSource: m.media.content
+								shouldPause: L,
+								source: D,
+								originalSource: p.media.content
 							}))))
 						}
 						case W.o.VIDEO: {
-							const e = m.media.posterUrl || m.preview && m.preview.url;
-							if (this.props.isMiniCard && e) return l.a.createElement(k.a, ee({}, Z, {
+							const e = p.media.posterUrl || p.preview && p.preview.url;
+							if (this.props.isMiniCard && e) return l.a.createElement(k.a, ee({}, Y, {
 								alwaysWrapMedia: !0
 							}), l.a.createElement(ae, {
-								isVisible: x
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, ee({}, Y, {
+								isVisible: g
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, ee({}, Q, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
 								isExpando: r,
-								isListing: c,
+								isListing: a,
 								isNSFW: this.isNSFW(),
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
-								postId: m.id,
-								shouldBlur: X,
+								postId: p.id,
+								shouldBlur: Z,
 								source: e,
 								originalSource: e
 							})), l.a.createElement(M.a, null))));
-							const n = l.a.createElement(k.a, ee({}, Z, {
+							const n = l.a.createElement(k.a, ee({}, Y, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
-							}), x && l.a.createElement(ne, {
-								autoPlay: "boolean" == typeof C ? !C : void 0,
+							}), g && l.a.createElement(ne, {
+								autoPlay: "boolean" == typeof v ? !v : void 0,
 								isExpando: r,
 								shouldLoad: !0,
-								shouldPause: A,
-								shouldStop: D,
-								hlsSource: m.media.hlsUrl,
-								mpegDashSource: m.media.dashUrl,
-								isGif: m.media.isGif,
-								scrubberThumbSource: m.media.scrubberThumbSource,
-								postId: m.id,
-								callToActionSource: m.source || void 0,
-								callToActionText: m.callToAction,
-								isListing: c,
-								posterUrl: m.media.posterUrl,
+								shouldPause: L,
+								shouldStop: A,
+								hlsSource: p.media.hlsUrl,
+								mpegDashSource: p.media.dashUrl,
+								isGif: p.media.isGif,
+								scrubberThumbSource: p.media.scrubberThumbSource,
+								postId: p.id,
+								callToActionSource: p.source || void 0,
+								callToActionText: p.callToAction,
+								isListing: a,
+								posterUrl: p.media.posterUrl,
 								muxVideoDuration: void 0,
-								muxVideoId: m.id,
+								muxVideoId: p.id,
 								muxVideoIsLive: !1,
-								muxVideoTitle: m.title
+								muxVideoTitle: p.title
 							}));
-							return m.isSponsored ? l.a.createElement(E.a, {
-								post: m,
+							return p.isSponsored ? l.a.createElement(E.a, {
+								post: p,
 								trackVideo: !0
 							}, n) : n
 						}
 						case W.o.LIVEVIDEO:
 							return l.a.createElement(ae, {
-								isVisible: x
+								isVisible: g
 							}, l.a.createElement(te, {
-								canLoad: x,
-								postId: m.id,
-								postTitle: m.title,
-								shouldPause: A || D,
-								url: m.media.hlsUrl
+								canLoad: g,
+								postId: p.id,
+								postTitle: p.title,
+								shouldPause: L || A,
+								url: p.media.hlsUrl
 							}));
 						case W.o.IMAGE:
-							const v = this.state.viewportHeight - 2 * oe,
-								j = this.state.viewportWidth - 2 * oe;
-							let L = z;
-							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (m.thumbnail && Object(f.a)(m.thumbnail.url) ? L = m.thumbnail.url : m.preview && Object(f.a)(m.preview.url) && (L = m.preview.url)), l.a.createElement(k.a, ee({}, Z, {
-								blurSrc: Q ? L : void 0,
+							const x = this.state.viewportHeight - 2 * oe,
+								C = this.state.viewportWidth - 2 * oe;
+							let j = D;
+							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (p.thumbnail && Object(f.a)(p.thumbnail.url) ? j = p.thumbnail.url : p.preview && Object(f.a)(p.preview.url) && (j = p.preview.url)), l.a.createElement(k.a, ee({}, Y, {
+								blurSrc: J ? j : void 0,
 								isExpando: !!r
 							}), l.a.createElement(ae, {
-								isVisible: x
-							}, l.a.createElement(S.a, ee({}, Y, {
+								isVisible: g
+							}, l.a.createElement(S.a, ee({}, Q, {
 								altText: this.getAltText(),
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
 								isExpando: r,
-								isListing: c,
+								isListing: a,
 								isNSFW: this.isNSFW(),
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
-								maxHeight: r ? v : void 0,
-								maxWidth: r ? j : void 0,
-								postId: m.id,
-								shouldBlur: X,
-								source: L,
-								outboundUrl: se && m.source.outboundUrl || void 0,
-								isSponsored: m.isSponsored,
-								originalSource: m.media.content
+								maxHeight: r ? x : void 0,
+								maxWidth: r ? C : void 0,
+								postId: p.id,
+								shouldBlur: Z,
+								source: j,
+								outboundUrl: X && p.source.outboundUrl || void 0,
+								isSponsored: p.isSponsored,
+								originalSource: p.media.content
 							}))));
 						case W.o.GALLERY:
-							if (!a) return null;
-							const q = Object(U.b)(m.media.mediaMetadata || {}, Object(U.c)(c), W.p, J),
-								re = Object(U.a)(m.media.gallery);
-							return l.a.createElement(k.a, ee({}, Z, {
-								blurSrc: Q ? z : void 0,
+							const z = Object(U.b)(p.media.mediaMetadata || {}, Object(U.c)(a), W.p, G),
+								se = Object(U.a)(p.media.gallery);
+							return l.a.createElement(k.a, ee({}, Y, {
+								blurSrc: J ? D : void 0,
 								isExpando: !!r,
-								maxGalleryHeight: q + re,
+								maxGalleryHeight: z + se,
 								className: $.a.galleryMediaContainer,
 								isGalleryTileLayout: i
 							}), l.a.createElement(ae, {
-								isVisible: x
+								isVisible: g
 							}, l.a.createElement(_.a, {
-								postId: m.id,
-								galleryItems: m.media.gallery ? m.media.gallery.items : [],
-								mediaMetadata: m.media.mediaMetadata || {},
-								imageHeight: q,
-								captionHeight: re,
+								postId: p.id,
+								galleryItems: p.media.gallery ? p.media.gallery.items : [],
+								mediaMetadata: p.media.mediaMetadata || {},
+								imageHeight: z,
+								captionHeight: se,
 								className: this.props.imageBoxClassName,
-								isListing: c,
+								isListing: a,
 								isNSFW: this.isNSFW(),
 								isSpoiler: this.isSpoiler(),
-								shouldBlur: X,
+								shouldBlur: Z,
 								onClickRevealBlurred: this.onClickRevealBlurred,
 								isTileLayout: !!i,
 								shouldShowTileLayoutOption: this.props.shouldShowGalleryTileOption
@@ -11764,7 +11761,7 @@
 				b = p.a.ol("Ol", u.a),
 				f = p.a.div("Title", u.a),
 				g = Object(a.c)({
-					submissionType: l.db
+					submissionType: l.cb
 				});
 			t.a = p.a.wrapped(Object(i.b)(g)(e => {
 				const {
@@ -20819,7 +20816,7 @@
 			const {
 				fbt: p
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), m = Object(c.c)({
-				title: l.hb
+				title: l.gb
 			});
 			var h = Object(a.b)(m)(e => {
 					const {
@@ -28300,9 +28297,9 @@
 				},
 				Ce = e => {
 					const t = e.uploads,
-						n = Object(w.M)(e),
+						n = Object(w.L)(e),
 						s = Object(w.a)(e),
-						o = Object(w.X)(e);
+						o = Object(w.W)(e);
 					if (s === m.Jb.POST) return F.a.getPendingThumbnailUploads(o, t);
 					if (s === m.Jb.MEDIA && n && n.items.length) {
 						const {
@@ -28318,11 +28315,11 @@
 						gqlContext: o
 					} = s;
 					const r = n(),
-						i = Object(w.U)(r),
-						a = Object(w.V)(r, e),
+						i = Object(w.T)(r),
+						a = Object(w.U)(r, e),
 						c = Object(w.g)(r),
 						l = Object(de.r)(r),
-						d = Object(w.Y)(r);
+						d = Object(w.X)(r);
 					if (!(a && c.id && i && Object(ie.f)(l))) return;
 					const u = c.id,
 						p = Object(de.a)(r, {
@@ -28348,10 +28345,10 @@
 						gqlContext: o
 					} = s;
 					const r = n(),
-						i = Object(w.U)(r),
-						a = Object(w.V)(r, e),
+						i = Object(w.T)(r),
+						a = Object(w.U)(r, e),
 						c = Object(w.g)(r),
-						l = Object(w.Y)(r),
+						l = Object(w.X)(r),
 						d = Object(de.b)(r);
 					if (!a || !c.id || !i) return;
 					if (t(me(a)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(w.s)(n()))) return;
@@ -28378,7 +28375,7 @@
 						apiContext: o
 					} = s;
 					const r = n(),
-						i = Object(w.V)(r, e),
+						i = Object(w.U)(r, e),
 						c = r.creations.formData.isPoll,
 						l = r.creations.formData.polls ? Oe(r.creations.formData.polls, r) : Oe({
 							duration: m.x,
@@ -28477,7 +28474,7 @@
 			const Re = "DISCARD_POST_ON_NAVIGATION_MODAL_ID",
 				Le = Object(i.c)({
 					isEditingScheduledPost: e => !!Object(de.r)(e),
-					isScheduledPost: w.I
+					isScheduledPost: w.H
 				});
 			var Ae = Object(r.b)(Le)(e => {
 					const {
@@ -28535,8 +28532,8 @@
 					hasError: w.r,
 					havePostContent: w.w,
 					isChanged: w.z,
-					modalId: w.O,
-					submitPostPending: w.fb
+					modalId: w.N,
+					submitPostPending: w.eb
 				}),
 				Ue = Object(r.b)(Fe, e => ({
 					onToggleDiscardModal: () => e(a.y(Re))
@@ -28602,7 +28599,7 @@
 				fbt: gt
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), xt = dt.a.div("Container", ft.a), yt = Object(i.c)({
 				eventSchedule: w.o,
-				postSchedule: w.U
+				postSchedule: w.T
 			});
 			var vt = Object(r.b)(yt)(e => {
 					const {
@@ -29051,12 +29048,12 @@
 					eventSchedule: w.o,
 					isChatPostAvailable: Nn.a,
 					isChatPostSelected: w.A,
-					isNsfw: w.F,
-					isSpoiler: w.J,
-					isOriginalContent: w.G,
+					isNsfw: w.E,
+					isSpoiler: w.I,
+					isOriginalContent: w.F,
 					flair: w.q,
 					postCreationFieldErrors: Rn,
-					postSchedule: w.U,
+					postSchedule: w.T,
 					submissionType: w.a
 				}),
 				os = Object(r.b)(ss, (e, t) => {
@@ -29421,7 +29418,7 @@
 				As = dt.a.wrapped(Ye.a, "PostLoadingIcon", vs.a),
 				Ds = dt.a.wrapped(As, "DraftLoadingIcon", vs.a),
 				Bs = dt.a.wrapped(Ge.a, "Token", vs.a),
-				Fs = Object(i.a)(w.X, F.a.getMediaCount),
+				Fs = Object(i.a)(w.W, F.a.getMediaCount),
 				Us = (e, t) => {
 					const n = Object(O.m)(e, t),
 						s = !!Object(O.j)(e, t);
@@ -29431,9 +29428,9 @@
 				},
 				Hs = [],
 				Ks = e => {
-					const t = Object(w.X)(e),
-						n = Object(w.db)(e);
-					if (!t.isBound || n !== m.Jb.POST || !Object(w.ab)(e)) return Hs;
+					const t = Object(w.W)(e),
+						n = Object(w.cb)(e);
+					if (!t.isBound || n !== m.Jb.POST || !Object(w.Z)(e)) return Hs;
 					const s = (e => {
 						const {
 							allowedPostTypes: t,
@@ -29464,7 +29461,7 @@
 					let {
 						sourcePostId: n
 					} = t;
-					const s = Object(w.cb)(e, {
+					const s = Object(w.bb)(e, {
 							sourcePostId: n
 						}),
 						{
@@ -29541,9 +29538,9 @@
 					let {
 						sourcePostId: n
 					} = t;
-					const s = Object(w.M)(e),
-						o = Object(w.X)(e),
-						r = Object(w.db)(e);
+					const s = Object(w.L)(e),
+						o = Object(w.W)(e),
+						r = Object(w.cb)(e);
 					if (r === m.Jb.IMAGE_ONLY) return !1;
 					if (!Object(w.g)(e).name || !Object(w.y)(e)) return !1;
 					if (r === m.Jb.POST || r === m.Jb.POLL) {
@@ -29592,12 +29589,12 @@
 					isChatPostSelected: w.A,
 					isDraftsFeatureEnabled: (e, t) => !Us(e, t),
 					isDraftPending: _.g,
-					isMediaUploadPending: w.N,
+					isMediaUploadPending: w.M,
 					isModeratorSomewhere: ot.h,
-					isPostPending: w.fb,
+					isPostPending: w.eb,
 					isPostSubmitEnabled: Ws,
 					isSaveDraftEnabled: e => {
-						const t = Object(w.db)(e);
+						const t = Object(w.cb)(e);
 						if (!m.D.has(t) || !Object(w.z)(e)) return !1;
 						const n = Object(w.g)(e),
 							s = Object(w.m)(e),
@@ -29607,13 +29604,13 @@
 							a = o || r || i;
 						return !!n.name || Object(w.y)(e) || a
 					},
-					isScheduledPost: w.I,
-					postSchedule: w.U,
+					isScheduledPost: w.H,
+					postSchedule: w.T,
 					isEditingScheduledPost: e => !!Object(de.r)(e),
 					showContributorRequestFlow: e => Object(S.r)(e, g.e.Post),
-					showScheduledPosts: w.bb,
+					showScheduledPosts: w.ab,
 					submissionType: w.a,
-					submitMode: w.eb,
+					submitMode: w.db,
 					subredditGovMeta: e => {
 						const t = Object(w.g)(e);
 						if (t && t.id) return e.subreddits.gov.meta[t.id]
@@ -29801,7 +29798,7 @@
 				so = n.n(no);
 			const oo = dt.a.wrapped(eo.a, "SubredditPicker", so.a),
 				ro = dt.a.wrapped($e.a, "ControlRow", so.a),
-				io = Object(i.a)(w.g, nt.a, w.Q, k.i, O.q, k.z, (e, t, n, s, o, r) => {
+				io = Object(i.a)(w.g, nt.a, w.P, k.i, O.q, k.z, (e, t, n, s, o, r) => {
 					const i = n && !t ? n : e;
 					if (!i || !i.name) return Object(to.b)("", null, null, r);
 					const {
@@ -29811,7 +29808,7 @@
 					return c ? Object(to.b)(Object(J.c)(a), null, s, r) : Object(to.b)(Object(J.b)(a), o, null, r)
 				}),
 				ao = Object(i.c)({
-					pending: w.S,
+					pending: w.R,
 					pickerValue: io
 				}),
 				co = Object(r.b)(ao, (e, t) => {
@@ -30211,10 +30208,10 @@
 			var Hr = n("./src/reddit/components/PostCreationForm/LinkEditor/index.m.less"),
 				Kr = n.n(Hr);
 			const Vr = Object(i.c)({
-					pending: w.S,
+					pending: w.R,
 					postCreationFieldErrors: Rn,
 					subreddit: O.q,
-					value: w.K
+					value: w.J
 				}),
 				Wr = Object(r.b)(Vr, (e, t) => {
 					let {
@@ -30923,10 +30920,10 @@
 			const Ka = "MEDIA_POST_VIDEO_THUMBNAIL_SELECTOR_MODAL_ID",
 				Va = Object(i.c)({
 					activeModalId: nt.a,
-					isPostPending: w.S,
+					isPostPending: w.R,
 					uploads: Object(Xr.a)(e => Yr()(e.uploads, e => e.key.startsWith(P.a))),
-					value: w.M,
-					isImageGalleryCreationEnabled: w.E
+					value: w.L,
+					isImageGalleryCreationEnabled: w.D
 				}),
 				Wa = Object(r.b)(Va, e => ({
 					onChange: t => e(a.d(t)),
@@ -31185,11 +31182,11 @@
 					currentSubredditOrProfile: O.o,
 					currentUser: k.i,
 					isDraftPending: _.g,
-					isMediaUploadPending: w.N,
-					isPostPending: w.fb,
-					isPublicLink: w.H,
-					postToTwitter: w.W,
-					sendReplies: w.Z,
+					isMediaUploadPending: w.M,
+					isPostPending: w.eb,
+					isPublicLink: w.G,
+					postToTwitter: w.V,
+					sendReplies: w.Y,
 					sharingLink: _.i,
 					submissionType: w.a
 				}),
@@ -31305,7 +31302,7 @@
 					},
 					destSubredditAboutInfo: w.f,
 					draftsCount: k.j,
-					isPending: w.S
+					isPending: w.R
 				});
 			var Ac = Object(r.b)(Lc, e => ({
 					showDraftsList: () => {
@@ -31826,14 +31823,14 @@
 					draft: _.d,
 					editorMode: w.m,
 					govType: e => e.creations.formData.govType,
-					isScheduledMediaPostsEnabled: w.Y,
-					markdownBody: w.L,
-					pending: w.S,
+					isScheduledMediaPostsEnabled: w.X,
+					markdownBody: w.K,
+					pending: w.R,
 					poll: e => e.creations.formData.polls || void 0,
 					postCreationFieldErrors: Rn,
-					postRequirements: w.gb,
-					rteState: w.X,
-					shouldAllowBodyText: w.ab,
+					postRequirements: w.fb,
+					rteState: w.W,
+					shouldAllowBodyText: w.Z,
 					subreddit: O.q
 				}),
 				Zl = Object(r.b)(Yl, (e, t) => {
@@ -31994,13 +31991,13 @@
 			const nd = Object(i.c)({
 					canPostAsModerator: w.d,
 					disableTitleEdits: e => e.creations.formData.govType === ce.a.ReplaceTopMod || e.creations.formData.govType === ce.a.Spinoff,
-					pending: w.S,
+					pending: w.R,
 					postCreationFieldErrors: Rn,
-					postRequirements: w.gb,
-					shouldAllowBodyText: w.ab,
+					postRequirements: w.fb,
+					shouldAllowBodyText: w.Z,
 					submissionType: w.a,
 					subreddit: O.q,
-					title: w.hb
+					title: w.gb
 				}),
 				sd = Object(r.b)(nd, (e, t) => {
 					let {
@@ -32264,7 +32261,7 @@
 					disabled: e.disabled,
 					onClick: e.onClick
 				}, e.children),
-				zd = Object(i.a)(w.d, w.g, w.I, w.S, O.q, (e, t) => {
+				zd = Object(i.a)(w.d, w.g, w.H, w.R, O.q, (e, t) => {
 					const n = Object(O.m)(e, t);
 					return !!n && Object(Nd.f)(e, {
 						subredditId: n
@@ -32296,10 +32293,10 @@
 					destSubreddit: w.g,
 					govType: e => e.creations.formData.govType,
 					isTabsDisabled: zd,
-					pending: w.S,
+					pending: w.R,
 					submissionType: w.a,
 					subreddit: O.q,
-					isImageGalleryCreationEnabled: w.E
+					isImageGalleryCreationEnabled: w.D
 				}),
 				Gd = Object(r.b)(qd, (e, t) => ({
 					onChange: (n, s) => {
@@ -32420,24 +32417,24 @@
 					isChanged: w.z,
 					isNameEditable: k.J,
 					isPostSubmitEnabled: Ws,
-					isScheduledMediaPostEnabled: w.Y,
-					isScheduledPost: w.I,
+					isScheduledMediaPostEnabled: w.X,
+					isScheduledPost: w.H,
 					flair: w.q,
 					hasError: w.r,
 					havePostContent: w.w,
-					linkBody: w.K,
-					markdownBody: w.L,
-					rteBody: w.X,
+					linkBody: w.J,
+					markdownBody: w.K,
+					rteBody: w.W,
 					maxDrafts: k.R,
-					modalId: w.O,
-					needsCaptcha: w.P,
-					nextSubreddit: w.Q,
-					pending: w.S,
-					postRequirements: w.gb,
-					sourcePostRoot: w.cb,
-					submitMode: w.eb,
+					modalId: w.N,
+					needsCaptcha: w.O,
+					nextSubreddit: w.P,
+					pending: w.R,
+					postRequirements: w.fb,
+					sourcePostRoot: w.bb,
+					submitMode: w.db,
 					subredditOrProfile: O.o,
-					title: w.hb,
+					title: w.gb,
 					uploads: e => e.uploads
 				});
 			class ru extends o.a.Component {
@@ -33419,4 +33416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.9e04c16c82775f897c64.js.map
+//# sourceMappingURL=PostCreation.209bcd2d97de9d09595e.js.map

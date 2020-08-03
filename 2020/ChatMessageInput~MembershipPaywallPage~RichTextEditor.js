@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.ada3ff0faf89ac6c3f0b.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.02cb582db4c484363f4f.js
+// Retrieved at 8/3/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -408,12 +408,12 @@
 					}(u)), d.filter(t => t.isValid).map(t => t.uploadKey)
 				}, N = (t, e) => async (n, s) => {
 					const r = s(),
-						i = Object(T.M)(r),
+						i = Object(T.L)(r),
 						{
 							items: c
 						} = i,
 						a = !c.length && 1 === t.length,
-						p = Object(T.E)(r) && !a;
+						p = Object(T.D)(r) && !a;
 					let h = !1,
 						g = t;
 					if (p) {
@@ -8032,4 +8032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.ada3ff0faf89ac6c3f0b.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.02cb582db4c484363f4f.js.map

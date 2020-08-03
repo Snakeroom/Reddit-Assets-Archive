@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ac31477c17d3235694c3.js
-// Retrieved at 8/3/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ce287dc936238281f70b.js
+// Retrieved at 8/3/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -9854,7 +9854,7 @@
 				q = () => async (e, t) => {
 					const s = t(),
 						n = Object(C.a)(s);
-					n !== Object(C.db)(s) && e(Object(g.h)({
+					n !== Object(C.cb)(s) && e(Object(g.h)({
 						submissionType: n
 					}))
 				}, V = e => async (t, s, n) => {
@@ -12849,7 +12849,7 @@
 						a.ok && a.body && a.body.json && a.body.json.data && t(g(a.body.json.data))
 					})(e))
 				}, M = Object(a.a)(p.C), F = (e, t) => async (s, r) => {
-					s(M()), s(e ? Object(n.b)(u.b) : Object(n.b)(Object(b.T)(r(), {
+					s(M()), s(e ? Object(n.b)(u.b) : Object(n.b)(Object(b.S)(r(), {
 						pageLayer: t
 					})))
 				}, G = Object(a.a)(c.c), B = e => async t => {
@@ -12859,7 +12859,7 @@
 						r = Object(i.D)(e),
 						a = Object(b.z)(n);
 					if (r && a) {
-						Object(b.O)(n) !== d.c && t(B(d.c))
+						Object(b.N)(n) !== d.c && t(B(d.c))
 					} else t(F(!1, e))
 				}, V = e => async (t, s) => {
 					const n = s();
@@ -12925,12 +12925,12 @@
 					if (!v) return void s(S(e, E));
 					let T;
 					i = n();
-					const w = Object(g.db)(i),
+					const w = Object(g.cb)(i),
 						A = Object(g.v)(i);
 					if (w === a.Jb.MEDIA && A) {
-						const e = Object(g.M)(i),
+						const e = Object(g.L)(i),
 							t = Object(b.v)(e),
-							s = Object(g.E)(i) && e.items.length > 1,
+							s = Object(g.D)(i) && e.items.length > 1,
 							n = !t && !s;
 						if (s && !v.galleries) T = b.p.GalleryWillBeRemovedGalleryNotAllowed;
 						else if (n && !v.images) T = b.p.ImageWillBeRemoved;
@@ -13106,7 +13106,7 @@
 					} = a;
 					const d = s(),
 						b = Object(T.g)(d),
-						O = Object(v.S)(d);
+						O = Object(v.R)(d);
 					if (b || O) return;
 					const g = Object(T.h)(d, e);
 					if (!g) return;
@@ -54968,4 +54968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.ac31477c17d3235694c3.js.map
+//# sourceMappingURL=Governance~Reddit.ce287dc936238281f70b.js.map

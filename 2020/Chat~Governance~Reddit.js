@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0b8a8ec5752fca055f25.js
-// Retrieved at 8/3/2020, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.339a03d7810059d0af3d.js
+// Retrieved at 8/3/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3293,14 +3293,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("766dc3c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("9f6aa4a-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "766dc3c-production",
+						release: "9f6aa4a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3728,7 +3728,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "766dc3c-production",
+							releaseClient: "9f6aa4a-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -7672,9 +7672,6 @@
 					privacySettingLocationBasedRecommendations: a.l,
 					langSelect: Object(a.e)(a.g, a.h),
 					reCaptchaEnterprise: Object(a.d)(Object(a.b)(...d.b)),
-					ImageGalleryCreationFlow: a.l,
-					ImageGalleryConsumption: a.l,
-					ImageGallerySubredditSetting: a.l,
 					__requiredDoNotRemove: a.k
 				},
 				B = o()(O, (e, t) => i => {
@@ -13649,25 +13646,25 @@
 				return x
 			})), i.d(t, "s", (function() {
 				return R
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "H", (function() {
 				return k
 			})), i.d(t, "n", (function() {
 				return P
 			})), i.d(t, "B", (function() {
 				return L
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "R", (function() {
 				return A
-			})), i.d(t, "fb", (function() {
+			})), i.d(t, "eb", (function() {
 				return D
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "M", (function() {
 				return G
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "O", (function() {
 				return M
 			})), i.d(t, "g", (function() {
 				return U
 			})), i.d(t, "f", (function() {
 				return q
-			})), i.d(t, "db", (function() {
+			})), i.d(t, "cb", (function() {
 				return V
 			})), i.d(t, "d", (function() {
 				return H
@@ -13675,7 +13672,7 @@
 				return W
 			})), i.d(t, "C", (function() {
 				return z
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "Q", (function() {
 				return K
 			})), i.d(t, "j", (function() {
 				return Q
@@ -13689,47 +13686,47 @@
 				return Z
 			})), i.d(t, "A", (function() {
 				return $
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "E", (function() {
 				return ee
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "I", (function() {
 				return te
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "F", (function() {
 				return ie
 			})), i.d(t, "o", (function() {
 				return ne
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "T", (function() {
 				return re
-			})), i.d(t, "bb", (function() {
+			})), i.d(t, "ab", (function() {
 				return se
-			})), i.d(t, "Y", (function() {
+			})), i.d(t, "X", (function() {
 				return oe
 			})), i.d(t, "q", (function() {
 				return de
 			})), i.d(t, "m", (function() {
 				return le
-			})), i.d(t, "hb", (function() {
+			})), i.d(t, "gb", (function() {
 				return ae
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "Y", (function() {
 				return ue
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "G", (function() {
 				return ce
 			})), i.d(t, "z", (function() {
 				return _e
-			})), i.d(t, "eb", (function() {
+			})), i.d(t, "db", (function() {
 				return me
-			})), i.d(t, "gb", (function() {
+			})), i.d(t, "fb", (function() {
 				return pe
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "Z", (function() {
 				return he
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "J", (function() {
 				return fe
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "K", (function() {
 				return ge
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "L", (function() {
 				return be
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "W", (function() {
 				return we
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "P", (function() {
 				return ye
 			})), i.d(t, "y", (function() {
 				return ve
@@ -13743,28 +13740,26 @@
 				return Ee
 			})), i.d(t, "w", (function() {
 				return Ie
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "N", (function() {
 				return Oe
 			})), i.d(t, "p", (function() {
 				return Be
 			})), i.d(t, "b", (function() {
 				return je
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "U", (function() {
 				return xe
-			})), i.d(t, "cb", (function() {
+			})), i.d(t, "bb", (function() {
 				return Re
 			})), i.d(t, "e", (function() {
 				return ke
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "S", (function() {
 				return Ce
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "V", (function() {
 				return Ne
 			})), i.d(t, "c", (function() {
 				return Pe
-			})), i.d(t, "E", (function() {
-				return Le
 			})), i.d(t, "D", (function() {
-				return Ae
+				return Le
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -14210,18 +14205,16 @@
 					return Object(F.b)(e, i, !0, !0)
 				},
 				Le = e => {
-					const t = H(e),
-						i = (e => {
-							const t = U(e),
-								{
-									images: i = !0,
-									galleries: n = !0
-								} = t.allowedPostTypes || {};
-							return i && n
-						})(e);
-					return c.d.ImageGalleryCreationFlow(e) && (i || t)
-				},
-				Ae = e => c.d.ImageGalleryConsumption(e)
+					const t = H(e);
+					return (e => {
+						const t = U(e),
+							{
+								images: i = !0,
+								galleries: n = !0
+							} = t.allowedPostTypes || {};
+						return i && n
+					})(e) || t
+				}
 		},
 		"./src/reddit/selectors/postDraft.ts": function(e, t, i) {
 			"use strict";
@@ -14298,10 +14291,10 @@
 					const i = Object(c.b)(e, t);
 					if (!i) return;
 					const n = Object(c.m)(e),
-						r = Object(c.K)(e),
-						s = Object(c.L)(e),
-						o = Object(c.X)(e),
-						_ = Object(c.ab)(e),
+						r = Object(c.J)(e),
+						s = Object(c.K)(e),
+						o = Object(c.W)(e),
+						_ = Object(c.Z)(e),
 						m = Object(c.a)(e),
 						{
 							uploads: p
@@ -22003,4 +21996,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.0b8a8ec5752fca055f25.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.339a03d7810059d0af3d.js.map
