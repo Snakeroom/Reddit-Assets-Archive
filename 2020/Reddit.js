@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.327ec272798c2b55db03.js
-// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.be3db5bb3b59b4cc2a00.js
+// Retrieved at 8/3/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -953,6 +953,7 @@
 							commentReplies: !!e.comment_reply,
 							communityRecommendations: !!e.subreddit_recommendation,
 							liveEvent: !!e.live_event,
+							newPinnedPost: !!e.new_pinned_post,
 							postFlairAdded: !!e.post_flair_added,
 							postReplies: !!e.post_reply,
 							privateMessages: !!e.private_message,
@@ -993,6 +994,7 @@
 								comment_reply: t.commentReplies,
 								lifecycle_post_suggestions: t.trendingPosts,
 								live_event: t.liveEvent,
+								new_pinned_post: t.newPinnedPost,
 								post_reply: t.postReplies,
 								private_message: t.privateMessages,
 								subreddit_recommendation: t.communityRecommendations,
@@ -13598,4 +13600,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.327ec272798c2b55db03.js.map
+//# sourceMappingURL=Reddit.be3db5bb3b59b4cc2a00.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.19fb36e945bff1464c4f.js
-// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.8f864cd19dbc2295c45c.js
+// Retrieved at 8/3/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -5181,6 +5181,13 @@
 						this.updatePreferences({
 							userFlairAdded: !e.userFlairAdded
 						}), this.trackPreferenceToggled("user_flair_added", !e.userFlairAdded)
+					}, this.handleNewPinnedPostClick = () => {
+						const {
+							preferences: e
+						} = this.props;
+						this.updatePreferences({
+							newPinnedPost: !e.newPinnedPost
+						}), this.trackPreferenceToggled("new_pinned_post", !e.newPinnedPost)
 					}, this.handleTurnOnDesktopNotificationsModalClose = () => {
 						this.setState({
 							showTurnOnDesktopNotificationsModal: !1
@@ -5384,11 +5391,20 @@
 						label: As._("RPAN broadcast recommendations", null, {
 							hk: "1FED6O"
 						}),
-						last: !0,
 						on: r.broadcastFollower || r.broadcastRecommendation,
 						onClick: this.handleBroadcastRecommendationsClick,
 						subtext: As._("Get recommendations on live broadcasts you may be interested in", null, {
 							hk: "4eRUjD"
+						})
+					}), o.a.createElement(ee.o, {
+						label: As._("Pinned posts", null, {
+							hk: "1yFhMU"
+						}),
+						last: !0,
+						on: r.newPinnedPost,
+						onClick: this.handleNewPinnedPostClick,
+						subtext: As._("Know when there’s a pinned post in a community you follow", null, {
+							hk: "3d4li5"
 						})
 					}), this.state.showTurnOnDesktopNotificationsModal && o.a.createElement(Is, {
 						isResponsiveSettingsEnabled: s,
@@ -6796,4 +6812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.19fb36e945bff1464c4f.js.map
+//# sourceMappingURL=Settings.8f864cd19dbc2295c45c.js.map
