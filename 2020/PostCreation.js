@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.228d622898bca04cd793.js
-// Retrieved at 8/3/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ed6a36319ca178aa99ee.js
+// Retrieved at 8/3/2020, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "b0d36c7-production"
+					SENTRY_RELEASE_VERSION: "b36f0fc-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -28154,7 +28154,7 @@
 						discussion_type: e.isChatPost ? Y.b.Chat : void 0,
 						spoiler: e.isSpoiler,
 						nsfw: e.isNSFW
-					}, e.kind !== f.o.POLL && e.kind !== f.o.GALLERY ? Object.assign({
+					}, e.kind !== f.o.POLL ? Object.assign({
 						kind: X(e),
 						original_content: e.isOC
 					}, e.destSubreddit.isProfile ? {
@@ -33379,4 +33379,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.228d622898bca04cd793.js.map
+//# sourceMappingURL=PostCreation.ed6a36319ca178aa99ee.js.map
