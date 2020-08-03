@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e9bea1d2b14cdf802062.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.0df621abad94d1eee89c.js
+// Retrieved at 8/3/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -560,7 +560,8 @@
 			}), {
 				":agreement:": r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/user-agreement",
-					target: "_blank"
+					target: "_blank",
+					rel: "noopener noreferrer"
 				}, n.fbt._("Reddit User Agreement", null, {
 					hk: "11z9fY"
 				}))
@@ -781,18 +782,19 @@
 						savedCardsPending: g,
 						selectedAward: b,
 						selectedPayment: P,
-						stripeErrorMessage: C,
-						stripeTokenPending: y,
-						userName: k
+						stripe: C,
+						stripeErrorMessage: y,
+						stripeTokenPending: k,
+						userName: j
 					} = this.props;
 					if (p) return i(p), l(), null;
-					const j = !!r,
-						x = [...t, ...n].filter(e => e.mobileId === h)[0];
+					const x = !!r,
+						E = [...t, ...n].filter(e => e.mobileId === h)[0];
 					return "paymentCompleted" === e ? s.a.createElement("div", null, s.a.createElement(A.a, {
-						isGild: j,
+						isGild: x,
 						onCloseClick: l,
-						userName: k
-					})) : u || !x ? s.a.createElement("div", null, s.a.createElement(I, {
+						userName: j
+					})) : u || !E ? s.a.createElement("div", null, s.a.createElement(I, {
 						award: b,
 						onClickClose: l
 					})) : s.a.createElement("div", null, "selectPayment" === e && s.a.createElement(B.a, {
@@ -803,13 +805,14 @@
 						onCompletePurchaseClick: o,
 						onPaymentSelected: d,
 						paypalErrorMessage: m,
-						purchasePackage: x,
+						purchasePackage: E,
 						savedCardsPending: g,
 						selectedAward: b,
 						selectedPayment: P,
-						stripeErrorMessage: C,
-						stripeTokenPending: y,
-						userName: k
+						stripe: C,
+						stripeErrorMessage: y,
+						stripeTokenPending: k,
+						userName: j
 					}))
 				}
 			}
@@ -889,4 +892,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinPurchaseModal.e9bea1d2b14cdf802062.js.map
+//# sourceMappingURL=CoinPurchaseModal.0df621abad94d1eee89c.js.map

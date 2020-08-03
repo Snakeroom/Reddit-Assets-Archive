@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7ad072ae84c6d112ee2c.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.8cc1b776f08ff1b1a78a.js
+// Retrieved at 8/3/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -330,7 +330,8 @@
 			}), {
 				":agreement:": r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/user-agreement",
-					target: "_blank"
+					target: "_blank",
+					rel: "noopener noreferrer"
 				}, s.fbt._("Reddit User Agreement", null, {
 					hk: "11z9fY"
 				}))
@@ -583,4 +584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PennyPurchaseModal.7ad072ae84c6d112ee2c.js.map
+//# sourceMappingURL=PennyPurchaseModal.8cc1b776f08ff1b1a78a.js.map
