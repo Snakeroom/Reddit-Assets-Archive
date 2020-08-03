@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.d7af4331ea6bbad853e5.js
-// Retrieved at 8/3/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.955e2b54d47a30910212.js
+// Retrieved at 8/3/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -711,7 +711,7 @@
 				b = u.a.ol("Ol", m.a),
 				f = u.a.div("Title", m.a),
 				x = Object(a.c)({
-					submissionType: l.cb
+					submissionType: l.bb
 				});
 			t.a = u.a.wrapped(Object(i.b)(x)(e => {
 				const {
@@ -1276,7 +1276,7 @@
 			const {
 				fbt: u
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = Object(d.c)({
-				title: l.gb
+				title: l.fb
 			});
 			var h = Object(a.b)(p)(e => {
 					const {
@@ -2075,4 +2075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.d7af4331ea6bbad853e5.js.map
+//# sourceMappingURL=PostDraft.955e2b54d47a30910212.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.9947c7fc51e4931f762b.js
-// Retrieved at 8/3/2020, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b7d49e093a804418d3ba.js
+// Retrieved at 8/3/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1450,7 +1450,7 @@
 						subredditId: le
 					}),
 					me = Object(d.a)(ce),
-					ue = Object(ae.ab)(k),
+					ue = Object(ae.Z)(k),
 					pe = Object(ie.E)($),
 					be = Object(re.a)($),
 					he = Object(ne.j)($, {
@@ -25049,24 +25049,23 @@
 				u = (e, t) => !(!e.ok || !e.body) && (!(t.includeStandalone && !(e => m(e, l.g.standalonePosts))(e)) && !(t.includeRecurring && !(e => m(e, l.g.recurringPosts))(e))),
 				p = e => {
 					let {
-						isRichTextMediaEnabled: t,
-						schedule: s,
-						submission: n,
-						subredditId: o
+						schedule: t,
+						submission: s,
+						subredditId: n
 					} = e;
 					return Object.assign(Object.assign(Object.assign({
-						isSpoiler: n.isSpoiler,
-						isNsfw: n.isNSFW,
-						title: n.title,
-						isOriginalContent: n.isOC,
-						flair: n.flair ? {
-							id: n.flair.templateId,
-							text: Object(r.g)(n.flair)
+						isSpoiler: s.isSpoiler,
+						isNsfw: s.isNSFW,
+						title: s.title,
+						isOriginalContent: s.isOC,
+						flair: s.flair ? {
+							id: s.flair.templateId,
+							text: Object(r.g)(s.flair)
 						} : {},
-						subredditId: o,
-						isSendReplies: n.sendReplies
-					}, b(s)), x(n)), {
-						assetIds: t ? v(n) : []
+						subredditId: n,
+						isSendReplies: s.sendReplies
+					}, b(t)), x(s)), {
+						assetIds: v(s)
 					})
 				},
 				b = e => ({
@@ -25091,22 +25090,20 @@
 				}),
 				g = e => {
 					let {
-						isRichTextMediaEnabled: t,
-						schedule: s,
-						scheduledPostId: n,
-						submission: o,
-						subredditId: a
+						schedule: t,
+						scheduledPostId: s,
+						submission: n,
+						subredditId: o
 					} = e;
-					const r = p({
-						isRichTextMediaEnabled: t,
-						schedule: s,
-						submission: o,
-						subredditId: a
+					const a = p({
+						schedule: t,
+						submission: n,
+						subredditId: o
 					});
 					return Object.assign(Object.assign({
-						id: n
-					}, r), {
-						flair: Object.keys(r.flair || {}).length ? Object.assign({}, r.flair) : {
+						id: s
+					}, a), {
+						flair: Object.keys(a.flair || {}).length ? Object.assign({}, a.flair) : {
 							id: "",
 							text: ""
 						}
@@ -28595,7 +28592,7 @@
 						subredditName: t.match.params.subredditName
 					})
 				}),
-				st = Object(i.b)(() => Object(d.a)(Ye, N.E, I.a, v.N, et, N.V, S.ab, tt, $e, (e, t) => t.match.params.pageName, (e, t, s, n, o, a, r, i, d, l) => {
+				st = Object(i.b)(() => Object(d.a)(Ye, N.E, I.a, v.N, et, N.V, S.Z, tt, $e, (e, t) => t.match.params.pageName, (e, t, s, n, o, a, r, i, d, l) => {
 					let {
 						contentGateInfo: c
 					} = e, {
@@ -30313,4 +30310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.9947c7fc51e4931f762b.js.map
+//# sourceMappingURL=ModerationPages.b7d49e093a804418d3ba.js.map

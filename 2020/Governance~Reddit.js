@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.76069b066b3601928b20.js
-// Retrieved at 8/3/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.86135eb6b5ff56688a52.js
+// Retrieved at 8/3/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -9854,7 +9854,7 @@
 				q = () => async (e, t) => {
 					const s = t(),
 						n = Object(C.a)(s);
-					n !== Object(C.cb)(s) && e(Object(g.h)({
+					n !== Object(C.bb)(s) && e(Object(g.h)({
 						submissionType: n
 					}))
 				}, V = e => async (t, s, n) => {
@@ -12925,7 +12925,7 @@
 					if (!v) return void s(S(e, E));
 					let T;
 					i = n();
-					const w = Object(g.cb)(i),
+					const w = Object(g.bb)(i),
 						A = Object(g.v)(i);
 					if (w === a.Jb.MEDIA && A) {
 						const e = Object(g.L)(i),
@@ -54968,4 +54968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.76069b066b3601928b20.js.map
+//# sourceMappingURL=Governance~Reddit.86135eb6b5ff56688a52.js.map
