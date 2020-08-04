@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2c00721c198f2527d34e.js
-// Retrieved at 8/3/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.72aad237c9334c427a9d.js
+// Retrieved at 8/4/2020, 11:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3293,14 +3293,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("7420b52-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("7137a95-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7420b52-production",
+						release: "7137a95-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3728,7 +3728,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "7420b52-production",
+							releaseClient: "7137a95-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -12781,28 +12781,30 @@
 		},
 		"./src/reddit/selectors/gold/powerups.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "e", (function() {
+			i.d(t, "f", (function() {
 				return r
-			})), i.d(t, "f", (function() {
-				return s
 			})), i.d(t, "g", (function() {
-				return o
+				return s
 			})), i.d(t, "h", (function() {
+				return o
+			})), i.d(t, "i", (function() {
 				return d
 			})), i.d(t, "a", (function() {
 				return l
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "b", (function() {
 				return a
 			})), i.d(t, "k", (function() {
 				return u
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "l", (function() {
 				return c
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "j", (function() {
 				return _
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "e", (function() {
 				return m
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "d", (function() {
 				return p
+			})), i.d(t, "c", (function() {
+				return h
 			}));
 			var n = i("./src/reddit/models/Gold/Powerups/index.ts");
 			const r = (e, t) => {
@@ -12843,13 +12845,23 @@
 					} = t;
 					return e.subreddits.powerupTopSupporters[i]
 				},
-				l = e => e.goldPurchase.powerupsPurchaseModal.purchaseCompleted,
-				a = e => e.user.powerups.data,
-				u = e => e.user.powerups.fetched,
-				c = e => e.user.powerups.allocationByKey,
-				_ = e => e.goldPurchase.powerupsPurchaseModal.powerupsCount,
-				m = e => e.goldPurchase.powerupsPurchaseModal.isAnonymous,
-				p = e => e.goldPurchase.powerupsPurchaseModal.freeReallocation.pending
+				l = (e, t) => {
+					let {
+						subredditId: i,
+						userId: n
+					} = t;
+					const r = d(e, {
+						subredditId: i
+					});
+					return !!r && r.some(e => !!e.supporterInfo && e.supporterInfo.id === n)
+				},
+				a = e => e.goldPurchase.powerupsPurchaseModal.purchaseCompleted,
+				u = e => e.user.powerups.data,
+				c = e => e.user.powerups.fetched,
+				_ = e => e.user.powerups.allocationByKey,
+				m = e => e.goldPurchase.powerupsPurchaseModal.powerupsCount,
+				p = e => e.goldPurchase.powerupsPurchaseModal.isAnonymous,
+				h = e => e.goldPurchase.powerupsPurchaseModal.freeReallocation.pending
 		},
 		"./src/reddit/selectors/listings.ts": function(e, t, i) {
 			"use strict";
@@ -13879,7 +13891,7 @@
 					const t = U(e),
 						i = Object(S.f)(e),
 						n = V(e),
-						r = !!i && Object(T.f)(e, {
+						r = !!i && Object(T.g)(e, {
 							subredditId: i.id
 						}),
 						o = !!i && i.isNSFW;
@@ -13891,7 +13903,7 @@
 				},
 				W = Object(r.a)(V, S.f, U, H, e => {
 					const t = Object(S.d)(e);
-					return !!t && Object(T.f)(e, {
+					return !!t && Object(T.g)(e, {
 						subredditId: t
 					})
 				}, (e, t, i, n, r) => {
@@ -17767,7 +17779,7 @@
 				Xt = e => {
 					const t = Object(oe.f)(e);
 					if (t) {
-						const i = Object(me.g)(e, {
+						const i = Object(me.h)(e, {
 							subredditId: t.id
 						});
 						if (i) return {
@@ -21994,4 +22006,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.2c00721c198f2527d34e.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.72aad237c9334c427a9d.js.map

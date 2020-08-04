@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.ddc5cf3664de76494772.js
-// Retrieved at 8/3/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.522bd603b3d3c6c059a7.js
+// Retrieved at 8/4/2020, 11:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -6341,7 +6341,7 @@
 							let {
 								destSubreddit: n
 							} = e;
-							return !!n && !!n.id && Object(mc.e)(t, {
+							return !!n && !!n.id && Object(mc.f)(t, {
 								subredditId: n.id,
 								benefit: C.a.CommentsWithEmoji
 							})
@@ -6351,7 +6351,7 @@
 							let {
 								destSubreddit: n
 							} = e;
-							return !!n && !!n.id && Object(mc.e)(t, {
+							return !!n && !!n.id && Object(mc.f)(t, {
 								subredditId: n.id,
 								benefit: C.a.CommentsWithGifs
 							})
@@ -8032,4 +8032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.ddc5cf3664de76494772.js.map
+//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.522bd603b3d3c6c059a7.js.map

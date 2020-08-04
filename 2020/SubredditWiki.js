@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.af3b4a40de3d8efed113.js
-// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f97302654a48c8b35707.js
+// Retrieved at 8/4/2020, 11:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -1443,7 +1443,7 @@
 				W = l.a.img("SubredditIcon", M.a),
 				B = Object(o.c)({
 					arePowerupsEnabled: C.a,
-					powerups: E.g,
+					powerups: E.h,
 					spPollsEnabled: O.d.spPolls,
 					subredditInlineEditingEnabled: (e, t) => {
 						let {
@@ -5908,14 +5908,16 @@
 			"use strict";
 			s.d(t, "e", (function() {
 				return a
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "f", (function() {
 				return o
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "d", (function() {
 				return d
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "a", (function() {
 				return c
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "b", (function() {
 				return l
+			})), s.d(t, "c", (function() {
+				return u
 			}));
 			var n = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
@@ -5935,24 +5937,31 @@
 				}, i(e)), {
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				o = () => e => Object.assign(Object.assign({
+				o = e => t => Object.assign(Object.assign({
+					source: e,
+					action: "click",
+					noun: "powerups_user_badge"
+				}, i(t)), {
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				d = () => e => Object.assign(Object.assign({
 					source: "postlist",
 					action: "click",
 					noun: "powerups_supporters_cta"
 				}, i(e)), {
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				d = (e, t) => s => Object.assign({
+				c = (e, t) => s => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "marketing_step"
 				}, i(s, e, t)),
-				c = (e, t) => s => Object.assign({
+				l = (e, t) => s => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step"
 				}, i(s, e, t)),
-				l = (e, t) => s => Object.assign({
+				u = (e, t) => s => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "receipt_step"
@@ -6157,8 +6166,12 @@
 				className: e.className,
 				viewBox: "0 0 32 32",
 				fill: "none",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("path", {
+				xmlns: "http://www.w3.org/2000/svg",
+				onClick: e.onClick,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave,
+				id: e.id
+			}, e.title && r.a.createElement("title", null, e.title), r.a.createElement("path", {
 				d: "M12.249 32c-.4 0-.8-.1-1.2-.25l-.05-.05-5.05-2.6c-1.25-.7-1.75-2.2-1.25-3.5l.05-.1 2.45-5.45-3.15-1.5a2.985 2.985 0 01-1.4-3.55l3.5-12.05C6.649 1.2 8.299 0 10.099 0h7.8c.45 0 .9.1 1.3.3l.15.1 4.85 2.45c1.5.8 2.05 2.55 1.35 4.05l-2.2 4.3 4.45 2.25c.8.45 1.35 1.25 1.45 2.2.1.9-.2 1.8-.9 2.45l-14.15 13.15c-.55.5-1.25.75-1.95.75z",
 				fill: "#000"
 			}), r.a.createElement("path", {
@@ -7199,4 +7212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.af3b4a40de3d8efed113.js.map
+//# sourceMappingURL=SubredditWiki.f97302654a48c8b35707.js.map

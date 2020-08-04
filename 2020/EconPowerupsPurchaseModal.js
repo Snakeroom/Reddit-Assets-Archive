@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.2cf80d45cd7b3811dda7.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ec23378eddb650808d2f.js
+// Retrieved at 8/4/2020, 11:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, r) {
@@ -266,11 +266,11 @@
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = Object(c.c)({
-				freeAllocationPending: p.b,
-				powerups: p.g,
+				freeAllocationPending: p.c,
+				powerups: p.h,
 				subreddit: g.R,
-				topSupporters: p.h,
-				userPowerupsData: p.j
+				topSupporters: p.i,
+				userPowerupsData: p.k
 			}), q = Object(s.b)(Y), V = 10;
 			var Z = q((function(e) {
 					const {
@@ -352,8 +352,8 @@
 				fbt: me
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), pe = Object(c.c)({
 				currentUser: le.i,
-				isAnonymous: p.c,
-				powerupsCount: p.d,
+				isAnonymous: p.d,
+				powerupsCount: p.e,
 				productOffer: se.a
 			});
 			var be = Object(s.b)(pe)(n.a.memo((function(e) {
@@ -433,8 +433,8 @@
 			const {
 				fbt: we
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ge = Object(c.c)({
-				isAnonymous: p.c,
-				powerupsCount: p.d,
+				isAnonymous: p.d,
+				powerupsCount: p.e,
 				productOffer: se.a,
 				savedCardsPending: ce.t,
 				stripeTokenPending: ce.k
@@ -465,9 +465,9 @@
 			const {
 				fbt: ve
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(c.c)({
-				isAnonymous: p.c,
+				isAnonymous: p.d,
 				isNightmode: le.S,
-				powerupsCount: p.d,
+				powerupsCount: p.e,
 				productOffer: (e, t) => {
 					let {
 						subredditId: r
@@ -589,8 +589,8 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Te = Object(c.c)({
 				currentUser: le.i,
 				isNightMode: le.S,
-				powerups: p.g,
-				purchasedPowerupsCount: p.d,
+				powerups: p.h,
+				purchasedPowerupsCount: p.e,
 				subreddit: g.R
 			});
 			var Be = Object(s.b)(Te)((function(e) {
@@ -704,7 +704,7 @@
 				fbt: Ue
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), De = Object(i.t)(), Xe = Object(c.c)({
 				currentSubredditId: i.m,
-				purchaseCompleted: p.a
+				purchaseCompleted: p.b
 			});
 			var Re;
 			! function(e) {
@@ -897,14 +897,16 @@
 			"use strict";
 			r.d(t, "e", (function() {
 				return c
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "f", (function() {
 				return l
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "d", (function() {
 				return o
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "a", (function() {
 				return i
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "b", (function() {
 				return u
+			})), r.d(t, "c", (function() {
+				return d
 			}));
 			var a = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				n = r("./src/reddit/selectors/telemetry.ts");
@@ -924,24 +926,31 @@
 				}, s(e)), {
 					correlationId: Object(a.d)(a.a.PowerupsFlow, !0)
 				}),
-				l = () => e => Object.assign(Object.assign({
+				l = e => t => Object.assign(Object.assign({
+					source: e,
+					action: "click",
+					noun: "powerups_user_badge"
+				}, s(t)), {
+					correlationId: Object(a.d)(a.a.PowerupsFlow, !0)
+				}),
+				o = () => e => Object.assign(Object.assign({
 					source: "postlist",
 					action: "click",
 					noun: "powerups_supporters_cta"
 				}, s(e)), {
 					correlationId: Object(a.d)(a.a.PowerupsFlow, !0)
 				}),
-				o = (e, t) => r => Object.assign({
+				i = (e, t) => r => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "marketing_step"
 				}, s(r, e, t)),
-				i = (e, t) => r => Object.assign({
+				u = (e, t) => r => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step"
 				}, s(r, e, t)),
-				u = (e, t) => r => Object.assign({
+				d = (e, t) => r => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "receipt_step"
@@ -1013,8 +1022,12 @@
 				className: e.className,
 				viewBox: "0 0 32 32",
 				fill: "none",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, n.a.createElement("path", {
+				xmlns: "http://www.w3.org/2000/svg",
+				onClick: e.onClick,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave,
+				id: e.id
+			}, e.title && n.a.createElement("title", null, e.title), n.a.createElement("path", {
 				d: "M12.249 32c-.4 0-.8-.1-1.2-.25l-.05-.05-5.05-2.6c-1.25-.7-1.75-2.2-1.25-3.5l.05-.1 2.45-5.45-3.15-1.5a2.985 2.985 0 01-1.4-3.55l3.5-12.05C6.649 1.2 8.299 0 10.099 0h7.8c.45 0 .9.1 1.3.3l.15.1 4.85 2.45c1.5.8 2.05 2.55 1.35 4.05l-2.2 4.3 4.45 2.25c.8.45 1.35 1.25 1.45 2.2.1.9-.2 1.8-.9 2.45l-14.15 13.15c-.55.5-1.25.75-1.95.75z",
 				fill: "#000"
 			}), n.a.createElement("path", {
@@ -1039,4 +1052,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconPowerupsPurchaseModal.2cf80d45cd7b3811dda7.js.map
+//# sourceMappingURL=EconPowerupsPurchaseModal.ec23378eddb650808d2f.js.map
