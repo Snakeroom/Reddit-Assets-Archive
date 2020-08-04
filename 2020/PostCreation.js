@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.bf0916f9afb5af1657e8.js
-// Retrieved at 8/4/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.086e831540ec3352b43c.js
+// Retrieved at 8/4/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -170,7 +170,7 @@
 			e.exports = JSON.parse('{"id":"f39b25bf661e"}')
 		},
 		"./src/graphql/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"51af644ab3dd"}')
+			e.exports = JSON.parse('{"id":"fe4ec1ec445d"}')
 		},
 		"./src/graphql/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"2a194e7926dd"}')
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "927bc2d-production"
+					SENTRY_RELEASE_VERSION: "fd0a715-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -7257,12 +7257,13 @@
 					const s = t.mediaId,
 						r = E && E[s];
 					if (!r || !r.s) return null;
-					const i = Object(b.d)(f.z, r);
-					if (!i) return null;
-					const a = r.s;
+					const i = [...r && r.s ? [r.s] : [], ...r && r.p ? r.p : []],
+						a = Object(b.d)(f.z, i);
+					if (!a) return null;
+					const c = r.s;
 					return o.a.createElement("div", {
 						style: {
-							backgroundImage: "url(".concat("gif" in a ? a.gif : "u" in i && i.u, ")")
+							backgroundImage: "url(".concat("gif" in c ? c.gif : "u" in a && a.u, ")")
 						},
 						className: v.a.tileImage,
 						onClick: e.shouldBlur ? void 0 : e => {
@@ -7291,14 +7292,15 @@
 					const s = t.mediaId,
 						r = E && E[s];
 					if (!r || !r.s) return null;
-					const i = Object(b.d)(u, r);
-					if (!i) return null;
-					const a = e.shouldBlur && r.o && r.o.length > 0 ? r.o[0] : void 0;
+					const i = [...r && r.s ? [r.s] : [], ...r && r.p ? r.p : []],
+						a = Object(b.d)(u, i);
+					if (!a) return null;
+					const c = e.shouldBlur && Object(b.d)(u, r.o || []) || void 0;
 					return o.a.createElement(C, {
 						slideIndex: n,
 						currentIndex: k,
-						obfuscatedImage: a,
-						optimalImage: i,
+						obfuscatedImage: c,
+						optimalImage: a,
 						originalImage: r.s,
 						isListing: e.isListing,
 						key: s
@@ -24416,7 +24418,7 @@
 				r = n("./src/reddit/models/Media/index.ts");
 
 			function i(e, t) {
-				const n = [...t && t.s ? [t.s] : [], ...t && t.p ? t.p : []].sort((e, t) => e.y - t.y),
+				const n = t.sort((e, t) => e.y - t.y),
 					s = n.find(t => t.y > e);
 				if (s) return s;
 				const o = n.pop();
@@ -33507,4 +33509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.bf0916f9afb5af1657e8.js.map
+//# sourceMappingURL=PostCreation.086e831540ec3352b43c.js.map

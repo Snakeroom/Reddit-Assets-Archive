@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7f864c9643efa0a0ddde.js
-// Retrieved at 8/4/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.f30feaf03054a6a0bec9.js
+// Retrieved at 8/4/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -75,9 +75,9 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "927bc2d-production"
+					SENTRY_RELEASE_VERSION: "fd0a715-production"
 				}),
-				C = {
+				j = {
 					anonymousUserId: "t2_anonymous",
 					debug: !1,
 					disableCookies: !0,
@@ -100,11 +100,11 @@
 					localStorageViewerUserIdKey: f,
 					playerName: E,
 					playerVersion: I,
-					respectDoNotTrack: j,
+					respectDoNotTrack: C,
 					saltLength: S,
 					saltTimeToLive: L,
 					viewerUserIdLength: T
-				} = Object.assign(Object.assign({}, C), t);
+				} = Object.assign(Object.assign({}, j), t);
 				class M extends i.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(i.createRef)(), this.handleDashCreate = e => {
@@ -248,7 +248,7 @@
 						}
 					}
 				}
-				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = E, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = j, M.SALT_LENGTH = S, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
+				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = E, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = C, M.SALT_LENGTH = S, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
 				const N = Object(i.forwardRef)((e, t) => a.a.createElement(M, v({}, e, {
 						forwardedRef: t
 					}))),
@@ -431,7 +431,7 @@
 				className: Object(o.a)(e.iconClassName, y.a.icon)
 			}, a.a.createElement(c.a, {
 				className: y.a.iconImage
-			}))), C = e => a.a.createElement("div", {
+			}))), j = e => a.a.createElement("div", {
 				className: y.a.imageMetaData,
 				style: {
 					height: e.captionHeight,
@@ -452,7 +452,7 @@
 				className: y.a.urlText
 			}, Object(g.e)(e.outboundUrl)), a.a.createElement(u.a, {
 				className: y.a.linkIcon
-			})))), j = e => a.a.createElement("div", {
+			})))), C = e => a.a.createElement("div", {
 				className: y.a.slideIndicator,
 				onClick: e.toggleTileLayout ? t => {
 					t.preventDefault(), t.stopPropagation(), e.toggleTileLayout()
@@ -535,12 +535,13 @@
 					const i = t.mediaId,
 						n = v && v[i];
 					if (!n || !n.s) return null;
-					const o = Object(g.d)(b.z, n);
-					if (!o) return null;
-					const r = n.s;
+					const o = [...n && n.s ? [n.s] : [], ...n && n.p ? n.p : []],
+						r = Object(g.d)(b.z, o);
+					if (!r) return null;
+					const d = n.s;
 					return a.a.createElement("div", {
 						style: {
-							backgroundImage: "url(".concat("gif" in r ? r.gif : "u" in o && o.u, ")")
+							backgroundImage: "url(".concat("gif" in d ? d.gif : "u" in r && r.u, ")")
 						},
 						className: y.a.tileImage,
 						onClick: e.shouldBlur ? void 0 : e => {
@@ -569,14 +570,15 @@
 					const i = t.mediaId,
 						n = v && v[i];
 					if (!n || !n.s) return null;
-					const o = Object(g.d)(u, n);
-					if (!o) return null;
-					const r = e.shouldBlur && n.o && n.o.length > 0 ? n.o[0] : void 0;
+					const o = [...n && n.s ? [n.s] : [], ...n && n.p ? n.p : []],
+						r = Object(g.d)(u, o);
+					if (!r) return null;
+					const d = e.shouldBlur && Object(g.d)(u, n.o || []) || void 0;
 					return a.a.createElement(w, {
 						slideIndex: s,
 						currentIndex: L,
-						obfuscatedImage: r,
-						optimalImage: o,
+						obfuscatedImage: d,
+						optimalImage: r,
 						originalImage: n.s,
 						isListing: e.isListing,
 						key: i
@@ -599,7 +601,7 @@
 					title: "Next",
 					iconClassName: y.a.nextIcon,
 					className: y.a.nextButton
-				}))), c.length > 1 ? a.a.createElement(j, {
+				}))), c.length > 1 ? a.a.createElement(C, {
 					currentSlide: L + 1,
 					totalSlides: c.length,
 					toggleTileLayout: S && D || void 0
@@ -608,7 +610,7 @@
 					style: {
 						height: s
 					}
-				}) : a.a.createElement(C, {
+				}) : a.a.createElement(j, {
 					caption: B,
 					onClickEvent: A,
 					outboundUrl: W,
@@ -894,8 +896,8 @@
 				O = s("./src/reddit/components/Governance/Proposal/async.ts"),
 				w = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				I = s("./src/reddit/components/Media/constants.ts"),
-				C = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
-				j = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
+				j = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
+				C = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
 				S = s("./src/reddit/components/Media/ImageBox/index.tsx"),
 				L = s("./src/reddit/components/Media/MediaContainer/index.tsx"),
 				T = s("./src/reddit/components/Media/RichTextContainer/index.tsx"),
@@ -1387,7 +1389,7 @@
 								alwaysWrapMedia: !0,
 								height: n ? K : G.j,
 								width: n ? z : G.j * (16 / 9)
-							}), x && l.a.createElement(C.a, {
+							}), x && l.a.createElement(j.a, {
 								childRef: this.storeChildRef,
 								height: n ? K : G.j,
 								width: n ? z : void 0,
@@ -1400,7 +1402,7 @@
 								title: m.title
 							})) : l.a.createElement(L.a, ee({}, Q, {
 								alwaysWrapMedia: !0
-							}), x && l.a.createElement(C.a, ee({}, q, {
+							}), x && l.a.createElement(j.a, ee({}, q, {
 								isResponsive: n || m.media.provider === G.v.IFrameEmbed,
 								title: m.title,
 								childRef: this.storeChildRef,
@@ -1523,7 +1525,7 @@
 								isGalleryTileLayout: o
 							}), l.a.createElement(re, {
 								isVisible: x
-							}, l.a.createElement(j.a, {
+							}, l.a.createElement(C.a, {
 								postId: m.id,
 								galleryItems: m.media.gallery ? m.media.gallery.items : [],
 								mediaMetadata: m.media.mediaMetadata || {},
@@ -1618,7 +1620,7 @@
 				n = s("./src/reddit/models/Media/index.ts");
 
 			function o(e, t) {
-				const s = [...t && t.s ? [t.s] : [], ...t && t.p ? t.p : []].sort((e, t) => e.y - t.y),
+				const s = t.sort((e, t) => e.y - t.y),
 					i = s.find(t => t.y > e);
 				if (i) return i;
 				const a = s.pop();
@@ -1771,4 +1773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7f864c9643efa0a0ddde.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.f30feaf03054a6a0bec9.js.map
