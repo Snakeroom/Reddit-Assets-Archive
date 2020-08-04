@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a6d9313ad676c7988038.js
-// Retrieved at 8/4/2020, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.bf0916f9afb5af1657e8.js
+// Retrieved at 8/4/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -677,16 +677,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Fb
+					experimentName: u.Db
 				});
-				return Object(u.Cc)(t) ? void 0 : t
+				return Object(u.Ac)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Gb
+					experimentName: u.Eb
 				});
-				return Object(u.Cc)(t) ? void 0 : t
-			}, (e, t) => e === u.Hb.Enabled && t === u.Hb.Enabled);
+				return Object(u.Ac)(t) ? void 0 : t
+			}, (e, t) => e === u.Fb.Enabled && t === u.Fb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "2b24431-production"
+					SENTRY_RELEASE_VERSION: "927bc2d-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3830,7 +3830,7 @@
 							experimentEligibilitySelector: T.H,
 							experimentName: S.eb
 						});
-						return !(!t || Object(S.Cc)(t))
+						return !(!t || Object(S.Ac)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: I.c
@@ -33507,4 +33507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.a6d9313ad676c7988038.js.map
+//# sourceMappingURL=PostCreation.bf0916f9afb5af1657e8.js.map

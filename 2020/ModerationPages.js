@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0c91cf8cc19341c106fe.js
-// Retrieved at 8/4/2020, 11:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.938c7bb49516628dca4d.js
+// Retrieved at 8/4/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5988,7 +5988,7 @@
 					disableSettingsAvailable: e => Object(se.c)(e, {
 						experimentEligibilitySelector: se.a,
 						experimentName: te.fb
-					}) === te.lb.Enabled,
+					}) === te.kb.Enabled,
 					isAddAwardModalOpen: e => Object(j.a)(e) === m.a,
 					isConfirmModalOpen: e => Object(j.a)(e) === m.b
 				}),
@@ -30341,4 +30341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.0c91cf8cc19341c106fe.js.map
+//# sourceMappingURL=ModerationPages.938c7bb49516628dca4d.js.map

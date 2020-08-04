@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.334d9a0b6bb357e81da1.js
-// Retrieved at 8/4/2020, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7f864c9643efa0a0ddde.js
+// Retrieved at 8/4/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -18,16 +18,16 @@
 			const h = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Fb
+					experimentName: u.Db
 				});
-				return Object(u.Cc)(t) ? void 0 : t
+				return Object(u.Ac)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Gb
+					experimentName: u.Eb
 				});
-				return Object(u.Cc)(t) ? void 0 : t
-			}, (e, t) => e === u.Hb.Enabled && t === u.Hb.Enabled);
+				return Object(u.Ac)(t) ? void 0 : t
+			}, (e, t) => e === u.Fb.Enabled && t === u.Fb.Enabled);
 			var p = s("./src/config.ts");
 			var g = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -45,15 +45,15 @@
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return Math.trunc(e).toString(16).padStart(t, "0")
 				};
-			var y;
+			var E;
 			! function(e) {
 				e.SHA1 = "SHA-1", e.SHA256 = "SHA-256", e.SHA384 = "SHA-384", e.SHA512 = "SHA-512"
-			}(y || (y = {}));
-			const E = async e => (async (e, t) => {
+			}(E || (E = {}));
+			const y = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					i = await crypto.subtle.digest(e, s);
 				return Array.from(new Uint8Array(i)).map(f).join("")
-			})(y.SHA1, e);
+			})(E.SHA1, e);
 
 			function v() {
 				return (v = Object.assign || function(e) {
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "2b24431-production"
+					SENTRY_RELEASE_VERSION: "927bc2d-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -98,7 +98,7 @@
 					envKey: m,
 					localStorageSaltKey: p,
 					localStorageViewerUserIdKey: f,
-					playerName: y,
+					playerName: E,
 					playerVersion: I,
 					respectDoNotTrack: j,
 					saltLength: S,
@@ -186,7 +186,7 @@
 							t = this.getOrCreateSalt(),
 							s = x(),
 							i = "".concat(s).concat(e).concat(t);
-						return (await E(i)).substr(0, M.VIEWER_USER_ID_LENGTH)
+						return (await y(i)).substr(0, M.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -248,7 +248,7 @@
 						}
 					}
 				}
-				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = y, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = j, M.SALT_LENGTH = S, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
+				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = E, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = j, M.SALT_LENGTH = S, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
 				const N = Object(i.forwardRef)((e, t) => a.a.createElement(M, v({}, e, {
 						forwardedRef: t
 					}))),
@@ -350,8 +350,8 @@
 				b = s("./src/reddit/models/Media/index.ts"),
 				x = s("./src/reddit/selectors/media.ts"),
 				f = s("./src/reddit/components/Media/blurredContent.ts"),
-				y = s("./src/reddit/components/Media/GalleryBox/index.m.less"),
-				E = s.n(y);
+				E = s("./src/reddit/components/Media/GalleryBox/index.m.less"),
+				y = s.n(E);
 			const {
 				fbt: v
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = e => {
@@ -362,14 +362,14 @@
 				} = e;
 				return a.a.createElement("div", {
 					className: Object(o.a)({
-						[E.a.slideImageMainDiv]: !i
+						[y.a.slideImageMainDiv]: !i
 					})
 				}, a.a.createElement("img", {
 					src: "u" in t ? t.u : t.gif,
-					className: E.a.slideImage,
+					className: y.a.slideImage,
 					style: s
 				}), i && a.a.createElement("div", {
-					className: E.a.seeMore
+					className: y.a.seeMore
 				}, v._("see full image", null, {
 					hk: "1Qygw5"
 				})))
@@ -391,12 +391,12 @@
 				let h;
 				return h = i || (u ? r : n), a.a.createElement("li", {
 					style: l,
-					className: E.a.slide
+					className: y.a.slide
 				}, a.a.createElement("figure", {
 					className: Object(o.a)({
-						[E.a.tallImage]: u,
-						[E.a.commonImage]: !u
-					}, E.a.figure)
+						[y.a.tallImage]: u,
+						[y.a.commonImage]: !u
+					}, y.a.figure)
 				}, d ? a.a.createElement(O, {
 					displayImage: h,
 					style: m,
@@ -406,17 +406,17 @@
 					rel: "noopener noreferrer",
 					target: "_blank",
 					className: Object(o.a)({
-						[E.a.tallImage]: u,
-						[E.a.commonImage]: !u
-					}, E.a.imageLink)
+						[y.a.tallImage]: u,
+						[y.a.commonImage]: !u
+					}, y.a.imageLink)
 				}, a.a.createElement(O, {
 					displayImage: h,
 					style: m,
 					showSeeMore: u
 				}))))
 			}, I = e => a.a.createElement("a", {
-				className: Object(o.a)(e.className, E.a.navigationUnderlay, {
-					[E.a.hasMoreSlides]: e.hasMoreSlides
+				className: Object(o.a)(e.className, y.a.navigationUnderlay, {
+					[y.a.hasMoreSlides]: e.hasMoreSlides
 				}),
 				onClick: t => {
 					e.onClick(), t.stopPropagation()
@@ -428,37 +428,37 @@
 				},
 				title: e.hasMoreSlides ? e.title : void 0
 			}, e.hasMoreSlides && a.a.createElement("i", {
-				className: Object(o.a)(e.iconClassName, E.a.icon)
+				className: Object(o.a)(e.iconClassName, y.a.icon)
 			}, a.a.createElement(c.a, {
-				className: E.a.iconImage
+				className: y.a.iconImage
 			}))), C = e => a.a.createElement("div", {
-				className: E.a.imageMetaData,
+				className: y.a.imageMetaData,
 				style: {
 					height: e.captionHeight,
 					justifyContent: e.caption ? "space-between" : "flex-end"
 				}
 			}, e.caption && a.a.createElement("span", {
-				className: E.a.imageCaption,
+				className: y.a.imageCaption,
 				title: e.caption
 			}, e.caption), e.outboundUrl && a.a.createElement("span", {
-				className: E.a.imageUrl
+				className: y.a.imageUrl
 			}, a.a.createElement("a", {
-				className: E.a.outboundUrlWrapper,
+				className: y.a.outboundUrlWrapper,
 				href: e.outboundUrl,
 				onClick: e.onClickEvent,
 				rel: "noopener noreferrer",
 				target: "'_blank'"
 			}, a.a.createElement("span", {
-				className: E.a.urlText
+				className: y.a.urlText
 			}, Object(g.e)(e.outboundUrl)), a.a.createElement(u.a, {
-				className: E.a.linkIcon
+				className: y.a.linkIcon
 			})))), j = e => a.a.createElement("div", {
-				className: E.a.slideIndicator,
+				className: y.a.slideIndicator,
 				onClick: e.toggleTileLayout ? t => {
 					t.preventDefault(), t.stopPropagation(), e.toggleTileLayout()
 				} : void 0
 			}, e.toggleTileLayout && a.a.createElement(m.a, {
-				className: E.a.tileIcon
+				className: y.a.tileIcon
 			}), e.currentSlide, "/", e.totalSlides);
 			t.a = e => {
 				const t = Object(n.c)(),
@@ -467,7 +467,7 @@
 						galleryItems: c,
 						imageHeight: u,
 						isListing: m,
-						isTileLayout: y,
+						isTileLayout: E,
 						mediaMetadata: v = {},
 						postId: O,
 						shouldShowTileLayoutOption: S
@@ -482,13 +482,13 @@
 							index: e
 						}))
 					}, [t, O]),
-					R = Object(i.useCallback)(() => {
+					D = Object(i.useCallback)(() => {
 						t(Object(h.i)({
 							postId: O,
-							isTileLayout: !y
+							isTileLayout: !E
 						}))
-					}, [t, O, y]),
-					D = Object(i.useCallback)(() => {
+					}, [t, O, E]),
+					R = Object(i.useCallback)(() => {
 						if (!M) return;
 						const e = L + 1;
 						_(e), N(r.b(O, e)), N(r.d(O, e + 1))
@@ -505,7 +505,7 @@
 					}, [N, O, L, c]),
 					V = Object(i.useRef)(null),
 					k = Object(i.useRef)(null);
-				d(p.a.ArrowLeft, V.current, P), d(p.a.ArrowRight, V.current, D);
+				d(p.a.ArrowLeft, V.current, P), d(p.a.ArrowRight, V.current, R);
 				const B = c[L] && c[L].caption,
 					W = c[L] && c[L].outboundUrl,
 					F = ((e, t, s) => {
@@ -523,12 +523,12 @@
 						}
 					})(v, u, m);
 				return a.a.createElement("div", {
-					className: Object(o.a)(E.a.outerContainer),
+					className: Object(o.a)(y.a.outerContainer),
 					ref: V,
 					tabIndex: 0
-				}, y ? a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
-					className: Object(o.a)(E.a.tilesWrapper, {
-						[E.a.blurredContent]: e.shouldBlur
+				}, E ? a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
+					className: Object(o.a)(y.a.tilesWrapper, {
+						[y.a.blurredContent]: e.shouldBlur
 					}),
 					onClick: e.onClickRevealBlurred
 				}, c.map((t, s) => {
@@ -542,29 +542,29 @@
 						style: {
 							backgroundImage: "url(".concat("gif" in r ? r.gif : "u" in o && o.u, ")")
 						},
-						className: E.a.tileImage,
+						className: y.a.tileImage,
 						onClick: e.shouldBlur ? void 0 : e => {
-							e.preventDefault(), e.stopPropagation(), R(), _(s)
+							e.preventDefault(), e.stopPropagation(), D(), _(s)
 						},
 						key: i
 					})
 				}), [1, 2, 3].map(e => a.a.createElement("div", {
 					key: e,
-					className: E.a.tilePlaceholder
+					className: y.a.tilePlaceholder
 				}))), e.shouldBlur && a.a.createElement("div", {
-					className: E.a.unblurButtonContainer
+					className: y.a.unblurButtonContainer
 				}, a.a.createElement("button", {
-					className: E.a.unblurButton
+					className: y.a.unblurButton
 				}, Object(f.a)(!!e.isNSFW, !!e.isSpoiler)))) : a.a.createElement("div", {
-					className: E.a.slideshowContainer,
+					className: y.a.slideshowContainer,
 					tabIndex: -1,
 					ref: k,
 					onClick: e.onClickRevealBlurred,
 					style: F
 				}, a.a.createElement("div", {
-					className: E.a.imagesWrapper
+					className: y.a.imagesWrapper
 				}, a.a.createElement("ul", {
-					className: E.a.slideWrapper
+					className: y.a.slideWrapper
 				}, c.map((t, s) => {
 					const i = t.mediaId,
 						n = v && v[i];
@@ -582,29 +582,29 @@
 						key: i
 					})
 				})), e.shouldBlur && !e.isListing && a.a.createElement("div", {
-					className: E.a.unblurButtonContainer
+					className: y.a.unblurButtonContainer
 				}, a.a.createElement("button", {
-					className: E.a.unblurButton
+					className: y.a.unblurButton
 				}, Object(f.a)(!!e.isNSFW, !!e.isSpoiler))), !e.shouldBlur && a.a.createElement(a.a.Fragment, null, a.a.createElement(I, {
 					onClick: P,
 					setFocusTo: k,
 					hasMoreSlides: T,
 					title: "Previous",
-					iconClassName: E.a.prevIcon,
-					className: E.a.prevButton
+					iconClassName: y.a.prevIcon,
+					className: y.a.prevButton
 				}), a.a.createElement(I, {
-					onClick: D,
+					onClick: R,
 					setFocusTo: k,
 					hasMoreSlides: M,
 					title: "Next",
-					iconClassName: E.a.nextIcon,
-					className: E.a.nextButton
+					iconClassName: y.a.nextIcon,
+					className: y.a.nextButton
 				}))), c.length > 1 ? a.a.createElement(j, {
 					currentSlide: L + 1,
 					totalSlides: c.length,
-					toggleTileLayout: S && R || void 0
-				}) : ""), !B && !W || y ? !!s && !y && a.a.createElement("div", {
-					className: E.a.emptyCaptionBlock,
+					toggleTileLayout: S && D || void 0
+				}) : ""), !B && !W || E ? !!s && !E && a.a.createElement("div", {
+					className: y.a.emptyCaptionBlock,
 					style: {
 						height: s
 					}
@@ -697,8 +697,8 @@
 					isTitleOnly: h,
 					postId: x,
 					showFull: f
-				} = e, y = b(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
-				const E = {
+				} = e, E = b(e, ["canLoadContent", "children", "className", "isCommentsPage", "isMediumHeight", "isRichTextTruncated", "isExpando", "isTitleOnly", "postId", "showFull"]);
+				const y = {
 						[m.a.richTextContainerFull]: f,
 						[m.a.richTextContainerTitleOnly]: h && !f,
 						[m.a.richTextContainer]: !f && !h
@@ -707,9 +707,9 @@
 				f || (v.maxHeight = "".concat(h ? r.m : l ? r.l : r.k, "px")), d && (v.maxWidth = "".concat(o.d, "px"));
 				const O = c && f;
 				return a.a.createElement("div", g({
-					className: Object(n.a)(E, i),
+					className: Object(n.a)(y, i),
 					style: v
-				}, y), s, O && a.a.createElement(p, {
+				}, E), s, O && a.a.createElement(p, {
 					canLoadContent: !!t,
 					isExpando: u,
 					postId: x
@@ -728,7 +728,7 @@
 		"./src/reddit/components/Media/TwitterEmbed/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return y
+				return E
 			}));
 			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./node_modules/react/index.js"),
@@ -755,7 +755,7 @@
 			const b = 350,
 				x = 100,
 				f = 300;
-			class y extends n.a.Component {
+			class E extends n.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						isFullyLoaded: !1
@@ -785,10 +785,10 @@
 						title: d
 					} = this.props, {
 						isFullyLoaded: h
-					} = this.state, y = s.height || (t.isDeleted ? x : f);
+					} = this.state, E = s.height || (t.isDeleted ? x : f);
 					return n.a.createElement(c.a, g({}, s, {
 						alwaysWrapMedia: !0,
-						height: y,
+						height: E,
 						showFull: !s.isListing,
 						width: b
 					}), e && n.a.createElement(n.a.Fragment, null, (!s.height || !h) && (t.isDeleted ? n.a.createElement("p", {
@@ -804,7 +804,7 @@
 						className: Object(o.a)(p.a.tweetEmbedBox, {
 							[p.a.isInvisible]: !s.height || !h
 						}),
-						height: y,
+						height: E,
 						isListing: s.isListing,
 						isResponsive: !0,
 						maxHeight: s.isListing ? m.j : null,
@@ -814,7 +814,7 @@
 						source: r,
 						title: d,
 						width: b
-					}), s.isListing && y > m.j && n.a.createElement("div", {
+					}), s.isListing && E > m.j && n.a.createElement("div", {
 						className: p.a.seeMore
 					}, i.fbt._("See full tweet", null, {
 						hk: "1bxtrd"
@@ -888,8 +888,8 @@
 				b = s("./src/lib/isUrl/index.ts"),
 				x = s("./src/lib/objectSelector/index.ts"),
 				f = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
-				y = s("./src/lib/sentry/index.ts"),
-				E = s("./src/lib/truncateText/index.ts"),
+				E = s("./src/lib/sentry/index.ts"),
+				y = s("./src/lib/truncateText/index.ts"),
 				v = s("./src/reddit/components/AdViewability/index.tsx"),
 				O = s("./src/reddit/components/Governance/Proposal/async.ts"),
 				w = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
@@ -902,8 +902,8 @@
 				M = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
 				N = s("./src/reddit/components/Media/VideoBox/index.tsx"),
 				_ = s("./src/reddit/components/PlayButton/index.tsx"),
-				R = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
-				D = s("./src/reddit/components/RichTextJson/index.tsx"),
+				D = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
+				R = s("./src/reddit/components/RichTextJson/index.tsx"),
 				P = s("./src/reddit/constants/componentSizes.ts"),
 				A = s("./src/reddit/constants/screenWidths.ts"),
 				V = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1153,7 +1153,7 @@
 					} = this.props;
 					if (!i) return;
 					let n = "";
-					return s && (n += s), t.title && (n += "".concat(Y.b).concat(t.title)), e && a && n.length <= Y.c && (n += "".concat(Y.b).concat(a)), e && n.length > Y.a ? Object(E.a)(n, Y.a, h.cb) : n
+					return s && (n += s), t.title && (n += "".concat(Y.b).concat(t.title)), e && a && n.length <= Y.c && (n += "".concat(Y.b).concat(a)), e && n.length > Y.a ? Object(y.a)(n, Y.a, h.cb) : n
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(G.j, this.state.viewportHeight),
@@ -1260,12 +1260,12 @@
 					} = this.props, {
 						canLoadContent: x,
 						forcePause: f,
-						shouldPause: E,
+						shouldPause: y,
 						shouldStop: w,
 						viewportWidth: I
 					} = this.state;
 					if (!m.media) return null;
-					const P = f || E,
+					const P = f || y,
 						A = w,
 						{
 							source: V,
@@ -1324,7 +1324,7 @@
 								isTitleOnly: u,
 								postId: m.id,
 								showFull: p
-							}, l.a.createElement(D.a, {
+							}, l.a.createElement(R.a, {
 								altText: this.getAltText(),
 								flairStyleTemplate: s,
 								content: m.isMeta ? Object(U.a)(i, m.id) : i,
@@ -1339,19 +1339,19 @@
 						case G.o.TEXT:
 							if (Object(F.a)(m)) {
 								const t = "Text post should not include body content";
-								return y.c.withScope(e => {
+								return E.c.withScope(e => {
 									e.setExtra("info", {
 										post: m,
 										isListing: r,
 										isCommentsPage: a
-									}), y.c.captureMessage(t)
+									}), E.c.captureMessage(t)
 								}), Object(g.a)() && console.log("".concat(m.id, ": ").concat(t)), l.a.createElement(T.a, {
 									postId: m.id,
 									className: e,
 									"data-click-id": "text",
 									isCommentsPage: a,
 									showFull: p
-								}, l.a.createElement(R.a, {
+								}, l.a.createElement(D.a, {
 									flairStyleTemplate: s,
 									html: m.isMeta ? Object(H.a)(m.media.content, m.id, $.a.hiddenLink) : m.media.content
 								}))
@@ -1450,7 +1450,7 @@
 								alwaysWrapMedia: !0,
 								isVideo: !0
 							}), x && l.a.createElement(se, {
-								autoPlay: "boolean" == typeof E ? !E : void 0,
+								autoPlay: "boolean" == typeof y ? !y : void 0,
 								isExpando: n,
 								shouldLoad: !0,
 								shouldPause: P,
@@ -1771,4 +1771,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.334d9a0b6bb357e81da1.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7f864c9643efa0a0ddde.js.map

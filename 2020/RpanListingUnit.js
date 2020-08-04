@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.d2e2e6fc6267485c1c76.js
-// Retrieved at 8/4/2020, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.7ecb8ec6b3bc4224f16f.js
+// Retrieved at 8/4/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const m = Object(n.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Fb
+					experimentName: u.Db
 				});
-				return Object(u.Cc)(t) ? void 0 : t
+				return Object(u.Ac)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Gb
+					experimentName: u.Eb
 				});
-				return Object(u.Cc)(t) ? void 0 : t
-			}, (e, t) => e === u.Hb.Enabled && t === u.Hb.Enabled);
+				return Object(u.Ac)(t) ? void 0 : t
+			}, (e, t) => e === u.Fb.Enabled && t === u.Fb.Enabled);
 			var b = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -53,15 +53,15 @@
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return Math.trunc(e).toString(16).padStart(t, "0")
 				};
-			var S;
+			var E;
 			! function(e) {
 				e.SHA1 = "SHA-1", e.SHA256 = "SHA-256", e.SHA384 = "SHA-384", e.SHA512 = "SHA-512"
-			}(S || (S = {}));
-			const E = async e => (async (e, t) => {
+			}(E || (E = {}));
+			const S = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					i = await crypto.subtle.digest(e, s);
 				return Array.from(new Uint8Array(i)).map(g).join("")
-			})(S.SHA1, e);
+			})(E.SHA1, e);
 
 			function y() {
 				return (y = Object.assign || function(e) {
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				R = Object({
-					SENTRY_RELEASE_VERSION: "2b24431-production"
+					SENTRY_RELEASE_VERSION: "927bc2d-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -106,7 +106,7 @@
 					envKey: h,
 					localStorageSaltKey: b,
 					localStorageViewerUserIdKey: g,
-					playerName: S,
+					playerName: E,
 					playerVersion: R,
 					respectDoNotTrack: _,
 					saltLength: I,
@@ -194,7 +194,7 @@
 							t = this.getOrCreateSalt(),
 							s = v(),
 							i = "".concat(s).concat(e).concat(t);
-						return (await E(i)).substr(0, j.VIEWER_USER_ID_LENGTH)
+						return (await S(i)).substr(0, j.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -256,7 +256,7 @@
 						}
 					}
 				}
-				j.displayName = x(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = d, j.DISABLE_COOKIES = u, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = h, j.LOCAL_STORAGE_SALT_KEY = b, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = S, j.PLAYER_VERSION = R, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = I, j.SALT_TIME_TO_LIVE = T, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = w;
+				j.displayName = x(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = d, j.DISABLE_COOKIES = u, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = h, j.LOCAL_STORAGE_SALT_KEY = b, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = E, j.PLAYER_VERSION = R, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = I, j.SALT_TIME_TO_LIVE = T, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = w;
 				const N = Object(i.forwardRef)((e, t) => r.a.createElement(j, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -593,7 +593,7 @@
 			s.d(t, "a", (function() {
 				return g
 			})), s.d(t, "b", (function() {
-				return E
+				return S
 			})), s.d(t, "c", (function() {
 				return y
 			})), s.d(t, "d", (function() {
@@ -701,7 +701,7 @@
 					}
 				}
 			}));
-			const S = (e, t) => {
+			const E = (e, t) => {
 				const s = Object(p.n)(e, t),
 					i = Object(f.I)(e, t);
 				return {
@@ -710,7 +710,7 @@
 					subredditOrProfile: i
 				}
 			};
-			var E = Object(a.b)(() => Object(n.a)(S, e => e))(e => r.a.createElement(b, {
+			var S = Object(a.b)(() => Object(n.a)(E, e => e))(e => r.a.createElement(b, {
 				type: "commentAuthor",
 				data: {
 					author: e.comment.author,
@@ -969,8 +969,8 @@
 			var f = s("./src/reddit/actions/preferences.ts"),
 				v = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				g = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
-				S = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
-				E = s("./src/reddit/constants/chat.ts"),
+				E = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
+				S = s("./src/reddit/constants/chat.ts"),
 				y = s("./src/reddit/constants/postLayout.ts"),
 				O = s("./src/reddit/helpers/overlay/index.ts"),
 				x = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
@@ -983,8 +983,8 @@
 				j = s("./src/telemetry/index.ts"),
 				N = s("./node_modules/uuid/v4.js"),
 				A = s.n(N),
-				M = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				D = s("./src/reddit/components/Flatlist/index.tsx"),
+				D = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
+				M = s("./src/reddit/components/Flatlist/index.tsx"),
 				L = s("./src/reddit/components/Flatlist/constants.ts"),
 				P = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				k = s("./src/reddit/components/HlsVideo/index.tsx"),
@@ -995,8 +995,8 @@
 				W = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				B = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				K = s("./src/reddit/controls/InternalLink/index.tsx"),
-				G = s("./src/reddit/controls/Score/index.tsx"),
-				z = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
+				z = s("./src/reddit/controls/Score/index.tsx"),
+				G = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
 				Y = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				J = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				Z = s.n(J),
@@ -1020,7 +1020,7 @@
 					let r;
 					if (i) {
 						const e = Object(x.c)(i),
-							t = Object(S.c)(s);
+							t = Object(E.c)(s);
 						r = "".concat(e).concat(t)
 					} else {
 						const e = s.replace(/^r\//, "");
@@ -1114,7 +1114,7 @@
 							video: i
 						} = this, r = i ? i.currentTime : 0, a = i ? i.duration : NaN, n = !isNaN(a), o = n ? this.convertToMs(a - r) : void 0, c = this.getSessionDuration(), d = n ? this.convertToMs(r) : void 0, l = this.getWatchDuration(), u = l - e;
 						return {
-							chatState: E.f.None,
+							chatState: S.f.None,
 							heartbeatDurationMs: u,
 							id: t,
 							playerType: R.a.DU,
@@ -1185,10 +1185,10 @@
 					f && this.setState({
 						isReady: !1
 					});
-					const S = f && !v || v && m;
-					f && v && l || v && h ? this.subscribeStats() : S && this.unsubscribeStats();
-					const E = s && (g && f || v && m);
-					s && v && (!d && n && l || h && n) ? this.startHeartbeats() : E && this.endHeartbeats()
+					const E = f && !v || v && m;
+					f && v && l || v && h ? this.subscribeStats() : E && this.unsubscribeStats();
+					const S = s && (g && f || v && m);
+					s && v && (!d && n && l || h && n) ? this.startHeartbeats() : S && this.endHeartbeats()
 				}
 				componentWillUnmount() {
 					this.unsubscribeConfig(), this.unsubscribeStreams(), this.unsubscribeStats(), this.endHeartbeats(), this.unsubscribeIntersectionObserver(), this.unsubscribeVisibilityChange()
@@ -1258,7 +1258,7 @@
 						className: $.a.flatListContainer
 					}, r.a.createElement(ae, {
 						onClick: this.onHeaderClicked
-					}), r.a.createElement(D.a, {
+					}), r.a.createElement(M.a, {
 						className: $.a.flatlistSeparator
 					}), r.a.createElement("div", null, r.a.createElement(ne, {
 						onClick: this.onHideUnitClicked
@@ -1285,7 +1285,7 @@
 				renderExpandIcon() {
 					return r.a.createElement("div", {
 						className: $.a.bigExpando
-					}, r.a.createElement(z.a, {
+					}, r.a.createElement(G.a, {
 						className: $.a.bigExpandoIcon
 					}))
 				}
@@ -1437,12 +1437,12 @@
 					return Math.round(1e3 * e)
 				}
 			}
-			const re = e => r.a.createElement(M.a, {
+			const re = e => r.a.createElement(D.a, {
 					className: Object(c.a)({
 						[$.a.verticalVotes]: e.isVertical,
 						[$.a.horizontalVotes]: !e.isVertical
 					})
-				}, r.a.createElement(G.a, {
+				}, r.a.createElement(z.a, {
 					className: $.a.score,
 					isScoreHidden: !0,
 					score: 0,
@@ -1455,7 +1455,7 @@
 					return r.a.createElement("button", {
 						className: $.a.expandoButton,
 						onClick: t
-					}, r.a.createElement(z.a, {
+					}, r.a.createElement(G.a, {
 						className: $.a.expandoIcon
 					}))
 				},
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.d2e2e6fc6267485c1c76.js.map
+//# sourceMappingURL=RpanListingUnit.7ecb8ec6b3bc4224f16f.js.map

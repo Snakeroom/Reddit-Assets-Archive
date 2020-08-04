@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7e67a667c1034eaf41c9.js
-// Retrieved at 8/4/2020, 11:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.088ac05252d217fbee8c.js
+// Retrieved at 8/4/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3393,7 +3393,7 @@
 					experimentEligibilitySelector: jt.a,
 					experimentName: kt.cb
 				});
-				return !(!t || Object(kt.Cc)(t))
+				return !(!t || Object(kt.Ac)(t))
 			};
 			var Pt = s("./src/reddit/selectors/gold/powerups.ts"),
 				It = s("./src/reddit/selectors/userPrefs.ts"),
@@ -3444,7 +3444,7 @@
 							experimentEligibilitySelector: jt.a,
 							experimentName: kt.ab
 						});
-						return !(!t || Object(kt.Cc)(t))
+						return !(!t || Object(kt.Ac)(t))
 					})(e) && !Object(It.c)(e),
 					highlightTagsEnabled: wt,
 					isEditing: C.z,
@@ -10208,7 +10208,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.Cc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.Ac)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -10238,7 +10238,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Cc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Ac)(o), p = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -16496,7 +16496,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.F
 				});
-				return !!t && !Object(n.Cc)(t)
+				return !!t && !Object(n.Ac)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -16511,7 +16511,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.X
 				});
-				return !(!t || Object(n.Cc)(t))
+				return !(!t || Object(n.Ac)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -16528,4 +16528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.7e67a667c1034eaf41c9.js.map
+//# sourceMappingURL=CommentsPage.088ac05252d217fbee8c.js.map
