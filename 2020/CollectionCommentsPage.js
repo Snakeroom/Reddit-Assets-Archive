@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.09572d11deb4227ba6a1.js
-// Retrieved at 8/4/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6fb7005b33ea60e6cddb.js
+// Retrieved at 8/5/2020, 12:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -753,7 +753,7 @@
 				}),
 				slot: (e, t) => {
 					const s = e.platform.currentPage;
-					return s && s.meta ? l.c(t.listingName, s.meta.name, t.placement) : ""
+					return s && s.meta ? l.c(t.listingName, s.meta.name) : ""
 				}
 			}))(Object(b.c)(E))
 		},
@@ -10559,13 +10559,13 @@
 						return e.sidebarPromotedPosts.models[Object(f.a)(s, o, n)]
 					},
 					pending: e => !e.sidebarPromotedPosts.firstFetch,
-					isSubredditPage: e => Object(O.r)(e) === _.Bb.SUBREDDIT
+					IsSubredditOrCommentsPage: e => Object(O.r)(e) === _.Bb.SUBREDDIT || Object(O.r)(e) === _.Bb.COMMENTS
 				}),
 				P = Object(l.b)(w),
 				I = k.a.wrapped(u.a, "BannerAd", E.a),
 				S = k.a.wrapped(g.a, "ThemedWidget", E.a),
 				T = k.a.div("SidebarAdPlaceholder", E.a),
-				N = (e, t, s) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && p.a.dfpRefreshSlotTestSubreddits.includes(s) && e === _.c.BELOW_THE_FOLD),
+				N = (e, t) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && e === _.c.BELOW_THE_FOLD),
 				M = (e, t, s) => {
 					let n = "";
 					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != s && (n += "-".concat(s)), n
@@ -10644,7 +10644,7 @@
 						forcePlaceholder: u,
 						forceHouseAd: h,
 						waitForProgrammatic: x,
-						isSubredditPage: g,
+						IsSubredditOrCommentsPage: g,
 						removeSidebarSpacer: f
 					} = this.props, v = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
@@ -10678,7 +10678,7 @@
 						placementIndex: r
 					}), c.a.createElement(I, {
 						id: M(d, o, r),
-						isRefreshableAd: N(d, g, a),
+						isRefreshableAd: N(d, g),
 						incrementRefreshCounter: this.incrementRefreshCounter,
 						sizes: l,
 						placement: d,
@@ -16601,4 +16601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.09572d11deb4227ba6a1.js.map
+//# sourceMappingURL=CollectionCommentsPage.6fb7005b33ea60e6cddb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.8f7dedf5395d39d6465b.js
-// Retrieved at 8/4/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.c843aad2e10014f3a51f.js
+// Retrieved at 8/5/2020, 12:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, r) {
@@ -29,8 +29,8 @@
 				y = r("./src/reddit/components/BannerAd/index.m.less"),
 				g = r.n(y),
 				x = r("./src/lib/lessComponent.tsx");
-			const v = x.a.div("Container", g.a),
-				C = x.a.div("LoadingHitbox", g.a),
+			const C = x.a.div("Container", g.a),
+				v = x.a.div("LoadingHitbox", g.a),
 				O = e => setTimeout(() => {
 					throw e
 				}, 0);
@@ -102,9 +102,9 @@
 						slot: t,
 						className: r
 					} = this.props;
-					return t ? s.a.createElement(v, {
+					return t ? s.a.createElement(C, {
 						"data-slot": t
-					}, s.a.createElement(C, {
+					}, s.a.createElement(v, {
 						key: "".concat(e, "-loadinghitbox"),
 						innerRef: e => {
 							this.loader = e
@@ -136,7 +136,7 @@
 				}),
 				slot: (e, t) => {
 					const r = e.platform.currentPage;
-					return r && r.meta ? l.c(t.listingName, r.meta.name, t.placement) : ""
+					return r && r.meta ? l.c(t.listingName, r.meta.name) : ""
 				}
 			}))(Object(b.c)(S))
 		},
@@ -268,8 +268,8 @@
 				y = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				g = r("./src/reddit/helpers/adCount/index.ts"),
 				x = r("./src/reddit/helpers/trackers/ads.ts"),
-				v = r("./src/reddit/models/Media/index.ts"),
-				C = r("./src/reddit/selectors/platform.ts"),
+				C = r("./src/reddit/models/Media/index.ts"),
+				v = r("./src/reddit/selectors/platform.ts"),
 				O = r("./src/reddit/components/SidebarAd/BaseSidebarAdDoNotUseOrYoureFired.m.less"),
 				S = r.n(O),
 				E = r("./src/lib/constants/index.ts"),
@@ -303,18 +303,18 @@
 						return e.sidebarPromotedPosts.models[Object(g.a)(r, s, n)]
 					},
 					pending: e => !e.sidebarPromotedPosts.firstFetch,
-					isSubredditPage: e => Object(C.r)(e) === E.Bb.SUBREDDIT
+					IsSubredditOrCommentsPage: e => Object(v.r)(e) === E.Bb.SUBREDDIT || Object(v.r)(e) === E.Bb.COMMENTS
 				}),
 				N = Object(l.b)(w),
 				j = _.a.wrapped(h.a, "BannerAd", S.a),
 				B = _.a.wrapped(y.a, "ThemedWidget", S.a),
 				I = _.a.div("SidebarAdPlaceholder", S.a),
-				P = (e, t, r) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && u.a.dfpRefreshSlotTestSubreddits.includes(r) && e === E.c.BELOW_THE_FOLD),
+				P = (e, t) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && e === E.c.BELOW_THE_FOLD),
 				k = (e, t, r) => {
 					let n = "";
 					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != r && (n += "-".concat(r)), n
 				},
-				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(v.G)(e.media) && e.media.content)),
+				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(C.G)(e.media) && e.media.content)),
 				F = e => !!e && e.isBlank,
 				R = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
@@ -388,12 +388,12 @@
 						forcePlaceholder: h,
 						forceHouseAd: p,
 						waitForProgrammatic: f,
-						isSubredditPage: y,
+						IsSubredditOrCommentsPage: y,
 						removeSidebarSpacer: g
 					} = this.props, x = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
-					}), v = g ? c.a.Fragment : b.a;
-					return h || t || !L(r) && f ? c.a.createElement(v, null, c.a.createElement(B, {
+					}), C = g ? c.a.Fragment : b.a;
+					return h || t || !L(r) && f ? c.a.createElement(C, null, c.a.createElement(B, {
 						className: e,
 						contentOnly: !0,
 						redditStyle: u
@@ -404,13 +404,13 @@
 						redditStyle: u,
 						placement: d,
 						removeSidebarSpacer: g
-					}) : L(r) ? c.a.createElement(v, null, c.a.createElement(A, {
+					}) : L(r) ? c.a.createElement(C, null, c.a.createElement(A, {
 						post: r,
 						refreshKey: i,
 						listingName: o,
 						placement: d,
 						placementIndex: a
-					})) : c.a.createElement(v, null, c.a.createElement(B, {
+					})) : c.a.createElement(C, null, c.a.createElement(B, {
 						className: this.props.className,
 						contentOnly: !0,
 						redditStyle: u
@@ -422,7 +422,7 @@
 						placementIndex: a
 					}), c.a.createElement(j, {
 						id: k(d, s, a),
-						isRefreshableAd: P(d, y, o),
+						isRefreshableAd: P(d, y),
 						incrementRefreshCounter: this.incrementRefreshCounter,
 						sizes: l,
 						placement: d,
@@ -582,8 +582,8 @@
 				y = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				g = r("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				x = r("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
-				v = r("./src/reddit/models/Flair/index.ts"),
-				C = r("./src/reddit/selectors/user.ts"),
+				C = r("./src/reddit/models/Flair/index.ts"),
+				v = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
 				S = r("./src/reddit/components/Widgets/CommunityList/index.m.less"),
 				E = r.n(S);
@@ -633,7 +633,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				w = Object(d.c)({
-					hideNSFWPref: C.z
+					hideNSFWPref: v.z
 				}),
 				N = Object(i.b)(w)(e => a.a.createElement("div", {
 					className: E.a.communityItemContainer
@@ -665,7 +665,7 @@
 					hk: "6i1wh"
 				})), e.isNSFW && a.a.createElement(l.b, {
 					flair: {
-						type: v.f.Nsfw,
+						type: C.f.Nsfw,
 						text: "nsfw"
 					}
 				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? a.a.createElement(y.a, {
@@ -816,4 +816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.8f7dedf5395d39d6465b.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.c843aad2e10014f3a51f.js.map
