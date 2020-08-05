@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.cb64d786f4fe840c3fa9.js
-// Retrieved at 8/4/2020, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a6c636e0188e7b024728.js
+// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -763,7 +763,7 @@
 							hasBottomCompactPostStyles: n,
 							showPinnnedHeader: r
 						}
-					})(e), Be = !!Y && !Object(Q.Ac)(Y), Ae = (!g || Be) && !le.isSponsored, Me = r.a.createElement(R.a, {
+					})(e), Be = !!Y && !Object(Q.Cc)(Y), Ae = (!g || Be) && !le.isSponsored, Me = r.a.createElement(R.a, {
 						className: Object(j.a)(ue.a.container, n, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(m.a)(e), {
 							[me.a.mUseRedditTheme]: ge,
 							promotedvideolink: le.isSponsored && !(le.media && h.a.has(le.media.type)),
@@ -1350,9 +1350,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.X
 				});
-				return !(!t || Object(o.Ac)(t))
+				return !(!t || Object(o.Cc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.cb64d786f4fe840c3fa9.js.map
+//# sourceMappingURL=reddit-components-LargePost.a6c636e0188e7b024728.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.615196ffd1a369677fa2.js
-// Retrieved at 8/5/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fa732876703928d696f9.js
+// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -679,13 +679,13 @@
 					experimentEligibilitySelector: p.a,
 					experimentName: u.Db
 				});
-				return Object(u.Ac)(t) ? void 0 : t
+				return Object(u.Cc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
 					experimentName: u.Eb
 				});
-				return Object(u.Ac)(t) ? void 0 : t
+				return Object(u.Cc)(t) ? void 0 : t
 			}, (e, t) => e === u.Fb.Enabled && t === u.Fb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "699f2a5-production"
+					SENTRY_RELEASE_VERSION: "ffb743b-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3830,7 +3830,7 @@
 							experimentEligibilitySelector: T.H,
 							experimentName: S.eb
 						});
-						return !(!t || Object(S.Ac)(t))
+						return !(!t || Object(S.Cc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: I.c
@@ -33509,4 +33509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.615196ffd1a369677fa2.js.map
+//# sourceMappingURL=PostCreation.fa732876703928d696f9.js.map

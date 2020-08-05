@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.abf3b909a25b419f30a7.js
-// Retrieved at 8/5/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.852415e4ea19a88e302c.js
+// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -20,13 +20,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Db
 				});
-				return Object(u.Ac)(t) ? void 0 : t
+				return Object(u.Cc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Eb
 				});
-				return Object(u.Ac)(t) ? void 0 : t
+				return Object(u.Cc)(t) ? void 0 : t
 			}, (e, t) => e === u.Fb.Enabled && t === u.Fb.Enabled);
 			var p = s("./src/config.ts");
 			var g = s("./src/reddit/selectors/user.ts");
@@ -75,9 +75,9 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "699f2a5-production"
+					SENTRY_RELEASE_VERSION: "ffb743b-production"
 				}),
-				j = {
+				C = {
 					anonymousUserId: "t2_anonymous",
 					debug: !1,
 					disableCookies: !0,
@@ -100,11 +100,11 @@
 					localStorageViewerUserIdKey: f,
 					playerName: E,
 					playerVersion: I,
-					respectDoNotTrack: C,
+					respectDoNotTrack: j,
 					saltLength: S,
 					saltTimeToLive: L,
 					viewerUserIdLength: T
-				} = Object.assign(Object.assign({}, j), t);
+				} = Object.assign(Object.assign({}, C), t);
 				class M extends i.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(i.createRef)(), this.handleDashCreate = e => {
@@ -248,7 +248,7 @@
 						}
 					}
 				}
-				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = E, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = C, M.SALT_LENGTH = S, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
+				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = E, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = j, M.SALT_LENGTH = S, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
 				const N = Object(i.forwardRef)((e, t) => a.a.createElement(M, v({}, e, {
 						forwardedRef: t
 					}))),
@@ -431,7 +431,7 @@
 				className: Object(o.a)(e.iconClassName, y.a.icon)
 			}, a.a.createElement(c.a, {
 				className: y.a.iconImage
-			}))), j = e => a.a.createElement("div", {
+			}))), C = e => a.a.createElement("div", {
 				className: y.a.imageMetaData,
 				style: {
 					height: e.captionHeight,
@@ -452,7 +452,7 @@
 				className: y.a.urlText
 			}, Object(g.e)(e.outboundUrl)), a.a.createElement(u.a, {
 				className: y.a.linkIcon
-			})))), C = e => a.a.createElement("div", {
+			})))), j = e => a.a.createElement("div", {
 				className: y.a.slideIndicator,
 				onClick: e.toggleTileLayout ? t => {
 					t.preventDefault(), t.stopPropagation(), e.toggleTileLayout()
@@ -601,7 +601,7 @@
 					title: "Next",
 					iconClassName: y.a.nextIcon,
 					className: y.a.nextButton
-				}))), c.length > 1 ? a.a.createElement(C, {
+				}))), c.length > 1 ? a.a.createElement(j, {
 					currentSlide: L + 1,
 					totalSlides: c.length,
 					toggleTileLayout: S && D || void 0
@@ -610,7 +610,7 @@
 					style: {
 						height: s
 					}
-				}) : a.a.createElement(j, {
+				}) : a.a.createElement(C, {
 					caption: B,
 					onClickEvent: A,
 					outboundUrl: W,
@@ -896,8 +896,8 @@
 				O = s("./src/reddit/components/Governance/Proposal/async.ts"),
 				w = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				I = s("./src/reddit/components/Media/constants.ts"),
-				j = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
-				C = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
+				C = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
+				j = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
 				S = s("./src/reddit/components/Media/ImageBox/index.tsx"),
 				L = s("./src/reddit/components/Media/MediaContainer/index.tsx"),
 				T = s("./src/reddit/components/Media/RichTextContainer/index.tsx"),
@@ -1389,7 +1389,7 @@
 								alwaysWrapMedia: !0,
 								height: n ? K : G.j,
 								width: n ? z : G.j * (16 / 9)
-							}), x && l.a.createElement(j.a, {
+							}), x && l.a.createElement(C.a, {
 								childRef: this.storeChildRef,
 								height: n ? K : G.j,
 								width: n ? z : void 0,
@@ -1402,7 +1402,7 @@
 								title: m.title
 							})) : l.a.createElement(L.a, ee({}, Q, {
 								alwaysWrapMedia: !0
-							}), x && l.a.createElement(j.a, ee({}, q, {
+							}), x && l.a.createElement(C.a, ee({}, q, {
 								isResponsive: n || m.media.provider === G.v.IFrameEmbed,
 								title: m.title,
 								childRef: this.storeChildRef,
@@ -1525,7 +1525,7 @@
 								isGalleryTileLayout: o
 							}), l.a.createElement(re, {
 								isVisible: x
-							}, l.a.createElement(C.a, {
+							}, l.a.createElement(j.a, {
 								postId: m.id,
 								galleryItems: m.media.gallery ? m.media.gallery.items : [],
 								mediaMetadata: m.media.mediaMetadata || {},
@@ -1773,4 +1773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.abf3b909a25b419f30a7.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.852415e4ea19a88e302c.js.map
