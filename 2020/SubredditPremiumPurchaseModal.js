@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.397f1552c7a637d70725.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.af08b93d8e95096424e4.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -185,10 +185,10 @@
 					super(...arguments), this.state = {
 						loading: !0,
 						submitting: !1
-					}, this.alreadyPurchased = () => this.props.userIsPremiumSubscriber === y.a.Subscribed, this.getId = () => w + (this.props.uniqueId || "")
+					}, this._isMounted = !1, this.alreadyPurchased = () => this.props.userIsPremiumSubscriber === y.a.Subscribed, this.getId = () => w + (this.props.uniqueId || "")
 				}
 				componentDidMount() {
-					if (!this.alreadyPurchased()) {
+					if (this._isMounted = !0, !this.alreadyPurchased()) {
 						const e = this.props.membershipProducts.find(e => "usd" === e.currency);
 						Object(_.a)({
 							apiContext: this.props.apiContext(),
@@ -198,7 +198,7 @@
 							},
 							elementId: this.getId(),
 							price: () => this.props.price,
-							purchaseFn: t => Object(f.c)(this.props.apiContext(), {
+							purchaseFn: t => Object(f.d)(this.props.apiContext(), {
 								nonce: t,
 								price: this.props.price,
 								productId: e && e.id || "membership",
@@ -210,11 +210,13 @@
 							onCancel: () => this.setState({
 								submitting: !1
 							}),
-							onClientLoad: () => this.setState({
-								loading: !1
-							}),
+							onClientLoad: () => {
+								this._isMounted && this.setState({
+									loading: !1
+								})
+							},
 							onError: (e, t, r) => {
-								this.setState({
+								this._isMounted && (this.setState({
 									submitting: !1
 								}), this.props.onError(e), this.props.sendEvent(e => {
 									const s = E.defaults(e);
@@ -230,7 +232,7 @@
 										correlationId: this.props.correlationId,
 										subreddit: E.subreddit(e)
 									})
-								})
+								}))
 							},
 							onSubmitting: () => {
 								this.setState({
@@ -247,6 +249,9 @@
 							onSuccess: () => this.props.onPaymentSuccessful(this.props.isLoggedIn)
 						})
 					}
+				}
+				componentWillUnmount() {
+					this._isMounted = !1
 				}
 				render() {
 					return i.a.createElement("div", {
@@ -274,7 +279,7 @@
 					let {
 						subreddit: r
 					} = t;
-					return Object(y.l)(e, r.id)
+					return Object(y.k)(e, r.id)
 				},
 				meta: (e, t) => {
 					let {
@@ -297,7 +302,7 @@
 				return {
 					onError: t => Object(u.a)(e, t),
 					onPaymentSuccessful: t => {
-						t ? e(Object(m.f)(r.id, !0)).then(() => e(Object(b.a)(() => {}))).then(() => s && s()).then(() => e(Object(l.c)({
+						t ? e(Object(m.g)(r.id, !0)).then(() => e(Object(b.a)(() => {}))).then(() => s && s()).then(() => e(Object(l.c)({
 							subredditId: r.id,
 							initialView: x.c.MyBadges
 						}))) : e(Object(c.b)(r.url))
@@ -452,12 +457,12 @@
 			const A = Object(a.c)({
 					subreddit: l.q
 				}),
-				B = Object(i.b)(A, e => ({
+				M = Object(i.b)(A, e => ({
 					onClose: () => e(Object(o.f)())
 				})),
-				M = Object(l.t)(),
+				B = Object(l.t)(),
 				T = Object(d.c)(k);
-			t.default = Object(m.a)("spPremium", Object(c.a)(M(B(T))))
+			t.default = Object(m.a)("spPremium", Object(c.a)(B(M(T))))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -708,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.397f1552c7a637d70725.js.map
+//# sourceMappingURL=SubredditPremiumPurchaseModal.af08b93d8e95096424e4.js.map

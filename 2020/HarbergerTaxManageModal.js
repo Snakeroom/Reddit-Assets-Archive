@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.64eb702996f96331a9a7.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.38e94518545277ec7274.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -89,10 +89,10 @@
 				v = a("./src/reddit/contexts/ApiContext.tsx"),
 				f = a("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				E = a("./src/reddit/endpoints/governance/imageLease.ts"),
-				_ = a("./src/reddit/helpers/media/index.ts"),
-				N = a("./src/reddit/icons/svgs/Remove/index.tsx"),
-				I = a("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/Banner/index.m.less"),
-				j = a.n(I);
+				I = a("./src/reddit/helpers/media/index.ts"),
+				_ = a("./src/reddit/icons/svgs/Remove/index.tsx"),
+				N = a("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/Banner/index.m.less"),
+				j = a.n(N);
 			const O = "bannerBackgroundImage";
 			class C extends i.a.Component {
 				constructor() {
@@ -106,7 +106,7 @@
 						this.setState({
 							imageUploadInProgress: !0
 						});
-						const n = await Object(_.g)(e.file) || e.file.type,
+						const n = await Object(I.g)(e.file) || e.file.type,
 							s = await Object(E.a)(t(), a, e.file.name, O, n);
 						if (!s.ok) return void this.props.onImageUploadFailed();
 						const r = s.body.s3UploadLease,
@@ -176,7 +176,7 @@
 						onToggle: this.props.onTilingChange
 					}), b.fbt._("Tile", null, {
 						hk: "3fnD8Q"
-					})), i.a.createElement(N.a, {
+					})), i.a.createElement(_.a, {
 						className: j.a.remove,
 						tabIndex: a ? a + 2 : void 0,
 						onClick: this.handleBannerImageDelete
@@ -445,9 +445,9 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				_ = a("./src/reddit/controls/ErrorText/index.m.less"),
-				N = a.n(_);
-			const I = Object(m.c)({
+				I = a("./src/reddit/controls/ErrorText/index.m.less"),
+				_ = a.n(I);
+			const N = Object(m.c)({
 				activeModalId: h.a
 			});
 			class j extends d.a.Component {
@@ -492,12 +492,12 @@
 						textHasOverflowed: o
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(u.a)(N.a.wrapper, a)
+						className: Object(u.a)(_.a.wrapper, a)
 					}, d.a.createElement("span", {
-						className: N.a.description,
+						className: _.a.description,
 						ref: this.spanRef
 					}, e), o && d.a.createElement("span", {
-						className: N.a.moreText,
+						className: _.a.moreText,
 						onClick: this.toggleModal
 					}, i), t === l && d.a.createElement(E, {
 						onConfirmed: this.toggleModal,
@@ -505,7 +505,7 @@
 					}, s || e))
 				}
 			}
-			const O = Object(c.b)(I, e => ({
+			const O = Object(c.b)(N, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
 				}))(j),
 				C = e => {
@@ -619,19 +619,21 @@
 						label: t,
 						children: a,
 						inputRef: n,
-						className: i,
-						redditStyle: l
-					} = e, o = p(e, ["label", "children", "inputRef", "className", "redditStyle"]), d = void 0 !== e.value && "" !== e.value;
+						isInvalid: i,
+						className: l,
+						redditStyle: o
+					} = e, d = p(e, ["label", "children", "inputRef", "isInvalid", "className", "redditStyle"]), c = void 0 !== e.value && "" !== e.value;
 					return s.a.createElement("div", {
-						className: Object(r.a)(m.a.inputMovingLabelWrapper, i, {
-							[m.a.mIsRedditStyle]: l
+						className: Object(r.a)(m.a.inputMovingLabelWrapper, l, {
+							[m.a.mIsInvalid]: i,
+							[m.a.mIsRedditStyle]: o
 						}),
 						onClick: b
 					}, s.a.createElement(h, u({
 						innerRef: n
-					}, o)), e.label && s.a.createElement("label", {
+					}, d)), e.label && s.a.createElement("label", {
 						className: Object(r.a)(m.a.label, {
-							[m.a.mHasValue]: d
+							[m.a.mHasValue]: c
 						})
 					}, e.label), e.children)
 				},
@@ -761,4 +763,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxManageModal.64eb702996f96331a9a7.js.map
+//# sourceMappingURL=HarbergerTaxManageModal.38e94518545277ec7274.js.map

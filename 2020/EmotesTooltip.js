@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmotesTooltip.2bda9a0388bf050009e2.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmotesTooltip.082f92cfc703698b6e4c.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/tooltip.m.less": function(e, t, o) {
@@ -319,7 +319,7 @@
 					return !1
 				}
 			}), e => ({
-				onOpenUploadDialog: () => e(Object(u.i)({
+				onOpenUploadDialog: () => e(Object(u.j)({
 					uploadAssetType: f.b.Emote
 				}))
 			}))(Object(b.c)(B))
@@ -403,4 +403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmotesTooltip.2bda9a0388bf050009e2.js.map
+//# sourceMappingURL=EmotesTooltip.082f92cfc703698b6e4c.js.map

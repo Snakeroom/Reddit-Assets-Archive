@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.7f15bfc6e1afd73fc250.js
-// Retrieved at 7/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.fa7e7f0f1a1259058de0.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/Banner/index.m.less": function(e, t, a) {
@@ -169,7 +169,7 @@
 				fbt: D
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			const U = Object(d.c)({
-				tokenDisplayConversion: p.o,
+				tokenDisplayConversion: p.p,
 				wallet: p.g
 			});
 			var P = Object(o.b)(U, e => ({
@@ -352,4 +352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal.7f15bfc6e1afd73fc250.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal.fa7e7f0f1a1259058de0.js.map

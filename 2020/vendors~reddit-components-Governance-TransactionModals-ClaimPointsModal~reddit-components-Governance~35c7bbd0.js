@@ -1,1180 +1,1190 @@
-// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~35c7bbd0.6e23c8aef1311baed307.js
-// Retrieved at 3/30/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~35c7bbd0.af3db90c872c24938608.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~35c7bbd0"], {
-		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
+		"./node_modules/aes-js/index.js": function(e, r, t) {
 			"use strict";
-			var o = {
-				single_source_shortest_paths: function(e, t, r) {
-					var n = {},
-						i = {};
-					i[t] = 0;
-					var a, s, u, d, l, c, f, h = o.PriorityQueue.make();
-					for (h.push(t, 0); !h.empty();)
-						for (u in s = (a = h.pop()).value, d = a.cost, l = e[s] || {}) l.hasOwnProperty(u) && (c = d + l[u], f = i[u], (void 0 === i[u] || f > c) && (i[u] = c, h.push(u, c), n[u] = s));
-					if (void 0 !== r && void 0 === i[r]) {
-						var g = ["Could not find a path from ", t, " to ", r, "."].join("");
-						throw new Error(g)
+			! function(r) {
+				function t(e) {
+					return parseInt(e) === e
+				}
+
+				function n(e) {
+					if (!t(e.length)) return !1;
+					for (var r = 0; r < e.length; r++)
+						if (!t(e[r]) || e[r] < 0 || e[r] > 255) return !1;
+					return !0
+				}
+
+				function i(e, r) {
+					if (e.buffer && ArrayBuffer.isView(e) && "Uint8Array" === e.name) return r && (e = e.slice ? e.slice() : Array.prototype.slice.call(e)), e;
+					if (Array.isArray(e)) {
+						if (!n(e)) throw new Error("Array contains invalid value: " + e);
+						return new Uint8Array(e)
 					}
-					return n
-				},
-				extract_shortest_path_from_predecessor_list: function(e, t) {
-					for (var r = [], o = t; o;) r.push(o), e[o], o = e[o];
-					return r.reverse(), r
-				},
-				find_path: function(e, t, r) {
-					var n = o.single_source_shortest_paths(e, t, r);
-					return o.extract_shortest_path_from_predecessor_list(n, r)
-				},
-				PriorityQueue: {
-					make: function(e) {
-						var t, r = o.PriorityQueue,
-							n = {};
-						for (t in e = e || {}, r) r.hasOwnProperty(t) && (n[t] = r[t]);
-						return n.queue = [], n.sorter = e.sorter || r.default_sorter, n
-					},
-					default_sorter: function(e, t) {
-						return e.cost - t.cost
-					},
-					push: function(e, t) {
-						var r = {
-							value: e,
-							cost: t
-						};
-						this.queue.push(r), this.queue.sort(this.sorter)
-					},
-					pop: function() {
-						return this.queue.shift()
-					},
-					empty: function() {
-						return 0 === this.queue.length
-					}
+					if (t(e.length) && n(e)) return new Uint8Array(e);
+					throw new Error("unsupported array-like object")
 				}
-			};
-			e.exports = o
-		},
-		"./node_modules/qrcode/lib/browser.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/can-promise.js"),
-				n = r("./node_modules/qrcode/lib/core/qrcode.js"),
-				i = r("./node_modules/qrcode/lib/renderer/canvas.js"),
-				a = r("./node_modules/qrcode/lib/renderer/svg-tag.js");
 
-			function s(e, t, r, i, a) {
-				var s = [].slice.call(arguments, 1),
-					u = s.length,
-					d = "function" == typeof s[u - 1];
-				if (!d && !o()) throw new Error("Callback required as last argument");
-				if (!d) {
-					if (u < 1) throw new Error("Too few arguments provided");
-					return 1 === u ? (r = t, t = i = void 0) : 2 !== u || t.getContext || (i = r, r = t, t = void 0), new Promise((function(o, a) {
-						try {
-							var s = n.create(r, i);
-							o(e(s, t, i))
-						} catch (u) {
-							a(u)
-						}
-					}))
+				function o(e) {
+					return new Uint8Array(e)
 				}
-				if (u < 2) throw new Error("Too few arguments provided");
-				2 === u ? (a = r, r = t, t = i = void 0) : 3 === u && (t.getContext && void 0 === a ? (a = i, i = void 0) : (a = i, i = r, r = t, t = void 0));
-				try {
-					var l = n.create(r, i);
-					a(null, e(l, t, i))
-				} catch (c) {
-					a(c)
-				}
-			}
-			t.create = n.create, t.toCanvas = s.bind(null, i.render), t.toDataURL = s.bind(null, i.renderToDataURL), t.toString = s.bind(null, (function(e, t, r) {
-				return a.render(e, r)
-			}))
-		},
-		"./node_modules/qrcode/lib/can-promise.js": function(e, t) {
-			e.exports = function() {
-				return "function" == typeof Promise && Promise.prototype && Promise.prototype.then
-			}
-		},
-		"./node_modules/qrcode/lib/core/alignment-pattern.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/utils.js").getSymbolSize;
-			t.getRowColCoords = function(e) {
-				if (1 === e) return [];
-				for (var t = Math.floor(e / 7) + 2, r = o(e), n = 145 === r ? 26 : 2 * Math.ceil((r - 13) / (2 * t - 2)), i = [r - 7], a = 1; a < t - 1; a++) i[a] = i[a - 1] - n;
-				return i.push(6), i.reverse()
-			}, t.getPositions = function(e) {
-				for (var r = [], o = t.getRowColCoords(e), n = o.length, i = 0; i < n; i++)
-					for (var a = 0; a < n; a++) 0 === i && 0 === a || 0 === i && a === n - 1 || i === n - 1 && 0 === a || r.push([o[i], o[a]]);
-				return r
-			}
-		},
-		"./node_modules/qrcode/lib/core/alphanumeric-data.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/mode.js"),
-				n = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", " ", "$", "%", "*", "+", "-", ".", "/", ":"];
 
-			function i(e) {
-				this.mode = o.ALPHANUMERIC, this.data = e
-			}
-			i.getBitsLength = function(e) {
-				return 11 * Math.floor(e / 2) + e % 2 * 6
-			}, i.prototype.getLength = function() {
-				return this.data.length
-			}, i.prototype.getBitsLength = function() {
-				return i.getBitsLength(this.data.length)
-			}, i.prototype.write = function(e) {
-				var t;
-				for (t = 0; t + 2 <= this.data.length; t += 2) {
-					var r = 45 * n.indexOf(this.data[t]);
-					r += n.indexOf(this.data[t + 1]), e.put(r, 11)
+				function s(e, r, t, n, i) {
+					null == n && null == i || (e = e.slice ? e.slice(n, i) : Array.prototype.slice.call(e, n, i)), r.set(e, t)
 				}
-				this.data.length % 2 && e.put(n.indexOf(this.data[t]), 6)
-			}, e.exports = i
-		},
-		"./node_modules/qrcode/lib/core/bit-buffer.js": function(e, t) {
-			function r() {
-				this.buffer = [], this.length = 0
-			}
-			r.prototype = {
-				get: function(e) {
-					var t = Math.floor(e / 8);
-					return 1 == (this.buffer[t] >>> 7 - e % 8 & 1)
-				},
-				put: function(e, t) {
-					for (var r = 0; r < t; r++) this.putBit(1 == (e >>> t - r - 1 & 1))
-				},
-				getLengthInBits: function() {
-					return this.length
-				},
-				putBit: function(e) {
-					var t = Math.floor(this.length / 8);
-					this.buffer.length <= t && this.buffer.push(0), e && (this.buffer[t] |= 128 >>> this.length % 8), this.length++
-				}
-			}, e.exports = r
-		},
-		"./node_modules/qrcode/lib/core/bit-matrix.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js");
-
-			function n(e) {
-				if (!e || e < 1) throw new Error("BitMatrix size must be defined and greater than 0");
-				this.size = e, this.data = o.alloc(e * e), this.reservedBit = o.alloc(e * e)
-			}
-			n.prototype.set = function(e, t, r, o) {
-				var n = e * this.size + t;
-				this.data[n] = r, o && (this.reservedBit[n] = !0)
-			}, n.prototype.get = function(e, t) {
-				return this.data[e * this.size + t]
-			}, n.prototype.xor = function(e, t, r) {
-				this.data[e * this.size + t] ^= r
-			}, n.prototype.isReserved = function(e, t) {
-				return this.reservedBit[e * this.size + t]
-			}, e.exports = n
-		},
-		"./node_modules/qrcode/lib/core/byte-data.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
-				n = r("./node_modules/qrcode/lib/core/mode.js");
-
-			function i(e) {
-				this.mode = n.BYTE, this.data = o.from(e)
-			}
-			i.getBitsLength = function(e) {
-				return 8 * e
-			}, i.prototype.getLength = function() {
-				return this.data.length
-			}, i.prototype.getBitsLength = function() {
-				return i.getBitsLength(this.data.length)
-			}, i.prototype.write = function(e) {
-				for (var t = 0, r = this.data.length; t < r; t++) e.put(this.data[t], 8)
-			}, e.exports = i
-		},
-		"./node_modules/qrcode/lib/core/error-correction-code.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/error-correction-level.js"),
-				n = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 4, 1, 2, 4, 4, 2, 4, 4, 4, 2, 4, 6, 5, 2, 4, 6, 6, 2, 5, 8, 8, 4, 5, 8, 8, 4, 5, 8, 11, 4, 8, 10, 11, 4, 9, 12, 16, 4, 9, 16, 16, 6, 10, 12, 18, 6, 10, 17, 16, 6, 11, 16, 19, 6, 13, 18, 21, 7, 14, 21, 25, 8, 16, 20, 25, 8, 17, 23, 25, 9, 17, 23, 34, 9, 18, 25, 30, 10, 20, 27, 32, 12, 21, 29, 35, 12, 23, 34, 37, 12, 25, 34, 40, 13, 26, 35, 42, 14, 28, 38, 45, 15, 29, 40, 48, 16, 31, 43, 51, 17, 33, 45, 54, 18, 35, 48, 57, 19, 37, 51, 60, 19, 38, 53, 63, 20, 40, 56, 66, 21, 43, 59, 70, 22, 45, 62, 74, 24, 47, 65, 77, 25, 49, 68, 81],
-				i = [7, 10, 13, 17, 10, 16, 22, 28, 15, 26, 36, 44, 20, 36, 52, 64, 26, 48, 72, 88, 36, 64, 96, 112, 40, 72, 108, 130, 48, 88, 132, 156, 60, 110, 160, 192, 72, 130, 192, 224, 80, 150, 224, 264, 96, 176, 260, 308, 104, 198, 288, 352, 120, 216, 320, 384, 132, 240, 360, 432, 144, 280, 408, 480, 168, 308, 448, 532, 180, 338, 504, 588, 196, 364, 546, 650, 224, 416, 600, 700, 224, 442, 644, 750, 252, 476, 690, 816, 270, 504, 750, 900, 300, 560, 810, 960, 312, 588, 870, 1050, 336, 644, 952, 1110, 360, 700, 1020, 1200, 390, 728, 1050, 1260, 420, 784, 1140, 1350, 450, 812, 1200, 1440, 480, 868, 1290, 1530, 510, 924, 1350, 1620, 540, 980, 1440, 1710, 570, 1036, 1530, 1800, 570, 1064, 1590, 1890, 600, 1120, 1680, 1980, 630, 1204, 1770, 2100, 660, 1260, 1860, 2220, 720, 1316, 1950, 2310, 750, 1372, 2040, 2430];
-			t.getBlocksCount = function(e, t) {
-				switch (t) {
-					case o.L:
-						return n[4 * (e - 1) + 0];
-					case o.M:
-						return n[4 * (e - 1) + 1];
-					case o.Q:
-						return n[4 * (e - 1) + 2];
-					case o.H:
-						return n[4 * (e - 1) + 3];
-					default:
-						return
-				}
-			}, t.getTotalCodewordsCount = function(e, t) {
-				switch (t) {
-					case o.L:
-						return i[4 * (e - 1) + 0];
-					case o.M:
-						return i[4 * (e - 1) + 1];
-					case o.Q:
-						return i[4 * (e - 1) + 2];
-					case o.H:
-						return i[4 * (e - 1) + 3];
-					default:
-						return
-				}
-			}
-		},
-		"./node_modules/qrcode/lib/core/error-correction-level.js": function(e, t) {
-			t.L = {
-				bit: 1
-			}, t.M = {
-				bit: 0
-			}, t.Q = {
-				bit: 3
-			}, t.H = {
-				bit: 2
-			}, t.isValid = function(e) {
-				return e && void 0 !== e.bit && e.bit >= 0 && e.bit < 4
-			}, t.from = function(e, r) {
-				if (t.isValid(e)) return e;
-				try {
-					return function(e) {
-						if ("string" != typeof e) throw new Error("Param is not a string");
-						switch (e.toLowerCase()) {
-							case "l":
-							case "low":
-								return t.L;
-							case "m":
-							case "medium":
-								return t.M;
-							case "q":
-							case "quartile":
-								return t.Q;
-							case "h":
-							case "high":
-								return t.H;
-							default:
-								throw new Error("Unknown EC Level: " + e)
-						}
-					}(e)
-				} catch (o) {
-					return r
-				}
-			}
-		},
-		"./node_modules/qrcode/lib/core/finder-pattern.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/utils.js").getSymbolSize;
-			t.getPositions = function(e) {
-				var t = o(e);
-				return [
-					[0, 0],
-					[t - 7, 0],
-					[0, t - 7]
-				]
-			}
-		},
-		"./node_modules/qrcode/lib/core/format-info.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/utils.js"),
-				n = o.getBCHDigit(1335);
-			t.getEncodedBits = function(e, t) {
-				for (var r = e.bit << 3 | t, i = r << 10; o.getBCHDigit(i) - n >= 0;) i ^= 1335 << o.getBCHDigit(i) - n;
-				return 21522 ^ (r << 10 | i)
-			}
-		},
-		"./node_modules/qrcode/lib/core/galois-field.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
-				n = o.alloc(512),
-				i = o.alloc(256);
-			! function() {
-				for (var e = 1, t = 0; t < 255; t++) n[t] = e, i[e] = t, 256 & (e <<= 1) && (e ^= 285);
-				for (t = 255; t < 512; t++) n[t] = n[t - 255]
-			}(), t.log = function(e) {
-				if (e < 1) throw new Error("log(" + e + ")");
-				return i[e]
-			}, t.exp = function(e) {
-				return n[e]
-			}, t.mul = function(e, t) {
-				return 0 === e || 0 === t ? 0 : n[i[e] + i[t]]
-			}
-		},
-		"./node_modules/qrcode/lib/core/kanji-data.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/mode.js"),
-				n = r("./node_modules/qrcode/lib/core/utils.js");
-
-			function i(e) {
-				this.mode = o.KANJI, this.data = e
-			}
-			i.getBitsLength = function(e) {
-				return 13 * e
-			}, i.prototype.getLength = function() {
-				return this.data.length
-			}, i.prototype.getBitsLength = function() {
-				return i.getBitsLength(this.data.length)
-			}, i.prototype.write = function(e) {
-				var t;
-				for (t = 0; t < this.data.length; t++) {
-					var r = n.toSJIS(this.data[t]);
-					if (r >= 33088 && r <= 40956) r -= 33088;
-					else {
-						if (!(r >= 57408 && r <= 60351)) throw new Error("Invalid SJIS character: " + this.data[t] + "\nMake sure your charset is UTF-8");
-						r -= 49472
-					}
-					r = 192 * (r >>> 8 & 255) + (255 & r), e.put(r, 13)
-				}
-			}, e.exports = i
-		},
-		"./node_modules/qrcode/lib/core/mask-pattern.js": function(e, t) {
-			t.Patterns = {
-				PATTERN000: 0,
-				PATTERN001: 1,
-				PATTERN010: 2,
-				PATTERN011: 3,
-				PATTERN100: 4,
-				PATTERN101: 5,
-				PATTERN110: 6,
-				PATTERN111: 7
-			};
-			var r = 3,
-				o = 3,
-				n = 40,
-				i = 10;
-
-			function a(e, r, o) {
-				switch (e) {
-					case t.Patterns.PATTERN000:
-						return (r + o) % 2 == 0;
-					case t.Patterns.PATTERN001:
-						return r % 2 == 0;
-					case t.Patterns.PATTERN010:
-						return o % 3 == 0;
-					case t.Patterns.PATTERN011:
-						return (r + o) % 3 == 0;
-					case t.Patterns.PATTERN100:
-						return (Math.floor(r / 2) + Math.floor(o / 3)) % 2 == 0;
-					case t.Patterns.PATTERN101:
-						return r * o % 2 + r * o % 3 == 0;
-					case t.Patterns.PATTERN110:
-						return (r * o % 2 + r * o % 3) % 2 == 0;
-					case t.Patterns.PATTERN111:
-						return (r * o % 3 + (r + o) % 2) % 2 == 0;
-					default:
-						throw new Error("bad maskPattern:" + e)
-				}
-			}
-			t.isValid = function(e) {
-				return null != e && "" !== e && !isNaN(e) && e >= 0 && e <= 7
-			}, t.from = function(e) {
-				return t.isValid(e) ? parseInt(e, 10) : void 0
-			}, t.getPenaltyN1 = function(e) {
-				for (var t = e.size, o = 0, n = 0, i = 0, a = null, s = null, u = 0; u < t; u++) {
-					n = i = 0, a = s = null;
-					for (var d = 0; d < t; d++) {
-						var l = e.get(u, d);
-						l === a ? n++ : (n >= 5 && (o += r + (n - 5)), a = l, n = 1), (l = e.get(d, u)) === s ? i++ : (i >= 5 && (o += r + (i - 5)), s = l, i = 1)
-					}
-					n >= 5 && (o += r + (n - 5)), i >= 5 && (o += r + (i - 5))
-				}
-				return o
-			}, t.getPenaltyN2 = function(e) {
-				for (var t = e.size, r = 0, n = 0; n < t - 1; n++)
-					for (var i = 0; i < t - 1; i++) {
-						var a = e.get(n, i) + e.get(n, i + 1) + e.get(n + 1, i) + e.get(n + 1, i + 1);
-						4 !== a && 0 !== a || r++
-					}
-				return r * o
-			}, t.getPenaltyN3 = function(e) {
-				for (var t = e.size, r = 0, o = 0, i = 0, a = 0; a < t; a++) {
-					o = i = 0;
-					for (var s = 0; s < t; s++) o = o << 1 & 2047 | e.get(a, s), s >= 10 && (1488 === o || 93 === o) && r++, i = i << 1 & 2047 | e.get(s, a), s >= 10 && (1488 === i || 93 === i) && r++
-				}
-				return r * n
-			}, t.getPenaltyN4 = function(e) {
-				for (var t = 0, r = e.data.length, o = 0; o < r; o++) t += e.data[o];
-				return Math.abs(Math.ceil(100 * t / r / 5) - 10) * i
-			}, t.applyMask = function(e, t) {
-				for (var r = t.size, o = 0; o < r; o++)
-					for (var n = 0; n < r; n++) t.isReserved(n, o) || t.xor(n, o, a(e, n, o))
-			}, t.getBestMask = function(e, r) {
-				for (var o = Object.keys(t.Patterns).length, n = 0, i = 1 / 0, a = 0; a < o; a++) {
-					r(a), t.applyMask(a, e);
-					var s = t.getPenaltyN1(e) + t.getPenaltyN2(e) + t.getPenaltyN3(e) + t.getPenaltyN4(e);
-					t.applyMask(a, e), s < i && (i = s, n = a)
-				}
-				return n
-			}
-		},
-		"./node_modules/qrcode/lib/core/mode.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/version-check.js"),
-				n = r("./node_modules/qrcode/lib/core/regex.js");
-			t.NUMERIC = {
-				id: "Numeric",
-				bit: 1,
-				ccBits: [10, 12, 14]
-			}, t.ALPHANUMERIC = {
-				id: "Alphanumeric",
-				bit: 2,
-				ccBits: [9, 11, 13]
-			}, t.BYTE = {
-				id: "Byte",
-				bit: 4,
-				ccBits: [8, 16, 16]
-			}, t.KANJI = {
-				id: "Kanji",
-				bit: 8,
-				ccBits: [8, 10, 12]
-			}, t.MIXED = {
-				bit: -1
-			}, t.getCharCountIndicator = function(e, t) {
-				if (!e.ccBits) throw new Error("Invalid mode: " + e);
-				if (!o.isValid(t)) throw new Error("Invalid version: " + t);
-				return t >= 1 && t < 10 ? e.ccBits[0] : t < 27 ? e.ccBits[1] : e.ccBits[2]
-			}, t.getBestModeForData = function(e) {
-				return n.testNumeric(e) ? t.NUMERIC : n.testAlphanumeric(e) ? t.ALPHANUMERIC : n.testKanji(e) ? t.KANJI : t.BYTE
-			}, t.toString = function(e) {
-				if (e && e.id) return e.id;
-				throw new Error("Invalid mode")
-			}, t.isValid = function(e) {
-				return e && e.bit && e.ccBits
-			}, t.from = function(e, r) {
-				if (t.isValid(e)) return e;
-				try {
-					return function(e) {
-						if ("string" != typeof e) throw new Error("Param is not a string");
-						switch (e.toLowerCase()) {
-							case "numeric":
-								return t.NUMERIC;
-							case "alphanumeric":
-								return t.ALPHANUMERIC;
-							case "kanji":
-								return t.KANJI;
-							case "byte":
-								return t.BYTE;
-							default:
-								throw new Error("Unknown mode: " + e)
-						}
-					}(e)
-				} catch (o) {
-					return r
-				}
-			}
-		},
-		"./node_modules/qrcode/lib/core/numeric-data.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/mode.js");
-
-			function n(e) {
-				this.mode = o.NUMERIC, this.data = e.toString()
-			}
-			n.getBitsLength = function(e) {
-				return 10 * Math.floor(e / 3) + (e % 3 ? e % 3 * 3 + 1 : 0)
-			}, n.prototype.getLength = function() {
-				return this.data.length
-			}, n.prototype.getBitsLength = function() {
-				return n.getBitsLength(this.data.length)
-			}, n.prototype.write = function(e) {
-				var t, r, o;
-				for (t = 0; t + 3 <= this.data.length; t += 3) r = this.data.substr(t, 3), o = parseInt(r, 10), e.put(o, 10);
-				var n = this.data.length - t;
-				n > 0 && (r = this.data.substr(t), o = parseInt(r, 10), e.put(o, 3 * n + 1))
-			}, e.exports = n
-		},
-		"./node_modules/qrcode/lib/core/polynomial.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
-				n = r("./node_modules/qrcode/lib/core/galois-field.js");
-			t.mul = function(e, t) {
-				for (var r = o.alloc(e.length + t.length - 1), i = 0; i < e.length; i++)
-					for (var a = 0; a < t.length; a++) r[i + a] ^= n.mul(e[i], t[a]);
-				return r
-			}, t.mod = function(e, t) {
-				for (var r = o.from(e); r.length - t.length >= 0;) {
-					for (var i = r[0], a = 0; a < t.length; a++) r[a] ^= n.mul(t[a], i);
-					for (var s = 0; s < r.length && 0 === r[s];) s++;
-					r = r.slice(s)
-				}
-				return r
-			}, t.generateECPolynomial = function(e) {
-				for (var r = o.from([1]), i = 0; i < e; i++) r = t.mul(r, [1, n.exp(i)]);
-				return r
-			}
-		},
-		"./node_modules/qrcode/lib/core/qrcode.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
-				n = r("./node_modules/qrcode/lib/core/utils.js"),
-				i = r("./node_modules/qrcode/lib/core/error-correction-level.js"),
-				a = r("./node_modules/qrcode/lib/core/bit-buffer.js"),
-				s = r("./node_modules/qrcode/lib/core/bit-matrix.js"),
-				u = r("./node_modules/qrcode/lib/core/alignment-pattern.js"),
-				d = r("./node_modules/qrcode/lib/core/finder-pattern.js"),
-				l = r("./node_modules/qrcode/lib/core/mask-pattern.js"),
-				c = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
-				f = r("./node_modules/qrcode/lib/core/reed-solomon-encoder.js"),
-				h = r("./node_modules/qrcode/lib/core/version.js"),
-				g = r("./node_modules/qrcode/lib/core/format-info.js"),
-				m = r("./node_modules/qrcode/lib/core/mode.js"),
-				p = r("./node_modules/qrcode/lib/core/segments.js"),
-				v = r("./node_modules/qrcode/node_modules/isarray/index.js");
-
-			function b(e, t, r) {
-				var o, n, i = e.size,
-					a = g.getEncodedBits(t, r);
-				for (o = 0; o < 15; o++) n = 1 == (a >> o & 1), o < 6 ? e.set(o, 8, n, !0) : o < 8 ? e.set(o + 1, 8, n, !0) : e.set(i - 15 + o, 8, n, !0), o < 8 ? e.set(8, i - o - 1, n, !0) : o < 9 ? e.set(8, 15 - o - 1 + 1, n, !0) : e.set(8, 15 - o - 1, n, !0);
-				e.set(i - 8, 8, 1, !0)
-			}
-
-			function y(e, t, r) {
-				var i = new a;
-				r.forEach((function(t) {
-					i.put(t.mode.bit, 4), i.put(t.getLength(), m.getCharCountIndicator(t.mode, e)), t.write(i)
-				}));
-				var s = 8 * (n.getSymbolTotalCodewords(e) - c.getTotalCodewordsCount(e, t));
-				for (i.getLengthInBits() + 4 <= s && i.put(0, 4); i.getLengthInBits() % 8 != 0;) i.putBit(0);
-				for (var u = (s - i.getLengthInBits()) / 8, d = 0; d < u; d++) i.put(d % 2 ? 17 : 236, 8);
-				return function(e, t, r) {
-					for (var i = n.getSymbolTotalCodewords(t), a = c.getTotalCodewordsCount(t, r), s = i - a, u = c.getBlocksCount(t, r), d = u - i % u, l = Math.floor(i / u), h = Math.floor(s / u), g = h + 1, m = l - h, p = new f(m), v = 0, b = new Array(u), y = new Array(u), w = 0, _ = o.from(e.buffer), E = 0; E < u; E++) {
-						var A = E < d ? h : g;
-						b[E] = _.slice(v, v + A), y[E] = p.encode(b[E]), v += A, w = Math.max(w, A)
-					}
-					var j, B, P = o.alloc(i),
-						R = 0;
-					for (j = 0; j < w; j++)
-						for (B = 0; B < u; B++) j < b[B].length && (P[R++] = b[B][j]);
-					for (j = 0; j < m; j++)
-						for (B = 0; B < u; B++) P[R++] = y[B][j];
-					return P
-				}(i, e, t)
-			}
-
-			function w(e, t, r, o) {
-				var i;
-				if (v(e)) i = p.fromArray(e);
-				else {
-					if ("string" != typeof e) throw new Error("Invalid data");
-					var a = t;
-					if (!a) {
-						var c = p.rawSplit(e);
-						a = h.getBestVersionForData(c, r)
-					}
-					i = p.fromString(e, a || 40)
-				}
-				var f = h.getBestVersionForData(i, r);
-				if (!f) throw new Error("The amount of data is too big to be stored in a QR Code");
-				if (t) {
-					if (t < f) throw new Error("\nThe chosen QR Code version cannot contain this amount of data.\nMinimum version required to store current data is: " + f + ".\n")
-				} else t = f;
-				var g = y(t, r, i),
-					m = n.getSymbolSize(t),
-					w = new s(m);
-				return function(e, t) {
-						for (var r = e.size, o = d.getPositions(t), n = 0; n < o.length; n++)
-							for (var i = o[n][0], a = o[n][1], s = -1; s <= 7; s++)
-								if (!(i + s <= -1 || r <= i + s))
-									for (var u = -1; u <= 7; u++) a + u <= -1 || r <= a + u || (s >= 0 && s <= 6 && (0 === u || 6 === u) || u >= 0 && u <= 6 && (0 === s || 6 === s) || s >= 2 && s <= 4 && u >= 2 && u <= 4 ? e.set(i + s, a + u, !0, !0) : e.set(i + s, a + u, !1, !0))
-					}(w, t),
-					function(e) {
-						for (var t = e.size, r = 8; r < t - 8; r++) {
-							var o = r % 2 == 0;
-							e.set(r, 6, o, !0), e.set(6, r, o, !0)
-						}
-					}(w),
-					function(e, t) {
-						for (var r = u.getPositions(t), o = 0; o < r.length; o++)
-							for (var n = r[o][0], i = r[o][1], a = -2; a <= 2; a++)
-								for (var s = -2; s <= 2; s++) - 2 === a || 2 === a || -2 === s || 2 === s || 0 === a && 0 === s ? e.set(n + a, i + s, !0, !0) : e.set(n + a, i + s, !1, !0)
-					}(w, t), b(w, r, 0), t >= 7 && function(e, t) {
-						for (var r, o, n, i = e.size, a = h.getEncodedBits(t), s = 0; s < 18; s++) r = Math.floor(s / 3), o = s % 3 + i - 8 - 3, n = 1 == (a >> s & 1), e.set(r, o, n, !0), e.set(o, r, n, !0)
-					}(w, t),
-					function(e, t) {
-						for (var r = e.size, o = -1, n = r - 1, i = 7, a = 0, s = r - 1; s > 0; s -= 2)
-							for (6 === s && s--;;) {
-								for (var u = 0; u < 2; u++)
-									if (!e.isReserved(n, s - u)) {
-										var d = !1;
-										a < t.length && (d = 1 == (t[a] >>> i & 1)), e.set(n, s - u, d), -1 === --i && (a++, i = 7)
-									} if ((n += o) < 0 || r <= n) {
-									n -= o, o = -o;
-									break
-								}
+				var a, u = {
+						toBytes: function(e) {
+							var r = [],
+								t = 0;
+							for (e = encodeURI(e); t < e.length;) {
+								var n = e.charCodeAt(t++);
+								37 === n ? (r.push(parseInt(e.substr(t, 2), 16)), t += 2) : r.push(n)
 							}
-					}(w, g), isNaN(o) && (o = l.getBestMask(w, b.bind(null, w, r))), l.applyMask(o, w), b(w, r, o), {
-						modules: w,
-						version: t,
-						errorCorrectionLevel: r,
-						maskPattern: o,
-						segments: i
-					}
-			}
-			t.create = function(e, t) {
-				if (void 0 === e || "" === e) throw new Error("No input text");
-				var r, o, a = i.M;
-				return void 0 !== t && (a = i.from(t.errorCorrectionLevel, i.M), r = h.from(t.version), o = l.from(t.maskPattern), t.toSJISFunc && n.setToSJISFunction(t.toSJISFunc)), w(e, r, a, o)
-			}
-		},
-		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
-				n = r("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = r("./node_modules/buffer/index.js").Buffer;
+							return i(r)
+						},
+						fromBytes: function(e) {
+							for (var r = [], t = 0; t < e.length;) {
+								var n = e[t];
+								n < 128 ? (r.push(String.fromCharCode(n)), t++) : n > 191 && n < 224 ? (r.push(String.fromCharCode((31 & n) << 6 | 63 & e[t + 1])), t += 2) : (r.push(String.fromCharCode((15 & n) << 12 | (63 & e[t + 1]) << 6 | 63 & e[t + 2])), t += 3)
+							}
+							return r.join("")
+						}
+					},
+					f = (a = "0123456789abcdef", {
+						toBytes: function(e) {
+							for (var r = [], t = 0; t < e.length; t += 2) r.push(parseInt(e.substr(t, 2), 16));
+							return r
+						},
+						fromBytes: function(e) {
+							for (var r = [], t = 0; t < e.length; t++) {
+								var n = e[t];
+								r.push(a[(240 & n) >> 4] + a[15 & n])
+							}
+							return r.join("")
+						}
+					}),
+					h = {
+						16: 10,
+						24: 12,
+						32: 14
+					},
+					l = [1, 2, 4, 8, 16, 32, 64, 128, 27, 54, 108, 216, 171, 77, 154, 47, 94, 188, 99, 198, 151, 53, 106, 212, 179, 125, 250, 239, 197, 145],
+					c = [99, 124, 119, 123, 242, 107, 111, 197, 48, 1, 103, 43, 254, 215, 171, 118, 202, 130, 201, 125, 250, 89, 71, 240, 173, 212, 162, 175, 156, 164, 114, 192, 183, 253, 147, 38, 54, 63, 247, 204, 52, 165, 229, 241, 113, 216, 49, 21, 4, 199, 35, 195, 24, 150, 5, 154, 7, 18, 128, 226, 235, 39, 178, 117, 9, 131, 44, 26, 27, 110, 90, 160, 82, 59, 214, 179, 41, 227, 47, 132, 83, 209, 0, 237, 32, 252, 177, 91, 106, 203, 190, 57, 74, 76, 88, 207, 208, 239, 170, 251, 67, 77, 51, 133, 69, 249, 2, 127, 80, 60, 159, 168, 81, 163, 64, 143, 146, 157, 56, 245, 188, 182, 218, 33, 16, 255, 243, 210, 205, 12, 19, 236, 95, 151, 68, 23, 196, 167, 126, 61, 100, 93, 25, 115, 96, 129, 79, 220, 34, 42, 144, 136, 70, 238, 184, 20, 222, 94, 11, 219, 224, 50, 58, 10, 73, 6, 36, 92, 194, 211, 172, 98, 145, 149, 228, 121, 231, 200, 55, 109, 141, 213, 78, 169, 108, 86, 244, 234, 101, 122, 174, 8, 186, 120, 37, 46, 28, 166, 180, 198, 232, 221, 116, 31, 75, 189, 139, 138, 112, 62, 181, 102, 72, 3, 246, 14, 97, 53, 87, 185, 134, 193, 29, 158, 225, 248, 152, 17, 105, 217, 142, 148, 155, 30, 135, 233, 206, 85, 40, 223, 140, 161, 137, 13, 191, 230, 66, 104, 65, 153, 45, 15, 176, 84, 187, 22],
+					p = [82, 9, 106, 213, 48, 54, 165, 56, 191, 64, 163, 158, 129, 243, 215, 251, 124, 227, 57, 130, 155, 47, 255, 135, 52, 142, 67, 68, 196, 222, 233, 203, 84, 123, 148, 50, 166, 194, 35, 61, 238, 76, 149, 11, 66, 250, 195, 78, 8, 46, 161, 102, 40, 217, 36, 178, 118, 91, 162, 73, 109, 139, 209, 37, 114, 248, 246, 100, 134, 104, 152, 22, 212, 164, 92, 204, 93, 101, 182, 146, 108, 112, 72, 80, 253, 237, 185, 218, 94, 21, 70, 87, 167, 141, 157, 132, 144, 216, 171, 0, 140, 188, 211, 10, 247, 228, 88, 5, 184, 179, 69, 6, 208, 44, 30, 143, 202, 63, 15, 2, 193, 175, 189, 3, 1, 19, 138, 107, 58, 145, 17, 65, 79, 103, 220, 234, 151, 242, 207, 206, 240, 180, 230, 115, 150, 172, 116, 34, 231, 173, 53, 133, 226, 249, 55, 232, 28, 117, 223, 110, 71, 241, 26, 113, 29, 41, 197, 137, 111, 183, 98, 14, 170, 24, 190, 27, 252, 86, 62, 75, 198, 210, 121, 32, 154, 219, 192, 254, 120, 205, 90, 244, 31, 221, 168, 51, 136, 7, 199, 49, 177, 18, 16, 89, 39, 128, 236, 95, 96, 81, 127, 169, 25, 181, 74, 13, 45, 229, 122, 159, 147, 201, 156, 239, 160, 224, 59, 77, 174, 42, 245, 176, 200, 235, 187, 60, 131, 83, 153, 97, 23, 43, 4, 126, 186, 119, 214, 38, 225, 105, 20, 99, 85, 33, 12, 125],
+					d = [3328402341, 4168907908, 4000806809, 4135287693, 4294111757, 3597364157, 3731845041, 2445657428, 1613770832, 33620227, 3462883241, 1445669757, 3892248089, 3050821474, 1303096294, 3967186586, 2412431941, 528646813, 2311702848, 4202528135, 4026202645, 2992200171, 2387036105, 4226871307, 1101901292, 3017069671, 1604494077, 1169141738, 597466303, 1403299063, 3832705686, 2613100635, 1974974402, 3791519004, 1033081774, 1277568618, 1815492186, 2118074177, 4126668546, 2211236943, 1748251740, 1369810420, 3521504564, 4193382664, 3799085459, 2883115123, 1647391059, 706024767, 134480908, 2512897874, 1176707941, 2646852446, 806885416, 932615841, 168101135, 798661301, 235341577, 605164086, 461406363, 3756188221, 3454790438, 1311188841, 2142417613, 3933566367, 302582043, 495158174, 1479289972, 874125870, 907746093, 3698224818, 3025820398, 1537253627, 2756858614, 1983593293, 3084310113, 2108928974, 1378429307, 3722699582, 1580150641, 327451799, 2790478837, 3117535592, 0, 3253595436, 1075847264, 3825007647, 2041688520, 3059440621, 3563743934, 2378943302, 1740553945, 1916352843, 2487896798, 2555137236, 2958579944, 2244988746, 3151024235, 3320835882, 1336584933, 3992714006, 2252555205, 2588757463, 1714631509, 293963156, 2319795663, 3925473552, 67240454, 4269768577, 2689618160, 2017213508, 631218106, 1269344483, 2723238387, 1571005438, 2151694528, 93294474, 1066570413, 563977660, 1882732616, 4059428100, 1673313503, 2008463041, 2950355573, 1109467491, 537923632, 3858759450, 4260623118, 3218264685, 2177748300, 403442708, 638784309, 3287084079, 3193921505, 899127202, 2286175436, 773265209, 2479146071, 1437050866, 4236148354, 2050833735, 3362022572, 3126681063, 840505643, 3866325909, 3227541664, 427917720, 2655997905, 2749160575, 1143087718, 1412049534, 999329963, 193497219, 2353415882, 3354324521, 1807268051, 672404540, 2816401017, 3160301282, 369822493, 2916866934, 3688947771, 1681011286, 1949973070, 336202270, 2454276571, 201721354, 1210328172, 3093060836, 2680341085, 3184776046, 1135389935, 3294782118, 965841320, 831886756, 3554993207, 4068047243, 3588745010, 2345191491, 1849112409, 3664604599, 26054028, 2983581028, 2622377682, 1235855840, 3630984372, 2891339514, 4092916743, 3488279077, 3395642799, 4101667470, 1202630377, 268961816, 1874508501, 4034427016, 1243948399, 1546530418, 941366308, 1470539505, 1941222599, 2546386513, 3421038627, 2715671932, 3899946140, 1042226977, 2521517021, 1639824860, 227249030, 260737669, 3765465232, 2084453954, 1907733956, 3429263018, 2420656344, 100860677, 4160157185, 470683154, 3261161891, 1781871967, 2924959737, 1773779408, 394692241, 2579611992, 974986535, 664706745, 3655459128, 3958962195, 731420851, 571543859, 3530123707, 2849626480, 126783113, 865375399, 765172662, 1008606754, 361203602, 3387549984, 2278477385, 2857719295, 1344809080, 2782912378, 59542671, 1503764984, 160008576, 437062935, 1707065306, 3622233649, 2218934982, 3496503480, 2185314755, 697932208, 1512910199, 504303377, 2075177163, 2824099068, 1841019862, 739644986],
+					v = [2781242211, 2230877308, 2582542199, 2381740923, 234877682, 3184946027, 2984144751, 1418839493, 1348481072, 50462977, 2848876391, 2102799147, 434634494, 1656084439, 3863849899, 2599188086, 1167051466, 2636087938, 1082771913, 2281340285, 368048890, 3954334041, 3381544775, 201060592, 3963727277, 1739838676, 4250903202, 3930435503, 3206782108, 4149453988, 2531553906, 1536934080, 3262494647, 484572669, 2923271059, 1783375398, 1517041206, 1098792767, 49674231, 1334037708, 1550332980, 4098991525, 886171109, 150598129, 2481090929, 1940642008, 1398944049, 1059722517, 201851908, 1385547719, 1699095331, 1587397571, 674240536, 2704774806, 252314885, 3039795866, 151914247, 908333586, 2602270848, 1038082786, 651029483, 1766729511, 3447698098, 2682942837, 454166793, 2652734339, 1951935532, 775166490, 758520603, 3000790638, 4004797018, 4217086112, 4137964114, 1299594043, 1639438038, 3464344499, 2068982057, 1054729187, 1901997871, 2534638724, 4121318227, 1757008337, 0, 750906861, 1614815264, 535035132, 3363418545, 3988151131, 3201591914, 1183697867, 3647454910, 1265776953, 3734260298, 3566750796, 3903871064, 1250283471, 1807470800, 717615087, 3847203498, 384695291, 3313910595, 3617213773, 1432761139, 2484176261, 3481945413, 283769337, 100925954, 2180939647, 4037038160, 1148730428, 3123027871, 3813386408, 4087501137, 4267549603, 3229630528, 2315620239, 2906624658, 3156319645, 1215313976, 82966005, 3747855548, 3245848246, 1974459098, 1665278241, 807407632, 451280895, 251524083, 1841287890, 1283575245, 337120268, 891687699, 801369324, 3787349855, 2721421207, 3431482436, 959321879, 1469301956, 4065699751, 2197585534, 1199193405, 2898814052, 3887750493, 724703513, 2514908019, 2696962144, 2551808385, 3516813135, 2141445340, 1715741218, 2119445034, 2872807568, 2198571144, 3398190662, 700968686, 3547052216, 1009259540, 2041044702, 3803995742, 487983883, 1991105499, 1004265696, 1449407026, 1316239930, 504629770, 3683797321, 168560134, 1816667172, 3837287516, 1570751170, 1857934291, 4014189740, 2797888098, 2822345105, 2754712981, 936633572, 2347923833, 852879335, 1133234376, 1500395319, 3084545389, 2348912013, 1689376213, 3533459022, 3762923945, 3034082412, 4205598294, 133428468, 634383082, 2949277029, 2398386810, 3913789102, 403703816, 3580869306, 2297460856, 1867130149, 1918643758, 607656988, 4049053350, 3346248884, 1368901318, 600565992, 2090982877, 2632479860, 557719327, 3717614411, 3697393085, 2249034635, 2232388234, 2430627952, 1115438654, 3295786421, 2865522278, 3633334344, 84280067, 33027830, 303828494, 2747425121, 1600795957, 4188952407, 3496589753, 2434238086, 1486471617, 658119965, 3106381470, 953803233, 334231800, 3005978776, 857870609, 3151128937, 1890179545, 2298973838, 2805175444, 3056442267, 574365214, 2450884487, 550103529, 1233637070, 4289353045, 2018519080, 2057691103, 2399374476, 4166623649, 2148108681, 387583245, 3664101311, 836232934, 3330556482, 3100665960, 3280093505, 2955516313, 2002398509, 287182607, 3413881008, 4238890068, 3597515707, 975967766],
+					y = [1671808611, 2089089148, 2006576759, 2072901243, 4061003762, 1807603307, 1873927791, 3310653893, 810573872, 16974337, 1739181671, 729634347, 4263110654, 3613570519, 2883997099, 1989864566, 3393556426, 2191335298, 3376449993, 2106063485, 4195741690, 1508618841, 1204391495, 4027317232, 2917941677, 3563566036, 2734514082, 2951366063, 2629772188, 2767672228, 1922491506, 3227229120, 3082974647, 4246528509, 2477669779, 644500518, 911895606, 1061256767, 4144166391, 3427763148, 878471220, 2784252325, 3845444069, 4043897329, 1905517169, 3631459288, 827548209, 356461077, 67897348, 3344078279, 593839651, 3277757891, 405286936, 2527147926, 84871685, 2595565466, 118033927, 305538066, 2157648768, 3795705826, 3945188843, 661212711, 2999812018, 1973414517, 152769033, 2208177539, 745822252, 439235610, 455947803, 1857215598, 1525593178, 2700827552, 1391895634, 994932283, 3596728278, 3016654259, 695947817, 3812548067, 795958831, 2224493444, 1408607827, 3513301457, 0, 3979133421, 543178784, 4229948412, 2982705585, 1542305371, 1790891114, 3410398667, 3201918910, 961245753, 1256100938, 1289001036, 1491644504, 3477767631, 3496721360, 4012557807, 2867154858, 4212583931, 1137018435, 1305975373, 861234739, 2241073541, 1171229253, 4178635257, 33948674, 2139225727, 1357946960, 1011120188, 2679776671, 2833468328, 1374921297, 2751356323, 1086357568, 2408187279, 2460827538, 2646352285, 944271416, 4110742005, 3168756668, 3066132406, 3665145818, 560153121, 271589392, 4279952895, 4077846003, 3530407890, 3444343245, 202643468, 322250259, 3962553324, 1608629855, 2543990167, 1154254916, 389623319, 3294073796, 2817676711, 2122513534, 1028094525, 1689045092, 1575467613, 422261273, 1939203699, 1621147744, 2174228865, 1339137615, 3699352540, 577127458, 712922154, 2427141008, 2290289544, 1187679302, 3995715566, 3100863416, 339486740, 3732514782, 1591917662, 186455563, 3681988059, 3762019296, 844522546, 978220090, 169743370, 1239126601, 101321734, 611076132, 1558493276, 3260915650, 3547250131, 2901361580, 1655096418, 2443721105, 2510565781, 3828863972, 2039214713, 3878868455, 3359869896, 928607799, 1840765549, 2374762893, 3580146133, 1322425422, 2850048425, 1823791212, 1459268694, 4094161908, 3928346602, 1706019429, 2056189050, 2934523822, 135794696, 3134549946, 2022240376, 628050469, 779246638, 472135708, 2800834470, 3032970164, 3327236038, 3894660072, 3715932637, 1956440180, 522272287, 1272813131, 3185336765, 2340818315, 2323976074, 1888542832, 1044544574, 3049550261, 1722469478, 1222152264, 50660867, 4127324150, 236067854, 1638122081, 895445557, 1475980887, 3117443513, 2257655686, 3243809217, 489110045, 2662934430, 3778599393, 4162055160, 2561878936, 288563729, 1773916777, 3648039385, 2391345038, 2493985684, 2612407707, 505560094, 2274497927, 3911240169, 3460925390, 1442818645, 678973480, 3749357023, 2358182796, 2717407649, 2306869641, 219617805, 3218761151, 3862026214, 1120306242, 1756942440, 1103331905, 2578459033, 762796589, 252780047, 2966125488, 1425844308, 3151392187, 372911126],
+					g = [1667474886, 2088535288, 2004326894, 2071694838, 4075949567, 1802223062, 1869591006, 3318043793, 808472672, 16843522, 1734846926, 724270422, 4278065639, 3621216949, 2880169549, 1987484396, 3402253711, 2189597983, 3385409673, 2105378810, 4210693615, 1499065266, 1195886990, 4042263547, 2913856577, 3570689971, 2728590687, 2947541573, 2627518243, 2762274643, 1920112356, 3233831835, 3082273397, 4261223649, 2475929149, 640051788, 909531756, 1061110142, 4160160501, 3435941763, 875846760, 2779116625, 3857003729, 4059105529, 1903268834, 3638064043, 825316194, 353713962, 67374088, 3351728789, 589522246, 3284360861, 404236336, 2526454071, 84217610, 2593830191, 117901582, 303183396, 2155911963, 3806477791, 3958056653, 656894286, 2998062463, 1970642922, 151591698, 2206440989, 741110872, 437923380, 454765878, 1852748508, 1515908788, 2694904667, 1381168804, 993742198, 3604373943, 3014905469, 690584402, 3823320797, 791638366, 2223281939, 1398011302, 3520161977, 0, 3991743681, 538992704, 4244381667, 2981218425, 1532751286, 1785380564, 3419096717, 3200178535, 960056178, 1246420628, 1280103576, 1482221744, 3486468741, 3503319995, 4025428677, 2863326543, 4227536621, 1128514950, 1296947098, 859002214, 2240123921, 1162203018, 4193849577, 33687044, 2139062782, 1347481760, 1010582648, 2678045221, 2829640523, 1364325282, 2745433693, 1077985408, 2408548869, 2459086143, 2644360225, 943212656, 4126475505, 3166494563, 3065430391, 3671750063, 555836226, 269496352, 4294908645, 4092792573, 3537006015, 3452783745, 202118168, 320025894, 3974901699, 1600119230, 2543297077, 1145359496, 387397934, 3301201811, 2812801621, 2122220284, 1027426170, 1684319432, 1566435258, 421079858, 1936954854, 1616945344, 2172753945, 1330631070, 3705438115, 572679748, 707427924, 2425400123, 2290647819, 1179044492, 4008585671, 3099120491, 336870440, 3739122087, 1583276732, 185277718, 3688593069, 3772791771, 842159716, 976899700, 168435220, 1229577106, 101059084, 606366792, 1549591736, 3267517855, 3553849021, 2897014595, 1650632388, 2442242105, 2509612081, 3840161747, 2038008818, 3890688725, 3368567691, 926374254, 1835907034, 2374863873, 3587531953, 1313788572, 2846482505, 1819063512, 1448540844, 4109633523, 3941213647, 1701162954, 2054852340, 2930698567, 134748176, 3132806511, 2021165296, 623210314, 774795868, 471606328, 2795958615, 3031746419, 3334885783, 3907527627, 3722280097, 1953799400, 522133822, 1263263126, 3183336545, 2341176845, 2324333839, 1886425312, 1044267644, 3048588401, 1718004428, 1212733584, 50529542, 4143317495, 235803164, 1633788866, 892690282, 1465383342, 3115962473, 2256965911, 3250673817, 488449850, 2661202215, 3789633753, 4177007595, 2560144171, 286339874, 1768537042, 3654906025, 2391705863, 2492770099, 2610673197, 505291324, 2273808917, 3924369609, 3469625735, 1431699370, 673740880, 3755965093, 2358021891, 2711746649, 2307489801, 218961690, 3217021541, 3873845719, 1111672452, 1751693520, 1094828930, 2576986153, 757954394, 252645662, 2964376443, 1414855848, 3149649517, 370555436],
+					_ = [1374988112, 2118214995, 437757123, 975658646, 1001089995, 530400753, 2902087851, 1273168787, 540080725, 2910219766, 2295101073, 4110568485, 1340463100, 3307916247, 641025152, 3043140495, 3736164937, 632953703, 1172967064, 1576976609, 3274667266, 2169303058, 2370213795, 1809054150, 59727847, 361929877, 3211623147, 2505202138, 3569255213, 1484005843, 1239443753, 2395588676, 1975683434, 4102977912, 2572697195, 666464733, 3202437046, 4035489047, 3374361702, 2110667444, 1675577880, 3843699074, 2538681184, 1649639237, 2976151520, 3144396420, 4269907996, 4178062228, 1883793496, 2403728665, 2497604743, 1383856311, 2876494627, 1917518562, 3810496343, 1716890410, 3001755655, 800440835, 2261089178, 3543599269, 807962610, 599762354, 33778362, 3977675356, 2328828971, 2809771154, 4077384432, 1315562145, 1708848333, 101039829, 3509871135, 3299278474, 875451293, 2733856160, 92987698, 2767645557, 193195065, 1080094634, 1584504582, 3178106961, 1042385657, 2531067453, 3711829422, 1306967366, 2438237621, 1908694277, 67556463, 1615861247, 429456164, 3602770327, 2302690252, 1742315127, 2968011453, 126454664, 3877198648, 2043211483, 2709260871, 2084704233, 4169408201, 0, 159417987, 841739592, 504459436, 1817866830, 4245618683, 260388950, 1034867998, 908933415, 168810852, 1750902305, 2606453969, 607530554, 202008497, 2472011535, 3035535058, 463180190, 2160117071, 1641816226, 1517767529, 470948374, 3801332234, 3231722213, 1008918595, 303765277, 235474187, 4069246893, 766945465, 337553864, 1475418501, 2943682380, 4003061179, 2743034109, 4144047775, 1551037884, 1147550661, 1543208500, 2336434550, 3408119516, 3069049960, 3102011747, 3610369226, 1113818384, 328671808, 2227573024, 2236228733, 3535486456, 2935566865, 3341394285, 496906059, 3702665459, 226906860, 2009195472, 733156972, 2842737049, 294930682, 1206477858, 2835123396, 2700099354, 1451044056, 573804783, 2269728455, 3644379585, 2362090238, 2564033334, 2801107407, 2776292904, 3669462566, 1068351396, 742039012, 1350078989, 1784663195, 1417561698, 4136440770, 2430122216, 775550814, 2193862645, 2673705150, 1775276924, 1876241833, 3475313331, 3366754619, 270040487, 3902563182, 3678124923, 3441850377, 1851332852, 3969562369, 2203032232, 3868552805, 2868897406, 566021896, 4011190502, 3135740889, 1248802510, 3936291284, 699432150, 832877231, 708780849, 3332740144, 899835584, 1951317047, 4236429990, 3767586992, 866637845, 4043610186, 1106041591, 2144161806, 395441711, 1984812685, 1139781709, 3433712980, 3835036895, 2664543715, 1282050075, 3240894392, 1181045119, 2640243204, 25965917, 4203181171, 4211818798, 3009879386, 2463879762, 3910161971, 1842759443, 2597806476, 933301370, 1509430414, 3943906441, 3467192302, 3076639029, 3776767469, 2051518780, 2631065433, 1441952575, 404016761, 1942435775, 1408749034, 1610459739, 3745345300, 2017778566, 3400528769, 3110650942, 941896748, 3265478751, 371049330, 3168937228, 675039627, 4279080257, 967311729, 135050206, 3635733660, 1683407248, 2076935265, 3576870512, 1215061108, 3501741890],
+					b = [1347548327, 1400783205, 3273267108, 2520393566, 3409685355, 4045380933, 2880240216, 2471224067, 1428173050, 4138563181, 2441661558, 636813900, 4233094615, 3620022987, 2149987652, 2411029155, 1239331162, 1730525723, 2554718734, 3781033664, 46346101, 310463728, 2743944855, 3328955385, 3875770207, 2501218972, 3955191162, 3667219033, 768917123, 3545789473, 692707433, 1150208456, 1786102409, 2029293177, 1805211710, 3710368113, 3065962831, 401639597, 1724457132, 3028143674, 409198410, 2196052529, 1620529459, 1164071807, 3769721975, 2226875310, 486441376, 2499348523, 1483753576, 428819965, 2274680428, 3075636216, 598438867, 3799141122, 1474502543, 711349675, 129166120, 53458370, 2592523643, 2782082824, 4063242375, 2988687269, 3120694122, 1559041666, 730517276, 2460449204, 4042459122, 2706270690, 3446004468, 3573941694, 533804130, 2328143614, 2637442643, 2695033685, 839224033, 1973745387, 957055980, 2856345839, 106852767, 1371368976, 4181598602, 1033297158, 2933734917, 1179510461, 3046200461, 91341917, 1862534868, 4284502037, 605657339, 2547432937, 3431546947, 2003294622, 3182487618, 2282195339, 954669403, 3682191598, 1201765386, 3917234703, 3388507166, 0, 2198438022, 1211247597, 2887651696, 1315723890, 4227665663, 1443857720, 507358933, 657861945, 1678381017, 560487590, 3516619604, 975451694, 2970356327, 261314535, 3535072918, 2652609425, 1333838021, 2724322336, 1767536459, 370938394, 182621114, 3854606378, 1128014560, 487725847, 185469197, 2918353863, 3106780840, 3356761769, 2237133081, 1286567175, 3152976349, 4255350624, 2683765030, 3160175349, 3309594171, 878443390, 1988838185, 3704300486, 1756818940, 1673061617, 3403100636, 272786309, 1075025698, 545572369, 2105887268, 4174560061, 296679730, 1841768865, 1260232239, 4091327024, 3960309330, 3497509347, 1814803222, 2578018489, 4195456072, 575138148, 3299409036, 446754879, 3629546796, 4011996048, 3347532110, 3252238545, 4270639778, 915985419, 3483825537, 681933534, 651868046, 2755636671, 3828103837, 223377554, 2607439820, 1649704518, 3270937875, 3901806776, 1580087799, 4118987695, 3198115200, 2087309459, 2842678573, 3016697106, 1003007129, 2802849917, 1860738147, 2077965243, 164439672, 4100872472, 32283319, 2827177882, 1709610350, 2125135846, 136428751, 3874428392, 3652904859, 3460984630, 3572145929, 3593056380, 2939266226, 824852259, 818324884, 3224740454, 930369212, 2801566410, 2967507152, 355706840, 1257309336, 4148292826, 243256656, 790073846, 2373340630, 1296297904, 1422699085, 3756299780, 3818836405, 457992840, 3099667487, 2135319889, 77422314, 1560382517, 1945798516, 788204353, 1521706781, 1385356242, 870912086, 325965383, 2358957921, 2050466060, 2388260884, 2313884476, 4006521127, 901210569, 3990953189, 1014646705, 1503449823, 1062597235, 2031621326, 3212035895, 3931371469, 1533017514, 350174575, 2256028891, 2177544179, 1052338372, 741876788, 1606591296, 1914052035, 213705253, 2334669897, 1107234197, 1899603969, 3725069491, 2631447780, 2422494913, 1635502980, 1893020342, 1950903388, 1120974935],
+					w = [2807058932, 1699970625, 2764249623, 1586903591, 1808481195, 1173430173, 1487645946, 59984867, 4199882800, 1844882806, 1989249228, 1277555970, 3623636965, 3419915562, 1149249077, 2744104290, 1514790577, 459744698, 244860394, 3235995134, 1963115311, 4027744588, 2544078150, 4190530515, 1608975247, 2627016082, 2062270317, 1507497298, 2200818878, 567498868, 1764313568, 3359936201, 2305455554, 2037970062, 1047239e3, 1910319033, 1337376481, 2904027272, 2892417312, 984907214, 1243112415, 830661914, 861968209, 2135253587, 2011214180, 2927934315, 2686254721, 731183368, 1750626376, 4246310725, 1820824798, 4172763771, 3542330227, 48394827, 2404901663, 2871682645, 671593195, 3254988725, 2073724613, 145085239, 2280796200, 2779915199, 1790575107, 2187128086, 472615631, 3029510009, 4075877127, 3802222185, 4107101658, 3201631749, 1646252340, 4270507174, 1402811438, 1436590835, 3778151818, 3950355702, 3963161475, 4020912224, 2667994737, 273792366, 2331590177, 104699613, 95345982, 3175501286, 2377486676, 1560637892, 3564045318, 369057872, 4213447064, 3919042237, 1137477952, 2658625497, 1119727848, 2340947849, 1530455833, 4007360968, 172466556, 266959938, 516552836, 0, 2256734592, 3980931627, 1890328081, 1917742170, 4294704398, 945164165, 3575528878, 958871085, 3647212047, 2787207260, 1423022939, 775562294, 1739656202, 3876557655, 2530391278, 2443058075, 3310321856, 547512796, 1265195639, 437656594, 3121275539, 719700128, 3762502690, 387781147, 218828297, 3350065803, 2830708150, 2848461854, 428169201, 122466165, 3720081049, 1627235199, 648017665, 4122762354, 1002783846, 2117360635, 695634755, 3336358691, 4234721005, 4049844452, 3704280881, 2232435299, 574624663, 287343814, 612205898, 1039717051, 840019705, 2708326185, 793451934, 821288114, 1391201670, 3822090177, 376187827, 3113855344, 1224348052, 1679968233, 2361698556, 1058709744, 752375421, 2431590963, 1321699145, 3519142200, 2734591178, 188127444, 2177869557, 3727205754, 2384911031, 3215212461, 2648976442, 2450346104, 3432737375, 1180849278, 331544205, 3102249176, 4150144569, 2952102595, 2159976285, 2474404304, 766078933, 313773861, 2570832044, 2108100632, 1668212892, 3145456443, 2013908262, 418672217, 3070356634, 2594734927, 1852171925, 3867060991, 3473416636, 3907448597, 2614737639, 919489135, 164948639, 2094410160, 2997825956, 590424639, 2486224549, 1723872674, 3157750862, 3399941250, 3501252752, 3625268135, 2555048196, 3673637356, 1343127501, 4130281361, 3599595085, 2957853679, 1297403050, 81781910, 3051593425, 2283490410, 532201772, 1367295589, 3926170974, 895287692, 1953757831, 1093597963, 492483431, 3528626907, 1446242576, 1192455638, 1636604631, 209336225, 344873464, 1015671571, 669961897, 3375740769, 3857572124, 2973530695, 3747192018, 1933530610, 3464042516, 935293895, 3454686199, 2858115069, 1863638845, 3683022916, 4085369519, 3292445032, 875313188, 1080017571, 3279033885, 621591778, 1233856572, 2504130317, 24197544, 3017672716, 3835484340, 3247465558, 2220981195, 3060847922, 1551124588, 1463996600],
+					m = [4104605777, 1097159550, 396673818, 660510266, 2875968315, 2638606623, 4200115116, 3808662347, 821712160, 1986918061, 3430322568, 38544885, 3856137295, 718002117, 893681702, 1654886325, 2975484382, 3122358053, 3926825029, 4274053469, 796197571, 1290801793, 1184342925, 3556361835, 2405426947, 2459735317, 1836772287, 1381620373, 3196267988, 1948373848, 3764988233, 3385345166, 3263785589, 2390325492, 1480485785, 3111247143, 3780097726, 2293045232, 548169417, 3459953789, 3746175075, 439452389, 1362321559, 1400849762, 1685577905, 1806599355, 2174754046, 137073913, 1214797936, 1174215055, 3731654548, 2079897426, 1943217067, 1258480242, 529487843, 1437280870, 3945269170, 3049390895, 3313212038, 923313619, 679998e3, 3215307299, 57326082, 377642221, 3474729866, 2041877159, 133361907, 1776460110, 3673476453, 96392454, 878845905, 2801699524, 777231668, 4082475170, 2330014213, 4142626212, 2213296395, 1626319424, 1906247262, 1846563261, 562755902, 3708173718, 1040559837, 3871163981, 1418573201, 3294430577, 114585348, 1343618912, 2566595609, 3186202582, 1078185097, 3651041127, 3896688048, 2307622919, 425408743, 3371096953, 2081048481, 1108339068, 2216610296, 0, 2156299017, 736970802, 292596766, 1517440620, 251657213, 2235061775, 2933202493, 758720310, 265905162, 1554391400, 1532285339, 908999204, 174567692, 1474760595, 4002861748, 2610011675, 3234156416, 3693126241, 2001430874, 303699484, 2478443234, 2687165888, 585122620, 454499602, 151849742, 2345119218, 3064510765, 514443284, 4044981591, 1963412655, 2581445614, 2137062819, 19308535, 1928707164, 1715193156, 4219352155, 1126790795, 600235211, 3992742070, 3841024952, 836553431, 1669664834, 2535604243, 3323011204, 1243905413, 3141400786, 4180808110, 698445255, 2653899549, 2989552604, 2253581325, 3252932727, 3004591147, 1891211689, 2487810577, 3915653703, 4237083816, 4030667424, 2100090966, 865136418, 1229899655, 953270745, 3399679628, 3557504664, 4118925222, 2061379749, 3079546586, 2915017791, 983426092, 2022837584, 1607244650, 2118541908, 2366882550, 3635996816, 972512814, 3283088770, 1568718495, 3499326569, 3576539503, 621982671, 2895723464, 410887952, 2623762152, 1002142683, 645401037, 1494807662, 2595684844, 1335535747, 2507040230, 4293295786, 3167684641, 367585007, 3885750714, 1865862730, 2668221674, 2960971305, 2763173681, 1059270954, 2777952454, 2724642869, 1320957812, 2194319100, 2429595872, 2815956275, 77089521, 3973773121, 3444575871, 2448830231, 1305906550, 4021308739, 2857194700, 2516901860, 3518358430, 1787304780, 740276417, 1699839814, 1592394909, 2352307457, 2272556026, 188821243, 1729977011, 3687994002, 274084841, 3594982253, 3613494426, 2701949495, 4162096729, 322734571, 2837966542, 1640576439, 484830689, 1202797690, 3537852828, 4067639125, 349075736, 3342319475, 4157467219, 4255800159, 1030690015, 1155237496, 2951971274, 1757691577, 607398968, 2738905026, 499347990, 3794078908, 1011452712, 227885567, 2818666809, 213114376, 3034881240, 1455525988, 3414450555, 850817237, 1817998408, 3092726480],
+					E = [0, 235474187, 470948374, 303765277, 941896748, 908933415, 607530554, 708780849, 1883793496, 2118214995, 1817866830, 1649639237, 1215061108, 1181045119, 1417561698, 1517767529, 3767586992, 4003061179, 4236429990, 4069246893, 3635733660, 3602770327, 3299278474, 3400528769, 2430122216, 2664543715, 2362090238, 2193862645, 2835123396, 2801107407, 3035535058, 3135740889, 3678124923, 3576870512, 3341394285, 3374361702, 3810496343, 3977675356, 4279080257, 4043610186, 2876494627, 2776292904, 3076639029, 3110650942, 2472011535, 2640243204, 2403728665, 2169303058, 1001089995, 899835584, 666464733, 699432150, 59727847, 226906860, 530400753, 294930682, 1273168787, 1172967064, 1475418501, 1509430414, 1942435775, 2110667444, 1876241833, 1641816226, 2910219766, 2743034109, 2976151520, 3211623147, 2505202138, 2606453969, 2302690252, 2269728455, 3711829422, 3543599269, 3240894392, 3475313331, 3843699074, 3943906441, 4178062228, 4144047775, 1306967366, 1139781709, 1374988112, 1610459739, 1975683434, 2076935265, 1775276924, 1742315127, 1034867998, 866637845, 566021896, 800440835, 92987698, 193195065, 429456164, 395441711, 1984812685, 2017778566, 1784663195, 1683407248, 1315562145, 1080094634, 1383856311, 1551037884, 101039829, 135050206, 437757123, 337553864, 1042385657, 807962610, 573804783, 742039012, 2531067453, 2564033334, 2328828971, 2227573024, 2935566865, 2700099354, 3001755655, 3168937228, 3868552805, 3902563182, 4203181171, 4102977912, 3736164937, 3501741890, 3265478751, 3433712980, 1106041591, 1340463100, 1576976609, 1408749034, 2043211483, 2009195472, 1708848333, 1809054150, 832877231, 1068351396, 766945465, 599762354, 159417987, 126454664, 361929877, 463180190, 2709260871, 2943682380, 3178106961, 3009879386, 2572697195, 2538681184, 2236228733, 2336434550, 3509871135, 3745345300, 3441850377, 3274667266, 3910161971, 3877198648, 4110568485, 4211818798, 2597806476, 2497604743, 2261089178, 2295101073, 2733856160, 2902087851, 3202437046, 2968011453, 3936291284, 3835036895, 4136440770, 4169408201, 3535486456, 3702665459, 3467192302, 3231722213, 2051518780, 1951317047, 1716890410, 1750902305, 1113818384, 1282050075, 1584504582, 1350078989, 168810852, 67556463, 371049330, 404016761, 841739592, 1008918595, 775550814, 540080725, 3969562369, 3801332234, 4035489047, 4269907996, 3569255213, 3669462566, 3366754619, 3332740144, 2631065433, 2463879762, 2160117071, 2395588676, 2767645557, 2868897406, 3102011747, 3069049960, 202008497, 33778362, 270040487, 504459436, 875451293, 975658646, 675039627, 641025152, 2084704233, 1917518562, 1615861247, 1851332852, 1147550661, 1248802510, 1484005843, 1451044056, 933301370, 967311729, 733156972, 632953703, 260388950, 25965917, 328671808, 496906059, 1206477858, 1239443753, 1543208500, 1441952575, 2144161806, 1908694277, 1675577880, 1842759443, 3610369226, 3644379585, 3408119516, 3307916247, 4011190502, 3776767469, 4077384432, 4245618683, 2809771154, 2842737049, 3144396420, 3043140495, 2673705150, 2438237621, 2203032232, 2370213795],
+					N = [0, 185469197, 370938394, 487725847, 741876788, 657861945, 975451694, 824852259, 1483753576, 1400783205, 1315723890, 1164071807, 1950903388, 2135319889, 1649704518, 1767536459, 2967507152, 3152976349, 2801566410, 2918353863, 2631447780, 2547432937, 2328143614, 2177544179, 3901806776, 3818836405, 4270639778, 4118987695, 3299409036, 3483825537, 3535072918, 3652904859, 2077965243, 1893020342, 1841768865, 1724457132, 1474502543, 1559041666, 1107234197, 1257309336, 598438867, 681933534, 901210569, 1052338372, 261314535, 77422314, 428819965, 310463728, 3409685355, 3224740454, 3710368113, 3593056380, 3875770207, 3960309330, 4045380933, 4195456072, 2471224067, 2554718734, 2237133081, 2388260884, 3212035895, 3028143674, 2842678573, 2724322336, 4138563181, 4255350624, 3769721975, 3955191162, 3667219033, 3516619604, 3431546947, 3347532110, 2933734917, 2782082824, 3099667487, 3016697106, 2196052529, 2313884476, 2499348523, 2683765030, 1179510461, 1296297904, 1347548327, 1533017514, 1786102409, 1635502980, 2087309459, 2003294622, 507358933, 355706840, 136428751, 53458370, 839224033, 957055980, 605657339, 790073846, 2373340630, 2256028891, 2607439820, 2422494913, 2706270690, 2856345839, 3075636216, 3160175349, 3573941694, 3725069491, 3273267108, 3356761769, 4181598602, 4063242375, 4011996048, 3828103837, 1033297158, 915985419, 730517276, 545572369, 296679730, 446754879, 129166120, 213705253, 1709610350, 1860738147, 1945798516, 2029293177, 1239331162, 1120974935, 1606591296, 1422699085, 4148292826, 4233094615, 3781033664, 3931371469, 3682191598, 3497509347, 3446004468, 3328955385, 2939266226, 2755636671, 3106780840, 2988687269, 2198438022, 2282195339, 2501218972, 2652609425, 1201765386, 1286567175, 1371368976, 1521706781, 1805211710, 1620529459, 2105887268, 1988838185, 533804130, 350174575, 164439672, 46346101, 870912086, 954669403, 636813900, 788204353, 2358957921, 2274680428, 2592523643, 2441661558, 2695033685, 2880240216, 3065962831, 3182487618, 3572145929, 3756299780, 3270937875, 3388507166, 4174560061, 4091327024, 4006521127, 3854606378, 1014646705, 930369212, 711349675, 560487590, 272786309, 457992840, 106852767, 223377554, 1678381017, 1862534868, 1914052035, 2031621326, 1211247597, 1128014560, 1580087799, 1428173050, 32283319, 182621114, 401639597, 486441376, 768917123, 651868046, 1003007129, 818324884, 1503449823, 1385356242, 1333838021, 1150208456, 1973745387, 2125135846, 1673061617, 1756818940, 2970356327, 3120694122, 2802849917, 2887651696, 2637442643, 2520393566, 2334669897, 2149987652, 3917234703, 3799141122, 4284502037, 4100872472, 3309594171, 3460984630, 3545789473, 3629546796, 2050466060, 1899603969, 1814803222, 1730525723, 1443857720, 1560382517, 1075025698, 1260232239, 575138148, 692707433, 878443390, 1062597235, 243256656, 91341917, 409198410, 325965383, 3403100636, 3252238545, 3704300486, 3620022987, 3874428392, 3990953189, 4042459122, 4227665663, 2460449204, 2578018489, 2226875310, 2411029155, 3198115200, 3046200461, 2827177882, 2743944855],
+					A = [0, 218828297, 437656594, 387781147, 875313188, 958871085, 775562294, 590424639, 1750626376, 1699970625, 1917742170, 2135253587, 1551124588, 1367295589, 1180849278, 1265195639, 3501252752, 3720081049, 3399941250, 3350065803, 3835484340, 3919042237, 4270507174, 4085369519, 3102249176, 3051593425, 2734591178, 2952102595, 2361698556, 2177869557, 2530391278, 2614737639, 3145456443, 3060847922, 2708326185, 2892417312, 2404901663, 2187128086, 2504130317, 2555048196, 3542330227, 3727205754, 3375740769, 3292445032, 3876557655, 3926170974, 4246310725, 4027744588, 1808481195, 1723872674, 1910319033, 2094410160, 1608975247, 1391201670, 1173430173, 1224348052, 59984867, 244860394, 428169201, 344873464, 935293895, 984907214, 766078933, 547512796, 1844882806, 1627235199, 2011214180, 2062270317, 1507497298, 1423022939, 1137477952, 1321699145, 95345982, 145085239, 532201772, 313773861, 830661914, 1015671571, 731183368, 648017665, 3175501286, 2957853679, 2807058932, 2858115069, 2305455554, 2220981195, 2474404304, 2658625497, 3575528878, 3625268135, 3473416636, 3254988725, 3778151818, 3963161475, 4213447064, 4130281361, 3599595085, 3683022916, 3432737375, 3247465558, 3802222185, 4020912224, 4172763771, 4122762354, 3201631749, 3017672716, 2764249623, 2848461854, 2331590177, 2280796200, 2431590963, 2648976442, 104699613, 188127444, 472615631, 287343814, 840019705, 1058709744, 671593195, 621591778, 1852171925, 1668212892, 1953757831, 2037970062, 1514790577, 1463996600, 1080017571, 1297403050, 3673637356, 3623636965, 3235995134, 3454686199, 4007360968, 3822090177, 4107101658, 4190530515, 2997825956, 3215212461, 2830708150, 2779915199, 2256734592, 2340947849, 2627016082, 2443058075, 172466556, 122466165, 273792366, 492483431, 1047239e3, 861968209, 612205898, 695634755, 1646252340, 1863638845, 2013908262, 1963115311, 1446242576, 1530455833, 1277555970, 1093597963, 1636604631, 1820824798, 2073724613, 1989249228, 1436590835, 1487645946, 1337376481, 1119727848, 164948639, 81781910, 331544205, 516552836, 1039717051, 821288114, 669961897, 719700128, 2973530695, 3157750862, 2871682645, 2787207260, 2232435299, 2283490410, 2667994737, 2450346104, 3647212047, 3564045318, 3279033885, 3464042516, 3980931627, 3762502690, 4150144569, 4199882800, 3070356634, 3121275539, 2904027272, 2686254721, 2200818878, 2384911031, 2570832044, 2486224549, 3747192018, 3528626907, 3310321856, 3359936201, 3950355702, 3867060991, 4049844452, 4234721005, 1739656202, 1790575107, 2108100632, 1890328081, 1402811438, 1586903591, 1233856572, 1149249077, 266959938, 48394827, 369057872, 418672217, 1002783846, 919489135, 567498868, 752375421, 209336225, 24197544, 376187827, 459744698, 945164165, 895287692, 574624663, 793451934, 1679968233, 1764313568, 2117360635, 1933530610, 1343127501, 1560637892, 1243112415, 1192455638, 3704280881, 3519142200, 3336358691, 3419915562, 3907448597, 3857572124, 4075877127, 4294704398, 3029510009, 3113855344, 2927934315, 2744104290, 2159976285, 2377486676, 2594734927, 2544078150],
+					x = [0, 151849742, 303699484, 454499602, 607398968, 758720310, 908999204, 1059270954, 1214797936, 1097159550, 1517440620, 1400849762, 1817998408, 1699839814, 2118541908, 2001430874, 2429595872, 2581445614, 2194319100, 2345119218, 3034881240, 3186202582, 2801699524, 2951971274, 3635996816, 3518358430, 3399679628, 3283088770, 4237083816, 4118925222, 4002861748, 3885750714, 1002142683, 850817237, 698445255, 548169417, 529487843, 377642221, 227885567, 77089521, 1943217067, 2061379749, 1640576439, 1757691577, 1474760595, 1592394909, 1174215055, 1290801793, 2875968315, 2724642869, 3111247143, 2960971305, 2405426947, 2253581325, 2638606623, 2487810577, 3808662347, 3926825029, 4044981591, 4162096729, 3342319475, 3459953789, 3576539503, 3693126241, 1986918061, 2137062819, 1685577905, 1836772287, 1381620373, 1532285339, 1078185097, 1229899655, 1040559837, 923313619, 740276417, 621982671, 439452389, 322734571, 137073913, 19308535, 3871163981, 4021308739, 4104605777, 4255800159, 3263785589, 3414450555, 3499326569, 3651041127, 2933202493, 2815956275, 3167684641, 3049390895, 2330014213, 2213296395, 2566595609, 2448830231, 1305906550, 1155237496, 1607244650, 1455525988, 1776460110, 1626319424, 2079897426, 1928707164, 96392454, 213114376, 396673818, 514443284, 562755902, 679998e3, 865136418, 983426092, 3708173718, 3557504664, 3474729866, 3323011204, 4180808110, 4030667424, 3945269170, 3794078908, 2507040230, 2623762152, 2272556026, 2390325492, 2975484382, 3092726480, 2738905026, 2857194700, 3973773121, 3856137295, 4274053469, 4157467219, 3371096953, 3252932727, 3673476453, 3556361835, 2763173681, 2915017791, 3064510765, 3215307299, 2156299017, 2307622919, 2459735317, 2610011675, 2081048481, 1963412655, 1846563261, 1729977011, 1480485785, 1362321559, 1243905413, 1126790795, 878845905, 1030690015, 645401037, 796197571, 274084841, 425408743, 38544885, 188821243, 3613494426, 3731654548, 3313212038, 3430322568, 4082475170, 4200115116, 3780097726, 3896688048, 2668221674, 2516901860, 2366882550, 2216610296, 3141400786, 2989552604, 2837966542, 2687165888, 1202797690, 1320957812, 1437280870, 1554391400, 1669664834, 1787304780, 1906247262, 2022837584, 265905162, 114585348, 499347990, 349075736, 736970802, 585122620, 972512814, 821712160, 2595684844, 2478443234, 2293045232, 2174754046, 3196267988, 3079546586, 2895723464, 2777952454, 3537852828, 3687994002, 3234156416, 3385345166, 4142626212, 4293295786, 3841024952, 3992742070, 174567692, 57326082, 410887952, 292596766, 777231668, 660510266, 1011452712, 893681702, 1108339068, 1258480242, 1343618912, 1494807662, 1715193156, 1865862730, 1948373848, 2100090966, 2701949495, 2818666809, 3004591147, 3122358053, 2235061775, 2352307457, 2535604243, 2653899549, 3915653703, 3764988233, 4219352155, 4067639125, 3444575871, 3294430577, 3746175075, 3594982253, 836553431, 953270745, 600235211, 718002117, 367585007, 484830689, 133361907, 251657213, 2041877159, 1891211689, 1806599355, 1654886325, 1568718495, 1418573201, 1335535747, 1184342925];
 
-			function a(e) {
-				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
-			}
-			a.prototype.initialize = function(e) {
-				this.degree = e, this.genPoly = n.generateECPolynomial(this.degree)
-			}, a.prototype.encode = function(e) {
-				if (!this.genPoly) throw new Error("Encoder not initialized");
-				var t = o.alloc(this.degree),
-					r = i.concat([e, t], e.length + this.degree),
-					a = n.mod(r, this.genPoly),
-					s = this.degree - a.length;
-				if (s > 0) {
-					var u = o.alloc(this.degree);
-					return a.copy(u, s), u
+				function I(e) {
+					for (var r = [], t = 0; t < e.length; t += 4) r.push(e[t] << 24 | e[t + 1] << 16 | e[t + 2] << 8 | e[t + 3]);
+					return r
 				}
-				return a
-			}, e.exports = a
+				var C = function(e) {
+					if (!(this instanceof C)) throw Error("AES must be instanitated with `new`");
+					Object.defineProperty(this, "key", {
+						value: i(e, !0)
+					}), this._prepare()
+				};
+				C.prototype._prepare = function() {
+					var e = h[this.key.length];
+					if (null == e) throw new Error("invalid key size (must be 16, 24 or 32 bytes)");
+					this._Ke = [], this._Kd = [];
+					for (var r = 0; r <= e; r++) this._Ke.push([0, 0, 0, 0]), this._Kd.push([0, 0, 0, 0]);
+					var t, n = 4 * (e + 1),
+						i = this.key.length / 4,
+						o = I(this.key);
+					for (r = 0; r < i; r++) t = r >> 2, this._Ke[t][r % 4] = o[r], this._Kd[e - t][r % 4] = o[r];
+					for (var s, a = 0, u = i; u < n;) {
+						if (s = o[i - 1], o[0] ^= c[s >> 16 & 255] << 24 ^ c[s >> 8 & 255] << 16 ^ c[255 & s] << 8 ^ c[s >> 24 & 255] ^ l[a] << 24, a += 1, 8 != i)
+							for (r = 1; r < i; r++) o[r] ^= o[r - 1];
+						else {
+							for (r = 1; r < i / 2; r++) o[r] ^= o[r - 1];
+							s = o[i / 2 - 1], o[i / 2] ^= c[255 & s] ^ c[s >> 8 & 255] << 8 ^ c[s >> 16 & 255] << 16 ^ c[s >> 24 & 255] << 24;
+							for (r = i / 2 + 1; r < i; r++) o[r] ^= o[r - 1]
+						}
+						for (r = 0; r < i && u < n;) f = u >> 2, p = u % 4, this._Ke[f][p] = o[r], this._Kd[e - f][p] = o[r++], u++
+					}
+					for (var f = 1; f < e; f++)
+						for (var p = 0; p < 4; p++) s = this._Kd[f][p], this._Kd[f][p] = E[s >> 24 & 255] ^ N[s >> 16 & 255] ^ A[s >> 8 & 255] ^ x[255 & s]
+				}, C.prototype.encrypt = function(e) {
+					if (16 != e.length) throw new Error("invalid plaintext size (must be 16 bytes)");
+					for (var r = this._Ke.length - 1, t = [0, 0, 0, 0], n = I(e), i = 0; i < 4; i++) n[i] ^= this._Ke[0][i];
+					for (var s = 1; s < r; s++) {
+						for (i = 0; i < 4; i++) t[i] = d[n[i] >> 24 & 255] ^ v[n[(i + 1) % 4] >> 16 & 255] ^ y[n[(i + 2) % 4] >> 8 & 255] ^ g[255 & n[(i + 3) % 4]] ^ this._Ke[s][i];
+						n = t.slice()
+					}
+					var a, u = o(16);
+					for (i = 0; i < 4; i++) a = this._Ke[r][i], u[4 * i] = 255 & (c[n[i] >> 24 & 255] ^ a >> 24), u[4 * i + 1] = 255 & (c[n[(i + 1) % 4] >> 16 & 255] ^ a >> 16), u[4 * i + 2] = 255 & (c[n[(i + 2) % 4] >> 8 & 255] ^ a >> 8), u[4 * i + 3] = 255 & (c[255 & n[(i + 3) % 4]] ^ a);
+					return u
+				}, C.prototype.decrypt = function(e) {
+					if (16 != e.length) throw new Error("invalid ciphertext size (must be 16 bytes)");
+					for (var r = this._Kd.length - 1, t = [0, 0, 0, 0], n = I(e), i = 0; i < 4; i++) n[i] ^= this._Kd[0][i];
+					for (var s = 1; s < r; s++) {
+						for (i = 0; i < 4; i++) t[i] = _[n[i] >> 24 & 255] ^ b[n[(i + 3) % 4] >> 16 & 255] ^ w[n[(i + 2) % 4] >> 8 & 255] ^ m[255 & n[(i + 1) % 4]] ^ this._Kd[s][i];
+						n = t.slice()
+					}
+					var a, u = o(16);
+					for (i = 0; i < 4; i++) a = this._Kd[r][i], u[4 * i] = 255 & (p[n[i] >> 24 & 255] ^ a >> 24), u[4 * i + 1] = 255 & (p[n[(i + 3) % 4] >> 16 & 255] ^ a >> 16), u[4 * i + 2] = 255 & (p[n[(i + 2) % 4] >> 8 & 255] ^ a >> 8), u[4 * i + 3] = 255 & (p[255 & n[(i + 1) % 4]] ^ a);
+					return u
+				};
+				var S = function(e) {
+					if (!(this instanceof S)) throw Error("AES must be instanitated with `new`");
+					this.description = "Electronic Code Block", this.name = "ecb", this._aes = new C(e)
+				};
+				S.prototype.encrypt = function(e) {
+					if ((e = i(e)).length % 16 != 0) throw new Error("invalid plaintext size (must be multiple of 16 bytes)");
+					for (var r = o(e.length), t = o(16), n = 0; n < e.length; n += 16) s(e, t, 0, n, n + 16), s(t = this._aes.encrypt(t), r, n);
+					return r
+				}, S.prototype.decrypt = function(e) {
+					if ((e = i(e)).length % 16 != 0) throw new Error("invalid ciphertext size (must be multiple of 16 bytes)");
+					for (var r = o(e.length), t = o(16), n = 0; n < e.length; n += 16) s(e, t, 0, n, n + 16), s(t = this._aes.decrypt(t), r, n);
+					return r
+				};
+				var U = function(e, r) {
+					if (!(this instanceof U)) throw Error("AES must be instanitated with `new`");
+					if (this.description = "Cipher Block Chaining", this.name = "cbc", r) {
+						if (16 != r.length) throw new Error("invalid initialation vector size (must be 16 bytes)")
+					} else r = o(16);
+					this._lastCipherblock = i(r, !0), this._aes = new C(e)
+				};
+				U.prototype.encrypt = function(e) {
+					if ((e = i(e)).length % 16 != 0) throw new Error("invalid plaintext size (must be multiple of 16 bytes)");
+					for (var r = o(e.length), t = o(16), n = 0; n < e.length; n += 16) {
+						s(e, t, 0, n, n + 16);
+						for (var a = 0; a < 16; a++) t[a] ^= this._lastCipherblock[a];
+						this._lastCipherblock = this._aes.encrypt(t), s(this._lastCipherblock, r, n)
+					}
+					return r
+				}, U.prototype.decrypt = function(e) {
+					if ((e = i(e)).length % 16 != 0) throw new Error("invalid ciphertext size (must be multiple of 16 bytes)");
+					for (var r = o(e.length), t = o(16), n = 0; n < e.length; n += 16) {
+						s(e, t, 0, n, n + 16), t = this._aes.decrypt(t);
+						for (var a = 0; a < 16; a++) r[n + a] = t[a] ^ this._lastCipherblock[a];
+						s(e, this._lastCipherblock, 0, n, n + 16)
+					}
+					return r
+				};
+				var R = function(e, r, t) {
+					if (!(this instanceof R)) throw Error("AES must be instanitated with `new`");
+					if (this.description = "Cipher Feedback", this.name = "cfb", r) {
+						if (16 != r.length) throw new Error("invalid initialation vector size (must be 16 size)")
+					} else r = o(16);
+					t || (t = 1), this.segmentSize = t, this._shiftRegister = i(r, !0), this._aes = new C(e)
+				};
+				R.prototype.encrypt = function(e) {
+					if (e.length % this.segmentSize != 0) throw new Error("invalid plaintext size (must be segmentSize bytes)");
+					for (var r, t = i(e, !0), n = 0; n < t.length; n += this.segmentSize) {
+						r = this._aes.encrypt(this._shiftRegister);
+						for (var o = 0; o < this.segmentSize; o++) t[n + o] ^= r[o];
+						s(this._shiftRegister, this._shiftRegister, 0, this.segmentSize), s(t, this._shiftRegister, 16 - this.segmentSize, n, n + this.segmentSize)
+					}
+					return t
+				}, R.prototype.decrypt = function(e) {
+					if (e.length % this.segmentSize != 0) throw new Error("invalid ciphertext size (must be segmentSize bytes)");
+					for (var r, t = i(e, !0), n = 0; n < t.length; n += this.segmentSize) {
+						r = this._aes.encrypt(this._shiftRegister);
+						for (var o = 0; o < this.segmentSize; o++) t[n + o] ^= r[o];
+						s(this._shiftRegister, this._shiftRegister, 0, this.segmentSize), s(e, this._shiftRegister, 16 - this.segmentSize, n, n + this.segmentSize)
+					}
+					return t
+				};
+				var O = function(e, r) {
+					if (!(this instanceof O)) throw Error("AES must be instanitated with `new`");
+					if (this.description = "Output Feedback", this.name = "ofb", r) {
+						if (16 != r.length) throw new Error("invalid initialation vector size (must be 16 bytes)")
+					} else r = o(16);
+					this._lastPrecipher = i(r, !0), this._lastPrecipherIndex = 16, this._aes = new C(e)
+				};
+				O.prototype.encrypt = function(e) {
+					for (var r = i(e, !0), t = 0; t < r.length; t++) 16 === this._lastPrecipherIndex && (this._lastPrecipher = this._aes.encrypt(this._lastPrecipher), this._lastPrecipherIndex = 0), r[t] ^= this._lastPrecipher[this._lastPrecipherIndex++];
+					return r
+				}, O.prototype.decrypt = O.prototype.encrypt;
+				var k = function(e) {
+					if (!(this instanceof k)) throw Error("Counter must be instanitated with `new`");
+					0 === e || e || (e = 1), "number" == typeof e ? (this._counter = o(16), this.setValue(e)) : this.setBytes(e)
+				};
+				k.prototype.setValue = function(e) {
+					if ("number" != typeof e || parseInt(e) != e) throw new Error("invalid counter value (must be an integer)");
+					for (var r = 15; r >= 0; --r) this._counter[r] = e % 256, e >>= 8
+				}, k.prototype.setBytes = function(e) {
+					if (16 != (e = i(e, !0)).length) throw new Error("invalid counter bytes size (must be 16 bytes)");
+					this._counter = e
+				}, k.prototype.increment = function() {
+					for (var e = 15; e >= 0; e--) {
+						if (255 !== this._counter[e]) {
+							this._counter[e]++;
+							break
+						}
+						this._counter[e] = 0
+					}
+				};
+				var j = function(e, r) {
+					if (!(this instanceof j)) throw Error("AES must be instanitated with `new`");
+					this.description = "Counter", this.name = "ctr", r instanceof k || (r = new k(r)), this._counter = r, this._remainingCounter = null, this._remainingCounterIndex = 16, this._aes = new C(e)
+				};
+				j.prototype.encrypt = function(e) {
+					for (var r = i(e, !0), t = 0; t < r.length; t++) 16 === this._remainingCounterIndex && (this._remainingCounter = this._aes.encrypt(this._counter._counter), this._remainingCounterIndex = 0, this._counter.increment()), r[t] ^= this._remainingCounter[this._remainingCounterIndex++];
+					return r
+				}, j.prototype.decrypt = j.prototype.encrypt;
+				var M = {
+					AES: C,
+					Counter: k,
+					ModeOfOperation: {
+						ecb: S,
+						cbc: U,
+						cfb: R,
+						ofb: O,
+						ctr: j
+					},
+					utils: {
+						hex: f,
+						utf8: u
+					},
+					padding: {
+						pkcs7: {
+							pad: function(e) {
+								var r = 16 - (e = i(e, !0)).length % 16,
+									t = o(e.length + r);
+								s(e, t);
+								for (var n = e.length; n < t.length; n++) t[n] = r;
+								return t
+							},
+							strip: function(e) {
+								if ((e = i(e, !0)).length < 16) throw new Error("PKCS#7 invalid length");
+								var r = e[e.length - 1];
+								if (r > 16) throw new Error("PKCS#7 padding byte out of range");
+								for (var t = e.length - r, n = 0; n < r; n++)
+									if (e[t + n] !== r) throw new Error("PKCS#7 invalid padding byte");
+								var a = o(t);
+								return s(e, a, 0, 0, t), a
+							}
+						}
+					},
+					_arrayTest: {
+						coerceArray: i,
+						createArray: o,
+						copyArray: s
+					}
+				};
+				e.exports = M
+			}()
 		},
-		"./node_modules/qrcode/lib/core/regex.js": function(e, t) {
-			var r = "(?:[u3000-u303F]|[u3040-u309F]|[u30A0-u30FF]|[uFF00-uFFEF]|[u4E00-u9FAF]|[u2605-u2606]|[u2190-u2195]|u203B|[u2010u2015u2018u2019u2025u2026u201Cu201Du2225u2260]|[u0391-u0451]|[u00A7u00A8u00B1u00B4u00D7u00F7])+",
-				o = "(?:(?![A-Z0-9 $%*+\\-./:]|" + (r = r.replace(/u/g, "\\u")) + ")(?:.|[\r\n]))+";
-			t.KANJI = new RegExp(r, "g"), t.BYTE_KANJI = new RegExp("[^A-Z0-9 $%*+\\-./:]+", "g"), t.BYTE = new RegExp(o, "g"), t.NUMERIC = new RegExp("[0-9]+", "g"), t.ALPHANUMERIC = new RegExp("[A-Z $%*+\\-./:]+", "g");
-			var n = new RegExp("^" + r + "$"),
-				i = new RegExp("^[0-9]+$"),
-				a = new RegExp("^[A-Z0-9 $%*+\\-./:]+$");
-			t.testKanji = function(e) {
-				return n.test(e)
-			}, t.testNumeric = function(e) {
-				return i.test(e)
-			}, t.testAlphanumeric = function(e) {
-				return a.test(e)
+		"./node_modules/ethers/_version.js": function(e, r, t) {
+			"use strict";
+			Object.defineProperty(r, "__esModule", {
+				value: !0
+			}), r.version = "4.0.46"
+		},
+		"./node_modules/ethers/constants.js": function(e, r, t) {
+			"use strict";
+			Object.defineProperty(r, "__esModule", {
+				value: !0
+			});
+			var n = t("./node_modules/ethers/utils/bignumber.js");
+			r.AddressZero = "0x0000000000000000000000000000000000000000";
+			r.HashZero = "0x0000000000000000000000000000000000000000000000000000000000000000";
+			r.EtherSymbol = "Ξ";
+			var i = n.bigNumberify(-1);
+			r.NegativeOne = i;
+			var o = n.bigNumberify(0);
+			r.Zero = o;
+			var s = n.bigNumberify(1);
+			r.One = s;
+			var a = n.bigNumberify(2);
+			r.Two = a;
+			var u = n.bigNumberify("1000000000000000000");
+			r.WeiPerEther = u;
+			var f = n.bigNumberify("0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+			r.MaxUint256 = f
+		},
+		"./node_modules/ethers/errors.js": function(e, r, t) {
+			"use strict";
+			Object.defineProperty(r, "__esModule", {
+				value: !0
+			});
+			var n = t("./node_modules/ethers/_version.js");
+			r.UNKNOWN_ERROR = "UNKNOWN_ERROR", r.NOT_IMPLEMENTED = "NOT_IMPLEMENTED", r.MISSING_NEW = "MISSING_NEW", r.CALL_EXCEPTION = "CALL_EXCEPTION", r.INVALID_ARGUMENT = "INVALID_ARGUMENT", r.MISSING_ARGUMENT = "MISSING_ARGUMENT", r.UNEXPECTED_ARGUMENT = "UNEXPECTED_ARGUMENT", r.NUMERIC_FAULT = "NUMERIC_FAULT", r.INSUFFICIENT_FUNDS = "INSUFFICIENT_FUNDS", r.NONCE_EXPIRED = "NONCE_EXPIRED", r.REPLACEMENT_UNDERPRICED = "REPLACEMENT_UNDERPRICED", r.UNSUPPORTED_OPERATION = "UNSUPPORTED_OPERATION";
+			var i = !1,
+				o = !1;
+
+			function s(e, t, i) {
+				if (o) throw new Error("unknown error");
+				t || (t = r.UNKNOWN_ERROR), i || (i = {});
+				var s = [];
+				Object.keys(i).forEach((function(e) {
+					try {
+						s.push(e + "=" + JSON.stringify(i[e]))
+					} catch (u) {
+						s.push(e + "=" + JSON.stringify(i[e].toString()))
+					}
+				})), s.push("version=" + n.version);
+				var a = e;
+				s.length && (e += " (" + s.join(", ") + ")");
+				var u = new Error(e);
+				throw u.reason = a, u.code = t, Object.keys(i).forEach((function(e) {
+					u[e] = i[e]
+				})), u
+			}
+			r.throwError = s, r.checkNew = function(e, t) {
+				e instanceof t || s("missing new", r.MISSING_NEW, {
+					name: t.name
+				})
+			}, r.checkArgumentCount = function(e, t, n) {
+				n || (n = ""), e < t && s("missing argument" + n, r.MISSING_ARGUMENT, {
+					count: e,
+					expectedCount: t
+				}), e > t && s("too many arguments" + n, r.UNEXPECTED_ARGUMENT, {
+					count: e,
+					expectedCount: t
+				})
+			}, r.setCensorship = function(e, t) {
+				i && s("error censorship permanent", r.UNSUPPORTED_OPERATION, {
+					operation: "setCensorship"
+				}), o = !!e, i = !!t
+			}, r.checkNormalize = function() {
+				try {
+					if (["NFD", "NFC", "NFKD", "NFKC"].forEach((function(e) {
+							try {
+								"test".normalize(e)
+							} catch (r) {
+								throw new Error("missing " + e)
+							}
+						})), String.fromCharCode(233).normalize("NFD") !== String.fromCharCode(101, 769)) throw new Error("broken implementation")
+				} catch (e) {
+					s("platform missing String.prototype.normalize", r.UNSUPPORTED_OPERATION, {
+						operation: "String.prototype.normalize",
+						form: e.message
+					})
+				}
+			};
+			var a = {
+					debug: 1,
+					default: 2,
+					info: 2,
+					warn: 3,
+					error: 4,
+					off: 5
+				},
+				u = a.default;
+
+			function f(e, r) {
+				u > a[e] || console.log.apply(console, r)
+			}
+
+			function h() {
+				for (var e = [], r = 0; r < arguments.length; r++) e[r] = arguments[r];
+				f("warn", e)
+			}
+			r.setLogLevel = function(e) {
+				var r = a[e];
+				null != r ? u = r : h("invliad log level - " + e)
+			}, r.warn = h, r.info = function() {
+				for (var e = [], r = 0; r < arguments.length; r++) e[r] = arguments[r];
+				f("info", e)
 			}
 		},
-		"./node_modules/qrcode/lib/core/segments.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/mode.js"),
-				n = r("./node_modules/qrcode/lib/core/numeric-data.js"),
-				i = r("./node_modules/qrcode/lib/core/alphanumeric-data.js"),
-				a = r("./node_modules/qrcode/lib/core/byte-data.js"),
-				s = r("./node_modules/qrcode/lib/core/kanji-data.js"),
-				u = r("./node_modules/qrcode/lib/core/regex.js"),
-				d = r("./node_modules/qrcode/lib/core/utils.js"),
-				l = r("./node_modules/dijkstrajs/dijkstra.js");
+		"./node_modules/ethers/node_modules/js-sha3/src/sha3.js": function(e, r, t) {
+			(function(r, t) {
+				! function() {
+					"use strict";
+					var n = "object" == typeof window ? window : {};
+					!n.JS_SHA3_NO_NODE_JS && "object" == typeof r && r.versions && r.versions.node && (n = t);
+					for (var i = !n.JS_SHA3_NO_COMMON_JS && "object" == typeof e && e.exports, o = "0123456789abcdef".split(""), s = [0, 8, 16, 24], a = [1, 0, 32898, 0, 32906, 2147483648, 2147516416, 2147483648, 32907, 0, 2147483649, 0, 2147516545, 2147483648, 32777, 2147483648, 138, 0, 136, 0, 2147516425, 0, 2147483658, 0, 2147516555, 0, 139, 2147483648, 32905, 2147483648, 32771, 2147483648, 32770, 2147483648, 128, 2147483648, 32778, 0, 2147483658, 2147483648, 2147516545, 2147483648, 32896, 2147483648, 2147483649, 0, 2147516424, 2147483648], u = [224, 256, 384, 512], f = ["hex", "buffer", "arrayBuffer", "array"], h = function(e, r, t) {
+							return function(n) {
+								return new m(e, r, e).update(n)[t]()
+							}
+						}, l = function(e, r, t) {
+							return function(n, i) {
+								return new m(e, r, i).update(n)[t]()
+							}
+						}, c = function(e, r) {
+							var t = h(e, r, "hex");
+							t.create = function() {
+								return new m(e, r, e)
+							}, t.update = function(e) {
+								return t.create().update(e)
+							};
+							for (var n = 0; n < f.length; ++n) {
+								var i = f[n];
+								t[i] = h(e, r, i)
+							}
+							return t
+						}, p = [{
+							name: "keccak",
+							padding: [1, 256, 65536, 16777216],
+							bits: u,
+							createMethod: c
+						}, {
+							name: "sha3",
+							padding: [6, 1536, 393216, 100663296],
+							bits: u,
+							createMethod: c
+						}, {
+							name: "shake",
+							padding: [31, 7936, 2031616, 520093696],
+							bits: [128, 256],
+							createMethod: function(e, r) {
+								var t = l(e, r, "hex");
+								t.create = function(t) {
+									return new m(e, r, t)
+								}, t.update = function(e, r) {
+									return t.create(r).update(e)
+								};
+								for (var n = 0; n < f.length; ++n) {
+									var i = f[n];
+									t[i] = l(e, r, i)
+								}
+								return t
+							}
+						}], d = {}, v = [], y = 0; y < p.length; ++y)
+						for (var g = p[y], _ = g.bits, b = 0; b < _.length; ++b) {
+							var w = g.name + "_" + _[b];
+							v.push(w), d[w] = g.createMethod(_[b], g.padding)
+						}
 
-			function c(e) {
-				return unescape(encodeURIComponent(e)).length
-			}
-
-			function f(e, t, r) {
-				for (var o, n = []; null !== (o = e.exec(r));) n.push({
-					data: o[0],
-					index: o.index,
-					mode: t,
-					length: o[0].length
-				});
-				return n
-			}
+					function m(e, r, t) {
+						this.blocks = [], this.s = [], this.padding = r, this.outputBits = t, this.reset = !0, this.block = 0, this.start = 0, this.blockCount = 1600 - (e << 1) >> 5, this.byteCount = this.blockCount << 2, this.outputBlocks = t >> 5, this.extraBytes = (31 & t) >> 3;
+						for (var n = 0; n < 50; ++n) this.s[n] = 0
+					}
+					m.prototype.update = function(e) {
+						var r = "string" != typeof e;
+						r && e.constructor === ArrayBuffer && (e = new Uint8Array(e));
+						for (var t, n, i = e.length, o = this.blocks, a = this.byteCount, u = this.blockCount, f = 0, h = this.s; f < i;) {
+							if (this.reset)
+								for (this.reset = !1, o[0] = this.block, t = 1; t < u + 1; ++t) o[t] = 0;
+							if (r)
+								for (t = this.start; f < i && t < a; ++f) o[t >> 2] |= e[f] << s[3 & t++];
+							else
+								for (t = this.start; f < i && t < a; ++f)(n = e.charCodeAt(f)) < 128 ? o[t >> 2] |= n << s[3 & t++] : n < 2048 ? (o[t >> 2] |= (192 | n >> 6) << s[3 & t++], o[t >> 2] |= (128 | 63 & n) << s[3 & t++]) : n < 55296 || n >= 57344 ? (o[t >> 2] |= (224 | n >> 12) << s[3 & t++], o[t >> 2] |= (128 | n >> 6 & 63) << s[3 & t++], o[t >> 2] |= (128 | 63 & n) << s[3 & t++]) : (n = 65536 + ((1023 & n) << 10 | 1023 & e.charCodeAt(++f)), o[t >> 2] |= (240 | n >> 18) << s[3 & t++], o[t >> 2] |= (128 | n >> 12 & 63) << s[3 & t++], o[t >> 2] |= (128 | n >> 6 & 63) << s[3 & t++], o[t >> 2] |= (128 | 63 & n) << s[3 & t++]);
+							if (this.lastByteIndex = t, t >= a) {
+								for (this.start = t - a, this.block = o[u], t = 0; t < u; ++t) h[t] ^= o[t];
+								E(h), this.reset = !0
+							} else this.start = t
+						}
+						return this
+					}, m.prototype.finalize = function() {
+						var e = this.blocks,
+							r = this.lastByteIndex,
+							t = this.blockCount,
+							n = this.s;
+						if (e[r >> 2] |= this.padding[3 & r], this.lastByteIndex === this.byteCount)
+							for (e[0] = e[t], r = 1; r < t + 1; ++r) e[r] = 0;
+						for (e[t - 1] |= 2147483648, r = 0; r < t; ++r) n[r] ^= e[r];
+						E(n)
+					}, m.prototype.toString = m.prototype.hex = function() {
+						this.finalize();
+						for (var e, r = this.blockCount, t = this.s, n = this.outputBlocks, i = this.extraBytes, s = 0, a = 0, u = ""; a < n;) {
+							for (s = 0; s < r && a < n; ++s, ++a) e = t[s], u += o[e >> 4 & 15] + o[15 & e] + o[e >> 12 & 15] + o[e >> 8 & 15] + o[e >> 20 & 15] + o[e >> 16 & 15] + o[e >> 28 & 15] + o[e >> 24 & 15];
+							a % r == 0 && (E(t), s = 0)
+						}
+						return i && (e = t[s], i > 0 && (u += o[e >> 4 & 15] + o[15 & e]), i > 1 && (u += o[e >> 12 & 15] + o[e >> 8 & 15]), i > 2 && (u += o[e >> 20 & 15] + o[e >> 16 & 15])), u
+					}, m.prototype.arrayBuffer = function() {
+						this.finalize();
+						var e, r = this.blockCount,
+							t = this.s,
+							n = this.outputBlocks,
+							i = this.extraBytes,
+							o = 0,
+							s = 0,
+							a = this.outputBits >> 3;
+						e = i ? new ArrayBuffer(n + 1 << 2) : new ArrayBuffer(a);
+						for (var u = new Uint32Array(e); s < n;) {
+							for (o = 0; o < r && s < n; ++o, ++s) u[s] = t[o];
+							s % r == 0 && E(t)
+						}
+						return i && (u[o] = t[o], e = e.slice(0, a)), e
+					}, m.prototype.buffer = m.prototype.arrayBuffer, m.prototype.digest = m.prototype.array = function() {
+						this.finalize();
+						for (var e, r, t = this.blockCount, n = this.s, i = this.outputBlocks, o = this.extraBytes, s = 0, a = 0, u = []; a < i;) {
+							for (s = 0; s < t && a < i; ++s, ++a) e = a << 2, r = n[s], u[e] = 255 & r, u[e + 1] = r >> 8 & 255, u[e + 2] = r >> 16 & 255, u[e + 3] = r >> 24 & 255;
+							a % t == 0 && E(n)
+						}
+						return o && (e = a << 2, r = n[s], o > 0 && (u[e] = 255 & r), o > 1 && (u[e + 1] = r >> 8 & 255), o > 2 && (u[e + 2] = r >> 16 & 255)), u
+					};
+					var E = function(e) {
+						var r, t, n, i, o, s, u, f, h, l, c, p, d, v, y, g, _, b, w, m, E, N, A, x, I, C, S, U, R, O, k, j, M, T, P, D, B, z, L, F, K, G, V, H, Z, q, W, X, J, $, Q, Y, ee, re, te, ne, ie, oe, se, ae, ue, fe, he;
+						for (n = 0; n < 48; n += 2) i = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], o = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], s = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], u = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], f = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], h = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], l = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], c = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], r = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (s << 1 | u >>> 31), t = (d = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (u << 1 | s >>> 31), e[0] ^= r, e[1] ^= t, e[10] ^= r, e[11] ^= t, e[20] ^= r, e[21] ^= t, e[30] ^= r, e[31] ^= t, e[40] ^= r, e[41] ^= t, r = i ^ (f << 1 | h >>> 31), t = o ^ (h << 1 | f >>> 31), e[2] ^= r, e[3] ^= t, e[12] ^= r, e[13] ^= t, e[22] ^= r, e[23] ^= t, e[32] ^= r, e[33] ^= t, e[42] ^= r, e[43] ^= t, r = s ^ (l << 1 | c >>> 31), t = u ^ (c << 1 | l >>> 31), e[4] ^= r, e[5] ^= t, e[14] ^= r, e[15] ^= t, e[24] ^= r, e[25] ^= t, e[34] ^= r, e[35] ^= t, e[44] ^= r, e[45] ^= t, r = f ^ (p << 1 | d >>> 31), t = h ^ (d << 1 | p >>> 31), e[6] ^= r, e[7] ^= t, e[16] ^= r, e[17] ^= t, e[26] ^= r, e[27] ^= t, e[36] ^= r, e[37] ^= t, e[46] ^= r, e[47] ^= t, r = l ^ (i << 1 | o >>> 31), t = c ^ (o << 1 | i >>> 31), e[8] ^= r, e[9] ^= t, e[18] ^= r, e[19] ^= t, e[28] ^= r, e[29] ^= t, e[38] ^= r, e[39] ^= t, e[48] ^= r, e[49] ^= t, v = e[0], y = e[1], q = e[11] << 4 | e[10] >>> 28, W = e[10] << 4 | e[11] >>> 28, U = e[20] << 3 | e[21] >>> 29, R = e[21] << 3 | e[20] >>> 29, ae = e[31] << 9 | e[30] >>> 23, ue = e[30] << 9 | e[31] >>> 23, G = e[40] << 18 | e[41] >>> 14, V = e[41] << 18 | e[40] >>> 14, T = e[2] << 1 | e[3] >>> 31, P = e[3] << 1 | e[2] >>> 31, g = e[13] << 12 | e[12] >>> 20, _ = e[12] << 12 | e[13] >>> 20, X = e[22] << 10 | e[23] >>> 22, J = e[23] << 10 | e[22] >>> 22, O = e[33] << 13 | e[32] >>> 19, k = e[32] << 13 | e[33] >>> 19, fe = e[42] << 2 | e[43] >>> 30, he = e[43] << 2 | e[42] >>> 30, re = e[5] << 30 | e[4] >>> 2, te = e[4] << 30 | e[5] >>> 2, D = e[14] << 6 | e[15] >>> 26, B = e[15] << 6 | e[14] >>> 26, b = e[25] << 11 | e[24] >>> 21, w = e[24] << 11 | e[25] >>> 21, $ = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, j = e[45] << 29 | e[44] >>> 3, M = e[44] << 29 | e[45] >>> 3, x = e[6] << 28 | e[7] >>> 4, I = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, ie = e[16] << 23 | e[17] >>> 9, z = e[26] << 25 | e[27] >>> 7, L = e[27] << 25 | e[26] >>> 7, m = e[36] << 21 | e[37] >>> 11, E = e[37] << 21 | e[36] >>> 11, Y = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, H = e[8] << 27 | e[9] >>> 5, Z = e[9] << 27 | e[8] >>> 5, C = e[18] << 20 | e[19] >>> 12, S = e[19] << 20 | e[18] >>> 12, oe = e[29] << 7 | e[28] >>> 25, se = e[28] << 7 | e[29] >>> 25, F = e[38] << 8 | e[39] >>> 24, K = e[39] << 8 | e[38] >>> 24, N = e[48] << 14 | e[49] >>> 18, A = e[49] << 14 | e[48] >>> 18, e[0] = v ^ ~g & b, e[1] = y ^ ~_ & w, e[10] = x ^ ~C & U, e[11] = I ^ ~S & R, e[20] = T ^ ~D & z, e[21] = P ^ ~B & L, e[30] = H ^ ~q & X, e[31] = Z ^ ~W & J, e[40] = re ^ ~ne & oe, e[41] = te ^ ~ie & se, e[2] = g ^ ~b & m, e[3] = _ ^ ~w & E, e[12] = C ^ ~U & O, e[13] = S ^ ~R & k, e[22] = D ^ ~z & F, e[23] = B ^ ~L & K, e[32] = q ^ ~X & $, e[33] = W ^ ~J & Q, e[42] = ne ^ ~oe & ae, e[43] = ie ^ ~se & ue, e[4] = b ^ ~m & N, e[5] = w ^ ~E & A, e[14] = U ^ ~O & j, e[15] = R ^ ~k & M, e[24] = z ^ ~F & G, e[25] = L ^ ~K & V, e[34] = X ^ ~$ & Y, e[35] = J ^ ~Q & ee, e[44] = oe ^ ~ae & fe, e[45] = se ^ ~ue & he, e[6] = m ^ ~N & v, e[7] = E ^ ~A & y, e[16] = O ^ ~j & x, e[17] = k ^ ~M & I, e[26] = F ^ ~G & T, e[27] = K ^ ~V & P, e[36] = $ ^ ~Y & H, e[37] = Q ^ ~ee & Z, e[46] = ae ^ ~fe & re, e[47] = ue ^ ~he & te, e[8] = N ^ ~v & g, e[9] = A ^ ~y & _, e[18] = j ^ ~x & C, e[19] = M ^ ~I & S, e[28] = G ^ ~T & D, e[29] = V ^ ~P & B, e[38] = Y ^ ~H & q, e[39] = ee ^ ~Z & W, e[48] = fe ^ ~re & ne, e[49] = he ^ ~te & ie, e[0] ^= a[n], e[1] ^= a[n + 1]
+					};
+					if (i) e.exports = d;
+					else
+						for (y = 0; y < v.length; ++y) n[v[y]] = d[v[y]]
+				}()
+			}).call(this, t("./node_modules/process/browser.js"), t("./node_modules/webpack/buildin/global.js"))
+		},
+		"./node_modules/ethers/utils/bignumber.js": function(e, r, t) {
+			"use strict";
+			var n = this && this.__importDefault || function(e) {
+					return e && e.__esModule ? e : {
+						default: e
+					}
+				},
+				i = this && this.__importStar || function(e) {
+					if (e && e.__esModule) return e;
+					var r = {};
+					if (null != e)
+						for (var t in e) Object.hasOwnProperty.call(e, t) && (r[t] = e[t]);
+					return r.default = e, r
+				};
+			Object.defineProperty(r, "__esModule", {
+				value: !0
+			});
+			var o = n(t("./node_modules/bn.js/lib/bn.js")),
+				s = t("./node_modules/ethers/utils/bytes.js"),
+				a = t("./node_modules/ethers/utils/properties.js"),
+				u = i(t("./node_modules/ethers/errors.js")),
+				f = new o.default.BN(-1);
 
 			function h(e) {
-				var t, r, n = f(u.NUMERIC, o.NUMERIC, e),
-					i = f(u.ALPHANUMERIC, o.ALPHANUMERIC, e);
-				return d.isKanjiModeEnabled() ? (t = f(u.BYTE, o.BYTE, e), r = f(u.KANJI, o.KANJI, e)) : (t = f(u.BYTE_KANJI, o.BYTE, e), r = []), n.concat(i, t, r).sort((function(e, t) {
-					return e.index - t.index
-				})).map((function(e) {
-					return {
-						data: e.data,
-						mode: e.mode,
-						length: e.length
-					}
-				}))
+				var r = e.toString(16);
+				return "-" === r[0] ? r.length % 2 == 0 ? "-0x0" + r.substring(1) : "-0x" + r.substring(1) : r.length % 2 == 1 ? "0x0" + r : "0x" + r
 			}
 
-			function g(e, t) {
-				switch (t) {
-					case o.NUMERIC:
-						return n.getBitsLength(e);
-					case o.ALPHANUMERIC:
-						return i.getBitsLength(e);
-					case o.KANJI:
-						return s.getBitsLength(e);
-					case o.BYTE:
-						return a.getBitsLength(e)
-				}
-			}
-
-			function m(e, t) {
-				var r, u = o.getBestModeForData(e);
-				if ((r = o.from(t, u)) !== o.BYTE && r.bit < u.bit) throw new Error('"' + e + '" cannot be encoded with mode ' + o.toString(r) + ".\n Suggested mode is: " + o.toString(u));
-				switch (r !== o.KANJI || d.isKanjiModeEnabled() || (r = o.BYTE), r) {
-					case o.NUMERIC:
-						return new n(e);
-					case o.ALPHANUMERIC:
-						return new i(e);
-					case o.KANJI:
-						return new s(e);
-					case o.BYTE:
-						return new a(e)
-				}
-			}
-			t.fromArray = function(e) {
-				return e.reduce((function(e, t) {
-					return "string" == typeof t ? e.push(m(t, null)) : t.data && e.push(m(t.data, t.mode)), e
-				}), [])
-			}, t.fromString = function(e, r) {
-				for (var n = function(e, t) {
-						for (var r = {}, n = {
-								start: {}
-							}, i = ["start"], a = 0; a < e.length; a++) {
-							for (var s = e[a], u = [], d = 0; d < s.length; d++) {
-								var l = s[d],
-									c = "" + a + d;
-								u.push(c), r[c] = {
-									node: l,
-									lastCount: 0
-								}, n[c] = {};
-								for (var f = 0; f < i.length; f++) {
-									var h = i[f];
-									r[h] && r[h].node.mode === l.mode ? (n[h][c] = g(r[h].lastCount + l.length, l.mode) - g(r[h].lastCount, l.mode), r[h].lastCount += l.length) : (r[h] && (r[h].lastCount = l.length), n[h][c] = g(l.length, l.mode) + 4 + o.getCharCountIndicator(l.mode, t))
-								}
-							}
-							i = u
-						}
-						for (f = 0; f < i.length; f++) n[i[f]].end = 0;
-						return {
-							map: n,
-							table: r
-						}
-					}(function(e) {
-						for (var t = [], r = 0; r < e.length; r++) {
-							var n = e[r];
-							switch (n.mode) {
-								case o.NUMERIC:
-									t.push([n, {
-										data: n.data,
-										mode: o.ALPHANUMERIC,
-										length: n.length
-									}, {
-										data: n.data,
-										mode: o.BYTE,
-										length: n.length
-									}]);
-									break;
-								case o.ALPHANUMERIC:
-									t.push([n, {
-										data: n.data,
-										mode: o.BYTE,
-										length: n.length
-									}]);
-									break;
-								case o.KANJI:
-									t.push([n, {
-										data: n.data,
-										mode: o.BYTE,
-										length: c(n.data)
-									}]);
-									break;
-								case o.BYTE:
-									t.push([{
-										data: n.data,
-										mode: o.BYTE,
-										length: c(n.data)
-									}])
-							}
-						}
-						return t
-					}(h(e, d.isKanjiModeEnabled())), r), i = l.find_path(n.map, "start", "end"), a = [], s = 1; s < i.length - 1; s++) a.push(n.table[i[s]].node);
-				return t.fromArray(function(e) {
-					return e.reduce((function(e, t) {
-						var r = e.length - 1 >= 0 ? e[e.length - 1] : null;
-						return r && r.mode === t.mode ? (e[e.length - 1].data += t.data, e) : (e.push(t), e)
-					}), [])
-				}(a))
-			}, t.rawSplit = function(e) {
-				return t.fromArray(h(e, d.isKanjiModeEnabled()))
-			}
-		},
-		"./node_modules/qrcode/lib/core/utils.js": function(e, t) {
-			var r, o = [0, 26, 44, 70, 100, 134, 172, 196, 242, 292, 346, 404, 466, 532, 581, 655, 733, 815, 901, 991, 1085, 1156, 1258, 1364, 1474, 1588, 1706, 1828, 1921, 2051, 2185, 2323, 2465, 2611, 2761, 2876, 3034, 3196, 3362, 3532, 3706];
-			t.getSymbolSize = function(e) {
-				if (!e) throw new Error('"version" cannot be null or undefined');
-				if (e < 1 || e > 40) throw new Error('"version" should be in range from 1 to 40');
-				return 4 * e + 17
-			}, t.getSymbolTotalCodewords = function(e) {
-				return o[e]
-			}, t.getBCHDigit = function(e) {
-				for (var t = 0; 0 !== e;) t++, e >>>= 1;
-				return t
-			}, t.setToSJISFunction = function(e) {
-				if ("function" != typeof e) throw new Error('"toSJISFunc" is not a valid function.');
-				r = e
-			}, t.isKanjiModeEnabled = function() {
-				return void 0 !== r
-			}, t.toSJIS = function(e) {
-				return r(e)
-			}
-		},
-		"./node_modules/qrcode/lib/core/version-check.js": function(e, t) {
-			t.isValid = function(e) {
-				return !isNaN(e) && e >= 1 && e <= 40
-			}
-		},
-		"./node_modules/qrcode/lib/core/version.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/core/utils.js"),
-				n = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
-				i = r("./node_modules/qrcode/lib/core/error-correction-level.js"),
-				a = r("./node_modules/qrcode/lib/core/mode.js"),
-				s = r("./node_modules/qrcode/lib/core/version-check.js"),
-				u = r("./node_modules/qrcode/node_modules/isarray/index.js"),
-				d = o.getBCHDigit(7973);
-
-			function l(e, t) {
-				return a.getCharCountIndicator(e, t) + 4
-			}
-
-			function c(e, t) {
-				var r = 0;
-				return e.forEach((function(e) {
-					var o = l(e.mode, t);
-					r += o + e.getBitsLength()
-				})), r
-			}
-			t.from = function(e, t) {
-				return s.isValid(e) ? parseInt(e, 10) : t
-			}, t.getCapacity = function(e, t, r) {
-				if (!s.isValid(e)) throw new Error("Invalid QR Code version");
-				void 0 === r && (r = a.BYTE);
-				var i = 8 * (o.getSymbolTotalCodewords(e) - n.getTotalCodewordsCount(e, t));
-				if (r === a.MIXED) return i;
-				var u = i - l(r, e);
-				switch (r) {
-					case a.NUMERIC:
-						return Math.floor(u / 10 * 3);
-					case a.ALPHANUMERIC:
-						return Math.floor(u / 11 * 2);
-					case a.KANJI:
-						return Math.floor(u / 13);
-					case a.BYTE:
-					default:
-						return Math.floor(u / 8)
-				}
-			}, t.getBestVersionForData = function(e, r) {
-				var o, n = i.from(r, i.M);
-				if (u(e)) {
-					if (e.length > 1) return function(e, r) {
-						for (var o = 1; o <= 40; o++) {
-							if (c(e, o) <= t.getCapacity(o, r, a.MIXED)) return o
-						}
-					}(e, n);
-					if (0 === e.length) return 1;
-					o = e[0]
-				} else o = e;
-				return function(e, r, o) {
-					for (var n = 1; n <= 40; n++)
-						if (r <= t.getCapacity(n, o, e)) return n
-				}(o.mode, o.getLength(), n)
-			}, t.getEncodedBits = function(e) {
-				if (!s.isValid(e) || e < 7) throw new Error("Invalid QR Code version");
-				for (var t = e << 12; o.getBCHDigit(t) - d >= 0;) t ^= 7973 << o.getBCHDigit(t) - d;
-				return e << 12 | t
-			}
-		},
-		"./node_modules/qrcode/lib/renderer/canvas.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/renderer/utils.js");
-			t.render = function(e, t, r) {
-				var n = r,
-					i = t;
-				void 0 !== n || t && t.getContext || (n = t, t = void 0), t || (i = function() {
-					try {
-						return document.createElement("canvas")
-					} catch (e) {
-						throw new Error("You need to specify a canvas element")
-					}
-				}()), n = o.getOptions(n);
-				var a = o.getImageWidth(e.modules.size, n),
-					s = i.getContext("2d"),
-					u = s.createImageData(a, a);
-				return o.qrToImageData(u.data, e, n),
-					function(e, t, r) {
-						e.clearRect(0, 0, t.width, t.height), t.style || (t.style = {}), t.height = r, t.width = r, t.style.height = r + "px", t.style.width = r + "px"
-					}(s, i, a), s.putImageData(u, 0, 0), i
-			}, t.renderToDataURL = function(e, r, o) {
-				var n = o;
-				void 0 !== n || r && r.getContext || (n = r, r = void 0), n || (n = {});
-				var i = t.render(e, r, n),
-					a = n.type || "image/png",
-					s = n.rendererOpts || {};
-				return i.toDataURL(a, s.quality)
-			}
-		},
-		"./node_modules/qrcode/lib/renderer/svg-tag.js": function(e, t, r) {
-			var o = r("./node_modules/qrcode/lib/renderer/utils.js");
-
-			function n(e, t) {
-				var r = e.a / 255,
-					o = t + '="' + e.hex + '"';
-				return r < 1 ? o + " " + t + '-opacity="' + r.toFixed(2).slice(1) + '"' : o
-			}
-
-			function i(e, t, r) {
-				var o = e + t;
-				return void 0 !== r && (o += " " + r), o
-			}
-			t.render = function(e, t, r) {
-				var a = o.getOptions(t),
-					s = e.modules.size,
-					u = e.modules.data,
-					d = s + 2 * a.margin,
-					l = a.color.light.a ? "<path " + n(a.color.light, "fill") + ' d="M0 0h' + d + "v" + d + 'H0z"/>' : "",
-					c = "<path " + n(a.color.dark, "stroke") + ' d="' + function(e, t, r) {
-						for (var o = "", n = 0, a = !1, s = 0, u = 0; u < e.length; u++) {
-							var d = Math.floor(u % t),
-								l = Math.floor(u / t);
-							d || a || (a = !0), e[u] ? (s++, u > 0 && d > 0 && e[u - 1] || (o += a ? i("M", d + r, .5 + l + r) : i("m", n, 0), n = 0, a = !1), d + 1 < t && e[u + 1] || (o += i("h", s), s = 0)) : n++
-						}
-						return o
-					}(u, s, a.margin) + '"/>',
-					f = 'viewBox="0 0 ' + d + " " + d + '"',
-					h = '<svg xmlns="http://www.w3.org/2000/svg" ' + (a.width ? 'width="' + a.width + '" height="' + a.width + '" ' : "") + f + ' shape-rendering="crispEdges">' + l + c + "</svg>\n";
-				return "function" == typeof r && r(null, h), h
-			}
-		},
-		"./node_modules/qrcode/lib/renderer/utils.js": function(e, t) {
-			function r(e) {
-				if ("number" == typeof e && (e = e.toString()), "string" != typeof e) throw new Error("Color should be defined as hex string");
-				var t = e.slice().replace("#", "").split("");
-				if (t.length < 3 || 5 === t.length || t.length > 8) throw new Error("Invalid hex color: " + e);
-				3 !== t.length && 4 !== t.length || (t = Array.prototype.concat.apply([], t.map((function(e) {
-					return [e, e]
-				})))), 6 === t.length && t.push("F", "F");
-				var r = parseInt(t.join(""), 16);
-				return {
-					r: r >> 24 & 255,
-					g: r >> 16 & 255,
-					b: r >> 8 & 255,
-					a: 255 & r,
-					hex: "#" + t.slice(0, 6).join("")
-				}
-			}
-			t.getOptions = function(e) {
-				e || (e = {}), e.color || (e.color = {});
-				var t = void 0 === e.margin || null === e.margin || e.margin < 0 ? 4 : e.margin,
-					o = e.width && e.width >= 21 ? e.width : void 0,
-					n = e.scale || 4;
-				return {
-					width: o,
-					scale: o ? 4 : n,
-					margin: t,
-					color: {
-						dark: r(e.color.dark || "#000000ff"),
-						light: r(e.color.light || "#ffffffff")
-					},
-					type: e.type,
-					rendererOpts: e.rendererOpts || {}
-				}
-			}, t.getScale = function(e, t) {
-				return t.width && t.width >= e + 2 * t.margin ? t.width / (e + 2 * t.margin) : t.scale
-			}, t.getImageWidth = function(e, r) {
-				var o = t.getScale(e, r);
-				return Math.floor((e + 2 * r.margin) * o)
-			}, t.qrToImageData = function(e, r, o) {
-				for (var n = r.modules.size, i = r.modules.data, a = t.getScale(n, o), s = Math.floor((n + 2 * o.margin) * a), u = o.margin * a, d = [o.color.light, o.color.dark], l = 0; l < s; l++)
-					for (var c = 0; c < s; c++) {
-						var f = 4 * (l * s + c),
-							h = o.color.light;
-						if (l >= u && c >= u && l < s - u && c < s - u) h = d[i[Math.floor((l - u) / a) * n + Math.floor((c - u) / a)] ? 1 : 0];
-						e[f++] = h.r, e[f++] = h.g, e[f++] = h.b, e[f] = h.a
-					}
-			}
-		},
-		"./node_modules/qrcode/lib/utils/typedarray-buffer.js": function(e, t, r) {
-			"use strict";
-			var o = r("./node_modules/qrcode/node_modules/isarray/index.js");
-			i.TYPED_ARRAY_SUPPORT = function() {
-				try {
-					var e = new Uint8Array(1);
-					return e.__proto__ = {
-						__proto__: Uint8Array.prototype,
-						foo: function() {
-							return 42
-						}
-					}, 42 === e.foo()
-				} catch (t) {
-					return !1
-				}
-			}();
-			var n = i.TYPED_ARRAY_SUPPORT ? 2147483647 : 1073741823;
-
-			function i(e, t, r) {
-				return i.TYPED_ARRAY_SUPPORT || this instanceof i ? "number" == typeof e ? u(this, e) : function(e, t, r, o) {
-					if ("number" == typeof t) throw new TypeError('"value" argument must not be a number');
-					if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer) return function(e, t, r, o) {
-						if (r < 0 || t.byteLength < r) throw new RangeError("'offset' is out of bounds");
-						if (t.byteLength < r + (o || 0)) throw new RangeError("'length' is out of bounds");
-						var n;
-						n = void 0 === r && void 0 === o ? new Uint8Array(t) : void 0 === o ? new Uint8Array(t, r) : new Uint8Array(t, r, o);
-						i.TYPED_ARRAY_SUPPORT ? n.__proto__ = i.prototype : n = d(e, n);
-						return n
-					}(e, t, r, o);
-					if ("string" == typeof t) return function(e, t) {
-						var r = 0 | c(t),
-							o = s(e, r),
-							n = o.write(t);
-						n !== r && (o = o.slice(0, n));
-						return o
-					}(e, t);
-					return function(e, t) {
-						if (i.isBuffer(t)) {
-							var r = 0 | a(t.length),
-								o = s(e, r);
-							return 0 === o.length ? o : (t.copy(o, 0, 0, r), o)
-						}
-						if (t) {
-							if ("undefined" != typeof ArrayBuffer && t.buffer instanceof ArrayBuffer || "length" in t) return "number" != typeof t.length || (n = t.length) != n ? s(e, 0) : d(e, t);
-							if ("Buffer" === t.type && Array.isArray(t.data)) return d(e, t.data)
-						}
-						var n;
-						throw new TypeError("First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.")
-					}(e, t)
-				}(this, e, t, r) : new i(e, t, r)
-			}
-
-			function a(e) {
-				if (e >= n) throw new RangeError("Attempt to allocate Buffer larger than maximum size: 0x" + n.toString(16) + " bytes");
-				return 0 | e
-			}
-
-			function s(e, t) {
-				var r;
-				return i.TYPED_ARRAY_SUPPORT ? (r = new Uint8Array(t)).__proto__ = i.prototype : (null === (r = e) && (r = new i(t)), r.length = t), r
-			}
-
-			function u(e, t) {
-				var r = s(e, t < 0 ? 0 : 0 | a(t));
-				if (!i.TYPED_ARRAY_SUPPORT)
-					for (var o = 0; o < t; ++o) r[o] = 0;
-				return r
-			}
-
-			function d(e, t) {
-				for (var r = t.length < 0 ? 0 : 0 | a(t.length), o = s(e, r), n = 0; n < r; n += 1) o[n] = 255 & t[n];
-				return o
-			}
-
-			function l(e, t) {
-				var r;
-				t = t || 1 / 0;
-				for (var o = e.length, n = null, i = [], a = 0; a < o; ++a) {
-					if ((r = e.charCodeAt(a)) > 55295 && r < 57344) {
-						if (!n) {
-							if (r > 56319) {
-								(t -= 3) > -1 && i.push(239, 191, 189);
-								continue
-							}
-							if (a + 1 === o) {
-								(t -= 3) > -1 && i.push(239, 191, 189);
-								continue
-							}
-							n = r;
-							continue
-						}
-						if (r < 56320) {
-							(t -= 3) > -1 && i.push(239, 191, 189), n = r;
-							continue
-						}
-						r = 65536 + (n - 55296 << 10 | r - 56320)
-					} else n && (t -= 3) > -1 && i.push(239, 191, 189);
-					if (n = null, r < 128) {
-						if ((t -= 1) < 0) break;
-						i.push(r)
-					} else if (r < 2048) {
-						if ((t -= 2) < 0) break;
-						i.push(r >> 6 | 192, 63 & r | 128)
-					} else if (r < 65536) {
-						if ((t -= 3) < 0) break;
-						i.push(r >> 12 | 224, r >> 6 & 63 | 128, 63 & r | 128)
-					} else {
-						if (!(r < 1114112)) throw new Error("Invalid code point");
-						if ((t -= 4) < 0) break;
-						i.push(r >> 18 | 240, r >> 12 & 63 | 128, r >> 6 & 63 | 128, 63 & r | 128)
-					}
-				}
-				return i
+			function l(e) {
+				return p(v(e))
 			}
 
 			function c(e) {
-				return i.isBuffer(e) ? e.length : "undefined" != typeof ArrayBuffer && "function" == typeof ArrayBuffer.isView && (ArrayBuffer.isView(e) || e instanceof ArrayBuffer) ? e.byteLength : ("string" != typeof e && (e = "" + e), 0 === e.length ? 0 : l(e).length)
+				return new d(h(e))
 			}
-			i.TYPED_ARRAY_SUPPORT && (i.prototype.__proto__ = Uint8Array.prototype, i.__proto__ = Uint8Array, "undefined" != typeof Symbol && Symbol.species && i[Symbol.species] === i && Object.defineProperty(i, Symbol.species, {
-				value: null,
-				configurable: !0,
-				enumerable: !1,
-				writable: !1
-			})), i.prototype.write = function(e, t, r) {
-				void 0 === t ? (r = this.length, t = 0) : void 0 === r && "string" == typeof t ? (r = this.length, t = 0) : isFinite(t) && (t |= 0, isFinite(r) ? r |= 0 : r = void 0);
-				var o = this.length - t;
-				if ((void 0 === r || r > o) && (r = o), e.length > 0 && (r < 0 || t < 0) || t > this.length) throw new RangeError("Attempt to write outside buffer bounds");
-				return function(e, t, r, o) {
-					return function(e, t, r, o) {
-						for (var n = 0; n < o && !(n + r >= t.length || n >= e.length); ++n) t[n + r] = e[n];
-						return n
-					}(l(t, e.length - r), e, r, o)
-				}(this, e, t, r)
-			}, i.prototype.slice = function(e, t) {
-				var r, o = this.length;
-				if ((e = ~~e) < 0 ? (e += o) < 0 && (e = 0) : e > o && (e = o), (t = void 0 === t ? o : ~~t) < 0 ? (t += o) < 0 && (t = 0) : t > o && (t = o), t < e && (t = e), i.TYPED_ARRAY_SUPPORT)(r = this.subarray(e, t)).__proto__ = i.prototype;
-				else {
-					var n = t - e;
-					r = new i(n, void 0);
-					for (var a = 0; a < n; ++a) r[a] = this[a + e]
+
+			function p(e) {
+				var r = e._hex;
+				return "-" === r[0] ? new o.default.BN(r.substring(3), 16).mul(f) : new o.default.BN(r.substring(2), 16)
+			}
+			var d = function() {
+				function e(r) {
+					if (u.checkNew(this, e), a.setType(this, "BigNumber"), "string" == typeof r) s.isHexString(r) ? ("0x" == r && (r = "0x0"), a.defineReadOnly(this, "_hex", r)) : "-" === r[0] && s.isHexString(r.substring(1)) ? a.defineReadOnly(this, "_hex", r) : r.match(/^-?[0-9]*$/) ? ("" == r && (r = "0"), a.defineReadOnly(this, "_hex", h(new o.default.BN(r)))) : u.throwError("invalid BigNumber string value", u.INVALID_ARGUMENT, {
+						arg: "value",
+						value: r
+					});
+					else if ("number" == typeof r) {
+						parseInt(String(r)) !== r && u.throwError("underflow", u.NUMERIC_FAULT, {
+							operation: "setValue",
+							fault: "underflow",
+							value: r,
+							outputValue: parseInt(String(r))
+						});
+						try {
+							a.defineReadOnly(this, "_hex", h(new o.default.BN(r)))
+						} catch (t) {
+							u.throwError("overflow", u.NUMERIC_FAULT, {
+								operation: "setValue",
+								fault: "overflow",
+								details: t.message
+							})
+						}
+					} else r instanceof e ? a.defineReadOnly(this, "_hex", r._hex) : r.toHexString ? a.defineReadOnly(this, "_hex", h(l(r.toHexString()))) : r._hex && s.isHexString(r._hex) ? a.defineReadOnly(this, "_hex", r._hex) : s.isArrayish(r) ? a.defineReadOnly(this, "_hex", h(new o.default.BN(s.hexlify(r).substring(2), 16))) : u.throwError("invalid BigNumber value", u.INVALID_ARGUMENT, {
+						arg: "value",
+						value: r
+					})
 				}
-				return r
-			}, i.prototype.copy = function(e, t, r, o) {
-				if (r || (r = 0), o || 0 === o || (o = this.length), t >= e.length && (t = e.length), t || (t = 0), o > 0 && o < r && (o = r), o === r) return 0;
-				if (0 === e.length || 0 === this.length) return 0;
-				if (t < 0) throw new RangeError("targetStart out of bounds");
-				if (r < 0 || r >= this.length) throw new RangeError("sourceStart out of bounds");
-				if (o < 0) throw new RangeError("sourceEnd out of bounds");
-				o > this.length && (o = this.length), e.length - t < o - r && (o = e.length - t + r);
-				var n, a = o - r;
-				if (this === e && r < t && t < o)
-					for (n = a - 1; n >= 0; --n) e[n + t] = this[n + r];
-				else if (a < 1e3 || !i.TYPED_ARRAY_SUPPORT)
-					for (n = 0; n < a; ++n) e[n + t] = this[n + r];
-				else Uint8Array.prototype.set.call(e, this.subarray(r, r + a), t);
-				return a
-			}, i.prototype.fill = function(e, t, r) {
-				if ("string" == typeof e) {
-					if ("string" == typeof t ? (t = 0, r = this.length) : "string" == typeof r && (r = this.length), 1 === e.length) {
-						var o = e.charCodeAt(0);
-						o < 256 && (e = o)
+				return e.prototype.fromTwos = function(e) {
+					return c(p(this).fromTwos(e))
+				}, e.prototype.toTwos = function(e) {
+					return c(p(this).toTwos(e))
+				}, e.prototype.abs = function() {
+					return "-" === this._hex[0] ? c(p(this).mul(f)) : this
+				}, e.prototype.add = function(e) {
+					return c(p(this).add(l(e)))
+				}, e.prototype.sub = function(e) {
+					return c(p(this).sub(l(e)))
+				}, e.prototype.div = function(e) {
+					return v(e).isZero() && u.throwError("division by zero", u.NUMERIC_FAULT, {
+						operation: "divide",
+						fault: "division by zero"
+					}), c(p(this).div(l(e)))
+				}, e.prototype.mul = function(e) {
+					return c(p(this).mul(l(e)))
+				}, e.prototype.mod = function(e) {
+					return c(p(this).mod(l(e)))
+				}, e.prototype.pow = function(e) {
+					return c(p(this).pow(l(e)))
+				}, e.prototype.maskn = function(e) {
+					return c(p(this).maskn(e))
+				}, e.prototype.eq = function(e) {
+					return p(this).eq(l(e))
+				}, e.prototype.lt = function(e) {
+					return p(this).lt(l(e))
+				}, e.prototype.lte = function(e) {
+					return p(this).lte(l(e))
+				}, e.prototype.gt = function(e) {
+					return p(this).gt(l(e))
+				}, e.prototype.gte = function(e) {
+					return p(this).gte(l(e))
+				}, e.prototype.isZero = function() {
+					return p(this).isZero()
+				}, e.prototype.toNumber = function() {
+					try {
+						return p(this).toNumber()
+					} catch (e) {
+						u.throwError("overflow", u.NUMERIC_FAULT, {
+							operation: "setValue",
+							fault: "overflow",
+							details: e.message
+						})
 					}
-				} else "number" == typeof e && (e &= 255);
-				if (t < 0 || this.length < t || this.length < r) throw new RangeError("Out of range index");
-				if (r <= t) return this;
-				var n;
-				if (t >>>= 0, r = void 0 === r ? this.length : r >>> 0, e || (e = 0), "number" == typeof e)
-					for (n = t; n < r; ++n) this[n] = e;
-				else {
-					var a = i.isBuffer(e) ? e : new i(e),
-						s = a.length;
-					for (n = 0; n < r - t; ++n) this[n + t] = a[n % s]
+					return null
+				}, e.prototype.toString = function() {
+					return p(this).toString(10)
+				}, e.prototype.toHexString = function() {
+					return this._hex
+				}, e.isBigNumber = function(e) {
+					return a.isType(e, "BigNumber")
+				}, e
+			}();
+
+			function v(e) {
+				return d.isBigNumber(e) ? e : new d(e)
+			}
+			r.BigNumber = d, r.bigNumberify = v
+		},
+		"./node_modules/ethers/utils/bytes.js": function(e, r, t) {
+			"use strict";
+			var n = this && this.__importStar || function(e) {
+				if (e && e.__esModule) return e;
+				var r = {};
+				if (null != e)
+					for (var t in e) Object.hasOwnProperty.call(e, t) && (r[t] = e[t]);
+				return r.default = e, r
+			};
+			Object.defineProperty(r, "__esModule", {
+				value: !0
+			});
+			var i = n(t("./node_modules/ethers/errors.js"));
+
+			function o(e) {
+				return !!e.toHexString
+			}
+
+			function s(e) {
+				return e.slice ? e : (e.slice = function() {
+					var r = Array.prototype.slice.call(arguments);
+					return s(new Uint8Array(Array.prototype.slice.apply(e, r)))
+				}, e)
+			}
+
+			function a(e) {
+				if (!e || parseInt(String(e.length)) != e.length || "string" == typeof e) return !1;
+				for (var r = 0; r < e.length; r++) {
+					var t = e[r];
+					if (t < 0 || t >= 256 || parseInt(String(t)) != t) return !1
 				}
-				return this
-			}, i.concat = function(e, t) {
-				if (!o(e)) throw new TypeError('"list" argument must be an Array of Buffers');
-				if (0 === e.length) return s(null, 0);
-				var r;
-				if (void 0 === t)
-					for (t = 0, r = 0; r < e.length; ++r) t += e[r].length;
-				var n = u(null, t),
+				return !0
+			}
+
+			function u(e) {
+				if (null == e && i.throwError("cannot convert null value to array", i.INVALID_ARGUMENT, {
+						arg: "value",
+						value: e
+					}), o(e) && (e = e.toHexString()), "string" == typeof e) {
+					var r = e.match(/^(0x)?[0-9a-fA-F]*$/);
+					r || i.throwError("invalid hexidecimal string", i.INVALID_ARGUMENT, {
+						arg: "value",
+						value: e
+					}), "0x" !== r[1] && i.throwError("hex string must have 0x prefix", i.INVALID_ARGUMENT, {
+						arg: "value",
+						value: e
+					}), (e = e.substring(2)).length % 2 && (e = "0" + e);
+					for (var t = [], n = 0; n < e.length; n += 2) t.push(parseInt(e.substr(n, 2), 16));
+					return s(new Uint8Array(t))
+				}
+				return a(e) ? s(new Uint8Array(e)) : (i.throwError("invalid arrayify value", null, {
+					arg: "value",
+					value: e,
+					type: typeof e
+				}), null)
+			}
+
+			function f(e) {
+				for (var r = [], t = 0, n = 0; n < e.length; n++) {
+					var i = u(e[n]);
+					r.push(i), t += i.length
+				}
+				var o = new Uint8Array(t),
 					a = 0;
-				for (r = 0; r < e.length; ++r) {
-					var d = e[r];
-					if (!i.isBuffer(d)) throw new TypeError('"list" argument must be an Array of Buffers');
-					d.copy(n, a), a += d.length
+				for (n = 0; n < r.length; n++) o.set(r[n], a), a += r[n].length;
+				return s(o)
+			}
+
+			function h(e, r) {
+				return !("string" != typeof e || !e.match(/^0x[0-9A-Fa-f]*$/)) && (!r || e.length === 2 + 2 * r)
+			}
+			r.isHexable = o, r.isArrayish = a, r.arrayify = u, r.concat = f, r.stripZeros = function(e) {
+				var r = u(e);
+				if (0 === r.length) return r;
+				for (var t = 0; 0 === r[t];) t++;
+				return t && (r = r.slice(t)), r
+			}, r.padZeros = function(e, r) {
+				if (r < (e = u(e)).length) throw new Error("cannot pad");
+				var t = new Uint8Array(r);
+				return t.set(e, r - e.length), s(t)
+			}, r.isHexString = h;
+			var l = "0123456789abcdef";
+
+			function c(e) {
+				if (o(e)) return e.toHexString();
+				if ("number" == typeof e) {
+					e < 0 && i.throwError("cannot hexlify negative value", i.INVALID_ARGUMENT, {
+						arg: "value",
+						value: e
+					}), e >= 9007199254740991 && i.throwError("out-of-range", i.NUMERIC_FAULT, {
+						operartion: "hexlify",
+						fault: "out-of-safe-range"
+					});
+					for (var r = ""; e;) r = l[15 & e] + r, e = Math.floor(e / 16);
+					return r.length ? (r.length % 2 && (r = "0" + r), "0x" + r) : "0x00"
 				}
-				return n
-			}, i.byteLength = c, i.prototype._isBuffer = !0, i.isBuffer = function(e) {
-				return !(null == e || !e._isBuffer)
-			}, e.exports.alloc = function(e) {
-				var t = new i(e);
-				return t.fill(0), t
-			}, e.exports.from = function(e) {
-				return new i(e)
+				if ("string" == typeof e) {
+					var t = e.match(/^(0x)?[0-9a-fA-F]*$/);
+					return t || i.throwError("invalid hexidecimal string", i.INVALID_ARGUMENT, {
+						arg: "value",
+						value: e
+					}), "0x" !== t[1] && i.throwError("hex string must have 0x prefix", i.INVALID_ARGUMENT, {
+						arg: "value",
+						value: e
+					}), e.length % 2 && (e = "0x0" + e.substring(2)), e
+				}
+				if (a(e)) {
+					for (var n = [], s = 0; s < e.length; s++) {
+						var u = e[s];
+						n.push(l[(240 & u) >> 4] + l[15 & u])
+					}
+					return "0x" + n.join("")
+				}
+				return i.throwError("invalid hexlify value", null, {
+					arg: "value",
+					value: e
+				}), "never"
+			}
+
+			function p(e, r) {
+				for (h(e) || i.throwError("invalid hex string", i.INVALID_ARGUMENT, {
+						arg: "value",
+						value: e
+					}); e.length < 2 * r + 2;) e = "0x0" + e.substring(2);
+				return e
+			}
+
+			function d(e) {
+				var r, t = 0,
+					n = "0x",
+					o = "0x";
+				if ((r = e) && null != r.r && null != r.s) {
+					null == e.v && null == e.recoveryParam && i.throwError("at least on of recoveryParam or v must be specified", i.INVALID_ARGUMENT, {
+						argument: "signature",
+						value: e
+					}), n = p(e.r, 32), o = p(e.s, 32), "string" == typeof(t = e.v) && (t = parseInt(t, 16));
+					var s = e.recoveryParam;
+					null == s && null != e.v && (s = 1 - t % 2), t = 27 + s
+				} else {
+					var a = u(e);
+					if (65 !== a.length) throw new Error("invalid signature");
+					n = c(a.slice(0, 32)), o = c(a.slice(32, 64)), 27 !== (t = a[64]) && 28 !== t && (t = 27 + t % 2)
+				}
+				return {
+					r: n,
+					s: o,
+					recoveryParam: t - 27,
+					v: t
+				}
+			}
+			r.hexlify = c, r.hexDataLength = function(e) {
+				return h(e) && e.length % 2 == 0 ? (e.length - 2) / 2 : null
+			}, r.hexDataSlice = function(e, r, t) {
+				return h(e) || i.throwError("invalid hex data", i.INVALID_ARGUMENT, {
+					arg: "value",
+					value: e
+				}), e.length % 2 != 0 && i.throwError("hex data length must be even", i.INVALID_ARGUMENT, {
+					arg: "value",
+					value: e
+				}), r = 2 + 2 * r, null != t ? "0x" + e.substring(r, 2 + 2 * t) : "0x" + e.substring(r)
+			}, r.hexStripZeros = function(e) {
+				for (h(e) || i.throwError("invalid hex string", i.INVALID_ARGUMENT, {
+						arg: "value",
+						value: e
+					}); e.length > 3 && "0x0" === e.substring(0, 3);) e = "0x" + e.substring(3);
+				return e
+			}, r.hexZeroPad = p, r.splitSignature = d, r.joinSignature = function(e) {
+				return c(f([(e = d(e)).r, e.s, e.recoveryParam ? "0x1c" : "0x1b"]))
 			}
 		},
-		"./node_modules/qrcode/node_modules/isarray/index.js": function(e, t) {
-			var r = {}.toString;
-			e.exports = Array.isArray || function(e) {
-				return "[object Array]" == r.call(e)
+		"./node_modules/ethers/utils/keccak256.js": function(e, r, t) {
+			"use strict";
+			Object.defineProperty(r, "__esModule", {
+				value: !0
+			});
+			var n = t("./node_modules/ethers/node_modules/js-sha3/src/sha3.js"),
+				i = t("./node_modules/ethers/utils/bytes.js");
+			r.keccak256 = function(e) {
+				return "0x" + n.keccak_256(i.arrayify(e))
 			}
+		},
+		"./node_modules/ethers/utils/properties.js": function(e, r, t) {
+			"use strict";
+			var n = this && this.__importStar || function(e) {
+				if (e && e.__esModule) return e;
+				var r = {};
+				if (null != e)
+					for (var t in e) Object.hasOwnProperty.call(e, t) && (r[t] = e[t]);
+				return r.default = e, r
+			};
+			Object.defineProperty(r, "__esModule", {
+				value: !0
+			});
+			var i = n(t("./node_modules/ethers/errors.js"));
+
+			function o(e, r, t) {
+				Object.defineProperty(e, r, {
+					enumerable: !0,
+					value: t,
+					writable: !1
+				})
+			}
+
+			function s(e, r) {
+				return e && e._ethersType === r
+			}
+			r.defineReadOnly = o, r.setType = function(e, r) {
+				Object.defineProperty(e, "_ethersType", {
+					configurable: !1,
+					value: r,
+					writable: !1
+				})
+			}, r.isType = s, r.resolveProperties = function(e) {
+				var r = {},
+					t = [];
+				return Object.keys(e).forEach((function(n) {
+					var i = e[n];
+					i instanceof Promise ? t.push(i.then((function(e) {
+						return r[n] = e, null
+					}))) : r[n] = i
+				})), Promise.all(t).then((function() {
+					return r
+				}))
+			}, r.checkProperties = function(e, r) {
+				e && "object" == typeof e || i.throwError("invalid object", i.INVALID_ARGUMENT, {
+					argument: "object",
+					value: e
+				}), Object.keys(e).forEach((function(t) {
+					r[t] || i.throwError("invalid object key - " + t, i.INVALID_ARGUMENT, {
+						argument: "transaction",
+						value: e,
+						key: t
+					})
+				}))
+			}, r.shallowCopy = function(e) {
+				var r = {};
+				for (var t in e) r[t] = e[t];
+				return r
+			};
+			var a = {
+				boolean: !0,
+				number: !0,
+				string: !0
+			};
+			r.deepCopy = function e(r, t) {
+				if (null == r || a[typeof r]) return r;
+				if (Array.isArray(r)) {
+					var n = r.map((function(r) {
+						return e(r, t)
+					}));
+					return t && Object.freeze(n), n
+				}
+				if ("object" == typeof r) {
+					if (s(r, "BigNumber")) return r;
+					if (s(r, "Description")) return r;
+					if (s(r, "Indexed")) return r;
+					n = {};
+					for (var i in r) {
+						var u = r[i];
+						void 0 !== u && o(n, i, e(u, t))
+					}
+					return t && Object.freeze(n), n
+				}
+				if ("function" == typeof r) return r;
+				throw new Error("Cannot deepCopy " + typeof r)
+			}, r.inheritable = function e(r) {
+				return function(t) {
+					var n, i;
+					i = r, (n = t).super_ = i, n.prototype = Object.create(i.prototype, {
+						constructor: {
+							value: n,
+							enumerable: !1,
+							writable: !0,
+							configurable: !0
+						}
+					}), o(t, "inherits", e(t))
+				}
+			}
+		},
+		"./node_modules/ethers/utils/utf8.js": function(e, r, t) {
+			"use strict";
+			Object.defineProperty(r, "__esModule", {
+				value: !0
+			});
+			var n, i = t("./node_modules/ethers/constants.js"),
+				o = t("./node_modules/ethers/errors.js"),
+				s = t("./node_modules/ethers/utils/bytes.js");
+
+			function a(e, r) {
+				void 0 === r && (r = n.current), r != n.current && (o.checkNormalize(), e = e.normalize(r));
+				for (var t = [], i = 0; i < e.length; i++) {
+					var a = e.charCodeAt(i);
+					if (a < 128) t.push(a);
+					else if (a < 2048) t.push(a >> 6 | 192), t.push(63 & a | 128);
+					else if (55296 == (64512 & a)) {
+						i++;
+						var u = e.charCodeAt(i);
+						if (i >= e.length || 56320 != (64512 & u)) throw new Error("invalid utf-8 string");
+						a = 65536 + ((1023 & a) << 10) + (1023 & u), t.push(a >> 18 | 240), t.push(a >> 12 & 63 | 128), t.push(a >> 6 & 63 | 128), t.push(63 & a | 128)
+					} else t.push(a >> 12 | 224), t.push(a >> 6 & 63 | 128), t.push(63 & a | 128)
+				}
+				return s.arrayify(t)
+			}
+
+			function u(e, r) {
+				e = s.arrayify(e);
+				for (var t = "", n = 0; n < e.length;) {
+					var i = e[n++];
+					if (i >> 7 != 0) {
+						var o = null,
+							a = null;
+						if (192 == (224 & i)) o = 1, a = 127;
+						else if (224 == (240 & i)) o = 2, a = 2047;
+						else {
+							if (240 != (248 & i)) {
+								if (!r) {
+									if (128 == (192 & i)) throw new Error("invalid utf8 byte sequence; unexpected continuation byte");
+									throw new Error("invalid utf8 byte sequence; invalid prefix")
+								}
+								continue
+							}
+							o = 3, a = 65535
+						}
+						if (n + o > e.length) {
+							if (!r) throw new Error("invalid utf8 byte sequence; too short");
+							for (; n < e.length && e[n] >> 6 == 2; n++);
+						} else {
+							for (var u = i & (1 << 8 - o - 1) - 1, f = 0; f < o; f++) {
+								var h = e[n];
+								if (128 != (192 & h)) {
+									u = null;
+									break
+								}
+								u = u << 6 | 63 & h, n++
+							}
+							if (null !== u)
+								if (u <= a) {
+									if (!r) throw new Error("invalid utf8 byte sequence; overlong")
+								} else if (u > 1114111) {
+								if (!r) throw new Error("invalid utf8 byte sequence; out-of-range")
+							} else if (u >= 55296 && u <= 57343) {
+								if (!r) throw new Error("invalid utf8 byte sequence; utf-16 surrogate")
+							} else u <= 65535 ? t += String.fromCharCode(u) : (u -= 65536, t += String.fromCharCode(55296 + (u >> 10 & 1023), 56320 + (1023 & u)));
+							else if (!r) throw new Error("invalid utf8 byte sequence; invalid continuation byte")
+						}
+					} else t += String.fromCharCode(i)
+				}
+				return t
+			}! function(e) {
+				e.current = "", e.NFC = "NFC", e.NFD = "NFD", e.NFKC = "NFKC", e.NFKD = "NFKD"
+			}(n = r.UnicodeNormalizationForm || (r.UnicodeNormalizationForm = {})), r.toUtf8Bytes = a, r.toUtf8String = u, r.formatBytes32String = function(e) {
+				var r = a(e);
+				if (r.length > 31) throw new Error("bytes32 string must be less than 32 bytes");
+				return s.hexlify(s.concat([r, i.HashZero]).slice(0, 32))
+			}, r.parseBytes32String = function(e) {
+				var r = s.arrayify(e);
+				if (32 !== r.length) throw new Error("invalid bytes32 - not 32 bytes long");
+				if (0 !== r[31]) throw new Error("invalid bytes32 string - no null terminator");
+				for (var t = 31; 0 === r[t - 1];) t--;
+				return u(r.slice(0, t))
+			}
+		},
+		"./node_modules/scrypt-js/scrypt.js": function(e, r, t) {
+			"use strict";
+			(function(r) {
+				! function(t) {
+					var n = 2147483647;
+
+					function i(e) {
+						var r = [1116352408, 1899447441, 3049323471, 3921009573, 961987163, 1508970993, 2453635748, 2870763221, 3624381080, 310598401, 607225278, 1426881987, 1925078388, 2162078206, 2614888103, 3248222580, 3835390401, 4022224774, 264347078, 604807628, 770255983, 1249150122, 1555081692, 1996064986, 2554220882, 2821834349, 2952996808, 3210313671, 3336571891, 3584528711, 113926993, 338241895, 666307205, 773529912, 1294757372, 1396182291, 1695183700, 1986661051, 2177026350, 2456956037, 2730485921, 2820302411, 3259730800, 3345764771, 3516065817, 3600352804, 4094571909, 275423344, 430227734, 506948616, 659060556, 883997877, 958139571, 1322822218, 1537002063, 1747873779, 1955562222, 2024104815, 2227730452, 2361852424, 2428436474, 2756734187, 3204031479, 3329325298],
+							t = 1779033703,
+							n = 3144134277,
+							i = 1013904242,
+							o = 2773480762,
+							s = 1359893119,
+							a = 2600822924,
+							u = 528734635,
+							f = 1541459225,
+							h = new Array(64);
+
+						function l(e) {
+							for (var l = 0, c = e.length; c >= 64;) {
+								var p, d, v, y, g, _ = t,
+									b = n,
+									w = i,
+									m = o,
+									E = s,
+									N = a,
+									A = u,
+									x = f;
+								for (d = 0; d < 16; d++) v = l + 4 * d, h[d] = (255 & e[v]) << 24 | (255 & e[v + 1]) << 16 | (255 & e[v + 2]) << 8 | 255 & e[v + 3];
+								for (d = 16; d < 64; d++) y = ((p = h[d - 2]) >>> 17 | p << 15) ^ (p >>> 19 | p << 13) ^ p >>> 10, g = ((p = h[d - 15]) >>> 7 | p << 25) ^ (p >>> 18 | p << 14) ^ p >>> 3, h[d] = (y + h[d - 7] | 0) + (g + h[d - 16] | 0) | 0;
+								for (d = 0; d < 64; d++) y = (((E >>> 6 | E << 26) ^ (E >>> 11 | E << 21) ^ (E >>> 25 | E << 7)) + (E & N ^ ~E & A) | 0) + (x + (r[d] + h[d] | 0) | 0) | 0, g = ((_ >>> 2 | _ << 30) ^ (_ >>> 13 | _ << 19) ^ (_ >>> 22 | _ << 10)) + (_ & b ^ _ & w ^ b & w) | 0, x = A, A = N, N = E, E = m + y | 0, m = w, w = b, b = _, _ = y + g | 0;
+								t = t + _ | 0, n = n + b | 0, i = i + w | 0, o = o + m | 0, s = s + E | 0, a = a + N | 0, u = u + A | 0, f = f + x | 0, l += 64, c -= 64
+							}
+						}
+						l(e);
+						var c, p = e.length % 64,
+							d = e.length / 536870912 | 0,
+							v = e.length << 3,
+							y = p < 56 ? 56 : 120,
+							g = e.slice(e.length - p, e.length);
+						for (g.push(128), c = p + 1; c < y; c++) g.push(0);
+						return g.push(d >>> 24 & 255), g.push(d >>> 16 & 255), g.push(d >>> 8 & 255), g.push(d >>> 0 & 255), g.push(v >>> 24 & 255), g.push(v >>> 16 & 255), g.push(v >>> 8 & 255), g.push(v >>> 0 & 255), l(g), [t >>> 24 & 255, t >>> 16 & 255, t >>> 8 & 255, t >>> 0 & 255, n >>> 24 & 255, n >>> 16 & 255, n >>> 8 & 255, n >>> 0 & 255, i >>> 24 & 255, i >>> 16 & 255, i >>> 8 & 255, i >>> 0 & 255, o >>> 24 & 255, o >>> 16 & 255, o >>> 8 & 255, o >>> 0 & 255, s >>> 24 & 255, s >>> 16 & 255, s >>> 8 & 255, s >>> 0 & 255, a >>> 24 & 255, a >>> 16 & 255, a >>> 8 & 255, a >>> 0 & 255, u >>> 24 & 255, u >>> 16 & 255, u >>> 8 & 255, u >>> 0 & 255, f >>> 24 & 255, f >>> 16 & 255, f >>> 8 & 255, f >>> 0 & 255]
+					}
+
+					function o(e, r, t) {
+						var n;
+						e = e.length <= 64 ? e : i(e);
+						var o = 64 + r.length + 4,
+							s = new Array(o),
+							a = new Array(64),
+							u = [];
+						for (n = 0; n < 64; n++) s[n] = 54;
+						for (n = 0; n < e.length; n++) s[n] ^= e[n];
+						for (n = 0; n < r.length; n++) s[64 + n] = r[n];
+						for (n = o - 4; n < o; n++) s[n] = 0;
+						for (n = 0; n < 64; n++) a[n] = 92;
+						for (n = 0; n < e.length; n++) a[n] ^= e[n];
+
+						function f() {
+							for (var e = o - 1; e >= o - 4; e--) {
+								if (s[e]++, s[e] <= 255) return;
+								s[e] = 0
+							}
+						}
+						for (; t >= 32;) f(), u = u.concat(i(a.concat(i(s)))), t -= 32;
+						return t > 0 && (f(), u = u.concat(i(a.concat(i(s))).slice(0, t))), u
+					}
+
+					function s(e, r, t, n, i) {
+						var o;
+						for (h(e, 16 * (2 * t - 1), i, 0, 16), o = 0; o < 2 * t; o++) f(e, 16 * o, i, 16), u(i, n), h(i, 0, e, r + 16 * o, 16);
+						for (o = 0; o < t; o++) h(e, r + 2 * o * 16, e, 16 * o, 16);
+						for (o = 0; o < t; o++) h(e, r + 16 * (2 * o + 1), e, 16 * (o + t), 16)
+					}
+
+					function a(e, r) {
+						return e << r | e >>> 32 - r
+					}
+
+					function u(e, r) {
+						h(e, 0, r, 0, 16);
+						for (var t = 8; t > 0; t -= 2) r[4] ^= a(r[0] + r[12], 7), r[8] ^= a(r[4] + r[0], 9), r[12] ^= a(r[8] + r[4], 13), r[0] ^= a(r[12] + r[8], 18), r[9] ^= a(r[5] + r[1], 7), r[13] ^= a(r[9] + r[5], 9), r[1] ^= a(r[13] + r[9], 13), r[5] ^= a(r[1] + r[13], 18), r[14] ^= a(r[10] + r[6], 7), r[2] ^= a(r[14] + r[10], 9), r[6] ^= a(r[2] + r[14], 13), r[10] ^= a(r[6] + r[2], 18), r[3] ^= a(r[15] + r[11], 7), r[7] ^= a(r[3] + r[15], 9), r[11] ^= a(r[7] + r[3], 13), r[15] ^= a(r[11] + r[7], 18), r[1] ^= a(r[0] + r[3], 7), r[2] ^= a(r[1] + r[0], 9), r[3] ^= a(r[2] + r[1], 13), r[0] ^= a(r[3] + r[2], 18), r[6] ^= a(r[5] + r[4], 7), r[7] ^= a(r[6] + r[5], 9), r[4] ^= a(r[7] + r[6], 13), r[5] ^= a(r[4] + r[7], 18), r[11] ^= a(r[10] + r[9], 7), r[8] ^= a(r[11] + r[10], 9), r[9] ^= a(r[8] + r[11], 13), r[10] ^= a(r[9] + r[8], 18), r[12] ^= a(r[15] + r[14], 7), r[13] ^= a(r[12] + r[15], 9), r[14] ^= a(r[13] + r[12], 13), r[15] ^= a(r[14] + r[13], 18);
+						for (t = 0; t < 16; ++t) e[t] += r[t]
+					}
+
+					function f(e, r, t, n) {
+						for (var i = 0; i < n; i++) t[i] ^= e[r + i]
+					}
+
+					function h(e, r, t, n, i) {
+						for (; i--;) t[n++] = e[r++]
+					}
+
+					function l(e) {
+						if (!e || "number" != typeof e.length) return !1;
+						for (var r = 0; r < e.length; r++) {
+							if ("number" != typeof e[r]) return !1;
+							var t = parseInt(e[r]);
+							if (t != e[r] || t < 0 || t >= 256) return !1
+						}
+						return !0
+					}
+
+					function c(e, r) {
+						var t = parseInt(e);
+						if (e != t) throw new Error("invalid " + r);
+						return t
+					}
+					e.exports = function(e, t, i, a, u, p, d) {
+						if (!d) throw new Error("missing callback");
+						if (i = c(i, "N"), a = c(a, "r"), u = c(u, "p"), p = c(p, "dkLen"), 0 === i || 0 != (i & i - 1)) throw new Error("N must be power of 2");
+						if (i > n / 128 / a) throw new Error("N too large");
+						if (a > n / 128 / u) throw new Error("r too large");
+						if (!l(e)) throw new Error("password must be an array or buffer");
+						if (e = Array.prototype.slice.call(e), !l(t)) throw new Error("salt must be an array or buffer");
+						t = Array.prototype.slice.call(t);
+						for (var v = o(e, t, 128 * u * a), y = new Uint32Array(32 * u * a), g = 0; g < y.length; g++) {
+							var _ = 4 * g;
+							y[g] = (255 & v[_ + 3]) << 24 | (255 & v[_ + 2]) << 16 | (255 & v[_ + 1]) << 8 | (255 & v[_ + 0]) << 0
+						}
+						var b, w, m = new Uint32Array(64 * a),
+							E = new Uint32Array(32 * a * i),
+							N = 32 * a,
+							A = new Uint32Array(16),
+							x = new Uint32Array(16),
+							I = u * i * 2,
+							C = 0,
+							S = null,
+							U = !1,
+							R = 0,
+							O = 0,
+							k = parseInt(1e3 / a),
+							j = void 0 !== r ? r : setTimeout,
+							M = function() {
+								if (U) return d(new Error("cancelled"), C / I);
+								switch (R) {
+									case 0:
+										h(y, w = 32 * O * a, m, 0, N), R = 1, b = 0;
+									case 1:
+										(t = i - b) > k && (t = k);
+										for (var r = 0; r < t; r++) h(m, 0, E, (b + r) * N, N), s(m, N, a, A, x);
+										if (b += t, C += t, (n = parseInt(1e3 * C / I)) !== S) {
+											if (U = d(null, C / I)) break;
+											S = n
+										}
+										if (b < i) break;
+										b = 0, R = 2;
+									case 2:
+										var t, n;
+										(t = i - b) > k && (t = k);
+										for (r = 0; r < t; r++) {
+											var l = m[16 * (2 * a - 1)] & i - 1;
+											f(E, l * N, m, N), s(m, N, a, A, x)
+										}
+										if (b += t, C += t, (n = parseInt(1e3 * C / I)) !== S) {
+											if (U = d(null, C / I)) break;
+											S = n
+										}
+										if (b < i) break;
+										if (h(m, 0, y, w, N), ++O < u) {
+											R = 0;
+											break
+										}
+										v = [];
+										for (r = 0; r < y.length; r++) v.push(y[r] >> 0 & 255), v.push(y[r] >> 8 & 255), v.push(y[r] >> 16 & 255), v.push(y[r] >> 24 & 255);
+										var c = o(e, v, p);
+										return d(null, 1, c)
+								}
+								j(M)
+							};
+						M()
+					}
+				}()
+			}).call(this, t("./node_modules/timers-browserify/main.js").setImmediate)
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~35c7bbd0.6e23c8aef1311baed307.js.map
+//# sourceMappingURL=vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~35c7bbd0.af3db90c872c24938608.js.map

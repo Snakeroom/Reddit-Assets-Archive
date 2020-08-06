@@ -1,58 +1,55 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.55e702f2dc5d39668068.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.accb915bb823e3101dd4.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return p
+				return u
 			})), n.d(t, "a", (function() {
-				return h
+				return p
 			}));
 			var o = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/makeRequest/index.ts"),
 				r = n("./src/config.ts"),
 				i = n("./src/reddit/endpoints/governance/requester.ts");
-
-			function a(e, t) {
-				return Object(i.a)(e, {
-					method: "get",
-					endpoint: "".concat(r.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
-				})
-			}
-			var d = n("./src/lib/makeActionCreator/index.ts"),
-				c = n("./src/reddit/actions/economics/me/constants.ts");
-			const l = Object(d.a)(c.a),
-				m = Object(d.a)(c.b),
-				u = Object(d.a)(c.c),
-				p = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-					return async (t, n, o) => {
-						let {
-							apiContext: s
-						} = o;
-						const r = n();
-						if (!r.economics.me.fetched || e && !r.economics.me.data.specialMemberships) {
-							const n = await a(s(), e);
-							if (n.ok) {
-								const o = n.body;
-								e && !o.specialMemberships && (o.specialMemberships = {}), t(l(o))
-							}
+			var a = n("./src/lib/makeActionCreator/index.ts"),
+				d = n("./src/reddit/actions/economics/me/constants.ts");
+			const c = Object(a.a)(d.a),
+				l = Object(a.a)(d.b),
+				m = Object(a.a)(d.c),
+				u = e => async (t, n, o) => {
+					let {
+						apiContext: s
+					} = o;
+					const a = e && e.includeMemberships || !1,
+						d = e && e.forceFetch || !1,
+						l = n();
+					if (!l.economics.me.fetched || a && !l.economics.me.data.specialMemberships || d) {
+						const e = await
+						function(e, t) {
+							return Object(i.a)(e, {
+								method: "get",
+								endpoint: "".concat(r.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
+							})
+						}(s(), a);
+						if (e.ok) {
+							const n = e.body;
+							a && !n.specialMemberships && (n.specialMemberships = {}), t(c(n))
 						}
 					}
-				},
-				h = () => async (e, t) => {
+				}, p = () => async (e, t) => {
 					const n = t(),
 						r = n.economics.me.data;
 					if (!r) throw new Error("me data required for copy to be fetched");
 					if (!n.economics.pointsCopy.fetched) {
-						e(m());
+						e(l());
 						const t = "https://".concat(r.pointsDocsBaseUrl, "v1.json?web"),
 							n = await Object(s.b)({
 								endpoint: t,
 								method: o.db.GET
 							});
-						n.ok && n.body && e(u(n.body))
+						n.ok && n.body && e(m(n.body))
 					}
 				}
 		},
@@ -60,16 +57,18 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return v
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return O
 			})), n.d(t, "b", (function() {
-				return k
-			})), n.d(t, "d", (function() {
 				return y
+			})), n.d(t, "d", (function() {
+				return k
 			})), n.d(t, "e", (function() {
 				return T
 			})), n.d(t, "c", (function() {
 				return M
+			})), n.d(t, "f", (function() {
+				return R
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/lodash/forOwn.js"),
@@ -109,12 +108,14 @@
 					apiContext: o
 				} = n;
 				if (!t().user.account) return;
-				await e(Object(C.b)(!0));
+				await e(Object(C.b)({
+					includeMemberships: !0
+				}));
 				const s = t().economics.me.data.specialMemberships || {},
 					r = Object.keys(s);
 				if (r.length) {
-					const t = await Object(a.d)(o(), r);
-					t.ok && e(Object(E.f)(t.body))
+					const t = await Object(a.e)(o(), r);
+					t.ok && e(Object(E.g)(t.body))
 				}
 			}, O = (e, t) => async (n, o, s) => {
 				let {
@@ -125,9 +126,9 @@
 					c = !a || a.status !== f.a.Fetched || t;
 				if (i && c) {
 					const t = await Object(d.a)(r(), e, i.id);
-					n(Object(E.h)(t))
+					n(Object(E.i)(t))
 				}
-			}, k = e => async (t, n, o) => {
+			}, y = e => async (t, n, o) => {
 				let {
 					apiContext: s
 				} = o;
@@ -147,7 +148,7 @@
 						userId: a.id
 					}))), Object(r.a)(t, o.error))
 				}
-			}, y = (e, t) => async (n, o, s) => {
+			}, k = (e, t) => async (n, o, s) => {
 				let {
 					apiContext: r
 				} = s;
@@ -155,7 +156,7 @@
 				const i = o().economics.subredditPremium[e];
 				if (i && i.status === f.a.Fetched) {
 					const o = i.data.userOwnedBadges.find(e => e.type === t.id);
-					o && (n(k({
+					o && (n(y({
 						badge: o,
 						subredditId: e,
 						placement: o.placement
@@ -196,7 +197,7 @@
 							subredditId: e,
 							badge: i
 						});
-						t && await o(k({
+						t && await o(y({
 							badge: t,
 							subredditId: e
 						}))
@@ -206,6 +207,16 @@
 						initialView: h.c.MyBadges
 					}))
 				}
+			}, R = e => async (t, n, o) => {
+				let {
+					apiContext: s
+				} = o;
+				const {
+					wallet: r
+				} = await Object(a.c)(s(), e);
+				t(Object(E.f)({
+					wallet: r
+				})), await t(O(e.subredditId, !0))
 			}
 		},
 		"./src/reddit/components/CollapseIntoOverflow/index.m.less": function(e, t, n) {
@@ -396,8 +407,8 @@
 				_ = n("./src/reddit/components/CommentCreation/ToolbarSelector.m.less"),
 				v = n.n(_),
 				O = n("./src/lib/lessComponent.tsx");
-			const k = 310,
-				y = O.a.div("Container", v.a);
+			const y = 310,
+				k = O.a.div("Container", v.a);
 			class T extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -407,7 +418,7 @@
 						if (!e) return;
 						const {
 							width: t
-						} = e.getBoundingClientRect(), n = t < k ? "compact" : "full";
+						} = e.getBoundingClientRect(), n = t < y ? "compact" : "full";
 						n !== this.state.toolbarType && w.a.write(() => {
 							this.setState({
 								toolbarType: n
@@ -422,7 +433,7 @@
 					window.removeEventListener("resize", this.selectToolbar)
 				}
 				render() {
-					return r.a.createElement(y, {
+					return r.a.createElement(k, {
 						innerRef: this.setContainerRef
 					}, this.state.toolbarType ? this.props.children(this.state.toolbarType) : null)
 				}
@@ -637,8 +648,8 @@
 						submitButtonText: _,
 						isCommentBoxDesignEnabled: v,
 						isExpanded: O,
-						isTopLevelComment: k,
-						onSwitchMode: y,
+						isTopLevelComment: y,
+						onSwitchMode: k,
 						userName: M
 					} = this.props, {
 						cancelModalText: R,
@@ -650,7 +661,7 @@
 					return r.a.createElement(me, {
 						"data-test-id": z.b,
 						className: Object(W.a)(s, {
-							[Y.a.isTopLevelComment]: k,
+							[Y.a.isTopLevelComment]: y,
 							[Y.a.mExpanded]: O,
 							[Y.a.mRedesign]: v
 						}),
@@ -658,7 +669,7 @@
 						style: {
 							height: B ? I : void 0
 						}
-					}, !v && k && r.a.createElement(te, null, r.a.createElement(ne, null, o.fbt._("Comment as {authorLink}", [o.fbt._param("authorLink", r.a.createElement(l.a, {
+					}, !v && y && r.a.createElement(te, null, r.a.createElement(ne, null, o.fbt._("Comment as {authorLink}", [o.fbt._param("authorLink", r.a.createElement(l.a, {
 						author: M,
 						isAdmin: !1,
 						isAdminEmeritus: !1,
@@ -703,11 +714,11 @@
 						canSubmit: this.userHasEnteredText()
 					}, r.a.createElement(T, null, e => "compact" === e ? r.a.createElement(D, {
 						buttonRef: e => this.switchModeBtn = e,
-						onClick: () => y(Z.h.RICH_TEXT, S, b),
+						onClick: () => k(Z.h.RICH_TEXT, S, b),
 						isConverting: this.props.isConverting
 					}) : r.a.createElement("div", null, r.a.createElement($, {
 						innerRef: e => this.switchModeBtn = e,
-						onClick: () => y(Z.h.RICH_TEXT, S, b)
+						onClick: () => k(Z.h.RICH_TEXT, S, b)
 					}, "Switch to Fancy Pants Editor", this.props.isConverting && r.a.createElement(ee, {
 						sizePx: 12
 					})))), r.a.createElement(de, {
@@ -949,8 +960,8 @@
 				_ = n("./node_modules/lodash/noop.js"),
 				v = n.n(_),
 				O = n("./src/lib/classNames/index.ts"),
-				k = n("./src/lib/fastdom/index.ts"),
-				y = n("./src/lib/memoizeByReference/index.ts"),
+				y = n("./src/lib/fastdom/index.ts"),
+				k = n("./src/lib/memoizeByReference/index.ts"),
 				T = n("./src/reddit/components/AuthorLink/index.tsx"),
 				M = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				R = n("./src/reddit/components/RichTextEditor/index.tsx"),
@@ -966,7 +977,7 @@
 			class H extends i.a.Component {
 				constructor(e) {
 					super(e), this.updateCurrentBreakpoint = () => {
-						k.a.read(() => {
+						y.a.read(() => {
 							if (!this.container) return;
 							const {
 								indexOfCurrentBreakpoint: e,
@@ -977,7 +988,7 @@
 									r = this.breakpoints[o + 1] + (s ? P : 0);
 								return n < r
 							});
-							o < 0 && (o = t - 1), o !== e && k.a.write(() => {
+							o < 0 && (o = t - 1), o !== e && y.a.write(() => {
 								this.setState({
 									indexOfCurrentBreakpoint: o,
 									shouldShowOverflow: o < t - 1
@@ -999,7 +1010,7 @@
 					window.removeEventListener("resize", this.updateCurrentBreakpoint)
 				}
 				registerBreakpoint(e, t) {
-					k.a.read(() => {
+					y.a.read(() => {
 						if (e && e.clientWidth) {
 							const n = e.clientWidth;
 							this.breakpoints[t] = 0 === t ? n : this.breakpoints[t - 1] + n, this.breakpoints[this.state.totalNumCollapsibleItems - 1] && this.updateCurrentBreakpoint()
@@ -1176,8 +1187,8 @@
 				_e = n("./src/reddit/selectors/comments.ts"),
 				ve = n("./src/reddit/components/CommentCreation/RichtextCommentForm/index.m.less"),
 				Oe = n.n(ve);
-			const ke = 16,
-				ye = u.a.div("FormWrapper", Oe.a),
+			const ye = 16,
+				ke = u.a.div("FormWrapper", Oe.a),
 				Te = u.a.div("CommentHeader", Oe.a),
 				Me = u.a.wrapped(ce.a, "FormFooter", Oe.a),
 				Re = u.a.div("MarkdownButtonWrapper", Oe.a),
@@ -1236,7 +1247,7 @@
 				}));
 			class Ae extends i.a.Component {
 				constructor(e) {
-					super(e), this.getToolbarRenderer = Object(y.a)((e, t, n, o, s) => Fe({
+					super(e), this.getToolbarRenderer = Object(k.a)((e, t, n, o, s) => Fe({
 						cancelButtonEnabled: e,
 						draftKey: t,
 						isCommentBoxDesignEnabled: s,
@@ -1254,7 +1265,7 @@
 						if (!this.editorWrapperElement || !this.editorWrapperElement.parentElement || this.props.isTopLevelComment) return;
 						const e = this.editorWrapperElement.parentElement.getBoundingClientRect().width < re.c,
 							t = this.getWrapperHeight();
-						e === this.state.breakOut && t === this.state.formHeight || k.a.write(() => {
+						e === this.state.breakOut && t === this.state.formHeight || y.a.write(() => {
 							this.setState({
 								breakOut: e,
 								formHeight: t
@@ -1279,7 +1290,7 @@
 							showError: !1,
 							rteState: e
 						}), () => {
-							k.a.read(this.detectBreakout)
+							y.a.read(this.detectBreakout)
 						})
 					}, this.cancelForm = () => {
 						this.editor && this.props.draftType === ue.c.replyToPost && this.setState({
@@ -1330,13 +1341,13 @@
 					}), window.removeEventListener("resize", this.detectBreakout), this.props.instanceRef && this.props.instanceRef(null)
 				}
 				componentDidMount() {
-					this.props.draft.hasFocus && this.editor && (window.addEventListener("resize", this.detectBreakout), k.a.read(this.detectBreakout), k.a.write(() => {
+					this.props.draft.hasFocus && this.editor && (window.addEventListener("resize", this.detectBreakout), y.a.read(this.detectBreakout), y.a.write(() => {
 						this.props.draft.hasFocus && this.editor && this.editor.focus()
 					})), this.props.instanceRef && this.props.instanceRef(this)
 				}
 				getWrapperHeight() {
 					if (!this.editorDomElement) return;
-					return this.editorDomElement.getBoundingClientRect().height + ke
+					return this.editorDomElement.getBoundingClientRect().height + ye
 				}
 				render() {
 					const {
@@ -1361,9 +1372,9 @@
 						cancelModalText: C,
 						breakOut: E,
 						formHeight: _,
-						rteState: k
-					} = this.state, y = Object(le.a)(a), j = r.draftType === ue.c.edit, S = d !== ue.c.replyToPost;
-					return i.a.createElement(ye, {
+						rteState: y
+					} = this.state, k = Object(le.a)(a), j = r.draftType === ue.c.edit, S = d !== ue.c.replyToPost;
+					return i.a.createElement(ke, {
 						className: Object(O.a)(n, {
 							[Oe.a.isTopLevelComment]: f,
 							[Oe.a.isRedesign]: m
@@ -1393,7 +1404,7 @@
 						initialHeight: this.props.initialHeight,
 						isCommentBoxDesignEnabled: m,
 						isExpanded: u,
-						rteState: k,
+						rteState: y,
 						rteRef: this.setRTEComponentRef,
 						domRef: this.setRTEDomElementRef,
 						onBlur: this.handleBlur,
@@ -1411,7 +1422,7 @@
 						trackToolbarClick: v.a,
 						toolbarPosition: "bottom",
 						renderToolbar: this.getToolbarRenderer(S, a, h, b, m)
-					})), this.state.showError ? Object(ae.c)(l) : null, e === y && i.a.createElement(M.a, {
+					})), this.state.showError ? Object(ae.c)(l) : null, e === k && i.a.createElement(M.a, {
 						actionText: w.fbt._("Discard", null, {
 							hk: "1kJ5PR"
 						}),
@@ -1428,7 +1439,7 @@
 						withOverlay: !0
 					}), i.a.createElement(he.a, {
 						editKey: a,
-						hasValue: fe.a.hasContent(k)
+						hasValue: fe.a.hasContent(y)
 					}))
 				}
 			}
@@ -1644,7 +1655,7 @@
 				_ = C.a.div("Container", g.a),
 				v = C.a.table("Table", g.a),
 				O = C.a.p("P", g.a);
-			class k extends r.a.Component {
+			class y extends r.a.Component {
 				render() {
 					return r.a.createElement(d.a, null, r.a.createElement(a.a, {
 						onClosePressed: this.props.closeModal,
@@ -1663,10 +1674,10 @@
 					})))))
 				}
 			}
-			const y = Object(i.b)(null, (e, t) => ({
+			const k = Object(i.b)(null, (e, t) => ({
 				closeModal: () => e(Object(p.i)(E))
-			}))(k);
-			t.a = Object(u.a)(Object(m.c)(y))
+			}))(y);
+			t.a = Object(u.a)(Object(m.c)(k))
 		},
 		"./src/reddit/components/PostCreationForm/MarkdownEditor/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1708,8 +1719,8 @@
 				_ = E.a.span("ModeDescription", C.a),
 				v = E.a.div("ModeWrapper", C.a),
 				O = E.a.button("SwitchModeButton", C.a),
-				k = E.a.wrapped(d.a, "MarkdownHelpButton", C.a),
-				y = E.a.div("Toolbar", C.a),
+				y = E.a.wrapped(d.a, "MarkdownHelpButton", C.a),
+				k = E.a.div("Toolbar", C.a),
 				T = Object(i.c)({
 					activeModalId: f.a,
 					isConverting: e => Object(x.a)(e)
@@ -1784,7 +1795,7 @@
 					}, s.a.createElement(c.a, {
 						className: o,
 						isFocused: i
-					}, s.a.createElement(y, null, s.a.createElement(v, null, s.a.createElement(_, null, "Markdown"), s.a.createElement(k, {
+					}, s.a.createElement(k, null, s.a.createElement(v, null, s.a.createElement(_, null, "Markdown"), s.a.createElement(y, {
 						onClick: this.props.helpModalToggled
 					})), s.a.createElement(O, {
 						onClick: this.handleSwitchModeClick
@@ -2007,8 +2018,8 @@
 					})), t
 				})(r)
 			});
-			var k = n("./src/reddit/components/PostCreationForm/MarkdownEditor/index.tsx"),
-				y = n("./src/reddit/components/RichTextEditor/index.tsx"),
+			var y = n("./src/reddit/components/PostCreationForm/MarkdownEditor/index.tsx"),
+				k = n("./src/reddit/components/RichTextEditor/index.tsx"),
 				T = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				M = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				R = n("./src/reddit/controls/ErrorText/index.tsx"),
@@ -2162,7 +2173,7 @@
 						hk: "FsWrq"
 					}));
 					const v = !T.a.isAllMediaUploaded(g, l);
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(W, null, e === h.h.RICH_TEXT ? a.a.createElement(y.a, {
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(W, null, e === h.h.RICH_TEXT ? a.a.createElement(k.a, {
 						allowMediaUploads: !0,
 						className: Object(m.a)(P.a.Editor, {
 							[P.a.isPending]: !!i
@@ -2179,7 +2190,7 @@
 						rteRef: this.setRteRef,
 						trackToolbarClick: r.a,
 						placeholderText: C
-					}) : a.a.createElement(k.a, {
+					}) : a.a.createElement(y.a, {
 						initialHeight: this.state.editorHeight,
 						instanceRef: this.setMarkdownEditorRef,
 						disabled: !!i,
@@ -2508,21 +2519,24 @@
 		"./src/reddit/endpoints/economics/specialMembership.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
-			})), n.d(t, "b", (function() {
 				return c
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return l
 			})), n.d(t, "d", (function() {
 				return m
+			})), n.d(t, "e", (function() {
+				return u
+			})), n.d(t, "c", (function() {
+				return p
 			}));
 			var o = n("./src/config.ts"),
 				s = n("./src/lib/omitHeaders/index.ts"),
 				r = n("./src/reddit/constants/headers.ts"),
 				i = n("./src/reddit/endpoints/governance/requester.ts"),
-				a = n("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts");
+				a = n("./src/reddit/helpers/governanceErrorText/index.ts"),
+				d = n("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts");
 
-			function d(e, t) {
+			function c(e, t) {
 				return Object(i.a)(e, {
 					endpoint: "".concat(o.a.metaUrl, "/communities/").concat(t.subredditId, "/me"),
 					method: "patch",
@@ -2536,7 +2550,7 @@
 				})
 			}
 
-			function c(e, t) {
+			function l(e, t) {
 				return Object(i.a)(e, {
 					endpoint: "".concat(o.a.metaUrl, "/ps/me/braintree-client-tokens"),
 					method: "post",
@@ -2546,7 +2560,7 @@
 				})
 			}
 
-			function l(e, t) {
+			function m(e, t) {
 				return Object(i.a)(e, {
 					endpoint: "".concat(o.a.metaUrl, "/orders"),
 					method: "post",
@@ -2572,7 +2586,7 @@
 				})
 			}
 
-			function m(e, t) {
+			function u(e, t) {
 				return Object(i.a)(Object(s.a)(e, [r.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/info?id=").concat(t.join(",")),
 					method: "get"
@@ -2582,7 +2596,7 @@
 							let {
 								data: t
 							} = e;
-							return Object(a.a)(t)
+							return Object(d.a)(t)
 						}).reduce((e, t) => (e[t.id] = t, e), {});
 						return Object.assign(Object.assign({}, e), {
 							body: t
@@ -2590,6 +2604,25 @@
 					}
 					return e
 				})
+			}
+			async function p(e, t) {
+				const n = await Object(i.a)(e, {
+					endpoint: "".concat(o.a.metaUrl, "/orders"),
+					method: "post",
+					data: Object.assign(Object.assign({}, t), {
+						currency: "points",
+						orderTarget: "special_membership",
+						products: [{
+							productId: "provisional_membership",
+							quantity: "1"
+						}],
+						targetArgs: {
+							renew: !1
+						}
+					})
+				});
+				if (!n.ok) throw new Error("Error fetching provisional membership: ".concat(Object(a.b)(n.error)));
+				return n.body
 			}
 		},
 		"./src/reddit/endpoints/economics/subredditPremium.ts": function(e, t, n) {
@@ -2799,4 +2832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.55e702f2dc5d39668068.js.map
+//# sourceMappingURL=RichTextEditor.accb915bb823e3101dd4.js.map

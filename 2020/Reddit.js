@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.19c4dff5747e6d0de442.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b80754a583f1f6ba777c.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -576,54 +576,51 @@
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return p
+				return m
 			})), s.d(t, "a", (function() {
-				return b
+				return p
 			}));
 			var n = s("./src/lib/constants/index.ts"),
 				a = s("./src/lib/makeRequest/index.ts"),
 				r = s("./src/config.ts"),
 				o = s("./src/reddit/endpoints/governance/requester.ts");
-
-			function i(e, t) {
-				return Object(o.a)(e, {
-					method: "get",
-					endpoint: "".concat(r.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
-				})
-			}
-			var c = s("./src/lib/makeActionCreator/index.ts"),
-				d = s("./src/reddit/actions/economics/me/constants.ts");
-			const l = Object(c.a)(d.a),
-				u = Object(c.a)(d.b),
-				m = Object(c.a)(d.c),
-				p = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-					return async (t, s, n) => {
-						let {
-							apiContext: a
-						} = n;
-						const r = s();
-						if (!r.economics.me.fetched || e && !r.economics.me.data.specialMemberships) {
-							const s = await i(a(), e);
-							if (s.ok) {
-								const n = s.body;
-								e && !n.specialMemberships && (n.specialMemberships = {}), t(l(n))
-							}
+			var i = s("./src/lib/makeActionCreator/index.ts"),
+				c = s("./src/reddit/actions/economics/me/constants.ts");
+			const d = Object(i.a)(c.a),
+				l = Object(i.a)(c.b),
+				u = Object(i.a)(c.c),
+				m = e => async (t, s, n) => {
+					let {
+						apiContext: a
+					} = n;
+					const i = e && e.includeMemberships || !1,
+						c = e && e.forceFetch || !1,
+						l = s();
+					if (!l.economics.me.fetched || i && !l.economics.me.data.specialMemberships || c) {
+						const e = await
+						function(e, t) {
+							return Object(o.a)(e, {
+								method: "get",
+								endpoint: "".concat(r.a.metaUrl, "/users/me").concat(t ? "?fields=specialMemberships" : "")
+							})
+						}(a(), i);
+						if (e.ok) {
+							const s = e.body;
+							i && !s.specialMemberships && (s.specialMemberships = {}), t(d(s))
 						}
 					}
-				},
-				b = () => async (e, t) => {
+				}, p = () => async (e, t) => {
 					const s = t(),
 						r = s.economics.me.data;
 					if (!r) throw new Error("me data required for copy to be fetched");
 					if (!s.economics.pointsCopy.fetched) {
-						e(u());
+						e(l());
 						const t = "https://".concat(r.pointsDocsBaseUrl, "v1.json?web"),
 							s = await Object(a.b)({
 								endpoint: t,
 								method: n.db.GET
 							});
-						s.ok && s.body && e(m(s.body))
+						s.ok && s.body && e(u(s.body))
 					}
 				}
 		},
@@ -652,7 +649,7 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return P
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "g", (function() {
 				return E
 			})), s.d(t, "b", (function() {
 				return j
@@ -662,6 +659,8 @@
 				return w
 			})), s.d(t, "c", (function() {
 				return _
+			})), s.d(t, "f", (function() {
+				return k
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/lodash/forOwn.js"),
@@ -701,12 +700,14 @@
 					apiContext: n
 				} = s;
 				if (!t().user.account) return;
-				await e(Object(C.b)(!0));
+				await e(Object(C.b)({
+					includeMemberships: !0
+				}));
 				const a = t().economics.me.data.specialMemberships || {},
 					r = Object.keys(a);
 				if (r.length) {
-					const t = await Object(i.d)(n(), r);
-					t.ok && e(Object(O.f)(t.body))
+					const t = await Object(i.e)(n(), r);
+					t.ok && e(Object(O.g)(t.body))
 				}
 			}, E = (e, t) => async (s, n, a) => {
 				let {
@@ -717,7 +718,7 @@
 					d = !i || i.status !== g.a.Fetched || t;
 				if (o && d) {
 					const t = await Object(c.a)(r(), e, o.id);
-					s(Object(O.h)(t))
+					s(Object(O.i)(t))
 				}
 			}, j = e => async (t, s, n) => {
 				let {
@@ -798,6 +799,16 @@
 						initialView: b.c.MyBadges
 					}))
 				}
+			}, k = e => async (t, s, n) => {
+				let {
+					apiContext: a
+				} = n;
+				const {
+					wallet: r
+				} = await Object(i.c)(a(), e);
+				t(Object(O.f)({
+					wallet: r
+				})), await t(E(e.subredditId, !0))
 			}
 		},
 		"./src/reddit/actions/emailCollection/index.ts": function(e, t, s) {
@@ -9831,21 +9842,24 @@
 		"./src/reddit/endpoints/economics/specialMembership.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
-			})), s.d(t, "b", (function() {
 				return d
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "b", (function() {
 				return l
 			})), s.d(t, "d", (function() {
 				return u
+			})), s.d(t, "e", (function() {
+				return m
+			})), s.d(t, "c", (function() {
+				return p
 			}));
 			var n = s("./src/config.ts"),
 				a = s("./src/lib/omitHeaders/index.ts"),
 				r = s("./src/reddit/constants/headers.ts"),
 				o = s("./src/reddit/endpoints/governance/requester.ts"),
-				i = s("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts");
+				i = s("./src/reddit/helpers/governanceErrorText/index.ts"),
+				c = s("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts");
 
-			function c(e, t) {
+			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(n.a.metaUrl, "/communities/").concat(t.subredditId, "/me"),
 					method: "patch",
@@ -9859,7 +9873,7 @@
 				})
 			}
 
-			function d(e, t) {
+			function l(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(n.a.metaUrl, "/ps/me/braintree-client-tokens"),
 					method: "post",
@@ -9869,7 +9883,7 @@
 				})
 			}
 
-			function l(e, t) {
+			function u(e, t) {
 				return Object(o.a)(e, {
 					endpoint: "".concat(n.a.metaUrl, "/orders"),
 					method: "post",
@@ -9895,7 +9909,7 @@
 				})
 			}
 
-			function u(e, t) {
+			function m(e, t) {
 				return Object(o.a)(Object(a.a)(e, [r.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/info?id=").concat(t.join(",")),
 					method: "get"
@@ -9905,7 +9919,7 @@
 							let {
 								data: t
 							} = e;
-							return Object(i.a)(t)
+							return Object(c.a)(t)
 						}).reduce((e, t) => (e[t.id] = t, e), {});
 						return Object.assign(Object.assign({}, e), {
 							body: t
@@ -9913,6 +9927,25 @@
 					}
 					return e
 				})
+			}
+			async function p(e, t) {
+				const s = await Object(o.a)(e, {
+					endpoint: "".concat(n.a.metaUrl, "/orders"),
+					method: "post",
+					data: Object.assign(Object.assign({}, t), {
+						currency: "points",
+						orderTarget: "special_membership",
+						products: [{
+							productId: "provisional_membership",
+							quantity: "1"
+						}],
+						targetArgs: {
+							renew: !1
+						}
+					})
+				});
+				if (!s.ok) throw new Error("Error fetching provisional membership: ".concat(Object(i.b)(s.error)));
+				return s.body
 			}
 		},
 		"./src/reddit/endpoints/economics/subredditPremium.ts": function(e, t, s) {
@@ -13649,4 +13682,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.19c4dff5747e6d0de442.js.map
+//# sourceMappingURL=Reddit.b80754a583f1f6ba777c.js.map

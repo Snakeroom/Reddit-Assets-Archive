@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.8a1316eb5cc75b447f87.js
-// Retrieved at 7/14/2020, 8:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.121eb7ff32dfe2db7fd9.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal~ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1069,19 +1069,21 @@
 						label: t,
 						children: n,
 						inputRef: a,
-						className: o,
-						redditStyle: l
-					} = e, i = p(e, ["label", "children", "inputRef", "className", "redditStyle"]), c = void 0 !== e.value && "" !== e.value;
+						isInvalid: o,
+						className: l,
+						redditStyle: i
+					} = e, c = p(e, ["label", "children", "inputRef", "isInvalid", "className", "redditStyle"]), d = void 0 !== e.value && "" !== e.value;
 					return r.a.createElement("div", {
-						className: Object(s.a)(u.a.inputMovingLabelWrapper, o, {
-							[u.a.mIsRedditStyle]: l
+						className: Object(s.a)(u.a.inputMovingLabelWrapper, l, {
+							[u.a.mIsInvalid]: o,
+							[u.a.mIsRedditStyle]: i
 						}),
 						onClick: h
 					}, r.a.createElement(x, m({
 						innerRef: a
-					}, i)), e.label && r.a.createElement("label", {
+					}, c)), e.label && r.a.createElement("label", {
 						className: Object(s.a)(u.a.label, {
-							[u.a.mHasValue]: c
+							[u.a.mHasValue]: d
 						})
 					}, e.label), e.children)
 				},
@@ -1301,4 +1303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrowdControlModal~ProfileModeration~Settings~SubredditCreation.8a1316eb5cc75b447f87.js.map
+//# sourceMappingURL=CrowdControlModal~ProfileModeration~Settings~SubredditCreation.121eb7ff32dfe2db7fd9.js.map

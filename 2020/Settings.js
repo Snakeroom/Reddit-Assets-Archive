@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.bc4b3a2b8a81c8ca0f2a.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.32cc176f05955ccaaeca.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -453,87 +453,80 @@
 		},
 		"./src/reddit/components/Economics/Price/index.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				a = n.n(s),
-				o = n("./node_modules/react-redux/es/index.js"),
-				r = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/lib/classNames/index.ts"),
-				c = n("./src/lib/currency/centsToDollars/index.ts"),
-				l = n("./src/lib/prettyPrintNumber/index.ts"),
-				d = n("./src/reddit/components/Governance/Token/index.tsx"),
-				m = n("./src/reddit/helpers/governance/tokens.ts"),
-				u = n("./src/reddit/selectors/gov.ts"),
-				p = n("./src/reddit/components/Economics/Price/strings.ts"),
-				b = n("./src/reddit/components/Economics/Price/index.m.less"),
-				h = n.n(b);
-			const {
-				fbt: g
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), f = e => {
-				let {
-					subredditId: t,
-					pointPrice: n
-				} = e;
-				return a.a.createElement(a.a.Fragment, null, a.a.createElement(d.a, {
-					className: h.a.token,
-					subredditId: t
-				}), n)
-			}, v = Object(r.c)({
-				tokenDisplayConversion: u.o,
-				tokenName: u.p
-			});
-			t.a = Object(o.b)(v)(e => {
-				const {
-					className: t,
-					monthly: n,
-					subredditId: s,
-					tokenDisplayConversion: o,
-					tokenName: r
-				} = e, d = e.dollarPrice && "$".concat(Object(c.a)(e.dollarPrice, !0)), u = e.tokenPrice && Object(l.a)(Object(m.b)(e.tokenPrice, o)) + " " + r;
-				if (!d && !u) return null;
-				const b = n ? p.a.Monthly : p.a.Once;
-				return a.a.createElement("span", {
-					className: Object(i.a)(t, h.a.price)
-				}, d && u ? g._("{dollar-price} or {point-price}", [g._param("dollar-price", Object(p.c)(d, b)), g._param("point-price", a.a.createElement(f, {
-					subredditId: s,
-					pointPrice: Object(p.c)(u, b)
-				}))], {
-					hk: "2Gif0l"
-				}) : d ? Object(p.b)(d, b) : u ? Object(p.b)(u, b) : null)
-			})
-		},
-		"./src/reddit/components/Economics/Price/strings.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			})), n.d(t, "c", (function() {
-				return o
-			})), n.d(t, "b", (function() {
-				return r
-			}));
-			var s, a = n("./node_modules/fbt/lib/FbtPublic.js");
+			var s, a = n("./node_modules/react/index.js"),
+				o = n.n(a),
+				r = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/lib/classNames/index.ts"),
+				l = n("./src/lib/currency/centsToDollars/index.ts"),
+				d = n("./src/lib/prettyPrintNumber/index.ts"),
+				m = n("./src/reddit/components/Governance/Token/index.tsx"),
+				u = n("./src/reddit/helpers/governance/tokens.ts"),
+				p = n("./src/reddit/selectors/gov.ts"),
+				b = n("./node_modules/fbt/lib/FbtPublic.js");
 			! function(e) {
 				e[e.Monthly = 0] = "Monthly", e[e.Once = 1] = "Once"
 			}(s || (s = {}));
-			const o = (e, t) => {
+			const h = (e, t) => {
 					if (e) switch (t) {
 						case s.Monthly:
-							return a.fbt._("{price} /mo", [a.fbt._param("price", e)], {
-								hk: "4CwhpC"
+							return b.fbt._("{price}/mo", [b.fbt._param("price", e)], {
+								hk: "3npGvZ"
 							});
 						default:
 							return e
 					}
 				},
-				r = (e, t) => {
+				g = (e, t) => {
 					if (e) switch (t) {
 						case s.Monthly:
-							return a.fbt._("{price} / month", [a.fbt._param("price", e)], {
+							return b.fbt._("{price} / month", [b.fbt._param("price", e)], {
 								hk: "4ugXuk"
 							});
 						default:
 							return e
 					}
-				}
+				};
+			var f = n("./src/reddit/components/Economics/Price/index.m.less"),
+				v = n.n(f);
+			const {
+				fbt: y
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = e => {
+				let {
+					subredditId: t,
+					pointPrice: n
+				} = e;
+				return o.a.createElement(o.a.Fragment, null, o.a.createElement(m.a, {
+					className: v.a.token,
+					subredditId: t
+				}), n)
+			}, k = Object(i.c)({
+				tokenDisplayConversion: p.p,
+				tokenName: p.q
+			});
+			t.a = Object(r.b)(k)(e => {
+				const {
+					className: t,
+					hideTokenName: n,
+					monthly: a,
+					subredditId: r,
+					tokenDisplayConversion: i,
+					tokenName: m
+				} = e, p = e.dollarPrice && "$".concat(Object(l.a)(e.dollarPrice, !0)), b = e.tokenPrice && Object(d.a)(Object(u.b)(e.tokenPrice, i)) + (n ? "" : " " + m);
+				if (!p && !b) return null;
+				const f = a ? s.Monthly : s.Once;
+				return o.a.createElement("span", {
+					className: Object(c.a)(t, v.a.price)
+				}, p && b ? y._("{dollar-price} or {point-price}", [y._param("dollar-price", h(p, f)), y._param("point-price", o.a.createElement(_, {
+					subredditId: r,
+					pointPrice: h(b, f)
+				}))], {
+					hk: "2Gif0l"
+				}) : p ? g(p, f) : b ? o.a.createElement(_, {
+					subredditId: r,
+					pointPrice: g(b, f)
+				}) : null)
+			})
 		},
 		"./src/reddit/components/Economics/SubredditPremium/PurchaseModal/Benefits/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -764,7 +757,7 @@
 				d = n("./src/reddit/components/Governance/Token/index.m.less"),
 				m = n.n(d);
 			const u = Object(r.c)({
-				tokenSymbol: l.q
+				tokenSymbol: l.r
 			});
 			t.a = Object(o.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -6290,7 +6283,7 @@
 				} = t;
 				return {
 					onCancelMembership: () => {
-						e(Object(bo.g)({
+						e(Object(bo.h)({
 							subredditId: n
 						})), s()
 					},
@@ -6782,4 +6775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.bc4b3a2b8a81c8ca0f2a.js.map
+//# sourceMappingURL=Settings.32cc176f05955ccaaeca.js.map

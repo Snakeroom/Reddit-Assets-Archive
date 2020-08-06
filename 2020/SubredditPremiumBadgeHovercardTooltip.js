@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.1d1c37c040c2f11a20a6.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.756c94954e84f30ae73c.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -327,7 +327,7 @@
 						const t = Object.keys(r.collections);
 						if (t.length) {
 							const r = t[0];
-							return Object(m.i)(e, {
+							return Object(m.h)(e, {
 								collectionId: r,
 								subredditId: s
 							})
@@ -342,7 +342,7 @@
 					} = t;
 					const o = e.user.account;
 					if (o && !Object(i.c)(r) && n === l.a.Achievement && d.a[r.id]) {
-						const t = Object(u.i)(e, {
+						const t = Object(u.j)(e, {
 							subredditId: s,
 							userId: o.id
 						});
@@ -510,4 +510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.1d1c37c040c2f11a20a6.js.map
+//# sourceMappingURL=SubredditPremiumBadgeHovercardTooltip.756c94954e84f30ae73c.js.map

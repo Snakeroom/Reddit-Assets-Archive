@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.69ba850bad45c459b4d8.js
-// Retrieved at 8/6/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fd13253a20eade1ca89f.js
+// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3302,14 +3302,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("93ab55e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("a3dc4d7-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "93ab55e-production",
+						release: "a3dc4d7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3737,7 +3737,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "93ab55e-production",
+							releaseClient: "a3dc4d7-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -7615,6 +7615,7 @@
 					spSupport: v.w,
 					spTipping: v.x,
 					spWalletRegistrationBanner: v.y,
+					spWebTransactions: v.z,
 					scheduledPosts: e => {
 						const t = Object(f.e)(e);
 						return !!t && Object(h.e)(e, {
@@ -7742,53 +7743,55 @@
 			i.d(t, "a", (function() {
 				return w
 			})), i.d(t, "b", (function() {
-				return E
+				return I
 			})), i.d(t, "c", (function() {
-				return j
-			})), i.d(t, "d", (function() {
 				return B
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "d", (function() {
 				return x
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "e", (function() {
 				return R
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "f", (function() {
 				return k
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "g", (function() {
 				return C
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "h", (function() {
 				return N
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "i", (function() {
 				return P
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "j", (function() {
 				return L
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return A
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "l", (function() {
 				return D
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "m", (function() {
 				return G
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "n", (function() {
 				return M
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "o", (function() {
 				return U
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "p", (function() {
 				return q
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "q", (function() {
 				return V
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "r", (function() {
 				return H
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "s", (function() {
 				return W
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "t", (function() {
 				return z
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "u", (function() {
 				return K
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "v", (function() {
 				return Q
-			})), i.d(t, "y", (function() {
-				return J
 			})), i.d(t, "w", (function() {
+				return J
+			})), i.d(t, "x", (function() {
 				return Y
+			})), i.d(t, "y", (function() {
+				return X
+			})), i.d(t, "z", (function() {
+				return Z
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/reddit/selectors/platform.ts");
@@ -7813,9 +7816,10 @@
 				T = new Set(["funkygoose"]),
 				S = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "shittymorph", "stellartest"]),
 				F = new Set(["daonuts", "ethtrader", "funkygoose", "mountainbiking", "stellar", "stellartest"]),
-				E = new Set(["stellar", "stellartest"]),
-				I = new Set(["daonuts", "ethtrader"]),
-				O = function() {
+				E = new Set(["cryptocurrencytest", "funkygoose", "gigapoints", "pointsnitebr"]),
+				I = new Set(["stellar", "stellartest"]),
+				O = new Set(["daonuts", "ethtrader"]),
+				j = function() {
 					for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++) t[i] = arguments[i];
 					return e => {
 						const i = Object(n.e)(e);
@@ -7827,29 +7831,30 @@
 						return !1
 					}
 				},
-				j = O(f, r),
-				B = O(s),
-				x = O(o),
-				R = O(d),
-				k = O(l),
-				C = O(a),
-				N = O(u),
-				P = O(f, g, c),
-				L = O(f, _),
-				A = O(m),
-				D = O(p),
-				G = O(h),
-				M = O(f),
-				U = O(f, g),
-				q = O(S, b),
-				V = O(S, w),
-				H = O(S, y),
-				W = O(v),
-				z = O(f, T),
-				K = O(E),
-				Q = O(v, F),
-				J = O(I),
-				Y = O(S)
+				B = j(f, r),
+				x = j(s),
+				R = j(o),
+				k = j(d),
+				C = j(l),
+				N = j(a),
+				P = j(u),
+				L = j(f, g, c),
+				A = j(f, _),
+				D = j(m),
+				G = j(p),
+				M = j(h),
+				U = j(f),
+				q = j(f, g),
+				V = j(S, b),
+				H = j(S, w),
+				W = j(S, y),
+				z = j(v),
+				K = j(f, T),
+				Q = j(I),
+				J = j(S),
+				Y = j(v, F),
+				X = j(O),
+				Z = j(E)
 		},
 		"./src/reddit/featureFlags/utils.ts": function(e, t, i) {
 			"use strict";
@@ -22028,4 +22033,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.69ba850bad45c459b4d8.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.fd13253a20eade1ca89f.js.map
