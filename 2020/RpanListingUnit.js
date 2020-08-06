@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.6acb73b9752f96a4a9a2.js
-// Retrieved at 8/6/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.68158e3256ae1c80ef26.js
+// Retrieved at 8/6/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				R = Object({
-					SENTRY_RELEASE_VERSION: "3cf0267-production"
+					SENTRY_RELEASE_VERSION: "56c5a22-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -1014,7 +1014,7 @@
 					let {
 						listingName: s
 					} = t;
-					const i = Object(T.m)(e, {
+					const i = Object(T.l)(e, {
 						listingName: s
 					});
 					let r;
@@ -1032,11 +1032,11 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(T.m)(e, {
+					return Object(T.l)(e, {
 						listingName: s
 					})
 				},
-				totalLiveWatchers: T.n
+				totalLiveWatchers: T.m
 			}), (e, t) => ({
 				onHideRpanUnit: () => e(Object(f.D)(t.listingName)),
 				openOverlay: t => e(Object(O.a)(t)),
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.6acb73b9752f96a4a9a2.js.map
+//# sourceMappingURL=RpanListingUnit.68158e3256ae1c80ef26.js.map
