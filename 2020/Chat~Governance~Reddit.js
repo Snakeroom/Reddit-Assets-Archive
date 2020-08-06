@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d14f937ae885cfb0acaa.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d8b4f82852e49d1464e8.js
+// Retrieved at 8/6/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1426,9 +1426,9 @@
 		},
 		"./src/chat/selectors/messages.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "i", (function() {
+			i.d(t, "j", (function() {
 				return d
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "i", (function() {
 				return l
 			})), i.d(t, "c", (function() {
 				return a
@@ -1440,12 +1440,14 @@
 				return _
 			})), i.d(t, "g", (function() {
 				return m
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "h", (function() {
 				return p
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return h
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "a", (function() {
 				return f
+			})), i.d(t, "k", (function() {
+				return g
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/linkMatchers/customLinks.ts"),
@@ -1461,28 +1463,34 @@
 					if (t) return e.messages.models[t]
 				},
 				u = (e, t) => {
+					if (t) {
+						let i;
+						return "string" == typeof t && (i = p(e, t)), "number" != typeof t || isNaN(t) || (i = a(e, t)), i && i.messageData
+					}
+				},
+				c = (e, t) => {
 					const i = a(e, t);
 					return i && i.sender
 				},
-				c = (e, t) => {
-					const i = u(e, t);
+				_ = (e, t) => {
+					const i = c(e, t);
 					return i && i.userId
 				},
-				_ = (e, t) => {
+				m = (e, t) => {
 					const i = a(e, t);
 					return i && i.messageData.type
 				},
-				m = (e, t) => e.messages.pending[t],
-				p = (e, t) => {
+				p = (e, t) => e.messages.pending[t],
+				h = (e, t) => {
 					const i = Object(s.a)(e);
 					return Object.keys(n.b).map(e => i && t.includes("@" + n.b[e]) && n.b[e]).filter(e => e)
 				},
-				h = e => {
+				f = e => {
 					const t = l(e),
 						i = Object(o.b)(e);
 					return Object(r.a)(t, i)
 				},
-				f = e => {
+				g = e => {
 					const t = l(e);
 					return Object(r.b)(t)
 				}
@@ -3302,14 +3310,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("38b930d-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("2ce13aa-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "38b930d-production",
+						release: "2ce13aa-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3737,7 +3745,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "38b930d-production",
+							releaseClient: "2ce13aa-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -21243,6 +21251,7 @@
 				members: e.members,
 				invitation_preview_type: e.invitation_preview_type,
 				message_type: e.message_type,
+				message_body: e.message_body,
 				number_channels: e.number_channels,
 				number_pending_invites: e.number_pending_invites,
 				number_members: e.number_members,
@@ -22070,4 +22079,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.d14f937ae885cfb0acaa.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.d8b4f82852e49d1464e8.js.map

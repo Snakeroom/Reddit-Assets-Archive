@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e5ff4b1a46ac8d0bc4f6.js
-// Retrieved at 8/6/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ac18aa6683e0fd4eb376.js
+// Retrieved at 8/6/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -16,9 +16,9 @@
 			n.d(t, "f", (function() {
 				return M
 			})), n.d(t, "d", (function() {
-				return A
-			})), n.d(t, "e", (function() {
 				return D
+			})), n.d(t, "e", (function() {
+				return A
 			})), n.d(t, "p", (function() {
 				return L
 			})), n.d(t, "o", (function() {
@@ -86,7 +86,7 @@
 			})), n.d(t, "H", (function() {
 				return ke
 			})), n.d(t, "O", (function() {
-				return Ae
+				return De
 			})), n.d(t, "E", (function() {
 				return Fe
 			})), n.d(t, "F", (function() {
@@ -133,8 +133,8 @@
 				w = n("./src/chat/selectors/subreddit.ts"),
 				T = n("./src/chat/singleton/SendbirdSDK.ts");
 			const M = "CHANNEL__ADD_SUCCESS",
-				A = "CHANNEL__ADD_FAIL",
-				D = "CHANNEL__CREATE_CHANNEL_START",
+				D = "CHANNEL__ADD_FAIL",
+				A = "CHANNEL__CREATE_CHANNEL_START",
 				L = "CHANNEL__SELECT_BEGIN",
 				U = "CHANNEL__RESET_UNREAD_COUNT",
 				B = "CHANNEL__SELECT_END",
@@ -319,13 +319,13 @@
 							const t = await T.b.addChannelModelByChannelId(a);
 							if (t && !s) return void e(Object(c.b)(Object(j.channelAction)(t.channelId, d, O)))
 						}
-						e(Ae()), e(Object(l.x)())
+						e(De()), e(Object(l.x)())
 					}
 				}, Ee = (Object(r.a)("MESSAGE__MARK_AS_READ"), e => async (t, n) => {
 					const a = n(),
 						s = e || Object(S.d)(a);
 					s && (await t(fe(s)), await T.b.markChannelAsRead(), t(Object(d.b)()))
-				}), ve = Object(r.a)(D), Ie = Object(r.a)(M), ye = Object(r.a)(A), xe = (e, t, n) => {
+				}), ve = Object(r.a)(A), Ie = Object(r.a)(M), ye = Object(r.a)(D), xe = (e, t, n) => {
 					const a = e.map(e => ({
 						user_id: e,
 						nickname: t[e].name
@@ -414,7 +414,7 @@
 					}
 				}, Me = e => async (t, n) => {
 					e && e.channelId ? e.channelAction ? t(Object(c.c)(Object(j.channelAction)(e.channelId, e.channelAction, e.subredditName))) : t(Object(c.c)(Object(j.channelUrl)(e.channelId, e.subredditName))) : t(Object(c.c)(j.rootUrl))
-				}, Ae = e => async (t, n) => {
+				}, De = e => async (t, n) => {
 					const {
 						platform: {
 							currentPage: a
@@ -425,7 +425,7 @@
 						return t(Ne(e))
 					}
 					return t(e ? we(e) : Te())
-				}, De = Object(r.a)(V), Le = Object(r.a)(q), Ue = Object(r.a)(z), Be = Object(r.a)(W), Pe = Object(r.a)(J), Re = Object(r.a)(Z), He = Object(r.a)(Y), Fe = () => async (e, t) => {
+				}, Ae = Object(r.a)(V), Le = Object(r.a)(q), Ue = Object(r.a)(z), Be = Object(r.a)(W), Pe = Object(r.a)(J), Re = Object(r.a)(Z), He = Object(r.a)(Y), Fe = () => async (e, t) => {
 					await Promise.all([e(We()), e(Object(o.r)()), e(Object(o.q)()), e(Object(o.p)()), e(Ge()), e(ze())]);
 					const n = t().channels.models;
 					await e(Ke(n)), e(He()), e(_e())
@@ -443,7 +443,7 @@
 						t(Object(h.v)(e))
 					}
 				}, Ge = () => async (e, t) => {
-					e(De());
+					e(Ae());
 					const n = await T.b.getExistingChannels(p.b.INVITED, p.h.NonSuper).catch(() => null);
 					if (n) {
 						const {
@@ -705,13 +705,13 @@
 						const n = Object(m.a)(i);
 						e(S(n))
 					} else e(y(o.error))
-				}, k = "SUBREDDIT_CHANNELS__FETCH_JOINED_FAILED", w = "SUBREDDIT_CHANNELS__FETCH_JOINED", T = "SUBREDDIT_CHANNELS__ADD_JOINED_COLLECTION", M = Object(s.a)(k), A = Object(s.a)(w), D = Object(s.a)(T), L = () => async (e, t) => {
+				}, k = "SUBREDDIT_CHANNELS__FETCH_JOINED_FAILED", w = "SUBREDDIT_CHANNELS__FETCH_JOINED", T = "SUBREDDIT_CHANNELS__ADD_JOINED_COLLECTION", M = Object(s.a)(k), D = Object(s.a)(w), A = Object(s.a)(T), L = () => async (e, t) => {
 					const n = t(),
 						{
 							JOINED: a
 						} = i.b;
 					if (!Object(O.f)(n)) return;
-					e(A());
+					e(D());
 					const s = await f.b.getExistingChannels(a, i.h.Super).catch(() => null);
 					if (s) {
 						const {
@@ -721,7 +721,7 @@
 						const r = t(),
 							o = Object(m.c)(n, a),
 							i = Object(p.t)(r, o);
-						return await e(D(Object.assign(Object.assign({}, o), {
+						return await e(A(Object.assign(Object.assign({}, o), {
 							sortedKeys: i
 						}))), void(s.hasMoreChannels && e(L()))
 					}
@@ -934,7 +934,7 @@
 			n.d(t, "a", (function() {
 				return k
 			})), n.d(t, "c", (function() {
-				return A
+				return D
 			})), n.d(t, "n", (function() {
 				return L
 			})), n.d(t, "u", (function() {
@@ -1029,11 +1029,14 @@
 							channelId: e,
 							clientMessageId: r
 						})), a(Object(l.v)(t.messageId))
-					}).catch(() => {
-						r && (a(Object(l.z)(r)), a(P({
-							clientMessageId: r,
-							toggle: !0
-						})))
+					}).catch(e => {
+						if (r) {
+							const t = "".concat(e.code, ": ").concat(e.message);
+							a(Object(l.z)(r, t)), a(P({
+								clientMessageId: r,
+								toggle: !0
+							}))
+						}
 					})
 				}, M = async (e, t, n) => {
 					const a = Object(r.c)(e);
@@ -1043,15 +1046,15 @@
 						const n = Object(x.g)(t, e);
 						return n || c.push(e), n && n.id
 					}).filter(e => e), ...(c.length && s()(await Promise.all(c.slice(0, 3).map(e => N.b.searchMemberByName(e, !0)))) || []).map(e => e && e.id).filter(e => e)]
-				}, A = "MESSAGE__ADD_PENDING_ONE", D = Object(o.a)(A), L = (e, t, n) => async (a, s) => {
+				}, D = "MESSAGE__ADD_PENDING_ONE", A = Object(o.a)(D), L = (e, t, n) => async (a, s) => {
 					const c = s();
 					if (Object(_.b)(t) && 1 === t.split(" ").length) return void F(a, c, e, t);
 					const r = Object(E.a)(c, e, t, n),
 						o = n === d.b.TEXT ? t : "";
-					a(D(r)), a(T(e, o, r.data))
+					a(A(r)), a(T(e, o, r.data))
 				}, U = (e, t) => async (n, a) => {
 					const s = a(),
-						c = Object(S.g)(s, t);
+						c = Object(S.h)(s, t);
 					c && (n(P({
 						clientMessageId: t,
 						toggle: !1
@@ -1064,7 +1067,7 @@
 					};
 					const i = Object(E.a)(t, n, JSON.stringify(o), c);
 					if (i) {
-						e(D(i));
+						e(A(i));
 						const t = await (async e => {
 							let {
 								chars: t,
@@ -1366,7 +1369,7 @@
 						s = Object(d.e)(n),
 						c = Object(i.a)(n),
 						r = Object(i.b)(n);
-					!a && !s && c && r && (await e(b(o.a.SubredditChatFtux)), await e(j(Object(l.h)(n))), Object(u.b)(n))
+					!a && !s && c && r && (await e(b(o.a.SubredditChatFtux)), await e(j(Object(l.i)(n))), Object(u.b)(n))
 				}
 		},
 		"./src/chat/actions/sendbird/config.ts": function(e, t, n) {
@@ -1842,9 +1845,9 @@
 			})), n.d(t, "h", (function() {
 				return M
 			})), n.d(t, "d", (function() {
-				return A
-			})), n.d(t, "b", (function() {
 				return D
+			})), n.d(t, "b", (function() {
+				return A
 			})), n.d(t, "k", (function() {
 				return L
 			})), n.d(t, "l", (function() {
@@ -1894,8 +1897,8 @@
 				Object(O.b)(t())
 			}, C = e => async (t, n) => {
 				Object(b.a)(n(), e)
-			}, _ = e => async (t, n) => {
-				Object(b.d)(n(), e)
+			}, _ = (e, t) => async (n, a) => {
+				Object(b.d)(a(), e, t)
 			}, E = (e, t) => async (n, a) => {
 				Object(b.b)(a(), e, t)
 			}, v = () => async (e, t) => {
@@ -1929,9 +1932,9 @@
 				l && Object(p.e)(n(), l)
 			}, M = (e, t) => async (e, n) => {
 				Object(p.d)(n(), t)
-			}, A = () => async (e, t) => {
-				Object(p.b)(t())
 			}, D = () => async (e, t) => {
+				Object(p.b)(t())
+			}, A = () => async (e, t) => {
 				Object(p.a)(t())
 			}, L = () => async (e, t) => {
 				Object(g.c)(t())
@@ -1951,7 +1954,7 @@
 						noun: "create_chat",
 						source: a.b.UserHovercard,
 						action: a.a.Click,
-						chat: Object.assign(Object.assign(Object.assign({}, Object(l.E)(e, t)), Object(l.C)(e, t)), Object(l.D)(e, t))
+						chat: Object.assign(Object.assign(Object.assign({}, Object(l.F)(e, t)), Object(l.D)(e, t)), Object(l.E)(e, t))
 					}, Object(d.a)(e)), Object(d.b)(e)))
 				})(n(), e)
 			}, F = () => async (e, t) => {
@@ -1969,7 +1972,7 @@
 						noun: "snoomoji",
 						source: a.b.ChatKeyboard,
 						action: a.a.View,
-						chat: Object.assign(Object.assign(Object.assign({}, Object(l.A)(e)), Object(l.p)(e)), Object(l.g)(e)),
+						chat: Object.assign(Object.assign(Object.assign({}, Object(l.B)(e)), Object(l.q)(e)), Object(l.g)(e)),
 						subreddit: Object.assign(Object.assign({}, Object(u.a)(e)), Object(u.b)(e))
 					}, Object(d.a)(e)))
 				})(s)
@@ -1979,7 +1982,7 @@
 						noun: "other_message",
 						source: a.b.ChatView,
 						action: a.a.ModDelete,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(l.A)(e)), Object(l.p)(e)), Object(l.g)(e)), Object(l.s)(e)), Object(l.n)(e)), Object(l.x)(e)),
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(l.B)(e)), Object(l.q)(e)), Object(l.g)(e)), Object(l.t)(e)), Object(l.o)(e)), Object(l.y)(e)),
 						subreddit: Object.assign(Object.assign({}, Object(u.a)(e)), Object(u.b)(e))
 					}, Object(d.a)(e)))
 				})(t())
@@ -1999,7 +2002,7 @@
 						noun: "user",
 						source: n,
 						action: a.a.Kick,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(l.A)(e)), Object(l.p)(e)), Object(l.g)(e)), Object(l.s)(e)), Object(l.n)(e)), Object(l.x)(e)),
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(l.B)(e)), Object(l.q)(e)), Object(l.g)(e)), Object(l.t)(e)), Object(l.o)(e)), Object(l.y)(e)),
 						subreddit: Object.assign(Object.assign({}, Object(u.a)(e)), Object(u.b)(e))
 					}, Object(d.a)(e)), {
 						actionInfo: Object.assign({
@@ -2013,7 +2016,7 @@
 						noun: "ban_user",
 						source: t,
 						action: a.a.Submit,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(l.A)(e)), Object(l.p)(e)), Object(l.g)(e)), Object(l.s)(e)), Object(l.n)(e)), Object(l.x)(e)),
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(l.B)(e)), Object(l.q)(e)), Object(l.g)(e)), Object(l.t)(e)), Object(l.o)(e)), Object(l.y)(e)),
 						subreddit: Object.assign(Object.assign({}, Object(u.a)(e)), Object(u.b)(e))
 					}, Object(d.a)(e)))
 				})(n(), e)
@@ -2139,8 +2142,8 @@
 				w = "FETCH_EXPERIMENTS_COMPLETED",
 				T = Object(i.a)(N),
 				M = Object(i.a)("USER__ACCOUNT_FETCH_PENDING"),
-				A = Object(i.a)(x),
-				D = Object(i.a)("USER__ACCOUNT_FETCH_FAILED"),
+				D = Object(i.a)(x),
+				A = Object(i.a)("USER__ACCOUNT_FETCH_FAILED"),
 				L = Object(i.a)(S),
 				U = Object(i.a)(k),
 				B = Object(i.a)(w),
@@ -2167,8 +2170,8 @@
 							const a = e[n];
 							return "boolean" == typeof a && (t[n] = a), "object" == typeof a && (t[n] = j(a)), t
 						}, {}))(n), c = !!a.prefNightmode;
-						e(A(a)), e(B(s)), e(Object(d.switchTheme)(c))
-					} else e(D(l.error))
+						e(D(a)), e(B(s)), e(Object(d.switchTheme)(c))
+					} else e(A(l.error))
 				}, R = "USER__USERS_FETCH_COMPLETED", H = Object(i.a)("USER__USERS_FETCH_PENDING"), F = Object(i.a)(R), K = Object(i.a)("USER__USERS_FETCH_FAILED"), G = e => async (t, n, a) => {
 					let {
 						apiContext: c
@@ -2488,7 +2491,7 @@
 					day: "numeric",
 					month: "short"
 				}).format,
-				A = new Intl.DateTimeFormat(void 0, {
+				D = new Intl.DateTimeFormat(void 0, {
 					month: "numeric",
 					day: "numeric",
 					year: "numeric",
@@ -2496,7 +2499,7 @@
 					minute: "numeric",
 					second: "numeric"
 				}).format,
-				D = e => e.toISOString();
+				A = e => e.toISOString();
 			var L = n("./src/chat/components/DateSplitter/index.m.less"),
 				U = n.n(L);
 			const B = i.a.div("TimeWrapper", U.a),
@@ -2703,7 +2706,7 @@
 					channel: y.w,
 					isMod: y.a
 				});
-			var Ae = Object(o.b)(Me, e => ({
+			var De = Object(o.b)(Me, e => ({
 					onDeleteMessage: (t, n, a) => {
 						e(Object(ve.b)(Object(xe.messageActionUrl)(t, n, Ie.a.DELETE, a)))
 					},
@@ -2748,8 +2751,8 @@
 						onClick: () => o ? h(b, a, m) : u(b, a, m)
 					}, r.a.createElement(ye.c, null))) : null
 				}),
-				De = n("./src/chat/components/Message/FailedMenu.m.less"),
-				Le = n.n(De);
+				Ae = n("./src/chat/components/Message/FailedMenu.m.less"),
+				Le = n.n(Ae);
 			const Ue = i.a.div("ButtonControls", Le.a),
 				Be = i.a.span("Text", Le.a),
 				Pe = i.a.wrapped(ye.b, "Button", Le.a);
@@ -2878,8 +2881,8 @@
 				CopyLink: wt,
 				Kick: Tt,
 				Leave: Mt,
-				LeaveRoom: At,
-				LockRoom: Dt,
+				LeaveRoom: Dt,
+				LockRoom: At,
 				MuteBadging: Lt,
 				MuteNotifs: Ut,
 				Profile: Bt,
@@ -2891,10 +2894,10 @@
 			} = yt, Gt = {
 				directChannel: [Bt, kt, Lt, Ht],
 				groupChannel: [Pt, Kt, xt, Mt, Lt, Ht],
-				subredditChannel: [St, wt, At, Dt, Lt, Rt, Ht, Ut, Ft, Kt],
+				subredditChannel: [St, wt, Dt, At, Lt, Rt, Ht, Ut, Ft, Kt],
 				members: [kt, Tt, Nt]
 			}, zt = {
-				lockRoom: (e, t, n) => !(e === Dt && (!t || n)),
+				lockRoom: (e, t, n) => !(e === At && (!t || n)),
 				unlockRoom: (e, t, n) => !!(e !== Rt || t && n),
 				copyLink: (e, t) => !(e === wt && !t),
 				muteBadging: (e, t) => !(e === Lt && t),
@@ -3076,8 +3079,8 @@
 					const t = "number" == typeof e.date ? new Date(e.date) : e.date;
 					return r.a.createElement("time", {
 						className: e.className,
-						dateTime: D(t),
-						title: A(t)
+						dateTime: A(t),
+						title: D(t)
 					}, e.children)
 				}, "TimeStamp", gn.a),
 				fn = n("./src/chat/components/MessageHeader/index.m.less"),
@@ -3125,8 +3128,8 @@
 				wn = i.a.wrapped(on, "MemberActionDropdown", Sn.a),
 				Tn = i.a.wrapped(En, "MessageHeaderLink", Sn.a),
 				Mn = i.a.h5("ChannelName", Sn.a),
-				An = i.a.span("TextOverflow", Sn.a),
-				Dn = i.a.wrapped(ye.d, "IconButton", Sn.a),
+				Dn = i.a.span("TextOverflow", Sn.a),
+				An = i.a.wrapped(ye.d, "IconButton", Sn.a),
 				Ln = i.a.div("Header", Sn.a);
 			var Un = e => {
 					const {
@@ -3142,7 +3145,7 @@
 						createdAt: s,
 						nickname: i,
 						userId: o
-					}, r.a.createElement(Mn, null, n ? r.a.createElement(Nn, null) : r.a.createElement(kn, null), r.a.createElement(An, null, a))), r.a.createElement(wn, {
+					}, r.a.createElement(Mn, null, n ? r.a.createElement(Nn, null) : r.a.createElement(kn, null), r.a.createElement(Dn, null, a))), r.a.createElement(wn, {
 						channelId: t,
 						containerClassName: l,
 						className: l,
@@ -3150,7 +3153,7 @@
 						id: "UserAction--Select-".concat(c),
 						isBlockedUser: !1,
 						userId: o
-					}, r.a.createElement(Dn, null, r.a.createElement(Qt, null))))
+					}, r.a.createElement(An, null, r.a.createElement(Qt, null))))
 				},
 				Bn = n("./src/chat/components/MessageReportDialog/index.m.less"),
 				Pn = n.n(Bn);
@@ -3298,7 +3301,7 @@
 				POST: na,
 				EMBED: aa,
 				SNOOMOJI: sa
-			} = Ie.b, ca = i.a.wrapped(Ae, "ActionButtonGroup", $n.a), ra = i.a.wrapped(e => r.a.createElement("div", {
+			} = Ie.b, ca = i.a.wrapped(De, "ActionButtonGroup", $n.a), ra = i.a.wrapped(e => r.a.createElement("div", {
 				className: Object(Ce.a)(e.className, {
 					[$n.a.dark]: e.darkBackground,
 					[$n.a.disabled]: e.disabled,
@@ -3506,7 +3509,7 @@
 				wa = n.n(ka),
 				Ta = n("./src/chat/components/Scroller/index.m.less"),
 				Ma = n.n(Ta);
-			class Aa extends r.a.Component {
+			class Da extends r.a.Component {
 				constructor(e) {
 					super(e), this.isUserScrolling = !1, this.list = null, this.previousScrollHeight = 0, this.scrollHandlers = [], this._isBatchLoading = !1, this.debounceScrollToBottom = wa()(() => this.scrollToBottom(!0), 1, {
 						leading: !1,
@@ -3613,15 +3616,15 @@
 						children: e,
 						className: t
 					} = this.props;
-					return r.a.createElement(Da, {
+					return r.a.createElement(Aa, {
 						className: t,
 						innerRef: e => this.list = e
 					}, e)
 				}
 			}
-			const Da = i.a.div("Scroller", Ma.a);
-			Da.displayName = "Scroller";
-			var La = Aa,
+			const Aa = i.a.div("Scroller", Ma.a);
+			Aa.displayName = "Scroller";
+			var La = Da,
 				Ua = n("./src/chat/constants/container.ts"),
 				Ba = n("./src/chat/constants/page.ts"),
 				Pa = n("./src/chat/icons/svgs/NavClose/index.tsx"),
@@ -3886,8 +3889,8 @@
 			var Ms = Object(o.b)(ws, e => ({
 				fetchSubredditChannelUsers: t => e(Object(is.e)(t))
 			}))(Ts);
-			const As = "Backspace",
-				Ds = "Enter",
+			const Ds = "Backspace",
+				As = "Enter",
 				Ls = "ArrowLeft",
 				Us = "ArrowUp",
 				Bs = "ArrowRight",
@@ -3925,7 +3928,7 @@
 					this.props.onChangeOnce(t)
 				}
 				handleKeyPress(e) {
-					e.key !== Ds || e.shiftKey || (e.preventDefault(), this.props.onSubmit()), this.handleSizing()
+					e.key !== As || e.shiftKey || (e.preventDefault(), this.props.onSubmit()), this.handleSizing()
 				}
 				handleKeyDown(e) {
 					e.key === Us && this.props.onKeyUp(e), e.key === Ps && this.props.onKeyDown(e), this.handleSizing()
@@ -4416,8 +4419,8 @@
 			var Tc = kc(wc),
 				Mc = n("./src/chat/components/CloseIcon/index.tsx");
 
-			function Ac() {
-				return (Ac = Object.assign || function(e) {
+			function Dc() {
+				return (Dc = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -4425,7 +4428,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Dc = e => r.a.createElement(G.a, Ac({}, e, {
+			const Ac = e => r.a.createElement(G.a, Dc({}, e, {
 				viewBox: "0 0 20 20"
 			}), r.a.createElement("path", {
 				id: "a",
@@ -4441,7 +4444,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			Dc.displayName = "NavMinimize";
+			Ac.displayName = "NavMinimize";
 			const Uc = e => r.a.createElement(G.a, Lc({}, e, {
 				viewBox: "0 0 20 20"
 			}), r.a.createElement("path", {
@@ -4494,7 +4497,7 @@
 						title: f.fbt._("Minimize chat", null, {
 							hk: "1gym9X"
 						})
-					}, r.a.createElement(Dc, null)), r.a.createElement(Fc, null)))
+					}, r.a.createElement(Ac, null)), r.a.createElement(Fc, null)))
 				}),
 				zc = n("./src/chat/controls/ChannelNameInput/index.m.less"),
 				Wc = n.n(zc);
@@ -4681,12 +4684,12 @@
 				Tr = i.a.span("TitleWrapper", Sr.a),
 				Mr = i.a.span("Title", Sr.a);
 			Mr.displayName = "Title";
-			const Ar = i.a.span("SubTitle", Sr.a);
-			var Dr;
-			Ar.displayName = "SubTitle",
+			const Dr = i.a.span("SubTitle", Sr.a);
+			var Ar;
+			Dr.displayName = "SubTitle",
 				function(e) {
 					e[e.Key = 0] = "Key", e[e.Group = 1] = "Group"
-				}(Dr || (Dr = {}));
+				}(Ar || (Ar = {}));
 			const Lr = Object(K.a)({
 				isEmbedded: Bc.d
 			});
@@ -4698,9 +4701,9 @@
 						isRenameGroupInputVisible: !e.isRenameGroupInputVisible
 					})), this.getTitleIconElem = e => {
 						switch (e) {
-							case Dr.Group:
+							case Ar.Group:
 								return r.a.createElement(Nr, null);
-							case Dr.Key:
+							case Ar.Key:
 								return r.a.createElement(kr, null);
 							default:
 								return null
@@ -4736,7 +4739,7 @@
 					} = this, h = this.getTitleIconElem(i);
 					return r.a.createElement(wr, null, r.a.createElement(Tr, {
 						onClick: n ? Object(Jt.b)(a) : void 0
-					}, r.a.createElement(Mr, null, h, o), r.a.createElement(Ar, null, c)), e && r.a.createElement(Gc, {
+					}, r.a.createElement(Mr, null, h, o), r.a.createElement(Dr, null, c)), e && r.a.createElement(Gc, {
 						channelId: e,
 						toggleChannelNameInput: u,
 						showMenu: !!s,
@@ -4799,7 +4802,7 @@
 						}
 					}, this.getTitleIcon = () => {
 						const e = this.props.channel;
-						return e.type === C.a.Subreddit ? e.isPublic ? Dr.Group : Dr.Key : void 0
+						return e.type === C.a.Subreddit ? e.isPublic ? Ar.Group : Ar.Key : void 0
 					}, this.isSplitterDisplayed = (e, t, n) => {
 						const a = new Date(e.createdAt).toDateString(),
 							s = this.getPreviousTime(t, n);
@@ -5077,8 +5080,8 @@
 				wo = n.n(ko),
 				To = n("./src/chat/actions/sendbird/index.ts"),
 				Mo = n("./src/chat/actions/user.ts"),
-				Ao = n("./node_modules/lodash/last.js"),
-				Do = n.n(Ao),
+				Do = n("./node_modules/lodash/last.js"),
+				Ao = n.n(Do),
 				Lo = n("./src/chat/components/SearchBar/index.m.less"),
 				Uo = n.n(Lo);
 			const Bo = i.a.span("Bubble", Uo.a),
@@ -5091,7 +5094,7 @@
 					super(e), this.bubbleRefs = {}, this.searchBarInputRef = {}, this.timeoutToken = null, this.onBubbleKey = e => t => {
 						switch (t.key) {
 							case Rs:
-							case As:
+							case Ds:
 								return Object(ha.findDOMNode)(this.searchBarInputRef).focus(), this.props.onUnselect(e.id);
 							case Ls: {
 								const e = t.target;
@@ -5110,7 +5113,7 @@
 					}, this.onBubbleKey = this.onBubbleKey.bind(this), this.onFilterChange = this.onFilterChange.bind(this), this.stopEnter = this.stopEnter.bind(this), this.searchKeyHandler = this.searchKeyHandler.bind(this)
 				}
 				stopEnter(e) {
-					e.key === Ds && e.preventDefault()
+					e.key === As && e.preventDefault()
 				}
 				onFilterChange(e) {
 					this.props.onFilterContacts(e.currentTarget.value)
@@ -5126,13 +5129,13 @@
 					switch (this.timeoutToken && clearTimeout(this.timeoutToken), this.timeoutToken = setTimeout(() => {
 						c() && n(c())
 					}, a), e.key) {
-						case Ds:
+						case As:
 							return n((() => s.id)());
 						case Ls:
 						case Rs:
-						case As:
+						case Ds:
 							if (0 === c().length) {
-								const e = Do()(this.props.selectedContacts);
+								const e = Ao()(this.props.selectedContacts);
 								e && e.name && Object(ha.findDOMNode)(this.bubbleRefs[e.name]).focus()
 							}
 					}
@@ -5518,8 +5521,8 @@
 					d: "M8.3 12.32a1.85 1.85 0 0 1-.25.6c-.06.1-.13.19-.21.27a1.67 1.67 0 0 1-2.35 0c-.08-.08-.14-.18-.21-.27a1.85 1.85 0 0 1-.25-.6 1.62 1.62 0 0 1 .47-1.5 1.7 1.7 0 0 1 2.34 0 1.85 1.85 0 0 1 .47.85l.02.33-.02.32",
 					fill: "#FFFFFF"
 				})), "ChatBubbleIcon", xi.a),
-				Ai = i.a.wrapped(ye.b, "Button", xi.a),
-				Di = Object(o.b)(void 0, e => ({
+				Di = i.a.wrapped(ye.b, "Button", xi.a),
+				Ai = Object(o.b)(void 0, e => ({
 					setSeenSubredditChatFtuxAction: () => e(Object(l.f)()),
 					viewSubredditChatFtuxPromoTracking: () => e(Object(ft.D)()),
 					dismissSubredditChatFtuxPromoTracking: () => e(Object(ft.r)())
@@ -5540,7 +5543,7 @@
 						hk: "3No0ew"
 					}))), r.a.createElement(Mi, null)), r.a.createElement(Ti, null, f.fbt._("Some subreddits now have chat rooms. You've got early access - find topics you're interested in and join the conversation!", null, {
 						hk: "1WTJoU"
-					})), r.a.createElement(Ai, {
+					})), r.a.createElement(Di, {
 						primary: !0,
 						onClick: () => this.closePromo()
 					}, f.fbt._("Got it", null, {
@@ -5549,7 +5552,7 @@
 				}
 			}
 			Li.displayName = "FirstTimeUserExpPromo";
-			var Ui = Di(Li),
+			var Ui = Ai(Li),
 				Bi = n("./src/chat/icons/svgs/ChatNew/index.tsx"),
 				Pi = n("./src/chat/components/Sidebar/CreateChannel/index.m.less"),
 				Ri = n.n(Pi);
@@ -5869,14 +5872,14 @@
 				wl = n.n(kl);
 			const Tl = i.a.div("LoadingIndicator", wl.a),
 				Ml = i.a.p("Text", wl.a),
-				Al = Object(K.a)({
+				Dl = Object(K.a)({
 					currentUserId: ms.a,
 					fetchingJoinedChannels: y.e,
 					hasMoreJoinedChannels: y.E,
 					joinedChannels: y.Q,
 					selectedChannelId: e => Object(y.A)(e, "channelId")
 				});
-			var Dl = Object(o.b)(Al, e => ({
+			var Al = Object(o.b)(Dl, e => ({
 					fetchJoinedChannels: () => e(Object(p.G)())
 				}))(e => {
 					const {
@@ -5942,7 +5945,7 @@
 						!t && a && n()
 					},
 					threshold: 0
-				}, r.a.createElement(Nl, null), r.a.createElement(Dl, null))
+				}, r.a.createElement(Nl, null), r.a.createElement(Al, null))
 			});
 
 			function Hl() {
@@ -6209,9 +6212,9 @@
 			}
 			var Td = Nd(wd),
 				Md = n("./src/chat/components/Sidebar/SubredditPanel/index.m.less"),
-				Ad = n.n(Md);
-			const Dd = i.a.wrapped(La, "Scroller", Ad.a);
-			var Ld = e => r.a.createElement(Dd, null, r.a.createElement(cd, {
+				Dd = n.n(Md);
+			const Ad = i.a.wrapped(La, "Scroller", Dd.a);
+			var Ld = e => r.a.createElement(Ad, null, r.a.createElement(cd, {
 					routeAction: e.routeAction
 				}), r.a.createElement(Cd, {
 					routeAction: e.routeAction
@@ -6302,7 +6305,7 @@
 					displaySubredditChatFtux: zd.c,
 					sidebarActiveIndex: Wd.a,
 					subredditChatEnabled: Kd.b,
-					unreadCount: Gd.j
+					unreadCount: Gd.k
 				});
 			class Xd extends r.a.Component {
 				shouldComponentUpdate(e) {
@@ -6472,8 +6475,8 @@
 			const wu = "OverlayNavTooltip--ChatRequest",
 				Tu = i.a.div("Container", ku.a),
 				Mu = i.a.div("TitleContainer", ku.a),
-				Au = i.a.wrapped(q, "NSFWIcon", ku.a),
-				Du = i.a.wrapped(ce, "UserPic", ku.a),
+				Du = i.a.wrapped(q, "NSFWIcon", ku.a),
+				Au = i.a.wrapped(ce, "UserPic", ku.a),
 				Lu = i.a.span("WarningTextNSFW", ku.a),
 				Uu = i.a.p("Text", ku.a),
 				Bu = i.a.wrapped(Su, "MediaObject", ku.a),
@@ -6599,7 +6602,7 @@
 						inviterContact: e,
 						channel: t
 					} = this.props, n = e && !!e.isNSFW;
-					if (t && t.inviter) return r.a.createElement("div", null, r.a.createElement(Bu, null, n ? r.a.createElement(Au, null) : r.a.createElement(Du, {
+					if (t && t.inviter) return r.a.createElement("div", null, r.a.createElement(Bu, null, n ? r.a.createElement(Du, null) : r.a.createElement(Au, {
 						userId: t.inviter.id
 					}), r.a.createElement(Mu, null, r.a.createElement(us, {
 						bold: !0
@@ -6762,7 +6765,7 @@
 				uh = Object(K.a)({
 					isModerator: y.a,
 					message: (e, t) => e.messages.models[t.messageId],
-					senderUserId: (e, t) => Object(Gd.e)(e, t.messageId),
+					senderUserId: (e, t) => Object(Gd.f)(e, t.messageId),
 					subredditId: y.B
 				});
 			class hh extends c.Component {
@@ -6946,8 +6949,8 @@
 				onJoinSubredditChannel: (t, n) => e(Object(ma.t)(t, n))
 			}))(wh);
 			const Mh = Object(sh.a)("MODERATOR__KICK_USER"),
-				Ah = "kickUser";
-			var Dh = n("./src/chat/routes/chat.ts"),
+				Dh = "kickUser";
+			var Ah = n("./src/chat/routes/chat.ts"),
 				Lh = n("./src/chat/components/OverlayKickUser/index.m.less"),
 				Uh = n.n(Lh);
 			const Bh = i.a.p("SubHeader", Uh.a),
@@ -6982,8 +6985,8 @@
 					})
 				}],
 				Jh = Object(K.a)({
-					message: (e, t) => t.attr === Dh.a.Message ? e.messages.models[t.attrId] : void 0,
-					user: (e, t) => t.attr === Dh.a.User ? e.contacts.models[t.attrId] : void 0
+					message: (e, t) => t.attr === Ah.a.Message ? e.messages.models[t.attrId] : void 0,
+					user: (e, t) => t.attr === Ah.a.User ? e.contacts.models[t.attrId] : void 0
 				});
 			class Zh extends c.Component {
 				constructor(e) {
@@ -6992,8 +6995,8 @@
 							onKickUser: t,
 							attrId: n
 						} = this.props;
-						Array.prototype.forEach.call(e.target[Ah], (e, a) => {
-							if (e.checked && Dh.a.User) {
+						Array.prototype.forEach.call(e.target[Dh], (e, a) => {
+							if (e.checked && Ah.a.User) {
 								const a = (e => e === Gh ? 600 : e === zh ? 3600 : e === Wh ? 86400 : e === Vh ? 259200 : 0)(e.value);
 								t(n, a)
 							}
@@ -7031,7 +7034,7 @@
 						key: e.value
 					}, r.a.createElement(Hh, {
 						type: "radio",
-						name: Ah,
+						name: Dh,
 						value: e.value
 					}, e.text))))), r.a.createElement(po, {
 						primaryButtonText: f.fbt._("Kick", null, {
@@ -7240,19 +7243,19 @@
 				getComponent: () => Object(wm.a)(() => n.e("ChatReportFlow").then(n.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
 				LoadingComponent: Tm
 			});
-			const Am = "reportReason";
-			var Dm;
+			const Dm = "reportReason";
+			var Am;
 			! function(e) {
 				e.Threats = "threats", e.Violence = "violence", e.Personal = "personal", e.Impersonation = "impersonation", e.MinorSexualization = "minorSexualization"
-			}(Dm || (Dm = {}));
+			}(Am || (Am = {}));
 			var Lm = n("./src/chat/models/ReportFlow/index.ts"),
 				Um = n("./src/chat/components/OverlayReport/index.m.less"),
 				Bm = n.n(Um);
 			const Pm = i.a.wrapped(Go.a, "Checkbox", Bm.a),
 				Rm = i.a.div("ListItem", Bm.a),
 				Hm = Object(K.a)({
-					user: (e, t) => t.attr === Dh.a.User ? e.contacts.models[t.attrId] : void 0,
-					message: (e, t) => t.attr === Dh.a.Invite || t.attr === Dh.a.Message ? e.messages.models[t.attrId] : void 0,
+					user: (e, t) => t.attr === Ah.a.User ? e.contacts.models[t.attrId] : void 0,
+					message: (e, t) => t.attr === Ah.a.Invite || t.attr === Ah.a.Message ? e.messages.models[t.attrId] : void 0,
 					messageList: e => Object(y.y)(e),
 					currentUserId: (e, t) => Object(ms.a)(e)
 				});
@@ -7260,7 +7263,7 @@
 				constructor(e) {
 					super(e), this.selectReason = e => this.setState({
 						selectedReason: e
-					}), this.isMessageReportFlow = () => this.props.attr === Dh.a.Invite || this.props.attr === Dh.a.Message, this.isSubmitDisabled = () => !this.state.selectedReason, this.isCTLControls = () => this.state.currentFlow === Lm.a.CrisisTextLine && !this.state.ctlSubmitted, this.isSingleButton = () => this.state.currentFlow === Lm.a.CrisisTextLine && !0 === this.state.ctlSubmitted || this.state.currentFlow === Lm.a.BlockUser || this.state.currentFlow === Lm.a.FileComplaint, this.nextReportFlow = () => {
+					}), this.isMessageReportFlow = () => this.props.attr === Ah.a.Invite || this.props.attr === Ah.a.Message, this.isSubmitDisabled = () => !this.state.selectedReason, this.isCTLControls = () => this.state.currentFlow === Lm.a.CrisisTextLine && !this.state.ctlSubmitted, this.isSingleButton = () => this.state.currentFlow === Lm.a.CrisisTextLine && !0 === this.state.ctlSubmitted || this.state.currentFlow === Lm.a.BlockUser || this.state.currentFlow === Lm.a.FileComplaint, this.nextReportFlow = () => {
 						const {
 							selectedReason: e
 						} = this.state, t = e && e.requestCrisisSupport ? Lm.a.CrisisTextLine : e && e.fileComplaint ? Lm.a.FileComplaint : Lm.a.BlockUser;
@@ -7280,35 +7283,35 @@
 						})
 					}, this.getReportReasonText = e => {
 						switch (e) {
-							case Dm.Threats:
+							case Am.Threats:
 								return f.fbt._("Threatens, harrasses, or bullies", null, {
 									hk: "9lzw2"
 								});
-							case Dm.Violence:
+							case Am.Violence:
 								return f.fbt._("It threatens violence or physical harm", null, {
 									hk: "2LziPg"
 								});
-							case Dm.Personal:
+							case Am.Personal:
 								return f.fbt._("It's personal and confidential information", null, {
 									hk: "2w0qDN"
 								});
-							case Dm.Impersonation:
+							case Am.Impersonation:
 								return f.fbt._("Impersonation", null, {
 									hk: "2dg9bu"
 								});
-							case Dm.MinorSexualization:
+							case Am.MinorSexualization:
 								return f.fbt._("It's sexual or suggestive content involving minors", null, {
 									hk: "Ofq3r"
 								})
 						}
-					}, this.getUserReportFlow = () => u()(Dm, e => {
+					}, this.getUserReportFlow = () => u()(Am, e => {
 						const t = this.getReportReasonText(e);
 						return r.a.createElement(Rm, {
 							key: t
 						}, r.a.createElement(Pm, {
 							type: "radio",
 							value: t,
-							name: Am,
+							name: Dm,
 							onChange: e => this.selectReason({
 								reasonText: e.target.value
 							})
@@ -7336,7 +7339,7 @@
 						s && s.reasonText && e && (n(s.reasonText, e, t), this.nextReportFlow())
 					}, this.state = {
 						selectedReason: void 0,
-						currentFlow: this.props.attr === Dh.a.Invite ? Lm.a.Invite : Lm.a.Default,
+						currentFlow: this.props.attr === Ah.a.Invite ? Lm.a.Invite : Lm.a.Default,
 						ctlSubmitted: !1
 					}
 				}
@@ -7354,7 +7357,7 @@
 						title: f.fbt._("Reason for report", null, {
 							hk: "EqHEf"
 						})
-					}), r.a.createElement(Da, null, this.isMessageReportFlow() ? t && this.getMessageReportFlow() : n && this.getUserReportFlow()), r.a.createElement(po, {
+					}), r.a.createElement(Aa, null, this.isMessageReportFlow() ? t && this.getMessageReportFlow() : n && this.getUserReportFlow()), r.a.createElement(po, {
 						primaryButtonText: this.isCTLControls() ? f.fbt._("Yes", null, {
 							hk: "1nxheD"
 						}) : f.fbt._("Submit", null, {
@@ -9435,7 +9438,7 @@
 						noun: "inbox_new",
 						source: g.b.ChatPerformance,
 						action: g.a.Load,
-						chat: Object.assign(Object.assign({}, Object(f.o)(e)), Object(f.q)(e)),
+						chat: Object.assign(Object.assign({}, Object(f.p)(e)), Object(f.r)(e)),
 						timer: Object.assign(Object.assign({}, C(O.TimerType.ChatLoadInboxNew)), _(t))
 					}, Object(j.a)(e)))
 				})(e, (e => Date.now() - e)(t))),
@@ -10585,7 +10588,7 @@
 			const M = {
 				sortedKeys: []
 			};
-			var A = function() {
+			var D = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : M,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -10601,13 +10604,13 @@
 						return e
 				}
 			};
-			const D = {
+			const A = {
 				fetchingChannels: !1,
 				hasMoreChannels: !1,
 				sortedKeys: []
 			};
 			var L = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : D,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case y.h:
@@ -10753,7 +10756,7 @@
 					}
 				},
 				G = Object(a.c)({
-					banned: A,
+					banned: D,
 					invited: L,
 					joined: P,
 					kicked: H,
@@ -11135,8 +11138,8 @@
 					pending: xe,
 					unread: Te
 				}),
-				Ae = n("./src/chat/reducers/meta/index.ts"),
-				De = n("./src/chat/reducers/platform/index.ts"),
+				De = n("./src/chat/reducers/meta/index.ts"),
+				Ae = n("./src/chat/reducers/platform/index.ts"),
 				Le = n("./src/chat/reducers/promos/index.ts"),
 				Ue = n("./src/chat/actions/sendbird/config.ts");
 			const Be = {
@@ -11454,12 +11457,12 @@
 						return e
 				}
 			};
-			const At = he.z;
-			var Dt = Object(St.a)((function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : At,
+			const Dt = he.z;
+			var At = Object(St.a)((function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Dt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				return t.type, e
-			}), At);
+			}), Dt);
 			const Lt = {
 				blob: "",
 				loid: "",
@@ -11533,7 +11536,7 @@
 					account: Nt,
 					chatExperiments: wt,
 					experiments: Mt,
-					language: Dt,
+					language: At,
 					loid: Ut,
 					prefs: Pt,
 					reddaid: Rt,
@@ -11547,8 +11550,8 @@
 				emojis: be,
 				members: _e,
 				messages: Me,
-				meta: Ae.b,
-				platform: De.b,
+				meta: De.b,
+				platform: Ae.b,
 				promos: Le.b,
 				sendbird: qe,
 				sidebarTabs: $e,
@@ -12380,9 +12383,9 @@
 				w = n("./src/chat/models/Channel/utils/index.ts"),
 				T = n("./src/chat/models/Channel/utils/removeSendbirdPrefix.ts"),
 				M = n("./src/chat/models/Message/index.ts"),
-				A = n("./src/chat/models/User/member.ts");
+				D = n("./src/chat/models/User/member.ts");
 			const {
-				sendbirdAppId: D
+				sendbirdAppId: A
 			} = a.a;
 			var L;
 			! function(e) {
@@ -12398,7 +12401,7 @@
 							return Promise.all([t])
 						}
 					}, (this.self = new o.a({
-						appId: D
+						appId: A
 					})).Options.typingIndicatorThrottle = 1e4
 				}
 				connect(e, t, n, a) {
@@ -12773,7 +12776,7 @@
 					return new Promise((n, a) => {
 						if (!this.channel) return a(new Error("this.channel is null or undefined"));
 						this.memberListQuery = this.channel.createMemberListQuery(), this.memberListQuery ? (this.memberListQuery.nicknameStartsWithFilter = e, this.memberListQuery.next((a, s) => {
-							const c = Object(A.a)(a),
+							const c = Object(D.a)(a),
 								r = c.filter(n => t && n && n.name === e || !t && n);
 							c.length && this.dispatch(Object(j.i)(c)), n(r)
 						})) : a(Error("this.memberListQuery is null or undefined"))
@@ -12814,7 +12817,7 @@
 								c.mentionType = e.BaseMessageParams.MentionType.USERS, c.mentionedUserIds = n
 							}
 							this.channel.sendUserMessage(c, (e, t) => {
-								t ? (Object(x.b)("Error with sending the message to Sendbird: ".concat(t)), s()) : a(Object(M.b)(e))
+								t ? (Object(x.b)("Error with sending the message to Sendbird: ".concat(t)), s(t)) : a(Object(M.b)(e))
 							})
 						}
 					})
@@ -12900,7 +12903,7 @@
 						noun: "preview",
 						source: a.b.ChatPreview,
 						action: a.a.View,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.g)(e)), Object(s.A)(e)), Object(s.p)(e)), Object(s.s)(e)),
+						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.g)(e)), Object(s.B)(e)), Object(s.q)(e)), Object(s.t)(e)),
 						subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
 					}, Object(c.a)(e)))
 				},
@@ -12909,7 +12912,7 @@
 						noun: "join",
 						source: a.b.ChatPreview,
 						action: a.a.Click,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.g)(e)), Object(s.A)(e)), Object(s.p)(e)), Object(s.s)(e)),
+						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.g)(e)), Object(s.B)(e)), Object(s.q)(e)), Object(s.t)(e)),
 						subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
 					}, Object(c.a)(e)))
 				}
@@ -12938,14 +12941,14 @@
 					noun: "chat_settings",
 					source: a.b.ChatSettings,
 					action: a.a.View,
-					chat: Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)),
+					chat: Object.assign(Object.assign(Object.assign({}, Object(s.B)(e)), Object(s.q)(e)), Object(s.g)(e)),
 					subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
 				}, Object(c.a)(e))),
 				l = (e, t) => Object(o.a)(Object.assign({
 					noun: "chat_member_block",
 					source: a.b.ChatSettings,
 					action: a.a.Submit,
-					chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)), Object(s.b)(t)),
+					chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.B)(e)), Object(s.q)(e)), Object(s.g)(e)), Object(s.b)(t)),
 					subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
 				}, Object(c.a)(e))),
 				d = e => {
@@ -12953,7 +12956,7 @@
 						noun: "view_member",
 						source: a.b.ChatSettings,
 						action: a.a.Click,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.u)(e)), Object(s.g)(e))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.B)(e)), Object(s.q)(e)), Object(s.v)(e)), Object(s.g)(e))
 					}, Object(c.a)(e)))
 				},
 				u = (e, t) => {
@@ -12961,7 +12964,7 @@
 						noun: "chat_member_report",
 						source: a.b.ChatSettings,
 						action: a.a.Submit,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)), Object(s.w)(t)),
+						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.B)(e)), Object(s.q)(e)), Object(s.g)(e)), Object(s.x)(t)),
 						subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
 					}, Object(c.a)(e)))
 				},
@@ -12969,77 +12972,82 @@
 					noun: "leave_group",
 					source: a.b.ChatSettings,
 					action: a.a.Click,
-					chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)), Object(s.y)(e)),
+					chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.B)(e)), Object(s.q)(e)), Object(s.g)(e)), Object(s.z)(e)),
 					subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
 				}, Object(c.a)(e))),
 				m = (e, t, n) => Object(o.a)(Object.assign({
 					noun: t ? "lock_room" : "unlock_room",
 					source: a.b.ChatSettings,
 					action: n ? a.a.Click : a.a.View,
-					chat: Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)),
+					chat: Object.assign(Object.assign(Object.assign({}, Object(s.B)(e)), Object(s.q)(e)), Object(s.g)(e)),
 					subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
 				}, Object(c.a)(e)))
 		},
 		"./src/chat/tracking/events/chatView.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return i
-			})), n.d(t, "a", (function() {
 				return l
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return u
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "b", (function() {
 				return h
+			})), n.d(t, "e", (function() {
+				return m
 			}));
 			var a = n("./src/telemetry/models/Event.ts"),
-				s = n("./src/chat/tracking/fields/chat.ts"),
-				c = n("./src/chat/tracking/fields/common.ts"),
-				r = n("./src/chat/tracking/fields/subreddit.ts"),
-				o = n("./src/chat/tracking/sendEvent.ts");
-			const i = e => Object(o.a)(Object.assign({
+				s = n("./src/chat/selectors/telemetry.ts"),
+				c = n("./src/chat/tracking/fields/chat.ts"),
+				r = n("./src/chat/tracking/fields/common.ts"),
+				o = n("./src/chat/tracking/fields/subreddit.ts"),
+				i = n("./src/chat/tracking/sendEvent.ts");
+			const l = e => Object(i.a)(Object.assign({
 					noun: "chat",
 					source: a.b.ChatView,
 					action: a.a.View,
-					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)), Object(s.s)(e)), Object(s.l)(e)), Object(s.y)(e)),
-					subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
-				}, Object(c.a)(e))),
-				l = (e, t) => {
-					Object(o.a)(Object.assign({
+					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.B)(e)), Object(c.q)(e)), Object(c.g)(e)), Object(c.t)(e)), Object(c.l)(e)), Object(c.z)(e)),
+					subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
+				}, Object(r.a)(e))),
+				d = (e, t) => {
+					Object(i.a)(Object.assign({
 						noun: "chat_message",
 						source: a.b.ChatView,
 						action: a.a.Submit,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)), Object(s.s)(e, 0)), Object(s.n)(e, t)), Object(s.x)(e, t)), Object(s.y)(e)),
-						subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
-					}, Object(c.a)(e)))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.B)(e)), Object(c.q)(e)), Object(c.g)(e)), Object(c.t)(e, 0)), Object(c.o)(e, t)), Object(c.y)(e, t)), Object(c.z)(e)),
+						subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
+					}, Object(r.a)(e)))
 				},
-				d = (e, t) => {
-					Object(o.a)(Object.assign({
+				u = (e, t, n) => {
+					Object(i.a)(Object.assign(Object.assign({
 						noun: "chat_message_failed",
 						source: a.b.ChatView,
 						action: a.a.View,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)), Object(s.s)(e, 0)), Object(s.t)(e, t)), Object(s.x)(e)), Object(s.y)(e)),
-						subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
-					}, Object(c.a)(e)))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.B)(e)), Object(c.q)(e)), Object(c.g)(e)), Object(c.t)(e, 0)), Object(c.u)(e, t)), Object(c.y)(e)), Object(c.z)(e)), Object(c.m)(e, t)),
+						subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
+					}, Object(r.a)(e)), {
+						actionInfo: Object.assign({
+							reason: n
+						}, Object(s.a)(e))
+					}))
 				},
-				u = (e, t, n) => {
-					Object(o.a)(Object.assign({
+				h = (e, t, n) => {
+					Object(i.a)(Object.assign({
 						noun: "report_message",
 						source: a.b.ChatView,
 						action: a.a.Submit,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)), Object(s.s)(e, 0)), Object(s.m)(t)), Object(s.n)(e, t)), Object(s.v)(n)), Object(s.x)(e, t)), Object(s.y)(e)),
-						subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
-					}, Object(c.a)(e)))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.B)(e)), Object(c.q)(e)), Object(c.g)(e)), Object(c.t)(e, 0)), Object(c.n)(t)), Object(c.o)(e, t)), Object(c.w)(n)), Object(c.y)(e, t)), Object(c.z)(e)),
+						subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
+					}, Object(r.a)(e)))
 				},
-				h = e => {
-					Object(o.a)(Object.assign({
+				m = e => {
+					Object(i.a)(Object.assign({
 						noun: "history",
 						source: a.b.ChatView,
 						action: a.a.View,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(s.A)(e)), Object(s.p)(e)), Object(s.g)(e)), Object(s.y)(e)),
-						subreddit: Object.assign(Object.assign({}, Object(r.a)(e)), Object(r.b)(e))
-					}, Object(c.a)(e)))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.B)(e)), Object(c.q)(e)), Object(c.g)(e)), Object(c.z)(e)),
+						subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
+					}, Object(r.a)(e)))
 				}
 		},
 		"./src/chat/tracking/events/contactsList.ts": function(e, t, n) {
@@ -13077,7 +13085,7 @@
 						noun: "contact_add",
 						source: s.b.ContactsList,
 						action: s.a.Click,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.e)(e)), Object(c.a)(e, t)), Object(c.c)(e)), Object(c.g)(e)), Object(c.f)(e)), Object(c.B)(e, t))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.e)(e)), Object(c.a)(e, t)), Object(c.c)(e)), Object(c.g)(e)), Object(c.f)(e)), Object(c.C)(e, t))
 					}, Object(r.a)(e)))
 				},
 				d = e => {
@@ -13085,7 +13093,7 @@
 						noun: "alert_invalid_user",
 						source: s.b.ContactsList,
 						action: s.a.View,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.A)(e)), Object(c.c)(e)), Object(c.d)(e)), Object(c.g)(e)), Object(c.B)(e, "search")), Object(c.f)(e))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.B)(e)), Object(c.c)(e)), Object(c.d)(e)), Object(c.g)(e)), Object(c.C)(e, "search")), Object(c.f)(e))
 					}, Object(r.a)(e)))
 				},
 				u = (e, t) => {
@@ -13093,7 +13101,7 @@
 						noun: "alert_invalid_channel",
 						source: s.b.ContactsList,
 						action: s.a.View,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.A)(e)), Object(c.c)(e)), Object(c.d)(e)), Object(c.g)(e)), Object(c.B)(e, t)), Object(c.f)(e))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.B)(e)), Object(c.c)(e)), Object(c.d)(e)), Object(c.g)(e)), Object(c.C)(e, t)), Object(c.f)(e))
 					}, Object(r.a)(e)))
 				},
 				h = (e, t) => {
@@ -13101,7 +13109,7 @@
 						noun: "create_chat",
 						source: s.b.ContactsList,
 						action: s.a.Click,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.A)(e, t)), Object(c.c)(e)), Object(c.d)(e)), Object(c.g)(e, t)), Object(c.f)(e))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.B)(e, t)), Object(c.c)(e)), Object(c.d)(e)), Object(c.g)(e, t)), Object(c.f)(e))
 					}, Object(r.a)(e)))
 				},
 				m = e => {
@@ -13117,7 +13125,7 @@
 						noun: "add_to_chat",
 						source: s.b.ContactsList,
 						action: s.a.Click,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.A)(e)), Object(c.p)(e)), Object(c.g)(e)), Object(c.d)(e)), Object(c.f)(e)),
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.B)(e)), Object(c.q)(e)), Object(c.g)(e)), Object(c.d)(e)), Object(c.f)(e)),
 						subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
 					}, Object(r.a)(e)))
 				}
@@ -13148,34 +13156,34 @@
 					noun: "inbox",
 					source: s.b.InvitationInbox,
 					action: s.a.View,
-					chat: Object.assign(Object.assign({}, Object(c.j)(e, "room")), Object(c.q)(e))
+					chat: Object.assign(Object.assign({}, Object(c.j)(e, "room")), Object(c.r)(e))
 				}, Object(r.a)(e))),
 				l = e => Object(a.a)(Object.assign({
 					noun: "invitation",
 					source: s.b.InvitationInbox,
 					action: s.a.View,
-					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.j)(e)), Object(c.k)(e)), Object(c.h)(e)), Object(c.i)(e)), Object(c.p)(e)),
+					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.j)(e)), Object(c.k)(e)), Object(c.h)(e)), Object(c.i)(e)), Object(c.q)(e)),
 					subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
 				}, Object(r.a)(e))),
 				d = e => Object(a.a)(Object.assign({
 					noun: "invitation_accept",
 					source: s.b.InvitationInbox,
 					action: s.a.Click,
-					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.j)(e)), Object(c.k)(e)), Object(c.h)(e)), Object(c.i)(e)), Object(c.p)(e)),
+					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.j)(e)), Object(c.k)(e)), Object(c.h)(e)), Object(c.i)(e)), Object(c.q)(e)),
 					subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
 				}, Object(r.a)(e))),
 				u = e => Object(a.a)(Object.assign({
 					noun: "invitation_decline",
 					source: s.b.InvitationInbox,
 					action: s.a.Click,
-					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.j)(e)), Object(c.k)(e)), Object(c.h)(e)), Object(c.i)(e)), Object(c.p)(e)),
+					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.j)(e)), Object(c.k)(e)), Object(c.h)(e)), Object(c.i)(e)), Object(c.q)(e)),
 					subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
 				}, Object(r.a)(e))),
 				h = e => Object(a.a)(Object.assign({
 					noun: "invitation_view_member",
 					source: s.b.InvitationInbox,
 					action: s.a.Click,
-					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.j)(e)), Object(c.k)(e)), Object(c.h)(e)), Object(c.i)(e)), Object(c.p)(e)),
+					chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.j)(e)), Object(c.k)(e)), Object(c.h)(e)), Object(c.i)(e)), Object(c.q)(e)),
 					subreddit: Object.assign(Object.assign({}, Object(o.a)(e)), Object(o.b)(e))
 				}, Object(r.a)(e))),
 				m = e => {
@@ -13226,7 +13234,7 @@
 						noun: "inbox",
 						source: l.b.MessageInbox,
 						action: l.a.View,
-						chat: Object.assign(Object.assign(Object.assign({}, Object(r.o)(e)), Object(r.z)(e)), Object(r.q)(e, !1))
+						chat: Object.assign(Object.assign(Object.assign({}, Object(r.p)(e)), Object(r.A)(e)), Object(r.r)(e, !1))
 					}, Object(o.a)(e)))
 				},
 				u = e => {
@@ -13234,7 +13242,7 @@
 						noun: "rooms_inbox",
 						source: l.b.MessageInbox,
 						action: l.a.View,
-						chat: Object.assign(Object.assign({}, Object(r.r)(e)), Object(r.q)(e, !0))
+						chat: Object.assign(Object.assign({}, Object(r.s)(e)), Object(r.r)(e, !0))
 					}, Object(o.a)(e)))
 				},
 				h = e => {
@@ -13242,7 +13250,7 @@
 						noun: "create_chat",
 						source: l.b.MessageInbox,
 						action: l.a.Click,
-						chat: Object.assign(Object.assign(Object.assign({}, Object(r.o)(e)), Object(r.z)(e)), Object(r.q)(e))
+						chat: Object.assign(Object.assign(Object.assign({}, Object(r.p)(e)), Object(r.A)(e)), Object(r.r)(e))
 					}, Object(o.a)(e)))
 				},
 				m = e => {
@@ -13250,7 +13258,7 @@
 						noun: "close_chat",
 						source: l.b.MessageInbox,
 						action: l.a.Click,
-						chat: Object.assign(Object.assign({}, Object(r.o)(e)), Object(r.q)(e))
+						chat: Object.assign(Object.assign({}, Object(r.p)(e)), Object(r.r)(e))
 					}, Object(o.a)(e)), {
 						actionInfo: Object.assign(Object.assign({}, c(e)), Object(a.a)(e))
 					}))
@@ -13260,7 +13268,7 @@
 						noun: "rooms_tooltip_523",
 						source: l.b.MessageInbox,
 						action: l.a.View,
-						chat: Object.assign(Object.assign({}, Object(r.o)(e)), Object(r.q)(e))
+						chat: Object.assign(Object.assign({}, Object(r.p)(e)), Object(r.r)(e))
 					}, Object(o.a)(e)))
 				},
 				p = e => {
@@ -13268,7 +13276,7 @@
 						noun: "dismiss_rooms_tooltip_523",
 						source: l.b.MessageInbox,
 						action: l.a.Click,
-						chat: Object.assign(Object.assign({}, Object(r.o)(e)), Object(r.q)(e))
+						chat: Object.assign(Object.assign({}, Object(r.p)(e)), Object(r.r)(e))
 					}, Object(o.a)(e)))
 				},
 				g = e => {
@@ -13276,7 +13284,7 @@
 						noun: "minimize_chat",
 						source: l.b.MessageInbox,
 						action: l.a.Click,
-						chat: Object.assign(Object.assign({}, Object(r.o)(e)), Object(r.q)(e))
+						chat: Object.assign(Object.assign({}, Object(r.p)(e)), Object(r.r)(e))
 					}, Object(o.a)(e)), {
 						actionInfo: Object.assign(Object.assign({}, c(e)), Object(a.a)(e))
 					}))
@@ -13298,7 +13306,7 @@
 						noun: t || "chat",
 						source: n || s.b.Nav,
 						action: o || s.a.Click,
-						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.g)(e)), Object(c.u)(e)), Object(c.p)(e)), Object(c.z)(e)), Object(c.A)(e))
+						chat: Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Object(c.g)(e)), Object(c.v)(e)), Object(c.q)(e)), Object(c.A)(e)), Object(c.B)(e))
 					}, Object(r.a)(e)))
 				},
 				i = e => {
@@ -13313,53 +13321,53 @@
 			"use strict";
 			n.d(t, "g", (function() {
 				return m
-			})), n.d(t, "A", (function() {
+			})), n.d(t, "B", (function() {
 				return b
 			})), n.d(t, "e", (function() {
 				return p
 			})), n.d(t, "c", (function() {
 				return g
-			})), n.d(t, "E", (function() {
+			})), n.d(t, "F", (function() {
 				return O
-			})), n.d(t, "D", (function() {
+			})), n.d(t, "E", (function() {
 				return f
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "q", (function() {
 				return j
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "y", (function() {
 				return C
 			})), n.d(t, "k", (function() {
 				return _
-			})), n.d(t, "C", (function() {
+			})), n.d(t, "D", (function() {
 				return E
-			})), n.d(t, "z", (function() {
+			})), n.d(t, "A", (function() {
 				return v
-			})), n.d(t, "s", (function() {
-				return I
-			})), n.d(t, "o", (function() {
-				return y
-			})), n.d(t, "r", (function() {
-				return x
-			})), n.d(t, "q", (function() {
-				return S
-			})), n.d(t, "n", (function() {
-				return N
 			})), n.d(t, "t", (function() {
+				return I
+			})), n.d(t, "p", (function() {
+				return y
+			})), n.d(t, "s", (function() {
+				return x
+			})), n.d(t, "r", (function() {
+				return S
+			})), n.d(t, "o", (function() {
+				return N
+			})), n.d(t, "u", (function() {
 				return k
-			})), n.d(t, "B", (function() {
+			})), n.d(t, "C", (function() {
 				return w
 			})), n.d(t, "f", (function() {
 				return T
 			})), n.d(t, "h", (function() {
 				return M
 			})), n.d(t, "j", (function() {
-				return A
-			})), n.d(t, "i", (function() {
 				return D
+			})), n.d(t, "i", (function() {
+				return A
 			})), n.d(t, "b", (function() {
 				return L
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "x", (function() {
 				return U
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "v", (function() {
 				return B
 			})), n.d(t, "a", (function() {
 				return P
@@ -13367,12 +13375,14 @@
 				return R
 			})), n.d(t, "l", (function() {
 				return H
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "z", (function() {
 				return F
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "n", (function() {
 				return K
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "w", (function() {
 				return G
+			})), n.d(t, "m", (function() {
+				return z
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js");
 			var a, s = n("./node_modules/lodash/difference.js"),
@@ -13445,7 +13455,7 @@
 					}
 				},
 				C = (e, t) => {
-					const n = Object(u.d)(e, t);
+					const n = Object(u.e)(e, t);
 					return {
 						sender_user_id: n && n.userId || e.user.account.id
 					}
@@ -13460,7 +13470,7 @@
 					members: t
 				}),
 				v = e => ({
-					number_unreads: Object(u.i)(e)
+					number_unreads: Object(u.j)(e)
 				}),
 				I = (e, t) => {
 					const n = Object(l.m)(e),
@@ -13485,10 +13495,10 @@
 					}
 				},
 				N = (e, t) => ({
-					message_type: Object(u.f)(e, t) || "text"
+					message_type: Object(u.g)(e, t) || "text"
 				}),
 				k = (e, t) => {
-					const n = Object(u.g)(e, t);
+					const n = Object(u.h)(e, t);
 					return n && {
 						message_type: n.messageData.type
 					}
@@ -13513,7 +13523,7 @@
 						invitation_id: t ? t.channelSendbirdUrl : null
 					}
 				},
-				A = (e, t) => {
+				D = (e, t) => {
 					if (t) return {
 						invitation_type: t
 					};
@@ -13523,7 +13533,7 @@
 						invitation_type: a
 					}
 				},
-				D = e => {
+				A = e => {
 					const t = Object(l.m)(e);
 					return {
 						invitation_timestamp: t ? t.createdAt : null
@@ -13570,7 +13580,13 @@
 				}),
 				G = e => ({
 					report_reason: e
-				})
+				}),
+				z = (e, t) => {
+					const n = Object(u.d)(e, t);
+					if (n) return {
+						message_body: n.value
+					}
+				}
 		},
 		"./src/chat/tracking/fields/common.ts": function(e, t, n) {
 			"use strict";
@@ -14186,4 +14202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.e5ff4b1a46ac8d0bc4f6.js.map
+//# sourceMappingURL=Chat~RedesignChat.ac18aa6683e0fd4eb376.js.map
