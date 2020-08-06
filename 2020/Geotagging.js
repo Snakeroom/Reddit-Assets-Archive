@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.a842966b0a46fc0c15cd.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.6e7a7d8e27aecc0449cf.js
+// Retrieved at 8/6/2020, 3:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -891,7 +891,7 @@
 					noun: "skip",
 					action: "click",
 					subreddit: Object(I.a)(e),
-					userSubreddit: Object(I.f)(e.modPermissions, e.isSubscribed),
+					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: G
 				}),
 				L = e => () => ({
@@ -899,7 +899,7 @@
 					noun: "location_field",
 					action: "click",
 					subreddit: Object(I.a)(e),
-					userSubreddit: Object(I.f)(e.modPermissions, e.isSubscribed),
+					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: R
 				}),
 				q = V("select_location"),
@@ -914,7 +914,7 @@
 					noun: e,
 					action: "click",
 					subreddit: Object(I.a)(t),
-					userSubreddit: Object(I.f)(t.modPermissions, t.isSubscribed),
+					userSubreddit: Object(I.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: Object.assign(Object.assign({}, R), {
 						reason: s
 					})
@@ -927,7 +927,7 @@
 					noun: e,
 					action: "click",
 					subreddit: Object(I.a)(t),
-					userSubreddit: Object(I.f)(t.modPermissions, t.isSubscribed),
+					userSubreddit: Object(I.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: Object.assign(Object.assign({}, G), {
 						reason: s
 					})
@@ -1135,4 +1135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging.a842966b0a46fc0c15cd.js.map
+//# sourceMappingURL=Geotagging.6e7a7d8e27aecc0449cf.js.map

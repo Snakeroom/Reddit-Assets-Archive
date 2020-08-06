@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.885db761ed2edf9008c4.js
-// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.b2cf8683ef81d95dea2d.js
+// Retrieved at 8/6/2020, 3:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -413,7 +413,7 @@
 								data: n
 							} = s.body, i = n.subredditsInfoByNames[0];
 							if (Object(y.g)(i)) {
-								const e = Object(x.e)(i);
+								const e = Object(x.f)(i);
 								t(E({
 									subreddits: {},
 									subredditAboutInfo: {},
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditMentionWithIcon.885db761ed2edf9008c4.js.map
+//# sourceMappingURL=SubredditMentionWithIcon.b2cf8683ef81d95dea2d.js.map
