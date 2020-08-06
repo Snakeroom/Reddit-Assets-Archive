@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.14dfb0675b827ce14b0d.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1430acbada2aa95f198e.js
+// Retrieved at 8/6/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -6287,7 +6287,7 @@
 							r = o.subreddit(e);
 						if (t.post.authorInfo && s && (s.authorId = t.post.authorInfo.id), n) {
 							n.streamPublicId = t.stream.stream_id, n.id = t.stream.stream_id;
-							const s = Object(i.h)(e, {
+							const s = Object(i.i)(e, {
 								streamIdFromPath: t.post.id
 							});
 							s === i.a.LIVE ? n.type = "stream_live" : s === i.a.VOD ? n.type = "stream_vod" : s === i.a.UNAVAILABLE && (n.type = "stream_unavailable")
@@ -6304,7 +6304,7 @@
 				},
 				d = (e, t, n) => {
 					if (!t || !n) return;
-					const s = Object(i.h)(e, {
+					const s = Object(i.i)(e, {
 							streamIdFromPath: t.post.id
 						}),
 						a = t.chat_disabled || n.chatState === r.f.None;
@@ -6400,7 +6400,7 @@
 					playback: d(n, e, t)
 				}, c(n, e)),
 				C = e => t => {
-					const n = Object(i.k)(t, e);
+					const n = Object(i.l)(t, e);
 					return Object.assign({
 						source: "stream_chat",
 						action: "click",
@@ -7500,32 +7500,34 @@
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "k", (function() {
-				return C
-			})), n.d(t, "l", (function() {
-				return k
+			n.d(t, "l", (function() {
+				return O
 			})), n.d(t, "m", (function() {
 				return N
-			})), n.d(t, "g", (function() {
-				return P
-			})), n.d(t, "c", (function() {
-				return A
-			})), n.d(t, "f", (function() {
-				return L
-			})), n.d(t, "j", (function() {
-				return M
-			})), n.d(t, "i", (function() {
-				return F
-			})), n.d(t, "e", (function() {
-				return D
-			})), n.d(t, "a", (function() {
-				return U
+			})), n.d(t, "n", (function() {
+				return w
 			})), n.d(t, "h", (function() {
+				return T
+			})), n.d(t, "c", (function() {
+				return L
+			})), n.d(t, "g", (function() {
+				return M
+			})), n.d(t, "k", (function() {
+				return F
+			})), n.d(t, "j", (function() {
+				return D
+			})), n.d(t, "e", (function() {
+				return R
+			})), n.d(t, "a", (function() {
 				return H
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "i", (function() {
 				return V
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return G
+			})), n.d(t, "d", (function() {
+				return Z
+			})), n.d(t, "f", (function() {
+				return K
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/reselect/es/index.js"),
@@ -7540,19 +7542,20 @@
 			const m = e => e.publicAccessNetwork.listings,
 				p = n.n(u)()(e => Object(r.a)(Object(s.a)(m, t => e && t.hasOwnProperty(e) ? t[e] : [])));
 			var b = n("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
-			const h = e => e.publicAccessNetwork.reports.reported,
-				g = e => e.publicAccessNetwork.history,
-				x = e => e.publicAccessNetwork.history.cursor,
-				f = e => e.publicAccessNetwork.history.visitOrder,
-				v = e => e.publicAccessNetwork.hlsStreams,
-				y = Object(s.a)(v, e => e.ended),
-				_ = Object(s.a)(v, e => e.removed),
-				E = Object(s.a)(e => e.publicAccessNetwork.models, y, _, (e, t, n) => {
+			const h = e => e.publicAccessNetwork.models,
+				g = e => e.publicAccessNetwork.reports.reported,
+				x = e => e.publicAccessNetwork.history,
+				f = e => e.publicAccessNetwork.history.cursor,
+				v = e => e.publicAccessNetwork.history.visitOrder,
+				y = e => e.publicAccessNetwork.hlsStreams,
+				_ = Object(s.a)(y, e => e.ended),
+				E = Object(s.a)(y, e => e.removed),
+				C = Object(s.a)(h, _, E, (e, t, n) => {
 					const s = t.reduce((e, t) => {
 						const n = e[t];
 						if (!n) return e;
 						const s = n.stream.state,
-							r = R(s, o.a.ENDED) ? o.a.ENDED : s,
+							r = W(s, o.a.ENDED) ? o.a.ENDED : s,
 							a = n.stream.vod_accessible;
 						return r === s && !0 === a ? e : Object.assign(Object.assign({}, e), {
 							[t]: Object.assign(Object.assign({}, n), {
@@ -7567,7 +7570,7 @@
 						const n = e[t];
 						if (!n) return e;
 						const s = n.stream.state,
-							r = R(s, o.a.ENDED) ? o.a.ENDED : s,
+							r = W(s, o.a.ENDED) ? o.a.ENDED : s,
 							a = n.stream.vod_accessible;
 						return r === s && !1 === a ? e : Object.assign(Object.assign({}, e), {
 							[t]: Object.assign(Object.assign({}, n), {
@@ -7579,15 +7582,15 @@
 						})
 					}, s)
 				}),
-				C = (e, t) => {
-					return E(e)[Object(i.g)(t)]
+				O = (e, t) => {
+					return C(e)[Object(i.g)(t)]
 				},
-				O = Object(s.a)((e, t) => {
+				j = Object(s.a)((e, t) => {
 					let {
 						streamIdFromPath: n
 					} = t;
 					return n
-				}, (e, t) => p(t.listingName)(e, t), E, h, c.h, d.c, (e, t, n, s, r, c) => {
+				}, (e, t) => p(t.listingName)(e, t), C, g, c.h, d.c, (e, t, n, s, r, c) => {
 					if (c) {
 						const a = [];
 						if (e) {
@@ -7605,17 +7608,17 @@
 					const d = new Set([...s, ...r]);
 					return Object.keys(n).filter(e => !d.has(e)).map(e => n[e]).filter(e => e.rank !== a.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== o.a.KILLED && e.stream.state !== o.a.PURGED).map(e => e.post.id)
 				}),
-				j = Object(s.a)((e, t) => {
+				k = Object(s.a)((e, t) => {
 					let {
 						count: n
 					} = t;
 					return n
-				}, E, (e, t) => {
+				}, C, (e, t) => {
 					let {
 						listingName: n,
 						streamIdFromPath: s
 					} = t;
-					return O(e, {
+					return j(e, {
 						listingName: n,
 						streamIdFromPath: s
 					})
@@ -7623,18 +7626,18 @@
 					const s = n.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? s.slice(0, e) : s
 				}),
-				k = Object(s.a)(E, j, (e, t) => {
+				N = Object(s.a)(C, k, (e, t) => {
 					const n = t[0];
 					if (n) return e[n]
 				}),
-				N = Object(s.a)(E, j, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
-				w = Object(s.a)(f, (e, t) => {
+				w = Object(s.a)(C, k, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				S = Object(s.a)(v, (e, t) => {
 					let {
 						related: n,
 						streamIdFromPath: s,
 						subreddit: r
 					} = t;
-					return j(e, {
+					return k(e, {
 						listingName: n || r,
 						streamIdFromPath: s
 					})
@@ -7643,22 +7646,22 @@
 						s = t.filter(e => !n.has(e));
 					if (s.length) return s[0]
 				}),
-				S = Object(s.a)((e, t) => {
+				P = Object(s.a)((e, t) => {
 					let {
 						streamIdFromPath: n
 					} = t;
 					return n
-				}, E, (e, t) => {
+				}, C, (e, t) => {
 					let {
 						related: n,
 						streamIdFromPath: s,
 						subreddit: r
 					} = t;
-					return j(e, {
+					return k(e, {
 						listingName: n || r,
 						streamIdFromPath: s
 					})
-				}, g, (e, t, n, s) => {
+				}, x, (e, t, n, s) => {
 					if (!n.length) return;
 					const r = n.map(e => t[e]).filter(t => t && t.post.id !== e),
 						a = r.find(e => e.stream.state === o.a.IS_LIVE);
@@ -7669,31 +7672,31 @@
 					});
 					return i ? i.post.id : void 0
 				}),
-				P = Object(r.a)(Object(s.a)(S, E, (e, t) => e ? t[e] : void 0)),
-				T = Object(s.a)((e, t) => {
+				T = Object(r.a)(Object(s.a)(P, C, (e, t) => e ? t[e] : void 0)),
+				I = Object(s.a)((e, t) => {
 					let {
 						streamIdFromPath: n
 					} = t;
 					return n ? Object(i.g)(n) : void 0
-				}, S, h, c.h, (e, t) => {
+				}, P, g, c.h, (e, t) => {
 					let {
 						related: n,
 						streamIdFromPath: s,
 						subreddit: r
 					} = t;
-					return j(e, {
+					return k(e, {
 						listingName: n || r,
 						streamIdFromPath: s
 					})
 				}, (e, t, n, s, r) => !e || n.includes(e) || s.includes(e) ? t || r[0] : e),
-				I = Object(s.a)(x, f, w, (e, t, n) => e < t.length - 1 ? t[e + 1] : n),
-				B = Object(s.a)(x, f, (e, t) => {
+				B = Object(s.a)(f, v, S, (e, t, n) => e < t.length - 1 ? t[e + 1] : n),
+				A = Object(s.a)(f, v, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				A = Object(r.a)(Object(s.a)(T, E, (e, t) => e ? t[e] : void 0)),
-				L = Object(r.a)(Object(s.a)(I, E, (e, t) => e ? t[e] : void 0)),
-				M = Object(r.a)(Object(s.a)(B, E, (e, t) => e ? t[e] : void 0)),
-				F = (Object(r.a)(Object(s.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, E, (e, t) => Object.keys(e).filter(e => !!t[e]).map(n => Object.assign(Object.assign({}, t[n]), {
+				L = Object(r.a)(Object(s.a)(I, C, (e, t) => e ? t[e] : void 0)),
+				M = Object(r.a)(Object(s.a)(B, C, (e, t) => e ? t[e] : void 0)),
+				F = Object(r.a)(Object(s.a)(A, C, (e, t) => e ? t[e] : void 0)),
+				D = (Object(r.a)(Object(s.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, C, (e, t) => Object.keys(e).filter(e => !!t[e]).map(n => Object.assign(Object.assign({}, t[n]), {
 					preloadedPreviewUrl: e[n]
 				})))), Object(s.a)((e, t) => {
 					let {
@@ -7701,14 +7704,14 @@
 					} = t;
 					return n
 				}, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => t[e])),
-				D = Object(s.a)((e, t) => {
+				R = Object(s.a)((e, t) => {
 					let {
 						streamIdFromPath: n
 					} = t;
-					return n ? C(e, n) : void 0
+					return n ? O(e, n) : void 0
 				}, e => !e || e.chat_disabled);
 
-			function R(e, t) {
+			function W(e, t) {
 				const n = {
 					[o.a.NOT_STARTED]: 0,
 					[o.a.PUBLISHED]: 1,
@@ -7720,20 +7723,24 @@
 				};
 				return n[t] >= n[e]
 			}
-			const W = Object(s.a)(T, g, (e, t) => e && t.timestamps[e] || 0);
-			var U;
+			const U = Object(s.a)(I, x, (e, t) => e && t.timestamps[e] || 0);
+			var H;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(U || (U = {}));
-			const H = Object(s.a)(T, E, b.b, (e, t, n) => {
-					if (n) return U.INTRO;
+			}(H || (H = {}));
+			const V = Object(s.a)(I, C, b.b, (e, t, n) => {
+					if (n) return H.INTRO;
 					const s = e && t[e];
-					if (!s) return U.UNAVAILABLE;
+					if (!s) return H.UNAVAILABLE;
 					const r = s.stream.state;
-					return r === o.a.IS_LIVE || r === o.a.DISCONNECTED ? U.LIVE : r === o.a.ENDED && s.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
+					return r === o.a.IS_LIVE || r === o.a.DISCONNECTED ? H.LIVE : r === o.a.ENDED && s.stream.vod_accessible ? H.VOD : H.UNAVAILABLE
 				}),
-				V = Object(s.a)(A, H, b.b, l.b, l.o, (e, t, n, s, r) => n ? s : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : r : void 0),
-				G = Object(s.a)(A, H, W, (e, t, n) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && n < e.broadcast_time ? n : 0 : 0)
+				G = Object(s.a)(L, V, b.b, l.b, l.o, (e, t, n, s, r) => n ? s : e ? t === H.LIVE || t === H.VOD ? e.stream.hls_url : r : void 0),
+				Z = Object(s.a)(L, V, U, (e, t, n) => e ? t === H.LIVE ? e.broadcast_time : t === H.VOD && n < e.broadcast_time ? n : 0 : 0),
+				K = (e, t) => {
+					const n = h(e);
+					return !!n && n[t] && n[t].chat_disabled
+				}
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts": function(e, t, n) {
 			"use strict";
@@ -7779,4 +7786,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.14dfb0675b827ce14b0d.js.map
+//# sourceMappingURL=Subreddit.1430acbada2aa95f198e.js.map

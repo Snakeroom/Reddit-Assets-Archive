@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7ba04584d5eee08adc21.js
-// Retrieved at 8/6/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.27eb44eac95511c8c456.js
+// Retrieved at 8/6/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -19473,6 +19473,8 @@
 						case r.b.Error:
 							return -1;
 						case r.b.Undo:
+						case r.b.SuccessLockComment:
+						case r.b.SuccessUnlockComment:
 							return 1e4;
 						case r.b.SuccessCommunity:
 						case r.b.SuccessMod:
@@ -23905,6 +23907,8 @@
 				return E
 			})), s.d(t, "i", (function() {
 				return I
+			})), s.d(t, "j", (function() {
+				return C
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/lodash/omit.js"),
@@ -24001,7 +24005,17 @@
 						error: t
 					})
 				}
-			}, w = e => e === O.a.upvoted ? "up" : e === O.a.downvoted ? "down" : "unset"
+			}, w = e => e === O.a.upvoted ? "up" : e === O.a.downvoted ? "down" : "unset", C = async (e, t, s) => Object(d.b)({
+				endpoint: "".concat(i.a.streamingApiUrl, "/broadcasts/").concat(t),
+				method: c.db.PUT,
+				headers: a()(e.headers, [o.c, o.b]),
+				data: {
+					data: {
+						chat_disabled: s
+					}
+				},
+				type: "json"
+			}).then(T)
 		},
 		"./src/reddit/endpoints/subreddit/about.ts": function(e, t, s) {
 			"use strict";
@@ -31643,7 +31657,7 @@
 					e.AuthError = "auth-error"
 				}(n || (n = {})),
 				function(e) {
-					e[e.SuccessAward = 0] = "SuccessAward", e[e.SuccessCommunity = 1] = "SuccessCommunity", e[e.SuccessCommunityGreen = 2] = "SuccessCommunityGreen", e[e.SuccessMod = 3] = "SuccessMod", e[e.Error = 4] = "Error", e[e.Undo = 5] = "Undo", e[e.EuCookiePolicy = 6] = "EuCookiePolicy", e[e.UappBanner = 7] = "UappBanner", e[e.AuthError = 8] = "AuthError", e[e.Custom = 9] = "Custom", e[e.Modal = 10] = "Modal"
+					e[e.SuccessAward = 0] = "SuccessAward", e[e.SuccessCommunity = 1] = "SuccessCommunity", e[e.SuccessCommunityGreen = 2] = "SuccessCommunityGreen", e[e.SuccessMod = 3] = "SuccessMod", e[e.Error = 4] = "Error", e[e.Undo = 5] = "Undo", e[e.EuCookiePolicy = 6] = "EuCookiePolicy", e[e.UappBanner = 7] = "UappBanner", e[e.AuthError = 8] = "AuthError", e[e.Custom = 9] = "Custom", e[e.Modal = 10] = "Modal", e[e.SuccessLockComment = 11] = "SuccessLockComment", e[e.SuccessUnlockComment = 12] = "SuccessUnlockComment"
 				}(r || (r = {})),
 				function(e) {
 					e[e.subscribeMilestone = 0] = "subscribeMilestone", e[e.subscribeCap = 1] = "subscribeCap", e[e.voteMilestone = 2] = "voteMilestone"
@@ -55123,4 +55137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.7ba04584d5eee08adc21.js.map
+//# sourceMappingURL=Governance~Reddit.27eb44eac95511c8c456.js.map

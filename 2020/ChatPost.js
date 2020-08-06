@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.950e2b9495ce014e6f60.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.fa7fc37e6d6226d5daa3.js
+// Retrieved at 8/6/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -506,7 +506,7 @@
 			})), o.d(t, "f", (function() {
 				return N
 			})), o.d(t, "a", (function() {
-				return K
+				return H
 			}));
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
 				n = o("./node_modules/lodash/times.js"),
@@ -634,18 +634,18 @@
 						isLoading: !0
 					}))
 				}),
-				H = () => i.a.createElement("div", {
+				K = () => i.a.createElement("div", {
 					className: Object(l.a)(E.a.CommentBodyPlaceholder, Object(b.a)({
 						isLoading: !0
 					}))
 				}),
-				K = e => i.a.createElement(R, null, r()(10, t => i.a.createElement(A, {
+				H = e => i.a.createElement(R, null, r()(10, t => i.a.createElement(A, {
 					key: t
 				}, e.isAvatarsInCommentsEnabled ? i.a.createElement(P, {
 					className: Object(b.a)({
 						isLoading: !0
 					})
-				}) : i.a.createElement(B, null, i.a.createElement(U, null), i.a.createElement(W, null)), i.a.createElement(D, null, i.a.createElement(F, null), i.a.createElement(H, null)))))
+				}) : i.a.createElement(B, null, i.a.createElement(U, null), i.a.createElement(W, null)), i.a.createElement(D, null, i.a.createElement(F, null), i.a.createElement(K, null)))))
 		},
 		"./src/reddit/components/CommentsChat/Comment/AwardComment/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -1002,10 +1002,10 @@
 				U = o("./src/lib/humanizeDateTime/index.ts"),
 				W = o("./src/reddit/models/Vote/index.ts"),
 				F = o("./src/reddit/actions/postCreation/general.ts"),
-				H = o("./src/reddit/actions/reportFlow.ts"),
-				K = o("./src/reddit/actions/tooltip.ts"),
-				V = o("./src/reddit/actions/userBlocks.ts"),
-				q = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				K = o("./src/reddit/actions/reportFlow.ts"),
+				H = o("./src/reddit/actions/tooltip.ts"),
+				q = o("./src/reddit/actions/userBlocks.ts"),
+				V = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				z = o("./src/reddit/constants/tracking.ts"),
 				Y = o("./src/reddit/selectors/telemetry.ts"),
 				Z = o("./src/telemetry/models/Event.ts");
@@ -1066,7 +1066,7 @@
 								comment: Object(Y.comment)(o, t)
 							}, G(o)))(d, o.id)))
 						}
-					}, t, n.a.createElement(q.c, {
+					}, t, n.a.createElement(V.c, {
 						tooltipId: c,
 						text: l
 					}))
@@ -1150,10 +1150,10 @@
 					d: "M12.3535,14.6465 C12.5485,14.8415 12.5485,15.1585 12.3535,15.3535 C12.2555,15.4515 12.1275,15.5005 11.9995,15.5005 C11.8725,15.5005 11.7445,15.4515 11.6465,15.3535 L9.9995,13.7075 L8.3535,15.3535 C8.2555,15.4515 8.1275,15.5005 7.9995,15.5005 C7.8725,15.5005 7.7445,15.4515 7.6465,15.3535 C7.4515,15.1585 7.4515,14.8415 7.6465,14.6465 L9.2925,13.0005 L7.6465,11.3535 C7.4515,11.1585 7.4515,10.8415 7.6465,10.6465 C7.8415,10.4515 8.1585,10.4515 8.3535,10.6465 L9.9995,12.2925 L11.6465,10.6465 C11.8415,10.4515 12.1585,10.4515 12.3535,10.6465 C12.5485,10.8415 12.5485,11.1585 12.3535,11.3535 L10.7075,13.0005 L12.3535,14.6465 Z M15.9995,8.0005 C17.1045,8.0005 17.9995,8.8955 17.9995,10.0005 L17.9995,16.0005 C17.9995,17.1045 17.1045,18.0005 15.9995,18.0005 L3.9995,18.0005 C2.8955,18.0005 1.9995,17.1045 1.9995,16.0005 L1.9995,10.0005 C1.9995,8.8955 2.8955,8.0005 3.9995,8.0005 L15.9995,8.0005 Z M4,7 C3.229,7 2.532,7.301 2,7.78 L2,7 C2,6.586 2.126,6.201 2.342,5.882 C2.485,5.669 2.669,5.485 2.882,5.342 C3.201,5.126 3.586,5 4,5 L16,5 C16.414,5 16.799,5.126 17.118,5.342 C17.225,5.414 17.324,5.495 17.414,5.586 C17.505,5.676 17.587,5.775 17.658,5.882 C17.874,6.201 18,6.586 18,7 L18,7.78 C17.468,7.301 16.771,7 16,7 L4,7 Z M4,4 C3.229,4 2.532,4.301 2,4.78 L2,4 C2,2.896 2.896,2 4,2 L16,2 C17.104,2 18,2.896 18,4 L18,4.78 C17.468,4.301 16.771,4 16,4 L4,4 Z"
 				}))), "SpamIcon", X.a),
 				Fe = x.a.wrapped(_e.a, "UnblockIcon", X.a),
-				He = x.a.wrapped(le.a, "UpvoteIcon", X.a),
-				Ke = x.a.wrapped(ce.a, "DownvoteIcon", X.a),
-				Ve = x.a.wrapped(be.a, "ModeratorIcon", X.a),
-				qe = e => (t, o) => {
+				Ke = x.a.wrapped(le.a, "UpvoteIcon", X.a),
+				He = x.a.wrapped(ce.a, "DownvoteIcon", X.a),
+				qe = x.a.wrapped(be.a, "ModeratorIcon", X.a),
+				Ve = e => (t, o) => {
 					let {
 						comment: s
 					} = o;
@@ -1183,18 +1183,18 @@
 						} = t;
 						return e.reportFlow.postOrCommentId === o.id
 					},
-					approveTooltipId: qe("CommentChatPost--Approve--"),
-					blockTooltipId: qe("CommentChatPost--Block--"),
-					createTooltipId: qe("CommentChatPost--Create--"),
-					editTooltipId: qe("CommentChatPost--Edit--"),
-					replyTooltipId: qe("CommentChatPost--Reply--"),
-					reportTooltipId: qe("CommentChatPost--Report--"),
-					upvoteTooltipId: qe("CommentChatPost--Upvote--"),
-					downvoteTooltipId: qe("CommentChatPost--Downvote--"),
-					distinguishTooltipId: qe("CommentChatPost--Distinguish--"),
-					spamTooltipId: qe("CommentChatPost--Spam--"),
-					removeTooltipId: qe("CommentChatPost--Remove--"),
-					deleteTooltipId: qe("CommentChatPost--Delete--"),
+					approveTooltipId: Ve("CommentChatPost--Approve--"),
+					blockTooltipId: Ve("CommentChatPost--Block--"),
+					createTooltipId: Ve("CommentChatPost--Create--"),
+					editTooltipId: Ve("CommentChatPost--Edit--"),
+					replyTooltipId: Ve("CommentChatPost--Reply--"),
+					reportTooltipId: Ve("CommentChatPost--Report--"),
+					upvoteTooltipId: Ve("CommentChatPost--Upvote--"),
+					downvoteTooltipId: Ve("CommentChatPost--Downvote--"),
+					distinguishTooltipId: Ve("CommentChatPost--Distinguish--"),
+					spamTooltipId: Ve("CommentChatPost--Spam--"),
+					removeTooltipId: Ve("CommentChatPost--Remove--"),
+					deleteTooltipId: Ve("CommentChatPost--Delete--"),
 					isDeleteModalOpen: (e, t) => {
 						let {
 							comment: o
@@ -1215,9 +1215,9 @@
 							commentsPageKey: s,
 							singleOpen: !0
 						})),
-						onReportClick: () => e(Object(H.j)(o.id, !1)),
-						onHideTooltip: () => e(Object(K.i)()),
-						onShowTooltip: t => e(Object(K.f)({
+						onReportClick: () => e(Object(K.j)(o.id, !1)),
+						onHideTooltip: () => e(Object(H.i)()),
+						onShowTooltip: t => e(Object(H.f)({
 							tooltipId: t
 						})),
 						onEditClick: () => {
@@ -1231,8 +1231,8 @@
 							}))
 						},
 						onApproveClick: () => e(Object(m.H)(o.id)),
-						onBlockClick: () => e(Object(V.h)(o.author)),
-						onUnblockClick: () => e(Object(V.g)(o.author)),
+						onBlockClick: () => e(Object(q.h)(o.author)),
+						onUnblockClick: () => e(Object(q.g)(o.author)),
 						onUpvoteClick: () => e(Object(m.rb)(o.id)),
 						onDownvoteClick: () => e(Object(m.T)(o.id)),
 						onDistinguishClick: t => e(Object(m.S)(o.id, t)),
@@ -1278,10 +1278,10 @@
 						removeTooltipId: B,
 						upvoteTooltipId: D,
 						downvoteTooltipId: F,
-						distinguishTooltipId: H,
-						sendEvent: K,
-						spamTooltipId: V,
-						toggleDeleteCommentModal: q,
+						distinguishTooltipId: K,
+						sendEvent: H,
+						spamTooltipId: q,
+						toggleDeleteCommentModal: V,
 						timestampUpdateTrigger: z,
 						isUpvoteOnly: Y,
 						isUpvoteDownvote: Z
@@ -1289,7 +1289,7 @@
 						comment: t,
 						onHideTooltip: E,
 						onShowTooltip: O,
-						sendEvent: K
+						sendEvent: H
 					}, te = t.isMod, {
 						voteState: ie,
 						score: ce,
@@ -1319,27 +1319,27 @@
 						trackingNoun: "reply"
 					}, e), n.a.createElement(De, null)), h && G && n.a.createElement(oe, Ne({
 						onClick: () => S(te ? i.C.NONE : i.C.MODERATOR),
-						tooltipId: H,
+						tooltipId: K,
 						tooltipText: te ? C.fbt._("Undistinguish", null, {
 							hk: "20neZu"
 						}) : C.fbt._("Distinguish as Mod", null, {
 							hk: "jywZz"
 						})
-					}, e), n.a.createElement(Ve, null)), (Y || Z) && !p && de && n.a.createElement(oe, Ne({
+					}, e), n.a.createElement(qe, null)), (Y || Z) && !p && de && n.a.createElement(oe, Ne({
 						onClick: w,
 						tooltipId: D,
 						tooltipText: C.fbt._("Upvote", null, {
 							hk: "21XMb7"
 						})
-					}, e), n.a.createElement(He, null)), Z && !p && de && n.a.createElement(oe, Ne({
+					}, e), n.a.createElement(Ke, null)), Z && !p && de && n.a.createElement(oe, Ne({
 						onClick: L,
 						tooltipId: F,
 						tooltipText: C.fbt._("Downvote", null, {
 							hk: "k46Xu"
 						})
-					}, e), n.a.createElement(Ke, null)), h && $ && n.a.createElement(oe, Ne({
+					}, e), n.a.createElement(He, null)), h && $ && n.a.createElement(oe, Ne({
 						onClick: y,
-						tooltipId: V,
+						tooltipId: q,
 						tooltipText: C.fbt._("Spam", null, {
 							hk: "15R6K5"
 						}),
@@ -1393,7 +1393,7 @@
 							hk: "227ya0"
 						}),
 						onConfirm: a,
-						toggleModal: q,
+						toggleModal: V,
 						withOverlay: !0
 					}), !p && n.a.createElement(oe, Ne({
 						onClick: () => m ? j() : x(),
@@ -1730,8 +1730,8 @@
 					}
 					return o
 				};
-			const Ht = x.a.div("ButtonWrapper", Wt.a),
-				Kt = e => {
+			const Kt = x.a.div("ButtonWrapper", Wt.a),
+				Ht = e => {
 					let {
 						top: t
 					} = e;
@@ -1743,7 +1743,7 @@
 						hk: "2s97tt"
 					}))
 				},
-				Vt = e => {
+				qt = e => {
 					var {
 						className: t,
 						isLivestreaming: o,
@@ -1757,11 +1757,11 @@
 							[Wt.a.LivestreamingWrapper]: o,
 							[Wt.a.loading]: s
 						})
-					}, !s && a.isPrevLoading && !o && n.a.createElement(Kt, {
+					}, !s && a.isPrevLoading && !o && n.a.createElement(Ht, {
 						top: !0
-					}), a.children, !s && a.isNextLoading && !o && n.a.createElement(Kt, null))
+					}), a.children, !s && a.isNextLoading && !o && n.a.createElement(Ht, null))
 				};
-			class qt extends n.a.Component {
+			class Vt extends n.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this._ref = n.a.createRef(), this._refBeforeActiveComments = n.a.createRef(), this._refNextActiveComments = n.a.createRef(), this.chunkSize = 50, this.loadedMore = !1, this.scrollTop = () => this.$ref ? Math.ceil(this.$ref.scrollTop) : 0, this.scrollHeight = () => this.$ref ? this.$ref.scrollHeight : 0, this.clientHeight = () => this.$ref ? this.$ref.clientHeight : 0, this.scrolledPosition = () => this.scrollHeight() - this.clientHeight() - this.scrollTop(), this.scrolledToTop = () => 0 === this.scrollTop(), this.scrolledToBottom = function() {
@@ -1911,7 +1911,7 @@
 						className: e,
 						isLivestreaming: t
 					} = this.props, o = this.state.newCommentsCount > 0 ? Object(g.a)([Wt.a.NewComments, Wt.a.show]) : Wt.a.NewComments;
-					return n.a.createElement(n.a.Fragment, null, n.a.createElement(Vt, {
+					return n.a.createElement(n.a.Fragment, null, n.a.createElement(qt, {
 						className: e,
 						key: "chatScroller",
 						chunkSize: this.chunkSize,
@@ -1931,7 +1931,7 @@
 						key: "nextActiveCommentsSection",
 						ref: this._refNextActiveComments,
 						className: Wt.a.ScrollerSection
-					}, this.state.chunks[this.state.activeChunkIndex + 1])), n.a.createElement(Ht, null, n.a.createElement(Dt.f, {
+					}, this.state.chunks[this.state.activeChunkIndex + 1])), n.a.createElement(Kt, null, n.a.createElement(Dt.f, {
 						className: o,
 						onClick: () => this.scrollToLastBottomChunk()
 					}, this.state.newCommentsCount, " ", C.fbt._({
@@ -1942,7 +1942,7 @@
 					}), "↓")))
 				}
 			}
-			var zt = qt,
+			var zt = Vt,
 				Yt = o("./src/reddit/selectors/posts.ts");
 			const Zt = 6e4,
 				Gt = (e, t, o) => {
@@ -2670,22 +2670,7 @@
 					fillRule: "evenodd"
 				}))
 			}
-		},
-		"./src/reddit/icons/svgs/Unlock/index.tsx": function(e, t, o) {
-			"use strict";
-			var s = o("./node_modules/react/index.js"),
-				n = o.n(s);
-			t.a = e => n.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 16 17",
-				fill: "none",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, n.a.createElement("path", {
-				fillRule: "evenodd",
-				clipRule: "evenodd",
-				d: "M14.9656 14.8328L13.6 13.4672V8.99847C13.6 8.55608 13.2416 8.19848 12.8 8.19848H12V6.59849C12 4.39291 10.2056 2.59853 8 2.59853C6.5712 2.59853 5.328 3.35852 4.624 4.49131L2.1656 2.03294C1.8528 1.72014 1.3472 1.72014 1.0344 2.03294C0.721605 2.34573 0.721605 2.85133 1.0344 3.16413L13.8344 15.964C13.9904 16.12 14.1952 16.1984 14.4 16.1984C14.6048 16.1984 14.8096 16.12 14.9656 15.964C15.2784 15.6512 15.2784 15.1456 14.9656 14.8328ZM4 8.19859H3.2C2.7584 8.19859 2.4 8.55619 2.4 8.99859V14.5986C2.4 15.041 2.7584 15.3986 3.2 15.3986H11.6688L4 7.72979V8.19859ZM10.4 6.59854C10.4 5.27534 9.32319 4.19854 7.99999 4.19854C7.00959 4.19854 6.15839 4.80174 5.79199 5.65934L8.33119 8.19853H10.4V6.59854Z"
-			}))
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.950e2b9495ce014e6f60.js.map
+//# sourceMappingURL=ChatPost.fa7fc37e6d6226d5daa3.js.map

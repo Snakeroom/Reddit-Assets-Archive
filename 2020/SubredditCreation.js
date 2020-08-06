@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.c36af871a63a994b0d23.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.37fc29973d45cff651b2.js
+// Retrieved at 8/6/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -113,28 +113,6 @@
 				d: "M10,8.5 C10.553,8.5 11,8.948 11,9.5 L11,13.5 C11,14.052 10.553,14.5 10,14.5 C9.447,14.5 9,14.052 9,13.5 L9,9.5 C9,8.948 9.447,8.5 10,8.5 Z M10.7002,5.79 C10.8012,5.89 10.8702,6 10.9212,6.12 C10.9712,6.24 11.0002,6.37 11.0002,6.5 C11.0002,6.57 10.9902,6.63 10.9802,6.7 C10.9712,6.76 10.9502,6.82 10.9212,6.88 C10.9002,6.94 10.8702,7 10.8302,7.05 C10.7902,7.11 10.7502,7.16 10.7002,7.21 C10.6602,7.25 10.6102,7.29 10.5512,7.33 C10.5002,7.37 10.4402,7.4 10.3812,7.42 C10.3202,7.45 10.2612,7.47 10.1902,7.48 C10.1312,7.49 10.0602,7.5 10.0002,7.5 C9.7402,7.5 9.4802,7.39 9.2902,7.21 C9.1102,7.02 9.0002,6.77 9.0002,6.5 C9.0002,6.37 9.0302,6.24 9.0802,6.12 C9.1312,5.99 9.2002,5.89 9.2902,5.79 C9.5202,5.56 9.8702,5.46 10.1902,5.52 C10.2612,5.53 10.3202,5.55 10.3812,5.58 C10.4402,5.6 10.5002,5.63 10.5512,5.67 C10.6102,5.71 10.6602,5.75 10.7002,5.79 Z M10,16 C6.691,16 4,13.309 4,10 C4,6.691 6.691,4 10,4 C13.309,4 16,6.691 16,10 C16,13.309 13.309,16 10,16 M10,2 C5.589,2 2,5.589 2,10 C2,14.411 5.589,18 10,18 C14.411,18 18,14.411 18,10 C18,5.589 14.411,2 10,2"
 			})))
 		},
-		"./src/reddit/icons/svgs/Lock/index.tsx": function(e, t, a) {
-			"use strict";
-			var s = a("./node_modules/react/index.js"),
-				n = a.n(s);
-			t.a = e => n.a.createElement("svg", {
-				className: e.className,
-				id: e.id,
-				onMouseEnter: e.onMouseEnter,
-				onMouseLeave: e.onMouseLeave,
-				viewBox: "0 0 40 40",
-				xmlns: "http://www.w3.org/2000/svg",
-				fill: e.fill
-			}, n.a.createElement("g", null, n.a.createElement("rect", {
-				x: "7.5",
-				y: "12.5",
-				width: "0",
-				height: "0"
-			}), n.a.createElement("path", {
-				fill: "inherit",
-				d: "M32.5,17.5v-2.6c0-6.8-5.6-12.4-12.4-12.4h-0.2c-6.8,0-12.4,5.6-12.4,12.4v2.6C6.1,17.5,5,18.6,5,20v10c0,5.5,4.5,10,10,10h10c5.5,0,10-4.5,10-10V20C35,18.6,33.9,17.5,32.5,17.5z M12.5,17.5v-2.6c0-4.1,3.3-7.4,7.4-7.4h0.2c4.1,0,7.4,3.3,7.4,7.4v2.6H12.5z"
-			})))
-		},
 		"./src/reddit/icons/svgs/User/index.tsx": function(e, t, a) {
 			"use strict";
 			var s = a("./node_modules/react/index.js"),
@@ -206,7 +184,7 @@
 		"./src/reddit/pages/SubredditCreation/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "radioOptions", (function() {
-				return he
+				return Ce
 			}));
 			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				n = a("./node_modules/react/index.js"),
@@ -219,21 +197,21 @@
 				m = a("./src/reddit/actions/subredditCreation.ts"),
 				u = a("./src/reddit/actions/tooltip.ts"),
 				p = (a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./src/reddit/actions/tags/index.ts")),
-				h = a("./src/reddit/actions/toaster.ts"),
-				C = a("./src/reddit/components/CommunityTopics/PrimaryTopic/index.tsx"),
+				C = a("./src/reddit/actions/toaster.ts"),
+				h = a("./src/reddit/components/CommunityTopics/PrimaryTopic/index.tsx"),
 				b = a("./src/reddit/components/MultiOptionSelect/index.tsx"),
 				x = a("./src/reddit/models/Tags/index.ts"),
-				v = a("./src/reddit/models/Toast/index.ts"),
-				g = a("./src/reddit/selectors/tags.ts"),
+				g = a("./src/reddit/models/Toast/index.ts"),
+				v = a("./src/reddit/selectors/tags.ts"),
 				E = a("./src/reddit/components/CommunityTopics/index.m.less"),
 				y = a.n(E);
 			const f = Object(l.c)({
-				availableGlobalOptions: g.f,
-				selectedOptions: g.k,
-				isLoading: g.E,
-				currentInput: g.g,
-				selectedPrimaryTag: g.y,
-				hasSecondaryTags: g.q
+				availableGlobalOptions: v.f,
+				selectedOptions: v.k,
+				isLoading: v.E,
+				currentInput: v.g,
+				selectedPrimaryTag: v.y,
+				hasSecondaryTags: v.q
 			});
 			class _ extends i.a.Component {
 				constructor() {
@@ -261,7 +239,7 @@
 				render() {
 					return i.a.createElement("div", {
 						className: y.a.communityTopicsContainer
-					}, i.a.createElement(C.a, null), (!!this.props.selectedPrimaryTag || this.props.hasSecondaryTags) && i.a.createElement(b.a, {
+					}, i.a.createElement(h.a, null), (!!this.props.selectedPrimaryTag || this.props.hasSecondaryTags) && i.a.createElement(b.a, {
 						addText: s.fbt._("Add", null, {
 							hk: "2wi3d4"
 						}),
@@ -300,82 +278,82 @@
 					})),
 					onSearchBarFocused: () => e((e, t) => {}),
 					onMaxTopicsHit: () => e((e, t) => {
-						e(Object(h.e)(Object.assign(Object.assign({}, Object(h.d)(s.fbt._("You can only add up to {max number of topics} community topics", [s.fbt._param("max number of topics", x.a.toString())], {
+						e(Object(C.e)(Object.assign(Object.assign({}, Object(C.d)(s.fbt._("You can only add up to {max number of topics} community topics", [s.fbt._param("max number of topics", x.a.toString())], {
 							hk: "1OySAh"
-						}), v.b.Error)), {
-							duration: h.a
+						}), g.b.Error)), {
+							duration: C.a
 						})))
 					})
 				}))(_),
 				k = a("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				T = a("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				w = a("./src/reddit/components/TrackingHelper/index.tsx"),
-				N = a("./src/reddit/constants/history.ts"),
+				N = a("./src/reddit/components/TrackingHelper/index.tsx"),
+				w = a("./src/reddit/constants/history.ts"),
 				j = a("./src/reddit/contexts/InsideOverlay.tsx"),
 				S = a("./src/reddit/controls/Button/index.tsx"),
-				L = a("./src/reddit/controls/CheckboxInput/index.tsx"),
-				D = a("./src/reddit/controls/ErrorText/index.tsx"),
+				D = a("./src/reddit/controls/CheckboxInput/index.tsx"),
+				L = a("./src/reddit/controls/ErrorText/index.tsx"),
 				I = a("./src/reddit/controls/RadioInput/index.tsx"),
-				M = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				R = a("./src/reddit/helpers/trackers/screenview.ts"),
+				R = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				M = a("./src/reddit/helpers/trackers/screenview.ts"),
 				A = a("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				P = a("./src/reddit/icons/svgs/Admin/index.tsx"),
 				B = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				q = a("./src/reddit/icons/svgs/Eye/index.tsx"),
-				V = a("./src/reddit/icons/svgs/Info/index.tsx"),
-				J = a("./src/reddit/icons/svgs/Lock/index.tsx"),
+				J = a("./src/reddit/icons/svgs/Info/index.tsx"),
+				V = a("./src/reddit/icons/svgs/Lock/index.tsx"),
 				Z = a("./src/reddit/icons/svgs/User/index.tsx"),
 				F = a("./src/reddit/models/Subreddit/index.ts"),
 				W = a("./src/reddit/models/SubredditRestrictions/index.ts"),
 				Q = a("./src/config.ts"),
 				K = a("./src/reddit/pages/SubredditCreation/Layout/index.m.less"),
-				H = a.n(K);
-			var Y = e => i.a.createElement("div", {
-					className: H.a.OuterContainer
+				Y = a.n(K);
+			var H = e => i.a.createElement("div", {
+					className: Y.a.OuterContainer
 				}, i.a.createElement("div", {
-					className: Object(c.a)(e.className, H.a.Container, {
-						[H.a.isOverlay]: e.isOverlay
+					className: Object(c.a)(e.className, Y.a.Container, {
+						[Y.a.isOverlay]: e.isOverlay
 					})
 				}, i.a.createElement("div", {
-					className: Object(c.a)(H.a.Sidebar, {
-						[H.a.isOverlay]: e.isOverlay
+					className: Object(c.a)(Y.a.Sidebar, {
+						[Y.a.isOverlay]: e.isOverlay
 					}),
 					style: {
 						backgroundImage: "url(".concat(Q.a.assetPath, "/img/").concat(e.isOverlay ? "community-creation" : "partner-connection", ".png)")
 					}
 				}), i.a.createElement("div", {
-					className: Object(c.a)(H.a.Content, {
-						[H.a.isOverlay]: e.isOverlay
+					className: Object(c.a)(Y.a.Content, {
+						[Y.a.isOverlay]: e.isOverlay
 					})
 				}, e.children))),
-				z = a("./src/reddit/selectors/subreddit.ts"),
-				U = a("./src/reddit/selectors/user.ts"),
+				U = a("./src/reddit/selectors/subreddit.ts"),
+				z = a("./src/reddit/selectors/user.ts"),
 				X = a("./src/reddit/pages/SubredditCreation/index.m.less"),
 				G = a.n(X),
 				$ = a("./src/lib/lessComponent.tsx");
 			const ee = 21,
 				te = 500,
 				ae = "create-title-info",
-				se = $.a.wrapped(V.a, "Info", G.a),
-				ne = $.a.wrapped(M.a, "RadioOption", G.a),
+				se = $.a.wrapped(J.a, "Info", G.a),
+				ne = $.a.wrapped(R.a, "RadioOption", G.a),
 				ie = $.a.wrapped(k.c, "Tooltip", G.a),
 				re = $.a.wrapped(Z.a, "Public", G.a),
 				oe = $.a.wrapped(q.a, "Restricted", G.a),
-				le = $.a.wrapped(J.a, "Private", G.a),
+				le = $.a.wrapped(V.a, "Private", G.a),
 				ce = $.a.wrapped(P.a, "Employee", G.a),
 				de = $.a.wrapped(B.a, "CloseButton", G.a),
-				me = $.a.wrapped(D.b, "ErrorText", G.a),
+				me = $.a.wrapped(L.b, "ErrorText", G.a),
 				ue = Object(l.c)({
-					error: z.i,
-					isCreatePending: z.l,
-					isEmployee: U.E,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(U.ab)(e),
-					userIsSuspended: U.M,
-					allTags: g.e,
-					existingTags: g.h,
-					newTags: g.i,
-					selectedCommunityTopicsOptions: g.k,
-					selectedPrimaryTagId: g.j
+					error: U.i,
+					isCreatePending: U.l,
+					isEmployee: z.E,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(z.ab)(e),
+					userIsSuspended: z.M,
+					allTags: v.e,
+					existingTags: v.h,
+					newTags: v.i,
+					selectedCommunityTopicsOptions: v.k,
+					selectedPrimaryTagId: v.j
 				}),
 				pe = Object(r.b)(ue, e => ({
 					createCommunity: t => e(Object(m.f)(t)),
@@ -386,7 +364,7 @@
 					})),
 					onHideTooltip: () => e(Object(u.i)())
 				})),
-				he = (e, t) => [i.a.createElement(ne, {
+				Ce = (e, t) => [i.a.createElement(ne, {
 					key: "public",
 					showButton: !0,
 					value: "public"
@@ -450,7 +428,7 @@
 				}, s.fbt._("Only Reddit employees can view and submit to this community", null, {
 					hk: "3ty23C"
 				})))))];
-			class Ce extends i.a.Component {
+			class he extends i.a.Component {
 				constructor(e) {
 					super(e), this.onNameChange = e => {
 						this.setState({
@@ -537,7 +515,7 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(R.q)()), this.props.clearErrors()
+					e(Object(M.q)()), this.props.clearErrors()
 				}
 				componentWillUnmount() {
 					clearTimeout(this.timeout)
@@ -555,12 +533,12 @@
 						userDoesNotHaveEnoughExpToCreateCommunity: m,
 						userIsSuspended: u
 					} = this.props, p = this.errorHelper(e), {
-						over18: h,
-						waitingForSuccessfulCommunity: C
+						over18: C,
+						waitingForSuccessfulCommunity: h
 					} = this.state, {
 						location: b
 					} = this.props;
-					return i.a.createElement(Y, {
+					return i.a.createElement(H, {
 						className: Object(c.a)(G.a.subredditCreation, {
 							[G.a.isOverlay]: n
 						}),
@@ -573,7 +551,7 @@
 						hk: "SlFa7"
 					}), n && i.a.createElement(de, {
 						onClick: () => {
-							d(Object(A.a)()), r(b.state[N.a.CloseLocation])
+							d(Object(A.a)()), r(b.state[w.a.CloseLocation])
 						}
 					})), m ? i.a.createElement("h2", {
 						className: G.a.sublabel
@@ -648,7 +626,7 @@
 						value: this.state.type,
 						name: "type",
 						onChange: this.onTypeChange
-					}, he(a, "post"))), i.a.createElement("div", {
+					}, Ce(a, "post"))), i.a.createElement("div", {
 						className: Object(c.a)(G.a.field, {
 							[G.a.isCreatePending]: t
 						})
@@ -656,9 +634,9 @@
 						className: G.a.subtitle
 					}, s.fbt._("Adult content", null, {
 						hk: "20arB"
-					})), i.a.createElement(L.a, {
+					})), i.a.createElement(D.a, {
 						name: "over18",
-						value: h,
+						value: C,
 						onChange: () => this.update(!this.state.over18, "over18"),
 						disabled: t
 					}, i.a.createElement("div", {
@@ -667,7 +645,7 @@
 						className: G.a.sublabel
 					}, s.fbt._("18+ year old community", null, {
 						hk: "1XxZMV"
-					})))), p.generic && i.a.createElement(me, null, p.generic), C && i.a.createElement("div", {
+					})))), p.generic && i.a.createElement(me, null, p.generic), h && i.a.createElement("div", {
 						className: G.a.pendingText
 					}, s.fbt._("Your community is being created...", null, {
 						hk: "3dSTrq"
@@ -679,7 +657,7 @@
 						disabled: t,
 						className: G.a.createButton,
 						onClick: () => {
-							r(b.state[N.a.CloseLocation]), d(Object(A.a)())
+							r(b.state[w.a.CloseLocation]), d(Object(A.a)())
 						}
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -692,8 +670,8 @@
 					}))))))
 				}
 			}
-			t.default = Object(w.c)(pe(Object(j.b)(Ce)))
+			t.default = Object(N.c)(pe(Object(j.b)(he)))
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.c36af871a63a994b0d23.js.map
+//# sourceMappingURL=SubredditCreation.37fc29973d45cff651b2.js.map
