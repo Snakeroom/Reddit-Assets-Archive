@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.80ef778f5b1121edec12.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b11b27a3f5121213e1ca.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -5032,7 +5032,7 @@
 					typeaheadSuggestions: xo.i
 				}), (e, t) => ({
 					fetchTrendingItems: () => e(Object(Er.b)()),
-					fireAdPixelsOfType: (t, s) => e(Object(xr.z)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(xr.A)(t, s)),
 					onChange: t => e(Object(Pr.j)({
 						searchQuery: t
 					})),
@@ -7427,7 +7427,7 @@
 					isSubscriptionsPinned: Fn.b,
 					isSuspended: zt.M,
 					isFPR: zt.F,
-					posts: sm.P,
+					posts: sm.R,
 					profileCollectionsEnabled: Mu.a,
 					showEmailCollectionBanner: e => !Object(fs.J)(Object(rs.b)(e)) && lm(e)
 				}), e => ({
@@ -7741,7 +7741,7 @@
 				c = s("./src/reddit/selectors/posts.ts"),
 				d = s("./src/lib/classNames/index.ts");
 			const l = Object(i.a)(() => Object(r.c)({
-					post: c.M
+					post: c.O
 				})),
 				u = e => {
 					let {
@@ -8645,7 +8645,7 @@
 						close: () => {
 							e(Object(u.a)(s, !0))
 						},
-						toggleVote: (t, s) => e(s === w.a.upvoted ? Object(l.Y)(t) : Object(l.w)(t))
+						toggleVote: (t, s) => e(s === w.a.upvoted ? Object(l.Z)(t) : Object(l.x)(t))
 					}
 				}, (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), s), {
 					onVoteClick: n => {
@@ -13682,4 +13682,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.80ef778f5b1121edec12.js.map
+//# sourceMappingURL=Reddit.b11b27a3f5121213e1ca.js.map

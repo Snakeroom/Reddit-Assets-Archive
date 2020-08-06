@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.72f6ca954e7a185a134e.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.1106f91bf6a065ab079b.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -153,7 +153,7 @@
 							const {
 								postId: e
 							} = l, t = s.posts.models[e];
-							t && t.voteState === h.a.notVoted && n(Object(c.Y)(e))
+							t && t.voteState === h.a.notVoted && n(Object(c.Z)(e))
 						}
 					} else n(w({
 						pollId: e,
@@ -783,9 +783,9 @@
 				}))
 			}))(q));
 			const {
-				fbt: z
+				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var Z, X = function(e) {
+			var z, X = function(e) {
 					const t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/wallet.svg)");
 					return s.a.createElement("div", {
 						className: Object(o.a)(C.a.card, C.a.walletCard)
@@ -793,11 +793,11 @@
 						className: C.a.text
 					}, s.a.createElement("div", {
 						className: C.a.header
-					}, z._("Create a Wallet", null, {
+					}, Z._("Create a Wallet", null, {
 						hk: "M5zQ2"
 					})), s.a.createElement("div", {
 						className: C.a.body
-					}, z._("Create your MetaMask account and Ethereum wallet by following the instructions in MetaMask after you install the extension.", null, {
+					}, Z._("Create your MetaMask account and Ethereum wallet by following the instructions in MetaMask after you install the extension.", null, {
 						hk: "4DQsB7"
 					}))), s.a.createElement("div", {
 						className: C.a.cta
@@ -809,15 +809,15 @@
 					}), s.a.createElement(g.i, {
 						className: C.a.button,
 						onClick: e.onNextStep
-					}, z._("Next", null, {
+					}, Z._("Next", null, {
 						hk: "3KNR6B"
 					}), s.a.createElement(v.a, {
 						className: C.a.buttonIcon
 					}))))
 				},
-				Y = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
-				J = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
-				Q = n.n(J);
+				J = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
+				Y = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
+				Q = n.n(Y);
 
 			function K(e) {
 				const {
@@ -831,34 +831,34 @@
 				}, t)
 			}! function(e) {
 				e[e.About = 0] = "About", e[e.MetaMask = 1] = "MetaMask", e[e.Wallet = 2] = "Wallet", e[e.Connect = 3] = "Connect", e[e.Verify = 4] = "Verify", e[e.Registered = 5] = "Registered"
-			}(Z || (Z = {}));
+			}(z || (z = {}));
 			const $ = [{
-				id: Z.About,
+				id: z.About,
 				name: () => V.fbt._("About", null, {
 					hk: "1jX7pr"
 				})
 			}, {
-				id: Z.MetaMask,
+				id: z.MetaMask,
 				name: () => V.fbt._("MetaMask", null, {
 					hk: "2Y184A"
 				})
 			}, {
-				id: Z.Wallet,
+				id: z.Wallet,
 				name: () => V.fbt._("Wallet", null, {
 					hk: "3qALAf"
 				})
 			}, {
-				id: Z.Connect,
+				id: z.Connect,
 				name: () => V.fbt._("Connect", null, {
 					hk: "3GMXUP"
 				})
 			}, {
-				id: Z.Verify,
+				id: z.Verify,
 				name: () => V.fbt._("Verify", null, {
 					hk: "WHMgJ"
 				})
 			}, {
-				id: Z.Registered,
+				id: z.Registered,
 				name: () => V.fbt._("Registered", null, {
 					hk: "1U7VpD"
 				})
@@ -905,7 +905,7 @@
 						const {
 							activeTab: e
 						} = this.state;
-						if (e === Z.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
+						if (e === z.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
 							const t = m.defaults(e);
 							return Object.assign(Object.assign({
 								source: "meta",
@@ -916,14 +916,14 @@
 								subreddit: m.subreddit(e)
 							})
 						});
-						const t = e === Z.About ? Z.MetaMask : e === Z.MetaMask ? Z.Wallet : e === Z.Wallet ? Z.Connect : e === Z.Connect ? Z.Verify : Z.Registered;
+						const t = e === z.About ? z.MetaMask : e === z.MetaMask ? z.Wallet : e === z.Wallet ? z.Connect : e === z.Connect ? z.Verify : z.Registered;
 						this.setState({
 							activeTab: t
 						}), this.sendViewTabEvent(t)
 					}, this.correlationId = p()();
 					const t = Object(_.b)(e.pageLayer);
 					this.state = {
-						activeTab: t && Object(l.e)() ? Z.Wallet : Z.About
+						activeTab: t && Object(l.e)() ? z.Wallet : z.About
 					}
 				}
 				async componentDidMount() {
@@ -954,10 +954,10 @@
 						token: r
 					} = this.props, {
 						activeTab: c
-					} = this.state, i = c === Z.About ? k : c === Z.MetaMask ? R : c === Z.Wallet ? X : c === Z.Connect ? j : c === Z.Verify ? F : L;
+					} = this.state, i = c === z.About ? k : c === z.MetaMask ? R : c === z.Wallet ? X : c === z.Connect ? j : c === z.Verify ? F : L;
 					return s.a.createElement("article", {
 						className: Object(o.a)(Q.a.container, e)
-					}, s.a.createElement(Y.a, {
+					}, s.a.createElement(J.a, {
 						subredditId: a
 					}), s.a.createElement("button", {
 						className: Q.a.closeButton,
@@ -1779,4 +1779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.72f6ca954e7a185a134e.js.map
+//# sourceMappingURL=GovernanceWalletRegistration.1106f91bf6a065ab079b.js.map

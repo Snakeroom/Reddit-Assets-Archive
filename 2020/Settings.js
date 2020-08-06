@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.32cc176f05955ccaaeca.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.aa9fc5adf183d5b56b90.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1063,10 +1063,10 @@
 				})),
 				C = n("./src/reddit/selectors/posts.ts");
 			var x = Object(o.b)(() => Object(r.c)({
-				post: C.M,
-				subredditOrProfile: C.Z,
+				post: C.O,
+				subredditOrProfile: C.bb,
 				isModerator: (e, t) => {
-					const n = Object(C.Z)(e, t);
+					const n = Object(C.bb)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => a.a.createElement(b, {
@@ -1100,11 +1100,11 @@
 				}
 			}));
 			var E = Object(o.b)(() => Object(r.c)({
-				subredditOrProfile: (e, t) => Object(C.Z)(e, {
+				subredditOrProfile: (e, t) => Object(C.bb)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const n = Object(C.Z)(e, {
+					const n = Object(C.bb)(e, {
 						postId: t.post.id
 					});
 					return n && !!e.moderatingSubreddits[n.name] || !1
@@ -1126,10 +1126,10 @@
 				}
 			}));
 			var w = Object(o.b)(() => Object(r.c)({
-				post: C.M,
-				subredditOrProfile: C.Z,
+				post: C.O,
+				subredditOrProfile: C.bb,
 				isModerator: (e, t) => {
-					const n = Object(C.Z)(e, t);
+					const n = Object(C.bb)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => a.a.createElement(b, {
@@ -1883,21 +1883,21 @@
 				z = n("./src/reddit/helpers/trackers/premiumSettings.ts"),
 				q = n("./src/reddit/selectors/activeModalId.ts"),
 				V = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
-				Z = n("./src/reddit/selectors/user.ts"),
-				J = n("./src/reddit/components/Settings/index.m.less"),
-				Y = n.n(J);
+				J = n("./src/reddit/selectors/user.ts"),
+				Z = n("./src/reddit/components/Settings/index.m.less"),
+				Y = n.n(Z);
 			const Q = "https://www.paypal.com/myaccount/autopay",
 				K = "update_card_modal_id",
 				X = Object(l.c)({
 					arePowerupsEnabled: V.a,
 					cancelSubscriptionModalIsOpen: Object(q.b)("settings_optout_modal_id"),
-					goldExpiration: Z.n,
-					hasAndroidSubscription: Z.o,
-					hasIOSSubscription: Z.r,
-					hasStripeSubscription: Z.v,
-					hasPaypalSubscription: Z.t,
-					isGold: Z.p,
-					isPremiumSubscriber: Z.q,
+					goldExpiration: J.n,
+					hasAndroidSubscription: J.o,
+					hasIOSSubscription: J.r,
+					hasStripeSubscription: J.v,
+					hasPaypalSubscription: J.t,
+					isGold: J.p,
+					isPremiumSubscriber: J.q,
 					updateCardModalIsOpen: Object(q.b)(K)
 				}),
 				$ = Object(i.b)(X, e => ({
@@ -3550,12 +3550,12 @@
 				}) : s.fbt._("We have detected suspicious activity on your account. For your safety we have suspended your account until you reset your password to confirm your identity.", null, {
 					hk: "YIzQQ"
 				}),
-				Z = e => e ? s.fbt._("Reset password email sent", null, {
+				J = e => e ? s.fbt._("Reset password email sent", null, {
 					hk: "cLjlN"
 				}) : s.fbt._("Send a reset password email to access your account", null, {
 					hk: "4jgOhY"
 				}),
-				J = e => e ? s.fbt._("Email was sent to:", null, {
+				Z = e => e ? s.fbt._("Email was sent to:", null, {
 					hk: "3Z4iz1"
 				}) : s.fbt._("Email will be sent to:", null, {
 					hk: "2CTyJh"
@@ -3619,7 +3619,7 @@
 						className: H.a.status
 					}, q(e), o.a.createElement("h3", {
 						className: H.a.statusText
-					}, Z(e))), o.a.createElement("p", {
+					}, J(e))), o.a.createElement("p", {
 						className: H.a.description
 					}, V(e)), o.a.createElement("div", {
 						className: H.a.actionContainer
@@ -3636,7 +3636,7 @@
 						className: H.a.errorMsg
 					}, n)) : o.a.createElement("p", {
 						className: H.a.emailText
-					}, J(e), o.a.createElement("span", {
+					}, Z(e), o.a.createElement("span", {
 						className: H.a.emailAddress
 					}, t))), o.a.createElement(w.f, {
 						className: H.a.primaryBtn,
@@ -3940,8 +3940,8 @@
 				ze = n("./src/reddit/models/ExternalAccount/index.ts");
 			const qe = Ce.a.wrapped(Ge.a, "TwitterIcon", ke.a),
 				Ve = Ce.a.wrapped(He.a, "LoadingIcon", ke.a),
-				Ze = Ce.a.wrapped(ee.c, "ConnectTwitter", ke.a),
-				Je = Ce.a.wrapped(w.f, "ConnectTwitterButton", ke.a),
+				Je = Ce.a.wrapped(ee.c, "ConnectTwitter", ke.a),
+				Ze = Ce.a.wrapped(w.f, "ConnectTwitterButton", ke.a),
 				Ye = Ce.a.span("TextAndIconWrapper", ke.a),
 				Qe = Ce.a.wrapped(w.j, "DisconnectButton", ke.a),
 				Ke = Ce.a.span("Username", ke.a),
@@ -3989,7 +3989,7 @@
 					} = e, r = Object(m.a)({
 						[ke.a["m-responsive"]]: n
 					});
-					return o.a.createElement(Ze, {
+					return o.a.createElement(Je, {
 						className: r,
 						label: s.fbt._("Connect to Twitter", null, {
 							hk: "4rhAYG"
@@ -3997,7 +3997,7 @@
 						subtext: s.fbt._("Connect a Twitter account to enable the choice to tweet your new posts and display a link on your profile. We will never post to Twitter without your permission.", null, {
 							hk: "3TueXf"
 						})
-					}, o.a.createElement(Je, {
+					}, o.a.createElement(Ze, {
 						className: r,
 						onClick: t
 					}, a ? o.a.createElement(Ve, {
@@ -4247,8 +4247,8 @@
 				zt = Ce.a.div("ListBox", Wt.a),
 				qt = Ce.a.div("MoreWrapper", Wt.a),
 				Vt = Ce.a.button("MoreButton", Wt.a),
-				Zt = Ce.a.wrapped(ee.m, "Subtext", Wt.a);
-			class Jt extends o.a.Component {
+				Jt = Ce.a.wrapped(ee.m, "Subtext", Wt.a);
+			class Zt extends o.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						showAll: !1,
@@ -4279,7 +4279,7 @@
 						className: Object(m.a)(Wt.a.container, n, {
 							[Wt.a.mPadBottom]: !!i
 						})
-					}, o.a.createElement(Gt, null, u), void 0 !== p && o.a.createElement(Zt, null, p), o.a.createElement(R.a, {
+					}, o.a.createElement(Gt, null, u), void 0 !== p && o.a.createElement(Jt, null, p), o.a.createElement(R.a, {
 						buttonText: s.fbt._("Add", null, {
 							hk: "2wi3d4"
 						}),
@@ -4363,7 +4363,7 @@
 						displayTitle: xt.b[m],
 						onClick: e => c(e, "acceptPrivateMessages"),
 						id: "acceptPrivateMessages"
-					}), (n.invitePolicy !== Et.a.anybody || a === xt.a.Whitelisted) && o.a.createElement(Kt, null, o.a.createElement(Jt, {
+					}), (n.invitePolicy !== Et.a.anybody || a === xt.a.Whitelisted) && o.a.createElement(Kt, null, o.a.createElement(Zt, {
 						title: s.fbt._("People You’ve Whitelisted", null, {
 							hk: "2dIqgE"
 						}),
@@ -4657,11 +4657,11 @@
 			var zn = n("./src/reddit/constants/postLayout.ts"),
 				qn = n("./src/reddit/icons/svgs/ClassicPosts/index.tsx"),
 				Vn = n("./src/reddit/icons/svgs/CompactPosts/index.tsx"),
-				Zn = n("./src/reddit/icons/svgs/LargePosts/index.tsx"),
-				Jn = n("./src/reddit/controls/Dropdown/index.m.less"),
-				Yn = n.n(Jn);
+				Jn = n("./src/reddit/icons/svgs/LargePosts/index.tsx"),
+				Zn = n("./src/reddit/controls/Dropdown/index.m.less"),
+				Yn = n.n(Zn);
 			const Qn = {
-				[zn.d.Card]: Zn.a,
+				[zn.d.Card]: Jn.a,
 				[zn.d.Classic]: qn.a,
 				[zn.d.Compact]: Vn.a
 			};
@@ -5519,8 +5519,8 @@
 			var zs = n("./src/reddit/actions/economics/paymentSystems/actionCreators.ts"),
 				qs = n("./src/reddit/models/Payments/index.ts"),
 				Vs = n("./src/reddit/components/Settings/Payments/PaymentMethods/index.m.less"),
-				Zs = n.n(Vs);
-			class Js extends o.a.Component {
+				Js = n.n(Vs);
+			class Zs extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						paymentsBeingRemoved: {}
@@ -5546,12 +5546,12 @@
 					})), this.props.savedPayments.map(e => {
 						const t = !!this.state.paymentsBeingRemoved[e.id];
 						return o.a.createElement("div", {
-							className: Zs.a.payment,
+							className: Js.a.payment,
 							key: e.id
 						}, o.a.createElement("div", {
-							className: Zs.a.paymentDisplay
+							className: Js.a.paymentDisplay
 						}, o.a.createElement(ys.a, {
-							className: Zs.a.lock
+							className: Js.a.lock
 						}), e.display), o.a.createElement(w.n, {
 							disabled: t,
 							onClick: () => this.removePayment(e)
@@ -5561,7 +5561,7 @@
 							hk: "2j7wjS"
 						})))
 					}), !this.props.savedPayments.length && o.a.createElement("div", {
-						className: Zs.a.noSavedPayment
+						className: Js.a.noSavedPayment
 					}, s.fbt._("You have no saved payment methods", null, {
 						hk: "3JiSmk"
 					})))
@@ -5584,7 +5584,7 @@
 						}))
 					}
 				}));
-			var Ks = Object(an.b)(Qs(Js)),
+			var Ks = Object(an.b)(Qs(Zs)),
 				Xs = n("./src/reddit/components/Settings/Payments/index.m.less"),
 				$s = n.n(Xs),
 				ea = () => o.a.createElement(me.a, null, o.a.createElement(Gs, {
@@ -5650,7 +5650,7 @@
 						hk: "3appHO"
 					})), o.a.createElement($.a, null, s.fbt._("Safety", null, {
 						hk: "WyYmF"
-					})), o.a.createElement(Jt, {
+					})), o.a.createElement(Zt, {
 						title: s.fbt._("People You’ve Blocked", null, {
 							hk: "3DxcE1"
 						}),
@@ -6115,9 +6115,9 @@
 			var za = n("./src/reddit/actions/governance/communityDetails.ts"),
 				qa = n("./src/lib/addQueryParams/index.ts"),
 				Va = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
-				Za = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/QRCode.tsx"),
-				Ja = n("./src/reddit/components/Governance/TransactionModals/CancelMembershipCard/index.m.less"),
-				Ya = n.n(Ja);
+				Ja = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/QRCode.tsx"),
+				Za = n("./src/reddit/components/Governance/TransactionModals/CancelMembershipCard/index.m.less"),
+				Ya = n.n(Za);
 			const {
 				fbt: Qa
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -6159,7 +6159,7 @@
 						className: Ya.a.rightSection
 					}, o.a.createElement("div", {
 						className: Ya.a.qrCode
-					}, o.a.createElement(Za.a, {
+					}, o.a.createElement(Ja.a, {
 						url: s,
 						color: t.primaryColor
 					}))))
@@ -6567,7 +6567,7 @@
 					updatePrefs: t => e(Object(E.H)(t)),
 					onPageViewed: () => e(Object(h.a)())
 				})),
-				Zo = {
+				Jo = {
 					activityRelevantAds: "personalization_activity_relevant_ads",
 					acceptPrivateMessages: "recieve_messages",
 					allowClickTracking: "privacy_log_outbound_clicks",
@@ -6613,7 +6613,7 @@
 					topContentDismissalTime: "top_content_dismissal_time",
 					topContentTimesDismissed: "top_content_times_dismissed"
 				};
-			class Jo extends o.a.Component {
+			class Zo extends o.a.Component {
 				constructor() {
 					var e;
 					super(...arguments), e = this, this.tabNavRef = o.a.createRef(), this.update = (e, t) => {
@@ -6625,10 +6625,10 @@
 						}))
 					}, this.sendEvent = (e, t) => {
 						const n = d()();
-						Zo.hasOwnProperty(t) && this.props.sendEvent(s => ({
+						Jo.hasOwnProperty(t) && this.props.sendEvent(s => ({
 							source: this.getSource(),
 							action: "save",
-							noun: Zo[t],
+							noun: Jo[t],
 							correlationId: n,
 							setting: {
 								value: this.getTrackingValue(t, e),
@@ -6763,7 +6763,7 @@
 					}, Go(a, r, e, i).filter(e => !e.disabled).map(this.renderTab)), this.renderForm(t.params.page))
 				}
 			}
-			t.default = qo(Vo(Object(ms.c)(Jo)))
+			t.default = qo(Vo(Object(ms.c)(Zo)))
 		},
 		"./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts": function(e, t, n) {
 			"use strict";
@@ -6775,4 +6775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.32cc176f05955ccaaeca.js.map
+//# sourceMappingURL=Settings.aa9fc5adf183d5b56b90.js.map

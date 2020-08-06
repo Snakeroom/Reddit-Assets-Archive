@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.0db179b8cedd05e86fa5.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.133058695b25de61dcf6.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -121,16 +121,16 @@
 				g = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				f = s("./src/reddit/constants/experiments.ts"),
 				x = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				O = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(O.E)(e) || f.rc.ShowTopContent === Object(x.c)(e, {
+				y = s("./src/reddit/selectors/user.ts");
+			const O = e => Object(y.E)(e) || f.rc.ShowTopContent === Object(x.c)(e, {
 				experimentEligibilitySelector: x.a,
 				experimentName: f.mc
 			});
 			var j = s("./src/reddit/selectors/subreddit.ts"),
-				v = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
-				C = s.n(v);
+				C = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
+				v = s.n(C);
 			const k = Object(a.b)(() => Object(l.c)({
-				inSubredditTopContentExperiment: y,
+				inSubredditTopContentExperiment: O,
 				subredditUrl: j.d
 			}), e => ({
 				trackDiscoveryUnitView: t => e((e, s) => g.g(s(), t)),
@@ -171,15 +171,15 @@
 						postIds: r,
 						range: o
 					} = s, i = "".concat(t).concat(u.O.TOP, "?t=").concat(o), a = c.a.createElement(h.a, {
-						className: C.a.widgetHeader
+						className: v.a.widgetHeader
 					}, c.a.createElement("button", {
-						className: C.a.closeButton,
+						className: v.a.closeButton,
 						onClick: this.onCloseClick
 					}, c.a.createElement(b.b, {
-						className: C.a.closeIcon,
+						className: v.a.closeIcon,
 						"data-redditstyle": !0
 					})), c.a.createElement(d.a, {
-						className: C.a.headerLink,
+						className: v.a.headerLink,
 						to: i
 					}, n.fbt._("Top posts from the past {range}", [n.fbt._param("range", o)], {
 						hk: "xhJKf"
@@ -187,7 +187,7 @@
 					return c.a.createElement("div", {
 						className: this.props.className
 					}, c.a.createElement(p.a, {
-						className: C.a.layout,
+						className: v.a.layout,
 						header: a,
 						hidePadding: !0
 					}, c.a.createElement(m.a, {
@@ -250,7 +250,7 @@
 				g = s("./src/higherOrderComponents/withClickTracking.tsx"),
 				f = s("./src/reddit/components/PostContainer/index.m.less"),
 				x = s.n(f);
-			const O = Object(o.c)({
+			const y = Object(o.c)({
 					basePixelMetadata: (e, t) => {
 						let {
 							post: s
@@ -286,15 +286,23 @@
 						return Object(b.c)(e, {
 							postId: s.id
 						})
+					},
+					imageGalleryCurrentUrl: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(m.j)(e, {
+							postId: s.id
+						})
 					}
 				}),
-				y = Object(u.a)(O),
+				O = Object(u.a)(y),
 				j = e => {
 					const t = Object(g.d)(e.target, e.currentTarget),
 						s = Object(g.b)(e.target, e.currentTarget, g.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class v extends r.a.Component {
+			class C extends r.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -304,39 +312,40 @@
 						basePixelMetadata: t,
 						children: s,
 						className: n,
-						makePostContainerId: o,
-						post: c,
-						onClick: a,
-						onPostContentClick: d,
-						style: u,
-						ref: m
-					} = this.props, b = r.a.createElement("div", {
+						imageGalleryCurrentUrl: o,
+						makePostContainerId: c,
+						post: a,
+						onClick: d,
+						onPostContentClick: u,
+						style: m,
+						ref: b
+					} = this.props, g = r.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
-						style: u,
-						ref: m,
+						style: m,
+						ref: b,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: s => {
-							!this.cancelClick && s.button < 2 && (e(() => a && a(s, c, t))(s), d && j(s) && d(s, c))
+							!this.cancelClick && s.button < 2 && (e(() => d && d(s, a, t, o))(s), u && j(s) && u(s, a))
 						},
-						className: Object(h.a)(x.a.WrappedPost, n, "Post ".concat(c.id), {
-							promotedlink: c.isSponsored
+						className: Object(h.a)(x.a.WrappedPost, n, "Post ".concat(a.id), {
+							promotedlink: a.isSponsored
 						}),
-						id: o ? o(c.id) : c.id,
+						id: c ? c(a.id) : a.id,
 						tabIndex: -1
-					}, s), g = !!c.media && c.media.type === p.o.VIDEO;
-					return c.isSponsored || g ? r.a.createElement(i.a, {
-						post: c,
+					}, s), f = !!a.media && a.media.type === p.o.VIDEO;
+					return a.isSponsored || f ? r.a.createElement(i.a, {
+						post: a,
 						trackDisplay: !0
-					}, b) : c.media && Object(p.F)(c.media) ? r.a.createElement(l, {
-						postId: c.id
-					}, b) : b
+					}, g) : a.media && Object(p.F)(a.media) ? r.a.createElement(l, {
+						postId: a.id
+					}, g) : g
 				}
 			}
-			t.a = y(Object(g.c)(v))
+			t.a = O(Object(g.c)(C))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -556,4 +565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.0db179b8cedd05e86fa5.js.map
+//# sourceMappingURL=SubredditTopContent.133058695b25de61dcf6.js.map

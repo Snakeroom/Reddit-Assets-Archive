@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.ee319fdbf5b19fa59739.js
-// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.15ac77f8a6277991d3a5.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -139,10 +139,10 @@
 						isFrontpage: Z,
 						isGalleryTileLayoutDefault: K,
 						isLoggedIn: Q,
-						isOverlay: Y,
-						moderatorPermissions: J,
-						modModeEnabled: q,
-						onClickPost: X,
+						isOverlay: J,
+						moderatorPermissions: Y,
+						modModeEnabled: X,
+						onClickPost: q,
 						onIgnoreReports: $,
 						onOpenReportsDropdown: ee,
 						poll: te,
@@ -156,20 +156,20 @@
 						toggleCheckbox: de,
 						userIsOp: le,
 						shouldShowGalleryTileOption: pe
-					} = this.props, me = oe ? void 0 : W, ue = this.props.crosspost || void 0, xe = Object(I.a)(J), be = Object(L.a)(J), he = Object(A.a)(J), Oe = q && I.a, fe = !!se.media && se.media.type === N.o.RTJSON, ye = le && fe, ge = g && !ie, je = !!se.media && Object(N.H)(se.media), Pe = {
+					} = this.props, me = oe ? void 0 : W, ue = this.props.crosspost || void 0, xe = Object(I.a)(Y), be = Object(L.a)(Y), he = Object(A.a)(Y), Oe = X && I.a, fe = !!se.media && se.media.type === N.o.RTJSON, ye = le && fe, ge = g && !ie, je = !!se.media && Object(N.H)(se.media), Pe = {
 						flairStyleTemplate: me,
 						post: se,
 						inSubredditOrProfile: g,
 						isCurrentUserProfilePost: G,
-						isOverlay: Y,
+						isOverlay: J,
 						shouldShowSubscribeButton: !(Z && Q),
 						subredditOrProfile: ce
 					}, Ce = r.a.createElement(y.a, {
 						className: Object(n.a)(B.a.classicPostStyles, R.a.postContainer, Object(M.a)(this.props), w ? R.a.mFirst : void 0, e),
-						isOverlay: Y,
+						isOverlay: J,
 						style: Object.assign(Object.assign({}, Object(M.d)(this.props)), Object(M.b)(this.props.flairStyleTemplate)),
 						post: se,
-						onClick: X,
+						onClick: q,
 						eventFactory: _
 					}, r.a.createElement(C.a, {
 						model: se,
@@ -218,7 +218,7 @@
 						redditStyle: oe,
 						size: v.b.Medium,
 						titleColor: me && me.postTitleColor,
-						isOverlay: Y
+						isOverlay: J
 					}, se.source && !ue && r.a.createElement(k.a, {
 						href: se.source.url,
 						isSponsored: se.isSponsored,
@@ -226,7 +226,7 @@
 						source: se.source
 					}, Object(c.a)(se))), r.a.createElement(j.a, V({
 						key: "PostMeta"
-					}, Pe)), q && xe && Object(O.c)(se) && r.a.createElement(h.a, {
+					}, Pe)), X && xe && Object(O.c)(se) && r.a.createElement(h.a, {
 						onIgnoreReports: $,
 						reportable: se
 					}), r.a.createElement("div", {
@@ -266,14 +266,14 @@
 						hasModPostPerms: xe,
 						hasModFullPerms: he,
 						hostPostId: D,
-						isOverlay: !!Y,
-						modModeEnabled: q,
+						isOverlay: !!J,
+						modModeEnabled: X,
 						onIgnoreReports: $,
 						onOpenReportsDropdown: ee,
 						post: se,
 						showEditPost: ye,
 						showEditFlair: ne,
-						tooltipType: Y ? E.c.Lightbox : void 0,
+						tooltipType: J ? E.c.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(P.h)({
 							editPost: !Oe,
 							save: !Oe,
@@ -671,27 +671,27 @@
 					activeModalId: l.a,
 					crosspost: x.d,
 					currentUser: b.i,
-					isActive: x.i,
+					isActive: x.k,
 					isChatPostExperiment: p.d,
-					isCurrentUserProfilePost: x.j,
-					isExpanded: x.l,
+					isCurrentUserProfilePost: x.l,
+					isExpanded: x.n,
 					isLoggedIn: b.H,
 					isMeta: (e, t) => {
 						let {
 							postId: s
 						} = t;
-						return Object(x.q)(e, s)
+						return Object(x.s)(e, s)
 					},
 					moderatorPermissions: m.i,
 					modModeEnabled: d.P,
-					post: x.M,
+					post: x.O,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: u.a,
 					showMedia: d.r,
-					subredditOrProfile: x.Z,
+					subredditOrProfile: x.bb,
 					userIsOp: b.hb,
 					flairStyleTemplate: d.R
 				},
@@ -703,10 +703,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const s = t === i.a.upvoted ? Object(a.Y)(r) : Object(a.w)(r);
+							const s = t === i.a.upvoted ? Object(a.Z)(r) : Object(a.x)(r);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(a.W)(r)),
+						onIgnoreReports: () => e(Object(a.X)(r)),
 						onOpenReportsDropdown: t => e(Object(n.h)({
 							tooltipId: t
 						}))
@@ -810,4 +810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPageNativeAd.ee319fdbf5b19fa59739.js.map
+//# sourceMappingURL=CommentsPageNativeAd.15ac77f8a6277991d3a5.js.map

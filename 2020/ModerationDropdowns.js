@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.8709407c2b979c3eb4a6.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.c05cbaf314d08b3d1ce6.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -663,27 +663,27 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(l.s)(s.id)),
-						onDistinguishPost: t => e(Object(l.v)(s.id, t)),
+						onApprovePost: () => e(Object(l.t)(s.id)),
+						onDistinguishPost: t => e(Object(l.w)(s.id, t)),
 						onFlairChanged: (t, o) => e(Object(d.h)({
 							post: s,
 							previewFlair: t,
 							selectedTemplateId: o
 						})),
 						onFlairPost: t => e(Object(c.i)(t)),
-						onLockPost: () => e(Object(l.C)(s.id)),
-						onNsfwPost: () => e(Object(l.G)(s.id)),
-						onOcPost: () => e(Object(l.H)(s.id)),
+						onLockPost: () => e(Object(l.D)(s.id)),
+						onNsfwPost: () => e(Object(l.H)(s.id)),
+						onOcPost: () => e(Object(l.I)(s.id)),
 						onCcPost: () => {
-							e(Object(c.i)(x.a.CROWD_CONTROL)), e(Object(l.u)(s.id))
+							e(Object(c.i)(x.a.CROWD_CONTROL)), e(Object(l.v)(s.id))
 						},
-						onRemovePost: () => e(Object(l.Q)(s.id, !1)),
+						onRemovePost: () => e(Object(l.R)(s.id, !1)),
 						onModToMemberShareOpened: () => {
-							e(Object(c.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(l.D)(s.id))
+							e(Object(c.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(l.E)(s.id))
 						},
-						onSpamPost: () => e(Object(l.Q)(s.id, !0)),
-						onSpoilerPost: () => e(Object(l.U)(s.id)),
-						onStickyPost: () => e(Object(l.X)(s.id))
+						onSpamPost: () => e(Object(l.R)(s.id, !0)),
+						onSpoilerPost: () => e(Object(l.V)(s.id)),
+						onStickyPost: () => e(Object(l.Y)(s.id))
 					}
 				}),
 				G = Object(p.a)(h.a),
@@ -1405,4 +1405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.8709407c2b979c3eb4a6.js.map
+//# sourceMappingURL=ModerationDropdowns.c05cbaf314d08b3d1ce6.js.map

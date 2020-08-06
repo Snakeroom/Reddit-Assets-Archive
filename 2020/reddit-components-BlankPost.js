@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.a5c41b2e0a1dbcfef47a.js
-// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.bcc5c26e0dd6e5b4469b.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -529,7 +529,7 @@
 				d = i("./src/reddit/selectors/posts.ts"),
 				l = i("./src/lib/classNames/index.ts");
 			const u = Object(a.a)(() => Object(s.c)({
-					post: d.M
+					post: d.O
 				})),
 				c = e => {
 					let {
@@ -553,10 +553,10 @@
 			t.a = (e, t) => Object(r.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign(Object.assign({}, e), {
-					onPostViewable: n.N
+					onPostViewable: n.O
 				})
 			}(t))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.a5c41b2e0a1dbcfef47a.js.map
+//# sourceMappingURL=reddit-components-BlankPost.bcc5c26e0dd6e5b4469b.js.map

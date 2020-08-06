@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.5d8c4df9875512c88a6c.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.ac951d35e43a72fdb89c.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e"], {
 		"./src/reddit/components/CompactPost/Placeholder/index.m.less": function(e, t, s) {
@@ -430,10 +430,10 @@
 			}, X = (e, t) => {
 				const s = "click-".concat(e);
 				let o = H.get(s);
-				return void 0 === o && (o = (e, s, o) => {
+				return void 0 === o && (o = (e, s, o, r) => {
 					if (s.isSponsored && t.fireAdPixelsOfType(s, O.a.Click), s.isSponsored && s.source && s.source.outboundUrl) {
-						let e = s.source.outboundUrl;
-						o && (e = Object(C.a)(s.id, o, s.source.outboundUrl)), Object(y.d)(e, y.c.BLANK)
+						let e = r || s.source.outboundUrl;
+						o && (e = Object(C.a)(s.id, o, e)), Object(y.d)(e, y.c.BLANK)
 					} else t.openPost({
 						postOrComment: s,
 						clickInfo: Object(j.a)(e)
@@ -826,4 +826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.5d8c4df9875512c88a6c.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e.ac951d35e43a72fdb89c.js.map

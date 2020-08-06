@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.a4233bfa1d7e7a8766e2.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.68e1b27acc15df716bae.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -102,7 +102,7 @@
 							const {
 								postId: e
 							} = l, t = a.posts.models[e];
-							t && t.voteState === h.a.notVoted && n(Object(c.Y)(e))
+							t && t.voteState === h.a.notVoted && n(Object(c.Z)(e))
 						}
 					} else n(w({
 						pollId: e,
@@ -250,9 +250,9 @@
 				U = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx"),
 				q = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
 				L = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.m.less"),
-				Y = n.n(L);
+				W = n.n(L);
 			const {
-				fbt: W
+				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const H = Object(c.c)({
 				nextAvailablePointsClaim: E.l,
@@ -274,27 +274,27 @@
 				} = e;
 				return r.a.createElement(U.a, {
 					onClose: n,
-					title: W._("Claim Your Points", null, {
+					title: Y._("Claim Your Points", null, {
 						hk: "2j1Z6u"
 					}),
-					header: W._("Use mobile app to create a Reddit Vault and claim your points", null, {
+					header: Y._("Use mobile app to create a Reddit Vault and claim your points", null, {
 						hk: "2A4Q2x"
 					}),
 					content: r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
 						index: "1"
-					}, W._("Get the official Reddit app for iOS or Android", null, {
+					}, Y._("Get the official Reddit app for iOS or Android", null, {
 						hk: "420pUH"
 					})), r.a.createElement(q.a, {
 						index: "2"
-					}, W._("Log in to your current Reddit account", null, {
+					}, Y._("Log in to your current Reddit account", null, {
 						hk: "2eOEgM"
 					})), r.a.createElement(q.a, {
 						index: "3"
-					}, W._("Open your Camera, scan the QR code & follow the URL", null, {
+					}, Y._("Open your Camera, scan the QR code & follow the URL", null, {
 						hk: "FWSNM"
 					})), r.a.createElement(q.a, {
 						index: "4"
-					}, W._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
+					}, Y._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
 						hk: "nnWfa"
 					}))),
 					qrUrl: Object(D.a)("http://www.reddit.com/vault/claim", {
@@ -302,16 +302,16 @@
 						s
 					}),
 					amount: r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: Y.a.rewardHeader
-					}, W._("Your Reward", null, {
+						className: W.a.rewardHeader
+					}, Y._("Your Reward", null, {
 						hk: "JniAQ"
 					})), r.a.createElement("div", {
-						className: Y.a.rewardAmount
+						className: W.a.rewardAmount
 					}, r.a.createElement("div", null, r.a.createElement(F.a, {
-						className: Y.a.tokenIcon,
+						className: W.a.tokenIcon,
 						subredditId: s
 					})), r.a.createElement("div", {
-						className: Y.a.rewardTotal
+						className: W.a.rewardTotal
 					}, Object(V.a)(Object(O.b)(t && t.pointsToClaim || "0", a)), " ", o)))
 				})
 			})));
@@ -962,4 +962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.a4233bfa1d7e7a8766e2.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-ClaimPointsModal.68e1b27acc15df716bae.js.map

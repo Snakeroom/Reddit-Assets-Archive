@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.448e137faac02378b0a8.js
-// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.69ccb08315cd144bdc71.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./src/reddit/components/Comments/helpers/hiddenComments.ts": function(t, e, s) {
@@ -90,8 +90,8 @@
 				g = s("./src/reddit/actions/comment/index.ts"),
 				C = s("./src/reddit/actions/modal.ts"),
 				f = s("./src/reddit/actions/post.ts"),
-				P = s("./src/reddit/components/Comments/helpers/hiddenComments.ts"),
-				y = s("./src/reddit/constants/elementIds.ts"),
+				y = s("./src/reddit/components/Comments/helpers/hiddenComments.ts"),
+				P = s("./src/reddit/constants/elementIds.ts"),
 				I = s("./src/reddit/constants/modals.ts"),
 				w = s("./src/reddit/constants/postLayout.ts"),
 				T = s("./src/reddit/helpers/overlay/index.ts"),
@@ -99,8 +99,8 @@
 				L = s("./src/reddit/helpers/trackers/shortcuts.ts"),
 				k = s("./src/reddit/selectors/listings.ts"),
 				E = s("./src/reddit/selectors/platform.ts"),
-				N = s("./src/reddit/actions/shortcuts/active.ts"),
-				S = s("./src/reddit/actions/shortcuts/utils.ts");
+				S = s("./src/reddit/actions/shortcuts/active.ts"),
+				N = s("./src/reddit/actions/shortcuts/utils.ts");
 			const A = (t, e) => async (s, o, c) => {
 				let {
 					apiContext: n
@@ -111,7 +111,7 @@
 					a = d.listings.postOrder.ids[r];
 				if (!i || a && a.indexOf(i) < 0) {
 					const t = a[0];
-					return s(Object(N.b)(t)), void Object(S.a)(t)
+					return s(Object(S.b)(t)), void Object(N.a)(t)
 				}
 				let l, m = i;
 				do {
@@ -120,40 +120,40 @@
 						})) || !l.nextPost) return;
 					m = l.nextPost.id
 				} while (d.posts.models[m].hidden);
-				d.shortcuts.namespace === u.d.Lightbox ? (D(s, l.nextPost), t(e ? _.b(i, "next_post", !0) : L.l(m))) : (s(Object(N.b)(m)), Object(S.a)(m), t(L.k(m)))
+				d.shortcuts.namespace === u.d.Lightbox ? (D(s, l.nextPost), t(e ? _.b(i, "next_post", !0) : L.l(m))) : (s(Object(S.b)(m)), Object(N.a)(m), t(L.k(m)))
 			}, K = t => async (e, s, o) => {
 				let {
 					apiContext: c
 				} = o;
 				const n = s(),
-					d = Object(S.c)(n);
+					d = Object(N.c)(n);
 				if (!d) return;
 				let i;
 				const r = n.shortcuts.activeCommentId;
 				if (r && r !== n.commentsPage.keyToHeadCommentId[d]) {
 					const t = n.commentsPage.keyToCommentThreadLinkSets[d];
-					for (i = t[r].prev.id; P.b(i);) i = t[i].prev.id
+					for (i = t[r].prev.id; y.b(i);) i = t[i].prev.id
 				} else {
 					const t = n.commentsPage.keyToHeadCommentId[d];
 					if (!t || r === t) return;
 					i = t
 				}
-				e(Object(N.a)(i)), Object(S.a)(i), t(L.n(i))
+				e(Object(S.a)(i)), Object(N.a)(i), t(L.n(i))
 			}, D = (t, e) => {
-				Object(S.b)(u.b), t(Object(N.b)(e.id)), document.body.style.overflow = "", Object(S.a)(e.id), document.body.style.overflow = "hidden", t(Object(T.a)(e.permalink));
-				const s = document.getElementById(y.d);
+				Object(N.b)(u.b), t(Object(S.b)(e.id)), document.body.style.overflow = "", Object(N.a)(e.id), document.body.style.overflow = "hidden", t(Object(T.a)(e.permalink));
+				const s = document.getElementById(P.d);
 				s && s.scrollTo(0, 0)
 			};
-			var R = s("./src/reddit/actions/shortcuts/close.ts");
-			const H = {
-					[u.c.Close]: R.a,
+			var H = s("./src/reddit/actions/shortcuts/close.ts");
+			const R = {
+					[u.c.Close]: H.a,
 					[u.c.CollapseOrLoad]: t => async (e, s, o) => {
 						let {
 							apiContext: c
 						} = o;
 						const n = s(),
 							d = n.shortcuts.activeCommentId,
-							i = Object(S.c)(n);
+							i = Object(N.c)(n);
 						if (i && d) {
 							if (n.comments.models[d]) e(g.nb({
 								commentId: d,
@@ -177,8 +177,8 @@
 								activeCommentId: d,
 								activePostId: i
 							} = n.shortcuts,
-							r = Object(S.c)(n);
-						r && (d && !n.comments.collapsed[r][d] ? (e(g.T(d)), t(L.e(d))) : i && (e(f.w(i)), t(L.f(i))))
+							r = Object(N.c)(n);
+						r && (d && !n.comments.collapsed[r][d] ? (e(g.T(d)), t(L.e(d))) : i && (e(f.x(i)), t(L.f(i))))
 					},
 					[u.c.Expando]: t => async (e, s, o) => {
 						let {
@@ -189,7 +189,7 @@
 							i = w.b[n.user.prefs.layout];
 						if (d && (i === w.g.Compact || i === w.g.Classic)) {
 							const s = n.posts.models[d].crosspostRootId;
-							(n.posts.models[d].media || s && n.posts.models[s] && n.posts.models[s].media) && (e(f.x({
+							(n.posts.models[d].media || s && n.posts.models[s] && n.posts.models[s].media) && (e(f.y({
 								postId: d
 							})), t(L.g(d)))
 						}
@@ -200,14 +200,14 @@
 						} = o;
 						const n = s(),
 							d = n.shortcuts.activePostId;
-						d && !n.posts.models[d].isSponsored && (e(f.V(d, !n.posts.models[d].hidden, n.shortcuts.namespace === u.d.Lightbox, !0)), e(A(t)), t(L.i(d)))
+						d && !n.posts.models[d].isSponsored && (e(f.W(d, !n.posts.models[d].hidden, n.shortcuts.namespace === u.d.Lightbox, !0)), e(A(t)), t(L.i(d)))
 					},
 					[u.c.NextComment]: t => async (e, s, o) => {
 						let {
 							apiContext: c
 						} = o;
 						const n = s(),
-							d = Object(S.c)(n);
+							d = Object(N.c)(n);
 						if (!d) return;
 						let i;
 						const r = n.shortcuts.activeCommentId;
@@ -218,14 +218,14 @@
 								do {
 									if (!e[i].next) return;
 									i = e[i].next.id
-								} while (P.b(i));
+								} while (y.b(i));
 							else i = e[i].next.id
 						} else {
 							const t = n.commentsPage.keyToHeadCommentId[d];
 							if (!t) return;
 							i = t
 						}
-						e(Object(N.a)(i)), Object(S.a)(i), t(L.j(i))
+						e(Object(S.a)(i)), Object(N.a)(i), t(L.j(i))
 					},
 					[u.c.NextPost]: A,
 					[u.c.NewPost]: t => async (e, s, o) => {
@@ -280,7 +280,7 @@
 							d = n.shortcuts.activePostId,
 							i = n.listings.activeKey,
 							r = n.listings.postOrder.ids[i];
-						if (!d || r && r.indexOf(d) < 0) return e(Object(N.b)(r[0])), void Object(S.a)(r[0]);
+						if (!d || r && r.indexOf(d) < 0) return e(Object(S.b)(r[0])), void Object(N.a)(r[0]);
 						if (0 === r.indexOf(d)) return;
 						let a, l = d;
 						do {
@@ -289,14 +289,14 @@
 								})) || !a.prevPost) return;
 							l = a.prevPost.id
 						} while (n.posts.models[l].hidden);
-						n.shortcuts.namespace === u.d.Lightbox ? (D(e, a.prevPost), t(L.p(l))) : (e(Object(N.b)(l)), Object(S.a)(l), t(L.o(l)))
+						n.shortcuts.namespace === u.d.Lightbox ? (D(e, a.prevPost), t(L.p(l))) : (e(Object(S.b)(l)), Object(N.a)(l), t(L.o(l)))
 					},
 					[u.c.Reply]: t => async (e, s, o) => {
 						let {
 							apiContext: c
 						} = o;
 						const n = s(),
-							d = Object(S.c)(n),
+							d = Object(N.c)(n),
 							{
 								activeCommentId: i
 							} = n.shortcuts;
@@ -314,8 +314,8 @@
 								activeCommentId: d,
 								activePostId: i
 							} = n.shortcuts,
-							r = Object(S.c)(n);
-						r && (d && !n.comments.collapsed[r][d] ? (e(g.gb(d)), t(L.q(d))) : i && (e(f.R(i)), t(L.r(i))))
+							r = Object(N.c)(n);
+						r && (d && !n.comments.collapsed[r][d] ? (e(g.gb(d)), t(L.q(d))) : i && (e(f.S(i)), t(L.r(i))))
 					},
 					[u.c.Upvote]: t => async (e, s, o) => {
 						let {
@@ -326,8 +326,8 @@
 								activeCommentId: d,
 								activePostId: i
 							} = n.shortcuts,
-							r = Object(S.c)(n);
-						r && (d && !n.comments.collapsed[r][d] ? (e(g.rb(d)), t(L.t(d))) : i && (e(f.Y(i)), t(L.u(i))))
+							r = Object(N.c)(n);
+						r && (d && !n.comments.collapsed[r][d] ? (e(g.rb(d)), t(L.t(d))) : i && (e(f.Z(i)), t(L.u(i))))
 					},
 					[u.c.Konami]: null
 				},
@@ -335,7 +335,7 @@
 					if (!document.activeElement) return;
 					const c = document.activeElement.nodeName;
 					if ("INPUT" === c || "TEXTAREA" === c || "BUTTON" === c && u.a.includes(o.which)) return;
-					const n = H[s];
+					const n = R[s];
 					n && t(n(e))
 				},
 				U = new l.ShortcutManager(j),
@@ -346,7 +346,7 @@
 				q = Object(a.b)(M, t => ({
 					dispatchAction: e => t(e)
 				}));
-			class Y extends i.Component {
+			class W extends i.Component {
 				getChildContext() {
 					return {
 						shortcuts: U
@@ -375,11 +375,11 @@
 					})
 				}
 			}
-			Y.childContextTypes = {
+			W.childContextTypes = {
 				shortcuts: d.a.object.isRequired
 			};
-			e.default = q(Object(p.c)(Y))
+			e.default = q(Object(p.c)(W))
 		}
 	}
 ]);
-//# sourceMappingURL=ShortcutWrapper.448e137faac02378b0a8.js.map
+//# sourceMappingURL=ShortcutWrapper.69ccb08315cd144bdc71.js.map

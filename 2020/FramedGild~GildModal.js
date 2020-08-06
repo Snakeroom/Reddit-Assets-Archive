@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.72df00d26e0f4450b8f4.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.54c518a538d803316dc4.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1409,7 +1409,7 @@
 			}));
 			var We = Object(r.b)((e, t) => {
 					if (Object(c.a)(t.thingId)) {
-						const s = Object(k.M)(e, {
+						const s = Object(k.O)(e, {
 							postId: t.thingId
 						});
 						if (!s) return {};
@@ -1791,7 +1791,7 @@
 						n = t && t.id
 					}
 					if (!n && Object(c.a)(s)) {
-						const t = Object(k.M)(e, {
+						const t = Object(k.O)(e, {
 							postId: s
 						});
 						n = t && t.belongsTo.id
@@ -1812,7 +1812,7 @@
 						n = t && t.id
 					}
 					if (!n && Object(c.a)(s)) {
-						const t = Object(k.M)(e, {
+						const t = Object(k.O)(e, {
 							postId: s
 						});
 						n = t && t.belongsTo.id
@@ -1869,7 +1869,7 @@
 					let {
 						thingId: s
 					} = t;
-					return Object(c.a)(s) ? Object(k.M)(e, {
+					return Object(c.a)(s) ? Object(k.O)(e, {
 						postId: s
 					}) : Object(I.n)(e, {
 						commentId: s
@@ -1905,7 +1905,7 @@
 						n = t && t.id
 					}
 					if (!n && Object(c.a)(s)) {
-						const t = Object(k.M)(e, {
+						const t = Object(k.O)(e, {
 							postId: s
 						});
 						n = t && t.belongsTo.id
@@ -2633,4 +2633,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.72df00d26e0f4450b8f4.js.map
+//# sourceMappingURL=FramedGild~GildModal.54c518a538d803316dc4.js.map

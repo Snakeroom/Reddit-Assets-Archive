@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.e3525ebd6d29ec59e559.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.6964b5da5eb9289ad3a2.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "1fe8102-production"
+					SENTRY_RELEASE_VERSION: "38b930d-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -470,45 +470,46 @@
 						isTileLayout: E,
 						mediaMetadata: v = {},
 						postId: O,
-						shouldShowTileLayoutOption: S
+						shouldShowTileLayoutOption: S,
+						isSponsored: L
 					} = e,
-					L = Object(n.d)(e => Object(x.a)(e, O)),
-					T = L > 0,
-					M = L < c.length - 1,
-					N = Object(l.a)(),
-					_ = Object(i.useCallback)(e => {
+					T = Object(n.d)(e => Object(x.a)(e, O)),
+					M = T > 0,
+					N = T < c.length - 1,
+					_ = Object(l.a)(),
+					R = Object(i.useCallback)(e => {
 						t(Object(h.f)({
 							postId: O,
 							index: e
 						}))
 					}, [t, O]),
-					R = Object(i.useCallback)(() => {
+					D = Object(i.useCallback)(() => {
 						t(Object(h.i)({
 							postId: O,
 							isTileLayout: !E
 						}))
 					}, [t, O, E]),
-					D = Object(i.useCallback)(() => {
-						if (!M) return;
-						const e = L + 1;
-						_(e), N(r.b(O, e)), N(r.d(O, e + 1))
-					}, [M, L, _, N, O]),
 					P = Object(i.useCallback)(() => {
-						if (!T) return;
-						const e = L + 1;
-						_(L - 1), N(r.a(O, e)), N(r.d(O, e - 1))
-					}, [T, L, _, N, O]),
+						if (!N) return;
+						const e = T + 1;
+						R(e), _(r.b(O, e)), _(r.d(O, e + 1))
+					}, [N, T, R, _, O]),
 					A = Object(i.useCallback)(() => {
-						const e = c[L] && c[L].outboundUrl,
-							t = L + 1;
-						e && N(r.c(O, e, t))
-					}, [N, O, L, c]),
-					V = Object(i.useRef)(null),
-					k = Object(i.useRef)(null);
-				d(p.a.ArrowLeft, V.current, P), d(p.a.ArrowRight, V.current, D);
-				const B = c[L] && c[L].caption,
-					W = c[L] && c[L].outboundUrl,
-					F = ((e, t, s) => {
+						if (!M) return;
+						const e = T + 1;
+						R(T - 1), _(r.a(O, e)), _(r.d(O, e - 1))
+					}, [M, T, R, _, O]),
+					V = Object(i.useCallback)(() => {
+						const e = c[T] && c[T].outboundUrl,
+							t = T + 1;
+						e && _(r.c(O, e, t))
+					}, [_, O, T, c]),
+					k = Object(i.useRef)(null),
+					B = Object(i.useRef)(null);
+				d(p.a.ArrowLeft, k.current, A), d(p.a.ArrowRight, k.current, P);
+				const W = c[T] && c[T].caption,
+					F = c[T] && c[T].outboundUrl,
+					H = ((e, t, s) => {
 						const i = Object(g.f)(e),
 							a = Object(g.g)(i),
 							n = a.x / a.y < 1,
@@ -524,7 +525,7 @@
 					})(v, u, m);
 				return a.a.createElement("div", {
 					className: Object(o.a)(y.a.outerContainer),
-					ref: V,
+					ref: k,
 					tabIndex: 0
 				}, E ? a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
 					className: Object(o.a)(y.a.tilesWrapper, {
@@ -545,7 +546,7 @@
 						},
 						className: y.a.tileImage,
 						onClick: e.shouldBlur ? void 0 : e => {
-							e.preventDefault(), e.stopPropagation(), R(), _(s)
+							e.preventDefault(), e.stopPropagation(), D(), R(s)
 						},
 						key: i
 					})
@@ -559,9 +560,9 @@
 				}, Object(f.a)(!!e.isNSFW, !!e.isSpoiler)))) : a.a.createElement("div", {
 					className: y.a.slideshowContainer,
 					tabIndex: -1,
-					ref: k,
+					ref: B,
 					onClick: e.onClickRevealBlurred,
-					style: F
+					style: H
 				}, a.a.createElement("div", {
 					className: y.a.imagesWrapper
 				}, a.a.createElement("ul", {
@@ -576,7 +577,7 @@
 					const d = e.shouldBlur && Object(g.d)(u, n.o || []) || void 0;
 					return a.a.createElement(w, {
 						slideIndex: s,
-						currentIndex: L,
+						currentIndex: T,
 						obfuscatedImage: d,
 						optimalImage: r,
 						originalImage: n.s,
@@ -588,32 +589,32 @@
 				}, a.a.createElement("button", {
 					className: y.a.unblurButton
 				}, Object(f.a)(!!e.isNSFW, !!e.isSpoiler))), !e.shouldBlur && a.a.createElement(a.a.Fragment, null, a.a.createElement(I, {
-					onClick: P,
-					setFocusTo: k,
-					hasMoreSlides: T,
+					onClick: A,
+					setFocusTo: B,
+					hasMoreSlides: M,
 					title: "Previous",
 					iconClassName: y.a.prevIcon,
 					className: y.a.prevButton
 				}), a.a.createElement(I, {
-					onClick: D,
-					setFocusTo: k,
-					hasMoreSlides: M,
+					onClick: P,
+					setFocusTo: B,
+					hasMoreSlides: N,
 					title: "Next",
 					iconClassName: y.a.nextIcon,
 					className: y.a.nextButton
 				}))), c.length > 1 ? a.a.createElement(C, {
-					currentSlide: L + 1,
+					currentSlide: T + 1,
 					totalSlides: c.length,
-					toggleTileLayout: S && R || void 0
-				}) : ""), !B && !W || E ? !!s && !E && a.a.createElement("div", {
+					toggleTileLayout: S && D || void 0
+				}) : ""), !W && !F || E || L ? !!s && !E && !L && a.a.createElement("div", {
 					className: y.a.emptyCaptionBlock,
 					style: {
 						height: s
 					}
 				}) : a.a.createElement(j, {
-					caption: B,
-					onClickEvent: A,
-					outboundUrl: W,
+					caption: W,
+					onClickEvent: V,
+					outboundUrl: F,
 					captionHeight: s
 				}))
 			}
@@ -666,7 +667,7 @@
 				}
 			}
 			var p = Object(d.b)(null, e => ({
-				onLoadRichTextContentIfNeeded: t => e(Object(l.y)(t))
+				onLoadRichTextContentIfNeeded: t => e(Object(l.z)(t))
 			}))(h);
 
 			function g() {
@@ -984,7 +985,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(J.Z)(e, {
+						return Object(J.bb)(e, {
 							postId: s.id
 						})
 					},
@@ -1516,7 +1517,7 @@
 							}))));
 						case G.o.GALLERY:
 							const Y = Object(W.b)(m.media.mediaMetadata || {}, Object(W.c)(r), G.p, z),
-								ie = Object(W.a)(m.media.gallery);
+								ie = Object(W.a)(m.media.gallery, m.isSponsored);
 							return l.a.createElement(L.a, ee({}, Q, {
 								blurSrc: J ? V : void 0,
 								isExpando: !!n,
@@ -1531,6 +1532,7 @@
 								mediaMetadata: m.media.mediaMetadata || {},
 								imageHeight: Y,
 								captionHeight: ie,
+								isSponsored: m.isSponsored,
 								className: this.props.imageBoxClassName,
 								isListing: r,
 								isNSFW: this.isNSFW(),
@@ -1661,8 +1663,8 @@
 				},
 				p = (e, t) => e.some(e => e.y > t && Object(n.J)(e.y, e.x));
 
-			function g(e) {
-				return e && e.items && e.items.some(e => void 0 !== e.caption || void 0 !== e.outboundUrl) ? n.i : 0
+			function g(e, t) {
+				return e && e.items && !t && e.items.some(e => void 0 !== e.caption || void 0 !== e.outboundUrl) ? n.i : 0
 			}
 			const b = e => {
 				const t = a.a.parse(e),
@@ -1773,4 +1775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.e3525ebd6d29ec59e559.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.6964b5da5eb9289ad3a2.js.map

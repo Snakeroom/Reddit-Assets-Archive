@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.73e05d22fdca84ae0f13.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0055e3aa61e553e73d93.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1159,7 +1159,7 @@
 				d = s("./src/reddit/selectors/platform.ts"),
 				l = s("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
-					postCount: l.R,
+					postCount: l.T,
 					previousPageIsOverlay: d.p,
 					tabBadged: e => e.tabBadged
 				}),
@@ -1540,8 +1540,8 @@
 				D = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				A = s("./src/reddit/constants/parameters.ts"),
 				U = s("./src/reddit/constants/postLayout.ts"),
-				R = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				B = s("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
+				B = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				R = s("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				F = s("./src/reddit/helpers/trackers/screenview.ts"),
 				M = s("./src/reddit/layout/page/Listing/index.tsx"),
 				V = s("./src/reddit/selectors/experiments/trending.ts"),
@@ -1568,7 +1568,7 @@
 			}
 			const {
 				fbt: ee
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = Object(R.t)(), se = Object(h.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = Object(B.t)(), se = Object(h.c)({
 				queryParams: Object(G.a)((e, t) => {
 					let {
 						location: s
@@ -1588,19 +1588,19 @@
 			}), re = Object(h.c)({
 				isInTrendingEntrypointExperiment: V.a,
 				isLoggedIn: J.H,
-				isPopular: R.C,
+				isPopular: B.C,
 				isRpanDuVisible: e => Object(q.a)(e, {
 					listingName: Z.P
 				}),
 				rpanInjectionIndex: e => Object(q.b)(e, {
 					listingName: Z.P
 				}),
-				layout: R.N
+				layout: B.N
 			}), oe = () => Object(h.a)(ne, se, re, e => Object(q.a)(e, {
 				listingName: Z.P
 			}), e => Object(q.b)(e, {
 				listingName: Z.P
-			}), e => e, B.a, (e, t, s, n, r, o, i) => {
+			}), e => e, R.a, (e, t, s, n, r, o, i) => {
 				let {
 					countryMeta: a,
 					geopopular: c
@@ -1670,7 +1670,7 @@
 						} = this.props;
 						f.a.read(() => {
 							const n = "".concat(_.c.FrontPage, "-").concat(s),
-								r = [Object(B.d)(e)];
+								r = [Object(R.d)(e)];
 							Object(_.d)(n, t, r)
 						})
 					}
@@ -1837,9 +1837,9 @@
 			})), s.d(t, "g", (function() {
 				return U
 			})), s.d(t, "k", (function() {
-				return R
-			})), s.d(t, "j", (function() {
 				return B
+			})), s.d(t, "j", (function() {
+				return R
 			})), s.d(t, "e", (function() {
 				return F
 			})), s.d(t, "a", (function() {
@@ -2019,8 +2019,8 @@
 				}),
 				A = Object(r.a)(Object(n.a)(L, x, (e, t) => e ? t[e] : void 0)),
 				U = Object(r.a)(Object(n.a)(T, x, (e, t) => e ? t[e] : void 0)),
-				R = Object(r.a)(Object(n.a)(D, x, (e, t) => e ? t[e] : void 0)),
-				B = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
+				B = Object(r.a)(Object(n.a)(D, x, (e, t) => e ? t[e] : void 0)),
+				R = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)((e, t) => {
 					let {
@@ -2095,4 +2095,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.73e05d22fdca84ae0f13.js.map
+//# sourceMappingURL=Frontpage.0055e3aa61e553e73d93.js.map

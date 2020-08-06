@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.1a37a7151d456bbdb4fc.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.6613f14d8370d5cc8500.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1908,9 +1908,9 @@
 		"./src/reddit/controls/OutboundLink/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return j
+				return C
 			})), n.d(t, "c", (function() {
-				return w
+				return _
 			}));
 			var r = n("./node_modules/lodash/omit.js"),
 				s = n.n(r),
@@ -1926,12 +1926,14 @@
 				}) : e,
 				p = n("./src/lib/opener/index.ts"),
 				f = n("./src/lib/redditId/index.ts"),
-				b = n("./src/reddit/helpers/getVendorMetadata.ts"),
-				h = n("./src/reddit/selectors/posts.ts"),
-				y = n("./src/reddit/selectors/user.ts");
+				b = n("./src/reddit/actions/post.ts"),
+				h = n("./src/reddit/constants/adEvents.ts"),
+				y = n("./src/reddit/helpers/getVendorMetadata.ts"),
+				g = n("./src/reddit/selectors/posts.ts"),
+				v = n("./src/reddit/selectors/user.ts");
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1939,24 +1941,28 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const v = Object(l.a)(y.a, y.i, (e, t) => {
+			const x = Object(l.a)(v.a, v.i, g.j, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
 					} = t;
-					return n && r ? Object(h.b)(e, r) : null
-				}, (e, t, n) => ({
+					return n && r ? Object(g.b)(e, r) : null
+				}, g.O, (e, t, n, r, s) => ({
 					allowClickTracking: e,
-					basePixelMetadata: n,
-					userId: t ? Object(f.a)(t.id) : null
+					imageGalleryCurrentUrl: n,
+					basePixelMetadata: r,
+					userId: t ? Object(f.a)(t.id) : null,
+					post: s
 				})),
-				O = Object(d.b)(v, {}),
-				x = (e, t, n, r) => {
+				j = Object(d.b)(x, e => ({
+					fireAdPixelsOfType: (t, n) => e(Object(b.A)(t, n))
+				})),
+				w = (e, t, n, r) => {
 					r && t.outboundUrl && t.outboundUrlExpiration && t.outboundUrlExpiration > Date.now() && (e.href = m(t.outboundUrl, n))
 				},
-				j = (e, t, n) => {
+				C = (e, t, n) => {
 					if (e && t && /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(n)) {
-						const r = Object(b.a)(e, t),
+						const r = Object(y.a)(e, t),
 							{
 								url: s,
 								query: o
@@ -1968,43 +1974,48 @@
 					}
 					return n
 				},
-				w = (e, t, n) => e.href = j(t, n, e.href),
-				C = O(e => {
+				_ = (e, t, n) => e.href = C(t, n, e.href),
+				E = j(e => {
 					const {
 						allowClickTracking: t,
 						basePixelMetadata: n,
 						href: r,
-						isSponsored: o,
-						postId: a,
-						source: i,
-						userId: d
+						imageGalleryCurrentUrl: o,
+						isSponsored: a,
+						post: i,
+						postId: d,
+						source: l,
+						userId: u
 					} = e;
-					let l = s()(e, ["allowClickTracking", "basePixelMetadata", "isSponsored", "postId", "source", "userId"]);
-					const u = i && i.outboundUrl && o ? i.outboundUrl : r;
-					return l = Object.assign(Object.assign({}, l), {
-						href: u,
+					let m = s()(e, ["allowClickTracking", "basePixelMetadata", "isSponsored", "postId", "source", "userId"]),
+						f = l && l.outboundUrl && a ? l.outboundUrl : r;
+					return o && a && (f = o), m = Object.assign(Object.assign({}, m), {
+						href: f,
 						rel: p.a,
 						target: p.c.BLANK
-					}), !i || (e => {
+					}), !l || (e => {
 						const {
 							outboundUrlCreated: t,
 							outboundUrlReceived: n
 						} = e;
 						return !(!t || !n) && (t > n + 3e5 || t < n - 36e5)
-					})(i) ? c.a.createElement("a", l) : c.a.createElement("a", g({}, l, {
+					})(l) ? c.a.createElement("a", m) : c.a.createElement("a", O({}, m, {
 						onMouseDown: e => {
-							if (!(i && i.outboundUrl && o)) return !(1 !== e.button && 2 !== e.button && !e.ctrlKey) || void x(e.currentTarget, i, d, t);
-							w(e.currentTarget, a, n)
+							if (!(l && l.outboundUrl && a)) return !(1 !== e.button && 2 !== e.button && !e.ctrlKey) || void w(e.currentTarget, l, u, t);
+							_(e.currentTarget, d, n)
+						},
+						onClick: () => {
+							i && Object(b.A)(i, h.a.Click)
 						},
 						onMouseLeave: e => {
-							o || ((e, t) => {
+							a || ((e, t) => {
 								e.href = t
-							})(e.currentTarget, u)
+							})(e.currentTarget, f)
 						},
-						onTouchStart: e => x(e.currentTarget, i, d, t)
+						onTouchStart: e => w(e.currentTarget, l, u, t)
 					}))
 				});
-			t.b = C
+			t.b = E
 		},
 		"./src/reddit/controls/TextButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3159,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.1a37a7151d456bbdb4fc.js.map
+//# sourceMappingURL=ModListing~Reddit.6613f14d8370d5cc8500.js.map

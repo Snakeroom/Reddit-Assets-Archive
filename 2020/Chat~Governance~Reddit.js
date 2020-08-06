@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8c4baee883ad2c89ead9.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d14f937ae885cfb0acaa.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3302,14 +3302,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("1fe8102-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("38b930d-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1fe8102-production",
+						release: "38b930d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3737,7 +3737,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "1fe8102-production",
+							releaseClient: "38b930d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -12533,7 +12533,7 @@
 					const n = E(e, {
 						commentId: i
 					});
-					return n ? Object(o.a)(Object(u.L)(e, n), i) : ""
+					return n ? Object(o.a)(Object(u.N)(e, n), i) : ""
 				},
 				R = (e, t) => {
 					let {
@@ -12727,7 +12727,7 @@
 					let {
 						postId: i
 					} = t;
-					const n = !!i && Object(l.M)(e, {
+					const n = !!i && Object(l.O)(e, {
 						postId: i
 					});
 					return !!n && n.discussionType === o.b.Chat
@@ -13113,7 +13113,7 @@
 				a = e => !!(e.user && e.user.account && e.user.account.isMod) || l(e),
 				u = (e, t) => {
 					if (l(e)) return o.b;
-					const i = Object(d.M)(e, t);
+					const i = Object(d.O)(e, t);
 					if (!i) return null;
 					const n = i.belongsTo.id;
 					return e.moderatingSubreddits[n]
@@ -13493,7 +13493,7 @@
 					let {
 						postId: i
 					} = t;
-					const n = Object(_.M)(e, {
+					const n = Object(_.O)(e, {
 						postId: i
 					});
 					let s = !1;
@@ -13590,7 +13590,7 @@
 					});
 					if (!n) return null;
 					const r = n.postIds || [];
-					return Object(_.Q)(e, {
+					return Object(_.S)(e, {
 						postIds: r
 					})
 				},
@@ -13684,7 +13684,7 @@
 					let {
 						postId: i
 					} = t;
-					const n = Object(_.M)(e, {
+					const n = Object(_.O)(e, {
 						postId: i
 					});
 					let r = null;
@@ -14444,7 +14444,7 @@
 					let {
 						postId: i
 					} = t;
-					const n = Object(l.M)(e, {
+					const n = Object(l.O)(e, {
 						postId: i
 					});
 					if (!n) return !1;
@@ -14477,114 +14477,118 @@
 		},
 		"./src/reddit/selectors/posts.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "k", (function() {
+			i.d(t, "m", (function() {
 				return O
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "p", (function() {
 				return j
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "I", (function() {
 				return B
 			})), i.d(t, "h", (function() {
 				return x
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "U", (function() {
 				return k
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "T", (function() {
 				return C
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return N
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "i", (function() {
 				return P
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "k", (function() {
 				return L
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "O", (function() {
 				return A
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "K", (function() {
 				return D
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "J", (function() {
 				return G
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "d", (function() {
 				return M
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "f", (function() {
 				return U
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "R", (function() {
 				return q
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "b", (function() {
+				return V
+			})), i.d(t, "S", (function() {
 				return H
 			})), i.d(t, "Z", (function() {
-				return W
-			})), i.d(t, "c", (function() {
 				return z
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "bb", (function() {
 				return K
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "c", (function() {
 				return Q
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "e", (function() {
 				return J
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "n", (function() {
 				return Y
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "s", (function() {
 				return X
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "G", (function() {
 				return Z
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "M", (function() {
 				return $
-			})), i.d(t, "C", (function() {
-				return ee
-			})), i.d(t, "V", (function() {
-				return te
 			})), i.d(t, "N", (function() {
+				return ee
+			})), i.d(t, "Q", (function() {
+				return te
+			})), i.d(t, "E", (function() {
+				return ie
+			})), i.d(t, "X", (function() {
 				return ne
-			})), i.d(t, "D", (function() {
-				return re
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "P", (function() {
 				return se
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "F", (function() {
 				return oe
 			})), i.d(t, "y", (function() {
 				return de
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "q", (function() {
 				return le
-			})), i.d(t, "r", (function() {
-				return ae
-			})), i.d(t, "s", (function() {
-				return ue
-			})), i.d(t, "x", (function() {
-				return ce
-			})), i.d(t, "v", (function() {
-				return _e
-			})), i.d(t, "p", (function() {
-				return me
-			})), i.d(t, "u", (function() {
-				return pe
-			})), i.d(t, "t", (function() {
-				return he
-			})), i.d(t, "U", (function() {
-				return fe
-			})), i.d(t, "a", (function() {
-				return ge
-			})), i.d(t, "F", (function() {
-				return be
-			})), i.d(t, "T", (function() {
-				return we
-			})), i.d(t, "m", (function() {
-				return ye
-			})), i.d(t, "bb", (function() {
-				return ve
-			})), i.d(t, "J", (function() {
-				return Te
-			})), i.d(t, "j", (function() {
-				return Se
-			})), i.d(t, "B", (function() {
-				return Ee
-			})), i.d(t, "z", (function() {
-				return Oe
 			})), i.d(t, "A", (function() {
-				return je
-			})), i.d(t, "g", (function() {
-				return xe
-			})), i.d(t, "ab", (function() {
-				return Re
+				return ae
 			})), i.d(t, "Y", (function() {
+				return ue
+			})), i.d(t, "t", (function() {
+				return ce
+			})), i.d(t, "u", (function() {
+				return _e
+			})), i.d(t, "z", (function() {
+				return me
+			})), i.d(t, "x", (function() {
+				return pe
+			})), i.d(t, "r", (function() {
+				return he
+			})), i.d(t, "w", (function() {
+				return fe
+			})), i.d(t, "v", (function() {
+				return ge
+			})), i.d(t, "W", (function() {
+				return be
+			})), i.d(t, "a", (function() {
+				return we
+			})), i.d(t, "H", (function() {
+				return ye
+			})), i.d(t, "V", (function() {
+				return ve
+			})), i.d(t, "o", (function() {
+				return Te
+			})), i.d(t, "db", (function() {
+				return Se
+			})), i.d(t, "L", (function() {
+				return Fe
+			})), i.d(t, "l", (function() {
+				return Ee
+			})), i.d(t, "D", (function() {
+				return Oe
+			})), i.d(t, "B", (function() {
+				return Be
+			})), i.d(t, "C", (function() {
+				return xe
+			})), i.d(t, "g", (function() {
 				return ke
+			})), i.d(t, "cb", (function() {
+				return Ce
+			})), i.d(t, "ab", (function() {
+				return Ne
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/camelCase.js"),
@@ -14663,53 +14667,77 @@
 					let {
 						postId: i
 					} = t;
-					return !!e.shortcuts.activePostId && i === e.shortcuts.activePostId
+					const n = A(e, {
+						postId: i
+					});
+					if (n && n.media && n.media.type === h.o.GALLERY && n.media.gallery) {
+						const t = Object(v.a)(e, n.id);
+						return n.media.gallery.items[t].outboundUrl
+					}
 				},
 				P = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					return e.posts.models[i]
+					const n = A(e, {
+						postId: i
+					});
+					if (n && n.media && n.media.type === h.o.GALLERY && n.media.gallery) {
+						const t = Object(v.a)(e, n.id);
+						return n.media.gallery.items[t]
+					}
 				},
 				L = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					return P(e, {
-						postId: i
-					}).isLocked
+					return !!e.shortcuts.activePostId && i === e.shortcuts.activePostId
 				},
 				A = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					return P(e, {
-						postId: i
-					}).isArchived
+					return e.posts.models[i]
 				},
 				D = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					const n = P(e, {
+					return A(e, {
 						postId: i
-					});
-					if (n && n.crosspostRootId) return P(e, {
-						postId: n.crosspostRootId
-					}) || void 0
+					}).isLocked
 				},
 				G = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					return D(e, {
+					return A(e, {
 						postId: i
-					}) || P(e, {
+					}).isArchived
+				},
+				M = (e, t) => {
+					let {
+						postId: i
+					} = t;
+					const n = A(e, {
+						postId: i
+					});
+					if (n && n.crosspostRootId) return A(e, {
+						postId: n.crosspostRootId
+					}) || void 0
+				},
+				U = (e, t) => {
+					let {
+						postId: i
+					} = t;
+					return M(e, {
+						postId: i
+					}) || A(e, {
 						postId: i
 					}) || void 0
 				},
-				M = e => e.posts.models,
-				U = Object(a.a)(e => e, (e, t) => P(e, {
+				q = e => e.posts.models,
+				V = Object(a.a)(e => e, (e, t) => A(e, {
 					postId: t
 				}), y.a, (e, t, i) => {
 					const n = {
@@ -14738,7 +14766,7 @@
 					}
 					return n
 				}),
-				q = Object(c.a)((e, t) => {
+				H = Object(c.a)((e, t) => {
 					let {
 						postIds: i
 					} = t;
@@ -14748,12 +14776,12 @@
 						r[e] = n[e]
 					}), r
 				}),
-				V = Object(a.a)(e => e.posts.models, B, (e, t) => t.limit, (e, t, i) => {
+				W = Object(a.a)(e => e.posts.models, B, (e, t) => t.limit, (e, t, i) => {
 					let n = t;
 					return i && (n = t.slice(0, i)), n.reduce((t, i) => (t[i] = e[i], t), {})
 				}),
-				H = Object(c.a)((e, t) => {
-					const i = V(e, t),
+				z = Object(c.a)((e, t) => {
+					const i = W(e, t),
 						n = {},
 						r = e.posts.models;
 					return Object.keys(i).forEach(e => {
@@ -14763,11 +14791,11 @@
 						t && (n[t] = r[t])
 					}), Object.assign(Object.assign({}, i), n)
 				}),
-				W = (e, t) => {
+				K = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					const n = P(e, {
+					const n = A(e, {
 						postId: i
 					});
 					if (!n) return;
@@ -14776,66 +14804,66 @@
 					} = n;
 					return r.type === m.a.PROFILE ? e.profiles.models[r.id] || !1 : e.subreddits.models[r.id] || !1
 				},
-				z = (e, t) => {
-					let {
-						postId: i
-					} = t;
-					const n = W(e, {
-						postId: i
-					});
-					if (n) return Object(f.f)(n) ? Object(g.h)(n) : Object(g.i)(n)
-				},
-				K = (e, t) => {
-					let {
-						postId: i
-					} = t;
-					const n = P(e, {
-						postId: i
-					});
-					return n && n.crosspostRootId ? W(e, {
-						postId: n.crosspostRootId
-					}) : null
-				},
 				Q = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					return e.posts.expanded[i]
+					const n = K(e, {
+						postId: i
+					});
+					if (n) return Object(f.f)(n) ? Object(g.h)(n) : Object(g.i)(n)
 				},
 				J = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					const n = P(e, {
+					const n = A(e, {
 						postId: i
 					});
-					return n && n.isMeta
+					return n && n.crosspostRootId ? K(e, {
+						postId: n.crosspostRootId
+					}) : null
 				},
 				Y = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					const n = P(e, {
-						postId: i
-					});
-					return n && n.contestMode
+					return e.posts.expanded[i]
 				},
 				X = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					if (!i) return "";
-					const n = P(e, {
+					const n = A(e, {
 						postId: i
 					});
-					return n && n.liveCommentsWebsocket ? n.liveCommentsWebsocket : ""
+					return n && n.isMeta
 				},
 				Z = (e, t) => {
 					let {
 						postId: i
 					} = t;
+					const n = A(e, {
+						postId: i
+					});
+					return n && n.contestMode
+				},
+				$ = (e, t) => {
+					let {
+						postId: i
+					} = t;
 					if (!i) return "";
-					const n = P(e, {
+					const n = A(e, {
+						postId: i
+					});
+					return n && n.liveCommentsWebsocket ? n.liveCommentsWebsocket : ""
+				},
+				ee = (e, t) => {
+					let {
+						postId: i
+					} = t;
+					if (!i) return "";
+					const n = A(e, {
 						postId: i
 					});
 					if (!n) return "";
@@ -14849,125 +14877,125 @@
 					}
 					return r
 				},
-				$ = (e, t) => {
+				te = (e, t) => {
 					let {
 						postId: i
 					} = t;
 					if (!i) return null;
-					const n = Z(e, {
+					const n = ee(e, {
 						postId: i
 					});
 					return Object(_.a)(n)
 				},
-				ee = (e, t) => {
+				ie = (e, t) => {
 					let {
 						postId: i
 					} = t;
 					if (!i) return 0;
-					return P(e, {
+					return A(e, {
 						postId: i
 					}).numDuplicates || 0
 				},
-				te = Object(c.a)(e => {
+				ne = Object(c.a)(e => {
 					return e.posts.recent.map(t => e.posts.models[t]).filter(e => !!e)
 				}),
-				ie = e => (t, i) => {
+				re = e => (t, i) => {
 					let {
 						postId: n
 					} = i;
 					if (!n) return !1;
-					const r = P(t, {
+					const r = A(t, {
 						postId: n
 					});
 					return !!r && !!r[e]
 				},
-				ne = (e, t) => {
+				se = (e, t) => {
 					let {
 						postId: i
 					} = t;
 					if (!i) return null;
-					const n = P(e, {
+					const n = A(e, {
 						postId: i
 					});
 					return n && n.belongsTo.type !== m.a.PROFILE ? Object(S.G)(e, {
 						identifier: n.belongsTo
 					}) : null
 				},
-				re = (e, t) => t.postCategories,
-				se = ie("saved"),
-				oe = ie("hidden"),
-				de = ie("isSponsored"),
-				le = ie("sendReplies"),
-				ae = ie("isNSFW"),
-				ue = ie("isOriginalContent"),
-				ce = ie("isSpoiler"),
-				_e = (e, t) => {
+				oe = (e, t) => t.postCategories,
+				de = re("saved"),
+				le = re("hidden"),
+				ae = re("isSponsored"),
+				ue = re("sendReplies"),
+				ce = re("isNSFW"),
+				_e = re("isOriginalContent"),
+				me = re("isSpoiler"),
+				pe = (e, t) => {
 					let {
 						postId: i
 					} = t;
-					const n = P(e, {
+					const n = A(e, {
 							postId: i
 						}),
 						r = Object(T.m)(e, n.author),
 						s = e.profiles.pinnedPosts.data[r];
 					return !!s && s.includes(i)
 				},
-				me = (e, t, i) => {
+				he = (e, t, i) => {
 					const n = Object(T.m)(e, i),
 						r = e.profiles.pinnedPosts.initialData[n];
 					return !!r && r.includes(t)
 				},
-				pe = (e, t, i) => {
+				fe = (e, t, i) => {
 					const n = Object(T.m)(e, i),
 						r = e.profiles.pinnedPosts.data[n];
 					return !!r && r.includes(t)
 				},
-				he = (e, t) => _e(e, t) !== ((e, t) => {
+				ge = (e, t) => pe(e, t) !== ((e, t) => {
 					let {
 						postId: i
 					} = t;
-					const n = P(e, {
+					const n = A(e, {
 							postId: i
 						}),
 						r = Object(T.m)(e, n.author),
 						s = e.profiles.pinnedPosts.pending[r];
 					return !!s && s.includes(i)
 				})(e, t),
-				fe = Object(c.a)((e, t) => {
+				be = Object(c.a)((e, t) => {
 					const i = Object(T.m)(e, t.profileName);
 					return e.profiles.pinnedPosts.data[i] || []
 				}),
-				ge = (e, t) => {
+				we = (e, t) => {
 					const i = Object(T.m)(e, t.profileName);
 					return !!e.profiles.pinnedPosts.data[i]
 				},
-				be = (e, t) => {
-					const i = P(e, {
+				ye = (e, t) => {
+					const i = A(e, {
 							postId: t
 						}),
 						n = (new Date).getTime();
 					return !!i && (n - i.created) / 1e3 / 60 / 60 < 24
 				},
-				we = Object(c.a)((e, t) => {
+				ve = Object(c.a)((e, t) => {
 					const i = B(e, t);
-					return t.excludePinnedPosts ? i.filter(t => !_e(e, {
+					return t.excludePinnedPosts ? i.filter(t => !pe(e, {
 						postId: t
 					})) : i
 				}),
-				ye = (e, t) => {
+				Te = (e, t) => {
 					let {
 						profileName: i
 					} = t;
-					const n = fe(e, {
+					const n = be(e, {
 						profileName: i
 					});
 					if (!n.length) return !1;
-					const [r] = n, s = P(e, {
+					const [r] = n, s = A(e, {
 						postId: r
 					});
 					return !!s && (!(i.toLowerCase() === s.author.toLowerCase()) && Object(u.a)(!0, s.distinguishType))
 				},
-				ve = Object(c.a)((e, t) => {
+				Se = Object(c.a)((e, t) => {
 					const {
 						models: i
 					} = e.posts;
@@ -14976,7 +15004,7 @@
 						return !!t && !t.isBlank && !t.hidden
 					})
 				}),
-				Te = (e, t, i, n) => {
+				Fe = (e, t, i, n) => {
 					const r = B(e, {
 						listingKey: t
 					});
@@ -14991,18 +15019,18 @@
 					}
 					return r
 				},
-				Se = (e, t) => {
-					const i = P(e, t);
+				Ee = (e, t) => {
+					const i = A(e, t);
 					if (!i || i.belongsTo.type === m.a.SUBREDDIT) return !1;
-					const n = W(e, t);
+					const n = K(e, t);
 					return !!n && Object(F.L)(e, n.name)
 				},
-				Fe = Object(a.a)((e, t) => t.postId, B, (e, t) => {
+				Ie = Object(a.a)((e, t) => t.postId, B, (e, t) => {
 					const i = t.indexOf(e);
 					return i >= 0 ? t[i + 1] : void 0
 				}),
-				Ee = Object(a.a)(Fe, e => e.posts.models, (e, t) => e && t[e] || void 0),
-				Ie = (Object(a.a)((e, t) => k(e, t), (e, t) => Object(S.r)(e, t), (e, t) => {
+				Oe = Object(a.a)(Ie, e => e.posts.models, (e, t) => e && t[e] || void 0),
+				je = (Object(a.a)((e, t) => k(e, t), (e, t) => Object(S.r)(e, t), (e, t) => {
 					const i = (e => {
 							const t = {};
 							return e.map(e => {
@@ -15032,37 +15060,37 @@
 						})(t);
 					return l()([...i, ...n], "id")
 				}), e => e.posts.modToMemberShare),
-				Oe = e => {
-					const t = Ie(e);
-					return t ? P(e, {
+				Be = e => {
+					const t = je(e);
+					return t ? A(e, {
 						postId: t
 					}) : null
 				},
-				je = e => {
-					const t = Ie(e);
-					return t && W(e, {
+				xe = e => {
+					const t = je(e);
+					return t && K(e, {
 						postId: t
 					}) || null
 				},
-				Be = e => e.posts.crowdControl,
-				xe = e => {
-					const t = Be(e);
-					return t ? P(e, {
+				Re = e => e.posts.crowdControl,
+				ke = e => {
+					const t = Re(e);
+					return t ? A(e, {
 						postId: t
 					}) : null
 				},
-				Re = e => {
-					const t = Be(e);
+				Ce = e => {
+					const t = Re(e);
 					if (!t) return;
-					const i = P(e, {
+					const i = A(e, {
 						postId: t
 					});
 					return Object(S.W)(e, i.belongsTo.id)
 				},
-				ke = e => {
-					const t = Be(e);
+				Ne = e => {
+					const t = Re(e);
 					if (!t) return;
-					const i = P(e, {
+					const i = A(e, {
 							postId: t
 						}),
 						n = Object(S.S)(e, i.belongsTo.id);
@@ -15816,7 +15844,7 @@
 						thingId: i
 					} = t;
 					if (Object(a.a)(i)) {
-						const t = Object(f.M)(e, {
+						const t = Object(f.O)(e, {
 							postId: i
 						});
 						if (!t) return;
@@ -17691,7 +17719,7 @@
 					let i, {
 						postId: n
 					} = t;
-					const r = Object(le.M)(e, {
+					const r = Object(le.O)(e, {
 						postId: n
 					});
 					if (r && Object(X.a)(r) && r.eventInfo) {
@@ -17735,7 +17763,7 @@
 					let {
 						postId: i
 					} = t;
-					const n = Object(le.M)(e, {
+					const n = Object(le.O)(e, {
 						postId: i
 					});
 					if (n && Object(Y.a)(n)) {
@@ -18807,7 +18835,7 @@
 						case o.Bb.DUPLICATES:
 							const {
 								partialPostId: c
-							} = t.urlParams, m = c && Object(h.m)(c), p = m && Object(w.L)(e, {
+							} = t.urlParams, m = c && Object(h.m)(c), p = m && Object(w.N)(e, {
 								postId: m
 							});
 							return p ? "".concat(s.a.redditUrl).concat(r.a.parse(p).path) : null;
@@ -22042,4 +22070,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.8c4baee883ad2c89ead9.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.d14f937ae885cfb0acaa.js.map

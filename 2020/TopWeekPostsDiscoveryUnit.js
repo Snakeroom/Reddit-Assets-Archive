@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2f967133ea751e53ccc2.js
-// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.81525fd5276515f3d7f9.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -322,7 +322,7 @@
 				if (!e) return !1;
 				return (Object(p.f)(e) ? t : s).some(t => t.id === e.id)
 			});
-			class z extends r.a.Component {
+			class G extends r.a.Component {
 				constructor() {
 					super(...arguments), this.trackSubredditOrProfileClicked = e => {
 						e.stopPropagation(), this.props.onSubredditOrProfileClick(this.props.postId)
@@ -374,10 +374,10 @@
 					}))
 				}
 			}
-			const G = Object(m.a)(Object(a.a)(z));
+			const z = Object(m.a)(Object(a.a)(G));
 			class Y extends r.a.Component {
 				render() {
-					return r.a.createElement(G, this.props)
+					return r.a.createElement(z, this.props)
 				}
 			}
 		},
@@ -424,7 +424,7 @@
 			}
 			const {
 				fbt: y
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = [], v = () => {}, C = () => void 0, j = c.a.button("CloseButton", x.a), P = Object(i.a)(p.G, e => e.filter(e => 9 === e.length)), _ = Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = [], v = () => {}, C = () => void 0, j = c.a.button("CloseButton", x.a), P = Object(i.a)(p.I, e => e.filter(e => 9 === e.length)), _ = Object(i.c)({
 				discoveryUnit: e => Object(u.c)(e, {
 					unitName: m.k
 				}),
@@ -563,6 +563,14 @@
 						return Object(b.c)(e, {
 							postId: s.id
 						})
+					},
+					imageGalleryCurrentUrl: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(p.j)(e, {
+							postId: s.id
+						})
 					}
 				}),
 				O = Object(m.a)(y),
@@ -581,36 +589,37 @@
 						basePixelMetadata: t,
 						children: s,
 						className: n,
-						makePostContainerId: o,
-						post: a,
-						onClick: c,
-						onPostContentClick: d,
-						style: m,
-						ref: p
-					} = this.props, b = r.a.createElement("div", {
+						imageGalleryCurrentUrl: o,
+						makePostContainerId: a,
+						post: c,
+						onClick: d,
+						onPostContentClick: m,
+						style: p,
+						ref: b
+					} = this.props, f = r.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
-						style: m,
-						ref: p,
+						style: p,
+						ref: b,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: s => {
-							!this.cancelClick && s.button < 2 && (e(() => c && c(s, a, t))(s), d && v(s) && d(s, a))
+							!this.cancelClick && s.button < 2 && (e(() => d && d(s, c, t, o))(s), m && v(s) && m(s, c))
 						},
-						className: Object(h.a)(g.a.WrappedPost, n, "Post ".concat(a.id), {
-							promotedlink: a.isSponsored
+						className: Object(h.a)(g.a.WrappedPost, n, "Post ".concat(c.id), {
+							promotedlink: c.isSponsored
 						}),
-						id: o ? o(a.id) : a.id,
+						id: a ? a(c.id) : c.id,
 						tabIndex: -1
-					}, s), f = !!a.media && a.media.type === u.o.VIDEO;
-					return a.isSponsored || f ? r.a.createElement(i.a, {
-						post: a,
+					}, s), x = !!c.media && c.media.type === u.o.VIDEO;
+					return c.isSponsored || x ? r.a.createElement(i.a, {
+						post: c,
 						trackDisplay: !0
-					}, b) : a.media && Object(u.F)(a.media) ? r.a.createElement(l, {
-						postId: a.id
-					}, b) : b
+					}, f) : c.media && Object(u.F)(c.media) ? r.a.createElement(l, {
+						postId: c.id
+					}, f) : f
 				}
 			}
 			t.a = O(Object(f.c)(C))
@@ -833,4 +842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.2f967133ea751e53ccc2.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.81525fd5276515f3d7f9.js.map

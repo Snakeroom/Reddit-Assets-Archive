@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.becf3328a8512e265053.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.75b1e81df79bc769dae7.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -447,7 +447,7 @@
 				le = n("./src/reddit/selectors/trending.ts");
 			const de = Object(h.c)({
 				ads: ie.b,
-				posts: ce.P,
+				posts: ce.R,
 				trends: le.a
 			});
 			class pe extends a.a.Component {
@@ -712,7 +712,7 @@
 				}
 			}
 			var ct = Object(u.b)(ot, e => ({
-					linkCopied: t => e(Fe.B(t)),
+					linkCopied: t => e(Fe.C(t)),
 					onSetExperimentOverride: (t, n) => e(Ie.c({
 						experimentName: t,
 						override: n
@@ -1467,4 +1467,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminPanel.becf3328a8512e265053.js.map
+//# sourceMappingURL=AdminPanel.75b1e81df79bc769dae7.js.map

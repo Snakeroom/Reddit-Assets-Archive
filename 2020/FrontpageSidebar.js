@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.21bb598e024e99410c1b.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.5b65cf225b19c5d3db4b.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -202,14 +202,14 @@
 			}
 			var W = R,
 				U = n("./src/reddit/helpers/overlay/index.ts"),
-				M = n("./src/reddit/components/Widgets/Aggregate/RecentPosts/PostsList.m.less"),
-				J = n.n(M),
+				J = n("./src/reddit/components/Widgets/Aggregate/RecentPosts/PostsList.m.less"),
+				M = n.n(J),
 				Q = n("./src/lib/lessComponent.tsx");
 			const Z = Object(d.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(U.a)(t.permalink)),
-					clearLinks: () => e(Object(B.t)())
+					clearLinks: () => e(Object(B.u)())
 				})),
-				V = Q.a.button("ClearButton", J.a);
+				V = Q.a.button("ClearButton", M.a);
 			class H extends o.a.Component {
 				render() {
 					return o.a.createElement(A.b, null, o.a.createElement(W, {
@@ -228,7 +228,7 @@
 			var X = Z(H),
 				K = n("./src/reddit/selectors/posts.ts");
 			const G = Object(c.c)({
-				recentPosts: K.V
+				recentPosts: K.X
 			});
 			var Y = Object(d.b)(G, (e, t) => ({
 					openLightbox: t => () => e(Object(U.a)(t.permalink))
@@ -394,7 +394,7 @@
 				g = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/MiniPost/index.m.less"),
 				x = n.n(h);
-			const _ = Object(o.a)(e => e, p.M, p.d, (e, t, n) => {
+			const _ = Object(o.a)(e => e, p.O, p.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -1038,4 +1038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.21bb598e024e99410c1b.js.map
+//# sourceMappingURL=FrontpageSidebar.5b65cf225b19c5d3db4b.js.map

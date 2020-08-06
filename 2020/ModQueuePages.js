@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.4d77292e11bc3554a5ed.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ba92a5e33427fdd42997.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -306,8 +306,8 @@
 				};
 			const L = l.a.wrapped(h.c, "RestrictedButton", I.a),
 				A = l.a.wrapped(O.a, "Approve", I.a),
-				B = l.a.wrapped(S.a, "Lock", I.a),
-				F = l.a.wrapped(N.a, "Remove", I.a),
+				F = l.a.wrapped(S.a, "Lock", I.a),
+				B = l.a.wrapped(N.a, "Remove", I.a),
 				W = l.a.wrapped(M.a, "Spam", I.a),
 				U = l.a.wrapped(R.a, "Show", I.a),
 				X = l.a.wrapped(w, "DistinguishShield", I.a),
@@ -400,7 +400,7 @@
 					onClick: () => {
 						f(), s.bannedBy === c.k ? M("confirm_remove") : M("remove")
 					}
-				}, r.a.createElement(F, null)), r.a.createElement(L, {
+				}, r.a.createElement(B, null)), r.a.createElement(L, {
 					text: n.fbt._("Spam", null, {
 						hk: "1jEVwZ"
 					}),
@@ -416,7 +416,7 @@
 					onClick: () => {
 						x(), M(s.isLocked ? "unlock" : "lock")
 					}
-				}, r.a.createElement(B, null)), a && !w && !s.bannedBy && r.a.createElement(L, {
+				}, r.a.createElement(F, null)), a && !w && !s.bannedBy && r.a.createElement(L, {
 					className: Object(d.a)({
 						[I.a.selected]: O.isDistinguishDropdownOpen
 					}),
@@ -923,14 +923,14 @@
 					id: g,
 					title: y,
 					onClose: () => {
-						f(!1), P("close", "click"), C(Object(d.E)()), C(Object(d.P)({
+						f(!1), P("close", "click"), C(Object(d.F)()), C(Object(d.Q)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						C(Object(d.E)())
+						C(Object(d.F)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -990,10 +990,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						g(n.Closed), y("close", "click"), v(Object(c.E)())
+						g(n.Closed), y("close", "click"), v(Object(c.F)())
 					},
 					onClickOutside: () => {
-						v(Object(c.E)())
+						v(Object(c.F)())
 					}
 				};
 				switch (f) {
@@ -2271,7 +2271,7 @@
 				D = s.n(I);
 			const L = R.a.a("ExternalLink", D.a),
 				A = R.a.wrapped(O.a, "InternalLink", D.a);
-			var B = () => a.a.createElement(T.a, {
+			var F = () => a.a.createElement(T.a, {
 				title: C.fbt._("Moderator resources", null, {
 					hk: "1i4sLY"
 				}),
@@ -2295,7 +2295,7 @@
 			}, C.fbt._("Contact Reddit", null, {
 				hk: "43QJTq"
 			})));
-			var F = e => a.a.createElement("div", {
+			var B = e => a.a.createElement("div", {
 				className: j.a.sidebar
 			}, e.subredditOrProfileUrl && a.a.createElement(N.a, null, a.a.createElement(T.a, {
 				title: C.fbt._("Moderation", null, {
@@ -2311,7 +2311,7 @@
 				target: "_blank"
 			}, C.fbt._("Automoderator Config", null, {
 				hk: "2GBjtX"
-			})))), a.a.createElement(N.a, null, a.a.createElement(B, null)));
+			})))), a.a.createElement(N.a, null, a.a.createElement(F, null)));
 			const W = Object(b.t)(),
 				U = Object(d.c)({
 					queryParams: (e, t) => {
@@ -2393,7 +2393,7 @@
 							sendEventWithName: this.sendEventWithName,
 							subredditName: c
 						})]),
-						sidebar: a.a.createElement(F, {
+						sidebar: a.a.createElement(B, {
 							subredditOrProfileUrl: u
 						})
 					}))
@@ -2403,4 +2403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.4d77292e11bc3554a5ed.js.map
+//# sourceMappingURL=ModQueuePages.ba92a5e33427fdd42997.js.map

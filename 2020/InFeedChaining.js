@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.3f27568eb64f4db1fbfd.js
-// Retrieved at 8/3/2020, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.3aadc4b5ad9d900c03b0.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -651,7 +651,7 @@
 				D = Object(d.c)({
 					discoveryUnit: S.b,
 					postChain: S.f,
-					postSubreddit: _.Z,
+					postSubreddit: _.bb,
 					routeName: O.r,
 					subscribedProfiles: j.c,
 					subscribedSubreddits: j.d
@@ -1136,12 +1136,12 @@
 				currentUser: b.i,
 				flairStyleTemplate: c.R,
 				hideNSFWPref: b.z,
-				isActive: p.i,
+				isActive: p.k,
 				moderatorPermissions: m.i,
 				modModeEnabled: c.P,
-				post: p.M,
+				post: p.O,
 				showEditFlair: u.a,
-				subredditOrProfile: p.Z,
+				subredditOrProfile: p.bb,
 				userIsOp: b.hb
 			}), (e, s) => {
 				let {
@@ -1161,10 +1161,10 @@
 						}))
 					},
 					handleVote: s => {
-						const r = s === d.a.upvoted ? Object(n.Y)(t) : Object(n.w)(t);
+						const r = s === d.a.upvoted ? Object(n.Z)(t) : Object(n.x)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(n.W)(t)),
+					onIgnoreReports: () => e(Object(n.X)(t)),
 					onOpenReportsDropdown: s => e(Object(a.h)({
 						tooltipId: s
 					}))
@@ -1228,4 +1228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.3f27568eb64f4db1fbfd.js.map
+//# sourceMappingURL=InFeedChaining.3aadc4b5ad9d900c03b0.js.map

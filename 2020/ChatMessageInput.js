@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.bed02bc1dce0743fa191.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.54d23d46dbfef57c7140.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -462,9 +462,9 @@
 				L = s("./src/reddit/selectors/comments.ts"),
 				S = s("./src/reddit/selectors/posts.ts"),
 				T = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				M = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
-				R = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
-				F = s("./src/reddit/helpers/awards/getIconForSize.ts"),
+				R = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
+				F = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
+				M = s("./src/reddit/helpers/awards/getIconForSize.ts"),
 				D = s("./src/reddit/selectors/communityAwards.ts"),
 				P = s("./src/reddit/icons/fonts/Gift/index.tsx"),
 				B = s("./src/reddit/components/CommentsChat/Comment/AwardCountSpectacle/AwardCountAnimation/index.m.less"),
@@ -476,7 +476,7 @@
 						className: t,
 						count: s,
 						isAnimated: n
-					} = this.props, a = e ? Object(F.a)(e, 64) : void 0;
+					} = this.props, a = e ? Object(M.a)(e, 64) : void 0;
 					return d.a.createElement("div", {
 						className: Object(m.a)(U.a.container, t, {
 							[U.a.isAnimated]: n
@@ -506,16 +506,16 @@
 						postId: s
 					} = t;
 					return Object(L.g)(e, {
-						commentsPageKey: Object(M.a)(s)
+						commentsPageKey: Object(R.a)(s)
 					})
-				}, S.M, (e, t) => {
+				}, S.O, (e, t) => {
 					let {
 						postId: s
 					} = t;
 					return Object(L.v)(e, {
-						commentsPageKey: Object(M.a)(s)
+						commentsPageKey: Object(R.a)(s)
 					})
-				}, R.a, (e, t, s, n, a) => {
+				}, F.a, (e, t, s, n, a) => {
 					return {
 						commentAwardIds: t.length ? t.reduce((t, s) => {
 							const n = Object(L.n)(e, {
@@ -599,7 +599,7 @@
 					hasError: L.w,
 					liveStreamingChatCharacterLimit: T.a,
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
-					post: S.M
+					post: S.O
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -1486,9 +1486,9 @@
 			})), s.d(t, "h", (function() {
 				return L
 			})), s.d(t, "c", (function() {
-				return R
-			})), s.d(t, "g", (function() {
 				return F
+			})), s.d(t, "g", (function() {
+				return M
 			})), s.d(t, "k", (function() {
 				return D
 			})), s.d(t, "j", (function() {
@@ -1667,12 +1667,12 @@
 					})
 				}, (e, t, s, n, a) => !e || s.includes(e) || n.includes(e) ? t || a[0] : e),
 				T = Object(n.a)(f, x, A, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				M = Object(n.a)(f, x, (e, t) => {
+				R = Object(n.a)(f, x, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				R = Object(a.a)(Object(n.a)(S, E, (e, t) => e ? t[e] : void 0)),
-				F = Object(a.a)(Object(n.a)(T, E, (e, t) => e ? t[e] : void 0)),
-				D = Object(a.a)(Object(n.a)(M, E, (e, t) => e ? t[e] : void 0)),
+				F = Object(a.a)(Object(n.a)(S, E, (e, t) => e ? t[e] : void 0)),
+				M = Object(a.a)(Object(n.a)(T, E, (e, t) => e ? t[e] : void 0)),
+				D = Object(a.a)(Object(n.a)(R, E, (e, t) => e ? t[e] : void 0)),
 				P = (Object(a.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, E, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)((e, t) => {
@@ -1712,8 +1712,8 @@
 					const a = n.stream.state;
 					return a === i.a.IS_LIVE || a === i.a.DISCONNECTED ? G.LIVE : a === i.a.ENDED && n.stream.vod_accessible ? G.VOD : G.UNAVAILABLE
 				}),
-				K = Object(n.a)(R, W, p.b, l.b, l.o, (e, t, s, n, a) => s ? n : e ? t === G.LIVE || t === G.VOD ? e.stream.hls_url : a : void 0),
-				q = Object(n.a)(R, W, V, (e, t, s) => e ? t === G.LIVE ? e.broadcast_time : t === G.VOD && s < e.broadcast_time ? s : 0 : 0),
+				K = Object(n.a)(F, W, p.b, l.b, l.o, (e, t, s, n, a) => s ? n : e ? t === G.LIVE || t === G.VOD ? e.stream.hls_url : a : void 0),
+				q = Object(n.a)(F, W, V, (e, t, s) => e ? t === G.LIVE ? e.broadcast_time : t === G.VOD && s < e.broadcast_time ? s : 0 : 0),
 				H = (e, t) => {
 					const s = b(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -1752,4 +1752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.bed02bc1dce0743fa191.js.map
+//# sourceMappingURL=ChatMessageInput.54d23d46dbfef57c7140.js.map

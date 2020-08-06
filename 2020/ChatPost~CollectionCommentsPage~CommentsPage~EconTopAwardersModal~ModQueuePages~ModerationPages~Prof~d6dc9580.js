@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.5ffec4099802424ab5ec.js
-// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.60637a182456885998bb.js
+// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -456,9 +456,9 @@
 				}
 			}
 			var K = Y,
-				Z = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
-				X = s("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
-				$ = s.n(X);
+				X = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				Z = s("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
+				$ = s.n(Z);
 			var ee = o.a.memo(e => {
 				const {
 					className: t,
@@ -477,7 +477,7 @@
 					className: $.a.scrollButton,
 					name: n ? i : d,
 					onClick: a
-				}, o.a.createElement(Z.a, {
+				}, o.a.createElement(X.a, {
 					className: $.a.chevronIcon
 				})))
 			});
@@ -1609,10 +1609,10 @@
 				})),
 				A = s("./src/reddit/selectors/posts.ts");
 			var E = Object(o.b)(() => Object(n.c)({
-				post: A.M,
-				subredditOrProfile: A.Z,
+				post: A.O,
+				subredditOrProfile: A.bb,
 				isModerator: (e, t) => {
-					const s = Object(A.Z)(e, t);
+					const s = Object(A.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => a.a.createElement(h, {
@@ -1646,11 +1646,11 @@
 				}
 			}));
 			var j = Object(o.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(A.Z)(e, {
+				subredditOrProfile: (e, t) => Object(A.bb)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(A.Z)(e, {
+					const s = Object(A.bb)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -1672,10 +1672,10 @@
 				}
 			}));
 			var T = Object(o.b)(() => Object(n.c)({
-				post: A.M,
-				subredditOrProfile: A.Z,
+				post: A.O,
+				subredditOrProfile: A.bb,
 				isModerator: (e, t) => {
-					const s = Object(A.Z)(e, t);
+					const s = Object(A.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => a.a.createElement(h, {
@@ -1860,9 +1860,9 @@
 				J = s("./src/reddit/selectors/userFlair.ts"),
 				Y = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				K = s("./src/reddit/components/PostTopMeta/index.m.less"),
-				Z = s.n(K);
+				X = s.n(K);
 			const {
-				fbt: X
+				fbt: Z
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), $ = {
 				placement: "top"
 			};
@@ -1871,13 +1871,13 @@
 				e.StickyPost = "sticky", e.Lightbox = "lightbox", e.TopAwardedModal = "topAwarded"
 			}(ee || (ee = {}));
 			const te = e => Object(U.a)(Object(F.a)(e), G.a.metaText, G.b.metaText),
-				se = l.a.wrapped(B.b, "MetaSeparator", Z.a),
-				re = l.a.span("text", Z.a),
+				se = l.a.wrapped(B.b, "MetaSeparator", X.a),
+				re = l.a.span("text", X.a),
 				ae = Object(Y.t)(),
 				oe = e => {
 					const t = !e.isDeleted && e.post.distinguishType === d.C.ADMIN;
 					return a.a.createElement(O.a, {
-						className: Z.a.authorLink,
+						className: X.a.authorLink,
 						"data-click-id": "user",
 						author: e.post.author,
 						isAdmin: t,
@@ -1886,9 +1886,9 @@
 						isUnstyled: !0,
 						style: e.style
 					}, "u/".concat(e.post.author), t && a.a.createElement(D.a, {
-						className: Z.a.adminIcon
+						className: X.a.adminIcon
 					}), e.renderContractorBadge && a.a.createElement(D.a, {
-						className: Z.a.contractorIcon
+						className: X.a.contractorIcon
 					}), !1)
 				},
 				ne = a.a.memo((function(e) {
@@ -1917,13 +1917,13 @@
 							color: te(e)
 						}
 					}, "Posted by"), le && a.a.createElement(r.Fragment, null, a.a.createElement(x, {
-						className: Z.a.crosspostIcon
+						className: X.a.crosspostIcon
 					}), a.a.createElement(re, {
 						style: {
 							color: te(e)
 						}
 					}, "Crossposted by")), D && me && a.a.createElement("div", {
-						className: Z.a.flairContainer
+						className: X.a.flairContainer
 					}, a.a.createElement(j.b, {
 						disabled: !Y,
 						flair: D,
@@ -1937,7 +1937,7 @@
 							color: te(e)
 						}
 					}) : a.a.createElement(r.Fragment, null, !Object(z.h)(l.author) && a.a.createElement(A.b, {
-						className: Z.a.badge,
+						className: X.a.badge,
 						subredditId: F,
 						uniqueIdentifier: "".concat(l.id, "-").concat(s),
 						userId: l.authorId
@@ -1955,7 +1955,7 @@
 							color: te(e)
 						}
 					}))), pe && a.a.createElement(a.a.Fragment, null, a.a.createElement("button", {
-						className: Z.a.powerupBadge,
+						className: X.a.powerupBadge,
 						onMouseEnter: ie.show,
 						onMouseLeave: ie.hide,
 						onClick: () => {
@@ -1963,22 +1963,22 @@
 						},
 						ref: ie.target.ref
 					}, a.a.createElement(v.a, {
-						className: Z.a.powerupIcon
+						className: X.a.powerupIcon
 					})), a.a.createElement(R, null, a.a.createElement(I.a, {
 						arrowProps: ie.arrowProps,
 						popperProps: ie.popperProps,
 						visible: ie.visible
-					}, X._("Powerups Top Supporter", null, {
+					}, Z._("Powerups Top Supporter", null, {
 						hk: "1GLWsz"
 					}))))), D && !me && a.a.createElement("div", {
-						className: Z.a.flairContainer
+						className: X.a.flairContainer
 					}, a.a.createElement(j.b, {
 						disabled: !Y,
 						flair: D,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: he
 					})), l.belongsTo.type === k.a.SUBREDDIT && !Object(z.h)(l.author) && a.a.createElement(T.a, {
-						className: Z.a.publicWallet,
+						className: X.a.publicWallet,
 						contentId: l.id,
 						metaSeparator: a.a.createElement(be, null),
 						subredditId: F,
@@ -1986,7 +1986,7 @@
 						username: l.author
 					}));
 					return a.a.createElement("div", {
-						className: Object(n.a)(Z.a.container, t)
+						className: Object(n.a)(X.a.container, t)
 					}, f && N && a.a.createElement(y.a, {
 						postId: l.id,
 						subredditName: N.name,
@@ -1997,7 +1997,7 @@
 					}, N.displayText)), N && N.isQuarantined && a.a.createElement(P.a, null), f && !le && a.a.createElement(be, null), l.isSponsored && a.a.createElement(r.Fragment, null, a.a.createElement(S.a, null), a.a.createElement(be, null)), we, a.a.createElement(_.e, {
 						post: l
 					}), O && a.a.createElement(a.a.Fragment, null, a.a.createElement("a", {
-						className: Z.a.externalLink,
+						className: X.a.externalLink,
 						"data-click-id": "timestamp",
 						href: l.permalink,
 						onMouseEnter: de.show,
@@ -2499,4 +2499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.5ffec4099802424ab5ec.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.60637a182456885998bb.js.map
