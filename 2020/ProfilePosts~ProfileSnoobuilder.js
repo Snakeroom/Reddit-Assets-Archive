@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.8b6e5f16c4c36c359a3d.js
-// Retrieved at 7/30/2020, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.3b7d0008aed9f3dbfcd6.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less": function(e, t, n) {
@@ -1468,7 +1468,7 @@
 				i = n("./src/reddit/actions/subscription/index.ts"),
 				o = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: o.cb
+				userIsSubscriber: o.bb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -1544,4 +1544,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.8b6e5f16c4c36c359a3d.js.map
+//# sourceMappingURL=ProfilePosts~ProfileSnoobuilder.3b7d0008aed9f3dbfcd6.js.map

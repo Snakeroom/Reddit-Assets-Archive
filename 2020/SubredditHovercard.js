@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.1b9b46143c43be55ebbd.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.a78df18e63f5f31f2b73.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -35,7 +35,7 @@
 				E = s.n(x);
 			const y = s("./src/lib/lessComponent.tsx").a.span("TypeLabel", E.a),
 				j = Object(a.c)({
-					restrictions: O.p
+					restrictions: O.o
 				}),
 				I = e => n.a.createElement(n.a.Fragment, null, n.a.createElement(d.b, {
 					flair: {
@@ -367,8 +367,8 @@
 			const z = Object(m.c)({
 				activeTooltipId: v.a,
 				hideNSFWPref: h.z,
-				subreddit: b.A,
-				subredditAboutInfo: b.x
+				subreddit: b.z,
+				subredditAboutInfo: b.w
 			});
 			var W = Object(u.b)(z, e => ({
 				onHideTooltip: () => e(Object(p.i)())
@@ -390,7 +390,7 @@
 				tooltipType: e.tooltipType
 			}))));
 			const J = "SubredditInfoTooltip";
-			class G extends o.a.Component {
+			class Q extends o.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(l(this.props.subredditName, this.props.postId))
 				}
@@ -419,7 +419,7 @@
 					}))
 				}
 			}
-			t.default = Object(d.c)(G)
+			t.default = Object(d.c)(Q)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, s) {
 			e.exports = {
@@ -528,7 +528,7 @@
 				h = s("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const s = Object(v.n)(e, t),
-					r = Object(h.I)(e, t);
+					r = Object(h.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -566,7 +566,7 @@
 			}));
 			const x = (e, t) => {
 				const s = Object(v.n)(e, t),
-					r = Object(h.I)(e, t);
+					r = Object(h.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -592,7 +592,7 @@
 				}
 			}));
 			var y = Object(n.b)(() => Object(i.c)({
-					subreddit: h.R
+					subreddit: h.Q
 				}))(e => o.a.createElement(b, {
 					className: e.className,
 					type: "communityTools",
@@ -704,7 +704,7 @@
 				}
 			}));
 			var N = Object(n.b)(() => Object(i.c)({
-				subreddit: h.R
+				subreddit: h.Q
 			}))(e => o.a.createElement(b, {
 				className: e.className,
 				type: "sidebar",
@@ -717,7 +717,7 @@
 				}
 			}));
 			var _ = Object(n.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(h.L)(e, {
+				subredditOrProfile: (e, t) => Object(h.K)(e, {
 					identifier: t
 				})
 			}))(e => o.a.createElement(b, {
@@ -736,7 +736,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(h.R)(e, {
+					return s ? Object(h.Q)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -904,4 +904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditHovercard.1b9b46143c43be55ebbd.js.map
+//# sourceMappingURL=SubredditHovercard.a78df18e63f5f31f2b73.js.map

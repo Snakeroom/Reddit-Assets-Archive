@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.0147cb6b2f7136716b1a.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.55e702f2dc5d39668068.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -1447,7 +1447,7 @@
 					errorMsgs: _e.J,
 					draft: _e.i,
 					disableAutofocus: _e.f,
-					showContributorRequestFlow: e => Object(Le.r)(e, b.e.Comment)
+					showContributorRequestFlow: e => Object(Le.q)(e, b.e.Comment)
 				}),
 				Ue = Object(a.b)(ze, (e, t) => ({
 					onMount: () => e(c.I(t.draftKey)),
@@ -1575,7 +1575,7 @@
 				f = n("./src/reddit/components/ContributorRequestFlow/index.m.less"),
 				x = n.n(f);
 			const g = Object(a.c)({
-				restrictions: b.p
+				restrictions: b.o
 			});
 			class C extends r.a.Component {
 				constructor() {
@@ -2240,7 +2240,7 @@
 				h = n.n(p);
 			const b = d.a.wrapped(c.a, "Banner", h.a),
 				f = Object(i.b)(() => Object(a.c)({
-					restrictions: u.p,
+					restrictions: u.o,
 					subreddit: m.f
 				}));
 			t.a = f(e => {
@@ -2799,4 +2799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.0147cb6b2f7136716b1a.js.map
+//# sourceMappingURL=RichTextEditor.55e702f2dc5d39668068.js.map

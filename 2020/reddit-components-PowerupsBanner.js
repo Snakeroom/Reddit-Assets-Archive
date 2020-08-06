@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.bd47d6b49a0fda8d3b45.js
-// Retrieved at 8/6/2020, 3:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.d488a49dad494c348aa7.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PowerupsBanner"], {
 		"./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.m.less": function(e, s, t) {
@@ -198,7 +198,7 @@
 			const B = Object(c.c)({
 					currentUser: N.i,
 					powerups: w.h,
-					subreddit: E.R,
+					subreddit: E.Q,
 					topSupporters: w.i
 				}),
 				v = Object(b.c)(e => {
@@ -258,4 +258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-PowerupsBanner.bd47d6b49a0fda8d3b45.js.map
+//# sourceMappingURL=reddit-components-PowerupsBanner.d488a49dad494c348aa7.js.map

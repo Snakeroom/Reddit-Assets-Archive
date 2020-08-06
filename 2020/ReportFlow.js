@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.551faf7cef009c6805c8.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.dcb2b08ad26103658db8.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow"], {
 		"./src/reddit/components/CrisisFlow/async.tsx": function(e, t, o) {
@@ -162,8 +162,8 @@
 			};
 			const _ = c.a.div("ContentPolicyHolder", S.a),
 				k = c.a.div("Header", S.a),
-				E = c.a.div("Description", S.a),
-				T = c.a.wrapped(b.i, "CloseButton", S.a),
+				T = c.a.div("Description", S.a),
+				E = c.a.wrapped(b.i, "CloseButton", S.a),
 				y = c.a.div("RadioOptionsSectionHeader", S.a),
 				F = c.a.wrapped(x.b, "DropdownRow", S.a),
 				P = c.a.div("PickerWrapper", S.a),
@@ -188,7 +188,7 @@
 			const N = c.a.div("LinkHolder", B.a),
 				q = c.a.a("Link", B.a),
 				W = c.a.wrapped(h.a, "footer", B.a);
-			var K = e => r.a.createElement("div", null, r.a.createElement(k, null, e.complaintPageTitle), r.a.createElement(E, null, e.complaintPrompt || n.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
+			var K = e => r.a.createElement("div", null, r.a.createElement(k, null, e.complaintPageTitle), r.a.createElement(T, null, e.complaintPrompt || n.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
 					hk: "4eHLfh"
 				})), r.a.createElement(N, null, r.a.createElement(q, {
 					target: "_blank",
@@ -196,7 +196,7 @@
 				}, e.complaintButtonText)), r.a.createElement(W, null, r.a.createElement(_, null, r.a.createElement(m.a, {
 					isLiveStreaming: e.isLiveStreaming,
 					subredditOrProfile: e.subredditOrProfile
-				})), r.a.createElement(T, {
+				})), r.a.createElement(E, {
 					onClick: e.onClose
 				}, n.fbt._("Close", null, {
 					hk: "4gbyAA"
@@ -276,12 +276,12 @@
 					} = this;
 					return r.a.createElement("div", null, r.a.createElement(k, null, n.fbt._("Thanks for letting us know!", null, {
 						hk: "ytmSE"
-					})), r.a.createElement(E, null, n.fbt._("We've received your report. Here are some things you can do:", null, {
+					})), r.a.createElement(T, null, n.fbt._("We've received your report. Here are some things you can do:", null, {
 						hk: "QxA7E"
 					})), e.chosenRule.isAbuseOfReportButton ? this.renderAbuseOfReportButtonOption() : this.renderBlockUserOption(), r.a.createElement(se, null, r.a.createElement(_, null, r.a.createElement(m.a, {
 						isLiveStreaming: e.isLiveStreaming,
 						subredditOrProfile: e.subredditOrProfile
-					})), r.a.createElement(T, {
+					})), r.a.createElement(E, {
 						onClick: e.onClose
 					}, n.fbt._("Close", null, {
 						hk: "4gbyAA"
@@ -414,10 +414,10 @@
 				ve = "Custom response",
 				_e = c.a.wrapped(j, "Dropdown", Se.a),
 				ke = c.a.wrapped(F, "DropdownRow", Se.a),
-				Ee = c.a.wrapped(xe.i, "FreeFormTextArea", Se.a),
-				Te = Object(i.c)({
+				Te = c.a.wrapped(xe.i, "FreeFormTextArea", Se.a),
+				Ee = Object(i.c)({
 					dropdownIsOpen: Object(he.b)(Oe),
-					freeFormReports: ge.E
+					freeFormReports: ge.D
 				});
 			class ye extends r.a.Component {
 				constructor(e) {
@@ -472,7 +472,7 @@
 						onClick: () => {
 							this.onChangeDropdownRule(ve), this.onChosenRuleCleared()
 						}
-					}) : null)), t.dropdownRule === ve ? r.a.createElement(Ee, {
+					}) : null)), t.dropdownRule === ve ? r.a.createElement(Te, {
 						placeholder: n.fbt._("Give us some detail about your report", null, {
 							hk: "4Cp82U"
 						}),
@@ -480,7 +480,7 @@
 					}) : null)
 				}
 			}
-			var Fe = Object(l.b)(Te, e => ({
+			var Fe = Object(l.b)(Ee, e => ({
 					onOpenDropdown: () => e(Object(ce.h)({
 						tooltipId: Oe
 					}))
@@ -560,7 +560,7 @@
 					}, r.a.createElement(_, null, r.a.createElement(m.a, {
 						isLiveStreaming: e.isLiveStreaming,
 						subredditOrProfile: e.subredditOrProfile
-					})), r.a.createElement(T, {
+					})), r.a.createElement(E, {
 						onClick: e.onClose
 					}, n.fbt._("Close", null, {
 						hk: "4gbyAA"
@@ -874,4 +874,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow.551faf7cef009c6805c8.js.map
+//# sourceMappingURL=ReportFlow.dcb2b08ad26103658db8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.0f3913682874f8be38a2.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.46710f40d4dfeb9dccc2.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -1067,7 +1067,7 @@
 						return !!Object(P.r)(e, n.subredditId, n.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const n = Object(Q.I)(e, {
+						const n = Object(Q.H)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -8388,7 +8388,7 @@
 				r = n("./src/reddit/actions/subscription/index.ts"),
 				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(o.c)({
-				userIsSubscriber: a.cb
+				userIsSubscriber: a.bb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -9765,7 +9765,7 @@
 					measureScrollFPS: J.d.measureScrollFPS,
 					layout: j.N,
 					loadMore: X.d,
-					subredditsById: Y.Y,
+					subredditsById: Y.X,
 					viewportDataLoaded: $.a,
 					commentsById: S.r,
 					itemIds: X.f,
@@ -9975,4 +9975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.0f3913682874f8be38a2.js.map
+//# sourceMappingURL=ProfileComments.46710f40d4dfeb9dccc2.js.map

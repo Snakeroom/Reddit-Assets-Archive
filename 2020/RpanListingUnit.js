@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.d5631e112a32e2824622.js
-// Retrieved at 8/6/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.2592357f400aabd7332b.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				R = Object({
-					SENTRY_RELEASE_VERSION: "e1e3cee-production"
+					SENTRY_RELEASE_VERSION: "1bf3931-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -665,7 +665,7 @@
 				f = s("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
 				const s = Object(p.n)(e, t),
-					i = Object(f.I)(e, t);
+					i = Object(f.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!i || !i.name) && !!e.moderatingSubreddits[i.name],
@@ -703,7 +703,7 @@
 			}));
 			const E = (e, t) => {
 				const s = Object(p.n)(e, t),
-					i = Object(f.I)(e, t);
+					i = Object(f.H)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!i || !i.name) && !!e.moderatingSubreddits[i.name],
@@ -729,7 +729,7 @@
 				}
 			}));
 			var y = Object(a.b)(() => Object(n.c)({
-					subreddit: f.R
+					subreddit: f.Q
 				}))(e => r.a.createElement(b, {
 					className: e.className,
 					type: "communityTools",
@@ -841,7 +841,7 @@
 				}
 			}));
 			var _ = Object(a.b)(() => Object(n.c)({
-				subreddit: f.R
+				subreddit: f.Q
 			}))(e => r.a.createElement(b, {
 				className: e.className,
 				type: "sidebar",
@@ -854,7 +854,7 @@
 				}
 			}));
 			var I = Object(a.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(f.L)(e, {
+				subredditOrProfile: (e, t) => Object(f.K)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(b, {
@@ -873,7 +873,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(f.R)(e, {
+					return s ? Object(f.Q)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -999,9 +999,9 @@
 				G = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
 				Y = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				J = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				Z = s.n(J),
-				Q = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				$ = s.n(Q);
+				Q = s.n(J),
+				Z = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				$ = s.n(Z);
 			const {
 				fbt: q
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), X = Object(o.a)(k.a, {
@@ -1199,9 +1199,9 @@
 					} = this.props, t = e === y.g.Classic ? this.renderClassicContent() : e === y.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return r.a.createElement("div", {
 						className: Object(c.a)($.a.container, {
-							[Z.a.largeAndMediumPostStyles]: e === y.g.Large || e === y.g.Medium,
-							[Z.a.classicPostStyles]: e === y.g.Classic,
-							[Z.a.compactPostStyles]: e === y.g.Compact,
+							[Q.a.largeAndMediumPostStyles]: e === y.g.Large || e === y.g.Medium,
+							[Q.a.classicPostStyles]: e === y.g.Classic,
+							[Q.a.compactPostStyles]: e === y.g.Compact,
 							[$.a.large]: e === y.g.Large || e === y.g.Medium,
 							[$.a.classic]: e === y.g.Classic,
 							[$.a.compact]: e === y.g.Compact
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.d5631e112a32e2824622.js.map
+//# sourceMappingURL=RpanListingUnit.2592357f400aabd7332b.js.map

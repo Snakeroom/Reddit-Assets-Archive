@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d456ce5b2255cc48feb0.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.62f195ec02b169857b6b.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -160,7 +160,7 @@
 				x = Object(r.a)(a.s),
 				y = Object(r.a)(a.q),
 				f = (e, t, s) => async (n, r, o) => {
-					const a = Object(u.A)(r(), {
+					const a = Object(u.z)(r(), {
 						subredditName: e
 					});
 					if (a) return v(a, t, s)(n, r, o)
@@ -822,7 +822,7 @@
 						return !!Object(S.r)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const s = Object(Z.I)(e, {
+						const s = Object(Z.H)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -4816,9 +4816,9 @@
 			const ze = Object(_.t)(),
 				Ke = Object(a.c)({
 					hideNSFWPref: He.z,
-					subredditOrProfile: P.L,
-					subredditOrProfileAboutInfo: P.H,
-					userIsSubscriber: P.cb
+					subredditOrProfile: P.K,
+					subredditOrProfileAboutInfo: P.G,
+					userIsSubscriber: P.bb
 				}),
 				Ge = Object(o.b)(Ke);
 			var Je = ze(Ge(e => {
@@ -5503,7 +5503,7 @@
 					url: _.X
 				}),
 				Ls = Object(a.c)({
-					subreddit: P.A,
+					subreddit: P.z,
 					shouldSeeNSFW: He.V
 				}),
 				Ms = Object(o.b)(Ls),
@@ -5667,7 +5667,7 @@
 				Ys = Object(a.c)({
 					fromSubreddit: (e, t) => {
 						const s = Be(e, t);
-						return s ? Object(P.A)(e, {
+						return s ? Object(P.z)(e, {
 							subredditName: s
 						}) : null
 					},
@@ -5858,7 +5858,7 @@
 			const Ln = Object(a.c)({
 					comment: (e, t) => Object(In.n)(e, t),
 					flair: In.e,
-					subreddit: P.I
+					subreddit: P.H
 				}),
 				Mn = Object(o.b)(Ln),
 				Rn = Object(dn.b)(e => ({
@@ -6052,7 +6052,7 @@
 				post: (e, t) => ir(e, t.searchDiscoveryUnit.postOrder),
 				subredditOrProfile: Object(dn.a)((e, t) => {
 					const s = ir(e, t.searchDiscoveryUnit.postOrder);
-					if (s) return Object(P.L)(e, {
+					if (s) return Object(P.K)(e, {
 						identifier: s.belongsTo
 					})
 				})
@@ -6775,13 +6775,13 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(R.F)(e, s)
+					return Object(R.E)(e, s)
 				},
 				postFlairWidgets: (e, t) => {
 					let {
 						listingName: s
 					} = t;
-					const n = Object(R.F)(e, s);
+					const n = Object(R.E)(e, s);
 					return Object(A.g)(e, {
 						subredditId: n
 					})
@@ -8054,7 +8054,7 @@
 					url: e => Object(h.X)(e)
 				}),
 				S = Object(i.c)({
-					subredditId: (e, t) => Object(O.F)(e, t.subredditName)
+					subredditId: (e, t) => Object(O.E)(e, t.subredditName)
 				}),
 				w = Object(a.b)(S),
 				I = l.a.div("WidgetContent", E.a),
@@ -8497,7 +8497,7 @@
 						} = t;
 						return Object(g.J)(e, s, n, r)
 					}),
-					subredditsById: v.Y,
+					subredditsById: v.X,
 					viewportDataLoaded: O.a,
 					pageReferrer: p.Q,
 					postListPlaceholderComponent: () => h.a,
@@ -8545,7 +8545,7 @@
 				o = s("./src/reddit/actions/subscription/index.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: a.cb
+				userIsSubscriber: a.bb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -9601,7 +9601,7 @@
 					headerContent: I.a,
 					isInFollowExperiment: S.a,
 					origin: w.l,
-					subreddit: (e, t) => Object(N.A)(e, {
+					subreddit: (e, t) => Object(N.z)(e, {
 						subredditName: t.match.params.subredditName
 					}),
 					viewTreatment: I.h
@@ -9719,4 +9719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.d456ce5b2255cc48feb0.js.map
+//# sourceMappingURL=SearchResults.62f195ec02b169857b6b.js.map

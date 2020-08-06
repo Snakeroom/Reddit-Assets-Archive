@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.4e6e6c0b8e064c1dbec8.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.104a800f1bfff313d446.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -1398,7 +1398,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(g.R)(e, {
+						return Object(g.Q)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					}
@@ -2011,7 +2011,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(V.R)(e, {
+						return Object(V.Q)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					},
@@ -4051,4 +4051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.4e6e6c0b8e064c1dbec8.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.104a800f1bfff313d446.js.map

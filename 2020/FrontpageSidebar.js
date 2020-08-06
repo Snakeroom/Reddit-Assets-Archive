@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.16076f8ec86231ff8fc6.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.09875c3c1e467bcfc47f.js
+// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -226,11 +226,11 @@
 				}
 			}
 			var X = Z(H),
-				G = n("./src/reddit/selectors/posts.ts");
-			const K = Object(c.c)({
-				recentPosts: G.V
+				K = n("./src/reddit/selectors/posts.ts");
+			const G = Object(c.c)({
+				recentPosts: K.V
 			});
-			var Y = Object(d.b)(K, (e, t) => ({
+			var Y = Object(d.b)(G, (e, t) => ({
 					openLightbox: t => () => e(Object(U.a)(t.permalink))
 				}))(e => {
 					let {
@@ -286,7 +286,7 @@
 					isInLocalCommunitiesExperiment: ce.a,
 					localCommunitiesVariant: ce.b,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					trendingSubredditIds: $.ab,
+					trendingSubredditIds: $.Z,
 					currentUser: me.i,
 					frontpageLinks: le.b,
 					isOver18: me.V
@@ -398,7 +398,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(g.L)(e, {
+						subredditOrProfile: Object(g.K)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -1038,4 +1038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.16076f8ec86231ff8fc6.js.map
+//# sourceMappingURL=FrontpageSidebar.09875c3c1e467bcfc47f.js.map
