@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.0df621abad94d1eee89c.js
-// Retrieved at 8/3/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2da2fe69f9c0268d4f94.js
+// Retrieved at 8/6/2020, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -57,32 +57,32 @@
 				m = t("./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts"),
 				p = t("./src/reddit/models/Gold/Award.ts"),
 				u = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				h = t("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const g = Object(r.a)(h.p),
-				b = Object(r.a)(h.d),
-				P = Object(r.a)(h.q),
+				g = t("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const h = Object(r.a)(g.p),
+				b = Object(r.a)(g.d),
+				P = Object(r.a)(g.q),
 				C = (e, a, t) => async e => {
 					e(P({
 						thingId: a
-					})), e(g({
+					})), e(h({
 						correlationId: t
 					}))
 				}, y = (e, a) => async (r, c, i) => {
 					let {
-						apiContext: h
+						apiContext: g
 					} = i;
-					const g = c(),
+					const h = c(),
 						P = Object(l.c)(l.a.GoldPayment);
 					let C, y;
 					r(Object(o.stripeTokenPending)());
-					const k = Object(u.v)(g);
-					if (k || (C = await r(Object(o.validateAndCreateStripeToken)(e)), y = Object(u.s)(g), C)) try {
+					const k = Object(u.v)(h);
+					if (k || (C = await r(Object(o.validateAndCreateStripeToken)(e)), y = Object(u.s)(h), C)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: c,
 							message: i,
 							selectedAward: l
-						} = g.gild;
+						} = h.gild;
 						if (!e || !l.id) return void r(Object(o.stripeApiError)(n.fbt._("Gilding unknown thing", null, {
 							hk: "Qd6mo"
 						})));
@@ -97,7 +97,7 @@
 								message: i
 							},
 							E = await Object(d.f)({
-								context: h(),
+								context: g(),
 								correlationId: P,
 								gildParams: x,
 								isOldReddit: a,
@@ -172,15 +172,15 @@
 					let {
 						apiContext: u
 					} = d;
-					const h = r(),
-						g = Object(l.c)(l.a.GoldPayment);
+					const g = r(),
+						h = Object(l.c)(l.a.GoldPayment);
 					try {
 						const {
 							gildModalThingId: r,
 							isAnonymous: c,
 							message: d,
 							selectedAward: l
-						} = h.gild;
+						} = g.gild;
 						if (!r || !l) return void a(Object(o.paypalApiError)(n.fbt._("Gilding unknown post or comment", null, {
 							hk: "4DkIS3"
 						})));
@@ -192,7 +192,7 @@
 								thingId: r,
 								message: d || "",
 								isAnonymous: c,
-								correlationId: g
+								correlationId: h
 							});
 						if (C.error) {
 							const e = Object(s.a)(C.error);
@@ -276,8 +276,8 @@
 				m = t("./src/reddit/helpers/trackers/goldPayment.ts"),
 				p = t("./src/reddit/icons/fonts/Coin/index.tsx"),
 				u = t("./src/reddit/components/CoinPurchaseModal/index.m.less"),
-				h = t.n(u);
-			class g extends r.a.PureComponent {
+				g = t.n(u);
+			class h extends r.a.PureComponent {
 				componentDidMount() {
 					const {
 						gildThingId: e,
@@ -291,32 +291,32 @@
 							hk: "JMSWS"
 						});
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: h.a.paymentCompleteHeader,
+						className: g.a.paymentCompleteHeader,
 						style: {
 							backgroundImage: 'url("'.concat(c.a.assetPath, '/img/gold/coins-hero.jpg")')
 						}
 					}, r.a.createElement(p.a, {
-						className: h.a.coinIcon
+						className: g.a.coinIcon
 					}), r.a.createElement("div", {
-						className: h.a.paymentCompleteTitleMain
+						className: g.a.paymentCompleteTitleMain
 					}, e.isGild ? n.fbt._("Thanks for purchasing an Award, {username}", [n.fbt._param("username", e.userName)], {
 						hk: "1VcYkx"
 					}) : n.fbt._("Thanks for purchasing Coins, {username}", [n.fbt._param("username", e.userName)], {
 						hk: "3m40W1"
 					})), r.a.createElement("div", {
-						className: h.a.paymentCompleteTitleDescription
+						className: g.a.paymentCompleteTitleDescription
 					}, a), r.a.createElement("button", {
-						className: h.a.closeButton,
+						className: g.a.closeButton,
 						onClick: e.onCloseClick
 					}, r.a.createElement(d.b, {
-						className: h.a.closeIcon,
+						className: g.a.closeIcon,
 						"data-redditstyle": !0
 					}))), r.a.createElement(i.a, {
 						onCloseClick: e.onCloseClick
 					}))
 				}
 			}
-			a.a = Object(l.c)(g)
+			a.a = Object(l.c)(h)
 		},
 		"./src/reddit/components/CoinPurchaseModal/SelectPaymentPage.tsx": function(e, a, t) {
 			"use strict";
@@ -331,8 +331,8 @@
 				m = t("./src/reddit/helpers/createEmojiText/index.tsx"),
 				p = t("./src/lib/classNames/index.ts"),
 				u = t("./src/reddit/components/CoinBalance/index.tsx"),
-				h = t("./src/reddit/components/TrackingHelper/index.tsx"),
-				g = t("./src/reddit/controls/Button/index.tsx"),
+				g = t("./src/reddit/components/TrackingHelper/index.tsx"),
+				h = t("./src/reddit/controls/Button/index.tsx"),
 				b = t("./src/reddit/helpers/trackers/goldPayment.ts"),
 				P = t("./node_modules/react-dom/index.js"),
 				C = t.n(P),
@@ -440,7 +440,7 @@
 					}) : n && r.a.createElement(N, {
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						coinPackage: n
-					}) : null, c === i.wb && r.a.createElement(g.f, {
+					}) : null, c === i.wb && r.a.createElement(h.f, {
 						className: T.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: o || s,
@@ -450,7 +450,7 @@
 					})))
 				}
 			}
-			var B = Object(c.injectStripe)(Object(h.c)(A)),
+			var B = Object(c.injectStripe)(Object(g.c)(A)),
 				S = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				F = t("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
@@ -621,8 +621,8 @@
 				m = t("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				p = t("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				u = t("./src/reddit/actions/toaster.ts"),
-				h = t("./src/reddit/components/TrackingHelper/index.tsx"),
-				g = t("./src/reddit/constants/colors.ts"),
+				g = t("./src/reddit/components/TrackingHelper/index.tsx"),
+				h = t("./src/reddit/constants/colors.ts"),
 				b = t("./src/reddit/helpers/correlationIdTracker.ts"),
 				P = t("./src/reddit/helpers/trackers/goldPayment.ts"),
 				C = t("./src/reddit/models/Toast/index.ts"),
@@ -647,7 +647,7 @@
 						onClickClose: t
 					} = e;
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
-						className: M.a.coinPurchaseGildHeader
+						className: M.a.purchaseGildHeader
 					}, s.a.createElement("div", {
 						className: M.a.awardTitle
 					}, T._("Give the {award name} Award", [T._param("award name", a.name)], {
@@ -662,7 +662,7 @@
 						className: Object(f.a)(M.a.closeIcon, M.a.awardPurchase),
 						"data-redditstyle": !0
 					}))), s.a.createElement("div", {
-						className: Object(f.a)(M.a.coinPurchaseBody, M.a.loaderContainer)
+						className: Object(f.a)(M.a.purchaseBody, M.a.loaderContainer)
 					}, s.a.createElement(O.a, {
 						sizePx: 100
 					})))
@@ -701,6 +701,7 @@
 					purchaseCatalogError: x.f,
 					purchaseCatalogPending: x.g,
 					purchasePackageId: E.q,
+					recommendedPackages: x.i,
 					userName: e => {
 						const a = Object(v.i)(e);
 						return "u/".concat(Object(y.e)(a))
@@ -778,24 +779,25 @@
 						paypalErrorMessage: m,
 						purchaseCatalogError: p,
 						purchaseCatalogPending: u,
-						purchasePackageId: h,
-						savedCardsPending: g,
-						selectedAward: b,
-						selectedPayment: P,
-						stripe: C,
-						stripeErrorMessage: y,
-						stripeTokenPending: k,
-						userName: j
+						purchasePackageId: g,
+						recommendedPackages: h,
+						savedCardsPending: b,
+						selectedAward: P,
+						selectedPayment: C,
+						stripe: y,
+						stripeErrorMessage: k,
+						stripeTokenPending: j,
+						userName: x
 					} = this.props;
 					if (p) return i(p), l(), null;
-					const x = !!r,
-						E = [...t, ...n].filter(e => e.mobileId === h)[0];
+					const E = !!r,
+						w = [...t, ...n, ...h].filter(e => e.mobileId === g)[0];
 					return "paymentCompleted" === e ? s.a.createElement("div", null, s.a.createElement(A.a, {
-						isGild: x,
+						isGild: E,
 						onCloseClick: l,
-						userName: j
-					})) : u || !E ? s.a.createElement("div", null, s.a.createElement(I, {
-						award: b,
+						userName: x
+					})) : u || !w ? s.a.createElement("div", null, s.a.createElement(I, {
+						award: P,
 						onClickClose: l
 					})) : s.a.createElement("div", null, "selectPayment" === e && s.a.createElement(B.a, {
 						coinBalance: a,
@@ -805,19 +807,19 @@
 						onCompletePurchaseClick: o,
 						onPaymentSelected: d,
 						paypalErrorMessage: m,
-						purchasePackage: E,
-						savedCardsPending: g,
-						selectedAward: b,
-						selectedPayment: P,
-						stripe: C,
-						stripeErrorMessage: y,
-						stripeTokenPending: k,
-						userName: j
+						purchasePackage: w,
+						savedCardsPending: b,
+						selectedAward: P,
+						selectedPayment: C,
+						stripe: y,
+						stripeErrorMessage: k,
+						stripeTokenPending: j,
+						userName: x
 					}))
 				}
 			}
 			const L = Object(o.a)(D);
-			a.default = G(Object(h.c)(class extends s.a.PureComponent {
+			a.default = G(Object(g.c)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -831,7 +833,7 @@
 				}
 				render() {
 					const e = Object.assign({
-						backgroundColor: g.a.overlayReportFlow
+						backgroundColor: h.a.overlayReportFlow
 					}, this.props.isIframed ? {
 						zIndex: i.a,
 						paddingTop: 12,
@@ -892,4 +894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinPurchaseModal.0df621abad94d1eee89c.js.map
+//# sourceMappingURL=CoinPurchaseModal.2da2fe69f9c0268d4f94.js.map
