@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.323fc297b1623f4eda9b.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.07461053b11fcc793cfa.js
+// Retrieved at 8/6/2020, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -597,7 +597,7 @@
 												originId: p
 											}));
 											else {
-												const t = d && d.originId ? 2500 : 5e3;
+												const t = d && d.originId ? 5e3 : 7e3;
 												setTimeout(() => i(L({
 													authorFlair: s,
 													comment: c,
@@ -17029,4 +17029,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.323fc297b1623f4eda9b.js.map
+//# sourceMappingURL=CollectionCommentsPage.07461053b11fcc793cfa.js.map
