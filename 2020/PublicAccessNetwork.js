@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6cbe282b05f919c3231f.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7dc0375d3f3419f52fe2.js
+// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -285,16 +285,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Db
+					experimentName: m.Fb
 				});
-				return Object(m.Cc)(t) ? void 0 : t
+				return Object(m.Ec)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Eb
+					experimentName: m.Gb
 				});
-				return Object(m.Cc)(t) ? void 0 : t
-			}, (e, t) => e === m.Fb.Enabled && t === m.Fb.Enabled);
+				return Object(m.Ec)(t) ? void 0 : t
+			}, (e, t) => e === m.Hb.Enabled && t === m.Hb.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "a3dc4d7-production"
+					SENTRY_RELEASE_VERSION: "1fe8102-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -1675,8 +1675,8 @@
 			var R, D = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				B = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
 				F = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
-				U = s("./src/reddit/actions/reportFlow.ts"),
-				H = s("./src/reddit/actions/video.ts"),
+				H = s("./src/reddit/actions/reportFlow.ts"),
+				U = s("./src/reddit/actions/video.ts"),
 				W = s("./src/reddit/components/HlsVideo/index.tsx"),
 				K = s("./src/reddit/components/ReportFlow/index.tsx"),
 				X = s("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -1790,8 +1790,8 @@
 				}, t)))
 			}
 			var Fe = s("./src/reddit/icons/svgs/Sparkle/index.tsx"),
-				Ue = s("./src/reddit/icons/svgs/Star/index.tsx"),
-				He = s("./src/reddit/icons/svgs/Star2/index.tsx"),
+				He = s("./src/reddit/icons/svgs/Star/index.tsx"),
+				Ue = s("./src/reddit/icons/svgs/Star2/index.tsx"),
 				We = s("./src/reddit/components/PublicAccessNetwork/Theater/AwardOverlay/AwardIconWithAttributionAnimation/TierAwardIcon/index.m.less"),
 				Ke = s.n(We);
 
@@ -1806,9 +1806,9 @@
 					className: Object(d.a)(r, Ke.a.tierAwardIcon)
 				}, i.a.createElement("div", {
 					className: Ke.a.awardIconContainer
-				}, n && i.a.createElement(i.a.Fragment, null, i.a.createElement(Ue.a, {
+				}, n && i.a.createElement(i.a.Fragment, null, i.a.createElement(He.a, {
 					className: Object(d.a)(Ke.a.backgroundAnimation, Ke.a.backgroundStar)
-				}), i.a.createElement(He.a, {
+				}), i.a.createElement(Ue.a, {
 					className: Object(d.a)(Ke.a.backgroundAnimation, Ke.a.backgroundStar, Ke.a.backgroundStar2)
 				})), i.a.createElement("img", {
 					src: t,
@@ -2268,8 +2268,8 @@
 					}
 				else s(Object(u.h)())
 			};
-			var Ut = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
-				Ht = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
+			var Ht = s("./src/reddit/icons/fonts/Downvote/index.tsx"),
+				Ut = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				Wt = s("./src/reddit/components/PublicAccessNetwork/Theater/VotePanel/index.m.less"),
 				Kt = s.n(Wt);
 			const Xt = Object(l.c)({
@@ -2327,7 +2327,7 @@
 						"aria-label": w.fbt._("Upvote", null, {
 							hk: "4ijw7j"
 						})
-					}, i.a.createElement(Ht.b, {
+					}, i.a.createElement(Ut.b, {
 						className: Kt.a.voteIcon
 					})), i.a.createElement("p", {
 						className: Kt.a.votesCounter
@@ -2352,7 +2352,7 @@
 						"aria-label": w.fbt._("Dpvote", null, {
 							hk: "1PcDeu"
 						})
-					}, i.a.createElement(Ut.b, {
+					}, i.a.createElement(Ht.b, {
 						className: Kt.a.voteIcon
 					})), i.a.createElement("p", {
 						className: Kt.a.votesCounter
@@ -2822,7 +2822,7 @@
 					"aria-label": xs._("Upvote", null, {
 						hk: "Ufd6r"
 					})
-				}, i.a.createElement(Ht.b, {
+				}, i.a.createElement(Ut.b, {
 					className: Es.a.voteIcon
 				}))
 			}, Bs = e => {
@@ -2839,7 +2839,7 @@
 					"aria-label": xs._("Downvote", null, {
 						hk: "ZDRA3"
 					})
-				}, i.a.createElement(Ut.b, {
+				}, i.a.createElement(Ht.b, {
 					className: Es.a.voteIcon
 				}))
 			}, Fs = e => {
@@ -2849,25 +2849,25 @@
 				return i.a.createElement("div", {
 					className: Es.a.score
 				}, Object(Rt.b)(t))
-			}, Us = e => {
+			}, Hs = e => {
 				let {
 					children: t
 				} = e;
 				return i.a.createElement("div", {
 					className: Es.a.prompt
 				}, t)
-			}, Hs = () => i.a.createElement(Us, null, xs._("Connection issues", null, {
+			}, Us = () => i.a.createElement(Hs, null, xs._("Connection issues", null, {
 				hk: "hIrnJ"
-			})), Ws = () => i.a.createElement(Us, null, xs._("Tuning...", null, {
+			})), Ws = () => i.a.createElement(Hs, null, xs._("Tuning...", null, {
 				hk: "3dG7Ks"
-			})), Ks = () => i.a.createElement(Us, null, xs._("Broadcast paused", null, {
+			})), Ks = () => i.a.createElement(Hs, null, xs._("Broadcast paused", null, {
 				hk: "jxvku"
 			})), Xs = e => {
 				let {
 					onClickReplay: t,
 					onClickShare: s
 				} = e;
-				return i.a.createElement(Us, null, i.a.createElement("div", {
+				return i.a.createElement(Hs, null, i.a.createElement("div", {
 					className: Es.a.promptButtonSet
 				}, i.a.createElement(hs, {
 					onClick: t
@@ -2878,7 +2878,7 @@
 				let {
 					onClickAward: t
 				} = e;
-				return i.a.createElement(Us, null, i.a.createElement("div", {
+				return i.a.createElement(Hs, null, i.a.createElement("div", {
 					className: Es.a.awardPromptWrapper
 				}, i.a.createElement("div", {
 					className: Es.a.awardPromptLabel
@@ -3291,7 +3291,7 @@
 						showStreamEndedPrompt: v,
 						toggleMute: g
 					} = this.props;
-					if (b || c && o || t && r || !t && a) return i.a.createElement(Hs, null);
+					if (b || c && o || t && r || !t && a) return i.a.createElement(Us, null);
 					if (c) return i.a.createElement("div", {
 						className: ls.a.intro
 					}, i.a.createElement(ms, {
@@ -3698,7 +3698,7 @@
 						openRegisterModal: () => e(Object(u.i)())
 					}
 				})(Br),
-				Ur = e => i.a.createElement("svg", {
+				Hr = e => i.a.createElement("svg", {
 					className: e.className,
 					onClick: e.onClick,
 					viewBox: "0 0 20 20",
@@ -3706,7 +3706,7 @@
 				}, i.a.createElement("path", {
 					d: "M16,9H6.41l4.29-4.29A1,1,0,0,0,9.29,3.29l-6,6a1,1,0,0,0,0,1.41l6,6a1,1,0,0,0,1.41-1.41L6.41,11H16a1,1,0,0,0,0-2Z"
 				})),
-				Hr = e => i.a.createElement("svg", {
+				Ur = e => i.a.createElement("svg", {
 					className: e.className,
 					onClick: e.onClick,
 					viewBox: "0 0 20 20",
@@ -3739,9 +3739,9 @@
 					style: r ? {
 						backgroundImage: "url(".concat(r.stream.thumbnail, ")")
 					} : {}
-				}), t ? i.a.createElement(Hr, {
+				}), t ? i.a.createElement(Ur, {
 					className: Kr.a.arrowIcon
-				}) : i.a.createElement(Ur, {
+				}) : i.a.createElement(Hr, {
 					className: Kr.a.arrowIcon
 				})))
 			};
@@ -3791,7 +3791,7 @@
 					subscribeConfig: () => e(D.a.subscribeConfig(t.related || t.subreddit)),
 					subscribeStreams: () => e(D.a.subscribeStreams(t.related || t.subreddit)),
 					onRecommendedViewerSubredditsSubscribe: () => e(D.a.subscribeRecommendedViewerSubreddits()),
-					onReportModalRequested: (t, s) => e(Object(U.j)(t, s)),
+					onReportModalRequested: (t, s) => e(Object(H.j)(t, s)),
 					onStatsSubscribe: t => e(D.a.subscribeStats(t)),
 					onHeartbeatSubscribe: t => e(D.a.subscribeHeartbeat(t)),
 					receiveHlsStreamEnded: t => e(Object(p.a)(t)),
@@ -3804,7 +3804,7 @@
 					setMuteSettings: t => e(Object(F.b)({
 						isMuted: t
 					})),
-					setMutedInFeed: t => e(H.P(t)),
+					setMutedInFeed: t => e(U.P(t)),
 					setVideoVolume: t => e(k.h(t)),
 					updateVideoTimestamp: (t, s) => e(V({
 						streamId: t,
@@ -4460,10 +4460,10 @@
 			const n = e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.pb
-				}) === r.ub.Enabled
+					experimentName: r.rb
+				}) === r.wb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.6cbe282b05f919c3231f.js.map
+//# sourceMappingURL=PublicAccessNetwork.7dc0375d3f3419f52fe2.js.map

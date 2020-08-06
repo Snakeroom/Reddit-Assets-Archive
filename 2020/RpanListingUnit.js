@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.241ea868e497979e4a15.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.06cd9cb19f3b7e5defc7.js
+// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const m = Object(n.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Db
+					experimentName: u.Fb
 				});
-				return Object(u.Cc)(t) ? void 0 : t
+				return Object(u.Ec)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Eb
+					experimentName: u.Gb
 				});
-				return Object(u.Cc)(t) ? void 0 : t
-			}, (e, t) => e === u.Fb.Enabled && t === u.Fb.Enabled);
+				return Object(u.Ec)(t) ? void 0 : t
+			}, (e, t) => e === u.Hb.Enabled && t === u.Hb.Enabled);
 			var b = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				R = Object({
-					SENTRY_RELEASE_VERSION: "a3dc4d7-production"
+					SENTRY_RELEASE_VERSION: "1fe8102-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -983,8 +983,8 @@
 				j = s("./src/telemetry/index.ts"),
 				N = s("./node_modules/uuid/v4.js"),
 				A = s.n(N),
-				D = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				M = s("./src/reddit/components/Flatlist/index.tsx"),
+				M = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
+				D = s("./src/reddit/components/Flatlist/index.tsx"),
 				L = s("./src/reddit/components/Flatlist/constants.ts"),
 				P = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				k = s("./src/reddit/components/HlsVideo/index.tsx"),
@@ -995,8 +995,8 @@
 				W = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				B = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				K = s("./src/reddit/controls/InternalLink/index.tsx"),
-				z = s("./src/reddit/controls/Score/index.tsx"),
-				G = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
+				G = s("./src/reddit/controls/Score/index.tsx"),
+				z = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
 				Y = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				J = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				Q = s.n(J),
@@ -1258,7 +1258,7 @@
 						className: $.a.flatListContainer
 					}, r.a.createElement(ae, {
 						onClick: this.onHeaderClicked
-					}), r.a.createElement(M.a, {
+					}), r.a.createElement(D.a, {
 						className: $.a.flatlistSeparator
 					}), r.a.createElement("div", null, r.a.createElement(ne, {
 						onClick: this.onHideUnitClicked
@@ -1285,7 +1285,7 @@
 				renderExpandIcon() {
 					return r.a.createElement("div", {
 						className: $.a.bigExpando
-					}, r.a.createElement(G.a, {
+					}, r.a.createElement(z.a, {
 						className: $.a.bigExpandoIcon
 					}))
 				}
@@ -1437,12 +1437,12 @@
 					return Math.round(1e3 * e)
 				}
 			}
-			const re = e => r.a.createElement(D.a, {
+			const re = e => r.a.createElement(M.a, {
 					className: Object(c.a)({
 						[$.a.verticalVotes]: e.isVertical,
 						[$.a.horizontalVotes]: !e.isVertical
 					})
-				}, r.a.createElement(z.a, {
+				}, r.a.createElement(G.a, {
 					className: $.a.score,
 					isScoreHidden: !0,
 					score: 0,
@@ -1455,7 +1455,7 @@
 					return r.a.createElement("button", {
 						className: $.a.expandoButton,
 						onClick: t
-					}, r.a.createElement(G.a, {
+					}, r.a.createElement(z.a, {
 						className: $.a.expandoIcon
 					}))
 				},
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.241ea868e497979e4a15.js.map
+//# sourceMappingURL=RpanListingUnit.06cd9cb19f3b7e5defc7.js.map

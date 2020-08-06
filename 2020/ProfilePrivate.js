@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.8be9e2d3cd23761db46c.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.7fc307d2be70e68e5235.js
+// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -273,7 +273,8 @@
 						deletedBy: null,
 						sendReplies: !0,
 						modReports: [],
-						userReports: []
+						userReports: [],
+						isSystem: !1
 					});
 					return e.postInfo && e.postInfo.__typename === h.f.SubredditPost ? M.subredditId = e.postInfo.subreddit.id : e.postInfo && e.postInfo.__typename === h.f.ProfilePost && (M.subredditId = e.postInfo.profile.id), M
 				},
@@ -7766,4 +7767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.8be9e2d3cd23761db46c.js.map
+//# sourceMappingURL=ProfilePrivate.7fc307d2be70e68e5235.js.map

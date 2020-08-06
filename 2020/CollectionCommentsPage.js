@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4ee8cd6b23819f69e598.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.40f03a093135c198ebd7.js
+// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -321,9 +321,9 @@
 		"./src/reddit/actions/comment/websocket/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return B
-			})), s.d(t, "b", (function() {
 				return D
+			})), s.d(t, "b", (function() {
+				return W
 			}));
 			var n = s("./src/lib/constants/index.ts"),
 				o = s("./src/lib/makeActionCreator/index.ts"),
@@ -338,12 +338,13 @@
 				u = s("./src/reddit/models/Flair/index.ts"),
 				h = s("./src/reddit/models/PostCreationForm/index.ts"),
 				b = s("./src/reddit/models/Vote/index.ts");
-			const x = e => {
+			const x = (e, t) => {
 					if (void 0 !== e.author && void 0 !== e.author_fullname && void 0 !== e.attribs && void 0 !== e.created_utc && void 0 !== e.name && void 0 !== e.subreddit_id && void 0 !== e.body && void 0 !== e.context && void 0 !== e.link_id && void 0 !== e.score) {
-						const t = f(e.attribs);
-						return {
+						const s = f(e.attribs),
+							n = e.associated_award ? Object(m.b)(e.associated_award) : void 0;
+						return Object.assign({
 							allAwardings: [],
-							associatedAward: e.associated_award ? Object(m.b)(e.associated_award) : void 0,
+							associatedAward: n,
 							author: e.author,
 							authorId: e.author_fullname,
 							body: e.body_html,
@@ -351,12 +352,12 @@
 							collapsed: Boolean(e.collapsed),
 							collapsedBecauseCrowdControl: Boolean(e.collapsed_in_crowd_control),
 							created: e.created_utc,
-							distinguishType: g(t),
+							distinguishType: g(s),
 							id: e.name,
-							isAdmin: t === p.c.Admin,
+							isAdmin: s === p.c.Admin,
 							isGildable: !1 !== e.can_gild,
-							isOp: t === p.c.Submitter,
-							isMod: t === p.c.Moderator,
+							isOp: s === p.c.Submitter,
+							isMod: s === p.c.Moderator,
 							markdown: e.body,
 							media: {
 								type: "rtjson",
@@ -377,6 +378,7 @@
 							score: e.score,
 							subredditId: e.subreddit_id,
 							treatmentTags: e.treatment_tags,
+							isSystem: !1,
 							approvedAtUTC: null,
 							approvedBy: null,
 							bannedAtUTC: null,
@@ -403,7 +405,7 @@
 							userReports: [],
 							userReportsDismissed: [],
 							voteState: b.a.notVoted
-						}
+						}, t || {})
 					}
 				},
 				g = e => {
@@ -471,7 +473,7 @@
 				y = e => e;
 			var E;
 			! function(e) {
-				e.NEW_COMMENT = "new_comment", e.UPDATE_COMMENT = "update_comment", e.UPDATE_COMMENT_SCORE = "update_comment_score", e.DELETE_COMMENT = "delete_comment", e.REMOVE_COMMENT = "remove_comment"
+				e.NEW_COMMENT = "new_comment", e.UPDATE_COMMENT = "update_comment", e.UPDATE_COMMENT_SCORE = "update_comment_score", e.DELETE_COMMENT = "delete_comment", e.REMOVE_COMMENT = "remove_comment", e.USER_JOIN = "join_system_message"
 			}(E || (E = {}));
 			const _ = {
 					backoffTime: 2e3,
@@ -546,8 +548,9 @@
 			const L = Object(o.a)(M.b),
 				R = Object(o.a)(M.c),
 				A = Object(o.a)(M.a),
-				F = {},
-				B = (e, t, s, o) => async (i, a) => {
+				F = Object(o.a)(M.d),
+				B = {},
+				D = (e, t, s, o) => async (i, a) => {
 					(e => {
 						const {
 							cb: t,
@@ -568,7 +571,7 @@
 										p = Object(T.n)(l, {
 											commentId: d
 										}),
-										u = !(!d || !F[d]);
+										u = !(!d || !B[d]);
 									if (c && !u) {
 										const s = v(0, o, t.payload),
 											n = t.payload.total_comment_count;
@@ -663,7 +666,7 @@
 										});
 									n && !n.isDeleted ? i(A({
 										id: e
-									})) : F[e] = E.DELETE_COMMENT;
+									})) : B[e] = E.DELETE_COMMENT;
 									break
 								}
 								case E.REMOVE_COMMENT: {
@@ -677,15 +680,27 @@
 										d = !!e && !!Object(N.i)(n, {
 											postId: e
 										});
-									!o || o.isRemoved && o.isDeleted || r || d ? F[s] = E.REMOVE_COMMENT : i(A({
+									!o || o.isRemoved && o.isDeleted || r || d ? B[s] = E.REMOVE_COMMENT : i(A({
 										id: s
+									}));
+									break
+								}
+								case E.USER_JOIN: {
+									const s = x(t.payload, {
+											isSystem: !0
+										}),
+										n = !0;
+									s && i(F({
+										comment: s,
+										commentsPageKey: e,
+										isChatSort: n
 									}));
 									break
 								}
 							}
 						}
 					})
-				}, D = (e, t) => async () => {
+				}, W = (e, t) => async () => {
 					k(0, t)
 				}
 		},
@@ -3820,9 +3835,9 @@
 			const wt = e => {
 				const t = Object(jt.c)(e, {
 					experimentEligibilitySelector: jt.a,
-					experimentName: kt.cb
+					experimentName: kt.eb
 				});
-				return !(!t || Object(kt.Cc)(t))
+				return !(!t || Object(kt.Ec)(t))
 			};
 			var Pt = s("./src/reddit/selectors/gold/powerups.ts"),
 				It = s("./src/reddit/selectors/userPrefs.ts"),
@@ -3871,9 +3886,9 @@
 					highlightAnimationEnabled: e => (e => {
 						const t = Object(jt.c)(e, {
 							experimentEligibilitySelector: jt.a,
-							experimentName: kt.ab
+							experimentName: kt.cb
 						});
-						return !(!t || Object(kt.Cc)(t))
+						return !(!t || Object(kt.Ec)(t))
 					})(e) && !Object(It.c)(e),
 					highlightTagsEnabled: wt,
 					isEditing: C.z,
@@ -10622,7 +10637,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.Cc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.Ec)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -10652,7 +10667,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Cc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Ec)(o), p = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -16967,8 +16982,8 @@
 			const a = e => o.e[Object(r.N)(e, {})] === o.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.D
-				}) === n.M.Treatment
+					experimentName: n.E
+				}) === n.O.Treatment
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
 			"use strict";
@@ -16995,9 +17010,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.F
+					experimentName: n.H
 				});
-				return !!t && !Object(n.Cc)(t)
+				return !!t && !Object(n.Ec)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -17010,9 +17025,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.X
+					experimentName: n.Z
 				});
-				return !(!t || Object(n.Cc)(t))
+				return !(!t || Object(n.Ec)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -17029,4 +17044,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.4ee8cd6b23819f69e598.js.map
+//# sourceMappingURL=CollectionCommentsPage.40f03a093135c198ebd7.js.map

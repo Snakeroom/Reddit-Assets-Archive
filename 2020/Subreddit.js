@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.cfe004a2b2af66bb97a1.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.cd367f19a057ef4dbd61.js
+// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -7767,9 +7767,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const i = e => s.W.Enabled === Object(r.c)(e, {
+			const i = e => s.Y.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: a.H,
-				experimentName: s.V
+				experimentName: s.X
 			})
 		},
 		"./src/reddit/selectors/experiments/snoovatar.ts": function(e, t, n) {
@@ -7779,11 +7779,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.lc.Enabled === Object(r.c)(e, {
+			const a = e => s.nc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.gc
+				experimentName: s.ic
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.cfe004a2b2af66bb97a1.js.map
+//# sourceMappingURL=Subreddit.cd367f19a057ef4dbd61.js.map

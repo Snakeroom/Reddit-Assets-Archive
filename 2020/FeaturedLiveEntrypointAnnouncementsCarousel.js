@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.416b3822e2cbb92e7478.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.4343ed2941793d93ac2b.js
+// Retrieved at 8/6/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -107,7 +107,7 @@
 									} = e;
 									return n === t.experimentName
 								});
-								if (n && Object(v.Cc)(n.variant)) return !1
+								if (n && Object(v.Ec)(n.variant)) return !1
 							}
 							return !((n[t.id] || 0) >= t.maxImpressionsCount)
 						})(c, e)).slice(0, 5),
@@ -127,7 +127,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var f = function(e, n) {
+			var E = function(e, n) {
 				var t = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && n.indexOf(s) < 0 && (t[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -136,7 +136,7 @@
 				}
 				return t
 			};
-			const E = o.a.memo(e => {
+			const f = o.a.memo(e => {
 					let {
 						announcement: n,
 						className: t,
@@ -168,7 +168,7 @@
 						announcement: n,
 						children: t,
 						to: s
-					} = e, a = f(e, ["announcement", "children", "to"]);
+					} = e, a = E(e, ["announcement", "children", "to"]);
 					const r = n.url.split("reddit.com");
 					return r.length > 1 ? o.a.createElement(c.a, g({
 						to: r[1]
@@ -280,7 +280,7 @@
 					className: j.a.ArrowPlaceholder
 				}), o.a.createElement("div", {
 					className: j.a.AnnouncementsWrapper
-				}, t.map((e, n) => o.a.createElement(E, {
+				}, t.map((e, n) => o.a.createElement(f, {
 					announcement: e,
 					className: Object(r.a)(j.a.Announcement, {
 						[j.a.isActive]: n === m,
@@ -337,4 +337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FeaturedLiveEntrypointAnnouncementsCarousel.416b3822e2cbb92e7478.js.map
+//# sourceMappingURL=FeaturedLiveEntrypointAnnouncementsCarousel.4343ed2941793d93ac2b.js.map
