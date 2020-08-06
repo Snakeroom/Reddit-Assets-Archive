@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.2d239cd07fee80084204.js
-// Retrieved at 8/6/2020, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.162df05e10db099cbe7e.js
+// Retrieved at 8/6/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -9982,12 +9982,13 @@
 		"./src/reddit/helpers/canRenderThumbnail.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return a
+				return r
 			}));
-			var n = s("./src/reddit/constants/thumbnails.ts");
+			var n = s("./src/reddit/constants/thumbnails.ts"),
+				a = s("./src/reddit/models/Media/index.ts");
 
-			function a(e) {
-				return !(!e.thumbnail || !e.thumbnail.url || e.thumbnail.url === n.a.SELF || e.thumbnail.url === n.a.NSFW)
+			function r(e) {
+				return !(!e.thumbnail || !e.thumbnail.url || e.thumbnail.url === n.a.SELF || e.thumbnail.url === n.a.NSFW || e.media && Object(a.F)(e.media))
 			}
 		},
 		"./src/reddit/helpers/categoryPickerWidget/index.ts": function(e, t, s) {
@@ -13648,4 +13649,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.2d239cd07fee80084204.js.map
+//# sourceMappingURL=Reddit.162df05e10db099cbe7e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.fc96cf07d85082ecdf5a.js
-// Retrieved at 8/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.20a5dad623f6324a16c8.js
+// Retrieved at 8/6/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -191,8 +191,8 @@
 				v = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				S = s("./src/reddit/components/PostContainer/index.tsx"),
 				E = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				k = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
-				j = s("./src/reddit/components/PostTitle/index.tsx"),
+				j = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
+				k = s("./src/reddit/components/PostTitle/index.tsx"),
 				w = s("./src/reddit/components/PostTopLine/index.tsx"),
 				I = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				N = s("./src/reddit/components/SourceLink/index.tsx"),
@@ -297,7 +297,7 @@
 					sendEvent: pe,
 					subredditOrProfile: ue,
 					toggleCheckbox: be
-				} = e, xe = ie ? void 0 : c, he = Object(R.a)(ee), ge = te && he, Pe = Object(A.a)(ee), ye = Object(F.a)(ee), Oe = Object(C.c)(ne), fe = !!q && !Object(T.Cc)(q), Ce = Object(M.a)(ne), ve = _ && !me && !fe, Se = ve && !!ne.source && !r, Ee = !(U && z || Z) && !D && (!_ || fe), ke = (!_ || fe) && !ne.isSponsored, je = o.a.createElement(S.a, {
+				} = e, xe = ie ? void 0 : c, he = Object(R.a)(ee), ge = te && he, Pe = Object(A.a)(ee), ye = Object(F.a)(ee), Oe = Object(C.c)(ne), fe = !!q && !Object(T.Cc)(q), Ce = Object(M.a)(ne), ve = _ && !me && !fe, Se = ve && !!ne.source && !r, Ee = !(U && z || Z) && !D && (!_ || fe), je = (!_ || fe) && !ne.isSponsored, ke = o.a.createElement(S.a, {
 					className: Object(a.a)($.a.container, s, X.a.largeAndMediumPostStyles, X.a.largeAndMediumActiveStyles, Object(W.a)(e), {
 						[X.a.mUseRedditTheme]: e.redditStyle || e["data-redditstyle"]
 					}),
@@ -307,7 +307,7 @@
 					onClick: se,
 					onPostContentClick: t,
 					eventFactory: i
-				}, o.a.createElement(k.a, {
+				}, o.a.createElement(j.a, {
 					model: ne,
 					handleVote: e.handleVote,
 					showBulkActionCheckbox: ce,
@@ -344,14 +344,14 @@
 					post: ne,
 					shouldShowSubscribeButton: !1,
 					showCornerOutboundLink: Se,
-					showSubreddit: ke,
+					showSubreddit: je,
 					showSubredditIcon: !0,
 					subredditOrProfile: ue
-				}), o.a.createElement(j.c, {
+				}), o.a.createElement(k.c, {
 					className: $.a.postTitle,
 					post: ne,
 					redditStyle: ie,
-					size: j.b.Large,
+					size: k.b.Large,
 					titleColor: xe && xe.postTitleColor,
 					isOverlay: G
 				}), V && !de && (ne.flair && ne.flair.length > 0 || e.isInCategoriesExperiment) && o.a.createElement(P.a, {
@@ -429,7 +429,7 @@
 						report: !1
 					})
 				}))));
-				return o.a.createElement(o.a.Fragment, null, je, K && !H && o.a.createElement(h.a, {
+				return o.a.createElement(o.a.Fragment, null, ke, K && !H && o.a.createElement(h.a, {
 					className: $.a.chain,
 					listingKey: Q,
 					listingName: Y,
@@ -589,8 +589,8 @@
 					iconClassName: v,
 					inSubredditOrProfile: S,
 					isCommentsPage: E,
-					isCompactPinnedPost: k,
-					isCurrentUserProfilePost: j,
+					isCompactPinnedPost: j,
+					isCurrentUserProfilePost: k,
 					isOverlay: w,
 					isTopicPage: I,
 					listingKey: N,
@@ -628,14 +628,14 @@
 					className: O.a.postBadges,
 					displayText: A ? A.displayText : null,
 					inSubredditOrProfile: S,
-					isCompactPinnedPost: k,
+					isCompactPinnedPost: j,
 					post: T,
 					tooltipType: w ? c.c.Lightbox : void 0
 				}), !F && o.a.createElement(i.a, {
 					isPostDetail: E,
 					thing: T,
 					tooltipType: w ? c.c.Lightbox : void 0
-				})), A && B && _ && !j && o.a.createElement(p.a, {
+				})), A && B && _ && !k && o.a.createElement(p.a, {
 					getEventFactory: e => Object(x.f)(T.id, e ? "unsubscribe" : "subscribe", "post", N, C),
 					identifier: {
 						name: A.name,
@@ -656,12 +656,13 @@
 		"./src/reddit/helpers/canRenderThumbnail.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return o
+				return n
 			}));
-			var r = s("./src/reddit/constants/thumbnails.ts");
+			var r = s("./src/reddit/constants/thumbnails.ts"),
+				o = s("./src/reddit/models/Media/index.ts");
 
-			function o(e) {
-				return !(!e.thumbnail || !e.thumbnail.url || e.thumbnail.url === r.a.SELF || e.thumbnail.url === r.a.NSFW)
+			function n(e) {
+				return !(!e.thumbnail || !e.thumbnail.url || e.thumbnail.url === r.a.SELF || e.thumbnail.url === r.a.NSFW || e.media && Object(o.F)(e.media))
 			}
 		},
 		"./src/reddit/helpers/styles/mixins/index.tsx": function(e, t, s) {
@@ -746,4 +747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-MediumPost.fc96cf07d85082ecdf5a.js.map
+//# sourceMappingURL=reddit-components-MediumPost.20a5dad623f6324a16c8.js.map
