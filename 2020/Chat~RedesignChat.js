@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.f1c562360da1bd336e02.js
-// Retrieved at 8/3/2020, 6:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.83a54243847e3bcd81f5.js
+// Retrieved at 8/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -26,9 +26,9 @@
 			})), n.d(t, "q", (function() {
 				return B
 			})), n.d(t, "g", (function() {
-				return R
-			})), n.d(t, "c", (function() {
 				return P
+			})), n.d(t, "c", (function() {
+				return R
 			})), n.d(t, "v", (function() {
 				return H
 			})), n.d(t, "w", (function() {
@@ -138,8 +138,8 @@
 				L = "CHANNEL__SELECT_BEGIN",
 				U = "CHANNEL__RESET_UNREAD_COUNT",
 				B = "CHANNEL__SELECT_END",
-				R = "CHANNEL__EXPAND_INVITE_LIST",
-				P = "CHANNEL__COLLAPSE_INVITE_LIST",
+				P = "CHANNEL__EXPAND_INVITE_LIST",
+				R = "CHANNEL__COLLAPSE_INVITE_LIST",
 				H = "CHANNEL__UPDATE_MODEL",
 				F = "CHANNEL__INVITED_UPDATE",
 				K = "CHANNEL__JOINED_UPDATE",
@@ -300,7 +300,7 @@
 						C = !(!a || !Object(I.O)(n, a));
 					if ((C || f) && h && !s) return void e(Object(c.b)(Object(j.channelAction)(h.channelId, d, O)));
 					const _ = !(!h || h.channelState !== p.b.JOINED);
-					if (h && _ && s && p.g.includes(s)) e(Object(c.b)(Object(j.channelUrl)(h.channelId, O)));
+					if (h && _ && s && p.i.includes(s)) e(Object(c.b)(Object(j.channelUrl)(h.channelId, O)));
 					else if (h && a) {
 						e(je({
 							channelId: a
@@ -425,7 +425,7 @@
 						return t(Ne(e))
 					}
 					return t(e ? we(e) : Te())
-				}, De = Object(r.a)(V), Le = Object(r.a)(q), Ue = Object(r.a)(z), Be = Object(r.a)(W), Re = Object(r.a)(J), Pe = Object(r.a)(Z), He = Object(r.a)(Y), Fe = () => async (e, t) => {
+				}, De = Object(r.a)(V), Le = Object(r.a)(q), Ue = Object(r.a)(z), Be = Object(r.a)(W), Pe = Object(r.a)(J), Re = Object(r.a)(Z), He = Object(r.a)(Y), Fe = () => async (e, t) => {
 					await Promise.all([e(We()), e(Object(o.r)()), e(Object(o.q)()), e(Object(o.p)()), e(Ge()), e(ze())]);
 					const n = t().channels.models;
 					await e(Ke(n)), e(He()), e(_e())
@@ -444,12 +444,12 @@
 					}
 				}, Ge = () => async (e, t) => {
 					e(De());
-					const n = await T.b.getExistingChannels(p.b.INVITED, p.f.NonSuper).catch(() => null);
+					const n = await T.b.getExistingChannels(p.b.INVITED, p.h.NonSuper).catch(() => null);
 					if (n) {
 						const {
 							hasMoreChannels: t
 						} = n, a = Object(C.e)(n.channels);
-						return e(Ke(a)), void e(Re({
+						return e(Ke(a)), void e(Pe({
 							channels: a,
 							hasMoreChannels: t
 						}))
@@ -457,14 +457,14 @@
 					e(Le()), Object(f.b)("Error fetching invited channels")
 				}, ze = () => async (e, t) => {
 					e(Ue());
-					const n = await T.b.getExistingChannels(p.b.JOINED, p.f.NonSuper).catch(t => {
+					const n = await T.b.getExistingChannels(p.b.JOINED, p.h.NonSuper).catch(t => {
 						Object(f.b)(t), e(Be())
 					});
 					if (n) {
 						const {
 							hasMoreChannels: a
 						} = n, s = Object(C.e)(n.channels), c = Object(I.r)(t());
-						return e(Pe({
+						return e(Re({
 							channels: s,
 							hasMoreChannels: a
 						})), void(a && c < b.a.InitChannels && e(ze()))
@@ -474,7 +474,7 @@
 					const n = t(),
 						a = Object(S.d)(n);
 					a && await T.b.addChannelModelByChannelId(a)
-				}, Ve = Object(r.a)(R), qe = Object(r.a)(P), Je = (Object(r.a)("CHANNEL__MESSAGES_LOADED"), Object(r.a)(ee)), Ze = (e, t) => async (n, a) => {
+				}, Ve = Object(r.a)(P), qe = Object(r.a)(R), Je = (Object(r.a)("CHANNEL__MESSAGES_LOADED"), Object(r.a)(ee)), Ze = (e, t) => async (n, a) => {
 					const s = a(),
 						c = Object(I.A)(s, "channelState");
 					T.b.leaveChannel().then(() => n(se(e, t))).then(() => n(we(c))).catch(e => Object(f.b)("Error leaving channels: ".concat(e.message)))
@@ -629,7 +629,7 @@
 			})), n.d(t, "h", (function() {
 				return B
 			})), n.d(t, "e", (function() {
-				return R
+				return P
 			})), n.d(t, "p", (function() {
 				return K
 			})), n.d(t, "m", (function() {
@@ -712,7 +712,7 @@
 						} = i.b;
 					if (!Object(O.f)(n)) return;
 					e(A());
-					const s = await f.b.getExistingChannels(a, i.f.Super).catch(() => null);
+					const s = await f.b.getExistingChannels(a, i.h.Super).catch(() => null);
 					if (s) {
 						const {
 							channels: n
@@ -726,7 +726,7 @@
 						}))), void(s.hasMoreChannels && e(L()))
 					}
 					e(M())
-				}, U = "SUBREDDIT_CHANNELS__FETCH_INVITED_FAILED", B = "SUBREDDIT_CHANNELS__FETCH_INVITED", R = "SUBREDDIT_CHANNELS__ADD_INVITED_COLLECTION", P = Object(s.a)(U), H = Object(s.a)(B), F = Object(s.a)(R), K = () => async (e, t) => {
+				}, U = "SUBREDDIT_CHANNELS__FETCH_INVITED_FAILED", B = "SUBREDDIT_CHANNELS__FETCH_INVITED", P = "SUBREDDIT_CHANNELS__ADD_INVITED_COLLECTION", R = Object(s.a)(U), H = Object(s.a)(B), F = Object(s.a)(P), K = () => async (e, t) => {
 					const {
 						user: {
 							account: n,
@@ -742,13 +742,13 @@
 					} = t();
 					if (!n || !a || s) return;
 					e(H());
-					const c = await f.b.getExistingChannels(i.b.INVITED, i.f.Super).catch(() => null);
+					const c = await f.b.getExistingChannels(i.b.INVITED, i.h.Super).catch(() => null);
 					if (c) {
 						const t = Object(b.c)(c.channels),
 							n = Object(m.c)(c.channels, i.b.INVITED);
 						return await e(E(t)), void e(F(n))
 					}
-					e(P())
+					e(R())
 				}, G = "SUBREDDIT_CHANNELS__UPDATE_INVITED", z = Object(s.a)(G), W = "SET__INVITED_SUBREDDIT_CHANNEL_TO_JOINED", V = Object(s.a)(W), q = (e, t) => async (n, s) => {
 					const c = s(),
 						{
@@ -926,7 +926,7 @@
 					messageIdList: c
 				})), t(m({
 					channelId: a
-				})), i.c.resetChannelMessageListQuery())
+				})), i.c.resetPreviousMessageListQuery())
 			}, d = "MESSAGE__REMOVE_MESSAGES_FROM_CURRENT_CHANNEL", u = Object(c.a)(d), h = "CHANNEL__RESET_HAS_MORE_MESSAGES", m = Object(c.a)(h)
 		},
 		"./src/chat/actions/message/index.ts": function(e, t, n) {
@@ -942,7 +942,7 @@
 			})), n.d(t, "l", (function() {
 				return B
 			})), n.d(t, "j", (function() {
-				return P
+				return R
 			})), n.d(t, "t", (function() {
 				return H
 			})), n.d(t, "h", (function() {
@@ -1030,7 +1030,7 @@
 							clientMessageId: r
 						})), a(Object(l.v)(t.messageId))
 					}).catch(() => {
-						r && (a(Object(l.z)(r)), a(R({
+						r && (a(Object(l.z)(r)), a(P({
 							clientMessageId: r,
 							toggle: !0
 						})))
@@ -1052,11 +1052,11 @@
 				}, U = (e, t) => async (n, a) => {
 					const s = a(),
 						c = Object(S.g)(s, t);
-					c && (n(R({
+					c && (n(P({
 						clientMessageId: t,
 						toggle: !1
 					})), n(T(e, c.messageData.value, c.data)))
-				}, B = "MESSAGE__TOGGLE_PENDING_MESSAGE_ERROR", R = Object(o.a)(B), P = "MESSAGE__REMOVE_PENDING_ONE", H = Object(o.a)(P), F = async (e, t, n, a) => {
+				}, B = "MESSAGE__TOGGLE_PENDING_MESSAGE_ERROR", P = Object(o.a)(B), R = "MESSAGE__REMOVE_PENDING_ONE", H = Object(o.a)(R), F = async (e, t, n, a) => {
 					const s = r.e.match(a).map(e => e.url).join(""),
 						c = d.b.EMBED;
 					let o = {
@@ -1120,7 +1120,7 @@
 					t(ee(e))
 				}, ne = "MESSAGE__GET_PREVIOUS_MESSAGES_START", ae = "MESSAGE__GET_PREVIOUS_MESSAGES_END", se = "MESSAGE__GET_PREVIOUS_MESSAGES_ERROR", ce = Object(o.a)(ne), re = Object(o.a)(ae), oe = Object(o.a)(se), ie = e => async (t, n) => {
 					const a = Object(y.A)(n(), "channelId");
-					t(ce(a)), t(Object(l.B)()), a && await N.b.getPreviousMessages(d.c.USER, e).then(e => t(re(Object.assign({
+					t(ce(a)), t(Object(l.B)()), a && await N.b.getPreviousMessages(e).then(e => t(re(Object.assign({
 						channelId: a
 					}, e)))).catch(() => t(oe(a)))
 				}, le = (e, t) => async (n, a, s) => {
@@ -1576,7 +1576,7 @@
 					const a = n(),
 						o = Object(u.d)(a),
 						b = Object(u.c)(a),
-						p = Object(u.a)(a),
+						p = Object(u.b)(a),
 						g = Object(h.d)(a),
 						O = {
 							connectionStatus: l.b.Closed
@@ -1588,11 +1588,18 @@
 						o && t(Object(i.e)({
 							toast: d.a.ConnectionPending
 						})), e = e || b.token, m.b.connect(p, e, n, t).then(e => {
-							e.error ? (t(f(e.error)), t(v(Object.assign({}, O))), t(Object(i.e)({
+							if (e.error) t(f(e.error)), t(v(Object.assign({}, O))), t(Object(i.e)({
 								toast: d.a.ConnectionClosed
-							}))) : (t(j()), o && (t(Object(c.q)(!0)), t(Object(i.e)({
-								toast: d.a.ConnectionOpen
-							})), t(Object(i.c)(3))), t(Object(r.b)()), t(Object(s.E)()))
+							}));
+							else {
+								if (t(j()), o) {
+									const e = !0;
+									t(Object(c.q)(e)), t(Object(i.e)({
+										toast: d.a.ConnectionOpen
+									})), t(Object(i.c)(3))
+								}
+								t(Object(r.b)()), t(Object(s.E)())
+							}
 						})
 					}
 				}, _ = Object(a.a)(g), E = () => async e => {
@@ -1845,9 +1852,9 @@
 			})), n.d(t, "m", (function() {
 				return B
 			})), n.d(t, "j", (function() {
-				return R
-			})), n.d(t, "e", (function() {
 				return P
+			})), n.d(t, "e", (function() {
+				return R
 			})), n.d(t, "i", (function() {
 				return H
 			})), n.d(t, "c", (function() {
@@ -1933,10 +1940,10 @@
 			}, B = () => async (e, t) => {
 				const n = t();
 				Object(o.c)(n) === s.a.VIEW_INVITE && Object(g.e)(n)
-			}, R = () => async (e, t) => {
+			}, P = () => async (e, t) => {
 				const n = t();
 				Object(g.b)(n), Object(i.b)(n) && Object(g.f)(t())
-			}, P = () => async (e, t) => {
+			}, R = () => async (e, t) => {
 				Object(g.a)(t())
 			}, H = e => async (t, n) => {
 				((e, t) => {
@@ -2061,9 +2068,9 @@
 			})), n.d(t, "u", (function() {
 				return U
 			})), n.d(t, "l", (function() {
-				return R
-			})), n.d(t, "i", (function() {
 				return P
+			})), n.d(t, "i", (function() {
+				return R
 			})), n.d(t, "v", (function() {
 				return G
 			})), n.d(t, "h", (function() {
@@ -2137,7 +2144,7 @@
 				L = Object(i.a)(S),
 				U = Object(i.a)(k),
 				B = Object(i.a)(w),
-				R = () => async (e, t, n) => {
+				P = () => async (e, t, n) => {
 					let {
 						apiContext: a
 					} = n;
@@ -2162,7 +2169,7 @@
 						}, {}))(n), c = !!a.prefNightmode;
 						e(A(a)), e(B(s)), e(Object(d.switchTheme)(c))
 					} else e(D(l.error))
-				}, P = "USER__USERS_FETCH_COMPLETED", H = Object(i.a)("USER__USERS_FETCH_PENDING"), F = Object(i.a)(P), K = Object(i.a)("USER__USERS_FETCH_FAILED"), G = e => async (t, n, a) => {
+				}, R = "USER__USERS_FETCH_COMPLETED", H = Object(i.a)("USER__USERS_FETCH_PENDING"), F = Object(i.a)(R), K = Object(i.a)("USER__USERS_FETCH_FAILED"), G = e => async (t, n, a) => {
 					let {
 						apiContext: c
 					} = a;
@@ -2493,8 +2500,8 @@
 			var L = n("./src/chat/components/DateSplitter/index.m.less"),
 				U = n.n(L);
 			const B = i.a.div("TimeWrapper", U.a),
-				R = i.a.time("Time", U.a);
-			var P = e => r.a.createElement(B, null, r.a.createElement(R, null, (e => {
+				P = i.a.time("Time", U.a);
+			var R = e => r.a.createElement(B, null, r.a.createElement(P, null, (e => {
 					const t = N - b.x,
 						n = new Date(N).setDate(1),
 						a = new Date(n).setMonth(0),
@@ -2745,20 +2752,20 @@
 				Le = n.n(De);
 			const Ue = i.a.div("ButtonControls", Le.a),
 				Be = i.a.span("Text", Le.a),
-				Re = i.a.wrapped(ye.b, "Button", Le.a);
-			class Pe extends c.Component {
+				Pe = i.a.wrapped(ye.b, "Button", Le.a);
+			class Re extends c.Component {
 				constructor() {
 					super(...arguments), this.handleResend = () => this.props.onResend(this.props.clientMessageId), this.handleDelete = () => this.props.onDelete(this.props.clientMessageId)
 				}
 				render() {
 					return r.a.createElement(Ue, null, r.a.createElement(Be, null, f.fbt._("Failed to send", null, {
 						hk: "2feF2H"
-					})), r.a.createElement(Re, {
+					})), r.a.createElement(Pe, {
 						primaryNoBorder: !0,
 						onClick: this.handleResend
 					}, f.fbt._("Resend", null, {
 						hk: "cXpU3"
-					})), r.a.createElement(Re, {
+					})), r.a.createElement(Pe, {
 						warningNoBorder: !0,
 						onClick: this.handleDelete
 					}, f.fbt._("Delete", null, {
@@ -2776,7 +2783,7 @@
 							clientMessageId: t
 						}))
 					}
-				})(Pe),
+				})(Re),
 				Fe = n("./src/chat/helpers/linkParser/index.ts"),
 				Ke = n("./src/chat/components/Message/Link.m.less"),
 				Ge = n.n(Ke);
@@ -2876,19 +2883,19 @@
 				MuteBadging: Lt,
 				MuteNotifs: Ut,
 				Profile: Bt,
-				RenameGroup: Rt,
-				UnlockRoom: Pt,
+				RenameGroup: Pt,
+				UnlockRoom: Rt,
 				UnmuteBadging: Ht,
 				UnmuteNotifs: Ft,
 				ViewMembers: Kt
 			} = yt, Gt = {
 				directChannel: [Bt, kt, Lt, Ht],
-				groupChannel: [Rt, Kt, xt, Mt, Lt, Ht],
-				subredditChannel: [St, wt, At, Dt, Lt, Pt, Ht, Ut, Ft, Kt],
+				groupChannel: [Pt, Kt, xt, Mt, Lt, Ht],
+				subredditChannel: [St, wt, At, Dt, Lt, Rt, Ht, Ut, Ft, Kt],
 				members: [kt, Tt, Nt]
 			}, zt = {
 				lockRoom: (e, t, n) => !(e === Dt && (!t || n)),
-				unlockRoom: (e, t, n) => !!(e !== Pt || t && n),
+				unlockRoom: (e, t, n) => !!(e !== Rt || t && n),
 				copyLink: (e, t) => !(e === wt && !t),
 				muteBadging: (e, t) => !(e === Lt && t),
 				unmuteBadging: (e, t) => !(e === Ht && !t),
@@ -3146,10 +3153,10 @@
 					}, r.a.createElement(Dn, null, r.a.createElement(Qt, null))))
 				},
 				Bn = n("./src/chat/components/MessageReportDialog/index.m.less"),
-				Rn = n.n(Bn);
+				Pn = n.n(Bn);
 			const {
-				fbt: Pn
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Hn = i.a.p("ReasonText", Rn.a), Fn = i.a.p("DeleteText", Rn.a), Kn = i.a.p("AcceptText", Rn.a);
+				fbt: Rn
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Hn = i.a.p("ReasonText", Pn.a), Fn = i.a.p("DeleteText", Pn.a), Kn = i.a.p("AcceptText", Pn.a);
 			var Gn = e => {
 				const {
 					actions: t,
@@ -3172,13 +3179,13 @@
 					messageId: i,
 					reportedUserId: d,
 					reportedUserName: u
-				}), o, r.a.createElement(Hn, null, Pn._("Reported for {reason}", [Pn._param("reason", l)], {
+				}), o, r.a.createElement(Hn, null, Rn._("Reported for {reason}", [Rn._param("reason", l)], {
 					hk: "2BwGqI"
-				}), " ", h && Pn._("by /u{reporter}", [Pn._param("reporter", h)], {
+				}), " ", h && Rn._("by /u{reporter}", [Rn._param("reporter", h)], {
 					hk: "1hrZNZ"
-				})), t && t.deleted && r.a.createElement(Fn, null, Pn._("Deleted by {username}", [Pn._param("username", "u/".concat(t.deleted.userName))], {
+				})), t && t.deleted && r.a.createElement(Fn, null, Rn._("Deleted by {username}", [Rn._param("username", "u/".concat(t.deleted.userName))], {
 					hk: "4mxZZS"
-				})), t && t.ignored && r.a.createElement(Kn, null, Pn._("Approved by {username}", [Pn._param("username", "u/".concat(t.ignored.userName))], {
+				})), t && t.ignored && r.a.createElement(Kn, null, Rn._("Approved by {username}", [Rn._param("username", "u/".concat(t.ignored.userName))], {
 					hk: "m22OH"
 				})), et()(t) && r.a.createElement(ut, {
 					reportedMessageId: e.message.messageId,
@@ -3617,9 +3624,9 @@
 			var La = Aa,
 				Ua = n("./src/chat/constants/container.ts"),
 				Ba = n("./src/chat/constants/page.ts"),
-				Ra = n("./src/chat/icons/svgs/NavClose/index.tsx"),
-				Pa = n("./src/chat/components/MessageTooltip/index.m.less"),
-				Ha = n.n(Pa);
+				Pa = n("./src/chat/icons/svgs/NavClose/index.tsx"),
+				Ra = n("./src/chat/components/MessageTooltip/index.m.less"),
+				Ha = n.n(Ra);
 			const Fa = "MessageInputTooltip--Container",
 				Ka = i.a.wrapped(Object(gt.a)(Vt.a), "Dropdown", Ha.a),
 				Ga = i.a.div("DropdownWrapper", Ha.a),
@@ -3648,7 +3655,7 @@
 					isOverlayOff: !0
 				}, r.a.createElement(Ga, {
 					onClick: () => e.closeTooltip()
-				}, r.a.createElement(za, null, r.a.createElement(Wa, null, e.title, r.a.createElement(Va, null, r.a.createElement(Ra.a, null))), r.a.createElement(qa, {
+				}, r.a.createElement(za, null, r.a.createElement(Wa, null, e.title, r.a.createElement(Va, null, r.a.createElement(Pa.a, null))), r.a.createElement(qa, {
 					isEmbedded: e.isEmbedded
 				}, e.children))))),
 				Qa = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/lodash/times.js")),
@@ -3884,8 +3891,8 @@
 				Ls = "ArrowLeft",
 				Us = "ArrowUp",
 				Bs = "ArrowRight",
-				Rs = "ArrowDown",
-				Ps = "Delete";
+				Ps = "ArrowDown",
+				Rs = "Delete";
 			var Hs = n("./src/chat/singleton/SendbirdSDK.ts"),
 				Fs = n("./src/chat/controls/ContentEditable/index.m.less"),
 				Ks = n.n(Fs);
@@ -3921,7 +3928,7 @@
 					e.key !== Ds || e.shiftKey || (e.preventDefault(), this.props.onSubmit()), this.handleSizing()
 				}
 				handleKeyDown(e) {
-					e.key === Us && this.props.onKeyUp(e), e.key === Rs && this.props.onKeyDown(e), this.handleSizing()
+					e.key === Us && this.props.onKeyUp(e), e.key === Ps && this.props.onKeyDown(e), this.handleSizing()
 				}
 				handleSizing() {
 					if (this.textarea) {
@@ -4443,12 +4450,12 @@
 			}));
 			Uc.displayName = "NavPopout";
 			var Bc = n("./src/chat/selectors/app.ts"),
-				Rc = n("./src/chat/components/OverlayNavButtonGroup/index.m.less"),
-				Pc = n.n(Rc);
-			const Hc = i.a.wrapped(ye.d, "IconButton", Pc.a),
-				Fc = i.a.wrapped(Mc.a, "CloseButton", Pc.a);
+				Pc = n("./src/chat/components/OverlayNavButtonGroup/index.m.less"),
+				Rc = n.n(Pc);
+			const Hc = i.a.wrapped(ye.d, "IconButton", Rc.a),
+				Fc = i.a.wrapped(Mc.a, "CloseButton", Rc.a);
 			Fc.displayName = "CloseButton";
-			const Kc = i.a.span("Wrapper", Pc.a);
+			const Kc = i.a.span("Wrapper", Rc.a);
 			var Gc = Object(o.b)(() => Object(K.a)({
 					containerSize: e => e.container.size,
 					inviterName: y.H,
@@ -4539,7 +4546,7 @@
 				constructor() {
 					super(...arguments), this.displayName = "RenameGroupInput", this.state = {
 						groupName: this.props.name || ""
-					}, this.getAvailableCharacters = () => jc.d - this.state.groupName.length, this.handleChannelNameInput = e => this.setState({
+					}, this.getAvailableCharacters = () => jc.e - this.state.groupName.length, this.handleChannelNameInput = e => this.setState({
 						groupName: e
 					}), this.submitGroupName = () => {
 						this.props.onUpdateChannelName(this.state.groupName.trim()), this.props.hideChannelNameInput()
@@ -4582,7 +4589,7 @@
 						hk: "2TSLl5"
 					})), r.a.createElement(ar, {
 						primaryNoBorder: !0,
-						disabled: c < 0 || c >= jc.d,
+						disabled: c < 0 || c >= jc.e,
 						onClick: s
 					}, f.fbt._("Save", null, {
 						hk: "1qAtYt"
@@ -4747,8 +4754,8 @@
 						e(Object(ic.sizeChanged)(Ua.a.MINIMIZED)), e(Object(ft.o)())
 					}
 				}))(Ur),
-				Rr = n("./src/chat/constants/batchSizes.ts"),
-				Pr = n("./src/chat/selectors/subreddit.ts"),
+				Pr = n("./src/chat/constants/batchSizes.ts"),
+				Rr = n("./src/chat/selectors/subreddit.ts"),
 				Hr = n("./src/chat/components/MessageList/index.m.less"),
 				Fr = n.n(Hr);
 			const {
@@ -4761,14 +4768,14 @@
 				fetchingMessagesError: e => Object(y.A)(e, "fetchingMessagesError"),
 				hasMoreMessages: e => Object(y.A)(e, "hasMoreMessages"),
 				isMessageListLoaded: e => Object(y.A)(e, "isMessageListLoaded"),
-				subreddit: e => Object(Pr.b)(e),
+				subreddit: e => Object(Rr.b)(e),
 				subredditName: e => Object(jt.e)(e),
 				isModerator: e => Object(y.a)(e)
 			}), Yr = Object(o.b)(Qr, e => ({
 				getPreviousMessages: () => e(Object(g.q)()),
 				removeAndResetMessages: t => e(Object(O.c)(t)),
 				resetChannelMessageList: t => e(Object(p.M)(t))
-			})), Xr = 30, $r = 2 * Rr.a.Messages;
+			})), Xr = 30, $r = 2 * Pr.a.Messages;
 			class eo extends r.a.Component {
 				constructor(e) {
 					super(e), this.list = r.a.createRef(), this.getOtherMemberName = () => {
@@ -4813,7 +4820,7 @@
 									createdAt: c,
 									messageData: o,
 									sender: i
-								} = e, l = i && i.userId, d = i && i.nickname, u = n.id === l, h = this.isSplitterDisplayed(e, t, s), m = this.getPreviousTime(t, s), p = this.getPreviousUserId(t, s) === l, g = c - m < 5 * b.eb, O = !(p && g), f = o.type === Ie.b.EMBED, j = h && r.a.createElement(P, {
+								} = e, l = i && i.userId, d = i && i.nickname, u = n.id === l, h = this.isSplitterDisplayed(e, t, s), m = this.getPreviousTime(t, s), p = this.getPreviousUserId(t, s) === l, g = c - m < 5 * b.eb, O = !(p && g), f = o.type === Ie.b.EMBED, j = h && r.a.createElement(R, {
 									date: c
 								}), C = O && d && l && r.a.createElement(En, {
 									createdAt: c,
@@ -5075,15 +5082,15 @@
 				Lo = n("./src/chat/components/SearchBar/index.m.less"),
 				Uo = n.n(Lo);
 			const Bo = i.a.span("Bubble", Uo.a),
-				Ro = i.a.span("SearchBarLabel", Uo.a),
-				Po = i.a.span("SearchBarField", Uo.a),
+				Po = i.a.span("SearchBarLabel", Uo.a),
+				Ro = i.a.span("SearchBarField", Uo.a),
 				Ho = i.a.input("SearchBarInput", Uo.a),
 				Fo = i.a.wrapped(La, "SearchBarWrapper", Uo.a);
 			class Ko extends r.a.Component {
 				constructor(e) {
 					super(e), this.bubbleRefs = {}, this.searchBarInputRef = {}, this.timeoutToken = null, this.onBubbleKey = e => t => {
 						switch (t.key) {
-							case Ps:
+							case Rs:
 							case As:
 								return Object(ha.findDOMNode)(this.searchBarInputRef).focus(), this.props.onUnselect(e.id);
 							case Ls: {
@@ -5122,7 +5129,7 @@
 						case Ds:
 							return n((() => s.id)());
 						case Ls:
-						case Ps:
+						case Rs:
 						case As:
 							if (0 === c().length) {
 								const e = Do()(this.props.selectedContacts);
@@ -5143,9 +5150,9 @@
 					} = this, c = n ? "" : e;
 					return r.a.createElement(Fo, {
 						autoScrollBottom: !0
-					}, r.a.createElement(Ro, null, f.fbt._("To:", null, {
+					}, r.a.createElement(Po, null, f.fbt._("To:", null, {
 						hk: "2eyFcf"
-					})), r.a.createElement(Po, null, a && a.length > 0 && a.map((e, t) => r.a.createElement(Bo, {
+					})), r.a.createElement(Ro, null, a && a.length > 0 && a.map((e, t) => r.a.createElement(Bo, {
 						key: "selected-contact-".concat(t),
 						tabIndex: 0,
 						onKeyDown: Object(Jt.a)(this.onBubbleKey(e)),
@@ -5282,13 +5289,13 @@
 							memberCount: t,
 							selectedUsersCount: n
 						} = this.props;
-						if (e) return n > jc.e;
-						return (n || 0) + (t || 0) > jc.e
+						if (e) return n > jc.f;
+						return (n || 0) + (t || 0) > jc.f
 					}, this.isSubmitDisabled = e => {
 						const {
 							isCreatingChannel: t,
 							selectedUsersCount: n
-						} = this.props, a = this.isCreateChannelURLAction(), s = e < 0 || e === jc.d, c = n > 1, r = this.hasTooManyMembers();
+						} = this.props, a = this.isCreateChannelURLAction(), s = e < 0 || e === jc.e, c = n > 1, r = this.hasTooManyMembers();
 						return !this.isSubredditChannel() && (!n || t || a && c && (s || r) || !a && r)
 					}, this.getInviteMembersText = () => this.isSubredditChannel() ? f.fbt._("Add to room", null, {
 						hk: "2SDTyo"
@@ -5310,8 +5317,8 @@
 						const {
 							memberCount: e,
 							selectedUsersCount: t
-						} = this.props, n = t + (this.isCreateChannelURLAction() ? 1 : e), a = (jc.e - n).toString();
-						return t === jc.e ? this.isSubredditChannel() ? f.fbt._("You can add {remaining count} more Redditors", [f.fbt._param("remaining count", a)], {
+						} = this.props, n = t + (this.isCreateChannelURLAction() ? 1 : e), a = (jc.f - n).toString();
+						return t === jc.f ? this.isSubredditChannel() ? f.fbt._("You can add {remaining count} more Redditors", [f.fbt._param("remaining count", a)], {
 							hk: "4qe3Ep"
 						}) : f.fbt._("Maximum group size reached", null, {
 							hk: "7hpRV"
@@ -5336,7 +5343,7 @@
 							selectedUsers: s,
 							selectedUsersCount: c
 						} = this.props;
-					s.includes(t) ? a(t) : (c < jc.e || c < 1) && (this.setState(e => Object.assign(Object.assign({}, e), {
+					s.includes(t) ? a(t) : (c < jc.f || c < 1) && (this.setState(e => Object.assign(Object.assign({}, e), {
 						resetFilter: !0
 					})), n(t)), this.searchBarElement && this.searchBarElement.focus()
 				}
@@ -5399,7 +5406,7 @@
 					return !t || !t.loaded || t.valid
 				}
 				availableCharacters(e) {
-					return jc.d - e.length
+					return jc.e - e.length
 				}
 				render() {
 					const {
@@ -5420,7 +5427,7 @@
 						onContactsSelect: u,
 						onSubmit: h,
 						onCancel: m
-					} = this, b = this.getSelectedContacts(), p = this.getFilteredContacts(), g = this.getLoadedContact(), O = !!a && !g, j = !!g, C = !this.getIsValidUser(a), _ = this.handleChannelNameInput, E = this.availableCharacters(c), v = this.isSubmitDisabled(E), I = this.primaryButtonText(), y = this.isCreateChannelURLAction(), x = n >= jc.e && !this.isSubredditChannel();
+					} = this, b = this.getSelectedContacts(), p = this.getFilteredContacts(), g = this.getLoadedContact(), O = !!a && !g, j = !!g, C = !this.getIsValidUser(a), _ = this.handleChannelNameInput, E = this.availableCharacters(c), v = this.isSubmitDisabled(E), I = this.primaryButtonText(), y = this.isCreateChannelURLAction(), x = n >= jc.f && !this.isSubredditChannel();
 					return r.a.createElement(oo, {
 						className: e,
 						onSubmit: Object(Jt.a)(h),
@@ -5544,11 +5551,11 @@
 			Li.displayName = "FirstTimeUserExpPromo";
 			var Ui = Di(Li),
 				Bi = n("./src/chat/icons/svgs/ChatNew/index.tsx"),
-				Ri = n("./src/chat/components/Sidebar/CreateChannel/index.m.less"),
-				Pi = n.n(Ri);
-			const Hi = i.a.wrapped(Bi.a, "ChatNew", Pi.a),
-				Fi = i.a.span("Button", Pi.a),
-				Ki = i.a.span("Text", Pi.a);
+				Pi = n("./src/chat/components/Sidebar/CreateChannel/index.m.less"),
+				Ri = n.n(Pi);
+			const Hi = i.a.wrapped(Bi.a, "ChatNew", Ri.a),
+				Fi = i.a.span("Button", Ri.a),
+				Ki = i.a.span("Text", Ri.a);
 			var Gi = Object(o.b)(null, e => ({
 					createChannel: () => {
 						e(Object(ve.b)(Object(xe.channelUrl)("create"))), e(Object(ft.g)())
@@ -5918,11 +5925,11 @@
 				Ll = n("./src/chat/components/Sidebar/DirectsPanel/index.m.less"),
 				Ul = n.n(Ll);
 			const Bl = i.a.wrapped(La, "Scroller", Ul.a),
-				Rl = Object(K.a)({
+				Pl = Object(K.a)({
 					fetchingJoinedChannels: y.e,
 					hasMoreJoinedChannels: y.E
 				});
-			var Pl = Object(o.b)(Rl, e => ({
+			var Rl = Object(o.b)(Pl, e => ({
 				fetchJoinedChannels: () => e(Object(p.G)())
 			}))(e => {
 				const {
@@ -6008,7 +6015,7 @@
 				fetchingInvitedSubredditChannels: y.d,
 				hasMoreInvitedSubredditChannels: y.D,
 				inviteListExpanded: y.F,
-				subreddits: e => Object(Pr.e)(e),
+				subreddits: e => Object(Rr.e)(e),
 				subredditChannels: e => Object(y.o)(e),
 				selectedChannelId: e => Object(y.A)(e, "channelId")
 			});
@@ -6080,7 +6087,7 @@
 					})
 				}, "SubredditIcon", od.a),
 				gd = Object(K.a)({
-					subredditList: e => Object(Pr.a)(e),
+					subredditList: e => Object(Rr.a)(e),
 					selectedChannelId: e => Object(y.x)(e)
 				}),
 				Od = Object(o.b)(gd),
@@ -6167,7 +6174,7 @@
 				xd = n.n(yd);
 			const Sd = Object(K.a)({
 					channels: e => Object(y.v)(e),
-					subreddits: e => Object(Pr.e)(e),
+					subreddits: e => Object(Rr.e)(e),
 					selectedChannelId: e => Object(y.A)(e, "channelId")
 				}),
 				Nd = Object(o.b)(Sd),
@@ -6213,11 +6220,11 @@
 				})),
 				Ud = n("./src/chat/components/Sidebar/index.m.less"),
 				Bd = n.n(Ud);
-			const Rd = 0;
-			class Pd extends c.Component {
+			const Pd = 0;
+			class Rd extends c.Component {
 				constructor(e) {
 					super(e), this.onTabSelect = this.onTabSelect.bind(this), this.getClonedChildren = this.getClonedChildren.bind(this), this.state = {
-						activeIndex: Rd
+						activeIndex: Pd
 					}
 				}
 				onTabSelect(e) {
@@ -6251,7 +6258,7 @@
 					activeIndex: t,
 					children: n
 				} = e;
-				return n && n[t || Rd]
+				return n && n[t || Pd]
 			};
 			var Fd = n("./src/chat/constants/sidebar.ts"),
 				Kd = n("./src/chat/selectors/experiments.ts"),
@@ -6259,7 +6266,7 @@
 				zd = n("./src/chat/selectors/promos.ts"),
 				Wd = n("./src/chat/selectors/sidebar.ts");
 			const Vd = i.a.div("Wrapper", Bd.a),
-				qd = i.a.wrapped(Pd, "Tabs", Bd.a),
+				qd = i.a.wrapped(Rd, "Tabs", Bd.a),
 				Jd = i.a.wrapped(e => {
 					let {
 						activeIndex: t,
@@ -6324,7 +6331,7 @@
 						count: i.count
 					}))), r.a.createElement(Hd, null, r.a.createElement(Ld, {
 						routeAction: n
-					}), r.a.createElement(Pl, null))), e && r.a.createElement(Qd, null), !s && r.a.createElement(Pl, null), l && r.a.createElement(Gi, null))
+					}), r.a.createElement(Rl, null))), e && r.a.createElement(Qd, null), !s && r.a.createElement(Rl, null), l && r.a.createElement(Gi, null))
 				}
 			}
 			var $d = Object(o.b)(Yd, e => ({
@@ -6470,8 +6477,8 @@
 				Lu = i.a.span("WarningTextNSFW", ku.a),
 				Uu = i.a.p("Text", ku.a),
 				Bu = i.a.wrapped(Su, "MediaObject", ku.a),
-				Ru = i.a.span("LightText", ku.a),
-				Pu = i.a.span("LightTextSmall", ku.a),
+				Pu = i.a.span("LightText", ku.a),
+				Ru = i.a.span("LightTextSmall", ku.a),
 				Hu = i.a.b("Warning", ku.a),
 				Fu = i.a.wrapped(ua, "MessageItemBubble", ku.a),
 				Ku = i.a.wrapped(e => r.a.createElement("p", {
@@ -6514,7 +6521,7 @@
 							linkKarma: t,
 							created: n
 						} = e;
-						return r.a.createElement(Pu, null, f.fbt._({
+						return r.a.createElement(Ru, null, f.fbt._({
 							"*": "{karma count} karma",
 							_1: "1 karma"
 						}, [f.fbt._plural(t, "karma count")], {
@@ -6527,7 +6534,7 @@
 				renderPreviewMessages() {
 					if (this.props.channel && this.props.channelMessages && this.props.channelMessages.length) {
 						const e = m()([...this.props.channelMessages], "createdAt");
-						return r.a.createElement(Tu, null, r.a.createElement(Ru, null, f.fbt._("Preview of this chat", null, {
+						return r.a.createElement(Tu, null, r.a.createElement(Pu, null, f.fbt._("Preview of this chat", null, {
 							hk: "42xxX4"
 						})), e.map(e => r.a.createElement(r.a.Fragment, {
 							key: e.createdAt
@@ -6856,13 +6863,13 @@
 						let {
 							channelId: n
 						} = t;
-						return Object(Pr.d)(e, n)
+						return Object(Rr.d)(e, n)
 					},
 					subreddit: (e, t) => {
 						let {
 							channelId: n
 						} = t;
-						return Object(Pr.c)(e, n)
+						return Object(Rr.c)(e, n)
 					}
 				});
 			class wh extends r.a.Component {
@@ -6944,8 +6951,8 @@
 				Lh = n("./src/chat/components/OverlayKickUser/index.m.less"),
 				Uh = n.n(Lh);
 			const Bh = i.a.p("SubHeader", Uh.a),
-				Rh = i.a.span("Title", Uh.a),
-				Ph = i.a.span("Header", Uh.a),
+				Ph = i.a.span("Title", Uh.a),
+				Rh = i.a.span("Header", Uh.a),
 				Hh = i.a.wrapped(Go.a, "Checkbox", Uh.a),
 				Fh = i.a.div("ListItem", Uh.a),
 				Kh = i.a.div("OverlayContent", Uh.a),
@@ -6998,7 +7005,7 @@
 						message: e,
 						user: t
 					} = this.props, n = e && e.sender ? e.sender.nickname : t ? "u/" + t.name : "this user";
-					return [r.a.createElement(Ph, null, f.fbt._("Are you sure you want to kick {username} from this room?", [f.fbt._param("username", n)], {
+					return [r.a.createElement(Rh, null, f.fbt._("Are you sure you want to kick {username} from this room?", [f.fbt._param("username", n)], {
 						hk: "n1L3B"
 					})), r.a.createElement(Bh, null, f.fbt._("They'll be able to join again once the kick duration is over.", null, {
 						hk: "4zi1U1"
@@ -7018,7 +7025,7 @@
 						title: f.fbt._("Confirm Kick", null, {
 							hk: "1upcSi"
 						})
-					}), r.a.createElement(Kh, null, r.a.createElement(La, null, this.renderIntro(), r.a.createElement(Rh, null, f.fbt._("Kick Duration", null, {
+					}), r.a.createElement(Kh, null, r.a.createElement(La, null, this.renderIntro(), r.a.createElement(Ph, null, f.fbt._("Kick Duration", null, {
 						hk: "4nENS8"
 					})), e && e.map(e => r.a.createElement(Fh, {
 						key: e.value
@@ -7178,7 +7185,7 @@
 				vm = i.a.h3("Title", fm.a),
 				Im = Object(K.a)({
 					channel: e => Object(y.k)(e),
-					subreddits: e => Object(Pr.e)(e)
+					subreddits: e => Object(Rr.e)(e)
 				});
 			class ym extends r.a.Component {
 				getSubreddit() {
@@ -7241,8 +7248,8 @@
 			var Lm = n("./src/chat/models/ReportFlow/index.ts"),
 				Um = n("./src/chat/components/OverlayReport/index.m.less"),
 				Bm = n.n(Um);
-			const Rm = i.a.wrapped(Go.a, "Checkbox", Bm.a),
-				Pm = i.a.div("ListItem", Bm.a),
+			const Pm = i.a.wrapped(Go.a, "Checkbox", Bm.a),
+				Rm = i.a.div("ListItem", Bm.a),
 				Hm = Object(K.a)({
 					user: (e, t) => t.attr === Dh.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === Dh.a.Invite || t.attr === Dh.a.Message ? e.messages.models[t.attrId] : void 0,
@@ -7296,9 +7303,9 @@
 						}
 					}, this.getUserReportFlow = () => u()(Dm, e => {
 						const t = this.getReportReasonText(e);
-						return r.a.createElement(Pm, {
+						return r.a.createElement(Rm, {
 							key: t
-						}, r.a.createElement(Rm, {
+						}, r.a.createElement(Pm, {
 							type: "radio",
 							value: t,
 							name: Am,
@@ -7402,7 +7409,7 @@
 				Jm = Object(K.a)({
 					currentUserId: ms.a,
 					subredditChannel: e => Object(y.k)(e),
-					subreddit: e => Object(Pr.b)(e)
+					subreddit: e => Object(Rr.b)(e)
 				});
 			class Zm extends r.a.Component {
 				constructor(e) {
@@ -9287,7 +9294,7 @@
 				}) : n();
 				return i => g => {
 					const O = e.getState(),
-						C = Object(f.b)(O) === p.b.Closed,
+						C = Object(f.a)(O) === p.b.Closed,
 						_ = Object(f.e)(O);
 					switch (g.type) {
 						case o.SIZE_CHANGED: {
@@ -10649,7 +10656,7 @@
 				B = (e, t, n) => Object.assign(Object.assign({}, e), {
 					[t.toLowerCase()]: e[t.toLowerCase()].filter(e => e !== n)
 				});
-			var R = function() {
+			var P = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : U,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -10698,11 +10705,11 @@
 						return e
 				}
 			};
-			const P = {
+			const R = {
 				sortedKeys: []
 			};
 			var H = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case y.c: {
@@ -10748,7 +10755,7 @@
 				G = Object(a.c)({
 					banned: A,
 					invited: L,
-					joined: R,
+					joined: P,
 					kicked: H,
 					recommended: K
 				}),
@@ -11135,7 +11142,7 @@
 			const Be = {
 				maxMessageLength: void 0
 			};
-			var Re = function() {
+			var Pe = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Be,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -11145,11 +11152,11 @@
 						return e
 				}
 			};
-			const Pe = {
+			const Re = {
 				host: void 0
 			};
 			var He = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Pe,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Re,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case Ue.c:
@@ -11220,7 +11227,7 @@
 					}
 				},
 				qe = Object(a.c)({
-					globalSettings: Re,
+					globalSettings: Pe,
 					proxy: He,
 					session: Ve,
 					sdk: ze
@@ -11472,7 +11479,7 @@
 			const Bt = {
 				globalTheme: mt.a
 			};
-			var Rt = function() {
+			var Pt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Bt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -11488,7 +11495,7 @@
 						return e
 				}
 			};
-			var Pt = function() {
+			var Rt = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -11528,8 +11535,8 @@
 					experiments: Mt,
 					language: Dt,
 					loid: Ut,
-					prefs: Rt,
-					reddaid: Pt,
+					prefs: Pt,
+					reddaid: Rt,
 					session: Ft,
 					sessionTracker: Kt
 				});
@@ -12179,11 +12186,11 @@
 		},
 		"./src/chat/selectors/sendbird.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "a", (function() {
 				return a
 			})), n.d(t, "d", (function() {
 				return s
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return c
 			})), n.d(t, "c", (function() {
 				return r
@@ -12329,9 +12336,9 @@
 		"./src/chat/singleton/SendbirdSDK.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return U
+				return L
 			})), n.d(t, "c", (function() {
-				return B
+				return U
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/config.ts"),
@@ -12364,34 +12371,34 @@
 				_ = n("./src/chat/actions/toast.ts"),
 				E = n("./src/chat/actions/typingIndicator.ts"),
 				v = n("./src/chat/constants/batchSizes.ts"),
-				I = n("./src/chat/constants/messages.ts"),
-				y = n("./src/chat/constants/sendbird.ts"),
-				x = n("./src/chat/constants/toast.ts"),
-				S = n("./src/chat/helpers/errors.ts"),
-				N = n("./src/chat/models/Channel/index.ts"),
-				k = n("./src/chat/models/Channel/platform.ts"),
-				w = n("./src/chat/models/Channel/subreddit.ts"),
-				T = n("./src/chat/models/Channel/utils/index.ts"),
-				M = n("./src/chat/models/Channel/utils/removeSendbirdPrefix.ts"),
-				A = n("./src/chat/models/Message/index.ts"),
-				D = n("./src/chat/models/User/member.ts");
+				I = n("./src/chat/constants/sendbird.ts"),
+				y = n("./src/chat/constants/toast.ts"),
+				x = n("./src/chat/helpers/errors.ts"),
+				S = n("./src/chat/models/Channel/index.ts"),
+				N = n("./src/chat/models/Channel/platform.ts"),
+				k = n("./src/chat/models/Channel/subreddit.ts"),
+				w = n("./src/chat/models/Channel/utils/index.ts"),
+				T = n("./src/chat/models/Channel/utils/removeSendbirdPrefix.ts"),
+				M = n("./src/chat/models/Message/index.ts"),
+				A = n("./src/chat/models/User/member.ts");
 			const {
-				sendbirdAppId: L
+				sendbirdAppId: D
 			} = a.a;
-			var U;
+			var L;
 			! function(e) {
 				e.VIEW_PRIVATE = "view_private", e.KICKED = "kicked", e.BANNED = "banned"
-			}(U || (U = {}));
-			const B = new class {
+			}(L || (L = {}));
+			const U = new class {
 				constructor() {
 					this.dispatch = c.a, this.channels = {}, this.channelUniqueHandlerID = [], this.connectionUniqueHandlerID = [], this.switchChannel = (e, t) => {
 						if (this.channel = e, t) return Promise.resolve([]); {
-							this.subredditChannelMembersQuery = this.channel.createMemberListQuery(), this.memberListQuery = this.channel.createMemberListQuery(), this.createPreviousMessageListQuery();
-							const e = this.getPreviousMessages(I.c.USER);
-							return Promise.all([e])
+							this.subredditChannelMembersQuery = this.channel.createMemberListQuery(), this.memberListQuery = this.channel.createMemberListQuery();
+							const e = !0,
+								t = this.getPreviousMessages(e);
+							return Promise.all([t])
 						}
 					}, (this.self = new o.a({
-						appId: L
+						appId: D
 					})).Options.typingIndicatorThrottle = 1e4
 				}
 				connect(e, t, n, a) {
@@ -12421,16 +12428,16 @@
 				}
 				reconnect() {
 					this.dispatch(Object(_.e)({
-						toast: x.a.ConnectionPending
+						toast: y.a.ConnectionPending
 					})), this.dispatch(Object(j.m)())
 				}
 				onReconnectStarted() {
 					const e = new this.self.ConnectionHandler,
 						t = {
-							connectionStatus: y.b.Pending
+							connectionStatus: I.b.Pending
 						},
 						n = {
-							toast: x.a.ConnectionPending
+							toast: y.a.ConnectionPending
 						};
 					e.onReconnectStarted = () => {
 						this.dispatch(Object(C.h)(t)), this.dispatch(Object(_.e)(n))
@@ -12439,60 +12446,66 @@
 				onReconnectSucceeded() {
 					const e = new this.self.ConnectionHandler,
 						t = {
-							connectionStatus: y.b.Open
+							connectionStatus: I.b.Open
 						};
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(C.h)(t)), this.dispatch(Object(_.e)({
-							toast: x.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Fb), this.dispatch(Object(f.q)(!0)), this.dispatch(Object(d.E)())
+							toast: y.a.ConnectionOpen
+						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Fb);
+						this.dispatch(Object(f.q)(!0)), this.dispatch(Object(d.E)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
 				onReconnectFailed() {
 					const e = new this.self.ConnectionHandler,
 						t = {
-							connectionStatus: y.b.Closed
+							connectionStatus: I.b.Closed
 						};
 					e.onReconnectFailed = () => {
 						this.dispatch(Object(C.h)(t)), this.dispatch(Object(_.e)({
-							toast: x.a.ConnectionClosed
+							toast: y.a.ConnectionClosed
 						}))
 					}, this.self.addConnectionHandler("RECONNECT_FAILED", e), this.connectionUniqueHandlerID.push("RECONNECT_FAILED")
 				}
 				onReceiveInvite() {
 					const e = new this.self.ChannelHandler;
 					e.onUserReceivedInvitation = e => {
-						const t = Object(N.f)(e);
+						const t = Object(S.f)(e);
 						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("RECEIVE_CHANNEL_INVITE", e), this.channelUniqueHandlerID.push("RECEIVE_CHANNEL_INVITE")
 				}
 				onReceiveMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageReceived = (e, t) => {
-						const n = Object(N.f)(e);
+						const n = Object(S.f)(e);
 						this.dispatch(Object(d.P)(n));
-						const a = Object(A.b)(t);
+						const a = Object(M.b)(t);
 						a && this.dispatch(Object(f.r)(a))
 					}, this.self.addChannelHandler("RECEIVE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("RECEIVE_CHANNEL_MESSAGE")
 				}
 				onUpdateMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageUpdated = (e, t) => {
-						const n = Object(N.f)(e);
+						const n = Object(S.f)(e);
 						this.dispatch(Object(d.P)(n));
-						const a = Object(A.b)(t);
+						const a = Object(M.b)(t);
 						a && this.dispatch(Object(f.r)(a))
 					}, this.self.addChannelHandler("UPDATE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("UPDATE_CHANNEL_MESSAGE")
 				}
 				onDeleteMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageDeleted = (e, t) => {
-						this.dispatch(Object(f.s)(t))
+						try {
+							const e = Number(t);
+							this.dispatch(Object(f.s)(e))
+						} catch (n) {
+							Object(x.b)(n)
+						}
 					}, this.self.addChannelHandler("DELETE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("DELETE_CHANNEL_MESSAGE")
 				}
 				onTypingStatusUpdated() {
 					const e = new this.self.ChannelHandler;
 					e.onTypingStatusUpdated = e => {
-						const t = Object(M.a)(e.url),
+						const t = Object(T.a)(e.url),
 							n = e.getTypingMembers().map(e => e.nickname);
 						this.dispatch(Object(E.b)({
 							channelId: t,
@@ -12509,7 +12522,7 @@
 							a = new this.self.ChannelHandler,
 							s = e[n];
 						a[n] = e => {
-							const t = Object(N.f)(e);
+							const t = Object(S.f)(e);
 							this.dispatch(Object(d.Q)(t, !0))
 						}, this.self.addChannelHandler(s, a), this.channelUniqueHandlerID.push(s)
 					})
@@ -12517,53 +12530,53 @@
 				onChannelChanged() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelChanged = e => {
-						const t = Object(N.f)(e);
+						const t = Object(S.f)(e);
 						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_CHANGED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_CHANGED")
 				}
 				onChannelDeleted() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelDeleted = e => {
-						const t = Object(M.a)(e);
+						const t = Object(T.a)(e);
 						this.dispatch(g(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_DELETED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_DELETED")
 				}
 				onChannelMuted() {
 					const e = new this.self.ChannelHandler;
 					e.onUserMuted = e => {
-						const t = Object(N.f)(e);
+						const t = Object(S.f)(e);
 						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_MUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_MUTED")
 				}
 				onChannelUnmuted() {
 					const e = new this.self.ChannelHandler;
 					e.onUserUnmuted = e => {
-						const t = Object(N.f)(e);
+						const t = Object(S.f)(e);
 						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNMUTED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNMUTED")
 				}
 				onChannelLocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelFrozen = e => {
-						const t = Object(N.f)(e);
+						const t = Object(S.f)(e);
 						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_LOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_LOCKED")
 				}
 				onChannelUnlocked() {
 					const e = new this.self.ChannelHandler;
 					e.onChannelUnfrozen = e => {
-						const t = Object(N.f)(e);
+						const t = Object(S.f)(e);
 						this.dispatch(Object(d.Q)(t))
 					}, this.self.addChannelHandler("ON_CHANNEL_UNLOCKED", e), this.channelUniqueHandlerID.push("ON_CHANNEL_UNLOCKED")
 				}
 				mapCodeToError(e) {
 					switch (e) {
 						case 400750:
-							return U.KICKED;
+							return L.KICKED;
 						case 400751:
-							return U.BANNED;
+							return L.BANNED;
 						default:
-							return U.VIEW_PRIVATE
+							return L.VIEW_PRIVATE
 					}
 				}
 				autoJoinSubredditChannel(e, t) {
@@ -12577,7 +12590,7 @@
 								error: this.mapCodeToError(t.error.code)
 							}) : e(t.body)
 						}).catch(e => {
-							Object(S.b)("Error: can't join subreddit channel"), n({
+							Object(x.b)("Error: can't join subreddit channel"), n({
 								error: this.mapCodeToError(e.code)
 							})
 						}) : e()
@@ -12592,9 +12605,9 @@
 				}
 				getChannelByChannelId(e) {
 					return new Promise((t, n) => {
-						const a = Object(T.a)(e);
+						const a = Object(w.a)(e);
 						this.self.GroupChannel.getChannel(a, (e, a) => {
-							a ? (Object(S.b)("Error: can't get channel by id"), n(a)) : t(e)
+							a ? (Object(x.b)("Error: can't get channel by id"), n(a)) : t(e)
 						})
 					})
 				}
@@ -12602,9 +12615,9 @@
 					return new Promise((t, n) => {
 						this.getChannelByChannelId(e).then(e => {
 							if (!e) return t();
-							const n = Object(N.f)(e);
+							const n = Object(S.f)(e);
 							if (!n) return t();
-							if (n.type === N.a.Subreddit) {
+							if (n.type === S.a.Subreddit) {
 								const {
 									subreddit: e
 								} = n.customData;
@@ -12614,7 +12627,7 @@
 							}
 							this.dispatch(Object(d.R)(n)), t(n)
 						}).catch(e => {
-							Object(S.b)("Error: can't add channel by id"), n(e)
+							Object(x.b)("Error: can't add channel by id"), n(e)
 						})
 					})
 				}
@@ -12639,9 +12652,9 @@
 						this.getChannelByChannelId(c).then(r => {
 							if (!r) return a(s());
 							this.channels[c] = r;
-							const o = Object(N.f)(r);
-							if (this.updatePartialChannelModel(o, e.channelState), t && o.type === N.a.Subreddit) return this.autoJoinSubredditChannel(r, o).then(e => {
-								const t = Object(k.a)(e, h.b.JOINED);
+							const o = Object(S.f)(r);
+							if (this.updatePartialChannelModel(o, e.channelState), t && o.type === S.a.Subreddit) return this.autoJoinSubredditChannel(r, o).then(e => {
+								const t = Object(N.a)(e, h.b.JOINED);
 								this.dispatch(Object(d.R)(t)), this.switchChannel(r).then(e => {
 									let [t] = e;
 									return a(s({
@@ -12706,7 +12719,7 @@
 				onUserKicked() {
 					const e = new this.self.ChannelHandler;
 					e.onUserBanned = (e, t) => {
-						const n = Object(w.b)(e);
+						const n = Object(k.b)(e);
 						n && this.dispatch(Object(O.s)(n, t.userId))
 					}, this.self.addChannelHandler("CHANNEL_USER_KICKED", e), this.channelUniqueHandlerID.push("CHANNEL_USER_KICKED")
 				}
@@ -12716,16 +12729,15 @@
 				getExistingChannels(e, t) {
 					return new Promise((n, a) => {
 						let s;
-						e === h.b.INVITED && t === h.f.NonSuper ? this.channelListQueryInvited ? s = this.channelListQueryInvited : (this.channelListQueryInvited = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvited) : e === h.b.JOINED && t === h.f.NonSuper ? this.channelListQueryJoined ? s = this.channelListQueryJoined : (this.channelListQueryJoined = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoined) : e === h.b.JOINED && t === h.f.Super ? this.channelListQueryJoinedSubreddit ? s = this.channelListQueryJoinedSubreddit : (this.channelListQueryJoinedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoinedSubreddit) : e === h.b.INVITED && t === h.f.Super && (this.channelListQueryInvitedSubreddit ? s = this.channelListQueryInvitedSubreddit : (this.channelListQueryInvitedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvitedSubreddit)), s.includeEmpty = !0, s.limit = v.a.Channels, s.memberStateFilter = this.self.GroupChannel.memberState[e], s.superChannelFilter = t, s.hasNext ? s.next((e, t) => {
-							if (t) 800170 !== t.code && a(t);
-							else {
+						e === h.b.INVITED && t === h.h.NonSuper ? this.channelListQueryInvited ? s = this.channelListQueryInvited : (this.channelListQueryInvited = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvited) : e === h.b.JOINED && t === h.h.NonSuper ? this.channelListQueryJoined ? s = this.channelListQueryJoined : (this.channelListQueryJoined = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoined) : e === h.b.JOINED && t === h.h.Super ? this.channelListQueryJoinedSubreddit ? s = this.channelListQueryJoinedSubreddit : (this.channelListQueryJoinedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoinedSubreddit) : e === h.b.INVITED && t === h.h.Super && (this.channelListQueryInvitedSubreddit ? s = this.channelListQueryInvitedSubreddit : (this.channelListQueryInvitedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvitedSubreddit)), s ? (s.includeEmpty = !0, s.limit = v.a.Channels, s.order = h.d.LATEST_MESSAGE, s.memberStateFilter = e === h.b.INVITED ? h.g.INVITED : h.g.JOINED, s.superChannelFilter = t, s.hasNext ? s.next((e, t) => {
+							if (!t && s) {
 								const t = s.hasNext;
 								n({
 									channels: e,
 									hasMoreChannels: t
 								})
-							}
-						}) : n()
+							} else 800170 !== t.code && n()
+						}) : n()) : a()
 					})
 				}
 				getSubredditChannelMembers() {
@@ -12761,7 +12773,7 @@
 					return new Promise((n, a) => {
 						if (!this.channel) return a(new Error("this.channel is null or undefined"));
 						this.memberListQuery = this.channel.createMemberListQuery(), this.memberListQuery ? (this.memberListQuery.nicknameStartsWithFilter = e, this.memberListQuery.next((a, s) => {
-							const c = Object(D.a)(a),
+							const c = Object(A.a)(a),
 								r = c.filter(n => t && n && n.name === e || !t && n);
 							c.length && this.dispatch(Object(j.i)(c)), n(r)
 						})) : a(Error("this.memberListQuery is null or undefined"))
@@ -12773,25 +12785,23 @@
 				endTypingIndicator() {
 					this.channel && this.channel.endTyping()
 				}
-				getPreviousMessages(e, t) {
-					return new Promise((n, a) => {
-						if (this.channel) {
-							const s = {};
-							t && this.createPreviousMessageListQuery(), this.messageListQuery ? this.messageListQuery.load(v.a.Messages, !0, e, (e, t) => {
-								if (!t && this.messageListQuery) {
-									e.forEach(e => {
-										s[e.messageId] = Object(A.b)(e)
-									});
-									const {
-										hasMore: t
-									} = this.messageListQuery;
-									n({
-										messages: s,
-										hasMore: t
-									})
-								} else a()
-							}) : a()
-						} else a()
+				getPreviousMessages(e) {
+					return new Promise((t, n) => {
+						e && this.createPreviousMessageListQuery(), this.channel && this.prevMessageListQuery ? (this.prevMessageListQuery.reverse = !0, this.prevMessageListQuery.limit = v.a.Messages, this.prevMessageListQuery.load((e, a) => {
+							if (!a && this.prevMessageListQuery) {
+								const n = {},
+									{
+										hasMore: a
+									} = this.prevMessageListQuery;
+								e.forEach(e => {
+									const t = Object(M.b)(e);
+									t && (n[t.messageId] = t)
+								}), t({
+									messages: n,
+									hasMore: a
+								})
+							} else Object(x.b)("Error with getting previous messages from Sendbird: ".concat(a)), n()
+						})) : (Object(x.b)("Sendbird channel does not exist"), n())
 					})
 				}
 				addMessage(e, t) {
@@ -12804,20 +12814,20 @@
 								c.mentionType = e.BaseMessageParams.MentionType.USERS, c.mentionedUserIds = n
 							}
 							this.channel.sendUserMessage(c, (e, t) => {
-								t ? s() : a(Object(A.b)(e))
+								t ? (Object(x.b)("Error with sending the message to Sendbird: ".concat(t)), s()) : a(Object(M.b)(e))
 							})
 						}
 					})
 				}
 				createPreviousMessageListQuery() {
-					this.channel && (this.messageListQuery = this.channel.createPreviousMessageListQuery())
+					this.channel && (this.prevMessageListQuery = this.channel.createPreviousMessageListQuery())
 				}
 				deleteMessage(e) {
 					return new Promise(t => {
 						if (this.channel) {
 							const n = e;
 							this.channel.deleteMessage(n, (e, n) => {
-								n || t(e)
+								n ? Object(x.b)("Error with deleting the message on Sendbird: ".concat(n)) : t(e)
 							})
 						}
 					})
@@ -12825,8 +12835,8 @@
 				getFirstMessage() {
 					return new Promise((e, t) => {
 						this.channel ? this.channel.getNextMessagesByTimestamp(0, !0, 1, !0, "", "", (t, n) => {
-							n || e(t)
-						}) : t()
+							n ? Object(x.b)("Error with getting first message from Sendbird: ".concat(n)) : e(t)
+						}) : (Object(x.b)("Sendbird channel does not exist"), t())
 					})
 				}
 				getUnreadCount() {
@@ -12865,13 +12875,13 @@
 						s && s.setPushPreference(c, (e, t) => t ? a(t) : n())
 					})
 				}
-				resetChannelMessageListQuery() {
+				resetPreviousMessageListQuery() {
 					return new Promise((e, t) => {
-						this.channel ? (this.messageListQuery = this.channel.createPreviousMessageListQuery(), e()) : t("this.channel does not exist")
+						this.channel ? (this.createPreviousMessageListQuery(), e()) : t("this.channel does not exist")
 					})
 				}
 			};
-			t.b = B
+			t.b = U
 		},
 		"./src/chat/tracking/events/chatPreview.ts": function(e, t, n) {
 			"use strict";
@@ -13352,9 +13362,9 @@
 			})), n.d(t, "u", (function() {
 				return B
 			})), n.d(t, "a", (function() {
-				return R
-			})), n.d(t, "d", (function() {
 				return P
+			})), n.d(t, "d", (function() {
+				return R
 			})), n.d(t, "l", (function() {
 				return H
 			})), n.d(t, "y", (function() {
@@ -13534,13 +13544,13 @@
 						recipient_user_id: n ? s : null
 					}
 				},
-				R = (e, t) => {
+				P = (e, t) => {
 					const n = Object(d.b)(e, t);
 					return {
 						recipient_user_id: n ? n.id : null
 					}
 				},
-				P = e => {
+				R = e => {
 					const t = Object(d.k)(e);
 					return {
 						recipient_user_id: 1 === t.length ? t[0] : null
@@ -14176,4 +14186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.f1c562360da1bd336e02.js.map
+//# sourceMappingURL=Chat~RedesignChat.83a54243847e3bcd81f5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d2dfc379f1f3b02e02d3.js
-// Retrieved at 8/6/2020, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9d32c0506cdaefa1439a.js
+// Retrieved at 8/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -55,16 +55,20 @@
 					return n
 				})), i.d(t, "a", (function() {
 					return r
-				})), i.d(t, "g", (function() {
+				})), i.d(t, "i", (function() {
 					return s
-				})), i.d(t, "f", (function() {
+				})), i.d(t, "h", (function() {
 					return o
-				})), i.d(t, "d", (function() {
+				})), i.d(t, "g", (function() {
 					return d
-				})), i.d(t, "e", (function() {
+				})), i.d(t, "d", (function() {
 					return l
-				})), i.d(t, "c", (function() {
+				})), i.d(t, "e", (function() {
 					return a
+				})), i.d(t, "f", (function() {
+					return u
+				})), i.d(t, "c", (function() {
+					return c
 				})),
 				function(e) {
 					e.JOINED = "JOINED", e.INVITED = "INVITED", e.PARTIAL = "PARTIAL", e.UNSORTED = "NONE"
@@ -73,16 +77,22 @@
 					e.BLOCK = "block", e.CREATE = "create", e.DECLINE_REQUEST = "decline", e.INVITE_MEMBERS = "invite", e.INVITE_MEMBERS_CONFIRMATION = "invite_confirmation", e.DENY = "deny", e.LEAVE = "leave", e.LOCK_CHANNEL_CONFIRMATION = "lock_confirmation", e.VIEW_JOIN = "join", e.VIEW_MEMBERS = "members", e.VIEW_NSFW_CONFIRMATION = "nsfw", e.VIEW_PRIVATE = "private", e.VIEW_INVITE = "invited"
 				}(r || (r = {}));
 			const s = [r.DENY, r.VIEW_JOIN, r.VIEW_PRIVATE];
-			var o;
+			var o, d, l;
 			! function(e) {
 				e.NonSuper = "nonsuper", e.Super = "super"
-			}(o || (o = {}));
-			const d = 30,
-				l = 99;
-			var a;
+			}(o || (o = {})),
+			function(e) {
+				e.ALL = "all", e.JOINED = "joined_only", e.INVITED = "invited_only", e.INVITED_BY_FRIEND = "invited_by_friend", e.INVITED_BY_NON_FRIEND = "invited_by_non_friend"
+			}(d || (d = {})),
+			function(e) {
+				e.LATEST_MESSAGE = "latest_last_message", e.CHRONOLOGICAL = "chronological", e.ALPHABETICAL = "channel_name_alphabetical", e.METADATA_ALPHABETICAL = "metadata_value_alphabetical"
+			}(l || (l = {}));
+			const a = 30,
+				u = 99;
+			var c;
 			! function(e) {
 				e.All = "all", e.UnreadMessages = "unread_message_count_only", e.Off = "off"
-			}(a || (a = {}))
+			}(c || (c = {}))
 		},
 		"./src/chat/constants/container.ts": function(e, t, i) {
 			"use strict";
@@ -127,7 +137,7 @@
 					return s
 				})),
 				function(e) {
-					e.ADMIN = "admin", e.USER = "user", e.PENDING = "pending"
+					e.SYSTEM = "admin", e.USER = "user", e.PENDING = "pending"
 				}(n || (n = {})),
 				function(e) {
 					e.TEXT = "text", e.POST = "post", e.EMBED = "embedCollection", e.SNOOMOJI = "snoomoji"
@@ -913,10 +923,11 @@
 		"./src/chat/models/Message/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return c
-			})), i.d(t, "a", (function() {
 				return _
+			})), i.d(t, "a", (function() {
+				return m
 			}));
+			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/uuid/v4.js"),
 				r = i.n(n),
 				s = i("./src/chat/constants/messages.ts"),
@@ -924,43 +935,43 @@
 				d = i("./src/chat/models/Message/adapter.ts"),
 				l = i("./src/chat/selectors/messages.ts"),
 				a = i("./src/chat/selectors/user.ts");
-
-			function u(e) {
-				if (e && e.messageType === s.c.USER) {
-					return e.sender
-				}
-			}
+			const u = new Set([s.c.USER, s.c.SYSTEM]);
 
 			function c(e) {
-				if (e && e.messageType === s.c.USER) {
+				if (e && e.messageType === s.c.USER) return e.sender
+			}
+
+			function _(e) {
+				if ((t = e) && u.has(t.messageType)) {
 					const {
 						channelUrl: t,
-						messageType: i,
-						messageId: n,
+						messageId: i,
+						messageType: n,
 						createdAt: r,
 						updatedAt: l,
 						channelType: a,
-						message: c,
+						message: u,
 						data: _,
 						customType: m
 					} = e;
 					return {
 						channelId: Object(o.a)(t),
 						channelSendbirdUrl: t,
-						messageType: s.c[i],
-						messageId: n,
+						messageType: s.c[n],
+						messageId: i,
 						createdAt: r,
 						updatedAt: l,
 						channelType: a,
 						data: _,
-						messageData: Object(d.c)(c, _),
-						sender: u(e),
+						messageData: Object(d.c)(u, _),
+						sender: c(e),
 						customType: m
 					}
 				}
+				var t
 			}
 
-			function _(e, t, i, n) {
+			function m(e, t, i, n) {
 				const o = r()(),
 					u = Object(l.b)(e, i),
 					c = JSON.stringify(Object(d.a)(i, n, o, u));
@@ -3291,14 +3302,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("4d6b6ea-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("316a198-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4d6b6ea-production",
+						release: "316a198-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3726,7 +3737,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "4d6b6ea-production",
+							releaseClient: "316a198-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -22022,4 +22033,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.d2dfc379f1f3b02e02d3.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.9d32c0506cdaefa1439a.js.map

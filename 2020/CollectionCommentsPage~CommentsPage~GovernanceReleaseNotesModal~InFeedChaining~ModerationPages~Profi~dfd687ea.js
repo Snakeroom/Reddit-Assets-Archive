@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.ac2adb470451f50b9a01.js
-// Retrieved at 8/6/2020, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.46e7319b7f6524c335ed.js
+// Retrieved at 8/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "4d6b6ea-production"
+					SENTRY_RELEASE_VERSION: "316a198-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -1773,4 +1773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.ac2adb470451f50b9a01.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.46e7319b7f6524c335ed.js.map
