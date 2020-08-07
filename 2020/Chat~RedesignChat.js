@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ac18aa6683e0fd4eb376.js
-// Retrieved at 8/6/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4acf22c959d87b512ddc.js
+// Retrieved at 8/7/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -12732,7 +12732,7 @@
 				getExistingChannels(e, t) {
 					return new Promise((n, a) => {
 						let s;
-						e === h.b.INVITED && t === h.h.NonSuper ? this.channelListQueryInvited ? s = this.channelListQueryInvited : (this.channelListQueryInvited = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvited) : e === h.b.JOINED && t === h.h.NonSuper ? this.channelListQueryJoined ? s = this.channelListQueryJoined : (this.channelListQueryJoined = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoined) : e === h.b.JOINED && t === h.h.Super ? this.channelListQueryJoinedSubreddit ? s = this.channelListQueryJoinedSubreddit : (this.channelListQueryJoinedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoinedSubreddit) : e === h.b.INVITED && t === h.h.Super && (this.channelListQueryInvitedSubreddit ? s = this.channelListQueryInvitedSubreddit : (this.channelListQueryInvitedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvitedSubreddit)), s ? (s.includeEmpty = !0, s.limit = v.a.Channels, s.order = h.d.ALPHABETICAL, s.memberStateFilter = e === h.b.INVITED ? h.g.INVITED : h.g.JOINED, s.superChannelFilter = t, s.hasNext ? s.next((e, t) => {
+						e === h.b.INVITED && t === h.h.NonSuper ? this.channelListQueryInvited ? s = this.channelListQueryInvited : (this.channelListQueryInvited = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvited) : e === h.b.JOINED && t === h.h.NonSuper ? this.channelListQueryJoined ? s = this.channelListQueryJoined : (this.channelListQueryJoined = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoined) : e === h.b.JOINED && t === h.h.Super ? this.channelListQueryJoinedSubreddit ? s = this.channelListQueryJoinedSubreddit : (this.channelListQueryJoinedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryJoinedSubreddit) : e === h.b.INVITED && t === h.h.Super && (this.channelListQueryInvitedSubreddit ? s = this.channelListQueryInvitedSubreddit : (this.channelListQueryInvitedSubreddit = this.self.GroupChannel.createMyGroupChannelListQuery(), s = this.channelListQueryInvitedSubreddit)), s ? (s.includeEmpty = !0, s.limit = v.a.Channels, s.order = h.d.LATEST_MESSAGE, s.memberStateFilter = e === h.b.INVITED ? h.g.INVITED : h.g.JOINED, s.superChannelFilter = t, s.hasNext ? s.next((e, t) => {
 							if (!t && s) {
 								const t = s.hasNext;
 								n({
@@ -14202,4 +14202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.ac18aa6683e0fd4eb376.js.map
+//# sourceMappingURL=Chat~RedesignChat.4acf22c959d87b512ddc.js.map
