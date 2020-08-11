@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.287342bc82d3bf38b6cf.js
-// Retrieved at 8/7/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f4d0f20b031217c0ac78.js
+// Retrieved at 8/10/2020, 8:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -52,7 +52,7 @@
 			e.exports = JSON.parse('{"id":"5d042135b4c5"}')
 		},
 		"./src/graphql/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"7f004d5e6360"}')
+			e.exports = JSON.parse('{"id":"e8568fabf332"}')
 		},
 		"./src/graphql/operations/GetPostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"4231b7734ef9"}')
@@ -79,7 +79,7 @@
 			e.exports = JSON.parse('{"id":"3c148c0b5100"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"59ca8a8c57a2"}')
+			e.exports = JSON.parse('{"id":"3c777c207ba6"}')
 		},
 		"./src/graphql/operations/OtherDiscussions.json": function(e) {
 			e.exports = JSON.parse('{"id":"09a722d4aee1"}')
@@ -130,7 +130,7 @@
 			e.exports = JSON.parse('{"id":"e74dba05ccd0"}')
 		},
 		"./src/graphql/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"96112c8b4d31"}')
+			e.exports = JSON.parse('{"id":"1857a451ee3c"}')
 		},
 		"./src/graphql/operations/SubredditPostFlairStyleTemplates.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a87d9b91dc4"}')
@@ -160,7 +160,7 @@
 			e.exports = JSON.parse('{"id":"6b02a7856ab1"}')
 		},
 		"./src/graphql/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"6fcd4bcde8ed"}')
+			e.exports = JSON.parse('{"id":"741985a782f7"}')
 		},
 		"./src/graphql/operations/UpdatePostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"8732ab4560ce"}')
@@ -26310,6 +26310,7 @@
 				nightmode: e.isNightModeEnabled,
 				over18: e.isNsfwContentShown,
 				reduceAnimationsFromAwards: e.isReduceAnimationsFromAwardsEnabled,
+				showLocationBasedRecommendations: e.isLocationBasedRecommendationEnabled,
 				account: {
 					openPostInNewTab: e.isNewTabOpenedForPostView,
 					rpanDuDismissalTime: e.rpanDuDismissedAt,
@@ -55440,4 +55441,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.287342bc82d3bf38b6cf.js.map
+//# sourceMappingURL=Governance~Reddit.f4d0f20b031217c0ac78.js.map
