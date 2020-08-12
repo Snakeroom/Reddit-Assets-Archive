@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.36689ed221673fafca59.js
-// Retrieved at 8/10/2020, 8:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f49907be09366680aa4e.js
+// Retrieved at 8/12/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3310,14 +3310,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("817eb87-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("f2a0653-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "817eb87-production",
+						release: "f2a0653-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3745,7 +3745,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "817eb87-production",
+							releaseClient: "f2a0653-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -7814,10 +7814,10 @@
 			var n = i("./src/reddit/selectors/platform.ts");
 			const r = new Set(["daonuts", "ethtrader", "karma_chameleon", "pointsrtesty", "stellartest"]),
 				s = new Set(["cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
-				o = new Set(["badgesroyaletest", "cryptocurrencytest", "fortnitebr", "funkygoose"]),
+				o = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose"]),
 				d = new Set(["daonuts", "ethtrader", "stellartest"]),
 				l = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
-				a = new Set(["cryptocurrencytest", "fortnitebr", "funkygoose"]),
+				a = new Set(["cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose"]),
 				u = new Set(["badgesroyaletest", "daonuts", "cryptocurrency", "cryptocurrencytest", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
 				c = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
 				_ = new Set(["daonuts", "ethtrader", "funkygoose", "stellar"]),
@@ -7833,7 +7833,7 @@
 				T = new Set(["funkygoose"]),
 				S = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "shittymorph", "stellartest"]),
 				F = new Set(["daonuts", "ethtrader", "funkygoose", "mountainbiking", "stellar", "stellartest"]),
-				E = new Set(["cryptocurrencytest", "funkygoose", "gigapoints", "pointsnitebr"]),
+				E = new Set(["cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
 				I = new Set(["stellar", "stellartest"]),
 				O = new Set(["daonuts", "ethtrader"]),
 				j = function() {
@@ -22079,4 +22079,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.36689ed221673fafca59.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.f49907be09366680aa4e.js.map
