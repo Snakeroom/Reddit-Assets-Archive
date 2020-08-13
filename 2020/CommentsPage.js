@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.68192c98c02e6a7f2429.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.20c27ab8ca26626a936f.js
+// Retrieved at 8/13/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -16273,7 +16273,7 @@
 							shouldScrollToComments: r
 						}
 					} = this;
-					if (o && !o.isSponsored && !o.isRemoved) {
+					if (o && !o.isSponsored && !o.isRemoved && o.belongsTo.type !== K.a.PROFILE) {
 						const e = await this.props.fetchCommentsNativeAd(o.id);
 						e && this.setState({
 							commentNativeAdId: e
@@ -16980,4 +16980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.68192c98c02e6a7f2429.js.map
+//# sourceMappingURL=CommentsPage.20c27ab8ca26626a936f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a5a7aa93600647c2707c.js
-// Retrieved at 8/13/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b3184dc74114795ff9ae.js
+// Retrieved at 8/13/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -860,67 +860,70 @@
 		"./src/reddit/actions/ads/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return g
+				return f
 			})), s.d(t, "b", (function() {
-				return y
-			})), s.d(t, "c", (function() {
 				return E
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return I
+			})), s.d(t, "a", (function() {
+				return v
 			}));
 			var n = s("./src/lib/makeActionCreator/index.ts"),
-				r = s("./src/config.ts"),
-				a = s("./src/lib/constants/index.ts"),
-				i = s("./src/lib/makeApiRequest/index.ts");
-			const c = async e => {
+				r = s("./src/reddit/constants/posts.ts"),
+				a = s("./src/config.ts"),
+				i = s("./src/lib/constants/index.ts"),
+				c = s("./src/lib/makeApiRequest/index.ts");
+			const o = async e => {
 				let {
 					context: t,
 					count: s,
 					subreddit: n,
-					forceAd: c
+					forceAd: r
 				} = e;
 				const o = {
 					count: s
 				};
-				return n && (o.subreddit = n), c && (o.sidebar_ad = c), Object(i.a)(t, {
+				return n && (o.subreddit = n), r && (o.sidebar_ad = r), Object(c.a)(t, {
 					type: "json",
-					endpoint: "".concat(r.a.gatewayUrl, "/desktopapi/v1/sidebar_ads"),
-					method: a.db.POST,
+					endpoint: "".concat(a.a.gatewayUrl, "/desktopapi/v1/sidebar_ads"),
+					method: i.db.POST,
 					data: o
 				})
 			};
-			var o = s("./src/reddit/helpers/adCount/index.ts"),
-				d = s("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
-				u = s("./src/reddit/selectors/brandSafety.ts"),
-				l = s("./src/reddit/selectors/platform.ts"),
-				b = s("./src/reddit/selectors/posts.ts"),
-				p = s("./src/reddit/actions/ads/constants.ts");
-			const O = Object(n.a)(p.a),
-				g = e => async (t, s) => {
+			var d = s("./src/reddit/helpers/adCount/index.ts"),
+				u = s("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
+				l = s("./src/reddit/selectors/brandSafety.ts"),
+				b = s("./src/reddit/selectors/platform.ts"),
+				p = s("./src/reddit/selectors/posts.ts"),
+				O = s("./src/reddit/actions/ads/constants.ts");
+			const g = Object(n.a)(O.a),
+				f = e => async (t, s) => {
 					const n = s();
-					Object(u.c)(n) && Object(u.d)(n) === e.isViewSafe || t(O(e))
-				}, f = Object(n.a)(p.d), m = Object(n.a)(p.e), j = Object(n.a)(p.f), _ = Object(n.a)(p.g), h = (Object(n.a)(p.h), Object(n.a)(p.b)), y = (Object(n.a)(p.c), e => async (t, s, n) => {
+					Object(l.c)(n) && Object(l.d)(n) === e.isViewSafe || t(g(e))
+				}, m = Object(n.a)(O.d), j = Object(n.a)(O.e), _ = Object(n.a)(O.f), h = Object(n.a)(O.g), y = (Object(n.a)(O.h), Object(n.a)(O.b)), E = (Object(n.a)(O.c), e => async (t, s, n) => {
 					let {
-						apiContext: r
+						apiContext: a
 					} = n;
-					const a = s(),
-						i = Object(l.q)(a),
-						u = Object(o.b)(a, e),
-						p = u.length;
-					if (0 === p) return;
+					const i = s(),
+						c = Object(b.q)(i),
+						l = Object(d.b)(i, e),
+						O = l.length;
+					if (0 === O) return;
 					switch (e) {
-						case d.a.COMMENTS:
-						case d.a.COMMENTS_OVERLAY:
-							if (!Object(l.n)(a, {
-									page: a.platform.currentPage
-								})) return;
-							break;
-						case d.a.FRONTPAGE:
-						case d.a.MULTIREDDIT:
-						case d.a.SEARCH_RESULTS:
-						case d.a.SUBREDDIT: {
-							const e = a.listings.activeKey,
-								t = Object(b.U)(a, {
+						case u.a.COMMENTS:
+						case u.a.COMMENTS_OVERLAY: {
+							const e = Object(b.n)(i, {
+								page: i.platform.currentPage
+							});
+							if (!e || e.belongsTo.type === r.a.PROFILE) return;
+							break
+						}
+						case u.a.FRONTPAGE:
+						case u.a.MULTIREDDIT:
+						case u.a.SEARCH_RESULTS:
+						case u.a.SUBREDDIT: {
+							const e = i.listings.activeKey,
+								t = Object(p.U)(i, {
 									listingKey: e
 								});
 							if (!t || !t.length) return;
@@ -929,69 +932,69 @@
 						default:
 							return void 0
 					}
-					const O = Object(l.e)(a);
-					let g;
-					if ((g = await c({
-							context: r(),
-							count: p,
-							subreddit: O || void 0,
-							forceAd: i ? i.sidebar_ad : void 0
-						})).body && g.body.length) {
-						const e = g.body,
+					const g = Object(b.e)(i);
+					let f;
+					if ((f = await o({
+							context: a(),
+							count: O,
+							subreddit: g || void 0,
+							forceAd: c ? c.sidebar_ad : void 0
+						})).body && f.body.length) {
+						const e = f.body,
 							s = {};
-						for (let t = 0; t < e.length; t++) s[u[t]] = e[t];
-						t(f(s))
-					} else t(m(g.error))
-				}), E = e => async (t, s, n) => {
+						for (let t = 0; t < e.length; t++) s[l[t]] = e[t];
+						t(m(s))
+					} else t(j(f.error))
+				}), I = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const a = s(),
-						i = Object(l.q)(a),
-						o = await c({
+						i = Object(b.q)(a),
+						c = await o({
 							context: r(),
 							count: 1,
 							forceAd: i ? i.sidebar_ad : void 0
 						});
-					o.body && o.body.length ? t(j({
-						[e]: o.body[0]
-					})) : t(_(o.error))
-				}, I = e => async (t, s, n) => {
+					c.body && c.body.length ? t(_({
+						[e]: c.body[0]
+					})) : t(h(c.error))
+				}, v = e => async (t, s, n) => {
 					let {
-						apiContext: c
+						apiContext: r
 					} = n;
 					const o = s(),
-						d = Object(l.q)(o),
-						u = Object(l.e)(o),
-						b = await (async e => {
+						d = Object(b.q)(o),
+						u = Object(b.e)(o),
+						l = await (async e => {
 							let {
 								context: t,
 								count: s,
 								postId: n,
-								subredditName: c,
+								subredditName: r,
 								forceAd: o
 							} = e;
 							const d = {
 								count: s,
-								subreddit: c,
+								subreddit: r,
 								post_id: n,
 								comments_ad: o
 							};
-							return Object(i.a)(t, {
+							return Object(c.a)(t, {
 								type: "json",
-								endpoint: "".concat(r.a.gatewayUrl, "/desktopapi/v1/comments_page_ads"),
-								method: a.db.POST,
+								endpoint: "".concat(a.a.gatewayUrl, "/desktopapi/v1/comments_page_ads"),
+								method: i.db.POST,
 								data: d
 							})
 						})({
-							context: c(),
+							context: r(),
 							count: 1,
 							postId: e,
 							subredditName: u,
 							forceAd: d ? d.comments_ad : void 0
 						});
-					if (b.body && b.body.length) return t(h(b.body)), b.body[0].id;
-					t(m(b.error))
+					if (l.body && l.body.length) return t(y(l.body)), l.body[0].id;
+					t(j(l.error))
 				}
 		},
 		"./src/reddit/actions/apiRequestHeaders.ts": function(e, t, s) {
@@ -55434,4 +55437,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.a5a7aa93600647c2707c.js.map
+//# sourceMappingURL=Governance~Reddit.b3184dc74114795ff9ae.js.map
