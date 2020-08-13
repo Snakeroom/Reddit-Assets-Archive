@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.bcc5c26e0dd6e5b4469b.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.aeeae9584f1b8423f0ca.js
+// Retrieved at 8/13/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -81,7 +81,7 @@
 				return e
 			}
 
-			function V(e, t, i) {
+			function T(e, t, i) {
 				return t in e ? Object.defineProperty(e, t, {
 					value: i,
 					enumerable: !0,
@@ -89,15 +89,15 @@
 					writable: !0
 				}) : e[t] = i, e
 			}
-			var T = ["root", "rootMargin", "threshold"],
+			var V = ["root", "rootMargin", "threshold"],
 				_ = ["root", "rootMargin", "threshold", "disabled"],
-				E = Object.prototype,
-				g = E.hasOwnProperty,
-				y = E.toString,
+				g = Object.prototype,
+				y = g.hasOwnProperty,
+				E = g.toString,
 				w = function(e) {
-					return T.reduce((function(t, i) {
-						if (g.call(e, i)) {
-							var r = "root" === i && "[object String]" === y.call(e[i]);
+					return V.reduce((function(t, i) {
+						if (y.call(e, i)) {
+							var r = "root" === i && "[object String]" === E.call(e[i]);
 							t[i] = r ? document.querySelector(e[i]) : e[i]
 						}
 						return t
@@ -108,26 +108,26 @@
 
 					function r() {
 						for (var t, i = arguments.length, r = new Array(i), n = 0; n < i; n++) r[n] = arguments[n];
-						return V(I(t = e.call.apply(e, [this].concat(r)) || this), "handleChange", (function(e) {
+						return T(I(t = e.call.apply(e, [this].concat(r)) || this), "handleChange", (function(e) {
 							t.props.onChange(e, t.externalUnobserve)
-						})), V(I(t), "handleNode", (function(e) {
+						})), T(I(t), "handleNode", (function(e) {
 							var i = t.props.children;
 							if (null != i) {
 								var r = i.ref;
 								r && ("function" == typeof r ? r(e) : "object" == typeof r && (r.current = e))
 							}
 							t.targetNode = e && Object(s.findDOMNode)(e)
-						})), V(I(t), "observe", (function() {
+						})), T(I(t), "observe", (function() {
 							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = h(w(t.props)), t.target = t.targetNode, e = I(t), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), V(I(t), "unobserve", (function(e) {
+						})), T(I(t), "unobserve", (function(e) {
 							! function(e, t) {
 								if (d.has(e.observer)) {
 									var i = d.get(e.observer);
 									i.delete(e) && (i.size > 0 ? e.observer.unobserve(t) : (e.observer.disconnect(), d.delete(e.observer)))
 								}
 							}(I(t), e)
-						})), V(I(t), "externalUnobserve", (function() {
+						})), T(I(t), "externalUnobserve", (function() {
 							t.unobserve(t.targetNode)
 						})), t
 					}
@@ -154,7 +154,7 @@
 						}) : null
 					}, r
 				}(n.a.Component);
-			V(f, "displayName", "IntersectionObserver")
+			T(f, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, i) {
 			"use strict";
@@ -306,10 +306,6 @@
 					timeViewingInterrupted: 0,
 					cumulative: !0,
 					cumulativeElapsedTime: 0
-				}, {
-					event: m.a.LargeAdFullyViewable,
-					threshold: void 0,
-					viewabilityMinimum: l.VIEWABILITY_TIME
 				}],
 				I = [{
 					event: m.a.VideoViewable,
@@ -341,7 +337,7 @@
 					cumulative: !0,
 					cumulativeElapsedTime: 0
 				}],
-				V = e => e.map(e => {
+				T = e => e.map(e => {
 					let {
 						event: t,
 						cumulative: i = !1,
@@ -366,11 +362,11 @@
 						timeViewingInterrupted: d
 					}
 				}),
-				T = () => V(v),
-				_ = () => V(I),
-				E = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
-				g = [l.IMPRESSION_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
-				y = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
+				V = () => T(v),
+				_ = () => T(I),
+				g = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
+				y = [l.IMPRESSION_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
+				E = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
 				w = e => "boolean" == typeof e.cumulative && e.cumulative,
 				f = Object(a.c)({
 					continuousViewingStartedAt: (e, t) => {
@@ -400,10 +396,10 @@
 						})
 					}
 				}),
-				L = Object(h.a)(f);
-			class O extends s.Component {
+				O = Object(h.a)(f);
+			class L extends s.Component {
 				constructor(e) {
-					super(e), this.viewabilityStats = T(), this.videoStats = _(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
+					super(e), this.viewabilityStats = V(), this.videoStats = _(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
 						this.props.trackDisplay && this.handleThresholds(e, l.ViewabilityThresholds), this.props.trackVideo && this.handleThresholds(e, l.VideoViewabilityThresholds, !0), this.checkViewabilityByType(e)
 					}, this.checkViewabilityByType = e => {
 						n()(this.state.event, e) || this.setState({
@@ -463,7 +459,7 @@
 					} = this.props, s = t.filter(t => this.meetsViewabilityRequirements(e, t));
 					!n()(s, this.inViewStats) && s.length > 0 && u.b(r.id, s, i);
 					const o = t.filter(t => !this.meetsViewabilityRequirements(e, t));
-					!n()(o, this.outOfViewStats) && o.length > 0 && u.e(r.id, o, i), this.outOfViewStats = o, this.inViewStats = s
+					!n()(o, this.outOfViewStats) && o.length > 0 && u.d(r.id, o, i), this.outOfViewStats = o, this.inViewStats = s
 				}
 				isAdequatelyInView(e, t) {
 					return !!e && e.intersectionRatio >= t && this.pageInFocus
@@ -476,7 +472,7 @@
 						height: i,
 						width: r
 					} = e.boundingClientRect;
-					return !t.threshold && t.event === m.a.VideoGroupMViewable && this.props.videoDuration && (t.threshold = r * i < 3e5 ? l.FULL_VIEWABILITY_THRESHOLD : l.VIDEO_GROUPM_THRESHOLD, t.viewabilityMinimum = .5 * this.props.videoDuration), t.threshold || t.event !== m.a.LargeAdFullyViewable || r * i >= 242500 && (t.threshold = l.LARGE_AD_FULL_VIEW_THRESHOLD), t.event === m.a.GroupMViewable && r * i > 242500 && (t.threshold = l.VIEWABILITY_THRESHOLD), t
+					return !t.threshold && t.event === m.a.VideoGroupMViewable && this.props.videoDuration && (t.threshold = r * i < 3e5 ? l.FULL_VIEWABILITY_THRESHOLD : l.VIDEO_GROUPM_THRESHOLD, t.viewabilityMinimum = .5 * this.props.videoDuration), t.event === m.a.GroupMViewable && r * i > 242500 && (t.threshold = l.VIEWABILITY_THRESHOLD), t
 				}
 				checkViewability(e, t) {
 					if (w(t) && t.event === m.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
@@ -507,14 +503,14 @@
 						trackDisplay: e,
 						trackVideo: t
 					} = this.props;
-					let i = E;
-					return e && !t ? i = y : !e && t && (i = g), o.a.createElement(d.a, {
+					let i = g;
+					return e && !t ? i = E : !e && t && (i = y), o.a.createElement(d.a, {
 						threshold: i,
 						onChange: this.handleViewabilityChange
 					}, this.props.children)
 				}
 			}
-			t.a = L(O)
+			t.a = O(L)
 		},
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, i) {
 			"use strict";
@@ -559,4 +555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.bcc5c26e0dd6e5b4469b.js.map
+//# sourceMappingURL=reddit-components-BlankPost.aeeae9584f1b8423f0ca.js.map

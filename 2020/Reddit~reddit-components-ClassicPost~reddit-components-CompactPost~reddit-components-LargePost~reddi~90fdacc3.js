@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.66b1d718c4ff0661c66f.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.51887c425250adefcc4e.js
+// Retrieved at 8/13/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -284,10 +284,6 @@
 					timeViewingInterrupted: 0,
 					cumulative: !0,
 					cumulativeElapsedTime: 0
-				}, {
-					event: p.a.LargeAdFullyViewable,
-					threshold: void 0,
-					viewabilityMinimum: l.VIEWABILITY_TIME
 				}],
 				x = [{
 					event: p.a.VideoViewable,
@@ -441,7 +437,7 @@
 					} = this.props, i = t.filter(t => this.meetsViewabilityRequirements(e, t));
 					!r()(i, this.inViewStats) && i.length > 0 && d.b(n.id, i, s);
 					const o = t.filter(t => !this.meetsViewabilityRequirements(e, t));
-					!r()(o, this.outOfViewStats) && o.length > 0 && d.e(n.id, o, s), this.outOfViewStats = o, this.inViewStats = i
+					!r()(o, this.outOfViewStats) && o.length > 0 && d.d(n.id, o, s), this.outOfViewStats = o, this.inViewStats = i
 				}
 				isAdequatelyInView(e, t) {
 					return !!e && e.intersectionRatio >= t && this.pageInFocus
@@ -454,7 +450,7 @@
 						height: s,
 						width: n
 					} = e.boundingClientRect;
-					return !t.threshold && t.event === p.a.VideoGroupMViewable && this.props.videoDuration && (t.threshold = n * s < 3e5 ? l.FULL_VIEWABILITY_THRESHOLD : l.VIDEO_GROUPM_THRESHOLD, t.viewabilityMinimum = .5 * this.props.videoDuration), t.threshold || t.event !== p.a.LargeAdFullyViewable || n * s >= 242500 && (t.threshold = l.LARGE_AD_FULL_VIEW_THRESHOLD), t.event === p.a.GroupMViewable && n * s > 242500 && (t.threshold = l.VIEWABILITY_THRESHOLD), t
+					return !t.threshold && t.event === p.a.VideoGroupMViewable && this.props.videoDuration && (t.threshold = n * s < 3e5 ? l.FULL_VIEWABILITY_THRESHOLD : l.VIDEO_GROUPM_THRESHOLD, t.viewabilityMinimum = .5 * this.props.videoDuration), t.event === p.a.GroupMViewable && n * s > 242500 && (t.threshold = l.VIEWABILITY_THRESHOLD), t
 				}
 				checkViewability(e, t) {
 					if (I(t) && t.event === p.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
@@ -4061,4 +4057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.66b1d718c4ff0661c66f.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.51887c425250adefcc4e.js.map
