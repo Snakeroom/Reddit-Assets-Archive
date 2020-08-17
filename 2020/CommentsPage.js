@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.78ff17fedbd9922d4c89.js
-// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b2f040cbeb126786cb04.js
+// Retrieved at 8/17/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3005,7 +3005,7 @@
 						[u.a.isActive]: t
 					}),
 					onClick: () => {
-						d && i ? i() : s && s(), e("load_more_comment")()
+						d && i ? (i(), e("load_more_comment_live")()) : s && (s(), (null == n ? void 0 : n.isFromLiveWebSocket) ? e("load_more_comment_live")() : e("load_more_comment")())
 					}
 				}, h._({
 					"*": "{number of more replies hidden} more replies",
@@ -16980,4 +16980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.78ff17fedbd9922d4c89.js.map
+//# sourceMappingURL=CommentsPage.b2f040cbeb126786cb04.js.map
