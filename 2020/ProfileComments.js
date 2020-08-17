@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.829bf5ddae0c52efd412.js
-// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.141db4f009a771f9978d.js
+// Retrieved at 8/17/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -9984,4 +9984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.829bf5ddae0c52efd412.js.map
+//# sourceMappingURL=ProfileComments.141db4f009a771f9978d.js.map
