@@ -1,12 +1,12 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.60637a182456885998bb.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.38198797820ebfad519e.js
+// Retrieved at 8/17/2020, 7:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
 			e.exports = JSON.parse('{"id":"4e43964bff6f"}')
 		},
 		"./src/graphql/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"fe4ec1ec445d"}')
+			e.exports = JSON.parse('{"id":"fb9d772fb5bb"}')
 		},
 		"./src/graphql/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"2a194e7926dd"}')
@@ -2499,4 +2499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.60637a182456885998bb.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.38198797820ebfad519e.js.map
