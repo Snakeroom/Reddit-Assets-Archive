@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.83e563c3f31a2df8a7db.js
-// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4c21f071e02f846fc4d6.js
+// Retrieved at 8/17/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -9068,18 +9068,18 @@
 						uiStep: u
 					}
 				},
-				E = (e, t) => {
-					const s = Object(i.c)();
+				E = (e, t, s) => {
+					const a = Object(i.c)();
 					Object(o.useEffect)(() => {
-						!e && t > 0 && setTimeout(() => {
-							s(Object(d.e)({
+						e && !t && s > 0 && setTimeout(() => {
+							a(Object(d.e)({
 								text: n.fbt._("Thanks for your feedback!", null, {
 									hk: "11jNYw"
 								}),
 								kind: v.b.SuccessCommunityGreen
 							}))
 						}, 500)
-					}, [s, e, t])
+					}, [a, e, t, s])
 				}
 		},
 		"./src/reddit/components/Survey/index.tsx": function(e, t, s) {
@@ -13682,4 +13682,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.83e563c3f31a2df8a7db.js.map
+//# sourceMappingURL=Reddit.4c21f071e02f846fc4d6.js.map
