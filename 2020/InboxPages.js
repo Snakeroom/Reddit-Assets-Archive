@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxPages.03c29c844e758886de9f.js
-// Retrieved at 8/5/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxPages.0bcf2609120b6664f2f8.js
+// Retrieved at 8/17/2020, 3:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxPages"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, s) {
@@ -20,15 +20,14 @@
 			var r = s("./src/config.ts"),
 				o = s("./node_modules/react/index.js"),
 				n = s.n(o),
-				c = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
+				d = s("./node_modules/react-redux/es/index.js"),
+				c = s("./node_modules/reselect/es/index.js"),
 				i = s("./src/lib/addQueryParams/index.ts"),
-				a = s("./src/lib/constants/index.ts"),
-				l = s("./src/lib/env/index.ts"),
-				u = s("./src/reddit/actions/platform.ts"),
-				m = s("./src/reddit/components/IFrame/index.m.less"),
-				p = s.n(m);
-			class b extends n.a.Component {
+				a = s("./src/lib/env/index.ts"),
+				l = s("./src/reddit/actions/platform.ts"),
+				u = s("./src/reddit/components/IFrame/index.m.less"),
+				m = s.n(u);
+			class p extends n.a.Component {
 				constructor() {
 					super(...arguments), this.ref = null
 				}
@@ -49,37 +48,22 @@
 						src: e
 					} = this.props;
 					return n.a.createElement("iframe", {
-						className: p.a.IFrame,
+						className: m.a.IFrame,
 						ref: e => this.setRef(e),
 						src: e,
 						onLoad: () => this.onLoad
 					})
 				}
 			}
-			var f = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				h = s("./src/reddit/constants/componentSizes.ts"),
-				O = s("./src/reddit/helpers/toggleBodyScroll/index.ts"),
-				y = s("./src/reddit/constants/tracking.ts"),
-				g = s("./src/reddit/selectors/telemetry.ts");
-			const j = () => e => Object.assign(Object.assign({
-				action: y.c.VIEW,
-				noun: y.b.SCREEN,
-				source: "global"
-			}, (e => Object.assign({
-				subreddit: g.subreddit(e),
-				userSubreddit: g.userSubreddit(e)
-			}, g.defaults(e)))(e)), {
-				actionInfo: g.actionInfo(e, {
-					pageType: "moderator_mail"
-				})
-			});
-			var v = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/selectors/userPrefs.ts"),
-				S = s("./src/reddit/pages/RedditEmbed/index.m.less"),
-				L = s.n(S);
+			var f = s("./src/reddit/constants/componentSizes.ts"),
+				b = s("./src/reddit/helpers/toggleBodyScroll/index.ts"),
+				h = s("./src/reddit/selectors/user.ts"),
+				O = s("./src/reddit/selectors/userPrefs.ts"),
+				y = s("./src/reddit/pages/RedditEmbed/index.m.less"),
+				g = s.n(y);
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function v() {
+				return (v = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -87,7 +71,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var _ = function(e, t) {
+			var j = function(e, t) {
 				var s = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (s[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -96,30 +80,30 @@
 				}
 				return s
 			};
-			const w = Object(d.c)({
-					isSubscriptionsPinned: x.b,
+			const x = Object(c.c)({
+					isSubscriptionsPinned: O.b,
 					url: e => e.platform.currentPage ? e.platform.currentPage.url : "",
 					servedOrigin: e => "".concat(e.meta.protocol, "://").concat(e.meta.domain),
-					nightmode: v.S
+					nightmode: h.S
 				}),
-				P = Object(c.b)(w, e => ({
-					onTitleChange: t => e(u.l({
+				S = Object(d.b)(x, e => ({
+					onTitleChange: t => e(l.l({
 						title: t
 					}))
 				})),
-				I = e => {
+				L = e => {
 					var {
 						offsetLeft: t,
 						children: s
-					} = e, r = _(e, ["offsetLeft", "children"]);
-					return n.a.createElement("div", E({
-						className: L.a.wrapper,
+					} = e, r = j(e, ["offsetLeft", "children"]);
+					return n.a.createElement("div", v({
+						className: g.a.wrapper,
 						style: {
 							left: t
 						}
 					}, r), s)
 				};
-			class R extends n.a.Component {
+			class _ extends n.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						bodyScrollOffset: 0,
@@ -132,7 +116,7 @@
 							marginRight: e
 						} = document.body.style;
 						!!e != !!this.state.bodyScrollOffset && (e ? this.setState({
-							bodyScrollOffset: Object(O.d)(document.body)
+							bodyScrollOffset: Object(b.d)(document.body)
 						}) : this.setState({
 							bodyScrollOffset: 0
 						}))
@@ -150,7 +134,7 @@
 					this.docObserver && this.docObserver.disconnect()
 				}
 				onLoad(e) {
-					e.title && (e.title.includes(a.L.MODERATOR) && this.props.sendEvent(j()), this.props.onTitleChange(e.title))
+					e.title && this.props.onTitleChange(e.title)
 				}
 				render() {
 					const {
@@ -159,25 +143,25 @@
 						nightmode: s
 					} = this.props;
 					let o = 0;
-					e && (o += h.u), 0 !== this.state.bodyScrollOffset && (o -= this.state.bodyScrollOffset);
-					const c = Object(l.a)() ? t : "true",
-						d = Object(l.a)() ? r.a.redditUrl : "";
-					let a;
-					return a = s ? d + Object(i.a)(this.props.url, {
-						embedded: c,
+					e && (o += f.u), 0 !== this.state.bodyScrollOffset && (o -= this.state.bodyScrollOffset);
+					const d = Object(a.a)() ? t : "true",
+						c = Object(a.a)() ? r.a.redditUrl : "";
+					let l;
+					return l = s ? c + Object(i.a)(this.props.url, {
+						embedded: d,
 						dark: "true"
-					}) : d + Object(i.a)(this.props.url, {
-						embedded: c
-					}), n.a.createElement(I, {
+					}) : c + Object(i.a)(this.props.url, {
+						embedded: d
+					}), n.a.createElement(L, {
 						offsetLeft: o
-					}, n.a.createElement(b, {
-						src: a,
+					}, n.a.createElement(p, {
+						src: l,
 						onLoad: this.onLoad
 					}))
 				}
 			}
-			t.default = P(Object(f.c)(R))
+			t.default = S(_)
 		}
 	}
 ]);
-//# sourceMappingURL=InboxPages.03c29c844e758886de9f.js.map
+//# sourceMappingURL=InboxPages.0bcf2609120b6664f2f8.js.map
