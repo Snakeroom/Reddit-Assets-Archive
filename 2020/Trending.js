@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.916086540f1842fbd00a.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.25730d844d240b18fcaf.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/components/MiniCardPost/index.m.less": function(e, t, s) {
@@ -81,20 +81,20 @@
 					showSubredditMeta: j = !0,
 					showSubredditName: v,
 					subredditOrProfile: N
-				} = e, k = h && h.preview && h.preview.url || void 0, S = h && h.isSponsored ? "promoted_trend" : "trending", E = h && Object(l.a)(h.permalink) || "", I = y && E || O && Object(o.a)("/search", {
+				} = e, S = h && h.preview && h.preview.url || void 0, k = h && h.isSponsored ? "promoted_trend" : "trending", E = h && Object(l.a)(h.permalink) || "", I = y && E || O && Object(o.a)("/search", {
 					q: O.rawQuery,
-					source: S
+					source: k
 				}) || E, D = O ? O.subredditInfo && O.subredditInfo.icon : N && N.icon.url, U = O ? O.subredditInfo && O.subredditInfo.displayText : N && (N.displayText || N.name), V = h ? h.flair.filter(w) : [], A = h ? h.score : 0, F = h ? h.numComments : 0, R = h && h.isSponsored, L = Object(P.a)(e).body, W = "linear-gradient(\n      ".concat(Object(n.g)(L, .2), ",\n      ").concat(Object(n.g)(L, .3), ",\n      ").concat(Object(n.g)(L, .4), ",\n      ").concat(Object(n.g)(L, .6), ",\n      ").concat(Object(n.g)(L, .8), ",\n      ").concat(L, "\n    )"), M = a.a.createElement("div", {
 					id: i,
 					className: Object(d.a)(T.a.trendingPost, {
-						[T.a["m-background"]]: !!k
+						[T.a["m-background"]]: !!S
 					})
 				}, a.a.createElement(g.a, {
 					to: I
 				}, a.a.createElement("div", {
 					className: Object(d.a)(T.a.backgroundWrapper, f.a.backgroundWrapper, t),
 					style: {
-						background: Object(_.g)(Object(P.a)(e).body, k || Object(P.a)(e).banner.backgroundImage, "cover"),
+						background: Object(_.g)(Object(P.a)(e).body, S || Object(P.a)(e).banner.backgroundImage, "cover"),
 						"--SearchDiscoveryUnits-TrendingPosts-Post-background": W
 					}
 				}, R && a.a.createElement("div", {
@@ -209,7 +209,7 @@
 				}
 			}
 			var _ = Object(i.b)(null, e => ({
-					fireAdPixelsOfType: (t, s) => e(Object(m.A)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(m.t)(t, s)),
 					trackPostClick: t => e((e, s) => u.E(s(), t, u.a.POPULAR_CAROUSEL))
 				}))(O),
 				P = s("./src/reddit/contexts/ApiContext.tsx"),
@@ -224,7 +224,7 @@
 				fetchTrendingItems: () => e(Object(o.b)()),
 				trackPostView: t => e((e, s) => u.F(s(), t, u.a.POPULAR_CAROUSEL))
 			})), N = 178;
-			class k extends n.a.Component {
+			class S extends n.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						trendingsVisibility: new Array(e.maxItemsCount).fill(!1)
@@ -309,7 +309,7 @@
 					return n.a.createElement(d.b, null, this.scrollChildForItem())
 				}
 			}
-			t.default = Object(P.b)(v(k))
+			t.default = Object(P.b)(v(S))
 		},
 		"./src/reddit/connectors/miniCardPost.ts": function(e, t, s) {
 			"use strict";
@@ -358,10 +358,10 @@
 						}))
 					},
 					handleVote: t => {
-						const r = t === d.a.upvoted ? Object(i.Z)(s) : Object(i.x)(s);
+						const r = t === d.a.upvoted ? Object(i.S)(s) : Object(i.q)(s);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(i.X)(s)),
+					onIgnoreReports: () => e(Object(i.Q)(s)),
 					onOpenReportsDropdown: t => e(Object(o.h)({
 						tooltipId: t
 					}))
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Trending.916086540f1842fbd00a.js.map
+//# sourceMappingURL=Trending.25730d844d240b18fcaf.js.map

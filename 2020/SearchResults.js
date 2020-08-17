@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.78021c56bdda8753f719.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.4b2c38fa50f0817b0b15.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2679,7 +2679,7 @@
 				w = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				I = s.n(w);
 			const N = Object(a.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.y)({
+					toggle: () => e(Object(l.r)({
 						postId: t.post.id
 					}))
 				})),
@@ -3212,14 +3212,14 @@
 					id: f,
 					title: E,
 					onClose: () => {
-						y(!1), C("close", "click"), g(Object(c.F)()), g(Object(c.Q)({
+						y(!1), C("close", "click"), g(Object(c.y)()), g(Object(c.J)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						g(Object(c.F)())
+						g(Object(c.y)())
 					}
 				}, o.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", o.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -3279,10 +3279,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						f(n.Closed), E("close", "click"), v(Object(d.F)())
+						f(n.Closed), E("close", "click"), v(Object(d.y)())
 					},
 					onClickOutside: () => {
-						v(Object(d.F)())
+						v(Object(d.y)())
 					}
 				};
 				switch (y) {
@@ -3940,7 +3940,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(d.B)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(d.u)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(l.c)(b))
 		},
@@ -6048,7 +6048,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ar = "".concat(on.a.assetPath, "/img/link-placeholder.png"), ir = (e, t) => t && t.length ? Object(At.O)(e, {
 				postId: t[0]
 			}) : void 0, cr = {
-				fireAdPixelsOfType: mn.A,
+				fireAdPixelsOfType: mn.t,
 				openLightbox: e => Object(gn.a)(e.permalink)
 			}, dr = Object(xn.a)(() => Object(a.c)({
 				autoplayPref: Ve.b,
@@ -8395,10 +8395,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const s = t === i.a.upvoted ? Object(o.Z)(r) : Object(o.x)(r);
+							const s = t === i.a.upvoted ? Object(o.S)(r) : Object(o.q)(r);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(o.X)(r)),
+						onIgnoreReports: () => e(Object(o.Q)(r)),
 						onOpenReportsDropdown: t => e(Object(a.h)({
 							tooltipId: t
 						}))
@@ -8527,16 +8527,16 @@
 						openPost: t => {
 							s && e(Object(i.a)({
 								lastLoadedEnv: "server"
-							})), e(c.J(t))
+							})), e(c.C(t))
 						},
 						fireAdPixelsOfType: (t, s) => {
-							e(c.A(t, s))
+							e(c.t(t, s))
 						},
 						trackOnPostEnteredViewport: (t, s, n) => {
-							e(c.M(t, n))
+							e(c.F(t, n))
 						},
 						trackOnPostExitedViewport: (t, s, n, r) => {
-							e(c.N(t, n, r))
+							e(c.G(t, n, r))
 						},
 						surveyTriggerScrollCounted: () => e(Object(l.b)())
 					}
@@ -8613,10 +8613,10 @@
 						}))
 					},
 					handleVote: t => {
-						const n = t === c.a.upvoted ? Object(o.Z)(s) : Object(o.x)(s);
+						const n = t === c.a.upvoted ? Object(o.S)(s) : Object(o.q)(s);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(o.X)(s)),
+					onIgnoreReports: () => e(Object(o.Q)(s)),
 					onOpenReportsDropdown: t => e(Object(i.h)({
 						tooltipId: t
 					}))
@@ -9728,4 +9728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.78021c56bdda8753f719.js.map
+//# sourceMappingURL=SearchResults.4b2c38fa50f0817b0b15.js.map

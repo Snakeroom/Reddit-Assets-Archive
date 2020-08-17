@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.ef0eeae0e44d10ea9b0b.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.a6736bcb3485bdae33b8.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -48,11 +48,11 @@
 			})), n.d(t, "deleteRemovalReasonSuccess", (function() {
 				return H
 			})), n.d(t, "deleteRemovalReasonFailed", (function() {
-				return z
-			})), n.d(t, "deleteRemovalReason", (function() {
-				return G
-			})), n.d(t, "removedItemsSelected", (function() {
 				return J
+			})), n.d(t, "deleteRemovalReason", (function() {
+				return z
+			})), n.d(t, "removedItemsSelected", (function() {
+				return G
 			})), n.d(t, "fetchReasonsAndOpenModal", (function() {
 				return Q
 			})), n.d(t, "removalReasonSubmittedPending", (function() {
@@ -182,7 +182,7 @@
 							hk: "28ScuL"
 						})
 					}))) : n(U(i.error))
-				}, q = Object(a.a)(A.e), H = Object(a.a)(A.f), z = Object(a.a)(A.d), G = (e, t) => async (n, a, d) => {
+				}, q = Object(a.a)(A.e), H = Object(a.a)(A.f), J = Object(a.a)(A.d), z = (e, t) => async (n, a, d) => {
 					let {
 						apiContext: r
 					} = d;
@@ -200,13 +200,13 @@
 						text: o.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
-					}))) : n(z(i.error))
-				}, J = Object(a.a)(A.t), Q = (e, t) => async (n, o, s) => {
+					}))) : n(J(i.error))
+				}, G = Object(a.a)(A.t), Q = (e, t) => async (n, o, s) => {
 					let {
 						apiContext: a
 					} = s;
 					const d = o();
-					d.removalReasons.reasonOrder[e] && d.removalReasons.reasonOrder[e].length > 0 || n(K(e)), n(J({
+					d.removalReasons.reasonOrder[e] && d.removalReasons.reasonOrder[e].length > 0 || n(K(e)), n(G({
 						subredditId: e,
 						itemIds: t
 					})), n(Object(m.i)(b.a.ADD_REMOVAL_REASON))
@@ -219,7 +219,7 @@
 						j = e[0],
 						R = Object(g.a)(j) ? _.e.Post : _.e.Comment,
 						x = R === _.e.Post ? O.posts.models[j] : O.comments.models[j],
-						h = R === _.e.Post ? l.Q : i.R;
+						h = R === _.e.Post ? l.J : i.R;
 					if (!x || !f) return;
 					c(V()), c(h({
 						[j]: {
@@ -390,4 +390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=removalReasonActions.ef0eeae0e44d10ea9b0b.js.map
+//# sourceMappingURL=removalReasonActions.a6736bcb3485bdae33b8.js.map

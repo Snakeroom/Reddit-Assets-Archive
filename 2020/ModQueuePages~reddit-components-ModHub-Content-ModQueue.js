@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.d0d1fa326690d1b90351.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.6042dc0b6cdacefd3a2a.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -933,8 +933,8 @@
 					bulkUnselectItems: t => e(Object(u.c)({
 						ids: t
 					})),
-					fireAdPixelsOfType: (t, s) => e(Object(b.A)(t, s)),
-					openPost: t => e(Object(b.J)(t))
+					fireAdPixelsOfType: (t, s) => e(Object(b.t)(t, s)),
+					openPost: t => e(Object(b.C)(t))
 				})),
 				Zt = e => e.page ? parseInt(e.page, 10) : Ee.b,
 				Ht = e => Zt(e) + 1,
@@ -1390,4 +1390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.d0d1fa326690d1b90351.js.map
+//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.6042dc0b6cdacefd3a2a.js.map

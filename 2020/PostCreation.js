@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b02385a33e72a0c7b134.js
-// Retrieved at 8/13/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b682961b59845fcf7846.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "1dc08e0-production"
+					SENTRY_RELEASE_VERSION: "9538df4-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1789,7 +1789,7 @@
 							const {
 								postId: e
 							} = d, t = o.posts.models[e];
-							t && t.voteState === b.a.notVoted && n(Object(a.Z)(e))
+							t && t.voteState === b.a.notVoted && n(Object(a.S)(e))
 						}
 					} else n(C({
 						pollId: e,
@@ -2949,8 +2949,9 @@
 					e.timer && !e.fired && (e.timeViewingInterrupted = Date.now(), e.cumulativeElapsedTime += e.timeViewingInterrupted - e.timeViewingInitialized, t = (e.viewabilityMinimum || 0) - e.cumulativeElapsedTime, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e))
 				}
 				meetsViewabilityRequirements(e, t) {
-					let n, s = !1;
-					return "object" == typeof t ? (n = t.threshold, s = !!t.playing) : n = t, this.isAdequatelyInView(e, n) && (!s || this.props.isPlaying)
+					let n, s = !1,
+						o = !1;
+					return "object" == typeof t ? (n = t.threshold, s = !!t.playing, o = !!t.withSound) : n = t, this.isAdequatelyInView(e, n) && (!s || this.props.isPlaying) && (!o || this.props.isAudible)
 				}
 				handleThresholds(e, t) {
 					let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
@@ -7399,7 +7400,7 @@
 				}
 			}
 			var h = Object(c.b)(null, e => ({
-				onLoadRichTextContentIfNeeded: t => e(Object(l.z)(t))
+				onLoadRichTextContentIfNeeded: t => e(Object(l.s)(t))
 			}))(m);
 
 			function b() {
@@ -20664,7 +20665,7 @@
 					shouldShowCollectionEditOptions: x.t
 				}),
 				T = Object(a.b)(k, (e, t) => ({
-					copyLink: () => e(Object(u.C)(t.permalink)),
+					copyLink: () => e(Object(u.v)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(c.b)(n))
 					},
@@ -21246,7 +21247,7 @@
 			t.a = (e, t) => Object(s.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign(Object.assign({}, e), {
-					onPostViewable: o.O
+					onPostViewable: o.H
 				})
 			}(t))
 		},
@@ -22549,7 +22550,7 @@
 					post: o
 				})),
 				O = Object(l.b)(E, e => ({
-					fireAdPixelsOfType: (t, n) => e(Object(b.A)(t, n))
+					fireAdPixelsOfType: (t, n) => e(Object(b.t)(t, n))
 				})),
 				C = (e, t, n, s) => {
 					s && t.outboundUrl && t.outboundUrlExpiration && t.outboundUrlExpiration > Date.now() && (e.href = p(t.outboundUrl, n))
@@ -22599,7 +22600,7 @@
 							w(e.currentTarget, l, n)
 						},
 						onClick: () => {
-							a && Object(b.A)(a, f.a.Click)
+							a && Object(b.t)(a, f.a.Click)
 						},
 						onMouseLeave: e => {
 							i || ((e, t) => {
@@ -31430,7 +31431,7 @@
 							o && C.g(s(), o, n)
 						})
 					},
-					copyLink: t => e(Object(Qa.C)(t)),
+					copyLink: t => e(Object(Qa.v)(t)),
 					trackConnectAccountsClick: () => e((e, t) => C.b(t()))
 				}), (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), n), {
 					onTogglePostToTwitter: () => t.togglePostToTwitter(!e.postToTwitter),
@@ -33626,4 +33627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.b02385a33e72a0c7b134.js.map
+//# sourceMappingURL=PostCreation.b682961b59845fcf7846.js.map

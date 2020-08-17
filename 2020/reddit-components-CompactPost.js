@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.84a9e66dc3ab66a9e66f.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.558fc43a38cfaff46fd4.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -438,8 +438,8 @@
 				z = s("./src/reddit/components/PopupPortal/index.tsx"),
 				K = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				Z = s("./src/reddit/components/PostBadges/index.tsx"),
-				X = s("./src/reddit/components/PostContainer/index.tsx"),
-				J = s("./src/reddit/components/PostFlairPicker/index.tsx"),
+				J = s("./src/reddit/components/PostContainer/index.tsx"),
+				X = s("./src/reddit/components/PostFlairPicker/index.tsx"),
 				U = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				Y = s("./src/reddit/components/PostMedia/index.tsx"),
 				Q = s("./src/reddit/components/PostModModeDropdown/index.tsx"),
@@ -535,10 +535,10 @@
 							}))
 						},
 						handleVote: t => {
-							const s = t === v.a.upvoted ? Object(O.Z)(n) : Object(O.x)(n);
+							const s = t === v.a.upvoted ? Object(O.S)(n) : Object(O.q)(n);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(O.X)(n)),
+						onIgnoreReports: () => e(Object(O.Q)(n)),
 						onOpenReportsDropdown: t => e(Object(E.h)({
 							tooltipId: t
 						}))
@@ -596,9 +596,9 @@
 						tooltipType: ke,
 						sendEvent: Ce,
 						shouldShowGalleryTileOption: Se
-					} = this.props, Ie = !!de.media && de.media.type === f.o.RTJSON, Me = ve && Ie, Le = Object(J.b)(de.id, g), Be = Object(be.a)(k), Ae = Object(me.a)(k), Fe = Object(ue.a)(k), Re = "-mod-actions-menu-".concat(de.id), De = "voting-arrows-".concat(de.id), Ve = !!r && Object(h.e)(r) === de.author, We = Object(H.c)(de), He = Object(A.a)("View--Reports", de.id, ke), Ge = Object(H.a)(de), ze = !(g || v || O), Ke = de.media && de.media.type === f.o.LIVEVIDEO, {
+					} = this.props, Ie = !!de.media && de.media.type === f.o.RTJSON, Me = ve && Ie, Le = Object(X.b)(de.id, g), Be = Object(be.a)(k), Ae = Object(me.a)(k), Fe = Object(ue.a)(k), Re = "-mod-actions-menu-".concat(de.id), De = "voting-arrows-".concat(de.id), Ve = !!r && Object(h.e)(r) === de.author, We = Object(H.c)(de), He = Object(A.a)("View--Reports", de.id, ke), Ge = Object(H.a)(de), ze = !(g || v || O), Ke = de.media && de.media.type === f.o.LIVEVIDEO, {
 						moderationPrompt: Ze
-					} = de, Xe = e => Ce(Object(x.f)(de.id, e)), Je = n.a.createElement(X.a, {
+					} = de, Je = e => Ce(Object(x.f)(de.id, e)), Xe = n.a.createElement(J.a, {
 						className: Object(c.a)(Oe.a.compactPostStyles, Ee.a.postContainer, Object(b.a)(this.props), t),
 						isOverlay: g,
 						style: Object.assign(Object.assign({}, Object(b.d)(this.props)), Object(b.b)(this.props.flairStyleTemplate)),
@@ -709,7 +709,7 @@
 						showIconsOnly: !0
 					}), Be && n.a.createElement(R.a, {
 						dropdownId: Re,
-						onClick: () => Xe("post_mod_action_menu")
+						onClick: () => Je("post_mod_action_menu")
 					}, n.a.createElement(B.b, null), n.a.createElement(Q.a, {
 						canEditFlair: Ae && _e,
 						hasModPostPerms: Be,
@@ -722,13 +722,13 @@
 					})), Be && We && !L && n.a.createElement(se.c, {
 						text: "".concat(Ge),
 						onClick: () => {
-							this.props.onOpenReportsDropdown(He), Xe("post_report_menu")
+							this.props.onOpenReportsDropdown(He), Je("post_report_menu")
 						},
 						id: He
 					}, n.a.createElement(ae.a, {
 						model: de,
 						onIgnoreReports: () => {
-							ne(), Xe(de.ignoreReports ? "restore_reports" : "ignore_reports")
+							ne(), Je(de.ignoreReports ? "restore_reports" : "ignore_reports")
 						},
 						tooltipId: He
 					}), de.ignoreReports ? n.a.createElement(fe.a, null) : n.a.createElement(he.a, null)), n.a.createElement(q.g, {
@@ -777,13 +777,13 @@
 						flairStyleTemplate: i,
 						shouldShowGalleryTileOption: Se,
 						isGalleryTileLayoutDefault: E
-					}), e === Le && n.a.createElement(J.a, {
+					}), e === Le && n.a.createElement(X.a, {
 						flairs: de.flair,
 						subredditId: de.belongsTo.id,
 						modalId: Le,
 						onFlairChanged: oe
 					}));
-					return n.a.createElement(te.b, null, Je)
+					return n.a.createElement(te.b, null, Xe)
 				}
 			}
 			const Pe = e => n.a.createElement(K.a, {
@@ -1031,7 +1031,7 @@
 				T = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				S = s.n(T);
 			const N = Object(a.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.y)({
+					toggle: () => e(Object(l.r)({
 						postId: t.post.id
 					}))
 				})),
@@ -1523,4 +1523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CompactPost.84a9e66dc3ab66a9e66f.js.map
+//# sourceMappingURL=reddit-components-CompactPost.558fc43a38cfaff46fd4.js.map

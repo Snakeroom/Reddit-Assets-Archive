@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.60d8711c3744805ce229.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.55e3db0ef05c798d6c30.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -33,9 +33,9 @@
 			})), n.d(t, "g", (function() {
 				return B
 			})), n.d(t, "d", (function() {
-				return V
-			})), n.d(t, "e", (function() {
 				return S
+			})), n.d(t, "e", (function() {
+				return V
 			})), n.d(t, "h", (function() {
 				return L
 			}));
@@ -70,7 +70,7 @@
 				T = Object(o.a)(v.v),
 				R = Object(o.a)(v.w),
 				B = Object(o.a)(v.x),
-				V = (e, t) => async (n, s, o) => {
+				S = (e, t) => async (n, s, o) => {
 					let r, {
 							apiContext: a,
 							gqlContext: i
@@ -94,13 +94,13 @@
 							const {
 								postId: e
 							} = d, t = o.posts.models[e];
-							t && t.voteState === g.a.notVoted && n(Object(c.Z)(e))
+							t && t.voteState === g.a.notVoted && n(Object(c.S)(e))
 						}
 					} else n(j({
 						pollId: e,
 						error: r.error || r.errors[0].message
 					})), Object(f.a)(n, r.error || r.errors[0].messsage)
-				}, S = (e, t) => async (n, o, c) => {
+				}, V = (e, t) => async (n, o, c) => {
 					let {
 						apiContext: l
 					} = c;
@@ -284,12 +284,12 @@
 					}))
 				},
 				B = n("./src/reddit/components/Poll/ClosedPoll/index.m.less"),
-				V = n.n(B);
-			const S = Object(i.c)({
+				S = n.n(B);
+			const V = Object(i.c)({
 				tokenName: N.q,
 				tokenDisplayConversion: N.p
 			});
-			var L = Object(c.b)(S)((function(e) {
+			var L = Object(c.b)(V)((function(e) {
 					let t;
 					return e.poll.options.forEach(n => {
 						t || (t = n);
@@ -300,7 +300,7 @@
 						className: e.className
 					}, e.poll.options.map((n, s) => a.a.createElement(R, {
 						key: s,
-						className: V.a.option,
+						className: S.a.option,
 						displayType: e.displayType,
 						isWinningOption: n === t,
 						optionId: n.id,
@@ -309,7 +309,7 @@
 						tokenName: e.tokenName,
 						tokenDisplayConversion: e.tokenDisplayConversion
 					})), a.a.createElement(I.a, {
-						className: V.a.metaData,
+						className: S.a.metaData,
 						poll: e.poll
 					}))
 				})),
@@ -1269,4 +1269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Proposal.60d8711c3744805ce229.js.map
+//# sourceMappingURL=reddit-components-Governance-Proposal.55e3db0ef05c798d6c30.js.map

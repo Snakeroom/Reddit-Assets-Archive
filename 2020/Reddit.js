@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b2277d43e0c5fd353a44.js
-// Retrieved at 8/12/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.83e563c3f31a2df8a7db.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4711,7 +4711,7 @@
 							const {
 								post: e
 							} = this.props.trendingItem;
-							this.props.fireAdPixelsOfType(e, Wr.a.Click)
+							e && this.props.fireAdPixelsOfType(e, Wr.a.Click)
 						}
 					}, this.isSponsored = () => {
 						const {
@@ -5032,7 +5032,7 @@
 					typeaheadSuggestions: xo.i
 				}), (e, t) => ({
 					fetchTrendingItems: () => e(Object(Er.b)()),
-					fireAdPixelsOfType: (t, s) => e(Object(xr.A)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(xr.t)(t, s)),
 					onChange: t => e(Object(Pr.j)({
 						searchQuery: t
 					})),
@@ -8645,7 +8645,7 @@
 						close: () => {
 							e(Object(u.a)(s, !0))
 						},
-						toggleVote: (t, s) => e(s === w.a.upvoted ? Object(l.Z)(t) : Object(l.x)(t))
+						toggleVote: (t, s) => e(s === w.a.upvoted ? Object(l.S)(t) : Object(l.q)(t))
 					}
 				}, (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), s), {
 					onVoteClick: n => {
@@ -13682,4 +13682,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.b2277d43e0c5fd353a44.js.map
+//# sourceMappingURL=Reddit.83e563c3f31a2df8a7db.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.2d55819a78fa689e7acb.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.eb6d18d23cf265081fbb.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -102,7 +102,7 @@
 							const {
 								postId: e
 							} = l, t = r.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(i.Z)(e))
+							t && t.voteState === f.a.notVoted && n(Object(i.S)(e))
 						}
 					} else n(I({
 						pollId: e,
@@ -443,7 +443,7 @@
 			const {
 				fbt: F
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class Z extends r.a.Component {
+			class H extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						displayAmount: void 0,
@@ -510,7 +510,7 @@
 					})) : null
 				}
 			}
-			const H = Object(u.c)({
+			const Q = Object(u.c)({
 					initialRecipient: e => e.transfers.communityPoints.initialRecipient,
 					isEthereumProvider: (e, t) => {
 						const n = Object(c.q)(e, t);
@@ -539,7 +539,7 @@
 						})
 					}
 				}),
-				Q = Object(a.b)(H, e => ({
+				Z = Object(a.b)(Q, e => ({
 					onTransferPoints: (t, n, s) => e(Object(i.e)({
 						amount: t,
 						recipient: n,
@@ -547,7 +547,7 @@
 					}, !0))
 				})),
 				K = Object(c.t)();
-			t.default = Object(o.a)(K(Q(Z)))
+			t.default = Object(o.a)(K(Z(H)))
 		},
 		"./src/reddit/endpoints/governance/poll.ts": function(e, t, n) {
 			"use strict";
@@ -689,4 +689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceTransferPointsModal.2d55819a78fa689e7acb.js.map
+//# sourceMappingURL=GovernanceTransferPointsModal.eb6d18d23cf265081fbb.js.map

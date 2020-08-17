@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0b8bcf21eb16347457fb.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.1943eee748300b7fa980.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -497,11 +497,11 @@
 						isCurrentUserProfilePost: X,
 						isFrontpage: J,
 						isGalleryTileLayoutDefault: U,
-						isLoggedIn: K,
-						isOverlay: Q,
+						isLoggedIn: Q,
+						isOverlay: K,
 						moderatorPermissions: Z,
-						modModeEnabled: Y,
-						onClickPost: q,
+						modModeEnabled: q,
+						onClickPost: Y,
 						onIgnoreReports: $,
 						onOpenReportsDropdown: ee,
 						poll: te,
@@ -515,20 +515,20 @@
 						toggleCheckbox: ce,
 						userIsOp: le,
 						shouldShowGalleryTileOption: me
-					} = this.props, pe = oe ? void 0 : A, ue = this.props.crosspost || void 0, xe = Object(L.a)(Z), be = Object(I.a)(Z), he = Object(M.a)(Z), fe = Y && L.a, ve = !!se.media && se.media.type === _.o.RTJSON, Oe = le && ve, ge = g && !ie, ye = !!se.media && Object(_.H)(se.media), je = {
+					} = this.props, pe = oe ? void 0 : A, ue = this.props.crosspost || void 0, xe = Object(L.a)(Z), be = Object(I.a)(Z), he = Object(M.a)(Z), fe = q && L.a, ve = !!se.media && se.media.type === _.o.RTJSON, Oe = le && ve, ge = g && !ie, ye = !!se.media && Object(_.H)(se.media), je = {
 						flairStyleTemplate: pe,
 						post: se,
 						inSubredditOrProfile: g,
 						isCurrentUserProfilePost: X,
-						isOverlay: Q,
-						shouldShowSubscribeButton: !(J && K),
+						isOverlay: K,
+						shouldShowSubscribeButton: !(J && Q),
 						subredditOrProfile: de
 					}, Pe = n.a.createElement(O.a, {
 						className: Object(a.a)(R.a.classicPostStyles, W.a.postContainer, Object(B.a)(this.props), T ? W.a.mFirst : void 0, e),
-						isOverlay: Q,
+						isOverlay: K,
 						style: Object.assign(Object.assign({}, Object(B.d)(this.props)), Object(B.b)(this.props.flairStyleTemplate)),
 						post: se,
-						onClick: q,
+						onClick: Y,
 						eventFactory: N
 					}, n.a.createElement(P.a, {
 						model: se,
@@ -577,7 +577,7 @@
 						redditStyle: oe,
 						size: w.b.Medium,
 						titleColor: pe && pe.postTitleColor,
-						isOverlay: Q
+						isOverlay: K
 					}, se.source && !ue && n.a.createElement(C.a, {
 						href: se.source.url,
 						isSponsored: se.isSponsored,
@@ -585,7 +585,7 @@
 						source: se.source
 					}, Object(d.a)(se))), n.a.createElement(y.a, D({
 						key: "PostMeta"
-					}, je)), Y && xe && Object(f.c)(se) && n.a.createElement(h.a, {
+					}, je)), q && xe && Object(f.c)(se) && n.a.createElement(h.a, {
 						onIgnoreReports: $,
 						reportable: se
 					}), n.a.createElement("div", {
@@ -625,14 +625,14 @@
 						hasModPostPerms: xe,
 						hasModFullPerms: he,
 						hostPostId: H,
-						isOverlay: !!Q,
-						modModeEnabled: Y,
+						isOverlay: !!K,
+						modModeEnabled: q,
 						onIgnoreReports: $,
 						onOpenReportsDropdown: ee,
 						post: se,
 						showEditPost: Oe,
 						showEditFlair: ae,
-						tooltipType: Q ? E.c.Lightbox : void 0,
+						tooltipType: K ? E.c.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(j.h)({
 							editPost: !fe,
 							save: !fe,
@@ -861,7 +861,7 @@
 				S = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				N = s.n(S);
 			const T = Object(a.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.y)({
+					toggle: () => e(Object(l.r)({
 						postId: t.post.id
 					}))
 				})),
@@ -1254,10 +1254,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const s = t === i.a.upvoted ? Object(r.Z)(n) : Object(r.x)(n);
+							const s = t === i.a.upvoted ? Object(r.S)(n) : Object(r.q)(n);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(r.X)(n)),
+						onIgnoreReports: () => e(Object(r.Q)(n)),
 						onOpenReportsDropdown: t => e(Object(a.h)({
 							tooltipId: t
 						}))
@@ -1453,4 +1453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.0b8bcf21eb16347457fb.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.1943eee748300b7fa980.js.map

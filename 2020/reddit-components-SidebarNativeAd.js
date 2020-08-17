@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c713421f0bd4c723d790.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ee3b253aad62aa48c7e6.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1281,7 +1281,7 @@
 			}
 			const Y = Object(a.b)(null, (e, t) => ({
 				fireAdPixelsOfType: (t, s) => {
-					e(Object(v.A)(t, s))
+					e(Object(v.t)(t, s))
 				},
 				refreshSidebarPromotedPost: () => {
 					const {
@@ -1752,4 +1752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-SidebarNativeAd.c713421f0bd4c723d790.js.map
+//# sourceMappingURL=reddit-components-SidebarNativeAd.ee3b253aad62aa48c7e6.js.map

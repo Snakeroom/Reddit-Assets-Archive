@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.75b1e81df79bc769dae7.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.ed1127de8958e33c84bb.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -464,7 +464,7 @@
 								adTitle: o,
 								adPostId: s,
 								event: a,
-								timestamp: n
+								metadata: n
 							})
 						}), t), []);
 					return a.a.createElement(oe, {
@@ -472,7 +472,7 @@
 						title: "Ad Events",
 						onBack: this.props.onBack
 					}, t.map(e => a.a.createElement(q, {
-						key: e.adPostId + e.event + e.timestamp,
+						key: e.adPostId + e.event,
 						adEvent: e
 					})))
 				}
@@ -712,7 +712,7 @@
 				}
 			}
 			var ct = Object(u.b)(ot, e => ({
-					linkCopied: t => e(Fe.C(t)),
+					linkCopied: t => e(Fe.v(t)),
 					onSetExperimentOverride: (t, n) => e(Ie.c({
 						experimentName: t,
 						override: n
@@ -1467,4 +1467,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminPanel.75b1e81df79bc769dae7.js.map
+//# sourceMappingURL=AdminPanel.ed1127de8958e33c84bb.js.map

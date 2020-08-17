@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.a79dae6d0df93118e930.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.e0d2305ca4e3ef0bd2cb.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -419,23 +419,23 @@
 					} = t;
 					return {
 						onBufferingChanged: t => {
-							e(t ? l.z(s) : l.N(s))
+							e(t ? l.r(s) : l.F(s))
 						},
-						onLoadStarted: t => e(l.y(s, t)),
-						onMetadataReceived: t => e(l.M({
+						onLoadStarted: t => e(l.q(s, t)),
+						onMetadataReceived: t => e(l.E({
 							metadata: t,
 							postId: s
 						})),
-						onPaused: () => e(l.I({
+						onPaused: () => e(l.A({
 							postId: s
 						})),
-						onPlayable: t => e(l.J(s, t)),
-						onPlaying: () => e(l.L(s)),
-						onWatched: () => e(l.A(s)),
-						onViewableImpression: () => e(l.G(s)),
-						onFullyViewableImpression: () => e(l.D(s)),
-						onPlayedWithSound: () => e(l.K(s)),
-						onWatchedPercent: t => e(l.U(t, s))
+						onPlayable: t => e(l.B(s, t)),
+						onPlaying: () => e(l.D(s)),
+						onWatched: () => e(l.s(s)),
+						onViewableImpression: () => e(l.y(s)),
+						onFullyViewableImpression: () => e(l.v(s)),
+						onPlayedWithSound: () => e(l.C(s)),
+						onWatchedPercent: t => e(l.M(t, s))
 					}
 				});
 			class v extends i.a.Component {
@@ -1191,7 +1191,7 @@
 			})), s.d(t, "i", (function() {
 				return q
 			})), s.d(t, "e", (function() {
-				return z
+				return Z
 			}));
 			var n = s("./src/lib/unicodeUtils/index.ts"),
 				r = s("./node_modules/lodash/reduce.js"),
@@ -1375,7 +1375,7 @@
 						i = n.length;
 					for (let a = 0; a < i; a++) {
 						const e = n[a];
-						o.push(e.e === h.w ? e.t : z(e, t, a))
+						o.push(e.e === h.w ? e.t : Z(e, t, a))
 					}
 					const d = c.w[r - 1];
 					return a.a.createElement(d, {
@@ -1495,7 +1495,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) n.push(Z(r, o));
+						if (r.e === h.A) n.push(z(r, o));
 						else if (r.e === h.x) n.push(a.a.createElement(C.a, {
 							key: o
 						}, q(r.c, t, s)));
@@ -1511,18 +1511,18 @@
 									media: e
 								}))
 							}
-						} else n.push(z(r, s, o))
+						} else n.push(Z(r, s, o))
 					}
 					return n
 				},
-				z = (e, t, s) => {
+				Z = (e, t, s) => {
 					switch (e.e) {
 						case h.o:
 							return a.a.createElement(c.a, {
 								href: e.u,
 								key: s,
 								title: e.a
-							}, Z({
+							}, z({
 								t: e.t,
 								f: e.f
 							}, 0));
@@ -1546,7 +1546,7 @@
 							}, e.t)
 					}
 				},
-				Z = (e, t) => {
+				z = (e, t) => {
 					const {
 						f: s,
 						t: r
@@ -1828,4 +1828,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.a79dae6d0df93118e930.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.e0d2305ca4e3ef0bd2cb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.5b65cf225b19c5d3db4b.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4d1a6cf772b665607c7c.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -207,7 +207,7 @@
 				Q = n("./src/lib/lessComponent.tsx");
 			const Z = Object(d.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(U.a)(t.permalink)),
-					clearLinks: () => e(Object(B.u)())
+					clearLinks: () => e(Object(B.n)())
 				})),
 				V = Q.a.button("ClearButton", M.a);
 			class H extends o.a.Component {
@@ -1038,4 +1038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.5b65cf225b19c5d3db4b.js.map
+//# sourceMappingURL=FrontpageSidebar.4d1a6cf772b665607c7c.js.map

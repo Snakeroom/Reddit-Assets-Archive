@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.c7dda6c3c8cf7bdd421e.js
-// Retrieved at 8/13/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.c81400c4e3df645f7d8b.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1429,19 +1429,19 @@
 						postId: s
 					} = t;
 					return {
-						exitVideoFullscreen: () => e(b.C()),
+						exitVideoFullscreen: () => e(b.u()),
 						onLoadStarted: t => {
-							s && e(b.y(s, t))
+							s && e(b.q(s, t))
 						},
-						onMetadataReceived: t => e(b.M({
+						onMetadataReceived: t => e(b.E({
 							metadata: t,
 							postId: t.id
 						})),
 						onPlayable: t => {
-							s && e(b.J(s, t))
+							s && e(b.B(s, t))
 						},
 						onUpdateVideoTime: n()(t => {
-							s && e(b.R({
+							s && e(b.J({
 								postId: s,
 								time: t
 							}))
@@ -1457,33 +1457,33 @@
 							})
 						},
 						setPlaying: t => {
-							s && e(b.Q({
+							s && e(b.I({
 								postId: s,
 								isPlaying: t
 							}))
 						},
 						setAutoplayPref: t => e(S.s(t)),
 						setVideoFullscreen: () => {
-							s && e(b.O(s))
+							s && e(b.G(s))
 						},
 						setVideoMuted: t => e(P.g(t, s)),
 						setVideoVolume: t => e(P.h(t)),
 						onWatchedPercent: t => {
-							s && e(b.U(t, s))
+							s && e(b.M(t, s))
 						},
 						onWatchedSeconds: t => {
-							s && e(b.V(t, s))
+							s && e(b.N(t, s))
 						},
 						onUpdateContinuousViewStartTime: t => {
-							s && e(b.B({
+							s && e(b.t({
 								postId: s,
 								time: t
 							}))
 						},
 						onVideoStarted: () => {
-							s && e(b.T(s))
+							s && e(b.L(s))
 						},
-						setMutedInFeed: t => e(b.P(t))
+						setMutedInFeed: t => e(b.H(t))
 					}
 				});
 			class bt extends r.Component {
@@ -1800,7 +1800,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("1dc08e0-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("9538df4-production", " ").concat(t);
 									return i && (s += " [".concat(V.xc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2236,4 +2236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.c7dda6c3c8cf7bdd421e.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.c81400c4e3df645f7d8b.js.map

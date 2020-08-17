@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a5f5b7198b5c4c8412d6.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6e5ce72f35eb57bdfb95.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1826,7 +1826,7 @@
 							})
 						})), t(N(d.id));
 						const e = Object(f.a)(c.body);
-						t(Object(a.Q)({
+						t(Object(a.J)({
 							[d.id]: e
 						}))
 					} else t(S(c.error))
@@ -2034,7 +2034,7 @@
 						g = e[0],
 						f = Object(E.a)(g) ? j.e.Post : j.e.Comment,
 						O = f === j.e.Post ? b.posts.models[g] : b.comments.models[g],
-						y = f === j.e.Post ? m.Q : l.R;
+						y = f === j.e.Post ? m.J : l.R;
 					if (!O || !h) return;
 					d(z()), d(y({
 						[g]: {
@@ -7736,10 +7736,10 @@
 							}))
 						},
 						handleVote: t => {
-							const s = t === x.a.upvoted ? Object(v.Z)(o) : Object(v.x)(o);
+							const s = t === x.a.upvoted ? Object(v.S)(o) : Object(v.q)(o);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(v.X)(o)),
+						onIgnoreReports: () => e(Object(v.Q)(o)),
 						onOpenReportsDropdown: t => e(Object(C.h)({
 							tooltipId: t
 						}))
@@ -9174,7 +9174,7 @@
 				I = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				T = s.n(I);
 			const N = Object(r.b)(null, (e, t) => ({
-					toggle: () => e(Object(c.y)({
+					toggle: () => e(Object(c.r)({
 						postId: t.post.id
 					}))
 				})),
@@ -9564,8 +9564,8 @@
 					return {
 						addPostToCollection: (t, s) => e(Object(ne.a)(t, s)),
 						onToggleModal: t => e(Object(p.i)(t)),
-						onToggleSave: () => e(Object(b.S)(n.postId)),
-						onHide: t => e(Object(b.W)(n.postId, !n.hidden, o, !0)),
+						onToggleSave: () => e(Object(b.L)(n.postId)),
+						onHide: t => e(Object(b.P)(n.postId, !n.hidden, o, !0)),
 						onReportClick: () => e(Object(f.j)(n.postId, o)),
 						onEdit: () => {
 							const t = !o && !a;
@@ -13821,12 +13821,12 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(m.t)(s.id)),
+						onApprovePost: () => e(Object(m.m)(s.id)),
 						onOpenPostModModeDropdown: t => e(Object(u.h)({
 							tooltipId: t
 						})),
-						onRemovePost: () => e(Object(m.R)(s.id, !1)),
-						onSpamPost: () => e(Object(m.R)(s.id, !0)),
+						onRemovePost: () => e(Object(m.K)(s.id, !1)),
+						onSpamPost: () => e(Object(m.K)(s.id, !0)),
 						onFlairPost: t => () => e(Object(c.i)(t))
 					}
 				});
@@ -15437,14 +15437,14 @@
 					id: x,
 					title: O,
 					onClose: () => {
-						f(!1), _("close", "click"), v(Object(d.F)()), v(Object(d.Q)({
+						f(!1), _("close", "click"), v(Object(d.y)()), v(Object(d.J)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						v(Object(d.F)())
+						v(Object(d.y)())
 					}
 				}, a.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", a.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -15504,10 +15504,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						x(n.Closed), O("close", "click"), E(Object(l.F)())
+						x(n.Closed), O("close", "click"), E(Object(l.y)())
 					},
 					onClickOutside: () => {
-						E(Object(l.F)())
+						E(Object(l.y)())
 					}
 				};
 				switch (f) {
@@ -18037,7 +18037,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(l.B)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(l.u)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(c.c)(b))
 		},
@@ -18451,19 +18451,19 @@
 						isCommentsPage: a
 					} = t;
 					return {
-						onCopyLink: () => e(Object(f.C)(s)),
-						onDelete: t => e(Object(f.L)(n, t, o)),
-						onDistinguishPost: t => e(Object(f.w)(n, t)),
+						onCopyLink: () => e(Object(f.v)(s)),
+						onDelete: t => e(Object(f.E)(n, t, o)),
+						onDistinguishPost: t => e(Object(f.p)(n, t)),
 						onGildClick: t => e(Object(b.d)({
 							correlationId: t,
 							thingId: n
 						})),
-						onToggleSave: () => e(Object(f.S)(n)),
-						onToggleNSFW: () => e(Object(f.H)(n)),
-						onToggleOC: () => e(Object(f.I)(n)),
+						onToggleSave: () => e(Object(f.L)(n)),
+						onToggleNSFW: () => e(Object(f.A)(n)),
+						onToggleOC: () => e(Object(f.B)(n)),
 						onTogglePinned: () => e(Object(g.i)(n)),
-						onToggleSpoiler: () => e(Object(f.V)(n)),
-						onHide: t => e(Object(f.W)(n, !t, o, !0)),
+						onToggleSpoiler: () => e(Object(f.O)(n)),
+						onHide: t => e(Object(f.P)(n, !t, o, !0)),
 						onReportClick: () => e(Object(v.j)(n, o)),
 						onStartEventNow: () => {
 							e((e, t) => Object(c.a)(Object(_.p)()(t()))), e(Object(p.startEventNowRequested)(n))
@@ -18473,7 +18473,7 @@
 							e(Object(x.a)(n, t))
 						},
 						onFlairPost: () => e(Object(h.i)(Object(de.b)(n, o))),
-						onToggleSendReplies: () => e(Object(f.T)(n)),
+						onToggleSendReplies: () => e(Object(f.M)(n)),
 						showCollectionsList: (t, s) => {
 							e(Object(le.e)(t)).then(() => {
 								const t = Object(me.s)(s, o);
@@ -20974,7 +20974,7 @@
 								tooltipId: s
 							}))
 						},
-						copyLink: () => e(Object(u.C)(Object(m.a)(n, {
+						copyLink: () => e(Object(u.v)(Object(m.a)(n, {
 							utm_source: "share",
 							utm_medium: "web2x"
 						})))
@@ -23805,10 +23805,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const s = t === i.a.upvoted ? Object(a.Z)(o) : Object(a.x)(o);
+							const s = t === i.a.upvoted ? Object(a.S)(o) : Object(a.q)(o);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(a.X)(o)),
+						onIgnoreReports: () => e(Object(a.Q)(o)),
 						onOpenReportsDropdown: t => e(Object(r.h)({
 							tooltipId: t
 						}))
@@ -30542,4 +30542,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.a5f5b7198b5c4c8412d6.js.map
+//# sourceMappingURL=ModerationPages.6e5ce72f35eb57bdfb95.js.map

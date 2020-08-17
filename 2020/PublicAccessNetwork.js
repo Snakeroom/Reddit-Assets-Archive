@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.85074e54b1836a6e409b.js
-// Retrieved at 8/13/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c6e875f1db70d5331b2a.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -342,7 +342,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "1dc08e0-production"
+					SENTRY_RELEASE_VERSION: "9538df4-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -3398,9 +3398,9 @@
 				}
 			}
 			var cr = Object(o.b)(ir, (e, t) => ({
-				copyLink: t => e(Object(ve.C)(t)),
+				copyLink: t => e(Object(ve.v)(t)),
 				onHide: () => {
-					t.currentStreamId && (e(Object(ve.W)(t.currentStreamId, !0, !0, !0)), e(M(t.currentStreamId)))
+					t.currentStreamId && (e(Object(ve.P)(t.currentStreamId, !0, !0, !0)), e(M(t.currentStreamId)))
 				},
 				onLockComments: () => {
 					t.currentStreamId && e(fe(t.currentStreamId))
@@ -3804,7 +3804,7 @@
 					setMuteSettings: t => e(Object(F.b)({
 						isMuted: t
 					})),
-					setMutedInFeed: t => e(U.P(t)),
+					setMutedInFeed: t => e(U.H(t)),
 					setVideoVolume: t => e(k.h(t)),
 					updateVideoTimestamp: (t, s) => e(V({
 						streamId: t,
@@ -4466,4 +4466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.85074e54b1836a6e409b.js.map
+//# sourceMappingURL=PublicAccessNetwork.c6e875f1db70d5331b2a.js.map

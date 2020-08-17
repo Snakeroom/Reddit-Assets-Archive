@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.aeeae9584f1b8423f0ca.js
-// Retrieved at 8/13/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.dafd10437102b8453efc.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -93,11 +93,11 @@
 				_ = ["root", "rootMargin", "threshold", "disabled"],
 				g = Object.prototype,
 				y = g.hasOwnProperty,
-				E = g.toString,
-				w = function(e) {
+				w = g.toString,
+				E = function(e) {
 					return V.reduce((function(t, i) {
 						if (y.call(e, i)) {
-							var r = "root" === i && "[object String]" === E.call(e[i]);
+							var r = "root" === i && "[object String]" === w.call(e[i]);
 							t[i] = r ? document.querySelector(e[i]) : e[i]
 						}
 						return t
@@ -118,7 +118,7 @@
 							}
 							t.targetNode = e && Object(s.findDOMNode)(e)
 						})), T(I(t), "observe", (function() {
-							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = h(w(t.props)), t.target = t.targetNode, e = I(t), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = h(E(t.props)), t.target = t.targetNode, e = I(t), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
 						})), T(I(t), "unobserve", (function(e) {
 							! function(e, t) {
@@ -366,8 +366,8 @@
 				_ = () => T(I),
 				g = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
 				y = [l.IMPRESSION_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
-				E = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
-				w = e => "boolean" == typeof e.cumulative && e.cumulative,
+				w = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
+				E = e => "boolean" == typeof e.cumulative && e.cumulative,
 				f = Object(a.c)({
 					continuousViewingStartedAt: (e, t) => {
 						let {
@@ -449,8 +449,9 @@
 					e.timer && !e.fired && (e.timeViewingInterrupted = Date.now(), e.cumulativeElapsedTime += e.timeViewingInterrupted - e.timeViewingInitialized, t = (e.viewabilityMinimum || 0) - e.cumulativeElapsedTime, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e))
 				}
 				meetsViewabilityRequirements(e, t) {
-					let i, r = !1;
-					return "object" == typeof t ? (i = t.threshold, r = !!t.playing) : i = t, this.isAdequatelyInView(e, i) && (!r || this.props.isPlaying)
+					let i, r = !1,
+						n = !1;
+					return "object" == typeof t ? (i = t.threshold, r = !!t.playing, n = !!t.withSound) : i = t, this.isAdequatelyInView(e, i) && (!r || this.props.isPlaying) && (!n || this.props.isAudible)
 				}
 				handleThresholds(e, t) {
 					let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
@@ -475,13 +476,13 @@
 					return !t.threshold && t.event === m.a.VideoGroupMViewable && this.props.videoDuration && (t.threshold = r * i < 3e5 ? l.FULL_VIEWABILITY_THRESHOLD : l.VIDEO_GROUPM_THRESHOLD, t.viewabilityMinimum = .5 * this.props.videoDuration), t.event === m.a.GroupMViewable && r * i > 242500 && (t.threshold = l.VIEWABILITY_THRESHOLD), t
 				}
 				checkViewability(e, t) {
-					if (w(t) && t.event === m.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
+					if (E(t) && t.event === m.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
 						if (this.isAdequatelyInView(e, t.threshold) && !t.fired) {
 							if (t.timer) return;
 							const e = this.getLengthForTimer(t);
 							return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
 						}
-						w(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t)
+						E(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t)
 					}
 				}
 				clearTimer(e) {
@@ -504,7 +505,7 @@
 						trackVideo: t
 					} = this.props;
 					let i = g;
-					return e && !t ? i = E : !e && t && (i = y), o.a.createElement(d.a, {
+					return e && !t ? i = w : !e && t && (i = y), o.a.createElement(d.a, {
 						threshold: i,
 						onChange: this.handleViewabilityChange
 					}, this.props.children)
@@ -549,10 +550,10 @@
 			t.a = (e, t) => Object(r.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign(Object.assign({}, e), {
-					onPostViewable: n.O
+					onPostViewable: n.H
 				})
 			}(t))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.aeeae9584f1b8423f0ca.js.map
+//# sourceMappingURL=reddit-components-BlankPost.dafd10437102b8453efc.js.map

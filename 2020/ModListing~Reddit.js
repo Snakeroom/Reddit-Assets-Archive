@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.6613f14d8370d5cc8500.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.bc6bd06f6848816edce7.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1955,7 +1955,7 @@
 					post: s
 				})),
 				j = Object(d.b)(x, e => ({
-					fireAdPixelsOfType: (t, n) => e(Object(b.A)(t, n))
+					fireAdPixelsOfType: (t, n) => e(Object(b.t)(t, n))
 				})),
 				w = (e, t, n, r) => {
 					r && t.outboundUrl && t.outboundUrlExpiration && t.outboundUrlExpiration > Date.now() && (e.href = m(t.outboundUrl, n))
@@ -2005,7 +2005,7 @@
 							_(e.currentTarget, d, n)
 						},
 						onClick: () => {
-							i && Object(b.A)(i, h.a.Click)
+							i && Object(b.t)(i, h.a.Click)
 						},
 						onMouseLeave: e => {
 							a || ((e, t) => {
@@ -3170,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.6613f14d8370d5cc8500.js.map
+//# sourceMappingURL=ModListing~Reddit.bc6bd06f6848816edce7.js.map

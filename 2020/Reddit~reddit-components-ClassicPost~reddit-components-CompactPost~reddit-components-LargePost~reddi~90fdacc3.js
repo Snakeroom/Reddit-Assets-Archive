@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.51887c425250adefcc4e.js
-// Retrieved at 8/13/2020, 4:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.88e8bada1487e23af328.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -427,8 +427,9 @@
 					e.timer && !e.fired && (e.timeViewingInterrupted = Date.now(), e.cumulativeElapsedTime += e.timeViewingInterrupted - e.timeViewingInitialized, t = (e.viewabilityMinimum || 0) - e.cumulativeElapsedTime, e.remainingTime = t > 0 ? t : 0, this.clearTimer(e))
 				}
 				meetsViewabilityRequirements(e, t) {
-					let s, n = !1;
-					return "object" == typeof t ? (s = t.threshold, n = !!t.playing) : s = t, this.isAdequatelyInView(e, s) && (!n || this.props.isPlaying)
+					let s, n = !1,
+						r = !1;
+					return "object" == typeof t ? (s = t.threshold, n = !!t.playing, r = !!t.withSound) : s = t, this.isAdequatelyInView(e, s) && (!n || this.props.isPlaying) && (!r || this.props.isAudible)
 				}
 				handleThresholds(e, t) {
 					let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
@@ -2587,7 +2588,7 @@
 			t.a = (e, t) => Object(n.b)(e, function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return Object.assign(Object.assign({}, e), {
-					onPostViewable: r.O
+					onPostViewable: r.H
 				})
 			}(t))
 		},
@@ -4057,4 +4058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.51887c425250adefcc4e.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.88e8bada1487e23af328.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.15ac77f8a6277991d3a5.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.65984f6fdafb1a2274d7.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -137,12 +137,12 @@
 						isCheckboxSelected: H,
 						isCurrentUserProfilePost: G,
 						isFrontpage: Z,
-						isGalleryTileLayoutDefault: K,
-						isLoggedIn: Q,
+						isGalleryTileLayoutDefault: Q,
+						isLoggedIn: K,
 						isOverlay: J,
 						moderatorPermissions: Y,
-						modModeEnabled: X,
-						onClickPost: q,
+						modModeEnabled: q,
+						onClickPost: X,
 						onIgnoreReports: $,
 						onOpenReportsDropdown: ee,
 						poll: te,
@@ -156,20 +156,20 @@
 						toggleCheckbox: de,
 						userIsOp: le,
 						shouldShowGalleryTileOption: pe
-					} = this.props, me = oe ? void 0 : W, ue = this.props.crosspost || void 0, xe = Object(I.a)(Y), be = Object(L.a)(Y), he = Object(A.a)(Y), Oe = X && I.a, fe = !!se.media && se.media.type === N.o.RTJSON, ye = le && fe, ge = g && !ie, je = !!se.media && Object(N.H)(se.media), Pe = {
+					} = this.props, me = oe ? void 0 : W, ue = this.props.crosspost || void 0, xe = Object(I.a)(Y), be = Object(L.a)(Y), he = Object(A.a)(Y), Oe = q && I.a, fe = !!se.media && se.media.type === N.o.RTJSON, ye = le && fe, ge = g && !ie, je = !!se.media && Object(N.H)(se.media), Pe = {
 						flairStyleTemplate: me,
 						post: se,
 						inSubredditOrProfile: g,
 						isCurrentUserProfilePost: G,
 						isOverlay: J,
-						shouldShowSubscribeButton: !(Z && Q),
+						shouldShowSubscribeButton: !(Z && K),
 						subredditOrProfile: ce
 					}, Ce = r.a.createElement(y.a, {
 						className: Object(n.a)(B.a.classicPostStyles, R.a.postContainer, Object(M.a)(this.props), w ? R.a.mFirst : void 0, e),
 						isOverlay: J,
 						style: Object.assign(Object.assign({}, Object(M.d)(this.props)), Object(M.b)(this.props.flairStyleTemplate)),
 						post: se,
-						onClick: q,
+						onClick: X,
 						eventFactory: _
 					}, r.a.createElement(C.a, {
 						model: se,
@@ -226,7 +226,7 @@
 						source: se.source
 					}, Object(c.a)(se))), r.a.createElement(j.a, V({
 						key: "PostMeta"
-					}, Pe)), X && xe && Object(O.c)(se) && r.a.createElement(h.a, {
+					}, Pe)), q && xe && Object(O.c)(se) && r.a.createElement(h.a, {
 						onIgnoreReports: $,
 						reportable: se
 					}), r.a.createElement("div", {
@@ -267,7 +267,7 @@
 						hasModFullPerms: he,
 						hostPostId: D,
 						isOverlay: !!J,
-						modModeEnabled: X,
+						modModeEnabled: q,
 						onIgnoreReports: $,
 						onOpenReportsDropdown: ee,
 						post: se,
@@ -282,7 +282,7 @@
 						})
 					})), r.a.createElement(b.d, {
 						postId: se.id
-					}))), z(se, re, o, pe, K)));
+					}))), z(se, re, o, pe, Q)));
 					return r.a.createElement(S.b, null, Ce)
 				}
 			}
@@ -337,7 +337,7 @@
 		"./src/reddit/components/CommentsPageNativeAd/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "SearchResultsCommentsPageNativeAd", (function() {
-				return K
+				return Q
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -591,7 +591,7 @@
 				}
 			}
 			const Z = Object(l.a)(G),
-				K = Object(U.a)(Z);
+				Q = Object(U.a)(Z);
 			t.default = Object(V.a)(H(Z))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
@@ -703,10 +703,10 @@
 					} = t;
 					return {
 						handleVote: t => {
-							const s = t === i.a.upvoted ? Object(a.Z)(r) : Object(a.x)(r);
+							const s = t === i.a.upvoted ? Object(a.S)(r) : Object(a.q)(r);
 							e(s)
 						},
-						onIgnoreReports: () => e(Object(a.X)(r)),
+						onIgnoreReports: () => e(Object(a.Q)(r)),
 						onOpenReportsDropdown: t => e(Object(n.h)({
 							tooltipId: t
 						}))
@@ -810,4 +810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPageNativeAd.15ac77f8a6277991d3a5.js.map
+//# sourceMappingURL=CommentsPageNativeAd.65984f6fdafb1a2274d7.js.map

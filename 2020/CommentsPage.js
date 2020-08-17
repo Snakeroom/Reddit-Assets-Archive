@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.20c27ab8ca26626a936f.js
-// Retrieved at 8/13/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.78ff17fedbd9922d4c89.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1001,7 +1001,7 @@
 							})
 						})), t(T(d.id));
 						const e = Object(g.a)(l.body);
-						t(Object(r.Q)({
+						t(Object(r.J)({
 							[d.id]: e
 						}))
 					} else t(P(l.error))
@@ -1619,7 +1619,7 @@
 					d = "error-block-".concat(t),
 					l = "success-block-".concat(t);
 				if (a.ok) {
-					s(Object(h.Q)({
+					s(Object(h.J)({
 						[e]: {
 							suggestedSort: t
 						}
@@ -1841,7 +1841,7 @@
 						},
 						onSetSuggestedSort: t => e(C(s, t)),
 						hideTooltip: () => e(Object(m.i)()),
-						setContestMode: t => e(Object(h.U)(t, s)),
+						setContestMode: t => e(Object(h.N)(t, s)),
 						showTooltip: () => e(Object(m.h)({
 							tooltipId: te
 						})),
@@ -5808,7 +5808,7 @@
 				I = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				S = s.n(I);
 			const T = Object(i.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.y)({
+					toggle: () => e(Object(l.r)({
 						postId: t.post.id
 					}))
 				})),
@@ -6272,8 +6272,8 @@
 					return {
 						addPostToCollection: (t, s) => e(Object(ne.a)(t, s)),
 						onToggleModal: t => e(Object(u.i)(t)),
-						onToggleSave: () => e(Object(h.S)(n.postId)),
-						onHide: t => e(Object(h.W)(n.postId, !n.hidden, o, !0)),
+						onToggleSave: () => e(Object(h.L)(n.postId)),
+						onHide: t => e(Object(h.P)(n.postId, !n.hidden, o, !0)),
 						onReportClick: () => e(Object(g.j)(n.postId, o)),
 						onEdit: () => {
 							const t = !o && !r;
@@ -7425,12 +7425,12 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(m.t)(s.id)),
+						onApprovePost: () => e(Object(m.m)(s.id)),
 						onOpenPostModModeDropdown: t => e(Object(p.h)({
 							tooltipId: t
 						})),
-						onRemovePost: () => e(Object(m.R)(s.id, !1)),
-						onSpamPost: () => e(Object(m.R)(s.id, !0)),
+						onRemovePost: () => e(Object(m.K)(s.id, !1)),
+						onSpamPost: () => e(Object(m.K)(s.id, !0)),
 						onFlairPost: t => () => e(Object(l.i)(t))
 					}
 				});
@@ -7541,14 +7541,14 @@
 					id: f,
 					title: E,
 					onClose: () => {
-						g(!1), y("close", "click"), v(Object(d.F)()), v(Object(d.Q)({
+						g(!1), y("close", "click"), v(Object(d.y)()), v(Object(d.J)({
 							[s.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						v(Object(d.F)())
+						v(Object(d.y)())
 					}
 				}, r.a.createElement("p", null, n.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [n.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -7608,10 +7608,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						f(n.Closed), E("close", "click"), C(Object(c.F)())
+						f(n.Closed), E("close", "click"), C(Object(c.y)())
 					},
 					onClickOutside: () => {
-						C(Object(c.F)())
+						C(Object(c.y)())
 					}
 				};
 				switch (g) {
@@ -8632,12 +8632,12 @@
 						postId: s
 					} = t;
 					return {
-						onIgnoreReports: () => e(Object(v.X)(s)),
+						onIgnoreReports: () => e(Object(v.Q)(s)),
 						onOpenReportsDropdown: t => e(Object(C.h)({
 							tooltipId: t
 						})),
 						onVoteClick: t => {
-							const n = t === T.a.upvoted ? Object(v.Z)(s) : Object(v.x)(s);
+							const n = t === T.a.upvoted ? Object(v.S)(s) : Object(v.q)(s);
 							e(n)
 						}
 					}
@@ -9582,7 +9582,7 @@
 					post: s
 				} = t;
 				return {
-					onFollow: () => e(Object(c.B)(s.isSponsored ? s.postId : s.id))
+					onFollow: () => e(Object(c.u)(s.isSponsored ? s.postId : s.id))
 				}
 			})(Object(l.c)(h))
 		},
@@ -9996,19 +9996,19 @@
 						isCommentsPage: r
 					} = t;
 					return {
-						onCopyLink: () => e(Object(g.C)(s)),
-						onDelete: t => e(Object(g.L)(n, t, o)),
-						onDistinguishPost: t => e(Object(g.w)(n, t)),
+						onCopyLink: () => e(Object(g.v)(s)),
+						onDelete: t => e(Object(g.E)(n, t, o)),
+						onDistinguishPost: t => e(Object(g.p)(n, t)),
 						onGildClick: t => e(Object(h.d)({
 							correlationId: t,
 							thingId: n
 						})),
-						onToggleSave: () => e(Object(g.S)(n)),
-						onToggleNSFW: () => e(Object(g.H)(n)),
-						onToggleOC: () => e(Object(g.I)(n)),
+						onToggleSave: () => e(Object(g.L)(n)),
+						onToggleNSFW: () => e(Object(g.A)(n)),
+						onToggleOC: () => e(Object(g.B)(n)),
 						onTogglePinned: () => e(Object(x.i)(n)),
-						onToggleSpoiler: () => e(Object(g.V)(n)),
-						onHide: t => e(Object(g.W)(n, !t, o, !0)),
+						onToggleSpoiler: () => e(Object(g.O)(n)),
+						onHide: t => e(Object(g.P)(n, !t, o, !0)),
 						onReportClick: () => e(Object(v.j)(n, o)),
 						onStartEventNow: () => {
 							e((e, t) => Object(l.a)(Object(y.p)()(t()))), e(Object(u.startEventNowRequested)(n))
@@ -10018,7 +10018,7 @@
 							e(Object(f.a)(n, t))
 						},
 						onFlairPost: () => e(Object(b.i)(Object(de.b)(n, o))),
-						onToggleSendReplies: () => e(Object(g.T)(n)),
+						onToggleSendReplies: () => e(Object(g.M)(n)),
 						showCollectionsList: (t, s) => {
 							e(Object(ce.e)(t)).then(() => {
 								const t = Object(me.s)(s, o);
@@ -10882,7 +10882,7 @@
 								tooltipId: s
 							}))
 						},
-						copyLink: () => e(Object(p.C)(Object(m.a)(n, {
+						copyLink: () => e(Object(p.v)(Object(m.a)(n, {
 							utm_source: "share",
 							utm_medium: "web2x"
 						})))
@@ -13456,16 +13456,16 @@
 						openPost: t => {
 							s && e(Object(a.a)({
 								lastLoadedEnv: "server"
-							})), e(d.J(t))
+							})), e(d.C(t))
 						},
 						fireAdPixelsOfType: (t, s) => {
-							e(d.A(t, s))
+							e(d.t(t, s))
 						},
 						trackOnPostEnteredViewport: (t, s, n) => {
-							e(d.M(t, n))
+							e(d.F(t, n))
 						},
 						trackOnPostExitedViewport: (t, s, n, o) => {
-							e(d.N(t, n, o))
+							e(d.G(t, n, o))
 						},
 						surveyTriggerScrollCounted: () => e(Object(l.b)())
 					}
@@ -16980,4 +16980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.20c27ab8ca26626a936f.js.map
+//# sourceMappingURL=CommentsPage.78ff17fedbd9922d4c89.js.map

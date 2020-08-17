@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.3aadc4b5ad9d900c03b0.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.e48291b30973dd082212.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -335,7 +335,7 @@
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return q
+				return Y
 			}));
 			t("./node_modules/core-js/modules/es6.symbol.js");
 			var r = t("./node_modules/react/index.js"),
@@ -517,11 +517,11 @@
 					}
 					return t
 				};
-			const Z = Object(n.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, s, t) => {
+			const Q = Object(n.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, s, t) => {
 				if (!e) return !1;
 				return (Object(p.f)(e) ? s : t).some(s => s.id === e.id)
 			});
-			class Q extends i.a.Component {
+			class Z extends i.a.Component {
 				constructor() {
 					super(...arguments), this.trackSubredditOrProfileClicked = e => {
 						e.stopPropagation(), this.props.onSubredditOrProfileClick(this.props.postId)
@@ -545,7 +545,7 @@
 							subscribedProfiles: b,
 							subscribedSubreddits: h
 						} = t,
-						v = !Z({
+						v = !Q({
 							subredditOrProfile: p,
 							subscribedProfiles: b,
 							subscribedSubreddits: h
@@ -573,10 +573,10 @@
 					}))
 				}
 			}
-			const Y = Object(m.a)(Object(a.a)(Q));
-			class q extends i.a.Component {
+			const q = Object(m.a)(Object(a.a)(Z));
+			class Y extends i.a.Component {
 				render() {
-					return i.a.createElement(Y, this.props)
+					return i.a.createElement(q, this.props)
 				}
 			}
 		},
@@ -1161,10 +1161,10 @@
 						}))
 					},
 					handleVote: s => {
-						const r = s === d.a.upvoted ? Object(n.Z)(t) : Object(n.x)(t);
+						const r = s === d.a.upvoted ? Object(n.S)(t) : Object(n.q)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(n.X)(t)),
+					onIgnoreReports: () => e(Object(n.Q)(t)),
 					onOpenReportsDropdown: s => e(Object(a.h)({
 						tooltipId: s
 					}))
@@ -1228,4 +1228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.3aadc4b5ad9d900c03b0.js.map
+//# sourceMappingURL=InFeedChaining.e48291b30973dd082212.js.map

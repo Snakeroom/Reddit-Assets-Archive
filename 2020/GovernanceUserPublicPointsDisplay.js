@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.fcd7d69b142ae81f1d79.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.b3135adb42c244961ff2.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -67,8 +67,8 @@
 				N = Object(s.a)(j.s),
 				T = Object(s.a)(j.t),
 				P = Object(s.a)(j.u),
-				U = Object(s.a)(j.v),
-				S = Object(s.a)(j.w),
+				S = Object(s.a)(j.v),
+				U = Object(s.a)(j.w),
 				G = Object(s.a)(j.x),
 				B = (e, t) => async (n, r, s) => {
 					let o, {
@@ -94,7 +94,7 @@
 							const {
 								postId: e
 							} = u, t = s.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(c.Z)(e))
+							t && t.voteState === f.a.notVoted && n(Object(c.S)(e))
 						}
 					} else n(k({
 						pollId: e,
@@ -137,9 +137,9 @@
 					let {
 						apiContext: s
 					} = r;
-					t(U());
+					t(S());
 					const o = await Object(b.a)(s(), e);
-					o.ok ? t(S(o.body)) : t(P({
+					o.ok ? t(U(o.body)) : t(P({
 						error: o.error
 					}))
 				}
@@ -587,7 +587,7 @@
 			})), n.d(t, "o", (function() {
 				return P
 			})), n.d(t, "l", (function() {
-				return U
+				return S
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				s = n("./src/reddit/endpoints/governance/crypto.ts"),
@@ -710,11 +710,11 @@
 						address: void 0
 					}
 				},
-				U = (e, t) => {
+				S = (e, t) => {
 					const n = w(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.fcd7d69b142ae81f1d79.js.map
+//# sourceMappingURL=GovernanceUserPublicPointsDisplay.b3135adb42c244961ff2.js.map

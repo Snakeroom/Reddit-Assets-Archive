@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.f6de2fef0187d9ea16e6.js
-// Retrieved at 8/6/2020, 3:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.88ad35286e6279a6c03c.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -59,9 +59,9 @@
 				C = s("./src/reddit/selectors/experiments/video.ts"),
 				I = s("./src/reddit/selectors/platform.ts"),
 				D = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				L = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				x = s("./src/reddit/selectors/user.ts"),
-				H = s("./src/reddit/selectors/video.ts"),
+				H = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				L = s("./src/reddit/selectors/user.ts"),
+				x = s("./src/reddit/selectors/video.ts"),
 				k = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
 				O = s.n(k);
 			const {
@@ -69,19 +69,19 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(c.a)(S.a, {
 				playerName: "RPAN Listing Player"
 			}), _ = 3e3, j = Object(d.c)({
-				autoplay: x.b,
+				autoplay: L.b,
 				inVideoNewVolumePolicyFeed: C.a,
 				isOverlayOpen: I.i,
-				mutedInFeed: H.j,
+				mutedInFeed: x.j,
 				unavailableVideoUrl: D.o,
 				currentStream: (e, t) => {
 					let {
 						postId: s
 					} = t;
-					return Object(L.l)(e, s)
+					return Object(H.l)(e, s)
 				}
 			}), N = Object(o.b)(j, (e, t) => ({
-				setMutedInFeed: t => e(Object(T.P)(t)),
+				setMutedInFeed: t => e(Object(T.H)(t)),
 				onHeartbeatSubscribe: t => e(b.a.subscribeHeartbeat(t)),
 				onStreamByIdRequested: t => e(Object(v.d)(t))
 			}));
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer.f6de2fef0187d9ea16e6.js.map
+//# sourceMappingURL=LiveVideoPlayer.88ad35286e6279a6c03c.js.map

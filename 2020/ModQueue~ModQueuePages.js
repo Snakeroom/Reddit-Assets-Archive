@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.1bb0b0a38d7e93b7eeda.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.4e38f04df5cbb078685b.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -24,7 +24,7 @@
 			})), n.d(t, "d", (function() {
 				return U
 			})), n.d(t, "f", (function() {
-				return K
+				return Q
 			})), n.d(t, "a", (function() {
 				return L
 			})), n.d(t, "b", (function() {
@@ -123,7 +123,7 @@
 							hk: "16O2Sk"
 						})
 					}))
-				}, B = Object(a.a)(h.t), Q = Object(a.a)(h.s), D = Object(a.a)(h.r), K = (e, t, n) => async (o, a, h) => {
+				}, B = Object(a.a)(h.t), D = Object(a.a)(h.s), K = Object(a.a)(h.r), Q = (e, t, n) => async (o, a, h) => {
 					let {
 						apiContext: k
 					} = h;
@@ -282,11 +282,11 @@
 								const b = await Object(i.a)(o(), c, {
 									ids: m
 								});
-								b.ok ? e(Q(Object.assign(Object.assign({}, b.body), {
+								b.ok ? e(D(Object.assign(Object.assign({}, b.body), {
 									operation: c,
 									ids: m,
 									username: u
-								}))) : (e(D(b.error)), e(Object(d.e)({
+								}))) : (e(K(b.error)), e(Object(d.e)({
 									kind: l.b.Error,
 									text: s.fbt._("Oh no! Something went wrong!", null, {
 										hk: "16O2Sk"
@@ -328,11 +328,11 @@
 			})), n.d(t, "editRemovalReasonPending", (function() {
 				return B
 			})), n.d(t, "editRemovalReasonSuccess", (function() {
-				return Q
-			})), n.d(t, "editRemovalReasonFailed", (function() {
 				return D
-			})), n.d(t, "editRemovalReason", (function() {
+			})), n.d(t, "editRemovalReasonFailed", (function() {
 				return K
+			})), n.d(t, "editRemovalReason", (function() {
+				return Q
 			})), n.d(t, "deleteRemovalReasonPending", (function() {
 				return L
 			})), n.d(t, "deleteRemovalReasonSuccess", (function() {
@@ -344,9 +344,9 @@
 			})), n.d(t, "removedItemsSelected", (function() {
 				return G
 			})), n.d(t, "fetchReasonsAndOpenModal", (function() {
-				return z
-			})), n.d(t, "removalReasonSubmittedPending", (function() {
 				return J
+			})), n.d(t, "removalReasonSubmittedPending", (function() {
+				return z
 			})), n.d(t, "removalReasonSubmittedSuccess", (function() {
 				return V
 			})), n.d(t, "removalReasonSubmittedFailed", (function() {
@@ -449,7 +449,7 @@
 							})
 						}))
 					} else n(F(i.error))
-				}, B = Object(a.a)(I.h), Q = Object(a.a)(I.i), D = Object(a.a)(I.g), K = (e, t) => async (n, a, r) => {
+				}, B = Object(a.a)(I.h), D = Object(a.a)(I.i), K = Object(a.a)(I.g), Q = (e, t) => async (n, a, r) => {
 					let {
 						apiContext: c
 					} = r;
@@ -463,7 +463,7 @@
 							title: n.title
 						}
 					}))(c(), d, t);
-					i.ok ? (n(Q({
+					i.ok ? (n(D({
 						subredditId: e,
 						reason: t
 					})), n(Object(b.e)({
@@ -471,7 +471,7 @@
 						text: s.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
-					}))) : n(D(i.error))
+					}))) : n(K(i.error))
 				}, L = Object(a.a)(I.e), q = Object(a.a)(I.f), W = Object(a.a)(I.d), H = (e, t) => async (n, a, r) => {
 					let {
 						apiContext: c
@@ -491,7 +491,7 @@
 							hk: "4xzgsa"
 						})
 					}))) : n(W(i.error))
-				}, G = Object(a.a)(I.t), z = (e, t) => async (n, s, o) => {
+				}, G = Object(a.a)(I.t), J = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: a
 					} = o;
@@ -500,7 +500,7 @@
 						subredditId: e,
 						itemIds: t
 					})), n(Object(m.i)(l.a.ADD_REMOVAL_REASON))
-				}, J = Object(a.a)(I.r), V = Object(a.a)(I.s), Z = Object(a.a)(I.q), X = Object(a.a)(I.n), Y = Object(a.a)(I.o), $ = Object(a.a)(I.p), ee = Object(a.a)(I.m), te = (e, t, n, s, a) => async (d, m, b) => {
+				}, z = Object(a.a)(I.r), V = Object(a.a)(I.s), Z = Object(a.a)(I.q), X = Object(a.a)(I.n), Y = Object(a.a)(I.o), $ = Object(a.a)(I.p), ee = Object(a.a)(I.m), te = (e, t, n, s, a) => async (d, m, b) => {
 					let {
 						apiContext: l
 					} = b;
@@ -509,9 +509,9 @@
 						O = e[0],
 						j = Object(v.a)(O) ? y.e.Post : y.e.Comment,
 						R = j === y.e.Post ? p.posts.models[O] : p.comments.models[O],
-						P = j === y.e.Post ? u.Q : i.R;
+						P = j === y.e.Post ? u.J : i.R;
 					if (!R || !f) return;
-					d(J()), d(P({
+					d(z()), d(P({
 						[O]: {
 							modNote: a,
 							modRemovalReason: t && t.title,
@@ -598,7 +598,7 @@
 					const u = c(),
 						l = u.user.account && u.user.account.displayText;
 					if (!l) return;
-					r(J());
+					r(z());
 					const p = Object(b.e)({
 							kind: P.b.SuccessMod,
 							text: s.fbt._({
@@ -680,4 +680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue~ModQueuePages.1bb0b0a38d7e93b7eeda.js.map
+//# sourceMappingURL=ModQueue~ModQueuePages.4e38f04df5cbb078685b.js.map

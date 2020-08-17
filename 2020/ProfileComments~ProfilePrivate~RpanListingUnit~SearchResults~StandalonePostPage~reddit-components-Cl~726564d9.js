@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.9de07abeafb3ff834a83.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.d7c9c56ffd4fce917273.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -281,7 +281,7 @@
 							})
 						})), t(T(c.id));
 						const e = Object(f.a)(l.body);
-						t(Object(r.Q)({
+						t(Object(r.J)({
 							[c.id]: e
 						}))
 					} else t(w(l.error))
@@ -1280,8 +1280,8 @@
 					return {
 						addPostToCollection: (t, s) => e(Object(ne.a)(t, s)),
 						onToggleModal: t => e(Object(u.i)(t)),
-						onToggleSave: () => e(Object(h.S)(n.postId)),
-						onHide: t => e(Object(h.W)(n.postId, !n.hidden, o, !0)),
+						onToggleSave: () => e(Object(h.L)(n.postId)),
+						onHide: t => e(Object(h.P)(n.postId, !n.hidden, o, !0)),
 						onReportClick: () => e(Object(f.j)(n.postId, o)),
 						onEdit: () => {
 							const t = !o && !r;
@@ -1745,12 +1745,12 @@
 						post: s
 					} = t;
 					return {
-						onApprovePost: () => e(Object(p.t)(s.id)),
+						onApprovePost: () => e(Object(p.m)(s.id)),
 						onOpenPostModModeDropdown: t => e(Object(m.h)({
 							tooltipId: t
 						})),
-						onRemovePost: () => e(Object(p.R)(s.id, !1)),
-						onSpamPost: () => e(Object(p.R)(s.id, !0)),
+						onRemovePost: () => e(Object(p.K)(s.id, !1)),
+						onSpamPost: () => e(Object(p.K)(s.id, !0)),
 						onFlairPost: t => () => e(Object(l.i)(t))
 					}
 				});
@@ -2579,19 +2579,19 @@
 						isCommentsPage: r
 					} = t;
 					return {
-						onCopyLink: () => e(Object(f.C)(s)),
-						onDelete: t => e(Object(f.L)(n, t, o)),
-						onDistinguishPost: t => e(Object(f.w)(n, t)),
+						onCopyLink: () => e(Object(f.v)(s)),
+						onDelete: t => e(Object(f.E)(n, t, o)),
+						onDistinguishPost: t => e(Object(f.p)(n, t)),
 						onGildClick: t => e(Object(h.d)({
 							correlationId: t,
 							thingId: n
 						})),
-						onToggleSave: () => e(Object(f.S)(n)),
-						onToggleNSFW: () => e(Object(f.H)(n)),
-						onToggleOC: () => e(Object(f.I)(n)),
+						onToggleSave: () => e(Object(f.L)(n)),
+						onToggleNSFW: () => e(Object(f.A)(n)),
+						onToggleOC: () => e(Object(f.B)(n)),
 						onTogglePinned: () => e(Object(x.i)(n)),
-						onToggleSpoiler: () => e(Object(f.V)(n)),
-						onHide: t => e(Object(f.W)(n, !t, o, !0)),
+						onToggleSpoiler: () => e(Object(f.O)(n)),
+						onHide: t => e(Object(f.P)(n, !t, o, !0)),
 						onReportClick: () => e(Object(O.j)(n, o)),
 						onStartEventNow: () => {
 							e((e, t) => Object(l.a)(Object(C.p)()(t()))), e(Object(u.startEventNowRequested)(n))
@@ -2601,7 +2601,7 @@
 							e(Object(g.a)(n, t))
 						},
 						onFlairPost: () => e(Object(b.i)(Object(ce.b)(n, o))),
-						onToggleSendReplies: () => e(Object(f.T)(n)),
+						onToggleSendReplies: () => e(Object(f.M)(n)),
 						showCollectionsList: (t, s) => {
 							e(Object(de.e)(t)).then(() => {
 								const t = Object(pe.s)(s, o);
@@ -3012,7 +3012,7 @@
 								tooltipId: s
 							}))
 						},
-						copyLink: () => e(Object(m.C)(Object(p.a)(n, {
+						copyLink: () => e(Object(m.v)(Object(p.a)(n, {
 							utm_source: "share",
 							utm_medium: "web2x"
 						})))
@@ -4132,4 +4132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.9de07abeafb3ff834a83.js.map
+//# sourceMappingURL=ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9.d7c9c56ffd4fce917273.js.map

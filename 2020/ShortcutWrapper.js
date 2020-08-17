@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.69ccb08315cd144bdc71.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.6edb601d88facdc469a6.js
+// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./src/reddit/components/Comments/helpers/hiddenComments.ts": function(t, e, s) {
@@ -90,13 +90,13 @@
 				g = s("./src/reddit/actions/comment/index.ts"),
 				C = s("./src/reddit/actions/modal.ts"),
 				f = s("./src/reddit/actions/post.ts"),
-				y = s("./src/reddit/components/Comments/helpers/hiddenComments.ts"),
-				P = s("./src/reddit/constants/elementIds.ts"),
+				P = s("./src/reddit/components/Comments/helpers/hiddenComments.ts"),
+				y = s("./src/reddit/constants/elementIds.ts"),
 				I = s("./src/reddit/constants/modals.ts"),
 				w = s("./src/reddit/constants/postLayout.ts"),
-				T = s("./src/reddit/helpers/overlay/index.ts"),
-				_ = s("./src/reddit/helpers/trackers/lightbox.ts"),
-				L = s("./src/reddit/helpers/trackers/shortcuts.ts"),
+				L = s("./src/reddit/helpers/overlay/index.ts"),
+				T = s("./src/reddit/helpers/trackers/lightbox.ts"),
+				_ = s("./src/reddit/helpers/trackers/shortcuts.ts"),
 				k = s("./src/reddit/selectors/listings.ts"),
 				E = s("./src/reddit/selectors/platform.ts"),
 				S = s("./src/reddit/actions/shortcuts/active.ts"),
@@ -120,7 +120,7 @@
 						})) || !l.nextPost) return;
 					m = l.nextPost.id
 				} while (d.posts.models[m].hidden);
-				d.shortcuts.namespace === u.d.Lightbox ? (D(s, l.nextPost), t(e ? _.b(i, "next_post", !0) : L.l(m))) : (s(Object(S.b)(m)), Object(N.a)(m), t(L.k(m)))
+				d.shortcuts.namespace === u.d.Lightbox ? (D(s, l.nextPost), t(e ? T.b(i, "next_post", !0) : _.l(m))) : (s(Object(S.b)(m)), Object(N.a)(m), t(_.k(m)))
 			}, K = t => async (e, s, o) => {
 				let {
 					apiContext: c
@@ -132,16 +132,16 @@
 				const r = n.shortcuts.activeCommentId;
 				if (r && r !== n.commentsPage.keyToHeadCommentId[d]) {
 					const t = n.commentsPage.keyToCommentThreadLinkSets[d];
-					for (i = t[r].prev.id; y.b(i);) i = t[i].prev.id
+					for (i = t[r].prev.id; P.b(i);) i = t[i].prev.id
 				} else {
 					const t = n.commentsPage.keyToHeadCommentId[d];
 					if (!t || r === t) return;
 					i = t
 				}
-				e(Object(S.a)(i)), Object(N.a)(i), t(L.n(i))
+				e(Object(S.a)(i)), Object(N.a)(i), t(_.n(i))
 			}, D = (t, e) => {
-				Object(N.b)(u.b), t(Object(S.b)(e.id)), document.body.style.overflow = "", Object(N.a)(e.id), document.body.style.overflow = "hidden", t(Object(T.a)(e.permalink));
-				const s = document.getElementById(P.d);
+				Object(N.b)(u.b), t(Object(S.b)(e.id)), document.body.style.overflow = "", Object(N.a)(e.id), document.body.style.overflow = "hidden", t(Object(L.a)(e.permalink));
+				const s = document.getElementById(y.d);
 				s && s.scrollTo(0, 0)
 			};
 			var H = s("./src/reddit/actions/shortcuts/close.ts");
@@ -165,7 +165,7 @@
 									s = n.comments.models[t].permalink;
 								e(Object(v.b)(s))
 							} else e(K(t)), e(g.Z(i, d));
-							t(L.b(d))
+							t(_.b(d))
 						}
 					},
 					[u.c.Downvote]: t => async (e, s, o) => {
@@ -178,7 +178,7 @@
 								activePostId: i
 							} = n.shortcuts,
 							r = Object(N.c)(n);
-						r && (d && !n.comments.collapsed[r][d] ? (e(g.T(d)), t(L.e(d))) : i && (e(f.x(i)), t(L.f(i))))
+						r && (d && !n.comments.collapsed[r][d] ? (e(g.T(d)), t(_.e(d))) : i && (e(f.q(i)), t(_.f(i))))
 					},
 					[u.c.Expando]: t => async (e, s, o) => {
 						let {
@@ -189,9 +189,9 @@
 							i = w.b[n.user.prefs.layout];
 						if (d && (i === w.g.Compact || i === w.g.Classic)) {
 							const s = n.posts.models[d].crosspostRootId;
-							(n.posts.models[d].media || s && n.posts.models[s] && n.posts.models[s].media) && (e(f.y({
+							(n.posts.models[d].media || s && n.posts.models[s] && n.posts.models[s].media) && (e(f.r({
 								postId: d
-							})), t(L.g(d)))
+							})), t(_.g(d)))
 						}
 					},
 					[u.c.Hide]: t => async (e, s, o) => {
@@ -200,7 +200,7 @@
 						} = o;
 						const n = s(),
 							d = n.shortcuts.activePostId;
-						d && !n.posts.models[d].isSponsored && (e(f.W(d, !n.posts.models[d].hidden, n.shortcuts.namespace === u.d.Lightbox, !0)), e(A(t)), t(L.i(d)))
+						d && !n.posts.models[d].isSponsored && (e(f.P(d, !n.posts.models[d].hidden, n.shortcuts.namespace === u.d.Lightbox, !0)), e(A(t)), t(_.i(d)))
 					},
 					[u.c.NextComment]: t => async (e, s, o) => {
 						let {
@@ -218,14 +218,14 @@
 								do {
 									if (!e[i].next) return;
 									i = e[i].next.id
-								} while (y.b(i));
+								} while (P.b(i));
 							else i = e[i].next.id
 						} else {
 							const t = n.commentsPage.keyToHeadCommentId[d];
 							if (!t) return;
 							i = t
 						}
-						e(Object(S.a)(i)), Object(N.a)(i), t(L.j(i))
+						e(Object(S.a)(i)), Object(N.a)(i), t(_.j(i))
 					},
 					[u.c.NextPost]: A,
 					[u.c.NewPost]: t => async (e, s, o) => {
@@ -236,13 +236,13 @@
 						if (!n.user.account) return;
 						const d = Object(E.f)(n),
 							i = d ? d.url : "/";
-						e(Object(v.b)("".concat(i, "submit"))), t(L.d)
+						e(Object(v.b)("".concat(i, "submit"))), t(_.d)
 					},
 					[u.c.OpenIndex]: t => async (e, s, o) => {
 						let {
 							apiContext: c
 						} = o;
-						e(Object(C.i)(I.a.KEYBOARD_SHORTCUTS)), t(L.s)
+						e(Object(C.i)(I.a.KEYBOARD_SHORTCUTS)), t(_.s)
 					},
 					[u.c.OpenLightbox]: t => async (e, s, o) => {
 						let {
@@ -252,7 +252,7 @@
 							d = n.listings.activeKey,
 							i = n.listings.postOrder.ids[d],
 							r = n.shortcuts.activePostId;
-						!i || !r || i.indexOf(r) < 0 || (e(Object(T.a)(n.posts.models[r].permalink)), t(L.m(r)))
+						!i || !r || i.indexOf(r) < 0 || (e(Object(L.a)(n.posts.models[r].permalink)), t(_.m(r)))
 					},
 					[u.c.OpenLink]: t => async (e, s, o) => {
 						let {
@@ -267,7 +267,7 @@
 							if (e.source) {
 								const s = e.source.url,
 									o = window.open(s, "_blank");
-								o && o.focus(), t(L.h(d))
+								o && o.focus(), t(_.h(d))
 							}
 						}
 					},
@@ -289,7 +289,7 @@
 								})) || !a.prevPost) return;
 							l = a.prevPost.id
 						} while (n.posts.models[l].hidden);
-						n.shortcuts.namespace === u.d.Lightbox ? (D(e, a.prevPost), t(L.p(l))) : (e(Object(S.b)(l)), Object(N.a)(l), t(L.o(l)))
+						n.shortcuts.namespace === u.d.Lightbox ? (D(e, a.prevPost), t(_.p(l))) : (e(Object(S.b)(l)), Object(N.a)(l), t(_.o(l)))
 					},
 					[u.c.Reply]: t => async (e, s, o) => {
 						let {
@@ -303,7 +303,7 @@
 						i && d && d !== n.listings.activeKey && (e(g.ob({
 							commentsPageKey: d,
 							parentCommentId: i
-						})), t(L.c(i)))
+						})), t(_.c(i)))
 					},
 					[u.c.Save]: t => async (e, s, o) => {
 						let {
@@ -315,7 +315,7 @@
 								activePostId: i
 							} = n.shortcuts,
 							r = Object(N.c)(n);
-						r && (d && !n.comments.collapsed[r][d] ? (e(g.gb(d)), t(L.q(d))) : i && (e(f.S(i)), t(L.r(i))))
+						r && (d && !n.comments.collapsed[r][d] ? (e(g.gb(d)), t(_.q(d))) : i && (e(f.L(i)), t(_.r(i))))
 					},
 					[u.c.Upvote]: t => async (e, s, o) => {
 						let {
@@ -327,7 +327,7 @@
 								activePostId: i
 							} = n.shortcuts,
 							r = Object(N.c)(n);
-						r && (d && !n.comments.collapsed[r][d] ? (e(g.rb(d)), t(L.t(d))) : i && (e(f.Z(i)), t(L.u(i))))
+						r && (d && !n.comments.collapsed[r][d] ? (e(g.rb(d)), t(_.t(d))) : i && (e(f.S(i)), t(_.u(i))))
 					},
 					[u.c.Konami]: null
 				},
@@ -339,14 +339,14 @@
 					n && t(n(e))
 				},
 				U = new l.ShortcutManager(j),
-				M = Object(m.c)({
+				q = Object(m.c)({
 					isBladeOpen: b.j,
 					namespace: t => t.activeModalId ? u.d.Global : t.shortcuts.namespace
 				}),
-				q = Object(a.b)(M, t => ({
+				M = Object(a.b)(q, t => ({
 					dispatchAction: e => t(e)
 				}));
-			class W extends i.Component {
+			class G extends i.Component {
 				getChildContext() {
 					return {
 						shortcuts: U
@@ -375,11 +375,11 @@
 					})
 				}
 			}
-			W.childContextTypes = {
+			G.childContextTypes = {
 				shortcuts: d.a.object.isRequired
 			};
-			e.default = q(Object(p.c)(W))
+			e.default = M(Object(p.c)(G))
 		}
 	}
 ]);
-//# sourceMappingURL=ShortcutWrapper.69ccb08315cd144bdc71.js.map
+//# sourceMappingURL=ShortcutWrapper.6edb601d88facdc469a6.js.map
