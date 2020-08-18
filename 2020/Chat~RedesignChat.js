@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6aeca97c9efc687db13d.js
-// Retrieved at 8/18/2020, 9:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a058cf92fb192e0940ce.js
+// Retrieved at 8/18/2020, 9:50:13 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9339,7 +9339,7 @@
 				s = n("./src/chat/customMiddleware/noop.ts"),
 				c = n("./src/chat/helpers/errors.ts"),
 				r = n("./src/chat/selectors/app.ts");
-			const o = /^\([\d*]\)\s+/,
+			const o = /^\([\d*]+?\)\s+/,
 				i = e => {
 					const t = null === window || void 0 === window ? void 0 : window.navigator;
 					if (t && "setAppBadge" in t && "clearAppBadge" in t) {
@@ -14202,4 +14202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.6aeca97c9efc687db13d.js.map
+//# sourceMappingURL=Chat~RedesignChat.a058cf92fb192e0940ce.js.map
