@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.4b2c38fa50f0817b0b15.js
-// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.93322ba109b8e750088c.js
+// Retrieved at 8/18/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -9709,9 +9709,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => n.ec.Treatment1 === Object(r.c)(e, {
+			const o = e => n.fc.Treatment1 === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.Zb
+				experimentName: n.ac
 			})
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -9728,4 +9728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.4b2c38fa50f0817b0b15.js.map
+//# sourceMappingURL=SearchResults.93322ba109b8e750088c.js.map

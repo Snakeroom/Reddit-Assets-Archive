@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.326b09617b1f10d53fb2.js
-// Retrieved at 8/18/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.52cc3c1dd9dc36102964.js
+// Retrieved at 8/18/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -285,16 +285,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Fb
+					experimentName: m.Gb
 				});
-				return Object(m.Ec)(t) ? void 0 : t
+				return Object(m.Fc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Gb
+					experimentName: m.Hb
 				});
-				return Object(m.Ec)(t) ? void 0 : t
-			}, (e, t) => e === m.Hb.Enabled && t === m.Hb.Enabled);
+				return Object(m.Fc)(t) ? void 0 : t
+			}, (e, t) => e === m.Ib.Enabled && t === m.Ib.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "0b64b39-production"
+					SENTRY_RELEASE_VERSION: "d799406-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -368,8 +368,8 @@
 					playerName: S,
 					playerVersion: x,
 					respectDoNotTrack: O,
-					saltLength: k,
-					saltTimeToLive: I,
+					saltLength: I,
+					saltTimeToLive: k,
 					viewerUserIdLength: T
 				} = Object.assign(Object.assign({}, y), t);
 				class L extends r.Component {
@@ -515,7 +515,7 @@
 						}
 					}
 				}
-				L.displayName = E(e), L.ANONYMOUS_USER_ID = s, L.DEBUG = l, L.DISABLE_COOKIES = m, L.DURATION_LIVE = 1 / 0, L.ENV_KEY = u, L.LOCAL_STORAGE_SALT_KEY = h, L.LOCAL_STORAGE_VIEWER_USER_ID_KEY = w, L.PLAYER_NAME = S, L.PLAYER_VERSION = x, L.RESPECT_DO_NOT_TRACK = O, L.SALT_LENGTH = k, L.SALT_TIME_TO_LIVE = I, L.STREAM_TYPE_LIVE = "live", L.STREAM_TYPE_ON_DEMAND = "on-demand", L.VIEWER_USER_ID_LENGTH = T;
+				L.displayName = E(e), L.ANONYMOUS_USER_ID = s, L.DEBUG = l, L.DISABLE_COOKIES = m, L.DURATION_LIVE = 1 / 0, L.ENV_KEY = u, L.LOCAL_STORAGE_SALT_KEY = h, L.LOCAL_STORAGE_VIEWER_USER_ID_KEY = w, L.PLAYER_NAME = S, L.PLAYER_VERSION = x, L.RESPECT_DO_NOT_TRACK = O, L.SALT_LENGTH = I, L.SALT_TIME_TO_LIVE = k, L.STREAM_TYPE_LIVE = "live", L.STREAM_TYPE_ON_DEMAND = "on-demand", L.VIEWER_USER_ID_LENGTH = T;
 				const N = Object(r.forwardRef)((e, t) => a.a.createElement(L, f({}, e, {
 						forwardedRef: t
 					}))),
@@ -1662,8 +1662,8 @@
 					t || e.setAttribute("tabindex", "-1"), e.focus(), t || e.removeAttribute("tabindex")
 				},
 				O = s("./src/lib/focusVisible/index.js"),
-				k = s("./src/reddit/actions/media.ts"),
-				I = s("./src/reddit/actions/profile/index.ts"),
+				I = s("./src/reddit/actions/media.ts"),
+				k = s("./src/reddit/actions/profile/index.ts"),
 				T = s("./src/reddit/actions/publicAccessNetwork/api.ts"),
 				L = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				N = s("./src/lib/makeActionCreator/index.ts");
@@ -1752,8 +1752,8 @@
 				xe = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				ye = s("./src/reddit/constants/posts.ts"),
 				Oe = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				ke = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
-				Ie = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
+				Ie = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
+				ke = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
 				Te = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				Le = s("./src/reddit/selectors/subreddit.ts"),
 				Ne = s("./src/reddit/selectors/comments.ts"),
@@ -2143,9 +2143,9 @@
 				xt = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				yt = s("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				Ot = s("./src/reddit/components/PublicAccessNetwork/Theater/RecommendedViewerSubredditsMenu/index.m.less"),
-				kt = s.n(Ot);
+				It = s.n(Ot);
 			const {
-				fbt: It
+				fbt: kt
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var Tt = e => {
 					let {
@@ -2155,25 +2155,25 @@
 						subreddits: a
 					} = e;
 					return i.a.createElement(Et.b, {
-						className: kt.a.overflowMenu,
-						dropdownClassName: kt.a.dropdown,
+						className: It.a.overflowMenu,
+						dropdownClassName: It.a.dropdown,
 						defaultButtonOutline: !0,
 						disabled: a.length < 1,
 						dropdownId: "rpan-recommended-viewer-subreddits-dropdown",
 						icon: i.a.createElement("div", {
-							className: kt.a.overflowMenuIcon
+							className: It.a.overflowMenuIcon
 						}, t, i.a.createElement(yt.a, {
-							className: kt.a.dropdownTriangle
+							className: It.a.dropdownTriangle
 						})),
 						onClick: r
 					}, i.a.createElement("div", {
-						className: kt.a.dropdownLabel
-					}, It._("Pick a Community", null, {
+						className: It.a.dropdownLabel
+					}, kt._("Pick a Community", null, {
 						hk: "8MoVj"
 					})), a.map(e => i.a.createElement(xt.b, {
-						className: kt.a.dropdownRow,
+						className: It.a.dropdownRow,
 						displayText: e.prefixedName,
-						iconWrapperClassName: kt.a.overflowItemIconWrapper,
+						iconWrapperClassName: It.a.overflowItemIconWrapper,
 						key: "".concat("rpan-recommended-viewer-subreddits-dropdown", "-").concat(e.prefixedName),
 						onClick: () => s(e)
 					})))
@@ -2540,16 +2540,16 @@
 				} = e;
 				return i.a.createElement("div", {
 					className: Es.a.broadcastStatus
-				}, t ? i.a.createElement(Os, null) : i.a.createElement(ks, null))
+				}, t ? i.a.createElement(Os, null) : i.a.createElement(Is, null))
 			}, Os = () => xs._("{=Live}", [xs._param("=Live", i.a.createElement("span", {
 				className: Es.a.live
 			}, xs._("Live", null, {
 				hk: "8x90I"
 			})))], {
 				hk: "3ZBbO0"
-			}), ks = () => xs._("Recorded live", null, {
+			}), Is = () => xs._("Recorded live", null, {
 				hk: "2seH5c"
-			}), Is = e => {
+			}), ks = e => {
 				let {
 					onSubscribe: t,
 					isSubscribed: s
@@ -2978,7 +2978,7 @@
 				return s ? Object(ae.l)(e, s) : void 0
 			}, ir = Object(l.c)({
 				currentStream: nr,
-				inGoldRpanLivePreview: Ie.a,
+				inGoldRpanLivePreview: ke.a,
 				inStreamingSubredditIntegration: $.c,
 				inStreamingUiRefreshViewer: $.d,
 				inViewerFeedTheMeter: (e, t) => Object($.e)(e, t, nr),
@@ -3203,7 +3203,7 @@
 						related: v,
 						subreddit: g,
 						subreddits: b
-					}), i.a.createElement(Is, {
+					}), i.a.createElement(ks, {
 						onSubscribe: p,
 						isSubscribed: w
 					})), i.a.createElement(Ns, {
@@ -3300,7 +3300,7 @@
 					}));
 					if (m || !t && !a && !n && p) return null;
 					if (l) return i.a.createElement(Ws, null);
-					if (e && e.stream.state === ke.a.DISCONNECTED) return i.a.createElement(Ks, null);
+					if (e && e.stream.state === Ie.a.DISCONNECTED) return i.a.createElement(Ks, null);
 					if (v) return i.a.createElement(Xs, {
 						onClickReplay: h,
 						onClickShare: this.onCopyLink
@@ -3382,7 +3382,7 @@
 						className: ls.a.prompt
 					}, ar._("Tuning...", null, {
 						hk: "dhDpR"
-					})) : e && e.stream.state === ke.a.DISCONNECTED ? i.a.createElement("div", {
+					})) : e && e.stream.state === Ie.a.DISCONNECTED ? i.a.createElement("div", {
 						className: ls.a.prompt
 					}, ar._("Broadcast paused", null, {
 						hk: "1dtsGI"
@@ -3523,7 +3523,7 @@
 				xr = (s("./node_modules/core-js/modules/es6.array.sort.js"), s("./src/reddit/selectors/posts.ts")),
 				yr = s("./src/reddit/components/PublicAccessNetwork/Theater/AwardBubbler/index.m.less"),
 				Or = s.n(yr);
-			const kr = Object(o.b)(() => Object(l.c)({
+			const Ir = Object(o.b)(() => Object(l.c)({
 					allAwards: e => e.awards.models,
 					post: (e, t) => {
 						let {
@@ -3534,12 +3534,12 @@
 						})
 					}
 				})),
-				Ir = ["Center", "Left", "Right"],
+				kr = ["Center", "Left", "Right"],
 				Tr = ["Low", "Mid", "High"],
 				Lr = () => Math.floor(800 * Math.random()),
 				Nr = e => e[Math.floor(Math.random() * e.length)],
 				Pr = e => {
-					const t = Nr(Ir),
+					const t = Nr(kr),
 						s = Nr(Tr),
 						r = Me(e);
 					return Or.a["award_".concat(r, "Tier_").concat(s).concat(t)]
@@ -3593,7 +3593,7 @@
 					}, r)
 				}
 			}
-			var Mr = kr(jr),
+			var Mr = Ir(jr),
 				Ar = s("./src/reddit/models/PostDraft/index.ts"),
 				Vr = s("./src/reddit/components/PublicAccessNetwork/Theater/StreamingChat/index.m.less"),
 				Rr = s.n(Vr);
@@ -3786,7 +3786,7 @@
 				}),
 				Zr = Object(o.b)(zr, (e, t) => ({
 					closeLocation: () => e(Object(c.b)(t.location.state[Y.a.CloseLocation])),
-					fetchBroadcasterProfileInfo: t => e(Object(I.d)(t, !0)),
+					fetchBroadcasterProfileInfo: t => e(Object(k.d)(t, !0)),
 					fetchPostForStream: t => e(Object(T.a)(t)),
 					subscribeConfig: () => e(D.a.subscribeConfig(t.related || t.subreddit)),
 					subscribeStreams: () => e(D.a.subscribeStreams(t.related || t.subreddit)),
@@ -3805,7 +3805,7 @@
 						isMuted: t
 					})),
 					setMutedInFeed: t => e(U.H(t)),
-					setVideoVolume: t => e(k.h(t)),
+					setVideoVolume: t => e(I.h(t)),
 					updateVideoTimestamp: (t, s) => e(V({
 						streamId: t,
 						timestamp: s
@@ -3985,11 +3985,11 @@
 						videoCurrentTime: w,
 						videoTotalTime: S
 					} = this.state, C = e && e.post.id, f = s !== v, _ = e && !e.post.subreddit, E = m === ae.a.LIVE;
-					let x, y, O, k;
-					e && f ? (x = 1e3 * e.broadcast_time, y = C, O = E, k = e.post.title) : (x = void 0, y = void 0, O = !1, k = "RPAN Unavailable Video");
-					const I = e && e.meter && 10 * Math.round(e.estimated_remaining_time / 10),
+					let x, y, O, I;
+					e && f ? (x = 1e3 * e.broadcast_time, y = C, O = E, I = e.post.title) : (x = void 0, y = void 0, O = !1, I = "RPAN Unavailable Video");
+					const k = e && e.meter && 10 * Math.round(e.estimated_remaining_time / 10),
 						T = r && e && e.estimated_remaining_time < ce && !a,
-						L = void 0 !== I && I >= 0 && T ? Jr.a["meterCritical".concat(I)] : void 0;
+						L = void 0 !== k && k >= 0 && T ? Jr.a["meterCritical".concat(k)] : void 0;
 					return i.a.createElement("div", {
 						className: Object(d.a)(Jr.a.theaterContainer, {
 							[Jr.a.overlay]: n
@@ -4019,7 +4019,7 @@
 						muxVideoDuration: x,
 						muxVideoId: y,
 						muxVideoIsLive: O,
-						muxVideoTitle: k,
+						muxVideoTitle: I,
 						onAutoPlayPrevented: this.onAutoPlayPrevented,
 						onEnded: this.onEnded,
 						onError: this.onPlayerError,
@@ -4466,4 +4466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.326b09617b1f10d53fb2.js.map
+//# sourceMappingURL=PublicAccessNetwork.52cc3c1dd9dc36102964.js.map

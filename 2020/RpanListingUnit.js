@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.59a6630f0e8a4ff7a5c8.js
-// Retrieved at 8/18/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.93046ce088edcd1134b5.js
+// Retrieved at 8/18/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const m = Object(n.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Fb
+					experimentName: u.Gb
 				});
-				return Object(u.Ec)(t) ? void 0 : t
+				return Object(u.Fc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Gb
+					experimentName: u.Hb
 				});
-				return Object(u.Ec)(t) ? void 0 : t
-			}, (e, t) => e === u.Hb.Enabled && t === u.Hb.Enabled);
+				return Object(u.Fc)(t) ? void 0 : t
+			}, (e, t) => e === u.Ib.Enabled && t === u.Ib.Enabled);
 			var b = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -53,15 +53,15 @@
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return Math.trunc(e).toString(16).padStart(t, "0")
 				};
-			var E;
+			var S;
 			! function(e) {
 				e.SHA1 = "SHA-1", e.SHA256 = "SHA-256", e.SHA384 = "SHA-384", e.SHA512 = "SHA-512"
-			}(E || (E = {}));
-			const S = async e => (async (e, t) => {
+			}(S || (S = {}));
+			const E = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					i = await crypto.subtle.digest(e, s);
 				return Array.from(new Uint8Array(i)).map(g).join("")
-			})(E.SHA1, e);
+			})(S.SHA1, e);
 
 			function y() {
 				return (y = Object.assign || function(e) {
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				R = Object({
-					SENTRY_RELEASE_VERSION: "0b64b39-production"
+					SENTRY_RELEASE_VERSION: "d799406-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -106,7 +106,7 @@
 					envKey: h,
 					localStorageSaltKey: b,
 					localStorageViewerUserIdKey: g,
-					playerName: E,
+					playerName: S,
 					playerVersion: R,
 					respectDoNotTrack: _,
 					saltLength: I,
@@ -194,7 +194,7 @@
 							t = this.getOrCreateSalt(),
 							s = v(),
 							i = "".concat(s).concat(e).concat(t);
-						return (await S(i)).substr(0, j.VIEWER_USER_ID_LENGTH)
+						return (await E(i)).substr(0, j.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -256,7 +256,7 @@
 						}
 					}
 				}
-				j.displayName = x(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = d, j.DISABLE_COOKIES = u, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = h, j.LOCAL_STORAGE_SALT_KEY = b, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = E, j.PLAYER_VERSION = R, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = I, j.SALT_TIME_TO_LIVE = T, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = w;
+				j.displayName = x(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = d, j.DISABLE_COOKIES = u, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = h, j.LOCAL_STORAGE_SALT_KEY = b, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = S, j.PLAYER_VERSION = R, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = I, j.SALT_TIME_TO_LIVE = T, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = w;
 				const N = Object(i.forwardRef)((e, t) => r.a.createElement(j, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -593,7 +593,7 @@
 			s.d(t, "a", (function() {
 				return g
 			})), s.d(t, "b", (function() {
-				return S
+				return E
 			})), s.d(t, "c", (function() {
 				return y
 			})), s.d(t, "d", (function() {
@@ -701,7 +701,7 @@
 					}
 				}
 			}));
-			const E = (e, t) => {
+			const S = (e, t) => {
 				const s = Object(p.n)(e, t),
 					i = Object(f.H)(e, t);
 				return {
@@ -710,7 +710,7 @@
 					subredditOrProfile: i
 				}
 			};
-			var S = Object(a.b)(() => Object(n.a)(E, e => e))(e => r.a.createElement(b, {
+			var E = Object(a.b)(() => Object(n.a)(S, e => e))(e => r.a.createElement(b, {
 				type: "commentAuthor",
 				data: {
 					author: e.comment.author,
@@ -969,8 +969,8 @@
 			var f = s("./src/reddit/actions/preferences.ts"),
 				v = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				g = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
-				E = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
-				S = s("./src/reddit/constants/chat.ts"),
+				S = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
+				E = s("./src/reddit/constants/chat.ts"),
 				y = s("./src/reddit/constants/postLayout.ts"),
 				O = s("./src/reddit/helpers/overlay/index.ts"),
 				x = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
@@ -1020,7 +1020,7 @@
 					let r;
 					if (i) {
 						const e = Object(x.c)(i),
-							t = Object(E.c)(s);
+							t = Object(S.c)(s);
 						r = "".concat(e).concat(t)
 					} else {
 						const e = s.replace(/^r\//, "");
@@ -1114,7 +1114,7 @@
 							video: i
 						} = this, r = i ? i.currentTime : 0, a = i ? i.duration : NaN, n = !isNaN(a), o = n ? this.convertToMs(a - r) : void 0, c = this.getSessionDuration(), d = n ? this.convertToMs(r) : void 0, l = this.getWatchDuration(), u = l - e;
 						return {
-							chatState: S.f.None,
+							chatState: E.f.None,
 							heartbeatDurationMs: u,
 							id: t,
 							playerType: R.a.DU,
@@ -1185,10 +1185,10 @@
 					f && this.setState({
 						isReady: !1
 					});
-					const E = f && !v || v && m;
-					f && v && l || v && h ? this.subscribeStats() : E && this.unsubscribeStats();
-					const S = s && (g && f || v && m);
-					s && v && (!d && n && l || h && n) ? this.startHeartbeats() : S && this.endHeartbeats()
+					const S = f && !v || v && m;
+					f && v && l || v && h ? this.subscribeStats() : S && this.unsubscribeStats();
+					const E = s && (g && f || v && m);
+					s && v && (!d && n && l || h && n) ? this.startHeartbeats() : E && this.endHeartbeats()
 				}
 				componentWillUnmount() {
 					this.unsubscribeConfig(), this.unsubscribeStreams(), this.unsubscribeStats(), this.endHeartbeats(), this.unsubscribeIntersectionObserver(), this.unsubscribeVisibilityChange()
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.59a6630f0e8a4ff7a5c8.js.map
+//# sourceMappingURL=RpanListingUnit.93046ce088edcd1134b5.js.map
