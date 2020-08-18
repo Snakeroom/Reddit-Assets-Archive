@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4acf22c959d87b512ddc.js
-// Retrieved at 8/7/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6aeca97c9efc687db13d.js
+// Retrieved at 8/18/2020, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -4257,8 +4257,8 @@
 							hk: "4BzTkp"
 						});
 					case yt.MuteNotifs:
-						return f.fbt._("Mute Notifictions", null, {
-							hk: "3N8Q1T"
+						return f.fbt._("Mute Notifications", null, {
+							hk: "3EpiuE"
 						});
 					case yt.Profile:
 						return f.fbt._("View Profile", null, {
@@ -14202,4 +14202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.4acf22c959d87b512ddc.js.map
+//# sourceMappingURL=Chat~RedesignChat.6aeca97c9efc687db13d.js.map
