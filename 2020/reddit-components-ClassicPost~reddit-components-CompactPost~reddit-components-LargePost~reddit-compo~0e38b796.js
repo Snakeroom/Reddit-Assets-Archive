@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.f2f5a4243a963a8021f5.js
-// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.485f1f3458730608bd2a.js
+// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -909,7 +909,8 @@
 							promotedlink: i.isSponsored
 						}),
 						id: a ? a(i.id) : i.id,
-						tabIndex: -1
+						tabIndex: -1,
+						"data-testid": i.id
 					}, s), x = !!i.media && i.media.type === m.o.VIDEO;
 					return i.isSponsored || x ? o.a.createElement(c.a, {
 						post: i,
@@ -1583,4 +1584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.f2f5a4243a963a8021f5.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.485f1f3458730608bd2a.js.map

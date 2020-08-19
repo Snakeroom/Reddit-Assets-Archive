@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.33a8afceff41620b74db.js
-// Retrieved at 8/19/2020, 3:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.37ea9b2c23faa5c082f1.js
+// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -3850,7 +3850,8 @@
 							promotedlink: d.isSponsored
 						}),
 						id: a ? a(d.id) : d.id,
-						tabIndex: -1
+						tabIndex: -1,
+						"data-testid": d.id
 					}, s), f = !!d.media && d.media.type === p.o.VIDEO;
 					return d.isSponsored || f ? n.a.createElement(i.a, {
 						post: d,
@@ -7781,4 +7782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.33a8afceff41620b74db.js.map
+//# sourceMappingURL=ProfilePrivate.37ea9b2c23faa5c082f1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b0d6cc2b1a0646ce8753.js
-// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.4e7add7bb453d3a7d210.js
+// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -17440,7 +17440,8 @@
 							promotedlink: d.isSponsored
 						}),
 						id: i ? i(d.id) : d.id,
-						tabIndex: -1
+						tabIndex: -1,
+						"data-testid": d.id
 					}, s), f = !!d.media && d.media.type === u.o.VIDEO;
 					return d.isSponsored || f ? o.a.createElement(r.a, {
 						post: d,
@@ -30600,4 +30601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.b0d6cc2b1a0646ce8753.js.map
+//# sourceMappingURL=ModerationPages.4e7add7bb453d3a7d210.js.map

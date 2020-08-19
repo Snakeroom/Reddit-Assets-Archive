@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.45c49d27151caf3f9f8e.js
-// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.520ac8b3b88cd1280527.js
+// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -878,7 +878,8 @@
 							promotedlink: a.isSponsored
 						}),
 						id: c ? c(a.id) : a.id,
-						tabIndex: -1
+						tabIndex: -1,
+						"data-testid": a.id
 					}, s), E = !!a.media && a.media.type === b.o.VIDEO;
 					return a.isSponsored || E ? r.a.createElement(i.a, {
 						post: a,
@@ -1345,4 +1346,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.45c49d27151caf3f9f8e.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.520ac8b3b88cd1280527.js.map
