@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c3f356ecf9a2d4160c1c.js
-// Retrieved at 8/19/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4f5d3a374dc408082054.js
+// Retrieved at 8/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1534,8 +1534,13 @@
 			"use strict";
 			var n = i("./src/lib/env/index.ts");
 			i("./node_modules/core-js/modules/es6.regexp.split.js");
-			var r = i("./src/telemetry/models/App.ts");
-			const s = {
+			const r = e => {
+				if ("string" != typeof e || !e) return;
+				const t = parseFloat(e);
+				return isNaN(t) ? void 0 : t
+			};
+			var s = i("./src/telemetry/models/App.ts");
+			const o = {
 				https: "true" === {}.HTTPS,
 				accountManagerOrigin: (Object(n.b)(), "https://www.reddit.com"),
 				adsPath: {}.ADS_URL || "/api/request_promo.json",
@@ -1552,7 +1557,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: parseInt("109653", 10) || -1,
+				buildNumber: r("109657"),
+				buildTimestamp: (e => {
+					const t = r(e);
+					if ("number" == typeof t) return Math.round(1e3 * t)
+				})("1597854592"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -1610,12 +1619,12 @@
 				},
 				telemetry: {
 					appName: {
-						profilesR2: Object(n.b)() ? r.TelemetryAppName.web : r.TelemetryAppName.webDev,
-						redesign: Object(n.b)() ? r.TelemetryAppName.web2x : r.TelemetryAppName.web2xDev,
-						redesignR2: Object(n.b)() ? r.TelemetryAppName.desktop2x : r.TelemetryAppName.desktop2xDev,
-						chat2x: Object(n.b)() ? r.TelemetryAppName.web2x : r.TelemetryAppName.web2xDev,
-						chatR2: Object(n.b)() ? r.TelemetryAppName.web : r.TelemetryAppName.webDev,
-						mweb: Object(n.b)() ? r.TelemetryAppName.mweb : r.TelemetryAppName.mwebDev
+						profilesR2: Object(n.b)() ? s.TelemetryAppName.web : s.TelemetryAppName.webDev,
+						redesign: Object(n.b)() ? s.TelemetryAppName.web2x : s.TelemetryAppName.web2xDev,
+						redesignR2: Object(n.b)() ? s.TelemetryAppName.desktop2x : s.TelemetryAppName.desktop2xDev,
+						chat2x: Object(n.b)() ? s.TelemetryAppName.web2x : s.TelemetryAppName.web2xDev,
+						chatR2: Object(n.b)() ? s.TelemetryAppName.web : s.TelemetryAppName.webDev,
+						mweb: Object(n.b)() ? s.TelemetryAppName.mweb : s.TelemetryAppName.mwebDev
 					},
 					postConsumedThreshold: 2e3,
 					commentConsumedThreshold: 2e3,
@@ -1649,7 +1658,7 @@
 				},
 				releaseNotesSubredditMap: {}.RELEASE_NOTES_SUB_MAP ? JSON.parse({}.RELEASE_NOTES_SUB_MAP) : void 0
 			};
-			t.a = s
+			t.a = o
 		},
 		"./src/i18n/translatedFbts lazy recursive ^\\.\\/.*\\.json$": function(e, t, i) {
 			var n = {
@@ -3311,14 +3320,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("6c7c700-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("6342385-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6c7c700-production",
+						release: "6342385-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3746,7 +3755,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "6c7c700-production",
+							releaseClient: "6342385-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -22103,4 +22112,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.c3f356ecf9a2d4160c1c.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.4f5d3a374dc408082054.js.map
