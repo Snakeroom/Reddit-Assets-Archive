@@ -1,38 +1,39 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-Notifications.80699e8dceaba15da5ce.js
-// Retrieved at 8/6/2020, 3:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-Notifications.b6f4fe44f391685a0070.js
+// Retrieved at 8/19/2020, 2:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-Notifications"], {
 		"./src/reddit/components/CommunitySettings/Notifications/index.tsx": function(e, n, t) {
 			"use strict";
 			t.r(n), t.d(n, "default", (function() {
-				return c
+				return u
 			}));
 			var o = t("./node_modules/react/index.js"),
 				i = t.n(o),
-				s = t("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				l = t("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
+				l = t("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				s = t("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
 				a = t("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				d = t("./src/reddit/components/CommunitySettings/components.ts");
 			const {
 				fbt: r
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 
-			function c(e) {
+			function u(e) {
 				const {
 					notificationSettings: n,
 					settings: t,
 					update: o,
-					updateNotificationSettings: c
+					updateNotificationSettings: u
 				} = e, {
-					newPinnedPostPNsEnabled: m
+					newPinnedPostPNsEnabled: m,
+					userFlairPNsEnabled: c
 				} = t, {
-					isModeratedSrContentFoundationPnEnabled: u,
-					isModeratedSrEngagementPnEnabled: b,
-					isModeratedSrMilestonePnEnabled: E
+					isModeratedSrContentFoundationPnEnabled: b,
+					isModeratedSrEngagementPnEnabled: E,
+					isModeratedSrMilestonePnEnabled: _
 				} = n;
-				return i.a.createElement(s.a, null, i.a.createElement(d.a, null, i.a.createElement(s.b, null, r._("Notification settings", null, {
+				return i.a.createElement(l.a, null, i.a.createElement(d.a, null, i.a.createElement(l.b, null, r._("Notification settings", null, {
 					hk: "1HImbB"
-				})), i.a.createElement(l.a, null, r._("Community Notifications", null, {
+				})), i.a.createElement(s.a, null, r._("Community Notifications", null, {
 					hk: "27tOhv"
 				})), i.a.createElement(a.o, {
 					on: m,
@@ -40,15 +41,24 @@
 					label: r._("Pinned posts", null, {
 						hk: "goF21"
 					}),
-					last: !0,
 					subtext: r._("Notify community members when you pin a post", null, {
 						hk: "1T4bVV"
 					})
-				}), i.a.createElement(l.a, null, r._("Mod Notifications", null, {
+				}), i.a.createElement(a.o, {
+					on: c,
+					onClick: () => o(!c, "userFlairPNsEnabled"),
+					label: r._("New user flair", null, {
+						hk: "3PkO8m"
+					}),
+					last: !0,
+					subtext: r._("Notify community members when you give them user flair", null, {
+						hk: "1eHzLz"
+					})
+				}), i.a.createElement(s.a, null, r._("Mod Notifications", null, {
 					hk: "14WQtl"
 				})), i.a.createElement(a.o, {
-					on: E,
-					onClick: () => c(!E, "isModeratedSrMilestonePnEnabled"),
+					on: _,
+					onClick: () => u(!_, "isModeratedSrMilestonePnEnabled"),
 					label: r._("Milestones", null, {
 						hk: "2KUQoI"
 					}),
@@ -56,8 +66,8 @@
 						hk: "2EAadM"
 					})
 				}), i.a.createElement(a.o, {
-					on: u,
-					onClick: () => c(!u, "isModeratedSrContentFoundationPnEnabled"),
+					on: b,
+					onClick: () => u(!b, "isModeratedSrContentFoundationPnEnabled"),
 					label: r._("Moderation", null, {
 						hk: "4mPPdS"
 					}),
@@ -65,8 +75,8 @@
 						hk: "2i4ijA"
 					})
 				}), i.a.createElement(a.o, {
-					on: b,
-					onClick: () => c(!b, "isModeratedSrEngagementPnEnabled"),
+					on: E,
+					onClick: () => u(!E, "isModeratedSrEngagementPnEnabled"),
 					label: r._("Engagement", null, {
 						hk: "1gIteK"
 					}),
@@ -79,4 +89,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-CommunitySettings-Notifications.80699e8dceaba15da5ce.js.map
+//# sourceMappingURL=reddit-components-CommunitySettings-Notifications.b6f4fe44f391685a0070.js.map

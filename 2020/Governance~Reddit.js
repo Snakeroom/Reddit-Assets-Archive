@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.706a66f3b6b923b44602.js
-// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2c10e9885cb99f24443f.js
+// Retrieved at 8/19/2020, 2:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -24488,6 +24488,7 @@
 					suggestedCommentSort: e.suggested_comment_sort,
 					title: e.title,
 					toxicityThresholdChatLevel: e.toxicity_threshold_chat_level,
+					userFlairPNsEnabled: e.user_flair_pns_enabled,
 					welcomeMessageEnabled: e.welcome_message_enabled,
 					welcomeMessageText: e.welcome_message_text,
 					wikiEditAge: e.wiki_edit_age,
@@ -24544,6 +24545,7 @@
 					title: e.title,
 					toxicity_threshold_chat_level: e.toxicityThresholdChatLevel,
 					type: e.subredditType,
+					user_flair_pns_enabled: e.userFlairPNsEnabled,
 					welcome_message_enabled: e.welcomeMessageEnabled,
 					welcome_message_text: e.welcomeMessageText,
 					wiki_edit_age: e.wikiEditAge,
@@ -24589,10 +24591,11 @@
 					submitLinkLabel: "submit_link_label",
 					submitText: "submit_text",
 					submitTextLabel: "submit_text_label",
+					subredditType: "type",
 					suggestedCommentSort: "suggested_comment_sort",
 					title: "title",
 					toxicityThresholdChatLevel: "toxicity_threshold_chat_level",
-					subredditType: "type",
+					userFlairPNsEnabled: "user_flair_pns_enabled",
 					welcomeMessageEnabled: "welcome_message_enabled",
 					welcomeMessageText: "welcome_message_text",
 					wikiEditAge: "wiki_edit_age",
@@ -55605,4 +55608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.706a66f3b6b923b44602.js.map
+//# sourceMappingURL=Governance~Reddit.2c10e9885cb99f24443f.js.map
