@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7b55fe0c2e1b9ebe6c7c.js
-// Retrieved at 8/19/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d729a3830815bf86ed7b.js
+// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -677,16 +677,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Cb
+					experimentName: u.Db
 				});
-				return Object(u.Bc)(t) ? void 0 : t
+				return Object(u.Cc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Db
+					experimentName: u.Eb
 				});
-				return Object(u.Bc)(t) ? void 0 : t
-			}, (e, t) => e === u.Eb.Enabled && t === u.Eb.Enabled);
+				return Object(u.Cc)(t) ? void 0 : t
+			}, (e, t) => e === u.Fb.Enabled && t === u.Fb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "0ba704b-production"
+					SENTRY_RELEASE_VERSION: "62d3e0e-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3841,9 +3841,9 @@
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(k.c)(e, {
 							experimentEligibilitySelector: T.H,
-							experimentName: S.cb
+							experimentName: S.db
 						});
-						return !(!t || Object(S.Bc)(t))
+						return !(!t || Object(S.Cc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: I.c
@@ -6302,6 +6302,17 @@
 				resolve() {
 					return "./src/reddit/components/IdCard/index.tsx"
 				}
+			})
+		},
+		"./src/reddit/components/ImageWithFallback/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			}));
+			n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/react/index.js");
+			const s = e => new Promise((t, n) => {
+				const s = new Image;
+				s.onload = () => t(s), s.onerror = n, s.src = e
 			})
 		},
 		"./src/reddit/components/InfoBanners/BannerBase/index.m.less": function(e, t, n) {
@@ -20035,13 +20046,9 @@
 				i = n("./src/lib/classNames/index.ts"),
 				a = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				c = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/reddit/actions/publicAccessNetwork/constants.ts");
-			n("./node_modules/core-js/modules/es6.symbol.js");
-			const d = e => new Promise((t, n) => {
-				const s = new Image;
-				s.onload = () => t(s), s.onerror = n, s.src = e
-			});
-			var u = n("./src/reddit/icons/fonts/Gif/index.tsx"),
+				l = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				d = n("./src/reddit/components/ImageWithFallback/index.tsx"),
+				u = n("./src/reddit/icons/fonts/Gif/index.tsx"),
 				p = n("./src/reddit/icons/fonts/Link/index.tsx"),
 				m = n("./src/reddit/icons/fonts/Photos/index.tsx"),
 				h = n("./src/reddit/icons/fonts/Text/index.tsx"),
@@ -20133,7 +20140,7 @@
 							src: n,
 							errorSrc: s
 						} = e;
-					return n && s && d(n).catch(() => {
+					return n && s && Object(d.a)(n).catch(() => {
 						t.current && (t.current.style.backgroundImage = "url(".concat(s, ")"))
 					}), r.a.createElement("div", {
 						"aria-label": e.alt,
@@ -33677,4 +33684,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.7b55fe0c2e1b9ebe6c7c.js.map
+//# sourceMappingURL=PostCreation.d729a3830815bf86ed7b.js.map

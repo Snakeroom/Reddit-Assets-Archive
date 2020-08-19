@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.01bc62fac366f542d0e0.js
-// Retrieved at 8/19/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b0d6cc2b1a0646ce8753.js
+// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5954,8 +5954,8 @@
 					communityAwardsDisabled: z.b,
 					disableSettingsAvailable: e => Object(se.c)(e, {
 						experimentEligibilitySelector: se.a,
-						experimentName: te.db
-					}) === te.ib.Enabled,
+						experimentName: te.eb
+					}) === te.jb.Enabled,
 					isAddAwardModalOpen: e => Object(j.a)(e) === m.a,
 					isConfirmModalOpen: e => Object(j.a)(e) === m.b
 				}),
@@ -11995,7 +11995,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~P~6ef4688e"), s.e("ModQueuePages~reddit-components-ModHub-Content-ModQueue"), s.e("reddit-components-ModHub-Content-ModQueue")]).then(s.bind(null, "./src/reddit/components/ModHub/Content/ModQueue.tsx")),
+					importAsync: () => Promise.all([s.e("Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~ProfilePosts~ProfilePrivate~SearchRes~77b3dad4"), s.e("ModQueuePages~reddit-components-ModHub-Content-ModQueue"), s.e("reddit-components-ModHub-Content-ModQueue")]).then(s.bind(null, "./src/reddit/components/ModHub/Content/ModQueue.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -30600,4 +30600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.01bc62fac366f542d0e0.js.map
+//# sourceMappingURL=ModerationPages.b0d6cc2b1a0646ce8753.js.map

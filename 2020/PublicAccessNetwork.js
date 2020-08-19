@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7afd6fa222ed509ff3c6.js
-// Retrieved at 8/19/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1b895ee0d0a830387673.js
+// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -285,16 +285,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Cb
+					experimentName: m.Db
 				});
-				return Object(m.Bc)(t) ? void 0 : t
+				return Object(m.Cc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Db
+					experimentName: m.Eb
 				});
-				return Object(m.Bc)(t) ? void 0 : t
-			}, (e, t) => e === m.Eb.Enabled && t === m.Eb.Enabled);
+				return Object(m.Cc)(t) ? void 0 : t
+			}, (e, t) => e === m.Fb.Enabled && t === m.Fb.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "0ba704b-production"
+					SENTRY_RELEASE_VERSION: "62d3e0e-production"
 				}),
 				O = {
 					anonymousUserId: "t2_anonymous",
@@ -5518,10 +5518,10 @@
 			const o = e => {
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.nb
-				}) === a.sb.Enabled
+					experimentName: a.ob
+				}) === a.tb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.7afd6fa222ed509ff3c6.js.map
+//# sourceMappingURL=PublicAccessNetwork.1b895ee0d0a830387673.js.map

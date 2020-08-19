@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.01b5c77a63a294366e6a.js
-// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.705a087d84be19166c19.js
+// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1362,8 +1362,8 @@
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				Y = r.n(K);
 
-			function z() {
-				return (z = Object.assign || function(e) {
+			function Z() {
+				return (Z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -1371,7 +1371,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Z = e => {
+			const z = e => {
 				const {
 					category: t,
 					children: r,
@@ -1379,7 +1379,7 @@
 					isActive: n,
 					tabIndex: a
 				} = e, i = Object(c.a)(Y.a.categoryLink, n && Y.a.active, s);
-				return o.a.createElement("li", null, o.a.createElement(V.a, z({}, t.anchorProps, {
+				return o.a.createElement("li", null, o.a.createElement(V.a, Z({}, t.anchorProps, {
 					className: i,
 					"data-active": n,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -1439,7 +1439,7 @@
 						}
 					}, n, e && e.map((e, s) => {
 						const n = a + s * r;
-						return o.a.createElement(Z, {
+						return o.a.createElement(z, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
@@ -1547,7 +1547,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				xe = Object(u.Ac)(p.f),
+				xe = Object(u.Bc)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: xe
@@ -1648,16 +1648,16 @@
 
 			function a(e) {
 				const t = o(e);
-				return t === s.Ab.Rotate || t === s.Ab.RotateAll
+				return t === s.Bb.Rotate || t === s.Bb.RotateAll
 			}
 
 			function o(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.zb
+					experimentName: s.Ab
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.01b5c77a63a294366e6a.js.map
+//# sourceMappingURL=SubredditLeaderboard.705a087d84be19166c19.js.map
