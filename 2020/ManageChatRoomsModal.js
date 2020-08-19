@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.f3e4d57def3bc89bf0e2.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.788b03922329bf5458cf.js
+// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ManageChatRoomsModal"], {
 		"./node_modules/lodash/_basePullAt.js": function(e, t, n) {
@@ -187,17 +187,17 @@
 				g = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
 				b = n("./src/reddit/controls/Button/index.tsx"),
 				C = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				E = n("./src/reddit/components/ManageChatRoomsModal/_Controls.m.less"),
-				_ = n.n(E);
-			const x = i.a.button("DeleteButton", _.a),
-				f = i.a.wrapped(b.f, "PrimaryButton", _.a),
-				S = i.a.wrapped(g.i, "Textarea", _.a),
-				M = i.a.input("ChatSettingsInput", _.a),
-				k = i.a.input("ChatSettingsLongerInput", _.a),
-				v = (i.a.wrapped(C.a, "Toggle", _.a), i.a.ol("List", _.a)),
-				w = i.a.li("ListItem", _.a),
-				I = i.a.span("ErrorMarker", _.a),
-				O = e => s.a.createElement("button", {
+				_ = n("./src/reddit/components/ManageChatRoomsModal/_Controls.m.less"),
+				E = n.n(_);
+			const x = i.a.button("DeleteButton", E.a),
+				f = i.a.wrapped(b.f, "PrimaryButton", E.a),
+				S = i.a.wrapped(g.i, "Textarea", E.a),
+				k = i.a.input("ChatSettingsInput", E.a),
+				M = i.a.input("ChatSettingsLongerInput", E.a),
+				v = (i.a.wrapped(C.a, "Toggle", E.a), i.a.ol("List", E.a)),
+				w = i.a.li("ListItem", E.a),
+				O = i.a.span("ErrorMarker", E.a),
+				I = e => s.a.createElement("button", {
 					className: e.className,
 					type: "button",
 					onClick: e.onChange,
@@ -207,14 +207,14 @@
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var j = n("./src/higherOrderComponents/asTooltip.tsx"),
 				D = n("./src/reddit/actions/tooltip.ts"),
-				L = n("./src/reddit/controls/Dropdown/index.tsx"),
-				y = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				y = n("./src/reddit/controls/Dropdown/index.tsx"),
+				L = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				T = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				R = n("./src/reddit/selectors/tooltip.ts"),
 				A = n("./src/reddit/components/ManageChatRoomsModal/_DomainFilterDropDown.m.less"),
 				N = n.n(A);
 			const B = i.a.button("DropdownTarget", N.a),
-				P = i.a.wrapped(y.b, "DropdownRow", N.a),
+				P = i.a.wrapped(L.b, "DropdownRow", N.a),
 				F = i.a.wrapped(T.b, "DropdownTriangle", N.a),
 				U = Object(r.c)({
 					isOpen: (e, t) => Object(R.b)(t.id)(e)
@@ -226,7 +226,7 @@
 						}))
 					}
 				})),
-				W = Object(j.a)(L.a);
+				W = Object(j.a)(y.a);
 			var K = H(e => s.a.createElement(s.a.Fragment, null, s.a.createElement(B, {
 					type: "button",
 					id: e.id,
@@ -271,8 +271,8 @@
 				ie = n("./src/reddit/selectors/subredditChannel.ts"),
 				de = n("./src/reddit/components/ManageChatRoomsModal/ChannelForm.m.less"),
 				ce = n.n(de);
-			const ue = i.a.wrapped(I, "ErrorMarker", ce.a),
-				me = i.a.wrapped(O, "Checkbox", ce.a),
+			const ue = i.a.wrapped(O, "ErrorMarker", ce.a),
+				me = i.a.wrapped(I, "Checkbox", ce.a),
 				he = Object(r.c)({
 					channelNames: ie.d,
 					subredditChannel: (e, t) => {
@@ -506,8 +506,8 @@
 				}))(Object(ee.c)(pe)),
 				be = n("./src/reddit/components/ManageChatRoomsModal/Delete.m.less"),
 				Ce = n.n(be);
-			const Ee = i.a.wrapped(b.f, "PrimaryButton", Ce.a),
-				_e = Object(r.c)({
+			const _e = i.a.wrapped(b.f, "PrimaryButton", Ce.a),
+				Ee = Object(r.c)({
 					subredditChannel: ie.b
 				});
 			class xe extends s.a.Component {
@@ -536,26 +536,26 @@
 						onClick: () => e(ne.a.EDIT_SUBREDDIT_CHAT)
 					}, c.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(Ee, {
+					})), s.a.createElement(_e, {
 						onClick: () => this.onDeleteChannel()
 					}, c.fbt._("Delete Room", null, {
 						hk: "1husCY"
 					}))))
 				}
 			}
-			var fe = Object(o.b)(_e, e => ({
+			var fe = Object(o.b)(Ee, e => ({
 					modalToggled: t => e(Object(d.i)(t)),
 					deleteSubredditChannel: t => e(Object(h.j)(t))
 				}))(Object(ee.c)(xe)),
 				Se = n("./src/reddit/components/SubredditChannelList/index.tsx"),
-				Me = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				ke = n("./src/reddit/layout/row/Inline/index.tsx"),
+				ke = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				Me = n("./src/reddit/layout/row/Inline/index.tsx"),
 				ve = n("./src/reddit/selectors/chat.ts"),
 				we = n("./src/reddit/components/ManageChatRoomsModal/Listing.m.less"),
-				Ie = n.n(we);
+				Oe = n.n(we);
 			const {
-				fbt: Oe
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), je = i.a.wrapped(V.h, "ModalHeader", Ie.a), De = i.a.wrapped(Se.b, "SubredditChannelList", Ie.a), Le = i.a.button("ModalHeadButton", Ie.a), ye = Object(r.c)({
+				fbt: Ie
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), je = i.a.wrapped(V.h, "ModalHeader", Oe.a), De = i.a.wrapped(Se.b, "SubredditChannelList", Oe.a), ye = i.a.button("ModalHeadButton", Oe.a), Le = Object(r.c)({
 				isModerator: ve.e
 			});
 			class Te extends s.a.Component {
@@ -568,15 +568,15 @@
 							subredditId: a
 						}
 					} = this;
-					return s.a.createElement("div", null, s.a.createElement(je, null, s.a.createElement(V.p, null, Oe._("Rooms", null, {
+					return s.a.createElement("div", null, s.a.createElement(je, null, s.a.createElement(V.p, null, Ie._("Rooms", null, {
 						hk: "TpZ9p"
-					})), n && s.a.createElement(ke.a, null, s.a.createElement(Le, {
+					})), n && s.a.createElement(Me.a, null, s.a.createElement(ye, {
 						onClick: t
-					}, s.a.createElement(Me.a, null), Oe._("Settings", null, {
+					}, s.a.createElement(ke.a, null), Ie._("Settings", null, {
 						hk: "r8zYB"
-					})), s.a.createElement(Le, {
+					})), s.a.createElement(ye, {
 						onClick: e
-					}, Oe._("+ Add room", null, {
+					}, Ie._("+ Add room", null, {
 						hk: "2nISIO"
 					})))), a && s.a.createElement(De, {
 						subredditId: a,
@@ -585,7 +585,7 @@
 					}))
 				}
 			}
-			var Re = Object(o.b)(ye)(Te),
+			var Re = Object(o.b)(Le)(Te),
 				Ae = n("./src/reddit/actions/chat/subredditSettings.ts");
 			var Ne = e => {
 					let {
@@ -804,7 +804,7 @@
 						hk: "3Ur4ma"
 					}))), s.a.createElement(V.k, null, s.a.createElement(Q, null, s.a.createElement(X, null, c.fbt._("Rule name", null, {
 						hk: "46id3M"
-					})), s.a.createElement(k, {
+					})), s.a.createElement(M, {
 						name: qe,
 						defaultValue: u,
 						placeholder: c.fbt._("Rule name", null, {
@@ -853,7 +853,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ot = i.a.wrapped(O, "Checkbox", at.a);
+			const ot = i.a.wrapped(I, "Checkbox", at.a);
 			var rt;
 			! function(e) {
 				e[e.ALLOWED_DOMAINS = 0] = "ALLOWED_DOMAINS", e[e.BANNED_WORDS = 1] = "BANNED_WORDS", e[e.REGEX_RULES = 2] = "REGEX_RULES"
@@ -1088,7 +1088,7 @@
 						hk: "3rblET"
 					})), s.a.createElement(J, null, c.fbt._("Each person can send this number of messages in a {duration} second window.", [c.fbt._param("duration", Be.c.toLocaleString())], {
 						hk: "2GM7to"
-					}))), s.a.createElement(Y, null, s.a.createElement(M, {
+					}))), s.a.createElement(Y, null, s.a.createElement(k, {
 						size: 2,
 						maxLength: 99,
 						min: 1,
@@ -1118,9 +1118,9 @@
 				ht = n.n(mt);
 			const {
 				fbt: pt
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), gt = i.a.wrapped(V.d, "ModalBody", ht.a), bt = i.a.wrapped(V.b, "CloseIcon", ht.a), Ct = i.a.wrapped(ut.a, "CloseButton", ht.a), Et = Object(r.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), gt = i.a.wrapped(V.d, "ModalBody", ht.a), bt = i.a.wrapped(V.b, "CloseIcon", ht.a), Ct = i.a.wrapped(ut.a, "CloseButton", ht.a), _t = Object(r.c)({
 				activeModalId: le.a
-			}), _t = Object(o.b)(Et, (e, t) => {
+			}), Et = Object(o.b)(_t, (e, t) => {
 				let {
 					subredditId: n
 				} = t;
@@ -1128,7 +1128,7 @@
 					modalToggled: t => e(Object(d.i)(t))
 				}
 			});
-			t.default = Object(l.a)(_t(e => s.a.createElement(gt, null, s.a.createElement(Ct, {
+			t.default = Object(l.a)(Et(e => s.a.createElement(gt, null, s.a.createElement(Ct, {
 				onClick: () => e.modalToggled(e.activeModalId)
 			}, pt._("close", null, {
 				hk: "4qEb7D"
@@ -1237,9 +1237,9 @@
 			})), n.d(t, "e", (function() {
 				return C
 			})), n.d(t, "b", (function() {
-				return E
-			})), n.d(t, "c", (function() {
 				return _
+			})), n.d(t, "c", (function() {
+				return E
 			})), n.d(t, "d", (function() {
 				return x
 			})), n.d(t, "j", (function() {
@@ -1260,8 +1260,8 @@
 				g = a.a.div("FormGroupDescription", o.a),
 				b = a.a.div("FormItem", o.a),
 				C = a.a.h3("FormElementTitle", o.a),
-				E = a.a.div("FormElementDescription", o.a),
-				_ = a.a.div("FormElementError", o.a),
+				_ = a.a.div("FormElementDescription", o.a),
+				E = a.a.div("FormElementError", o.a),
 				x = a.a.div("FormElementSubGroup", o.a),
 				f = a.a.li("FormListItem", o.a)
 		},
@@ -1305,9 +1305,9 @@
 			})), n.d(t, "i", (function() {
 				return C
 			})), n.d(t, "h", (function() {
-				return E
-			})), n.d(t, "g", (function() {
 				return _
+			})), n.d(t, "g", (function() {
+				return E
 			}));
 			var a = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/controls/Input/ModalInput.tsx"),
@@ -1324,8 +1324,8 @@
 				g = a.a.wrapped(o.a, "Checkbox", c.a),
 				b = a.a.wrapped(r.a, "CheckboxSelected", c.a),
 				C = a.a.textarea("Textarea", c.a),
-				E = a.a.label("StyledLabel", c.a),
-				_ = a.a.input("StyledFileInput", c.a)
+				_ = a.a.label("StyledLabel", c.a),
+				E = a.a.input("StyledFileInput", c.a)
 		},
 		"./src/reddit/components/SubredditChannelList/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1387,21 +1387,21 @@
 				g = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				b = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				C = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				E = n("./src/reddit/constants/modals.ts"),
-				_ = n("./src/reddit/controls/Button/index.tsx"),
+				_ = n("./src/reddit/constants/modals.ts"),
+				E = n("./src/reddit/controls/Button/index.tsx"),
 				x = n("./src/reddit/helpers/trackers/chat.ts"),
 				f = n("./src/reddit/icons/fonts/Pencil/index.tsx"),
 				S = n("./src/reddit/icons/svgs/Chat/index.tsx"),
-				M = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				k = n("./src/reddit/models/SubredditChannel/index.ts"),
+				k = n("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+				M = n("./src/reddit/models/SubredditChannel/index.ts"),
 				v = n("./src/reddit/selectors/chat.ts"),
 				w = n("./src/reddit/selectors/subreddit.ts"),
-				I = n("./src/reddit/selectors/subredditChannel.ts"),
-				O = n("./src/reddit/components/SubredditChannelList/index.m.less"),
-				j = n.n(O);
+				O = n("./src/reddit/selectors/subredditChannel.ts"),
+				I = n("./src/reddit/components/SubredditChannelList/index.m.less"),
+				j = n.n(I);
 			const {
 				fbt: D
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), L = d.a.wrapped(g.g, "ModalFormItem", j.a), y = d.a.wrapped(_.f, "PrimaryButton", j.a), T = d.a.wrapped(g.o, "ModalText", j.a), R = d.a.a("ItemLink", j.a), A = d.a.p("Detail", j.a), N = d.a.p("DescText", j.a), B = d.a.div("Title", j.a), P = d.a.div("Header", j.a), F = d.a.wrapped(S.a, "ChatIcon", j.a), U = d.a.wrapped(M.a, "PlanetIcon", j.a), H = d.a.wrapped(f.a, "Pencil", j.a), W = d.a.wrapped(e => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = d.a.wrapped(g.g, "ModalFormItem", j.a), L = d.a.wrapped(E.f, "PrimaryButton", j.a), T = d.a.wrapped(g.o, "ModalText", j.a), R = d.a.a("ItemLink", j.a), A = d.a.p("Detail", j.a), N = d.a.p("DescText", j.a), B = d.a.div("Title", j.a), P = d.a.div("Header", j.a), F = d.a.wrapped(S.a, "ChatIcon", j.a), U = d.a.wrapped(k.a, "PlanetIcon", j.a), H = d.a.wrapped(f.a, "Pencil", j.a), W = d.a.wrapped(e => {
 				let {
 					className: t
 				} = e;
@@ -1431,20 +1431,20 @@
 				e[e.Modal = 0] = "Modal", e[e.Widget = 1] = "Widget"
 			}(J || (J = {}));
 			const q = Object(i.c)({
-					isCollectionReady: I.e,
+					isCollectionReady: O.e,
 					isModerator: v.e,
 					selectedSubreddit: w.Q,
-					shouldRequestCollection: I.f,
-					subredditChannels: I.a
+					shouldRequestCollection: O.f,
+					subredditChannels: O.a
 				}),
 				Q = Object(l.b)(q, (e, t) => {
 					let {
 						subredditId: n
 					} = t;
 					return {
-						toggleModal: () => e(Object(p.i)(E.a.MANAGE_SUBREDDIT_CHAT)),
-						toggleCreateModal: () => e(Object(p.i)(E.a.CREATE_SUBREDDIT_CHAT)),
-						toggleEditModal: () => e(Object(p.i)(E.a.EDIT_SUBREDDIT_CHAT)),
+						toggleModal: () => e(Object(p.i)(_.a.MANAGE_SUBREDDIT_CHAT)),
+						toggleCreateModal: () => e(Object(p.i)(_.a.CREATE_SUBREDDIT_CHAT)),
+						toggleEditModal: () => e(Object(p.i)(_.a.EDIT_SUBREDDIT_CHAT)),
 						fetchSubredditChannels: t => e(Object(m.l)(t)),
 						onChatLinkClick: (t, n) => e(Object(h.c)({
 							channelId: t,
@@ -1496,7 +1496,7 @@
 				trackItemClick(e) {
 					const {
 						Joined: t
-					} = k.a, {
+					} = M.a, {
 						channelId: n,
 						channelState: a
 					} = e, {
@@ -1538,7 +1538,7 @@
 					const d = this.displayChannelsList();
 					return r.a.createElement("div", {
 						className: e
-					}, d.length ? r.a.createElement(L, null, d.map((e, t) => r.a.createElement(R, {
+					}, d.length ? r.a.createElement(y, null, d.map((e, t) => r.a.createElement(R, {
 						key: "item-link-".concat(t),
 						href: this.getLinkURL(e),
 						target: c.c.BLANK,
@@ -1569,7 +1569,7 @@
 						hk: "4bUTpG"
 					})), r.a.createElement(Z, {
 						key: "channel-name-".concat(t)
-					}, e.type === k.c.Public ? r.a.createElement(W, null) : r.a.createElement(K, null), e.name)), n && r.a.createElement(G, {
+					}, e.type === M.c.Public ? r.a.createElement(W, null) : r.a.createElement(K, null), e.name)), n && r.a.createElement(G, {
 						key: "button-".concat(t),
 						onClick: t => {
 							l(e.channelId), s(), t.stopPropagation(), t.preventDefault(), this.props.sendEvent(Object(x.l)())
@@ -1581,13 +1581,13 @@
 						onClick: () => this.onShowAllClick()
 					}, D._("See more", null, {
 						hk: "lhTm0"
-					}))) : n ? r.a.createElement(L, null, r.a.createElement(T, null, D._("Create your first room and get your community chatting in real time.", null, {
+					}))) : n ? r.a.createElement(y, null, r.a.createElement(T, null, D._("Create your first room and get your community chatting in real time.", null, {
 						hk: "2zKL0L"
-					})), r.a.createElement(y, {
+					})), r.a.createElement(L, {
 						onClick: a || i
 					}, D._("+ Add room", null, {
 						hk: "2vBAvZ"
-					}))) : r.a.createElement(L, null, r.a.createElement(T, null, D._("There are no joined chatrooms yet", null, {
+					}))) : r.a.createElement(y, null, r.a.createElement(T, null, D._("There are no joined chatrooms yet", null, {
 						hk: "3n65KN"
 					}))))
 				}
@@ -1597,7 +1597,7 @@
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
+				return _
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var a = n("./node_modules/lodash/throttle.js"),
@@ -1632,7 +1632,7 @@
 				}
 				return n
 			};
-			class E extends r.a.Component {
+			class _ extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = s()(() => {
 						const {
@@ -1689,7 +1689,7 @@
 					[g.a.mIsSelected]: n.isSelected,
 					[g.a.topics]: n.isTopicsStyle
 				});
-				return r.a.createElement(E, b({
+				return r.a.createElement(_, b({
 					className: a
 				}, n))
 			}
@@ -1767,25 +1767,7 @@
 				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
 				fill: "inherit"
 			})))
-		},
-		"./src/reddit/icons/svgs/Remove/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				id: e.id,
-				tabIndex: e.tabIndex,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick,
-				onMouseEnter: e.onMouseEnter,
-				onMouseLeave: e.onMouseLeave
-			}, s.a.createElement("g", null, s.a.createElement("path", {
-				fillRule: "evenodd",
-				d: "M13.5559061,14.5 C13.5559061,14.776 13.3283409,15 13.0479481,15 C12.7675552,15 12.53999,14.776 12.53999,14.5 L12.53999,9 C12.53999,8.724 12.7675552,8.5 13.0479481,8.5 C13.3283409,8.5 13.5559061,8.724 13.5559061,9 L13.5559061,14.5 Z M10.508158,14.5 C10.508158,14.776 10.2805928,15 10.0002,15 C9.71980718,15 9.49224199,14.776 9.49224199,14.5 L9.49224199,9 C9.49224199,8.724 9.71980718,8.5 10.0002,8.5 C10.2805928,8.5 10.508158,8.724 10.508158,9 L10.508158,14.5 Z M7.46040996,14.5 C7.46040996,14.776 7.23284477,15 6.95245195,15 C6.67205913,15 6.44449394,14.776 6.44449394,14.5 L6.44449394,9 C6.44449394,8.724 6.67205913,8.5 6.95245195,8.5 C7.23284477,8.5 7.46040996,8.724 7.46040996,9 L7.46040996,14.5 Z M15.492242,6 C15.7736507,6 16.0002,6.224 16.0002,6.5 L16.0002,16.5 C16.0002,17.327 15.3164885,18 14.476326,18 L5.52407403,18 C4.68391148,18 4.0002,17.327 4.0002,16.5 L4.0002,6.5 C4.0002,6.224 4.22674927,6 4.50815801,6 L15.492242,6 Z M15.491585,3 C15.7719541,3 15.9995,3.224 15.9995,3.5 L15.9995,4.5 C15.9995,4.776 15.7719541,5 15.491585,5 L4.50741501,5 C4.22704592,5 3.9995,4.776 3.9995,4.5 L3.9995,3.5 C3.9995,3.224 4.22704592,3 4.50741501,3 L7.51325603,3 L8.26598607,2.167 C8.36248993,2.061 8.50064281,2 8.6459065,2 L11.3541093,2 C11.4983572,2 11.6365101,2.061 11.7340298,2.167 L12.485744,3 L15.491585,3 Z"
-			})))
 		}
 	}
 ]);
-//# sourceMappingURL=ManageChatRoomsModal.f3e4d57def3bc89bf0e2.js.map
+//# sourceMappingURL=ManageChatRoomsModal.788b03922329bf5458cf.js.map

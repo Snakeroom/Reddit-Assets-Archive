@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.3f53fd7c33520beef718.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.073feeaec6eedff505bc.js
+// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -123,7 +123,7 @@
 				onClick: () => {
 					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
 				},
-				"data-redditstyle": !0
+				"data-redditstyle": !e.disableRedditStyle
 			}, e.cancelActionText || r.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			})), a.a.createElement(o.t, {
@@ -132,7 +132,7 @@
 				onClick: t => {
 					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
-				"data-redditstyle": !0
+				"data-redditstyle": !e.disableRedditStyle
 			}, e.actionText))))
 		},
 		"./src/reddit/components/ContentGate/index.m.less": function(e, t, n) {
@@ -1779,4 +1779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit.3f53fd7c33520beef718.js.map
+//# sourceMappingURL=Multireddit.073feeaec6eedff505bc.js.map

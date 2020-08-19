@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.307a8147ff95c6d91601.js
-// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.1bb8921071011cd8b1a8.js
+// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -43,9 +43,9 @@
 			n.d(t, "a", (function() {
 				return g
 			})), n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "c", (function() {
 				return f
+			})), n.d(t, "c", (function() {
+				return x
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/lodash/isEmpty.js"),
@@ -79,7 +79,7 @@
 						hk: "2t0F9P"
 					})
 				}))
-			}, x = e => async (t, n, r) => {
+			}, f = e => async (t, n, r) => {
 				let {
 					apiContext: a
 				} = r;
@@ -119,7 +119,7 @@
 					subredditId: d,
 					error: m.error
 				})), Object(s.a)(t, m.error))
-			}, f = e => async (t, n, r) => {
+			}, x = e => async (t, n, r) => {
 				let {
 					apiContext: c
 				} = r;
@@ -127,17 +127,17 @@
 					subredditId: m
 				} = e, b = n().user.account, g = Object(p.c)(n(), {
 					subredditId: m
-				}), x = n().structuredStyles.models[m];
+				}), f = n().structuredStyles.models[m];
 				if (!b || !g) return;
-				const f = b.displayText || "",
+				const x = b.displayText || "",
 					I = [],
 					h = void 0 !== e.newPrice && g.price !== e.newPrice,
-					v = function(e, t, n) {
+					j = function(e, t, n) {
 						const r = {};
 						return e && e.bannerBackgroundImage !== t.bannerBackgroundImage && t.bannerBackgroundImage !== n.bannerBackgroundImage ? r.bannerBackgroundImage = t.bannerBackgroundImage : !e && t.bannerBackgroundImage && (r.bannerBackgroundImage = t.bannerBackgroundImage), e && e.bannerBackgroundImagePosition === t.bannerBackgroundImagePosition || (r.bannerBackgroundImagePosition = t.bannerBackgroundImagePosition), r
-					}(g.content, e.content, x),
-					j = !a()(v);
-				(h || j) && t(Object(o.i)({
+					}(g.content, e.content, f),
+					v = !a()(j);
+				(h || v) && t(Object(o.i)({
 					productId: "mainHeader",
 					subredditId: m
 				})), h ? I.push(l(c(), {
@@ -148,7 +148,7 @@
 						owner: g.owner || "",
 						ownerId: g.ownerId || ""
 					}]
-				})) : I.push(Promise.resolve()), j && I.push(function(e, t) {
+				})) : I.push(Promise.resolve()), v && I.push(function(e, t) {
 					return Object(u.a)(e, {
 						method: "patch",
 						endpoint: "".concat(i.a.metaUrl, "/communities/").concat(t.subredditId),
@@ -162,43 +162,43 @@
 					})
 				}(c(), {
 					subredditId: m,
-					content: v
+					content: j
 				}));
 				const [y, O] = await Promise.all(I);
-				h && y.ok && j && O.ok ? (t(Object(o.j)({
+				h && y.ok && v && O.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
 					subredditId: m,
 					mainHeader: {
-						owner: f,
+						owner: x,
 						ownerId: b.id,
 						price: e.newPrice || g.price,
 						content: e.content
 					}
 				})), t(Object(d.l)({
 					subredditId: m,
-					styles: v
+					styles: j
 				}))) : h && y.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
 					subredditId: m,
 					mainHeader: {
-						owner: f,
+						owner: x,
 						ownerId: b.id,
 						price: e.newPrice || g.price,
 						content: g.content
 					}
-				})), j && !O.ok && Object(s.a)(t, O.error)) : j && O.ok ? (t(Object(o.j)({
+				})), v && !O.ok && Object(s.a)(t, O.error)) : v && O.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
 					subredditId: m,
 					mainHeader: {
-						owner: f,
+						owner: x,
 						ownerId: b.id,
 						price: g.price,
 						content: e.content
 					}
 				})), t(Object(d.l)({
 					subredditId: m,
-					styles: v
-				})), h && !y.ok && Object(s.a)(t, y.error)) : (h && Object(s.a)(t, y.error), j && (t(Object(o.h)({
+					styles: j
+				})), h && !y.ok && Object(s.a)(t, y.error)) : (h && Object(s.a)(t, y.error), v && (t(Object(o.h)({
 					productId: "mainHeader",
 					subredditId: m,
 					error: y.error
@@ -379,22 +379,22 @@
 				m = n.n(l);
 			const {
 				fbt: p
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), b = o.a.wrapped(u.a, "ImageUploadIcon", m.a), g = o.a.div("ImageIconRow", m.a), x = o.a.div("ImageUploadText", m.a), f = o.a.wrapped(d.a, "FileDrop", m.a), I = o.a.div("ContainerUploading", m.a), h = e => a.a.createElement(I, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), b = o.a.wrapped(u.a, "ImageUploadIcon", m.a), g = o.a.div("ImageIconRow", m.a), f = o.a.div("ImageUploadText", m.a), x = o.a.wrapped(d.a, "FileDrop", m.a), I = o.a.div("ContainerUploading", m.a), h = e => a.a.createElement(I, {
 				className: e.className
 			}, a.a.createElement(g, null, a.a.createElement(i.a, {
 				sizePx: 40,
 				center: !0
-			})), a.a.createElement(x, null, p._("Uploading...", null, {
+			})), a.a.createElement(f, null, p._("Uploading...", null, {
 				hk: "2ICpZ2"
-			}))), v = o.a.label("Label", m.a);
-			t.b = e => a.a.createElement(f, {
+			}))), j = o.a.label("Label", m.a);
+			t.b = e => a.a.createElement(x, {
 				className: e.className,
 				onDrop: e.onChange,
-				render: t => a.a.createElement(v, {
+				render: t => a.a.createElement(j, {
 					className: Object(s.a)({
 						[m.a.isOver]: t
 					}, e.labelClassName)
-				}, a.a.createElement(g, null, e.icon || a.a.createElement(b, null)), a.a.createElement(x, null, e.label), a.a.createElement(c.a, {
+				}, a.a.createElement(g, null, e.icon || a.a.createElement(b, null)), a.a.createElement(f, null, e.label), a.a.createElement(c.a, {
 					className: m.a.ImageInput,
 					name: e.name,
 					value: e.value,
@@ -673,24 +673,6 @@
 				fill: "inherit"
 			})))
 		},
-		"./src/reddit/icons/svgs/Remove/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r);
-			t.a = e => a.a.createElement("svg", {
-				className: e.className,
-				id: e.id,
-				tabIndex: e.tabIndex,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick,
-				onMouseEnter: e.onMouseEnter,
-				onMouseLeave: e.onMouseLeave
-			}, a.a.createElement("g", null, a.a.createElement("path", {
-				fillRule: "evenodd",
-				d: "M13.5559061,14.5 C13.5559061,14.776 13.3283409,15 13.0479481,15 C12.7675552,15 12.53999,14.776 12.53999,14.5 L12.53999,9 C12.53999,8.724 12.7675552,8.5 13.0479481,8.5 C13.3283409,8.5 13.5559061,8.724 13.5559061,9 L13.5559061,14.5 Z M10.508158,14.5 C10.508158,14.776 10.2805928,15 10.0002,15 C9.71980718,15 9.49224199,14.776 9.49224199,14.5 L9.49224199,9 C9.49224199,8.724 9.71980718,8.5 10.0002,8.5 C10.2805928,8.5 10.508158,8.724 10.508158,9 L10.508158,14.5 Z M7.46040996,14.5 C7.46040996,14.776 7.23284477,15 6.95245195,15 C6.67205913,15 6.44449394,14.776 6.44449394,14.5 L6.44449394,9 C6.44449394,8.724 6.67205913,8.5 6.95245195,8.5 C7.23284477,8.5 7.46040996,8.724 7.46040996,9 L7.46040996,14.5 Z M15.492242,6 C15.7736507,6 16.0002,6.224 16.0002,6.5 L16.0002,16.5 C16.0002,17.327 15.3164885,18 14.476326,18 L5.52407403,18 C4.68391148,18 4.0002,17.327 4.0002,16.5 L4.0002,6.5 C4.0002,6.224 4.22674927,6 4.50815801,6 L15.492242,6 Z M15.491585,3 C15.7719541,3 15.9995,3.224 15.9995,3.5 L15.9995,4.5 C15.9995,4.776 15.7719541,5 15.491585,5 L4.50741501,5 C4.22704592,5 3.9995,4.776 3.9995,4.5 L3.9995,3.5 C3.9995,3.224 4.22704592,3 4.50741501,3 L7.51325603,3 L8.26598607,2.167 C8.36248993,2.061 8.50064281,2 8.6459065,2 L11.3541093,2 C11.4983572,2 11.6365101,2.061 11.7340298,2.167 L12.485744,3 L15.491585,3 Z"
-			})))
-		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -711,31 +693,31 @@
 			})), n.d(t, "g", (function() {
 				return g
 			})), n.d(t, "t", (function() {
-				return x
-			})), n.d(t, "h", (function() {
 				return f
+			})), n.d(t, "h", (function() {
+				return x
 			})), n.d(t, "i", (function() {
 				return I
 			})), n.d(t, "j", (function() {
 				return h
 			})), n.d(t, "k", (function() {
-				return v
-			})), n.d(t, "q", (function() {
 				return j
+			})), n.d(t, "q", (function() {
+				return v
 			})), n.d(t, "r", (function() {
 				return y
 			})), n.d(t, "p", (function() {
 				return O
 			})), n.d(t, "m", (function() {
-				return C
-			})), n.d(t, "n", (function() {
 				return w
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "n", (function() {
 				return E
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "u", (function() {
 				return k
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "a", (function() {
 				return _
+			})), n.d(t, "f", (function() {
+				return C
 			})), n.d(t, "s", (function() {
 				return N
 			})), n.d(t, "o", (function() {
@@ -758,7 +740,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = E(e, {
+					const r = k(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.harberger ? r.extra.contracts.harberger : {
@@ -770,28 +752,28 @@
 					}
 				},
 				m = (e, t) => {
-					const n = C(e, t);
+					const n = w(e, t);
 					if (n) return n.mainHeader
 				},
 				p = (e, t) => {
-					const n = C(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				b = (e, t) => {
-					const n = C(e, t);
+					const n = w(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
 					} : i
 				},
 				g = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				x = (e, t) => {
+				f = (e, t) => {
 					const n = g(e, t),
 						r = n && n.publicAddress;
 					if (!r) throw new Error("No wallet address found");
 					return r
 				},
-				f = (e, t) => {
+				x = (e, t) => {
 					const n = g(e, t);
 					return n && n.amount || "0"
 				},
@@ -811,34 +793,34 @@
 				h = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				v = (e, t) => {
+				j = (e, t) => {
 					const n = Object(r.m)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || c
 				},
-				j = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				v = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || u,
 				O = (e, t) => {
 					const n = N(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
-				C = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				w = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				E = (e, t) => {
-					const n = w(e, t);
+				w = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				E = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				k = (e, t) => {
+					const n = E(e, t);
 					return n && n.walletProvider
 				},
-				k = (e, t) => {
-					const n = E(e, t),
-						r = w(e, t);
+				_ = (e, t) => {
+					const n = k(e, t),
+						r = E(e, t);
 					return n && n.provider || r && r.provider
 				},
-				_ = (e, t) => {
-					const n = k(e, t);
+				C = (e, t) => {
+					const n = _(e, t);
 					return n === a.a.Ethereum || n === a.a.Rinkeby || n === a.a.EthTraderEthereum || n === a.a.EthTraderRinkeby
 				},
 				N = (e, t) => {
-					const n = E(e, t),
-						r = k(e, t);
+					const n = k(e, t),
+						r = _(e, t);
 					if (n && !n.inTransition && r === a.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
 						decimals: n.extra && n.extra.decimals || 7,
@@ -857,7 +839,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const r = E(e, {
+					const r = k(e, {
 						subredditId: n
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.subscriptions ? r.extra.contracts.subscriptions : {
@@ -865,10 +847,10 @@
 					}
 				},
 				T = (e, t) => {
-					const n = w(e, t);
+					const n = E(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.307a8147ff95c6d91601.js.map
+//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.1bb8921071011cd8b1a8.js.map

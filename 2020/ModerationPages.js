@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4d9d0d4855bd9adae470.js
-// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.9580827f5f928c6c7662.js
+// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -2052,7 +2052,7 @@
 						f = Object(E.a)(g) ? j.e.Post : j.e.Comment,
 						O = f === j.e.Post ? b.posts.models[g] : b.comments.models[g],
 						y = f === j.e.Post ? m.J : c.R;
-					if (!O || !h) return;
+					if (!O || !h) return !1;
 					d(z()), d(y({
 						[g]: {
 							modNote: a,
@@ -2076,7 +2076,7 @@
 									type: n
 								},
 								l = await v(p(), Object(j.h)(a, f), f);
-							if (l.ok)
+							if (l.ok) {
 								if (n === j.f.Public) {
 									if (d($()), l.body) {
 										const e = Object(C.a)(l.body, h),
@@ -2124,7 +2124,9 @@
 										}
 									}
 								} else d(Y());
-							else d(ee(l.error))
+								return !0
+							}
+							return d(ee(l.error)), !1
 						}
 					} else d(Z(T.error)), d(y({
 						[g]: {
@@ -2132,7 +2134,8 @@
 							modRemovalReason: O.modRemovalReason,
 							modReasonBy: O.modReasonBy
 						}
-					}))
+					}));
+					return !1
 				}, se = (e, t, s, o, a) => async (r, i, c) => {
 					let {
 						apiContext: l
@@ -19165,6 +19168,48 @@
 				dropdownContainer: "_33sg6HoBYll4rCDqRzRUdu"
 			}
 		},
+		"./src/reddit/components/RemovalReasons/AddRemovalReasonModal/RemovalReasonsDropdown.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				a = s.n(o),
+				r = s("./src/lib/lessComponent.tsx"),
+				i = s("./src/reddit/controls/Dropdown/index.tsx"),
+				d = s("./src/reddit/controls/Dropdown/Row.tsx"),
+				c = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				l = s("./src/reddit/layout/row/Inline/index.tsx"),
+				m = s("./src/reddit/components/RemovalReasons/AddRemovalReasonModal/RemovalReasonsDropdown.m.less"),
+				u = s.n(m);
+			const p = r.a.wrapped(l.a, "DisplayContainer", u.a),
+				b = r.a.div("DropdownLabel", u.a),
+				h = r.a.div("ReasonTitle", u.a),
+				g = e => a.a.createElement(p, null, a.a.createElement(b, null, e.dropdownLabel), e.selectedReason && a.a.createElement(h, null, e.selectedReason)),
+				f = r.a.wrapped(i.a, "Dropdown", u.a),
+				x = r.a.wrapped(c.b, "DropdownTriangle", u.a),
+				v = r.a.wrapped(d.b, "DropdownRow", u.a),
+				E = r.a.button("DropdownContainer", u.a);
+			t.a = e => a.a.createElement(E, {
+				onClick: e.onToggleDropdown
+			}, a.a.createElement(g, {
+				dropdownLabel: e.isLoading ? n.fbt._("Loading...", null, {
+					hk: "1bT6op"
+				}) : n.fbt._("Reason for removal", null, {
+					hk: "3C9ecg"
+				}),
+				selectedReason: e.selectedReason ? e.selectedReason.title : null
+			}), a.a.createElement(x, null), e.isDropdownOpen && a.a.createElement(f, {
+				isOverlay: !0
+			}, a.a.createElement(v, {
+				displayText: n.fbt._("None", null, {
+					hk: "2443EZ"
+				}),
+				onClick: () => e.onSelectReason(null)
+			}), e.subredditRemovalReasons.map((t, s) => a.a.createElement(v, {
+				displayText: "".concat(s + 1, ". ").concat(t.title),
+				key: t.title,
+				onClick: () => e.onSelectReason(t)
+			}))))
+		},
 		"./src/reddit/components/RemovalReasons/AddRemovalReasonModal/_AddRemovalReasonModal.m.less": function(e, t, s) {
 			e.exports = {
 				CharacterCountdown: "_3QAHANdA13oJnYRmkNk6sb",
@@ -19199,7 +19244,27 @@
 		},
 		"./src/reddit/components/RemovalReasons/AddRemovalReasonModal/_AddRemovalReasonModal.tsx": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "dispatcher", (function() {
+				return I
+			})), s.d(t, "selector", (function() {
+				return T
+			})), s.d(t, "connector", (function() {
+				return N
+			})), s.d(t, "CharacterCountdown", (function() {
+				return P
+			})), s.d(t, "EmptyState", (function() {
+				return M
+			})), s.d(t, "MessageInput", (function() {
+				return B
+			})), s.d(t, "FormOptionsContainer", (function() {
+				return W
+			})), s.d(t, "ModalFooter", (function() {
+				return G
+			})), s.d(t, "ButtonRow", (function() {
+				return q
+			})), s.d(t, "AddRemovalReasonModal", (function() {
+				return K
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				a = s("./node_modules/react-redux/es/index.js"),
@@ -19220,47 +19285,12 @@
 				E = s("./src/reddit/selectors/removalReasons.ts"),
 				C = s("./src/reddit/selectors/subreddit.ts"),
 				_ = s("./src/reddit/selectors/user.ts"),
-				O = s("./node_modules/fbt/lib/FbtPublic.js"),
-				k = s("./src/reddit/controls/Dropdown/index.tsx"),
-				j = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				y = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				w = s("./src/reddit/layout/row/Inline/index.tsx"),
-				S = s("./src/reddit/components/RemovalReasons/AddRemovalReasonModal/RemovalReasonsDropdown.m.less"),
-				I = s.n(S);
-			const T = d.a.wrapped(w.a, "DisplayContainer", I.a),
-				N = d.a.div("DropdownLabel", I.a),
-				P = d.a.div("ReasonTitle", I.a),
-				M = e => o.a.createElement(T, null, o.a.createElement(N, null, e.dropdownLabel), e.selectedReason && o.a.createElement(P, null, e.selectedReason)),
-				R = d.a.wrapped(k.a, "Dropdown", I.a),
-				L = d.a.wrapped(y.b, "DropdownTriangle", I.a),
-				A = d.a.wrapped(j.b, "DropdownRow", I.a),
-				D = d.a.button("DropdownContainer", I.a);
-			var F = e => o.a.createElement(D, {
-					onClick: e.onToggleDropdown
-				}, o.a.createElement(M, {
-					dropdownLabel: e.isLoading ? O.fbt._("Loading...", null, {
-						hk: "1bT6op"
-					}) : O.fbt._("Reason for removal", null, {
-						hk: "3C9ecg"
-					}),
-					selectedReason: e.selectedReason ? e.selectedReason.title : null
-				}), o.a.createElement(L, null), e.isDropdownOpen && o.a.createElement(R, {
-					isOverlay: !0
-				}, o.a.createElement(A, {
-					displayText: O.fbt._("None", null, {
-						hk: "2443EZ"
-					}),
-					onClick: () => e.onSelectReason(null)
-				}), e.subredditRemovalReasons.map((t, s) => o.a.createElement(A, {
-					displayText: "".concat(s + 1, ". ").concat(t.title),
-					key: t.title,
-					onClick: () => e.onSelectReason(t)
-				})))),
-				B = s("./src/reddit/components/RemovalReasons/AddRemovalReasonModal/_AddRemovalReasonModal.m.less"),
-				U = s.n(B);
+				O = s("./src/reddit/components/RemovalReasons/AddRemovalReasonModal/RemovalReasonsDropdown.tsx"),
+				k = s("./src/reddit/components/RemovalReasons/AddRemovalReasonModal/_AddRemovalReasonModal.m.less"),
+				j = s.n(k);
 			const {
-				fbt: H
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), W = e => {
+				fbt: y
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = e => {
 				switch (e) {
 					case v.f.Private:
 						return "private_subreddit";
@@ -19269,13 +19299,16 @@
 					default:
 						return e
 				}
-			}, G = {
+			}, S = {
 				isDropdownOpen: !1,
 				message: "",
 				modNote: "",
 				removalType: v.f.Public,
 				selectedReason: null
-			}, V = Object(r.c)({
+			}, I = e => ({
+				submitBulkRemovalReason: (t, s, n, o, a) => e(Object(c.submitBulkRemovalReason)(t, s, n, o, a)),
+				submitRemovalReason: (t, s, n, o, a) => e(Object(c.submitRemovalReason)(t, s, n, o, a))
+			}), T = Object(r.c)({
 				currentUserName: e => {
 					const t = Object(_.i)(e);
 					if (t) return t.displayText
@@ -19290,16 +19323,13 @@
 						subredditId: s
 					}).name
 				}
-			}), q = Object(a.b)(V, e => ({
-				submitBulkRemovalReason: (t, s, n, o, a) => e(Object(c.submitBulkRemovalReason)(t, s, n, o, a)),
-				submitRemovalReason: (t, s, n, o, a) => e(Object(c.submitRemovalReason)(t, s, n, o, a))
-			})), K = d.a.wrapped(l.a, "CharacterCountdown", U.a), Q = d.a.div("EmptyState", U.a), z = d.a.wrapped(m.n, "ModNoteDescription", U.a), J = d.a.wrapped(u.f, "PrimaryButton", U.a), Z = d.a.wrapped(h.a, "RadioOption", U.a), X = d.a.span("BoldText", U.a), Y = d.a.wrapped(m.s, "ModNoteInput", U.a), $ = d.a.wrapped(m.s, "MessageInput", U.a), ee = d.a.wrapped(f.a, "Info", U.a), te = d.a.div("SmallInfoText", U.a), se = d.a.div("FormOptionsContainer", U.a), ne = d.a.wrapped(m.f, "ModalFooter", U.a), oe = d.a.div("FooterRow", U.a), ae = d.a.wrapped(oe, "ButtonRow", U.a);
-			class re extends o.a.Component {
+			}), N = Object(a.b)(T, I), P = d.a.wrapped(l.a, "CharacterCountdown", j.a), M = d.a.div("EmptyState", j.a), R = d.a.wrapped(m.n, "ModNoteDescription", j.a), L = d.a.wrapped(u.f, "PrimaryButton", j.a), A = d.a.wrapped(h.a, "RadioOption", j.a), D = d.a.span("BoldText", j.a), F = d.a.wrapped(m.s, "ModNoteInput", j.a), B = d.a.wrapped(m.s, "MessageInput", j.a), U = d.a.wrapped(f.a, "Info", j.a), H = d.a.div("SmallInfoText", j.a), W = d.a.div("FormOptionsContainer", j.a), G = d.a.wrapped(m.f, "ModalFooter", j.a), V = d.a.div("FooterRow", j.a), q = d.a.wrapped(V, "ButtonRow", j.a);
+			class K extends o.a.Component {
 				constructor(e) {
 					super(e), this.onSelectRemovalType = e => {
 						this.setState({
 							removalType: e
-						}), this.props.trackClick("type_".concat(W(e)))()
+						}), this.props.trackClick("type_".concat(w(e)))()
 					}, this.onMessageInputChange = e => {
 						this.setState({
 							message: e.currentTarget.value
@@ -19326,7 +19356,7 @@
 							state: t
 						} = this;
 						if (this.canSave()) {
-							(t.removalContextType === v.e.Bulk ? e.submitBulkRemovalReason : e.submitRemovalReason)(e.itemIds, t.selectedReason, t.message.trim(), t.removalType, t.modNote.trim()), e.trackClick("sent")(), t.selectedReason && e.trackClick("sent_".concat(W(t.removalType)))(), t.modNote && e.trackClick("sent_modnote")(), e.toggleModal()
+							(t.removalContextType === v.e.Bulk ? e.submitBulkRemovalReason : e.submitRemovalReason)(e.itemIds, t.selectedReason, t.message.trim(), t.removalType, t.modNote.trim()), e.trackClick("sent")(), t.selectedReason && e.trackClick("sent_".concat(w(t.removalType)))(), t.modNote && e.trackClick("sent_modnote")(), e.toggleModal()
 						}
 					}, this.onCancel = () => {
 						this.props.toggleModal(), this.props.trackClick("cancel")()
@@ -19335,31 +19365,31 @@
 							props: e,
 							state: t
 						} = this, s = [];
-						return t.removalContextType !== v.e.Bulk && s.push(o.a.createElement(Z, {
+						return t.removalContextType !== v.e.Bulk && s.push(o.a.createElement(A, {
 							key: v.f.Public,
 							showButton: !0,
 							tabIndex: 0,
 							value: v.f.Public
-						}, o.a.createElement("div", null, t.removalContextType === v.e.Post ? H._("Public: Write a sticky comment on the post", null, {
+						}, o.a.createElement("div", null, t.removalContextType === v.e.Post ? y._("Public: Write a sticky comment on the post", null, {
 							hk: "1UIQkF"
-						}) : H._("Public: Write a reply to the comment", null, {
+						}) : y._("Public: Write a reply to the comment", null, {
 							hk: "1iZ1RC"
-						})))), s.push(o.a.createElement(Z, {
+						})))), s.push(o.a.createElement(A, {
 							key: v.f.Private,
 							showButton: !0,
 							tabIndex: 0,
 							value: v.f.Private
-						}, o.a.createElement("div", null, H._("Private: send a Modmail from {subredditName} to the user", [H._param("subredditName", o.a.createElement(X, null, "r/".concat(e.subredditName)))], {
+						}, o.a.createElement("div", null, y._("Private: send a Modmail from {subredditName} to the user", [y._param("subredditName", o.a.createElement(D, null, "r/".concat(e.subredditName)))], {
 							hk: "1wUxMe"
-						})))), e.currentUserName && s.push(o.a.createElement(Z, {
+						})))), e.currentUserName && s.push(o.a.createElement(A, {
 							key: v.f.PrivateExposed,
 							showButton: !0,
 							tabIndex: 0,
 							value: v.f.PrivateExposed
-						}, o.a.createElement("div", null, H._("Private: send a Modmail from {currentUserName} to the user", [H._param("currentUserName", o.a.createElement(X, null, "u/".concat(e.currentUserName)))], {
+						}, o.a.createElement("div", null, y._("Private: send a Modmail from {currentUserName} to the user", [y._param("currentUserName", o.a.createElement(D, null, "u/".concat(e.currentUserName)))], {
 							hk: "wFSJr"
 						})))), s
-					}, this.state = Object.assign(Object.assign({}, G), {
+					}, this.state = Object.assign(Object.assign({}, S), {
 						removalContextType: Object(v.g)(e.itemIds)
 					})
 				}
@@ -19370,20 +19400,20 @@
 					} = this;
 					return o.a.createElement(m.d, {
 						onClick: this.closeDropdown
-					}, e.isLoading || e.removalReasons.length > 0 && o.a.createElement(m.h, null, o.a.createElement(x.a, null, o.a.createElement(m.p, null, H._("Add a removal reason", null, {
+					}, e.isLoading || e.removalReasons.length > 0 && o.a.createElement(m.h, null, o.a.createElement(x.a, null, o.a.createElement(m.p, null, y._("Add a removal reason", null, {
 						hk: "4odEgX"
-					}), e.itemIds.length > 1 && H._("({number of items} posts/comments)", [H._param("number of items", e.itemIds.length)], {
+					}), e.itemIds.length > 1 && y._("({number of items} posts/comments)", [y._param("number of items", e.itemIds.length)], {
 						hk: "4u7ZzL"
 					})), o.a.createElement(g.a, {
 						onClick: this.onCancel
-					}, o.a.createElement(m.b, null)))), o.a.createElement(m.k, null, e.isLoading || e.removalReasons.length > 0 ? o.a.createElement(F, {
+					}, o.a.createElement(m.b, null)))), o.a.createElement(m.k, null, e.isLoading || e.removalReasons.length > 0 ? o.a.createElement(O.a, {
 						isDropdownOpen: t.isDropdownOpen,
 						isLoading: e.isLoading,
 						onSelectReason: this.onSelectReason,
 						onToggleDropdown: this.handleToggleDropdown,
 						selectedReason: t.selectedReason,
 						subredditRemovalReasons: e.removalReasons
-					}) : o.a.createElement(Q, null, H._("You don't have any removal reasons yet", null, {
+					}) : o.a.createElement(M, null, y._("You don't have any removal reasons yet", null, {
 						hk: "2cPgPy"
 					}), o.a.createElement(p.a, {
 						to: "/r/".concat(e.subredditName, "/about/removal"),
@@ -19391,46 +19421,46 @@
 					}, o.a.createElement(u.n, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
-					}, H._("Add a removal reason", null, {
+					}, y._("Add a removal reason", null, {
 						hk: "3MHM7e"
-					})))), t.selectedReason && o.a.createElement(se, null, o.a.createElement(m.g, null, o.a.createElement(b.a, {
+					})))), t.selectedReason && o.a.createElement(W, null, o.a.createElement(m.g, null, o.a.createElement(b.a, {
 						name: "REMOVAL_REASON_INPUT",
 						onChange: this.onSelectRemovalType,
 						value: t.removalType
-					}, this.renderRemovalTypeOptions())), o.a.createElement($, {
+					}, this.renderRemovalTypeOptions())), o.a.createElement(B, {
 						value: t.message,
 						onChange: this.onMessageInputChange
-					}), o.a.createElement(K, {
+					}), o.a.createElement(P, {
 						maxChars: v.a,
 						text: t.message.trim()
-					}), o.a.createElement(te, null, t.removalType !== v.f.Public && o.a.createElement(o.a.Fragment, null, o.a.createElement(ee, null), H._("A link to the removed content will be appended to your message", null, {
+					}), o.a.createElement(H, null, t.removalType !== v.f.Public && o.a.createElement(o.a.Fragment, null, o.a.createElement(U, null), y._("A link to the removed content will be appended to your message", null, {
 						hk: "1DbEGF"
-					}))))), o.a.createElement(ne, null, o.a.createElement(oe, null, o.a.createElement(z, null, H._("Mod note (Only mods will see this note)", null, {
+					}))))), o.a.createElement(G, null, o.a.createElement(V, null, o.a.createElement(R, null, y._("Mod note (Only mods will see this note)", null, {
 						hk: "3InAsy"
-					}))), o.a.createElement(oe, null, o.a.createElement(Y, {
-						placeholder: H._("This is a short note to your mod team on why the content was removed.", null, {
+					}))), o.a.createElement(V, null, o.a.createElement(F, {
+						placeholder: y._("This is a short note to your mod team on why the content was removed.", null, {
 							hk: "4goqsC"
 						}),
 						value: t.modNote,
 						onChange: this.onUpdateModNote
-					})), o.a.createElement(oe, null, o.a.createElement(K, {
+					})), o.a.createElement(V, null, o.a.createElement(P, {
 						maxChars: v.b,
 						text: t.modNote.trim()
-					})), o.a.createElement(ae, null, o.a.createElement(u.i, {
+					})), o.a.createElement(q, null, o.a.createElement(u.i, {
 						onClick: this.onCancel,
 						"data-redditstyle": !0
-					}, H._("Cancel", null, {
+					}, y._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(J, {
+					})), o.a.createElement(L, {
 						onClick: this.onSubmit,
 						disabled: !this.canSave(),
 						"data-redditstyle": !0
-					}, H._("Submit", null, {
+					}, y._("Submit", null, {
 						hk: "42zLFy"
 					})))))
 				}
 			}
-			t.default = Object(i.a)(q(re))
+			t.default = Object(i.a)(N(K))
 		},
 		"./src/reddit/components/RemovalReasons/RemovalReasonEditorModal.m.less": function(e, t, s) {
 			e.exports = {
@@ -27505,24 +27535,6 @@
 				id: "path-1"
 			})))
 		},
-		"./src/reddit/icons/svgs/Remove/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				o = s.n(n);
-			t.a = e => o.a.createElement("svg", {
-				className: e.className,
-				id: e.id,
-				tabIndex: e.tabIndex,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick,
-				onMouseEnter: e.onMouseEnter,
-				onMouseLeave: e.onMouseLeave
-			}, o.a.createElement("g", null, o.a.createElement("path", {
-				fillRule: "evenodd",
-				d: "M13.5559061,14.5 C13.5559061,14.776 13.3283409,15 13.0479481,15 C12.7675552,15 12.53999,14.776 12.53999,14.5 L12.53999,9 C12.53999,8.724 12.7675552,8.5 13.0479481,8.5 C13.3283409,8.5 13.5559061,8.724 13.5559061,9 L13.5559061,14.5 Z M10.508158,14.5 C10.508158,14.776 10.2805928,15 10.0002,15 C9.71980718,15 9.49224199,14.776 9.49224199,14.5 L9.49224199,9 C9.49224199,8.724 9.71980718,8.5 10.0002,8.5 C10.2805928,8.5 10.508158,8.724 10.508158,9 L10.508158,14.5 Z M7.46040996,14.5 C7.46040996,14.776 7.23284477,15 6.95245195,15 C6.67205913,15 6.44449394,14.776 6.44449394,14.5 L6.44449394,9 C6.44449394,8.724 6.67205913,8.5 6.95245195,8.5 C7.23284477,8.5 7.46040996,8.724 7.46040996,9 L7.46040996,14.5 Z M15.492242,6 C15.7736507,6 16.0002,6.224 16.0002,6.5 L16.0002,16.5 C16.0002,17.327 15.3164885,18 14.476326,18 L5.52407403,18 C4.68391148,18 4.0002,17.327 4.0002,16.5 L4.0002,6.5 C4.0002,6.224 4.22674927,6 4.50815801,6 L15.492242,6 Z M15.491585,3 C15.7719541,3 15.9995,3.224 15.9995,3.5 L15.9995,4.5 C15.9995,4.776 15.7719541,5 15.491585,5 L4.50741501,5 C4.22704592,5 3.9995,4.776 3.9995,4.5 L3.9995,3.5 C3.9995,3.224 4.22704592,3 4.50741501,3 L7.51325603,3 L8.26598607,2.167 C8.36248993,2.061 8.50064281,2 8.6459065,2 L11.3541093,2 C11.4983572,2 11.6365101,2.061 11.7340298,2.167 L12.485744,3 L15.491585,3 Z"
-			})))
-		},
 		"./src/reddit/icons/svgs/Replay/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -30582,4 +30594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.4d9d0d4855bd9adae470.js.map
+//# sourceMappingURL=ModerationPages.9580827f5f928c6c7662.js.map

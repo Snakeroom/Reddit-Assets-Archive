@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.020c7fc18663d8042233.js
-// Retrieved at 8/18/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.81ba17610963ae315c74.js
+// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -527,7 +527,7 @@
 						j = Object(v.a)(O) ? x.e.Post : x.e.Comment,
 						R = j === x.e.Post ? p.posts.models[O] : p.comments.models[O],
 						y = j === x.e.Post ? u.J : i.R;
-					if (!R || !f) return;
+					if (!R || !f) return !1;
 					d(z()), d(y({
 						[O]: {
 							modNote: a,
@@ -551,7 +551,7 @@
 									type: o
 								},
 								m = await k(l(), Object(x.h)(a, j), j);
-							if (m.ok)
+							if (m.ok) {
 								if (o === x.f.Public) {
 									if (d($()), m.body) {
 										const e = Object(_.a)(m.body, f),
@@ -599,7 +599,9 @@
 										}
 									}
 								} else d(Y());
-							else d(ee(m.error))
+								return !0
+							}
+							return d(ee(m.error)), !1
 						}
 					} else d(Z(C.error)), d(y({
 						[O]: {
@@ -607,7 +609,8 @@
 							modRemovalReason: R.modRemovalReason,
 							modReasonBy: R.modReasonBy
 						}
-					}))
+					}));
+					return !1
 				}, ne = (e, t, n, s, a) => async (r, c, i) => {
 					let {
 						apiContext: m
@@ -697,4 +700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue~ModQueuePages.020c7fc18663d8042233.js.map
+//# sourceMappingURL=ModQueue~ModQueuePages.81ba17610963ae315c74.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.11e5ee0e12e998ae282d.js
-// Retrieved at 8/17/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.abfa4965ead7223c1956.js
+// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -292,9 +292,9 @@
 				S = s("./src/reddit/icons/fonts/Lock/index.tsx"),
 				N = s("./src/reddit/icons/fonts/Remove/index.tsx"),
 				M = s("./src/reddit/icons/fonts/Spam/index.tsx"),
-				R = s("./src/reddit/icons/svgs/Show/index.tsx"),
-				T = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less"),
-				I = s.n(T),
+				T = s("./src/reddit/icons/svgs/Show/index.tsx"),
+				R = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less"),
+				I = s.n(R),
 				D = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
@@ -309,7 +309,7 @@
 				B = l.a.wrapped(S.a, "Lock", I.a),
 				F = l.a.wrapped(N.a, "Remove", I.a),
 				W = l.a.wrapped(M.a, "Spam", I.a),
-				U = l.a.wrapped(R.a, "Show", I.a),
+				U = l.a.wrapped(T.a, "Show", I.a),
 				X = l.a.wrapped(w, "DistinguishShield", I.a),
 				G = Object(f.t)(),
 				V = e => "Distinguish--Dropdown--".concat(e),
@@ -469,7 +469,7 @@
 			s.d(t, "a", (function() {
 				return S
 			})), s.d(t, "b", (function() {
-				return R
+				return T
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -504,7 +504,7 @@
 					flair: C.e,
 					subreddit: v.H
 				}),
-				R = Object(r.b)(M, (e, t) => {
+				T = Object(r.b)(M, (e, t) => {
 					let {
 						commentId: s,
 						trackClick: n
@@ -517,10 +517,10 @@
 						}
 					}
 				}),
-				T = Object(i.b)(e => ({
+				R = Object(i.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			t.c = R(P.a.wrapped(e => {
+			t.c = T(P.a.wrapped(e => {
 				const {
 					className: t,
 					comment: s,
@@ -551,7 +551,7 @@
 					comment: s
 				}, o.a.createElement(E, null, o.a.createElement(x.a, {
 					content: Object(f.a)(s),
-					rtJsonElementProps: T(e)
+					rtJsonElementProps: R(e)
 				}), o.a.createElement(w, null)), o.a.createElement(u.a, {
 					comment: s,
 					flair: n,
@@ -713,6 +713,51 @@
 				author: e.comment.postAuthor,
 				isUnstyled: !0
 			}, "u/".concat(e.comment.postAuthor))))
+		},
+		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, s) {
+			e.exports = {
+				buttonWidth: "ogOEj4x-0BpDZWeccJwxx",
+				ModalText: "_2YxEi97B6Nm7NCgLG6pCud",
+				modalText: "_2YxEi97B6Nm7NCgLG6pCud"
+			}
+		},
+		"./src/reddit/components/ConfirmUserActionModal/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				a = s("./src/higherOrderComponents/asModal/index.tsx"),
+				i = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				d = s("./src/reddit/controls/TextButton/index.tsx"),
+				c = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				l = s("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
+				m = s.n(l);
+			const u = e => e.preventDefault();
+			t.a = Object(a.a)(e => r.a.createElement(i.d, null, r.a.createElement(i.h, null, r.a.createElement(c.a, null, r.a.createElement(i.p, null, e.headerText || n.fbt._("Confirm", null, {
+				hk: "2zlvKa"
+			})), r.a.createElement(d.a, {
+				onClick: () => {
+					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				}
+			}, r.a.createElement(i.b, null)))), r.a.createElement(i.k, null, r.a.createElement(i.o, {
+				className: m.a.ModalText
+			}, e.modalText)), r.a.createElement(i.f, null, !e.hideCancelButton && r.a.createElement(i.a, {
+				className: m.a.buttonWidth,
+				onMouseDown: u,
+				onClick: () => {
+					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
+				},
+				"data-redditstyle": !e.disableRedditStyle
+			}, e.cancelActionText || n.fbt._("Cancel", null, {
+				hk: "2TSLl5"
+			})), r.a.createElement(i.t, {
+				className: m.a.buttonWidth,
+				onMouseDown: u,
+				onClick: t => {
+					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+				},
+				"data-redditstyle": !e.disableRedditStyle
+			}, e.actionText))))
 		},
 		"./src/reddit/components/DistinguishCommentDropdown/DistinguishOptions.m.less": function(e, t, s) {
 			e.exports = {
@@ -2265,13 +2310,13 @@
 				}))),
 				N = s("./src/reddit/components/SidebarSpacer/index.tsx"),
 				M = s("./src/config.ts"),
-				R = s("./src/lib/lessComponent.tsx"),
-				T = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				T = s("./src/lib/lessComponent.tsx"),
+				R = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				I = s("./src/reddit/components/Widgets/ModSupportLinks/index.m.less"),
 				D = s.n(I);
-			const L = R.a.a("ExternalLink", D.a),
-				A = R.a.wrapped(O.a, "InternalLink", D.a);
-			var B = () => a.a.createElement(T.a, {
+			const L = T.a.a("ExternalLink", D.a),
+				A = T.a.wrapped(O.a, "InternalLink", D.a);
+			var B = () => a.a.createElement(R.a, {
 				title: C.fbt._("Moderator resources", null, {
 					hk: "1i4sLY"
 				}),
@@ -2297,7 +2342,7 @@
 			})));
 			var F = e => a.a.createElement("div", {
 				className: j.a.sidebar
-			}, e.subredditOrProfileUrl && a.a.createElement(N.a, null, a.a.createElement(T.a, {
+			}, e.subredditOrProfileUrl && a.a.createElement(N.a, null, a.a.createElement(R.a, {
 				title: C.fbt._("Moderation", null, {
 					hk: "K4118"
 				})
@@ -2403,4 +2448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.11e5ee0e12e998ae282d.js.map
+//# sourceMappingURL=ModQueuePages.abfa4965ead7223c1956.js.map

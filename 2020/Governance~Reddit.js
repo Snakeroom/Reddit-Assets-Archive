@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.dd065b48d3a622f20444.js
-// Retrieved at 8/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.706a66f3b6b923b44602.js
+// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -12149,7 +12149,7 @@
 					const i = n(),
 						c = i.posts.models[e],
 						o = i.user.account ? i.user.account.displayText : null;
-					c && o && (s(de({
+					return !(!c || !o) && (s(de({
 						[e]: {
 							approvedBy: null,
 							bannedBy: o,
@@ -12157,7 +12157,7 @@
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (await Object(N.l)(a(), e, t)).ok || s(de({
+					})), !!(await Object(N.l)(a(), e, t)).ok || (s(de({
 						[e]: {
 							approvedBy: c.approvedBy,
 							bannedBy: c.bannedBy,
@@ -12165,7 +12165,7 @@
 							isRemoved: c.isRemoved,
 							isSpam: c.isSpam
 						}
-					})))
+					})), !1))
 				}, Ce = (e, t, s) => async (n, r, i) => {
 					let {
 						apiContext: c
@@ -31950,7 +31950,7 @@
 					e.AuthError = "auth-error"
 				}(n || (n = {})),
 				function(e) {
-					e[e.SuccessAward = 0] = "SuccessAward", e[e.SuccessCommunity = 1] = "SuccessCommunity", e[e.SuccessCommunityGreen = 2] = "SuccessCommunityGreen", e[e.SuccessMod = 3] = "SuccessMod", e[e.Error = 4] = "Error", e[e.Undo = 5] = "Undo", e[e.EuCookiePolicy = 6] = "EuCookiePolicy", e[e.UappBanner = 7] = "UappBanner", e[e.AuthError = 8] = "AuthError", e[e.Custom = 9] = "Custom", e[e.Modal = 10] = "Modal", e[e.SuccessLockComment = 11] = "SuccessLockComment", e[e.SuccessUnlockComment = 12] = "SuccessUnlockComment"
+					e[e.SuccessAward = 0] = "SuccessAward", e[e.SuccessCommunity = 1] = "SuccessCommunity", e[e.SuccessCommunityGreen = 2] = "SuccessCommunityGreen", e[e.SuccessMod = 3] = "SuccessMod", e[e.Error = 4] = "Error", e[e.Undo = 5] = "Undo", e[e.EuCookiePolicy = 6] = "EuCookiePolicy", e[e.UappBanner = 7] = "UappBanner", e[e.AuthError = 8] = "AuthError", e[e.Custom = 9] = "Custom", e[e.Modal = 10] = "Modal", e[e.SuccessLockComment = 11] = "SuccessLockComment", e[e.SuccessUnlockComment = 12] = "SuccessUnlockComment", e[e.SuccessEndBroadcast = 13] = "SuccessEndBroadcast"
 				}(r || (r = {})),
 				function(e) {
 					e[e.subscribeMilestone = 0] = "subscribeMilestone", e[e.subscribeCap = 1] = "subscribeCap", e[e.voteMilestone = 2] = "voteMilestone"
@@ -55605,4 +55605,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.dd065b48d3a622f20444.js.map
+//# sourceMappingURL=Governance~Reddit.706a66f3b6b923b44602.js.map
