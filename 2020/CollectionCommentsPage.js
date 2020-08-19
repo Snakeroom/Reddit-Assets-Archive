@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3e7934af30eb48359b42.js
-// Retrieved at 8/18/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ab395bc227b5342b0022.js
+// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -957,11 +957,11 @@
 				_ = s("./src/reddit/selectors/posts.ts"),
 				k = s("./src/reddit/actions/postCreation/constants.ts"),
 				j = s("./src/reddit/actions/postCreation/general.ts");
-			const w = Object(o.a)(k.m),
-				P = Object(o.a)(k.n),
-				I = Object(o.a)(k.z),
-				S = Object(o.a)(k.F),
-				T = Object(o.a)(k.G),
+			const w = Object(o.a)(k.o),
+				P = Object(o.a)(k.p),
+				I = Object(o.a)(k.B),
+				S = Object(o.a)(k.H),
+				T = Object(o.a)(k.I),
 				N = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: r
@@ -990,7 +990,7 @@
 					const {
 						post: d
 					} = e, c = !d.media || "rtjson" !== d.media.type && "text" !== d.media.type ? "" : d.media.rteMode;
-					C.u(s(), Object(j.o)(c)), t(I(d.id));
+					C.u(s(), Object(j.n)(c)), t(I(d.id));
 					const l = await b(a(), e),
 						m = !1 === l.body.success;
 					if (t(w(d.id)), l.ok && !m) {
@@ -8625,7 +8625,7 @@
 					showAwardsPlaque: L.a,
 					showEditFlair: pe.a,
 					subredditOrProfile: A.bb,
-					isEditing: F.C,
+					isEditing: F.F,
 					userIsOp: B.hb
 				}), (e, t) => {
 					let {
@@ -9133,7 +9133,7 @@
 					return {
 						onOpenCreateCollectionModal: () => {
 							let t = C.b;
-							s && (t = Object(C.t)(s, !!n)), e(Object(m.y)(t))
+							s && (t = Object(C.t)(s, !!n)), e(Object(m.x)(t))
 						}
 					}
 				});
@@ -17053,4 +17053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.3e7934af30eb48359b42.js.map
+//# sourceMappingURL=CollectionCommentsPage.ab395bc227b5342b0022.js.map

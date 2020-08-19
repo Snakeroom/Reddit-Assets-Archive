@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.dcbee88e8bdefafb35dc.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.d7690cdf2a46c81bc794.js
+// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -2030,4 +2030,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.dcbee88e8bdefafb35dc.js.map
+//# sourceMappingURL=AwardCreationModal.d7690cdf2a46c81bc794.js.map

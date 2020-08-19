@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.cc9cd2f305c9d62c3874.js
-// Retrieved at 8/18/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.dc3db4131569c38c1728.js
+// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -487,8 +487,8 @@
 				K = n("./src/reddit/actions/modal.ts"),
 				X = n("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
 				Z = n("./src/reddit/models/PostCreationForm/index.ts"),
-				Q = n("./src/reddit/models/PostDraft/index.ts"),
-				G = n("./src/reddit/models/User/index.ts"),
+				G = n("./src/reddit/models/PostDraft/index.ts"),
+				Q = n("./src/reddit/models/User/index.ts"),
 				J = n("./src/reddit/components/CommentCreation/MarkdownCommentForm/index.m.less"),
 				Y = n.n(J);
 			const $ = O.a.button("SwitchModeButton", Y.a),
@@ -510,7 +510,7 @@
 				ue = O.a.div("FormWrapper", Y.a),
 				pe = Object(a.b)(() => Object(d.c)({
 					activeModalId: U.a,
-					userName: e => e.user.account ? Object(G.e)(e.user.account) : "",
+					userName: e => e.user.account ? Object(Q.e)(e.user.account) : "",
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
 					draft: q.i,
 					isConverting: (e, t) => Object(V.a)(e, t.draftKey)
@@ -548,7 +548,7 @@
 						}), () => {
 							w.a.read(this.detectBreakout)
 						})
-					}, this.shouldConfirmCancel = () => this.userHasEnteredText() && this.state.hasChanged && this.props.draftType === Q.c.edit, this.onCancel = () => {
+					}, this.shouldConfirmCancel = () => this.userHasEnteredText() && this.state.hasChanged && this.props.draftType === G.c.edit, this.onCancel = () => {
 						this.shouldConfirmCancel() ? this.props.cancelModalToggled() : this.cancelForm()
 					}, this.onBlur = e => {
 						(!e || e && e.relatedTarget !== this.switchModeBtn) && (this.textAreaRef && this.textAreaRef.blur(), this.props.onFocusChanged(!1))
@@ -590,7 +590,7 @@
 						breakOut: !1,
 						wrapperHeight: void 0,
 						formHeight: null,
-						cancelModalText: t === Q.c.edit ? o.fbt._("Are you sure that you want to discard your edits?", null, {
+						cancelModalText: t === G.c.edit ? o.fbt._("Are you sure that you want to discard your edits?", null, {
 							hk: "1ZfaWW"
 						}) : o.fbt._("Are you sure that you want to discard your comment?", null, {
 							hk: "3d8gJY"
@@ -657,7 +657,7 @@
 						text: S,
 						breakOut: B,
 						wrapperHeight: I
-					} = this.state, F = Object(N.a)(b), P = d.draftType === Q.c.edit;
+					} = this.state, F = Object(N.a)(b), P = d.draftType === G.c.edit;
 					return r.a.createElement(me, {
 						"data-test-id": z.b,
 						className: Object(W.a)(s, {
@@ -706,7 +706,7 @@
 						}),
 						value: S
 					}), (!v || O) && r.a.createElement(ie, {
-						cancelButtonEnabled: x !== Q.c.replyToPost,
+						cancelButtonEnabled: x !== G.c.replyToPost,
 						onSubmit: this.onSubmit,
 						onCancel: this.onCancel,
 						pending: E,
@@ -1099,10 +1099,10 @@
 					}))))
 				})),
 				Z = n("./src/reddit/icons/svgs/Gif/index.tsx"),
-				Q = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
-				G = n("./src/reddit/components/RichTextEditor/Toolbar/GifButton/index.m.less"),
-				J = n.n(G);
-			const Y = Object(Q.f)(Z.a);
+				G = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
+				Q = n("./src/reddit/components/RichTextEditor/Toolbar/GifButton/index.m.less"),
+				J = n.n(Q);
+			const Y = Object(G.f)(Z.a);
 			var $ = function(e) {
 					const {
 						controlsState: t,
@@ -1729,8 +1729,8 @@
 					onChange: n => {
 						e(Object(a.c)(n)), t.onChange && t.onChange(n)
 					},
-					helpModalToggled: () => e(Object(a.y)(l.b)),
-					switchToRTEModalToggled: () => e(Object(a.y)(m.a.SWITCH_TO_RTE_MODAL_ID))
+					helpModalToggled: () => e(Object(a.x)(l.b)),
+					switchToRTEModalToggled: () => e(Object(a.x)(m.a.SWITCH_TO_RTE_MODAL_ID))
 				}));
 			class R extends s.a.Component {
 				constructor(e) {
@@ -2041,8 +2041,8 @@
 					errorMessages: x.i,
 					hasError: x.j,
 					markdownDraft: x.k,
-					pending: x.Q,
-					postRequirements: x.eb,
+					pending: x.T,
+					postRequirements: x.ib,
 					rteDraft: x.l,
 					subreddit: M.q,
 					uploads: e => e.uploads,
@@ -2832,4 +2832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.cc9cd2f305c9d62c3874.js.map
+//# sourceMappingURL=RichTextEditor.dc3db4131569c38c1728.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.6b69434578f1c278c236.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.0c4d22d7a2c355171ae5.js
+// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RecurringPostList-EditModal"], {
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, n) {
@@ -70,7 +70,7 @@
 						day: s
 					}
 				};
-			class C extends r.a.PureComponent {
+			class x extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = e => {
 						const t = Object.assign(Object.assign({}, f(this.props.value)), e),
@@ -127,12 +127,12 @@
 					}, e))))
 				}
 			}
-			var g = C,
-				x = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
-				D = n.n(x);
+			var C = x,
+				g = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
+				S = n.n(g);
 
-			function S() {
-				return (S = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -140,16 +140,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = o()(() => {
+			const k = o()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "date"), e.setAttribute("value", "not-a-date"), "not-a-date" !== e.value
 				}),
-				k = u.a.input("Input", D.a);
-			t.a = e => O() ? r.a.createElement(k, S({
+				P = u.a.input("Input", S.a);
+			t.a = e => k() ? r.a.createElement(P, D({
 				type: "date"
 			}, e, {
 				onChange: t => e.onChange(t.target.value)
-			})) : r.a.createElement(g, e)
+			})) : r.a.createElement(C, e)
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -187,7 +187,7 @@
 					const n = +e.slice(-2);
 					if (Number.isInteger(n)) return n > t ? 0 : n
 				};
-			class C extends r.a.PureComponent {
+			class x extends r.a.PureComponent {
 				constructor(e) {
 					super(e), this.callOnChange = () => {
 						let e = i()(+this.state.hour, 0, 24);
@@ -252,12 +252,12 @@
 					}))
 				}
 			}
-			var g = C,
-				x = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
-				D = n.n(x);
+			var C = x,
+				g = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
+				S = n.n(g);
 
-			function S() {
-				return (S = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -265,16 +265,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = o()(() => {
+			const k = o()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "time"), e.setAttribute("value", "not-a-time"), "not-a-time" !== e.value
 				}),
-				k = m.a.input("TimeInput", D.a);
-			t.a = e => O() ? r.a.createElement(k, S({
+				P = m.a.input("TimeInput", S.a);
+			t.a = e => k() ? r.a.createElement(P, D({
 				type: "time"
 			}, e, {
 				onChange: t => e.onChange(t.target.value)
-			})) : r.a.createElement(g, e)
+			})) : r.a.createElement(C, e)
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -402,20 +402,20 @@
 				b = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/utils.ts"),
 				y = n("./src/reddit/components/RecurringPostList/RecurringPost/index.tsx"),
 				f = n("./src/reddit/components/ScheduledPost/index.tsx"),
-				C = n("./src/reddit/components/ScheduledPost/MetaLine/index.tsx"),
-				g = n("./src/reddit/components/ScheduledPost/PostTitle/index.tsx"),
-				x = n("./src/reddit/components/ScheduledPost/SchedulePicker/index.tsx"),
-				D = n("./src/reddit/components/ScheduledPost/SchedulePicker/withSchedulePicker.ts"),
-				S = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				O = n("./src/reddit/controls/Button/index.tsx"),
-				k = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				P = n("./src/reddit/controls/TextButton/index.tsx"),
+				x = n("./src/reddit/components/ScheduledPost/MetaLine/index.tsx"),
+				C = n("./src/reddit/components/ScheduledPost/PostTitle/index.tsx"),
+				g = n("./src/reddit/components/ScheduledPost/SchedulePicker/index.tsx"),
+				S = n("./src/reddit/components/ScheduledPost/SchedulePicker/withSchedulePicker.ts"),
+				D = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				k = n("./src/reddit/controls/Button/index.tsx"),
+				P = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				O = n("./src/reddit/controls/TextButton/index.tsx"),
 				v = n("./src/reddit/endpoints/scheduledPosts/index.ts"),
 				I = n("./src/reddit/helpers/scheduledPosts/index.ts"),
 				j = n("./src/reddit/helpers/trackers/scheduledPosts.ts"),
 				_ = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				E = n("./src/reddit/layout/row/Inline/index.tsx"),
-				N = n("./src/reddit/selectors/scheduledPosts/index.ts"),
+				N = n("./src/reddit/layout/row/Inline/index.tsx"),
+				E = n("./src/reddit/selectors/scheduledPosts/index.ts"),
 				M = n("./src/reddit/components/RecurringPostList/EditModal/index.m.less"),
 				F = n.n(M);
 			const {
@@ -426,13 +426,13 @@
 						subredditId: n,
 						scheduledPostId: s
 					} = t;
-					return Object(N.k)(e, {
+					return Object(E.k)(e, {
 						subredditId: n,
 						scheduledPostId: s
 					})
 				},
-				isLoading: N.o,
-				error: N.f
+				isLoading: E.o,
+				error: E.f
 			}), z = Object(a.b)(w, (e, t) => {
 				let {
 					subredditId: n,
@@ -451,8 +451,11 @@
 					}
 				}
 			}, (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), n), {
+				isContestMode: !!e.scheduledPost && e.scheduledPost.isContestMode,
 				schedule: e.scheduledPost ? Object(I.h)(e.scheduledPost) : void 0,
-				flair: e.scheduledPost ? Object(N.m)({
+				stickyPosition: e.scheduledPost ? e.scheduledPost.sticky || null : "NONE",
+				suggestedSort: e.scheduledPost && e.scheduledPost.suggestedCommentSort || null,
+				flair: e.scheduledPost ? Object(E.m)({
 					scheduledPost: e.scheduledPost
 				}) : null,
 				media: e.scheduledPost ? Object.assign(Object.assign({}, f.b), {
@@ -462,13 +465,13 @@
 			}));
 			class q extends o.a.PureComponent {
 				constructor(e) {
-					super(e), this.maxDate = Object(b.a)(), this.isSaving = !1, this.onSubmitDateChange = Object(D.i)(this), this.onSubmitTimeChange = Object(D.j)(this), this.onTimezoneChange = Object(D.k)(this), this.buildPostSchedule = () => {
+					super(e), this.maxDate = Object(b.a)(), this.isSaving = !1, this.onSubmitDateChange = Object(S.k)(this), this.onSubmitTimeChange = Object(S.l)(this), this.onTimezoneChange = Object(S.n)(this), this.buildPostSchedule = () => {
 						if (!this.props.scheduledPost) return {};
 						const e = Object(I.h)(this.props.scheduledPost),
 							t = {},
 							n = Object(I.a)(this.state.submitDate, this.state.submitTime);
 						return n !== e.submitDate && (t.submitDate = n, t.timezoneName = this.state.timezoneName), this.state.timezoneName !== e.timezoneName && (t.timezoneName = this.state.timezoneName), this.state.frequencyOption !== e.frequencyOption && (t.frequencyOption = this.state.frequencyOption), Object(I.g)(this.state.recurrenceInfo, e.recurrenceInfo) || (t.recurrenceInfo = this.state.recurrenceInfo ? Object.assign({}, this.state.recurrenceInfo) : null), t
-					}, this.onFrequencyOptionChange = Object(D.h)(this), this.onCustomFrequencyChange = Object(D.d)(this), this.onCustomIntervalChange = Object(D.e)(this), this.onCustomWeekDaysChange = Object(D.g)(this), this.onCustomMonthDaysChange = Object(D.f)(this), this.getValidationError = () => this.state.frequencyOption ? null : T._("Must configure recurrence rules for a recurring post", null, {
+					}, this.onFrequencyOptionChange = Object(S.i)(this), this.onCustomFrequencyChange = Object(S.e)(this), this.onCustomIntervalChange = Object(S.f)(this), this.onCustomWeekDaysChange = Object(S.h)(this), this.onCustomMonthDaysChange = Object(S.g)(this), this.getValidationError = () => this.state.frequencyOption ? null : T._("Must configure recurrence rules for a recurring post", null, {
 						hk: "3yv6f5"
 					}), this.onUpdate = () => {
 						this.isSaving = !0, this.props.updatePostRequested(this.buildPostSchedule())
@@ -482,7 +485,7 @@
 						this.setState({
 							confirmDeleteModalIsOpen: !1
 						}), this.props.deletePostRequested()
-					}, this.state = Object.assign(Object.assign({}, Object(D.c)(e)), {
+					}, this.state = Object.assign(Object.assign({}, Object(S.c)(e)), {
 						confirmDeleteModalIsOpen: !1
 					})
 				}
@@ -508,7 +511,7 @@
 						submitMonthDay: b,
 						submitTime: y,
 						timezoneName: f
-					} = this.state, D = this.getValidationError();
+					} = this.state, S = this.getValidationError();
 					return e && a && r ? o.a.createElement(o.a.Fragment, null, o.a.createElement(p.d, {
 						className: F.a.modalBody
 					}, o.a.createElement(p.h, {
@@ -528,17 +531,17 @@
 						post: a
 					})), o.a.createElement("div", {
 						className: F.a.scheduledPostMetadata
-					}, o.a.createElement("div", null, o.a.createElement(g.a, {
+					}, o.a.createElement("div", null, o.a.createElement(C.a, {
 						title: e.title
 					}), o.a.createElement(h.a, {
 						className: F.a.flairList,
 						flair: r
-					})), o.a.createElement(C.a, {
+					})), o.a.createElement(x.a, {
 						isModDistinguished: e.isModDistinguished,
-						isSticky: e.isSticky,
+						isSticky: !!e.sticky && "NONE" !== e.sticky,
 						subreddit: e.subreddit,
 						owner: e.owner
-					})), o.a.createElement(P.a, {
+					})), o.a.createElement(O.a, {
 						className: F.a.editPostButton,
 						onClick: s
 					}, T._("Edit post", null, {
@@ -549,7 +552,7 @@
 						className: F.a.mainSectionHeader
 					}, T._("When do you want to submit this post", null, {
 						hk: "Phpmz"
-					})), o.a.createElement(x.a, {
+					})), o.a.createElement(g.a, {
 						frequencyOption: i,
 						timezoneName: f,
 						maxDate: this.maxDate,
@@ -571,9 +574,9 @@
 						hk: "3qHKKc"
 					}))), o.a.createElement(p.f, {
 						className: F.a.modalFooter
-					}, o.a.createElement(E.a, {
+					}, o.a.createElement(N.a, {
 						className: F.a.buttonRow
-					}, o.a.createElement(P.a, {
+					}, o.a.createElement(O.a, {
 						className: F.a.deleteButton,
 						onClick: this.onDeleteRequested
 					}, o.a.createElement(_.b, {
@@ -582,24 +585,24 @@
 						hk: "1ruCCL"
 					})), o.a.createElement("span", {
 						className: F.a.rightButtons
-					}, o.a.createElement(O.i, {
+					}, o.a.createElement(k.i, {
 						onClick: this.onCancel
 					}, T._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(O.f, {
+					})), o.a.createElement(k.f, {
 						className: F.a.updateButton,
 						onClick: this.onUpdate,
-						disabled: t || !!D
-					}, t && o.a.createElement(k.a, {
+						disabled: t || !!S
+					}, t && o.a.createElement(P.a, {
 						className: F.a.loadingIcon,
 						sizePx: 14
 					}), o.a.createElement("span", {
 						className: t ? F.a.loadingUpdateButtonCopy : void 0
 					}, T._("Update", null, {
 						hk: "2RLfKd"
-					}))))), D && o.a.createElement("div", {
+					}))))), S && o.a.createElement("div", {
 						className: F.a.errorCopy
-					}, D), n && o.a.createElement("div", {
+					}, S), n && o.a.createElement("div", {
 						className: F.a.errorCopy
 					}, n))), c && o.a.createElement(m.a, {
 						onClose: this.onCancelDelete,
@@ -618,16 +621,119 @@
 					})) : null
 				}
 			}
-			t.default = Object(c.a)(z(Object(S.c)(q)))
+			t.default = Object(c.a)(z(Object(D.c)(q)))
 		},
 		"./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.m.less": function(e, t, n) {
 			e.exports = {
 				dropdownSelector: "sthyu8T41HRwkORc3_Orf"
 			}
 		},
+		"./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.tsx": function(e, t, n) {
+			"use strict";
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				a = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				r = n("./src/reddit/controls/DropdownSelector/index.tsx"),
+				c = n("./src/reddit/helpers/trackers/scheduledPosts.ts"),
+				i = n("./src/reddit/models/ScheduledPost/index.ts"),
+				l = n("./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.m.less"),
+				d = n.n(l);
+			const {
+				fbt: u
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), m = () => ({
+				[i.d.Hourly]: u._("Hours", null, {
+					hk: "1kIvcA"
+				}),
+				[i.d.Daily]: u._("Days", null, {
+					hk: "13WSoO"
+				}),
+				[i.d.Weekly]: u._("Weeks", null, {
+					hk: "TN20v"
+				}),
+				[i.d.Monthly]: u._("Months", null, {
+					hk: "3FZ90C"
+				})
+			});
+			class h extends o.a.PureComponent {
+				componentDidMount() {
+					this.props.sendEvent(Object(c.A)())
+				}
+				render() {
+					const {
+						selectedFrequency: e,
+						onSelect: t
+					} = this.props, n = m(), s = Object.keys(n).map(e => ({
+						displayText: n[e],
+						value: e
+					}));
+					return o.a.createElement(r.b, {
+						displayText: n[e],
+						options: s,
+						onSelect: e => t(e.value),
+						className: d.a.dropdownSelector
+					})
+				}
+			}
+			t.a = Object(a.c)(h)
+		},
 		"./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.m.less": function(e, t, n) {
 			e.exports = {
 				dropdownSelector: "_3OZDLz1wItSYAlGEKg1nJP"
+			}
+		},
+		"./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				a = n("./src/lib/classNames/index.ts"),
+				r = n("./src/reddit/controls/DropdownSelector/index.tsx"),
+				c = n("./src/reddit/helpers/ordinal/index.ts"),
+				i = n("./src/reddit/models/ScheduledPost/index.ts"),
+				l = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.m.less"),
+				d = n.n(l);
+			const {
+				fbt: u
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			t.a = e => {
+				const {
+					selectedFrequencyOption: t,
+					submitDate: n,
+					onSelect: s
+				} = e, l = (e => {
+					const t = e.toLocaleDateString([], {
+							weekday: "long"
+						}),
+						n = e.getDate();
+					return {
+						[i.d.Hourly]: u._("Hourly", null, {
+							hk: "3w46VZ"
+						}),
+						[i.d.Daily]: u._("Daily", null, {
+							hk: "3z9Mtx"
+						}),
+						[i.d.Weekly]: u._("Weekly on {day of the week}", [u._param("day of the week", t)], {
+							hk: "4cJaZJ"
+						}),
+						[i.d.Monthly]: u._("Monthly on day {day of the month}", [u._param("day of the month", Object(c.a)(n))], {
+							hk: "3H4TV9"
+						}),
+						[i.b]: u._("Custom...", null, {
+							hk: "3GTSQL"
+						})
+					}
+				})(n), m = e => null === e ? u._("Does not repeat", null, {
+					hk: "1EaN4C"
+				}) : l[e], h = [null, i.d.Hourly, i.d.Daily, i.d.Weekly, i.d.Monthly, i.b].map(e => ({
+					value: e,
+					displayText: m(e)
+				}));
+				return o.a.createElement(r.b, {
+					displayText: m(t),
+					options: h,
+					onSelect: e => s(e.value),
+					className: Object(a.a)(e.className, d.a.dropdownSelector)
+				})
 			}
 		},
 		"./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/DaySelector/index.m.less": function(e, t, n) {
@@ -645,12 +751,155 @@
 				textRow: "EhYHOKD3p806Bl5j8hMqQ"
 			}
 		},
+		"./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/index.tsx": function(e, t, n) {
+			"use strict";
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				a = n("./src/reddit/controls/DropdownSelector/index.tsx"),
+				r = n("./src/reddit/helpers/ordinal/index.ts"),
+				c = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/DaySelector/index.m.less"),
+				l = n.n(i);
+			var d = e => o.a.createElement("div", {
+					className: Object(c.a)(l.a.daySelector, {
+						[l.a.selected]: e.isSelected
+					}),
+					onClick: () => e.onClick(!e.isSelected)
+				}, e.day),
+				u = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/index.m.less"),
+				m = n.n(u);
+			const {
+				fbt: h
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = 31;
+			var b;
+			! function(e) {
+				e.Default = "default", e.Custom = "custom"
+			}(b || (b = {}));
+			const y = e => ({
+				[b.Default]: h._("Monthly on {submit day} day", [h._param("submit day", Object(r.a)(e))], {
+					hk: "nXxbI"
+				}),
+				[b.Custom]: h._("Monthly on days...", null, {
+					hk: "1l9xD9"
+				})
+			});
+			class f extends o.a.PureComponent {
+				constructor(e) {
+					super(e), this.onDropdownChange = e => {
+						const t = e.value;
+						switch (t) {
+							case b.Default:
+								this.props.onChange([this.props.submitDay]), this.setState({
+									selectedOption: t
+								});
+								break;
+							case b.Custom:
+								this.setState({
+									selectedOption: t
+								})
+						}
+					}, this.getDaySelector = e => {
+						return o.a.createElement(d, {
+							key: e,
+							day: e,
+							isSelected: -1 !== this.props.selectedMonthDays.indexOf(e),
+							onClick: t => {
+								const n = t ? [...this.props.selectedMonthDays, e] : [...this.props.selectedMonthDays].filter(t => t !== e);
+								this.props.onChange(n)
+							}
+						})
+					}, this.getDaySelectors = () => [...Array(p).keys()].map(e => this.getDaySelector(e + 1));
+					const t = e.selectedMonthDays.some(t => t !== e.submitDay) ? b.Custom : b.Default;
+					this.state = {
+						selectedOption: t
+					}
+				}
+				render() {
+					const {
+						selectedOption: e
+					} = this.state, t = y(this.props.submitDay), n = Object.keys(t).map(e => ({
+						displayText: t[e],
+						value: e
+					}));
+					return o.a.createElement("div", null, o.a.createElement("div", {
+						className: m.a.textRow
+					}, h._("Repeat on", null, {
+						hk: "2JtbIy"
+					})), o.a.createElement(a.b, {
+						displayText: t[e],
+						options: n,
+						onSelect: this.onDropdownChange,
+						className: m.a.dropdownSelector
+					}), e === b.Custom && o.a.createElement("div", {
+						className: m.a.container
+					}, o.a.createElement("div", {
+						className: m.a.daySelectorsContainer
+					}, this.getDaySelectors()), o.a.createElement("div", {
+						className: m.a.notes
+					}, h._("February, April, June, September, & November do not have 31 days. The same for 29 and 30 days in February.", null, {
+						hk: "fKUkL"
+					}), o.a.createElement("br", null), o.a.createElement("br", null), h._("Your post will not be submitted in these months.", null, {
+						hk: "4mwvnt"
+					}))))
+				}
+			}
+			t.a = f
+		},
 		"./src/reddit/components/ScheduledPost/SchedulePicker/WeekDaysCheckboxes/index.m.less": function(e, t, n) {
 			e.exports = {
 				checkbox: "MQhzmWo1O8x7mXjrl0vh5",
 				container: "_3CI9Dv9x2dJYwzY-WbSMiy",
 				textRow: "_2qOodGBz66NfRLGp6L2aRR"
 			}
+		},
+		"./src/reddit/components/ScheduledPost/SchedulePicker/WeekDaysCheckboxes/index.tsx": function(e, t, n) {
+			"use strict";
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				a = n("./src/reddit/controls/CheckboxInput/index.tsx"),
+				r = n("./src/reddit/models/ScheduledPost/index.ts"),
+				c = n("./src/reddit/components/ScheduledPost/SchedulePicker/WeekDaysCheckboxes/index.m.less"),
+				i = n.n(c);
+			const {
+				fbt: l
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			class d extends o.a.PureComponent {
+				constructor() {
+					super(...arguments), this.dayOfWeekValues = Object.keys(r.c).map(e => parseInt(e)).filter(e => !isNaN(e)), this.getCheckboxes = () => {
+						const e = new Date;
+						return this.dayOfWeekValues.map(t => {
+							const n = Object(r.i)(t) - e.getDay();
+							e.setDate(e.getDate() + n);
+							const s = e.toLocaleDateString(void 0, {
+								weekday: "short"
+							});
+							return o.a.createElement(a.a, {
+								key: t,
+								name: s,
+								value: this.props.selectedWeekDays.findIndex(e => e === t) > -1,
+								onChange: e => {
+									const n = e ? [...this.props.selectedWeekDays, t] : [...this.props.selectedWeekDays].filter(e => e !== t);
+									this.props.onChange(n)
+								},
+								className: i.a.checkbox
+							}, s)
+						})
+					}
+				}
+				render() {
+					const e = this.getCheckboxes();
+					return o.a.createElement("div", null, o.a.createElement("div", {
+						className: i.a.textRow
+					}, l._("Repeat on", null, {
+						hk: "4sJwhe"
+					})), o.a.createElement("div", {
+						className: i.a.container
+					}, e))
+				}
+			}
+			t.a = d
 		},
 		"./src/reddit/components/ScheduledPost/SchedulePicker/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -671,321 +920,115 @@
 				r = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
 				c = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
 				i = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.tsx"),
-				l = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/components/TrackingHelper/index.tsx")),
-				d = n("./src/reddit/controls/DropdownSelector/index.tsx"),
-				u = n("./src/reddit/helpers/trackers/scheduledPosts.ts"),
-				m = n("./src/reddit/models/ScheduledPost/index.ts"),
-				h = n("./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.m.less"),
-				p = n.n(h);
+				l = n("./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.tsx"),
+				d = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.tsx"),
+				u = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/index.tsx"),
+				m = n("./src/reddit/components/ScheduledPost/SchedulePicker/WeekDaysCheckboxes/index.tsx"),
+				h = n("./src/reddit/controls/NumberInput/index.tsx"),
+				p = n("./src/reddit/helpers/scheduledPosts/index.ts"),
+				b = n("./src/reddit/models/ScheduledPost/index.ts"),
+				y = n("./src/reddit/components/ScheduledPost/SchedulePicker/index.m.less"),
+				f = n.n(y);
 			const {
-				fbt: b
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = () => ({
-				[m.d.Hourly]: b._("Hours", null, {
-					hk: "1kIvcA"
-				}),
-				[m.d.Daily]: b._("Days", null, {
-					hk: "13WSoO"
-				}),
-				[m.d.Weekly]: b._("Weeks", null, {
-					hk: "TN20v"
-				}),
-				[m.d.Monthly]: b._("Months", null, {
-					hk: "3FZ90C"
-				})
-			});
-			class f extends o.a.PureComponent {
-				componentDidMount() {
-					this.props.sendEvent(Object(u.A)())
-				}
-				render() {
-					const {
-						selectedFrequency: e,
-						onSelect: t
-					} = this.props, n = y(), s = Object.keys(n).map(e => ({
-						displayText: n[e],
-						value: e
-					}));
-					return o.a.createElement(d.b, {
-						displayText: n[e],
-						options: s,
-						onSelect: e => t(e.value),
-						className: p.a.dropdownSelector
-					})
-				}
-			}
-			var C = Object(l.c)(f),
-				g = n("./src/lib/classNames/index.ts"),
-				x = n("./src/reddit/helpers/ordinal/index.ts"),
-				D = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.m.less"),
-				S = n.n(D);
-			const {
-				fbt: O
+				fbt: x
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var k = e => {
-					const {
-						selectedFrequencyOption: t,
-						submitDate: n,
-						onSelect: s
-					} = e, a = (e => {
-						const t = e.toLocaleDateString([], {
-								weekday: "long"
-							}),
-							n = e.getDate();
-						return {
-							[m.d.Hourly]: O._("Hourly", null, {
-								hk: "3w46VZ"
-							}),
-							[m.d.Daily]: O._("Daily", null, {
-								hk: "3z9Mtx"
-							}),
-							[m.d.Weekly]: O._("Weekly on {day of the week}", [O._param("day of the week", t)], {
-								hk: "4cJaZJ"
-							}),
-							[m.d.Monthly]: O._("Monthly on day {day of the month}", [O._param("day of the month", Object(x.a)(n))], {
-								hk: "3H4TV9"
-							}),
-							[m.b]: O._("Custom...", null, {
-								hk: "3GTSQL"
-							})
-						}
-					})(n), r = e => null === e ? O._("Does not repeat", null, {
-						hk: "1EaN4C"
-					}) : a[e], c = [null, m.d.Hourly, m.d.Daily, m.d.Weekly, m.d.Monthly, m.b].map(e => ({
-						value: e,
-						displayText: r(e)
-					}));
-					return o.a.createElement(d.b, {
-						displayText: r(t),
-						options: c,
-						onSelect: e => s(e.value),
-						className: Object(g.a)(e.className, S.a.dropdownSelector)
-					})
-				},
-				P = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/DaySelector/index.m.less"),
-				v = n.n(P);
-			var I = e => o.a.createElement("div", {
-					className: Object(g.a)(v.a.daySelector, {
-						[v.a.selected]: e.isSelected
-					}),
-					onClick: () => e.onClick(!e.isSelected)
-				}, e.day),
-				j = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/index.m.less"),
-				_ = n.n(j);
-			const {
-				fbt: E
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = 31;
-			var M;
-			! function(e) {
-				e.Default = "default", e.Custom = "custom"
-			}(M || (M = {}));
-			const F = e => ({
-				[M.Default]: E._("Monthly on {submit day} day", [E._param("submit day", Object(x.a)(e))], {
-					hk: "nXxbI"
-				}),
-				[M.Custom]: E._("Monthly on days...", null, {
-					hk: "1l9xD9"
-				})
-			});
-			class T extends o.a.PureComponent {
-				constructor(e) {
-					super(e), this.onDropdownChange = e => {
-						const t = e.value;
-						switch (t) {
-							case M.Default:
-								this.props.onChange([this.props.submitDay]), this.setState({
-									selectedOption: t
-								});
-								break;
-							case M.Custom:
-								this.setState({
-									selectedOption: t
-								})
-						}
-					}, this.getDaySelector = e => {
-						return o.a.createElement(I, {
-							key: e,
-							day: e,
-							isSelected: -1 !== this.props.selectedMonthDays.indexOf(e),
-							onClick: t => {
-								const n = t ? [...this.props.selectedMonthDays, e] : [...this.props.selectedMonthDays].filter(t => t !== e);
-								this.props.onChange(n)
-							}
-						})
-					}, this.getDaySelectors = () => [...Array(N).keys()].map(e => this.getDaySelector(e + 1));
-					const t = e.selectedMonthDays.some(t => t !== e.submitDay) ? M.Custom : M.Default;
-					this.state = {
-						selectedOption: t
-					}
-				}
-				render() {
-					const {
-						selectedOption: e
-					} = this.state, t = F(this.props.submitDay), n = Object.keys(t).map(e => ({
-						displayText: t[e],
-						value: e
-					}));
-					return o.a.createElement("div", null, o.a.createElement("div", {
-						className: _.a.textRow
-					}, E._("Repeat on", null, {
-						hk: "2JtbIy"
-					})), o.a.createElement(d.b, {
-						displayText: t[e],
-						options: n,
-						onSelect: this.onDropdownChange,
-						className: _.a.dropdownSelector
-					}), e === M.Custom && o.a.createElement("div", {
-						className: _.a.container
-					}, o.a.createElement("div", {
-						className: _.a.daySelectorsContainer
-					}, this.getDaySelectors()), o.a.createElement("div", {
-						className: _.a.notes
-					}, E._("February, April, June, September, & November do not have 31 days. The same for 29 and 30 days in February.", null, {
-						hk: "fKUkL"
-					}), o.a.createElement("br", null), o.a.createElement("br", null), E._("Your post will not be submitted in these months.", null, {
-						hk: "4mwvnt"
-					}))))
-				}
-			}
-			var w = T,
-				z = n("./src/reddit/controls/CheckboxInput/index.tsx"),
-				q = n("./src/reddit/components/ScheduledPost/SchedulePicker/WeekDaysCheckboxes/index.m.less"),
-				R = n.n(q);
-			const {
-				fbt: W
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class L extends o.a.PureComponent {
-				constructor() {
-					super(...arguments), this.dayOfWeekValues = Object.keys(m.c).map(e => parseInt(e)).filter(e => !isNaN(e)), this.getCheckboxes = () => {
-						const e = new Date;
-						return this.dayOfWeekValues.map(t => {
-							const n = Object(m.i)(t) - e.getDay();
-							e.setDate(e.getDate() + n);
-							const s = e.toLocaleDateString(void 0, {
-								weekday: "short"
-							});
-							return o.a.createElement(z.a, {
-								key: t,
-								name: s,
-								value: this.props.selectedWeekDays.findIndex(e => e === t) > -1,
-								onChange: e => {
-									const n = e ? [...this.props.selectedWeekDays, t] : [...this.props.selectedWeekDays].filter(e => e !== t);
-									this.props.onChange(n)
-								},
-								className: R.a.checkbox
-							}, s)
-						})
-					}
-				}
-				render() {
-					const e = this.getCheckboxes();
-					return o.a.createElement("div", null, o.a.createElement("div", {
-						className: R.a.textRow
-					}, W._("Repeat on", null, {
-						hk: "4sJwhe"
-					})), o.a.createElement("div", {
-						className: R.a.container
-					}, e))
-				}
-			}
-			var B = L,
-				H = n("./src/reddit/controls/NumberInput/index.tsx"),
-				A = n("./src/reddit/helpers/scheduledPosts/index.ts"),
-				J = n("./src/reddit/components/ScheduledPost/SchedulePicker/index.m.less"),
-				K = n.n(J);
-			const {
-				fbt: U
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class Y extends o.a.Component {
+			class C extends o.a.Component {
 				render() {
 					const {
 						frequencyOption: e,
 						maxDate: t,
 						onCustomFrequencyChange: n,
 						onCustomIntervalChange: s,
-						onCustomMonthDaysChange: l,
-						onCustomWeekDaysChange: d,
-						onFrequencyOptionChange: u,
-						onSubmitDateChange: h,
-						onSubmitTimeChange: p,
-						onTimezoneChange: b,
-						recurrenceInfo: y,
-						submitDate: f,
-						submitMonthDay: g,
-						submitTime: x,
-						timezoneName: D
-					} = this.props, S = y && e === m.b, O = S && y.frequency === m.d.Weekly, P = S && y.frequency === m.d.Monthly;
+						onCustomMonthDaysChange: y,
+						onCustomWeekDaysChange: C,
+						onFrequencyOptionChange: g,
+						onSubmitDateChange: S,
+						onSubmitTimeChange: D,
+						onTimezoneChange: k,
+						recurrenceInfo: P,
+						submitDate: O,
+						submitMonthDay: v,
+						submitTime: I,
+						timezoneName: j
+					} = this.props, _ = P && e === b.b, N = _ && P.frequency === b.d.Weekly, E = _ && P.frequency === b.d.Monthly;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(r.a, {
 						max: t,
-						onChange: h,
-						value: f
+						onChange: S,
+						value: O
 					}), o.a.createElement(c.a, {
-						onChange: p,
-						value: x,
-						className: K.a.timeInput
+						onChange: D,
+						value: I,
+						className: f.a.timeInput
 					}), o.a.createElement("label", {
-						className: K.a.timezoneLabel
-					}, U._("Time zone:", null, {
+						className: f.a.timezoneLabel
+					}, x._("Time zone:", null, {
 						hk: "6skzv"
 					}), o.a.createElement(i.a, {
-						selectedTimezoneName: D,
-						onChange: b,
-						className: K.a.timezoneSelector
-					})), o.a.createElement(k, {
-						className: K.a.frequencyOptionSelector,
+						selectedTimezoneName: j,
+						onChange: k,
+						className: f.a.timezoneSelector
+					})), o.a.createElement(d.a, {
+						className: f.a.frequencyOptionSelector,
 						selectedFrequencyOption: e,
-						submitDate: Object(a.f)(Object(A.a)(f, this.props.submitTime)),
-						onSelect: u
-					}), S && o.a.createElement("div", null, o.a.createElement("hr", {
-						className: K.a.customControlsHr
+						submitDate: Object(a.f)(Object(p.a)(O, this.props.submitTime)),
+						onSelect: g
+					}), _ && o.a.createElement("div", null, o.a.createElement("hr", {
+						className: f.a.customControlsHr
 					}), o.a.createElement("div", {
-						className: K.a.marginBottom24
-					}, U._("Repeat every", null, {
+						className: f.a.marginBottom24
+					}, x._("Repeat every", null, {
 						hk: "1tE86M"
-					}), o.a.createElement(H.a, {
+					}), o.a.createElement(h.a, {
 						min: 1,
 						step: 1,
 						onChange: s,
-						value: y.interval,
-						className: K.a.customIntervalInput
-					}), o.a.createElement(C, {
-						selectedFrequency: y.frequency,
+						value: P.interval,
+						className: f.a.customIntervalInput
+					}), o.a.createElement(l.a, {
+						selectedFrequency: P.frequency,
 						onSelect: n
-					})), O && o.a.createElement(B, {
-						selectedWeekDays: y.byWeekDays.map(m.j),
-						onChange: d
-					}), P && o.a.createElement(w, {
-						submitDay: g,
-						selectedMonthDays: y.byMonthDays,
-						onChange: l
+					})), N && o.a.createElement(m.a, {
+						selectedWeekDays: P.byWeekDays.map(b.j),
+						onChange: C
+					}), E && o.a.createElement(u.a, {
+						submitDay: v,
+						selectedMonthDays: P.byMonthDays,
+						onChange: y
 					})))
 				}
 			}
-			t.a = Y
+			t.a = C
 		},
 		"./src/reddit/components/ScheduledPost/SchedulePicker/withSchedulePicker.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "i", (function() {
-				return m
-			})), n.d(t, "j", (function() {
-				return h
 			})), n.d(t, "k", (function() {
+				return m
+			})), n.d(t, "l", (function() {
+				return h
+			})), n.d(t, "n", (function() {
 				return p
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return b
-			})), n.d(t, "d", (function() {
-				return y
 			})), n.d(t, "e", (function() {
+				return y
+			})), n.d(t, "f", (function() {
 				return f
+			})), n.d(t, "h", (function() {
+				return x
 			})), n.d(t, "g", (function() {
 				return C
-			})), n.d(t, "f", (function() {
-				return g
 			})), n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "c", (function() {
+				return g
+			})), n.d(t, "j", (function() {
+				return S
+			})), n.d(t, "m", (function() {
 				return D
+			})), n.d(t, "d", (function() {
+				return k
+			})), n.d(t, "c", (function() {
+				return P
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/constants/index.ts"),
@@ -1090,21 +1133,21 @@
 						})
 					})
 				},
-				C = e => t => {
+				x = e => t => {
 					e.state.recurrenceInfo && e.setState({
 						recurrenceInfo: Object.assign(Object.assign({}, e.state.recurrenceInfo), {
 							byWeekDays: t.map(i.h)
 						})
 					})
 				},
-				g = e => t => {
+				C = e => t => {
 					e.state.recurrenceInfo && e.setState({
 						recurrenceInfo: Object.assign(Object.assign({}, e.state.recurrenceInfo), {
 							byMonthDays: t
 						})
 					})
 				},
-				x = e => () => {
+				g = e => () => {
 					const {
 						submitDate: t,
 						submitTime: n
@@ -1123,7 +1166,22 @@
 					}
 					return null
 				},
-				D = e => {
+				S = e => t => {
+					e.setState({
+						stickyPosition: t
+					})
+				},
+				D = e => t => {
+					e.setState({
+						suggestedSort: t
+					})
+				},
+				k = e => t => {
+					e.setState({
+						isContestMode: t
+					})
+				},
+				P = e => {
 					const t = e.schedule || (() => {
 							const e = new Date;
 							return e.setMinutes(60), {
@@ -1135,15 +1193,19 @@
 						})(),
 						[n, s] = Object(r.i)(t.submitDate),
 						o = Object(a.f)(t.submitDate),
-						c = o.getDate();
+						c = o.getDate(),
+						l = Object(i.p)(o.getDay());
 					return {
+						isContestMode: e.isContestMode || !1,
 						submitDate: n,
-						submitWeekDay: Object(i.p)(o.getDay()),
+						submitWeekDay: l,
 						submitMonthDay: c,
 						submitTime: s,
 						timezoneName: t.timezoneName,
 						frequencyOption: t.frequencyOption,
-						recurrenceInfo: t.recurrenceInfo
+						recurrenceInfo: t.recurrenceInfo,
+						stickyPosition: e.stickyPosition || null,
+						suggestedSort: e.suggestedSort || null
 					}
 				}
 		},
@@ -1254,4 +1316,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-RecurringPostList-EditModal.6b69434578f1c278c236.js.map
+//# sourceMappingURL=reddit-components-RecurringPostList-EditModal.0c4d22d7a2c355171ae5.js.map

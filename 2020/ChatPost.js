@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.595ce4012184f1ac3ad2.js
-// Retrieved at 8/18/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.bb82b0e12bf29e22c76d.js
+// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1273,8 +1273,8 @@
 						onSpamClick: () => e(Object(C.cb)(s.id, !0)),
 						onRemoveClick: () => e(Object(C.cb)(s.id, !1)),
 						deleteComment: () => o && e(Object(C.db)(s.id, s.postId)),
-						onDeleteClick: () => e(Object(q.m)(Qe(s.id))),
-						toggleDeleteCommentModal: () => e(Object(q.m)(Qe(s.id)))
+						onDeleteClick: () => e(Object(q.l)(Qe(s.id))),
+						toggleDeleteCommentModal: () => e(Object(q.l)(Qe(s.id)))
 					}
 				})(Object(pe.c)(e => {
 					const {
@@ -2740,4 +2740,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.595ce4012184f1ac3ad2.js.map
+//# sourceMappingURL=ChatPost.bb82b0e12bf29e22c76d.js.map
