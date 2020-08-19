@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.6efa29befea437fc99ec.js
-// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.01bc62fac366f542d0e0.js
+// Retrieved at 8/19/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -2247,7 +2247,7 @@
 						scheduledPostId: t,
 						subredditId: e
 					});
-					r && (await s(Object(o.b)(Object(h.c)(r.subreddit.name))), s((Object(p.o)(r) ? x : f)(r)))
+					r && (await s(Object(o.b)(Object(h.c)(r.subreddit.name, r.collectionId))), s((Object(p.o)(r) ? x : f)(r)))
 				}, E = (e, t) => {
 					Object(p.o)(t) ? e(Object(i.d)({
 						scheduledPost: t
@@ -25299,7 +25299,7 @@
 						subredditId: o
 					} = e;
 					return Object.assign(Object.assign(Object.assign({
-						collectionId: n.collectionId,
+						collectionId: n.collectionId || "",
 						discussionType: n.isChatPost ? d.b.Chat : d.b.Comment,
 						isContestMode: n.isContestMode,
 						isSpoiler: n.isSpoiler,
@@ -30600,4 +30600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.6efa29befea437fc99ec.js.map
+//# sourceMappingURL=ModerationPages.01bc62fac366f542d0e0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b9e11205978f0fd37b59.js
-// Retrieved at 8/19/2020, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7b55fe0c2e1b9ebe6c7c.js
+// Retrieved at 8/19/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "3ca0df1-production"
+					SENTRY_RELEASE_VERSION: "0ba704b-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -2589,7 +2589,7 @@
 						scheduledPostId: t,
 						subredditId: e
 					});
-					i && (await n(Object(o.b)(Object(b.c)(i.subreddit.name))), n((Object(m.o)(i) ? x : g)(i)))
+					i && (await n(Object(o.b)(Object(b.c)(i.subreddit.name, i.collectionId))), n((Object(m.o)(i) ? x : g)(i)))
 				}, v = (e, t) => {
 					Object(m.o)(t) ? e(Object(a.d)({
 						scheduledPost: t
@@ -24248,7 +24248,7 @@
 						subredditId: o
 					} = e;
 					return Object.assign(Object.assign(Object.assign({
-						collectionId: s.collectionId,
+						collectionId: s.collectionId || "",
 						discussionType: s.isChatPost ? c.b.Chat : c.b.Comment,
 						isContestMode: s.isContestMode,
 						isSpoiler: s.isSpoiler,
@@ -33677,4 +33677,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.b9e11205978f0fd37b59.js.map
+//# sourceMappingURL=PostCreation.7b55fe0c2e1b9ebe6c7c.js.map
