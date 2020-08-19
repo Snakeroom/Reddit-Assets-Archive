@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.4464ef32793eec46c532.js
-// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.a52d1c22d454249cecba.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -4298,7 +4298,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(at.W)(xt, !0, this.props.subredditId), this.props.sendEvent(Object(ot.d)("close"))
+						}), Object(at.V)(xt, !0, this.props.subredditId), this.props.sendEvent(Object(ot.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(ot.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -6407,9 +6407,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const a = e => n.Y.Enabled === Object(r.c)(e, {
+			const a = e => n.U.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: i.H,
-				experimentName: n.X
+				experimentName: n.T
 			})
 		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, s) {
@@ -7217,4 +7217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.4464ef32793eec46c532.js.map
+//# sourceMappingURL=SubredditWiki.a52d1c22d454249cecba.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.e87994f402348df90cb4.js
-// Retrieved at 8/19/2020, 3:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.fd1ac3e48fa38b9f6491.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -18,16 +18,16 @@
 			const h = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Gb
+					experimentName: u.Cb
 				});
-				return Object(u.Fc)(t) ? void 0 : t
+				return Object(u.Bc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Hb
+					experimentName: u.Db
 				});
-				return Object(u.Fc)(t) ? void 0 : t
-			}, (e, t) => e === u.Ib.Enabled && t === u.Ib.Enabled);
+				return Object(u.Bc)(t) ? void 0 : t
+			}, (e, t) => e === u.Eb.Enabled && t === u.Eb.Enabled);
 			var p = s("./src/config.ts");
 			var g = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "a327540-production"
+					SENTRY_RELEASE_VERSION: "dff1ced-production"
 				}),
 				j = {
 					anonymousUserId: "t2_anonymous",
@@ -100,8 +100,8 @@
 					localStorageViewerUserIdKey: f,
 					playerName: E,
 					playerVersion: I,
-					respectDoNotTrack: S,
-					saltLength: C,
+					respectDoNotTrack: C,
+					saltLength: S,
 					saltTimeToLive: L,
 					viewerUserIdLength: T
 				} = Object.assign(Object.assign({}, j), t);
@@ -248,7 +248,7 @@
 						}
 					}
 				}
-				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = E, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = S, M.SALT_LENGTH = C, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
+				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = E, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = C, M.SALT_LENGTH = S, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
 				const N = Object(i.forwardRef)((e, t) => a.a.createElement(M, v({}, e, {
 						forwardedRef: t
 					}))),
@@ -452,7 +452,7 @@
 				className: y.a.urlText
 			}, Object(g.e)(e.outboundUrl)), a.a.createElement(u.a, {
 				className: y.a.linkIcon
-			})))), S = e => a.a.createElement("div", {
+			})))), C = e => a.a.createElement("div", {
 				className: y.a.slideIndicator,
 				onClick: e.toggleTileLayout ? t => {
 					t.preventDefault(), t.stopPropagation(), e.toggleTileLayout()
@@ -470,20 +470,20 @@
 						isTileLayout: E,
 						mediaMetadata: v = {},
 						postId: O,
-						shouldShowTileLayoutOption: C,
+						shouldShowTileLayoutOption: S,
 						isSponsored: L
 					} = e,
 					T = Object(n.d)(e => Object(x.a)(e, O)),
 					M = T > 0,
 					N = T < c.length - 1,
 					_ = Object(l.a)(),
-					R = Object(i.useCallback)(e => {
+					D = Object(i.useCallback)(e => {
 						t(Object(h.f)({
 							postId: O,
 							index: e
 						}))
 					}, [t, O]),
-					D = Object(i.useCallback)(() => {
+					R = Object(i.useCallback)(() => {
 						t(Object(h.i)({
 							postId: O,
 							isTileLayout: !E
@@ -492,13 +492,13 @@
 					P = Object(i.useCallback)(() => {
 						if (!N) return;
 						const e = T + 1;
-						R(e), _(r.b(O, e)), _(r.d(O, e + 1))
-					}, [N, T, R, _, O]),
+						D(e), _(r.b(O, e)), _(r.d(O, e + 1))
+					}, [N, T, D, _, O]),
 					A = Object(i.useCallback)(() => {
 						if (!M) return;
 						const e = T + 1;
-						R(T - 1), _(r.a(O, e)), _(r.d(O, e - 1))
-					}, [M, T, R, _, O]),
+						D(T - 1), _(r.a(O, e)), _(r.d(O, e - 1))
+					}, [M, T, D, _, O]),
 					V = Object(i.useCallback)(() => {
 						const e = c[T] && c[T].outboundUrl,
 							t = T + 1;
@@ -546,7 +546,7 @@
 						},
 						className: y.a.tileImage,
 						onClick: e.shouldBlur ? void 0 : e => {
-							e.preventDefault(), e.stopPropagation(), D(), R(s)
+							e.preventDefault(), e.stopPropagation(), R(), D(s)
 						},
 						key: i
 					})
@@ -602,10 +602,10 @@
 					title: "Next",
 					iconClassName: y.a.nextIcon,
 					className: y.a.nextButton
-				}))), c.length > 1 ? a.a.createElement(S, {
+				}))), c.length > 1 ? a.a.createElement(C, {
 					currentSlide: T + 1,
 					totalSlides: c.length,
-					toggleTileLayout: C && D || void 0
+					toggleTileLayout: S && R || void 0
 				}) : ""), !W && !F || E || L ? !!s && !E && !L && a.a.createElement("div", {
 					className: y.a.emptyCaptionBlock,
 					style: {
@@ -898,15 +898,15 @@
 				w = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				I = s("./src/reddit/components/Media/constants.ts"),
 				j = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
-				S = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
-				C = s("./src/reddit/components/Media/ImageBox/index.tsx"),
+				C = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
+				S = s("./src/reddit/components/Media/ImageBox/index.tsx"),
 				L = s("./src/reddit/components/Media/MediaContainer/index.tsx"),
 				T = s("./src/reddit/components/Media/RichTextContainer/index.tsx"),
 				M = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
 				N = s("./src/reddit/components/Media/VideoBox/index.tsx"),
 				_ = s("./src/reddit/components/PlayButton/index.tsx"),
-				R = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
-				D = s("./src/reddit/components/RichTextJson/index.tsx"),
+				D = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
+				R = s("./src/reddit/components/RichTextJson/index.tsx"),
 				P = s("./src/reddit/constants/componentSizes.ts"),
 				A = s("./src/reddit/constants/screenWidths.ts"),
 				V = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1205,7 +1205,7 @@
 						e && (o = e.url, d = e.width, r = e.height)
 					} else if (a && a.media && (!e.isListing || e.isExpando) && (a.media.type === G.o.IMAGE || a.media.type === G.o.GIFVIDEO)) {
 						let e;
-						(e = Object(G.J)(a.media.height, a.media.width) && Object(C.b)(a.media.height) ? Q.c(a.media.height, a.media.width, a.media.resolutions) : Q.a(a.media.resolutions)) && (o = e.url, d = e.width, r = e.height)
+						(e = Object(G.J)(a.media.height, a.media.width) && Object(S.b)(a.media.height) ? Q.c(a.media.height, a.media.width, a.media.resolutions) : Q.a(a.media.resolutions)) && (o = e.url, d = e.width, r = e.height)
 					}
 					if (e.isExpando)
 						if (d > t.viewportWidth) {
@@ -1295,7 +1295,7 @@
 						blurSrc: Y
 					}), l.a.createElement(re, {
 						isVisible: x
-					}, l.a.createElement(C.a, ee({}, q, {
+					}, l.a.createElement(S.a, ee({}, q, {
 						altText: this.getAltText(),
 						className: this.props.imageBoxClassName,
 						contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -1327,7 +1327,7 @@
 								isTitleOnly: u,
 								postId: m.id,
 								showFull: p
-							}, l.a.createElement(D.a, {
+							}, l.a.createElement(R.a, {
 								altText: this.getAltText(),
 								flairStyleTemplate: s,
 								content: m.isMeta ? Object(U.a)(i, m.id) : i,
@@ -1354,7 +1354,7 @@
 									"data-click-id": "text",
 									isCommentsPage: a,
 									showFull: p
-								}, l.a.createElement(R.a, {
+								}, l.a.createElement(D.a, {
 									flairStyleTemplate: s,
 									html: m.isMeta ? Object(H.a)(m.media.content, m.id, $.a.hiddenLink) : m.media.content
 								}))
@@ -1365,7 +1365,7 @@
 								alwaysWrapMedia: !0
 							}), l.a.createElement(re, {
 								isVisible: x
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(C.a, ee({}, q, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, ee({}, q, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1435,7 +1435,7 @@
 								alwaysWrapMedia: !0
 							}), l.a.createElement(re, {
 								isVisible: x
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(C.a, ee({}, q, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, ee({}, q, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1496,7 +1496,7 @@
 								isExpando: !!n
 							}), l.a.createElement(re, {
 								isVisible: x
-							}, l.a.createElement(C.a, ee({}, q, {
+							}, l.a.createElement(S.a, ee({}, q, {
 								altText: this.getAltText(),
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -1526,7 +1526,7 @@
 								isGalleryTileLayout: o
 							}), l.a.createElement(re, {
 								isVisible: x
-							}, l.a.createElement(S.a, {
+							}, l.a.createElement(C.a, {
 								postId: m.id,
 								galleryItems: m.media.gallery ? m.media.gallery.items : [],
 								mediaMetadata: m.media.mediaMetadata || {},
@@ -1775,4 +1775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.e87994f402348df90cb4.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.fd1ac3e48fa38b9f6491.js.map

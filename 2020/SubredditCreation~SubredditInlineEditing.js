@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.430214592ffe5ddb8c19.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation~SubredditInlineEditing.a5adfb5fdc59696ed531.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation~SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/PrimaryTopic/index.m.less": function(e, t, s) {
@@ -62,10 +62,10 @@
 			}
 			var g = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.T)()
+					e(Object(c.i)()), Object(u.S)()
 				},
 				onViewTooltip: () => {
-					Object(u.fb)()
+					Object(u.eb)()
 				}
 			}))(Object(d.c)(y));
 			const b = "editable-primary-topic-idcard";
@@ -1012,4 +1012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.430214592ffe5ddb8c19.js.map
+//# sourceMappingURL=SubredditCreation~SubredditInlineEditing.a5adfb5fdc59696ed531.js.map

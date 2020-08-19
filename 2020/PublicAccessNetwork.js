@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.05f9b7cdff5488c27a60.js
-// Retrieved at 8/19/2020, 3:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.681f2a69fda71a449af2.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -285,16 +285,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Gb
+					experimentName: m.Cb
 				});
-				return Object(m.Fc)(t) ? void 0 : t
+				return Object(m.Bc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Hb
+					experimentName: m.Db
 				});
-				return Object(m.Fc)(t) ? void 0 : t
-			}, (e, t) => e === m.Ib.Enabled && t === m.Ib.Enabled);
+				return Object(m.Bc)(t) ? void 0 : t
+			}, (e, t) => e === m.Eb.Enabled && t === m.Eb.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "a327540-production"
+					SENTRY_RELEASE_VERSION: "dff1ced-production"
 				}),
 				O = {
 					anonymousUserId: "t2_anonymous",
@@ -604,9 +604,9 @@
 			})), s.d(t, "editRemovalReasonFailed", (function() {
 				return F
 			})), s.d(t, "editRemovalReason", (function() {
-				return H
-			})), s.d(t, "deleteRemovalReasonPending", (function() {
 				return U
+			})), s.d(t, "deleteRemovalReasonPending", (function() {
+				return H
 			})), s.d(t, "deleteRemovalReasonSuccess", (function() {
 				return W
 			})), s.d(t, "deleteRemovalReasonFailed", (function() {
@@ -721,7 +721,7 @@
 							})
 						}))
 					} else s(A(d.error))
-				}, V = Object(o.a)(I.h), B = Object(o.a)(I.i), F = Object(o.a)(I.g), H = (e, t) => async (s, o, r) => {
+				}, V = Object(o.a)(I.h), B = Object(o.a)(I.i), F = Object(o.a)(I.g), U = (e, t) => async (s, o, r) => {
 					let {
 						apiContext: i
 					} = r;
@@ -744,12 +744,12 @@
 							hk: "28ScuL"
 						})
 					}))) : s(F(d.error))
-				}, U = Object(o.a)(I.e), W = Object(o.a)(I.f), K = Object(o.a)(I.d), G = (e, t) => async (s, o, r) => {
+				}, H = Object(o.a)(I.e), W = Object(o.a)(I.f), K = Object(o.a)(I.d), G = (e, t) => async (s, o, r) => {
 					let {
 						apiContext: i
 					} = r;
 					const c = o().subreddits.models[e].name;
-					s(U());
+					s(H());
 					const d = await ((e, t, s) => Object(h.a)(Object(b.a)(e, [v.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons/").concat(s),
 						method: n.db.DELETE
@@ -1809,7 +1809,7 @@
 			})), s.d(t, "MessageInput", (function() {
 				return B
 			})), s.d(t, "FormOptionsContainer", (function() {
-				return U
+				return H
 			})), s.d(t, "ModalFooter", (function() {
 				return W
 			})), s.d(t, "ButtonRow", (function() {
@@ -1875,7 +1875,7 @@
 						subredditId: s
 					}).name
 				}
-			}), P = Object(o.b)(T, I), N = c.a.wrapped(l.a, "CharacterCountdown", O.a), j = c.a.div("EmptyState", O.a), M = c.a.wrapped(m.n, "ModNoteDescription", O.a), L = c.a.wrapped(u.f, "PrimaryButton", O.a), A = c.a.wrapped(b.a, "RadioOption", O.a), D = c.a.span("BoldText", O.a), V = c.a.wrapped(m.s, "ModNoteInput", O.a), B = c.a.wrapped(m.s, "MessageInput", O.a), F = c.a.wrapped(g.a, "Info", O.a), H = c.a.div("SmallInfoText", O.a), U = c.a.div("FormOptionsContainer", O.a), W = c.a.wrapped(m.f, "ModalFooter", O.a), K = c.a.div("FooterRow", O.a), G = c.a.wrapped(K, "ButtonRow", O.a);
+			}), P = Object(o.b)(T, I), N = c.a.wrapped(l.a, "CharacterCountdown", O.a), j = c.a.div("EmptyState", O.a), M = c.a.wrapped(m.n, "ModNoteDescription", O.a), L = c.a.wrapped(u.f, "PrimaryButton", O.a), A = c.a.wrapped(b.a, "RadioOption", O.a), D = c.a.span("BoldText", O.a), V = c.a.wrapped(m.s, "ModNoteInput", O.a), B = c.a.wrapped(m.s, "MessageInput", O.a), F = c.a.wrapped(g.a, "Info", O.a), U = c.a.div("SmallInfoText", O.a), H = c.a.div("FormOptionsContainer", O.a), W = c.a.wrapped(m.f, "ModalFooter", O.a), K = c.a.div("FooterRow", O.a), G = c.a.wrapped(K, "ButtonRow", O.a);
 			class X extends n.a.Component {
 				constructor(e) {
 					super(e), this.onSelectRemovalType = e => {
@@ -1975,7 +1975,7 @@
 						"data-redditstyle": !0
 					}, y._("Add a removal reason", null, {
 						hk: "3MHM7e"
-					})))), t.selectedReason && n.a.createElement(U, null, n.a.createElement(m.g, null, n.a.createElement(h.a, {
+					})))), t.selectedReason && n.a.createElement(H, null, n.a.createElement(m.g, null, n.a.createElement(h.a, {
 						name: "REMOVAL_REASON_INPUT",
 						onChange: this.onSelectRemovalType,
 						value: t.removalType
@@ -1985,7 +1985,7 @@
 					}), n.a.createElement(N, {
 						maxChars: f.a,
 						text: t.message.trim()
-					}), n.a.createElement(H, null, t.removalType !== f.f.Public && n.a.createElement(n.a.Fragment, null, n.a.createElement(F, null), y._("A link to the removed content will be appended to your message", null, {
+					}), n.a.createElement(U, null, t.removalType !== f.f.Public && n.a.createElement(n.a.Fragment, null, n.a.createElement(F, null), y._("A link to the removed content will be appended to your message", null, {
 						hk: "1DbEGF"
 					}))))), n.a.createElement(W, null, n.a.createElement(K, null, n.a.createElement(M, null, y._("Mod note (Only mods will see this note)", null, {
 						hk: "3InAsy"
@@ -2551,8 +2551,8 @@
 			var V = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				B = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
 				F = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
-				H = s("./src/reddit/actions/reportFlow.ts"),
-				U = s("./src/reddit/actions/video.ts"),
+				U = s("./src/reddit/actions/reportFlow.ts"),
+				H = s("./src/reddit/actions/video.ts"),
 				W = s("./src/reddit/components/HlsVideo/index.tsx"),
 				K = s("./src/higherOrderComponents/asModal/index.tsx"),
 				G = s("./src/reddit/actions/post.ts"),
@@ -2735,8 +2735,8 @@
 				Ve = 30,
 				Be = 3 * De,
 				Fe = 5 * De,
-				He = 5,
-				Ue = 5 * De,
+				Ue = 5,
+				He = 5 * De,
 				We = 10,
 				Ke = 5;
 			s("./node_modules/core-js/modules/es6.regexp.split.js");
@@ -2974,8 +2974,8 @@
 			var Nt = It(Pt);
 			const jt = (e, t) => e > t ? Ce.EXTENDED : e < Be ? Ce.CRITICAL : e < Fe ? Ce.LOW : Ce.NORMAL,
 				Mt = e => e / De,
-				Lt = e => At(e) % Ue == 0,
-				At = e => Math.round(e / He) * He;
+				Lt = e => At(e) % He == 0,
+				At = e => Math.round(e / Ue) * Ue;
 			var Dt = s("./src/reddit/components/PublicAccessNetwork/Theater/MeterBar/index.m.less"),
 				Vt = s.n(Dt);
 			const Bt = (() => {
@@ -2988,10 +2988,10 @@
 					for (let t = 0; t < 21; t++) e.push("X".concat(5 * t));
 					return e
 				})(),
-				Ht = ["15Deg", "45Deg", "75Deg"],
-				Ut = e => e[Math.floor(Math.random() * e.length)],
+				Ut = ["15Deg", "45Deg", "75Deg"],
+				Ht = e => e[Math.floor(Math.random() * e.length)],
 				Wt = () => {
-					const e = [Ut(Ft), Ut(Ht), Ut(Bt)].map(e => Vt.a["particle".concat(e)]).join(" ");
+					const e = [Ht(Ft), Ht(Ut), Ht(Bt)].map(e => Vt.a["particle".concat(e)]).join(" ");
 					return "".concat(Vt.a.particle, " ").concat(e, " ").concat(Math.round(Math.random()) ? Vt.a.particleReverse : "")
 				},
 				Kt = 40,
@@ -3118,7 +3118,7 @@
 					if (a > t.estimatedTimeRemaining) {
 						const e = t.estimatedTimeRemaining - t.timer,
 							s = a - t.estimatedTimeRemaining + e;
-						s > He && (n.timer = a, n.timerDiff = s, n.timerPausedAt = a)
+						s > Ue && (n.timer = a, n.timerDiff = s, n.timerPausedAt = a)
 					}
 					a !== t.estimatedTimeRemaining && Math.abs(n.timer - a) > We && (n.timer = a, n.timerDiff = a - t.timer, n.timerPausedAt = null), null !== n.timerPausedAt && n.timerPausedAt - n.timer > Ke && (n.timerDiff = 0, n.timerPausedAt = null);
 					const o = Jt.getPillLabel(e, n),
@@ -3521,7 +3521,7 @@
 						className: As.a.overflowItemIcon
 					})))
 				},
-				Hs = e => {
+				Us = e => {
 					let {
 						onClick: t
 					} = e;
@@ -3532,7 +3532,7 @@
 						hk: "1iD2Wj"
 					})))
 				},
-				Us = e => {
+				Hs = e => {
 					let {
 						onClick: t
 					} = e;
@@ -3911,9 +3911,9 @@
 				} = e;
 				return r.a.createElement(ba, null, r.a.createElement("div", {
 					className: Zs.a.promptButtonSet
-				}, r.a.createElement(Hs, {
+				}, r.a.createElement(Us, {
 					onClick: t
-				}), r.a.createElement(Us, {
+				}), r.a.createElement(Hs, {
 					onClick: s
 				})))
 			}, Ca = e => {
@@ -4434,9 +4434,9 @@
 						className: As.a.prompt
 					}, r.a.createElement("div", {
 						className: As.a.promptButtonSet
-					}, r.a.createElement(Hs, {
+					}, r.a.createElement(Us, {
 						onClick: u
-					}), r.a.createElement(Us, {
+					}), r.a.createElement(Hs, {
 						onClick: this.onCopyLink
 					}))) : null
 				}
@@ -4490,8 +4490,8 @@
 					const a = new Image;
 					a.onload = () => t(), a.onerror = () => s(), a.src = e
 				}).then(() => !0, () => !1);
-			var Ha = s("./src/reddit/components/PublicAccessNetwork/Theater/StaticScreen/index.m.less"),
-				Ua = s.n(Ha);
+			var Ua = s("./src/reddit/components/PublicAccessNetwork/Theater/StaticScreen/index.m.less"),
+				Ha = s.n(Ua);
 			const Wa = Object(d.c)({
 				isIntroInProgress: Ae.b,
 				previewUrl: (e, t) => {
@@ -4532,14 +4532,14 @@
 						previewUrl: s
 					} = this.props, a = e && e.meter && e.estimated_remaining_time < Fe || !s, n = !a && !t && s;
 					return r.a.createElement("div", {
-						className: Ua.a.staticContainer
+						className: Ha.a.staticContainer
 					}, a && r.a.createElement("div", {
-						className: Ua.a.tvNoise,
+						className: Ha.a.tvNoise,
 						"aria-label": w.fbt._("video static", null, {
 							hk: "3FA8fk"
 						})
 					}), n && r.a.createElement("div", {
-						className: Ua.a.previewContainer,
+						className: Ha.a.previewContainer,
 						"aria-label": w.fbt._("preview of video", null, {
 							hk: "4piisq"
 						}),
@@ -4837,7 +4837,7 @@
 					subscribeConfig: () => e(V.a.subscribeConfig(t.related || t.subreddit)),
 					subscribeStreams: () => e(V.a.subscribeStreams(t.related || t.subreddit)),
 					onRecommendedViewerSubredditsSubscribe: () => e(V.a.subscribeRecommendedViewerSubreddits()),
-					onReportModalRequested: (t, s) => e(Object(H.j)(t, s)),
+					onReportModalRequested: (t, s) => e(Object(U.j)(t, s)),
 					onStatsSubscribe: t => e(V.a.subscribeStats(t)),
 					onHeartbeatSubscribe: t => e(V.a.subscribeHeartbeat(t)),
 					receiveHlsStreamEnded: t => e(Object(p.a)(t)),
@@ -4850,7 +4850,7 @@
 					setMuteSettings: t => e(Object(F.b)({
 						isMuted: t
 					})),
-					setMutedInFeed: t => e(U.H(t)),
+					setMutedInFeed: t => e(H.H(t)),
 					setVideoVolume: t => e(k.h(t)),
 					updateVideoTimestamp: (t, s) => e(D({
 						streamId: t,
@@ -5518,10 +5518,10 @@
 			const o = e => {
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.rb
-				}) === a.wb.Enabled
+					experimentName: a.nb
+				}) === a.sb.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.05f9b7cdff5488c27a60.js.map
+//# sourceMappingURL=PublicAccessNetwork.681f2a69fda71a449af2.js.map

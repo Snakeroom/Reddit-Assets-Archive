@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.28cb219211b2f8959ac9.js
-// Retrieved at 8/19/2020, 3:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6efa29befea437fc99ec.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5954,8 +5954,8 @@
 					communityAwardsDisabled: z.b,
 					disableSettingsAvailable: e => Object(se.c)(e, {
 						experimentEligibilitySelector: se.a,
-						experimentName: te.hb
-					}) === te.mb.Enabled,
+						experimentName: te.db
+					}) === te.ib.Enabled,
 					isAddAwardModalOpen: e => Object(j.a)(e) === m.a,
 					isConfirmModalOpen: e => Object(j.a)(e) === m.b
 				}),
@@ -6339,7 +6339,7 @@
 					update: n
 				} = e, o = Object(Z.a)(), d = Object(i.c)(), [c, l] = Object(a.useState)(t.id), [m, u] = Object(a.useState)(!1), [p, b] = Object(a.useState)(!0);
 				return Object(a.useEffect)(() => {
-					b(Object(J.s)("location")), Object(J.Y)("location")
+					b(Object(J.s)("location")), Object(J.X)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(P.a, null, w.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(M.k, {
@@ -7154,10 +7154,10 @@
 			}
 			var v = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(p.T)()
+					e(Object(c.i)()), Object(p.S)()
 				},
 				onViewTooltip: () => {
-					Object(p.fb)()
+					Object(p.eb)()
 				}
 			}))(Object(m.c)(x));
 			const E = "editable-primary-topic-idcard";
@@ -30600,4 +30600,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.28cb219211b2f8959ac9.js.map
+//# sourceMappingURL=ModerationPages.6efa29befea437fc99ec.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c885559147e732059d40.js
-// Retrieved at 8/19/2020, 3:00:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.aa82d972ea25e01108ef.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -677,16 +677,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Gb
+					experimentName: u.Cb
 				});
-				return Object(u.Fc)(t) ? void 0 : t
+				return Object(u.Bc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Hb
+					experimentName: u.Db
 				});
-				return Object(u.Fc)(t) ? void 0 : t
-			}, (e, t) => e === u.Ib.Enabled && t === u.Ib.Enabled);
+				return Object(u.Bc)(t) ? void 0 : t
+			}, (e, t) => e === u.Eb.Enabled && t === u.Eb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "a327540-production"
+					SENTRY_RELEASE_VERSION: "dff1ced-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3841,9 +3841,9 @@
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(k.c)(e, {
 							experimentEligibilitySelector: T.H,
-							experimentName: S.gb
+							experimentName: S.cb
 						});
-						return !(!t || Object(S.Fc)(t))
+						return !(!t || Object(S.Bc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: I.c
@@ -29158,13 +29158,13 @@
 			const dn = [{
 					id: Wt.d,
 					getShowTimesLeft: an.v,
-					setShowTimesLeft: an.bb,
+					setShowTimesLeft: an.ab,
 					tooltipShown: cn.n,
 					tooltipDismissed: cn.m
 				}, {
 					id: Wt.c,
 					getShowTimesLeft: an.u,
-					setShowTimesLeft: an.ab,
+					setShowTimesLeft: an.Z,
 					tooltipShown: cn.f,
 					tooltipDismissed: cn.e
 				}],
@@ -29373,7 +29373,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(an.O)(wn.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(an.N)(wn.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -33677,4 +33677,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.c885559147e732059d40.js.map
+//# sourceMappingURL=PostCreation.aa82d972ea25e01108ef.js.map

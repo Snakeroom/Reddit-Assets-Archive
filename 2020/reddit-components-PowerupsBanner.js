@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.d488a49dad494c348aa7.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PowerupsBanner.720f130c98dad0f885c1.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PowerupsBanner"], {
 		"./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.m.less": function(e, s, t) {
@@ -212,7 +212,7 @@
 					} = e, [E, N] = Object(n.useState)(I.Hidden), j = Object(o.c)(), B = Object(a.a)();
 					Object(d.a)() && !Object(p.f)(l.a.POWERUPS_BANNER, _) && E === I.Hidden && N(I.Select);
 					const v = () => {
-						N(I.Select), Object(p.K)(l.a.POWERUPS_BANNER, !1, _)
+						N(I.Select), Object(p.J)(l.a.POWERUPS_BANNER, !1, _)
 					};
 					return t && E !== I.Hidden && c && 1 !== c.tiersInfo.length ? E === I.Dismissed ? r.a.createElement("div", {
 						className: Object(i.a)(O.a.dismissedContainer, s)
@@ -250,7 +250,7 @@
 					})), r.a.createElement(f.a, {
 						className: O.a.close,
 						onClick: () => {
-							N(I.Dismissed), Object(p.K)(l.a.POWERUPS_BANNER, !0, _)
+							N(I.Dismissed), Object(p.J)(l.a.POWERUPS_BANNER, !0, _)
 						}
 					})) : null
 				});
@@ -258,4 +258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-PowerupsBanner.d488a49dad494c348aa7.js.map
+//# sourceMappingURL=reddit-components-PowerupsBanner.720f130c98dad0f885c1.js.map

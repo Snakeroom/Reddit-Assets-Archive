@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.12643d20c29ae0fc49e4.js
-// Retrieved at 8/18/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.67ddb52b9fc9f874b183.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -931,7 +931,7 @@
 			class y extends a.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(m.K)(l.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(m.J)(l.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(p.b)())
 					}, this.createPost = () => {
@@ -4516,7 +4516,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(it.W)(ft, !0, this.props.subredditId), this.props.sendEvent(Object(ot.d)("close"))
+						}), Object(it.V)(ft, !0, this.props.subredditId), this.props.sendEvent(Object(ot.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(ot.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -7772,9 +7772,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const i = e => s.Y.Enabled === Object(r.c)(e, {
+			const i = e => s.U.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: a.H,
-				experimentName: s.X
+				experimentName: s.T
 			})
 		},
 		"./src/reddit/selectors/experiments/snoovatar.ts": function(e, t, n) {
@@ -7784,11 +7784,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.oc.Enabled === Object(r.c)(e, {
+			const a = e => s.kc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.jc
+				experimentName: s.fc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.12643d20c29ae0fc49e4.js.map
+//# sourceMappingURL=Subreddit.67ddb52b9fc9f874b183.js.map

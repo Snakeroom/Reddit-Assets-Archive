@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.54c518a538d803316dc4.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.d1d362ca60caf9aab516.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2025,7 +2025,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(u.S)(e)
+					Object(u.R)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -2202,7 +2202,7 @@
 					purchaseCatalogRequested: t => e(Object(O.b)(t)),
 					selectAward: t => e(Object(f.a)(t)),
 					setIsAnonymous: t => {
-						e(Object(g.setIsAnonymous)(t)), Object(u.S)(t)
+						e(Object(g.setIsAnonymous)(t)), Object(u.R)(t)
 					},
 					subredditAboutRequested: t => e(Object(j.t)(t)),
 					tagsRequested: t => e(Object(b.k)(t)),
@@ -2633,4 +2633,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.54c518a538d803316dc4.js.map
+//# sourceMappingURL=FramedGild~GildModal.d1d362ca60caf9aab516.js.map

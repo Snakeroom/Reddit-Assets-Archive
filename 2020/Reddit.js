@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.dc45ec68764b06a62351.js
-// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e2a85a6ee798f23fadfd.js
+// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2250,13 +2250,13 @@
 							domain: I.a.cookieDomain
 						});
 						const t = Object(ls.r)(q.a.ALPHA_CONSUMER);
-						t && Object(ls.G)(q.a.ALPHA_CONSUMER), (e || t) && Object(ls.X)(q.a.REDESIGN_MODAL, !0)
+						t && Object(ls.F)(q.a.ALPHA_CONSUMER), (e || t) && Object(ls.W)(q.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
 					} = this.props, s = Object(ls.r)(q.a.REDESIGN_MODAL);
-					!e && s ? t() : e && !s && Object(ls.X)(q.a.REDESIGN_MODAL, !0)
+					!e && s ? t() : e && !s && Object(ls.W)(q.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -2379,7 +2379,7 @@
 						isSSOLinkActionFailedModal: !1,
 						removeGoogleOneTapStyles: !1
 					}, this.closeModal = () => {
-						this.props.closeModal(this.props.path), this.props.path === U.b.Register && Object(X.f)(this.props.frontpageSignupVariant) && vs.a.throttleFeature(gs.T), this.props.sendEvent(ue(this.subscriptions))
+						this.props.closeModal(this.props.path), this.props.path === U.b.Register && Object(X.f)(this.props.frontpageSignupVariant) && vs.a.throttleFeature(gs.P), this.props.sendEvent(ue(this.subscriptions))
 					}, this.updateSubscriptions = e => {
 						this.subscriptions = e
 					}, this.handleSSOLinkActionFail = () => {
@@ -4987,9 +4987,9 @@
 				vo = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				Co = s("./src/reddit/selectors/experiments/trending.ts"),
 				Oo = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const yo = e => Object(zt.E)(e) || gs.xc.Treatment1 === Object(Oo.c)(e, {
+			const yo = e => Object(zt.E)(e) || gs.tc.Treatment1 === Object(Oo.c)(e, {
 				experimentEligibilitySelector: Oo.a,
-				experimentName: gs.uc
+				experimentName: gs.qc
 			});
 			var xo = s("./src/reddit/selectors/searchResults.ts"),
 				Po = s("./src/reddit/selectors/tooltip.ts"),
@@ -5114,7 +5114,7 @@
 					}, this.close = () => {
 						this.props.dropdownIsOpen && this.props.onToggleDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(ls.H)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(ls.G)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -5124,7 +5124,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(ls.db)(Object.assign(Object.assign({}, e), {
+							recentSearches: Object(ls.cb)(Object.assign(Object.assign({}, e), {
 								section: kr.c.recent
 							}), this.props.currentUser.id)
 						})
@@ -6359,7 +6359,7 @@
 				id = s("./src/reddit/helpers/trackers/navigation.ts"),
 				cd = s("./src/reddit/routes/index.ts");
 			var dd = s("./src/reddit/selectors/experiments/googleOneTap.ts"),
-				ld = s("./src/reddit/selectors/experiments/sso.ts"),
+				ld = s("./src/reddit/selectors/sso.ts"),
 				ud = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
@@ -6493,7 +6493,7 @@
 						} = t;
 						return Object(fs.K)(s) && !!Object(zt.l)(e) && !Object(zt.x)(e) && Object(zt.H)(e) && !Object(zt.F)(e)
 					},
-					shouldShowChangeUsernameModals: ld.c,
+					shouldShowChangeUsernameModals: ld.d,
 					unreadNotifications: zt.db
 				}),
 				Od = Object(m.b)(Cd, (e, t) => ({
@@ -10288,7 +10288,7 @@
 					const {
 						trigger_event: s
 					} = e;
-					Object(c.eb)(t), Object(c.I)(s)
+					Object(c.db)(t), Object(c.H)(s)
 				},
 				h = () => d.active_surveys.map(e => e.experiment_name),
 				g = e => e.steps.reduce((e, t) => e + 1 + (t.follow_up_question ? 1 : 0), 0)
@@ -11175,7 +11175,7 @@
 			const Re = 1e3;
 			class Le extends u.a.Component {
 				constructor() {
-					super(...arguments), this.flush = Ne()(() => Object(Te.U)(this.props.storageKey, this.props.value), Re)
+					super(...arguments), this.flush = Ne()(() => Object(Te.T)(this.props.storageKey, this.props.value), Re)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -11504,8 +11504,8 @@
 			const vs = {
 					displayDelay: 15,
 					displayOnRoutes: [g.Bb.SUBREDDIT, g.Bb.COMMENTS],
-					experimentName: $t.vb,
-					experimentVariant: $t.Ab.On,
+					experimentName: $t.rb,
+					experimentVariant: $t.wb.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -13502,11 +13502,11 @@
 		"./src/reddit/selectors/accountManager.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return m
+				return u
 			})), s.d(t, "b", (function() {
-				return p
+				return m
 			})), s.d(t, "c", (function() {
-				return b
+				return p
 			}));
 			var n = s("./src/config.ts"),
 				a = s("./node_modules/reselect/es/index.js"),
@@ -13515,29 +13515,21 @@
 				i = s("./src/reddit/constants/experiments.ts"),
 				c = s("./src/reddit/selectors/experiments/frontpageSignup.ts"),
 				d = s("./src/reddit/selectors/experiments/googleOneTap.ts"),
-				l = s("./src/reddit/selectors/experiments/sso.ts"),
-				u = s("./src/reddit/selectors/responsiveSettings.ts");
-			const m = e => e.accountManagerModalData.actionSource,
-				p = e => e.accountManagerModalData.redirectUrl,
-				b = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, m, c.a, l.d, u.a, d.b, (e, t, s, a, c, d, u) => {
-					let m = "".concat(n.a.accountManagerOrigin).concat(e);
-					if (e === o.b.GoogleOneTap) return Object(r.a)(m, {
-						[i.I]: u
-					});
-					if (a && (m = Object(r.a)(m, {
-							[i.T]: a,
-							uiMode: t
-						})), c) {
-						const e = Object(l.a)(c) || c;
-						m = Object(r.a)(m, {
-							[i.M]: e
-						})
-					}
-					return d && (m = Object(r.a)(m, {
+				l = s("./src/reddit/selectors/responsiveSettings.ts");
+			const u = e => e.accountManagerModalData.actionSource,
+				m = e => e.accountManagerModalData.redirectUrl,
+				p = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, u, c.a, l.a, d.b, (e, t, s, a, c, d) => {
+					let l = "".concat(n.a.accountManagerOrigin).concat(e);
+					return e === o.b.GoogleOneTap ? Object(r.a)(l, {
+						[i.H]: d
+					}) : (a && (l = Object(r.a)(l, {
+						[i.P]: a,
+						uiMode: t
+					})), c && (l = Object(r.a)(l, {
 						mweb_responsive_settings: "treatment"
-					})), e === o.b.Index || e === o.b.ChangePassword ? m : m = Object(r.a)(m, {
+					})), e === o.b.Index || e === o.b.ChangePassword ? l : l = Object(r.a)(l, {
 						actionSource: s
-					})
+					}))
 				})
 		},
 		"./src/reddit/selectors/experiments/categories.ts": function(e, t, s) {
@@ -13555,36 +13547,6 @@
 				})
 			}
 		},
-		"./src/reddit/selectors/experiments/sso.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "d", (function() {
-				return l
-			})), s.d(t, "a", (function() {
-				return u
-			})), s.d(t, "b", (function() {
-				return p
-			})), s.d(t, "c", (function() {
-				return b
-			}));
-			var n = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/reddit/components/Settings/modalIds.ts"),
-				r = s("./src/reddit/constants/experiments.ts"),
-				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				i = s("./src/reddit/selectors/activeModalId.ts"),
-				c = s("./src/reddit/selectors/experiments/utils.ts"),
-				d = s("./src/reddit/selectors/user.ts");
-			const l = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.M,
-					experimentEligibilitySelector: e => !Object(d.G)(e)
-				}), c.a),
-				u = e => e === r.R.SSO,
-				m = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.N,
-					experimentEligibilitySelector: e => Object(d.G)(e) || Object(d.H)(e)
-				}), c.a),
-				p = Object(n.a)(m, e => e === r.C.SSO),
-				b = Object(n.a)(i.a, e => !!e && [a.b, a.d, a.e, a.f].includes(e))
-		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -13593,9 +13555,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.wc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.sc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.tc
+				experimentName: n.pc
 			}))
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, s) {
@@ -13670,6 +13632,30 @@
 				a = e => e.removalReasons.removedItemIds && e.removalReasons.removedItemIds.itemIds.length ? e.removalReasons.removedItemIds : null,
 				r = e => e.removalReasons.api.pending
 		},
+		"./src/reddit/selectors/sso.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "c", (function() {
+				return c
+			})), s.d(t, "e", (function() {
+				return d
+			})), s.d(t, "a", (function() {
+				return l
+			})), s.d(t, "b", (function() {
+				return u
+			})), s.d(t, "d", (function() {
+				return m
+			}));
+			var n = s("./node_modules/reselect/es/index.js"),
+				a = s("./src/reddit/components/Settings/modalIds.ts"),
+				r = s("./src/reddit/models/Sso/index.ts"),
+				o = s("./src/reddit/selectors/activeModalId.ts"),
+				i = s("./src/reddit/selectors/user.ts");
+			const c = Object(n.a)(i.ib, e => !(!e || !e.length)),
+				d = Object(n.a)(c, i.w, (e, t) => e && !t),
+				l = Object(n.a)(i.ib, e => e && e.find(e => e === r.a.Apple)),
+				u = Object(n.a)(i.ib, e => e && e.find(e => e === r.a.Google)),
+				m = Object(n.a)(o.a, e => !!e && [a.b, a.d, a.e, a.f].includes(e))
+		},
 		"./src/reddit/selectors/subredditLeaderboard.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
@@ -13707,4 +13693,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.dc45ec68764b06a62351.js.map
+//# sourceMappingURL=Reddit.e2a85a6ee798f23fadfd.js.map
