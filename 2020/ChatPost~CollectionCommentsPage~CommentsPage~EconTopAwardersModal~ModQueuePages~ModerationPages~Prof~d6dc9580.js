@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ce1475f6a1822914bdd4.js
-// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.0b35d854ffaf4d5224ab.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -1865,7 +1865,7 @@
 						userId: l.authorId
 					}), [F, l.authorId]), ee = Object(o.d)(K), ae = Object(r.useCallback)(e => Object(J.d)(e, {
 						subredditId: F
-					}), [F]), ne = Object(o.d)(ae), ie = Object(w.a)($), de = Object(w.a)($), ce = d && d.meta && d.meta.name === i.Bb.COMMENTS, le = Object(b.a)(l), me = ne === q.b.Left, ue = l.authorIsContractor && !!N && N.type === W.d.EmployeesOnly, pe = !!N && ee, he = !s && !ce, be = () => a.a.createElement(se, {
+					}), [F]), ne = Object(o.d)(ae), ie = Object(w.a)($), de = Object(w.a)($), ce = d && d.meta && d.meta.name === i.Bb.COMMENTS, le = Object(b.a)(l), me = ne === q.b.Left, ue = l.authorIsContractor && !!N && N.type === W.e.EmployeesOnly, pe = !!N && ee, he = !s && !ce, be = () => a.a.createElement(se, {
 						className: e.metaSeparatorClassName
 					}, "•"), we = a.a.createElement(a.a.Fragment, null, !le && a.a.createElement(re, {
 						style: {
@@ -2454,4 +2454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ce1475f6a1822914bdd4.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.0b35d854ffaf4d5224ab.js.map

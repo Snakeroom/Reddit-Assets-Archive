@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c090451cb529f3735a83.js
-// Retrieved at 8/20/2020, 1:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.863978b913252848dcf1.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "a53f907-production"
+					SENTRY_RELEASE_VERSION: "58f63a7-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -8965,7 +8965,7 @@
 						subreddit: t,
 						user: n,
 						onHoverActionText: s
-					} = this.props, o = t && Object(w.f)(t) && n ? Object(j.c)(Object(_.e)(n)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, o = t && Object(w.g)(t) && n ? Object(j.c)(Object(_.e)(n)) : t ? t.displayText : "", r = e.postIds.length;
 					return i.a.createElement(N, {
 						onClick: this.onClick,
 						className: I.a.container
@@ -10941,7 +10941,7 @@
 					getEventFactory: e => Object(b.f)(E.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: C.name,
-						type: Object(f.f)(C) ? m.a.PROFILE : m.a.SUBREDDIT
+						type: Object(f.g)(C) ? m.a.PROFILE : m.a.SUBREDDIT
 					},
 					postId: E.id,
 					small: !0
@@ -11469,7 +11469,7 @@
 						userId: d.authorId
 					}), [F, d.authorId]), ee = Object(r.d)(Y), oe = Object(s.useCallback)(e => Object(J.d)(e, {
 						subredditId: F
-					}), [F]), ie = Object(r.d)(oe), ae = Object(f.a)($), ce = Object(f.a)($), le = c && c.meta && c.meta.name === a.Bb.COMMENTS, de = Object(b.a)(d), ue = ie === K.b.Left, pe = d.authorIsContractor && !!R && R.type === z.d.EmployeesOnly, me = !!R && ee, he = !n && !le, be = () => o.a.createElement(ne, {
+					}), [F]), ie = Object(r.d)(oe), ae = Object(f.a)($), ce = Object(f.a)($), le = c && c.meta && c.meta.name === a.Bb.COMMENTS, de = Object(b.a)(d), ue = ie === K.b.Left, pe = d.authorIsContractor && !!R && R.type === z.e.EmployeesOnly, me = !!R && ee, he = !n && !le, be = () => o.a.createElement(ne, {
 						className: e.metaSeparatorClassName
 					}, "•"), fe = o.a.createElement(o.a.Fragment, null, !de && o.a.createElement(se, {
 						style: {
@@ -19778,7 +19778,7 @@
 						shouldHideNsfwIcon: !!e.shouldHideNsfwIcon,
 						subredditOrProfile: e.subredditOrProfile
 					});
-					Object(u.f)(e.subredditOrProfile) ? o = r.a.createElement(g, {
+					Object(u.g)(e.subredditOrProfile) ? o = r.a.createElement(g, {
 						className: e.className,
 						iconUrl: s,
 						isNSFW: e.subredditOrProfile.isNSFW,
@@ -29454,7 +29454,7 @@
 					} = p || {}, {
 						allOriginalContent: T = !1,
 						eventPostsEnabled: I = !1
-					} = a || {}, P = i.isProfile || Object(Mn.e)(a), M = u || !P || T || O === m.Jb.CROSSPOST, N = u || !!E && !d, R = u || !!E;
+					} = a || {}, P = i.isProfile || Object(Mn.f)(a), M = u || !P || T || O === m.Jb.CROSSPOST, N = u || !!E && !d, R = u || !!E;
 					return o.a.createElement("div", {
 						className: s
 					}, o.a.createElement(Qn, null, h && o.a.createElement(Zn, {
@@ -30244,7 +30244,7 @@
 						isDraftDeletionPending: n,
 						subreddit: s,
 						user: r
-					} = this.props, i = s && Object(Mn.f)(s) && r ? {
+					} = this.props, i = s && Object(Mn.g)(s) && r ? {
 						displayText: Object(J.c)(Object(le.e)(r)),
 						url: "/user/".concat(Object(le.e)(r), "/")
 					} : s;
@@ -33684,4 +33684,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.c090451cb529f3735a83.js.map
+//# sourceMappingURL=PostCreation.863978b913252848dcf1.js.map

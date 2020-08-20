@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.921167dfe538ebf7ed4b.js
-// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.81fe1085653523b08ffb.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -4019,7 +4019,7 @@
 						className: we.a.metaLine
 					}, n && !!r && o.a.createElement("span", {
 						className: we.a.meta
-					}, Object(Oe.f)(r) ? Object(oe.c)(r.displayText || r.name) : Object(oe.b)(r.displayText || r.name)), o.a.createElement("span", {
+					}, Object(Oe.g)(r) ? Object(oe.c)(r.displayText || r.name) : Object(oe.b)(r.displayText || r.name)), o.a.createElement("span", {
 						className: we.a.meta
 					}, ve._({
 						"*": "{score} points",
@@ -7217,4 +7217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.921167dfe538ebf7ed4b.js.map
+//# sourceMappingURL=SubredditWiki.81fe1085653523b08ffb.js.map

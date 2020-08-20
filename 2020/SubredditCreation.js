@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.1529940419600e58653b.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.bb82bee157667b492fd4.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -504,7 +504,7 @@
 					}, this.state = {
 						name: "",
 						description: "",
-						type: F.d.Public,
+						type: F.e.Public,
 						over18: !1,
 						waitingForSuccessfulCommunity: !1,
 						restrictCommenting: !1,
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditCreation.1529940419600e58653b.js.map
+//# sourceMappingURL=SubredditCreation.bb82bee157667b492fd4.js.map

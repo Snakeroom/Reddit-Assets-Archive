@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b29c76b2b16eef40512f.js
-// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.9ca5dc3fd1524c7d3ed8.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1999,7 +1999,7 @@
 					}, k)));
 					const S = !P && !j;
 					let w;
-					return C && (w = Object(V.f)(C) ? Object(W.h)(C) : Object(W.i)(C)), o.a.createElement(F.a, {
+					return C && (w = Object(V.g)(C) ? Object(W.h)(C) : Object(W.i)(C)), o.a.createElement(F.a, {
 						className: Object(c.a)(Q.a.container, G.a.largeAndMediumActiveStyles, G.a.largeAndMediumPostStyles, z.a.postContainer, Object(U.a)(this.props), s),
 						post: u,
 						onClick: p,
@@ -4056,7 +4056,7 @@
 					getEventFactory: e => Object(h.f)(O.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: E.name,
-						type: Object(x.f)(E) ? u.a.PROFILE : u.a.SUBREDDIT
+						type: Object(x.g)(E) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
 					postId: O.id,
 					small: !0
@@ -9734,4 +9734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SearchResults.b29c76b2b16eef40512f.js.map
+//# sourceMappingURL=SearchResults.9ca5dc3fd1524c7d3ed8.js.map

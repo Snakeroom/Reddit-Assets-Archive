@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.486261ed3a6d9581f330.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.53ad46170ec0d9dc2bbe.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -70,7 +70,7 @@
 					subreddit: d
 				} = e;
 				switch (d.type) {
-					case h.d.Restricted:
+					case h.e.Restricted:
 						return n.a.createElement(T, {
 							className: t,
 							icon: n.a.createElement(m.a, {
@@ -83,7 +83,7 @@
 							description: Object(f.g)(o),
 							subreddit: d
 						});
-					case h.d.Private:
+					case h.e.Private:
 						return n.a.createElement(T, {
 							className: t,
 							icon: n.a.createElement(p.a, {
@@ -98,7 +98,7 @@
 							}),
 							subreddit: d
 						});
-					case h.d.EmployeesOnly:
+					case h.e.EmployeesOnly:
 						return n.a.createElement(T, {
 							className: t,
 							icon: n.a.createElement(u.a, {
@@ -904,4 +904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditHovercard.486261ed3a6d9581f330.js.map
+//# sourceMappingURL=SubredditHovercard.53ad46170ec0d9dc2bbe.js.map

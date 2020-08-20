@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.464a30bcf27628ca809e.js
-// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.0d1a05143d3df558d9d8.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~ProfilePosts~ProfilePrivate~SearchRes~77b3dad4", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4115,7 +4115,7 @@
 						trackClick: D,
 						renderedInOverlay: W,
 						subredditType: H
-					} = e, V = n.isDeleted, U = !y && !V && !!p && p.length > 0, G = Object(T.a)(S.c.edit, n.id), K = Object(T.a)(S.c.replyToComment, n.id), z = Object(Y.a)(w), q = n.authorIsContractor && H === Bt.d.EmployeesOnly, J = n.isLocked, Q = z && P, X = !y && !V && (_ || O), [Z, $] = Object(i.useState)(null), [ee, te] = Object(i.useState)(null);
+					} = e, V = n.isDeleted, U = !y && !V && !!p && p.length > 0, G = Object(T.a)(S.c.edit, n.id), K = Object(T.a)(S.c.replyToComment, n.id), z = Object(Y.a)(w), q = n.authorIsContractor && H === Bt.e.EmployeesOnly, J = n.isLocked, Q = z && P, X = !y && !V && (_ || O), [Z, $] = Object(i.useState)(null), [ee, te] = Object(i.useState)(null);
 					Object(i.useEffect)(() => {
 						if (!y && !V && (g && $(a.a.createElement($e, null)), null !== v)) {
 							if (v.glowHexColor) {
@@ -5290,7 +5290,7 @@
 						numberOfComments: g,
 						onClick: O,
 						subredditOrProfile: y
-					} = this.props, E = !(!y || Object(m.f)(y)), _ = d && E && (g >= C && !b || !r) && (!u && !h), k = _ && !e, j = _ ? x.a.TruncatedComments : "";
+					} = this.props, E = !(!y || Object(m.g)(y)), _ = d && E && (g >= C && !b || !r) && (!u && !h), k = _ && !e, j = _ ? x.a.TruncatedComments : "";
 					return o.a.createElement("div", {
 						onClick: O,
 						ref: i
@@ -7178,7 +7178,7 @@
 				})), {
 					className: m.a.lockIcon
 				}),
-				u = e => Object(d.f)(e) ? i.d.profile : i.d.subreddit;
+				u = e => Object(d.g)(e) ? i.d.profile : i.d.subreddit;
 			t.a = e => {
 				let {
 					subredditOrProfile: t
@@ -7446,7 +7446,7 @@
 					getEventFactory: e => Object(c.f)(s.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: h.name,
-						type: Object(l.f)(h) ? d.a.PROFILE : d.a.SUBREDDIT
+						type: Object(l.g)(h) ? d.a.PROFILE : d.a.SUBREDDIT
 					},
 					postId: s.id
 				})), o.a.createElement(a.a, {
@@ -9357,7 +9357,7 @@
 						subreddit: t,
 						user: s,
 						onHoverActionText: n
-					} = this.props, o = t && Object(k.f)(t) && s ? Object(_.c)(Object(j.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, o = t && Object(k.g)(t) && s ? Object(_.c)(Object(j.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
 					return i.a.createElement(M, {
 						onClick: this.onClick,
 						className: S.a.container
@@ -10624,7 +10624,7 @@
 					getEventFactory: e => Object(b.f)(O.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: E.name,
-						type: Object(g.f)(E) ? u.a.PROFILE : u.a.SUBREDDIT
+						type: Object(g.g)(E) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
 					postId: O.id,
 					small: !0
@@ -10917,7 +10917,7 @@
 							postId: s
 						});
 						if (!n) return !1;
-						const o = n.type === se.d.User;
+						const o = n.type === se.e.User;
 						return Object(pe.s)(e, n.name, o)
 					}
 				}), (e, t) => {
@@ -11044,7 +11044,7 @@
 						toggleAddEventStartTimeModal: p,
 						toggleEditStartTimeModal: u,
 						userIsOp: h
-					} = e, b = e.currentUser && e.currentUser.isEmployee, g = Object($.a)(e.post), x = e.post.belongsTo.type === O.a.PROFILE || Object(se.e)(e.postSubredditAboutInfo), f = t && d.isGildable, v = Object(ee.a)(e.post);
+					} = e, b = e.currentUser && e.currentUser.isEmployee, g = Object($.a)(e.post), x = e.post.belongsTo.type === O.a.PROFILE || Object(se.f)(e.postSubredditAboutInfo), f = t && d.isGildable, v = Object(ee.a)(e.post);
 					return i.a.createElement("div", null, f && i.a.createElement(Ne, {
 						className: this.getBreakpointClass(Q.a.Gild),
 						displayText: n.fbt._("Give Award", null, {
@@ -11359,7 +11359,7 @@
 					getEventFactory: e => Object(b.f)(T.id, e ? "unsubscribe" : "subscribe", "post", S, y),
 					identifier: {
 						name: A.name,
-						type: Object(f.f)(A) ? u.a.PROFILE : u.a.SUBREDDIT
+						type: Object(f.g)(A) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
 					postId: T.id
 				}, "Subscribe"), M && o.a.createElement(h.b, {
@@ -11822,7 +11822,7 @@
 					}
 				});
 			t.a = w(Object(a.i)(e => {
-				const t = !e.subreddit || e.subreddit && e.subreddit.type === v.d.Public,
+				const t = !e.subreddit || e.subreddit && e.subreddit.type === v.e.Public,
 					s = !!e.post && e.post.isCrosspostable && !e.post.isSponsored;
 				return r.a.createElement("div", {
 					className: e.className,
@@ -17470,7 +17470,7 @@
 						key: "event-post-id-".concat(d.id),
 						postId: this.state.commentNativeAdId,
 						isOverlay: a
-					}), this.renderCommentPanes())), u && !Object($.f)(u) && x.a.createElement(W.a, {
+					}), this.renderCommentPanes())), u && !Object($.g)(u) && x.a.createElement(W.a, {
 						contentContainerRef: this.state.layoutRef,
 						isOverlay: a,
 						post: d,
@@ -17725,7 +17725,7 @@
 							prefixedHeaderText: p.displayText,
 							subredditOrProfile: p,
 							url: p.url
-						}), !Object($.f)(p) && x.a.createElement(Re.a, {
+						}), !Object($.g)(p) && x.a.createElement(Re.a, {
 							disableFullscreen: !0,
 							homeUrl: p.url,
 							maxWidth: u,
@@ -17962,4 +17962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.464a30bcf27628ca809e.js.map
+//# sourceMappingURL=CommentsPage.0d1a05143d3df558d9d8.js.map

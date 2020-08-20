@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2e30d51adac961584529.js
-// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f64b00ed8145dc67d104.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1053,7 +1053,7 @@
 					getEventFactory: e => Object(x.f)(y.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: C.name,
-						type: Object(h.f)(C) ? u.a.PROFILE : u.a.SUBREDDIT
+						type: Object(h.g)(C) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
 					postId: y.id,
 					small: !0
@@ -1234,7 +1234,7 @@
 					getEventFactory: e => Object(x.f)(N.id, e ? "unsubscribe" : "subscribe", "post", E, O),
 					identifier: {
 						name: M.name,
-						type: Object(f.f)(M) ? u.a.PROFILE : u.a.SUBREDDIT
+						type: Object(f.g)(M) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
 					postId: N.id
 				}, "Subscribe"), I && r.a.createElement(b.b, {
@@ -1384,4 +1384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-LargePost.2e30d51adac961584529.js.map
+//# sourceMappingURL=reddit-components-LargePost.f64b00ed8145dc67d104.js.map

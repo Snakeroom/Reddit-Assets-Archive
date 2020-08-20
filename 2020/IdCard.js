@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.54bf1aed19d47ee78b33.js
-// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.766ec2b118ee33dde044.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -672,7 +672,7 @@
 					subreddit: a
 				} = e;
 				switch (a.type) {
-					case g.d.Restricted:
+					case g.e.Restricted:
 						return o.a.createElement(w, {
 							className: t,
 							icon: o.a.createElement(m.a, {
@@ -685,7 +685,7 @@
 							description: Object(f.g)(r),
 							subreddit: a
 						});
-					case g.d.Private:
+					case g.e.Private:
 						return o.a.createElement(w, {
 							className: t,
 							icon: o.a.createElement(p.a, {
@@ -700,7 +700,7 @@
 							}),
 							subreddit: a
 						});
-					case g.d.EmployeesOnly:
+					case g.e.EmployeesOnly:
 						return o.a.createElement(w, {
 							className: t,
 							icon: o.a.createElement(u.a, {
@@ -2525,7 +2525,7 @@
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/models/Subreddit/index.ts");
 			const r = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo", "translation_piglatin", "translation_pirate", "translation_initials", "translation_german", "translation_british", "translation_french_fr", "translation_es_mx", "translation_br_pt"]),
-				o = new Set([s.d.Private]),
+				o = new Set([s.e.Private]),
 				i = e => !(!e || !e.name) && (!!r.has(e.name.toLowerCase()) || !e.isNSFW && !e.isQuarantined && !o.has(e.type))
 		},
 		"./src/reddit/helpers/trackers/idCard.ts": function(e, t, n) {
@@ -2873,4 +2873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.54bf1aed19d47ee78b33.js.map
+//# sourceMappingURL=IdCard.766ec2b118ee33dde044.js.map

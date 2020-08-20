@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4e7add7bb453d3a7d210.js
-// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.9b7396e6cdcd3ae01995.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -17560,7 +17560,7 @@
 						subreddit: t,
 						user: s,
 						onHoverActionText: n
-					} = this.props, o = t && Object(j.f)(t) && s ? Object(k.c)(Object(y.e)(s)) : t ? t.displayText : "", a = e.postIds.length;
+					} = this.props, o = t && Object(j.g)(t) && s ? Object(k.c)(Object(y.e)(s)) : t ? t.displayText : "", a = e.postIds.length;
 					return r.a.createElement(M, {
 						onClick: this.onClick,
 						className: T.a.container
@@ -18175,7 +18175,7 @@
 					getEventFactory: e => Object(h.f)(C.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: O.name,
-						type: Object(g.f)(O) ? p.a.PROFILE : p.a.SUBREDDIT
+						type: Object(g.g)(O) ? p.a.PROFILE : p.a.SUBREDDIT
 					},
 					postId: C.id,
 					small: !0
@@ -18468,7 +18468,7 @@
 							postId: s
 						});
 						if (!n) return !1;
-						const o = n.type === se.d.User;
+						const o = n.type === se.e.User;
 						return Object(ue.s)(e, n.name, o)
 					}
 				}), (e, t) => {
@@ -18595,7 +18595,7 @@
 						toggleAddEventStartTimeModal: u,
 						toggleEditStartTimeModal: p,
 						userIsOp: b
-					} = e, h = e.currentUser && e.currentUser.isEmployee, g = Object($.a)(e.post), f = e.post.belongsTo.type === C.a.PROFILE || Object(se.e)(e.postSubredditAboutInfo), x = t && d.isGildable, v = Object(ee.a)(e.post);
+					} = e, h = e.currentUser && e.currentUser.isEmployee, g = Object($.a)(e.post), f = e.post.belongsTo.type === C.a.PROFILE || Object(se.f)(e.postSubredditAboutInfo), x = t && d.isGildable, v = Object(ee.a)(e.post);
 					return r.a.createElement("div", null, x && r.a.createElement(Pe, {
 						className: this.getBreakpointClass(J.a.Gild),
 						displayText: n.fbt._("Give Award", null, {
@@ -21037,7 +21037,7 @@
 					}
 				});
 			t.a = w(Object(i.i)(e => {
-				const t = !e.subreddit || e.subreddit && e.subreddit.type === v.d.Public,
+				const t = !e.subreddit || e.subreddit && e.subreddit.type === v.e.Public,
 					s = !!e.post && e.post.isCrosspostable && !e.post.isSponsored;
 				return a.a.createElement("div", {
 					className: e.className,
@@ -25453,7 +25453,7 @@
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/reddit/models/Subreddit/index.ts");
 			const o = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo", "translation_piglatin", "translation_pirate", "translation_initials", "translation_german", "translation_british", "translation_french_fr", "translation_es_mx", "translation_br_pt"]),
-				a = new Set([n.d.Private]),
+				a = new Set([n.e.Private]),
 				r = e => !(!e || !e.name) && (!!o.has(e.name.toLowerCase()) || !e.isNSFW && !e.isQuarantined && !a.has(e.type))
 		},
 		"./src/reddit/helpers/awards/isEligibleForTemporaryAwards.ts": function(e, t, s) {
@@ -29306,7 +29306,7 @@
 					}, this.state = {
 						name: "",
 						description: "",
-						type: G.d.Public,
+						type: G.e.Public,
 						over18: !1,
 						waitingForSuccessfulCommunity: !1,
 						restrictCommenting: !1,
@@ -30601,4 +30601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.4e7add7bb453d3a7d210.js.map
+//# sourceMappingURL=ModerationPages.9b7396e6cdcd3ae01995.js.map

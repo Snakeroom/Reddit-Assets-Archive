@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.0aacc2691c44a70bdb64.js
-// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.0d6510c908db69bd1e8e.js
+// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -7831,7 +7831,7 @@
 						subreddit: t,
 						user: s,
 						onHoverActionText: n
-					} = this.props, o = t && Object(w.f)(t) && s ? Object(_.c)(Object(k.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, o = t && Object(w.g)(t) && s ? Object(_.c)(Object(k.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
 					return a.a.createElement(M, {
 						onClick: this.onClick,
 						className: I.a.container
@@ -8446,7 +8446,7 @@
 					getEventFactory: e => Object(h.f)(C.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: y.name,
-						type: Object(x.f)(y) ? u.a.PROFILE : u.a.SUBREDDIT
+						type: Object(x.g)(y) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
 					postId: C.id,
 					small: !0
@@ -8739,7 +8739,7 @@
 							postId: s
 						});
 						if (!n) return !1;
-						const o = n.type === se.d.User;
+						const o = n.type === se.e.User;
 						return Object(pe.s)(e, n.name, o)
 					}
 				}), (e, t) => {
@@ -8866,7 +8866,7 @@
 						toggleAddEventStartTimeModal: p,
 						toggleEditStartTimeModal: u,
 						userIsOp: b
-					} = e, h = e.currentUser && e.currentUser.isEmployee, x = Object($.a)(e.post), f = e.post.belongsTo.type === C.a.PROFILE || Object(se.e)(e.postSubredditAboutInfo), g = t && c.isGildable, v = Object(ee.a)(e.post);
+					} = e, h = e.currentUser && e.currentUser.isEmployee, x = Object($.a)(e.post), f = e.post.belongsTo.type === C.a.PROFILE || Object(se.f)(e.postSubredditAboutInfo), g = t && c.isGildable, v = Object(ee.a)(e.post);
 					return a.a.createElement("div", null, g && a.a.createElement(Te, {
 						className: this.getBreakpointClass(X.a.Gild),
 						displayText: n.fbt._("Give Award", null, {
@@ -9188,7 +9188,7 @@
 					getEventFactory: e => Object(h.f)(N.id, e ? "unsubscribe" : "subscribe", "post", I, E),
 					identifier: {
 						name: F.name,
-						type: Object(g.f)(F) ? u.a.PROFILE : u.a.SUBREDDIT
+						type: Object(g.g)(F) ? u.a.PROFILE : u.a.SUBREDDIT
 					},
 					postId: N.id
 				}, "Subscribe"), M && o.a.createElement(b.b, {
@@ -10082,7 +10082,7 @@
 					}
 				});
 			t.a = P(Object(i.i)(e => {
-				const t = !e.subreddit || e.subreddit && e.subreddit.type === v.d.Public,
+				const t = !e.subreddit || e.subreddit && e.subreddit.type === v.e.Public,
 					s = !!e.post && e.post.isCrosspostable && !e.post.isSponsored;
 				return r.a.createElement("div", {
 					className: e.className,
@@ -15199,4 +15199,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.0aacc2691c44a70bdb64.js.map
+//# sourceMappingURL=ProfileOverview.0d6510c908db69bd1e8e.js.map
