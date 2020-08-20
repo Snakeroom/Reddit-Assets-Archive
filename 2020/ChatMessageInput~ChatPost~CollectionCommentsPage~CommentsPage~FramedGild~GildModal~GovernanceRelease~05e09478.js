@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.0ab8dae072cfa3f7dc4b.js
-// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.f7fb67c16f68ef3c59c4.js
+// Retrieved at 8/20/2020, 3:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -434,7 +434,7 @@
 						onWatched: () => e(l.s(s)),
 						onViewableImpression: () => e(l.y(s)),
 						onFullyViewableImpression: () => e(l.v(s)),
-						onPlayedWithSound: () => e(l.C(s)),
+						onPlayedWithSound: () => e(l.C(!1, s)),
 						onWatchedPercent: t => e(l.M(t, s))
 					}
 				});
@@ -1828,4 +1828,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.0ab8dae072cfa3f7dc4b.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.f7fb67c16f68ef3c59c4.js.map

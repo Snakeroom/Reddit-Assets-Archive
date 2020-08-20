@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.ac7f2217d480dfc0dd3c.js
-// Retrieved at 8/20/2020, 2:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.6585f658691f903cf5a7.js
+// Retrieved at 8/20/2020, 3:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1466,7 +1466,7 @@
 						setVideoFullscreen: () => {
 							s && e(b.G(s))
 						},
-						setVideoMuted: t => e(P.g(t, s)),
+						setVideoMuted: (t, i) => e(P.g(t, i, s)),
 						setVideoVolume: t => e(P.h(t)),
 						onWatchedPercent: t => {
 							s && e(b.M(t, s))
@@ -1645,7 +1645,7 @@
 					}, this.playVideo = async () => {
 						const e = this.HTML5StreamPlayerVideo;
 						if (e) try {
-							await e.play(), e.currentTime < 1 && this.props.onVideoStarted(), this.setVideoMute(this.state.isMuted), this.props.setPlaying(!0), this.setState({
+							await e.play(), e.currentTime < 1 && this.props.onVideoStarted(), this.setVideoMute(this.state.isMuted, !1), this.props.setPlaying(!0), this.setState({
 								videoEnded: !1
 							})
 						} catch (t) {}
@@ -1671,19 +1671,19 @@
 						}), this.sendEvent("click", "fullscreen"), null != this.props.postId && (this.sendEvent("change", "pagetype", !0), this.props.setVideoFullscreen())
 					}, this.setVolume = (e, t) => {
 						const s = this.HTML5StreamPlayerVideo;
-						s && (t ? 0 !== e ? (this.props.setVideoVolume(e), this.props.inVideoNewVolumePolicyFeed && this.props.setMutedInFeed(!1)) : this.props.inVideoNewVolumePolicyFeed && this.props.setMutedInFeed(!0) : (s.volume = e, e || this.state.isMuted ? e && this.state.isMuted && this.setVideoMute(!1) : this.setVideoMute(!0)))
+						s && (t ? 0 !== e ? (this.props.setVideoVolume(e), this.props.inVideoNewVolumePolicyFeed && this.props.setMutedInFeed(!1)) : this.props.inVideoNewVolumePolicyFeed && this.props.setMutedInFeed(!0) : (s.volume = e, e || this.state.isMuted ? e && this.state.isMuted && this.setVideoMute(!1, !0) : this.setVideoMute(!0, !0)))
 					}, this.toggleMuteVideo = e => {
 						if (e.stopPropagation(), this.HTML5StreamPlayerVideo) {
 							const e = !this.state.isMuted;
-							this.setVideoMute(e), this.props.inVideoNewVolumePolicyFeed && this.props.setMutedInFeed(e);
+							this.setVideoMute(e, !0), this.props.inVideoNewVolumePolicyFeed && this.props.setMutedInFeed(e);
 							const t = e ? "mute" : "unmute";
 							this.sendEvent("click", t)
 						}
-					}, this.setVideoMute = e => {
-						const t = this.HTML5StreamPlayerVideo;
+					}, this.setVideoMute = (e, t) => {
+						const s = this.HTML5StreamPlayerVideo;
 						this.setState({
 							isMuted: e
-						}), this.props.setVideoMuted(e), t && (t.muted = e, e || (t.volume = this.props.volume))
+						}), this.props.setVideoMuted(e, t), s && (s.muted = e, e || (s.volume = this.props.volume))
 					}, this.clickSnoo = e => {
 						this.state.videoFullScreen && this.exitFullScreen(), this.sendEvent("click", "snoo")
 					}, this.setAutoplay = e => {
@@ -1800,7 +1800,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("2a8d2cd-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("f6557a5-production", " ").concat(t);
 									return i && (s += " [".concat(V.vc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -1874,7 +1874,7 @@
 							videoScrollPaused: !1
 						}), this.sendEvent("view", "autoplay")), (o || p) && (!this.state.videoManualPaused && t && t.currentTime < t.duration && (e.currentTime && (t.currentTime = e.currentTime), u && (this.props.autoplayPref || this.props.shouldIgnoreAutoplayPref) && this.playVideo()), p && this.sendEvent("change", "pagetype", !0)), (n || h) && (this.pauseVideo(), h && this.sendEvent("change", "pagetype", !0)), a && (this.setState({
 							videoScrollPaused: !0
-						}), this.sendEvent("served", "video", !0), this.state.videoEnded || (this.sendEvent("scroll", "pause"), this.props.inVideoNewVolumePolicyFeed && this.props.isListing || this.setVideoMute(!0))), e.mpegDashSource && this.props.mpegDashSource !== e.mpegDashSource) {
+						}), this.sendEvent("served", "video", !0), this.state.videoEnded || (this.sendEvent("scroll", "pause"), this.props.inVideoNewVolumePolicyFeed && this.props.isListing || this.setVideoMute(!0, !1))), e.mpegDashSource && this.props.mpegDashSource !== e.mpegDashSource) {
 						const {
 							dashPlayer: t
 						} = this;
@@ -2236,4 +2236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.ac7f2217d480dfc0dd3c.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.6585f658691f903cf5a7.js.map

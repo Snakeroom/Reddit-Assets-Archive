@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4110c76a06df74846d02.js
-// Retrieved at 8/20/2020, 2:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7a1c43715c361c9f6561.js
+// Retrieved at 8/20/2020, 3:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -7534,8 +7534,8 @@
 				f = "TOGGLE_GALLERY_LAYOUT",
 				m = Object(n.a)(f),
 				j = Object(n.a)(g),
-				_ = (e, t) => async (s, n) => {
-					s(b(e)), !e && t && s(Object(u.C)(t))
+				_ = (e, t, s) => async (n, r) => {
+					n(b(e)), !e && s && n(Object(u.C)(t, s))
 				}, h = "MEDIA__EMBED_HEIGHT_MEASURED", y = Object(n.a)(h), E = e => {
 					let {
 						height: t,
@@ -21068,11 +21068,11 @@
 						postId: e
 					});
 					t(D(e, "start", "video", !1)), n.isSponsored && t(Object(c.t)(n, r.a.VideoStarted))
-				}, U = e => async (t, s) => {
-					const n = Object(l.O)(s(), {
-						postId: e
+				}, U = (e, t) => async (s, n) => {
+					const a = Object(l.O)(n(), {
+						postId: t
 					});
-					t(D(e, "play_with_sound", "video", !1)), t(D(e, "is_viewable", "video", !1)), t(D(e, "is_fully_viewable", "video", !1)), n.isSponsored && (t(Object(c.t)(n, r.a.VideoPlayedWithSound)), t(Object(c.t)(n, r.a.VideoViewableImpression)), t(Object(c.t)(n, r.a.VideoFullyViewableImpression)))
+					s(D(t, "play_with_sound", "video", !1)), s(D(t, "is_viewable", "video", !1)), s(D(t, "is_fully_viewable", "video", !1)), a.isSponsored && (s(Object(c.t)(a, r.a.VideoPlayedWithSound)), e && (s(Object(c.t)(a, r.a.VideoViewableImpression)), s(Object(c.t)(a, r.a.VideoFullyViewableImpression))))
 				}, M = (e, t) => async (s, n) => {
 					const i = Object(l.O)(n(), {
 						postId: t
@@ -55679,4 +55679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.4110c76a06df74846d02.js.map
+//# sourceMappingURL=Governance~Reddit.7a1c43715c361c9f6561.js.map
