@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.75656b66fe922ec41ee6.js
-// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b5adc07ed4886a36b437.js
+// Retrieved at 8/20/2020, 2:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -6796,14 +6796,15 @@
 					action: "click",
 					noun: "show_less"
 				}, c(e)),
-				p = (e, t) => n => Object.assign({
+				p = (e, t) => n => Object.assign(Object.assign({
 					source: "stream_du",
 					action: "click",
-					noun: "rpan",
-					actionInfo: {
+					noun: "rpan"
+				}, c(n, e)), {
+					actionInfo: i.actionInfo(n, {
 						position: t || 0
-					}
-				}, c(n, e)),
+					})
+				}),
 				b = (e, t) => n => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "fail",
@@ -8267,4 +8268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.75656b66fe922ec41ee6.js.map
+//# sourceMappingURL=Subreddit.b5adc07ed4886a36b437.js.map

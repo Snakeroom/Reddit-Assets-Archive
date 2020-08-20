@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.15e496f4e4f7f248fa2d.js
-// Retrieved at 8/18/2020, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.84ee70d00cb495add414.js
+// Retrieved at 8/20/2020, 2:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -436,14 +436,15 @@
 					action: "click",
 					noun: "show_less"
 				}, c(e)),
-				m = (e, t) => s => Object.assign({
+				m = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_du",
 					action: "click",
-					noun: "rpan",
-					actionInfo: {
+					noun: "rpan"
+				}, c(s, e)), {
+					actionInfo: o.actionInfo(s, {
 						position: t || 0
-					}
-				}, c(s, e)),
+					})
+				}),
 				b = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "fail",
@@ -838,4 +839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.15e496f4e4f7f248fa2d.js.map
+//# sourceMappingURL=LiveVideoPlayer~PublicAccessNetwork.84ee70d00cb495add414.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0055e3aa61e553e73d93.js
-// Retrieved at 8/18/2020, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0916ba1cce620dc6018c.js
+// Retrieved at 8/20/2020, 2:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1358,14 +1358,15 @@
 					action: "click",
 					noun: "show_less"
 				}, c(e)),
-				p = (e, t) => s => Object.assign({
+				p = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_du",
 					action: "click",
-					noun: "rpan",
-					actionInfo: {
+					noun: "rpan"
+				}, c(s, e)), {
+					actionInfo: a.actionInfo(s, {
 						position: t || 0
-					}
-				}, c(s, e)),
+					})
+				}),
 				b = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "fail",
@@ -2095,4 +2096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.0055e3aa61e553e73d93.js.map
+//# sourceMappingURL=Frontpage.0916ba1cce620dc6018c.js.map
