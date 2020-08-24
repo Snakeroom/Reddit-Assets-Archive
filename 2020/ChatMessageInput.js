@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.69ef622670e91d14e0c2.js
-// Retrieved at 8/24/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.c123165b2bfd86c6f68f.js
+// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -462,60 +462,59 @@
 				S = s("./src/reddit/selectors/comments.ts"),
 				L = s("./src/reddit/selectors/posts.ts"),
 				T = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				R = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
-				F = s("./src/reddit/selectors/experiments/goldRpanLivePreview.ts"),
-				D = s("./src/reddit/helpers/awards/getIconForSize.ts"),
-				P = s("./src/reddit/selectors/communityAwards.ts"),
+				F = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
+				R = s("./src/reddit/helpers/awards/getIconForSize.ts"),
+				D = s("./src/reddit/selectors/communityAwards.ts"),
 				M = s("./src/reddit/icons/fonts/Gift/index.tsx"),
-				B = s("./src/reddit/components/CommentsChat/Comment/AwardCountSpectacle/AwardCountAnimation/index.m.less"),
-				U = s.n(B);
-			class V extends c.Component {
+				P = s("./src/reddit/components/CommentsChat/Comment/AwardCountSpectacle/AwardCountAnimation/index.m.less"),
+				B = s.n(P);
+			class U extends c.Component {
 				render() {
 					const {
 						award: e,
 						className: t,
 						count: s,
 						isAnimated: n
-					} = this.props, a = e ? Object(D.a)(e, 64) : void 0;
+					} = this.props, a = e ? Object(R.a)(e, 64) : void 0;
 					return d.a.createElement("div", {
-						className: Object(m.a)(U.a.container, t, {
-							[U.a.isAnimated]: n
+						className: Object(m.a)(B.a.container, t, {
+							[B.a.isAnimated]: n
 						})
 					}, d.a.createElement(M.a, {
-						className: U.a.gildIcon
+						className: B.a.gildIcon
 					}), n && a && d.a.createElement("div", {
-						className: U.a.awardingIcon,
+						className: B.a.awardingIcon,
 						style: {
 							backgroundImage: 'url("'.concat(a, '")')
 						}
 					}), s ? d.a.createElement("div", {
-						className: U.a.count
+						className: B.a.count
 					}, s) : null)
 				}
 			}
-			var G = Object(l.b)(() => Object(u.c)({
+			var V = Object(l.b)(() => Object(u.c)({
 				award: (e, t) => {
 					let {
 						awardId: s
 					} = t;
-					return s ? Object(P.a)(e, s) : void 0
+					return s ? Object(D.a)(e, s) : void 0
 				}
-			}))(V);
+			}))(U);
 			const K = Object(l.b)(() => Object(u.a)(e => e, (e, t) => {
 					let {
 						postId: s
 					} = t;
 					return Object(S.g)(e, {
-						commentsPageKey: Object(R.a)(s)
+						commentsPageKey: Object(F.a)(s)
 					})
 				}, L.O, (e, t) => {
 					let {
 						postId: s
 					} = t;
 					return Object(S.v)(e, {
-						commentsPageKey: Object(R.a)(s)
+						commentsPageKey: Object(F.a)(s)
 					})
-				}, F.a, (e, t, s, n, a) => {
+				}, (e, t, s, n) => {
 					return {
 						commentAwardIds: t.length ? t.reduce((t, s) => {
 							const n = Object(S.n)(e, {
@@ -529,7 +528,6 @@
 							}
 							return t
 						}, []) : [],
-						inGoldRpanLivePreview: a,
 						isFullyLoaded: n,
 						postAwardCount: s.awardCountsById ? Object.values(s.awardCountsById).reduce((e, t) => e + t, 0) : s.allAwardings ? s.allAwardings.reduce((e, t) => e + t.count, 0) : 0
 					}
@@ -540,7 +538,7 @@
 					prevIsFullyLoaded: e.isFullyLoaded,
 					prevPostId: e.postId
 				});
-			class W extends c.Component {
+			class G extends c.Component {
 				constructor(e) {
 					super(e), this.state = q(e)
 				}
@@ -555,45 +553,40 @@
 						postAwardCount: s,
 						commentAwardIds: n,
 						className: a,
-						isFullyLoaded: r,
-						inGoldRpanLivePreview: o
+						isFullyLoaded: r
 					} = this.props;
-					if (!r) return d.a.createElement(G, {
+					if (!r) return d.a.createElement(V, {
 						className: a,
 						count: 0
 					});
-					const i = Math.max(s, e + n.length - t.length);
-					if (!o) return d.a.createElement(G, {
+					const o = Math.max(s, e + n.length - t.length),
+						i = n.length - 1,
+						c = n[i],
+						l = n.length !== t.length;
+					return d.a.createElement(V, {
+						awardId: c,
 						className: a,
-						count: i
-					});
-					const c = n.length - 1,
-						l = n[c],
-						u = n.length !== t.length;
-					return d.a.createElement(G, {
-						awardId: l,
-						className: a,
-						count: i,
-						isAnimated: u,
-						key: c
+						count: o,
+						isAnimated: l,
+						key: i
 					})
 				}
 			}
-			var H = K(W),
-				J = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				X = s.n(J);
-			const Y = {},
-				z = 1e3,
-				Z = "chat_submission_from_rte",
-				Q = h.a.form("Form", X.a),
-				$ = h.a.wrapped(C.a, "ChatButton", X.a),
-				ee = h.a.div("CloseIconWrap", X.a),
-				te = h.a.div("Reply", X.a),
-				se = h.a.div("ReplyAuthor", X.a),
-				ne = h.a.div("ReplyComment", X.a),
-				ae = h.a.wrapped(j.a, "RichTextEditor", X.a),
-				re = h.a.wrapped(f.a, "SmallChatUserIcon", X.a),
-				oe = Object(l.b)(() => Object(u.c)({
+			var W = K(G),
+				H = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
+				J = s.n(H);
+			const X = {},
+				Y = 1e3,
+				z = "chat_submission_from_rte",
+				Z = h.a.form("Form", J.a),
+				Q = h.a.wrapped(C.a, "ChatButton", J.a),
+				$ = h.a.div("CloseIconWrap", J.a),
+				ee = h.a.div("Reply", J.a),
+				te = h.a.div("ReplyAuthor", J.a),
+				se = h.a.div("ReplyComment", J.a),
+				ne = h.a.wrapped(j.a, "RichTextEditor", J.a),
+				ae = h.a.wrapped(f.a, "SmallChatUserIcon", J.a),
+				re = Object(l.b)(() => Object(u.c)({
 					draft: S.i,
 					errorMsgs: S.J,
 					hasError: S.w,
@@ -643,7 +636,7 @@
 						}))
 					}
 				});
-			class ie extends d.a.Component {
+			class oe extends d.a.Component {
 				constructor(e) {
 					super(e), this.focusOnForm = () => this.editor && this.editor.focus(), this.setRTEComponentRef = e => this.editor = e, this.handleCancel = e => {
 						e.preventDefault(), this.props.onCancelEdit && this.props.onCancelEdit()
@@ -655,7 +648,7 @@
 						})), this.props.isLivestreaming && t && this.passChangeToLivestreaming()
 					}, this.handleFocus = () => {
 						this.props.isLivestreaming && this.passChangeToLivestreaming()
-					}, this.passChangeToLivestreaming = i()(() => this.props.onLivestreamingChatMessageEdit(), z, {
+					}, this.passChangeToLivestreaming = i()(() => this.props.onLivestreamingChatMessageEdit(), Y, {
 						leading: !1,
 						trailing: !0
 					}), this.onClickGiveAward = async () => {
@@ -731,42 +724,42 @@
 						hk: "3yojgj"
 					}), h = i.isGildable && s && !t, p = s;
 					return d.a.createElement("div", {
-						className: Object(m.a)(X.a.FormWrapper, {
-							[X.a.LivestreamingWrapper]: s
+						className: Object(m.a)(J.a.FormWrapper, {
+							[J.a.LivestreamingWrapper]: s
 						})
-					}, !t && l && d.a.createElement(te, {
+					}, !t && l && d.a.createElement(ee, {
 						className: Object(m.a)({
-							[X.a.isLivestreaming]: s
+							[J.a.isLivestreaming]: s
 						})
-					}, d.a.createElement(ne, {
+					}, d.a.createElement(se, {
 						onClick: this.handleCloseReply
-					}, d.a.createElement(se, null, n.fbt._("Replying to u/ {username}:", [n.fbt._param("username", l.author)], {
+					}, d.a.createElement(te, null, n.fbt._("Replying to u/ {username}:", [n.fbt._param("username", l.author)], {
 						hk: "2YZre5"
 					})), d.a.createElement(v.a, {
-						className: X.a.RichTextJson,
+						className: J.a.RichTextJson,
 						key: "rich-text-".concat(l.id),
 						content: Object(I.a)(l),
-						rtJsonElementProps: Y
-					}), d.a.createElement(ee, null, d.a.createElement(k.a, null)))), d.a.createElement("div", {
-						className: X.a.inputLine
-					}, d.a.createElement(Q, {
+						rtJsonElementProps: X
+					}), d.a.createElement($, null, d.a.createElement(k.a, null)))), d.a.createElement("div", {
+						className: J.a.inputLine
+					}, d.a.createElement(Z, {
 						className: Object(m.a)({
-							[X.a.Editing]: t
+							[J.a.Editing]: t
 						}),
 						onSubmit: this.handleSubmit,
 						onReset: this.handleCancel
-					}, d.a.createElement(ce, {
+					}, d.a.createElement(ie, {
 						isEditing: !!t,
 						isLivestreaming: !!s
-					}), d.a.createElement(ae, {
-						className: Object(m.a)(X.a.RichTextEditor, {
-							[X.a.Livestreaming]: s && !t,
-							[X.a.Editing]: !s && t
+					}), d.a.createElement(ne, {
+						className: Object(m.a)(J.a.RichTextEditor, {
+							[J.a.Livestreaming]: s && !t,
+							[J.a.Editing]: !s && t
 						}),
 						focusableContentRTEClassName: Object(m.a)({
-							[X.a.LivestreamingFocusableContent]: s && !t
+							[J.a.LivestreamingFocusableContent]: s && !t
 						}),
-						dataTestId: Z,
+						dataTestId: z,
 						editorType: y.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: s ? 20 : void 0,
@@ -778,47 +771,47 @@
 						placeholderText: u,
 						readOnly: o,
 						showSubmitButton: p,
-						submitButtonClassName: X.a.insetSubmitButton,
+						submitButtonClassName: J.a.insetSubmitButton,
 						submitOnEnter: !0,
 						trackToolbarClick: r.a,
 						hideToolbar: !0,
 						noBorder: !0,
 						isChatPost: !0
-					}), t && d.a.createElement($, {
-						className: Object(m.a)(X.a.ChatButton, {
-							[X.a.LivestreamingResetButton]: s
+					}), t && d.a.createElement(Q, {
+						className: Object(m.a)(J.a.ChatButton, {
+							[J.a.LivestreamingResetButton]: s
 						}),
 						type: "reset"
-					}, d.a.createElement(k.a, null)), !p && d.a.createElement($, {
-						className: Object(m.a)(X.a.ChatButton, {
-							[X.a.LivestreamingChatButton]: s && !t,
-							[X.a.LivestreamingResetButton]: s && t
+					}, d.a.createElement(k.a, null)), !p && d.a.createElement(Q, {
+						className: Object(m.a)(J.a.ChatButton, {
+							[J.a.LivestreamingChatButton]: s && !t,
+							[J.a.LivestreamingResetButton]: s && t
 						}),
 						type: "submit",
 						disabled: !this.canSubmit(),
 						"aria-label": n.fbt._("send a message", null, {
 							hk: "4bL65Y"
 						})
-					}, d.a.createElement(A.a, null))), h && d.a.createElement($, {
-						className: Object(m.a)(X.a.ChatButton, {
-							[X.a.LivestreamingChatButton]: s,
-							[X.a.leftPad]: !p
+					}, d.a.createElement(A.a, null))), h && d.a.createElement(Q, {
+						className: Object(m.a)(J.a.ChatButton, {
+							[J.a.LivestreamingChatButton]: s,
+							[J.a.leftPad]: !p
 						}),
 						"aria-label": n.fbt._("give award", null, {
 							hk: "1nXRWY"
 						}),
 						onClick: this.onClickGiveAward
-					}, d.a.createElement(H, {
+					}, d.a.createElement(W, {
 						postId: c
 					}))), this.state.showError && Object(O.c)(e))
 				}
 			}
-			const ce = e => {
+			const ie = e => {
 				let {
 					isEditing: t,
 					isLivestreaming: s
 				} = e;
-				return s ? null : t ? d.a.createElement(re, {
+				return s ? null : t ? d.a.createElement(ae, {
 					height: 20,
 					width: 20
 				}) : d.a.createElement(f.a, {
@@ -826,7 +819,7 @@
 					width: 25
 				})
 			};
-			t.default = oe(ie)
+			t.default = re(oe)
 		},
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1424,21 +1417,21 @@
 			})), s.d(t, "h", (function() {
 				return S
 			})), s.d(t, "c", (function() {
-				return F
+				return R
 			})), s.d(t, "g", (function() {
 				return D
 			})), s.d(t, "k", (function() {
-				return P
-			})), s.d(t, "j", (function() {
 				return M
+			})), s.d(t, "j", (function() {
+				return P
 			})), s.d(t, "e", (function() {
 				return B
 			})), s.d(t, "a", (function() {
-				return G
-			})), s.d(t, "i", (function() {
 				return K
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "i", (function() {
 				return q
+			})), s.d(t, "b", (function() {
+				return G
 			})), s.d(t, "d", (function() {
 				return W
 			})), s.d(t, "f", (function() {
@@ -1605,13 +1598,13 @@
 					})
 				}, (e, t, s, n, a) => !e || s.includes(e) || n.includes(e) ? t || a[0] : e),
 				T = Object(n.a)(f, j, A, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				R = Object(n.a)(f, j, (e, t) => {
+				F = Object(n.a)(f, j, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				F = Object(a.a)(Object(n.a)(L, O, (e, t) => e ? t[e] : void 0)),
+				R = Object(a.a)(Object(n.a)(L, O, (e, t) => e ? t[e] : void 0)),
 				D = Object(a.a)(Object(n.a)(T, O, (e, t) => e ? t[e] : void 0)),
-				P = Object(a.a)(Object(n.a)(R, O, (e, t) => e ? t[e] : void 0)),
-				M = (Object(a.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, O, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
+				M = Object(a.a)(Object(n.a)(F, O, (e, t) => e ? t[e] : void 0)),
+				P = (Object(a.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, O, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)((e, t) => {
 					let {
@@ -1639,19 +1632,19 @@
 				return s[t] >= s[e]
 			}
 			const V = Object(n.a)(L, g, (e, t) => e && t.timestamps[e] || 0);
-			var G;
+			var K;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(G || (G = {}));
-			const K = Object(n.a)(L, O, p.b, (e, t, s) => {
-					if (s) return G.INTRO;
+			}(K || (K = {}));
+			const q = Object(n.a)(L, O, p.b, (e, t, s) => {
+					if (s) return K.INTRO;
 					const n = e && t[e];
-					if (!n) return G.UNAVAILABLE;
+					if (!n) return K.UNAVAILABLE;
 					const a = n.stream.state;
-					return a === i.a.IS_LIVE || a === i.a.DISCONNECTED ? G.LIVE : a === i.a.ENDED && n.stream.vod_accessible ? G.VOD : G.UNAVAILABLE
+					return a === i.a.IS_LIVE || a === i.a.DISCONNECTED ? K.LIVE : a === i.a.ENDED && n.stream.vod_accessible ? K.VOD : K.UNAVAILABLE
 				}),
-				q = Object(n.a)(F, K, p.b, l.b, l.o, (e, t, s, n, a) => s ? n : e ? t === G.LIVE || t === G.VOD ? e.stream.hls_url : a : void 0),
-				W = Object(n.a)(F, K, V, (e, t, s) => e ? t === G.LIVE ? e.broadcast_time : t === G.VOD && s < e.broadcast_time ? s : 0 : 0),
+				G = Object(n.a)(R, q, p.b, l.b, l.o, (e, t, s, n, a) => s ? n : e ? t === K.LIVE || t === K.VOD ? e.stream.hls_url : a : void 0),
+				W = Object(n.a)(R, q, V, (e, t, s) => e ? t === K.LIVE ? e.broadcast_time : t === K.VOD && s < e.broadcast_time ? s : 0 : 0),
 				H = (e, t) => {
 					const s = b(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -1673,21 +1666,7 @@
 				i = Object(n.a)(o, r.n, (e, t) => t && !e.isIntroFinished),
 				c = Object(n.a)(o, e => e.lastChatActivityUtcTs),
 				d = e => !!e && e + a.a > Date.now()
-		},
-		"./src/reddit/selectors/experiments/goldRpanLivePreview.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return r
-			}));
-			var n = s("./src/reddit/constants/experiments.ts"),
-				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => {
-				return Object(a.b)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: n.ob
-				}) === n.tb.Enabled
-			}
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.69ef622670e91d14e0c2.js.map
+//# sourceMappingURL=ChatMessageInput.c123165b2bfd86c6f68f.js.map
