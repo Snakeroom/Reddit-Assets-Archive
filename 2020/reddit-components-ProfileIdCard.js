@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.e1fb29d89d0eac707519.js
-// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4236d9543144b5bbbc5f.js
+// Retrieved at 8/24/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -731,11 +731,11 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
-			const i = e => s.a.Enabled === Object(r.c)(e, {
+			const i = e => s.a.Enabled === Object(r.b)(e, {
 					experimentEligibilitySelector: o.H,
 					experimentName: s.c
 				}),
-				a = e => s.b.Enabled === Object(r.c)(e, {
+				a = e => s.b.Enabled === Object(r.b)(e, {
 					experimentEligibilitySelector: o.H,
 					experimentName: s.d
 				})
@@ -758,4 +758,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ProfileIdCard.e1fb29d89d0eac707519.js.map
+//# sourceMappingURL=reddit-components-ProfileIdCard.4236d9543144b5bbbc5f.js.map

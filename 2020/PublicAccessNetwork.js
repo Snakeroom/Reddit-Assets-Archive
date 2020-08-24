@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.258d98a9c810bbcf6d18.js
-// Retrieved at 8/24/2020, 1:00:38 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1376c99f3df836e2bd9c.js
+// Retrieved at 8/24/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -283,18 +283,18 @@
 				m = s("./src/reddit/constants/experiments.ts"),
 				u = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const p = Object(r.a)(e => {
-				const t = Object(u.c)(e, {
+				const t = Object(u.b)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Db
+					experimentName: m.Bb
 				});
-				return Object(m.Cc)(t) ? void 0 : t
+				return Object(m.Ac)(t) ? void 0 : t
 			}, e => {
-				const t = Object(u.c)(e, {
+				const t = Object(u.b)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Eb
+					experimentName: m.Cb
 				});
-				return Object(m.Cc)(t) ? void 0 : t
-			}, (e, t) => e === m.Fb.Enabled && t === m.Fb.Enabled);
+				return Object(m.Ac)(t) ? void 0 : t
+			}, (e, t) => e === m.Db.Enabled && t === m.Db.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "0fac93d-production"
+					SENTRY_RELEASE_VERSION: "14399b9-production"
 				}),
 				O = {
 					anonymousUserId: "t2_anonymous",
@@ -5516,7 +5516,7 @@
 			var a = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => {
-				return Object(n.c)(e, {
+				return Object(n.b)(e, {
 					experimentEligibilitySelector: n.a,
 					experimentName: a.ob
 				}) === a.tb.Enabled
@@ -5524,4 +5524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.258d98a9c810bbcf6d18.js.map
+//# sourceMappingURL=PublicAccessNetwork.1376c99f3df836e2bd9c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.0d1a05143d3df558d9d8.js
-// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.15c106abe09d43a85b86.js
+// Retrieved at 8/24/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~ProfilePosts~ProfilePrivate~SearchRes~77b3dad4", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3975,11 +3975,11 @@
 				Ht = s("./src/reddit/helpers/chooseVariant/index.ts");
 
 			function Vt(e) {
-				const t = Object(Ht.c)(e, {
+				const t = Object(Ht.b)(e, {
 					experimentEligibilitySelector: Ht.a,
 					experimentName: Wt.bb
 				});
-				return !(!t || Object(Wt.Cc)(t))
+				return !(!t || Object(Wt.Ac)(t))
 			}
 			var Ut = s("./src/reddit/selectors/gold/powerups.ts"),
 				Gt = s("./src/reddit/selectors/userPrefs.ts"),
@@ -4026,11 +4026,11 @@
 					flair: _.e,
 					focused: _.u,
 					highlightAnimationEnabled: e => (function(e) {
-						const t = Object(Ht.c)(e, {
+						const t = Object(Ht.b)(e, {
 							experimentEligibilitySelector: Ht.a,
 							experimentName: Wt.Y
 						});
-						return !(!t || Object(Wt.Cc)(t))
+						return !(!t || Object(Wt.Ac)(t))
 					})(e) && !Object(Gt.c)(e),
 					highlightTagsEnabled: Vt,
 					isEditing: _.z,
@@ -4400,11 +4400,11 @@
 					});
 					if (o && s.type === h.a.Comment) {
 						n = O(o.treatmentTags, function(e) {
-							const t = Object(Ht.c)(e, {
+							const t = Object(Ht.b)(e, {
 								experimentEligibilitySelector: Ht.a,
 								experimentName: Wt.Z
 							});
-							return !(!t || Object(Wt.Cc)(t))
+							return !(!t || Object(Wt.Ac)(t))
 						}(e))
 					}
 					return n
@@ -4984,7 +4984,7 @@
 				O = s.n(C);
 			const y = Object(i.b)(() => Object(d.c)({
 					isChatPostExperiment: g.d,
-					isPostSEOEligible: x.f,
+					isPostSEOEligible: x.b,
 					postPermalink: f.N,
 					shouldOpenPostInNewTab: v.U
 				})),
@@ -5137,7 +5137,7 @@
 				}),
 				M = Object(c.c)({
 					isLoggedIn: w.H,
-					postSEOV2IdCardVariant: k.i,
+					postSEOV2IdCardVariant: k.e,
 					widgets: Object(p.a)(j.r)
 				}),
 				L = Object(d.b)(M);
@@ -5163,7 +5163,7 @@
 						post: o,
 						isFakeOverlay: r,
 						postSEOV2IdCardVariant: i
-					} = this.props, d = !Object(k.d)(i) && !Object(k.g)(i);
+					} = this.props, d = !Object(k.a)(i) && !Object(k.c)(i);
 					return a.a.createElement(v.a, {
 						adComponentOnFakeOverlay: r,
 						adComponent: d ? a.a.createElement(x.a, {
@@ -5192,7 +5192,7 @@
 						widgets: c
 					} = this.props;
 					let p = 0;
-					const h = Object(k.d)(r) || Object(k.g)(r),
+					const h = Object(k.a)(r) || Object(k.c)(r),
 						b = a.a.createElement(x.a, {
 							postId: o.id,
 							isOverlay: n,
@@ -5271,8 +5271,8 @@
 				hasDismissedTruncation: u.b,
 				isGQLLoggedIn: b.G,
 				isLoggedIn: b.H,
-				isPostSEOEligible: h.f,
-				postSEOV2TruncatedVariant: h.j
+				isPostSEOEligible: h.b,
+				postSEOV2TruncatedVariant: h.f
 			}), y = Object(r.b)(O);
 			class E extends o.a.Component {
 				render() {
@@ -11578,7 +11578,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.Cc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.Ac)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -11608,7 +11608,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Cc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Ac)(o), p = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -17112,7 +17112,7 @@
 					newCommentsCount: ee.D,
 					origin: de.l,
 					post: ee.G,
-					postSEOV2IdCardVariant: ae.i,
+					postSEOV2IdCardVariant: ae.e,
 					profileCollectionsEnabled: Q.a,
 					replyComment: (e, t) => {
 						let {
@@ -17407,7 +17407,7 @@
 						subredditOrProfile: u,
 						profileCollectionsEnabled: h,
 						isInCommentsPageAdExperiment: b
-					} = this.props, g = Object(ae.g)(l);
+					} = this.props, g = Object(ae.c)(l);
 					if (!d) {
 						if (t) return x.a.createElement(Ce.f, null);
 						const s = this.renderPageError();
@@ -17898,7 +17898,7 @@
 				r = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				i = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = e => o.e[Object(r.N)(e, {})] === o.d.Card,
-				d = e => Object(i.c)(e, {
+				d = e => Object(i.b)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: n.D
 				}) === n.L.Treatment
@@ -17913,7 +17913,7 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.a)(i.H, i.G, (e, t) => e || t),
-				d = Object(n.a)(e => Object(r.c)(e, {
+				d = Object(n.a)(e => Object(r.b)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: o.r
 				}), e => e === o.y.Enabled)
@@ -17926,11 +17926,11 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => {
-				const t = Object(o.c)(e, {
+				const t = Object(o.b)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: n.G
 				});
-				return !!t && !Object(n.Cc)(t)
+				return !!t && !Object(n.Ac)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -17941,11 +17941,11 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => {
-				const t = Object(o.c)(e, {
+				const t = Object(o.b)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: n.V
 				});
-				return !(!t || Object(n.Cc)(t))
+				return !(!t || Object(n.Ac)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -17962,4 +17962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.0d1a05143d3df558d9d8.js.map
+//# sourceMappingURL=CommentsPage.15c106abe09d43a85b86.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.5b44f649f9d2265abf5c.js
-// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.673b159e72eff7e39672.js
+// Retrieved at 8/24/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -245,12 +245,12 @@
 						posts: n
 					})) : null
 				}),
-				q = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				z = n("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
+				z = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				q = n("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
 				$ = n("./src/reddit/selectors/subreddit.ts");
 			var ee = Object(d.b)(Object(c.c)({
 					communities: $.g
-				}))(Object(q.c)(e => o.a.createElement(z.b, {
+				}))(Object(z.c)(e => o.a.createElement(q.b, {
 					className: e.className,
 					communities: e.communities,
 					getClickEventFactory: e.getClickEventFactory,
@@ -320,8 +320,8 @@
 						trendingSubredditIds: b
 					} = this.props, p = i && d, g = [...ne.l];
 					p && g.unshift(ne.g);
-					const h = c === te.Bb.Rotate,
-						x = c === te.Bb.RotateAll;
+					const h = c === te.zb.Rotate,
+						x = c === te.zb.RotateAll;
 					let _ = ne.m;
 					return p && (h ? _ = this.state.random > .5 ? ne.g : ne.m : x && (_ = g[this.state.randomIndex])), o.a.createElement(P.a, {
 						className: t
@@ -1026,16 +1026,16 @@
 
 			function r(e) {
 				const t = i(e);
-				return t === s.Bb.Rotate || t === s.Bb.RotateAll
+				return t === s.zb.Rotate || t === s.zb.RotateAll
 			}
 
 			function i(e) {
-				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.c)(e, {
+				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.b)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Ab
+					experimentName: s.yb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.5b44f649f9d2265abf5c.js.map
+//# sourceMappingURL=FrontpageSidebar.673b159e72eff7e39672.js.map

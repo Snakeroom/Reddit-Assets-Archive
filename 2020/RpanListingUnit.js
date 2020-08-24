@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.dd5df07b6fd2bc16fcdf.js
-// Retrieved at 8/24/2020, 1:00:38 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.23eac0fba6f0bc9f15ee.js
+// Retrieved at 8/24/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -24,18 +24,18 @@
 				h = s("./src/reddit/constants/experiments.ts"),
 				u = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const m = Object(n.a)(e => {
-				const t = Object(u.c)(e, {
+				const t = Object(u.b)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: h.Db
+					experimentName: h.Bb
 				});
-				return Object(h.Cc)(t) ? void 0 : t
+				return Object(h.Ac)(t) ? void 0 : t
 			}, e => {
-				const t = Object(u.c)(e, {
+				const t = Object(u.b)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: h.Eb
+					experimentName: h.Cb
 				});
-				return Object(h.Cc)(t) ? void 0 : t
-			}, (e, t) => e === h.Fb.Enabled && t === h.Fb.Enabled);
+				return Object(h.Ac)(t) ? void 0 : t
+			}, (e, t) => e === h.Db.Enabled && t === h.Db.Enabled);
 			var b = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -53,15 +53,15 @@
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return Math.trunc(e).toString(16).padStart(t, "0")
 				};
-			var E;
+			var S;
 			! function(e) {
 				e.SHA1 = "SHA-1", e.SHA256 = "SHA-256", e.SHA384 = "SHA-384", e.SHA512 = "SHA-512"
-			}(E || (E = {}));
-			const S = async e => (async (e, t) => {
+			}(S || (S = {}));
+			const E = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					i = await crypto.subtle.digest(e, s);
 				return Array.from(new Uint8Array(i)).map(g).join("")
-			})(E.SHA1, e);
+			})(S.SHA1, e);
 
 			function y() {
 				return (y = Object.assign || function(e) {
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "0fac93d-production"
+					SENTRY_RELEASE_VERSION: "14399b9-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -106,7 +106,7 @@
 					envKey: u,
 					localStorageSaltKey: b,
 					localStorageViewerUserIdKey: g,
-					playerName: E,
+					playerName: S,
 					playerVersion: x,
 					respectDoNotTrack: _,
 					saltLength: w,
@@ -194,7 +194,7 @@
 							t = this.getOrCreateSalt(),
 							s = f(),
 							i = "".concat(s).concat(e).concat(t);
-						return (await S(i)).substr(0, j.VIEWER_USER_ID_LENGTH)
+						return (await E(i)).substr(0, j.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -256,7 +256,7 @@
 						}
 					}
 				}
-				j.displayName = R(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = c, j.DISABLE_COOKIES = h, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = u, j.LOCAL_STORAGE_SALT_KEY = b, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = E, j.PLAYER_VERSION = x, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = w, j.SALT_TIME_TO_LIVE = C, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = T;
+				j.displayName = R(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = c, j.DISABLE_COOKIES = h, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = u, j.LOCAL_STORAGE_SALT_KEY = b, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = S, j.PLAYER_VERSION = x, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = w, j.SALT_TIME_TO_LIVE = C, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = T;
 				const A = Object(i.forwardRef)((e, t) => r.a.createElement(j, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -548,7 +548,7 @@
 			s.d(t, "a", (function() {
 				return g
 			})), s.d(t, "b", (function() {
-				return S
+				return E
 			})), s.d(t, "c", (function() {
 				return y
 			})), s.d(t, "d", (function() {
@@ -656,7 +656,7 @@
 					}
 				}
 			}));
-			const E = (e, t) => {
+			const S = (e, t) => {
 				const s = Object(p.n)(e, t),
 					i = Object(v.H)(e, t);
 				return {
@@ -665,7 +665,7 @@
 					subredditOrProfile: i
 				}
 			};
-			var S = Object(a.b)(() => Object(n.a)(E, e => e))(e => r.a.createElement(b, {
+			var E = Object(a.b)(() => Object(n.a)(S, e => e))(e => r.a.createElement(b, {
 				type: "commentAuthor",
 				data: {
 					author: e.comment.author,
@@ -906,7 +906,7 @@
 			}
 			const g = 1e4;
 
-			function E(e, t) {
+			function S(e, t) {
 				return {
 					startedAt: e,
 					expectedAt: e + t,
@@ -914,7 +914,7 @@
 				}
 			}
 
-			function S(e) {
+			function E(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 				const s = y(e, arguments.length > 2 ? arguments[2] : void 0);
 				for (var i = arguments.length, r = new Array(i > 3 ? i - 3 : 0), a = 3; a < i; a++) r[a - 3] = arguments[a];
@@ -923,7 +923,7 @@
 					const s = Date.now();
 					for (var i = arguments.length, r = new Array(i > 2 ? i - 2 : 0), a = 2; a < i; a++) r[a - 2] = arguments[a];
 					return setTimeout((function() {
-						const i = E(s, t);
+						const i = S(s, t);
 						for (var r = arguments.length, a = new Array(r), n = 0; n < r; n++) a[n] = arguments[n];
 						return e(i, ...a)
 					}), t, ...r)
@@ -1004,7 +1004,7 @@
 						value: e,
 						done: t
 					} = this.delayIterator.next();
-					t || "number" != typeof e || (this.timeout = S(this.handleTimeout, e))
+					t || "number" != typeof e || (this.timeout = E(this.handleTimeout, e))
 				}
 				pauseHeartbeats() {
 					this.pauseWatchTimer(), this.watchTimer.lap(), this.emitHeartbeat(), this.clearTimeout()
@@ -1692,4 +1692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.dd5df07b6fd2bc16fcdf.js.map
+//# sourceMappingURL=RpanListingUnit.23eac0fba6f0bc9f15ee.js.map
