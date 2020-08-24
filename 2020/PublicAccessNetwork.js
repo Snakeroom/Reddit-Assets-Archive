@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.484ab99c10f29bd5fb64.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.87d5b8a48843550040d1.js
+// Retrieved at 8/24/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "20ac1c3-production"
+					SENTRY_RELEASE_VERSION: "8e48e94-production"
 				}),
 				O = {
 					anonymousUserId: "t2_anonymous",
@@ -5506,4 +5506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.484ab99c10f29bd5fb64.js.map
+//# sourceMappingURL=PublicAccessNetwork.87d5b8a48843550040d1.js.map
