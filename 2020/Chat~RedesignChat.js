@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a793edbfa4cd26824f8c.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.56a2847b1fd03d14f3ab.js
+// Retrieved at 8/24/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1049,9 +1049,8 @@
 				}, D = "MESSAGE__ADD_PENDING_ONE", A = Object(o.a)(D), L = (e, t, n) => async (a, s) => {
 					const c = s();
 					if (Object(_.b)(t) && 1 === t.split(" ").length) return void F(a, c, e, t);
-					const r = Object(E.a)(c, e, t, n),
-						o = n === d.b.TEXT ? t : "";
-					a(A(r)), a(T(e, o, r.data))
+					const r = Object(E.a)(c, e, t, n);
+					a(A(r)), a(T(e, t, r.data))
 				}, U = (e, t) => async (n, a) => {
 					const s = a(),
 						c = Object(S.h)(s, t);
@@ -14202,4 +14201,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Chat~RedesignChat.a793edbfa4cd26824f8c.js.map
+//# sourceMappingURL=Chat~RedesignChat.56a2847b1fd03d14f3ab.js.map
