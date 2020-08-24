@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7d35e5db924c426510e6.js
-// Retrieved at 8/24/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c65ec13c813ade7c4828.js
+// Retrieved at 8/24/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -19016,6 +19016,7 @@
 		"./src/reddit/components/RecurringPostList/RecurringPost/index.m.less": function(e, t, s) {
 			e.exports = {
 				container: "_29n8ITXzfA7e5YAUZXR5Tv",
+				failedStateIndicator: "_3wJPsvksvDytrEsrrZd1vI",
 				metaRow: "NjfRmSRZrEkWYNAACYBql",
 				replayIcon: "_17pwQtUdmIHAeybqNegNzP",
 				recurrenceRules: "rX2aiRDwgPF22x70hQxqp",
@@ -19025,7 +19026,7 @@
 		"./src/reddit/components/RecurringPostList/RecurringPost/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return P
+				return M
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -19087,46 +19088,53 @@
 				})), e.children)))),
 				O = s("./src/reddit/components/ScheduledPost/OverflowMenu/withOverflowMenu.tsx");
 			var k = Object(O.a)(e => o.a.createElement(o.a.Fragment, null, e.renderOverflowMenu())),
-				j = s("./src/reddit/helpers/scheduledPosts/index.ts"),
-				y = s("./src/reddit/helpers/trackers/scheduledPosts.ts"),
-				w = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				S = s("./src/reddit/icons/svgs/Replay/index.tsx"),
-				I = s("./src/reddit/components/RecurringPostList/RecurringPost/index.m.less"),
-				T = s.n(I);
+				j = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				y = s("./src/reddit/helpers/scheduledPosts/index.ts"),
+				w = s("./src/reddit/helpers/trackers/scheduledPosts.ts"),
+				S = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
+				I = s("./src/reddit/icons/svgs/Replay/index.tsx"),
+				T = s("./src/reddit/components/RecurringPostList/RecurringPost/index.m.less"),
+				N = s.n(T);
 			const {
-				fbt: N
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = "RECURRING_POSTS__EDIT", M = Object(a.b)(null, (e, t) => ({
+				fbt: P
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = "RECURRING_POSTS__EDIT", R = Object(a.b)(null, (e, t) => ({
 				editRecurringPostRequested: () => {
 					e(Object(c.c)({
 						id: t.item.id,
 						subredditId: t.item.subreddit.id
-					})), e((e, t) => Object(r.a)(Object(y.g)()(t()))), e(Object(d.i)(P))
+					})), e((e, t) => Object(r.a)(Object(w.g)()(t()))), e(Object(d.i)(M))
 				},
 				onOpenOverflow: () => {
-					e((e, t) => Object(r.a)(Object(y.l)(!0)(t())))
+					e((e, t) => Object(r.a)(Object(w.l)(!0)(t())))
 				},
 				onUpdateMetadata: s => e(Object(c.b)(s, t.item))
 			}));
-			class R extends o.a.PureComponent {
+			class L extends o.a.PureComponent {
 				render() {
 					const {
 						className: e,
 						item: t,
 						editRecurringPostRequested: s
-					} = this.props, n = Object(j.e)(t);
+					} = this.props, n = Object(y.e)(t), a = t.state === g.e.FAILED;
 					return o.a.createElement("div", {
-						className: Object(i.a)(e, T.a.container)
-					}, o.a.createElement("div", {
-						className: T.a.metaRow
-					}, o.a.createElement(S.a, {
-						className: T.a.replayIcon
+						className: Object(i.a)(e, N.a.container)
+					}, a && o.a.createElement("div", {
+						className: N.a.failedStateIndicator
+					}, P._("Recurring post failed to submit. {Link: update recurring scheduled post} to reset", [P._param("Link: update recurring scheduled post", o.a.createElement(j.n, {
+						onClick: s
+					}, "Update schedule"))], {
+						hk: "3Uitas"
+					})), o.a.createElement("div", {
+						className: N.a.metaRow
+					}, o.a.createElement(I.a, {
+						className: N.a.replayIcon
 					}), o.a.createElement("div", {
-						className: T.a.recurrenceRules,
+						className: N.a.recurrenceRules,
 						title: n
 					}, n), o.a.createElement("button", {
 						onClick: s
-					}, o.a.createElement(w.a, {
-						className: T.a.pencilIcon
+					}, o.a.createElement(S.a, {
+						className: N.a.pencilIcon
 					}))), o.a.createElement(_, {
 						scheduledPost: t
 					}, o.a.createElement(k, {
@@ -19136,7 +19144,7 @@
 					})))
 				}
 			}
-			t.b = M(R)
+			t.b = R(L)
 		},
 		"./src/reddit/components/RecurringPostList/Thumbnail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -30601,4 +30609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.7d35e5db924c426510e6.js.map
+//# sourceMappingURL=ModerationPages.c65ec13c813ade7c4828.js.map
