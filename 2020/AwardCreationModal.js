@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.0b49a81cfbe980ef9665.js
-// Retrieved at 8/19/2020, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.0be9ee64021d7284e571.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -1540,6 +1540,9 @@
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx": function(e, t, a) {
 			"use strict";
+			a.d(t, "a", (function() {
+				return T
+			}));
 			var n = a("./node_modules/lodash/once.js"),
 				s = a.n(n),
 				o = a("./node_modules/react/index.js"),
@@ -1642,11 +1645,14 @@
 					return e.setAttribute("type", "date"), e.setAttribute("value", "not-a-date"), "not-a-date" !== e.value
 				}),
 				x = m.a.input("Input", v.a);
-			t.a = e => I() ? r.a.createElement(x, y({
-				type: "date"
-			}, e, {
-				onChange: t => e.onChange(t.target.value)
-			})) : r.a.createElement(w, e)
+
+			function T(e) {
+				return I() ? r.a.createElement(x, y({
+					type: "date"
+				}, e, {
+					onChange: t => e.onChange(t.target.value)
+				})) : r.a.createElement(w, e)
+			}
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1666,6 +1672,9 @@
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx": function(e, t, a) {
 			"use strict";
+			a.d(t, "a", (function() {
+				return T
+			}));
 			var n = a("./node_modules/lodash/once.js"),
 				s = a.n(n),
 				o = a("./node_modules/react/index.js"),
@@ -1767,11 +1776,14 @@
 					return e.setAttribute("type", "time"), e.setAttribute("value", "not-a-time"), "not-a-time" !== e.value
 				}),
 				x = u.a.input("TimeInput", v.a);
-			t.a = e => I() ? r.a.createElement(x, y({
-				type: "time"
-			}, e, {
-				onChange: t => e.onChange(t.target.value)
-			})) : r.a.createElement(w, e)
+
+			function T(e) {
+				return I() ? r.a.createElement(x, y({
+					type: "time"
+				}, e, {
+					onChange: t => e.onChange(t.target.value)
+				})) : r.a.createElement(w, e)
+			}
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -2030,4 +2042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.0b49a81cfbe980ef9665.js.map
+//# sourceMappingURL=AwardCreationModal.0be9ee64021d7284e571.js.map

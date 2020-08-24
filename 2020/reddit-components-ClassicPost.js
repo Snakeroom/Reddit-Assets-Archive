@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8eb0ff0daab99f30dd56.js
-// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8a96827db5cf244247f2.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1009,11 +1009,15 @@
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return i
+			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				r = s("./src/reddit/components/CrosspostBox/index.tsx"),
 				a = s("./src/reddit/components/Media/index.tsx");
-			t.a = e => {
+
+			function i(e) {
 				const {
 					post: t
 				} = e;
@@ -1453,4 +1457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost.8eb0ff0daab99f30dd56.js.map
+//# sourceMappingURL=reddit-components-ClassicPost.8a96827db5cf244247f2.js.map

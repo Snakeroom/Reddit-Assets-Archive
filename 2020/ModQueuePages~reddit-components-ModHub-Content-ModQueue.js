@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.5eccb8bba216165cc48d.js
-// Retrieved at 8/18/2020, 12:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.a3537ddb9f26653bf4ce.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -102,11 +102,11 @@
 				O = s("./src/reddit/controls/InternalLink/index.tsx"),
 				j = s("./src/reddit/selectors/meta.ts"),
 				_ = s("./src/reddit/components/ModQueueList/PostTypeFilterDropdown.m.less"),
-				I = s.n(_);
+				v = s.n(_);
 			! function(e) {
 				e.Comments = "comments", e.Posts = "links"
 			}(o || (o = {}));
-			const v = p.a.wrapped(E.b, "Row", I.a),
+			const I = p.a.wrapped(E.b, "Row", v.a),
 				P = Object(l.c)({
 					currentPage: e => e.platform.currentPage,
 					origin: j.l
@@ -114,7 +114,7 @@
 			var w = Object(i.b)(P)(e => r.a.createElement("div", null, r.a.createElement(O.a, {
 					onClick: e.sendEventWithName("content_type_both"),
 					to: Object(S.a)("".concat(e.origin).concat(e.currentPage.url), ["after", "before", "only", "page"])
-				}, r.a.createElement(v, {
+				}, r.a.createElement(I, {
 					displayText: n.fbt._("Posts and Comments", null, {
 						hk: "1ypCik"
 					}),
@@ -124,7 +124,7 @@
 					to: Object(y.a)(Object(S.a)("".concat(e.origin).concat(e.currentPage.url), ["after", "before", "page"]), {
 						only: o.Posts
 					})
-				}, r.a.createElement(v, {
+				}, r.a.createElement(I, {
 					displayText: n.fbt._("Posts", null, {
 						hk: "r23OU"
 					}),
@@ -134,7 +134,7 @@
 					to: Object(y.a)(Object(S.a)("".concat(e.origin).concat(e.currentPage.url), ["after", "before", "page"]), {
 						only: o.Comments
 					})
-				}, r.a.createElement(v, {
+				}, r.a.createElement(I, {
 					displayText: n.fbt._("Comments", null, {
 						hk: "2RdvZM"
 					}),
@@ -391,8 +391,8 @@
 				f = s("./src/reddit/controls/Button/index.tsx"),
 				C = s("./src/reddit/layout/row/Inline/index.tsx"),
 				k = s("./src/reddit/components/PaginationButtons/index.m.less"),
-				y = s.n(k),
-				S = e => l.a.createElement(C.a, {
+				y = s.n(k);
+			var S = e => l.a.createElement(C.a, {
 					className: y.a.buttonContainer
 				}, l.a.createElement(f.o, {
 					className: Object(x.a)(y.a.routerLink, {
@@ -417,8 +417,8 @@
 				O = s("./src/reddit/constants/componentSizes.ts"),
 				j = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				_ = s("./src/reddit/helpers/isComment.ts"),
-				I = s("./src/reddit/helpers/isPost.ts"),
-				v = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				v = s("./src/reddit/helpers/isPost.ts"),
+				I = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				P = s("./src/lib/logs/console.ts"),
 				w = s("./src/lib/objectSelector/index.ts"),
 				T = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.tsx"),
@@ -571,17 +571,17 @@
 				Oe = s("./src/reddit/selectors/subreddit.ts"),
 				je = s("./src/config.ts"),
 				_e = s("./src/reddit/components/ModQueueList/EmptyQueueBanner.m.less"),
-				Ie = s.n(_e);
+				ve = s.n(_e);
 			const {
-				fbt: ve
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Pe = "".concat(je.a.assetPath, "/img/snoomoji/cat_blep.png"), we = p.a.div("Container", Ie.a), Te = p.a.div("Image", Ie.a), Le = p.a.div("Title", Ie.a), Ne = p.a.div("Text", Ie.a);
+				fbt: Ie
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Pe = "".concat(je.a.assetPath, "/img/snoomoji/cat_blep.png"), we = p.a.div("Container", ve.a), Te = p.a.div("Image", ve.a), Le = p.a.div("Title", ve.a), Ne = p.a.div("Text", ve.a);
 			var Fe = () => l.a.createElement(we, null, l.a.createElement(Te, {
 					style: {
 						backgroundImage: "url(".concat(Pe, ")")
 					}
-				}), l.a.createElement(Le, null, ve._("The queue is clean!", null, {
+				}), l.a.createElement(Le, null, Ie._("The queue is clean!", null, {
 					hk: "3d14fC"
-				})), l.a.createElement(Ne, null, ve._("Kitteh is pleased", null, {
+				})), l.a.createElement(Ne, null, Ie._("Kitteh is pleased", null, {
 					hk: "3NSHqg"
 				}))),
 				Be = s("./src/reddit/components/PostList/Placeholder.tsx");
@@ -724,8 +724,8 @@
 				Ot = "BulkActions--PostFlair--Modal",
 				jt = Object(Ke.a)(et.a),
 				_t = p.a.div("CheckboxContainer", St.a),
-				It = p.a.wrapped(R.a, "Checkbox", St.a),
-				vt = p.a.wrapped(ot.b, "DropdownTriangle", St.a),
+				vt = p.a.wrapped(R.a, "Checkbox", St.a),
+				It = p.a.wrapped(ot.b, "DropdownTriangle", St.a),
 				Pt = p.a.wrapped(e => l.a.createElement(tt.b, {
 					className: e.className,
 					displayText: e.displayText,
@@ -828,11 +828,11 @@
 						className: s
 					}, l.a.createElement(_t, {
 						id: Et
-					}, l.a.createElement(It, {
+					}, l.a.createElement(vt, {
 						isHalfCheckboxSelected: e.isAnyItemSelected && !e.isSelectAll,
 						isCheckboxSelected: e.isSelectAll,
 						toggleCheckbox: S
-					}), l.a.createElement(vt, {
+					}), l.a.createElement(It, {
 						onClick: t => {
 							t.stopPropagation(), e.onOpenDropdown()
 						}
@@ -889,7 +889,7 @@
 				}, "ModToolsBulkOperations", St.a)),
 				Dt = s("./src/reddit/components/ModQueueList/index.m.less"),
 				Mt = s.n(Dt);
-			const Qt = e => Object(I.a)(e.id),
+			const Qt = e => Object(v.a)(e.id),
 				At = p.a.div("ItemContainer", Mt.a),
 				Rt = p.a.div("ButtonContainer", Mt.a),
 				Wt = Object(j.t)({
@@ -949,7 +949,7 @@
 						switch (e) {
 							case Jt.posts:
 								this.props.modQueueListingItems.forEach(e => {
-									Object(I.a)(e.id) && t.push(e.id)
+									Object(v.a)(e.id) && t.push(e.id)
 								});
 								break;
 							case Jt.comments:
@@ -964,7 +964,7 @@
 								break;
 							case Jt.postsWithFlair:
 								this.props.modQueueListingItems.forEach(e => {
-									if (Object(I.a)(e.id)) {
+									if (Object(v.a)(e.id)) {
 										const s = e;
 										s.flair && s.flair.filter(e => e.type !== Ce.f.Spoiler && e.type !== Ce.f.Nsfw).length > 0 && t.push(s.id)
 									}
@@ -972,7 +972,7 @@
 								break;
 							case Jt.selfPosts:
 								this.props.modQueueListingItems.forEach(e => {
-									if (Object(I.a)(e.id)) {
+									if (Object(v.a)(e.id)) {
 										const s = e;
 										s.media && s.media.type === ke.o.TEXT && t.push(s.id)
 									}
@@ -992,7 +992,7 @@
 							const s = "modqueue-item-[layout: ".concat(e.layout, "]-[id: ").concat(t.id, "]");
 							if (Qt(t)) {
 								const o = t,
-									n = Object(v.b)({
+									n = Object(I.b)({
 										layout: e.layout,
 										post: o
 									});
@@ -1177,7 +1177,7 @@
 						})
 					}, n))
 				},
-				I = e => {
+				v = e => {
 					var {
 						isActive: t
 					} = e, s = S(e, ["isActive"]);
@@ -1187,7 +1187,7 @@
 						})
 					}, s))
 				},
-				v = Object(x.t)(),
+				I = Object(x.t)(),
 				P = Object(i.c)({
 					postLayout: x.N,
 					redditStyle: x.A
@@ -1200,7 +1200,7 @@
 				}), (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), s), {
 					toggleTooltip: e => t.toggleTooltip(e)
 				}));
-			t.a = v(w(Object(g.c)(e => {
+			t.a = I(w(Object(g.c)(e => {
 				const {
 					sendEvent: t,
 					subredditId: s
@@ -1245,7 +1245,7 @@
 						i = () => e.toggleTooltip(l),
 						l = "layoutSwitch--" + o.layout,
 						c = o.layout === n;
-					return a.a.createElement(I, {
+					return a.a.createElement(v, {
 						"aria-label": o.text,
 						"aria-pressed": c,
 						id: l,
@@ -1377,4 +1377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.5eccb8bba216165cc48d.js.map
+//# sourceMappingURL=ModQueuePages~reddit-components-ModHub-Content-ModQueue.a3537ddb9f26653bf4ce.js.map

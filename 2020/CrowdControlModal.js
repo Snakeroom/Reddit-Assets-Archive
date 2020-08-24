@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.840af8452500a4a1ed2f.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.7e1b5c340594ccf84b61.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -47,8 +47,8 @@
 				m = o("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				u = o("./src/reddit/controls/LoadingIcon/index.tsx"),
 				C = o("./src/reddit/components/CrowdControlModal/Footer/index.m.less"),
-				p = o.n(C),
-				b = e => r.a.createElement(m.f, {
+				p = o.n(C);
+			var b = e => r.a.createElement(m.f, {
 					className: p.a.LargeButtons
 				}, !1 === e.success && r.a.createElement("p", {
 					className: p.a.errorText
@@ -67,8 +67,8 @@
 					hk: "1571hs"
 				}))),
 				w = o("./src/reddit/components/CrowdControlModal/Header/index.m.less"),
-				x = o.n(w),
-				h = e => r.a.createElement(m.h, {
+				x = o.n(w);
+			var h = e => r.a.createElement(m.h, {
 					className: x.a.header
 				}, r.a.createElement(m.p, {
 					className: x.a.title
@@ -77,8 +77,8 @@
 				})), r.a.createElement("button", {
 					onClick: e.onCloseClicked
 				}, r.a.createElement(m.b, null))),
-				k = o("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				f = o("./src/reddit/components/MiniPost/index.tsx"),
+				f = o("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				k = o("./src/reddit/components/MiniPost/index.tsx"),
 				v = o("./src/reddit/components/Settings/shared/Widgets.tsx");
 			const _ = {
 				0: {
@@ -106,53 +106,54 @@
 					subText: "Comments from users who haven’t joined your community, new users, and users with negative karma in your community are automatically collapsed."
 				}
 			};
-			var L, E = o("./src/reddit/components/CrowdControlModal/Main/index.m.less"),
-				g = o.n(E),
-				j = e => {
-					const {
-						post: t,
-						tickValue: o,
-						subredditCrowdControl: s,
-						subredditUrl: a,
-						onCrowdControlLevelUpdate: i
-					} = e;
-					return r.a.createElement(m.k, {
-						className: g.a.main
-					}, r.a.createElement(m.m, null, t && r.a.createElement(f.a, {
-						postId: t.id,
-						showSubreddit: !0,
-						crowdControlPreview: !0
-					})), r.a.createElement(v.i, {
-						direction: "column",
-						inModal: !0,
-						ticks: _,
-						min: 0,
-						max: Object.keys(_).length - 1,
-						step: 1,
-						value: o,
-						onChange: e => i(e.target.value, "crowdControlLevel"),
-						label: n.fbt._("Adjust Crowd Control", null, {
-							hk: "4oJUSP"
-						}),
-						subtext: n.fbt._("{subText}", [n.fbt._param("subText", _[o].subText)], {
-							hk: "3ZFhAV"
-						})
-					}), void 0 !== s && r.a.createElement(m.c, null, n.fbt._("Community level Crowd Control is set to {subredditCrowdControl} .", [n.fbt._param("subredditCrowdControl", r.a.createElement("strong", null, _[s].text))], {
-						hk: "3E3xPV"
-					}), " ", n.fbt._("{=Edit}", [n.fbt._param("=Edit", r.a.createElement(k.a, {
-						to: "".concat(a, "about/edit?page=safety")
-					}, n.fbt._("Edit", null, {
-						hk: "3qJOzI"
-					})))], {
-						hk: "cbCjB"
-					})))
-				},
-				O = o("./src/higherOrderComponents/asModal/index.tsx"),
+			var L = o("./src/reddit/components/CrowdControlModal/Main/index.m.less"),
+				E = o.n(L);
+
+			function g(e) {
+				const {
+					post: t,
+					tickValue: o,
+					subredditCrowdControl: s,
+					subredditUrl: a,
+					onCrowdControlLevelUpdate: i
+				} = e;
+				return r.a.createElement(m.k, {
+					className: E.a.main
+				}, r.a.createElement(m.m, null, t && r.a.createElement(k.a, {
+					postId: t.id,
+					showSubreddit: !0,
+					crowdControlPreview: !0
+				})), r.a.createElement(v.i, {
+					direction: "column",
+					inModal: !0,
+					ticks: _,
+					min: 0,
+					max: Object.keys(_).length - 1,
+					step: 1,
+					value: o,
+					onChange: e => i(e.target.value, "crowdControlLevel"),
+					label: n.fbt._("Adjust Crowd Control", null, {
+						hk: "4oJUSP"
+					}),
+					subtext: n.fbt._("{subText}", [n.fbt._param("subText", _[o].subText)], {
+						hk: "3ZFhAV"
+					})
+				}), void 0 !== s && r.a.createElement(m.c, null, n.fbt._("Community level Crowd Control is set to {subredditCrowdControl} .", [n.fbt._param("subredditCrowdControl", r.a.createElement("strong", null, _[s].text))], {
+					hk: "3E3xPV"
+				}), " ", n.fbt._("{=Edit}", [n.fbt._param("=Edit", r.a.createElement(f.a, {
+					to: "".concat(a, "about/edit?page=safety")
+				}, n.fbt._("Edit", null, {
+					hk: "3qJOzI"
+				})))], {
+					hk: "cbCjB"
+				})))
+			}
+			var j, O = o("./src/higherOrderComponents/asModal/index.tsx"),
 				N = o("./src/graphql/operations/CrowdControlLevelInfo.json"),
 				y = o("./src/lib/makeGqlRequest/index.ts");
 			! function(e) {
 				e.Off = "OFF", e.Lenient = "LENIENT", e.Medium = "MEDIUM", e.Strict = "STRICT"
-			}(L || (L = {}));
+			}(j || (j = {}));
 			var S = o("./src/graphql/operations/UpdateCrowdControlLevel.json");
 			const M = (e, t, o) => Object(y.a)(e, Object.assign(Object.assign({}, S), {
 				variables: {
@@ -273,7 +274,7 @@
 						className: A.a.body
 					}, e && r.a.createElement(r.a.Fragment, null, r.a.createElement(h, {
 						onCloseClicked: d
-					}), n && C && r.a.createElement(j, {
+					}), n && C && r.a.createElement(g, {
 						post: e,
 						crowdControlLevelInfo: n,
 						tickValue: C,
@@ -333,10 +334,10 @@
 						})
 					}
 				}),
-				k = Object(a.b)(h, (e, t) => ({
+				f = Object(a.b)(h, (e, t) => ({
 					openLightbox: t => e(Object(C.a)(t.permalink))
 				}));
-			class f extends r.a.PureComponent {
+			class k extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onClickContainer = () => {
 						const {
@@ -411,7 +412,7 @@
 					}, Object(c.a)(t.created / 1e3, !0))))))
 				}
 			}
-			t.a = k(f)
+			t.a = f(k)
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -442,4 +443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrowdControlModal.840af8452500a4a1ed2f.js.map
+//# sourceMappingURL=CrowdControlModal.7e1b5c340594ccf84b61.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.3a180e1bce746e5efe6b.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.c50f265b2697c7f2b69d.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/reddit/components/CrisisFlow/index.tsx": function(e, t, n) {
@@ -902,4 +902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportPage.3a180e1bce746e5efe6b.js.map
+//# sourceMappingURL=ReportPage.c50f265b2697c7f2b69d.js.map

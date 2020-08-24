@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e4dddb3a22bdba9085fd.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.9df788ec01377e827c45.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
@@ -154,6 +154,9 @@
 		},
 		"./src/reddit/components/Wiki/RevisionsHistory/index.tsx": function(e, t, i) {
 			"use strict";
+			i.d(t, "a", (function() {
+				return $
+			}));
 			i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/react/index.js"),
@@ -573,7 +576,8 @@
 					isRecent: !!t.isRecentRevisionsMode
 				})))
 			}))(Object(h.c)(X));
-			t.a = e => {
+
+			function $(e) {
 				const t = !!e.isRecentRevisionsMode,
 					i = Object(w.a)(Object.assign(Object.assign({}, e), {
 						isRecent: t
@@ -674,45 +678,46 @@
 			const {
 				fbt: W
 			} = i("./node_modules/fbt/lib/FbtPublic.js");
-			var y = e => {
-					const {
-						className: t,
-						isModHub: i,
-						showRevisionInfo: n,
-						subredditName: s,
-						wikiDirectory: o,
-						wikiPage: r,
-						wikiPageName: d
-					} = e;
-					let l = null;
-					return o && d === h.j ? l = a.a.createElement(j, {
-						isModHub: i,
-						subredditName: s,
-						wikiDirectory: o
-					}) : r && r.content && d === h.h ? l = a.a.createElement("div", {
-						className: T.a.automodContent
-					}, r.content.markdown) : r && r.content && (l = a.a.createElement(v.a, {
-						className: T.a.wikiHtmlContent,
-						html: r.content.html
-					})), a.a.createElement("div", {
-						className: Object(c.a)(t, T.a.container)
-					}, d === h.h && a.a.createElement("div", {
-						className: T.a.automodInfoBanner
-					}, W._("This page is used to configure AutoModerator for the subreddit, please see the {=full documentation} for information", [W._param("=full documentation", a.a.createElement("a", {
-						href: "/wiki/automoderator/full-documentation"
-					}, W._("full documentation", null, {
-						hk: "1iIGFO"
-					})))], {
-						hk: "C2ew1"
-					})), l, n && r && r.revision && a.a.createElement("div", {
-						className: T.a.revisionInfo
-					}, a.a.createElement(w.a, {
-						showTimeAgo: !0,
-						isLastRevision: !0,
-						revision: r.revision
-					})))
-				},
-				M = i("./src/reddit/components/Wiki/WikiPageContent/index.m.less"),
+
+			function y(e) {
+				const {
+					className: t,
+					isModHub: i,
+					showRevisionInfo: n,
+					subredditName: s,
+					wikiDirectory: o,
+					wikiPage: r,
+					wikiPageName: d
+				} = e;
+				let l = null;
+				return o && d === h.j ? l = a.a.createElement(j, {
+					isModHub: i,
+					subredditName: s,
+					wikiDirectory: o
+				}) : r && r.content && d === h.h ? l = a.a.createElement("div", {
+					className: T.a.automodContent
+				}, r.content.markdown) : r && r.content && (l = a.a.createElement(v.a, {
+					className: T.a.wikiHtmlContent,
+					html: r.content.html
+				})), a.a.createElement("div", {
+					className: Object(c.a)(t, T.a.container)
+				}, d === h.h && a.a.createElement("div", {
+					className: T.a.automodInfoBanner
+				}, W._("This page is used to configure AutoModerator for the subreddit, please see the {=full documentation} for information", [W._param("=full documentation", a.a.createElement("a", {
+					href: "/wiki/automoderator/full-documentation"
+				}, W._("full documentation", null, {
+					hk: "1iIGFO"
+				})))], {
+					hk: "C2ew1"
+				})), l, n && r && r.revision && a.a.createElement("div", {
+					className: T.a.revisionInfo
+				}, a.a.createElement(w.a, {
+					showTimeAgo: !0,
+					isLastRevision: !0,
+					revision: r.revision
+				})))
+			}
+			var M = i("./src/reddit/components/Wiki/WikiPageContent/index.m.less"),
 				L = i.n(M);
 			const H = Object(o.b)(() => Object(r.c)({
 					pending: x.a,
@@ -913,18 +918,18 @@
 				u = i("./src/reddit/selectors/subredditWiki.ts"),
 				h = i("./src/reddit/components/Wiki/common/LoadingPlaceholder/index.tsx"),
 				p = i("./src/reddit/components/Wiki/WikiPageDiff/index.m.less"),
-				b = i.n(p),
-				k = () => s.createElement("div", {
-					className: b.a.loadingPlaceholder
-				}, s.createElement("div", {
-					className: b.a.loadingSection
-				}, s.createElement(h.a, {
-					paragraphsCount: 1
-				})), s.createElement("div", {
-					className: b.a.loadingSection
-				}, s.createElement(h.a, {
-					paragraphsCount: 1
-				})));
+				b = i.n(p);
+			var k = () => s.createElement("div", {
+				className: b.a.loadingPlaceholder
+			}, s.createElement("div", {
+				className: b.a.loadingSection
+			}, s.createElement(h.a, {
+				paragraphsCount: 1
+			})), s.createElement("div", {
+				className: b.a.loadingSection
+			}, s.createElement(h.a, {
+				paragraphsCount: 1
+			})));
 			const g = Object(o.c)({
 					diffInfo: (e, t) => {
 						const i = Object(l.a)(t);
@@ -1627,11 +1632,15 @@
 		},
 		"./src/reddit/components/Wiki/common/ContentPlaceholder/index.tsx": function(e, t, i) {
 			"use strict";
+			i.d(t, "a", (function() {
+				return r
+			}));
 			var n = i("./node_modules/react/index.js"),
 				s = i("./src/reddit/controls/Button/index.tsx"),
 				a = i("./src/reddit/components/Wiki/common/ContentPlaceholder/index.m.less"),
 				o = i.n(a);
-			t.a = e => {
+
+			function r(e) {
 				const {
 					buttonLink: t,
 					buttonText: i,
@@ -1696,13 +1705,17 @@
 		},
 		"./src/reddit/components/Wiki/common/PageTitle/index.tsx": function(e, t, i) {
 			"use strict";
+			i.d(t, "a", (function() {
+				return d
+			}));
 			var n = i("./node_modules/react/index.js"),
 				s = i.n(n),
 				a = i("./src/lib/classNames/index.ts"),
 				o = i("./src/reddit/controls/Button/index.tsx"),
 				r = i("./src/reddit/components/Wiki/common/PageTitle/index.m.less"),
 				c = i.n(r);
-			t.a = e => {
+
+			function d(e) {
 				const {
 					buttonLink: t,
 					buttonText: i,
@@ -1918,4 +1931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e4dddb3a22bdba9085fd.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.9df788ec01377e827c45.js.map

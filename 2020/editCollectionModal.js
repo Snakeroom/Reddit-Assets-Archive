@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.82cf0e20ef6ccdffb197.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.836b9f8b8bdd6cf2e3da.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -1039,4 +1039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=editCollectionModal.82cf0e20ef6ccdffb197.js.map
+//# sourceMappingURL=editCollectionModal.836b9f8b8bdd6cf2e3da.js.map

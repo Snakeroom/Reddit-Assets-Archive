@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.91b17420860fb8c11892.js
-// Retrieved at 8/6/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.910bf4b1fe8da47be002.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -585,26 +585,27 @@
 				b = n("./src/reddit/components/Wiki/WikiPageContent/index.tsx"),
 				g = n("./src/reddit/components/Wiki/WikiPageTopBar/index.tsx"),
 				f = n("./src/reddit/components/Wiki/ModHubWikiManagement/ModHubWikiPage/index.m.less"),
-				k = n.n(f),
-				C = e => {
-					const {
-						wikiPageName: t,
-						subredditName: n
-					} = e;
-					return i.createElement("div", {
-						className: k.a.container
-					}, i.createElement(h.c, null, i.createElement(g.a, {
-						isModHub: !0,
-						wikiPageName: t,
-						subredditName: n
-					})), i.createElement(b.a, {
-						className: k.a.pageContent,
-						isModHub: !0,
-						subredditName: n,
-						wikiPageName: t
-					}))
-				},
-				v = n("./src/config.ts"),
+				k = n.n(f);
+
+			function C(e) {
+				const {
+					wikiPageName: t,
+					subredditName: n
+				} = e;
+				return i.createElement("div", {
+					className: k.a.container
+				}, i.createElement(h.c, null, i.createElement(g.a, {
+					isModHub: !0,
+					wikiPageName: t,
+					subredditName: n
+				})), i.createElement(b.a, {
+					className: k.a.pageContent,
+					isModHub: !0,
+					subredditName: n,
+					wikiPageName: t
+				}))
+			}
+			var v = n("./src/config.ts"),
 				E = n("./node_modules/fbt/lib/FbtPublic.js"),
 				y = n("./node_modules/react-redux/es/index.js"),
 				w = n("./node_modules/reselect/es/index.js"),
@@ -1461,4 +1462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Wiki-ModHubWikiManagement.91b17420860fb8c11892.js.map
+//# sourceMappingURL=reddit-components-Wiki-ModHubWikiManagement.910bf4b1fe8da47be002.js.map

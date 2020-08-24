@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.6547cba3382c09eae26c.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.9aebcfacfa081c45e3e1.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit"], {
 		"./src/reddit/components/CountrySort/index.m.less": function(e, t, n) {
@@ -843,6 +843,9 @@
 		},
 		"./src/reddit/components/ListingSort/ListingSortIcon.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return x
+			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
@@ -899,7 +902,8 @@
 				[r.O.TOP]: _.a,
 				[r.O.RISING]: O
 			};
-			t.a = e => {
+
+			function x(e) {
 				let {
 					className: t,
 					sort: n
@@ -1085,4 +1089,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.6547cba3382c09eae26c.js.map
+//# sourceMappingURL=Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.9aebcfacfa081c45e3e1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.5aec1912651dd4d5d3ea.js
-// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.b7c2ffda6b2e669127ae.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -3988,11 +3988,15 @@
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return a
+			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				r = s("./src/reddit/components/CrosspostBox/index.tsx"),
 				i = s("./src/reddit/components/Media/index.tsx");
-			t.a = e => {
+
+			function a(e) {
 				const {
 					post: t
 				} = e;
@@ -5512,6 +5516,9 @@
 		},
 		"./src/reddit/components/SourceLink/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return b
+			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				r = s("./src/lib/classNames/index.ts"),
@@ -5523,7 +5530,8 @@
 				m = s("./src/lib/lessComponent.tsx");
 			const p = m.a.wrapped(d.a, "OutboundLinkIcon", l.a),
 				u = m.a.div("SourceLinkWrapper", l.a);
-			t.a = e => {
+
+			function b(e) {
 				const {
 					className: t,
 					post: s,
@@ -7782,4 +7790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfilePrivate.5aec1912651dd4d5d3ea.js.map
+//# sourceMappingURL=ProfilePrivate.b7c2ffda6b2e669127ae.js.map

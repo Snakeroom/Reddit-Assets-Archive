@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.da559e305d14b35bd140.js
-// Retrieved at 8/19/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8358997b71272b8b904e.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -1019,18 +1019,19 @@
 				Ee = a("./src/reddit/components/SubredditIcon/index.tsx"),
 				Oe = a("./src/reddit/icons/svgs/Premium/index.tsx"),
 				je = (a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./src/reddit/components/AnimatedPillBadge/index.m.less")),
-				Ie = a.n(je),
-				xe = e => {
-					const {
-						className: t,
-						text: a
-					} = e;
-					return n.a.createElement("div", {
-						className: Object(o.a)(t, Ie.a.AnimatedPillBadge)
-					}, a, n.a.createElement("div", {
-						className: Ie.a.sheen
-					}))
-				};
+				Ie = a.n(je);
+
+			function xe(e) {
+				const {
+					className: t,
+					text: a
+				} = e;
+				return n.a.createElement("div", {
+					className: Object(o.a)(t, Ie.a.AnimatedPillBadge)
+				}, a, n.a.createElement("div", {
+					className: Ie.a.sheen
+				}))
+			}
 			class Ne extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onOptionClick = () => {
@@ -2671,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.da559e305d14b35bd140.js.map
+//# sourceMappingURL=FramedGild~GildModal.8358997b71272b8b904e.js.map

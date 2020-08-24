@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.0bb5c7ee072258eaee44.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.4e01cac8fdc0d5678030.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointLegacyAnnouncement"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.m.less": function(e, n, t) {
@@ -19,7 +19,9 @@
 		},
 		"./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.tsx": function(e, n, t) {
 			"use strict";
-			t.r(n);
+			t.r(n), t.d(n, "default", (function() {
+				return g
+			}));
 			var s = t("./node_modules/react/index.js"),
 				a = t.n(s),
 				c = t("./src/lib/classNames/index.ts"),
@@ -47,7 +49,8 @@
 				v = t("./src/reddit/models/Live/index.ts"),
 				E = t("./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.m.less"),
 				_ = t.n(E);
-			n.default = e => {
+
+			function g(e) {
 				const {
 					announcement: n,
 					className: t,
@@ -130,4 +133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FeaturedLiveEntrypointLegacyAnnouncement.0bb5c7ee072258eaee44.js.map
+//# sourceMappingURL=FeaturedLiveEntrypointLegacyAnnouncement.4e01cac8fdc0d5678030.js.map

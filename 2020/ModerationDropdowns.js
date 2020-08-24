@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.5ede49a097ad42d843e1.js
-// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.8296e1a6b8d4ad05ee26.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -217,7 +217,9 @@
 		},
 		"./src/reddit/components/ModerationDropdown/_ModerationDropdown.tsx": function(e, t, s) {
 			"use strict";
-			s.r(t);
+			s.r(t), s.d(t, "default", (function() {
+				return f
+			}));
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -239,7 +241,8 @@
 			const b = i.a.wrapped(c.a, "StyledDropdown", x.a),
 				h = Object(a.a)(b),
 				C = i.a.div("Separator", x.a);
-			t.default = e => {
+
+			function f(e) {
 				const {
 					className: t,
 					unreadNotifications: s,
@@ -783,6 +786,9 @@
 		},
 		"./src/reddit/components/Reports/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return p
+			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				r = s("./src/lib/lessComponent.tsx"),
@@ -790,8 +796,9 @@
 				i = s.n(a);
 			const {
 				fbt: c
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), l = r.a.div("ReportText", i.a), d = r.a.div("ReportsTitle", i.a), p = r.a.div("Reports", i.a);
-			t.a = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), l = r.a.div("ReportText", i.a), d = r.a.div("ReportsTitle", i.a);
+
+			function p(e) {
 				const {
 					className: t,
 					modReports: s,
@@ -799,14 +806,18 @@
 				} = e;
 				return n.a.createElement("div", {
 					className: t
-				}, s && s.length > 0 && n.a.createElement(p, null, n.a.createElement(d, null, c._("Moderator Reports", null, {
+				}, s && s.length > 0 && n.a.createElement("div", {
+					className: i.a.Reports
+				}, n.a.createElement(d, null, c._("Moderator Reports", null, {
 					hk: "3hZ0oX"
 				})), s.map(e => {
 					let [t, s] = e;
 					return n.a.createElement(l, {
 						key: "mod-".concat(s)
 					}, "u/".concat(s, ": ").concat(t))
-				})), o && o.length > 0 && n.a.createElement(p, null, n.a.createElement(d, null, c._("User Reports", null, {
+				})), o && o.length > 0 && n.a.createElement("div", {
+					className: i.a.Reports
+				}, n.a.createElement(d, null, c._("User Reports", null, {
 					hk: "2KeCLz"
 				})), o.map(e => {
 					let [t, s] = e;
@@ -1405,4 +1416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.5ede49a097ad42d843e1.js.map
+//# sourceMappingURL=ModerationDropdowns.8296e1a6b8d4ad05ee26.js.map

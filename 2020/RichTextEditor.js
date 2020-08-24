@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.1200f5b55633331024d6.js
-// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.a58aab23c29d603ccf1e.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -461,22 +461,23 @@
 				F = O.a.div("Wrapper", B.a),
 				P = O.a.wrapped(M, "MarkdownModeIcon", B.a),
 				A = O.a.wrapped(R.a, "Button", B.a);
-			var D = e => {
-					const t = o.fbt._("Switch to fancy pants editor", null, {
-						hk: "1XOb4H"
-					});
-					return r.a.createElement(F, null, r.a.createElement(A, {
-						"aria-label": t,
-						setRef: e.buttonRef,
-						className: e.className,
-						onClick: e.onClick
-					}, e.isConverting && r.a.createElement(I, {
-						sizePx: 12
-					}), r.a.createElement(j.a, {
-						text: t
-					}), !e.isConverting && r.a.createElement(P, null)))
-				},
-				W = n("./src/lib/classNames/index.ts"),
+
+			function D(e) {
+				const t = o.fbt._("Switch to fancy pants editor", null, {
+					hk: "1XOb4H"
+				});
+				return r.a.createElement(F, null, r.a.createElement(A, {
+					"aria-label": t,
+					setRef: e.buttonRef,
+					className: e.className,
+					onClick: e.onClick
+				}, e.isConverting && r.a.createElement(I, {
+					sizePx: 12
+				}), r.a.createElement(j.a, {
+					text: t
+				}), !e.isConverting && r.a.createElement(P, null)))
+			}
+			var W = n("./src/lib/classNames/index.ts"),
 				H = n("./src/reddit/constants/keycodes.ts"),
 				N = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				L = n("./src/reddit/constants/componentSizes.ts"),
@@ -1125,48 +1126,49 @@
 				ee = n("./src/reddit/components/RichTextEditor/Toolbar/CommentToolbar.m.less"),
 				te = n.n(ee);
 			const ne = u.a.div("SectionSpacer", te.a);
-			var oe = e => {
-					const {
-						className: t,
-						destSubreddit: n,
-						editorKey: o,
-						editorState: s,
-						onChange: r,
-						onEmoteButtonClick: a,
+
+			function oe(e) {
+				const {
+					className: t,
+					destSubreddit: n,
+					editorKey: o,
+					editorState: s,
+					onChange: r,
+					onEmoteButtonClick: a,
+					onGifButtonClick: d,
+					onOverflowMenuClick: c,
+					readOnly: l,
+					trackOnClick: m,
+					onLinkButtonClick: u,
+					userCanUseGifs: p
+				} = e, h = Object(S.a)(s);
+				l && Object(S.b)(h);
+				const b = n && a,
+					f = d && i.a.createElement($, {
+						controlsState: h,
 						onGifButtonClick: d,
-						onOverflowMenuClick: c,
-						readOnly: l,
-						trackOnClick: m,
-						onLinkButtonClick: u,
 						userCanUseGifs: p
-					} = e, h = Object(S.a)(s);
-					l && Object(S.b)(h);
-					const b = n && a,
-						f = d && i.a.createElement($, {
-							controlsState: h,
-							onGifButtonClick: d,
-							userCanUseGifs: p
-						});
-					return i.a.createElement(H, {
-						className: t,
-						oveflowMenuDropdownId: o,
-						onOverflowMenuClick: c
-					}, d && p && f, b && i.a.createElement(X, {
-						controlsState: h,
-						subredditId: n && n.id,
-						onEmoteButtonClick: a
-					}), d && !p && f, (b || d) && i.a.createElement(ne, null), Object(N.g)(N.f, h, s, r, m), i.a.createElement(N.a, {
-						controlsState: h,
-						trackOnClick: m,
-						onLinkButtonClick: u
-					}), Object(N.g)(N.h, h, s, r, m), i.a.createElement(ne, null), Object(N.g)(N.e, h, s, r, m), i.a.createElement(ne, null), i.a.createElement(N.d, {
-						controlsState: h,
-						editorState: s,
-						trackOnClick: m,
-						onChange: r
-					}))
-				},
-				se = n("./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.tsx"),
+					});
+				return i.a.createElement(H, {
+					className: t,
+					oveflowMenuDropdownId: o,
+					onOverflowMenuClick: c
+				}, d && p && f, b && i.a.createElement(X, {
+					controlsState: h,
+					subredditId: n && n.id,
+					onEmoteButtonClick: a
+				}), d && !p && f, (b || d) && i.a.createElement(ne, null), Object(N.g)(N.f, h, s, r, m), i.a.createElement(N.a, {
+					controlsState: h,
+					trackOnClick: m,
+					onLinkButtonClick: u
+				}), Object(N.g)(N.h, h, s, r, m), i.a.createElement(ne, null), Object(N.g)(N.e, h, s, r, m), i.a.createElement(ne, null), i.a.createElement(N.d, {
+					controlsState: h,
+					editorState: s,
+					trackOnClick: m,
+					onChange: r
+				}))
+			}
+			var se = n("./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.tsx"),
 				re = n("./src/reddit/constants/componentSizes.ts"),
 				ie = n("./src/reddit/constants/componentTestIds.ts"),
 				ae = n("./src/reddit/controls/ErrorText/index.tsx"),
@@ -2832,4 +2834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.1200f5b55633331024d6.js.map
+//# sourceMappingURL=RichTextEditor.a58aab23c29d603ccf1e.js.map

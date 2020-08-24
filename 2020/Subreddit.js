@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.78731e49f3171e92aece.js
-// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3b27c4ba76947d40a18d.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -2390,6 +2390,9 @@
 		},
 		"./src/reddit/components/InfoBanners/BannerBase/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return u
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				a = n("./src/lib/classNames/index.ts"),
@@ -2398,7 +2401,8 @@
 				c = n("./src/lib/lessComponent.tsx");
 			const d = c.a.div("IconWrapper", i.a),
 				l = c.a.div("TextWrapper", i.a);
-			t.a = e => {
+
+			function u(e) {
 				const {
 					className: t,
 					color: n,
@@ -3232,13 +3236,17 @@
 		},
 		"./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Container/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return d
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				a = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/components/DiscoveryUnit/Layout/index.tsx"),
 				i = n("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Container/index.m.less"),
 				c = n.n(i);
-			t.a = e => {
+
+			function d(e) {
 				const {
 					className: t,
 					id: n,
@@ -5945,6 +5953,9 @@
 		},
 		"./src/reddit/components/Widgets/Widget/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return Ie
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				a = n("./node_modules/react-redux/es/index.js"),
@@ -6225,63 +6236,66 @@
 					textColor: e.authorFlairTextColor,
 					type: e.authorFlairType
 				},
-				fe = e => r.a.createElement(be, null, "u/".concat(e)),
-				ve = m.a.wrapped(ce.a, "InternalLink", me.a),
-				ye = m.a.div("LinkContainer", me.a);
-			var _e = e => {
-					const {
-						subredditName: t,
-						widget: n
-					} = e;
-					return r.a.createElement(c.a, {
-						styles: n.styles,
-						title: N.fbt._("Moderators", null, {
-							hk: "3AMICc"
-						}),
-						headerButton: r.a.createElement(he, {
-							href: "https://reddit.com/message/compose?to=/r/".concat(t),
-							target: "_blank"
-						}, r.a.createElement(de.a, null))
-					}, n.mods.map(e => r.a.createElement(pe, {
-						key: e.name
-					}, (e => r.a.createElement(oe.a, {
-						to: "/user/".concat(e.name, "/")
-					}, fe(e.name)))(e), r.a.createElement(ge, {
-						flair: xe(e),
-						forceSmallEmojis: !0
-					}))), r.a.createElement(ye, null, r.a.createElement(ve, {
-						to: "/r/".concat(t, "/about/moderators/")
-					}, N.fbt._("View All Moderators", null, {
-						hk: "2DIeXE"
-					}))))
-				},
-				Ee = n("./src/reddit/components/Widgets/PostFlair/index.tsx"),
-				Ce = n("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
-				Oe = n("./src/reddit/components/Widgets/TextArea/index.m.less"),
-				je = n.n(Oe);
-			const ke = m.a.div("WidgetContent", je.a),
-				we = m.a.wrapped(i.a, "RawHTMLDisplay", je.a);
-			var Ne = e => r.a.createElement(c.a, {
+				fe = e => r.a.createElement(oe.a, {
+					to: "/user/".concat(e.name, "/")
+				}, ve(e.name)),
+				ve = e => r.a.createElement(be, null, "u/".concat(e)),
+				ye = m.a.wrapped(ce.a, "InternalLink", me.a),
+				_e = m.a.div("LinkContainer", me.a);
+
+			function Ee(e) {
+				const {
+					subredditName: t,
+					widget: n
+				} = e;
+				return r.a.createElement(c.a, {
+					styles: n.styles,
+					title: N.fbt._("Moderators", null, {
+						hk: "3AMICc"
+					}),
+					headerButton: r.a.createElement(he, {
+						href: "https://reddit.com/message/compose?to=/r/".concat(t),
+						target: "_blank"
+					}, r.a.createElement(de.a, null))
+				}, n.mods.map(e => r.a.createElement(pe, {
+					key: e.name
+				}, fe(e), r.a.createElement(ge, {
+					flair: xe(e),
+					forceSmallEmojis: !0
+				}))), r.a.createElement(_e, null, r.a.createElement(ye, {
+					to: "/r/".concat(t, "/about/moderators/")
+				}, N.fbt._("View All Moderators", null, {
+					hk: "2DIeXE"
+				}))))
+			}
+			var Ce = n("./src/reddit/components/Widgets/PostFlair/index.tsx"),
+				Oe = n("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
+				je = n("./src/reddit/components/Widgets/TextArea/index.m.less"),
+				ke = n.n(je);
+			const we = m.a.div("WidgetContent", ke.a),
+				Ne = m.a.wrapped(i.a, "RawHTMLDisplay", ke.a);
+			var Se = e => r.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, r.a.createElement(ke, null, r.a.createElement(we, {
+				}, r.a.createElement(we, null, r.a.createElement(Ne, {
 					html: e.widget.textHtml || ""
 				}))),
-				Se = n("./src/reddit/components/Widgets/Base/index.tsx"),
-				Pe = e => r.a.createElement(Se.b, null, "This widget hasn't been implemented yet!");
-			t.a = e => {
+				Pe = n("./src/reddit/components/Widgets/Base/index.tsx");
+			var Te = e => r.a.createElement(Pe.b, null, "This widget hasn't been implemented yet!");
+
+			function Ie(e) {
 				const t = function(e) {
 					switch (e.kind) {
 						case "moderators":
-							return _e;
+							return Ee;
 						case "textarea":
-							return Ne;
+							return Se;
 						case "button":
 							return w;
 						case "subreddit-rules":
-							return Ce.b;
+							return Oe.b;
 						case "community-list":
 							return q;
 						case "calendar":
@@ -6291,9 +6305,9 @@
 						case "custom":
 							return Q;
 						case "post-flair":
-							return Ee.a;
+							return Ce.a;
 						default:
-							return Pe
+							return Te
 					}
 				}(e.widget);
 				return r.a.createElement(t, {
@@ -8268,4 +8282,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.78731e49f3171e92aece.js.map
+//# sourceMappingURL=Subreddit.3b27c4ba76947d40a18d.js.map

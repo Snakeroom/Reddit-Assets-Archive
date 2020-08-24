@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.114c1a8e1aec54e43422.js
-// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.fe190b0ed06a4a27a29a.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -5151,6 +5151,9 @@
 		},
 		"./src/reddit/components/Widgets/Widget/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return Pe
+			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./node_modules/react-redux/es/index.js"),
@@ -5431,63 +5434,66 @@
 					textColor: e.authorFlairTextColor,
 					type: e.authorFlairType
 				},
-				xe = e => r.a.createElement(pe, null, "u/".concat(e)),
-				ke = m.a.wrapped(de.a, "InternalLink", me.a),
-				Oe = m.a.div("LinkContainer", me.a);
-			var ye = e => {
-					const {
-						subredditName: t,
-						widget: s
-					} = e;
-					return r.a.createElement(d.a, {
-						styles: s.styles,
-						title: N.fbt._("Moderators", null, {
-							hk: "3AMICc"
-						}),
-						headerButton: r.a.createElement(he, {
-							href: "https://reddit.com/message/compose?to=/r/".concat(t),
-							target: "_blank"
-						}, r.a.createElement(ce.a, null))
-					}, s.mods.map(e => r.a.createElement(be, {
-						key: e.name
-					}, (e => r.a.createElement(ae.a, {
-						to: "/user/".concat(e.name, "/")
-					}, xe(e.name)))(e), r.a.createElement(ge, {
-						flair: fe(e),
-						forceSmallEmojis: !0
-					}))), r.a.createElement(Oe, null, r.a.createElement(ke, {
-						to: "/r/".concat(t, "/about/moderators/")
-					}, N.fbt._("View All Moderators", null, {
-						hk: "2DIeXE"
-					}))))
-				},
-				we = s("./src/reddit/components/Widgets/PostFlair/index.tsx"),
-				ve = s("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
-				je = s("./src/reddit/components/Widgets/TextArea/index.m.less"),
-				Ce = s.n(je);
-			const Ee = m.a.div("WidgetContent", Ce.a),
-				_e = m.a.wrapped(o.a, "RawHTMLDisplay", Ce.a);
-			var Ne = e => r.a.createElement(d.a, {
+				xe = e => r.a.createElement(ae.a, {
+					to: "/user/".concat(e.name, "/")
+				}, ke(e.name)),
+				ke = e => r.a.createElement(pe, null, "u/".concat(e)),
+				Oe = m.a.wrapped(de.a, "InternalLink", me.a),
+				ye = m.a.div("LinkContainer", me.a);
+
+			function we(e) {
+				const {
+					subredditName: t,
+					widget: s
+				} = e;
+				return r.a.createElement(d.a, {
+					styles: s.styles,
+					title: N.fbt._("Moderators", null, {
+						hk: "3AMICc"
+					}),
+					headerButton: r.a.createElement(he, {
+						href: "https://reddit.com/message/compose?to=/r/".concat(t),
+						target: "_blank"
+					}, r.a.createElement(ce.a, null))
+				}, s.mods.map(e => r.a.createElement(be, {
+					key: e.name
+				}, xe(e), r.a.createElement(ge, {
+					flair: fe(e),
+					forceSmallEmojis: !0
+				}))), r.a.createElement(ye, null, r.a.createElement(Oe, {
+					to: "/r/".concat(t, "/about/moderators/")
+				}, N.fbt._("View All Moderators", null, {
+					hk: "2DIeXE"
+				}))))
+			}
+			var ve = s("./src/reddit/components/Widgets/PostFlair/index.tsx"),
+				je = s("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
+				Ce = s("./src/reddit/components/Widgets/TextArea/index.m.less"),
+				Ee = s.n(Ce);
+			const _e = m.a.div("WidgetContent", Ee.a),
+				Ne = m.a.wrapped(o.a, "RawHTMLDisplay", Ee.a);
+			var Se = e => r.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, r.a.createElement(Ee, null, r.a.createElement(_e, {
+				}, r.a.createElement(_e, null, r.a.createElement(Ne, {
 					html: e.widget.textHtml || ""
 				}))),
-				Se = s("./src/reddit/components/Widgets/Base/index.tsx"),
-				Ie = e => r.a.createElement(Se.b, null, "This widget hasn't been implemented yet!");
-			t.a = e => {
+				Ie = s("./src/reddit/components/Widgets/Base/index.tsx");
+			var Te = e => r.a.createElement(Ie.b, null, "This widget hasn't been implemented yet!");
+
+			function Pe(e) {
 				const t = function(e) {
 					switch (e.kind) {
 						case "moderators":
-							return ye;
+							return we;
 						case "textarea":
-							return Ne;
+							return Se;
 						case "button":
 							return _;
 						case "subreddit-rules":
-							return ve.b;
+							return je.b;
 						case "community-list":
 							return z;
 						case "calendar":
@@ -5497,9 +5503,9 @@
 						case "custom":
 							return Y;
 						case "post-flair":
-							return we.a;
+							return ve.a;
 						default:
-							return Ie
+							return Te
 					}
 				}(e.widget);
 				return r.a.createElement(t, {
@@ -6252,24 +6258,25 @@
 				j = s("./src/reddit/components/Wiki/WikiPageContent/index.tsx"),
 				C = s("./src/reddit/components/Wiki/WikiPageTopBar/index.tsx"),
 				E = s("./src/reddit/components/Wiki/CommunityWikiManagement/CommunityWikiPage/index.m.less"),
-				_ = s.n(E),
-				N = e => {
-					const {
-						wikiPageName: t,
-						subredditName: s
-					} = e;
-					return n.createElement(n.Fragment, null, n.createElement(v.a, null), n.createElement(C.a, {
-						isModHub: !1,
-						className: _.a.topBar,
-						wikiPageName: t,
-						subredditName: s
-					}), n.createElement(j.a, {
-						showRevisionInfo: !0,
-						subredditName: s,
-						wikiPageName: t
-					}))
-				},
-				S = s("./src/reddit/components/Wiki/CommunityWikiManagement/index.m.less"),
+				_ = s.n(E);
+
+			function N(e) {
+				const {
+					wikiPageName: t,
+					subredditName: s
+				} = e;
+				return n.createElement(n.Fragment, null, n.createElement(v.a, null), n.createElement(C.a, {
+					isModHub: !1,
+					className: _.a.topBar,
+					wikiPageName: t,
+					subredditName: s
+				}), n.createElement(j.a, {
+					showRevisionInfo: !0,
+					subredditName: s,
+					wikiPageName: t
+				}))
+			}
+			var S = s("./src/reddit/components/Wiki/CommunityWikiManagement/index.m.less"),
 				I = s.n(S);
 			class T extends r.a.Component {
 				render() {
@@ -7217,4 +7224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.114c1a8e1aec54e43422.js.map
+//# sourceMappingURL=SubredditWiki.fe190b0ed06a4a27a29a.js.map

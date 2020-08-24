@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.4288f4fad8d602893e3a.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.a11d800a7ce41925780d.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-TrafficStats"], {
 		"./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less": function(e, t, a) {
@@ -260,8 +260,8 @@
 					getComponent: () => Object(S.a)(() => Promise.all([a.e("vendors~ModStatsChart"), a.e("ModStatsChart")]).then(a.bind(null, "./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.tsx"))).then(e => e.default),
 					LoadingComponent: () => null,
 					ErrorComponent: () => null
-				}),
-				y = e => i.a.createElement("button", {
+				});
+			var y = e => i.a.createElement("button", {
 					className: Object(l.a)(e.className, {
 						[e.isSelectedStyles]: e.isSelected
 					}),
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-TrafficStats.4288f4fad8d602893e3a.js.map
+//# sourceMappingURL=reddit-components-ModHub-TrafficStats.a11d800a7ce41925780d.js.map

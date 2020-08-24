@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.0132526e4ab105de83c8.js
-// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.2ad110e27d294a0b80be.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -430,19 +430,20 @@
 				redditUrl: i
 			} = o.a, a = "".concat(i, "/help/contentpolicy"), d = "".concat(i, "/wiki/reddiquette");
 			var l = n("./src/reddit/components/PostingSidebar/PolicyRow/index.m.less"),
-				c = n.n(l),
-				m = n("./src/lib/lessComponent.tsx");
+				c = n.n(l);
 			const {
-				fbt: u
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = m.a.div("PolicyRow", c.a);
-			t.a = e => r.a.createElement(p, null, u._("Please be mindful of reddit's {=content policy} and practice good {=reddiquette}.", [u._param("=content policy", r.a.createElement("a", {
+				fbt: m
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			t.a = e => r.a.createElement("div", {
+				className: c.a.PolicyRow
+			}, m._("Please be mindful of reddit's {=content policy} and practice good {=reddiquette}.", [m._param("=content policy", r.a.createElement("a", {
 				href: a
-			}, u._("content policy", null, {
-				hk: "2BqdQe"
-			}))), u._param("=reddiquette", r.a.createElement("a", {
+			}, m._("content policy", null, {
+				hk: "2PeDvo"
+			}))), m._param("=reddiquette", r.a.createElement("a", {
 				href: d
-			}, u._("reddiquette", null, {
-				hk: "4ABa0M"
+			}, m._("reddiquette", null, {
+				hk: "uPdiw"
 			})))], {
 				hk: "4yQuKr"
 			}))
@@ -1259,25 +1260,26 @@
 				E = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.tsx"),
 				_ = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				k = n("./src/reddit/components/Widgets/PostCollection/PostItem/Placeholder.m.less"),
-				C = n.n(k),
-				j = e => {
-					let {
-						className: t,
-						isLoading: n
-					} = e;
-					const s = Object(_.a)({
-						isLoading: n
-					});
-					return r.a.createElement("div", {
-						className: Object(o.a)(C.a.Container, t)
-					}, r.a.createElement("div", {
-						className: C.a.Content
-					}, r.a.createElement("div", {
-						className: Object(o.a)(C.a.Title, s)
-					}), r.a.createElement("div", {
-						className: Object(o.a)(C.a.Secondary, s)
-					})))
-				};
+				C = n.n(k);
+
+			function j(e) {
+				let {
+					className: t,
+					isLoading: n
+				} = e;
+				const s = Object(_.a)({
+					isLoading: n
+				});
+				return r.a.createElement("div", {
+					className: Object(o.a)(C.a.Container, t)
+				}, r.a.createElement("div", {
+					className: C.a.Content
+				}, r.a.createElement("div", {
+					className: Object(o.a)(C.a.Title, s)
+				}), r.a.createElement("div", {
+					className: Object(o.a)(C.a.Secondary, s)
+				})))
+			}
 			const O = ["right", "bottom"],
 				P = ["right", "top"];
 			var S = Object(a.b)(() => Object(d.c)({
@@ -1928,28 +1930,29 @@
 				g = Object(m.b)(e => ({
 					renderingObjectInfo: e.draft
 				}));
-			var v = e => {
-					const {
-						draft: t
-					} = e;
-					if (!t.body) return null;
-					switch (t.kind) {
-						case p.b.RichText:
-							return t.body ? r.a.createElement(u.a, {
-								content: t.body,
-								rtJsonElementProps: g(e)
-							}) : null;
-						case p.b.Markdown:
-							return r.a.createElement(f, null, t.body);
-						case p.b.Link:
-							return r.a.createElement(f, null, r.a.createElement(x, {
-								href: t.body
-							}, t.body));
-						default:
-							return r.a.createElement(f, null)
-					}
-				},
-				y = n("./src/reddit/components/PostDraft/PostDraftFooter/index.m.less"),
+
+			function v(e) {
+				const {
+					draft: t
+				} = e;
+				if (!t.body) return null;
+				switch (t.kind) {
+					case p.b.RichText:
+						return t.body ? r.a.createElement(u.a, {
+							content: t.body,
+							rtJsonElementProps: g(e)
+						}) : null;
+					case p.b.Markdown:
+						return r.a.createElement(f, null, t.body);
+					case p.b.Link:
+						return r.a.createElement(f, null, r.a.createElement(x, {
+							href: t.body
+						}, t.body));
+					default:
+						return r.a.createElement(f, null)
+				}
+			}
+			var y = n("./src/reddit/components/PostDraft/PostDraftFooter/index.m.less"),
 				w = n.n(y);
 			const {
 				fbt: E
@@ -1989,8 +1992,8 @@
 						draft: t
 					}), r.a.createElement(O, null)))
 				})),
-				A = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				W = n("./src/reddit/layout/page/Listing/index.tsx"),
+				W = n("./src/reddit/components/PostingSidebar/index.tsx"),
+				A = n("./src/reddit/layout/page/Listing/index.tsx"),
 				F = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				z = n("./src/reddit/selectors/postDraft.ts");
 			const H = Object(c.t)(),
@@ -2013,14 +2016,14 @@
 					} = this.props;
 					if (!t || !e) return r.a.createElement(F.b, null);
 					const n = e.subredditId;
-					return r.a.createElement(W.a, {
+					return r.a.createElement(A.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: r.a.createElement("div", null),
 						content: r.a.createElement(B, {
 							draft: e
 						}),
-						sidebar: n && r.a.createElement(A.a, {
+						sidebar: n && r.a.createElement(W.a, {
 							subredditOrProfileId: n
 						})
 					})
@@ -2030,4 +2033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.0132526e4ab105de83c8.js.map
+//# sourceMappingURL=PostDraft.2ad110e27d294a0b80be.js.map

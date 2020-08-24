@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.485f1f3458730608bd2a.js
-// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.4a53589a0ff3c0ec7cee.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1023,6 +1023,9 @@
 		},
 		"./src/reddit/components/SourceLink/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return b
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./src/lib/classNames/index.ts"),
@@ -1034,7 +1037,8 @@
 				u = s("./src/lib/lessComponent.tsx");
 			const m = u.a.wrapped(i.a, "OutboundLinkIcon", l.a),
 				p = u.a.div("SourceLinkWrapper", l.a);
-			t.a = e => {
+
+			function b(e) {
 				const {
 					className: t,
 					post: s,
@@ -1584,4 +1588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.485f1f3458730608bd2a.js.map
+//# sourceMappingURL=reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.4a53589a0ff3c0ec7cee.js.map

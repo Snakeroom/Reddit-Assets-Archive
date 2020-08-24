@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.408a6d0305a217e66763.js
-// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.03afd5c4d94029ea9628.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -604,4 +604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconTopAwardersModal.408a6d0305a217e66763.js.map
+//# sourceMappingURL=EconTopAwardersModal.03afd5c4d94029ea9628.js.map

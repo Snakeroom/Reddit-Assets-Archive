@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.d7fd76030e4a0b2e4af0.js
-// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.6d12c963e330504485e4.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -4448,59 +4448,61 @@
 				ll = s.a.wrapped(Ws.a, "InlineButton", rl.a),
 				il = s.a.wrapped(ln.a, "TrashIcon", rl.a),
 				ol = s.a.div("FlairWrapper", rl.a);
-			var dl = e => {
-					const {
-						flairTemplates: t,
-						handleRemoveFlair: n,
-						order: a
-					} = e;
-					return r.a.createElement(sl, null, a.map(e => r.a.createElement(ol, null, r.a.createElement(Ts, {
-						flairTemplate: t[e],
-						flairTemplateType: Fs.d.LinkFlair
-					}), r.a.createElement(ll, {
-						onClick: () => n(e)
-					}, r.a.createElement(il, null)))))
-				},
-				cl = n("./src/reddit/components/StructuredStyles/Forms/PostFlairWidgetEditor/ReorderFlairList.m.less"),
+
+			function dl(e) {
+				const {
+					flairTemplates: t,
+					handleRemoveFlair: n,
+					order: a
+				} = e;
+				return r.a.createElement(sl, null, a.map(e => r.a.createElement(ol, null, r.a.createElement(Ts, {
+					flairTemplate: t[e],
+					flairTemplateType: Fs.d.LinkFlair
+				}), r.a.createElement(ll, {
+					onClick: () => n(e)
+				}, r.a.createElement(il, null)))))
+			}
+			var cl = n("./src/reddit/components/StructuredStyles/Forms/PostFlairWidgetEditor/ReorderFlairList.m.less"),
 				ul = n.n(cl);
 			const ml = s.a.wrapped(h.a, "Button", ul.a),
 				hl = s.a.wrapped(h.d, "SecondaryButton", ul.a),
 				pl = s.a.div("ButtonContainer", ul.a),
 				gl = e => e;
-			var bl = e => {
-					const {
-						flairTemplates: t,
-						handleCancelOrderEditing: n,
-						handleSaveOrder: a,
-						handleUpdateSort: s,
-						order: i
-					} = e;
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement(pl, null, r.a.createElement(hl, {
-						onClick: n,
-						"data-redditstyle": !0
-					}, l.fbt._("Cancel", null, {
-						hk: "2TSLl5"
-					})), r.a.createElement(ml, {
-						onClick: a,
-						"data-redditstyle": !0
-					}, l.fbt._("Save", null, {
-						hk: "3gwTS0"
-					}))), r.a.createElement(Mn.a, {
-						values: i,
-						getReactKey: gl,
-						render: (e, n, a, s, l) => r.a.createElement(bn.a, {
-							key: e,
-							isDragging: a,
-							isOver: s,
-							canDrop: l
-						}, r.a.createElement(Ts, {
-							flairTemplate: t[e],
-							flairTemplateType: Fs.d.LinkFlair
-						})),
-						onDrop: (e, t, n) => s(n)
-					}))
-				},
-				El = n("./src/reddit/components/StructuredStyles/Forms/PostFlairWidgetEditor/MainWidgetContent.m.less"),
+
+			function bl(e) {
+				const {
+					flairTemplates: t,
+					handleCancelOrderEditing: n,
+					handleSaveOrder: a,
+					handleUpdateSort: s,
+					order: i
+				} = e;
+				return r.a.createElement(r.a.Fragment, null, r.a.createElement(pl, null, r.a.createElement(hl, {
+					onClick: n,
+					"data-redditstyle": !0
+				}, l.fbt._("Cancel", null, {
+					hk: "2TSLl5"
+				})), r.a.createElement(ml, {
+					onClick: a,
+					"data-redditstyle": !0
+				}, l.fbt._("Save", null, {
+					hk: "3gwTS0"
+				}))), r.a.createElement(Mn.a, {
+					values: i,
+					getReactKey: gl,
+					render: (e, n, a, s, l) => r.a.createElement(bn.a, {
+						key: e,
+						isDragging: a,
+						isOver: s,
+						canDrop: l
+					}, r.a.createElement(Ts, {
+						flairTemplate: t[e],
+						flairTemplateType: Fs.d.LinkFlair
+					})),
+					onDrop: (e, t, n) => s(n)
+				}))
+			}
+			var El = n("./src/reddit/components/StructuredStyles/Forms/PostFlairWidgetEditor/MainWidgetContent.m.less"),
 				fl = n.n(El);
 			const vl = 30,
 				xl = 50,
@@ -8316,4 +8318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=StructuredStyles.d7fd76030e4a0b2e4af0.js.map
+//# sourceMappingURL=StructuredStyles.6d12c963e330504485e4.js.map

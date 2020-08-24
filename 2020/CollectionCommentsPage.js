@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fce818df38f8a25ff002.js
-// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f008556141897813bff5.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~ProfilePosts~ProfilePrivate~SearchRes~77b3dad4", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -7084,6 +7084,9 @@
 		},
 		"./src/reddit/components/InfoBanners/BannerBase/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return m
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./src/lib/classNames/index.ts"),
@@ -7092,7 +7095,8 @@
 				d = s("./src/lib/lessComponent.tsx");
 			const c = d.a.div("IconWrapper", a.a),
 				l = d.a.div("TextWrapper", a.a);
-			t.a = e => {
+
+			function m(e) {
 				const {
 					className: t,
 					color: s,
@@ -7157,6 +7161,9 @@
 		},
 		"./src/reddit/components/InfoBanners/CommentThreadLockedBanner/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return h
+			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
 				r = s.n(o),
@@ -7179,7 +7186,8 @@
 					className: m.a.lockIcon
 				}),
 				u = e => Object(d.g)(e) ? i.d.profile : i.d.subreddit;
-			t.a = e => {
+
+			function h(e) {
 				let {
 					subredditOrProfile: t
 				} = e;
@@ -8620,225 +8628,227 @@
 				hk: "4DbEQC"
 			});
 			var _e = e => {
-					const {
-						hasPerms: t,
-						removedBy: s,
-						removedByCategory: n,
-						subredditName: r
-					} = e, i = t ? ((e, t, s) => {
-						switch (e) {
-							case S.g.AntiEvilOps:
-								return Oe._("This post was removed by Reddit's Anti-Evil Operations team.", null, {
-									hk: "3a8CyR"
-								});
-							case S.g.Author:
-								return Oe._("This post was removed by the person who originally posted it.", null, {
-									hk: "2lyUgL"
-								});
-							case S.g.AuthorDeleted:
-								return Oe._("This post was deleted by the person who originally posted it.", null, {
-									hk: "16LeiH"
-								});
-							case S.g.AutomodFiltered:
-								return Oe._("This post was reported by automod, and is waiting for your review.", null, {
-									hk: "2E46dR"
-								});
-							case S.g.CommunityOps:
-								return Oe._("This post was removed by Reddit admin, u/{username}.", [Oe._param("username", t)], {
-									hk: "34nHWu"
-								});
-							case S.g.ContentTakedown:
-								return Oe._("This post was removed by Reddit's Legal Operations team.", null, {
-									hk: "1wmhiC"
-								});
-							case S.g.CopyrightTakedown:
-								return Oe._("This post was removed by Reddit's Legal Operations team.", null, {
-									hk: "Ukfj"
-								});
-							case S.g.Moderator:
-								return Oe._("This post was removed by r/{subredditName} moderator, u/{username}.", [Oe._param("subredditName", s), Oe._param("username", t)], {
-									hk: "270bcn"
-								});
-							case S.g.Reddit:
-								return Oe._("This post was removed by Reddit's spam filters.", null, {
-									hk: "1k3lsh"
-								});
-							default:
-								return Oe._("This post was removed by Reddit's spam filters.", null, {
-									hk: "3oxS8r"
-								})
-						}
-					})(n, s, r) : ((e, t) => {
-						switch (e) {
-							case S.g.AntiEvilOps:
-								return Oe._("Sorry, this post was removed by Reddit's Anti-Evil Operations team.", null, {
-									hk: "2ZqyRT"
-								});
-							case S.g.Author:
-								return Oe._("Sorry, this post was removed by the person who originally posted it.", null, {
-									hk: "4IRCN"
-								});
-							case S.g.AuthorDeleted:
-								return Oe._("Sorry, this post was deleted by the person who originally posted it.", null, {
-									hk: "4emmIp"
-								});
-							case S.g.AutomodFiltered:
-								return Oe._("Post is awaiting moderator approval.", null, {
-									hk: "wdGOr"
-								});
-							case S.g.CommunityOps:
-								return Oe._("Sorry, this post was removed by Reddit's Community team.", null, {
-									hk: "3fs5lF"
-								});
-							case S.g.ContentTakedown:
-								return Oe._("Sorry, this post was removed by Reddit's Legal Operations team.", null, {
-									hk: "jiKO8"
-								});
-							case S.g.CopyrightTakedown:
-								return Oe._("Sorry, this post was removed by Reddit's Legal Operations team.", null, {
-									hk: "1TbEDT"
-								});
-							case S.g.Moderator:
-								return Oe._("Sorry, this post has been removed by the moderators of r/{subredditName}.", [Oe._param("subredditName", t)], {
-									hk: "12NWKq"
-								});
-							case S.g.Reddit:
-								return Oe._("Sorry, this post was removed by Reddit's spam filters.", null, {
-									hk: "10ItEu"
-								});
-							default:
-								return Oe._("Sorry, this post has been removed", null, {
-									hk: "11sG9V"
-								})
-						}
-					})(n, r), a = t ? (e => {
-						switch (e) {
-							case S.g.AntiEvilOps:
-								return o.a.createElement(ye, null);
-							case S.g.AuthorDeleted:
-							case S.g.Author:
-								return Oe._("It won't show up in your community feed, and anyone with a direct link to it will see a message similar to this one.", null, {
-									hk: "2KZLgT"
-								});
-							case S.g.AutomodFiltered:
-								return Oe._("It won’t show up in your community feed until you or another moderator approve it.", null, {
-									hk: "2X5ECb"
-								});
-							case S.g.CommunityOps:
-								return Oe._("To keep Reddit and its communities safe, the Community team occasionally removes posts from feeds. To learn more, {=just ask} .", [Oe._param("=just ask", o.a.createElement("a", {
-									className: Ce.a.link,
-									href: "".concat(be.a.redditUrl, "/message/compose/?to=r/reddit.com"),
-									target: "_blank"
-								}, Oe._("just ask", null, {
-									hk: "jn9ip"
-								})))], {
-									hk: "3hMocZ"
-								});
-							case S.g.ContentTakedown:
-								return o.a.createElement(Ee, null);
-							case S.g.CopyrightTakedown:
-								return Oe._("This content was removed in response to a copyright claim by a third party.", null, {
-									hk: "7jiV"
-								});
-							case S.g.Moderator:
-								return Oe._("It won't show up in your community feed, and moderators will see a message similar to this one.", null, {
-									hk: "22qJOB"
-								});
-							case S.g.Reddit:
-								return Oe._("Reddit's automated bots frequently filter posts it thinks might be spam.", null, {
-									hk: "3S3oDL"
-								});
-							default:
-								return Oe._("Reddit's automated bots frequently filter posts it thinks might be spam.", null, {
-									hk: "uKfHK"
-								})
-						}
-					})(n) : ((e, t) => {
-						switch (e) {
-							case S.g.AntiEvilOps:
-								return o.a.createElement(ye, null);
-							case S.g.AuthorDeleted:
-							case S.g.Author:
-								return Oe._("It doesn't appear in any feeds, and anyone with a direct link to it will see a message like this one.", null, {
-									hk: "2OBDBc"
-								});
-							case S.g.AutomodFiltered:
-								return Oe._("This post is currently awaiting approval by the moderators of {=[subreddit name]} before it can appear in the subreddit.", [Oe._param("=[subreddit name]", o.a.createElement("a", {
-									className: Ce.a.link,
-									href: "".concat(be.a.redditUrl, "/r/").concat(t),
-									target: "_blank"
-								}, Oe._("{subreddit name}", [Oe._param("subreddit name", "r/".concat(t))], {
-									hk: "2o22vl"
-								})))], {
-									hk: "3dxuEW"
-								});
-							case S.g.CommunityOps:
-								return Oe._("It's rare, but Reddit's Community Team will occasionally remove posts from feeds to keep communities safe and civil.", null, {
-									hk: "uPiHS"
-								});
-							case S.g.ContentTakedown:
-								return o.a.createElement(Ee, null);
-							case S.g.CopyrightTakedown:
-								return Oe._("This content was removed in response to a copyright claim by a third party.", null, {
-									hk: "2e8fhi"
-								});
-							case S.g.Moderator:
-								return Oe._("Moderators remove posts from feeds for a variety of reasons, including keeping communities safe, civil, and true to their purpose.", null, {
-									hk: "QXZPk"
-								});
-							case S.g.Reddit:
-							default:
-								return Oe._("Reddit's automated bots frequently filter posts it thinks might be spam.", null, {
-									hk: "3vUmEz"
-								})
-						}
-					})(n, r), d = t ? he.a.warning : he.a.dayModeActionIcon, c = (e => {
-						let t;
-						switch (e) {
-							case S.g.AntiEvilOps:
-							case S.g.AutomodFiltered:
-							case S.g.CommunityOps:
-							case S.g.ContentTakedown:
-							case S.g.CopyrightTakedown:
-							case S.g.Reddit:
-								t = ge.a;
-								break;
-							case S.g.AuthorDeleted:
-							case S.g.Author:
-								t = fe.b;
-								break;
-							case S.g.Moderator:
-								t = xe;
-								break;
-							default:
-								t = ge.a
-						}
-						return o.a.createElement(t, {
-							className: Ce.a.icon
-						})
-					})(n);
-					return o.a.createElement(ue.a, {
-						className: Ce.a.BannerBase,
-						color: d,
-						icon: c,
-						subtitle: a,
-						title: i
+				const {
+					hasPerms: t,
+					removedBy: s,
+					removedByCategory: n,
+					subredditName: r
+				} = e, i = t ? ((e, t, s) => {
+					switch (e) {
+						case S.g.AntiEvilOps:
+							return Oe._("This post was removed by Reddit's Anti-Evil Operations team.", null, {
+								hk: "3a8CyR"
+							});
+						case S.g.Author:
+							return Oe._("This post was removed by the person who originally posted it.", null, {
+								hk: "2lyUgL"
+							});
+						case S.g.AuthorDeleted:
+							return Oe._("This post was deleted by the person who originally posted it.", null, {
+								hk: "16LeiH"
+							});
+						case S.g.AutomodFiltered:
+							return Oe._("This post was reported by automod, and is waiting for your review.", null, {
+								hk: "2E46dR"
+							});
+						case S.g.CommunityOps:
+							return Oe._("This post was removed by Reddit admin, u/{username}.", [Oe._param("username", t)], {
+								hk: "34nHWu"
+							});
+						case S.g.ContentTakedown:
+							return Oe._("This post was removed by Reddit's Legal Operations team.", null, {
+								hk: "1wmhiC"
+							});
+						case S.g.CopyrightTakedown:
+							return Oe._("This post was removed by Reddit's Legal Operations team.", null, {
+								hk: "Ukfj"
+							});
+						case S.g.Moderator:
+							return Oe._("This post was removed by r/{subredditName} moderator, u/{username}.", [Oe._param("subredditName", s), Oe._param("username", t)], {
+								hk: "270bcn"
+							});
+						case S.g.Reddit:
+							return Oe._("This post was removed by Reddit's spam filters.", null, {
+								hk: "1k3lsh"
+							});
+						default:
+							return Oe._("This post was removed by Reddit's spam filters.", null, {
+								hk: "3oxS8r"
+							})
+					}
+				})(n, s, r) : ((e, t) => {
+					switch (e) {
+						case S.g.AntiEvilOps:
+							return Oe._("Sorry, this post was removed by Reddit's Anti-Evil Operations team.", null, {
+								hk: "2ZqyRT"
+							});
+						case S.g.Author:
+							return Oe._("Sorry, this post was removed by the person who originally posted it.", null, {
+								hk: "4IRCN"
+							});
+						case S.g.AuthorDeleted:
+							return Oe._("Sorry, this post was deleted by the person who originally posted it.", null, {
+								hk: "4emmIp"
+							});
+						case S.g.AutomodFiltered:
+							return Oe._("Post is awaiting moderator approval.", null, {
+								hk: "wdGOr"
+							});
+						case S.g.CommunityOps:
+							return Oe._("Sorry, this post was removed by Reddit's Community team.", null, {
+								hk: "3fs5lF"
+							});
+						case S.g.ContentTakedown:
+							return Oe._("Sorry, this post was removed by Reddit's Legal Operations team.", null, {
+								hk: "jiKO8"
+							});
+						case S.g.CopyrightTakedown:
+							return Oe._("Sorry, this post was removed by Reddit's Legal Operations team.", null, {
+								hk: "1TbEDT"
+							});
+						case S.g.Moderator:
+							return Oe._("Sorry, this post has been removed by the moderators of r/{subredditName}.", [Oe._param("subredditName", t)], {
+								hk: "12NWKq"
+							});
+						case S.g.Reddit:
+							return Oe._("Sorry, this post was removed by Reddit's spam filters.", null, {
+								hk: "10ItEu"
+							});
+						default:
+							return Oe._("Sorry, this post has been removed", null, {
+								hk: "11sG9V"
+							})
+					}
+				})(n, r), a = t ? (e => {
+					switch (e) {
+						case S.g.AntiEvilOps:
+							return o.a.createElement(ye, null);
+						case S.g.AuthorDeleted:
+						case S.g.Author:
+							return Oe._("It won't show up in your community feed, and anyone with a direct link to it will see a message similar to this one.", null, {
+								hk: "2KZLgT"
+							});
+						case S.g.AutomodFiltered:
+							return Oe._("It won’t show up in your community feed until you or another moderator approve it.", null, {
+								hk: "2X5ECb"
+							});
+						case S.g.CommunityOps:
+							return Oe._("To keep Reddit and its communities safe, the Community team occasionally removes posts from feeds. To learn more, {=just ask} .", [Oe._param("=just ask", o.a.createElement("a", {
+								className: Ce.a.link,
+								href: "".concat(be.a.redditUrl, "/message/compose/?to=r/reddit.com"),
+								target: "_blank"
+							}, Oe._("just ask", null, {
+								hk: "jn9ip"
+							})))], {
+								hk: "3hMocZ"
+							});
+						case S.g.ContentTakedown:
+							return o.a.createElement(Ee, null);
+						case S.g.CopyrightTakedown:
+							return Oe._("This content was removed in response to a copyright claim by a third party.", null, {
+								hk: "7jiV"
+							});
+						case S.g.Moderator:
+							return Oe._("It won't show up in your community feed, and moderators will see a message similar to this one.", null, {
+								hk: "22qJOB"
+							});
+						case S.g.Reddit:
+							return Oe._("Reddit's automated bots frequently filter posts it thinks might be spam.", null, {
+								hk: "3S3oDL"
+							});
+						default:
+							return Oe._("Reddit's automated bots frequently filter posts it thinks might be spam.", null, {
+								hk: "uKfHK"
+							})
+					}
+				})(n) : ((e, t) => {
+					switch (e) {
+						case S.g.AntiEvilOps:
+							return o.a.createElement(ye, null);
+						case S.g.AuthorDeleted:
+						case S.g.Author:
+							return Oe._("It doesn't appear in any feeds, and anyone with a direct link to it will see a message like this one.", null, {
+								hk: "2OBDBc"
+							});
+						case S.g.AutomodFiltered:
+							return Oe._("This post is currently awaiting approval by the moderators of {=[subreddit name]} before it can appear in the subreddit.", [Oe._param("=[subreddit name]", o.a.createElement("a", {
+								className: Ce.a.link,
+								href: "".concat(be.a.redditUrl, "/r/").concat(t),
+								target: "_blank"
+							}, Oe._("{subreddit name}", [Oe._param("subreddit name", "r/".concat(t))], {
+								hk: "2o22vl"
+							})))], {
+								hk: "3dxuEW"
+							});
+						case S.g.CommunityOps:
+							return Oe._("It's rare, but Reddit's Community Team will occasionally remove posts from feeds to keep communities safe and civil.", null, {
+								hk: "uPiHS"
+							});
+						case S.g.ContentTakedown:
+							return o.a.createElement(Ee, null);
+						case S.g.CopyrightTakedown:
+							return Oe._("This content was removed in response to a copyright claim by a third party.", null, {
+								hk: "2e8fhi"
+							});
+						case S.g.Moderator:
+							return Oe._("Moderators remove posts from feeds for a variety of reasons, including keeping communities safe, civil, and true to their purpose.", null, {
+								hk: "QXZPk"
+							});
+						case S.g.Reddit:
+						default:
+							return Oe._("Reddit's automated bots frequently filter posts it thinks might be spam.", null, {
+								hk: "3vUmEz"
+							})
+					}
+				})(n, r), d = t ? he.a.warning : he.a.dayModeActionIcon, c = (e => {
+					let t;
+					switch (e) {
+						case S.g.AntiEvilOps:
+						case S.g.AutomodFiltered:
+						case S.g.CommunityOps:
+						case S.g.ContentTakedown:
+						case S.g.CopyrightTakedown:
+						case S.g.Reddit:
+							t = ge.a;
+							break;
+						case S.g.AuthorDeleted:
+						case S.g.Author:
+							t = fe.b;
+							break;
+						case S.g.Moderator:
+							t = xe;
+							break;
+						default:
+							t = ge.a
+					}
+					return o.a.createElement(t, {
+						className: Ce.a.icon
 					})
-				},
-				ke = e => {
-					const {
-						isAdminOrMod: t,
-						post: s,
-						subredditOrProfile: n
-					} = e;
-					return o.a.createElement(o.a.Fragment, null, n && s.removedByCategory && o.a.createElement(_e, {
-						hasPerms: t,
-						removedBy: s.removedBy,
-						removedByCategory: s.removedByCategory,
-						subredditName: n.name
-					}))
-				},
-				je = (s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/fbt/lib/FbtPublic.js")),
+				})(n);
+				return o.a.createElement(ue.a, {
+					className: Ce.a.BannerBase,
+					color: d,
+					icon: c,
+					subtitle: a,
+					title: i
+				})
+			};
+
+			function ke(e) {
+				const {
+					isAdminOrMod: t,
+					post: s,
+					subredditOrProfile: n
+				} = e;
+				return o.a.createElement(o.a.Fragment, null, n && s.removedByCategory && o.a.createElement(_e, {
+					hasPerms: t,
+					removedBy: s.removedBy,
+					removedByCategory: s.removedByCategory,
+					subredditName: n.name
+				}))
+			}
+			s("./node_modules/core-js/modules/es6.regexp.to-string.js");
+			var je = s("./node_modules/fbt/lib/FbtPublic.js"),
 				we = s("./src/lib/prettyPrintNumber/index.ts"),
 				Pe = s("./src/reddit/components/PostContent/viewCount.m.less"),
 				Ie = s.n(Pe);
@@ -10554,11 +10564,15 @@
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return a
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./src/reddit/components/CrosspostBox/index.tsx"),
 				i = s("./src/reddit/components/Media/index.tsx");
-			t.a = e => {
+
+			function a(e) {
 				const {
 					post: t
 				} = e;
@@ -12390,6 +12404,9 @@
 		},
 		"./src/reddit/components/SourceLink/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return h
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./src/lib/classNames/index.ts"),
@@ -12401,7 +12418,8 @@
 				m = s("./src/lib/lessComponent.tsx");
 			const p = m.a.wrapped(d.a, "OutboundLinkIcon", l.a),
 				u = m.a.div("SourceLinkWrapper", l.a);
-			t.a = e => {
+
+			function h(e) {
 				const {
 					className: t,
 					post: s,
@@ -13954,6 +13972,9 @@
 		},
 		"./src/reddit/components/Widgets/Widget/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return Ne
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/react-redux/es/index.js"),
@@ -14234,63 +14255,66 @@
 					textColor: e.authorFlairTextColor,
 					type: e.authorFlairType
 				},
-				fe = e => o.a.createElement(he, null, "u/".concat(e)),
-				ve = p.a.wrapped(de.a, "InternalLink", pe.a),
-				Ce = p.a.div("LinkContainer", pe.a);
-			var Oe = e => {
-					const {
-						subredditName: t,
-						widget: s
-					} = e;
-					return o.a.createElement(d.a, {
-						styles: s.styles,
-						title: P.fbt._("Moderators", null, {
-							hk: "3AMICc"
-						}),
-						headerButton: o.a.createElement(be, {
-							href: "https://reddit.com/message/compose?to=/r/".concat(t),
-							target: "_blank"
-						}, o.a.createElement(ce.a, null))
-					}, s.mods.map(e => o.a.createElement(ue, {
-						key: e.name
-					}, (e => o.a.createElement(ie.a, {
-						to: "/user/".concat(e.name, "/")
-					}, fe(e.name)))(e), o.a.createElement(ge, {
-						flair: xe(e),
-						forceSmallEmojis: !0
-					}))), o.a.createElement(Ce, null, o.a.createElement(ve, {
-						to: "/r/".concat(t, "/about/moderators/")
-					}, P.fbt._("View All Moderators", null, {
-						hk: "2DIeXE"
-					}))))
-				},
-				ye = s("./src/reddit/components/Widgets/PostFlair/index.tsx"),
-				Ee = s("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
-				_e = s("./src/reddit/components/Widgets/TextArea/index.m.less"),
-				ke = s.n(_e);
-			const je = p.a.div("WidgetContent", ke.a),
-				we = p.a.wrapped(a.a, "RawHTMLDisplay", ke.a);
-			var Pe = e => o.a.createElement(d.a, {
+				fe = e => o.a.createElement(ie.a, {
+					to: "/user/".concat(e.name, "/")
+				}, ve(e.name)),
+				ve = e => o.a.createElement(he, null, "u/".concat(e)),
+				Ce = p.a.wrapped(de.a, "InternalLink", pe.a),
+				Oe = p.a.div("LinkContainer", pe.a);
+
+			function ye(e) {
+				const {
+					subredditName: t,
+					widget: s
+				} = e;
+				return o.a.createElement(d.a, {
+					styles: s.styles,
+					title: P.fbt._("Moderators", null, {
+						hk: "3AMICc"
+					}),
+					headerButton: o.a.createElement(be, {
+						href: "https://reddit.com/message/compose?to=/r/".concat(t),
+						target: "_blank"
+					}, o.a.createElement(ce.a, null))
+				}, s.mods.map(e => o.a.createElement(ue, {
+					key: e.name
+				}, fe(e), o.a.createElement(ge, {
+					flair: xe(e),
+					forceSmallEmojis: !0
+				}))), o.a.createElement(Oe, null, o.a.createElement(Ce, {
+					to: "/r/".concat(t, "/about/moderators/")
+				}, P.fbt._("View All Moderators", null, {
+					hk: "2DIeXE"
+				}))))
+			}
+			var Ee = s("./src/reddit/components/Widgets/PostFlair/index.tsx"),
+				_e = s("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
+				ke = s("./src/reddit/components/Widgets/TextArea/index.m.less"),
+				je = s.n(ke);
+			const we = p.a.div("WidgetContent", je.a),
+				Pe = p.a.wrapped(a.a, "RawHTMLDisplay", je.a);
+			var Ie = e => o.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, o.a.createElement(je, null, o.a.createElement(we, {
+				}, o.a.createElement(we, null, o.a.createElement(Pe, {
 					html: e.widget.textHtml || ""
 				}))),
-				Ie = s("./src/reddit/components/Widgets/Base/index.tsx"),
-				Se = e => o.a.createElement(Ie.b, null, "This widget hasn't been implemented yet!");
-			t.a = e => {
+				Se = s("./src/reddit/components/Widgets/Base/index.tsx");
+			var Te = e => o.a.createElement(Se.b, null, "This widget hasn't been implemented yet!");
+
+			function Ne(e) {
 				const t = function(e) {
 					switch (e.kind) {
 						case "moderators":
-							return Oe;
+							return ye;
 						case "textarea":
-							return Pe;
+							return Ie;
 						case "button":
 							return w;
 						case "subreddit-rules":
-							return Ee.b;
+							return _e.b;
 						case "community-list":
 							return z;
 						case "calendar":
@@ -14300,9 +14324,9 @@
 						case "custom":
 							return Z;
 						case "post-flair":
-							return ye.a;
+							return Ee.a;
 						default:
-							return Se
+							return Te
 					}
 				}(e.widget);
 				return o.a.createElement(t, {
@@ -18035,4 +18059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage.fce818df38f8a25ff002.js.map
+//# sourceMappingURL=CollectionCommentsPage.f008556141897813bff5.js.map

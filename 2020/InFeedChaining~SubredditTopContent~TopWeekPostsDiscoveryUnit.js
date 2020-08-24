@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.c43bd527c17643927861.js
-// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.6ee3edb57cf44b58667e.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -941,13 +941,17 @@
 		},
 		"./src/reddit/components/MiniCardPost/Thumbnail/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return l
+			}));
 			var a = s("./node_modules/react/index.js"),
 				n = s.n(a),
 				i = s("./src/lib/classNames/index.ts"),
 				r = s("./src/reddit/components/Thumbnail/index.tsx"),
 				o = s("./src/reddit/components/MiniCardPost/Thumbnail/index.m.less"),
 				c = s.n(o);
-			t.a = e => {
+
+			function l(e) {
 				const {
 					source: t
 				} = e.post;
@@ -969,4 +973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.c43bd527c17643927861.js.map
+//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.6ee3edb57cf44b58667e.js.map

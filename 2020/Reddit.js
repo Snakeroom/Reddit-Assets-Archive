@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.3b42a2ddf560511a9c4f.js
-// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.8c4fcca8f738582cc001.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -5934,21 +5934,22 @@
 			};
 			const dc = M.a.button("Button", oc.a),
 				lc = M.a.div("Container", oc.a);
-			var uc = e => {
-					const {
-						children: t,
-						isOpen: s
-					} = e, n = cc(e, ["children", "isOpen"]);
-					return u.a.createElement(dc, ic({}, n, {
-						id: e.id,
-						onClick: e.onClick
-					}), u.a.createElement(lc, {
-						className: Object(g.a)({
-							[oc.a.isOpen]: s
-						})
-					}, t))
-				},
-				mc = s("./src/chat/helpers/unreadCount.ts"),
+
+			function uc(e) {
+				const {
+					children: t,
+					isOpen: s
+				} = e, n = cc(e, ["children", "isOpen"]);
+				return u.a.createElement(dc, ic({}, n, {
+					id: e.id,
+					onClick: e.onClick
+				}), u.a.createElement(lc, {
+					className: Object(g.a)({
+						[oc.a.isOpen]: s
+					})
+				}, t))
+			}
+			var mc = s("./src/chat/helpers/unreadCount.ts"),
 				pc = s("./src/chat/models/Promo/index.ts"),
 				bc = s("./src/lib/prettyPrintNumber/index.ts"),
 				hc = s("./src/reddit/components/HeaderUserActions/index.m.less"),
@@ -9089,6 +9090,9 @@
 		},
 		"./src/reddit/components/Survey/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return c
+			}));
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				a = s("./node_modules/react/index.js"),
 				r = s.n(a),
@@ -9113,7 +9117,8 @@
 					return "./src/reddit/components/Survey/Async.tsx"
 				}
 			});
-			t.a = () => {
+
+			function c() {
 				const e = Object(o.d)();
 				return e ? r.a.createElement(i, {
 					activeSurvey: e
@@ -11150,7 +11155,8 @@
 						}
 					}, t)
 				});
-			var we = e => {
+
+			function we(e) {
 				if (e.ok) {
 					const {
 						RouterComponent: t,
@@ -11163,7 +11169,7 @@
 				return u.a.createElement(Pe, {
 					error: e.error
 				})
-			};
+			}
 			const _e = e => t => u.a.createElement(oe.b, Ee({
 				routes: e
 			}, t));
@@ -13693,4 +13699,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.3b42a2ddf560511a9c4f.js.map
+//# sourceMappingURL=Reddit.8c4fcca8f738582cc001.js.map

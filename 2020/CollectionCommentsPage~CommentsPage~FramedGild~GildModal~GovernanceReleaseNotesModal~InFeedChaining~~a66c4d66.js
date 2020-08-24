@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.5abe9d904cffa03a2429.js
-// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.2d54ef29aff9b5e0365c.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -819,7 +819,7 @@
 		"./src/reddit/components/HTML5StreamPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return dt
+				return ht
 			}));
 			var i = s("./node_modules/bowser/src/bowser.js"),
 				a = s.n(i),
@@ -1040,19 +1040,19 @@
 						tooltip: G.fbt._("Settings", null, {
 							hk: "1AhVBJ"
 						}),
-						disable: n === dt.Settings
-					}, n === dt.Settings && l.a.createElement(ie, {
+						disable: n === ht.Settings
+					}, n === ht.Settings && l.a.createElement(ie, {
 						className: re.a.VideoSettingContainer,
 						isLoggedIn: s,
 						autoplayPref: e,
-						active: n === dt.Settings,
+						active: n === ht.Settings,
 						ref: e => r(e),
 						resolution: i,
 						setResolution: o,
 						setAutoplay: a,
 						bitrateInfo: t
 					}), l.a.createElement("button", {
-						"aria-expanded": n === dt.Settings,
+						"aria-expanded": n === ht.Settings,
 						"aria-haspopup": !0,
 						"aria-label": G.fbt._("Settings", null, {
 							hk: "4jfIa6"
@@ -1374,21 +1374,21 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var dt, ht = function(e, t) {
-					var s = {};
-					for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
-					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-						var a = 0;
-						for (i = Object.getOwnPropertySymbols(e); a < i.length; a++) t.indexOf(i[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[a]) && (s[i[a]] = e[i[a]])
-					}
-					return s
-				},
-				pt = e => {
+			var dt = function(e, t) {
+				var s = {};
+				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var a = 0;
+					for (i = Object.getOwnPropertySymbols(e); a < i.length; a++) t.indexOf(i[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, i[a]) && (s[i[a]] = e[i[a]])
+				}
+				return s
+			};
+			var ht, pt = e => {
 					var {
 						className: t,
 						isVisible: s,
 						setRef: i
-					} = e, a = ht(e, ["className", "isVisible", "setRef"]);
+					} = e, a = dt(e, ["className", "isVisible", "setRef"]);
 					return l.a.createElement("div", ct({
 						className: Object(u.a)(lt.a.Component, t, {
 							[lt.a.mIsNotVisible]: !s
@@ -1403,7 +1403,7 @@
 				vt = s.n(gt);
 			! function(e) {
 				e[e.SeekBar = 0] = "SeekBar", e[e.Settings = 1] = "Settings", e[e.Volume = 2] = "Volume"
-			}(dt || (dt = {}));
+			}(ht || (ht = {}));
 			const yt = 3e3,
 				xt = 6e3,
 				Pt = 100,
@@ -1539,9 +1539,9 @@
 							volumeControl: s
 						} = this;
 						s && s.container && s.container.contains(e.target) ? (this.setState({
-							settingChange: dt.Volume
+							settingChange: ht.Volume
 						}), s.handleMouseDown(e)) : t && t.parentRect && t.parentRect.contains(e.target) && (this.setState({
-							settingChange: dt.SeekBar
+							settingChange: ht.SeekBar
 						}), t.handleMouseDown(e)), this.state.usingKeys && this.setState({
 							usingKeys: !1
 						})
@@ -1554,13 +1554,13 @@
 						switch (this.setState({
 							hasHovered: !0
 						}), t && t.contains(e.target) ? this.clearControlBarFadeTimer() : this.resetControlBarFadeTimer(), this.state.settingChange) {
-							case dt.SeekBar:
+							case ht.SeekBar:
 								s && s.handleMouseMove(e);
 								break;
-							case dt.Volume:
+							case ht.Volume:
 								i && i.handleMouseMove(e);
 								break;
-							case dt.Settings:
+							case ht.Settings:
 						}
 					}, this.handleMouseUp = e => {
 						e.stopPropagation();
@@ -1570,7 +1570,7 @@
 							volumeControl: i
 						} = this;
 						switch (this.state.settingChange) {
-							case dt.SeekBar:
+							case ht.SeekBar:
 								if (s) {
 									this.setState({
 										ignoreUnderrunsUntil: Date.now() + Pt
@@ -1579,10 +1579,10 @@
 									this.state.videoEnded && t && t.currentTime !== t.duration && this.playVideo()
 								}
 								break;
-							case dt.Volume:
+							case ht.Volume:
 								i && (i.handleMouseUp(e), this.sendEvent("click", "volume"));
 								break;
-							case dt.Settings:
+							case ht.Settings:
 								if (t && t.contains(e.target)) return;
 								break;
 							default:
@@ -1601,9 +1601,9 @@
 						switch (this.clearControlBarFadeTimer(), this.setState({
 							hideControlBar: !0
 						}), this.state.settingChange) {
-							case dt.SeekBar:
-							case dt.Volume:
-							case dt.Settings:
+							case ht.SeekBar:
+							case ht.Volume:
+							case ht.Settings:
 							default:
 								this.setState({
 									settingChange: void 0
@@ -1703,10 +1703,10 @@
 							})
 						}
 					}, this.toggleSetting = e => {
-						this.state.settingChange === dt.Settings ? this.setState({
+						this.state.settingChange === ht.Settings ? this.setState({
 							settingChange: void 0
 						}) : this.setState({
-							settingChange: dt.Settings
+							settingChange: ht.Settings
 						})
 					}, this.setVideoPos = e => {
 						const t = this.HTML5StreamPlayerVideo;
@@ -1800,7 +1800,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("bcd093d-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("20ac1c3-production", " ").concat(t);
 									return i && (s += " [".concat(V.rc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -1889,7 +1889,7 @@
 						usingKeys: !0
 					});
 					let t = xt;
-					this.state.settingChange === dt.Settings && (t = 5 * xt), this.resetControlBarFadeTimer(t)
+					this.state.settingChange === ht.Settings && (t = 5 * xt), this.resetControlBarFadeTimer(t)
 				}
 				setBuffered() {
 					const e = this.HTML5StreamPlayerVideo;
@@ -1940,7 +1940,7 @@
 						settingChange: d,
 						videoEnded: h,
 						videoLoaded: p
-					} = this.state, m = this.HTML5StreamPlayerVideo, f = d === dt.SeekBar, g = p || !t, v = g && m && 0 !== m.currentTime, y = !n && c, x = h && !f, P = Object.assign(Object.assign({}, this.props), {
+					} = this.state, m = this.HTML5StreamPlayerVideo, f = d === ht.SeekBar, g = p || !t, v = g && m && 0 !== m.currentTime, y = !n && c, x = h && !f, P = Object.assign(Object.assign({}, this.props), {
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
 						setAutoplay: this.setAutoplay,
@@ -2236,4 +2236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.5abe9d904cffa03a2429.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.2d54ef29aff9b5e0365c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.a8a9d47be886fa29a9a0.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.29947cba37e6ea74a4e5.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, r) {
@@ -473,4 +473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MultiredditCreateModal.a8a9d47be886fa29a9a0.js.map
+//# sourceMappingURL=MultiredditCreateModal.29947cba37e6ea74a4e5.js.map

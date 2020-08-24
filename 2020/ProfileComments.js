@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.9f320f2f247b3bf35cc6.js
-// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.4e91e927afd21549ee19.js
+// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -4222,6 +4222,9 @@
 		},
 		"./src/reddit/components/ListingSort/ListingSortIcon.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return C
+			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
@@ -4278,7 +4281,8 @@
 				[a.O.TOP]: y.a,
 				[a.O.RISING]: g
 			};
-			t.a = e => {
+
+			function C(e) {
 				let {
 					className: t,
 					sort: n
@@ -5810,11 +5814,15 @@
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				r = n("./src/reddit/components/CrosspostBox/index.tsx"),
 				a = n("./src/reddit/components/Media/index.tsx");
-			t.a = e => {
+
+			function i(e) {
 				const {
 					post: t
 				} = e;
@@ -7345,6 +7353,9 @@
 		},
 		"./src/reddit/components/SourceLink/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return b
+			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
@@ -7356,7 +7367,8 @@
 				m = n("./src/lib/lessComponent.tsx");
 			const p = m.a.wrapped(c.a, "OutboundLinkIcon", l.a),
 				u = m.a.div("SourceLinkWrapper", l.a);
-			t.a = e => {
+
+			function b(e) {
 				const {
 					className: t,
 					post: n,
@@ -9990,4 +10002,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileComments.9f320f2f247b3bf35cc6.js.map
+//# sourceMappingURL=ProfileComments.4e91e927afd21549ee19.js.map
