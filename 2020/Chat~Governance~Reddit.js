@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.aa6d095b52f92eea123f.js
-// Retrieved at 8/24/2020, 7:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0d980c3d5371ed1855c4.js
+// Retrieved at 8/25/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1557,11 +1557,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("109995"),
+				buildNumber: r("110064"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1598310187"),
+				})("1598378010"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -2897,7 +2897,6 @@
 					CLIENT_ID_REJECTED: "clientIdRejected",
 					NUMBER_OF_DIFFS: "gql_numberofdiffs",
 					DETAILED_DIFFS: "gql_detaileddiffs",
-					CLIENT_INITIALIZING: "client-initializing",
 					CLIENT_SCREENVIEW: "client-screenview"
 				},
 				at = 150,
@@ -3195,7 +3194,7 @@
 		"./src/lib/initializeClient/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return K
+				return Q
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/core-js/modules/es6.regexp.constructor.js"), i("./node_modules/core-js/modules/es6.regexp.match.js"), i("./node_modules/core-js/modules/es6.regexp.search.js"), i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = i("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -3274,28 +3273,29 @@
 				N = i("./src/lib/sample/index.ts"),
 				P = i("./src/lib/sentry/index.ts"),
 				L = i("./src/reddit/helpers/localStorage/index.ts"),
-				A = i("./src/telemetry/helpers/sendCounter.ts"),
-				D = i("./src/lib/logSafeJSONStringify/index.ts");
-			const G = e => setTimeout(() => {
+				A = i("./src/reddit/selectors/user.ts"),
+				D = i("./src/telemetry/helpers/sendCounter.ts"),
+				G = i("./src/lib/logSafeJSONStringify/index.ts");
+			const M = e => setTimeout(() => {
 					throw e
 				}, 0),
-				M = new Set(["displayText", "email", "profileId", "url"].map(e => e.toLowerCase()));
-			var U = e => t => i => n => {
+				U = new Set(["displayText", "email", "profileId", "url"].map(e => e.toLowerCase()));
+			var q = e => t => i => n => {
 				"object" == typeof n && P.c.addBreadcrumb({
 					message: n.type,
 					category: "redux-action"
 				});
 				const r = i(n),
 					s = t.getState();
-				return P.c.setExtra("pageInfo", JSON.parse(Object(D.a)(s.platform))), P.c.setUser(JSON.parse(Object(D.a)(s.user, M))), !e && r instanceof Promise && r.catch(G), r
+				return P.c.setExtra("pageInfo", JSON.parse(Object(G.a)(s.platform))), P.c.setUser(JSON.parse(Object(G.a)(s.user, U))), !e && r instanceof Promise && r.catch(M), r
 			};
-			const q = !1;
+			const V = !1;
 
-			function V(e) {
+			function W(e) {
 				return "ChunkLoadError" !== e.type || Object(N.a)(1)
 			}
 			_.a.polyfill();
-			const W = () => {
+			const H = () => {
 					if (!(() => {
 							try {
 								return window.history.state || {}
@@ -3310,7 +3310,7 @@
 						}, "", t)
 					}
 				},
-				H = () => {
+				z = () => {
 					(document.cookie.match(/loid=/g) || []).length > 1 && (u.a.set("loid", "", {
 						expires: 0,
 						path: "/"
@@ -3319,15 +3319,15 @@
 						path: "/"
 					}))
 				},
-				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("34f2648-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+				K = (e, t, i) => {
+					console.log("%cStarting Raven %crelease %c".concat("8bc060c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "34f2648-production",
+						release: "8bc060c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3336,27 +3336,21 @@
 							onerror: !0,
 							onunhandledrejection: !1
 						})],
-						beforeSend: e => (e = Object(P.b)(e)).exception && e.exception.values && (e.exception.values = e.exception.values.filter(V), 0 === e.exception.values.length) ? null : (Object(R.sendRavenError)(i(), e), Object(P.e)(e))
+						beforeSend: e => (e = Object(P.b)(e)).exception && e.exception.values && (e.exception.values = e.exception.values.filter(W), 0 === e.exception.values.length) ? null : (Object(R.sendRavenError)(i(), e), Object(P.e)(e))
 					}), t.tags && o.j(t.tags), o.i("app", e)
 				};
-			async function K(e) {
+			async function Q(e) {
 				let t;
 				Object(C.e)(C.b.InitClientStart), document.documentElement && "object" == typeof document.documentElement && "string" == typeof document.documentElement.innerHTML && (t = document.documentElement.innerHTML.length);
 				const r = Object(n.b)(() => {}, {
 					namespace: e.appName
 				});
-				H(), W();
+				z(), H();
 				const s = e.history || Object(l.a)(),
 					a = Object(k.a)(s.location.pathname, e.routes),
 					u = a && a.route && a.route.chunk ? a.route.chunk : "unknown";
-				e.appName === v.l.Redesign && Object(A.b)(v.l.Redesign, {
-					type: A.a.ClientInitializing,
-					data: {
-						pageName: u
-					}
-				});
 				let c = e => e.children;
-				e.raven && (z(e.appName, e.raven, e.apiContext), c = class extends p.a.Component {
+				e.raven && (K(e.appName, e.raven, e.apiContext), c = class extends p.a.Component {
 					componentDidCatch(e, t) {
 						o.l(i => {
 							i.setExtra("info", t), o.c(e)
@@ -3384,7 +3378,7 @@
 						shouldHotReload: !1
 					}) : e => e,
 					h = [!1, Object(b.d)(s), ...e.customMiddleware || []].filter(Boolean);
-				e.raven && h.unshift(U(_));
+				e.raven && h.unshift(q(_));
 				let y = window.___r || {};
 				delete window.___r;
 				const S = document.getElementById("data");
@@ -3414,21 +3408,21 @@
 				const {
 					routes: P
 				} = e;
-				let D = {};
-				e.preRender && (D = e.preRender({
+				let G = {};
+				e.preRender && (G = e.preRender({
 					browserHistory: s,
 					routes: P,
 					store: E,
 					flags: {
-						DEBUG: q,
+						DEBUG: V,
 						SUPPORTS_REJECTION_EVENTS: _
 					}
 				})), Object(C.e)(C.b.CreateRouteCompsStart);
-				const G = I({
+				const M = I({
 					routes: P,
 					loadingPage: e.staticPages ? e.staticPages.loading : void 0
 				});
-				return await r, Object(C.e)(C.b.ReactHydrateStart), await R,
+				await r, Object(C.e)(C.b.ReactHydrateStart), await R,
 					function(e) {
 						const t = Array.from(e.getElementsByClassName(T));
 						for (const i of t) document.head.appendChild(i), i.classList.remove(T)
@@ -3436,20 +3430,23 @@
 						store: E
 					}, p.a.createElement(B.a, null, p.a.createElement(j.b, {
 						userAgent: y.meta.userAgent
-					}, e.appFactory(O(s), G))))), e.target, t)), Object(C.e)(C.b.ReactHydrateEnd), e.postRender && e.postRender({
+					}, e.appFactory(O(s), M))))), e.target, t)), Object(C.e)(C.b.ReactHydrateEnd), e.postRender && e.postRender({
 						browserHistory: s,
 						routes: P,
 						serverDocumentLength: t,
 						store: E,
-						localStorageData: D.localStorageData
-					}), Object(C.e)(C.b.InitClientEnd), e.appName === v.l.Redesign && Object(A.b)(v.l.Redesign, {
-						type: A.a.ClientScreenview,
-						data: {
-							pageName: u
-						}
-					}), {
-						store: E
+						localStorageData: G.localStorageData
+					});
+				const U = Object(A.H)(E.getState());
+				return Object(C.e)(C.b.InitClientEnd), e.appName === v.l.Redesign && Object(D.b)(v.l.Redesign, {
+					type: D.a.ClientScreenview,
+					data: {
+						pageName: u,
+						loggedIn: U
 					}
+				}), {
+					store: E
+				}
 			}
 		},
 		"./src/lib/initializeClient/installReducer.ts": function(e, t, i) {
@@ -3755,7 +3752,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "34f2648-production",
+							releaseClient: "8bc060c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -20787,7 +20784,7 @@
 				s = i("./src/lib/constants/index.ts"),
 				o = i("./src/lib/makeRequest/index.ts");
 			! function(e) {
-				e.ClientIdConsumed = "clientIdConsumed", e.ClientIdRejected = "clientIdRejected", e.NumberOfDiffs = "numberOfDiffs", e.DetailedDiffs = "detailedDiffs", e.ClientInitializing = "client-initializing", e.ClientScreenview = "client-screenview"
+				e.ClientIdConsumed = "clientIdConsumed", e.ClientIdRejected = "clientIdRejected", e.NumberOfDiffs = "numberOfDiffs", e.DetailedDiffs = "detailedDiffs", e.ClientScreenview = "client-screenview"
 			}(n || (n = {}));
 			const d = e => {
 				switch (e) {
@@ -20799,8 +20796,6 @@
 						return s.u.CLIENT_ID_CONSUMED;
 					case n.ClientIdRejected:
 						return s.u.CLIENT_ID_REJECTED;
-					case n.ClientInitializing:
-						return s.u.CLIENT_INITIALIZING;
 					case n.ClientScreenview:
 						return s.u.CLIENT_SCREENVIEW
 				}
@@ -22131,4 +22126,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=Chat~Governance~Reddit.aa6d095b52f92eea123f.js.map
+//# sourceMappingURL=Chat~Governance~Reddit.0d980c3d5371ed1855c4.js.map
