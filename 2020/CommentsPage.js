@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.6c991ad24a5066e5d0d2.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d051f4988132ada022e6.js
+// Retrieved at 8/26/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~ProfilePosts~ProfilePrivate~SearchRes~77b3dad4", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3843,7 +3843,7 @@
 							if (e.hidden) s.stop();
 							else if (e.prefersReducedAnimation) {
 							const e = s.getDuration(!0);
-							s.goToAndStop(e, !0)
+							s.goToAndPlay(e, !0)
 						} else s.goToAndPlay(0)
 					}, [e.hidden, e.prefersReducedAnimation, s]);
 					const o = Object(i.useCallback)(() => {
@@ -17993,4 +17993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.6c991ad24a5066e5d0d2.js.map
+//# sourceMappingURL=CommentsPage.d051f4988132ada022e6.js.map
