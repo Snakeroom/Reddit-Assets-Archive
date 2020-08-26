@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~MembershipPaywallPage.3139334c891bed4d28f3.js
-// Retrieved at 6/10/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~MembershipPaywallPage.10b70bf12d79dfe48e14.js
+// Retrieved at 8/26/2020, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, o, s) {
@@ -545,4 +545,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~MembershipPaywallPage.3139334c891bed4d28f3.js.map
+//# sourceMappingURL=vendors~MembershipPaywallPage.10b70bf12d79dfe48e14.js.map
