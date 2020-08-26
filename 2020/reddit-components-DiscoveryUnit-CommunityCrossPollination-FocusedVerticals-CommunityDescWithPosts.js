@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.520ac8b3b88cd1280527.js
-// Retrieved at 8/19/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.7ee11355c54086cd2f8c.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -263,8 +263,8 @@
 				N = s.n(P);
 			const T = e => "".concat(e, "--FocusedVerticalRecommendationItem"),
 				D = Object(i.c)({
-					post: k.O,
-					subreddit: k.bb
+					post: k.N,
+					subreddit: k.ab
 				});
 			class B extends r.a.Component {
 				constructor() {
@@ -830,11 +830,11 @@
 							postId: s.id
 						})
 					},
-					imageGalleryCurrentUrl: (e, t) => {
+					imageGalleryCurrentItem: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(p.j)(e, {
+						return Object(p.i)(e, {
 							postId: s.id
 						})
 					}
@@ -855,7 +855,7 @@
 						basePixelMetadata: t,
 						children: s,
 						className: n,
-						imageGalleryCurrentUrl: o,
+						imageGalleryCurrentItem: o,
 						makePostContainerId: c,
 						post: a,
 						onClick: d,
@@ -1346,4 +1346,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.520ac8b3b88cd1280527.js.map
+//# sourceMappingURL=reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.7ee11355c54086cd2f8c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.5c2cf9e82cb1f7e50552.js
-// Retrieved at 8/6/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.262fe705eb5fe50402d1.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-CommentsPage-OtherDiscussions"], {
 		"./src/reddit/pages/CommentsPage/OtherDiscussions/index.m.less": function(e, s, t) {
@@ -63,7 +63,7 @@
 						})
 					})
 				},
-				otherDiscussionsCount: _.E
+				otherDiscussionsCount: _.D
 			}));
 			s.default = Object(O.c)(I(e => {
 				let {
@@ -118,4 +118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.5c2cf9e82cb1f7e50552.js.map
+//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.262fe705eb5fe50402d1.js.map

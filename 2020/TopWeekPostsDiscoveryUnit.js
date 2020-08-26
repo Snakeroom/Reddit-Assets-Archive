@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.c55beddf0ad3ed8bb144.js
-// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.bcb20f04be1917961646.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -424,7 +424,7 @@
 			}
 			const {
 				fbt: y
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = [], v = () => {}, C = () => void 0, j = c.a.button("CloseButton", f.a), P = Object(i.a)(p.I, e => e.filter(e => 9 === e.length)), _ = Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = [], v = () => {}, C = () => void 0, j = c.a.button("CloseButton", f.a), P = Object(i.a)(p.H, e => e.filter(e => 9 === e.length)), _ = Object(i.c)({
 				discoveryUnit: e => Object(u.c)(e, {
 					unitName: m.k
 				}),
@@ -564,11 +564,11 @@
 							postId: s.id
 						})
 					},
-					imageGalleryCurrentUrl: (e, t) => {
+					imageGalleryCurrentItem: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(p.j)(e, {
+						return Object(p.i)(e, {
 							postId: s.id
 						})
 					}
@@ -589,7 +589,7 @@
 						basePixelMetadata: t,
 						children: s,
 						className: n,
-						imageGalleryCurrentUrl: o,
+						imageGalleryCurrentItem: o,
 						makePostContainerId: a,
 						post: c,
 						onClick: d,
@@ -843,4 +843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=TopWeekPostsDiscoveryUnit.c55beddf0ad3ed8bb144.js.map
+//# sourceMappingURL=TopWeekPostsDiscoveryUnit.bcb20f04be1917961646.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.f612a91f12773ce11974.js
-// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.db74fdff3ab50219645b.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -287,11 +287,11 @@
 							postId: s.id
 						})
 					},
-					imageGalleryCurrentUrl: (e, t) => {
+					imageGalleryCurrentItem: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(m.j)(e, {
+						return Object(m.i)(e, {
 							postId: s.id
 						})
 					}
@@ -312,7 +312,7 @@
 						basePixelMetadata: t,
 						children: s,
 						className: n,
-						imageGalleryCurrentUrl: o,
+						imageGalleryCurrentItem: o,
 						makePostContainerId: c,
 						post: a,
 						onClick: d,
@@ -566,4 +566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditTopContent.f612a91f12773ce11974.js.map
+//# sourceMappingURL=SubredditTopContent.db74fdff3ab50219645b.js.map

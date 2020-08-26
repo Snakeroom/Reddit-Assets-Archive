@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.fd98eb27293db48c6958.js
-// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.0d62e7afbe1c849e1ca2.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0"], {
 		"./src/reddit/actions/postCollection/index.ts": function(t, e, o) {
@@ -9,9 +9,9 @@
 			})), o.d(e, "e", (function() {
 				return U
 			})), o.d(e, "g", (function() {
-				return B
+				return A
 			})), o.d(e, "a", (function() {
-				return N
+				return K
 			})), o.d(e, "c", (function() {
 				return W
 			})), o.d(e, "h", (function() {
@@ -154,13 +154,13 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, A = Object(i.a)(l.g), B = (t, e, o) => async (c, s, i) => {
+				}, N = Object(i.a)(l.g), A = (t, e, o) => async (c, s, i) => {
 					let {
 						apiContext: l
 					} = i;
 					if ((await _(l(), t, e)).ok) {
 						const i = s(),
-							l = Object(y.O)(i, {
+							l = Object(y.N)(i, {
 								postId: e
 							}),
 							d = l && l.title || "",
@@ -168,7 +168,7 @@
 								collectionId: t
 							}),
 							u = (a && a.postIds && a.postIds.indexOf(e) || -1) - 1;
-						if (c(A({
+						if (c(N({
 								collectionId: t,
 								postId: e
 							})), o && u >= 0) {
@@ -177,7 +177,7 @@
 									collectionId: t
 								}),
 								n = o && o.postIds && o.postIds[u] || "",
-								i = Object(y.O)(e, {
+								i = Object(y.N)(e, {
 									postId: n
 								});
 							i && i.permalink && c(Object(I.a)(i.permalink))
@@ -190,7 +190,7 @@
 							buttonText: n.fbt._("UNDO", null, {
 								hk: "3KPLib"
 							}),
-							buttonAction: N(t, e)
+							buttonAction: K(t, e)
 						}))
 					} else c(Object(r.e)({
 						kind: h.b.Error,
@@ -198,20 +198,20 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, F = Object(i.a)(l.a), K = Object(i.a)(l.t), N = (t, e) => async (o, c, s) => {
+				}, B = Object(i.a)(l.a), F = Object(i.a)(l.t), K = (t, e) => async (o, c, s) => {
 					let {
 						apiContext: i
 					} = s;
 					const l = c();
 					if ((await m(i(), t, e)).ok) {
-						o(F({
+						o(B({
 							collectionId: t,
 							postId: e
-						})), o(K({
+						})), o(F({
 							collectionId: t,
 							postId: e
 						}));
-						const c = Object(y.O)(l, {
+						const c = Object(y.N)(l, {
 								postId: e
 							}),
 							s = Object(E.r)(l, {
@@ -777,4 +777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.fd98eb27293db48c6958.js.map
+//# sourceMappingURL=CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0.0d62e7afbe1c849e1ca2.js.map

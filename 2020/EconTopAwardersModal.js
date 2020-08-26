@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.03afd5c4d94029ea9628.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ff6bc4eeee942a274b0d.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -183,8 +183,8 @@
 					fill: "#FFF1B6"
 				})),
 				j = t("./node_modules/lodash/noop.js"),
-				O = t.n(j),
-				T = t("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
+				T = t.n(j),
+				O = t("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
 				y = t("./src/reddit/components/UserIcon/index.tsx"),
 				B = t("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/Awarder/index.m.less"),
 				H = t.n(B);
@@ -218,10 +218,10 @@
 						className: H.a.text
 					}, r.a.createElement("h3", {
 						className: H.a.name
-					}, m ? l.name : r.a.createElement(T.a, {
+					}, m ? l.name : r.a.createElement(O.a, {
 						user: l.name,
 						tooltipId: "topawarder--userhovercard--".concat(l.name),
-						sendHoverCardEvent: O.a
+						sendHoverCardEvent: T.a
 					}, z(l.name, l.id === n))), i > 0 && r.a.createElement("span", {
 						className: H.a.score
 					}, L._("{score} Coins", [L._param("score", i.toLocaleString())], {
@@ -292,10 +292,10 @@
 						className: D.a.rank
 					}, s)), r.a.createElement("h3", {
 						className: D.a.name
-					}, t && !o ? r.a.createElement(T.a, {
+					}, t && !o ? r.a.createElement(O.a, {
 						user: c,
 						tooltipId: "topawarderwinner-userhovercard--".concat(c),
-						sendHoverCardEvent: O.a,
+						sendHoverCardEvent: T.a,
 						wrapperClassName: D.a.hoverCardWrapper
 					}, c) : c), t && a && r.a.createElement("div", {
 						className: D.a.score
@@ -350,7 +350,7 @@
 					pending: n,
 					post: null
 				};
-				const s = Object(E.O)(e, {
+				const s = Object(E.N)(e, {
 						postId: a
 					}),
 					o = Object(f.b)(e, a),
@@ -390,7 +390,7 @@
 					t && x(Object(m.c)(t))
 				}, [t, x]);
 				const j = () => E(Object(C.g)(l.a.ECON_TOP_AWARDERS)),
-					O = () => {
+					T = () => {
 						if (t) {
 							const e = Object(i.d)(i.a.GildingFlow, !0);
 							x(Object(m.b)()), E(Object(u.d)({
@@ -400,8 +400,8 @@
 						}
 					};
 				if (!t || !d) return j(), null;
-				const T = c && c.id === d.authorId,
-					y = !d.isGildable || !!T,
+				const O = c && c.id === d.authorId,
+					y = !d.isGildable || !!O,
 					B = d.topAwardedType === w.a.Active,
 					H = d.topAwardedType === w.a.Inactive,
 					L = !f && !!h && !!h.length,
@@ -467,7 +467,7 @@
 					hk: "3reZYa"
 				})), r.a.createElement(A.f, {
 					className: q.a.cta,
-					onClick: O
+					onClick: T
 				}, r.a.createElement(g.a, {
 					className: q.a.giftIcon
 				}), Q._("Give Award", null, {
@@ -478,7 +478,7 @@
 					currentRank: o,
 					currentUserId: c && c.id,
 					hideAddAwardButton: y,
-					onGild: O
+					onGild: T
 				}), !f && B && a && r.a.createElement("div", {
 					className: q.a.anonymousRank
 				}, Q._("Anonymous redditors have awarded for {score} Coins", [Q._param("score", a.score.toLocaleString())], {
@@ -604,4 +604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconTopAwardersModal.03afd5c4d94029ea9628.js.map
+//# sourceMappingURL=EconTopAwardersModal.ff6bc4eeee942a274b0d.js.map

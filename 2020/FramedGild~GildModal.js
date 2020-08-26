@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8358997b71272b8b904e.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f9163b07c34f7f538fea.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -175,8 +175,8 @@
 						name: a(/^(.*)\/(.*) /),
 						version: s(/^(.*)\/(.*) /)
 					}, !n.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (n.name = n.name || "Blink", n.blink = e) : (n.name = n.name || "Webkit", n.webkit = e), !n.version && v && (n.version = v)) : !n.opera && /gecko\//i.test(t) && (n.name = n.name || "Gecko", n.gecko = e, n.version = n.version || a(/gecko\/(\d+(\.\d+)?)/i)), n.windowsphone || !i && !n.silk ? !n.windowsphone && r ? (n[r] = e, n.ios = e, n.osname = "iOS") : g ? (n.mac = e, n.osname = "macOS") : j ? (n.xbox = e, n.osname = "Xbox") : b ? (n.windows = e, n.osname = "Windows") : f && (n.linux = e, n.osname = "Linux") : (n.android = e, n.osname = "Android");
-					var I = "";
-					n.windows ? I = function(e) {
+					var N = "";
+					n.windows ? N = function(e) {
 						switch (e) {
 							case "NT":
 								return "NT";
@@ -201,9 +201,9 @@
 							default:
 								return
 						}
-					}(a(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : n.windowsphone ? I = a(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : n.mac ? I = (I = a(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : r ? I = (I = a(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : i ? I = a(/android[ \/-](\d+(\.\d+)*)/i) : n.webos ? I = a(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : n.blackberry ? I = a(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : n.bada ? I = a(/bada\/(\d+(\.\d+)*)/i) : n.tizen && (I = a(/tizen[\/\s](\d+(\.\d+)*)/i)), I && (n.osversion = I);
-					var x = !n.windows && I.split(".")[0];
-					return E || d || "ipad" == r || i && (3 == x || x >= 4 && !O) || n.silk ? n.tablet = e : (O || "iphone" == r || "ipod" == r || i || o || n.blackberry || n.webos || n.bada) && (n.mobile = e), n.msedge || n.msie && n.version >= 10 || n.yandexbrowser && n.version >= 15 || n.vivaldi && n.version >= 1 || n.chrome && n.version >= 20 || n.samsungBrowser && n.version >= 4 || n.firefox && n.version >= 20 || n.safari && n.version >= 6 || n.opera && n.version >= 10 || n.ios && n.osversion && n.osversion.split(".")[0] >= 6 || n.blackberry && n.version >= 10.1 || n.chromium && n.version >= 20 ? n.a = e : n.msie && n.version < 10 || n.chrome && n.version < 20 || n.firefox && n.version < 20 || n.safari && n.version < 6 || n.opera && n.version < 10 || n.ios && n.osversion && n.osversion.split(".")[0] < 6 || n.chromium && n.version < 20 ? n.c = e : n.x = e, n
+					}(a(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : n.windowsphone ? N = a(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : n.mac ? N = (N = a(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : r ? N = (N = a(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : i ? N = a(/android[ \/-](\d+(\.\d+)*)/i) : n.webos ? N = a(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : n.blackberry ? N = a(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : n.bada ? N = a(/bada\/(\d+(\.\d+)*)/i) : n.tizen && (N = a(/tizen[\/\s](\d+(\.\d+)*)/i)), N && (n.osversion = N);
+					var I = !n.windows && N.split(".")[0];
+					return E || d || "ipad" == r || i && (3 == I || I >= 4 && !O) || n.silk ? n.tablet = e : (O || "iphone" == r || "ipod" == r || i || o || n.blackberry || n.webos || n.bada) && (n.mobile = e), n.msedge || n.msie && n.version >= 10 || n.yandexbrowser && n.version >= 15 || n.vivaldi && n.version >= 1 || n.chrome && n.version >= 20 || n.samsungBrowser && n.version >= 4 || n.firefox && n.version >= 20 || n.safari && n.version >= 6 || n.opera && n.version >= 10 || n.ios && n.osversion && n.osversion.split(".")[0] >= 6 || n.blackberry && n.version >= 10.1 || n.chromium && n.version >= 20 ? n.a = e : n.msie && n.version < 10 || n.chrome && n.version < 20 || n.firefox && n.version < 20 || n.safari && n.version < 6 || n.opera && n.version < 10 || n.ios && n.osversion && n.osversion.split(".")[0] < 6 || n.chromium && n.version < 20 ? n.c = e : n.x = e, n
 				}
 				var a = t("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -367,7 +367,7 @@
 								isAnonymous: i,
 								message: d
 							},
-							I = await Object(c.f)({
+							N = await Object(c.f)({
 								context: h(),
 								correlationId: f,
 								gildParams: j,
@@ -378,8 +378,8 @@
 								thingId: e,
 								token: w
 							});
-						if (I.error) {
-							const e = Object(n.a)(I.error, I.status);
+						if (N.error) {
+							const e = Object(n.a)(N.error, N.status);
 							return void r(Object(o.stripeApiError)(e))
 						} {
 							const {
@@ -393,7 +393,7 @@
 								awarder_karma_received: n,
 								coins: i,
 								treatment_tags: d
-							} = I.body;
+							} = N.body;
 							return void r(t({
 								awardKarmaReceived: n || 0,
 								awardId: p,
@@ -712,9 +712,9 @@
 				E = a("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts"),
 				O = a("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				j = a("./src/reddit/actions/subreddit.ts"),
-				I = a("./src/reddit/selectors/comments.ts"),
-				x = a("./src/reddit/selectors/communityAwards.ts"),
-				N = a("./src/reddit/selectors/experiments/econAwardSheetV2.ts"),
+				N = a("./src/reddit/selectors/comments.ts"),
+				I = a("./src/reddit/selectors/communityAwards.ts"),
+				x = a("./src/reddit/selectors/experiments/econAwardSheetV2.ts"),
 				C = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				P = a("./src/reddit/selectors/gild.ts"),
 				_ = a("./src/reddit/selectors/gold/giveAwards.ts"),
@@ -1019,20 +1019,20 @@
 				Ee = a("./src/reddit/components/SubredditIcon/index.tsx"),
 				Oe = a("./src/reddit/icons/svgs/Premium/index.tsx"),
 				je = (a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./src/reddit/components/AnimatedPillBadge/index.m.less")),
-				Ie = a.n(je);
+				Ne = a.n(je);
 
-			function xe(e) {
+			function Ie(e) {
 				const {
 					className: t,
 					text: a
 				} = e;
 				return n.a.createElement("div", {
-					className: Object(o.a)(t, Ie.a.AnimatedPillBadge)
+					className: Object(o.a)(t, Ne.a.AnimatedPillBadge)
 				}, a, n.a.createElement("div", {
-					className: Ie.a.sheen
+					className: Ne.a.sheen
 				}))
 			}
-			class Ne extends n.a.Component {
+			class xe extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onOptionClick = () => {
 						const {
@@ -1063,7 +1063,7 @@
 						src: r
 					}), n.a.createElement("div", {
 						className: ve.a.badgeContainer
-					}, e.awardSubType !== h.d.Premium && e.isNew && n.a.createElement(xe, {
+					}, e.awardSubType !== h.d.Premium && e.isNew && n.a.createElement(Ie, {
 						className: ve.a.iconNewBadge,
 						text: W.fbt._("New", null, {
 							hk: "1f7Av0"
@@ -1088,7 +1088,7 @@
 					})))
 				}
 			}
-			var Ce = Ne;
+			var Ce = xe;
 			const {
 				fbt: Pe
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
@@ -1411,7 +1411,7 @@
 			}));
 			var We = Object(r.b)((e, t) => {
 					if (Object(c.a)(t.thingId)) {
-						const a = Object(k.O)(e, {
+						const a = Object(k.N)(e, {
 							postId: t.thingId
 						});
 						if (!a) return {};
@@ -1695,8 +1695,8 @@
 					}, [t]);
 					const E = [at, ...m.filter(e => g[e.tag])],
 						O = g[w],
-						[j, I] = Object(s.useState)(!1),
-						[x, N] = Object(s.useState)(1),
+						[j, N] = Object(s.useState)(!1),
+						[I, x] = Object(s.useState)(1),
 						C = Object(s.useCallback)(e => {
 							if (null !== e) {
 								const t = e.clientWidth,
@@ -1705,10 +1705,10 @@
 										colGutter: s
 									} = tt,
 									n = t > (a + s) * (O.length - 1) + a + a + s;
-								if (I(n), n) N(O.length);
+								if (N(n), n) x(O.length);
 								else {
 									const e = Math.floor((t - a) / (a + s) + 1);
-									N(e)
+									x(e)
 								}
 							}
 						}, [O]);
@@ -1719,8 +1719,8 @@
 						r(e);
 						const t = E.find(e => e.tag === w) || at,
 							a = O.findIndex(t => t === e.id),
-							s = Math.floor(a / x),
-							n = a - s * x;
+							s = Math.floor(a / I),
+							n = a - s * I;
 						l(Object(p.clickSelectAwardEventV2)(e, u, {
 							awardColPosition: n + 1,
 							awardRowPosition: s + 1,
@@ -1830,12 +1830,12 @@
 						n = t && t.id
 					}
 					if (!n && Object(c.a)(a)) {
-						const t = Object(k.O)(e, {
+						const t = Object(k.N)(e, {
 							postId: a
 						});
 						n = t && t.belongsTo.id
 					}
-					return n ? Object(x.l)(e, {
+					return n ? Object(I.l)(e, {
 						subredditId: n
 					}) : []
 				},
@@ -1851,17 +1851,17 @@
 						n = t && t.id
 					}
 					if (!n && Object(c.a)(a)) {
-						const t = Object(k.O)(e, {
+						const t = Object(k.N)(e, {
 							postId: a
 						});
 						n = t && t.belongsTo.id
 					}
-					return n ? Object(x.h)(e, {
+					return n ? Object(I.h)(e, {
 						subredditId: n,
 						thingId: a
 					}) : []
 				},
-				awardSheetV2Enabled: N.a,
+				awardSheetV2Enabled: x.a,
 				awardsPending: (e, t) => {
 					let {
 						thingId: a,
@@ -1874,7 +1874,7 @@
 						if (!t) return !1;
 						n = t.id
 					}
-					return Object(x.k)(e, {
+					return Object(I.k)(e, {
 						subredditId: n
 					})
 				},
@@ -1890,7 +1890,7 @@
 						if (!t) return !1;
 						n = t.id
 					}
-					return Object(x.g)(e, {
+					return Object(I.g)(e, {
 						subredditId: n,
 						thingId: a
 					})
@@ -1908,9 +1908,9 @@
 					let {
 						thingId: a
 					} = t;
-					return Object(c.a)(a) ? Object(k.O)(e, {
+					return Object(c.a)(a) ? Object(k.N)(e, {
 						postId: a
-					}) : Object(I.n)(e, {
+					}) : Object(N.n)(e, {
 						commentId: a
 					})
 				},
@@ -1944,12 +1944,12 @@
 						n = t && t.id
 					}
 					if (!n && Object(c.a)(a)) {
-						const t = Object(k.O)(e, {
+						const t = Object(k.N)(e, {
 							postId: a
 						});
 						n = t && t.belongsTo.id
 					}
-					return n ? Object(x.j)(e, {
+					return n ? Object(I.j)(e, {
 						subredditId: n
 					}) : []
 				},
@@ -1965,7 +1965,7 @@
 						if (!t) return !1;
 						n = t.id
 					}
-					return Object(x.i)(e, {
+					return Object(I.i)(e, {
 						subredditId: n
 					})
 				},
@@ -2088,14 +2088,14 @@
 						subreddit: E,
 						subredditAboutRequested: O,
 						subredditId: j,
-						subredditName: I,
-						tagsRequested: x,
-						thingId: N
+						subredditName: N,
+						tagsRequested: I,
+						thingId: x
 					} = this.props;
-					r || Object(m.d)(m.a.GildingFlow, !1), w(Object(p.viewGildModalEvent)(f.id, i, N)), v(!o && Object(u.l)());
+					r || Object(m.d)(m.a.GildingFlow, !1), w(Object(p.viewGildModalEvent)(f.id, i, x)), v(!o && Object(u.l)());
 					const C = E ? E.id : j || (c && c.belongsTo ? c.belongsTo.id : void 0);
-					if (C && !s && n(C), C && s && (t(C, N), x(C)), (!s && a.length && !a.find(e => e.id === f.id) || s && e.length && !e.find(e => e.award.id === f.id)) && g(h.m), E || I) {
-						O(E ? E.name : I)
+					if (C && !s && n(C), C && s && (t(C, x), I(C)), (!s && a.length && !a.find(e => e.id === f.id) || s && e.length && !e.find(e => e.award.id === f.id)) && g(h.m), E || N) {
+						O(E ? E.name : N)
 					}
 					d && (f.pennyPrice ? F() : Object(L.a)(), l || b(r))
 				}
@@ -2124,9 +2124,9 @@
 						message: E,
 						needPayment: O,
 						postOrComment: j,
-						prefersReducedMotion: I,
-						selectedAward: x,
-						sendEvent: N,
+						prefersReducedMotion: N,
+						selectedAward: I,
+						sendEvent: x,
 						showPurchaseModal: C,
 						subreddit: P,
 						subredditCoins: _,
@@ -2137,19 +2137,19 @@
 						userCoins: M
 					} = this.props, {
 						showPurchaseModalInThisInstance: T
-					} = this.state, B = j ? j.author : e, L = Object(c.a)(S) ? "post" : "comment", R = C && T, G = R && !x.pennyPrice, V = R && !!x.pennyPrice, F = (G || V) && !b;
+					} = this.state, B = j ? j.author : e, L = Object(c.a)(S) ? "post" : "comment", R = C && T, G = R && !I.pennyPrice, V = R && !!I.pennyPrice, F = (G || V) && !b;
 					if (G && F) return null;
 					if (V && F) return n.a.createElement(D, null);
 					const z = P ? P.name : y,
 						W = !(!m || !m.isGold),
 						q = {
 							needPayment: O,
-							needPremium: !W && x.awardSubType === h.d.Premium,
+							needPremium: !W && I.awardSubType === h.d.Premium,
 							onNeedPayment: this.onNeedPayment,
 							onGetPremium: this.onGetPremium,
 							onGild: this.onGildRequested,
 							pending: g || f,
-							selectedAward: x,
+							selectedAward: I,
 							thingId: S
 						};
 					return n.a.createElement("div", {
@@ -2162,7 +2162,7 @@
 						authorName: B,
 						postOrComment: L,
 						onCancel: l,
-						sendEvent: N,
+						sendEvent: x,
 						thingId: S
 					}), n.a.createElement("div", {
 						className: Object(o.a)(Re.a.modalMainContent, {
@@ -2171,11 +2171,11 @@
 					}, r ? n.a.createElement(nt, {
 						awardTotals: t,
 						awardsPending: a,
-						prefersReducedMotion: I,
+						prefersReducedMotion: N,
 						premiumUser: W,
 						onSelect: this.props.selectAward,
-						selectedAward: x,
-						sendEvent: N,
+						selectedAward: I,
+						sendEvent: x,
 						tags: A,
 						tagsPending: k,
 						thingId: S
@@ -2183,9 +2183,9 @@
 						awards: s,
 						awardsPending: i,
 						onSelect: this.props.selectAward,
-						prefersReducedMotion: I,
-						selectedAward: x,
-						sendEvent: N,
+						prefersReducedMotion: N,
+						selectedAward: I,
+						sendEvent: x,
 						subreddit: P,
 						subredditName: z,
 						thingId: S,
@@ -2197,18 +2197,18 @@
 						isAnonymous: p,
 						isLivestream: w,
 						message: E,
-						selectedAward: x,
-						sendEvent: N,
+						selectedAward: I,
+						sendEvent: x,
 						thingId: S,
 						toggleIsAnonymous: this.toggleIsAnonymous,
 						handleMessageInput: this.handleMessageInput,
 						gildButtonProps: q,
-						prefersReducedMotion: I,
+						prefersReducedMotion: N,
 						subredditName: z,
 						subredditCoins: _
 					})), !r && n.a.createElement(Be, mt({
 						errorMessage: u || void 0,
-						sendEvent: N,
+						sendEvent: x,
 						subreddit: P,
 						subredditName: z,
 						subredditCoins: _,
@@ -2412,7 +2412,7 @@
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "l", (function() {
-				return x
+				return I
 			})), a.d(t, "m", (function() {
 				return P
 			})), a.d(t, "n", (function() {
@@ -2461,7 +2461,7 @@
 				E = e => e.publicAccessNetwork.hlsStreams,
 				O = Object(s.a)(E, e => e.ended),
 				j = Object(s.a)(E, e => e.removed),
-				I = Object(s.a)(b, O, j, (e, t, a) => {
+				N = Object(s.a)(b, O, j, (e, t, a) => {
 					const s = t.reduce((e, t) => {
 						const a = e[t];
 						if (!a) return e;
@@ -2493,15 +2493,15 @@
 						})
 					}, s)
 				}),
-				x = (e, t) => {
-					return I(e)[Object(i.g)(t)]
+				I = (e, t) => {
+					return N(e)[Object(i.g)(t)]
 				},
-				N = Object(s.a)((e, t) => {
+				x = Object(s.a)((e, t) => {
 					let {
 						streamIdFromPath: a
 					} = t;
 					return a
-				}, (e, t) => p(t.listingName)(e, t), I, g, d.h, c.c, (e, t, a, s, n, d) => {
+				}, (e, t) => p(t.listingName)(e, t), N, g, d.h, c.c, (e, t, a, s, n, d) => {
 					if (d) {
 						const r = [];
 						if (e) {
@@ -2524,12 +2524,12 @@
 						count: a
 					} = t;
 					return a
-				}, I, (e, t) => {
+				}, N, (e, t) => {
 					let {
 						listingName: a,
 						streamIdFromPath: s
 					} = t;
-					return N(e, {
+					return x(e, {
 						listingName: a,
 						streamIdFromPath: s
 					})
@@ -2537,11 +2537,11 @@
 					const s = a.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? s.slice(0, e) : s
 				}),
-				P = Object(s.a)(I, C, (e, t) => {
+				P = Object(s.a)(N, C, (e, t) => {
 					const a = t[0];
 					if (a) return e[a]
 				}),
-				_ = Object(s.a)(I, C, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				_ = Object(s.a)(N, C, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === o.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				y = Object(s.a)(v, (e, t) => {
 					let {
 						related: a,
@@ -2562,7 +2562,7 @@
 						streamIdFromPath: a
 					} = t;
 					return a
-				}, I, (e, t) => {
+				}, N, (e, t) => {
 					let {
 						related: a,
 						streamIdFromPath: s,
@@ -2583,7 +2583,7 @@
 					});
 					return i ? i.post.id : void 0
 				}),
-				k = Object(n.a)(Object(s.a)(A, I, (e, t) => e ? t[e] : void 0)),
+				k = Object(n.a)(Object(s.a)(A, N, (e, t) => e ? t[e] : void 0)),
 				S = Object(s.a)((e, t) => {
 					let {
 						streamIdFromPath: a
@@ -2604,10 +2604,10 @@
 				T = Object(s.a)(w, v, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				B = Object(n.a)(Object(s.a)(S, I, (e, t) => e ? t[e] : void 0)),
-				L = Object(n.a)(Object(s.a)(M, I, (e, t) => e ? t[e] : void 0)),
-				R = Object(n.a)(Object(s.a)(T, I, (e, t) => e ? t[e] : void 0)),
-				G = (Object(n.a)(Object(s.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, I, (e, t) => Object.keys(e).filter(e => !!t[e]).map(a => Object.assign(Object.assign({}, t[a]), {
+				B = Object(n.a)(Object(s.a)(S, N, (e, t) => e ? t[e] : void 0)),
+				L = Object(n.a)(Object(s.a)(M, N, (e, t) => e ? t[e] : void 0)),
+				R = Object(n.a)(Object(s.a)(T, N, (e, t) => e ? t[e] : void 0)),
+				G = (Object(n.a)(Object(s.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, N, (e, t) => Object.keys(e).filter(e => !!t[e]).map(a => Object.assign(Object.assign({}, t[a]), {
 					preloadedPreviewUrl: e[a]
 				})))), Object(s.a)((e, t) => {
 					let {
@@ -2619,7 +2619,7 @@
 					let {
 						streamIdFromPath: a
 					} = t;
-					return a ? x(e, a) : void 0
+					return a ? I(e, a) : void 0
 				}, e => !e || e.chat_disabled);
 
 			function F(e, t) {
@@ -2639,7 +2639,7 @@
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
 			}(z || (z = {}));
-			const W = Object(s.a)(S, I, h.b, (e, t, a) => {
+			const W = Object(s.a)(S, N, h.b, (e, t, a) => {
 					if (a) return z.INTRO;
 					const s = e && t[e];
 					if (!s) return z.UNAVAILABLE;
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.8358997b71272b8b904e.js.map
+//# sourceMappingURL=FramedGild~GildModal.f9163b07c34f7f538fea.js.map

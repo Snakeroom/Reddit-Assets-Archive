@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.dafd10437102b8453efc.js
-// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.247f2d849edb6b4e9641.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -396,8 +396,8 @@
 						})
 					}
 				}),
-				O = Object(h.a)(f);
-			class L extends s.Component {
+				L = Object(h.a)(f);
+			class O extends s.Component {
 				constructor(e) {
 					super(e), this.viewabilityStats = V(), this.videoStats = _(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
 						this.props.trackDisplay && this.handleThresholds(e, l.ViewabilityThresholds), this.props.trackVideo && this.handleThresholds(e, l.VideoViewabilityThresholds, !0), this.checkViewabilityByType(e)
@@ -511,7 +511,7 @@
 					}, this.props.children)
 				}
 			}
-			t.a = O(L)
+			t.a = L(O)
 		},
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, i) {
 			"use strict";
@@ -526,7 +526,7 @@
 				d = i("./src/reddit/selectors/posts.ts"),
 				l = i("./src/lib/classNames/index.ts");
 			const u = Object(a.a)(() => Object(s.c)({
-					post: d.O
+					post: d.N
 				})),
 				c = e => {
 					let {
@@ -556,4 +556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.dafd10437102b8453efc.js.map
+//# sourceMappingURL=reddit-components-BlankPost.247f2d849edb6b4e9641.js.map

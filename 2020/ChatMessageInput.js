@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.7a3cfb37aed93dff312a.js
-// Retrieved at 8/26/2020, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.78266beed2a7813c70f9.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -507,7 +507,7 @@
 					return Object(S.g)(e, {
 						commentsPageKey: Object(F.a)(s)
 					})
-				}, L.O, (e, t) => {
+				}, L.N, (e, t) => {
 					let {
 						postId: s
 					} = t;
@@ -592,7 +592,7 @@
 					hasError: S.w,
 					liveStreamingChatCharacterLimit: T.a,
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
-					post: L.O
+					post: L.N
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -1669,4 +1669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.7a3cfb37aed93dff312a.js.map
+//# sourceMappingURL=ChatMessageInput.78266beed2a7813c70f9.js.map

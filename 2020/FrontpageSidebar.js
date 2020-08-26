@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.6e72b89003825130bc42.js
-// Retrieved at 8/24/2020, 2:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.3bad958df41b5c496496.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -228,7 +228,7 @@
 			var X = Z(H),
 				K = n("./src/reddit/selectors/posts.ts");
 			const G = Object(c.c)({
-				recentPosts: K.X
+				recentPosts: K.W
 			});
 			var Y = Object(d.b)(G, (e, t) => ({
 					openLightbox: t => () => e(Object(U.a)(t.permalink))
@@ -394,7 +394,7 @@
 				g = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/MiniPost/index.m.less"),
 				x = n.n(h);
-			const _ = Object(o.a)(e => e, p.O, p.d, (e, t, n) => {
+			const _ = Object(o.a)(e => e, p.N, p.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -1038,4 +1038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.6e72b89003825130bc42.js.map
+//# sourceMappingURL=FrontpageSidebar.3bad958df41b5c496496.js.map

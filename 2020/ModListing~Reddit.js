@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.c10d0dff0690b9d3aaf5.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.d3d711f9075a89b4de91.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1941,24 +1941,24 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = Object(l.a)(v.a, v.i, g.j, (e, t) => {
+			const x = Object(l.a)(v.a, v.i, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: r
 					} = t;
 					return n && r ? Object(g.b)(e, r) : null
-				}, g.O, (e, t, n, r, s) => ({
+				}, g.N, (e, t, n, r) => ({
 					allowClickTracking: e,
-					imageGalleryCurrentUrl: n,
-					basePixelMetadata: r,
+					basePixelMetadata: n,
 					userId: t ? Object(f.a)(t.id) : null,
-					post: s
+					post: r
 				})),
 				j = Object(d.b)(x, e => ({
 					fireAdPixelsOfType: (t, n) => e(Object(b.t)(t, n))
 				})),
 				w = (e, t, n, r) => {
-					r && t.outboundUrl && t.outboundUrlExpiration && t.outboundUrlExpiration > Date.now() && (e.href = m(t.outboundUrl, n))
+					const s = t.outboundUrlExpiration && t.outboundUrlExpiration > Date.now();
+					r && t.outboundUrl && s && (e.href = m(t.outboundUrl, n))
 				},
 				C = (e, t, n) => {
 					if (e && t && /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(n)) {
@@ -1980,39 +1980,38 @@
 						allowClickTracking: t,
 						basePixelMetadata: n,
 						href: r,
-						imageGalleryCurrentUrl: o,
-						isSponsored: a,
-						post: i,
-						postId: d,
-						source: l,
-						userId: u
+						isSponsored: o,
+						post: a,
+						postId: i,
+						source: d,
+						userId: l
 					} = e;
-					let m = s()(e, ["allowClickTracking", "basePixelMetadata", "isSponsored", "postId", "source", "userId"]),
-						f = l && l.outboundUrl && a ? l.outboundUrl : r;
-					return o && a && (f = o), m = Object.assign(Object.assign({}, m), {
-						href: f,
+					let u = s()(e, ["allowClickTracking", "basePixelMetadata", "isSponsored", "postId", "source", "userId"]);
+					const m = d && d.outboundUrl && o ? d.outboundUrl : r;
+					return u = Object.assign(Object.assign({}, u), {
+						href: m,
 						rel: p.a,
 						target: p.c.BLANK
-					}), !l || (e => {
+					}), !d || (e => {
 						const {
 							outboundUrlCreated: t,
 							outboundUrlReceived: n
 						} = e;
 						return !(!t || !n) && (t > n + 3e5 || t < n - 36e5)
-					})(l) ? c.a.createElement("a", m) : c.a.createElement("a", O({}, m, {
+					})(d) ? c.a.createElement("a", u) : c.a.createElement("a", O({}, u, {
 						onMouseDown: e => {
-							if (!(l && l.outboundUrl && a)) return !(1 !== e.button && 2 !== e.button && !e.ctrlKey) || void w(e.currentTarget, l, u, t);
-							_(e.currentTarget, d, n)
+							if (!(d && d.outboundUrl && o)) return !(1 !== e.button && 2 !== e.button && !e.ctrlKey) || void w(e.currentTarget, d, l, t);
+							_(e.currentTarget, i, n)
 						},
 						onClick: () => {
-							i && Object(b.t)(i, h.a.Click)
+							a && Object(b.t)(a, h.a.Click)
 						},
 						onMouseLeave: e => {
-							a || ((e, t) => {
+							o || ((e, t) => {
 								e.href = t
-							})(e.currentTarget, f)
+							})(e.currentTarget, m)
 						},
-						onTouchStart: e => w(e.currentTarget, l, u, t)
+						onTouchStart: e => w(e.currentTarget, d, l, t)
 					}))
 				});
 			t.b = E
@@ -3170,4 +3169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.c10d0dff0690b9d3aaf5.js.map
+//# sourceMappingURL=ModListing~Reddit.d3d711f9075a89b4de91.js.map

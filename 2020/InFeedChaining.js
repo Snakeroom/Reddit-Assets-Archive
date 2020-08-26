@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.c191391eb8eb2206b616.js
-// Retrieved at 8/20/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.f6eb4a6e32c9311319ce.js
+// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, s, t) {
@@ -362,8 +362,8 @@
 				O = t.n(S),
 				_ = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less"),
 				j = t.n(_);
-			const k = "".concat(b.a.assetPath, "/img/link-placeholder.png");
-			var N = e => {
+			const N = "".concat(b.a.assetPath, "/img/link-placeholder.png");
+			var k = e => {
 					const {
 						autoplayPref: s,
 						availableWidth: t,
@@ -409,7 +409,7 @@
 						"data-redditstyle": !0,
 						post: c,
 						showPlaceholderContentType: !a || !a.postPlaceholderImage,
-						templatePlaceholderImage: a ? a.postPlaceholderImage : k,
+						templatePlaceholderImage: a ? a.postPlaceholderImage : N,
 						usePreview: !0
 					})))) : u && p ? u.type !== C.o.RTJSON && u.type !== C.o.TEXT ? (S = !1, b = i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 						className: j.a.flexSpacer
@@ -565,7 +565,7 @@
 						onSubredditOrProfileClick: this.trackSubredditOrProfileClicked,
 						subredditOrProfile: p,
 						shouldShowSubscribeButton: v
-					}), i.a.createElement(N, t), i.a.createElement(B, {
+					}), i.a.createElement(k, t), i.a.createElement(B, {
 						"data-redditstyle": !0,
 						post: m
 					})), i.a.createElement(d.d, {
@@ -628,8 +628,8 @@
 				O = t("./src/reddit/selectors/platform.ts"),
 				_ = t("./src/reddit/selectors/posts.ts"),
 				j = t("./src/reddit/selectors/subscriptions.ts"),
-				k = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx"),
-				N = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/constants.ts"),
+				N = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx"),
+				k = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/constants.ts"),
 				P = t("./src/reddit/components/DiscoveryUnit/InFeedChaining/index.m.less"),
 				E = t.n(P);
 
@@ -651,7 +651,7 @@
 				D = Object(d.c)({
 					discoveryUnit: S.b,
 					postChain: S.f,
-					postSubreddit: _.bb,
+					postSubreddit: _.ab,
 					routeName: O.r,
 					subscribedProfiles: j.c,
 					subscribedSubreddits: j.d
@@ -742,7 +742,7 @@
 							subscribedProfiles: t,
 							subscribedSubreddits: r
 						} = this.state;
-						return s ? o.a.createElement(k.a, T({}, e, {
+						return s ? o.a.createElement(N.a, T({}, e, {
 							getSubscribeEventFactory: this.getItemPostSubredditSubscribeEventFactory,
 							onClickPost: this.openPost,
 							onSubredditOrProfileClick: this.trackPostSubredditOrProfileClicked,
@@ -825,7 +825,7 @@
 						isHidden: !d,
 						isLoading: !1,
 						items: t,
-						itemWidth: N.a,
+						itemWidth: k.a,
 						leftArrowClassName: E.a.arrow,
 						onArrowClick: this.trackArrowClicked,
 						onPostView: this.trackPostViewed,
@@ -1136,12 +1136,12 @@
 				currentUser: b.i,
 				flairStyleTemplate: c.R,
 				hideNSFWPref: b.z,
-				isActive: p.k,
+				isActive: p.j,
 				moderatorPermissions: m.i,
 				modModeEnabled: c.P,
-				post: p.O,
+				post: p.N,
 				showEditFlair: u.a,
-				subredditOrProfile: p.bb,
+				subredditOrProfile: p.ab,
 				userIsOp: b.hb
 			}), (e, s) => {
 				let {
@@ -1228,4 +1228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining.c191391eb8eb2206b616.js.map
+//# sourceMappingURL=InFeedChaining.f6eb4a6e32c9311319ce.js.map
