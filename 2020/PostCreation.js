@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.789310095051fcf65620.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.413c68f0fb36aa00943b.js
+// Retrieved at 8/26/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "4e80bd4-production"
+					SENTRY_RELEASE_VERSION: "7b768e6-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1236,38 +1236,37 @@
 		},
 		"./src/lib/onFocusAndVisibilityChange/index.ts": function(e, t, n) {
 			"use strict";
-			var s, o = n("./node_modules/brcast/dist/brcast.es.js"),
-				r = n("./node_modules/lodash/findKey.js"),
-				i = n.n(r);
-			! function(e) {
-				e.Hidden = "hidden", e.Visible = "visible"
-			}(s || (s = {}));
-			const a = {
-				hidden: "visibilitychange",
-				webkitHidden: "webkitvisibilitychange",
-				mozHidden: "mozvisibilitychange",
-				msHidden: "msvisibilitychange"
-			};
-			let c = !1;
-			const l = Object(o.a)({
-				documentInFocus: !0
-			});
-			! function() {
-				if (!c) {
-					const e = i()(a, (e, t) => void 0 !== document[t]);
-					e && document.addEventListener(a[e], () => {
-						l.setState({
-							documentInFocus: document.visibilityState !== s.Hidden
-						})
-					}), c = !0
-				}
-			}(), t.a = {
-				subscribe: e => {
-					return l.subscribe(e)
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var s = n("./node_modules/brcast/dist/brcast.es.js");
+			const o = () => "undefined" != typeof document,
+				r = () => o() && "visible" === document.visibilityState,
+				i = () => ({
+					documentInFocus: r()
+				}),
+				{
+					subscribe: a,
+					unsubscribe: c,
+					setState: l
+				} = Object(s.a)(i()),
+				d = {
+					hidden: "visibilitychange",
+					webkitHidden: "webkitvisibilitychange",
+					mozHidden: "mozvisibilitychange",
+					msHidden: "msvisibilitychange"
 				},
-				unsubscribe: e => {
-					l.unsubscribe(e)
-				}
+				u = () => l(i());
+			(() => {
+				const e = (() => {
+					if (!o()) return;
+					const e = Object.keys(d).find(e => e in document);
+					return e ? d[e] : void 0
+				})();
+				e && document.addEventListener(e, u)
+			})(), t.a = {
+				isDocumentHidden: () => !r(),
+				isDocumentVisible: r,
+				subscribe: a,
+				unsubscribe: c
 			}
 		},
 		"./src/lib/timeUntil/index.ts": function(e, t, n) {
@@ -33712,4 +33711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.789310095051fcf65620.js.map
+//# sourceMappingURL=PostCreation.413c68f0fb36aa00943b.js.map

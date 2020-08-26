@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.dcf52084f40b64f625e6.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.17f81ace1463c0cd08f2.js
+// Retrieved at 8/26/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -79,38 +79,37 @@
 		},
 		"./src/lib/onFocusAndVisibilityChange/index.ts": function(e, t, s) {
 			"use strict";
-			var n, r = s("./node_modules/brcast/dist/brcast.es.js"),
-				i = s("./node_modules/lodash/findKey.js"),
-				o = s.n(i);
-			! function(e) {
-				e.Hidden = "hidden", e.Visible = "visible"
-			}(n || (n = {}));
-			const a = {
-				hidden: "visibilitychange",
-				webkitHidden: "webkitvisibilitychange",
-				mozHidden: "mozvisibilitychange",
-				msHidden: "msvisibilitychange"
-			};
-			let c = !1;
-			const l = Object(r.a)({
-				documentInFocus: !0
-			});
-			! function() {
-				if (!c) {
-					const e = o()(a, (e, t) => void 0 !== document[t]);
-					e && document.addEventListener(a[e], () => {
-						l.setState({
-							documentInFocus: document.visibilityState !== n.Hidden
-						})
-					}), c = !0
-				}
-			}(), t.a = {
-				subscribe: e => {
-					return l.subscribe(e)
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = s("./node_modules/brcast/dist/brcast.es.js");
+			const r = () => "undefined" != typeof document,
+				i = () => r() && "visible" === document.visibilityState,
+				o = () => ({
+					documentInFocus: i()
+				}),
+				{
+					subscribe: a,
+					unsubscribe: c,
+					setState: l
+				} = Object(n.a)(o()),
+				d = {
+					hidden: "visibilitychange",
+					webkitHidden: "webkitvisibilitychange",
+					mozHidden: "mozvisibilitychange",
+					msHidden: "msvisibilitychange"
 				},
-				unsubscribe: e => {
-					l.unsubscribe(e)
-				}
+				u = () => l(o());
+			(() => {
+				const e = (() => {
+					if (!r()) return;
+					const e = Object.keys(d).find(e => e in document);
+					return e ? d[e] : void 0
+				})();
+				e && document.addEventListener(e, u)
+			})(), t.a = {
+				isDocumentHidden: () => !i(),
+				isDocumentVisible: i,
+				subscribe: a,
+				unsubscribe: c
 			}
 		},
 		"./src/lib/timeUntil/index.ts": function(e, t, s) {
@@ -4074,4 +4073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.dcf52084f40b64f625e6.js.map
+//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.17f81ace1463c0cd08f2.js.map

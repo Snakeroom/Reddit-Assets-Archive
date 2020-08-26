@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322.438c2bc6acd12d3960b1.js
-// Retrieved at 6/30/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322.9f0752d4fc0b95d81e9e.js
+// Retrieved at 8/26/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -206,22 +206,6 @@
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, r) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
-		},
-		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
-			e.exports = function(e, t, r) {
-				var n;
-				return r(e, (function(e, r, o) {
-					if (t(e, r, o)) return n = r, !1
-				})), n
-			}
-		},
-		"./node_modules/lodash/findKey.js": function(e, t, r) {
-			var n = r("./node_modules/lodash/_baseFindKey.js"),
-				o = r("./node_modules/lodash/_baseForOwn.js"),
-				i = r("./node_modules/lodash/_baseIteratee.js");
-			e.exports = function(e, t) {
-				return n(e, i(t, 3), o)
-			}
 		},
 		"./node_modules/react-fast-compare/index.js": function(e, t) {
 			var r = "undefined" != typeof Element,
@@ -594,24 +578,24 @@
 				passive: !0
 			};
 
-			function I(e) {
+			function q(e) {
 				return e.split("-")[0]
 			}
 
-			function q(e) {
+			function I(e) {
 				return e.split("-")[1]
 			}
 
-			function F(e) {
+			function V(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
-			function V(e) {
+			function z(e) {
 				var t, r = e.reference,
 					n = e.element,
 					o = e.placement,
-					i = o ? I(o) : null,
-					a = o ? q(o) : null,
+					i = o ? q(o) : null,
+					a = o ? I(o) : null,
 					s = r.x + r.width / 2 - n.width / 2,
 					c = r.y + r.height / 2 - n.height / 2;
 				switch (i) {
@@ -645,7 +629,7 @@
 							y: r.y
 						}
 				}
-				var f = i ? F(i) : null;
+				var f = i ? V(i) : null;
 				if (null != f) {
 					var u = "y" === f ? "height" : "width";
 					switch (a) {
@@ -658,14 +642,14 @@
 				}
 				return t
 			}
-			var z = {
+			var F = {
 				top: "auto",
 				right: "auto",
 				bottom: "auto",
 				left: "auto"
 			};
 
-			function K(e) {
+			function Y(e) {
 				var t, r = e.popper,
 					n = e.popperRect,
 					o = e.placement,
@@ -695,19 +679,19 @@
 				}
 				var E, M = Object.assign({
 					position: s
-				}, f && z);
+				}, f && F);
 				return c ? Object.assign(Object.assign({}, M), {}, ((E = {})[g] = m ? "0" : "", E[v] = h ? "0" : "", E.transform = (b.devicePixelRatio || 1) < 2 ? "translate(" + l + "px, " + d + "px)" : "translate3d(" + l + "px, " + d + "px, 0)", E)) : Object.assign(Object.assign({}, M), {}, ((t = {})[g] = m ? d + "px" : "", t[v] = h ? l + "px" : "", t.transform = "", t))
 			}
-			var Y = {
+			var $ = {
 				left: "right",
 				right: "left",
 				bottom: "top",
 				top: "bottom"
 			};
 
-			function $(e) {
+			function K(e) {
 				return e.replace(/left|right|bottom|top/g, (function(e) {
-					return Y[e]
+					return $[e]
 				}))
 			}
 			var X = {
@@ -832,7 +816,7 @@
 					E = e.elements[m ? y : d],
 					D = ee(s(E) ? E : E.contextElement || u(e.elements.popper), c, p),
 					P = o(O),
-					R = V({
+					R = z({
 						reference: P,
 						element: _,
 						strategy: "absolute",
@@ -912,7 +896,7 @@
 						fn: function(e) {
 							var t = e.state,
 								r = e.name;
-							t.modifiersData[r] = V({
+							t.modifiersData[r] = z({
 								reference: t.rects.reference,
 								element: t.rects.popper,
 								strategy: "absolute",
@@ -932,16 +916,16 @@
 								i = r.adaptive,
 								a = void 0 === i || i,
 								s = {
-									placement: I(t.placement),
+									placement: q(t.placement),
 									popper: t.elements.popper,
 									popperRect: t.rects.popper,
 									gpuAcceleration: o
 								};
-							null != t.modifiersData.popperOffsets && (t.styles.popper = Object.assign(Object.assign({}, t.styles.popper), K(Object.assign(Object.assign({}, s), {}, {
+							null != t.modifiersData.popperOffsets && (t.styles.popper = Object.assign(Object.assign({}, t.styles.popper), Y(Object.assign(Object.assign({}, s), {}, {
 								offsets: t.modifiersData.popperOffsets,
 								position: t.options.strategy,
 								adaptive: a
-							})))), null != t.modifiersData.arrow && (t.styles.arrow = Object.assign(Object.assign({}, t.styles.arrow), K(Object.assign(Object.assign({}, s), {}, {
+							})))), null != t.modifiersData.arrow && (t.styles.arrow = Object.assign(Object.assign({}, t.styles.arrow), Y(Object.assign(Object.assign({}, s), {}, {
 								offsets: t.modifiersData.arrow,
 								position: "absolute",
 								adaptive: !1
@@ -1008,7 +992,7 @@
 								i = void 0 === o ? [0, 0] : o,
 								a = L.reduce((function(e, r) {
 									return e[r] = function(e, t, r) {
-										var n = I(e),
+										var n = q(e),
 											o = [_, w].indexOf(n) >= 0 ? -1 : 1,
 											i = "function" == typeof r ? r(Object.assign(Object.assign({}, t), {}, {
 												placement: e
@@ -1038,12 +1022,12 @@
 								r = e.options,
 								n = e.name;
 							if (!t.modifiersData[n]._skip) {
-								for (var o = r.mainAxis, i = void 0 === o || o, a = r.altAxis, s = void 0 === a || a, c = r.fallbackPlacements, f = r.padding, u = r.boundary, p = r.rootBoundary, l = r.altBoundary, d = r.flipVariations, h = void 0 === d || d, m = r.allowedAutoPlacements, v = t.options.placement, g = I(v), b = c || (g === v || !h ? [$(v)] : function(e) {
-										if (I(e) === E) return [];
-										var t = $(e);
+								for (var o = r.mainAxis, i = void 0 === o || o, a = r.altAxis, s = void 0 === a || a, c = r.fallbackPlacements, f = r.padding, u = r.boundary, p = r.rootBoundary, l = r.altBoundary, d = r.flipVariations, h = void 0 === d || d, m = r.allowedAutoPlacements, v = t.options.placement, g = q(v), b = c || (g === v || !h ? [K(v)] : function(e) {
+										if (q(e) === E) return [];
+										var t = K(e);
 										return [G(e), t, G(t)]
 									}(v)), y = [v].concat(b).reduce((function(e, r) {
-										return e.concat(I(r) === E ? function(e, t) {
+										return e.concat(q(r) === E ? function(e, t) {
 											void 0 === t && (t = {});
 											var r = t,
 												n = r.placement,
@@ -1053,9 +1037,9 @@
 												s = r.flipVariations,
 												c = r.allowedAutoPlacements,
 												f = void 0 === c ? L : c,
-												u = q(n),
+												u = I(n),
 												p = (u ? s ? R : R.filter((function(e) {
-													return q(e) === u
+													return I(e) === u
 												})) : M).filter((function(e) {
 													return f.indexOf(e) >= 0
 												})).reduce((function(t, r) {
@@ -1064,7 +1048,7 @@
 														boundary: o,
 														rootBoundary: i,
 														padding: a
-													})[I(r)], t
+													})[q(r)], t
 												}), {});
 											return Object.keys(p).sort((function(e, t) {
 												return p[e] - p[t]
@@ -1079,8 +1063,8 @@
 										}) : r)
 									}), []), O = t.rects.reference, P = t.rects.popper, S = new Map, A = !0, T = y[0], k = 0; k < y.length; k++) {
 									var N = y[k],
-										B = I(N),
-										C = q(N) === D,
+										B = q(N),
+										C = I(N) === D,
 										W = [w, x].indexOf(B) >= 0,
 										U = W ? "width" : "height",
 										H = ne(t, {
@@ -1090,20 +1074,20 @@
 											altBoundary: l,
 											padding: f
 										}),
-										F = W ? C ? j : _ : C ? x : w;
-									O[U] > P[U] && (F = $(F));
-									var V = $(F),
-										z = [];
-									if (i && z.push(H[B] <= 0), s && z.push(H[F] <= 0, H[V] <= 0), z.every((function(e) {
+										V = W ? C ? j : _ : C ? x : w;
+									O[U] > P[U] && (V = K(V));
+									var z = K(V),
+										F = [];
+									if (i && F.push(H[B] <= 0), s && F.push(H[V] <= 0, H[z] <= 0), F.every((function(e) {
 											return e
 										}))) {
 										T = N, A = !1;
 										break
 									}
-									S.set(N, z)
+									S.set(N, F)
 								}
 								if (A)
-									for (var K = function(e) {
+									for (var Y = function(e) {
 											var t = y.find((function(t) {
 												var r = S.get(t);
 												if (r) return r.slice(0, e).every((function(e) {
@@ -1111,8 +1095,8 @@
 												}))
 											}));
 											if (t) return T = t, "break"
-										}, Y = h ? 3 : 1; Y > 0; Y--) {
-										if ("break" === K(Y)) break
+										}, $ = h ? 3 : 1; $ > 0; $--) {
+										if ("break" === Y($)) break
 									}
 								t.placement !== T && (t.modifiersData[n]._skip = !0, t.placement = T, t.reset = !0)
 							}
@@ -1147,10 +1131,10 @@
 									padding: p,
 									altBoundary: u
 								}),
-								b = I(t.placement),
-								y = q(t.placement),
+								b = q(t.placement),
+								y = I(t.placement),
 								E = !y,
-								M = F(b),
+								M = V(b),
 								P = "x" === M ? "y" : "x",
 								S = t.modifiersData.popperOffsets,
 								A = t.rects.reference,
@@ -1171,24 +1155,24 @@
 										W = S[M] + g[L],
 										U = S[M] - g[N],
 										H = d ? -T[B] / 2 : 0,
-										V = y === D ? A[B] : T[B],
-										z = y === D ? -T[B] : -A[B],
-										K = t.elements.arrow,
-										Y = d && K ? m(K) : {
+										z = y === D ? A[B] : T[B],
+										F = y === D ? -T[B] : -A[B],
+										Y = t.elements.arrow,
+										$ = d && Y ? m(Y) : {
 											width: 0,
 											height: 0
 										},
-										$ = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
+										K = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
 											top: 0,
 											right: 0,
 											bottom: 0,
 											left: 0
 										},
-										X = $[L],
-										G = $[N],
-										J = oe(0, A[B], Y[B]),
-										Q = E ? A[B] / 2 - H - J - X - k : V - J - X - k,
-										Z = E ? -A[B] / 2 + H + J + G + k : z + J + G + k,
+										X = K[L],
+										G = K[N],
+										J = oe(0, A[B], $[B]),
+										Q = E ? A[B] / 2 - H - J - X - k : z - J - X - k,
+										Z = E ? -A[B] / 2 + H + J + G + k : F + J + G + k,
 										ee = t.elements.arrow && O(t.elements.arrow),
 										te = ee ? "y" === M ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										re = t.modifiersData.offset ? t.modifiersData.offset[t.placement][M] : 0,
@@ -1217,8 +1201,8 @@
 								n = e.name,
 								o = r.elements.arrow,
 								i = r.modifiersData.popperOffsets,
-								a = I(r.placement),
-								s = F(a),
+								a = q(r.placement),
+								s = V(a),
 								c = [_, j].indexOf(a) >= 0 ? "height" : "width";
 							if (o && i) {
 								var f = r.modifiersData[n + "#persistent"].padding,
@@ -1371,4 +1355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322.438c2bc6acd12d3960b1.js.map
+//# sourceMappingURL=vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322.9f0752d4fc0b95d81e9e.js.map

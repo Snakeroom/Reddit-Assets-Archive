@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.247f2d849edb6b4e9641.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.e14a32e8ffadc695a7c6.js
+// Retrieved at 8/26/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -90,14 +90,14 @@
 				}) : e[t] = i, e
 			}
 			var V = ["root", "rootMargin", "threshold"],
-				_ = ["root", "rootMargin", "threshold", "disabled"],
-				g = Object.prototype,
-				y = g.hasOwnProperty,
-				w = g.toString,
-				E = function(e) {
+				g = ["root", "rootMargin", "threshold", "disabled"],
+				_ = Object.prototype,
+				w = _.hasOwnProperty,
+				E = _.toString,
+				y = function(e) {
 					return V.reduce((function(t, i) {
-						if (y.call(e, i)) {
-							var r = "root" === i && "[object String]" === w.call(e[i]);
+						if (w.call(e, i)) {
+							var r = "root" === i && "[object String]" === E.call(e[i]);
 							t[i] = r ? document.querySelector(e[i]) : e[i]
 						}
 						return t
@@ -118,7 +118,7 @@
 							}
 							t.targetNode = e && Object(s.findDOMNode)(e)
 						})), T(I(t), "observe", (function() {
-							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = h(E(t.props)), t.target = t.targetNode, e = I(t), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = h(y(t.props)), t.target = t.targetNode, e = I(t), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
 						})), T(I(t), "unobserve", (function(e) {
 							! function(e, t) {
@@ -136,7 +136,7 @@
 					return o.getSnapshotBeforeUpdate = function(e) {
 						var t = this;
 						this.prevTargetNode = this.targetNode;
-						var i = _.some((function(i) {
+						var i = g.some((function(i) {
 							return a(t.props[i], e[i])
 						}));
 						return i && this.prevTargetNode && (e.disabled || this.unobserve(this.prevTargetNode)), i
@@ -207,56 +207,39 @@
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
-		"./node_modules/lodash/_baseFindKey.js": function(e, t) {
-			e.exports = function(e, t, i) {
-				var r;
-				return i(e, (function(e, i, n) {
-					if (t(e, i, n)) return r = i, !1
-				})), r
-			}
-		},
-		"./node_modules/lodash/findKey.js": function(e, t, i) {
-			var r = i("./node_modules/lodash/_baseFindKey.js"),
-				n = i("./node_modules/lodash/_baseForOwn.js"),
-				s = i("./node_modules/lodash/_baseIteratee.js");
-			e.exports = function(e, t) {
-				return r(e, s(t, 3), n)
-			}
-		},
 		"./src/lib/onFocusAndVisibilityChange/index.ts": function(e, t, i) {
 			"use strict";
-			var r, n = i("./node_modules/brcast/dist/brcast.es.js"),
-				s = i("./node_modules/lodash/findKey.js"),
-				o = i.n(s);
-			! function(e) {
-				e.Hidden = "hidden", e.Visible = "visible"
-			}(r || (r = {}));
-			const a = {
-				hidden: "visibilitychange",
-				webkitHidden: "webkitvisibilitychange",
-				mozHidden: "mozvisibilitychange",
-				msHidden: "msvisibilitychange"
-			};
-			let d = !1;
-			const l = Object(n.a)({
-				documentInFocus: !0
-			});
-			! function() {
-				if (!d) {
-					const e = o()(a, (e, t) => void 0 !== document[t]);
-					e && document.addEventListener(a[e], () => {
-						l.setState({
-							documentInFocus: document.visibilityState !== r.Hidden
-						})
-					}), d = !0
-				}
-			}(), t.a = {
-				subscribe: e => {
-					return l.subscribe(e)
+			i("./node_modules/core-js/modules/web.dom.iterable.js");
+			var r = i("./node_modules/brcast/dist/brcast.es.js");
+			const n = () => "undefined" != typeof document,
+				s = () => n() && "visible" === document.visibilityState,
+				o = () => ({
+					documentInFocus: s()
+				}),
+				{
+					subscribe: a,
+					unsubscribe: d,
+					setState: l
+				} = Object(r.a)(o()),
+				u = {
+					hidden: "visibilitychange",
+					webkitHidden: "webkitvisibilitychange",
+					mozHidden: "mozvisibilitychange",
+					msHidden: "msvisibilitychange"
 				},
-				unsubscribe: e => {
-					l.unsubscribe(e)
-				}
+				c = () => l(o());
+			(() => {
+				const e = (() => {
+					if (!n()) return;
+					const e = Object.keys(u).find(e => e in document);
+					return e ? u[e] : void 0
+				})();
+				e && document.addEventListener(e, c)
+			})(), t.a = {
+				isDocumentHidden: () => !s(),
+				isDocumentVisible: s,
+				subscribe: a,
+				unsubscribe: d
 			}
 		},
 		"./src/reddit/components/AdViewability/index.tsx": function(e, t, i) {
@@ -363,11 +346,11 @@
 					}
 				}),
 				V = () => T(v),
-				_ = () => T(I),
-				g = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
-				y = [l.IMPRESSION_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
-				w = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
-				E = e => "boolean" == typeof e.cumulative && e.cumulative,
+				g = () => T(I),
+				_ = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
+				w = [l.IMPRESSION_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.VIDEO_GROUPM_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
+				E = [l.IMPRESSION_THRESHOLD, l.LARGE_AD_FULL_VIEW_THRESHOLD, l.VIEWABILITY_THRESHOLD, l.FULL_VIEWABILITY_THRESHOLD],
+				y = e => "boolean" == typeof e.cumulative && e.cumulative,
 				f = Object(a.c)({
 					continuousViewingStartedAt: (e, t) => {
 						let {
@@ -399,7 +382,7 @@
 				L = Object(h.a)(f);
 			class O extends s.Component {
 				constructor(e) {
-					super(e), this.viewabilityStats = V(), this.videoStats = _(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
+					super(e), this.viewabilityStats = V(), this.videoStats = g(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
 						this.props.trackDisplay && this.handleThresholds(e, l.ViewabilityThresholds), this.props.trackVideo && this.handleThresholds(e, l.VideoViewabilityThresholds, !0), this.checkViewabilityByType(e)
 					}, this.checkViewabilityByType = e => {
 						n()(this.state.event, e) || this.setState({
@@ -476,13 +459,13 @@
 					return !t.threshold && t.event === m.a.VideoGroupMViewable && this.props.videoDuration && (t.threshold = r * i < 3e5 ? l.FULL_VIEWABILITY_THRESHOLD : l.VIDEO_GROUPM_THRESHOLD, t.viewabilityMinimum = .5 * this.props.videoDuration), t.event === m.a.GroupMViewable && r * i > 242500 && (t.threshold = l.VIEWABILITY_THRESHOLD), t
 				}
 				checkViewability(e, t) {
-					if (E(t) && t.event === m.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
+					if (y(t) && t.event === m.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
 						if (this.isAdequatelyInView(e, t.threshold) && !t.fired) {
 							if (t.timer) return;
 							const e = this.getLengthForTimer(t);
 							return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
 						}
-						E(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t)
+						y(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t)
 					}
 				}
 				clearTimer(e) {
@@ -504,8 +487,8 @@
 						trackDisplay: e,
 						trackVideo: t
 					} = this.props;
-					let i = g;
-					return e && !t ? i = w : !e && t && (i = y), o.a.createElement(d.a, {
+					let i = _;
+					return e && !t ? i = E : !e && t && (i = w), o.a.createElement(d.a, {
 						threshold: i,
 						onChange: this.handleViewabilityChange
 					}, this.props.children)
@@ -556,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-BlankPost.247f2d849edb6b4e9641.js.map
+//# sourceMappingURL=reddit-components-BlankPost.e14a32e8ffadc695a7c6.js.map
