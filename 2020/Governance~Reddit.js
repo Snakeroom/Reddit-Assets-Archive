@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4e7eee4660cab65a3e18.js
-// Retrieved at 8/27/2020, 4:10:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.502dcdf8b8242a04db13.js
+// Retrieved at 8/27/2020, 4:40:34 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -20206,8 +20206,8 @@
 						l = "error-block-".concat(e);
 					if (u.ok) u.body.name && t(O(u.body)), u.body.id && t(Object(a.f)(u.body.id)), t(i.f(l)), t(i.e({
 						kind: o.b.SuccessCommunity,
-						text: n.fbt._("Changes saved", null, {
-							hk: "196AY7"
+						text: n.fbt._("{username} is now blocked", [n.fbt._param("username", e)], {
+							hk: "MI2y8"
 						})
 					}));
 					else {
@@ -20241,8 +20241,8 @@
 						name: e
 					})), O && O.id && t(Object(a.h)(O.id)), t(i.e({
 						kind: o.b.SuccessCommunity,
-						text: n.fbt._("Changes saved", null, {
-							hk: "4kz5FX"
+						text: n.fbt._("{username} is now unblocked", [n.fbt._param("username", e)], {
+							hk: "4CEi6N"
 						})
 					}))) : (t(i.e({
 						kind: o.b.Error,
@@ -55622,4 +55622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.4e7eee4660cab65a3e18.js.map
+//# sourceMappingURL=Governance~Reddit.502dcdf8b8242a04db13.js.map
