@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4f2700d66272a798cbc1.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.048284b1c735da05670e.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5605,7 +5605,7 @@
 				C = s.n(E);
 			const _ = Object(r.b)(() => Object(d.c)({
 					isChatPostExperiment: g.d,
-					isPostSEOEligible: f.b,
+					isPostSEOEligible: f.d,
 					postPermalink: x.M,
 					shouldOpenPostInNewTab: v.U
 				})),
@@ -5994,7 +5994,7 @@
 					awards: z.e,
 					awardsPending: z.d,
 					communityAwardsDisabled: z.b,
-					disableSettingsAvailable: e => Object(se.b)(e, {
+					disableSettingsAvailable: e => Object(se.c)(e, {
 						experimentEligibilitySelector: se.a,
 						experimentName: te.eb
 					}) === te.jb.Enabled,
@@ -30671,4 +30671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationPages.4f2700d66272a798cbc1.js.map
+//# sourceMappingURL=ModerationPages.048284b1c735da05670e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.b11c3c5651db693c1537.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.0ee47408422f26d59a6c.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1148,7 +1148,7 @@
 				Se = s("./src/reddit/selectors/experiments/chatPost.ts"),
 				Me = s("./src/reddit/constants/experiments.ts"),
 				Le = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const Ne = Object(d.a)(e => Object(Le.b)(e, {
+			const Ne = Object(d.a)(e => Object(Le.c)(e, {
 					experimentName: Me.F,
 					experimentEligibilitySelector: Le.a
 				}), e => e),
@@ -1548,7 +1548,7 @@
 				Et = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				kt = s("./src/reddit/controls/ErrorText/index.tsx"),
 				Tt = s("./src/reddit/selectors/communityAwards.ts");
-			const yt = e => Object(Le.b)(e, {
+			const yt = e => Object(Le.c)(e, {
 				experimentName: Me.E,
 				experimentEligibilitySelector: Le.a
 			}) === Me.C.Enabled;
@@ -2722,4 +2722,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost.b11c3c5651db693c1537.js.map
+//# sourceMappingURL=ChatPost.0ee47408422f26d59a6c.js.map

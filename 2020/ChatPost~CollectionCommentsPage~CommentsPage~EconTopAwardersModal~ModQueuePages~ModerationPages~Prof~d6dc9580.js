@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.6eedeaab6c7dd34dded2.js
-// Retrieved at 8/26/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.c900502b2231d77ca8a7.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -951,11 +951,11 @@
 					currentUser: _.i,
 					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(y.a)(e),
 					isInEconLeaderboardsExperiment: e => {
-						const t = Object(I.b)(e, {
+						const t = Object(I.c)(e, {
 							experimentEligibilitySelector: _.H,
 							experimentName: C.db
 						});
-						return !(!t || Object(C.yc)(t))
+						return !(!t || Object(C.Ac)(t))
 					},
 					isLoggedIn: _.H,
 					prefersReducedAnimations: P.c
@@ -2454,4 +2454,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.6eedeaab6c7dd34dded2.js.map
+//# sourceMappingURL=ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.c900502b2231d77ca8a7.js.map

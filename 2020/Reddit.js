@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9004770a235fc8584967.js
-// Retrieved at 8/26/2020, 4:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.f8be78e66ae3bf94a939.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4987,9 +4987,9 @@
 				vo = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				Co = s("./src/reddit/selectors/experiments/trending.ts"),
 				Oo = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const yo = e => Object(zt.E)(e) || gs.qc.Treatment1 === Object(Oo.b)(e, {
+			const yo = e => Object(zt.E)(e) || gs.sc.Treatment1 === Object(Oo.c)(e, {
 				experimentEligibilitySelector: Oo.a,
-				experimentName: gs.nc
+				experimentName: gs.pc
 			});
 			var xo = s("./src/reddit/selectors/searchResults.ts"),
 				Po = s("./src/reddit/selectors/tooltip.ts"),
@@ -11475,7 +11475,7 @@
 				$t = s("./src/reddit/constants/experiments.ts"),
 				es = s("./src/reddit/featureFlags/utils.ts"),
 				ts = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const ss = Object(es.a)(() => "undefined" != typeof fetch, e => !!Object(ts.b)(e, {
+			const ss = Object(es.a)(() => "undefined" != typeof fetch, e => !!Object(ts.c)(e, {
 				experimentEligibilitySelector: ts.a,
 				experimentName: $t.s
 			}));
@@ -11486,7 +11486,7 @@
 				os = s.n(rs),
 				is = s("./src/lib/addQueryParams/index.ts"),
 				cs = s("./src/lib/constants/euCookiePolicy.ts");
-			const ds = Object(es.e)(es.g, es.h, e => !!Object(ts.b)(e, {
+			const ds = Object(es.e)(es.g, es.h, e => !!Object(ts.c)(e, {
 				experimentEligibilitySelector: Object(es.d)(Object(es.b)(...cs.b)),
 				experimentName: "show_white_ops"
 			}));
@@ -11557,7 +11557,7 @@
 								experimentName: s,
 								experimentVariant: n
 							} = e;
-							return Object(ts.b)(t, {
+							return Object(ts.c)(t, {
 								experimentName: s,
 								experimentEligibilitySelector: ts.a
 							}) === n
@@ -11676,7 +11676,7 @@
 						nightmode: a
 					}));
 					const r = (e => e.tracing.traceId)(n.getState());
-					if (r && (e => Object(ts.b)(e, {
+					if (r && (e => Object(ts.c)(e, {
 							experimentEligibilitySelector: ts.a,
 							experimentName: $t.p
 						}) === $t.x.Enabled)(n.getState())) {
@@ -13547,7 +13547,7 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(r.E)(e) || n.u.Treatment1 === Object(a.b)(e, {
+				return Object(r.E)(e) || n.u.Treatment1 === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: n.l
 				})
@@ -13561,9 +13561,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.pc.Holdout === Object(a.b)(e, {
+			const o = e => Object(r.E)(e) || !(n.rc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.mc
+				experimentName: n.oc
 			}))
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, s) {
@@ -13699,4 +13699,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.9004770a235fc8584967.js.map
+//# sourceMappingURL=Reddit.f8be78e66ae3bf94a939.js.map

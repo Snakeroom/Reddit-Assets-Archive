@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4444997fe0d132d09214.js
-// Retrieved at 8/27/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a010e4a058433fdbbeaa.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -283,18 +283,18 @@
 				m = s("./src/reddit/constants/experiments.ts"),
 				u = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const p = Object(r.a)(e => {
-				const t = Object(u.b)(e, {
+				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.zb
+					experimentName: m.Bb
 				});
-				return Object(m.yc)(t) ? void 0 : t
+				return Object(m.Ac)(t) ? void 0 : t
 			}, e => {
-				const t = Object(u.b)(e, {
+				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Ab
+					experimentName: m.Cb
 				});
-				return Object(m.yc)(t) ? void 0 : t
-			}, (e, t) => e === m.Bb.Enabled && t === m.Bb.Enabled);
+				return Object(m.Ac)(t) ? void 0 : t
+			}, (e, t) => e === m.Db.Enabled && t === m.Db.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "932a9fe-production"
+					SENTRY_RELEASE_VERSION: "fbcf605-production"
 				}),
 				O = {
 					anonymousUserId: "t2_anonymous",
@@ -614,9 +614,9 @@
 			})), s.d(t, "deleteRemovalReason", (function() {
 				return G
 			})), s.d(t, "removedItemsSelected", (function() {
-				return z
-			})), s.d(t, "fetchReasonsAndOpenModal", (function() {
 				return X
+			})), s.d(t, "fetchReasonsAndOpenModal", (function() {
+				return z
 			})), s.d(t, "removalReasonSubmittedPending", (function() {
 				return Y
 			})), s.d(t, "removalReasonSubmittedSuccess", (function() {
@@ -763,12 +763,12 @@
 							hk: "4xzgsa"
 						})
 					}))) : s(K(d.error))
-				}, z = Object(o.a)(I.t), X = (e, t) => async (s, a, n) => {
+				}, X = Object(o.a)(I.t), z = (e, t) => async (s, a, n) => {
 					let {
 						apiContext: o
 					} = n;
 					const r = a();
-					r.removalReasons.reasonOrder[e] && r.removalReasons.reasonOrder[e].length > 0 || s(P(e)), s(z({
+					r.removalReasons.reasonOrder[e] && r.removalReasons.reasonOrder[e].length > 0 || s(P(e)), s(X({
 						subredditId: e,
 						itemIds: t
 					})), s(Object(l.i)(p.a.ADD_REMOVAL_REASON))
@@ -1815,7 +1815,7 @@
 			})), s.d(t, "ButtonRow", (function() {
 				return G
 			})), s.d(t, "AddRemovalReasonModal", (function() {
-				return z
+				return X
 			}));
 			var a = s("./node_modules/react/index.js"),
 				n = s.n(a),
@@ -1876,7 +1876,7 @@
 					}).name
 				}
 			}), N = Object(o.b)(T, I), j = c.a.wrapped(l.a, "CharacterCountdown", O.a), P = c.a.div("EmptyState", O.a), M = c.a.wrapped(m.n, "ModNoteDescription", O.a), L = c.a.wrapped(u.f, "PrimaryButton", O.a), A = c.a.wrapped(b.a, "RadioOption", O.a), D = c.a.span("BoldText", O.a), V = c.a.wrapped(m.s, "ModNoteInput", O.a), B = c.a.wrapped(m.s, "MessageInput", O.a), F = c.a.wrapped(g.a, "Info", O.a), U = c.a.div("SmallInfoText", O.a), H = c.a.div("FormOptionsContainer", O.a), W = c.a.wrapped(m.f, "ModalFooter", O.a), K = c.a.div("FooterRow", O.a), G = c.a.wrapped(K, "ButtonRow", O.a);
-			class z extends n.a.Component {
+			class X extends n.a.Component {
 				constructor(e) {
 					super(e), this.onSelectRemovalType = e => {
 						this.setState({
@@ -2012,7 +2012,7 @@
 					})))))
 				}
 			}
-			t.default = Object(i.a)(N(z))
+			t.default = Object(i.a)(N(X))
 		},
 		"./src/reddit/components/ReportFlow/index.tsx": function(e, t, s) {
 			"use strict";
@@ -2556,8 +2556,8 @@
 				W = s("./src/reddit/components/HlsVideo/index.tsx"),
 				K = s("./src/higherOrderComponents/asModal/index.tsx"),
 				G = s("./src/reddit/actions/post.ts"),
-				z = s("./src/reddit/actions/removalReasons/index.ts"),
-				X = s("./src/reddit/actions/toaster.ts"),
+				X = s("./src/reddit/actions/removalReasons/index.ts"),
+				z = s("./src/reddit/actions/toaster.ts"),
 				Y = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				J = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				q = s("./src/reddit/models/RemovalReason/index.ts"),
@@ -2643,15 +2643,15 @@
 				} = t;
 				return {
 					submitRemovalReason: async (t, s, a) => {
-						await e(Object(z.submitRemovalReason)([t], s, a, q.f.Private, "")) ? e(Object(X.e)({
+						await e(Object(X.submitRemovalReason)([t], s, a, q.f.Private, "")) ? e(Object(z.e)({
 							kind: Z.b.SuccessEndBroadcast,
 							text: ve._("Broadcast ended", null, {
 								hk: "313j6x"
 							})
 						})) : (void 0).props.errorToast("Failed to add removal reasons.")
 					},
-					fetchRemovalReasons: () => e(Object(z.removalReasonsRequested)(s)),
-					errorToast: t => e(Object(X.e)({
+					fetchRemovalReasons: () => e(Object(X.removalReasonsRequested)(s)),
+					errorToast: t => e(Object(z.e)({
 						text: t,
 						duration: 1e4,
 						kind: Z.b.Error
@@ -2741,15 +2741,15 @@
 				Ke = 5;
 			s("./node_modules/core-js/modules/es6.regexp.split.js");
 			var Ge = s("./src/lib/makeCommentsPageKey/index.ts"),
-				ze = s("./src/reddit/actions/gold/modals.ts"),
-				Xe = s("./src/reddit/actions/moderatingSubreddits.ts"),
+				Xe = s("./src/reddit/actions/gold/modals.ts"),
+				ze = s("./src/reddit/actions/moderatingSubreddits.ts"),
 				Ye = s("./src/reddit/endpoints/publicAccessNetwork/index.ts");
 			const Je = e => async (t, s, a) => {
 				let {
 					apiContext: n
 				} = a;
 				const o = await Object(Ye.j)(n(), e, !0);
-				o && o.ok ? t(Object(X.e)({
+				o && o.ok ? t(Object(z.e)({
 					kind: Z.b.SuccessLockComment,
 					text: w.fbt._("Comments locked", null, {
 						hk: "3WAk9Y"
@@ -2758,7 +2758,7 @@
 						hk: "3Kk8Xw"
 					}),
 					buttonAction: qe(e)
-				})) : t(Object(X.e)(Object(X.d)(w.fbt._("Something went wrong", null, {
+				})) : t(Object(z.e)(Object(z.d)(w.fbt._("Something went wrong", null, {
 					hk: "6SSVl"
 				}), Z.b.Error)))
 			}, qe = e => async (t, s, a) => {
@@ -2766,7 +2766,7 @@
 					apiContext: n
 				} = a;
 				const o = await Object(Ye.j)(n(), e, !1);
-				o && o.ok ? t(Object(X.e)({
+				o && o.ok ? t(Object(z.e)({
 					kind: Z.b.SuccessUnlockComment,
 					text: w.fbt._("Comments unlocked", null, {
 						hk: "rEYa1"
@@ -2775,7 +2775,7 @@
 						hk: "OXk5v"
 					}),
 					buttonAction: Je(e)
-				})) : t(Object(X.e)(Object(X.d)(w.fbt._("Something went wrong", null, {
+				})) : t(Object(z.e)(Object(z.d)(w.fbt._("Something went wrong", null, {
 					hk: "6SSVl"
 				}), Z.b.Error)))
 			};
@@ -3014,8 +3014,8 @@
 					})
 				}
 			}
-			var zt = Gt;
-			const Xt = () => ({
+			var Xt = Gt;
+			const zt = () => ({
 				estimatedTimeRemaining: null,
 				previouslyVisible: !1,
 				visible: !1,
@@ -3027,7 +3027,7 @@
 			});
 			class Yt extends o.Component {
 				constructor() {
-					super(...arguments), this.state = Xt(), this.timerId = 0
+					super(...arguments), this.state = zt(), this.timerId = 0
 				}
 				componentDidMount() {
 					this.timerId = setInterval(() => this.updateTimer(), 1e3)
@@ -3093,7 +3093,7 @@
 					})
 				}
 				static getDerivedStateFromProps(e, t) {
-					if (!e.currentStream || !e.currentStream.meter) return Xt();
+					if (!e.currentStream || !e.currentStream.meter) return zt();
 					const s = e.currentStream.post.id,
 						a = e.currentStream.estimated_remaining_time;
 					if (t.streamId !== s) {
@@ -3153,7 +3153,7 @@
 						className: Dt.a.meterOverlay
 					}, r.a.createElement("div", {
 						className: Dt.a.meterPillWrapper
-					}, m && r.a.createElement(zt, null), r.a.createElement("div", {
+					}, m && r.a.createElement(Xt, null), r.a.createElement("div", {
 						className: Object(l.a)(Dt.a.meterPillContainer, {
 							[Dt.a.animateMeterInAndOut]: c && !d,
 							[Dt.a.animateMeterInOnly]: c && d,
@@ -3557,8 +3557,8 @@
 			var Ws = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx"),
 				Ks = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				Gs = s("./src/reddit/icons/svgs/Lock/index.tsx"),
-				zs = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				Xs = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				Xs = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				zs = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				Ys = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
 				Js = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.m.less"),
 				qs = s.n(Js);
@@ -3597,7 +3597,7 @@
 						n(!0), t()
 					},
 					className: qs.a.joinButton
-				}, r.a.createElement(zs.a, {
+				}, r.a.createElement(Xs.a, {
 					className: qs.a.plusIcon
 				}), r.a.createElement("span", {
 					className: qs.a.joinText
@@ -3767,7 +3767,7 @@
 					iconWrapperClassName: qs.a.overflowItemIconWrapper,
 					key: "".concat("rpan-overlay-menu", "-end"),
 					onClick: c
-				}, r.a.createElement(Xs.a, {
+				}, r.a.createElement(zs.a, {
 					className: qs.a.endBroadcastIcon
 				}))))
 			}, la = Object(i.b)(null, e => ({
@@ -4451,7 +4451,7 @@
 				handleGiveAward: () => {
 					if (t.currentStreamId) {
 						const s = Object(et.d)(et.a.GildingFlow, !0);
-						e(Object(ze.d)({
+						e(Object(Xe.d)({
 							correlationId: s,
 							thingId: t.currentStreamId
 						}))
@@ -4464,7 +4464,7 @@
 						type: $e.a.SUBREDDIT
 					}], !0))
 				},
-				getModeratedSubreddits: () => e(Object(Xe.b)())
+				getModeratedSubreddits: () => e(Object(ze.b)())
 			}))(Ma);
 			Object(j.a)(N.r);
 			const Aa = Object(j.a)(N.z),
@@ -4555,8 +4555,8 @@
 					})(t))
 				}))(Wa),
 				Ga = s("./src/lib/constants/index.ts"),
-				za = s("./src/lib/makeDraftKey/index.ts"),
-				Xa = s("./src/reddit/actions/page.ts"),
+				Xa = s("./src/lib/makeDraftKey/index.ts"),
+				za = s("./src/reddit/actions/page.ts"),
 				Ya = s("./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.tsx"),
 				Ja = s("./src/reddit/components/CommentsChat/Loader.ts"),
 				qa = s("./src/reddit/components/CommentsChat/MessageInput/Loader.tsx"),
@@ -4681,7 +4681,7 @@
 						sendEvent: c,
 						subredditId: d,
 						replyComment: m
-					} = this.props, u = Object(Ge.a)(e), p = m ? Object(za.a)(dn.c.replyToComment, m.id) : Object(za.a)(dn.c.replyToPost, e);
+					} = this.props, u = Object(Ge.a)(e), p = m ? Object(Xa.a)(dn.c.replyToComment, m.id) : Object(Xa.a)(dn.c.replyToPost, e);
 					return t ? r.a.createElement("div", {
 						className: Object(l.a)(mn.a.streamingChat, mn.a.prompt)
 					}, w.fbt._("Chat has been disabled", null, {
@@ -4731,7 +4731,7 @@
 						postId: s
 					} = t;
 					return {
-						loadComments: () => e(Object(Xa.q)(s, void 0, {
+						loadComments: () => e(Object(za.q)(s, void 0, {
 							sort: Ga.r.CHAT
 						}, Ga.r.CHAT)),
 						openLoginModal: () => e(Object(u.h)()),
@@ -5506,4 +5506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PublicAccessNetwork.4444997fe0d132d09214.js.map
+//# sourceMappingURL=PublicAccessNetwork.a010e4a058433fdbbeaa.js.map

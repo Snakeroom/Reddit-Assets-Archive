@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.3bad958df41b5c496496.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1e6dc453bdeb4e62ca9f.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -245,12 +245,12 @@
 						posts: n
 					})) : null
 				}),
-				q = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				z = n("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
+				z = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				q = n("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
 				$ = n("./src/reddit/selectors/subreddit.ts");
 			var ee = Object(d.b)(Object(c.c)({
 					communities: $.g
-				}))(Object(q.c)(e => o.a.createElement(z.b, {
+				}))(Object(z.c)(e => o.a.createElement(q.b, {
 					className: e.className,
 					communities: e.communities,
 					getClickEventFactory: e.getClickEventFactory,
@@ -320,8 +320,8 @@
 						trendingSubredditIds: b
 					} = this.props, p = i && d, g = [...ne.l];
 					p && g.unshift(ne.g);
-					const h = c === te.xb.Rotate,
-						x = c === te.xb.RotateAll;
+					const h = c === te.zb.Rotate,
+						x = c === te.zb.RotateAll;
 					let _ = ne.m;
 					return p && (h ? _ = this.state.random > .5 ? ne.g : ne.m : x && (_ = g[this.state.randomIndex])), o.a.createElement(P.a, {
 						className: t
@@ -1026,16 +1026,16 @@
 
 			function r(e) {
 				const t = i(e);
-				return t === s.xb.Rotate || t === s.xb.RotateAll
+				return t === s.zb.Rotate || t === s.zb.RotateAll
 			}
 
 			function i(e) {
-				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.b)(e, {
+				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.wb
+					experimentName: s.yb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.3bad958df41b5c496496.js.map
+//# sourceMappingURL=FrontpageSidebar.1e6dc453bdeb4e62ca9f.js.map

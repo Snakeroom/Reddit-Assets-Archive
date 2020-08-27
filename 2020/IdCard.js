@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.6c4f42f04e4a5586779a.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.126f4fc622557230975f.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1497,7 +1497,7 @@
 					},
 					isInCategoriesExperiment: Ke.a,
 					showContributorRequestFlow: e => Object(re.q)(e, Ve.e.Post),
-					showCreatePollButton: e => (e => Object(Xe.b)(e, {
+					showCreatePollButton: e => (e => Object(Xe.c)(e, {
 						experimentEligibilitySelector: Xe.a,
 						experimentName: Je.t
 					}) === Je.z.Treatment)(e) && !Object(Fe.g)(),
@@ -2865,7 +2865,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
 			const i = e => {
-				return Object(o.E)(e) || s.u.Treatment1 === Object(r.b)(e, {
+				return Object(o.E)(e) || s.u.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.l
 				})
@@ -2873,4 +2873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard.6c4f42f04e4a5586779a.js.map
+//# sourceMappingURL=IdCard.126f4fc622557230975f.js.map

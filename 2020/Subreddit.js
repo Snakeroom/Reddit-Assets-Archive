@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7254d0d69a919173f640.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c2074c1c7ce728bb221b.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -8265,7 +8265,7 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const o = e => s.U.Enabled === Object(r.b)(e, {
+			const o = e => s.U.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: a.H,
 				experimentName: s.T
 			})
@@ -8277,11 +8277,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.hc.Enabled === Object(r.b)(e, {
+			const a = e => s.jc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.cc
+				experimentName: s.ec
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=Subreddit.7254d0d69a919173f640.js.map
+//# sourceMappingURL=Subreddit.c2074c1c7ce728bb221b.js.map

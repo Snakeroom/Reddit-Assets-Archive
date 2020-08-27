@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.0f8809ec3ed53d9480f4.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f3850e1f63d29ec042ff.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1360,10 +1360,10 @@
 			var J = Object(m.c)(G(Q)),
 				V = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				Y = r.n(K);
+				z = r.n(K);
 
-			function Z() {
-				return (Z = Object.assign || function(e) {
+			function Y() {
+				return (Y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -1371,15 +1371,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const z = e => {
+			const Z = e => {
 				const {
 					category: t,
 					children: r,
 					className: s,
 					isActive: n,
 					tabIndex: a
-				} = e, i = Object(c.a)(Y.a.categoryLink, n && Y.a.active, s);
-				return o.a.createElement("li", null, o.a.createElement(V.a, Z({}, t.anchorProps, {
+				} = e, i = Object(c.a)(z.a.categoryLink, n && z.a.active, s);
+				return o.a.createElement("li", null, o.a.createElement(V.a, Y({}, t.anchorProps, {
 					className: i,
 					"data-active": n,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -1432,14 +1432,14 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: m
-					} = this.state, u = !m && d && r * d, g = a + (e ? r * e.length : 0), h = Object(c.a)(Y.a.categoryList, m && Y.a.expanded), b = e => !(!i || i !== Object(q.f)(e)), y = o.a.createElement("ul", {
+					} = this.state, u = !m && d && r * d, g = a + (e ? r * e.length : 0), h = Object(c.a)(z.a.categoryList, m && z.a.expanded), b = e => !(!i || i !== Object(q.f)(e)), y = o.a.createElement("ul", {
 						className: h,
 						style: {
 							height: u || g
 						}
 					}, n, e && e.map((e, s) => {
 						const n = a + s * r;
-						return o.a.createElement(z, {
+						return o.a.createElement(Z, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
@@ -1451,7 +1451,7 @@
 						}) : e.name)
 					}));
 					return o.a.createElement("div", {
-						className: Object(c.a)(Y.a.categoryListContainer, s)
+						className: Object(c.a)(z.a.categoryListContainer, s)
 					}, y)
 				}
 				render() {
@@ -1462,16 +1462,16 @@
 						header: s,
 						headerClassName: n,
 						initialNumberOfCategories: a
-					} = this.props, i = t && a && t.length > a, d = Object(c.a)(r, Y.a.container);
+					} = this.props, i = t && a && t.length > a, d = Object(c.a)(r, z.a.container);
 					return o.a.createElement(U.a, {
 						className: d,
 						contentOnly: !0
 					}, o.a.createElement("div", {
-						className: Object(c.a)(Y.a.header, n)
+						className: Object(c.a)(z.a.header, n)
 					}, o.a.createElement("h2", null, s || $._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), i && o.a.createElement(X.n, {
-						className: Object(c.a)(Y.a.button, e),
+						className: Object(c.a)(z.a.button, e),
 						onClick: this.toggleExpanded
 					}, i && !this.state.isExpanded ? $._("Show More", null, {
 						hk: "1pCiqD"
@@ -1547,7 +1547,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				xe = Object(u.xc)(p.f),
+				xe = Object(u.zc)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: xe
@@ -1648,16 +1648,16 @@
 
 			function a(e) {
 				const t = o(e);
-				return t === s.xb.Rotate || t === s.xb.RotateAll
+				return t === s.zb.Rotate || t === s.zb.RotateAll
 			}
 
 			function o(e) {
-				if (e.user.prefs.showLocationBasedRecommendations) return Object(n.b)(e, {
+				if (e.user.prefs.showLocationBasedRecommendations) return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.wb
+					experimentName: s.yb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.0f8809ec3ed53d9480f4.js.map
+//# sourceMappingURL=SubredditLeaderboard.f3850e1f63d29ec042ff.js.map

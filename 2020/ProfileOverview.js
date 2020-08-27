@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.8f5c13a20bfbbdf1cf3f.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.c8de8abc40a9c43feed0.js
+// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2639,7 +2639,7 @@
 				C = s.n(O);
 			const E = Object(a.b)(() => Object(c.c)({
 					isChatPostExperiment: x.d,
-					isPostSEOEligible: f.b,
+					isPostSEOEligible: f.d,
 					postPermalink: g.M,
 					shouldOpenPostInNewTab: v.U
 				})),
@@ -5728,7 +5728,7 @@
 				ne = s("./src/reddit/helpers/getRichTextContent/index.ts");
 			const oe = Object(a.a)(E.T, e => e.some(ne.c)),
 				re = Object(a.a)(oe, e => e),
-				ae = (e, t) => Object(se.b)(e, {
+				ae = (e, t) => Object(se.c)(e, {
 					experimentName: Q.Q,
 					experimentEligibilitySelector: e => {
 						const {
@@ -5847,7 +5847,7 @@
 						showEditFlair: fe,
 						subredditOrProfile: ge,
 						userIsOp: ve
-					} = e, Oe = !!e.redditStyle || !!e["data-redditstyle"], Ce = Oe ? void 0 : p, Ee = Object(d.a)(oe), ye = re && Ee, _e = Object(i.a)(oe), we = Object(c.a)(oe), ke = Object(R.c)(me), Pe = !!me.media && me.media.type === h.o.RTJSON, je = ve && Pe, Se = s ? s - A.a : void 0, Ie = !(y && U || Y), Ne = (e => e === Q.Mb.OnlyTitles)(ue) && !Object($.a)(me), Te = (e => e === Q.Mb.MediumHeight)(ue) && !Object($.a)(me), Me = (e => {
+					} = e, Oe = !!e.redditStyle || !!e["data-redditstyle"], Ce = Oe ? void 0 : p, Ee = Object(d.a)(oe), ye = re && Ee, _e = Object(i.a)(oe), we = Object(c.a)(oe), ke = Object(R.c)(me), Pe = !!me.media && me.media.type === h.o.RTJSON, je = ve && Pe, Se = s ? s - A.a : void 0, Ie = !(y && U || Y), Ne = (e => e === Q.Ob.OnlyTitles)(ue) && !Object($.a)(me), Te = (e => e === Q.Ob.MediumHeight)(ue) && !Object($.a)(me), Me = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -5862,7 +5862,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Le = !!te && !Object(Q.yc)(te), Re = (!O || Le) && !me.isSponsored, Fe = Object(_.getAdLinkContent)(me, v), {
+					})(e), Le = !!te && !Object(Q.Ac)(te), Re = (!O || Le) && !me.isSponsored, Fe = Object(_.getAdLinkContent)(me, v), {
 						source: Be
 					} = Fe, Ae = o.a.createElement(B.a, {
 						className: Object(w.a)(pe.a.container, r, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -15204,11 +15204,11 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => {
-				const t = Object(o.b)(e, {
+				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
 					experimentName: n.V
 				});
-				return !(!t || Object(n.yc)(t))
+				return !(!t || Object(n.Ac)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -15225,4 +15225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.8f5c13a20bfbbdf1cf3f.js.map
+//# sourceMappingURL=ProfileOverview.c8de8abc40a9c43feed0.js.map
