@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.9e59fac51c6e89f8473f.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.b59d38882f1b29bc6136.js
+// Retrieved at 8/27/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -72,7 +72,7 @@
 			};
 			var f = s("./src/reddit/hooks/useGqlContext.ts"),
 				y = s("./src/reddit/hooks/useOnClickOutside.ts"),
-				x = e => a.a.createElement("svg", {
+				j = e => a.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 13 16",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -82,8 +82,8 @@
 					fillRule: "evenodd",
 					transform: "translate(-4 -2)"
 				})),
-				j = s("./src/reddit/components/GeoForm/index.m.less"),
-				E = s.n(j);
+				x = s("./src/reddit/components/GeoForm/index.m.less"),
+				E = s.n(x);
 
 			function _(e) {
 				const {
@@ -94,7 +94,7 @@
 					onFocus: c,
 					sessionId: l,
 					className: b
-				} = e, h = Object(f.a)(), [p, y] = Object(n.useState)(!1), j = function(e, t, s) {
+				} = e, h = Object(f.a)(), [p, y] = Object(n.useState)(!1), x = function(e, t, s) {
 					const [a, o] = Object(n.useState)([]), r = Object(n.useMemo)(() => u()(s, 300), [s]);
 					return Object(n.useEffect)(() => {
 						e && t && r(e).then(e => {
@@ -103,10 +103,10 @@
 					}, [e]), a
 				}(t, p, g(h, l)), {
 					highlightValue: _,
-					selectedIndex: k,
-					onKeyDown: O,
+					selectedIndex: O,
+					onKeyDown: S,
 					isClosed: w,
-					setClosed: C
+					setClosed: v
 				} = function(e, t, s) {
 					const [a, o] = Object(n.useState)(-1), [r, i] = Object(n.useState)(!!e.length), [c, d] = Object(n.useState)(void 0);
 					return {
@@ -124,42 +124,42 @@
 						isClosed: r,
 						setClosed: i
 					}
-				}(j, s, o), v = "location-input-".concat(l);
+				}(x, s, o), C = "location-input-".concat(l);
 				return a.a.createElement("div", {
 					className: E.a.autocompleteInput
 				}, a.a.createElement("label", {
 					className: E.a.geoLabel,
-					htmlFor: v
-				}, a.a.createElement(x, {
+					htmlFor: C
+				}, a.a.createElement(j, {
 					className: E.a.locationIcon
 				})), a.a.createElement("input", {
 					className: Object(i.a)(E.a.geoInput, b),
-					name: v,
+					name: C,
 					disabled: r,
-					onKeyDown: O,
+					onKeyDown: S,
 					value: _ && _.name || t,
 					placeholder: d.fbt._("Add location", null, {
 						hk: "1BaqFd"
 					}),
 					onChange: e => {
-						s(e.currentTarget.value), o(""), C(!1)
+						s(e.currentTarget.value), o(""), v(!1)
 					},
 					onFocus: () => {
 						y(!0), c()
 					},
 					onBlur: () => y(!1)
-				}), j.length && !w ? a.a.createElement(S, {
+				}), x.length && !w ? a.a.createElement(k, {
 					id: l,
-					items: j.map(e => e.name),
-					selectedIndex: k,
+					items: x.map(e => e.name),
+					selectedIndex: O,
 					selectValue: e => {
-						s(j[e].name), o(j[e].id), C(!0)
+						s(x[e].name), o(x[e].id), v(!0)
 					},
-					onClickOutside: () => C(!0)
+					onClickOutside: () => v(!0)
 				}) : null)
 			}
 
-			function S(e) {
+			function k(e) {
 				const {
 					id: t,
 					items: s,
@@ -179,8 +179,8 @@
 				}, e)))
 			}
 			const {
-				fbt: k
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = () => {};
+				fbt: O
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = () => {};
 
 			function w(e) {
 				const {
@@ -188,14 +188,14 @@
 					initialValue: s,
 					initialPlaceId: o,
 					disabled: d = !1,
-					onFocus: l = O,
-					onPlace: u = O,
-					onValue: m = O,
+					onFocus: l = S,
+					onPlace: u = S,
+					onValue: m = S,
 					inputClassName: b
 				} = e, h = function() {
 					const [e, t] = Object(n.useState)(!1);
 					return Object(n.useEffect)(() => t(!0), []), e
-				}(), [p] = Object(n.useState)(() => r()()), [g, f] = Object(n.useState)(s || ""), [y, x] = Object(n.useState)(o || "");
+				}(), [p] = Object(n.useState)(() => r()()), [g, f] = Object(n.useState)(s || ""), [y, j] = Object(n.useState)(o || "");
 				return h ? a.a.createElement("form", {
 					className: Object(i.a)(E.a.geoForm, t),
 					onSubmit: t => {
@@ -213,7 +213,7 @@
 						f(e), m(e)
 					},
 					setPlaceId: e => {
-						x(e), u(e)
+						j(e), u(e)
 					},
 					disabled: d,
 					onFocus: l
@@ -221,7 +221,7 @@
 					className: E.a.submitButton,
 					type: "submit",
 					disabled: d
-				}, k._("Submit", null, {
+				}, O._("Submit", null, {
 					hk: "3kKxBt"
 				}))) : null
 			}
@@ -280,18 +280,6 @@
 			})), a.a.createElement("div", {
 				className: Object(o.a)(d.a.button, Object(i.b)(e))
 			}))
-		},
-		"./src/reddit/components/SidebarContainer/index.m.less": function(e, t, s) {
-			e.exports = {
-				container: "_1FUNcfOeszr8eruqLxCMcR"
-			}
-		},
-		"./src/reddit/components/SidebarContainer/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./src/lib/lessComponent.tsx"),
-				a = s("./src/reddit/components/SidebarContainer/index.m.less"),
-				o = s.n(a);
-			t.a = n.a.div("container", o.a)
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -449,10 +437,10 @@
 				g = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				f = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
 				y = s.n(f),
-				x = s("./src/lib/lessComponent.tsx");
+				j = s("./src/lib/lessComponent.tsx");
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -470,21 +458,21 @@
 				return s
 			};
 			const _ = c.e[1] + 24,
-				S = p.f + 8 + 152 + 32 + 16,
-				k = S + _ + 8,
-				O = x.a.div("Container", y.a),
-				w = x.a.wrapped(e => {
+				k = p.f + 8 + 152 + 32 + 16,
+				O = k + _ + 8,
+				S = j.a.div("Container", y.a),
+				w = j.a.wrapped(e => {
 					var {
 						className: t
 					} = e, s = E(e, ["className"]);
-					return i.a.createElement(b, j({
+					return i.a.createElement(b, x({
 						className: t,
 						style: {
 							top: "calc(100vh - ".concat(40, "px)")
 						}
 					}, s))
 				}, "BackToTop", y.a),
-				C = e => {
+				v = e => {
 					let {
 						children: t,
 						className: s,
@@ -498,11 +486,11 @@
 						})
 					}, t)
 				};
-			class v extends r.Component {
+			class C extends r.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > k,
-						shouldFooterSticky: this.windowHeight > S
+						shouldAdSticky: this.windowHeight > O,
+						shouldFooterSticky: this.windowHeight > k
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -541,17 +529,17 @@
 							hideFooter: a
 						}
 					} = this, o = this.state.isAdSticky && !(!e && !s);
-					return i.a.createElement(O, {
+					return i.a.createElement(S, {
 						className: n,
 						innerRef: this.setWrapperRef
-					}, i.a.createElement(C, {
+					}, i.a.createElement(v, {
 						isFakeOverlay: t,
 						isSticky: o
 					}, e, s, !a && i.a.createElement(h.a, null)), !this.props.hideBackToTop && i.a.createElement(w, null))
 				}
 			}
 			const N = Object(g.t)();
-			t.a = N(v)
+			t.a = N(C)
 		},
 		"./src/reddit/components/Widgets/ThemedWidget/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -593,23 +581,23 @@
 				g = s("./src/reddit/selectors/experiments/topPosts.ts"),
 				f = s("./src/reddit/selectors/structuredStyles.ts"),
 				y = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/models/Theme/index.ts"),
-				j = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const E = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(j.a)(e).widgetColors.sidebarWidgetBackgroundColor,
-				_ = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(j.a)(e).widgetColors.sidebarWidgetHeaderColor,
-				S = e => {
-					const t = E(e);
-					return Object(x.f)(t)
-				},
+				j = s("./src/reddit/models/Theme/index.ts"),
+				x = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			const E = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(x.a)(e).widgetColors.sidebarWidgetBackgroundColor,
+				_ = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(x.a)(e).widgetColors.sidebarWidgetHeaderColor,
 				k = e => {
+					const t = E(e);
+					return Object(j.f)(t)
+				},
+				O = e => {
 					const t = _(e);
-					return Object(x.f)(t)
+					return Object(j.f)(t)
 				};
-			var O = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				w = s.n(O);
+			var S = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				w = s.n(S);
 			const {
-				fbt: C
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = Object(u.t)(), N = Object(o.b)(() => Object(r.c)({
+				fbt: v
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = Object(u.t)(), N = Object(o.b)(() => Object(r.c)({
 				forceRedditStyle: (e, t) => {
 					const s = Object(u.m)(e, t) || void 0,
 						n = t.redditStyle || Object(f.m)(e, {
@@ -645,11 +633,11 @@
 				}
 				getWidgetBackgroundStyles() {
 					const e = {};
-					return e.backgroundColor = E(this.props), e.borderColor = Object(p.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = S(this.props), e
+					return e.backgroundColor = E(this.props), e.borderColor = Object(p.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = k(this.props), e
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = _(this.props), e.color = e.fill = k(this.props), e
+					return e.backgroundColor = _(this.props), e.color = e.fill = O(this.props), e
 				}
 				render() {
 					const {
@@ -690,12 +678,12 @@
 					}, e), this.state.isTruncated && a.a.createElement(m.n, {
 						className: w.a.seeMore,
 						onClick: this.handleSeeMoreClick
-					}, C._("See More", null, {
+					}, v._("See More", null, {
 						hk: "4w47Qu"
 					})))
 				}
 			}
-			t.a = v(N(Object(c.a)(Object(l.c)(T))))
+			t.a = C(N(Object(c.a)(Object(l.c)(T))))
 		},
 		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, s) {
 			e.exports = {
@@ -831,12 +819,12 @@
 							}
 						}
 					})
-				}, b = s("./src/reddit/helpers/localStorage/index.ts"), h = s("./src/reddit/helpers/trackers/screenview.ts"), p = s("./src/reddit/hooks/useGqlContext.ts"), g = s("./src/reddit/hooks/useTracking.ts"), f = s("./src/reddit/layout/page/Listing/index.tsx"), y = s("./node_modules/react-router-dom/esm/react-router-dom.js"), x = s("./src/reddit/controls/Button/index.tsx"), j = s("./src/reddit/pages/Geotagging/index.m.less"), E = s.n(j);
+				}, b = s("./src/reddit/helpers/localStorage/index.ts"), h = s("./src/reddit/helpers/trackers/screenview.ts"), p = s("./src/reddit/hooks/useGqlContext.ts"), g = s("./src/reddit/hooks/useTracking.ts"), f = s("./src/reddit/layout/page/Listing/index.tsx"), y = s("./node_modules/react-router-dom/esm/react-router-dom.js"), j = s("./src/reddit/controls/Button/index.tsx"), x = s("./src/reddit/pages/Geotagging/index.m.less"), E = s.n(x);
 			const {
 				fbt: _
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function S() {
+			function k() {
 				return a.a.createElement("div", {
 					className: E.a.done
 				}, a.a.createElement("p", {
@@ -849,11 +837,11 @@
 					hk: "1xzgiX"
 				})), a.a.createElement(y.a, {
 					to: "/"
-				}, a.a.createElement(x.f, null, "Go Home")))
+				}, a.a.createElement(j.f, null, "Go Home")))
 			}
-			var k = s("./src/config.ts");
+			var O = s("./src/config.ts");
 			const {
-				fbt: O
+				fbt: S
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function w() {
@@ -861,19 +849,19 @@
 					className: E.a.header
 				}, a.a.createElement("img", {
 					className: E.a.headerImage,
-					src: "".concat(k.a.assetPath, "/img/mtm-snoo.png")
+					src: "".concat(O.a.assetPath, "/img/mtm-snoo.png")
 				}), a.a.createElement("div", null, a.a.createElement("p", {
 					className: E.a.headerText1
-				}, O._("Okay, lets do this", null, {
+				}, S._("Okay, lets do this", null, {
 					hk: "1AIkwG"
 				})), a.a.createElement("p", {
 					className: E.a.headerText2
-				}, O._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
+				}, S._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
 					hk: "fVUF3"
 				}))))
 			}
-			var C = s("./src/reddit/actions/toaster.ts"),
-				v = s("./src/reddit/components/GeoForm/GeoForm.tsx"),
+			var v = s("./src/reddit/actions/toaster.ts"),
+				C = s("./src/reddit/components/GeoForm/GeoForm.tsx"),
 				N = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				T = s("./src/graphql/operations/SuggestSubredditGeoPlace.json"),
 				P = async (e, t) => Object(l.a)(e, Object.assign(Object.assign({}, T), {
@@ -883,10 +871,10 @@
 				G = {
 					pageType: "crowdsource_feed_geo"
 				},
-				R = {
+				B = {
 					pageType: "geo_entry"
 				},
-				B = e => () => ({
+				R = e => () => ({
 					source: F,
 					noun: "skip",
 					action: "click",
@@ -900,7 +888,7 @@
 					action: "click",
 					subreddit: Object(I.a)(e),
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
-					actionInfo: R
+					actionInfo: B
 				}),
 				q = V("select_location"),
 				H = V("confirm_location"),
@@ -915,7 +903,7 @@
 					action: "click",
 					subreddit: Object(I.a)(t),
 					userSubreddit: Object(I.g)(t.modPermissions, t.isSubscribed),
-					actionInfo: Object.assign(Object.assign({}, R), {
+					actionInfo: Object.assign(Object.assign({}, B), {
 						reason: s
 					})
 				})
@@ -952,12 +940,12 @@
 				fbt: Z
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function z(e) {
+			function K(e) {
 				const t = Object(b.n)(X) || [];
 				t.push(e), Object(b.T)(X, t)
 			}
 
-			function K(e) {
+			function z(e) {
 				const {
 					subreddit: t,
 					onClose: s
@@ -972,10 +960,10 @@
 							t(!0)
 						}
 					}
-				}(), j = Object(g.a)();
+				}(), x = Object(g.a)();
 
 				function _() {
-					i(Object(C.e)({
+					i(Object(v.e)({
 						kind: U.b.SuccessMod,
 						text: Z._("Nice work!", null, {
 							hk: "2Wu6gX"
@@ -997,7 +985,7 @@
 				}, t.prefixedName)), a.a.createElement("button", {
 					className: E.a.dismiss,
 					onClick: function() {
-						z(t.id), j(B(t)), f(), s(t.id)
+						K(t.id), x(R(t)), f(), s(t.id)
 					}
 				}, a.a.createElement(W, null))), a.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? a.a.createElement("div", {
 					className: E.a.questionContainer
@@ -1005,21 +993,21 @@
 					className: E.a.question
 				}, Z._("Is this community specific to {place}?", [Z._param("place", t.geoPlace.name)], {
 					hk: "bIGM4"
-				})), a.a.createElement(x.i, {
+				})), a.a.createElement(j.i, {
 					className: E.a.rejectButton,
 					onClick: function() {
-						b(!0), j(M(t, t.geoPlace.id))
+						b(!0), x(M(t, t.geoPlace.id))
 					}
-				}, "No"), a.a.createElement(x.f, {
+				}, "No"), a.a.createElement(j.f, {
 					className: E.a.verifyButton,
 					onClick: function() {
-						z(t.id), j(D(t, t.geoPlace.id)), f(), s(t.id), _()
+						K(t.id), x(D(t, t.geoPlace.id)), f(), s(t.id), _()
 					}
-				}, "Yes")) : a.a.createElement(v.a, {
+				}, "Yes")) : a.a.createElement(C.a, {
 					disabled: l,
-					onFocus: () => j(L(t)),
+					onFocus: () => x(L(t)),
 					onPlace: function(e) {
-						c && !e && j(A(t, c)), d(e), e && j(q(t, e))
+						c && !e && x(A(t, c)), d(e), e && x(q(t, e))
 					},
 					onSubmit: async function(e) {
 						let {
@@ -1038,14 +1026,14 @@
 								}
 							}
 						});
-						if (u(!1), !o.ok) return i(Object(C.e)({
+						if (u(!1), !o.ok) return i(Object(v.e)({
 							kind: U.b.Error,
 							text: Z._("Something went wrong", null, {
 								hk: "2PnKbu"
 							}),
 							duration: 5e3
 						}));
-						j(H(t, n)), f(), s(t.id), _()
+						x(H(t, n)), f(), s(t.id), _()
 					}
 				}))
 			}
@@ -1101,7 +1089,7 @@
 				}), a.a.createElement(r.a, {
 					isLoading: !0,
 					className: E.a.subredditGeotag
-				})) : o >= s.length ? a.a.createElement(S, null) : a.a.createElement(a.a.Fragment, null, a.a.createElement(w, null), s.map(e => a.a.createElement(K, {
+				})) : o >= s.length ? a.a.createElement(k, null) : a.a.createElement(a.a.Fragment, null, a.a.createElement(w, null), s.map(e => a.a.createElement(z, {
 					key: e.id,
 					subreddit: e,
 					onClose: c
@@ -1135,4 +1123,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging.9e59fac51c6e89f8473f.js.map
+//# sourceMappingURL=Geotagging.b59d38882f1b29bc6136.js.map

@@ -1,7 +1,19 @@
-// https://www.redditstatic.com/desktop2x/Geotagging~Topic.cf35fa2a71bcd08c27f6.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging~Topic.3ed2d438aefc1cd6bd8f.js
+// Retrieved at 8/27/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging~Topic"], {
+		"./src/reddit/components/SidebarContainer/index.m.less": function(e, t, s) {
+			e.exports = {
+				container: "_1FUNcfOeszr8eruqLxCMcR"
+			}
+		},
+		"./src/reddit/components/SidebarContainer/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./src/lib/lessComponent.tsx"),
+				r = s("./src/reddit/components/SidebarContainer/index.m.less"),
+				a = s.n(r);
+			t.a = n.a.div("container", a.a)
+		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
 			e.exports = {
 				BladeContainer: "_1PH-hjTIYFk3bzQxse2VdL",
@@ -59,11 +71,11 @@
 				};
 			const {
 				fbt: v
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = u.a.div("BladeContainer", E.a), y = u.a.wrapped(_.a, "CloseIcon", E.a), O = u.a.div("LoadingTitleContainer", E.a), j = u.a.div("LoadingNavContainer", E.a), C = u.a.div("ShortLoadingNav", E.a), L = u.a.wrapped(p.a, "ThemedChevron", E.a), T = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = u.a.div("BladeContainer", E.a), O = u.a.wrapped(_.a, "CloseIcon", E.a), y = u.a.div("LoadingTitleContainer", E.a), j = u.a.div("LoadingNavContainer", E.a), C = u.a.div("ShortLoadingNav", E.a), L = u.a.wrapped(p.a, "ThemedChevron", E.a), T = e => {
 				var t = S(e, []);
-				return o.a.createElement(N, null, o.a.createElement(y, null), o.a.createElement(b.k, null, o.a.createElement(b.p, null, v._("Back to mod tools", null, {
+				return o.a.createElement(N, null, o.a.createElement(O, null), o.a.createElement(b.k, null, o.a.createElement(b.p, null, v._("Back to mod tools", null, {
 					hk: "1YCI0W"
-				})), o.a.createElement(b.o, null, o.a.createElement(O, null, o.a.createElement("div", {
+				})), o.a.createElement(b.o, null, o.a.createElement(y, null, o.a.createElement("div", {
 					className: Object(d.a)(E.a.LoadingTitle, t.isLoading && E.a.loading)
 				})), o.a.createElement(j, null, o.a.createElement("div", {
 					className: Object(d.a)(E.a.LoadingNav, t.isLoading && E.a.loading)
@@ -303,7 +315,7 @@
 						})
 					}))
 				}, "UnsubscribeIconButton", m.a),
-				y = p.a.wrapped(e => {
+				O = p.a.wrapped(e => {
 					var {
 						border: t,
 						small: s,
@@ -331,7 +343,7 @@
 						className: l
 					}), c)
 				}, "UnsubscribeButton", m.a),
-				O = e => {
+				y = e => {
 					var {
 						icon: t
 					} = e, s = x(e, ["icon"]);
@@ -339,7 +351,7 @@
 						className: Object(b.a)(s.className, {
 							[m.a.isSmall]: s.small
 						})
-					})) : a.a.createElement(y, _({}, s, {
+					})) : a.a.createElement(O, _({}, s, {
 						className: Object(b.a)(s.className, {
 							[m.a.isSmall]: s.small
 						})
@@ -371,7 +383,7 @@
 						onClick: this.onClick,
 						small: r
 					};
-					return this.props.userIsSubscriber ? a.a.createElement(O, _({}, o, {
+					return this.props.userIsSubscriber ? a.a.createElement(y, _({}, o, {
 						buttonType: this.props.identifier.type
 					})) : a.a.createElement(v, _({}, o, {
 						id: n
@@ -490,11 +502,11 @@
 				S = s("./src/reddit/helpers/name/index.ts"),
 				v = s("./src/reddit/models/Widgets/index.ts"),
 				N = s("./src/reddit/selectors/subreddit.ts"),
-				y = s("./src/reddit/selectors/user.ts"),
-				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
-				j = s.n(O);
+				O = s("./src/reddit/selectors/user.ts"),
+				y = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
+				j = s.n(y);
 			const C = Object(_.c)({
-				isLoggedIn: y.H,
+				isLoggedIn: O.H,
 				subreddit: N.R,
 				subredditAboutInfo: N.w
 			});
@@ -578,9 +590,9 @@
 				k = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
 				I = s.n(k);
 			const {
-				fbt: w
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, A = Array.from({
-				length: F
+				fbt: F
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = 8, A = Array.from({
+				length: w
 			}).map((e, t) => r.a.createElement(B, {
 				className: I.a.Subreddit,
 				key: t
@@ -604,14 +616,14 @@
 						className: e,
 						subredditIds: t,
 						topicUrl: s
-					} = this.props, n = t.slice(0, F);
+					} = this.props, n = t.slice(0, w);
 					return r.a.createElement(i.a, {
 						className: Object(o.a)(I.a.Container, e)
 					}, r.a.createElement("div", {
 						className: I.a.Title
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
-					}, w._("Top Communities", null, {
+					}, F._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
 						className: I.a.SubredditList
@@ -620,12 +632,12 @@
 						discoveryUnit: J,
 						key: e,
 						subredditId: e
-					})) : A), t.length > F && r.a.createElement(a.a, {
+					})) : A), t.length > w && r.a.createElement(a.a, {
 						to: s
 					}, r.a.createElement(d.n, {
 						className: I.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
-					}, w._("See more", null, {
+					}, F._("See more", null, {
 						hk: "2qkY6H"
 					}))))
 				}
@@ -705,4 +717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Geotagging~Topic.cf35fa2a71bcd08c27f6.js.map
+//# sourceMappingURL=Geotagging~Topic.3ed2d438aefc1cd6bd8f.js.map

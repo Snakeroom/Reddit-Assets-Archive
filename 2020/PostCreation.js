@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.82b117dca1e0043e648e.js
-// Retrieved at 8/27/2020, 4:40:34 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.1aa5715ff17f2d791a02.js
+// Retrieved at 8/27/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
+	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
 			"use strict";
 			t.a = function(e) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "02380ef-production"
+					SENTRY_RELEASE_VERSION: "e84243e-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -33731,4 +33731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.82b117dca1e0043e648e.js.map
+//# sourceMappingURL=PostCreation.1aa5715ff17f2d791a02.js.map

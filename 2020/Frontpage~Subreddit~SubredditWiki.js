@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.1d9e27235826e4d4327e.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit~SubredditWiki.dd10797f7741216b106a.js
+// Retrieved at 8/27/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, r) {
@@ -29,8 +29,8 @@
 				y = r("./src/reddit/components/BannerAd/index.m.less"),
 				g = r.n(y),
 				x = r("./src/lib/lessComponent.tsx");
-			const C = x.a.div("Container", g.a),
-				v = x.a.div("LoadingHitbox", g.a),
+			const v = x.a.div("Container", g.a),
+				C = x.a.div("LoadingHitbox", g.a),
 				O = e => setTimeout(() => {
 					throw e
 				}, 0);
@@ -102,9 +102,9 @@
 						slot: t,
 						className: r
 					} = this.props;
-					return t ? s.a.createElement(C, {
+					return t ? s.a.createElement(v, {
 						"data-slot": t
-					}, s.a.createElement(v, {
+					}, s.a.createElement(C, {
 						key: "".concat(e, "-loadinghitbox"),
 						innerRef: e => {
 							this.loader = e
@@ -268,8 +268,8 @@
 				y = r("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				g = r("./src/reddit/helpers/adCount/index.ts"),
 				x = r("./src/reddit/helpers/trackers/ads.ts"),
-				C = r("./src/reddit/models/Media/index.ts"),
-				v = r("./src/reddit/selectors/platform.ts"),
+				v = r("./src/reddit/models/Media/index.ts"),
+				C = r("./src/reddit/selectors/platform.ts"),
 				O = r("./src/reddit/components/SidebarAd/BaseSidebarAdDoNotUseOrYoureFired.m.less"),
 				S = r.n(O),
 				E = r("./src/lib/constants/index.ts"),
@@ -303,7 +303,7 @@
 						return e.sidebarPromotedPosts.models[Object(g.a)(r, s, n)]
 					},
 					pending: e => !e.sidebarPromotedPosts.firstFetch,
-					IsSubredditOrCommentsPage: e => Object(v.r)(e) === E.Bb.SUBREDDIT || Object(v.r)(e) === E.Bb.COMMENTS
+					IsSubredditOrCommentsPage: e => Object(C.r)(e) === E.Bb.SUBREDDIT || Object(C.r)(e) === E.Bb.COMMENTS
 				}),
 				N = Object(l.b)(w),
 				j = _.a.wrapped(h.a, "BannerAd", S.a),
@@ -314,9 +314,9 @@
 					let n = "";
 					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != r && (n += "-".concat(r)), n
 				},
-				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(C.G)(e.media) && e.media.content)),
+				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(v.G)(e.media) && e.media.content)),
 				F = e => !!e && e.isBlank,
-				R = [{
+				D = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
 				}, {
@@ -326,7 +326,7 @@
 					img: "/img/house-ads/castiron.png",
 					href: "/r/castiron"
 				}],
-				D = Object(f.c)(class extends c.a.Component {
+				R = Object(f.c)(class extends c.a.Component {
 					shouldComponentUpdate(e, t) {
 						const {
 							className: r,
@@ -338,11 +338,11 @@
 						Math.random() <= u.a.telemetry.programmaticAdSampleRate && this.props.sendEvent(Object(x.d)(e, t, r))
 					}
 					render() {
-						const e = o()(0, R.length - 1),
+						const e = o()(0, D.length - 1),
 							{
 								img: t,
 								href: r
-							} = R[e],
+							} = D[e],
 							{
 								className: n,
 								placement: s,
@@ -392,25 +392,25 @@
 						removeSidebarSpacer: g
 					} = this.props, x = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
-					}), C = g ? c.a.Fragment : b.a;
-					return h || t || !L(r) && f ? c.a.createElement(C, null, c.a.createElement(B, {
+					}), v = g ? c.a.Fragment : b.a;
+					return h || t || !L(r) && f ? c.a.createElement(v, null, c.a.createElement(B, {
 						className: e,
 						contentOnly: !0,
 						redditStyle: u
 					}, c.a.createElement(I, {
 						"data-before-content": x
-					}))) : p ? c.a.createElement(D, {
+					}))) : p ? c.a.createElement(R, {
 						className: e,
 						redditStyle: u,
 						placement: d,
 						removeSidebarSpacer: g
-					}) : L(r) ? c.a.createElement(C, null, c.a.createElement(A, {
+					}) : L(r) ? c.a.createElement(v, null, c.a.createElement(A, {
 						post: r,
 						refreshKey: i,
 						listingName: o,
 						placement: d,
 						placementIndex: a
-					})) : c.a.createElement(C, null, c.a.createElement(B, {
+					})) : c.a.createElement(v, null, c.a.createElement(B, {
 						className: this.props.className,
 						contentOnly: !0,
 						redditStyle: u
@@ -582,8 +582,8 @@
 				y = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				g = r("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				x = r("./src/reddit/layout/threeCol/ExpandCenter/index.tsx"),
-				C = r("./src/reddit/models/Flair/index.ts"),
-				v = r("./src/reddit/selectors/user.ts"),
+				v = r("./src/reddit/models/Flair/index.ts"),
+				C = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
 				S = r("./src/reddit/components/Widgets/CommunityList/index.m.less"),
 				E = r.n(S);
@@ -633,7 +633,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				w = Object(d.c)({
-					hideNSFWPref: v.z
+					hideNSFWPref: C.z
 				}),
 				N = Object(i.b)(w)(e => a.a.createElement("div", {
 					className: E.a.communityItemContainer
@@ -665,7 +665,7 @@
 					hk: "6i1wh"
 				})), e.isNSFW && a.a.createElement(l.b, {
 					flair: {
-						type: C.f.Nsfw,
+						type: v.f.Nsfw,
 						text: "nsfw"
 					}
 				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? a.a.createElement(y.a, {
@@ -744,6 +744,18 @@
 				leftAligned: "T4XQNeAXcz6U72tv0Z5Z6"
 			}
 		},
+		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return s
+			}));
+			var n = r("./src/reddit/models/WhitelistStatus/index.ts");
+			const s = (e, t) => {
+				const r = e.some(e => e.isNSFW),
+					s = t.some(e => e.wls === n.b.NO_ADS);
+				return !r && !s
+			}
+		},
 		"./src/reddit/helpers/createBannerProperties/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -816,4 +828,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.1d9e27235826e4d4327e.js.map
+//# sourceMappingURL=Frontpage~Subreddit~SubredditWiki.dd10797f7741216b106a.js.map
