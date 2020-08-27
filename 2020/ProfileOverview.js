@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.c8de8abc40a9c43feed0.js
-// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.7c7f38e444f7e6bc0491.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -1606,7 +1606,7 @@
 						return !!Object(S.r)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const s = Object(Z.H)(e, {
+						const s = Object(Z.I)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -7830,7 +7830,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(P.Q)(e, {
+					return s ? Object(P.R)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -8177,7 +8177,7 @@
 				},
 				k = Object(c.c)({
 					flairData: v.d,
-					subreddit: O.Q,
+					subreddit: O.R,
 					isMod: (e, t) => !!Object(g.j)(e, t)
 				});
 			class P extends a.a.Component {
@@ -11880,7 +11880,7 @@
 					currentUser: f.i,
 					layout: l.N,
 					loadMore: b.d,
-					subredditsById: h.X,
+					subredditsById: h.Y,
 					viewportDataLoaded: x.a,
 					commentsById: b.g,
 					itemIds: b.f,
@@ -11962,7 +11962,7 @@
 						} = t;
 						return Object(v.K)(e, s, n, o)
 					}),
-					subredditsById: O.X,
+					subredditsById: O.Y,
 					viewportDataLoaded: C.a,
 					pageReferrer: p.Q,
 					postListPlaceholderComponent: () => h.a,
@@ -12010,7 +12010,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: a.bb
+				userIsSubscriber: a.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -15225,4 +15225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ProfileOverview.c8de8abc40a9c43feed0.js.map
+//# sourceMappingURL=ProfileOverview.7c7f38e444f7e6bc0491.js.map

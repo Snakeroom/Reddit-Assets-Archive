@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.8ead4bfb6db74361e35e.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.7574ec64cce953dd7cf6.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, n) {
@@ -96,7 +96,7 @@
 				}).apply(this, arguments)
 			}
 			var E = e => {
-					const t = Object(o.d)(t => Object(y.Q)(t, e)),
+					const t = Object(o.d)(t => Object(y.R)(t, e)),
 						n = Object(o.d)(t => Object(I.s)(t, e.subredditId)),
 						r = n.membershipAlt,
 						c = n.prices.points,
@@ -137,17 +137,17 @@
 				B = n("./src/reddit/selectors/user.ts"),
 				F = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx"),
 				L = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
-				q = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.m.less"),
-				K = n.n(q);
+				R = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.m.less"),
+				q = n.n(R);
 			const {
-				fbt: R
+				fbt: K
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const X = Object(c.c)({
 				subredditName: (e, t) => {
 					let {
 						subredditId: n
 					} = t;
-					const s = Object(y.Q)(e, {
+					const s = Object(y.R)(e, {
 						subredditId: n
 					});
 					return s && s.name || ""
@@ -159,7 +159,7 @@
 					return t ? t.id : ""
 				}
 			});
-			var Q = Object(o.b)(X)((function(e) {
+			var V = Object(o.b)(X)((function(e) {
 				const {
 					correlationId: t,
 					onClose: n,
@@ -174,23 +174,23 @@
 					u(Object(D.a)(t))
 				}, [t, u]), a.a.createElement(F.a, {
 					onClose: n,
-					title: R._("Continue in the Mobile App", null, {
+					title: K._("Continue in the Mobile App", null, {
 						hk: "3seGfx"
 					}),
-					header: R._("Approve this transaction with Reddit Vault", null, {
+					header: K._("Approve this transaction with Reddit Vault", null, {
 						hk: "4dRYKa"
 					}),
 					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(L.a, {
 						index: "1"
-					}, R._("Scan the QR code with your Camera app", null, {
+					}, K._("Scan the QR code with your Camera app", null, {
 						hk: "DeLcL"
 					})), a.a.createElement(L.a, {
 						index: "2"
-					}, R._("Use that link to open your Vault in the Reddit app", null, {
+					}, K._("Use that link to open your Vault in the Reddit app", null, {
 						hk: "2KCtg7"
 					})), a.a.createElement(L.a, {
 						index: "3"
-					}, R._("Approve the transaction to start your monthly membership subscription", null, {
+					}, K._("Approve the transaction to start your monthly membership subscription", null, {
 						hk: "1XiP6x"
 					}))),
 					qrUrl: Object(P.a)("http://www.reddit.com/vault/subscribe", {
@@ -199,13 +199,13 @@
 						sn: c
 					}),
 					amount: a.a.createElement("div", {
-						className: K.a.amount
+						className: q.a.amount
 					}, a.a.createElement("div", null, a.a.createElement(S.a, {
-						className: K.a.tokenIcon,
+						className: q.a.tokenIcon,
 						subredditId: o
 					})), a.a.createElement("div", {
-						className: K.a.total
-					}, R._("{price} /mo", [R._param("price", Object(G.a)(Object(p.b)(s, i)) + " " + d)], {
+						className: q.a.total
+					}, K._("{price} /mo", [K._param("price", Object(G.a)(Object(p.b)(s, i)) + " " + d)], {
 						hk: "2sgoC6"
 					})))
 				})
@@ -250,7 +250,7 @@
 					transactionIntent: Object(u.c)(n),
 					transactionIsBlockedOnIOS: !0
 				})
-			}), Q)
+			}), V)
 		},
 		"./src/reddit/helpers/trackers/communityPoints.ts": function(e, t, n) {
 			"use strict";
@@ -328,4 +328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.8ead4bfb6db74361e35e.js.map
+//# sourceMappingURL=reddit-components-Governance-TransactionModals-SubscriptionModal.7574ec64cce953dd7cf6.js.map

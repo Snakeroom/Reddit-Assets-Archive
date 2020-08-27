@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.d1e76ad322887623c164.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.2ca9340dc0c7db84c393.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -984,7 +984,7 @@
 				g = n("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const n = Object(h.n)(e, t),
-					s = Object(g.H)(e, t);
+					s = Object(g.I)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1022,7 +1022,7 @@
 			}));
 			const y = (e, t) => {
 				const n = Object(h.n)(e, t),
-					s = Object(g.H)(e, t);
+					s = Object(g.I)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1048,7 +1048,7 @@
 				}
 			}));
 			var k = Object(o.b)(() => Object(r.c)({
-					subreddit: g.Q
+					subreddit: g.R
 				}))(e => a.a.createElement(b, {
 					className: e.className,
 					type: "communityTools",
@@ -1160,7 +1160,7 @@
 				}
 			}));
 			var O = Object(o.b)(() => Object(r.c)({
-				subreddit: g.Q
+				subreddit: g.R
 			}))(e => a.a.createElement(b, {
 				className: e.className,
 				type: "sidebar",
@@ -1173,7 +1173,7 @@
 				}
 			}));
 			var S = Object(o.b)(() => Object(r.c)({
-				subredditOrProfile: (e, t) => Object(g.K)(e, {
+				subredditOrProfile: (e, t) => Object(g.L)(e, {
 					identifier: t
 				})
 			}))(e => a.a.createElement(b, {
@@ -1192,7 +1192,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(g.Q)(e, {
+					return n ? Object(g.R)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -6773,4 +6773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.d1e76ad322887623c164.js.map
+//# sourceMappingURL=Settings.2ca9340dc0c7db84c393.js.map

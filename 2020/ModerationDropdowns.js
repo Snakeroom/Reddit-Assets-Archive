@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.4723a751b184a520dc91.js
-// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.babc4069dfb1cfd8499e.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -247,13 +247,14 @@
 					className: t,
 					unreadNotifications: s,
 					isOpen: n,
-					sendEventWithName: a
-				} = e, i = Object(l.b)(p, "".concat(o.fbt._("Mod Queue", null, {
+					sendEventWithName: a,
+					showLegacyModmailIcon: i
+				} = e, c = Object(l.b)(p, "".concat(o.fbt._("Mod Queue", null, {
 					hk: "2fqLkD"
-				}))), c = Object(l.b)(d.a, "".concat(o.fbt._("Modmail Beta", null, {
-					hk: "2miezs"
-				})), !0), u = Object(l.b)(d.a, "".concat(o.fbt._("Modmail", null, {
+				}))), u = Object(l.b)(d.a, "".concat(o.fbt._("Modmail", null, {
 					hk: "1IvnFd"
+				})), !0), x = Object(l.b)(d.a, "".concat(o.fbt._("Legacy Modmail", null, {
+					hk: "1NZCqH"
 				})), !0);
 				return r.a.createElement("div", {
 					className: t
@@ -261,14 +262,14 @@
 					isFixed: !0,
 					isOpen: n,
 					tooltipId: m.a
-				}, r.a.createElement(i, {
+				}, r.a.createElement(c, {
 					href: "/r/mod/about/modqueue",
 					onClick: () => a("mod_queue")
-				}), r.a.createElement(C, null), r.a.createElement(c, {
+				}), r.a.createElement(C, null), r.a.createElement(u, {
 					href: "https://mod.reddit.com/mail/all",
 					isLit: s.hasUnreadModmail,
 					onClick: () => a("mod_mail")
-				}), r.a.createElement(C, null), r.a.createElement(u, {
+				}), r.a.createElement(C, null), i && r.a.createElement(x, {
 					href: "/message/moderator/",
 					isLit: s.hasUnreadOldModmail,
 					onClick: () => a("old_mod_mail")
@@ -332,7 +333,7 @@
 				},
 				M = Object(c.c)({
 					flairData: v.d,
-					subreddit: _.Q,
+					subreddit: _.R,
 					isMod: (e, t) => !!Object(f.j)(e, t)
 				});
 			class R extends a.a.Component {
@@ -1416,4 +1417,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.4723a751b184a520dc91.js.map
+//# sourceMappingURL=ModerationDropdowns.babc4069dfb1cfd8499e.js.map

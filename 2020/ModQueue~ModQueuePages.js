@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.81ba17610963ae315c74.js
-// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.07622ac723a52ea6925c.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -20,7 +20,7 @@
 		"./src/reddit/actions/modQueue/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return T
+				return E
 			})), n.d(t, "d", (function() {
 				return Q
 			})), n.d(t, "f", (function() {
@@ -64,8 +64,8 @@
 				w = Object(a.a)(k.o),
 				N = Object(a.a)(k.w),
 				M = Object(a.a)(k.v),
-				E = Object(a.a)(k.u),
-				T = (e, t, n) => async (a, r, c) => {
+				T = Object(a.a)(k.u),
+				E = (e, t, n) => async (a, r, c) => {
 					let m, u, b, {
 						apiContext: f
 					} = c;
@@ -83,7 +83,7 @@
 							m = A, u = w, b = C;
 							break;
 						case s.hb.Unmoderated:
-							m = N, u = E, b = M;
+							m = N, u = T, b = M;
 							break;
 						default:
 							throw new Error("Invalid modqueue requested")
@@ -280,7 +280,7 @@
 						if (e !== l.a.Approve && e !== l.a.Flair) {
 							let t, a;
 							const m = _.platform.currentPage && _.platform.currentPage.queryParams && _.platform.currentPage.queryParams.subreddit,
-								u = m && Object(O.E)(_, m);
+								u = m && Object(O.F)(_, m);
 							e === l.a.Remove && u && g.length > 1 && (t = o.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), a = Object(c.fetchReasonsAndOpenModal)(u, g));
@@ -335,9 +335,9 @@
 			})), n.d(t, "removalReasonsRequested", (function() {
 				return M
 			})), n.d(t, "removalReasonAddedPending", (function() {
-				return E
-			})), n.d(t, "removalReasonAddedSuccess", (function() {
 				return T
+			})), n.d(t, "removalReasonAddedSuccess", (function() {
+				return E
 			})), n.d(t, "removalReasonAddedFailed", (function() {
 				return F
 			})), n.d(t, "addRemovalReason", (function() {
@@ -439,12 +439,12 @@
 						subredditId: e,
 						response: c.body
 					})) : t(N(c.error))
-				}, E = Object(a.a)(A.b), T = Object(a.a)(A.c), F = Object(a.a)(A.a), U = (e, t) => async (n, a, r) => {
+				}, T = Object(a.a)(A.b), E = Object(a.a)(A.c), F = Object(a.a)(A.a), U = (e, t) => async (n, a, r) => {
 					let {
 						apiContext: c
 					} = r;
 					const d = a().subreddits.models[e].name;
-					n(E());
+					n(T());
 					const i = await ((e, t, n) => Object(p.a)(Object(f.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/removal_reasons"),
 						method: s.db.POST,
@@ -456,7 +456,7 @@
 						} = i.body, a = Object.assign(Object.assign({}, t), {
 							id: s
 						});
-						n(T({
+						n(E({
 							subredditId: e,
 							reason: a
 						})), n(Object(b.e)({
@@ -700,4 +700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue~ModQueuePages.81ba17610963ae315c74.js.map
+//# sourceMappingURL=ModQueue~ModQueuePages.07622ac723a52ea6925c.js.map

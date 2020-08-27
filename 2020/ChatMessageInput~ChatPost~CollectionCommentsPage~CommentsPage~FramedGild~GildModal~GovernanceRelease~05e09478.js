@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.a36d714def9785d057f6.js
-// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.4e6cfebd3256a87649a5.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1495,7 +1495,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) n.push(z(r, o));
+						if (r.e === h.A) n.push(Q(r, o));
 						else if (r.e === h.x) n.push(a.a.createElement(C.a, {
 							key: o
 						}, q(r.c, t, s)));
@@ -1522,7 +1522,7 @@
 								href: e.u,
 								key: s,
 								title: e.a
-							}, z({
+							}, Q({
 								t: e.t,
 								f: e.f
 							}, 0));
@@ -1546,7 +1546,7 @@
 							}, e.t)
 					}
 				},
-				z = (e, t) => {
+				Q = (e, t) => {
 					const {
 						f: s,
 						t: r
@@ -1562,7 +1562,7 @@
 					}
 					return c < r.length && o.push($(0, r.substr(c), "remaining".concat(a))), o
 				},
-				Q = {
+				z = {
 					[h.j.monospace]: c.h,
 					[h.j.bold]: c.b,
 					[h.j.italic]: c.f,
@@ -1573,7 +1573,7 @@
 				},
 				$ = (e, t, s) => {
 					let n = t;
-					return n = o()(Q, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
+					return n = o()(z, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
@@ -1714,7 +1714,7 @@
 								subredditName: n,
 								[r]: s.id
 							},
-							i = Object(l.z)(e, {
+							i = Object(l.A)(e, {
 								subredditName: n
 							});
 						return i ? {
@@ -1820,7 +1820,7 @@
 					let {
 						subredditName: s
 					} = t;
-					const n = Object(i.U)(e, {
+					const n = Object(i.V)(e, {
 						subredditName: s
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -1828,4 +1828,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.a36d714def9785d057f6.js.map
+//# sourceMappingURL=ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.4e6cfebd3256a87649a5.js.map

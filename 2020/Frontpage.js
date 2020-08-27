@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.cc0c0872c26e7bfd9d54.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.7a7a5093f1c18b1f520d.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1185,7 +1185,7 @@
 				o = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: i.bb
+				userIsSubscriber: i.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1780,7 +1780,7 @@
 					let c;
 					if (-1 === [o.P, "r/popular"].indexOf(s)) {
 						const t = s.replace(/^r\//, ""),
-							r = Object(i.E)(e, t),
+							r = Object(i.F)(e, t),
 							o = n.subreddit[r];
 						if (!o) return !1;
 						c = o
@@ -2100,4 +2100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Frontpage.cc0c0872c26e7bfd9d54.js.map
+//# sourceMappingURL=Frontpage.7a7a5093f1c18b1f520d.js.map

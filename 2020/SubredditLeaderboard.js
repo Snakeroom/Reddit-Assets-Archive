@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f3850e1f63d29ec042ff.js
-// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.018504f5cce6dd7a3474.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1257,8 +1257,8 @@
 				W = r("./src/reddit/models/GoodContent/index.ts"),
 				B = r("./src/reddit/selectors/subreddit.ts"),
 				R = r("./src/reddit/selectors/subredditLeaderboard.ts"),
-				D = r("./src/reddit/selectors/user.ts");
-			const M = 25,
+				M = r("./src/reddit/selectors/user.ts");
+			const D = 25,
 				H = .5,
 				A = Object(d.c)({
 					hasPreviousPage: (e, t) => {
@@ -1273,14 +1273,14 @@
 						} = t;
 						return Object(R.b)(e, r)
 					},
-					isMod: D.I,
+					isMod: M.I,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
 						} = t;
-						return Object(B.L)(e, r)
+						return Object(B.M)(e, r)
 					},
-					subreddits: B.X
+					subreddits: B.Y
 				}),
 				G = Object(i.b)(A, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.a)(t, r))
@@ -1318,7 +1318,7 @@
 						after: a,
 						categoryId: e === p.a ? p.d : e,
 						filter: W.a,
-						first: M,
+						first: D,
 						isOnlyModIncluded: o
 					}
 				}
@@ -1360,10 +1360,10 @@
 			var J = Object(m.c)(G(Q)),
 				V = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				z = r.n(K);
+				Y = r.n(K);
 
-			function Y() {
-				return (Y = Object.assign || function(e) {
+			function z() {
+				return (z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -1378,8 +1378,8 @@
 					className: s,
 					isActive: n,
 					tabIndex: a
-				} = e, i = Object(c.a)(z.a.categoryLink, n && z.a.active, s);
-				return o.a.createElement("li", null, o.a.createElement(V.a, Y({}, t.anchorProps, {
+				} = e, i = Object(c.a)(Y.a.categoryLink, n && Y.a.active, s);
+				return o.a.createElement("li", null, o.a.createElement(V.a, z({}, t.anchorProps, {
 					className: i,
 					"data-active": n,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -1432,7 +1432,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: m
-					} = this.state, u = !m && d && r * d, g = a + (e ? r * e.length : 0), h = Object(c.a)(z.a.categoryList, m && z.a.expanded), b = e => !(!i || i !== Object(q.f)(e)), y = o.a.createElement("ul", {
+					} = this.state, u = !m && d && r * d, g = a + (e ? r * e.length : 0), h = Object(c.a)(Y.a.categoryList, m && Y.a.expanded), b = e => !(!i || i !== Object(q.f)(e)), y = o.a.createElement("ul", {
 						className: h,
 						style: {
 							height: u || g
@@ -1451,7 +1451,7 @@
 						}) : e.name)
 					}));
 					return o.a.createElement("div", {
-						className: Object(c.a)(z.a.categoryListContainer, s)
+						className: Object(c.a)(Y.a.categoryListContainer, s)
 					}, y)
 				}
 				render() {
@@ -1462,16 +1462,16 @@
 						header: s,
 						headerClassName: n,
 						initialNumberOfCategories: a
-					} = this.props, i = t && a && t.length > a, d = Object(c.a)(r, z.a.container);
+					} = this.props, i = t && a && t.length > a, d = Object(c.a)(r, Y.a.container);
 					return o.a.createElement(U.a, {
 						className: d,
 						contentOnly: !0
 					}, o.a.createElement("div", {
-						className: Object(c.a)(z.a.header, n)
+						className: Object(c.a)(Y.a.header, n)
 					}, o.a.createElement("h2", null, s || $._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), i && o.a.createElement(X.n, {
-						className: Object(c.a)(z.a.button, e),
+						className: Object(c.a)(Y.a.button, e),
 						onClick: this.toggleExpanded
 					}, i && !this.state.isExpanded ? $._("Show More", null, {
 						hk: "1pCiqD"
@@ -1660,4 +1660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.f3850e1f63d29ec042ff.js.map
+//# sourceMappingURL=SubredditLeaderboard.018504f5cce6dd7a3474.js.map

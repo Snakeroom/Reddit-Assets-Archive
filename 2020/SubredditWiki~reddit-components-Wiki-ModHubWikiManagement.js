@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.9df788ec01377e827c45.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.b60fc2db980315db72b3.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
@@ -386,7 +386,7 @@
 			const Y = Object(r.c)({
 				hasError: C.o,
 				hasWikiModPerms: (e, t) => {
-					const i = Object(P.z)(e, t);
+					const i = Object(P.A)(e, t);
 					return !!i && Object(E.f)(e, {
 						subredditId: i.id
 					})
@@ -1563,7 +1563,7 @@
 				M = i.n(y);
 			const L = Object(c.c)({
 					hasWikiModPerms: (e, t) => {
-						const i = Object(x.z)(e, t);
+						const i = Object(x.A)(e, t);
 						return !!i && Object(f.f)(e, {
 							subredditId: i.id
 						})
@@ -1931,4 +1931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.9df788ec01377e827c45.js.map
+//# sourceMappingURL=SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.b60fc2db980315db72b3.js.map

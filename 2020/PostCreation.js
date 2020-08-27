@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e3fee71e6c2c8bfb23a6.js
-// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b44a9590090631b4f3a7.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "fbcf605-production"
+					SENTRY_RELEASE_VERSION: "650debb-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -5005,7 +5005,7 @@
 				f = n("./src/reddit/components/ContributorRequestFlow/index.m.less"),
 				g = n.n(f);
 			const x = Object(a.c)({
-				restrictions: b.o
+				restrictions: b.p
 			});
 			class y extends r.a.Component {
 				constructor() {
@@ -6039,7 +6039,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(x.Q)(e, {
+						return Object(x.R)(e, {
 							subredditId: n.belongsTo.id
 						}).name
 					}
@@ -6577,7 +6577,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
 				const n = Object(b.n)(e, t),
-					s = Object(f.H)(e, t);
+					s = Object(f.I)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -6615,7 +6615,7 @@
 			}));
 			const y = (e, t) => {
 				const n = Object(b.n)(e, t),
-					s = Object(f.H)(e, t);
+					s = Object(f.I)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -6641,7 +6641,7 @@
 				}
 			}));
 			var E = Object(r.b)(() => Object(i.c)({
-					subreddit: f.Q
+					subreddit: f.R
 				}))(e => o.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -6753,7 +6753,7 @@
 				}
 			}));
 			var _ = Object(r.b)(() => Object(i.c)({
-				subreddit: f.Q
+				subreddit: f.R
 			}))(e => o.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -6766,7 +6766,7 @@
 				}
 			}));
 			var S = Object(r.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(f.K)(e, {
+				subredditOrProfile: (e, t) => Object(f.L)(e, {
 					identifier: t
 				})
 			}))(e => o.a.createElement(h, {
@@ -6785,7 +6785,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(f.Q)(e, {
+					return n ? Object(f.R)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -8956,7 +8956,7 @@
 							subredditId: n
 						}
 					} = t;
-					return n ? Object(S.Q)(e, {
+					return n ? Object(S.R)(e, {
 						subredditId: n
 					}) : void 0
 				},
@@ -10820,7 +10820,7 @@
 				},
 				_ = Object(c.c)({
 					flairData: y.d,
-					subreddit: v.Q,
+					subreddit: v.R,
 					isMod: (e, t) => !!Object(x.j)(e, t)
 				});
 			class S extends i.a.Component {
@@ -11187,7 +11187,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(A.Q)(e, {
+						return Object(A.R)(e, {
 							subredditId: n.belongsTo.id
 						}).name
 					},
@@ -11943,7 +11943,7 @@
 					const s = Object(b.q)(e, {
 						pageLayer: n
 					});
-					return s && Object(y.P)(e, {
+					return s && Object(y.Q)(e, {
 						subredditId: s.id
 					})
 				}, e => (e || []).filter(e => T.has(e.kind))),
@@ -12213,7 +12213,7 @@
 				h = n.n(m);
 			const b = c.a.wrapped(l.a, "Banner", h.a),
 				f = Object(i.b)(() => Object(a.c)({
-					restrictions: p.o,
+					restrictions: p.p,
 					subreddit: u.f
 				}));
 			t.a = f(e => {
@@ -21300,7 +21300,7 @@
 				r = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(o.c)({
-				userIsSubscriber: i.bb
+				userIsSubscriber: i.cb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -26132,7 +26132,7 @@
 						actionInfo: f.actionInfo(e, {
 							success: t
 						}),
-						subreddit: f.subredditById(e, Object(p.E)(e, n)),
+						subreddit: f.subredditById(e, Object(p.F)(e, n)),
 						userSubreddit: f.userSubreddit(e),
 						adblock: f.adblock(e)
 					}))
@@ -26144,7 +26144,7 @@
 						noun: "screen"
 					}, f.defaults(e)), {
 						profile: f.profileById(e, Object(u.m)(e, s)),
-						subreddit: f.subredditById(e, Object(p.E)(e, n)),
+						subreddit: f.subredditById(e, Object(p.F)(e, n)),
 						userSubreddit: f.userSubreddit(e),
 						adblock: f.adblock(e)
 					}))
@@ -29812,7 +29812,7 @@
 					});
 					const {
 						isCrosspostableSubreddit: d
-					} = Object(S.w)(e, {
+					} = Object(S.x)(e, {
 						subredditName: a
 					});
 					if (!d) return l.fbt._("This community does not allow for crossposting of any posts", null, {
@@ -29913,7 +29913,7 @@
 					postSchedule: w.W,
 					postToTwitter: w.Y,
 					isEditingScheduledPost: e => !!Object(de.r)(e),
-					showContributorRequestFlow: e => Object(S.q)(e, g.e.Post),
+					showContributorRequestFlow: e => Object(S.r)(e, g.e.Post),
 					showScheduledPosts: w.cb,
 					stickyPosition: w.eb,
 					submissionType: w.a,
@@ -30236,7 +30236,7 @@
 								subredditId: n
 							}
 						} = t;
-						return n ? Object(S.Q)(e, {
+						return n ? Object(S.R)(e, {
 							subredditId: n
 						}) : void 0
 					},
@@ -33721,4 +33721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.e3fee71e6c2c8bfb23a6.js.map
+//# sourceMappingURL=PostCreation.b44a9590090631b4f3a7.js.map

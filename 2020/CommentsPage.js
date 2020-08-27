@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.1f5f166fa7a754c32652.js
-// Retrieved at 8/27/2020, 12:40:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d97d6e9cb67e191c20b4.js
+// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "Frontpage~ModListing~ModQueuePages~Multireddit~ProfileOverview~ProfilePosts~ProfilePrivate~SearchRes~77b3dad4", "ProfileComments~ProfilePrivate~RpanListingUnit~SearchResults~StandalonePostPage~reddit-components-Cl~726564d9", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1141,7 +1141,7 @@
 					const s = e.platform.currentPage;
 					if (!s) return {};
 					const n = "".concat(e.meta.protocol, "://").concat(e.meta.domain);
-					return Object(u.b)(t.placement, e.user, Object(d.a)("".concat(n).concat(s.url), s.queryParams), Object(h.z)(e, {
+					return Object(u.b)(t.placement, e.user, Object(d.a)("".concat(n).concat(s.url), s.queryParams), Object(h.A)(e, {
 						subredditName: t.listingName
 					}), t.position)
 				}),
@@ -2494,7 +2494,7 @@
 						return !!Object(I.r)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const s = Object(Y.H)(e, {
+						const s = Object(Y.I)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -3499,7 +3499,7 @@
 						let {
 							subreddit: s
 						} = t;
-						return s ? Object(te.w)(e, {
+						return s ? Object(te.x)(e, {
 							subredditName: s.name
 						}) : void 0
 					},
@@ -5138,7 +5138,7 @@
 				M = Object(c.c)({
 					isLoggedIn: w.H,
 					postSEOV2IdCardVariant: k.g,
-					widgets: Object(p.a)(j.r)
+					widgets: Object(p.a)(j.s)
 				}),
 				L = Object(d.b)(M);
 			class R extends a.a.Component {
@@ -7286,8 +7286,8 @@
 					className: b.a.icon
 				}),
 				x = Object(a.c)({
-					subreddit: p.z,
-					subredditAboutInfo: p.w
+					subreddit: p.A,
+					subredditAboutInfo: p.x
 				}),
 				f = Object(i.b)(x);
 			t.a = f(e => {
@@ -9349,7 +9349,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(w.Q)(e, {
+					return s ? Object(w.R)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -9696,7 +9696,7 @@
 				},
 				j = Object(d.c)({
 					flairData: v.d,
-					subreddit: C.Q,
+					subreddit: C.R,
 					isMod: (e, t) => !!Object(f.j)(e, t)
 				});
 			class w extends i.a.Component {
@@ -13597,7 +13597,7 @@
 					url: e => Object(b.X)(e)
 				}),
 				P = Object(a.c)({
-					subredditId: (e, t) => Object(O.E)(e, t.subredditName)
+					subredditId: (e, t) => Object(O.F)(e, t.subredditName)
 				}),
 				I = Object(i.b)(P),
 				S = l.a.div("WidgetContent", E.a),
@@ -14399,7 +14399,7 @@
 						} = t;
 						return Object(v.K)(e, s, n, o)
 					}),
-					subredditsById: C.X,
+					subredditsById: C.Y,
 					viewportDataLoaded: O.a,
 					pageReferrer: p.Q,
 					postListPlaceholderComponent: () => b.a,
@@ -14447,7 +14447,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.bb
+				userIsSubscriber: i.cb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -17164,7 +17164,7 @@
 						let {
 							subredditName: s
 						} = t;
-						return s ? Object(pe.w)(e, {
+						return s ? Object(pe.x)(e, {
 							subredditName: s
 						}) : void 0
 					},
@@ -17993,4 +17993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.1f5f166fa7a754c32652.js.map
+//# sourceMappingURL=CommentsPage.d97d6e9cb67e191c20b4.js.map
