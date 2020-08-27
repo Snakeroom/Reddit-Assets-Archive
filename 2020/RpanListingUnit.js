@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.8b8d589d13490cfd76c3.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.390dda2fc8f6ce7f89b7.js
+// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const m = Object(n.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: h.Bb
+					experimentName: h.zb
 				});
-				return Object(h.Ac)(t) ? void 0 : t
+				return Object(h.yc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: h.Cb
+					experimentName: h.Ab
 				});
-				return Object(h.Ac)(t) ? void 0 : t
-			}, (e, t) => e === h.Db.Enabled && t === h.Db.Enabled);
+				return Object(h.yc)(t) ? void 0 : t
+			}, (e, t) => e === h.Bb.Enabled && t === h.Bb.Enabled);
 			var b = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "650debb-production"
+					SENTRY_RELEASE_VERSION: "31410bc-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -1692,4 +1692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanListingUnit.8b8d589d13490cfd76c3.js.map
+//# sourceMappingURL=RpanListingUnit.390dda2fc8f6ce7f89b7.js.map

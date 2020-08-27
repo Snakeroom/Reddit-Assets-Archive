@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b44a9590090631b4f3a7.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6096bc574a8202a0458a.js
+// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "CollectionCommentsPage~CommentsPage~ModerationPages~PostDraft~ProfileComments~ProfileOverview~Profil~e5ba4eb0", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -677,16 +677,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Bb
+					experimentName: u.zb
 				});
-				return Object(u.Ac)(t) ? void 0 : t
+				return Object(u.yc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Cb
+					experimentName: u.Ab
 				});
-				return Object(u.Ac)(t) ? void 0 : t
-			}, (e, t) => e === u.Db.Enabled && t === u.Db.Enabled);
+				return Object(u.yc)(t) ? void 0 : t
+			}, (e, t) => e === u.Bb.Enabled && t === u.Bb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "650debb-production"
+					SENTRY_RELEASE_VERSION: "31410bc-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1621,7 +1621,7 @@
 				o = n("./src/reddit/actions/modal.ts"),
 				r = n("./src/reddit/constants/modals.ts"),
 				i = n("./src/reddit/actions/gold/constants.ts");
-			const a = Object(s.a)(i.ab),
+			const a = Object(s.a)(i.db),
 				c = () => async e => {
 					e(Object(o.h)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}
@@ -1637,7 +1637,7 @@
 				i = n("./src/reddit/models/Toast/index.ts"),
 				a = n("./src/reddit/endpoints/gold/communityAwards.ts"),
 				c = n("./src/reddit/actions/gold/constants.ts");
-			const l = Object(o.a)(c.Z),
+			const l = Object(o.a)(c.cb),
 				d = e => async (t, n, o) => {
 					let {
 						apiContext: c
@@ -1679,10 +1679,10 @@
 			}));
 			var d = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/actions/gold/constants.ts");
-			Object(o.a)(u.kb), Object(o.a)(u.jb), Object(o.a)(u.ib);
-			const p = Object(o.a)(u.nb),
-				m = Object(o.a)(u.mb),
-				h = Object(o.a)(u.lb),
+			Object(o.a)(u.jb), Object(o.a)(u.ib), Object(o.a)(u.hb);
+			const p = Object(o.a)(u.mb),
+				m = Object(o.a)(u.lb),
+				h = Object(o.a)(u.kb),
 				b = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 25;
 					return async (n, o, i) => {
@@ -1707,7 +1707,7 @@
 						}
 					}
 				},
-				f = Object(o.a)(u.ob),
+				f = Object(o.a)(u.nb),
 				g = e => async (t, n) => {
 					t(f({
 						postId: e
@@ -3148,7 +3148,7 @@
 				p = n("./src/reddit/models/Toast/index.ts"),
 				m = n("./src/lib/makeGqlRequest/index.ts"),
 				h = n("./src/reddit/actions/gold/constants.ts");
-			const b = Object(l.a)(h.C),
+			const b = Object(l.a)(h.F),
 				f = e => {
 					let {
 						awardId: t,
@@ -3198,26 +3198,26 @@
 				S = n("./src/reddit/constants/experiments.ts"),
 				k = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				T = n("./src/reddit/selectors/user.ts");
-			var I = n("./src/reddit/selectors/userPrefs.ts"),
-				P = n("./node_modules/lodash/debounce.js"),
-				M = n.n(P),
-				N = n("./src/lib/classNames/index.ts"),
-				R = n("./src/lib/fastdom/index.ts"),
-				L = n("./src/reddit/models/Gold/TopAwarded/index.ts"),
-				A = n("./src/reddit/icons/fonts/Gift/index.tsx"),
-				D = n("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
-				B = n.n(D);
-			var F = r.a.memo(e => r.a.createElement("button", {
-					className: Object(N.a)(e.className, B.a.addAwardPill),
+			var I = n("./src/reddit/selectors/gold/awardIcon.ts"),
+				P = n("./src/reddit/selectors/userPrefs.ts"),
+				M = n("./node_modules/lodash/debounce.js"),
+				N = n.n(M),
+				R = n("./src/lib/classNames/index.ts"),
+				L = n("./src/lib/fastdom/index.ts"),
+				A = n("./src/reddit/models/Gold/TopAwarded/index.ts"),
+				D = n("./src/reddit/icons/fonts/Gift/index.tsx"),
+				B = n("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
+				F = n.n(B);
+			var U = r.a.memo(e => r.a.createElement("button", {
+					className: Object(R.a)(e.className, F.a.addAwardPill),
 					name: s.fbt._("Give award", null, {
 						hk: "dQR06"
 					}),
 					onClick: e.onAddAward
-				}, r.a.createElement(A.a, {
-					className: B.a.giftIcon
+				}, r.a.createElement(D.a, {
+					className: F.a.giftIcon
 				}))),
-				U = n("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				H = n("./src/reddit/helpers/awards/getIconForSize.ts"),
+				H = n("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				K = n("./src/higherOrderComponents/makeAsync.tsx"),
 				V = n("./src/lib/loadWithRetries/index.ts");
 			var W = Object(K.a)({
@@ -3300,45 +3300,46 @@
 						award: e,
 						className: t,
 						count: n,
-						post: s,
-						prefersReducedMotion: o,
-						tooltipId: i
+						giveAwardAnimationIconUrl: s,
+						pillIconUrl: o,
+						post: i,
+						tooltipId: a
 					} = this.props, {
-						userGiven: a,
-						shouldAnimate: c
-					} = this.state, l = Object(H.a)(e, 32, o), d = Object(H.a)(e, 128, o), u = Object(U.a)(e.id, s.id);
+						userGiven: c,
+						shouldAnimate: l
+					} = this.state, d = Object(H.a)(e.id, i.id);
 					return r.a.createElement("span", {
 						className: G.a.awardPillContainer,
-						id: i,
+						id: a,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, r.a.createElement("button", {
-						className: Object(N.a)(t, G.a.awardPill, {
-							[G.a.userGiven]: a
+						className: Object(R.a)(t, G.a.awardPill, {
+							[G.a.userGiven]: c
 						}),
 						onClick: this.handleOnClick
 					}, r.a.createElement("span", {
 						className: G.a.imageContainer
 					}, r.a.createElement("img", {
 						alt: e.name,
-						className: Object(N.a)(G.a.awardIcon, {
-							[G.a.hidden]: c
+						className: Object(R.a)(G.a.awardIcon, {
+							[G.a.hidden]: l
 						}),
-						id: u,
+						id: d,
 						ref: this.imageRef,
-						src: l
-					}), c && r.a.createElement("img", {
+						src: o
+					}), l && r.a.createElement("img", {
 						alt: e.name,
 						className: G.a.animationIcon,
-						src: d
+						src: s
 					})), r.a.createElement("span", {
 						className: G.a.count
 					}, n.toLocaleString())), r.a.createElement(W, {
 						award: e,
 						onOpenReportFlow: this.handleOpenReportFlow,
 						onHideAward: this.handleHideAward,
-						postOrComment: s,
-						tooltipId: i
+						postOrComment: i,
+						tooltipId: a
 					}))
 				}
 			}
@@ -3357,7 +3358,7 @@
 					hk: "3xdEc5"
 				});
 				return r.a.createElement("div", {
-					className: Object(N.a)($.a.buttonContainer, {
+					className: Object(R.a)($.a.buttonContainer, {
 						[$.a.right]: i
 					}, t)
 				}, r.a.createElement("button", {
@@ -3386,7 +3387,7 @@
 					const t = Object(i.c)(),
 						n = Object(se.a)();
 					return r.a.createElement("button", {
-						className: Object(N.a)(ae.a.pill, e.className, {
+						className: Object(R.a)(ae.a.pill, e.className, {
 							[ae.a.awardsPlaqueStyle]: !!e.awardsPlaqueStyle
 						}),
 						onClick: () => {
@@ -3409,7 +3410,7 @@
 				me = 100;
 			class he extends r.a.Component {
 				constructor(e) {
-					super(e), this.plaqueRef = r.a.createRef(), this.handleResize = M()(() => {
+					super(e), this.plaqueRef = r.a.createRef(), this.handleResize = N()(() => {
 						this.handlePlaquePositionChange()
 					}, 300), this.handlePlaquePositionChange = () => {
 						const {
@@ -3440,7 +3441,7 @@
 							n = e.scrollLeft + (t - me);
 						this.scrollPlaqueTo(n)
 					}, this.handleTriggerAnimation = e => {
-						this.props.triggerOverlayAnimation(), R.a.read(() => {
+						this.props.triggerOverlayAnimation(), L.a.read(() => {
 							const t = this.plaqueRef.current;
 							if (!t) return;
 							const n = document.getElementById(e);
@@ -3506,57 +3507,60 @@
 						className: t,
 						hideAddAwardButton: n,
 						hideTopAwardedBadge: s,
-						isInEconLeaderboardsExperiment: o,
-						multiline: i,
-						post: a,
-						prefersReducedMotion: c,
-						onAddAward: l,
-						onHideAward: d,
-						onHideTooltip: u,
-						onOpenReportFlow: p,
-						onShowTooltip: m,
-						tooltipType: h
+						icons: o,
+						isInEconLeaderboardsExperiment: i,
+						multiline: a,
+						post: c,
+						prefersReducedMotion: l,
+						onAddAward: d,
+						onHideAward: u,
+						onHideTooltip: p,
+						onOpenReportFlow: m,
+						onShowTooltip: h,
+						tooltipType: b
 					} = this.props, {
-						canScrollLeft: b,
-						canScrollRight: f
-					} = this.state, g = e.length > 0, x = te(a.id, h);
+						canScrollLeft: f,
+						canScrollRight: g
+					} = this.state, x = e.length > 0, y = te(c.id, b);
 					return r.a.createElement("div", {
-						className: Object(N.a)(ue.a.awardBadges, t, {
-							[ue.a.noAwards]: !g,
-							[ue.a.multiline]: i
+						className: Object(R.a)(ue.a.awardBadges, t, {
+							[ue.a.noAwards]: !x,
+							[ue.a.multiline]: a
 						}),
 						ref: this.plaqueRef
-					}, b && r.a.createElement(ee, {
+					}, f && r.a.createElement(ee, {
 						direction: "left",
 						onClick: this.handleScrollLeft
-					}), (a.topAwardedType === L.a.Active || a.topAwardedType === L.a.Inactive) && !s && o && r.a.createElement(le, {
+					}), (c.topAwardedType === A.a.Active || c.topAwardedType === A.a.Inactive) && !s && i && r.a.createElement(le, {
 						awardsPlaqueStyle: !0,
-						post: a
+						post: c
 					}), e.map(e => {
 						const {
 							awardCountsById: t = {}
-						} = a, n = t[e.id];
+						} = c, n = t[e.id], s = o.icon32[e.id], i = o.icon128[e.id];
 						return r.a.createElement(Y, {
 							award: e,
 							className: ue.a.clickablePlaqueItem,
 							count: n,
+							giveAwardAnimationIconUrl: i,
 							key: e.id,
-							onAddAward: l,
-							onHideAward: d,
-							onOpenReportFlow: p,
-							onHideTooltip: u,
-							onShowTooltip: m,
-							post: a,
-							prefersReducedMotion: c,
-							tooltipId: "".concat(x, "-").concat(e.id),
+							onAddAward: d,
+							onHideAward: u,
+							onOpenReportFlow: m,
+							onHideTooltip: p,
+							onShowTooltip: h,
+							pillIconUrl: s,
+							post: c,
+							prefersReducedMotion: l,
+							tooltipId: "".concat(y, "-").concat(e.id),
 							triggerOverlayAnimation: this.handleTriggerAnimation
 						})
-					}), !n && r.a.createElement(F, {
+					}), !n && r.a.createElement(U, {
 						className: ue.a.clickablePlaqueItem,
-						onAddAward: l
-					}), !i && r.a.createElement("div", {
+						onAddAward: d
+					}), !a && r.a.createElement("div", {
 						className: ue.a.spacer
-					}), f && r.a.createElement(ee, {
+					}), g && r.a.createElement(ee, {
 						direction: "right",
 						onClick: this.handleScrollRight
 					}))
@@ -3609,50 +3613,49 @@
 						className: t,
 						count: n,
 						iconClassName: s,
-						onHideAward: o,
-						onHideTooltip: i,
-						onOpenReportFlow: a,
-						postOrComment: c,
-						prefersReducedMotion: l,
+						iconUrl: o,
+						onHideAward: i,
+						onHideTooltip: a,
+						onOpenReportFlow: c,
+						postOrComment: l,
 						tooltipId: d,
 						tooltipLocation: u
 					} = this.props;
 					if (n <= 0) return null;
-					const p = Object(H.a)(e, 32, l),
-						m = e.awardType === w.f.Moderator,
-						h = Object(U.a)(e.id, c.id),
-						b = "container" === u;
+					const p = e.awardType === w.f.Moderator,
+						m = Object(H.a)(e.id, l.id),
+						h = "container" === u;
 					return r.a.createElement("span", {
-						className: Object(N.a)(ge.a.awardItem, t),
-						id: b ? d : "",
+						className: Object(R.a)(ge.a.awardItem, t),
+						id: h ? d : "",
 						onMouseEnter: this.onShowTooltip,
-						onMouseLeave: i
+						onMouseLeave: a
 					}, r.a.createElement("span", {
-						id: b ? "" : d
+						id: h ? "" : d
 					}, r.a.createElement("img", {
 						alt: e.name,
-						className: Object(N.a)(ge.a.awardIcon, {
+						className: Object(R.a)(ge.a.awardIcon, {
 							[ge.a.animate]: this.state.animate
 						}, s),
-						id: h,
+						id: m,
 						ref: this.imageRef,
-						src: p
-					})), r.a.createElement("span", null, n > 1 && n, m && this.renderModAwardName()), r.a.createElement(W, {
+						src: o
+					})), r.a.createElement("span", null, n > 1 && n, p && this.renderModAwardName()), r.a.createElement(W, {
 						award: e,
-						onHideAward: () => o(e),
-						postOrComment: c,
+						onHideAward: () => i(e),
+						postOrComment: l,
 						tooltipId: d,
-						onOpenReportFlow: () => a(e)
+						onOpenReportFlow: () => c(e)
 					}))
 				}
 			}
 			var ve = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				Ee = n("./src/reddit/icons/fonts/helpers.tsx");
 			var Oe = e => r.a.createElement("i", {
-				className: Object(N.a)(Object(Ee.b)("addGild"), e.className)
+				className: Object(R.a)(Object(Ee.b)("addGild"), e.className)
 			});
 			var Ce = e => r.a.createElement("i", {
-					className: Object(N.a)(Object(Ee.b)("addGildDashed"), e.className)
+					className: Object(R.a)(Object(Ee.b)("addGildDashed"), e.className)
 				}),
 				je = n("./src/reddit/components/AwardBadges/ClassicAwardBadges/index.m.less"),
 				we = n.n(je);
@@ -3676,7 +3679,7 @@
 						onClick: t
 					} = this.props, n = this.state.isHovered ? Oe : Ce;
 					return r.a.createElement("button", {
-						className: Object(N.a)(e, we.a.badgeButton, we.a.visibilityEffect),
+						className: Object(R.a)(e, we.a.badgeButton, we.a.visibilityEffect),
 						onClick: t,
 						onBlur: this.handleMouseLeave,
 						onFocus: this.handleMouseEnter,
@@ -3694,14 +3697,14 @@
 						className: n,
 						hideBadgeButton: o,
 						hideTopAwardedBadge: i,
-						isInEconLeaderboardsExperiment: a,
-						onAddAward: c,
-						onHideAward: l,
-						onOpenReportFlow: d,
-						onHideTooltip: u,
-						onShowAllAwards: p,
-						onShowTooltip: m,
-						prefersReducedMotion: h,
+						icons: a,
+						isInEconLeaderboardsExperiment: c,
+						onAddAward: l,
+						onHideAward: d,
+						onOpenReportFlow: u,
+						onHideTooltip: p,
+						onShowAllAwards: m,
+						onShowTooltip: h,
 						showAllAwards: b,
 						tooltipType: f,
 						thing: g
@@ -3714,21 +3717,22 @@
 							hk: "1OnmAi"
 						});
 					return r.a.createElement("div", {
-						className: Object(N.a)(we.a.awardBadges, n)
-					}, Object(E.a)(g.id) && (g.topAwardedType === L.a.Active || g.topAwardedType === L.a.Inactive) && !i && a && r.a.createElement(le, {
+						className: Object(R.a)(we.a.awardBadges, n)
+					}, Object(E.a)(g.id) && (g.topAwardedType === A.a.Active || g.topAwardedType === A.a.Inactive) && !i && c && r.a.createElement(le, {
 						post: g
 					}), v.map(e => {
-						const t = g.awardCountsById ? g.awardCountsById[e.id] : 0;
+						const t = g.awardCountsById ? g.awardCountsById[e.id] : 0,
+							n = a.icon32[e.id];
 						return r.a.createElement(ye, {
 							award: e,
 							count: t,
+							iconUrl: n,
 							key: e.id,
-							onHideAward: l,
-							onOpenReportFlow: d,
-							onHideTooltip: u,
-							onShowTooltip: m,
+							onHideAward: d,
+							onOpenReportFlow: u,
+							onHideTooltip: p,
+							onShowTooltip: h,
 							postOrComment: g,
-							prefersReducedMotion: h,
 							tooltipId: "".concat(x, "-").concat(e.id),
 							tooltipLocation: "icon"
 						})
@@ -3736,14 +3740,14 @@
 						"data-click-id": "awards",
 						id: y,
 						className: we.a.showAllButton,
-						onClick: p,
-						onMouseEnter: () => m(y),
-						onMouseLeave: u
+						onClick: m,
+						onMouseEnter: () => h(y),
+						onMouseLeave: p
 					}, j), r.a.createElement(ve.c, {
 						tooltipId: y,
 						text: "View all Awards"
 					})), O && r.a.createElement(Se, {
-						onClick: c
+						onClick: l
 					}))
 				},
 				Ie = n("./src/reddit/actions/gold/reportAward.ts"),
@@ -3835,17 +3839,21 @@
 			};
 			const Le = Object(a.c)({
 					allAwards: e => e.awards.models,
+					icons: (e, t) => Object(I.b)(e, {
+						postOrComment: t.thing,
+						minSizes: [32, 128]
+					}),
 					currentUser: T.i,
 					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(_.a)(e),
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(k.c)(e, {
 							experimentEligibilitySelector: T.H,
-							experimentName: S.db
+							experimentName: S.cb
 						});
-						return !(!t || Object(S.Ac)(t))
+						return !(!t || Object(S.yc)(t))
 					},
 					isLoggedIn: T.H,
-					prefersReducedAnimations: I.c
+					prefersReducedAnimations: P.c
 				}),
 				Ae = Object(i.b)(Le, (e, t) => {
 					let {
@@ -3952,73 +3960,75 @@
 						currentUser: i,
 						hideCta: a,
 						hideTopAwardedBadge: c,
-						isConfirmModalOpen: l,
-						isInEconLeaderboardsExperiment: d,
-						isLoggedIn: u,
-						isPostDetail: p,
-						onHideTooltip: m,
-						onShowTooltip: h,
-						onToggleHideAwardModal: b,
-						prefersReducedAnimations: f,
-						thing: g,
-						triggerOverlayAnimation: x,
-						tooltipType: y
+						icons: l,
+						isConfirmModalOpen: d,
+						isInEconLeaderboardsExperiment: u,
+						isLoggedIn: p,
+						isPostDetail: m,
+						onHideTooltip: h,
+						onShowTooltip: b,
+						onToggleHideAwardModal: f,
+						prefersReducedAnimations: g,
+						thing: x,
+						triggerOverlayAnimation: y,
+						tooltipType: v
 					} = this.props, {
-						showAllAwards: v
-					} = this.state, O = f || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, j = Object(w.p)(Object.keys(g.awardCountsById || {}).map(t => e[t]).filter(Boolean)), _ = !!i && i.id === g.authorId;
+						showAllAwards: O
+					} = this.state, j = g || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, _ = Object(w.p)(Object.keys(x.awardCountsById || {}).map(t => e[t]).filter(Boolean)), S = !!i && i.id === x.authorId;
 					return r.a.createElement(r.a.Fragment, null, n ? r.a.createElement(be, {
-						awards: j,
+						awards: _,
 						awardsCountInView: t,
 						className: o,
-						hideAddAwardButton: a || !g.isGildable || _,
+						hideAddAwardButton: a || !x.isGildable || S,
 						hideTopAwardedBadge: c,
-						isInEconLeaderboardsExperiment: d,
-						multiline: !!p,
+						icons: l,
+						isInEconLeaderboardsExperiment: u,
+						multiline: !!m,
 						onAddAward: this.handleAddAward,
 						onHideAward: this.handleHideAward,
 						onOpenReportFlow: this.handleOpenReportFlow,
 						onHideTooltip: this.handleHideTooltip,
 						onShowTooltip: this.handleShowTooltip,
-						post: g,
-						prefersReducedMotion: O,
-						tooltipType: y,
-						triggerOverlayAnimation: x
+						post: x,
+						prefersReducedMotion: j,
+						tooltipType: v,
+						triggerOverlayAnimation: y
 					}) : r.a.createElement(Te, {
-						awards: j,
+						awards: _,
 						className: o,
-						hideBadgeButton: a || !u,
+						hideBadgeButton: a || !p,
 						hideTopAwardedBadge: c,
-						isInEconLeaderboardsExperiment: d,
+						icons: l,
+						isInEconLeaderboardsExperiment: u,
 						onAddAward: this.handleAddAward,
 						onHideAward: this.handleHideAward,
 						onOpenReportFlow: this.handleOpenReportFlow,
-						onHideTooltip: m,
+						onHideTooltip: h,
 						onShowAllAwards: this.handleShowAllAwards,
-						onShowTooltip: h,
-						prefersReducedMotion: O,
-						showAllAwards: v || !!p,
-						thing: g,
-						tooltipType: y
-					}), l && i && this.state.selectedAward && r.a.createElement(C.a, {
+						onShowTooltip: b,
+						showAllAwards: O || !!m,
+						thing: x,
+						tooltipType: v
+					}), d && i && this.state.selectedAward && r.a.createElement(C.a, {
 						actionText: s.fbt._("Hide", null, {
 							hk: "4FKnfB"
 						}),
-						modalText: _ ? Object(E.a)(g.id) ? s.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [s.fbt._param("awardName", this.state.selectedAward.name)], {
+						modalText: S ? Object(E.a)(x.id) ? s.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [s.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "4a7Cbu"
 						}) : s.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your comment?", [s.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "294BlY"
-						}) : Object(E.a)(g.id) ? s.fbt._("The award giver(s) and recipient will be notified that a moderator has hidden the {awardName} award. Are you sure you want to hide this award from the post?", [s.fbt._param("awardName", this.state.selectedAward.name)], {
+						}) : Object(E.a)(x.id) ? s.fbt._("The award giver(s) and recipient will be notified that a moderator has hidden the {awardName} award. Are you sure you want to hide this award from the post?", [s.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "3LQVs7"
 						}) : s.fbt._("The award giver(s) and recipient will be notified that a moderator has hidden the {awardName} award. Are you sure you want to hide this award from the comment?", [s.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "qlfga"
 						}),
 						onConfirm: this.handleHideAwardConfirmed,
 						onCancel: this.handleHideAwardCanceled,
-						toggleModal: b,
+						toggleModal: f,
 						withOverlay: !0
 					}), this.state.reportingAward && r.a.createElement(Re, {
 						award: this.state.reportingAward,
-						thing: g,
+						thing: x,
 						onClose: () => this.setState({
 							reportingAward: null
 						})
@@ -7911,7 +7921,7 @@
 					} = this.props;
 					if (!o) return;
 					let r = "";
-					return s && (r += s), e === A.xb.OCR ? r += "".concat(oe).concat(t) : n.title && (r += "".concat(oe).concat(n.title)), e === A.xb.ShortPostTitleOCR && (r += "".concat(oe).concat(t)), r.length > se ? Object(v.a)(r, se, m.cb) : r
+					return s && (r += s), e === A.vb.OCR ? r += "".concat(oe).concat(t) : n.title && (r += "".concat(oe).concat(n.title)), e === A.vb.ShortPostTitleOCR && (r += "".concat(oe).concat(t)), r.length > se ? Object(v.a)(r, se, m.cb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -33721,4 +33731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.b44a9590090631b4f3a7.js.map
+//# sourceMappingURL=PostCreation.6096bc574a8202a0458a.js.map

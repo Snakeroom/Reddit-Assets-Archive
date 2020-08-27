@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.9de1f4a9288609709cb5.js
-// Retrieved at 8/19/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.cf4eaa7be5dcbea0e675.js
+// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -68,8 +68,8 @@
 				g = n("./src/reddit/actions/toaster.ts"),
 				O = n("./src/lib/makeApiRequest/index.ts"),
 				f = n("./src/lib/omitHeaders/index.ts"),
-				v = n("./src/reddit/constants/headers.ts"),
-				k = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+				k = n("./src/reddit/constants/headers.ts"),
+				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var y = async (e, t, n, s, o, c) => {
 				const a = {
 					recipient: n,
@@ -78,20 +78,20 @@
 					message: o,
 					correlation_id: c
 				};
-				return Object(O.a)(Object(f.a)(e, [v.a]), {
+				return Object(O.a)(Object(f.a)(e, [k.a]), {
 					method: b.db.POST,
 					endpoint: "".concat(e.apiUrl, "/api/v2/gold/give_premium"),
 					data: a
 				}).then(e => e.ok ? Object.assign({}, e) : e.error && e.error.type ? e : Object.assign(Object.assign({}, e), {
-					error: Object(k.a)(e)
+					error: Object(v.a)(e)
 				}))
-			}, j = n("./src/reddit/helpers/correlationIdTracker.ts"), C = n("./src/reddit/models/Toast/index.ts"), w = n("./src/reddit/selectors/premium.ts"), E = n("./src/reddit/actions/gold/constants.ts");
-			Object(x.a)(E.x), Object(x.a)(E.z), Object(x.a)(E.y), Object(x.a)(E.B);
-			const _ = Object(x.a)(E.w),
-				I = Object(x.a)(E.v),
+			}, j = n("./src/reddit/helpers/correlationIdTracker.ts"), C = n("./src/reddit/models/Toast/index.ts"), E = n("./src/reddit/selectors/premium.ts"), w = n("./src/reddit/actions/gold/constants.ts");
+			Object(x.a)(w.A), Object(x.a)(w.C), Object(x.a)(w.B), Object(x.a)(w.E);
+			const _ = Object(x.a)(w.z),
+				I = Object(x.a)(w.y),
 				N = e => async (t, n) => {
 					await t(I(e));
-					const o = Object(w.a)(n());
+					const o = Object(E.a)(n());
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
@@ -113,9 +113,9 @@
 							text: n
 						}))
 					}
-				}, M = Object(x.a)(E.A), S = e => async (t, n) => {
+				}, M = Object(x.a)(w.D), S = e => async (t, n) => {
 					const o = n(),
-						c = Object(w.d)(o);
+						c = Object(E.d)(o);
 					t(M(e));
 					const a = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", "u/".concat(c))], {
 						hk: "3cBrLk"
@@ -149,8 +149,8 @@
 				H = Object(i.c)({
 					coinBalance: F.d,
 					isEmployee: F.E,
-					isPending: w.b,
-					recipientName: w.d
+					isPending: E.b,
+					recipientName: E.d
 				}),
 				U = Object(a.b)(H, e => ({
 					closeModal: () => e(Object(D.b)()),
@@ -796,4 +796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GivePremiumModal.9de1f4a9288609709cb5.js.map
+//# sourceMappingURL=GivePremiumModal.cf4eaa7be5dcbea0e675.js.map

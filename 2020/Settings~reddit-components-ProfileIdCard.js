@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.4132f529330f03cb2647.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.4936fd21ad1037bfd6c9.js
+// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~reddit-components-ProfileIdCard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -185,9 +185,9 @@
 				v = a("./src/lib/humanizeDate/index.ts"),
 				C = a("./src/lib/prettyPrintNumber/index.ts"),
 				E = a("./src/lib/timeAgo/index.ts"),
-				y = a("./src/reddit/contexts/InsideOverlay.tsx"),
-				P = a("./src/reddit/icons/svgs/Cake/index.tsx"),
-				w = a("./src/reddit/icons/svgs/Karma/index.tsx"),
+				w = a("./src/reddit/contexts/InsideOverlay.tsx"),
+				y = a("./src/reddit/icons/svgs/Cake/index.tsx"),
+				P = a("./src/reddit/icons/svgs/Karma/index.tsx"),
 				O = a("./src/reddit/icons/svgs/User/index.tsx"),
 				N = a("./src/reddit/selectors/experiments/econAwardKarma.ts"),
 				j = a("./src/reddit/selectors/profile.ts"),
@@ -209,8 +209,8 @@
 			const T = c.a.div("Container", U.a),
 				D = c.a.div("Body", U.a),
 				W = c.a.h5("Title", U.a),
-				M = c.a.span("Label", U.a);
-			class F extends o.a.Component {
+				F = c.a.span("Label", U.a);
+			class M extends o.a.Component {
 				constructor() {
 					super(...arguments), this.toggleTooltip = () => {
 						const {
@@ -232,7 +232,7 @@
 						onMouseEnter: this.toggleTooltip,
 						onMouseLeave: this.toggleTooltip
 					} : {};
-					return o.a.createElement(T, null, o.a.createElement(W, null, a), o.a.createElement(D, null, e, o.a.createElement(M, K({
+					return o.a.createElement(T, null, o.a.createElement(W, null, a), o.a.createElement(D, null, e, o.a.createElement(F, K({
 						key: "label"
 					}, s), t)), r && n && o.a.createElement(L.c, {
 						caretOnTop: !0,
@@ -245,7 +245,7 @@
 					toggleTooltip: t => e(Object(S.h)({
 						tooltipId: t
 					}))
-				}))(Object(y.b)(F)),
+				}))(Object(w.b)(M)),
 				z = a("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
 				A = a.n(z);
 			const H = Object(_.a)(N.a, j.j, (e, t) => {
@@ -268,7 +268,7 @@
 			function V(e, t) {
 				return "profile--id-card--highlight-tooltip-".concat(e ? "-overlay" : "", "-").concat(t)
 			}
-			var Z = Object(h.b)(H)(Object(y.b)(e => {
+			var Z = Object(h.b)(H)(Object(w.b)(e => {
 					const {
 						awardeeKarma: t,
 						awardKarmaExperimentEnabled: a,
@@ -301,7 +301,7 @@
 						hk: "2F1chz"
 					}), I = a ? "".concat(g, "\n").concat(f, "\n").concat(b, "\n").concat(x) : "".concat(g, "\n").concat(f);
 					return o.a.createElement(G, null, o.a.createElement(R, {
-						icon: o.a.createElement(w.a, {
+						icon: o.a.createElement(P.a, {
 							className: A.a.icon,
 							key: "karma"
 						}),
@@ -312,7 +312,7 @@
 						tooltipId: u,
 						tooltip: I
 					}), o.a.createElement(R, {
-						icon: o.a.createElement(P.a, {
+						icon: o.a.createElement(y.a, {
 							className: A.a.icon,
 							key: "cakeDay"
 						}),
@@ -385,13 +385,13 @@
 			class ge extends o.a.PureComponent {
 				renderAwardedLastMonth() {
 					const {
-						prefersReducedMotion: e,
-						recentAwardings: t,
+						recentAwardings: e,
+						topAwardIcon: t,
 						username: a
 					} = this.props;
-					return t ? o.a.createElement(I.a, {
-						prefersReducedMotion: e,
-						recentAwardings: t,
+					return e ? o.a.createElement(I.a, {
+						topAwardIcon: t,
+						recentAwardings: e,
 						username: a
 					}) : null
 				}
@@ -416,8 +416,8 @@
 						isDeletingBanner: v,
 						onDeleteIcon: C,
 						onDeleteBanner: E,
-						editMode: y
-					} = this.props, P = o.a.createElement(q.a, {
+						editMode: w
+					} = this.props, y = o.a.createElement(q.a, {
 						iconUrl: g,
 						isNSFW: l,
 						isProfileIdCard: !0,
@@ -429,17 +429,17 @@
 						bannerUrl: t,
 						isNSFW: l,
 						userName: I
-					}), y && t && (v ? o.a.createElement(pe, null) : o.a.createElement(le, {
+					}), w && t && (v ? o.a.createElement(pe, null) : o.a.createElement(le, {
 						onClick: E
 					}))), o.a.createElement("div", {
 						className: J.a.SnooIconWrapper
-					}, m || !g || l ? P : o.a.createElement(u.b, {
+					}, m || !g || l ? y : o.a.createElement(u.b, {
 						isSponsored: !1,
 						href: g,
 						source: null
-					}, P), y && !h && (_ ? o.a.createElement(pe, null) : o.a.createElement(le, {
+					}, y), w && !h && (_ ? o.a.createElement(pe, null) : o.a.createElement(le, {
 						onClick: C
-					}))), !y && m && o.a.createElement(de, {
+					}))), !w && m && o.a.createElement(de, {
 						to: "/settings/profile"
 					}, o.a.createElement(me, null)), b && o.a.createElement(re, null, b), o.a.createElement(ie, {
 						url: x
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings~reddit-components-ProfileIdCard.4132f529330f03cb2647.js.map
+//# sourceMappingURL=Settings~reddit-components-ProfileIdCard.4936fd21ad1037bfd6c9.js.map

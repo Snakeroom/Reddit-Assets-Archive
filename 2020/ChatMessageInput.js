@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.78266beed2a7813c70f9.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.f087ec17b65752dedba0.js
+// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -463,41 +463,46 @@
 				L = s("./src/reddit/selectors/posts.ts"),
 				T = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				F = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/makeCommentsPageKey/index.ts")),
-				R = s("./src/reddit/helpers/awards/getIconForSize.ts"),
-				D = s("./src/reddit/selectors/communityAwards.ts"),
+				R = s("./src/reddit/selectors/communityAwards.ts"),
+				D = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				M = s("./src/reddit/icons/fonts/Gift/index.tsx"),
 				P = s("./src/reddit/components/CommentsChat/Comment/AwardCountSpectacle/AwardCountAnimation/index.m.less"),
 				B = s.n(P);
 			class U extends c.Component {
 				render() {
 					const {
-						award: e,
-						className: t,
-						count: s,
+						className: e,
+						count: t,
+						iconUrl: s,
 						isAnimated: n
-					} = this.props, a = e ? Object(R.a)(e, 64) : void 0;
+					} = this.props;
 					return d.a.createElement("div", {
-						className: Object(m.a)(B.a.container, t, {
+						className: Object(m.a)(B.a.container, e, {
 							[B.a.isAnimated]: n
 						})
 					}, d.a.createElement(M.a, {
 						className: B.a.gildIcon
-					}), n && a && d.a.createElement("div", {
+					}), n && s && d.a.createElement("div", {
 						className: B.a.awardingIcon,
 						style: {
-							backgroundImage: 'url("'.concat(a, '")')
+							backgroundImage: 'url("'.concat(s, '")')
 						}
-					}), s ? d.a.createElement("div", {
+					}), t ? d.a.createElement("div", {
 						className: B.a.count
-					}, s) : null)
+					}, t) : null)
 				}
 			}
 			var V = Object(l.b)(() => Object(u.c)({
-				award: (e, t) => {
+				iconUrl: (e, t) => {
 					let {
 						awardId: s
 					} = t;
-					return s ? Object(D.a)(e, s) : void 0
+					if (!s) return;
+					const n = Object(R.a)(e, s);
+					return Object(D.a)(e, {
+						award: n,
+						minSize: 64
+					})
 				}
 			}))(U);
 			const K = Object(l.b)(() => Object(u.a)(e => e, (e, t) => {
@@ -1669,4 +1674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.78266beed2a7813c70f9.js.map
+//# sourceMappingURL=ChatMessageInput.f087ec17b65752dedba0.js.map

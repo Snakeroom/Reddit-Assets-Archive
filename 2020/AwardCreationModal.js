@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.0be9ee64021d7284e571.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.e99d41068f91fe32421b.js
+// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -331,7 +331,7 @@
 						error: new Error(le)
 					}
 				}, me = async (e, t) => {
-					const a = await Object(ae.r)(e, t.file);
+					const a = await Object(ae.p)(e, t.file);
 					if (!a.ok) {
 						const e = new Error("Error uploading award imagine to S3 temp bucket: ".concat(a.error && a.error.type));
 						return ee.c.captureException(e), {
@@ -1424,8 +1424,8 @@
 						subredditId: a
 					} = t;
 					return {
-						onCreateCommunityAward: (t, n, s, o, r, i, l) => e(Object(d.c)(a, t, n, s, o, r, i, l)),
-						onCreateModAward: (t, n, s, o, r, i, l) => e(Object(d.e)(a, t, n, s, o, r, i, l)),
+						onCreateCommunityAward: (t, n, s, o, r, i, l) => e(Object(d.d)(a, t, n, s, o, r, i, l)),
+						onCreateModAward: (t, n, s, o, r, i, l) => e(Object(d.f)(a, t, n, s, o, r, i, l)),
 						onCreateGlobalAward: t => {
 							let {
 								awardName: a,
@@ -1447,7 +1447,7 @@
 								startDate: w,
 								subredditCoinReward: E
 							} = t;
-							return e(Object(d.d)({
+							return e(Object(d.e)({
 								awardSubType: n,
 								coinPrice: s,
 								coinReward: o,
@@ -1468,8 +1468,8 @@
 								subredditCoinReward: E
 							}))
 						},
-						onCreateAwardFailed: t => e(Object(d.a)(t)),
-						onCreateAwardSuccess: t => e(Object(d.b)({
+						onCreateAwardFailed: t => e(Object(d.b)(t)),
+						onCreateAwardSuccess: t => e(Object(d.c)({
 							award: t,
 							subredditId: a
 						}))
@@ -2042,4 +2042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AwardCreationModal.0be9ee64021d7284e571.js.map
+//# sourceMappingURL=AwardCreationModal.e99d41068f91fe32421b.js.map

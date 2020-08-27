@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2ca9340dc0c7db84c393.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.7baea9f6c3ae3bb68f76.js
+// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -316,7 +316,7 @@
 					} catch (o) {
 						u.c.captureException(o)
 					}
-				}, D = Object(m.a)(b.L), L = Object(m.a)(b.M), B = Object(m.a)(b.N), U = e => async (t, n) => {
+				}, D = Object(m.a)(b.O), L = Object(m.a)(b.P), B = Object(m.a)(b.Q), U = e => async (t, n) => {
 					await t(D(e)), t(Object(l.e)({
 						kind: p.b.Error,
 						duration: l.a,
@@ -354,7 +354,7 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, W = Object(m.a)(b.P)
+				}, W = Object(m.a)(b.S)
 		},
 		"./src/reddit/actions/governance/communityDetails.ts": function(e, t, n) {
 			"use strict";
@@ -5813,7 +5813,6 @@
 					isEmployee: e.isEmployee,
 					isGold: e.isGold,
 					over18: t.over18,
-					prefersReducedMotion: n.reduceAnimationsFromAwards,
 					profileBanner: r,
 					profileIcon: e.accountIcon,
 					publicDescription: t.publicDescription,
@@ -5893,39 +5892,37 @@
 						isNSFWModalOpen: i,
 						isResponsiveSettingsEnabled: c,
 						over18: l,
-						prefersReducedMotion: d,
-						profileBanner: u,
-						profileIcon: p,
-						showActiveCommunities: b,
-						toggleNSFWModal: h
+						profileBanner: d,
+						profileIcon: u,
+						showActiveCommunities: p,
+						toggleNSFWModal: b
 					} = this.props, {
-						isDeletingBanner: g,
-						isDeletingIcon: f,
-						profileBannerUploading: v,
-						profileIconUploading: y,
-						publicDescription: _,
-						title: k
-					} = this.state, x = Object(m.a)({
+						isDeletingBanner: h,
+						isDeletingIcon: g,
+						profileBannerUploading: f,
+						profileIconUploading: v,
+						publicDescription: y,
+						title: _
+					} = this.state, k = Object(m.a)({
 						[ha.a["m-responsive"]]: c
-					}), E = !!p && !Object(la.b)(p);
+					}), x = !!u && !Object(la.b)(u);
 					return o.a.createElement(ie.a, {
 						sidebar: o.a.createElement(Ta, {
-							bannerBackgroundImage: u,
+							bannerBackgroundImage: d,
 							editMode: !0,
 							isEmployee: a,
-							isDefaultIcon: !p || p.indexOf("avatar_default") > -1,
-							isDeletingBanner: g,
-							isDeletingIcon: f,
+							isDefaultIcon: !u || u.indexOf("avatar_default") > -1,
+							isDeletingBanner: h,
+							isDeletingIcon: g,
 							isGold: r,
 							isNSFW: l,
 							isOverlay: !1,
 							onDeleteBanner: this.onDeleteBanner,
 							onDeleteIcon: this.onDeleteIcon,
-							prefersReducedMotion: d,
-							profileIcon: p,
-							publicDescription: _,
+							profileIcon: u,
+							publicDescription: y,
 							recentAwardings: e,
-							title: k,
+							title: _,
 							url: s,
 							username: n
 						})
@@ -5941,7 +5938,7 @@
 						}),
 						onChange: this.onTitleChange,
 						onBlur: () => {
-							k !== this.props.title && this.updateProfile(k, "title")
+							_ !== this.props.title && this.updateProfile(_, "title")
 						},
 						placeholder: ga._("Display name (optional)", null, {
 							hk: "2BOHwt"
@@ -5950,14 +5947,14 @@
 						subtext: ga._("Set a display name. This does not change your username.", null, {
 							hk: "3xfh9M"
 						}),
-						value: k
+						value: _
 					}), o.a.createElement(Q.g, {
 						label: ga._("About (optional)", null, {
 							hk: "1W7xvB"
 						}),
 						onChange: this.onDescriptionChange,
 						onBlur: () => {
-							_ !== this.props.publicDescription && this.updateProfile(_, "publicDescription")
+							y !== this.props.publicDescription && this.updateProfile(y, "publicDescription")
 						},
 						placeholder: ga._("About (optional)", null, {
 							hk: "3wFdhi"
@@ -5966,7 +5963,7 @@
 						subtext: ga._("A brief description of yourself shown on your profile.", null, {
 							hk: "3gGUDy"
 						}),
-						value: _
+						value: y
 					}), o.a.createElement(Y.a, null, ga._("Images", null, {
 						hk: "38DOkf"
 					})), o.a.createElement(Q.k, {
@@ -5978,32 +5975,32 @@
 						}),
 						direction: "column"
 					}, o.a.createElement(_a, {
-						className: Object(m.a)(x)
-					}, E ? o.a.createElement(Ca, {
-						className: x,
-						iconUrl: p,
+						className: Object(m.a)(k)
+					}, x ? o.a.createElement(Ca, {
+						className: k,
+						iconUrl: u,
 						isNSFW: !1,
 						userName: n
 					}) : o.a.createElement(ka, {
-						className: x,
+						className: k,
 						controlName: "profileIcon",
 						icon: o.a.createElement(Oa, null),
-						isUploading: y,
+						isUploading: v,
 						label: o.a.createElement(Sa, null, ga._("Drag and Drop or Upload {imageType} Image", [ga._param("imageType", o.a.createElement(ja, null, "avatar"))], {
 							hk: "27PRKI"
 						})),
 						labelClassName: ha.a.Label,
 						onChange: this.onIconChange
-					}), u ? o.a.createElement(Ea, {
-						bannerUrl: u,
-						className: x,
+					}), d ? o.a.createElement(Ea, {
+						bannerUrl: d,
+						className: k,
 						isNSFW: !1,
 						userName: n
 					}) : o.a.createElement(xa, {
-						className: x,
+						className: k,
 						controlName: "profileBanner",
 						icon: o.a.createElement(Oa, null),
-						isUploading: v,
+						isUploading: f,
 						label: o.a.createElement(Sa, null, ga._("Drag and Drop or Upload {imageType} Image", [ga._param("imageType", o.a.createElement(ja, null, "Banner"))], {
 							hk: "1DrvdL"
 						})),
@@ -6042,7 +6039,7 @@
 						subtext: ga._("Show which communities I am active in on my profile.", null, {
 							hk: "3jFDfF"
 						}),
-						on: b,
+						on: p,
 						onClick: this.onShowActiveCommunitiesChange
 					}), o.a.createElement(Y.a, null, ga._("Profile moderation", null, {
 						hk: "3vDS8h"
@@ -6066,14 +6063,14 @@
 							hk: "3wiM7r"
 						}),
 						onAccept: this.switchSFW,
-						onCancel: h,
-						onOverlayClick: h,
+						onCancel: b,
+						onOverlayClick: b,
 						overlayClassName: Object(m.a)({
 							[ha.a.ResponsiveOverlay]: c
 						}),
 						withOverlay: !0
 					}), o.a.createElement(Na, {
-						src: u
+						src: d
 					}))
 				}
 			}
@@ -6773,4 +6770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings.2ca9340dc0c7db84c393.js.map
+//# sourceMappingURL=Settings.7baea9f6c3ae3bb68f76.js.map
