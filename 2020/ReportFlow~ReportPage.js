@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow~ReportPage.2c87866a4aeb88efac6f.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow~ReportPage.dbdb462bff56891b9473.js
+// Retrieved at 8/27/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow~ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -41,9 +41,9 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/actions/tooltip.ts"),
 				i = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				l = n("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				c = n("./src/reddit/components/AccordionSection/index.m.less"),
-				d = n.n(c),
+				c = n("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				l = n("./src/reddit/components/AccordionSection/index.m.less"),
+				d = n.n(l),
 				m = n("./src/lib/classNames/index.ts"),
 				u = n("./src/lib/lessComponent.tsx");
 
@@ -66,7 +66,7 @@
 				return n
 			};
 			const f = u.a.div("Section", d.a),
-				x = u.a.wrapped(l.a, "ChevronUp", d.a),
+				x = u.a.wrapped(c.a, "ChevronUp", d.a),
 				_ = u.a.wrapped(i.a, "ChevronDown", d.a),
 				b = u.a.wrapped(e => {
 					var {
@@ -128,33 +128,33 @@
 				o = n.n(a),
 				s = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/components/ContentPolicy/index.m.less"),
-				l = n.n(i);
+				c = n.n(i);
 			const {
-				fbt: c
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), d = s.a.div("Content", l.a), m = s.a.a("Link", l.a);
+				fbt: l
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), d = s.a.div("Content", c.a), m = s.a.a("Link", c.a);
 			class u extends o.a.Component {
 				render() {
 					const {
 						props: e
 					} = this;
-					return o.a.createElement(d, null, e.subredditOrProfile && !e.isLiveStreaming ? c._("Read the {=Reddit Content Policy}{=and [communityName] 's rules}", [c._param("=Reddit Content Policy", o.a.createElement(m, {
+					return o.a.createElement(d, null, e.subredditOrProfile && !e.isLiveStreaming ? l._("Read the {=Reddit Content Policy}{=and [communityName] 's rules}", [l._param("=Reddit Content Policy", o.a.createElement(m, {
 						target: "_blank",
 						href: "".concat(r.a.redditUrl, "/help/contentpolicy")
-					}, c._("Reddit Content Policy", null, {
+					}, l._("Reddit Content Policy", null, {
 						hk: "2ExUXr"
-					}))), c._param("=and [communityName] 's rules", o.a.createElement("span", null, c._("and {=[communityName] 's rules}", [c._param("=[communityName] 's rules", o.a.createElement(m, {
+					}))), l._param("=and [communityName] 's rules", o.a.createElement("span", null, l._("and {=[communityName] 's rules}", [l._param("=[communityName] 's rules", o.a.createElement(m, {
 						target: "_blank",
 						href: "".concat(e.subredditOrProfile.url, "about/rules")
-					}, c._("{communityName} 's rules", [c._param("communityName", e.subredditOrProfile.displayText)], {
+					}, l._("{communityName} 's rules", [l._param("communityName", e.subredditOrProfile.displayText)], {
 						hk: "JAsFF"
 					})))], {
 						hk: "Vm81O"
 					})))], {
 						hk: "Mm0Ks"
-					}) : c._("Read the {=Reddit Content Policy}", [c._param("=Reddit Content Policy", o.a.createElement(m, {
+					}) : l._("Read the {=Reddit Content Policy}", [l._param("=Reddit Content Policy", o.a.createElement(m, {
 						target: "_blank",
 						href: "".concat(r.a.redditUrl, "/help/contentpolicy")
-					}, c._("Reddit Content Policy", null, {
+					}, l._("Reddit Content Policy", null, {
 						hk: "1a3o6N"
 					})))], {
 						hk: "7x0QT"
@@ -176,90 +176,23 @@
 				a = n.n(r),
 				o = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.tsx"),
-				i = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.constructor.js"), n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./src/reddit/helpers/parseUrl.ts"));
-			const l = ["old", "new", "en", "www", "np", "m"],
-				c = ["reddit.com", "reddit.local"].concat("").concat(l.map((function(e) {
-					return e + ".reddit.com"
-				}))).concat(l.map((function(e) {
-					return e + ".reddit.local"
-				}))),
-				d = ["mod.reddit.com"],
-				m = {
-					subreddit: {
-						pathnameComponents: ["subredditName"],
-						pathname: /^\/r\/(\w+)\/?$/
-					},
-					user: {
-						pathnameComponents: ["username"],
-						pathname: /^\/(?:user|u)\/(\w+)\/?$/
-					},
-					postShortlink: {
-						hostnames: c.concat("redd.it"),
-						pathnameComponents: ["postID36"],
-						pathname: /^\/([A-Za-z0-9]+)\/?$/
-					},
-					postDetail: {
-						pathnameComponents: ["postID36"],
-						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)(?:\/\w+)?\/?$/
-					},
-					comment: {
-						pathnameComponents: ["postID36", "commentID36"],
-						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
-					},
-					modmailConversation: {
-						hostnames: d,
-						pathnameComponents: ["modmailConversationId"],
-						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
-					},
-					modmailMessage: {
-						hostnames: d,
-						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
-						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
-					}
-				};
-
-			function u(e) {
-				return (e.match(new RegExp(i.b, "g")) || []).map((function(e) {
-					let t;
-					return Object.keys(m).some((function(n) {
-						return t = function(e, t) {
-							const n = m[e];
-							if (!m) throw new Error("Could not find reddit URL spec: " + e);
-							const r = Object(i.a)(t);
-							if (!r) return void console.error("Could not parse url", t);
-							if (-1 === (n.hostnames || c).indexOf(r.hostname)) return;
-							const a = r.pathname.match(n.pathname);
-							if (a) {
-								return {
-									url: t,
-									routeName: e,
-									components: n.pathnameComponents.reduce((function(e, t, n) {
-										return e[t] = a[n + 1], e
-									}), {})
-								}
-							}
-						}(n, e)
-					})), t
-				})).filter((function(e) {
-					return e
-				}))
-			}
-			var p = n("./src/reddit/models/Rule/index.ts"),
-				h = n("./src/reddit/components/ReportPage/index.m.less"),
-				f = n.n(h),
-				x = n("./src/reddit/components/ReportPage/CustomTextInput/index.m.less"),
-				_ = n.n(x);
-			const b = o.a.header("InputDescription", f.a);
-			class C extends a.a.Component {
+				i = n("./src/reddit/helpers/matchRedditUrls/index.ts"),
+				c = n("./src/reddit/models/Rule/index.ts"),
+				l = n("./src/reddit/components/ReportPage/index.m.less"),
+				d = n.n(l),
+				m = n("./src/reddit/components/ReportPage/CustomTextInput/index.m.less"),
+				u = n.n(m);
+			const p = o.a.header("InputDescription", d.a);
+			class h extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						customText: "",
-						maxLength: p.d,
+						maxLength: c.d,
 						displayLength: 0
 					}, this.onCustomTextChange = e => {
 						this.setState(Object.assign({
 							customText: e.target.value
-						}, g(e.target.value))), this.props.onCustomTextChange(e.target.value)
+						}, f(e.target.value))), this.props.onCustomTextChange(e.target.value)
 					}
 				}
 				render() {
@@ -270,37 +203,37 @@
 					return a.a.createElement("div", {
 						className: e.className
 					}, a.a.createElement("fieldset", {
-						className: f.a.fieldset
-					}, e.description && a.a.createElement(b, null, e.description), a.a.createElement("div", {
-						className: f.a.field
+						className: d.a.fieldset
+					}, e.description && a.a.createElement(p, null, e.description), a.a.createElement("div", {
+						className: d.a.field
 					}, a.a.createElement(s.c, {
 						backgroundColorState: s.a.WhiteFields,
-						className: _.a.customTextInput,
+						className: u.a.customTextInput,
 						label: e.title,
 						maxLength: t.maxLength,
 						onChange: this.onCustomTextChange,
 						value: t.customText
 					}), a.a.createElement("div", {
-						className: _.a.textAreaCounter
-					}, "".concat(t.displayLength, "/").concat(p.a)))))
+						className: u.a.textAreaCounter
+					}, "".concat(t.displayLength, "/").concat(c.a)))))
 				}
 			}
-			const g = e => {
+			const f = e => {
 				const t = {
 					displayLength: 0,
-					maxLength: p.d
+					maxLength: c.d
 				};
 				if (!e) return t;
-				const n = p.a,
+				const n = c.a,
 					r = e.length,
-					a = u(e),
+					a = Object(i.a)(e),
 					o = a.reduce((e, t) => t ? e + t.url.length : e, 0);
 				return {
-					displayLength: Math.min(p.a, r - o + 15 * a.length),
-					maxLength: Math.min(p.d, n + o - 15 * a.length)
+					displayLength: Math.min(c.a, r - o + 15 * a.length),
+					maxLength: Math.min(c.d, n + o - 15 * a.length)
 				}
 			};
-			t.a = o.a.wrapped(C, "Component", _.a)
+			t.a = o.a.wrapped(h, "Component", u.a)
 		},
 		"./src/reddit/components/ReportPage/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -342,18 +275,18 @@
 				o = n("./src/lib/classNames/index.ts"),
 				s = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				l = n("./src/reddit/components/StructuredStyles/FormElementLabel/index.m.less"),
-				c = n.n(l);
-			const d = s.a.wrapped(i.e, "FormElementTitle", c.a),
-				m = s.a.wrapped(i.b, "FormElementDescription", c.a);
+				c = n("./src/reddit/components/StructuredStyles/FormElementLabel/index.m.less"),
+				l = n.n(c);
+			const d = s.a.wrapped(i.e, "FormElementTitle", l.a),
+				m = s.a.wrapped(i.b, "FormElementDescription", l.a);
 			t.a = e => a.a.createElement("div", null, a.a.createElement(d, {
 				className: Object(o.a)({
-					[c.a.fake]: e.fake,
-					[c.a.altColor]: e.altColor
+					[l.a.fake]: e.fake,
+					[l.a.altColor]: e.altColor
 				})
 			}, e.label), e.description && a.a.createElement(m, {
 				className: Object(o.a)({
-					[c.a.fake]: e.fake
+					[l.a.fake]: e.fake
 				})
 			}, e.description))
 		},
@@ -393,9 +326,9 @@
 				o = n("./src/lib/classNames/index.ts"),
 				s = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/controls/Input/index.tsx"),
-				l = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				c = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
-				d = n.n(c);
+				c = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				l = n("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
+				d = n.n(l);
 
 			function m() {
 				return (m = Object.assign || function(e) {
@@ -446,22 +379,22 @@
 						[d.a.mValid]: e.state === x.Valid,
 						[d.a.mInvalid]: e.state === x.Invalid
 					})
-				}, e.state === x.Valid && a.a.createElement(l.a, null), e.state === x.Invalid && a.a.createElement(f, null, "!")))),
+				}, e.state === x.Valid && a.a.createElement(c.a, null), e.state === x.Invalid && a.a.createElement(f, null, "!")))),
 				C = e => {
 					const {
 						backgroundColorState: t,
 						className: n,
 						inputRef: r,
 						isRequired: s,
-						label: l,
-						onKeyDown: c,
+						label: c,
+						onKeyDown: l,
 						state: p
 					} = e, h = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
 					return a.a.createElement(b, {
 						backgroundColorState: t,
 						className: n,
 						isRequired: s,
-						label: l,
+						label: c,
 						state: p
 					}, a.a.createElement(i.a, m({}, h, {
 						className: Object(o.a)(d.a.input, d.a.control, {
@@ -469,7 +402,7 @@
 						}),
 						"data-empty": !e.value,
 						innerRef: r,
-						onKeyDown: c
+						onKeyDown: l
 					})))
 				},
 				g = e => {
@@ -479,15 +412,15 @@
 						inputRef: r,
 						isRequired: s,
 						label: i,
-						onKeyDown: l,
-						state: c
+						onKeyDown: c,
+						state: l
 					} = e, p = u(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
 					return a.a.createElement(b, {
 						backgroundColorState: t,
 						className: n,
 						isRequired: s,
 						label: i,
-						state: c,
+						state: l,
 						isTextarea: !0
 					}, a.a.createElement(h, m({}, p, {
 						className: Object(o.a)({
@@ -495,7 +428,7 @@
 						}),
 						"data-empty": !e.value,
 						innerRef: r,
-						onKeyDown: l
+						onKeyDown: c
 					})))
 				}
 		},
@@ -514,12 +447,12 @@
 				o = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/components/StructuredStyles/FormElementLabel/index.tsx"),
 				i = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				l = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				c = n("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				c = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				l = n("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
 				d = n("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.m.less"),
 				m = n.n(d);
-			const u = o.a.wrapped(l.a, "RadioOption", m.a),
-				p = o.a.wrapped(c.a, "ExpandRight", m.a);
+			const u = o.a.wrapped(c.a, "RadioOption", m.a),
+				p = o.a.wrapped(l.a, "ExpandRight", m.a);
 			t.a = e => a.a.createElement(u, {
 				value: e.value,
 				selected: e.selected,
@@ -576,9 +509,9 @@
 			})), n.d(t, "p", (function() {
 				return i
 			})), n.d(t, "n", (function() {
-				return l
-			})), n.d(t, "o", (function() {
 				return c
+			})), n.d(t, "o", (function() {
+				return l
 			})), n.d(t, "m", (function() {
 				return d
 			})), n.d(t, "l", (function() {
@@ -609,8 +542,8 @@
 				o = n.n(a);
 			const s = r.a.section("FormPage", o.a),
 				i = r.a.h1("HomePageTitle", o.a),
-				l = r.a.button("HomePageBreadcrumb", o.a),
-				c = r.a.div("HomePageGroup", o.a),
+				c = r.a.button("HomePageBreadcrumb", o.a),
+				l = r.a.div("HomePageGroup", o.a),
 				d = r.a.h1("FormPageTitle", o.a),
 				m = r.a.div("FormPageSection", o.a),
 				u = r.a.div("FormGroup", o.a),
@@ -673,12 +606,12 @@
 				o = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
 				s = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				i = n("./src/reddit/icons/svgs/RadioOff/index.tsx"),
-				l = n("./src/reddit/icons/svgs/RadioOn/index.tsx"),
-				c = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less"),
-				d = n.n(c);
+				c = n("./src/reddit/icons/svgs/RadioOn/index.tsx"),
+				l = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less"),
+				d = n.n(l);
 			const m = r.a.wrapped(a.a, "ModalInput", d.a),
 				u = r.a.input("Input", d.a),
-				p = r.a.wrapped(l.a, "RadioOn", d.a),
+				p = r.a.wrapped(c.a, "RadioOn", d.a),
 				h = r.a.wrapped(i.a, "RadioOff", d.a),
 				f = r.a.wrapped(o.a, "Checkbox", d.a),
 				x = r.a.wrapped(s.a, "CheckboxSelected", d.a),
@@ -692,6 +625,81 @@
 				a = n("./src/reddit/controls/Input/index.m.less"),
 				o = n.n(a);
 			t.a = r.a.input("input", o.a)
+		},
+		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.constructor.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
+			var r = n("./src/reddit/helpers/parseUrl.ts");
+			const a = ["old", "new", "en", "www", "np", "m"],
+				o = ["reddit.com", "reddit.local"].concat("").concat(a.map((function(e) {
+					return e + ".reddit.com"
+				}))).concat(a.map((function(e) {
+					return e + ".reddit.local"
+				}))),
+				s = ["mod.reddit.com"],
+				i = {
+					subreddit: {
+						pathnameComponents: ["subredditName"],
+						pathname: /^\/r\/(\w+)\/?$/
+					},
+					user: {
+						pathnameComponents: ["username"],
+						pathname: /^\/(?:user|u)\/(\w+)\/?$/
+					},
+					postShortlink: {
+						hostnames: o.concat("redd.it"),
+						pathnameComponents: ["postID36"],
+						pathname: /^\/([A-Za-z0-9]+)\/?$/
+					},
+					postDetail: {
+						pathnameComponents: ["postID36"],
+						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)(?:\/\w+)?\/?$/
+					},
+					comment: {
+						pathnameComponents: ["postID36", "commentID36"],
+						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
+					},
+					modmailConversation: {
+						hostnames: s,
+						pathnameComponents: ["modmailConversationId"],
+						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
+					},
+					modmailMessage: {
+						hostnames: s,
+						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
+						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
+					}
+				};
+
+			function c(e) {
+				return (e.match(new RegExp(r.b, "g")) || []).map((function(e) {
+					let t;
+					return Object.keys(i).some((function(n) {
+						return t = function(e, t) {
+							const n = i[e];
+							if (!i) throw new Error("Could not find reddit URL spec: " + e);
+							const a = Object(r.a)(t);
+							if (!a) return void console.error("Could not parse url", t);
+							if (-1 === (n.hostnames || o).indexOf(a.hostname)) return;
+							const s = a.pathname.match(n.pathname);
+							if (s) {
+								return {
+									url: t,
+									routeName: e,
+									components: n.pathnameComponents.reduce((function(e, t, n) {
+										return e[t] = s[n + 1], e
+									}), {})
+								}
+							}
+						}(n, e)
+					})), t
+				})).filter((function(e) {
+					return e
+				}))
+			}
 		},
 		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, n) {
 			"use strict";
@@ -722,10 +730,10 @@
 				o = n("./src/higherOrderComponents/warnOnChildrenCount/index.tsx"),
 				s = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/layout/twoCol/ExpandRight/index.m.less"),
-				l = n.n(i);
+				c = n.n(i);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function l() {
+				return (l = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -750,17 +758,17 @@
 					widthLeft: o,
 					gutter: i
 				} = e, m = d(e, ["className", "children", "heightLeft", "widthLeft", "gutter"]);
-				return a.a.createElement("div", c({
-					className: Object(s.a)(l.a.expandRightContainer, t)
+				return a.a.createElement("div", l({
+					className: Object(s.a)(c.a.expandRightContainer, t)
 				}, m), a.a.createElement("div", {
-					className: l.a.left,
+					className: c.a.left,
 					style: {
 						flexBasis: o,
 						height: r,
 						marginRight: i
 					}
 				}, Array.isArray(n) && n[0]), a.a.createElement("div", {
-					className: l.a.right
+					className: c.a.right
 				}, Array.isArray(n) && n[1]))
 			}, 2)
 		},
@@ -785,4 +793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ReportFlow~ReportPage.2c87866a4aeb88efac6f.js.map
+//# sourceMappingURL=ReportFlow~ReportPage.dbdb462bff56891b9473.js.map

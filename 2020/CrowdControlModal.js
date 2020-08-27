@@ -1,10 +1,7 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.98e99ef530a8f6183a83.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.0bdc667c7244ad2e2d41.js
+// Retrieved at 8/27/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
-		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
-			e.exports = JSON.parse('{"id":"975a7920607d"}')
-		},
 		"./src/graphql/operations/UpdateCrowdControlLevel.json": function(e) {
 			e.exports = JSON.parse('{"id":"e403278013c8"}')
 		},
@@ -77,9 +74,9 @@
 				})), r.a.createElement("button", {
 					onClick: e.onCloseClicked
 				}, r.a.createElement(m.b, null))),
-				f = o("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				k = o("./src/reddit/components/MiniPost/index.tsx"),
-				v = o("./src/reddit/components/Settings/shared/Widgets.tsx");
+				k = o("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				v = o("./src/reddit/components/MiniPost/index.tsx"),
+				f = o("./src/reddit/components/Settings/shared/Widgets.tsx");
 			const _ = {
 				0: {
 					key: "OFF",
@@ -119,11 +116,11 @@
 				} = e;
 				return r.a.createElement(m.k, {
 					className: E.a.main
-				}, r.a.createElement(m.m, null, t && r.a.createElement(k.a, {
+				}, r.a.createElement(m.m, null, t && r.a.createElement(v.a, {
 					postId: t.id,
 					showSubreddit: !0,
 					crowdControlPreview: !0
-				})), r.a.createElement(v.i, {
+				})), r.a.createElement(f.i, {
 					direction: "column",
 					inModal: !0,
 					ticks: _,
@@ -140,7 +137,7 @@
 					})
 				}), void 0 !== s && r.a.createElement(m.c, null, n.fbt._("Community level Crowd Control is set to {subredditCrowdControl} .", [n.fbt._param("subredditCrowdControl", r.a.createElement("strong", null, _[s].text))], {
 					hk: "3E3xPV"
-				}), " ", n.fbt._("{=Edit}", [n.fbt._param("=Edit", r.a.createElement(f.a, {
+				}), " ", n.fbt._("{=Edit}", [n.fbt._param("=Edit", r.a.createElement(k.a, {
 					to: "".concat(a, "about/edit?page=safety")
 				}, n.fbt._("Edit", null, {
 					hk: "3qJOzI"
@@ -148,43 +145,36 @@
 					hk: "cbCjB"
 				})))
 			}
-			var j, N = o("./src/higherOrderComponents/asModal/index.tsx"),
-				O = o("./src/graphql/operations/CrowdControlLevelInfo.json"),
-				y = o("./src/lib/makeGqlRequest/index.ts");
-			! function(e) {
-				e.Off = "OFF", e.Lenient = "LENIENT", e.Medium = "MEDIUM", e.Strict = "STRICT"
-			}(j || (j = {}));
-			var S = o("./src/graphql/operations/UpdateCrowdControlLevel.json");
-			const M = (e, t, o) => Object(y.a)(e, Object.assign(Object.assign({}, S), {
+			var N = o("./src/higherOrderComponents/asModal/index.tsx"),
+				j = o("./src/reddit/endpoints/crowdControl/index.ts"),
+				y = o("./src/graphql/operations/UpdateCrowdControlLevel.json"),
+				O = o("./src/lib/makeGqlRequest/index.ts");
+			const S = (e, t, o) => Object(O.a)(e, Object.assign(Object.assign({}, y), {
 				variables: {
 					postId: t,
 					level: o
 				}
 			}));
-			var I = o("./src/reddit/selectors/posts.ts"),
+			var M = o("./src/reddit/selectors/posts.ts"),
 				T = o("./src/reddit/actions/modal.ts"),
-				P = o("./src/reddit/actions/toaster.ts"),
-				U = o("./src/reddit/components/CrowdControlModal/index.m.less"),
-				A = o.n(U);
-			const F = Object(i.c)({
-					post: I.g,
-					subredditCrowdControl: I.Z,
-					subredditUrl: I.bb
+				I = o("./src/reddit/actions/toaster.ts"),
+				P = o("./src/reddit/components/CrowdControlModal/index.m.less"),
+				A = o.n(P);
+			const U = Object(i.c)({
+					post: M.g,
+					subredditCrowdControl: M.Z,
+					subredditUrl: M.bb
 				}),
-				D = Object(a.b)(F, e => ({
+				F = Object(a.b)(U, e => ({
 					onClose: () => e(Object(T.f)()),
-					showSuccessToast: () => e(Object(P.e)({
+					showSuccessToast: () => e(Object(I.e)({
 						text: n.fbt._("Crowd control settings saved!", null, {
 							hk: "1r4rS3"
 						})
 					}))
 				})),
-				q = async (e, t) => {
-					const o = await ((e, t) => Object(y.a)(e, Object.assign(Object.assign({}, O), {
-						variables: {
-							postId: t
-						}
-					})))(e, t);
+				D = async (e, t) => {
+					const o = await Object(j.b)(e, t);
 					if (o && o.ok) {
 						const e = o.body.data.postInfoById;
 						return {
@@ -193,7 +183,7 @@
 						}
 					}
 				};
-			class B extends r.a.Component {
+			class q extends r.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.onCrowdControlLevelUpdate = function(e, o) {
@@ -220,7 +210,7 @@
 						this.setState({
 							pending: !0
 						});
-						const r = await M(e(), t.id, s);
+						const r = await S(e(), t.id, s);
 						if (r) {
 							if (r.ok) return n(), void o();
 							this.setState({
@@ -237,7 +227,7 @@
 						gqlContext: e,
 						post: t
 					} = this.props;
-					t && q(e(), t.id).then(e => {
+					t && D(e(), t.id).then(e => {
 						if (e) {
 							const {
 								initialCrowdControlLevel: t,
@@ -290,8 +280,8 @@
 					})))
 				}
 			}
-			const V = Object(d.b)(D(Object(l.c)(B)));
-			t.default = c.a.wrapped(Object(N.a)(D(V)), "Component", A.a)
+			const B = Object(d.b)(F(Object(l.c)(q)));
+			t.default = c.a.wrapped(Object(N.a)(F(B)), "Component", A.a)
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -334,10 +324,10 @@
 						})
 					}
 				}),
-				f = Object(a.b)(h, (e, t) => ({
+				k = Object(a.b)(h, (e, t) => ({
 					openLightbox: t => e(Object(C.a)(t.permalink))
 				}));
-			class k extends r.a.PureComponent {
+			class v extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onClickContainer = () => {
 						const {
@@ -412,7 +402,7 @@
 					}, Object(c.a)(t.created / 1e3, !0))))))
 				}
 			}
-			t.a = f(k)
+			t.a = k(v)
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -443,4 +433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrowdControlModal.98e99ef530a8f6183a83.js.map
+//# sourceMappingURL=CrowdControlModal.0bdc667c7244ad2e2d41.js.map

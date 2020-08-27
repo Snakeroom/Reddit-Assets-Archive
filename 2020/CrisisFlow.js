@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.089c42193e5a4ae188ec.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.fc50e4e452ac99033fa0.js
+// Retrieved at 8/27/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/components/CrisisFlow/CrisisFlowPage.m.less": function(e, s, t) {
@@ -217,7 +217,7 @@
 								reason: Z,
 								usernames: [this.props.username]
 							};
-							e.fromUserProfile ? Object(K.n)(e.apiContext(), s, !1) : e.fromReportPage && e.iframed && Object(K.n)(e.apiContext(), s, !0)
+							e.fromUserProfile ? Object(K.o)(e.apiContext(), s, !1) : e.fromReportPage && e.iframed && Object(K.o)(e.apiContext(), s, !0)
 						}
 						e.postMessage && e.postMessage({
 							type: "ctlSuccess"
@@ -407,4 +407,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CrisisFlow.089c42193e5a4ae188ec.js.map
+//# sourceMappingURL=CrisisFlow.fc50e4e452ac99033fa0.js.map

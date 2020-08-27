@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1aa5715ff17f2d791a02.js
-// Retrieved at 8/27/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.78cf9b7d929a1d126e5f.js
+// Retrieved at 8/27/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -170,7 +170,7 @@
 			e.exports = JSON.parse('{"id":"fd09f54393b2"}')
 		},
 		"./src/graphql/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"3ba4c661caec"}')
+			e.exports = JSON.parse('{"id":"4e248fb4d344"}')
 		},
 		"./src/graphql/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"2a194e7926dd"}')
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "e84243e-production"
+					SENTRY_RELEASE_VERSION: "6f6e2fe-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -33731,4 +33731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostCreation.1aa5715ff17f2d791a02.js.map
+//# sourceMappingURL=PostCreation.78cf9b7d929a1d126e5f.js.map
