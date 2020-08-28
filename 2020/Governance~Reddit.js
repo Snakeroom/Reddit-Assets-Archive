@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ec4a1463a1cd8646e6b1.js
-// Retrieved at 8/27/2020, 7:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.741beaa0ba05dd995f65.js
+// Retrieved at 8/28/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -54334,7 +54334,7 @@
 					} = t;
 					const i = Object(r.c)(e),
 						c = a.find(e => e >= n);
-					return s.reduce((e, t) => (e[t.id] = (e => {
+					return s.reduce((e, t) => (t && (e[t.id] = (e => {
 						let {
 							award: t,
 							size: s,
@@ -54346,7 +54346,7 @@
 						award: t,
 						size: c,
 						prefersReducedMotion: i
-					}), e), {})
+					})), e), {})
 				},
 				c = (e, t) => {
 					let {
@@ -54354,11 +54354,11 @@
 						minSize: n,
 						postOrCommentId: r
 					} = t;
-					return i(e, {
+					return s ? i(e, {
 						awards: [s],
 						minSize: n,
 						postOrCommentId: r
-					})[s.id]
+					})[s.id] : void 0
 				},
 				o = (e, t) => {
 					let {
@@ -55734,4 +55734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Governance~Reddit.ec4a1463a1cd8646e6b1.js.map
+//# sourceMappingURL=Governance~Reddit.741beaa0ba05dd995f65.js.map
