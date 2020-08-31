@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.b89254fb60964cf935e2.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.dd55e6b892b227dc3d4c.js
+// Retrieved at 8/31/2020, 12:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/CrisisFlow/CrisisFlowPage.m.less": function(e, t, n) {
@@ -344,7 +344,7 @@
 					let {} = t;
 					return {
 						onBlockUser: t => {
-							e(Object(A.o)(t, !0)), e(Object(q.t)())
+							e(Object(A.o)(t, !0)), e(Object(q.w)())
 						}
 					}
 				})(Ee),
@@ -680,4 +680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatReportFlow.b89254fb60964cf935e2.js.map
+//# sourceMappingURL=ChatReportFlow.dd55e6b892b227dc3d4c.js.map
