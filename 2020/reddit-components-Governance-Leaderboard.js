@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.cb2020ee14db225fe84a.js
-// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.46260274d8455bca6146.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, r) {
@@ -791,4 +791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-Leaderboard.cb2020ee14db225fe84a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.46260274d8455bca6146.js.map

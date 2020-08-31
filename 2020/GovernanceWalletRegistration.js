@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.1ba0b90cb51c8cf28a79.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.5faa5a04f19d311221bc.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -455,44 +455,45 @@
 			const {
 				fbt: x
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var k = function(e) {
-					const t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/about.svg)");
-					return s.a.createElement("div", {
-						className: Object(o.a)(C.a.card, C.a.aboutCard)
-					}, s.a.createElement("div", {
-						className: C.a.text
-					}, s.a.createElement("div", {
-						className: C.a.header
-					}, x._("Donuts Are No Longer Centralized!", null, {
-						hk: "45RssI"
-					})), s.a.createElement("div", {
-						className: C.a.body
-					}, x._("Backed by {=smart contracts} developed by mod u/cslarson, Donuts are now ERC-20 tokens that you own and control on the Ethereum blockchain! Register to earn Donuts for your contributions to the subreddit and use them to buy perks in the community, like a special membership, higher weighting in polls, or the ability to control the top banner. Follow this simple wizard to register. Note: Donuts are not driven nor developed by Reddit.", [x._param("=smart contracts", s.a.createElement("a", {
-						href: "https://github.com/daonuts",
-						className: C.a.link,
-						rel: "noopener noreferrer",
-						target: "_blank"
-					}, x._("smart contracts", null, {
-						hk: "3JWdHa"
-					})))], {
-						hk: "uGzqk"
-					}))), s.a.createElement("div", {
-						className: C.a.cta
-					}, s.a.createElement("div", {
-						className: C.a.image,
-						style: {
-							backgroundImage: t
-						}
-					}), s.a.createElement(g.f, {
-						className: C.a.button,
-						onClick: e.onNextStep
-					}, x._("Start", null, {
-						hk: "3So7as"
-					}), s.a.createElement(v.a, {
-						className: C.a.buttonIcon
-					}))))
-				},
-				y = n("./src/reddit/icons/svgs/Link/index.tsx");
+
+			function k(e) {
+				const t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/about.svg)");
+				return s.a.createElement("div", {
+					className: Object(o.a)(C.a.card, C.a.aboutCard)
+				}, s.a.createElement("div", {
+					className: C.a.text
+				}, s.a.createElement("div", {
+					className: C.a.header
+				}, x._("Donuts Are No Longer Centralized!", null, {
+					hk: "45RssI"
+				})), s.a.createElement("div", {
+					className: C.a.body
+				}, x._("Backed by {=smart contracts} developed by mod u/cslarson, Donuts are now ERC-20 tokens that you own and control on the Ethereum blockchain! Register to earn Donuts for your contributions to the subreddit and use them to buy perks in the community, like a special membership, higher weighting in polls, or the ability to control the top banner. Follow this simple wizard to register. Note: Donuts are not driven nor developed by Reddit.", [x._param("=smart contracts", s.a.createElement("a", {
+					href: "https://github.com/daonuts",
+					className: C.a.link,
+					rel: "noopener noreferrer",
+					target: "_blank"
+				}, x._("smart contracts", null, {
+					hk: "3JWdHa"
+				})))], {
+					hk: "uGzqk"
+				}))), s.a.createElement("div", {
+					className: C.a.cta
+				}, s.a.createElement("div", {
+					className: C.a.image,
+					style: {
+						backgroundImage: t
+					}
+				}), s.a.createElement(g.f, {
+					className: C.a.button,
+					onClick: e.onNextStep
+				}, x._("Start", null, {
+					hk: "3So7as"
+				}), s.a.createElement(v.a, {
+					className: C.a.buttonIcon
+				}))))
+			}
+			var y = n("./src/reddit/icons/svgs/Link/index.tsx");
 			const {
 				fbt: w
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -537,8 +538,8 @@
 				}
 			}
 			var E = n("./src/chat/icons/svgs/Refresh/index.tsx"),
-				O = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				N = e => s.a.createElement("svg", {
+				O = n("./src/reddit/icons/svgs/CircleCheck/index.tsx");
+			var N = e => s.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 16 16",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -637,53 +638,55 @@
 			const {
 				fbt: A
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var L = function(e) {
-					const t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/registered.svg)"),
-						{
-							onNextStep: n,
-							token: a
-						} = e;
-					return s.a.createElement("div", {
-						className: Object(o.a)(C.a.card, C.a.registeredCard)
-					}, s.a.createElement("div", {
-						className: C.a.text
-					}, s.a.createElement("div", {
-						className: C.a.header
-					}, A._("That’s It, You Are Registered!", null, {
-						hk: "3gVrKp"
-					})), s.a.createElement("div", {
-						className: C.a.body
-					}, s.a.createElement("p", {
-						className: C.a.paragraph
-					}, A._("Your wallet will receive Donuts after the next regular distribution based on the karma you earn in this subreddit.", null, {
-						hk: "3qEBK1"
-					})), s.a.createElement("p", {
-						className: C.a.paragraph
-					}, A._("To view your balance in MetaMask, you’ll need to {=track} the Donut token by clicking the button below. After that, go earn more Donuts by creating some great content on r/EthTrader!", [A._param("=track", s.a.createElement("span", {
-						className: C.a.bold
-					}, A._("track", null, {
-						hk: "3r4sf1"
-					})))], {
-						hk: "urtXU"
-					})))), s.a.createElement("div", {
-						className: C.a.cta
-					}, s.a.createElement("div", {
-						className: C.a.image,
-						style: {
-							backgroundImage: t
-						}
-					}), s.a.createElement(g.f, {
-						className: C.a.button,
-						onClick: () => a ? Object(l.i)(a).then(n) : n()
-					}, a ? A._("Track Donuts", null, {
-						hk: "3gEZnQ"
-					}) : A._("Finish", null, {
-						hk: "4kSXmt"
-					}), s.a.createElement(S, {
-						className: C.a.buttonIcon
-					}))))
-				},
-				T = (n("./node_modules/core-js/modules/es6.regexp.split.js"), n("./src/reddit/actions/governance/errorToast.ts")),
+
+			function L(e) {
+				const t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/registered.svg)"),
+					{
+						onNextStep: n,
+						token: a
+					} = e;
+				return s.a.createElement("div", {
+					className: Object(o.a)(C.a.card, C.a.registeredCard)
+				}, s.a.createElement("div", {
+					className: C.a.text
+				}, s.a.createElement("div", {
+					className: C.a.header
+				}, A._("That’s It, You Are Registered!", null, {
+					hk: "3gVrKp"
+				})), s.a.createElement("div", {
+					className: C.a.body
+				}, s.a.createElement("p", {
+					className: C.a.paragraph
+				}, A._("Your wallet will receive Donuts after the next regular distribution based on the karma you earn in this subreddit.", null, {
+					hk: "3qEBK1"
+				})), s.a.createElement("p", {
+					className: C.a.paragraph
+				}, A._("To view your balance in MetaMask, you’ll need to {=track} the Donut token by clicking the button below. After that, go earn more Donuts by creating some great content on r/EthTrader!", [A._param("=track", s.a.createElement("span", {
+					className: C.a.bold
+				}, A._("track", null, {
+					hk: "3r4sf1"
+				})))], {
+					hk: "urtXU"
+				})))), s.a.createElement("div", {
+					className: C.a.cta
+				}, s.a.createElement("div", {
+					className: C.a.image,
+					style: {
+						backgroundImage: t
+					}
+				}), s.a.createElement(g.f, {
+					className: C.a.button,
+					onClick: () => a ? Object(l.i)(a).then(n) : n()
+				}, a ? A._("Track Donuts", null, {
+					hk: "3gEZnQ"
+				}) : A._("Finish", null, {
+					hk: "4kSXmt"
+				}), s.a.createElement(S, {
+					className: C.a.buttonIcon
+				}))))
+			}
+			n("./node_modules/core-js/modules/es6.regexp.split.js");
+			var T = n("./src/reddit/actions/governance/errorToast.ts"),
 				B = n("./src/reddit/actions/toaster.ts"),
 				W = n("./src/reddit/contexts/ApiContext.tsx"),
 				G = n("./src/reddit/controls/Checkbox/index.tsx"),
@@ -785,37 +788,38 @@
 			const {
 				fbt: z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var Z, X = function(e) {
-					const t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/wallet.svg)");
-					return s.a.createElement("div", {
-						className: Object(o.a)(C.a.card, C.a.walletCard)
-					}, s.a.createElement("div", {
-						className: C.a.text
-					}, s.a.createElement("div", {
-						className: C.a.header
-					}, z._("Create a Wallet", null, {
-						hk: "M5zQ2"
-					})), s.a.createElement("div", {
-						className: C.a.body
-					}, z._("Create your MetaMask account and Ethereum wallet by following the instructions in MetaMask after you install the extension.", null, {
-						hk: "4DQsB7"
-					}))), s.a.createElement("div", {
-						className: C.a.cta
-					}, s.a.createElement("div", {
-						className: C.a.image,
-						style: {
-							backgroundImage: t
-						}
-					}), s.a.createElement(g.i, {
-						className: C.a.button,
-						onClick: e.onNextStep
-					}, z._("Next", null, {
-						hk: "3KNR6B"
-					}), s.a.createElement(v.a, {
-						className: C.a.buttonIcon
-					}))))
-				},
-				J = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
+
+			function Z(e) {
+				const t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/wallet.svg)");
+				return s.a.createElement("div", {
+					className: Object(o.a)(C.a.card, C.a.walletCard)
+				}, s.a.createElement("div", {
+					className: C.a.text
+				}, s.a.createElement("div", {
+					className: C.a.header
+				}, z._("Create a Wallet", null, {
+					hk: "M5zQ2"
+				})), s.a.createElement("div", {
+					className: C.a.body
+				}, z._("Create your MetaMask account and Ethereum wallet by following the instructions in MetaMask after you install the extension.", null, {
+					hk: "4DQsB7"
+				}))), s.a.createElement("div", {
+					className: C.a.cta
+				}, s.a.createElement("div", {
+					className: C.a.image,
+					style: {
+						backgroundImage: t
+					}
+				}), s.a.createElement(g.i, {
+					className: C.a.button,
+					onClick: e.onNextStep
+				}, z._("Next", null, {
+					hk: "3KNR6B"
+				}), s.a.createElement(v.a, {
+					className: C.a.buttonIcon
+				}))))
+			}
+			var X, J = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
 				Y = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
 				Q = n.n(Y);
 
@@ -831,34 +835,34 @@
 				}, t)
 			}! function(e) {
 				e[e.About = 0] = "About", e[e.MetaMask = 1] = "MetaMask", e[e.Wallet = 2] = "Wallet", e[e.Connect = 3] = "Connect", e[e.Verify = 4] = "Verify", e[e.Registered = 5] = "Registered"
-			}(Z || (Z = {}));
+			}(X || (X = {}));
 			const $ = [{
-				id: Z.About,
+				id: X.About,
 				name: () => V.fbt._("About", null, {
 					hk: "1jX7pr"
 				})
 			}, {
-				id: Z.MetaMask,
+				id: X.MetaMask,
 				name: () => V.fbt._("MetaMask", null, {
 					hk: "2Y184A"
 				})
 			}, {
-				id: Z.Wallet,
+				id: X.Wallet,
 				name: () => V.fbt._("Wallet", null, {
 					hk: "3qALAf"
 				})
 			}, {
-				id: Z.Connect,
+				id: X.Connect,
 				name: () => V.fbt._("Connect", null, {
 					hk: "3GMXUP"
 				})
 			}, {
-				id: Z.Verify,
+				id: X.Verify,
 				name: () => V.fbt._("Verify", null, {
 					hk: "WHMgJ"
 				})
 			}, {
-				id: Z.Registered,
+				id: X.Registered,
 				name: () => V.fbt._("Registered", null, {
 					hk: "1U7VpD"
 				})
@@ -905,7 +909,7 @@
 						const {
 							activeTab: e
 						} = this.state;
-						if (e === Z.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
+						if (e === X.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
 							const t = m.defaults(e);
 							return Object.assign(Object.assign({
 								source: "meta",
@@ -916,14 +920,14 @@
 								subreddit: m.subreddit(e)
 							})
 						});
-						const t = e === Z.About ? Z.MetaMask : e === Z.MetaMask ? Z.Wallet : e === Z.Wallet ? Z.Connect : e === Z.Connect ? Z.Verify : Z.Registered;
+						const t = e === X.About ? X.MetaMask : e === X.MetaMask ? X.Wallet : e === X.Wallet ? X.Connect : e === X.Connect ? X.Verify : X.Registered;
 						this.setState({
 							activeTab: t
 						}), this.sendViewTabEvent(t)
 					}, this.correlationId = p()();
 					const t = Object(_.b)(e.pageLayer);
 					this.state = {
-						activeTab: t && Object(l.e)() ? Z.Wallet : Z.About
+						activeTab: t && Object(l.e)() ? X.Wallet : X.About
 					}
 				}
 				async componentDidMount() {
@@ -954,7 +958,7 @@
 						token: r
 					} = this.props, {
 						activeTab: c
-					} = this.state, i = c === Z.About ? k : c === Z.MetaMask ? R : c === Z.Wallet ? X : c === Z.Connect ? j : c === Z.Verify ? F : L;
+					} = this.state, i = c === X.About ? k : c === X.MetaMask ? R : c === X.Wallet ? Z : c === X.Connect ? j : c === X.Verify ? F : L;
 					return s.a.createElement("article", {
 						className: Object(o.a)(Q.a.container, e)
 					}, s.a.createElement(J.a, {
@@ -1779,4 +1783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistration.1ba0b90cb51c8cf28a79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.5faa5a04f19d311221bc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.567b19a3b38f3c0942f2.js
-// Retrieved at 8/31/2020, 3:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8efe6ace21f49085013d.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "54b41ed-production"
+					SENTRY_RELEASE_VERSION: "5f3b49f-production"
 				}),
 				O = {
 					anonymousUserId: "t2_anonymous",
@@ -4727,26 +4727,26 @@
 				}
 			}
 			var hn = Object(i.b)(un, (e, t) => {
-					let {
-						postId: s
-					} = t;
-					return {
-						loadComments: () => e(Object(Xa.q)(s, void 0, {
-							sort: Ga.r.CHAT
-						}, Ga.r.CHAT)),
-						openLoginModal: () => e(Object(u.h)()),
-						openRegisterModal: () => e(Object(u.i)())
-					}
-				})(pn),
-				bn = e => r.a.createElement("svg", {
-					className: e.className,
-					onClick: e.onClick,
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("path", {
-					d: "M16,9H6.41l4.29-4.29A1,1,0,0,0,9.29,3.29l-6,6a1,1,0,0,0,0,1.41l6,6a1,1,0,0,0,1.41-1.41L6.41,11H16a1,1,0,0,0,0-2Z"
-				})),
-				vn = e => r.a.createElement("svg", {
+				let {
+					postId: s
+				} = t;
+				return {
+					loadComments: () => e(Object(Xa.q)(s, void 0, {
+						sort: Ga.r.CHAT
+					}, Ga.r.CHAT)),
+					openLoginModal: () => e(Object(u.h)()),
+					openRegisterModal: () => e(Object(u.i)())
+				}
+			})(pn);
+			var bn = e => r.a.createElement("svg", {
+				className: e.className,
+				onClick: e.onClick,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, r.a.createElement("path", {
+				d: "M16,9H6.41l4.29-4.29A1,1,0,0,0,9.29,3.29l-6,6a1,1,0,0,0,0,1.41l6,6a1,1,0,0,0,1.41-1.41L6.41,11H16a1,1,0,0,0,0-2Z"
+			}));
+			var vn = e => r.a.createElement("svg", {
 					className: e.className,
 					onClick: e.onClick,
 					viewBox: "0 0 20 20",
@@ -5506,4 +5506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.567b19a3b38f3c0942f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8efe6ace21f49085013d.js.map

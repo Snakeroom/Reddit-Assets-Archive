@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.6bfc5b3570e1b631235a.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.852790c063739f500181.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -316,8 +316,8 @@
 				d = a("./src/reddit/helpers/trackers/communityPoints.ts"),
 				m = a("./src/reddit/hooks/useTracking.ts"),
 				u = a("./src/reddit/selectors/economics.ts"),
-				b = a("./src/lib/classNames/index.ts"),
-				p = e => s.a.createElement("svg", {
+				b = a("./src/lib/classNames/index.ts");
+			var p = e => s.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 16 16",
 					version: "1.1",
@@ -472,4 +472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommunityPointsLearnMore.6bfc5b3570e1b631235a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.852790c063739f500181.js.map

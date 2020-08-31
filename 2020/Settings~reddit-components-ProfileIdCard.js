@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.4936fd21ad1037bfd6c9.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.a8098a70d5948dca8839.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~reddit-components-ProfileIdCard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -47,8 +47,8 @@
 				r = a.n(n),
 				s = a("./src/lib/classNames/index.ts"),
 				o = a("./src/reddit/controls/ImageInput/index.tsx"),
-				i = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				c = e => r.a.createElement("svg", {
+				i = a("./src/reddit/controls/LoadingIcon/index.tsx");
+			var c = e => r.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 19 19"
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Settings~reddit-components-ProfileIdCard.4936fd21ad1037bfd6c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.a8098a70d5948dca8839.js.map

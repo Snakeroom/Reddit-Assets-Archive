@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.96ec3a12b519f2eb0415.js
-// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.1fd1c267a5a239c08bf8.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -444,17 +444,17 @@
 				},
 				wallet: P.g
 			});
-			var $, ee = Object(n.b)(Y, (e, t) => {
-					let {
+			var $ = Object(n.b)(Y, (e, t) => {
+				let {
+					subredditId: a
+				} = t;
+				return {
+					onFetchProducts: () => e(Object(M.j)({
 						subredditId: a
-					} = t;
-					return {
-						onFetchProducts: () => e(Object(M.j)({
-							subredditId: a
-						}))
-					}
-				})(J),
-				te = e => s.a.createElement("svg", {
+					}))
+				}
+			})(J);
+			var ee, te = e => s.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 32 32"
@@ -467,21 +467,21 @@
 				se = a.n(re);
 			! function(e) {
 				e[e.Flairs = 0] = "Flairs", e[e.Gallery = 1] = "Gallery", e[e.MyBadges = 2] = "MyBadges"
-			}($ || ($ = {}));
+			}(ee || (ee = {}));
 			const ne = {
-				[$.Flairs]: {
+				[ee.Flairs]: {
 					str: () => q.fbt._("flairs", null, {
 						hk: "1vWhvU"
 					}),
 					icon: f.a
 				},
-				[$.Gallery]: {
+				[ee.Gallery]: {
 					str: () => q.fbt._("gallery", null, {
 						hk: "33pd5W"
 					}),
 					icon: ae.a
 				},
-				[$.MyBadges]: {
+				[ee.MyBadges]: {
 					str: () => q.fbt._("my badges", null, {
 						hk: "2xKTOy"
 					}),
@@ -497,11 +497,11 @@
 					className: Object(o.a)(se.a.sectionTitle, se.a.sectionBadges)
 				}, q.fbt._("badges", null, {
 					hk: "33xQMz"
-				})), t($.Gallery), t($.MyBadges), s.a.createElement("div", {
+				})), t(ee.Gallery), t(ee.MyBadges), s.a.createElement("div", {
 					className: Object(o.a)(se.a.sectionTitle, se.a.sectionFlairs)
 				}, q.fbt._("flairs", null, {
 					hk: "42LtF9"
-				})), t($.Flairs))
+				})), t(ee.Flairs))
 			}
 			const ie = (e, t) => a => {
 				const r = ne[a];
@@ -803,7 +803,7 @@
 					}), this.handleBadgesChange = e => this.setState({
 						previewBadges: e
 					}), this.state = {
-						currentMode: $.MyBadges,
+						currentMode: ee.MyBadges,
 						previewBadges: e.userBadgeIds,
 						previewFlair: Ae(e)
 					}
@@ -831,20 +831,20 @@
 				}
 				renderMode() {
 					if (this.props.subredditId) switch (this.state.currentMode) {
-						case $.Flairs:
+						case ee.Flairs:
 							return s.a.createElement(B, {
 								subredditId: this.props.subredditId,
 								onFlairChange: this.handleFlairChange
 							});
-						case $.Gallery:
-							return s.a.createElement(ee, {
+						case ee.Gallery:
+							return s.a.createElement($, {
 								subredditId: this.props.subredditId
 							});
-						case $.MyBadges:
+						case ee.MyBadges:
 							return s.a.createElement(Be, {
 								subredditId: this.props.subredditId,
 								onBadgesChange: this.handleBadgesChange,
-								onGotoGallery: () => this.handleModeChange($.Gallery)
+								onGotoGallery: () => this.handleModeChange(ee.Gallery)
 							})
 					}
 					return s.a.createElement("div", null)
@@ -1310,4 +1310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=BadgePickerModal.96ec3a12b519f2eb0415.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePickerModal.1fd1c267a5a239c08bf8.js.map

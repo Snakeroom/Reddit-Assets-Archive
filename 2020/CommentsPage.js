@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.ab6fa9a95a42d4fef49f.js
-// Retrieved at 8/27/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.f74fa600ff09bfc5b00d.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -7593,18 +7593,14 @@
 		"./src/reddit/components/InfoBanners/CommentThreadLockedBanner/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return b
+				return h
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
 				r = s.n(o),
 				i = s("./src/lib/linkMatchers/customLinks.ts"),
-				a = s("./src/reddit/constants/colors.ts"),
-				c = s("./src/reddit/models/Subreddit/index.ts"),
-				d = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
-				l = s("./src/reddit/components/InfoBanners/CommentThreadLockedBanner/index.m.less"),
-				m = s.n(l);
-			const p = r.a.createElement(e => r.a.createElement("svg", {
+				a = s("./src/reddit/constants/colors.ts");
+			var c = e => r.a.createElement("svg", {
 					className: e.className,
 					id: e.id,
 					onMouseEnter: e.onMouseEnter,
@@ -7613,24 +7609,29 @@
 					xmlns: "http://www.w3.org/2000/svg"
 				}, r.a.createElement("path", {
 					d: "M16,9H15V7A5,5,0,0,0,5,7V9H4a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1H16a1,1,0,0,0,1-1V10A1,1,0,0,0,16,9ZM7,7a3,3,0,0,1,6,0V9H7Z"
-				})), {
-					className: m.a.lockIcon
+				})),
+				d = s("./src/reddit/models/Subreddit/index.ts"),
+				l = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
+				m = s("./src/reddit/components/InfoBanners/CommentThreadLockedBanner/index.m.less"),
+				p = s.n(m);
+			const u = r.a.createElement(c, {
+					className: p.a.lockIcon
 				}),
-				u = e => Object(c.g)(e) ? i.d.profile : i.d.subreddit;
+				b = e => Object(d.g)(e) ? i.d.profile : i.d.subreddit;
 
-			function b(e) {
+			function h(e) {
 				let {
 					subredditOrProfile: t
 				} = e;
-				const s = t ? n.fbt._("This thread has been locked by the moderators of {communityname}", [n.fbt._param("communityname", u(t) + t.name)], {
+				const s = t ? n.fbt._("This thread has been locked by the moderators of {communityname}", [n.fbt._param("communityname", b(t) + t.name)], {
 					hk: "2HSQXz"
 				}) : n.fbt._("This thread has been locked", null, {
 					hk: "4fn3dn"
 				});
-				return r.a.createElement(d.a, {
-					className: m.a.bannerBase,
+				return r.a.createElement(l.a, {
+					className: p.a.bannerBase,
 					color: a.a.locked,
-					icon: p,
+					icon: u,
 					subtitle: n.fbt._("New comments cannot be posted", null, {
 						hk: "2A32Yr"
 					}),
@@ -7652,16 +7653,17 @@
 				r = s.n(o),
 				i = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				a = s("./src/lib/lessComponent.tsx"),
-				c = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
-				d = s("./src/reddit/components/InfoBanners/ContestModeEnabledBanner/index.m.less"),
-				l = s.n(d);
-			const m = a.a.wrapped(e => r.a.createElement("svg", {
-				className: e.className,
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 40 40"
-			}, r.a.createElement("g", null, r.a.createElement("path", {
-				d: "M32,7.8l0.5-5.3h-25L8,7.8c-3.2,0.8-5.5,3.7-5.5,7.2v0.1c0,4,3.1,7.2,7,7.4l0,0c0.3,2.8,2.7,5,5.5,5h0.1 c1.3,0,2.4,1.1,2.4,2.4v0.1c0,1.3-1.1,2.4-2.4,2.4H15c-2.7,0-4.9,2.2-4.9,4.9v0.1h20v-0.1c0-2.7-2.2-4.9-4.9-4.9h-0.1 c-1.3,0-2.4-1.1-2.4-2.4v-0.1c0-1.3,1.1-2.4,2.4-2.4H25c2.8,0,5.2-2.2,5.5-5l0,0c3.9-0.2,7-3.4,7-7.4v-0.1 C37.5,11.5,35.2,8.6,32,7.8z M4.5,15.1v-0.1c0-2.4,1.6-4.4,3.7-5.1l1.1,10.7C6.6,20.1,4.5,17.9,4.5,15.1z M35.5,15.1 c0,2.8-2.1,5.1-4.8,5.4l1.1-10.7c2.2,0.7,3.7,2.8,3.7,5.1V15.1z"
-			}))), "TrophyIcon", l.a);
+				c = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx");
+			var d = e => r.a.createElement("svg", {
+					className: e.className,
+					xmlns: "http://www.w3.org/2000/svg",
+					viewBox: "0 0 40 40"
+				}, r.a.createElement("g", null, r.a.createElement("path", {
+					d: "M32,7.8l0.5-5.3h-25L8,7.8c-3.2,0.8-5.5,3.7-5.5,7.2v0.1c0,4,3.1,7.2,7,7.4l0,0c0.3,2.8,2.7,5,5.5,5h0.1 c1.3,0,2.4,1.1,2.4,2.4v0.1c0,1.3-1.1,2.4-2.4,2.4H15c-2.7,0-4.9,2.2-4.9,4.9v0.1h20v-0.1c0-2.7-2.2-4.9-4.9-4.9h-0.1 c-1.3,0-2.4-1.1-2.4-2.4v-0.1c0-1.3,1.1-2.4,2.4-2.4H25c2.8,0,5.2-2.2,5.5-5l0,0c3.9-0.2,7-3.4,7-7.4v-0.1 C37.5,11.5,35.2,8.6,32,7.8z M4.5,15.1v-0.1c0-2.4,1.6-4.4,3.7-5.1l1.1,10.7C6.6,20.1,4.5,17.9,4.5,15.1z M35.5,15.1 c0,2.8-2.1,5.1-4.8,5.4l1.1-10.7c2.2,0.7,3.7,2.8,3.7,5.1V15.1z"
+				}))),
+				l = s("./src/reddit/components/InfoBanners/ContestModeEnabledBanner/index.m.less"),
+				m = s.n(l);
+			const p = a.a.wrapped(d, "TrophyIcon", m.a);
 			t.a = Object(i.a)(e => {
 				const {
 					hasModeratorPostPermissions: t,
@@ -7672,9 +7674,9 @@
 					hk: "3qrgsh"
 				});
 				return r.a.createElement(c.a, {
-					className: l.a.contestModeEnabled,
+					className: m.a.contestModeEnabled,
 					color: s && s.newCommunityTheme.linkText,
-					icon: r.a.createElement(m, null),
+					icon: r.a.createElement(p, null),
 					subtitle: o,
 					title: n.fbt._("This post has contest mode enabled", null, {
 						hk: "42oz5Q"
@@ -7777,25 +7779,26 @@
 				}).apply(this, arguments)
 			}
 			var d = function(e, t) {
-					var s = {};
-					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
-					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-						var o = 0;
-						for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
-					}
-					return s
-				},
-				l = e => {
-					const {
-						children: t,
-						className: s,
-						to: n
-					} = e, r = d(e, ["children", "className", "to"]), l = Object(a.b)(n);
-					return o.a.createElement(i.a, c({
-						className: s,
-						to: l
-					}, r), t)
-				};
+				var s = {};
+				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var o = 0;
+					for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (s[n[o]] = e[n[o]])
+				}
+				return s
+			};
+
+			function l(e) {
+				const {
+					children: t,
+					className: s,
+					to: n
+				} = e, r = d(e, ["children", "className", "to"]), l = Object(a.b)(n);
+				return o.a.createElement(i.a, c({
+					className: s,
+					to: l
+				}, r), t)
+			}
 
 			function m() {
 				return (m = Object.assign || function(e) {
@@ -9093,8 +9096,8 @@
 				ve = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
 				Ce = s("./src/reddit/constants/colors.ts"),
 				Oe = s("./src/config.ts"),
-				ye = s("./src/reddit/icons/svgs/Clear/index.tsx"),
-				Ee = e => i.a.createElement("svg", {
+				ye = s("./src/reddit/icons/svgs/Clear/index.tsx");
+			var Ee = e => i.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 20 20",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -18167,4 +18170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CommentsPage.ab6fa9a95a42d4fef49f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f74fa600ff09bfc5b00d.js.map

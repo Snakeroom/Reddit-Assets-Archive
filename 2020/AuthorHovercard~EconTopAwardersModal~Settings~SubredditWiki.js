@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.ed4094097a6c2309caa4.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.b744de9f8b5d729a19bc.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -1368,4 +1368,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.ed4094097a6c2309caa4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.b744de9f8b5d729a19bc.js.map

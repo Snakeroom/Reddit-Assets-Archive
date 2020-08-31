@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.138ffaaae3428ea48006.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.b1b8ec136e2dd06e7e7a.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/graphql/operations/RequestUserDataExport.json": function(e) {
@@ -149,9 +149,13 @@
 		},
 		"./src/reddit/controls/Form/index.tsx": function(e, t, a) {
 			"use strict";
+			a.d(t, "a", (function() {
+				return n
+			}));
 			var s = a("./node_modules/react/index.js"),
 				r = a.n(s);
-			t.a = e => {
+
+			function n(e) {
 				const {
 					children: t,
 					className: a,
@@ -159,17 +163,17 @@
 				} = e;
 				return r.a.createElement("form", {
 					className: a,
-					onSubmit: n(s)
+					onSubmit: o(s)
 				}, t)
-			};
-			const n = e => t => {
+			}
+			const o = e => t => {
 					if (!e) return;
 					t.preventDefault();
 					const a = t.target,
-						s = o(a);
+						s = i(a);
 					e(s)
 				},
-				o = e => e && "form" === e.nodeName.toLowerCase() ? Array.from(e.elements).reduce((e, t) => (t.name && (e[t.name] = t.value), e), {}) : {}
+				i = e => e && "form" === e.nodeName.toLowerCase() ? Array.from(e.elements).reduce((e, t) => (t.name && (e[t.name] = t.value), e), {}) : {}
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, a) {
 			"use strict";
@@ -498,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=UserDataRequestPage.138ffaaae3428ea48006.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.b1b8ec136e2dd06e7e7a.js.map

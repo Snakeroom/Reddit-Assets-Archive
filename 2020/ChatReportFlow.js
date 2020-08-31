@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.dd55e6b892b227dc3d4c.js
-// Retrieved at 8/31/2020, 12:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.5f8bfd020e0dd56563dd.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/CrisisFlow/CrisisFlowPage.m.less": function(e, t, n) {
@@ -110,58 +110,58 @@
 				fbt: C
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), w = p.a.div("CrisisContent", m.a), g = p.a.div("CrisisImageContainer", u.a), _ = p.a.img("CrisisImage", m.a), v = p.a.h2("CrisisTitle", u.a), x = p.a.p("CrisisDescription", u.a);
 			var k = e => r.a.createElement(w, null, r.a.createElement(g, null, r.a.createElement(_, {
-					src: "".concat(c.a.assetPath, "/img/crisis-line-icon.png")
-				})), r.a.createElement(v, null, C._("Would you like Reddit to reach out to {username} ?", [C._param("username", r.a.createElement("span", null, "u/", e.username))], {
-					hk: "3RFVlj"
-				})), r.a.createElement(x, null, C._("We’ve partnered with {ctl} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [C._param("ctl", r.a.createElement("a", {
-					href: "https://www.crisistextline.org/",
-					target: "_blank"
-				}, "Crisis Text Line")), C._param("username", r.a.createElement("strong", null, "u/", e.username))], {
-					hk: "srFNa"
-				}))),
-				b = e => r.a.createElement("svg", {
-					className: e.className,
-					width: "7",
-					height: "12",
-					viewBox: "0 0 7 12",
-					fill: "none",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("path", {
-					"fill-rule": "evenodd",
-					"clip-rule": "evenodd",
-					d: "M0.21967 11.7803C-0.0732233 11.4874 -0.0732233 11.0126 0.21967 10.7197L4.68934 6.25L0.21967 1.78033C-0.0732233 1.48744 -0.0732233 1.01256 0.21967 0.71967C0.512563 0.426777 0.987437 0.426777 1.28033 0.71967L6.28033 5.71967C6.57322 6.01256 6.57322 6.48744 6.28033 6.78033L1.28033 11.7803C0.987437 12.0732 0.512563 12.0732 0.21967 11.7803Z",
-					fill: "#D3D6DA"
-				})),
-				E = e => r.a.createElement("svg", {
-					className: e.className,
-					width: "24",
-					height: "24",
-					viewBox: "0 0 24 24",
-					fill: "none",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("path", {
-					"fill-rule": "evenodd",
-					"clip-rule": "evenodd",
-					d: "M12.504 1.40581C10.8548 0.436577 8.91582 0.0822804 7.03046 0.405669C5.1451 0.729058 3.43503 1.70926 2.20312 3.17267C0.971219 4.63608 0.296983 6.48826 0.299833 8.40115H0.299805L0.299872 8.40828C0.313102 9.81313 0.695242 11.187 1.40423 12.3936L0.35366 15.2932C0.235566 15.6192 0.315178 15.984 0.558332 16.2311C0.801486 16.4782 1.16495 16.5636 1.49275 16.4508L4.41155 15.4461C4.8205 15.6752 5.24681 15.8723 5.68667 16.0356C6.15267 16.2085 6.67064 15.971 6.84359 15.505C7.01655 15.039 6.77899 14.521 6.31299 14.348C5.85073 14.1765 5.40714 13.9583 4.98911 13.6968C4.75881 13.5527 4.47577 13.5204 4.21892 13.6088L2.68747 14.1359L3.246 12.5944C3.34354 12.3252 3.30716 12.0256 3.14802 11.7876C2.47615 10.7827 2.1119 9.60363 2.09983 8.3949C2.09845 6.90836 2.62279 5.46917 3.58017 4.33187C4.53832 3.19367 5.86837 2.43129 7.33476 2.17976C8.80115 1.92824 10.3092 2.2038 11.5919 2.95764C12.8746 3.71149 13.8491 4.89497 14.3428 6.29846C14.5078 6.76735 15.0216 7.01375 15.4905 6.84881C15.9594 6.68386 16.2058 6.17004 16.0408 5.70115C15.4061 3.89665 14.1531 2.37504 12.504 1.40581ZM18.8305 8.17201C17.1805 7.45435 15.3385 7.30651 13.5952 7.75182C11.8518 8.19714 10.3064 9.21026 9.20265 10.6313C8.09895 12.0524 7.49983 13.8005 7.49983 15.5998H7.49979L7.49987 15.6083C7.5131 17.0132 7.89524 18.387 8.60423 19.5937L7.55365 22.4932C7.43556 22.8192 7.51517 23.184 7.75833 23.4311C8.00148 23.6782 8.36494 23.7637 8.69274 23.6508L11.6074 22.6476C13.0373 23.4576 14.6834 23.8153 16.3272 23.6671C18.1192 23.5055 19.8065 22.7519 21.1227 21.525C22.4389 20.2982 23.3092 18.668 23.5961 16.8917C23.8831 15.1154 23.5705 13.2941 22.7075 11.7152C21.8446 10.1363 20.4805 8.88968 18.8305 8.17201ZM14.0406 9.49583C15.3966 9.14947 16.8292 9.26445 18.1126 9.82264C19.3959 10.3808 20.4569 11.3504 21.1281 12.5785C21.7992 13.8065 22.0424 15.2231 21.8192 16.6046C21.596 17.9862 20.9191 19.2541 19.8954 20.2083C18.8717 21.1625 17.5594 21.7487 16.1655 21.8744C14.7717 22.0001 13.3757 21.658 12.1978 20.9023C11.9661 20.7537 11.6792 20.7192 11.4189 20.8088L9.88747 21.336L10.446 19.7944C10.5435 19.5252 10.5072 19.2256 10.348 18.9876C9.67627 17.9829 9.31203 16.8041 9.29983 15.5956C9.30077 14.1976 9.76668 12.8396 10.6242 11.7354C11.4827 10.6302 12.6847 9.84218 14.0406 9.49583Z",
-					fill: "#1A1A1B"
-				})),
-				R = e => r.a.createElement("svg", {
-					className: e.className,
-					width: "22",
-					height: "24",
-					viewBox: "0 0 22 24",
-					fill: "none",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("path", {
-					"fill-rule": "evenodd",
-					"clip-rule": "evenodd",
-					d: "M10.6816 0C9.46749 0 8.3031 0.482306 7.44459 1.34082C6.58608 2.19932 6.10377 3.36371 6.10377 4.57783V7.08038C6.10377 8.29449 6.58608 9.45888 7.44459 10.3174C8.3031 11.1759 9.46749 11.6582 10.6816 11.6582C11.8957 11.6582 13.0601 11.1759 13.9186 10.3174C14.7771 9.45888 15.2594 8.29449 15.2594 7.08038V4.57783C15.2594 3.36371 14.7771 2.19933 13.9186 1.34082C13.0601 0.482306 11.8957 0 10.6816 0ZM8.73939 2.63562C9.2545 2.12052 9.95313 1.83113 10.6816 1.83113C11.4101 1.83113 12.1087 2.12052 12.6238 2.63562C13.1389 3.15073 13.4283 3.84936 13.4283 4.57783V7.08038C13.4283 7.80885 13.1389 8.50748 12.6238 9.02258C12.1087 9.53769 11.4101 9.82707 10.6816 9.82707C9.95313 9.82707 9.2545 9.53769 8.73939 9.02258C8.22429 8.50748 7.9349 7.80885 7.9349 7.08038V4.57783C7.9349 3.84936 8.22429 3.15073 8.73939 2.63562Z",
-					fill: "#1A1A1B"
-				}), r.a.createElement("path", {
-					d: "M5.79858 13.6236C4.2607 13.6236 2.78581 14.2345 1.69837 15.322C0.610921 16.4094 0 17.8843 0 19.4222V23.0844C0 23.5901 0.409913 24 0.915566 24C1.42122 24 1.83113 23.5901 1.83113 23.0844V19.4222C1.83113 18.3699 2.24913 17.3608 2.99317 16.6168C3.73721 15.8727 4.74635 15.4547 5.79858 15.4547H15.5646C16.6169 15.4547 17.626 15.8727 18.37 16.6168C19.1141 17.3608 19.5321 18.3699 19.5321 19.4222V23.0844C19.5321 23.5901 19.942 24 20.4476 24C20.9533 24 21.3632 23.5901 21.3632 23.0844V19.4222C21.3632 17.8843 20.7523 16.4094 19.6648 15.322C18.5774 14.2345 17.1025 13.6236 15.5646 13.6236H5.79858Z",
-					fill: "#1A1A1B"
-				})),
-				f = e => r.a.createElement("svg", {
+				src: "".concat(c.a.assetPath, "/img/crisis-line-icon.png")
+			})), r.a.createElement(v, null, C._("Would you like Reddit to reach out to {username} ?", [C._param("username", r.a.createElement("span", null, "u/", e.username))], {
+				hk: "3RFVlj"
+			})), r.a.createElement(x, null, C._("We’ve partnered with {ctl} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [C._param("ctl", r.a.createElement("a", {
+				href: "https://www.crisistextline.org/",
+				target: "_blank"
+			}, "Crisis Text Line")), C._param("username", r.a.createElement("strong", null, "u/", e.username))], {
+				hk: "srFNa"
+			})));
+			var b = e => r.a.createElement("svg", {
+				className: e.className,
+				width: "7",
+				height: "12",
+				viewBox: "0 0 7 12",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, r.a.createElement("path", {
+				"fill-rule": "evenodd",
+				"clip-rule": "evenodd",
+				d: "M0.21967 11.7803C-0.0732233 11.4874 -0.0732233 11.0126 0.21967 10.7197L4.68934 6.25L0.21967 1.78033C-0.0732233 1.48744 -0.0732233 1.01256 0.21967 0.71967C0.512563 0.426777 0.987437 0.426777 1.28033 0.71967L6.28033 5.71967C6.57322 6.01256 6.57322 6.48744 6.28033 6.78033L1.28033 11.7803C0.987437 12.0732 0.512563 12.0732 0.21967 11.7803Z",
+				fill: "#D3D6DA"
+			}));
+			var E = e => r.a.createElement("svg", {
+				className: e.className,
+				width: "24",
+				height: "24",
+				viewBox: "0 0 24 24",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, r.a.createElement("path", {
+				"fill-rule": "evenodd",
+				"clip-rule": "evenodd",
+				d: "M12.504 1.40581C10.8548 0.436577 8.91582 0.0822804 7.03046 0.405669C5.1451 0.729058 3.43503 1.70926 2.20312 3.17267C0.971219 4.63608 0.296983 6.48826 0.299833 8.40115H0.299805L0.299872 8.40828C0.313102 9.81313 0.695242 11.187 1.40423 12.3936L0.35366 15.2932C0.235566 15.6192 0.315178 15.984 0.558332 16.2311C0.801486 16.4782 1.16495 16.5636 1.49275 16.4508L4.41155 15.4461C4.8205 15.6752 5.24681 15.8723 5.68667 16.0356C6.15267 16.2085 6.67064 15.971 6.84359 15.505C7.01655 15.039 6.77899 14.521 6.31299 14.348C5.85073 14.1765 5.40714 13.9583 4.98911 13.6968C4.75881 13.5527 4.47577 13.5204 4.21892 13.6088L2.68747 14.1359L3.246 12.5944C3.34354 12.3252 3.30716 12.0256 3.14802 11.7876C2.47615 10.7827 2.1119 9.60363 2.09983 8.3949C2.09845 6.90836 2.62279 5.46917 3.58017 4.33187C4.53832 3.19367 5.86837 2.43129 7.33476 2.17976C8.80115 1.92824 10.3092 2.2038 11.5919 2.95764C12.8746 3.71149 13.8491 4.89497 14.3428 6.29846C14.5078 6.76735 15.0216 7.01375 15.4905 6.84881C15.9594 6.68386 16.2058 6.17004 16.0408 5.70115C15.4061 3.89665 14.1531 2.37504 12.504 1.40581ZM18.8305 8.17201C17.1805 7.45435 15.3385 7.30651 13.5952 7.75182C11.8518 8.19714 10.3064 9.21026 9.20265 10.6313C8.09895 12.0524 7.49983 13.8005 7.49983 15.5998H7.49979L7.49987 15.6083C7.5131 17.0132 7.89524 18.387 8.60423 19.5937L7.55365 22.4932C7.43556 22.8192 7.51517 23.184 7.75833 23.4311C8.00148 23.6782 8.36494 23.7637 8.69274 23.6508L11.6074 22.6476C13.0373 23.4576 14.6834 23.8153 16.3272 23.6671C18.1192 23.5055 19.8065 22.7519 21.1227 21.525C22.4389 20.2982 23.3092 18.668 23.5961 16.8917C23.8831 15.1154 23.5705 13.2941 22.7075 11.7152C21.8446 10.1363 20.4805 8.88968 18.8305 8.17201ZM14.0406 9.49583C15.3966 9.14947 16.8292 9.26445 18.1126 9.82264C19.3959 10.3808 20.4569 11.3504 21.1281 12.5785C21.7992 13.8065 22.0424 15.2231 21.8192 16.6046C21.596 17.9862 20.9191 19.2541 19.8954 20.2083C18.8717 21.1625 17.5594 21.7487 16.1655 21.8744C14.7717 22.0001 13.3757 21.658 12.1978 20.9023C11.9661 20.7537 11.6792 20.7192 11.4189 20.8088L9.88747 21.336L10.446 19.7944C10.5435 19.5252 10.5072 19.2256 10.348 18.9876C9.67627 17.9829 9.31203 16.8041 9.29983 15.5956C9.30077 14.1976 9.76668 12.8396 10.6242 11.7354C11.4827 10.6302 12.6847 9.84218 14.0406 9.49583Z",
+				fill: "#1A1A1B"
+			}));
+			var R = e => r.a.createElement("svg", {
+				className: e.className,
+				width: "22",
+				height: "24",
+				viewBox: "0 0 22 24",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, r.a.createElement("path", {
+				"fill-rule": "evenodd",
+				"clip-rule": "evenodd",
+				d: "M10.6816 0C9.46749 0 8.3031 0.482306 7.44459 1.34082C6.58608 2.19932 6.10377 3.36371 6.10377 4.57783V7.08038C6.10377 8.29449 6.58608 9.45888 7.44459 10.3174C8.3031 11.1759 9.46749 11.6582 10.6816 11.6582C11.8957 11.6582 13.0601 11.1759 13.9186 10.3174C14.7771 9.45888 15.2594 8.29449 15.2594 7.08038V4.57783C15.2594 3.36371 14.7771 2.19933 13.9186 1.34082C13.0601 0.482306 11.8957 0 10.6816 0ZM8.73939 2.63562C9.2545 2.12052 9.95313 1.83113 10.6816 1.83113C11.4101 1.83113 12.1087 2.12052 12.6238 2.63562C13.1389 3.15073 13.4283 3.84936 13.4283 4.57783V7.08038C13.4283 7.80885 13.1389 8.50748 12.6238 9.02258C12.1087 9.53769 11.4101 9.82707 10.6816 9.82707C9.95313 9.82707 9.2545 9.53769 8.73939 9.02258C8.22429 8.50748 7.9349 7.80885 7.9349 7.08038V4.57783C7.9349 3.84936 8.22429 3.15073 8.73939 2.63562Z",
+				fill: "#1A1A1B"
+			}), r.a.createElement("path", {
+				d: "M5.79858 13.6236C4.2607 13.6236 2.78581 14.2345 1.69837 15.322C0.610921 16.4094 0 17.8843 0 19.4222V23.0844C0 23.5901 0.409913 24 0.915566 24C1.42122 24 1.83113 23.5901 1.83113 23.0844V19.4222C1.83113 18.3699 2.24913 17.3608 2.99317 16.6168C3.73721 15.8727 4.74635 15.4547 5.79858 15.4547H15.5646C16.6169 15.4547 17.626 15.8727 18.37 16.6168C19.1141 17.3608 19.5321 18.3699 19.5321 19.4222V23.0844C19.5321 23.5901 19.942 24 20.4476 24C20.9533 24 21.3632 23.5901 21.3632 23.0844V19.4222C21.3632 17.8843 20.7523 16.4094 19.6648 15.322C18.5774 14.2345 17.1025 13.6236 15.5646 13.6236H5.79858Z",
+				fill: "#1A1A1B"
+			}));
+			var f = e => r.a.createElement("svg", {
 					className: e.className,
 					width: "64",
 					height: "64",
@@ -453,15 +453,34 @@
 				}
 			}
 			var Ie = Object(o.b)(De, e => ({
-					onOpenDropdown: () => e(Object(ye.c)({
-						tooltipId: Ue
-					}))
-				}))(Ne),
-				Ze = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./src/chat/controls/AccordionSection/index.m.less")),
-				Be = n.n(Ze);
+				onOpenDropdown: () => e(Object(ye.c)({
+					tooltipId: Ue
+				}))
+			}))(Ne);
+			n("./node_modules/core-js/modules/es6.symbol.js");
+			var Ze = e => r.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 12 12",
+				xmlns: "http://www.w3.org/2000/svg",
+				onClick: e.onClick
+			}, r.a.createElement("g", null, r.a.createElement("polygon", {
+				fill: "inherit",
+				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
+			})));
+			var Be = e => r.a.createElement("svg", {
+					className: e.className,
+					viewBox: "0 0 12 12",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, r.a.createElement("g", null, r.a.createElement("polygon", {
+					fill: "inherit",
+					transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
+					points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
+				}))),
+				je = n("./src/chat/controls/AccordionSection/index.m.less"),
+				Pe = n.n(je);
 
-			function je() {
-				return (je = Object.assign || function(e) {
+			function qe() {
+				return (qe = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -469,7 +488,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Pe = function(e, t) {
+			var Ae = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -478,68 +497,52 @@
 				}
 				return n
 			};
-			const qe = p.a.div("Section", Be.a),
-				Ae = p.a.wrapped(e => r.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 12 12",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("g", null, r.a.createElement("polygon", {
-					fill: "inherit",
-					transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-					points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-				}))), "ChevronUp", Be.a),
-				Ve = p.a.wrapped(e => r.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 12 12",
-					xmlns: "http://www.w3.org/2000/svg",
-					onClick: e.onClick
-				}, r.a.createElement("g", null, r.a.createElement("polygon", {
-					fill: "inherit",
-					points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-				}))), "ChevronDown", Be.a),
-				Ye = p.a.div("ArticleWrap", Be.a),
-				Me = e => {
-					var {
-						isOpen: t
-					} = e, n = Pe(e, ["isOpen"]);
-					return r.a.createElement(Ye, je({
-						className: Object(Y.a)({
-							[Be.a.open]: t
-						})
-					}, n))
-				},
-				Xe = p.a.div("SectionHead", Be.a),
+			const Ve = p.a.div("Section", Pe.a),
+				Ye = p.a.wrapped(Be, "ChevronUp", Pe.a),
+				Me = p.a.wrapped(Ze, "ChevronDown", Pe.a),
+				Xe = p.a.div("ArticleWrap", Pe.a),
 				Ge = e => {
 					var {
 						isOpen: t
-					} = e, n = Pe(e, ["isOpen"]);
-					return r.a.createElement(Xe, je({
+					} = e, n = Ae(e, ["isOpen"]);
+					return r.a.createElement(Xe, qe({
 						className: Object(Y.a)({
-							[Be.a.open]: t
+							[Pe.a.open]: t
 						})
 					}, n))
 				},
-				We = p.a.div("Article", Be.a);
-			class ze extends r.a.Component {
+				We = p.a.div("SectionHead", Pe.a),
+				ze = e => {
+					var {
+						isOpen: t
+					} = e, n = Ae(e, ["isOpen"]);
+					return r.a.createElement(We, qe({
+						className: Object(Y.a)({
+							[Pe.a.open]: t
+						})
+					}, n))
+				},
+				Je = p.a.div("Article", Pe.a);
+			class Ke extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleClick = () => {
 						this.props.open || (this.props.onOpen(), this.props.onSwitchSection())
 					}
 				}
 				render() {
-					return r.a.createElement("div", null, r.a.createElement(qe, null, this.props.open ? r.a.createElement(Ae, null) : r.a.createElement(Ve, null), r.a.createElement(Ge, {
+					return r.a.createElement("div", null, r.a.createElement(Ve, null, this.props.open ? r.a.createElement(Ye, null) : r.a.createElement(Me, null), r.a.createElement(ze, {
 						onClick: this.handleClick,
 						isOpen: this.props.open
-					}, this.props.title), r.a.createElement(Me, {
+					}, this.props.title), r.a.createElement(Ge, {
 						isOpen: this.props.open,
 						height: this.props.height
-					}, this.props.open ? r.a.createElement(We, null, this.props.children) : null)))
+					}, this.props.open ? r.a.createElement(Je, null, this.props.children) : null)))
 				}
 			}
-			var Je = Object(o.b)(null, e => ({
+			var Qe = Object(o.b)(null, e => ({
 				onSwitchSection: () => e(Object(ye.d)())
-			}))(ze);
-			class Ke {
+			}))(Ke);
+			class $e {
 				constructor() {
 					this.sequence = []
 				}
@@ -551,10 +554,10 @@
 					n.push(e), this.sequence = n
 				}
 			}
-			class Qe extends r.a.Component {
+			class et extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
-						rulesSequence: new Ke
+						rulesSequence: new $e
 					}, this.onUpdateRulesSequence = this.onUpdateRulesSequence.bind(this)
 				}
 				onUpdateRulesSequence(e, t) {
@@ -565,7 +568,7 @@
 						props: n,
 						state: s
 					} = this, a = s.rulesSequence.getSequence();
-					return r.a.createElement(Je, {
+					return r.a.createElement(Qe, {
 						key: e.reasonTextToShow,
 						title: e.reasonTextToShow,
 						open: a.length > 0 && a[0] === t,
@@ -592,12 +595,12 @@
 					}))
 				}
 			}
-			var $e = Qe,
-				et = n("./src/chat/models/ReportFlow/index.ts");
-			const tt = Object(l.c)({
+			var tt = et,
+				nt = n("./src/chat/models/ReportFlow/index.ts");
+			const st = Object(l.c)({
 				reasons: e => e.sitewideRules
 			});
-			class nt extends r.a.Component {
+			class at extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						reason: void 0
@@ -618,9 +621,9 @@
 						hk: "3to8dr"
 					}));
 					switch (e) {
-						case et.a.Default:
-						case et.a.Invite:
-							return r.a.createElement($e, {
+						case nt.a.Default:
+						case nt.a.Invite:
+							return r.a.createElement(tt, {
 								reasons: t,
 								onRuleChange: e => {
 									this.setState({
@@ -628,15 +631,15 @@
 									}), n(e)
 								}
 							});
-						case et.a.FileComplaint:
+						case nt.a.FileComplaint:
 							return this.state.reason && r.a.createElement(Te, {
 								selectedReason: this.state.reason
 							});
-						case et.a.BlockUser:
+						case nt.a.BlockUser:
 							return r.a.createElement(Re, {
 								userId: this.props.blockedUserId
 							});
-						case et.a.CrisisTextLine:
+						case nt.a.CrisisTextLine:
 							return r.a.createElement(P, {
 								username: this.props.blockedUserName,
 								ctlSubmitted: this.props.ctlSubmitted
@@ -644,10 +647,10 @@
 					}
 				}
 			}
-			const st = Object(o.b)(tt, e => ({
+			const rt = Object(o.b)(st, e => ({
 				fetchRules: () => e(Object(i.b)())
-			}))(nt);
-			t.default = st
+			}))(at);
+			t.default = rt
 		},
 		"./src/chat/controls/AccordionSection/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -680,4 +683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatReportFlow.dd55e6b892b227dc3d4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.5f8bfd020e0dd56563dd.js.map

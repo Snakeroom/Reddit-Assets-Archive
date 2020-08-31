@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3a43ea7a51056e5865d5.js
-// Retrieved at 8/27/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.47a0a06b37593d539def.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -3229,7 +3229,7 @@
 		"./src/reddit/components/SubredditChannelList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return J
+				return Y
 			}));
 			var n = s("./node_modules/lodash/orderBy.js"),
 				r = s.n(n),
@@ -3251,16 +3251,8 @@
 				O = s("./src/reddit/helpers/trackers/chat.ts"),
 				y = s("./src/reddit/icons/fonts/Pencil/index.tsx"),
 				w = s("./src/reddit/icons/svgs/Chat/index.tsx"),
-				v = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				j = s("./src/reddit/models/SubredditChannel/index.ts"),
-				C = s("./src/reddit/selectors/chat.ts"),
-				E = s("./src/reddit/selectors/subreddit.ts"),
-				_ = s("./src/reddit/selectors/subredditChannel.ts"),
-				N = s("./src/reddit/components/SubredditChannelList/index.m.less"),
-				S = s.n(N);
-			const {
-				fbt: I
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), T = c.a.wrapped(h.g, "ModalFormItem", S.a), P = c.a.wrapped(k.f, "PrimaryButton", S.a), R = c.a.wrapped(h.o, "ModalText", S.a), L = c.a.a("ItemLink", S.a), M = c.a.p("Detail", S.a), D = c.a.p("DescText", S.a), W = c.a.div("Title", S.a), B = c.a.div("Header", S.a), F = c.a.wrapped(w.a, "ChatIcon", S.a), A = c.a.wrapped(v.a, "PlanetIcon", S.a), U = c.a.wrapped(y.a, "Pencil", S.a), H = c.a.wrapped(e => {
+				v = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx");
+			var j = e => {
 				let {
 					className: t
 				} = e;
@@ -3273,30 +3265,40 @@
 				}, a.a.createElement("path", {
 					d: "M30.7205152,44.3911599 L31.8223802,44.3911599 C32.9364596,44.3911599 33.8428946,45.2673804 33.8428946,46.3443238 C33.8428946,46.6873548 33.5548926,46.9657568 33.2000329,46.9657568 L29.3428625,46.9657568 C28.9880028,46.9657568 28.7000008,46.6873548 28.7000008,46.3443238 C28.7000008,45.2673804 29.6064358,44.3911599 30.7205152,44.3911599 Z M32.7044508,42.3845527 C32.7044508,43.1482939 32.0615891,43.7697269 31.271512,43.7697269 C30.4814349,43.7697269 29.8385732,43.1482939 29.8385732,42.3845527 C29.8385732,41.6208116 30.4814349,41 31.271512,41 C32.0615891,41 32.7044508,41.6208116 32.7044508,42.3845527 Z M35.8634091,47.1254029 L36.9652741,47.1254029 C38.0793535,47.1254029 38.9857885,48.0016234 38.9857885,49.0785668 C38.9857885,49.4215978 38.6977865,49.6999998 38.3429268,49.6999998 L34.4857564,49.6999998 C34.1308967,49.6999998 33.8428946,49.4215978 33.8428946,49.0785668 C33.8428946,48.0016234 34.7493297,47.1254029 35.8634091,47.1254029 Z M37.8473447,45.1187958 C37.8473447,45.8825369 37.2044829,46.5039699 36.4144059,46.5039699 C35.6243288,46.5039699 34.9814671,45.8825369 34.9814671,45.1187958 C34.9814671,44.3550546 35.6243288,43.734243 36.4144059,43.734243 C37.2044829,43.734243 37.8473447,44.3550546 37.8473447,45.1187958 Z"
 				})))
-			}, "Group", S.a), V = c.a.wrapped(e => {
-				let {
-					className: t
-				} = e;
-				return a.a.createElement("svg", {
-					className: t,
-					viewBox: "0 0 16 16",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, a.a.createElement("path", {
-					d: "M10.224 7.109c-.623.623-1.709.623-2.332 0a1.652 1.652 0 0 1 0-2.332 1.64 1.64 0 0 1 1.166-.483c.44 0 .855.172 1.166.483a1.652 1.652 0 0 1 0 2.332m.915-3.247A2.923 2.923 0 0 0 9.06 3c-.787 0-1.525.306-2.082.862a2.946 2.946 0 0 0-.403 3.65l-1.76 1.761-.812.811v.001L4 10.087l-.81.81a.646.646 0 0 0 0 .915l.81.811h.001l.27.27a.643.643 0 0 0 .916 0 .648.648 0 0 0 0-.914l-.271-.27a.502.502 0 0 1 0-.708.512.512 0 0 1 .709 0l.27.27a.648.648 0 0 0 .915-.915l-.624-.625L7.49 8.427a2.924 2.924 0 0 0 3.65-.403 2.945 2.945 0 0 0 0-4.162"
-				}))
-			}, "Key", S.a), K = c.a.wrapped(g.b, "SubredditIcon", S.a), G = c.a.button("EditButton", S.a), z = c.a.button("ShowAllLink", S.a), q = c.a.span("ChannelName", S.a), Z = c.a.div("HeaderText", S.a);
-			var J;
+			};
+			var C = e => {
+					let {
+						className: t
+					} = e;
+					return a.a.createElement("svg", {
+						className: t,
+						viewBox: "0 0 16 16",
+						xmlns: "http://www.w3.org/2000/svg"
+					}, a.a.createElement("path", {
+						d: "M10.224 7.109c-.623.623-1.709.623-2.332 0a1.652 1.652 0 0 1 0-2.332 1.64 1.64 0 0 1 1.166-.483c.44 0 .855.172 1.166.483a1.652 1.652 0 0 1 0 2.332m.915-3.247A2.923 2.923 0 0 0 9.06 3c-.787 0-1.525.306-2.082.862a2.946 2.946 0 0 0-.403 3.65l-1.76 1.761-.812.811v.001L4 10.087l-.81.81a.646.646 0 0 0 0 .915l.81.811h.001l.27.27a.643.643 0 0 0 .916 0 .648.648 0 0 0 0-.914l-.271-.27a.502.502 0 0 1 0-.708.512.512 0 0 1 .709 0l.27.27a.648.648 0 0 0 .915-.915l-.624-.625L7.49 8.427a2.924 2.924 0 0 0 3.65-.403 2.945 2.945 0 0 0 0-4.162"
+					}))
+				},
+				E = s("./src/reddit/models/SubredditChannel/index.ts"),
+				_ = s("./src/reddit/selectors/chat.ts"),
+				N = s("./src/reddit/selectors/subreddit.ts"),
+				S = s("./src/reddit/selectors/subredditChannel.ts"),
+				I = s("./src/reddit/components/SubredditChannelList/index.m.less"),
+				T = s.n(I);
+			const {
+				fbt: P
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = c.a.wrapped(h.g, "ModalFormItem", T.a), L = c.a.wrapped(k.f, "PrimaryButton", T.a), M = c.a.wrapped(h.o, "ModalText", T.a), D = c.a.a("ItemLink", T.a), W = c.a.p("Detail", T.a), B = c.a.p("DescText", T.a), F = c.a.div("Title", T.a), A = c.a.div("Header", T.a), U = c.a.wrapped(w.a, "ChatIcon", T.a), H = c.a.wrapped(v.a, "PlanetIcon", T.a), V = c.a.wrapped(y.a, "Pencil", T.a), K = c.a.wrapped(j, "Group", T.a), G = c.a.wrapped(C, "Key", T.a), z = c.a.wrapped(g.b, "SubredditIcon", T.a), q = c.a.button("EditButton", T.a), Z = c.a.button("ShowAllLink", T.a), J = c.a.span("ChannelName", T.a), X = c.a.div("HeaderText", T.a);
+			var Y;
 			! function(e) {
 				e[e.Modal = 0] = "Modal", e[e.Widget = 1] = "Widget"
-			}(J || (J = {}));
-			const X = Object(d.c)({
-					isCollectionReady: _.e,
-					isModerator: C.e,
-					selectedSubreddit: E.R,
-					shouldRequestCollection: _.f,
-					subredditChannels: _.a
+			}(Y || (Y = {}));
+			const Q = Object(d.c)({
+					isCollectionReady: S.e,
+					isModerator: _.e,
+					selectedSubreddit: N.R,
+					shouldRequestCollection: S.f,
+					subredditChannels: S.a
 				}),
-				Y = Object(o.b)(X, (e, t) => {
+				$ = Object(o.b)(Q, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -3314,7 +3316,7 @@
 						}))
 					}
 				});
-			class Q extends a.a.Component {
+			class ee extends a.a.Component {
 				constructor(e) {
 					super(e)
 				}
@@ -3355,13 +3357,13 @@
 				trackItemClick(e) {
 					const {
 						Joined: t
-					} = j.a, {
+					} = E.a, {
 						channelId: s,
 						channelState: n
 					} = e, {
 						Widget: r,
 						Modal: i
-					} = J, {
+					} = Y, {
 						parentContext: a,
 						sendEvent: o
 					} = this.props;
@@ -3397,7 +3399,7 @@
 					const c = this.displayChannelsList();
 					return a.a.createElement("div", {
 						className: e
-					}, c.length ? a.a.createElement(T, null, c.map((e, t) => a.a.createElement(L, {
+					}, c.length ? a.a.createElement(R, null, c.map((e, t) => a.a.createElement(D, {
 						key: "item-link-".concat(t),
 						href: this.getLinkURL(e),
 						target: l.c.BLANK,
@@ -3405,53 +3407,53 @@
 						onClick: t => {
 							this.onItemClick(e), t.stopPropagation(), t.preventDefault()
 						}
-					}, a.a.createElement(W, {
-						key: "item-link-title-".concat(t)
 					}, a.a.createElement(F, {
+						key: "item-link-title-".concat(t)
+					}, a.a.createElement(U, {
 						key: "item-link-icon-".concat(t)
-					}), i.icon.url ? a.a.createElement(K, {
+					}), i.icon.url ? a.a.createElement(z, {
 						key: "subreddit-icon-".concat(t),
 						iconUrl: i.icon.url
-					}) : a.a.createElement(A, {
+					}) : a.a.createElement(H, {
 						key: "planet-".concat(t),
 						isSmall: !0
-					}), a.a.createElement(B, {
+					}), a.a.createElement(A, {
 						key: "item-header-".concat(t)
-					}, a.a.createElement(Z, {
+					}, a.a.createElement(X, {
 						key: "item-header-text-".concat(t)
-					}, a.a.createElement(M, {
+					}, a.a.createElement(W, {
 						key: "item-detail-".concat(t)
-					}, i.name, I._({
+					}, i.name, P._({
 						"*": "• {number} Members",
 						_1: "• 1 Member"
-					}, [I._plural(e.membersCount, "number")], {
+					}, [P._plural(e.membersCount, "number")], {
 						hk: "4bUTpG"
-					})), a.a.createElement(q, {
+					})), a.a.createElement(J, {
 						key: "channel-name-".concat(t)
-					}, e.type === j.c.Public ? a.a.createElement(H, null) : a.a.createElement(V, null), e.name)), s && a.a.createElement(G, {
+					}, e.type === E.c.Public ? a.a.createElement(K, null) : a.a.createElement(G, null), e.name)), s && a.a.createElement(q, {
 						key: "button-".concat(t),
 						onClick: t => {
 							o(e.channelId), r(), t.stopPropagation(), t.preventDefault(), this.props.sendEvent(Object(O.l)())
 						}
-					}, a.a.createElement(U, null)))), e.description && a.a.createElement(D, {
+					}, a.a.createElement(V, null)))), e.description && a.a.createElement(B, {
 						key: "desc-text-".concat(t)
-					}, e.description))), this.displayShowAllLink() && a.a.createElement(z, {
+					}, e.description))), this.displayShowAllLink() && a.a.createElement(Z, {
 						type: "button",
 						onClick: () => this.onShowAllClick()
-					}, I._("See more", null, {
+					}, P._("See more", null, {
 						hk: "lhTm0"
-					}))) : s ? a.a.createElement(T, null, a.a.createElement(R, null, I._("Create your first room and get your community chatting in real time.", null, {
+					}))) : s ? a.a.createElement(R, null, a.a.createElement(M, null, P._("Create your first room and get your community chatting in real time.", null, {
 						hk: "2zKL0L"
-					})), a.a.createElement(P, {
+					})), a.a.createElement(L, {
 						onClick: n || d
-					}, I._("+ Add room", null, {
+					}, P._("+ Add room", null, {
 						hk: "2vBAvZ"
-					}))) : a.a.createElement(T, null, a.a.createElement(R, null, I._("There are no joined chatrooms yet", null, {
+					}))) : a.a.createElement(R, null, a.a.createElement(M, null, P._("There are no joined chatrooms yet", null, {
 						hk: "3n65KN"
 					}))))
 				}
 			}
-			t.b = Y(Object(f.c)(Q))
+			t.b = $(Object(f.c)(ee))
 		},
 		"./src/reddit/components/SubredditNav/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7212,4 +7214,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditWiki.3a43ea7a51056e5865d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.47a0a06b37593d539def.js.map

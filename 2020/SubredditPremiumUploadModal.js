@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.63e769d75c9ea67b39a8.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.024ea1e8fbbe89800033.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, s) {
@@ -120,73 +120,76 @@
 				w = s("./src/reddit/controls/FileDrop/index.tsx"),
 				k = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				O = s("./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less"),
-				S = s.n(O),
-				j = function() {
-					return o.a.createElement("svg", {
-						className: S.a.uploadDropImage,
-						width: "120",
-						height: "120",
-						viewBox: "0 0 148 148",
-						fill: "none",
-						xmlns: "http://www.w3.org/2000/svg"
-					}, o.a.createElement("rect", {
-						x: "0.5",
-						y: "0.5",
-						width: "147",
-						height: "147",
-						rx: "7.5",
-						stroke: "#878A8C",
-						strokeDasharray: "8 5"
-					}), o.a.createElement("path", {
-						fillRule: "evenodd",
-						clipRule: "evenodd",
-						d: "M81.1381 65.0875C81.1973 65.0859 81.2565 65.0859 81.3141 65.0859C85.2213 65.0859 88.4005 68.2635 88.4005 72.1707C88.4005 73.0539 87.6837 73.7707 86.8005 73.7707C85.9157 73.7707 85.2005 73.0539 85.2005 72.1707C85.2005 70.0283 83.4565 68.2859 81.3141 68.2859C81.0565 68.2859 80.8069 68.3163 80.5637 68.3627C79.8645 68.4987 79.1461 68.1499 78.8261 67.5035C77.3829 64.6027 74.4837 62.7995 71.2565 62.7995C66.5941 62.7995 62.8005 66.5931 62.8005 71.2571C62.8005 72.1403 62.0837 72.8571 61.2005 72.8571C60.3157 72.8571 59.6005 72.1403 59.6005 71.2571C59.6005 64.8299 64.8293 59.5995 71.2565 59.5995C75.3269 59.5995 79.0181 61.6763 81.1381 65.0875ZM74.612 69.324C74.8072 69.404 74.9848 69.5224 75.132 69.6696L79.932 74.4696C80.556 75.0936 80.556 76.1064 79.932 76.732C79.6184 77.044 79.2088 77.2008 78.7992 77.2008C78.3912 77.2008 77.9816 77.044 77.668 76.732L75.5992 74.6632V85.2008C75.5992 86.084 74.884 86.8008 73.9992 86.8008C73.116 86.8008 72.3992 86.084 72.3992 85.2008V74.6632L70.332 76.732C69.7064 77.356 68.6936 77.356 68.068 76.732C67.444 76.1064 67.444 75.0936 68.068 74.4696L72.868 69.6696C73.0152 69.5224 73.1928 69.404 73.388 69.324C73.78 69.1624 74.22 69.1624 74.612 69.324Z",
-						fill: "#878A8C"
-					}))
-				};
+				S = s.n(O);
+
+			function j() {
+				return o.a.createElement("svg", {
+					className: S.a.uploadDropImage,
+					width: "120",
+					height: "120",
+					viewBox: "0 0 148 148",
+					fill: "none",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, o.a.createElement("rect", {
+					x: "0.5",
+					y: "0.5",
+					width: "147",
+					height: "147",
+					rx: "7.5",
+					stroke: "#878A8C",
+					strokeDasharray: "8 5"
+				}), o.a.createElement("path", {
+					fillRule: "evenodd",
+					clipRule: "evenodd",
+					d: "M81.1381 65.0875C81.1973 65.0859 81.2565 65.0859 81.3141 65.0859C85.2213 65.0859 88.4005 68.2635 88.4005 72.1707C88.4005 73.0539 87.6837 73.7707 86.8005 73.7707C85.9157 73.7707 85.2005 73.0539 85.2005 72.1707C85.2005 70.0283 83.4565 68.2859 81.3141 68.2859C81.0565 68.2859 80.8069 68.3163 80.5637 68.3627C79.8645 68.4987 79.1461 68.1499 78.8261 67.5035C77.3829 64.6027 74.4837 62.7995 71.2565 62.7995C66.5941 62.7995 62.8005 66.5931 62.8005 71.2571C62.8005 72.1403 62.0837 72.8571 61.2005 72.8571C60.3157 72.8571 59.6005 72.1403 59.6005 71.2571C59.6005 64.8299 64.8293 59.5995 71.2565 59.5995C75.3269 59.5995 79.0181 61.6763 81.1381 65.0875ZM74.612 69.324C74.8072 69.404 74.9848 69.5224 75.132 69.6696L79.932 74.4696C80.556 75.0936 80.556 76.1064 79.932 76.732C79.6184 77.044 79.2088 77.2008 78.7992 77.2008C78.3912 77.2008 77.9816 77.044 77.668 76.732L75.5992 74.6632V85.2008C75.5992 86.084 74.884 86.8008 73.9992 86.8008C73.116 86.8008 72.3992 86.084 72.3992 85.2008V74.6632L70.332 76.732C69.7064 77.356 68.6936 77.356 68.068 76.732C67.444 76.1064 67.444 75.0936 68.068 74.4696L72.868 69.6696C73.0152 69.5224 73.1928 69.404 73.388 69.324C73.78 69.1624 74.22 69.1624 74.612 69.324Z",
+					fill: "#878A8C"
+				}))
+			}
 			const {
 				fbt: N
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var M = function(e) {
-					const {
-						image: t,
-						onChange: s
-					} = e;
-					return o.a.createElement(w.a, {
-						onDrop: e => s(e[0]),
-						render: n => o.a.createElement("div", {
-							className: Object(C.a)(S.a.container, {
-								[S.a.isOver]: n
-							})
-						}, o.a.createElement("div", {
-							className: S.a.label
-						}, N._("Image", null, {
-							hk: "34LRIF"
-						}), t && o.a.createElement("button", {
-							className: S.a.trashIcon,
-							onClick: () => e.onChange()
-						}, o.a.createElement(k.a, null))), o.a.createElement("label", {
-							className: S.a.dropTarget
-						}, t ? o.a.createElement("div", {
-							className: S.a.imagePreview
-						}, o.a.createElement("div", {
-							className: S.a.image,
-							style: {
-								backgroundImage: "url(".concat(t.url, ")")
-							}
-						})) : o.a.createElement(j, null), o.a.createElement("input", {
-							type: "file",
-							className: S.a.imageInput,
-							onChange: e => {
-								const t = e.currentTarget.files && e.currentTarget.files[0];
-								t && s(t)
-							},
-							accept: "image/x-png,image/png,image/jpeg,image/gif",
-							multiple: !1
-						})))
-					})
-				},
-				D = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts")),
+
+			function M(e) {
+				const {
+					image: t,
+					onChange: s
+				} = e;
+				return o.a.createElement(w.a, {
+					onDrop: e => s(e[0]),
+					render: n => o.a.createElement("div", {
+						className: Object(C.a)(S.a.container, {
+							[S.a.isOver]: n
+						})
+					}, o.a.createElement("div", {
+						className: S.a.label
+					}, N._("Image", null, {
+						hk: "34LRIF"
+					}), t && o.a.createElement("button", {
+						className: S.a.trashIcon,
+						onClick: () => e.onChange()
+					}, o.a.createElement(k.a, null))), o.a.createElement("label", {
+						className: S.a.dropTarget
+					}, t ? o.a.createElement("div", {
+						className: S.a.imagePreview
+					}, o.a.createElement("div", {
+						className: S.a.image,
+						style: {
+							backgroundImage: "url(".concat(t.url, ")")
+						}
+					})) : o.a.createElement(j, null), o.a.createElement("input", {
+						type: "file",
+						className: S.a.imageInput,
+						onChange: e => {
+							const t = e.currentTarget.files && e.currentTarget.files[0];
+							t && s(t)
+						},
+						accept: "image/x-png,image/png,image/jpeg,image/gif",
+						multiple: !1
+					})))
+				})
+			}
+			s("./node_modules/core-js/modules/es6.symbol.js");
+			var D = s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
 				I = s("./src/reddit/components/Economics/SubredditPremium/UploadModal/LimitedInput/index.m.less"),
 				T = s.n(I);
 
@@ -282,65 +285,66 @@
 					[F.a.error]: e.isError
 				})
 			}, e.children);
-			var W = function(e) {
-					const {
-						image: t,
-						type: s,
-						username: n,
-						usernameColor: a
-					} = e, r = t && !K(t), i = t && !q(t), l = t && !G(t);
-					return o.a.createElement("div", {
-						className: F.a.container
-					}, o.a.createElement("div", {
-						className: F.a.label
-					}, H._("Requirements", null, {
-						hk: "3zOmGP"
-					})), o.a.createElement("div", {
-						className: F.a.requirements
-					}, o.a.createElement("ul", null, o.a.createElement(V, {
-						isError: r
-					}, H._("PNG or GIF with transparency", null, {
-						hk: "4GzqFi"
-					})), o.a.createElement(V, {
-						isError: i
-					}, H._("Height and width exactly 120×120px", null, {
-						hk: "3WlJuk"
-					})), o.a.createElement(V, {
-						isError: l
-					}, H._("File size limited to {max-file-size} KB", [H._param("max-file-size", Z)], {
-						hk: "2i3L33"
-					})), o.a.createElement(V, null, H._("Add 4px black outline", null, {
-						hk: "2mHGJn"
-					}))), o.a.createElement("br", null), s === x.b.Badge && t && a ? o.a.createElement("div", null, o.a.createElement("div", {
-						className: F.a.label
-					}, H._("Preview", null, {
-						hk: "cOBjy"
-					})), o.a.createElement("div", {
-						className: F.a.preview
-					}, o.a.createElement("div", {
-						className: F.a.badgePreview,
-						style: {
-							backgroundImage: "url(".concat(t.url, ")")
-						}
-					}), o.a.createElement("div", {
-						className: F.a.username,
-						style: {
-							color: a
-						}
-					}, n))) : o.a.createElement(o.a.Fragment, null, H._("Follow this", null, {
-						hk: "3w0v6n"
-					}), " ", o.a.createElement(A.a, {
-						className: F.a.link,
-						to: "https://www.reddit.com/r/FortNiteBR/wiki/badgeemojiguide"
-					}, H._("artistic guide", null, {
-						hk: "3giRwj"
-					})), " ", s === x.b.Badge ? H._("to design your badge to fit in with existing ones.", null, {
-						hk: "1k1Q99"
-					}) : H._("to design your emoji to fit in with existing ones.", null, {
-						hk: "4FDotU"
-					}))))
-				},
-				X = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+
+			function W(e) {
+				const {
+					image: t,
+					type: s,
+					username: n,
+					usernameColor: a
+				} = e, r = t && !K(t), i = t && !q(t), l = t && !G(t);
+				return o.a.createElement("div", {
+					className: F.a.container
+				}, o.a.createElement("div", {
+					className: F.a.label
+				}, H._("Requirements", null, {
+					hk: "3zOmGP"
+				})), o.a.createElement("div", {
+					className: F.a.requirements
+				}, o.a.createElement("ul", null, o.a.createElement(V, {
+					isError: r
+				}, H._("PNG or GIF with transparency", null, {
+					hk: "4GzqFi"
+				})), o.a.createElement(V, {
+					isError: i
+				}, H._("Height and width exactly 120×120px", null, {
+					hk: "3WlJuk"
+				})), o.a.createElement(V, {
+					isError: l
+				}, H._("File size limited to {max-file-size} KB", [H._param("max-file-size", Z)], {
+					hk: "2i3L33"
+				})), o.a.createElement(V, null, H._("Add 4px black outline", null, {
+					hk: "2mHGJn"
+				}))), o.a.createElement("br", null), s === x.b.Badge && t && a ? o.a.createElement("div", null, o.a.createElement("div", {
+					className: F.a.label
+				}, H._("Preview", null, {
+					hk: "cOBjy"
+				})), o.a.createElement("div", {
+					className: F.a.preview
+				}, o.a.createElement("div", {
+					className: F.a.badgePreview,
+					style: {
+						backgroundImage: "url(".concat(t.url, ")")
+					}
+				}), o.a.createElement("div", {
+					className: F.a.username,
+					style: {
+						color: a
+					}
+				}, n))) : o.a.createElement(o.a.Fragment, null, H._("Follow this", null, {
+					hk: "3w0v6n"
+				}), " ", o.a.createElement(A.a, {
+					className: F.a.link,
+					to: "https://www.reddit.com/r/FortNiteBR/wiki/badgeemojiguide"
+				}, H._("artistic guide", null, {
+					hk: "3giRwj"
+				})), " ", s === x.b.Badge ? H._("to design your badge to fit in with existing ones.", null, {
+					hk: "1k1Q99"
+				}) : H._("to design your emoji to fit in with existing ones.", null, {
+					hk: "4FDotU"
+				}))))
+			}
+			var X = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				Y = s("./src/reddit/components/Economics/SubredditPremium/UploadModal/SubmissionComplete/BadgePreview.m.less"),
 				Q = s.n(Y);
 			const {
@@ -380,40 +384,41 @@
 			}), o.a.createElement("div", {
 				className: se.a.emotePreviewName
 			}, ":", e.name, ":"));
-			var oe = function(e) {
-					const {
-						description: t,
-						image: s,
-						name: n,
-						onCloseModal: a
-					} = e;
-					return o.a.createElement(m.d, {
-						className: se.a.modalBody
-					}, o.a.createElement(m.h, {
-						className: se.a.modalHeader
-					}, o.a.createElement(m.p, {
-						className: se.a.title
-					}, ne._("Thanks!", null, {
-						hk: "SMfWZ"
-					})), o.a.createElement(f.a, {
-						onClick: a
-					}, o.a.createElement(m.b, null))), o.a.createElement(m.k, {
-						className: se.a.modalMain
-					}, o.a.createElement("div", {
-						className: se.a.modMessage
-					}, ne._("Give us a couple of days to review. We'll keep you posted. – Mods", null, {
-						hk: "2XafSh"
-					})), e.type === x.b.Badge ? o.a.createElement(ee, {
-						image: s,
-						name: n,
-						description: t
-					}) : o.a.createElement(ae, e)), o.a.createElement(m.f, null, o.a.createElement(g.f, {
-						onClick: a
-					}, ne._("Okay", null, {
-						hk: "406S0g"
-					}))))
-				},
-				re = s("./node_modules/fbt/lib/FbtPublic.js"),
+
+			function oe(e) {
+				const {
+					description: t,
+					image: s,
+					name: n,
+					onCloseModal: a
+				} = e;
+				return o.a.createElement(m.d, {
+					className: se.a.modalBody
+				}, o.a.createElement(m.h, {
+					className: se.a.modalHeader
+				}, o.a.createElement(m.p, {
+					className: se.a.title
+				}, ne._("Thanks!", null, {
+					hk: "SMfWZ"
+				})), o.a.createElement(f.a, {
+					onClick: a
+				}, o.a.createElement(m.b, null))), o.a.createElement(m.k, {
+					className: se.a.modalMain
+				}, o.a.createElement("div", {
+					className: se.a.modMessage
+				}, ne._("Give us a couple of days to review. We'll keep you posted. – Mods", null, {
+					hk: "2XafSh"
+				})), e.type === x.b.Badge ? o.a.createElement(ee, {
+					image: s,
+					name: n,
+					description: t
+				}) : o.a.createElement(ae, e)), o.a.createElement(m.f, null, o.a.createElement(g.f, {
+					onClick: a
+				}, ne._("Okay", null, {
+					hk: "406S0g"
+				}))))
+			}
+			var re = s("./node_modules/fbt/lib/FbtPublic.js"),
 				ie = s("./src/reddit/controls/DropdownSelector/index.tsx"),
 				le = s("./src/reddit/components/Economics/SubredditPremium/UploadModal/TypeSelector/index.m.less"),
 				ce = s.n(le);
@@ -428,21 +433,22 @@
 				}),
 				value: x.b.Emote
 			}];
-			var me = function(e) {
-					const t = de.find(t => t.value === e.type) || de[0];
-					return o.a.createElement("div", {
-						className: ce.a.container
-					}, o.a.createElement(ie.a, {
-						className: ce.a.selector,
-						displayText: t.displayText(),
-						options: de.map(e => Object.assign(Object.assign({}, e), {
-							displayText: e.displayText()
-						})),
-						onSelect: t => e.onItemTypeSelected(t.value),
-						isCompactStyle: !0
-					}))
-				},
-				ue = s("./node_modules/lodash/throttle.js"),
+
+			function me(e) {
+				const t = de.find(t => t.value === e.type) || de[0];
+				return o.a.createElement("div", {
+					className: ce.a.container
+				}, o.a.createElement(ie.a, {
+					className: ce.a.selector,
+					displayText: t.displayText(),
+					options: de.map(e => Object.assign(Object.assign({}, e), {
+						displayText: e.displayText()
+					})),
+					onSelect: t => e.onItemTypeSelected(t.value),
+					isCompactStyle: !0
+				}))
+			}
+			var ue = s("./node_modules/lodash/throttle.js"),
 				pe = s.n(ue),
 				he = s("./src/reddit/constants/colors.ts"),
 				ge = s("./src/reddit/components/Economics/SubredditPremium/UploadModal/UsernameColor/index.m.less"),
@@ -1234,4 +1240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumUploadModal.63e769d75c9ea67b39a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.024ea1e8fbbe89800033.js.map

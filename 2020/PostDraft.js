@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.f3e3a34639345858a48c.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.a834a9f82f9ca51e92a1.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -331,25 +331,26 @@
 				}).apply(this, arguments)
 			}
 			var l = function(e, t) {
-					var n = {};
-					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
-					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-						var r = 0;
-						for (s = Object.getOwnPropertySymbols(e); r < s.length; r++) t.indexOf(s[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[r]) && (n[s[r]] = e[s[r]])
-					}
-					return n
-				},
-				c = e => {
-					const {
-						children: t,
-						className: n,
-						to: s
-					} = e, o = l(e, ["children", "className", "to"]), c = Object(a.b)(s);
-					return r.a.createElement(i.a, d({
-						className: n,
-						to: c
-					}, o), t)
-				};
+				var n = {};
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var r = 0;
+					for (s = Object.getOwnPropertySymbols(e); r < s.length; r++) t.indexOf(s[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[r]) && (n[s[r]] = e[s[r]])
+				}
+				return n
+			};
+
+			function c(e) {
+				const {
+					children: t,
+					className: n,
+					to: s
+				} = e, o = l(e, ["children", "className", "to"]), c = Object(a.b)(s);
+				return r.a.createElement(i.a, d({
+					className: n,
+					to: c
+				}, o), t)
+			}
 
 			function m() {
 				return (m = Object.assign || function(e) {
@@ -469,12 +470,8 @@
 				o = n.n(r),
 				i = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/lib/constants/index.ts"),
-				l = n("./src/reddit/selectors/postCreations.ts"),
-				c = n("./src/reddit/components/PostingSidebar/PostingReddiquette/index.m.less"),
-				m = n.n(c),
-				u = n("./src/lib/lessComponent.tsx");
-			const p = u.a.wrapped(e => o.a.createElement("svg", {
+				d = n("./src/lib/constants/index.ts");
+			var l = e => o.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 45 43"
@@ -662,38 +659,43 @@
 					strokeLinecap: "round",
 					strokeLinejoin: "round",
 					d: "M24.8624 3.1944c-.9362 1.032-.8485 2.7633.0626 3.8172.9108 1.0536 2.4758 1.4224 3.826 1.0687.64-.1677 1.2505-.4896 1.6915-.981 1.0054-1.121.9137-2.9152.1555-4.215-.237-.407-.534-.784-.9052-1.075-.72-.5643-1.7132-.7643-2.597-.5235-.883.241-1.6355.917-1.9667 1.768"
-				})))), "Snoo", m.a),
-				h = u.a.li("Li", m.a),
-				b = u.a.ol("Ol", m.a),
-				f = u.a.div("Title", m.a),
-				x = Object(a.c)({
-					submissionType: l.fb
+				})))),
+				c = n("./src/reddit/selectors/postCreations.ts"),
+				m = n("./src/reddit/components/PostingSidebar/PostingReddiquette/index.m.less"),
+				u = n.n(m),
+				p = n("./src/lib/lessComponent.tsx");
+			const h = p.a.wrapped(l, "Snoo", u.a),
+				b = p.a.li("Li", u.a),
+				f = p.a.ol("Ol", u.a),
+				x = p.a.div("Title", u.a),
+				g = Object(a.c)({
+					submissionType: c.fb
 				});
-			t.a = u.a.wrapped(Object(i.b)(x)(e => {
+			t.a = p.a.wrapped(Object(i.b)(g)(e => {
 				const {
 					className: t,
 					submissionType: n
 				} = e, r = n === d.Jb.CROSSPOST;
 				return o.a.createElement("div", {
 					className: t
-				}, o.a.createElement(f, null, o.a.createElement(p, null), r ? s.fbt._("Crossposting to Reddit", null, {
+				}, o.a.createElement(x, null, o.a.createElement(h, null), r ? s.fbt._("Crossposting to Reddit", null, {
 					hk: "2ODPDt"
 				}) : s.fbt._("Posting to Reddit", null, {
 					hk: "8eEIT"
-				})), o.a.createElement(b, null, o.a.createElement(h, null, s.fbt._("Remember the human", null, {
+				})), o.a.createElement(f, null, o.a.createElement(b, null, s.fbt._("Remember the human", null, {
 					hk: "1x3u5R"
-				})), o.a.createElement(h, null, s.fbt._("Behave like you would in real life", null, {
+				})), o.a.createElement(b, null, s.fbt._("Behave like you would in real life", null, {
 					hk: "3pxfk1"
-				})), o.a.createElement(h, null, s.fbt._("Look for the original source of content", null, {
+				})), o.a.createElement(b, null, s.fbt._("Look for the original source of content", null, {
 					hk: "1FfUM4"
-				})), o.a.createElement(h, null, s.fbt._("Search for duplicates before posting", null, {
+				})), o.a.createElement(b, null, s.fbt._("Search for duplicates before posting", null, {
 					hk: "3Ij1gf"
-				})), o.a.createElement(h, null, s.fbt._("Read the community’s rules", null, {
+				})), o.a.createElement(b, null, s.fbt._("Read the community’s rules", null, {
 					hk: "3RNQW2"
-				})), r && o.a.createElement(h, null, s.fbt._("You must join a community to crosspost there", null, {
+				})), r && o.a.createElement(b, null, s.fbt._("You must join a community to crosspost there", null, {
 					hk: "1YAEPX"
 				}))))
-			}), "Component", m.a)
+			}), "Component", u.a)
 		},
 		"./src/reddit/components/PostingSidebar/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2033,4 +2035,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=PostDraft.f3e3a34639345858a48c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.a834a9f82f9ca51e92a1.js.map

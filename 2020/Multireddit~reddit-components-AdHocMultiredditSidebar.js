@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.d7a13ac93c821d8170e5.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.1162e784ec19da53a445.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -1124,6 +1124,9 @@
 		},
 		"./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return K
+			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				i = n("./node_modules/lodash/debounce.js"),
 				r = n.n(i),
@@ -1185,15 +1188,15 @@
 				}).apply(this, arguments)
 			}
 			var g = function(e, t) {
-					var n = {};
-					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
-					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-						var i = 0;
-						for (s = Object.getOwnPropertySymbols(e); i < s.length; i++) t.indexOf(s[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[i]) && (n[s[i]] = e[s[i]])
-					}
-					return n
-				},
-				S = e => {
+				var n = {};
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var i = 0;
+					for (s = Object.getOwnPropertySymbols(e); i < s.length; i++) t.indexOf(s[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[i]) && (n[s[i]] = e[s[i]])
+				}
+				return n
+			};
+			var S = e => {
 					var {
 						className: t,
 						children: n,
@@ -1229,53 +1232,55 @@
 				type: "links",
 				Icon: _.a
 			}];
-			var N = e => {
-					const {
-						allowedPostTypes: t,
-						className: n
+
+			function N(e) {
+				const {
+					allowedPostTypes: t,
+					className: n
+				} = e;
+				return d.a.createElement(j.a, {
+					className: Object(a.a)(D.a.rowStyle, n)
+				}, P.map(e => {
+					let {
+						type: n,
+						Icon: s
 					} = e;
-					return d.a.createElement(j.a, {
-						className: Object(a.a)(D.a.rowStyle, n)
-					}, P.map(e => {
-						let {
-							type: n,
-							Icon: s
-						} = e;
-						return d.a.createElement("div", {
-							className: Object(a.a)(D.a.iconWrapper, {
-								[D.a.mDisabled]: !t[n]
-							})
-						}, d.a.createElement(s, null))
-					}))
-				},
-				T = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
+					return d.a.createElement("div", {
+						className: Object(a.a)(D.a.iconWrapper, {
+							[D.a.mDisabled]: !t[n]
+						})
+					}, d.a.createElement(s, null))
+				}))
+			}
+			var T = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
 				F = n.n(T);
 			const R = O.a.wrapped(w.b, "subredditIcon", F.a);
-			var L = e => {
-					const {
-						highlight: t,
-						icon: n,
-						title: s,
-						secondaryText: i,
-						item: r
-					} = e, {
-						allowedPostTypes: o
-					} = r;
-					return d.a.createElement("div", {
-						className: Object(a.a)(F.a.container, {
-							[F.a.mHighlight]: t
-						})
-					}, n, d.a.createElement("div", {
-						className: F.a.main
-					}, d.a.createElement("span", {
-						className: F.a.title
-					}, s), i && d.a.createElement("span", {
-						className: F.a.secondary
-					}, i)), t && o && d.a.createElement(N, {
-						allowedPostTypes: o
-					}))
-				},
-				U = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/ProfileEntryContent/index.m.less"),
+
+			function L(e) {
+				const {
+					highlight: t,
+					icon: n,
+					title: s,
+					secondaryText: i,
+					item: r
+				} = e, {
+					allowedPostTypes: o
+				} = r;
+				return d.a.createElement("div", {
+					className: Object(a.a)(F.a.container, {
+						[F.a.mHighlight]: t
+					})
+				}, n, d.a.createElement("div", {
+					className: F.a.main
+				}, d.a.createElement("span", {
+					className: F.a.title
+				}, s), i && d.a.createElement("span", {
+					className: F.a.secondary
+				}, i)), t && o && d.a.createElement(N, {
+					allowedPostTypes: o
+				}))
+			}
+			var U = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/ProfileEntryContent/index.m.less"),
 				B = n.n(U);
 
 			function A() {
@@ -1287,7 +1292,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var W = e => {
+
+			function W(e) {
 				const {
 					item: {
 						name: t,
@@ -1306,7 +1312,7 @@
 					title: i,
 					secondaryText: r
 				}, e))
-			};
+			}
 
 			function H() {
 				return (H = Object.assign || function(e) {
@@ -1317,31 +1323,32 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var q = e => {
-					const {
-						item: {
-							primaryColor: t,
-							iconUrl: n,
-							name: i,
-							subscribers: r
-						}
-					} = e, o = Object(C.b)(i), a = void 0 !== r ? s.fbt._({
-						"*": "{number} members",
-						_1: "1 member"
-					}, [s.fbt._plural(r, "number")], {
-						hk: "2SvJUX"
-					}) : void 0, c = d.a.createElement(R, {
-						iconUrl: n,
+
+			function q(e) {
+				const {
+					item: {
 						primaryColor: t,
-						redditStyle: !0
-					});
-					return d.a.createElement(L, H({
-						icon: c,
-						title: o,
-						secondaryText: a
-					}, e))
-				},
-				z = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.m.less"),
+						iconUrl: n,
+						name: i,
+						subscribers: r
+					}
+				} = e, o = Object(C.b)(i), a = void 0 !== r ? s.fbt._({
+					"*": "{number} members",
+					_1: "1 member"
+				}, [s.fbt._plural(r, "number")], {
+					hk: "2SvJUX"
+				}) : void 0, c = d.a.createElement(R, {
+					iconUrl: n,
+					primaryColor: t,
+					redditStyle: !0
+				});
+				return d.a.createElement(L, H({
+					icon: c,
+					title: o,
+					secondaryText: a
+				}, e))
+			}
+			var z = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.m.less"),
 				G = n.n(z);
 			const V = {
 				[m.a.OWN_PROFILE]: () => s.fbt._("Your profile", null, {
@@ -1357,7 +1364,7 @@
 					hk: "uZtld"
 				})
 			};
-			t.a = class extends d.a.PureComponent {
+			class K extends d.a.PureComponent {
 				constructor() {
 					super(...arguments), this.selectedEntryElement = null, this.containerElement = null, this.ignoreEntryOverEvents = !1, this.activateEntryOverEvents = r()(() => this.ignoreEntryOverEvents = !1, 100), this.setContainerRef = e => this.containerElement = e, this.onEntryUpdate = (e, t) => {
 						e === this.props.focusedIndex && (this.selectedEntryElement = t)
@@ -1555,4 +1562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Multireddit~reddit-components-AdHocMultiredditSidebar.d7a13ac93c821d8170e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.1162e784ec19da53a445.js.map

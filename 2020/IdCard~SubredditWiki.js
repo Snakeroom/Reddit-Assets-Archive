@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.3bc6178dcd6b533a3a0e.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.a09ccb68a82ca9b78ba2.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -371,8 +371,8 @@
 				m = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				p = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
 				b = n("./src/reddit/helpers/trackers/inlineSubredditEditing.ts"),
-				h = n("./src/reddit/icons/svgs/Plus/index.tsx"),
-				x = e => o.a.createElement("svg", {
+				h = n("./src/reddit/icons/svgs/Plus/index.tsx");
+			var x = e => o.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 16 17",
@@ -655,4 +655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=IdCard~SubredditWiki.3bc6178dcd6b533a3a0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.a09ccb68a82ca9b78ba2.js.map

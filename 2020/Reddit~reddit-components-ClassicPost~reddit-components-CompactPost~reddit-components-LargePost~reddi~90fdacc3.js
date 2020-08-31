@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.c4596358cfd541a53f41.js
-// Retrieved at 8/27/2020, 7:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.4fb1c497df886587ac11.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -528,52 +528,53 @@
 			};
 			var h = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				f = s("./src/reddit/selectors/telemetry.ts");
-			var x = s("./src/reddit/components/CategoryTag/index.m.less"),
-				g = s.n(x);
-			var v = class extends r.a.Component {
-					constructor() {
-						super(...arguments), this.onClick = () => {
-							const e = {
-								id: this.props.category.categoryId,
-								title: this.props.category.categoryName,
-								eventType: u.a.SUBREDDIT,
-								originElement: "meta_flair"
-							};
-							this.props.sendEvent(((e, t) => s => Object.assign(Object.assign({
-								source: "post",
-								action: "click",
-								noun: "meta_flair"
-							}, f.defaults(s)), {
-								correlationId: Object(h.c)(h.a.SearchResults),
-								post: f.post(s, e),
-								search: f.postFlairClickToSearch(s, t),
-								subreddit: f.subreddit(s)
-							}))(this.props.postId, e))
-						}
+			const x = (e, t) => s => Object.assign(Object.assign({
+				source: "post",
+				action: "click",
+				noun: "meta_flair"
+			}, f.defaults(s)), {
+				correlationId: Object(h.c)(h.a.SearchResults),
+				post: f.post(s, e),
+				search: f.postFlairClickToSearch(s, t),
+				subreddit: f.subreddit(s)
+			});
+			var g = s("./src/reddit/components/CategoryTag/index.m.less"),
+				v = s.n(g);
+			class O extends r.a.Component {
+				constructor() {
+					super(...arguments), this.onClick = () => {
+						const e = {
+							id: this.props.category.categoryId,
+							title: this.props.category.categoryName,
+							eventType: u.a.SUBREDDIT,
+							originElement: "meta_flair"
+						};
+						this.props.sendEvent(x(this.props.postId, e))
 					}
-					render() {
-						const e = this.props.category,
-							t = this.props.inLightboxHeader,
-							s = e.categoryId,
-							n = e.categoryName,
-							i = r.a.createElement("span", null, n);
-						return r.a.createElement("span", {
-							className: Object(l.a)(g.a.metaFlair, {
-								[g.a["m-lightboxHeader"]]: t
-							})
-						}, r.a.createElement(m.a, {
-							onClick: this.onClick,
-							to: b(n, s, d.Lb.Relevance, d.Sb.DAY),
-							children: i
-						}))
-					}
-				},
-				O = s("./src/reddit/components/CategoryTagList/index.m.less"),
-				j = s.n(O);
-			const y = Object(i.b)(() => Object(o.c)({
+				}
+				render() {
+					const e = this.props.category,
+						t = this.props.inLightboxHeader,
+						s = e.categoryId,
+						n = e.categoryName,
+						i = r.a.createElement("span", null, n);
+					return r.a.createElement("span", {
+						className: Object(l.a)(v.a.metaFlair, {
+							[v.a["m-lightboxHeader"]]: t
+						})
+					}, r.a.createElement(m.a, {
+						onClick: this.onClick,
+						to: b(n, s, d.Lb.Relevance, d.Sb.DAY),
+						children: i
+					}))
+				}
+			}
+			var j = s("./src/reddit/components/CategoryTagList/index.m.less"),
+				y = s.n(j);
+			const C = Object(i.b)(() => Object(o.c)({
 				labelNSFW: c.P
 			}));
-			t.a = y(Object(a.c)(e => {
+			t.a = C(Object(a.c)(e => {
 				let {
 					postCategories: t,
 					postId: s,
@@ -581,8 +582,8 @@
 					sendEvent: i
 				} = e;
 				return r.a.createElement("span", {
-					className: n ? null : j.a.categoryTagWrapper
-				}, t.map(e => r.a.createElement(v, {
+					className: n ? null : y.a.categoryTagWrapper
+				}, t.map(e => r.a.createElement(O, {
 					postId: s,
 					category: e,
 					key: e.categoryId,
@@ -1213,63 +1214,63 @@
 				x = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
 				g = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				v = s("./src/reddit/components/FlairSearch/FlairTemplateList/index.m.less"),
-				O = s.n(v),
-				j = class extends i.a.Component {
-					constructor() {
-						super(...arguments), this.state = {
-							searchQuery: ""
-						}, this.onSearchChange = e => {
-							this.setState({
-								searchQuery: e.target.value
-							})
-						}
+				O = s.n(v);
+			class j extends i.a.Component {
+				constructor() {
+					super(...arguments), this.state = {
+						searchQuery: ""
+					}, this.onSearchChange = e => {
+						this.setState({
+							searchQuery: e.target.value
+						})
 					}
-					render() {
-						const {
-							templates: e,
-							templateIds: t,
-							selectedTemplateId: s
-						} = this.props, {
-							searchQuery: r
-						} = this.state, o = t.map(t => e[t]).filter(e => e.text.toLowerCase().includes(r)), a = !!s && o.some(e => e.id === s);
-						return i.a.createElement("div", {
-							className: O.a.container
-						}, i.a.createElement("div", {
-							className: O.a.searchBoxWrapper
-						}, i.a.createElement("input", {
-							className: O.a.searchInput,
-							onChange: this.onSearchChange,
-							type: "text",
-							placeholder: n.fbt._("Search for flair", null, {
-								hk: "jQdqA"
-							}),
-							value: r
-						}), i.a.createElement(g.a, {
-							className: O.a.searchIcon
-						})), i.a.createElement(h.a, {
-							name: "flair_picker",
-							onChange: this.props.onChange,
-							value: s
-						}, o.map((e, t) => {
-							const n = Object(u.c)(e),
-								r = s === e.id || !a && 0 === t;
-							return i.a.createElement(f.a, {
-								className: O.a.radioOption,
-								key: e.id,
-								showButton: !0,
-								tabIndex: r ? 0 : -1,
-								value: e.id
-							}, i.a.createElement(b.b, {
-								className: O.a.flairComponent,
-								flair: n,
-								forceSmallEmojis: !0
-							}), e.textEditable && i.a.createElement(x.a, {
-								className: O.a.pencil
-							}))
-						})))
-					}
-				},
-				y = s("./src/reddit/components/FlairSearch/index.m.less"),
+				}
+				render() {
+					const {
+						templates: e,
+						templateIds: t,
+						selectedTemplateId: s
+					} = this.props, {
+						searchQuery: r
+					} = this.state, o = t.map(t => e[t]).filter(e => e.text.toLowerCase().includes(r)), a = !!s && o.some(e => e.id === s);
+					return i.a.createElement("div", {
+						className: O.a.container
+					}, i.a.createElement("div", {
+						className: O.a.searchBoxWrapper
+					}, i.a.createElement("input", {
+						className: O.a.searchInput,
+						onChange: this.onSearchChange,
+						type: "text",
+						placeholder: n.fbt._("Search for flair", null, {
+							hk: "jQdqA"
+						}),
+						value: r
+					}), i.a.createElement(g.a, {
+						className: O.a.searchIcon
+					})), i.a.createElement(h.a, {
+						name: "flair_picker",
+						onChange: this.props.onChange,
+						value: s
+					}, o.map((e, t) => {
+						const n = Object(u.c)(e),
+							r = s === e.id || !a && 0 === t;
+						return i.a.createElement(f.a, {
+							className: O.a.radioOption,
+							key: e.id,
+							showButton: !0,
+							tabIndex: r ? 0 : -1,
+							value: e.id
+						}, i.a.createElement(b.b, {
+							className: O.a.flairComponent,
+							flair: n,
+							forceSmallEmojis: !0
+						}), e.textEditable && i.a.createElement(x.a, {
+							className: O.a.pencil
+						}))
+					})))
+				}
+			}
+			var y = s("./src/reddit/components/FlairSearch/index.m.less"),
 				C = s.n(y);
 			const I = "FlairSearch-EmojiPicker-DropdownId",
 				E = Object(l.a)(e => e && Object(u.c)(e)),
@@ -2230,39 +2231,40 @@
 				E = e => i.a.createElement(m.a, {
 					className: Object(o.a)(j.a, I(e))
 				});
-			var _ = e => {
-					const t = I(e);
-					switch (e.type) {
-						case "gifvideo":
-							return i.a.createElement(u.a, {
-								className: t
-							});
-						case "image":
-							return i.a.createElement(p.a, {
-								className: t
-							});
-						case "meta":
-							return i.a.createElement(O.a, {
-								className: t
-							});
-						case "rtjson":
-						case "text":
-							return i.a.createElement(b.a, {
-								className: t
-							});
-						case "video":
-							return i.a.createElement(g, {
-								className: t
-							});
-						case "gallery":
-							return i.a.createElement(v.a, {
-								className: t
-							});
-						default:
-							return i.a.createElement(E, e)
-					}
-				},
-				w = s("./src/reddit/controls/OutboundLink/index.tsx"),
+
+			function _(e) {
+				const t = I(e);
+				switch (e.type) {
+					case "gifvideo":
+						return i.a.createElement(u.a, {
+							className: t
+						});
+					case "image":
+						return i.a.createElement(p.a, {
+							className: t
+						});
+					case "meta":
+						return i.a.createElement(O.a, {
+							className: t
+						});
+					case "rtjson":
+					case "text":
+						return i.a.createElement(b.a, {
+							className: t
+						});
+					case "video":
+						return i.a.createElement(g, {
+							className: t
+						});
+					case "gallery":
+						return i.a.createElement(v.a, {
+							className: t
+						});
+					default:
+						return i.a.createElement(E, e)
+				}
+			}
+			var w = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				T = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				S = s("./src/reddit/models/Media/index.ts"),
 				k = s("./src/reddit/models/Theme/index.ts"),
@@ -4064,4 +4066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.c4596358cfd541a53f41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.4fb1c497df886587ac11.js.map

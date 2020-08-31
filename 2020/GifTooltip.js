@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.7b0d77d28fc5e8c00b2f.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.75fee4774203cd88916e.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -357,40 +357,41 @@
 			const {
 				fbt: T
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var y = function(e) {
-					return n.a.createElement("div", {
-						className: x.a.tooltip
-					}, n.a.createElement(g.a, {
-						className: x.a.closeIcon,
-						onClick: e.onClose
-					}), n.a.createElement("p", {
-						className: x.a.header
-					}, T._("Join a GIF Train", null, {
-						hk: "4oQ9RF"
-					})), n.a.createElement("p", {
-						className: x.a.description
-					}, T._("Anyone can add a GIF to their comment when replying to another comment with a GIF.", null, {
-						hk: "2fVCMx"
-					})), n.a.createElement("div", {
-						className: x.a.divider
-					}), n.a.createElement("p", {
-						className: x.a.header
-					}, T._("GIF Anywhere", null, {
-						hk: "DSBTZ"
-					})), n.a.createElement("p", {
-						className: x.a.description
-					}, T._("Get a Special Membership to use GIFs in all of your comments {subredditName} .", [T._param("subredditName", "r/".concat(e.subredditName))], {
-						hk: "dQagV"
-					})), n.a.createElement(u.o, {
-						className: x.a.unlockButton,
-						to: Object(m.a)(e.subredditName, e.correlationId)
-					}, n.a.createElement(f.a, {
-						className: x.a.unlockIcon
-					}), T._("Unlock GIFs in Comments", null, {
-						hk: "1sbCTr"
-					})))
-				},
-				E = s("./src/reddit/components/RichTextEditor/media/GifTooltip/index.m.less"),
+
+			function y(e) {
+				return n.a.createElement("div", {
+					className: x.a.tooltip
+				}, n.a.createElement(g.a, {
+					className: x.a.closeIcon,
+					onClick: e.onClose
+				}), n.a.createElement("p", {
+					className: x.a.header
+				}, T._("Join a GIF Train", null, {
+					hk: "4oQ9RF"
+				})), n.a.createElement("p", {
+					className: x.a.description
+				}, T._("Anyone can add a GIF to their comment when replying to another comment with a GIF.", null, {
+					hk: "2fVCMx"
+				})), n.a.createElement("div", {
+					className: x.a.divider
+				}), n.a.createElement("p", {
+					className: x.a.header
+				}, T._("GIF Anywhere", null, {
+					hk: "DSBTZ"
+				})), n.a.createElement("p", {
+					className: x.a.description
+				}, T._("Get a Special Membership to use GIFs in all of your comments {subredditName} .", [T._param("subredditName", "r/".concat(e.subredditName))], {
+					hk: "dQagV"
+				})), n.a.createElement(u.o, {
+					className: x.a.unlockButton,
+					to: Object(m.a)(e.subredditName, e.correlationId)
+				}, n.a.createElement(f.a, {
+					className: x.a.unlockIcon
+				}), T._("Unlock GIFs in Comments", null, {
+					hk: "1sbCTr"
+				})))
+			}
+			var E = s("./src/reddit/components/RichTextEditor/media/GifTooltip/index.m.less"),
 				_ = s.n(E);
 			class C extends n.a.Component {
 				constructor(e) {
@@ -493,4 +494,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GifTooltip.7b0d77d28fc5e8c00b2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.75fee4774203cd88916e.js.map

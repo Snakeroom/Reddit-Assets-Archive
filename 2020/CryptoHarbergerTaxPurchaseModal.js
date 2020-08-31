@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.0e5ad57a54fdde30c75e.js
-// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.83fcfd299cd5a46344fb.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -305,187 +305,189 @@
 				tokenDisplayConversion: f.p
 			});
 			var w = Object(s.b)(y)((function(e) {
-					const {
-						className: t,
-						cost: r,
-						currentOwnerId: s,
-						currentOwnerName: o,
-						subredditId: c,
-						tokenDisplayConversion: d
-					} = e, l = r || "0";
-					return a.a.createElement("div", {
-						className: Object(i.a)(g.a.container, t)
-					}, a.a.createElement("div", {
-						className: g.a.owner
-					}, s && a.a.createElement(n.Fragment, null, a.a.createElement("div", null, E._("Owned by", null, {
-						hk: "yKSxo"
-					})), a.a.createElement("div", {
-						className: g.a.ownerText
-					}, a.a.createElement(p.c, {
-						className: g.a.ownerBadge,
-						subredditId: c,
-						uniqueIdentifier: "banner-purchase-modal",
-						userId: s
-					}), a.a.createElement("span", {
-						className: g.a.username
-					}, o)))), a.a.createElement("div", {
-						className: g.a.purchase
-					}, a.a.createElement("div", {
-						className: g.a.cost
-					}, a.a.createElement(h.a, {
-						className: g.a.token,
-						subredditId: c
-					}), Object(m.a)(Object(x.b)(l, d))), a.a.createElement(b.f, {
-						onClick: e.onPurchase
-					}, E._("proceed to purchase", null, {
-						hk: "4tin6U"
-					}))))
-				})),
-				N = function(e) {
-					return a.a.createElement("svg", {
-						className: e.className,
-						viewBox: "0 0 32 29",
-						fill: "none",
-						xmlns: "http://www.w3.org/2000/svg"
-					}, a.a.createElement("rect", {
-						x: "0.5",
-						y: "0.5",
-						width: "31",
-						height: "16",
-						rx: "0.5",
-						fill: "#5E75C6",
-						"fill-opacity": "0.2",
-						stroke: "#5E75C6"
-					}), a.a.createElement("path", {
-						d: "M14 19H18V29H14V19Z",
-						fill: "#1A1A1B"
-					}), a.a.createElement("rect", {
-						x: "3.5",
-						y: "19",
-						width: "25",
-						height: "1",
-						fill: "#1A1A1B"
-					}), a.a.createElement("circle", {
-						cx: "28.5",
-						cy: "19.5",
-						r: "1",
-						fill: "white",
-						stroke: "#1A1A1B"
-					}), a.a.createElement("circle", {
-						cx: "3.5",
-						cy: "19.5",
-						r: "1",
-						fill: "white",
-						stroke: "#1A1A1B"
-					}), a.a.createElement("circle", {
-						cx: "10.5",
-						cy: "19.5",
-						r: "1",
-						fill: "white",
-						stroke: "#1A1A1B"
-					}), a.a.createElement("circle", {
-						cx: "21.5",
-						cy: "19.5",
-						r: "1",
-						fill: "white",
-						stroke: "#1A1A1B"
-					}))
-				},
-				j = function(e) {
-					return a.a.createElement("svg", {
-						className: e.className,
-						viewBox: "0 0 27 32",
-						fill: "none",
-						xmlns: "http://www.w3.org/2000/svg"
-					}, a.a.createElement("rect", {
-						x: "0.5",
-						y: "0.5",
-						width: "23",
-						height: "29",
-						rx: "1.5",
-						fill: "white"
-					}), a.a.createElement("rect", {
-						x: "0.5",
-						y: "0.5",
-						width: "23",
-						height: "29",
-						rx: "1.5",
-						fill: "#5E75C6",
-						"fill-opacity": "0.03"
-					}), a.a.createElement("rect", {
-						x: "0.5",
-						y: "0.5",
-						width: "23",
-						height: "29",
-						rx: "1.5",
-						stroke: "#5E75C6"
-					}), a.a.createElement("circle", {
-						cx: "20.5",
-						cy: "25.5",
-						r: "6",
-						fill: "white",
-						stroke: "#5E75C6"
-					}), a.a.createElement("circle", {
-						cx: "18.5",
-						cy: "23.5",
-						r: "1",
-						stroke: "#1A1A1B"
-					}), a.a.createElement("circle", {
-						cx: "22.5",
-						cy: "27.5",
-						r: "1",
-						stroke: "#1A1A1B"
-					}), a.a.createElement("path", {
-						d: "M18.084 28.2227C17.9308 28.4524 17.9929 28.7628 18.2226 28.916C18.4524 29.0692 18.7628 29.0071 18.916 28.7773L18.084 28.2227ZM22.916 22.7774C23.0692 22.5476 23.0071 22.2372 22.7773 22.084C22.5476 21.9308 22.2372 21.9929 22.084 22.2226L22.916 22.7774ZM18.916 28.7773L22.916 22.7774L22.084 22.2226L18.084 28.2227L18.916 28.7773Z",
-						fill: "#1A1A1B"
-					}), a.a.createElement("path", {
-						d: "M20 10H4.00005L4 9C4 9 8.08371 8.76179 12.5 7.5C17.1261 6.17825 20 4 20 4V10Z",
-						fill: "#5E75C6"
-					}), a.a.createElement("path", {
-						d: "M4.5 12.5V14M4.5 15.5V14M6.5 12.5V14M6.5 15.5V14M4.5 14H6.5",
-						stroke: "#1A1A1B",
-						"stroke-linecap": "round"
-					}), a.a.createElement("rect", {
-						x: "9",
-						y: "13",
-						width: "10",
-						height: "1",
-						rx: "0.5",
-						fill: "#5E75C6"
-					}), a.a.createElement("rect", {
-						x: "9",
-						y: "15",
-						width: "10",
-						height: "1",
-						rx: "0.5",
-						fill: "#5E75C6"
-					}), a.a.createElement("rect", {
-						opacity: "0.4",
-						x: "4",
-						y: "18",
-						width: "11",
-						height: "1",
-						rx: "0.5",
-						fill: "#5E75C6"
-					}), a.a.createElement("rect", {
-						opacity: "0.4",
-						x: "4",
-						y: "20",
-						width: "9",
-						height: "1",
-						rx: "0.5",
-						fill: "#5E75C6"
-					}), a.a.createElement("rect", {
-						opacity: "0.4",
-						x: "4",
-						y: "22",
-						width: "8",
-						height: "1",
-						rx: "0.5",
-						fill: "#5E75C6"
-					}))
-				},
-				O = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Upsell/index.m.less"),
+				const {
+					className: t,
+					cost: r,
+					currentOwnerId: s,
+					currentOwnerName: o,
+					subredditId: c,
+					tokenDisplayConversion: d
+				} = e, l = r || "0";
+				return a.a.createElement("div", {
+					className: Object(i.a)(g.a.container, t)
+				}, a.a.createElement("div", {
+					className: g.a.owner
+				}, s && a.a.createElement(n.Fragment, null, a.a.createElement("div", null, E._("Owned by", null, {
+					hk: "yKSxo"
+				})), a.a.createElement("div", {
+					className: g.a.ownerText
+				}, a.a.createElement(p.c, {
+					className: g.a.ownerBadge,
+					subredditId: c,
+					uniqueIdentifier: "banner-purchase-modal",
+					userId: s
+				}), a.a.createElement("span", {
+					className: g.a.username
+				}, o)))), a.a.createElement("div", {
+					className: g.a.purchase
+				}, a.a.createElement("div", {
+					className: g.a.cost
+				}, a.a.createElement(h.a, {
+					className: g.a.token,
+					subredditId: c
+				}), Object(m.a)(Object(x.b)(l, d))), a.a.createElement(b.f, {
+					onClick: e.onPurchase
+				}, E._("proceed to purchase", null, {
+					hk: "4tin6U"
+				}))))
+			}));
+
+			function N(e) {
+				return a.a.createElement("svg", {
+					className: e.className,
+					viewBox: "0 0 32 29",
+					fill: "none",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, a.a.createElement("rect", {
+					x: "0.5",
+					y: "0.5",
+					width: "31",
+					height: "16",
+					rx: "0.5",
+					fill: "#5E75C6",
+					"fill-opacity": "0.2",
+					stroke: "#5E75C6"
+				}), a.a.createElement("path", {
+					d: "M14 19H18V29H14V19Z",
+					fill: "#1A1A1B"
+				}), a.a.createElement("rect", {
+					x: "3.5",
+					y: "19",
+					width: "25",
+					height: "1",
+					fill: "#1A1A1B"
+				}), a.a.createElement("circle", {
+					cx: "28.5",
+					cy: "19.5",
+					r: "1",
+					fill: "white",
+					stroke: "#1A1A1B"
+				}), a.a.createElement("circle", {
+					cx: "3.5",
+					cy: "19.5",
+					r: "1",
+					fill: "white",
+					stroke: "#1A1A1B"
+				}), a.a.createElement("circle", {
+					cx: "10.5",
+					cy: "19.5",
+					r: "1",
+					fill: "white",
+					stroke: "#1A1A1B"
+				}), a.a.createElement("circle", {
+					cx: "21.5",
+					cy: "19.5",
+					r: "1",
+					fill: "white",
+					stroke: "#1A1A1B"
+				}))
+			}
+
+			function j(e) {
+				return a.a.createElement("svg", {
+					className: e.className,
+					viewBox: "0 0 27 32",
+					fill: "none",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, a.a.createElement("rect", {
+					x: "0.5",
+					y: "0.5",
+					width: "23",
+					height: "29",
+					rx: "1.5",
+					fill: "white"
+				}), a.a.createElement("rect", {
+					x: "0.5",
+					y: "0.5",
+					width: "23",
+					height: "29",
+					rx: "1.5",
+					fill: "#5E75C6",
+					"fill-opacity": "0.03"
+				}), a.a.createElement("rect", {
+					x: "0.5",
+					y: "0.5",
+					width: "23",
+					height: "29",
+					rx: "1.5",
+					stroke: "#5E75C6"
+				}), a.a.createElement("circle", {
+					cx: "20.5",
+					cy: "25.5",
+					r: "6",
+					fill: "white",
+					stroke: "#5E75C6"
+				}), a.a.createElement("circle", {
+					cx: "18.5",
+					cy: "23.5",
+					r: "1",
+					stroke: "#1A1A1B"
+				}), a.a.createElement("circle", {
+					cx: "22.5",
+					cy: "27.5",
+					r: "1",
+					stroke: "#1A1A1B"
+				}), a.a.createElement("path", {
+					d: "M18.084 28.2227C17.9308 28.4524 17.9929 28.7628 18.2226 28.916C18.4524 29.0692 18.7628 29.0071 18.916 28.7773L18.084 28.2227ZM22.916 22.7774C23.0692 22.5476 23.0071 22.2372 22.7773 22.084C22.5476 21.9308 22.2372 21.9929 22.084 22.2226L22.916 22.7774ZM18.916 28.7773L22.916 22.7774L22.084 22.2226L18.084 28.2227L18.916 28.7773Z",
+					fill: "#1A1A1B"
+				}), a.a.createElement("path", {
+					d: "M20 10H4.00005L4 9C4 9 8.08371 8.76179 12.5 7.5C17.1261 6.17825 20 4 20 4V10Z",
+					fill: "#5E75C6"
+				}), a.a.createElement("path", {
+					d: "M4.5 12.5V14M4.5 15.5V14M6.5 12.5V14M6.5 15.5V14M4.5 14H6.5",
+					stroke: "#1A1A1B",
+					"stroke-linecap": "round"
+				}), a.a.createElement("rect", {
+					x: "9",
+					y: "13",
+					width: "10",
+					height: "1",
+					rx: "0.5",
+					fill: "#5E75C6"
+				}), a.a.createElement("rect", {
+					x: "9",
+					y: "15",
+					width: "10",
+					height: "1",
+					rx: "0.5",
+					fill: "#5E75C6"
+				}), a.a.createElement("rect", {
+					opacity: "0.4",
+					x: "4",
+					y: "18",
+					width: "11",
+					height: "1",
+					rx: "0.5",
+					fill: "#5E75C6"
+				}), a.a.createElement("rect", {
+					opacity: "0.4",
+					x: "4",
+					y: "20",
+					width: "9",
+					height: "1",
+					rx: "0.5",
+					fill: "#5E75C6"
+				}), a.a.createElement("rect", {
+					opacity: "0.4",
+					x: "4",
+					y: "22",
+					width: "8",
+					height: "1",
+					rx: "0.5",
+					fill: "#5E75C6"
+				}))
+			}
+			var O = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Upsell/index.m.less"),
 				k = r.n(O);
 			const {
 				fbt: _
@@ -1843,4 +1845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxPurchaseModal.0e5ad57a54fdde30c75e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.83fcfd299cd5a46344fb.js.map

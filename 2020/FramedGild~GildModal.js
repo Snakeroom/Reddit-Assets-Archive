@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.50ab59868bbb58f17a71.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.497a920b326dde8382be.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -906,14 +906,14 @@
 				})(pe),
 				be = s("./src/reddit/components/RichTextJson/index.tsx"),
 				ge = s("./src/reddit/icons/svgs/Advance/index.m.less"),
-				fe = s.n(ge),
-				we = e => n.a.createElement("svg", {
-					className: Object(i.a)(fe.a.default, e.className),
-					viewBox: "0 0 13 12",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, n.a.createElement("path", {
-					d: "M6.707 6.707a.997.997 0 000-1.414l-5-5A.999.999 0 10.293 1.707L4.586 6 .293 10.293a.999.999 0 101.414 1.414l5-5zm6 0a.997.997 0 000-1.414l-5-5a.999.999 0 10-1.414 1.414L10.586 6l-4.293 4.293a.999.999 0 101.414 1.414l5-5z"
-				}));
+				fe = s.n(ge);
+			var we = e => n.a.createElement("svg", {
+				className: Object(i.a)(fe.a.default, e.className),
+				viewBox: "0 0 13 12",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, n.a.createElement("path", {
+				d: "M6.707 6.707a.997.997 0 000-1.414l-5-5A.999.999 0 10.293 1.707L4.586 6 .293 10.293a.999.999 0 101.414 1.414l5-5zm6 0a.997.997 0 000-1.414l-5-5a.999.999 0 10-1.414 1.414L10.586 6l-4.293 4.293a.999.999 0 101.414 1.414l5-5z"
+			}));
 			class ve extends n.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -1043,42 +1043,42 @@
 			var Oe = ve,
 				Ee = s("./src/reddit/icons/svgs/Lock/index.tsx"),
 				je = s("./src/reddit/icons/svgs/New/index.tsx"),
-				Ie = s("./src/reddit/icons/svgs/Premium/index.tsx"),
-				xe = e => n.a.createElement("svg", {
-					width: "20",
-					height: "20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, n.a.createElement("defs", null, n.a.createElement("linearGradient", {
-					x1: "100%",
-					y1: "50%",
-					x2: "0%",
-					y2: "50%",
-					id: "a"
-				}, n.a.createElement("stop", {
-					stopColor: "#FF81ED",
-					offset: "0%"
-				}), n.a.createElement("stop", {
-					stopColor: "#B279FF",
-					offset: "32.949%"
-				}), n.a.createElement("stop", {
-					stopColor: "#7785FF",
-					offset: "54.901%"
-				}), n.a.createElement("stop", {
-					stopColor: "#53B6FF",
-					offset: "100%"
-				}))), n.a.createElement("g", {
-					fill: "none",
-					fillRule: "evenodd"
-				}, n.a.createElement("path", {
-					d: "M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10S0 15.523 0 10 4.477 0 10 0z",
-					fill: "url(#a)"
-				}), n.a.createElement("path", {
-					d: "M10 1.861a8.139 8.139 0 110 16.278 8.139 8.139 0 010-16.278z",
-					opacity: ".105"
-				}), n.a.createElement("path", {
-					d: "M12.45 2.32c0 3.97 1.844 7.26 4.256 7.852-2.412.59-4.257 3.88-4.257 7.85v.088a3.248 3.248 0 01-.043-.003v-.086c0-3.97-1.845-7.26-4.256-7.851 2.411-.59 4.256-3.88 4.256-7.85v-.084l.044-.004v.089zM7.312 11.815c0 1.434 1.246 2.62 2.87 2.825-1.624.202-2.87 1.388-2.87 2.822l.001.029-.024-.001.002-.028c0-1.434-1.247-2.62-2.872-2.825 1.625-.201 2.872-1.388 2.872-2.822l-.002-.028h.023v.028zM5.65 4.287c0 1.074.82 1.966 1.894 2.14C6.47 6.6 5.651 7.491 5.651 8.565v.03l-.044-.002.001-.028c0-1.074-.819-1.966-1.894-2.14C4.79 6.253 5.608 5.36 5.608 4.287l-.001-.028.044-.002v.03z",
-					fill: "#FFF"
-				})));
+				Ie = s("./src/reddit/icons/svgs/Premium/index.tsx");
+			var xe = e => n.a.createElement("svg", {
+				width: "20",
+				height: "20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, n.a.createElement("defs", null, n.a.createElement("linearGradient", {
+				x1: "100%",
+				y1: "50%",
+				x2: "0%",
+				y2: "50%",
+				id: "a"
+			}, n.a.createElement("stop", {
+				stopColor: "#FF81ED",
+				offset: "0%"
+			}), n.a.createElement("stop", {
+				stopColor: "#B279FF",
+				offset: "32.949%"
+			}), n.a.createElement("stop", {
+				stopColor: "#7785FF",
+				offset: "54.901%"
+			}), n.a.createElement("stop", {
+				stopColor: "#53B6FF",
+				offset: "100%"
+			}))), n.a.createElement("g", {
+				fill: "none",
+				fillRule: "evenodd"
+			}, n.a.createElement("path", {
+				d: "M10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10S0 15.523 0 10 4.477 0 10 0z",
+				fill: "url(#a)"
+			}), n.a.createElement("path", {
+				d: "M10 1.861a8.139 8.139 0 110 16.278 8.139 8.139 0 010-16.278z",
+				opacity: ".105"
+			}), n.a.createElement("path", {
+				d: "M12.45 2.32c0 3.97 1.844 7.26 4.256 7.852-2.412.59-4.257 3.88-4.257 7.85v.088a3.248 3.248 0 01-.043-.003v-.086c0-3.97-1.845-7.26-4.256-7.851 2.411-.59 4.256-3.88 4.256-7.85v-.084l.044-.004v.089zM7.312 11.815c0 1.434 1.246 2.62 2.87 2.825-1.624.202-2.87 1.388-2.87 2.822l.001.029-.024-.001.002-.028c0-1.434-1.247-2.62-2.872-2.825 1.625-.201 2.872-1.388 2.872-2.822l-.002-.028h.023v.028zM5.65 4.287c0 1.074.82 1.966 1.894 2.14C6.47 6.6 5.651 7.491 5.651 8.565v.03l-.044-.002.001-.028c0-1.074-.819-1.966-1.894-2.14C4.79 6.253 5.608 5.36 5.608 4.287l-.001-.028.044-.002v.03z",
+				fill: "#FFF"
+			})));
 			const Ne = n.a.memo(e => {
 				let t, s;
 				const a = !!e.award.tags && e.award.tags.some(e => e.includes("econ:render:lottie:"));
@@ -2060,4 +2060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FramedGild~GildModal.50ab59868bbb58f17a71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.497a920b326dde8382be.js.map

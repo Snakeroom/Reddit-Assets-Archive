@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.5f1c7b5aa334d0427701.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.eab85beee3fd6b04461b.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -4879,10 +4879,11 @@
 				LoadingComponent: () => null,
 				getComponent: () => n.e("GifTooltip").then(n.bind(null, "./src/reddit/components/RichTextEditor/media/GifTooltip/index.tsx")).then(t => t.default)
 			});
-			var ls = function(t) {
-					return a.a.createElement(as, t)
-				},
-				ds = n("./src/reddit/components/RichTextEditor/spoiler/helpers.ts"),
+
+			function ls(t) {
+				return a.a.createElement(as, t)
+			}
+			var ds = n("./src/reddit/components/RichTextEditor/spoiler/helpers.ts"),
 				us = n("./src/reddit/components/RichTextEditor/spoiler/decorator.m.less"),
 				ps = n.n(us);
 			const hs = t => a.a.createElement("span", {
@@ -8032,4 +8033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput~MembershipPaywallPage~RichTextEditor.5f1c7b5aa334d0427701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.eab85beee3fd6b04461b.js.map

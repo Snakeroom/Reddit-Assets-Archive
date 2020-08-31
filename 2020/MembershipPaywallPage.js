@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.4d6485510073bc29724f.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.9a5312005b68f662aeb6.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -3197,7 +3197,7 @@
 						dollarPrice: t,
 						tokenPrice: a,
 						trial: r,
-						description: e => {
+						description(e) {
 							const t = e && e.displayText || "",
 								a = k.fbt._("{communityName} Subreddit Supporter", [k.fbt._param("communityName", t)], {
 									hk: "3VL2SS"
@@ -3907,4 +3907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=MembershipPaywallPage.4d6485510073bc29724f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.9a5312005b68f662aeb6.js.map

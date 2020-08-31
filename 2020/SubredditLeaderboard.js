@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.51234187380ad16a52f8.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.399ea05189f5e205b878.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -693,8 +693,8 @@
 				i = r("./src/lib/classNames/index.ts"),
 				d = r("./src/lib/prettyPrintNumber/index.ts"),
 				c = r("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				l = r("./src/reddit/components/SubredditIcon/index.tsx"),
-				m = e => a.a.createElement("svg", {
+				l = r("./src/reddit/components/SubredditIcon/index.tsx");
+			var m = e => a.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
 					viewBox: "0 0 10 8",
@@ -1660,4 +1660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditLeaderboard.51234187380ad16a52f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.399ea05189f5e205b878.js.map

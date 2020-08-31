@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ec4a7ae4553f73c45ef8.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.e3919a4dd806819db8ad.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -681,8 +681,8 @@
 				o = n("./src/lib/classNames/index.ts"),
 				d = n("./src/lib/prettyPrintNumber/index.ts"),
 				c = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				l = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				m = e => r.a.createElement("svg", {
+				l = n("./src/reddit/components/SubredditIcon/index.tsx");
+			var m = e => r.a.createElement("svg", {
 					className: e.className,
 					style: e.style,
 					viewBox: "0 0 10 8",
@@ -1038,4 +1038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=FrontpageSidebar.ec4a7ae4553f73c45ef8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.e3919a4dd806819db8ad.js.map

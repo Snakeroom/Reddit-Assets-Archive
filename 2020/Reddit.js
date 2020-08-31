@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.35489877cc1aa531026e.js
-// Retrieved at 8/27/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.23dcef510ad2a07ff29c.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -2804,8 +2804,8 @@
 				In = (s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/react-router-dom/esm/react-router-dom.js")),
 				Nn = s("./src/reddit/actions/page.ts"),
 				Tn = s("./src/reddit/actions/shortcuts/utils.ts"),
-				Rn = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				Ln = e => u.a.createElement("svg", {
+				Rn = s("./src/reddit/icons/svgs/Dropdown/index.tsx");
+			var Ln = e => u.a.createElement("svg", {
 					className: e.className,
 					onClick: e.onClick,
 					xmlns: "http://www.w3.org/2000/svg",
@@ -2886,15 +2886,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var $n, ea = e => u.a.createElement("svg", Xn({
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, e), u.a.createElement("path", {
-					d: "M17,5H6A1,1,0,0,0,5,6V17a1,1,0,0,0,1,1H17a1,1,0,0,0,1-1V6A1,1,0,0,0,17,5ZM7,7.5A.5.5,0,0,1,7.5,7h3a.5.5,0,0,1,.5.5v3a.5.5,0,0,1-.5.5h-3a.5.5,0,0,1-.5-.5ZM15.5,16h-8a.5.5,0,0,1,0-1h8a.5.5,0,0,1,0,1Zm0-2.5h-8a.5.5,0,0,1,0-1h8a.5.5,0,0,1,0,1Zm0-2.5H13a.5.5,0,0,1,0-1h2.5a.5.5,0,0,1,0,1Z"
-				}), u.a.createElement("path", {
-					d: "M6,4h9.47a2.09,2.09,0,0,1,.51.07V3a1,1,0,0,0-1-1H3A1,1,0,0,0,2,3V15a1,1,0,0,0,1,1H4.09A2.09,2.09,0,0,1,4,15.49V6A2,2,0,0,1,6,4Z"
-				})),
-				ta = e => {
+			var $n = e => u.a.createElement("svg", Xn({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), u.a.createElement("path", {
+				d: "M17,5H6A1,1,0,0,0,5,6V17a1,1,0,0,0,1,1H17a1,1,0,0,0,1-1V6A1,1,0,0,0,17,5ZM7,7.5A.5.5,0,0,1,7.5,7h3a.5.5,0,0,1,.5.5v3a.5.5,0,0,1-.5.5h-3a.5.5,0,0,1-.5-.5ZM15.5,16h-8a.5.5,0,0,1,0-1h8a.5.5,0,0,1,0,1Zm0-2.5h-8a.5.5,0,0,1,0-1h8a.5.5,0,0,1,0,1Zm0-2.5H13a.5.5,0,0,1,0-1h2.5a.5.5,0,0,1,0,1Z"
+			}), u.a.createElement("path", {
+				d: "M6,4h9.47a2.09,2.09,0,0,1,.51.07V3a1,1,0,0,0-1-1H3A1,1,0,0,0,2,3V15a1,1,0,0,0,1,1H4.09A2.09,2.09,0,0,1,4,15.49V6A2,2,0,0,1,6,4Z"
+			}));
+			var ea, ta = e => {
 					let {
 						className: t
 					} = e;
@@ -2913,7 +2913,7 @@
 				oa = s.n(ra);
 			! function(e) {
 				e.Acknowledgements = "Acknowledgements", e.All = "All", e.Appeal = "Appeal", e.Category = "Category", e.Coins = "Coins", e.Community = "Community", e.CommunitySearch = "CommunitySearch", e.CreateCommunity = "CreateCommunity", e.CreatePost = "CreatePost", e.DailyCharts = "DailyCharts", e.Employee = "Employee", e.GlobalSearch = "GlobalSearch", e.Geotagging = "Geotagging", e.Home = "Home", e.Inbox = "Inbox", e.ModListing = "ModListing", e.ModMail = "ModMail", e.ModQueue = "ModQueue", e.Multi = "Multi", e.Popular = "Popular", e.Premium = "Premium", e.PublicAccessNetwork = "PublicAccessNetwork", e.Report = "Report", e.Settings = "Settings", e.SubredditCreation = "SubredditCreation", e.Topic = "Topic", e.Unknown = "Unknown", e.UserDataRequest = "UserDataRequest", e.UserProfile = "UserProfile", e.UserProfileName = "UserProfileName", e.ViewDraft = "ViewDraft"
-			}($n || ($n = {}));
+			}(ea || (ea = {}));
 			const ia = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 				const [s, n] = t && -1 !== e.indexOf("/") ? e.split("/") : [, e];
@@ -2936,67 +2936,67 @@
 						case "index":
 						case "listing":
 							return n ? {
-								type: $n.Home
+								type: ea.Home
 							} : {
-								type: $n.Popular
+								type: ea.Popular
 							};
 						case "modListing":
 							return {
-								type: $n.ModListing
+								type: ea.ModListing
 							};
 						case "modQueuePages":
 							return {
-								type: $n.ModQueue
+								type: ea.ModQueue
 							};
 						case "postCreation":
 							return {
-								type: $n.CreatePost
+								type: ea.CreatePost
 							};
 						case "postDraft":
 							return {
-								type: $n.ViewDraft
+								type: ea.ViewDraft
 							};
 						case "subredditCreation":
 							return {
-								type: $n.SubredditCreation
+								type: ea.SubredditCreation
 							};
 						case "coins":
 							return {
-								type: $n.Coins
+								type: ea.Coins
 							};
 						case "premium":
 							return {
-								type: $n.Premium
+								type: ea.Premium
 							};
 						case "acknowledgements":
 							return {
-								type: $n.Acknowledgements
+								type: ea.Acknowledgements
 							};
 						case "appeal":
 							return {
-								type: $n.Appeal
+								type: ea.Appeal
 							};
 						case "report":
 							return {
-								type: $n.Report
+								type: ea.Report
 							};
 						case "userDataRequest":
 							return {
-								type: $n.UserDataRequest
+								type: ea.UserDataRequest
 							};
 						case "subredditLeaderboard":
 							return {
-								type: $n.DailyCharts
+								type: ea.DailyCharts
 							};
 						case "geotagging":
 							return {
-								type: $n.Geotagging
+								type: ea.Geotagging
 							};
 						case "topic": {
 							const t = Object(fs.s)(s),
 								n = t && Object(ma.e)(e, t, !0);
 							if (n) return {
-								type: $n.Topic,
+								type: ea.Topic,
 								model: n
 							}
 						}
@@ -3005,53 +3005,53 @@
 					if (r) switch (a) {
 						case "inboxPages":
 							return {
-								type: $n.Inbox, model: r
+								type: ea.Inbox, model: r
 							};
 						case "settings":
 							return {
-								type: $n.Settings, model: r
+								type: ea.Settings, model: r
 							}
 					}
 					const o = Object(fs.O)(e, {
 						pageLayer: s
 					});
 					if ("all" === o) return {
-						type: $n.All
+						type: ea.All
 					};
 					if ("popular" === o) return {
-						type: $n.Popular
+						type: ea.Popular
 					};
 					const i = Object(fs.q)(e, {
 						pageLayer: s
 					});
 					if (i) return "searchResults" === a ? {
-						type: $n.CommunitySearch,
+						type: ea.CommunitySearch,
 						model: i
 					} : {
-						type: $n.Community,
+						type: ea.Community,
 						model: i
 					};
 					const c = Object(fs.d)(e, {
 						pageLayer: s
 					});
 					if (c) return {
-						type: $n.Multi,
+						type: ea.Multi,
 						model: c
 					};
 					const d = Object(fs.j)(e, {
 						pageLayer: s
 					});
 					if (d) return {
-						type: $n.UserProfile,
+						type: ea.UserProfile,
 						model: d
 					};
 					const l = Object(fs.h)(s);
 					if (l) return {
-						type: $n.UserProfileName,
+						type: ea.UserProfileName,
 						name: "u/".concat(l)
 					};
 					if (a && "searchResults" === a) return {
-						type: $n.GlobalSearch
+						type: ea.GlobalSearch
 					};
 					if ("subredditWiki" === a) {
 						const t = Object(fs.n)(e, {
@@ -3061,14 +3061,14 @@
 								subredditName: t
 							});
 						if (n) return {
-							type: $n.Community,
+							type: ea.Community,
 							model: n
 						}
 					}
 					return "rpan" === a && Object(la.a)(e) ? {
-						type: $n.PublicAccessNetwork
+						type: ea.PublicAccessNetwork
 					} : {
-						type: $n.Unknown
+						type: ea.Unknown
 					}
 				}),
 				ba = (s("./node_modules/core-js/modules/es6.regexp.match.js"), s("./node_modules/core-js/modules/es6.regexp.constructor.js"), s("./src/reddit/components/HeaderSubredditSelector/GenericListItem/index.m.less")),
@@ -3137,12 +3137,12 @@
 				e[e.Header = 0] = "Header", e[e.Subreddit = 1] = "Subreddit", e[e.SubredditAutocomplete = 2] = "SubredditAutocomplete", e[e.Profile = 3] = "Profile", e[e.Multi = 4] = "Multi", e[e.GenericClickable = 5] = "GenericClickable", e[e.GenericLink = 6] = "GenericLink", e[e.LoadingState = 7] = "LoadingState", e[e.Category = 8] = "Category", e[e.Action = 9] = "Action"
 			}(Ea || (Ea = {}));
 			const ja = [e => ({
-					id: $n.Employee,
+					id: ea.Employee,
 					type: Ea.GenericLink,
 					model: {
 						url: "/user/reddit/m/employee_subbies/new",
 						displayText: "Employee Communities",
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3150,7 +3150,7 @@
 								className: Object(g.a)(t, oa.a.itemIcon)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3162,14 +3162,14 @@
 					telemetryNoun: "employee"
 				})],
 				Sa = [e => ({
-					id: $n.All,
+					id: ea.All,
 					type: Ea.GenericLink,
 					model: {
 						url: "/r/all/",
 						displayText: n.fbt._("All", null, {
 							hk: "2M8nEy"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3177,7 +3177,7 @@
 								className: Object(g.a)(t, oa.a.itemIcon)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3190,14 +3190,14 @@
 					},
 					telemetryNoun: "all"
 				}), e => ({
-					id: $n.DailyCharts,
+					id: ea.DailyCharts,
 					type: Ea.GenericLink,
 					model: {
 						url: "/subreddits/leaderboard/",
 						displayText: n.fbt._("Top Communities", null, {
 							hk: "1KzP9v"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3205,7 +3205,7 @@
 								className: Object(g.a)(t, oa.a.itemIcon)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3227,14 +3227,14 @@
 						}).toString()
 					}
 				}), (e, t) => ({
-					id: $n.Home,
+					id: ea.Home,
 					type: Ea.GenericLink,
 					model: {
 						url: "/",
 						displayText: n.fbt._("Home", null, {
 							hk: "2u56yo"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: s
 							} = e;
@@ -3243,7 +3243,7 @@
 								isBadged: t && t.isBadged
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3256,14 +3256,14 @@
 					},
 					telemetryNoun: "home"
 				}), e => ({
-					id: $n.Popular,
+					id: ea.Popular,
 					type: Ea.GenericLink,
 					model: {
 						url: "/r/popular/",
 						displayText: n.fbt._("Popular", null, {
 							hk: "1op8tD"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3271,7 +3271,7 @@
 								className: Object(g.a)(t, oa.a.itemIcon)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3293,14 +3293,14 @@
 						}).toString()
 					}
 				}), () => ({
-					id: $n.Home,
+					id: ea.Home,
 					type: Ea.GenericLink,
 					model: {
 						url: "/",
 						displayText: n.fbt._("Popular", null, {
 							hk: "1op8tD"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3308,7 +3308,7 @@
 								className: Object(g.a)(t, oa.a.itemIcon)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3330,14 +3330,14 @@
 						}).toString()
 					}
 				}), e => ({
-					id: $n.Settings,
+					id: ea.Settings,
 					type: Ea.GenericLink,
 					model: {
 						url: "/settings",
 						displayText: n.fbt._("User Settings", null, {
 							hk: "36WFGd"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3345,7 +3345,7 @@
 								className: Object(g.a)(oa.a.userIcon, t)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3358,14 +3358,14 @@
 					},
 					telemetryNoun: "settings"
 				}), e => ({
-					id: $n.Inbox,
+					id: ea.Inbox,
 					type: Ea.GenericLink,
 					model: {
 						url: "/message/inbox/",
 						displayText: n.fbt._("Messages", null, {
 							hk: "43DUrY"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3373,7 +3373,7 @@
 								className: Object(g.a)(oa.a.userIcon, t)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3386,14 +3386,14 @@
 					},
 					telemetryNoun: "mail"
 				}), e => ({
-					id: $n.CreatePost,
+					id: ea.CreatePost,
 					type: Ea.GenericLink,
 					model: {
 						url: "/submit",
 						displayText: n.fbt._("Create Post", null, {
 							hk: "dGck6"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3401,7 +3401,7 @@
 								className: Object(g.a)(t, oa.a.itemIcon)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3415,14 +3415,14 @@
 					telemetryNoun: "create_post"
 				})],
 				Ma = [e => ({
-					id: $n.Coins,
+					id: ea.Coins,
 					type: Ea.GenericLink,
 					model: {
 						url: "/coins",
 						displayText: n.fbt._("Coins", null, {
 							hk: "ZFvDU"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3430,7 +3430,7 @@
 								className: Object(g.a)(t, oa.a.itemCoin)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3443,14 +3443,14 @@
 					},
 					telemetryNoun: "coins"
 				}), e => ({
-					id: $n.Premium,
+					id: ea.Premium,
 					type: Ea.GenericLink,
 					model: {
 						url: "/premium",
 						displayText: n.fbt._("Premium", null, {
 							hk: "3i2C4T"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3458,7 +3458,7 @@
 								className: Object(g.a)(t, oa.a.itemPremium)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3472,14 +3472,14 @@
 					telemetryNoun: "premium"
 				})],
 				Ia = [e => ({
-					id: $n.ModQueue,
+					id: ea.ModQueue,
 					type: Ea.GenericLink,
 					model: {
 						url: "/r/mod/about/modqueue",
 						displayText: n.fbt._("Mod Queue", null, {
 							hk: "12pTAg"
 						}).toString(),
-						icon: e => {
+						icon(e) {
 							let {
 								className: t
 							} = e;
@@ -3487,7 +3487,7 @@
 								className: Object(g.a)(t, oa.a.itemModQueue)
 							})
 						},
-						text: e => {
+						text(e) {
 							let {
 								className: t
 							} = e;
@@ -3504,14 +3504,14 @@
 						a = s ? "/message/moderator" : "https://mod.reddit.com/mail/all",
 						r = s ? "modmail" : "modmail_beta";
 					return {
-						id: $n.ModMail,
+						id: ea.ModMail,
 						type: Ea.GenericLink,
 						model: {
 							url: a,
 							displayText: n.fbt._("Modmail", null, {
 								hk: "1BtYh4"
 							}).toString(),
-							icon: e => {
+							icon(e) {
 								let {
 									className: t
 								} = e;
@@ -3519,7 +3519,7 @@
 									className: Object(g.a)(t, oa.a.itemModQueue)
 								})
 							},
-							text: e => {
+							text(e) {
 								let {
 									className: t
 								} = e;
@@ -3573,8 +3573,8 @@
 				}, e.children)
 			}
 			var Aa = s("./src/reddit/actions/subscription/index.ts"),
-				Fa = s("./src/reddit/helpers/trackers/customFeeds.ts"),
-				Da = e => {
+				Fa = s("./src/reddit/helpers/trackers/customFeeds.ts");
+			var Da = e => {
 					let {
 						className: t
 					} = e;
@@ -3740,7 +3740,7 @@
 			}
 
 			function sr(e) {
-				return e.id === $n.ModMail || e.id === $n.CreateCommunity
+				return e.id === ea.ModMail || e.id === ea.CreateCommunity
 			}
 
 			function nr(e) {
@@ -3763,7 +3763,7 @@
 						if (s.account) {
 							const r = s.account;
 							if (wa.forEach(e => a.push(e(r))), r.isEmployee && ja.forEach(e => a.push(e(r))), Object(la.a)(e) && a.push({
-									id: $n.PublicAccessNetwork,
+									id: ea.PublicAccessNetwork,
 									type: Ea.GenericClickable,
 									model: {
 										onClick: () => {
@@ -3772,7 +3772,7 @@
 										displayText: n.fbt._("Reddit Public Access Network", null, {
 											hk: "3p4s8f"
 										}).toString(),
-										icon: e => {
+										icon(e) {
 											let {
 												className: t
 											} = e;
@@ -3780,7 +3780,7 @@
 												className: Object(g.a)(t, oa.a.itemPublicAccessNetwork)
 											})
 										},
-										text: e => {
+										text(e) {
 											let {
 												className: t
 											} = e;
@@ -3828,7 +3828,7 @@
 										displayText: n.fbt._("Custom feeds", null, {
 											hk: "3K02MA"
 										}).toString(),
-										button: e => {
+										button(e) {
 											let {
 												className: s,
 												sendClickEvent: n
@@ -3864,12 +3864,12 @@
 										}).toString()
 									}
 								}), a.push({
-									id: $n.ModListing,
+									id: ea.ModListing,
 									type: Ea.GenericLink,
 									model: {
 										url: Oa.a,
 										displayText: "r/Mod",
-										icon: e => {
+										icon(e) {
 											let {
 												className: t
 											} = e;
@@ -3877,7 +3877,7 @@
 												className: Object(g.a)(t, oa.a.itemModQueue)
 											})
 										},
-										text: e => {
+										text(e) {
 											let {
 												className: t
 											} = e;
@@ -3899,14 +3899,14 @@
 										displayText: ""
 									}
 								}) : Na(a, s), ka.forEach(e => a.push(e(r))), Object(zt.ab)(e) && a.push({
-									id: $n.CreateCommunity,
+									id: ea.CreateCommunity,
 									type: Ea.GenericLink,
 									model: {
 										url: "/subreddits/create",
 										displayText: n.fbt._("Create Community", null, {
 											hk: "41sjx"
 										}).toString(),
-										icon: e => {
+										icon(e) {
 											let {
 												className: t
 											} = e;
@@ -3914,7 +3914,7 @@
 												className: Object(g.a)(t, oa.a.itemIcon)
 											})
 										},
-										text: e => {
+										text(e) {
 											let {
 												className: t
 											} = e;
@@ -4013,8 +4013,8 @@
 					}, this.fireTelemetryForListItem = e => {
 						let t;
 						switch (e.id) {
-							case $n.Coins:
-							case $n.Premium:
+							case ea.Coins:
+							case ea.Premium:
 								Object(Xa.d)(Xa.a.GoldPayment, !0), t = Object(Xa.c)(Xa.a.GoldPayment)
 						}
 						switch (e.type) {
@@ -4139,7 +4139,7 @@
 							onMouseEnter: () => this.onChangeFocusedListItemId(e.id),
 							onMouseLeave: () => this.onChangeFocusedListItemId(void 0),
 							onClick: () => {
-								this.fireTelemetryForListItem(e), this.props.onClose && this.props.onClose(!0), e.id === $n.Home && this.props.onHomeClicked(), e.type === Ea.GenericClickable && e.model.onClick()
+								this.fireTelemetryForListItem(e), this.props.onClose && this.props.onClose(!0), e.id === ea.Home && this.props.onHomeClicked(), e.type === Ea.GenericClickable && e.model.onClick()
 							}
 						};
 						switch (e.type) {
@@ -4280,129 +4280,129 @@
 						className: oa.a.containerText
 					}, function(e) {
 						switch (e.type) {
-							case $n.Acknowledgements:
+							case ea.Acknowledgements:
 								return ia(n.fbt._("Acknowledgements", null, {
 									hk: "32JBVF"
 								}).toString());
-							case $n.All:
+							case ea.All:
 								return ia(n.fbt._("All", null, {
 									hk: "2gaHOy"
 								}).toString());
-							case $n.Appeal:
+							case ea.Appeal:
 								return ia(n.fbt._("Appeal", null, {
 									hk: "2dMFkN"
 								}).toString());
-							case $n.Coins:
+							case ea.Coins:
 								return ia(n.fbt._("Coins", null, {
 									hk: "3ZpUbG"
 								}).toString());
-							case $n.Community:
+							case ea.Community:
 								return ia(e.model.displayText, !0);
-							case $n.CommunitySearch:
+							case ea.CommunitySearch:
 								return ia(n.fbt._("Subreddit Results", null, {
 									hk: "19qRVH"
 								}).toString());
-							case $n.CreateCommunity:
+							case ea.CreateCommunity:
 								return ia(n.fbt._("Create Community", null, {
 									hk: "2UKjpW"
 								}).toString());
-							case $n.CreatePost:
+							case ea.CreatePost:
 								return ia(n.fbt._("Create Post", null, {
 									hk: "30V40V"
 								}).toString());
-							case $n.DailyCharts:
+							case ea.DailyCharts:
 								return ia(n.fbt._("Top Communities", null, {
 									hk: "1sWIEu"
 								}).toString());
-							case $n.GlobalSearch:
+							case ea.GlobalSearch:
 								return ia(n.fbt._("Search Results", null, {
 									hk: "scJwR"
 								}).toString());
-							case $n.Geotagging:
+							case ea.Geotagging:
 								return ia(n.fbt._("Help Out", null, {
 									hk: "1RN9v2"
 								}).toString());
-							case $n.Home:
+							case ea.Home:
 								return ia(n.fbt._("Home", null, {
 									hk: "amHQd"
 								}).toString());
-							case $n.Inbox:
+							case ea.Inbox:
 								return ia(n.fbt._("Messages", null, {
 									hk: "25MBSp"
 								}).toString());
-							case $n.ModListing:
+							case ea.ModListing:
 								return ia("r/Mod");
-							case $n.ModMail:
+							case ea.ModMail:
 								return ia(n.fbt._("Modmail", null, {
 									hk: "of9AC"
 								}).toString());
-							case $n.ModQueue:
+							case ea.ModQueue:
 								return ia(n.fbt._("Mod Queue", null, {
 									hk: "3hdHhb"
 								}).toString());
-							case $n.Multi:
+							case ea.Multi:
 								return ia(e.model.displayText, !0);
-							case $n.Popular:
+							case ea.Popular:
 								return ia(n.fbt._("Popular", null, {
 									hk: "1rTNHl"
 								}).toString());
-							case $n.Premium:
+							case ea.Premium:
 								return ia(n.fbt._("Premium", null, {
 									hk: "x0xKv"
 								}).toString());
-							case $n.PublicAccessNetwork:
+							case ea.PublicAccessNetwork:
 								return ia(n.fbt._("Reddit Public Access Network", null, {
 									hk: "3agn8V"
 								}).toString());
-							case $n.Report:
+							case ea.Report:
 								return ia(n.fbt._("Report", null, {
 									hk: "4oVcnd"
 								}).toString());
-							case $n.Settings:
+							case ea.Settings:
 								return ia(n.fbt._("User Settings", null, {
 									hk: "hcLHW"
 								}).toString());
-							case $n.SubredditCreation:
+							case ea.SubredditCreation:
 								return ia(n.fbt._("Create Community", null, {
 									hk: "2UKjpW"
 								}).toString());
-							case $n.Topic:
+							case ea.Topic:
 								return ia(e.model);
-							case $n.Unknown:
+							case ea.Unknown:
 								return ia("");
-							case $n.UserDataRequest:
+							case ea.UserDataRequest:
 								return ia(n.fbt._("Request your Reddit data", null, {
 									hk: "3LqHku"
 								}).toString());
-							case $n.UserProfile:
+							case ea.UserProfile:
 								return ia(e.model.displayText, !0);
-							case $n.UserProfileName:
+							case ea.UserProfileName:
 								return ia(e.name, !0);
-							case $n.ViewDraft:
+							case ea.ViewDraft:
 								return ia(n.fbt._("View Draft", null, {
 									hk: "3k2k9a"
 								}).toString())
 						}
 					}(e)), function(e, t) {
 						switch (e.type) {
-							case $n.Acknowledgements:
+							case ea.Acknowledgements:
 								return u.a.createElement(sa.a, {
 									className: oa.a.defaultIcon
 								});
-							case $n.All:
+							case ea.All:
 								return u.a.createElement(qn.a, {
 									className: oa.a.defaultIcon
 								});
-							case $n.Appeal:
+							case ea.Appeal:
 								return u.a.createElement(sa.a, {
 									className: oa.a.defaultIcon
 								});
-							case $n.Coins:
+							case ea.Coins:
 								return u.a.createElement(Vn.a, {
 									className: oa.a.coinIcon
 								});
-							case $n.Community:
-							case $n.CommunitySearch: {
+							case ea.Community:
+							case ea.CommunitySearch: {
 								const s = Object(Dn.a)({
 									shouldHideNsfwIcon: t,
 									subredditOrProfile: e.model
@@ -4413,74 +4413,74 @@
 									primaryColor: s.color
 								})
 							}
-							case $n.CreateCommunity:
-							case $n.CreatePost:
+							case ea.CreateCommunity:
+							case ea.CreatePost:
 								return u.a.createElement(sa.a, {
 									className: oa.a.defaultIcon
 								});
-							case $n.DailyCharts:
+							case ea.DailyCharts:
 								return u.a.createElement(zn.a, {
 									className: oa.a.defaultIcon
 								});
-							case $n.GlobalSearch:
+							case ea.GlobalSearch:
 								return u.a.createElement(Wn, {
 									className: oa.a.defaultIcon
 								});
-							case $n.Home:
+							case ea.Home:
 								return u.a.createElement(Yn, {
 									className: oa.a.defaultIcon
 								});
-							case $n.Inbox:
-							case $n.Settings:
+							case ea.Inbox:
+							case ea.Settings:
 								return u.a.createElement(Hn.a, {
 									className: Object(g.a)(oa.a.icon, oa.a.userIcon)
 								});
-							case $n.ModListing:
+							case ea.ModListing:
 								return u.a.createElement(Jn.a, {
 									className: oa.a.modQueueIcon
 								});
-							case $n.SubredditCreation:
+							case ea.SubredditCreation:
 								return u.a.createElement(sa.a, {
 									className: oa.a.defaultIcon
 								});
-							case $n.ModMail:
+							case ea.ModMail:
 								return u.a.createElement(Qn.a, {
 									className: oa.a.modQueueIcon
 								});
-							case $n.ModQueue:
+							case ea.ModQueue:
 								return u.a.createElement(Jn.a, {
 									className: oa.a.modQueueIcon
 								});
-							case $n.Multi:
+							case ea.Multi:
 								return u.a.createElement("img", {
 									src: e.model.icon,
 									className: oa.a.customFeedIcon
 								});
-							case $n.Popular:
+							case ea.Popular:
 								return u.a.createElement(ta, {
 									className: oa.a.defaultIcon
 								});
-							case $n.Premium:
+							case ea.Premium:
 								return u.a.createElement(na.a, {
 									className: oa.a.premiumIcon
 								});
-							case $n.PublicAccessNetwork:
+							case ea.PublicAccessNetwork:
 								return u.a.createElement(aa.a, {
 									className: oa.a.publicAccessNetworkIcon
 								});
-							case $n.Report:
+							case ea.Report:
 								return u.a.createElement(sa.a, {
 									className: oa.a.defaultIcon
 								});
-							case $n.Unknown:
+							case ea.Unknown:
 								return u.a.createElement("div", {
 									className: oa.a.unknownIcon
 								});
-							case $n.UserDataRequest:
+							case ea.UserDataRequest:
 								return u.a.createElement(sa.a, {
 									className: oa.a.defaultIcon
 								});
-							case $n.UserProfile: {
+							case ea.UserProfile: {
 								const s = Object(Dn.a)({
 									shouldHideNsfwIcon: t,
 									subredditOrProfile: e.model
@@ -4492,17 +4492,17 @@
 									userName: e.model.name
 								})
 							}
-							case $n.UserProfileName:
+							case ea.UserProfileName:
 								return u.a.createElement("div", {
 									className: oa.a.defaultIcon
 								});
-							case $n.ViewDraft:
+							case ea.ViewDraft:
 								return u.a.createElement(sa.a, {
 									className: oa.a.defaultIcon
 								});
-							case $n.Geotagging:
-							case $n.Topic:
-								return u.a.createElement(ea, {
+							case ea.Geotagging:
+							case ea.Topic:
+								return u.a.createElement($n, {
 									className: oa.a.defaultIcon
 								})
 						}
@@ -6032,38 +6032,38 @@
 				Uc = s("./src/reddit/icons/svgs/KarmaGray/index.m.less"),
 				Bc = s.n(Uc);
 			var Hc = e => u.a.createElement("svg", {
-					className: Object(g.a)(Bc.a.karma, e.className),
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, u.a.createElement("path", {
-					d: "M3.37,2.75a5.9,5.9,0,0,1,5.49,3.7.62.62,0,0,1-.29.79A3.16,3.16,0,0,0,7.24,8.57a.63.63,0,0,1-.79.29,5.89,5.89,0,0,1-3.7-5.49A.62.62,0,0,1,3.37,2.75Zm8.06,4.49a.63.63,0,0,1-.29-.79,5.89,5.89,0,0,1,5.49-3.7.61.61,0,0,1,.62.6v0a5.89,5.89,0,0,1-3.7,5.49.62.62,0,0,1-.79-.29A3.16,3.16,0,0,0,11.43,7.24Zm2.12,3.9a5.89,5.89,0,0,1,3.7,5.49.62.62,0,0,1-.62.62h0a5.89,5.89,0,0,1-5.49-3.7.63.63,0,0,1,.29-.79,3.16,3.16,0,0,0,1.33-1.33A.62.62,0,0,1,13.55,11.14Zm-5,1.62a.62.62,0,0,1,.29.79,5.89,5.89,0,0,1-5.49,3.7.62.62,0,0,1-.62-.62h0a5.9,5.9,0,0,1,3.7-5.49.62.62,0,0,1,.79.29,3.1,3.1,0,0,0,1.35,1.33ZM10,5.93A7.23,7.23,0,0,0,7.51,2.82,5,5,0,0,1,9.68.09a.61.61,0,0,1,.64,0,5,5,0,0,1,2.17,2.73A7.23,7.23,0,0,0,10,5.93Zm9.91,3.75a.61.61,0,0,1,0,.64,5,5,0,0,1-2.73,2.17A7.23,7.23,0,0,0,14.07,10a7.36,7.36,0,0,0,3.11-2.49A5,5,0,0,1,19.91,9.68ZM10,14.07a7.18,7.18,0,0,0,2.5,3.11,5,5,0,0,1-2.18,2.73.61.61,0,0,1-.64,0,5,5,0,0,1-2.17-2.73A7.23,7.23,0,0,0,10,14.07ZM5.93,10a7.23,7.23,0,0,0-3.11,2.49A5,5,0,0,1,.09,10.32a.61.61,0,0,1,0-.64A5,5,0,0,1,2.82,7.51,7.23,7.23,0,0,0,5.93,10Z"
-				})),
-				qc = e => u.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, u.a.createElement("g", {
-					fill: "inherit"
-				}, u.a.createElement("path", {
-					d: "M15,2 L5,2 C4.447,2 4,2.447 4,3 L4,9 L9.586,9 L8.293,7.707 C7.902,7.316 7.902,6.684 8.293,6.293 C8.684,5.902 9.316,5.902 9.707,6.293 L12.707,9.293 C13.098,9.684 13.098,10.316 12.707,10.707 L9.707,13.707 C9.512,13.902 9.256,14 9,14 C8.744,14 8.488,13.902 8.293,13.707 C7.902,13.316 7.902,12.684 8.293,12.293 L9.586,11 L4,11 L4,17 C4,17.553 4.447,18 5,18 L15,18 C15.553,18 16,17.553 16,17 L16,3 C16,2.447 15.553,2 15,2"
-				})));
+				className: Object(g.a)(Bc.a.karma, e.className),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, u.a.createElement("path", {
+				d: "M3.37,2.75a5.9,5.9,0,0,1,5.49,3.7.62.62,0,0,1-.29.79A3.16,3.16,0,0,0,7.24,8.57a.63.63,0,0,1-.79.29,5.89,5.89,0,0,1-3.7-5.49A.62.62,0,0,1,3.37,2.75Zm8.06,4.49a.63.63,0,0,1-.29-.79,5.89,5.89,0,0,1,5.49-3.7.61.61,0,0,1,.62.6v0a5.89,5.89,0,0,1-3.7,5.49.62.62,0,0,1-.79-.29A3.16,3.16,0,0,0,11.43,7.24Zm2.12,3.9a5.89,5.89,0,0,1,3.7,5.49.62.62,0,0,1-.62.62h0a5.89,5.89,0,0,1-5.49-3.7.63.63,0,0,1,.29-.79,3.16,3.16,0,0,0,1.33-1.33A.62.62,0,0,1,13.55,11.14Zm-5,1.62a.62.62,0,0,1,.29.79,5.89,5.89,0,0,1-5.49,3.7.62.62,0,0,1-.62-.62h0a5.9,5.9,0,0,1,3.7-5.49.62.62,0,0,1,.79.29,3.1,3.1,0,0,0,1.35,1.33ZM10,5.93A7.23,7.23,0,0,0,7.51,2.82,5,5,0,0,1,9.68.09a.61.61,0,0,1,.64,0,5,5,0,0,1,2.17,2.73A7.23,7.23,0,0,0,10,5.93Zm9.91,3.75a.61.61,0,0,1,0,.64,5,5,0,0,1-2.73,2.17A7.23,7.23,0,0,0,14.07,10a7.36,7.36,0,0,0,3.11-2.49A5,5,0,0,1,19.91,9.68ZM10,14.07a7.18,7.18,0,0,0,2.5,3.11,5,5,0,0,1-2.18,2.73.61.61,0,0,1-.64,0,5,5,0,0,1-2.17-2.73A7.23,7.23,0,0,0,10,14.07ZM5.93,10a7.23,7.23,0,0,0-3.11,2.49A5,5,0,0,1,.09,10.32a.61.61,0,0,1,0-.64A5,5,0,0,1,2.82,7.51,7.23,7.23,0,0,0,5.93,10Z"
+			}));
+			var qc = e => u.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, u.a.createElement("g", {
+				fill: "inherit"
+			}, u.a.createElement("path", {
+				d: "M15,2 L5,2 C4.447,2 4,2.447 4,3 L4,9 L9.586,9 L8.293,7.707 C7.902,7.316 7.902,6.684 8.293,6.293 C8.684,5.902 9.316,5.902 9.707,6.293 L12.707,9.293 C13.098,9.684 13.098,10.316 12.707,10.707 L9.707,13.707 C9.512,13.902 9.256,14 9,14 C8.744,14 8.488,13.902 8.293,13.707 C7.902,13.316 7.902,12.684 8.293,12.293 L9.586,11 L4,11 L4,17 C4,17.553 4.447,18 5,18 L15,18 C15.553,18 16,17.553 16,17 L16,3 C16,2.447 15.553,2 15,2"
+			})));
 			var Wc = e => u.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 20 20"
-				}, u.a.createElement("path", {
-					d: "M10,8 C8.619,8 7.5,9.5 7.5,9.5 C7.5,9.5 8.619,11 10,11 C11.381,11 12.5,9.5 12.5,9.5 C12.5,9.5 11.381,8 10,8 M15.1338,14 L4.8658,14 C4.4818,14 4.2398,13.583 4.4328,13.25 L9.5678,4.357 C9.7598,4.024 10.2398,4.024 10.4328,4.357 L15.5678,13.25 C15.7598,13.583 15.5188,14 15.1338,14 M17.2748,3.038 L10.2748,1.038 C10.0948,0.987 9.9048,0.987 9.7258,1.038 L2.7258,3.038 C2.2958,3.161 1.9998,3.554 1.9998,4 L1.9998,11 C1.9998,16.688 9.4098,18.871 9.7258,18.962 C9.8158,18.987 9.9068,19 9.9998,19 C10.0928,19 10.1848,18.987 10.2748,18.962 C10.5898,18.871 17.9998,16.688 17.9998,11 L17.9998,4 C17.9998,3.554 17.7038,3.161 17.2748,3.038"
-				})),
-				Vc = e => u.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, u.a.createElement("g", {
-					fill: "inherit"
-				}, u.a.createElement("path", {
-					d: "M15,15.5 L5,15.5 C4.724,15.5 4.5,15.276 4.5,15 C4.5,12.755 6.326,10.929 8.571,10.929 L11.429,10.929 C13.674,10.929 15.5,12.755 15.5,15 C15.5,15.276 15.276,15.5 15,15.5 M10,4.5 C11.405,4.5 12.547,5.643 12.547,7.048 C12.547,8.452 11.405,9.595 10,9.595 C8.595,9.595 7.453,8.452 7.453,7.048 C7.453,5.643 8.595,4.5 10,4.5 M16,2 L4,2 C2.897,2 2,2.897 2,4 L2,16 C2,17.103 2.897,18 4,18 L16,18 C17.103,18 18,17.103 18,16 L18,4 C18,2.897 17.103,2 16,2"
-				}))),
-				Qc = e => u.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20"
+			}, u.a.createElement("path", {
+				d: "M10,8 C8.619,8 7.5,9.5 7.5,9.5 C7.5,9.5 8.619,11 10,11 C11.381,11 12.5,9.5 12.5,9.5 C12.5,9.5 11.381,8 10,8 M15.1338,14 L4.8658,14 C4.4818,14 4.2398,13.583 4.4328,13.25 L9.5678,4.357 C9.7598,4.024 10.2398,4.024 10.4328,4.357 L15.5678,13.25 C15.7598,13.583 15.5188,14 15.1338,14 M17.2748,3.038 L10.2748,1.038 C10.0948,0.987 9.9048,0.987 9.7258,1.038 L2.7258,3.038 C2.2958,3.161 1.9998,3.554 1.9998,4 L1.9998,11 C1.9998,16.688 9.4098,18.871 9.7258,18.962 C9.8158,18.987 9.9068,19 9.9998,19 C10.0928,19 10.1848,18.987 10.2748,18.962 C10.5898,18.871 17.9998,16.688 17.9998,11 L17.9998,4 C17.9998,3.554 17.7038,3.161 17.2748,3.038"
+			}));
+			var Vc = e => u.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, u.a.createElement("g", {
+				fill: "inherit"
+			}, u.a.createElement("path", {
+				d: "M15,15.5 L5,15.5 C4.724,15.5 4.5,15.276 4.5,15 C4.5,12.755 6.326,10.929 8.571,10.929 L11.429,10.929 C13.674,10.929 15.5,12.755 15.5,15 C15.5,15.276 15.276,15.5 15,15.5 M10,4.5 C11.405,4.5 12.547,5.643 12.547,7.048 C12.547,8.452 11.405,9.595 10,9.595 C8.595,9.595 7.453,8.452 7.453,7.048 C7.453,5.643 8.595,4.5 10,4.5 M16,2 L4,2 C2.897,2 2,2.897 2,4 L2,16 C2,17.103 2.897,18 4,18 L16,18 C17.103,18 18,17.103 18,16 L18,4 C18,2.897 17.103,2 16,2"
+			})));
+			var Qc = e => u.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 20 20"
@@ -6074,8 +6074,8 @@
 				}))),
 				zc = s("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				Zc = s("./src/reddit/icons/svgs/Redditor/index.tsx"),
-				Kc = s("./src/reddit/icons/svgs/Settings/index.tsx"),
-				Yc = e => u.a.createElement("svg", {
+				Kc = s("./src/reddit/icons/svgs/Settings/index.tsx");
+			var Yc = e => u.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 20 20",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -11044,8 +11044,8 @@
 				be = s("./src/reddit/components/ThemeProvider/index.tsx"),
 				he = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				ge = s("./src/reddit/controls/Button/index.tsx"),
-				fe = s("./src/reddit/featureFlags/index.ts"),
-				ve = e => u.a.createElement("svg", {
+				fe = s("./src/reddit/featureFlags/index.ts");
+			var ve = e => u.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 52 52"
@@ -13685,4 +13685,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=Reddit.35489877cc1aa531026e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.23dcef510ad2a07ff29c.js.map

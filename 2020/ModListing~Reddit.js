@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.7189a85b76f0e1f13578.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.72524278ad445342db8f.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -1077,8 +1077,8 @@
 				s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
 				a = n.n(o),
-				i = n("./src/lib/classNames/index.ts"),
-				c = e => a.a.createElement("svg", {
+				i = n("./src/lib/classNames/index.ts");
+			var c = e => a.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 320 320",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -1211,13 +1211,13 @@
 		"./src/reddit/components/VerticalVotes/votes.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return _
-			})), n.d(t, "b", (function() {
-				return E
-			})), n.d(t, "c", (function() {
 				return S
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return N
+			})), n.d(t, "c", (function() {
+				return I
+			})), n.d(t, "d", (function() {
+				return P
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
@@ -1251,10 +1251,14 @@
 			}, Object.assign(Object.assign({}, u.a), {
 				baseClassName: u.a.Downvote
 			}));
-			var p = n("./src/reddit/icons/fonts/Upvote/index.tsx"),
-				f = n("./src/reddit/controls/Upvote/index.m.less"),
-				b = n.n(f);
-			const h = i(e => {
+			var p = e => s.a.createElement(c.b, {
+					className: m(e),
+					compact: e.compact
+				}),
+				f = n("./src/reddit/icons/fonts/Upvote/index.tsx"),
+				b = n("./src/reddit/controls/Upvote/index.m.less"),
+				h = n.n(b);
+			const y = i(e => {
 				let {
 					voteState: t
 				} = e;
@@ -1264,17 +1268,21 @@
 					interactive: t
 				} = e;
 				return !1 !== t
-			}, Object.assign(Object.assign({}, b.a), {
-				baseClassName: b.a.Upvote
+			}, Object.assign(Object.assign({}, h.a), {
+				baseClassName: h.a.Upvote
 			}));
-			var y = n("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				g = n("./src/reddit/helpers/styles/smartTextColor.ts"),
-				v = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				O = n("./src/reddit/components/VerticalVotes/votes.m.less"),
-				x = n.n(O);
+			var g = e => s.a.createElement(f.b, {
+					className: y(e),
+					compact: e.compact
+				}),
+				v = n("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				O = n("./src/reddit/helpers/styles/smartTextColor.ts"),
+				x = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				j = n("./src/reddit/components/VerticalVotes/votes.m.less"),
+				w = n.n(j);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function C() {
+				return (C = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1282,7 +1290,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var w = function(e, t) {
+			var _ = function(e, t) {
 				var n = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1291,51 +1299,45 @@
 				}
 				return n
 			};
-			const C = e => Object(o.a)({
-					[x.a.compact]: e.compact,
-					[x.a.dark]: Object(g.b)(Object(y.a)(e)),
-					[x.a.nightmode]: e.isNightmode
+			const E = e => Object(o.a)({
+					[w.a.compact]: e.compact,
+					[w.a.dark]: Object(O.b)(Object(v.a)(e)),
+					[w.a.nightmode]: e.isNightmode
 				}),
-				_ = Object(a.a)(e => {
+				S = Object(a.a)(e => {
 					const {
 						voteIcons: t
-					} = Object(v.a)(e), n = {
+					} = Object(x.a)(e), n = {
 						"--verticalvotes-customdownvote-active": "url(".concat(t.downvoteActive, ")"),
 						"--verticalvotes-customdownvote-inactive": "url(".concat(t.downvoteInactive, ")")
 					}, {
 						theme: r
-					} = e, a = w(e, ["theme"]);
-					return s.a.createElement("button", j({}, a, {
-						className: Object(o.a)(x.a.customDownvote, C(e), {
-							[x.a.voted]: e.voteState === d.a.downvoted
+					} = e, a = _(e, ["theme"]);
+					return s.a.createElement("button", C({}, a, {
+						className: Object(o.a)(w.a.customDownvote, E(e), {
+							[w.a.voted]: e.voteState === d.a.downvoted
 						}, e.className),
 						style: n
 					}))
 				}),
-				E = Object(a.a)(e => {
+				N = Object(a.a)(e => {
 					const {
 						voteIcons: t
-					} = Object(v.a)(e), n = {
+					} = Object(x.a)(e), n = {
 						"--verticalvotes-customupvote-active": "url(".concat(t.upvoteActive, ")"),
 						"--verticalvotes-customupvote-inactive": "url(".concat(t.upvoteInactive, ")")
 					}, {
 						theme: r
-					} = e, a = w(e, ["theme"]);
-					return s.a.createElement("button", j({}, a, {
-						className: Object(o.a)(x.a.customUpvote, C(e), {
-							[x.a.voted]: e.voteState === d.a.upvoted
+					} = e, a = _(e, ["theme"]);
+					return s.a.createElement("button", C({}, a, {
+						className: Object(o.a)(w.a.customUpvote, E(e), {
+							[w.a.voted]: e.voteState === d.a.upvoted
 						}, e.className),
 						style: n
 					}))
 				}),
-				S = e => s.a.createElement(c.b, {
-					className: m(e),
-					compact: e.compact
-				}),
-				N = e => s.a.createElement(p.b, {
-					className: h(e),
-					compact: e.compact
-				})
+				I = p,
+				P = g
 		},
 		"./src/reddit/connectors/connectClickToToggleEditor.ts": function(e, t, n) {
 			"use strict";
@@ -1862,6 +1864,9 @@
 		},
 		"./src/reddit/controls/InternalLink/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return m
+			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -1889,7 +1894,8 @@
 				}
 				return n
 			};
-			t.a = e => {
+
+			function m(e) {
 				var {
 					children: t,
 					className: n,
@@ -2970,6 +2976,9 @@
 		},
 		"./src/reddit/layout/page/Listing/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return E
+			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -3035,8 +3044,10 @@
 					}, i))
 				}),
 				w = c.a.div("Body", v.a),
-				C = c.a.div("Sidebar", v.a);
-			t.a = e => {
+				C = c.a.div("Sidebar", v.a),
+				_ = e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null;
+
+			function E(e) {
 				const t = e.trendingUnit ? "28px" : "0",
 					n = e.isPageSwapped ? {
 						marginRight: "".concat(d.q, "px"),
@@ -3072,7 +3083,7 @@
 					className: v.a.innerContainer
 				}, s.a.createElement("div", {
 					className: v.a.bannerNavContainer
-				}, e.navBar), e.contentNavBar, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
+				}, e.navBar), e.contentNavBar, _(e), s.a.createElement("div", {
 					style: {
 						maxWidth: m
 					}
@@ -3169,4 +3180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModListing~Reddit.7189a85b76f0e1f13578.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.72524278ad445342db8f.js.map

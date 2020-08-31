@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.92a1c5e77778a02e3698.js
-// Retrieved at 8/27/2020, 7:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6c5882cfbcbbc2f26291.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -227,8 +227,8 @@
 				i = s("./src/lib/lessComponent.tsx"),
 				c = s("./src/reddit/controls/Dropdown/index.tsx"),
 				d = s("./src/reddit/helpers/makeHeaderUserDropdownItem/index.tsx"),
-				l = s("./src/reddit/icons/svgs/Envelope/index.tsx"),
-				p = e => r.a.createElement("svg", {
+				l = s("./src/reddit/icons/svgs/Envelope/index.tsx");
+			var p = e => r.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 20 20",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -1515,4 +1515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModerationDropdowns.92a1c5e77778a02e3698.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.6c5882cfbcbbc2f26291.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ff6bc4eeee942a274b0d.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.cc5983d58e325599ca4b.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -130,8 +130,8 @@
 				w = t("./src/reddit/models/Gold/TopAwarded/index.ts"),
 				f = t("./src/reddit/selectors/gold/topAwarded.ts"),
 				E = t("./src/reddit/selectors/posts.ts"),
-				x = t("./src/reddit/selectors/user.ts"),
-				v = t("./src/reddit/actions/gold/topAwarded.ts"),
+				v = t("./src/reddit/selectors/user.ts"),
+				x = t("./src/reddit/actions/gold/topAwarded.ts"),
 				C = t("./src/reddit/actions/modal.ts"),
 				N = t("./src/reddit/components/AwardBadges/index.tsx"),
 				_ = t("./src/reddit/components/PostTopMeta/index.tsx"),
@@ -139,8 +139,8 @@
 				M = t("./src/reddit/controls/LoadingIcon/index.tsx"),
 				g = t("./src/reddit/icons/fonts/Gift/index.tsx"),
 				b = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				k = t("./src/reddit/icons/svgs/TopAwarded/index.tsx"),
-				I = e => r.a.createElement("svg", {
+				k = t("./src/reddit/icons/svgs/TopAwarded/index.tsx");
+			var I = e => r.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 88 88",
 					fill: "none",
@@ -339,7 +339,7 @@
 			}
 			const {
 				fbt: Q
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), $ = 7, ee = Object(o.a)(e => e, f.a, f.c, f.e, x.i, (e, a, t, n, r) => {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), $ = 7, ee = Object(o.a)(e => e, f.a, f.c, f.e, v.i, (e, a, t, n, r) => {
 				if (!a) return {
 					anonymousRank: void 0,
 					currentPostId: a,
@@ -383,17 +383,17 @@
 					post: d,
 					list: h,
 					pending: f
-				} = e, E = Object(s.c)(), x = Object(p.a)();
+				} = e, E = Object(s.c)(), v = Object(p.a)();
 				Object(n.useEffect)(() => {
-					t && E(Object(v.a)(t))
+					t && E(Object(x.a)(t))
 				}, [t, E]), Object(n.useEffect)(() => {
-					t && x(Object(m.c)(t))
-				}, [t, x]);
+					t && v(Object(m.c)(t))
+				}, [t, v]);
 				const j = () => E(Object(C.g)(l.a.ECON_TOP_AWARDERS)),
 					T = () => {
 						if (t) {
 							const e = Object(i.d)(i.a.GildingFlow, !0);
-							x(Object(m.b)()), E(Object(u.d)({
+							v(Object(m.b)()), E(Object(u.d)({
 								thingId: t,
 								correlationId: e
 							}))
@@ -604,4 +604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconTopAwardersModal.ff6bc4eeee942a274b0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.cc5983d58e325599ca4b.js.map

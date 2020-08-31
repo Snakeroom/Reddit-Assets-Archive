@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.6ee3edb57cf44b58667e.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.7892f32b95ffd69dba64.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -540,12 +540,12 @@
 				}
 			}
 			const X = Object(U.a)(Object(C.a)(Y));
-			var $ = class extends i.a.Component {
-					render() {
-						return i.a.createElement(X, this.props)
-					}
-				},
-				ee = s("./node_modules/reselect/es/index.js"),
+			class $ extends i.a.Component {
+				render() {
+					return i.a.createElement(X, this.props)
+				}
+			}
+			var ee = s("./node_modules/reselect/es/index.js"),
 				te = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				se = s("./src/reddit/components/VerticalVotes/votes.tsx"),
 				ae = s("./src/reddit/helpers/styles/mixins/loading.ts"),
@@ -973,4 +973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.6ee3edb57cf44b58667e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.7892f32b95ffd69dba64.js.map

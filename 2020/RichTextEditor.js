@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.0b39c5299fc92e3c66e0.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.79b6ce39c4759015aad7.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -1104,26 +1104,27 @@
 				Q = n("./src/reddit/components/RichTextEditor/Toolbar/GifButton/index.m.less"),
 				J = n.n(Q);
 			const Y = Object(G.f)(Z.a);
-			var $ = function(e) {
-					const {
-						controlsState: t,
-						onGifButtonClick: n,
-						userCanUseGifs: o
-					} = e, s = t.giphy.isEnabled;
-					return i.a.createElement(U.a, {
-						Icon: Y,
-						className: s && o ? J.a.rainbow : "",
-						tooltip: w.fbt._("Add GIF", null, {
-							hk: "3uH3vO"
-						}),
-						disabledTooltip: w.fbt._("Limit 1 GIF / comment", null, {
-							hk: "7T6gq"
-						}),
-						enabled: s,
-						onClick: n
-					})
-				},
-				ee = n("./src/reddit/components/RichTextEditor/Toolbar/CommentToolbar.m.less"),
+
+			function $(e) {
+				const {
+					controlsState: t,
+					onGifButtonClick: n,
+					userCanUseGifs: o
+				} = e, s = t.giphy.isEnabled;
+				return i.a.createElement(U.a, {
+					Icon: Y,
+					className: s && o ? J.a.rainbow : "",
+					tooltip: w.fbt._("Add GIF", null, {
+						hk: "3uH3vO"
+					}),
+					disabledTooltip: w.fbt._("Limit 1 GIF / comment", null, {
+						hk: "7T6gq"
+					}),
+					enabled: s,
+					onClick: n
+				})
+			}
+			var ee = n("./src/reddit/components/RichTextEditor/Toolbar/CommentToolbar.m.less"),
 				te = n.n(ee);
 			const ne = u.a.div("SectionSpacer", te.a);
 
@@ -2834,4 +2835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextEditor.0b39c5299fc92e3c66e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.79b6ce39c4759015aad7.js.map

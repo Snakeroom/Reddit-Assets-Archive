@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.aac6d0b9c338de80a814.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.b7291edc334c75c5d022.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ChatSettings"], {
 		"./src/reddit/components/ModHub/ChatSettings/AccessDisabledBanner/index.m.less": function(e, t, s) {
@@ -157,69 +157,70 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Z = class extends c.a.Component {
-					get groupSettings() {
-						const e = {},
-							t = [];
-						return this.props.formState.forEach(s => {
-							const {
-								groupName: n
-							} = s;
-							n ? (e[n] = e[n] || [], e[n].push(s)) : t.push(s)
-						}), {
-							groupSettings: e,
-							otherSettings: t
-						}
-					}
-					buildControls(e) {
-						if (e && e.length) {
-							const {
-								isLoading: t,
-								onChange: s
-							} = this.props;
-							return c.a.createElement(c.a.Fragment, null, e.map((e, n) => ((e, t) => {
-								switch (e.controlState.settingType) {
-									case T.a.Toggle:
-										return c.a.createElement(R, K({
-											key: "settings-control-".concat(t)
-										}, e));
-									default:
-										return Object(I.a)("Undefined settings control type: ".concat(e.controlState.settingType)), null
-								}
-							})({
-								controlState: e,
-								isLoading: t,
-								onChange: s
-							}, n)))
-						}
-						return null
-					}
-					render() {
+			const Z = (e, t) => {
+				switch (e.controlState.settingType) {
+					case T.a.Toggle:
+						return c.a.createElement(R, K({
+							key: "settings-control-".concat(t)
+						}, e));
+					default:
+						return Object(I.a)("Undefined settings control type: ".concat(e.controlState.settingType)), null
+				}
+			};
+			class Y extends c.a.Component {
+				get groupSettings() {
+					const e = {},
+						t = [];
+					return this.props.formState.forEach(s => {
 						const {
-							groupSettings: e,
-							otherSettings: t
-						} = this.groupSettings;
-						return c.a.createElement(c.a.Fragment, null, Object.keys(e).map((t, s) => c.a.createElement("fieldset", {
-							key: "settings-group-".concat(s)
-						}, c.a.createElement("legend", {
-							className: F.a.sectionLegend
-						}, t), this.buildControls(e[t]))), this.buildControls(t))
+							groupName: n
+						} = s;
+						n ? (e[n] = e[n] || [], e[n].push(s)) : t.push(s)
+					}), {
+						groupSettings: e,
+						otherSettings: t
 					}
-				},
-				Y = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				W = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				X = s("./src/reddit/controls/Button/index.tsx"),
-				q = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				Q = s("./src/reddit/selectors/activeModalId.ts"),
-				V = s("./src/reddit/selectors/chat.ts"),
-				z = s("./src/reddit/selectors/chatSettingsPage.ts"),
-				G = s("./src/reddit/selectors/platform.ts");
-			const J = "chat-settings-discard-confirmation",
-				$ = Object(m.c)({
-					allowNavigationCallback: G.a,
-					isDiscardModalOpen: Object(Q.b)(J),
-					isLoading: z.b,
-					settings: z.a,
+				}
+				buildControls(e) {
+					if (e && e.length) {
+						const {
+							isLoading: t,
+							onChange: s
+						} = this.props;
+						return c.a.createElement(c.a.Fragment, null, e.map((e, n) => Z({
+							controlState: e,
+							isLoading: t,
+							onChange: s
+						}, n)))
+					}
+					return null
+				}
+				render() {
+					const {
+						groupSettings: e,
+						otherSettings: t
+					} = this.groupSettings;
+					return c.a.createElement(c.a.Fragment, null, Object.keys(e).map((t, s) => c.a.createElement("fieldset", {
+						key: "settings-group-".concat(s)
+					}, c.a.createElement("legend", {
+						className: F.a.sectionLegend
+					}, t), this.buildControls(e[t]))), this.buildControls(t))
+				}
+			}
+			var W = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				X = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				q = s("./src/reddit/controls/Button/index.tsx"),
+				Q = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				V = s("./src/reddit/selectors/activeModalId.ts"),
+				z = s("./src/reddit/selectors/chat.ts"),
+				G = s("./src/reddit/selectors/chatSettingsPage.ts"),
+				J = s("./src/reddit/selectors/platform.ts");
+			const $ = "chat-settings-discard-confirmation",
+				ee = Object(m.c)({
+					allowNavigationCallback: J.a,
+					isDiscardModalOpen: Object(V.b)($),
+					isLoading: G.b,
+					settings: G.a,
 					isChatModerator: (e, t) => {
 						let {
 							subredditId: s
@@ -227,10 +228,10 @@
 						const n = {
 							subredditId: s
 						};
-						return Object(V.e)(e, n)
+						return Object(z.e)(e, n)
 					}
 				}),
-				ee = Object(l.b)($, (e, t) => {
+				te = Object(l.b)(ee, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -240,7 +241,7 @@
 						onSave: (t, n) => e(Object(h.f)(s, t, n))
 					}
 				});
-			class te extends c.a.Component {
+			class se extends c.a.Component {
 				constructor(e) {
 					super(e), this.formBodyRef = c.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!1)
@@ -331,21 +332,21 @@
 					} = e;
 					return c.a.createElement("div", {
 						className: F.a.container
-					}, c.a.createElement(Y.c, {
+					}, c.a.createElement(W.c, {
 						className: F.a.topBar
-					}, c.a.createElement(X.f, {
+					}, c.a.createElement(q.f, {
 						disabled: t || !i,
 						onClick: this.onSaveClick
 					}, e.hasJustSaved ? n.fbt._("Saved", null, {
 						hk: "38ZPdi"
-					}) : e.isSavePending ? c.a.createElement(q.a, {
+					}) : e.isSavePending ? c.a.createElement(Q.a, {
 						className: F.a.loadingIcon,
 						sizePx: 10
 					}) : n.fbt._("Save changes", null, {
 						hk: "TTPsK"
-					}))), c.a.createElement(Y.a, {
+					}))), c.a.createElement(W.a, {
 						className: F.a.contentContainer
-					}, c.a.createElement(Y.b, null, n.fbt._("Chat settings", null, {
+					}, c.a.createElement(W.b, null, n.fbt._("Chat settings", null, {
 						hk: "174Drb"
 					})), !a && c.a.createElement(x, {
 						className: F.a.modAccessBanner
@@ -353,7 +354,7 @@
 						className: F.a.formBody,
 						onBlur: this.onFormFieldBlur,
 						ref: this.formBodyRef
-					}, this.state.formState && this.state.formState.length ? c.a.createElement(Z, {
+					}, this.state.formState && this.state.formState.length ? c.a.createElement(Y, {
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
@@ -363,7 +364,7 @@
 						isLoading: t
 					})), c.a.createElement(u.a, {
 						blockOnBeforeUnload: !0,
-						dialogId: J,
+						dialogId: $,
 						enabled: i
 					}), this.props.isDiscardModalOpen && c.a.createElement(p.a, {
 						actionText: n.fbt._("Discard", null, {
@@ -381,8 +382,8 @@
 					}))
 				}
 			}
-			t.default = ee(Object(W.c)(te))
+			t.default = te(Object(X.c)(se))
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-ModHub-ChatSettings.aac6d0b9c338de80a814.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.b7291edc334c75c5d022.js.map

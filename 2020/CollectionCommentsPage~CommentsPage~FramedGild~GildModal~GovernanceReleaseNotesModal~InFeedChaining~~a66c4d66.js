@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.9e03e14305bee793b812.js
-// Retrieved at 8/31/2020, 3:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.ad8ada8b30090180e96e.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -66,19 +66,19 @@
 				o = s.n(a),
 				n = s("./src/lib/classNames/index.ts"),
 				r = s("./src/lib/lessComponent.tsx"),
-				l = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
-				c = e => o.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 20 20"
-				}, o.a.createElement("path", {
-					d: "M14.41,13H17a1,1,0,0,0,0-2H12a1,1,0,0,0-1,1v5a1,1,0,0,0,2,0V14.41l3.24,3.24a1,1,0,0,0,1.41-1.41Z",
-					fill: "#FFFFFF"
-				}), o.a.createElement("path", {
-					d: "M8,2A1,1,0,0,0,7,3V5.59L3.76,2.34A1,1,0,0,0,2.34,3.76L5.59,7H3A1,1,0,0,0,3,9H8A1,1,0,0,0,9,8V3A1,1,0,0,0,8,2Z",
-					fill: "#FFFFFF"
-				})),
-				d = e => o.a.createElement("svg", {
+				l = s("./src/reddit/components/HTML5StreamPlayer/index.tsx");
+			var c = e => o.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20"
+			}, o.a.createElement("path", {
+				d: "M14.41,13H17a1,1,0,0,0,0-2H12a1,1,0,0,0-1,1v5a1,1,0,0,0,2,0V14.41l3.24,3.24a1,1,0,0,0,1.41-1.41Z",
+				fill: "#FFFFFF"
+			}), o.a.createElement("path", {
+				d: "M8,2A1,1,0,0,0,7,3V5.59L3.76,2.34A1,1,0,0,0,2.34,3.76L5.59,7H3A1,1,0,0,0,3,9H8A1,1,0,0,0,9,8V3A1,1,0,0,0,8,2Z",
+				fill: "#FFFFFF"
+			}));
+			var d = e => o.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 20 20"
@@ -89,29 +89,29 @@
 					d: "M17,11a1,1,0,0,0-1,1v2.59l-3.24-3.24a1,1,0,0,0-1.41,1.41L14.59,16H12a1,1,0,0,0,0,2h5a1,1,0,0,0,1-1V12A1,1,0,0,0,17,11Z",
 					fill: "#FFFFFF"
 				})),
-				h = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
-				p = e => o.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 20 20"
-				}, o.a.createElement("rect", {
-					x: "11",
-					y: "2",
-					width: "6",
-					height: "16",
-					rx: "1",
-					ry: "1",
-					fill: "#FFFFFF"
-				}), o.a.createElement("rect", {
-					x: "3",
-					y: "2",
-					width: "6",
-					height: "16",
-					rx: "1",
-					ry: "1",
-					fill: "#FFFFFF"
-				})),
-				u = e => o.a.createElement("svg", {
+				h = s("./src/reddit/icons/svgs/VideoMute/index.tsx");
+			var p = e => o.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20"
+			}, o.a.createElement("rect", {
+				x: "11",
+				y: "2",
+				width: "6",
+				height: "16",
+				rx: "1",
+				ry: "1",
+				fill: "#FFFFFF"
+			}), o.a.createElement("rect", {
+				x: "3",
+				y: "2",
+				width: "6",
+				height: "16",
+				rx: "1",
+				ry: "1",
+				fill: "#FFFFFF"
+			}));
+			var u = e => o.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 20 20"
@@ -880,8 +880,9 @@
 				D = s("./src/lib/lessComponent.tsx"),
 				W = D.a.img("Component", U.a),
 				z = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
-				G = s("./node_modules/fbt/lib/FbtPublic.js"),
-				Y = (s("./node_modules/core-js/modules/es6.symbol.js"), e => l.a.createElement("svg", {
+				G = s("./node_modules/fbt/lib/FbtPublic.js");
+			s("./node_modules/core-js/modules/es6.symbol.js");
+			var Y = e => l.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 77.06 60"
@@ -890,7 +891,7 @@
 				}, l.a.createElement("path", {
 					d: "M75.17,11.35l-44.9,46.7a6.17,6.17,0,0,1-9,0L1.88,37.55a6.83,6.83,0,0,1,0-9.4,6.17,6.17,0,0,1,9,0l15,15.8L66.27,2a6.17,6.17,0,0,1,9,0A6.93,6.93,0,0,1,75.17,11.35Z",
 					fill: "#FFFFFF"
-				})))),
+				}))),
 				J = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
 				Z = s.n(J);
 
@@ -1800,7 +1801,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("54b41ed-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("5f3b49f-production", " ").concat(t);
 									return i && (s += " [".concat(V.rc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2236,4 +2237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.9e03e14305bee793b812.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.ad8ada8b30090180e96e.js.map

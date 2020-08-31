@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.518668b1052515723669.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.0625fe52ec93eae6da55.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -46,8 +46,8 @@
 			var n = t("./node_modules/react/index.js"),
 				l = t.n(n),
 				r = t("./src/lib/classNames/index.ts"),
-				s = t("./src/lib/lessComponent.tsx"),
-				i = t("./src/reddit/controls/Input/index.tsx"),
+				i = t("./src/lib/lessComponent.tsx"),
+				s = t("./src/reddit/controls/Input/index.tsx"),
 				o = t("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				c = t("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
 				d = t.n(c);
@@ -70,9 +70,9 @@
 				}
 				return t
 			};
-			const u = s.a.div("icon", d.a),
-				h = s.a.textarea("textarea", d.a),
-				b = s.a.span("Invalid", d.a);
+			const u = i.a.div("icon", d.a),
+				h = i.a.textarea("textarea", d.a),
+				b = i.a.span("Invalid", d.a);
 			var f, g;
 			! function(e) {
 				e[e.Valid = 1] = "Valid", e[e.Invalid = 2] = "Invalid"
@@ -107,7 +107,7 @@
 						backgroundColorState: a,
 						className: t,
 						inputRef: n,
-						isRequired: s,
+						isRequired: i,
 						label: o,
 						onKeyDown: c,
 						state: u
@@ -115,10 +115,10 @@
 					return l.a.createElement(x, {
 						backgroundColorState: a,
 						className: t,
-						isRequired: s,
+						isRequired: i,
 						label: o,
 						state: u
-					}, l.a.createElement(i.a, p({}, h, {
+					}, l.a.createElement(s.a, p({}, h, {
 						className: Object(r.a)(d.a.input, d.a.control, {
 							[d.a.hasState]: !!e.state
 						}),
@@ -132,16 +132,16 @@
 						backgroundColorState: a,
 						className: t,
 						inputRef: n,
-						isRequired: s,
-						label: i,
+						isRequired: i,
+						label: s,
 						onKeyDown: o,
 						state: c
 					} = e, u = m(e, ["backgroundColorState", "className", "inputRef", "isRequired", "label", "onKeyDown", "state"]);
 					return l.a.createElement(x, {
 						backgroundColorState: a,
 						className: t,
-						isRequired: s,
-						label: i,
+						isRequired: i,
+						label: s,
 						state: c,
 						isTextarea: !0
 					}, l.a.createElement(h, p({}, u, {
@@ -156,9 +156,13 @@
 		},
 		"./src/reddit/controls/Form/index.tsx": function(e, a, t) {
 			"use strict";
+			t.d(a, "a", (function() {
+				return r
+			}));
 			var n = t("./node_modules/react/index.js"),
 				l = t.n(n);
-			a.a = e => {
+
+			function r(e) {
 				const {
 					children: a,
 					className: t,
@@ -166,10 +170,10 @@
 				} = e;
 				return l.a.createElement("form", {
 					className: t,
-					onSubmit: r(n)
+					onSubmit: i(n)
 				}, a)
-			};
-			const r = e => a => {
+			}
+			const i = e => a => {
 					if (!e) return;
 					a.preventDefault();
 					const t = a.target,
@@ -234,8 +238,8 @@
 			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
 				l = t("./node_modules/react/index.js"),
 				r = t.n(l),
-				s = t("./node_modules/react-redux/es/index.js"),
-				i = t("./node_modules/reselect/es/index.js"),
+				i = t("./node_modules/react-redux/es/index.js"),
+				s = t("./node_modules/reselect/es/index.js"),
 				o = t("./src/lib/validateEmail/index.ts"),
 				c = t("./src/reddit/pages/AppealPage/index.m.less"),
 				d = t.n(c),
@@ -269,10 +273,10 @@
 			var v = t("./src/reddit/selectors/user.ts");
 			const F = "https://www.redditinc.com/policies/content-policy",
 				N = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
-				S = Object(i.c)({
+				S = Object(s.c)({
 					currentUser: v.i
 				}),
-				w = Object(s.b)(S, e => ({
+				w = Object(i.b)(S, e => ({
 					logoutUser: () => e(Object(p.p)()),
 					onSubmitAppeal: (a, t) => e(k(a, t))
 				}));
@@ -368,8 +372,8 @@
 							state: t
 						} = this, {
 							canShowWarning: l,
-							description: s,
-							descriptionDirty: i,
+							description: i,
+							descriptionDirty: s,
 							email: o,
 							emailDirty: c,
 							emailValid: p,
@@ -457,15 +461,15 @@
 							}),
 							maxLength: 250,
 							onChange: this.handleDescriptionChange,
-							state: i ? void 0 : s ? m.d.Valid : m.d.Invalid,
-							value: s
-						}), !s && !i && r.a.createElement("div", {
+							state: s ? void 0 : i ? m.d.Valid : m.d.Invalid,
+							value: i
+						}), !i && !s && r.a.createElement("div", {
 							className: d.a.errorMessage
 						}, n.fbt._("Enter a brief description", null, {
 							hk: "1HEyz"
 						})), r.a.createElement("div", {
 							className: d.a.textAreaCounter
-						}, n.fbt._("{length}", [n.fbt._param("length", (s.length / 250).toString())], {
+						}, n.fbt._("{length}", [n.fbt._param("length", (i.length / 250).toString())], {
 							hk: "3fYpQM"
 						})))), r.a.createElement("div", {
 							className: d.a.policyCheckboxWrapper
@@ -541,4 +545,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=Appeal.518668b1052515723669.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.0625fe52ec93eae6da55.js.map

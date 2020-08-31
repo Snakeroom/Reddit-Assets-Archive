@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.aa5f3190b3780288ca8d.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.d412fffd29225ab5c733.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -263,4 +263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CoinsMobile.aa5f3190b3780288ca8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.d412fffd29225ab5c733.js.map

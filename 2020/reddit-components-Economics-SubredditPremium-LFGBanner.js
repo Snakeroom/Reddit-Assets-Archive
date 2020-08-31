@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.a54d1e3f7e3fba9c1399.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.7c79078b6892853da555.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, s) {
@@ -448,43 +448,44 @@
 				})),
 				ee = s("./src/higherOrderComponents/asTooltip.tsx"),
 				te = s("./src/reddit/controls/Dropdown/index.tsx"),
-				se = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				ne = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				ae = s("./src/reddit/icons/svgs/Planet/index.tsx"),
-				re = s("./src/reddit/icons/svgs/User/index.tsx"),
-				ie = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Setup/Option/index.m.less"),
-				oe = s.n(ie);
-			const ce = new Map;
-			ce.set(G.a, "LFG_BANNER_PLATFORM_DROPDOWN"), ce.set(G.b, "LFG_BANNER_PLAYERTYPE_DROPDOWN"), ce.set(G.c, "LFG_BANNER_REGION_DROPDOWN");
+				se = s("./src/reddit/controls/Dropdown/Row.tsx");
+			var ne = e => r.a.createElement("svg", {
+					className: e.className,
+					viewBox: "0 0 16 12",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, r.a.createElement("path", {
+					d: "M15.7658 8.30457C15.5196 6.40434 14.6685 3.93402 13.992 2.18306C13.4831 0.865888 12.2136 0 10.8015 0H5.01677C3.60472 0 2.33517 0.865888 1.82628 2.18306C1.1498 3.93402 0.298684 6.40434 0.0525311 8.30457C-0.374308 11.5997 1.94027 12 1.94027 12L5.31936 7.9067H10.4989L13.878 12C13.878 12 16.1926 11.5997 15.7658 8.30457ZM4.36141 3.50639C4.94606 3.50639 5.42001 3.03243 5.42001 2.44778C5.42001 1.86313 4.94606 1.38918 4.36141 1.38918C3.77676 1.38918 3.3028 1.86313 3.3028 2.44778C3.3028 3.03243 3.77676 3.50639 4.36141 3.50639ZM7.02295 5.43958C7.02295 6.02423 6.549 6.49818 5.96435 6.49818C5.3797 6.49818 4.90574 6.02423 4.90574 5.43958C4.90574 4.85493 5.3797 4.38097 5.96435 4.38097C6.549 4.38097 7.02295 4.85493 7.02295 5.43958ZM11.4569 3.50639C12.0416 3.50639 12.5155 3.03244 12.5155 2.44779C12.5155 1.86314 12.0416 1.38919 11.4569 1.38919C10.8723 1.38919 10.3983 1.86314 10.3983 2.44779C10.3983 3.03244 10.8723 3.50639 11.4569 3.50639ZM10.9126 5.43958C10.9126 6.02423 10.4386 6.49818 9.85398 6.49818C9.26933 6.49818 8.79538 6.02423 8.79538 5.43958C8.79538 4.85493 9.26933 4.38097 9.85398 4.38097C10.4386 4.38097 10.9126 4.85493 10.9126 5.43958Z"
+				})),
+				ae = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				re = s("./src/reddit/icons/svgs/Planet/index.tsx"),
+				ie = s("./src/reddit/icons/svgs/User/index.tsx"),
+				oe = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Setup/Option/index.m.less"),
+				ce = s.n(oe);
 			const de = new Map;
-			de.set(G.a, "platform"), de.set(G.b, "playerType"), de.set(G.c, "region");
+			de.set(G.a, "LFG_BANNER_PLATFORM_DROPDOWN"), de.set(G.b, "LFG_BANNER_PLAYERTYPE_DROPDOWN"), de.set(G.c, "LFG_BANNER_REGION_DROPDOWN");
 			const le = new Map;
-			le.set(G.a, r.a.createElement(e => r.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 16 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("path", {
-				d: "M15.7658 8.30457C15.5196 6.40434 14.6685 3.93402 13.992 2.18306C13.4831 0.865888 12.2136 0 10.8015 0H5.01677C3.60472 0 2.33517 0.865888 1.82628 2.18306C1.1498 3.93402 0.298684 6.40434 0.0525311 8.30457C-0.374308 11.5997 1.94027 12 1.94027 12L5.31936 7.9067H10.4989L13.878 12C13.878 12 16.1926 11.5997 15.7658 8.30457ZM4.36141 3.50639C4.94606 3.50639 5.42001 3.03243 5.42001 2.44778C5.42001 1.86313 4.94606 1.38918 4.36141 1.38918C3.77676 1.38918 3.3028 1.86313 3.3028 2.44778C3.3028 3.03243 3.77676 3.50639 4.36141 3.50639ZM7.02295 5.43958C7.02295 6.02423 6.549 6.49818 5.96435 6.49818C5.3797 6.49818 4.90574 6.02423 4.90574 5.43958C4.90574 4.85493 5.3797 4.38097 5.96435 4.38097C6.549 4.38097 7.02295 4.85493 7.02295 5.43958ZM11.4569 3.50639C12.0416 3.50639 12.5155 3.03244 12.5155 2.44779C12.5155 1.86314 12.0416 1.38919 11.4569 1.38919C10.8723 1.38919 10.3983 1.86314 10.3983 2.44779C10.3983 3.03244 10.8723 3.50639 11.4569 3.50639ZM10.9126 5.43958C10.9126 6.02423 10.4386 6.49818 9.85398 6.49818C9.26933 6.49818 8.79538 6.02423 8.79538 5.43958C8.79538 4.85493 9.26933 4.38097 9.85398 4.38097C10.4386 4.38097 10.9126 4.85493 10.9126 5.43958Z"
-			})), {
-				className: oe.a.controller
-			})), le.set(G.b, r.a.createElement(re.a, {
-				className: oe.a.user
-			})), le.set(G.c, r.a.createElement(ae.a, {
-				className: oe.a.planet
+			le.set(G.a, "platform"), le.set(G.b, "playerType"), le.set(G.c, "region");
+			const me = new Map;
+			me.set(G.a, r.a.createElement(ne, {
+				className: ce.a.controller
+			})), me.set(G.b, r.a.createElement(ie.a, {
+				className: ce.a.user
+			})), me.set(G.c, r.a.createElement(re.a, {
+				className: ce.a.planet
 			}));
-			const me = Object(ee.a)(te.a);
-			var ue, pe = Object(x.c)((function(e) {
-					const t = le.get(e.type),
-						s = ce.get(e.type);
+			const ue = Object(ee.a)(te.a);
+			var pe, be = Object(x.c)((function(e) {
+					const t = me.get(e.type),
+						s = de.get(e.type);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: Object(d.a)(oe.a.container, e.className, {
-							[oe.a.selected]: !!e.selected
+						className: Object(d.a)(ce.a.container, e.className, {
+							[ce.a.selected]: !!e.selected
 						}),
 						id: s,
 						onClick: e.onToggleDropdown
-					}, t, e.text, r.a.createElement(ne.b, {
-						className: oe.a.triangle
-					})), r.a.createElement(me, {
+					}, t, e.text, r.a.createElement(ae.b, {
+						className: ce.a.triangle
+					})), r.a.createElement(ue, {
 						tooltipId: s,
 						isOpen: !!e.tooltipVisible
 					}, Object.keys(e.type).map((t, s) => r.a.createElement(se.b, {
@@ -502,7 +503,7 @@
 									correlationId: e.correlationId
 								}, n), {
 									actionInfo: Object.assign(Object.assign({}, n.actionInfo), {
-										paneName: de.get(e.type),
+										paneName: le.get(e.type),
 										reason: t
 									}),
 									subreddit: B.subreddit(s)
@@ -511,9 +512,9 @@
 						}
 					}))))
 				})),
-				be = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Setup/index.m.less"),
-				he = s.n(be),
-				ge = Object(x.c)(class extends r.a.Component {
+				he = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Setup/index.m.less"),
+				ge = s.n(he),
+				fe = Object(x.c)(class extends r.a.Component {
 					constructor() {
 						super(...arguments), this.state = {
 							selectedPlatform: void 0,
@@ -539,12 +540,12 @@
 							hk: "30zv9O"
 						});
 						return r.a.createElement("article", {
-							className: Object(d.a)(he.a.container, e)
+							className: Object(d.a)(ge.a.container, e)
 						}, r.a.createElement("header", {
-							className: he.a.title
+							className: ge.a.title
 						}, n.fbt._("Setup Your Badge", null, {
 							hk: "21LcIU"
-						})), r.a.createElement(pe, {
+						})), r.a.createElement(be, {
 							correlationId: this.props.correlationId,
 							selected: !!i,
 							tooltipVisible: "region" === o,
@@ -557,7 +558,7 @@
 							onToggleDropdown: () => this.setState(e => ({
 								visibleDropdown: e.visibleDropdown ? void 0 : "region"
 							}))
-						}), r.a.createElement(pe, {
+						}), r.a.createElement(be, {
 							correlationId: this.props.correlationId,
 							selected: !!s,
 							tooltipVisible: "platform" === o,
@@ -570,7 +571,7 @@
 							onToggleDropdown: () => this.setState(e => ({
 								visibleDropdown: e.visibleDropdown ? void 0 : "platform"
 							}))
-						}), r.a.createElement(pe, {
+						}), r.a.createElement(be, {
 							correlationId: this.props.correlationId,
 							selected: !!a,
 							tooltipVisible: "playerType" === o,
@@ -584,7 +585,7 @@
 								visibleDropdown: e.visibleDropdown ? void 0 : "playerType"
 							}))
 						}), r.a.createElement(j.f, {
-							className: he.a.button,
+							className: ge.a.button,
 							disabled: !s || !a || !i,
 							onClick: () => {
 								s && a && i && (t({
@@ -605,12 +606,12 @@
 						})))
 					}
 				}),
-				fe = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/index.m.less"),
-				_e = s.n(fe);
+				_e = s("./src/reddit/components/Economics/SubredditPremium/LFGBanner/index.m.less"),
+				ve = s.n(_e);
 			! function(e) {
 				e.CanClaim = "canclaim", e.Claimed = "claimed", e.Dismissed = "dismissed", e.Generating = "generating", e.Hidden = "hidden", e.Select = "select"
-			}(ue || (ue = {}));
-			class ve extends r.a.Component {
+			}(pe || (pe = {}));
+			class ye extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleClaim = async e => {
 						const {
@@ -628,7 +629,7 @@
 								subredditId: this.props.subredditId
 							});
 						o.ok ? (this.setState({
-							show: ue.Claimed
+							show: pe.Claimed
 						}), this.props.onDismissBanner(), this.props.onBadgeClaimed(i)) : this.props.onError(o.error), e && this.props.onOpenLandingPage(s, this.correlationId), this.props.sendEvent(t => {
 							const s = B.defaults(t);
 							return Object.assign(Object.assign({
@@ -645,10 +646,10 @@
 							})
 						})
 					}, this.handleDismiss = () => {
-						this.state.show === ue.Claimed ? this.setState({
-							show: ue.Hidden
+						this.state.show === pe.Claimed ? this.setState({
+							show: pe.Hidden
 						}) : (this.setState({
-							show: ue.Dismissed
+							show: pe.Dismissed
 						}), this.props.sendEvent(e => {
 							const t = B.defaults(e);
 							return Object.assign(Object.assign({
@@ -665,7 +666,7 @@
 						})), this.props.onDismissBanner()
 					}, this.handleUndoDismiss = () => {
 						this.setState({
-							show: ue.Select
+							show: pe.Select
 						}), this.props.onUndismissBanner(), this.props.sendEvent(e => {
 							const t = B.defaults(e);
 							return Object.assign(Object.assign({
@@ -681,7 +682,7 @@
 							})
 						})
 					}, this.state = {
-						show: ue.Hidden
+						show: pe.Hidden
 					}, this.correlationId = L()()
 				}
 				componentDidMount() {
@@ -692,7 +693,7 @@
 				}
 				handleBannerShownFirstTime() {
 					this.setState({
-						show: ue.Select
+						show: pe.Select
 					}), this.props.sendEvent(e => {
 						const t = B.defaults(e);
 						return Object.assign(Object.assign({
@@ -720,55 +721,55 @@
 						selectedPlatform: c,
 						selectedPlayerType: l
 					} = this.state;
-					return a && s !== P.a.DontKnow && i !== ue.Hidden ? this.state.show === ue.Dismissed ? r.a.createElement("div", {
-						className: Object(d.a)(_e.a.dismissedContainer, e)
+					return a && s !== P.a.DontKnow && i !== pe.Hidden ? this.state.show === pe.Dismissed ? r.a.createElement("div", {
+						className: Object(d.a)(ve.a.dismissedContainer, e)
 					}, r.a.createElement("div", {
-						className: _e.a.dismissedText
+						className: ve.a.dismissedText
 					}, n.fbt._("Ok, we won't show you this again.", null, {
 						hk: "4z33KK"
 					})), r.a.createElement(j.f, {
 						onClick: this.handleUndoDismiss
 					}, n.fbt._("undo", null, {
 						hk: "1A9z3Y"
-					}))) : this.state.show === ue.Claimed ? r.a.createElement("div", {
-						className: Object(d.a)(_e.a.successContainer, e)
+					}))) : this.state.show === pe.Claimed ? r.a.createElement("div", {
+						className: Object(d.a)(ve.a.successContainer, e)
 					}, r.a.createElement(S.a, {
-						className: _e.a.close,
+						className: ve.a.close,
 						onClick: this.handleDismiss
 					}), r.a.createElement(y, {
 						boughtBadge: !0,
 						hideEmoji: !0
 					})) : r.a.createElement("article", {
-						className: Object(d.a)(_e.a.container, e)
+						className: Object(d.a)(ve.a.container, e)
 					}, r.a.createElement($, {
-						className: _e.a.header,
+						className: ve.a.header,
 						subredditId: t
 					}), r.a.createElement("div", {
-						className: _e.a.content
-					}, r.a.createElement(ge, {
+						className: ve.a.content
+					}, r.a.createElement(fe, {
 						correlationId: this.correlationId,
 						onGenerate: e => this.setState(() => ({
-							show: ue.CanClaim,
+							show: pe.CanClaim,
 							selectedRegion: e.region,
 							selectedPlatform: e.platform,
 							selectedPlayerType: e.playerType
 						}))
-					}), i === ue.Select && r.a.createElement(Q, {
-						className: _e.a.example
-					}), i === ue.CanClaim && o && c && l && r.a.createElement(U, {
-						className: _e.a.claim,
+					}), i === pe.Select && r.a.createElement(Q, {
+						className: ve.a.example
+					}), i === pe.CanClaim && o && c && l && r.a.createElement(U, {
+						className: ve.a.claim,
 						platform: c,
 						playerType: l,
 						region: o,
 						userIsSubscriber: s === P.a.Subscribed,
 						onClaim: e => this.handleClaim(e)
 					})), r.a.createElement(S.a, {
-						className: _e.a.close,
+						className: ve.a.close,
 						onClick: this.handleDismiss
 					})) : null
 				}
 			}
-			const ye = Object(c.c)({
+			const xe = Object(c.c)({
 					isBannerDismissed: (e, t) => {
 						let {
 							subredditId: s
@@ -789,8 +790,8 @@
 					},
 					userIsLoggedIn: e => !!e.user.account
 				}),
-				xe = Object(x.c)(ve);
-			t.default = Object(E.b)(Object(i.b)(ye, (e, t) => {
+				Ee = Object(x.c)(ye);
+			t.default = Object(E.b)(Object(i.b)(xe, (e, t) => {
 				let {
 					subredditId: s
 				} = t;
@@ -810,7 +811,7 @@
 					},
 					onUndismissBanner: () => e(Object(l.c)(s, O.a.LFG))
 				}
-			})(xe))
+			})(Ee))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/LFGBanner/models.ts": function(e, t, s) {
 			"use strict";
@@ -977,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Economics-SubredditPremium-LFGBanner.a54d1e3f7e3fba9c1399.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.7c79078b6892853da555.js.map

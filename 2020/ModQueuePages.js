@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.900e7449324326d7638a.js
-// Retrieved at 8/27/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.59f7559a124a6a07dad3.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -2171,12 +2171,12 @@
 				currentPage: e => e.platform.currentPage
 			});
 			var w = Object(i.b)(E)(e => a.a.createElement(_.a, {
-					className: Object(v.a)(j.a.navChild, {
-						[j.a.mIsActive]: e.isActive
-					}),
-					to: Object(P.a)("/r/mod/about/".concat(e.pathName), y()(e.currentPage.queryParams, ["after", "before", "page"]))
-				}, e.title)),
-				S = e => a.a.createElement("div", {
+				className: Object(v.a)(j.a.navChild, {
+					[j.a.mIsActive]: e.isActive
+				}),
+				to: Object(P.a)("/r/mod/about/".concat(e.pathName), y()(e.currentPage.queryParams, ["after", "before", "page"]))
+			}, e.title));
+			var S = e => a.a.createElement("div", {
 					className: j.a.navContainer
 				}, a.a.createElement("div", {
 					className: Object(v.a)(j.a.innerContainer, {
@@ -2357,4 +2357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueuePages.900e7449324326d7638a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.59f7559a124a6a07dad3.js.map

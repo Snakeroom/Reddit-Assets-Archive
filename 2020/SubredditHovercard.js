@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.ba32974c85f4069bd982.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.a6b4445336efd1dc91be.js
+// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -761,6 +761,9 @@
 		},
 		"./src/reddit/controls/IconTooltip/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return m
+			}));
 			var r = s("./node_modules/react/index.js"),
 				o = s.n(r),
 				n = s("./src/higherOrderComponents/asTooltip.tsx"),
@@ -770,7 +773,7 @@
 			const c = Object(n.a)(i.b),
 				l = ["center", "top"],
 				u = ["center", "bottom"];
-			t.a = class extends o.a.Component {
+			class m extends o.a.Component {
 				constructor(e) {
 					super(e), this.tooltipTargetElement = null, this.setTooltipTargetRef = e => this.tooltipTargetElement = e, this.onShowTooltip = () => {
 						this.setState({
@@ -904,4 +907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditHovercard.ba32974c85f4069bd982.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.a6b4445336efd1dc91be.js.map
