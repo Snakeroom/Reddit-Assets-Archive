@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.b7792dbf1997f97ca2be.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.ec9313315cfedf39f84b.js
+// Retrieved at 8/31/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -1005,13 +1005,13 @@
 			function jn() {
 				const e = Object(u.c)(),
 					[t, n] = Object(s.useState)(""),
-					r = Object(s.useCallback)(t => {
+					r = Object(s.useCallback)(() => {
 						const n = Date.now(),
-							s = t ? n - t * yn : 0;
+							s = t ? n - Number(t) * yn : 0;
 						e(Object(wn.H)({
 							surveyLastSeenTime: s
 						}, !1)), Object(_n.db)(s)
-					}, [e]);
+					}, [e, t]);
 				return a.a.createElement(Gt, {
 					title: "update survey last seen"
 				}, a.a.createElement("div", null, a.a.createElement("div", null, a.a.createElement("span", {
@@ -1022,11 +1022,11 @@
 				}), a.a.createElement("span", {
 					className: Cn.a.SetLabel
 				}, "days ago"), a.a.createElement(Ce.i, {
-					onClick: () => r(Number(t))
+					onClick: r
 				}, "SET")), a.a.createElement("p", {
 					className: Cn.a.Separator
 				}, "-- OR --"), a.a.createElement("div", null, a.a.createElement(Ce.i, {
-					onClick: () => r()
+					onClick: r
 				}, "DELETE TIMESTAMP"))))
 			}
 			var Nn = n("./src/reddit/constants/featureThrottling.ts"),
@@ -1469,4 +1469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.b7792dbf1997f97ca2be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.ec9313315cfedf39f84b.js.map
