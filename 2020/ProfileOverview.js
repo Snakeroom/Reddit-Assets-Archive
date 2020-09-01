@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.5a0cad6016c52cf86a8a.js
-// Retrieved at 8/31/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.5ba45347ad3150ddec55.js
+// Retrieved at 9/1/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -7613,44 +7613,47 @@
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/reddit/components/AdViewability/index.tsx"),
-				i = s("./src/reddit/helpers/trackers/gallery.ts"),
-				c = s("./src/reddit/hooks/useIntersectionObserver.ts"),
-				d = s("./src/reddit/hooks/useTracking.ts");
-			var l = o.a.memo(e => {
+				a = s("./src/lib/ads/index.ts"),
+				i = s("./src/reddit/components/AdViewability/index.tsx"),
+				c = s("./src/reddit/helpers/trackers/gallery.ts"),
+				d = s("./src/reddit/hooks/useIntersectionObserver.ts"),
+				l = s("./src/reddit/hooks/useTracking.ts");
+			var m = o.a.memo(e => {
 					const t = Object(n.useRef)(null),
-						s = Object(d.a)(),
+						s = Object(l.a)(),
 						r = Object(n.useCallback)(t => {
 							t.forEach(t => {
 								const {
 									intersectionRatio: n
 								} = t;
-								n >= .5 && s(i.d(e.postId))
+								n >= .5 && s(c.d(e.postId))
 							})
 						}, [s, e.postId]),
 						a = Object(n.useMemo)(() => ({
 							threshold: [.5]
 						}), []);
-					return Object(c.a)(t, r, a), o.a.createElement("div", {
+					return Object(d.a)(t, r, a), o.a.createElement("div", {
 						"aria-role": "presentation"
 					}, o.a.createElement("div", {
 						ref: t
 					}, e.children))
 				}),
-				m = s("./src/reddit/connectors/PostViewable/index.ts"),
-				p = s("./src/reddit/models/Media/index.ts"),
-				u = s("./src/reddit/selectors/posts.ts"),
-				b = s("./src/reddit/selectors/video.ts"),
-				h = s("./src/lib/classNames/index.ts"),
-				x = s("./src/higherOrderComponents/withClickTracking.tsx"),
-				f = s("./src/reddit/components/PostContainer/index.m.less"),
-				g = s.n(f);
-			const v = Object(r.c)({
+				p = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = s("./src/reddit/connectors/PostViewable/index.ts"),
+				b = s("./src/reddit/models/Media/index.ts"),
+				h = s("./src/reddit/selectors/media.ts"),
+				x = s("./src/reddit/selectors/posts.ts"),
+				f = s("./src/reddit/selectors/video.ts"),
+				g = s("./src/lib/classNames/index.ts"),
+				v = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				O = s("./src/reddit/components/PostContainer/index.m.less"),
+				C = s.n(O);
+			const E = Object(r.c)({
 					basePixelMetadata: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(u.b)(e, s.id)
+						return Object(x.b)(e, s.id)
 					},
 					clickTrackingId: (e, t) => {
 						let {
@@ -7658,11 +7661,17 @@
 						} = t;
 						return s.id
 					},
+					currentIndex: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(h.a)(e, s.id)
+					},
 					buffering: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(b.a)(e, {
+						return Object(f.a)(e, {
 							postId: s.id
 						})
 					},
@@ -7670,7 +7679,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(b.f)(e, {
+						return Object(f.f)(e, {
 							postId: s.id
 						})
 					},
@@ -7678,7 +7687,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(b.c)(e, {
+						return Object(f.c)(e, {
 							postId: s.id
 						})
 					},
@@ -7686,18 +7695,18 @@
 						let {
 							post: s
 						} = t;
-						return Object(u.i)(e, {
+						return Object(x.i)(e, {
 							postId: s.id
 						})
 					}
 				}),
-				O = Object(m.a)(v),
-				C = e => {
-					const t = Object(x.d)(e.target, e.currentTarget),
-						s = Object(x.b)(e.target, e.currentTarget, x.a.buttons);
+				y = Object(u.a)(E),
+				_ = e => {
+					const t = Object(v.d)(e.target, e.currentTarget),
+						s = Object(v.b)(e.target, e.currentTarget, v.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class E extends o.a.Component {
+			class w extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -7707,41 +7716,51 @@
 						basePixelMetadata: t,
 						children: s,
 						className: n,
-						imageGalleryCurrentItem: r,
-						makePostContainerId: i,
-						post: c,
-						onClick: d,
-						onPostContentClick: m,
-						style: u,
-						ref: b
-					} = this.props, x = o.a.createElement("div", {
+						currentIndex: r,
+						imageGalleryCurrentItem: d,
+						makePostContainerId: l,
+						post: p,
+						onClick: u,
+						onPostContentClick: h,
+						sendEvent: x,
+						style: f,
+						ref: v
+					} = this.props, O = o.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
-						style: u,
-						ref: b,
+						style: f,
+						ref: v,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: s => {
-							!this.cancelClick && s.button < 2 && (e(() => d && d(s, c, t, r))(s), m && C(s) && m(s, c))
+							if (!this.cancelClick && s.button < 2 && (e(() => u && u(s, p, t, d))(s), h && _(s) && h(s, p)), p.id && d) {
+								const {
+									source: e
+								} = Object(a.getAdLinkContent)(p, d);
+								if (e && e.outboundUrl) {
+									const t = r + 1;
+									x(Object(c.c)(p.id, e.outboundUrl, t))
+								}
+							}
 						},
-						className: Object(h.a)(g.a.WrappedPost, n, "Post ".concat(c.id), {
-							promotedlink: c.isSponsored
+						className: Object(g.a)(C.a.WrappedPost, n, "Post ".concat(p.id), {
+							promotedlink: p.isSponsored
 						}),
-						id: i ? i(c.id) : c.id,
+						id: l ? l(p.id) : p.id,
 						tabIndex: -1,
-						"data-testid": c.id
-					}, s), f = !!c.media && c.media.type === p.o.VIDEO;
-					return c.isSponsored || f ? o.a.createElement(a.a, {
-						post: c,
+						"data-testid": p.id
+					}, s), E = !!p.media && p.media.type === b.o.VIDEO;
+					return p.isSponsored || E ? o.a.createElement(i.a, {
+						post: p,
 						trackDisplay: !0
-					}, x) : c.media && Object(p.F)(c.media) ? o.a.createElement(l, {
-						postId: c.id
-					}, x) : x
+					}, O) : p.media && Object(b.F)(p.media) ? o.a.createElement(m, {
+						postId: p.id
+					}, O) : O
 				}
 			}
-			t.a = O(Object(x.c)(E))
+			t.a = y(Object(v.c)(Object(p.c)(w)))
 		},
 		"./src/reddit/components/PostCreationForm/CollectionListModal/CollectionListItem/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -15227,4 +15246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.5a0cad6016c52cf86a8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.5ba45347ad3150ddec55.js.map
