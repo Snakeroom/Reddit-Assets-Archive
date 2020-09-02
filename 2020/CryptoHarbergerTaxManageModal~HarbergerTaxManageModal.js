@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.1bb8921071011cd8b1a8.js
-// Retrieved at 8/19/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.652fae9230d445d130b5.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -490,24 +490,26 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "g", (function() {
-				return o
-			})), n.d(t, "f", (function() {
-				return d
-			})), n.d(t, "e", (function() {
-				return c
 			})), n.d(t, "h", (function() {
-				return i
+				return o
+			})), n.d(t, "g", (function() {
+				return d
+			})), n.d(t, "f", (function() {
+				return c
 			})), n.d(t, "i", (function() {
+				return i
+			})), n.d(t, "j", (function() {
 				return u
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return l
 			})), n.d(t, "b", (function() {
 				return m
 			})), n.d(t, "c", (function() {
 				return p
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "d", (function() {
 				return b
+			})), n.d(t, "k", (function() {
+				return g
 			}));
 			var r, a = n("./src/config.ts"),
 				s = n("./src/reddit/endpoints/governance/requester.ts");
@@ -579,8 +581,15 @@
 				p = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				b = (e, t, n, r) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: n,
+					amount: r
 				});
-			async function b(e, t) {
+			async function g(e, t) {
 				return await Object(s.a)(e, {
 					method: "put",
 					endpoint: "".concat(a.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -853,4 +862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.1bb8921071011cd8b1a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.652fae9230d445d130b5.js.map

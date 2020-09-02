@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.eace0c2ec9328b9b0f50.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.5b7363d03615a388ea8f.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, r) {
@@ -347,29 +347,30 @@
 				oe = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				ie = r("./src/reddit/components/StripePaymentForm/index.tsx"),
 				ue = r("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				de = r("./src/reddit/controls/Button/index.tsx");
+				de = r("./src/reddit/hooks/useThunkDispatch.ts"),
+				me = r("./src/reddit/controls/Button/index.tsx");
 			const {
-				fbt: me
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), pe = Object(c.c)({
+				fbt: pe
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), be = Object(c.c)({
 				currentUser: le.i,
 				isAnonymous: p.d,
 				powerupsCount: p.e,
 				productOffer: se.a
 			});
-			var be = Object(s.b)(pe)(n.a.memo((function(e) {
+			var Ee = Object(s.b)(be)(n.a.memo((function(e) {
 					const {
 						className: t,
 						currentUser: r,
-						isAnonymous: c,
-						powerupsCount: l,
-						productOffer: o,
-						subredditId: i
-					} = e, u = (() => Object(s.c)())();
-					Object(a.useEffect)(() => (window.addEventListener("message", b, !1), () => window.removeEventListener("message", b)), []);
-					const [d, m] = Object(a.useState)(!1);
-					let p = null;
+						isAnonymous: s,
+						powerupsCount: c,
+						productOffer: l,
+						subredditId: o
+					} = e, i = Object(de.a)();
+					Object(a.useEffect)(() => (window.addEventListener("message", p, !1), () => window.removeEventListener("message", p)), []);
+					const [u, d] = Object(a.useState)(!1);
+					let m = null;
 					if (!r) return null;
-					const b = e => {
+					const p = e => {
 							const t = (e => {
 								try {
 									return "string" == typeof e.data ? JSON.parse(e.data) : e.data
@@ -377,37 +378,37 @@
 									return
 								}
 							})(e);
-							t && t.type && ("paypal-finish.success.framedmodal" === t.type ? (E(), p && p.close()) : "paypal-finish.cancel.framedmodal" === t.type && p && p.close())
+							t && t.type && ("paypal-finish.success.framedmodal" === t.type ? (b(), m && m.close()) : "paypal-finish.cancel.framedmodal" === t.type && m && m.close())
 						},
-						E = () => {
-							u(Object(re.d)({
-								subredditId: i,
-								powerupsCount: l,
+						b = () => {
+							i(Object(re.d)({
+								subredditId: o,
+								powerupsCount: c,
 								user: r
 							}))
 						};
-					return n.a.createElement(de.f, {
+					return n.a.createElement(me.f, {
 						onClick: async () => {
-							if (!o) return;
-							m(!0);
-							const e = await u(Object(re.f)(o, i, c, l));
+							if (!l) return;
+							d(!0);
+							const e = await i(Object(re.f)(l, o, s, c));
 							if (e) {
 								const {
 									url: t
 								} = e, r = 580, a = 740, n = Math.max(window.screenX + Math.round((window.outerWidth - r) / 2), 0), s = Math.max(window.screenY + Math.round((window.outerHeight - a) / 2), 0);
-								p = window.open("".concat(t, "&rnd=").concat(Math.random()), "RedditPaypalPayment", "height=".concat(a, ",width=").concat(r, ",top=").concat(s, ",left=").concat(n, ",modal=yes,alwaysRaised=yes"))
+								m = window.open("".concat(t, "&rnd=").concat(Math.random()), "RedditPaypalPayment", "height=".concat(a, ",width=").concat(r, ",top=").concat(s, ",left=").concat(n, ",modal=yes,alwaysRaised=yes"))
 							}
-							m(!1)
+							d(!1)
 						},
 						className: t,
-						disabled: d
-					}, me._("Continue to PayPal", null, {
+						disabled: u
+					}, pe._("Continue to PayPal", null, {
 						hk: "1T4BEy"
 					}))
 				}))),
-				Ee = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PurchaseStep/PowerupsQuantity/index.m.less"),
-				he = r.n(Ee);
-			var fe = function(e) {
+				he = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PurchaseStep/PowerupsQuantity/index.m.less"),
+				fe = r.n(he);
+			var we = function(e) {
 				const {
 					className: t,
 					onChange: r,
@@ -417,29 +418,29 @@
 					max: l
 				} = e, o = s || 1, i = e => r(Math.max(Math.min(a + e, l || Number.POSITIVE_INFINITY), c || 0));
 				return n.a.createElement("div", {
-					className: Object(u.a)(t, he.a.container)
+					className: Object(u.a)(t, fe.a.container)
 				}, n.a.createElement("button", {
-					className: Object(u.a)(he.a.button, he.a.decrementButton),
+					className: Object(u.a)(fe.a.button, fe.a.decrementButton),
 					onClick: () => i(-o)
 				}), n.a.createElement("div", {
-					className: he.a.value
+					className: fe.a.value
 				}, n.a.createElement(_.a, {
-					className: he.a.icon
+					className: fe.a.icon
 				}), n.a.createElement("span", null, a)), n.a.createElement("button", {
-					className: Object(u.a)(he.a.button, he.a.incrementButton),
+					className: Object(u.a)(fe.a.button, fe.a.incrementButton),
 					onClick: () => i(o)
 				}))
 			};
 			const {
-				fbt: we
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), ge = Object(c.c)({
+				fbt: ge
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Pe = Object(c.c)({
 				isAnonymous: p.d,
 				powerupsCount: p.e,
 				productOffer: se.a,
 				savedCardsPending: ce.t,
 				stripeTokenPending: ce.k
-			}), Pe = Object(s.b)(ge);
-			var _e = Object(ee.injectStripe)(Pe((function(e) {
+			}), _e = Object(s.b)(Pe);
+			var xe = Object(ee.injectStripe)(_e((function(e) {
 					const {
 						className: t,
 						isAnonymous: r,
@@ -450,21 +451,21 @@
 						stripeTokenPending: i,
 						subredditId: u
 					} = e, d = Object(s.c)(), m = i || l;
-					return n.a.createElement(de.f, {
+					return n.a.createElement(me.f, {
 						onClick: () => {
 							o && c && d(Object(re.g)(o, c, u, r, a))
 						},
 						className: t,
 						disabled: m || !o
-					}, we._("Complete purchase", null, {
+					}, ge._("Complete purchase", null, {
 						hk: "KaR26"
 					}))
 				}))),
-				xe = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PurchaseStep/index.m.less"),
-				ke = r.n(xe);
+				ke = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PurchaseStep/index.m.less"),
+				Ne = r.n(ke);
 			const {
-				fbt: Ne
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), je = Object(c.c)({
+				fbt: je
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), ve = Object(c.c)({
 				isAnonymous: p.d,
 				isNightmode: le.S,
 				powerupsCount: p.e,
@@ -481,8 +482,8 @@
 				stripeErrorMessage: ce.h,
 				subreddit: g.R,
 				paypalErrorMessage: ce.b
-			}), ve = Object(s.b)(je), Oe = 100;
-			var ye = ve((function(e) {
+			}), Oe = Object(s.b)(ve), ye = 100;
+			var Me = Oe((function(e) {
 					const {
 						isAnonymous: t,
 						isNightmode: r,
@@ -507,93 +508,93 @@
 					return n.a.createElement(ee.StripeProvider, {
 						apiKey: $.a.stripe.apiKey
 					}, n.a.createElement(ee.Elements, null, n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-						className: ke.a.modalContent
+						className: Ne.a.modalContent
 					}, n.a.createElement(N, {
-						className: ke.a.header,
+						className: Ne.a.header,
 						subreddit: d
 					}), n.a.createElement("h2", {
-						className: ke.a.title
-					}, Ne._("${powerup price}/month", [Ne._param("powerup price", _)], {
+						className: Ne.a.title
+					}, je._("${powerup price}/month", [je._param("powerup price", _)], {
 						hk: "1Ydmhr"
 					})), n.a.createElement("p", {
-						className: ke.a.description
-					}, Ne._("Heads up—This {subreddit name} Powerup Subscription auto-renews for {powerup price} a month. To cancel, visit your settings and turn off auto-renewal at least 24 hours before your subscription period ends. No partial refunds.", [Ne._param("subreddit name", "r/".concat(d.name)), Ne._param("powerup price", "$".concat(_.toLocaleString()))], {
+						className: Ne.a.description
+					}, je._("Heads up—This {subreddit name} Powerup Subscription auto-renews for {powerup price} a month. To cancel, visit your settings and turn off auto-renewal at least 24 hours before your subscription period ends. No partial refunds.", [je._param("subreddit name", "r/".concat(d.name)), je._param("powerup price", "$".concat(_.toLocaleString()))], {
 						hk: "2R4V5q"
 					})), n.a.createElement("p", {
-						className: ke.a.description
-					}, Ne._("By purchasing, you agree to our {=User Agreement} and {=Privacy Policy} .", [Ne._param("=User Agreement", n.a.createElement("a", {
-						className: ke.a.link,
+						className: Ne.a.description
+					}, je._("By purchasing, you agree to our {=User Agreement} and {=Privacy Policy} .", [je._param("=User Agreement", n.a.createElement("a", {
+						className: Ne.a.link,
 						href: "https://www.redditinc.com/policies/user-agreement",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, Ne._("User Agreement", null, {
+					}, je._("User Agreement", null, {
 						hk: "4qlTAz"
-					}))), Ne._param("=Privacy Policy", n.a.createElement("a", {
-						className: ke.a.link,
+					}))), je._param("=Privacy Policy", n.a.createElement("a", {
+						className: Ne.a.link,
 						href: "https://www.redditinc.com/policies/privacy-policy",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, Ne._("Privacy Policy", null, {
+					}, je._("Privacy Policy", null, {
 						hk: "HScW8"
 					})))], {
 						hk: "16MFh3"
 					})), n.a.createElement(oe.a, {
-						className: ke.a.paymentMethodSelector,
+						className: Ne.a.paymentMethodSelector,
 						nightmode: r,
 						selectedPayment: b,
 						onPaymentSelected: e => {
 							E(e), p(Object(ae.selectPaymentMethod)(e))
 						}
 					}), b === te.wb && u && n.a.createElement("div", {
-						className: ke.a.errorMessage
+						className: Ne.a.errorMessage
 					}, u), b === te.xb && l && n.a.createElement("div", {
-						className: ke.a.errorMessage
+						className: Ne.a.errorMessage
 					}, l), b === te.wb && n.a.createElement(ie.a, {
 						nightmode: r,
-						className: ke.a.stripeForm,
+						className: Ne.a.stripeForm,
 						shouldDeleteCardWithGql: !0
-					}), n.a.createElement(fe, {
+					}), n.a.createElement(we, {
 						onChange: e => p(Object(w.b)(e)),
 						value: o,
 						min: 1,
-						max: Oe,
-						className: ke.a.powerupsQuantity
+						max: ye,
+						className: Ne.a.powerupsQuantity
 					})), n.a.createElement("div", {
-						className: ke.a.modalFooter
+						className: Ne.a.modalFooter
 					}, n.a.createElement("div", {
-						className: ke.a.togglerContainer
-					}, n.a.createElement("span", null, Ne._("Purchase Anonymously", null, {
+						className: Ne.a.togglerContainer
+					}, n.a.createElement("span", null, je._("Purchase Anonymously", null, {
 						hk: "19pNUJ"
 					})), n.a.createElement(ue.a, {
-						className: ke.a.toggler,
+						className: Ne.a.toggler,
 						on: t,
 						onToggle: () => (e => p(Object(w.a)(e)))(!t)
-					})), b === te.xb && n.a.createElement(be, {
-						className: ke.a.button,
+					})), b === te.xb && n.a.createElement(Ee, {
+						className: Ne.a.button,
 						subredditId: m
-					}), b === te.wb && n.a.createElement(_e, {
-						className: ke.a.button,
+					}), b === te.wb && n.a.createElement(xe, {
+						className: Ne.a.button,
 						subredditId: m
 					}), n.a.createElement("p", {
-						className: ke.a.renew
-					}, Ne._("Subscription auto-renews monthly", null, {
+						className: Ne.a.renew
+					}, je._("Subscription auto-renews monthly", null, {
 						hk: "HfDaj"
 					}))))))
 				})),
-				Me = (r("./node_modules/core-js/modules/es6.regexp.to-string.js"), r("./src/reddit/models/User/index.ts")),
-				Ce = r("./src/reddit/components/PowerupsBanner/Supporters/Supporter/index.tsx"),
-				Ie = r("./src/reddit/components/Econ/PowerupsPurchaseModal/ReceiptStep/index.m.less"),
-				Se = r.n(Ie);
+				Ce = (r("./node_modules/core-js/modules/es6.regexp.to-string.js"), r("./src/reddit/models/User/index.ts")),
+				Ie = r("./src/reddit/components/PowerupsBanner/Supporters/Supporter/index.tsx"),
+				Se = r("./src/reddit/components/Econ/PowerupsPurchaseModal/ReceiptStep/index.m.less"),
+				Fe = r.n(Se);
 			const {
-				fbt: Fe
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Te = Object(c.c)({
+				fbt: Te
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Be = Object(c.c)({
 				currentUser: le.i,
 				isNightMode: le.S,
 				powerups: p.h,
 				purchasedPowerupsCount: p.e,
 				subreddit: g.R
 			});
-			var Be = Object(s.b)(Te)((function(e) {
+			var Ae = Object(s.b)(Be)((function(e) {
 					const {
 						currentUser: t,
 						isNightMode: r,
@@ -610,7 +611,7 @@
 							lastSupportedAt: (new Date).toString(),
 							supporterInfo: {
 								id: t.id,
-								name: Object(Me.e)(t),
+								name: Object(Ce.e)(t),
 								icon: {
 									url: t.accountIcon
 								},
@@ -628,71 +629,71 @@
 						E = Math.max(b - d, 0),
 						w = "powered-by-giphy-".concat(r ? "dark" : "light", ".png");
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-						className: Se.a.modalContent
-					}, n.a.createElement(Ce.a, {
+						className: Fe.a.modalContent
+					}, n.a.createElement(Ie.a, {
 						hideDate: !0,
-						className: Se.a.supporter,
+						className: Fe.a.supporter,
 						supporter: u
 					}), n.a.createElement("h2", {
-						className: Se.a.title
-					}, Fe._("Powered up!", null, {
+						className: Fe.a.title
+					}, Te._("Powered up!", null, {
 						hk: "ZXVce"
 					})), n.a.createElement("div", {
-						className: Se.a.text
+						className: Fe.a.text
 					}, n.a.createElement("p", {
-						className: Se.a.p
-					}, Fe._("Thanks for contributing to this community.", null, {
+						className: Fe.a.p
+					}, Te._("Thanks for contributing to this community.", null, {
 						hk: "gXtMO"
 					})), n.a.createElement("p", {
-						className: Se.a.p
-					}, E > 0 ? Fe._("There’s still {remaining to unlock} Powerups needed to take this community to the next level. We’ll let you know once the features are unlocked.", [Fe._param("remaining to unlock", E)], {
+						className: Fe.a.p
+					}, E > 0 ? Te._("There’s still {remaining to unlock} Powerups needed to take this community to the next level. We’ll let you know once the features are unlocked.", [Te._param("remaining to unlock", E)], {
 						hk: "Suqh9"
-					}) : Fe._("This community is on the top level.", null, {
+					}) : Te._("This community is on the top level.", null, {
 						hk: "ow0sL"
 					})), n.a.createElement("p", {
-						className: Se.a.p
-					}, E > 0 ? Fe._("In the meantime, you can speed up the process by rallying other community members.", null, {
+						className: Fe.a.p
+					}, E > 0 ? Te._("In the meantime, you can speed up the process by rallying other community members.", null, {
 						hk: "2sd062"
-					}) : Fe._("Because of your help, {subredditName} has reached the maximum level. Keep contributing to keep enjoying the unlocked features.", [Fe._param("subredditName", "r/".concat(o.name))], {
+					}) : Te._("Because of your help, {subredditName} has reached the maximum level. Keep contributing to keep enjoying the unlocked features.", [Te._param("subredditName", "r/".concat(o.name))], {
 						hk: "7NtO2"
 					})), n.a.createElement("p", {
-						className: Se.a.p
-					}, Fe._("To cancel your subscription, visit your settings and turn off auto-renewal.", null, {
+						className: Fe.a.p
+					}, Te._("To cancel your subscription, visit your settings and turn off auto-renewal.", null, {
 						hk: "1Eiq2W"
 					})), n.a.createElement("p", {
-						className: Se.a.pReceipt
-					}, ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), Fe._("Follow the Walgreens receipt", null, {
+						className: Fe.a.pReceipt
+					}, ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), Te._("Follow the Walgreens receipt", null, {
 						hk: "1pz7M"
-					}), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), Fe._("all the way down", null, {
+					}), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), Te._("all the way down", null, {
 						hk: "3sVK1h"
-					}), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), Fe._("for a gif {heart}", [Fe._param("heart", "<3")], {
+					}), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), ".", n.a.createElement("br", null), Te._("for a gif {heart}", [Te._param("heart", "<3")], {
 						hk: "1DNXlx"
 					})), n.a.createElement("div", {
-						className: Se.a.poweredByGiphy,
+						className: Fe.a.poweredByGiphy,
 						style: {
 							backgroundImage: "url(".concat($.a.assetPath, "/img/memberships/").concat(w)
 						}
 					}), n.a.createElement("video", {
-						className: Se.a.giphy,
+						className: Fe.a.giphy,
 						loop: !0,
 						autoPlay: !0,
 						muted: !0
 					}, n.a.createElement("source", {
 						src: "https://external-preview.redd.it/JiorvX2W_QyHs1blhxhzvP_t4XAubH8_oyblix6RYv4.gif?format=mp4&s=bb9117042c1a355b884da57eeefc9c7677466ed4"
 					})))), n.a.createElement("div", {
-						className: Se.a.modalFooter
+						className: Fe.a.modalFooter
 					}, n.a.createElement("button", {
 						onClick: s,
-						className: Se.a.button
-					}, Fe._("Continue", null, {
+						className: Fe.a.button
+					}, Te._("Continue", null, {
 						hk: "35mYoJ"
 					}))))
 				})),
-				Ae = r("./src/reddit/components/Econ/PowerupsPurchaseModal/index.m.less"),
-				Le = r.n(Ae);
+				Le = r("./src/reddit/components/Econ/PowerupsPurchaseModal/index.m.less"),
+				Ue = r.n(Le);
 
-			function Ue() {
-				return (Ue = Object.assign || function(e) {
+			function ze() {
+				return (ze = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var a in r) Object.prototype.hasOwnProperty.call(r, a) && (e[a] = r[a])
@@ -701,50 +702,50 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: ze
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), De = Object(i.t)(), Xe = Object(c.c)({
+				fbt: De
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Xe = Object(i.t)(), Re = Object(c.c)({
 				currentSubredditId: i.m,
 				purchaseCompleted: p.b
 			});
-			var Re;
+			var We;
 			! function(e) {
 				e.Marketing = "marketing", e.Purchase = "purchase", e.Receipt = "receipt"
-			}(Re || (Re = {}));
-			const We = Object(s.b)(Xe);
-			const He = Object(d.c)((function(e) {
+			}(We || (We = {}));
+			const He = Object(s.b)(Re);
+			const Qe = Object(d.c)((function(e) {
 					const {
 						currentSubredditId: t,
 						purchaseCompleted: r
-					} = e, [c, l] = Object(a.useState)(Re.Marketing), i = Object(s.c)(), u = () => i(Object(m.g)(o.a.ECON_POWERUPS_PURCHASE));
+					} = e, [c, l] = Object(a.useState)(We.Marketing), i = Object(s.c)(), u = () => i(Object(m.g)(o.a.ECON_POWERUPS_PURCHASE));
 					if (!t) return u(), null;
-					const d = c === Re.Marketing && !r,
-						p = c === Re.Purchase && !r,
-						h = c === Re.Receipt || r;
+					const d = c === We.Marketing && !r,
+						p = c === We.Purchase && !r,
+						h = c === We.Receipt || r;
 					return n.a.createElement("div", {
-						className: Le.a.inner
+						className: Ue.a.inner
 					}, n.a.createElement("div", {
-						className: Le.a.modalHeader
-					}, c !== Re.Purchase || r ? n.a.createElement(E.a, {
-						className: Le.a.closeIcon,
+						className: Ue.a.modalHeader
+					}, c !== We.Purchase || r ? n.a.createElement(E.a, {
+						className: Ue.a.closeIcon,
 						onClick: u
 					}) : n.a.createElement(b.a, {
-						className: Le.a.backIcon,
-						onClick: () => l(Re.Marketing)
+						className: Ue.a.backIcon,
+						onClick: () => l(We.Marketing)
 					})), d && n.a.createElement(Z, {
 						subredditId: t,
 						onCloseModal: u,
-						onGotoPurchase: () => l(Re.Purchase)
-					}), p && n.a.createElement(ye, {
+						onGotoPurchase: () => l(We.Purchase)
+					}), p && n.a.createElement(Me, {
 						subredditId: t,
 						onCloseModal: u
-					}), h && n.a.createElement(Be, {
+					}), h && n.a.createElement(Ae, {
 						subredditId: t,
 						onCloseModal: u
 					}))
 				})),
-				Qe = Object(l.a)(De(We(He)));
-			t.default = e => n.a.createElement(Qe, Ue({}, e, {
-				className: Object(u.a)(e.className, Le.a.modal)
+				Ge = Object(l.a)(Xe(He(Qe)));
+			t.default = e => n.a.createElement(Ge, ze({}, e, {
+				className: Object(u.a)(e.className, Ue.a.modal)
 			}))
 		},
 		"./src/reddit/components/PowerupsBanner/PowerupsRemainingToUnlock/index.m.less": function(e, t, r) {
@@ -956,6 +957,17 @@
 					noun: "receipt_step"
 				}, s(r, e, t))
 		},
+		"./src/reddit/hooks/useThunkDispatch.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return n
+			}));
+			var a = r("./node_modules/react-redux/es/index.js");
+
+			function n() {
+				return Object(a.c)()
+			}
+		},
 		"./src/reddit/icons/svgs/ArrowRight/index.tsx": function(e, t, r) {
 			"use strict";
 			var a = r("./node_modules/react/index.js"),
@@ -1030,4 +1042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.eace0c2ec9328b9b0f50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.5b7363d03615a388ea8f.js.map

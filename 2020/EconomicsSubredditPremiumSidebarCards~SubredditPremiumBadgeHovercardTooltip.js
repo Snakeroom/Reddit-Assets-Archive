@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.9e8292e000d4df3a5d01.js
-// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.f9f95e487d0875418228.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"], {
 		"./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Badges/index.m.less": function(e, t, r) {
@@ -261,8 +261,8 @@
 			const x = (e, t) => "".concat(u.a.assetPath, "/img/memberships/paywall/").concat(e.name.toLowerCase(), "/").concat(t),
 				E = 500,
 				v = 30,
-				N = 132;
-			class k extends a.a.Component {
+				k = 132;
+			class N extends a.a.Component {
 				constructor(e) {
 					super(e), this.badgesBackground = function(e) {
 						const t = _[e] || g,
@@ -285,7 +285,7 @@
 						const t = this.badgesBackground.width,
 							r = window.getComputedStyle(this.rowRef).backgroundPositionX;
 						if (!r) return;
-						const i = ((N - parseFloat(r.replace("px", ""))) * e + t) % t;
+						const i = ((k - parseFloat(r.replace("px", ""))) * e + t) % t;
 						this.badgesBackground.badges.forEach(e => {
 							i > e.interval[0] && i <= e.interval[1] && this.setState({
 								currentlySelected: e
@@ -364,7 +364,7 @@
 				},
 				username: e => "u/".concat(e.user.account && e.user.account.displayText || "username")
 			});
-			var P = Object(s.b)(S)(k),
+			var P = Object(s.b)(S)(N),
 				I = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Emojis/index.m.less"),
 				C = r.n(I);
 			const j = ["blink", "bush", "chug", "clappy", "confused", "cuddle", "dab", "dance", "default", "oof", "respect", "soon", "unfortunately", "wow"].map(e => "https://meta.redditmedia.com/img/fortnitebr/emotes/".concat(e, "-2x.gif")).concat("https://reddit-meta-production.s3.amazonaws.com/public/fortnitebr/emotes/premium_emotes/emo_pack_1/mech_destroy.gif");
@@ -418,7 +418,7 @@
 				})),
 				R = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Gifs/index.m.less"),
 				z = r.n(R);
-			const T = (() => {
+			const A = (() => {
 				const e = {};
 				return async t => {
 					if (e[t]) return e[t];
@@ -614,7 +614,7 @@
 					return e[t] = r, r
 				}
 			})();
-			class A extends a.a.Component {
+			class T extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						imagesCol1: [],
@@ -623,7 +623,7 @@
 				}
 				async componentDidMount() {
 					const e = this.props.subreddit && this.props.subreddit.title || "reddit",
-						t = await T(e),
+						t = await A(e),
 						r = [],
 						i = [];
 					t.data.forEach((e, t) => {
@@ -687,7 +687,7 @@
 					return e.subreddits.models[r]
 				}
 			});
-			var W = Object(s.b)(D)(A),
+			var W = Object(s.b)(D)(T),
 				F = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/index.m.less"),
 				G = r.n(F);
 			const U = 1e4,
@@ -808,24 +808,26 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return i
-			})), r.d(t, "g", (function() {
-				return s
-			})), r.d(t, "f", (function() {
-				return c
-			})), r.d(t, "e", (function() {
-				return n
 			})), r.d(t, "h", (function() {
-				return o
+				return s
+			})), r.d(t, "g", (function() {
+				return c
+			})), r.d(t, "f", (function() {
+				return n
 			})), r.d(t, "i", (function() {
+				return o
+			})), r.d(t, "j", (function() {
 				return m
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return l
 			})), r.d(t, "b", (function() {
 				return u
 			})), r.d(t, "c", (function() {
 				return b
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "d", (function() {
 				return g
+			})), r.d(t, "k", (function() {
+				return p
 			}));
 			var i, a = r("./src/config.ts"),
 				d = r("./src/reddit/endpoints/governance/requester.ts");
@@ -897,8 +899,15 @@
 				b = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				g = (e, t, r, i) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: r,
+					amount: i
 				});
-			async function g(e, t) {
+			async function p(e, t) {
 				return await Object(d.a)(e, {
 					method: "put",
 					endpoint: "".concat(a.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -961,9 +970,9 @@
 			})), r.d(t, "p", (function() {
 				return v
 			})), r.d(t, "m", (function() {
-				return N
-			})), r.d(t, "n", (function() {
 				return k
+			})), r.d(t, "n", (function() {
+				return N
 			})), r.d(t, "u", (function() {
 				return S
 			})), r.d(t, "a", (function() {
@@ -1004,15 +1013,15 @@
 					}
 				},
 				u = (e, t) => {
-					const r = N(e, t);
+					const r = k(e, t);
 					if (r) return r.mainHeader
 				},
 				b = (e, t) => {
-					const r = N(e, t);
+					const r = k(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
 				g = (e, t) => {
-					const r = N(e, t);
+					const r = k(e, t);
 					return r && r.mainHeader ? {
 						owner: r.mainHeader.owner,
 						ownerId: r.mainHeader.ownerId
@@ -1055,15 +1064,15 @@
 					const r = C(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
-				N = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				k = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				k = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				N = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				S = (e, t) => {
-					const r = k(e, t);
+					const r = N(e, t);
 					return r && r.walletProvider
 				},
 				P = (e, t) => {
 					const r = S(e, t),
-						i = k(e, t);
+						i = N(e, t);
 					return r && r.provider || i && i.provider
 				},
 				I = (e, t) => {
@@ -1099,10 +1108,10 @@
 					}
 				},
 				O = (e, t) => {
-					const r = k(e, t);
+					const r = N(e, t);
 					return !!r && !!r.walletProvider && !r.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.9e8292e000d4df3a5d01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip.f9f95e487d0875418228.js.map

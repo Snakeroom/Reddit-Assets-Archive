@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.c342990b0a96dc9edaed.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.9853467d8705e4763e0e.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -353,24 +353,26 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return n
-			})), r.d(t, "g", (function() {
-				return c
-			})), r.d(t, "f", (function() {
-				return d
-			})), r.d(t, "e", (function() {
-				return o
 			})), r.d(t, "h", (function() {
-				return i
+				return c
+			})), r.d(t, "g", (function() {
+				return d
+			})), r.d(t, "f", (function() {
+				return o
 			})), r.d(t, "i", (function() {
+				return i
+			})), r.d(t, "j", (function() {
 				return l
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return u
 			})), r.d(t, "b", (function() {
 				return m
 			})), r.d(t, "c", (function() {
 				return b
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "d", (function() {
 				return p
+			})), r.d(t, "k", (function() {
+				return f
 			}));
 			var n, s = r("./src/config.ts"),
 				a = r("./src/reddit/endpoints/governance/requester.ts");
@@ -442,8 +444,15 @@
 				b = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				p = (e, t, r, n) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: r,
+					amount: n
 				});
-			async function p(e, t) {
+			async function f(e, t) {
 				return await Object(a.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -649,4 +658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.c342990b0a96dc9edaed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.9853467d8705e4763e0e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.f9a6a9b58ce399146d8d.js
-// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.2ec34a6df6eba33ecaeb.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistrationStellarBanner"], {
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
@@ -333,24 +333,26 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "g", (function() {
-				return a
-			})), n.d(t, "f", (function() {
-				return i
-			})), n.d(t, "e", (function() {
-				return c
 			})), n.d(t, "h", (function() {
-				return d
+				return a
+			})), n.d(t, "g", (function() {
+				return i
+			})), n.d(t, "f", (function() {
+				return c
 			})), n.d(t, "i", (function() {
+				return d
+			})), n.d(t, "j", (function() {
 				return l
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return u
 			})), n.d(t, "b", (function() {
 				return m
 			})), n.d(t, "c", (function() {
 				return b
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "d", (function() {
 				return p
+			})), n.d(t, "k", (function() {
+				return h
 			}));
 			var r, s = n("./src/config.ts"),
 				o = n("./src/reddit/endpoints/governance/requester.ts");
@@ -422,8 +424,15 @@
 				b = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				p = (e, t, n, r) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: n,
+					amount: r
 				});
-			async function p(e, t) {
+			async function h(e, t) {
 				return await Object(o.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -611,4 +620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceWalletRegistrationStellarBanner.f9a6a9b58ce399146d8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.2ec34a6df6eba33ecaeb.js.map

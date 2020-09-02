@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.515be2d5fd6dfe1316af.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.75111fe7bf49f2ae7eac.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -1921,7 +1921,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("vendors~CollectionCommentsPage~CommentsPage~reddit-components-Governance-ClaimPointsBanner~reddit-co~470fa65e"), n.e("reddit-components-Governance-ClaimPointsBanner")]).then(n.bind(null, "./src/reddit/components/Governance/ClaimPointsBanner/index.tsx")),
+				importAsync: () => Promise.all([n.e("vendors~CollectionCommentsPage~CommentsPage~reddit-components-Governance-ClaimPointsBanner~reddit-co~47352505"), n.e("reddit-components-Governance-ClaimPointsBanner")]).then(n.bind(null, "./src/reddit/components/Governance/ClaimPointsBanner/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -7374,7 +7374,6 @@
 				cardChild: "_3HLyjC36ED_cOkMhS77Ts1",
 				classicChild: "_2YjutkjJwMliy9kOCltIuA",
 				compactChild: "m6QmcOHa4tObaem8JhVz8",
-				newbieBanner: "_2yjtWm1t0hFL9JDdG1EXR5",
 				sidebar: "_3ZmEUUvrdj4LXpXC9XZdN7",
 				subredditPremiumUpsell: "_3s2ygGulpjIr920Ws4sGpx",
 				af: "GWC1a5vux4ivxu9auf82p"
@@ -7857,7 +7856,7 @@
 						Ce = !d.params.sort && N && !N.isSubscribed && N.postIds && N.postIds.length >= Ie && !h && !X && !be && !he,
 						Oe = {},
 						je = o === ae.g.Classic ? Ne.a.classicChild : o === ae.g.Compact ? Ne.a.compactChild : Ne.a.cardChild;
-					if (b && C && o === ae.g.Large && (Oe[0] = {
+					if (b && C && (Oe[0] = {
 							estHeight: 487,
 							id: "newbie-banner-".concat(o, "-").concat(c),
 							render(e) {
@@ -7865,7 +7864,7 @@
 									className: t
 								} = e;
 								return p.a.createElement(F.a, {
-									className: Object(x.a)(t, Ne.a.newbieBanner)
+									className: Object(x.a)(t, je)
 								})
 							}
 						}, Oe[3] = {
@@ -7876,7 +7875,7 @@
 									className: t
 								} = e;
 								return p.a.createElement(M.a, {
-									className: Object(x.a)(t, Ne.a.childLayoutClass),
+									className: Object(x.a)(t, je),
 									subredditId: C.id
 								})
 							}
@@ -7894,7 +7893,7 @@
 									className: t
 								} = e;
 								return p.a.createElement(J.a, {
-									className: Object(x.a)(t, Ne.a.childLayoutClass),
+									className: Object(x.a)(t, je),
 									subredditId: C.id
 								})
 							}
@@ -8410,4 +8409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.515be2d5fd6dfe1316af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.75111fe7bf49f2ae7eac.js.map

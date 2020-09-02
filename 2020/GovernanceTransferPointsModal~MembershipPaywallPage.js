@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.5665c7049b64a3ce4a38.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.cec3548b204f64d2abe8.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal~MembershipPaywallPage"], {
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, r) {
@@ -51,17 +51,13 @@
 				})
 			}))
 		},
-		"./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less": function(e, t, r) {
-			e.exports = {
-				container: "_5K5Dse4tVw0RLIpFAoxVY",
-				icon: "S4tWlXsmJThb2dkEK0a-e",
-				input: "_3TjvTVtT0SSXGCca-2hLNM",
-				loadingIcon: "_1096A0iAp25FzCsAQtWIIZ",
-				message: "_16fPUwJjUXr_SaDDXYoAuJ"
-			}
-		},
-		"./src/reddit/components/Governance/TransferPointsModal/Recipient/index.tsx": function(e, t, r) {
+		"./src/reddit/components/Governance/TransferPointsModal/Recipient/UsernameRecipient.tsx": function(e, t, r) {
 			"use strict";
+			r.d(t, "b", (function() {
+				return E
+			})), r.d(t, "a", (function() {
+				return y
+			}));
 			var n = r("./node_modules/lodash/debounce.js"),
 				s = r.n(n),
 				a = r("./node_modules/react/index.js"),
@@ -74,18 +70,18 @@
 				m = r("./src/reddit/controls/FormFields/index.tsx"),
 				p = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				h = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				b = r("./src/reddit/icons/svgs/Info/index.tsx"),
-				f = r("./src/reddit/icons/svgs/Nsfw/index.tsx"),
+				f = r("./src/reddit/icons/svgs/Info/index.tsx"),
+				b = r("./src/reddit/icons/svgs/Nsfw/index.tsx"),
 				x = r("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
 				v = r.n(x),
 				g = r("./node_modules/fbt/lib/FbtPublic.js");
 			const E = 2,
-				C = 20;
-			var w;
+				y = 20;
+			var C;
 			! function(e) {
 				e[e.Empty = 0] = "Empty", e[e.Error = 1] = "Error", e[e.Invalid = 2] = "Invalid", e[e.Searching = 3] = "Searching", e[e.Valid = 4] = "Valid"
-			}(w || (w = {}));
-			class y extends i.a.PureComponent {
+			}(C || (C = {}));
+			class w extends i.a.PureComponent {
 				constructor(e) {
 					super(e), this.handleInputChange = e => {
 						const t = e.currentTarget.value;
@@ -96,19 +92,19 @@
 						if (e && e.length > E) {
 							switch (this.props.usernameAvailability[e]) {
 								case l.b.Available:
-									return w.Invalid;
+									return C.Invalid;
 								case l.b.Error:
-									return w.Error;
+									return C.Error;
 								case l.b.Unavailable:
-									return w.Valid;
+									return C.Valid;
 								default:
-									return w.Searching
+									return C.Searching
 							}
 						}
-						return w.Empty
+						return C.Empty
 					}, this.state = {
-						username: e.initialUsername || ""
-					}, e.initialUsername && e.onCheckUsername(e.initialUsername)
+						username: e.initialRecipient || ""
+					}, e.initialRecipient && e.onCheckUsername(e.initialRecipient)
 				}
 				componentDidMount() {
 					this.informParentOfNameChange()
@@ -119,7 +115,7 @@
 				informParentOfNameChange() {
 					if (this.props.onChange) {
 						const e = this.state.username;
-						this.props.onChange(e, this.usernameValidity(e) === w.Valid)
+						this.props.onChange(e, this.usernameValidity(e) === C.Valid)
 					}
 				}
 				render() {
@@ -132,7 +128,7 @@
 						label: g.fbt._("username", null, {
 							hk: "2f1L4u"
 						}),
-						max: C,
+						max: y,
 						style: {
 							borderColor: N(e)
 						},
@@ -142,27 +138,26 @@
 						onChange: this.handleInputChange
 					}), function(e) {
 						switch (e) {
-							case w.Error:
-								return i.a.createElement(b.a, {
+							case C.Error:
+								return i.a.createElement(f.a, {
 									className: v.a.icon,
 									style: {
 										fill: u.a.notice
 									}
 								});
-							case w.Invalid:
-								return i.a.createElement(f.a, {
+							case C.Invalid:
+								return i.a.createElement(b.a, {
 									className: v.a.icon,
 									style: {
 										fill: u.a.warning
 									}
 								});
-							case w.Searching:
-								return i.a.createElement("div", {
-									className: v.a.loadingIcon
-								}, i.a.createElement(p.a, {
+							case C.Searching:
+								return i.a.createElement(p.a, {
+									className: v.a.loadingIcon,
 									sizePx: 8
-								}));
-							case w.Valid:
+								});
+							case C.Valid:
 								return i.a.createElement(h.a, {
 									className: v.a.icon
 								});
@@ -176,11 +171,11 @@
 						}
 					}, function(e) {
 						switch (e) {
-							case w.Error:
+							case C.Error:
 								return g.fbt._("Could not check that username. Are you sure it's correct?", null, {
 									hk: "1sNHpI"
 								});
-							case w.Invalid:
+							case C.Invalid:
 								return g.fbt._("Cannot find this username.", null, {
 									hk: "Imvaj"
 								});
@@ -193,20 +188,29 @@
 
 			function N(e) {
 				switch (e) {
-					case w.Error:
+					case C.Error:
 						return u.a.notice;
-					case w.Invalid:
+					case C.Invalid:
 						return u.a.warning
 				}
 			}
 			const I = Object(c.c)({
 				usernameAvailability: e => e.users.nameAvailable
 			});
-			t.a = Object(o.b)(I, e => ({
+			t.c = Object(o.b)(I, e => ({
 				onCheckUsername: s()(t => e(Object(l.f)({
 					username: t
 				})), 250)
-			}))(y)
+			}))(w)
+		},
+		"./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less": function(e, t, r) {
+			e.exports = {
+				container: "_5K5Dse4tVw0RLIpFAoxVY",
+				icon: "S4tWlXsmJThb2dkEK0a-e",
+				input: "_3TjvTVtT0SSXGCca-2hLNM",
+				loadingIcon: "_1096A0iAp25FzCsAQtWIIZ",
+				message: "_16fPUwJjUXr_SaDDXYoAuJ"
+			}
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -243,12 +247,12 @@
 				m = r("./src/lib/classNames/index.ts"),
 				p = r("./src/reddit/actions/modal.ts"),
 				h = r("./src/reddit/selectors/activeModalId.ts"),
-				b = r("./src/higherOrderComponents/asModal/index.tsx"),
-				f = r("./src/reddit/controls/Button/index.tsx"),
+				f = r("./src/higherOrderComponents/asModal/index.tsx"),
+				b = r("./src/reddit/controls/Button/index.tsx"),
 				x = r("./src/reddit/layout/row/Inline/index.tsx"),
 				v = r("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
 				g = r.n(v);
-			var E = Object(b.a)(e => {
+			var E = Object(f.a)(e => {
 					const {
 						children: t,
 						title: r
@@ -261,16 +265,16 @@
 						className: g.a.detailsContainer
 					}, t), d.a.createElement(x.a, {
 						className: g.a.buttonRow
-					}, d.a.createElement(f.f, {
+					}, d.a.createElement(b.f, {
 						className: g.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
-				C = r("./src/reddit/controls/ErrorText/index.m.less"),
-				w = r.n(C);
-			const y = Object(u.c)({
+				y = r("./src/reddit/controls/ErrorText/index.m.less"),
+				C = r.n(y);
+			const w = Object(u.c)({
 				activeModalId: h.a
 			});
 			class N extends d.a.Component {
@@ -315,12 +319,12 @@
 						textHasOverflowed: c
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(m.a)(w.a.wrapper, r)
+						className: Object(m.a)(C.a.wrapper, r)
 					}, d.a.createElement("span", {
-						className: w.a.description,
+						className: C.a.description,
 						ref: this.spanRef
 					}, e), c && d.a.createElement("span", {
-						className: w.a.moreText,
+						className: C.a.moreText,
 						onClick: this.toggleModal
 					}, i), t === o && d.a.createElement(E, {
 						onConfirmed: this.toggleModal,
@@ -328,7 +332,7 @@
 					}, s || e))
 				}
 			}
-			const I = Object(l.b)(y, e => ({
+			const I = Object(l.b)(w, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
 				}))(N),
 				j = e => {
@@ -377,7 +381,7 @@
 			r.d(t, "a", (function() {
 				return h
 			})), r.d(t, "b", (function() {
-				return f
+				return b
 			})), r.d(t, "c", (function() {
 				return x
 			})), r.d(t, "d", (function() {
@@ -413,10 +417,10 @@
 				return r
 			};
 			const h = i.a.input("input", u.a),
-				b = e => {
+				f = e => {
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
-				f = e => {
+				b = e => {
 					const {
 						label: t,
 						children: r,
@@ -427,7 +431,7 @@
 						className: Object(a.a)(u.a.inputWrapper, i, {
 							[u.a.mIsInvalid]: e.isInvalid
 						}),
-						onClick: b
+						onClick: f
 					}, s.a.createElement(h, m({
 						"aria-invalid": e.isInvalid,
 						innerRef: n
@@ -451,7 +455,7 @@
 							[u.a.mIsInvalid]: i,
 							[u.a.mIsRedditStyle]: c
 						}),
-						onClick: b
+						onClick: f
 					}, s.a.createElement(h, m({
 						innerRef: n
 					}, d)), e.label && s.a.createElement("label", {
@@ -513,7 +517,7 @@
 						placeholder: n,
 						errors: a = []
 					} = this.props;
-					return e.map((e, i) => s.a.createElement(f, {
+					return e.map((e, i) => s.a.createElement(b, {
 						inputRef: e => this.setInputRef(e, i),
 						isInvalid: !!a[i],
 						disabled: t,
@@ -561,24 +565,26 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return n
-			})), r.d(t, "g", (function() {
-				return i
-			})), r.d(t, "f", (function() {
-				return o
-			})), r.d(t, "e", (function() {
-				return c
 			})), r.d(t, "h", (function() {
-				return d
+				return i
+			})), r.d(t, "g", (function() {
+				return o
+			})), r.d(t, "f", (function() {
+				return c
 			})), r.d(t, "i", (function() {
+				return d
+			})), r.d(t, "j", (function() {
 				return l
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return u
 			})), r.d(t, "b", (function() {
 				return m
 			})), r.d(t, "c", (function() {
 				return p
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "d", (function() {
 				return h
+			})), r.d(t, "k", (function() {
+				return f
 			}));
 			var n, s = r("./src/config.ts"),
 				a = r("./src/reddit/endpoints/governance/requester.ts");
@@ -650,8 +656,15 @@
 				p = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				h = (e, t, r, n) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: r,
+					amount: n
 				});
-			async function h(e, t) {
+			async function f(e, t) {
 				return await Object(a.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -762,9 +775,9 @@
 			})), r.d(t, "e", (function() {
 				return h
 			})), r.d(t, "g", (function() {
-				return b
-			})), r.d(t, "t", (function() {
 				return f
+			})), r.d(t, "t", (function() {
+				return b
 			})), r.d(t, "h", (function() {
 				return x
 			})), r.d(t, "i", (function() {
@@ -774,11 +787,11 @@
 			})), r.d(t, "k", (function() {
 				return E
 			})), r.d(t, "q", (function() {
-				return C
-			})), r.d(t, "r", (function() {
-				return w
-			})), r.d(t, "p", (function() {
 				return y
+			})), r.d(t, "r", (function() {
+				return C
+			})), r.d(t, "p", (function() {
+				return w
 			})), r.d(t, "m", (function() {
 				return N
 			})), r.d(t, "n", (function() {
@@ -837,15 +850,15 @@
 						ownerId: r.mainHeader.ownerId
 					} : d
 				},
-				b = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				f = (e, t) => {
-					const r = b(e, t),
+				f = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
+				b = (e, t) => {
+					const r = f(e, t),
 						n = r && r.publicAddress;
 					if (!n) throw new Error("No wallet address found");
 					return n
 				},
 				x = (e, t) => {
-					const r = b(e, t);
+					const r = f(e, t);
 					return r && r.amount || "0"
 				},
 				v = (e, t) => {
@@ -868,9 +881,9 @@
 					const r = Object(n.m)(e, t);
 					return r && e.subreddits.gov.releaseNotes[r] || c
 				},
-				C = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
-				w = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
-				y = (e, t) => {
+				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				C = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
+				w = (e, t) => {
 					const r = k(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
@@ -924,4 +937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.5665c7049b64a3ce4a38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal~MembershipPaywallPage.cec3548b204f64d2abe8.js.map

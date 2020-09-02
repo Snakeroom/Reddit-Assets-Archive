@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c1aaae431d5fae8183b8.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.022a75921af55e800392.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -25276,24 +25276,26 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return n
-			})), s.d(t, "g", (function() {
-				return r
-			})), s.d(t, "f", (function() {
-				return i
-			})), s.d(t, "e", (function() {
-				return d
 			})), s.d(t, "h", (function() {
-				return c
+				return r
+			})), s.d(t, "g", (function() {
+				return i
+			})), s.d(t, "f", (function() {
+				return d
 			})), s.d(t, "i", (function() {
+				return c
+			})), s.d(t, "j", (function() {
 				return l
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "e", (function() {
 				return m
 			})), s.d(t, "b", (function() {
 				return u
 			})), s.d(t, "c", (function() {
 				return p
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "d", (function() {
 				return b
+			})), s.d(t, "k", (function() {
+				return h
 			}));
 			var n, o = s("./src/config.ts"),
 				a = s("./src/reddit/endpoints/governance/requester.ts");
@@ -25365,8 +25367,15 @@
 				p = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				b = (e, t, s, n) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: s,
+					amount: n
 				});
-			async function b(e, t) {
+			async function h(e, t) {
 				return await Object(a.a)(e, {
 					method: "put",
 					endpoint: "".concat(o.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -30734,4 +30743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c1aaae431d5fae8183b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.022a75921af55e800392.js.map

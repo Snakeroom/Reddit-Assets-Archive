@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.dda532319fcf8c90e6d7.js
-// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.bf13deee89f7c93931e9.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -211,24 +211,26 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return n
-			})), r.d(t, "g", (function() {
-				return d
-			})), r.d(t, "f", (function() {
-				return i
-			})), r.d(t, "e", (function() {
-				return c
 			})), r.d(t, "h", (function() {
-				return a
+				return d
+			})), r.d(t, "g", (function() {
+				return i
+			})), r.d(t, "f", (function() {
+				return c
 			})), r.d(t, "i", (function() {
+				return a
+			})), r.d(t, "j", (function() {
 				return u
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return l
 			})), r.d(t, "b", (function() {
 				return b
 			})), r.d(t, "c", (function() {
 				return m
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "d", (function() {
 				return f
+			})), r.d(t, "k", (function() {
+				return p
 			}));
 			var n, s = r("./src/config.ts"),
 				o = r("./src/reddit/endpoints/governance/requester.ts");
@@ -300,8 +302,15 @@
 				m = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				f = (e, t, r, n) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: r,
+					amount: n
 				});
-			async function f(e, t) {
+			async function p(e, t) {
 				return await Object(o.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -358,7 +367,7 @@
 			}
 			const a = 4001;
 			async function u(e, t, n, o) {
-				const [d, i] = await Promise.all([r.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~34b46b25").then(r.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers), t.then(e => e.abi)]);
+				const [d, i] = await Promise.all([r.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~f5b424fb").then(r.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const a = new d.providers.Web3Provider(s()).getSigner(),
 					u = new d.Contract(e, i, a),
@@ -387,7 +396,7 @@
 			};
 			const b = 1;
 			async function m(e, t, n, s, o) {
-				const d = await r.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~34b46b25").then(r.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers),
+				const d = await r.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~f5b424fb").then(r.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers),
 					{
 						bigNumberify: i,
 						hexlify: c,
@@ -673,4 +682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=HarbergerTaxBannerPurchaseCTA.dda532319fcf8c90e6d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.bf13deee89f7c93931e9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.bae42779342fd3601352.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.3b09e0f7b7052f98cd24.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -1991,24 +1991,26 @@
 			"use strict";
 			a.d(t, "a", (function() {
 				return n
-			})), a.d(t, "g", (function() {
-				return d
-			})), a.d(t, "f", (function() {
-				return c
-			})), a.d(t, "e", (function() {
-				return i
 			})), a.d(t, "h", (function() {
-				return o
+				return d
+			})), a.d(t, "g", (function() {
+				return c
+			})), a.d(t, "f", (function() {
+				return i
 			})), a.d(t, "i", (function() {
+				return o
+			})), a.d(t, "j", (function() {
 				return l
-			})), a.d(t, "d", (function() {
+			})), a.d(t, "e", (function() {
 				return m
 			})), a.d(t, "b", (function() {
 				return u
 			})), a.d(t, "c", (function() {
 				return p
-			})), a.d(t, "j", (function() {
+			})), a.d(t, "d", (function() {
 				return b
+			})), a.d(t, "k", (function() {
+				return g
 			}));
 			var n, s = a("./src/config.ts"),
 				r = a("./src/reddit/endpoints/governance/requester.ts");
@@ -2080,8 +2082,15 @@
 				p = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				b = (e, t, a, n) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: a,
+					amount: n
 				});
-			async function b(e, t) {
+			async function g(e, t) {
 				return await Object(r.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -2464,4 +2473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.bae42779342fd3601352.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.3b09e0f7b7052f98cd24.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.f391c1632867410f4284.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.b2006bef8783ce9570db.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(A, e, t) {
@@ -281,7 +281,7 @@
 					const e = this.resolve(A);
 					return !1 !== this.resolved[e] && !!t.m[e]
 				},
-				importAsync: () => Promise.all([t.e("vendors~CollectionCommentsPage~CommentsPage~reddit-components-Governance-ClaimPointsBanner~reddit-co~470fa65e"), t.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33"), t.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~34b46b25"), t.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~35c7bbd0"), t.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~4b48e3c6"), t.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(t.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
+				importAsync: () => Promise.all([t.e("vendors~CollectionCommentsPage~CommentsPage~reddit-components-Governance-ClaimPointsBanner~reddit-co~47352505"), t.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~509f26c8"), t.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~f5b424fb"), t.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~2c4c224b"), t.e("vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~5a9831fe"), t.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~82ccdb7d"), t.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(t.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
 				requireAsync(A) {
 					const e = this.resolve(A);
 					return this.resolved[e] = !1, this.importAsync(A).then(A => (this.resolved[e] = !0, A))
@@ -348,24 +348,26 @@
 			"use strict";
 			t.d(e, "a", (function() {
 				return n
-			})), t.d(e, "g", (function() {
-				return r
-			})), t.d(e, "f", (function() {
-				return a
-			})), t.d(e, "e", (function() {
-				return d
 			})), t.d(e, "h", (function() {
-				return o
+				return r
+			})), t.d(e, "g", (function() {
+				return a
+			})), t.d(e, "f", (function() {
+				return d
 			})), t.d(e, "i", (function() {
+				return o
+			})), t.d(e, "j", (function() {
 				return c
-			})), t.d(e, "d", (function() {
+			})), t.d(e, "e", (function() {
 				return k
 			})), t.d(e, "b", (function() {
 				return m
 			})), t.d(e, "c", (function() {
 				return p
-			})), t.d(e, "j", (function() {
+			})), t.d(e, "d", (function() {
 				return u
+			})), t.d(e, "k", (function() {
+				return x
 			}));
 			var n, i = t("./src/config.ts"),
 				s = t("./src/reddit/endpoints/governance/requester.ts");
@@ -437,8 +439,15 @@
 				p = A => ({
 					type: "subscribe",
 					subredditId: A
+				}),
+				u = (A, e, t, n) => ({
+					type: "transfer",
+					subredditId: A,
+					recipient: e,
+					recipientAddress: t,
+					amount: n
 				});
-			async function u(A, e) {
+			async function x(A, e) {
 				return await Object(s.a)(A, {
 					method: "put",
 					endpoint: "".concat(i.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -729,4 +738,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-Governance-ClaimPointsBanner.f391c1632867410f4284.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.b2006bef8783ce9570db.js.map

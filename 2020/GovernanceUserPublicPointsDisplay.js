@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.ea69bf318ace88f2086b.js
-// Retrieved at 8/19/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.b14cdfb7df12c4dfb5f8.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -35,9 +35,9 @@
 			})), n.d(t, "d", (function() {
 				return B
 			})), n.d(t, "e", (function() {
-				return C
+				return A
 			})), n.d(t, "h", (function() {
-				return R
+				return C
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -100,7 +100,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(y.a)(n, o.error || o.errors[0].messsage)
-				}, C = (e, t) => async (n, s, c) => {
+				}, A = (e, t) => async (n, s, c) => {
 					let {
 						apiContext: a
 					} = c;
@@ -133,7 +133,7 @@
 					})), t && n(Object(d.f)())) : (n(_({
 						error: m.error
 					})), Object(y.a)(n, m.error))
-				}, R = e => async (t, n, r) => {
+				}, C = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -288,24 +288,26 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "g", (function() {
-				return d
-			})), n.d(t, "f", (function() {
-				return c
-			})), n.d(t, "e", (function() {
-				return i
 			})), n.d(t, "h", (function() {
-				return a
+				return d
+			})), n.d(t, "g", (function() {
+				return c
+			})), n.d(t, "f", (function() {
+				return i
 			})), n.d(t, "i", (function() {
+				return a
+			})), n.d(t, "j", (function() {
 				return u
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return l
 			})), n.d(t, "b", (function() {
 				return b
 			})), n.d(t, "c", (function() {
 				return m
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "d", (function() {
 				return p
+			})), n.d(t, "k", (function() {
+				return f
 			}));
 			var r, s = n("./src/config.ts"),
 				o = n("./src/reddit/endpoints/governance/requester.ts");
@@ -377,8 +379,15 @@
 				m = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				p = (e, t, n, r) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: n,
+					amount: r
 				});
-			async function p(e, t) {
+			async function f(e, t) {
 				return await Object(o.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -717,4 +726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GovernanceUserPublicPointsDisplay.ea69bf318ace88f2086b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.b14cdfb7df12c4dfb5f8.js.map

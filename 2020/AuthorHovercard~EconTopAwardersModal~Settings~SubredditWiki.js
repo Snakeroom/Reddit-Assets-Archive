@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.b744de9f8b5d729a19bc.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.8cf6691c1bbeb8c8d1fc.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -57,8 +57,8 @@
 				v = r("./src/reddit/selectors/user.ts"),
 				h = r("./src/reddit/selectors/userFlair.ts"),
 				f = r("./src/reddit/selectors/profile.ts"),
-				C = r("./node_modules/fbt/lib/FbtPublic.js"),
-				I = r("./src/config.ts"),
+				I = r("./node_modules/fbt/lib/FbtPublic.js"),
+				C = r("./src/config.ts"),
 				x = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				E = r("./src/lib/lessComponent.tsx"),
 				w = r("./src/lib/prettyPrintNumber/index.ts"),
@@ -73,8 +73,8 @@
 				k = r("./src/reddit/icons/svgs/Admin/index.tsx"),
 				M = r("./src/reddit/icons/svgs/Karma/index.tsx"),
 				U = r("./src/reddit/icons/svgs/Premium/index.tsx"),
-				T = r("./src/reddit/models/Gold/Award.ts"),
-				A = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
+				A = r("./src/reddit/models/Gold/Award.ts"),
+				T = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				S = r("./src/reddit/actions/inContextModeration.ts"),
 				B = r("./src/reddit/actions/modal.ts"),
 				K = r("./src/reddit/actions/subredditModeration.ts"),
@@ -203,8 +203,8 @@
 				ve = E.a.wrapped(U.a, "PremiumIcon", de.a),
 				he = E.a.wrapped(x.a, "UserNameLink", de.a),
 				fe = E.a.div("UserNameMetaData", de.a),
-				Ce = E.a.div("MetaDataItem", de.a),
-				Ie = E.a.div("Bullet", de.a),
+				Ie = E.a.div("MetaDataItem", de.a),
+				Ce = E.a.div("Bullet", de.a),
 				xe = E.a.div("UserNameContainer", de.a),
 				Ee = E.a.div("UserInfoContainer", de.a),
 				we = E.a.div("PostKarma", de.a),
@@ -219,62 +219,62 @@
 				ke = E.a.div("UserContainer", de.a),
 				Me = E.a.div("BottomSpacer", de.a),
 				Ue = E.a.div("Container", de.a),
-				Te = e => s.a.createElement("div", null, s.a.createElement("div", null, s.a.createElement(he, {
+				Ae = e => s.a.createElement("div", null, s.a.createElement("div", null, s.a.createElement(he, {
 					to: "/user/".concat(e.userName, "/")
 				}, "u/".concat(e.userName)), e.user.isEmployee && s.a.createElement(k.a, {
 					className: de.a.adminIcon,
-					title: C.fbt._("Reddit admin", null, {
+					title: I.fbt._("Reddit admin", null, {
 						hk: "15wBTE"
 					})
 				}), e.user.isGold && s.a.createElement(x.a, {
 					to: "/premium"
-				}, s.a.createElement(ve, null))), s.a.createElement(fe, null, e.user.username && s.a.createElement(Ce, null, e.user.username, s.a.createElement(Ie, null, "•")), s.a.createElement(Ce, null, Object(g.d)(e.user.createdUtc || e.user.created)))),
-				Ae = e => {
+				}, s.a.createElement(ve, null))), s.a.createElement(fe, null, e.user.username && s.a.createElement(Ie, null, e.user.username, s.a.createElement(Ce, null, "•")), s.a.createElement(Ie, null, Object(g.d)(e.user.createdUtc || e.user.created)))),
+				Te = e => {
 					const {
 						showAwardKarma: t,
 						user: r
 					} = e;
-					return t ? s.a.createElement(_e, null, s.a.createElement(Le, null, s.a.createElement(Ne, null, Object(w.b)(r.postKarma)), s.a.createElement(ye, null, C.fbt._({
+					return t ? s.a.createElement(_e, null, s.a.createElement(Le, null, s.a.createElement(Ne, null, Object(w.b)(r.postKarma)), s.a.createElement(ye, null, I.fbt._({
 						"*": "Post Karma",
 						_1: " Post Karma"
-					}, [C.fbt._plural(r.postKarma)], {
+					}, [I.fbt._plural(r.postKarma)], {
 						hk: "3K4oaH"
-					}))), s.a.createElement(Le, null, s.a.createElement(Ne, null, Object(w.b)(r.commentKarma)), s.a.createElement(ye, null, C.fbt._({
+					}))), s.a.createElement(Le, null, s.a.createElement(Ne, null, Object(w.b)(r.commentKarma)), s.a.createElement(ye, null, I.fbt._({
 						"*": "Comment Karma",
 						_1: " Comment Karma"
-					}, [C.fbt._plural(r.commentKarma)], {
+					}, [I.fbt._plural(r.commentKarma)], {
 						hk: "3gKRx9"
-					}))), s.a.createElement(Le, null, s.a.createElement(Ne, null, Object(w.b)(r.awardeeKarma)), s.a.createElement(ye, null, C.fbt._({
+					}))), s.a.createElement(Le, null, s.a.createElement(Ne, null, Object(w.b)(r.awardeeKarma)), s.a.createElement(ye, null, I.fbt._({
 						"*": "Awardee Karma",
 						_1: " Awardee Karma"
-					}, [C.fbt._plural(r.awardeeKarma)], {
+					}, [I.fbt._plural(r.awardeeKarma)], {
 						hk: "3nzm9q"
 					}), s.a.createElement(je, {
-						href: T.a,
+						href: A.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, s.a.createElement(H.a, {
 						className: de.a.infoIcon
-					})))), s.a.createElement(Le, null, s.a.createElement(Ne, null, Object(w.b)(r.awarderKarma)), s.a.createElement(ye, null, C.fbt._({
+					})))), s.a.createElement(Le, null, s.a.createElement(Ne, null, Object(w.b)(r.awarderKarma)), s.a.createElement(ye, null, I.fbt._({
 						"*": "Awarder Karma",
 						_1: " Awarder Karma"
-					}, [C.fbt._plural(r.awarderKarma)], {
+					}, [I.fbt._plural(r.awarderKarma)], {
 						hk: "4zXN3B"
 					}), s.a.createElement(je, {
-						href: T.a,
+						href: A.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, s.a.createElement(H.a, {
 						className: de.a.infoIcon
-					}))))) : s.a.createElement(Ee, null, s.a.createElement(pe, null), s.a.createElement(we, null, s.a.createElement(Ne, null, Object(w.b)(r.postKarma)), s.a.createElement(Oe, null, C.fbt._({
+					}))))) : s.a.createElement(Ee, null, s.a.createElement(pe, null), s.a.createElement(we, null, s.a.createElement(Ne, null, Object(w.b)(r.postKarma)), s.a.createElement(Oe, null, I.fbt._({
 						"*": "Post Karma",
 						_1: " Post Karma"
-					}, [C.fbt._plural(r.postKarma)], {
+					}, [I.fbt._plural(r.postKarma)], {
 						hk: "3K4oaH"
-					}))), s.a.createElement(ge, null, s.a.createElement(Ne, null, Object(w.b)(r.commentKarma)), s.a.createElement(Oe, null, C.fbt._({
+					}))), s.a.createElement(ge, null, s.a.createElement(Ne, null, Object(w.b)(r.commentKarma)), s.a.createElement(Oe, null, I.fbt._({
 						"*": "Comment Karma",
 						_1: " Comment Karma"
-					}, [C.fbt._plural(r.commentKarma)], {
+					}, [I.fbt._plural(r.commentKarma)], {
 						hk: "3gKRx9"
 					}))))
 				},
@@ -302,7 +302,7 @@
 						style: m
 					});
 					const E = h.isNSFW && n,
-						w = h.accountIcon || "".concat(I.a.assetPath, "/img/snoo_user_placeholder.png"),
+						w = h.accountIcon || "".concat(C.a.assetPath, "/img/snoo_user_placeholder.png"),
 						g = d && d.flair,
 						_ = d && d.access,
 						j = f && f.templateIds && f.templateIds.length > 0,
@@ -310,7 +310,7 @@
 						{
 							awardedLastMonth: O
 						} = h,
-						H = E ? "".concat(I.a.assetPath, "/img/user-info-banner.png") : e.user.bannerImage;
+						H = E ? "".concat(C.a.assetPath, "/img/user-info-banner.png") : e.user.bannerImage;
 					return s.a.createElement(Ue, {
 						className: t,
 						id: a,
@@ -323,21 +323,21 @@
 						iconUrl: w,
 						isNSFW: h.isNSFW,
 						userName: v
-					}), s.a.createElement(Te, {
+					}), s.a.createElement(Ae, {
 						origin: i,
 						user: h,
 						userName: v
-					})), s.a.createElement(Ae, {
+					})), s.a.createElement(Te, {
 						showAwardKarma: u,
 						user: h
-					}), O && s.a.createElement(A.a, {
+					}), O && s.a.createElement(T.a, {
 						recentAwardings: O,
 						topAwardIcon: p,
 						username: v
 					}), c && !o && x && s.a.createElement(be, {
 						contextId: r,
 						userId: h.id
-					}, C.fbt._("Start Chat", null, {
+					}, I.fbt._("Start Chat", null, {
 						hk: "2mfqRE"
 					})), h.hasUserProfile && !o && s.a.createElement(me, {
 						identifier: {
@@ -563,7 +563,7 @@
 				})),
 				h = r("./src/reddit/components/Hovercards/HoverDiv/index.m.less"),
 				f = r.n(h);
-			class C extends s.a.Component {
+			class I extends s.a.Component {
 				constructor() {
 					super(...arguments), this.closeHovercardTimeoutId = 0, this.openHovercardTimeoutId = 0, this.isHovering = !1, this.hoverEl = void 0, this.onHoverElMouseEnter = () => {
 						this.isHovering = !0
@@ -604,9 +604,9 @@
 					}, e)
 				}
 			}
-			const I = a.a.wrapped(C, "HoverDiv", f.a),
-				x = m(I),
-				E = v(I)
+			const C = a.a.wrapped(I, "HoverDiv", f.a),
+				x = m(C),
+				E = v(C)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, r) {
 			e.exports = {
@@ -762,14 +762,14 @@
 				return r
 			};
 			const f = p.a.button("IconButton", m.a),
-				C = p.a.wrapped(d.a, "SubscribeIcon", m.a),
-				I = p.a.wrapped(i.a, "UnsubscribeIcon", m.a),
+				I = p.a.wrapped(d.a, "SubscribeIcon", m.a),
+				C = p.a.wrapped(i.a, "UnsubscribeIcon", m.a),
 				x = p.a.wrapped(e => {
 					var {
 						border: t,
 						small: r
 					} = e, n = h(e, ["border", "small"]);
-					return a.a.createElement(f, n, a.a.createElement(C, {
+					return a.a.createElement(f, n, a.a.createElement(I, {
 						className: Object(b.a)(n.className, {
 							[m.a.isSmall]: r
 						})
@@ -810,7 +810,7 @@
 						small: r,
 						type: n
 					} = e, s = h(e, ["border", "small", "type"]);
-					return a.a.createElement(f, s, a.a.createElement(I, {
+					return a.a.createElement(f, s, a.a.createElement(C, {
 						className: Object(b.a)(o.n, s.className, {
 							[m.a.isSmall]: r
 						})
@@ -971,24 +971,26 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return n
-			})), r.d(t, "g", (function() {
-				return o
-			})), r.d(t, "f", (function() {
-				return c
-			})), r.d(t, "e", (function() {
-				return i
 			})), r.d(t, "h", (function() {
-				return d
+				return o
+			})), r.d(t, "g", (function() {
+				return c
+			})), r.d(t, "f", (function() {
+				return i
 			})), r.d(t, "i", (function() {
+				return d
+			})), r.d(t, "j", (function() {
 				return l
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return u
 			})), r.d(t, "b", (function() {
 				return m
 			})), r.d(t, "c", (function() {
 				return b
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "d", (function() {
 				return p
+			})), r.d(t, "k", (function() {
+				return v
 			}));
 			var n, s = r("./src/config.ts"),
 				a = r("./src/reddit/endpoints/governance/requester.ts");
@@ -1060,8 +1062,15 @@
 				b = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				p = (e, t, r, n) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: r,
+					amount: n
 				});
-			async function p(e, t) {
+			async function v(e, t) {
 				return await Object(a.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -1212,9 +1221,9 @@
 			})), r.d(t, "h", (function() {
 				return f
 			})), r.d(t, "i", (function() {
-				return C
-			})), r.d(t, "j", (function() {
 				return I
+			})), r.d(t, "j", (function() {
+				return C
 			})), r.d(t, "k", (function() {
 				return x
 			})), r.d(t, "q", (function() {
@@ -1292,7 +1301,7 @@
 					const r = v(e, t);
 					return r && r.amount || "0"
 				},
-				C = (e, t) => {
+				I = (e, t) => {
 					if (Object(o.a)(e)) {
 						const t = Object(c.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
@@ -1305,7 +1314,7 @@
 					}
 					return r
 				},
-				I = (e, t) => {
+				C = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
 				x = (e, t) => {
@@ -1368,4 +1377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.b744de9f8b5d729a19bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.8cf6691c1bbeb8c8d1fc.js.map

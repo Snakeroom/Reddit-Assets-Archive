@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.46260274d8455bca6146.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.63917155266eceb4f51f.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, r) {
@@ -16,7 +16,7 @@
 			r.d(t, "b", (function() {
 				return O
 			})), r.d(t, "c", (function() {
-				return k
+				return w
 			})), r.d(t, "a", (function() {
 				return _
 			}));
@@ -142,15 +142,15 @@
 					},
 					useHovercard: b.d.spPremium
 				}),
-				w = e => ({
+				k = e => ({
 					onShowTooltip: t => e(Object(u.f)({
 						tooltipId: t
 					})),
 					onHideTooltip: () => e(Object(u.i)()),
 					onOpenUploadDialog: () => e(Object(c.j)())
 				}),
-				k = Object(o.b)(j, w)(O),
-				_ = Object(o.b)(N, w)(O)
+				w = Object(o.b)(j, k)(O),
+				_ = Object(o.b)(N, k)(O)
 		},
 		"./src/reddit/components/Governance/Leaderboard/EntryDivider/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -270,9 +270,9 @@
 				O = (r("./node_modules/core-js/modules/es6.regexp.to-string.js"), r("./src/lib/classNames/index.ts")),
 				j = r("./src/lib/prettyPrintNumber/index.ts"),
 				N = r("./src/reddit/components/Governance/Leaderboard/EntryDivider/index.m.less"),
-				w = r.n(N);
+				k = r.n(N);
 
-			function k(e) {
+			function w(e) {
 				const t = Object(j.a)(e.entry.numUsers.toString()),
 					r = 1 === e.entry.numUsers ? s.fbt._("User", null, {
 						hk: "167Ce9"
@@ -280,13 +280,13 @@
 						hk: "1pljbY"
 					});
 				return d.a.createElement("div", {
-					className: Object(O.a)(w.a.container, e.className)
+					className: Object(O.a)(k.a.container, e.className)
 				}, d.a.createElement("div", {
-					className: w.a.line
+					className: k.a.line
 				}), d.a.createElement("div", {
-					className: w.a.text
+					className: k.a.text
 				}, "".concat(t, " ").concat(r)), d.a.createElement("div", {
-					className: w.a.line
+					className: k.a.line
 				}))
 			}
 			var _ = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
@@ -390,7 +390,7 @@
 									key: e.userId
 								});
 							case n.Divider:
-								return d.a.createElement(k, {
+								return d.a.createElement(w, {
 									className: G.a.divider,
 									entry: e,
 									key: "divider"
@@ -440,24 +440,26 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return n
-			})), r.d(t, "g", (function() {
-				return d
-			})), r.d(t, "f", (function() {
-				return a
-			})), r.d(t, "e", (function() {
-				return i
 			})), r.d(t, "h", (function() {
-				return c
+				return d
+			})), r.d(t, "g", (function() {
+				return a
+			})), r.d(t, "f", (function() {
+				return i
 			})), r.d(t, "i", (function() {
+				return c
+			})), r.d(t, "j", (function() {
 				return u
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return l
 			})), r.d(t, "b", (function() {
 				return m
 			})), r.d(t, "c", (function() {
 				return p
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "d", (function() {
 				return b
+			})), r.d(t, "k", (function() {
+				return h
 			}));
 			var n, s = r("./src/config.ts"),
 				o = r("./src/reddit/endpoints/governance/requester.ts");
@@ -529,8 +531,15 @@
 				p = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				b = (e, t, r, n) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: r,
+					amount: n
 				});
-			async function b(e, t) {
+			async function h(e, t) {
 				return await Object(o.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -653,9 +662,9 @@
 			})), r.d(t, "u", (function() {
 				return N
 			})), r.d(t, "a", (function() {
-				return w
-			})), r.d(t, "f", (function() {
 				return k
+			})), r.d(t, "f", (function() {
+				return w
 			})), r.d(t, "s", (function() {
 				return _
 			})), r.d(t, "o", (function() {
@@ -747,18 +756,18 @@
 					const r = j(e, t);
 					return r && r.walletProvider
 				},
-				w = (e, t) => {
+				k = (e, t) => {
 					const r = N(e, t),
 						n = j(e, t);
 					return r && r.provider || n && n.provider
 				},
-				k = (e, t) => {
-					const r = w(e, t);
+				w = (e, t) => {
+					const r = k(e, t);
 					return r === s.a.Ethereum || r === s.a.Rinkeby || r === s.a.EthTraderEthereum || r === s.a.EthTraderRinkeby
 				},
 				_ = (e, t) => {
 					const r = N(e, t),
-						n = w(e, t);
+						n = k(e, t);
 					if (r && !r.inTransition && n === s.a.Stellar) return {
 						address: r.extra && r.extra.issuerAddress || "",
 						decimals: r.extra && r.extra.decimals || 7,
@@ -791,4 +800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.46260274d8455bca6146.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.63917155266eceb4f51f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.d1b3055ea18cc2cda596.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4c3fb7a9a092c6d90609.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -325,7 +325,7 @@
 						className: Object(d.a)(W.a.container, e.className)
 					}, y.fbt._("This community is a part of an exclusive experiment run by Reddit Admins.", null, {
 						hk: "1lZWqG"
-					}), y.fbt._("Hundreds of followers have paid for a", null, {
+					}), " ", y.fbt._("Hundreds of followers have paid for a", null, {
 						hk: "b6O0n"
 					}), s.a.createElement("div", {
 						className: W.a.branding
@@ -334,9 +334,9 @@
 						src: "".concat(S.a.assetPath, "/img/memberships/paywall/fortnitebr/Crown.gif")
 					}), e.meta.memberAlt), y.fbt._("subscription.", null, {
 						hk: "2NkoEp"
-					}), y.fbt._("They benefit by getting unique features that Reddit doesn't provide in any other community.", null, {
+					}), " ", y.fbt._("They benefit by getting unique features that Reddit doesn't provide in any other community.", null, {
 						hk: "xffSH"
-					}), s.a.createElement(B.a, {
+					}), " ", s.a.createElement(B.a, {
 						className: W.a.link,
 						to: Object(A.a)(e.subreddit.name, e.correlationId),
 						onClick: () => e.sendEvent(t => Object.assign(Object.assign({
@@ -671,24 +671,26 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "g", (function() {
-				return c
-			})), n.d(t, "f", (function() {
-				return i
-			})), n.d(t, "e", (function() {
-				return o
 			})), n.d(t, "h", (function() {
-				return d
+				return c
+			})), n.d(t, "g", (function() {
+				return i
+			})), n.d(t, "f", (function() {
+				return o
 			})), n.d(t, "i", (function() {
+				return d
+			})), n.d(t, "j", (function() {
 				return l
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return m
 			})), n.d(t, "b", (function() {
 				return u
 			})), n.d(t, "c", (function() {
 				return b
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "d", (function() {
 				return p
+			})), n.d(t, "k", (function() {
+				return g
 			}));
 			var r, s = n("./src/config.ts"),
 				a = n("./src/reddit/endpoints/governance/requester.ts");
@@ -760,8 +762,15 @@
 				b = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				p = (e, t, n, r) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: n,
+					amount: r
 				});
-			async function p(e, t) {
+			async function g(e, t) {
 				return await Object(a.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -1075,4 +1084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumNewUserWelcome.d1b3055ea18cc2cda596.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4c3fb7a9a092c6d90609.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.9a5312005b68f662aeb6.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f9a870c308c78533a0f4.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -721,7 +721,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!a.m[t]
 				},
-				importAsync: () => Promise.all([a.e("vendors~CollectionCommentsPage~CommentsPage~reddit-components-Governance-ClaimPointsBanner~reddit-co~470fa65e"), a.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~851e9c33"), a.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~34b46b25"), a.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~35c7bbd0"), a.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~4b48e3c6"), a.e("reddit-components-Governance-TransactionModals-SubscriptionModal")]).then(a.bind(null, "./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.tsx")),
+				importAsync: () => Promise.all([a.e("vendors~CollectionCommentsPage~CommentsPage~reddit-components-Governance-ClaimPointsBanner~reddit-co~47352505"), a.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~509f26c8"), a.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~f5b424fb"), a.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~2c4c224b"), a.e("vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~5a9831fe"), a.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~82ccdb7d"), a.e("reddit-components-Governance-TransactionModals-SubscriptionModal")]).then(a.bind(null, "./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -3221,7 +3221,7 @@
 				}))
 			}
 			var Qt = a("./src/reddit/components/Economics/SubredditPremium/PurchaseSuccessConfetti/index.tsx"),
-				Yt = a("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.tsx"),
+				Yt = a("./src/reddit/components/Governance/TransferPointsModal/Recipient/UsernameRecipient.tsx"),
 				$t = a("./src/reddit/featureFlags/index.ts"),
 				ea = a("./src/reddit/pages/meta/MembershipPaywallPage/PurchaseButton/index.m.less"),
 				ta = a.n(ea);
@@ -3260,7 +3260,7 @@
 					} = this.props, {
 						canGift: i
 					} = N(s), n = a.prices, c = n.usd, m = n.points, d = this.props.userIsPremiumSubscriber === P.a.Subscribed;
-					return o.a.createElement(o.a.Fragment, null, !r && i && o.a.createElement(Yt.a, {
+					return o.a.createElement(o.a.Fragment, null, !r && i && o.a.createElement(Yt.c, {
 						className: ta.a.recipient,
 						onChange: this.handleUserNameChange
 					}), o.a.createElement("button", {
@@ -3907,4 +3907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.9a5312005b68f662aeb6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f9a870c308c78533a0f4.js.map

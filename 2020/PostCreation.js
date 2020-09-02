@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.825f68b127de7b657393.js
-// Retrieved at 9/2/2020, 2:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.112899eb6d5dd7a2ec78.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "8c2d7d9-production"
+					SENTRY_RELEASE_VERSION: "6ebfabe-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -24082,24 +24082,26 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "g", (function() {
-				return i
-			})), n.d(t, "f", (function() {
-				return a
-			})), n.d(t, "e", (function() {
-				return c
 			})), n.d(t, "h", (function() {
-				return l
+				return i
+			})), n.d(t, "g", (function() {
+				return a
+			})), n.d(t, "f", (function() {
+				return c
 			})), n.d(t, "i", (function() {
+				return l
+			})), n.d(t, "j", (function() {
 				return d
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return u
 			})), n.d(t, "b", (function() {
 				return p
 			})), n.d(t, "c", (function() {
 				return m
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "d", (function() {
 				return h
+			})), n.d(t, "k", (function() {
+				return b
 			}));
 			var s, o = n("./src/config.ts"),
 				r = n("./src/reddit/endpoints/governance/requester.ts");
@@ -24171,8 +24173,15 @@
 				m = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				h = (e, t, n, s) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: n,
+					amount: s
 				});
-			async function h(e, t) {
+			async function b(e, t) {
 				return await Object(r.a)(e, {
 					method: "put",
 					endpoint: "".concat(o.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -33748,4 +33757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.825f68b127de7b657393.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.112899eb6d5dd7a2ec78.js.map

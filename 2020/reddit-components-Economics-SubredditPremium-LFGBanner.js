@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.7c79078b6892853da555.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.43c4659c9513580220a3.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, s) {
@@ -440,9 +440,9 @@
 						className: V.a.text
 					}, n.fbt._("Get a badge that lets you find new teammates in {community}.", [n.fbt._param("community", t)], {
 						hk: "2GYrVD"
-					}), n.fbt._("Specify your region, platform, and your play style for the best match.", null, {
+					}), " ", n.fbt._("Specify your region, platform, and your play style for the best match.", null, {
 						hk: "1HilaD"
-					}), n.fbt._("The badge helps other players find you, and makes it easier for others to start a conversation in Reddit chat.", null, {
+					}), " ", n.fbt._("The badge helps other players find you, and makes it easier for others to start a conversation in Reddit chat.", null, {
 						hk: "2TBy4p"
 					})))
 				})),
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.7c79078b6892853da555.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.43c4659c9513580220a3.js.map

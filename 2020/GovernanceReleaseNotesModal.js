@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.8c7d62114c7f592d5660.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.a4eb4d820b128812d6b5.js
+// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
@@ -157,7 +157,7 @@
 				return [e.getDate(), e.getMonth(), e.getFullYear()]
 			}
 
-			function w(e) {
+			function y(e) {
 				const t = (n = new Date(Date.now() + 60 * (new Date).getTimezoneOffset() * 1e3), s = new Date(e.date), x()(v(n), v(s)));
 				var n, s;
 				return a.a.createElement("div", {
@@ -171,7 +171,7 @@
 					}), " ").concat(t, ", ").concat(n)
 				}(new Date(e.date)))
 			}
-			var y = n("./src/reddit/components/Media/index.tsx"),
+			var w = n("./src/reddit/components/Media/index.tsx"),
 				N = n("./src/reddit/components/RichTextJson/index.tsx"),
 				E = n("./src/reddit/components/Governance/ReleaseNotesModal/Slide/index.m.less"),
 				j = n.n(E);
@@ -190,7 +190,7 @@
 					rtJsonElementProps: O
 				})) : a.a.createElement("div", {
 					className: j.a.media
-				}, a.a.createElement(y.a, {
+				}, a.a.createElement(w.a, {
 					isListing: !0,
 					isNotCardView: !1,
 					primaryContent: !0,
@@ -200,20 +200,20 @@
 					post: e.releaseNote
 				})))
 			}
-			var M = n("./src/reddit/controls/Button/index.tsx"),
-				I = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+			var I = n("./src/reddit/controls/Button/index.tsx"),
+				M = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				R = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
 				k = n.n(R);
 
 			function T(e) {
 				return a.a.createElement("div", {
 					className: Object(h.a)(k.a.container, e.className)
-				}, !e.isFirst && a.a.createElement(M.i, {
+				}, !e.isFirst && a.a.createElement(I.i, {
 					className: k.a.prev,
 					onClick: e.onPrevSlide
-				}, a.a.createElement(I.a, {
+				}, a.a.createElement(M.a, {
 					className: k.a.arrow
-				})), a.a.createElement(M.f, {
+				})), a.a.createElement(I.f, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
 				}, e.isLast ? r.fbt._("done", null, {
 					hk: "2XjG3a"
@@ -273,7 +273,7 @@
 						releaseNote: e
 					}), a.a.createElement("div", {
 						className: P.a.controls
-					}, a.a.createElement(w, {
+					}, a.a.createElement(y, {
 						className: P.a.controlBox,
 						date: e.created
 					}), a.a.createElement(L, {
@@ -345,24 +345,26 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "g", (function() {
-				return o
-			})), n.d(t, "f", (function() {
-				return i
-			})), n.d(t, "e", (function() {
-				return d
 			})), n.d(t, "h", (function() {
-				return c
+				return o
+			})), n.d(t, "g", (function() {
+				return i
+			})), n.d(t, "f", (function() {
+				return d
 			})), n.d(t, "i", (function() {
+				return c
+			})), n.d(t, "j", (function() {
 				return l
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return u
 			})), n.d(t, "b", (function() {
 				return m
 			})), n.d(t, "c", (function() {
 				return p
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "d", (function() {
 				return h
+			})), n.d(t, "k", (function() {
+				return b
 			}));
 			var r, s = n("./src/config.ts"),
 				a = n("./src/reddit/endpoints/governance/requester.ts");
@@ -434,8 +436,15 @@
 				p = e => ({
 					type: "subscribe",
 					subredditId: e
+				}),
+				h = (e, t, n, r) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: n,
+					amount: r
 				});
-			async function h(e, t) {
+			async function b(e, t) {
 				return await Object(a.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -568,9 +577,9 @@
 			})), n.d(t, "j", (function() {
 				return v
 			})), n.d(t, "k", (function() {
-				return w
-			})), n.d(t, "q", (function() {
 				return y
+			})), n.d(t, "q", (function() {
+				return w
 			})), n.d(t, "r", (function() {
 				return N
 			})), n.d(t, "p", (function() {
@@ -582,9 +591,9 @@
 			})), n.d(t, "u", (function() {
 				return _
 			})), n.d(t, "a", (function() {
-				return M
-			})), n.d(t, "f", (function() {
 				return I
+			})), n.d(t, "f", (function() {
+				return M
 			})), n.d(t, "s", (function() {
 				return R
 			})), n.d(t, "o", (function() {
@@ -660,11 +669,11 @@
 				v = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				w = (e, t) => {
+				y = (e, t) => {
 					const n = Object(r.m)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || d
 				},
-				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				w = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
 				N = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
 				E = (e, t) => {
 					const n = R(e, t);
@@ -676,18 +685,18 @@
 					const n = O(e, t);
 					return n && n.walletProvider
 				},
-				M = (e, t) => {
+				I = (e, t) => {
 					const n = _(e, t),
 						r = O(e, t);
 					return n && n.provider || r && r.provider
 				},
-				I = (e, t) => {
-					const n = M(e, t);
+				M = (e, t) => {
+					const n = I(e, t);
 					return n === s.a.Ethereum || n === s.a.Rinkeby || n === s.a.EthTraderEthereum || n === s.a.EthTraderRinkeby
 				},
 				R = (e, t) => {
 					const n = _(e, t),
-						r = M(e, t);
+						r = I(e, t);
 					if (n && !n.inTransition && r === s.a.Stellar) return {
 						address: n.extra && n.extra.issuerAddress || "",
 						decimals: n.extra && n.extra.decimals || 7,
@@ -720,4 +729,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.8c7d62114c7f592d5660.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.a4eb4d820b128812d6b5.js.map
