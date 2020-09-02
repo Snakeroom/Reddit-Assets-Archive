@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.6223bcf9cb82e8fd6be3.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.755c17a7579f92e67ba7.js
+// Retrieved at 9/2/2020, 2:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1433,7 +1433,7 @@
 						onConfirm: a,
 						toggleModal: q,
 						withOverlay: !0
-					}), c.a.createElement(ae, Pe({
+					}), !!n && c.a.createElement(ae, Pe({
 						onClick: () => l ? w() : b(),
 						tooltipId: P,
 						tooltipText: l ? _.fbt._("Unblock User", null, {
@@ -2651,4 +2651,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.6223bcf9cb82e8fd6be3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.755c17a7579f92e67ba7.js.map
