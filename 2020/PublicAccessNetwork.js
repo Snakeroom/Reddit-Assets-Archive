@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.bc08ce8b7e99a94b3b6f.js
-// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6ad2d782ac755adde73f.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "6ebfabe-production"
+					SENTRY_RELEASE_VERSION: "719b0da-production"
 				}),
 				O = {
 					anonymousUserId: "t2_anonymous",
@@ -1871,7 +1871,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(S.R)(e, {
+					return Object(S.S)(e, {
 						subredditId: s
 					}).name
 				}
@@ -3996,7 +3996,7 @@
 					s = Object(i.d)(us.z),
 					a = Object(i.d)(us.V);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
-			}, ka = e => Object(i.d)(t => Object(at.cb)(t, {
+			}, ka = e => Object(i.d)(t => Object(at.eb)(t, {
 				identifier: {
 					name: e,
 					type: $e.a.PROFILE
@@ -4047,7 +4047,7 @@
 					} = t;
 					const a = s && s.replace(/^r\//, "");
 					return !!a && Object(st.e)(e, {
-						subredditId: Object(at.F)(e, a)
+						subredditId: Object(at.G)(e, a)
 					})
 				},
 				isUserSubscriber: (e, t) => {
@@ -4055,7 +4055,7 @@
 						subreddit: s
 					} = t;
 					const a = s && s.replace(/^r\//, "");
-					return !!a && Object(at.cb)(e, {
+					return !!a && Object(at.eb)(e, {
 						identifier: {
 							name: a,
 							type: $e.a.SUBREDDIT
@@ -5506,4 +5506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.bc08ce8b7e99a94b3b6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.6ad2d782ac755adde73f.js.map

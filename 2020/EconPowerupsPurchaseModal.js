@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.5b7363d03615a388ea8f.js
-// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.f8d187925c51be778e10.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, r) {
@@ -268,7 +268,7 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = Object(c.c)({
 				freeAllocationPending: p.c,
 				powerups: p.h,
-				subreddit: g.R,
+				subreddit: g.S,
 				topSupporters: p.i,
 				userPowerupsData: p.k
 			}), q = Object(s.b)(Y), V = 10;
@@ -480,7 +480,7 @@
 					return a && a[0]
 				},
 				stripeErrorMessage: ce.h,
-				subreddit: g.R,
+				subreddit: g.S,
 				paypalErrorMessage: ce.b
 			}), Oe = Object(s.b)(ve), ye = 100;
 			var Me = Oe((function(e) {
@@ -592,7 +592,7 @@
 				isNightMode: le.S,
 				powerups: p.h,
 				purchasedPowerupsCount: p.e,
-				subreddit: g.R
+				subreddit: g.S
 			});
 			var Ae = Object(s.b)(Be)((function(e) {
 					const {
@@ -1042,4 +1042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.5b7363d03615a388ea8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.f8d187925c51be778e10.js.map

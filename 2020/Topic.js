@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.be096d035aba7f17ef7e.js
-// Retrieved at 9/2/2020, 10:20:23 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.a9d17c1653521748ecaf.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -486,7 +486,7 @@
 						} = t;
 						return Object(T.K)(e, s, i, n)
 					}),
-					subredditsById: _.Y,
+					subredditsById: _.Z,
 					viewportDataLoaded: f.a,
 					pageReferrer: u.Q,
 					postListPlaceholderComponent: () => b.a,
@@ -1021,7 +1021,7 @@
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(r.c)({
 				isLoggedIn: ne.H,
-				subreddit: ie.R,
+				subreddit: ie.S,
 				subredditAboutInfo: (e, t) => {
 					let {
 						subredditId: s
@@ -1337,4 +1337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.be096d035aba7f17ef7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.a9d17c1653521748ecaf.js.map

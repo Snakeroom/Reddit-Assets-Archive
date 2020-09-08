@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.4ee86bd83f4a6eb66235.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.c0b7001ca5118bb7987e.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -404,7 +404,7 @@
 				x = Object(o.a)(i.s),
 				f = Object(o.a)(i.q),
 				g = (e, t, s) => async (n, o, r) => {
-					const i = Object(u.A)(o(), {
+					const i = Object(u.B)(o(), {
 						subredditName: e
 					});
 					if (i) return v(i, t, s)(n, o, r)
@@ -1213,7 +1213,7 @@
 						return !!Object(S.r)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const s = Object(Z.I)(e, {
+						const s = Object(Z.J)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -5691,7 +5691,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(I.R)(e, {
+					return s ? Object(I.S)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -6038,7 +6038,7 @@
 				},
 				k = Object(c.c)({
 					flairData: O.d,
-					subreddit: v.R,
+					subreddit: v.S,
 					isMod: (e, t) => !!Object(g.j)(e, t)
 				});
 			class I extends i.a.Component {
@@ -7663,9 +7663,9 @@
 			const qe = Object(_.t)(),
 				Ke = Object(i.c)({
 					hideNSFWPref: Ve.z,
-					subredditOrProfile: I.L,
-					subredditOrProfileAboutInfo: I.H,
-					userIsSubscriber: I.cb
+					subredditOrProfile: I.M,
+					subredditOrProfileAboutInfo: I.I,
+					userIsSubscriber: I.eb
 				}),
 				ze = Object(r.b)(Ke);
 			var Je = qe(ze(e => {
@@ -8350,7 +8350,7 @@
 					url: _.X
 				}),
 				Ms = Object(i.c)({
-					subreddit: I.A,
+					subreddit: I.B,
 					shouldSeeNSFW: Ve.V
 				}),
 				Ls = Object(r.b)(Ms),
@@ -8514,7 +8514,7 @@
 				Ys = Object(i.c)({
 					fromSubreddit: (e, t) => {
 						const s = De(e, t);
-						return s ? Object(I.A)(e, {
+						return s ? Object(I.B)(e, {
 							subredditName: s
 						}) : null
 					},
@@ -8706,7 +8706,7 @@
 			const Mn = Object(i.c)({
 					comment: (e, t) => Object(wn.n)(e, t),
 					flair: wn.e,
-					subreddit: I.I
+					subreddit: I.J
 				}),
 				Ln = Object(r.b)(Mn),
 				Rn = Object(dn.b)(e => ({
@@ -8901,7 +8901,7 @@
 				post: (e, t) => ao(e, t.searchDiscoveryUnit.postOrder),
 				subredditOrProfile: Object(dn.a)((e, t) => {
 					const s = ao(e, t.searchDiscoveryUnit.postOrder);
-					if (s) return Object(I.L)(e, {
+					if (s) return Object(I.M)(e, {
 						identifier: s.belongsTo
 					})
 				})
@@ -9624,13 +9624,13 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(R.F)(e, s)
+					return Object(R.G)(e, s)
 				},
 				postFlairWidgets: (e, t) => {
 					let {
 						listingName: s
 					} = t;
-					const n = Object(R.F)(e, s);
+					const n = Object(R.G)(e, s);
 					return Object(A.g)(e, {
 						subredditId: n
 					})
@@ -10787,7 +10787,7 @@
 					url: e => Object(h.X)(e)
 				}),
 				P = Object(a.c)({
-					subredditId: (e, t) => Object(y.F)(e, t.subredditName)
+					subredditId: (e, t) => Object(y.G)(e, t.subredditName)
 				}),
 				S = Object(i.b)(P),
 				w = l.a.div("WidgetContent", E.a),
@@ -11087,7 +11087,7 @@
 						} = t;
 						return Object(O.K)(e, s, n, o)
 					}),
-					subredditsById: v.Y,
+					subredditsById: v.Z,
 					viewportDataLoaded: y.a,
 					pageReferrer: p.Q,
 					postListPlaceholderComponent: () => h.a,
@@ -11135,7 +11135,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.cb
+				userIsSubscriber: i.eb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -12871,7 +12871,7 @@
 					headerContent: w.a,
 					isInFollowExperiment: P.a,
 					origin: S.l,
-					subreddit: (e, t) => Object(T.A)(e, {
+					subreddit: (e, t) => Object(T.B)(e, {
 						subredditName: t.match.params.subredditName
 					}),
 					viewTreatment: w.h
@@ -13027,4 +13027,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4ee86bd83f4a6eb66235.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c0b7001ca5118bb7987e.js.map

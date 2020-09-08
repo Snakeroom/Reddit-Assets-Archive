@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.497a920b326dde8382be.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.358ae8073a812134dfea.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -643,9 +643,9 @@
 				U = s.n(z),
 				q = s("./src/reddit/helpers/awards/message.ts"),
 				H = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				J = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				K = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				X = s("./src/reddit/icons/svgs/Eye/index.tsx"),
-				K = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				J = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				Z = s("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				Y = s("./src/reddit/components/TimeLeft/TimeLeft.tsx"),
 				Q = (s("./node_modules/core-js/modules/es6.regexp.split.js"), s("./src/reddit/icons/fonts/Coin/index.tsx"));
@@ -777,7 +777,7 @@
 						forcePublic: e,
 						isAnonymous: t
 					} = this.props;
-					return e ? null : n.a.createElement(J.a, {
+					return e ? null : n.a.createElement(K.a, {
 						className: U.a.giver,
 						isSelected: t,
 						text: W.fbt._("Make my gift anonymous", null, {
@@ -868,7 +868,7 @@
 						className: U.a.spacerBottom
 					}), t.awardType === h.f.Moderator ? n.a.createElement("span", {
 						className: U.a.giver
-					}, n.a.createElement(K.a, {
+					}, n.a.createElement(J.a, {
 						className: U.a.modIcon
 					}), W.fbt._("Given by a Moderator", null, {
 						hk: "2k1UCp"
@@ -1082,7 +1082,7 @@
 			const Ne = n.a.memo(e => {
 				let t, s;
 				const a = !!e.award.tags && e.award.tags.some(e => e.includes("econ:render:lottie:"));
-				if (e.award.awardSubType === h.d.Moderator) t = K.a, s = ue.a.moderatorIcon;
+				if (e.award.awardSubType === h.d.Moderator) t = J.a, s = ue.a.moderatorIcon;
 				else if (e.award.awardSubType === h.d.Premium) t = e.premiumUser ? Ie.a : Ee.a, s = e.premiumUser ? ue.a.premiumIcon : ue.a.lockIcon;
 				else if (a) t = xe, s = ue.a.transferableIcon;
 				else {
@@ -1297,7 +1297,7 @@
 						subredditId: a
 					} = t, n = a;
 					if (!a) {
-						const t = Object(M.J)(e, {
+						const t = Object(M.K)(e, {
 							thingId: s
 						});
 						n = t && t.id
@@ -1350,7 +1350,7 @@
 							subredditId: a
 						} = t, n = a;
 						if (!a) {
-							const t = Object(M.J)(e, {
+							const t = Object(M.K)(e, {
 								thingId: s
 							});
 							if (!t) return !1;
@@ -1383,17 +1383,17 @@
 					purchaseCatalogPending: _.g,
 					showPurchaseModal: A.r,
 					selectedAward: y.a,
-					subreddit: M.J,
+					subreddit: M.K,
 					subredditCoins: (e, t) => {
 						let {
 							thingId: s,
 							subredditId: a
 						} = t;
-						const n = Object(M.J)(e, {
+						const n = Object(M.K)(e, {
 								thingId: s
 							}),
 							r = n ? n.id : a;
-						return Object(M.B)(e, {
+						return Object(M.C)(e, {
 							subredditId: r
 						})
 					},
@@ -1403,7 +1403,7 @@
 							subredditId: a
 						} = t, n = a;
 						if (!a) {
-							const t = Object(M.J)(e, {
+							const t = Object(M.K)(e, {
 								thingId: s
 							});
 							n = t && t.id
@@ -2060,4 +2060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.497a920b326dde8382be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.358ae8073a812134dfea.js.map

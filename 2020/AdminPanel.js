@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.e68bb392eaabfb28eecb.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.0a469f2caf9940c440f4.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -929,7 +929,7 @@
 						const t = e.platform.currentPage;
 						if (t && t.meta && "subreddit" === t.meta.name) {
 							const n = t.urlParams.subredditName;
-							return Object(rn.A)(e, {
+							return Object(rn.B)(e, {
 								subredditName: n
 							})
 						}
@@ -955,7 +955,7 @@
 						const t = e.platform.currentPage;
 						if (t && t.meta && "subreddit" === t.meta.name) {
 							const n = t.urlParams.subredditName;
-							return Object(rn.A)(e, {
+							return Object(rn.B)(e, {
 								subredditName: n
 							})
 						}
@@ -980,7 +980,7 @@
 					const t = e.platform.currentPage;
 					if (t && t.meta && "subreddit" === t.meta.name) {
 						const n = t.urlParams.subredditName;
-						return Object(rn.A)(e, {
+						return Object(rn.B)(e, {
 							subredditName: n
 						})
 					}
@@ -1469,4 +1469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.e68bb392eaabfb28eecb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.0a469f2caf9940c440f4.js.map

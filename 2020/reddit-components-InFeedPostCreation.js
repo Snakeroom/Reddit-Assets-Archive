@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.5391b1f04f1734e62adf.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b211fe14255a9a982221.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -66,24 +66,24 @@
 							return "create_post"
 					}
 				},
-				A = Object(d.c)({
+				h = Object(d.c)({
 					currentUser: f.i,
-					subredditAboutInfo: C.x,
-					subreddit: C.A
+					subredditAboutInfo: C.y,
+					subreddit: C.B
 				}),
-				h = Object(o.b)(A, e => ({
+				j = Object(o.b)(h, e => ({
 					navigateTo: t => e(Object(a.b)(t)),
 					toggleTooltip: t => e(Object(m.h)({
 						tooltipId: t
 					}))
 				})),
-				j = () => s.fbt._("Create Media Post", null, {
+				A = () => s.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
 				U = () => s.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
-			t.default = Object(b.c)(h(e => {
+			t.default = Object(b.c)(j(e => {
 				let {
 					currentUser: t,
 					subredditAboutInfo: n,
@@ -142,7 +142,7 @@
 					}),
 					type: "text"
 				}), b.media && c.a.createElement(i.a, {
-					"aria-label": j(),
+					"aria-label": A(),
 					className: v.a.Button,
 					id: L.Media,
 					onClick: () => x(l.Jb.MEDIA),
@@ -152,7 +152,7 @@
 				}, c.a.createElement(g.a, null), c.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: L.Media,
-					text: j()
+					text: A()
 				})), b.link && c.a.createElement(i.a, {
 					"aria-label": U(),
 					className: v.a.Button,
@@ -206,4 +206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.5391b1f04f1734e62adf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b211fe14255a9a982221.js.map

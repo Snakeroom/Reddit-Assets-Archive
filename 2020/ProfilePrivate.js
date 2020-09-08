@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.abfcdfb5b3c0018d6fcc.js
-// Retrieved at 9/1/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.57a5d7912c778bc76543.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1696,7 +1696,7 @@
 						return !!Object(P.r)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const s = Object(Z.I)(e, {
+						const s = Object(Z.J)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -5689,7 +5689,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(I.R)(e, {
+					return s ? Object(I.S)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -6036,7 +6036,7 @@
 				},
 				k = Object(c.c)({
 					flairData: g.d,
-					subreddit: O.R,
+					subreddit: O.S,
 					isMod: (e, t) => !!Object(v.j)(e, t)
 				});
 			class I extends i.a.Component {
@@ -9146,7 +9146,7 @@
 					currentUser: f.i,
 					layout: l.N,
 					loadMore: b.d,
-					subredditsById: h.Y,
+					subredditsById: h.Z,
 					viewportDataLoaded: x.a,
 					commentsById: b.g,
 					itemIds: b.f,
@@ -9179,7 +9179,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.cb
+				userIsSubscriber: i.eb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -11069,4 +11069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.abfcdfb5b3c0018d6fcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.57a5d7912c778bc76543.js.map

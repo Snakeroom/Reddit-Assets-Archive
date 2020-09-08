@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.59f7559a124a6a07dad3.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.8898a42029d4bcfbc422.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -502,7 +502,7 @@
 				M = Object(a.c)({
 					comment: (e, t) => Object(C.n)(e, t),
 					flair: C.e,
-					subreddit: v.I
+					subreddit: v.J
 				}),
 				T = Object(r.b)(M, (e, t) => {
 					let {
@@ -1195,7 +1195,7 @@
 				},
 				j = Object(d.c)({
 					flairData: C.d,
-					subreddit: v.R,
+					subreddit: v.S,
 					isMod: (e, t) => !!Object(g.j)(e, t)
 				});
 			class E extends a.a.Component {
@@ -2357,4 +2357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.59f7559a124a6a07dad3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.8898a42029d4bcfbc422.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.d3334fe2f114e22287fc.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.f843dacd00c5e9e4e38c.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~ModQueuePages"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, o, t) {
@@ -123,9 +123,9 @@
 				V = t("./src/reddit/icons/fonts/Report/index.tsx"),
 				F = t("./src/reddit/icons/fonts/Spam/index.tsx"),
 				Z = t("./src/reddit/icons/svgs/Automoderator/index.tsx"),
-				K = t("./src/reddit/icons/svgs/Cake/index.tsx"),
-				W = t("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				J = t("./src/reddit/icons/svgs/Powerup/index.tsx"),
+				J = t("./src/reddit/icons/svgs/Cake/index.tsx"),
+				K = t("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				W = t("./src/reddit/icons/svgs/Powerup/index.tsx"),
 				X = t("./src/reddit/controls/MetaData/index.tsx"),
 				q = t("./src/reddit/selectors/subreddit.ts"),
 				Y = t("./src/reddit/selectors/userFlair.ts"),
@@ -156,9 +156,9 @@
 				ae = b.a.wrapped(P.a, "LockIcon", ee.a),
 				de = b.a.div("AdminEmeritus", ee.a),
 				ie = b.a.wrapped(Z.a, "AutomoderatorIcon", ee.a),
-				ce = b.a.wrapped(J.a, "TopSupporterIcon", ee.a),
-				le = b.a.wrapped(K.a, "CakeIcon", ee.a),
-				pe = b.a.wrapped(W.a, "ModeratorIcon", ee.a),
+				ce = b.a.wrapped(W.a, "TopSupporterIcon", ee.a),
+				le = b.a.wrapped(J.a, "CakeIcon", ee.a),
+				pe = b.a.wrapped(K.a, "ModeratorIcon", ee.a),
 				me = b.a.wrapped(Q.a, "RemoveIcon", ee.a),
 				ue = b.a.wrapped(V.a, "ReportIcon", ee.a),
 				he = b.a.wrapped(F.a, "SpamIcon", ee.a),
@@ -224,7 +224,7 @@
 						return !!Object(w.r)(e, t.subredditId, t.authorId).length
 					},
 					subredditDisplayText: (e, o) => {
-						const t = Object(q.I)(e, {
+						const t = Object(q.J)(e, {
 							commentId: o.comment.id
 						});
 						return t ? t.displayText : ""
@@ -293,9 +293,9 @@
 					renderedInOverlay: V,
 					reportTooltipId: F,
 					spamTooltipId: Z,
-					subredditDisplayText: K,
-					topSupporterTooltipId: W
-				} = e, J = Object(i.a)();
+					subredditDisplayText: J,
+					topSupporterTooltipId: K
+				} = e, W = Object(i.a)();
 				if (h.isDeleted) return s.a.createElement(Ne, oe({}, e, {
 					className: Object(m.a)(c, ee.a.container, {
 						[ee.a.collapsed]: l
@@ -364,13 +364,13 @@
 					onHideTooltip: D,
 					onShowTooltip: H,
 					openPowerupsModal: () => {
-						J(Object(v.f)("comment")), B()
+						W(Object(v.f)("comment")), B()
 					},
 					opTooltipId: P,
 					renderContractorBadge: G,
 					renderTopSupporterBadge: Q,
-					subredditDisplayText: K,
-					topSupporterTooltipId: W
+					subredditDisplayText: J,
+					topSupporterTooltipId: K
 				})), !I && s.a.createElement(s.a.Fragment, null, !h.isDeleted && !k && s.a.createElement(X.b, {
 					className: ee.a.metaText,
 					isScoreHidden: h.isScoreHidden,
@@ -880,4 +880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.d3334fe2f114e22287fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.f843dacd00c5e9e4e38c.js.map

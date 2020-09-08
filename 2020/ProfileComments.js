@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.a465af8c81b01dc12068.js
-// Retrieved at 9/1/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.0463bbb8c8833628be8b.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -1458,7 +1458,7 @@
 						return !!Object(I.r)(e, s.subredditId, s.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const s = Object(Q.I)(e, {
+						const s = Object(Q.J)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -7282,7 +7282,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(j.R)(e, {
+					return s ? Object(j.S)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -7629,7 +7629,7 @@
 				},
 				k = Object(c.c)({
 					flairData: g.d,
-					subreddit: O.R,
+					subreddit: O.S,
 					isMod: (e, t) => !!Object(v.j)(e, t)
 				});
 			class j extends a.a.Component {
@@ -10976,7 +10976,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: a.cb
+				userIsSubscriber: a.eb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -13033,7 +13033,7 @@
 					measureScrollFPS: Z.d.measureScrollFPS,
 					layout: j.N,
 					loadMore: Q.d,
-					subredditsById: Y.Y,
+					subredditsById: Y.Z,
 					viewportDataLoaded: $.a,
 					commentsById: I.r,
 					itemIds: Q.f,
@@ -13281,4 +13281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.a465af8c81b01dc12068.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.0463bbb8c8833628be8b.js.map

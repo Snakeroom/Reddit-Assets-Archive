@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c1d2f949a2cecc4c00e0.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.1dcda1bcb2c5256b1765.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1240,7 +1240,7 @@
 						} = t;
 						return Object(v.K)(e, s, r, n)
 					}),
-					subredditsById: _.Y,
+					subredditsById: _.Z,
 					viewportDataLoaded: O.a,
 					pageReferrer: m.Q,
 					postListPlaceholderComponent: () => h.a,
@@ -1288,7 +1288,7 @@
 				o = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(n.c)({
-				userIsSubscriber: i.cb
+				userIsSubscriber: i.eb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1906,7 +1906,7 @@
 					let a;
 					if (-1 === [o.P, "r/popular"].indexOf(s)) {
 						const t = s.replace(/^r\//, ""),
-							n = Object(i.F)(e, t),
+							n = Object(i.G)(e, t),
 							o = r.subreddit[n];
 						if (!o) return !1;
 						a = o
@@ -2226,4 +2226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c1d2f949a2cecc4c00e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1dcda1bcb2c5256b1765.js.map

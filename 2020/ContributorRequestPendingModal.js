@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.e8bd4163638df5a186e3.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.16c680fbf092df424895.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -59,13 +59,13 @@
 			const y = F.a.div("DescriptionPending", h.a),
 				g = F.a.wrapped(u.d, "ModalBody", h.a),
 				E = Object(i.c)({
-					restrictions: f.p,
+					restrictions: f.q,
 					subreddit: x.f
 				}),
 				R = Object(o.b)(E, e => ({
 					openContributorRequestPendingModal: () => e(Object(d.i)(m.a.CONTRIBUTOR_REQUEST_PENDING))
 				}));
-			class j extends r.a.Component {
+			class q extends r.a.Component {
 				render() {
 					const {
 						openContributorRequestPendingModal: e,
@@ -87,7 +87,7 @@
 					}))))
 				}
 			}
-			t.default = F.a.wrapped(Object(l.a)(R(j)), "Component", h.a)
+			t.default = F.a.wrapped(Object(l.a)(R(q)), "Component", h.a)
 		},
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -139,15 +139,15 @@
 				g = n("./src/reddit/selectors/platform.ts"),
 				E = n("./src/reddit/selectors/structuredStyles.ts"),
 				R = n("./src/reddit/selectors/subreddit.ts"),
-				j = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
-				q = n.n(j),
+				q = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
+				j = n.n(q),
 				v = n("./src/lib/lessComponent.tsx");
-			const k = v.a.wrapped(m.d, "ModalBody", q.a),
-				O = v.a.wrapped(m.h, "ModalHeader", q.a),
-				M = v.a.div("ModalTitle", q.a),
-				w = v.a.div("Title", q.a),
-				S = v.a.div("Description", q.a),
-				I = v.a.wrapped(m.b, "CloseIcon", q.a);
+			const k = v.a.wrapped(m.d, "ModalBody", j.a),
+				O = v.a.wrapped(m.h, "ModalHeader", j.a),
+				M = v.a.div("ModalTitle", j.a),
+				w = v.a.div("Title", j.a),
+				S = v.a.div("Description", j.a),
+				I = v.a.wrapped(m.b, "CloseIcon", j.a);
 			class T extends o.a.Component {
 				constructor(e) {
 					super(e), this.onTextAreaChange = e => {
@@ -168,7 +168,7 @@
 						t = this.props.subredditAboutInfo.disableContributorRequests,
 						n = this.props.theme ? Object(y.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
 					return o.a.createElement(k, {
-						className: q.a.requestModal
+						className: j.a.requestModal
 					}, o.a.createElement(O, null, o.a.createElement(h.a, null, o.a.createElement("div", null, o.a.createElement(M, {
 						style: {
 							color: n
@@ -180,7 +180,7 @@
 							color: n
 						}
 					}, o.a.createElement(b.b, {
-						className: q.a.subredditIcon,
+						className: j.a.subredditIcon,
 						iconUrl: this.props.subredditIcon.url,
 						primaryColor: this.props.subredditIcon.color
 					}), o.a.createElement("span", null, e))), o.a.createElement(f.a, {
@@ -190,7 +190,7 @@
 					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(S, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", F.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
 						hk: "1q9PJW"
 					})), o.a.createElement(p.c, {
-						className: q.a.textarea,
+						className: j.a.textarea,
 						label: s.fbt._("Request to moderators", null, {
 							hk: "4hiUqP"
 						}),
@@ -218,13 +218,13 @@
 			}
 			t.default = v.a.wrapped(Object(a.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
 				subredditAboutInfo: R.j,
-				restrictions: R.p,
+				restrictions: R.q,
 				subreddit: g.f,
 				subredditIcon: E.c
 			}), e => ({
 				makeContributorRequest: (t, n, s) => e(Object(u.n)(t, n, s)),
 				toggleContributorRequestModal: () => e(Object(c.i)(x.a.CONTRIBUTOR_REQUEST))
-			}))(Object(_.c)(T)))), "Component", q.a)
+			}))(Object(_.c)(T)))), "Component", j.a)
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -411,4 +411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.e8bd4163638df5a186e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.16c680fbf092df424895.js.map

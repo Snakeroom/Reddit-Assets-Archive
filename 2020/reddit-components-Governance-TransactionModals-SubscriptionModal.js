@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.c6019e044727a532beb8.js
-// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.e514c2c73d3a82031583.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, n) {
@@ -221,7 +221,7 @@
 				}).apply(this, arguments)
 			}
 			var A = e => {
-					const t = Object(o.d)(t => Object(k.R)(t, e)),
+					const t = Object(o.d)(t => Object(k.S)(t, e)),
 						n = Object(o.d)(t => Object(T.s)(t, e.subredditId)),
 						a = n.membershipAlt,
 						c = n.prices.points,
@@ -256,14 +256,14 @@
 					}, e))
 				},
 				G = n("./src/lib/addQueryParams/index.ts"),
-				D = n("./src/lib/prettyPrintNumber/index.ts"),
-				P = n("./src/reddit/components/Governance/Token/index.tsx"),
-				S = n("./src/reddit/helpers/trackers/communityPoints.ts"),
+				S = n("./src/lib/prettyPrintNumber/index.ts"),
+				D = n("./src/reddit/components/Governance/Token/index.tsx"),
+				P = n("./src/reddit/helpers/trackers/communityPoints.ts"),
 				B = n("./src/reddit/selectors/user.ts"),
 				L = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx"),
-				R = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
-				U = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.m.less"),
-				F = n.n(U);
+				U = n("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx"),
+				R = n("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.m.less"),
+				F = n.n(R);
 			const {
 				fbt: q
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -272,7 +272,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const s = Object(k.R)(e, {
+					const s = Object(k.S)(e, {
 						subredditId: n
 					});
 					return s && s.name || ""
@@ -296,7 +296,7 @@
 					userId: l
 				} = e, u = Object(j.a)();
 				return Object(a.useEffect)(() => {
-					u(Object(S.a)(t))
+					u(Object(P.a)(t))
 				}, [t, u]), r.a.createElement(L.a, {
 					onClose: n,
 					title: q._("Continue in the Mobile App", null, {
@@ -305,15 +305,15 @@
 					header: q._("Approve this transaction with Reddit Vault", null, {
 						hk: "4dRYKa"
 					}),
-					content: r.a.createElement(r.a.Fragment, null, r.a.createElement(R.a, {
+					content: r.a.createElement(r.a.Fragment, null, r.a.createElement(U.a, {
 						index: "1"
 					}, q._("Scan the QR code with your Camera app", null, {
 						hk: "DeLcL"
-					})), r.a.createElement(R.a, {
+					})), r.a.createElement(U.a, {
 						index: "2"
 					}, q._("Use that link to open your Vault in the Reddit app", null, {
 						hk: "2KCtg7"
-					})), r.a.createElement(R.a, {
+					})), r.a.createElement(U.a, {
 						index: "3"
 					}, q._("Approve the transaction to start your monthly membership subscription", null, {
 						hk: "1XiP6x"
@@ -325,12 +325,12 @@
 					}),
 					amount: r.a.createElement("div", {
 						className: F.a.amount
-					}, r.a.createElement("div", null, r.a.createElement(P.a, {
+					}, r.a.createElement("div", null, r.a.createElement(D.a, {
 						className: F.a.tokenIcon,
 						subredditId: o
 					})), r.a.createElement("div", {
 						className: F.a.total
-					}, q._("{price} /mo", [q._param("price", Object(D.a)(Object(p.b)(s, i)) + " " + d)], {
+					}, q._("{price} /mo", [q._param("price", Object(S.a)(Object(p.b)(s, i)) + " " + d)], {
 						hk: "2sgoC6"
 					})))
 				})
@@ -453,4 +453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.c6019e044727a532beb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.e514c2c73d3a82031583.js.map

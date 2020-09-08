@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.0be299089230f79f9408.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.08aab0374f18caa66ce5.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -1495,7 +1495,7 @@
 				w = s("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
 				const s = Object(b.n)(e, t),
-					r = Object(w.I)(e, t);
+					r = Object(w.J)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -1533,7 +1533,7 @@
 			}));
 			const v = (e, t) => {
 				const s = Object(b.n)(e, t),
-					r = Object(w.I)(e, t);
+					r = Object(w.J)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -1559,7 +1559,7 @@
 				}
 			}));
 			var O = Object(o.b)(() => Object(n.c)({
-					subreddit: w.R
+					subreddit: w.S
 				}))(e => a.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -1671,7 +1671,7 @@
 				}
 			}));
 			var y = Object(o.b)(() => Object(n.c)({
-				subreddit: w.R
+				subreddit: w.S
 			}))(e => a.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -1684,7 +1684,7 @@
 				}
 			}));
 			var C = Object(o.b)(() => Object(n.c)({
-				subredditOrProfile: (e, t) => Object(w.L)(e, {
+				subredditOrProfile: (e, t) => Object(w.M)(e, {
 					identifier: t
 				})
 			}))(e => a.a.createElement(h, {
@@ -1703,7 +1703,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(w.R)(e, {
+					return s ? Object(w.S)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -2464,4 +2464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.0be299089230f79f9408.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.08aab0374f18caa66ce5.js.map

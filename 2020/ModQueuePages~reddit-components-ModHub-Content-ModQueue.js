@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.d359b5206d86cfac8183.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.41c4e092d80716a316bb.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -265,7 +265,7 @@
 						let {
 							subredditName: s
 						} = t;
-						return s ? Object(C.A)(e, {
+						return s ? Object(C.B)(e, {
 							subredditName: s
 						}) : null
 					}
@@ -909,7 +909,7 @@
 					modQueueListingItems: Ee.d,
 					origin: Se.l,
 					selectedItems: Ee.g,
-					subredditId: (e, t) => t.subredditName ? Object(Oe.F)(e, t.subredditName) : null
+					subredditId: (e, t) => t.subredditName ? Object(Oe.G)(e, t.subredditName) : null
 				}),
 				Vt = Object(d.b)(Ut, e => ({
 					addSelectedItems: t => e(Object(u.a)({
@@ -1377,4 +1377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.d359b5206d86cfac8183.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.41c4e092d80716a316bb.js.map

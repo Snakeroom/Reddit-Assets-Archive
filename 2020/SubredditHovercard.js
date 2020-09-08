@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.a6b4445336efd1dc91be.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.2b9e974397709b2c30ad.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -35,7 +35,7 @@
 				E = s.n(x);
 			const y = s("./src/lib/lessComponent.tsx").a.span("TypeLabel", E.a),
 				j = Object(a.c)({
-					restrictions: O.p
+					restrictions: O.q
 				}),
 				I = e => n.a.createElement(n.a.Fragment, null, n.a.createElement(d.b, {
 					flair: {
@@ -306,16 +306,16 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: P
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = O.a.wrapped(I.b, "SubredditIcon", g.a), H = O.a.wrapped(f.a, "SubredditNameDisplay", g.a), A = O.a.div("SubredditDescription", g.a), M = O.a.div("SubredditNameContainer", g.a), L = O.a.div("SubredditInfoContainer", g.a), D = O.a.div("Subscribers", g.a), k = O.a.div("Online", g.a), B = O.a.div("Count", g.a), U = O.a.div("CountLabel", g.a), R = O.a.div("Container", g.a), Z = O.a.div("CardContainer", g.a), K = e => o.a.createElement(L, null, o.a.createElement(D, null, o.a.createElement(B, null, Object(x.b)(e.subredditAboutInfo.subscribers)), o.a.createElement(U, null, P._({
+				fbt: S
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = O.a.wrapped(I.b, "SubredditIcon", g.a), H = O.a.wrapped(f.a, "SubredditNameDisplay", g.a), M = O.a.div("SubredditDescription", g.a), A = O.a.div("SubredditNameContainer", g.a), L = O.a.div("SubredditInfoContainer", g.a), D = O.a.div("Subscribers", g.a), k = O.a.div("Online", g.a), B = O.a.div("Count", g.a), U = O.a.div("CountLabel", g.a), R = O.a.div("Container", g.a), Z = O.a.div("CardContainer", g.a), K = e => o.a.createElement(L, null, o.a.createElement(D, null, o.a.createElement(B, null, Object(x.b)(e.subredditAboutInfo.subscribers)), o.a.createElement(U, null, S._({
 				"*": "Members",
 				_1: " Member"
-			}, [P._plural(e.subredditAboutInfo.subscribers)], {
+			}, [S._plural(e.subredditAboutInfo.subscribers)], {
 				hk: "2L8qF4"
-			}))), o.a.createElement(k, null, o.a.createElement(B, null, Object(x.b)(e.subredditAboutInfo.accountsActive)), o.a.createElement(U, null, P._({
+			}))), o.a.createElement(k, null, o.a.createElement(B, null, Object(x.b)(e.subredditAboutInfo.accountsActive)), o.a.createElement(U, null, S._({
 				"*": "Online",
 				_1: " Online"
-			}, [P._plural(e.subredditAboutInfo.accountsActive)], {
+			}, [S._plural(e.subredditAboutInfo.accountsActive)], {
 				hk: "3OMjYw"
 			})))), F = Object(j.a)(e => {
 				const {
@@ -336,7 +336,7 @@
 					className: t,
 					id: n,
 					style: a
-				}, o.a.createElement(Z, null, o.a.createElement(M, null, o.a.createElement(S, {
+				}, o.a.createElement(Z, null, o.a.createElement(A, null, o.a.createElement(P, {
 					subredditOrProfile: l,
 					shouldHideNsfwIcon: s
 				}), o.a.createElement(H, {
@@ -346,10 +346,10 @@
 					subredditAboutInfo: u
 				}), o.a.createElement(E.a, {
 					subreddit: l
-				}), o.a.createElement(A, null, Object(T.a)(u.publicDescription || "", 140)), o.a.createElement(C.h, {
+				}), o.a.createElement(M, null, Object(T.a)(u.publicDescription || "", 140)), o.a.createElement(C.h, {
 					onClick: b,
 					to: "".concat(l.url)
-				}, P._("View Community", null, {
+				}, S._("View Community", null, {
 					hk: "3TWTGC"
 				})), o.a.createElement(y.h, {
 					id: l.id,
@@ -367,10 +367,10 @@
 			const z = Object(m.c)({
 				activeTooltipId: v.a,
 				hideNSFWPref: h.z,
-				subreddit: b.A,
-				subredditAboutInfo: b.x
+				subreddit: b.B,
+				subredditAboutInfo: b.y
 			});
-			var W = Object(u.b)(z, e => ({
+			var J = Object(u.b)(z, e => ({
 				onHideTooltip: () => e(Object(p.i)())
 			}))(Object(d.c)(e => o.a.createElement("div", {
 				className: e.className,
@@ -389,7 +389,7 @@
 				tooltipPosition: e.tooltipPosition,
 				tooltipType: e.tooltipType
 			}))));
-			const J = "SubredditInfoTooltip";
+			const W = "SubredditInfoTooltip";
 			class G extends o.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(l(this.props.subredditName, this.props.postId))
@@ -400,7 +400,7 @@
 					} = this, t = Object(n.b)({
 						itemId: e.postId,
 						subredditName: e.subredditName,
-						tooltipIdPrefix: J,
+						tooltipIdPrefix: W,
 						tooltipType: e.tooltipType
 					}), s = "".concat(t, "-hover-id");
 					return o.a.createElement(i.b, {
@@ -408,7 +408,7 @@
 						sendHoverEvent: this.sendEvent,
 						authorOrSubredditName: e.subredditName,
 						tooltipId: t
-					}, e.children, o.a.createElement(W, {
+					}, e.children, o.a.createElement(J, {
 						className: e.className,
 						hoverId: s,
 						postId: e.postId,
@@ -528,7 +528,7 @@
 				h = s("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const s = Object(v.n)(e, t),
-					r = Object(h.I)(e, t);
+					r = Object(h.J)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -566,7 +566,7 @@
 			}));
 			const x = (e, t) => {
 				const s = Object(v.n)(e, t),
-					r = Object(h.I)(e, t);
+					r = Object(h.J)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -592,7 +592,7 @@
 				}
 			}));
 			var y = Object(n.b)(() => Object(i.c)({
-					subreddit: h.R
+					subreddit: h.S
 				}))(e => o.a.createElement(b, {
 					className: e.className,
 					type: "communityTools",
@@ -704,7 +704,7 @@
 				}
 			}));
 			var N = Object(n.b)(() => Object(i.c)({
-				subreddit: h.R
+				subreddit: h.S
 			}))(e => o.a.createElement(b, {
 				className: e.className,
 				type: "sidebar",
@@ -717,7 +717,7 @@
 				}
 			}));
 			var _ = Object(n.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(h.L)(e, {
+				subredditOrProfile: (e, t) => Object(h.M)(e, {
 					identifier: t
 				})
 			}))(e => o.a.createElement(b, {
@@ -736,7 +736,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(h.R)(e, {
+					return s ? Object(h.S)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -907,4 +907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.a6b4445336efd1dc91be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.2b9e974397709b2c30ad.js.map

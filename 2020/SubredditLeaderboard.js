@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7deee4296de7f23bb189.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f301748db5a0e3d4f92e.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1257,8 +1257,8 @@
 				W = r("./src/reddit/models/GoodContent/index.ts"),
 				B = r("./src/reddit/selectors/subreddit.ts"),
 				R = r("./src/reddit/selectors/subredditLeaderboard.ts"),
-				M = r("./src/reddit/selectors/user.ts");
-			const D = 25,
+				D = r("./src/reddit/selectors/user.ts");
+			const M = 25,
 				H = .5,
 				A = Object(d.c)({
 					hasPreviousPage: (e, t) => {
@@ -1273,14 +1273,14 @@
 						} = t;
 						return Object(R.b)(e, r)
 					},
-					isMod: M.I,
+					isMod: D.I,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
 						} = t;
-						return Object(B.M)(e, r)
+						return Object(B.N)(e, r)
 					},
-					subreddits: B.Y
+					subreddits: B.Z
 				}),
 				G = Object(i.b)(A, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.a)(t, r))
@@ -1318,7 +1318,7 @@
 						after: a,
 						categoryId: e === p.a ? p.d : e,
 						filter: W.a,
-						first: D,
+						first: M,
 						isOnlyModIncluded: o
 					}
 				}
@@ -1660,4 +1660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7deee4296de7f23bb189.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f301748db5a0e3d4f92e.js.map

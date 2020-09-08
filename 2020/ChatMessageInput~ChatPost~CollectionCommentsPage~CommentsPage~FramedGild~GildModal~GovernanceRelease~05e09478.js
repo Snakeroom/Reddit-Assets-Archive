@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.5fa5c2c160b6b48313de.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.4be8d6c3283ede12b46e.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1714,7 +1714,7 @@
 								subredditName: n,
 								[r]: s.id
 							},
-							i = Object(l.A)(e, {
+							i = Object(l.B)(e, {
 								subredditName: n
 							});
 						return i ? {
@@ -1820,7 +1820,7 @@
 					let {
 						subredditName: s
 					} = t;
-					const n = Object(i.V)(e, {
+					const n = Object(i.W)(e, {
 						subredditName: s
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -1828,4 +1828,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.5fa5c2c160b6b48313de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.4be8d6c3283ede12b46e.js.map

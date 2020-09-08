@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.782d88b0629ff73b9193.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.d747a856a2efc606063f.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -390,7 +390,7 @@
 					t(u.l({
 						title: n.wikiPageName ? "".concat(n.wikiPageName, " - ").concat(i) : "wiki - ".concat(i)
 					})), await t(Z(n, r));
-					const a = Object(F.A)(s(), {
+					const a = Object(F.B)(s(), {
 							subredditName: i
 						}),
 						o = s();
@@ -965,8 +965,8 @@
 							wikiPageName: t
 						},
 						o = await p(r.gqlContext(), i),
-						d = Object(k.F)(n(), e);
-					if (Object(k.T)(n(), d) || await s(Object(a.h)(e, d)), o.ok) {
+						d = Object(k.G)(n(), e);
+					if (Object(k.U)(n(), d) || await s(Object(a.h)(e, d)), o.ok) {
 						const e = o.body,
 							t = e.data.subreddit && e.data.subreddit.wiki;
 						if (t && t.page) {
@@ -2323,7 +2323,7 @@
 				g = s("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const s = Object(h.n)(e, t),
-					n = Object(g.I)(e, t);
+					n = Object(g.J)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
@@ -2361,7 +2361,7 @@
 			}));
 			const k = (e, t) => {
 				const s = Object(h.n)(e, t),
-					n = Object(g.I)(e, t);
+					n = Object(g.J)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
@@ -2387,7 +2387,7 @@
 				}
 			}));
 			var y = Object(i.b)(() => Object(a.c)({
-					subreddit: g.R
+					subreddit: g.S
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -2499,7 +2499,7 @@
 				}
 			}));
 			var E = Object(i.b)(() => Object(a.c)({
-				subreddit: g.R
+				subreddit: g.S
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -2512,7 +2512,7 @@
 				}
 			}));
 			var _ = Object(i.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(g.L)(e, {
+				subredditOrProfile: (e, t) => Object(g.M)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(p, {
@@ -2531,7 +2531,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(g.R)(e, {
+					return s ? Object(g.S)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -3294,7 +3294,7 @@
 			const Q = Object(d.c)({
 					isCollectionReady: S.e,
 					isModerator: _.e,
-					selectedSubreddit: N.R,
+					selectedSubreddit: N.S,
 					shouldRequestCollection: S.f,
 					subredditChannels: S.a
 				}),
@@ -4162,7 +4162,7 @@
 							listingKey: s
 						})
 					},
-					subreddit: Z.A
+					subreddit: Z.B
 				});
 			class Ge extends o.a.Component {
 				constructor() {
@@ -4485,7 +4485,7 @@
 					},
 					showGovernance: Pt.d.spPoints,
 					showLeaderboard: Pt.d.spLeaderboard,
-					widgets: Z.s
+					widgets: Z.t
 				}),
 				Vt = Object(d.b)(Ht);
 			class Kt extends a.Component {
@@ -4766,7 +4766,7 @@
 					url: e => Object(h.X)(e)
 				}),
 				N = Object(o.c)({
-					subredditId: (e, t) => Object(y.F)(e, t.subredditName)
+					subredditId: (e, t) => Object(y.G)(e, t.subredditName)
 				}),
 				S = Object(a.b)(N),
 				I = l.a.div("WidgetContent", v.a),
@@ -6331,7 +6331,7 @@
 						let {
 							match: s
 						} = t;
-						return Object(D.A)(e, {
+						return Object(D.B)(e, {
 							subredditName: s.params.subredditName || k.e
 						})
 					},
@@ -7209,4 +7209,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.782d88b0629ff73b9193.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d747a856a2efc606063f.js.map

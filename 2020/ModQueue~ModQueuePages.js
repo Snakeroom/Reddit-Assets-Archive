@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.07622ac723a52ea6925c.js
-// Retrieved at 8/27/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.5bf63f5dcba72769cd14.js
+// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages", "removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -280,7 +280,7 @@
 						if (e !== l.a.Approve && e !== l.a.Flair) {
 							let t, a;
 							const m = _.platform.currentPage && _.platform.currentPage.queryParams && _.platform.currentPage.queryParams.subreddit,
-								u = m && Object(O.F)(_, m);
+								u = m && Object(O.G)(_, m);
 							e === l.a.Remove && u && g.length > 1 && (t = o.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), a = Object(c.fetchReasonsAndOpenModal)(u, g));
@@ -700,4 +700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ModQueue~ModQueuePages.07622ac723a52ea6925c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages.5bf63f5dcba72769cd14.js.map
