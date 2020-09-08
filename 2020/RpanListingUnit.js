@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.596dcd85ff0261d6644b.js
-// Retrieved at 9/8/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.daecd81fa148a41a8472.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -28,13 +28,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: h.yb
 				});
-				return Object(h.xc)(t) ? void 0 : t
+				return Object(h.zc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: h.zb
 				});
-				return Object(h.xc)(t) ? void 0 : t
+				return Object(h.zc)(t) ? void 0 : t
 			}, (e, t) => e === h.Ab.Enabled && t === h.Ab.Enabled);
 			var b = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "4d468f0-production"
+					SENTRY_RELEASE_VERSION: "a53e792-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -341,17 +341,17 @@
 					window.clearTimeout(this.streamsTimeout), await t(Object(n.e)(e)), this.streamsTimeout = window.setTimeout(() => this.startStreamsWork(e, t, s), this.getStreamsTimeout(s()))
 				}
 				async startRecommendedViewerSubredditsWork(e, t) {
-					await this.initializeConfig(a.P, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(r.b)());
+					await this.initializeConfig(a.R, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(r.b)());
 					const s = Object(o.l)(t()).recommended_viewer_subreddits_refresh_rate;
 					s && (this.recommendedViewerSubredditsRefreshRateSec = s), this.clearFetchRecommendedViewerSubredditsInterval = Object(i.a)(() => e(Object(r.b)()), Math.max(1e3 * this.recommendedViewerSubredditsRefreshRateSec, this.MIN_RATE_MS))
 				}
 				async startStatsWork(e, t) {
-					await this.initializeConfig(a.P, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.l)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(i.a)(() => {
+					await this.initializeConfig(a.R, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.l)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(i.a)(() => {
 						this.currentStatsId && e(Object(n.d)(this.currentStatsId))
 					}, Math.max(1e3 * this.statsRefreshRateSec, this.MIN_RATE_MS)))
 				}
 				async startHeartbeatWork(e, t) {
-					if (await this.initializeConfig(a.P, e, t), !this.currentHeartbeatId) return;
+					if (await this.initializeConfig(a.R, e, t), !this.currentHeartbeatId) return;
 					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval();
 					const s = Object(o.l)(t());
 					this.heartbeatDelaySec = s.viewer_initial_heartbeat_delay_seconds || this.heartbeatDelaySec;
@@ -1125,8 +1125,8 @@
 				F = s("./src/reddit/components/Flatlist/index.tsx"),
 				W = s("./src/reddit/components/Flatlist/constants.ts"),
 				B = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				K = s("./src/reddit/components/HlsVideo/index.tsx"),
-				z = s("./src/reddit/components/OverflowMenu/index.tsx"),
+				z = s("./src/reddit/components/HlsVideo/index.tsx"),
+				K = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				G = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				Y = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				J = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
@@ -1142,7 +1142,7 @@
 				re = s.n(ie);
 			const {
 				fbt: ae
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(o.a)(K.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(o.a)(z.a, {
 				playerName: "RPAN DU Video Player"
 			}), oe = Object(a.b)(() => Object(n.c)({
 				autoplay: k.b,
@@ -1162,7 +1162,7 @@
 						r = "".concat(e).concat(t)
 					} else {
 						const e = s.replace(/^r\//, "");
-						r = e === w.P ? Object(M.d)() : Object(M.f)(e)
+						r = e === w.R ? Object(M.d)() : Object(M.f)(e)
 					}
 					return r
 				},
@@ -1567,7 +1567,7 @@
 					let {
 						onClick: t
 					} = e;
-					return r.a.createElement(z.b, {
+					return r.a.createElement(K.b, {
 						className: re.a.overflowMenu,
 						dropdownClassName: re.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
@@ -1692,4 +1692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.596dcd85ff0261d6644b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.daecd81fa148a41a8472.js.map

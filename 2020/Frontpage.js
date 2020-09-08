@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.1dcda1bcb2c5256b1765.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.255edcd65c7ac2272d37.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1560,7 +1560,7 @@
 				}, a(t, e)),
 				k = e => e => {
 					const t = a(e);
-					return !Object(o.f)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
+					return !Object(o.h)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
 						source: "post",
 						action: "consume",
 						noun: "post",
@@ -1670,9 +1670,9 @@
 				T = s("./src/reddit/components/TabBadger/index.tsx"),
 				A = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				D = s("./src/reddit/constants/parameters.ts"),
-				B = s("./src/reddit/constants/postLayout.ts"),
-				U = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				R = s("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
+				R = s("./src/reddit/constants/postLayout.ts"),
+				B = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				U = s("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				F = s("./src/reddit/helpers/trackers/screenview.ts"),
 				M = s("./src/reddit/layout/page/Listing/index.tsx"),
 				V = s("./src/reddit/selectors/experiments/trending.ts"),
@@ -1699,7 +1699,7 @@
 			}
 			const {
 				fbt: ee
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = Object(U.t)(), se = Object(h.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = Object(B.t)(), se = Object(h.c)({
 				queryParams: Object(G.a)((e, t) => {
 					let {
 						location: s
@@ -1719,19 +1719,19 @@
 			}), ne = Object(h.c)({
 				isInTrendingEntrypointExperiment: V.a,
 				isLoggedIn: J.H,
-				isPopular: U.C,
+				isPopular: B.C,
 				isRpanDuVisible: e => Object(q.a)(e, {
-					listingName: Z.P
+					listingName: Z.R
 				}),
 				rpanInjectionIndex: e => Object(q.b)(e, {
-					listingName: Z.P
+					listingName: Z.R
 				}),
-				layout: U.N
+				layout: B.N
 			}), oe = () => Object(h.a)(re, se, ne, e => Object(q.a)(e, {
-				listingName: Z.P
+				listingName: Z.R
 			}), e => Object(q.b)(e, {
-				listingName: Z.P
-			}), e => e, R.a, (e, t, s, r, n, o, i) => {
+				listingName: Z.R
+			}), e => e, U.a, (e, t, s, r, n, o, i) => {
 				let {
 					countryMeta: c,
 					geopopular: a
@@ -1801,7 +1801,7 @@
 						} = this.props;
 						y.a.read(() => {
 							const r = "".concat(_.c.FrontPage, "-").concat(s),
-								n = [Object(R.d)(e)];
+								n = [Object(U.d)(e)];
 							Object(_.d)(r, t, n)
 						})
 					}
@@ -1823,7 +1823,7 @@
 						sort: this.props.sort,
 						timeSort: this.props.timeSort
 					}, u = {};
-					if (o === B.g.Large && e.forEach((e, t) => {
+					if (o === R.g.Large && e.forEach((e, t) => {
 							u[e] = Object(j.a)({
 								numInstance: t,
 								layout: o,
@@ -1840,7 +1840,7 @@
 							desiredIndex: c,
 							layout: o,
 							listingKey: i,
-							listingName: Z.P,
+							listingName: Z.R,
 							sendEvent: a
 						});
 						u[t] = e
@@ -1854,7 +1854,7 @@
 						className: Object(g.a)(X.a.Container, this.props.className),
 						fitPageToContent: !0,
 						trendingUnit: d && p.a.createElement(de, {
-							showCardView: o === B.g.Large
+							showCardView: o === R.g.Large
 						}),
 						content: p.a.createElement(m.Fragment, null, d && p.a.createElement(L.a, {
 							className: X.a.duHeader
@@ -1904,7 +1904,7 @@
 					const r = Object(c.lb)(e);
 					if (!r) return !1;
 					let a;
-					if (-1 === [o.P, "r/popular"].indexOf(s)) {
+					if (-1 === [o.R, "r/popular"].indexOf(s)) {
 						const t = s.replace(/^r\//, ""),
 							n = Object(i.G)(e, t),
 							o = r.subreddit[n];
@@ -1931,7 +1931,7 @@
 					if (s) return !1;
 					if (t) return !!n && n.show_discovery_unit;
 					if (!i.global.viewer_enabled) return !1;
-					return [o.P, "r/popular"].indexOf(r) > -1
+					return [o.R, "r/popular"].indexOf(r) > -1
 				}),
 				u = Object(r.a)(a.c, (e, t) => {
 					let {
@@ -1966,11 +1966,11 @@
 			})), s.d(t, "c", (function() {
 				return D
 			})), s.d(t, "g", (function() {
-				return B
-			})), s.d(t, "k", (function() {
-				return U
-			})), s.d(t, "j", (function() {
 				return R
+			})), s.d(t, "k", (function() {
+				return B
+			})), s.d(t, "j", (function() {
+				return U
 			})), s.d(t, "e", (function() {
 				return F
 			})), s.d(t, "a", (function() {
@@ -2149,9 +2149,9 @@
 					if (e > 0) return t[e - 1]
 				}),
 				D = Object(n.a)(Object(r.a)(S, x, (e, t) => e ? t[e] : void 0)),
-				B = Object(n.a)(Object(r.a)(T, x, (e, t) => e ? t[e] : void 0)),
-				U = Object(n.a)(Object(r.a)(A, x, (e, t) => e ? t[e] : void 0)),
-				R = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
+				R = Object(n.a)(Object(r.a)(T, x, (e, t) => e ? t[e] : void 0)),
+				B = Object(n.a)(Object(r.a)(A, x, (e, t) => e ? t[e] : void 0)),
+				U = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
 				})))), Object(r.a)((e, t) => {
 					let {
@@ -2226,4 +2226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1dcda1bcb2c5256b1765.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.255edcd65c7ac2272d37.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.493097930e3ffa58650d.js
-// Retrieved at 9/8/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6b6294d212cb03e1ac84.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -6400,7 +6400,7 @@
 					update: n
 				} = e, o = Object(Z.a)(), d = Object(i.c)(), [c, l] = Object(a.useState)(t.id), [m, u] = Object(a.useState)(!1), [p, b] = Object(a.useState)(!0);
 				return Object(a.useEffect)(() => {
-					b(Object(J.s)("location")), Object(J.X)("location")
+					b(Object(J.s)("location")), Object(J.Y)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(P.a, null, w.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(M.k, {
@@ -7217,10 +7217,10 @@
 			}
 			var v = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(p.S)()
+					e(Object(c.i)()), Object(p.T)()
 				},
 				onViewTooltip: () => {
-					Object(p.eb)()
+					Object(p.gb)()
 				}
 			}))(Object(m.c)(x));
 			const E = "editable-primary-topic-idcard";
@@ -30750,4 +30750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.493097930e3ffa58650d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6b6294d212cb03e1ac84.js.map

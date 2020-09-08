@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.50d982d28845ee1c797e.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.09cdd6cd371a5dac41a8.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -649,7 +649,7 @@
 					n = Object(v.n)(e);
 					const [s, a] = Object(r.useState)(null != n ? n : t);
 					return [s, function(t) {
-						Object(v.T)(e, t), a(t)
+						Object(v.U)(e, t), a(t)
 					}]
 				}(d.f, []), [k, w] = Object(r.useState)(!1), N = function() {
 					const [e, t] = Object(r.useState)(!1);
@@ -1274,7 +1274,7 @@
 			class y extends a.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(m.J)(l.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(m.K)(l.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(p.b)())
 					}, this.createPost = () => {
@@ -4964,7 +4964,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(it.V)(ft, !0, this.props.subredditId), this.props.sendEvent(Object(ot.d)("close"))
+						}), Object(it.W)(ft, !0, this.props.subredditId), this.props.sendEvent(Object(ot.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(ot.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -7010,7 +7010,7 @@
 				}, c(t, e)),
 				w = e => e => {
 					const t = c(e);
-					return !Object(a.f)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
+					return !Object(a.h)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
 						source: "post",
 						action: "consume",
 						noun: "post",
@@ -8072,7 +8072,7 @@
 					const s = Object(o.lb)(e);
 					if (!s) return !1;
 					let c;
-					if (-1 === [a.P, "r/popular"].indexOf(n)) {
+					if (-1 === [a.R, "r/popular"].indexOf(n)) {
 						const t = n.replace(/^r\//, ""),
 							r = Object(i.G)(e, t),
 							a = s.subreddit[r];
@@ -8099,7 +8099,7 @@
 					if (n) return !1;
 					if (t) return !!r && r.show_discovery_unit;
 					if (!i.global.viewer_enabled) return !1;
-					return [a.P, "r/popular"].indexOf(s) > -1
+					return [a.R, "r/popular"].indexOf(s) > -1
 				}),
 				u = Object(s.a)(c.c, (e, t) => {
 					let {
@@ -8402,11 +8402,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.gc.Enabled === Object(r.c)(e, {
+			const a = e => s.ic.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.bc
+				experimentName: s.dc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.50d982d28845ee1c797e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.09cdd6cd371a5dac41a8.js.map

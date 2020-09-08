@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.6af47284fdefb72546d6.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.be0e77dcd216ab666fc3.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4997,7 +4997,7 @@
 							permission: n
 						} = e;
 						let s = !1;
-						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && ls.M(t)), this.setState(e => ({
+						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && ls.N(t)), this.setState(e => ({
 							desktopNotifications: s ? t : e.desktopNotifications,
 							notificationPermission: n
 						})), this.lastNotificationsState = e
@@ -5007,7 +5007,7 @@
 						this.setState({
 							desktopNotifications: e
 						}, () => {
-							this.trackPreferenceToggled("desktop_notification_permissions", e), ls.M(e)
+							this.trackPreferenceToggled("desktop_notification_permissions", e), ls.N(e)
 						})
 					}, this.handleBroadcastRecommendationsClick = () => {
 						const {
@@ -6774,4 +6774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6af47284fdefb72546d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.be0e77dcd216ab666fc3.js.map

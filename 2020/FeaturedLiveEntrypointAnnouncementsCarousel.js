@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.345786bd578a8a5e63ba.js
-// Retrieved at 9/2/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.312b1cb5fde93e9a3be9.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -107,7 +107,7 @@
 									} = e;
 									return n === t.experimentName
 								});
-								if (n && Object(v.xc)(n.variant)) return !1
+								if (n && Object(v.zc)(n.variant)) return !1
 							}
 							return !((n[t.id] || 0) >= t.maxImpressionsCount)
 						})(c, e)).slice(0, 5),
@@ -224,7 +224,7 @@
 								id: n,
 								maxImpressionsCount: t
 							} = e;
-							Object(b.I)(n, t)
+							Object(b.J)(n, t)
 						}), s(h("dismiss_all"))
 					}, [t, s, n])
 				})({
@@ -256,7 +256,7 @@
 						if (n < 0 || n >= s.length) return void t(0);
 						const e = s[n],
 							a = Object(b.d)(e.id);
-						o(x("view", e)), Object(b.I)(e.id, a + 1)
+						o(x("view", e)), Object(b.J)(e.id, a + 1)
 					}, [n, o, t, s])
 				})({
 					activeIndex: m,
@@ -337,4 +337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.345786bd578a8a5e63ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.312b1cb5fde93e9a3be9.js.map

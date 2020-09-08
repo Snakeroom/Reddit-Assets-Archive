@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.f087ec17b65752dedba0.js
-// Retrieved at 8/27/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.1616b72a469b0bb3c20e.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -258,7 +258,7 @@
 				a = s.n(n),
 				r = s("./src/lib/makeActionCreator/index.ts"),
 				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts");
-			const i = Object(r.a)(o.A),
+			const i = Object(r.a)(o.B),
 				c = e => async t => {
 					t(i(e))
 				}, d = () => async e => {
@@ -1318,7 +1318,7 @@
 				}, c(t, e)),
 				w = e => e => {
 					const t = c(e);
-					return !Object(r.f)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
+					return !Object(r.h)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
 						source: "post",
 						action: "consume",
 						noun: "post",
@@ -1674,4 +1674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ChatMessageInput.f087ec17b65752dedba0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.1616b72a469b0bb3c20e.js.map

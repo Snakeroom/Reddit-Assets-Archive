@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.358ae8073a812134dfea.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e49ce2f7dc8683bf8a10.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -630,10 +630,10 @@
 				B = s("./src/reddit/components/CoinPurchaseModal/async.tsx"),
 				L = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/higherOrderComponents/makeAsync.tsx")),
 				G = s("./src/lib/loadWithRetries/index.ts"),
-				R = s("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const D = () => Object(G.a)(() => Promise.all([Promise.all([s.e("vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal"), s.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"), s.e("PennyPurchaseModal")]).then(s.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(R.d)()])).then(e => e[0].default);
+				D = s("./src/reddit/helpers/loadThirdPartyScript.ts");
+			const R = () => Object(G.a)(() => Promise.all([Promise.all([s.e("vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal"), s.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"), s.e("PennyPurchaseModal")]).then(s.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(D.d)()])).then(e => e[0].default);
 			var F = Object(L.a)({
-					getComponent: D,
+					getComponent: R,
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -1290,8 +1290,8 @@
 			}
 			var Le = Be,
 				Ge = s("./src/reddit/components/GildModalContent/index.m.less"),
-				Re = s.n(Ge);
-			const De = (e, t) => {
+				De = s.n(Ge);
+			const Re = (e, t) => {
 					let {
 						thingId: s,
 						subredditId: a
@@ -1316,7 +1316,7 @@
 							thingId: s,
 							subredditId: a
 						} = t;
-						const n = De(e, {
+						const n = Re(e, {
 							thingId: s,
 							subredditId: a
 						});
@@ -1330,7 +1330,7 @@
 							thingId: s,
 							subredditId: a
 						} = t;
-						const n = De(e, {
+						const n = Re(e, {
 								thingId: s,
 								subredditId: a
 							}),
@@ -1511,7 +1511,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(u.R)(e)
+					Object(u.S)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -1540,7 +1540,7 @@
 					if (j && t(j, E), e.length && !e.find(e => e.award.id === l.id) && d(h.m), f || O) {
 						w(f ? f.name : O)
 					}
-					r && (l.pennyPrice ? D() : Object(B.a)(), i || c(s))
+					r && (l.pennyPrice ? R() : Object(B.a)(), i || c(s))
 				}
 				componentDidUpdate(e) {
 					let t = !0;
@@ -1588,13 +1588,13 @@
 							thingId: I
 						};
 					return n.a.createElement("div", {
-						className: Object(i.a)(a, Re.a.gildModalContent)
+						className: Object(i.a)(a, De.a.gildModalContent)
 					}, n.a.createElement(Le, {
 						onCancel: r,
 						onAddCoins: this.onClickAddCoins,
 						userCoins: x
 					}), n.a.createElement("div", {
-						className: Re.a.modalMainContent
+						className: De.a.modalMainContent
 					}, n.a.createElement(Ae, {
 						awardIcons: t,
 						awardTotals: e,
@@ -1646,7 +1646,7 @@
 					purchaseCatalogRequested: t => e(Object(E.b)(t)),
 					selectAward: t => e(Object(f.a)(t)),
 					setIsAnonymous: t => {
-						e(Object(g.setIsAnonymous)(t)), Object(u.R)(t)
+						e(Object(g.setIsAnonymous)(t)), Object(u.S)(t)
 					},
 					subredditAboutRequested: t => e(Object(j.t)(t)),
 					updateMessage: t => e(Object(g.updateMessage)(t))
@@ -1814,9 +1814,9 @@
 			})), s.d(t, "k", (function() {
 				return G
 			})), s.d(t, "j", (function() {
-				return R
-			})), s.d(t, "e", (function() {
 				return D
+			})), s.d(t, "e", (function() {
+				return R
 			})), s.d(t, "a", (function() {
 				return W
 			})), s.d(t, "i", (function() {
@@ -1995,7 +1995,7 @@
 				B = Object(n.a)(Object(a.a)(S, I, (e, t) => e ? t[e] : void 0)),
 				L = Object(n.a)(Object(a.a)(M, I, (e, t) => e ? t[e] : void 0)),
 				G = Object(n.a)(Object(a.a)(T, I, (e, t) => e ? t[e] : void 0)),
-				R = (Object(n.a)(Object(a.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, I, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
+				D = (Object(n.a)(Object(a.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, I, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
 				})))), Object(a.a)((e, t) => {
 					let {
@@ -2003,7 +2003,7 @@
 					} = t;
 					return s
 				}, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => t[e])),
-				D = Object(a.a)((e, t) => {
+				R = Object(a.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -2060,4 +2060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.358ae8073a812134dfea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e49ce2f7dc8683bf8a10.js.map

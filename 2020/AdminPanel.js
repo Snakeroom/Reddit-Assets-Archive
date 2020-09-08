@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.0a469f2caf9940c440f4.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.cee5048c877ab5050b61.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -1010,7 +1010,7 @@
 							s = t ? n - Number(t) * yn : 0;
 						e(Object(wn.H)({
 							surveyLastSeenTime: s
-						}, !1)), Object(_n.db)(s)
+						}, !1)), Object(_n.fb)(s)
 					}, [e, t]);
 				return a.a.createElement(Gt, {
 					title: "update survey last seen"
@@ -1469,4 +1469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.0a469f2caf9940c440f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.cee5048c877ab5050b61.js.map

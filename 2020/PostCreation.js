@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d0090f57d2130d98ece9.js
-// Retrieved at 9/8/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3e402af82e842fa04d24.js
+// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -679,13 +679,13 @@
 					experimentEligibilitySelector: p.a,
 					experimentName: u.yb
 				});
-				return Object(u.xc)(t) ? void 0 : t
+				return Object(u.zc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
 					experimentName: u.zb
 				});
-				return Object(u.xc)(t) ? void 0 : t
+				return Object(u.zc)(t) ? void 0 : t
 			}, (e, t) => e === u.Ab.Enabled && t === u.Ab.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "4d468f0-production"
+					SENTRY_RELEASE_VERSION: "a53e792-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3850,7 +3850,7 @@
 							experimentEligibilitySelector: T.H,
 							experimentName: S.cb
 						});
-						return !(!t || Object(S.xc)(t))
+						return !(!t || Object(S.zc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: P.c
@@ -20296,7 +20296,7 @@
 					if (Object(s.a)(d)) {
 						const n = G(e.media),
 							s = n ? {
-								errorSrc: l.S
+								errorSrc: l.U
 							} : {},
 							u = Object(i.a)(t, {
 								[N.a.verticallyCenterThumbnail]: n
@@ -29243,13 +29243,13 @@
 			const dn = [{
 					id: Wt.d,
 					getShowTimesLeft: an.v,
-					setShowTimesLeft: an.ab,
+					setShowTimesLeft: an.bb,
 					tooltipShown: cn.n,
 					tooltipDismissed: cn.m
 				}, {
 					id: Wt.c,
 					getShowTimesLeft: an.u,
-					setShowTimesLeft: an.Z,
+					setShowTimesLeft: an.ab,
 					tooltipShown: cn.f,
 					tooltipDismissed: cn.e
 				}],
@@ -29458,7 +29458,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(an.N)(wn.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(an.O)(wn.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -33759,4 +33759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d0090f57d2130d98ece9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3e402af82e842fa04d24.js.map
