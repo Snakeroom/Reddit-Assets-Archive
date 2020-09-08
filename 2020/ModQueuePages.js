@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.8898a42029d4bcfbc422.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.9ea78679db9930d9e603.js
+// Retrieved at 9/8/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1941,7 +1941,7 @@
 					[d.g.Compact]: u
 				},
 				x = e => r.a.createElement(l, e),
-				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com"],
+				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com"],
 				g = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
 				C = e => !e.media || e.media.type === c.o.EMBED && !(c.b.has(e.media.provider) || g(e)),
 				v = (e, t) => {
@@ -2357,4 +2357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.8898a42029d4bcfbc422.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9ea78679db9930d9e603.js.map
