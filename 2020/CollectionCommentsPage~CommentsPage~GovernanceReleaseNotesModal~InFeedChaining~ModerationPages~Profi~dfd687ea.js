@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.3e65ea31d3914d7c55b9.js
-// Retrieved at 9/8/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.8ed4dfb12ba3131184ea.js
+// Retrieved at 9/8/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "f95168e-production"
+					SENTRY_RELEASE_VERSION: "95602cb-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -100,8 +100,8 @@
 					localStorageViewerUserIdKey: f,
 					playerName: y,
 					playerVersion: I,
-					respectDoNotTrack: j,
-					saltLength: S,
+					respectDoNotTrack: S,
+					saltLength: j,
 					saltTimeToLive: L,
 					viewerUserIdLength: T
 				} = Object.assign(Object.assign({}, C), t);
@@ -248,7 +248,7 @@
 						}
 					}
 				}
-				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = y, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = j, M.SALT_LENGTH = S, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
+				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = y, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = S, M.SALT_LENGTH = j, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
 				const N = Object(i.forwardRef)((e, t) => a.a.createElement(M, v({}, e, {
 						forwardedRef: t
 					}))),
@@ -380,39 +380,40 @@
 					obfuscatedImage: i,
 					optimalImage: n,
 					originalImage: r,
-					isListing: d
-				} = e, l = s === t ? {
+					isListing: d,
+					isSponsored: l
+				} = e, c = s === t ? {
 					left: "0px"
 				} : {
 					left: s > t ? "-100%" : "100%"
-				}, c = Object(g.c)(d), u = r.y > c && Object(b.J)(r.y, r.x), m = u ? {} : {
+				}, u = Object(g.c)(d), m = r.y > u && Object(b.J)(r.y, r.x), h = m ? {} : {
 					maxHeight: "100%"
 				};
-				let h;
-				return h = i || (u ? r : n), a.a.createElement("li", {
-					style: l,
+				let p;
+				return p = i || (m ? r : n), a.a.createElement("li", {
+					style: c,
 					className: E.a.slide
 				}, a.a.createElement("figure", {
 					className: Object(o.a)({
-						[E.a.tallImage]: u,
-						[E.a.commonImage]: !u
+						[E.a.tallImage]: m,
+						[E.a.commonImage]: !m
 					}, E.a.figure)
-				}, d ? a.a.createElement(O, {
-					displayImage: h,
-					style: m,
-					showSeeMore: u
+				}, d || l ? a.a.createElement(O, {
+					displayImage: p,
+					style: h,
+					showSeeMore: m
 				}) : a.a.createElement("a", {
 					href: "u" in r ? r.u : r.gif,
 					rel: "noopener noreferrer",
 					target: "_blank",
 					className: Object(o.a)({
-						[E.a.tallImage]: u,
-						[E.a.commonImage]: !u
+						[E.a.tallImage]: m,
+						[E.a.commonImage]: !m
 					}, E.a.imageLink)
 				}, a.a.createElement(O, {
-					displayImage: h,
-					style: m,
-					showSeeMore: u
+					displayImage: p,
+					style: h,
+					showSeeMore: m
 				}))))
 			}, I = e => a.a.createElement("a", {
 				className: Object(o.a)(e.className, E.a.navigationUnderlay, {
@@ -452,7 +453,7 @@
 				className: E.a.urlText
 			}, Object(g.e)(e.outboundUrl)), a.a.createElement(u.a, {
 				className: E.a.linkIcon
-			})))), j = e => a.a.createElement("div", {
+			})))), S = e => a.a.createElement("div", {
 				className: E.a.slideIndicator,
 				onClick: e.toggleTileLayout ? t => {
 					t.preventDefault(), t.stopPropagation(), e.toggleTileLayout()
@@ -470,7 +471,7 @@
 						isTileLayout: y,
 						mediaMetadata: v = {},
 						postId: O,
-						shouldShowTileLayoutOption: S,
+						shouldShowTileLayoutOption: j,
 						isSponsored: L
 					} = e,
 					T = Object(n.d)(e => Object(x.a)(e, O)),
@@ -582,6 +583,7 @@
 						optimalImage: r,
 						originalImage: n.s,
 						isListing: e.isListing,
+						isSponsored: L,
 						key: i
 					})
 				})), e.shouldBlur && !e.isListing && a.a.createElement("div", {
@@ -602,10 +604,10 @@
 					title: "Next",
 					iconClassName: E.a.nextIcon,
 					className: E.a.nextButton
-				}))), c.length > 1 ? a.a.createElement(j, {
+				}))), c.length > 1 ? a.a.createElement(S, {
 					currentSlide: T + 1,
 					totalSlides: c.length,
-					toggleTileLayout: S && D || void 0
+					toggleTileLayout: j && D || void 0
 				}) : ""), !W && !F || y || L ? !!s && !y && !L && a.a.createElement("div", {
 					className: E.a.emptyCaptionBlock,
 					style: {
@@ -898,8 +900,8 @@
 				w = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				I = s("./src/reddit/components/Media/constants.ts"),
 				C = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
-				j = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
-				S = s("./src/reddit/components/Media/ImageBox/index.tsx"),
+				S = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
+				j = s("./src/reddit/components/Media/ImageBox/index.tsx"),
 				L = s("./src/reddit/components/Media/MediaContainer/index.tsx"),
 				T = s("./src/reddit/components/Media/RichTextContainer/index.tsx"),
 				M = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
@@ -1207,7 +1209,7 @@
 						e && (o = e.url, d = e.width, r = e.height)
 					} else if (a && a.media && (!e.isListing || e.isExpando) && (a.media.type === Y.o.IMAGE || a.media.type === Y.o.GIFVIDEO)) {
 						let e;
-						(e = Object(Y.J)(a.media.height, a.media.width) && Object(S.b)(a.media.height) ? X.c(a.media.height, a.media.width, a.media.resolutions) : X.a(a.media.resolutions)) && (o = e.url, d = e.width, r = e.height)
+						(e = Object(Y.J)(a.media.height, a.media.width) && Object(j.b)(a.media.height) ? X.c(a.media.height, a.media.width, a.media.resolutions) : X.a(a.media.resolutions)) && (o = e.url, d = e.width, r = e.height)
 					}
 					if (e.isExpando)
 						if (d > t.viewportWidth) {
@@ -1297,7 +1299,7 @@
 						blurSrc: k
 					}), l.a.createElement(le, {
 						isVisible: x
-					}, l.a.createElement(S.a, ee({}, q, {
+					}, l.a.createElement(j.a, ee({}, q, {
 						altText: this.getAltText(),
 						className: this.props.imageBoxClassName,
 						contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -1367,7 +1369,7 @@
 								alwaysWrapMedia: !0
 							}), l.a.createElement(le, {
 								isVisible: x
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, ee({}, q, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(j.a, ee({}, q, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1437,7 +1439,7 @@
 								alwaysWrapMedia: !0
 							}), l.a.createElement(le, {
 								isVisible: x
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, ee({}, q, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(j.a, ee({}, q, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1498,7 +1500,7 @@
 								isExpando: !!n
 							}), l.a.createElement(le, {
 								isVisible: x
-							}, l.a.createElement(S.a, ee({}, q, {
+							}, l.a.createElement(j.a, ee({}, q, {
 								altText: this.getAltText(),
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -1528,7 +1530,7 @@
 								isGalleryTileLayout: o
 							}), l.a.createElement(le, {
 								isVisible: x
-							}, l.a.createElement(j.a, {
+							}, l.a.createElement(S.a, {
 								postId: m.id,
 								galleryItems: m.media.gallery ? m.media.gallery.items : [],
 								mediaMetadata: m.media.mediaMetadata || {},
@@ -1777,4 +1779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.3e65ea31d3914d7c55b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.8ed4dfb12ba3131184ea.js.map

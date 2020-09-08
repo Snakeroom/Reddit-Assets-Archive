@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1ae3ed8f1a35c6f236e1.js
-// Retrieved at 9/8/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8fb002e6dd61d67aad44.js
+// Retrieved at 9/8/2020, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const C = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "f95168e-production"
+					SENTRY_RELEASE_VERSION: "95602cb-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -7145,39 +7145,40 @@
 					obfuscatedImage: s,
 					optimalImage: r,
 					originalImage: a,
-					isListing: c
-				} = e, l = n === t ? {
+					isListing: c,
+					isSponsored: l
+				} = e, d = n === t ? {
 					left: "0px"
 				} : {
 					left: n > t ? "-100%" : "100%"
-				}, d = Object(b.c)(c), u = a.y > d && Object(f.J)(a.y, a.x), p = u ? {} : {
+				}, u = Object(b.c)(c), p = a.y > u && Object(f.J)(a.y, a.x), m = p ? {} : {
 					maxHeight: "100%"
 				};
-				let m;
-				return m = s || (u ? a : r), o.a.createElement("li", {
-					style: l,
+				let h;
+				return h = s || (p ? a : r), o.a.createElement("li", {
+					style: d,
 					className: v.a.slide
 				}, o.a.createElement("figure", {
 					className: Object(i.a)({
-						[v.a.tallImage]: u,
-						[v.a.commonImage]: !u
+						[v.a.tallImage]: p,
+						[v.a.commonImage]: !p
 					}, v.a.figure)
-				}, c ? o.a.createElement(O, {
-					displayImage: m,
-					style: p,
-					showSeeMore: u
+				}, c || l ? o.a.createElement(O, {
+					displayImage: h,
+					style: m,
+					showSeeMore: p
 				}) : o.a.createElement("a", {
 					href: "u" in a ? a.u : a.gif,
 					rel: "noopener noreferrer",
 					target: "_blank",
 					className: Object(i.a)({
-						[v.a.tallImage]: u,
-						[v.a.commonImage]: !u
+						[v.a.tallImage]: p,
+						[v.a.commonImage]: !p
 					}, v.a.imageLink)
 				}, o.a.createElement(O, {
-					displayImage: m,
-					style: p,
-					showSeeMore: u
+					displayImage: h,
+					style: m,
+					showSeeMore: p
 				}))))
 			}, j = e => o.a.createElement("a", {
 				className: Object(i.a)(e.className, v.a.navigationUnderlay, {
@@ -7347,6 +7348,7 @@
 						optimalImage: a,
 						originalImage: r.s,
 						isListing: e.isListing,
+						isSponsored: k,
 						key: s
 					})
 				})), e.shouldBlur && !e.isListing && o.a.createElement("div", {
@@ -33757,4 +33759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1ae3ed8f1a35c6f236e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8fb002e6dd61d67aad44.js.map
