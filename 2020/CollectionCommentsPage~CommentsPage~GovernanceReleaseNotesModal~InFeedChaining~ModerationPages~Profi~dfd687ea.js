@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.5a185e4a3692c2cd41ac.js
-// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.32c0ed5e6942c1b1dcaa.js
+// Retrieved at 9/9/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -20,13 +20,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.yb
 				});
-				return Object(u.zc)(t) ? void 0 : t
+				return Object(u.Bc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.zb
 				});
-				return Object(u.zc)(t) ? void 0 : t
+				return Object(u.Bc)(t) ? void 0 : t
 			}, (e, t) => e === u.Ab.Enabled && t === u.Ab.Enabled);
 			var p = s("./src/config.ts");
 			var g = s("./src/reddit/selectors/user.ts");
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "70b3bf8-production"
+					SENTRY_RELEASE_VERSION: "d3c5caf-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -920,8 +920,8 @@
 				U = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
 				G = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
 				Y = s("./src/reddit/models/Media/index.ts"),
-				z = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				K = s("./src/reddit/selectors/media.ts"),
+				K = s("./src/reddit/selectors/experiments/postSeo.ts"),
+				z = s("./src/reddit/selectors/media.ts"),
 				J = s("./src/reddit/selectors/postCreations.ts"),
 				q = s("./src/reddit/selectors/posts.ts"),
 				Q = s("./src/reddit/selectors/seo/index.ts"),
@@ -983,14 +983,14 @@
 				},
 				pe = Object(k.t)(),
 				ge = Object(u.c)({
-					imgOCRAltTextVariant: (e, t) => Object(Q.c)(e, t) ? Object(z.b)(e, t.post, !0) : void 0,
+					imgOCRAltTextVariant: (e, t) => Object(Q.c)(e, t) ? Object(K.b)(e, t.post, !0) : void 0,
 					OCRAltText: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(z.a)(e, s.id)
+						return Object(K.a)(e, s.id)
 					},
-					subredditOrProfileDisplayText: (e, t) => Object(z.i)(e, t),
+					subredditOrProfileDisplayText: (e, t) => Object(K.i)(e, t),
 					subredditOrProfile: (e, t) => {
 						let {
 							post: s
@@ -1015,7 +1015,7 @@
 							isGalleryTileLayoutDefault: a
 						} = t;
 						if (!s) return !1;
-						const n = Object(K.b)(e, i.id);
+						const n = Object(z.b)(e, i.id);
 						return !(void 0 !== n || !a) || !!n
 					}
 				}),
@@ -1277,16 +1277,16 @@
 						{
 							source: V,
 							obfuscated: k,
-							height: z,
-							width: K,
+							height: K,
+							width: z,
 							needsBackgroundBlur: J
 						} = this.getMediaInfo(this.props, this.state),
 						q = {
 							showCentered: h,
 							isListing: r,
 							showFull: p,
-							height: z,
-							width: K
+							height: K,
+							width: z
 						},
 						Q = Object.assign(Object.assign({}, q), {
 							className: e,
@@ -1392,12 +1392,12 @@
 								title: m.title
 							}) : l.a.createElement(L.a, ee({}, Q, {
 								alwaysWrapMedia: !0,
-								height: n ? z : Y.j,
-								width: n ? K : Y.j * (16 / 9)
+								height: n ? K : Y.j,
+								width: n ? z : Y.j * (16 / 9)
 							}), x && l.a.createElement(C.a, {
 								childRef: this.storeChildRef,
-								height: n ? z : Y.j,
-								width: n ? K : void 0,
+								height: n ? K : Y.j,
+								width: n ? z : void 0,
 								isListing: r,
 								isResponsive: !0,
 								onLoad: this.onIframeLoaded,
@@ -1416,9 +1416,9 @@
 								fullWidth: m.media.provider === Y.v.IFrameEmbed
 							})));
 						case Y.o.GIFVIDEO: {
-							let e = z,
-								t = K;
-							return e > Y.j && (t = K / z * (e = Y.j)), l.a.createElement(L.a, ee({}, Q, {
+							let e = K,
+								t = z;
+							return e > Y.j && (t = z / K * (e = Y.j)), l.a.createElement(L.a, ee({}, Q, {
 								blurSrc: J ? m.media.gifBackgroundImage : void 0
 							}), l.a.createElement(le, {
 								isVisible: x
@@ -1520,7 +1520,7 @@
 								originalSource: m.media.content
 							}))));
 						case Y.o.GALLERY:
-							const k = Object(F.b)(m.media.mediaMetadata || {}, Object(F.c)(r), Y.p, K),
+							const k = Object(F.b)(m.media.mediaMetadata || {}, Object(F.c)(r), Y.p, z),
 								ie = Object(F.a)(m.media.gallery, m.isSponsored);
 							return l.a.createElement(L.a, ee({}, Q, {
 								blurSrc: J ? V : void 0,
@@ -1779,4 +1779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.5a185e4a3692c2cd41ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.32c0ed5e6942c1b1dcaa.js.map

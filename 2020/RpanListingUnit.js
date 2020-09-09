@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.cf9a06baea052302be6d.js
-// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.309d275b16f4726a5d52.js
+// Retrieved at 9/9/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -28,13 +28,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: h.yb
 				});
-				return Object(h.zc)(t) ? void 0 : t
+				return Object(h.Bc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: h.zb
 				});
-				return Object(h.zc)(t) ? void 0 : t
+				return Object(h.Bc)(t) ? void 0 : t
 			}, (e, t) => e === h.Ab.Enabled && t === h.Ab.Enabled);
 			var b = s("./src/config.ts");
 			var p = s("./src/reddit/selectors/user.ts");
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "70b3bf8-production"
+					SENTRY_RELEASE_VERSION: "d3c5caf-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -1125,8 +1125,8 @@
 				F = s("./src/reddit/components/Flatlist/index.tsx"),
 				W = s("./src/reddit/components/Flatlist/constants.ts"),
 				B = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				z = s("./src/reddit/components/HlsVideo/index.tsx"),
-				K = s("./src/reddit/components/OverflowMenu/index.tsx"),
+				K = s("./src/reddit/components/HlsVideo/index.tsx"),
+				z = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				G = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				Y = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				J = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
@@ -1142,7 +1142,7 @@
 				re = s.n(ie);
 			const {
 				fbt: ae
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(o.a)(z.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(o.a)(K.a, {
 				playerName: "RPAN DU Video Player"
 			}), oe = Object(a.b)(() => Object(n.c)({
 				autoplay: k.b,
@@ -1567,7 +1567,7 @@
 					let {
 						onClick: t
 					} = e;
-					return r.a.createElement(K.b, {
+					return r.a.createElement(z.b, {
 						className: re.a.overflowMenu,
 						dropdownClassName: re.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
@@ -1692,4 +1692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.cf9a06baea052302be6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.309d275b16f4726a5d52.js.map

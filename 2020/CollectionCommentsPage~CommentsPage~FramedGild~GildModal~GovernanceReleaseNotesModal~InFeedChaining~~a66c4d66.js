@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.4a7d6aae28579f0ad78e.js
-// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.4a288d2d7e40249c0462.js
+// Retrieved at 9/9/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -860,11 +860,11 @@
 				}), _.a),
 				O = Object(d.a)(N, (function(e) {
 					switch (e) {
-						case V.vc.BufferTwoSeconds:
+						case V.wc.BufferTwoSeconds:
 							return 2;
-						case V.vc.BufferFiveSeconds:
+						case V.wc.BufferFiveSeconds:
 							return 5;
-						case V.vc.BufferTenSeconds:
+						case V.wc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1801,7 +1801,7 @@
 									const {
 										appName: t
 									} = p.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("70b3bf8-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("d3c5caf-production", " ").concat(t);
 									return i && (s += " [".concat(V.sc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2230,11 +2230,15 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: a.tc
 				}),
-				r = [a.wc.FeedAndTheatre, a.wc.FeedOnly],
+				r = [a.xc.FeedAndTheatre, a.xc.FeedOnly],
 				l = Object(i.a)(n, e => r.includes(e)),
-				c = [a.wc.FeedAndTheatre, a.wc.TheatreOnly],
-				d = Object(i.a)(n, e => c.includes(e))
+				c = [a.xc.FeedAndTheatre, a.xc.TheatreOnly],
+				d = Object(i.a)(n, e => c.includes(e));
+			Object(i.a)(e => Object(o.c)(e, {
+				experimentEligibilitySelector: o.a,
+				experimentName: a.uc
+			}), e => e === a.yc.Enabled)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.4a7d6aae28579f0ad78e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.4a288d2d7e40249c0462.js.map

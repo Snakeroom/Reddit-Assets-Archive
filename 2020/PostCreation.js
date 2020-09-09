@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2b535a589bd6088b958d.js
-// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0087158fdacee45f441e.js
+// Retrieved at 9/9/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -679,13 +679,13 @@
 					experimentEligibilitySelector: p.a,
 					experimentName: u.yb
 				});
-				return Object(u.zc)(t) ? void 0 : t
+				return Object(u.Bc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
 					experimentName: u.zb
 				});
-				return Object(u.zc)(t) ? void 0 : t
+				return Object(u.Bc)(t) ? void 0 : t
 			}, (e, t) => e === u.Ab.Enabled && t === u.Ab.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "70b3bf8-production"
+					SENTRY_RELEASE_VERSION: "d3c5caf-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3850,7 +3850,7 @@
 							experimentEligibilitySelector: T.H,
 							experimentName: _.cb
 						});
-						return !(!t || Object(_.zc)(t))
+						return !(!t || Object(_.Bc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: P.c
@@ -33759,4 +33759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2b535a589bd6088b958d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0087158fdacee45f441e.js.map
