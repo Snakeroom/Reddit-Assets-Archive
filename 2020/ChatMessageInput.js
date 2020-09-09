@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.1616b72a469b0bb3c20e.js
-// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.d28135d4ee5b00b1a806.js
+// Retrieved at 9/9/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -656,19 +656,20 @@
 					}, this.passChangeToLivestreaming = i()(() => this.props.onLivestreamingChatMessageEdit(), Y, {
 						leading: !1,
 						trailing: !0
-					}), this.onClickGiveAward = async () => {
+					}), this.onClickGiveAward = async e => {
+						e.stopPropagation();
 						const {
-							handleGiveAward: e,
-							isLivestreaming: t,
-							postId: n,
-							sendEvent: a
+							handleGiveAward: t,
+							isLivestreaming: n,
+							postId: a,
+							sendEvent: r
 						} = this.props;
-						e(Object(E.d)(E.a.GildingFlow, !0));
+						t(Object(E.d)(E.a.GildingFlow, !0));
 						const {
-							clickGildEvent: r,
-							clickRpanGiveAward: o
+							clickGildEvent: o,
+							clickRpanGiveAward: i
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-						a((t ? o : r)(n))
+						r((n ? i : o)(a))
 					}, this.handleCloseReply = e => {
 						e.preventDefault(), this.props.closeReply()
 					}, this.handleSubmit = e => {
@@ -1674,4 +1675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.1616b72a469b0bb3c20e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.d28135d4ee5b00b1a806.js.map
