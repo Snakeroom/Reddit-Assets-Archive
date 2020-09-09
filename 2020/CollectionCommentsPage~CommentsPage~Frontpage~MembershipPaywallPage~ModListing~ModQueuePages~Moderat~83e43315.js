@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315.52be6f1f86fa35051aaf.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315.e9fcdcff3bd3c05b0eaa.js
+// Retrieved at 9/9/2020, 5:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315"], {
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, i) {
@@ -504,7 +504,7 @@
 						if (!i || !i.el) return;
 						const s = i.el.firstChild;
 						s && (t !== i.el.style.height && (i.el.style.height = t), s.classList.add(N.a.Hidden), this.hiddenChildren[e] = "".concat(t, "px"), i.loaded && m.a.write(() => {
-							i.itemRef && i.itemRef.unmountContent()
+							i.itemRef && (i.loaded = !1, i.focused = !1, i.itemRef.unmountContent())
 						}))
 					}, this.showChild = e => {
 						const t = this.childMap.get(e);
@@ -809,4 +809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315.52be6f1f86fa35051aaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315.e9fcdcff3bd3c05b0eaa.js.map
