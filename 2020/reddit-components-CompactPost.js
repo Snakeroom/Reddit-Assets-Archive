@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.56bd72f2af8d83f13931.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.1cee6a4881315cf126c5.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -540,7 +540,7 @@
 						shouldShowGalleryTileOption: Ne
 					} = this.props, Ie = !!le.media && le.media.type === f.o.RTJSON, Me = Oe && Ie, Le = Object(Z.b)(le.id, w), Be = Object(ue.a)(L), Re = Object(me.a)(L), Fe = Object(pe.a)(L), Ae = "-mod-actions-menu-".concat(le.id), De = "voting-arrows-".concat(le.id), Ve = !!r && Object(h.e)(r) === le.author, We = Object(H.c)(le), He = Object(R.a)("View--Reports", le.id, ke), Ge = Object(H.a)(le), ze = !(w || O || E), Ke = le.media && le.media.type === f.o.LIVEVIDEO, {
 						moderationPrompt: Je
-					} = le, Xe = e => Te(Object(x.f)(le.id, e)), Ze = Object(d.getAdLinkContent)(le, m), {
+					} = le, Xe = e => Te(Object(x.f)(le.id, e)), Ze = Object(d.s)(le, m), {
 						source: Ue
 					} = Ze, Ye = n.a.createElement(X.a, {
 						className: Object(c.a)(ve.a.compactPostStyles, Ee.a.postContainer, Object(b.a)(this.props), t),
@@ -1464,4 +1464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.56bd72f2af8d83f13931.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.1cee6a4881315cf126c5.js.map

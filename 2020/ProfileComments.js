@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.1cff7de2e7fc0178b8d3.js
-// Retrieved at 9/8/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.ef5f85c5037dd7807d6c.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -695,7 +695,7 @@
 						isOverlay: Z,
 						shouldShowSubscribeButton: !(K && q),
 						subredditOrProfile: de
-					}, ye = Object(r.getAdLinkContent)(ne, X), {
+					}, ye = Object(r.s)(ne, X), {
 						source: we
 					} = ye, ke = o.a.createElement(g.a, {
 						className: Object(a.a)(B.a.classicPostStyles, D.a.postContainer, Object(R.a)(this.props), T ? D.a.mFirst : void 0, e),
@@ -7169,7 +7169,7 @@
 							if (!this.cancelClick && s.button < 2 && (e(() => u && u(s, p, t, d))(s), h && y(s) && h(s, p)), p.id && d) {
 								const {
 									source: e
-								} = Object(a.getAdLinkContent)(p, d);
+								} = Object(a.s)(p, d);
 								if (e && e.outboundUrl) {
 									const t = r + 1;
 									x(Object(c.c)(p.id, e.outboundUrl, t))
@@ -13281,4 +13281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1cff7de2e7fc0178b8d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.ef5f85c5037dd7807d6c.js.map

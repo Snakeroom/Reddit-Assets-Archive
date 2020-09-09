@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6d0ec609765e8de0a340.js
-// Retrieved at 9/9/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5f30f7810538e4556106.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -210,85 +210,101 @@
 		},
 		"./src/lib/ads/index.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "IMPRESSION_THRESHOLD", (function() {
+			s.d(t, "m", (function() {
 				return n
-			})), s.d(t, "LARGE_AD_FULL_VIEW_THRESHOLD", (function() {
+			})), s.d(t, "b", (function() {
 				return r
-			})), s.d(t, "VIEWABILITY_THRESHOLD", (function() {
+			})), s.d(t, "d", (function() {
 				return a
-			})), s.d(t, "VIDEO_GROUPM_THRESHOLD", (function() {
+			})), s.d(t, "k", (function() {
 				return i
-			})), s.d(t, "FULL_VIEWABILITY_THRESHOLD", (function() {
+			})), s.d(t, "i", (function() {
 				return c
-			})), s.d(t, "IMPRESSION_TIME", (function() {
+			})), s.d(t, "a", (function() {
 				return o
-			})), s.d(t, "VIEWABILITY_TIME", (function() {
+			})), s.d(t, "c", (function() {
 				return d
-			})), s.d(t, "VENDOR_VIEWABILITY_TIME", (function() {
+			})), s.d(t, "l", (function() {
 				return u
-			})), s.d(t, "VIDEO_VIEWABILITY_TIME", (function() {
+			})), s.d(t, "e", (function() {
 				return l
-			})), s.d(t, "VIDEO_FULL_VIEWABILITY_TIME", (function() {
+			})), s.d(t, "j", (function() {
 				return b
-			})), s.d(t, "VENDOR_VIEWABILITY_TIME_5", (function() {
+			})), s.d(t, "h", (function() {
 				return p
-			})), s.d(t, "VENDOR_VIEWABILITY_TIME_15", (function() {
+			})), s.d(t, "g", (function() {
 				return O
-			})), s.d(t, "ViewabilityThresholds", (function() {
+			})), s.d(t, "f", (function() {
 				return g
-			})), s.d(t, "VideoViewabilityThresholds", (function() {
+			})), s.d(t, "q", (function() {
 				return f
-			})), s.d(t, "formatThresholdKeys", (function() {
+			})), s.d(t, "o", (function() {
 				return m
-			})), s.d(t, "ViewabilityThresholdKeys", (function() {
+			})), s.d(t, "t", (function() {
 				return j
-			})), s.d(t, "VideoViewabilityThresholdKeys", (function() {
+			})), s.d(t, "r", (function() {
 				return _
-			})), s.d(t, "getAdLinkContent", (function() {
+			})), s.d(t, "p", (function() {
 				return h
+			})), s.d(t, "n", (function() {
+				return y
+			})), s.d(t, "s", (function() {
+				return E
 			}));
-			s("./src/lib/ads/types.ts");
-			const n = .01,
-				r = .3,
-				a = .5,
-				i = .8,
-				c = 1,
-				o = 0,
-				d = 1e3,
-				u = 100,
-				l = 2e3,
-				b = 3e3,
-				p = 5e3,
-				O = 15e3,
-				g = [.01, .3, .5, 1],
-				f = [.01, .5, .8, 1, {
+			var n;
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			! function(e) {
+				e.muted = "muted"
+			}(n || (n = {}));
+			const r = .01,
+				a = .3,
+				i = .5,
+				c = .8,
+				o = 1,
+				d = 0,
+				u = 1e3,
+				l = 100,
+				b = 2e3,
+				p = 3e3,
+				O = 5e3,
+				g = 15e3,
+				f = [.01, .3, .5, 1],
+				m = [.01, .5, .8, 1, {
 					key: "TOTAL_MRC_VIEWABLE_TIME",
 					playing: !0,
-					threshold: a
+					threshold: i
 				}, {
 					key: "HALF_DURATION_80_IN_VIEW_AUDIBLE",
 					playing: !0,
 					withSound: !0,
-					threshold: i
+					threshold: c
 				}, {
 					key: "FULL_IN_VIEW_AUDIBLE_TIME",
 					playing: !0,
-					threshold: c,
+					threshold: o,
 					withSound: !0
 				}, {
 					key: "FULL_IN_VIEW_TIME",
 					playing: !0,
-					threshold: c
+					threshold: o
 				}, {
 					key: "AUDIBLE_TIME",
 					playing: !0,
 					threshold: 0,
 					withSound: !0
 				}],
-				m = e => e.map(e => e && "object" == typeof e ? e.key : Math.floor(100 * e)),
-				j = m(g),
-				_ = m(f),
-				h = (e, t) => {
+				j = function(e, t) {
+					let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "value";
+					const n = Object.entries(t).reduce((t, n) => {
+						let [r, a] = n;
+						return t[r] = a[e] ? a[e][s] : void 0, t
+					}, {});
+					return n
+				},
+				_ = e => e.map(e => e && "object" == typeof e ? e.key : Math.floor(100 * e)),
+				h = _(f),
+				y = _(m),
+				E = (e, t) => {
 					let s, n = e.source,
 						r = e.callToAction;
 					if (t) {
@@ -311,10 +327,12 @@
 				return a
 			})), s.d(t, "a", (function() {
 				return o
+			})), s.d(t, "e", (function() {
+				return u
 			})), s.d(t, "b", (function() {
-				return l
-			})), s.d(t, "d", (function() {
 				return b
+			})), s.d(t, "d", (function() {
+				return p
 			}));
 			var n = s("./src/lib/ads/index.ts");
 			let r = {};
@@ -325,14 +343,17 @@
 					timeEntered: null
 				}, e), {}),
 				c = () => ({
-					thresholdData: i(n.ViewabilityThresholdKeys),
-					videoThresholdData: i(n.VideoViewabilityThresholdKeys)
+					thresholdData: i(n.p),
+					videoThresholdData: i(n.n),
+					videoAds: {
+						muted: {}
+					}
 				}),
 				o = Object.freeze(c()),
 				d = (e, t, s, a) => {
 					const i = Date.now(),
 						c = s ? "videoThresholdData" : "thresholdData";
-					Object(n.formatThresholdKeys)(t).forEach(t => {
+					Object(n.r)(t).forEach(t => {
 						const s = r[e][c][t];
 						if (a) s.timeEntered = s.timeEntered || i;
 						else if (s.timeEntered) {
@@ -341,15 +362,18 @@
 						}
 					})
 				},
-				u = e => (function(t) {
+				u = (e, t, s) => {
+					const n = r[e].videoAds[s];
+					n.value = t, n.timeUpdated = n.timeUpdated && n.value === t ? n.timeUpdated : Date.now()
+				},
+				l = e => (function(t) {
 					r[t] || (r[t] = c());
 					for (var s = arguments.length, n = new Array(s > 1 ? s - 1 : 0), a = 1; a < s; a++) n[a - 1] = arguments[a];
 					e.apply(void 0, [t, ...n])
 				}),
-				l = u((e, t, s) => d(e, t, s, !0)),
-				b = u((e, t, s) => d(e, t, s, !1))
+				b = l((e, t, s) => d(e, t, s, !0)),
+				p = l((e, t, s) => d(e, t, s, !1))
 		},
-		"./src/lib/ads/types.ts": function(e, t) {},
 		"./src/lib/assertNever.ts": function(e, t, s) {
 			"use strict";
 
@@ -7508,65 +7532,67 @@
 		"./src/reddit/actions/media.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return l
-			})), s.d(t, "d", (function() {
 				return p
-			})), s.d(t, "h", (function() {
-				return O
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "d", (function() {
 				return g
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "h", (function() {
 				return f
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "b", (function() {
 				return m
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "e", (function() {
 				return j
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "i", (function() {
 				return _
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "f", (function() {
 				return h
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "g", (function() {
+				return y
+			})), s.d(t, "a", (function() {
 				return E
+			})), s.d(t, "j", (function() {
+				return v
 			}));
-			var n = s("./src/lib/makeActionCreator/index.ts"),
-				r = s("./src/lib/constants/index.ts"),
-				a = s("./src/lib/makeApiRequest/index.ts"),
-				i = s("./src/lib/omitHeaders/index.ts"),
-				c = s("./src/reddit/constants/headers.ts"),
-				o = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				d = s("./src/reddit/models/Media/index.ts"),
-				u = s("./src/reddit/actions/video.ts");
-			const l = "MEDIA__SET_MUTE",
-				b = Object(n.a)(l),
-				p = "MEDIA__SET_VOLUME",
-				O = Object(n.a)(p),
-				g = "MEDIA__SET_CURRENT_SLIDE_INDEX",
-				f = "TOGGLE_GALLERY_LAYOUT",
-				m = Object(n.a)(f),
-				j = Object(n.a)(g),
-				_ = (e, t, s) => async (n, r) => {
-					n(b(e)), !e && s && n(Object(u.C)(t, s))
-				}, h = "MEDIA__EMBED_HEIGHT_MEASURED", y = Object(n.a)(h), E = e => {
+			var n = s("./src/lib/ads/index.ts"),
+				r = s("./src/lib/ads/store.ts"),
+				a = s("./src/lib/makeActionCreator/index.ts"),
+				i = s("./src/lib/constants/index.ts"),
+				c = s("./src/lib/makeApiRequest/index.ts"),
+				o = s("./src/lib/omitHeaders/index.ts"),
+				d = s("./src/reddit/constants/headers.ts"),
+				u = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				l = s("./src/reddit/models/Media/index.ts"),
+				b = s("./src/reddit/actions/video.ts");
+			const p = "MEDIA__SET_MUTE",
+				O = Object(a.a)(p),
+				g = "MEDIA__SET_VOLUME",
+				f = Object(a.a)(g),
+				m = "MEDIA__SET_CURRENT_SLIDE_INDEX",
+				j = "TOGGLE_GALLERY_LAYOUT",
+				_ = Object(a.a)(j),
+				h = Object(a.a)(m),
+				y = (e, t, s) => async (a, i) => {
+					a(O(e)), !e && s && (r.e(s, e, n.m.muted), a(Object(b.C)(t, s)))
+				}, E = "MEDIA__EMBED_HEIGHT_MEASURED", I = Object(a.a)(E), v = e => {
 					let {
 						height: t,
 						isDeleted: s,
 						postId: n
 					} = e;
-					return async (e, u, l) => {
+					return async (e, r, a) => {
 						let {
 							apiContext: b
-						} = l;
-						const p = u(),
+						} = a;
+						const p = r(),
 							{
 								media: O
 							} = p.posts.models[n];
-						e(y({
+						e(I({
 							height: t,
 							isDeleted: s,
 							postId: n
-						})), null !== O && O.type === d.o.EMBED && O.provider === d.v.Twitter && O.height !== t && await ((e, t, s) => Object(a.a)(Object(i.a)(e, [c.a]), {
-							endpoint: Object(o.a)("".concat(e.apiUrl, "/api/set_twitter")),
-							method: r.db.POST,
+						})), null !== O && O.type === l.o.EMBED && O.provider === l.v.Twitter && O.height !== t && await ((e, t, s) => Object(c.a)(Object(o.a)(e, [d.a]), {
+							endpoint: Object(u.a)("".concat(e.apiUrl, "/api/set_twitter")),
+							method: i.db.POST,
 							data: {
 								height: s,
 								link: t
@@ -25403,7 +25429,7 @@
 		"./src/reddit/helpers/getVendorMetadata.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return o
+				return d
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/lib/ads/index.ts"),
@@ -25412,7 +25438,8 @@
 			const i = (e, t) => {
 					return Object.keys(e).reduce((s, n) => (s[n] = t - (e[n].timeEntered || t), s), {})
 				},
-				c = function(e, t, s) {
+				c = (e, t, s, n, r) => t === s ? n : !(!r || !r[e]) && r[e],
+				o = function(e, t, s) {
 					let n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
 					if (s) {
 						if (e && t) return 4;
@@ -25422,57 +25449,69 @@
 					}
 					return n
 				},
-				o = (e, t, s) => {
-					let o = null,
-						d = null;
+				d = (e, t, s) => {
+					let d = null,
+						u = null;
 					if ("undefined" == typeof document || "undefined" == typeof window) return null;
-					const u = Date.now(),
+					const l = Date.now(),
 						{
-							thresholdData: l,
-							videoThresholdData: b
+							thresholdData: b,
+							videoThresholdData: p,
+							videoAds: O
 						} = r.c(e) || r.a,
+						g = Object(n.t)(e, O, "timeUpdated"),
 						{
-							videoData: p
+							videoData: f
 						} = t,
-						O = i(l, u),
-						g = i(b, u),
-						f = l[1].totalTime + O[1],
-						m = l[50].totalTime + O[50],
-						j = l[100].totalTime + O[100],
-						_ = Math.max(l[1].maxContinuousTime, O[1]),
-						h = Math.max(l[30].maxContinuousTime, O[30]),
-						y = Math.max(l[50].maxContinuousTime, O[50]),
-						E = Math.max(l[100].maxContinuousTime, O[100]),
-						I = y > n.VIEWABILITY_TIME,
-						v = document.getElementById(e);
-					if (!v) return null;
-					const S = v.getElementsByTagName("video");
-					let T = null;
-					S && S[0] && (T = S[0].getBoundingClientRect());
-					const w = v.getBoundingClientRect(),
-						C = (o = Math.floor(w.width)) * (d = Math.floor(w.height)),
-						A = C > 242499 && y >= 1e3 || E >= 1e3 ? 1 : 0,
-						D = C > 242499 && h >= 1e3 || E >= 1e3 ? 1 : 0,
-						R = Math.max(b[100].maxContinuousTime, g[100]) > 1,
-						P = {
-							w: o,
-							h: d,
+						m = i(b, l),
+						j = i(p, l),
+						_ = !!t.videoData.videoVolume && t.videoData.videoVolume <= 0,
+						h = f.videoStartTime ? f.videoStartTime + 200 : 0,
+						y = {
+							inView50: h >= (p[50].timeEntered || Number.MAX_SAFE_INTEGER),
+							inView80: h >= (p[80].timeEntered || Number.MAX_SAFE_INTEGER),
+							inView100: h >= (p[100].timeEntered || Number.MAX_SAFE_INTEGER),
+							audible: !_ && h >= (g.muted || 0),
+							muted: _ && h >= (g.muted || 0)
+						},
+						E = b[1].totalTime + m[1],
+						I = b[50].totalTime + m[50],
+						v = b[100].totalTime + m[100],
+						S = Math.max(b[1].maxContinuousTime, m[1]),
+						T = Math.max(b[30].maxContinuousTime, m[30]),
+						w = Math.max(b[50].maxContinuousTime, m[50]),
+						C = Math.max(b[100].maxContinuousTime, m[100]),
+						A = w > n.l,
+						D = document.getElementById(e);
+					if (!D) return null;
+					const R = D.getElementsByTagName("video");
+					let P = null;
+					R && R[0] && (P = R[0].getBoundingClientRect());
+					const k = D.getBoundingClientRect(),
+						x = (d = Math.floor(k.width)) * (u = Math.floor(k.height)),
+						N = x > 242499 && w >= 1e3 || C >= 1e3 ? 1 : 0,
+						L = x > 242499 && T >= 1e3 || C >= 1e3 ? 1 : 0,
+						U = Math.max(p[100].maxContinuousTime, j[100]) > 1,
+						M = p.HALF_DURATION_80_IN_VIEW_AUDIBLE,
+						F = {
+							w: d,
+							h: u,
 							sw: window.screen.width,
 							sh: window.screen.height,
-							t: u,
-							a: f,
-							b: m,
-							c: j,
-							d: _,
-							e: y,
-							f: E,
-							g: A || j >= 1e3 ? 1 : 0,
+							t: l,
+							a: E,
+							b: I,
+							c: v,
+							d: S,
+							e: w,
+							f: C,
+							g: N || v >= 1e3 ? 1 : 0,
 							i: t.timeImpressionViewed ? t.timeImpressionViewed : 0,
-							o: I ? 1 : 0,
-							q: D ? 1 : 0,
+							o: A ? 1 : 0,
+							q: L ? 1 : 0,
 							r: t.eventGlobalCount ? t.eventGlobalCount : 0
 						};
-					return p.isVideo && (P.va = p.isVideo ? 1 : 0, P.vh = T ? Math.floor(T.height) : 0, P.vw = T ? Math.floor(T.width) : 0, P.ve = p.videoVolume || 0, P.vc = p.videoDuration || 0, P.vd = Math.floor(p.cumulativeViewedTime) || 0, P.vq = p.wasFullScreen || 0, P.vg = b[1].timeEntered ? 1 : 0, P.vb = b[50].totalTime + g[50], P.vs = c(p.videoVolume, b[1].timeEntered, s === a.a.VideoStarted, p.videoStarted), P.vt = c(p.videoVolume, b[1].timeEntered, s === a.a.VideoWatched25, p.watched25), P.vu = c(p.videoVolume, b[1].timeEntered, s === a.a.VideoWatched50, p.watched50), P.vv = c(p.videoVolume, b[1].timeEntered, s === a.a.VideoWatched75, p.watched75), P.vx = c(p.videoVolume, b[1].timeEntered, s === a.a.VideoWatched100, p.watched100), P.vy = b.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + g.FULL_IN_VIEW_AUDIBLE_TIME, P.vz = b[100].totalTime + g[100], P.xa = R ? 1 : 0, P.xb = Math.max(b[50].maxContinuousTime, g[50])), P
+					return f.isVideo && (F.va = f.isVideo ? 1 : 0, F.vh = P ? Math.floor(P.height) : 0, F.vw = P ? Math.floor(P.width) : 0, F.ve = f.videoVolume || 0, F.vc = f.videoDuration || 0, F.vd = Math.floor(f.cumulativeViewedTime) || 0, F.vq = f.wasFullScreen || 0, F.vg = p[1].timeEntered ? 1 : 0, F.vb = p[50].totalTime + j[50], F.vs = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoStarted, f.videoStarted), F.vt = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched25, f.watched25), F.vu = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched50, f.watched50), F.vv = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched75, f.watched75), F.vx = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched100, f.watched100), F.vo = c("vo", s, a.a.VideoWatched50, y.inView100, f.watched50State) ? 1 : 0, F.vr = c("vr", s, a.a.VideoWatched50, y.inView80 && y.audible, f.watched50State) || M.totalTime + j.HALF_DURATION_80_IN_VIEW_AUDIBLE >= 15e3 ? 1 : 0, F.vj = c("vj", s, a.a.VideoWatched50, y.inView100 && y.audible, f.watched50State) ? 1 : 0, F.vl = c("vl", s, a.a.VideoWatched100, y.inView100, f.watched100State) ? 1 : 0, F.vk = c("vk", s, a.a.VideoWatched100, y.audible, f.watched100State) ? 1 : 0, F.vp = c("vp", s, a.a.VideoWatched100, y.inView100 && y.audible, f.watched100State) ? 1 : 0, F.vm = c("vm", s, a.a.VideoWatched100, y.inView50 && y.audible, f.watched100State) ? 1 : 0, F.vn = c("vn", s, a.a.VideoWatched100, y.inView50 && y.muted, f.watched100State) ? 1 : 0, F.vy = p.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + j.FULL_IN_VIEW_AUDIBLE_TIME, F.vz = p[100].totalTime + j[100], F.xa = U ? 1 : 0, F.xb = Math.max(p[50].maxContinuousTime, j[50])), F
 				}
 		},
 		"./src/reddit/helpers/governanceErrorText/index.ts": function(e, t, s) {
@@ -55799,4 +55838,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6d0ec609765e8de0a340.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5f30f7810538e4556106.js.map

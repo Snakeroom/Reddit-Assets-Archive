@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.f91dec331dcd1ee66154.js
-// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.34b5b65dfc61b3c14f54.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -886,7 +886,7 @@
 							if (!this.cancelClick && s.button < 2 && (e(() => p && p(s, b, t, d))(s), h && y(s) && h(s, b)), b.id && d) {
 								const {
 									source: e
-								} = Object(i.getAdLinkContent)(b, d);
+								} = Object(i.s)(b, d);
 								if (e && e.outboundUrl) {
 									const t = o + 1;
 									v(Object(a.c)(b.id, e.outboundUrl, t))
@@ -1365,4 +1365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.f91dec331dcd1ee66154.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.34b5b65dfc61b3c14f54.js.map

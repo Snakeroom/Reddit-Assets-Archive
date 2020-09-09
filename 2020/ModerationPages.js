@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1377eb716fa3aade3530.js
-// Retrieved at 9/8/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3e8a3a465a2a9d8dda32.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -4226,7 +4226,7 @@
 						isOverlay: J,
 						shouldShowSubscribeButton: !(K && z),
 						subredditOrProfile: ce
-					}, ke = Object(a.getAdLinkContent)(ne, Z), {
+					}, ke = Object(a.s)(ne, Z), {
 						source: je
 					} = ke, ye = o.a.createElement(v.a, {
 						className: Object(r.a)(D.a.classicPostStyles, B.a.postContainer, Object(L.a)(this.props), N ? B.a.mFirst : void 0, e),
@@ -7890,7 +7890,7 @@
 						shouldShowGalleryTileOption: Ne
 					} = this.props, Pe = !!le.media && le.media.type === g.o.RTJSON, Me = ve && Pe, Re = Object(z.b)(le.id, O), Le = Object(pe.a)(R), Ae = Object(me.a)(R), De = Object(ue.a)(R), Fe = "-mod-actions-menu-".concat(le.id), Be = "voting-arrows-".concat(le.id), Ue = !!a && Object(f.e)(a) === le.author, He = Object(W.c)(le), We = Object(A.a)("View--Reports", le.id, we), Ge = Object(W.a)(le), Ve = !(O || v || E), qe = le.media && le.media.type === g.o.LIVEVIDEO, {
 						moderationPrompt: Ke
-					} = le, Qe = e => Ie(Object(h.f)(le.id, e)), ze = Object(d.getAdLinkContent)(le, m), {
+					} = le, Qe = e => Ie(Object(h.f)(le.id, e)), ze = Object(d.s)(le, m), {
 						source: Je
 					} = ze, Ze = o.a.createElement(Q.a, {
 						className: Object(c.a)(xe.a.compactPostStyles, Ee.a.postContainer, Object(b.a)(this.props), t),
@@ -17549,7 +17549,7 @@
 							if (!this.cancelClick && s.button < 2 && (e(() => p && p(s, u, t, c))(s), h && k(s) && h(s, u)), u.id && c) {
 								const {
 									source: e
-								} = Object(r.getAdLinkContent)(u, c);
+								} = Object(r.s)(u, c);
 								if (e && e.outboundUrl) {
 									const t = a + 1;
 									g(Object(d.c)(u.id, e.outboundUrl, t))
@@ -30750,4 +30750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1377eb716fa3aade3530.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3e8a3a465a2a9d8dda32.js.map

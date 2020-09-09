@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.66a35e54fb20863fac4c.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7979417d1f7fed2ced7e.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -401,8 +401,8 @@
 				I = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				L = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				B = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				A = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				R = s.n(A),
+				R = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				A = s.n(R),
 				F = s("./src/reddit/components/ClassicPost/index.m.less"),
 				D = s.n(F);
 
@@ -430,7 +430,7 @@
 						inSubredditOrProfile: O,
 						eventFactory: N,
 						first: T,
-						flairStyleTemplate: A,
+						flairStyleTemplate: R,
 						formatTitle: F,
 						hostPostId: H,
 						isCheckboxSelected: G,
@@ -456,7 +456,7 @@
 						toggleCheckbox: le,
 						userIsOp: me,
 						shouldShowGalleryTileOption: pe
-					} = this.props, ue = ne ? void 0 : A, xe = this.props.crosspost || void 0, be = Object(L.a)(Y), he = Object(M.a)(Y), fe = Object(I.a)(Y), ve = Z && L.a, ge = !!oe.media && oe.media.type === _.o.RTJSON, Oe = me && ge, ye = O && !de, Pe = !!oe.media && Object(_.H)(oe.media), je = {
+					} = this.props, ue = ne ? void 0 : R, xe = this.props.crosspost || void 0, be = Object(L.a)(Y), he = Object(M.a)(Y), fe = Object(I.a)(Y), ve = Z && L.a, ge = !!oe.media && oe.media.type === _.o.RTJSON, Oe = me && ge, ye = O && !de, Pe = !!oe.media && Object(_.H)(oe.media), je = {
 						flairStyleTemplate: ue,
 						post: oe,
 						inSubredditOrProfile: O,
@@ -464,10 +464,10 @@
 						isOverlay: Q,
 						shouldShowSubscribeButton: !(X && U),
 						subredditOrProfile: ce
-					}, we = Object(r.getAdLinkContent)(oe, q), {
+					}, we = Object(r.s)(oe, q), {
 						source: Ee
 					} = we, ke = n.a.createElement(g.a, {
-						className: Object(a.a)(R.a.classicPostStyles, D.a.postContainer, Object(B.a)(this.props), T ? D.a.mFirst : void 0, e),
+						className: Object(a.a)(A.a.classicPostStyles, D.a.postContainer, Object(B.a)(this.props), T ? D.a.mFirst : void 0, e),
 						isOverlay: Q,
 						style: Object.assign(Object.assign({}, Object(B.d)(this.props)), Object(B.b)(this.props.flairStyleTemplate)),
 						post: oe,
@@ -697,9 +697,9 @@
 					className: c
 				}, r.a.createElement(N, null, r.a.createElement(w, null, r.a.createElement(p.a, d)), L(a), a.source && r.a.createElement(x.a, {
 					post: a
-				}), A(e)), F(e)) : r.a.createElement(j, {
+				}), R(e)), F(e)) : r.a.createElement(j, {
 					className: c
-				}, r.a.createElement(w, null, r.a.createElement(p.a, d)), L(a), B(e), A(e))
+				}, r.a.createElement(w, null, r.a.createElement(p.a, d)), L(a), B(e), R(e))
 			});
 			const L = e => r.a.createElement(E, {
 					isCrosspost: !0,
@@ -719,7 +719,7 @@
 						className: O.a.mediaContainer
 					})))
 				},
-				A = e => {
+				R = e => {
 					const {
 						post: t
 					} = e, {
@@ -730,9 +730,9 @@
 						_1: "1 point"
 					}, [o.fbt._plural(s, "point count", Object(l.b)(s))], {
 						hk: "PNZhd"
-					})), r.a.createElement(_, null), r.a.createElement(C, null, R(e)))
+					})), r.a.createElement(_, null), r.a.createElement(C, null, A(e)))
 				},
-				R = e => {
+				A = e => {
 					const {
 						post: t,
 						shouldOpenPostInNewTab: s
@@ -1394,4 +1394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.66a35e54fb20863fac4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7979417d1f7fed2ced7e.js.map

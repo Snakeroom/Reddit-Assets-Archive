@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.1ae4e09a8e3c527391ff.js
-// Retrieved at 9/8/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.fdcda5b60d50c5093b54.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -8903,7 +8903,7 @@
 							if (!this.cancelClick && s.button < 2 && (e(() => u && u(s, p, t, d))(s), h && _(s) && h(s, p)), p.id && d) {
 								const {
 									source: e
-								} = Object(i.getAdLinkContent)(p, d);
+								} = Object(i.s)(p, d);
 								if (e && e.outboundUrl) {
 									const t = r + 1;
 									x(Object(c.c)(p.id, e.outboundUrl, t))
@@ -9540,7 +9540,7 @@
 					ye = L.removedByCategory === M.g.AuthorDeleted,
 					Ee = n && (n.displayText === L.author || n.username === L.author),
 					_e = !ye && (Ee || p || !(L.removedByCategory && L.media && (Object(N.K)(L.media) || Object(N.I)(L.media)))),
-					je = Object(l.getAdLinkContent)(L, d),
+					je = Object(l.s)(L, d),
 					{
 						source: ke
 					} = je,
@@ -18189,4 +18189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.1ae4e09a8e3c527391ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fdcda5b60d50c5093b54.js.map

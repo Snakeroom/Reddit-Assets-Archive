@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.714674ab03c3f434d728.js
-// Retrieved at 9/9/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.265c4f89e5d29d578be3.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1593,11 +1593,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("111650"),
+				buildNumber: r("111659"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1599675933"),
+				})("1599677307"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3356,14 +3356,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("3c74f5e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("70b3bf8-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3c74f5e-production",
+						release: "70b3bf8-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3788,7 +3788,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "3c74f5e-production",
+							releaseClient: "70b3bf8-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -14799,7 +14799,7 @@
 							videoDuration: r ? r.length : 0,
 							videoVolume: Math.floor(100 * (Object(v.d)(e) || 0)),
 							cumulativeViewedTime: s || 0
-						}, i && (n.videoData.wasFullScreen = i.adVideoPlayedExpanded ? 1 : 0, n.videoData.videoStarted = i.adVideoStarted ? i.adVideoStarted.vs : 0, n.videoData.watched25 = i.adVideoWatchedPercent25 ? i.adVideoWatchedPercent25.vt : 0, n.videoData.watched50 = i.adVideoWatchedPercent50 ? i.adVideoWatchedPercent50.vu : 0, n.videoData.watched75 = i.adVideoWatchedPercent75 ? i.adVideoWatchedPercent75.vv : 0, n.videoData.watched100 = i.adVideoWatchedPercent100 ? i.adVideoWatchedPercent100.vx : 0)
+						}, i && (n.videoData.wasFullScreen = i.adVideoPlayedExpanded ? 1 : 0, n.videoData.videoStarted = i.adVideoStarted ? i.adVideoStarted.vs : 0, n.videoData.videoStartTime = i.adVideoStarted ? i.adVideoStarted.t : 0, n.videoData.watched25 = i.adVideoWatchedPercent25 ? i.adVideoWatchedPercent25.vt : 0, n.videoData.watched50 = i.adVideoWatchedPercent50 ? i.adVideoWatchedPercent50.vu : 0, n.videoData.watched75 = i.adVideoWatchedPercent75 ? i.adVideoWatchedPercent75.vv : 0, n.videoData.watched100 = i.adVideoWatchedPercent100 ? i.adVideoWatchedPercent100.vx : 0, n.videoData.watched50State = i.adVideoWatchedPercent50 ? i.adVideoWatchedPercent50 : {}, n.videoData.watched100State = i.adVideoWatchedPercent100 ? i.adVideoWatchedPercent100 : {})
 					}
 					return n
 				}),
@@ -22204,4 +22204,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.714674ab03c3f434d728.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.265c4f89e5d29d578be3.js.map

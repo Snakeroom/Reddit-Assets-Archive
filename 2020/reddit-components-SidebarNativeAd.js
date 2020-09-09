@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0e03458fd6484b621ea4.js
-// Retrieved at 9/1/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5d2f58febd6fd8181516.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -964,7 +964,7 @@
 							if (!this.cancelClick && s.button < 2 && (e(() => p && p(s, u, t, d))(s), x && j(s) && x(s, u)), u.id && d) {
 								const {
 									source: e
-								} = Object(a.getAdLinkContent)(u, d);
+								} = Object(a.s)(u, d);
 								if (e && e.outboundUrl) {
 									const t = r + 1;
 									v(Object(c.c)(u.id, e.outboundUrl, t))
@@ -1825,4 +1825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0e03458fd6484b621ea4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5d2f58febd6fd8181516.js.map

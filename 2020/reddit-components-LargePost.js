@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.75f9a92d87b897400a60.js
-// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c796f93083f9b6bd338.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -705,7 +705,7 @@
 							hasBottomCompactPostStyles: n,
 							showPinnnedHeader: r
 						}
-					})(e), Me = !!te && !Object(q.zc)(te), Be = (!f || Me) && !me.isSponsored, Ae = Object(w.getAdLinkContent)(me, P), {
+					})(e), Me = !!te && !Object(q.zc)(te), Be = (!f || Me) && !me.isSponsored, Ae = Object(w.s)(me, P), {
 						source: Re
 					} = Ae, Fe = r.a.createElement(R.a, {
 						className: Object(k.a)(pe.a.container, n, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -1296,4 +1296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.75f9a92d87b897400a60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c796f93083f9b6bd338.js.map

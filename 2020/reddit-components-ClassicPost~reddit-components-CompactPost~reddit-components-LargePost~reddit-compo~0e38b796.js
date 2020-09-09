@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.0ce079e6d2a3dcaf268a.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.59e773773f577ff65fb1.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -714,10 +714,10 @@
 				N = () => s.fbt._("Comments are locked", null, {
 					hk: "8HjJ9"
 				}),
-				A = e => s.fbt._("Moderator of {community name}", [s.fbt._param("community name", e)], {
+				F = e => s.fbt._("Moderator of {community name}", [s.fbt._param("community name", e)], {
 					hk: "nJqIB"
 				}),
-				F = () => s.fbt._("Stickied post", null, {
+				A = () => s.fbt._("Stickied post", null, {
 					hk: "3qSaBs"
 				}),
 				R = () => s.fbt._("Pinned post", null, {
@@ -786,13 +786,13 @@
 					className: t
 				}, a && n && V.distinguishType === d.C.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(I.a, {
 					className: w.a.modIcon,
-					desc: A(n),
+					desc: F(n),
 					id: q,
 					onMouseEnter: D(q),
 					onMouseLeave: H
 				}), r.a.createElement(u.c, L({
 					tooltipId: q,
-					text: A(n)
+					text: F(n)
 				}, W))), V.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(E.a, {
 					className: w.a.archivedIcon,
 					desc: T(),
@@ -813,13 +813,13 @@
 					text: N()
 				}, W))), c && Object(h.k)(V) && !l && r.a.createElement(o.Fragment, null, r.a.createElement(C.a, {
 					className: w.a.stickyIcon,
-					desc: F(),
+					desc: A(),
 					id: ee,
 					onMouseEnter: D(ee),
 					onMouseLeave: H
 				}), r.a.createElement(u.c, L({
 					tooltipId: ee,
-					text: F()
+					text: A()
 				}, W))), k && b && r.a.createElement(o.Fragment, null, r.a.createElement(C.a, {
 					className: w.a.stickyIcon,
 					desc: R(),
@@ -1025,7 +1025,7 @@
 							if (!this.cancelClick && n.button < 2 && (e(() => p && p(n, m, t, d))(n), f && _(n) && f(n, m)), m.id && d) {
 								const {
 									source: e
-								} = Object(c.getAdLinkContent)(m, d);
+								} = Object(c.s)(m, d);
 								if (e && e.outboundUrl) {
 									const t = r + 1;
 									x(Object(i.c)(m.id, e.outboundUrl, t))
@@ -1715,4 +1715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.0ce079e6d2a3dcaf268a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.59e773773f577ff65fb1.js.map

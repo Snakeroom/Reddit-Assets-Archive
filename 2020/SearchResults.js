@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.e8fe2e06cd65249317f0.js
-// Retrieved at 9/8/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.bf8bbba6cb1dd2daa198.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -650,7 +650,7 @@
 						isOverlay: Q,
 						shouldShowSubscribeButton: !(K && J),
 						subredditOrProfile: de
-					}, je = Object(r.getAdLinkContent)(ne, X), {
+					}, je = Object(r.s)(ne, X), {
 						source: _e
 					} = je, ke = o.a.createElement(O.a, {
 						className: Object(i.a)(A.a.classicPostStyles, B.a.postContainer, Object(R.a)(this.props), T ? B.a.mFirst : void 0, e),
@@ -5578,7 +5578,7 @@
 							if (!this.cancelClick && s.button < 2 && (e(() => u && u(s, p, t, d))(s), h && j(s) && h(s, p)), p.id && d) {
 								const {
 									source: e
-								} = Object(i.getAdLinkContent)(p, d);
+								} = Object(i.s)(p, d);
 								if (e && e.outboundUrl) {
 									const t = r + 1;
 									x(Object(c.c)(p.id, e.outboundUrl, t))
@@ -13027,4 +13027,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e8fe2e06cd65249317f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.bf8bbba6cb1dd2daa198.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.057a8a70ec3411217f74.js
-// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.06190e7753727cfe3227.js
+// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -343,7 +343,7 @@
 							if (!this.cancelClick && s.button < 2 && (e(() => m && m(s, p, t, d))(s), h && k(s) && h(s, p)), p.id && d) {
 								const {
 									source: e
-								} = Object(i.getAdLinkContent)(p, d);
+								} = Object(i.s)(p, d);
 								if (e && e.outboundUrl) {
 									const t = o + 1;
 									g(Object(a.c)(p.id, e.outboundUrl, t))
@@ -585,4 +585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.057a8a70ec3411217f74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.06190e7753727cfe3227.js.map
