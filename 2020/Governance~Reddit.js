@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5d702d86fefef724603c.js
-// Retrieved at 9/8/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.452d58857ee92c1cad4f.js
+// Retrieved at 9/9/2020, 10:40:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -8906,7 +8906,7 @@
 							O = !u && (o || !0) && (!Object(oe.g)(r) && !Object(Be.d)(p, {
 								postId: c
 							}) && !!r || !Object(Ee.i)(p) && Object(fe.d)(p)),
-							f = !!Object(fe.b)(p, _, !1);
+							f = !!Object(fe.b)(p, _, !1) && !1;
 						if (l || O || u || f) {
 							Object(xe.d)(xe.a.LinkedPosts);
 							const e = Object(xe.c)(xe.a.LinkedPosts),
@@ -54035,7 +54035,7 @@
 					const n = Object(u.ab)(e, s);
 					return n && n.displayText || s && s.author && Object(i.c)(s.author)
 				},
-				f = (e, t, s) => Object(b.g)(e) && !!t && !!t.title && t.title.length <= 200 && !t.isNSFW && !!t.media && (Object(c.G)(t.media) || Object(c.I)(t.media)) && (e => !!e && !!e.media && (Object(c.G)(e.media) || Object(c.I)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
+				f = (e, t, s) => Object(b.g)(e) && !Object(b.i)(e) && !!t && !!t.title && t.title.length <= 200 && !t.isNSFW && !!t.media && new Date(t.created) > new Date(2020, 5, 20) && new Date(t.created) <= new Date(2020, 7, 29) && (Object(c.G)(t.media) || Object(c.I)(t.media)) && (e => !!e && !!e.media && (Object(c.G)(e.media) || Object(c.I)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
 					let {
 						e: t
 					} = e;
@@ -55794,4 +55794,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5d702d86fefef724603c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.452d58857ee92c1cad4f.js.map
