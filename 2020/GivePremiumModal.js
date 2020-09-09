@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.1ef79cbe64044d30a877.js
-// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.5a0e8e2e9e394883ca44.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -86,9 +86,9 @@
 					error: Object(v.a)(e)
 				}))
 			}, j = n("./src/reddit/helpers/correlationIdTracker.ts"), C = n("./src/reddit/models/Toast/index.ts"), E = n("./src/reddit/selectors/premium.ts"), w = n("./src/reddit/actions/gold/constants.ts");
-			Object(x.a)(w.A), Object(x.a)(w.C), Object(x.a)(w.B), Object(x.a)(w.E);
-			const _ = Object(x.a)(w.z),
-				I = Object(x.a)(w.y),
+			Object(x.a)(w.B), Object(x.a)(w.D), Object(x.a)(w.C), Object(x.a)(w.F);
+			const _ = Object(x.a)(w.A),
+				I = Object(x.a)(w.z),
 				N = e => async (t, n) => {
 					await t(I(e));
 					const o = Object(E.a)(n());
@@ -113,7 +113,7 @@
 							text: n
 						}))
 					}
-				}, S = Object(x.a)(w.D), M = e => async (t, n) => {
+				}, S = Object(x.a)(w.E), M = e => async (t, n) => {
 					const o = n(),
 						c = Object(E.d)(o);
 					t(S(e));
@@ -796,4 +796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.1ef79cbe64044d30a877.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.5a0e8e2e9e394883ca44.js.map

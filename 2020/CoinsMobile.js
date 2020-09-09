@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.d412fffd29225ab5c733.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.6f7363829e3fc3f842df.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -201,7 +201,7 @@
 					}), {
 						":coin_price:": r.a.createElement("span", {
 							className: h.a.nowrap
-						}, r.a.createElement(E.a, null), g.o.coinPrice)
+						}, r.a.createElement(E.a, null), g.p.coinPrice)
 					})), r.a.createElement(f.a, {
 						className: h.a.gridItem,
 						icon: r.a.createElement("img", {
@@ -237,7 +237,7 @@
 						}, r.a.createElement(E.a, null), "700"),
 						":coin_price:": r.a.createElement("span", {
 							className: h.a.nowrap
-						}, r.a.createElement(E.a, null), g.n.coinPrice)
+						}, r.a.createElement(E.a, null), g.o.coinPrice)
 					}))))
 				}
 				renderFAQSection() {
@@ -263,4 +263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.d412fffd29225ab5c733.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.6f7363829e3fc3f842df.js.map

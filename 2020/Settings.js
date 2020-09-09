@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.be0e77dcd216ab666fc3.js
-// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4b5da3763237fe32aad3.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -316,7 +316,7 @@
 					} catch (o) {
 						u.c.captureException(o)
 					}
-				}, D = Object(m.a)(b.O), L = Object(m.a)(b.P), B = Object(m.a)(b.Q), U = e => async (t, n) => {
+				}, D = Object(m.a)(b.P), L = Object(m.a)(b.Q), B = Object(m.a)(b.R), U = e => async (t, n) => {
 					await t(D(e)), t(Object(l.e)({
 						kind: p.b.Error,
 						duration: l.a,
@@ -354,7 +354,7 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, W = Object(m.a)(b.S)
+				}, W = Object(m.a)(b.T)
 		},
 		"./src/reddit/actions/governance/communityDetails.ts": function(e, t, n) {
 			"use strict";
@@ -6774,4 +6774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.be0e77dcd216ab666fc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4b5da3763237fe32aad3.js.map

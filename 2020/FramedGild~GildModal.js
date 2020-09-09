@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e49ce2f7dc8683bf8a10.js
-// Retrieved at 9/8/2020, 6:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.25f120aa0263c6bf6541.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -293,15 +293,18 @@
 			s.d(t, "a", (function() {
 				return i
 			})), s.d(t, "b", (function() {
-				return c
+				return d
 			}));
 			var a = s("./src/lib/makeActionCreator/index.ts"),
 				n = s("./src/reddit/actions/modal.ts"),
 				r = s("./src/reddit/constants/modals.ts"),
 				o = s("./src/reddit/actions/gold/constants.ts");
-			const i = Object(a.a)(o.db),
-				c = () => async e => {
-					e(Object(n.h)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
+			const i = Object(a.a)(o.eb),
+				c = Object(a.a)(o.u),
+				d = e => async t => {
+					await t(c({
+						id: e
+					})), t(Object(n.h)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}
 		},
 		"./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts": function(e, t, s) {
@@ -1382,7 +1385,7 @@
 					},
 					purchaseCatalogPending: _.g,
 					showPurchaseModal: A.r,
-					selectedAward: y.a,
+					selectedAward: y.b,
 					subreddit: M.K,
 					subredditCoins: (e, t) => {
 						let {
@@ -2060,4 +2063,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e49ce2f7dc8683bf8a10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.25f120aa0263c6bf6541.js.map

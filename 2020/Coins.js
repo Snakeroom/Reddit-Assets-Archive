@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.50d4aef4ecfdff5a5653.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.86db942f6d1a449ae808.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -881,7 +881,7 @@
 					}), {
 						":coin_price:": l.a.createElement("span", {
 							className: P.a.nowrap
-						}, l.a.createElement(ae.a, null), O.o.coinPrice)
+						}, l.a.createElement(ae.a, null), O.p.coinPrice)
 					})), l.a.createElement(W.a, {
 						className: P.a.gridItem,
 						icon: l.a.createElement("img", {
@@ -915,7 +915,7 @@
 						}, l.a.createElement(ae.a, null), "700"),
 						":coin_price:": l.a.createElement("span", {
 							className: P.a.nowrap
-						}, l.a.createElement(ae.a, null), O.n.coinPrice)
+						}, l.a.createElement(ae.a, null), O.o.coinPrice)
 					}))))
 				}
 				renderPurchase() {
@@ -979,4 +979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.50d4aef4ecfdff5a5653.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.86db942f6d1a449ae808.js.map

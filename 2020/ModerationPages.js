@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f0469bd7573ea4b2848a.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8f4f6cf35caa4aa8b18b.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -147,7 +147,7 @@
 			e.exports = JSON.parse('{"id":"dea861ad7f0d"}')
 		},
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"92b847c26348"}')
+			e.exports = JSON.parse('{"id":"10d2b4634bba"}')
 		},
 		"./src/graphql/operations/FetchModerationLogActions.json": function(e) {
 			e.exports = JSON.parse('{"id":"f20f90e251f3"}')
@@ -6013,8 +6013,8 @@
 					communityAwardsDisabled: Q.b,
 					disableSettingsAvailable: e => Object(te.c)(e, {
 						experimentEligibilitySelector: te.a,
-						experimentName: ee.db
-					}) === ee.hb.Enabled,
+						experimentName: ee.eb
+					}) === ee.ib.Enabled,
 					isAddAwardModalOpen: e => Object(j.a)(e) === m.a,
 					isConfirmModalOpen: e => Object(j.a)(e) === m.b
 				}),
@@ -11149,7 +11149,7 @@
 						let {
 							userName: s
 						} = t;
-						return Object(l.d)(e, {
+						return Object(l.e)(e, {
 							userName: s,
 							minSize: 32
 						})
@@ -30749,4 +30749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f0469bd7573ea4b2848a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8f4f6cf35caa4aa8b18b.js.map

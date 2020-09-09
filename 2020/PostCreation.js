@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.51990350741cdce039c9.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7c15ceb163b3ec1a1c95.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -170,7 +170,7 @@
 			e.exports = JSON.parse('{"id":"fd09f54393b2"}')
 		},
 		"./src/graphql/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"dc6baf47b162"}')
+			e.exports = JSON.parse('{"id":"7f1ba87a9dd2"}')
 		},
 		"./src/graphql/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"2a194e7926dd"}')
@@ -677,16 +677,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.yb
+					experimentName: u.zb
 				});
-				return Object(u.Bc)(t) ? void 0 : t
+				return Object(u.Cc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.zb
+					experimentName: u.Ab
 				});
-				return Object(u.Bc)(t) ? void 0 : t
-			}, (e, t) => e === u.Ab.Enabled && t === u.Ab.Enabled);
+				return Object(u.Cc)(t) ? void 0 : t
+			}, (e, t) => e === u.Bb.Enabled && t === u.Bb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "5d47cb9-production"
+					SENTRY_RELEASE_VERSION: "33f5307-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1615,15 +1615,18 @@
 			n.d(t, "a", (function() {
 				return a
 			})), n.d(t, "b", (function() {
-				return c
+				return l
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/reddit/actions/modal.ts"),
 				r = n("./src/reddit/constants/modals.ts"),
 				i = n("./src/reddit/actions/gold/constants.ts");
-			const a = Object(s.a)(i.db),
-				c = () => async e => {
-					e(Object(o.h)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
+			const a = Object(s.a)(i.eb),
+				c = Object(s.a)(i.u),
+				l = e => async t => {
+					await t(c({
+						id: e
+					})), t(Object(o.h)(r.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}
 		},
 		"./src/reddit/actions/gold/reportAward.ts": function(e, t, n) {
@@ -1637,7 +1640,7 @@
 				i = n("./src/reddit/models/Toast/index.ts"),
 				a = n("./src/reddit/endpoints/gold/communityAwards.ts"),
 				c = n("./src/reddit/actions/gold/constants.ts");
-			const l = Object(o.a)(c.cb),
+			const l = Object(o.a)(c.db),
 				d = e => async (t, n, o) => {
 					let {
 						apiContext: c
@@ -1679,10 +1682,10 @@
 			}));
 			var d = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/actions/gold/constants.ts");
-			Object(o.a)(u.jb), Object(o.a)(u.ib), Object(o.a)(u.hb);
-			const p = Object(o.a)(u.mb),
-				m = Object(o.a)(u.lb),
-				h = Object(o.a)(u.kb),
+			Object(o.a)(u.kb), Object(o.a)(u.jb), Object(o.a)(u.ib);
+			const p = Object(o.a)(u.nb),
+				m = Object(o.a)(u.mb),
+				h = Object(o.a)(u.lb),
 				b = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 25;
 					return async (n, o, i) => {
@@ -1707,7 +1710,7 @@
 						}
 					}
 				},
-				f = Object(o.a)(u.nb),
+				f = Object(o.a)(u.ob),
 				g = e => async (t, n) => {
 					t(f({
 						postId: e
@@ -3148,7 +3151,7 @@
 				p = n("./src/reddit/models/Toast/index.ts"),
 				m = n("./src/lib/makeGqlRequest/index.ts"),
 				h = n("./src/reddit/actions/gold/constants.ts");
-			const b = Object(l.a)(h.F),
+			const b = Object(l.a)(h.G),
 				f = e => {
 					let {
 						awardId: t,
@@ -3848,24 +3851,25 @@
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(k.c)(e, {
 							experimentEligibilitySelector: T.H,
-							experimentName: _.cb
+							experimentName: _.db
 						});
-						return !(!t || Object(_.Bc)(t))
+						return !(!t || Object(_.Cc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: P.c
 				}),
-				Ae = Object(i.b)(Le, (e, t) => {
+				Ae = e => Object(E.a)(e.id) ? e.postId : e.id,
+				De = Object(i.b)(Le, (e, t) => {
 					let {
 						thing: n
 					} = t;
 					return {
 						hideAward: t => e(f({
 							awardId: t,
-							thingId: Object(E.a)(n.id) ? n.postId : n.id
+							thingId: Ae(n)
 						})),
 						onAddAward: (t, s) => {
-							const o = Object(E.a)(n.id) ? n.postId : n.id;
+							const o = Ae(n);
 							return e(Object(g.d)({
 								awardId: s,
 								correlationId: t,
@@ -3877,10 +3881,10 @@
 							tooltipId: t
 						})),
 						onToggleHideAwardModal: () => e(Object(x.i)("AwardBadges--Modal--HideAwardConfirmation")),
-						triggerOverlayAnimation: () => e(Object(c.b)())
+						triggerOverlayAnimation: () => e(Object(c.b)(Ae(n)))
 					}
 				});
-			class De extends r.a.Component {
+			class Fe extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleAddAward = async e => {
 						const t = Object(v.d)(v.a.GildingFlow, !0),
@@ -3974,7 +3978,7 @@
 						tooltipType: v
 					} = this.props, {
 						showAllAwards: C
-					} = this.state, j = g || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, S = Object(w.p)(Object.keys(x.awardCountsById || {}).map(t => e[t]).filter(Boolean)), _ = !!i && i.id === x.authorId;
+					} = this.state, j = g || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, S = Object(w.q)(Object.keys(x.awardCountsById || {}).map(t => e[t]).filter(Boolean)), _ = !!i && i.id === x.authorId;
 					return r.a.createElement(r.a.Fragment, null, n ? r.a.createElement(be, {
 						awards: S,
 						awardsCountInView: t,
@@ -4035,7 +4039,7 @@
 					}))
 				}
 			}
-			t.a = Ae(Object(j.c)(De))
+			t.a = De(Object(j.c)(Fe))
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -7925,7 +7929,7 @@
 					} = this.props;
 					if (!o) return;
 					let r = "";
-					return s && (r += s), e === A.ub.OCR ? r += "".concat(oe).concat(t) : n.title && (r += "".concat(oe).concat(n.title)), e === A.ub.ShortPostTitleOCR && (r += "".concat(oe).concat(t)), r.length > se ? Object(v.a)(r, se, m.cb) : r
+					return s && (r += s), e === A.vb.OCR ? r += "".concat(oe).concat(t) : n.title && (r += "".concat(oe).concat(n.title)), e === A.vb.ShortPostTitleOCR && (r += "".concat(oe).concat(t)), r.length > se ? Object(v.a)(r, se, m.cb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -25022,7 +25026,7 @@
 					const {
 						thingId: n,
 						packageId: c
-					} = t, u = !!n, b = r.a(e), f = b ? Object(p.getAwardTypeFromAward)(b) : null, g = u ? f : a.m(e) ? d.Premium : d.Coins, x = n ? Object(h.a)(n) ? "comment" : "post" : void 0, y = c || a.q(e), v = [...Object(i.b)(e), ...Object(i.d)(e)].filter(e => e.mobileId === y)[0], E = Object(o.b)(v, u), C = v ? Math.round(1e4 * (v.baselinePennies - v.pennies) / v.baselinePennies) / 100 : 0, O = v ? Math.round(1e4 * (v.coins - v.baselineCoins) / v.coins) / 100 : 0, j = v ? v.baselinePennies !== v.pennies ? "".concat(C, "_percent_price") : v.baselineCoins !== v.coins ? "".concat(O, "_percent_bonus") : void 0 : void 0, w = g === d.Premium ? s.ob : v ? v.pennies : void 0;
+					} = t, u = !!n, b = r.b(e), f = b ? Object(p.getAwardTypeFromAward)(b) : null, g = u ? f : a.m(e) ? d.Premium : d.Coins, x = n ? Object(h.a)(n) ? "comment" : "post" : void 0, y = c || a.q(e), v = [...Object(i.b)(e), ...Object(i.d)(e)].filter(e => e.mobileId === y)[0], E = Object(o.b)(v, u), C = v ? Math.round(1e4 * (v.baselinePennies - v.pennies) / v.baselinePennies) / 100 : 0, O = v ? Math.round(1e4 * (v.coins - v.baselineCoins) / v.coins) / 100 : 0, j = v ? v.baselinePennies !== v.pennies ? "".concat(C, "_percent_price") : v.baselineCoins !== v.coins ? "".concat(O, "_percent_bonus") : void 0 : void 0, w = g === d.Premium ? s.ob : v ? v.pennies : void 0;
 					return Object.assign(Object.assign({}, l.defaults(e)), {
 						comment: n ? l.comment(e, n) : null,
 						correlationId: a.o(e) || Object(m.d)(m.a.GoldPayment, !1),
@@ -33462,13 +33466,6 @@
 			}));
 			const s = e => !0
 		},
-		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			}));
-			const s = e => e.gild.selectedAward
-		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -33759,4 +33756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.51990350741cdce039c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7c15ceb163b3ec1a1c95.js.map

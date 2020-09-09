@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.05166b525b4e5f4f8f94.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.1e0ca1fb5260af24d18d.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -486,7 +486,7 @@
 					isIframed: C.h,
 					nightmode: v.S,
 					savedCardsPending: k.t,
-					selectedAward: y.a,
+					selectedAward: y.b,
 					selectedPayment: k.a,
 					stripeErrorMessage: k.h,
 					stripeTokenPending: k.k,
@@ -630,4 +630,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.05166b525b4e5f4f8f94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.1e0ca1fb5260af24d18d.js.map

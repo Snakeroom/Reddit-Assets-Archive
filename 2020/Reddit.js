@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6d6a5811da854c97eb33.js
-// Retrieved at 9/9/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.546700c09fb8bd1d329e.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4967,9 +4967,9 @@
 				vo = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				Co = s("./src/reddit/selectors/experiments/trending.ts"),
 				Oo = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const yo = e => Object(zt.E)(e) || gs.rc.Treatment1 === Object(Oo.c)(e, {
+			const yo = e => Object(zt.E)(e) || gs.sc.Treatment1 === Object(Oo.c)(e, {
 				experimentEligibilitySelector: Oo.a,
-				experimentName: gs.oc
+				experimentName: gs.pc
 			});
 			var xo = s("./src/reddit/selectors/searchResults.ts"),
 				Po = s("./src/reddit/selectors/tooltip.ts"),
@@ -8274,9 +8274,9 @@
 		"./src/reddit/components/Gold/GildAnimationOverlay/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "SPARKLE_ASSET_PATH", (function() {
-				return g
-			})), s.d(t, "STARBURST_ASSET_PATH", (function() {
 				return f
+			})), s.d(t, "STARBURST_ASSET_PATH", (function() {
+				return v
 			}));
 			var n = s("./src/config.ts"),
 				a = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -8288,42 +8288,44 @@
 				l = s("./src/lib/classNames/index.ts"),
 				u = s("./src/reddit/actions/modal.ts"),
 				m = s("./src/reddit/constants/modals.ts"),
-				p = s("./src/reddit/selectors/gold/giveAwards.ts"),
-				b = s("./src/reddit/components/Gold/GildAnimationOverlay/index.m.less"),
-				h = s.n(b);
-			const g = "".concat(n.a.assetPath, "/img/gold/animated-sparkle-256.png"),
-				f = "".concat(n.a.assetPath, "/img/gold/animated-starburst-256.png"),
-				v = Object(c.c)({
-					award: p.a
+				p = s("./src/reddit/selectors/gold/awardIcon.ts"),
+				b = s("./src/reddit/selectors/gold/giveAwards.ts"),
+				h = s("./src/reddit/components/Gold/GildAnimationOverlay/index.m.less"),
+				g = s.n(h);
+			const f = "".concat(n.a.assetPath, "/img/gold/animated-sparkle-256.png"),
+				v = "".concat(n.a.assetPath, "/img/gold/animated-starburst-256.png"),
+				C = Object(c.c)({
+					award: b.b,
+					awardIcon: p.d
 				}),
-				C = Object(i.b)(v, e => ({
+				O = Object(i.b)(C, e => ({
 					onClose: () => e(Object(u.g)(m.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}));
-			t.default = Object(d.a)(C(e => {
+			t.default = Object(d.a)(O(e => {
 				const {
 					award: t,
-					onClose: s
+					awardIcon: s,
+					onClose: n
 				} = e;
-				setTimeout(s, 1700);
-				const n = t.icon.url,
-					r = a.fbt._("Animation of {award name} image", [a.fbt._param("award name", t.name)], {
-						hk: "222osK"
-					});
+				setTimeout(n, 1700);
+				const r = a.fbt._("Animation of {award name} image", [a.fbt._param("award name", t.name)], {
+					hk: "222osK"
+				});
 				return o.a.createElement("div", {
-					className: h.a.gildAnimationContainer
+					className: g.a.gildAnimationContainer
 				}, o.a.createElement("div", {
-					className: Object(l.a)(h.a.animationComponent, h.a.starburst),
+					className: Object(l.a)(g.a.animationComponent, g.a.starburst),
 					style: {
-						backgroundImage: "url(".concat(f, ")")
+						backgroundImage: "url(".concat(v, ")")
 					}
 				}), o.a.createElement("img", {
 					alt: r,
-					className: Object(l.a)(h.a.animationComponent, h.a.awardAsset),
-					src: n
+					className: Object(l.a)(g.a.animationComponent, g.a.awardAsset),
+					src: s
 				}), o.a.createElement("div", {
-					className: Object(l.a)(h.a.animationComponent, h.a.sparkle),
+					className: Object(l.a)(g.a.animationComponent, g.a.sparkle),
 					style: {
-						backgroundImage: "url(".concat(g, ")")
+						backgroundImage: "url(".concat(f, ")")
 					}
 				}))
 			}))
@@ -11496,8 +11498,8 @@
 			const vs = {
 					displayDelay: 15,
 					displayOnRoutes: [g.Bb.SUBREDDIT, g.Bb.COMMENTS],
-					experimentName: $t.pb,
-					experimentVariant: $t.sb.On,
+					experimentName: $t.qb,
+					experimentVariant: $t.tb.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -13547,9 +13549,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.qc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.rc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.nc
+				experimentName: n.oc
 			}))
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, s) {
@@ -13685,4 +13687,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6d6a5811da854c97eb33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.546700c09fb8bd1d329e.js.map

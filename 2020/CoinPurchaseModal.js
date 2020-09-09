@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.11d2969f6a8c2465395b.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.d3a47fcc86c862db87ac.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -693,7 +693,7 @@
 					isIframed: k.h,
 					nightmode: v.S,
 					savedCardsPending: E.t,
-					selectedAward: j.a,
+					selectedAward: j.b,
 					selectedPayment: E.a,
 					stripeErrorMessage: E.h,
 					stripeTokenPending: E.k,
@@ -894,4 +894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.11d2969f6a8c2465395b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.d3a47fcc86c862db87ac.js.map

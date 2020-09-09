@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.270a4ded68b484a123e1.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f9f61a1e83cc739a6148.js
+// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -2927,7 +2927,7 @@
 					const {
 						thingId: s,
 						packageId: c
-					} = t, u = !!s, h = i.a(e), f = h ? Object(m.getAwardTypeFromAward)(h) : null, x = u ? f : a.m(e) ? d.Premium : d.Coins, g = s ? Object(b.a)(s) ? "comment" : "post" : void 0, v = c || a.q(e), j = [...Object(o.b)(e), ...Object(o.d)(e)].filter(e => e.mobileId === v)[0], y = Object(r.b)(j, u), O = j ? Math.round(1e4 * (j.baselinePennies - j.pennies) / j.baselinePennies) / 100 : 0, C = j ? Math.round(1e4 * (j.coins - j.baselineCoins) / j.coins) / 100 : 0, w = j ? j.baselinePennies !== j.pennies ? "".concat(O, "_percent_price") : j.baselineCoins !== j.coins ? "".concat(C, "_percent_bonus") : void 0 : void 0, k = x === d.Premium ? n.ob : j ? j.pennies : void 0;
+					} = t, u = !!s, h = i.b(e), f = h ? Object(m.getAwardTypeFromAward)(h) : null, x = u ? f : a.m(e) ? d.Premium : d.Coins, g = s ? Object(b.a)(s) ? "comment" : "post" : void 0, v = c || a.q(e), j = [...Object(o.b)(e), ...Object(o.d)(e)].filter(e => e.mobileId === v)[0], y = Object(r.b)(j, u), O = j ? Math.round(1e4 * (j.baselinePennies - j.pennies) / j.baselinePennies) / 100 : 0, C = j ? Math.round(1e4 * (j.coins - j.baselineCoins) / j.coins) / 100 : 0, w = j ? j.baselinePennies !== j.pennies ? "".concat(O, "_percent_price") : j.baselineCoins !== j.coins ? "".concat(C, "_percent_bonus") : void 0 : void 0, k = x === d.Premium ? n.ob : j ? j.pennies : void 0;
 					return Object.assign(Object.assign({}, l.defaults(e)), {
 						comment: s ? l.comment(e, s) : null,
 						correlationId: a.o(e) || Object(p.d)(p.a.GoldPayment, !1),
@@ -4001,13 +4001,6 @@
 				},
 				z = e => e.economics.pointsCopy.data
 		},
-		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return n
-			}));
-			const n = e => e.gild.selectedAward
-		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, s) {
 			"use strict";
 			var n = s("./src/config.ts"),
@@ -4066,4 +4059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.270a4ded68b484a123e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f9f61a1e83cc739a6148.js.map
