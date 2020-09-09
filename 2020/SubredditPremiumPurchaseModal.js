@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.af08b93d8e95096424e4.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.060641b7aa8dceef5656.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -462,7 +462,7 @@
 				})),
 				B = Object(l.t)(),
 				T = Object(d.c)(k);
-			t.default = Object(m.a)("spPremium", Object(c.a)(B(M(T))))
+			t.default = Object(m.a)("spSpecialMemberships", Object(c.a)(B(M(T))))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=SubredditPremiumPurchaseModal.af08b93d8e95096424e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.060641b7aa8dceef5656.js.map

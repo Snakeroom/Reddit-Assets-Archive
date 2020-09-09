@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.488b98408185e3c652b3.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.5d4cf566bb8611131731.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -572,7 +572,7 @@
 			var p = a("./src/reddit/featureFlags/component.tsx"),
 				u = a("./src/reddit/hooks/useSafeState.ts"),
 				b = a("./src/reddit/selectors/economics.ts");
-			t.a = Object(p.a)("spPremiumSubscriptions", (function(e) {
+			t.a = Object(p.a)("spSpecialMemberships", (function(e) {
 				const t = Object(s.useRef)(!0),
 					[a, i] = Object(u.a)(!1, t),
 					n = Object(r.d)(t => Object(b.x)(t, e.subredditId)),
@@ -3163,7 +3163,7 @@
 				}),
 				Ht = Object(it.t)(),
 				Zt = Object(b.c)(Ft);
-			var Ut = Object(nt.a)("spPremium", Object(ot.a)(Ht(Wt(Zt)))),
+			var Ut = Object(nt.a)("spSpecialMemberships", Object(ot.a)(Ht(Wt(Zt)))),
 				Vt = a("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/Products/index.m.less"),
 				qt = a.n(Vt);
 
@@ -3907,4 +3907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.488b98408185e3c652b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.5d4cf566bb8611131731.js.map

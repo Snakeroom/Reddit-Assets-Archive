@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.04b3e546cd316ff1c426.js
-// Retrieved at 9/9/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.037fc34ae92b59ca992b.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -1275,7 +1275,7 @@
 						} = t;
 						return ((e.users.appliedBadges[r] || {})[s] || []).map(t => e.badges.models[t]).filter(Boolean)
 					},
-					useHovercard: h.d.spPremium
+					useHovercard: h.d.spSpecialMemberships
 				}),
 				y = Object(n.c)({
 					badges: (e, t) => {
@@ -1288,7 +1288,7 @@
 						}
 						return []
 					},
-					useHovercard: h.d.spPremium
+					useHovercard: h.d.spSpecialMemberships
 				}),
 				C = e => ({
 					onShowTooltip: t => e(Object(l.f)({
@@ -1349,8 +1349,8 @@
 					} = t;
 					return Object(u.r)(e, s, r)
 				},
-				customBadgesEnabled: m.d.spCustomBadges,
-				premiumEnabled: e => m.d.spPremium(e)
+				customBadgesEnabled: m.d.spCustomBadgesAndEmotes,
+				premiumEnabled: e => m.d.spSpecialMemberships(e)
 			}), e => ({
 				onShowTooltip: t => e(Object(c.f)({
 					tooltipId: t
@@ -2464,4 +2464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.04b3e546cd316ff1c426.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.037fc34ae92b59ca992b.js.map

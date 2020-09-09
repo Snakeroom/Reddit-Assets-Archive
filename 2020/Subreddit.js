@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.352f0ba5f6b8d2de33b9.js
-// Retrieved at 9/9/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.fea197abdca5dbedb128.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -1782,7 +1782,7 @@
 				LoadingComponent: () => null,
 				getComponent: () => n.e("SubredditPremiumNewUserWelcome").then(n.bind(null, "./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/index.tsx")).then(e => e.default)
 			});
-			t.a = Object(r.a)("spPremium", a)
+			t.a = Object(r.a)("spSpecialMemberships", a)
 		},
 		"./src/reddit/components/Economics/SubredditPremium/SidebarCards/async.tsx": function(e, t, n) {
 			"use strict";
@@ -1793,7 +1793,7 @@
 				LoadingComponent: () => null,
 				getComponent: () => Promise.all([n.e("EconomicsSubredditPremiumSidebarCards~SubredditPremiumBadgeHovercardTooltip"), n.e("EconomicsSubredditPremiumSidebarCards")]).then(n.bind(null, "./src/reddit/components/Economics/SubredditPremium/SidebarCards/index.tsx")).then(e => e.default)
 			});
-			t.a = Object(r.a)("spPremium", a)
+			t.a = Object(r.a)("spSpecialMemberships", a)
 		},
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, n) {
 			e.exports = {
@@ -7607,7 +7607,7 @@
 				isBlacklistedTopContentPage: be.f,
 				listingKey: Fe,
 				sortParams: Ke,
-				subredditPremiumEnabled: oe.d.spPremiumUpsells,
+				specialMembershipUpsellsEnabled: oe.d.spSpecialMembershipUpsells,
 				stellarRegistrationBannerEnabled: oe.d.spStellarWalletRegistration,
 				topContent: qe,
 				topContentDiscoveryUnit: e => Object(be.c)(e, {
@@ -7664,7 +7664,7 @@
 					isPopular: f
 				} = c, {
 					claimablePointsEnabled: v,
-					subredditPremiumEnabled: y,
+					specialMembershipUpsellsEnabled: y,
 					listingKey: _,
 					sortParams: {
 						sort: E,
@@ -7684,7 +7684,7 @@
 				return Object.assign({
 					countrySort: B,
 					claimablePointsEnabled: v,
-					subredditPremiumEnabled: y,
+					specialMembershipUpsellsEnabled: y,
 					inGoldPowerupsExperiment: g,
 					isLoggedIn: h,
 					isInTrendingEntrypointExperiment: x,
@@ -7821,7 +7821,7 @@
 						renderNSFWContentGate: l,
 						showCreatePostBanner: u,
 						sort: m,
-						subredditPremiumEnabled: b,
+						specialMembershipUpsellsEnabled: b,
 						isTopContentDismissed: h,
 						stellarRegistrationBannerEnabled: f,
 						sendEvent: _,
@@ -8409,4 +8409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.352f0ba5f6b8d2de33b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fea197abdca5dbedb128.js.map

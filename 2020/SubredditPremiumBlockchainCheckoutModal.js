@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.f6c146488b8f36ed2f64.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.0785361b827574e6be06.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -85,8 +85,8 @@
 				y = s("./src/reddit/controls/FormFields/index.tsx"),
 				O = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				C = s("./src/reddit/featureFlags/component.tsx"),
-				P = s("./src/reddit/helpers/governance/ethereum.ts"),
-				M = s("./src/reddit/helpers/governance/stellar.ts"),
+				M = s("./src/reddit/helpers/governance/ethereum.ts"),
+				P = s("./src/reddit/helpers/governance/stellar.ts"),
 				S = s("./src/reddit/models/Toast/index.ts"),
 				I = s("./src/reddit/selectors/economics.ts"),
 				T = s("./src/reddit/selectors/subreddit.ts"),
@@ -183,7 +183,7 @@
 						if (!e) throw new Error("could not find subscription contract address");
 						this.setState({
 							purchasePending: !0
-						}), Object(P.g)(e, this.props.wallet.publicAddress, this.state.numMonths).then(() => {
+						}), Object(M.g)(e, this.props.wallet.publicAddress, this.state.numMonths).then(() => {
 							this.pollForMembership()
 						}).catch(e => {
 							this.props.onError(e.message), this.setState({
@@ -214,7 +214,7 @@
 					} = this.props, {
 						numMonths: r
 					} = this.state, o = new n.BigNumber(e).multipliedBy(r).toString();
-					return Object(M.a)(s && s.address || "", s && s.symbol || "", Object(x.b)(o, t) || "0")
+					return Object(P.a)(s && s.address || "", s && s.symbol || "", Object(x.b)(o, t) || "0")
 				}
 				pollForMembership() {
 					if (!this.pollForMembershipSuccessTimeout) {
@@ -357,7 +357,7 @@
 					}))
 				})),
 				te = Object(N.c)(Q);
-			t.default = Object(C.a)("spPremium", Object(u.a)(ee(te)))
+			t.default = Object(C.a)("spSpecialMemberships", Object(u.a)(ee(te)))
 		},
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1051,4 +1051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.f6c146488b8f36ed2f64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.0785361b827574e6be06.js.map

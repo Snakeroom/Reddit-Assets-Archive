@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.652fae9230d445d130b5.js
-// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.6fc662fd1316b99987fe.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal~HarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -730,9 +730,9 @@
 			})), n.d(t, "s", (function() {
 				return N
 			})), n.d(t, "o", (function() {
-				return P
-			})), n.d(t, "l", (function() {
 				return T
+			})), n.d(t, "l", (function() {
+				return P
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				a = n("./src/reddit/endpoints/governance/crypto.ts"),
@@ -791,7 +791,7 @@
 						const t = Object(d.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
-					const n = s.d.spPolls(e) || s.d.spKarmaPoints(e),
+					const n = s.d.spPolls(e),
 						r = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
 					if (r) {
 						const e = !!r.polls && !1 === r.polls.canCreate;
@@ -844,7 +844,7 @@
 						image: o.image
 					}
 				},
-				P = (e, t) => {
+				T = (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -855,11 +855,11 @@
 						address: void 0
 					}
 				},
-				T = (e, t) => {
+				P = (e, t) => {
 					const n = E(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.652fae9230d445d130b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal~HarbergerTaxManageModal.6fc662fd1316b99987fe.js.map

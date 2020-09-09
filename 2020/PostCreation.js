@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.73158975e6548964039f.js
-// Retrieved at 9/9/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.51990350741cdce039c9.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "5b2154a-production"
+					SENTRY_RELEASE_VERSION: "5d47cb9-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -4162,7 +4162,7 @@
 						} = t;
 						return ((e.users.appliedBadges[s] || {})[n] || []).map(t => e.badges.models[t]).filter(Boolean)
 					},
-					useHovercard: h.d.spPremium
+					useHovercard: h.d.spSpecialMemberships
 				}),
 				S = Object(i.c)({
 					badges: (e, t) => {
@@ -4175,7 +4175,7 @@
 						}
 						return []
 					},
-					useHovercard: h.d.spPremium
+					useHovercard: h.d.spSpecialMemberships
 				}),
 				_ = e => ({
 					onShowTooltip: t => e(Object(d.f)({
@@ -5247,8 +5247,8 @@
 					} = t;
 					return Object(p.r)(e, n, s)
 				},
-				customBadgesEnabled: u.d.spCustomBadges,
-				premiumEnabled: e => u.d.spPremium(e)
+				customBadgesEnabled: u.d.spCustomBadgesAndEmotes,
+				premiumEnabled: e => u.d.spSpecialMemberships(e)
 			}), e => ({
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
@@ -28729,7 +28729,7 @@
 					if (!i) return;
 					if (t(me(i)), e.postFieldValidationPending && (await e.postFieldValidationPending, Object(w.u)(n()))) return;
 					let u;
-					const p = c && (oe.d.spPolls(r) || oe.d.spKarmaPoints(r));
+					const p = c && oe.d.spPolls(r);
 					if ((u = p ? await
 							function(e, t, n) {
 								const s = t.destSubreddit.id;
@@ -33272,7 +33272,7 @@
 					}
 				},
 				v = (e, t, n) => {
-					if (!s.d.spBadges(e) && !s.d.spPremium(e)) return [];
+					if (!s.d.spBadges(e)) return [];
 					const r = (e.users.appliedBadges[n] || {})[t] || [];
 					return Object(o.a)(r.map(t => e.badges.models[t]).filter(Boolean))
 				},
@@ -33590,7 +33590,7 @@
 						const t = Object(a.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
-					const n = r.d.spPolls(e) || r.d.spKarmaPoints(e),
+					const n = r.d.spPolls(e),
 						s = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
 					if (s) {
 						const e = !!s.polls && !1 === s.polls.canCreate;
@@ -33759,4 +33759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.73158975e6548964039f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.51990350741cdce039c9.js.map

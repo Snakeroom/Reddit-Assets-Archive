@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.1f0fb14707be8e77bc6d.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.395b145282f9ef012394.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -55,8 +55,8 @@
 				p = r("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
 				g = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				f = r("./src/reddit/featureFlags/index.ts"),
-				_ = r("./src/reddit/models/Badge/index.ts"),
-				h = r("./src/reddit/models/Badge/managementPage.ts"),
+				h = r("./src/reddit/models/Badge/index.ts"),
+				_ = r("./src/reddit/models/Badge/managementPage.ts"),
 				E = r("./src/reddit/selectors/economics.ts"),
 				j = r("./src/reddit/selectors/products.ts"),
 				O = r("./src/reddit/selectors/telemetry.ts"),
@@ -122,7 +122,7 @@
 							e(Object(P.i)()), e(Object(y.c)({
 								badge: r,
 								subredditId: s,
-								initialView: h.c.Gallery
+								initialView: _.c.Gallery
 							}))
 						}
 					}
@@ -186,7 +186,7 @@
 							e(Object(P.i)()), e(Object(y.c)({
 								badge: r,
 								subredditId: s,
-								initialView: h.c.MyBadges
+								initialView: _.c.MyBadges
 							}))
 						}
 					}
@@ -222,7 +222,7 @@
 				}
 				render() {
 					const e = function(e) {
-						const t = !!e.badge.placement || Object(_.d)(e.badge);
+						const t = !!e.badge.placement || Object(h.d)(e.badge);
 						return e.userId && (p.b.has(e.badge.id) || p.b.has(e.badge.type)) ? W.LFG : t && e.userIsPremiumSubscriber === E.a.Subscribed || !t && e.ownedBadge ? W.Management : t && e.userIsPremiumSubscriber !== E.a.Subscribed && e.premiumSubscriptionsEnabled ? W.Education : !t && !e.ownedBadge && e.relevantProduct && e.relevantProduct.price ? W.Gallery : void 0
 					}(this.props);
 					return n.a.createElement("div", {
@@ -232,7 +232,7 @@
 						badge: this.props.badge,
 						className: J.a.content,
 						subredditId: this.props.subredditId,
-						type: Object(h.d)(this.props.badge.placement)
+						type: Object(_.d)(this.props.badge.placement)
 					}), e === W.Management && n.a.createElement(Z, {
 						className: J.a.footer,
 						badge: this.props.badge,
@@ -255,12 +255,12 @@
 			}
 			const X = Object(a.c)({
 				ownedBadge: E.m,
-				premiumSubscriptionsEnabled: f.d.spPremiumSubscriptions,
+				premiumSubscriptionsEnabled: f.d.spSpecialMemberships,
 				relevantProduct: (e, t) => {
 					let {
 						badge: r
 					} = t;
-					if (!Object(_.c)(r)) return r;
+					if (!Object(h.c)(r)) return r;
 					const s = r.type;
 					return Object(j.a)(e, s)
 				},
@@ -510,4 +510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.1f0fb14707be8e77bc6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.395b145282f9ef012394.js.map

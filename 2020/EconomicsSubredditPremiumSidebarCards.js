@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.7f399cd17524702fa7a3.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.15f9275cab620f78c2a9.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, s) {
@@ -174,7 +174,7 @@
 						} = t;
 						return ((e.users.appliedBadges[r] || {})[s] || []).map(t => e.badges.models[t]).filter(Boolean)
 					},
-					useHovercard: b.d.spPremium
+					useHovercard: b.d.spSpecialMemberships
 				}),
 				v = Object(o.c)({
 					badges: (e, t) => {
@@ -187,7 +187,7 @@
 						}
 						return []
 					},
-					useHovercard: b.d.spPremium
+					useHovercard: b.d.spSpecialMemberships
 				}),
 				w = e => ({
 					onShowTooltip: t => e(Object(l.f)({
@@ -254,8 +254,8 @@
 					} = t;
 					return Object(m.r)(e, s, r)
 				},
-				customBadgesEnabled: u.d.spCustomBadges,
-				premiumEnabled: e => u.d.spPremium(e)
+				customBadgesEnabled: u.d.spCustomBadgesAndEmotes,
+				premiumEnabled: e => u.d.spSpecialMemberships(e)
 			}), e => ({
 				onShowTooltip: t => e(Object(c.f)({
 					tooltipId: t
@@ -451,7 +451,7 @@
 			var m = s("./src/reddit/featureFlags/component.tsx"),
 				p = s("./src/reddit/hooks/useSafeState.ts"),
 				b = s("./src/reddit/selectors/economics.ts");
-			t.a = Object(m.a)("spPremiumSubscriptions", (function(e) {
+			t.a = Object(m.a)("spSpecialMemberships", (function(e) {
 				const t = Object(r.useRef)(!0),
 					[s, o] = Object(p.a)(!1, t),
 					d = Object(i.d)(t => Object(b.x)(t, e.subredditId)),
@@ -571,7 +571,7 @@
 			var y = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/Controls/index.m.less"),
 				B = s.n(y);
 			const N = Object(o.c)({
-				customBadgesEnabled: d.d.spCustomBadges,
+				customBadgesEnabled: d.d.spCustomBadgesAndEmotes,
 				hasGalleryBadges: (e, t) => {
 					let {
 						subredditId: s
@@ -638,12 +638,12 @@
 						hk: "4k6iqB"
 					})))
 				}))),
-				D = s("./src/higherOrderComponents/asTooltip.tsx"),
-				M = s("./src/reddit/controls/Dropdown/index.tsx"),
+				M = s("./src/higherOrderComponents/asTooltip.tsx"),
+				D = s("./src/reddit/controls/Dropdown/index.tsx"),
 				A = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				U = s("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/DismissDropdown/index.m.less"),
 				H = s.n(U);
-			const L = Object(D.a)(M.a);
+			const L = Object(M.a)(D.a);
 
 			function F(e) {
 				return n.a.createElement(L, {
@@ -888,7 +888,7 @@
 					} = t;
 					return Object(x.s)(e, s)
 				},
-				premiumSubscriptionsEnabled: d.d.spPremiumSubscriptions,
+				premiumSubscriptionsEnabled: d.d.spSpecialMemberships,
 				showBanner: (e, t) => {
 					let {
 						subredditId: s
@@ -938,7 +938,7 @@
 				}
 			}
 			const Ee = Object(o.c)({
-				premiumSubscriptionsEnabled: d.d.spPremiumSubscriptions
+				premiumSubscriptionsEnabled: d.d.spSpecialMemberships
 			});
 			t.default = Object(i.b)(Ee)(Oe)
 		},
@@ -1034,4 +1034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EconomicsSubredditPremiumSidebarCards.7f399cd17524702fa7a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.15f9275cab620f78c2a9.js.map

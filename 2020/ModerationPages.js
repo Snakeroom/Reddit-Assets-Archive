@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f42535d754a1b80aeda5.js
-// Retrieved at 9/9/2020, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f0469bd7573ea4b2848a.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -28545,14 +28545,13 @@
 				toggleCreateWikiModal: () => e(Object(W.i)("CreateWikiPageModal"))
 			}))(Ue));
 			const We = Object(d.c)({
-				isBadgesEnabled: V.d.spCustomBadges,
+				isBadgesAndEmotesEnabled: V.d.spCustomBadgesAndEmotes,
 				isEligibleForCommunityAwards: (e, t) => {
 					let {
 						subreddit: s
 					} = t;
 					return Object(C.a)(s)
 				},
-				isEmotesEnabled: V.d.spEmotesModTools,
 				isUsingNewModMail: (e, t) => {
 					let {
 						subreddit: s
@@ -28719,7 +28718,7 @@
 								className: ie.a.sectionHeader
 							}, r.a.createElement(se.a, {
 								className: ie.a.iconStyles
-							}), e.isBadgesEnabled ? p.fbt._("Badges, flair & emojis", null, {
+							}), e.isBadgesAndEmotesEnabled ? p.fbt._("Badges, flair & emojis", null, {
 								hk: "1FuDnm"
 							}) : p.fbt._("Flair & emojis", null, {
 								hk: "42b2AJ"
@@ -28743,17 +28742,17 @@
 								label: g(h.Qb.PostFlair),
 								onClick: this.onClickPostFlair,
 								path: "".concat(e.subreddit.url, "about/postflair")
-							}), e.isBadgesEnabled && r.a.createElement(le.b, {
+							}), e.isBadgesAndEmotesEnabled && r.a.createElement(r.a.Fragment, null, r.a.createElement(le.b, {
 								isActive: e.pageName === h.Qb.Badges,
 								label: g(h.Qb.Badges),
 								onClick: this.onClickBadges,
 								path: "".concat(e.subreddit.url, "about/badges")
-							}), e.isEmotesEnabled && r.a.createElement(le.b, {
+							}), r.a.createElement(le.b, {
 								isActive: e.pageName === h.Qb.Emotes,
 								label: g(h.Qb.Emotes),
 								onClick: this.onClickEmotes,
 								path: "".concat(e.subreddit.url, "about/emotes")
-							})), (e.moderatorPermissions.config || e.moderatorPermissions.posts) && r.a.createElement("div", {
+							}))), (e.moderatorPermissions.config || e.moderatorPermissions.posts) && r.a.createElement("div", {
 								className: ie.a.navSection
 							}, r.a.createElement("div", {
 								className: ie.a.sectionHeader
@@ -29782,7 +29781,7 @@
 						const t = Object(i.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
-					const s = a.d.spPolls(e) || a.d.spKarmaPoints(e),
+					const s = a.d.spPolls(e),
 						n = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
 					if (n) {
 						const e = !!n.polls && !1 === n.polls.canCreate;
@@ -30750,4 +30749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f42535d754a1b80aeda5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f0469bd7573ea4b2848a.js.map

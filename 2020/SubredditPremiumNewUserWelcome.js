@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.0a7b20b6e06cd0012b77.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.b955a31fbecae7565877.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -360,13 +360,13 @@
 				H = n("./src/reddit/endpoints/economics/emojis.ts"),
 				G = n("./src/reddit/selectors/products.ts"),
 				q = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/NewbieBadge/index.m.less"),
-				K = n.n(q);
-			const z = "newbie_badge";
+				z = n.n(q);
+			const K = "newbie_badge";
 			class V extends s.a.Component {
 				constructor() {
 					super(...arguments), this.onApply = async () => {
 						(await Object(H.a)(this.props.apiContext(), {
-							productId: z,
+							productId: K,
 							subredditId: this.props.subredditId
 						})).ok && (this.props.onBadgeApplied(), this.props.sendEvent(e => Object.assign(Object.assign({
 							source: "meta",
@@ -385,13 +385,13 @@
 						subredditId: n
 					} = this.props;
 					return t ? s.a.createElement("div", {
-						className: Object(d.a)(K.a.container, e)
+						className: Object(d.a)(z.a.container, e)
 					}, s.a.createElement("div", {
-						className: K.a.label
+						className: z.a.label
 					}, y.fbt._("you just unlocked your first achievement badge", null, {
 						hk: "MbVkT"
 					})), s.a.createElement("div", {
-						className: K.a.badge
+						className: z.a.badge
 					}, s.a.createElement(R.a, {
 						fullWidth: !0,
 						badge: t,
@@ -405,7 +405,7 @@
 				}
 			}
 			const Z = Object(c.c)({
-				newbieBadge: e => Object(G.a)(e, z)
+				newbieBadge: e => Object(G.a)(e, K)
 			});
 			var Q = Object(b.b)(Object(m.c)(Object(a.b)(Z, (e, t) => {
 					let {
@@ -414,7 +414,7 @@
 					return {
 						onBadgeApplied: () => {
 							e(Object(U.d)(n, {
-								id: z
+								id: K
 							})), e(Object(D.b)(f.a.Achievement)), e(Object(D.c)({
 								subredditId: n
 							}))
@@ -487,7 +487,7 @@
 						if (Object(p.N)(e, t) !== u.g.Large) return !1;
 						if (r) {
 							const t = Object(j.f)(e, r.id)[f.a.Achievement];
-							if (t && t.type === z) return !1
+							if (t && t.type === K) return !1
 						}
 						return !0
 					},
@@ -1013,7 +1013,7 @@
 						const t = Object(i.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
-					const n = a.d.spPolls(e) || a.d.spKarmaPoints(e),
+					const n = a.d.spPolls(e),
 						r = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
 					if (r) {
 						const e = !!r.polls && !1 === r.polls.canCreate;
@@ -1084,4 +1084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.0a7b20b6e06cd0012b77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.b955a31fbecae7565877.js.map

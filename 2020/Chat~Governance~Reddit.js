@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ae91403752a8fafd114b.js
-// Retrieved at 9/9/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1a6993c86e507196b15d.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1593,11 +1593,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("111669"),
+				buildNumber: r("111674"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1599679197"),
+				})("1599680120"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3356,14 +3356,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("5b2154a-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("5d47cb9-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5b2154a-production",
+						release: "5d47cb9-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3788,7 +3788,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "5b2154a-production",
+							releaseClient: "5d47cb9-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -7641,28 +7641,24 @@
 					modQueue: Object(a.e)(a.g, a.h),
 					spBadges: v.c,
 					spClaimablePoints: v.d,
-					spCustomBadges: v.e,
+					spCustomBadgesAndEmotes: v.e,
 					spCustomCrypto: v.f,
 					spEmotes: v.g,
-					spEmotesModTools: v.h,
-					spGiphy: v.i,
-					spGovPolls: v.j,
-					spHarberger: v.k,
-					spKarmaPoints: v.l,
-					spLeaderboard: v.m,
-					spLoadtest: v.n,
-					spPoints: v.o,
-					spPolls: v.p,
-					spPremium: v.q,
-					spPremiumSubscriptions: v.r,
-					spPremiumUpsells: v.s,
-					spPublicPoints: v.t,
-					spSpinoffs: v.u,
-					spStellarWalletRegistration: v.v,
-					spSupport: v.w,
-					spTipping: v.x,
-					spWalletRegistrationBanner: v.y,
-					spWebTransactions: v.z,
+					spGiphy: v.h,
+					spGovPolls: v.i,
+					spHarberger: v.j,
+					spLeaderboard: v.k,
+					spPoints: v.l,
+					spPointsCoinConversion: v.m,
+					spPolls: v.n,
+					spPublicPoints: v.o,
+					spSpecialMemberships: v.q,
+					spSpecialMembershipUpsells: v.p,
+					spSpinoffs: v.r,
+					spStellarWalletRegistration: v.s,
+					spTipping: v.t,
+					spWalletRegistrationBanner: v.u,
+					spWebTransactions: v.v,
 					scheduledPosts: e => {
 						const t = Object(g.e)(e);
 						return !!t && Object(h.e)(e, {
@@ -7788,85 +7784,62 @@
 		"./src/reddit/featureFlags/subredditPoints.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return w
-			})), i.d(t, "b", (function() {
-				return I
+				return _
 			})), i.d(t, "c", (function() {
-				return j
+				return p
 			})), i.d(t, "d", (function() {
-				return x
+				return h
 			})), i.d(t, "e", (function() {
-				return R
+				return g
 			})), i.d(t, "f", (function() {
-				return k
+				return f
 			})), i.d(t, "g", (function() {
-				return C
+				return b
 			})), i.d(t, "h", (function() {
-				return N
+				return w
 			})), i.d(t, "i", (function() {
-				return P
+				return y
 			})), i.d(t, "j", (function() {
-				return L
+				return v
 			})), i.d(t, "k", (function() {
-				return A
+				return T
 			})), i.d(t, "l", (function() {
-				return D
+				return S
 			})), i.d(t, "m", (function() {
-				return G
+				return F
 			})), i.d(t, "n", (function() {
-				return M
+				return E
 			})), i.d(t, "o", (function() {
-				return U
-			})), i.d(t, "p", (function() {
-				return q
+				return I
 			})), i.d(t, "q", (function() {
-				return V
+				return O
+			})), i.d(t, "p", (function() {
+				return B
 			})), i.d(t, "r", (function() {
-				return W
+				return j
+			})), i.d(t, "b", (function() {
+				return x
 			})), i.d(t, "s", (function() {
-				return H
+				return R
 			})), i.d(t, "t", (function() {
-				return z
+				return k
 			})), i.d(t, "u", (function() {
-				return K
+				return C
 			})), i.d(t, "v", (function() {
-				return Q
-			})), i.d(t, "w", (function() {
-				return J
-			})), i.d(t, "x", (function() {
-				return Y
-			})), i.d(t, "y", (function() {
-				return X
-			})), i.d(t, "z", (function() {
-				return Z
+				return N
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/reddit/selectors/platform.ts");
-			const r = new Set(["daonuts", "ethtrader", "karma_chameleon", "pointsrtesty", "stellartest"]),
-				s = new Set(["cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
-				o = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose"]),
-				d = new Set(["daonuts", "ethtrader", "stellartest"]),
-				l = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
-				a = new Set(["cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose"]),
-				u = new Set(["badgesroyaletest", "daonuts", "cryptocurrency", "cryptocurrencytest", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
-				c = new Set(["daonuts", "ethtrader", "funkygoose", "funkygooseeggs", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
-				_ = new Set(["daonuts", "ethtrader", "funkygoose", "stellar"]),
-				m = new Set(["badgesroyaletest", "fortnitebr"]),
-				p = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellar", "stellartest"]),
-				h = new Set([]),
-				g = new Set(["cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "funkygooseeggs", "gigapoints", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsnitebr", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
-				f = new Set(["cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "funkygooseeggs", "gigapoints", "karma_chameleon", "modtestmeyourpoints", "mountainbiking", "nr4madastest", "pointsnitebr", "pointsrtesty", "project_kairos", "qameplease", "stellar", "stellartest"]),
-				b = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
-				w = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "stellartest"]),
-				y = new Set(["badgesroyaletest", "fortnitebr", "funkygoose"]),
-				v = new Set(["cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "mountainbiking", "pointsnitebr", "stellar", "stellartest"]),
-				T = new Set(["funkygoose"]),
-				S = new Set(["badgesroyaletest", "cryptocurrency", "cryptocurrencytest", "daonuts", "ethtrader", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr", "shittymorph", "stellartest"]),
-				F = new Set(["cryptocurrencytest", "daonuts", "ethtrader", "funkygoose", "gigapoints", "mountainbiking", "pointsnitebr", "stellar", "stellartest"]),
-				E = new Set(["cryptocurrency", "cryptocurrencytest", "fortnitebr", "funkygoose", "gigapoints", "pointsnitebr"]),
-				I = new Set(["stellar", "stellartest"]),
-				O = new Set(["daonuts", "ethtrader"]),
-				B = function() {
+			const r = new Set(["cryptocurrencytest", "gigapoints", "pointsnitebr"]),
+				s = new Set([...r, "cryptocurrency", "fortnitebr"]),
+				o = new Set(["daonuts", "ethtrader"]),
+				d = new Set(["stellartest"]),
+				l = new Set([...o, ...d]),
+				a = new Set([...s, "badgesroyaletest", "funkygoose"]),
+				u = new Set([...s, ...o, ...d, "funkygoose", "mountainbiking", "stellar"]),
+				c = new Set([...u, "project_kairos"]),
+				_ = new Set([...s, ...o, ...d, "badgesroyaletest", "funkygoose"]),
+				m = function() {
 					for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++) t[i] = arguments[i];
 					return e => {
 						const i = Object(n.e)(e);
@@ -7878,30 +7851,27 @@
 						return !1
 					}
 				},
-				j = B(g, r),
-				x = B(s),
-				R = B(o),
-				k = B(d),
-				C = B(l),
-				N = B(a),
-				P = B(u),
-				L = B(g, f, c),
-				A = B(g, _),
-				D = B(m),
-				G = B(p),
-				M = B(h),
-				U = B(g),
-				q = B(g, f),
-				V = B(S, b),
-				W = B(S, w),
-				H = B(S, y),
-				z = B(v),
-				K = B(g, T),
-				Q = B(I),
-				J = B(S),
-				Y = B(v, F),
-				X = B(O),
-				Z = B(E)
+				p = m(_),
+				h = m(s),
+				g = m(a, new Set([...s, "badgesroyaletest", "funkygoose"])),
+				f = m(l),
+				b = m(a),
+				w = m(new Set([...s, ...o, ...d, "badgesroyaletest", "funkygoose"])),
+				y = m(c, new Set([...o, ...d, "funkygoose", "mountainbiking", "project_kairos", "stellar"])),
+				v = m(c, new Set([...o, "funkygoose", "stellar"])),
+				T = m(new Set([...s, ...o, ...d, "badgesroyaletest", "funkygoose", "stellar"])),
+				S = m(c),
+				F = m(r),
+				E = m(c),
+				I = m(u),
+				O = m(_),
+				B = m(_, new Set(["badgesroyaletest", "fortnitebr", "funkygoose"])),
+				j = m(c, new Set(["funkygoose"])),
+				x = new Set([...d, "stellar"]),
+				R = m(x),
+				k = m(u, new Set([...s, ...o, ...d, "funkygoose", "mountainbiking", "stellar"])),
+				C = m(o),
+				N = m(s)
 		},
 		"./src/reddit/featureFlags/utils.ts": function(e, t, i) {
 			"use strict";
@@ -22213,4 +22183,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ae91403752a8fafd114b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1a6993c86e507196b15d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.608b66e42e337c84ef7f.js
-// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.759a42856d2dea9c2e5a.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -330,7 +330,7 @@
 						} = t;
 						return ((e.users.appliedBadges[n] || {})[r] || []).map(t => e.badges.models[t]).filter(Boolean)
 					},
-					useHovercard: p.d.spPremium
+					useHovercard: p.d.spSpecialMemberships
 				}),
 				k = Object(o.c)({
 					badges: (e, t) => {
@@ -343,7 +343,7 @@
 						}
 						return []
 					},
-					useHovercard: p.d.spPremium
+					useHovercard: p.d.spSpecialMemberships
 				}),
 				T = e => ({
 					onShowTooltip: t => e(Object(l.f)({
@@ -1066,7 +1066,7 @@
 						const t = Object(c.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
-					const r = s.d.spPolls(e) || s.d.spKarmaPoints(e),
+					const r = s.d.spPolls(e),
 						n = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
 					if (n) {
 						const e = !!n.polls && !1 === n.polls.canCreate;
@@ -1137,4 +1137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.608b66e42e337c84ef7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.759a42856d2dea9c2e5a.js.map

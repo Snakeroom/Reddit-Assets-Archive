@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.63917155266eceb4f51f.js
-// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.29653861fd751e2148d9.js
+// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, r) {
@@ -127,7 +127,7 @@
 						} = t;
 						return ((e.users.appliedBadges[n] || {})[r] || []).map(t => e.badges.models[t]).filter(Boolean)
 					},
-					useHovercard: b.d.spPremium
+					useHovercard: b.d.spSpecialMemberships
 				}),
 				N = Object(d.c)({
 					badges: (e, t) => {
@@ -140,7 +140,7 @@
 						}
 						return []
 					},
-					useHovercard: b.d.spPremium
+					useHovercard: b.d.spSpecialMemberships
 				}),
 				k = e => ({
 					onShowTooltip: t => e(Object(u.f)({
@@ -291,11 +291,11 @@
 			}
 			var _ = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				T = r("./node_modules/uuid/v4.js"),
-				P = r.n(T),
-				H = r("./src/reddit/components/Badges/UserDisplay/index.tsx"),
-				L = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				B = r("./src/reddit/featureFlags/index.ts"),
-				S = r("./src/reddit/helpers/governance/tokens.ts"),
+				H = r.n(T),
+				L = r("./src/reddit/components/Badges/UserDisplay/index.tsx"),
+				P = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				S = r("./src/reddit/featureFlags/index.ts"),
+				B = r("./src/reddit/helpers/governance/tokens.ts"),
 				U = r("./src/reddit/selectors/telemetry.ts"),
 				D = r("./src/reddit/components/Governance/Leaderboard/EntryUser/index.m.less"),
 				A = r.n(D);
@@ -315,11 +315,11 @@
 			};
 			const R = Object(i.c)({
 				accountId: e => e.user.account ? e.user.account.id : void 0,
-				badgesEnabled: e => B.d.spBadges(e) || B.d.spPremium(e),
+				badgesEnabled: e => S.d.spBadges(e),
 				tokenDisplayConversion: C.p
 			});
-			var q = Object(L.c)(Object(a.b)(R)((function(e) {
-					const t = P()();
+			var q = Object(P.c)(Object(a.b)(R)((function(e) {
+					const t = H()();
 					return d.a.createElement(_.a, {
 						className: Object(O.a)(A.a.container, e.className, {
 							[A.a.currentUser]: e.entry.userId === e.accountId
@@ -335,7 +335,7 @@
 						className: A.a.user
 					}, e.badgesEnabled && d.a.createElement("div", {
 						className: A.a.badgeContainer
-					}, d.a.createElement(H.c, {
+					}, d.a.createElement(L.c, {
 						className: A.a.badge,
 						correlationId: t,
 						subredditId: e.subredditId,
@@ -347,7 +347,7 @@
 						className: A.a.rank
 					}, d.a.createElement("div", {
 						className: A.a.points
-					}, Object(j.a)(Object(S.b)(e.entry.score, e.tokenDisplayConversion))), d.a.createElement("div", {
+					}, Object(j.a)(Object(B.b)(e.entry.score, e.tokenDisplayConversion))), d.a.createElement("div", {
 						className: A.a.position
 					}, "#".concat(Object(j.a)(e.entry.position.toString())))))
 				}))),
@@ -670,7 +670,7 @@
 			})), r.d(t, "o", (function() {
 				return T
 			})), r.d(t, "l", (function() {
-				return P
+				return H
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				s = r("./src/reddit/endpoints/governance/crypto.ts"),
@@ -729,7 +729,7 @@
 						const t = Object(a.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
 					}
-					const r = o.d.spPolls(e) || o.d.spKarmaPoints(e),
+					const r = o.d.spPolls(e),
 						n = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
 					if (n) {
 						const e = !!n.polls && !1 === n.polls.canCreate;
@@ -793,11 +793,11 @@
 						address: void 0
 					}
 				},
-				P = (e, t) => {
+				H = (e, t) => {
 					const r = j(e, t);
 					return !!r && !!r.walletProvider && !r.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.63917155266eceb4f51f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.29653861fd751e2148d9.js.map
