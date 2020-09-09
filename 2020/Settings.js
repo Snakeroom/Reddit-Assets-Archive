@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.4b5da3763237fe32aad3.js
-// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.084ca9ee9960d9ed6931.js
+// Retrieved at 9/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4074,7 +4074,7 @@
 				gt = Object(c.c)({
 					changePasswordHref: (e, t) => Object(de.c)(e, {
 						pageLayer: t.pageLayer,
-						path: ce.b.ChangePassword
+						path: ce.c.ChangePassword
 					}),
 					deactivateModalOpen: Object(me.b)("deactivate_modal_id"),
 					email: j.l,
@@ -6774,4 +6774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4b5da3763237fe32aad3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.084ca9ee9960d9ed6931.js.map
