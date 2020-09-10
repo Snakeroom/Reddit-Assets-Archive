@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.8d36b5c8f6517eaa1f19.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.c2882e68ef6ea9182b8a.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -82,9 +82,9 @@
 		"./src/reddit/actions/governance/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return C
-			})), n.d(t, "b", (function() {
 				return x
+			})), n.d(t, "b", (function() {
+				return C
 			})), n.d(t, "c", (function() {
 				return y
 			})), n.d(t, "f", (function() {
@@ -114,8 +114,8 @@
 				g = n("./src/reddit/selectors/gov.ts"),
 				f = n("./src/reddit/actions/governance/constants.ts"),
 				v = n("./src/reddit/actions/governance/errorToast.ts");
-			const C = Object(s.a)(f.b),
-				x = Object(s.a)(f.c),
+			const x = Object(s.a)(f.b),
+				C = Object(s.a)(f.c),
 				k = Object(s.a)(f.e),
 				y = (Object(s.a)(f.f), Object(s.a)(f.g), Object(s.a)(f.h)),
 				w = Object(s.a)(f.i),
@@ -451,46 +451,46 @@
 				g = n("./src/reddit/controls/Button/index.tsx"),
 				f = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				v = n("./src/reddit/components/Governance/WalletRegistration/Common/Cards/index.m.less"),
-				C = n.n(v);
+				x = n.n(v);
 			const {
-				fbt: x
+				fbt: C
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function k(e) {
 				const t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/about.svg)");
 				return s.a.createElement("div", {
-					className: Object(o.a)(C.a.card, C.a.aboutCard)
+					className: Object(o.a)(x.a.card, x.a.aboutCard)
 				}, s.a.createElement("div", {
-					className: C.a.text
+					className: x.a.text
 				}, s.a.createElement("div", {
-					className: C.a.header
-				}, x._("Donuts Are No Longer Centralized!", null, {
+					className: x.a.header
+				}, C._("Donuts Are No Longer Centralized!", null, {
 					hk: "45RssI"
 				})), s.a.createElement("div", {
-					className: C.a.body
-				}, x._("Backed by {=smart contracts} developed by mod u/cslarson, Donuts are now ERC-20 tokens that you own and control on the Ethereum blockchain! Register to earn Donuts for your contributions to the subreddit and use them to buy perks in the community, like a special membership, higher weighting in polls, or the ability to control the top banner. Follow this simple wizard to register. Note: Donuts are not driven nor developed by Reddit.", [x._param("=smart contracts", s.a.createElement("a", {
+					className: x.a.body
+				}, C._("Backed by {=smart contracts} developed by mod u/cslarson, Donuts are now ERC-20 tokens that you own and control on the Ethereum blockchain! Register to earn Donuts for your contributions to the subreddit and use them to buy perks in the community, like a special membership, higher weighting in polls, or the ability to control the top banner. Follow this simple wizard to register. Note: Donuts are not driven nor developed by Reddit.", [C._param("=smart contracts", s.a.createElement("a", {
 					href: "https://github.com/daonuts",
-					className: C.a.link,
+					className: x.a.link,
 					rel: "noopener noreferrer",
 					target: "_blank"
-				}, x._("smart contracts", null, {
+				}, C._("smart contracts", null, {
 					hk: "3JWdHa"
 				})))], {
 					hk: "uGzqk"
 				}))), s.a.createElement("div", {
-					className: C.a.cta
+					className: x.a.cta
 				}, s.a.createElement("div", {
-					className: C.a.image,
+					className: x.a.image,
 					style: {
 						backgroundImage: t
 					}
 				}), s.a.createElement(g.f, {
-					className: C.a.button,
+					className: x.a.button,
 					onClick: e.onNextStep
-				}, x._("Start", null, {
+				}, C._("Start", null, {
 					hk: "3So7as"
 				}), s.a.createElement(f.a, {
-					className: C.a.buttonIcon
+					className: x.a.buttonIcon
 				}))))
 			}
 			var y = n("./src/reddit/icons/svgs/Link/index.tsx");
@@ -509,45 +509,37 @@
 				render() {
 					const e = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/connect.svg)");
 					return s.a.createElement("div", {
-						className: Object(o.a)(C.a.card, C.a.connectCard)
+						className: Object(o.a)(x.a.card, x.a.connectCard)
 					}, s.a.createElement("div", {
-						className: C.a.text
+						className: x.a.text
 					}, s.a.createElement("div", {
-						className: C.a.header
+						className: x.a.header
 					}, w._("Connect Reddit to MetaMask", null, {
 						hk: "1uL476"
 					})), s.a.createElement("div", {
-						className: C.a.body
+						className: x.a.body
 					}, w._("This will allow Reddit to see your wallet’s public key and allow Reddit to request your signature on messages and transactions.", null, {
 						hk: "1IBG48"
 					}))), s.a.createElement("div", {
-						className: C.a.cta
+						className: x.a.cta
 					}, s.a.createElement("div", {
-						className: C.a.image,
+						className: x.a.image,
 						style: {
 							backgroundImage: e
 						}
 					}), s.a.createElement(g.i, {
-						className: C.a.button,
+						className: x.a.button,
 						onClick: l.b
 					}, w._("Connect", null, {
 						hk: "3rApnz"
 					}), s.a.createElement(y.a, {
-						className: C.a.buttonIcon
+						className: x.a.buttonIcon
 					}))))
 				}
 			}
 			var E = n("./src/chat/icons/svgs/Refresh/index.tsx"),
-				O = n("./src/reddit/icons/svgs/CircleCheck/index.tsx");
-			var N = e => s.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 16 16",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, s.a.createElement("path", {
-					fillRule: "evenodd",
-					clipRule: "evenodd",
-					d: "M10.5554 7.77144L7.88871 10.4381C7.81404 10.5128 7.71652 10.5493 7.619 10.5493C7.52224 10.5493 7.42471 10.5128 7.35004 10.4381L4.68338 7.77144C4.57443 7.66249 4.54166 7.49868 4.60109 7.3562C4.65976 7.21449 4.79843 7.12077 4.95233 7.12077H6.44338V5.06896C6.44338 4.85868 6.61404 4.68801 6.82433 4.68801H8.41443C8.62471 4.68801 8.79538 4.85868 8.79538 5.06896V7.12077H10.2857C10.4403 7.12077 10.579 7.21449 10.6377 7.3562C10.6971 7.49868 10.6643 7.66249 10.5554 7.77144M7.61926 1.14285C4.04821 1.14285 1.14307 4.048 1.14307 7.61904C1.14307 11.1893 4.04821 14.0952 7.61926 14.0952C11.1903 14.0952 14.0954 11.1893 14.0954 7.61904C14.0954 4.048 11.1903 1.14285 7.61926 1.14285"
-				})),
+				O = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				N = n("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"),
 				_ = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const {
 				fbt: I
@@ -565,22 +557,22 @@
 						isMetaMaskInstalled: t
 					} = this.state, n = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/metamask.svg)");
 					return s.a.createElement("div", {
-						className: Object(o.a)(C.a.card, C.a.metaMaskCard)
+						className: Object(o.a)(x.a.card, x.a.metaMaskCard)
 					}, s.a.createElement("div", {
-						className: C.a.text
+						className: x.a.text
 					}, s.a.createElement("div", {
-						className: C.a.header
+						className: x.a.header
 					}, I._("Install the MetaMask Browser Extension", null, {
 						hk: "3MOJpi"
 					}), t && s.a.createElement(O.a, {
-						className: C.a.installedCheckmark
+						className: x.a.installedCheckmark
 					})), s.a.createElement("div", {
-						className: C.a.body
+						className: x.a.body
 					}, s.a.createElement("p", {
-						className: C.a.paragraph
+						className: x.a.paragraph
 					}, I._('{=MetaMask} is an Ethereum Wallet trusted by millions. The extension allows you to manage decentralized tokens and to access Ethereum-powered decentralized applications, or "Dapps", directly in your browser. You will need to reload the page after you install the extension.', [I._param("=MetaMask", s.a.createElement("a", {
 						href: M,
-						className: C.a.link,
+						className: x.a.link,
 						rel: "noopener noreferrer",
 						target: "_blank"
 					}, I._("MetaMask", null, {
@@ -588,32 +580,32 @@
 					})))], {
 						hk: "2k97Gi"
 					})), s.a.createElement("p", {
-						className: C.a.paragraph
+						className: x.a.paragraph
 					}, I._("Disclaimer: MetaMask is not affiliated with Reddit and the following is not an advertisement or an endorsement. You understand that Reddit is not responsible for any actions or inactions or harm caused by using Metamask.", null, {
 						hk: "3l0TTn"
 					})))), s.a.createElement("div", {
-						className: C.a.cta
+						className: x.a.cta
 					}, s.a.createElement("div", {
-						className: C.a.image,
+						className: x.a.image,
 						style: {
 							backgroundImage: n
 						}
 					}), t ? s.a.createElement(g.f, {
-						className: C.a.button,
+						className: x.a.button,
 						onClick: this.props.onNextStep
 					}, I._("Continue", null, {
 						hk: "4aMeJj"
 					}), s.a.createElement(f.a, {
-						className: C.a.buttonIcon
+						className: x.a.buttonIcon
 					})) : e ? s.a.createElement(g.f, {
-						className: C.a.button,
+						className: x.a.button,
 						onClick: _.a
 					}, I._("Reload page", null, {
 						hk: "14fa9z"
 					}), s.a.createElement(E.a, {
-						className: C.a.buttonIcon
+						className: x.a.buttonIcon
 					})) : s.a.createElement(g.j, {
-						className: C.a.button,
+						className: x.a.button,
 						href: P,
 						target: "_blank",
 						onClick: () => this.setState({
@@ -621,8 +613,8 @@
 						})
 					}, I._("Get Extension", null, {
 						hk: "ey9hD"
-					}), s.a.createElement(N, {
-						className: C.a.buttonIcon
+					}), s.a.createElement(N.a, {
+						className: x.a.buttonIcon
 					}))))
 				}
 			}
@@ -646,43 +638,43 @@
 						token: a
 					} = e;
 				return s.a.createElement("div", {
-					className: Object(o.a)(C.a.card, C.a.registeredCard)
+					className: Object(o.a)(x.a.card, x.a.registeredCard)
 				}, s.a.createElement("div", {
-					className: C.a.text
+					className: x.a.text
 				}, s.a.createElement("div", {
-					className: C.a.header
+					className: x.a.header
 				}, A._("That’s It, You Are Registered!", null, {
 					hk: "3gVrKp"
 				})), s.a.createElement("div", {
-					className: C.a.body
+					className: x.a.body
 				}, s.a.createElement("p", {
-					className: C.a.paragraph
+					className: x.a.paragraph
 				}, A._("Your wallet will receive Donuts after the next regular distribution based on the karma you earn in this subreddit.", null, {
 					hk: "3qEBK1"
 				})), s.a.createElement("p", {
-					className: C.a.paragraph
+					className: x.a.paragraph
 				}, A._("To view your balance in MetaMask, you’ll need to {=track} the Donut token by clicking the button below. After that, go earn more Donuts by creating some great content on r/EthTrader!", [A._param("=track", s.a.createElement("span", {
-					className: C.a.bold
+					className: x.a.bold
 				}, A._("track", null, {
 					hk: "3r4sf1"
 				})))], {
 					hk: "urtXU"
 				})))), s.a.createElement("div", {
-					className: C.a.cta
+					className: x.a.cta
 				}, s.a.createElement("div", {
-					className: C.a.image,
+					className: x.a.image,
 					style: {
 						backgroundImage: t
 					}
 				}), s.a.createElement(g.f, {
-					className: C.a.button,
+					className: x.a.button,
 					onClick: () => a ? Object(l.i)(a).then(n) : n()
 				}, a ? A._("Track Donuts", null, {
 					hk: "3gEZnQ"
 				}) : A._("Finish", null, {
 					hk: "4kSXmt"
 				}), s.a.createElement(S, {
-					className: C.a.buttonIcon
+					className: x.a.buttonIcon
 				}))))
 			}
 			n("./node_modules/core-js/modules/es6.regexp.split.js");
@@ -739,26 +731,26 @@
 						approvalChecked: e
 					} = this.state, t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/verify.svg)");
 					return s.a.createElement("div", {
-						className: Object(o.a)(C.a.card, C.a.verifyCard)
+						className: Object(o.a)(x.a.card, x.a.verifyCard)
 					}, s.a.createElement("div", {
-						className: C.a.text
+						className: x.a.text
 					}, s.a.createElement("div", {
-						className: C.a.header
+						className: x.a.header
 					}, V.fbt._("Sign a Verification Message", null, {
 						hk: "35rjb4"
 					})), s.a.createElement("div", {
-						className: C.a.body
+						className: x.a.body
 					}, V.fbt._("Sign a message (not a transaction), to verify that the wallet is yours. This will not be sent to the blockchain and will not cost you anything.", null, {
 						hk: "e0c0N"
 					}))), s.a.createElement("div", {
-						className: C.a.cta
+						className: x.a.cta
 					}, s.a.createElement("div", {
-						className: C.a.image,
+						className: x.a.image,
 						style: {
 							backgroundImage: t
 						}
 					}), s.a.createElement("div", {
-						className: C.a.approvalMessage
+						className: x.a.approvalMessage
 					}, s.a.createElement(G.a, {
 						isCheckboxSelected: e,
 						toggleCheckbox: this.toggleApprovalCheckbox
@@ -767,13 +759,13 @@
 					}, V.fbt._("I understand and agree to allow Reddit to publicly display my wallet address linked to my username", null, {
 						hk: "1fQEnc"
 					}))), s.a.createElement(g.i, {
-						className: C.a.button,
+						className: x.a.button,
 						onClick: this.runVerification,
 						disabled: !e
 					}, V.fbt._("Verify in MetaMask", null, {
 						hk: "4yHWv"
 					}), s.a.createElement(H.a, {
-						className: C.a.buttonIcon
+						className: x.a.buttonIcon
 					}))))
 				}
 			}
@@ -792,31 +784,31 @@
 			function Z(e) {
 				const t = "url(".concat(h.a.assetPath, "/img/communityPoints/registration/ethtrader/wallet.svg)");
 				return s.a.createElement("div", {
-					className: Object(o.a)(C.a.card, C.a.walletCard)
+					className: Object(o.a)(x.a.card, x.a.walletCard)
 				}, s.a.createElement("div", {
-					className: C.a.text
+					className: x.a.text
 				}, s.a.createElement("div", {
-					className: C.a.header
+					className: x.a.header
 				}, z._("Create a Wallet", null, {
 					hk: "M5zQ2"
 				})), s.a.createElement("div", {
-					className: C.a.body
+					className: x.a.body
 				}, z._("Create your MetaMask account and Ethereum wallet by following the instructions in MetaMask after you install the extension.", null, {
 					hk: "4DQsB7"
 				}))), s.a.createElement("div", {
-					className: C.a.cta
+					className: x.a.cta
 				}, s.a.createElement("div", {
-					className: C.a.image,
+					className: x.a.image,
 					style: {
 						backgroundImage: t
 					}
 				}), s.a.createElement(g.i, {
-					className: C.a.button,
+					className: x.a.button,
 					onClick: e.onNextStep
 				}, z._("Next", null, {
 					hk: "3KNR6B"
 				}), s.a.createElement(f.a, {
-					className: C.a.buttonIcon
+					className: x.a.buttonIcon
 				}))))
 			}
 			var X, J = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
@@ -1085,10 +1077,14 @@
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
 				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Checkbox/index.tsx");
+				o = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				c = n("./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx"),
+				i = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				d = n("./src/reddit/controls/Checkbox/index.m.less"),
+				l = n.n(d);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function u() {
+				return (u = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -1096,30 +1092,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var i = e => s.a.createElement("svg", c({
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, e), s.a.createElement("g", {
-					transform: "translate(-32.000000, -173.000000)"
-				}, s.a.createElement("g", {
-					transform: "translate(32.000000, 173.000000)"
-				}, s.a.createElement("path", {
-					d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
-				})))),
-				d = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				l = n("./src/reddit/controls/Checkbox/index.m.less"),
-				u = n.n(l);
-
-			function m() {
-				return (m = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			var b = function(e, t) {
+			var m = function(e, t) {
 				var n = {};
 				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1128,25 +1101,25 @@
 				}
 				return n
 			};
-			const p = e => t => {
+			const b = e => t => {
 					const {
 						className: n,
 						disabled: a,
 						redditStyle: o,
 						"data-redditstyle": c
-					} = t, i = b(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((e, t, n) => {
+					} = t, i = m(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((e, t, n) => {
 						const a = !(!t && !n);
 						let s = "";
-						return s = e ? a ? u.a.mDisabledRedditStyle : u.a.mDisabled : a ? u.a.mActiveRedditStyle : u.a.mActive
+						return s = e ? a ? l.a.mDisabledRedditStyle : l.a.mDisabled : a ? l.a.mActiveRedditStyle : l.a.mActive
 					})(a, o, c);
-					return s.a.createElement(e, m({
-						className: Object(r.a)(u.a.Checkbox, d, n)
+					return s.a.createElement(e, u({
+						className: Object(r.a)(l.a.Checkbox, d, n)
 					}, i))
 				},
-				h = p(d.a),
-				g = p(i);
+				p = b(i.a),
+				h = b(c.a);
 			t.a = e => {
-				const t = e.isHalfCheckboxSelected ? g : e.isCheckboxSelected ? h : o.a;
+				const t = e.isHalfCheckboxSelected ? h : e.isCheckboxSelected ? p : o.a;
 				return s.a.createElement("button", {
 					"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
 					className: e.className,
@@ -1155,7 +1128,7 @@
 					},
 					disabled: e.disabled
 				}, s.a.createElement(t, {
-					className: Object(r.a)(u.a.CheckboxSizing, e.className),
+					className: Object(r.a)(l.a.CheckboxSizing, e.className),
 					"data-redditstyle": e.redditStyle,
 					disabled: e.disabled,
 					style: e.checkBoxStyle
@@ -1586,6 +1559,31 @@
 				d: "m11.17929,5.99479c0.08081,-0.19519 0.08081,-0.41599 0,-0.61118c-0.0408,-0.0984 -0.0992,-0.1864 -0.17361,-0.2608l-4.79963,-4.79911c-0.31283,-0.3128 -0.81847,-0.3128 -1.1313,0c-0.31283,0.31279 -0.31283,0.81918 0,1.13118l3.43471,3.43433l-7.66949,0c-0.44244,0 -0.80007,0.3584 -0.80007,0.79999c0,0.44159 0.35763,0.79999 0.80007,0.79999l7.66949,0l-3.43471,3.43433c-0.31283,0.3128 -0.31283,0.81919 0,1.13118c0.15601,0.156 0.36083,0.2344 0.56565,0.2344c0.20482,0 0.40964,-0.0784 0.56565,-0.2344l4.79963,-4.79911c0.07441,-0.0744 0.13281,-0.1624 0.17361,-0.2608"
 			})))
 		},
+		"./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx": function(e, t, n) {
+			"use strict";
+			var a = n("./node_modules/react/index.js"),
+				s = n.n(a);
+
+			function r() {
+				return (r = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => s.a.createElement("svg", r({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), s.a.createElement("g", {
+				transform: "translate(-32.000000, -173.000000)"
+			}, s.a.createElement("g", {
+				transform: "translate(32.000000, 173.000000)"
+			}, s.a.createElement("path", {
+				d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
+			}))))
+		},
 		"./src/reddit/icons/svgs/CircleCheck/index.tsx": function(e, t, n) {
 			"use strict";
 			var a = n("./node_modules/react/index.js"),
@@ -1597,6 +1595,20 @@
 			}, s.a.createElement("path", {
 				d: "M20.5 10.5C20.5 16.0228 16.0228 20.5 10.5 20.5C4.97715 20.5 0.5 16.0228 0.5 10.5C0.5 4.97715 4.97715 0.5 10.5 0.5C16.0228 0.5 20.5 4.97715 20.5 10.5ZM9.35975 14.8725L15.2398 8.71852L15.2418 8.72352C15.5868 8.36252 15.5868 7.77752 15.2418 7.41752C14.8968 7.05752 14.3388 7.05752 13.9938 7.41752L8.73675 12.9175L7.00675 11.1075C6.66175 10.7475 6.10375 10.7465 5.75875 11.1075C5.41375 11.4685 5.41375 12.0535 5.75875 12.4135L8.11175 14.8735C8.28475 15.0535 8.50975 15.1435 8.73675 15.1435C8.85356 15.143 8.96904 15.1187 9.07615 15.0721C9.18326 15.0256 9.27975 14.9576 9.35975 14.8725Z",
 				fill: "inherit"
+			}))
+		},
+		"./src/reddit/icons/svgs/DownvoteCircle/index.tsx": function(e, t, n) {
+			"use strict";
+			var a = n("./node_modules/react/index.js"),
+				s = n.n(a);
+			t.a = e => s.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 16 16",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, s.a.createElement("path", {
+				fillRule: "evenodd",
+				clipRule: "evenodd",
+				d: "M10.5554 7.77144L7.88871 10.4381C7.81404 10.5128 7.71652 10.5493 7.619 10.5493C7.52224 10.5493 7.42471 10.5128 7.35004 10.4381L4.68338 7.77144C4.57443 7.66249 4.54166 7.49868 4.60109 7.3562C4.65976 7.21449 4.79843 7.12077 4.95233 7.12077H6.44338V5.06896C6.44338 4.85868 6.61404 4.68801 6.82433 4.68801H8.41443C8.62471 4.68801 8.79538 4.85868 8.79538 5.06896V7.12077H10.2857C10.4403 7.12077 10.579 7.21449 10.6377 7.3562C10.6971 7.49868 10.6643 7.66249 10.5554 7.77144M7.61926 1.14285C4.04821 1.14285 1.14307 4.048 1.14307 7.61904C1.14307 11.1893 4.04821 14.0952 7.61926 14.0952C11.1903 14.0952 14.0954 11.1893 14.0954 7.61904C14.0954 4.048 11.1903 1.14285 7.61926 1.14285"
 			}))
 		},
 		"./src/reddit/icons/svgs/Link/index.tsx": function(e, t, n) {
@@ -1638,9 +1650,9 @@
 			})), n.d(t, "i", (function() {
 				return v
 			})), n.d(t, "j", (function() {
-				return C
-			})), n.d(t, "k", (function() {
 				return x
+			})), n.d(t, "k", (function() {
+				return C
 			})), n.d(t, "q", (function() {
 				return k
 			})), n.d(t, "r", (function() {
@@ -1729,10 +1741,10 @@
 					}
 					return n
 				},
-				C = (e, t) => {
+				x = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				x = (e, t) => {
+				C = (e, t) => {
 					const n = Object(a.m)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || i
 				},
@@ -1792,4 +1804,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.8d36b5c8f6517eaa1f19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.c2882e68ef6ea9182b8a.js.map

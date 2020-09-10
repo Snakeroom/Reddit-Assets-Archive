@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.9e6885a134c1c42c3b6a.js
-// Retrieved at 9/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.05c2e7b5e5543b3a317d.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/first.js": function(e, t, n) {
@@ -320,8 +320,8 @@
 						trendingSubredditIds: b
 					} = this.props, p = i && d, g = [...ne.l];
 					p && g.unshift(ne.g);
-					const h = c === te.xb.Rotate,
-						x = c === te.xb.RotateAll;
+					const h = c === te.yb.Rotate,
+						x = c === te.yb.RotateAll;
 					let _ = ne.m;
 					return p && (h ? _ = this.state.random > .5 ? ne.g : ne.m : x && (_ = g[this.state.randomIndex])), o.a.createElement(P.a, {
 						className: t
@@ -681,15 +681,8 @@
 				o = n("./src/lib/classNames/index.ts"),
 				d = n("./src/lib/prettyPrintNumber/index.ts"),
 				c = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				l = n("./src/reddit/components/SubredditIcon/index.tsx");
-			var m = e => r.a.createElement("svg", {
-					className: e.className,
-					style: e.style,
-					viewBox: "0 0 10 8",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("g", null, r.a.createElement("path", {
-					d: "M4.152 1.3568C4.54367 0.730128 5.45633 0.730129 5.848 1.3568L9.04375 6.47C9.46003 7.13605 8.98119 8 8.19575 8H1.80425C1.01881 8 0.539969 7.13605 0.956249 6.47L4.152 1.3568Z"
-				}))),
+				l = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				m = n("./src/reddit/icons/svgs/Triangle/index.tsx"),
 				u = n("./src/reddit/components/TopSubredditsWidget/index.m.less"),
 				b = n.n(u);
 			const p = e => r.a.createElement(r.a.Fragment, null, r.a.createElement(l.b, {
@@ -733,7 +726,7 @@
 						className: b.a.subredditRankItemColumn
 					}, r.a.createElement("span", {
 						className: b.a.rankText
-					}, s), r.a.createElement(m, {
+					}, s), r.a.createElement(m.a, {
 						className: Object(o.a)(b.a.arrow, !n && b.a.negative),
 						style: {
 							fill: a
@@ -1014,6 +1007,19 @@
 					}
 				})
 		},
+		"./src/reddit/icons/svgs/Triangle/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				style: e.style,
+				viewBox: "0 0 10 8",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, a.a.createElement("g", null, a.a.createElement("path", {
+				d: "M4.152 1.3568C4.54367 0.730128 5.45633 0.730129 5.848 1.3568L9.04375 6.47C9.46003 7.13605 8.98119 8 8.19575 8H1.80425C1.01881 8 0.539969 7.13605 0.956249 6.47L4.152 1.3568Z"
+			})))
+		},
 		"./src/reddit/selectors/experiments/localCommunitiesLeaderboard.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1026,16 +1032,16 @@
 
 			function r(e) {
 				const t = i(e);
-				return t === s.xb.Rotate || t === s.xb.RotateAll
+				return t === s.yb.Rotate || t === s.yb.RotateAll
 			}
 
 			function i(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.wb
+					experimentName: s.xb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.9e6885a134c1c42c3b6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.05c2e7b5e5543b3a317d.js.map

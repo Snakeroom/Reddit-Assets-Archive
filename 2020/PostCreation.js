@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.004b0378e309cf1dc70c.js
-// Retrieved at 9/10/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9ec2c79757f147afd8a9.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -677,16 +677,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.zb
+					experimentName: u.Ab
 				});
-				return Object(u.Dc)(t) ? void 0 : t
+				return Object(u.Ec)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Ab
+					experimentName: u.Bb
 				});
-				return Object(u.Dc)(t) ? void 0 : t
-			}, (e, t) => e === u.Bb.Enabled && t === u.Bb.Enabled);
+				return Object(u.Ec)(t) ? void 0 : t
+			}, (e, t) => e === u.Cb.Enabled && t === u.Cb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "0f6c23a-production"
+					SENTRY_RELEASE_VERSION: "5965d14-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1848,7 +1848,7 @@
 			})), n.d(t, "e", (function() {
 				return L
 			})), n.d(t, "g", (function() {
-				return D
+				return F
 			})), n.d(t, "a", (function() {
 				return U
 			})), n.d(t, "c", (function() {
@@ -1993,7 +1993,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, A = Object(i.a)(a.g), D = (e, t, n) => async (o, r, i) => {
+				}, A = Object(i.a)(a.g), F = (e, t, n) => async (o, r, i) => {
 					let {
 						apiContext: a
 					} = i;
@@ -2037,13 +2037,13 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, F = Object(i.a)(a.a), B = Object(i.a)(a.t), U = (e, t) => async (n, o, r) => {
+				}, D = Object(i.a)(a.a), B = Object(i.a)(a.t), U = (e, t) => async (n, o, r) => {
 					let {
 						apiContext: i
 					} = r;
 					const a = o();
 					if ((await h(i(), e, t)).ok) {
-						n(F({
+						n(D({
 							collectionId: e,
 							postId: t
 						})), n(B({
@@ -2232,9 +2232,9 @@
 			})), n.d(t, "c", (function() {
 				return A
 			})), n.d(t, "e", (function() {
-				return D
-			})), n.d(t, "d", (function() {
 				return F
+			})), n.d(t, "d", (function() {
+				return D
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2482,7 +2482,7 @@
 					} = s;
 					const r = n().uploads[e];
 					r && !Object(x.c)(r) && await t(L(r.file, r.key, r.metadata.fileSource, void 0))
-				}, D = (e, t, n) => async (o, i) => {
+				}, F = (e, t, n) => async (o, i) => {
 					const c = e.map((e, s) => new Promise(async s => {
 							const i = Object(x.d)(n, r()().slice(-6));
 							await o(L(e, i, t, () => s({
@@ -2517,7 +2517,7 @@
 							}))
 						}
 					}(u)), d.filter(e => e.isValid).map(e => e.uploadKey)
-				}, F = (e, t) => async (n, o) => {
+				}, D = (e, t) => async (n, o) => {
 					const r = o(),
 						i = Object(w.O)(r),
 						{
@@ -2548,7 +2548,7 @@
 							})
 						})), h = h.slice(0, e))
 					} else h = h.slice(0, 1), m = !0, n(Object(d.j)(R, !0));
-					const b = await n(D(h, t, R));
+					const b = await n(F(h, t, R));
 					if (!b.length) return;
 					const f = b.map(e => ({
 							uploadKey: e,
@@ -3208,16 +3208,16 @@
 				R = n("./src/lib/classNames/index.ts"),
 				L = n("./src/lib/fastdom/index.ts"),
 				A = n("./src/reddit/models/Gold/TopAwarded/index.ts"),
-				D = n("./src/reddit/icons/fonts/Gift/index.tsx"),
-				F = n("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
-				B = n.n(F);
+				F = n("./src/reddit/icons/fonts/Gift/index.tsx"),
+				D = n("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
+				B = n.n(D);
 			var U = r.a.memo(e => r.a.createElement("button", {
 					className: Object(R.a)(e.className, B.a.addAwardPill),
 					name: s.fbt._("Give award", null, {
 						hk: "dQR06"
 					}),
 					onClick: e.onAddAward
-				}, r.a.createElement(D.a, {
+				}, r.a.createElement(F.a, {
 					className: B.a.giftIcon
 				}))),
 				K = n("./src/reddit/helpers/awards/getAwardItemId.ts"),
@@ -3851,15 +3851,15 @@
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(k.c)(e, {
 							experimentEligibilitySelector: T.H,
-							experimentName: _.db
+							experimentName: _.eb
 						});
-						return !(!t || Object(_.Dc)(t))
+						return !(!t || Object(_.Ec)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: P.c
 				}),
 				Ae = e => Object(C.a)(e.id) ? e.postId : e.id,
-				De = Object(i.b)(Le, (e, t) => {
+				Fe = Object(i.b)(Le, (e, t) => {
 					let {
 						thing: n
 					} = t;
@@ -3884,7 +3884,7 @@
 						triggerOverlayAnimation: () => e(Object(c.b)(Ae(n)))
 					}
 				});
-			class Fe extends r.a.Component {
+			class De extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleAddAward = async e => {
 						const t = Object(v.d)(v.a.GildingFlow, !0),
@@ -4039,7 +4039,7 @@
 					}))
 				}
 			}
-			t.a = De(Object(j.c)(Fe))
+			t.a = Fe(Object(j.c)(De))
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4502,31 +4502,17 @@
 					}, this.state.toolbarType ? this.props.children(this.state.toolbarType) : null)
 				}
 			}
-			var k = e => r.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 208 128"
-				}, r.a.createElement("rect", {
-					width: "198",
-					height: "118",
-					x: "5",
-					y: "5",
-					ry: "10",
-					stroke: "currentColor",
-					strokeWidth: "10",
-					fill: "none"
-				}), r.a.createElement("path", {
-					d: "M30 98v-68h20l20 25 20-25h20v68h-20v-39l-20 25-20-25v39zM155 98l-30-33h20v-35h20v35h20z"
-				})),
+			var k = n("./src/reddit/icons/svgs/MarkdownMode/index.tsx"),
 				T = n("./src/reddit/components/PostCreationForm/DivButton/index.tsx"),
 				I = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
 				P = n("./src/reddit/components/CommentCreation/MarkdownCommentForm/MarkdownModeButton.m.less"),
 				M = n.n(P);
 			const N = j.a.wrapped(g.a, "LoadingIcon", M.a),
 				R = j.a.div("Wrapper", M.a),
-				L = j.a.wrapped(k, "MarkdownModeIcon", M.a),
+				L = j.a.wrapped(k.a, "MarkdownModeIcon", M.a),
 				A = j.a.wrapped(T.a, "Button", M.a);
 
-			function D(e) {
+			function F(e) {
 				const t = s.fbt._("Switch to fancy pants editor", null, {
 					hk: "1XOb4H"
 				});
@@ -4541,7 +4527,7 @@
 					text: t
 				}), !e.isConverting && r.a.createElement(L, null)))
 			}
-			var F = n("./src/lib/classNames/index.ts"),
+			var D = n("./src/lib/classNames/index.ts"),
 				B = n("./src/reddit/constants/keycodes.ts"),
 				U = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				K = n("./src/reddit/constants/componentSizes.ts"),
@@ -4725,7 +4711,7 @@
 					} = this.state, R = Object(U.a)(b), L = c.draftType === Q.c.edit;
 					return r.a.createElement(ue, {
 						"data-test-id": H.b,
-						className: Object(F.a)(o, {
+						className: Object(D.a)(o, {
 							[X.a.isTopLevelComment]: w,
 							[X.a.mExpanded]: j,
 							[X.a.mRedesign]: O
@@ -4750,7 +4736,7 @@
 					}, O && r.a.createElement("div", {
 						className: X.a.userIcon
 					}, r.a.createElement(ae, null)), r.a.createElement(pe, {
-						className: Object(F.a)({
+						className: Object(D.a)({
 							[X.a.pending]: v,
 							[X.a.focused]: c.hasFocus
 						})
@@ -4777,7 +4763,7 @@
 						pending: v,
 						submitButtonText: E,
 						canSubmit: this.userHasEnteredText()
-					}, r.a.createElement(_, null, e => "compact" === e ? r.a.createElement(D, {
+					}, r.a.createElement(_, null, e => "compact" === e ? r.a.createElement(F, {
 						buttonRef: e => this.switchModeBtn = e,
 						onClick: () => S(J.h.RICH_TEXT, P, b),
 						isConverting: this.props.isConverting
@@ -5145,7 +5131,7 @@
 					className: l
 				}, r.a.createElement(I, null, r.a.createElement(j, null, r.a.createElement(p.a, c)), R(i), i.source && r.a.createElement(h.a, {
 					post: i
-				}), A(e)), F(e)) : r.a.createElement(O, {
+				}), A(e)), D(e)) : r.a.createElement(O, {
 					className: l
 				}, r.a.createElement(j, null, r.a.createElement(p.a, c)), R(i), L(e), A(e))
 			});
@@ -5178,9 +5164,9 @@
 						_1: "1 point"
 					}, [s.fbt._plural(n, "point count", Object(d.b)(n))], {
 						hk: "PNZhd"
-					})), r.a.createElement(k, null), r.a.createElement(_, null, D(e)))
+					})), r.a.createElement(k, null), r.a.createElement(_, null, F(e)))
 				},
-				D = e => {
+				F = e => {
 					const {
 						post: t,
 						shouldOpenPostInNewTab: n
@@ -5198,7 +5184,7 @@
 						hk: "xPYWL"
 					}))
 				},
-				F = e => r.a.createElement(P, null, r.a.createElement(b.a, {
+				D = e => r.a.createElement(P, null, r.a.createElement(b.a, {
 					post: e.post
 				}))
 		},
@@ -5423,7 +5409,7 @@
 						width: "".concat(t.subredditContext.emojiWidth, "px")
 					}
 				},
-				D = (e, t) => {
+				F = (e, t) => {
 					const n = t ? "/r/".concat(t, "/search") : "/search",
 						s = "".concat(t ? "flair_name" : "flair", ':"').concat(e, '"');
 					return Object(d.a)(n, {
@@ -5431,12 +5417,12 @@
 						[E.q]: t ? "1" : ""
 					})
 				},
-				F = e => e.isFlairFilter ? c.a.createElement(O.a, {
+				D = e => e.isFlairFilter ? c.a.createElement(O.a, {
 					onMouseDown: e.onMouseDown,
 					to: e.to || ""
 				}, e.flair) : e.onClick ? c.a.createElement(O.a, {
 					onClick: () => e.onClick(e.searchableTerm),
-					to: D(e.searchableTerm, e.subredditName)
+					to: F(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
 			class B extends c.a.Component {
 				constructor() {
@@ -5479,7 +5465,7 @@
 						targetPosition: ["center", "top"],
 						tooltipPosition: ["center", "bottom"]
 					}));
-					return c.a.createElement(F, {
+					return c.a.createElement(D, {
 						flair: e,
 						isFlairFilter: this.props.isFlairFilter,
 						onClick: this.props.onClick,
@@ -5531,7 +5517,7 @@
 							fill: e.backgroundColor || Object(_.a)(e).flair
 						}
 					})));
-					return c.a.createElement(F, {
+					return c.a.createElement(D, {
 						flair: r,
 						isFlairFilter: e.isFlairFilter,
 						onClick: e.onClick ? () => {
@@ -5565,7 +5551,7 @@
 								color: t
 							}
 						}, e.text);
-					return c.a.createElement(F, {
+					return c.a.createElement(D, {
 						flair: n,
 						searchableTerm: e.text
 					})
@@ -7269,14 +7255,14 @@
 						const e = T + 1;
 						N(T - 1), M(a.a(E, e)), M(a.d(E, e - 1))
 					}, [I, T, N, M, E]),
-					D = Object(s.useCallback)(() => {
+					F = Object(s.useCallback)(() => {
 						const e = d[T] && d[T].outboundUrl,
 							t = T + 1;
 						e && M(a.c(E, e, t))
 					}, [M, E, T, d]),
-					F = Object(s.useRef)(null),
+					D = Object(s.useRef)(null),
 					B = Object(s.useRef)(null);
-				c(h.a.ArrowLeft, F.current, A), c(h.a.ArrowRight, F.current, L);
+				c(h.a.ArrowLeft, D.current, A), c(h.a.ArrowRight, D.current, L);
 				const U = d[T] && d[T].caption,
 					K = d[T] && d[T].outboundUrl,
 					H = ((e, t, n) => {
@@ -7295,7 +7281,7 @@
 					})(C, u, p);
 				return o.a.createElement("div", {
 					className: Object(i.a)(v.a.outerContainer),
-					ref: F,
+					ref: D,
 					tabIndex: 0
 				}, y ? o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: Object(i.a)(v.a.tilesWrapper, {
@@ -7384,7 +7370,7 @@
 					}
 				}) : o.a.createElement(w, {
 					caption: U,
-					onClickEvent: D,
+					onClickEvent: F,
 					outboundUrl: K,
 					captionHeight: n
 				}))
@@ -7695,8 +7681,8 @@
 				R = n("./src/reddit/components/RichTextJson/index.tsx"),
 				L = n("./src/reddit/constants/componentSizes.ts"),
 				A = n("./src/reddit/constants/experiments.ts"),
-				D = n("./src/reddit/constants/screenWidths.ts"),
-				F = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				F = n("./src/reddit/constants/screenWidths.ts"),
+				D = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				B = n("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				U = n("./src/reddit/helpers/getRichTextContent/index.ts"),
 				K = n("./src/reddit/helpers/mediaGallery/index.tsx"),
@@ -7766,7 +7752,7 @@
 					} = e;
 					return !!t.media && me.has(t.media.type)
 				},
-				be = Object(F.t)(),
+				be = Object(D.t)(),
 				fe = Object(u.c)({
 					imgOCRAltTextVariant: (e, t) => Object(Y.c)(e, t) ? Object(q.b)(e, t.post, !0) : void 0,
 					OCRAltText: (e, t) => {
@@ -7958,12 +7944,12 @@
 					} = this.props;
 					if (!o) return;
 					let r = "";
-					return s && (r += s), e === A.vb.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.vb.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
+					return s && (r += s), e === A.wb.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.wb.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
 						n = Math.min(ie, 16 * t / 9);
-					n === ie && (t = 9 * ie / 16), e = this.state.viewportWidth >= D.c ? this.state.viewportWidth < L.l ? this.state.viewportWidth - le - 2 * ae : this.state.viewportWidth - le - L.e - 2 * ae : this.state.viewportWidth - 2 * ae;
+					n === ie && (t = 9 * ie / 16), e = this.state.viewportWidth >= F.c ? this.state.viewportWidth < L.l ? this.state.viewportWidth - le - 2 * ae : this.state.viewportWidth - le - L.e - 2 * ae : this.state.viewportWidth - 2 * ae;
 					const s = this.state.viewportHeight - 2 * ae;
 					if (n > e) {
 						t *= e / n, n = e
@@ -8073,8 +8059,8 @@
 					const L = x || v,
 						A = O,
 						{
-							source: D,
-							obfuscated: F,
+							source: F,
+							obfuscated: D,
 							height: q,
 							width: G,
 							needsBackgroundBlur: J
@@ -8093,8 +8079,8 @@
 						}),
 						Y = this.shouldBlur(),
 						X = !(!p.isSponsored || !p.source);
-					if (F && Y) return l.a.createElement(k.a, te({}, Z, {
-						blurSrc: F
+					if (D && Y) return l.a.createElement(k.a, te({}, Z, {
+						blurSrc: D
 					}), l.a.createElement(de, {
 						isVisible: g
 					}, l.a.createElement(_.a, te({}, Q, {
@@ -8109,9 +8095,9 @@
 						onClick: this.onClickRevealBlurred,
 						postId: p.id,
 						shouldBlur: Y,
-						source: F,
+						source: D,
 						outboundUrl: X && p.source.outboundUrl || void 0,
-						originalSource: D
+						originalSource: F
 					}))));
 					if (!p.media) return null;
 					switch (p.media.type) {
@@ -8186,7 +8172,7 @@
 								media: p.media,
 								mediaContainerProps: Z,
 								onIframeLoaded: this.onIframeLoaded,
-								source: D,
+								source: F,
 								title: p.title
 							}) : l.a.createElement(k.a, te({}, Z, {
 								alwaysWrapMedia: !0,
@@ -8201,7 +8187,7 @@
 								onLoad: this.onIframeLoaded,
 								showCentered: m,
 								showFull: h,
-								source: D,
+								source: F,
 								title: p.title
 							})) : l.a.createElement(k.a, te({}, Z, {
 								alwaysWrapMedia: !0
@@ -8210,7 +8196,7 @@
 								title: p.title,
 								childRef: this.storeChildRef,
 								onLoad: this.onIframeLoaded,
-								source: D,
+								source: F,
 								fullWidth: p.media.provider === z.v.IFrameEmbed
 							})));
 						case z.o.GIFVIDEO: {
@@ -8227,7 +8213,7 @@
 								postId: p.id,
 								shouldLoad: !0,
 								shouldPause: L,
-								source: D,
+								source: F,
 								originalSource: p.media.content
 							}))))
 						}
@@ -8292,7 +8278,7 @@
 						case z.o.IMAGE:
 							const x = this.state.viewportHeight - 2 * ae,
 								O = this.state.viewportWidth - 2 * ae;
-							let j = D;
+							let j = F;
 							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (p.thumbnail && Object(f.a)(p.thumbnail.url) ? j = p.thumbnail.url : p.preview && Object(f.a)(p.preview.url) && (j = p.preview.url)), l.a.createElement(k.a, te({}, Z, {
 								blurSrc: J ? j : void 0,
 								isExpando: !!r
@@ -8318,12 +8304,12 @@
 								originalSource: p.media.content
 							}))));
 						case z.o.GALLERY:
-							const F = Object(K.b)(p.media.mediaMetadata || {}, Object(K.c)(a), z.p, G),
+							const D = Object(K.b)(p.media.mediaMetadata || {}, Object(K.c)(a), z.p, G),
 								$ = Object(K.a)(p.media.gallery, p.isSponsored);
 							return l.a.createElement(k.a, te({}, Z, {
-								blurSrc: J ? D : void 0,
+								blurSrc: J ? F : void 0,
 								isExpando: !!r,
-								maxGalleryHeight: F + $,
+								maxGalleryHeight: D + $,
 								className: ee.a.galleryMediaContainer,
 								isGalleryTileLayout: i
 							}), l.a.createElement(de, {
@@ -8332,7 +8318,7 @@
 								postId: p.id,
 								galleryItems: p.media.gallery ? p.media.gallery.items : [],
 								mediaMetadata: p.media.mediaMetadata || {},
-								imageHeight: F,
+								imageHeight: D,
 								captionHeight: $,
 								isSponsored: p.isSponsored,
 								className: this.props.imageBoxClassName,
@@ -8738,10 +8724,10 @@
 				A = () => s.fbt._("Stickied post", null, {
 					hk: "3qSaBs"
 				}),
-				D = () => s.fbt._("Pinned post", null, {
+				F = () => s.fbt._("Pinned post", null, {
 					hk: "2oxErI"
 				}),
-				F = (e, t, n) => {
+				D = (e, t, n) => {
 					const s = "PostBadges--".concat(e, "--").concat(t);
 					return n ? "".concat(s, "--").concat(n) : s
 				},
@@ -8790,16 +8776,16 @@
 						caretOnTop: !1
 					},
 					z = H.isRemoved && !H.modRemovalReason && !H.modNote && H.belongsTo.type === m.a.SUBREDDIT,
-					q = F("Approve", H.id, V),
-					G = F("Archived", H.id, V),
-					J = F("Automod", H.id, V),
-					Q = F("Lock", H.id, V),
-					Z = F("Mod", H.id, V),
-					Y = F("Remove", H.id, V),
-					X = F("Report", H.id, V),
-					$ = F("Spam", H.id, V),
-					ee = F("Sticky", H.id, V),
-					te = F("Pinned", H.id, V);
+					q = D("Approve", H.id, V),
+					G = D("Archived", H.id, V),
+					J = D("Automod", H.id, V),
+					Q = D("Lock", H.id, V),
+					Z = D("Mod", H.id, V),
+					Y = D("Remove", H.id, V),
+					X = D("Report", H.id, V),
+					$ = D("Spam", H.id, V),
+					ee = D("Sticky", H.id, V),
+					te = D("Pinned", H.id, V);
 				return r.a.createElement("div", {
 					className: t
 				}, a && n && H.distinguishType === l.C.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(k.a, {
@@ -8840,13 +8826,13 @@
 					text: A()
 				}, W))), y && h && r.a.createElement(o.Fragment, null, r.a.createElement(S.a, {
 					className: I.a.stickyIcon,
-					desc: D(),
+					desc: F(),
 					id: te,
 					onMouseEnter: K(te),
 					onMouseLeave: B
 				}), r.a.createElement(u.c, P({
 					tooltipId: te,
-					text: D()
+					text: F()
 				}, W))), (H.isApproved || H.approvedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(v.a, {
 					className: I.a.approveIcon,
 					desc: Object(f.a)(H),
@@ -8996,7 +8982,7 @@
 				P = n("./src/lib/lessComponent.tsx");
 			const {
 				fbt: M
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = P.a.div("Container", I.a), R = P.a.h2("PostTitle", I.a), L = P.a.div("MetaLine", I.a), A = P.a.span("SubredditName", I.a), D = P.a.time("InfoSpan", I.a), F = Object(c.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = P.a.div("Container", I.a), R = P.a.h2("PostTitle", I.a), L = P.a.div("MetaLine", I.a), A = P.a.span("SubredditName", I.a), F = P.a.time("InfoSpan", I.a), D = Object(c.c)({
 				subreddit: (e, t) => {
 					let {
 						collection: {
@@ -9031,19 +9017,19 @@
 						"data-redditstyle": !0
 					}, o && i.a.createElement(A, {
 						"data-redditstyle": !0
-					}, o), o && i.a.createElement(O.b, null), i.a.createElement(D, null, M._({
+					}, o), o && i.a.createElement(O.b, null), i.a.createElement(F, null, M._({
 						"*": "{number of posts} posts",
 						_1: "1 post"
 					}, [M._plural(r, "number of posts")], {
 						hk: "1Uy96U"
-					})), i.a.createElement(O.b, null), i.a.createElement(D, null, M._("created {time}", [M._param("time", Object(E.d)(e.createdAtUTC))], {
+					})), i.a.createElement(O.b, null), i.a.createElement(F, null, M._("created {time}", [M._param("time", Object(E.d)(e.createdAtUTC))], {
 						hk: "2cUc5m"
 					}))), s && i.a.createElement("div", {
 						className: I.a.onHoverActionText
 					}, i.a.createElement("span", null, s)))
 				}
 			}
-			var U = Object(a.b)(F)(B),
+			var U = Object(a.b)(D)(B),
 				K = n("./src/reddit/helpers/trackers/postCollection.ts"),
 				H = n("./src/reddit/components/PostCreationForm/CollectionListModal/index.m.less"),
 				V = n.n(H);
@@ -9314,13 +9300,13 @@
 				R = O.a.wrapped(g.a, "AddCollectionIcon", E.a),
 				L = O.a.wrapped(m.f, "PrimaryActionButton", E.a),
 				A = O.a.wrapped(f.a, "LoadingIcon", E.a),
-				D = O.a.wrapped(h.b, "ErrorText", E.a),
-				F = Object(a.c)({
+				F = O.a.wrapped(h.b, "ErrorText", E.a),
+				D = Object(a.c)({
 					collection: v.r,
 					error: v.c,
 					isPending: v.h
 				}),
-				B = Object(i.b)(F, (e, t) => ({
+				B = Object(i.b)(D, (e, t) => ({
 					onCreate: (t, n) => e(Object(d.b)(t, n)),
 					onUpdate: n => e(Object(d.h)(t.collectionId, n))
 				}));
@@ -9389,7 +9375,7 @@
 						disabled: n || !i
 					}, n ? r.a.createElement(A, {
 						sizePx: 10
-					}) : a)), t && r.a.createElement(D, null, Object(l.a)(t))))
+					}) : a)), t && r.a.createElement(F, null, Object(l.a)(t))))
 				}
 			}
 			t.a = Object(c.a)(B(U))
@@ -10542,8 +10528,8 @@
 				R = c.a.div("RadioOptionContent", w.a),
 				L = c.a.span("OptionDetails", w.a),
 				A = c.a.wrapped(h.a, "RadioInput", w.a),
-				D = c.a.wrapped(b.a, "RadioOption", w.a),
-				F = c.a.span("Delimiter", w.a),
+				F = c.a.wrapped(b.a, "RadioOption", w.a),
+				D = c.a.span("Delimiter", w.a),
 				B = c.a.wrapped(d.f, "Footer", w.a),
 				U = c.a.wrapped(m.i, "CancelButton", w.a),
 				K = c.a.wrapped(m.i, "DeleteButton", w.a),
@@ -10632,14 +10618,14 @@
 						value: this.state.submitTime,
 						name: "submit_time",
 						onChange: this.onSubmitTimeChange
-					}, r.a.createElement(D, {
+					}, r.a.createElement(F, {
 						showButton: !0,
 						value: v.i.Now
 					}, r.a.createElement(R, null, r.a.createElement("span", null, s.fbt._("Submit post now", null, {
 						hk: "2ueTnc"
 					})), r.a.createElement(L, null, s.fbt._("Submitting post before your event allows people to follow your event and come back at the event time", null, {
 						hk: "3LTavv"
-					})))), r.a.createElement(D, {
+					})))), r.a.createElement(F, {
 						showButton: !0,
 						value: v.i.AtEventTime
 					}, r.a.createElement(R, null, r.a.createElement("span", null, this.getSubmitAtLabel()), r.a.createElement(L, null, s.fbt._("This post will be visible to only Mods and editable until the event time.", null, {
@@ -10676,7 +10662,7 @@
 					}), r.a.createElement(M, {
 						onChange: this.onStartTimeChange,
 						value: this.state.startTime
-					}))), s.fbt._param("to", r.a.createElement(F, null, s.fbt._("to", null, {
+					}))), s.fbt._param("to", r.a.createElement(D, null, s.fbt._("to", null, {
 						hk: "2tWTBK"
 					}))), s.fbt._param("end time", r.a.createElement("fieldset", {
 						style: {
@@ -11119,9 +11105,9 @@
 				R = n("./src/reddit/components/SEOTitle/index.tsx"),
 				L = n("./src/reddit/selectors/posts.ts"),
 				A = n("./src/reddit/selectors/subreddit.ts"),
-				D = n("./src/reddit/selectors/user.ts"),
-				F = n("./src/reddit/components/PostTitle/index.m.less"),
-				B = n.n(F),
+				F = n("./src/reddit/selectors/user.ts"),
+				D = n("./src/reddit/components/PostTitle/index.m.less"),
+				B = n.n(D),
 				U = n("./src/config.ts");
 
 			function K() {
@@ -11238,7 +11224,7 @@
 							subredditId: n.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: D.U,
+					shouldOpenPostInNewTab: F.U,
 					imageGalleryCurrentItem: (e, t) => {
 						let {
 							post: n
@@ -11415,11 +11401,11 @@
 		"./src/reddit/components/PostTopMeta/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return ee
+				return $
 			})), n.d(t, "a", (function() {
-				return ne
+				return te
 			})), n.d(t, "b", (function() {
-				return re
+				return oe
 			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
@@ -11435,82 +11421,65 @@
 				h = n("./src/reddit/actions/modal.ts"),
 				b = n("./src/reddit/helpers/isCrosspost.ts"),
 				f = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
-				g = n("./src/reddit/hooks/useTracking.ts");
-
-			function x() {
-				return (x = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			var y = e => o.a.createElement("svg", x({
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, e), o.a.createElement("path", {
-					d: "M9.06,8.64c1.12-1.26,2.2-2.45,4.44-2.6V7.5a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74L15.18,1.7a1,1,0,0,0-1.68.74V4c-3.14.17-4.69,1.88-5.93,3.28C6.58,8.42,6,9,5,9H2a1,1,0,0,0,0,2H5C6.93,11,8,9.82,9.06,8.64Z"
-				}), o.a.createElement("path", {
-					d: "M15.18,11.76a1,1,0,0,0-1.68.74V14c-2.23-.16-3.29-1.32-4.39-2.56-.21-.24-.43-.48-.66-.72a5.63,5.63,0,0,1-1.77,1.06,13.34,13.34,0,0,1,.94,1A7.85,7.85,0,0,0,13.5,16v1.59a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74Z"
-				})),
-				v = n("./src/reddit/icons/svgs/Powerup/index.tsx"),
-				C = n("./src/reddit/components/AuthorLink/index.tsx"),
-				E = n("./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.tsx"),
-				O = n("./src/reddit/components/Economics/SubredditPremium/Badges/UsernameDisplay/index.tsx"),
-				j = n("./src/reddit/components/Flair/index.tsx"),
-				w = n("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
-				S = n("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
-				_ = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				k = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
-				T = n("./src/reddit/components/JSAPIContainers/index.tsx"),
-				I = n("./src/reddit/components/QuarantinedLabel/index.tsx"),
-				P = n("./src/reddit/components/SponsoredLabel/index.tsx"),
-				M = n("./src/reddit/components/SubredditNameLink/index.tsx"),
-				N = n("./src/reddit/constants/posts.ts"),
-				R = n("./src/reddit/contexts/InsideOverlay.tsx"),
-				L = n("./src/reddit/controls/MetaSeparator/index.tsx"),
-				A = n("./src/reddit/components/Portal/index.tsx"),
-				D = n("./src/reddit/constants/elementIds.ts"),
+				g = n("./src/reddit/hooks/useTracking.ts"),
+				x = n("./src/reddit/icons/svgs/Crosspost/index.tsx"),
+				y = n("./src/reddit/icons/svgs/Powerup/index.tsx"),
+				v = n("./src/reddit/components/AuthorLink/index.tsx"),
+				C = n("./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.tsx"),
+				E = n("./src/reddit/components/Economics/SubredditPremium/Badges/UsernameDisplay/index.tsx"),
+				O = n("./src/reddit/components/Flair/index.tsx"),
+				j = n("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
+				w = n("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
+				S = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
+				_ = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
+				k = n("./src/reddit/components/JSAPIContainers/index.tsx"),
+				T = n("./src/reddit/components/QuarantinedLabel/index.tsx"),
+				I = n("./src/reddit/components/SponsoredLabel/index.tsx"),
+				P = n("./src/reddit/components/SubredditNameLink/index.tsx"),
+				M = n("./src/reddit/constants/posts.ts"),
+				N = n("./src/reddit/contexts/InsideOverlay.tsx"),
+				R = n("./src/reddit/controls/MetaSeparator/index.tsx"),
+				L = n("./src/reddit/components/Portal/index.tsx"),
+				A = n("./src/reddit/constants/elementIds.ts"),
 				F = o.a.memo((function(e) {
 					let {
 						children: t
 					} = e;
 					const [n, r] = Object(s.useState)(!1);
-					return Object(s.useEffect)(() => (r(!0), () => r(!1)), []), n ? o.a.createElement(A.a, {
-						container: document.getElementById(D.d)
+					return Object(s.useEffect)(() => (r(!0), () => r(!1)), []), n ? o.a.createElement(L.a, {
+						container: document.getElementById(A.d)
 					}, o.a.Children.only(t)) : null
 				})),
-				B = n("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				U = n("./src/reddit/helpers/styles/smartTextColor.ts"),
-				K = n("./src/reddit/icons/fonts/Admin/index.tsx"),
-				H = (n("./src/reddit/icons/fonts/Premium/index.tsx"), n("./src/reddit/models/Flair/index.ts")),
-				V = n("./src/reddit/models/NewStructuredStyles/index.ts"),
-				W = n("./src/reddit/models/Post/index.ts"),
-				z = n("./src/reddit/models/Subreddit/index.ts"),
-				q = n("./src/reddit/selectors/authorFlair.ts"),
-				G = n("./src/reddit/selectors/gold/powerups.ts"),
-				J = n("./src/reddit/selectors/userFlair.ts"),
-				Q = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				Z = n("./src/reddit/components/PostTopMeta/index.m.less"),
-				Y = n.n(Z);
+				D = n("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				B = n("./src/reddit/helpers/styles/smartTextColor.ts"),
+				U = n("./src/reddit/icons/fonts/Admin/index.tsx"),
+				K = (n("./src/reddit/icons/fonts/Premium/index.tsx"), n("./src/reddit/models/Flair/index.ts")),
+				H = n("./src/reddit/models/NewStructuredStyles/index.ts"),
+				V = n("./src/reddit/models/Post/index.ts"),
+				W = n("./src/reddit/models/Subreddit/index.ts"),
+				z = n("./src/reddit/selectors/authorFlair.ts"),
+				q = n("./src/reddit/selectors/gold/powerups.ts"),
+				G = n("./src/reddit/selectors/userFlair.ts"),
+				J = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				Q = n("./src/reddit/components/PostTopMeta/index.m.less"),
+				Z = n.n(Q);
 			const {
-				fbt: X
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), $ = {
+				fbt: Y
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), X = {
 				placement: "top"
 			};
-			var ee;
+			var $;
 			! function(e) {
 				e.StickyPost = "sticky", e.Lightbox = "lightbox", e.TopAwardedModal = "topAwarded"
-			}(ee || (ee = {}));
-			const te = e => Object(U.a)(Object(B.a)(e), V.a.metaText, V.b.metaText),
-				ne = d.a.wrapped(L.b, "MetaSeparator", Y.a),
-				se = d.a.span("text", Y.a),
-				oe = Object(Q.t)(),
-				re = e => {
+			}($ || ($ = {}));
+			const ee = e => Object(B.a)(Object(D.a)(e), H.a.metaText, H.b.metaText),
+				te = d.a.wrapped(R.b, "MetaSeparator", Z.a),
+				ne = d.a.span("text", Z.a),
+				se = Object(J.t)(),
+				oe = e => {
 					const t = !e.isDeleted && e.post.distinguishType === a.C.ADMIN;
-					return o.a.createElement(C.a, {
-						className: Y.a.authorLink,
+					return o.a.createElement(v.a, {
+						className: Z.a.authorLink,
 						"data-click-id": "user",
 						author: e.post.author,
 						isAdmin: t,
@@ -11518,100 +11487,100 @@
 						isAuthorDeleted: e.isDeleted,
 						isUnstyled: !0,
 						style: e.style
-					}, "u/".concat(e.post.author), t && o.a.createElement(K.a, {
-						className: Y.a.adminIcon
-					}), e.renderContractorBadge && o.a.createElement(K.a, {
-						className: Y.a.contractorIcon
+					}, "u/".concat(e.post.author), t && o.a.createElement(U.a, {
+						className: Z.a.adminIcon
+					}), e.renderContractorBadge && o.a.createElement(U.a, {
+						className: Z.a.contractorIcon
 					}), !1)
 				},
-				ie = o.a.memo((function(e) {
+				re = o.a.memo((function(e) {
 					const {
 						className: t,
 						isOverlay: n,
 						pageLayer: c,
 						post: d,
-						showSub: x = !1,
-						showTimestamp: C = !0,
+						showSub: v = !1,
+						showTimestamp: N = !0,
 						subredditOrProfile: R,
 						tooltipType: L
-					} = e, A = Object(r.c)(), D = Object(g.a)(), B = d.belongsTo.id, U = Object(s.useCallback)(e => Object(q.a)(e, {
+					} = e, A = Object(r.c)(), D = Object(g.a)(), B = d.belongsTo.id, U = Object(s.useCallback)(e => Object(z.a)(e, {
 						post: d
-					}), [d]), K = Object(r.d)(U), V = Object(s.useCallback)(e => Object(J.a)(e, {
+					}), [d]), H = Object(r.d)(U), J = Object(s.useCallback)(e => Object(G.a)(e, {
 						subredditId: B
-					}), [B]), Q = Object(r.d)(V), Z = Object(s.useCallback)(e => Object(G.a)(e, {
+					}), [B]), Q = Object(r.d)(J), $ = Object(s.useCallback)(e => Object(q.a)(e, {
 						subredditId: B,
 						userId: d.authorId
-					}), [B, d.authorId]), ee = Object(r.d)(Z), oe = Object(s.useCallback)(e => Object(J.d)(e, {
+					}), [B, d.authorId]), se = Object(r.d)($), re = Object(s.useCallback)(e => Object(G.d)(e, {
 						subredditId: B
-					}), [B]), ie = Object(r.d)(oe), ae = Object(f.a)($), ce = Object(f.a)($), le = c && c.meta && c.meta.name === a.Bb.COMMENTS, de = Object(b.a)(d), ue = ie === H.b.Left, pe = d.authorIsContractor && !!R && R.type === z.e.EmployeesOnly, me = !!R && ee, he = !n && !le, be = () => o.a.createElement(ne, {
+					}), [B]), ie = Object(r.d)(re), ae = Object(f.a)(X), ce = Object(f.a)(X), le = c && c.meta && c.meta.name === a.Bb.COMMENTS, de = Object(b.a)(d), ue = ie === K.b.Left, pe = d.authorIsContractor && !!R && R.type === W.e.EmployeesOnly, me = !!R && se, he = !n && !le, be = () => o.a.createElement(te, {
 						className: e.metaSeparatorClassName
-					}, "•"), fe = o.a.createElement(o.a.Fragment, null, !de && o.a.createElement(se, {
+					}, "•"), fe = o.a.createElement(o.a.Fragment, null, !de && o.a.createElement(ne, {
 						style: {
-							color: te(e)
+							color: ee(e)
 						}
-					}, "Posted by"), de && o.a.createElement(s.Fragment, null, o.a.createElement(y, {
-						className: Y.a.crosspostIcon
-					}), o.a.createElement(se, {
+					}, "Posted by"), de && o.a.createElement(s.Fragment, null, o.a.createElement(x.a, {
+						className: Z.a.crosspostIcon
+					}), o.a.createElement(ne, {
 						style: {
-							color: te(e)
+							color: ee(e)
 						}
-					}, "Crossposted by")), K && ue && o.a.createElement("div", {
-						className: Y.a.flairContainer
-					}, o.a.createElement(j.b, {
+					}, "Crossposted by")), H && ue && o.a.createElement("div", {
+						className: Z.a.flairContainer
+					}, o.a.createElement(O.b, {
 						disabled: !Q,
-						flair: K,
+						flair: H,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: he
-					})), Object(W.h)(d.author) ? o.a.createElement(re, {
+					})), Object(V.h)(d.author) ? o.a.createElement(oe, {
 						post: d,
 						isDeleted: !0,
 						renderContractorBadge: pe,
 						style: {
-							color: te(e)
+							color: ee(e)
 						}
-					}) : o.a.createElement(s.Fragment, null, !Object(W.h)(d.author) && o.a.createElement(E.b, {
-						className: Y.a.badge,
+					}) : o.a.createElement(s.Fragment, null, !Object(V.h)(d.author) && o.a.createElement(C.b, {
+						className: Z.a.badge,
 						subredditId: B,
 						uniqueIdentifier: "".concat(d.id, "-").concat(n),
 						userId: d.authorId
-					}), o.a.createElement(S.b, {
+					}), o.a.createElement(w.b, {
 						postOrComment: d,
 						tooltipType: L
-					}, o.a.createElement(O.b, {
-						ignore: Object(W.h)(d.author) || !!d.distinguishType && d.distinguishType !== a.C.NONE,
+					}, o.a.createElement(E.b, {
+						ignore: Object(V.h)(d.author) || !!d.distinguishType && d.distinguishType !== a.C.NONE,
 						subredditId: B,
 						userId: d.authorId
-					}, o.a.createElement(re, {
+					}, o.a.createElement(oe, {
 						post: d,
 						renderContractorBadge: pe,
 						style: {
-							color: te(e)
+							color: ee(e)
 						}
 					}))), me && o.a.createElement(o.a.Fragment, null, o.a.createElement("button", {
-						className: Y.a.powerupBadge,
+						className: Z.a.powerupBadge,
 						onMouseEnter: ce.show,
 						onMouseLeave: ce.hide,
 						onClick: () => {
 							D(Object(m.f)(L ? "post" : "postlist")), A(Object(h.i)(p.a.ECON_POWERUPS_PURCHASE))
 						},
 						ref: ce.target.ref
-					}, o.a.createElement(v.a, {
-						className: Y.a.powerupIcon
-					})), o.a.createElement(F, null, o.a.createElement(k.a, {
+					}, o.a.createElement(y.a, {
+						className: Z.a.powerupIcon
+					})), o.a.createElement(F, null, o.a.createElement(_.a, {
 						arrowProps: ce.arrowProps,
 						popperProps: ce.popperProps,
 						visible: ce.visible
-					}, X._("Powerups Top Supporter", null, {
+					}, Y._("Powerups Top Supporter", null, {
 						hk: "1GLWsz"
-					}))))), K && !ue && o.a.createElement("div", {
-						className: Y.a.flairContainer
-					}, o.a.createElement(j.b, {
+					}))))), H && !ue && o.a.createElement("div", {
+						className: Z.a.flairContainer
+					}, o.a.createElement(O.b, {
 						disabled: !Q,
-						flair: K,
+						flair: H,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: he
-					})), d.belongsTo.type === N.a.SUBREDDIT && !Object(W.h)(d.author) && o.a.createElement(w.a, {
-						className: Y.a.publicWallet,
+					})), d.belongsTo.type === M.a.SUBREDDIT && !Object(V.h)(d.author) && o.a.createElement(j.a, {
+						className: Z.a.publicWallet,
 						contentId: d.id,
 						metaSeparator: o.a.createElement(be, null),
 						subredditId: B,
@@ -11619,35 +11588,35 @@
 						username: d.author
 					}));
 					return o.a.createElement("div", {
-						className: Object(i.a)(Y.a.container, t)
-					}, x && R && o.a.createElement(_.a, {
+						className: Object(i.a)(Z.a.container, t)
+					}, v && R && o.a.createElement(S.a, {
 						postId: d.id,
 						subredditName: R.name,
 						tooltipType: L
-					}, o.a.createElement(M.a, {
+					}, o.a.createElement(P.a, {
 						"data-click-id": "subreddit",
 						to: R.url
-					}, R.displayText)), R && R.isQuarantined && o.a.createElement(I.a, null), x && !de && o.a.createElement(be, null), d.isSponsored && o.a.createElement(s.Fragment, null, o.a.createElement(P.a, null), o.a.createElement(be, null)), fe, o.a.createElement(T.e, {
+					}, R.displayText)), R && R.isQuarantined && o.a.createElement(T.a, null), v && !de && o.a.createElement(be, null), d.isSponsored && o.a.createElement(s.Fragment, null, o.a.createElement(I.a, null), o.a.createElement(be, null)), fe, o.a.createElement(k.e, {
 						post: d
-					}), C && o.a.createElement(o.a.Fragment, null, o.a.createElement("a", {
-						className: Y.a.externalLink,
+					}), N && o.a.createElement(o.a.Fragment, null, o.a.createElement("a", {
+						className: Z.a.externalLink,
 						"data-click-id": "timestamp",
 						href: d.permalink,
 						onMouseEnter: ae.show,
 						onMouseLeave: ae.hide,
 						ref: ae.target.ref,
 						style: {
-							color: te(e)
+							color: ee(e)
 						},
 						target: "_blank",
 						rel: "nofollow noopener noreferrer"
-					}, Object(u.d)(d.created / 1e3)), o.a.createElement(F, null, o.a.createElement(k.a, {
+					}, Object(u.d)(d.created / 1e3)), o.a.createElement(F, null, o.a.createElement(_.a, {
 						arrowProps: ae.arrowProps,
 						popperProps: ae.popperProps,
 						visible: ae.visible
 					}, Object(l.a)(d.created)))))
 				}));
-			t.d = oe(Object(R.b)(Object(c.a)(ie)))
+			t.d = se(Object(N.b)(Object(c.a)(re)))
 		},
 		"./src/reddit/components/PostingSidebar/PolicyRow/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -11703,201 +11672,13 @@
 				r = n.n(o),
 				i = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/lib/constants/index.ts");
-			var l = e => r.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 45 43"
-				}, r.a.createElement("g", {
-					fill: "none",
-					fillRule: "evenodd"
-				}, r.a.createElement("g", {
-					fill: "#0DD3BB",
-					transform: "translate(0 4)"
-				}, r.a.createElement("ellipse", {
-					cx: "25.492",
-					cy: "22.2631",
-					transform: "rotate(5 25.492 22.263)",
-					rx: "17.6396",
-					ry: "13.9883"
-				}), r.a.createElement("ellipse", {
-					cx: "19.3519",
-					cy: "17.9699",
-					transform: "rotate(5 19.352 17.97)",
-					rx: "14.7297",
-					ry: "16.0688"
-				}), r.a.createElement("ellipse", {
-					cx: "14.0251",
-					cy: "27.7862",
-					transform: "rotate(5 14.025 27.786)",
-					rx: "8.4751",
-					ry: "8.9243"
-				}), r.a.createElement("ellipse", {
-					cx: "11.808",
-					cy: "17.4531",
-					transform: "rotate(5 11.808 17.453)",
-					rx: "10.7695",
-					ry: "10.8575"
-				}), r.a.createElement("ellipse", {
-					cx: "12.1168",
-					cy: "22.4429",
-					transform: "rotate(5 12.117 22.443)",
-					rx: "8.4751",
-					ry: "8.9243"
-				})), r.a.createElement("path", {
-					fill: "#FFF",
-					d: "M35.6875 31.5625c-1.3275 1.8696-6.7017 5.0483-8.7188 6.0313-2.0174.983-13.478 2.1465-15.625-.6876-1.5625-2.0624-.9687-4.625 1-6.1562C9.6563 29.2812 8.125 27.8437 7 24.9062c-.0872-.2277-1.1015-1.763-.875-1.7812l.9375-4.0313c.8158-2.9308 4.2118-5.1638 6.7992-6.5715 2.3198-1.2615 4.9067-1.934 7.5113-2.1714 2.1052-.192 4.259-.101 6.277.554 2.0182.6552 4.2956 1.063 5.5063 2.8765 0 0 1.5532 3.6305 1.6736 5.5487.1204 1.9177-2.0402 6.1206-2.0402 6.1206"
-				}), r.a.createElement("path", {
-					fill: "#FFF",
-					d: "M31.5665 34.5708c.6293 1.944.9 4.0143.794 6.0635 0 0-.473 1.3654-6.7204 1.3654-6.2478 0-7.6077-.7104-7.6077-.7104.047-1.224.0518-2.4493.014-3.6732-.0028-.097.0414-.2356.13-.2062l-.1555-7.319 12.5354-2.0634c.4433.252.8525.5696 1.211.9412l-.2007 5.6022z"
-				}), r.a.createElement("path", {
-					fill: "#FF0",
-					d: "M34.0514 21.4676c-.3642.8707-.5738 1.8017-.8143 2.7188-.601 2.29-1.4044 4.5218-2.3967 6.658.1578.0357.3286.0014.4624-.0927.072.7567 1.0046 1.1686 1.678.8836.6734-.2846 1.071-1.0334 1.2235-1.777.0223-.1084.0407-.2198.0277-.33-.0202-.1737-.114-.3265-.1996-.477-.6817-1.2056-.9025-2.6877-.6033-4.0528.099-.4518.2715-.9186.6318-1.1878.2046-.1536.452-.2293.6975-.2872.6156-.146 1.2512-.198 1.8812-.154l.33-1.1467c.054-.1864.108-.3773.0993-.572-.0212-.4554-.393-.8263-.8058-.9727-.412-.1463-.8604-.115-1.2947-.0823"
-				}), r.a.createElement("path", {
-					fill: "#F15A24",
-					d: "M12.322 21.7194c.061.3407.127.693.3168.977.3034.4517.85.6324 1.3573.785.3797.1136.7785.2284 1.165.141.2643-.0598.5012-.2104.725-.3697.61-.433 1.1792-.9615 1.5326-1.6395.3962-.7593.4926-1.684.2625-2.5148-.0912-.3294-.2458-.6615-.524-.843-.2292-.1494-.5564-.2205-.6293-.4927-.1057-.3946-1.938-.4537-2.25-.4202-.474.051-.939.1728-1.2797.5403-.9068.9784-.8953 2.613-.676 3.8366M24.194 19.0418c.0644.3482.1334.708.3344.998.3193.462.8963.6468 1.431.8023.4005.1164.8212.234 1.2286.1447.2793-.0614.529-.2154.7647-.3776.644-.443 1.244-.983 1.617-1.6756.4174-.776.5195-1.7205.2768-2.5694-.0964-.3366-.2596-.6762-.5526-.8614-.242-.1528-.587-.2255-.664-.5037-.1117-.4033-2.0443-.464-2.3736-.4297-.4998.052-.9902.1766-1.3498.5523-.9564 1-.9442 2.67-.7126 3.9202"
-				}), r.a.createElement("path", {
-					fill: "#CCC",
-					d: "M35.9408 20.9708c.222.0064.4462.0053.6533.066.4068.1196.9188.5786.945-.1845.007-.1902.012-.3904-.0708-.56-.122-.251-.5983-.9602-.824-1.087-.1087-.061-.236-.0694-.359-.073-.3063-.0092-.613.0014-.9182.0315-.9906.0986-.7374 1.4513.01 1.725.177.0647.3693.0764.5638.082"
-				}), r.a.createElement("path", {
-					fill: "#FF7BAC",
-					d: "M37.8215 19.8532c-.0306.0467-.0694.0968-.123.099-.0946.0034-.1258-.128-.1816-.2085-.0644-.0938-.1824-.1258-.29-.1506-.4784-.112-1.163-.1415-1.5974-.3738-.4688-.251-.4095-.3117-.2434-.8975.178-.6268.4606-1.3722 1.071-1.6617 2.0532-.9728 2.1506 1.9814 1.3643 3.1932"
-				}), r.a.createElement("path", {
-					fill: "#FF0",
-					d: "M30.808 32.959c.0077.0694.0343.1556.1004.1593-.0834-.0335-.1158.1122-.095.203.429.0508.8583.1012 1.2877.152.263.0313.5674.0482.752-.151.1304-.141.16-.3512.1825-.5462.032-.274.064-.548.0964-.822.0082-.0724.0135-.1552-.0336-.2086-.034-.0388-.087-.051-.137-.0588-.219-.0327-.446-.0064-.6532.075-.6713.2642-.6634-.6747-1.1966-.4688-.4516.1747-.346 1.279-.3035 1.6663"
-				}), r.a.createElement("path", {
-					fill: "#FFF",
-					d: "M31.9858 34.3613c.3538.146.738.196 1.1182.2014 2.1213.03 4.1668-1.396 5.0646-3.4086.8978-2.0117.661-4.4994-.4998-6.3584-.514-.8238-1.3235-1.5857-2.2608-1.5168-.594.0433-1.1344.429-1.4745.9404-.3405.5112-.499 1.1347-.552 1.7558-.1233 1.4442.3143 2.9324 1.1923 4.053"
-				}), r.a.createElement("path", {
-					fill: "#F7E1CB",
-					d: "M11.2195 30.4984l9.4083-2.7606 1.318 7.9058-7.4904 2.7607"
-				}), r.a.createElement("path", {
-					fill: "#FFF",
-					d: "M12.7516 37.7683c.2136.2304.5864.1393.8525-.0207 1.096-.6588 1.5454-2.1516 1.337-3.4564-.108-.6758-.3805-1.3463-.877-1.792-.4966-.446-1.243-.6212-1.827-.3125-.402.212-.682.6167-.8776 1.041-.4437.9637-.5192 2.107-.206 3.1258.1683.548.462 1.0782.9255 1.388.4637.3095 1.1184.3464 1.543-.0195"
-				}), r.a.createElement("g", null, r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M27.37 11.0563c-2.068-.6386-4.2747-.727-6.4318-.54-2.669.2313-5.8933.8336-7.6967 2.1168-.6986.4972-3.0193 1.2145-3.5257 3.1977"
-				}), r.a.createElement("path", {
-					fill: "#FFF",
-					d: "M10.0543 14.9054c-1.561-.3985-3.317.0782-4.4594 1.2103-1.1422 1.132-1.726 2.906-1.237 4.4356.5752 1.8004 1.926 3.0712 2.306 3.275"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M10.0543 14.9054c-1.561-.3985-3.317.0782-4.4594 1.2103-1.1422 1.132-1.7258 2.906-1.237 4.4356.5756 1.8004 1.926 3.0712 2.306 3.275"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M11.823 29.9606c-2.7657-.9024-4.92-3.4455-5.3476-6.3126-.034-.2298.0103-.55.2428-.5677M33.1486 15.4973c.192.314.384.6286.576.9427.114.1872.2283.374.33.5677.5276 1.003.7084 2.182.5062 3.2958M35.8308 16.6844c-1.6376 4.9262-3.3644 9.8235-5.1785 14.688"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M35.671 17.0804c.2263-.288.586-.4587.9517-.4895.366-.0313.736.0692 1.0563.2483.2708.1508.515.364.6543.6404.1393.276.161.6202.0118.8913M38.3983 17.8874c-.6142 1.9982-1.3304 3.9652-2.145 5.891"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M37.245 21.08c.2485-.5347.1342-1.2158-.2747-1.641-.4093-.425-1.0872-.5678-1.6347-.3436-.1367.0562-.278.1512-.301.297"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M37.2275 21.501c.0044-.5535-.3094-1.0984-.791-1.374-.482-.2753-1.113-.2705-1.5904.012"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M34.2996 20.788c.7136-.389 1.6686-.2757 2.2706.269.2052.1856.376.4304.3964.706.006.0785-.0008.1578-.0196.2345M31.8127 33.921c.3626.1424.7564.1912 1.1458.1963 2.1737.0294 4.2697-1.3607 5.1896-3.3225.92-1.961.6773-4.386-.512-6.1982-.5268-.803-1.3562-1.5457-2.3166-1.4785-.6087.0423-1.1624.4184-1.511.9168-.3488.4983-.5113 1.106-.5655 1.7115-.1264 1.4077.322 2.8584 1.2216 3.9508M33.9912 29.3915l-1.467 4.0393M32.6352 33.0774c-.951.6286-1.8904 1.2738-2.8177 1.935"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M30.6496 31.0486l-.6455 4.1743c-.0058.0366-.0053.083.0385.099.044.0162.0833-.0547.0346-.0517"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M30.1422 33.367c.1982-.3278.4635-.6147.7748-.8386.078.1534.1257.3226.139.4943.287-.1218.5986-.183.9103-.1802-.3703.3692-.701.778-.9844 1.2173"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M31.195 33.0817c-.389.5013-.7464 1.0268-1.0695 1.5725.0302-.0257.0604-.0514.0902-.0775M30.7412 32.969c.0104.3634-.12.7275-.3766 1.0607M32.6658 33.0168c.1094-.676.1787-1.3585.2074-2.0422-.326.1956-.6525.3912-.979.5872-.1045.0627-.2386.1262-.3414.06-.063-.04-.091-.1166-.1135-.1874-.133-.4158-.2417-.8396-.3253-1.2682-.291.3247-.547.6807-.7626 1.0594"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M33.4372 28.176c-.177.4906-.354.9812-.5313 1.472-.285.7874-.5726 1.5822-1.0206 2.291M36.2456 21.1264c.048-.0176.0608-.0917.0218-.1244-.3043.6815-.5497 1.3883-.732 2.1112M30.4806 30.95c-.0843.2098-.1095.43-.074.6453M32.6366 25.235c-1.3602 1.8225-3.2855 3.1704-5.3524 4.1286-2.0672.958-4.284 1.55-6.5023 2.0763M30.348 27.747c.454.2455.8732.5552 1.24.9174M31.3832 34.1252c.6447 1.895.9225 3.913.8134 5.9105"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M20.2203 27.5033c.529 2.5225.9453 5.069 1.2474 7.6282.0048.042.0063.0925-.0276.1178-.0345.0253-.095-.029-.0603-.0536"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					d: "M21.462 35.1753c-2.4317 1.1842-4.9882 2.113-7.614 2.7662-.0714.0177-.1587.031-.208-.023-.0494-.0544.038-.1667.0828-.1083",
-					strokeLinecap: "round",
-					strokeLinejoin: "round"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					d: "M13.3965 36.9094l.6482 1.51c-.01-.0428-.0207-.086-.0312-.129",
-					strokeLinecap: "round",
-					strokeLinejoin: "round"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					d: "M12.104 37.242c.219.2246.601.1358.8735-.0202 1.123-.6422 1.5835-2.0972 1.3698-3.369-.111-.659-.3898-1.3124-.8986-1.747-.5087-.4348-1.2736-.6054-1.872-.3045-.4118.2066-.6988.601-.8992 1.0147-.4546.9394-.532 2.054-.211 3.047.1723.5342.4733 1.051.9482 1.353.4753.3016 1.1462.3376 1.5813-.019M10.6766 30.3595c-.0715-.0158-.065.1064-.022.1655l.7927 1.0914c.011.0154.0276.0326.0457.0264.018-.006.0015-.0418-.01-.0268M10.6893 30.2222c3.1114-1.025 6.255-1.953 9.425-2.782.0814.1758.1628.352.2443.5274",
-					strokeLinecap: "round",
-					strokeLinejoin: "round"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					d: "M17.6433 28.0588c-.2222-.2202-.246-.6037-.5073-.7755-.2244-.148-.522-.0737-.7792.0048-1.0368.3175-2.073.6346-3.11.952-.2287.07-.4843.163-.579.382-.1275.2944.111.6096.332.843M13.849 27.877c-.025-.1897.085-.3783.2402-.4906.1554-.1123.349-.1592.5393-.1816.302-.0364.678.0275.7848.3115M17.774 36.8926c-.1595-.0286-.2392.1064-.234.201.068 1.193.0596 2.3876-.0247 3.5806M27.3276 14.627c-1.155-.254-2.4348.1776-3.1982 1.0778-.763.9005-.975 2.23-.5294 3.3214.203.498.537.9487.9825 1.252.757.5157 1.7714.556 2.64.263.9157-.3095 1.7137-.983 2.115-1.8592.401-.8763.3797-1.9464-.108-2.7783-.4875-.8312-1.447-1.3828-2.412-1.3303",
-					strokeLinecap: "round",
-					strokeLinejoin: "round"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeWidth: ".5",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M15.604 17.5287c-.993-.5754-2.3376-.3743-3.2093.371-.872.745-1.2777 1.9505-1.1753 3.0903.038.4224.1422.845.359 1.2103.4368.7372 1.309 1.1618 2.168 1.1684.8592.007 1.6937-.3673 2.346-.924.2724-.2316.518-.497.7086-.799.465-.738.5666-1.6924.2675-2.511-.2992-.8188-.993-1.485-1.8255-1.7524"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M25.8734 23.061c.019.8443.036 1.706-.2144 2.513-.3128 1.0058-1.0497 1.8733-1.9936 2.347-.9442.4738-2.0827.547-3.0803.1982"
-				}), r.a.createElement("path", {
-					fill: "#000",
-					d: "M24.826 27.045c-.909 1.0263-2.4282 1.5463-3.7262 1.098-.325-.1124-.682-.385-.5983-.7172-.305-.1123-.6554.132-.9616.024-.1132-.0405-.2045-.124-.2882-.21-.507-.519-.8602-1.1846-1.0054-1.894 1.3742.2257 2.797.237 4.147-.1035.6403-.1614 1.2614-.404 1.8365-.7284.2493-.1406 1.482-1.2717 1.6324-1.2287.3404.0972-.014 1.6884-.081 1.9398-.1798.6673-.4952 1.3003-.9554 1.82"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M24.826 27.045c-.909 1.0263-2.4282 1.5463-3.7262 1.098-.325-.1124-.682-.385-.5983-.7172-.305-.1123-.6554.132-.9616.024-.1132-.0405-.2045-.124-.2882-.21-.507-.519-.8602-1.1846-1.0054-1.894 1.3742.2257 2.797.237 4.147-.1035.6403-.1614 1.2614-.404 1.8365-.7284.2493-.1406 1.482-1.2717 1.6324-1.2287.3404.0972-.014 1.6884-.081 1.9398-.1798.6673-.4952 1.3003-.9554 1.82z"
-				}), r.a.createElement("path", {
-					fill: "#FFF",
-					d: "M27.1593 11.0486c.356-.539.901-.9515 1.5182-1.148.3725-.1184.7656-.1595 1.157-.1632 1.2186-.011 2.452.3553 3.4137 1.1013.9616.7464 1.63 1.8822 1.7275 3.0925l.0405 1.2437c.0792.8083-.1735 1.644-.687 2.274-.0244.03-.0506.0716-.0296.1038.021.0323.0833-.0212.0465-.033"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M27.1593 11.0486c.356-.539.901-.9515 1.5182-1.148.3725-.1184.7656-.1595 1.157-.1632 1.2186-.011 2.452.3553 3.4137 1.1013.9616.7464 1.63 1.8822 1.7275 3.0925l.0405 1.2437c.0792.8083-.1735 1.644-.687 2.274-.0244.03-.0506.0716-.0296.1038.021.0323.0833-.0212.0465-.033M19.0092 10.923c-.1602-.079-.1772-.2954-.172-.4733.078-2.7703.1672-5.5993 1.1384-8.1964 1.835.0793 3.6632.3303 5.4515.7494"
-				}), r.a.createElement("path", {
-					fill: "#FFF",
-					d: "M24.8624 3.1944c-.9362 1.032-.8485 2.7633.0626 3.8172.9108 1.0536 2.4758 1.4224 3.826 1.0687.64-.1677 1.2505-.4896 1.6915-.981 1.0054-1.121.9137-2.9152.1555-4.215-.237-.407-.534-.784-.9052-1.075-.72-.5643-1.7132-.7643-2.597-.5235-.883.241-1.6355.917-1.9667 1.768"
-				}), r.a.createElement("path", {
-					stroke: "#000",
-					strokeLinecap: "round",
-					strokeLinejoin: "round",
-					d: "M24.8624 3.1944c-.9362 1.032-.8485 2.7633.0626 3.8172.9108 1.0536 2.4758 1.4224 3.826 1.0687.64-.1677 1.2505-.4896 1.6915-.981 1.0054-1.121.9137-2.9152.1555-4.215-.237-.407-.534-.784-.9052-1.075-.72-.5643-1.7132-.7643-2.597-.5235-.883.241-1.6355.917-1.9667 1.768"
-				})))),
+				c = n("./src/lib/constants/index.ts"),
+				l = n("./src/reddit/icons/svgs/SnooPosting/index.tsx"),
 				d = n("./src/reddit/selectors/postCreations.ts"),
 				u = n("./src/reddit/components/PostingSidebar/PostingReddiquette/index.m.less"),
 				p = n.n(u),
 				m = n("./src/lib/lessComponent.tsx");
-			const h = m.a.wrapped(l, "Snoo", p.a),
+			const h = m.a.wrapped(l.a, "Snoo", p.a),
 				b = m.a.li("Li", p.a),
 				f = m.a.ol("Ol", p.a),
 				g = m.a.div("Title", p.a),
@@ -12819,85 +12600,51 @@
 		"./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return I
+				return O
 			})), n.d(t, "b", (function() {
-				return H
+				return L
 			})), n.d(t, "e", (function() {
-				return V
+				return A
 			})), n.d(t, "j", (function() {
-				return W
+				return F
 			})), n.d(t, "g", (function() {
-				return z
+				return D
 			})), n.d(t, "i", (function() {
-				return q
+				return B
 			})), n.d(t, "k", (function() {
-				return G
+				return U
 			})), n.d(t, "d", (function() {
-				return J
+				return K
 			})), n.d(t, "l", (function() {
-				return Q
+				return H
 			})), n.d(t, "h", (function() {
-				return Z
+				return V
 			})), n.d(t, "a", (function() {
-				return Y
+				return W
 			})), n.d(t, "c", (function() {
-				return X
+				return z
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
 				r = n.n(o),
 				i = n("./src/lib/lessComponent.tsx"),
-				a = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/icons/svgs/FormattingBlockQuotes/index.m.less"),
-				l = n.n(c);
-			var d = e => r.a.createElement("svg", {
-					className: Object(a.a)(l.a.icon, e.className),
-					style: e.style,
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("polygon", {
-					points: "8.63 4 5.36 4 2 9.8 2 16 9.2 16 9.2 9.24 6.75 9.24 8.63 4"
-				}), r.a.createElement("polygon", {
-					points: "15.56 9.24 17.39 4 14.16 4 10.8 9.8 10.8 16 18 16 18 9.24 15.56 9.24"
-				})),
-				u = n("./src/reddit/icons/svgs/FormattingBold/index.tsx"),
-				p = n("./src/reddit/icons/svgs/FormattingCodeBlock/index.m.less"),
-				m = n.n(p);
-			var h = e => r.a.createElement("svg", {
-					className: Object(a.a)(m.a.icon, e.className),
-					style: e.style,
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("path", {
-					d: "M15,2H13a1,1,0,0,0,0,2h2a1,1,0,0,1,1,1V15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V13a1,1,0,0,0-2,0v2a3,3,0,0,0,3,3H15a3,3,0,0,0,3-3V5A3,3,0,0,0,15,2Z"
-				}), r.a.createElement("path", {
-					d: "M2.79,5a.71.71,0,0,0,.53-.2.74.74,0,0,0,.19-.54V4.08l0-.48H5.07V8.4H4.9a1,1,0,0,0-.69.18A.79.79,0,0,0,4,9.2a.79.79,0,0,0,.21.61A1,1,0,0,0,4.9,10H7.1a1,1,0,0,0,.69-.19A.79.79,0,0,0,8,9.2a.78.78,0,0,0-.21-.61A1,1,0,0,0,7.1,8.4H6.93V3.6H8.44l0,.48a1.19,1.19,0,0,0,.18.72.7.7,0,0,0,.56.2.75.75,0,0,0,.59-.2A1,1,0,0,0,10,4.14V4.08L9.93,2.9q0-.64-.18-.77A1.06,1.06,0,0,0,9.11,2H2.89a1.06,1.06,0,0,0-.63.13q-.16.13-.18.77L2,4.08v.06a.94.94,0,0,0,.19.65A.78.78,0,0,0,2.79,5Z"
-				})),
-				b = n("./src/reddit/icons/svgs/FormattingHeading/index.m.less"),
-				f = n.n(b);
-			var g = e => r.a.createElement("svg", {
-					className: Object(a.a)(f.a.icon, e.className),
-					style: e.style,
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("polygon", {
-					points: "6.57 3 6.57 5.57 10.73 5.57 10.73 17 13.82 17 13.82 5.57 18 5.57 18 3 6.57 3"
-				}), r.a.createElement("polygon", {
-					points: "2 9.65 4.68 9.65 4.68 17 6.66 17 6.66 9.65 9.35 9.65 9.35 8 2 8 2 9.65"
-				})),
-				x = n("./src/reddit/icons/svgs/FormattingItalics/index.tsx"),
-				y = n("./src/reddit/icons/svgs/FormattingMonospace/index.tsx"),
-				v = n("./src/reddit/icons/svgs/FormattingOrderedList/index.tsx"),
-				C = n("./src/reddit/icons/svgs/FormattingSpoiler/index.tsx"),
-				E = n("./src/reddit/icons/svgs/FormattingStrikethrough/index.tsx"),
-				O = n("./src/reddit/icons/svgs/FormattingSuperscript/index.tsx"),
-				j = n("./src/reddit/icons/svgs/FormattingUnorderedList/index.tsx"),
-				w = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts"),
-				S = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.m.less"),
-				_ = n.n(S);
+				a = n("./src/reddit/icons/svgs/FormattingBlockQuotes/index.tsx"),
+				c = n("./src/reddit/icons/svgs/FormattingBold/index.tsx"),
+				l = n("./src/reddit/icons/svgs/FormattingCodeBlock/index.tsx"),
+				d = n("./src/reddit/icons/svgs/FormattingHeading/index.tsx"),
+				u = n("./src/reddit/icons/svgs/FormattingItalics/index.tsx"),
+				p = n("./src/reddit/icons/svgs/FormattingMonospace/index.tsx"),
+				m = n("./src/reddit/icons/svgs/FormattingOrderedList/index.tsx"),
+				h = n("./src/reddit/icons/svgs/FormattingSpoiler/index.tsx"),
+				b = n("./src/reddit/icons/svgs/FormattingStrikethrough/index.tsx"),
+				f = n("./src/reddit/icons/svgs/FormattingSuperscript/index.tsx"),
+				g = n("./src/reddit/icons/svgs/FormattingUnorderedList/index.tsx"),
+				x = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts"),
+				y = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.m.less"),
+				v = n.n(y);
 
-			function k() {
-				return (k = Object.assign || function(e) {
+			function C() {
+				return (C = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -12905,124 +12652,124 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const T = e => i.a.wrapped(e, "Icon", _.a),
-				I = function(e) {
+			const E = e => i.a.wrapped(e, "Icon", v.a),
+				O = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return n => {
-						const s = T(e);
-						return r.a.createElement(s, k({}, n, {
+						const s = E(e);
+						return r.a.createElement(s, C({}, n, {
 							style: {
 								padding: t
 							}
 						}))
 					}
 				},
-				P = I(d),
-				M = I(u.a),
-				N = I(h),
-				R = I(g),
-				L = I(x.a),
-				A = I(y.a),
-				D = I(v.a),
-				F = I(C.a, 1),
-				B = I(E.a),
-				U = I(O.a),
-				K = I(j.a),
-				H = {
+				j = O(a.a),
+				w = O(c.a),
+				S = O(l.a),
+				_ = O(d.a),
+				k = O(u.a),
+				T = O(p.a),
+				I = O(m.a),
+				P = O(h.a, 1),
+				M = O(b.a),
+				N = O(f.a),
+				R = O(g.a),
+				L = {
 					type: "style",
 					name: "bold",
-					Icon: M,
-					style: w.k.BOLD,
+					Icon: w,
+					style: x.k.BOLD,
 					tooltipTranslation: () => s.fbt._("Bold", null, {
 						hk: "16qNLn"
 					})
 				},
-				V = {
+				A = {
 					type: "style",
 					name: "italics",
-					Icon: L,
-					style: w.k.ITALIC,
+					Icon: k,
+					style: x.k.ITALIC,
 					tooltipTranslation: () => s.fbt._("Italics", null, {
 						hk: "3hxpiB"
 					})
 				},
-				W = {
+				F = {
 					type: "style",
 					name: "strikethrough",
-					Icon: B,
-					style: w.k.STRIKETHROUGH,
+					Icon: M,
+					style: x.k.STRIKETHROUGH,
 					tooltipTranslation: () => s.fbt._("Strikethrough", null, {
 						hk: "U4hXC"
 					})
 				},
-				z = {
+				D = {
 					type: "style",
 					name: "inline_code",
-					Icon: A,
-					style: w.k.MONOSPACE,
+					Icon: T,
+					style: x.k.MONOSPACE,
 					tooltipTranslation: () => s.fbt._("Inline Code", null, {
 						hk: "1eNxEt"
 					})
 				},
-				q = {
+				B = {
 					type: "style",
 					name: "spoiler",
-					Icon: F,
-					style: w.k.SPOILER,
+					Icon: P,
+					style: x.k.SPOILER,
 					tooltipTranslation: () => s.fbt._("Spoiler", null, {
 						hk: "1tb6Ht"
 					})
 				},
-				G = {
+				U = {
 					type: "style",
 					name: "superscript",
-					Icon: U,
-					style: w.k.SUPERSCRIPT,
+					Icon: N,
+					style: x.k.SUPERSCRIPT,
 					tooltipTranslation: () => s.fbt._("Superscript", null, {
 						hk: "sqKFn"
 					})
 				},
-				J = {
+				K = {
 					type: "block",
 					name: "heading",
-					Icon: R,
-					block: w.b.H1,
+					Icon: _,
+					block: x.b.H1,
 					tooltipTranslation: () => s.fbt._("Heading", null, {
 						hk: "4jnBPs"
 					})
 				},
-				Q = {
+				H = {
 					type: "block",
 					name: "unordered_list",
-					Icon: K,
-					block: w.i.UNORDERED,
+					Icon: R,
+					block: x.i.UNORDERED,
 					tooltipTranslation: () => s.fbt._("Bulleted List", null, {
 						hk: "21Yx7R"
 					})
 				},
-				Z = {
+				V = {
 					type: "block",
 					name: "ordered_list",
-					Icon: D,
-					block: w.i.ORDERED,
+					Icon: I,
+					block: x.i.ORDERED,
 					tooltipTranslation: () => s.fbt._("Numbered List", null, {
 						hk: "4BmF1X"
 					})
 				},
-				Y = {
+				W = {
 					type: "block",
 					name: "block_quote",
-					Icon: P,
-					block: w.e,
+					Icon: j,
+					block: x.e,
 					tooltipTranslation: () => s.fbt._("Quote Block", null, {
 						hk: "1xUsGm"
 					})
 				},
-				X = {
+				z = {
 					type: "block",
 					name: "code_block",
-					Icon: N,
-					block: w.f,
+					Icon: S,
+					block: x.f,
 					tooltipTranslation: () => s.fbt._("Code Block", null, {
 						hk: "2y19DH"
 					})
@@ -13154,8 +12901,8 @@
 					tooltipContentClass: P.a.tooltip
 				})),
 				A = c.a.div("SectionSpacer", P.a),
-				D = c.a.div("Spacer", P.a),
-				F = (e, t, n, o, r) => {
+				F = c.a.div("Spacer", P.a),
+				D = (e, t, n, o, r) => {
 					const {
 						name: a,
 						Icon: c,
@@ -13193,7 +12940,7 @@
 						})
 					}
 				},
-				B = (e, t, n, s, o) => e.map(e => F(e, t, n, s, o)),
+				B = (e, t, n, s, o) => e.map(e => D(e, t, n, s, o)),
 				U = [y.b, y.e],
 				K = [y.j, y.g, y.k, y.i],
 				H = [y.d, y.l, y.h, y.a, y.c],
@@ -13258,7 +13005,7 @@
 						onClick: () => u("video_upload"),
 						onFilesInput: l,
 						type: "video"
-					}), i.a.createElement(D, null), i.a.createElement(v.a, {
+					}), i.a.createElement(F, null), i.a.createElement(v.a, {
 						onClick: h
 					}))
 				}
@@ -14530,9 +14277,9 @@
 				R = n("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				L = n("./src/reddit/components/RichTextEditor/entity/entityTypes.ts"),
 				A = n("./node_modules/immutable/dist/immutable.js"),
-				D = n("./src/reddit/helpers/dom/index.ts"),
-				F = (n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/lodash/chunk.js")),
-				B = n.n(F),
+				F = n("./src/reddit/helpers/dom/index.ts"),
+				D = (n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/lodash/chunk.js")),
+				B = n.n(D),
 				U = n("./node_modules/lodash/flatten.js"),
 				K = n.n(U),
 				H = n("./node_modules/lodash/takeWhile.js"),
@@ -14910,7 +14657,7 @@
 						selection: n,
 						editor: s
 					} = t, o = n.getStartKey(), r = n.getEndKey(), i = e.getKey(), a = s.refs.editor, c = Object(R.d)(i, a);
-					return c ? i === o || i === r ? Object(D.c)(c) : [c] : null
+					return c ? i === o || i === r ? Object(F.c)(c) : [c] : null
 				};
 			var ye = (e, t, n) => {
 				const o = e.getCurrentContent(),
@@ -15090,8 +14837,8 @@
 				Re = n("./src/reddit/actions/modal.ts"),
 				Le = n("./src/reddit/actions/upload.ts"),
 				Ae = n("./src/reddit/components/ThumbnailSelector/index.tsx"),
-				De = e => null,
-				Fe = n("./src/reddit/helpers/media/index.ts"),
+				Fe = e => null,
+				De = n("./src/reddit/helpers/media/index.ts"),
 				Be = n("./src/reddit/helpers/richTextEditor/index.ts"),
 				Ue = n("./src/reddit/selectors/activeModalId.ts");
 			const Ke = "application/x-reddit-rte-block";
@@ -15352,7 +15099,7 @@
 						thumbnail: l
 					} = e, d = wt(e, ["alignCenter", "isSelected", "onCancel", "onRetry", "onRemove", "upload", "mediaAsset", "thumbnail"]);
 					let u = !1;
-					if (i) u = "image" === Object(Fe.f)(i.metadata.mimetype);
+					if (i) u = "image" === Object(De.f)(i.metadata.mimetype);
 					else {
 						if (!a) return null;
 						u = a.type === N.a.Image || a.type === N.a.AnimatedImage
@@ -15424,12 +15171,12 @@
 				Rt = n("./src/reddit/icons/svgs/ThumbnailSelect/index.tsx"),
 				Lt = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				At = n("./src/reddit/layout/row/Inline/index.tsx"),
-				Dt = n("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
-				Ft = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
+				Ft = n("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
+				Dt = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
 				Bt = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
 				Ut = n("./src/reddit/components/RichTextEditor/media/MediaBlock/Toolbar/index.m.less"),
 				Kt = n.n(Ut);
-			const Ht = b.a.wrapped(Ft.a, "FormatterButton", Kt.a),
+			const Ht = b.a.wrapped(Dt.a, "FormatterButton", Kt.a),
 				Vt = Object(Bt.f)(Lt.b),
 				Wt = Object(Bt.f)(Rt.a),
 				zt = b.a.wrapped(At.a, "ToolbarContent", Kt.a);
@@ -15463,7 +15210,7 @@
 							hk: "2gKwDF"
 						}),
 						tooltipBelow: !0
-					}), i && c.a.createElement(Dt.c, null), c.a.createElement(Ht, {
+					}), i && c.a.createElement(Ft.c, null), c.a.createElement(Ht, {
 						Icon: Vt,
 						onClick: () => r(Object(N.d)(s, a)),
 						tooltip: o.fbt._("Remove", null, {
@@ -15501,7 +15248,7 @@
 						this.state.active ? this.rootContainer.contains(n) || this.setState({
 							active: !1
 						}) : this.rootContainer && this.rootContainer.contains(n) && this.selectBlock(), this.setState({
-							isInSelection: Object(D.i)(t, this.rootContainer)
+							isInSelection: Object(F.i)(t, this.rootContainer)
 						})
 					}, this.selectBlock = () => {
 						const e = document.createRange();
@@ -15552,7 +15299,7 @@
 					const {
 						selection: e
 					} = this.props;
-					e.getHasFocus() && Object(N.n)(e, this.props.block.getKey()) && this.selectBlock(), this.overlayContainer = De(!0)
+					e.getHasFocus() && Object(N.n)(e, this.props.block.getKey()) && this.selectBlock(), this.overlayContainer = Fe(!0)
 				}
 				componentWillUnmount() {
 					document.removeEventListener("selectionchange", this.onNativeSelectionChange)
@@ -15579,7 +15326,7 @@
 						isRteVideoPosterEnabled: n,
 						offsetKey: s,
 						upload: o
-					} = this.props, r = Object(N.h)(e), i = r ? r.thumbnail : void 0, a = !!o && Object(Fe.l)(o.metadata.mimetype || ""), {
+					} = this.props, r = Object(N.h)(e), i = r ? r.thumbnail : void 0, a = !!o && Object(De.l)(o.metadata.mimetype || ""), {
 						active: l,
 						isInSelection: d
 					} = this.state, u = t.editorType === Be.a.Comment;
@@ -15946,7 +15693,7 @@
 						} = t;
 					if (n !== s && o && e) {
 						const n = t.getRangeAt(0);
-						return Object(D.i)(n, e) && !e.contains(n.commonAncestorContainer)
+						return Object(F.i)(n, e) && !e.contains(n.commonAncestorContainer)
 					}
 					return !1
 				},
@@ -16069,84 +15816,13 @@
 			var Nn = n("./node_modules/lodash/isEqual.js"),
 				Rn = n.n(Nn),
 				Ln = n("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
-				An = n("./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less"),
-				Dn = n.n(An);
-			var Fn = e => c.a.createElement("svg", {
-					className: Object(m.a)(Dn.a.icon, e.className),
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, c.a.createElement("g", {
-					fill: "inherit",
-					fillRule: "nonzero"
-				}, c.a.createElement("path", {
-					d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM7.42 16h5.08c.55 0 1-.45 1-1s-.45-1-1-1H7.42c-.56 0-1 .45-1 1s.44 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
-				}))),
-				Bn = n("./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less"),
-				Un = n.n(Bn);
-			var Kn = e => c.a.createElement("svg", {
-					className: Object(m.a)(Un.a.icon, e.className),
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, c.a.createElement("g", {
-					fill: "inherit",
-					fillRule: "nonzero"
-				}, c.a.createElement("path", {
-					d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM3.5 16h5.4c.54 0 1-.45 1-1s-.46-1-1-1H3.5c-.55 0-1 .45-1 1s.45 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
-				}))),
-				Hn = n("./src/reddit/icons/svgs/FormattingAlignRight/index.m.less"),
-				Vn = n.n(Hn);
-			var Wn = e => c.a.createElement("svg", {
-					className: Object(m.a)(Vn.a.icon, e.className),
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, c.a.createElement("g", {
-					fill: "inherit",
-					fillRule: "nonzero"
-				}, c.a.createElement("path", {
-					d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM11.5 16h5c.55 0 1-.45 1-1s-.45-1-1-1h-5c-.55 0-1 .45-1 1s.45 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
-				}))),
-				zn = n("./src/reddit/icons/svgs/FormattingDeleteRow/index.m.less"),
-				qn = n.n(zn);
-			var Gn = e => c.a.createElement("svg", {
-					className: Object(m.a)(qn.a.icon, e.className),
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, c.a.createElement("g", {
-					fill: "inherit",
-					fillRule: "nonzero",
-					transform: "vertical" === e.orientation ? "rotate(90, 10, 10)" : ""
-				}, c.a.createElement("path", {
-					d: "M3 3c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V3zM2 3v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2z"
-				}), c.a.createElement("path", {
-					d: "M2 15h16v1H2M2 4h16v1H2M7.17 11.4l4.24-4.23c.4-.4 1.04-.4 1.43 0 .4.4.4 1.03 0 1.42L8.6 12.82c-.4.4-1.04.4-1.43 0-.4-.4-.4-1.03 0-1.42z"
-				}), c.a.createElement("path", {
-					d: "M8.6 7.17l4.23 4.24c.4.4.4 1.04 0 1.43-.4.4-1.03.4-1.42 0L7.18 8.6c-.4-.4-.4-1.04 0-1.43.4-.4 1.03-.4 1.42 0z"
-				}))),
-				Jn = n("./src/reddit/icons/svgs/FormattingInsertRow/index.m.less"),
-				Qn = n.n(Jn);
-			const Zn = {
-				up: "rotate(180 10 10)",
-				down: "",
-				left: "rotate(90 10 10)",
-				right: "rotate(-90 10 10)"
-			};
-			var Yn = e => c.a.createElement("svg", {
-					className: Object(m.a)(Qn.a.icon, e.className),
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, c.a.createElement("g", {
-					fill: "inherit",
-					fillRule: "nonzero",
-					transform: Zn[e.orientation || "down"]
-				}, c.a.createElement("path", {
-					d: "M17 17c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14zm1 0V3c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2z"
-				}), c.a.createElement("path", {
-					d: "M18 6H2V5h16M13 13H7c-.55 0-1-.45-1-1s.45-1 1-1h6c.55 0 1 .45 1 1s-.45 1-1 1z"
-				}), c.a.createElement("path", {
-					d: "M9 15V9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1z"
-				}))),
-				Xn = n("./src/reddit/models/RichTextJson/index.ts");
-			var $n = function(e) {
+				An = n("./src/reddit/icons/svgs/FormattingAlignCenter/index.tsx"),
+				Fn = n("./src/reddit/icons/svgs/FormattingAlignLeft/index.tsx"),
+				Dn = n("./src/reddit/icons/svgs/FormattingAlignRight/index.tsx"),
+				Bn = n("./src/reddit/icons/svgs/FormattingDeleteRow/index.tsx"),
+				Un = n("./src/reddit/icons/svgs/FormattingInsertRow/index.tsx"),
+				Kn = n("./src/reddit/models/RichTextJson/index.ts");
+			var Hn = function(e) {
 				arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 				const t = e.getSelection(),
 					n = e.getCurrentContent(),
@@ -16164,7 +15840,7 @@
 					}), "rows")
 				}
 			};
-			var es = (e, t) => {
+			var Vn = (e, t) => {
 					const n = e.getSelection(),
 						o = e.getCurrentContent(),
 						r = o.getBlockForKey(n.getAnchorKey()),
@@ -16193,11 +15869,11 @@
 						});
 					return s.EditorState.push(e, b, J.b)
 				},
-				ts = n("./src/reddit/components/RichTextEditor/table/Toolbar/index.m.less"),
-				ns = n.n(ts);
+				Wn = n("./src/reddit/components/RichTextEditor/table/Toolbar/index.m.less"),
+				zn = n.n(Wn);
 
-			function ss() {
-				return (ss = Object.assign || function(e) {
+			function qn() {
+				return (qn = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -16205,113 +15881,113 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const os = (e, t) => n => c.a.createElement(e, ss({}, t, n)),
-				rs = Object(Bt.f)(Yn),
-				is = os(rs, {
+			const Gn = (e, t) => n => c.a.createElement(e, qn({}, t, n)),
+				Jn = Object(Bt.f)(Un.a),
+				Qn = Gn(Jn, {
 					orientation: "up"
 				}),
-				as = os(rs, {
+				Zn = Gn(Jn, {
 					orientation: "right"
 				}),
-				cs = os(rs, {
+				Yn = Gn(Jn, {
 					orientation: "left"
 				}),
-				ls = Object(Bt.f)(Gn),
-				ds = os(ls, {
+				Xn = Object(Bt.f)(Bn.a),
+				$n = Gn(Xn, {
 					orientation: "vertical"
 				}),
-				us = Object(Bt.f)(Fn),
-				ps = Object(Bt.f)(Kn),
-				ms = Object(Bt.f)(Wn),
-				hs = Object(Bt.f)(Lt.b),
-				bs = b.a.wrapped(At.a, "ToolbarContent", ns.a),
-				fs = e => c.a.createElement(Ft.a, ss({}, e, {
-					className: Object(m.a)(ns.a.formatterButton, e.className),
-					tooltipContentClass: ns.a.tooltip
+				es = Object(Bt.f)(An.a),
+				ts = Object(Bt.f)(Fn.a),
+				ns = Object(Bt.f)(Dn.a),
+				ss = Object(Bt.f)(Lt.b),
+				os = b.a.wrapped(At.a, "ToolbarContent", zn.a),
+				rs = e => c.a.createElement(Dt.a, qn({}, e, {
+					className: Object(m.a)(zn.a.formatterButton, e.className),
+					tooltipContentClass: zn.a.tooltip
 				}));
-			var gs = e => {
+			var is = e => {
 					const {
 						editorState: t,
 						onChange: n
 					} = e;
-					return c.a.createElement(bs, null, c.a.createElement(fs, {
-						Icon: ps,
-						onClick: () => n(es(t, Xn.e)),
+					return c.a.createElement(os, null, c.a.createElement(rs, {
+						Icon: ts,
+						onClick: () => n(Vn(t, Kn.e)),
 						tooltip: o.fbt._("Left align", null, {
 							hk: "45eAc"
 						})
-					}), c.a.createElement(fs, {
-						Icon: us,
-						onClick: () => n(es(t, Xn.d)),
+					}), c.a.createElement(rs, {
+						Icon: es,
+						onClick: () => n(Vn(t, Kn.d)),
 						tooltip: o.fbt._("Center align", null, {
 							hk: "4aAfyf"
 						})
-					}), c.a.createElement(fs, {
-						Icon: ms,
-						onClick: () => n(es(t, Xn.f)),
+					}), c.a.createElement(rs, {
+						Icon: ns,
+						onClick: () => n(Vn(t, Kn.f)),
 						tooltip: o.fbt._("Right align", null, {
 							hk: "3oHuXw"
 						})
-					}), c.a.createElement(Dt.c, null), c.a.createElement(fs, {
-						Icon: cs,
+					}), c.a.createElement(Ft.c, null), c.a.createElement(rs, {
+						Icon: Yn,
 						onClick: () => n(an(t, "columns", "before")),
 						tooltip: o.fbt._("Insert column before", null, {
 							hk: "11EB6Q"
 						})
-					}), c.a.createElement(fs, {
-						Icon: as,
+					}), c.a.createElement(rs, {
+						Icon: Zn,
 						onClick: () => n(an(t, "columns", "after")),
 						tooltip: o.fbt._("Insert column after", null, {
 							hk: "Ddlpl"
 						})
-					}), c.a.createElement(fs, {
-						Icon: ds,
+					}), c.a.createElement(rs, {
+						Icon: $n,
 						onClick: () => n(X(t, "columns")),
 						tooltip: o.fbt._("Delete column", null, {
 							hk: "3HaQQD"
 						})
-					}), c.a.createElement(Dt.c, null), c.a.createElement(fs, {
-						Icon: is,
+					}), c.a.createElement(Ft.c, null), c.a.createElement(rs, {
+						Icon: Qn,
 						onClick: () => n(an(t, "rows", "before")),
 						tooltip: o.fbt._("Insert row above", null, {
 							hk: "1HIgn"
 						})
-					}), c.a.createElement(fs, {
-						Icon: rs,
+					}), c.a.createElement(rs, {
+						Icon: Jn,
 						onClick: () => n(an(t, "rows", "after")),
 						tooltip: o.fbt._("Insert row below", null, {
 							hk: "3t7ZU"
 						})
-					}), c.a.createElement(fs, {
-						Icon: ls,
+					}), c.a.createElement(rs, {
+						Icon: Xn,
 						onClick: () => n(X(t, "rows")),
 						tooltip: o.fbt._("Delete row", null, {
 							hk: "3yJYqS"
 						})
-					}), c.a.createElement(Dt.c, null), c.a.createElement(fs, {
-						Icon: hs,
-						onClick: () => n($n(t) || t),
+					}), c.a.createElement(Ft.c, null), c.a.createElement(rs, {
+						Icon: ss,
+						onClick: () => n(Hn(t) || t),
 						tooltip: o.fbt._("Delete table", null, {
 							hk: "1fK0KA"
 						})
 					}))
 				},
-				xs = n("./src/reddit/components/RichTextEditor/table/ToolbarController/index.m.less"),
-				ys = n.n(xs);
-			const vs = 20,
-				Cs = b.a.div("ActionButton", ys.a),
-				Es = b.a.div("ToolbarWrapper", ys.a),
-				Os = e => {
+				as = n("./src/reddit/components/RichTextEditor/table/ToolbarController/index.m.less"),
+				cs = n.n(as);
+			const ls = 20,
+				ds = b.a.div("ActionButton", cs.a),
+				us = b.a.div("ToolbarWrapper", cs.a),
+				ps = e => {
 					const t = {};
 					if (!e || !document.documentElement) return t;
 					const n = e.left - 154.5,
 						s = e.left + 154.5 - document.documentElement.clientWidth;
-					return n < 0 ? t.left = -n + vs + 2 : s > 0 && (t.left = -s + vs - 2), t
+					return n < 0 ? t.left = -n + ls + 2 : s > 0 && (t.left = -s + ls - 2), t
 				},
-				js = e => {
+				ms = e => {
 					e.preventDefault(), e.stopPropagation()
 				};
-			class ws extends a.Component {
+			class hs extends a.Component {
 				constructor(e) {
 					super(e), this.containerElem = null, this.setContainerRef = e => this.containerElem = e, this.onResize = e => {
 						this.hideToolbar(), this.state.tooltipPosition && this.updateForCurrentSelection()
@@ -16338,7 +16014,7 @@
 							s = t.getBoundingClientRect(),
 							o = {
 								top: Math.min(n.top, s.top),
-								left: Math.max(n.right, s.right) - vs
+								left: Math.max(n.right, s.right) - ls
 							};
 						Rn()(this.state.tooltipPosition, o) || this.setState({
 							tooltipPosition: o
@@ -16354,7 +16030,7 @@
 					}, this.onActionButtonClick = e => {
 						this.setState(e => ({
 							isToolbarActive: !e.isToolbarActive
-						})), js(e)
+						})), ms(e)
 					}, this.state = {
 						isToolbarActive: !1,
 						tooltipPosition: null
@@ -16388,23 +16064,23 @@
 						ref: this.setContainerRef
 					}, c.a.createElement(Ln.b, {
 						targetPosition: t
-					}, c.a.createElement(Cs, {
-						className: e ? ys.a.isPressed : void 0,
+					}, c.a.createElement(ds, {
+						className: e ? cs.a.isPressed : void 0,
 						onClick: this.onActionButtonClick,
-						onMouseDown: js,
-						onMouseMove: js
-					}, e ? c.a.createElement(Es, {
-						style: Os(t)
-					}, c.a.createElement(gs, {
+						onMouseDown: ms,
+						onMouseMove: ms
+					}, e ? c.a.createElement(us, {
+						style: ps(t)
+					}, c.a.createElement(is, {
 						onChange: this.props.onChange,
 						editorState: this.props.editorState
 					})) : null)))
 				}
 			}
-			var Ss = n("./src/reddit/components/RichTextEditor/editorStateTransforms.ts");
+			var bs = n("./src/reddit/components/RichTextEditor/editorStateTransforms.ts");
 
-			function _s() {
-				return (_s = Object.assign || function(e) {
+			function fs() {
+				return (fs = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -16413,12 +16089,12 @@
 				}).apply(this, arguments)
 			}
 
-			function ks() {
+			function gs() {
 				return new Map
 			}
-			const Ts = c.a.createContext(ks());
+			const xs = c.a.createContext(gs());
 
-			function Is(e) {
+			function ys(e) {
 				class t extends c.a.Component {
 					constructor() {
 						super(...arguments), this.elementRef = null, this.updateElementRef = e => {
@@ -16440,26 +16116,26 @@
 						}, c.a.createElement(e, this.props))
 					}
 				}
-				return e => c.a.createElement(Ts.Consumer, null, n => c.a.createElement(t, _s({}, e, {
+				return e => c.a.createElement(xs.Consumer, null, n => c.a.createElement(t, fs({}, e, {
 					registry: n
 				})))
 			}
-			var Ps = n("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
-				Ms = n("./src/reddit/components/RichTextEditor/emotes/decorator.m.less"),
-				Ns = n.n(Ms);
-			const Rs = {
-					strategy: Ps.e,
-					component: Is(e => {
+			var vs = n("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
+				Cs = n("./src/reddit/components/RichTextEditor/emotes/decorator.m.less"),
+				Es = n.n(Cs);
+			const Os = {
+					strategy: vs.e,
+					component: ys(e => {
 						const {
 							contentState: t
-						} = e, n = Object(Ps.i)(t), s = t.getEntity(e.entityKey), {
+						} = e, n = Object(vs.i)(t), s = t.getEntity(e.entityKey), {
 							id: o,
 							emoji: r,
 							sticker: i
 						} = s.getData(), a = n ? i : r;
 						return c.a.createElement("span", {
-							className: Object(m.a)(Ns.a.emote, {
-								[Ns.a.sticker]: n
+							className: Object(m.a)(Es.a.emote, {
+								[Es.a.sticker]: n
 							}),
 							title: ":".concat(o, ":"),
 							style: {
@@ -16470,34 +16146,34 @@
 						}, e.children)
 					})
 				},
-				Ls = () => Rs;
-			var As = n("./src/higherOrderComponents/makeAsync.tsx"),
-				Ds = Object(As.a)({
+				js = () => Os;
+			var ws = n("./src/higherOrderComponents/makeAsync.tsx"),
+				Ss = Object(ws.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => n.e("EmotesTooltip").then(n.bind(null, "./src/reddit/components/RichTextEditor/emotes/tooltip.tsx")).then(e => e.default)
 				});
-			const Fs = new Set([L.a.LINK]);
-			var Bs = n("./src/reddit/components/RichTextEditor/entity/link/helpers.tsx"),
-				Us = n("./src/reddit/components/RichTextEditor/entity/link/decorator.m.less"),
-				Ks = n.n(Us);
-			const Hs = b.a.a("RegularLink", Ks.a),
-				Vs = {
-					strategy: Bs.a,
-					component: Is(e => {
+			const _s = new Set([L.a.LINK]);
+			var ks = n("./src/reddit/components/RichTextEditor/entity/link/helpers.tsx"),
+				Ts = n("./src/reddit/components/RichTextEditor/entity/link/decorator.m.less"),
+				Is = n.n(Ts);
+			const Ps = b.a.a("RegularLink", Is.a),
+				Ms = {
+					strategy: ks.a,
+					component: ys(e => {
 						const t = e.contentState.getEntity(e.entityKey),
 							{
 								url: n
 							} = t.getData();
-						return c.a.createElement(Hs, {
+						return c.a.createElement(Ps, {
 							href: n
 						}, e.children)
 					})
 				},
-				Ws = () => Vs;
+				Ns = () => Ms;
 			n("./node_modules/core-js/modules/es6.regexp.replace.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
-			var zs = n("./src/lib/linkMatchers/index.ts");
-			const qs = (e, t) => {
+			var Rs = n("./src/lib/linkMatchers/index.ts");
+			const Ls = (e, t) => {
 					if (t.getType() === w.f) return [];
 					return (e.match(t.getText()) || []).filter(e => ((e, t) => {
 						let {
@@ -16510,7 +16186,7 @@
 						return !0
 					})(t, e))
 				},
-				Gs = (e, t, n, o, r, i) => {
+				As = (e, t, n, o, r, i) => {
 					const a = e.getBlockForKey(t),
 						c = s.SelectionState.createEmpty(t),
 						l = [],
@@ -16545,7 +16221,7 @@
 						},
 						b = (e, t) => h(e, t, null),
 						g = u.getBlockForKey(t);
-					qs(o, g).forEach((e, o) => {
+					Ls(o, g).forEach((e, o) => {
 						let {
 							index: a,
 							lastIndex: p,
@@ -16582,7 +16258,7 @@
 						t <= n ? b(e, t) : (e < n && b(e, n - 1), t > s && b(s, t), x++)
 					}), u
 				},
-				Js = (e, t) => {
+				Fs = (e, t) => {
 					const n = e.getCurrentContent(),
 						o = t.getCurrentContent();
 					if (n === o) return e;
@@ -16592,7 +16268,7 @@
 					return r.forEach((t, n) => {
 						if (n) {
 							if (t === i.get(n)) return;
-							a = Gs(a, n, L.a.SUBREDDIT_LINK, zs.f), a = Gs(a, n, L.a.USER_LINK, zs.i), a = Gs(a, n, L.a.USER_MENTION, zs.d, e, t => e = t)
+							a = As(a, n, L.a.SUBREDDIT_LINK, Rs.f), a = As(a, n, L.a.USER_LINK, Rs.i), a = As(a, n, L.a.USER_MENTION, Rs.d, e, t => e = t)
 						}
 					}), e.getCurrentContent() === a ? e : (a = a.merge({
 						selectionAfter: e.getCurrentContent().getSelectionAfter(),
@@ -16601,14 +16277,14 @@
 						currentContent: a
 					}))
 				};
-			var Qs = e => {
+			var Ds = e => {
 				return !!e.getCurrentContent().getBlockMap().filter(e => !!e && e.getType() === w.a).size
 			};
 			n("./node_modules/core-js/modules/es6.regexp.constructor.js");
-			const Zs = " ".repeat(4),
-				Ys = new RegExp("^ {1,".concat(4, "}|\\t")),
-				Xs = new Set([w.b.CODE_BLOCK]),
-				$s = (e, t) => {
+			const Bs = " ".repeat(4),
+				Us = new RegExp("^ {1,".concat(4, "}|\\t")),
+				Ks = new Set([w.b.CODE_BLOCK]),
+				Hs = (e, t) => {
 					const n = t.getCurrentContent(),
 						o = t.getSelection(),
 						r = e.shiftKey;
@@ -16617,19 +16293,19 @@
 						c = o.getFocusOffset();
 					if (Object(Q.a)(n, o, (e, t) => {
 							const n = e.getType();
-							if ("paragraph" === n || !Xs.has(n)) return !1;
+							if ("paragraph" === n || !Ks.has(n)) return !1;
 							let l = null;
 							const d = e.getText(),
 								u = s.SelectionState.createEmpty(t);
 							if (r) {
-								const e = d.match(Ys);
+								const e = d.match(Us);
 								if (e) {
 									const t = e[0].length;
 									i = W.b(i, u.merge({
 										focusOffset: t
 									}), ""), l = -t
 								}
-							} else i = W.a(i, o.isCollapsed() ? o : u, Zs), l = 4;
+							} else i = W.a(i, o.isCollapsed() ? o : u, Bs), l = 4;
 							null !== l && (t === o.getAnchorKey() && (a += l), t === o.getFocusKey() && (c += l))
 						}), i !== n) return i = i.merge({
 						selectionAfter: o.merge({
@@ -16638,7 +16314,7 @@
 						})
 					}), e.preventDefault(), s.EditorState.push(t, i, r ? "remove-range" : "insert-characters")
 				},
-				eo = (e, t) => (e => {
+				Vs = (e, t) => (e => {
 					const t = e.getSelection(),
 						n = e.getCurrentContent();
 					if (!t.isCollapsed()) return $(e);
@@ -16665,7 +16341,7 @@
 						}
 					}
 				})(e, t),
-				to = (e, t) => (e => {
+				Ws = (e, t) => (e => {
 					const t = e.getSelection(),
 						n = e.getCurrentContent();
 					if (!t.isCollapsed()) return $(e); {
@@ -16692,7 +16368,7 @@
 						}
 					}
 				})(e, t),
-				no = e => {
+				zs = e => {
 					const t = e.getSelection();
 					if (!t.isCollapsed()) return !1;
 					const n = s.RichUtils.getCurrentBlockType(e);
@@ -16702,8 +16378,8 @@
 					}
 					return !0
 				};
-			var so = n("./src/lib/memoizeByReference/index.ts");
-			const oo = Object(so.a)(e => {
+			var qs = n("./src/lib/memoizeByReference/index.ts");
+			const Gs = Object(qs.a)(e => {
 					const t = e.getSelection();
 					if (!t.isCollapsed()) return;
 					const n = t.getStartOffset(),
@@ -16718,75 +16394,75 @@
 						return w.i.UNORDERED
 					}
 				}),
-				ro = e => {
-					const t = oo(e);
+				Js = e => {
+					const t = Gs(e);
 					if (!t) return e;
-					const n = Object(Ss.a)(e);
+					const n = Object(bs.a)(e);
 					let o = s.Modifier.replaceText(n.getCurrentContent(), n.getSelection().merge({
 						anchorOffset: 0
 					}), "");
 					return o = s.Modifier.setBlockType(o, o.getSelectionAfter(), t), s.EditorState.push(n, o, J.c)
 				};
-			var io = n("./src/reddit/components/RichTextEditor/helpers/styles.ts");
-			const ao = Object(As.a)({
+			var Qs = n("./src/reddit/components/RichTextEditor/helpers/styles.ts");
+			const Zs = Object(ws.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
 				getComponent: () => n.e("GifTooltip").then(n.bind(null, "./src/reddit/components/RichTextEditor/media/GifTooltip/index.tsx")).then(e => e.default)
 			});
 
-			function co(e) {
-				return c.a.createElement(ao, e)
+			function Ys(e) {
+				return c.a.createElement(Zs, e)
 			}
-			var lo = n("./src/reddit/components/RichTextEditor/spoiler/helpers.ts"),
-				uo = n("./src/reddit/components/RichTextEditor/spoiler/decorator.m.less"),
-				po = n.n(uo);
-			const mo = e => c.a.createElement("span", {
-					className: po.a.spoiler
+			var Xs = n("./src/reddit/components/RichTextEditor/spoiler/helpers.ts"),
+				$s = n("./src/reddit/components/RichTextEditor/spoiler/decorator.m.less"),
+				eo = n.n($s);
+			const to = e => c.a.createElement("span", {
+					className: eo.a.spoiler
 				}, c.a.createElement("span", null), e.children, c.a.createElement("span", null)),
-				ho = () => ({
-					strategy: lo.a,
-					component: mo
+				no = () => ({
+					strategy: Xs.a,
+					component: to
 				});
-			var bo = n("./src/reddit/components/FocusableContent/index.tsx"),
-				fo = n("./src/reddit/components/RichTextEditor/Blockquote/index.m.less"),
-				go = n.n(fo);
-			const xo = b.a.div("BlockQuoteWrapper", go.a),
-				yo = Object(A.Map)({
+			var so = n("./src/reddit/components/FocusableContent/index.tsx"),
+				oo = n("./src/reddit/components/RichTextEditor/Blockquote/index.m.less"),
+				ro = n.n(oo);
+			const io = b.a.div("BlockQuoteWrapper", ro.a),
+				ao = Object(A.Map)({
 					[w.e]: {
 						element: "blockquote",
-						wrapper: c.a.createElement(xo, null)
+						wrapper: c.a.createElement(io, null)
 					}
 				});
-			var vo = n("./src/reddit/components/RichTextEditor/CodeBlock/index.m.less"),
-				Co = n.n(vo);
-			const Eo = b.a.div("CodeBlockWrapper", Co.a),
-				Oo = Object(A.Map)({
+			var co = n("./src/reddit/components/RichTextEditor/CodeBlock/index.m.less"),
+				lo = n.n(co);
+			const uo = b.a.div("CodeBlockWrapper", lo.a),
+				po = Object(A.Map)({
 					[w.f]: {
 						element: "code",
-						wrapper: c.a.createElement(Eo, null)
+						wrapper: c.a.createElement(uo, null)
 					}
 				});
-			var jo = n("./node_modules/bowser/src/bowser.js"),
-				wo = n.n(jo),
-				So = n("./node_modules/lodash/includes.js"),
-				_o = n.n(So),
-				ko = n("./src/reddit/components/RichTextEditor/DragController/helpers.ts"),
-				To = n("./src/reddit/components/RichTextEditor/DragController/index.m.less"),
-				Io = n.n(To);
-			const Po = b.a.div("DropLine", Io.a),
-				Mo = b.a.wrapped(Ln.b, "Tooltip", Io.a);
-			class No extends a.Component {
+			var mo = n("./node_modules/bowser/src/bowser.js"),
+				ho = n.n(mo),
+				bo = n("./node_modules/lodash/includes.js"),
+				fo = n.n(bo),
+				go = n("./src/reddit/components/RichTextEditor/DragController/helpers.ts"),
+				xo = n("./src/reddit/components/RichTextEditor/DragController/index.m.less"),
+				yo = n.n(xo);
+			const vo = b.a.div("DropLine", yo.a),
+				Co = b.a.wrapped(Ln.b, "Tooltip", yo.a);
+			class Eo extends a.Component {
 				constructor(e) {
 					super(e), this.dragCount = 0, this.setContainerRef = e => this.containerRef = e, this.preventDocumentDrop = e => {
 						!! function e(t) {
 							return t.draggable ? t : t.parentElement ? e(t.parentElement) : null
 						}(e.target) || (e.preventDefault(), e.stopPropagation())
 					}, this.onDragOver = e => {
-						const t = _o()(e.dataTransfer.types, Ke);
+						const t = fo()(e.dataTransfer.types, Ke);
 						if (!t) {
-							if (!Object(ko.c)(e.dataTransfer) || !this.props.allowMediaUploads) return
+							if (!Object(go.c)(e.dataTransfer) || !this.props.allowMediaUploads) return
 						}
-						if (!t && !Object(ko.c)(e.dataTransfer)) return;
+						if (!t && !Object(go.c)(e.dataTransfer)) return;
 						e.preventDefault();
 						try {
 							e.dataTransfer.dropEffect = t ? "move" : "copy"
@@ -16795,7 +16471,7 @@
 							editorState: n
 						} = this.props;
 						let s = null;
-						const o = Object(ko.b)(n, e);
+						const o = Object(go.b)(n, e);
 						if (o) {
 							const e = this.containerRef.getBoundingClientRect().left;
 							s = {
@@ -16818,12 +16494,12 @@
 									point: null
 								})
 							},
-							n = wo.a.msie ? null : e.dataTransfer.getData(Ke),
-							s = Object(ko.a)(e.dataTransfer);
+							n = ho.a.msie ? null : e.dataTransfer.getData(Ke),
+							s = Object(go.a)(e.dataTransfer);
 						if (!(n || s.length && this.props.allowMediaUploads)) return void t();
 						const {
 							editorState: o
-						} = this.props, r = Object(ko.b)(o, e);
+						} = this.props, r = Object(go.b)(o, e);
 						if (!r) return void t();
 						e.preventDefault(), e.stopPropagation();
 						const i = r.isBefore ? R.a.before : R.a.after;
@@ -16847,29 +16523,29 @@
 						point: t
 					} = this.state, n = c.a.Children.only(e);
 					return c.a.createElement("div", {
-						className: Object(m.a)(Io.a.container, {
-							[Io.a.hideCaret]: !!t
+						className: Object(m.a)(yo.a.container, {
+							[yo.a.hideCaret]: !!t
 						}),
 						onDragEnter: this.onDragEnter,
 						onDragLeave: this.onDragLeave,
 						onDragOver: this.onDragOver,
 						onDrop: this.onDrop,
 						ref: this.setContainerRef
-					}, c.a.createElement("div", null, n), c.a.createElement(Mo, {
+					}, c.a.createElement("div", null, n), c.a.createElement(Co, {
 						targetPosition: t
-					}, c.a.createElement(Po, null)))
+					}, c.a.createElement(vo, null)))
 				}
 			}
-			var Ro = n("./node_modules/draft-js/lib/DraftPasteProcessor.js"),
-				Lo = n.n(Ro),
-				Ao = n("./node_modules/draft-js/lib/getEntityKeyForSelection.js"),
-				Do = n.n(Ao),
-				Fo = n("./node_modules/draft-js/lib/splitTextIntoTextBlocks.js"),
-				Bo = n.n(Fo),
-				Uo = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts"),
-				Ko = n("./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts");
+			var Oo = n("./node_modules/draft-js/lib/DraftPasteProcessor.js"),
+				jo = n.n(Oo),
+				wo = n("./node_modules/draft-js/lib/getEntityKeyForSelection.js"),
+				So = n.n(wo),
+				_o = n("./node_modules/draft-js/lib/splitTextIntoTextBlocks.js"),
+				ko = n.n(_o),
+				To = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts"),
+				Io = n("./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts");
 
-			function Ho(e, t, n) {
+			function Po(e, t, n) {
 				const o = Object(s.convertFromHTML)(t, void 0, n);
 				if (o) {
 					const {
@@ -16886,20 +16562,20 @@
 				return [e, null]
 			}
 
-			function Vo(e, t, n) {
-				const o = Bo()(t),
+			function Mo(e, t, n) {
+				const o = ko()(t),
 					r = n && 1 === o.length ? n : s.CharacterMetadata.create(),
-					i = Lo.a.processText(o, r).map(e => e.merge({
+					i = jo.a.processText(o, r).map(e => e.merge({
 						type: w.n
 					}));
 				return s.BlockMapBuilder.createFromArray(i)
 			}
-			const Wo = e => {
+			const No = e => {
 					if (!e) return null;
 					const t = (new DOMParser).parseFromString(e, "text/html").querySelector("[".concat("data-reddit-rtjson", "]"));
 					return t && t.getAttribute("data-reddit-rtjson")
 				},
-				zo = e => {
+				Ro = e => {
 					if (fe()) return {
 						text: window.clipboardData.getData("text"),
 						html: null
@@ -16912,11 +16588,11 @@
 					}
 				};
 
-			function qo(e, t, n, o) {
+			function Lo(e, t, n, o) {
 				const {
 					text: r,
 					html: i
-				} = zo(n), a = function(e, t, n, s) {
+				} = Ro(n), a = function(e, t, n, s) {
 					const o = {
 							text: t,
 							html: n,
@@ -16927,7 +16603,7 @@
 					return r && n && function(e, t, n, s) {
 						return -1 !== t.indexOf(s) || 1 === e.size && e.first().getText() === n
 					}(r, n, t, e.getEditorKey()) && (o.fragment = r), o
-				}(t, r, i, i && Wo(i));
+				}(t, r, i, i && No(i));
 				t.getClipboard() && !a.fragment && t.setClipboard(null);
 				const c = e.getCurrentContent(),
 					l = e.getSelection(),
@@ -16938,26 +16614,26 @@
 				if (!(p = function(e, t, n) {
 						const s = e.getBlockForKey(t.getStartKey()),
 							o = e.getBlockForKey(t.getEndKey());
-						if (s.getType() === w.f || o.getType() === w.f) return Vo(0, n).map(e => e.merge({
+						if (s.getType() === w.f || o.getType() === w.f) return Mo(0, n).map(e => e.merge({
 							type: w.f,
 							depth: 0
 						}))
-					}(m, l, a.text)) && a.fragment && (p = a.fragment, [m, p] = Object(Uo.b)(m, p), p = Ee(p, o)), !p && a.rtjson && (p = function(e) {
+					}(m, l, a.text)) && a.fragment && (p = a.fragment, [m, p] = Object(To.b)(m, p), p = Ee(p, o)), !p && a.rtjson && (p = function(e) {
 						const t = JSON.parse(e);
 						return Object(s.convertFromRaw)(t).getBlockMap()
-					}(a.rtjson)), !p && a.html && ([m, p] = Ho(m, a.html, u)), !p && a.text) {
+					}(a.rtjson)), !p && a.html && ([m, p] = Po(m, a.html, u)), !p && a.text) {
 					const e = function(e, t, n) {
 						return s.CharacterMetadata.create({
 							style: n,
-							entity: Do()(e, t)
+							entity: So()(e, t)
 						})
 					}(m, l, d);
-					p = Vo(0, a.text, e), [m, p] = function(e, t) {
+					p = Mo(0, a.text, e), [m, p] = function(e, t) {
 						let n = e,
 							s = t;
 						return t.forEach(e => {
 							const t = e.getText(),
-								o = zs.e.match(t);
+								o = Rs.e.match(t);
 							if (!o) return;
 							let r = e;
 							o.forEach(e => {
@@ -16969,7 +16645,7 @@
 								const a = (n = n.createEntity(L.a.LINK, "MUTABLE", {
 									url: i
 								})).getLastCreatedEntityKey();
-								r = Object(Ko.a)(r, t, o, a), s = s.set(r.getKey(), r)
+								r = Object(Io.a)(r, t, o, a), s = s.set(r.getKey(), r)
 							})
 						}), [n, s]
 					}(m, p)
@@ -16980,50 +16656,50 @@
 					return s || (s = W.c(e, t, n))
 				}(m, l, p), s.EditorState.push(e, m, J.e)
 			}
-			var Go = n("./src/reddit/components/RichTextEditor/entity/getSelectionEntityInfo.ts"),
-				Jo = n("./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts"),
-				Qo = n("./src/reddit/components/RichTextEditor/LinksController/LinkDetailsPopup/index.m.less"),
-				Zo = n.n(Qo);
-			const Yo = b.a.div("LinkDetailsBox", Zo.a),
-				Xo = b.a.a("Link", Zo.a),
-				$o = b.a.a("LinkButton", Zo.a);
-			var er = e => c.a.createElement("div", null, c.a.createElement(Yo, {
+			var Ao = n("./src/reddit/components/RichTextEditor/entity/getSelectionEntityInfo.ts"),
+				Fo = n("./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts"),
+				Do = n("./src/reddit/components/RichTextEditor/LinksController/LinkDetailsPopup/index.m.less"),
+				Bo = n.n(Do);
+			const Uo = b.a.div("LinkDetailsBox", Bo.a),
+				Ko = b.a.a("Link", Bo.a),
+				Ho = b.a.a("LinkButton", Bo.a);
+			var Vo = e => c.a.createElement("div", null, c.a.createElement(Uo, {
 					onMouseDown: e => e.preventDefault()
-				}, c.a.createElement(Xo, {
+				}, c.a.createElement(Ko, {
 					href: e.url,
 					target: "_blank"
-				}, e.url), c.a.createElement("span", null, " – "), c.a.createElement($o, {
+				}, e.url), c.a.createElement("span", null, " – "), c.a.createElement(Ho, {
 					onClick: () => e.onStartEdit(),
 					role: "button"
 				}, o.fbt._("Change", null, {
 					hk: "3aOmcP"
-				})), c.a.createElement("span", null, " | "), c.a.createElement($o, {
+				})), c.a.createElement("span", null, " | "), c.a.createElement(Ho, {
 					onClick: () => e.onRemove(),
 					role: "button"
 				}, o.fbt._("Remove", null, {
 					hk: "3nPt5D"
 				})))),
-				tr = n("./src/reddit/controls/Input/index.tsx"),
-				nr = n("./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less"),
-				sr = n.n(nr);
-			const or = b.a.form("EditForm", sr.a),
-				rr = b.a.wrapped(e => c.a.createElement("div", e, e.children), "LinkEditorBox", sr.a),
-				ir = b.a.wrapped(tr.a, "Input", sr.a),
-				ar = b.a.label("Label", sr.a),
-				cr = b.a.div("HintAndButtonRow", sr.a),
-				lr = b.a.span("InvalidUrlHint", sr.a),
-				dr = b.a.wrapped($e.f, "SubmitButton", sr.a),
-				ur = e => {
+				Wo = n("./src/reddit/controls/Input/index.tsx"),
+				zo = n("./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less"),
+				qo = n.n(zo);
+			const Go = b.a.form("EditForm", qo.a),
+				Jo = b.a.wrapped(e => c.a.createElement("div", e, e.children), "LinkEditorBox", qo.a),
+				Qo = b.a.wrapped(Wo.a, "Input", qo.a),
+				Zo = b.a.label("Label", qo.a),
+				Yo = b.a.div("HintAndButtonRow", qo.a),
+				Xo = b.a.span("InvalidUrlHint", qo.a),
+				$o = b.a.wrapped($e.f, "SubmitButton", qo.a),
+				er = e => {
 					e && (e.focus(), e.select())
 				},
-				pr = / /g,
-				mr = e => e.replace(pr, "%20");
-			class hr extends a.Component {
+				tr = / /g,
+				nr = e => e.replace(tr, "%20");
+			class sr extends a.Component {
 				constructor(e) {
 					super(e), this.focused = !1, this.focusLostTimer = 0, this.textInputElementRef = null, this.urlInputElementRef = null, this.onEdited = () => {
 						const e = this.state.url.trim(),
-							t = mr(e),
-							n = Object(zs.h)(t);
+							t = nr(e),
+							n = Object(Rs.h)(t);
 						if (!n) return this.setState({
 							isInvalidUrl: !0
 						}), void(this.urlInputElementRef && this.urlInputElementRef.focus());
@@ -17042,7 +16718,7 @@
 						let {
 							isInvalidUrl: n
 						} = this.state;
-						n && Object(zs.g)(zs.e, t) && (n = !1), this.setState({
+						n && Object(Rs.g)(Rs.e, t) && (n = !1), this.setState({
 							url: t,
 							isInvalidUrl: n
 						})
@@ -17059,7 +16735,7 @@
 					}
 				}
 				componentDidMount() {
-					Object(zs.g)(zs.e, this.state.displayText) ? ur(this.textInputElementRef) : ur(this.urlInputElementRef)
+					Object(Rs.g)(Rs.e, this.state.displayText) ? er(this.textInputElementRef) : er(this.urlInputElementRef)
 				}
 				componentWillUnmount() {
 					this.focusLostTimer && clearTimeout(this.focusLostTimer)
@@ -17068,16 +16744,16 @@
 					const {
 						isInsertMode: e
 					} = this.props;
-					return c.a.createElement(rr, {
+					return c.a.createElement(Jo, {
 						tabIndex: 0,
 						onClick: this.onClick,
 						onBlur: this.onBlur,
 						onFocus: this.onFocus
-					}, c.a.createElement(or, {
+					}, c.a.createElement(Go, {
 						onSubmit: this.handleSubmit
-					}, c.a.createElement(ar, null, o.fbt._("Text", null, {
+					}, c.a.createElement(Zo, null, o.fbt._("Text", null, {
 						hk: "1oock0"
-					}), ":", c.a.createElement(ir, {
+					}), ":", c.a.createElement(Qo, {
 						innerRef: e => this.textInputElementRef = e,
 						type: "text",
 						placeholder: o.fbt._("Title of link (optional)", null, {
@@ -17085,9 +16761,9 @@
 						}),
 						value: this.state.displayText,
 						onChange: this.handleDisplayTextChange
-					})), c.a.createElement(ar, null, o.fbt._("Link", null, {
+					})), c.a.createElement(Zo, null, o.fbt._("Link", null, {
 						hk: "1Cfzw7"
-					}), c.a.createElement(ir, {
+					}), c.a.createElement(Qo, {
 						innerRef: e => this.urlInputElementRef = e,
 						type: "text",
 						placeholder: o.fbt._("Paste or type a link", null, {
@@ -17095,20 +16771,20 @@
 						}),
 						value: this.state.url,
 						onChange: this.handleUrlChange
-					})), c.a.createElement(cr, null, c.a.createElement(dr, {
+					})), c.a.createElement(Yo, null, c.a.createElement($o, {
 						type: "submit",
 						disabled: this.state.isInvalidUrl
 					}, e ? o.fbt._("Insert", null, {
 						hk: "3H7yaS"
 					}) : o.fbt._("Apply", null, {
 						hk: "3mAjVQ"
-					})), this.state.isInvalidUrl ? c.a.createElement(lr, null, o.fbt._("Link doesn't look right", null, {
+					})), this.state.isInvalidUrl ? c.a.createElement(Xo, null, o.fbt._("Link doesn't look right", null, {
 						hk: "1BHfKz"
 					})) : null)))
 				}
 			}
 
-			function br(e, t, n) {
+			function or(e, t, n) {
 				const s = e.getCurrentContent(),
 					o = {
 						text: "",
@@ -17121,18 +16797,18 @@
 						if (e.getStartKey() !== e.getEndKey()) throw new Error("Selection must be in a single block");
 						return e.isCollapsed() ? "" : t.getBlockForKey(e.getStartKey()).getText().slice(e.getStartOffset(), e.getEndOffset())
 					}(t, e.getCurrentContent());
-					const n = Object(zs.g)(zs.e, o.text);
+					const n = Object(Rs.g)(Rs.e, o.text);
 					n && (o.url = n.url)
 				}
 				return o
 			}
 
-			function fr(e, t) {
+			function rr(e, t) {
 				return s.EditorState.set(e, {
 					currentContent: s.Modifier.removeInlineStyle(e.getCurrentContent(), t, w.k.HIGHLIGHT)
 				})
 			}
-			class gr extends a.Component {
+			class ir extends a.Component {
 				constructor(e) {
 					super(e), this.api = null, this.updateTooltipPosition = null, this.lastEditorSelectionClientRect = null, this.editLinkInSelection = e => {
 						const {
@@ -17141,13 +16817,13 @@
 						let n = e,
 							o = t;
 						const r = t.getCurrentContent();
-						if (!Object(Bs.e)(r, e)) return !1;
-						const i = Object(Go.a)(r, e);
+						if (!Object(ks.e)(r, e)) return !1;
+						const i = Object(Ao.a)(r, e);
 						if (i) {
 							if (r.getEntity(i.entityKey).getType() !== L.a.LINK) return !1;
 							n = i.entitySelection
-						} else this.isEditorFocused() && (this.lastEditorSelectionClientRect = Object(Jo.a)());
-						return this.state.linkSelection && (o = fr(t, this.state.linkSelection)), o = function(e, t) {
+						} else this.isEditorFocused() && (this.lastEditorSelectionClientRect = Object(Fo.a)());
+						return this.state.linkSelection && (o = rr(t, this.state.linkSelection)), o = function(e, t) {
 							return s.EditorState.set(e, {
 								currentContent: s.Modifier.applyInlineStyle(e.getCurrentContent(), t, w.k.HIGHLIGHT)
 							})
@@ -17174,13 +16850,13 @@
 						} = this.props, t = e.getCurrentContent();
 						let n;
 						if (this.state.linkSelection) {
-							const e = Object(Go.a)(t, this.state.linkSelection);
+							const e = Object(Ao.a)(t, this.state.linkSelection);
 							if (e) {
 								const t = this.props.entityElementRegistry.get(e.entityKey);
 								n = t && t.getBoundingClientRect()
 							} else this.lastEditorSelectionClientRect && (n = this.lastEditorSelectionClientRect)
 						} else {
-							const t = Object(Bs.c)(e);
+							const t = Object(ks.c)(e);
 							if (t) {
 								const e = this.props.entityElementRegistry.get(t.entityKey);
 								n = e && e.getBoundingClientRect()
@@ -17197,7 +16873,7 @@
 							editorState: o
 						} = this.props;
 						let r = o;
-						n && (n.isCollapsed() || (r = fr(o, n)), void 0 !== e && (r = Object(Bs.h)(r, n, e, t)), this.setState({
+						n && (n.isCollapsed() || (r = rr(o, n)), void 0 !== e && (r = Object(ks.h)(r, n, e, t)), this.setState({
 							linkSelection: null,
 							linkEntity: null
 						}), r !== o && (r = s.EditorState.forceSelection(r, r.getSelection()), this.props.onChange(r)))
@@ -17206,13 +16882,13 @@
 					}, this.interruptLinkEditing = () => this.handleLink(), this.isEditorFocused = () => this.props.editorState.getSelection().getHasFocus(), this.onStartEditFocusedLink = () => {
 						const {
 							editorState: e
-						} = this.props, t = Object(Bs.c)(e);
+						} = this.props, t = Object(ks.c)(e);
 						t && this.editLinkInSelection(t.entitySelection)
 					}, this.onRemoveFocusedLink = () => {
 						const {
 							editorState: e
-						} = this.props, t = Object(Bs.c)(e);
-						t && this.props.onChange(Object(Bs.h)(e, t.entitySelection, ""))
+						} = this.props, t = Object(ks.c)(e);
+						t && this.props.onChange(Object(ks.h)(e, t.entitySelection, ""))
 					}, this.renderEditorPopup = () => {
 						const {
 							linkSelection: e,
@@ -17224,8 +16900,8 @@
 						const {
 							text: s,
 							url: o
-						} = br(n, e, t);
-						return c.a.createElement(hr, {
+						} = or(n, e, t);
+						return c.a.createElement(sr, {
 							url: o,
 							displayText: s,
 							isInsertMode: !t,
@@ -17233,8 +16909,8 @@
 							onFocusLost: this.interruptLinkEditing
 						})
 					}, this.renderDetailsPopup = () => {
-						const e = Object(Bs.c)(this.props.editorState);
-						return e && this.isEditorFocused() && this.state.isDetailsPopupActive ? c.a.createElement(er, {
+						const e = Object(ks.c)(this.props.editorState);
+						return e && this.isEditorFocused() && this.state.isDetailsPopupActive ? c.a.createElement(Vo, {
 							url: e.url,
 							onStartEdit: this.onStartEditFocusedLink,
 							onRemove: this.onRemoveFocusedLink
@@ -17267,33 +16943,33 @@
 					}, this.renderEditorPopup() || this.renderDetailsPopup())
 				}
 			}
-			var xr = n("./src/reddit/components/RichTextEditor/OrderedList/index.m.less"),
-				yr = n.n(xr);
-			const vr = b.a.ol("OrderedListWrapper", yr.a),
-				Cr = Object(A.Map)({
+			var ar = n("./src/reddit/components/RichTextEditor/OrderedList/index.m.less"),
+				cr = n.n(ar);
+			const lr = b.a.ol("OrderedListWrapper", cr.a),
+				dr = Object(A.Map)({
 					[w.i.ORDERED]: {
 						element: "li",
 						aliasedElements: ["li"],
-						wrapper: c.a.createElement(vr, null)
+						wrapper: c.a.createElement(lr, null)
 					}
 				});
-			var Er = n("./src/reddit/components/RichTextEditor/Paragraph/index.m.less"),
-				Or = n.n(Er);
-			const jr = b.a.div("ParagraphWrapper", Or.a),
-				wr = Object(A.Map)({
+			var ur = n("./src/reddit/components/RichTextEditor/Paragraph/index.m.less"),
+				pr = n.n(ur);
+			const mr = b.a.div("ParagraphWrapper", pr.a),
+				hr = Object(A.Map)({
 					[w.n]: {
 						element: "div",
 						aliasedElements: ["p"],
-						wrapper: c.a.createElement(jr, null)
+						wrapper: c.a.createElement(mr, null)
 					}
 				});
-			var Sr = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx");
-			const _r = "Noto Sans, ".concat("Arial, sans-serif"),
-				kr = "Noto Mono, ".concat("Menlo, Monaco, Consolas, monospace");
-			"\n  font-family: ".concat(_r, ";\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 21px;\n");
-			var Tr = n("./src/reddit/components/RichTextEditor/TextRendering/index.m.less"),
-				Ir = n.n(Tr);
-			const Pr = Object(so.a)(() => ({
+			var br = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx");
+			const fr = "Noto Sans, ".concat("Arial, sans-serif"),
+				gr = "Noto Mono, ".concat("Menlo, Monaco, Consolas, monospace");
+			"\n  font-family: ".concat(fr, ";\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 21px;\n");
+			var xr = n("./src/reddit/components/RichTextEditor/TextRendering/index.m.less"),
+				yr = n.n(xr);
+			const vr = Object(qs.a)(() => ({
 					[w.k.SUPERSCRIPT]: {
 						position: "relative",
 						top: "-0.4em",
@@ -17310,54 +16986,54 @@
 						backgroundColor: "var(--newRedditTheme-field)",
 						caretColor: "#000",
 						color: "var(--newRedditTheme-monospaceColor)",
-						fontFamily: kr,
+						fontFamily: gr,
 						padding: "0.1em 0.2em",
 						fontSize: "0.8em",
 						borderRadius: "3px"
 					}
 				})),
-				Mr = b.a.div("H1", Ir.a),
-				Nr = b.a.div("H2", Ir.a),
-				Rr = b.a.div("H3", Ir.a),
-				Lr = b.a.div("H4", Ir.a),
-				Ar = b.a.div("H5", Ir.a),
-				Dr = b.a.div("H6", Ir.a),
-				Fr = e => ({
+				Cr = b.a.div("H1", yr.a),
+				Er = b.a.div("H2", yr.a),
+				Or = b.a.div("H3", yr.a),
+				jr = b.a.div("H4", yr.a),
+				wr = b.a.div("H5", yr.a),
+				Sr = b.a.div("H6", yr.a),
+				_r = e => ({
 					component: t => c.a.createElement(e, null, c.a.createElement(s.EditorBlock, t)),
 					editable: !0
 				}),
-				Br = {
-					[w.g.H1]: Fr(Mr),
-					[w.g.H2]: Fr(Nr),
-					[w.g.H3]: Fr(Rr),
-					[w.g.H4]: Fr(Lr),
-					[w.g.H5]: Fr(Ar),
-					[w.g.H6]: Fr(Dr)
+				kr = {
+					[w.g.H1]: _r(Cr),
+					[w.g.H2]: _r(Er),
+					[w.g.H3]: _r(Or),
+					[w.g.H4]: _r(jr),
+					[w.g.H5]: _r(wr),
+					[w.g.H6]: _r(Sr)
 				},
-				Ur = ["italic normal 1em 'Noto Sans'", "italic bold 1em 'Noto Sans'", "normal bold 1em 'Noto Sans'"],
-				Kr = () => {
+				Tr = ["italic normal 1em 'Noto Sans'", "italic bold 1em 'Noto Sans'", "normal bold 1em 'Noto Sans'"],
+				Ir = () => {
 					const e = document.fonts;
-					e && e.load && Ur.forEach(t => e.load(t))
+					e && e.load && Tr.forEach(t => e.load(t))
 				};
-			var Hr = n("./src/reddit/components/RichTextEditor/UnorderedList/index.m.less"),
-				Vr = n.n(Hr);
-			const Wr = b.a.ul("UnorderedListWrapper", Vr.a),
-				zr = Object(A.Map)({
+			var Pr = n("./src/reddit/components/RichTextEditor/UnorderedList/index.m.less"),
+				Mr = n.n(Pr);
+			const Nr = b.a.ul("UnorderedListWrapper", Mr.a),
+				Rr = Object(A.Map)({
 					[w.i.UNORDERED]: {
 						element: "li",
 						aliasedElements: ["li"],
-						wrapper: c.a.createElement(Wr, null)
+						wrapper: c.a.createElement(Nr, null)
 					}
 				});
-			var qr = n("./src/reddit/contexts/InsideOverlay.tsx"),
-				Gr = n("./node_modules/lodash/debounce.js"),
-				Jr = n.n(Gr),
-				Qr = n("./src/reddit/actions/subredditAutocomplete.ts"),
-				Zr = n("./src/reddit/controls/SubredditDropdown/index.m.less"),
-				Yr = n.n(Zr);
+			var Lr = n("./src/reddit/contexts/InsideOverlay.tsx"),
+				Ar = n("./node_modules/lodash/debounce.js"),
+				Fr = n.n(Ar),
+				Dr = n("./src/reddit/actions/subredditAutocomplete.ts"),
+				Br = n("./src/reddit/controls/SubredditDropdown/index.m.less"),
+				Ur = n.n(Br);
 
-			function Xr() {
-				return (Xr = Object.assign || function(e) {
+			function Kr() {
+				return (Kr = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -17365,7 +17041,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var $r = function(e, t) {
+			var Hr = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -17374,17 +17050,17 @@
 				}
 				return n
 			};
-			const ei = e => {
+			const Vr = e => {
 				var {
 					isFocused: t
-				} = e, n = $r(e, ["isFocused"]);
-				return c.a.createElement("div", Xr({
-					className: Object(m.a)(Yr.a.entry, {
-						[Yr.a.mIsFocused]: t
+				} = e, n = Hr(e, ["isFocused"]);
+				return c.a.createElement("div", Kr({
+					className: Object(m.a)(Ur.a.entry, {
+						[Ur.a.mIsFocused]: t
 					})
 				}, n))
 			};
-			class ti extends a.Component {
+			class Wr extends a.Component {
 				constructor(e) {
 					super(e), this.mouseDown = !1, this.onMouseUp = () => {
 						this.mouseDown && (this.props.onEntrySelect(this.props.entry), this.mouseDown = !1)
@@ -17398,7 +17074,7 @@
 					this.mouseDown = !1
 				}
 				render() {
-					return c.a.createElement(ei, {
+					return c.a.createElement(Vr, {
 						isFocused: this.props.isFocused,
 						onMouseDown: this.onMouseDown,
 						onMouseUp: this.onMouseUp,
@@ -17406,15 +17082,15 @@
 					}, this.props.children)
 				}
 			}
-			var ni = n("./src/reddit/helpers/name/index.ts"),
-				si = n("./src/reddit/selectors/subredditAutocomplete.ts");
-			const oi = Object(d.c)({
+			var zr = n("./src/reddit/helpers/name/index.ts"),
+				qr = n("./src/reddit/selectors/subredditAutocomplete.ts");
+			const Gr = Object(d.c)({
 				subredditSuggestions: (e, t) => {
-					const n = Object(si.d)(e, t);
+					const n = Object(qr.d)(e, t);
 					return n ? n.subreddits : []
 				}
 			});
-			class ri extends a.Component {
+			class Jr extends a.Component {
 				constructor(e) {
 					super(e), this.api = null, this.onEntrySelect = e => {
 						this.props.onSelect(this.props.subredditSuggestions[e].name)
@@ -17446,7 +17122,7 @@
 						return !1
 					}, this.state = {
 						selectedSuggestionIndex: 0
-					}, this.requestSubredditAutocomplete = Jr()(this.requestSubredditAutocomplete.bind(this), 200, {
+					}, this.requestSubredditAutocomplete = Fr()(this.requestSubredditAutocomplete.bind(this), 200, {
 						maxWait: 200
 					}), this.api = {
 						moveUp: this.moveUp,
@@ -17470,26 +17146,26 @@
 				}
 				render() {
 					return this.props.subredditSuggestions.length ? c.a.createElement("div", {
-						className: Object(m.a)(Yr.a.list, this.props.className)
-					}, this.props.subredditSuggestions.map((e, t) => c.a.createElement(ti, {
+						className: Object(m.a)(Ur.a.list, this.props.className)
+					}, this.props.subredditSuggestions.map((e, t) => c.a.createElement(Wr, {
 						entry: t,
 						isFocused: t === this.state.selectedSuggestionIndex,
 						key: e.name,
 						onEntrySelect: this.onEntrySelect,
 						onEntryFocus: this.onEntryFocus
-					}, Object(ni.b)(e.name)))) : null
+					}, Object(zr.b)(e.name)))) : null
 				}
 			}
-			var ii = Object(l.b)(oi, (e, t) => ({
+			var Qr = Object(l.b)(Gr, (e, t) => ({
 					onGetSubredditAutocomplete: t => {
-						e(Qr.d(t))
+						e(Dr.d(t))
 					}
-				}))(ri),
-				ai = n("./src/reddit/selectors/comments.ts");
-			const ci = Object(d.c)({
-				commentAuthors: ai.h
+				}))(Jr),
+				Zr = n("./src/reddit/selectors/comments.ts");
+			const Yr = Object(d.c)({
+				commentAuthors: Zr.h
 			});
-			class li extends a.Component {
+			class Xr extends a.Component {
 				constructor(e) {
 					super(e), this.api = null, this.onEntrySelect = e => {
 						this.props.onSelect(this.state.userSuggestions[e])
@@ -17550,30 +17226,30 @@
 				}
 				render() {
 					return this.state.userSuggestions.length ? c.a.createElement("div", {
-						className: Object(m.a)(Yr.a.list, this.props.className)
-					}, this.state.userSuggestions.map((e, t) => c.a.createElement(ti, {
+						className: Object(m.a)(Ur.a.list, this.props.className)
+					}, this.state.userSuggestions.map((e, t) => c.a.createElement(Wr, {
 						key: t,
 						entry: t,
 						onEntryFocus: this.onEntryFocus,
 						onEntrySelect: this.onEntrySelect,
 						isFocused: t === this.state.selectedSuggestionIndex
-					}, Object(ni.c)(e)))) : null
+					}, Object(zr.c)(e)))) : null
 				}
 			}
-			var di = Object(l.b)(ci)(li),
-				ui = n("./node_modules/lodash/dropRightWhile.js"),
-				pi = n.n(ui),
-				mi = n("./node_modules/lodash/flatMap.js"),
-				hi = n.n(mi),
-				bi = n("./node_modules/lodash/reduceRight.js"),
-				fi = n.n(bi),
-				gi = n("./node_modules/lodash/trimEnd.js"),
-				xi = n.n(gi),
-				yi = n("./node_modules/lodash/trimStart.js"),
-				vi = n.n(yi),
-				Ci = n("./src/lib/forEachGroup/index.ts");
+			var $r = Object(l.b)(Yr)(Xr),
+				ei = n("./node_modules/lodash/dropRightWhile.js"),
+				ti = n.n(ei),
+				ni = n("./node_modules/lodash/flatMap.js"),
+				si = n.n(ni),
+				oi = n("./node_modules/lodash/reduceRight.js"),
+				ri = n.n(oi),
+				ii = n("./node_modules/lodash/trimEnd.js"),
+				ai = n.n(ii),
+				ci = n("./node_modules/lodash/trimStart.js"),
+				li = n.n(ci),
+				di = n("./src/lib/forEachGroup/index.ts");
 
-			function Ei(e, t) {
+			function ui(e, t) {
 				const n = [],
 					s = e.withMutations(e => {
 						for (; e.size && t(e.first());) n.push(e.first()), e.shift()
@@ -17583,20 +17259,20 @@
 					stack: s
 				}
 			}
-			var Oi = n("./src/lib/unicodeUtils/index.ts"),
-				ji = n("./src/reddit/helpers/richTextJson/index.ts"),
-				wi = n("./src/reddit/models/RichTextJson/nodeMakers.ts");
-			const Si = {
-				BOLD: Xn.j.bold,
-				ITALIC: Xn.j.italic,
-				MONOSPACE: Xn.j.monospace,
-				STRIKETHROUGH: Xn.j.strikethrough,
-				SUBSCRIPT: Xn.j.subscript,
-				SUPERSCRIPT: Xn.j.superscript,
-				UNDERLINE: Xn.j.underline
+			var pi = n("./src/lib/unicodeUtils/index.ts"),
+				mi = n("./src/reddit/helpers/richTextJson/index.ts"),
+				hi = n("./src/reddit/models/RichTextJson/nodeMakers.ts");
+			const bi = {
+				BOLD: Kn.j.bold,
+				ITALIC: Kn.j.italic,
+				MONOSPACE: Kn.j.monospace,
+				STRIKETHROUGH: Kn.j.strikethrough,
+				SUBSCRIPT: Kn.j.subscript,
+				SUPERSCRIPT: Kn.j.superscript,
+				UNDERLINE: Kn.j.underline
 			};
-			var _i = (e, t) => ki(e.getBlockMap(), e, t);
-			const ki = (e, t, n) => {
+			var fi = (e, t) => gi(e.getBlockMap(), e, t);
+			const gi = (e, t, n) => {
 					const s = [];
 					let o = e.toStack();
 					for (; o.size;) {
@@ -17609,22 +17285,22 @@
 							case w.g.H4:
 							case w.g.H5:
 							case w.g.H6:
-								s.push(Ri(e, t));
+								s.push(Oi(e, t));
 								break;
 							case w.e: {
 								const {
 									popped: n,
 									stack: r
-								} = Ei(o, e => e.getType() === w.e);
-								o = r, s.push(Li([e, ...n], t));
+								} = ui(o, e => e.getType() === w.e);
+								o = r, s.push(ji([e, ...n], t));
 								break
 							}
 							case w.f: {
 								const {
 									popped: t,
 									stack: n
-								} = Ei(o, e => e.getType() === w.f);
-								o = n, s.push(Ai([e, ...t]));
+								} = ui(o, e => e.getType() === w.f);
+								o = n, s.push(wi([e, ...t]));
 								break
 							}
 							case w.i.ORDERED:
@@ -17632,55 +17308,55 @@
 								const {
 									popped: n,
 									stack: i
-								} = Ei(o, e => e.getType() === r);
-								o = i, s.push(Di([e, ...n], t));
+								} = ui(o, e => e.getType() === r);
+								o = i, s.push(Si([e, ...n], t));
 								break
 							}
 							case w.l: {
 								const {
 									popped: n,
 									stack: r
-								} = Ei(o, e => Object(w.v)(e.getType()));
-								o = r, s.push(Fi([e, ...n], t));
+								} = ui(o, e => Object(w.v)(e.getType()));
+								o = r, s.push(_i([e, ...n], t));
 								break
 							}
 							case w.a: {
 								let t = o.first();
-								t && Object(w.u)(t.getType()) ? o = o.shift() : t = void 0, s.push(Bi(e, t, n));
+								t && Object(w.u)(t.getType()) ? o = o.shift() : t = void 0, s.push(ki(e, t, n));
 								break
 							}
 							case w.n:
 							default:
-								s.push(Mi(e, t))
+								s.push(Ci(e, t))
 						}
 					}
 					return s
 				},
-				Ti = e => e.reduce((e, t) => t === w.k.UNDERLINE || t === w.k.SUBSCRIPT ? e : e | (Si[t] || 0) | 0, 0),
-				Ii = (e, t) => {
+				xi = e => e.reduce((e, t) => t === w.k.UNDERLINE || t === w.k.SUBSCRIPT ? e : e | (bi[t] || 0) | 0, 0),
+				yi = (e, t) => {
 					const n = [],
-						s = Object(Oi.b)(e);
-					return Object(Ci.a)(t, {
+						s = Object(pi.b)(e);
+					return Object(di.a)(t, {
 						keyFn: e => e.getStyle()
 					}, (t, o, r, i) => {
 						if (o.isEmpty()) return;
 						const a = e.slice(r, i),
-							c = r + (a.length - vi()(a).length),
-							l = i - (a.length - xi()(a).length),
+							c = r + (a.length - li()(a).length),
+							l = i - (a.length - ai()(a).length),
 							d = l - c,
 							u = s[c],
 							p = s[l] - u;
-						d > 0 && n.push([Ti(o), u, p])
+						d > 0 && n.push([xi(o), u, p])
 					}), n.length ? n : null
 				},
-				Pi = (e, t) => {
+				vi = (e, t) => {
 					const n = e.getText(),
 						s = e.getCharacterList(),
 						o = [],
 						r = w.d.includes(e.getType()),
 						i = w.c.includes(e.getType());
 					let a = 0;
-					return Object(Ci.a)(s, {
+					return Object(di.a)(s, {
 						keyFn: (e, s) => {
 							const o = e.getEntity();
 							return r && e.getStyle().contains(w.k.SPOILER) ? "spoiler" : Object(L.b)(o, t) ? "link-".concat(e.getEntity()) : "\n" === n[s] ? i ? "linebreak" : "skip" : o && t.getEntity(o).getType() === L.a.EMOTE ? "emote-".concat(a++) : "text"
@@ -17689,9 +17365,9 @@
 						const c = n.slice(i, a),
 							l = s.slice(i, a).toList();
 						if ("text" === r) {
-							const e = Ii(c, l);
-							o.push(Object(wi.s)(c, e))
-						} else if ("spoiler" === r) o.push(Object(wi.n)(c));
+							const e = yi(c, l);
+							o.push(Object(hi.s)(c, e))
+						} else if ("spoiler" === r) o.push(Object(hi.n)(c));
 						else if (r.startsWith("link-")) {
 							const n = t.getEntity(e.getEntity());
 							o.push(((e, t, n) => {
@@ -17703,34 +17379,34 @@
 									i = t.startsWith("/");
 								if (s === L.a.SUBREDDIT_LINK) {
 									const e = t.replace(f.e, "");
-									return Object(wi.o)(e, i)
+									return Object(hi.o)(e, i)
 								}
 								if (o.includes(s)) {
 									const e = t.replace(f.a, "");
-									return Object(wi.t)(e, i)
+									return Object(hi.t)(e, i)
 								}
-								const a = Ii(t, n);
-								return Object(wi.i)(t, r, a)
+								const a = yi(t, n);
+								return Object(hi.i)(t, r, a)
 							})(n, c, l))
-						} else if ("linebreak" === r) o.push(Object(wi.h)());
+						} else if ("linebreak" === r) o.push(Object(hi.h)());
 						else if (r.startsWith("emote-")) {
 							const n = t.getEntity(e.getEntity()).getData();
-							o.push(Object(wi.e)(n.fullId, n.imageType))
+							o.push(Object(hi.e)(n.fullId, n.imageType))
 						}
 					}), o
 				},
-				Mi = (e, t) => Object(wi.l)(Pi(e, t)),
-				Ni = e => "text" === e.e ? Object(wi.m)(e.t) : "link" === e.e ? Object(wi.i)(e.t, e.u, null) : e.e === Xn.x ? e.c.map(Ni) : e.e === Xn.n ? Object(wi.m)("") : e,
-				Ri = (e, t) => Object(wi.f)(w.m[e.getType()], ((e, t) => fi()(hi()(Pi(e, t), Ni), (e, t) => {
+				Ci = (e, t) => Object(hi.l)(vi(e, t)),
+				Ei = e => "text" === e.e ? Object(hi.m)(e.t) : "link" === e.e ? Object(hi.i)(e.t, e.u, null) : e.e === Kn.x ? e.c.map(Ei) : e.e === Kn.n ? Object(hi.m)("") : e,
+				Oi = (e, t) => Object(hi.f)(w.m[e.getType()], ((e, t) => ri()(si()(vi(e, t), Ei), (e, t) => {
 					let [n, ...s] = e;
 					if (!n) return [t];
 					const o = s.length ? s : [];
-					return n && "raw" === t.e && "raw" === n.e ? [Object(wi.m)(t.t + n.t), ...o] : [t, n, ...o]
+					return n && "raw" === t.e && "raw" === n.e ? [Object(hi.m)(t.t + n.t), ...o] : [t, n, ...o]
 				}, []))(e, t)),
-				Li = (e, t) => Object(wi.c)(pi()(e.map(e => ((e, t) => e.getText().trim().length ? Mi(e, t) : wi.a)(e, t)), e => e === wi.a)),
-				Ai = e => Object(wi.d)(e.map(e => Object(wi.m)(e.getText()))),
-				Di = (e, t) => {
-					if (!e.length) return Object(wi.k)([], !1);
+				ji = (e, t) => Object(hi.c)(ti()(e.map(e => ((e, t) => e.getText().trim().length ? Ci(e, t) : hi.a)(e, t)), e => e === hi.a)),
+				wi = e => Object(hi.d)(e.map(e => Object(hi.m)(e.getText()))),
+				Si = (e, t) => {
+					if (!e.length) return Object(hi.k)([], !1);
 					const n = e[0].getDepth();
 					let s = null;
 					const o = [];
@@ -17738,13 +17414,13 @@
 					const i = () => null !== s || r.length,
 						a = () => {
 							const e = [];
-							null !== s && (e.push(s), s = null), r.length && (e.push(Di(r, t)), r = []), o.push(Object(wi.j)(e))
+							null !== s && (e.push(s), s = null), r.length && (e.push(Si(r, t)), r = []), o.push(Object(hi.j)(e))
 						};
 					return e.forEach(e => {
-						e.getDepth() > n ? r.push(e) : (i() && a(), s = Object(wi.l)(Pi(e, t)))
-					}), i() && a(), Object(wi.k)(o, e[0].getType() === w.i.ORDERED)
+						e.getDepth() > n ? r.push(e) : (i() && a(), s = Object(hi.l)(vi(e, t)))
+					}), i() && a(), Object(hi.k)(o, e[0].getType() === w.i.ORDERED)
 				},
-				Fi = (e, t) => {
+				_i = (e, t) => {
 					const n = [...e].sort(z.b),
 						s = n[0],
 						{
@@ -17755,12 +17431,12 @@
 							const {
 								alignment: n
 							} = Object(z.g)(e);
-							return Object(wi.q)(Pi(e, t), n)
+							return Object(hi.q)(vi(e, t), n)
 						}),
-						a = r.slice(1).map(e => e.map(e => Object(wi.p)(Pi(e, t))));
-					return Object(wi.r)(i, a)
+						a = r.slice(1).map(e => e.map(e => Object(hi.p)(vi(e, t))));
+					return Object(hi.r)(i, a)
 				},
-				Bi = (e, t, n) => {
+				ki = (e, t, n) => {
 					const s = Object(N.h)(e);
 					if (!s) throw new Error("Invalid atomic block!");
 					const {
@@ -17775,7 +17451,7 @@
 								assetId: r,
 								thumbnailAssetId: c
 							} = Object(N.f)(s, n);
-						return Object(Fe.j)(t) ? Object(wi.b)(r, a) : Object(Fe.k)(t) ? Object(wi.g)(r, a) : Object(wi.u)(r, a, c, i)
+						return Object(De.j)(t) ? Object(hi.b)(r, a) : Object(De.k)(t) ? Object(hi.g)(r, a) : Object(hi.u)(r, a, c, i)
 					} {
 						const {
 							assetId: e,
@@ -17784,29 +17460,29 @@
 						let n;
 						switch (t) {
 							case N.a.AnimatedImage:
-								n = Object(wi.b)(e, a);
+								n = Object(hi.b)(e, a);
 								break;
 							case N.a.Image:
-								n = Object(wi.g)(e, a);
+								n = Object(hi.g)(e, a);
 								break;
 							case N.a.Video:
-								n = Object(wi.u)(e, a);
+								n = Object(hi.u)(e, a);
 								break;
 							default:
 								throw new Error("Invalid media type")
 						}
-						return Object(ji.e)(e) ? Object(wi.l)([n]) : n
+						return Object(mi.e)(e) ? Object(hi.l)([n]) : n
 					}
 				};
-			var Ui, Ki = n("./src/reddit/constants/componentSizes.ts"),
-				Hi = n("./src/reddit/constants/elementIds.ts");
+			var Ti, Ii = n("./src/reddit/constants/componentSizes.ts"),
+				Pi = n("./src/reddit/constants/elementIds.ts");
 			! function(e) {
 				e.Up = "up", e.Down = "down"
-			}(Ui || (Ui = {}));
-			var Vi = e => {
+			}(Ti || (Ti = {}));
+			var Mi = e => {
 					const t = window.getSelection().focusNode;
 					if (!t || !t.parentElement) return;
-					const n = document.getElementById(Hi.d),
+					const n = document.getElementById(Pi.d),
 						s = n || document.documentElement;
 					if (!s) return;
 					const o = window.innerHeight,
@@ -17814,31 +17490,31 @@
 							bottom: r,
 							top: i
 						} = t.parentElement.getBoundingClientRect(),
-						a = n ? 0 : Ki.f + Ki.p;
-					e === Ui.Up && i < a ? s.scrollBy(0, i - a) : e === Ui.Down && r > o && s.scrollBy(0, r - o)
+						a = n ? 0 : Ii.f + Ii.p;
+					e === Ti.Up && i < a ? s.scrollBy(0, i - a) : e === Ti.Down && r > o && s.scrollBy(0, r - o)
 				},
-				Wi = n("./src/reddit/models/Product/index.ts"),
-				zi = (e, t, n) => {
+				Ni = n("./src/reddit/models/Product/index.ts"),
+				Ri = (e, t, n) => {
 					const s = {
 						url: n
 					};
 					return e.createEntity(t, "MUTABLE", s)
 				},
-				qi = n("./node_modules/lodash/maxBy.js"),
-				Gi = n.n(qi);
-			const Ji = (e, t) => {
+				Li = n("./node_modules/lodash/maxBy.js"),
+				Ai = n.n(Li);
+			const Fi = (e, t) => {
 				if (!t) return (e => {
 					const t = e.id;
 					switch (e.e) {
-						case Xn.m:
+						case Kn.m:
 							return {
 								assetId: t, type: N.a.Image
 							};
-						case Xn.a:
+						case Kn.a:
 							return {
 								assetId: t, type: N.a.AnimatedImage
 							};
-						case Xn.D:
+						case Kn.D:
 							return {
 								assetId: t, type: N.a.Video
 							}
@@ -17846,7 +17522,7 @@
 				})(e);
 				const n = t.id;
 				switch (t.e) {
-					case Xn.s: {
+					case Kn.s: {
 						const {
 							s: e
 						} = t;
@@ -17858,7 +17534,7 @@
 							height: e.y
 						}
 					}
-					case Xn.r: {
+					case Kn.r: {
 						const {
 							s: e
 						} = t;
@@ -17872,7 +17548,7 @@
 							height: e.y
 						}
 					}
-					case Xn.t: {
+					case Kn.t: {
 						const {
 							isGif: e,
 							dashUrl: s,
@@ -17883,7 +17559,7 @@
 						} = t;
 						let c;
 						if (r) {
-							c = Gi()(r, e => e.x).u
+							c = Ai()(r, e => e.x).u
 						}
 						return {
 							assetId: n,
@@ -17899,11 +17575,11 @@
 				}
 			};
 
-			function Qi(e, t, n) {
+			function Di(e, t, n) {
 				const o = e.id,
 					r = e.c,
-					i = Xn.E(t, o),
-					a = Ji(e, i),
+					i = Kn.E(t, o),
+					a = Fi(e, i),
 					c = [new s.ContentBlock({
 						key: Object(s.genKey)(),
 						type: w.a,
@@ -17919,32 +17595,32 @@
 				}
 				return c
 			}
-			const Zi = Object.keys(Si),
-				Yi = (e, t, n) => {
+			const Bi = Object.keys(bi),
+				Ui = (e, t, n) => {
 					switch (t.e) {
-						case Xn.u:
-							return sa(e, t.c, w.b.UNSTYLED, n);
-						case Xn.k:
+						case Kn.u:
+							return qi(e, t.c, w.b.UNSTYLED, n);
+						case Kn.k:
 							const s = w.h[t.l];
-							return sa(e, t.c || [], s, n);
-						case Xn.p:
-							return ea(e, t, n);
-						case Xn.b:
-							return Xi(e, t, n);
-						case Xn.c:
-							return void t.c.forEach(t => sa(e, [t], w.b.CODE_BLOCK, n));
-						case Xn.z:
-							return $i(e, t, n);
-						case Xn.m:
-						case Xn.a:
-						case Xn.D:
-							return void e.blocks.push(...Qi(t, n.mediaMetadataMap, Object(N.q)(n.editorType)))
+							return qi(e, t.c || [], s, n);
+						case Kn.p:
+							return Vi(e, t, n);
+						case Kn.b:
+							return Ki(e, t, n);
+						case Kn.c:
+							return void t.c.forEach(t => qi(e, [t], w.b.CODE_BLOCK, n));
+						case Kn.z:
+							return Hi(e, t, n);
+						case Kn.m:
+						case Kn.a:
+						case Kn.D:
+							return void e.blocks.push(...Di(t, n.mediaMetadataMap, Object(N.q)(n.editorType)))
 					}
 				},
-				Xi = (e, t, n) => {
-					t && t.c && t.c.length && t.c.forEach(t => t.e === Xn.u ? sa(e, t.c, w.b.BLOCK_QUOTE, n) : Yi(e, t, n))
+				Ki = (e, t, n) => {
+					t && t.c && t.c.length && t.c.forEach(t => t.e === Kn.u ? qi(e, t.c, w.b.BLOCK_QUOTE, n) : Ui(e, t, n))
 				},
-				$i = (e, t, n) => {
+				Hi = (e, t, n) => {
 					const {
 						h: s,
 						c: o
@@ -17960,47 +17636,47 @@
 							colIndex: i,
 							rowIndex: o
 						};
-						sa(e, a, w.b.TABLE_CELL, n, l)
+						qi(e, a, w.b.TABLE_CELL, n, l)
 					}))
 				},
-				ea = function e(t, n, s) {
+				Vi = function e(t, n, s) {
 					let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0;
 					const r = n.o ? w.b.ORDERED_LIST : w.b.UNORDERED_LIST;
 					n.c.forEach(n => {
 						const i = n.c;
 						if (!i || !i.length) return;
-						const [a, c] = i, l = a.e === Xn.u ? a.c : [];
-						sa(t, l, r, s, void 0, o), c && c.e === Xn.p && e(t, c, s, o + 1)
+						const [a, c] = i, l = a.e === Kn.u ? a.c : [];
+						qi(t, l, r, s, void 0, o), c && c.e === Kn.p && e(t, c, s, o + 1)
 					})
 				},
-				ta = {
-					[Xn.y]: ["r/", "/r/"],
-					[Xn.B]: ["u/", "/user/"],
-					[Xn.C]: ["u/", "/user/"],
-					[Xn.v]: ["p/", ""],
-					[Xn.g]: ["c/", ""]
+				Wi = {
+					[Kn.y]: ["r/", "/r/"],
+					[Kn.B]: ["u/", "/user/"],
+					[Kn.C]: ["u/", "/user/"],
+					[Kn.v]: ["p/", ""],
+					[Kn.g]: ["c/", ""]
 				},
-				na = {
-					[Xn.y]: L.a.SUBREDDIT_LINK,
-					[Xn.B]: L.a.USER_LINK,
-					[Xn.C]: L.a.USER_MENTION,
-					[Xn.v]: L.a.POST_LINK,
-					[Xn.g]: L.a.COMMENT_LINK
+				zi = {
+					[Kn.y]: L.a.SUBREDDIT_LINK,
+					[Kn.B]: L.a.USER_LINK,
+					[Kn.C]: L.a.USER_MENTION,
+					[Kn.v]: L.a.POST_LINK,
+					[Kn.g]: L.a.COMMENT_LINK
 				},
-				sa = function(e, t, n, o) {
+				qi = function(e, t, n, o) {
 					let r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
 						i = arguments.length > 5 ? arguments[5] : void 0,
 						a = arguments.length > 6 && void 0 !== arguments[6] && arguments[6];
 					const c = e.content;
-					if (1 === t.length && (t[0].e === Xn.m || t[0].e === Xn.a)) {
+					if (1 === t.length && (t[0].e === Kn.m || t[0].e === Kn.a)) {
 						const n = t[0];
-						if (Object(ji.e)(n.id)) return void e.blocks.push(...Qi(n, o.mediaMetadataMap, Object(N.q)(o.editorType)))
+						if (Object(mi.e)(n.id)) return void e.blocks.push(...Di(n, o.mediaMetadataMap, Object(N.q)(o.editorType)))
 					}
 					const {
 						charList: l,
 						text: d,
 						updatedContent: u
-					} = oa(t, c, o), p = new s.ContentBlock({
+					} = Gi(t, c, o), p = new s.ContentBlock({
 						key: Object(s.genKey)(),
 						characterList: Object(A.List)(l),
 						data: Object(A.fromJS)(r),
@@ -18010,12 +17686,12 @@
 					});
 					e.content = u || c, a ? e.blocks.unshift(p) : e.blocks.push(p)
 				},
-				oa = (e, t, n) => {
+				Gi = (e, t, n) => {
 					let s = t,
 						o = "";
 					const r = [];
 					if (e.forEach(e => {
-							const t = ra(e, s, n);
+							const t = Ji(e, s, n);
 							s = t.updatedContent || s, o += t.text, r.push(...t.charList)
 						}), o.length !== r.length) throw new Error("Characters length mismatch!");
 					return {
@@ -18024,116 +17700,116 @@
 						updatedContent: s !== t ? s : void 0
 					}
 				},
-				ra = (e, t, n) => {
+				Ji = (e, t, n) => {
 					switch (e.e) {
-						case Xn.A: {
+						case Kn.A: {
 							const {
 								t,
 								f: n
 							} = e;
 							return {
-								charList: aa(t, n),
+								charList: Zi(t, n),
 								text: t
 							}
 						}
-						case Xn.x: {
+						case Kn.x: {
 							const {
 								c: o
-							} = e, r = oa(o, t, n);
+							} = e, r = Gi(o, t, n);
 							return r.charList = r.charList.map(e => (e => s.CharacterMetadata.create({
 								style: e.getStyle().add(w.k.SPOILER),
 								entity: e.getEntity()
 							}))(e)), r
 						}
-						case Xn.v:
-						case Xn.g:
-						case Xn.w: {
+						case Kn.v:
+						case Kn.g:
+						case Kn.w: {
 							const {
 								t
 							} = e;
 							return {
-								charList: aa(t),
+								charList: Zi(t),
 								text: t
 							}
 						}
-						case Xn.y:
-						case Xn.B:
-						case Xn.C: {
-							const [n, s] = ta[e.e], o = (e.l ? "/" : "") + n + e.t, r = s + e.t, i = zi(t, na[e.e], r), a = i.getLastCreatedEntityKey();
+						case Kn.y:
+						case Kn.B:
+						case Kn.C: {
+							const [n, s] = Wi[e.e], o = (e.l ? "/" : "") + n + e.t, r = s + e.t, i = Ri(t, zi[e.e], r), a = i.getLastCreatedEntityKey();
 							return {
-								charList: aa(o, void 0, a),
+								charList: Zi(o, void 0, a),
 								text: o,
 								updatedContent: i
 							}
 						}
-						case Xn.o: {
+						case Kn.o: {
 							const {
 								t: n,
 								u: s,
 								f: o
-							} = e, r = zi(t, L.a.LINK, s), i = r.getLastCreatedEntityKey();
+							} = e, r = Ri(t, L.a.LINK, s), i = r.getLastCreatedEntityKey();
 							return {
-								charList: aa(n, o, i),
+								charList: Zi(n, o, i),
 								text: n,
 								updatedContent: r
 							}
 						}
-						case Xn.m:
-						case Xn.a:
+						case Kn.m:
+						case Kn.a:
 							const {
 								id: o
 							} = e;
 							if (o.startsWith("emote|")) {
-								const e = Object(Wi.b)(o),
+								const e = Object(Ni.b)(o),
 									s = n.activeEmotes && n.activeEmotes[e];
 								if (s) {
-									const e = Object(Ps.c)(t, s),
+									const e = Object(vs.c)(t, s),
 										n = e.getLastCreatedEntityKey(),
-										o = Ps.a;
+										o = vs.a;
 									return {
-										charList: aa(o, void 0, n),
+										charList: Zi(o, void 0, n),
 										text: o,
 										updatedContent: e
 									}
 								}
 								const r = ":".concat(e, ":");
 								return {
-									charList: aa(r),
+									charList: Zi(r),
 									text: r
 								}
 							}
 							return {
-								text: "", charList: aa("")
+								text: "", charList: Zi("")
 							};
 						default:
 							return {
-								text: "", charList: aa("")
+								text: "", charList: Zi("")
 							}
 					}
 				},
-				ia = e => {
-					const t = Zi.filter(t => !!(Si[t] & e));
+				Qi = e => {
+					const t = Bi.filter(t => !!(bi[t] & e));
 					return Object(A.OrderedSet)(t)
 				},
-				aa = function(e, t) {
+				Zi = function(e, t) {
 					let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
 					const o = s.CharacterMetadata.create({
 							entity: n
 						}),
 						r = Array(e.length).fill(o),
-						i = Object(Oi.a)(e);
+						i = Object(pi.a)(e);
 					return t && t.forEach(e => {
-						const [t, o, a] = e, c = ia(t), l = o + a, d = s.CharacterMetadata.create({
+						const [t, o, a] = e, c = Qi(t), l = o + a, d = s.CharacterMetadata.create({
 							entity: n,
 							style: c
 						});
 						r.fill(d, i[o], i[l])
 					}), r
 				},
-				ca = (e, t) => {
-					e.blocks.length && (e.blocks[0].getType() === w.b.TABLE_CELL && sa(e, [], w.b.UNSTYLED, t, void 0, void 0, !0), e.blocks[e.blocks.length - 1].getType() === w.b.TABLE_CELL && sa(e, [], w.b.UNSTYLED, t))
+				Yi = (e, t) => {
+					e.blocks.length && (e.blocks[0].getType() === w.b.TABLE_CELL && qi(e, [], w.b.UNSTYLED, t, void 0, void 0, !0), e.blocks[e.blocks.length - 1].getType() === w.b.TABLE_CELL && qi(e, [], w.b.UNSTYLED, t))
 				};
-			var la = (e, t, n, o) => {
+			var Xi = (e, t, n, o) => {
 					const r = "string" == typeof e ? JSON.parse(e) : e;
 					if (!r || !r.document || !r.document.length) return null;
 					const i = {
@@ -18146,8 +17822,8 @@
 							content: s.ContentState.createFromText("")
 						};
 					r.document.forEach(e => {
-						Yi(a, e, i)
-					}), 0 === a.blocks.length && sa(a, [], w.b.UNSTYLED, i), ca(a, i);
+						Ui(a, e, i)
+					}), 0 === a.blocks.length && qi(a, [], w.b.UNSTYLED, i), Yi(a, i);
 					const c = s.BlockMapBuilder.createFromArray(a.blocks),
 						l = s.SelectionState.createEmpty(c.first().getKey());
 					return a.content.merge({
@@ -18156,17 +17832,17 @@
 						selectionAfter: l
 					})
 				},
-				da = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
-				ua = n("./src/reddit/constants/elementClassNames.ts"),
-				pa = n("./src/reddit/constants/keycodes.ts"),
-				ma = n("./src/reddit/icons/svgs/Send/index.tsx"),
-				ha = n("./src/reddit/selectors/economics.ts"),
-				ba = n("./src/reddit/selectors/gold/powerups.ts"),
-				fa = n("./src/reddit/components/RichTextEditor/index.m.less"),
-				ga = n.n(fa);
+				$i = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
+				ea = n("./src/reddit/constants/elementClassNames.ts"),
+				ta = n("./src/reddit/constants/keycodes.ts"),
+				na = n("./src/reddit/icons/svgs/Send/index.tsx"),
+				sa = n("./src/reddit/selectors/economics.ts"),
+				oa = n("./src/reddit/selectors/gold/powerups.ts"),
+				ra = n("./src/reddit/components/RichTextEditor/index.m.less"),
+				ia = n.n(ra);
 
-			function xa() {
-				return (xa = Object.assign || function(e) {
+			function aa() {
+				return (aa = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -18174,29 +17850,29 @@
 					return e
 				}).apply(this, arguments)
 			}
-			Object(Sr.b)({
-				draftToRTFJson: _i,
+			Object(br.b)({
+				draftToRTFJson: fi,
 				getMediaCount: N.g,
 				getPendingThumbnailUploads: N.i,
 				isAllMediaUploaded: N.m
 			});
-			const ya = "handled",
-				va = "not-handled",
-				Ca = /^\s*$/,
-				Ea = 20,
-				Oa = b.a.wrapped(bo.a, "FocusableContent", ga.a),
-				ja = b.a.div("Container", ga.a),
-				wa = b.a.wrapped(da.a, "CurrentUserIcon", ga.a),
-				Sa = e => "".concat(v.b, "-").concat(e),
-				_a = Object(l.b)(() => {
-					const e = (() => Object(d.a)(e => e.uploads, (e, t) => t.rteState.editorKey, (e, t) => i()(e, e => e.key.startsWith(Sa(t)))))();
+			const ca = "handled",
+				la = "not-handled",
+				da = /^\s*$/,
+				ua = 20,
+				pa = b.a.wrapped(so.a, "FocusableContent", ia.a),
+				ma = b.a.div("Container", ia.a),
+				ha = b.a.wrapped($i.a, "CurrentUserIcon", ia.a),
+				ba = e => "".concat(v.b, "-").concat(e),
+				fa = Object(l.b)(() => {
+					const e = (() => Object(d.a)(e => e.uploads, (e, t) => t.rteState.editorKey, (e, t) => i()(e, e => e.key.startsWith(ba(t)))))();
 					return Object(d.c)({
 						editorUploads: e,
 						emotesPowerupBenefitUnlocked: (e, t) => {
 							let {
 								destSubreddit: n
 							} = t;
-							return !!n && !!n.id && Object(ba.f)(e, {
+							return !!n && !!n.id && Object(oa.f)(e, {
 								subredditId: n.id,
 								benefit: O.a.CommentsWithEmoji
 							})
@@ -18206,34 +17882,34 @@
 							let {
 								destSubreddit: n
 							} = t;
-							return !!n && !!n.id && Object(ba.f)(e, {
+							return !!n && !!n.id && Object(oa.f)(e, {
 								subredditId: n.id,
 								benefit: O.a.CommentsWithGifs
 							})
 						},
 						giphySpecialMembershipEnabled: C.d.spGiphy,
-						activeEmotes: (e, t) => !!t.destSubreddit && t.destSubreddit.id && Object(ha.b)(e, t.destSubreddit.id) || void 0
+						activeEmotes: (e, t) => !!t.destSubreddit && t.destSubreddit.id && Object(sa.b)(e, t.destSubreddit.id) || void 0
 					})
 				}, e => ({
 					onFetchEditorProducts: t => e(Object(y.e)(t)),
 					onTrackMediaDrop: t => e((e, n) => E.o(n(), t)),
 					retryUpload: t => e(v.c(t)),
-					startUploads: (t, n, s) => e(v.e(t, n, Sa(s)))
+					startUploads: (t, n, s) => e(v.e(t, n, ba(s)))
 				}));
-			class ka extends a.Component {
+			class ga extends a.Component {
 				constructor(e) {
-					super(e), this.blockRenderMap = s.DefaultDraftBlockRenderMap.merge(yo, Oo, Mn, Cr, wr, zr, rn), this.editorHeight = null, this.editorRef = null, this.editorRootStyleMutationObserver = null, this.linksControllerApi = null, this.suggestionDropdownApi = null, this.tableToolbarControllerApi = null, this.emotesTooltipApi = null, this.gifTooltipApi = null, this.updateSuggestionDropdownPosition = null, this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1, this.needSyncScroll = null, this.transforms = {
-						[S.BREAK_HEADER_ENTITY]: Ss.b,
-						[S.INSERT_LINE_BREAK]: Ss.e,
-						[S.REDUCE_LIST_INDENT]: Ss.f,
-						[S.RESET_CURRENT_AND_PREVIOUS_BLOCKS]: Ss.g,
-						[S.REMOVE_EXTRA_LIST_ITEM]: Ss.h,
-						[I.d]: e => to(e, this.props.editorType),
-						[I.b]: e => eo(e, this.props.editorType),
-						[I.f]: Ss.d,
-						[I.c]: e => Object(Ss.c)(w.k.BOLD, e),
-						[I.e]: e => Object(Ss.c)(w.k.ITALIC, e),
-						[I.g]: e => Object(Ss.c)(w.k.UNDERLINE, e)
+					super(e), this.blockRenderMap = s.DefaultDraftBlockRenderMap.merge(ao, po, Mn, dr, hr, Rr, rn), this.editorHeight = null, this.editorRef = null, this.editorRootStyleMutationObserver = null, this.linksControllerApi = null, this.suggestionDropdownApi = null, this.tableToolbarControllerApi = null, this.emotesTooltipApi = null, this.gifTooltipApi = null, this.updateSuggestionDropdownPosition = null, this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1, this.needSyncScroll = null, this.transforms = {
+						[S.BREAK_HEADER_ENTITY]: bs.b,
+						[S.INSERT_LINE_BREAK]: bs.e,
+						[S.REDUCE_LIST_INDENT]: bs.f,
+						[S.RESET_CURRENT_AND_PREVIOUS_BLOCKS]: bs.g,
+						[S.REMOVE_EXTRA_LIST_ITEM]: bs.h,
+						[I.d]: e => Ws(e, this.props.editorType),
+						[I.b]: e => Vs(e, this.props.editorType),
+						[I.f]: bs.d,
+						[I.c]: e => Object(bs.c)(w.k.BOLD, e),
+						[I.e]: e => Object(bs.c)(w.k.ITALIC, e),
+						[I.g]: e => Object(bs.c)(w.k.UNDERLINE, e)
 					}, this.setContainerRef = e => {
 						const {
 							domRef: t
@@ -18285,12 +17961,12 @@
 						n.getSelection().getHasFocus() || (n = s.EditorState.forceSelection(n, n.getSelection()), t && (n = s.EditorState.setInlineStyleOverride(n, t))), this.onChange(n)
 					}, this.onChange = (e, t) => {
 						let n = e;
-						n = vn(n, this.state.editorState), n = Ne(n, this.props.editorType), this.emotesTooltipApi && (n = Object(Ps.d)(n, this.state.editorState)), n = Js(n, this.state.editorState), n = Object(io.d)(n, this.state.editorState), this.setEditorState(n, t);
+						n = vn(n, this.state.editorState), n = Ne(n, this.props.editorType), this.emotesTooltipApi && (n = Object(vs.d)(n, this.state.editorState)), n = Fs(n, this.state.editorState), n = Object(Qs.d)(n, this.state.editorState), this.setEditorState(n, t);
 						let {
 							suppressAutocompleteForLink: s
 						} = this.state;
 						if (s) {
-							const t = Object(Bs.b)(e);
+							const t = Object(ks.b)(e);
 							t && t.entityKey === s || (s = null)
 						}
 						this.setState({
@@ -18305,8 +17981,8 @@
 						const {
 							editorState: t
 						} = this.state;
-						if (this.isMouseDown) return ya;
-						if (Me(t, e)) return ya;
+						if (this.isMouseDown) return ca;
+						if (Me(t, e)) return ca;
 						let n = function(e, t) {
 							const n = e.getSelection(),
 								o = n.getFocusOffset();
@@ -18318,30 +17994,30 @@
 								l = a.getEntityAt(o);
 							if (!(c && (!l || l !== c))) return;
 							const d = i.getEntity(c),
-								u = Fs.has(d.getType());
+								u = _s.has(d.getType());
 							if ("MUTABLE" === d.getMutability() && u) {
 								const o = s.Modifier.insertText(i, n, t, e.getCurrentInlineStyle());
 								return s.EditorState.push(e, o, "insert-characters")
 							}
 						}(t, e) || t;
-						return (n = fn(n, e) || n) !== t ? (this.onChange(n), ya) : va
+						return (n = fn(n, e) || n) !== t ? (this.onChange(n), ca) : la
 					}, this.keyBindingFN = e => {
 						const {
 							editorState: t
 						} = this.state, {
 							submitOnEnter: n
 						} = this.props, o = t.getSelection();
-						if (e.metaKey && e.keyCode === pa.a.K) return S.OPEN_LINK_TOOLTIP;
-						if (e.keyCode === pa.a.Space) {
-							if (oo(t)) return S.CONVERT_TO_LIST_ON_SPACE;
-							if (Object(Bs.d)(t)) return S.LINKIFY_ON_SPACE
-						} else if (e.keyCode === pa.a.Enter) {
+						if (e.metaKey && e.keyCode === ta.a.K) return S.OPEN_LINK_TOOLTIP;
+						if (e.keyCode === ta.a.Space) {
+							if (Gs(t)) return S.CONVERT_TO_LIST_ON_SPACE;
+							if (Object(ks.d)(t)) return S.LINKIFY_ON_SPACE
+						} else if (e.keyCode === ta.a.Enter) {
 							if (e.ctrlKey || e.metaKey || n && !e.shiftKey) return S.SUBMIT;
-							if (e.shiftKey && no(t)) return S.INSERT_LINE_BREAK; {
+							if (e.shiftKey && zs(t)) return S.INSERT_LINE_BREAK; {
 								const e = this.enterKeyBinding(t);
 								if (e) return e
 							}
-						} else if (e.keyCode === pa.a.Backspace) {
+						} else if (e.keyCode === ta.a.Backspace) {
 							if (this.isJustLinkified || this.isJustConvertedToList) return I.h;
 							if (o.isCollapsed()) {
 								const e = t.getCurrentContent(),
@@ -18369,22 +18045,22 @@
 									selection: e,
 									url: n
 								} = o;
-								t = Object(Bs.f)(t, e, n)
+								t = Object(ks.f)(t, e, n)
 							}
-							return this.onChange(t), this.isJustLinkified = !!o, ya
+							return this.onChange(t), this.isJustLinkified = !!o, ca
 						};
 						if (n === S.SUBMIT) this.props.onSubmit();
 						else {
 							if (n === S.CONVERT_TO_LIST_ON_SPACE) {
-								const e = r(ro(t));
+								const e = r(Js(t));
 								return this.isJustConvertedToList = !0, e
 							}
-							if (n === S.LINKIFY_ON_SPACE) return o = Object(Bs.d)(t), r(Object(Ss.a)(t));
-							if (n === S.LINKIFY_ON_ENTER && (o = Object(Bs.d)(t), !(n = this.enterKeyBinding(t, !1)))) return r(Object(Ss.d)(t))
+							if (n === S.LINKIFY_ON_SPACE) return o = Object(ks.d)(t), r(Object(bs.a)(t));
+							if (n === S.LINKIFY_ON_ENTER && (o = Object(ks.d)(t), !(n = this.enterKeyBinding(t, !1)))) return r(Object(bs.d)(t))
 						}
-						if (n === S.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), ya;
+						if (n === S.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), ca;
 						if (n === S.MAKE_PLAIN_BLOCK) {
-							return r(Object(Ss.i)(w.n, t))
+							return r(Object(bs.i)(w.n, t))
 						}
 						if (n === S.EXEC_TABLE_ON_ENTER_HANDLER) return r(this.tableOnEnterHandler.handle(t));
 						const i = this.transforms[n];
@@ -18393,29 +18069,29 @@
 							if (e) return r(e)
 						}
 						const a = s.RichUtils.handleKeyCommand(t, n);
-						return a ? r(a) : va
+						return a ? r(a) : la
 					}, this.handleOnTab = e => {
 						if (this.emotesTooltipApi && this.emotesTooltipApi.handleTabInEditor() || this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent()) return void e.preventDefault();
 						const {
 							editorState: t
 						} = this.state;
 						let n = pn(e, t);
-						if (n = n || $s(e, t)) return void this.onChange(n);
+						if (n = n || Hs(e, t)) return void this.onChange(n);
 						const o = s.RichUtils.onTab(e, t, 2);
 						this.onChange(o)
 					}, this.handleOnUpArrow = e => {
 						if (this.emotesTooltipApi && this.emotesTooltipApi.handleUpArrowInEditor() || this.suggestionDropdownApi && this.suggestionDropdownApi.moveUp()) return void e.preventDefault();
 						const t = mn(e, this.state.editorState) || Ie(e, this.state.editorState);
-						t && this.onChange(t), this.needSyncScroll = Ui.Up
+						t && this.onChange(t), this.needSyncScroll = Ti.Up
 					}, this.handleOnDownArrow = e => {
 						if (this.suggestionDropdownApi && this.suggestionDropdownApi.moveDown()) return void e.preventDefault();
 						const t = hn(e, this.state.editorState) || Pe(e, this.state.editorState);
-						t && this.onChange(t), this.needSyncScroll = Ui.Down
+						t && this.onChange(t), this.needSyncScroll = Ti.Down
 					}, this.handleReturn = e => {
 						const t = ke(this.state.editorState);
-						return t ? (this.onChange(t), e.preventDefault(), ya) : this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent() ? (e.preventDefault(), ya) : va
+						return t ? (this.onChange(t), e.preventDefault(), ca) : this.suggestionDropdownApi && this.suggestionDropdownApi.selectCurrent() ? (e.preventDefault(), ca) : la
 					}, this.suppressAutocompleteForFocusedLink = () => {
-						const e = Object(Bs.b)(this.state.editorState);
+						const e = Object(ks.b)(this.state.editorState);
 						e && this.state.suppressAutocompleteForLink !== e.entityKey && this.setState({
 							suppressAutocompleteForLink: e.entityKey
 						})
@@ -18437,7 +18113,7 @@
 						} = this.state;
 						if (!this.editorRef) return;
 						if (this.handleFilesPaste(e, t), e.isPropagationStopped()) return;
-						const n = qo(t, this.editorRef, e, this.props.editorType);
+						const n = Lo(t, this.editorRef, e, this.props.editorType);
 						n && this.onChange(n)
 					}, this.handleFilesPaste = (e, t) => {
 						const n = e.clipboardData.files;
@@ -18455,10 +18131,10 @@
 						this.isMouseDown = !0
 					}, this.handleOnMouseUp = e => {
 						this.isMouseDown = !1
-					}, this.handleDroppedFiles = (e, t) => ya, this.handleDrop = (e, t, n) => ya, this.handleBlur = () => {
+					}, this.handleDroppedFiles = (e, t) => ca, this.handleDrop = (e, t, n) => ca, this.handleBlur = () => {
 						this.props.onBlur && this.props.onBlur()
-					}, this.handlePastedText = (e, t) => ya, this.onInternalSuggestionSelected = e => {
-						this.onChange(Object(Bs.g)(this.state.editorState, e)), this.isJustAutocompleteSelected = !0
+					}, this.handlePastedText = (e, t) => ca, this.onInternalSuggestionSelected = e => {
+						this.onChange(Object(ks.g)(this.state.editorState, e)), this.isJustAutocompleteSelected = !0
 					}, this.onToolbarEmoteButtonClick = e => {
 						this.gifTooltipApi && this.gifTooltipApi.closeTooltip(), this.emotesTooltipApi && this.emotesTooltipApi.toggleTooltip(e)
 					}, this.onToolbarGifButtonClick = e => {
@@ -18474,7 +18150,7 @@
 							editorState: e
 						} = this.state, {
 							onSwitchEditorMode: t
-						} = this.props, n = Sr.a.toRichTextJSON(Object.assign(Object.assign({}, this.props.rteState), {
+						} = this.props, n = br.a.toRichTextJSON(Object.assign(Object.assign({}, this.props.rteState), {
 							isBound: !0,
 							editorState: Object(N.c)(e)
 						}));
@@ -18483,7 +18159,7 @@
 						const {
 							editorState: e
 						} = this.state;
-						e && Qs(e) ? this.setState({
+						e && Ds(e) ? this.setState({
 							confirmModalOpen: !0
 						}) : this.handleSwitchToMarkdownMode()
 					}, this.toggleConfirmModal = () => {
@@ -18497,7 +18173,7 @@
 						const {
 							files: t,
 							filesSource: n
-						} = e, s = t.slice(0, Ea);
+						} = e, s = t.slice(0, ua);
 						await this.props.startUploads(s, n, this.props.rteState.editorKey), this.insertValidatedMedia()
 					}, this.onRetryUpload = e => {
 						this.props.retryUpload(e)
@@ -18534,8 +18210,8 @@
 						}
 					}), this.blockRendererFn = e => {
 						const t = e.getType();
-						return t === w.a ? this.getAtomicBlocksRenderConfig() : t in Br ? Br[t] : void 0
-					}, this.renderToolbar = e => c.a.createElement(Dt.b, e), this.entityElementRegistry = ks(), this.tableOnEnterHandler = new bn;
+						return t === w.a ? this.getAtomicBlocksRenderConfig() : t in kr ? kr[t] : void 0
+					}, this.renderToolbar = e => c.a.createElement(Ft.b, e), this.entityElementRegistry = gs(), this.tableOnEnterHandler = new bn;
 					const {
 						activeEmotes: t,
 						editorType: n,
@@ -18545,7 +18221,7 @@
 						rteState: a
 					} = e;
 					let l;
-					a.isBound ? l = a.editorState : Object(Xn.G)(a.initialRTJSON) ? l = this.createInitialState(a.editorKey) : (l = s.EditorState.createWithContent(la(a.initialRTJSON, n, a.mediaMetadataMap, t), this.editorDecorators()), l = this.moveSelectionToEnd(l)), this.state = {
+					a.isBound ? l = a.editorState : Object(Kn.G)(a.initialRTJSON) ? l = this.createInitialState(a.editorKey) : (l = s.EditorState.createWithContent(Xi(a.initialRTJSON, n, a.mediaMetadataMap, t), this.editorDecorators()), l = this.moveSelectionToEnd(l)), this.state = {
 						noBorder: o,
 						containerRef: null,
 						confirmModalOpen: !1,
@@ -18559,7 +18235,7 @@
 					}
 				}
 				editorDecorators() {
-					return new s.CompositeDecorator([Ls(), ho(), Ws()])
+					return new s.CompositeDecorator([js(), no(), Ns()])
 				}
 				moveSelectionToEnd(e) {
 					const t = e.getCurrentContent().getBlockMap(),
@@ -18579,7 +18255,7 @@
 					})]), this.editorDecorators())
 				}
 				componentDidMount() {
-					if (this.props.rteRef && this.props.rteRef(this), h.a.write(Kr), this.rteStateChanged(this.state.editorState, !1), this.editorRef) {
+					if (this.props.rteRef && this.props.rteRef(this), h.a.write(Ir), this.rteStateChanged(this.state.editorState, !1), this.editorRef) {
 						const e = this.editorRef.refs.editor;
 						e.addEventListener("scroll", this.hideTooltips), this.editorRootStyleMutationObserver = new MutationObserver(this.onEditorStyleChanged), this.editorRootStyleMutationObserver.observe(e, {
 							attributes: !0,
@@ -18610,7 +18286,7 @@
 							})
 						}
 					}
-					this.needSyncScroll && (Vi(this.needSyncScroll), this.needSyncScroll = null)
+					this.needSyncScroll && (Mi(this.needSyncScroll), this.needSyncScroll = null)
 				}
 				componentWillUnmount() {
 					if (this.props.rteRef && this.props.rteRef(null), this.insertValidatedMedia = () => {}, this.editorRef) {
@@ -18641,13 +18317,13 @@
 						d = i === c.getText().length;
 					if (a === w.l || l === w.l) return S.EXEC_TABLE_ON_ENTER_HANDLER;
 					if (s.isCollapsed()) {
-						if (t && Object(Bs.d)(e)) return S.LINKIFY_ON_ENTER;
+						if (t && Object(ks.d)(e)) return S.LINKIFY_ON_ENTER;
 						if (Object(w.r)(l) && d) return S.BREAK_HEADER_ENTITY;
 						if (Object(w.s)(l)) {
-							if (Ca.test(c.getText())) return c.getDepth() > 0 ? S.REDUCE_LIST_INDENT : S.REMOVE_EXTRA_LIST_ITEM
+							if (da.test(c.getText())) return c.getDepth() > 0 ? S.REDUCE_LIST_INDENT : S.REMOVE_EXTRA_LIST_ITEM
 						} else if (l === w.e) {
 							const e = n.getBlockBefore(r);
-							if (e && e.getType() === w.e && Ca.test(e.getText()) && Ca.test(c.getText())) return S.RESET_CURRENT_AND_PREVIOUS_BLOCKS
+							if (e && e.getType() === w.e && da.test(e.getText()) && da.test(c.getText())) return S.RESET_CURRENT_AND_PREVIOUS_BLOCKS
 						} else if (l === w.f) {
 							const e = n.getBlockBefore(r),
 								t = n.getBlockAfter(r);
@@ -18661,7 +18337,7 @@
 						suppressAutocompleteForLink: t
 					} = this.state;
 					if (!this.isJustAutocompleteSelected && e.getSelection().getHasFocus()) {
-						const n = Object(Bs.b)(e);
+						const n = Object(ks.b)(e);
 						if (n && n.entityKey !== t) return n
 					}
 				}
@@ -18673,11 +18349,11 @@
 						aboveParent: e,
 						dropdown: !0,
 						onSetPositionUpdater: this.setSuggestionDropdownPositionUpdater
-					}, t.entityText.startsWith(f.f) && c.a.createElement(ii, {
+					}, t.entityText.startsWith(f.f) && c.a.createElement(Qr, {
 						onDropdownApi: this.setSuggestionDropdownApi,
 						onSelect: this.onInternalSuggestionSelected,
 						substring: t.internalName
-					}), f.a.test(t.entityText) && c.a.createElement(di, {
+					}), f.a.test(t.entityText) && c.a.createElement($r, {
 						onDropdownApi: this.setSuggestionDropdownApi,
 						onSelect: this.onInternalSuggestionSelected,
 						substring: t.internalName
@@ -18715,7 +18391,7 @@
 						editorState: P,
 						mediaToInsert: M,
 						confirmModalOpen: N
-					} = this.state, R = this.props.readOnly || !!M, L = _(P), A = this.isEmpty(), D = !(!t || !Object.keys(t).length), F = (u || d) && D, B = b || h, U = S({
+					} = this.state, R = this.props.readOnly || !!M, L = _(P), A = this.isEmpty(), F = !(!t || !Object.keys(t).length), D = (u || d) && F, B = b || h, U = S({
 						allowMediaUploads: r,
 						destSubreddit: a,
 						editorKey: k,
@@ -18725,37 +18401,37 @@
 						onFilesSelect: this.onFilesSelect,
 						trackOnClick: this.props.trackToolbarClick,
 						readOnly: R,
-						onEmoteButtonClick: F ? this.onToolbarEmoteButtonClick : void 0,
+						onEmoteButtonClick: D ? this.onToolbarEmoteButtonClick : void 0,
 						onGifButtonClick: B ? this.onToolbarGifButtonClick : void 0,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
 						onMarkdownButtonClick: this.onToolbarMarkdownSwitchClick,
 						userCanUseGifs: !!n
 					}), K = !f && (!v || x);
-					return c.a.createElement(ja, {
+					return c.a.createElement(ma, {
 						className: e,
 						innerRef: this.setContainerRef
 					}, v && c.a.createElement("div", {
-						className: ga.a.userIcon
-					}, c.a.createElement(wa, null)), c.a.createElement(Oa, {
+						className: ia.a.userIcon
+					}, c.a.createElement(ha, null)), c.a.createElement(pa, {
 						className: Object(m.a)(p, {
-							[ga.a.showSubmitButton]: O,
-							[ga.a.mExpanded]: x,
-							[ga.a.mRedesign]: v
+							[ia.a.showSubmitButton]: O,
+							[ia.a.mExpanded]: x,
+							[ia.a.mRedesign]: v
 						}),
 						noBorder: this.props.noBorder,
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
-					}, K && "top" === w && U, I && c.a.createElement(ws, {
+					}, K && "top" === w && U, I && c.a.createElement(hs, {
 						editorState: P,
 						readOnly: R,
 						onChange: this.onChange,
 						onSetApi: this.setTableToolbarControllerApi,
 						rteDomRef: I
 					}), c.a.createElement("div", {
-						className: Object(m.a)(ga.a.editorWrapper, {
-							[ga.a.hasInitialHeight]: !!this.props.initialHeight,
-							[ga.a.hasInitialMinHeight]: !!this.props.initialMinHeight,
-							[ga.a.noBorder]: !!this.props.noBorder
+						className: Object(m.a)(ia.a.editorWrapper, {
+							[ia.a.hasInitialHeight]: !!this.props.initialHeight,
+							[ia.a.hasInitialMinHeight]: !!this.props.initialMinHeight,
+							[ia.a.noBorder]: !!this.props.noBorder
 						}),
 						style: {
 							"--rte-initial-height": this.props.initialHeight ? "".concat(this.props.initialHeight, "px") : void 0,
@@ -18769,15 +18445,15 @@
 						onMouseUp: this.handleOnMouseUp
 					}, c.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: "\n                .".concat(ua.b, "[").concat(ua.d, '="').concat(L, "-0-0\"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '").concat(E, "';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              ")
+							__html: "\n                .".concat(ea.b, "[").concat(ea.d, '="').concat(L, "-0-0\"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '").concat(E, "';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              ")
 						}
-					}), c.a.createElement(No, {
+					}), c.a.createElement(Eo, {
 						allowMediaUploads: r && !R,
 						onBlockMove: this.onBlockMove,
 						onFilesDrop: this.onFilesDrop,
 						editorState: P,
 						onChange: this.onChange
-					}, c.a.createElement(Ts.Provider, {
+					}, c.a.createElement(xs.Provider, {
 						value: this.entityElementRegistry
 					}, c.a.createElement(s.Editor, {
 						readOnly: R,
@@ -18801,19 +18477,19 @@
 						onEscape: this.handleEscape,
 						spellCheck: !0,
 						handleReturn: this.handleReturn,
-						customStyleMap: Pr()
-					})))), K && "bottom" === w && U, c.a.createElement(gr, {
+						customStyleMap: vr()
+					})))), K && "bottom" === w && U, c.a.createElement(ir, {
 						editorState: P,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange
-					}), F && !!a && l === Be.a.Comment && c.a.createElement(Ds, {
+					}), D && !!a && l === Be.a.Comment && c.a.createElement(Ss, {
 						editorState: P,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: a,
 						shouldHideAddEmote: !u
-					}), B && a && c.a.createElement(co, {
+					}), B && a && c.a.createElement(Ys, {
 						editorState: P,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
@@ -18823,15 +18499,15 @@
 						"aria-label": o.fbt._("submit", null, {
 							hk: "12XoZ8"
 						}),
-						className: Object(m.a)(j, ga.a.insetSubmitButton, {
-							[ga.a.emptyContent]: A,
-							[ga.a.focusedContent]: this.isFocused()
+						className: Object(m.a)(j, ia.a.insetSubmitButton, {
+							[ia.a.emptyContent]: A,
+							[ia.a.focusedContent]: this.isFocused()
 						}),
 						disabled: A,
 						onClick: C,
 						tabIndex: -1,
 						type: "submit"
-					}, c.a.createElement(ma.a, null))), N && c.a.createElement(T.a, {
+					}, c.a.createElement(na.a, null))), N && c.a.createElement(T.a, {
 						toggleModal: this.toggleConfirmModal,
 						onConfirm: this.handleSwitchToMarkdownMode,
 						actionText: o.fbt._("Continue", null, {
@@ -18850,7 +18526,7 @@
 					}))
 				}
 			}
-			t.a = _a(Object(qr.b)(e => c.a.createElement(ka, xa({
+			t.a = fa(Object(Lr.b)(e => c.a.createElement(ga, aa({
 				key: e.rteState.editorKey
 			}, e))))
 		},
@@ -20200,8 +19876,8 @@
 			}
 			const L = e => e.placeholderImage || Object(P.a)(e).placeholderImage,
 				A = e => e.placeholderImage ? "cover" : Object(P.a)(e).placeholderImagePosition,
-				D = c.a.span("LinkText", N.a),
-				F = e => {
+				F = c.a.span("LinkText", N.a),
+				D = e => {
 					let {
 						className: t,
 						onClick: n,
@@ -20234,11 +19910,11 @@
 							backgroundImage: "url(".concat(e.src, ")"),
 							borderColor: e.isOutbound ? Object(P.a)(e).button : Object(P.a)(e).line
 						}
-					}, e.isOutbound && r.a.createElement(F, {
+					}, e.isOutbound && r.a.createElement(D, {
 						className: e.linkIconClassName
 					}, r.a.createElement(k.a, {
 						className: Object(i.a)(N.a.outboundLinkIcon, e.outboundLinkIconClassName)
-					}), e.text && r.a.createElement(D, {
+					}), e.text && r.a.createElement(F, {
 						className: e.linkTextClassName
 					}, e.text)), r.a.createElement(B, {
 						alt: e.alt,
@@ -20262,11 +19938,11 @@
 							[N.a.hasType]: e.type && !e.isOutbound
 						}),
 						type: e.isMeta || e.isPoll ? "meta" : e.type
-					}), e.isOutbound && r.a.createElement(F, {
+					}), e.isOutbound && r.a.createElement(D, {
 						className: e.linkIconClassName
 					}, r.a.createElement(k.a, {
 						className: Object(i.a)(N.a.outboundLinkIcon, e.outboundLinkIconClassName)
-					}), e.text && r.a.createElement(D, {
+					}), e.text && r.a.createElement(F, {
 						className: e.linkTextClassName
 					}, e.text)))
 				},
@@ -20593,49 +20269,8 @@
 				o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
 				i = n.n(r),
-				a = n("./src/lib/classNames/index.ts");
-			var c = e => i.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 320 320",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, i.a.createElement("g", {
-					fill: "inherit"
-				}, i.a.createElement("path", {
-					d: "m124.91 237.79c-53.47 32.9-28.3 109.77-9.81 76.9"
-				}), i.a.createElement("path", {
-					d: "m115.13 314.7a9.86 9.86 0 0 1 -1.44 3l-.85 1.22c-.34.4-.68.85-1.09 1.28a11.46 11.46 0 0 1 -3 2.34 7.26 7.26 0 0 1 -4.16.82 8.13 8.13 0 0 1 -3.86-1.63 14 14 0 0 1 -2.64-2.62 26.58 26.58 0 0 1 -1.7-2.45c-3.11-5.09-4.59-11.37-5.16-17.65a66.18 66.18 0 0 1 6.12-33.55 69 69 0 0 1 3.7-6.66 68.22 68.22 0 0 1 4.3-5.93 62.51 62.51 0 0 1 9.65-9.4 61.54 61.54 0 0 1 9.62-6.13c-2.15 2.3-5.35 5.36-8.11 8.41s-5.19 6-6.61 7.42a56.91 56.91 0 0 0 -7.33 9.28 58.25 58.25 0 0 0 -5 10 60.67 60.67 0 0 0 -4 20 53 53 0 0 0 2.33 17.65 28.76 28.76 0 0 0 3.32 7.14c1.39 2 3.15 3.76 5.17 4.28a5.79 5.79 0 0 0 3.36-.19 11.09 11.09 0 0 0 3.45-2.14 29.87 29.87 0 0 0 3.93-4.49z"
-				}), i.a.createElement("path", {
-					d: "m194.69 240.89c45.74 25.85 23.37 107.54 4.1 73.8"
-				}), i.a.createElement("path", {
-					d: "m198.81 314.67a17 17 0 0 1 2 2.41 16.1 16.1 0 0 0 4.54 4.16 6.1 6.1 0 0 0 3.23.79 5.88 5.88 0 0 0 3-1.15 12.67 12.67 0 0 0 3.58-4.37c2.39-4.65 3.64-10.3 4.24-16a71.58 71.58 0 0 0 -.3-17 66.16 66.16 0 0 0 -9-25.89 54.68 54.68 0 0 0 -15.7-16.28 30.16 30.16 0 0 1 10.19 5 29.29 29.29 0 0 1 7.11 7.13 68.35 68.35 0 0 1 8.62 21.25 81.56 81.56 0 0 1 2 19.91 58.88 58.88 0 0 1 -2.83 17.4 27.36 27.36 0 0 1 -3.67 7.28 13.8 13.8 0 0 1 -2.85 2.86 7.81 7.81 0 0 1 -3.8 1.51 6.82 6.82 0 0 1 -4.21-1 11.92 11.92 0 0 1 -3.25-3 24.69 24.69 0 0 1 -2.9-5.01z"
-				}), i.a.createElement("path", {
-					d: "m125.46 236.86c32.07-45.32 77.78-13.73 79.92 56.7-.5 46.56-23 35.27-51.14 35.27s-42.05 9.17-44.66-24.83c-1.5-19.46-.66-20.87 3.28-33"
-				}), i.a.createElement("path", {
-					d: "m112.89 271a23.38 23.38 0 0 1 -.68 2.76c-.41 1.47-1 3.44-1.61 5.81a38.08 38.08 0 0 0 -1.14 8.22c-.12 3.08.07 6.43.29 9.9.51 6.92 1 14.41 3.16 20.71a16.43 16.43 0 0 0 4.9 7.54 13.56 13.56 0 0 0 6.7 2.65 56.37 56.37 0 0 0 11.6-.1c4-.32 8-.71 12.18-.92a124.9 124.9 0 0 1 12.55-.09c4.2.16 8.4.49 12.56.7 2.08.1 4.15.18 6.2.15a40.17 40.17 0 0 0 6.05-.44 22.51 22.51 0 0 0 5.6-1.55 14.89 14.89 0 0 0 4.6-3.17 17.38 17.38 0 0 0 3.27-4.6l.33-.64.29-.67.56-1.34c.3-.93.65-1.84.9-2.79a62.06 62.06 0 0 0 1.9-11.66 108.3 108.3 0 0 0 -.63-20.6 130.55 130.55 0 0 0 -3.86-20 94.18 94.18 0 0 0 -7.15-18.4 59.18 59.18 0 0 0 -11-15.23c-4.38-4.24-9.48-7.58-15-9a27.57 27.57 0 0 0 -16.33.49 39.21 39.21 0 0 0 -13.41 7.9 74.8 74.8 0 0 0 -9.76 10.58 61.55 61.55 0 0 1 8.78-11.74 39.25 39.25 0 0 1 14.45-9.6 31.64 31.64 0 0 1 8.59-1.83h2.12a13 13 0 0 1 2.08.09 28.29 28.29 0 0 1 3.93.63 31.93 31.93 0 0 1 11.28 5.06 50.46 50.46 0 0 1 12 12.46 74.93 74.93 0 0 1 7.89 14.59 117.86 117.86 0 0 1 7.81 30.35c.15 1.25.31 2.5.46 3.75s.22 2.49.32 3.73c.26 2.48.3 5 .43 7.41a34.56 34.56 0 0 1 0 3.67c0 1.22-.07 2.44-.16 3.64s-.14 2.41-.28 3.6-.23 2.38-.43 3.56-.34 2.36-.6 3.52-.51 2.32-.82 3.46a16.49 16.49 0 0 1 -.52 1.69c-.19.56-.36 1.12-.57 1.68a32.08 32.08 0 0 1 -1.48 3.21 19.92 19.92 0 0 1 -4.28 5.58 18.29 18.29 0 0 1 -6 3.5 37.52 37.52 0 0 1 -13.18 1.66c-4.33-.07-8.53-.42-12.65-.67s-8.17-.43-12.14-.36-7.88.29-11.73.58-7.66.61-11.47.63a34.51 34.51 0 0 1 -5.73-.4 17.16 17.16 0 0 1 -5.52-1.82 13.8 13.8 0 0 1 -4.34-3.84 19.11 19.11 0 0 1 -2.64-4.9 44.16 44.16 0 0 1 -2.39-10.24c-.44-3.22-.63-7-.81-11a93.65 93.65 0 0 1 .09-12 37.54 37.54 0 0 1 .92-5.5c.42-1.71.94-3.25 1.4-4.62.96-2.66 1.74-4.74 2.12-5.74z"
-				}), i.a.createElement("path", {
-					d: "m229 74.81c-1 .47-5.78-2.28-11.24-5.44s-11.7-6.6-15.42-7.94c-3.26-1.22-6.62-2.41-10-3.36a43 43 0 0 0 -4.93-1.07 13.89 13.89 0 0 0 -4.19-.08 3.6 3.6 0 0 0 -1.2.4c-.13.08-.17.17-.27.22s-.12.11-.14.24l-1 1.75c-.42.78-.91 1.53-1.29 2.34-.8 1.58-1.62 3.14-2.3 4.75s-1.34 3.2-2 4.78c-4.19 11.17-6.17 23.06-7.52 34.18s-2.05 21.46-3.05 29.85a36 36 0 0 1 -3.83-6.41 58 58 0 0 1 -2.89-7.72c-1.5-5.24-2.06-10.33-1.53-13a266.73 266.73 0 0 1 7.37-29.3 114.2 114.2 0 0 1 10.81-24.11l.39-.67.2-.33.09-.17.16-.2a8.58 8.58 0 0 1 1.33-1.56l.78-.69.86-.53a9.4 9.4 0 0 1 1.8-.83 15.64 15.64 0 0 1 6.86-.52 44.74 44.74 0 0 1 11.26 3.14 87 87 0 0 1 17.63 9.78c4.93 3.27 11.92 10.94 13.26 12.5z"
-				}), i.a.createElement("path", {
-					d: "m105.63 128c-43.28-20.15-74.18 36.54-30.75 61.74"
-				}), i.a.createElement("path", {
-					d: "m74.86 189.75c-.5 0-4.4-2-8.31-5.22-.94-.85-2-1.65-2.88-2.59s-1.82-1.86-2.61-2.82-1.51-1.9-2.15-2.77-1.13-1.7-1.57-2.38a32.77 32.77 0 0 1 -5-17.32 36.58 36.58 0 0 1 1.3-9.37c.22-.76.5-1.49.74-2.24l.39-1.1.47-1.07c.33-.7.62-1.42 1-2.11s.76-1.33 1.13-2a34 34 0 0 1 24.86-16.35 36.14 36.14 0 0 1 13.32.9 42.71 42.71 0 0 1 10.39 4.17c-3.08-.41-7.27-1.42-11.25-1.59a81.76 81.76 0 0 0 -9.48-.06 29.42 29.42 0 0 0 -11 2.08 30.48 30.48 0 0 0 -9.21 5.75 31.36 31.36 0 0 0 -8.27 34 38.69 38.69 0 0 0 7.82 12.76 66.35 66.35 0 0 0 5.7 5.64 36 36 0 0 0 2.84 2.34z"
-				}), i.a.createElement("path", {
-					d: "m254.61 176.52c30.45-26.89-2.76-71.55-39.71-54.67"
-				}), i.a.createElement("path", {
-					d: "m214.89 121.83a9.6 9.6 0 0 1 2.48-1.41 20.3 20.3 0 0 1 2.51-1l1.47-.51c.5-.18 1.05-.27 1.59-.42a28.32 28.32 0 0 1 3.37-.69 28.71 28.71 0 0 1 3.38-.39 46.61 46.61 0 0 1 5.63 0 34.21 34.21 0 0 1 15.32 4.6l1.79 1.09c.59.37 1.13.81 1.7 1.22a35.6 35.6 0 0 1 8.53 8.92 32.62 32.62 0 0 1 5.34 12.84 30.43 30.43 0 0 1 -.56 13.24 31.13 31.13 0 0 1 -5.33 10.68 36.88 36.88 0 0 1 -7.12 7c1.37-2.44 3.58-5.54 5.05-8.73.43-.76.7-1.59 1-2.31.16-.38.35-.73.49-1.09l.38-1c.24-.68.53-1.28.72-1.84a13.79 13.79 0 0 1 .52-1.42 26.43 26.43 0 0 0 .49-19 31.61 31.61 0 0 0 -4.13-8 35.33 35.33 0 0 0 -5.79-6.19c-.52-.45-1.08-.83-1.62-1.24a15 15 0 0 0 -1.64-1.14l-1.68-1-1.72-.88-.85-.44c-.28-.13-.58-.24-.87-.36l-1.73-.71c-.58-.21-1.17-.37-1.74-.56a17.9 17.9 0 0 0 -1.73-.5 40.08 40.08 0 0 0 -13.23-.93c-.49.06-1 .1-1.6.14l-1.76.27c-.6.09-1.23.15-1.84.26l-1.81.39c-.59.13-1.17.22-1.7.37l-1.46.41z"
-				}), i.a.createElement("path", {
-					d: "m159.25 111.23c-48.61-.37-93.95 27.23-96.18 72.22-1.87 83.41 194.24 83.41 192.37 0 0-48.33-44.72-72.22-96.19-72.22z"
-				}), i.a.createElement("path", {
-					d: "m159.25 111.23c-48.61-.37-93.95 27.23-96.18 72.22-1.87 83.41 194.24 83.41 192.37 0 0-48.33-44.72-72.22-96.19-72.22z",
-					fill: "none"
-				}), i.a.createElement("path", {
-					d: "m159.25 111.2a100.82 100.82 0 0 1 14.86.32 130.39 130.39 0 0 1 30.18 6.06 97.07 97.07 0 0 1 16.43 7.17 78.93 78.93 0 0 1 14.49 10.25 63.78 63.78 0 0 1 16.79 23.82 67.61 67.61 0 0 1 4.45 19.57c.13 1.7.15 3.4.22 5.11v3.89l-.11 1.3-.22 2.61-.42 2.6a23.2 23.2 0 0 1 -.54 2.58c-.22.85-.37 1.72-.67 2.56a49.79 49.79 0 0 1 -4.15 9.79 56.7 56.7 0 0 1 -6.2 8.74 68 68 0 0 1 -7.75 7.43 78.42 78.42 0 0 1 -8.81 6.14c-12.32 7.38-26.19 11.74-40.07 14.24a168.29 168.29 0 0 1 -41.54 2.05 148 148 0 0 1 -34.89-6.69c-11.22-3.67-22-9-31-16.58a56.52 56.52 0 0 1 -11.6-13.16 48.93 48.93 0 0 1 -6.51-16.08 50.29 50.29 0 0 1 -.46-17 66.24 66.24 0 0 1 4.18-16 70.76 70.76 0 0 1 18.09-25.69 90.75 90.75 0 0 1 24.8-15.93 101.47 101.47 0 0 1 13.06-4.78 112.2 112.2 0 0 1 12.93-3c2.12-.41 4.24-.65 6.32-1s4.15-.47 6.2-.57c4.08-.33 8.06-.33 11.91-.29a142.44 142.44 0 0 0 -24.22 3.34 117.79 117.79 0 0 0 -26.52 9.42 92.75 92.75 0 0 0 -21.58 14.9 77.13 77.13 0 0 0 -12.25 14.6 62.07 62.07 0 0 0 -9.53 25.39 45.71 45.71 0 0 0 3.46 25.86 53.67 53.67 0 0 0 16.28 19.83 87.52 87.52 0 0 0 22.14 12.14 129.68 129.68 0 0 0 23.75 6.56 160.17 160.17 0 0 0 23.78 2.47 157.94 157.94 0 0 0 45.17-5.1 113.68 113.68 0 0 0 20.3-7.54 86.22 86.22 0 0 0 9.16-5.19 73.68 73.68 0 0 0 8.22-6.24 52.36 52.36 0 0 0 12.26-15.71l.56-1.09.48-1.13c.3-.76.64-1.5.92-2.26a44.84 44.84 0 0 0 1.41-4.63 46.94 46.94 0 0 0 1.37-9.46c0-1.59.08-3.16 0-4.75s-.07-3.17-.26-4.72l-.21-2.34c-.09-.77-.23-1.54-.34-2.3s-.22-1.54-.37-2.3l-.49-2.25a58.73 58.73 0 0 0 -6.56-16.8 63.59 63.59 0 0 0 -10.77-13.72 74.79 74.79 0 0 0 -13.46-10.24 100.84 100.84 0 0 0 -16.3-7.81 122.86 122.86 0 0 0 -19-5.41 160 160 0 0 0 -27.37-2.98z"
-				}), i.a.createElement("circle", {
-					cx: "238.47",
-					cy: "80.13",
-					r: "22.93"
-				}), i.a.createElement("path", {
-					d: "m261.37 80.13a5.12 5.12 0 0 1 -.27-1.29c-.06-.34-.08-.75-.17-1.2s-.19-1-.3-1.5a23.88 23.88 0 0 0 -3.12-7.61 22.56 22.56 0 0 0 -6.59-6.71 20 20 0 0 0 -7.06-2.93 22.12 22.12 0 0 0 -19.67 5.49 21.36 21.36 0 0 0 -5.7 9 20.88 20.88 0 0 0 -.7 10.29 21.16 21.16 0 0 0 9.47 14.18 21.55 21.55 0 0 0 16.06 2.92 21.77 21.77 0 0 0 12.8-8.08 23.8 23.8 0 0 0 3.39-6.16 26 26 0 0 0 1.32-6.35 19.06 19.06 0 0 1 .12 6.81 21.83 21.83 0 0 1 -8.21 13.51 18.67 18.67 0 0 1 -5.13 2.82 24.34 24.34 0 0 1 -8.2 1.31 24.84 24.84 0 0 1 -7.83-1.26 25.86 25.86 0 0 1 -6.77-3.5 25 25 0 0 1 -5.2-5.16 23.4 23.4 0 0 1 -3.35-6.21 25 25 0 0 1 -1-3.32c-.13-.56-.18-1.12-.28-1.68l-.12-.84c0-.28 0-.56-.05-.84 0-.56 0-1.12-.07-1.68s.05-1.11.08-1.66a11.26 11.26 0 0 1 .17-1.64c.09-.54.15-1.09.26-1.62a25.58 25.58 0 0 1 2.15-6 24.56 24.56 0 0 1 5.71-7.24c.37-.34.79-.62 1.18-.93a11.19 11.19 0 0 1 1.21-.87 23.57 23.57 0 0 1 21.4-2.45 23 23 0 0 1 8.39 5.48 22 22 0 0 1 6.08 14.14c.11 1.26 0 2.29 0 2.78z"
-				}))),
+				a = n("./src/lib/classNames/index.ts"),
+				c = n("./src/reddit/icons/svgs/SnooSilhouette/index.tsx"),
 				l = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				d = n.n(l);
 			const u = "".concat(s.a.assetPath, "/img/avatar_over18_square.png"),
@@ -20650,7 +20285,7 @@
 					nsfwIconUrl: m,
 					shouldHideNSFW: h
 				} = e;
-				if (s && p(n) || !s && !n) return i.a.createElement(c, {
+				if (s && p(n) || !s && !n) return i.a.createElement(c.a, {
 					className: Object(a.a)(d.a.DefaultUserIcon, t, {
 						[d.a.mNightmode]: r
 					})
@@ -23150,7 +22785,7 @@
 				L = n.n(R);
 			const A = O.a.wrapped(j.b, "subredditIcon", L.a);
 
-			function D(e) {
+			function F(e) {
 				const {
 					highlight: t,
 					icon: n,
@@ -23174,8 +22809,8 @@
 					allowedPostTypes: i
 				}))
 			}
-			var F = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/ProfileEntryContent/index.m.less"),
-				B = n.n(F);
+			var D = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/ProfileEntryContent/index.m.less"),
+				B = n.n(D);
 
 			function U() {
 				return (U = Object.assign || function(e) {
@@ -23201,7 +22836,7 @@
 				}) : void 0, i = a.a.createElement(C.a, {
 					className: Object(c.a)(B.a.profileIcon, L.a.subredditIcon)
 				});
-				return a.a.createElement(D, U({
+				return a.a.createElement(F, U({
 					icon: i,
 					title: o,
 					secondaryText: r
@@ -23236,7 +22871,7 @@
 					primaryColor: t,
 					redditStyle: !0
 				});
-				return a.a.createElement(D, H({
+				return a.a.createElement(F, H({
 					icon: l,
 					title: i,
 					secondaryText: c
@@ -23529,11 +23164,11 @@
 				}
 				return n
 			};
-			const D = e => {
+			const F = e => {
 				e.preventDefault(), e.stopPropagation()
 			};
 
-			function F(e) {
+			function D(e) {
 				const {
 					className: t,
 					disabled: n,
@@ -23561,7 +23196,7 @@
 					value: c
 				}, l))), o.a.createElement("div", {
 					onClick: r,
-					onMouseDown: D
+					onMouseDown: F
 				}, o.a.createElement(R, {
 					disabled: n
 				})))
@@ -23728,7 +23363,7 @@
 							[K.a.mIsActive]: i,
 							[K.a.mIsInvalid]: !n
 						})
-					}, o.a.createElement(F, {
+					}, o.a.createElement(D, {
 						disabled: t,
 						isActive: this.state.isActive,
 						value: this.state.inputValue,
@@ -25677,9 +25312,9 @@
 			})), n.d(t, "x", (function() {
 				return A
 			})), n.d(t, "A", (function() {
-				return D
-			})), n.d(t, "B", (function() {
 				return F
+			})), n.d(t, "B", (function() {
+				return D
 			}));
 			var s = n("./src/reddit/models/ScheduledPost/index.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -25861,12 +25496,12 @@
 				}, r(e)), {
 					scheduledPost: i(t)
 				}),
-				D = () => e => Object.assign({
+				F = () => e => Object.assign({
 					source: "scheduled_post_composer",
 					action: "view",
 					noun: "custom_schedule_post_composer"
 				}, r(e)),
-				F = () => (e, t) => {
+				D = () => (e, t) => {
 					const n = r(e);
 					return Object.assign(Object.assign({
 						source: "post",
@@ -25913,9 +25548,9 @@
 			})), n.d(t, "d", (function() {
 				return L
 			})), n.d(t, "c", (function() {
-				return D
-			})), n.d(t, "p", (function() {
 				return F
+			})), n.d(t, "p", (function() {
+				return D
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var s = n("./src/lib/constants/index.ts"),
@@ -26300,12 +25935,12 @@
 					userSubreddit: f.userSubreddit(n),
 					adblock: f.adblock(n)
 				}),
-				D = () => e => Object.assign({
+				F = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, f.defaults(e)),
-				F = (e, t, n, o, r, i) => a => {
+				D = (e, t, n, o, r, i) => a => {
 					let c = !0;
 					if (t.type.indexOf(s.Nb.Posts) > -1) {
 						const {
@@ -27139,6 +26774,29 @@
 				points: "11.649 9.882 18.262 3.267 16.495 1.5 9.881 8.114 3.267 1.5 1.5 3.267 8.114 9.883 1.5 16.497 3.267 18.264 9.881 11.65 16.495 18.264 18.262 16.497"
 			}))
 		},
+		"./src/reddit/icons/svgs/Crosspost/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+
+			function r() {
+				return (r = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => o.a.createElement("svg", r({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), o.a.createElement("path", {
+				d: "M9.06,8.64c1.12-1.26,2.2-2.45,4.44-2.6V7.5a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74L15.18,1.7a1,1,0,0,0-1.68.74V4c-3.14.17-4.69,1.88-5.93,3.28C6.58,8.42,6,9,5,9H2a1,1,0,0,0,0,2H5C6.93,11,8,9.82,9.06,8.64Z"
+			}), o.a.createElement("path", {
+				d: "M15.18,11.76a1,1,0,0,0-1.68.74V14c-2.23-.16-3.29-1.32-4.39-2.56-.21-.24-.43-.48-.66-.72a5.63,5.63,0,0,1-1.77,1.06,13.34,13.34,0,0,1,.94,1A7.85,7.85,0,0,0,13.5,16v1.59a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74Z"
+			}))
+		},
 		"./src/reddit/icons/svgs/Dropdown/index.m.less": function(e, t, n) {
 			e.exports = {
 				dropdown: "XHbKeEqnW58ib9mTN6jnS",
@@ -27197,20 +26855,92 @@
 				icon: "_1ZVHRoTDdo57082D2GcC80"
 			}
 		},
+		"./src/reddit/icons/svgs/FormattingAlignCenter/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/svgs/FormattingAlignCenter/index.m.less"),
+				a = n.n(i);
+			t.a = e => o.a.createElement("svg", {
+				className: Object(r.a)(a.a.icon, e.className),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("g", {
+				fill: "inherit",
+				fillRule: "nonzero"
+			}, o.a.createElement("path", {
+				d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM7.42 16h5.08c.55 0 1-.45 1-1s-.45-1-1-1H7.42c-.56 0-1 .45-1 1s.44 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
+			})))
+		},
 		"./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less": function(e, t, n) {
 			e.exports = {
 				icon: "_33vXt91MK_ualpifvvw_3v"
 			}
+		},
+		"./src/reddit/icons/svgs/FormattingAlignLeft/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/svgs/FormattingAlignLeft/index.m.less"),
+				a = n.n(i);
+			t.a = e => o.a.createElement("svg", {
+				className: Object(r.a)(a.a.icon, e.className),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("g", {
+				fill: "inherit",
+				fillRule: "nonzero"
+			}, o.a.createElement("path", {
+				d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM3.5 16h5.4c.54 0 1-.45 1-1s-.46-1-1-1H3.5c-.55 0-1 .45-1 1s.45 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
+			})))
 		},
 		"./src/reddit/icons/svgs/FormattingAlignRight/index.m.less": function(e, t, n) {
 			e.exports = {
 				icon: "_34rYEsgbWk8eOQx_bs7fTV"
 			}
 		},
+		"./src/reddit/icons/svgs/FormattingAlignRight/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/svgs/FormattingAlignRight/index.m.less"),
+				a = n.n(i);
+			t.a = e => o.a.createElement("svg", {
+				className: Object(r.a)(a.a.icon, e.className),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("g", {
+				fill: "inherit",
+				fillRule: "nonzero"
+			}, o.a.createElement("path", {
+				d: "M3.5 11h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1zM11.5 16h5c.55 0 1-.45 1-1s-.45-1-1-1h-5c-.55 0-1 .45-1 1s.45 1 1 1zM3.5 6h13c.55 0 1-.45 1-1s-.45-1-1-1h-13c-.55 0-1 .45-1 1s.45 1 1 1z"
+			})))
+		},
 		"./src/reddit/icons/svgs/FormattingBlockQuotes/index.m.less": function(e, t, n) {
 			e.exports = {
 				icon: "_32TQMV98QwoweVXtMHpwr2"
 			}
+		},
+		"./src/reddit/icons/svgs/FormattingBlockQuotes/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/svgs/FormattingBlockQuotes/index.m.less"),
+				a = n.n(i);
+			t.a = e => o.a.createElement("svg", {
+				className: Object(r.a)(a.a.icon, e.className),
+				style: e.style,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("polygon", {
+				points: "8.63 4 5.36 4 2 9.8 2 16 9.2 16 9.2 9.24 6.75 9.24 8.63 4"
+			}), o.a.createElement("polygon", {
+				points: "15.56 9.24 17.39 4 14.16 4 10.8 9.8 10.8 16 18 16 18 9.24 15.56 9.24"
+			}))
 		},
 		"./src/reddit/icons/svgs/FormattingBold/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -27238,15 +26968,74 @@
 				icon: "F0bObcodUF6At5SPF9bIr"
 			}
 		},
+		"./src/reddit/icons/svgs/FormattingCodeBlock/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/svgs/FormattingCodeBlock/index.m.less"),
+				a = n.n(i);
+			t.a = e => o.a.createElement("svg", {
+				className: Object(r.a)(a.a.icon, e.className),
+				style: e.style,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("path", {
+				d: "M15,2H13a1,1,0,0,0,0,2h2a1,1,0,0,1,1,1V15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V13a1,1,0,0,0-2,0v2a3,3,0,0,0,3,3H15a3,3,0,0,0,3-3V5A3,3,0,0,0,15,2Z"
+			}), o.a.createElement("path", {
+				d: "M2.79,5a.71.71,0,0,0,.53-.2.74.74,0,0,0,.19-.54V4.08l0-.48H5.07V8.4H4.9a1,1,0,0,0-.69.18A.79.79,0,0,0,4,9.2a.79.79,0,0,0,.21.61A1,1,0,0,0,4.9,10H7.1a1,1,0,0,0,.69-.19A.79.79,0,0,0,8,9.2a.78.78,0,0,0-.21-.61A1,1,0,0,0,7.1,8.4H6.93V3.6H8.44l0,.48a1.19,1.19,0,0,0,.18.72.7.7,0,0,0,.56.2.75.75,0,0,0,.59-.2A1,1,0,0,0,10,4.14V4.08L9.93,2.9q0-.64-.18-.77A1.06,1.06,0,0,0,9.11,2H2.89a1.06,1.06,0,0,0-.63.13q-.16.13-.18.77L2,4.08v.06a.94.94,0,0,0,.19.65A.78.78,0,0,0,2.79,5Z"
+			}))
+		},
 		"./src/reddit/icons/svgs/FormattingDeleteRow/index.m.less": function(e, t, n) {
 			e.exports = {
 				icon: "_8Y1-XP7A1OOfoU_mUqKcg"
 			}
 		},
+		"./src/reddit/icons/svgs/FormattingDeleteRow/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/svgs/FormattingDeleteRow/index.m.less"),
+				a = n.n(i);
+			t.a = e => o.a.createElement("svg", {
+				className: Object(r.a)(a.a.icon, e.className),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("g", {
+				fill: "inherit",
+				fillRule: "nonzero",
+				transform: "vertical" === e.orientation ? "rotate(90, 10, 10)" : ""
+			}, o.a.createElement("path", {
+				d: "M3 3c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V3zM2 3v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2z"
+			}), o.a.createElement("path", {
+				d: "M2 15h16v1H2M2 4h16v1H2M7.17 11.4l4.24-4.23c.4-.4 1.04-.4 1.43 0 .4.4.4 1.03 0 1.42L8.6 12.82c-.4.4-1.04.4-1.43 0-.4-.4-.4-1.03 0-1.42z"
+			}), o.a.createElement("path", {
+				d: "M8.6 7.17l4.23 4.24c.4.4.4 1.04 0 1.43-.4.4-1.03.4-1.42 0L7.18 8.6c-.4-.4-.4-1.04 0-1.43.4-.4 1.03-.4 1.42 0z"
+			})))
+		},
 		"./src/reddit/icons/svgs/FormattingHeading/index.m.less": function(e, t, n) {
 			e.exports = {
 				icon: "_2C-VR7luDjfFqzNiJQEpk0"
 			}
+		},
+		"./src/reddit/icons/svgs/FormattingHeading/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/svgs/FormattingHeading/index.m.less"),
+				a = n.n(i);
+			t.a = e => o.a.createElement("svg", {
+				className: Object(r.a)(a.a.icon, e.className),
+				style: e.style,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("polygon", {
+				points: "6.57 3 6.57 5.57 10.73 5.57 10.73 17 13.82 17 13.82 5.57 18 5.57 18 3 6.57 3"
+			}), o.a.createElement("polygon", {
+				points: "2 9.65 4.68 9.65 4.68 17 6.66 17 6.66 9.65 9.35 9.65 9.35 8 2 8 2 9.65"
+			}))
 		},
 		"./src/reddit/icons/svgs/FormattingHyperlink/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -27274,6 +27063,35 @@
 			e.exports = {
 				icon: "_1PNKgIKbpvIWTVU3LO0PJQ"
 			}
+		},
+		"./src/reddit/icons/svgs/FormattingInsertRow/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/icons/svgs/FormattingInsertRow/index.m.less"),
+				a = n.n(i);
+			const c = {
+				up: "rotate(180 10 10)",
+				down: "",
+				left: "rotate(90 10 10)",
+				right: "rotate(-90 10 10)"
+			};
+			t.a = e => o.a.createElement("svg", {
+				className: Object(r.a)(a.a.icon, e.className),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("g", {
+				fill: "inherit",
+				fillRule: "nonzero",
+				transform: c[e.orientation || "down"]
+			}, o.a.createElement("path", {
+				d: "M17 17c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14zm1 0V3c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2z"
+			}), o.a.createElement("path", {
+				d: "M18 6H2V5h16M13 13H7c-.55 0-1-.45-1-1s.45-1 1-1h6c.55 0 1 .45 1 1s-.45 1-1 1z"
+			}), o.a.createElement("path", {
+				d: "M9 15V9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1z"
+			})))
 		},
 		"./src/reddit/icons/svgs/FormattingItalics/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -27530,6 +27348,143 @@
 				d: "M8,2 C8.553,2 9,2.447 9,3 L9,5 C9,5.553 8.553,6 8,6 L6,6 C5.447,6 5,5.553 5,5 L5,3 C5,2.447 5.447,2 6,2 L8,2 Z M14,2 C14.553,2 15,2.447 15,3 L15,5 C15,5.553 14.553,6 14,6 L12,6 C11.447,6 11,5.553 11,5 L11,3 C11,2.447 11.447,2 12,2 L14,2 Z M8,8 C8.553,8 9,8.447 9,9 L9,11 C9,11.553 8.553,12 8,12 L6,12 C5.447,12 5,11.553 5,11 L5,9 C5,8.447 5.447,8 6,8 L8,8 Z M14,8 C14.553,8 15,8.447 15,9 L15,11 C15,11.553 14.553,12 14,12 L12,12 C11.447,12 11,11.553 11,11 L11,9 C11,8.447 11.447,8 12,8 L14,8 Z M8,14 C8.553,14 9,14.447 9,15 L9,17 C9,17.553 8.553,18 8,18 L6,18 C5.447,18 5,17.553 5,17 L5,15 C5,14.447 5.447,14 6,14 L8,14 Z M14,14 C14.553,14 15,14.447 15,15 L15,17 C15,17.553 14.553,18 14,18 L12,18 C11.447,18 11,17.553 11,17 L11,15 C11,14.447 11.447,14 12,14 L14,14 Z"
 			})))
 		},
+		"./src/reddit/icons/svgs/Hamster1/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 53 67"
+			}, o.a.createElement("g", {
+				fill: "none",
+				fillRule: "evenodd"
+			}, o.a.createElement("path", {
+				fill: "#000",
+				d: "M36.17 15.7877c-2.1457-.6233-4.6272.5142-5.0853 2.419-.174.7268-.5168 1.0273-1.2283 1.124-1.5643.2126-2.9247.8707-4.0924 1.901-.807.7112-1.2403 1.523-1.2154 2.6702.0477 2.1067 1.0792 3.8318 2.0054 5.608.2256.432 2.0283-.631 1.111-.082-.616-1.9145-1.1994-3.6348-1.7152-5.3744-.2127-.72.0527-1.406.7364-1.754 1.2204-.6195 2.4954-1.1375 3.7456-1.702.5923-.2676.93-.057 1.27.465.821 1.2544 1.9995 2.04 3.5757 1.8642 1.6357-.1817 2.555-1.264 3.054-2.7215.6707-1.956-.2665-3.8677-2.1616-4.4176"
+			}), o.a.createElement("path", {
+				fill: "#FF8717",
+				d: "M32.575 18.997c-.1866-1.1486.5913-2.0766 1.949-2.3235 1.4877-.2722 2.729.4466 2.9796 1.7235.2642 1.345-.7003 2.9457-1.9175 3.1832-1.341.2627-2.7447-.9416-3.011-2.5832"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M17.0857 23.965c-2.5846-.806-4.1367.6-4.4678 3.2556-.3653 2.9378.675 6.234 3.5116 7.1787 2.9598.9843 5.8344-1.5318 6.3822-4.5023.4535-2.4616-3.5227-5.3826-5.426-5.932-3.1034-.9685 1.507.4345 0 0M39.321 24.512c-2.184-2.2814-6.028.2842-7.4777 2.256-.521.7074-.9206 1.5057-1.1896 2.3475-.35 1.0897.269.94.3743 1.8643.1922 1.6742 2.1314 3.3578 3.7206 3.5912 4.7354.694 7.7125-6.7713 4.3803-10.2603.1294.1364.259.2717.3894.408-.0658-.0692-.1315-.1384-.1973-.2066-1.9745-2.0624.696.7283 0 0M18.9308 59.6326c-.1867-.0458-.3346.0093-.443.1056-.001 0-.001-.001-.002-.001-1.5598.099-3.8566.7662-4.6848 2.1695-.8887 1.507.7358 2.5096 2.148 2.674 1.553.1813 3.8715-.3148 4.4405-1.8975.439-1.2193-.0328-2.7012-1.4587-3.0506M34.37 60.348c-.242-.0358-.5174.043-.6267.2957-1.5118 3.4664 6.185 5.586 7.6074 2.4245 1.3572-3.016-4.6648-4.4187-6.9808-2.7203"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M39.9895 37.3797c-3.8707-9.353-16.7772-11.6802-23.5762-4.7352-3.177 3.245-4.373 8.2466-4.83 9.7576-1.4357 4.748-1.561 10.198.7932 14.6874 3.987 7.605 16.61 9.4605 23.792 5.505 9.1842-5.058 6.6638-18.3606 3.437-26.1424.2377.5734.4746 1.1468.7124 1.7202-.1096-.2645-.219-.528-.3285-.7925-2.1562-5.211 1.182 2.856 0 0"
+			}), o.a.createElement("path", {
+				fill: "#FF8717",
+				d: "M26.4406 29.6162c3.5285 0 8.4696 2.1882 10.6613 4.9576 2.5828 3.2633 3.7284 8.3103 4.3175 12.3626.4945 3.4113-.4807 8.203-2.2755 11.186-2.1327 3.5455-6.732 4.5153-10.5422 4.4935-4.6918-.026-10.162-.5288-13.2412-4.577-2.77-3.643-3.234-8.4117-2.506-12.8188.401-2.4216 1.0284-5.207 1.9967-7.4706 2.105-4.9197 5.7597-8.1334 11.5893-8.1334"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M41.5915 49.6162c.03-.6952.008-1.3605-.044-2l.044 2zM37.4186 60.1975c-1.3365-.7743-2.342-2.1664-2.536-3.716-.0665-.533-.0396-1.074-.0128-1.61.0477-.9814.1004-1.9818.458-2.8933.4095-1.0428 1.1846-1.8868 1.9427-2.7034.46-.4967.9212-.9934 1.3823-1.49.7273-.7844 1.6783-1.6223 2.688-1.475-.4125-2.465-1.0336-5.1514-2.0422-7.567-1.0493 2.024-3.0208 3.9137-5.4086 2.871-.5147-.2242-.8774-.3756-1.3395-.7027-.8615-.7398-1.9138-.9498-3.157-.6288-.2702.3008-.5265.6128-.769.9368-.5157.521-1.1567.9812-1.9347.7632-1.7777-.5007-2.97-2.9346-5.1046-1.4002-.8675.624-1.9396 1.5637-3.0953 1.5082-2.0044-.096-3.3925-1.0983-4.2153-2.752-.776 2.0393-1.2024 4.4066-1.5432 6.479-.0407.2524-.0636.5098-.0974.7652.6232-.0353 1.2462-.013 1.8206.219.6776.2727 1.2182.8037 1.74 1.3225.8435.8388 1.708 1.706 2.187 2.8033.4382 1.0014.5227 2.123.5366 3.2183.015 1.0882-.0338 2.1754-.145 3.2566-.1313 1.284-.475 2.7296-1.571 3.3606 3.1707 2.359 7.553 2.7054 11.4153 2.7266 3.2216.0182 6.9976-.6774 9.4033-3.0224-.2027-.0868-.4104-.1585-.6022-.2695"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M19.3634 62.297c-.4735.8925-1.877 1.0785-2.832 1.1074-.5274.0154-1.058-.045-1.5395-.25-.894-.3822-.2403-1.1526.2322-1.5266.884-.7018 2.083-1.0513 3.2383-1.1217.114-.0072.2012-.0478.2752-.0993.846.2655.982 1.2193.6257 1.8904M39.1353 63.7074c-.7183.2857-1.607.0788-2.318-.0972-1.225-.3028-2.4647-1.2617-2.3147-2.656.0894-.0388.1756-.0948.2438-.1942 1.16-1.6788 4.4677-.7897 5.5096.6697.7194 1.008-.38 1.984-1.1207 2.2777"
+			}), o.a.createElement("path", {
+				fill: "#C18D42",
+				d: "M17.2218 28.842c-.2698-1.599-.862-3.239-2.209-4.0722-1.519-.9397-1.5314 2.7022-1.4284 3.646.1773 1.6212.7036 4.1546 2.031 4.9962 1.0735.6814 1.7476-.4387 1.9068-1.9332.105-.9777-.1392-1.678-.3004-2.6368-.3327-1.9776.2232 1.3268 0 0"
+			}), o.a.createElement("path", {
+				fill: "#FF8717",
+				d: "M15.5475 24.681c1.747.664 2.8352 2.0178 3.3196 3.9672.3962 1.5937.7234 3.6126-.1366 4.959 1.6953.081 3.8534-.3464 3.6123-2.602 1.339-1.9475-4.229-7.018-6.7952-6.3243M33.6698 32.7516c-.407-.451.364.404 0 0"
+			}), o.a.createElement("path", {
+				fill: "#C18D42",
+				d: "M35.796 29.1142c-.1635.7146-.323 1.4594-.211 2.192.178 1.1545.9577 1.6425 1.872 1.0695 1.2238-.7655 1.577-2.3845 1.9186-3.693.1864-.7164.529-3.6248-.9526-2.9716-1.4423.6354-2.308 2.0174-2.627 3.4032-.238 1.0394.3698-1.6104 0 0"
+			}), o.a.createElement("path", {
+				fill: "#FF8717",
+				d: "M35.3533 32.5596c-1.0047-1.2304-.5965-3.2887-.0174-4.64.6404-1.496 1.6748-2.6295 3.2115-3.037-.0695-.041-.136-.083-.2138-.114-1.9296-.775-4.9295 1.584-5.8667 3.0262-.6885 1.0606-2.0135 2.6206.8063 4.2594.7018.4085 1.3024.687 2.08.5054"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M32.8514 39.097c-.577.676-1.6076.6748-2.4273.0963-1.264-.8917-1.1062-3.3024.122-4.234.7017-.532 1.6705-.4205 2.1302.1645 1.53 1.946.6833 3.3772.1752 3.973"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M30.755 38.0938c-.2703-.432-.2692-1.2056-.039-1.8203.3575-.9478 1.322-.8296 1.6942.092.213.5263.1684 1.252-.0664 1.597-.7778 1.1484-1.3505.512-1.5888.1313"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M24.71 39.009c-.6662.8048-2.161.7863-3.1096.0826-1.5367-1.1425-1.2565-2.9377-.0257-3.8424.9816-.721 1.9472-.897 2.8605-.1542 1.636 1.3315 1.2372 2.751.2748 3.914"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M21.79 38.1136c-.322-.4-.3135-1.296-.0326-1.8656.4566-.922 1.1752-.7538 1.537-.016.2884.589.359 1.1686.0612 1.7166-.5324.982-1.0995.7425-1.5656.165"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M24.5598 40.2202c.8506 1.8878 3.3605 1.9104 3.9825-.235.0587-.206-.3954-.314-.471-.3215-1.1-.0954-2.188-.0502-3.278.1646-.637.1256.158.5627.459.5024.9212-.182 1.8433-.2474 2.7733-.167-.157-.1068-.314-.2136-.471-.3216-.14.4862-.3785.834-.7293 1.098-.5525.4157-1.0443-.1445-1.3017-.716-.147-.3266-1.094-.2915-.9638-.0038"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M22.5907 41.495c1.505 1.488 4.0743 1.4078 5.0584-.571-.3263-.06-.6527-.121-.98-.182-.2436 2.3982 3.9335 2.359 4.8708.653.1018-.186-.8275-.4596-.9802-.1822-.556 1.1467-1.526 1.0504-2.9105-.2888.029-.284-.8573-.428-.98-.182-.497 1.0008-1.7188 2.179-3.194.7215-.1837-.182-1.14-.221-.8843.0315M19.5653 46.516c-.473 6.7128 8.6924 4.2055 5.1774-.548-.6672-.903-.7844.151-.5202.7218.5274 1.1447.4853 2.1653-.5644 2.844-1.2192.7874-2.6945.0107-2.9834-1.216-.112-.5384-.144-1.082-.0936-1.6312.0237-.3453-.993-.4877-1.0157-.1705M29.6923 44.8475c-1.689 1.2247-1.5924 4.6386.8496 4.7633 1.13.0575 2.2874-.3435 3.0557-1.1673.3415-.3653 1.5518-2.4732.5793-2.709-1.2043-.293-1.2043 3.92-3.9756 3.001-.9725-.3227-.5812-1.1573-.5253-1.9048.0163-.218 1.4523-3.0258.0163-1.9832"
+			})))
+		},
+		"./src/reddit/icons/svgs/Hamster2/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 53 67"
+			}, o.a.createElement("g", {
+				fill: "none",
+				fillRule: "evenodd"
+			}, o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M9.5927 33.2517c.829 1.0475-1.9245 5.7044-2.2983 5.6247-7.91-1.6942-2.065-11.142 2.2983-5.6247z"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M7.2853 38.8738c-7.8952-1.69-2.0557-11.1393 2.297-5.625.8272 1.047-.4264.8297-.9997.3446-1.1508-.97-2.3416-1.2604-3.462-.3077-1.3005 1.107-.879 3.0184.443 3.748.585.3038 1.202.5194 1.8517.6446.4058.0876.243 1.275-.13 1.1955"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M50.0333 34.034c-.1167 1.5037-.772 2.978-1.8564 3.877-.4812.3997-3.1335 1.7-3.25.3792-.1457-1.6356-1.7525-4.3107-.3047-6.062 1.7012-2.06 5.6625-1.444 5.411 1.8057z"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M38.8415 2.2205c-2.7586-.8015-5.949.661-6.538 3.11-.2237.9345-.6645 1.321-1.5794 1.4452-2.011.2734-3.7602 1.1195-5.2615 2.444-1.0375.9146-1.5946 1.9584-1.5627 3.4333.0614 2.7088 1.3876 4.9268 2.5785 7.2106.29.5554 2.6078-.8114 1.4285-.1056-.7922-2.4615-1.5422-4.6733-2.2054-6.91-.2734-.9256.0677-1.8078.9468-2.2552 1.569-.7964 3.2084-1.4625 4.8157-2.188.7615-.3443 1.196-.0734 1.633.5976 1.0553 1.6128 2.5707 2.623 4.597 2.397 2.1033-.2337 3.2852-1.6254 3.9266-3.4992.8624-2.515-.3425-4.9727-2.779-5.6797"
+			}), o.a.createElement("path", {
+				fill: "#FF8717",
+				d: "M33.9315 6.857c-.224-1.3784.7095-2.492 2.3388-2.7883 1.7852-.3266 3.275.536 3.5755 2.0682.317 1.614-.8404 3.5347-2.301 3.8197-1.6092.3153-3.2938-1.13-3.6133-3.0997"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M14.7982 12.4437c-3.36-1.0258-5.3778.7637-5.8082 4.1436-.4748 3.739.8778 7.9344 4.5652 9.1366 3.8478 1.2526 7.5847-1.9496 8.297-5.7303.5894-3.133-4.5797-6.8506-7.054-7.55-4.0343-1.2325 1.959.5532 0 0M43.3042 13.0588c-2.8393-2.6964-7.8367.3357-9.7212 2.666-.6773.836-1.1967 1.7795-1.5465 2.7743-.455 1.288.3498 1.111.4866 2.2034.25 1.9786 2.771 3.9682 4.837 4.244 6.156.8204 10.0262-8.0023 5.6943-12.1256.1683.161.3367.321.5063.482-.0855-.0817-.171-.1634-.2564-.244-2.567-2.4376.9047.8605 0 0M16.2644 58.021c-.2208-.059-.3958.012-.5237.136-.0012 0-.0012-.0012-.0024-.0012-1.8447.1275-4.5607.9865-5.54 2.7936-1.051 1.9405.87 3.2314 2.5398 3.4432 1.8366.2334 4.5785-.4055 5.2513-2.4435.519-1.57-.0387-3.478-1.725-3.928M35.8236 58.9218c-.272-.045-.582.0543-.705.3726-1.7005 4.3674 6.9575 7.0378 8.5576 3.0546 1.5267-3.7998-5.2473-5.567-7.8526-3.4272"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M43.621 29.1977c-4.9592-11.951-21.4957-14.9246-30.207-6.0505-4.0707 4.1463-5.603 10.5374-6.1882 12.468-1.8397 6.067-2.0003 13.0306 1.016 18.767 5.1085 9.718 21.2816 12.0886 30.4837 7.0343 11.767-6.463 8.538-23.4607 4.4034-33.4042.3046.7327.608 1.4654.9127 2.198-.1402-.338-.2804-.6746-.4207-1.0126-2.7626-6.6584 1.5146 3.6495 0 0"
+			}), o.a.createElement("path", {
+				fill: "#FF8717",
+				d: "M25.8506 19.7317c4.5594 0 10.944 2.8204 13.7762 6.3902 3.3375 4.2063 4.8178 10.7118 5.579 15.935.639 4.3973-.6212 10.5736-2.9403 14.4188-2.7558 4.57-8.6988 5.8202-13.6222 5.792-6.0627-.0332-13.131-.6814-17.1098-5.8996-3.5793-4.6956-4.179-10.8425-3.2382-16.523.518-3.1216 1.329-6.7118 2.58-9.6297 2.7202-6.3415 7.4425-10.4838 14.9753-10.4838"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M45.9425 45c.03-.6952.008-1.3605-.044-2l.044 2zM39.8434 58.144c-1.7227-.9698-3.0188-2.7136-3.2686-4.6547-.0858-.6677-.0512-1.3455-.0166-2.017.0615-1.2292.1293-2.4824.5904-3.6243.5277-1.3063 1.5267-2.3634 2.504-3.3865.593-.622 1.1872-1.2443 1.7815-1.8665.9376-.9825 2.1633-2.032 3.4645-1.8475-.5315-3.088-1.332-6.453-2.632-9.4792-1.3524 2.5355-3.8935 4.9027-6.971 3.5964-.6636-.2807-1.131-.4704-1.7266-.88-1.1105-.927-2.467-1.19-4.069-.788-.3485.377-.679.7677-.9914 1.1736-.6647.6525-1.4908 1.2292-2.4937.956-2.2913-.6272-3.8283-3.676-6.5793-1.754-1.1182.7816-2.5 1.959-3.9896 1.8893-2.5832-.12-4.3725-1.3758-5.433-3.4472-1.0002 2.5544-1.5497 5.5198-1.989 8.116-.0525.316-.082.6386-.1255.9585.803-.0443 1.606-.0165 2.3464.2743.8734.3415 1.57 1.0066 2.2425 1.6566 1.0874 1.0508 2.2016 2.137 2.819 3.5116.5648 1.2545.6737 2.6594.6916 4.0315.0193 1.3633-.0435 2.7252-.187 4.0796-.169 1.6085-.612 3.4193-2.0248 4.2097 4.087 2.9553 9.735 3.389 14.7134 3.4156 4.1523.0226 9.0192-.8486 12.12-3.7862-.2614-.1088-.529-.1986-.7762-.3377"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M16.6775 61.5205c-.5682 1.19-2.2523 1.438-3.3982 1.4765-.633.0205-1.2697-.0602-1.8475-.3336-1.0727-.5094-.2883-1.5367.2787-2.0352 1.0607-.9357 2.4997-1.4018 3.886-1.4957.137-.0097.2414-.064.3303-.1325 1.015.354 1.1784 1.6258.7507 2.5205M41.3178 62.8585c-.838.2857-1.875.079-2.7043-.097-1.429-.303-2.8756-1.2618-2.7005-2.656.1043-.039.2048-.095.2843-.1944 1.3534-1.6787 5.2124-.7896 6.428.6698.8393 1.008-.4433 1.984-1.3075 2.2777"
+			}), o.a.createElement("path", {
+				fill: "#C18D42",
+				d: "M14.4914 18.1648c-.3373-1.9542-1.0774-3.9587-2.7615-4.977-1.8987-1.1487-1.9142 3.3025-1.7855 4.4562.2217 1.9814.8796 5.0777 2.5387 6.1064 1.342.8328 2.1846-.5362 2.3836-2.363.131-1.1948-.174-2.0508-.3754-3.2226-.416-2.417.279 1.6217 0 0"
+			}), o.a.createElement("path", {
+				fill: "#FF8717",
+				d: "M11.8985 13.079c1.9966.812 3.2402 2.4664 3.7938 4.849.4527 1.9478.8267 4.4154-.1562 6.061 1.9376.099 4.404-.4234 4.1285-3.1804 1.5303-2.38-4.8333-8.5774-7.766-7.7295M35.0207 23.1353c-.407-.451.364.404 0 0"
+			}), o.a.createElement("path", {
+				fill: "#C18D42",
+				d: "M38.2093 19.4974c-.2045.9188-.4038 1.8764-.264 2.8182.2225 1.4844 1.197 2.112 2.34 1.3752 1.5298-.9843 1.9712-3.066 2.3983-4.748.233-.9213.6613-4.6607-1.1908-3.8208-1.803.8168-2.885 2.5937-3.2835 4.3754-.2977 1.3363.462-2.0706 0 0"
+			}), o.a.createElement("path", {
+				fill: "#FF8717",
+				d: "M37.7916 23.9292c-1.2917-1.538-.767-4.111-.0223-5.8.8235-1.87 2.1534-3.287 4.1292-3.7963-.0894-.0513-.175-.1037-.275-.1424-2.481-.9687-6.3378 1.98-7.5428 3.7826-.8853 1.3257-2.5888 3.2757 1.0366 5.3243.9024.5106 1.6746.859 2.6743.6317"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M34.0283 31.3767c-.721.8113-2.0094.81-3.034.1158-1.58-1.07-1.383-3.963.1523-5.081.877-.6384 2.088-.5045 2.6627.1976 1.9127 2.3352.854 4.0527.219 4.7677"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M31.106 29.4776c-.2703-.432-.2692-1.2056-.039-1.8204.3574-.9477 1.322-.8296 1.6942.092.213.5264.1684 1.252-.0664 1.597-.7778 1.1484-1.3506.5122-1.5888.1314"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M23.8934 30.2714c-.7994.9656-2.5933.9435-3.7315.099-1.844-1.371-1.508-3.5252-.031-4.6108 1.178-.8653 2.3368-1.0765 3.4327-.185 1.9633 1.5977 1.4846 3.301.3297 4.6968"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M20.141 29.4974c-.322-.4-.3135-1.2962-.0326-1.8657.4566-.922 1.1752-.7537 1.537-.0158.2884.5886.359 1.1683.061 1.7164-.5322.982-1.0993.7424-1.5654.165"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M23.9138 33.604c1.0632 1.8878 4.2007 1.9104 4.9782-.235.0733-.206-.4943-.314-.5887-.3215-1.375-.0955-2.735-.0502-4.0976.1646-.796.1257.1975.5628.574.5025 1.1512-.1822 2.304-.2475 3.4664-.167-.196-.1068-.3923-.2136-.5886-.3216-.175.486-.4732.834-.9117 1.0977-.6905.4157-1.3054-.1445-1.627-.716-.184-.3266-1.3676-.2914-1.205-.0038"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M20.9512 35.318c1.8397 2.232 4.9797 2.112 6.1826-.8564-.399-.09-.798-.1816-1.198-.273-.2976 3.5973 4.8077 3.5387 5.9532.9794.1245-.279-1.0113-.6892-1.198-.273-.6794 1.72-1.8652 1.5755-3.5572-.4334.0354-.426-1.048-.642-1.198-.273-.6075 1.5012-2.1007 3.2685-3.9037 1.0823-.2244-.2732-1.393-.3318-1.0808.047M44.4978 32.213c1.7332-2.056 5.7836-1.429 5.5353 1.821-.115 1.5038-.7808 2.977-1.8867 3.8733-.4907.3984-3.198 1.692-3.3206.3704-.1534-1.6365 4.8643-1.0204 4.2203-4.8223-.2264-1.3343-1.284-.9385-2.1835-.974-.262-.0102-3.8398 1.4795-2.3647-.2684"
+			})))
+		},
 		"./src/reddit/icons/svgs/Help/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -27589,6 +27544,26 @@
 				fill: "inherit",
 				d: "M18.4773727,1.51993937 C19.4600354,2.50135191 20.0013751,3.80656808 20.0013751,5.19554812 C20.0013751,6.58577837 19.4600354,7.89099453 18.4773727,8.87240707 C17.9885417,9.35998782 17.1984109,9.35998782 16.7095799,8.87240707 C16.2207489,8.38357611 16.2207489,7.59094484 16.7095799,7.10461429 C17.2196644,6.59452982 17.500961,5.91691759 17.500961,5.19554812 C17.500961,4.47542886 17.2196644,3.79781663 16.7095799,3.28773215 C15.6569056,2.23755822 13.9453721,2.23755822 12.8926978,3.28773215 L8.62324066,7.55843946 C7.57181653,8.6111138 7.57181653,10.3226473 8.62324066,11.3753216 C9.11207162,11.8629024 9.11207162,12.6555336 8.62324066,13.1431144 C8.37945029,13.3869048 8.05939728,13.509425 7.73934427,13.509425 C7.41929127,13.509425 7.09923826,13.3869048 6.85544788,13.1431144 C4.82886225,11.1152785 4.82886225,7.81723232 6.85544788,5.79064668 L11.124905,1.51993937 C13.1502404,-0.505396058 16.4495368,-0.507896472 18.4773727,1.51993937 Z M11.3753215,6.8540728 C11.8641524,6.36524184 12.6542833,6.36524184 13.1431142,6.8540728 C15.1696999,8.88065844 15.1696999,12.1799549 13.1431142,14.2065405 L8.87240693,18.4772478 C7.89099439,19.4586603 6.58452801,20 5.19679818,20 C3.80781814,20 2.50135177,19.4586603 1.51993923,18.4772478 C-0.50664641,16.4506622 -0.50664641,13.1513657 1.51993923,11.1247801 C2.00877019,10.6359491 2.80015125,10.6359491 3.28773201,11.1247801 C3.77656297,11.6136111 3.77656297,12.4037419 3.28773201,12.8925729 C2.23505767,13.9452472 2.23505767,15.6567807 3.28773201,16.709455 C4.34040635,17.7621294 6.05193981,17.7621294 7.10461415,16.709455 L11.3753215,12.4387477 C12.4279958,11.3860734 12.4279958,9.67453992 11.3753215,8.62186558 C10.8864905,8.13303462 10.8864905,7.34290376 11.3753215,6.8540728 Z"
 			})))
+		},
+		"./src/reddit/icons/svgs/MarkdownMode/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 208 128"
+			}, o.a.createElement("rect", {
+				width: "198",
+				height: "118",
+				x: "5",
+				y: "5",
+				ry: "10",
+				stroke: "currentColor",
+				strokeWidth: "10",
+				fill: "none"
+			}), o.a.createElement("path", {
+				d: "M30 98v-68h20l20 25 20-25h20v68h-20v-39l-20 25-20-25v39zM155 98l-30-33h20v-35h20v35h20z"
+			}))
 		},
 		"./src/reddit/icons/svgs/Media/index.tsx": function(e, t, n) {
 			"use strict";
@@ -27853,6 +27828,247 @@
 				d: "M17.98 8.87c-.012-.093-.03-.182-.062-.27-.017-.043-.034-.085-.055-.126-.013-.026-.02-.057-.034-.082l-.07-.1c-.018-.02-.04-.03-.055-.046-.073-.083-.158-.145-.252-.204-.032-.02-.053-.055-.088-.072L3.88 1.12c-.35-.176-.764-.158-1.096.05-.332.208-.534.576-.534.973V5c0 .507.33.954.81 1.097L9 7.857H3.375c-.175 0-.347.04-.503.12L.622 9.12c-.48.243-.724.8-.582 1.325.135.5.582.84 1.085.84.027 0 .054 0 .08-.003l1.045-.075v4.65c0 .396.202.764.534.972.18.112.386.17.59.17.173 0 .346-.04.505-.12l13.483-6.85c.08-.044.134-.075.184-.113.05-.038.092-.085.136-.13.012-.013.026-.022.037-.036.092-.107.147-.21.19-.32.013-.03.02-.06.03-.09.013-.045.033-.086.042-.132.008-.046.013-.09.017-.138 0-.023-.008-.043-.008-.063 0-.017.008-.03.008-.048 0-.032-.017-.058-.02-.09z"
 			})))
 		},
+		"./src/reddit/icons/svgs/SnooPosting/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 45 43"
+			}, o.a.createElement("g", {
+				fill: "none",
+				fillRule: "evenodd"
+			}, o.a.createElement("g", {
+				fill: "#0DD3BB",
+				transform: "translate(0 4)"
+			}, o.a.createElement("ellipse", {
+				cx: "25.492",
+				cy: "22.2631",
+				transform: "rotate(5 25.492 22.263)",
+				rx: "17.6396",
+				ry: "13.9883"
+			}), o.a.createElement("ellipse", {
+				cx: "19.3519",
+				cy: "17.9699",
+				transform: "rotate(5 19.352 17.97)",
+				rx: "14.7297",
+				ry: "16.0688"
+			}), o.a.createElement("ellipse", {
+				cx: "14.0251",
+				cy: "27.7862",
+				transform: "rotate(5 14.025 27.786)",
+				rx: "8.4751",
+				ry: "8.9243"
+			}), o.a.createElement("ellipse", {
+				cx: "11.808",
+				cy: "17.4531",
+				transform: "rotate(5 11.808 17.453)",
+				rx: "10.7695",
+				ry: "10.8575"
+			}), o.a.createElement("ellipse", {
+				cx: "12.1168",
+				cy: "22.4429",
+				transform: "rotate(5 12.117 22.443)",
+				rx: "8.4751",
+				ry: "8.9243"
+			})), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M35.6875 31.5625c-1.3275 1.8696-6.7017 5.0483-8.7188 6.0313-2.0174.983-13.478 2.1465-15.625-.6876-1.5625-2.0624-.9687-4.625 1-6.1562C9.6563 29.2812 8.125 27.8437 7 24.9062c-.0872-.2277-1.1015-1.763-.875-1.7812l.9375-4.0313c.8158-2.9308 4.2118-5.1638 6.7992-6.5715 2.3198-1.2615 4.9067-1.934 7.5113-2.1714 2.1052-.192 4.259-.101 6.277.554 2.0182.6552 4.2956 1.063 5.5063 2.8765 0 0 1.5532 3.6305 1.6736 5.5487.1204 1.9177-2.0402 6.1206-2.0402 6.1206"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M31.5665 34.5708c.6293 1.944.9 4.0143.794 6.0635 0 0-.473 1.3654-6.7204 1.3654-6.2478 0-7.6077-.7104-7.6077-.7104.047-1.224.0518-2.4493.014-3.6732-.0028-.097.0414-.2356.13-.2062l-.1555-7.319 12.5354-2.0634c.4433.252.8525.5696 1.211.9412l-.2007 5.6022z"
+			}), o.a.createElement("path", {
+				fill: "#FF0",
+				d: "M34.0514 21.4676c-.3642.8707-.5738 1.8017-.8143 2.7188-.601 2.29-1.4044 4.5218-2.3967 6.658.1578.0357.3286.0014.4624-.0927.072.7567 1.0046 1.1686 1.678.8836.6734-.2846 1.071-1.0334 1.2235-1.777.0223-.1084.0407-.2198.0277-.33-.0202-.1737-.114-.3265-.1996-.477-.6817-1.2056-.9025-2.6877-.6033-4.0528.099-.4518.2715-.9186.6318-1.1878.2046-.1536.452-.2293.6975-.2872.6156-.146 1.2512-.198 1.8812-.154l.33-1.1467c.054-.1864.108-.3773.0993-.572-.0212-.4554-.393-.8263-.8058-.9727-.412-.1463-.8604-.115-1.2947-.0823"
+			}), o.a.createElement("path", {
+				fill: "#F15A24",
+				d: "M12.322 21.7194c.061.3407.127.693.3168.977.3034.4517.85.6324 1.3573.785.3797.1136.7785.2284 1.165.141.2643-.0598.5012-.2104.725-.3697.61-.433 1.1792-.9615 1.5326-1.6395.3962-.7593.4926-1.684.2625-2.5148-.0912-.3294-.2458-.6615-.524-.843-.2292-.1494-.5564-.2205-.6293-.4927-.1057-.3946-1.938-.4537-2.25-.4202-.474.051-.939.1728-1.2797.5403-.9068.9784-.8953 2.613-.676 3.8366M24.194 19.0418c.0644.3482.1334.708.3344.998.3193.462.8963.6468 1.431.8023.4005.1164.8212.234 1.2286.1447.2793-.0614.529-.2154.7647-.3776.644-.443 1.244-.983 1.617-1.6756.4174-.776.5195-1.7205.2768-2.5694-.0964-.3366-.2596-.6762-.5526-.8614-.242-.1528-.587-.2255-.664-.5037-.1117-.4033-2.0443-.464-2.3736-.4297-.4998.052-.9902.1766-1.3498.5523-.9564 1-.9442 2.67-.7126 3.9202"
+			}), o.a.createElement("path", {
+				fill: "#CCC",
+				d: "M35.9408 20.9708c.222.0064.4462.0053.6533.066.4068.1196.9188.5786.945-.1845.007-.1902.012-.3904-.0708-.56-.122-.251-.5983-.9602-.824-1.087-.1087-.061-.236-.0694-.359-.073-.3063-.0092-.613.0014-.9182.0315-.9906.0986-.7374 1.4513.01 1.725.177.0647.3693.0764.5638.082"
+			}), o.a.createElement("path", {
+				fill: "#FF7BAC",
+				d: "M37.8215 19.8532c-.0306.0467-.0694.0968-.123.099-.0946.0034-.1258-.128-.1816-.2085-.0644-.0938-.1824-.1258-.29-.1506-.4784-.112-1.163-.1415-1.5974-.3738-.4688-.251-.4095-.3117-.2434-.8975.178-.6268.4606-1.3722 1.071-1.6617 2.0532-.9728 2.1506 1.9814 1.3643 3.1932"
+			}), o.a.createElement("path", {
+				fill: "#FF0",
+				d: "M30.808 32.959c.0077.0694.0343.1556.1004.1593-.0834-.0335-.1158.1122-.095.203.429.0508.8583.1012 1.2877.152.263.0313.5674.0482.752-.151.1304-.141.16-.3512.1825-.5462.032-.274.064-.548.0964-.822.0082-.0724.0135-.1552-.0336-.2086-.034-.0388-.087-.051-.137-.0588-.219-.0327-.446-.0064-.6532.075-.6713.2642-.6634-.6747-1.1966-.4688-.4516.1747-.346 1.279-.3035 1.6663"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M31.9858 34.3613c.3538.146.738.196 1.1182.2014 2.1213.03 4.1668-1.396 5.0646-3.4086.8978-2.0117.661-4.4994-.4998-6.3584-.514-.8238-1.3235-1.5857-2.2608-1.5168-.594.0433-1.1344.429-1.4745.9404-.3405.5112-.499 1.1347-.552 1.7558-.1233 1.4442.3143 2.9324 1.1923 4.053"
+			}), o.a.createElement("path", {
+				fill: "#F7E1CB",
+				d: "M11.2195 30.4984l9.4083-2.7606 1.318 7.9058-7.4904 2.7607"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M12.7516 37.7683c.2136.2304.5864.1393.8525-.0207 1.096-.6588 1.5454-2.1516 1.337-3.4564-.108-.6758-.3805-1.3463-.877-1.792-.4966-.446-1.243-.6212-1.827-.3125-.402.212-.682.6167-.8776 1.041-.4437.9637-.5192 2.107-.206 3.1258.1683.548.462 1.0782.9255 1.388.4637.3095 1.1184.3464 1.543-.0195"
+			}), o.a.createElement("g", null, o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M27.37 11.0563c-2.068-.6386-4.2747-.727-6.4318-.54-2.669.2313-5.8933.8336-7.6967 2.1168-.6986.4972-3.0193 1.2145-3.5257 3.1977"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M10.0543 14.9054c-1.561-.3985-3.317.0782-4.4594 1.2103-1.1422 1.132-1.726 2.906-1.237 4.4356.5752 1.8004 1.926 3.0712 2.306 3.275"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M10.0543 14.9054c-1.561-.3985-3.317.0782-4.4594 1.2103-1.1422 1.132-1.7258 2.906-1.237 4.4356.5756 1.8004 1.926 3.0712 2.306 3.275"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M11.823 29.9606c-2.7657-.9024-4.92-3.4455-5.3476-6.3126-.034-.2298.0103-.55.2428-.5677M33.1486 15.4973c.192.314.384.6286.576.9427.114.1872.2283.374.33.5677.5276 1.003.7084 2.182.5062 3.2958M35.8308 16.6844c-1.6376 4.9262-3.3644 9.8235-5.1785 14.688"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M35.671 17.0804c.2263-.288.586-.4587.9517-.4895.366-.0313.736.0692 1.0563.2483.2708.1508.515.364.6543.6404.1393.276.161.6202.0118.8913M38.3983 17.8874c-.6142 1.9982-1.3304 3.9652-2.145 5.891"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M37.245 21.08c.2485-.5347.1342-1.2158-.2747-1.641-.4093-.425-1.0872-.5678-1.6347-.3436-.1367.0562-.278.1512-.301.297"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M37.2275 21.501c.0044-.5535-.3094-1.0984-.791-1.374-.482-.2753-1.113-.2705-1.5904.012"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M34.2996 20.788c.7136-.389 1.6686-.2757 2.2706.269.2052.1856.376.4304.3964.706.006.0785-.0008.1578-.0196.2345M31.8127 33.921c.3626.1424.7564.1912 1.1458.1963 2.1737.0294 4.2697-1.3607 5.1896-3.3225.92-1.961.6773-4.386-.512-6.1982-.5268-.803-1.3562-1.5457-2.3166-1.4785-.6087.0423-1.1624.4184-1.511.9168-.3488.4983-.5113 1.106-.5655 1.7115-.1264 1.4077.322 2.8584 1.2216 3.9508M33.9912 29.3915l-1.467 4.0393M32.6352 33.0774c-.951.6286-1.8904 1.2738-2.8177 1.935"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M30.6496 31.0486l-.6455 4.1743c-.0058.0366-.0053.083.0385.099.044.0162.0833-.0547.0346-.0517"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M30.1422 33.367c.1982-.3278.4635-.6147.7748-.8386.078.1534.1257.3226.139.4943.287-.1218.5986-.183.9103-.1802-.3703.3692-.701.778-.9844 1.2173"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M31.195 33.0817c-.389.5013-.7464 1.0268-1.0695 1.5725.0302-.0257.0604-.0514.0902-.0775M30.7412 32.969c.0104.3634-.12.7275-.3766 1.0607M32.6658 33.0168c.1094-.676.1787-1.3585.2074-2.0422-.326.1956-.6525.3912-.979.5872-.1045.0627-.2386.1262-.3414.06-.063-.04-.091-.1166-.1135-.1874-.133-.4158-.2417-.8396-.3253-1.2682-.291.3247-.547.6807-.7626 1.0594"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M33.4372 28.176c-.177.4906-.354.9812-.5313 1.472-.285.7874-.5726 1.5822-1.0206 2.291M36.2456 21.1264c.048-.0176.0608-.0917.0218-.1244-.3043.6815-.5497 1.3883-.732 2.1112M30.4806 30.95c-.0843.2098-.1095.43-.074.6453M32.6366 25.235c-1.3602 1.8225-3.2855 3.1704-5.3524 4.1286-2.0672.958-4.284 1.55-6.5023 2.0763M30.348 27.747c.454.2455.8732.5552 1.24.9174M31.3832 34.1252c.6447 1.895.9225 3.913.8134 5.9105"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M20.2203 27.5033c.529 2.5225.9453 5.069 1.2474 7.6282.0048.042.0063.0925-.0276.1178-.0345.0253-.095-.029-.0603-.0536"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				d: "M21.462 35.1753c-2.4317 1.1842-4.9882 2.113-7.614 2.7662-.0714.0177-.1587.031-.208-.023-.0494-.0544.038-.1667.0828-.1083",
+				strokeLinecap: "round",
+				strokeLinejoin: "round"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				d: "M13.3965 36.9094l.6482 1.51c-.01-.0428-.0207-.086-.0312-.129",
+				strokeLinecap: "round",
+				strokeLinejoin: "round"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				d: "M12.104 37.242c.219.2246.601.1358.8735-.0202 1.123-.6422 1.5835-2.0972 1.3698-3.369-.111-.659-.3898-1.3124-.8986-1.747-.5087-.4348-1.2736-.6054-1.872-.3045-.4118.2066-.6988.601-.8992 1.0147-.4546.9394-.532 2.054-.211 3.047.1723.5342.4733 1.051.9482 1.353.4753.3016 1.1462.3376 1.5813-.019M10.6766 30.3595c-.0715-.0158-.065.1064-.022.1655l.7927 1.0914c.011.0154.0276.0326.0457.0264.018-.006.0015-.0418-.01-.0268M10.6893 30.2222c3.1114-1.025 6.255-1.953 9.425-2.782.0814.1758.1628.352.2443.5274",
+				strokeLinecap: "round",
+				strokeLinejoin: "round"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				d: "M17.6433 28.0588c-.2222-.2202-.246-.6037-.5073-.7755-.2244-.148-.522-.0737-.7792.0048-1.0368.3175-2.073.6346-3.11.952-.2287.07-.4843.163-.579.382-.1275.2944.111.6096.332.843M13.849 27.877c-.025-.1897.085-.3783.2402-.4906.1554-.1123.349-.1592.5393-.1816.302-.0364.678.0275.7848.3115M17.774 36.8926c-.1595-.0286-.2392.1064-.234.201.068 1.193.0596 2.3876-.0247 3.5806M27.3276 14.627c-1.155-.254-2.4348.1776-3.1982 1.0778-.763.9005-.975 2.23-.5294 3.3214.203.498.537.9487.9825 1.252.757.5157 1.7714.556 2.64.263.9157-.3095 1.7137-.983 2.115-1.8592.401-.8763.3797-1.9464-.108-2.7783-.4875-.8312-1.447-1.3828-2.412-1.3303",
+				strokeLinecap: "round",
+				strokeLinejoin: "round"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeWidth: ".5",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M15.604 17.5287c-.993-.5754-2.3376-.3743-3.2093.371-.872.745-1.2777 1.9505-1.1753 3.0903.038.4224.1422.845.359 1.2103.4368.7372 1.309 1.1618 2.168 1.1684.8592.007 1.6937-.3673 2.346-.924.2724-.2316.518-.497.7086-.799.465-.738.5666-1.6924.2675-2.511-.2992-.8188-.993-1.485-1.8255-1.7524"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M25.8734 23.061c.019.8443.036 1.706-.2144 2.513-.3128 1.0058-1.0497 1.8733-1.9936 2.347-.9442.4738-2.0827.547-3.0803.1982"
+			}), o.a.createElement("path", {
+				fill: "#000",
+				d: "M24.826 27.045c-.909 1.0263-2.4282 1.5463-3.7262 1.098-.325-.1124-.682-.385-.5983-.7172-.305-.1123-.6554.132-.9616.024-.1132-.0405-.2045-.124-.2882-.21-.507-.519-.8602-1.1846-1.0054-1.894 1.3742.2257 2.797.237 4.147-.1035.6403-.1614 1.2614-.404 1.8365-.7284.2493-.1406 1.482-1.2717 1.6324-1.2287.3404.0972-.014 1.6884-.081 1.9398-.1798.6673-.4952 1.3003-.9554 1.82"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M24.826 27.045c-.909 1.0263-2.4282 1.5463-3.7262 1.098-.325-.1124-.682-.385-.5983-.7172-.305-.1123-.6554.132-.9616.024-.1132-.0405-.2045-.124-.2882-.21-.507-.519-.8602-1.1846-1.0054-1.894 1.3742.2257 2.797.237 4.147-.1035.6403-.1614 1.2614-.404 1.8365-.7284.2493-.1406 1.482-1.2717 1.6324-1.2287.3404.0972-.014 1.6884-.081 1.9398-.1798.6673-.4952 1.3003-.9554 1.82z"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M27.1593 11.0486c.356-.539.901-.9515 1.5182-1.148.3725-.1184.7656-.1595 1.157-.1632 1.2186-.011 2.452.3553 3.4137 1.1013.9616.7464 1.63 1.8822 1.7275 3.0925l.0405 1.2437c.0792.8083-.1735 1.644-.687 2.274-.0244.03-.0506.0716-.0296.1038.021.0323.0833-.0212.0465-.033"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M27.1593 11.0486c.356-.539.901-.9515 1.5182-1.148.3725-.1184.7656-.1595 1.157-.1632 1.2186-.011 2.452.3553 3.4137 1.1013.9616.7464 1.63 1.8822 1.7275 3.0925l.0405 1.2437c.0792.8083-.1735 1.644-.687 2.274-.0244.03-.0506.0716-.0296.1038.021.0323.0833-.0212.0465-.033M19.0092 10.923c-.1602-.079-.1772-.2954-.172-.4733.078-2.7703.1672-5.5993 1.1384-8.1964 1.835.0793 3.6632.3303 5.4515.7494"
+			}), o.a.createElement("path", {
+				fill: "#FFF",
+				d: "M24.8624 3.1944c-.9362 1.032-.8485 2.7633.0626 3.8172.9108 1.0536 2.4758 1.4224 3.826 1.0687.64-.1677 1.2505-.4896 1.6915-.981 1.0054-1.121.9137-2.9152.1555-4.215-.237-.407-.534-.784-.9052-1.075-.72-.5643-1.7132-.7643-2.597-.5235-.883.241-1.6355.917-1.9667 1.768"
+			}), o.a.createElement("path", {
+				stroke: "#000",
+				strokeLinecap: "round",
+				strokeLinejoin: "round",
+				d: "M24.8624 3.1944c-.9362 1.032-.8485 2.7633.0626 3.8172.9108 1.0536 2.4758 1.4224 3.826 1.0687.64-.1677 1.2505-.4896 1.6915-.981 1.0054-1.121.9137-2.9152.1555-4.215-.237-.407-.534-.784-.9052-1.075-.72-.5643-1.7132-.7643-2.597-.5235-.883.241-1.6355.917-1.9667 1.768"
+			}))))
+		},
+		"./src/reddit/icons/svgs/SnooSilhouette/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 320 320",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("g", {
+				fill: "inherit"
+			}, o.a.createElement("path", {
+				d: "m124.91 237.79c-53.47 32.9-28.3 109.77-9.81 76.9"
+			}), o.a.createElement("path", {
+				d: "m115.13 314.7a9.86 9.86 0 0 1 -1.44 3l-.85 1.22c-.34.4-.68.85-1.09 1.28a11.46 11.46 0 0 1 -3 2.34 7.26 7.26 0 0 1 -4.16.82 8.13 8.13 0 0 1 -3.86-1.63 14 14 0 0 1 -2.64-2.62 26.58 26.58 0 0 1 -1.7-2.45c-3.11-5.09-4.59-11.37-5.16-17.65a66.18 66.18 0 0 1 6.12-33.55 69 69 0 0 1 3.7-6.66 68.22 68.22 0 0 1 4.3-5.93 62.51 62.51 0 0 1 9.65-9.4 61.54 61.54 0 0 1 9.62-6.13c-2.15 2.3-5.35 5.36-8.11 8.41s-5.19 6-6.61 7.42a56.91 56.91 0 0 0 -7.33 9.28 58.25 58.25 0 0 0 -5 10 60.67 60.67 0 0 0 -4 20 53 53 0 0 0 2.33 17.65 28.76 28.76 0 0 0 3.32 7.14c1.39 2 3.15 3.76 5.17 4.28a5.79 5.79 0 0 0 3.36-.19 11.09 11.09 0 0 0 3.45-2.14 29.87 29.87 0 0 0 3.93-4.49z"
+			}), o.a.createElement("path", {
+				d: "m194.69 240.89c45.74 25.85 23.37 107.54 4.1 73.8"
+			}), o.a.createElement("path", {
+				d: "m198.81 314.67a17 17 0 0 1 2 2.41 16.1 16.1 0 0 0 4.54 4.16 6.1 6.1 0 0 0 3.23.79 5.88 5.88 0 0 0 3-1.15 12.67 12.67 0 0 0 3.58-4.37c2.39-4.65 3.64-10.3 4.24-16a71.58 71.58 0 0 0 -.3-17 66.16 66.16 0 0 0 -9-25.89 54.68 54.68 0 0 0 -15.7-16.28 30.16 30.16 0 0 1 10.19 5 29.29 29.29 0 0 1 7.11 7.13 68.35 68.35 0 0 1 8.62 21.25 81.56 81.56 0 0 1 2 19.91 58.88 58.88 0 0 1 -2.83 17.4 27.36 27.36 0 0 1 -3.67 7.28 13.8 13.8 0 0 1 -2.85 2.86 7.81 7.81 0 0 1 -3.8 1.51 6.82 6.82 0 0 1 -4.21-1 11.92 11.92 0 0 1 -3.25-3 24.69 24.69 0 0 1 -2.9-5.01z"
+			}), o.a.createElement("path", {
+				d: "m125.46 236.86c32.07-45.32 77.78-13.73 79.92 56.7-.5 46.56-23 35.27-51.14 35.27s-42.05 9.17-44.66-24.83c-1.5-19.46-.66-20.87 3.28-33"
+			}), o.a.createElement("path", {
+				d: "m112.89 271a23.38 23.38 0 0 1 -.68 2.76c-.41 1.47-1 3.44-1.61 5.81a38.08 38.08 0 0 0 -1.14 8.22c-.12 3.08.07 6.43.29 9.9.51 6.92 1 14.41 3.16 20.71a16.43 16.43 0 0 0 4.9 7.54 13.56 13.56 0 0 0 6.7 2.65 56.37 56.37 0 0 0 11.6-.1c4-.32 8-.71 12.18-.92a124.9 124.9 0 0 1 12.55-.09c4.2.16 8.4.49 12.56.7 2.08.1 4.15.18 6.2.15a40.17 40.17 0 0 0 6.05-.44 22.51 22.51 0 0 0 5.6-1.55 14.89 14.89 0 0 0 4.6-3.17 17.38 17.38 0 0 0 3.27-4.6l.33-.64.29-.67.56-1.34c.3-.93.65-1.84.9-2.79a62.06 62.06 0 0 0 1.9-11.66 108.3 108.3 0 0 0 -.63-20.6 130.55 130.55 0 0 0 -3.86-20 94.18 94.18 0 0 0 -7.15-18.4 59.18 59.18 0 0 0 -11-15.23c-4.38-4.24-9.48-7.58-15-9a27.57 27.57 0 0 0 -16.33.49 39.21 39.21 0 0 0 -13.41 7.9 74.8 74.8 0 0 0 -9.76 10.58 61.55 61.55 0 0 1 8.78-11.74 39.25 39.25 0 0 1 14.45-9.6 31.64 31.64 0 0 1 8.59-1.83h2.12a13 13 0 0 1 2.08.09 28.29 28.29 0 0 1 3.93.63 31.93 31.93 0 0 1 11.28 5.06 50.46 50.46 0 0 1 12 12.46 74.93 74.93 0 0 1 7.89 14.59 117.86 117.86 0 0 1 7.81 30.35c.15 1.25.31 2.5.46 3.75s.22 2.49.32 3.73c.26 2.48.3 5 .43 7.41a34.56 34.56 0 0 1 0 3.67c0 1.22-.07 2.44-.16 3.64s-.14 2.41-.28 3.6-.23 2.38-.43 3.56-.34 2.36-.6 3.52-.51 2.32-.82 3.46a16.49 16.49 0 0 1 -.52 1.69c-.19.56-.36 1.12-.57 1.68a32.08 32.08 0 0 1 -1.48 3.21 19.92 19.92 0 0 1 -4.28 5.58 18.29 18.29 0 0 1 -6 3.5 37.52 37.52 0 0 1 -13.18 1.66c-4.33-.07-8.53-.42-12.65-.67s-8.17-.43-12.14-.36-7.88.29-11.73.58-7.66.61-11.47.63a34.51 34.51 0 0 1 -5.73-.4 17.16 17.16 0 0 1 -5.52-1.82 13.8 13.8 0 0 1 -4.34-3.84 19.11 19.11 0 0 1 -2.64-4.9 44.16 44.16 0 0 1 -2.39-10.24c-.44-3.22-.63-7-.81-11a93.65 93.65 0 0 1 .09-12 37.54 37.54 0 0 1 .92-5.5c.42-1.71.94-3.25 1.4-4.62.96-2.66 1.74-4.74 2.12-5.74z"
+			}), o.a.createElement("path", {
+				d: "m229 74.81c-1 .47-5.78-2.28-11.24-5.44s-11.7-6.6-15.42-7.94c-3.26-1.22-6.62-2.41-10-3.36a43 43 0 0 0 -4.93-1.07 13.89 13.89 0 0 0 -4.19-.08 3.6 3.6 0 0 0 -1.2.4c-.13.08-.17.17-.27.22s-.12.11-.14.24l-1 1.75c-.42.78-.91 1.53-1.29 2.34-.8 1.58-1.62 3.14-2.3 4.75s-1.34 3.2-2 4.78c-4.19 11.17-6.17 23.06-7.52 34.18s-2.05 21.46-3.05 29.85a36 36 0 0 1 -3.83-6.41 58 58 0 0 1 -2.89-7.72c-1.5-5.24-2.06-10.33-1.53-13a266.73 266.73 0 0 1 7.37-29.3 114.2 114.2 0 0 1 10.81-24.11l.39-.67.2-.33.09-.17.16-.2a8.58 8.58 0 0 1 1.33-1.56l.78-.69.86-.53a9.4 9.4 0 0 1 1.8-.83 15.64 15.64 0 0 1 6.86-.52 44.74 44.74 0 0 1 11.26 3.14 87 87 0 0 1 17.63 9.78c4.93 3.27 11.92 10.94 13.26 12.5z"
+			}), o.a.createElement("path", {
+				d: "m105.63 128c-43.28-20.15-74.18 36.54-30.75 61.74"
+			}), o.a.createElement("path", {
+				d: "m74.86 189.75c-.5 0-4.4-2-8.31-5.22-.94-.85-2-1.65-2.88-2.59s-1.82-1.86-2.61-2.82-1.51-1.9-2.15-2.77-1.13-1.7-1.57-2.38a32.77 32.77 0 0 1 -5-17.32 36.58 36.58 0 0 1 1.3-9.37c.22-.76.5-1.49.74-2.24l.39-1.1.47-1.07c.33-.7.62-1.42 1-2.11s.76-1.33 1.13-2a34 34 0 0 1 24.86-16.35 36.14 36.14 0 0 1 13.32.9 42.71 42.71 0 0 1 10.39 4.17c-3.08-.41-7.27-1.42-11.25-1.59a81.76 81.76 0 0 0 -9.48-.06 29.42 29.42 0 0 0 -11 2.08 30.48 30.48 0 0 0 -9.21 5.75 31.36 31.36 0 0 0 -8.27 34 38.69 38.69 0 0 0 7.82 12.76 66.35 66.35 0 0 0 5.7 5.64 36 36 0 0 0 2.84 2.34z"
+			}), o.a.createElement("path", {
+				d: "m254.61 176.52c30.45-26.89-2.76-71.55-39.71-54.67"
+			}), o.a.createElement("path", {
+				d: "m214.89 121.83a9.6 9.6 0 0 1 2.48-1.41 20.3 20.3 0 0 1 2.51-1l1.47-.51c.5-.18 1.05-.27 1.59-.42a28.32 28.32 0 0 1 3.37-.69 28.71 28.71 0 0 1 3.38-.39 46.61 46.61 0 0 1 5.63 0 34.21 34.21 0 0 1 15.32 4.6l1.79 1.09c.59.37 1.13.81 1.7 1.22a35.6 35.6 0 0 1 8.53 8.92 32.62 32.62 0 0 1 5.34 12.84 30.43 30.43 0 0 1 -.56 13.24 31.13 31.13 0 0 1 -5.33 10.68 36.88 36.88 0 0 1 -7.12 7c1.37-2.44 3.58-5.54 5.05-8.73.43-.76.7-1.59 1-2.31.16-.38.35-.73.49-1.09l.38-1c.24-.68.53-1.28.72-1.84a13.79 13.79 0 0 1 .52-1.42 26.43 26.43 0 0 0 .49-19 31.61 31.61 0 0 0 -4.13-8 35.33 35.33 0 0 0 -5.79-6.19c-.52-.45-1.08-.83-1.62-1.24a15 15 0 0 0 -1.64-1.14l-1.68-1-1.72-.88-.85-.44c-.28-.13-.58-.24-.87-.36l-1.73-.71c-.58-.21-1.17-.37-1.74-.56a17.9 17.9 0 0 0 -1.73-.5 40.08 40.08 0 0 0 -13.23-.93c-.49.06-1 .1-1.6.14l-1.76.27c-.6.09-1.23.15-1.84.26l-1.81.39c-.59.13-1.17.22-1.7.37l-1.46.41z"
+			}), o.a.createElement("path", {
+				d: "m159.25 111.23c-48.61-.37-93.95 27.23-96.18 72.22-1.87 83.41 194.24 83.41 192.37 0 0-48.33-44.72-72.22-96.19-72.22z"
+			}), o.a.createElement("path", {
+				d: "m159.25 111.23c-48.61-.37-93.95 27.23-96.18 72.22-1.87 83.41 194.24 83.41 192.37 0 0-48.33-44.72-72.22-96.19-72.22z",
+				fill: "none"
+			}), o.a.createElement("path", {
+				d: "m159.25 111.2a100.82 100.82 0 0 1 14.86.32 130.39 130.39 0 0 1 30.18 6.06 97.07 97.07 0 0 1 16.43 7.17 78.93 78.93 0 0 1 14.49 10.25 63.78 63.78 0 0 1 16.79 23.82 67.61 67.61 0 0 1 4.45 19.57c.13 1.7.15 3.4.22 5.11v3.89l-.11 1.3-.22 2.61-.42 2.6a23.2 23.2 0 0 1 -.54 2.58c-.22.85-.37 1.72-.67 2.56a49.79 49.79 0 0 1 -4.15 9.79 56.7 56.7 0 0 1 -6.2 8.74 68 68 0 0 1 -7.75 7.43 78.42 78.42 0 0 1 -8.81 6.14c-12.32 7.38-26.19 11.74-40.07 14.24a168.29 168.29 0 0 1 -41.54 2.05 148 148 0 0 1 -34.89-6.69c-11.22-3.67-22-9-31-16.58a56.52 56.52 0 0 1 -11.6-13.16 48.93 48.93 0 0 1 -6.51-16.08 50.29 50.29 0 0 1 -.46-17 66.24 66.24 0 0 1 4.18-16 70.76 70.76 0 0 1 18.09-25.69 90.75 90.75 0 0 1 24.8-15.93 101.47 101.47 0 0 1 13.06-4.78 112.2 112.2 0 0 1 12.93-3c2.12-.41 4.24-.65 6.32-1s4.15-.47 6.2-.57c4.08-.33 8.06-.33 11.91-.29a142.44 142.44 0 0 0 -24.22 3.34 117.79 117.79 0 0 0 -26.52 9.42 92.75 92.75 0 0 0 -21.58 14.9 77.13 77.13 0 0 0 -12.25 14.6 62.07 62.07 0 0 0 -9.53 25.39 45.71 45.71 0 0 0 3.46 25.86 53.67 53.67 0 0 0 16.28 19.83 87.52 87.52 0 0 0 22.14 12.14 129.68 129.68 0 0 0 23.75 6.56 160.17 160.17 0 0 0 23.78 2.47 157.94 157.94 0 0 0 45.17-5.1 113.68 113.68 0 0 0 20.3-7.54 86.22 86.22 0 0 0 9.16-5.19 73.68 73.68 0 0 0 8.22-6.24 52.36 52.36 0 0 0 12.26-15.71l.56-1.09.48-1.13c.3-.76.64-1.5.92-2.26a44.84 44.84 0 0 0 1.41-4.63 46.94 46.94 0 0 0 1.37-9.46c0-1.59.08-3.16 0-4.75s-.07-3.17-.26-4.72l-.21-2.34c-.09-.77-.23-1.54-.34-2.3s-.22-1.54-.37-2.3l-.49-2.25a58.73 58.73 0 0 0 -6.56-16.8 63.59 63.59 0 0 0 -10.77-13.72 74.79 74.79 0 0 0 -13.46-10.24 100.84 100.84 0 0 0 -16.3-7.81 122.86 122.86 0 0 0 -19-5.41 160 160 0 0 0 -27.37-2.98z"
+			}), o.a.createElement("circle", {
+				cx: "238.47",
+				cy: "80.13",
+				r: "22.93"
+			}), o.a.createElement("path", {
+				d: "m261.37 80.13a5.12 5.12 0 0 1 -.27-1.29c-.06-.34-.08-.75-.17-1.2s-.19-1-.3-1.5a23.88 23.88 0 0 0 -3.12-7.61 22.56 22.56 0 0 0 -6.59-6.71 20 20 0 0 0 -7.06-2.93 22.12 22.12 0 0 0 -19.67 5.49 21.36 21.36 0 0 0 -5.7 9 20.88 20.88 0 0 0 -.7 10.29 21.16 21.16 0 0 0 9.47 14.18 21.55 21.55 0 0 0 16.06 2.92 21.77 21.77 0 0 0 12.8-8.08 23.8 23.8 0 0 0 3.39-6.16 26 26 0 0 0 1.32-6.35 19.06 19.06 0 0 1 .12 6.81 21.83 21.83 0 0 1 -8.21 13.51 18.67 18.67 0 0 1 -5.13 2.82 24.34 24.34 0 0 1 -8.2 1.31 24.84 24.84 0 0 1 -7.83-1.26 25.86 25.86 0 0 1 -6.77-3.5 25 25 0 0 1 -5.2-5.16 23.4 23.4 0 0 1 -3.35-6.21 25 25 0 0 1 -1-3.32c-.13-.56-.18-1.12-.28-1.68l-.12-.84c0-.28 0-.56-.05-.84 0-.56 0-1.12-.07-1.68s.05-1.11.08-1.66a11.26 11.26 0 0 1 .17-1.64c.09-.54.15-1.09.26-1.62a25.58 25.58 0 0 1 2.15-6 24.56 24.56 0 0 1 5.71-7.24c.37-.34.79-.62 1.18-.93a11.19 11.19 0 0 1 1.21-.87 23.57 23.57 0 0 1 21.4-2.45 23 23 0 0 1 8.39 5.48 22 22 0 0 1 6.08 14.14c.11 1.26 0 2.29 0 2.78z"
+			})))
+		},
 		"./src/reddit/icons/svgs/Tag/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -27865,6 +28081,20 @@
 			}, o.a.createElement("g", null, o.a.createElement("path", {
 				fill: "inherit",
 				d: "M5.14293863,3.38188919 C5.75317178,3.99212234 5.75317178,4.98136473 5.14293863,5.59159788 C4.53270548,6.20183104 3.54346309,6.20183104 2.93322994,5.59159788 C2.32299679,4.98136473 2.32299679,3.99212234 2.93322994,3.38188919 C3.54346309,2.77165604 4.53270548,2.77165604 5.14293863,3.38188919 Z M1.01449569,2.94595786 L1,9.03662212 C1.00035355,9.55457784 1.19162594,10.0654625 1.55790725,10.4317438 L9.89929239,18.7731289 C10.6622606,19.5360972 11.8989904,19.5360972 12.661605,18.7734825 L18.7381272,12.6969604 C19.5007418,11.9343457 19.5007418,10.697616 18.7377736,9.93464773 L10.3963885,1.59326259 C10.0301071,1.22698128 9.54786032,1.00707107 9.02955105,1.00707107 L2.96045355,1 C1.8814086,1 1.01414214,1.86726647 1.01449569,2.94595786 Z"
+			})))
+		},
+		"./src/reddit/icons/svgs/Text/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20"
+			}, o.a.createElement("g", {
+				fill: "inherit"
+			}, o.a.createElement("path", {
+				d: "M15.6498441,5.62718315 L4.38195636,5.62718315 C4.0364078,5.62718315 3.75596259,5.34673795 3.75596259,5.00118939 C3.75596259,4.65564083 4.0364078,4.37519562 4.38195636,4.37519562 L15.6498441,4.37519562 C15.9953927,4.37519562 16.2758379,4.65564083 16.2758379,5.00118939 C16.2758379,5.34673795 15.9953927,5.62718315 15.6498441,5.62718315 M15.6498441,9.38314574 L4.38195636,9.38314574 C4.0364078,9.38314574 3.75596259,9.10270054 3.75596259,8.75715198 C3.75596259,8.41160342 4.0364078,8.13115821 4.38195636,8.13115821 L15.6498441,8.13115821 C15.9953927,8.13115821 16.2758379,8.41160342 16.2758379,8.75715198 C16.2758379,9.10270054 15.9953927,9.38314574 15.6498441,9.38314574 M13.1458691,13.1391083 L4.38195636,13.1391083 C4.0364078,13.1391083 3.75596259,12.8586631 3.75596259,12.5131146 C3.75596259,12.167566 4.0364078,11.8871208 4.38195636,11.8871208 L13.1458691,11.8871208 C13.4914176,11.8871208 13.7718628,12.167566 13.7718628,12.5131146 C13.7718628,12.8586631 13.4914176,13.1391083 13.1458691,13.1391083 M17.6104566,0.000751192518 L2.42134388,0.000751192518 C1.08547319,0.000751192518 0,1.08622438 0,2.42084309 L0,17.5811601 C0,18.4174878 0.423171785,19.1837041 1.13054474,19.6306637 C1.52116485,19.8748012 1.96061247,20 2.410076,20 C2.77440437,20 3.14624466,19.9173688 3.49805316,19.7470985 L7.81490616,17.5210647 L17.5278254,17.5210647 C18.8611921,17.5210647 20.0318005,16.3504563 20.0318005,15.0170896 L20.0318005,2.42084309 C20.0318005,1.08622438 18.9463273,0.000751192518 17.6104566,0.000751192518"
 			})))
 		},
 		"./src/reddit/icons/svgs/TextPost/index.m.less": function(e, t, n) {
@@ -28490,8 +28720,8 @@
 				R = n("./src/reddit/actions/governance/index.ts"),
 				L = n("./src/reddit/actions/page.ts"),
 				A = n("./src/reddit/actions/pages/subreddit.ts"),
-				D = n("./src/reddit/actions/postDraft.ts"),
-				F = n("./src/reddit/actions/scheduledPosts/index.ts"),
+				F = n("./src/reddit/actions/postDraft.ts"),
+				D = n("./src/reddit/actions/scheduledPosts/index.ts"),
 				B = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				U = n("./src/config.ts"),
 				K = n("./src/lib/convertToCamelCase/index.ts"),
@@ -28712,7 +28942,7 @@
 						subredditId: c.id,
 						scheduledPostId: l
 					})), f = await Object(se.a)(o(), b);
-					if (f.ok) return t(Object(F.e)({
+					if (f.ok) return t(Object(D.e)({
 						subredditId: c.id
 					})), void t(Object(L.G)(Ce(c.name), !1));
 					const g = f.error;
@@ -28740,7 +28970,7 @@
 						creationToken: l
 					}), h = await Object(ne.a)(o(), m);
 					if (h.ok) {
-						t(Object(F.e)({
+						t(Object(D.e)({
 							subredditId: c.id
 						}));
 						const e = h.body.data.createScheduledPost.scheduledPost;
@@ -28903,8 +29133,8 @@
 						})
 					})
 				}),
-				De = n("./src/reddit/routes/postCreation/index.ts");
-			const Fe = e => (e.returnValue = "", ""),
+				Fe = n("./src/reddit/routes/postCreation/index.ts");
+			const De = e => (e.returnValue = "", ""),
 				Be = Object(i.c)({
 					destSubreddit: w.g,
 					hasError: w.t,
@@ -28921,11 +29151,11 @@
 					super(...arguments), this.unblockNavigation = null, this.ensureBlocked = e => {
 						e.isChanged && (e.havePostContent || e.destSubreddit.name) ? this.block(e) : this.unblock()
 					}, this.block = e => {
-						this.unblockNavigation || (window.addEventListener("beforeunload", Fe), this.unblockNavigation = e.history.block((e, t) => {
-							if (!Object(Me.a)(Object(Ie.e)(e), [De.a])) return this.props.modalId !== Re && this.props.onToggleDiscardModal(), "Are you sure you want to leave?"
+						this.unblockNavigation || (window.addEventListener("beforeunload", De), this.unblockNavigation = e.history.block((e, t) => {
+							if (!Object(Me.a)(Object(Ie.e)(e), [Fe.a])) return this.props.modalId !== Re && this.props.onToggleDiscardModal(), "Are you sure you want to leave?"
 						}))
 					}, this.unblock = () => {
-						this.unblockNavigation && (this.unblockNavigation(), this.unblockNavigation = null), window.removeEventListener("beforeunload", Fe)
+						this.unblockNavigation && (this.unblockNavigation(), this.unblockNavigation = null), window.removeEventListener("beforeunload", De)
 					}
 				}
 				componentDidMount() {
@@ -29106,8 +29336,8 @@
 					}))))
 				}, "Component", Pt.a),
 				At = n("./src/reddit/components/PostCreationForm/DivButton/index.tsx"),
-				Dt = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
-				Ft = n("./src/reddit/constants/colors.ts");
+				Ft = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
+				Dt = n("./src/reddit/constants/colors.ts");
 			! function(e) {
 				e.CHAT = "chat", e.FLAIR = "flair", e.GOVERNANCE = "gov", e.SPOILER = "spoiler", e.NSFW = "nsfw", e.ORIGINAL_CONTENT = "originalContent", e.SCHEDULE = "schedule"
 			}(Rt || (Rt = {}));
@@ -29118,19 +29348,19 @@
 					switch (t) {
 						case Rt.ORIGINAL_CONTENT:
 							return {
-								backgroundColor: Ft.a.orangered, textColor: e.newCommunityTheme.body, iconColor: e.newCommunityTheme.body
+								backgroundColor: Dt.a.orangered, textColor: e.newCommunityTheme.body, iconColor: e.newCommunityTheme.body
 							};
 						case Rt.CHAT:
 							return {
-								backgroundColor: Ft.a.chat, textColor: e.newCommunityTheme.lightText, iconColor: e.newCommunityTheme.lightText
+								backgroundColor: Dt.a.chat, textColor: e.newCommunityTheme.lightText, iconColor: e.newCommunityTheme.lightText
 							};
 						case Rt.SPOILER:
 							return {
-								backgroundColor: Ft.a.spoiler, textColor: e.newCommunityTheme.lightText, iconColor: e.newCommunityTheme.lightText
+								backgroundColor: Dt.a.spoiler, textColor: e.newCommunityTheme.lightText, iconColor: e.newCommunityTheme.lightText
 							};
 						case Rt.NSFW:
 							return {
-								backgroundColor: Ft.a.nsfw, textColor: e.newCommunityTheme.body, iconColor: e.newCommunityTheme.body
+								backgroundColor: Dt.a.nsfw, textColor: e.newCommunityTheme.body, iconColor: e.newCommunityTheme.body
 							};
 						case Rt.FLAIR:
 							return {
@@ -29174,7 +29404,7 @@
 						disabled: i,
 						id: c,
 						onClick: l
-					}, o.a.createElement(Dt.a, {
+					}, o.a.createElement(Ft.a, {
 						text: m,
 						className: Ut.a.HoverTooltip,
 						tooltipContentClass: t.shiftTooltipToRight ? Ut.a.mShiftTooltipToTheRight : void 0
@@ -29385,8 +29615,8 @@
 			const Rn = e => e.creations.formState.fieldValidation;
 			var Ln = n("./src/telemetry/models/PostComposer.ts"),
 				An = n("./src/reddit/components/PostCreationForm/ControlRow/PostModifiers/index.m.less"),
-				Dn = n.n(An);
-			const Fn = "PostFlair--Modal--CreationForm",
+				Fn = n.n(An);
+			const Dn = "PostFlair--Modal--CreationForm",
 				Bn = e => {
 					let t = Object(mt.f)(e.startDate).toLocaleDateString(void 0, {
 						month: "numeric",
@@ -29396,16 +29626,16 @@
 					});
 					return t = t.replace(" ", "").replace(",", " ")
 				},
-				Un = dt.a.wrapped(Tn.b, "StyledCaretIcon", Dn.a),
-				Kn = dt.a.wrapped(zt.a, "CalendarIcon", Dn.a),
-				Hn = dt.a.wrapped(Xe.a, "PencilIcon", Dn.a),
-				Vn = dt.a.wrapped(_n.a, "ChatIcon", Dn.a),
-				Wn = dt.a.wrapped(kn.a, "CheckmarkIcon", Dn.a),
-				zn = dt.a.wrapped(In.a, "PlusIcon", Dn.a),
-				qn = dt.a.wrapped(_t.b, "FlairComponent", Dn.a),
-				Gn = dt.a.wrapped(Pn.a, "FlairIcon", Dn.a),
-				Jn = dt.a.div("FlairTextWrapper", Dn.a),
-				Qn = dt.a.wrapped($e.a, "ModifierRow", Dn.a),
+				Un = dt.a.wrapped(Tn.b, "StyledCaretIcon", Fn.a),
+				Kn = dt.a.wrapped(zt.a, "CalendarIcon", Fn.a),
+				Hn = dt.a.wrapped(Xe.a, "PencilIcon", Fn.a),
+				Vn = dt.a.wrapped(_n.a, "ChatIcon", Fn.a),
+				Wn = dt.a.wrapped(kn.a, "CheckmarkIcon", Fn.a),
+				zn = dt.a.wrapped(In.a, "PlusIcon", Fn.a),
+				qn = dt.a.wrapped(_t.b, "FlairComponent", Fn.a),
+				Gn = dt.a.wrapped(Pn.a, "FlairIcon", Fn.a),
+				Jn = dt.a.div("FlairTextWrapper", Fn.a),
+				Qn = dt.a.wrapped($e.a, "ModifierRow", Fn.a),
 				Zn = Vt(Rt.ORIGINAL_CONTENT),
 				Yn = Vt(Rt.CHAT),
 				Xn = Vt(Rt.SPOILER),
@@ -29456,7 +29686,7 @@
 						toggleChatPostTag: t => {
 							e(a.s(!t)), e((e, n) => O.y(n(), !t, Ln.ToggleNoun.CHAT))
 						},
-						toggleFlairPicker: () => e(a.x(Fn)),
+						toggleFlairPicker: () => e(a.x(Dn)),
 						toggleNsfwTag: t => {
 							e(a.t(!t)), e((e, n) => O.y(n(), !t, Ln.ToggleNoun.NSFW))
 						},
@@ -29643,9 +29873,9 @@
 					}, g ? o.a.createElement(Wn, null) : o.a.createElement(zn, null), l.fbt._("NSFW", null, {
 						hk: "3Tg62D"
 					})), o.a.createElement(es, {
-						className: Object(We.a)(Dn.a.AddFlair, {
-							[Dn.a.isToggled]: S,
-							[Dn.a.mHasError]: v[m.nb.FLAIR].length > 0
+						className: Object(We.a)(Fn.a.AddFlair, {
+							[Fn.a.isToggled]: S,
+							[Fn.a.mHasError]: v[m.nb.FLAIR].length > 0
 						}),
 						disabled: !t || u,
 						disabledTooltip: i.id ? l.fbt._("Not available for this community", null, {
@@ -29664,7 +29894,7 @@
 						backgroundColor: _,
 						textColor: k
 					}, o.a.createElement(Gn, {
-						className: Dn.a.FlairIcon,
+						className: Fn.a.FlairIcon,
 						style: {
 							"--flairColor": S ? Object(_t.c)(Object.assign(Object.assign({}, this.props), {
 								backgroundColor: _,
@@ -29677,20 +29907,20 @@
 					}) : o.a.createElement(Jn, null, l.fbt._("Flair", null, {
 						hk: "4Dtvp0"
 					})), o.a.createElement(Un, {
-						className: Dn.a.CaretIcon,
+						className: Fn.a.CaretIcon,
 						style: {
 							"--flairColor": S ? Object(_t.c)(Object.assign(Object.assign({}, this.props), {
 								backgroundColor: _,
 								textColor: k
 							})) : O.newCommunityTheme.actionIcon
 						}
-					})), e === Fn && o.a.createElement(jn.a, {
+					})), e === Dn && o.a.createElement(jn.a, {
 						flairs: p ? [p] : [],
-						modalId: Fn,
+						modalId: Dn,
 						onFlairChanged: this.handlePostFlairSelected,
 						subredditId: r || ""
 					})), o.a.createElement(Qe.a, {
-						className: Dn.a.errorMessages,
+						className: Fn.a.errorMessages,
 						messages: v[m.nb.FLAIR]
 					}), P && y && w && o.a.createElement(Lt, {
 						onDoNotShowClick: this.handleOCDisclaimerDoNotShowClick
@@ -29751,7 +29981,7 @@
 						onClick: this.props.onClick
 					}, o.a.createElement(n, {
 						className: hs.a.icon
-					}), o.a.createElement(Dt.a, {
+					}), o.a.createElement(Ft.a, {
 						text: t ? l.fbt._("Cancel adding to collection", null, {
 							hk: "359w09"
 						}) : l.fbt._("Add to collection", null, {
@@ -29798,8 +30028,8 @@
 				Rs = dt.a.div("ButtonLayout", vs.a),
 				Ls = dt.a.div("SaveDraftButtonLayout", vs.a),
 				As = dt.a.wrapped(Ze.a, "PostLoadingIcon", vs.a),
-				Ds = dt.a.wrapped(As, "DraftLoadingIcon", vs.a),
-				Fs = dt.a.wrapped(Ge.a, "Token", vs.a),
+				Fs = dt.a.wrapped(As, "DraftLoadingIcon", vs.a),
+				Ds = dt.a.wrapped(Ge.a, "Token", vs.a),
 				Bs = Object(i.a)(w.Z, B.a.getMediaCount),
 				Us = (e, t) => {
 					const n = Object(E.m)(e, t),
@@ -30121,8 +30351,8 @@
 						submissionType: R,
 						submitMode: L,
 						subredditGovMeta: A,
-						suggestedSort: D,
-						togglePostSchedulePicker: F
+						suggestedSort: F,
+						togglePostSchedulePicker: D
 					} = this.props, {
 						isSaved: B
 					} = this.state, U = y || E || C, K = L === f.q.Post && C, H = L === f.q.Draft && C, {
@@ -30147,7 +30377,7 @@
 						className: M && vs.a.removeRightBorderRadius
 					}, E || K ? o.a.createElement(As, {
 						sizePx: Ts
-					}) : o.a.createElement(s.Fragment, null, v && A && A.polls && A.polls.price && i.id ? o.a.createElement(s.Fragment, null, Cs(), o.a.createElement(Fs, {
+					}) : o.a.createElement(s.Fragment, null, v && A && A.polls && A.polls.price && i.id ? o.a.createElement(s.Fragment, null, Cs(), o.a.createElement(Ds, {
 						subredditId: i.id
 					}), Object(ze.a)(A.polls.price)) : j ? Qs(p) : Cs())), M && o.a.createElement(ut, {
 						title: l.fbt._("Make a scheduled post", null, {
@@ -30166,13 +30396,13 @@
 						sendEvent: I,
 						schedule: T,
 						stickyPosition: N,
-						suggestedSort: D,
+						suggestedSort: F,
 						onChange: S,
-						onClose: F
+						onClose: D
 					}), x && R !== m.Jb.MEDIA && R !== m.Jb.POLL && !j ? o.a.createElement(Ls, null, o.a.createElement(pt, {
 						disabled: !O || U || B,
 						onClick: _
-					}, y || H ? o.a.createElement(Ds, {
+					}, y || H ? o.a.createElement(Fs, {
 						sizePx: Ts
 					}) : this.getSaveDraftButtonText())) : o.a.createElement(Rs, null, o.a.createElement(pt, {
 						disabled: U || B,
@@ -30295,8 +30525,8 @@
 				Ro = dt.a.h2("PostTitle", To.a),
 				Lo = dt.a.wrapped(Ro, "EditingPostTitle", To.a),
 				Ao = dt.a.div("MetaLine", To.a),
-				Do = dt.a.span("SubredditName", To.a),
-				Fo = dt.a.time("DraftSavedTime", To.a),
+				Fo = dt.a.span("SubredditName", To.a),
+				Do = dt.a.time("DraftSavedTime", To.a),
 				Bo = dt.a.wrapped(ps.b, "TrashIcon", To.a),
 				Uo = dt.a.div("InteractiveDiv", To.a),
 				Ko = dt.a.button("ConfirmDelete", To.a),
@@ -30326,7 +30556,7 @@
 						pageLayer: n
 					} = t;
 					return {
-						deleteDraft: t => e(D.o(t, n))
+						deleteDraft: t => e(F.o(t, n))
 					}
 				}),
 				Wo = Object(E.t)({
@@ -30375,9 +30605,9 @@
 						"data-redditstyle": !0
 					}, a), o.a.createElement(Ao, {
 						"data-redditstyle": !0
-					}, i && o.a.createElement(Do, {
+					}, i && o.a.createElement(Fo, {
 						"data-redditstyle": !0
-					}, i.displayText), i && o.a.createElement(go.b, null), o.a.createElement(Fo, null, l.fbt._("Draft saved {draftSavedAtTime}", [l.fbt._param("draftSavedAtTime", Object(fo.d)((e.modified || e.created) / zo))], {
+					}, i.displayText), i && o.a.createElement(go.b, null), o.a.createElement(Do, null, l.fbt._("Draft saved {draftSavedAtTime}", [l.fbt._param("draftSavedAtTime", Object(fo.d)((e.modified || e.created) / zo))], {
 						hk: "2HjAWY"
 					})))), o.a.createElement(No, null, this.state.showConfirmText ? o.a.createElement(Ko, {
 						onClick: this.onConfirmClick,
@@ -30532,10 +30762,10 @@
 			var Rr = n("./node_modules/react-autosize-textarea/lib/index.js"),
 				Lr = n.n(Rr),
 				Ar = n("./src/reddit/controls/GrowingOutlinedInput/index.m.less"),
-				Dr = n.n(Ar);
+				Fr = n.n(Ar);
 
-			function Fr() {
-				return (Fr = Object.assign || function(e) {
+			function Dr() {
+				return (Dr = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -30590,8 +30820,8 @@
 						textareaRef: r,
 						minHeight: i
 					} = t, a = Br(t, ["className", "onValueChange", "textareaRef", "minHeight"]);
-					return o.a.createElement(Lr.a, Fr({}, a, {
-						className: Object(We.a)(Dr.a.growingOutlinedInput, n),
+					return o.a.createElement(Lr.a, Dr({}, a, {
+						className: Object(We.a)(Fr.a.growingOutlinedInput, n),
 						style: {
 							minHeight: i
 						},
@@ -30670,139 +30900,14 @@
 			}(zr || (zr = {}));
 			var si = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts"),
 				oi = n("./node_modules/lodash/upperFirst.js"),
-				ri = n.n(oi);
-			var ii = e => o.a.createElement("svg", {
-				className: e.className,
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 53 67"
-			}, o.a.createElement("g", {
-				fill: "none",
-				fillRule: "evenodd"
-			}, o.a.createElement("path", {
-				fill: "#000",
-				d: "M36.17 15.7877c-2.1457-.6233-4.6272.5142-5.0853 2.419-.174.7268-.5168 1.0273-1.2283 1.124-1.5643.2126-2.9247.8707-4.0924 1.901-.807.7112-1.2403 1.523-1.2154 2.6702.0477 2.1067 1.0792 3.8318 2.0054 5.608.2256.432 2.0283-.631 1.111-.082-.616-1.9145-1.1994-3.6348-1.7152-5.3744-.2127-.72.0527-1.406.7364-1.754 1.2204-.6195 2.4954-1.1375 3.7456-1.702.5923-.2676.93-.057 1.27.465.821 1.2544 1.9995 2.04 3.5757 1.8642 1.6357-.1817 2.555-1.264 3.054-2.7215.6707-1.956-.2665-3.8677-2.1616-4.4176"
-			}), o.a.createElement("path", {
-				fill: "#FF8717",
-				d: "M32.575 18.997c-.1866-1.1486.5913-2.0766 1.949-2.3235 1.4877-.2722 2.729.4466 2.9796 1.7235.2642 1.345-.7003 2.9457-1.9175 3.1832-1.341.2627-2.7447-.9416-3.011-2.5832"
-			}), o.a.createElement("path", {
-				fill: "#000",
-				d: "M17.0857 23.965c-2.5846-.806-4.1367.6-4.4678 3.2556-.3653 2.9378.675 6.234 3.5116 7.1787 2.9598.9843 5.8344-1.5318 6.3822-4.5023.4535-2.4616-3.5227-5.3826-5.426-5.932-3.1034-.9685 1.507.4345 0 0M39.321 24.512c-2.184-2.2814-6.028.2842-7.4777 2.256-.521.7074-.9206 1.5057-1.1896 2.3475-.35 1.0897.269.94.3743 1.8643.1922 1.6742 2.1314 3.3578 3.7206 3.5912 4.7354.694 7.7125-6.7713 4.3803-10.2603.1294.1364.259.2717.3894.408-.0658-.0692-.1315-.1384-.1973-.2066-1.9745-2.0624.696.7283 0 0M18.9308 59.6326c-.1867-.0458-.3346.0093-.443.1056-.001 0-.001-.001-.002-.001-1.5598.099-3.8566.7662-4.6848 2.1695-.8887 1.507.7358 2.5096 2.148 2.674 1.553.1813 3.8715-.3148 4.4405-1.8975.439-1.2193-.0328-2.7012-1.4587-3.0506M34.37 60.348c-.242-.0358-.5174.043-.6267.2957-1.5118 3.4664 6.185 5.586 7.6074 2.4245 1.3572-3.016-4.6648-4.4187-6.9808-2.7203"
-			}), o.a.createElement("path", {
-				fill: "#000",
-				d: "M39.9895 37.3797c-3.8707-9.353-16.7772-11.6802-23.5762-4.7352-3.177 3.245-4.373 8.2466-4.83 9.7576-1.4357 4.748-1.561 10.198.7932 14.6874 3.987 7.605 16.61 9.4605 23.792 5.505 9.1842-5.058 6.6638-18.3606 3.437-26.1424.2377.5734.4746 1.1468.7124 1.7202-.1096-.2645-.219-.528-.3285-.7925-2.1562-5.211 1.182 2.856 0 0"
-			}), o.a.createElement("path", {
-				fill: "#FF8717",
-				d: "M26.4406 29.6162c3.5285 0 8.4696 2.1882 10.6613 4.9576 2.5828 3.2633 3.7284 8.3103 4.3175 12.3626.4945 3.4113-.4807 8.203-2.2755 11.186-2.1327 3.5455-6.732 4.5153-10.5422 4.4935-4.6918-.026-10.162-.5288-13.2412-4.577-2.77-3.643-3.234-8.4117-2.506-12.8188.401-2.4216 1.0284-5.207 1.9967-7.4706 2.105-4.9197 5.7597-8.1334 11.5893-8.1334"
-			}), o.a.createElement("path", {
-				fill: "#FFF",
-				d: "M41.5915 49.6162c.03-.6952.008-1.3605-.044-2l.044 2zM37.4186 60.1975c-1.3365-.7743-2.342-2.1664-2.536-3.716-.0665-.533-.0396-1.074-.0128-1.61.0477-.9814.1004-1.9818.458-2.8933.4095-1.0428 1.1846-1.8868 1.9427-2.7034.46-.4967.9212-.9934 1.3823-1.49.7273-.7844 1.6783-1.6223 2.688-1.475-.4125-2.465-1.0336-5.1514-2.0422-7.567-1.0493 2.024-3.0208 3.9137-5.4086 2.871-.5147-.2242-.8774-.3756-1.3395-.7027-.8615-.7398-1.9138-.9498-3.157-.6288-.2702.3008-.5265.6128-.769.9368-.5157.521-1.1567.9812-1.9347.7632-1.7777-.5007-2.97-2.9346-5.1046-1.4002-.8675.624-1.9396 1.5637-3.0953 1.5082-2.0044-.096-3.3925-1.0983-4.2153-2.752-.776 2.0393-1.2024 4.4066-1.5432 6.479-.0407.2524-.0636.5098-.0974.7652.6232-.0353 1.2462-.013 1.8206.219.6776.2727 1.2182.8037 1.74 1.3225.8435.8388 1.708 1.706 2.187 2.8033.4382 1.0014.5227 2.123.5366 3.2183.015 1.0882-.0338 2.1754-.145 3.2566-.1313 1.284-.475 2.7296-1.571 3.3606 3.1707 2.359 7.553 2.7054 11.4153 2.7266 3.2216.0182 6.9976-.6774 9.4033-3.0224-.2027-.0868-.4104-.1585-.6022-.2695"
-			}), o.a.createElement("path", {
-				fill: "#FFF",
-				d: "M19.3634 62.297c-.4735.8925-1.877 1.0785-2.832 1.1074-.5274.0154-1.058-.045-1.5395-.25-.894-.3822-.2403-1.1526.2322-1.5266.884-.7018 2.083-1.0513 3.2383-1.1217.114-.0072.2012-.0478.2752-.0993.846.2655.982 1.2193.6257 1.8904M39.1353 63.7074c-.7183.2857-1.607.0788-2.318-.0972-1.225-.3028-2.4647-1.2617-2.3147-2.656.0894-.0388.1756-.0948.2438-.1942 1.16-1.6788 4.4677-.7897 5.5096.6697.7194 1.008-.38 1.984-1.1207 2.2777"
-			}), o.a.createElement("path", {
-				fill: "#C18D42",
-				d: "M17.2218 28.842c-.2698-1.599-.862-3.239-2.209-4.0722-1.519-.9397-1.5314 2.7022-1.4284 3.646.1773 1.6212.7036 4.1546 2.031 4.9962 1.0735.6814 1.7476-.4387 1.9068-1.9332.105-.9777-.1392-1.678-.3004-2.6368-.3327-1.9776.2232 1.3268 0 0"
-			}), o.a.createElement("path", {
-				fill: "#FF8717",
-				d: "M15.5475 24.681c1.747.664 2.8352 2.0178 3.3196 3.9672.3962 1.5937.7234 3.6126-.1366 4.959 1.6953.081 3.8534-.3464 3.6123-2.602 1.339-1.9475-4.229-7.018-6.7952-6.3243M33.6698 32.7516c-.407-.451.364.404 0 0"
-			}), o.a.createElement("path", {
-				fill: "#C18D42",
-				d: "M35.796 29.1142c-.1635.7146-.323 1.4594-.211 2.192.178 1.1545.9577 1.6425 1.872 1.0695 1.2238-.7655 1.577-2.3845 1.9186-3.693.1864-.7164.529-3.6248-.9526-2.9716-1.4423.6354-2.308 2.0174-2.627 3.4032-.238 1.0394.3698-1.6104 0 0"
-			}), o.a.createElement("path", {
-				fill: "#FF8717",
-				d: "M35.3533 32.5596c-1.0047-1.2304-.5965-3.2887-.0174-4.64.6404-1.496 1.6748-2.6295 3.2115-3.037-.0695-.041-.136-.083-.2138-.114-1.9296-.775-4.9295 1.584-5.8667 3.0262-.6885 1.0606-2.0135 2.6206.8063 4.2594.7018.4085 1.3024.687 2.08.5054"
-			}), o.a.createElement("path", {
-				fill: "#000",
-				d: "M32.8514 39.097c-.577.676-1.6076.6748-2.4273.0963-1.264-.8917-1.1062-3.3024.122-4.234.7017-.532 1.6705-.4205 2.1302.1645 1.53 1.946.6833 3.3772.1752 3.973"
-			}), o.a.createElement("path", {
-				fill: "#FFF",
-				d: "M30.755 38.0938c-.2703-.432-.2692-1.2056-.039-1.8203.3575-.9478 1.322-.8296 1.6942.092.213.5263.1684 1.252-.0664 1.597-.7778 1.1484-1.3505.512-1.5888.1313"
-			}), o.a.createElement("path", {
-				fill: "#000",
-				d: "M24.71 39.009c-.6662.8048-2.161.7863-3.1096.0826-1.5367-1.1425-1.2565-2.9377-.0257-3.8424.9816-.721 1.9472-.897 2.8605-.1542 1.636 1.3315 1.2372 2.751.2748 3.914"
-			}), o.a.createElement("path", {
-				fill: "#FFF",
-				d: "M21.79 38.1136c-.322-.4-.3135-1.296-.0326-1.8656.4566-.922 1.1752-.7538 1.537-.016.2884.589.359 1.1686.0612 1.7166-.5324.982-1.0995.7425-1.5656.165"
-			}), o.a.createElement("path", {
-				fill: "#000",
-				d: "M24.5598 40.2202c.8506 1.8878 3.3605 1.9104 3.9825-.235.0587-.206-.3954-.314-.471-.3215-1.1-.0954-2.188-.0502-3.278.1646-.637.1256.158.5627.459.5024.9212-.182 1.8433-.2474 2.7733-.167-.157-.1068-.314-.2136-.471-.3216-.14.4862-.3785.834-.7293 1.098-.5525.4157-1.0443-.1445-1.3017-.716-.147-.3266-1.094-.2915-.9638-.0038"
-			}), o.a.createElement("path", {
-				fill: "#000",
-				d: "M22.5907 41.495c1.505 1.488 4.0743 1.4078 5.0584-.571-.3263-.06-.6527-.121-.98-.182-.2436 2.3982 3.9335 2.359 4.8708.653.1018-.186-.8275-.4596-.9802-.1822-.556 1.1467-1.526 1.0504-2.9105-.2888.029-.284-.8573-.428-.98-.182-.497 1.0008-1.7188 2.179-3.194.7215-.1837-.182-1.14-.221-.8843.0315M19.5653 46.516c-.473 6.7128 8.6924 4.2055 5.1774-.548-.6672-.903-.7844.151-.5202.7218.5274 1.1447.4853 2.1653-.5644 2.844-1.2192.7874-2.6945.0107-2.9834-1.216-.112-.5384-.144-1.082-.0936-1.6312.0237-.3453-.993-.4877-1.0157-.1705M29.6923 44.8475c-1.689 1.2247-1.5924 4.6386.8496 4.7633 1.13.0575 2.2874-.3435 3.0557-1.1673.3415-.3653 1.5518-2.4732.5793-2.709-1.2043-.293-1.2043 3.92-3.9756 3.001-.9725-.3227-.5812-1.1573-.5253-1.9048.0163-.218 1.4523-3.0258.0163-1.9832"
-			})));
-			var ai = e => o.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 53 67"
-				}, o.a.createElement("g", {
-					fill: "none",
-					fillRule: "evenodd"
-				}, o.a.createElement("path", {
-					fill: "#FFF",
-					d: "M9.5927 33.2517c.829 1.0475-1.9245 5.7044-2.2983 5.6247-7.91-1.6942-2.065-11.142 2.2983-5.6247z"
-				}), o.a.createElement("path", {
-					fill: "#000",
-					d: "M7.2853 38.8738c-7.8952-1.69-2.0557-11.1393 2.297-5.625.8272 1.047-.4264.8297-.9997.3446-1.1508-.97-2.3416-1.2604-3.462-.3077-1.3005 1.107-.879 3.0184.443 3.748.585.3038 1.202.5194 1.8517.6446.4058.0876.243 1.275-.13 1.1955"
-				}), o.a.createElement("path", {
-					fill: "#FFF",
-					d: "M50.0333 34.034c-.1167 1.5037-.772 2.978-1.8564 3.877-.4812.3997-3.1335 1.7-3.25.3792-.1457-1.6356-1.7525-4.3107-.3047-6.062 1.7012-2.06 5.6625-1.444 5.411 1.8057z"
-				}), o.a.createElement("path", {
-					fill: "#000",
-					d: "M38.8415 2.2205c-2.7586-.8015-5.949.661-6.538 3.11-.2237.9345-.6645 1.321-1.5794 1.4452-2.011.2734-3.7602 1.1195-5.2615 2.444-1.0375.9146-1.5946 1.9584-1.5627 3.4333.0614 2.7088 1.3876 4.9268 2.5785 7.2106.29.5554 2.6078-.8114 1.4285-.1056-.7922-2.4615-1.5422-4.6733-2.2054-6.91-.2734-.9256.0677-1.8078.9468-2.2552 1.569-.7964 3.2084-1.4625 4.8157-2.188.7615-.3443 1.196-.0734 1.633.5976 1.0553 1.6128 2.5707 2.623 4.597 2.397 2.1033-.2337 3.2852-1.6254 3.9266-3.4992.8624-2.515-.3425-4.9727-2.779-5.6797"
-				}), o.a.createElement("path", {
-					fill: "#FF8717",
-					d: "M33.9315 6.857c-.224-1.3784.7095-2.492 2.3388-2.7883 1.7852-.3266 3.275.536 3.5755 2.0682.317 1.614-.8404 3.5347-2.301 3.8197-1.6092.3153-3.2938-1.13-3.6133-3.0997"
-				}), o.a.createElement("path", {
-					fill: "#000",
-					d: "M14.7982 12.4437c-3.36-1.0258-5.3778.7637-5.8082 4.1436-.4748 3.739.8778 7.9344 4.5652 9.1366 3.8478 1.2526 7.5847-1.9496 8.297-5.7303.5894-3.133-4.5797-6.8506-7.054-7.55-4.0343-1.2325 1.959.5532 0 0M43.3042 13.0588c-2.8393-2.6964-7.8367.3357-9.7212 2.666-.6773.836-1.1967 1.7795-1.5465 2.7743-.455 1.288.3498 1.111.4866 2.2034.25 1.9786 2.771 3.9682 4.837 4.244 6.156.8204 10.0262-8.0023 5.6943-12.1256.1683.161.3367.321.5063.482-.0855-.0817-.171-.1634-.2564-.244-2.567-2.4376.9047.8605 0 0M16.2644 58.021c-.2208-.059-.3958.012-.5237.136-.0012 0-.0012-.0012-.0024-.0012-1.8447.1275-4.5607.9865-5.54 2.7936-1.051 1.9405.87 3.2314 2.5398 3.4432 1.8366.2334 4.5785-.4055 5.2513-2.4435.519-1.57-.0387-3.478-1.725-3.928M35.8236 58.9218c-.272-.045-.582.0543-.705.3726-1.7005 4.3674 6.9575 7.0378 8.5576 3.0546 1.5267-3.7998-5.2473-5.567-7.8526-3.4272"
-				}), o.a.createElement("path", {
-					fill: "#000",
-					d: "M43.621 29.1977c-4.9592-11.951-21.4957-14.9246-30.207-6.0505-4.0707 4.1463-5.603 10.5374-6.1882 12.468-1.8397 6.067-2.0003 13.0306 1.016 18.767 5.1085 9.718 21.2816 12.0886 30.4837 7.0343 11.767-6.463 8.538-23.4607 4.4034-33.4042.3046.7327.608 1.4654.9127 2.198-.1402-.338-.2804-.6746-.4207-1.0126-2.7626-6.6584 1.5146 3.6495 0 0"
-				}), o.a.createElement("path", {
-					fill: "#FF8717",
-					d: "M25.8506 19.7317c4.5594 0 10.944 2.8204 13.7762 6.3902 3.3375 4.2063 4.8178 10.7118 5.579 15.935.639 4.3973-.6212 10.5736-2.9403 14.4188-2.7558 4.57-8.6988 5.8202-13.6222 5.792-6.0627-.0332-13.131-.6814-17.1098-5.8996-3.5793-4.6956-4.179-10.8425-3.2382-16.523.518-3.1216 1.329-6.7118 2.58-9.6297 2.7202-6.3415 7.4425-10.4838 14.9753-10.4838"
-				}), o.a.createElement("path", {
-					fill: "#FFF",
-					d: "M45.9425 45c.03-.6952.008-1.3605-.044-2l.044 2zM39.8434 58.144c-1.7227-.9698-3.0188-2.7136-3.2686-4.6547-.0858-.6677-.0512-1.3455-.0166-2.017.0615-1.2292.1293-2.4824.5904-3.6243.5277-1.3063 1.5267-2.3634 2.504-3.3865.593-.622 1.1872-1.2443 1.7815-1.8665.9376-.9825 2.1633-2.032 3.4645-1.8475-.5315-3.088-1.332-6.453-2.632-9.4792-1.3524 2.5355-3.8935 4.9027-6.971 3.5964-.6636-.2807-1.131-.4704-1.7266-.88-1.1105-.927-2.467-1.19-4.069-.788-.3485.377-.679.7677-.9914 1.1736-.6647.6525-1.4908 1.2292-2.4937.956-2.2913-.6272-3.8283-3.676-6.5793-1.754-1.1182.7816-2.5 1.959-3.9896 1.8893-2.5832-.12-4.3725-1.3758-5.433-3.4472-1.0002 2.5544-1.5497 5.5198-1.989 8.116-.0525.316-.082.6386-.1255.9585.803-.0443 1.606-.0165 2.3464.2743.8734.3415 1.57 1.0066 2.2425 1.6566 1.0874 1.0508 2.2016 2.137 2.819 3.5116.5648 1.2545.6737 2.6594.6916 4.0315.0193 1.3633-.0435 2.7252-.187 4.0796-.169 1.6085-.612 3.4193-2.0248 4.2097 4.087 2.9553 9.735 3.389 14.7134 3.4156 4.1523.0226 9.0192-.8486 12.12-3.7862-.2614-.1088-.529-.1986-.7762-.3377"
-				}), o.a.createElement("path", {
-					fill: "#FFF",
-					d: "M16.6775 61.5205c-.5682 1.19-2.2523 1.438-3.3982 1.4765-.633.0205-1.2697-.0602-1.8475-.3336-1.0727-.5094-.2883-1.5367.2787-2.0352 1.0607-.9357 2.4997-1.4018 3.886-1.4957.137-.0097.2414-.064.3303-.1325 1.015.354 1.1784 1.6258.7507 2.5205M41.3178 62.8585c-.838.2857-1.875.079-2.7043-.097-1.429-.303-2.8756-1.2618-2.7005-2.656.1043-.039.2048-.095.2843-.1944 1.3534-1.6787 5.2124-.7896 6.428.6698.8393 1.008-.4433 1.984-1.3075 2.2777"
-				}), o.a.createElement("path", {
-					fill: "#C18D42",
-					d: "M14.4914 18.1648c-.3373-1.9542-1.0774-3.9587-2.7615-4.977-1.8987-1.1487-1.9142 3.3025-1.7855 4.4562.2217 1.9814.8796 5.0777 2.5387 6.1064 1.342.8328 2.1846-.5362 2.3836-2.363.131-1.1948-.174-2.0508-.3754-3.2226-.416-2.417.279 1.6217 0 0"
-				}), o.a.createElement("path", {
-					fill: "#FF8717",
-					d: "M11.8985 13.079c1.9966.812 3.2402 2.4664 3.7938 4.849.4527 1.9478.8267 4.4154-.1562 6.061 1.9376.099 4.404-.4234 4.1285-3.1804 1.5303-2.38-4.8333-8.5774-7.766-7.7295M35.0207 23.1353c-.407-.451.364.404 0 0"
-				}), o.a.createElement("path", {
-					fill: "#C18D42",
-					d: "M38.2093 19.4974c-.2045.9188-.4038 1.8764-.264 2.8182.2225 1.4844 1.197 2.112 2.34 1.3752 1.5298-.9843 1.9712-3.066 2.3983-4.748.233-.9213.6613-4.6607-1.1908-3.8208-1.803.8168-2.885 2.5937-3.2835 4.3754-.2977 1.3363.462-2.0706 0 0"
-				}), o.a.createElement("path", {
-					fill: "#FF8717",
-					d: "M37.7916 23.9292c-1.2917-1.538-.767-4.111-.0223-5.8.8235-1.87 2.1534-3.287 4.1292-3.7963-.0894-.0513-.175-.1037-.275-.1424-2.481-.9687-6.3378 1.98-7.5428 3.7826-.8853 1.3257-2.5888 3.2757 1.0366 5.3243.9024.5106 1.6746.859 2.6743.6317"
-				}), o.a.createElement("path", {
-					fill: "#000",
-					d: "M34.0283 31.3767c-.721.8113-2.0094.81-3.034.1158-1.58-1.07-1.383-3.963.1523-5.081.877-.6384 2.088-.5045 2.6627.1976 1.9127 2.3352.854 4.0527.219 4.7677"
-				}), o.a.createElement("path", {
-					fill: "#FFF",
-					d: "M31.106 29.4776c-.2703-.432-.2692-1.2056-.039-1.8204.3574-.9477 1.322-.8296 1.6942.092.213.5264.1684 1.252-.0664 1.597-.7778 1.1484-1.3506.5122-1.5888.1314"
-				}), o.a.createElement("path", {
-					fill: "#000",
-					d: "M23.8934 30.2714c-.7994.9656-2.5933.9435-3.7315.099-1.844-1.371-1.508-3.5252-.031-4.6108 1.178-.8653 2.3368-1.0765 3.4327-.185 1.9633 1.5977 1.4846 3.301.3297 4.6968"
-				}), o.a.createElement("path", {
-					fill: "#FFF",
-					d: "M20.141 29.4974c-.322-.4-.3135-1.2962-.0326-1.8657.4566-.922 1.1752-.7537 1.537-.0158.2884.5886.359 1.1683.061 1.7164-.5322.982-1.0993.7424-1.5654.165"
-				}), o.a.createElement("path", {
-					fill: "#000",
-					d: "M23.9138 33.604c1.0632 1.8878 4.2007 1.9104 4.9782-.235.0733-.206-.4943-.314-.5887-.3215-1.375-.0955-2.735-.0502-4.0976.1646-.796.1257.1975.5628.574.5025 1.1512-.1822 2.304-.2475 3.4664-.167-.196-.1068-.3923-.2136-.5886-.3216-.175.486-.4732.834-.9117 1.0977-.6905.4157-1.3054-.1445-1.627-.716-.184-.3266-1.3676-.2914-1.205-.0038"
-				}), o.a.createElement("path", {
-					fill: "#000",
-					d: "M20.9512 35.318c1.8397 2.232 4.9797 2.112 6.1826-.8564-.399-.09-.798-.1816-1.198-.273-.2976 3.5973 4.8077 3.5387 5.9532.9794.1245-.279-1.0113-.6892-1.198-.273-.6794 1.72-1.8652 1.5755-3.5572-.4334.0354-.426-1.048-.642-1.198-.273-.6075 1.5012-2.1007 3.2685-3.9037 1.0823-.2244-.2732-1.393-.3318-1.0808.047M44.4978 32.213c1.7332-2.056 5.7836-1.429 5.5353 1.821-.115 1.5038-.7808 2.977-1.8867 3.8733-.4907.3984-3.198 1.692-3.3206.3704-.1534-1.6365 4.8643-1.0204 4.2203-4.8223-.2264-1.3343-1.284-.9385-2.1835-.974-.262-.0102-3.8398 1.4795-2.3647-.2684"
-				}))),
+				ri = n.n(oi),
+				ii = n("./src/reddit/icons/svgs/Hamster1/index.tsx"),
+				ai = n("./src/reddit/icons/svgs/Hamster2/index.tsx"),
 				ci = n("./src/reddit/components/PostCreationForm/MediaInput/DropArea/index.m.less"),
 				li = n.n(ci);
 			const {
 				fbt: di
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ui = [...Array.from(m.a), ...Array.from(m.b)].join(), pi = dt.a.input("HiddenInput", li.a), mi = dt.a.wrapped(at.i, "UploadButton", li.a), hi = dt.a.wrapped(ii, "HamsterSmall", li.a), bi = dt.a.wrapped(ai, "HamsterLarge", li.a), fi = dt.a.div("Container", li.a), gi = dt.a.div("DropArea", li.a), xi = dt.a.wrapped(gi, "DropAreaActive", li.a), yi = dt.a.wrapped(xi, "DropAreaOver", li.a), vi = dt.a.p("Paragraph", li.a), Ci = dt.a.p("ErrorMsg", li.a), Ei = dt.a.div("Box", li.a);
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ui = [...Array.from(m.a), ...Array.from(m.b)].join(), pi = dt.a.input("HiddenInput", li.a), mi = dt.a.wrapped(at.i, "UploadButton", li.a), hi = dt.a.wrapped(ii.a, "HamsterSmall", li.a), bi = dt.a.wrapped(ai.a, "HamsterLarge", li.a), fi = dt.a.div("Container", li.a), gi = dt.a.div("DropArea", li.a), xi = dt.a.wrapped(gi, "DropAreaActive", li.a), yi = dt.a.wrapped(xi, "DropAreaOver", li.a), vi = dt.a.p("Paragraph", li.a), Ci = dt.a.p("ErrorMsg", li.a), Ei = dt.a.div("Box", li.a);
 			class Oi extends o.a.Component {
 				constructor() {
 					super(...arguments), this.hiddenInputEl = null, this.onFileInput = e => {
@@ -30976,7 +31081,7 @@
 				},
 				Li = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/components/InputWrapper.m.less"),
 				Ai = n.n(Li);
-			var Di = e => {
+			var Fi = e => {
 					const {
 						uploads: t,
 						galleryItem: n,
@@ -31020,8 +31125,8 @@
 						value: d
 					})))
 				},
-				Fi = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/components/Layout.m.less"),
-				Bi = n.n(Fi);
+				Di = n("./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/components/Layout.m.less"),
+				Bi = n.n(Di);
 			var Ui = e => {
 					const {
 						heroSlot: t,
@@ -31133,7 +31238,7 @@
 					mainContent: f && h && o.a.createElement(Vi, {
 						upload: f
 					}),
-					sideMetaContent: b && h && o.a.createElement(Di, {
+					sideMetaContent: b && h && o.a.createElement(Fi, {
 						dispatch: n,
 						galleryItem: b,
 						uploads: d,
@@ -31293,8 +31398,8 @@
 				Ra = dt.a.wrapped($e.a, "TitleRow", Pa.a),
 				La = dt.a.div("DetailsContainer", Pa.a),
 				Aa = dt.a.wrapped($e.a, "ButtonRow", Pa.a),
-				Da = dt.a.wrapped(at.i, "CancelButton", Pa.a),
-				Fa = dt.a.wrapped(at.f, "ConfirmButton", Pa.a);
+				Fa = dt.a.wrapped(at.i, "CancelButton", Pa.a),
+				Da = dt.a.wrapped(at.f, "ConfirmButton", Pa.a);
 			var Ba = Object(ho.a)(e => {
 					const {
 						isVideo: t
@@ -31307,11 +31412,11 @@
 						hk: "smTuF"
 					}) : l.fbt._("Are you sure you want to remove your image?", null, {
 						hk: "Ci5LM"
-					})), o.a.createElement(Aa, null, o.a.createElement(Da, {
+					})), o.a.createElement(Aa, null, o.a.createElement(Fa, {
 						onClick: e.onCanceled
 					}, l.fbt._("Keep", null, {
 						hk: "4gFSdj"
-					})), o.a.createElement(Fa, {
+					})), o.a.createElement(Da, {
 						onClick: e.onConfirmed
 					}, l.fbt._("Remove", null, {
 						hk: "1Jdd3U"
@@ -31563,7 +31668,7 @@
 				sc = dt.a.div("TooltipContent", tc.a);
 			var oc = e => o.a.createElement("div", {
 					className: tc.a.Hint
-				}, o.a.createElement(Dt.a, {
+				}, o.a.createElement(Ft.a, {
 					className: tc.a.HoverTooltip,
 					tooltipContentClass: tc.a.tooltipContentClass,
 					text: o.a.createElement(sc, null, e.text)
@@ -31601,7 +31706,7 @@
 						e(a.z(t))
 					},
 					toggleDraftIsPublic: n => {
-						e(D.s(n)), e(Object(D.r)(t.draftId)), e((e, s) => {
+						e(F.s(n)), e(Object(F.r)(t.draftId)), e((e, s) => {
 							const o = Object(S.h)(s(), t.draftId);
 							o && O.g(s(), o, n)
 						})
@@ -31709,7 +31814,7 @@
 				});
 			var Lc = Object(r.b)(Rc, e => ({
 					showDraftsList: () => {
-						e(D.p()), e(a.x(f.d))
+						e(F.p()), e(a.x(f.d))
 					},
 					showCollectionsList: () => {
 						e(a.x(f.a))
@@ -31744,9 +31849,9 @@
 					}), o.a.createElement(Ic, null, r))))
 				}),
 				Ac = n("./src/reddit/actions/polls.ts"),
-				Dc = n("./src/reddit/actions/postCreation/editorContent.ts"),
-				Fc = n("./src/reddit/components/Governance/PollHelpText/index.m.less"),
-				Bc = n.n(Fc);
+				Fc = n("./src/reddit/actions/postCreation/editorContent.ts"),
+				Dc = n("./src/reddit/components/Governance/PollHelpText/index.m.less"),
+				Bc = n.n(Dc);
 			const Uc = Object(i.c)({
 				subredditGovInfo: (e, t) => {
 					let {
@@ -32136,12 +32241,12 @@
 				Rl = n("./src/reddit/helpers/richTextEditor/index.ts"),
 				Ll = n("./src/reddit/models/PostRequirements/index.ts"),
 				Al = n("./src/reddit/icons/svgs/GovSmall/index.tsx"),
-				Dl = n("./src/reddit/icons/svgs/Poll/index.tsx"),
-				Fl = n("./src/reddit/components/PostCreationForm/PostEditor/GovTypeSelector/index.m.less"),
-				Bl = n.n(Fl);
+				Fl = n("./src/reddit/icons/svgs/Poll/index.tsx"),
+				Dl = n("./src/reddit/components/PostCreationForm/PostEditor/GovTypeSelector/index.m.less"),
+				Bl = n.n(Dl);
 			const Ul = Object(Qt.a)(Vc.a),
 				Kl = [{
-					Icon: Dl.a,
+					Icon: Fl.a,
 					showNewTag: !0,
 					text: () => l.fbt._("general", null, {
 						hk: "2zk1er"
@@ -32252,7 +32357,7 @@
 								isContentChanged: s
 							})), n()
 						},
-						onToggleEditorMode: (t, n) => e(Dc.d(f.g.POST_CREATION, t, n)),
+						onToggleEditorMode: (t, n) => e(Fc.d(f.g.POST_CREATION, t, n)),
 						onTrackToolbarClick: (t, n) => e((e, s) => O.z(s(), t, n)),
 						onUpdatePoll: t => e(Object(Ac.b)(t))
 					}
@@ -32620,23 +32725,15 @@
 				Td = n("./src/lib/filterQueryParams/index.ts"),
 				Id = n("./src/reddit/selectors/gold/powerups.ts"),
 				Pd = n("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
-				Md = n("./src/reddit/icons/svgs/Media/index.tsx");
-			var Nd = e => o.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 20 20"
-				}, o.a.createElement("g", {
-					fill: "inherit"
-				}, o.a.createElement("path", {
-					d: "M15.6498441,5.62718315 L4.38195636,5.62718315 C4.0364078,5.62718315 3.75596259,5.34673795 3.75596259,5.00118939 C3.75596259,4.65564083 4.0364078,4.37519562 4.38195636,4.37519562 L15.6498441,4.37519562 C15.9953927,4.37519562 16.2758379,4.65564083 16.2758379,5.00118939 C16.2758379,5.34673795 15.9953927,5.62718315 15.6498441,5.62718315 M15.6498441,9.38314574 L4.38195636,9.38314574 C4.0364078,9.38314574 3.75596259,9.10270054 3.75596259,8.75715198 C3.75596259,8.41160342 4.0364078,8.13115821 4.38195636,8.13115821 L15.6498441,8.13115821 C15.9953927,8.13115821 16.2758379,8.41160342 16.2758379,8.75715198 C16.2758379,9.10270054 15.9953927,9.38314574 15.6498441,9.38314574 M13.1458691,13.1391083 L4.38195636,13.1391083 C4.0364078,13.1391083 3.75596259,12.8586631 3.75596259,12.5131146 C3.75596259,12.167566 4.0364078,11.8871208 4.38195636,11.8871208 L13.1458691,11.8871208 C13.4914176,11.8871208 13.7718628,12.167566 13.7718628,12.5131146 C13.7718628,12.8586631 13.4914176,13.1391083 13.1458691,13.1391083 M17.6104566,0.000751192518 L2.42134388,0.000751192518 C1.08547319,0.000751192518 0,1.08622438 0,2.42084309 L0,17.5811601 C0,18.4174878 0.423171785,19.1837041 1.13054474,19.6306637 C1.52116485,19.8748012 1.96061247,20 2.410076,20 C2.77440437,20 3.14624466,19.9173688 3.49805316,19.7470985 L7.81490616,17.5210647 L17.5278254,17.5210647 C18.8611921,17.5210647 20.0318005,16.3504563 20.0318005,15.0170896 L20.0318005,2.42084309 C20.0318005,1.08622438 18.9463273,0.000751192518 17.6104566,0.000751192518"
-				}))),
+				Md = n("./src/reddit/icons/svgs/Media/index.tsx"),
+				Nd = n("./src/reddit/icons/svgs/Text/index.tsx"),
 				Rd = n("./src/reddit/components/PostCreationForm/Tabs/index.m.less"),
 				Ld = n.n(Rd);
 			const Ad = e => dt.a.wrapped(e, "Component", Ld.a),
-				Dd = Ad(Pd.a),
-				Fd = Ad(Md.a),
-				Bd = dt.a.wrapped(Dl.a, "PollIcon", Ld.a),
-				Ud = Ad(Nd),
+				Fd = Ad(Pd.a),
+				Dd = Ad(Md.a),
+				Bd = dt.a.wrapped(Fl.a, "PollIcon", Ld.a),
+				Ud = Ad(Nd.a),
 				Kd = dt.a.div("Container", Ld.a),
 				Hd = e => o.a.createElement("button", {
 					className: Object(We.a)(Ld.a.Tab, e.className, {
@@ -32747,15 +32844,15 @@
 						active: s === m.Jb.MEDIA,
 						disabled: n.media,
 						onClick: this.onMediaTabClick
-					}, n.media && o.a.createElement(Dt.a, {
+					}, n.media && o.a.createElement(Ft.a, {
 						text: l.fbt._("Images and videos are not allowed in {subreddit name}", [l.fbt._param("subreddit name", "r/".concat(i))], {
 							hk: "2uC6BP"
 						})
-					}), o.a.createElement(Fd, null), u), o.a.createElement(Hd, {
+					}), o.a.createElement(Dd, null), u), o.a.createElement(Hd, {
 						active: s === m.Jb.LINK_ONLY,
 						disabled: n.link,
 						onClick: this.onLinkTabClick
-					}, o.a.createElement(Dd, null), l.fbt._("Link", null, {
+					}, o.a.createElement(Fd, null), l.fbt._("Link", null, {
 						hk: "1pbEKv"
 					})), e && o.a.createElement(Hd, {
 						active: s === m.Jb.POLL,
@@ -33050,7 +33147,7 @@
 						pageLayer: o
 					} = t;
 					return {
-						onLoadDraft: t => e(D.q(t)),
+						onLoadDraft: t => e(F.q(t)),
 						onSubmit: (t, r) => e(((e, t) => async (n, s, o) => {
 							let {
 								apiContext: r
@@ -33064,7 +33161,7 @@
 								d = oe.d.rteVideoPoster(i),
 								u = Oe(i),
 								p = l === m.Jb.MEDIA;
-							u && (d || p) && (await n(P.f(u)), Oe(s())) || (e === f.q.Draft ? await n(Object(D.r)(t.draftId)) : e === f.q.ScheduledPost && Object(de.r)(i) ? await n(je(t)) : e === f.q.ScheduledPost ? await n(we(t)) : await n(Se(t)))
+							u && (d || p) && (await n(P.f(u)), Oe(s())) || (e === f.q.Draft ? await n(Object(F.r)(t.draftId)) : e === f.q.ScheduledPost && Object(de.r)(i) ? await n(je(t)) : e === f.q.ScheduledPost ? await n(we(t)) : await n(Se(t)))
 						})(t, {
 							draftId: n || void 0,
 							pageLayer: o,
@@ -33089,7 +33186,7 @@
 							})), e(ke.j(P.a, !0))
 						},
 						onClearErrors: (t, n) => t && e(a.i(n)),
-						onRequestDraftList: () => e(D.p()),
+						onRequestDraftList: () => e(F.p()),
 						onSetDestCollection: t => e(_e.d(t)),
 						onStartTypingInput: t => e((e, n) => O.n(n(), f.k.TYPE, t)),
 						onToggleIsChanged: t => e(a.r(t)),
@@ -33231,9 +33328,9 @@
 			})), n.d(t, "v", (function() {
 				return A
 			})), n.d(t, "b", (function() {
-				return D
-			})), n.d(t, "w", (function() {
 				return F
+			})), n.d(t, "w", (function() {
+				return D
 			})), n.d(t, "t", (function() {
 				return B
 			})), n.d(t, "g", (function() {
@@ -33438,11 +33535,11 @@
 					const t = e.economics.paymentSystems;
 					return t.status === u.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
-				D = (e, t) => {
+				F = (e, t) => {
 					if (!t) return;
 					return e.economics.emotes[t]
 				},
-				F = (e, t) => {
+				D = (e, t) => {
 					const n = t && e.economics.gifs[t];
 					return !!n && n.hasGifProduct
 				},
@@ -33452,7 +33549,7 @@
 							benefit: c.a.CommentsWithGifs
 						})) return !0;
 					const o = s.d.spGiphy(e),
-						i = F(e, t),
+						i = D(e, t),
 						a = "replyToPost" !== n && Object(m.n)(e, {
 							commentId: n
 						}),
@@ -33785,4 +33882,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.004b0378e309cf1dc70c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9ec2c79757f147afd8a9.js.map

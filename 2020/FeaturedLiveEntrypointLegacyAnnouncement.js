@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.63b86531733eb88f8e90.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.92c5b2bc44c01ed58570.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointLegacyAnnouncement"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.m.less": function(e, n, t) {
@@ -25,25 +25,12 @@
 			var s = t("./node_modules/react/index.js"),
 				a = t.n(s),
 				c = t("./src/lib/classNames/index.ts"),
-				o = t("./src/reddit/controls/Button/index.tsx"),
-				i = t("./src/reddit/icons/svgs/Close/index.tsx"),
+				i = t("./src/reddit/controls/Button/index.tsx"),
+				o = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				r = t("./src/reddit/icons/svgs/Comments/index.tsx"),
 				l = t("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				m = t("./src/reddit/icons/svgs/Snoo/index.tsx");
-			var d = e => a.a.createElement("svg", {
-					className: e.className,
-					id: e.id,
-					onMouseEnter: e.onMouseEnter,
-					onMouseLeave: e.onMouseLeave,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 40 40"
-				}, e.desc && a.a.createElement("desc", null, e.desc), a.a.createElement("g", null, a.a.createElement("g", {
-					fill: "inherit"
-				}, a.a.createElement("polygon", {
-					points: "0,40 14.3,29.2 10.8,25.7"
-				}), a.a.createElement("path", {
-					d: "M23,27.6l10.8-10.8c2,1.1,4.5,0.8,6.2-0.9L24.1,0c-1.7,1.7-2,4.2-0.9,6.2L12.4,17c-2-1.1-4.5-0.8-6.2,0.9l15.9,15.9C23.8,32.1,24.1,29.6,23,27.6z"
-				})))),
+				d = t("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				m = t("./src/reddit/icons/svgs/Sticky/index.tsx"),
 				u = t("./src/reddit/icons/svgs/TextPost/index.tsx"),
 				x = t("./src/reddit/layout/row/Inline/index.tsx"),
 				v = t("./src/reddit/models/Live/index.ts"),
@@ -57,13 +44,13 @@
 					onBtnClick: s,
 					onClose: E
 				} = e, g = {
-					[v.b.Announcement]: a.a.createElement(d, {
+					[v.b.Announcement]: a.a.createElement(m.a, {
 						className: _.a.iconStyles
 					}),
 					[v.b.Document]: a.a.createElement(u.a, {
 						className: _.a.iconStyles
 					}),
-					[v.b.Snoo]: a.a.createElement(m.a, {
+					[v.b.Snoo]: a.a.createElement(d.a, {
 						className: _.a.iconStyles
 					}),
 					[v.b.Ama]: a.a.createElement(r.a, {
@@ -77,12 +64,12 @@
 					className: Object(c.a)(t, _.a.AnnouncementContainer)
 				}, a.a.createElement(x.a, null, g[n.icon], a.a.createElement("div", {
 					className: Object(c.a)(_.a.Title, _.a.isAnnouncement)
-				}, n.title), a.a.createElement(i.a, {
+				}, n.title), a.a.createElement(o.a, {
 					className: _.a.CloseButton,
 					onClick: E
 				})), a.a.createElement("div", {
 					className: Object(c.a)(_.a.Description, _.a.isAnnouncement)
-				}, n.description), a.a.createElement(o.g, {
+				}, n.description), a.a.createElement(i.g, {
 					className: _.a.Button,
 					target: "_blank",
 					href: n.url,
@@ -109,6 +96,25 @@
 				}))
 			}
 		},
+		"./src/reddit/icons/svgs/Sticky/index.tsx": function(e, n, t) {
+			"use strict";
+			var s = t("./node_modules/react/index.js"),
+				a = t.n(s);
+			n.a = e => a.a.createElement("svg", {
+				className: e.className,
+				id: e.id,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 40 40"
+			}, e.desc && a.a.createElement("desc", null, e.desc), a.a.createElement("g", null, a.a.createElement("g", {
+				fill: "inherit"
+			}, a.a.createElement("polygon", {
+				points: "0,40 14.3,29.2 10.8,25.7"
+			}), a.a.createElement("path", {
+				d: "M23,27.6l10.8-10.8c2,1.1,4.5,0.8,6.2-0.9L24.1,0c-1.7,1.7-2,4.2-0.9,6.2L12.4,17c-2-1.1-4.5-0.8-6.2,0.9l15.9,15.9C23.8,32.1,24.1,29.6,23,27.6z"
+			}))))
+		},
 		"./src/reddit/icons/svgs/TextPost/index.m.less": function(e, n, t) {
 			e.exports = {
 				icon: "_13NhOjx-Siom7MKe3Dex5y"
@@ -119,10 +125,10 @@
 			var s = t("./node_modules/react/index.js"),
 				a = t.n(s),
 				c = t("./src/lib/classNames/index.ts"),
-				o = t("./src/reddit/icons/svgs/TextPost/index.m.less"),
-				i = t.n(o);
+				i = t("./src/reddit/icons/svgs/TextPost/index.m.less"),
+				o = t.n(i);
 			n.a = e => a.a.createElement("svg", {
-				className: Object(c.a)(i.a.icon, e.className),
+				className: Object(c.a)(o.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("path", {
@@ -133,4 +139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.63b86531733eb88f8e90.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.92c5b2bc44c01ed58570.js.map

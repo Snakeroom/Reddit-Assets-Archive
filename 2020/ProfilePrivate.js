@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.b26a033dca4a7c7b1298.js
-// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.7676aabecba17c6d7141.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2225,63 +2225,35 @@
 				ie = s("./src/reddit/icons/fonts/Report/index.tsx"),
 				ae = s("./src/reddit/icons/svgs/Flag/index.tsx"),
 				ce = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				de = s("./src/reddit/icons/svgs/Save/index.m.less"),
-				le = s.n(de);
-			var me = e => o.a.createElement("svg", {
-					className: Object(a.a)(le.a.icon, e.className),
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, o.a.createElement("defs", null, o.a.createElement("path", {
-					id: "".concat("save-svg", "a"),
-					d: "M14 16.209l-3.403-1.486a1.52 1.52 0 0 0-1.198.002L6 16.21V5.5c0-.52-.087-1.024-.255-1.5H12.5c.827 0 1.5.673 1.5 1.5V16.21zM12.5 2h-11a.5.5 0 1 0 0 1C2.879 3 4 4.12 4 5.5v12.236a.999.999 0 0 0 1.4.916l4.6-2.008 4.6 2.008a1 1 0 0 0 1.4-.917V5.5C16 3.57 14.43 2 12.5 2z"
-				})), o.a.createElement("g", {
-					fill: "inherit",
-					fillRule: "evenodd"
-				}, o.a.createElement("path", {
-					d: "M0 20h20V0H0z",
-					fill: "none"
-				}), o.a.createElement("mask", {
-					id: "".concat("save-svg", "b"),
-					fill: "none"
-				}, o.a.createElement("use", {
-					xlinkHref: "#".concat("save-svg", "a")
-				})), o.a.createElement("use", {
-					fill: "inherit",
-					xlinkHref: "#".concat("save-svg", "a")
-				}), o.a.createElement("g", {
-					mask: "url(#".concat("save-svg", "b)"),
-					fill: "none"
-				}, o.a.createElement("path", {
-					d: "M0 0h20v20H0z"
-				})))),
-				pe = s("./src/reddit/icons/svgs/Saved/index.tsx"),
-				ue = s("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				be = s("./src/reddit/components/Comments/Comment/ProfileCommentFlatlist/index.m.less"),
-				he = s.n(be),
-				xe = s("./src/lib/lessComponent.tsx");
-			const fe = xe.a.wrapped(ue.b, "DeleteIcon", he.a),
-				ve = xe.a.wrapped(ae.a, "ReportIcon", he.a),
-				ge = xe.a.wrapped(ce.a, "PencilIcon", he.a),
-				Oe = xe.a.wrapped(me, "SaveIcon", he.a),
-				Ee = xe.a.wrapped(pe.a, "SavedIcon", he.a),
-				Ce = xe.a.wrapped(Z.b, "OverflowMenu", he.a),
-				_e = xe.a.wrapped(N.c, "ModToolsFlatlist", he.a),
-				je = xe.a.wrapped(R.a, "ModActionsMenu", he.a),
-				ye = xe.a.wrapped(te.b, "DropdownRow", he.a),
-				ke = xe.a.wrapped(ne.a, "Flatlist", he.a),
-				Ie = xe.a.button("Button", he.a),
-				we = Object(D.t)(),
-				Pe = e => "Comment-".concat(e, "--Modal--DeleteComment"),
-				Te = e => "Distinguish--Dropdown--".concat(e),
-				Se = (e, t) => "".concat(e, "--").concat(t, "-overflow-menu"),
-				Ne = e => "View--Reports--".concat(e),
-				Me = Object(i.c)({
+				de = s("./src/reddit/icons/svgs/Save/index.tsx"),
+				le = s("./src/reddit/icons/svgs/Saved/index.tsx"),
+				me = s("./src/reddit/icons/svgs/Trash2/index.tsx"),
+				pe = s("./src/reddit/components/Comments/Comment/ProfileCommentFlatlist/index.m.less"),
+				ue = s.n(pe),
+				be = s("./src/lib/lessComponent.tsx");
+			const he = be.a.wrapped(me.b, "DeleteIcon", ue.a),
+				xe = be.a.wrapped(ae.a, "ReportIcon", ue.a),
+				fe = be.a.wrapped(ce.a, "PencilIcon", ue.a),
+				ve = be.a.wrapped(de.a, "SaveIcon", ue.a),
+				ge = be.a.wrapped(le.a, "SavedIcon", ue.a),
+				Oe = be.a.wrapped(Z.b, "OverflowMenu", ue.a),
+				Ee = be.a.wrapped(N.c, "ModToolsFlatlist", ue.a),
+				Ce = be.a.wrapped(R.a, "ModActionsMenu", ue.a),
+				_e = be.a.wrapped(te.b, "DropdownRow", ue.a),
+				je = be.a.wrapped(ne.a, "Flatlist", ue.a),
+				ye = be.a.button("Button", ue.a),
+				ke = Object(D.t)(),
+				Ie = e => "Comment-".concat(e, "--Modal--DeleteComment"),
+				we = e => "Distinguish--Dropdown--".concat(e),
+				Pe = (e, t) => "".concat(e, "--").concat(t, "-overflow-menu"),
+				Te = e => "View--Reports--".concat(e),
+				Se = Object(i.c)({
 					activeTooltipId: X.a,
 					isConfirmModalOpen: (e, t) => {
 						let {
 							comment: s
 						} = t;
-						return Object(z.a)(e) === Pe(s.id)
+						return Object(z.a)(e) === Ie(s.id)
 					},
 					isPendingDeletion: (e, t) => {
 						let {
@@ -2334,7 +2306,7 @@
 						})
 					}
 				});
-			class Le extends o.a.PureComponent {
+			class Ne extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleDistinguishToggle = () => {
 						this.props.sendEvent(Object(se.a)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
@@ -2361,10 +2333,10 @@
 						modModeEnabled: n,
 						showModTools: r
 					} = this.props, i = Object(H.a)(s), a = !!t && t.displayText === e.author;
-					if (r && i) return n ? o.a.createElement(_e, {
+					if (r && i) return n ? o.a.createElement(Ee, {
 						comment: e,
 						isCommentAuthor: a
-					}) : o.a.createElement(je, {
+					}) : o.a.createElement(Ce, {
 						dropdownId: "".concat(e.id, "-profile-mod-actions-menu"),
 						inCommentFlatlist: !0,
 						onClick: this.handleModActionsMenu
@@ -2382,12 +2354,12 @@
 					if (s && Object(F.c)(e) && !t) return o.a.createElement(N.b, {
 						text: "".concat(n),
 						onClick: this.handleRestrictedButtonClick,
-						selected: this.props.activeTooltipId === Ne(e.id),
-						id: Ne(e.id)
+						selected: this.props.activeTooltipId === Te(e.id),
+						id: Te(e.id)
 					}, o.a.createElement(A.a, {
 						model: e,
 						onIgnoreReports: this.handleIgnoreReports,
-						tooltipId: Ne(e.id)
+						tooltipId: Te(e.id)
 					}), e.ignoreReports ? o.a.createElement(oe.a, null) : o.a.createElement(ie.a, null))
 				}
 				renderDistinguishDropdown() {
@@ -2401,10 +2373,10 @@
 					} = this.props, a = Object(H.a)(s), c = !!t && t.displayText === e.author, d = !!t && t.isEmployee;
 					if (i && c && !e.bannedBy && (d || a && !n)) return o.a.createElement(N.b, {
 						onClick: this.handleDistinguishToggle,
-						selected: this.props.activeTooltipId === Te(e.id)
+						selected: this.props.activeTooltipId === we(e.id)
 					}, o.a.createElement(N.a, null), o.a.createElement(L.a, {
 						isAdminDistinguished: e.isAdmin,
-						isDropdownOpen: this.props.activeTooltipId === Te(e.id),
+						isDropdownOpen: this.props.activeTooltipId === we(e.id),
 						isModDistinguished: e.isMod,
 						isStickied: e.isStickied,
 						isTopLevelComment: !e.parentId,
@@ -2412,7 +2384,7 @@
 						isUserMod: a,
 						onDistinguishComment: r,
 						sendEventWithName: this.sendCommentDistinguishEvent,
-						tooltipId: Te(e.id)
+						tooltipId: we(e.id)
 					}))
 				}
 				render() {
@@ -2432,12 +2404,12 @@
 					} = this.props, u = Object(H.a)(c), b = !!n && n.displayText === e.author, h = !d && !e.isLocked || u && i, x = n && e.isGildable;
 					return o.a.createElement("div", {
 						className: t
-					}, o.a.createElement(ke, null, h && o.a.createElement(Ie, {
+					}, o.a.createElement(je, null, h && o.a.createElement(ye, {
 						onClick: this.handleReply,
 						disabled: a
 					}, O.fbt._("Reply", null, {
 						hk: "1xBqIs"
-					})), x && o.a.createElement(Ie, {
+					})), x && o.a.createElement(ye, {
 						onClick: this.handleGild
 					}, O.fbt._("Give Award", null, {
 						hk: "pQJYk"
@@ -2446,19 +2418,19 @@
 						permalink: Object(_.a)(l, e.id),
 						sendEventWithName: this.sendCommentEventWithName,
 						subreddit: m
-					}, o.a.createElement(Ie, {
+					}, o.a.createElement(ye, {
 						onClick: this.sendCommentEventWithNameShare
 					}, O.fbt._("share", null, {
 						hk: "3YIXpa"
-					}))), this.renderReportsDropdown(), o.a.createElement(Ce, {
-						dropdownId: Se(s, e.id),
+					}))), this.renderReportsDropdown(), o.a.createElement(Oe, {
+						dropdownId: Pe(s, e.id),
 						onClick: this.handleOverflowMenuClick
-					}, !b && !a && o.a.createElement(ye, {
+					}, !b && !a && o.a.createElement(_e, {
 						displayText: O.fbt._("report", null, {
 							hk: "ad7CE"
 						}),
 						onClick: this.props.onReportClick
-					}, o.a.createElement(ve, null)), o.a.createElement(ye, {
+					}, o.a.createElement(xe, null)), o.a.createElement(_e, {
 						displayText: e.isSaved ? O.fbt._("Unsave", null, {
 							hk: "4kQcAP"
 						}) : O.fbt._("Save", null, {
@@ -2466,17 +2438,17 @@
 						}),
 						isSelected: e.isSaved,
 						onClick: this.handleSave
-					}, e.isSaved ? o.a.createElement(Ee, null) : o.a.createElement(Oe, null)), b && o.a.createElement(ye, {
+					}, e.isSaved ? o.a.createElement(ge, null) : o.a.createElement(ve, null)), b && o.a.createElement(_e, {
 						displayText: O.fbt._("Edit", null, {
 							hk: "1nftDt"
 						}),
 						onClick: this.handleEdit
-					}, o.a.createElement(ge, null)), b && o.a.createElement(ye, {
+					}, o.a.createElement(fe, null)), b && o.a.createElement(_e, {
 						displayText: O.fbt._("delete", null, {
 							hk: "e8kvB"
 						}),
 						onClick: this.handleDelete
-					}, o.a.createElement(fe, null))), this.props.isConfirmModalOpen && o.a.createElement(M.a, {
+					}, o.a.createElement(he, null))), this.props.isConfirmModalOpen && o.a.createElement(M.a, {
 						actionText: O.fbt._("delete", null, {
 							hk: "3Ene8H"
 						}),
@@ -2501,7 +2473,7 @@
 					}))
 				}
 			}
-			var Re = we(Object(r.b)(Me, (e, t) => {
+			var Me = ke(Object(r.b)(Se, (e, t) => {
 					let {
 						comment: s,
 						commentsPageKey: n
@@ -2516,15 +2488,15 @@
 						})),
 						onReportClick: () => e(Object(P.j)(s.id)),
 						onToggleDistinguishDropdown: () => e(Object(T.h)({
-							tooltipId: Te(s.id)
+							tooltipId: we(s.id)
 						})),
 						onToggleReportsDropdown: () => e(Object(T.h)({
-							tooltipId: Ne(s.id)
+							tooltipId: Te(s.id)
 						})),
 						onToggleSave: () => e(Object(k.gb)(s.id)),
 						handleDelete: () => {
-							e(Object(w.i)(Pe(s.id))), e(Object(T.h)({
-								tooltipId: Se(n, s.id)
+							e(Object(w.i)(Ie(s.id))), e(Object(T.h)({
+								tooltipId: Pe(n, s.id)
 							}))
 						},
 						handleEdit: t => {
@@ -2546,25 +2518,25 @@
 								};
 							e(Object(G.a)(t)), e(Object(k.bb)(o))
 						},
-						toggleDeleteCommentModal: () => e(Object(w.i)(Pe(s.id)))
+						toggleDeleteCommentModal: () => e(Object(w.i)(Ie(s.id)))
 					}
-				})(Object(ee.c)(Object(B.b)(Le)))),
-				Fe = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
-				Ae = s("./src/reddit/components/RichTextJson/index.tsx"),
-				Be = s("./src/reddit/helpers/getRichTextContent/index.ts"),
-				De = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
-				We = s.n(De);
-			const He = xe.a.wrapped(Fe.a, "TopMeta", We.a),
-				Ge = xe.a.div("ProfileCommentWrapper", We.a),
-				Ue = xe.a.div("CommentBody", We.a),
-				Ve = Object(r.b)(() => Object(i.c)({
+				})(Object(ee.c)(Object(B.b)(Ne)))),
+				Le = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
+				Re = s("./src/reddit/components/RichTextJson/index.tsx"),
+				Fe = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				Ae = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
+				Be = s.n(Ae);
+			const De = be.a.wrapped(Le.a, "TopMeta", Be.a),
+				We = be.a.div("ProfileCommentWrapper", Be.a),
+				He = be.a.div("CommentBody", Be.a),
+				Ge = Object(r.b)(() => Object(i.c)({
 					comment: (e, t) => Object(q.n)(e, t),
 					flair: q.e
 				})),
-				ze = Object(d.b)(e => ({
+				Ue = Object(d.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			t.a = Ve(e => {
+			t.a = Ge(e => {
 				const {
 					comment: t,
 					commentsPageKey: s,
@@ -2572,26 +2544,26 @@
 					isExpanded: r,
 					showFlatlist: i,
 					showModTools: d
-				} = e, l = s => o.a.createElement(Ae.a, {
+				} = e, l = s => o.a.createElement(Re.a, {
 					className: s,
-					content: Object(Be.a)(t),
-					rtJsonElementProps: ze(e)
+					content: Object(Fe.a)(t),
+					rtJsonElementProps: Ue(e)
 				});
-				return o.a.createElement(Ge, {
+				return o.a.createElement(We, {
 					className: Object(a.a)({
-						[We.a.isRemoved]: !!t.bannedBy
+						[Be.a.isRemoved]: !!t.bannedBy
 					})
-				}, o.a.createElement(He, {
+				}, o.a.createElement(De, {
 					collapsedBecauseCrowdControl: !1,
 					collapsed: !1,
 					comment: t,
 					commentsPageKey: s,
 					flair: n,
 					renderedInOverlay: !1
-				}), o.a.createElement("div", null, !t.isDeleted && o.a.createElement(Ue, null, r ? l() : o.a.createElement(g, {
+				}), o.a.createElement("div", null, !t.isDeleted && o.a.createElement(He, null, r ? l() : o.a.createElement(g, {
 					height: c.Hb,
 					isExpanded: r
-				}, l)), !t.isDeleted && i && o.a.createElement(Re, {
+				}, l)), !t.isDeleted && i && o.a.createElement(Me, {
 					comment: t,
 					commentsPageKey: s,
 					showModTools: d
@@ -9253,10 +9225,14 @@
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/icons/svgs/Checkbox/index.tsx");
+				i = s("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				a = s("./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx"),
+				c = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				d = s("./src/reddit/controls/Checkbox/index.m.less"),
+				l = s.n(d);
 
-			function a() {
-				return (a = Object.assign || function(e) {
+			function m() {
+				return (m = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -9264,30 +9240,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var c = e => o.a.createElement("svg", a({
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, e), o.a.createElement("g", {
-					transform: "translate(-32.000000, -173.000000)"
-				}, o.a.createElement("g", {
-					transform: "translate(32.000000, 173.000000)"
-				}, o.a.createElement("path", {
-					d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
-				})))),
-				d = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				l = s("./src/reddit/controls/Checkbox/index.m.less"),
-				m = s.n(l);
-
-			function p() {
-				return (p = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			var u = function(e, t) {
+			var p = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -9296,25 +9249,25 @@
 				}
 				return s
 			};
-			const b = e => t => {
+			const u = e => t => {
 					const {
 						className: s,
 						disabled: n,
 						redditStyle: i,
 						"data-redditstyle": a
-					} = t, c = u(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((e, t, s) => {
+					} = t, c = p(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((e, t, s) => {
 						const n = !(!t && !s);
 						let o = "";
-						return o = e ? n ? m.a.mDisabledRedditStyle : m.a.mDisabled : n ? m.a.mActiveRedditStyle : m.a.mActive
+						return o = e ? n ? l.a.mDisabledRedditStyle : l.a.mDisabled : n ? l.a.mActiveRedditStyle : l.a.mActive
 					})(n, i, a);
-					return o.a.createElement(e, p({
-						className: Object(r.a)(m.a.Checkbox, d, s)
+					return o.a.createElement(e, m({
+						className: Object(r.a)(l.a.Checkbox, d, s)
 					}, c))
 				},
-				h = b(d.a),
-				x = b(c);
+				b = u(c.a),
+				h = u(a.a);
 			t.a = e => {
-				const t = e.isHalfCheckboxSelected ? x : e.isCheckboxSelected ? h : i.a;
+				const t = e.isHalfCheckboxSelected ? h : e.isCheckboxSelected ? b : i.a;
 				return o.a.createElement("button", {
 					"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
 					className: e.className,
@@ -9323,7 +9276,7 @@
 					},
 					disabled: e.disabled
 				}, o.a.createElement(t, {
-					className: Object(r.a)(m.a.CheckboxSizing, e.className),
+					className: Object(r.a)(l.a.CheckboxSizing, e.className),
 					"data-redditstyle": e.redditStyle,
 					disabled: e.disabled,
 					style: e.checkBoxStyle
@@ -10618,6 +10571,31 @@
 				d: "M22.8,11.3v2.3c0,1.4-1,2.7-2.5,2.9c-1.6,0.2-3-1.1-3-2.7v-5c0,0,0-0.1,0-0.1l-0.8-0.4c-0.9-0.4-2-0.3-2.7,0.4L2.5,18.5h35L22.8,11.3z"
 			}))))
 		},
+		"./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				o = s.n(n);
+
+			function r() {
+				return (r = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => o.a.createElement("svg", r({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), o.a.createElement("g", {
+				transform: "translate(-32.000000, -173.000000)"
+			}, o.a.createElement("g", {
+				transform: "translate(32.000000, 173.000000)"
+			}, o.a.createElement("path", {
+				d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
+			}))))
+		},
 		"./src/reddit/icons/svgs/Flag/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -10651,6 +10629,41 @@
 			e.exports = {
 				icon: "_2qT9eltTv4vv9GxxEZqvc0"
 			}
+		},
+		"./src/reddit/icons/svgs/Save/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				o = s.n(n),
+				r = s("./src/lib/classNames/index.ts"),
+				i = s("./src/reddit/icons/svgs/Save/index.m.less"),
+				a = s.n(i);
+			t.a = e => o.a.createElement("svg", {
+				className: Object(r.a)(a.a.icon, e.className),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("defs", null, o.a.createElement("path", {
+				id: "".concat("save-svg", "a"),
+				d: "M14 16.209l-3.403-1.486a1.52 1.52 0 0 0-1.198.002L6 16.21V5.5c0-.52-.087-1.024-.255-1.5H12.5c.827 0 1.5.673 1.5 1.5V16.21zM12.5 2h-11a.5.5 0 1 0 0 1C2.879 3 4 4.12 4 5.5v12.236a.999.999 0 0 0 1.4.916l4.6-2.008 4.6 2.008a1 1 0 0 0 1.4-.917V5.5C16 3.57 14.43 2 12.5 2z"
+			})), o.a.createElement("g", {
+				fill: "inherit",
+				fillRule: "evenodd"
+			}, o.a.createElement("path", {
+				d: "M0 20h20V0H0z",
+				fill: "none"
+			}), o.a.createElement("mask", {
+				id: "".concat("save-svg", "b"),
+				fill: "none"
+			}, o.a.createElement("use", {
+				xlinkHref: "#".concat("save-svg", "a")
+			})), o.a.createElement("use", {
+				fill: "inherit",
+				xlinkHref: "#".concat("save-svg", "a")
+			}), o.a.createElement("g", {
+				mask: "url(#".concat("save-svg", "b)"),
+				fill: "none"
+			}, o.a.createElement("path", {
+				d: "M0 0h20v20H0z"
+			}))))
 		},
 		"./src/reddit/icons/svgs/Saved/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -11069,4 +11082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.b26a033dca4a7c7b1298.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7676aabecba17c6d7141.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.15f9275cab620f78c2a9.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.c29cd27b2f10d4c3e992.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, s) {
@@ -537,16 +537,8 @@
 				m = s("./src/reddit/actions/tooltip.ts"),
 				p = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/async.tsx"),
 				b = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				h = s("./src/reddit/endpoints/economics/banners.ts");
-			var g = e => n.a.createElement("svg", {
-					className: e.className,
-					id: e.id,
-					viewBox: "0 0 16 16",
-					xmlns: "http://www.w3.org/2000/svg",
-					onClick: e.onClick
-				}, n.a.createElement("path", {
-					d: "M10.65,8.27a1.55,1.55,0,1,0,1.55-1.6,1.58,1.58,0,0,0-1.55,1.6M6,8.27a1.56,1.56,0,1,0,1.55-1.6A1.58,1.58,0,0,0,6,8.27m-1.55,0a1.58,1.58,0,0,0-1.55-1.6,1.6,1.6,0,0,0,0,3.2,1.58,1.58,0,0,0,1.55-1.6"
-				})),
+				h = s("./src/reddit/endpoints/economics/banners.ts"),
+				g = s("./src/reddit/icons/svgs/Menu/index.tsx"),
 				x = s("./src/reddit/selectors/economics.ts"),
 				f = s("./src/reddit/selectors/tooltip.ts"),
 				O = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -857,7 +849,7 @@
 						withOverlay: !0,
 						subredditId: this.props.subredditId,
 						onClose: this.closeCheckout
-					})) : this.props.userIsPremiumSubscriber === x.a.NotSubscribed ? n.a.createElement(n.a.Fragment, null, e && n.a.createElement(n.a.Fragment, null, n.a.createElement(g, {
+					})) : this.props.userIsPremiumSubscriber === x.a.NotSubscribed ? n.a.createElement(n.a.Fragment, null, e && n.a.createElement(n.a.Fragment, null, n.a.createElement(g.a, {
 						id: he,
 						className: be.a.menuIcon,
 						onClick: this.props.onOpenDropdown
@@ -1031,7 +1023,21 @@
 					fillRule: "evenodd"
 				}))
 			}
+		},
+		"./src/reddit/icons/svgs/Menu/index.tsx": function(e, t, s) {
+			"use strict";
+			var r = s("./node_modules/react/index.js"),
+				n = s.n(r);
+			t.a = e => n.a.createElement("svg", {
+				className: e.className,
+				id: e.id,
+				viewBox: "0 0 16 16",
+				xmlns: "http://www.w3.org/2000/svg",
+				onClick: e.onClick
+			}, n.a.createElement("path", {
+				d: "M10.65,8.27a1.55,1.55,0,1,0,1.55-1.6,1.58,1.58,0,0,0-1.55,1.6M6,8.27a1.56,1.56,0,1,0,1.55-1.6A1.58,1.58,0,0,0,6,8.27m-1.55,0a1.58,1.58,0,0,0-1.55-1.6,1.6,1.6,0,0,0,0,3.2,1.58,1.58,0,0,0,1.55-1.6"
+			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.15f9275cab620f78c2a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.c29cd27b2f10d4c3e992.js.map

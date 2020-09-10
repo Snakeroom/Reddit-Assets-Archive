@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bafdfe196d01c1527e3d.js
-// Retrieved at 9/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3e8eb70e548d37d71dc7.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -693,15 +693,8 @@
 				i = r("./src/lib/classNames/index.ts"),
 				d = r("./src/lib/prettyPrintNumber/index.ts"),
 				c = r("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				l = r("./src/reddit/components/SubredditIcon/index.tsx");
-			var m = e => a.a.createElement("svg", {
-					className: e.className,
-					style: e.style,
-					viewBox: "0 0 10 8",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, a.a.createElement("g", null, a.a.createElement("path", {
-					d: "M4.152 1.3568C4.54367 0.730128 5.45633 0.730129 5.848 1.3568L9.04375 6.47C9.46003 7.13605 8.98119 8 8.19575 8H1.80425C1.01881 8 0.539969 7.13605 0.956249 6.47L4.152 1.3568Z"
-				}))),
+				l = r("./src/reddit/components/SubredditIcon/index.tsx"),
+				m = r("./src/reddit/icons/svgs/Triangle/index.tsx"),
 				u = r("./src/reddit/components/TopSubredditsWidget/index.m.less"),
 				p = r.n(u);
 			const g = e => a.a.createElement(a.a.Fragment, null, a.a.createElement(l.b, {
@@ -745,7 +738,7 @@
 						className: p.a.subredditRankItemColumn
 					}, a.a.createElement("span", {
 						className: p.a.rankText
-					}, s), a.a.createElement(m, {
+					}, s), a.a.createElement(m.a, {
 						className: Object(i.a)(p.a.arrow, !r && p.a.negative),
 						style: {
 							fill: n
@@ -1190,6 +1183,19 @@
 				points: "7.47566213 3 14.4756621 10 7.47566213 17 6 15.5239203 11.5239203 10 6 4.47566213"
 			})))
 		},
+		"./src/reddit/icons/svgs/Triangle/index.tsx": function(e, t, r) {
+			"use strict";
+			var s = r("./node_modules/react/index.js"),
+				n = r.n(s);
+			t.a = e => n.a.createElement("svg", {
+				className: e.className,
+				style: e.style,
+				viewBox: "0 0 10 8",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, n.a.createElement("g", null, n.a.createElement("path", {
+				d: "M4.152 1.3568C4.54367 0.730128 5.45633 0.730129 5.848 1.3568L9.04375 6.47C9.46003 7.13605 8.98119 8 8.19575 8H1.80425C1.01881 8 0.539969 7.13605 0.956249 6.47L4.152 1.3568Z"
+			})))
+		},
 		"./src/reddit/pages/SubredditLeaderboard/index.m.less": function(e, t, r) {
 			e.exports = {
 				SidebarLeft: "_2TB9TZ4gV-vIStjv6ocuVU",
@@ -1547,7 +1553,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				xe = Object(u.Cc)(p.f),
+				xe = Object(u.Dc)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: xe
@@ -1648,16 +1654,16 @@
 
 			function a(e) {
 				const t = o(e);
-				return t === s.xb.Rotate || t === s.xb.RotateAll
+				return t === s.yb.Rotate || t === s.yb.RotateAll
 			}
 
 			function o(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.wb
+					experimentName: s.xb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bafdfe196d01c1527e3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3e8eb70e548d37d71dc7.js.map

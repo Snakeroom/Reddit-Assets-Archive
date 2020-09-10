@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.fd486d2db9d863b081c6.js
-// Retrieved at 9/1/2020, 3:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.eede309d862920d9c4b9.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -162,7 +162,7 @@
 						}, r)
 					}
 				}));
-			class W extends l.a.Component {
+			class H extends l.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						creatingName: "",
@@ -325,7 +325,7 @@
 					})))))
 				}
 			}
-			t.default = Object(u.a)(G(z(W)))
+			t.default = Object(u.a)(G(z(H)))
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -578,10 +578,14 @@
 			var a = r("./node_modules/react/index.js"),
 				s = r.n(a),
 				n = r("./src/lib/classNames/index.ts"),
-				i = r("./src/reddit/icons/svgs/Checkbox/index.tsx");
+				i = r("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				o = r("./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx"),
+				d = r("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				l = r("./src/reddit/controls/Checkbox/index.m.less"),
+				c = r.n(l);
 
-			function o() {
-				return (o = Object.assign || function(e) {
+			function m() {
+				return (m = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var a in r) Object.prototype.hasOwnProperty.call(r, a) && (e[a] = r[a])
@@ -589,30 +593,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var d = e => s.a.createElement("svg", o({
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, e), s.a.createElement("g", {
-					transform: "translate(-32.000000, -173.000000)"
-				}, s.a.createElement("g", {
-					transform: "translate(32.000000, 173.000000)"
-				}, s.a.createElement("path", {
-					d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
-				})))),
-				l = r("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				c = r("./src/reddit/controls/Checkbox/index.m.less"),
-				m = r.n(c);
-
-			function u() {
-				return (u = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var a in r) Object.prototype.hasOwnProperty.call(r, a) && (e[a] = r[a])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			var h = function(e, t) {
+			var u = function(e, t) {
 				var r = {};
 				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (r[a] = e[a]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -621,25 +602,25 @@
 				}
 				return r
 			};
-			const p = e => t => {
+			const h = e => t => {
 					const {
 						className: r,
 						disabled: a,
 						redditStyle: i,
 						"data-redditstyle": o
-					} = t, d = h(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), l = ((e, t, r) => {
+					} = t, d = u(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), l = ((e, t, r) => {
 						const a = !(!t && !r);
 						let s = "";
-						return s = e ? a ? m.a.mDisabledRedditStyle : m.a.mDisabled : a ? m.a.mActiveRedditStyle : m.a.mActive
+						return s = e ? a ? c.a.mDisabledRedditStyle : c.a.mDisabled : a ? c.a.mActiveRedditStyle : c.a.mActive
 					})(a, i, o);
-					return s.a.createElement(e, u({
-						className: Object(n.a)(m.a.Checkbox, l, r)
+					return s.a.createElement(e, m({
+						className: Object(n.a)(c.a.Checkbox, l, r)
 					}, d))
 				},
-				b = p(l.a),
-				f = p(d);
+				p = h(d.a),
+				b = h(o.a);
 			t.a = e => {
-				const t = e.isHalfCheckboxSelected ? f : e.isCheckboxSelected ? b : i.a;
+				const t = e.isHalfCheckboxSelected ? b : e.isCheckboxSelected ? p : i.a;
 				return s.a.createElement("button", {
 					"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
 					className: e.className,
@@ -648,7 +629,7 @@
 					},
 					disabled: e.disabled
 				}, s.a.createElement(t, {
-					className: Object(n.a)(m.a.CheckboxSizing, e.className),
+					className: Object(n.a)(c.a.CheckboxSizing, e.className),
 					"data-redditstyle": e.redditStyle,
 					disabled: e.disabled,
 					style: e.checkBoxStyle
@@ -688,6 +669,31 @@
 				}).indexOf(t.trim().toLowerCase()) > -1 ? a.a.SameName : void 0
 			}
 		},
+		"./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx": function(e, t, r) {
+			"use strict";
+			var a = r("./node_modules/react/index.js"),
+				s = r.n(a);
+
+			function n() {
+				return (n = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var r = arguments[t];
+						for (var a in r) Object.prototype.hasOwnProperty.call(r, a) && (e[a] = r[a])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => s.a.createElement("svg", n({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), s.a.createElement("g", {
+				transform: "translate(-32.000000, -173.000000)"
+			}, s.a.createElement("g", {
+				transform: "translate(32.000000, 173.000000)"
+			}, s.a.createElement("path", {
+				d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
+			}))))
+		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, r) {
 			"use strict";
 			var a = r("./node_modules/react/index.js"),
@@ -703,4 +709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.fd486d2db9d863b081c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.eede309d862920d9c4b9.js.map

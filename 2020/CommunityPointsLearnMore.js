@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.852790c063739f500181.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.ccff441c08f5b00b6ce7.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -261,6 +261,19 @@
 					subreddit: Object(n.subredditById)(t, e)
 				})
 		},
+		"./src/reddit/icons/svgs/ArrowRightThin/index.tsx": function(e, t, a) {
+			"use strict";
+			var n = a("./node_modules/react/index.js"),
+				s = a.n(n);
+			t.a = e => s.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 16 16",
+				version: "1.1",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, s.a.createElement("path", {
+				d: "M8.56569 0.234315C8.25327 -0.0781049 7.74673 -0.0781049 7.43431 0.234315C7.12189 0.546734 7.12189 1.05327 7.43431 1.36569L13.2686 7.2H0.8C0.358172 7.2 0 7.55817 0 8C0 8.44183 0.358172 8.8 0.8 8.8H13.2686L7.43431 14.6343C7.12189 14.9467 7.12189 15.4533 7.43431 15.7657C7.74673 16.0781 8.25327 16.0781 8.56569 15.7657L15.7657 8.56569C16.0781 8.25327 16.0781 7.74673 15.7657 7.43431L8.56569 0.234315Z"
+			}))
+		},
 		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/Carousel/index.m.less": function(e, t, a) {
 			e.exports = {
 				carousel: "_3vQyUlP9YLzmdL2rsquLS-",
@@ -316,23 +329,16 @@
 				d = a("./src/reddit/helpers/trackers/communityPoints.ts"),
 				m = a("./src/reddit/hooks/useTracking.ts"),
 				u = a("./src/reddit/selectors/economics.ts"),
-				b = a("./src/lib/classNames/index.ts");
-			var p = e => s.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 16 16",
-					version: "1.1",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, s.a.createElement("path", {
-					d: "M8.56569 0.234315C8.25327 -0.0781049 7.74673 -0.0781049 7.43431 0.234315C7.12189 0.546734 7.12189 1.05327 7.43431 1.36569L13.2686 7.2H0.8C0.358172 7.2 0 7.55817 0 8C0 8.44183 0.358172 8.8 0.8 8.8H13.2686L7.43431 14.6343C7.12189 14.9467 7.12189 15.4533 7.43431 15.7657C7.74673 16.0781 8.25327 16.0781 8.56569 15.7657L15.7657 8.56569C16.0781 8.25327 16.0781 7.74673 15.7657 7.43431L8.56569 0.234315Z"
-				})),
+				b = a("./src/lib/classNames/index.ts"),
+				p = a("./src/reddit/icons/svgs/ArrowRightThin/index.tsx"),
 				x = a("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Carousel/index.m.less"),
 				g = a.n(x);
 
-			function _(e) {
+			function h(e) {
 				let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
 				return "".concat(r.a.assetPath, "/img/communityPoints/learnMore/slide").concat(e).concat(t ? "@2x" : "", ".png")
 			}
-			var h = function(e) {
+			var _ = function(e) {
 					const [t, a] = Object(n.useState)(0), r = Object(c.d)(u.n), o = r && r.learnMore.pages || [], i = o.map(e => e.body).reduce((e, t) => t.length > e.length ? t : e, ""), l = t => {
 						a(t), t + 1 === o.length && e.onComplete()
 					};
@@ -341,8 +347,8 @@
 					}, s.a.createElement("div", {
 						className: g.a.imageContainer
 					}, o.map((e, a) => s.a.createElement("img", {
-						src: _(a),
-						srcSet: "".concat(_(a, !1), ", ").concat(_(a), " 2x"),
+						src: h(a),
+						srcSet: "".concat(h(a, !1), ", ").concat(h(a), " 2x"),
 						className: Object(b.a)(g.a.image, {
 							[g.a.before]: a < t,
 							[g.a.active]: a === t,
@@ -377,7 +383,7 @@
 						"aria-label": "Next",
 						className: g.a.nextButton,
 						onClick: () => l(t + 1)
-					}, s.a.createElement(p, {
+					}, s.a.createElement(p.a, {
 						className: g.a.arrowIcon
 					}))))
 				},
@@ -385,7 +391,7 @@
 				v = a("./src/reddit/pages/meta/CommunityPointsLearnMorePage/FAQ/index.m.less"),
 				E = a.n(v);
 
-			function O(e) {
+			function j(e) {
 				const [t, a] = Object(n.useState)(!1), c = Object(m.a)();
 				return s.a.createElement("div", {
 					className: E.a.section
@@ -406,7 +412,7 @@
 				}, e.children))
 			}
 
-			function j(e) {
+			function O(e) {
 				const t = "".concat(r.a.assetPath, "/img/communityPoints/faq/").concat(e.id);
 				return s.a.createElement("img", {
 					src: t + ".png",
@@ -424,7 +430,7 @@
 						className: E.a.container
 					}, s.a.createElement("div", {
 						className: E.a.title
-					}, "Frequently Asked Questions"), a.map(e => e.pages.map(e => s.a.createElement(O, {
+					}, "Frequently Asked Questions"), a.map(e => e.pages.map(e => s.a.createElement(j, {
 						id: e.analyticsPageName,
 						title: e.title,
 						key: e.analyticsPageName
@@ -437,7 +443,7 @@
 					}) : "image" in e ? s.a.createElement("div", {
 						className: E.a.imageSection,
 						key: t
-					}, s.a.createElement(j, {
+					}, s.a.createElement(O, {
 						id: e.image
 					})) : null)))))
 				},
@@ -451,12 +457,12 @@
 				Object(n.useEffect)(() => {
 					g(Object(d.i)())
 				}, [g]);
-				const _ = x && x.learnMore.title;
+				const h = x && x.learnMore.title;
 				return s.a.createElement("div", {
 					className: M.a.container
 				}, s.a.createElement("div", {
 					className: M.a.title
-				}, _), s.a.createElement(h, {
+				}, h), s.a.createElement(_, {
 					onComplete: () => t(!0)
 				}), e && s.a.createElement(s.a.Fragment, null, s.a.createElement(l.f, {
 					className: M.a.createVaultButton,
@@ -472,4 +478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.852790c063739f500181.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.ccff441c08f5b00b6ce7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.35fb7b32b907a151b823.js
-// Retrieved at 9/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.1963e5b1ac8d4e4e9195.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -107,7 +107,7 @@
 									} = e;
 									return n === t.experimentName
 								});
-								if (n && Object(v.Dc)(n.variant)) return !1
+								if (n && Object(v.Ec)(n.variant)) return !1
 							}
 							return !((n[t.id] || 0) >= t.maxImpressionsCount)
 						})(c, e)).slice(0, 5),
@@ -127,7 +127,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var f = function(e, n) {
+			var E = function(e, n) {
 				var t = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && n.indexOf(s) < 0 && (t[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -136,7 +136,7 @@
 				}
 				return t
 			};
-			const E = o.a.memo(e => {
+			const f = o.a.memo(e => {
 					let {
 						announcement: n,
 						className: t,
@@ -168,7 +168,7 @@
 						announcement: n,
 						children: t,
 						to: s
-					} = e, a = f(e, ["announcement", "children", "to"]);
+					} = e, a = E(e, ["announcement", "children", "to"]);
 					const r = n.url.split("reddit.com");
 					return r.length > 1 ? o.a.createElement(c.a, g({
 						to: r[1]
@@ -280,7 +280,7 @@
 					className: j.a.ArrowPlaceholder
 				}), o.a.createElement("div", {
 					className: j.a.AnnouncementsWrapper
-				}, t.map((e, n) => o.a.createElement(E, {
+				}, t.map((e, n) => o.a.createElement(f, {
 					announcement: e,
 					className: Object(r.a)(j.a.Announcement, {
 						[j.a.isActive]: n === m,
@@ -337,4 +337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.35fb7b32b907a151b823.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.1963e5b1ac8d4e4e9195.js.map

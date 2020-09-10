@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.060641b7aa8dceef5656.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.74cba334bc3da659d85c.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -494,18 +494,9 @@
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
-				i = r("./src/lib/classNames/index.ts");
-
-			function a(e) {
-				return n.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 7 7"
-				}, n.a.createElement("path", {
-					d: "M3.49903 2.93517V0C2.81615 1.56205 1.56162 2.81693 0 3.5C1.56165 4.18307 2.81618 5.43795 3.49906 7L3.49904 4.06483H3.50096L3.50094 7C4.18382 5.43795 5.43835 4.18307 7 3.5C5.43838 2.81693 4.18385 1.56205 3.50097 0V2.93517H3.49903Z"
-				}))
-			}
-			var c = r("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+				i = r("./src/lib/classNames/index.ts"),
+				a = r("./src/reddit/icons/svgs/Bling/index.tsx"),
+				c = r("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				o = r("./src/reddit/icons/svgs/Crown/index.tsx"),
 				d = r("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
 				l = r("./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.m.less"),
@@ -544,11 +535,11 @@
 					src: Object(d.a)(e.subreddit, "Crown.gif")
 				}) : n.a.createElement(o.a, {
 					className: r.crown
-				}), n.a.createElement(a, {
+				}), n.a.createElement(a.a, {
 					className: r.bling1
-				}), n.a.createElement(a, {
+				}), n.a.createElement(a.a, {
 					className: r.bling2
-				}), n.a.createElement(a, {
+				}), n.a.createElement(a.a, {
 					className: r.bling3
 				}), t ? n.a.createElement("img", {
 					className: r.icon,
@@ -685,6 +676,24 @@
 				}
 			}
 		},
+		"./src/reddit/icons/svgs/Bling/index.tsx": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return i
+			}));
+			var s = r("./node_modules/react/index.js"),
+				n = r.n(s);
+
+			function i(e) {
+				return n.a.createElement("svg", {
+					className: e.className,
+					xmlns: "http://www.w3.org/2000/svg",
+					viewBox: "0 0 7 7"
+				}, n.a.createElement("path", {
+					d: "M3.49903 2.93517V0C2.81615 1.56205 1.56162 2.81693 0 3.5C1.56165 4.18307 2.81618 5.43795 3.49906 7L3.49904 4.06483H3.50096L3.50094 7C4.18382 5.43795 5.43835 4.18307 7 3.5C5.43838 2.81693 4.18385 1.56205 3.50097 0V2.93517H3.49903Z"
+				}))
+			}
+		},
 		"./src/reddit/icons/svgs/Crown/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -713,4 +722,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.060641b7aa8dceef5656.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.74cba334bc3da659d85c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.a8098a70d5948dca8839.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.db1c4d48cb938dd76d28.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~reddit-components-ProfileIdCard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -47,20 +47,11 @@
 				r = a.n(n),
 				s = a("./src/lib/classNames/index.ts"),
 				o = a("./src/reddit/controls/ImageInput/index.tsx"),
-				i = a("./src/reddit/controls/LoadingIcon/index.tsx");
-			var c = e => r.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 19 19"
-				}, r.a.createElement("path", {
-					fillRule: "evenodd",
-					clipRule: "evenodd",
-					d: "M14.55 2.58716L16.413 4.45018C16.9354 4.97264 16.9354 5.82198 16.413 6.34445L14.7732 7.98419C14.6857 8.07171 14.5714 8.11547 14.458 8.11547C14.3436 8.11547 14.2293 8.07171 14.1418 7.98419L11.0159 4.85832C10.8418 4.68417 10.8418 4.40105 11.0159 4.2269L12.6557 2.58716C13.1781 2.0647 14.0275 2.0647 14.55 2.58716ZM9.7531 5.48975C9.92725 5.31559 10.2104 5.31559 10.3845 5.48975L13.5104 8.61561C13.6845 8.78977 13.6845 9.07288 13.5104 9.24703L5.8806 16.8768C5.79665 16.9608 5.68322 17.0072 5.56533 17.0072H2.43947C2.19208 17.0072 1.99292 16.808 1.99292 16.5607V13.4348C1.99292 13.3169 2.03936 13.2035 2.12331 13.1195L9.7531 5.48975Z",
-					fill: "inherit"
-				})),
-				l = a("./src/reddit/models/ApiRequestState/index.ts"),
-				d = a("./src/reddit/components/EditableImage/index.m.less"),
-				m = a.n(d);
+				i = a("./src/reddit/controls/LoadingIcon/index.tsx"),
+				c = a("./src/reddit/icons/svgs/NewPost/index.tsx"),
+				d = a("./src/reddit/models/ApiRequestState/index.ts"),
+				l = a("./src/reddit/components/EditableImage/index.m.less"),
+				m = a.n(l);
 			const {
 				fbt: u
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), p = 80;
@@ -69,7 +60,7 @@
 					super(...arguments), this.state = {
 						apiRequestId: null
 					}, this.selectFile = e => {
-						const t = Object(l.b)();
+						const t = Object(d.b)();
 						this.setState({
 							apiRequestId: t
 						}), this.props.onFileSelected(e, t)
@@ -81,8 +72,8 @@
 						children: t,
 						className: a,
 						editButtonClassName: n,
-						isLoading: l,
-						imageUrl: d
+						isLoading: d,
+						imageUrl: l
 					} = this.props;
 					return r.a.createElement("div", {
 						className: Object(s.a)(m.a.Container, a)
@@ -91,19 +82,19 @@
 					}, r.a.createElement("span", {
 						className: m.a.ImageContainer,
 						role: "presentation"
-					}, d ? r.a.createElement("img", {
+					}, l ? r.a.createElement("img", {
 						alt: e,
 						className: m.a.Image,
-						src: d
+						src: l
 					}) : t), r.a.createElement(o.a, {
 						className: m.a.ImageUploader,
 						multiple: !1,
 						onChange: this.selectFile
-					}), !l && r.a.createElement("div", {
+					}), !d && r.a.createElement("div", {
 						className: Object(s.a)(m.a.EditButton, n)
-					}, r.a.createElement(c, {
+					}, r.a.createElement(c.a, {
 						className: m.a.EditIcon
-					}))), l && r.a.createElement(i.a, {
+					}))), d && r.a.createElement(i.a, {
 						className: m.a.LoadingIcon,
 						sizePx: p
 					}))
@@ -170,15 +161,15 @@
 				o = a.n(s),
 				i = a("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				c = a("./src/lib/lessComponent.tsx"),
-				l = a("./src/reddit/components/Widgets/Base/index.tsx"),
-				d = a("./src/reddit/controls/InternalLink/index.tsx"),
+				d = a("./src/reddit/components/Widgets/Base/index.tsx"),
+				l = a("./src/reddit/controls/InternalLink/index.tsx"),
 				m = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				u = a("./src/reddit/controls/OutboundLink/index.tsx"),
 				p = a("./src/reddit/icons/svgs/Admin/index.tsx"),
 				g = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				f = a("./src/reddit/icons/svgs/Premium/index.tsx"),
-				b = a("./src/reddit/icons/svgs/Settings/index.tsx"),
-				x = a("./src/reddit/layout/twoCol/Dynamic/index.tsx"),
+				x = a("./src/reddit/icons/svgs/Settings/index.tsx"),
+				b = a("./src/reddit/layout/twoCol/Dynamic/index.tsx"),
 				I = a("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				h = a("./node_modules/react-redux/es/index.js"),
 				_ = a("./node_modules/reselect/es/index.js"),
@@ -186,8 +177,8 @@
 				C = a("./src/lib/prettyPrintNumber/index.ts"),
 				E = a("./src/lib/timeAgo/index.ts"),
 				w = a("./src/reddit/contexts/InsideOverlay.tsx"),
-				y = a("./src/reddit/icons/svgs/Cake/index.tsx"),
-				P = a("./src/reddit/icons/svgs/Karma/index.tsx"),
+				P = a("./src/reddit/icons/svgs/Cake/index.tsx"),
+				y = a("./src/reddit/icons/svgs/Karma/index.tsx"),
 				O = a("./src/reddit/icons/svgs/User/index.tsx"),
 				N = a("./src/reddit/selectors/experiments/econAwardKarma.ts"),
 				j = a("./src/reddit/selectors/profile.ts"),
@@ -276,43 +267,43 @@
 						profileCreated: s,
 						isOverlay: i,
 						commentKarma: c,
-						postKarma: l,
-						totalKarma: d,
+						postKarma: d,
+						totalKarma: l,
 						subscribers: m
 					} = e, u = V(i, "karma"), p = V(i, "cakeday"), g = r.fbt._({
 						"*": "{number} Post Karma",
 						_1: "1 Post Karma"
-					}, [r.fbt._plural(l, "number", Object(C.b)(l, !0))], {
+					}, [r.fbt._plural(d, "number", Object(C.b)(d, !0))], {
 						hk: "husfU"
 					}), f = r.fbt._({
 						"*": "{number} Comment Karma",
 						_1: "1 Comment Karma"
 					}, [r.fbt._plural(c, "number", Object(C.b)(c, !0))], {
 						hk: "26iPTL"
-					}), b = r.fbt._({
+					}), x = r.fbt._({
 						"*": "{number} Awardee Karma",
 						_1: "1 Awardee Karma"
 					}, [r.fbt._plural(t, "number", Object(C.b)(t, !0))], {
 						hk: "2Ww5MR"
-					}), x = r.fbt._({
+					}), b = r.fbt._({
 						"*": "{number} Awarder Karma",
 						_1: "1 Awarder Karma"
 					}, [r.fbt._plural(n, "number", Object(C.b)(n, !0))], {
 						hk: "2F1chz"
-					}), I = a ? "".concat(g, "\n").concat(f, "\n").concat(b, "\n").concat(x) : "".concat(g, "\n").concat(f);
+					}), I = a ? "".concat(g, "\n").concat(f, "\n").concat(x, "\n").concat(b) : "".concat(g, "\n").concat(f);
 					return o.a.createElement(G, null, o.a.createElement(R, {
-						icon: o.a.createElement(P.a, {
+						icon: o.a.createElement(y.a, {
 							className: A.a.icon,
 							key: "karma"
 						}),
-						label: Object(C.b)(d, !0),
+						label: Object(C.b)(l, !0),
 						title: r.fbt._("Karma", null, {
 							hk: "RtSgN"
 						}),
 						tooltipId: u,
 						tooltip: I
 					}), o.a.createElement(R, {
-						icon: o.a.createElement(y.a, {
+						icon: o.a.createElement(P.a, {
 							className: A.a.icon,
 							key: "cakeDay"
 						}),
@@ -359,7 +350,7 @@
 				return a
 			};
 			const ae = c.a.div("BannerWrapper", $.a),
-				ne = c.a.wrapped(l.b, "Widget", $.a),
+				ne = c.a.wrapped(d.b, "Widget", $.a),
 				re = c.a.h4("UserTitle", $.a),
 				se = c.a.wrapped(f.a, "PremiumIcon", $.a),
 				oe = c.a.div("Description", $.a),
@@ -367,17 +358,17 @@
 					var {
 						url: t
 					} = e, a = te(e, ["url"]);
-					return t ? o.a.createElement(d.a, ee({}, a, {
+					return t ? o.a.createElement(l.a, ee({}, a, {
 						className: $.a.userName,
 						to: t
 					})) : o.a.createElement("span", ee({}, a, {
 						className: $.a.userName
 					}))
 				},
-				ce = c.a.wrapped(x.a, "Actions", $.a),
-				le = c.a.wrapped(g.a, "CloseIcon", $.a),
-				de = c.a.wrapped(i.a, "SettingsLink", $.a),
-				me = c.a.wrapped(b.a, "SettingsIcon", $.a),
+				ce = c.a.wrapped(b.a, "Actions", $.a),
+				de = c.a.wrapped(g.a, "CloseIcon", $.a),
+				le = c.a.wrapped(i.a, "SettingsLink", $.a),
+				me = c.a.wrapped(x.a, "SettingsIcon", $.a),
 				ue = c.a.wrapped(m.a, "LoadingIconStyled", $.a),
 				pe = () => o.a.createElement(ue, {
 					sizePx: 20
@@ -403,13 +394,13 @@
 						footer: s,
 						isEmployee: i,
 						isGold: c,
-						isNSFW: l,
-						isOverlay: d,
+						isNSFW: d,
+						isOverlay: l,
 						isOwnProfile: m,
 						profileIcon: g,
 						publicDescription: f,
-						title: b,
-						url: x,
+						title: x,
+						url: b,
 						username: I,
 						isDefaultIcon: h,
 						isDeletingIcon: _,
@@ -417,9 +408,9 @@
 						onDeleteIcon: C,
 						onDeleteBanner: E,
 						editMode: w
-					} = this.props, y = o.a.createElement(q.a, {
+					} = this.props, P = o.a.createElement(q.a, {
 						iconUrl: g,
-						isNSFW: l,
+						isNSFW: d,
 						isProfileIdCard: !0,
 						userName: I
 					});
@@ -427,22 +418,22 @@
 						className: a
 					}, o.a.createElement(ae, null, o.a.createElement(X.a, {
 						bannerUrl: t,
-						isNSFW: l,
+						isNSFW: d,
 						userName: I
-					}), w && t && (v ? o.a.createElement(pe, null) : o.a.createElement(le, {
+					}), w && t && (v ? o.a.createElement(pe, null) : o.a.createElement(de, {
 						onClick: E
 					}))), o.a.createElement("div", {
 						className: J.a.SnooIconWrapper
-					}, m || !g || l ? y : o.a.createElement(u.b, {
+					}, m || !g || d ? P : o.a.createElement(u.b, {
 						isSponsored: !1,
 						href: g,
 						source: null
-					}, y), w && !h && (_ ? o.a.createElement(pe, null) : o.a.createElement(le, {
+					}, P), w && !h && (_ ? o.a.createElement(pe, null) : o.a.createElement(de, {
 						onClick: C
-					}))), !w && m && o.a.createElement(de, {
+					}))), !w && m && o.a.createElement(le, {
 						to: "/settings/profile"
-					}, o.a.createElement(me, null)), b && o.a.createElement(re, null, b), o.a.createElement(ie, {
-						url: x
+					}, o.a.createElement(me, null)), x && o.a.createElement(re, null, x), o.a.createElement(ie, {
+						url: b
 					}, "u/".concat(I)), i && o.a.createElement(p.a, {
 						className: J.a.adminIcon,
 						title: r.fbt._("Reddit admin", null, {
@@ -455,7 +446,7 @@
 						href: "".concat(n.a.redditUrl, "/premium")
 					}, o.a.createElement(se, null)), o.a.createElement(oe, null, f), o.a.createElement(Z, {
 						profileName: I,
-						isOverlay: d
+						isOverlay: l
 					}), this.renderAwardedLastMonth(), o.a.createElement(ce, null, e), s)
 				}
 			}
@@ -474,9 +465,9 @@
 				o = a("./src/reddit/models/Image/index.tsx"),
 				i = a("./src/reddit/components/EditableImage/index.tsx"),
 				c = a("./src/reddit/models/User/index.ts"),
-				l = a("./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts"),
-				d = a("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileBanner/index.m.less"),
-				m = a.n(d);
+				d = a("./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts"),
+				l = a("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileBanner/index.m.less"),
+				m = a.n(l);
 			class u extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -499,26 +490,26 @@
 						currentUser: a,
 						hideNSFWPref: r,
 						isNSFW: o,
-						userName: l
+						userName: d
 					} = this.props, {
-						isUpdating: d
+						isUpdating: l
 					} = this.state, u = e ? s.a.createElement("div", {
 						className: m.a.Banner,
 						style: {
 							backgroundImage: "url(".concat(e, ")")
 						}
 					}) : null;
-					return a && Object(c.e)(a) === l ? s.a.createElement(i.a, {
-						altText: n.fbt._("{userName} banner image", [n.fbt._param("userName", l)], {
+					return a && Object(c.e)(a) === d ? s.a.createElement(i.a, {
+						altText: n.fbt._("{userName} banner image", [n.fbt._param("userName", d)], {
 							hk: "1PcEBS"
 						}),
 						className: t,
-						isLoading: d,
+						isLoading: l,
 						onFileSelected: this.updateProfileIcon
 					}, u) : o && r ? null : u
 				}
 			}
-			t.a = Object(l.a)(u)
+			t.a = Object(d.a)(u)
 		},
 		"./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -536,8 +527,8 @@
 				o = a("./src/reddit/models/Image/index.tsx"),
 				i = a("./src/reddit/components/EditableImage/index.tsx"),
 				c = a("./src/reddit/components/UserIcon/index.tsx"),
-				l = a("./src/reddit/models/User/index.ts"),
-				d = a("./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts"),
+				d = a("./src/reddit/models/User/index.ts"),
+				l = a("./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts"),
 				m = a("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.m.less"),
 				u = a.n(m);
 			class p extends s.a.Component {
@@ -562,17 +553,17 @@
 						iconUrl: a,
 						isNSFW: r,
 						isProfileIdCard: o,
-						userName: d
+						userName: l
 					} = this.props, {
 						isUpdating: m
 					} = this.state, p = s.a.createElement(c.a, {
 						className: u.a.Icon,
 						iconUrl: a,
 						isNSFW: r,
-						userName: d
+						userName: l
 					});
-					return t && Object(l.e)(t) === d ? s.a.createElement(i.a, {
-						altText: n.fbt._("{userName} avatar image", [n.fbt._param("userName", d)], {
+					return t && Object(d.e)(t) === l ? s.a.createElement(i.a, {
+						altText: n.fbt._("{userName} avatar image", [n.fbt._param("userName", l)], {
 							hk: "1LJxYE"
 						}),
 						className: e,
@@ -582,7 +573,7 @@
 					}, p) : p
 				}
 			}
-			t.a = Object(d.a)(p)
+			t.a = Object(l.a)(p)
 		},
 		"./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts": function(e, t, a) {
 			"use strict";
@@ -619,7 +610,7 @@
 				o = a("./src/reddit/components/SEOTitle/index.tsx"),
 				i = a("./src/reddit/components/Widgets/Base/index.m.less"),
 				c = a.n(i),
-				l = function(e, t) {
+				d = function(e, t) {
 					var a = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (a[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -628,18 +619,18 @@
 					}
 					return a
 				};
-			const d = s.a.div("WidgetBackground", c.a),
+			const l = s.a.div("WidgetBackground", c.a),
 				m = s.a.wrapped(e => {
 					var {
 						children: t
-					} = e, a = l(e, ["children"]);
+					} = e, a = d(e, ["children"]);
 					return r.a.createElement("div", a, r.a.createElement(o.b, {
 						type: o.a.Widget
 					}, t))
 				}, "WidgetHeader", c.a);
 			t.b = e => r.a.createElement("div", {
 				className: e.className
-			}, r.a.createElement(d, null, e.children))
+			}, r.a.createElement(l, null, e.children))
 		},
 		"./src/reddit/controls/ImageInput/index.tsx": function(e, t, a) {
 			"use strict";
@@ -715,6 +706,21 @@
 				d: "M22.8,11.3v2.3c0,1.4-1,2.7-2.5,2.9c-1.6,0.2-3-1.1-3-2.7v-5c0,0,0-0.1,0-0.1l-0.8-0.4c-0.9-0.4-2-0.3-2.7,0.4L2.5,18.5h35L22.8,11.3z"
 			}))))
 		},
+		"./src/reddit/icons/svgs/NewPost/index.tsx": function(e, t, a) {
+			"use strict";
+			var n = a("./node_modules/react/index.js"),
+				r = a.n(n);
+			t.a = e => r.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 19 19"
+			}, r.a.createElement("path", {
+				fillRule: "evenodd",
+				clipRule: "evenodd",
+				d: "M14.55 2.58716L16.413 4.45018C16.9354 4.97264 16.9354 5.82198 16.413 6.34445L14.7732 7.98419C14.6857 8.07171 14.5714 8.11547 14.458 8.11547C14.3436 8.11547 14.2293 8.07171 14.1418 7.98419L11.0159 4.85832C10.8418 4.68417 10.8418 4.40105 11.0159 4.2269L12.6557 2.58716C13.1781 2.0647 14.0275 2.0647 14.55 2.58716ZM9.7531 5.48975C9.92725 5.31559 10.2104 5.31559 10.3845 5.48975L13.5104 8.61561C13.6845 8.78977 13.6845 9.07288 13.5104 9.24703L5.8806 16.8768C5.79665 16.9608 5.68322 17.0072 5.56533 17.0072H2.43947C2.19208 17.0072 1.99292 16.808 1.99292 16.5607V13.4348C1.99292 13.3169 2.03936 13.2035 2.12331 13.1195L9.7531 5.48975Z",
+				fill: "inherit"
+			}))
+		},
 		"./src/reddit/icons/svgs/User/index.tsx": function(e, t, a) {
 			"use strict";
 			var n = a("./node_modules/react/index.js"),
@@ -741,4 +747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.a8098a70d5948dca8839.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.db1c4d48cb938dd76d28.js.map

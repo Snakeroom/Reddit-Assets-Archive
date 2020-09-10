@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.560cc2bf7c51de2d46ce.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.955876fa278097dbe834.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -55,22 +55,9 @@
 				b = r("./src/reddit/actions/modal.ts"),
 				p = r("./src/reddit/components/Governance/Token/index.tsx"),
 				f = r("./src/reddit/controls/Button/index.tsx"),
-				g = r("./src/reddit/icons/svgs/Clock/index.tsx");
-
-			function h(e) {
-				return s.a.createElement("svg", {
-					className: e.className,
-					style: e.style,
-					viewBox: "0 0 450 450",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, s.a.createElement("path", {
-					clipRule: "evenodd",
-					d: "m206.073.784912c-27.274 2.271728-53.166 9.407988-76.806 20.538788l94.176 200.9793-126.9464-182.0213c-21.8975 15.262-40.9531 34.3177-56.2149 56.2151l182.0213 126.9462-200.9793-94.177c-11.1308 23.641-18.26755 49.533-20.539032 76.807l221.101332 18.927-221.101332 18.927c2.271482 27.274 9.408232 53.167 20.539032 76.807l200.9803-94.177-182.0223 126.946c15.2618 21.898 34.3179 40.954 56.2154 56.215l126.9459-182.021-94.176 200.979c23.64 11.131 49.532 18.268 76.806 20.539l18.927-221.101 18.927 221.101c27.274-2.271 53.166-9.408 76.806-20.539l-94.176-200.979 126.946 182.021c21.897-15.261 40.954-34.317 56.215-56.215l-182.022-126.946 200.98 94.177c11.131-23.64 18.268-49.533 20.539-76.807l-221.101-18.927 221.101-18.927c-2.271-27.274-9.407-53.166-20.538-76.806l-200.98 94.176 182.022-126.9457c-15.262-21.8974-34.318-40.9536-56.216-56.2156l-126.946 182.0213 94.176-200.9793c-23.64-11.1308-49.532-18.26706-76.806-20.538788l-18.927 221.101088z",
-					fill: "inherit",
-					fillRule: "evenodd"
-				}))
-			}
-			var x = r("./src/reddit/models/Badge/index.ts"),
+				g = r("./src/reddit/icons/svgs/Clock/index.tsx"),
+				x = r("./src/reddit/icons/svgs/Sunburst/index.tsx"),
+				h = r("./src/reddit/models/Badge/index.ts"),
 				v = r("./src/reddit/selectors/gov.ts"),
 				y = r("./src/reddit/components/Governance/ModalClose/index.tsx"),
 				E = r("./src/reddit/components/Badges/PurchaseModal/Header/index.m.less"),
@@ -142,8 +129,8 @@
 					})), s.a.createElement("div", {
 						className: j.a.content
 					}, function(e) {
-						const t = Object(x.b)(128, 128, e);
-						return s.a.createElement(n.Fragment, null, s.a.createElement(h, {
+						const t = Object(h.b)(128, 128, e);
+						return s.a.createElement(n.Fragment, null, s.a.createElement(x.a, {
 							className: j.a.sunburst
 						}), s.a.createElement("img", {
 							className: j.a.image,
@@ -209,7 +196,7 @@
 					})
 				}
 			});
-			var L = Object(a.b)(R, (e, t) => {
+			var S = Object(a.b)(R, (e, t) => {
 					let {
 						productId: r
 					} = t;
@@ -226,7 +213,7 @@
 					})), s.a.createElement("div", {
 						className: T.a.content
 					}, function(e) {
-						const t = Object(x.b)(96, 96, e);
+						const t = Object(h.b)(96, 96, e);
 						return s.a.createElement("img", {
 							className: T.a.badgeImage,
 							src: t.url2x,
@@ -264,8 +251,8 @@
 					}))))) : null;
 					var t, r, n, a
 				})),
-				S = r("./src/reddit/components/Badges/PurchaseModal/index.m.less"),
-				U = r.n(S);
+				L = r("./src/reddit/components/Badges/PurchaseModal/index.m.less"),
+				U = r.n(L);
 			const H = Object(c.c)({
 					alreadyOwned: i.b
 				}),
@@ -275,7 +262,7 @@
 					className: Object(o.a)(U.a.container, e.className)
 				}, e.alreadyOwned ? s.a.createElement(O, {
 					productId: e.productId
-				}) : s.a.createElement(L, {
+				}) : s.a.createElement(S, {
 					productId: e.productId
 				}))
 			})))
@@ -478,6 +465,28 @@
 				fill: "inherit"
 			})))
 		},
+		"./src/reddit/icons/svgs/Sunburst/index.tsx": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return a
+			}));
+			var n = r("./node_modules/react/index.js"),
+				s = r.n(n);
+
+			function a(e) {
+				return s.a.createElement("svg", {
+					className: e.className,
+					style: e.style,
+					viewBox: "0 0 450 450",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, s.a.createElement("path", {
+					clipRule: "evenodd",
+					d: "m206.073.784912c-27.274 2.271728-53.166 9.407988-76.806 20.538788l94.176 200.9793-126.9464-182.0213c-21.8975 15.262-40.9531 34.3177-56.2149 56.2151l182.0213 126.9462-200.9793-94.177c-11.1308 23.641-18.26755 49.533-20.539032 76.807l221.101332 18.927-221.101332 18.927c2.271482 27.274 9.408232 53.167 20.539032 76.807l200.9803-94.177-182.0223 126.946c15.2618 21.898 34.3179 40.954 56.2154 56.215l126.9459-182.021-94.176 200.979c23.64 11.131 49.532 18.268 76.806 20.539l18.927-221.101 18.927 221.101c27.274-2.271 53.166-9.408 76.806-20.539l-94.176-200.979 126.946 182.021c21.897-15.261 40.954-34.317 56.215-56.215l-182.022-126.946 200.98 94.177c11.131-23.64 18.268-49.533 20.539-76.807l-221.101-18.927 221.101-18.927c-2.271-27.274-9.407-53.166-20.538-76.806l-200.98 94.176 182.022-126.9457c-15.262-21.8974-34.318-40.9536-56.216-56.2156l-126.946 182.0213 94.176-200.9793c-23.64-11.1308-49.532-18.26706-76.806-20.538788l-18.927 221.101088z",
+					fill: "inherit",
+					fillRule: "evenodd"
+				}))
+			}
+		},
 		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -500,9 +509,9 @@
 			})), r.d(t, "t", (function() {
 				return g
 			})), r.d(t, "h", (function() {
-				return h
-			})), r.d(t, "i", (function() {
 				return x
+			})), r.d(t, "i", (function() {
+				return h
 			})), r.d(t, "j", (function() {
 				return v
 			})), r.d(t, "k", (function() {
@@ -578,11 +587,11 @@
 					if (!n) throw new Error("No wallet address found");
 					return n
 				},
-				h = (e, t) => {
+				x = (e, t) => {
 					const r = f(e, t);
 					return r && r.amount || "0"
 				},
-				x = (e, t) => {
+				h = (e, t) => {
 					if (Object(c.a)(e)) {
 						const t = Object(d.g)(e);
 						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
@@ -658,4 +667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.560cc2bf7c51de2d46ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.955876fa278097dbe834.js.map

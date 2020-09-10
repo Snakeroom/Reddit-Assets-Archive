@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.7892f32b95ffd69dba64.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.a5c9446dad0036244b27.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -11,9 +11,9 @@
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return x
+				return p
 			})), s.d(t, "b", (function() {
-				return C
+				return h
 			}));
 			var a = s("./node_modules/lodash/values.js"),
 				n = s.n(a),
@@ -21,164 +21,25 @@
 				r = s.n(i),
 				o = s("./src/lib/classNames/index.ts"),
 				c = s("./src/lib/fastdom/index.ts"),
-				l = s("./src/reddit/constants/colors.ts");
-			const d = function(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-				return "".concat(t, "-du-left-").concat(e)
-			};
-			var m = e => {
-				const {
-					seed: t = ""
-				} = e, s = d("a", t), a = d("b", t), n = d("c", t), i = d("d", t);
-				return r.a.createElement("svg", {
-					className: e.className,
-					onClick: e.onClick,
-					viewBox: "4 0 45 45",
-					version: "1.1",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, r.a.createElement("defs", null, r.a.createElement("circle", {
-					id: a,
-					cx: "18",
-					cy: "18",
-					r: "18"
-				}), r.a.createElement("filter", {
-					id: s,
-					x: "-33.3%",
-					y: "-25%",
-					width: "166.7%",
-					height: "166.7%"
-				}, r.a.createElement("feOffset", {
-					dy: "3",
-					in: "SourceAlpha",
-					result: "shadowOffsetOuter1"
-				}), r.a.createElement("feGaussianBlur", {
-					in: "shadowOffsetOuter1",
-					result: "shadowBlurOuter1"
-				}), r.a.createElement("feColorMatrix", {
-					in: "shadowBlurOuter1",
-					values: "0 0 0 0 0.101960784 0 0 0 0 0.101960784 0 0 0 0 0.105882353 0 0 0 0.3 0"
-				})), r.a.createElement("path", {
-					id: n,
-					d: "M12 8a.798.798 0 0 1-.566-.234L8 4.33 4.566 7.766a.8.8 0 1 1-1.132-1.132l4-4a.8.8 0 0 1 1.132 0l4 4A.8.8 0 0 1 12 8zm0 4.8a.798.798 0 0 1-.566-.234L8 9.13l-3.434 3.435a.8.8 0 1 1-1.132-1.132l4-4a.8.8 0 0 1 1.132 0l4 4A.8.8 0 0 1 12 12.8z"
-				})), r.a.createElement("g", {
-					fill: "none",
-					fillRule: "evenodd"
-				}, r.a.createElement("g", {
-					fillRule: "nonzero",
-					transform: "matrix(-1 0 0 1 43 4)"
-				}, r.a.createElement("use", {
-					fill: l.a.black,
-					filter: "url(#".concat(s, ")"),
-					xlinkHref: "#".concat(a)
-				}), r.a.createElement("use", {
-					fill: l.a.white,
-					xlinkHref: "#".concat(a)
-				})), r.a.createElement("g", {
-					transform: "matrix(0 1 1 0 17.174 14.174)"
-				}, r.a.createElement("path", {
-					d: "M0 16h16V0H0z"
-				}), r.a.createElement("mask", {
-					id: i,
-					fill: l.a.white
-				}, r.a.createElement("use", {
-					xlinkHref: "#".concat(n)
-				})), r.a.createElement("use", {
-					fill: l.a.black,
-					xlinkHref: "#".concat(n)
-				}), r.a.createElement("g", {
-					fill: l.a.alienblue,
-					mask: "url(#".concat(i, ")")
-				}, r.a.createElement("path", {
-					d: "M0 0h16v16H0z"
-				})))))
-			};
-			const u = function(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-				return "".concat(t, "-du-right-").concat(e)
-			};
-			var p = e => {
-					const {
-						seed: t = ""
-					} = e, s = u("a", t), a = u("b", t), n = u("c", t), i = u("d", t);
-					return r.a.createElement("svg", {
-						className: e.className,
-						onClick: e.onClick,
-						viewBox: "4 0 45 45",
-						version: "1.1",
-						xmlns: "http://www.w3.org/2000/svg"
-					}, r.a.createElement("defs", null, r.a.createElement("circle", {
-						id: a,
-						cx: "18",
-						cy: "18",
-						r: "18"
-					}), r.a.createElement("filter", {
-						id: s,
-						x: "-33.3%",
-						y: "-25%",
-						width: "166.7%",
-						height: "166.7%"
-					}, r.a.createElement("feOffset", {
-						dy: "3",
-						in: "SourceAlpha",
-						result: "shadowOffsetOuter1"
-					}), r.a.createElement("feGaussianBlur", {
-						in: "shadowOffsetOuter1",
-						result: "shadowBlurOuter1"
-					}), r.a.createElement("feColorMatrix", {
-						in: "shadowBlurOuter1",
-						values: "0 0 0 0 0.101960784 0 0 0 0 0.101960784 0 0 0 0 0.105882353 0 0 0 0.3 0"
-					})), r.a.createElement("path", {
-						id: n,
-						d: "M12 8a.798.798 0 0 1-.566-.234L8 4.33 4.566 7.766a.8.8 0 1 1-1.132-1.132l4-4a.8.8 0 0 1 1.132 0l4 4A.8.8 0 0 1 12 8zm0 4.8a.798.798 0 0 1-.566-.234L8 9.13l-3.434 3.435a.8.8 0 1 1-1.132-1.132l4-4a.8.8 0 0 1 1.132 0l4 4A.8.8 0 0 1 12 12.8z"
-					})), r.a.createElement("g", {
-						fill: "none",
-						fillRule: "evenodd"
-					}, r.a.createElement("g", {
-						fillRule: "nonzero",
-						transform: "translate(7 4)"
-					}, r.a.createElement("use", {
-						fill: l.a.black,
-						filter: "url(#".concat(s, ")"),
-						xlinkHref: "#".concat(a)
-					}), r.a.createElement("use", {
-						fill: l.a.white,
-						xlinkHref: "#".concat(a)
-					})), r.a.createElement("g", {
-						transform: "rotate(90 9.326 23.5)"
-					}, r.a.createElement("path", {
-						d: "M0 16h16V0H0z"
-					}), r.a.createElement("mask", {
-						id: i,
-						fill: l.a.white
-					}, r.a.createElement("use", {
-						xlinkHref: "#".concat(n)
-					})), r.a.createElement("use", {
-						fill: l.a.black,
-						xlinkHref: "#".concat(n)
-					}), r.a.createElement("g", {
-						fill: l.a.alienblue,
-						mask: "url(#".concat(i, ")")
-					}, r.a.createElement("path", {
-						d: "M0 0h16v16H0z"
-					})))))
-				},
-				h = s("./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less"),
-				b = s.n(h);
-			const x = e => r.a.createElement("button", {
-					className: Object(o.a)(b.a.arrow, e.className),
+				l = s("./src/reddit/icons/svgs/DiscoveryUnitArrow/Left/index.tsx"),
+				d = s("./src/reddit/icons/svgs/DiscoveryUnitArrow/Right/index.tsx"),
+				m = s("./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less"),
+				u = s.n(m);
+			const p = e => r.a.createElement("button", {
+					className: Object(o.a)(u.a.arrow, e.className),
 					onClick: e.onClick
-				}, r.a.createElement(m, {
-					className: b.a.arrowIcon,
+				}, r.a.createElement(l.a, {
+					className: u.a.arrowIcon,
 					seed: e.seed
 				})),
-				C = e => r.a.createElement("button", {
-					className: Object(o.a)(b.a.arrow, e.className),
+				h = e => r.a.createElement("button", {
+					className: Object(o.a)(u.a.arrow, e.className),
 					onClick: e.onClick
-				}, r.a.createElement(p, {
-					className: b.a.arrowIcon,
+				}, r.a.createElement(d.a, {
+					className: u.a.arrowIcon,
 					seed: e.seed
 				}));
-			class g extends r.a.Component {
+			class b extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						itemsFitInContainer: !1,
@@ -274,7 +135,7 @@
 					})
 				}
 			}
-			t.c = g
+			t.c = b
 		},
 		"./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -346,16 +207,16 @@
 				g = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				f = s("./src/lib/timeAgo/index.ts"),
 				v = s("./src/reddit/constants/posts.ts"),
-				E = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
-				y = s("./src/reddit/layout/row/Inline/index.tsx"),
+				y = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
+				E = s("./src/reddit/layout/row/Inline/index.tsx"),
 				O = s("./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less"),
 				P = s.n(O);
 			var N = e => {
 					const t = v.a.PROFILE,
-						s = Object(E.a)(e.author, t);
+						s = Object(y.a)(e.author, t);
 					return i.a.createElement("div", {
 						className: Object(c.a)(P.a.container, e.className)
-					}, i.a.createElement(y.a, {
+					}, i.a.createElement(E.a, {
 						className: P.a.layout
 					}, i.a.createElement("div", {
 						className: P.a.textContainer
@@ -366,7 +227,7 @@
 					})), i.a.createElement(g.a, {
 						className: P.a.authorName,
 						to: s
-					}, Object(E.b)(e.author, t)), i.a.createElement("span", {
+					}, Object(y.b)(e.author, t)), i.a.createElement("span", {
 						className: P.a.timestamp
 					}, Object(f.d)(e.created / 1e3)))))
 				},
@@ -375,7 +236,7 @@
 				j = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
 				w = s.n(j);
 			var I = e => {
-					const t = Object(E.a)(e.name, e.type);
+					const t = Object(y.a)(e.name, e.type);
 					return i.a.createElement("div", {
 						className: Object(c.a)(w.a.container, e.className)
 					}, i.a.createElement(_.a, {
@@ -394,7 +255,7 @@
 						"data-click-id": "subreddit",
 						className: w.a.name,
 						to: t
-					}, Object(E.b)(e.displayText || e.name, e.type)), i.a.createElement("span", {
+					}, Object(y.b)(e.displayText || e.name, e.type)), i.a.createElement("span", {
 						className: w.a.separator
 					}, "•"), i.a.createElement("span", {
 						className: w.a.timestamp
@@ -403,13 +264,13 @@
 				L = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				S = s("./src/reddit/components/Media/index.tsx"),
 				M = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
-				W = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
-				D = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				D = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
+				W = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				A = s("./src/reddit/components/PostContainer/index.tsx"),
-				T = s("./src/reddit/components/PostTitle/index.tsx"),
-				U = s("./src/reddit/connectors/miniCardPost.ts"),
-				B = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				R = s("./src/reddit/helpers/styles/mixins/index.tsx"),
+				U = s("./src/reddit/components/PostTitle/index.tsx"),
+				T = s("./src/reddit/connectors/miniCardPost.ts"),
+				R = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				B = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				V = s("./src/reddit/models/Media/index.ts"),
 				F = s("./src/reddit/models/Subreddit/index.ts"),
 				H = s("./src/reddit/models/Widgets/index.ts"),
@@ -448,8 +309,8 @@
 						shouldPause: g,
 						showAuthorBlock: f = !1,
 						showMetaLine: v = !0,
-						showSubscribeBlock: E = !1,
-						subredditOrProfile: y
+						showSubscribeBlock: y = !1,
+						subredditOrProfile: E
 					} = this.props, {
 						media: O
 					} = a || p, P = !O && !!p.source && Object(b.a)(p.source.url);
@@ -473,46 +334,46 @@
 						_ = !1;
 					O && k && (O.type !== V.o.RTJSON && O.type !== V.o.TEXT ? (k = i.a.createElement("div", {
 						className: J.a.mediaWrapper
-					}, k), _ = !0) : O && O.content && Object(B.a)(p) && (k = i.a.createElement("div", {
+					}, k), _ = !0) : O && O.content && Object(R.a)(p) && (k = i.a.createElement("div", {
 						className: J.a.textWrapper
 					}, k)));
 					const j = !_ && !P;
 					let w;
-					return y && (w = Object(F.g)(y) ? Object(H.h)(y) : Object(H.i)(y)), i.a.createElement(A.a, {
-						className: Object(c.a)(J.a.container, Z.a.largeAndMediumActiveStyles, Z.a.largeAndMediumPostStyles, z.a.postContainer, Object(R.a)(this.props), s),
+					return E && (w = Object(F.g)(E) ? Object(H.h)(E) : Object(H.i)(E)), i.a.createElement(A.a, {
+						className: Object(c.a)(J.a.container, Z.a.largeAndMediumActiveStyles, Z.a.largeAndMediumPostStyles, z.a.postContainer, Object(B.a)(this.props), s),
 						post: p,
 						onClick: u,
 						eventFactory: r,
-						style: Object.assign(Object.assign(Object.assign({}, Object(R.b)(this.props.flairStyleTemplate)), Object(R.d)(this.props)), this.props.style),
+						style: Object.assign(Object.assign(Object.assign({}, Object(B.b)(this.props.flairStyleTemplate)), Object(B.d)(this.props)), this.props.style),
 						"data-click-id": this.props["data-click-id"]
-					}, i.a.createElement(D.a, {
+					}, i.a.createElement(W.a, {
 						className: z.a.backgroundWrapper,
 						flairStyleTemplate: o
 					}, i.a.createElement("div", {
 						className: Object(c.a)(J.a.innerContainer, z.a.innerContainer)
-					}, E && y && i.a.createElement(I, K({
+					}, y && E && i.a.createElement(I, K({
 						created: p.created
-					}, w)), f && y && i.a.createElement(N, K({
+					}, w)), f && E && i.a.createElement(N, K({
 						created: p.created,
 						author: p.author
-					}, w)), i.a.createElement(T.c, {
+					}, w)), i.a.createElement(U.c, {
 						className: j ? J.a.postTitle : J.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
 						post: p,
-						size: T.b.Large,
+						size: U.b.Large,
 						titleColor: o && o.postTitleColor
-					}), v && y && i.a.createElement(M.a, {
+					}), v && E && i.a.createElement(M.a, {
 						className: J.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
 						post: p,
-						subredditOrProfile: y
+						subredditOrProfile: E
 					}), (_ || P) && i.a.createElement("div", {
 						className: J.a.flexSpacer
 					}), P && i.a.createElement("div", {
 						className: J.a.mediaWrapper
-					}, i.a.createElement(W.a, {
+					}, i.a.createElement(D.a, {
 						className: J.a.thumbnailWrapper,
 						thumbnailClassName: J.a.thumbnail,
 						thumbnailContainerClassName: J.a.thumbnailContainer,
@@ -539,7 +400,7 @@
 					}))
 				}
 			}
-			const X = Object(U.a)(Object(C.a)(Y));
+			const X = Object(T.a)(Object(C.a)(Y));
 			class $ extends i.a.Component {
 				render() {
 					return i.a.createElement(X, this.props)
@@ -613,7 +474,7 @@
 						className: Object(c.a)(re.a.title, Object(ae.b)({
 							isLoading: s
 						}))
-					})), a && i.a.createElement(y.a, {
+					})), a && i.a.createElement(E.a, {
 						className: re.a.subreddit
 					}, i.a.createElement(te.a, oe({
 						className: Object(c.a)(Object(ae.b)({
@@ -623,7 +484,7 @@
 						className: Object(c.a)(re.a.subredditName, Object(ae.b)({
 							isLoading: s
 						}))
-					})), i.a.createElement(y.a, null, i.a.createElement(ue, oe({
+					})), i.a.createElement(E.a, null, i.a.createElement(ue, oe({
 						isLoading: s
 					}, n)), i.a.createElement("div", {
 						className: Object(c.a)(re.a.comments, Object(ae.b)({
@@ -670,8 +531,8 @@
 					return s
 				};
 			const ve = 326,
-				Ee = 12,
-				ye = {
+				ye = 12,
+				Ee = {
 					stiffness: 210,
 					damping: 30
 				},
@@ -801,13 +662,13 @@
 						itemWidth: d,
 						maxScrollIndex: p,
 						scrollIndex: m,
-						spacerWidth: Ee,
+						spacerWidth: ye,
 						visibleItemsCount: u
 					}), b = e ? Oe : this.getMarginLeft({
 						adjustment: h,
 						itemWidth: d,
 						scrollIndex: m,
-						spacerWidth: Ee
+						spacerWidth: ye
 					});
 					return i.a.createElement("div", {
 						className: Object(c.a)(ge.a.postsWrapper, this.props.className),
@@ -818,7 +679,7 @@
 							marginLeft: e || n ? Oe : 0
 						},
 						style: {
-							marginLeft: Object(r.spring)(b, o || ye)
+							marginLeft: Object(r.spring)(b, o || Ee)
 						}
 					}, this.renderPosts), 0 !== m && i.a.createElement(l.a, {
 						className: Object(c.a)(ge.a.arrowLeft, t),
@@ -970,7 +831,159 @@
 					usePreview: e.usePreview
 				}))
 			}
+		},
+		"./src/reddit/icons/svgs/DiscoveryUnitArrow/Left/index.tsx": function(e, t, s) {
+			"use strict";
+			var a = s("./node_modules/react/index.js"),
+				n = s.n(a),
+				i = s("./src/reddit/constants/colors.ts");
+			const r = function(e) {
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+				return "".concat(t, "-du-left-").concat(e)
+			};
+			t.a = e => {
+				const {
+					seed: t = ""
+				} = e, s = r("a", t), a = r("b", t), o = r("c", t), c = r("d", t);
+				return n.a.createElement("svg", {
+					className: e.className,
+					onClick: e.onClick,
+					viewBox: "4 0 45 45",
+					version: "1.1",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, n.a.createElement("defs", null, n.a.createElement("circle", {
+					id: a,
+					cx: "18",
+					cy: "18",
+					r: "18"
+				}), n.a.createElement("filter", {
+					id: s,
+					x: "-33.3%",
+					y: "-25%",
+					width: "166.7%",
+					height: "166.7%"
+				}, n.a.createElement("feOffset", {
+					dy: "3",
+					in: "SourceAlpha",
+					result: "shadowOffsetOuter1"
+				}), n.a.createElement("feGaussianBlur", {
+					in: "shadowOffsetOuter1",
+					result: "shadowBlurOuter1"
+				}), n.a.createElement("feColorMatrix", {
+					in: "shadowBlurOuter1",
+					values: "0 0 0 0 0.101960784 0 0 0 0 0.101960784 0 0 0 0 0.105882353 0 0 0 0.3 0"
+				})), n.a.createElement("path", {
+					id: o,
+					d: "M12 8a.798.798 0 0 1-.566-.234L8 4.33 4.566 7.766a.8.8 0 1 1-1.132-1.132l4-4a.8.8 0 0 1 1.132 0l4 4A.8.8 0 0 1 12 8zm0 4.8a.798.798 0 0 1-.566-.234L8 9.13l-3.434 3.435a.8.8 0 1 1-1.132-1.132l4-4a.8.8 0 0 1 1.132 0l4 4A.8.8 0 0 1 12 12.8z"
+				})), n.a.createElement("g", {
+					fill: "none",
+					fillRule: "evenodd"
+				}, n.a.createElement("g", {
+					fillRule: "nonzero",
+					transform: "matrix(-1 0 0 1 43 4)"
+				}, n.a.createElement("use", {
+					fill: i.a.black,
+					filter: "url(#".concat(s, ")"),
+					xlinkHref: "#".concat(a)
+				}), n.a.createElement("use", {
+					fill: i.a.white,
+					xlinkHref: "#".concat(a)
+				})), n.a.createElement("g", {
+					transform: "matrix(0 1 1 0 17.174 14.174)"
+				}, n.a.createElement("path", {
+					d: "M0 16h16V0H0z"
+				}), n.a.createElement("mask", {
+					id: c,
+					fill: i.a.white
+				}, n.a.createElement("use", {
+					xlinkHref: "#".concat(o)
+				})), n.a.createElement("use", {
+					fill: i.a.black,
+					xlinkHref: "#".concat(o)
+				}), n.a.createElement("g", {
+					fill: i.a.alienblue,
+					mask: "url(#".concat(c, ")")
+				}, n.a.createElement("path", {
+					d: "M0 0h16v16H0z"
+				})))))
+			}
+		},
+		"./src/reddit/icons/svgs/DiscoveryUnitArrow/Right/index.tsx": function(e, t, s) {
+			"use strict";
+			var a = s("./node_modules/react/index.js"),
+				n = s.n(a),
+				i = s("./src/reddit/constants/colors.ts");
+			const r = function(e) {
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+				return "".concat(t, "-du-right-").concat(e)
+			};
+			t.a = e => {
+				const {
+					seed: t = ""
+				} = e, s = r("a", t), a = r("b", t), o = r("c", t), c = r("d", t);
+				return n.a.createElement("svg", {
+					className: e.className,
+					onClick: e.onClick,
+					viewBox: "4 0 45 45",
+					version: "1.1",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, n.a.createElement("defs", null, n.a.createElement("circle", {
+					id: a,
+					cx: "18",
+					cy: "18",
+					r: "18"
+				}), n.a.createElement("filter", {
+					id: s,
+					x: "-33.3%",
+					y: "-25%",
+					width: "166.7%",
+					height: "166.7%"
+				}, n.a.createElement("feOffset", {
+					dy: "3",
+					in: "SourceAlpha",
+					result: "shadowOffsetOuter1"
+				}), n.a.createElement("feGaussianBlur", {
+					in: "shadowOffsetOuter1",
+					result: "shadowBlurOuter1"
+				}), n.a.createElement("feColorMatrix", {
+					in: "shadowBlurOuter1",
+					values: "0 0 0 0 0.101960784 0 0 0 0 0.101960784 0 0 0 0 0.105882353 0 0 0 0.3 0"
+				})), n.a.createElement("path", {
+					id: o,
+					d: "M12 8a.798.798 0 0 1-.566-.234L8 4.33 4.566 7.766a.8.8 0 1 1-1.132-1.132l4-4a.8.8 0 0 1 1.132 0l4 4A.8.8 0 0 1 12 8zm0 4.8a.798.798 0 0 1-.566-.234L8 9.13l-3.434 3.435a.8.8 0 1 1-1.132-1.132l4-4a.8.8 0 0 1 1.132 0l4 4A.8.8 0 0 1 12 12.8z"
+				})), n.a.createElement("g", {
+					fill: "none",
+					fillRule: "evenodd"
+				}, n.a.createElement("g", {
+					fillRule: "nonzero",
+					transform: "translate(7 4)"
+				}, n.a.createElement("use", {
+					fill: i.a.black,
+					filter: "url(#".concat(s, ")"),
+					xlinkHref: "#".concat(a)
+				}), n.a.createElement("use", {
+					fill: i.a.white,
+					xlinkHref: "#".concat(a)
+				})), n.a.createElement("g", {
+					transform: "rotate(90 9.326 23.5)"
+				}, n.a.createElement("path", {
+					d: "M0 16h16V0H0z"
+				}), n.a.createElement("mask", {
+					id: c,
+					fill: i.a.white
+				}, n.a.createElement("use", {
+					xlinkHref: "#".concat(o)
+				})), n.a.createElement("use", {
+					fill: i.a.black,
+					xlinkHref: "#".concat(o)
+				}), n.a.createElement("g", {
+					fill: i.a.alienblue,
+					mask: "url(#".concat(c, ")")
+				}, n.a.createElement("path", {
+					d: "M0 0h16v16H0z"
+				})))))
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.7892f32b95ffd69dba64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.a5c9446dad0036244b27.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.59e773773f577ff65fb1.js
-// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.5d6632b3651cb4785cad.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -439,12 +439,12 @@
 					E && O("modal", "show")
 				}, [E]);
 				if (!E || !x) return null;
-				const y = s.fbt._("Help r/{subredditName} mods", [s.fbt._param("subredditName", t)], {
+				const _ = s.fbt._("Help r/{subredditName} mods", [s.fbt._param("subredditName", t)], {
 					hk: "1rusN4"
 				});
 				return r.a.createElement(l.a, {
 					id: h,
-					title: y,
+					title: _,
 					onClose: () => {
 						v(!1), O("close", "click"), k(Object(i.y)()), k(Object(i.J)({
 							[n.id]: {
@@ -498,12 +498,12 @@
 					subredditName: t,
 					post: n,
 					isOverlay: x
-				} = e, [v, h] = Object(r.useState)(s.Survey), k = Object(f.b)(n.id, x), j = Object(a.c)(), E = Object(b.a)(), O = Object(f.a)(n, x), y = (e, s) => E(Object(p.b)(t, n.id, e, s));
+				} = e, [v, h] = Object(r.useState)(s.Survey), k = Object(f.b)(n.id, x), j = Object(a.c)(), E = Object(b.a)(), O = Object(f.a)(n, x), _ = (e, s) => E(Object(p.b)(t, n.id, e, s));
 				Object(r.useEffect)(() => {
-					O && y("modal", "show")
+					O && _("modal", "show")
 				}, [O]);
-				const _ = e => {
-					h(s.Closed), y("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), j(Object(l.j)(n.id, void 0, e))
+				const y = e => {
+					h(s.Closed), _("site" === e ? "breaks_reddit_rules" : "breaks_community_rules", "click"), j(Object(l.j)(n.id, void 0, e))
 				};
 				if (!O) return null;
 				let g = null;
@@ -513,7 +513,7 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						h(s.Closed), y("close", "click"), j(Object(d.y)())
+						h(s.Closed), _("close", "click"), j(Object(d.y)())
 					},
 					onClickOutside: () => {
 						j(Object(d.y)())
@@ -525,19 +525,19 @@
 							hk: "DNEel"
 						})), c.a.createElement(m.a, {
 							onClick: () => {
-								h(s.OffTopic), y("off_topic", "click")
+								h(s.OffTopic), _("off_topic", "click")
 							}
 						}, o.fbt._("It's off topic", null, {
 							hk: "4iG26l"
 						})), c.a.createElement(m.a, {
 							onClick: () => {
-								h(s.DontLike), y("dont_like", "click")
+								h(s.DontLike), _("dont_like", "click")
 							}
 						}, o.fbt._("I don't like it", null, {
 							hk: "1jB1Mh"
 						})), c.a.createElement(m.a, {
 							onClick: () => {
-								h(s.BreaksRules), y("breaks_rules", "click")
+								h(s.BreaksRules), _("breaks_rules", "click")
 							}
 						}, o.fbt._("It breaks the rules", null, {
 							hk: "1yQBhi"
@@ -568,11 +568,11 @@
 						})))], {
 							hk: "1mXxTX"
 						})), c.a.createElement(m.a, {
-							onClick: () => _("site")
+							onClick: () => y("site")
 						}, o.fbt._("It breaks Reddit rules", null, {
 							hk: "3MxBm9"
 						})), c.a.createElement(m.a, {
-							onClick: () => _("community")
+							onClick: () => y("community")
 						}, o.fbt._("It breaks community rules", null, {
 							hk: "3XbHan"
 						})));
@@ -687,8 +687,8 @@
 				j = n("./src/reddit/icons/fonts/Approve/index.tsx"),
 				E = n("./src/reddit/icons/fonts/Archived/index.tsx"),
 				O = n("./src/reddit/icons/fonts/Lock/index.tsx"),
-				y = n("./src/reddit/icons/fonts/Remove/index.tsx"),
-				_ = n("./src/reddit/icons/fonts/Report/index.tsx"),
+				_ = n("./src/reddit/icons/fonts/Remove/index.tsx"),
+				y = n("./src/reddit/icons/fonts/Report/index.tsx"),
 				g = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				C = n("./src/reddit/icons/fonts/Sticky/index.tsx"),
 				S = n("./src/reddit/icons/svgs/Automoderator/index.tsx"),
@@ -838,7 +838,7 @@
 				}), r.a.createElement(u.c, L({
 					tooltipId: G,
 					text: Object(x.a)(V)
-				}, W))), Object(f.a)(V) && r.a.createElement(o.Fragment, null, r.a.createElement(y.a, {
+				}, W))), Object(f.a)(V) && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
 					className: w.a.removeIcon,
 					desc: Object(x.c)(V),
 					id: Y,
@@ -876,7 +876,7 @@
 				}), r.a.createElement(u.c, L({
 					tooltipId: J,
 					text: x.b
-				}, W))), Object(v.a)(V) && !P && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
+				}, W))), Object(v.a)(V) && !P && r.a.createElement(o.Fragment, null, r.a.createElement(y.a, {
 					className: w.a.reportIcon,
 					desc: Object(x.d)(V.numReports),
 					id: Q,
@@ -987,8 +987,8 @@
 						})
 					}
 				}),
-				y = Object(p.a)(O),
-				_ = e => {
+				_ = Object(p.a)(O),
+				y = e => {
 					const t = Object(k.d)(e.target, e.currentTarget),
 						n = Object(k.b)(e.target, e.currentTarget, k.a.buttons);
 					return "subreddit" !== t && n
@@ -1022,7 +1022,7 @@
 							}, 1e3))
 						},
 						onClick: n => {
-							if (!this.cancelClick && n.button < 2 && (e(() => p && p(n, m, t, d))(n), f && _(n) && f(n, m)), m.id && d) {
+							if (!this.cancelClick && n.button < 2 && (e(() => p && p(n, m, t, d))(n), f && y(n) && f(n, m)), m.id && d) {
 								const {
 									source: e
 								} = Object(c.s)(m, d);
@@ -1047,7 +1047,7 @@
 					}, j) : j
 				}
 			}
-			t.a = y(Object(k.c)(Object(m.c)(g)))
+			t.a = _(Object(k.c)(Object(m.c)(g)))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1308,10 +1308,10 @@
 							getEventFactory: b,
 							onSubscriptionsRequested: O
 						} = e,
-						y = x(e, ["className", "identifier", "onSubscribe", "onUnsubscribe", "postId", "sendEvent", "small", "userIsSubscriber", "doNotHideOtherSubscribeButtons", "getEventFactory", "onSubscriptionsRequested"]),
-						_ = this.state.isHovered;
+						_ = x(e, ["className", "identifier", "onSubscribe", "onUnsubscribe", "postId", "sendEvent", "small", "userIsSubscriber", "doNotHideOtherSubscribeButtons", "getEventFactory", "onSubscriptionsRequested"]),
+						y = this.state.isHovered;
 					let g = d ? "subscribed" : "subscribe";
-					d && _ && (g = "unsubscribe");
+					d && y && (g = "unsubscribe");
 					const C = Object(l.a)({
 						type: n.type,
 						key: g
@@ -1326,13 +1326,13 @@
 						belongsToType: n.type,
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}, y), i && o.a.createElement(k, null), !i && !_ && o.a.createElement(k, null), !i && C) : i ? null : o.a.createElement(E, null) : o.a.createElement(o.a.Fragment, null, o.a.createElement(v, f({
+					}, _), i && o.a.createElement(k, null), !i && !y && o.a.createElement(k, null), !i && C) : i ? null : o.a.createElement(E, null) : o.a.createElement(o.a.Fragment, null, o.a.createElement(v, f({
 						className: Object(p.a)(t, {
 							[m.a.isLarge]: !i
 						}),
 						onClick: this.onClick,
 						small: i
-					}, y, {
+					}, _, {
 						id: "subscribe-button-".concat(c),
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
@@ -1424,10 +1424,14 @@
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/icons/svgs/Checkbox/index.tsx");
+				c = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				a = n("./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx"),
+				i = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				d = n("./src/reddit/controls/Checkbox/index.m.less"),
+				l = n.n(d);
 
-			function a() {
-				return (a = Object.assign || function(e) {
+			function u() {
+				return (u = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1435,30 +1439,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var i = e => o.a.createElement("svg", a({
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, e), o.a.createElement("g", {
-					transform: "translate(-32.000000, -173.000000)"
-				}, o.a.createElement("g", {
-					transform: "translate(32.000000, 173.000000)"
-				}, o.a.createElement("path", {
-					d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
-				})))),
-				d = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				l = n("./src/reddit/controls/Checkbox/index.m.less"),
-				u = n.n(l);
-
-			function m() {
-				return (m = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			var p = function(e, t) {
+			var m = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1467,25 +1448,25 @@
 				}
 				return n
 			};
-			const b = e => t => {
+			const p = e => t => {
 					const {
 						className: n,
 						disabled: s,
 						redditStyle: c,
 						"data-redditstyle": a
-					} = t, i = p(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((e, t, n) => {
+					} = t, i = m(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), d = ((e, t, n) => {
 						const s = !(!t && !n);
 						let o = "";
-						return o = e ? s ? u.a.mDisabledRedditStyle : u.a.mDisabled : s ? u.a.mActiveRedditStyle : u.a.mActive
+						return o = e ? s ? l.a.mDisabledRedditStyle : l.a.mDisabled : s ? l.a.mActiveRedditStyle : l.a.mActive
 					})(s, c, a);
-					return o.a.createElement(e, m({
-						className: Object(r.a)(u.a.Checkbox, d, n)
+					return o.a.createElement(e, u({
+						className: Object(r.a)(l.a.Checkbox, d, n)
 					}, i))
 				},
-				f = b(d.a),
-				x = b(i);
+				b = p(i.a),
+				f = p(a.a);
 			t.a = e => {
-				const t = e.isHalfCheckboxSelected ? x : e.isCheckboxSelected ? f : c.a;
+				const t = e.isHalfCheckboxSelected ? f : e.isCheckboxSelected ? b : c.a;
 				return o.a.createElement("button", {
 					"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
 					className: e.className,
@@ -1494,7 +1475,7 @@
 					},
 					disabled: e.disabled
 				}, o.a.createElement(t, {
-					className: Object(r.a)(u.a.CheckboxSizing, e.className),
+					className: Object(r.a)(l.a.CheckboxSizing, e.className),
 					"data-redditstyle": e.redditStyle,
 					disabled: e.disabled,
 					style: e.checkBoxStyle
@@ -1712,7 +1693,32 @@
 			}, o.a.createElement("path", {
 				d: "M16,2H4A2,2,0,0,0,2,4V16a2,2,0,0,0,2,2H16a2,2,0,0,0,2-2V4A2,2,0,0,0,16,2ZM5.5,15.5h-1v-3h1Zm2,0h-1v-3h1ZM6,9A2,2,0,1,1,8,7,2,2,0,0,1,6,9Zm3.5,6.5h-1v-3h1Zm2,0h-1v-3h1Zm2,0h-1v-3h1Zm2,0h-1v-3h1ZM14,9a2,2,0,1,1,2-2A2,2,0,0,1,14,9Z"
 			}))
+		},
+		"./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+
+			function r() {
+				return (r = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => o.a.createElement("svg", r({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), o.a.createElement("g", {
+				transform: "translate(-32.000000, -173.000000)"
+			}, o.a.createElement("g", {
+				transform: "translate(32.000000, 173.000000)"
+			}, o.a.createElement("path", {
+				d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
+			}))))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.59e773773f577ff65fb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.5d6632b3651cb4785cad.js.map

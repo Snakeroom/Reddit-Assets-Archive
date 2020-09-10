@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.5e6e15d5e18258995ca3.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.2a2935abc8910503e8fa.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -444,48 +444,41 @@
 				},
 				wallet: P.g
 			});
-			var $ = Object(n.b)(Y, (e, t) => {
-				let {
-					subredditId: r
-				} = t;
-				return {
-					onFetchProducts: () => e(Object(M.j)({
+			var $, ee = Object(n.b)(Y, (e, t) => {
+					let {
 						subredditId: r
-					}))
-				}
-			})(J);
-			var ee, te = e => s.a.createElement("svg", {
-					className: e.className,
-					xmlns: "http://www.w3.org/2000/svg",
-					viewBox: "0 0 32 32"
-				}, s.a.createElement("g", null, s.a.createElement("path", {
-					fill: "inherit",
-					d: "M30 14C23.382 14 18 8.618 18 2C18 0.894 17.104 0 16 0C14.896 0 14 0.894 14 2C14 8.618 8.618 14 2 14C0.896 14 0 14.894 0 16C0 17.106 0.896 18 2 18C8.618 18 14 23.382 14 30C14 31.106 14.896 32 16 32C17.104 32 18 31.106 18 30C18 23.382 23.382 18 30 18C31.104 18 32 17.106 32 16C32 14.894 31.104 14 30 14"
-				}))),
+					} = t;
+					return {
+						onFetchProducts: () => e(Object(M.j)({
+							subredditId: r
+						}))
+					}
+				})(J),
+				te = r("./src/reddit/icons/svgs/Badge/index.tsx"),
 				re = r("./src/reddit/icons/svgs/Gallery/index.tsx"),
 				ae = r("./src/reddit/components/Badges/PickerModal/ModeSelector/index.m.less"),
 				se = r.n(ae);
 			! function(e) {
 				e[e.Flairs = 0] = "Flairs", e[e.Gallery = 1] = "Gallery", e[e.MyBadges = 2] = "MyBadges"
-			}(ee || (ee = {}));
+			}($ || ($ = {}));
 			const ne = {
-				[ee.Flairs]: {
+				[$.Flairs]: {
 					str: () => q.fbt._("flairs", null, {
 						hk: "1vWhvU"
 					}),
 					icon: f.a
 				},
-				[ee.Gallery]: {
+				[$.Gallery]: {
 					str: () => q.fbt._("gallery", null, {
 						hk: "33pd5W"
 					}),
 					icon: re.a
 				},
-				[ee.MyBadges]: {
+				[$.MyBadges]: {
 					str: () => q.fbt._("my badges", null, {
 						hk: "2xKTOy"
 					}),
-					icon: te
+					icon: te.a
 				}
 			};
 
@@ -497,11 +490,11 @@
 					className: Object(o.a)(se.a.sectionTitle, se.a.sectionBadges)
 				}, q.fbt._("badges", null, {
 					hk: "33xQMz"
-				})), t(ee.Gallery), t(ee.MyBadges), s.a.createElement("div", {
+				})), t($.Gallery), t($.MyBadges), s.a.createElement("div", {
 					className: Object(o.a)(se.a.sectionTitle, se.a.sectionFlairs)
 				}, q.fbt._("flairs", null, {
 					hk: "42LtF9"
-				})), t(ee.Flairs))
+				})), t($.Flairs))
 			}
 			const ie = (e, t) => r => {
 				const a = ne[r];
@@ -652,7 +645,7 @@
 				renderNoBadges() {
 					return s.a.createElement("div", {
 						className: Ee.a.noBadges
-					}, s.a.createElement(te, {
+					}, s.a.createElement(te.a, {
 						className: Ee.a.noBadgesIcon
 					}), s.a.createElement("div", {
 						className: Ee.a.noBadgesTitle
@@ -803,7 +796,7 @@
 					}), this.handleBadgesChange = e => this.setState({
 						previewBadges: e
 					}), this.state = {
-						currentMode: ee.MyBadges,
+						currentMode: $.MyBadges,
 						previewBadges: e.userBadgeIds,
 						previewFlair: Ae(e)
 					}
@@ -831,20 +824,20 @@
 				}
 				renderMode() {
 					if (this.props.subredditId) switch (this.state.currentMode) {
-						case ee.Flairs:
+						case $.Flairs:
 							return s.a.createElement(B, {
 								subredditId: this.props.subredditId,
 								onFlairChange: this.handleFlairChange
 							});
-						case ee.Gallery:
-							return s.a.createElement($, {
+						case $.Gallery:
+							return s.a.createElement(ee, {
 								subredditId: this.props.subredditId
 							});
-						case ee.MyBadges:
+						case $.MyBadges:
 							return s.a.createElement(Be, {
 								subredditId: this.props.subredditId,
 								onBadgesChange: this.handleBadgesChange,
-								onGotoGallery: () => this.handleModeChange(ee.Gallery)
+								onGotoGallery: () => this.handleModeChange($.Gallery)
 							})
 					}
 					return s.a.createElement("div", null)
@@ -1094,6 +1087,19 @@
 				})
 			}
 		},
+		"./src/reddit/icons/svgs/Badge/index.tsx": function(e, t, r) {
+			"use strict";
+			var a = r("./node_modules/react/index.js"),
+				s = r.n(a);
+			t.a = e => s.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 32 32"
+			}, s.a.createElement("g", null, s.a.createElement("path", {
+				fill: "inherit",
+				d: "M30 14C23.382 14 18 8.618 18 2C18 0.894 17.104 0 16 0C14.896 0 14 0.894 14 2C14 8.618 8.618 14 2 14C0.896 14 0 14.894 0 16C0 17.106 0.896 18 2 18C8.618 18 14 23.382 14 30C14 31.106 14.896 32 16 32C17.104 32 18 31.106 18 30C18 23.382 23.382 18 30 18C31.104 18 32 17.106 32 16C32 14.894 31.104 14 30 14"
+			})))
+		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, r) {
 			"use strict";
 			var a = r("./node_modules/react/index.js"),
@@ -1319,4 +1325,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePickerModal.5e6e15d5e18258995ca3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePickerModal.2a2935abc8910503e8fa.js.map

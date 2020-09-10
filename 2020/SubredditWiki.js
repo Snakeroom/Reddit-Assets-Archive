@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.50719f2ac20392e8063e.js
-// Retrieved at 9/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.472b2c14bccee25003d6.js
+// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -3251,33 +3251,9 @@
 				O = s("./src/reddit/helpers/trackers/chat.ts"),
 				y = s("./src/reddit/icons/fonts/Pencil/index.tsx"),
 				w = s("./src/reddit/icons/svgs/Chat/index.tsx"),
-				v = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx");
-			var j = e => {
-				let {
-					className: t
-				} = e;
-				return a.a.createElement("svg", {
-					className: t,
-					viewBox: "0 0 16 16",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, a.a.createElement("g", {
-					transform: "translate(-26.000000, -37.000000)"
-				}, a.a.createElement("path", {
-					d: "M30.7205152,44.3911599 L31.8223802,44.3911599 C32.9364596,44.3911599 33.8428946,45.2673804 33.8428946,46.3443238 C33.8428946,46.6873548 33.5548926,46.9657568 33.2000329,46.9657568 L29.3428625,46.9657568 C28.9880028,46.9657568 28.7000008,46.6873548 28.7000008,46.3443238 C28.7000008,45.2673804 29.6064358,44.3911599 30.7205152,44.3911599 Z M32.7044508,42.3845527 C32.7044508,43.1482939 32.0615891,43.7697269 31.271512,43.7697269 C30.4814349,43.7697269 29.8385732,43.1482939 29.8385732,42.3845527 C29.8385732,41.6208116 30.4814349,41 31.271512,41 C32.0615891,41 32.7044508,41.6208116 32.7044508,42.3845527 Z M35.8634091,47.1254029 L36.9652741,47.1254029 C38.0793535,47.1254029 38.9857885,48.0016234 38.9857885,49.0785668 C38.9857885,49.4215978 38.6977865,49.6999998 38.3429268,49.6999998 L34.4857564,49.6999998 C34.1308967,49.6999998 33.8428946,49.4215978 33.8428946,49.0785668 C33.8428946,48.0016234 34.7493297,47.1254029 35.8634091,47.1254029 Z M37.8473447,45.1187958 C37.8473447,45.8825369 37.2044829,46.5039699 36.4144059,46.5039699 C35.6243288,46.5039699 34.9814671,45.8825369 34.9814671,45.1187958 C34.9814671,44.3550546 35.6243288,43.734243 36.4144059,43.734243 C37.2044829,43.734243 37.8473447,44.3550546 37.8473447,45.1187958 Z"
-				})))
-			};
-			var C = e => {
-					let {
-						className: t
-					} = e;
-					return a.a.createElement("svg", {
-						className: t,
-						viewBox: "0 0 16 16",
-						xmlns: "http://www.w3.org/2000/svg"
-					}, a.a.createElement("path", {
-						d: "M10.224 7.109c-.623.623-1.709.623-2.332 0a1.652 1.652 0 0 1 0-2.332 1.64 1.64 0 0 1 1.166-.483c.44 0 .855.172 1.166.483a1.652 1.652 0 0 1 0 2.332m.915-3.247A2.923 2.923 0 0 0 9.06 3c-.787 0-1.525.306-2.082.862a2.946 2.946 0 0 0-.403 3.65l-1.76 1.761-.812.811v.001L4 10.087l-.81.81a.646.646 0 0 0 0 .915l.81.811h.001l.27.27a.643.643 0 0 0 .916 0 .648.648 0 0 0 0-.914l-.271-.27a.502.502 0 0 1 0-.708.512.512 0 0 1 .709 0l.27.27a.648.648 0 0 0 .915-.915l-.624-.625L7.49 8.427a2.924 2.924 0 0 0 3.65-.403 2.945 2.945 0 0 0 0-4.162"
-					}))
-				},
+				v = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+				j = s("./src/reddit/icons/svgs/GroupChat/index.tsx"),
+				C = s("./src/reddit/icons/svgs/Key/index.tsx"),
 				E = s("./src/reddit/models/SubredditChannel/index.ts"),
 				_ = s("./src/reddit/selectors/chat.ts"),
 				N = s("./src/reddit/selectors/subreddit.ts"),
@@ -3286,7 +3262,7 @@
 				T = s.n(I);
 			const {
 				fbt: P
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = c.a.wrapped(h.g, "ModalFormItem", T.a), L = c.a.wrapped(k.f, "PrimaryButton", T.a), M = c.a.wrapped(h.o, "ModalText", T.a), D = c.a.a("ItemLink", T.a), W = c.a.p("Detail", T.a), B = c.a.p("DescText", T.a), F = c.a.div("Title", T.a), A = c.a.div("Header", T.a), U = c.a.wrapped(w.a, "ChatIcon", T.a), H = c.a.wrapped(v.a, "PlanetIcon", T.a), V = c.a.wrapped(y.a, "Pencil", T.a), K = c.a.wrapped(j, "Group", T.a), G = c.a.wrapped(C, "Key", T.a), z = c.a.wrapped(g.b, "SubredditIcon", T.a), q = c.a.button("EditButton", T.a), Z = c.a.button("ShowAllLink", T.a), J = c.a.span("ChannelName", T.a), X = c.a.div("HeaderText", T.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = c.a.wrapped(h.g, "ModalFormItem", T.a), L = c.a.wrapped(k.f, "PrimaryButton", T.a), M = c.a.wrapped(h.o, "ModalText", T.a), D = c.a.a("ItemLink", T.a), W = c.a.p("Detail", T.a), B = c.a.p("DescText", T.a), F = c.a.div("Title", T.a), A = c.a.div("Header", T.a), U = c.a.wrapped(w.a, "ChatIcon", T.a), H = c.a.wrapped(v.a, "PlanetIcon", T.a), V = c.a.wrapped(y.a, "Pencil", T.a), K = c.a.wrapped(j.a, "Group", T.a), G = c.a.wrapped(C.a, "Key", T.a), z = c.a.wrapped(g.b, "SubredditIcon", T.a), q = c.a.button("EditButton", T.a), Z = c.a.button("ShowAllLink", T.a), J = c.a.span("ChannelName", T.a), X = c.a.div("HeaderText", T.a);
 			var Y;
 			! function(e) {
 				e[e.Modal = 0] = "Modal", e[e.Widget = 1] = "Widget"
@@ -5613,10 +5589,14 @@
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./src/lib/classNames/index.ts"),
-				a = s("./src/reddit/icons/svgs/Checkbox/index.tsx");
+				a = s("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				o = s("./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx"),
+				d = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				c = s("./src/reddit/controls/Checkbox/index.m.less"),
+				l = s.n(c);
 
-			function o() {
-				return (o = Object.assign || function(e) {
+			function u() {
+				return (u = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -5624,30 +5604,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var d = e => r.a.createElement("svg", o({
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, e), r.a.createElement("g", {
-					transform: "translate(-32.000000, -173.000000)"
-				}, r.a.createElement("g", {
-					transform: "translate(32.000000, 173.000000)"
-				}, r.a.createElement("path", {
-					d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
-				})))),
-				c = s("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				l = s("./src/reddit/controls/Checkbox/index.m.less"),
-				u = s.n(l);
-
-			function m() {
-				return (m = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			var b = function(e, t) {
+			var m = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -5656,25 +5613,25 @@
 				}
 				return s
 			};
-			const p = e => t => {
+			const b = e => t => {
 					const {
 						className: s,
 						disabled: n,
 						redditStyle: a,
 						"data-redditstyle": o
-					} = t, d = b(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), c = ((e, t, s) => {
+					} = t, d = m(t, ["className", "disabled", "redditStyle", "data-redditstyle"]), c = ((e, t, s) => {
 						const n = !(!t && !s);
 						let r = "";
-						return r = e ? n ? u.a.mDisabledRedditStyle : u.a.mDisabled : n ? u.a.mActiveRedditStyle : u.a.mActive
+						return r = e ? n ? l.a.mDisabledRedditStyle : l.a.mDisabled : n ? l.a.mActiveRedditStyle : l.a.mActive
 					})(n, a, o);
-					return r.a.createElement(e, m({
-						className: Object(i.a)(u.a.Checkbox, c, s)
+					return r.a.createElement(e, u({
+						className: Object(i.a)(l.a.Checkbox, c, s)
 					}, d))
 				},
-				h = p(c.a),
-				g = p(d);
+				p = b(d.a),
+				h = b(o.a);
 			t.a = e => {
-				const t = e.isHalfCheckboxSelected ? g : e.isCheckboxSelected ? h : a.a;
+				const t = e.isHalfCheckboxSelected ? h : e.isCheckboxSelected ? p : a.a;
 				return r.a.createElement("button", {
 					"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
 					className: e.className,
@@ -5683,7 +5640,7 @@
 					},
 					disabled: e.disabled
 				}, r.a.createElement(t, {
-					className: Object(i.a)(u.a.CheckboxSizing, e.className),
+					className: Object(i.a)(l.a.CheckboxSizing, e.className),
 					"data-redditstyle": e.redditStyle,
 					disabled: e.disabled,
 					style: e.checkBoxStyle
@@ -6128,6 +6085,31 @@
 			}), "PencilIcon", o.a);
 			t.a = d
 		},
+		"./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n);
+
+			function i() {
+				return (i = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var s = arguments[t];
+						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => r.a.createElement("svg", i({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), r.a.createElement("g", {
+				transform: "translate(-32.000000, -173.000000)"
+			}, r.a.createElement("g", {
+				transform: "translate(32.000000, 173.000000)"
+			}, r.a.createElement("path", {
+				d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
+			}))))
+		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -6153,6 +6135,42 @@
 				d: "M20.5 10.5C20.5 16.0228 16.0228 20.5 10.5 20.5C4.97715 20.5 0.5 16.0228 0.5 10.5C0.5 4.97715 4.97715 0.5 10.5 0.5C16.0228 0.5 20.5 4.97715 20.5 10.5ZM9.35975 14.8725L15.2398 8.71852L15.2418 8.72352C15.5868 8.36252 15.5868 7.77752 15.2418 7.41752C14.8968 7.05752 14.3388 7.05752 13.9938 7.41752L8.73675 12.9175L7.00675 11.1075C6.66175 10.7475 6.10375 10.7465 5.75875 11.1075C5.41375 11.4685 5.41375 12.0535 5.75875 12.4135L8.11175 14.8735C8.28475 15.0535 8.50975 15.1435 8.73675 15.1435C8.85356 15.143 8.96904 15.1187 9.07615 15.0721C9.18326 15.0256 9.27975 14.9576 9.35975 14.8725Z",
 				fill: "inherit"
 			}))
+		},
+		"./src/reddit/icons/svgs/GroupChat/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n);
+			t.a = e => {
+				let {
+					className: t
+				} = e;
+				return r.a.createElement("svg", {
+					className: t,
+					viewBox: "0 0 16 16",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, r.a.createElement("g", {
+					transform: "translate(-26.000000, -37.000000)"
+				}, r.a.createElement("path", {
+					d: "M30.7205152,44.3911599 L31.8223802,44.3911599 C32.9364596,44.3911599 33.8428946,45.2673804 33.8428946,46.3443238 C33.8428946,46.6873548 33.5548926,46.9657568 33.2000329,46.9657568 L29.3428625,46.9657568 C28.9880028,46.9657568 28.7000008,46.6873548 28.7000008,46.3443238 C28.7000008,45.2673804 29.6064358,44.3911599 30.7205152,44.3911599 Z M32.7044508,42.3845527 C32.7044508,43.1482939 32.0615891,43.7697269 31.271512,43.7697269 C30.4814349,43.7697269 29.8385732,43.1482939 29.8385732,42.3845527 C29.8385732,41.6208116 30.4814349,41 31.271512,41 C32.0615891,41 32.7044508,41.6208116 32.7044508,42.3845527 Z M35.8634091,47.1254029 L36.9652741,47.1254029 C38.0793535,47.1254029 38.9857885,48.0016234 38.9857885,49.0785668 C38.9857885,49.4215978 38.6977865,49.6999998 38.3429268,49.6999998 L34.4857564,49.6999998 C34.1308967,49.6999998 33.8428946,49.4215978 33.8428946,49.0785668 C33.8428946,48.0016234 34.7493297,47.1254029 35.8634091,47.1254029 Z M37.8473447,45.1187958 C37.8473447,45.8825369 37.2044829,46.5039699 36.4144059,46.5039699 C35.6243288,46.5039699 34.9814671,45.8825369 34.9814671,45.1187958 C34.9814671,44.3550546 35.6243288,43.734243 36.4144059,43.734243 C37.2044829,43.734243 37.8473447,44.3550546 37.8473447,45.1187958 Z"
+				})))
+			}
+		},
+		"./src/reddit/icons/svgs/Key/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n);
+			t.a = e => {
+				let {
+					className: t
+				} = e;
+				return r.a.createElement("svg", {
+					className: t,
+					viewBox: "0 0 16 16",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, r.a.createElement("path", {
+					d: "M10.224 7.109c-.623.623-1.709.623-2.332 0a1.652 1.652 0 0 1 0-2.332 1.64 1.64 0 0 1 1.166-.483c.44 0 .855.172 1.166.483a1.652 1.652 0 0 1 0 2.332m.915-3.247A2.923 2.923 0 0 0 9.06 3c-.787 0-1.525.306-2.082.862a2.946 2.946 0 0 0-.403 3.65l-1.76 1.761-.812.811v.001L4 10.087l-.81.81a.646.646 0 0 0 0 .915l.81.811h.001l.27.27a.643.643 0 0 0 .916 0 .648.648 0 0 0 0-.914l-.271-.27a.502.502 0 0 1 0-.708.512.512 0 0 1 .709 0l.27.27a.648.648 0 0 0 .915-.915l-.624-.625L7.49 8.427a2.924 2.924 0 0 0 3.65-.403 2.945 2.945 0 0 0 0-4.162"
+				}))
+			}
 		},
 		"./src/reddit/icons/svgs/Powerup/index.tsx": function(e, t, s) {
 			"use strict";
@@ -6399,9 +6417,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const a = e => n.U.Enabled === Object(r.c)(e, {
+			const a = e => n.V.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: i.H,
-				experimentName: n.T
+				experimentName: n.U
 			})
 		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, s) {
@@ -7209,4 +7227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.50719f2ac20392e8063e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.472b2c14bccee25003d6.js.map
