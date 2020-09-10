@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.cf3e9bfd967495801b9c.js
-// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.ff0bd79761968590013b.js
+// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/ethers/utils/address.js": function(e, t, n) {
@@ -409,7 +409,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("vendors~CollectionCommentsPage~CommentsPage~reddit-components-Governance-ClaimPointsBanner~reddit-co~47352505"), n.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~509f26c8"), n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~f5b424fb"), n.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~2c4c224b"), n.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~82ccdb7d"), n.e("reddit-components-Governance-TransactionModals-TransferTransactionModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/index.tsx")),
+				importAsync: () => Promise.all([n.e("vendors~CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki~reddit-components-Governance-Tra~323a8d79"), n.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~509f26c8"), n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~f5b424fb"), n.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~2c4c224b"), n.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~82ccdb7d"), n.e("reddit-components-Governance-TransactionModals-TransferTransactionModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -595,13 +595,13 @@
 			var D = n("./src/reddit/components/Governance/TransferPointsModal/Recipient/UsernameRecipient.tsx"),
 				R = n("./node_modules/ethers/utils/address.js"),
 				S = n("./node_modules/lodash/debounce.js"),
-				B = n.n(S),
-				L = n("./src/reddit/actions/governance/publicWalletsFetched.ts"),
+				L = n.n(S),
+				B = n("./src/reddit/actions/governance/publicWalletsFetched.ts"),
 				V = n("./src/reddit/actions/users.ts"),
 				q = n("./src/reddit/selectors/user.ts");
 			var F = n("./src/reddit/controls/FormFields/index.tsx"),
-				z = n("./src/reddit/hooks/useThunkDispatch.ts"),
-				W = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				W = n("./src/reddit/hooks/useThunkDispatch.ts"),
+				z = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				H = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				Y = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
 				Z = n("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
@@ -635,7 +635,7 @@
 						subredditId: t,
 						userId: i.id
 					});
-					return c || (await n(Object(L.a)({
+					return c || (await n(Object(B.a)({
 						subredditId: t,
 						userIds: [i.id]
 					})), c = Object(b.j)(r(), {
@@ -660,9 +660,9 @@
 				const {
 					onChange: t,
 					subredditId: n
-				} = e, [a, o] = Object(r.useState)(e.initialRecipient || ""), i = Object(r.useRef)(a), [c, d] = Object(r.useState)(J.Empty), l = Object(z.a)(), u = () => $(i, n, l, e => {
+				} = e, [a, o] = Object(r.useState)(e.initialRecipient || ""), i = Object(r.useRef)(a), [c, d] = Object(r.useState)(J.Empty), l = Object(W.a)(), u = () => $(i, n, l, e => {
 					d(e), e === J.Valid && t(i.current, !0)
-				}), m = Object(r.useMemo)(() => B()(u, 300), [i, n, l, d, t]);
+				}), m = Object(r.useMemo)(() => L()(u, 300), [i, n, l, d, t]);
 				return Object(r.useEffect)(() => {
 					e.initialRecipient && u()
 				}, []), s.a.createElement("div", {
@@ -708,7 +708,7 @@
 								sizePx: 8
 							});
 						case J.Valid:
-							return s.a.createElement(W.a, {
+							return s.a.createElement(z.a, {
 								className: X.a.icon
 							});
 						default:
@@ -1098,4 +1098,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.cf3e9bfd967495801b9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.ff0bd79761968590013b.js.map

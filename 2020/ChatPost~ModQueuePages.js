@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.f843dacd00c5e9e4e38c.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.1d0947610e1ad75c1d86.js
+// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~ModQueuePages"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, o, t) {
@@ -91,8 +91,8 @@
 				I = t("./src/reddit/constants/modals.ts"),
 				v = t("./src/reddit/helpers/trackers/powerups.ts"),
 				x = t("./src/reddit/components/AuthorLink/index.tsx"),
-				f = t("./src/reddit/components/AwardBadges/index.tsx"),
-				E = t("./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.tsx"),
+				E = t("./src/reddit/components/AwardBadges/index.tsx"),
+				f = t("./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.tsx"),
 				_ = t("./src/reddit/components/Economics/SubredditPremium/Badges/UsernameDisplay/index.tsx"),
 				M = t("./src/reddit/components/Flair/index.tsx"),
 				C = t("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
@@ -167,12 +167,12 @@
 				Ie = b.a.a("MetaLink", ee.a),
 				ve = b.a.wrapped(X.a, "EditedText", ee.a),
 				xe = b.a.wrapped(X.a, "StickiedText", ee.a),
-				fe = b.a.span("DeletedText", ee.a),
-				Ee = b.a.wrapped(X.a, "MetaSeparator", ee.a),
+				Ee = b.a.span("DeletedText", ee.a),
+				fe = b.a.wrapped(X.a, "MetaSeparator", ee.a),
 				_e = b.a.wrapped(X.a, "CrowdControlText", ee.a),
 				Me = b.a.wrapped(S.b, "AuthorHoverCard", ee.a),
 				Ce = b.a.a("RemovalReason", ee.a),
-				Se = b.a.wrapped(E.b, "Component", ee.a),
+				Se = b.a.wrapped(f.b, "Component", ee.a),
 				ke = e => (o, t) => {
 					let {
 						comment: n,
@@ -274,7 +274,7 @@
 					contractorTooltipId: T,
 					compact: I,
 					flair: x,
-					flairPosition: E,
+					flairPosition: f,
 					hasBadges: S,
 					isAvatarsInCommentsEnabled: k,
 					isLivestreaming: w,
@@ -306,7 +306,7 @@
 						[ee.a.collapsed]: l
 					})
 				}));
-				const q = !A && E === N.b.Left;
+				const q = !A && f === N.b.Left;
 				return s.a.createElement("div", {
 					className: Object(m.a)(c, ee.a.container, {
 						[ee.a.collapsed]: l,
@@ -364,7 +364,7 @@
 					onHideTooltip: D,
 					onShowTooltip: H,
 					openPowerupsModal: () => {
-						W(Object(v.f)("comment")), B()
+						W(Object(v.d)("comment")), B()
 					},
 					opTooltipId: P,
 					renderContractorBadge: G,
@@ -392,7 +392,7 @@
 					removeTooltipId: z,
 					reportTooltipId: F,
 					spamTooltipId: Z
-				})), s.a.createElement(f.a, {
+				})), s.a.createElement(E.a, {
 					thing: h,
 					tooltipType: V ? g.c.Lightbox : void 0
 				}))
@@ -406,7 +406,7 @@
 					} = e;
 					return s.a.createElement("div", {
 						className: r
-					}, s.a.createElement(fe, null, a.deletedBy === L.a.User ? n.fbt._("Comment deleted by user", null, {
+					}, s.a.createElement(Ee, null, a.deletedBy === L.a.User ? n.fbt._("Comment deleted by user", null, {
 						hk: "1Rtt4V"
 					}) : n.fbt._("Comment removed by moderator", null, {
 						hk: "E1t49"
@@ -491,7 +491,7 @@
 					hasContinueThread: !1,
 					numChildren: 0
 				};
-				return s.a.createElement(Ee, {
+				return s.a.createElement(fe, {
 					className: ee.a.metaText
 				}, o ? n.fbt._({
 					"*": "More than {number} children",
@@ -880,4 +880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.f843dacd00c5e9e4e38c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.1d0947610e1ad75c1d86.js.map

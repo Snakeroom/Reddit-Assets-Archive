@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.4a40ea06279740d33ff6.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d0e4e4bbf6f9c6d901a2.js
+// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -60,8 +60,8 @@
 				x = Object(s.a)(h.e),
 				j = (Object(s.a)(h.f), Object(s.a)(h.g), Object(s.a)(h.h)),
 				O = Object(s.a)(h.i),
-				C = Object(s.a)(h.j),
-				_ = Object(s.a)(h.k),
+				_ = Object(s.a)(h.j),
+				C = Object(s.a)(h.k),
 				w = Object(s.a)(h.q),
 				E = Object(s.a)(h.r),
 				N = Object(s.a)(h.s),
@@ -76,7 +76,7 @@
 							gqlContext: d
 						} = s,
 						l = r().polls.models[e];
-					if (n(C({
+					if (n(_({
 							pollId: e
 						})), (o = l.type === b.a.GA ? await Object(c.c)(d(), e, t) : await Object(c.b)(a(), l.subredditId, e, t)).ok) {
 						if (l.type === b.a.GA) {
@@ -88,7 +88,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else n(_(o.body));
+						} else n(C(o.body));
 						const s = r();
 						if ((l = s.polls.models[e]) && Object(b.d)(l)) {
 							const {
@@ -226,8 +226,8 @@
 			}(r || (r = {}));
 			var j = n("./src/reddit/selectors/economics.ts"),
 				O = n("./src/reddit/selectors/user.ts"),
-				C = n("./src/higherOrderComponents/asTooltip.tsx"),
-				_ = n("./src/lib/copyToClipboard/index.ts"),
+				_ = n("./src/higherOrderComponents/asTooltip.tsx"),
+				C = n("./src/lib/copyToClipboard/index.ts"),
 				w = n("./src/reddit/actions/governance/errorToast.ts"),
 				E = n("./src/reddit/actions/toaster.ts"),
 				N = n("./src/reddit/actions/tooltip.ts"),
@@ -241,12 +241,12 @@
 				L = n("./src/reddit/selectors/tooltip.ts"),
 				B = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				R = n.n(B);
-			const D = Object(C.a)(P.a),
+			const D = Object(_.a)(P.a),
 				W = "BlockchainWalletInfo--SettingsMenu";
 			class U extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
-						Object(_.a)(this.props.publicAddress || "")
+						Object(C.a)(this.props.publicAddress || "")
 					}, this.onRemoveMyWallet = async () => {
 						const e = await Object(M.e)(this.props.apiContext(), this.props.provider, this.props.publicAddress);
 						e.ok ? this.props.onWalletRemoved() : this.props.onGovernanceError(e.error)
@@ -445,7 +445,7 @@
 						tokenName: k,
 						useCrypto: j,
 						wallet: O
-					} = this.props, C = O && O.inactive && function(e, t) {
+					} = this.props, _ = O && O.inactive && function(e, t) {
 						const n = e.actionScheduledAt - Date.now(),
 							o = Math.max(1, Math.floor(n / u.x)),
 							a = 1 !== o ? s.fbt._("{numDays} day", [s.fbt._param("numDays", String(o))], {
@@ -471,7 +471,7 @@
 									})
 								}
 						}
-					}(O.inactive, k), _ = O && O.publicAddress;
+					}(O.inactive, k), C = O && O.publicAddress;
 					return a.a.createElement("div", {
 						className: t
 					}, a.a.createElement("div", {
@@ -487,17 +487,17 @@
 						hk: "2ylU3V"
 					})), o && ae(Object(m.a)(Object(x.b)(o.totalAvailable, y)), s.fbt._("Total", null, {
 						hk: "7GOJU"
-					}))), C && a.a.createElement(X, {
-						body: C.body,
-						title: C.title
+					}))), _ && a.a.createElement(X, {
+						body: _.body,
+						title: _.title
 					}), a.a.createElement("div", {
 						className: se.a.explanation
 					}, s.fbt._("{tokenName} reward posters, commenters, and moderators for their contributions to the subreddit. They are distributed monthly and used to weight your vote on polls.", [s.fbt._param("tokenName", k)], {
 						hk: "3BpDbS"
 					})), n && f && a.a.createElement(F, {
-						publicAddress: _,
+						publicAddress: C,
 						subredditId: h
-					}), n && !_ && i && a.a.createElement(g.f, {
+					}), n && !C && i && a.a.createElement(g.f, {
 						className: se.a.button,
 						onClick: d ? b : l
 					}, s.fbt._("register", null, {
@@ -688,7 +688,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("vendors~CollectionCommentsPage~CommentsPage~reddit-components-Governance-ClaimPointsBanner~reddit-co~47352505"), n.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~509f26c8"), n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~f5b424fb"), n.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~2c4c224b"), n.e("vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~5a9831fe"), n.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~82ccdb7d"), n.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
+				importAsync: () => Promise.all([n.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~509f26c8"), n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~f5b424fb"), n.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~2c4c224b"), n.e("vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~5a9831fe"), n.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~82ccdb7d"), n.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1169,9 +1169,9 @@
 			})), n.d(t, "p", (function() {
 				return O
 			})), n.d(t, "m", (function() {
-				return C
-			})), n.d(t, "n", (function() {
 				return _
+			})), n.d(t, "n", (function() {
+				return C
 			})), n.d(t, "u", (function() {
 				return w
 			})), n.d(t, "a", (function() {
@@ -1212,15 +1212,15 @@
 					}
 				},
 				m = (e, t) => {
-					const n = C(e, t);
+					const n = _(e, t);
 					if (n) return n.mainHeader
 				},
 				b = (e, t) => {
-					const n = C(e, t);
+					const n = _(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				p = (e, t) => {
-					const n = C(e, t);
+					const n = _(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
@@ -1263,15 +1263,15 @@
 					const n = I(e, t);
 					return n && n.decimals ? "1" + "0".repeat(n.decimals) : "1"
 				},
-				C = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				_ = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				_ = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				C = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				w = (e, t) => {
-					const n = _(e, t);
+					const n = C(e, t);
 					return n && n.walletProvider
 				},
 				E = (e, t) => {
 					const n = w(e, t),
-						r = _(e, t);
+						r = C(e, t);
 					return n && n.provider || r && r.provider
 				},
 				N = (e, t) => {
@@ -1307,10 +1307,10 @@
 					}
 				},
 				T = (e, t) => {
-					const n = _(e, t);
+					const n = C(e, t);
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.4a40ea06279740d33ff6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d0e4e4bbf6f9c6d901a2.js.map

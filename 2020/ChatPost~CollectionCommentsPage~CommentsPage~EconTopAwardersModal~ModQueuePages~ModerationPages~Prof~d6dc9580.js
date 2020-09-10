@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ddd2bc402fd1ba3d119b.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ba8b4a2a842f10c6c897.js
+// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -34,7 +34,7 @@
 				a = s("./src/reddit/actions/modal.ts"),
 				o = s("./src/reddit/constants/modals.ts"),
 				n = s("./src/reddit/actions/gold/constants.ts");
-			const i = Object(r.a)(n.eb),
+			const i = Object(r.a)(n.hb),
 				d = Object(r.a)(n.u),
 				c = e => async t => {
 					await t(d({
@@ -53,7 +53,7 @@
 				n = s("./src/reddit/models/Toast/index.ts"),
 				i = s("./src/reddit/endpoints/gold/communityAwards.ts"),
 				d = s("./src/reddit/actions/gold/constants.ts");
-			const c = Object(a.a)(d.db),
+			const c = Object(a.a)(d.gb),
 				l = e => async (t, s, a) => {
 					let {
 						apiContext: d
@@ -95,10 +95,10 @@
 			}));
 			var l = s("./src/reddit/actions/modal.ts"),
 				m = s("./src/reddit/actions/gold/constants.ts");
-			Object(a.a)(m.kb), Object(a.a)(m.jb), Object(a.a)(m.ib);
-			const u = Object(a.a)(m.nb),
-				p = Object(a.a)(m.mb),
-				h = Object(a.a)(m.lb),
+			Object(a.a)(m.nb), Object(a.a)(m.mb), Object(a.a)(m.lb);
+			const u = Object(a.a)(m.qb),
+				p = Object(a.a)(m.pb),
+				h = Object(a.a)(m.ob),
 				b = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 25;
 					return async (s, a, n) => {
@@ -123,7 +123,7 @@
 						}
 					}
 				},
-				w = Object(a.a)(m.ob),
+				w = Object(a.a)(m.rb),
 				g = e => async (t, s) => {
 					t(w({
 						postId: e
@@ -316,8 +316,8 @@
 				_ = s("./src/reddit/selectors/user.ts");
 			var P = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				S = s("./src/reddit/selectors/userPrefs.ts"),
-				k = s("./node_modules/lodash/debounce.js"),
-				N = s.n(k),
+				N = s("./node_modules/lodash/debounce.js"),
+				k = s.n(N),
 				M = s("./src/lib/classNames/index.ts"),
 				B = s("./src/lib/fastdom/index.ts"),
 				L = s("./src/reddit/models/Gold/TopAwarded/index.ts"),
@@ -526,7 +526,7 @@
 				pe = 100;
 			class he extends o.a.Component {
 				constructor(e) {
-					super(e), this.plaqueRef = o.a.createRef(), this.handleResize = N()(() => {
+					super(e), this.plaqueRef = o.a.createRef(), this.handleResize = k()(() => {
 						this.handlePlaquePositionChange()
 					}, 300), this.handlePlaquePositionChange = () => {
 						const {
@@ -868,8 +868,8 @@
 				},
 				Pe = s("./src/reddit/actions/gold/reportAward.ts"),
 				Se = s("./src/reddit/controls/Button/index.tsx"),
-				ke = s("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
-				Ne = s.n(ke);
+				Ne = s("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
+				ke = s.n(Ne);
 			! function(e) {
 				e[e.BEGIN = 0] = "BEGIN", e[e.REPORT_COMMUNITY_AWARD = 1] = "REPORT_COMMUNITY_AWARD", e[e.FLAG_USAGE = 2] = "FLAG_USAGE"
 			}(Ie || (Ie = {}));
@@ -892,14 +892,14 @@
 						onClick: () => {
 							t(Object(x.clickReportAward)(e.award, e.thing.id)), i(Ie.REPORT_COMMUNITY_AWARD)
 						},
-						className: Ne.a.reportStepButton
+						className: ke.a.reportStepButton
 					}, r.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
 					})), o.a.createElement(Se.i, {
 						onClick: () => {
 							t(Object(x.clickFlagAwardUsage)(e.award, e.thing.id)), i(Ie.FLAG_USAGE)
 						},
-						className: Ne.a.reportStepButton
+						className: ke.a.reportStepButton
 					}, r.fbt._("This award is being used inappropriately.", null, {
 						hk: "Y8giW"
 					})));
@@ -1786,8 +1786,8 @@
 				_ = s("./src/reddit/components/QuarantinedLabel/index.tsx"),
 				P = s("./src/reddit/components/SponsoredLabel/index.tsx"),
 				S = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				k = s("./src/reddit/constants/posts.ts"),
-				N = s("./src/reddit/contexts/InsideOverlay.tsx"),
+				N = s("./src/reddit/constants/posts.ts"),
+				k = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				M = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				B = s("./src/reddit/components/Portal/index.tsx"),
 				L = s("./src/reddit/constants/elementIds.ts"),
@@ -1850,7 +1850,7 @@
 						pageLayer: d,
 						post: l,
 						showSub: A = !1,
-						showTimestamp: N = !0,
+						showTimestamp: k = !0,
 						subredditOrProfile: M,
 						tooltipType: B
 					} = e, L = Object(o.c)(), R = Object(g.a)(), F = l.belongsTo.id, U = Object(r.useCallback)(e => Object(W.a)(e, {
@@ -1911,7 +1911,7 @@
 						onMouseEnter: de.show,
 						onMouseLeave: de.hide,
 						onClick: () => {
-							R(Object(p.f)(B ? "post" : "postlist")), L(Object(h.i)(u.a.ECON_POWERUPS_PURCHASE))
+							R(Object(p.d)(B ? "post" : "postlist")), L(Object(h.i)(u.a.ECON_POWERUPS_PURCHASE))
 						},
 						ref: de.target.ref
 					}, a.a.createElement(v.a, {
@@ -1929,7 +1929,7 @@
 						flair: q,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: he
-					})), l.belongsTo.type === k.a.SUBREDDIT && !Object(G.h)(l.author) && a.a.createElement(j.a, {
+					})), l.belongsTo.type === N.a.SUBREDDIT && !Object(G.h)(l.author) && a.a.createElement(j.a, {
 						className: K.a.publicWallet,
 						contentId: l.id,
 						metaSeparator: a.a.createElement(be, null),
@@ -1948,7 +1948,7 @@
 						to: M.url
 					}, M.displayText)), M && M.isQuarantined && a.a.createElement(_.a, null), A && !le && a.a.createElement(be, null), l.isSponsored && a.a.createElement(r.Fragment, null, a.a.createElement(P.a, null), a.a.createElement(be, null)), we, a.a.createElement(I.e, {
 						post: l
-					}), N && a.a.createElement(a.a.Fragment, null, a.a.createElement("a", {
+					}), k && a.a.createElement(a.a.Fragment, null, a.a.createElement("a", {
 						className: K.a.externalLink,
 						"data-click-id": "timestamp",
 						href: l.permalink,
@@ -1966,7 +1966,7 @@
 						visible: ie.visible
 					}, Object(c.a)(l.created)))))
 				}));
-			t.d = re(Object(N.b)(Object(d.a)(oe)))
+			t.d = re(Object(k.b)(Object(d.a)(oe)))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2115,18 +2115,14 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "e", (function() {
+			s.d(t, "c", (function() {
 				return n
-			})), s.d(t, "f", (function() {
-				return i
 			})), s.d(t, "d", (function() {
+				return i
+			})), s.d(t, "b", (function() {
 				return d
 			})), s.d(t, "a", (function() {
 				return c
-			})), s.d(t, "b", (function() {
-				return l
-			})), s.d(t, "c", (function() {
-				return m
 			}));
 			var r = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				a = s("./src/reddit/selectors/telemetry.ts");
@@ -2163,17 +2159,7 @@
 				c = (e, t) => s => Object.assign({
 					source: "powerups_modal",
 					action: "view",
-					noun: "marketing_step"
-				}, o(s, e, t)),
-				l = (e, t) => s => Object.assign({
-					source: "powerups_modal",
-					action: "view",
 					noun: "purchase_step"
-				}, o(s, e, t)),
-				m = (e, t) => s => Object.assign({
-					source: "powerups_modal",
-					action: "view",
-					noun: "receipt_step"
 				}, o(s, e, t))
 		},
 		"./src/reddit/helpers/trackers/topAwarded.ts": function(e, t, s) {
@@ -2474,4 +2460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ddd2bc402fd1ba3d119b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ba8b4a2a842f10c6c897.js.map

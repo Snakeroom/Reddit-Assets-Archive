@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9ec2c79757f147afd8a9.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d06b1746e563ccbdf416.js
+// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "5965d14-production"
+					SENTRY_RELEASE_VERSION: "6c4c157-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1621,7 +1621,7 @@
 				o = n("./src/reddit/actions/modal.ts"),
 				r = n("./src/reddit/constants/modals.ts"),
 				i = n("./src/reddit/actions/gold/constants.ts");
-			const a = Object(s.a)(i.eb),
+			const a = Object(s.a)(i.hb),
 				c = Object(s.a)(i.u),
 				l = e => async t => {
 					await t(c({
@@ -1640,7 +1640,7 @@
 				i = n("./src/reddit/models/Toast/index.ts"),
 				a = n("./src/reddit/endpoints/gold/communityAwards.ts"),
 				c = n("./src/reddit/actions/gold/constants.ts");
-			const l = Object(o.a)(c.db),
+			const l = Object(o.a)(c.gb),
 				d = e => async (t, n, o) => {
 					let {
 						apiContext: c
@@ -1682,10 +1682,10 @@
 			}));
 			var d = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/actions/gold/constants.ts");
-			Object(o.a)(u.kb), Object(o.a)(u.jb), Object(o.a)(u.ib);
-			const p = Object(o.a)(u.nb),
-				m = Object(o.a)(u.mb),
-				h = Object(o.a)(u.lb),
+			Object(o.a)(u.nb), Object(o.a)(u.mb), Object(o.a)(u.lb);
+			const p = Object(o.a)(u.qb),
+				m = Object(o.a)(u.pb),
+				h = Object(o.a)(u.ob),
 				b = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 25;
 					return async (n, o, i) => {
@@ -1710,7 +1710,7 @@
 						}
 					}
 				},
-				f = Object(o.a)(u.ob),
+				f = Object(o.a)(u.rb),
 				g = e => async (t, n) => {
 					t(f({
 						postId: e
@@ -2224,19 +2224,19 @@
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return P
-			})), n.d(t, "b", (function() {
 				return N
+			})), n.d(t, "b", (function() {
+				return L
 			})), n.d(t, "a", (function() {
-				return R
-			})), n.d(t, "c", (function() {
 				return A
-			})), n.d(t, "e", (function() {
-				return F
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return D
+			})), n.d(t, "e", (function() {
+				return B
+			})), n.d(t, "d", (function() {
+				return U
 			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/uuid/v4.js"),
 				r = n.n(o),
@@ -2313,23 +2313,25 @@
 				}))
 			};
 			var E = n("./src/reddit/helpers/trackers/postComposer.ts"),
-				O = n("./src/reddit/models/PostCreationForm/index.ts"),
-				j = n("./src/reddit/models/Toast/index.ts"),
-				w = n("./src/reddit/selectors/postCreations.ts"),
-				S = n("./src/reddit/actions/postCreation/constants.ts"),
-				_ = n("./src/reddit/actions/postCreation/general.ts");
-			const k = Object(c.a)(S.x),
-				T = Object(c.a)(S.y),
-				I = Object(c.a)(S.w),
-				P = e => async (t, n) => {
-					t(k());
+				O = n("./src/reddit/models/Gold/Powerups/index.ts"),
+				j = n("./src/reddit/models/PostCreationForm/index.ts"),
+				w = n("./src/reddit/models/Toast/index.ts"),
+				S = n("./src/reddit/selectors/gold/powerups.ts"),
+				_ = n("./src/reddit/selectors/postCreations.ts"),
+				k = n("./src/reddit/actions/postCreation/constants.ts"),
+				T = n("./src/reddit/actions/postCreation/general.ts");
+			const I = Object(c.a)(k.x),
+				P = Object(c.a)(k.y),
+				M = Object(c.a)(k.w),
+				N = e => async (t, n) => {
+					t(I());
 					const s = e.map(e => {
 						let {
 							url: n,
 							uploadKey: s
 						} = e;
 						const o = Object(g.a)(Object(g.c)(n), "poster.png");
-						return t(L(o, s))
+						return t(F(o, s))
 					});
 					await Promise.all(s);
 					const o = n().uploads,
@@ -2339,8 +2341,8 @@
 							} = e;
 							return o[t]
 						}).find(e => e.status !== x.a.SUCCESS);
-					t(r ? I(r.error) : T())
-				}, M = (e, t) => ({
+					t(r ? M(r.error) : P())
+				}, R = (e, t) => ({
 					error: t ? {
 						type: e,
 						fields: [{
@@ -2351,25 +2353,25 @@
 						type: e
 					}
 				});
-			const N = "RTE",
-				R = "GALLERY",
-				L = (e, t, n, o) => async (r, a, c) => {
+			const L = "RTE",
+				A = "GALLERY",
+				F = (e, t, n, o) => async (r, a, c) => {
 					let {
 						apiContext: l
 					} = c;
-					const u = Object(w.g)(a()),
+					const u = Object(_.g)(a()),
 						x = Date.now();
 					let y = null,
 						v = !1,
-						O = !1,
-						j = !1;
-					const S = e => {
-						if (!j && n && v) {
-							j = !0;
+						j = !1,
+						w = !1;
+					const k = e => {
+						if (!w && n && v) {
+							w = !0;
 							const s = a(),
 								o = Date.now() - x,
 								r = Object(b.c)(b.a.PostComposer);
-							O ? C({
+							j ? C({
 								state: s,
 								uploadKey: t,
 								assetId: y,
@@ -2382,7 +2384,7 @@
 					};
 					return await r(Object(d.l)(e, t, async c => {
 						v = !0, Object(d.k)(c.id, () => {
-							S(!0)
+							k(!0)
 						});
 						const {
 							error: b,
@@ -2392,7 +2394,7 @@
 								r = n && n.name,
 								a = await Object(g.g)(t) || t.type,
 								c = Object(g.b)(t) || void 0;
-							if (!c) return M("UNSUPPORTED_BROWSER");
+							if (!c) return R("UNSUPPORTED_BROWSER");
 							const l = {
 								localUrl: c,
 								mimetype: a
@@ -2407,46 +2409,52 @@
 									const e = s.fbt._("Images are not allowed in r/{subredditName}", [s.fbt._param("subredditName", r)], {
 										hk: "3C2E7Q"
 									});
-									return M(i.M, e)
+									return R(i.M, e)
 								}
 								if ("image/gif" === a) {
-									if (t.size > i.R) return M(i.H)
-								} else if (t.size > i.T) return M(i.K);
+									if (t.size > i.R) return R(i.H)
+								} else if (t.size > i.T) return R(i.K);
 								const e = await Object(f.a)(c);
 								l.width = e.width, l.height = e.height
 							} else if (a.startsWith("video/")) {
-								if (t.size > i.Y) return M(i.Yb);
-								let e;
+								const a = !(null == n || !n.id) && Object(S.h)(e, {
+										subredditId: n.id,
+										benefit: O.a.HdVideo
+									}),
+									u = a ? 2 * i.Y : i.Y;
+								if (t.size > u) return R(i.Yb);
+								let p;
 								try {
-									e = await Object(g.h)(c, !0)
+									p = await Object(g.h)(c, !0)
 								} catch (d) {
-									return M(i.M)
+									return R(i.M)
 								}
 								if (o) {
 									const {
-										videos: t,
-										images: n
+										videos: e,
+										images: t
 									} = o;
-									if (n && !t && e.duration > i.Z) {
+									if (t && !e && p.duration > i.Z) {
 										const e = s.fbt._("Sorry, r/{subredditName} doesn't allow videos. Please upload a video less than 60 seconds to convert to animated GIF.", [s.fbt._param("subredditName", r)], {
 											hk: "46ULiz"
 										});
-										return M(i.M, e)
+										return R(i.M, e)
 									}
-									if (!n && !t) {
+									if (!t && !e) {
 										const e = s.fbt._("Videos are not allowed in r/{subredditName}", [s.fbt._param("subredditName", r)], {
 											hk: "4uTUZb"
 										});
-										return M(i.M, e)
+										return R(i.M, e)
 									}
 								}
-								if (e.duration > i.X) {
-									const e = s.fbt._("Video is too long. Maximum video length is 15 minutes.", null, {
-										hk: "26m2mj"
+								const m = a ? 2 * i.X : i.X;
+								if (p.duration > m) {
+									const e = s.fbt._("Video is too long. Maximum video length is {duration} minutes.", [s.fbt._param("duration", (m / 60).toString())], {
+										hk: "20nB6Q"
 									});
-									return M(i.M, e)
+									return R(i.M, e)
 								}
-								l.height = e.height, l.width = e.width, l.videoDuration = e.duration, l.videoFirstFrameUrl = e.firstFrame.dataUrl
+								l.height = p.height, l.width = p.width, l.videoDuration = p.duration, l.videoFirstFrameUrl = p.firstFrame.dataUrl
 							}
 							return {
 								metadata: l
@@ -2460,7 +2468,7 @@
 							metadata: Object.assign({
 								fileSource: n
 							}, x)
-						})), O = !0, o && o();
+						})), j = !0, o && o();
 						const C = e.name,
 							E = await (async (e, t, n) => Object(p.a)(Object(m.a)(e, [h.a]), {
 								endpoint: "".concat(e.apiUrl, "/api/media/asset.json"),
@@ -2475,17 +2483,17 @@
 						}) : {
 							error: E.error || void 0
 						}
-					}, !0)), S(!1), a().uploads[t] || null
-				}, A = e => async (t, n, s) => {
+					}, !0)), k(!1), a().uploads[t] || null
+				}, D = e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
 					const r = n().uploads[e];
-					r && !Object(x.c)(r) && await t(L(r.file, r.key, r.metadata.fileSource, void 0))
-				}, F = (e, t, n) => async (o, i) => {
+					r && !Object(x.c)(r) && await t(F(r.file, r.key, r.metadata.fileSource, void 0))
+				}, B = (e, t, n) => async (o, i) => {
 					const c = e.map((e, s) => new Promise(async s => {
 							const i = Object(x.d)(n, r()().slice(-6));
-							await o(L(e, i, t, () => s({
+							await o(F(e, i, t, () => s({
 								uploadKey: i,
 								isValid: !0
 							}))), s({
@@ -2503,11 +2511,11 @@
 							} = o(), i = e.map(e => r[e]).filter(e => e.status === x.a.FAILED && !e.metadata.mimetype).map(e => e.error), c = i.length > t ? t - 1 : i.length, d = i.length - c;
 							i.slice(0, c).forEach(e => n(Object(l.e)({
 								duration: l.a,
-								kind: j.b.Error,
+								kind: w.b.Error,
 								text: Object(a.a)(e)
 							}))), d > 0 && n(Object(l.e)({
 								duration: l.a,
-								kind: j.b.Error,
+								kind: w.b.Error,
 								text: s.fbt._({
 									"*": "Couldn't add {number} more files",
 									_1: "Couldn't add 1 more file"
@@ -2517,38 +2525,38 @@
 							}))
 						}
 					}(u)), d.filter(e => e.isValid).map(e => e.uploadKey)
-				}, D = (e, t) => async (n, o) => {
+				}, U = (e, t) => async (n, o) => {
 					const r = o(),
-						i = Object(w.O)(r),
+						i = Object(_.O)(r),
 						{
 							items: a
 						} = i,
 						c = !a.length && 1 === e.length,
-						p = Object(w.G)(r) && !c;
+						p = Object(_.G)(r) && !c;
 					let m = !1,
 						h = e;
 					if (p) {
-						if (Object(O.v)(i)) return void n(Object(l.e)({
-							kind: j.b.Error,
+						if (Object(j.v)(i)) return void n(Object(l.e)({
+							kind: w.b.Error,
 							text: s.fbt._("Please remove the existing video first. Videos aren't supported within galleries yet.", null, {
 								hk: "3lGxp4"
 							})
 						}));
 						h.some(e => Object(g.l)(e.type)) && n(Object(l.e)({
-							kind: j.b.Error,
+							kind: w.b.Error,
 							text: s.fbt._("Videos aren’t supported within galleries...yet", null, {
 								hk: "9Cl20"
 							})
 						})), h = h.filter(e => Object(g.k)(e.type));
 						const e = Math.max(0, u.b - a.length);
 						h.length > e && (n(Object(l.e)({
-							kind: j.b.Error,
+							kind: w.b.Error,
 							text: s.fbt._("You have hit the limit of {images_limit} images", [s.fbt._param("images_limit", "".concat(u.b))], {
 								hk: "6M4kX"
 							})
 						})), h = h.slice(0, e))
-					} else h = h.slice(0, 1), m = !0, n(Object(d.j)(R, !0));
-					const b = await n(F(h, t, R));
+					} else h = h.slice(0, 1), m = !0, n(Object(d.j)(A, !0));
+					const b = await n(B(h, t, A));
 					if (!b.length) return;
 					const f = b.map(e => ({
 							uploadKey: e,
@@ -2556,7 +2564,7 @@
 							url: ""
 						})),
 						x = 0 === a.length;
-					n(Object(_.d)(Object.assign(Object.assign({}, i), {
+					n(Object(T.d)(Object.assign(Object.assign({}, i), {
 						items: m ? f : [...a, ...f],
 						selectedKey: x ? b[0] : b[b.length - 1]
 					})))
@@ -11561,7 +11569,7 @@
 						onMouseEnter: ce.show,
 						onMouseLeave: ce.hide,
 						onClick: () => {
-							D(Object(m.f)(L ? "post" : "postlist")), A(Object(h.i)(p.a.ECON_POWERUPS_PURCHASE))
+							D(Object(m.d)(L ? "post" : "postlist")), A(Object(h.i)(p.a.ECON_POWERUPS_PURCHASE))
 						},
 						ref: ce.target.ref
 					}, o.a.createElement(y.a, {
@@ -17872,7 +17880,7 @@
 							let {
 								destSubreddit: n
 							} = t;
-							return !!n && !!n.id && Object(oa.f)(e, {
+							return !!n && !!n.id && Object(oa.h)(e, {
 								subredditId: n.id,
 								benefit: O.a.CommentsWithEmoji
 							})
@@ -17882,7 +17890,7 @@
 							let {
 								destSubreddit: n
 							} = t;
-							return !!n && !!n.id && Object(oa.f)(e, {
+							return !!n && !!n.id && Object(oa.h)(e, {
 								subredditId: n.id,
 								benefit: O.a.CommentsWithGifs
 							})
@@ -25167,18 +25175,14 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "c", (function() {
 				return i
-			})), n.d(t, "f", (function() {
-				return a
 			})), n.d(t, "d", (function() {
+				return a
+			})), n.d(t, "b", (function() {
 				return c
 			})), n.d(t, "a", (function() {
 				return l
-			})), n.d(t, "b", (function() {
-				return d
-			})), n.d(t, "c", (function() {
-				return u
 			}));
 			var s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -25215,17 +25219,7 @@
 				l = (e, t) => n => Object.assign({
 					source: "powerups_modal",
 					action: "view",
-					noun: "marketing_step"
-				}, r(n, e, t)),
-				d = (e, t) => n => Object.assign({
-					source: "powerups_modal",
-					action: "view",
 					noun: "purchase_step"
-				}, r(n, e, t)),
-				u = (e, t) => n => Object.assign({
-					source: "powerups_modal",
-					action: "view",
-					noun: "receipt_step"
 				}, r(n, e, t))
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, n) {
@@ -32744,7 +32738,7 @@
 				}, e.children),
 				Vd = Object(i.a)(w.d, w.g, w.p, w.K, w.U, E.q, (e, t) => {
 					const n = Object(E.m)(e, t);
-					return !!n && Object(Id.g)(e, {
+					return !!n && Object(Id.i)(e, {
 						subredditId: n
 					})
 				}, (e, t, n, s, o, r, i) => {
@@ -33544,7 +33538,7 @@
 					return !!n && n.hasGifProduct
 				},
 				B = (e, t, n) => {
-					if (t && Object(h.f)(e, {
+					if (t && Object(h.h)(e, {
 							subredditId: t,
 							benefit: c.a.CommentsWithGifs
 						})) return !0;
@@ -33882,4 +33876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9ec2c79757f147afd8a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d06b1746e563ccbdf416.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.79769d98efa6f5484a64.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.43bb6f7dd02bcb2add95.js
+// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -1748,7 +1748,7 @@
 					onHideTooltip: F,
 					onShowTooltip: B,
 					openPowerupsModal: () => {
-						X(Object(g.f)("comment")), D()
+						X(Object(g.d)("comment")), D()
 					},
 					opTooltipId: A,
 					renderContractorBadge: U,
@@ -9808,15 +9808,19 @@
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				o = s("./node_modules/react/index.js"),
 				r = s.n(o),
-				i = s("./src/reddit/components/SidebarContainer/index.tsx"),
-				a = s("./src/reddit/components/SidebarProfileModeratedSubreddits/index.tsx"),
-				c = s("./src/reddit/components/SidebarProfileMultireddits/index.tsx"),
-				d = s("./src/reddit/components/SidebarSpacer/index.tsx"),
-				l = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				m = s("./src/reddit/components/SidebarTrophyCase/index.tsx"),
-				p = s("./src/reddit/components/Widgets/ConnectedAccounts/index.tsx"),
-				u = s("./src/reddit/constants/posts.ts");
-			const b = Object(n.a)({
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/reddit/components/SidebarContainer/index.tsx"),
+				d = s("./src/reddit/components/SidebarProfileModeratedSubreddits/index.tsx"),
+				l = s("./src/reddit/components/SidebarProfileMultireddits/index.tsx"),
+				m = s("./src/reddit/components/SidebarProfilePowerupContributions/index.tsx"),
+				p = s("./src/reddit/components/SidebarSpacer/index.tsx"),
+				u = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				b = s("./src/reddit/components/SidebarTrophyCase/index.tsx"),
+				h = s("./src/reddit/components/Widgets/ConnectedAccounts/index.tsx"),
+				x = s("./src/reddit/constants/posts.ts"),
+				f = s("./src/reddit/selectors/experiments/goldSubredditPowerups.ts");
+			const g = Object(n.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-ProfileIdCard",
 					isReady(e) {
@@ -9836,28 +9840,36 @@
 						return "./src/reddit/components/ProfileIdCard/index.tsx"
 					}
 				}),
-				h = e => r.a.createElement(i.a, {
+				v = Object(a.c)({
+					inGoldPowerupsExperiment: f.a
+				}),
+				O = Object(i.b)(v),
+				C = e => r.a.createElement(c.a, {
 					className: e.className
-				}, r.a.createElement(b, {
+				}, r.a.createElement(g, {
 					profileName: e.profileName,
 					isOverlay: e.isOverlay
-				}), r.a.createElement(p.a, {
+				}), r.a.createElement(h.a, {
 					subredditOrProfile: {
 						name: e.profileName,
-						type: u.a.PROFILE
+						type: x.a.PROFILE
 					}
-				}), r.a.createElement(a.a, {
+				}), r.a.createElement(d.a, {
 					profileName: e.profileName
-				}), r.a.createElement(c.a, {
+				}), r.a.createElement(l.a, {
 					profileName: e.profileName
-				}), r.a.createElement(d.a, null, r.a.createElement(m.a, {
+				}), e.inGoldPowerupsExperiment && r.a.createElement(p.a, null, r.a.createElement(m.a, {
 					profileName: e.profileName
-				})), r.a.createElement(l.a, {
+				})), r.a.createElement(p.a, null, r.a.createElement(b.a, {
+					profileName: e.profileName
+				})), r.a.createElement(u.a, {
 					hideBackToTop: e.hideBackToTop
+				}), r.a.createElement(d.a, {
+					profileName: e.profileName
 				}));
-			h.defaultProps = {
+			C.defaultProps = {
 				isOverlay: !1
-			}, t.a = h
+			}, t.a = O(C)
 		},
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx": function(e, t, s) {
 			"use strict";
@@ -10480,6 +10492,80 @@
 						hk: "16Oicc"
 					})
 				})) : null
+			})
+		},
+		"./src/reddit/components/SidebarProfilePowerupContributions/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				c = s("./src/reddit/components/SidebarExpandableList/index.tsx"),
+				d = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				l = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				m = s("./src/reddit/selectors/gold/powerups.ts"),
+				p = s("./src/reddit/selectors/user.ts"),
+				u = s("./node_modules/reselect/es/index.js"),
+				b = s("./src/reddit/components/Widgets/CommunityList/index.m.less"),
+				h = s.n(b);
+			const x = Object(u.c)({
+				subreddits: function(e, t) {
+					let {
+						profileName: s
+					} = t;
+					const n = Object(p.eb)(e, {
+							userName: s
+						}),
+						o = Object(m.e)(e);
+					return (n && o ? o[n.id] : null) || []
+				}
+			});
+
+			function f(e) {
+				let {
+					item: t
+				} = e;
+				const s = t.subredditInfo,
+					o = r.a.createElement(d.b, {
+						iconUrl: s.styles.icon,
+						className: h.a.subredditIcon
+					});
+				return r.a.createElement(l.a, {
+					className: h.a.communityItemContainer,
+					key: s.id
+				}, r.a.createElement("div", {
+					className: h.a.iconContainer
+				}, r.a.createElement(a.a, {
+					to: s.path
+				}, o)), r.a.createElement("div", {
+					className: h.a.communityDescription
+				}, r.a.createElement("div", {
+					className: h.a.communityName
+				}, r.a.createElement(a.a, {
+					to: s.path
+				}, s.prefixedName)), r.a.createElement("div", {
+					className: h.a.subscriberCount
+				}, n.fbt._({
+					"*": "{number} Powerups",
+					_1: "1 Powerup"
+				}, [n.fbt._plural(t.powerups, "number")], {
+					hk: "3fbcDy"
+				}))))
+			}
+			t.a = Object(i.b)(x)(e => {
+				let {
+					subreddits: t
+				} = e;
+				return function(e) {
+					return e.length > 0 && e.every(e => e.subredditInfo)
+				}(t) ? r.a.createElement(c.a, {
+					title: n.fbt._("Supports Communities", null, {
+						hk: "1vCNdZ"
+					}),
+					items: t,
+					renderItem: f
+				}) : null
 			})
 		},
 		"./src/reddit/components/SidebarSpacer/index.m.less": function(e, t, s) {
@@ -15293,4 +15379,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.79769d98efa6f5484a64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.43bb6f7dd02bcb2add95.js.map

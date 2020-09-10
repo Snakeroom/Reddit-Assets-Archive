@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.f433b9fb875d9aa8254b.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.2adf4497906fd9b401d4.js
+// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -945,7 +945,7 @@
 					return !!r && r.hasGifProduct
 				},
 				T = (e, t, r) => {
-					if (t && Object(p.f)(e, {
+					if (t && Object(p.h)(e, {
 							subredditId: t,
 							benefit: i.a.CommentsWithGifs
 						})) return !0;
@@ -1012,4 +1012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.f433b9fb875d9aa8254b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.2adf4497906fd9b401d4.js.map
