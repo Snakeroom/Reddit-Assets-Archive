@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.df1d24d0ed7b0d1c1866.js
-// Retrieved at 9/10/2020, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d416ba33ce85b73df2e6.js
+// Retrieved at 9/10/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -4774,14 +4774,14 @@
 							}));
 							const e = !!h.platform.currentPage && !!h.platform.currentPage.queryParams.useMockData,
 								s = Object(d.a)(h),
-								n = Object(d.c)(s),
-								i = [Object(d.d)(s)],
+								n = g.a,
+								i = [Object(d.c)(s)],
 								b = Object.assign(Object.assign({
 									after: C.token,
 									dist: C.dist
 								}, r()(T, c.l)), {
 									isMobile: Object(a.e)(h.meta.userAgent),
-									limit: n || g.a,
+									limit: n,
 									sort: E,
 									t: Object(u.a)(E, D),
 									layout: g.e[Object(f.N)(h, {})],
@@ -8910,7 +8910,7 @@
 					})));
 					const O = Object(te.a)(r),
 						g = Object(te.b)(O),
-						f = [Object(te.d)(O)];
+						f = [Object(te.c)(O)];
 					await s(tt(o, Object.assign(Object.assign(Object.assign({}, a()(e.queryParams, Q.l)), a()(e.queryParams, Q.k)), {
 						limit: g,
 						sort: c,
@@ -25367,8 +25367,6 @@
 				return b
 			})), s.d(t, "c", (function() {
 				return p
-			})), s.d(t, "d", (function() {
-				return O
 			}));
 			var n, r = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/constants/postLayout.ts"),
@@ -25391,45 +25389,18 @@
 
 			function b(e) {
 				switch (e) {
-					case r.lb.Fetch5Then5:
-					case r.lb.Fetch5Then12:
-						return 5;
-					case r.lb.Fetch12Then5:
-					case r.lb.Fetch12Then12:
-						return 12;
-					default:
-						return
-				}
-			}
-
-			function p(e) {
-				switch (e) {
-					case r.lb.Fetch5Then5:
-					case r.lb.Fetch12Then5:
-						return 5;
-					case r.lb.Fetch5Then12:
-					case r.lb.Fetch12Then12:
-						return 12;
+					case r.lb.Enabled:
+						return 18;
 					default:
 						return
 				}
 			}! function(e) {
-				e.Fetch5Then5 = "frontpage-card-posts-2.fetch_5_then_5", e.Fetch5Then12 = "frontpage-card-posts-2.fetch_5_then_12", e.Fetch12Then5 = "frontpage-card-posts-2.fetch_12_then_5", e.Fetch12Then12 = "frontpage-card-posts-2.fetch_12_then_12", e.Control1 = "frontpage-card-posts-2.control_1", e.Control2 = "frontpage-card-posts-2.control_2", e.NoBucket = "frontpage-card-posts-2.no_bucket"
+				e.Enabled = "frontpage-card-posts-3.enabled", e.NoBucket = "frontpage-card-posts-3.no_bucket"
 			}(n || (n = {}));
-			const O = e => {
+			const p = e => {
 				switch (e) {
-					case r.lb.Fetch5Then5:
-						return n.Fetch5Then5;
-					case r.lb.Fetch5Then12:
-						return n.Fetch5Then12;
-					case r.lb.Fetch12Then5:
-						return n.Fetch12Then5;
-					case r.lb.Fetch12Then12:
-						return n.Fetch12Then12;
-					case "control_1":
-						return n.Control1;
-					case "control_2":
-						return n.Control2;
+					case r.lb.Enabled:
+						return n.Enabled;
 					default:
 						return n.NoBucket
 				}
@@ -56173,4 +56144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.df1d24d0ed7b0d1c1866.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d416ba33ce85b73df2e6.js.map
