@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0a7e2cc1fae5529f5e2c.js
-// Retrieved at 9/10/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.fe8439757ef2bbfad7b8.js
+// Retrieved at 9/11/2020, 3:40:44 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var d, t, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) t = i[l], Object.prototype.hasOwnProperty.call(n, t) && n[t] && P.push(n[t][0]), n[t] = 0;
@@ -990,7 +990,7 @@
 						EconTopAwardersModal: "cc5983d58e325599ca4b",
 						Coins: "f35d54b93f9d2f83beb3",
 						CoinsMobile: "6f7363829e3fc3f842df",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "ac3bf07d78866ae503c1",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "308936428d7440d28778",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478": "59a94fbc2bd5e1098b0f",
 						"FramedGild~GildModal": "c5efe6d21fd1551173ed",
 						FramedGild: "11357106b976892a6a56",
@@ -1061,7 +1061,7 @@
 						RedesignChat: "9f13e22ec9d7a25be8dc",
 						"vendors~CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki~reddit-components-Governance-Tra~323a8d79": "e59d917868df25b34dd7",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~StandalonePostPage~Subreddit": "163e57e27ed37da29b28",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "d762ddf352643e1f9824",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "336808391b55e1c33a95",
 						CollectionCommentsPage: "665272bbf813673c428b",
 						CommentsPage: "99d9d482a487fcb17ac1",
 						Subreddit: "ec599d8c0c3defd98554",
@@ -1072,7 +1072,7 @@
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
 						ModerationPages: "a55bee3e1a161e57d694",
 						"vendors~PostCreation~RichTextEditor": "f5d5345f614f740e35e6",
-						PostCreation: "36ceae2f8d77ad89d2c4",
+						PostCreation: "06da73f2bb1c89b6e0a4",
 						"vendors~Multireddit": "c9ea46fd1c2e6dcd587d",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "fa4ecd17d27be136e58a",
 						Multireddit: "8e242508b4bf06f27f65",
@@ -1105,7 +1105,7 @@
 						GovernanceTransferPointsModal: "ff0bd79761968590013b",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"LiveVideoPlayer~PublicAccessNetwork": "3d3d79539efdbb31172a",
-						PublicAccessNetwork: "668020d862f60848eb65",
+						PublicAccessNetwork: "b0e68222e309f18dc0f6",
 						"vendors~ModListing": "c3f87928276a47214bb2",
 						ModListing: "2eb65e1b3658c6abc427",
 						"vendors~ModQueuePages": "707b386648ad89d65795",
@@ -1140,7 +1140,7 @@
 						"reddit-components-InFeedPostCreation": "b211fe14255a9a982221",
 						"reddit-components-TabBadger-Component": "b1aa497fb89c4701cf14",
 						"RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093": "6918bb4b0a02895ec55f",
-						RpanListingUnit: "29997a5b452973ab82a5",
+						RpanListingUnit: "7e15471d417c9ef38fc7",
 						"reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796": "5d6632b3651cb4785cad",
 						"reddit-components-MediumPost": "4894c99838dc15bb6cdd",
 						"reddit-components-ClassicPost": "7979417d1f7fed2ced7e",
@@ -1162,7 +1162,7 @@
 						ChatMinimize: "d9055b288c8e61a1d298",
 						ChatPage: "86863bf7c87f03003f7d",
 						ChatReportFlow: "5f8bfd020e0dd56563dd",
-						ChatPost: "f129e0451516e8c2700b",
+						ChatPost: "04147c1d19202f1aebda",
 						CommentsPageNativeAd: "e97f2901851614d910ef",
 						EconomicsSubredditPremiumSidebarCards: "c29cd27b2f10d4c3e992",
 						HarbergerTaxBannerPurchaseCTA: "e0f6e38bd1289c2ed42c",
@@ -1281,4 +1281,4 @@
 	var m = c;
 	a()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0a7e2cc1fae5529f5e2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.fe8439757ef2bbfad7b8.js.map
