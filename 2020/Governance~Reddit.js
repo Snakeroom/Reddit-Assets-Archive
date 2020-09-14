@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7ab681d52795f9d8c626.js
-// Retrieved at 9/14/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.55d26f5d691f108c8660.js
+// Retrieved at 9/14/2020, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -26369,7 +26369,7 @@
 		},
 		"./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts": function(e, t, s) {
 			"use strict";
-			s("./node_modules/core-js/modules/es6.array.sort.js");
+			s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var n = s("./src/lib/constants/index.ts"),
 				r = s("./src/reddit/models/User/index.ts");
 			t.a = (e, t) => ({
@@ -26387,7 +26387,7 @@
 				showLocationBasedRecommendations: e.isLocationBasedRecommendationEnabled,
 				account: {
 					openPostInNewTab: e.isNewTabOpenedForPostView,
-					rpanDuDismissalTime: e.rpanDuDismissedAt,
+					rpanDuDismissalTime: e.rpanDuDismissedAt && e.rpanDuDismissedAt.replace(/\+\d+$/, ""),
 					sort: e.globalCommunityPostFeedSort.range ? "".concat(e.globalCommunityPostFeedSort.sort.toLowerCase(), "_").concat(e.globalCommunityPostFeedSort.range.toLowerCase()) : e.globalCommunityPostFeedSort.sort.toLowerCase(),
 					showRpanDu: e.isRpanDuShown,
 					stylesEnabled: e.isCommunityStylingEnabled,
@@ -52924,7 +52924,7 @@
 					useMarkdown: !1
 				},
 				H = {
-					rpanDuDismissalTime: 0,
+					rpanDuDismissalTime: void 0,
 					isContributorRequestTimestamp: 0,
 					stylesEnabled: !0,
 					layout: void 0,
@@ -55919,4 +55919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7ab681d52795f9d8c626.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.55d26f5d691f108c8660.js.map
