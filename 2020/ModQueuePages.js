@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.de309ac7f0468f79b8a5.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.2ba02450c98006e53973.js
+// Retrieved at 9/14/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -456,8 +456,6 @@
 				commentParentWrapper: "OPElT6Do1pTNOWhGkL1eT",
 				CommentBody: "_3PTQsA2VkqzBrZxhvpwI8Z",
 				commentBody: "_3PTQsA2VkqzBrZxhvpwI8Z",
-				Fade: "_3Q0PfUquGeJoHhFKeS5MRg",
-				fade: "_3Q0PfUquGeJoHhFKeS5MRg",
 				ParentPostTitle: "_144TYY84bzwNfGN3DGzUvi",
 				parentPostTitle: "_144TYY84bzwNfGN3DGzUvi",
 				Component: "_29-oldqrqqPwwjRRH0aLqU",
@@ -467,9 +465,9 @@
 		"./src/reddit/components/Comments/UnthreadedComment/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return S
+				return w
 			})), s.d(t, "b", (function() {
-				return T
+				return M
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -496,15 +494,14 @@
 				O = P.a.div("ContentWrapper", y.a),
 				j = P.a.div("CommentContentWrapper", y.a),
 				E = P.a.div("CommentBody", y.a),
-				w = P.a.div("Fade", y.a),
-				S = P.a.div("ParentPostTitle", y.a),
-				N = P.a.div("CommentParentWrapper", y.a),
-				M = Object(a.c)({
+				w = P.a.div("ParentPostTitle", y.a),
+				S = P.a.div("CommentParentWrapper", y.a),
+				N = Object(a.c)({
 					comment: (e, t) => Object(C.n)(e, t),
 					flair: C.e,
 					subreddit: v.J
 				}),
-				T = Object(r.b)(M, (e, t) => {
+				M = Object(r.b)(N, (e, t) => {
 					let {
 						commentId: s,
 						trackClick: n
@@ -517,10 +514,10 @@
 						}
 					}
 				}),
-				R = Object(i.b)(e => ({
+				T = Object(i.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			t.c = T(P.a.wrapped(e => {
+			t.c = M(P.a.wrapped(e => {
 				const {
 					className: t,
 					comment: s,
@@ -545,14 +542,14 @@
 					isCheckboxSelected: a,
 					toggleCheckbox: k,
 					subreddit: C
-				}), o.a.createElement(_, null, o.a.createElement(O, null, o.a.createElement(N, null, s.postTitle && o.a.createElement(S, null, s.postTitle), s.postAuthor && o.a.createElement(p.a, {
+				}), o.a.createElement(_, null, o.a.createElement(O, null, o.a.createElement(S, null, s.postTitle && o.a.createElement(w, null, s.postTitle), s.postAuthor && o.a.createElement(p.a, {
 					comment: s
 				})), o.a.createElement(j, null, o.a.createElement(m.a, {
 					comment: s
 				}, o.a.createElement(E, null, o.a.createElement(x.a, {
 					content: Object(f.a)(s),
-					rtJsonElementProps: R(e)
-				}), o.a.createElement(w, null)), o.a.createElement(u.a, {
+					rtJsonElementProps: T(e)
+				})), o.a.createElement(u.a, {
 					comment: s,
 					flair: n,
 					subredditName: C ? C.displayText : null
@@ -2363,4 +2360,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.de309ac7f0468f79b8a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.2ba02450c98006e53973.js.map

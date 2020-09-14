@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.447782f644896ec7ac39.js
-// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8b10392e8fc9f861ca55.js
+// Retrieved at 9/14/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5218,8 +5218,6 @@
 				commentParentWrapper: "OPElT6Do1pTNOWhGkL1eT",
 				CommentBody: "_3PTQsA2VkqzBrZxhvpwI8Z",
 				commentBody: "_3PTQsA2VkqzBrZxhvpwI8Z",
-				Fade: "_3Q0PfUquGeJoHhFKeS5MRg",
-				fade: "_3Q0PfUquGeJoHhFKeS5MRg",
 				ParentPostTitle: "_144TYY84bzwNfGN3DGzUvi",
 				parentPostTitle: "_144TYY84bzwNfGN3DGzUvi",
 				Component: "_29-oldqrqqPwwjRRH0aLqU",
@@ -5229,9 +5227,9 @@
 		"./src/reddit/components/Comments/UnthreadedComment/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return I
+				return S
 			})), s.d(t, "b", (function() {
-				return P
+				return N
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -5258,15 +5256,14 @@
 				y = O.a.div("ContentWrapper", _.a),
 				j = O.a.div("CommentContentWrapper", _.a),
 				w = O.a.div("CommentBody", _.a),
-				S = O.a.div("Fade", _.a),
-				I = O.a.div("ParentPostTitle", _.a),
-				T = O.a.div("CommentParentWrapper", _.a),
-				N = Object(r.c)({
+				S = O.a.div("ParentPostTitle", _.a),
+				I = O.a.div("CommentParentWrapper", _.a),
+				T = Object(r.c)({
 					comment: (e, t) => Object(v.n)(e, t),
 					flair: v.e,
 					subreddit: E.J
 				}),
-				P = Object(a.b)(N, (e, t) => {
+				N = Object(a.b)(T, (e, t) => {
 					let {
 						commentId: s,
 						trackClick: n
@@ -5279,10 +5276,10 @@
 						}
 					}
 				}),
-				M = Object(i.b)(e => ({
+				P = Object(i.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			t.c = P(O.a.wrapped(e => {
+			t.c = N(O.a.wrapped(e => {
 				const {
 					className: t,
 					comment: s,
@@ -5307,14 +5304,14 @@
 					isCheckboxSelected: r,
 					toggleCheckbox: C,
 					subreddit: v
-				}), o.a.createElement(k, null, o.a.createElement(y, null, o.a.createElement(T, null, s.postTitle && o.a.createElement(I, null, s.postTitle), s.postAuthor && o.a.createElement(p.a, {
+				}), o.a.createElement(k, null, o.a.createElement(y, null, o.a.createElement(I, null, s.postTitle && o.a.createElement(S, null, s.postTitle), s.postAuthor && o.a.createElement(p.a, {
 					comment: s
 				})), o.a.createElement(j, null, o.a.createElement(m.a, {
 					comment: s
 				}, o.a.createElement(w, null, o.a.createElement(g.a, {
 					content: Object(f.a)(s),
-					rtJsonElementProps: M(e)
-				}), o.a.createElement(S, null)), o.a.createElement(u.a, {
+					rtJsonElementProps: P(e)
+				})), o.a.createElement(u.a, {
 					comment: s,
 					flair: n,
 					subredditName: v ? v.displayText : null
@@ -31205,4 +31202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.447782f644896ec7ac39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8b10392e8fc9f861ca55.js.map
