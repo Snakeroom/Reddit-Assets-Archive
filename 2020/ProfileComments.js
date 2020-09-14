@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.bfb8e3eac27c1aa759d2.js
-// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.a415424c0c88beb4f1da.js
+// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -1598,7 +1598,7 @@
 					onHideTooltip: F,
 					onShowTooltip: B,
 					openPowerupsModal: () => {
-						Z(Object(v.d)("comment")), D()
+						Z(Object(v.c)("comment")), D()
 					},
 					opTooltipId: A,
 					renderContractorBadge: U,
@@ -13408,4 +13408,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.bfb8e3eac27c1aa759d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.a415424c0c88beb4f1da.js.map

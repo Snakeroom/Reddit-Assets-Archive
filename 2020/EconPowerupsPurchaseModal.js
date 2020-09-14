@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9c9371672271d3d09db2.js
-// Retrieved at 9/10/2020, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9e4e1053e5d8ced017a3.js
+// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -116,9 +116,9 @@
 				L = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				S = a("./src/reddit/components/StripePaymentForm/index.tsx"),
 				D = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				F = a("./src/reddit/icons/svgs/Premium/index.tsx"),
-				A = a("./src/reddit/hooks/useThunkDispatch.ts"),
-				B = a("./src/reddit/controls/Button/index.tsx");
+				A = a("./src/reddit/icons/svgs/Premium/index.tsx"),
+				B = a("./src/reddit/hooks/useThunkDispatch.ts"),
+				F = a("./src/reddit/controls/Button/index.tsx");
 			const {
 				fbt: T
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), H = Object(n.c)({
@@ -135,7 +135,7 @@
 						powerupsCount: n,
 						productOffer: o,
 						subredditId: l
-					} = e, i = Object(A.a)();
+					} = e, i = Object(B.a)();
 					Object(s.useEffect)(() => (window.addEventListener("message", p, !1), () => window.removeEventListener("message", p)), []);
 					const [d, u] = Object(s.useState)(!1);
 					let m = null;
@@ -154,10 +154,11 @@
 							i(Object(j.d)({
 								subredditId: l,
 								powerupsCount: n,
-								user: a
+								user: a,
+								isAnonymous: c
 							}))
 						};
-					return r.a.createElement(B.f, {
+					return r.a.createElement(F.f, {
 						onClick: async () => {
 							if (!o) return;
 							u(!0);
@@ -192,7 +193,7 @@
 						isPending: s,
 						subredditId: n
 					} = e, o = Object(c.c)();
-					return r.a.createElement(B.f, {
+					return r.a.createElement(F.f, {
 						onClick: () => {
 							o(Object(v.c)(1)), o(Object(v.d)(n, 1, a))
 						},
@@ -330,7 +331,7 @@
 						stripeTokenPending: i,
 						subredditId: d
 					} = e, u = Object(c.c)(), m = i || o;
-					return r.a.createElement(B.f, {
+					return r.a.createElement(F.f, {
 						onClick: () => {
 							l && n && u(Object(j.g)(l, n, d, a, s))
 						},
@@ -440,7 +441,7 @@
 						className: he.a.premiumDescription
 					}, r.a.createElement("div", {
 						className: he.a.premiumIconWrapper
-					}, r.a.createElement(F.a, {
+					}, r.a.createElement(A.a, {
 						className: he.a.premiumIcon
 					})), r.a.createElement("span", null, fe._("Premium gives you one free Powerup", null, {
 						hk: "1Rlk9N"
@@ -513,12 +514,10 @@
 			"use strict";
 			a.d(t, "c", (function() {
 				return n
-			})), a.d(t, "d", (function() {
-				return o
 			})), a.d(t, "b", (function() {
-				return l
+				return o
 			})), a.d(t, "a", (function() {
-				return i
+				return l
 			}));
 			var s = a("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = a("./src/reddit/selectors/telemetry.ts");
@@ -531,28 +530,21 @@
 						paidCount: a
 					})
 				}),
-				n = () => e => Object.assign(Object.assign({
-					source: "postlist",
-					action: "click",
-					noun: "powerups_tier_cta"
-				}, c(e)), {
-					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
-				}),
-				o = e => t => Object.assign(Object.assign({
+				n = e => t => Object.assign(Object.assign({
 					source: e,
 					action: "click",
 					noun: "powerups_user_badge"
 				}, c(t)), {
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				l = () => e => Object.assign(Object.assign({
+				o = () => e => Object.assign(Object.assign({
 					source: "postlist",
 					action: "click",
 					noun: "powerups_supporters_cta"
 				}, c(e)), {
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				i = (e, t) => a => Object.assign({
+				l = (e, t) => a => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step"
@@ -679,4 +671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9c9371672271d3d09db2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9e4e1053e5d8ced017a3.js.map

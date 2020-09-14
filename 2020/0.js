@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.c24b703537025d6f5657.js
-// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.2c238207c9d5e00f51a5.js
+// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./node_modules/lodash/_baseRange.js": function(e, s) {
@@ -201,13 +201,13 @@
 				})),
 				B = t("./src/reddit/helpers/trackers/contentTag.ts"),
 				F = t("./src/reddit/hooks/useGqlContext.ts");
-			var V, _ = t("./src/reddit/hooks/useTracking.ts");
+			var z, _ = t("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
-			}(V || (V = {}));
-			var H = t("./src/reddit/models/Toast/index.ts"),
-				z = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./node_modules/lodash/mapValues.js")),
-				S = t.n(z),
+			}(z || (z = {}));
+			var V = t("./src/reddit/models/Toast/index.ts"),
+				H = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./node_modules/lodash/mapValues.js")),
+				S = t.n(H),
 				O = t("./src/reddit/controls/CheckboxInput/index.tsx");
 			t("./node_modules/core-js/modules/es6.regexp.split.js");
 
@@ -331,13 +331,13 @@
 				Object(l.useEffect)(() => {
 					j && (x.c.captureException(j), h(Object(C.e)(Object(C.d)(I._("An error occurred", null, {
 						hk: "1VDETi"
-					}), H.b.Error))))
+					}), V.b.Error))))
 				}, [j, h]);
 				const [b, k] = Object(l.useState)(null);
 				if (!c) return null;
 				if (!c.isEligible) return null;
 
-				function z(e, s) {
+				function H(e, s) {
 					u(Object(a.setIn)(m, [e], s)), M(Object(B.a)(L.pageType))
 				}
 				const S = null !== (s = m[null == L ? void 0 : L.id]) && void 0 !== s ? s : {},
@@ -364,7 +364,7 @@
 									version: e.version,
 									createdAt: Date.now(),
 									isFromMod: !0,
-									status: V.Pending,
+									status: z.Pending,
 									rating: a,
 									ratingReasons: n
 								}
@@ -381,7 +381,7 @@
 								}
 							}), h(Object(C.e)(Object(C.d)(I._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), H.b.SuccessCommunityGreen))), h({
+							}), V.b.SuccessCommunityGreen))), h({
 								type: g.b,
 								payload: {
 									id: n,
@@ -429,7 +429,7 @@
 						key: e.id,
 						question: e,
 						selectedAnswers: null !== (s = m[e.id]) && void 0 !== s ? s : {},
-						onChange: z
+						onChange: H
 					})
 				}), b && d.a.createElement("div", {
 					key: "result",
@@ -3018,6 +3018,42 @@
 				d: "M2,0 L8,0 C9.1045695,-2.02906125e-16 10,0.8954305 10,2 L10,8 C10,9.1045695 9.1045695,10 8,10 L2,10 C0.8954305,10 1.3527075e-16,9.1045695 0,8 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z M8.0828,3.27736 L7.5232,2.71736 C7.448,2.64216 7.3464,2.60016 7.2404,2.60016 C7.134,2.60016 7.0324,2.64216 6.9576,2.71736 L4.16,5.51456 L3.0428,4.39736 C2.8868,4.24096 2.6336,4.24096 2.4772,4.39736 L1.9172,4.95736 C1.7608,5.11376 1.7608,5.36696 1.9172,5.52296 L3.8772,7.48296 C3.9556,7.56096 4.0576,7.60016 4.16,7.60016 C4.2624,7.60016 4.3648,7.56096 4.4428,7.48296 L8.0828,3.84296 C8.2392,3.68656 8.2392,3.43376 8.0828,3.27736 Z"
 			}))
 		},
+		"./src/reddit/icons/svgs/Powerup/index.tsx": function(e, s, t) {
+			"use strict";
+			var a = t("./node_modules/react/index.js"),
+				n = t.n(a);
+			s.a = e => n.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 32 32",
+				fill: "none",
+				xmlns: "http://www.w3.org/2000/svg",
+				onClick: e.onClick,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave,
+				id: e.id
+			}, e.title && n.a.createElement("title", null, e.title), n.a.createElement("path", {
+				d: "M12.249 32c-.4 0-.8-.1-1.2-.25l-.05-.05-5.05-2.6c-1.25-.7-1.75-2.2-1.25-3.5l.05-.1 2.45-5.45-3.15-1.5a2.985 2.985 0 01-1.4-3.55l3.5-12.05C6.649 1.2 8.299 0 10.099 0h7.8c.45 0 .9.1 1.3.3l.15.1 4.85 2.45c1.5.8 2.05 2.55 1.35 4.05l-2.2 4.3 4.45 2.25c.8.45 1.35 1.25 1.45 2.2.1.9-.2 1.8-.9 2.45l-14.15 13.15c-.55.5-1.25.75-1.95.75z",
+				fill: "#000"
+			}), n.a.createElement("path", {
+				d: "M10.648 17l-.85 2.1-4.65-2.2c.1.05.25.1.4.1h5.1zM23.749 13.6l3.1 1.6c.5.3.65 1 .15 1.45L12.849 29.8c-.3.25-.65.3-.95.15l-4.85-2.5c.3.1.65.1.9-.15l14.15-13.15c.5-.45.35-1.15-.15-1.45l1.8.9z",
+				fill: "#FF4500"
+			}), n.a.createElement("path", {
+				d: "M23.75 13.6l3.1 1.6c.5.3.65 1 .15 1.45l-4.9-2.5c.5-.45.35-1.15-.15-1.45l1.8.9z",
+				fill: "#FF8717"
+			}), n.a.createElement("path", {
+				d: "M18.898 3.5c.25-.55.05-1.1-.45-1.4l4.9 2.5c.5.25.7.85.45 1.4l-3.35 6.55h-6.05l4.5-9.05z",
+				fill: "#FF4500"
+			}), n.a.createElement("path", {
+				d: "M18.9 3.5c.25-.55.05-1.1-.45-1.4l4.9 2.5c.5.25.7.85.45 1.4l-4.9-2.5z",
+				fill: "#FF8717"
+			}), n.a.createElement("path", {
+				d: "M21.95 12.65c.5.3.65 1 .15 1.45L7.95 27.3c-.3.25-.65.3-.9.15l-.1-.05a.86.86 0 01-.4-1.05l4.1-9.35h-5.1c-.15 0-.3-.05-.45-.1l-.1-.05c-.4-.25-.65-.75-.5-1.25L8.05 3.55A2.19 2.19 0 0110.15 2h7.8c.15 0 .3.05.45.1l.05.05c.45.25.7.85.45 1.4l-4.5 9.05h7.1c.15 0 .3.05.4.1l.05-.05z",
+				fill: "#FFD635"
+			}), n.a.createElement("path", {
+				d: "M15.599 3.45c.55-.15 1.15-.25 1.7-.45-.6-.1-1.15-.15-1.75-.2-.6-.05-1.15-.05-1.75-.1-1.15-.05-2.25 0-3.4.05-.55 0-1.05.3-1.35.8-.15.3-.15.35-.2.5l-.15.4-.5 1.55c-.35 1.05-.7 2.1-1 3.15-.3 1.05-.65 2.1-.9 3.2-.3 1.05-.6 2.15-.8 3.25.55-1 1-2 1.5-3 .45-1 .9-2 1.35-3.05.4-1 .85-2.05 1.2-3.1l.6-1.55.25-.65h.05c1.15-.1 2.3-.25 3.4-.45.6-.1 1.15-.2 1.75-.35zM20.25 13.35c-1.1-.05-2.2-.05-3.3 0-.55 0-1.1.05-1.65.1-.55.05-1.1.1-1.65.2.55.15 1.1.25 1.6.35.55.1 1.1.2 1.65.25.6.1 1.25.15 1.85.2-.45.45-.9.85-1.3 1.3-.75.75-1.5 1.5-2.25 2.3-.75.8-1.5 1.55-2.2 2.35-.7.8-1.45 1.6-2.1 2.45.9-.65 1.7-1.3 2.55-2 .85-.7 1.65-1.4 2.45-2.1.8-.7 1.6-1.45 2.4-2.15l2.35-2.2c.1-.1.15-.25.2-.4 0-.4-.3-.65-.6-.65z",
+				fill: "#fff"
+			}))
+		},
 		"./src/reddit/icons/svgs/PowerupTier1/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
@@ -4242,4 +4278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.c24b703537025d6f5657.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.2c238207c9d5e00f51a5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b7e4388467b0c6af6908.js
-// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a87de4ee06c2772bcd5a.js
+// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1353,7 +1353,7 @@
 					onHideTooltip: F,
 					onShowTooltip: A,
 					openPowerupsModal: () => {
-						Q(Object(g.d)("comment")), B()
+						Q(Object(g.c)("comment")), B()
 					},
 					opTooltipId: D,
 					renderContractorBadge: V,
@@ -13058,4 +13058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b7e4388467b0c6af6908.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a87de4ee06c2772bcd5a.js.map

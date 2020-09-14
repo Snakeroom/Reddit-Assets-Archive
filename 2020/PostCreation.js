@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.abe62c8f5374ae752252.js
-// Retrieved at 9/14/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8c12566546a74a3bb654.js
+// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "0d8464f-production"
+					SENTRY_RELEASE_VERSION: "17c0a4f-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1682,10 +1682,10 @@
 			}));
 			var d = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/actions/gold/constants.ts");
-			Object(o.a)(u.nb), Object(o.a)(u.mb), Object(o.a)(u.lb);
-			const p = Object(o.a)(u.qb),
-				m = Object(o.a)(u.pb),
-				h = Object(o.a)(u.ob),
+			Object(o.a)(u.ob), Object(o.a)(u.nb), Object(o.a)(u.mb);
+			const p = Object(o.a)(u.rb),
+				m = Object(o.a)(u.qb),
+				h = Object(o.a)(u.pb),
 				b = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 25;
 					return async (n, o, i) => {
@@ -1710,7 +1710,7 @@
 						}
 					}
 				},
-				f = Object(o.a)(u.rb),
+				f = Object(o.a)(u.sb),
 				g = e => async (t, n) => {
 					t(f({
 						postId: e
@@ -11569,7 +11569,7 @@
 						onMouseEnter: ce.show,
 						onMouseLeave: ce.hide,
 						onClick: () => {
-							D(Object(m.d)(L ? "post" : "postlist")), A(Object(h.i)(p.a.ECON_POWERUPS_PURCHASE))
+							D(Object(m.c)(L ? "post" : "postlist")), A(Object(h.i)(p.a.ECON_POWERUPS_PURCHASE))
 						},
 						ref: ce.target.ref
 					}, o.a.createElement(y.a, {
@@ -25177,12 +25177,10 @@
 			"use strict";
 			n.d(t, "c", (function() {
 				return i
-			})), n.d(t, "d", (function() {
-				return a
 			})), n.d(t, "b", (function() {
-				return c
+				return a
 			})), n.d(t, "a", (function() {
-				return l
+				return c
 			}));
 			var s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -25195,28 +25193,21 @@
 						paidCount: n
 					})
 				}),
-				i = () => e => Object.assign(Object.assign({
-					source: "postlist",
-					action: "click",
-					noun: "powerups_tier_cta"
-				}, r(e)), {
-					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
-				}),
-				a = e => t => Object.assign(Object.assign({
+				i = e => t => Object.assign(Object.assign({
 					source: e,
 					action: "click",
 					noun: "powerups_user_badge"
 				}, r(t)), {
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				c = () => e => Object.assign(Object.assign({
+				a = () => e => Object.assign(Object.assign({
 					source: "postlist",
 					action: "click",
 					noun: "powerups_supporters_cta"
 				}, r(e)), {
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				l = (e, t) => n => Object.assign({
+				c = (e, t) => n => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step"
@@ -33876,4 +33867,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.abe62c8f5374ae752252.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8c12566546a74a3bb654.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.665272bbf813673c428b.js
-// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.272be77014b2a10911b1.js
+// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3122,7 +3122,7 @@
 					onHideTooltip: R,
 					onShowTooltip: F,
 					openPowerupsModal: () => {
-						Q(Object(f.d)("comment")), D()
+						Q(Object(f.c)("comment")), D()
 					},
 					opTooltipId: B,
 					renderContractorBadge: U,
@@ -4670,7 +4670,7 @@
 						className: Yt.a.UserIcon
 					})), w && a.a.createElement(Pt.a, {
 						onClick: e => {
-							K(Object(M.d)("comment")), D(), e.stopPropagation(), e.preventDefault()
+							K(Object(M.c)("comment")), D(), e.stopPropagation(), e.preventDefault()
 						},
 						className: Yt.a.topSupporterIcon,
 						title: I.fbt._("Powerups Top Supporter", null, {
@@ -11502,7 +11502,7 @@
 					}
 				}
 			}
-			var Z = Y,
+			var Z = o.a.memo(Y),
 				$ = s("./src/reddit/components/PowerupsSidebar/index.m.less"),
 				ee = s.n($);
 			const {
@@ -11553,7 +11553,7 @@
 				})), o.a.createElement(j, {
 					className: ee.a.progress,
 					powerups: n
-				}), p && p.length && o.a.createElement(Z, {
+				}), !!(null == p ? void 0 : p.length) && o.a.createElement(Z, {
 					supporters: p,
 					className: ee.a.heroes,
 					maxSupporters: 10
@@ -18720,4 +18720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.665272bbf813673c428b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.272be77014b2a10911b1.js.map
