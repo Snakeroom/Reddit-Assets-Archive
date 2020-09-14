@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.7b4f2718d2819d79b1ec.js
-// Retrieved at 9/14/2020, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.63f6c3c308b6a16de57a.js
+// Retrieved at 9/14/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "2d27f03-production"
+					SENTRY_RELEASE_VERSION: "a90db8e-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -109,8 +109,8 @@
 					playerName: S,
 					playerVersion: x,
 					respectDoNotTrack: _,
-					saltLength: w,
-					saltTimeToLive: C,
+					saltLength: C,
+					saltTimeToLive: w,
 					viewerUserIdLength: T
 				} = Object.assign(Object.assign({}, I), t);
 				class j extends i.Component {
@@ -256,7 +256,7 @@
 						}
 					}
 				}
-				j.displayName = R(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = c, j.DISABLE_COOKIES = h, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = u, j.LOCAL_STORAGE_SALT_KEY = b, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = S, j.PLAYER_VERSION = x, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = w, j.SALT_TIME_TO_LIVE = C, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = T;
+				j.displayName = R(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = c, j.DISABLE_COOKIES = h, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = u, j.LOCAL_STORAGE_SALT_KEY = b, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = S, j.PLAYER_VERSION = x, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = C, j.SALT_TIME_TO_LIVE = w, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = T;
 				const A = Object(i.forwardRef)((e, t) => r.a.createElement(j, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -560,9 +560,9 @@
 			})), s.d(t, "g", (function() {
 				return _
 			})), s.d(t, "h", (function() {
-				return w
-			})), s.d(t, "i", (function() {
 				return C
+			})), s.d(t, "i", (function() {
+				return w
 			}));
 			var i = s("./node_modules/react/index.js"),
 				r = s.n(i),
@@ -808,7 +808,7 @@
 					} : {}
 				}
 			}));
-			var w = Object(a.b)(() => Object(n.c)({
+			var C = Object(a.b)(() => Object(n.c)({
 				subredditOrProfile: (e, t) => Object(v.M)(e, {
 					identifier: t
 				})
@@ -823,7 +823,7 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var C = Object(a.b)(() => Object(n.c)({
+			var w = Object(a.b)(() => Object(n.c)({
 				subreddit: (e, t) => {
 					let {
 						subredditId: s
@@ -1108,8 +1108,8 @@
 			x.IDLE_THRESHOLD = f(300);
 			var I = x,
 				_ = s("./src/reddit/actions/preferences.ts"),
-				w = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				C = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
+				C = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				w = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				T = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
 				j = s("./src/reddit/constants/chat.ts"),
 				A = s("./src/reddit/constants/postLayout.ts"),
@@ -1162,7 +1162,7 @@
 						r = "".concat(e).concat(t)
 					} else {
 						const e = s.replace(/^r\//, "");
-						r = e === w.R ? Object(M.d)() : Object(M.f)(e)
+						r = e === C.R ? Object(M.d)() : Object(M.f)(e)
 					}
 					return r
 				},
@@ -1178,13 +1178,13 @@
 			}), (e, t) => ({
 				onHideRpanUnit: () => e(Object(_.D)(t.listingName)),
 				openOverlay: t => e(Object(N.a)(t)),
-				subscribeConfig: () => e(C.a.subscribeConfig(t.listingName)),
-				subscribeStats: t => e(C.a.subscribeStats(t)),
-				subscribeStreams: () => e(C.a.subscribeStreams(t.listingName))
+				subscribeConfig: () => e(w.a.subscribeConfig(t.listingName)),
+				subscribeStats: t => e(w.a.subscribeStats(t)),
+				subscribeStreams: () => e(w.a.subscribeStreams(t.listingName))
 			})), de = () => r.a.createElement("h3", {
 				className: re.a.title
-			}, ae._("Top broadcast right now", null, {
-				hk: "2hS1kb"
+			}, ae._("Top broadcast", null, {
+				hk: "HADCh"
 			})), ce = () => r.a.createElement("p", {
 				className: re.a.description
 			}, ae._("Live from the internet, this is RPAN", null, {
@@ -1692,4 +1692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.7b4f2718d2819d79b1ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.63f6c3c308b6a16de57a.js.map

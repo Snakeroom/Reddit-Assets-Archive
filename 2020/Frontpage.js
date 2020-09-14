@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.1f4f56f9cf6d419c4f53.js
-// Retrieved at 9/14/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.3a9608db8368a2c40ce4.js
+// Retrieved at 9/14/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/ScrollChildFactory.tsx": function(e, t, s) {
@@ -162,15 +162,15 @@
 				p = s("./src/reddit/components/PostList/Placeholder.tsx"),
 				b = s("./src/reddit/components/EmptySubreddit.m.less"),
 				h = s.n(b),
-				g = s("./src/lib/lessComponent.tsx");
-			const y = g.a.div("PrimaryText", h.a),
-				f = g.a.div("SecondaryText", h.a),
-				v = g.a.div("MainContentWrapper", h.a),
-				j = g.a.div("MainContent", h.a),
-				O = g.a.wrapped(p.a, "BackgroundPlaceholder", h.a),
-				x = g.a.wrapped(m.h, "SubmitLink", h.a),
-				_ = g.a.img("SnooImg", h.a),
-				P = g.a.div("EmptyHomepage", h.a),
+				y = s("./src/lib/lessComponent.tsx");
+			const g = y.a.div("PrimaryText", h.a),
+				f = y.a.div("SecondaryText", h.a),
+				v = y.a.div("MainContentWrapper", h.a),
+				j = y.a.div("MainContent", h.a),
+				O = y.a.wrapped(p.a, "BackgroundPlaceholder", h.a),
+				x = y.a.wrapped(m.h, "SubmitLink", h.a),
+				_ = y.a.img("SnooImg", h.a),
+				P = y.a.div("EmptyHomepage", h.a),
 				N = e => {
 					switch (e) {
 						case d.O.RISING:
@@ -192,7 +192,7 @@
 						sort: s
 					} = e;
 					const n = N(s);
-					return c.a.createElement(j, null, c.a.createElement(y, null, (e => {
+					return c.a.createElement(j, null, c.a.createElement(g, null, (e => {
 						switch (e) {
 							case d.O.RISING:
 								return r.fbt._("Looks like nothing is rising fast enough in this subreddit", null, {
@@ -216,14 +216,14 @@
 				},
 				k = () => c.a.createElement(j, null, c.a.createElement(_, {
 					src: "".concat(a.a.assetPath, "/img/snoo_discovery@1x.png")
-				}), c.a.createElement(y, null, r.fbt._("Reddit gets better when you join communities, so find some that you’ll love!", null, {
+				}), c.a.createElement(g, null, r.fbt._("Reddit gets better when you join communities, so find some that you’ll love!", null, {
 					hk: "7B6oq"
 				})), c.a.createElement(x, {
 					to: "/r/popular"
 				}, r.fbt._("Browse Popular Posts", null, {
 					hk: "2zfgXv"
 				})));
-			t.a = g.a.wrapped(e => c.a.createElement(P, null, c.a.createElement(O, {
+			t.a = y.a.wrapped(e => c.a.createElement(P, null, c.a.createElement(O, {
 				isLoading: !1,
 				layout: u.g.Classic
 			}), c.a.createElement(v, null, e.subreddit ? c.a.createElement(E, e) : c.a.createElement(k, null))), "Component", h.a)
@@ -388,8 +388,8 @@
 				b = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				h = s.n(b);
 			const {
-				fbt: g
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = e => {
+				fbt: y
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = e => {
 				let {
 					className: t
 				} = e;
@@ -401,8 +401,8 @@
 					className: h.a.titleAndDescriptionContainer
 				}, n.a.createElement("h3", {
 					className: h.a.title
-				}, g._("Top broadcast right now", null, {
-					hk: "2hS1kb"
+				}, y._("Top broadcast", null, {
+					hk: "HADCh"
 				}))), n.a.createElement("div", {
 					className: h.a.body
 				}, n.a.createElement("div", {
@@ -422,7 +422,7 @@
 				}) : s === u.g.Compact ? n.a.createElement(d.a, {
 					className: Object(c.a)(t, h.a.compactPostPlaceholder),
 					isLoading: !0
-				}) : n.a.createElement(y, {
+				}) : n.a.createElement(g, {
 					className: t
 				})
 			};
@@ -677,7 +677,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var g = function(e, t) {
+			var y = function(e, t) {
 				var s = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (s[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -686,15 +686,15 @@
 				}
 				return s
 			};
-			const y = b.a.button("IconButton", m.a),
+			const g = b.a.button("IconButton", m.a),
 				f = b.a.wrapped(d.a, "SubscribeIcon", m.a),
 				v = b.a.wrapped(a.a, "UnsubscribeIcon", m.a),
 				j = b.a.wrapped(e => {
 					var {
 						border: t,
 						small: s
-					} = e, r = g(e, ["border", "small"]);
-					return o.a.createElement(y, r, o.a.createElement(f, {
+					} = e, r = y(e, ["border", "small"]);
+					return o.a.createElement(g, r, o.a.createElement(f, {
 						className: Object(p.a)(r.className, {
 							[m.a.isSmall]: s
 						})
@@ -704,7 +704,7 @@
 					var {
 						border: t,
 						small: s
-					} = e, r = g(e, ["border", "small"]);
+					} = e, r = y(e, ["border", "small"]);
 					return t ? o.a.createElement(c.f, h({}, r, {
 						className: Object(p.a)(r.className, {
 							[m.a.isSmall]: s
@@ -718,7 +718,7 @@
 				x = e => {
 					var {
 						icon: t
-					} = e, s = g(e, ["icon"]);
+					} = e, s = y(e, ["icon"]);
 					return t ? o.a.createElement(j, h({}, s, {
 						className: Object(p.a)(s.className, {
 							[m.a.isSmall]: s.small
@@ -734,8 +734,8 @@
 						border: t,
 						small: s,
 						type: r
-					} = e, n = g(e, ["border", "small", "type"]);
-					return o.a.createElement(y, n, o.a.createElement(v, {
+					} = e, n = y(e, ["border", "small", "type"]);
+					return o.a.createElement(g, n, o.a.createElement(v, {
 						className: Object(p.a)(i.n, n.className, {
 							[m.a.isSmall]: s
 						})
@@ -746,7 +746,7 @@
 						border: t,
 						small: s,
 						buttonType: n
-					} = e, i = g(e, ["border", "small", "buttonType"]);
+					} = e, i = y(e, ["border", "small", "buttonType"]);
 					const a = o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
 							className: m.a.UnsubscribeButtonDefault
 						}, "subreddit" === n ? r.fbt._("Joined", null, {
@@ -772,7 +772,7 @@
 				N = e => {
 					var {
 						icon: t
-					} = e, s = g(e, ["icon"]);
+					} = e, s = y(e, ["icon"]);
 					return t ? o.a.createElement(_, h({}, s, {
 						className: Object(p.a)(s.className, {
 							[m.a.isSmall]: s.small
@@ -948,8 +948,8 @@
 				p = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				b = s("./src/reddit/helpers/trackers/post.ts"),
 				h = s("./src/reddit/components/PostList/Placeholder.tsx"),
-				g = s("./src/reddit/featureFlags/index.ts"),
-				y = s("./src/reddit/selectors/experiments/survey.ts"),
+				y = s("./src/reddit/featureFlags/index.ts"),
+				g = s("./src/reddit/selectors/experiments/survey.ts"),
 				f = s("./src/reddit/selectors/listings.ts"),
 				v = s("./src/reddit/selectors/posts.ts"),
 				j = s("./src/reddit/selectors/subreddit.ts"),
@@ -970,7 +970,7 @@
 				P = {
 					apiError: f.c,
 					apiPending: f.d,
-					measureScrollFPS: g.d.measureScrollFPS,
+					measureScrollFPS: y.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
 					loadMore: f.g,
 					postsById: v.Y,
@@ -986,7 +986,7 @@
 					viewportDataLoaded: O.a,
 					pageReferrer: m.Q,
 					postListPlaceholderComponent: () => h.a,
-					isNpsScrollSurveyEnabled: y.b
+					isNpsScrollSurveyEnabled: g.b
 				},
 				N = Object(n.c)(P),
 				E = (e, t) => {
@@ -1051,9 +1051,9 @@
 			})), s.d(t, "b", (function() {
 				return h
 			})), s.d(t, "a", (function() {
-				return g
-			})), s.d(t, "d", (function() {
 				return y
+			})), s.d(t, "d", (function() {
+				return g
 			}));
 			var r = s("./node_modules/polished/dist/polished.es.js"),
 				n = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
@@ -1082,8 +1082,8 @@
 				h = e => e && e.postBackgroundColor ? {
 					backgroundColor: b(e.postBackgroundColor)
 				} : u,
-				g = e => e.isActive ? l.a.mIsActive : void 0,
-				y = e => {
+				y = e => e.isActive ? l.a.mIsActive : void 0,
+				g = e => {
 					const t = Object(o.a)(Object(n.a)(e), i.a.actionIcon, i.b.actionIcon);
 					return {
 						color: t,
@@ -1107,9 +1107,9 @@
 			})), s.d(t, "r", (function() {
 				return h
 			})), s.d(t, "u", (function() {
-				return g
-			})), s.d(t, "s", (function() {
 				return y
+			})), s.d(t, "s", (function() {
+				return g
 			})), s.d(t, "k", (function() {
 				return f
 			})), s.d(t, "l", (function() {
@@ -1228,13 +1228,13 @@
 					noun: "stream",
 					playback: d(s, e, t)
 				}, l(s)), a(s, e)),
-				g = (e, t) => s => Object.assign(Object.assign({
+				y = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "play",
 					noun: "stream",
 					playback: d(s, e, t)
 				}, l(s)), a(s, e)),
-				y = (e, t) => s => Object.assign(Object.assign({
+				g = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "complete",
 					noun: "stream",
@@ -1392,8 +1392,8 @@
 				p = s.n(m),
 				b = s("./node_modules/react-redux/es/index.js"),
 				h = s("./node_modules/reselect/es/index.js"),
-				g = s("./src/lib/classNames/index.ts"),
-				y = s("./src/lib/extractQueryParams/index.ts"),
+				y = s("./src/lib/classNames/index.ts"),
+				g = s("./src/lib/extractQueryParams/index.ts"),
 				f = s("./src/lib/fastdom/index.ts"),
 				v = s("./src/lib/makeListingKey/index.ts"),
 				j = s("./src/lib/performanceTimings/index.tsx"),
@@ -1446,7 +1446,7 @@
 					let {
 						location: s
 					} = t;
-					return u()([...Object(y.a)(s.search)])
+					return u()([...Object(g.a)(s.search)])
 				}),
 				sort: (e, t) => {
 					let {
@@ -1486,15 +1486,15 @@
 					p = Object(v.a)(Y.a, l, d),
 					b = c || q.w.Everywhere,
 					h = a || b,
-					g = T.h in d ? d[T.h].toUpperCase() : h,
-					y = [];
-				r && y.push(n);
-				const f = Object(H.b)(o, y, {
+					y = T.h in d ? d[T.h].toUpperCase() : h,
+					g = [];
+				r && g.push(n);
+				const f = Object(H.b)(o, g, {
 					listingKey: p
 				});
 				return Object.assign({
 					cardViewExperimentVariant: i,
-					countrySort: g,
+					countrySort: y,
 					listingKey: p,
 					sort: l,
 					timeSort: m,
@@ -1593,7 +1593,7 @@
 						listingName: Y.b
 					});
 					return p.a.createElement(R.a, {
-						className: Object(g.a)(X.a.Container, this.props.className),
+						className: Object(y.a)(X.a.Container, this.props.className),
 						fitPageToContent: !0,
 						trendingUnit: d && p.a.createElement(de, {
 							showCardView: o === U.g.Large
@@ -1740,8 +1740,8 @@
 				p = s.n(u)()(e => Object(n.a)(Object(r.a)(m, t => e && t.hasOwnProperty(e) ? t[e] : [])));
 			var b = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
 			const h = e => e.publicAccessNetwork.models,
-				g = e => e.publicAccessNetwork.reports.reported,
-				y = e => e.publicAccessNetwork.history,
+				y = e => e.publicAccessNetwork.reports.reported,
+				g = e => e.publicAccessNetwork.history,
 				f = e => e.publicAccessNetwork.history.cursor,
 				v = e => e.publicAccessNetwork.history.visitOrder,
 				j = e => e.publicAccessNetwork.hlsStreams,
@@ -1787,7 +1787,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => p(t.listingName)(e, t), _, g, a.h, d.c, (e, t, s, r, n, a) => {
+				}, (e, t) => p(t.listingName)(e, t), _, y, a.h, d.c, (e, t, s, r, n, a) => {
 					if (a) {
 						const o = [];
 						if (e) {
@@ -1858,7 +1858,7 @@
 						listingName: s || n,
 						streamIdFromPath: r
 					})
-				}, y, (e, t, s, r) => {
+				}, g, (e, t, s, r) => {
 					if (!s.length) return;
 					const n = s.map(e => t[e]).filter(t => t && t.post.id !== e),
 						o = n.find(e => e.stream.state === c.a.IS_LIVE);
@@ -1875,7 +1875,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s ? Object(i.g)(s) : void 0
-				}, S, g, a.h, (e, t) => {
+				}, S, y, a.h, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: r,
@@ -1920,7 +1920,7 @@
 				};
 				return s[t] >= s[e]
 			}
-			const M = Object(r.a)(I, y, (e, t) => e && t.timestamps[e] || 0);
+			const M = Object(r.a)(I, g, (e, t) => e && t.timestamps[e] || 0);
 			var H;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
@@ -1968,4 +1968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1f4f56f9cf6d419c4f53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3a9608db8368a2c40ce4.js.map
