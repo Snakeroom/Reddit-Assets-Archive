@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0feb871d5082391cbac0.js
-// Retrieved at 9/11/2020, 3:40:44 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.095a2978dca4011ff93c.js
+// Retrieved at 9/14/2020, 9:50:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -169,7 +169,7 @@
 			e.exports = JSON.parse('{"id":"46c94140fba5"}')
 		},
 		"./src/graphql/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"1c87111dc27e"}')
+			e.exports = JSON.parse('{"id":"17eb494cb2c0"}')
 		},
 		"./src/graphql/operations/UpdatePostRequirements.json": function(e) {
 			e.exports = JSON.parse('{"id":"8732ab4560ce"}')
@@ -11418,14 +11418,16 @@
 						id: t,
 						name: s,
 						namePlural: n,
-						slug: r
+						slug: r,
+						wikidataId: a
 					} = e;
 					return {
 						id: t,
 						name: s,
 						namePlural: n,
 						slug: r,
-						url: "/t/".concat(e.slug, "/")
+						url: "/t/".concat(e.slug, "/"),
+						wikidataId: a
 					}
 				},
 				k = async (e, t, s) => {
@@ -56144,4 +56146,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0feb871d5082391cbac0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.095a2978dca4011ff93c.js.map
