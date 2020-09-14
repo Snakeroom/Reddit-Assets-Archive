@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f3f9bf9aebb58c9408af.js
-// Retrieved at 9/14/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.781d3f68e3c9106e699d.js
+// Retrieved at 9/14/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -17137,40 +17137,34 @@
 		"./src/reddit/actions/subreddit/questions.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
+				return a
 			})), s.d(t, "b", (function() {
-				return o
+				return i
 			})), s.d(t, "c", (function() {
-				return d
+				return c
 			}));
-			var n = s("./src/lib/env/index.ts"),
-				r = s("./src/lib/sentry/index.ts"),
-				a = s("./src/graphql/operations/GetSubredditQuestions.json"),
-				i = s("./src/lib/makeGqlRequest/index.ts");
-			const c = "SUBREDDIT_QUESTIONS_LOADED",
-				o = "SUBREDDIT_SURVEY_ANSWERED",
-				d = e => async (t, s, o) => {
+			var n = s("./src/graphql/operations/GetSubredditQuestions.json"),
+				r = s("./src/lib/makeGqlRequest/index.ts");
+			const a = "SUBREDDIT_QUESTIONS_LOADED",
+				i = "SUBREDDIT_SURVEY_ANSWERED",
+				c = e => async (t, s, i) => {
 					let {
-						gqlContext: d
-					} = o;
-					const u = await ((e, t) => Object(i.a)(e, Object.assign(Object.assign({}, a), {
-						variables: t
-					})))(d(), {
-						id: e
-					});
-					let l, b;
-					try {
-						const e = u.body;
-						l = e.data.subredditInfoById.answerableQuestions, b = e.data.subredditInfoById.contentRatingSurvey
-					} catch (p) {
-						return Object(n.a)() && console.error(p.stack), void r.c.captureException(p)
-					}
-					t({
-						type: c,
+						gqlContext: c
+					} = i;
+					var o, d, u, l;
+					const b = (await ((e, t) => Object(r.a)(e, Object.assign(Object.assign({}, n), {
+							variables: t
+						})))(c(), {
+							id: e
+						})).body,
+						p = null === (d = null === (o = b.data) || void 0 === o ? void 0 : o.subredditInfoById) || void 0 === d ? void 0 : d.answerableQuestions,
+						O = null === (l = null === (u = b.data) || void 0 === u ? void 0 : u.subredditInfoById) || void 0 === l ? void 0 : l.contentRatingSurvey;
+					(p || O) && t({
+						type: a,
 						payload: {
 							id: e,
-							questions: l,
-							survey: b
+							questions: p,
+							survey: O
 						}
 					})
 				}
@@ -55884,4 +55878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f3f9bf9aebb58c9408af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.781d3f68e3c9106e699d.js.map
