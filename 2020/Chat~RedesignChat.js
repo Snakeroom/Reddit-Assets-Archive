@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.00c53b7d7d7fca62fbe9.js
-// Retrieved at 9/14/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b35fac688ba730633b7f.js
+// Retrieved at 9/14/2020, 4:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -2459,7 +2459,7 @@
 		"./src/chat/components/FrameContent/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Ib
+				return yb
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var s = n("./node_modules/lodash/isEqual.js"),
@@ -6653,8 +6653,11 @@
 				rh = i.a.p("Text", $u.a),
 				oh = i.a.wrapped(Yu, "MediaObject", $u.a),
 				ih = i.a.span("LightText", $u.a),
-				lh = i.a.span("LightTextSmall", $u.a),
-				dh = i.a.b("Warning", $u.a),
+				lh = i.a.wrapped(e => r.a.createElement("span", {
+					className: e.className
+				}, e.children), "LightTextSmall", $u.a);
+			lh.displayName = "LightTextSmall";
+			const dh = i.a.b("Warning", $u.a),
 				uh = i.a.wrapped(xs, "MessageItemBubble", $u.a),
 				hh = i.a.wrapped(e => r.a.createElement("p", {
 					className: Object(fe.a)(e.className, {
@@ -6669,8 +6672,27 @@
 						return Object(Si.e)(e, n)
 					},
 					channelMessages: e => Object(y.y)(e)
-				});
-			class bh extends r.a.Component {
+				}),
+				bh = Object(o.b)(mh, e => ({
+					onAcceptChannelRequest: () => {
+						e(Object(Te.l)()), e(Object(p.y)())
+					},
+					onDeclineChannelRequest: t => {
+						e(Object(Ce.b)(Object(ve.channelAction)(t, Fc.a.DECLINE_REQUEST)))
+					},
+					getPreviousMessages: g.s
+				}), (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), n), {
+					hasBlockedUsers: () => {
+						const {
+							channel: t
+						} = e;
+						return !(!t || !t.members.some(e => e.isBlockedByMe))
+					}
+				}));
+			class ph extends r.a.Component {
+				constructor(e) {
+					super(e), this.renderContent = this.renderContent.bind(this), this.renderUserInfo = this.renderUserInfo.bind(this), this.renderPreviewMessages = this.renderPreviewMessages.bind(this), this.onDeclineChannelRequest = this.onDeclineChannelRequest.bind(this)
+				}
 				UNSAFE_componentWillReceiveProps(e) {
 					const {
 						channel: t,
@@ -6680,9 +6702,6 @@
 						const s = e.channel.channelId === t.channelId;
 						t.type === C.a.Direct && !t.firstMessageId && !t.fetchingFirstMessage && s && n()
 					}
-				}
-				constructor(e) {
-					super(e), this.renderContent = this.renderContent.bind(this), this.renderUserInfo = this.renderUserInfo.bind(this), this.renderPreviewMessages = this.renderPreviewMessages.bind(this), this.onDeclineChannelRequest = this.onDeclineChannelRequest.bind(this)
 				}
 				onDeclineChannelRequest() {
 					this.props.onDeclineChannelRequest(this.props.channelId)
@@ -6695,15 +6714,15 @@
 						const {
 							linkKarma: t,
 							created: n
-						} = e;
-						return r.a.createElement(lh, null, f.fbt._({
+						} = e, s = f.fbt._("Redditor since {amount of time}", [f.fbt._param("amount of time", Object(Ju.a)(n))], {
+							hk: "37XXLN"
+						}), a = f.fbt._({
 							"*": "{karma count} karma",
 							_1: "1 karma"
 						}, [f.fbt._plural(t, "karma count")], {
 							hk: "4uraW2"
-						}), "  •  ", f.fbt._("redditor for {amount of time}", [f.fbt._param("amount of time", Object(Ju.a)(n))], {
-							hk: "3o8EdY"
-						}))
+						});
+						return r.a.createElement(lh, null, s, " • ", a)
 					}
 				}
 				renderPreviewMessages() {
@@ -6814,38 +6833,24 @@
 					}))
 				}
 			}
-			var ph = Object(o.b)(mh, e => ({
-					onAcceptChannelRequest: () => {
-						e(Object(Te.l)()), e(Object(p.y)())
-					},
-					onDeclineChannelRequest: t => {
-						e(Object(Ce.b)(Object(ve.channelAction)(t, Fc.a.DECLINE_REQUEST)))
-					},
-					getPreviousMessages: g.s
-				}), (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), n), {
-					hasBlockedUsers: () => {
-						const {
-							channel: t
-						} = e;
-						return !(!t || !t.members.some(e => e.isBlockedByMe))
-					}
-				}))(bh),
-				gh = n("./src/chat/constants/channelRemovalReason.ts"),
-				Oh = n("./src/chat/components/OverlayChannelRemoval/index.m.less"),
-				fh = n.n(Oh);
-			const jh = i.a.p("SubHeader", fh.a),
-				Ch = i.a.span("Header", fh.a),
-				_h = e => {
+			ph.displayName = "OverlayChannelInvited";
+			var gh = bh(ph),
+				Oh = n("./src/chat/constants/channelRemovalReason.ts"),
+				fh = n("./src/chat/components/OverlayChannelRemoval/index.m.less"),
+				jh = n.n(fh);
+			const Ch = i.a.p("SubHeader", jh.a),
+				_h = i.a.span("Header", jh.a),
+				Eh = e => {
 					switch (e) {
-						case gh.a.DEFAULT:
+						case Oh.a.DEFAULT:
 							return f.fbt._("Removed", null, {
 								hk: "3yZ2SQ"
 							});
-						case gh.a.BANNED:
+						case Oh.a.BANNED:
 							return f.fbt._("Banned", null, {
 								hk: "45AEK1"
 							});
-						case gh.a.KICKED:
+						case Oh.a.KICKED:
 							return f.fbt._("Kicked", null, {
 								hk: "20JwrF"
 							});
@@ -6853,7 +6858,7 @@
 							return ""
 					}
 				},
-				Eh = Object(K.a)({
+				vh = Object(K.a)({
 					status: (e, t) => {
 						const {
 							channelId: n
@@ -6861,37 +6866,37 @@
 						return Object(y.q)(e, n)
 					}
 				});
-			var vh = Object(o.b)(Eh)(e => r.a.createElement(To, null, r.a.createElement(co, {
+			var Ih = Object(o.b)(vh)(e => r.a.createElement(To, null, r.a.createElement(co, {
 					channelId: e.channelId,
-					title: _h(e.status)
-				}), r.a.createElement(r.a.Fragment, null, r.a.createElement(Ch, null, (e => {
+					title: Eh(e.status)
+				}), r.a.createElement(r.a.Fragment, null, r.a.createElement(_h, null, (e => {
 					switch (e) {
-						case gh.a.DEFAULT:
+						case Oh.a.DEFAULT:
 							return f.fbt._("You have been removed from this room.", null, {
 								hk: "46tIu8"
 							});
-						case gh.a.BANNED:
+						case Oh.a.BANNED:
 							return f.fbt._("You are banned from this room.", null, {
 								hk: "2MKZpa"
 							});
-						case gh.a.KICKED:
+						case Oh.a.KICKED:
 							return f.fbt._("You are temporarily kicked from this room.", null, {
 								hk: "48m5JB"
 							});
 						default:
 							return ""
 					}
-				})(e.status)), r.a.createElement(jh, null, (e => {
+				})(e.status)), r.a.createElement(Ch, null, (e => {
 					switch (e) {
-						case gh.a.DEFAULT:
+						case Oh.a.DEFAULT:
 							return f.fbt._("You have been removed from this room.", null, {
 								hk: "46tIu8"
 							});
-						case gh.a.BANNED:
+						case Oh.a.BANNED:
 							return f.fbt._("You are banned from this room and may not join until you are unbanned.", null, {
 								hk: "1SH7uY"
 							});
-						case gh.a.KICKED:
+						case Oh.a.KICKED:
 							return f.fbt._("You are temporarily kicked from this room and may not join until you are no longer kicked.", null, {
 								hk: "1QQa96"
 							});
@@ -6899,11 +6904,11 @@
 							return ""
 					}
 				})(e.status))))),
-				Ih = n("./src/chat/components/OverlayDeclineChannel/index.m.less"),
-				yh = n.n(Ih);
-			const xh = i.a.p("Text", yh.a);
-			xh.displayName = "Text";
-			var Sh = Object(o.b)(null, e => ({
+				yh = n("./src/chat/components/OverlayDeclineChannel/index.m.less"),
+				xh = n.n(yh);
+			const Sh = i.a.p("Text", xh.a);
+			Sh.displayName = "Text";
+			var Nh = Object(o.b)(null, e => ({
 					onDeclineChannelRequest: t => {
 						e(Object(Te.m)()), e(Object(p.C)(t))
 					}
@@ -6918,7 +6923,7 @@
 						title: f.fbt._("Decline invite?", null, {
 							hk: "1YDLYU"
 						})
-					}), r.a.createElement(xh, null, f.fbt._("This chat will be deleted, and this person will not be notified that you've declined their request.", null, {
+					}), r.a.createElement(Sh, null, f.fbt._("This chat will be deleted, and this person will not be notified that you've declined their request.", null, {
 						hk: "39qzrL"
 					})), r.a.createElement(Ro, {
 						primaryButtonText: f.fbt._("Decline", null, {
@@ -6927,20 +6932,20 @@
 						primaryButtonAction: () => n(s)
 					}))
 				}),
-				Nh = n("./src/lib/makeActionCreator/index.ts");
-			const kh = Object(Nh.a)("OVERLAY_CLOSE");
-			var wh = n("./src/chat/components/OverlayDeleteMessage/index.m.less"),
-				Th = n.n(wh);
-			const Mh = i.a.div("Container", Th.a),
-				Ah = i.a.p("Text", Th.a),
-				Dh = i.a.span("CheckboxContainer", Th.a),
-				Lh = Object(K.a)({
+				kh = n("./src/lib/makeActionCreator/index.ts");
+			const wh = Object(kh.a)("OVERLAY_CLOSE");
+			var Th = n("./src/chat/components/OverlayDeleteMessage/index.m.less"),
+				Mh = n.n(Th);
+			const Ah = i.a.div("Container", Mh.a),
+				Dh = i.a.p("Text", Mh.a),
+				Lh = i.a.span("CheckboxContainer", Mh.a),
+				Uh = Object(K.a)({
 					isModerator: y.a,
 					message: (e, t) => e.messages.models[t.messageId],
 					senderUserId: (e, t) => Object(mu.f)(e, t.messageId),
 					subredditId: y.C
 				});
-			class Uh extends c.Component {
+			class Bh extends c.Component {
 				constructor(e) {
 					super(e), this.toggleCheckbox = () => {
 						this.setState({
@@ -6971,7 +6976,7 @@
 						title: f.fbt._("Delete message", null, {
 							hk: "1ZCVBI"
 						})
-					}), r.a.createElement(Mh, null, r.a.createElement(Ah, null, f.fbt._("Are you sure you want to delete this message?", null, {
+					}), r.a.createElement(Ah, null, r.a.createElement(Dh, null, f.fbt._("Are you sure you want to delete this message?", null, {
 						hk: "3cAxYZ"
 					}), r.a.createElement("br", null), f.fbt._("You can't undo this.", null, {
 						hk: "4ockoK"
@@ -6982,7 +6987,7 @@
 						darkBackground: !0,
 						withButton: !1,
 						embedText: !0
-					}), n && r.a.createElement(Dh, null, r.a.createElement(Tu, {
+					}), n && r.a.createElement(Lh, null, r.a.createElement(Tu, {
 						onChange: this.toggleCheckbox
 					}))), r.a.createElement(Ro, {
 						primaryButtonText: f.fbt._("Delete", null, {
@@ -6992,20 +6997,20 @@
 					}))
 				}
 			}
-			var Bh = Object(o.b)(Lh, (e, t) => ({
+			var Rh = Object(o.b)(Uh, (e, t) => ({
 					onConfirmationClick: n => ((e, t, n) => {
 						e.deleteAllMessages ? t(Object(ti.n)(e)) : (t(Object(g.q)(n)), t(Object(Te.r)()))
 					})(n, e, t.messageId),
-					onCancel: () => e(kh())
-				}))(Uh),
-				Rh = n("./src/chat/components/OverlayDirectsEmptyState/index.m.less"),
-				Ph = n.n(Rh);
-			const Hh = i.a.div("OverlayContent", Ph.a),
-				Fh = i.a.img("Image", Ph.a),
-				Kh = i.a.div("Info", Ph.a),
-				Gh = i.a.h4("Header", Ph.a),
-				zh = i.a.p("Text", Ph.a);
-			var Wh = Object(o.b)(null, e => ({
+					onCancel: () => e(wh())
+				}))(Bh),
+				Ph = n("./src/chat/components/OverlayDirectsEmptyState/index.m.less"),
+				Hh = n.n(Ph);
+			const Fh = i.a.div("OverlayContent", Hh.a),
+				Kh = i.a.img("Image", Hh.a),
+				Gh = i.a.div("Info", Hh.a),
+				zh = i.a.h4("Header", Hh.a),
+				Wh = i.a.p("Text", Hh.a);
+			var Vh = Object(o.b)(null, e => ({
 					onCreateMessage: () => e(Object(Ce.b)(Object(ve.channelUrl)("create")))
 				}))(e => r.a.createElement(To, {
 					innerContent: !0
@@ -7013,11 +7018,11 @@
 					title: f.fbt._("Start chatting", null, {
 						hk: "3B5dRm"
 					})
-				}), r.a.createElement(Hh, null, r.a.createElement(Fh, {
+				}), r.a.createElement(Fh, null, r.a.createElement(Kh, {
 					src: "".concat(F.a.assetPath, "/img/chat/empty-hero.png")
-				}), r.a.createElement(Kh, null, r.a.createElement(Gh, null, f.fbt._("Start a direct chat", null, {
+				}), r.a.createElement(Gh, null, r.a.createElement(zh, null, f.fbt._("Start a direct chat", null, {
 					hk: "4qVzlj"
-				})), r.a.createElement(zh, null, f.fbt._("You can start a new direct chat with the button below or from someone's profile", null, {
+				})), r.a.createElement(Wh, null, f.fbt._("You can start a new direct chat with the button below or from someone's profile", null, {
 					hk: "3wS0vs"
 				})))), r.a.createElement(Ro, {
 					primaryButtonText: f.fbt._("New Chat", null, {
@@ -7026,14 +7031,14 @@
 					primaryButtonAction: e.onCreateMessage,
 					primaryButtonOnly: !0
 				}))),
-				Vh = n("./src/chat/components/OverlayJoinChannel/index.m.less"),
-				qh = n.n(Vh);
-			const Jh = "OverlayNavTooltip--JoinSubredditChannel",
-				Zh = i.a.div("Wrapper", qh.a),
-				Qh = i.a.h4("Title", qh.a),
-				Yh = i.a.p("Desc", qh.a),
-				Xh = i.a.span("Warning", qh.a),
-				$h = Object(K.a)({
+				qh = n("./src/chat/components/OverlayJoinChannel/index.m.less"),
+				Jh = n.n(qh);
+			const Zh = "OverlayNavTooltip--JoinSubredditChannel",
+				Qh = i.a.div("Wrapper", Jh.a),
+				Yh = i.a.h4("Title", Jh.a),
+				Xh = i.a.p("Desc", Jh.a),
+				$h = i.a.span("Warning", Jh.a),
+				em = Object(K.a)({
 					channel: (e, t) => {
 						let {
 							channelId: n
@@ -7047,7 +7052,7 @@
 						return Object(oo.c)(e, n)
 					}
 				});
-			class em extends r.a.Component {
+			class tm extends r.a.Component {
 				constructor(e) {
 					super(e), this.renderContent = this.renderContent.bind(this), this.state = {
 						isSubmitDisabled: !1
@@ -7063,16 +7068,16 @@
 						channel: e,
 						subreddit: t
 					} = this.props;
-					if (e && t) return r.a.createElement(Zh, null, r.a.createElement(vd, {
+					if (e && t) return r.a.createElement(Qh, null, r.a.createElement(vd, {
 						isPublic: e.isPublic,
 						channelName: e.name,
 						subredditName: t.name,
 						subredditIconUrl: t.iconImg
-					}), e.customData.description && r.a.createElement(r.a.Fragment, null, r.a.createElement(Qh, null, f.fbt._("Description", null, {
+					}), e.customData.description && r.a.createElement(r.a.Fragment, null, r.a.createElement(Yh, null, f.fbt._("Description", null, {
 						hk: "1RyehZ"
-					})), r.a.createElement(Yh, null, e.customData.description)), t.nsfw && r.a.createElement(r.a.Fragment, null, r.a.createElement(Qh, null, f.fbt._("NSFW Community", null, {
+					})), r.a.createElement(Xh, null, e.customData.description)), t.nsfw && r.a.createElement(r.a.Fragment, null, r.a.createElement(Yh, null, f.fbt._("NSFW Community", null, {
 						hk: "3hPGRs"
-					})), r.a.createElement(Yh, null, f.fbt._("{=Heads up: this community is labeled not safe for work.} It may contain explicit or adult content.", [f.fbt._param("=Heads up: this community is labeled not safe for work.", r.a.createElement(Xh, null, f.fbt._("Heads up: this community is labeled not safe for work.", null, {
+					})), r.a.createElement(Xh, null, f.fbt._("{=Heads up: this community is labeled not safe for work.} It may contain explicit or adult content.", [f.fbt._param("=Heads up: this community is labeled not safe for work.", r.a.createElement($h, null, f.fbt._("Heads up: this community is labeled not safe for work.", null, {
 						hk: "2f5VCb"
 					})))], {
 						hk: "1yjANJ"
@@ -7102,7 +7107,7 @@
 							}),
 							subTitle: c,
 							showMenu: !1,
-							dropdownId: Jh
+							dropdownId: Zh
 						}), this.renderContent(), r.a.createElement(Ro, {
 							primaryButtonText: f.fbt._("Join Room", null, {
 								hk: "xd6cn"
@@ -7117,59 +7122,59 @@
 					return null
 				}
 			}
-			var tm = Object(o.b)($h, e => ({
+			var nm = Object(o.b)(em, e => ({
 				onJoinSubredditChannel: (t, n) => e(Object(Ms.t)(t, n))
-			}))(em);
-			const nm = Object(Nh.a)("MODERATOR__KICK_USER"),
-				sm = "kickUser";
-			var am = n("./src/chat/routes/chat.ts"),
-				cm = n("./src/chat/components/OverlayKickUser/index.m.less"),
-				rm = n.n(cm);
-			const om = i.a.p("SubHeader", rm.a),
-				im = i.a.span("Title", rm.a),
-				lm = i.a.span("Header", rm.a),
-				dm = i.a.wrapped(hi.a, "Checkbox", rm.a),
-				um = i.a.div("ListItem", rm.a),
-				hm = i.a.div("OverlayContent", rm.a),
-				mm = "10 minutes",
-				bm = "1 hour",
-				pm = "1 day",
-				gm = "3 days",
-				Om = () => [{
-					value: mm,
+			}))(tm);
+			const sm = Object(kh.a)("MODERATOR__KICK_USER"),
+				am = "kickUser";
+			var cm = n("./src/chat/routes/chat.ts"),
+				rm = n("./src/chat/components/OverlayKickUser/index.m.less"),
+				om = n.n(rm);
+			const im = i.a.p("SubHeader", om.a),
+				lm = i.a.span("Title", om.a),
+				dm = i.a.span("Header", om.a),
+				um = i.a.wrapped(hi.a, "Checkbox", om.a),
+				hm = i.a.div("ListItem", om.a),
+				mm = i.a.div("OverlayContent", om.a),
+				bm = "10 minutes",
+				pm = "1 hour",
+				gm = "1 day",
+				Om = "3 days",
+				fm = () => [{
+					value: bm,
 					text: f.fbt._("10 minutes", null, {
 						hk: "3y8skZ"
 					})
 				}, {
-					value: bm,
+					value: pm,
 					text: f.fbt._("1 hour", null, {
 						hk: "mgKhy"
 					})
 				}, {
-					value: pm,
+					value: gm,
 					text: f.fbt._("1 day", null, {
 						hk: "37HQV9"
 					})
 				}, {
-					value: gm,
+					value: Om,
 					text: f.fbt._("3 days", null, {
 						hk: "2R7GCT"
 					})
 				}],
-				fm = Object(K.a)({
-					message: (e, t) => t.attr === am.a.Message ? e.messages.models[t.attrId] : void 0,
-					user: (e, t) => t.attr === am.a.User ? e.contacts.models[t.attrId] : void 0
+				jm = Object(K.a)({
+					message: (e, t) => t.attr === cm.a.Message ? e.messages.models[t.attrId] : void 0,
+					user: (e, t) => t.attr === cm.a.User ? e.contacts.models[t.attrId] : void 0
 				});
-			class jm extends c.Component {
+			class Cm extends c.Component {
 				constructor(e) {
 					super(e), this.onSubmit = e => {
 						const {
 							onKickUser: t,
 							attrId: n
 						} = this.props;
-						Array.prototype.forEach.call(e.target[sm], (e, s) => {
-							if (e.checked && am.a.User) {
-								const s = (e => e === mm ? 600 : e === bm ? 3600 : e === pm ? 86400 : e === gm ? 259200 : 0)(e.value);
+						Array.prototype.forEach.call(e.target[am], (e, s) => {
+							if (e.checked && cm.a.User) {
+								const s = (e => e === bm ? 600 : e === pm ? 3600 : e === gm ? 86400 : e === Om ? 259200 : 0)(e.value);
 								t(n, s)
 							}
 						})
@@ -7180,14 +7185,14 @@
 						message: e,
 						user: t
 					} = this.props, n = e && e.sender ? e.sender.nickname : t ? "u/" + t.name : "this user";
-					return [r.a.createElement(lm, null, f.fbt._("Are you sure you want to kick {username} from this room?", [f.fbt._param("username", n)], {
+					return [r.a.createElement(dm, null, f.fbt._("Are you sure you want to kick {username} from this room?", [f.fbt._param("username", n)], {
 						hk: "n1L3B"
-					})), r.a.createElement(om, null, f.fbt._("They'll be able to join again once the kick duration is over.", null, {
+					})), r.a.createElement(im, null, f.fbt._("They'll be able to join again once the kick duration is over.", null, {
 						hk: "4zi1U1"
 					}))]
 				}
 				render() {
-					const e = Om(),
+					const e = fm(),
 						{
 							channelId: t
 						} = this.props;
@@ -7200,13 +7205,13 @@
 						title: f.fbt._("Confirm Kick", null, {
 							hk: "1upcSi"
 						})
-					}), r.a.createElement(hm, null, r.a.createElement(na, null, this.renderIntro(), r.a.createElement(im, null, f.fbt._("Kick Duration", null, {
+					}), r.a.createElement(mm, null, r.a.createElement(na, null, this.renderIntro(), r.a.createElement(lm, null, f.fbt._("Kick Duration", null, {
 						hk: "4nENS8"
-					})), e && e.map(e => r.a.createElement(um, {
+					})), e && e.map(e => r.a.createElement(hm, {
 						key: e.value
-					}, r.a.createElement(dm, {
+					}, r.a.createElement(um, {
 						type: "radio",
-						name: sm,
+						name: am,
 						value: e.value
 					}, e.text))))), r.a.createElement(Ro, {
 						primaryButtonText: f.fbt._("Kick", null, {
@@ -7218,23 +7223,23 @@
 					}))
 				}
 			}
-			var Cm = Object(o.b)(fm, e => ({
+			var _m = Object(o.b)(jm, e => ({
 					onKickUser: (t, n) => {
 						e(((e, t) => async (n, s) => {
 							await oc.b.kickUserFromChannel(e, t, "Temporary ban from room").then(() => {
-								n(nm({
+								n(sm({
 									userId: e
 								})), n(Object(Ce.a)())
 							})
 						})(t, n)), e(Object(Te.t)(n))
 					}
-				}))(jm),
-				_m = n("./src/chat/components/OverlayLeaveChannel/index.m.less"),
-				Em = n.n(_m);
-			const vm = i.a.div("Container", Em.a),
-				Im = i.a.p("Text", Em.a),
-				ym = i.a.wrapped(Im, "TextBold", Em.a);
-			var xm = Object(o.b)(void 0, e => ({
+				}))(Cm),
+				Em = n("./src/chat/components/OverlayLeaveChannel/index.m.less"),
+				vm = n.n(Em);
+			const Im = i.a.div("Container", vm.a),
+				ym = i.a.p("Text", vm.a),
+				xm = i.a.wrapped(ym, "TextBold", vm.a);
+			var Sm = Object(o.b)(void 0, e => ({
 					onChannelLeave: (t, n) => {
 						e(Object(Te.o)()), e(Object(p.I)(t, n))
 					}
@@ -7249,11 +7254,11 @@
 						title: f.fbt._("Are you sure", null, {
 							hk: "4fJTRG"
 						})
-					}), r.a.createElement(vm, null, r.a.createElement(ym, null, s ? f.fbt._("Leave Room?", null, {
+					}), r.a.createElement(Im, null, r.a.createElement(xm, null, s ? f.fbt._("Leave Room?", null, {
 						hk: "4xjqwe"
 					}) : f.fbt._("Leave group chat?", null, {
 						hk: "vEsVO"
-					})), r.a.createElement(Im, null, s ? f.fbt._("You will be removed from the room and no longer receive new messages.", null, {
+					})), r.a.createElement(ym, null, s ? f.fbt._("You will be removed from the room and no longer receive new messages.", null, {
 						hk: "13cSxL"
 					}) : f.fbt._("You will be removed from the group and no longer receive new messages. You will not be able to join this group again unless you receive another invite.", null, {
 						hk: "3oISyF"
@@ -7264,15 +7269,15 @@
 						primaryButtonAction: () => n(t, s)
 					}))
 				}),
-				Sm = n("./src/chat/components/OverlayLockChannel/index.m.less"),
-				Nm = n.n(Sm);
-			const km = i.a.div("Container", Nm.a),
-				wm = i.a.p("Text", Nm.a),
-				Tm = i.a.wrapped(wm, "TextBold", Nm.a),
-				Mm = Object(K.a)({
+				Nm = n("./src/chat/components/OverlayLockChannel/index.m.less"),
+				km = n.n(Nm);
+			const wm = i.a.div("Container", km.a),
+				Tm = i.a.p("Text", km.a),
+				Mm = i.a.wrapped(Tm, "TextBold", km.a),
+				Am = Object(K.a)({
 					channel: e => Object(y.m)(e)
 				});
-			class Am extends r.a.Component {
+			class Dm extends r.a.Component {
 				constructor(e) {
 					super(e), this.toggleSubmitButton = this.toggleSubmitButton.bind(this), this.onLockChannel = this.onLockChannel.bind(this), this.state = {
 						isSubmitDisabled: !1
@@ -7312,9 +7317,9 @@
 						title: f.fbt._("Are you sure", null, {
 							hk: "Kzqon"
 						})
-					}), r.a.createElement(km, null, t && r.a.createElement(r.a.Fragment, null, r.a.createElement(Tm, null, f.fbt._("Lock Room?", null, {
+					}), r.a.createElement(wm, null, t && r.a.createElement(r.a.Fragment, null, r.a.createElement(Mm, null, f.fbt._("Lock Room?", null, {
 						hk: "3eUK70"
-					})), r.a.createElement(wm, null, f.fbt._("No one in this room will be able to send messages in while it is locked.", null, {
+					})), r.a.createElement(Tm, null, f.fbt._("No one in this room will be able to send messages in while it is locked.", null, {
 						hk: "2l4QGl"
 					})))), r.a.createElement(Ro, {
 						primaryButtonText: f.fbt._("Lock", null, {
@@ -7325,25 +7330,25 @@
 					}))
 				}
 			}
-			var Dm = Object(o.b)(Mm, e => ({
+			var Lm = Object(o.b)(Am, e => ({
 					onLockChannel: () => e(Object(Ms.v)(!0, !0)),
 					goBackToChannel: (t, n) => e(Object(Ce.b)(Object(ve.channelUrl)(t, n)))
-				}))(Am),
-				Lm = n("./src/chat/models/Promo/index.ts"),
-				Um = n("./src/chat/components/OverlayNSFWWarning/index.m.less"),
-				Bm = n.n(Um);
-			const Rm = i.a.div("Container", Bm.a),
-				Pm = i.a.p("Text", Bm.a);
-			var Hm = Object(o.b)(null, e => ({
+				}))(Dm),
+				Um = n("./src/chat/models/Promo/index.ts"),
+				Bm = n("./src/chat/components/OverlayNSFWWarning/index.m.less"),
+				Rm = n.n(Bm);
+			const Pm = i.a.div("Container", Rm.a),
+				Hm = i.a.p("Text", Rm.a);
+			var Fm = Object(o.b)(null, e => ({
 					onAccept: () => {
-						e(Object(l.d)(Lm.b.NSFWWarning)), e(Object(p.y)())
+						e(Object(l.d)(Um.b.NSFWWarning)), e(Object(p.y)())
 					}
 				}))(e => r.a.createElement(To, null, r.a.createElement(co, {
 					channelId: e.channelId,
 					title: f.fbt._("NSFW User", null, {
 						hk: "3W2Bw2"
 					})
-				}), r.a.createElement(Rm, null, r.a.createElement(Pm, null, f.fbt._("One or more users in this chat are marked as NSFW (not safe for work), which means they tend to post explicit content elsewhere on Reddit. This doesn't necessarily mean that the content of this chat is explicit.", null, {
+				}), r.a.createElement(Pm, null, r.a.createElement(Hm, null, f.fbt._("One or more users in this chat are marked as NSFW (not safe for work), which means they tend to post explicit content elsewhere on Reddit. This doesn't necessarily mean that the content of this chat is explicit.", null, {
 					hk: "4cRpQH"
 				}))), r.a.createElement(Ro, {
 					primaryButtonText: f.fbt._("Accept", null, {
@@ -7351,18 +7356,18 @@
 					}),
 					primaryButtonAction: e.onAccept
 				}))),
-				Fm = n("./src/chat/components/OverlayPrivateChannel/index.m.less"),
-				Km = n.n(Fm);
-			const Gm = i.a.div("OverlayContent", Km.a),
-				zm = i.a.p("Description", Km.a),
-				Wm = i.a.div("Wrapper", Km.a),
-				Vm = i.a.img("Image", Km.a),
-				qm = i.a.h3("Title", Km.a),
-				Jm = Object(K.a)({
+				Km = n("./src/chat/components/OverlayPrivateChannel/index.m.less"),
+				Gm = n.n(Km);
+			const zm = i.a.div("OverlayContent", Gm.a),
+				Wm = i.a.p("Description", Gm.a),
+				Vm = i.a.div("Wrapper", Gm.a),
+				qm = i.a.img("Image", Gm.a),
+				Jm = i.a.h3("Title", Gm.a),
+				Zm = Object(K.a)({
 					channel: e => Object(y.k)(e),
 					subreddits: e => Object(oo.e)(e)
 				});
-			class Zm extends r.a.Component {
+			class Qm extends r.a.Component {
 				getSubreddit() {
 					const {
 						channel: e,
@@ -7393,52 +7398,52 @@
 							}),
 							subTitle: e && a,
 							showMenu: !1
-						}), r.a.createElement(Gm, null, r.a.createElement(Wm, null, r.a.createElement(Vm, {
+						}), r.a.createElement(zm, null, r.a.createElement(Vm, null, r.a.createElement(qm, {
 							src: "".concat(F.a.assetPath, "/img/content-gate-icons/private.png")
-						}), r.a.createElement(qm, null, f.fbt._("{subreddit name} is a private community", [f.fbt._param("subreddit name", "r/".concat(n.name))], {
+						}), r.a.createElement(Jm, null, f.fbt._("{subreddit name} is a private community", [f.fbt._param("subreddit name", "r/".concat(n.name))], {
 							hk: "5QRxu"
-						})), r.a.createElement(zm, null, f.fbt._("The moderators in this community have set it to private. You must be a moderator or approved user to join this room.", null, {
+						})), r.a.createElement(Wm, null, f.fbt._("The moderators in this community have set it to private. You must be a moderator or approved user to join this room.", null, {
 							hk: "1RNUxL"
 						})))))
 					}
 					return null
 				}
 			}
-			var Qm = Object(o.b)(Jm)(Zm),
-				Ym = n("./src/chat/endpoints/users/index.ts"),
-				Xm = n("./src/chat/models/Message/report.ts");
-			var $m = n("./src/higherOrderComponents/makeAsync.tsx"),
-				eb = n("./src/lib/loadWithRetries/index.ts");
-			const tb = () => null;
-			var nb = Object($m.a)({
-				ErrorComponent: tb,
-				getComponent: () => Object(eb.a)(() => n.e("ChatReportFlow").then(n.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
-				LoadingComponent: tb
+			var Ym = Object(o.b)(Zm)(Qm),
+				Xm = n("./src/chat/endpoints/users/index.ts"),
+				$m = n("./src/chat/models/Message/report.ts");
+			var eb = n("./src/higherOrderComponents/makeAsync.tsx"),
+				tb = n("./src/lib/loadWithRetries/index.ts");
+			const nb = () => null;
+			var sb = Object(eb.a)({
+				ErrorComponent: nb,
+				getComponent: () => Object(tb.a)(() => n.e("ChatReportFlow").then(n.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
+				LoadingComponent: nb
 			});
-			const sb = "reportReason";
-			var ab;
+			const ab = "reportReason";
+			var cb;
 			! function(e) {
 				e.Threats = "threats", e.Violence = "violence", e.Personal = "personal", e.Impersonation = "impersonation", e.MinorSexualization = "minorSexualization"
-			}(ab || (ab = {}));
-			var cb = n("./src/chat/models/ReportFlow/index.ts"),
-				rb = n("./src/chat/components/OverlayReport/index.m.less"),
-				ob = n.n(rb);
-			const ib = i.a.wrapped(hi.a, "Checkbox", ob.a),
-				lb = i.a.div("ListItem", ob.a),
-				db = Object(K.a)({
-					user: (e, t) => t.attr === am.a.User ? e.contacts.models[t.attrId] : void 0,
-					message: (e, t) => t.attr === am.a.Invite || t.attr === am.a.Message ? Object(mu.c)(e, Number(t.attrId)) : void 0,
+			}(cb || (cb = {}));
+			var rb = n("./src/chat/models/ReportFlow/index.ts"),
+				ob = n("./src/chat/components/OverlayReport/index.m.less"),
+				ib = n.n(ob);
+			const lb = i.a.wrapped(hi.a, "Checkbox", ib.a),
+				db = i.a.div("ListItem", ib.a),
+				ub = Object(K.a)({
+					user: (e, t) => t.attr === cm.a.User ? e.contacts.models[t.attrId] : void 0,
+					message: (e, t) => t.attr === cm.a.Invite || t.attr === cm.a.Message ? Object(mu.c)(e, Number(t.attrId)) : void 0,
 					messageList: e => Object(y.B)(e),
 					currentUserId: (e, t) => Object(Da.a)(e)
 				});
-			class ub extends c.Component {
+			class hb extends c.Component {
 				constructor(e) {
 					super(e), this.selectReason = e => this.setState({
 						selectedReason: e
-					}), this.isMessageReportFlow = () => this.props.attr === am.a.Invite || this.props.attr === am.a.Message, this.isSubmitDisabled = () => !this.state.selectedReason, this.isCTLControls = () => this.state.currentFlow === cb.a.CrisisTextLine && !this.state.ctlSubmitted, this.isSingleButton = () => this.state.currentFlow === cb.a.CrisisTextLine && !0 === this.state.ctlSubmitted || this.state.currentFlow === cb.a.BlockUser || this.state.currentFlow === cb.a.FileComplaint, this.nextReportFlow = () => {
+					}), this.isMessageReportFlow = () => this.props.attr === cm.a.Invite || this.props.attr === cm.a.Message, this.isSubmitDisabled = () => !this.state.selectedReason, this.isCTLControls = () => this.state.currentFlow === rb.a.CrisisTextLine && !this.state.ctlSubmitted, this.isSingleButton = () => this.state.currentFlow === rb.a.CrisisTextLine && !0 === this.state.ctlSubmitted || this.state.currentFlow === rb.a.BlockUser || this.state.currentFlow === rb.a.FileComplaint, this.nextReportFlow = () => {
 						const {
 							selectedReason: e
-						} = this.state, t = e && e.requestCrisisSupport ? cb.a.CrisisTextLine : e && e.fileComplaint ? cb.a.FileComplaint : cb.a.BlockUser;
+						} = this.state, t = e && e.requestCrisisSupport ? rb.a.CrisisTextLine : e && e.fileComplaint ? rb.a.FileComplaint : rb.a.BlockUser;
 						this.setState({
 							currentFlow: t
 						})
@@ -7446,7 +7451,7 @@
 						const {
 							message: e
 						} = this.props;
-						if (e && e.sender) return r.a.createElement(nb, {
+						if (e && e.sender) return r.a.createElement(sb, {
 							onRuleChange: e => this.selectReason(e),
 							currentFlow: this.state.currentFlow,
 							blockedUserId: e.sender.userId,
@@ -7455,35 +7460,35 @@
 						})
 					}, this.getReportReasonText = e => {
 						switch (e) {
-							case ab.Threats:
+							case cb.Threats:
 								return f.fbt._("Threatens, harrasses, or bullies", null, {
 									hk: "9lzw2"
 								});
-							case ab.Violence:
+							case cb.Violence:
 								return f.fbt._("It threatens violence or physical harm", null, {
 									hk: "2LziPg"
 								});
-							case ab.Personal:
+							case cb.Personal:
 								return f.fbt._("It's personal and confidential information", null, {
 									hk: "2w0qDN"
 								});
-							case ab.Impersonation:
+							case cb.Impersonation:
 								return f.fbt._("Impersonation", null, {
 									hk: "2dg9bu"
 								});
-							case ab.MinorSexualization:
+							case cb.MinorSexualization:
 								return f.fbt._("It's sexual or suggestive content involving minors", null, {
 									hk: "Ofq3r"
 								})
 						}
-					}, this.getUserReportFlow = () => u()(ab, e => {
+					}, this.getUserReportFlow = () => u()(cb, e => {
 						const t = this.getReportReasonText(e);
-						return r.a.createElement(lb, {
+						return r.a.createElement(db, {
 							key: t
-						}, r.a.createElement(ib, {
+						}, r.a.createElement(lb, {
 							type: "radio",
 							value: t,
-							name: sb,
+							name: ab,
 							onChange: e => this.selectReason({
 								reasonText: e.target.value
 							})
@@ -7505,13 +7510,13 @@
 							currentFlow: s,
 							selectedReason: a
 						} = this.state;
-						if (a && a.requestCrisisSupport && e && e.messageType === _e.d.USER) return s === cb.a.CrisisTextLine ? (n(a.reasonText, e, t), this.setState({
+						if (a && a.requestCrisisSupport && e && e.messageType === _e.d.USER) return s === rb.a.CrisisTextLine ? (n(a.reasonText, e, t), this.setState({
 							ctlSubmitted: !0
 						})) : this.nextReportFlow();
 						a && a.reasonText && e && e.messageType === _e.d.USER && (n(a.reasonText, e, t), this.nextReportFlow())
 					}, this.state = {
 						selectedReason: void 0,
-						currentFlow: this.props.attr === am.a.Invite ? cb.a.Invite : cb.a.Default,
+						currentFlow: this.props.attr === cm.a.Invite ? rb.a.Invite : rb.a.Default,
 						ctlSubmitted: !1
 					}
 				}
@@ -7546,7 +7551,7 @@
 					}))
 				}
 			}
-			var hb = Object(o.b)(db, e => ({
+			var mb = Object(o.b)(ub, e => ({
 					onReportUser: (t, n) => {
 						e(Object(Te.x)(n.id)), e((e => async (t, n, s) => {
 							let {
@@ -7559,7 +7564,7 @@
 								reason: r,
 								userNickname: c.name
 							};
-							await Object(Ym.a)(a(), o)
+							await Object(Xm.a)(a(), o)
 						})({
 							user: n,
 							reason: t
@@ -7570,23 +7575,23 @@
 							let {
 								apiContext: r
 							} = c;
-							const o = Object(Xm.a)(e, t),
-								i = Object(Xm.b)(e, t, n);
-							o && await Object(Ym.b)(r(), o, i)
+							const o = Object($m.a)(e, t),
+								i = Object($m.b)(e, t, n);
+							o && await Object(Xm.b)(r(), o, i)
 						})(t, n, s))
 					}
-				}))(ub),
-				mb = n("./src/chat/components/OverlaySubredditChatRequest/index.m.less"),
-				bb = n.n(mb);
-			const pb = i.a.wrapped(vd, "SubredditHeader", bb.a),
-				gb = i.a.h4("Title", bb.a),
-				Ob = i.a.p("Text", bb.a),
-				fb = Object(K.a)({
+				}))(hb),
+				bb = n("./src/chat/components/OverlaySubredditChatRequest/index.m.less"),
+				pb = n.n(bb);
+			const gb = i.a.wrapped(vd, "SubredditHeader", pb.a),
+				Ob = i.a.h4("Title", pb.a),
+				fb = i.a.p("Text", pb.a),
+				jb = Object(K.a)({
 					currentUserId: Da.a,
 					subredditChannel: e => Object(y.k)(e),
 					subreddit: e => Object(oo.b)(e)
 				});
-			class jb extends r.a.Component {
+			class Cb extends r.a.Component {
 				constructor(e) {
 					super(e), this.renderContent = this.renderContent.bind(this), this.onDeclineChannelRequest = this.onDeclineChannelRequest.bind(this)
 				}
@@ -7597,9 +7602,9 @@
 					const {
 						subredditChannel: e
 					} = this.props;
-					if (e && e.type === C.a.Subreddit) return r.a.createElement(r.a.Fragment, null, r.a.createElement(gb, null, f.fbt._("Description", null, {
+					if (e && e.type === C.a.Subreddit) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Ob, null, f.fbt._("Description", null, {
 						hk: "EsHcE"
-					})), r.a.createElement(Ob, null, e.customData.description))
+					})), r.a.createElement(fb, null, e.customData.description))
 				}
 				renderMembersList() {
 					const {
@@ -7616,7 +7621,7 @@
 							} = e;
 							return t !== n
 						});
-						return r.a.createElement(r.a.Fragment, null, r.a.createElement(gb, null, f.fbt._("Members", null, {
+						return r.a.createElement(r.a.Fragment, null, r.a.createElement(Ob, null, f.fbt._("Members", null, {
 							hk: "2IDokz"
 						})), r.a.createElement(Wa, {
 							channelId: t,
@@ -7631,7 +7636,7 @@
 						subredditChannel: e,
 						subreddit: t
 					} = this.props, n = t && t.nsfw;
-					if (t && e) return r.a.createElement(r.a.Fragment, null, r.a.createElement(pb, {
+					if (t && e) return r.a.createElement(r.a.Fragment, null, r.a.createElement(gb, {
 						channelName: e.name,
 						subredditName: t.name,
 						subredditIconUrl: t.iconImg,
@@ -7672,33 +7677,33 @@
 					}))
 				}
 			}
-			var Cb = Object(o.b)(fb, e => ({
+			var _b = Object(o.b)(jb, e => ({
 				onAcceptSubredditChannelRequest: (t, n) => {
 					e(Object(Te.l)()), e(Object(Ms.n)(t, n))
 				},
 				onDeclineChannelRequest: (t, n) => {
 					e(Object(Ce.b)(Object(ve.channelAction)(t, Fc.a.DECLINE_REQUEST, n)))
 				}
-			}))(jb);
-			const _b = e => e.channelId || e.subredditName ? e.subredditName && e.action === Fc.a.VIEW_JOIN && e.channelId ? r.a.createElement(tm, {
+			}))(Cb);
+			const Eb = e => e.channelId || e.subredditName ? e.subredditName && e.action === Fc.a.VIEW_JOIN && e.channelId ? r.a.createElement(nm, {
 				channelId: e.channelId,
 				subredditName: e.subredditName
-			}) : e.subredditName && e.action === Fc.a.VIEW_INVITE && e.channelId ? r.a.createElement(Cb, {
+			}) : e.subredditName && e.action === Fc.a.VIEW_INVITE && e.channelId ? r.a.createElement(_b, {
 				channelId: e.channelId,
 				subredditName: e.subredditName
-			}) : e.action === Fc.a.VIEW_INVITE && e.channelId ? r.a.createElement(ph, {
+			}) : e.action === Fc.a.VIEW_INVITE && e.channelId ? r.a.createElement(gh, {
 				channelId: e.channelId
 			}) : e.action === Fc.a.VIEW_MEMBERS && e.channelId ? r.a.createElement(Yo, {
 				channelId: e.channelId
-			}) : e.action === Fc.a.LEAVE && e.channelId ? r.a.createElement(xm, {
+			}) : e.action === Fc.a.LEAVE && e.channelId ? r.a.createElement(Sm, {
 				channelId: e.channelId,
 				subredditName: e.subredditName
-			}) : e.action === Fc.a.LOCK_CHANNEL_CONFIRMATION && e.channelId ? r.a.createElement(Dm, {
+			}) : e.action === Fc.a.LOCK_CHANNEL_CONFIRMATION && e.channelId ? r.a.createElement(Lm, {
 				channelId: e.channelId,
 				subredditName: e.subredditName
-			}) : e.action === Fc.a.VIEW_NSFW_CONFIRMATION && e.channelId ? r.a.createElement(Hm, {
+			}) : e.action === Fc.a.VIEW_NSFW_CONFIRMATION && e.channelId ? r.a.createElement(Fm, {
 				channelId: e.channelId
-			}) : e.action === Fc.a.DECLINE_REQUEST && e.channelId ? r.a.createElement(Sh, {
+			}) : e.action === Fc.a.DECLINE_REQUEST && e.channelId ? r.a.createElement(Nh, {
 				channelId: e.channelId,
 				subredditName: e.subredditName
 			}) : e.channelId && e.action === ge.Ban && e.subredditName && e.attrId ? r.a.createElement(Fu, {
@@ -7709,38 +7714,38 @@
 				channelId: e.channelId,
 				blockedUserId: e.attrId,
 				subredditName: e.subredditName
-			}) : e.action === _e.a.DELETE && e.channelId && e.attrId ? r.a.createElement(Bh, {
+			}) : e.action === _e.a.DELETE && e.channelId && e.attrId ? r.a.createElement(Rh, {
 				channelId: e.channelId,
 				messageId: parseInt(e.attrId)
-			}) : e.action === _e.a.REPORT && e.attr && e.attrId && e.channelId ? r.a.createElement(hb, {
+			}) : e.action === _e.a.REPORT && e.attr && e.attrId && e.channelId ? r.a.createElement(mb, {
 				attr: e.attr,
 				attrId: e.attrId,
 				channelId: e.channelId
-			}) : e.action === ge.Kick && e.attr && e.attrId && e.channelId ? r.a.createElement(Cm, {
+			}) : e.action === ge.Kick && e.attr && e.attrId && e.channelId ? r.a.createElement(_m, {
 				channelId: e.channelId,
 				attr: e.attr,
 				attrId: e.attrId
-			}) : e.action === Fc.a.VIEW_PRIVATE && e.channelId ? r.a.createElement(Qm, {
+			}) : e.action === Fc.a.VIEW_PRIVATE && e.channelId ? r.a.createElement(Ym, {
 				channelId: e.channelId,
 				subredditName: e.subredditName
-			}) : e.action === Fc.a.DENY && e.channelId ? r.a.createElement(vh, {
+			}) : e.action === Fc.a.DENY && e.channelId ? r.a.createElement(Ih, {
 				channelId: e.channelId
-			}) : void 0 : r.a.createElement(Wh, null);
-			var Eb = n("./src/chat/components/FrameContent/index.m.less"),
-				vb = n.n(Eb);
-			const Ib = vb.a.Main,
-				yb = Object(K.a)({
+			}) : void 0 : r.a.createElement(Vh, null);
+			var vb = n("./src/chat/components/FrameContent/index.m.less"),
+				Ib = n.n(vb);
+			const yb = Ib.a.Main,
+				xb = Object(K.a)({
 					channel: e => Object(y.l)(e),
 					container: e => e && e.container && e.container.size,
 					isUserAccountEmpty: e => !e.user.account
 				}),
-				xb = Object(o.b)(yb, e => ({
+				Sb = Object(o.b)(xb, e => ({
 					setInternalPromos: () => e(Object(l.e)())
 				})),
-				Sb = i.a.main("Main", vb.a),
-				Nb = i.a.div("Content", vb.a),
-				kb = i.a.div("Modal", vb.a);
-			class wb extends r.a.Component {
+				Nb = i.a.main("Main", Ib.a),
+				kb = i.a.div("Content", Ib.a),
+				wb = i.a.div("Modal", Ib.a);
+			class Tb extends r.a.Component {
 				componentDidMount() {
 					this.props.setInternalPromos()
 				}
@@ -7769,10 +7774,10 @@
 						case t === sa.a.MINIMIZED:
 							return r.a.createElement(xo.a, null);
 						default: {
-							const t = _b(this.props.match.params);
+							const t = Eb(this.props.match.params);
 							return r.a.createElement(r.a.Fragment, null, r.a.createElement(vu, {
 								routeAction: s
-							}), r.a.createElement(Nb, null, t ? r.a.createElement(kb, null, t) : e && a && r.a.createElement(yo, {
+							}), r.a.createElement(kb, null, t ? r.a.createElement(wb, null, t) : e && a && r.a.createElement(yo, {
 								channelId: a,
 								channel: e
 							})))
@@ -7780,12 +7785,12 @@
 					}
 				}
 				render() {
-					return r.a.createElement(Sb, {
+					return r.a.createElement(Nb, {
 						id: aa.a
 					}, this.getContent())
 				}
 			}
-			t.b = xb(wb)
+			t.b = Sb(Tb)
 		},
 		"./src/chat/components/Intro/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -14586,4 +14591,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.00c53b7d7d7fca62fbe9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b35fac688ba730633b7f.js.map
