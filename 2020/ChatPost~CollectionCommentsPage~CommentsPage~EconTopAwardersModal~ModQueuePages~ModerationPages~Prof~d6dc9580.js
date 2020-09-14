@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ba8b4a2a842f10c6c897.js
-// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.5435fbf8821d36a38d4a.js
+// Retrieved at 9/14/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -258,13 +258,13 @@
 				n = s("./node_modules/react-redux/es/index.js"),
 				i = s("./node_modules/reselect/es/index.js"),
 				d = s("./src/reddit/actions/gold/giveAward.ts"),
-				c = s("./src/lib/makeActionCreator/index.ts"),
-				l = s("./src/graphql/operations/HideAwardOnTarget.json"),
-				m = s("./src/reddit/actions/toaster.ts"),
-				u = s("./src/reddit/models/Toast/index.ts"),
-				p = s("./src/lib/makeGqlRequest/index.ts"),
-				h = s("./src/reddit/actions/gold/constants.ts");
-			const b = Object(c.a)(h.G),
+				c = s("./src/graphql/operations/HideAwardOnTarget.json"),
+				l = s("./src/lib/makeActionCreator/index.ts"),
+				m = s("./src/lib/makeGqlRequest/index.ts"),
+				u = s("./src/reddit/actions/gold/constants.ts"),
+				p = s("./src/reddit/actions/toaster.ts"),
+				h = s("./src/reddit/models/Toast/index.ts");
+			const b = Object(l.a)(u.G),
 				w = e => {
 					let {
 						awardId: t,
@@ -282,20 +282,20 @@
 							hk: "10OvOz"
 						});
 						try {
-							(await ((e, t, s) => Object(p.a)(e, Object.assign(Object.assign({}, l), {
+							(await ((e, t, s) => Object(m.a)(e, Object.assign(Object.assign({}, c), {
 								variables: {
 									awardId: t,
 									targetId: s
 								}
-							})))(n(), t, s)).error && e(Object(m.e)({
-								kind: u.b.Error,
-								duration: m.a,
+							})))(n(), t, s)).error && e(Object(p.e)({
+								kind: h.b.Error,
+								duration: p.a,
 								text: i
 							}))
 						} catch (d) {
-							e(Object(m.e)({
-								kind: u.b.Error,
-								duration: m.a,
+							e(Object(p.e)({
+								kind: h.b.Error,
+								duration: p.a,
 								text: i
 							}))
 						}
@@ -883,12 +883,12 @@
 					l = () => {
 						t(Object(x.clickConfirmReportAward)(e.award, e.thing.id)), d(Object(Pe.a)(e.award.id)), e.onClose()
 					},
-					p = () => {
-						t(Object(x.clickConfirmFlagAwardUsage)(e.award, e.thing.id)), d(Object(m.e)(Object(m.d)(r.fbt._("{award name} Award successfully flagged for review.", [r.fbt._param("award name", e.award.name)], {
+					m = () => {
+						t(Object(x.clickConfirmFlagAwardUsage)(e.award, e.thing.id)), d(Object(p.e)(Object(p.d)(r.fbt._("{award name} Award successfully flagged for review.", [r.fbt._param("award name", e.award.name)], {
 							hk: "24QeOL"
-						}), u.b.SuccessAward))), e.onClose()
+						}), h.b.SuccessAward))), e.onClose()
 					},
-					h = o.a.createElement(o.a.Fragment, null, o.a.createElement(Se.i, {
+					u = o.a.createElement(o.a.Fragment, null, o.a.createElement(Se.i, {
 						onClick: () => {
 							t(Object(x.clickReportAward)(e.award, e.thing.id)), i(Ie.REPORT_COMMUNITY_AWARD)
 						},
@@ -917,7 +917,7 @@
 							actionText: r.fbt._("Cancel", null, {
 								hk: "370pdF"
 							}),
-							modalText: h
+							modalText: u
 						});
 					case Ie.REPORT_COMMUNITY_AWARD:
 						return o.a.createElement(E.a, {
@@ -938,7 +938,7 @@
 					case Ie.FLAG_USAGE:
 						return o.a.createElement(E.a, {
 							withOverlay: !0,
-							onConfirm: p,
+							onConfirm: m,
 							onCancel: c,
 							onClose: c,
 							headerText: r.fbt._("Flag Award Usage", null, {
@@ -2460,4 +2460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ba8b4a2a842f10c6c897.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.5435fbf8821d36a38d4a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.24c2a5481bd091bd65d0.js
-// Retrieved at 9/14/2020, 9:50:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0f4dd03a562a86bce6ce.js
+// Retrieved at 9/14/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "9388164-production"
+					SENTRY_RELEASE_VERSION: "0db2f78-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3153,13 +3153,13 @@
 				i = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/reddit/actions/gold/giveAward.ts"),
-				l = n("./src/lib/makeActionCreator/index.ts"),
-				d = n("./src/graphql/operations/HideAwardOnTarget.json"),
-				u = n("./src/reddit/actions/toaster.ts"),
-				p = n("./src/reddit/models/Toast/index.ts"),
-				m = n("./src/lib/makeGqlRequest/index.ts"),
-				h = n("./src/reddit/actions/gold/constants.ts");
-			const b = Object(l.a)(h.G),
+				l = n("./src/graphql/operations/HideAwardOnTarget.json"),
+				d = n("./src/lib/makeActionCreator/index.ts"),
+				u = n("./src/lib/makeGqlRequest/index.ts"),
+				p = n("./src/reddit/actions/gold/constants.ts"),
+				m = n("./src/reddit/actions/toaster.ts"),
+				h = n("./src/reddit/models/Toast/index.ts");
+			const b = Object(d.a)(p.G),
 				f = e => {
 					let {
 						awardId: t,
@@ -3177,20 +3177,20 @@
 							hk: "10OvOz"
 						});
 						try {
-							(await ((e, t, n) => Object(m.a)(e, Object.assign(Object.assign({}, d), {
+							(await ((e, t, n) => Object(u.a)(e, Object.assign(Object.assign({}, l), {
 								variables: {
 									awardId: t,
 									targetId: n
 								}
-							})))(i(), t, n)).error && e(Object(u.e)({
-								kind: p.b.Error,
-								duration: u.a,
+							})))(i(), t, n)).error && e(Object(m.e)({
+								kind: h.b.Error,
+								duration: m.a,
 								text: a
 							}))
 						} catch (c) {
-							e(Object(u.e)({
-								kind: p.b.Error,
-								duration: u.a,
+							e(Object(m.e)({
+								kind: h.b.Error,
+								duration: m.a,
 								text: a
 							}))
 						}
@@ -3778,12 +3778,12 @@
 					d = () => {
 						t(Object(E.clickConfirmReportAward)(e.award, e.thing.id)), c(Object(Ie.a)(e.award.id)), e.onClose()
 					},
-					m = () => {
-						t(Object(E.clickConfirmFlagAwardUsage)(e.award, e.thing.id)), c(Object(u.e)(Object(u.d)(s.fbt._("{award name} Award successfully flagged for review.", [s.fbt._param("award name", e.award.name)], {
+					u = () => {
+						t(Object(E.clickConfirmFlagAwardUsage)(e.award, e.thing.id)), c(Object(m.e)(Object(m.d)(s.fbt._("{award name} Award successfully flagged for review.", [s.fbt._param("award name", e.award.name)], {
 							hk: "24QeOL"
-						}), p.b.SuccessAward))), e.onClose()
+						}), h.b.SuccessAward))), e.onClose()
 					},
-					h = r.a.createElement(r.a.Fragment, null, r.a.createElement(Pe.i, {
+					p = r.a.createElement(r.a.Fragment, null, r.a.createElement(Pe.i, {
 						onClick: () => {
 							t(Object(E.clickReportAward)(e.award, e.thing.id)), a(ke.REPORT_COMMUNITY_AWARD)
 						},
@@ -3812,7 +3812,7 @@
 							actionText: s.fbt._("Cancel", null, {
 								hk: "370pdF"
 							}),
-							modalText: h
+							modalText: p
 						});
 					case ke.REPORT_COMMUNITY_AWARD:
 						return r.a.createElement(O.a, {
@@ -3833,7 +3833,7 @@
 					case ke.FLAG_USAGE:
 						return r.a.createElement(O.a, {
 							withOverlay: !0,
-							onConfirm: m,
+							onConfirm: u,
 							onCancel: l,
 							onClose: l,
 							headerText: s.fbt._("Flag Award Usage", null, {
@@ -33876,4 +33876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.24c2a5481bd091bd65d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0f4dd03a562a86bce6ce.js.map

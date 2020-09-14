@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f1a50ad4dffe64005552.js
-// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.7f6478b88982e9a4db17.js
+// Retrieved at 9/14/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -4985,7 +4985,7 @@
 					last: !0
 				})))
 			}
-			var ss = n("./src/reddit/actions/notifications/constants.ts"),
+			var ss = n("./src/lib/notifications/constants.ts"),
 				as = n("./src/reddit/actions/notifications/loader.ts"),
 				os = n("./src/reddit/actions/notifications/preferences.ts"),
 				rs = n("./src/reddit/actions/notifications/state.ts"),
@@ -5068,7 +5068,7 @@
 				fbt: Ps
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ns = Object(c.c)({
 				areNotificationsAvailable: e => {
-					return Object(is.a)(e) === ss.f.NotificationsSupported
+					return Object(is.a)(e) === ss.c.NotificationsSupported
 				},
 				isChrome: ms.e,
 				isFirefox: ms.g,
@@ -6853,4 +6853,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f1a50ad4dffe64005552.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.7f6478b88982e9a4db17.js.map
