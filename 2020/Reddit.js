@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a906e52632068c35d41a.js
-// Retrieved at 9/15/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6cc9616f67812a1d8e64.js
+// Retrieved at 9/15/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -6843,8 +6843,8 @@
 					}), " ", u.a.createElement(Pl.a, {
 						href: "https://redditinc.com/policies/cookies",
 						target: "_blank"
-					}, Sl._("See Our Cookie Policy", null, {
-						hk: "3UNovG"
+					}, Sl._("Learn More", null, {
+						hk: "MNKD5"
 					})), "."), u.a.createElement(kl, {
 						type: "submit"
 					}, Sl._("I Agree", null, {
@@ -13830,4 +13830,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a906e52632068c35d41a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6cc9616f67812a1d8e64.js.map
