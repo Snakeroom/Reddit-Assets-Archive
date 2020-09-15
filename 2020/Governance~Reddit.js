@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.fa39ffa4b7b3e52450e8.js
-// Retrieved at 9/14/2020, 8:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.513b39f2a094168e5c2b.js
+// Retrieved at 9/15/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -26369,9 +26369,13 @@
 		},
 		"./src/reddit/helpers/graphql/normalizePreferencesFromGql/index.ts": function(e, t, s) {
 			"use strict";
-			s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
+			s("./node_modules/core-js/modules/es6.array.sort.js");
 			var n = s("./src/lib/constants/index.ts"),
 				r = s("./src/reddit/models/User/index.ts");
+			s("./node_modules/core-js/modules/es6.regexp.replace.js");
+			var a = function(e) {
+				return e.replace(/(\+\d{2})(\d{2})$/, "$1:$2")
+			};
 			t.a = (e, t) => ({
 				allowClickTracking: e.isClickTrackingEnabled,
 				autoplayVideo: !e.isVideoAutoplayDisabled,
@@ -26387,7 +26391,7 @@
 				showLocationBasedRecommendations: e.isLocationBasedRecommendationEnabled,
 				account: {
 					openPostInNewTab: e.isNewTabOpenedForPostView,
-					rpanDuDismissalTime: e.rpanDuDismissedAt && e.rpanDuDismissedAt.replace(/\+\d+$/, ""),
+					rpanDuDismissalTime: e.rpanDuDismissedAt && a(e.rpanDuDismissedAt),
 					sort: e.globalCommunityPostFeedSort.range ? "".concat(e.globalCommunityPostFeedSort.sort.toLowerCase(), "_").concat(e.globalCommunityPostFeedSort.range.toLowerCase()) : e.globalCommunityPostFeedSort.sort.toLowerCase(),
 					showRpanDu: e.isRpanDuShown,
 					stylesEnabled: e.isCommunityStylingEnabled,
@@ -55919,4 +55923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.fa39ffa4b7b3e52450e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.513b39f2a094168e5c2b.js.map
