@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3995ff14a4e26049215c.js
-// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.3c5bc0b7817822061fec.js
+// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -2892,7 +2892,7 @@
 				powerups: b.f,
 				subreddit: h.S,
 				topSupporters: b.g,
-				userPowerupsData: b.k
+				userPowerupsData: b.l
 			}), ne = Object(m.c)(e => {
 				const {
 					className: t,
@@ -2920,7 +2920,7 @@
 				})), r.a.createElement("button", {
 					className: ee.a.perksButton,
 					onClick: () => {
-						h(Object(c.b)()), b(Object(u.h)(d.a.ECON_POWERUPS_MARKETING))
+						h(Object(c.d)()), b(Object(u.h)(d.a.ECON_POWERUPS_MARKETING))
 					}
 				}, te._("Show Perks", null, {
 					hk: "3TgZRL"
@@ -2942,7 +2942,7 @@
 				}, r.a.createElement(f.f, {
 					className: ee.a.button,
 					onClick: () => {
-						h(Object(c.b)()), b(Object(l.b)())
+						h(Object(c.d)()), b(Object(l.b)())
 					}
 				}, g ? te._("Apply Your Free Powerup", null, {
 					hk: "3HJ66L"
@@ -6126,12 +6126,16 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "c", (function() {
+			s.d(t, "e", (function() {
 				return a
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "d", (function() {
 				return o
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return d
+			})), s.d(t, "b", (function() {
+				return c
+			})), s.d(t, "a", (function() {
+				return l
 			}));
 			var n = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
@@ -6158,7 +6162,21 @@
 				}, i(e)), {
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				d = (e, t) => s => Object.assign({
+				d = () => e => Object.assign(Object.assign({
+					source: "powerups",
+					action: "view",
+					noun: "post_upsell"
+				}, i(e)), {
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				c = () => e => Object.assign(Object.assign({
+					source: "powerups",
+					action: "click",
+					noun: "post_upsell"
+				}, i(e)), {
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				l = (e, t) => s => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step"
@@ -7543,4 +7561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3995ff14a4e26049215c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3c5bc0b7817822061fec.js.map

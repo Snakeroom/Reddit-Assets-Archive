@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5cce1509212df44cb652.js
-// Retrieved at 9/16/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7ebc37f7be9d97e8b3e2.js
+// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1593,11 +1593,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("112410"),
+				buildNumber: r("112468"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1600286011"),
+				})("1600298273"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3356,14 +3356,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("77dc767-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("fb82959-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "77dc767-production",
+						release: "fb82959-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
@@ -3788,7 +3788,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "77dc767-production",
+							releaseClient: "fb82959-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -13115,32 +13115,43 @@
 				return r
 			})), i.d(t, "i", (function() {
 				return s
-			})), i.d(t, "f", (function() {
-				return o
-			})), i.d(t, "g", (function() {
-				return d
-			})), i.d(t, "a", (function() {
-				return l
-			})), i.d(t, "k", (function() {
-				return a
 			})), i.d(t, "j", (function() {
+				return o
+			})), i.d(t, "f", (function() {
+				return d
+			})), i.d(t, "g", (function() {
+				return l
+			})), i.d(t, "a", (function() {
+				return a
+			})), i.d(t, "l", (function() {
 				return u
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "k", (function() {
 				return c
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "d", (function() {
 				return _
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return m
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "b", (function() {
 				return p
+			})), i.d(t, "e", (function() {
+				return h
 			}));
 			var n = i("./src/reddit/models/Gold/Powerups/index.ts");
 			const r = (e, t) => {
 					let {
+						subredditId: i
+					} = t;
+					var n;
+					return (null === (n = d(e, {
+						subredditId: i
+					})) || void 0 === n ? void 0 : n.benefits) || []
+				},
+				s = (e, t) => {
+					let {
 						subredditId: i,
 						benefit: n
 					} = t;
-					const r = o(e, {
+					const r = d(e, {
 						subredditId: i
 					});
 					if (!r) return !1;
@@ -13149,11 +13160,11 @@
 					} = r;
 					return s && s.includes(n)
 				},
-				s = (e, t) => {
+				o = (e, t) => {
 					let {
 						subredditId: i
 					} = t;
-					const r = o(e, {
+					const r = d(e, {
 						subredditId: i
 					});
 					if (!r) return !1;
@@ -13162,34 +13173,34 @@
 					} = r;
 					return s && s.some(e => e === n.a.HdVideo || e === n.a.SdVideo || e === n.a.PostsImageUpload)
 				},
-				o = (e, t) => {
+				d = (e, t) => {
 					let {
 						subredditId: i
 					} = t;
 					return e.subreddits.powerups[i]
 				},
-				d = (e, t) => {
+				l = (e, t) => {
 					let {
 						subredditId: i
 					} = t;
 					return e.subreddits.powerupTopSupporters[i]
 				},
-				l = (e, t) => {
+				a = (e, t) => {
 					let {
 						subredditId: i,
 						userId: n
 					} = t;
-					const r = d(e, {
+					const r = l(e, {
 						subredditId: i
 					});
 					return !!r && r.some(e => !!e.supporterInfo && e.supporterInfo.id === n)
 				},
-				a = e => e.user.powerups.data,
-				u = e => e.user.powerups.allocationByKey,
-				c = e => e.goldPurchase.powerupsPurchaseModal.powerupsCount,
-				_ = e => e.goldPurchase.powerupsPurchaseModal.isAnonymous,
-				m = e => e.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
-				p = e => e.users.powerups.allocationByKey
+				u = e => e.user.powerups.data,
+				c = e => e.user.powerups.allocationByKey,
+				_ = e => e.goldPurchase.powerupsPurchaseModal.powerupsCount,
+				m = e => e.goldPurchase.powerupsPurchaseModal.isAnonymous,
+				p = e => e.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
+				h = e => e.users.powerups.allocationByKey
 		},
 		"./src/reddit/selectors/listings.ts": function(e, t, i) {
 			"use strict";
@@ -14229,7 +14240,7 @@
 					const t = U(e),
 						i = Object(S.f)(e),
 						n = V(e),
-						r = !!i && Object(T.i)(e, {
+						r = !!i && Object(T.j)(e, {
 							subredditId: i.id
 						}),
 						o = !!i && i.isNSFW;
@@ -14241,7 +14252,7 @@
 				},
 				H = Object(r.a)(V, S.f, U, W, e => {
 					const t = Object(S.d)(e);
-					return !!t && Object(T.i)(e, {
+					return !!t && Object(T.j)(e, {
 						subredditId: t
 					})
 				}, (e, t, i, n, r) => {
@@ -22514,4 +22525,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5cce1509212df44cb652.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7ebc37f7be9d97e8b3e2.js.map

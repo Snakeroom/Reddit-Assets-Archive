@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2204e2881a664d832280.js
-// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.613ca2ae62f976bf201e.js
+// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1840,7 +1840,7 @@
 			var R = n("./src/reddit/components/Settings/Powerups/index.m.less"),
 				D = n.n(R);
 			const L = Object(l.c)({
-				allocationByKey: p.j
+				allocationByKey: p.k
 			});
 			var B = Object(i.b)(L)((function(e) {
 					const {
@@ -6867,4 +6867,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2204e2881a664d832280.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.613ca2ae62f976bf201e.js.map

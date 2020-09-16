@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.bf9365e6cbb5d8543ae6.js
-// Retrieved at 9/15/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2069d22556da71119c9c.js
+// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -4946,7 +4946,7 @@
 					onHideTooltip: A,
 					onShowTooltip: D,
 					openPowerupsModal: () => {
-						J(Object(x.c)("comment")), B()
+						J(Object(x.e)("comment")), B()
 					},
 					opTooltipId: F,
 					renderContractorBadge: W,
@@ -31202,4 +31202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bf9365e6cbb5d8543ae6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2069d22556da71119c9c.js.map

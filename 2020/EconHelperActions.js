@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.2adf4497906fd9b401d4.js
-// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.80980facd02f81e2282a.js
+// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -945,17 +945,17 @@
 					return !!r && r.hasGifProduct
 				},
 				T = (e, t, r) => {
-					if (t && Object(p.h)(e, {
+					const s = "replyToPost" !== r && Object(l.n)(e, {
+						commentId: r
+					});
+					if (!!s && Object(c.a)(s)) return !0;
+					if (t && Object(p.i)(e, {
 							subredditId: t,
 							benefit: i.a.CommentsWithGifs
 						})) return !0;
-					const s = n.d.spGiphy(e),
-						o = L(e, t),
-						d = "replyToPost" !== r && Object(l.n)(e, {
-							commentId: r
-						}),
-						a = !!d && Object(c.a)(d);
-					return s && (o || a)
+					const o = n.d.spGiphy(e),
+						d = L(e, t);
+					return o && d
 				},
 				q = (e, t, r) => {
 					if (t) {
@@ -1012,4 +1012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.2adf4497906fd9b401d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.80980facd02f81e2282a.js.map

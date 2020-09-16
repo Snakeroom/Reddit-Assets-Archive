@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.bfd841fab8d0573059c2.js
-// Retrieved at 9/16/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f1df79d6629c14ff401a.js
+// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "77dc767-production"
+					SENTRY_RELEASE_VERSION: "fb82959-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -2417,7 +2417,7 @@
 								const e = await Object(f.a)(c);
 								l.width = e.width, l.height = e.height
 							} else if (a.startsWith("video/")) {
-								const a = !(null == n || !n.id) && Object(S.h)(e, {
+								const a = !(null == n || !n.id) && Object(S.i)(e, {
 										subredditId: n.id,
 										benefit: O.a.HdVideo
 									}),
@@ -11569,7 +11569,7 @@
 						onMouseEnter: ce.show,
 						onMouseLeave: ce.hide,
 						onClick: () => {
-							D(Object(m.c)(L ? "post" : "postlist")), A(Object(h.i)(p.a.ECON_POWERUPS_PURCHASE))
+							D(Object(m.e)(L ? "post" : "postlist")), A(Object(h.i)(p.a.ECON_POWERUPS_PURCHASE))
 						},
 						ref: ce.target.ref
 					}, o.a.createElement(y.a, {
@@ -17880,20 +17880,18 @@
 							let {
 								destSubreddit: n
 							} = t;
-							return !!n && !!n.id && Object(oa.h)(e, {
+							return !!n && !!n.id && Object(oa.i)(e, {
 								subredditId: n.id,
 								benefit: O.a.CommentsWithEmoji
 							})
 						},
 						emotesSpecialMembershipEnabled: C.d.spEmotes,
-						giphyPowerupBenefitEnabledUnlocked: (e, t) => {
+						giphyPowerupBenefitUnlocked: (e, t) => {
 							let {
-								destSubreddit: n
+								destSubreddit: n,
+								userCanUseGifs: s
 							} = t;
-							return !!n && !!n.id && Object(oa.h)(e, {
-								subredditId: n.id,
-								benefit: O.a.CommentsWithGifs
-							})
+							return !!n && !!n.id && !!s
 						},
 						giphySpecialMembershipEnabled: C.d.spGiphy,
 						activeEmotes: (e, t) => !!t.destSubreddit && t.destSubreddit.id && Object(sa.b)(e, t.destSubreddit.id) || void 0
@@ -18379,7 +18377,7 @@
 						emotesPowerupBenefitUnlocked: d,
 						emotesSpecialMembershipEnabled: u,
 						focusableContentRTEClassName: p,
-						giphyPowerupBenefitEnabledUnlocked: h,
+						giphyPowerupBenefitUnlocked: h,
 						giphySpecialMembershipEnabled: b,
 						hideToolbar: f,
 						rteState: g,
@@ -25175,12 +25173,16 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "e", (function() {
 				return i
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return a
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "c", (function() {
 				return c
+			})), n.d(t, "b", (function() {
+				return l
+			})), n.d(t, "a", (function() {
+				return d
 			}));
 			var s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
@@ -25207,7 +25209,21 @@
 				}, r(e)), {
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				c = (e, t) => n => Object.assign({
+				c = () => e => Object.assign(Object.assign({
+					source: "powerups",
+					action: "view",
+					noun: "post_upsell"
+				}, r(e)), {
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				l = () => e => Object.assign(Object.assign({
+					source: "powerups",
+					action: "click",
+					noun: "post_upsell"
+				}, r(e)), {
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				d = (e, t) => n => Object.assign({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step"
@@ -32729,7 +32745,7 @@
 				}, e.children),
 				Vd = Object(i.a)(w.d, w.g, w.p, w.K, w.U, E.q, (e, t) => {
 					const n = Object(E.m)(e, t);
-					return !!n && Object(Id.i)(e, {
+					return !!n && Object(Id.j)(e, {
 						subredditId: n
 					})
 				}, (e, t, n, s, o, r, i) => {
@@ -33529,17 +33545,17 @@
 					return !!n && n.hasGifProduct
 				},
 				B = (e, t, n) => {
-					if (t && Object(h.h)(e, {
+					const o = "replyToPost" !== n && Object(m.n)(e, {
+						commentId: n
+					});
+					if (!!o && Object(r.a)(o)) return !0;
+					if (t && Object(h.i)(e, {
 							subredditId: t,
 							benefit: c.a.CommentsWithGifs
 						})) return !0;
-					const o = s.d.spGiphy(e),
-						i = D(e, t),
-						a = "replyToPost" !== n && Object(m.n)(e, {
-							commentId: n
-						}),
-						l = !!a && Object(r.a)(a);
-					return o && (i || l)
+					const i = s.d.spGiphy(e),
+						a = D(e, t);
+					return i && a
 				},
 				U = (e, t, n) => {
 					if (t) {
@@ -33867,4 +33883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.bfd841fab8d0573059c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f1df79d6629c14ff401a.js.map

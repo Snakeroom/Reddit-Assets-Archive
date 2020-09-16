@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.272be77014b2a10911b1.js
-// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.212fae8a6a43b6abcb26.js
+// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3122,7 +3122,7 @@
 					onHideTooltip: R,
 					onShowTooltip: F,
 					openPowerupsModal: () => {
-						Q(Object(f.c)("comment")), D()
+						Q(Object(f.e)("comment")), D()
 					},
 					opTooltipId: B,
 					renderContractorBadge: U,
@@ -4670,7 +4670,7 @@
 						className: Yt.a.UserIcon
 					})), w && a.a.createElement(Pt.a, {
 						onClick: e => {
-							K(Object(M.c)("comment")), D(), e.stopPropagation(), e.preventDefault()
+							K(Object(M.e)("comment")), D(), e.stopPropagation(), e.preventDefault()
 						},
 						className: Yt.a.topSupporterIcon,
 						title: I.fbt._("Powerups Top Supporter", null, {
@@ -11512,7 +11512,7 @@
 				powerups: b.f,
 				subreddit: h.S,
 				topSupporters: b.g,
-				userPowerupsData: b.k
+				userPowerupsData: b.l
 			}), ne = Object(p.c)(e => {
 				const {
 					className: t,
@@ -11540,7 +11540,7 @@
 				})), o.a.createElement("button", {
 					className: ee.a.perksButton,
 					onClick: () => {
-						h(Object(d.b)()), b(Object(m.h)(c.a.ECON_POWERUPS_MARKETING))
+						h(Object(d.d)()), b(Object(m.h)(c.a.ECON_POWERUPS_MARKETING))
 					}
 				}, te._("Show Perks", null, {
 					hk: "3TgZRL"
@@ -11562,7 +11562,7 @@
 				}, o.a.createElement(v.f, {
 					className: ee.a.button,
 					onClick: () => {
-						h(Object(d.b)()), b(Object(l.b)())
+						h(Object(d.d)()), b(Object(l.b)())
 					}
 				}, x ? te._("Apply Your Free Powerup", null, {
 					hk: "3HJ66L"
@@ -18720,4 +18720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.272be77014b2a10911b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.212fae8a6a43b6abcb26.js.map

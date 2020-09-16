@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.7c0a8830df5842130752.js
-// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.e3683ac4c746dba7f6b9.js
+// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~ModQueuePages"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, o, t) {
@@ -364,7 +364,7 @@
 					onHideTooltip: D,
 					onShowTooltip: H,
 					openPowerupsModal: () => {
-						W(Object(v.c)("comment")), B()
+						W(Object(v.e)("comment")), B()
 					},
 					opTooltipId: P,
 					renderContractorBadge: G,
@@ -880,4 +880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.7c0a8830df5842130752.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~ModQueuePages.e3683ac4c746dba7f6b9.js.map

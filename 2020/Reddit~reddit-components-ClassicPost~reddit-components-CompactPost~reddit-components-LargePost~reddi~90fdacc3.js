@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.e6da71061e83498bec2f.js
-// Retrieved at 9/10/2020, 2:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7b0d03e0f0b6e70a898a.js
+// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -3968,17 +3968,17 @@
 					return !!s && s.hasGifProduct
 				},
 				R = (e, t, s) => {
-					if (t && Object(b.h)(e, {
+					const r = "replyToPost" !== s && Object(p.n)(e, {
+						commentId: s
+					});
+					if (!!r && Object(i.a)(r)) return !0;
+					if (t && Object(b.i)(e, {
 							subredditId: t,
 							benefit: c.a.CommentsWithGifs
 						})) return !0;
-					const r = n.d.spGiphy(e),
-						o = D(e, t),
-						a = "replyToPost" !== s && Object(p.n)(e, {
-							commentId: s
-						}),
-						l = !!a && Object(i.a)(a);
-					return r && (o || l)
+					const o = n.d.spGiphy(e),
+						a = D(e, t);
+					return o && a
 				},
 				W = (e, t, s) => {
 					if (t) {
@@ -4059,4 +4059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.e6da71061e83498bec2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7b0d03e0f0b6e70a898a.js.map
