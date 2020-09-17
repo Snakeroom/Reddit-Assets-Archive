@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a1356392528e5daaba4e.js
-// Retrieved at 9/17/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a8ea2805a1c9015b705b.js
+// Retrieved at 9/17/2020, 7:30:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -818,6 +818,7 @@
 			})), s.d(t, "a", (function() {
 				return v
 			}));
+			s("./node_modules/core-js/modules/es6.regexp.split.js");
 			var n = s("./src/lib/makeActionCreator/index.ts"),
 				r = s("./src/reddit/constants/posts.ts"),
 				a = s("./src/config.ts"),
@@ -854,16 +855,17 @@
 					let {
 						apiContext: a
 					} = n;
-					const i = s(),
-						c = Object(b.q)(i),
-						l = Object(d.b)(i, e),
-						O = l.length;
-					if (0 === O) return;
+					var i;
+					const c = s(),
+						l = Object(b.q)(c),
+						O = Object(d.b)(c, e),
+						g = O.length;
+					if (0 === g) return;
 					switch (e) {
 						case u.a.COMMENTS:
 						case u.a.COMMENTS_OVERLAY: {
-							const e = Object(b.n)(i, {
-								page: i.platform.currentPage
+							const e = Object(b.n)(c, {
+								page: c.platform.currentPage
 							});
 							if (!e || e.belongsTo.type === r.a.PROFILE) return;
 							break
@@ -872,8 +874,8 @@
 						case u.a.MULTIREDDIT:
 						case u.a.SEARCH_RESULTS:
 						case u.a.SUBREDDIT: {
-							const e = i.listings.activeKey,
-								t = Object(p.T)(i, {
+							const e = c.listings.activeKey,
+								t = Object(p.T)(c, {
 									listingKey: e
 								});
 							if (!t || !t.length) return;
@@ -882,33 +884,34 @@
 						default:
 							return void 0
 					}
-					const g = Object(b.e)(i);
-					let f;
-					if ((f = await o({
+					const f = Object(b.e)(c);
+					let _;
+					if ((_ = await o({
 							context: a(),
-							count: O,
-							subreddit: g || void 0,
-							forceAd: c ? c.sidebar_ad : void 0
-						})).body && f.body.length) {
-						const e = f.body,
+							count: g,
+							subreddit: f || void 0,
+							forceAd: null === (i = null == l ? void 0 : l.sidebar_ad) || void 0 === i ? void 0 : i.split(",")
+						})).body && _.body.length) {
+						const e = _.body,
 							s = {};
-						for (let t = 0; t < e.length; t++) s[l[t]] = e[t];
+						for (let t = 0; t < e.length; t++) s[O[t]] = e[t];
 						t(m(s))
-					} else t(j(f.error))
+					} else t(j(_.error))
 				}), I = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
-					const a = s(),
-						i = Object(b.q)(a),
-						c = await o({
+					var a;
+					const i = s(),
+						c = Object(b.q)(i),
+						d = await o({
 							context: r(),
 							count: 1,
-							forceAd: i ? i.sidebar_ad : void 0
+							forceAd: null === (a = null == c ? void 0 : c.sidebar_ad) || void 0 === a ? void 0 : a.split(",")
 						});
-					c.body && c.body.length ? t(_({
-						[e]: c.body[0]
-					})) : t(h(c.error))
+					d.body && d.body.length ? t(_({
+						[e]: d.body[0]
+					})) : t(h(d.error))
 				}, v = e => async (t, s, n) => {
 					let {
 						apiContext: r
@@ -55929,4 +55932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a1356392528e5daaba4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a8ea2805a1c9015b705b.js.map
