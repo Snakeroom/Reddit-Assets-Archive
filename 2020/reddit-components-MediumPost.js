@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.4894c99838dc15bb6cdd.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ced1bddc52f2e9d8dc62.js
+// Retrieved at 9/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -139,8 +139,8 @@
 				T = s("./src/reddit/constants/experiments.ts"),
 				M = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				_ = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				B = s("./src/reddit/helpers/canRenderThumbnail.ts"),
-				F = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
+				F = s("./src/reddit/helpers/canRenderThumbnail.ts"),
+				B = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				L = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				R = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				A = s("./src/reddit/helpers/styles/mixins/index.tsx"),
@@ -238,7 +238,7 @@
 					sendEvent: pe,
 					subredditOrProfile: ue,
 					toggleCheckbox: be
-				} = e, xe = ie ? void 0 : c, he = Object(R.a)(ee), ge = te && he, Pe = Object(F.a)(ee), ye = Object(L.a)(ee), Oe = Object(S.c)(ne), Ce = !!Z && !Object(T.Ec)(Z), Se = Object(B.a)(ne), fe = M && !me && !Ce, ve = fe && !!ne.source && !r, Ee = !(V && z || q) && !D && (!M || Ce), ke = (!M || Ce) && !ne.isSponsored, je = Object(d.s)(ne, H), {
+				} = e, xe = ie ? void 0 : c, he = Object(R.a)(ee), ge = te && he, Pe = Object(B.a)(ee), ye = Object(L.a)(ee), Oe = Object(S.c)(ne), Ce = !!Z && !Object(T.Fc)(Z), Se = Object(F.a)(ne), fe = M && !me && !Ce, ve = fe && !!ne.source && !r, Ee = !(V && z || q) && !D && (!M || Ce), ke = (!M || Ce) && !ne.isSponsored, je = Object(d.s)(ne, H), {
 					source: Ie
 				} = je, we = o.a.createElement(v.a, {
 					className: Object(a.a)(Y.a.container, s, Q.a.largeAndMediumPostStyles, Q.a.largeAndMediumActiveStyles, Object(A.a)(e), {
@@ -532,24 +532,24 @@
 					post: T,
 					shouldShowSubscribeButton: M,
 					showCornerOutboundLink: _,
-					showSubreddit: B,
-					showSubredditIcon: F,
+					showSubreddit: F,
+					showSubredditIcon: B,
 					subredditOrProfile: L
 				} = e, R = r || w;
 				return o.a.createElement(C, {
 					className: t
-				}, B && L && o.a.createElement("div", {
+				}, F && L && o.a.createElement("div", {
 					className: O.a.subredditIconWrapper
 				}, o.a.createElement(m.a, {
 					"data-click-id": "subreddit",
 					to: L.url
-				}, F && o.a.createElement(l.b, {
+				}, B && o.a.createElement(l.b, {
 					className: Object(n.a)(O.a.subredditIcon, f),
 					shouldHideNsfwIcon: y,
 					subredditOrProfile: L
 				}))), o.a.createElement("div", {
 					className: O.a.everythingElseWrapper
-				}, B && o.a.createElement(d.h, {
+				}, F && o.a.createElement(d.h, {
 					type: T.belongsTo.type,
 					id: T.belongsTo.id
 				}), o.a.createElement(c.d, {
@@ -557,7 +557,7 @@
 					flairStyleTemplate: s,
 					tooltipType: I ? c.c.Lightbox : void 0,
 					post: T,
-					showSub: B,
+					showSub: F,
 					subredditOrProfile: L
 				}), o.a.createElement(a.a, {
 					className: O.a.postBadges,
@@ -570,7 +570,7 @@
 					isPostDetail: E,
 					thing: T,
 					tooltipType: I ? c.c.Lightbox : void 0
-				})), L && B && M && !j && o.a.createElement(p.a, {
+				})), L && F && M && !j && o.a.createElement(p.a, {
 					getEventFactory: e => Object(x.f)(T.id, e ? "unsubscribe" : "subscribe", "post", N, S),
 					identifier: {
 						name: L.name,
@@ -677,9 +677,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: r.W
 				});
-				return !(!t || Object(r.Ec)(t))
+				return !(!t || Object(r.Fc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.4894c99838dc15bb6cdd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ced1bddc52f2e9d8dc62.js.map

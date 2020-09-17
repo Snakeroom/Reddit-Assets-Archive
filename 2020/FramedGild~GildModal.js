@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e226d204b3fc68abbada.js
-// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8ea883894c92f0598941.js
+// Retrieved at 9/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -897,7 +897,7 @@
 						});
 						if (!s) return {};
 						const a = !!s.media && "rpan" === s.media.type,
-							n = a && Object(N.e)(e, t.thingId, S.l);
+							n = a && Object(N.f)(e, t.thingId, S.l);
 						return {
 							post: Object.assign(Object.assign({}, s), {
 								isRPANBroadcast: a,
@@ -1418,7 +1418,7 @@
 						let {
 							thingId: s
 						} = t;
-						return Object(N.e)(e, s, S.l)
+						return Object(N.f)(e, s, S.l)
 					}
 				}), e => {
 					const {
@@ -1815,27 +1815,27 @@
 				return C
 			})), s.d(t, "n", (function() {
 				return y
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "i", (function() {
 				return k
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return B
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "h", (function() {
 				return L
 			})), s.d(t, "k", (function() {
 				return G
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "c", (function() {
 				return D
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "f", (function() {
 				return R
 			})), s.d(t, "a", (function() {
 				return W
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "j", (function() {
 				return z
 			})), s.d(t, "b", (function() {
 				return U
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "e", (function() {
 				return q
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "g", (function() {
 				return H
 			}));
 			s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -1899,7 +1899,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => p(t.listingName)(e, t), I, g, c.h, d.c, (e, t, s, a, n, c) => {
+				}, (e, t) => p(t.listingName)(e, t), I, g, c.h, d.d, (e, t, s, a, n, c) => {
 					if (c) {
 						const r = [];
 						if (e) {
@@ -2007,12 +2007,7 @@
 				G = Object(n.a)(Object(a.a)(T, I, (e, t) => e ? t[e] : void 0)),
 				D = (Object(n.a)(Object(a.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, I, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
-				})))), Object(a.a)((e, t) => {
-					let {
-						streamId: s
-					} = t;
-					return s
-				}, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => t[e])),
+				})))), Object(a.a)(S, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				R = Object(a.a)((e, t) => {
 					let {
 						streamIdFromPath: s
@@ -2070,4 +2065,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e226d204b3fc68abbada.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8ea883894c92f0598941.js.map

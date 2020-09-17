@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.fe5b6dd86f93dc901e2d.js
-// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c847b2a7e31a5352dab3.js
+// Retrieved at 9/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -2919,94 +2919,97 @@
 		"./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return k
+				return A
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				a = n("./src/lib/LRUCache/index.ts"),
 				i = n("./src/higherOrderComponents/makeAsync.tsx"),
-				o = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				d = n("./src/reddit/components/CompactPost/Placeholder/index.tsx"),
-				l = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				u = n("./src/reddit/constants/postLayout.ts"),
-				m = n("./src/reddit/helpers/styles/mixins/index.m.less"),
-				p = n.n(m),
-				b = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				h = n.n(b);
+				o = n("./node_modules/react-redux/es/index.js"),
+				c = n("./src/lib/classNames/index.ts"),
+				d = n("./src/reddit/components/ClassicPost/Placeholder.tsx"),
+				l = n("./src/reddit/components/CompactPost/Placeholder/index.tsx"),
+				u = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				m = n("./src/reddit/constants/postLayout.ts"),
+				p = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				b = n("./src/reddit/helpers/styles/mixins/index.m.less"),
+				h = n.n(b),
+				g = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				x = n.n(g);
 			const {
-				fbt: g
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), x = e => {
+				fbt: f
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = e => {
 				let {
 					className: t
 				} = e;
+				const n = Object(o.d)(p.b) ? x.a.loading : x.a.noise;
 				return r.a.createElement("div", {
-					className: Object(o.a)(t, h.a.container, h.a.placeholder, h.a.large, p.a.largeAndMediumPostStyles)
-				}, r.a.createElement(l.a, {
-					className: h.a.backgroundWrapper
+					className: Object(c.a)(t, x.a.container, x.a.placeholder, x.a.large, h.a.largeAndMediumPostStyles)
+				}, r.a.createElement(u.a, {
+					className: x.a.backgroundWrapper
 				}, r.a.createElement("div", {
-					className: h.a.titleAndDescriptionContainer
+					className: x.a.titleAndDescriptionContainer
 				}, r.a.createElement("h3", {
-					className: h.a.title
-				}, g._("Top broadcast", null, {
+					className: x.a.title
+				}, f._("Top broadcast", null, {
 					hk: "HADCh"
 				}))), r.a.createElement("div", {
-					className: h.a.body
+					className: x.a.body
 				}, r.a.createElement("div", {
-					className: h.a.previewContainer
+					className: x.a.previewContainer
 				}, r.a.createElement("div", {
-					className: Object(o.a)(h.a.thumbnail, h.a.noise)
+					className: Object(c.a)(x.a.thumbnail, n)
 				})))))
 			};
-			var f = e => {
+			var v = e => {
 				let {
 					className: t,
 					layout: n
 				} = e;
-				return n === u.g.Classic ? r.a.createElement(c.b, {
-					className: Object(o.a)(t, h.a.classicPostPlaceholder),
+				return n === m.g.Classic ? r.a.createElement(d.b, {
+					className: Object(c.a)(t, x.a.classicPostPlaceholder),
 					isLoading: !0
-				}) : n === u.g.Compact ? r.a.createElement(d.a, {
-					className: Object(o.a)(t, h.a.compactPostPlaceholder),
+				}) : n === m.g.Compact ? r.a.createElement(l.a, {
+					className: Object(c.a)(t, x.a.compactPostPlaceholder),
 					isLoading: !0
-				}) : r.a.createElement(x, {
+				}) : r.a.createElement(y, {
 					className: t
 				})
 			};
-			const y = Object(i.a)({
+			const E = Object(i.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: e => {
 					let {
 						className: t,
 						layout: n
 					} = e;
-					return r.a.createElement(f, {
+					return r.a.createElement(v, {
 						className: t,
 						layout: n
 					})
 				},
 				getComponent: () => Promise.all([n.e("vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"), n.e("ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49"), n.e("RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093"), n.e("RpanListingUnit")]).then(n.bind(null, "./src/reddit/components/PublicAccessNetwork/ListingUnit/index.tsx")).then(e => e.default)
 			});
-			var v = e => r.a.createElement(y, e),
-				E = n("./src/reddit/helpers/trackers/rpan.ts");
-			const O = e => e === u.g.Classic ? 88 : e === u.g.Compact ? 42 : 340,
-				C = new a.a(20),
-				k = e => {
+			var O = e => r.a.createElement(E, e),
+				C = n("./src/reddit/helpers/trackers/rpan.ts");
+			const k = e => e === m.g.Classic ? 88 : e === m.g.Compact ? 42 : 340,
+				j = new a.a(20),
+				A = e => {
 					const t = "rpan-".concat(e.layout, "-").concat(e.listingKey),
-						n = C.get(t);
+						n = j.get(t);
 					if (n) return n;
-					const s = j(e.desiredIndex, e.children),
+					const s = S(e.desiredIndex, e.children),
 						a = {
 							child: {
 								id: t,
-								estHeight: O(e.layout),
-								trackOnEnteredViewport: () => e.sendEvent(Object(E.x)()),
+								estHeight: k(e.layout),
+								trackOnEnteredViewport: () => e.sendEvent(Object(C.x)()),
 								render: t => {
 									let {
 										className: n
 									} = t;
-									return r.a.createElement(v, {
+									return r.a.createElement(O, {
 										className: n,
 										layout: e.layout,
 										listingName: e.listingName
@@ -3015,9 +3018,9 @@
 							},
 							idx: s
 						};
-					return C.set(t, a), a
+					return j.set(t, a), a
 				},
-				j = (e, t) => {
+				S = (e, t) => {
 					const n = new Set(Object.keys(t).map(e => parseInt(e, 10)));
 					for (; n.has(e);) e++;
 					return e
@@ -3048,6 +3051,7 @@
 				placeholder: "_3XAxDMGyfQtOCP0nwHqdLt",
 				gradientAnimation: "_3Jz-b55_o5VWDQ42wh1-rr",
 				glimmer: "_1HSyAH-KtED8iH51buUWfa",
+				loading: "_3Hsr_kP1TY2ld8xQG-XqAL",
 				noise: "_4AhQxTHsKbDr8Z4UeVFvR",
 				infoContainer: "_2aNPePbQCJ2-xyqF693-oh",
 				watchingCount: "VT9OiuLNsb6RZcYm86q9G",
@@ -7524,7 +7528,7 @@
 							r = o.subreddit(e);
 						if (t.post.authorInfo && s && (s.authorId = t.post.authorInfo.id), n) {
 							n.streamPublicId = t.stream.stream_id, n.id = t.stream.stream_id;
-							const s = Object(i.i)(e, {
+							const s = Object(i.j)(e, {
 								streamIdFromPath: t.post.id
 							});
 							s === i.a.LIVE ? n.type = "stream_live" : s === i.a.VOD ? n.type = "stream_vod" : s === i.a.UNAVAILABLE && (n.type = "stream_unavailable")
@@ -7541,7 +7545,7 @@
 				},
 				d = (e, t, n) => {
 					if (!t || !n) return;
-					const s = Object(i.i)(e, {
+					const s = Object(i.j)(e, {
 							streamIdFromPath: t.post.id
 						}),
 						a = t.chat_disabled || n.chatState === r.f.None;
@@ -7669,7 +7673,7 @@
 				}, c(t, e)),
 				S = e => e => {
 					const t = c(e);
-					return !Object(a.h)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
+					return !Object(a.i)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
 						source: "post",
 						action: "consume",
 						noun: "post",
@@ -9497,7 +9501,7 @@
 				o = n("./src/reddit/selectors/user.ts"),
 				c = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				d = n("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const l = Object(s.a)(c.a, c.c, (e, t) => {
+			const l = Object(s.a)(c.a, c.d, (e, t) => {
 					let {
 						listingName: n
 					} = t;
@@ -9533,7 +9537,7 @@
 					if (!i.global.viewer_enabled) return !1;
 					return [a.R, "r/popular"].indexOf(s) > -1
 				}),
-				u = Object(s.a)(c.c, (e, t) => {
+				u = Object(s.a)(c.d, (e, t) => {
 					let {
 						listingName: n
 					} = t;
@@ -9561,27 +9565,27 @@
 				return S
 			})), n.d(t, "n", (function() {
 				return w
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return P
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return L
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return F
 			})), n.d(t, "k", (function() {
 				return M
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "c", (function() {
 				return R
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return D
 			})), n.d(t, "a", (function() {
 				return H
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return V
 			})), n.d(t, "b", (function() {
 				return K
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return q
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return G
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -9645,7 +9649,7 @@
 						streamIdFromPath: n
 					} = t;
 					return n
-				}, (e, t) => p(t.listingName)(e, t), C, g, c.h, d.c, (e, t, n, s, r, c) => {
+				}, (e, t) => p(t.listingName)(e, t), C, g, c.h, d.d, (e, t, n, s, r, c) => {
 					if (c) {
 						const a = [];
 						if (e) {
@@ -9753,12 +9757,7 @@
 				M = Object(r.a)(Object(s.a)(B, C, (e, t) => e ? t[e] : void 0)),
 				R = (Object(r.a)(Object(s.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, C, (e, t) => Object.keys(e).filter(e => !!t[e]).map(n => Object.assign(Object.assign({}, t[n]), {
 					preloadedPreviewUrl: e[n]
-				})))), Object(s.a)((e, t) => {
-					let {
-						streamId: n
-					} = t;
-					return n
-				}, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => t[e])),
+				})))), Object(s.a)(I, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				D = Object(s.a)((e, t) => {
 					let {
 						streamIdFromPath: n
@@ -9849,11 +9848,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.lc.Enabled === Object(r.c)(e, {
+			const a = e => s.mc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.fc
+				experimentName: s.gc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fe5b6dd86f93dc901e2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c847b2a7e31a5352dab3.js.map

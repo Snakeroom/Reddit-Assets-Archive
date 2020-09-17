@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.84b4e9c7fb2ade881cdd.js
-// Retrieved at 9/9/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.46f357904cbf3f124c96.js
+// Retrieved at 9/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -1174,7 +1174,7 @@
 							a = i.subreddit(e);
 						if (t.post.authorInfo && n && (n.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
-							const n = Object(o.i)(e, {
+							const n = Object(o.j)(e, {
 								streamIdFromPath: t.post.id
 							});
 							n === o.a.LIVE ? s.type = "stream_live" : n === o.a.VOD ? s.type = "stream_vod" : n === o.a.UNAVAILABLE && (s.type = "stream_unavailable")
@@ -1191,7 +1191,7 @@
 				},
 				d = (e, t, s) => {
 					if (!t || !s) return;
-					const n = Object(o.i)(e, {
+					const n = Object(o.j)(e, {
 							streamIdFromPath: t.post.id
 						}),
 						r = t.chat_disabled || s.chatState === a.f.None;
@@ -1319,7 +1319,7 @@
 				}, c(t, e)),
 				w = e => e => {
 					const t = c(e);
-					return !Object(r.h)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
+					return !Object(r.i)(e) && t.subreddit && (t.subreddit.id = void 0), Object.assign({
 						source: "post",
 						action: "consume",
 						noun: "post",
@@ -1420,27 +1420,27 @@
 				return w
 			})), s.d(t, "n", (function() {
 				return k
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "i", (function() {
 				return S
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return R
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "h", (function() {
 				return D
 			})), s.d(t, "k", (function() {
 				return M
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "c", (function() {
 				return P
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "f", (function() {
 				return B
 			})), s.d(t, "a", (function() {
 				return K
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "j", (function() {
 				return q
 			})), s.d(t, "b", (function() {
 				return G
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "e", (function() {
 				return W
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "g", (function() {
 				return H
 			}));
 			s("./node_modules/core-js/modules/es6.array.sort.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -1504,7 +1504,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => h(t.listingName)(e, t), O, _, c.h, d.c, (e, t, s, n, a, c) => {
+				}, (e, t) => h(t.listingName)(e, t), O, _, c.h, d.d, (e, t, s, n, a, c) => {
 					if (c) {
 						const r = [];
 						if (e) {
@@ -1612,12 +1612,7 @@
 				M = Object(a.a)(Object(n.a)(F, O, (e, t) => e ? t[e] : void 0)),
 				P = (Object(a.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, O, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
-				})))), Object(n.a)((e, t) => {
-					let {
-						streamId: s
-					} = t;
-					return s
-				}, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => t[e])),
+				})))), Object(n.a)(L, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				B = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
@@ -1675,4 +1670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.84b4e9c7fb2ade881cdd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.46f357904cbf3f124c96.js.map

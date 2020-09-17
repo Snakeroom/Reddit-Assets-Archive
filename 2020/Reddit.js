@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e0fe3bf9d01951a7aa66.js
-// Retrieved at 9/15/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.08ca2633458a7e1baea5.js
+// Retrieved at 9/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4930,9 +4930,9 @@
 				Co = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				Oo = s("./src/reddit/selectors/experiments/trending.ts"),
 				yo = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const xo = e => Object(Kt.E)(e) || vs.uc.Treatment1 === Object(yo.c)(e, {
+			const xo = e => Object(Kt.E)(e) || vs.vc.Treatment1 === Object(yo.c)(e, {
 				experimentEligibilitySelector: yo.a,
-				experimentName: vs.rc
+				experimentName: vs.sc
 			});
 			var Po = s("./src/reddit/selectors/searchResults.ts"),
 				Eo = s("./src/reddit/selectors/tooltip.ts"),
@@ -13668,11 +13668,11 @@
 				b = e => e.accountManagerModalData.redirectUrl,
 				g = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, h, c.a, p.a, d.b, e => Object(l.c)(e, {
 					experimentEligibilitySelector: m,
-					experimentName: i.gc
+					experimentName: i.hc
 				}), (e, t, s, a, c, d, l) => {
 					let u = "".concat(n.a.accountManagerOrigin).concat(e);
 					return l && (u = Object(r.a)(u, {
-						["experiment_".concat(i.gc)]: l
+						["experiment_".concat(i.hc)]: l
 					})), e === o.c.GoogleOneTap ? Object(r.a)(u, {
 						[i.I]: d
 					}) : (a && (u = Object(r.a)(u, {
@@ -13708,9 +13708,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.tc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.uc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.qc
+				experimentName: n.rc
 			}))
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, s) {
@@ -13846,4 +13846,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e0fe3bf9d01951a7aa66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.08ca2633458a7e1baea5.js.map
