@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c847b2a7e31a5352dab3.js
-// Retrieved at 9/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.352230d4986b6cb56bab.js
+// Retrieved at 9/17/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -9357,7 +9357,7 @@
 									subredditId: C.id
 								})
 							}
-						}), C && o === re.g.Large && Math.random() > .5 && s && (Ce[2] = {
+						}), C && o === re.g.Large && s && (Ce[2] = {
 							estHeight: 476,
 							id: "powerups-perks-".concat(o, "-").concat(c),
 							render(e) {
@@ -9855,4 +9855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c847b2a7e31a5352dab3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.352230d4986b6cb56bab.js.map
