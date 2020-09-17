@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315.e9fcdcff3bd3c05b0eaa.js
-// Retrieved at 9/9/2020, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315.538d71d89f719df3636a.js
+// Retrieved at 9/17/2020, 12:50:34 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315"], {
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, i) {
@@ -387,11 +387,11 @@
 						if (e.rectangle && !this.measurementsInvalid) return e.rectangle;
 						if (void 0 === this.parentOffsetTop) {
 							const e = t.offsetParent;
-							this.parentOffsetTop = e.offsetTop;
-							const i = e.getBoundingClientRect().top;
+							this.parentOffsetTop = (null == e ? void 0 : e.offsetTop) || 0;
+							const i = (null == e ? void 0 : e.getBoundingClientRect().top) || 0;
 							this.distanceToTop = i + this.getScrollTop()
 						}
-						const i = t.offsetTop + (this.parentOffsetTop || 0),
+						const i = t.offsetTop + this.parentOffsetTop,
 							s = t.clientHeight,
 							n = "".concat(t.scrollHeight, "px"),
 							l = new P({
@@ -809,4 +809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315.e9fcdcff3bd3c05b0eaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315.538d71d89f719df3636a.js.map

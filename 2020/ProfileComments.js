@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.dceb79f7477d815b2e34.js
-// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.a1ef84098008620ee42b.js
+// Retrieved at 9/17/2020, 12:50:34 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -1923,7 +1923,6 @@
 						ref: e => this.commentElement = e
 					}, e(b.a.rtjCollapsed))), o.a.createElement("a", {
 						className: b.a.seeMore,
-						href: "javascript: void 0;",
 						onClick: this.onShowMore
 					}, h._("see more", null, {
 						hk: "1Cx4qU"
@@ -1936,8 +1935,9 @@
 					e && window && window.removeEventListener("resize", this.handleResize)
 				}
 				componentDidMount() {
+					var e, t;
 					if (this.state.expandToggled) return null;
-					this.commentElement && !this.commentElement.innerText.trim().includes("\n") && (window.addEventListener("resize", this.handleResize), this.handleResize())
+					!(null === (t = null === (e = this.commentElement) || void 0 === e ? void 0 : e.textContent) || void 0 === t ? void 0 : t.trim().includes("\n")) && (window.addEventListener("resize", this.handleResize), this.handleResize())
 				}
 				componentWillUnmount() {
 					window && window.removeEventListener("resize", this.handleResize)
@@ -13408,4 +13408,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.dceb79f7477d815b2e34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.a1ef84098008620ee42b.js.map

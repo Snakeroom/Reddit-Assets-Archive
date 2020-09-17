@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f1df79d6629c14ff401a.js
-// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d0d6e900e5310b05aaed.js
+// Retrieved at 9/17/2020, 12:50:34 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "fb82959-production"
+					SENTRY_RELEASE_VERSION: "947c6aa-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -11147,35 +11147,37 @@
 						nowrap: o,
 						children: i,
 						className: a,
-						redditStyle: c
-					} = e, l = V(e, ["size", "titleColor", "titleType", "nowrap", "children", "className", "redditStyle"]);
-					let u = "";
+						redditStyle: c,
+						theme: l
+					} = e, u = V(e, ["size", "titleColor", "titleType", "nowrap", "children", "className", "redditStyle", "theme"]);
+					let p = "";
 					switch (t) {
 						case H.ExtraLarge:
-							u = B.a.ExtraLarge;
+							p = B.a.ExtraLarge;
 							break;
 						case H.Large:
-							u = B.a.Large;
+							p = B.a.Large;
 							break;
 						case H.Medium:
-							u = B.a.Medium;
+							p = B.a.Medium;
 							break;
 						case H.Small:
-							u = B.a.Small;
+							p = B.a.Small;
 							break;
 						case H.ExtraSmall:
-							u = B.a.ExtraSmall
+							p = B.a.ExtraSmall
 					}
 					return r.a.createElement("div", K({
-						className: Object(d.a)(a, u, {
+						className: Object(d.a)(a, p, {
 							[B.a.isNoWrap]: o
 						}),
 						style: {
 							"--posttitletextcolor": n || Object(j.a)(Object.assign({
-								redditStyle: c
-							}, l)).titleText
+								redditStyle: c,
+								theme: l
+							}, u)).titleText
 						}
-					}, l), s ? r.a.createElement(R.b, {
+					}, u), s ? r.a.createElement(R.b, {
 						type: s
 					}, i) : i)
 				}), "Title", B.a),
@@ -22318,7 +22320,7 @@
 						source: l,
 						userId: d
 					} = e;
-					let u = o()(e, ["allowClickTracking", "basePixelMetadata", "isSponsored", "postId", "source", "userId"]);
+					let u = o()(e, ["allowClickTracking", "basePixelMetadata", "fireAdPixelsOfType", "isSponsored", "postId", "source", "userId"]);
 					const p = l && l.outboundUrl && r ? l.outboundUrl : s;
 					return u = Object.assign(Object.assign({}, u), {
 						href: p,
@@ -33883,4 +33885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f1df79d6629c14ff401a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d0d6e900e5310b05aaed.js.map

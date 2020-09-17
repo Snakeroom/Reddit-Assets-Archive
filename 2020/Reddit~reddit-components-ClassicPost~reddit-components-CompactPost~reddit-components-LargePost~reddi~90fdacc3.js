@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7b0d03e0f0b6e70a898a.js
-// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.b8180ca57347be887b36.js
+// Retrieved at 9/17/2020, 12:50:34 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -1945,35 +1945,37 @@
 						nowrap: r,
 						children: o,
 						className: a,
-						redditStyle: c
-					} = e, l = z(e, ["size", "titleColor", "titleType", "nowrap", "children", "className", "redditStyle"]);
-					let u = "";
+						redditStyle: c,
+						theme: l
+					} = e, u = z(e, ["size", "titleColor", "titleType", "nowrap", "children", "className", "redditStyle", "theme"]);
+					let m = "";
 					switch (t) {
 						case H.ExtraLarge:
-							u = R.a.ExtraLarge;
+							m = R.a.ExtraLarge;
 							break;
 						case H.Large:
-							u = R.a.Large;
+							m = R.a.Large;
 							break;
 						case H.Medium:
-							u = R.a.Medium;
+							m = R.a.Medium;
 							break;
 						case H.Small:
-							u = R.a.Small;
+							m = R.a.Small;
 							break;
 						case H.ExtraSmall:
-							u = R.a.ExtraSmall
+							m = R.a.ExtraSmall
 					}
 					return i.a.createElement("div", B({
-						className: Object(d.a)(a, u, {
+						className: Object(d.a)(a, m, {
 							[R.a.isNoWrap]: r
 						}),
 						style: {
 							"--posttitletextcolor": s || Object(w.a)(Object.assign({
-								redditStyle: c
-							}, l)).titleText
+								redditStyle: c,
+								theme: l
+							}, u)).titleText
 						}
-					}, l), n ? i.a.createElement(L.b, {
+					}, u), n ? i.a.createElement(L.b, {
 						type: n
 					}, o) : o)
 				}), "Title", R.a),
@@ -4059,4 +4061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7b0d03e0f0b6e70a898a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.b8180ca57347be887b36.js.map

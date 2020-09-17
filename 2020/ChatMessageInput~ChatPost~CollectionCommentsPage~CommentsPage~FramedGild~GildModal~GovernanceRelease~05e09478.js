@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.59a94fbc2bd5e1098b0f.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.d47d08d611d332dcc541.js
+// Retrieved at 9/17/2020, 12:50:34 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -840,13 +840,15 @@
 			const E = g.a.div("Container", x.a),
 				j = Object(c.a)(e => {
 					var {
-						flairStyleTemplate: t
-					} = e, s = y(e, ["flairStyleTemplate"]);
-					return i.a.createElement(E, O({}, s, {
+						flairStyleTemplate: t,
+						theme: s
+					} = e, n = y(e, ["flairStyleTemplate", "theme"]);
+					return i.a.createElement(E, O({}, n, {
 						style: {
 							color: Object(p.a)(Object(u.a)(Object.assign({
-								flairStyleTemplate: t
-							}, s)))
+								flairStyleTemplate: t,
+								theme: s
+							}, n)))
 						}
 					}))
 				}),
@@ -1828,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.59a94fbc2bd5e1098b0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.d47d08d611d332dcc541.js.map
