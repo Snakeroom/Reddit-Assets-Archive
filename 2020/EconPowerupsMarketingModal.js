@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0397f239c14e11ab0860.js
-// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8eeb97ef501830abe74e.js
+// Retrieved at 9/21/2020, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/PowerupsMarketingModal/BenefitStep/index.m.less": function(e, t, a) {
@@ -282,7 +282,7 @@
 						style: {
 							background: T[X.Intro]
 						}
-					}), t.map((e, t) => v.e[e] && n.a.createElement("div", {
+					}), t.map((e, t) => v.d[e] && n.a.createElement("div", {
 						className: Object(m.a)(U.a.background, {
 							[U.a.visible]: r === t + 1
 						}),
@@ -305,16 +305,16 @@
 						})
 					}, n.a.createElement(B, {
 						className: U.a.introStep
-					})), t.map((e, t) => v.e[e] && n.a.createElement("div", {
+					})), t.map((e, t) => v.d[e] && n.a.createElement("div", {
 						className: Object(m.a)(U.a.slide, U.a.slideBenefit, {
 							[U.a.visible]: r === t + 1
 						}),
 						key: "slide_".concat(e)
 					}, n.a.createElement(x, {
 						className: U.a.benefitStep,
-						description: v.d[e](),
+						description: v.c[e](),
 						iconUrl: "".concat(k.a.assetPath, "/img/powerups/").concat(e, ".svg"),
-						title: v.e[e]()
+						title: v.d[e]()
 					}))), n.a.createElement("div", {
 						className: Object(m.a)(U.a.slide, U.a.slideOutro, {
 							[U.a.visible]: r === l - 1
@@ -402,4 +402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0397f239c14e11ab0860.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8eeb97ef501830abe74e.js.map

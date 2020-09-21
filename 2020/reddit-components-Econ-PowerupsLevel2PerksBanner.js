@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.dc0c7ea0c4c7339d6b2c.js
-// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.a3c50bd4c0b2430e1631.js
+// Retrieved at 9/21/2020, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/PowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -183,7 +183,7 @@
 						style: {
 							background: D[A.Intro]
 						}
-					}), t.map((e, t) => k.e[e] && n.a.createElement("div", {
+					}), t.map((e, t) => k.d[e] && n.a.createElement("div", {
 						className: Object(i.a)(B.a.background, {
 							[B.a.visible]: d === t + 1
 						}),
@@ -210,14 +210,14 @@
 							hk: "UpSK1"
 						}),
 						isUnlocked: b
-					})), t.map((e, t) => k.e[e] && n.a.createElement("div", {
+					})), t.map((e, t) => k.d[e] && n.a.createElement("div", {
 						className: Object(i.a)(B.a.slide, {
 							[B.a.visible]: d === t + 1
 						}),
 						key: "slide_".concat(e)
 					}, n.a.createElement(h, {
 						iconUrl: "".concat(v.a.assetPath, "/img/powerups/").concat(e, ".svg"),
-						title: k.e[e](),
+						title: k.d[e](),
 						isUnlocked: l.includes(e)
 					}))), n.a.createElement("div", {
 						className: Object(i.a)(B.a.slide, {
@@ -291,4 +291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.dc0c7ea0c4c7339d6b2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.a3c50bd4c0b2430e1631.js.map
