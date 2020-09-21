@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7ef3aa841f806f735943.js
-// Retrieved at 9/21/2020, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.22bd2f378531af2739d1.js
+// Retrieved at 9/21/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -11399,8 +11399,11 @@
 					} = e, {
 						score: n,
 						supporterInfo: r
-					} = s, i = r ? r.name : T.fbt._("Anonymous", null, {
-						hk: "1Q4Y6O"
+					} = s, i = r ? r.name : T.fbt._({
+						"*": "Anonymous Heroes",
+						_1: "Anonymous Hero"
+					}, [T.fbt._plural(n)], {
+						hk: "8kyEI"
 					}).toString(), a = r && r.icon.url ? r.icon.url : void 0, c = !!r && r.profile.isNsfw, d = n === N.b ? M.a : O.a, l = o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: F.a.userIconContainer
 					}, o.a.createElement(A.a, {
@@ -11555,7 +11558,7 @@
 				}), !!(null == p ? void 0 : p.length) && o.a.createElement(Y, {
 					supporters: p,
 					className: $.a.heroes,
-					maxSupporters: 10
+					maxSupporters: 50
 				})), o.a.createElement("div", {
 					className: $.a.group
 				}, o.a.createElement(v.f, {
@@ -18689,4 +18692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7ef3aa841f806f735943.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.22bd2f378531af2739d1.js.map

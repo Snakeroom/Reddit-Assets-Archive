@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.7b470545686f56de7fb1.js
-// Retrieved at 9/21/2020, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.54e7072cd5141d94f523.js
+// Retrieved at 9/21/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -2779,8 +2779,11 @@
 					} = e, {
 						score: n,
 						supporterInfo: i
-					} = s, a = i ? i.name : P.fbt._("Anonymous", null, {
-						hk: "1Q4Y6O"
+					} = s, a = i ? i.name : P.fbt._({
+						"*": "Anonymous Heroes",
+						_1: "Anonymous Hero"
+					}, [P.fbt._plural(n)], {
+						hk: "8kyEI"
 					}).toString(), o = i && i.icon.url ? i.icon.url : void 0, d = !!i && i.profile.isNsfw, c = n === T.b ? B.a : y.a, l = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: W.a.userIconContainer
 					}, r.a.createElement(R.a, {
@@ -2935,7 +2938,7 @@
 				}), !!(null == m ? void 0 : m.length) && r.a.createElement(Q, {
 					supporters: m,
 					className: $.a.heroes,
-					maxSupporters: 10
+					maxSupporters: 50
 				})), r.a.createElement("div", {
 					className: $.a.group
 				}, r.a.createElement(f.f, {
@@ -7530,4 +7533,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7b470545686f56de7fb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.54e7072cd5141d94f523.js.map

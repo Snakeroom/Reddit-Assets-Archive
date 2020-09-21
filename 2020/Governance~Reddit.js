@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.eaab7a081231bb215cac.js
-// Retrieved at 9/21/2020, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.722ea75cd754624623cf.js
+// Retrieved at 9/21/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -49175,7 +49175,7 @@
 				}
 			};
 			const CT = {},
-				AT = (e, t) => 1e15 * t.score + new Date(t.lastSupportedAt).valueOf() - 1e15 * e.score - new Date(e.lastSupportedAt).valueOf();
+				AT = (e, t) => t.supporterInfo && e.supporterInfo ? 1e15 * t.score + new Date(t.lastSupportedAt).valueOf() - 1e15 * e.score - new Date(e.lastSupportedAt).valueOf() : t.supporterInfo ? 1 : e.supporterInfo ? -1 : 0;
 			var DT = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : CT,
 						t = arguments.length > 1 ? arguments[1] : void 0;
@@ -55932,4 +55932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.eaab7a081231bb215cac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.722ea75cd754624623cf.js.map
