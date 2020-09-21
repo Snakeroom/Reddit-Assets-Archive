@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c15e1a08b87022ab5542.js
-// Retrieved at 9/21/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5a7f0c4bef88112974c0.js
+// Retrieved at 9/21/2020, 4:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5694,13 +5694,15 @@
 		"./src/reddit/components/CommunityAwardList/AwardSettings/index.m.less": function(e, t, s) {
 			e.exports = {
 				awardToggleContainer: "_2E_k43b0N9nhGQKfSvT_c_",
-				toggleContainerHeader: "_23fwNO0Rfn7nGjSwhSSgwV",
+				emptyToggleContainer: "_1lQVQi-D8yElpWeJLbrix0",
+				emptyToggleContainerLabel: "_2Porr9EjtYqQt8OhMaCU3h",
 				optionalAwardInfo: "ZViyY3IDk7c6MplUKuCKa",
 				awardToggleItem: "XwXRf6eWep27jKV1kkNDN",
 				awardToggleLabelItem: "_2d9jt8apy5IwNRPdrC_RtG",
 				awardIconWrapper: "_3DGDvlViP1uosxrUobijCu",
 				awardIcon: "_10ar4v6qlEgLvqEhxk_wyP",
 				awardInfoWrapper: "_2LxUe9vOie60H44Rkl5YYd",
+				awardToggleItemDisabled: "_1touzuLFgoSGqEcDiLDD00",
 				awardTitle: "_1fG-NkjOvo6khgB4qJmizu",
 				awardDescription: "_2VABiA5W4pgqWyCK_oV4Hg"
 			}
@@ -5951,28 +5953,31 @@
 						})),
 						m = Object(r.d)(e => Object(z.c)(e, {
 							awards: c,
-							minSize: 32
+							minSize: 64
 						}));
-					if (l) return a.a.createElement("div", null, a.a.createElement("h2", null, X._("Pending", null, {
+					if (!c.length) return a.a.createElement("div", {
+						className: Z.a.emptyToggleContainer
+					}, a.a.createElement("div", {
+						className: Z.a.emptyToggleContainerLabel
+					}, l ? X._("Pending", null, {
 						hk: "1heuFt"
-					})));
-					if (!c.length) return a.a.createElement("div", null, a.a.createElement("h2", null, X._("No Awards Currently Available for Configuration", null, {
-						hk: "4iOObg"
+					}) : X._("No Awards currently available for configuration. Please try again later.", null, {
+						hk: "3BsFsT"
 					})));
 					const u = n && n.all;
 					return a.a.createElement("div", {
 						className: Z.a.awardToggleContainer
 					}, a.a.createElement("div", {
-						className: Z.a.toggleContainerHeader
-					}, a.a.createElement("div", null, X._("Award Information", null, {
-						hk: "23p2GG"
-					})), a.a.createElement("div", null, X._("Enabled?", null, {
-						hk: "4yRZDV"
-					}))), a.a.createElement("div", null, c.map(e => a.a.createElement(q.o, {
+						className: Z.a.optionalAwardInfo
+					}, X._("Toggle whether these awards are available in your community. If disabled, they cannot be given on any posts or comments.", null, {
+						hk: "4e1OPL"
+					})), a.a.createElement("div", null, c.map(e => a.a.createElement(q.o, {
 						key: e.id,
 						on: e.isEnabled,
 						forceOn: e.isEnabled,
-						className: Z.a.awardToggleItem,
+						className: Object(S.a)(Z.a.awardToggleItem, {
+							[Z.a.awardToggleItemDisabled]: !e.isEnabled
+						}),
 						label: a.a.createElement(Y, {
 							award: e,
 							iconUrl: m[e.id]
@@ -5983,11 +5988,7 @@
 							i(n(e, t.id)), u && o(s(t, e))
 						})(e),
 						disabled: !u
-					}))), a.a.createElement("div", {
-						className: Z.a.optionalAwardInfo
-					}, X._("Toggle whether these awards are available in your community. If disabled, they cannot be given on any posts or comments.", null, {
-						hk: "4e1OPL"
-					})))
+					}))))
 				},
 				ee = s("./src/reddit/constants/experiments.ts"),
 				te = s("./src/reddit/helpers/chooseVariant/index.ts");
@@ -6155,8 +6156,8 @@
 						hk: "lraSi"
 					})), h ? this.renderBlacklistedView() : this.renderAwardsList()), t && a.a.createElement(C.a, {
 						className: ne.a.contentContainer
-					}, a.a.createElement(C.b, null, n.fbt._("Optional Awards", null, {
-						hk: "3RFzGX"
+					}, a.a.createElement(C.b, null, n.fbt._("Enable/Disable Awards", null, {
+						hk: "1IRmfG"
 					})), a.a.createElement($, {
 						subreddit: i,
 						subredditId: d,
@@ -31203,4 +31204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c15e1a08b87022ab5542.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5a7f0c4bef88112974c0.js.map
