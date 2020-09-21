@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.dd19cac415c31ee50dd8.js
-// Retrieved at 9/21/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.9a95866b40eb80ac9cb2.js
+// Retrieved at 9/21/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -11344,7 +11344,7 @@
 				f = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				v = s("./src/reddit/controls/Button/index.tsx"),
 				C = s("./src/reddit/icons/svgs/Premium/index.tsx"),
-				O = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				O = s("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
 				y = s("./src/reddit/components/PowerupsSidebar/PowerupsProgressBar/index.m.less"),
 				E = s.n(y);
 			const {
@@ -11389,7 +11389,7 @@
 				N = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				A = s("./src/reddit/components/UserIcon/index.tsx"),
 				L = s("./src/reddit/controls/InternalLink/index.tsx"),
-				M = s("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
+				M = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
 				R = s("./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less"),
 				F = s.n(R);
 			var B = function(e) {
@@ -11404,7 +11404,7 @@
 						_1: "Anonymous Hero"
 					}, [T.fbt._plural(n)], {
 						hk: "8kyEI"
-					}).toString(), a = r && r.icon.url ? r.icon.url : void 0, c = !!r && r.profile.isNsfw, d = n === N.b ? M.a : O.a, l = o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+					}).toString(), a = r && r.icon.url ? r.icon.url : void 0, c = !!r && r.profile.isNsfw, d = n === N.b ? O.a : M.a, l = o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: F.a.userIconContainer
 					}, o.a.createElement(A.a, {
 						userName: i,
@@ -18619,4 +18619,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.dd19cac415c31ee50dd8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9a95866b40eb80ac9cb2.js.map

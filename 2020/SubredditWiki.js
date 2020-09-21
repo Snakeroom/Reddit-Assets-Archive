@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.54e7072cd5141d94f523.js
-// Retrieved at 9/21/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.7f5ab7a32fe496bb7ee2.js
+// Retrieved at 9/21/2020, 5:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -2724,7 +2724,7 @@
 				k = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				f = s("./src/reddit/controls/Button/index.tsx"),
 				O = s("./src/reddit/icons/svgs/Premium/index.tsx"),
-				y = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				y = s("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
 				w = s("./src/reddit/components/PowerupsSidebar/PowerupsProgressBar/index.m.less"),
 				v = s.n(w);
 			const {
@@ -2769,7 +2769,7 @@
 				T = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				R = s("./src/reddit/components/UserIcon/index.tsx"),
 				L = s("./src/reddit/controls/InternalLink/index.tsx"),
-				B = s("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
+				B = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
 				_ = s("./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less"),
 				W = s.n(_);
 			var D = function(e) {
@@ -2784,7 +2784,7 @@
 						_1: "Anonymous Hero"
 					}, [P.fbt._plural(n)], {
 						hk: "8kyEI"
-					}).toString(), o = i && i.icon.url ? i.icon.url : void 0, d = !!i && i.profile.isNsfw, c = n === T.b ? B.a : y.a, l = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+					}).toString(), o = i && i.icon.url ? i.icon.url : void 0, d = !!i && i.profile.isNsfw, c = n === T.b ? y.a : B.a, l = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: W.a.userIconContainer
 					}, r.a.createElement(R.a, {
 						userName: a,
@@ -7533,4 +7533,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.54e7072cd5141d94f523.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7f5ab7a32fe496bb7ee2.js.map
