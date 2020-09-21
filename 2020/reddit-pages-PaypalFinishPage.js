@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.2357e3998a9ced2a897a.js
-// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.7eb01dedfd110e07aba8.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -31,19 +31,21 @@
 		},
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "g", (function() {
+			r.d(t, "b", (function() {
+				return N
+			})), r.d(t, "h", (function() {
 				return D
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "g", (function() {
 				return R
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "f", (function() {
 				return L
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return T
-			})), r.d(t, "b", (function() {
-				return M
+			})), r.d(t, "c", (function() {
+				return U
 			})), r.d(t, "a", (function() {
 				return F
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return G
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -66,8 +68,8 @@
 				O = r("./src/reddit/actions/modal.ts"),
 				P = (r("./node_modules/core-js/modules/es6.regexp.to-string.js"), r("./src/graphql/operations/CancelEconRecurringPayment.json")),
 				E = r("./src/graphql/operations/ConfirmPaypalPayment.json"),
-				v = r("./src/graphql/operations/CreateEconOrder.json"),
-				w = r("./src/graphql/operations/CreatePaypalPayment.json"),
+				w = r("./src/graphql/operations/CreateEconOrder.json"),
+				v = r("./src/graphql/operations/CreatePaypalPayment.json"),
 				x = r("./src/graphql/operations/CreateStripePaymentWithProvidedCard.json"),
 				C = r("./src/graphql/operations/CreateStripePaymentWithProvidedNonAuthCard.json"),
 				S = r("./src/graphql/operations/CreateStripePaymentWithSavedCard.json"),
@@ -78,30 +80,26 @@
 					hk: "31kmAa"
 				}),
 				q = e => e.map(e => e.message).join(" : "),
-				N = (e, t, r, a) => async (n, o, i) => {
+				N = (e, t, r) => async (a, n, o) => {
 					let {
-						gqlContext: d
-					} = i;
-					const l = c()(),
-						p = await ((e, t, r, s, a, n) => Object(A.a)(e, Object.assign(Object.assign({}, v), {
+						gqlContext: i
+					} = o;
+					const d = c()(),
+						l = await ((e, t, r, s, a) => Object(A.a)(e, Object.assign(Object.assign({}, w), {
 							variables: {
-								input: {
+								input: Object.assign({
 									nonce: t,
 									productId: r.id,
 									productVersion: r.version,
 									pricePackageId: r.pricePackages[0].id,
 									currency: r.pricePackages[0].currency,
-									price: (r.pricePackages[0].price * n).toString(),
-									productsCount: n.toString(),
-									powerUps: {
-										subredditId: s,
-										isAnonymous: a
-									}
-								}
+									price: (r.pricePackages[0].price * s).toString(),
+									productsCount: s.toString()
+								}, a)
 							}
-						})))(d(), l, e, t, r, a);
-					if (p.ok) {
-						const e = p.body,
+						})))(i(), d, e, t, r);
+					if (l.ok) {
+						const e = l.body,
 							{
 								errors: t,
 								order: r
@@ -122,7 +120,12 @@
 						})));
 					let b, m, y = "";
 					try {
-						y = await o(N(t, r, a, n))
+						y = await o(N(t, n, {
+							powerUps: {
+								subredditId: r,
+								isAnonymous: a
+							}
+						}))
 					} catch (P) {
 						return g.c.captureException(P), void(P.message && o(Object(f.stripeApiError)(P.message)))
 					}
@@ -170,7 +173,12 @@
 						gqlContext: d
 					} = o, l = "";
 					try {
-						l = await a(N(e, t, r, s))
+						l = await a(N(e, s, {
+							powerUps: {
+								subredditId: t,
+								isAnonymous: r
+							}
+						}))
 					} catch (b) {
 						return g.c.captureException(b), b.message && a(Object(f.paypalApiError)(b.message)), null
 					}
@@ -188,7 +196,7 @@
 								o: l
 							}),
 							i = c()(),
-							g = await ((e, t, r, s, a) => Object(A.a)(e, Object.assign(Object.assign({}, w), {
+							g = await ((e, t, r, s, a) => Object(A.a)(e, Object.assign(Object.assign({}, v), {
 								variables: {
 									nonce: t,
 									orderId: r,
@@ -267,7 +275,7 @@
 					} catch (o) {
 						g.c.captureException(o), e(Object(f.savedCardsSuccess)([]))
 					}
-				}, M = e => async (t, r, s) => {
+				}, U = e => async (t, r, s) => {
 					let {
 						gqlContext: a
 					} = s;
@@ -287,8 +295,8 @@
 					} catch (n) {
 						g.c.captureException(n)
 					}
-				}, U = Object(u.a)(m.P), J = Object(u.a)(m.Q), B = Object(u.a)(m.R), W = e => async (t, r) => {
-					await t(U(e)), t(Object(l.e)({
+				}, M = Object(u.a)(m.P), J = Object(u.a)(m.Q), B = Object(u.a)(m.R), W = e => async (t, r) => {
+					await t(M(e)), t(Object(l.e)({
 						kind: b.b.Error,
 						duration: l.a,
 						text: e
@@ -402,54 +410,54 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), f = "r", h = "o", j = "p", y = "approval_token_id", O = "s", P = Object(o.c)({
 				paypalErrorMessage: l.b
 			}), E = Object(n.b)(P);
-			var v;
+			var w;
 			! function(e) {
 				e.Loading = "loading", e.Error = "error", e.Success = "success", e.Cancel = "cancel"
-			}(v || (v = {}));
+			}(w || (w = {}));
 			t.default = E(e => {
 				const {
 					params: t,
 					paypalErrorMessage: r
-				} = e, n = t[f], o = t[h], l = t[O], g = t[j], P = t[y], E = Object(d.a)(), w = async () => {
-					C(v.Loading), await E(Object(c.e)(g, P)) ? ((() => e.postMessage({
+				} = e, n = t[f], o = t[h], l = t[O], g = t[j], P = t[y], E = Object(d.a)(), v = async () => {
+					C(w.Loading), await E(Object(c.f)(g, P)) ? ((() => e.postMessage({
 						type: "paypal-finish.success",
 						data: {
 							subredditId: n,
 							orderId: o
 						}
 					}))(), setTimeout(() => {
-						window.close(), C(v.Success)
-					}, 1500)) : C(v.Error)
+						window.close(), C(w.Success)
+					}, 1500)) : C(w.Error)
 				};
 				Object(s.useEffect)(() => {
 					E(Object(i.l)({
 						title: m._("Reddit - Buy Powerups", null, {
 							hk: "4sEI31"
 						})
-					})), l ? w() : ((() => e.postMessage({
+					})), l ? v() : ((() => e.postMessage({
 						type: "paypal-finish.cancel"
 					}))(), setTimeout(() => {
-						window.close(), C(v.Cancel)
+						window.close(), C(w.Cancel)
 					}, 1500))
 				}, []);
-				const [x, C] = Object(s.useState)(v.Loading);
-				return a.a.createElement(a.a.Fragment, null, x === v.Loading && a.a.createElement(p.a, {
+				const [x, C] = Object(s.useState)(w.Loading);
+				return a.a.createElement(a.a.Fragment, null, x === w.Loading && a.a.createElement(p.a, {
 					className: b.a.loader,
 					sizePx: 60
-				}), x === v.Error && a.a.createElement("div", {
+				}), x === w.Error && a.a.createElement("div", {
 					className: b.a.details
 				}, r && a.a.createElement("div", {
 					className: b.a.error
 				}, r), a.a.createElement("button", {
-					onClick: w,
+					onClick: v,
 					className: b.a.repeatButton
 				}, a.a.createElement(u.a, {
 					className: b.a.repeatIcon
-				}))), x === v.Success && a.a.createElement("div", {
+				}))), x === w.Success && a.a.createElement("div", {
 					className: b.a.details
 				}, m._("Thanks for the purchase. It is safe to close this page now.", null, {
 					hk: "1cdx2b"
-				})), x === v.Cancel && a.a.createElement("div", {
+				})), x === w.Cancel && a.a.createElement("div", {
 					className: b.a.details
 				}, m._("It is safe to close this page.", null, {
 					hk: "Zh0mx"
@@ -458,4 +466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.2357e3998a9ced2a897a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.7eb01dedfd110e07aba8.js.map

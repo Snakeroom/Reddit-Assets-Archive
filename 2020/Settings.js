@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.613ca2ae62f976bf201e.js
-// Retrieved at 9/16/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.9392ba94babf85aaa76e.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -65,19 +65,21 @@
 		},
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
+			n.d(t, "b", (function() {
+				return M
+			})), n.d(t, "h", (function() {
 				return A
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return R
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return D
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return L
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return B
 			})), n.d(t, "a", (function() {
 				return G
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return q
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -112,30 +114,26 @@
 					hk: "31kmAa"
 				}),
 				I = e => e.map(e => e.message).join(" : "),
-				M = (e, t, n, a) => async (o, r, c) => {
+				M = (e, t, n) => async (a, o, r) => {
 					let {
-						gqlContext: l
-					} = c;
-					const d = i()(),
-						m = await ((e, t, n, s, a, o) => Object(N.a)(e, Object.assign(Object.assign({}, x), {
+						gqlContext: c
+					} = r;
+					const l = i()(),
+						d = await ((e, t, n, s, a) => Object(N.a)(e, Object.assign(Object.assign({}, x), {
 							variables: {
-								input: {
+								input: Object.assign({
 									nonce: t,
 									productId: n.id,
 									productVersion: n.version,
 									pricePackageId: n.pricePackages[0].id,
 									currency: n.pricePackages[0].currency,
-									price: (n.pricePackages[0].price * o).toString(),
-									productsCount: o.toString(),
-									powerUps: {
-										subredditId: s,
-										isAnonymous: a
-									}
-								}
+									price: (n.pricePackages[0].price * s).toString(),
+									productsCount: s.toString()
+								}, a)
 							}
-						})))(l(), d, e, t, n, a);
-					if (m.ok) {
-						const e = m.body,
+						})))(c(), l, e, t, n);
+					if (d.ok) {
+						const e = d.body,
 							{
 								errors: t,
 								order: n
@@ -156,7 +154,12 @@
 						})));
 					let b, h, _ = "";
 					try {
-						_ = await r(M(t, n, a, o))
+						_ = await r(M(t, o, {
+							powerUps: {
+								subredditId: n,
+								isAnonymous: a
+							}
+						}))
 					} catch (k) {
 						return p.c.captureException(k), void(k.message && r(Object(g.stripeApiError)(k.message)))
 					}
@@ -204,7 +207,12 @@
 						gqlContext: l
 					} = r, d = "";
 					try {
-						d = await a(M(e, t, n, s))
+						d = await a(M(e, s, {
+							powerUps: {
+								subredditId: t,
+								isAnonymous: n
+							}
+						}))
 					} catch (b) {
 						return p.c.captureException(b), b.message && a(Object(g.paypalApiError)(b.message)), null
 					}
@@ -6867,4 +6875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.613ca2ae62f976bf201e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9392ba94babf85aaa76e.js.map

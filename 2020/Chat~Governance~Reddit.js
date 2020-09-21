@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.81ffb6f1f19265e14d28.js
-// Retrieved at 9/21/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.65c502ba0a5fd84a957a.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1593,11 +1593,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("112871"),
+				buildNumber: r("112888"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1600727040"),
+				})("1600728494"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3364,14 +3364,14 @@
 					}))
 				},
 				Q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("73bbb9e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("eee109c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "73bbb9e-production",
+						release: "eee109c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new s.Integrations.Breadcrumbs({
@@ -3801,7 +3801,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "73bbb9e-production",
+							releaseClient: "eee109c-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -7208,6 +7208,8 @@
 				return o
 			})), i.d(t, "t", (function() {
 				return d
+			})), i.d(t, "Y", (function() {
+				return l
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/react/index.js"),
@@ -7328,6 +7330,10 @@
 						return r.a.createElement(o.Consumer, null, this.renderChildren)
 					}
 				})
+			}
+
+			function l() {
+				return Object(n.useContext)(o)
 			}
 		},
 		"./src/reddit/contexts/PageLayer/selectors.ts": function(e, t, i) {
@@ -7938,26 +7944,26 @@
 					introModal: Object(a.d)(a.g),
 					markdownMode: a.g,
 					modQueue: Object(a.e)(a.g, a.h),
-					spBadges: v.c,
-					spClaimablePoints: v.d,
-					spCustomBadgesAndEmotes: v.e,
-					spCustomCrypto: v.f,
-					spEmotes: v.g,
-					spGiphy: v.h,
-					spGovPolls: v.i,
-					spHarberger: v.j,
-					spLeaderboard: v.k,
-					spPoints: v.l,
-					spPointsCoinConversion: v.m,
-					spPolls: v.n,
-					spPublicPoints: v.o,
-					spSpecialMemberships: v.q,
-					spSpecialMembershipUpsells: v.p,
-					spSpinoffs: v.r,
-					spStellarWalletRegistration: v.s,
-					spTipping: v.t,
-					spWalletRegistrationBanner: v.u,
-					spWebTransactions: v.v,
+					spBadges: v.d,
+					spClaimablePoints: v.e,
+					spCustomBadgesAndEmotes: v.f,
+					spCustomCrypto: v.g,
+					spEmotes: v.h,
+					spGiphy: v.i,
+					spGovPolls: v.j,
+					spHarberger: v.k,
+					spLeaderboard: v.l,
+					spPoints: v.m,
+					spPointsCoinConversion: v.n,
+					spPolls: v.o,
+					spPublicPoints: v.p,
+					spSpecialMemberships: v.r,
+					spSpecialMembershipUpsells: v.q,
+					spSpinoffs: v.s,
+					spStellarWalletRegistration: v.t,
+					spTipping: v.u,
+					spWalletRegistrationBanner: v.v,
+					spWebTransactions: v.w,
 					scheduledPosts: e => {
 						const t = Object(g.e)(e);
 						return !!t && Object(h.e)(e, {
@@ -8074,43 +8080,43 @@
 		},
 		"./src/reddit/featureFlags/subredditPoints.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
+			i.d(t, "b", (function() {
 				return _
-			})), i.d(t, "c", (function() {
-				return p
 			})), i.d(t, "d", (function() {
-				return h
+				return p
 			})), i.d(t, "e", (function() {
-				return g
+				return h
 			})), i.d(t, "f", (function() {
-				return f
+				return g
 			})), i.d(t, "g", (function() {
-				return b
+				return f
 			})), i.d(t, "h", (function() {
-				return w
+				return b
 			})), i.d(t, "i", (function() {
-				return y
+				return w
 			})), i.d(t, "j", (function() {
-				return v
+				return y
 			})), i.d(t, "k", (function() {
-				return T
+				return v
 			})), i.d(t, "l", (function() {
-				return S
+				return T
 			})), i.d(t, "m", (function() {
+				return S
+			})), i.d(t, "a", (function() {
 				return F
 			})), i.d(t, "n", (function() {
 				return E
 			})), i.d(t, "o", (function() {
 				return I
-			})), i.d(t, "q", (function() {
-				return O
 			})), i.d(t, "p", (function() {
-				return j
+				return O
 			})), i.d(t, "r", (function() {
+				return j
+			})), i.d(t, "q", (function() {
 				return B
-			})), i.d(t, "b", (function() {
-				return x
 			})), i.d(t, "s", (function() {
+				return x
+			})), i.d(t, "c", (function() {
 				return R
 			})), i.d(t, "t", (function() {
 				return k
@@ -8118,6 +8124,8 @@
 				return N
 			})), i.d(t, "v", (function() {
 				return C
+			})), i.d(t, "w", (function() {
+				return P
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/reddit/selectors/platform.ts");
@@ -8152,17 +8160,18 @@
 				v = m(c, new Set([...o, "funkygoose", "stellar"])),
 				T = m(new Set([...s, ...o, ...d, "badgesroyaletest", "funkygoose", "stellar"])),
 				S = m(c),
-				F = m(r),
-				E = m(c),
-				I = m(u),
-				O = m(_),
-				j = m(_, new Set(["badgesroyaletest", "fortnitebr", "funkygoose"])),
-				B = m(c, new Set(["funkygoose"])),
-				x = new Set([...d, "stellar"]),
-				R = m(x),
-				k = m(u, new Set([...s, ...o, ...d, "funkygoose", "mountainbiking", "stellar"])),
-				N = m(o),
-				C = m(s)
+				F = r,
+				E = m(F),
+				I = m(c),
+				O = m(u),
+				j = m(_),
+				B = m(_, new Set(["badgesroyaletest", "fortnitebr", "funkygoose"])),
+				x = m(c, new Set(["funkygoose"])),
+				R = new Set([...d, "stellar"]),
+				k = m(R),
+				N = m(u, new Set([...s, ...o, ...d, "funkygoose", "mountainbiking", "stellar"])),
+				C = m(o),
+				P = m(s)
 		},
 		"./src/reddit/featureFlags/utils.ts": function(e, t, i) {
 			"use strict";
@@ -22542,4 +22551,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.81ffb6f1f19265e14d28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.65c502ba0a5fd84a957a.js.map

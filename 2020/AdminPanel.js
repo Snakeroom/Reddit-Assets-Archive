@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.e9e08e5382f312f7da3c.js
-// Retrieved at 9/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.59be7a1291b379d2ba43.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -989,8 +989,8 @@
 			var gn = Object(u.b)(bn)((function(e) {
 					if (!e.subreddit) return null;
 					const t = e.subreddit.name.toLowerCase(),
-						n = an.a.has(t) || an.b.has(t),
-						s = an.a.has(t);
+						n = an.b.has(t) || an.c.has(t),
+						s = an.b.has(t);
 					return n || s ? a.a.createElement(Gt, {
 						title: "Subreddit Premium"
 					}, a.a.createElement("div", null, n && a.a.createElement(un, null), s && a.a.createElement(En, null))) : null
@@ -1469,4 +1469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.e9e08e5382f312f7da3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.59be7a1291b379d2ba43.js.map

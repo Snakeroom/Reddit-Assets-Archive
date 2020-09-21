@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.88399667221e2eab5055.js
-// Retrieved at 9/14/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.5fd56fcde60a2acb62ac.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -31,19 +31,21 @@
 		},
 		"./src/reddit/actions/gold/productOfferPurchase.ts": function(e, t, a) {
 			"use strict";
-			a.d(t, "g", (function() {
+			a.d(t, "b", (function() {
+				return A
+			})), a.d(t, "h", (function() {
 				return q
-			})), a.d(t, "f", (function() {
+			})), a.d(t, "g", (function() {
 				return M
-			})), a.d(t, "e", (function() {
+			})), a.d(t, "f", (function() {
 				return V
-			})), a.d(t, "c", (function() {
+			})), a.d(t, "d", (function() {
 				return T
-			})), a.d(t, "b", (function() {
+			})), a.d(t, "c", (function() {
 				return D
 			})), a.d(t, "a", (function() {
 				return L
-			})), a.d(t, "d", (function() {
+			})), a.d(t, "e", (function() {
 				return W
 			}));
 			var r = a("./node_modules/fbt/lib/FbtPublic.js"),
@@ -78,30 +80,26 @@
 					hk: "31kmAa"
 				}),
 				R = e => e.map(e => e.message).join(" : "),
-				A = (e, t, a, n) => async (s, o, d) => {
+				A = (e, t, a) => async (n, s, o) => {
 					let {
-						gqlContext: i
-					} = d;
-					const l = c()(),
-						m = await ((e, t, a, r, n, s) => Object(w.a)(e, Object.assign(Object.assign({}, O), {
+						gqlContext: d
+					} = o;
+					const i = c()(),
+						l = await ((e, t, a, r, n) => Object(w.a)(e, Object.assign(Object.assign({}, O), {
 							variables: {
-								input: {
+								input: Object.assign({
 									nonce: t,
 									productId: a.id,
 									productVersion: a.version,
 									pricePackageId: a.pricePackages[0].id,
 									currency: a.pricePackages[0].currency,
-									price: (a.pricePackages[0].price * s).toString(),
-									productsCount: s.toString(),
-									powerUps: {
-										subredditId: r,
-										isAnonymous: n
-									}
-								}
+									price: (a.pricePackages[0].price * r).toString(),
+									productsCount: r.toString()
+								}, n)
 							}
-						})))(i(), l, e, t, a, n);
-					if (m.ok) {
-						const e = m.body,
+						})))(d(), i, e, t, a);
+					if (l.ok) {
+						const e = l.body,
 							{
 								errors: t,
 								order: a
@@ -122,7 +120,12 @@
 						})));
 					let h, g, j = "";
 					try {
-						j = await o(A(t, a, n, s))
+						j = await o(A(t, s, {
+							powerUps: {
+								subredditId: a,
+								isAnonymous: n
+							}
+						}))
 					} catch (E) {
 						return u.c.captureException(E), void(E.message && o(Object(b.stripeApiError)(E.message)))
 					}
@@ -170,7 +173,12 @@
 						gqlContext: i
 					} = o, l = "";
 					try {
-						l = await n(A(e, t, a, r))
+						l = await n(A(e, r, {
+							powerUps: {
+								subredditId: t,
+								isAnonymous: a
+							}
+						}))
 					} catch (h) {
 						return u.c.captureException(h), h.message && n(Object(b.paypalApiError)(h.message)), null
 					}
@@ -747,7 +755,7 @@
 					stripeInfoLoading: v.t
 				}),
 				_ = Object(s.b)(P, (e, t) => ({
-					onClickDeleteCard: a => t.shouldDeleteCardWithGql ? e(Object(E.b)(a)) : e(Object(x.deleteSavedCard)(a)),
+					onClickDeleteCard: a => t.shouldDeleteCardWithGql ? e(Object(E.c)(a)) : e(Object(x.deleteSavedCard)(a)),
 					onToggleRememberCard: () => e(Object(x.toggleRememberCard)())
 				}));
 			class N extends n.a.PureComponent {
@@ -807,4 +815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.88399667221e2eab5055.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.5fd56fcde60a2acb62ac.js.map

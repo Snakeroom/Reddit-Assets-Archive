@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.b546ee20db443b0c986a.js
-// Retrieved at 9/2/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.7a45d767f43cb4c30d6d.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, n) {
@@ -8,20 +8,20 @@
 			function r(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 3e4,
 					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e5;
-				return async (s, o, a) => new Promise((c, d) => {
-					const i = Date.now() + r,
+				return async (s, o, a) => new Promise((c, i) => {
+					const d = Date.now() + r,
 						l = () => {
-							d(new Error("Timed out while polling for success"))
+							i(new Error("Timed out while polling for success"))
 						},
 						u = async () => {
-							if (Date.now() > i) return l();
+							if (Date.now() > d) return l();
 							const r = Date.now();
 							await e(s, o, a);
 							const m = await t(o);
 							if (m) c();
-							else if (!1 === m) d();
+							else if (!1 === m) i();
 							else {
-								Date.now() + Math.max(n - (Date.now() - r), 0) < i ? setTimeout(u, n) : l()
+								Date.now() + Math.max(n - (Date.now() - r), 0) < d ? setTimeout(u, n) : l()
 							}
 						};
 					setTimeout(u, n)
@@ -45,32 +45,78 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/lib/classNames/index.ts"),
-				d = n("./src/lib/prettyPrintNumber/index.ts"),
-				i = n("./src/reddit/components/Governance/Token/index.tsx"),
+				i = n("./src/lib/prettyPrintNumber/index.ts"),
+				d = n("./src/reddit/components/Governance/Token/index.tsx"),
 				l = n("./src/reddit/helpers/governance/tokens.ts"),
 				u = n("./src/reddit/selectors/gov.ts"),
 				m = n("./src/reddit/components/Governance/TokenAmount/index.m.less"),
-				b = n.n(m);
-			const p = Object(a.c)({
+				p = n.n(m);
+			const b = Object(a.c)({
 				tokenDisplayConversion: u.p
 			});
-			t.a = Object(o.b)(p)((function(e) {
+			t.a = Object(o.b)(b)((function(e) {
 				return s.a.createElement("div", {
-					className: Object(c.a)(b.a.container, e.className, {
-						[b.a.small]: e.small
+					className: Object(c.a)(p.a.container, e.className, {
+						[p.a.small]: e.small
 					})
-				}, s.a.createElement(i.a, {
-					className: Object(c.a)(b.a.token, {
-						[b.a.small]: e.small
+				}, s.a.createElement(d.a, {
+					className: Object(c.a)(p.a.token, {
+						[p.a.small]: e.small
 					}),
 					grey: e.grey,
 					subredditId: e.subredditId
-				}), Object(d.a)(Object(l.b)(e.amount, e.tokenDisplayConversion)), e.additionalText || null)
+				}), Object(i.a)(Object(l.b)(e.amount, e.tokenDisplayConversion)), e.additionalText || null)
 			}))
 		},
-		"./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/ApprovalModal.m.less": function(e, t, n) {
+		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.m.less": function(e, t, n) {
 			e.exports = {
-				userIcon: "_1u1hD_9ZUzTP_P4AYg33OY"
+				overview: "_3vbYFraj9qRr9wXp4mcPUn",
+				description: "_1SZ6yxzmSfQKpV9QOquYaR",
+				grid: "jh8B-AY4740kpxlHw2YDW",
+				descriptionTitle: "iGBU2u1c8RwaU1r6hphWt",
+				amountSubtext: "_28HHYVa7-RIY6X_ZjCpCAb",
+				descriptionSubtitle: "_3nbUm4QjlldCfIOsi_zYWh",
+				amountCell: "ftLHNRLY2TdwcJtKSvldG",
+				amount: "_3sfSvH2g-yH3GQObK-yNFD"
+			}
+		},
+		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			}));
+			var r = n("./node_modules/react/index.js"),
+				s = n.n(r),
+				o = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				a = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.m.less"),
+				c = n.n(a);
+
+			function i(e) {
+				return s.a.createElement("div", {
+					className: c.a.overview
+				}, e.image, s.a.createElement("div", {
+					className: c.a.description
+				}, s.a.createElement("div", {
+					className: c.a.grid
+				}, s.a.createElement("div", {
+					className: c.a.descriptionTitle,
+					title: e.title
+				}, e.title), s.a.createElement("div", {
+					className: c.a.amountCell
+				}, s.a.createElement(o.a, {
+					amount: e.pointsAmount,
+					className: c.a.amount,
+					subredditId: e.subredditId
+				})), s.a.createElement("div", {
+					className: c.a.descriptionSubtitle
+				}, e.subtitle), s.a.createElement("div", {
+					className: c.a.amountSubtext
+				}, e.pointsAmountSubtext))))
+			}
+		},
+		"./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/Approval.m.less": function(e, t, n) {
+			e.exports = {
+				userIcon: "_2fcZovMmvKOCI8C6QohBfS"
 			}
 		},
 		"./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/index.tsx": function(e, t, n) {
@@ -82,126 +128,121 @@
 				o = n("./node_modules/react/index.js"),
 				a = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
-				d = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/higherOrderComponents/asModal/index.tsx"),
+				i = n("./node_modules/reselect/es/index.js"),
+				d = n("./src/higherOrderComponents/asModal/index.tsx"),
 				l = n("./src/reddit/actions/governance/index.ts"),
 				u = n("./src/reddit/actions/governance/publicWalletsFetched.ts"),
 				m = n("./src/reddit/actions/toaster.ts"),
-				b = n("./src/reddit/actions/util/pollActionForSuccess.ts"),
-				p = n("./src/reddit/endpoints/governance/crypto.ts"),
-				f = n("./src/reddit/featureFlags/component.tsx"),
-				j = n("./src/reddit/helpers/crypto/transactions.ts"),
-				O = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
-				v = n("./src/reddit/helpers/governance/tokens.ts"),
+				p = n("./src/reddit/actions/util/pollActionForSuccess.ts"),
+				b = n("./src/reddit/endpoints/governance/crypto.ts"),
+				v = n("./src/reddit/featureFlags/component.tsx"),
+				f = n("./src/reddit/helpers/crypto/transactions.ts"),
+				j = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
+				O = n("./src/reddit/helpers/governance/tokens.ts"),
 				x = n("./src/reddit/helpers/trackers/crypto.ts"),
 				_ = n("./src/reddit/hooks/useTracking.ts"),
-				h = n("./src/reddit/models/Toast/index.ts"),
-				y = n("./src/reddit/selectors/gov.ts"),
-				T = n("./src/reddit/selectors/user.ts"),
-				w = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				g = n("./src/reddit/components/UserIcon/index.tsx"),
-				A = n("./src/reddit/components/Governance/TransactionModals/BaseApprovalModal/index.tsx"),
-				M = n("./src/reddit/components/Governance/TransactionModals/BaseApprovalModal/Details.tsx"),
-				N = n("./src/reddit/components/Governance/TransactionModals/BaseApprovalModal/Overview.tsx"),
-				k = n("./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/ApprovalModal.m.less"),
-				E = n.n(k);
-
-			function I() {
-				return (I = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
-					}
-					return e
-				}).apply(this, arguments)
-			}
+				w = n("./src/reddit/models/Toast/index.ts"),
+				T = n("./src/reddit/selectors/gov.ts"),
+				h = n("./src/reddit/selectors/user.ts"),
+				y = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				A = n("./src/reddit/components/UserIcon/index.tsx"),
+				N = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				g = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
+				E = n("./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/Approval.m.less"),
+				M = n.n(E);
 			const {
-				fbt: D
+				fbt: S
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var P = e => {
+
+			function k(e) {
 				const {
-					recipient: t,
-					recipientAddress: n,
-					amount: r
-				} = e.transactionIntent, s = Object(c.d)(T.i);
-				return a.a.createElement(A.a, I({
-					overview: a.a.createElement(N.a, {
-						subredditId: e.subredditId,
-						image: a.a.createElement(g.a, {
-							className: E.a.userIcon,
-							isNSFW: !1,
-							userName: t
-						}),
-						title: D._("Transfer to {recipient}", [D._param("recipient", t === n ? t : "u/" + t)], {
-							hk: "xSmPq"
-						}),
-						subtitle: s && s.displayText ? D._("From {currentUsername}", [D._param("currentUsername", "u/" + s.displayText)], {
-							hk: "onO9l"
-						}) : null,
-						pointsAmount: r
+					recipient: t
+				} = e, n = Object(c.d)(h.i);
+				return a.a.createElement(g.a, {
+					subredditId: e.subredditId,
+					image: a.a.createElement(A.a, {
+						className: M.a.userIcon,
+						isNSFW: !1,
+						userName: t
 					}),
-					details: a.a.createElement(M.b, {
-						values: [
-							[Object(M.c)(), n],
-							[Object(M.a)(), e.transaction.contractAddress]
-						]
-					})
-				}, e))
-			};
-			t.default = Object(f.a)("spWebTransactions", Object(i.a)((function(e) {
+					title: S._("Transfer to {recipient}", [S._param("recipient", t === e.recipientAddress ? t : "u/" + t)], {
+						hk: "xSmPq"
+					}),
+					subtitle: n && n.displayText ? S._("From {currentUsername}", [S._param("currentUsername", "u/" + n.displayText)], {
+						hk: "onO9l"
+					}) : null,
+					pointsAmount: e.transferAmount
+				})
+			}
+			const I = e => a.a.createElement(N.b, {
+				values: [
+					[Object(N.c)(), e.recipientAddress],
+					[Object(N.a)(), e.transaction.contractAddress]
+				]
+			});
+			t.default = Object(v.a)("spWebTransactions", Object(d.a)((function(e) {
 				var t, n;
 				const {
 					onClose: o,
-					recipient: i,
-					subredditId: f,
-					transferAmount: g
-				} = e, A = Object(c.c)(), M = Object(_.a)(), N = Object(c.d)(e => Object(T.eb)(e, {
-					userName: i
+					recipient: d,
+					subredditId: v,
+					transferAmount: A
+				} = e, N = Object(c.c)(), g = Object(_.a)(), E = Object(c.d)(e => Object(h.eb)(e, {
+					userName: d
 				})), {
-					currentPointsAmount: k,
-					pointsName: E,
-					recipientWallet: I,
+					currentPointsAmount: M,
+					pointsName: S,
+					recipientWallet: C,
 					tokenConversion: D,
-					walletProvider: S
-				} = Object(c.d)(Object(d.c)({
-					currentPointsAmount: t => Object(y.h)(t, e),
-					pointsName: t => Object(y.q)(t, e),
-					recipientWallet: e => N && Object(y.j)(e, {
-						subredditId: f,
-						userId: N.id
+					walletProvider: G
+				} = Object(c.d)(Object(i.c)({
+					currentPointsAmount: t => Object(T.h)(t, e),
+					pointsName: t => Object(T.q)(t, e),
+					recipientWallet: e => E && Object(T.j)(e, {
+						subredditId: v,
+						userId: E.id
 					}),
-					tokenConversion: t => Object(y.p)(t, e),
-					walletProvider: t => Object(y.u)(t, e)
+					tokenConversion: t => Object(T.p)(t, e),
+					walletProvider: t => Object(T.u)(t, e)
 				}));
-				if (!S) throw new Error("No wallet provider");
-				const F = null === (n = null === (t = S.extra) || void 0 === t ? void 0 : t.contracts) || void 0 === n ? void 0 : n.unlocked.address;
+				if (!G) throw new Error("No wallet provider");
+				const F = null === (n = null === (t = G.extra) || void 0 === t ? void 0 : t.contracts) || void 0 === n ? void 0 : n.unlocked.address;
 				if (!F) throw new Error("No token contract address");
-				const G = function(e, n) {
+				const P = function(e, n) {
 						const s = null == n ? void 0 : n.publicAddress;
 						if (s) return s;
 						try {
 							if (!!Object(r.getAddress)(e)) return e
 						} catch (t) {}
 						throw new Error("No recipient address found for points transfer")
-					}(i, I),
-					C = Object(j.c)(F, G, g),
-					L = Object(v.b)(g, D),
-					B = e => {
-						M(Object(x.a)("transfer", f, L, e))
+					}(d, C),
+					L = Object(f.d)(F, P, A),
+					U = Object(O.b)(A, D),
+					W = e => {
+						g(Object(x.a)("transfer", v, U, e))
 					};
-				return a.a.createElement(w.a, {
-					ApprovalModal: P,
+				return a.a.createElement(y.a, {
+					approvalOverview: a.a.createElement(k, {
+						subredditId: v,
+						recipient: d,
+						recipientAddress: P,
+						transferAmount: A
+					}),
+					approvalDetails: a.a.createElement(I, {
+						transaction: L,
+						recipientAddress: P
+					}),
 					onClose: o,
 					onTransactionSuccess: async e => {
-						o(), A(function(e) {
+						o(), N(function(e) {
 							return Object(m.e)(Object(m.d)(s.fbt._("Sending your {pointsName}...", [s.fbt._param("pointsName", e)], {
 								hk: "2LuiyB"
-							}), h.b.SuccessCommunity))
-						}(E)), async function(e, t, n, r, s, o) {
-							await Object(O.a)(t, n), await e(Object(b.a)(Object(l.h)({
+							}), w.b.SuccessCommunity))
+						}(S)), async function(e, t, n, r, s, o) {
+							await Object(j.a)(t, n), await e(Object(p.a)(Object(l.h)({
 								subredditId: r
 							}), async e => {
-								const t = Object(y.h)(e(), {
+								const t = Object(T.h)(e(), {
 									subredditId: r
 								});
 								return s !== t || null
@@ -209,31 +250,31 @@
 								subredditId: r,
 								userIds: [o]
 							}))
-						}(A, S, e.hash, f, k, null == N ? void 0 : N.id).then(() => {
-							M(Object(x.b)("transfer", f, L)), A(function(e) {
+						}(N, G, e.hash, v, M, null == E ? void 0 : E.id).then(() => {
+							g(Object(x.b)("transfer", v, U)), N(function(e) {
 								return Object(m.e)(Object(m.d)(s.fbt._("Your {pointsName} were sent!", [s.fbt._param("pointsName", e)], {
 									hk: "4yssJA"
-								}), h.b.SuccessCommunityGreen))
-							}(E))
+								}), w.b.SuccessCommunityGreen))
+							}(S))
 						}).catch(e => {
-							B(e.toString()), A(function(e) {
+							W(e.toString()), N(function(e) {
 								return Object(m.e)(Object(m.d)(s.fbt._("Failed to send your {pointsName}. Try again later", [s.fbt._param("pointsName", e)], {
 									hk: "yeMQh"
-								}), h.b.Error))
-							}(E))
+								}), w.b.Error))
+							}(S))
 						})
 					},
-					onTransactionFailure: B,
-					subredditId: f,
-					transaction: C,
-					transactionIntent: Object(p.d)(f, i, G, g)
+					onTransactionFailure: W,
+					subredditId: v,
+					transaction: L,
+					transactionIntent: Object(b.e)(v, d, P, A)
 				})
 			})))
 		},
 		"./src/reddit/featureFlags/component.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
+				return d
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
@@ -241,7 +282,7 @@
 				o = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/reddit/featureFlags/index.ts"),
-				d = function(e, t) {
+				i = function(e, t) {
 					var n = {};
 					for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -251,14 +292,14 @@
 					return n
 				};
 
-			function i(e, t, n) {
+			function d(e, t, n) {
 				const r = Object(a.c)({
 					featureEnabled: t => c.d[e](t)
 				});
 				return Object(o.b)(r)(e => {
 					const {
 						featureEnabled: r
-					} = e, o = d(e, ["featureEnabled"]);
+					} = e, o = i(e, ["featureEnabled"]);
 					return r ? s.a.createElement(t, o) : void 0 !== n ? s.a.createElement(n, o) : null
 				})
 			}
@@ -279,4 +320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.b546ee20db443b0c986a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.7a45d767f43cb4c30d6d.js.map

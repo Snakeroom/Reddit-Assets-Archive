@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3fbe7fe809d6c445af7f.js
-// Retrieved at 9/21/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f6d90cf6907be6484ecd.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "73bbb9e-production"
+					SENTRY_RELEASE_VERSION: "eee109c-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1682,10 +1682,10 @@
 			}));
 			var d = n("./src/reddit/actions/modal.ts"),
 				u = n("./src/reddit/actions/gold/constants.ts");
-			Object(o.a)(u.ob), Object(o.a)(u.nb), Object(o.a)(u.mb);
-			const p = Object(o.a)(u.rb),
-				m = Object(o.a)(u.qb),
-				h = Object(o.a)(u.pb),
+			Object(o.a)(u.pb), Object(o.a)(u.ob), Object(o.a)(u.nb);
+			const p = Object(o.a)(u.sb),
+				m = Object(o.a)(u.rb),
+				h = Object(o.a)(u.qb),
 				b = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 25;
 					return async (n, o, i) => {
@@ -1710,7 +1710,7 @@
 						}
 					}
 				},
-				f = Object(o.a)(u.sb),
+				f = Object(o.a)(u.tb),
 				g = e => async (t, n) => {
 					t(f({
 						postId: e
@@ -23760,26 +23760,28 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "h", (function() {
-				return i
-			})), n.d(t, "g", (function() {
-				return a
-			})), n.d(t, "f", (function() {
-				return c
 			})), n.d(t, "i", (function() {
-				return l
+				return i
+			})), n.d(t, "h", (function() {
+				return a
+			})), n.d(t, "g", (function() {
+				return c
 			})), n.d(t, "j", (function() {
+				return l
+			})), n.d(t, "k", (function() {
 				return d
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return u
-			})), n.d(t, "b", (function() {
-				return p
 			})), n.d(t, "c", (function() {
+				return p
+			})), n.d(t, "b", (function() {
 				return m
 			})), n.d(t, "d", (function() {
 				return h
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "e", (function() {
 				return b
+			})), n.d(t, "l", (function() {
+				return f
 			}));
 			var s, o = n("./src/config.ts"),
 				r = n("./src/reddit/endpoints/governance/requester.ts");
@@ -23845,21 +23847,25 @@
 				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(s || (s = {}));
 			const p = e => ({
-					type: "claim",
+					type: "convert-to-coins",
 					subredditId: e
 				}),
 				m = e => ({
+					type: "claim",
+					subredditId: e
+				}),
+				h = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
-				h = (e, t, n, s) => ({
+				b = (e, t, n, s) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: n,
 					amount: s
 				});
-			async function b(e, t) {
+			async function f(e, t) {
 				return await Object(r.a)(e, {
 					method: "put",
 					endpoint: "".concat(o.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -33885,4 +33891,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3fbe7fe809d6c445af7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f6d90cf6907be6484ecd.js.map

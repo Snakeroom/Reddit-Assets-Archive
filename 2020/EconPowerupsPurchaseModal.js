@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.efdca03deae7e74fff3e.js
-// Retrieved at 9/21/2020, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7d29a71db58aa0df528d.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -151,7 +151,7 @@
 							t && t.type && ("paypal-finish.success.framedmodal" === t.type ? (b(), m && m.close()) : "paypal-finish.cancel.framedmodal" === t.type && m && m.close())
 						},
 						b = () => {
-							i(Object(v.d)({
+							i(Object(v.e)({
 								subredditId: l,
 								powerupsCount: n,
 								user: a,
@@ -162,7 +162,7 @@
 						onClick: async () => {
 							if (!o) return;
 							u(!0);
-							const e = await i(Object(v.f)(o, l, c, n));
+							const e = await i(Object(v.g)(o, l, c, n));
 							if (e) {
 								const {
 									url: t
@@ -332,7 +332,7 @@
 					} = e, u = Object(c.c)(), m = i || o;
 					return r.a.createElement(T.f, {
 						onClick: () => {
-							l && n && u(Object(v.g)(l, n, d, a, s))
+							l && n && u(Object(v.h)(l, n, d, a, s))
 						},
 						className: t,
 						disabled: m || !l
@@ -354,7 +354,7 @@
 					let {
 						subredditId: a
 					} = t;
-					const s = Object(k.b)(e, {
+					const s = Object(k.c)(e, {
 						subredditId: a,
 						type: N.a.Powerups
 					});
@@ -377,7 +377,7 @@
 						userPowerupsData: p
 					} = e, b = Object(c.c)(), [h, f] = Object(s.useState)(M.xb);
 					Object(s.useEffect)(() => {
-						b(Object(v.c)()), b(Object(y.selectPaymentMethod)(h))
+						b(Object(v.d)()), b(Object(y.selectPaymentMethod)(h))
 					}, []);
 					const w = Object(_.a)();
 					Object(s.useEffect)(() => {
@@ -658,4 +658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.efdca03deae7e74fff3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7d29a71db58aa0df528d.js.map

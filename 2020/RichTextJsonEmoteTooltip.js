@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.821e2e2c49d828ddf676.js
-// Retrieved at 6/30/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.4ccf1c3a5cce4746d144.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextJsonEmoteTooltip"], {
 		"./src/reddit/components/RichTextJson/Emote/Tooltip/index.m.less": function(e, t, o) {
@@ -67,4 +67,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RichTextJsonEmoteTooltip.821e2e2c49d828ddf676.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.4ccf1c3a5cce4746d144.js.map

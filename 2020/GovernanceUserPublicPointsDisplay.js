@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.f0beb34cdb18ac69b40f.js
-// Retrieved at 9/9/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.7bb1fa767dd3d6437f33.js
+// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -288,26 +288,28 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "h", (function() {
-				return d
-			})), n.d(t, "g", (function() {
-				return c
-			})), n.d(t, "f", (function() {
-				return i
 			})), n.d(t, "i", (function() {
-				return a
+				return d
+			})), n.d(t, "h", (function() {
+				return c
+			})), n.d(t, "g", (function() {
+				return i
 			})), n.d(t, "j", (function() {
+				return a
+			})), n.d(t, "k", (function() {
 				return u
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return l
-			})), n.d(t, "b", (function() {
-				return b
 			})), n.d(t, "c", (function() {
+				return b
+			})), n.d(t, "b", (function() {
 				return m
 			})), n.d(t, "d", (function() {
 				return p
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "e", (function() {
 				return f
+			})), n.d(t, "l", (function() {
+				return g
 			}));
 			var r, s = n("./src/config.ts"),
 				o = n("./src/reddit/endpoints/governance/requester.ts");
@@ -373,21 +375,25 @@
 				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(r || (r = {}));
 			const b = e => ({
-					type: "claim",
+					type: "convert-to-coins",
 					subredditId: e
 				}),
 				m = e => ({
+					type: "claim",
+					subredditId: e
+				}),
+				p = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
-				p = (e, t, n, r) => ({
+				f = (e, t, n, r) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: n,
 					amount: r
 				});
-			async function f(e, t) {
+			async function g(e, t) {
 				return await Object(o.a)(e, {
 					method: "put",
 					endpoint: "".concat(s.a.metaUrl, "/crypto/ethereum/transaction-intent"),
@@ -726,4 +732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.f0beb34cdb18ac69b40f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.7bb1fa767dd3d6437f33.js.map
