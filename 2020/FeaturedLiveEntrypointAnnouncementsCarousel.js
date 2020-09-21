@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.cbe4ae1ad019d7a70ba6.js
-// Retrieved at 9/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.bbd990ab29f7a1b1d056.js
+// Retrieved at 9/21/2020, 11:30:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -50,8 +50,8 @@
 			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
 				a = t("./node_modules/react/index.js"),
 				o = t.n(a),
-				r = t("./src/lib/classNames/index.ts"),
-				c = t("./src/reddit/controls/InternalLink/index.tsx"),
+				c = t("./src/lib/classNames/index.ts"),
+				r = t("./src/reddit/controls/InternalLink/index.tsx"),
 				i = t("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				l = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				d = (t("./node_modules/core-js/modules/es6.array.sort.js"), t("./node_modules/lodash/isEqual.js")),
@@ -76,8 +76,8 @@
 						},
 						announcement: {
 							id: t,
-							title: s,
-							body: a || ""
+							title: "function" == typeof s ? s() : s,
+							body: "function" == typeof a ? a() : a || ""
 						}
 					}, Object(p.defaults)(n))
 				},
@@ -94,9 +94,9 @@
 					setActiveIndex: t,
 					setIsHidden: s,
 					setVisibleAnnouncements: o,
-					visibleAnnouncements: r
+					visibleAnnouncements: c
 				} = e;
-				const c = Object(m.d)(_.a);
+				const r = Object(m.d)(_.a);
 				Object(a.useEffect)(() => {
 					const e = Object(b.e)(),
 						a = n.filter(((e, n) => t => {
@@ -110,16 +110,16 @@
 								if (n && Object(v.Fc)(n.variant)) return !1
 							}
 							return !((n[t.id] || 0) >= t.maxImpressionsCount)
-						})(c, e)).slice(0, 5),
+						})(r, e)).slice(0, 5),
 						i = [...a].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(e))[0];
-					u()(a.map(e => e.id), r.map(e => e.id)) || (o(a), t(a.indexOf(i)), s(!1))
+					u()(a.map(e => e.id), c.map(e => e.id)) || (o(a), t(a.indexOf(i)), s(!1))
 				}, [])
 			};
 			var C = t("./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less"),
 				j = t.n(C);
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function f() {
+				return (f = Object.assign || function(e) {
 					for (var n = 1; n < arguments.length; n++) {
 						var t = arguments[n];
 						for (var s in t) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s])
@@ -127,7 +127,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var f = function(e, n) {
+			var g = function(e, n) {
 				var t = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && n.indexOf(s) < 0 && (t[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -168,11 +168,11 @@
 						announcement: n,
 						children: t,
 						to: s
-					} = e, a = f(e, ["announcement", "children", "to"]);
-					const r = n.url.split("reddit.com");
-					return r.length > 1 ? o.a.createElement(c.a, g({
-						to: r[1]
-					}, a), t) : o.a.createElement("a", g({
+					} = e, a = g(e, ["announcement", "children", "to"]);
+					const c = n.url.split("reddit.com");
+					return c.length > 1 ? o.a.createElement(r.a, f({
+						to: c[1]
+					}, a), t) : o.a.createElement("a", f({
 						href: n.url
 					}, a), t)
 				});
@@ -180,12 +180,12 @@
 				let {
 					announcements: n
 				} = e;
-				const [t, c] = Object(a.useState)([]), [d, u] = Object(a.useState)(!0), [m, v] = Object(a.useState)(0);
+				const [t, r] = Object(a.useState)([]), [d, u] = Object(a.useState)(!0), [m, v] = Object(a.useState)(0);
 				O({
 					announcements: n,
 					setActiveIndex: v,
 					setIsHidden: u,
-					setVisibleAnnouncements: c,
+					setVisibleAnnouncements: r,
 					visibleAnnouncements: t
 				});
 				const {
@@ -198,15 +198,15 @@
 						setActiveIndex: s
 					} = e;
 					const o = Object(A.a)(),
-						[r, c] = Object(a.useState)(!0),
+						[c, r] = Object(a.useState)(!0),
 						i = Object(a.useRef)(null);
 					return {
 						onCarouselNavigate: Object(a.useCallback)(e => () => {
-							"next" === e && n + 1 >= t.length ? s(0) : s("prev" === e && n <= 0 ? t.length - 1 : n + ("next" === e ? 1 : -1)), o(h("next" === e ? "scroll_next" : "scroll_previous")), i.current && window.clearTimeout(i.current), c(!1), i.current = window.setTimeout(() => {
-								c(!0)
+							"next" === e && n + 1 >= t.length ? s(0) : s("prev" === e && n <= 0 ? t.length - 1 : n + ("next" === e ? 1 : -1)), o(h("next" === e ? "scroll_next" : "scroll_previous")), i.current && window.clearTimeout(i.current), r(!1), i.current = window.setTimeout(() => {
+								r(!0)
 							}, 200)
 						}, [n, o, s, t]),
-						isTransitionComplete: r
+						isTransitionComplete: c
 					}
 				})({
 					activeIndex: m,
@@ -230,7 +230,7 @@
 				})({
 					visibleAnnouncements: t,
 					setIsHidden: u
-				}), g = (e => {
+				}), f = (e => {
 					let {
 						activeIndex: n,
 						setActiveIndex: t,
@@ -282,7 +282,7 @@
 					className: j.a.AnnouncementsWrapper
 				}, t.map((e, n) => o.a.createElement(E, {
 					announcement: e,
-					className: Object(r.a)(j.a.Announcement, {
+					className: Object(c.a)(j.a.Announcement, {
 						[j.a.isActive]: n === m,
 						[j.a.prev]: t.length > 1 && 0 === m && n + 1 === t.length || n === m - 1,
 						[j.a.next]: t.length > 1 && m + 1 === t.length && 0 === n || n === m + 1,
@@ -290,7 +290,7 @@
 					}),
 					isActive: n === m,
 					key: e.id,
-					onClick: g
+					onClick: f
 				}))), t.length > 1 ? o.a.createElement("button", {
 					className: j.a.RightArrow,
 					onClick: p("next")
@@ -301,7 +301,7 @@
 				}, t.map((e, n) => o.a.createElement("button", {
 					onClick: () => v(n),
 					key: "announcement-carousel-dot-".concat(n),
-					className: Object(r.a)(j.a.Dot, {
+					className: Object(c.a)(j.a.Dot, {
 						[j.a.isSelected]: n === m
 					})
 				}))) : o.a.createElement("div", {
@@ -319,10 +319,10 @@
 			var s = t("./node_modules/react/index.js"),
 				a = t.n(s),
 				o = t("./src/lib/classNames/index.ts"),
-				r = t("./src/reddit/icons/svgs/Chevron/index.m.less"),
-				c = t.n(r);
+				c = t("./src/reddit/icons/svgs/Chevron/index.m.less"),
+				r = t.n(c);
 			n.a = e => a.a.createElement("svg", {
-				className: Object(o.a)(c.a.chevron, e.className),
+				className: Object(o.a)(r.a.chevron, e.className),
 				viewBox: "0 0 9 14",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", {
@@ -337,4 +337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.cbe4ae1ad019d7a70ba6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.bbd990ab29f7a1b1d056.js.map

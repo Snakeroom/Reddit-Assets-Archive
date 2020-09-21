@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~ShortcutWrapper.60e3b64f3a87f877e5c5.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~ShortcutWrapper.d5c7a53f2e608b688f9c.js
+// Retrieved at 9/21/2020, 11:30:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~ShortcutWrapper"], {
 		"./node_modules/combokeys/Combokeys/index.js": function(e, t, o) {
@@ -360,6 +360,24 @@
 			}, r.thatReturnsArgument = function(e) {
 				return e
 			}, e.exports = r
+		},
+		"./node_modules/fbjs/lib/invariant.js": function(e, t, o) {
+			"use strict";
+			var n = function(e) {};
+			e.exports = function(e, t, o, r, s, i, a, l) {
+				if (n(t), !e) {
+					var c;
+					if (void 0 === t) c = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
+					else {
+						var u = [o, r, s, i, a, l],
+							p = 0;
+						(c = new Error(t.replace(/%s/g, (function() {
+							return u[p++]
+						})))).name = "Invariant Violation"
+					}
+					throw c.framesToPop = 1, c
+				}
+			}
 		},
 		"./node_modules/just-reduce-object/index.js": function(e, t) {
 			e.exports = function(e, t) {
@@ -1116,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~ShortcutWrapper.60e3b64f3a87f877e5c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ShortcutWrapper.d5c7a53f2e608b688f9c.js.map

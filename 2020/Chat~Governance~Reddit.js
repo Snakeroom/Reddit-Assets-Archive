@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c6cb87019102b04d653b.js
-// Retrieved at 9/17/2020, 7:30:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1ed9fb85f70e8206b3d4.js
+// Retrieved at 9/21/2020, 11:30:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1593,11 +1593,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("112590"),
+				buildNumber: r("112749"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1600383640"),
+				})("1600701151"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3231,7 +3231,7 @@
 		"./src/lib/initializeClient/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return Q
+				return J
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/core-js/modules/es6.regexp.constructor.js"), i("./node_modules/core-js/modules/es6.regexp.match.js"), i("./node_modules/core-js/modules/es6.regexp.search.js"), i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = i("./node_modules/@loadable/component/dist/loadable.esm.js"),
@@ -3305,34 +3305,41 @@
 				B = i("./src/lib/DeprecatedBrowserProvider/index.tsx"),
 				x = i("./src/lib/initializeClient/installReducer.ts"),
 				R = i("./src/lib/logs/errors.ts"),
-				k = i("./src/lib/matchRoute/index.ts"),
-				N = i("./src/lib/performanceTimings/index.tsx"),
-				C = i("./src/lib/sample/index.ts"),
-				P = i("./src/lib/sentry/index.ts"),
-				L = i("./src/reddit/helpers/localStorage/index.ts"),
-				A = i("./src/reddit/selectors/user.ts"),
-				D = i("./src/telemetry/helpers/sendCounter.ts"),
-				G = i("./src/lib/logSafeJSONStringify/index.ts");
-			const M = e => setTimeout(() => {
+				k = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "en_US";
+					return {
+						GENDER: d.IntlVariations.GENDER_UNKNOWN,
+						locale: e
+					}
+				},
+				N = i("./src/lib/matchRoute/index.ts"),
+				C = i("./src/lib/performanceTimings/index.tsx"),
+				P = i("./src/lib/sample/index.ts"),
+				L = i("./src/lib/sentry/index.ts"),
+				A = i("./src/reddit/helpers/localStorage/index.ts"),
+				D = i("./src/reddit/selectors/user.ts"),
+				G = i("./src/telemetry/helpers/sendCounter.ts"),
+				M = i("./src/lib/logSafeJSONStringify/index.ts");
+			const U = e => setTimeout(() => {
 					throw e
 				}, 0),
-				U = new Set(["displayText", "email", "profileId", "url"].map(e => e.toLowerCase()));
-			var q = e => t => i => n => {
-				"object" == typeof n && P.c.addBreadcrumb({
+				q = new Set(["displayText", "email", "profileId", "url"].map(e => e.toLowerCase()));
+			var V = e => t => i => n => {
+				"object" == typeof n && L.c.addBreadcrumb({
 					message: n.type,
 					category: "redux-action"
 				});
 				const r = i(n),
 					s = t.getState();
-				return P.c.setExtra("pageInfo", JSON.parse(Object(G.a)(s.platform))), P.c.setUser(JSON.parse(Object(G.a)(s.user, U))), !e && r instanceof Promise && r.catch(M), r
+				return L.c.setExtra("pageInfo", JSON.parse(Object(M.a)(s.platform))), L.c.setUser(JSON.parse(Object(M.a)(s.user, q))), !e && r instanceof Promise && r.catch(U), r
 			};
-			const V = !1;
+			const W = !1;
 
-			function W(e) {
-				return "ChunkLoadError" !== e.type || Object(C.a)(1)
+			function H(e) {
+				return "ChunkLoadError" !== e.type || Object(P.a)(1)
 			}
 			_.a.polyfill();
-			const H = () => {
+			const z = () => {
 					if (!(() => {
 							try {
 								return window.history.state || {}
@@ -3347,7 +3354,7 @@
 						}, "", t)
 					}
 				},
-				z = () => {
+				K = () => {
 					(document.cookie.match(/loid=/g) || []).length > 1 && (u.a.set("loid", "", {
 						expires: 0,
 						path: "/"
@@ -3356,38 +3363,38 @@
 						path: "/"
 					}))
 				},
-				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("59a4e83-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+				Q = (e, t, i) => {
+					console.log("%cStarting Raven %crelease %c".concat("30cdebe-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "59a4e83-production",
+						release: "30cdebe-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
-						integrations: [...Object(P.d)(), new s.Integrations.Breadcrumbs({
+						integrations: [...Object(L.d)(), new s.Integrations.Breadcrumbs({
 							console: !1
 						}), new s.Integrations.GlobalHandlers({
 							onerror: !0,
 							onunhandledrejection: !1
 						})],
-						beforeSend: e => (e = Object(P.b)(e)).exception && e.exception.values && (e.exception.values = e.exception.values.filter(W), 0 === e.exception.values.length) ? null : (Object(R.sendRavenError)(i(), e), Object(P.e)(e))
+						beforeSend: e => (e = Object(L.b)(e)).exception && e.exception.values && (e.exception.values = e.exception.values.filter(H), 0 === e.exception.values.length) ? null : (Object(R.sendRavenError)(i(), e), Object(L.e)(e))
 					}), t.tags && o.j(t.tags), o.i("app", e)
 				};
-			async function Q(e) {
+			async function J(e) {
 				let t;
-				Object(N.e)(N.b.InitClientStart), document.documentElement && "object" == typeof document.documentElement && "string" == typeof document.documentElement.innerHTML && (t = document.documentElement.innerHTML.length);
+				Object(C.e)(C.b.InitClientStart), document.documentElement && "object" == typeof document.documentElement && "string" == typeof document.documentElement.innerHTML && (t = document.documentElement.innerHTML.length);
 				const r = Object(n.b)(() => {}, {
 					namespace: e.appName
 				});
-				z(), H();
+				K(), z();
 				const s = e.history || Object(l.a)(),
-					a = Object(k.a)(s.location.pathname, e.routes),
+					a = Object(N.a)(s.location.pathname, e.routes),
 					u = a && a.route && a.route.chunk ? a.route.chunk : "unknown";
 				let c = e => e.children;
-				e.raven && (K(e.appName, e.raven, e.apiContext), c = class extends p.a.Component {
+				e.raven && (Q(e.appName, e.raven, e.apiContext), c = class extends p.a.Component {
 					componentDidCatch(e, t) {
 						o.l(i => {
 							i.setExtra("info", t), o.c(e)
@@ -3415,7 +3422,7 @@
 						shouldHotReload: !1
 					}) : e => e,
 					h = [!1, Object(b.d)(s), ...e.customMiddleware || []].filter(Boolean);
-				e.raven && h.unshift(q(_));
+				e.raven && h.unshift(V(_));
 				let y = window.___r || {};
 				delete window.___r;
 				const S = document.getElementById("data");
@@ -3434,32 +3441,37 @@
 					if ("en-US" !== t) try {
 						const n = (await i("./src/i18n/translatedFbts lazy recursive ^\\.\\/.*\\.json$")("./".concat(t, ".json"))).default;
 						for (const t in n) e[t] = n[t]
-					} catch (n) {
+					} catch (r) {
 						t = "en-US"
 					}
-					e[t] || (t = "en-US"), d.IntlViewerContext.locale = t, Object(d.init)({
-						translations: e
+					e[t] || (t = "en-US");
+					const n = k(t);
+					Object(d.init)({
+						translations: e,
+						hooks: {
+							getViewerContext: () => n
+						}
 					})
-				}(), C = y.user && y.user.account ? y.user.account.id : null;
-				Object(L.F)(C);
+				}(), P = y.user && y.user.account ? y.user.account.id : null;
+				Object(A.F)(P);
 				const {
-					routes: P
+					routes: L
 				} = e;
-				let G = {};
-				e.preRender && (G = e.preRender({
+				let M = {};
+				e.preRender && (M = e.preRender({
 					browserHistory: s,
-					routes: P,
+					routes: L,
 					store: E,
 					flags: {
-						DEBUG: V,
+						DEBUG: W,
 						SUPPORTS_REJECTION_EVENTS: _
 					}
-				})), Object(N.e)(N.b.CreateRouteCompsStart);
-				const M = I({
-					routes: P,
+				})), Object(C.e)(C.b.CreateRouteCompsStart);
+				const U = I({
+					routes: L,
 					loadingPage: e.staticPages ? e.staticPages.loading : void 0
 				});
-				await r, Object(N.e)(N.b.ReactHydrateStart), await R,
+				await r, Object(C.e)(C.b.ReactHydrateStart), await R,
 					function(e) {
 						const t = Array.from(e.getElementsByClassName(T));
 						for (const i of t) document.head.appendChild(i), i.classList.remove(T)
@@ -3467,19 +3479,19 @@
 						store: E
 					}, p.a.createElement(j.a, null, p.a.createElement(B.b, {
 						userAgent: y.meta.userAgent
-					}, e.appFactory(O(s), M))))), e.target, t)), Object(N.e)(N.b.ReactHydrateEnd), e.postRender && e.postRender({
+					}, e.appFactory(O(s), U))))), e.target, t)), Object(C.e)(C.b.ReactHydrateEnd), e.postRender && e.postRender({
 						browserHistory: s,
-						routes: P,
+						routes: L,
 						serverDocumentLength: t,
 						store: E,
-						localStorageData: G.localStorageData
+						localStorageData: M.localStorageData
 					});
-				const U = Object(A.H)(E.getState());
-				return Object(N.e)(N.b.InitClientEnd), e.appName === v.l.Redesign && Object(D.b)(v.l.Redesign, {
-					type: D.a.ClientScreenview,
+				const q = Object(D.H)(E.getState());
+				return Object(C.e)(C.b.InitClientEnd), e.appName === v.l.Redesign && Object(G.b)(v.l.Redesign, {
+					type: G.a.ClientScreenview,
 					data: {
 						pageName: u,
-						loggedIn: U
+						loggedIn: q
 					}
 				}), {
 					store: E
@@ -3789,7 +3801,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "59a4e83-production",
+							releaseClient: "30cdebe-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -6012,14 +6024,14 @@
 				o = {
 					id: "COVID_SEARCH",
 					icon: r.a.Snoo,
-					title: n.fbt._("Stay informed", null, {
+					title: () => n.fbt._("Stay informed", null, {
 						hk: "3HKOH"
 					}),
-					description: n.fbt._("To get the latest updates on COVID-19 and information on how to stay safe and healthy, visit the Centers for Disease Control and Prevention (CDC).", null, {
+					description: () => n.fbt._("To get the latest updates on COVID-19 and information on how to stay safe and healthy, visit the Centers for Disease Control and Prevention (CDC).", null, {
 						hk: "2glecH"
 					}),
 					url: "https://www.cdc.gov/",
-					callToAction: n.fbt._("Visit CDC.gov", null, {
+					callToAction: () => n.fbt._("Visit CDC.gov", null, {
 						hk: "2hVXRi"
 					}),
 					maxImpressionsCount: Number.MAX_SAFE_INTEGER,
@@ -22533,4 +22545,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c6cb87019102b04d653b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1ed9fb85f70e8206b3d4.js.map
