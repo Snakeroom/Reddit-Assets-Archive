@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.54fc1b855c48dfb11f1f.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.46eb57f9ba13d638eb44.js
+// Retrieved at 9/22/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -1211,9 +1211,12 @@
 					}),
 					onClose: Y,
 					onTransactionSuccess: async e => {
-						Y(), O(Object(k.e)(Object(k.d)(m.fbt._("Processing your conversion...", null, {
-							hk: "4dA09t"
-						}), D.b.SuccessCommunity))), async function(e, t, a, n, c) {
+						Y(), O(function() {
+							const e = Object(k.d)(m.fbt._("Processing your conversion...", null, {
+								hk: "4dA09t"
+							}), D.b.SuccessCommunity);
+							return e.duration = 15e3, Object(k.e)(e)
+						}()), async function(e, t, a, n, c) {
 							await Object(A.a)(t, a);
 							const r = Object(w.a)(n.id, n.name, {
 								force: !0
@@ -1227,9 +1230,12 @@
 								subredditId: n.id
 							}))
 						}(O, p, e.hash, l, j).then(() => {
-							V(Object(T.b)("coins", b, new C.a(G).dividedBy(E).toString())), O(Object(k.e)(Object(k.d)(m.fbt._("Your Coins are ready!", null, {
-								hk: "7ewJ6"
-							}), D.b.SuccessCommunityGreen)))
+							V(Object(T.b)("coins", b, new C.a(G).dividedBy(E).toString())), O(function() {
+								const e = Object(k.d)(m.fbt._("Your Coins are ready!", null, {
+									hk: "7ewJ6"
+								}), D.b.SuccessCommunityGreen);
+								return e.duration = 15e3, Object(k.e)(e)
+							}())
 						}).catch(e => {
 							W(e.toString()), O(Object(k.e)(Object(k.d)(m.fbt._("There was an error while purchasing your Coins. Please try again later", null, {
 								hk: "nEHTT"
@@ -1872,4 +1878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.54fc1b855c48dfb11f1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.46eb57f9ba13d638eb44.js.map
