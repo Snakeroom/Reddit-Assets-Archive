@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.f1dfb152556f42fd1ce7.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.a1c0f4f759bda245c331.js
+// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, r) {
@@ -316,7 +316,7 @@
 				},
 				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(v.G)(e.media) && e.media.content)),
 				F = e => !!e && e.isBlank,
-				D = [{
+				R = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
 				}, {
@@ -326,7 +326,7 @@
 					img: "/img/house-ads/castiron.png",
 					href: "/r/castiron"
 				}],
-				R = Object(f.c)(class extends c.a.Component {
+				D = Object(f.c)(class extends c.a.Component {
 					shouldComponentUpdate(e, t) {
 						const {
 							className: r,
@@ -338,11 +338,11 @@
 						Math.random() <= u.a.telemetry.programmaticAdSampleRate && this.props.sendEvent(Object(g.d)(e, t, r))
 					}
 					render() {
-						const e = o()(0, D.length - 1),
+						const e = o()(0, R.length - 1),
 							{
 								img: t,
 								href: r
-							} = D[e],
+							} = R[e],
 							{
 								className: n,
 								placement: s,
@@ -399,7 +399,7 @@
 						redditStyle: u
 					}, c.a.createElement(I, {
 						"data-before-content": g
-					}))) : h ? c.a.createElement(R, {
+					}))) : h ? c.a.createElement(D, {
 						className: e,
 						redditStyle: u,
 						placement: d,
@@ -856,9 +856,9 @@
 			const o = e => s.e[Object(a.N)(e, {})] === s.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.D
-				}) === n.M.Treatment
+					experimentName: n.y
+				}) === n.H.Treatment
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.f1dfb152556f42fd1ce7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.a1c0f4f759bda245c331.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.5464fef24f3d62c9c509.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.83af4058a422a9791011.js
+// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2596,53 +2596,41 @@
 				a = s("./node_modules/react-redux/es/index.js"),
 				c = s("./node_modules/reselect/es/index.js"),
 				d = s("./src/lib/classNames/index.ts"),
-				l = s("./src/reddit/selectors/experiments/chatPost.ts"),
+				l = s("./src/reddit/selectors/chatPost.ts"),
 				m = s("./src/reddit/components/CommentsChat/LiveIcon/index.m.less"),
 				p = s.n(m);
 			const u = .1,
 				b = Object(c.c)({
-					isChatPost: l.e,
-					isChatPostExperiment: l.d
+					isChatPost: l.d
 				}),
-				h = Object(a.b)(b, e => ({
-					sendChatPostExposureEvent: (t, s) => e((e, n) => Object(l.g)(n(), t, s))
-				}));
+				h = Object(a.b)(b);
 			class x extends i.a.Component {
 				constructor(e) {
 					super(e), this.onVisibilityChange = e => {
-						e.isIntersecting && e.intersectionRatio >= u ? this.state.visible || (this.setState({
+						e.isIntersecting && e.intersectionRatio >= u ? this.state.visible || this.setState({
 							visible: !0
-						}), this.sendChatPostExposureEvent()) : this.state.visible && this.setState({
+						}) : this.state.visible && this.setState({
 							visible: !1
 						})
 					}, this.state = {
-						visible: null
+						visible: !1
 					}
-				}
-				sendChatPostExposureEvent() {
-					const {
-						isChatPost: e,
-						isMod: t,
-						sendChatPostExposureEvent: s
-					} = this.props;
-					s(e, t)
 				}
 				render() {
 					const {
 						visible: e
 					} = this.state, {
-						isChatPost: t,
-						isChatPostExperiment: s
-					} = this.props, r = s && (null === e || e);
+						isChatPost: t
+					} = this.props, s = t && e;
 					return t ? i.a.createElement(n.a, {
 						rootMargin: "20px 0px 20px 0px",
 						threshold: u,
 						onChange: this.onVisibilityChange
-					}, s ? i.a.createElement("div", {
+					}, i.a.createElement("div", {
 						className: Object(d.a)(p.a.Icon, this.props.className)
 					}, i.a.createElement("span", {
 						className: Object(d.a)(p.a.Animate, p.a.top, {
-							[p.a.play]: r
+							[p.a.play]: s
 						})
 					}, i.a.createElement("span", {
 						className: p.a.bigCircle
@@ -2656,7 +2644,7 @@
 						hk: "2akFwx"
 					})), i.a.createElement("span", {
 						className: Object(d.a)(p.a.Animate, p.a.bottom, {
-							[p.a.play]: r
+							[p.a.play]: s
 						})
 					}, i.a.createElement("span", {
 						className: p.a.bigCircle
@@ -2664,7 +2652,7 @@
 						className: p.a.midCircle
 					}), i.a.createElement("span", {
 						className: p.a.smallCircle
-					}))) : i.a.createElement("span", null)) : null
+					})))) : null
 				}
 			}
 			t.a = h(x)
@@ -2693,14 +2681,14 @@
 				u = s("./src/reddit/constants/postLayout.ts"),
 				b = s("./src/reddit/helpers/path/index.ts"),
 				h = s("./src/reddit/icons/fonts/Comment/index.tsx"),
-				x = s("./src/reddit/selectors/experiments/chatPost.ts"),
+				x = s("./src/reddit/selectors/chatPost.ts"),
 				f = s("./src/reddit/selectors/experiments/postSeo.ts"),
 				v = s("./src/reddit/selectors/posts.ts"),
 				g = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/components/CommentsLink/index.m.less"),
 				E = s.n(O);
 			const C = Object(i.b)(() => Object(c.c)({
-					isChatPostExperiment: x.d,
+					isChatPost: x.d,
 					isPostSEOEligible: f.d,
 					postPermalink: v.M,
 					shouldOpenPostInNewTab: g.U
@@ -2709,14 +2697,14 @@
 					let t, {
 						type: s,
 						numComments: i,
-						isChatPostExperiment: a,
+						isChatPost: a,
 						modModeEnabled: c,
 						hasModPostPerms: d,
 						shouldShowIcon: l,
 						shouldShowText: p,
 						text: b
 					} = e;
-					return t = b || (s === u.g.Compact || c && d || a ? Object(m.b)(i) : n.fbt._({
+					return t = b || (s === u.g.Compact || a || c && d ? Object(m.b)(i) : n.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
 					}, [n.fbt._plural(i, "number", Object(m.b)(i))], {
@@ -2732,7 +2720,7 @@
 				const {
 					className: t,
 					hasModPostPerms: s,
-					isChatPostExperiment: n,
+					isChatPost: n,
 					isCommentPermalink: o,
 					isCommentsPage: i,
 					isOverlay: c,
@@ -2749,7 +2737,7 @@
 				} = e, y = i && !o && !m, k = o && !c, w = r.a.createElement(_, {
 					type: j,
 					numComments: h,
-					isChatPostExperiment: n,
+					isChatPost: n,
 					modModeEnabled: u,
 					hasModPostPerms: s,
 					shouldShowIcon: g,
@@ -9078,7 +9066,7 @@
 				c = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				d = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				l = s("./src/reddit/selectors/activeModalId.ts"),
-				m = s("./src/reddit/selectors/experiments/chatPost.ts"),
+				m = s("./src/reddit/selectors/chatPost.ts"),
 				p = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				u = s("./src/reddit/selectors/postFlair.ts"),
 				b = s("./src/reddit/selectors/posts.ts"),
@@ -9089,7 +9077,7 @@
 					crosspost: b.d,
 					currentUser: h.i,
 					isActive: b.j,
-					isChatPostExperiment: m.d,
+					isChatPost: m.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.m,
 					isLoggedIn: h.H,
@@ -11168,4 +11156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.5464fef24f3d62c9c509.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.83af4058a422a9791011.js.map

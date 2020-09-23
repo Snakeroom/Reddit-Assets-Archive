@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.ccbf220434b6756eaa3f.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.e596811d64fb04d31bb8.js
+// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -804,9 +804,9 @@
 			})), n.d(t, "t", (function() {
 				return _
 			})), n.d(t, "q", (function() {
-				return E
-			})), n.d(t, "a", (function() {
 				return S
+			})), n.d(t, "a", (function() {
+				return E
 			})), n.d(t, "r", (function() {
 				return N
 			}));
@@ -833,8 +833,8 @@
 				w = r.a.div("ModalMain", c.a),
 				C = r.a.textarea("TextArea", c.a),
 				_ = r.a.wrapped(s.f, "WarningButton", c.a),
-				E = r.a.wrapped(s.f, "PrimaryButton", c.a),
-				S = r.a.wrapped(s.i, "CancelButton", c.a),
+				S = r.a.wrapped(s.f, "PrimaryButton", c.a),
+				E = r.a.wrapped(s.i, "CancelButton", c.a),
 				N = r.a.wrapped(s.n, "RemoveButton", c.a)
 		},
 		"./src/reddit/components/Portal/index.tsx": function(e, t, n) {
@@ -1170,7 +1170,7 @@
 		"./src/reddit/components/VerticalVotes/votes.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return S
+				return E
 			})), n.d(t, "b", (function() {
 				return N
 			})), n.d(t, "c", (function() {
@@ -1258,12 +1258,12 @@
 				}
 				return n
 			};
-			const E = e => Object(o.a)({
+			const S = e => Object(o.a)({
 					[w.a.compact]: e.compact,
 					[w.a.dark]: Object(O.b)(Object(v.a)(e)),
 					[w.a.nightmode]: e.isNightmode
 				}),
-				S = Object(a.a)(e => {
+				E = Object(a.a)(e => {
 					const {
 						voteIcons: t
 					} = Object(x.a)(e), n = {
@@ -1273,7 +1273,7 @@
 						theme: r
 					} = e, a = _(e, ["theme"]);
 					return s.a.createElement("button", C({}, a, {
-						className: Object(o.a)(w.a.customDownvote, E(e), {
+						className: Object(o.a)(w.a.customDownvote, S(e), {
 							[w.a.voted]: e.voteState === d.a.downvoted
 						}, e.className),
 						style: n
@@ -1289,7 +1289,7 @@
 						theme: r
 					} = e, a = _(e, ["theme"]);
 					return s.a.createElement("button", C({}, a, {
-						className: Object(o.a)(w.a.customUpvote, E(e), {
+						className: Object(o.a)(w.a.customUpvote, S(e), {
 							[w.a.voted]: e.voteState === d.a.upvoted
 						}, e.className),
 						style: n
@@ -1613,9 +1613,9 @@
 			})), n.d(t, "c", (function() {
 				return _
 			})), n.d(t, "e", (function() {
-				return E
-			})), n.d(t, "a", (function() {
 				return S
+			})), n.d(t, "a", (function() {
+				return E
 			})), n.d(t, "d", (function() {
 				return N
 			}));
@@ -1699,8 +1699,8 @@
 				w = i.a.wrapped(b, "TertiaryButton", d.a),
 				C = (i.a.wrapped(f, "TertiaryLinkButton", d.a), i.a.wrapped(p, "TertiaryRouterLink", d.a)),
 				_ = i.a.wrapped(b, "GoldButton", d.a),
-				E = i.a.wrapped(b, "PremiumButton", d.a),
-				S = i.a.wrapped(b, "ChatButton", d.a),
+				S = i.a.wrapped(b, "PremiumButton", d.a),
+				E = i.a.wrapped(b, "ChatButton", d.a),
 				N = i.a.wrapped(b, "InlineTextButton", d.a)
 		},
 		"./src/reddit/controls/Downvote/index.m.less": function(e, t, n) {
@@ -1940,7 +1940,7 @@
 					return n
 				},
 				_ = (e, t, n) => e.href = C(t, n, e.href),
-				E = j(e => {
+				S = j(e => {
 					const {
 						allowClickTracking: t,
 						basePixelMetadata: n,
@@ -1979,7 +1979,7 @@
 						onTouchStart: e => w(e.currentTarget, d, l, t)
 					}))
 				});
-			t.b = E
+			t.b = S
 		},
 		"./src/reddit/controls/TextButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2137,9 +2137,9 @@
 			})), n.d(t, "i", (function() {
 				return _
 			})), n.d(t, "f", (function() {
-				return E
-			})), n.d(t, "g", (function() {
 				return S
+			})), n.d(t, "g", (function() {
+				return E
 			})), n.d(t, "a", (function() {
 				return I
 			})), n.d(t, "j", (function() {
@@ -2435,7 +2435,7 @@
 						adblock: h.adblock(r)
 					})
 				},
-				E = (e, t, n) => {
+				S = (e, t, n) => {
 					Object(y.a)(Object.assign(Object.assign({
 						source: "global",
 						action: "view",
@@ -2449,7 +2449,7 @@
 						adblock: h.adblock(e)
 					}))
 				},
-				S = (e, t, n, r) => {
+				E = (e, t, n, r) => {
 					Object(y.a)(Object.assign(Object.assign({
 						source: "global",
 						action: "view",
@@ -2983,7 +2983,7 @@
 		"./src/reddit/layout/page/Listing/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
+				return S
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/react/index.js"),
@@ -3053,7 +3053,7 @@
 				C = c.a.div("Sidebar", v.a),
 				_ = e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null;
 
-			function E(e) {
+			function S(e) {
 				const t = e.trendingUnit ? "28px" : "0",
 					n = e.isPageSwapped ? {
 						marginRight: "".concat(d.q, "px"),
@@ -3161,8 +3161,8 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => (e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Eb
-				}) === r.Gb.Enabled)(e) || (e => "enabled" === Object(s.c)(e, {
+					experimentName: r.zb
+				}) === r.Bb.Enabled)(e) || (e => "enabled" === Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: "survey_demo_nps_1"
 				}))(e) || (e => "enabled" === Object(s.c)(e, {
@@ -3171,8 +3171,8 @@
 				}))(e),
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Db
-				}) === r.Fb.Enabled
+					experimentName: r.yb
+				}) === r.Ab.Enabled
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, n) {
 			"use strict";
@@ -3186,4 +3186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.ccbf220434b6756eaa3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.e596811d64fb04d31bb8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b28c19f39a618d91ca01.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5036515516720595b8ab.js
+// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -6142,53 +6142,41 @@
 				i = s("./node_modules/react-redux/es/index.js"),
 				d = s("./node_modules/reselect/es/index.js"),
 				c = s("./src/lib/classNames/index.ts"),
-				l = s("./src/reddit/selectors/experiments/chatPost.ts"),
+				l = s("./src/reddit/selectors/chatPost.ts"),
 				m = s("./src/reddit/components/CommentsChat/LiveIcon/index.m.less"),
 				u = s.n(m);
 			const p = .1,
 				b = Object(d.c)({
-					isChatPost: l.e,
-					isChatPostExperiment: l.d
+					isChatPost: l.d
 				}),
-				h = Object(i.b)(b, e => ({
-					sendChatPostExposureEvent: (t, s) => e((e, n) => Object(l.g)(n(), t, s))
-				}));
+				h = Object(i.b)(b);
 			class g extends r.a.Component {
 				constructor(e) {
 					super(e), this.onVisibilityChange = e => {
-						e.isIntersecting && e.intersectionRatio >= p ? this.state.visible || (this.setState({
+						e.isIntersecting && e.intersectionRatio >= p ? this.state.visible || this.setState({
 							visible: !0
-						}), this.sendChatPostExposureEvent()) : this.state.visible && this.setState({
+						}) : this.state.visible && this.setState({
 							visible: !1
 						})
 					}, this.state = {
-						visible: null
+						visible: !1
 					}
-				}
-				sendChatPostExposureEvent() {
-					const {
-						isChatPost: e,
-						isMod: t,
-						sendChatPostExposureEvent: s
-					} = this.props;
-					s(e, t)
 				}
 				render() {
 					const {
 						visible: e
 					} = this.state, {
-						isChatPost: t,
-						isChatPostExperiment: s
-					} = this.props, a = s && (null === e || e);
+						isChatPost: t
+					} = this.props, s = t && e;
 					return t ? r.a.createElement(n.a, {
 						rootMargin: "20px 0px 20px 0px",
 						threshold: p,
 						onChange: this.onVisibilityChange
-					}, s ? r.a.createElement("div", {
+					}, r.a.createElement("div", {
 						className: Object(c.a)(u.a.Icon, this.props.className)
 					}, r.a.createElement("span", {
 						className: Object(c.a)(u.a.Animate, u.a.top, {
-							[u.a.play]: a
+							[u.a.play]: s
 						})
 					}, r.a.createElement("span", {
 						className: u.a.bigCircle
@@ -6202,7 +6190,7 @@
 						hk: "2akFwx"
 					})), r.a.createElement("span", {
 						className: Object(c.a)(u.a.Animate, u.a.bottom, {
-							[u.a.play]: a
+							[u.a.play]: s
 						})
 					}, r.a.createElement("span", {
 						className: u.a.bigCircle
@@ -6210,7 +6198,7 @@
 						className: u.a.midCircle
 					}), r.a.createElement("span", {
 						className: u.a.smallCircle
-					}))) : r.a.createElement("span", null)) : null
+					})))) : null
 				}
 			}
 			t.a = h(g)
@@ -6239,14 +6227,14 @@
 				p = s("./src/reddit/constants/postLayout.ts"),
 				b = s("./src/reddit/helpers/path/index.ts"),
 				h = s("./src/reddit/icons/fonts/Comment/index.tsx"),
-				g = s("./src/reddit/selectors/experiments/chatPost.ts"),
+				g = s("./src/reddit/selectors/chatPost.ts"),
 				f = s("./src/reddit/selectors/experiments/postSeo.ts"),
 				x = s("./src/reddit/selectors/posts.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
 				E = s("./src/reddit/components/CommentsLink/index.m.less"),
 				C = s.n(E);
 			const _ = Object(r.b)(() => Object(d.c)({
-					isChatPostExperiment: g.d,
+					isChatPost: g.d,
 					isPostSEOEligible: f.d,
 					postPermalink: x.M,
 					shouldOpenPostInNewTab: v.U
@@ -6255,14 +6243,14 @@
 					let t, {
 						type: s,
 						numComments: r,
-						isChatPostExperiment: i,
+						isChatPost: i,
 						modModeEnabled: d,
 						hasModPostPerms: c,
 						shouldShowIcon: l,
 						shouldShowText: u,
 						text: b
 					} = e;
-					return t = b || (s === p.g.Compact || d && c || i ? Object(m.b)(r) : n.fbt._({
+					return t = b || (s === p.g.Compact || i || d && c ? Object(m.b)(r) : n.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
 					}, [n.fbt._plural(r, "number", Object(m.b)(r))], {
@@ -6278,7 +6266,7 @@
 				const {
 					className: t,
 					hasModPostPerms: s,
-					isChatPostExperiment: n,
+					isChatPost: n,
 					isCommentPermalink: o,
 					isCommentsPage: r,
 					isOverlay: d,
@@ -6295,7 +6283,7 @@
 				} = e, y = r && !o && !m, j = o && !d, w = a.a.createElement(O, {
 					type: k,
 					numComments: h,
-					isChatPostExperiment: n,
+					isChatPost: n,
 					modModeEnabled: p,
 					hasModPostPerms: s,
 					shouldShowIcon: v,
@@ -6654,8 +6642,8 @@
 					communityAwardsDisabled: Q.b,
 					disableSettingsAvailable: e => Object(te.c)(e, {
 						experimentEligibilitySelector: te.a,
-						experimentName: ee.fb
-					}) === ee.jb.Enabled,
+						experimentName: ee.ab
+					}) === ee.eb.Enabled,
 					isAddAwardModalOpen: e => Object(y.a)(e) === m.a,
 					isConfirmModalOpen: e => Object(y.a)(e) === m.b
 				}),
@@ -7006,7 +6994,7 @@
 				f = s("./src/reddit/helpers/trackers/communitySettings.ts"),
 				x = s("./src/reddit/helpers/trackers/communityTopics.ts"),
 				v = s("./src/reddit/models/Tags/index.ts"),
-				E = s("./src/reddit/selectors/experiments/chatPost.ts"),
+				E = s("./src/reddit/selectors/chatPost.ts"),
 				C = s("./src/reddit/selectors/streamingModSettings.ts"),
 				_ = s("./src/reddit/selectors/subreddit.ts"),
 				O = s("./src/reddit/selectors/subredditSettings.ts"),
@@ -24743,7 +24731,7 @@
 				d = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				c = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				l = s("./src/reddit/selectors/activeModalId.ts"),
-				m = s("./src/reddit/selectors/experiments/chatPost.ts"),
+				m = s("./src/reddit/selectors/chatPost.ts"),
 				u = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				p = s("./src/reddit/selectors/postFlair.ts"),
 				b = s("./src/reddit/selectors/posts.ts"),
@@ -24754,7 +24742,7 @@
 					crosspost: b.d,
 					currentUser: h.i,
 					isActive: b.j,
-					isChatPostExperiment: m.d,
+					isChatPost: m.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.m,
 					isLoggedIn: h.H,
@@ -29521,7 +29509,7 @@
 			const Ve = Object(d.c)({
 				isBadgesAndEmotesEnabled: q.d.spCustomBadgesAndEmotes,
 				isContentTagEnabled: (e, t) => !!Object(K.c)(e, {
-					experimentName: G.H,
+					experimentName: G.C,
 					experimentEligibilitySelector: K.a
 				}) && !!e.subreddits.survey[t.subreddit.id],
 				isEligibleForCommunityAwards: (e, t) => {
@@ -30901,4 +30889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b28c19f39a618d91ca01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5036515516720595b8ab.js.map

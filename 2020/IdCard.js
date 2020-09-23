@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.1457e9277ec07740320c.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.8d9fb8469217b665be4f.js
+// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1484,8 +1484,8 @@
 					showContributorRequestFlow: e => Object(re.s)(e, Ve.e.Post),
 					showCreatePollButton: e => (e => Object(Xe.c)(e, {
 						experimentEligibilitySelector: Xe.a,
-						experimentName: Je.t
-					}) === Je.z.Treatment)(e) && !Object(Fe.g)(),
+						experimentName: Je.q
+					}) === Je.u.Treatment)(e) && !Object(Fe.g)(),
 					subreddit: (e, t) => Object(re.B)(e, {
 						subredditName: t.listingName
 					}),
@@ -2914,7 +2914,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
 			const i = e => {
-				return Object(o.E)(e) || s.u.Treatment1 === Object(r.c)(e, {
+				return Object(o.E)(e) || s.r.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.l
 				})
@@ -2922,4 +2922,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1457e9277ec07740320c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.8d9fb8469217b665be4f.js.map

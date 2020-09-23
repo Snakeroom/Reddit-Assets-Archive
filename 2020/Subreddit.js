@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.10c7b297c4d6499eeb05.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.341b803e7ed67d68a19d.js
+// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -8834,7 +8834,7 @@
 						experimentName: e,
 						experimentEligibilitySelector: t
 					}))
-				}(Z.H) && (null == s ? void 0 : s.isEligible) && !(null == s ? void 0 : s.response) ? r.a.createElement(J, {
+				}(Z.C) && (null == s ? void 0 : s.isEligible) && !(null == s ? void 0 : s.response) ? r.a.createElement(J, {
 					subredditId: t,
 					survey: s
 				}) : r.a.createElement(W, {
@@ -9877,8 +9877,8 @@
 			const o = e => r.e[Object(a.N)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.D
-				}) === n.M.Treatment
+					experimentName: n.y
+				}) === n.H.Treatment
 		},
 		"./src/reddit/selectors/experiments/downToChat.ts": function(e, t, s) {
 			"use strict";
@@ -9888,9 +9888,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/user.ts");
-			const i = e => n.V.Enabled === Object(r.c)(e, {
+			const i = e => n.Q.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: a.H,
-				experimentName: n.U
+				experimentName: n.P
 			})
 		},
 		"./src/reddit/selectors/experiments/snoovatar.ts": function(e, t, s) {
@@ -9900,11 +9900,11 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => n.mc.Enabled === Object(r.c)(e, {
+			const a = e => n.hc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.gc
+				experimentName: n.bc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.10c7b297c4d6499eeb05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.341b803e7ed67d68a19d.js.map

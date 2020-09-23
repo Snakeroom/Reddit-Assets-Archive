@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f83549e93d02486b3c9f.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.347529d16d8da99fa876.js
+// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/components/ModModeReports/_ModModeReports.m.less": function(e, t, s) {
@@ -520,9 +520,9 @@
 				T = () => void 0,
 				F = Object(a.c)({
 					crowdControlLevelEnabled: C.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => M.Ob.Enabled === Object(L.c)(e, {
+					postLevelCrowdControlEnabled: e => M.Jb.Enabled === Object(L.c)(e, {
 						experimentEligibilitySelector: y.I,
-						experimentName: M.Hb
+						experimentName: M.Cb
 					}),
 					shouldApplyPostLevelCrowdControl: (e, t) => {
 						let {
@@ -659,7 +659,7 @@
 					isProfilePage: h.G,
 					pageLayer: e => e
 				}),
-				H = Object(a.c)({
+				V = Object(a.c)({
 					layout: h.N,
 					isDropdownOpen: (e, t) => {
 						let {
@@ -669,7 +669,7 @@
 					},
 					isModToMemberShareEnabled: C.d.modToMemberShare
 				}),
-				V = Object(r.b)(H, (e, t) => {
+				H = Object(r.b)(V, (e, t) => {
 					let {
 						post: s
 					} = t;
@@ -698,7 +698,7 @@
 					}
 				}),
 				z = Object(p.a)(b.a),
-				K = G(V(Object(u.c)(e => {
+				K = G(H(Object(u.c)(e => {
 					const {
 						canEditFlair: t,
 						hasModFullPerms: s,
@@ -1527,4 +1527,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f83549e93d02486b3c9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.347529d16d8da99fa876.js.map

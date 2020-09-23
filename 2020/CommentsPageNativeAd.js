@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.ca0ae23aa0948e4c2dd3.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.bc2fd96d87dba51e078d.js
+// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -30,8 +30,8 @@
 				P = s("./src/reddit/components/PostMeta/index.tsx"),
 				j = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				C = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
-				E = s("./src/reddit/components/PostTitle/index.tsx"),
-				v = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				v = s("./src/reddit/components/PostTitle/index.tsx"),
+				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				S = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				k = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				N = s("./src/reddit/models/Media/index.ts"),
@@ -105,9 +105,9 @@
 						isOverlay: Q,
 						shouldShowSubscribeButton: !(K && J),
 						subredditOrProfile: de
-					}, Ee = Object(a.s)(re, q), {
-						source: ve
-					} = Ee, Se = o.a.createElement(y.a, {
+					}, ve = Object(a.s)(re, q), {
+						source: Ee
+					} = ve, Se = o.a.createElement(y.a, {
 						className: Object(n.a)(W.a.classicPostStyles, B.a.postContainer, Object(A.a)(this.props), I ? B.a.mFirst : void 0, e),
 						isOverlay: Q,
 						style: Object.assign(Object.assign({}, Object(A.d)(this.props)), Object(A.b)(this.props.flairStyleTemplate)),
@@ -153,13 +153,13 @@
 						style: {
 							paddingBottom: "".concat(U, "px")
 						}
-					}, o.a.createElement(E.c, {
+					}, o.a.createElement(v.c, {
 						className: se ? B.a.titleWithPoll : void 0,
 						format: F,
 						poll: se,
 						post: re,
 						redditStyle: oe,
-						size: E.b.Medium,
+						size: v.b.Medium,
 						titleColor: ue && ue.postTitleColor,
 						isOverlay: Q
 					}, re.source && !be && o.a.createElement(k.a, {
@@ -174,11 +174,11 @@
 						reportable: re
 					}), o.a.createElement("div", {
 						className: B.a.spacer
-					}), re.isSponsored && ve && ve.url && o.a.createElement(d.a, {
+					}), re.isSponsored && Ee && Ee.url && o.a.createElement(d.a, {
 						className: B.a.adLinkWrapper
 					}, o.a.createElement(l.a, {
 						post: re,
-						adLinkContent: Ee
+						adLinkContent: ve
 					})), o.a.createElement("div", {
 						className: B.a.flatlistContainer
 					}, o.a.createElement(u.a, {
@@ -209,7 +209,7 @@
 						post: re,
 						showEditPost: fe,
 						showEditFlair: ie,
-						tooltipType: Q ? v.c.Lightbox : void 0,
+						tooltipType: Q ? E.c.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(j.h)({
 							editPost: !ge,
 							save: !ge,
@@ -297,8 +297,8 @@
 				P = s("./src/reddit/components/PostTitle/index.tsx"),
 				j = s("./src/reddit/constants/componentTestIds.ts"),
 				C = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				E = s("./src/reddit/models/Media/index.ts"),
-				v = s("./src/reddit/components/AuthorLink/index.tsx"),
+				v = s("./src/reddit/models/Media/index.ts"),
+				E = s("./src/reddit/components/AuthorLink/index.tsx"),
 				S = s("./src/reddit/components/SponsoredLabel/index.tsx"),
 				k = s("./src/reddit/components/UserIcon/index.tsx"),
 				N = s("./src/reddit/controls/MetaSeparator/index.tsx"),
@@ -309,7 +309,7 @@
 					isNSFW: !1,
 					userName: e.author,
 					className: w.a.userIcon
-				}), a.a.createElement(v.a, {
+				}), a.a.createElement(E.a, {
 					className: w.a.authorLink,
 					"data-click-id": "user",
 					author: e.author
@@ -347,7 +347,7 @@
 					usePreview: p,
 					mediaExpanded: u
 				} = e;
-				return i && i.media ? u && Object(E.L)(i.media) ? a.a.createElement("div", null, a.a.createElement(R.a, {
+				return i && i.media ? u && Object(v.L)(i.media) ? a.a.createElement("div", null, a.a.createElement(R.a, {
 					className: w.a.close,
 					onClick: s
 				}), a.a.createElement(T.b, {
@@ -374,8 +374,8 @@
 					isMeta: n,
 					post: i,
 					redditStyle: c,
-					removeLink: Object(E.L)(i.media),
-					url: Object(E.L)(i.media) ? void 0 : m,
+					removeLink: Object(v.L)(i.media),
+					url: Object(v.L)(i.media) ? void 0 : m,
 					usePreview: p
 				}) : a.a.createElement(A.a, {
 					className: Object(L.a)(w.a.thumbnail, t),
@@ -455,7 +455,7 @@
 						post: s,
 						redditStyle: r,
 						showMedia: o
-					} = this.props, n = !!s.media && Object(E.H)(s.media), {
+					} = this.props, n = !!s.media && Object(v.H)(s.media), {
 						media: i
 					} = s;
 					if (!(e && !o)) return a.a.createElement(B, {
@@ -463,7 +463,7 @@
 						post: s,
 						redditStyle: r,
 						removeLink: n,
-						isVideo: i && Object(E.L)(i)
+						isVideo: i && Object(v.L)(i)
 					})
 				}
 				render() {
@@ -597,7 +597,7 @@
 				c = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				d = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				l = s("./src/reddit/selectors/activeModalId.ts"),
-				m = s("./src/reddit/selectors/experiments/chatPost.ts"),
+				m = s("./src/reddit/selectors/chatPost.ts"),
 				p = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				u = s("./src/reddit/selectors/postFlair.ts"),
 				b = s("./src/reddit/selectors/posts.ts"),
@@ -608,7 +608,7 @@
 					crosspost: b.d,
 					currentUser: x.i,
 					isActive: b.j,
-					isChatPostExperiment: m.d,
+					isChatPost: m.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.m,
 					isLoggedIn: x.H,
@@ -747,4 +747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.ca0ae23aa0948e4c2dd3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.bc2fd96d87dba51e078d.js.map
