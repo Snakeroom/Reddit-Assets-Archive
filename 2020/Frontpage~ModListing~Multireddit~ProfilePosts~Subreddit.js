@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.3327dc7511da45199312.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.ce25b9ff9115e1e19e17.js
+// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit"], {
 		"./src/reddit/components/CountrySort/index.m.less": function(e, t, s) {
@@ -770,7 +770,7 @@
 				ke = (e, t, s) => {
 					let n = e.url;
 					return e.urlParams.sort || Object(d.G)(e) || (n = Se.a.join(n, t)), Object(m.a)(n, {
-						[F.u]: s
+						[F.w]: s
 					})
 				},
 				Ce = I.a.div("ListingSortContainer", ge.a),
@@ -1358,4 +1358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.3327dc7511da45199312.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit.ce25b9ff9115e1e19e17.js.map

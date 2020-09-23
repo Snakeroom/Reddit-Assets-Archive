@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.279c37d32c82776d6d38.js
-// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d5c57561095ae3b9603b.js
+// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4516,9 +4516,9 @@
 					if ("" !== n.searchQuery) {
 						if (n.isTypeaheadSuggestion) o = "/".concat(n.isProfile ? n.searchQuery.replace("u/", "user/") : n.searchQuery);
 						else {
-							if (i = "".concat(V.p, "=").concat(Object(kr.b)(n.rawQuery || n.searchQuery)), o = "/search/", n.section !== Mr.c.trending && n.section !== Mr.c.recent || a && a.source && (i += "&source=".concat(a.source)), e && r ? (o = "/r/".concat(e.name).concat(o), i = "".concat(i, "&").concat(V.q, "=1")) : !e && n.subredditOrProfileRestrictedName && (o = "/".concat(n.subredditOrProfileRestrictedName).concat(o), i = "".concat(i, "&").concat(V.q, "=1")), t) {
+							if (i = "".concat(V.p, "=").concat(Object(kr.b)(n.rawQuery || n.searchQuery)), o = "/search/", n.section !== Mr.c.trending && n.section !== Mr.c.recent || a && a.source && (i += "&source=".concat(a.source)), e && r ? (o = "/r/".concat(e.name).concat(o), i = "".concat(i, "&").concat(V.r, "=1")) : !e && n.subredditOrProfileRestrictedName && (o = "/".concat(n.subredditOrProfileRestrictedName).concat(o), i = "".concat(i, "&").concat(V.r, "=1")), t) {
 								const e = t.url.split("/")[2];
-								o = "/user/".concat(e, "/m/").concat(t.name).concat(o), i = "".concat(i, "&").concat(V.q, "=1&").concat(V.j, "=1")
+								o = "/user/".concat(e, "/m/").concat(t.name).concat(o), i = "".concat(i, "&").concat(V.r, "=1&").concat(V.j, "=1")
 							}
 							a && a.category && (i = "".concat(i, "&").concat(V.b, "=").concat(a.category))
 						}
@@ -4931,9 +4931,9 @@
 				Co = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				Oo = s("./src/reddit/selectors/experiments/trending.ts"),
 				yo = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const xo = e => Object(Kt.E)(e) || vs.qc.Treatment1 === Object(yo.c)(e, {
+			const xo = e => Object(Kt.E)(e) || vs.sc.Treatment1 === Object(yo.c)(e, {
 				experimentEligibilitySelector: yo.a,
-				experimentName: vs.nc
+				experimentName: vs.pc
 			});
 			var Po = s("./src/reddit/selectors/searchResults.ts"),
 				Eo = s("./src/reddit/selectors/tooltip.ts"),
@@ -7454,7 +7454,7 @@
 					const O = Object(x.a)(this.previousLocation, d),
 						y = C || O ? this.previousLocation : d,
 						P = C || O ? this.previousPage : e,
-						E = !(!(P && P.meta && P.meta.name === f.Bb.SEARCH_RESULTS && P && P.queryParams) || P.queryParams[V.q]),
+						E = !(!(P && P.meta && P.meta.name === f.Bb.SEARCH_RESULTS && P && P.queryParams) || P.queryParams[V.r]),
 						j = !(!P || !P.meta || P.meta.name !== f.Bb.MODERATION_PAGES),
 						w = Object(Cs.w)(P),
 						_ = this.getIsPostCollection(),
@@ -12100,12 +12100,12 @@
 							const o = x.a.timing.domInteractive - x.a.timing.navigationStart;
 							Object(Ut.h)(r.routeMatch, d.getState(), k.TimerType.Initial, o);
 							const i = Object(f.a)(window.location.href);
-							i && i.get(qe.a) && history.replaceState(history.state, "", Object(v.a)(window.location.href, [qe.a])), Object(E.a)(i.get(qe.v)) && d.dispatch(Object(Q.e)({
+							i && i.get(qe.a) && history.replaceState(history.state, "", Object(v.a)(window.location.href, [qe.a])), Object(E.a)(i.get(qe.x)) && d.dispatch(Object(Q.e)({
 								kind: bs.b.SuccessCommunity,
 								text: n.fbt._("Email verification complete", null, {
 									hk: "bqMP6"
 								})
-							})), i.get(qe.w) && (d.dispatch(Object(R.a)(i.get(qe.w))), history.replaceState(history.state, "", Object(v.a)(window.location.href, [qe.w])));
+							})), i.get(qe.y) && (d.dispatch(Object(R.a)(i.get(qe.y))), history.replaceState(history.state, "", Object(v.a)(window.location.href, [qe.y])));
 							let l = !1;
 							if ((Object(Ft.b)(Be.a.JustLoggedIn) || i && i.get(qe.o) && Object(E.a)(i.get(qe.o))) && (d.dispatch(Object(Q.e)({
 									text: n.fbt._("Successfully logged in!", null, {
@@ -13841,11 +13841,11 @@
 				h = e => e.accountManagerModalData.redirectUrl,
 				g = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, b, c.a, p.a, d.b, e => Object(l.c)(e, {
 					experimentEligibilitySelector: m,
-					experimentName: i.cc
+					experimentName: i.ec
 				}), (e, t, s, a, c, d, l) => {
 					let u = "".concat(n.a.accountManagerOrigin).concat(e);
 					return l && (u = Object(r.a)(u, {
-						["experiment_".concat(i.cc)]: l
+						["experiment_".concat(i.ec)]: l
 					})), e === o.c.GoogleOneTap ? Object(r.a)(u, {
 						[i.D]: d
 					}) : (a && (u = Object(r.a)(u, {
@@ -13888,9 +13888,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.pc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.rc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.mc
+				experimentName: n.oc
 			}))
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
@@ -14197,4 +14197,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.279c37d32c82776d6d38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d5c57561095ae3b9603b.js.map

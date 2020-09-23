@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.d88e9da43f56287a3f76.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.bb737c4efa5902afe9a6.js
+// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -776,7 +776,7 @@
 					return Object(A.d)(s.path)
 				}, ve.h, ve.c, (e, t, s, r, n) => {
 					const o = i()([...Object(c.a)(e)]),
-						d = je.u in o && o[je.u].toUpperCase(),
+						d = je.w in o && o[je.w].toUpperCase(),
 						a = "string" == typeof d && d in l.Sb ? l.Sb[d] : l.Tb,
 						m = s ? Pe.e : Pe.d;
 					return {
@@ -827,4 +827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.d88e9da43f56287a3f76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bb737c4efa5902afe9a6.js.map

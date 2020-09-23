@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.db98378d246817ef6937.js
-// Retrieved at 9/23/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.966b435cbdc941bf83af.js
+// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -679,13 +679,13 @@
 					experimentEligibilitySelector: p.a,
 					experimentName: u.vb
 				});
-				return Object(u.Ac)(t) ? void 0 : t
+				return Object(u.Cc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
 					experimentName: u.wb
 				});
-				return Object(u.Ac)(t) ? void 0 : t
+				return Object(u.Cc)(t) ? void 0 : t
 			}, (e, t) => e === u.xb.Enabled && t === u.xb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
@@ -734,7 +734,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "33c390c-production"
+					SENTRY_RELEASE_VERSION: "a7bce47-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3863,7 +3863,7 @@
 							experimentEligibilitySelector: T.H,
 							experimentName: _.Z
 						});
-						return !(!t || Object(_.Ac)(t))
+						return !(!t || Object(_.Cc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: P.c
@@ -5424,7 +5424,7 @@
 						s = "".concat(t ? "flair_name" : "flair", ':"').concat(e, '"');
 					return Object(d.a)(n, {
 						[O.p]: s,
-						[O.q]: t ? "1" : ""
+						[O.r]: t ? "1" : ""
 					})
 				},
 				D = e => e.isFlairFilter ? c.a.createElement(E.a, {
@@ -33862,4 +33862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.db98378d246817ef6937.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.966b435cbdc941bf83af.js.map

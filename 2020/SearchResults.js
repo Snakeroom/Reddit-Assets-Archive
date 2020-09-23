@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.7c639e9fd7cbc5eb094c.js
-// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.ebd7328f81750e49c70d.js
+// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -8099,10 +8099,10 @@
 				t ? (o = o.replace("flair:", "flair_name:"), s = "/r/".concat(t, "/search"), n = "1") : o = o.replace("flair_name:", "flair:");
 				const r = Object(ve.a)(s, {
 					[fs.p]: o,
-					[fs.q]: n
+					[fs.r]: n
 				});
 				return Object(d.c)(r, o, {
-					[fs.q]: n
+					[fs.r]: n
 				})
 			}
 			var vs = s("./src/reddit/layout/row/Inline/index.tsx"),
@@ -8172,10 +8172,10 @@
 				Ls = e => {
 					const t = e.queryParams && e.queryParams[fs.p] || "",
 						s = Object(d.b)(t),
-						n = e.queryParams && e.queryParams[fs.s],
+						n = e.queryParams && e.queryParams[fs.t],
 						r = {};
 					let i = Object(d.c)(e.url || "", s, {
-						[fs.s]: a.Db
+						[fs.t]: a.Db
 					});
 					const c = [];
 					for (const o of Es) {
@@ -8198,15 +8198,15 @@
 				Rs = e => {
 					const t = e.queryParams && e.queryParams[fs.p] || "",
 						s = Object(d.b)(t),
-						n = e.queryParams && e.queryParams[fs.u],
+						n = e.queryParams && e.queryParams[fs.w],
 						r = {};
 					let i = Object(d.c)(e.url || "", s, {
-						[fs.u]: a.Eb
+						[fs.w]: a.Eb
 					});
 					const c = [];
 					for (const o of _s) {
 						const t = Object(d.c)(e.url || "", s, {
-							[fs.u]: o
+							[fs.w]: o
 						});
 						r[t] = ks[o](), c.push(t), n === o && (i = t)
 					}
@@ -12902,7 +12902,7 @@
 						const {
 							queryParams: e,
 							sendEvent: t
-						} = this.props, s = s => t(Object(k.b)(s, Object(h.c)(d()(e || {}, E.r))));
+						} = this.props, s = s => t(Object(k.b)(s, Object(h.c)(d()(e || {}, E.s))));
 						return this.state.didSendCovidSeenEvent || (s("view"), this.setState({
 							didSendCovidSeenEvent: !0
 						})), m.a.createElement(L, {
@@ -12946,7 +12946,7 @@
 						viewTreatment: l
 					} = this.props, {
 						isCovidBannerHidden: p
-					} = this.state, u = o.params.subredditName || o.params.multiredditName || "", O = o.params.username, y = Object(h.c)(d()(i || {}, E.r)), j = Object.assign(Object.assign({}, y), {
+					} = this.state, u = o.params.subredditName || o.params.multiredditName || "", O = o.params.username, y = Object(h.c)(d()(i || {}, E.s)), j = Object.assign(Object.assign({}, y), {
 						sort: y.category ? b.Lb.Relevance : y.sort,
 						t: y.category ? b.Sb.DAY : y.t
 					}), _ = Object(h.b)(u, O, j);
@@ -13039,11 +13039,11 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Wb.Treatment1 === Object(o.c)(e, {
+			const r = e => n.Yb.Treatment1 === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
 				experimentName: n.Pb
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7c639e9fd7cbc5eb094c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.ebd7328f81750e49c70d.js.map

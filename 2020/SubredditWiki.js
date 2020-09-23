@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.cc16f213537738d8dad7.js
-// Retrieved at 9/23/2020, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.0a91fc907a81c8f1fb77.js
+// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -342,7 +342,7 @@
 							subredditName: c = T.e,
 							wikiPageName: l,
 							wikiSubRoute: u
-						} = t, m = s[P.x], p = s[P.y], b = m ? Object(y.a)(m) : void 0, h = p ? Object(y.a)(p) : void 0, f = l === T.j, O = u === T.m.Revisions;
+						} = t, m = s[P.z], p = s[P.A], b = m ? Object(y.a)(m) : void 0, h = p ? Object(y.a)(p) : void 0, f = l === T.j, O = u === T.m.Revisions;
 						let w = !1,
 							v = !1;
 						if (r) {
@@ -6636,7 +6636,7 @@
 					} = e, {
 						wikiSubRoute: i,
 						wikiPageName: a
-					} = s, o = n[k.x], d = n[k.y], c = k.z in n;
+					} = s, o = n[k.z], d = n[k.A], c = k.B in n;
 					switch (i) {
 						case f.m.Create:
 						case f.m.Edit:
@@ -7569,4 +7569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.cc16f213537738d8dad7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.0a91fc907a81c8f1fb77.js.map
