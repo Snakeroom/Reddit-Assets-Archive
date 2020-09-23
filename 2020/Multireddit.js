@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.b4f0c7699637e19b3b6f.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.a1f9122137f88b9497c4.js
+// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -1246,7 +1246,7 @@
 				a = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				userIsSubscriber: i.eb
+				userIsSubscriber: i.fb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -1917,4 +1917,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.b4f0c7699637e19b3b6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.a1f9122137f88b9497c4.js.map

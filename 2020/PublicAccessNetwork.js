@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.64bab06ddcf17daeeb3e.js
-// Retrieved at 9/23/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.886cb291def7b78a6908.js
+// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "66c1b8a-production"
+					SENTRY_RELEASE_VERSION: "0963873-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -4146,7 +4146,7 @@
 					a = Object(i.d)(Ca.z),
 					s = Object(i.d)(Ca.V);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!s && !a))))
-			}, Ps = e => Object(i.d)(t => Object(mt.eb)(t, {
+			}, Ps = e => Object(i.d)(t => Object(mt.fb)(t, {
 				identifier: {
 					name: e,
 					type: it.a.PROFILE
@@ -4205,7 +4205,7 @@
 						subreddit: a
 					} = t;
 					const s = a && a.replace(/^r\//, "");
-					return !!s && Object(mt.eb)(e, {
+					return !!s && Object(mt.fb)(e, {
 						identifier: {
 							name: s,
 							type: it.a.SUBREDDIT
@@ -5817,4 +5817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.64bab06ddcf17daeeb3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.886cb291def7b78a6908.js.map

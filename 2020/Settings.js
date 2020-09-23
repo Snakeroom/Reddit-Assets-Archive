@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2acc7f7c054e01d1b1a1.js
-// Retrieved at 9/23/2020, 3:00:14 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.0e7eb2240e1733f7eab6.js
+// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -5761,7 +5761,7 @@
 					}, s.fbt._("Safety & Privacy", null, {
 						hk: "3hohgI"
 					})), o.a.createElement(re.a, null, s.fbt._("Manage how we use data to personalize your Reddit experience, and control how other redditors interact with you. To learn more, visit our {=Privacy & Security FAQs} .", [s.fbt._param("=Privacy & Security FAQs", o.a.createElement(Ks, null, s.fbt._("{=Privacy & Security FAQs}", [s.fbt._param("=Privacy & Security FAQs", o.a.createElement("a", {
-						href: pe.a.redditHelpUrl.privacyQuestions,
+						href: "".concat(pe.a.redditHelpUrl, "/en/categories/privacy"),
 						rel: "noopener noreferrer",
 						target: "_blank"
 					}, s.fbt._("Privacy & Security FAQs", null, {
@@ -6880,4 +6880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2acc7f7c054e01d1b1a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0e7eb2240e1733f7eab6.js.map

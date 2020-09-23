@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.ae84d05e0ea8f37206a0.js
-// Retrieved at 9/23/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.bd7b7200fa3b7b0d61ff.js
+// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -13711,14 +13711,20 @@
 				moderatorListItem: "_1Y_VNBcV1dWk6Y7xcJHQyQ",
 				Username: "ULWj94BYSOqoJDetxgcnU",
 				username: "ULWj94BYSOqoJDetxgcnU",
-				MessageModsLink: "_3qzNYRLcf8lEELXhDHff5z",
-				messageModsLink: "_3qzNYRLcf8lEELXhDHff5z",
 				FlairComponent: "_1vh4u-B3eHXE3-ko0huS20",
 				flairComponent: "_1vh4u-B3eHXE3-ko0huS20",
 				InternalLink: "_2GrMpxDnqcoKtPHot56EWQ",
 				internalLink: "_2GrMpxDnqcoKtPHot56EWQ",
+				HelpCenterMessage: "_22YTzkLimJkLqvbuH33-CG",
+				helpCenterMessage: "_22YTzkLimJkLqvbuH33-CG",
+				UnModeratedSubreddit: "_3w4o8BanXnhPSWMnEIMm30",
+				unModeratedSubreddit: "_3w4o8BanXnhPSWMnEIMm30",
+				ExternalLink: "_3OXPB4b47Z9dmM_sDTwXuR",
+				externalLink: "_3OXPB4b47Z9dmM_sDTwXuR",
 				LinkContainer: "_2pf-KRzaHwj_TjBcOIDrWG",
-				linkContainer: "_2pf-KRzaHwj_TjBcOIDrWG"
+				linkContainer: "_2pf-KRzaHwj_TjBcOIDrWG",
+				MessageModsButton: "_334yl59sgT7zkOwg0PsXVJ",
+				messageModsButton: "_334yl59sgT7zkOwg0PsXVJ"
 			}
 		},
 		"./src/reddit/components/Widgets/PostFlair/index.m.less": function(e, t, s) {
@@ -14171,7 +14177,7 @@
 		"./src/reddit/components/Widgets/Widget/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return Ne
+				return Me
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -14431,18 +14437,21 @@
 				}
 			}
 			var re = oe,
-				ie = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				ae = s("./src/reddit/components/Flair/index.tsx"),
-				ce = s("./src/reddit/controls/InternalLink/index.tsx"),
-				de = s("./src/reddit/icons/fonts/Envelope/index.tsx"),
-				le = s("./src/reddit/models/Flair/index.ts"),
-				me = s("./src/reddit/components/Widgets/Moderator/index.m.less"),
-				pe = s.n(me);
-			const ue = p.a.div("ModeratorListItem", pe.a),
-				be = p.a.div("Username", pe.a),
-				he = p.a.a("MessageModsLink", pe.a),
-				xe = p.a.wrapped(ae.b, "FlairComponent", pe.a),
-				ge = e => e.authorFlairType === le.f.Richtext ? {
+				ie = s("./src/config.ts"),
+				ae = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				ce = s("./src/lib/opener/index.ts"),
+				de = s("./src/reddit/components/Flair/index.tsx"),
+				le = s("./src/reddit/controls/InternalLink/index.tsx"),
+				me = s("./src/reddit/icons/fonts/Envelope/index.tsx"),
+				pe = s("./src/reddit/models/Flair/index.ts"),
+				ue = s("./src/reddit/selectors/subreddit.ts"),
+				be = s("./src/reddit/components/Widgets/Moderator/index.m.less"),
+				he = s.n(be);
+			const xe = p.a.a("ExternalLink", he.a),
+				ge = p.a.div("ModeratorListItem", he.a),
+				fe = p.a.div("Username", he.a),
+				ve = p.a.wrapped(de.b, "FlairComponent", he.a),
+				Ce = e => e.authorFlairType === pe.f.Richtext ? {
 					backgroundColor: e.authorFlairBackgroundColor,
 					richtext: e.authorFlairRichText,
 					textColor: e.authorFlairTextColor,
@@ -14453,66 +14462,93 @@
 					textColor: e.authorFlairTextColor,
 					type: e.authorFlairType
 				},
-				fe = e => o.a.createElement(ie.a, {
-					to: "/user/".concat(e.name, "/")
-				}, ve(e.name)),
-				ve = e => o.a.createElement(be, null, "u/".concat(e)),
-				Ce = p.a.wrapped(ce.a, "InternalLink", pe.a),
-				Oe = p.a.div("LinkContainer", pe.a);
-
-			function ye(e) {
-				const {
-					subredditName: t,
-					widget: s
-				} = e;
-				return o.a.createElement(c.a, {
-					styles: s.styles,
-					title: P.fbt._("Moderators", null, {
-						hk: "3AMICc"
-					}),
-					headerButton: o.a.createElement(he, {
-						href: "https://reddit.com/message/compose?to=/r/".concat(t),
-						target: "_blank"
-					}, o.a.createElement(de.a, null))
-				}, s.mods.map(e => o.a.createElement(ue, {
-					key: e.name
-				}, fe(e), o.a.createElement(xe, {
-					flair: ge(e),
-					forceSmallEmojis: !0
-				}))), o.a.createElement(Oe, null, o.a.createElement(Ce, {
-					to: "/r/".concat(t, "/about/moderators/")
-				}, P.fbt._("View All Moderators", null, {
-					hk: "2DIeXE"
-				}))))
-			}
-			var Ee = s("./src/reddit/components/Widgets/PostFlair/index.tsx"),
-				ke = s("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
-				je = s("./src/reddit/components/Widgets/TextArea/index.m.less"),
-				we = s.n(je);
-			const _e = p.a.div("WidgetContent", we.a),
-				Pe = p.a.wrapped(a.a, "RawHTMLDisplay", we.a);
-			var Ie = e => o.a.createElement(c.a, {
+				Oe = e => o.a.createElement(fe, null, "u/".concat(e)),
+				ye = p.a.wrapped(le.a, "InternalLink", he.a),
+				Ee = p.a.div("LinkContainer", he.a),
+				ke = Object(i.c)({
+					userIsBanned: ue.db
+				});
+			var je = Object(r.b)(ke)(e => {
+					const {
+						subredditName: t,
+						widget: s,
+						userIsBanned: n
+					} = e;
+					return o.a.createElement(c.a, {
+						styles: s.styles,
+						title: P.fbt._("Moderators", null, {
+							hk: "3AMICc"
+						})
+					}, (s.mods && s.mods.length || n) && o.a.createElement(d.k, {
+						className: he.a.MessageModsButton,
+						rel: ce.b,
+						target: ce.c.BLANK,
+						to: "".concat(ie.a.redditUrl, "/message/compose?to=/r/").concat(t)
+					}, o.a.createElement(me.a, null), P.fbt._("Message the mods", null, {
+						hk: "4xxTre"
+					})), s.mods && s.mods.length && !n ? o.a.createElement(o.a.Fragment, null, s.mods.map(e => o.a.createElement(ge, {
+						key: e.name
+					}, (e => o.a.createElement(ae.a, {
+						to: "/user/".concat(e.name, "/")
+					}, Oe(e.name)))(e), o.a.createElement(ve, {
+						flair: Ce(e),
+						forceSmallEmojis: !0
+					}))), o.a.createElement(Ee, null, o.a.createElement(ye, {
+						to: "/r/".concat(t, "/about/moderators/")
+					}, P.fbt._("View All Moderators", null, {
+						hk: "2DIeXE"
+					})))) : n ? o.a.createElement("div", {
+						className: he.a.HelpCenterMessage
+					}, P.fbt._("Moderator list hidden.", null, {
+						hk: "447TOY"
+					}), " ", o.a.createElement(xe, {
+						href: "".concat(ie.a.redditHelpUrl, "/hc/en-us/articles/360049499032"),
+						rel: ce.b,
+						target: ce.c.BLANK
+					}, P.fbt._("Learn More", null, {
+						hk: "2VxMRZ"
+					}))) : o.a.createElement("div", {
+						className: he.a.UnModeratedSubreddit
+					}, P.fbt._("This subreddit is unmoderated. Visit", null, {
+						hk: "4rFABM"
+					}), " ", o.a.createElement(xe, {
+						href: "".concat(ie.a.redditUrl, "/r/redditrequest"),
+						rel: ce.b,
+						target: ce.c.BLANK
+					}, P.fbt._("r/redditrequest", null, {
+						hk: "32jGtr"
+					})), " ", P.fbt._("to request it.", null, {
+						hk: "1LPeZR"
+					})))
+				}),
+				we = s("./src/reddit/components/Widgets/PostFlair/index.tsx"),
+				_e = s("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
+				Pe = s("./src/reddit/components/Widgets/TextArea/index.m.less"),
+				Ie = s.n(Pe);
+			const Se = p.a.div("WidgetContent", Ie.a),
+				Te = p.a.wrapped(a.a, "RawHTMLDisplay", Ie.a);
+			var Ne = e => o.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, o.a.createElement(_e, null, o.a.createElement(Pe, {
+				}, o.a.createElement(Se, null, o.a.createElement(Te, {
 					html: e.widget.textHtml || ""
 				}))),
-				Se = s("./src/reddit/components/Widgets/Base/index.tsx");
-			var Te = e => o.a.createElement(Se.b, null, "This widget hasn't been implemented yet!");
+				Ae = s("./src/reddit/components/Widgets/Base/index.tsx");
+			var Le = e => o.a.createElement(Ae.b, null, "This widget hasn't been implemented yet!");
 
-			function Ne(e) {
+			function Me(e) {
 				const t = function(e) {
 					switch (e.kind) {
 						case "moderators":
-							return ye;
+							return je;
 						case "textarea":
-							return Ie;
+							return Ne;
 						case "button":
 							return _;
 						case "subreddit-rules":
-							return ke.b;
+							return _e.b;
 						case "community-list":
 							return z;
 						case "calendar":
@@ -14522,9 +14558,9 @@
 						case "custom":
 							return Y;
 						case "post-flair":
-							return Ee.a;
+							return we.a;
 						default:
-							return Te
+							return Le
 					}
 				}(e.widget);
 				return o.a.createElement(t, {
@@ -14638,7 +14674,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.eb
+				userIsSubscriber: i.fb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -18622,4 +18658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.ae84d05e0ea8f37206a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.bd7b7200fa3b7b0d61ff.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4db3c1d5198bff3f32ee.js
-// Retrieved at 9/23/2020, 3:40:21 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b28c19f39a618d91ca01.js
+// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -4238,7 +4238,7 @@
 					}))), r.a.createElement(f.a, null, r.a.createElement(f.b, null, o.fbt._("Approved users", null, {
 						hk: "1alMeD"
 					}), r.a.createElement(g.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360009164452")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360009164452")
 					})), r.a.createElement(E.b, {
 						activeSearchQuery: this.state.searchTerm,
 						onSearch: this.onSearch
@@ -4272,7 +4272,7 @@
 					}))), r.a.createElement(f.a, null, r.a.createElement(f.b, null, o.fbt._("Approved users", null, {
 						hk: "pxkv2"
 					}), r.a.createElement(g.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360009164452")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360009164452")
 					})), e.approvedSubmittersListPending ? r.a.createElement(C.a, null) : r.a.createElement(h.c, {
 						text: o.fbt._("No approved users in {subredditName}", [o.fbt._param("subredditName", e.subreddit.displayText)], {
 							hk: "1VEG1v"
@@ -4526,7 +4526,7 @@
 					}))), r.a.createElement(E.a, null, r.a.createElement(E.b, null, o.fbt._("Banned users", null, {
 						hk: "3hvISm"
 					}), r.a.createElement(v.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360009161872")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360009161872")
 					})), r.a.createElement(O.b, {
 						onSearch: this.onSearch,
 						activeSearchQuery: this.state.searchTerm
@@ -4560,7 +4560,7 @@
 					}))), r.a.createElement(E.a, null, r.a.createElement(E.b, null, o.fbt._("Banned users", null, {
 						hk: "3hvISm"
 					}), r.a.createElement(v.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360009161872")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360009161872")
 					})), e.bannedUsersListPending ? r.a.createElement(k.a, null) : r.a.createElement(x.c, {
 						text: o.fbt._("No banned users in {subredditName}", [o.fbt._param("subredditName", e.subreddit.displayText)], {
 							hk: "1nOcbC"
@@ -11524,7 +11524,7 @@
 					})), d.a.createElement(v.a, null, d.a.createElement(v.b, null, o.fbt._("Grant user flair", null, {
 						hk: "N1r42"
 					}), d.a.createElement(g.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360028091332")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360028091332")
 					})), !e.isUserFlairEnabled && d.a.createElement(h.a, {
 						className: se.a.disabledBanner,
 						color: M.a.quarantine,
@@ -11996,7 +11996,7 @@
 							subredditId: s
 						}) : void 0
 					},
-					userIsBanned: (e, t) => !!Object(b.n)(t) && Object(b.db)(e, t),
+					userIsBanned: (e, t) => !!Object(b.n)(t) && Object(b.eb)(e, t),
 					acceptChats: (e, t) => {
 						const s = Object(x.h)(e, {
 							profileName: t.userName
@@ -14248,7 +14248,7 @@
 					}))), d.a.createElement(x.a, null, d.a.createElement(x.b, null, o.fbt._("Emoji management", null, {
 						hk: "6xN5s"
 					}), d.a.createElement(g.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360010560371")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360010560371")
 					})), !s && d.a.createElement(h.a, {
 						className: P.a.emojisDisabled,
 						color: C.a.quarantine,
@@ -16171,7 +16171,7 @@
 					}, r.a.createElement(De.b, null, o.fbt._("Mod log", null, {
 						hk: "UdwRO"
 					}), r.a.createElement(Re.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360022402312")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360022402312")
 					})), r.a.createElement(Fe.a, null, r.a.createElement("span", {
 						className: We.a.title
 					}, o.fbt._("Filter by", null, {
@@ -17055,7 +17055,7 @@
 					}))), r.a.createElement(g.a, null, r.a.createElement(g.b, null, o.fbt._("Moderators of {subredditName}", [o.fbt._param("subredditName", e.subreddit.displayText)], {
 						hk: "3p7NwA"
 					}), r.a.createElement(b.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360009381491")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360009381491")
 					})), r.a.createElement(x.b, {
 						onSearch: this.onSearch,
 						activeSearchQuery: t.searchTerm
@@ -17794,7 +17794,7 @@
 					}))), r.a.createElement(f.a, null, r.a.createElement(f.b, null, o.fbt._("Muted users", null, {
 						hk: "2kc6Jt"
 					}), r.a.createElement(g.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360009161872")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360009161872")
 					})), r.a.createElement(E.b, {
 						onSearch: this.onSearch,
 						activeSearchQuery: t.searchTerm
@@ -17828,7 +17828,7 @@
 					}))), r.a.createElement(f.a, null, r.a.createElement(f.b, null, o.fbt._("Muted users", null, {
 						hk: "2kc6Jt"
 					}), r.a.createElement(g.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360009161872")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360009161872")
 					})), e.mutedUsersListPending ? r.a.createElement(C.a, null) : r.a.createElement(h.c, {
 						text: o.fbt._("No muted users in {subredditName}", [o.fbt._param("subredditName", e.subreddit.displayText)], {
 							hk: "1o0lOP"
@@ -20613,7 +20613,7 @@
 					}))), r.a.createElement(h.a, null, r.a.createElement(h.b, null, o.fbt._("Removal reasons", null, {
 						hk: "3IWxkH"
 					}), r.a.createElement(b.a, {
-						linkUrl: "".concat(n.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360010094892")
+						linkUrl: "".concat(n.a.redditModHelpUrl, "/hc/en-us/articles/360010094892")
 					})), a.length > 0 ? a.map((e, t) => r.a.createElement(K, {
 						index: t,
 						key: e.title,
@@ -24182,7 +24182,7 @@
 					}, n.fbt._("Rules", null, {
 						hk: "41SmPR"
 					}), l.a.createElement(I.a, {
-						linkUrl: "".concat(o.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360023379211")
+						linkUrl: "".concat(o.a.redditModHelpUrl, "/hc/en-us/articles/360023379211")
 					})), !this.state.isReordering && l.a.createElement("div", {
 						className: q.a.rulesInfo
 					}, n.fbt._("These are rules that visitors must follow to participate. They can be used as reasons to report or ban posts, comments, and users. Communities can have a maximum of 15 rules.", null, {
@@ -24210,7 +24210,7 @@
 					}, n.fbt._("Rules", null, {
 						hk: "41SmPR"
 					}), l.a.createElement(I.a, {
-						linkUrl: "".concat(o.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360023379211")
+						linkUrl: "".concat(o.a.redditModHelpUrl, "/hc/en-us/articles/360023379211")
 					}))), a ? l.a.createElement(_e, null) : l.a.createElement(S.c, {
 						text: n.fbt._("No rules yet", null, {
 							hk: "pYLkV"
@@ -24848,7 +24848,7 @@
 				a = s("./src/reddit/actions/subscription/index.ts"),
 				r = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: r.eb
+				userIsSubscriber: r.fb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -29900,7 +29900,7 @@
 									hk: "4dCwWU"
 								}),
 								onClick: this.onClickModHelpCenter,
-								path: U.a.redditHelpUrl.modHelpCenter
+								path: U.a.redditModHelpUrl
 							}), r.a.createElement(ue.b, {
 								isExternal: !0,
 								label: p.fbt._("Moderator guidelines", null, {
@@ -30901,4 +30901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4db3c1d5198bff3f32ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b28c19f39a618d91ca01.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging~Topic.1b01e8e0e9296883fbe7.js
-// Retrieved at 9/8/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging~Topic.d296d8bd67440082a84d.js
+// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging~Topic"], {
 		"./src/reddit/components/SidebarContainer/index.m.less": function(e, t, s) {
@@ -56,8 +56,8 @@
 				p = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				x = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				_ = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				g = s("./src/reddit/selectors/structuredStyles.ts"),
-				f = s("./src/reddit/selectors/userPrefs.ts"),
+				f = s("./src/reddit/selectors/structuredStyles.ts"),
+				g = s("./src/reddit/selectors/userPrefs.ts"),
 				h = s("./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less"),
 				S = s.n(h),
 				E = function(e, t) {
@@ -95,8 +95,8 @@
 					isLoading: !0
 				})
 			}), B = Object(c.c)({
-				isEditing: g.j,
-				isSubscriptionsPinned: f.b,
+				isEditing: f.j,
+				isSubscriptionsPinned: g.b,
 				moderatorPermissions: _.j
 			});
 			t.a = Object(i.b)(B)(e => {
@@ -169,9 +169,9 @@
 			})), s.d(t, "i", (function() {
 				return _
 			})), s.d(t, "e", (function() {
-				return g
-			})), s.d(t, "b", (function() {
 				return f
+			})), s.d(t, "b", (function() {
+				return g
 			})), s.d(t, "c", (function() {
 				return h
 			})), s.d(t, "d", (function() {
@@ -193,8 +193,8 @@
 				p = n.a.div("FormElement", a.a),
 				x = n.a.div("FormGroupDescription", a.a),
 				_ = n.a.div("FormItem", a.a),
-				g = n.a.h3("FormElementTitle", a.a),
-				f = n.a.div("FormElementDescription", a.a),
+				f = n.a.h3("FormElementTitle", a.a),
+				g = n.a.div("FormElementDescription", a.a),
 				h = n.a.div("FormElementError", a.a),
 				S = n.a.div("FormElementSubGroup", a.a),
 				E = n.a.li("FormListItem", a.a)
@@ -260,15 +260,15 @@
 				}
 				return s
 			};
-			const g = p.a.button("IconButton", m.a),
-				f = p.a.wrapped(l.a, "SubscribeIcon", m.a),
+			const f = p.a.button("IconButton", m.a),
+				g = p.a.wrapped(l.a, "SubscribeIcon", m.a),
 				h = p.a.wrapped(c.a, "UnsubscribeIcon", m.a),
 				S = p.a.wrapped(e => {
 					var {
 						border: t,
 						small: s
 					} = e, n = _(e, ["border", "small"]);
-					return a.a.createElement(g, n, a.a.createElement(f, {
+					return a.a.createElement(f, n, a.a.createElement(g, {
 						className: Object(b.a)(n.className, {
 							[m.a.isSmall]: s
 						})
@@ -309,7 +309,7 @@
 						small: s,
 						type: n
 					} = e, r = _(e, ["border", "small", "type"]);
-					return a.a.createElement(g, r, a.a.createElement(h, {
+					return a.a.createElement(f, r, a.a.createElement(h, {
 						className: Object(b.a)(o.n, r.className, {
 							[m.a.isSmall]: s
 						})
@@ -495,8 +495,8 @@
 				p = s("./node_modules/react-redux/es/index.js"),
 				x = s("./node_modules/reselect/es/index.js"),
 				_ = s("./src/lib/prettyPrintNumber/index.ts"),
-				g = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				f = s("./src/reddit/components/SubscribeButton/index.tsx"),
+				f = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				g = s("./src/reddit/components/SubscribeButton/index.tsx"),
 				h = s("./src/reddit/constants/posts.ts"),
 				S = s("./src/reddit/controls/InternalLink/index.tsx"),
 				E = s("./src/reddit/helpers/name/index.ts"),
@@ -532,7 +532,7 @@
 					} = this.props;
 					return s ? r.a.createElement("div", {
 						className: Object(o.a)(j.a.Container, e)
-					}, r.a.createElement(g.b, {
+					}, r.a.createElement(f.b, {
 						className: j.a.Icon,
 						subredditOrProfile: s
 					}), r.a.createElement("div", {
@@ -550,7 +550,7 @@
 						_1: "member"
 					}, [b.fbt._plural(s.subscribers, "subscribers count", Object(_.b)(s.subscribers))], {
 						hk: "48BXj1"
-					})))), r.a.createElement(f.a, {
+					})))), r.a.createElement(g.a, {
 						border: !1,
 						className: Object(o.a)(j.a.SubscribeButton, {
 							[j.a.hidden]: !t
@@ -677,7 +677,7 @@
 				a = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: o.eb
+				userIsSubscriber: o.fb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -717,4 +717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging~Topic.1b01e8e0e9296883fbe7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging~Topic.d296d8bd67440082a84d.js.map

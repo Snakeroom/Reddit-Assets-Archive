@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.14bb02cc67151ddcaf0f.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.d00aee9b7bc822ec9c51.js
+// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(e, t, r) {
@@ -412,7 +412,7 @@
 							subredditId: r
 						}) : void 0
 					},
-					userIsBanned: (e, t) => !!Object(p.n)(t) && Object(p.db)(e, t),
+					userIsBanned: (e, t) => !!Object(p.n)(t) && Object(p.eb)(e, t),
 					acceptChats: (e, t) => {
 						const r = Object(I.h)(e, {
 							profileName: t.userName
@@ -962,7 +962,7 @@
 				a = r("./src/reddit/actions/subscription/index.ts"),
 				o = r("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(n.c)({
-				userIsSubscriber: o.eb
+				userIsSubscriber: o.fb
 			}), (e, t) => {
 				let {
 					identifier: r
@@ -1095,4 +1095,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.14bb02cc67151ddcaf0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki.d00aee9b7bc822ec9c51.js.map

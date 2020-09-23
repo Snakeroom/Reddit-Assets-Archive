@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.bb048c7b29149b018087.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.34f31c77ea9ae8107d27.js
+// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-PostRequirements"], {
 		"./src/reddit/components/ModHub/PostRequirements/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -112,7 +112,7 @@
 				B = n("./src/reddit/selectors/platform.ts"),
 				T = n("./src/reddit/selectors/postRequirements.ts"),
 				L = n("./src/config.ts");
-			const w = "".concat(L.a.redditHelpUrl.modHelpCenter, "hc/en-us/articles/360010322091"),
+			const w = "".concat(L.a.redditModHelpUrl, "/hc/en-us/articles/360010322091"),
 				N = 2,
 				P = 300,
 				F = 400,
@@ -1444,4 +1444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.bb048c7b29149b018087.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.34f31c77ea9ae8107d27.js.map
