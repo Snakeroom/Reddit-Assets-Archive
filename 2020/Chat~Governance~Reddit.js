@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.528b6bcaa1eef97ae905.js
-// Retrieved at 9/23/2020, 6:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.04457ecab08f4ffdab4e.js
+// Retrieved at 9/23/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1604,11 +1604,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("113268"),
+				buildNumber: r("113272"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1600897608"),
+				})("1600898579"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -2214,34 +2214,34 @@
 		},
 		"./src/lib/constants/cookie.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
+			i.d(t, "b", (function() {
 				return n
-			})), i.d(t, "b", (function() {
-				return r
 			})), i.d(t, "c", (function() {
-				return s
+				return r
 			})), i.d(t, "d", (function() {
-				return o
-			})), i.d(t, "f", (function() {
-				return d
+				return s
 			})), i.d(t, "e", (function() {
-				return l
+				return o
 			})), i.d(t, "g", (function() {
-				return a
+				return d
+			})), i.d(t, "f", (function() {
+				return l
 			})), i.d(t, "h", (function() {
-				return u
+				return a
 			})), i.d(t, "i", (function() {
+				return u
+			})), i.d(t, "a", (function() {
 				return c
 			}));
 			const n = "loid",
 				r = "loidcreated",
 				s = "mod_mode_enabled",
-				o = "token",
+				o = "d2_token",
 				d = "session_tracker",
 				l = "reddaid",
-				a = "reddit_session",
-				u = "d2_token",
-				c = "wpsn"
+				a = "token_v2",
+				u = "wpsn",
+				c = ["token", o, "reddit_session", a]
 		},
 		"./src/lib/constants/euCookiePolicy.ts": function(e, t, i) {
 			"use strict";
@@ -3368,14 +3368,14 @@
 					}))
 				},
 				Q = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("5df7bcb-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("cd5a888-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5df7bcb-production",
+						release: "cd5a888-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new s.Integrations.Breadcrumbs({
@@ -3737,7 +3737,7 @@
 			"use strict";
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/constants/cookie.ts");
-			const r = new Set(["password", "password2", "passwd", "passwd2", "pass", "pass2", "pw", "pw2", "accessToken", "refreshToken", "set-cookie", "cookie", "x-reddit-session", "redditSessionCookie", n.d, n.g, n.h, "authorization"].map(e => e.toLowerCase()));
+			const r = new Set(["password", "password2", "passwd", "passwd2", "pass", "pass2", "pw", "pw2", "accessToken", "refreshToken", "set-cookie", "cookie", "x-reddit-session", "redditSessionCookie", ...n.a, "authorization"].map(e => e.toLowerCase()));
 			t.a = function(e, t) {
 				try {
 					return JSON.stringify(e, (e, i) => r.has(e.toLowerCase()) ? "<REDACTED />" : t && t.has(e.toLowerCase()) ? "<REDACTED />" : i)
@@ -3805,7 +3805,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "5df7bcb-production",
+							releaseClient: "cd5a888-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -5424,47 +5424,50 @@
 		"./src/reddit/actions/session.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return s
-			})), i.d(t, "d", (function() {
 				return o
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "d", (function() {
 				return d
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "e", (function() {
 				return l
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "f", (function() {
 				return a
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "a", (function() {
 				return u
+			})), i.d(t, "b", (function() {
+				return c
 			})), i.d(t, "g", (function() {
-				return m
+				return p
 			})), i.d(t, "h", (function() {
-				return h
+				return g
 			}));
 			var n = i("./src/lib/makeActionCreator/index.ts"),
-				r = i("./src/reddit/endpoints/session/index.ts");
-			const s = "SESSION__USER_AUTHENTICATED",
-				o = "SESSION__USER_LOGGED_OUT",
-				d = "SESSION__USER_REAUTHENTICATED",
-				l = "SESSION__USER_REFRESH_FAILED",
-				a = "SESSION__LOAT_RECEIVED",
-				u = "SESSION__LOAT_REFRESHED",
-				c = (Object(n.a)(s), Object(n.a)(d)),
-				_ = Object(n.a)(o),
-				m = (Object(n.a)(l), () => async (e, t, i) => {
+				r = i("./src/reddit/endpoints/session/index.ts"),
+				s = i("./src/reddit/selectors/platform.ts");
+			const o = "SESSION__USER_AUTHENTICATED",
+				d = "SESSION__USER_LOGGED_OUT",
+				l = "SESSION__USER_REAUTHENTICATED",
+				a = "SESSION__USER_REFRESH_FAILED",
+				u = "SESSION__LOAT_RECEIVED",
+				c = "SESSION__LOAT_REFRESHED",
+				_ = (Object(n.a)(o), Object(n.a)(l)),
+				m = Object(n.a)(d),
+				p = (Object(n.a)(a), () => async (e, t, i) => {
 					let {
 						apiContext: n
 					} = i;
-					const s = t().user.session;
-					if (s) {
-						const t = await Object(r.b)(n(), s);
+					const o = t(),
+						d = o.user.session,
+						l = Object(s.q)(o);
+					if (d) {
+						const t = await Object(r.b)(n(), d, l);
 						if (t.ok) {
 							const i = t.body;
-							i.unsafeLoggedOut ? (s.unsafeLoggedOut || e(_()), e(p(i))) : e(c(i))
+							i.unsafeLoggedOut ? (d.unsafeLoggedOut || e(m()), e(h(i))) : e(_(i))
 						}
 					}
 				}),
-				p = (Object(n.a)(a), Object(n.a)(u)),
-				h = () => async (e, t, i) => {
+				h = (Object(n.a)(u), Object(n.a)(c)),
+				g = () => async (e, t, i) => {
 					let {
 						apiContext: n
 					} = i;
@@ -7879,11 +7882,12 @@
 				o = i("./src/lib/omitHeaders/index.ts"),
 				d = i("./src/reddit/constants/headers.ts");
 			const l = Object(n.a)(400),
-				a = (e, t) => Object(s.a)(e, {
+				a = (e, t, i) => Object(s.a)(e, {
 					allowErrorLogging: l,
 					data: t,
 					endpoint: "/refreshproxy",
-					method: r.db.POST
+					method: r.db.POST,
+					query: i
 				}),
 				u = e => Object(s.a)(Object(o.a)(e, [d.a]), {
 					endpoint: "/api/v2/issue_session",
@@ -13658,7 +13662,10 @@
 				p = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== n.Bb.POST_CREATION),
 				h = e => !!(e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === n.Bb.COMMENTS && e.platform.currentPage.urlParams && e.platform.currentPage.urlParams.routePrefix && "user" === e.platform.currentPage.urlParams.routePrefix),
 				g = e => e.platform && e.platform.currentPage && e.platform.currentPage.status,
-				f = e => e.platform && e.platform.currentPage && e.platform.currentPage.queryParams,
+				f = e => {
+					var t, i;
+					return null === (i = null === (t = e.platform) || void 0 === t ? void 0 : t.currentPage) || void 0 === i ? void 0 : i.queryParams
+				},
 				b = e => {
 					const t = w(e);
 					return t ? Object(s.G)(e, t) : null
@@ -17581,7 +17588,7 @@
 					}
 				},
 				st = e => {
-					const t = o.a.get(B.f),
+					const t = o.a.get(B.g),
 						i = (e.user.sessionTracker || t).split("."),
 						n = i[0],
 						r = parseInt(i[2], 10);
@@ -18953,44 +18960,44 @@
 						w = g.user.sessionTracker,
 						v = g.user.reddaid,
 						T = a.a in r.headers || a.c in r.headers || a.b in r.headers;
-					let S = e.get(l.b);
+					let S = e.get(l.c);
 					const F = _.a;
 					if (T) {
 						if (s.allowSetEmptyLoid && a.a in r.headers) {
 							const n = c(r.headers[a.a], S),
 								s = F();
-							y(e, l.a, r.headers[a.a], s), t.dispatch(i.loidReceived(n))
+							y(e, l.b, r.headers[a.a], s), t.dispatch(i.loidReceived(n))
 						}
 						if (a.c in r.headers) {
 							const n = r.headers[a.c],
 								s = d;
-							y(e, l.f, n, s), t.dispatch(i.sessionTrackerReceived(n))
+							y(e, l.g, n, s), t.dispatch(i.sessionTrackerReceived(n))
 						}
 						if (a.b in r.headers) {
 							const s = r.headers[a.b];
-							y(e, l.e, s, d), t.dispatch(i.reddaidReceived(s)), f(n)
+							y(e, l.f, s, d), t.dispatch(i.reddaidReceived(s)), f(n)
 						}
 					} else if (a.d in r.headers) {
 						const u = o()(r.headers[a.d]).map(e => ({
 							[e.name]: e.value
 						})).reduce((e, t) => Object.assign(Object.assign({}, e), t), {});
-						if (l.b in u && (S = u[l.b]), l.a in u)
+						if (l.c in u && (S = u[l.c]), l.b in u)
 							if (s.allowSetEmptyLoid && !b) {
-								const n = u[l.a],
+								const n = u[l.b],
 									r = c(n, S),
 									s = F();
-								y(e, l.a, n, s), t.dispatch(i.loidReceived(r))
+								y(e, l.b, n, s), t.dispatch(i.loidReceived(r))
 							} else b || Object(m.a)(h.a.logSample.failToSetLOID) && p.c.captureMessage("LOID failing to be set on user without LOID");
-						if (l.f in u) {
-							const n = u[l.f];
+						if (l.g in u) {
+							const n = u[l.g];
 							if (n !== w) {
 								const r = d;
-								y(e, l.f, n, r), t.dispatch(i.sessionTrackerReceived(n))
+								y(e, l.g, n, r), t.dispatch(i.sessionTrackerReceived(n))
 							}
 						}
-						if (l.e in u) {
-							const r = u[l.e];
-							r !== v && (y(e, l.e, r, d), t.dispatch(i.reddaidReceived(r)), f(n))
+						if (l.f in u) {
+							const r = u[l.f];
+							r !== v && (y(e, l.f, r, d), t.dispatch(i.reddaidReceived(r)), f(n))
 						}
 					}
 				}
@@ -22505,4 +22512,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.528b6bcaa1eef97ae905.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.04457ecab08f4ffdab4e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.abaec4d453d9197825ff.js
-// Retrieved at 9/21/2020, 7:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b53a5c858b56a0930cff.js
+// Retrieved at 9/23/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1666,37 +1666,41 @@
 		"./src/chat/actions/session.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
-			})), n.d(t, "b", (function() {
 				return o
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return i
+			})), n.d(t, "c", (function() {
+				return l
 			})), n.d(t, "d", (function() {
-				return u
+				return h
 			}));
 			var s = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/lib/constants/index.ts"),
 				c = n("./src/lib/makeApiRequest/index.ts");
-			const r = "SESSION__USER_AUTHENTICATED",
-				o = "SESSION__USER_LOGGED_OUT",
-				i = "SESSION__USER_REAUTHENTICATED",
-				l = (Object(s.a)(r), Object(s.a)(i)),
-				d = Object(s.a)(o),
-				u = () => async (e, t, n) => {
+			var r = n("./src/chat/selectors/platform.ts");
+			const o = "SESSION__USER_AUTHENTICATED",
+				i = "SESSION__USER_LOGGED_OUT",
+				l = "SESSION__USER_REAUTHENTICATED",
+				d = (Object(s.a)(o), Object(s.a)(l)),
+				u = Object(s.a)(i),
+				h = () => async (e, t, n) => {
 					let {
 						apiContext: s
 					} = n;
-					const r = t().user.session;
-					if (r) {
-						const t = await ((e, t) => Object(c.a)(e, {
+					const o = t(),
+						i = o.user.session,
+						l = Object(r.b)(o);
+					if (i) {
+						const t = await ((e, t, n) => Object(c.a)(e, {
 							data: t,
 							endpoint: "/refreshproxy",
-							method: a.db.POST
-						}))(s(), r);
+							method: a.db.POST,
+							query: n
+						}))(s(), i, l);
 						if (t.ok) {
 							const n = t.body;
-							if (n.unsafeLoggedOut) return void(r.unsafeLoggedOut || e(d()));
-							e(l(n))
+							if (n.unsafeLoggedOut) return void(i.unsafeLoggedOut || e(u()));
+							e(d(n))
 						}
 					}
 				}
@@ -12468,7 +12472,10 @@
 				i = e => {
 					return !!r(e) ? s.a.SubredditChannels : s.a.DirectChannels
 				},
-				l = e => e.platform.currentPage && e.platform.currentPage.queryParams,
+				l = e => {
+					var t, n;
+					return null === (n = null === (t = e.platform) || void 0 === t ? void 0 : t.currentPage) || void 0 === n ? void 0 : n.queryParams
+				},
 				d = e => !(!a(e) || c(e))
 		},
 		"./src/chat/selectors/sendbird.ts": function(e, t, n) {
@@ -12594,7 +12601,7 @@
 				}),
 				d = e => e.meta.platform || void 0,
 				u = e => {
-					const t = a.a.get(o.f);
+					const t = a.a.get(o.g);
 					return {
 						id: (e.user.sessionTracker || t).split(".")[0]
 					}
@@ -14651,4 +14658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.abaec4d453d9197825ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b53a5c858b56a0930cff.js.map

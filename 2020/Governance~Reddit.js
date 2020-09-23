@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.33187ad364c0ec303709.js
-// Retrieved at 9/23/2020, 6:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.cec2490bc49acb239441.js
+// Retrieved at 9/23/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -20819,21 +20819,21 @@
 			const C = 2 * r.eb;
 			var A = e => Date.now() + C < new Date(e.expires).getTime(),
 				D = s("./src/reddit/helpers/localStorage/index.ts"),
-				P = async (e, t) => {
-					let s = t.accessToken;
-					await _()(async (n, a) => {
-						if (!A(t) || !s) {
-							const r = await Object(E.b)(e, t);
+				P = async (e, t, s) => {
+					let n = t.accessToken;
+					await _()(async (a, i) => {
+						if (!A(t) || !n) {
+							const r = await Object(E.b)(e, t, s);
 							if (r.ok) {
 								const e = r.body;
-								s = e.accessToken
-							} else if (1 === a) return n()
+								n = e.accessToken
+							} else if (1 === i) return a()
 						}
-						const i = await Object(p.a)(e, {
+						const c = await Object(p.a)(e, {
 							endpoint: "/logoutproxy",
 							method: r.db.POST,
 							data: {
-								access_token: s
+								access_token: n
 							}
 						});
 						if (await async function(e, t) {
@@ -20846,11 +20846,11 @@
 									},
 									type: "json"
 								})
-							}(e, i && i.ok), !i.ok) return n()
+							}(e, c && c.ok), !c.ok) return a()
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
-						[S.c, S.d, S.h, S.i].forEach(T), Object(D.F)(null), Object(w.a)(y.a.JustLoggedOut, !0), window.location.reload()
+						[S.d, S.e, S.h, S.i].forEach(T), Object(D.F)(null), Object(w.a)(y.a.JustLoggedOut, !0), window.location.reload()
 					})
 				}, R = s("./src/reddit/helpers/redesignOptoutCookie/index.ts"), k = s("./src/reddit/helpers/trackers/emailCollection.ts"), x = s("./src/reddit/helpers/trackers/emailVerification.ts"), N = s("./src/reddit/models/Toast/index.ts"), L = s("./src/reddit/selectors/activeModalId.ts"), U = s("./src/reddit/selectors/emailCollection.ts"), M = s("./src/reddit/selectors/notificationBanner.ts"), F = s("./src/reddit/selectors/user.ts"), G = s("./src/telemetry/index.ts"), B = function(e, t) {
 					var s = {};
@@ -56034,4 +56034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.33187ad364c0ec303709.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cec2490bc49acb239441.js.map
