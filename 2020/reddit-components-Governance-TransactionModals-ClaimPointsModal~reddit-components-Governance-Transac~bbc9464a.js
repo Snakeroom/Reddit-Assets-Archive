@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.ef4c15adb953d3f0668b.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.4a312e6354daf6dbdad3.js
+// Retrieved at 9/23/2020, 3:00:14 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, a) {
@@ -218,7 +218,7 @@
 				v = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/VaultPasswordBar.m.less"),
 				Q = a.n(v);
 
-			function D(A) {
+			function M(A) {
 				const [e, a] = Object(t.useState)(""), [s, r] = Object(t.useState)(!1), [n, o] = Object(t.useState)(!1), c = Object(t.useRef)(null);
 				Object(t.useEffect)(() => {
 					c.current && c.current.focus()
@@ -263,12 +263,12 @@
 					onClick: l
 				}, s ? i.a.createElement(N.a, {
 					sizePx: 14
-				}) : m.fbt._("Approve", null, {
-					hk: "3Kz92C"
+				}) : m.fbt._("Unlock", null, {
+					hk: "3BMQg4"
 				})))
 			}
-			var M = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/index.m.less"),
-				L = a.n(M);
+			var D = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/index.m.less"),
+				L = a.n(D);
 
 			function V(A) {
 				const {
@@ -284,7 +284,7 @@
 					onApprove: () => A.onTransactionApproved(s),
 					onDecline: e,
 					subredditId: a
-				}) : i.a.createElement(D, {
+				}) : i.a.createElement(M, {
 					backup: A.backup,
 					onVaultDecrypted: A => r(A)
 				}))
@@ -539,7 +539,7 @@
 					(await Object(r.l)(X(), E)).ok ? x(IA.PUSH_NOTIFICATION_SENT) : Q()
 				}, Q = async () => {
 					await N() ? x(IA.REQUEST_VAULT_PASSWORD) : B === uA.FAILED ? (x(IA.TRANSACTION_FAILED), A.onTransactionFailure(b)) : x(IA.BACKUP_REQUIRED)
-				}, D = async e => {
+				}, M = async e => {
 					try {
 						x(IA.TRANSACTION_PENDING);
 						const t = "function" == typeof m ? await m() : m;
@@ -569,7 +569,7 @@
 						return i.a.createElement(V, {
 							approveDisabled: !m,
 							backup: y,
-							onTransactionApproved: D,
+							onTransactionApproved: M,
 							onClose: e,
 							subredditId: a,
 							overview: A.approvalOverview,
@@ -900,8 +900,8 @@
 					v = R.fee,
 					Q = R.url;
 				if (!(R && N && v && Q)) throw new Error("Relay information incomplete");
-				const D = E.getTransactionCount(N),
-					M = await y,
+				const M = E.getTransactionCount(N),
+					D = await y,
 					L = await async function(A, e, a) {
 						const t = await Object(l.a)(A, {
 							method: "post",
@@ -915,7 +915,7 @@
 					}(A(), m, {
 						encodedFunctionCall: f,
 						from: k.address,
-						gas: M.toString(),
+						gas: D.toString(),
 						gasPrice: h.toString(),
 						nonce: w.toString(),
 						relayerAddress: N,
@@ -927,16 +927,16 @@
 						const I = Object(r.keccak256)(Object(s.concat)([Object(n.toUtf8Bytes)("rlx:"), Object(s.arrayify)(A.address), Object(s.arrayify)(e), Object(s.arrayify)(a), Object(s.padZeros)(Object(s.arrayify)(Object(i.bigNumberify)(t)), 32), Object(s.padZeros)(Object(s.arrayify)(o), 32), Object(s.padZeros)(Object(s.arrayify)(c), 32), Object(s.padZeros)(Object(s.arrayify)(Object(i.bigNumberify)(d)), 32), Object(s.arrayify)(l), Object(s.arrayify)(u)])),
 							p = await A.signMessage(Object(s.arrayify)(I));
 						return Array.from(Object(s.arrayify)(p))
-					}(k, g, f, v, h, M, w.toString(), b, N), H = await fetch("".concat(Q, "/relay"), {
+					}(k, g, f, v, h, D, w.toString(), b, N), H = await fetch("".concat(Q, "/relay"), {
 						method: "POST",
 						body: JSON.stringify({
 							approvalData: Array.from(Object(s.arrayify)("0x".concat(L))),
 							encodedFunction: f,
 							from: k.address,
-							gasLimit: M.toNumber(),
+							gasLimit: D.toNumber(),
 							gasPrice: h.toNumber(),
 							recipientNonce: w.toNumber(),
-							relayMaxNonce: await D,
+							relayMaxNonce: await M,
 							relayFee: parseInt(v),
 							relayerAddress: N,
 							relayHubAddress: b,
@@ -991,4 +991,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.ef4c15adb953d3f0668b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.4a312e6354daf6dbdad3.js.map
