@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.e30cf73b2ae3bc7b6f0a.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.28d81d6ffa7ab18c251d.js
+// Retrieved at 9/23/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -42,9 +42,10 @@
 			const u = (e, t, n) => (function() {
 				let s = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = f(o.target, o.currentTarget);
-					b(o.target, o.currentTarget, p.anchors) ? r && t && e(t(n, r)) : r && t && e(e => {
-						const s = t(n, r)(e);
+					const r = f(o.target, o.currentTarget),
+						c = x(o.target, o.currentTarget);
+					b(o.target, o.currentTarget, p.anchors) ? e(r && t && c ? t(n, r, c) : t(n, r)) : r && t && e(e => {
+						const s = c ? t(n, r, c)(e) : t(n, r)(e);
 						let o;
 						if (s && s.actionInfo) {
 							const e = s.actionInfo,
@@ -87,7 +88,8 @@
 				f = (e, t) => {
 					const n = e.dataset.clickId;
 					return n || (e === t ? null : !!e.parentElement && f(e.parentElement, t))
-				}
+				},
+				x = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && x(e.parentElement, t))
 		},
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, n) {
 			"use strict";
@@ -705,10 +707,10 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = e => r.a.createElement("span", L({
+			const T = e => r.a.createElement("span", L({
 					className: w.a.removalReason
 				}, e), e.children),
-				T = () => s.fbt._("Archived", null, {
+				M = () => s.fbt._("Archived", null, {
 					hk: "zv3q3"
 				}),
 				N = () => s.fbt._("Comments are locked", null, {
@@ -795,13 +797,13 @@
 					text: F(n)
 				}, W))), V.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(E.a, {
 					className: w.a.archivedIcon,
-					desc: T(),
+					desc: M(),
 					id: X,
 					onMouseEnter: D(X),
 					onMouseLeave: H
 				}), r.a.createElement(u.c, L({
 					tooltipId: X,
-					text: T()
+					text: M()
 				}, W))), V.isLocked && r.a.createElement(o.Fragment, null, r.a.createElement(O.a, {
 					className: w.a.lockIcon,
 					desc: N(),
@@ -850,7 +852,7 @@
 					text: s.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
-				}), (V.modRemovalReason || V.modNote) && r.a.createElement(M, {
+				}), (V.modRemovalReason || V.modNote) && r.a.createElement(T, {
 					onMouseEnter: D(Y),
 					onMouseLeave: H
 				}, s.fbt._("Removal reason", null, {
@@ -1208,19 +1210,20 @@
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
-				r = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				c = n("./src/reddit/connectors/SubscribeButton/index.ts"),
-				a = n("./src/reddit/controls/Button/index.tsx"),
-				i = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				d = n("./src/reddit/icons/svgs/Plus/index.tsx"),
-				l = n("./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts"),
-				u = n("./src/reddit/components/SubscribeButton/Inline.m.less"),
-				m = n.n(u),
-				p = n("./src/lib/classNames/index.ts"),
-				b = n("./src/lib/lessComponent.tsx");
+				r = n("./src/reddit/components/SearchResultsContent/searchResultsPageTreatment/searchIgnoreClickContext.ts"),
+				c = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				a = n("./src/reddit/connectors/SubscribeButton/index.ts"),
+				i = n("./src/reddit/controls/Button/index.tsx"),
+				d = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				l = n("./src/reddit/icons/svgs/Plus/index.tsx"),
+				u = n("./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts"),
+				m = n("./src/reddit/components/SubscribeButton/Inline.m.less"),
+				p = n.n(m),
+				b = n("./src/lib/classNames/index.ts"),
+				f = n("./src/lib/lessComponent.tsx");
 
-			function f() {
-				return (f = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1228,7 +1231,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var x = function(e, t) {
+			var v = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1237,35 +1240,39 @@
 				}
 				return n
 			};
-			const v = b.a.wrapped(e => {
+			const h = f.a.wrapped(e => {
 					var {
 						small: t,
 						shouldReverseColor: n
-					} = e, s = x(e, ["small", "shouldReverseColor"]);
-					const r = n ? a.i : a.f;
-					return o.a.createElement(r, f({}, s, {
-						className: Object(p.a)(s.className, {
-							[m.a.isLarge]: !t
-						})
+					} = e, s = v(e, ["small", "shouldReverseColor"]);
+					const c = Object(r.b)(),
+						a = n ? i.i : i.f;
+					return o.a.createElement(a, x({}, s, {
+						className: Object(b.a)(s.className, {
+							[p.a.isLarge]: !t
+						}),
+						"data-ignore-click": !!c
 					}))
-				}, "SubscribeInternalButton", m.a),
-				h = b.a.wrapped(e => {
+				}, "SubscribeInternalButton", p.a),
+				k = f.a.wrapped(e => {
 					var {
 						small: t,
 						belongsToType: n,
 						shouldReverseColor: s
-					} = e, r = x(e, ["small", "belongsToType", "shouldReverseColor"]);
-					const c = s ? a.f : a.i;
-					return o.a.createElement(c, f({}, r, {
-						className: Object(p.a)(r.className, {
-							[m.a.isLarge]: !t
-						})
+					} = e, c = v(e, ["small", "belongsToType", "shouldReverseColor"]);
+					const a = Object(r.b)(),
+						d = s ? i.f : i.i;
+					return o.a.createElement(d, x({}, c, {
+						className: Object(b.a)(c.className, {
+							[p.a.isLarge]: !t
+						}),
+						"data-ignore-click": !!a
 					}))
-				}, "UnsubscribeButton", m.a),
-				k = b.a.wrapped(i.a, "Checkmark", m.a),
-				j = b.a.wrapped(d.a, "Plus", m.a),
-				E = b.a.div("ButtonSpacer", m.a);
-			class O extends o.a.Component {
+				}, "UnsubscribeButton", p.a),
+				j = f.a.wrapped(d.a, "Checkmark", p.a),
+				E = f.a.wrapped(l.a, "Plus", p.a),
+				O = f.a.div("ButtonSpacer", p.a);
+			class _ extends o.a.Component {
 				constructor(e) {
 					super(e), this.onMouseEnter = () => {
 						this.setState({
@@ -1304,31 +1311,31 @@
 							sendEvent: a,
 							small: i = !1,
 							userIsSubscriber: d,
-							doNotHideOtherSubscribeButtons: u,
-							getEventFactory: b,
-							onSubscriptionsRequested: O
+							doNotHideOtherSubscribeButtons: l,
+							getEventFactory: m,
+							onSubscriptionsRequested: f
 						} = e,
-						_ = x(e, ["className", "identifier", "onSubscribe", "onUnsubscribe", "postId", "sendEvent", "small", "userIsSubscriber", "doNotHideOtherSubscribeButtons", "getEventFactory", "onSubscriptionsRequested"]),
+						_ = v(e, ["className", "identifier", "onSubscribe", "onUnsubscribe", "postId", "sendEvent", "small", "userIsSubscriber", "doNotHideOtherSubscribeButtons", "getEventFactory", "onSubscriptionsRequested"]),
 						y = this.state.isHovered;
 					let g = d ? "subscribed" : "subscribe";
 					d && y && (g = "unsubscribe");
-					const C = Object(l.a)({
+					const C = Object(u.a)({
 						type: n.type,
 						key: g
 					});
-					return d ? this.state.hasJustSubscribed || u ? o.a.createElement(h, f({
-						className: Object(p.a)(t, {
-							[m.a.isLarge]: !i,
-							[m.a.unsubscribeButtonHoverStyles]: !i
+					return d ? this.state.hasJustSubscribed || l ? o.a.createElement(k, x({
+						className: Object(b.a)(t, {
+							[p.a.isLarge]: !i,
+							[p.a.unsubscribeButtonHoverStyles]: !i
 						}),
 						onClick: this.onClick,
 						small: i,
 						belongsToType: n.type,
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}, _), i && o.a.createElement(k, null), !i && !y && o.a.createElement(k, null), !i && C) : i ? null : o.a.createElement(E, null) : o.a.createElement(o.a.Fragment, null, o.a.createElement(v, f({
-						className: Object(p.a)(t, {
-							[m.a.isLarge]: !i
+					}, _), i && o.a.createElement(j, null), !i && !y && o.a.createElement(j, null), !i && C) : i ? null : o.a.createElement(O, null) : o.a.createElement(o.a.Fragment, null, o.a.createElement(h, x({
+						className: Object(b.a)(t, {
+							[p.a.isLarge]: !i
 						}),
 						onClick: this.onClick,
 						small: i
@@ -1336,10 +1343,10 @@
 						id: "subscribe-button-".concat(c),
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave
-					}), o.a.createElement(j, null), !i && C))
+					}), o.a.createElement(E, null), !i && C))
 				}
 			}
-			t.a = Object(c.a)(Object(r.c)(O))
+			t.a = Object(a.a)(Object(c.c)(_))
 		},
 		"./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts": function(e, t, n) {
 			"use strict";
@@ -1721,4 +1728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.e30cf73b2ae3bc7b6f0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796.28d81d6ffa7ab18c251d.js.map

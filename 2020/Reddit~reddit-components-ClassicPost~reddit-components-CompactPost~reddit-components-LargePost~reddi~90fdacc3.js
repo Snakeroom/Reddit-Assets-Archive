@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.33f7e89d4177e14a88cb.js
-// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.1a9c64746f864caf886b.js
+// Retrieved at 9/23/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -1351,7 +1351,7 @@
 		"./src/reddit/components/FlairWrapper/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return O
+				return C
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -1361,22 +1361,23 @@
 				c = s("./src/lib/classNames/index.ts"),
 				l = s("./src/reddit/components/CategoryTagList/index.tsx"),
 				d = s("./src/reddit/components/FlairList/index.tsx"),
-				u = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				m = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				p = s("./src/reddit/helpers/flair.ts"),
-				b = s("./src/reddit/helpers/trackers/postFlair.ts"),
-				h = s("./src/reddit/models/Flair/index.ts"),
-				f = s("./src/reddit/selectors/postFlair.ts"),
-				x = s("./src/reddit/selectors/posts.ts"),
-				g = s("./src/reddit/selectors/subreddit.ts"),
-				v = s("./src/reddit/components/FlairWrapper/index.m.less"),
-				j = s.n(v);
-			const y = Object(o.b)(() => Object(a.c)({
+				u = s("./src/reddit/components/SearchResultsContent/searchResultsPageTreatment/searchIgnoreClickContext.ts"),
+				m = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				p = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				b = s("./src/reddit/helpers/flair.ts"),
+				h = s("./src/reddit/helpers/trackers/postFlair.ts"),
+				f = s("./src/reddit/models/Flair/index.ts"),
+				x = s("./src/reddit/selectors/postFlair.ts"),
+				g = s("./src/reddit/selectors/posts.ts"),
+				v = s("./src/reddit/selectors/subreddit.ts"),
+				j = s("./src/reddit/components/FlairWrapper/index.m.less"),
+				y = s.n(j);
+			const O = Object(o.b)(() => Object(a.c)({
 					flairPosition: (e, t) => {
 						let {
 							pageLayer: s
 						} = t;
-						return Object(u.p)(e, {
+						return Object(m.p)(e, {
 							pageLayer: s
 						})
 					},
@@ -1384,43 +1385,43 @@
 						let {
 							post: s
 						} = t;
-						return Object(x.r)(e, {
+						return Object(g.r)(e, {
 							postId: s.id
 						})
 					},
-					isPostFlairEnabled: (e, t) => Object(f.c)(e, {
+					isPostFlairEnabled: (e, t) => Object(x.c)(e, {
 						subredditId: t.post.belongsTo.id
 					}),
 					postCategories: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(x.E)(e, s)
+						return Object(g.E)(e, s)
 					},
 					subredditName: (e, t) => {
 						let {
 							post: s
 						} = t;
-						return Object(g.S)(e, {
+						return Object(v.S)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					}
 				})),
-				O = (e, t) => {
+				C = (e, t) => {
 					const s = [];
 					return t.isOriginalContent && s.push({
 						text: n.fbt._("OC", null, {
 							hk: "1i721p"
 						}),
-						type: h.f.Oc
+						type: f.f.Oc
 					}), e && s.push({
 						text: n.fbt._("Poll", null, {
 							hk: "1scdU1"
 						}),
-						type: h.f.Meta
+						type: f.f.Meta
 					}), s.push(...t.flair), s
 				};
-			t.a = y(e => {
+			t.a = O(e => {
 				let {
 					className: t,
 					disableFlair: s,
@@ -1428,60 +1429,62 @@
 					isFlairFilter: r,
 					isPostFlairEnabled: o,
 					isMeta: a,
-					nowrap: u,
-					post: f,
-					postCategories: x,
-					sendEvent: g,
-					showCategoryTag: v,
-					subredditName: y,
-					titleFlair: C
+					nowrap: m,
+					post: x,
+					postCategories: g,
+					sendEvent: v,
+					showCategoryTag: j,
+					subredditName: O,
+					titleFlair: w
 				} = e;
-				const w = n === h.b.Left,
-					k = C || O(a, f),
-					_ = [];
-				let E = [];
-				w ? k.map(e => {
-					Object(p.p)(e.type) ? _.push(e) : E.push(e)
-				}) : E = k;
-				const S = u ? j.a.flairNoWrap : _.length > 0 || E.length > 0 || x && v ? j.a.flairWrapper : null,
-					I = e => {
+				const k = Object(u.b)(),
+					_ = n === f.b.Left,
+					E = w || C(a, x),
+					S = [];
+				let I = [];
+				_ ? E.map(e => {
+					Object(b.p)(e.type) ? S.push(e) : I.push(e)
+				}) : I = E;
+				const T = m ? y.a.flairNoWrap : S.length > 0 || I.length > 0 || g && j ? y.a.flairWrapper : null,
+					N = e => {
 						const t = {
-							id: f.belongsTo.id,
-							eventType: f.belongsTo.type,
+							id: x.belongsTo.id,
+							eventType: x.belongsTo.type,
 							originElement: "post_flair",
 							postFlairName: e
 						};
-						Object(m.d)(m.a.SearchResults), g && g(Object(b.a)(f.id, t))
+						Object(p.d)(p.a.SearchResults), v && v(Object(h.a)(x.id, t))
 					},
-					T = e => {
-						Object(m.d)(m.a.SearchResults), g && g(Object(b.e)(e, f.id))
+					P = e => {
+						Object(p.d)(p.a.SearchResults), v && v(Object(h.e)(e, x.id))
 					},
-					N = !(s || !k || !k.length),
-					P = !!(v && x && x.length);
-				return N || P ? i.a.createElement("div", {
-					className: Object(c.a)(S, t)
-				}, N && _ && i.a.createElement(d.a, {
-					className: j.a.flairList,
+					F = !(s || !E || !E.length),
+					L = !!(j && g && g.length);
+				return F || L ? i.a.createElement("div", {
+					className: Object(c.a)(T, t),
+					"data-ignore-click": k
+				}, F && S && i.a.createElement(d.a, {
+					className: y.a.flairList,
 					isFlairFilter: r,
 					key: "leftFlair",
-					onClick: I,
-					onMouseDown: T,
-					flair: _,
+					onClick: N,
+					onMouseDown: P,
+					flair: S,
 					disabled: !o,
-					subredditName: y
-				}), N && i.a.createElement(d.a, {
-					className: j.a.flairList,
+					subredditName: O
+				}), F && i.a.createElement(d.a, {
+					className: y.a.flairList,
 					isFlairFilter: r,
 					key: "rightFlair",
-					onClick: I,
-					onMouseDown: T,
-					flair: E,
+					onClick: N,
+					onMouseDown: P,
+					flair: I,
 					disabled: !o,
-					subredditName: y
-				}), P && i.a.createElement(l.a, {
-					inLightboxHeader: u,
-					postId: f.id,
-					postCategories: x
+					subredditName: O
+				}), L && i.a.createElement(l.a, {
+					inLightboxHeader: m,
+					postId: x.id,
+					postCategories: g
 				})) : null
 			})
 		},
@@ -2182,6 +2185,20 @@
 				}
 			}
 			t.c = m.a.wrapped(Q(J(Object(u.a)(Object(p.c)($)))), "Component", R.a)
+		},
+		"./src/reddit/components/SearchResultsContent/searchResultsPageTreatment/searchIgnoreClickContext.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			})), s.d(t, "b", (function() {
+				return i
+			}));
+			var n = s("./node_modules/react/index.js");
+			const r = Object(n.createContext)(!1);
+
+			function i() {
+				return Object(n.useContext)(r)
+			}
 		},
 		"./src/reddit/components/Thumbnail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -4061,4 +4078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.33f7e89d4177e14a88cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.1a9c64746f864caf886b.js.map
