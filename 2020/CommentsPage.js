@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.bc55a5886f5c2bd16c69.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.ae84d05e0ea8f37206a0.js
+// Retrieved at 9/23/2020, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -321,9 +321,9 @@
 		"./src/reddit/actions/comment/websocket/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return D
-			})), s.d(t, "b", (function() {
 				return W
+			})), s.d(t, "b", (function() {
+				return H
 			}));
 			var n = s("./src/lib/constants/index.ts"),
 				o = s("./src/lib/makeActionCreator/index.ts"),
@@ -470,23 +470,24 @@
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var C = s("./src/lib/env/index.ts");
 			const O = new Map,
-				y = e => e;
-			var E;
+				y = e => e,
+				E = new Set;
+			var k;
 			! function(e) {
 				e.NEW_COMMENT = "new_comment", e.UPDATE_COMMENT = "update_comment", e.UPDATE_COMMENT_SCORE = "update_comment_score", e.DELETE_COMMENT = "delete_comment", e.REMOVE_COMMENT = "remove_comment", e.USER_JOIN = "join_system_message"
-			}(E || (E = {}));
-			const k = {
+			}(k || (k = {}));
+			const j = {
 					backoffTime: 2e3,
 					connectionAttempts: 0,
 					jitterAmount: 3e3,
 					maximumRetries: 9
 				},
-				j = (e, t) => {
+				w = (e, t) => {
 					const s = y(t),
 						n = O.get(s);
 					n && n.socket && (n.isClosePlanned = !0, n.socket.close())
 				},
-				w = (e, t, s, n) => {
+				_ = (e, t, s, n) => {
 					const o = y(t),
 						r = O.get(o);
 					if (r && (r.socket.readyState === WebSocket.CONNECTING || r.socket.readyState === WebSocket.OPEN)) return;
@@ -498,14 +499,14 @@
 						isClosePlanned: !1
 					};
 					O.set(o, i), i.socket.addEventListener("open", () => {
-						i.retries = Object.assign({}, k)
-					}), i.socket.addEventListener("message", I.bind(null, n)), i.socket.addEventListener("close", _.bind(null, o, n)), i.socket.addEventListener("error", S.bind(null, o)), window && window.addEventListener("beforeunload", j.bind(null, e, t))
+						i.retries = Object.assign({}, j)
+					}), i.socket.addEventListener("message", S.bind(null, n)), i.socket.addEventListener("close", P.bind(null, o, n)), i.socket.addEventListener("error", T.bind(null, o)), window && window.addEventListener("beforeunload", w.bind(null, e, t))
 				},
-				_ = (e, t, s) => {
+				P = (e, t, s) => {
 					const n = O.get(e);
-					n && (n.isClosePlanned ? O.delete(e) : P(e, t))
+					n && (n.isClosePlanned ? O.delete(e) : I(e, t))
 				},
-				P = (e, t) => {
+				I = (e, t) => {
 					const s = O.get(e);
 					if (!s) return;
 					const {
@@ -527,69 +528,71 @@
 								connectionAttempts: o + 1
 							});
 						setTimeout(() => {
-							w(d, c, l, t)
+							_(d, c, l, t)
 						}, a), Object(C.a)() && console.debug("Connection reset, retrying in ".concat(a, "ms"))
 					}
 				},
-				I = (e, t) => {
+				S = (e, t) => {
 					if (t && t.data) try {
 						e(JSON.parse(t.data))
 					} catch (t) {
 						Object(C.a)() && console.error(t)
 					}
 				},
-				S = (e, t) => {
+				T = (e, t) => {
 					const s = O.get(e);
 					s && s.isClosePlanned && s.socket && s.socket.readyState === WebSocket.CLOSED ? O.delete(e) : Object(C.a)() && console.error(t)
 				};
-			var T = s("./src/reddit/selectors/comments.ts"),
-				N = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				A = s("./src/reddit/actions/comment/websocket/constants.ts");
-			const L = Object(o.a)(A.b),
-				M = Object(o.a)(A.c),
-				R = Object(o.a)(A.a),
-				F = Object(o.a)(A.d),
-				B = {},
-				D = (e, t, s, o) => async (i, a) => {
-					(e => {
+			var N = s("./src/reddit/selectors/comments.ts"),
+				A = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				L = s("./src/reddit/actions/comment/websocket/constants.ts");
+			const M = Object(o.a)(L.b),
+				R = Object(o.a)(L.c),
+				F = Object(o.a)(L.a),
+				B = Object(o.a)(L.d),
+				D = {},
+				W = (e, t, s, o) => async (i, a) => {
+					(e => new Promise(t => {
 						const {
-							cb: t,
-							url: s,
-							uniqueId: n
+							cb: s,
+							url: n,
+							uniqueId: o
 						} = e;
-						w(s, n, Object.assign({}, k), t)
-					})({
+						E.has(o) ? t() : (E.add(o), setTimeout(() => {
+							E.delete(o), _(n, o, Object.assign({}, j), s), t()
+						}, 1))
+					}))({
 						uniqueId: s,
 						url: t,
 						cb: t => {
 							switch (t.type) {
-								case E.NEW_COMMENT: {
+								case k.NEW_COMMENT: {
 									const c = t.payload.name,
 										d = x(t.payload),
 										l = a(),
 										m = Object(r.a)(l, s).sortToUse === n.r.CHAT,
-										p = Object(T.n)(l, {
+										p = Object(N.n)(l, {
 											commentId: c
 										}),
-										u = !(!c || !B[c]);
+										u = !(!c || !D[c]);
 									if (d && !u) {
 										const s = v(0, o, t.payload),
 											n = t.payload.total_comment_count;
 										if (void 0 === p) {
-											const o = Object(T.x)(l, {
+											const o = Object(N.x)(l, {
 													commentsPageKey: e
 												}),
 												r = t.payload.parent_id,
-												a = Object(T.j)(l, {
+												a = Object(N.j)(l, {
 													commentId: r,
 													commentsPageKey: e
 												}),
-												c = Object(T.n)(l, {
+												c = Object(N.n)(l, {
 													commentId: r
 												}),
 												p = c && c.originId ? c.originId : r,
 												u = null === a ? a : a + 1;
-											if (m) i(L({
+											if (m) i(M({
 												authorFlair: s,
 												comment: d,
 												commentsPageKey: e,
@@ -601,7 +604,7 @@
 											}));
 											else {
 												const t = c && c.originId ? 5e3 : 7e3;
-												setTimeout(() => i(L({
+												setTimeout(() => i(M({
 													authorFlair: s,
 													comment: d,
 													commentsPageKey: e,
@@ -612,7 +615,7 @@
 													originId: p
 												})), t)
 											}
-										} else i(M({
+										} else i(R({
 											authorFlair: s,
 											comment: d,
 											commentsPageKey: e,
@@ -622,10 +625,10 @@
 									}
 									break
 								}
-								case E.UPDATE_COMMENT: {
+								case k.UPDATE_COMMENT: {
 									const c = t.payload.name,
 										d = a(),
-										l = Object(T.n)(d, {
+										l = Object(N.n)(d, {
 											commentId: c
 										}),
 										m = x(t.payload),
@@ -633,7 +636,7 @@
 									if (l && m) {
 										const s = v(0, o, t.payload),
 											n = t.payload.total_comment_count;
-										i(M({
+										i(R({
 											authorFlair: s,
 											comment: m,
 											commentsPageKey: e,
@@ -643,14 +646,14 @@
 									}
 									break
 								}
-								case E.UPDATE_COMMENT_SCORE: {
+								case k.UPDATE_COMMENT_SCORE: {
 									const s = t.payload.name,
 										n = t.payload.score,
 										o = a(),
-										r = Object(T.n)(o, {
+										r = Object(N.n)(o, {
 											commentId: s
 										});
-									r && i(M({
+									r && i(R({
 										comment: Object.assign(Object.assign({}, r), {
 											score: n
 										}),
@@ -658,39 +661,39 @@
 									}));
 									break
 								}
-								case E.DELETE_COMMENT: {
+								case k.DELETE_COMMENT: {
 									const e = t.payload.name,
 										s = a(),
-										n = Object(T.n)(s, {
+										n = Object(N.n)(s, {
 											commentId: e
 										});
-									n && !n.isDeleted ? i(R({
+									n && !n.isDeleted ? i(F({
 										id: e
-									})) : B[e] = E.DELETE_COMMENT;
+									})) : D[e] = k.DELETE_COMMENT;
 									break
 								}
-								case E.REMOVE_COMMENT: {
+								case k.REMOVE_COMMENT: {
 									const e = t.payload.link_id,
 										s = t.payload.name,
 										n = a(),
-										o = Object(T.n)(n, {
+										o = Object(N.n)(n, {
 											commentId: s
 										}),
 										r = (n.user.account && n.user.account.id) === (o && o.authorId),
-										c = !!e && !!Object(N.i)(n, {
+										c = !!e && !!Object(A.i)(n, {
 											postId: e
 										});
-									!o || o.isRemoved && o.isDeleted || r || c ? B[s] = E.REMOVE_COMMENT : i(R({
+									!o || o.isRemoved && o.isDeleted || r || c ? D[s] = k.REMOVE_COMMENT : i(F({
 										id: s
 									}));
 									break
 								}
-								case E.USER_JOIN: {
+								case k.USER_JOIN: {
 									const s = x(t.payload, {
 											isSystem: !0
 										}),
 										n = !0;
-									s && i(F({
+									s && i(B({
 										comment: s,
 										commentsPageKey: e,
 										isChatSort: n
@@ -700,8 +703,8 @@
 							}
 						}
 					})
-				}, W = (e, t) => async () => {
-					j(0, t)
+				}, H = (e, t) => async () => {
+					w(0, t)
 				}
 		},
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -18619,4 +18622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.bc55a5886f5c2bd16c69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.ae84d05e0ea8f37206a0.js.map
