@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.818f1d12abaacd151ac5.js
-// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.b5c706dea2f662ba13da.js
+// Retrieved at 9/23/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, r) {
@@ -113,7 +113,7 @@
 							tooltipId: o
 						})),
 						onClickPremium: () => e(Object(i.b)("/premium")),
-						reportAward: () => e(Object(p.a)(r.id))
+						reportAward: () => e(Object(p.a)(r))
 					}
 				});
 			class R extends n.a.Component {
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.818f1d12abaacd151ac5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.b5c706dea2f662ba13da.js.map

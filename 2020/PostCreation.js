@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2321764c82abd85ee740.js
-// Retrieved at 9/23/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.dee0f87977a5522905a7.js
+// Retrieved at 9/23/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "9066cb4-production"
+					SENTRY_RELEASE_VERSION: "4726988-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1646,20 +1646,22 @@
 						apiContext: c
 					} = o;
 					t(l());
-					const d = s.fbt._("Something went wrong. The report could not be created at this time.", null, {
-						hk: "1ewigu"
-					});
 					try {
-						(await Object(a.e)(c(), e)).error && t(Object(r.e)({
-							kind: i.b.Error,
+						if ((await Object(a.e)(c(), e.id)).error) throw new Error;
+						await t(Object(r.e)({
+							kind: i.b.SuccessAward,
 							duration: r.a,
-							text: d
+							text: s.fbt._("{award name} Award successfully reported for review.", [s.fbt._param("award name", e.name)], {
+								hk: "1fHb5Q"
+							})
 						}))
-					} catch (u) {
-						t(Object(r.e)({
+					} catch (d) {
+						await t(Object(r.e)({
 							kind: i.b.Error,
 							duration: r.a,
-							text: d
+							text: s.fbt._("Something went wrong. The report could not be created at this time.", null, {
+								hk: "1ewigu"
+							})
 						}))
 					}
 				}
@@ -3776,7 +3778,7 @@
 						n === ke.BEGIN ? t(Object(O.clickCancelAwardReportFlow)(e.award, e.thing.id)) : n === ke.REPORT_COMMUNITY_AWARD ? t(Object(O.clickCancelReportAward)(e.award, e.thing.id)) : n === ke.FLAG_USAGE && t(Object(O.clickCancelFlagAwardUsage)(e.award, e.thing.id)), e.onClose()
 					},
 					d = () => {
-						t(Object(O.clickConfirmReportAward)(e.award, e.thing.id)), c(Object(Ie.a)(e.award.id)), e.onClose()
+						t(Object(O.clickConfirmReportAward)(e.award, e.thing.id)), c(Object(Ie.a)(e.award)), e.onClose()
 					},
 					u = () => {
 						t(Object(O.clickConfirmFlagAwardUsage)(e.award, e.thing.id)), c(Object(m.e)(Object(m.d)(s.fbt._("{award name} Award successfully flagged for review.", [s.fbt._param("award name", e.award.name)], {
@@ -33860,4 +33862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2321764c82abd85ee740.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.dee0f87977a5522905a7.js.map
