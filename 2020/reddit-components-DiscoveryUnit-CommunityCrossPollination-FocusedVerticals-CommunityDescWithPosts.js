@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.fc833414ea2237300888.js
-// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.8841ecdab24ef5350f37.js
+// Retrieved at 9/24/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -44,7 +44,7 @@
 				return r => {
 					const o = h(r.target, r.currentTarget),
 						i = v(r.target, r.currentTarget);
-					m(r.target, r.currentTarget, p.anchors) ? e(o && t && i ? t(s, o, i) : t(s, o)) : o && t && e(e => {
+					e && t && (m(r.target, r.currentTarget, p.anchors) ? e(o && i ? t(s, o, i) : t(s, o)) : o && e(e => {
 						const n = i ? t(s, o, i)(e) : t(s, o)(e);
 						let r;
 						if (n && n.actionInfo) {
@@ -57,7 +57,7 @@
 						return Object.assign(Object.assign({}, n), {
 							actionInfo: Object(a.previousPageActionInfo)(e, r)
 						})
-					}), m(r.target, r.currentTarget, p.anchorsAndButtons) && n(r)
+					})), m(r.target, r.currentTarget, p.anchorsAndButtons) && n(r)
 				}
 			});
 
@@ -1372,4 +1372,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.fc833414ea2237300888.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.8841ecdab24ef5350f37.js.map

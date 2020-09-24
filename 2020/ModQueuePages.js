@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.3c75d5a8d7043f332b2a.js
-// Retrieved at 9/23/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.fa3a68d99348a1cec2dc.js
+// Retrieved at 9/24/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -44,7 +44,7 @@
 				return o => {
 					const r = h(o.target, o.currentTarget),
 						a = x(o.target, o.currentTarget);
-					b(o.target, o.currentTarget, p.anchors) ? e(r && t && a ? t(s, r, a) : t(s, r)) : r && t && e(e => {
+					e && t && (b(o.target, o.currentTarget, p.anchors) ? e(r && a ? t(s, r, a) : t(s, r)) : r && e(e => {
 						const n = a ? t(s, r, a)(e) : t(s, r)(e);
 						let o;
 						if (n && n.actionInfo) {
@@ -57,7 +57,7 @@
 						return Object.assign(Object.assign({}, n), {
 							actionInfo: Object(d.previousPageActionInfo)(e, o)
 						})
-					}), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
+					})), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
 				}
 			});
 
@@ -2367,4 +2367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3c75d5a8d7043f332b2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.fa3a68d99348a1cec2dc.js.map

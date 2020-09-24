@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7c6d8d9cacf4ab2db883.js
-// Retrieved at 9/23/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.83b5ded6f2ce1af74049.js
+// Retrieved at 9/24/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -325,7 +325,7 @@
 				return o => {
 					const r = x(o.target, o.currentTarget),
 						a = v(o.target, o.currentTarget);
-					b(o.target, o.currentTarget, p.anchors) ? e(r && t && a ? t(s, r, a) : t(s, r)) : r && t && e(e => {
+					e && t && (b(o.target, o.currentTarget, p.anchors) ? e(r && a ? t(s, r, a) : t(s, r)) : r && e(e => {
 						const n = a ? t(s, r, a)(e) : t(s, r)(e);
 						let o;
 						if (n && n.actionInfo) {
@@ -338,7 +338,7 @@
 						return Object.assign(Object.assign({}, n), {
 							actionInfo: Object(c.previousPageActionInfo)(e, o)
 						})
-					}), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
+					})), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
 				}
 			});
 
@@ -1827,4 +1827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.7c6d8d9cacf4ab2db883.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.83b5ded6f2ce1af74049.js.map

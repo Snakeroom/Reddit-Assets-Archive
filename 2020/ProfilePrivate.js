@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.d435708924b3559ed695.js
-// Retrieved at 9/24/2020, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.0139be3097cfd9bf2264.js
+// Retrieved at 9/24/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -73,7 +73,7 @@
 				return o => {
 					const r = h(o.target, o.currentTarget),
 						i = x(o.target, o.currentTarget);
-					b(o.target, o.currentTarget, u.anchors) ? e(r && t && i ? t(s, r, i) : t(s, r)) : r && t && e(e => {
+					e && t && (b(o.target, o.currentTarget, u.anchors) ? e(r && i ? t(s, r, i) : t(s, r)) : r && e(e => {
 						const n = i ? t(s, r, i)(e) : t(s, r)(e);
 						let o;
 						if (n && n.actionInfo) {
@@ -86,7 +86,7 @@
 						return Object.assign(Object.assign({}, n), {
 							actionInfo: Object(c.previousPageActionInfo)(e, o)
 						})
-					}), b(o.target, o.currentTarget, u.anchorsAndButtons) && n(o)
+					})), b(o.target, o.currentTarget, u.anchorsAndButtons) && n(o)
 				}
 			});
 
@@ -11176,4 +11176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d435708924b3559ed695.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.0139be3097cfd9bf2264.js.map

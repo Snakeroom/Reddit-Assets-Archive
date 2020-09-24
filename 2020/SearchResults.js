@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.47881a28b1ead8a25afa.js
-// Retrieved at 9/24/2020, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.78b1bad462c47140c2df.js
+// Retrieved at 9/24/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -47,7 +47,7 @@
 				return o => {
 					const r = h(o.target, o.currentTarget),
 						i = x(o.target, o.currentTarget);
-					b(o.target, o.currentTarget, u.anchors) ? e(r && t && i ? t(s, r, i) : t(s, r)) : r && t && e(e => {
+					e && t && (b(o.target, o.currentTarget, u.anchors) ? e(r && i ? t(s, r, i) : t(s, r)) : r && e(e => {
 						const n = i ? t(s, r, i)(e) : t(s, r)(e);
 						let o;
 						if (n && n.actionInfo) {
@@ -60,7 +60,7 @@
 						return Object.assign(Object.assign({}, n), {
 							actionInfo: Object(c.previousPageActionInfo)(e, o)
 						})
-					}), b(o.target, o.currentTarget, u.anchorsAndButtons) && n(o)
+					})), b(o.target, o.currentTarget, u.anchorsAndButtons) && n(o)
 				}
 			});
 
@@ -13071,4 +13071,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.47881a28b1ead8a25afa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.78b1bad462c47140c2df.js.map

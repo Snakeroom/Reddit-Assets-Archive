@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c8b2d315fc34b7f1d5fe.js
-// Retrieved at 9/24/2020, 1:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ef184230d3c55e7130fc.js
+// Retrieved at 9/24/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -236,7 +236,7 @@
 				return o => {
 					const a = h(o.target, o.currentTarget),
 						r = g(o.target, o.currentTarget);
-					b(o.target, o.currentTarget, p.anchors) ? e(a && t && r ? t(s, a, r) : t(s, a)) : a && t && e(e => {
+					e && t && (b(o.target, o.currentTarget, p.anchors) ? e(a && r ? t(s, a, r) : t(s, a)) : a && e(e => {
 						const n = r ? t(s, a, r)(e) : t(s, a)(e);
 						let o;
 						if (n && n.actionInfo) {
@@ -249,7 +249,7 @@
 						return Object.assign(Object.assign({}, n), {
 							actionInfo: Object(d.previousPageActionInfo)(e, o)
 						})
-					}), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
+					})), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
 				}
 			});
 
@@ -30909,4 +30909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c8b2d315fc34b7f1d5fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ef184230d3c55e7130fc.js.map
