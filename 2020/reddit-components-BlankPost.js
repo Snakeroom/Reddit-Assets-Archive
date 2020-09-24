@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.11579cb0444ff724efa7.js
-// Retrieved at 9/24/2020, 5:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.1f57b731bca6e3230688.js
+// Retrieved at 9/24/2020, 6:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -254,11 +254,11 @@
 				u = i("./src/lib/ads/store.ts"),
 				c = i("./src/lib/onFocusAndVisibilityChange/index.ts"),
 				h = i("./src/reddit/connectors/PostViewable/index.ts"),
-				m = i("./src/reddit/constants/viewabilityEvents.ts"),
+				m = i("./src/reddit/constants/adEvents.ts"),
 				p = i("./src/reddit/selectors/media.ts"),
 				b = i("./src/reddit/selectors/video.ts");
 			const v = [{
-					event: m.a.Viewable,
+					event: m.a.ViewableImpression,
 					threshold: l.k,
 					viewabilityMinimum: l.l
 				}, {
@@ -266,7 +266,7 @@
 					threshold: l.b,
 					viewabilityMinimum: l.c
 				}, {
-					event: m.a.VendorFullyViewable,
+					event: m.a.VendorFullyInView,
 					threshold: l.a,
 					viewabilityMinimum: l.e
 				}, {
@@ -274,7 +274,7 @@
 					threshold: l.a,
 					viewabilityMinimum: l.l
 				}, {
-					event: m.a.VendorFullyViewableSeconds5,
+					event: m.a.VendorFullyInViewSeconds5,
 					threshold: l.k,
 					viewabilityMinimum: l.g,
 					remainingTime: l.g,
@@ -282,7 +282,7 @@
 					cumulative: !0,
 					cumulativeElapsedTime: 0
 				}, {
-					event: m.a.VendorFullyViewableSeconds15,
+					event: m.a.VendorFullyInViewSeconds15,
 					threshold: l.k,
 					viewabilityMinimum: l.f,
 					remainingTime: l.f,
@@ -291,13 +291,13 @@
 					cumulativeElapsedTime: 0
 				}],
 				g = [{
-					event: m.a.VideoViewable,
+					event: m.a.VideoViewableImpression,
 					threshold: l.k,
 					viewabilityMinimum: l.j,
 					remainingTime: l.j,
 					timeViewingInterrupted: 0
 				}, {
-					event: m.a.VideoFullyViewable,
+					event: m.a.VideoFullyViewableImpression,
 					threshold: l.a,
 					viewabilityMinimum: l.h,
 					remainingTime: l.h,
@@ -379,8 +379,8 @@
 						})
 					}
 				}),
-				O = Object(h.a)(_);
-			class k extends s.Component {
+				I = Object(h.a)(_);
+			class O extends s.Component {
 				constructor(e) {
 					super(e), this.viewabilityStats = y(), this.videoStats = f(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
 						this.props.trackDisplay && this.handleThresholds(e, l.q), this.props.trackVideo && this.handleThresholds(e, l.o, !0), this.checkViewabilityByType(e)
@@ -503,7 +503,7 @@
 					}, this.props.children)
 				}
 			}
-			t.a = O(k)
+			t.a = I(O)
 		},
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, i) {
 			"use strict";
@@ -548,4 +548,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.11579cb0444ff724efa7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.1f57b731bca6e3230688.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7c0cd2ba18744c07aaf2.js
-// Retrieved at 9/24/2020, 5:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a7224e07f5b40cc0b0fd.js
+// Retrieved at 9/24/2020, 6:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "9fa91c3-production"
+					SENTRY_RELEASE_VERSION: "048c9ed-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -2785,11 +2785,11 @@
 				d = n("./src/lib/ads/store.ts"),
 				u = n("./src/lib/onFocusAndVisibilityChange/index.ts"),
 				p = n("./src/reddit/connectors/PostViewable/index.ts"),
-				m = n("./src/reddit/constants/viewabilityEvents.ts"),
+				m = n("./src/reddit/constants/adEvents.ts"),
 				h = n("./src/reddit/selectors/media.ts"),
 				b = n("./src/reddit/selectors/video.ts");
 			const f = [{
-					event: m.a.Viewable,
+					event: m.a.ViewableImpression,
 					threshold: l.k,
 					viewabilityMinimum: l.l
 				}, {
@@ -2797,7 +2797,7 @@
 					threshold: l.b,
 					viewabilityMinimum: l.c
 				}, {
-					event: m.a.VendorFullyViewable,
+					event: m.a.VendorFullyInView,
 					threshold: l.a,
 					viewabilityMinimum: l.e
 				}, {
@@ -2805,7 +2805,7 @@
 					threshold: l.a,
 					viewabilityMinimum: l.l
 				}, {
-					event: m.a.VendorFullyViewableSeconds5,
+					event: m.a.VendorFullyInViewSeconds5,
 					threshold: l.k,
 					viewabilityMinimum: l.g,
 					remainingTime: l.g,
@@ -2813,7 +2813,7 @@
 					cumulative: !0,
 					cumulativeElapsedTime: 0
 				}, {
-					event: m.a.VendorFullyViewableSeconds15,
+					event: m.a.VendorFullyInViewSeconds15,
 					threshold: l.k,
 					viewabilityMinimum: l.f,
 					remainingTime: l.f,
@@ -2822,13 +2822,13 @@
 					cumulativeElapsedTime: 0
 				}],
 				g = [{
-					event: m.a.VideoViewable,
+					event: m.a.VideoViewableImpression,
 					threshold: l.k,
 					viewabilityMinimum: l.j,
 					remainingTime: l.j,
 					timeViewingInterrupted: 0
 				}, {
-					event: m.a.VideoFullyViewable,
+					event: m.a.VideoFullyViewableImpression,
 					threshold: l.a,
 					viewabilityMinimum: l.h,
 					remainingTime: l.h,
@@ -33892,4 +33892,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7c0cd2ba18744c07aaf2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a7224e07f5b40cc0b0fd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d2e81bf51d1dae41db8f.js
-// Retrieved at 9/24/2020, 5:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d5cdfbbbe210e6bdf7a0.js
+// Retrieved at 9/24/2020, 6:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -248,11 +248,11 @@
 				d = s("./src/lib/ads/store.ts"),
 				u = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
 				m = s("./src/reddit/connectors/PostViewable/index.ts"),
-				p = s("./src/reddit/constants/viewabilityEvents.ts"),
+				p = s("./src/reddit/constants/adEvents.ts"),
 				b = s("./src/reddit/selectors/media.ts"),
 				h = s("./src/reddit/selectors/video.ts");
 			const f = [{
-					event: p.a.Viewable,
+					event: p.a.ViewableImpression,
 					threshold: l.k,
 					viewabilityMinimum: l.l
 				}, {
@@ -260,7 +260,7 @@
 					threshold: l.b,
 					viewabilityMinimum: l.c
 				}, {
-					event: p.a.VendorFullyViewable,
+					event: p.a.VendorFullyInView,
 					threshold: l.a,
 					viewabilityMinimum: l.e
 				}, {
@@ -268,7 +268,7 @@
 					threshold: l.a,
 					viewabilityMinimum: l.l
 				}, {
-					event: p.a.VendorFullyViewableSeconds5,
+					event: p.a.VendorFullyInViewSeconds5,
 					threshold: l.k,
 					viewabilityMinimum: l.g,
 					remainingTime: l.g,
@@ -276,7 +276,7 @@
 					cumulative: !0,
 					cumulativeElapsedTime: 0
 				}, {
-					event: p.a.VendorFullyViewableSeconds15,
+					event: p.a.VendorFullyInViewSeconds15,
 					threshold: l.k,
 					viewabilityMinimum: l.f,
 					remainingTime: l.f,
@@ -285,13 +285,13 @@
 					cumulativeElapsedTime: 0
 				}],
 				x = [{
-					event: p.a.VideoViewable,
+					event: p.a.VideoViewableImpression,
 					threshold: l.k,
 					viewabilityMinimum: l.j,
 					remainingTime: l.j,
 					timeViewingInterrupted: 0
 				}, {
-					event: p.a.VideoFullyViewable,
+					event: p.a.VideoFullyViewableImpression,
 					threshold: l.a,
 					viewabilityMinimum: l.h,
 					remainingTime: l.h,
@@ -4087,4 +4087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d2e81bf51d1dae41db8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d5cdfbbbe210e6bdf7a0.js.map

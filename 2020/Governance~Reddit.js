@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.34bcbb1e2ee08d9b35cd.js
-// Retrieved at 9/24/2020, 5:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.be4bb6a186ebdb73001e.js
+// Retrieved at 9/24/2020, 6:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -11807,95 +11807,95 @@
 		"./src/reddit/actions/post.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return te
+				return ee
 			})), s.d(t, "c", (function() {
-				return se
+				return te
 			})), s.d(t, "h", (function() {
-				return ne
+				return se
 			})), s.d(t, "g", (function() {
-				return re
+				return ne
 			})), s.d(t, "r", (function() {
-				return ae
+				return re
 			})), s.d(t, "k", (function() {
-				return ce
+				return ie
 			})), s.d(t, "J", (function() {
-				return de
+				return oe
 			})), s.d(t, "e", (function() {
-				return ue
+				return de
 			})), s.d(t, "d", (function() {
-				return le
+				return ue
 			})), s.d(t, "z", (function() {
-				return be
+				return le
 			})), s.d(t, "y", (function() {
-				return pe
+				return be
 			})), s.d(t, "P", (function() {
-				return Oe
+				return pe
 			})), s.d(t, "L", (function() {
-				return ge
+				return Oe
 			})), s.d(t, "S", (function() {
-				return me
+				return fe
 			})), s.d(t, "q", (function() {
-				return je
+				return me
 			})), s.d(t, "F", (function() {
-				return he
+				return _e
 			})), s.d(t, "G", (function() {
-				return ye
+				return he
 			})), s.d(t, "t", (function() {
-				return ve
+				return Ie
 			})), s.d(t, "H", (function() {
-				return Se
+				return ve
 			})), s.d(t, "m", (function() {
-				return Te
+				return Se
 			})), s.d(t, "K", (function() {
-				return we
+				return Te
 			})), s.d(t, "E", (function() {
-				return Ce
+				return we
 			})), s.d(t, "w", (function() {
-				return Ae
+				return Ce
 			})), s.d(t, "O", (function() {
-				return De
+				return Ae
 			})), s.d(t, "B", (function() {
-				return Pe
+				return De
 			})), s.d(t, "A", (function() {
-				return Re
+				return Pe
 			})), s.d(t, "p", (function() {
-				return ke
+				return Re
 			})), s.d(t, "Q", (function() {
-				return xe
+				return ke
 			})), s.d(t, "R", (function() {
-				return Ne
+				return xe
 			})), s.d(t, "v", (function() {
-				return Ue
+				return Le
 			})), s.d(t, "i", (function() {
-				return Me
+				return Ue
 			})), s.d(t, "n", (function() {
-				return Ge
+				return Fe
 			})), s.d(t, "l", (function() {
-				return Be
+				return Ge
 			})), s.d(t, "M", (function() {
-				return qe
+				return Be
 			})), s.d(t, "D", (function() {
-				return Ve
+				return qe
 			})), s.d(t, "I", (function() {
-				return He
+				return Ve
 			})), s.d(t, "u", (function() {
-				return Ke
+				return He
 			})), s.d(t, "C", (function() {
-				return We
+				return Ke
 			})), s.d(t, "j", (function() {
-				return Ye
+				return We
 			})), s.d(t, "s", (function() {
-				return Je
+				return ze
 			})), s.d(t, "N", (function() {
-				return Qe
+				return Je
 			})), s.d(t, "f", (function() {
-				return Xe
+				return Qe
 			})), s.d(t, "x", (function() {
-				return Ze
+				return Xe
 			})), s.d(t, "a", (function() {
-				return $e
+				return Ze
 			})), s.d(t, "o", (function() {
-				return et
+				return $e
 			}));
 			var n = s("./node_modules/@reddit/onetrust-integration/dist/esm/index.js"),
 				r = s("./src/config.ts"),
@@ -11960,12 +11960,12 @@
 				const n = {
 					post: e,
 					unloadTimer: window.setTimeout(() => {
-						t(ve(e, O.a.Unload))
+						t(Ie(e, O.a.Unload))
 					}, I.d)
 				};
 				if (I.a.push(n), I.a.length > 10) {
 					const e = I.a.shift();
-					t(ve(e.post, O.a.Unload)), clearTimeout(e.unloadTimer)
+					t(Ie(e.post, O.a.Unload)), clearTimeout(e.unloadTimer)
 				}
 			};
 			var T = s("./src/reddit/actions/video.ts"),
@@ -11995,22 +11995,21 @@
 				Q = s("./src/reddit/selectors/experiments/avatarsInComments.ts"),
 				X = s("./src/reddit/selectors/platform.ts"),
 				Z = s("./src/reddit/selectors/user.ts"),
-				$ = s("./src/reddit/constants/viewabilityEvents.ts"),
-				ee = s("./src/telemetry/index.ts");
-			const te = "POST__EXPANDED_TOGGLED",
-				se = "POST__FOCUS_CHANGED",
-				ne = "POSTS__MUTATED",
-				re = "POSTS_LOADED",
-				ae = Object(u.a)(te),
-				ie = (Object(u.a)(se), Object(u.a)(re)),
-				ce = "POST__STICKY_POST_SUCCESS",
-				oe = Object(u.a)(ce),
-				de = Object(u.a)(ne),
-				ue = "POST__MODERATION_PROMPT_OPENED",
-				le = "POST__MODERATION_PROMPT_CLOSED",
+				$ = s("./src/telemetry/index.ts");
+			const ee = "POST__EXPANDED_TOGGLED",
+				te = "POST__FOCUS_CHANGED",
+				se = "POSTS__MUTATED",
+				ne = "POSTS_LOADED",
+				re = Object(u.a)(ee),
+				ae = (Object(u.a)(te), Object(u.a)(ne)),
+				ie = "POST__STICKY_POST_SUCCESS",
+				ce = Object(u.a)(ie),
+				oe = Object(u.a)(se),
+				de = "POST__MODERATION_PROMPT_OPENED",
+				ue = "POST__MODERATION_PROMPT_CLOSED",
+				le = Object(u.a)(de),
 				be = Object(u.a)(ue),
-				pe = Object(u.a)(le),
-				Oe = (e, t, s, n) => async (r, i, c) => {
+				pe = (e, t, s, n) => async (r, i, c) => {
 					let {
 						apiContext: o
 					} = c;
@@ -12021,7 +12020,7 @@
 						redirectUrl: d.permalink
 					})), void r(Object(b.i)());
 					let u;
-					if (r(de({
+					if (r(oe({
 							[e]: {
 								hidden: t
 							}
@@ -12034,10 +12033,10 @@
 								}),
 								i = Object(q.d)(n, Y.b.Undo, a.fbt._("Undo", null, {
 									hk: "46OwLP"
-								}), Oe(e, !t, s, !1));
+								}), pe(e, !t, s, !1));
 							r(Object(q.e)(i))
 						}
-					} else if (r(de({
+					} else if (r(oe({
 							[e]: {
 								hidden: !t
 							}
@@ -12047,7 +12046,7 @@
 						}), Y.b.Error);
 						r(Object(q.e)(e))
 					}
-				}, ge = e => async (t, s, n) => {
+				}, Oe = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -12058,7 +12057,7 @@
 						redirectUrl: i.permalink
 					}));
 					const c = i.saved ? N.y : N.p;
-					if (t(de({
+					if (t(oe({
 							[e]: {
 								saved: !i.saved
 							}
@@ -12070,24 +12069,24 @@
 							}),
 							n = Object(q.d)(s, Y.b.Undo, a.fbt._("Undo", null, {
 								hk: "46OwLP"
-							}), ge(e));
+							}), Oe(e));
 						t(Object(q.e)(n))
-					} else t(de({
+					} else t(oe({
 						[e]: {
 							saved: i.saved
 						}
 					}))
-				}, fe = (e, t) => t().posts.models[e], me = Object(w.b)(fe, J.a.upvoted), je = Object(w.b)(fe, J.a.downvoted), _e = e => "viewing-".concat(e), he = (e, t) => async (s, n) => {
+				}, ge = (e, t) => t().posts.models[e], fe = Object(w.b)(ge, J.a.upvoted), me = Object(w.b)(ge, J.a.downvoted), je = e => "viewing-".concat(e), _e = (e, t) => async (s, n) => {
 					const r = n();
-					K.i(r, e, t), ee.c.start(_e(e))
-				}, ye = (e, t, s) => async (n, a) => {
+					K.i(r, e, t), $.c.start(je(e))
+				}, he = (e, t, s) => async (n, a) => {
 					const i = a(),
-						c = _e(e);
-					if (ee.c.has(c)) {
-						const n = ee.c.end("viewing-".concat(e));
+						c = je(e);
+					if ($.c.has(c)) {
+						const n = $.c.end("viewing-".concat(e));
 						!t && n > r.a.telemetry.postConsumedThreshold && K.a(i, e, n, s)
 					}
-				}, Ee = {
+				}, ye = {
 					[O.a.Impression]: l.c,
 					[O.a.Click]: l.b,
 					[O.a.ViewableImpression]: l.m,
@@ -12108,46 +12107,46 @@
 					[O.a.VideoVendorFullyViewable50]: l.e,
 					[O.a.VideoPlayedExpanded]: l.g,
 					[O.a.Unload]: I.b,
-					[$.a.VendorFullyViewable]: l.v,
-					[$.a.VendorFullyViewableSeconds5]: l.x,
-					[$.a.VendorFullyViewableSeconds15]: l.w
-				}, Ie = Object(u.b)(Ee), ve = (e, t, s) => async (n, r) => {
+					[O.a.VendorFullyInView]: l.v,
+					[O.a.VendorFullyInViewSeconds5]: l.x,
+					[O.a.VendorFullyInViewSeconds15]: l.w
+				}, Ee = Object(u.b)(ye), Ie = (e, t, s) => async (n, r) => {
 					const a = Object(E.b)(r(), e.id),
 						i = Object(g.a)(e.id, a, t);
-					Ee[t] && n(Ie(String(t), {
+					ye[t] && n(Ee(String(t), {
 						postId: e.id,
 						vendorMetadata: i,
 						eventType: s
 					})), y(e, t, i)
-				}, Se = (e, t) => async (s, n) => {
+				}, ve = (e, t) => async (s, n) => {
 					const r = e && e.media && "video" === e.media.type,
-						a = [$.a.VendorFullyViewable, $.a.VendorFullyViewableSeconds5, $.a.VendorFullyViewableSeconds15];
-					if (r && t === $.a.VideoViewable) s(Object(T.y)(e.id));
-					else if (r && t === $.a.VideoFullyViewable) s(Object(T.v)(e.id));
-					else if (r && t === $.a.VideoGroupMViewable) s(Object(T.w)(e.id));
-					else if (r && t === $.a.VideoVendorFullyViewable50) s(Object(T.x)(e.id));
+						a = [O.a.VendorFullyInView, O.a.VendorFullyInViewSeconds5, O.a.VendorFullyInViewSeconds15];
+					if (r && t === O.a.VideoViewableImpression) s(Object(T.y)(e.id));
+					else if (r && t === O.a.VideoFullyViewableImpression) s(Object(T.v)(e.id));
+					else if (r && t === O.a.VideoGroupMViewable) s(Object(T.w)(e.id));
+					else if (r && t === O.a.VideoVendorFullyViewable50) s(Object(T.x)(e.id));
 					else if (e.isSponsored)
 						if (a.includes(t)) s(((e, t) => async s => {
-							s(ve(e, t))
+							s(Ie(e, t))
 						})(e, t));
 						else {
-							if (t !== $.a.GroupMViewable) return t === $.a.Impression ? (s((e => async (t, s) => {
-								e.isSponsored && (t(ve(e, O.a.Impression)), S(e, t, s))
+							if (t !== O.a.GroupMViewable) return t === O.a.Impression ? (s((e => async (t, s) => {
+								e.isSponsored && (t(Ie(e, O.a.Impression)), S(e, t, s))
 							})(e)), void(e.isBlank || K.h(n(), e.postId))) : void s((e => async t => {
-								e.isSponsored && t(ve(e, O.a.ViewableImpression))
+								e.isSponsored && t(Ie(e, O.a.ViewableImpression))
 							})(e));
 							s(((e, t) => async s => {
-								s(ve(e, t))
+								s(Ie(e, t))
 							})(e, t))
 						}
-				}, Te = e => async (t, s, n) => {
+				}, Se = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const a = s(),
 						i = a.posts.models[e],
 						c = a.user.account ? a.user.account.displayText : null;
-					i && (t(de({
+					i && (t(oe({
 						[e]: {
 							approvedBy: c,
 							bannedBy: null,
@@ -12159,7 +12158,7 @@
 							modRemovalReason: null,
 							modReasonBy: null
 						}
-					})), (await Object(N.b)(r(), e)).ok || t(de({
+					})), (await Object(N.b)(r(), e)).ok || t(oe({
 						[e]: {
 							approvedBy: null,
 							bannedBy: i.bannedBy,
@@ -12172,14 +12171,14 @@
 							modReasonBy: i.modReasonBy
 						}
 					})))
-				}, we = (e, t) => async (s, n, r) => {
+				}, Te = (e, t) => async (s, n, r) => {
 					let {
 						apiContext: a
 					} = r;
 					const i = n(),
 						c = i.posts.models[e],
 						o = i.user.account ? i.user.account.displayText : null;
-					return !(!c || !o) && (s(de({
+					return !(!c || !o) && (s(oe({
 						[e]: {
 							approvedBy: null,
 							bannedBy: o,
@@ -12187,7 +12186,7 @@
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), !!(await Object(N.m)(a(), e, t)).ok || (s(de({
+					})), !!(await Object(N.m)(a(), e, t)).ok || (s(oe({
 						[e]: {
 							approvedBy: c.approvedBy,
 							bannedBy: c.bannedBy,
@@ -12196,13 +12195,13 @@
 							isSpam: c.isSpam
 						}
 					})), !1))
-				}, Ce = (e, t, s) => async (n, r, i) => {
+				}, we = (e, t, s) => async (n, r, i) => {
 					let {
 						apiContext: c
 					} = i;
 					const o = r();
 					if (o.posts.models[e])
-						if (n(de({
+						if (n(oe({
 								[e]: {
 									hidden: !0
 								}
@@ -12217,7 +12216,7 @@
 							}
 							n(Object(q.e)(e))
 						} else {
-							n(de({
+							n(oe({
 								[e]: {
 									hidden: !1
 								}
@@ -12227,23 +12226,23 @@
 							}), Y.b.Error);
 							n(Object(q.e)(t))
 						}
-				}, Ae = e => async (t, s, n) => {
+				}, Ce = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const a = s().posts.models[e];
 					if (!a) return;
 					const i = a.isLocked ? N.w : N.j;
-					t(de({
+					t(oe({
 						[e]: {
 							isLocked: !a.isLocked
 						}
-					})), (await i(r(), e)).ok || t(de({
+					})), (await i(r(), e)).ok || t(oe({
 						[e]: {
 							isLocked: a.isLocked
 						}
 					}))
-				}, De = e => async (t, s, n) => {
+				}, Ae = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -12254,34 +12253,34 @@
 							text: "spoiler",
 							type: W.f.Spoiler
 						}];
-					t(de({
+					t(oe({
 						[e]: {
 							isSpoiler: !a.isSpoiler,
 							flair: c
 						}
-					})), (await i(r(), e)).ok || t(de({
+					})), (await i(r(), e)).ok || t(oe({
 						[e]: {
 							isSpoiler: a.isSpoiler,
 							flair: a.flair
 						}
 					}))
-				}, Pe = e => async (t, s, n) => {
+				}, De = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const a = Object(E.N)(s(), {
 						postId: e
 					});
-					a && (t(de({
+					a && (t(oe({
 						[e]: {
 							isOriginalContent: !a.isOriginalContent
 						}
-					})), (await Object(N.l)(r(), e, !a.isOriginalContent)).ok || t(de({
+					})), (await Object(N.l)(r(), e, !a.isOriginalContent)).ok || t(oe({
 						[e]: {
 							isOriginalContent: a.isOriginalContent
 						}
 					})))
-				}, Re = e => async (t, s, n) => {
+				}, Pe = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -12292,50 +12291,50 @@
 							text: "nsfw",
 							type: W.f.Nsfw
 						}];
-					t(de({
+					t(oe({
 						[e]: {
 							isNSFW: !a.isNSFW,
 							flair: c
 						}
-					})), (await i(r(), e)).ok ? await t(Ve(e)) : t(de({
+					})), (await i(r(), e)).ok ? await t(qe(e)) : t(oe({
 						[e]: {
 							isNSFW: a.isNSFW,
 							flair: a.flair
 						}
 					}))
-				}, ke = (e, t) => async (s, n, r) => {
+				}, Re = (e, t) => async (s, n, r) => {
 					let {
 						apiContext: a
 					} = r;
 					const i = n().posts.models[e];
 					if (!i) return;
 					const c = M.g[t];
-					s(de({
+					s(oe({
 						[e]: {
 							distinguishType: t
 						}
-					})), (await Object(N.d)(a(), e, c)).ok || s(de({
+					})), (await Object(N.d)(a(), e, c)).ok || s(oe({
 						[e]: {
 							distinguishType: i.distinguishType
 						}
 					}))
-				}, xe = e => async (t, s, n) => {
+				}, ke = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const a = s().posts.models[e];
 					if (!a) return;
 					const i = a.ignoreReports ? N.v : N.i;
-					t(de({
+					t(oe({
 						[e]: {
 							ignoreReports: !a.ignoreReports
 						}
-					})), (await i(r(), e)).ok || t(de({
+					})), (await i(r(), e)).ok || t(oe({
 						[e]: {
 							ignoreReports: a.ignoreReports
 						}
 					}))
-				}, Ne = e => async (t, s, n) => {
+				}, xe = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -12343,42 +12342,42 @@
 						i = a.posts.models[e];
 					if (!i) return;
 					const c = !i.isStickied;
-					t(de({
+					t(oe({
 						[e]: {
 							isStickied: c
 						}
 					}));
 					const o = a.subredditStickyPosts.data[i.belongsTo.id];
 					let d;
-					if (c && o && o.length >= 2 && (d = o[1], t(de({
+					if (c && o && o.length >= 2 && (d = o[1], t(oe({
 							[d]: {
 								isStickied: !1
 							}
 						}))), (await Object(N.t)(r(), e, c, !1)).ok) {
 						const s = i.belongsTo.id,
-							n = Le(e, c, a.subredditStickyPosts.data[i.belongsTo.id]),
+							n = Ne(e, c, a.subredditStickyPosts.data[i.belongsTo.id]),
 							r = a.subreddits.models[s].name,
 							o = Object(F.a)(r, M.P, {});
-						t(oe({
+						t(ce({
 							newStickiedPostList: n,
 							subredditId: s,
 							listingKey: o
 						}))
-					} else t(de({
+					} else t(oe({
 						[e]: {
 							isStickied: i.isStickied
 						}
-					})), d && t(de({
+					})), d && t(oe({
 						[d]: {
 							isStickied: !0
 						}
 					}))
-				}, Le = (e, t, s) => {
+				}, Ne = (e, t, s) => {
 					const n = s ? [...s] : [];
 					return t ? (n.length >= 2 && n.splice(1, 1, e), n) : n.filter((function(t) {
 						return t !== e
 					}))
-				}, Ue = e => async (t, s, n) => {
+				}, Le = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -12393,40 +12392,40 @@
 						}), Y.b.Error);
 						t(Object(q.e)(e))
 					}
-				}, Me = "PREFERENCES__RECENT_POSTS_UPDATED", Fe = Object(u.a)(Me), Ge = () => async (e, t) => {
+				}, Ue = "PREFERENCES__RECENT_POSTS_UPDATED", Me = Object(u.a)(Ue), Fe = () => async (e, t) => {
 					const s = t();
 					if (!s.user.account) return;
 					const n = Object(z.e)(s.user.account);
 					c.a.remove("".concat(n).concat(C.g), {
 						domain: r.a.cookieDomain
-					}), e(Fe({
+					}), e(Me({
 						postIds: []
 					}))
-				}, Be = e => async (t, s) => {
+				}, Ge = e => async (t, s) => {
 					const a = s();
 					if (!a.user.account || !a.user.account.showRecentPosts || a.posts.recent.indexOf(e) > -1) return;
 					const i = Object(z.e)(a.user.account),
 						c = a.posts.recent ? a.posts.recent.slice(0) : [];
 					c.push(e), c.length > D.c && c.shift(), Object(n.b)("".concat(i).concat(C.g), "".concat(c.join(",")), {
 						domain: r.a.cookieDomain
-					}), t(Fe({
+					}), t(Me({
 						postIds: c
 					}))
-				}, qe = e => async (t, s, n) => {
+				}, Be = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const a = !s().posts.models[e].sendReplies;
-					t(de({
+					t(oe({
 						[e]: {
 							sendReplies: a
 						}
-					})), (await Object(N.q)(r(), e, a)).ok || t(de({
+					})), (await Object(N.q)(r(), e, a)).ok || t(oe({
 						[e]: {
 							sendReplies: !a
 						}
 					}))
-				}, Ve = e => async (t, s, n) => {
+				}, qe = e => async (t, s, n) => {
 					if (Object(E.N)(s(), {
 							postId: e
 						})) return;
@@ -12436,15 +12435,15 @@
 					}, Object(Q.a)(s()));
 					if (t(Object(p.m)(r.status)), r.ok) {
 						const e = r.body;
-						t(ie(e.posts))
+						t(ae(e.posts))
 					}
-				}, He = e => async (t, s) => {
-					await t(Ve(e));
+				}, Ve = e => async (t, s) => {
+					await t(qe(e));
 					const n = Object(E.N)(s(), {
 						postId: e
 					});
-					n && n.crosspostRootId && await t(Ve(n.crosspostRootId))
-				}, Ke = e => async (t, s, n) => {
+					n && n.crosspostRootId && await t(qe(n.crosspostRootId))
+				}, He = e => async (t, s, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -12457,7 +12456,7 @@
 					const o = c.isFollowed,
 						d = i.posts.instances[e] || [],
 						u = [e, ...d];
-					t(de(u.reduce((e, t) => Object.assign(Object.assign({}, e), {
+					t(oe(u.reduce((e, t) => Object.assign(Object.assign({}, e), {
 						[t]: {
 							isFollowed: !o
 						}
@@ -12468,7 +12467,7 @@
 						}) : a.fbt._("Success! You followed this event, that means we’ll remind you when it starts!", null, {
 							hk: "4A9cwh"
 						})
-					})) : (t(de(u.reduce((e, t) => Object.assign(Object.assign({}, e), {
+					})) : (t(oe(u.reduce((e, t) => Object.assign(Object.assign({}, e), {
 						[t]: {
 							isFollowed: o
 						}
@@ -12478,7 +12477,7 @@
 							hk: "2VQ3RW"
 						})
 					})))
-				}, We = e => {
+				}, Ke = e => {
 					let {
 						postOrComment: t,
 						queryParams: s,
@@ -12497,7 +12496,7 @@
 						}
 						s && (c = Object(o.a)(c, s)), a.user.prefs.openPostInNewTab || i ? window.open(c) : e(Object(R.a)(c))
 					}
-				}, Ye = "RICH_TEXT_POST_CONTENT_LOADED", ze = Object(u.a)(Ye), Je = e => async (t, s, n) => {
+				}, We = "RICH_TEXT_POST_CONTENT_LOADED", Ye = Object(u.a)(We), ze = e => async (t, s, n) => {
 					const r = s(),
 						i = Object(E.N)(r, {
 							postId: e
@@ -12512,7 +12511,7 @@
 						const {
 							data: s
 						} = c.body, n = s.post && s.post.content && s.post.content.richtext;
-						n && t(ze({
+						n && t(Ye({
 							postId: e,
 							richtextContent: JSON.parse(n)
 						}))
@@ -12522,11 +12521,11 @@
 							hk: "1GbrKz"
 						})
 					}))
-				}, Qe = (e, t) => async (s, n, r) => {
+				}, Je = (e, t) => async (s, n, r) => {
 					let {
 						apiContext: i
 					} = r;
-					(await Object(N.r)(i(), e, t)).ok ? s(de({
+					(await Object(N.r)(i(), e, t)).ok ? s(oe({
 						[t]: {
 							contestMode: e
 						}
@@ -12536,7 +12535,7 @@
 							hk: "22u7ha"
 						})
 					}))
-				}, Xe = "MOD_TO_MEMBER_SHARE_OPENED", Ze = Object(u.a)(Xe), $e = "CROWD_CONTROL_OPENED", et = Object(u.a)($e)
+				}, Qe = "MOD_TO_MEMBER_SHARE_OPENED", Xe = Object(u.a)(Qe), Ze = "CROWD_CONTROL_OPENED", $e = Object(u.a)(Ze)
 		},
 		"./src/reddit/actions/postCollection/constants.ts": function(e, t, s) {
 			"use strict";
@@ -22101,16 +22100,6 @@
 				b = 5,
 				p = 10,
 				O = [l, b, p]
-		},
-		"./src/reddit/constants/viewabilityEvents.ts": function(e, t, s) {
-			"use strict";
-			var n;
-			s.d(t, "a", (function() {
-					return n
-				})),
-				function(e) {
-					e[e.Viewable = 1] = "Viewable", e[e.VideoViewable = 2] = "VideoViewable", e[e.VideoFullyViewable = 3] = "VideoFullyViewable", e[e.Impression = 4] = "Impression", e[e.VendorFullyViewable = 10] = "VendorFullyViewable", e[e.VendorFullyViewableSeconds5 = 11] = "VendorFullyViewableSeconds5", e[e.VendorFullyViewableSeconds15 = 12] = "VendorFullyViewableSeconds15", e[e.GroupMViewable = 13] = "GroupMViewable", e[e.VideoGroupMViewable = 113] = "VideoGroupMViewable", e[e.VideoVendorFullyViewable50 = 114] = "VideoVendorFullyViewable50", e[e.DEPRECATED_MRCVideoViewableImpression = 115] = "DEPRECATED_MRCVideoViewableImpression"
-				}(n || (n = {}))
 		},
 		"./src/reddit/endpoints/accounts/index.ts": function(e, t, s) {
 			"use strict";
@@ -56039,4 +56028,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.34bcbb1e2ee08d9b35cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.be4bb6a186ebdb73001e.js.map
