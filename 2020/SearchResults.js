@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.e8fed2e4d938eac33bd2.js
-// Retrieved at 9/24/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.c5b1a09d99ef60d61fda.js
+// Retrieved at 9/24/2020, 7:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -46,8 +46,8 @@
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
 					const r = h(o.target, o.currentTarget);
-					e && t && (b(o.target, o.currentTarget, u.anchors) ? r && e(t(s, r)) : r && e(e => {
-						const n = t(s, r)(e);
+					s && t && (b(o.target, o.currentTarget, u.anchors) ? r && s(t(e, r)) : r && s(s => {
+						const n = t(e, r)(s);
 						let o;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -57,7 +57,7 @@
 							o = l(e, ["pageType"])
 						}
 						return Object.assign(Object.assign({}, n), {
-							actionInfo: Object(c.previousPageActionInfo)(e, o)
+							actionInfo: Object(c.previousPageActionInfo)(s, o)
 						})
 					})), b(o.target, o.currentTarget, u.anchorsAndButtons) && n(o)
 				}
@@ -75,7 +75,7 @@
 							clickTrackingId: n
 						} = this.props;
 						return i.a.createElement(e, d({}, o()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: m(t, s, n)
+							afterClickTracking: m(n, s, t)
 						}))
 					}
 				}
@@ -13069,4 +13069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e8fed2e4d938eac33bd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c5b1a09d99ef60d61fda.js.map

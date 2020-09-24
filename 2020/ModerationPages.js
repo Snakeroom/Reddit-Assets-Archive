@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.cafb5fd642841346fa7c.js
-// Retrieved at 9/24/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1f5962f782713a734ea0.js
+// Retrieved at 9/24/2020, 7:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -235,8 +235,8 @@
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
 					const a = h(o.target, o.currentTarget);
-					e && t && (b(o.target, o.currentTarget, p.anchors) ? a && e(t(s, a)) : a && e(e => {
-						const n = t(s, a)(e);
+					s && t && (b(o.target, o.currentTarget, p.anchors) ? a && s(t(e, a)) : a && s(s => {
+						const n = t(e, a)(s);
 						let o;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -246,7 +246,7 @@
 							o = l(e, ["pageType"])
 						}
 						return Object.assign(Object.assign({}, n), {
-							actionInfo: Object(d.previousPageActionInfo)(e, o)
+							actionInfo: Object(d.previousPageActionInfo)(s, o)
 						})
 					})), b(o.target, o.currentTarget, p.anchorsAndButtons) && n(o)
 				}
@@ -264,7 +264,7 @@
 							clickTrackingId: n
 						} = this.props;
 						return r.a.createElement(e, c({}, o()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: m(t, s, n)
+							afterClickTracking: m(n, s, t)
 						}))
 					}
 				}
@@ -30907,4 +30907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cafb5fd642841346fa7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1f5962f782713a734ea0.js.map

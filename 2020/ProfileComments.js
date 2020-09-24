@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.20d07994eb70d8b7c3aa.js
-// Retrieved at 9/24/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.d5fc12d2de9874691fa0.js
+// Retrieved at 9/24/2020, 7:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -61,8 +61,8 @@
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
 					const r = h(o.target, o.currentTarget);
-					e && t && (b(o.target, o.currentTarget, u.anchors) ? r && e(t(s, r)) : r && e(e => {
-						const n = t(s, r)(e);
+					s && t && (b(o.target, o.currentTarget, u.anchors) ? r && s(t(e, r)) : r && s(s => {
+						const n = t(e, r)(s);
 						let o;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -72,7 +72,7 @@
 							o = l(e, ["pageType"])
 						}
 						return Object.assign(Object.assign({}, n), {
-							actionInfo: Object(c.previousPageActionInfo)(e, o)
+							actionInfo: Object(c.previousPageActionInfo)(s, o)
 						})
 					})), b(o.target, o.currentTarget, u.anchorsAndButtons) && n(o)
 				}
@@ -90,7 +90,7 @@
 							clickTrackingId: n
 						} = this.props;
 						return a.a.createElement(e, d({}, o()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: m(t, s, n)
+							afterClickTracking: m(n, s, t)
 						}))
 					}
 				}
@@ -13414,4 +13414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.20d07994eb70d8b7c3aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.d5fc12d2de9874691fa0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.faeb896fee4662143a64.js
-// Retrieved at 9/24/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.1b79cdc18a4529dd80f7.js
+// Retrieved at 9/24/2020, 7:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -43,8 +43,8 @@
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return r => {
 					const o = h(r.target, r.currentTarget);
-					e && t && (b(r.target, r.currentTarget, m.anchors) ? o && e(t(s, o)) : o && e(e => {
-						const n = t(s, o)(e);
+					s && t && (b(r.target, r.currentTarget, m.anchors) ? o && s(t(e, o)) : o && s(s => {
+						const n = t(e, o)(s);
 						let r;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -54,7 +54,7 @@
 							r = l(e, ["pageType"])
 						}
 						return Object.assign(Object.assign({}, n), {
-							actionInfo: Object(a.previousPageActionInfo)(e, r)
+							actionInfo: Object(a.previousPageActionInfo)(s, r)
 						})
 					})), b(r.target, r.currentTarget, m.anchorsAndButtons) && n(r)
 				}
@@ -72,7 +72,7 @@
 							clickTrackingId: n
 						} = this.props;
 						return i.a.createElement(e, d({}, r()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: u(t, s, n)
+							afterClickTracking: u(n, s, t)
 						}))
 					}
 				}
@@ -585,4 +585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.faeb896fee4662143a64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.1b79cdc18a4529dd80f7.js.map

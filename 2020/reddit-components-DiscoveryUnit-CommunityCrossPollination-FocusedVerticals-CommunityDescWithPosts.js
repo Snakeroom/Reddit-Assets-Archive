@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.a64b2f6ce53db2d1998d.js
-// Retrieved at 9/24/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.4a3e5ae0afa05b1645f6.js
+// Retrieved at 9/24/2020, 7:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -43,8 +43,8 @@
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return r => {
 					const o = h(r.target, r.currentTarget);
-					e && t && (m(r.target, r.currentTarget, p.anchors) ? o && e(t(s, o)) : o && e(e => {
-						const n = t(s, o)(e);
+					s && t && (m(r.target, r.currentTarget, p.anchors) ? o && s(t(e, o)) : o && s(s => {
+						const n = t(e, o)(s);
 						let r;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -54,7 +54,7 @@
 							r = l(e, ["pageType"])
 						}
 						return Object.assign(Object.assign({}, n), {
-							actionInfo: Object(a.previousPageActionInfo)(e, r)
+							actionInfo: Object(a.previousPageActionInfo)(s, r)
 						})
 					})), m(r.target, r.currentTarget, p.anchorsAndButtons) && n(r)
 				}
@@ -72,7 +72,7 @@
 							clickTrackingId: n
 						} = this.props;
 						return i.a.createElement(e, d({}, r()(this.props, "sendEvent", "eventFactory", "clickTrackingId"), {
-							afterClickTracking: u(t, s, n)
+							afterClickTracking: u(n, s, t)
 						}))
 					}
 				}
@@ -1370,4 +1370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.a64b2f6ce53db2d1998d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.4a3e5ae0afa05b1645f6.js.map
