@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4976f83ee6bd3acc17d6.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9059ced82abe7f68840e.js
+// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -636,10 +636,10 @@
 				R = s("./src/reddit/components/CoinPurchaseModal/async.tsx"),
 				D = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/higherOrderComponents/makeAsync.tsx")),
 				F = s("./src/lib/loadWithRetries/index.ts"),
-				V = s("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const W = () => Object(F.a)(() => Promise.all([Promise.all([s.e("vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal"), s.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"), s.e("PennyPurchaseModal")]).then(s.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(V.d)()])).then(e => e[0].default);
+				W = s("./src/reddit/helpers/loadThirdPartyScript.ts");
+			const V = () => Object(F.a)(() => Promise.all([Promise.all([s.e("vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal"), s.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"), s.e("PennyPurchaseModal")]).then(s.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(W.d)()])).then(e => e[0].default);
 			var z = Object(D.a)({
-					getComponent: W,
+					getComponent: V,
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -1308,7 +1308,7 @@
 					}
 					return n
 				},
-				Ve = Object(i.a)(Object(i.c)({
+				We = Object(i.a)(Object(i.c)({
 					awardings: (e, t) => {
 						let {
 							thingId: s,
@@ -1449,7 +1449,7 @@
 						isRpanPost: !!p
 					})
 				});
-			class We extends n.a.Component {
+			class Ve extends n.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						showPurchaseModalInThisInstance: !1
@@ -1515,7 +1515,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(u.S)(e)
+					Object(u.W)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -1545,7 +1545,7 @@
 					if (x && t(x, I), e.length && !e.find(e => e.award.id === l.id) && c(h.m), w || j) {
 						v(w ? w.name : j)
 					}
-					w && w.type !== b.e.User && E(w.id, w.name), r && (l.pennyPrice ? W() : Object(R.a)(), o || d(s))
+					w && w.type !== b.e.User && E(w.id, w.name), r && (l.pennyPrice ? V() : Object(R.a)(), o || d(s))
 				}
 				componentDidUpdate(e) {
 					let t = !0;
@@ -1627,7 +1627,7 @@
 					})), y && n.a.createElement(z, null))
 				}
 			}
-			t.a = Object(r.b)(Ve, (e, t) => {
+			t.a = Object(r.b)(We, (e, t) => {
 				let {
 					thingId: s
 				} = t;
@@ -1651,13 +1651,13 @@
 					purchaseCatalogRequested: t => e(Object(I.b)(t)),
 					selectAward: t => e(Object(v.a)(t)),
 					setIsAnonymous: t => {
-						e(Object(w.setIsAnonymous)(t)), Object(u.S)(t)
+						e(Object(w.setIsAnonymous)(t)), Object(u.W)(t)
 					},
 					subredditAboutRequested: t => e(Object(x.t)(t)),
 					subredditLockedCoinsRequested: (t, s) => e(Object(f.a)(t, s)),
 					updateMessage: t => e(Object(w.updateMessage)(t))
 				}
-			})(Object(U.c)(We))
+			})(Object(U.c)(Ve))
 		},
 		"./src/reddit/components/TimeLeft/TimeLeft.tsx": function(e, t, s) {
 			"use strict";
@@ -1839,7 +1839,7 @@
 			})), s.d(t, "f", (function() {
 				return D
 			})), s.d(t, "a", (function() {
-				return W
+				return V
 			})), s.d(t, "j", (function() {
 				return z
 			})), s.d(t, "b", (function() {
@@ -2038,20 +2038,20 @@
 				};
 				return s[t] >= s[e]
 			}
-			const V = Object(a.a)(S, f, (e, t) => e && t.timestamps[e] || 0);
-			var W;
+			const W = Object(a.a)(S, f, (e, t) => e && t.timestamps[e] || 0);
+			var V;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(W || (W = {}));
+			}(V || (V = {}));
 			const z = Object(a.a)(S, I, h.b, (e, t, s) => {
-					if (s) return W.INTRO;
+					if (s) return V.INTRO;
 					const a = e && t[e];
-					if (!a) return W.UNAVAILABLE;
+					if (!a) return V.UNAVAILABLE;
 					const n = a.stream.state;
-					return n === o.a.IS_LIVE || n === o.a.DISCONNECTED ? W.LIVE : n === o.a.ENDED && a.stream.vod_accessible ? W.VOD : W.UNAVAILABLE
+					return n === o.a.IS_LIVE || n === o.a.DISCONNECTED ? V.LIVE : n === o.a.ENDED && a.stream.vod_accessible ? V.VOD : V.UNAVAILABLE
 				}),
-				U = Object(a.a)(L, z, h.b, l.b, l.o, (e, t, s, a, n) => s ? a : e ? t === W.LIVE || t === W.VOD ? e.stream.hls_url : n : void 0),
-				q = Object(a.a)(L, z, V, (e, t, s) => e ? t === W.LIVE ? e.broadcast_time : t === W.VOD && s < e.broadcast_time ? s : 0 : 0),
+				U = Object(a.a)(L, z, h.b, l.b, l.o, (e, t, s, a, n) => s ? a : e ? t === V.LIVE || t === V.VOD ? e.stream.hls_url : n : void 0),
+				q = Object(a.a)(L, z, W, (e, t, s) => e ? t === V.LIVE ? e.broadcast_time : t === V.VOD && s < e.broadcast_time ? s : 0 : 0),
 				H = (e, t) => {
 					const s = b(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -2076,4 +2076,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4976f83ee6bd3acc17d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9059ced82abe7f68840e.js.map

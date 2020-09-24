@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.d4178d1a85173a12e31d.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.336a3f222f997cd1ada5.js
+// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -113,10 +113,10 @@
 							text: n
 						}))
 					}
-				}, S = Object(x.a)(w.E), M = e => async (t, n) => {
+				}, M = Object(x.a)(w.E), S = e => async (t, n) => {
 					const o = n(),
 						c = Object(E.d)(o);
-					t(S(e));
+					t(M(e));
 					const a = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", "u/".concat(c))], {
 						hk: "3cBrLk"
 					});
@@ -165,7 +165,7 @@
 								if (c.error) await o(N(c));
 								else {
 									const e = c.body;
-									await o(M(e)), Object(j.b)(j.a.GiftPremiumFlow)
+									await o(S(e)), Object(j.b)(j.a.GiftPremiumFlow)
 								}
 							} catch (r) {
 								await o(N(r))
@@ -251,7 +251,7 @@
 					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(p.S)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.W)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
@@ -796,4 +796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.d4178d1a85173a12e31d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.336a3f222f997cd1ada5.js.map

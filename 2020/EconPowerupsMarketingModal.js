@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.51d75fe12e2028a4bda4.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.207886fcb7870e48894b.js
+// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/PowerupsMarketingModal/BenefitStep/index.m.less": function(e, t, a) {
@@ -254,16 +254,16 @@
 			const {
 				fbt: z
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var X;
+			var T;
 			! function(e) {
 				e.Intro = "intro", e.Benefits = "benefits", e.Outro = "Outro"
-			}(X || (X = {}));
-			const T = {
-				[X.Intro]: "var(--newCommunityTheme-body)",
+			}(T || (T = {}));
+			const X = {
+				[T.Intro]: "var(--newCommunityTheme-body)",
 				[v.a.HdVideo]: "linear-gradient(14deg, #5D3BBC 0%, #933DBB 89%)",
 				[v.a.CommentsWithGifs]: "linear-gradient(14deg, #0E68A2 0%, #51CBBC 95%)",
 				[v.a.CommentsWithEmoji]: "linear-gradient(14deg, #DC0909 0%, #F7A356 89%)",
-				[X.Outro]: "linear-gradient(13deg, #219951 0%, #34D9B1 95%)"
+				[T.Outro]: "linear-gradient(13deg, #219951 0%, #34D9B1 95%)"
 			};
 			var Z = function(e) {
 					const {
@@ -280,7 +280,7 @@
 							[U.a.visible]: 0 === r
 						}),
 						style: {
-							background: T[X.Intro]
+							background: X[T.Intro]
 						}
 					}), t.map((e, t) => v.d[e] && n.a.createElement("div", {
 						className: Object(m.a)(U.a.background, {
@@ -288,14 +288,14 @@
 						}),
 						key: "bg_".concat(e),
 						style: {
-							background: T[e] || T[X.Intro]
+							background: X[e] || X[T.Intro]
 						}
 					})), n.a.createElement("div", {
 						className: Object(m.a)(U.a.background, {
 							[U.a.visible]: r === l - 1
 						}),
 						style: {
-							background: T[X.Outro]
+							background: X[T.Outro]
 						}
 					})), n.a.createElement("div", {
 						className: U.a.slides
@@ -379,7 +379,7 @@
 					benefits: p,
 					className: W.a.gallery,
 					onFinish: () => {
-						Object(l.X)(i.a.ECON_POWERUPS_MARKETING, !0), o(Object(E.h)(i.a.ECON_POWERUPS_PURCHASE))
+						Object(l.cb)(i.a.ECON_POWERUPS_MARKETING, !0), o(Object(E.h)(i.a.ECON_POWERUPS_PURCHASE))
 					}
 				}))
 			}))));
@@ -402,4 +402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.51d75fe12e2028a4bda4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.207886fcb7870e48894b.js.map

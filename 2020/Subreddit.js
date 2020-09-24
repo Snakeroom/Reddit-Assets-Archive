@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.13e4a09a2b321f6295a9.js
-// Retrieved at 9/24/2020, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.a835a2255a2dae716d94.js
+// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -1073,7 +1073,7 @@
 			class v extends i.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(m.K)(n.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(m.O)(n.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(p.b)())
 					}, this.createPost = () => {
@@ -5250,7 +5250,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(ot.W)(yt, !0, this.props.subredditId), this.props.sendEvent(Object(ct.d)("close"))
+						}), Object(ot.bb)(yt, !0, this.props.subredditId), this.props.sendEvent(Object(ct.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(ct.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -5276,7 +5276,7 @@
 						modHasEditedColors: s,
 						modHasEditedIcon: n,
 						subredditId: r
-					} = this.props, a = e && !(t && s && n) && (!Object(Je.a)() || !Object(ot.q)(yt, r));
+					} = this.props, a = e && !(t && s && n) && (!Object(Je.a)() || !Object(ot.r)(yt, r));
 					a !== this.state.visible && (this.setState({
 						visible: a
 					}), a && this.props.sendEvent(Object(ct.e)("mod_edu_banner")))
@@ -8693,10 +8693,10 @@
 					subredditId: s
 				} = e, l = Object(v.a)(), u = Object(f.a)(), p = null !== (t = Object(a.d)(e => e.subreddits.questions[s])) && void 0 !== t ? t : [], C = Object(a.c)(), [k, j] = function(e, t) {
 					let s;
-					s = Object(y.n)(e);
+					s = Object(y.o)(e);
 					const [r, a] = Object(n.useState)(null != s ? s : t);
 					return [r, function(t) {
-						Object(y.U)(e, t), a(t)
+						Object(y.Z)(e, t), a(t)
 					}]
 				}(d.f, []), [A, S] = Object(n.useState)(!1), w = function() {
 					const [e, t] = Object(n.useState)(!1);
@@ -9908,4 +9908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.13e4a09a2b321f6295a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a835a2255a2dae716d94.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.399f3da7afa73a9a741f.js
-// Retrieved at 9/24/2020, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c474bd5f467c86639e85.js
+// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "8236465-production"
+					SENTRY_RELEASE_VERSION: "44fcd60-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -29537,14 +29537,14 @@
 				};
 			const dn = [{
 					id: Wt.d,
-					getShowTimesLeft: an.v,
-					setShowTimesLeft: an.bb,
+					getShowTimesLeft: an.w,
+					setShowTimesLeft: an.gb,
 					tooltipShown: cn.n,
 					tooltipDismissed: cn.m
 				}, {
 					id: Wt.c,
-					getShowTimesLeft: an.u,
-					setShowTimesLeft: an.ab,
+					getShowTimesLeft: an.v,
+					setShowTimesLeft: an.fb,
 					tooltipShown: cn.f,
 					tooltipDismissed: cn.e
 				}],
@@ -29743,7 +29743,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(an.O)(wn.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(an.S)(wn.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -33883,4 +33883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.399f3da7afa73a9a741f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c474bd5f467c86639e85.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.70f941a4a887720e7858.js
-// Retrieved at 9/24/2020, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3b0ced4c551ea97d0cfb.js
+// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -6395,7 +6395,7 @@
 					update: n
 				} = e, o = Object(Z.a)(), d = Object(i.c)(), [c, l] = Object(a.useState)(t.id), [m, u] = Object(a.useState)(!1), [p, b] = Object(a.useState)(!0);
 				return Object(a.useEffect)(() => {
-					b(Object(J.s)("location")), Object(J.Y)("location")
+					b(Object(J.t)("location")), Object(J.db)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(P.a, null, w.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(M.k, {
@@ -7298,10 +7298,10 @@
 			}
 			var v = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(p.T)()
+					e(Object(c.i)()), Object(p.X)()
 				},
 				onViewTooltip: () => {
-					Object(p.gb)()
+					Object(p.mb)()
 				}
 			}))(Object(m.c)(x));
 			const E = "editable-primary-topic-idcard";
@@ -28930,7 +28930,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(Q.s)("location")
+						locationSettingSeen: Object(Q.t)("location")
 					})
 				}
 				render() {
@@ -30923,4 +30923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.70f941a4a887720e7858.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3b0ced4c551ea97d0cfb.js.map

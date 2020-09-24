@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.f5865113b5fee8998a94.js
-// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.df8d73b7c4a087800b17.js
+// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -210,13 +210,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ee.cachedData || Object(M.n)(W.C) || null;
+					let e = ee.cachedData || Object(M.o)(W.D) || null;
 					if (!e || Date.now() - e.fetchedAt > z) {
 						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(M.U)(W.C, e))
+						}, Object(M.Z)(W.D, e))
 					}
 					return ee.cachedData = e, e ? e.subreddits : []
 				}
@@ -1121,4 +1121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.f5865113b5fee8998a94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.df8d73b7c4a087800b17.js.map
