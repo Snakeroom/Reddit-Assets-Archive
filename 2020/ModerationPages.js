@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3b0ced4c551ea97d0cfb.js
-// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c8b2d315fc34b7f1d5fe.js
+// Retrieved at 9/24/2020, 1:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -1525,19 +1525,19 @@
 		"./src/reddit/actions/pages/subredditWiki/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "subredditWikiDataPending", (function() {
-				return U
+				return Ve
 			})), s.d(t, "subredditWikiDataLoaded", (function() {
-				return H
+				return qe
 			})), s.d(t, "subredditWikiDataFailed", (function() {
-				return W
+				return Ke
 			})), s.d(t, "fetchSubredditWikiData", (function() {
-				return q
+				return Je
 			})), s.d(t, "handleWikiRedirects", (function() {
-				return Q
+				return Xe
 			})), s.d(t, "subredditWikDataRequested", (function() {
-				return z
+				return Ye
 			})), s.d(t, "subredditWikiPageRequested", (function() {
-				return J
+				return $e
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.array.sort.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1560,12 +1560,11 @@
 				E = s("./src/graphql/operations/WikiComparisonDiff.json"),
 				C = s("./src/reddit/helpers/wiki/wikiRevision.ts");
 			var _ = s("./src/reddit/helpers/wiki/makeComparisonDiffKey.ts"),
-				O = s("./src/reddit/selectors/subredditWiki.ts"),
-				k = s("./src/reddit/actions/wiki/wikiDiff/constants.ts");
-			const y = Object(d.a)(k.c),
-				j = Object(d.a)(k.b),
-				w = Object(d.a)(k.a),
-				S = e => async (t, s, n) => {
+				O = s("./src/reddit/selectors/subredditWiki.ts");
+			const k = Object(d.a)("WIKI_DIFF_PENDING"),
+				y = Object(d.a)("WIKI_DIFF_LOADED"),
+				j = Object(d.a)("WIKI_DIFF_FAILED"),
+				w = e => async (t, s, n) => {
 					const o = s(),
 						a = Object(_.a)(e),
 						r = Object(O.i)(o, {
@@ -1575,7 +1574,7 @@
 					const d = {
 						key: a
 					};
-					t(y(d));
+					t(k(d));
 					const c = await ((e, t) => Object(v.a)(e, Object.assign(Object.assign({}, E), {
 						variables: Object.assign(Object.assign({}, t), {
 							comparisonRevisionId: Object(C.b)(t.comparisonRevisionId),
@@ -1594,57 +1593,713 @@
 					} else l = c.error || {
 						type: i.E.UNKNOWN_ERROR
 					};
-					return t(l ? w(Object.assign(Object.assign({}, d), {
+					return t(l ? j(Object.assign(Object.assign({}, d), {
 						error: l
-					})) : j(Object.assign(Object.assign({}, d), {
+					})) : y(Object.assign(Object.assign({}, d), {
 						htmlDiff: m
 					}))), !l
 				};
-			var I = s("./src/reddit/actions/wiki/wikiPageSettings/index.tsx"),
-				T = s("./src/reddit/actions/wiki/wikiRevisions/index.ts"),
-				N = s("./src/reddit/constants/parameters.ts"),
-				P = s("./src/reddit/constants/wiki.ts"),
-				M = s("./src/reddit/endpoints/page/subredditWiki.ts"),
-				R = s("./src/reddit/helpers/brandSafety/index.ts"),
-				L = s("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
-				A = s("./src/reddit/models/Toast/index.ts"),
-				D = s("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
-				F = s("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
-				B = s("./src/reddit/selectors/subreddit.ts");
-			const U = Object(d.a)(h.c),
-				H = Object(d.a)(h.b),
-				W = Object(d.a)(h.a),
-				G = (e, t, s, n) => {
-					return s === P.j ? V(e, t) : !!Object(O.c)(e, {
+			var S = s("./src/reddit/actions/wiki/wikiPageSettings/index.tsx"),
+				I = s("./src/reddit/actions/wiki/wikiRevisions/index.ts"),
+				T = s("./src/reddit/constants/parameters.ts"),
+				N = s("./src/reddit/constants/wiki.ts"),
+				P = s("./src/reddit/endpoints/page/subredditWiki.ts"),
+				M = s("./src/reddit/helpers/brandSafety/index.ts"),
+				R = s("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
+				L = s("./src/reddit/models/Toast/index.ts"),
+				A = s("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
+				D = s("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
+				F = s("./src/reddit/selectors/subreddit.ts"),
+				B = s("./src/lib/initializeClient/installReducer.ts"),
+				U = s("./node_modules/redux/es/redux.js");
+			const H = {};
+			var W = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : H,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case "WIKI_DIFF_LOADED": {
+						const {
+							key: s,
+							htmlDiff: n
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: {
+								htmlDiff: n
+							}
+						})
+					}
+					case "WIKI_DIFF_PENDING": {
+						const {
+							key: s
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: Object.assign(Object.assign({}, e[s]), {
+								pending: !0
+							})
+						})
+					}
+					case "WIKI_DIFF_FAILED": {
+						const {
+							key: s,
+							error: n
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: Object.assign(Object.assign({}, e[s]), {
+								pending: !1,
+								error: n
+							})
+						})
+					}
+					default:
+						return e
+				}
+			};
+			const G = {};
+			var V = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : G,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case h.b:
+							const s = t.payload,
+								{
+									subredditWiki: n,
+									options: o
+								} = s,
+								a = n && n.directory;
+							if (!a) return e;
+							const {
+								subredditName: r
+							} = o;
+							return Object.assign(Object.assign({}, e), {
+								[r.toLowerCase()]: a
+							});
+						default:
+							return e
+					}
+				},
+				q = s("./src/reddit/actions/wiki/wikiRevisions/constants.ts");
+			const K = {};
+			var Q = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : K,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case h.b: {
+							const {
+								subredditWiki: s,
+								pageKey: n
+							} = t.payload, {
+								page: o
+							} = s;
+							return n && o ? Object.assign(Object.assign({}, e), {
+								[n]: o
+							}) : e
+						}
+						case q.a: {
+							const {
+								pageKey: s,
+								page: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: n
+							})
+						}
+						default:
+							return e
+					}
+				},
+				z = s("./src/reddit/actions/wiki/wikiPageSettings/constants.ts");
+			const J = {};
+			var Z = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case z.c: {
+							const {
+								settings: s,
+								pageKey: n
+							} = t.payload;
+							return s ? Object.assign(Object.assign({}, e), {
+								[n]: s
+							}) : e
+						}
+						case z.d: {
+							const {
+								isVisible: s,
+								editPermissions: n,
+								pageKey: o
+							} = t.payload, a = e[o];
+							return a ? Object.assign(Object.assign({}, e), {
+								[o]: Object.assign(Object.assign({}, a), {
+									isVisible: s,
+									editPermissions: n
+								})
+							}) : e
+						}
+						case z.b: {
+							const {
+								editorsInfo: s,
+								afterToken: n,
+								pageKey: o
+							} = t.payload, a = e[o];
+							if (!a) return e;
+							const r = [...a.editorsInfo, ...s];
+							return Object.assign(Object.assign({}, e), {
+								[o]: Object.assign(Object.assign({}, a), {
+									editorsInfo: r,
+									afterToken: n
+								})
+							})
+						}
+						case z.a: {
+							const {
+								username: s,
+								pageKey: n
+							} = t.payload, o = e[n];
+							if (!o) return e;
+							const a = o.editorsInfo.filter(e => e.username !== s);
+							return Object.assign(Object.assign({}, e), {
+								[n]: Object.assign(Object.assign({}, o), {
+									editorsInfo: a
+								})
+							})
+						}
+						default:
+							return e
+					}
+				},
+				X = s("./src/lib/omitKey/index.ts");
+			const Y = {};
+			var $ = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Y,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case q.b: {
+						const {
+							key: s,
+							error: n
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: n
+						})
+					}
+					case q.d:
+					case q.c: {
+						const {
+							key: s
+						} = t.payload;
+						return Object(X.a)(e, s)
+					}
+					default:
+						return e
+				}
+			};
+			const ee = {};
+			var te = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ee,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case q.d:
+						case q.b:
+						case q.c: {
+							const {
+								key: s
+							} = t.payload, n = t.type === q.d;
+							return Object.assign(Object.assign({}, e), {
+								[s]: n
+							})
+						}
+						default:
+							return e
+					}
+				},
+				se = Object(U.c)({
+					error: $,
+					pending: te
+				}),
+				ne = s("./src/reddit/actions/wiki/wikiEditing/constants.ts");
+			const oe = {};
+			var ae = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : oe,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case q.c: {
+						const {
+							key: s,
+							options: n,
+							pageInfo: o,
+							revisionsIds: a
+						} = t.payload, r = e[s], i = n.after && r ? [...r.ids, ...a] : a;
+						return Object.assign(Object.assign({}, e), {
+							[s]: {
+								ids: i,
+								pageInfo: o
+							}
+						})
+					}
+					case q.a: {
+						const {
+							page: {
+								revision: s
+							},
+							pageRevisionsListingKey: n,
+							recentRevisionsListingKey: o
+						} = t.payload, a = e[n];
+						return a && s ? Object.assign(Object.assign({}, Object(X.a)(e, o)), {
+							[n]: Object.assign(Object.assign({}, a), {
+								ids: [s.id, ...a.ids]
+							})
+						}) : e
+					}
+					case ne.a: {
+						const {
+							pageRevisionsListingKey: s,
+							recentRevisionsListingKey: n
+						} = t.payload, o = Object.assign({}, e);
+						return delete o[s], delete o[n], o
+					}
+					default:
+						return e
+				}
+			};
+			const re = {};
+			var ie = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : re,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case h.b: {
+							const {
+								subredditWiki: {
+									page: s
+								}
+							} = t.payload, n = s && s.revision;
+							return n && !e[n.id] ? Object.assign(Object.assign({}, e), {
+								[n.id]: n
+							}) : e
+						}
+						case q.c: {
+							const {
+								revisions: s
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), s)
+						}
+						case q.a: {
+							const {
+								page: s
+							} = t.payload, n = s.revision;
+							return n ? Object.assign(Object.assign({}, e), {
+								[n.id]: n
+							}) : e
+						}
+						case q.e: {
+							const {
+								revisionId: s,
+								isHidden: n
+							} = t.payload, o = e[s];
+							return o ? Object.assign(Object.assign({}, e), {
+								[s]: Object.assign(Object.assign({}, o), {
+									isHidden: n
+								})
+							}) : e
+						}
+						default:
+							return e
+					}
+				},
+				de = Object(U.c)({
+					api: se,
+					listings: ae,
+					models: ie
+				}),
+				ce = s("./src/reddit/actions/wiki/wikiBannedContributors/constants.ts");
+			const le = {};
+			var me = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : le,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case ce.c:
+					case ce.a: {
+						const {
+							subredditName: s,
+							afterToken: n
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: n
+						})
+					}
+					default:
+						return e
+				}
+			};
+			const ue = {};
+			var pe = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ue,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case ce.b: {
+						const {
+							subredditName: s,
+							error: n
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: n
+						})
+					}
+					case ce.d:
+					case ce.c: {
+						const {
+							subredditName: s
+						} = t.payload;
+						return Object(X.a)(e, s)
+					}
+					default:
+						return e
+				}
+			};
+			const be = {};
+			var he = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : be,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case ce.d:
+						case ce.c:
+						case ce.b: {
+							const {
+								subredditName: s
+							} = t.payload, n = t.type === ce.d;
+							return Object.assign(Object.assign({}, e), {
+								[s]: n
+							})
+						}
+						default:
+							return e
+					}
+				},
+				ge = Object(U.c)({
+					error: pe,
+					pending: he
+				});
+			const fe = {};
+			var xe = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : fe,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case ce.c:
+						case ce.a: {
+							const {
+								subredditName: s,
+								bannedContributors: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: Object.assign(Object.assign({}, e[s]), n)
+							})
+						}
+						case ce.e: {
+							const {
+								subredditName: s,
+								bannedContributor: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: Object.assign(Object.assign({}, e[s]), n)
+							})
+						}
+						case ce.f: {
+							const {
+								subredditName: s,
+								userId: n
+							} = t.payload, o = Object(X.a)(e[s], n);
+							return Object.assign(Object.assign({}, e), {
+								[s]: o
+							})
+						}
+						default:
+							return e
+					}
+				},
+				ve = s("./node_modules/lodash/uniq.js"),
+				Ee = s.n(ve);
+			const Ce = {};
+			var _e = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ce,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case ce.c:
+						case ce.a: {
+							const {
+								subredditName: s,
+								userOrder: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: Ee()([...e[s] || [], ...n])
+							})
+						}
+						case ce.e: {
+							const {
+								subredditName: s,
+								userOrder: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: Ee()([...n, ...e[s] || []])
+							})
+						}
+						case ce.f: {
+							const {
+								subredditName: s,
+								userId: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: (e[s] || []).filter(e => e !== n)
+							})
+						}
+						default:
+							return e
+					}
+				},
+				Oe = Object(U.c)({
+					afterToken: me,
+					api: ge,
+					models: xe,
+					userOrder: _e
+				});
+			const ke = {};
+			var ye = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ke,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case ce.g: {
+							const {
+								subredditName: s,
+								bannedContributor: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: n
+							})
+						}
+						default:
+							return e
+					}
+				},
+				je = Object(U.c)({
+					listing: Oe,
+					search: ye
+				}),
+				we = s("./src/reddit/actions/wiki/wikiContributors/constants.ts");
+			const Se = {};
+			var Ie = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Se,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case we.c:
+					case we.a: {
+						const {
+							subredditName: s,
+							afterToken: n
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: n
+						})
+					}
+					default:
+						return e
+				}
+			};
+			const Te = {};
+			var Ne = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Te,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case we.b: {
+						const {
+							subredditName: s,
+							error: n
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: n
+						})
+					}
+					case we.d:
+					case we.c: {
+						const {
+							subredditName: s
+						} = t.payload;
+						return Object(X.a)(e, s)
+					}
+					default:
+						return e
+				}
+			};
+			const Pe = {};
+			var Me = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Pe,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case we.d:
+						case we.c:
+						case we.b: {
+							const {
+								subredditName: s
+							} = t.payload, n = t.type === we.d;
+							return Object.assign(Object.assign({}, e), {
+								[s]: n
+							})
+						}
+						default:
+							return e
+					}
+				},
+				Re = Object(U.c)({
+					error: Ne,
+					pending: Me
+				});
+			const Le = {};
+			var Ae = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Le,
+					t = arguments.length > 1 ? arguments[1] : void 0;
+				switch (t.type) {
+					case we.c:
+					case we.a: {
+						const {
+							subredditName: s,
+							contributors: n
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: Object.assign(Object.assign({}, e[s]), n)
+						})
+					}
+					case we.e: {
+						const {
+							subredditName: s,
+							contributor: n
+						} = t.payload;
+						return Object.assign(Object.assign({}, e), {
+							[s]: Object.assign(Object.assign({}, e[s]), n)
+						})
+					}
+					case we.f: {
+						const {
+							subredditName: s,
+							userId: n
+						} = t.payload, o = Object(X.a)(e[s], n);
+						return Object.assign(Object.assign({}, e), {
+							newState: o
+						})
+					}
+					default:
+						return e
+				}
+			};
+			const De = {};
+			var Fe = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : De,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case we.c:
+						case we.a: {
+							const {
+								subredditName: s,
+								userOrder: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: Ee()([...e[s] || [], ...n])
+							})
+						}
+						case we.e: {
+							const {
+								subredditName: s,
+								userOrder: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: [...n, ...e[s] || []]
+							})
+						}
+						case we.f: {
+							const {
+								subredditName: s,
+								userId: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: (e[s] || []).filter(e => e !== n)
+							})
+						}
+						default:
+							return e
+					}
+				},
+				Be = Object(U.c)({
+					afterToken: Ie,
+					api: Re,
+					models: Ae,
+					userOrder: Fe
+				});
+			const Ue = {};
+			var He = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ue,
+						t = arguments.length > 1 ? arguments[1] : void 0;
+					switch (t.type) {
+						case we.g: {
+							const {
+								subredditName: s,
+								contributor: n
+							} = t.payload;
+							return Object.assign(Object.assign({}, e), {
+								[s]: n
+							})
+						}
+						default:
+							return e
+					}
+				},
+				We = Object(U.c)({
+					listing: Be,
+					search: He
+				}),
+				Ge = Object(U.c)({
+					diff: W,
+					directory: V,
+					pages: Q,
+					pageSettings: Z,
+					revisions: de,
+					wikiBannedContributors: je,
+					wikiContributors: We
+				});
+			Object(B.a)({
+				pages: {
+					subredditWiki: Ge
+				}
+			});
+			const Ve = Object(d.a)(h.c),
+				qe = Object(d.a)(h.b),
+				Ke = Object(d.a)(h.a),
+				Qe = (e, t, s, n) => {
+					return s === N.j ? ze(e, t) : !!Object(O.c)(e, {
 						subredditName: t,
 						wikiPageName: s,
 						revisionId: n
 					})
 				},
-				V = (e, t) => !!Object(O.b)(e, {
+				ze = (e, t) => !!Object(O.b)(e, {
 					subredditName: t
 				}),
-				q = e => async (t, s, o) => {
+				Je = e => async (t, s, o) => {
 					const {
 						canShowFailToast: r,
 						wikiPageName: d
-					} = e, c = d === P.j, l = Object.assign(Object.assign({}, e), {
+					} = e, c = d === N.j, l = Object.assign(Object.assign({}, e), {
 						includePageData: e.includePageData && !c
-					}), m = d ? Object(L.a)(Object.assign(Object.assign({}, e), {
+					}), m = d ? Object(R.a)(Object.assign(Object.assign({}, e), {
 						wikiPageName: d
 					})) : void 0;
-					t(U({
+					t(Ve({
 						options: l,
 						pageKey: m
 					}));
-					const u = await Object(M.a)(o.gqlContext(), l),
+					const u = await Object(P.a)(o.gqlContext(), l),
 						p = u.body,
 						b = u.ok ? p.data && p.data.subreddit && p.data.subreddit.wiki : null;
-					return u.ok && b ? t(H({
+					return u.ok && b ? t(qe({
 						options: l,
 						pageKey: m,
 						subredditWiki: b
-					})) : (t(W({
+					})) : (t(Ke({
 						options: l,
 						pageKey: m,
 						error: u.error || {
@@ -1652,16 +2307,16 @@
 						}
 					})), r && t(Object(g.e)({
 						id: "SUBREDDIT_WIKI_DATA_ERROR_TOAST",
-						kind: A.b.Error,
+						kind: L.b.Error,
 						text: n.fbt._("Something went wrong loading this page. Try again?", null, {
 							hk: "wZxm"
 						}),
 						buttonText: n.fbt._("Retry", null, {
 							hk: "mgOpG"
 						}),
-						buttonAction: q(e)
+						buttonAction: Je(e)
 					}))), !(!u.ok || !a()(p.data.subreddit)) || !(!u.ok || !b)
-				}, K = function(e) {
+				}, Ze = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return async (s, n) => {
 						const o = n(),
@@ -1674,26 +2329,26 @@
 							m = !!o.listings.postOrder.ids[r];
 						return !!(l || m && !d) || (await s(Object(b.i)(r, e, a, t)), !n().listings.postOrder.api.error[r])
 					}
-				}, Q = e => async (t, s) => {
+				}, Xe = e => async (t, s) => {
 					const {
 						params: n,
 						url: o
 					} = e, {
 						wikiPageName: a
-					} = n, i = Object(F.a)(o, n);
+					} = n, i = Object(D.a)(o, n);
 					let d = !1;
-					return P.l.includes(a || "") ? (await (async (e, t) => {
+					return N.l.includes(a || "") ? (await (async (e, t) => {
 						const s = "".concat(l.a.oldRedditUrl).concat(Object(u.b)(e));
 						window.location.href = s
 					})(e.url), d = !0) : o !== i && (await t(Object(r.c)(i)), d = !0), d
-				}, z = function e(t, s) {
+				}, Ye = function e(t, s) {
 					let o = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 					return async (a, r, d) => {
 						const {
-							subredditName: c = P.e,
+							subredditName: c = N.e,
 							wikiPageName: l,
 							wikiSubRoute: m
-						} = t, u = s[N.z], p = s[N.A], b = u ? Object(C.a)(u) : void 0, h = p ? Object(C.a)(p) : void 0, v = l === P.j, E = m === P.m.Revisions;
+						} = t, u = s[T.z], p = s[T.A], b = u ? Object(C.a)(u) : void 0, h = p ? Object(C.a)(p) : void 0, v = l === N.j, E = m === N.m.Revisions;
 						let _ = !1,
 							O = !1;
 						if (o) {
@@ -1703,26 +2358,26 @@
 							_ = e === i.Qb.WikiContributors, O = e === i.Qb.WikiBanned
 						}
 						const k = r(),
-							y = (v || o) && !V(k, c),
-							j = !!l && !G(k, c, l, b),
-							w = [];
-						w.push(a(K(c))), (y || j) && w.push(a(q({
+							y = (v || o) && !ze(k, c),
+							j = !!l && !Qe(k, c, l, b),
+							P = [];
+						P.push(a(Ze(c))), (y || j) && P.push(a(Je({
 							includeDirectory: y,
 							includePageData: j,
 							revisionId: b,
 							subredditName: c,
 							wikiPageName: l
-						}))), m === P.m.Settings && l && w.push(a(Object(I.c)(c, l))), l && b && h && w.push(a(S({
+						}))), m === N.m.Settings && l && P.push(a(Object(S.c)(c, l))), l && b && h && P.push(a(w({
 							comparisonRevisionId: h,
 							revisionId: b,
 							subredditName: c,
 							wikiPageName: l
-						}))), E && w.push(a(Object(T.c)({
+						}))), E && P.push(a(Object(I.c)({
 							isRecent: !l,
 							wikiPageName: l,
 							subredditName: c
-						}))), _ && w.push(a(Object(x.e)(c))), O && w.push(a(Object(f.e)(c))), (await Promise.all(w)).every(Boolean) || a(Object(g.e)({
-							kind: A.b.Error,
+						}))), _ && P.push(a(Object(x.e)(c))), O && P.push(a(Object(f.e)(c))), (await Promise.all(P)).every(Boolean) || a(Object(g.e)({
+							kind: L.b.Error,
 							text: n.fbt._("Something went wrong", null, {
 								hk: "3UWos1"
 							}),
@@ -1732,23 +2387,23 @@
 							buttonAction: e(t, s, o)
 						}))
 					}
-				}, J = e => async (t, s) => {
-					if (await t(Q(e))) return;
+				}, $e = e => async (t, s) => {
+					if (await t(Xe(e))) return;
 					const {
 						params: n,
 						queryParams: o
-					} = e, a = n.subredditName || P.e;
+					} = e, a = n.subredditName || N.e;
 					t(m.l({
 						title: n.wikiPageName ? "".concat(n.wikiPageName, " - ").concat(a) : "wiki - ".concat(a)
-					})), await t(z(n, o));
-					const r = Object(B.B)(s(), {
+					})), await t(Ye(n, o));
+					const r = Object(F.B)(s(), {
 							subredditName: a
 						}),
 						i = s();
 					r && (i.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
-						t(Object(p.b)(D.a.SUBREDDIT))
+						t(Object(p.b)(A.a.SUBREDDIT))
 					}), t(Object(p.d)({
-						isViewSafe: Object(R.a)([], [r])
+						isViewSafe: Object(M.a)([], [r])
 					})))
 				}
 		},
@@ -2885,19 +3540,6 @@
 					}));
 					return d.ok
 				}
-		},
-		"./src/reddit/actions/wiki/wikiDiff/constants.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "c", (function() {
-				return n
-			})), s.d(t, "b", (function() {
-				return o
-			})), s.d(t, "a", (function() {
-				return a
-			}));
-			const n = "WIKI_DIFF_PENDING",
-				o = "WIKI_DIFF_LOADED",
-				a = "WIKI_DIFF_FAILED"
 		},
 		"./src/reddit/actions/wiki/wikiEditing/constants.ts": function(e, t, s) {
 			"use strict";
@@ -30121,800 +30763,144 @@
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return pe
+				return r
 			})), s.d(t, "a", (function() {
-				return be
+				return i
 			})), s.d(t, "c", (function() {
-				return he
+				return d
 			})), s.d(t, "p", (function() {
-				return ge
+				return c
 			})), s.d(t, "q", (function() {
-				return fe
+				return l
 			})), s.d(t, "o", (function() {
-				return xe
+				return m
 			})), s.d(t, "n", (function() {
-				return ve
+				return u
 			})), s.d(t, "i", (function() {
-				return Ee
+				return p
 			})), s.d(t, "d", (function() {
-				return Ce
+				return b
 			})), s.d(t, "j", (function() {
-				return _e
+				return h
 			})), s.d(t, "m", (function() {
-				return Oe
+				return g
 			})), s.d(t, "k", (function() {
-				return ke
+				return f
 			})), s.d(t, "l", (function() {
-				return ye
+				return x
 			})), s.d(t, "e", (function() {
-				return je
+				return v
 			})), s.d(t, "h", (function() {
-				return we
+				return E
 			})), s.d(t, "f", (function() {
-				return Se
+				return C
 			})), s.d(t, "g", (function() {
-				return Ie
+				return _
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.search.js");
 			var n = s("./src/lib/objectSelector/index.ts"),
-				o = s("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
-				a = s("./src/lib/initializeClient/installReducer.ts"),
-				r = s("./node_modules/redux/es/redux.js"),
-				i = s("./src/reddit/actions/wiki/wikiDiff/constants.ts");
-			const d = {};
-			var c = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case i.b: {
-							const {
-								key: s,
-								htmlDiff: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: {
-									htmlDiff: n
-								}
-							})
-						}
-						case i.c: {
-							const {
-								key: s
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: Object.assign(Object.assign({}, e[s]), {
-									pending: !0
-								})
-							})
-						}
-						case i.a: {
-							const {
-								key: s,
-								error: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: Object.assign(Object.assign({}, e[s]), {
-									pending: !1,
-									error: n
-								})
-							})
-						}
-						default:
-							return e
-					}
-				},
-				l = s("./src/reddit/actions/pages/subredditWiki/constants.ts");
-			const m = {};
-			var u = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case l.b:
-							const s = t.payload,
-								{
-									subredditWiki: n,
-									options: o
-								} = s,
-								a = n && n.directory;
-							if (!a) return e;
-							const {
-								subredditName: r
-							} = o;
-							return Object.assign(Object.assign({}, e), {
-								[r.toLowerCase()]: a
-							});
-						default:
-							return e
-					}
-				},
-				p = s("./src/reddit/actions/wiki/wikiRevisions/constants.ts");
-			const b = {};
-			var h = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case l.b: {
-							const {
-								subredditWiki: s,
-								pageKey: n
-							} = t.payload, {
-								page: o
-							} = s;
-							return n && o ? Object.assign(Object.assign({}, e), {
-								[n]: o
-							}) : e
-						}
-						case p.a: {
-							const {
-								pageKey: s,
-								page: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: n
-							})
-						}
-						default:
-							return e
-					}
-				},
-				g = s("./src/reddit/actions/wiki/wikiPageSettings/constants.ts");
-			const f = {};
-			var x = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case g.c: {
-							const {
-								settings: s,
-								pageKey: n
-							} = t.payload;
-							return s ? Object.assign(Object.assign({}, e), {
-								[n]: s
-							}) : e
-						}
-						case g.d: {
-							const {
-								isVisible: s,
-								editPermissions: n,
-								pageKey: o
-							} = t.payload, a = e[o];
-							return a ? Object.assign(Object.assign({}, e), {
-								[o]: Object.assign(Object.assign({}, a), {
-									isVisible: s,
-									editPermissions: n
-								})
-							}) : e
-						}
-						case g.b: {
-							const {
-								editorsInfo: s,
-								afterToken: n,
-								pageKey: o
-							} = t.payload, a = e[o];
-							if (!a) return e;
-							const r = [...a.editorsInfo, ...s];
-							return Object.assign(Object.assign({}, e), {
-								[o]: Object.assign(Object.assign({}, a), {
-									editorsInfo: r,
-									afterToken: n
-								})
-							})
-						}
-						case g.a: {
-							const {
-								username: s,
-								pageKey: n
-							} = t.payload, o = e[n];
-							if (!o) return e;
-							const a = o.editorsInfo.filter(e => e.username !== s);
-							return Object.assign(Object.assign({}, e), {
-								[n]: Object.assign(Object.assign({}, o), {
-									editorsInfo: a
-								})
-							})
-						}
-						default:
-							return e
-					}
-				},
-				v = s("./src/lib/omitKey/index.ts");
-			const E = {};
-			var C = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
-					t = arguments.length > 1 ? arguments[1] : void 0;
-				switch (t.type) {
-					case p.b: {
-						const {
-							key: s,
-							error: n
-						} = t.payload;
-						return Object.assign(Object.assign({}, e), {
-							[s]: n
-						})
-					}
-					case p.d:
-					case p.c: {
-						const {
-							key: s
-						} = t.payload;
-						return Object(v.a)(e, s)
-					}
-					default:
-						return e
-				}
-			};
-			const _ = {};
-			var O = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case p.d:
-						case p.b:
-						case p.c: {
-							const {
-								key: s
-							} = t.payload, n = t.type === p.d;
-							return Object.assign(Object.assign({}, e), {
-								[s]: n
-							})
-						}
-						default:
-							return e
-					}
-				},
-				k = Object(r.c)({
-					error: C,
-					pending: O
-				}),
-				y = s("./src/reddit/actions/wiki/wikiEditing/constants.ts");
-			const j = {};
-			var w = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : j,
-					t = arguments.length > 1 ? arguments[1] : void 0;
-				switch (t.type) {
-					case p.c: {
-						const {
-							key: s,
-							options: n,
-							pageInfo: o,
-							revisionsIds: a
-						} = t.payload, r = e[s], i = n.after && r ? [...r.ids, ...a] : a;
-						return Object.assign(Object.assign({}, e), {
-							[s]: {
-								ids: i,
-								pageInfo: o
-							}
-						})
-					}
-					case p.a: {
-						const {
-							page: {
-								revision: s
-							},
-							pageRevisionsListingKey: n,
-							recentRevisionsListingKey: o
-						} = t.payload, a = e[n];
-						return a && s ? Object.assign(Object.assign({}, Object(v.a)(e, o)), {
-							[n]: Object.assign(Object.assign({}, a), {
-								ids: [s.id, ...a.ids]
-							})
-						}) : e
-					}
-					case y.a: {
-						const {
-							pageRevisionsListingKey: s,
-							recentRevisionsListingKey: n
-						} = t.payload, o = Object.assign({}, e);
-						return delete o[s], delete o[n], o
-					}
-					default:
-						return e
-				}
-			};
-			const S = {};
-			var I = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case l.b: {
-							const {
-								subredditWiki: {
-									page: s
-								}
-							} = t.payload, n = s && s.revision;
-							return n && !e[n.id] ? Object.assign(Object.assign({}, e), {
-								[n.id]: n
-							}) : e
-						}
-						case p.c: {
-							const {
-								revisions: s
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), s)
-						}
-						case p.a: {
-							const {
-								page: s
-							} = t.payload, n = s.revision;
-							return n ? Object.assign(Object.assign({}, e), {
-								[n.id]: n
-							}) : e
-						}
-						case p.e: {
-							const {
-								revisionId: s,
-								isHidden: n
-							} = t.payload, o = e[s];
-							return o ? Object.assign(Object.assign({}, e), {
-								[s]: Object.assign(Object.assign({}, o), {
-									isHidden: n
-								})
-							}) : e
-						}
-						default:
-							return e
-					}
-				},
-				T = Object(r.c)({
-					api: k,
-					listings: w,
-					models: I
-				}),
-				N = s("./src/reddit/actions/wiki/wikiBannedContributors/constants.ts");
-			const P = {};
-			var M = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P,
-					t = arguments.length > 1 ? arguments[1] : void 0;
-				switch (t.type) {
-					case N.c:
-					case N.a: {
-						const {
-							subredditName: s,
-							afterToken: n
-						} = t.payload;
-						return Object.assign(Object.assign({}, e), {
-							[s]: n
-						})
-					}
-					default:
-						return e
-				}
-			};
-			const R = {};
-			var L = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R,
-					t = arguments.length > 1 ? arguments[1] : void 0;
-				switch (t.type) {
-					case N.b: {
-						const {
-							subredditName: s,
-							error: n
-						} = t.payload;
-						return Object.assign(Object.assign({}, e), {
-							[s]: n
-						})
-					}
-					case N.d:
-					case N.c: {
-						const {
-							subredditName: s
-						} = t.payload;
-						return Object(v.a)(e, s)
-					}
-					default:
-						return e
-				}
-			};
-			const A = {};
-			var D = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case N.d:
-						case N.c:
-						case N.b: {
-							const {
-								subredditName: s
-							} = t.payload, n = t.type === N.d;
-							return Object.assign(Object.assign({}, e), {
-								[s]: n
-							})
-						}
-						default:
-							return e
-					}
-				},
-				F = Object(r.c)({
-					error: L,
-					pending: D
-				});
-			const B = {};
-			var U = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : B,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case N.c:
-						case N.a: {
-							const {
-								subredditName: s,
-								bannedContributors: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: Object.assign(Object.assign({}, e[s]), n)
-							})
-						}
-						case N.e: {
-							const {
-								subredditName: s,
-								bannedContributor: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: Object.assign(Object.assign({}, e[s]), n)
-							})
-						}
-						case N.f: {
-							const {
-								subredditName: s,
-								userId: n
-							} = t.payload, o = Object(v.a)(e[s], n);
-							return Object.assign(Object.assign({}, e), {
-								[s]: o
-							})
-						}
-						default:
-							return e
-					}
-				},
-				H = s("./node_modules/lodash/uniq.js"),
-				W = s.n(H);
-			const G = {};
-			var V = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : G,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case N.c:
-						case N.a: {
-							const {
-								subredditName: s,
-								userOrder: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: W()([...e[s] || [], ...n])
-							})
-						}
-						case N.e: {
-							const {
-								subredditName: s,
-								userOrder: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: W()([...n, ...e[s] || []])
-							})
-						}
-						case N.f: {
-							const {
-								subredditName: s,
-								userId: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: (e[s] || []).filter(e => e !== n)
-							})
-						}
-						default:
-							return e
-					}
-				},
-				q = Object(r.c)({
-					afterToken: M,
-					api: F,
-					models: U,
-					userOrder: V
-				});
-			const K = {};
-			var Q = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : K,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case N.g: {
-							const {
-								subredditName: s,
-								bannedContributor: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: n
-							})
-						}
-						default:
-							return e
-					}
-				},
-				z = Object(r.c)({
-					listing: q,
-					search: Q
-				}),
-				J = s("./src/reddit/actions/wiki/wikiContributors/constants.ts");
-			const Z = {};
-			var X = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Z,
-					t = arguments.length > 1 ? arguments[1] : void 0;
-				switch (t.type) {
-					case J.c:
-					case J.a: {
-						const {
-							subredditName: s,
-							afterToken: n
-						} = t.payload;
-						return Object.assign(Object.assign({}, e), {
-							[s]: n
-						})
-					}
-					default:
-						return e
-				}
-			};
-			const Y = {};
-			var $ = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Y,
-					t = arguments.length > 1 ? arguments[1] : void 0;
-				switch (t.type) {
-					case J.b: {
-						const {
-							subredditName: s,
-							error: n
-						} = t.payload;
-						return Object.assign(Object.assign({}, e), {
-							[s]: n
-						})
-					}
-					case J.d:
-					case J.c: {
-						const {
-							subredditName: s
-						} = t.payload;
-						return Object(v.a)(e, s)
-					}
-					default:
-						return e
-				}
-			};
-			const ee = {};
-			var te = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ee,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case J.d:
-						case J.c:
-						case J.b: {
-							const {
-								subredditName: s
-							} = t.payload, n = t.type === J.d;
-							return Object.assign(Object.assign({}, e), {
-								[s]: n
-							})
-						}
-						default:
-							return e
-					}
-				},
-				se = Object(r.c)({
-					error: $,
-					pending: te
-				});
-			const ne = {};
-			var oe = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ne,
-					t = arguments.length > 1 ? arguments[1] : void 0;
-				switch (t.type) {
-					case J.c:
-					case J.a: {
-						const {
-							subredditName: s,
-							contributors: n
-						} = t.payload;
-						return Object.assign(Object.assign({}, e), {
-							[s]: Object.assign(Object.assign({}, e[s]), n)
-						})
-					}
-					case J.e: {
-						const {
-							subredditName: s,
-							contributor: n
-						} = t.payload;
-						return Object.assign(Object.assign({}, e), {
-							[s]: Object.assign(Object.assign({}, e[s]), n)
-						})
-					}
-					case J.f: {
-						const {
-							subredditName: s,
-							userId: n
-						} = t.payload, o = Object(v.a)(e[s], n);
-						return Object.assign(Object.assign({}, e), {
-							newState: o
-						})
-					}
-					default:
-						return e
-				}
-			};
-			const ae = {};
-			var re = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ae,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case J.c:
-						case J.a: {
-							const {
-								subredditName: s,
-								userOrder: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: W()([...e[s] || [], ...n])
-							})
-						}
-						case J.e: {
-							const {
-								subredditName: s,
-								userOrder: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: [...n, ...e[s] || []]
-							})
-						}
-						case J.f: {
-							const {
-								subredditName: s,
-								userId: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: (e[s] || []).filter(e => e !== n)
-							})
-						}
-						default:
-							return e
-					}
-				},
-				ie = Object(r.c)({
-					afterToken: X,
-					api: se,
-					models: oe,
-					userOrder: re
-				});
-			const de = {};
-			var ce = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : de,
-						t = arguments.length > 1 ? arguments[1] : void 0;
-					switch (t.type) {
-						case J.g: {
-							const {
-								subredditName: s,
-								contributor: n
-							} = t.payload;
-							return Object.assign(Object.assign({}, e), {
-								[s]: n
-							})
-						}
-						default:
-							return e
-					}
-				},
-				le = Object(r.c)({
-					listing: ie,
-					search: ce
-				}),
-				me = Object(r.c)({
-					diff: c,
-					directory: u,
-					pages: h,
-					pageSettings: x,
-					revisions: T,
-					wikiBannedContributors: z,
-					wikiContributors: le
-				});
-			Object(a.a)({
-				pages: {
-					subredditWiki: me
-				}
-			});
-			const ue = [],
-				pe = (e, t) => {
+				o = s("./src/reddit/helpers/wiki/makeWikiPageKey.ts");
+			const a = [],
+				r = (e, t) => {
+					var s;
 					const {
-						subredditName: s
+						subredditName: n
 					} = t;
-					if (e.pages && e.pages.subredditWiki) return e.pages.subredditWiki.directory[s.toLowerCase()]
+					if (null === (s = e.pages) || void 0 === s ? void 0 : s.subredditWiki) return e.pages.subredditWiki.directory[n.toLowerCase()]
 				},
-				be = (e, t) => {
+				i = (e, t) => {
 					const {
 						subredditName: s
 					} = t;
 					return !!e.subreddits.api.wiki.pending[s.toLowerCase()]
 				},
-				he = (e, t) => {
-					const s = Object(o.a)(t);
-					if (e.pages && e.pages.subredditWiki) return e.pages.subredditWiki.pages[s]
+				d = (e, t) => {
+					var s;
+					const n = Object(o.a)(t);
+					if (null === (s = e.pages) || void 0 === s ? void 0 : s.subredditWiki) return e.pages.subredditWiki.pages[n]
 				},
-				ge = (e, t) => {
+				c = (e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					return e.pages.subredditWiki.revisions.listings[s]
 				},
-				fe = (e, t) => {
+				l = (e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					return !!e.pages.subredditWiki.revisions.api.pending[s]
 				},
-				xe = (e, t) => {
+				m = (e, t) => {
 					let {
 						listingKey: s
 					} = t;
 					return !!e.pages.subredditWiki.revisions.api.error[s]
 				},
-				ve = (e, t) => {
+				u = (e, t) => {
 					return (e => e.pages.subredditWiki.revisions.models)(e)[t.revisionId]
 				},
-				Ee = (e, t) => {
+				p = (e, t) => {
 					let {
 						key: s
 					} = t;
 					return e.pages.subredditWiki.diff[s]
 				},
-				Ce = (e, t) => {
+				b = (e, t) => {
 					const s = Object(o.a)(t);
 					return e.pages.subredditWiki.pageSettings[s]
 				},
-				_e = (e, t) => {
+				h = (e, t) => {
 					const {
 						subredditName: s
 					} = t;
 					return !!e.pages.subredditWiki.wikiContributors.listing.api.pending[s.toLowerCase()]
 				},
-				Oe = Object(n.a)((e, t) => {
+				g = Object(n.a)((e, t) => {
 					let {
 						subredditName: s
 					} = t;
 					const n = s.toLowerCase(),
 						o = e.pages.subredditWiki.wikiContributors.listing,
-						a = o.userOrder[n],
-						r = o.models[n];
-					return a ? a.map(e => r[e]) : ue
+						r = o.userOrder[n],
+						i = o.models[n];
+					return r ? r.map(e => i[e]) : a
 				}),
-				ke = (e, t) => {
+				f = (e, t) => {
 					const {
 						subredditName: s
 					} = t;
 					return e.pages.subredditWiki.wikiContributors.listing.afterToken[s.toLowerCase()]
 				},
-				ye = (e, t) => {
+				x = (e, t) => {
 					const {
 						subredditName: s
 					} = t;
 					return e.pages.subredditWiki.wikiContributors.search[s.toLowerCase()]
 				},
-				je = (e, t) => {
+				v = (e, t) => {
 					const {
 						subredditName: s
 					} = t;
 					return !!e.pages.subredditWiki.wikiBannedContributors.listing.api.pending[s.toLowerCase()]
 				},
-				we = Object(n.a)((e, t) => {
+				E = Object(n.a)((e, t) => {
 					let {
 						subredditName: s
 					} = t;
 					const n = s.toLowerCase(),
 						o = e.pages.subredditWiki.wikiBannedContributors.listing,
-						a = o.userOrder[n],
-						r = o.models[n];
-					return a ? a.map(e => r[e]) : ue
+						r = o.userOrder[n],
+						i = o.models[n];
+					return r ? r.map(e => i[e]) : a
 				}),
-				Se = (e, t) => {
+				C = (e, t) => {
 					const {
 						subredditName: s
 					} = t;
 					return e.pages.subredditWiki.wikiBannedContributors.listing.afterToken[s.toLowerCase()]
 				},
-				Ie = (e, t) => {
+				_ = (e, t) => {
 					const {
 						subredditName: s
 					} = t;
@@ -30923,4 +30909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3b0ced4c551ea97d0cfb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c8b2d315fc34b7f1d5fe.js.map
