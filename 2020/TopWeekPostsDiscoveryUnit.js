@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.190d28ee64e8dfdf975f.js
-// Retrieved at 9/24/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.ec9e5a784f3bfca2f52e.js
+// Retrieved at 9/24/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -42,10 +42,9 @@
 			const m = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return r => {
-					const o = h(r.target, r.currentTarget),
-						i = x(r.target, r.currentTarget);
-					e && t && (b(r.target, r.currentTarget, p.anchors) ? e(o && i ? t(s, o, i) : t(s, o)) : o && e(e => {
-						const n = i ? t(s, o, i)(e) : t(s, o)(e);
+					const o = h(r.target, r.currentTarget);
+					e && t && (b(r.target, r.currentTarget, p.anchors) ? o && e(t(s, o)) : o && e(e => {
+						const n = t(s, o)(e);
 						let r;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -88,8 +87,7 @@
 				h = (e, t) => {
 					const s = e.dataset.clickId;
 					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
-				},
-				x = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && x(e.parentElement, t))
+				}
 		},
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -165,8 +163,8 @@
 				P = s.n(j),
 				_ = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less"),
 				E = s.n(_);
-			const T = "".concat(b.a.assetPath, "/img/link-placeholder.png");
-			var I = e => {
+			const I = "".concat(b.a.assetPath, "/img/link-placeholder.png");
+			var T = e => {
 					const {
 						autoplayPref: t,
 						availableWidth: s,
@@ -212,7 +210,7 @@
 						"data-redditstyle": !0,
 						post: d,
 						showPlaceholderContentType: !a || !a.postPlaceholderImage,
-						templatePlaceholderImage: a ? a.postPlaceholderImage : T,
+						templatePlaceholderImage: a ? a.postPlaceholderImage : I,
 						usePreview: !0
 					})))) : u && p ? u.type !== C.o.RTJSON && u.type !== C.o.TEXT ? (j = !1, b = r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: E.a.flexSpacer
@@ -368,7 +366,7 @@
 						onSubredditOrProfileClick: this.trackSubredditOrProfileClicked,
 						subredditOrProfile: p,
 						shouldShowSubscribeButton: x
-					}), r.a.createElement(I, s), r.a.createElement(F, {
+					}), r.a.createElement(T, s), r.a.createElement(F, {
 						"data-redditstyle": !0,
 						post: m
 					})), r.a.createElement(c.d, {
@@ -432,7 +430,7 @@
 				}),
 				postIds: P
 			}), E = Object(o.b)(_);
-			class T extends r.a.Component {
+			class I extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						isVisible: !0
@@ -483,7 +481,7 @@
 					}))) : null
 				}
 			}
-			t.default = E(T)
+			t.default = E(I)
 		},
 		"./src/reddit/components/PostContainer/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -864,4 +862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.190d28ee64e8dfdf975f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.ec9e5a784f3bfca2f52e.js.map

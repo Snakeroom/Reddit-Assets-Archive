@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.fa3a68d99348a1cec2dc.js
-// Retrieved at 9/24/2020, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.6bce52584f19b5c4b9ef.js
+// Retrieved at 9/24/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -42,10 +42,9 @@
 			const m = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = h(o.target, o.currentTarget),
-						a = x(o.target, o.currentTarget);
-					e && t && (b(o.target, o.currentTarget, p.anchors) ? e(r && a ? t(s, r, a) : t(s, r)) : r && e(e => {
-						const n = a ? t(s, r, a)(e) : t(s, r)(e);
+					const r = h(o.target, o.currentTarget);
+					e && t && (b(o.target, o.currentTarget, p.anchors) ? r && e(t(s, r)) : r && e(e => {
+						const n = t(s, r)(e);
 						let o;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -88,8 +87,7 @@
 				h = (e, t) => {
 					const s = e.dataset.clickId;
 					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
-				},
-				x = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && x(e.parentElement, t))
+				}
 		},
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
 			"use strict";
@@ -2367,4 +2365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.fa3a68d99348a1cec2dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6bce52584f19b5c4b9ef.js.map
