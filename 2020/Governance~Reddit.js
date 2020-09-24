@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9a8cc9d3750d89b0ac94.js
-// Retrieved at 9/23/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.147bc25ea4dce442d8ab.js
+// Retrieved at 9/24/2020, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -5715,134 +5715,135 @@
 		"./src/reddit/actions/gold/powerups.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "g", (function() {
-				return E
+				return I
 			})), s.d(t, "e", (function() {
-				return w
+				return C
 			})), s.d(t, "f", (function() {
-				return R
+				return k
 			})), s.d(t, "d", (function() {
-				return q
-			})), s.d(t, "a", (function() {
 				return V
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "a", (function() {
 				return H
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "c", (function() {
 				return K
+			})), s.d(t, "b", (function() {
+				return W
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/lib/makeActionCreator/index.ts"),
 				a = s("./src/lib/sentry/index.ts"),
 				i = s("./src/reddit/constants/modals.ts"),
 				c = s("./src/reddit/helpers/localStorage/index.ts"),
-				o = s("./src/reddit/actions/modal.ts"),
-				d = s("./src/reddit/actions/toaster.ts"),
-				u = s("./src/reddit/models/Toast/index.ts"),
-				l = s("./src/graphql/operations/ReallocatePowerups.json"),
-				b = s("./src/graphql/operations/RedditorPowerups.json"),
-				p = s("./src/graphql/operations/SubredditPowerups.json"),
-				O = s("./src/graphql/operations/SubredditPowerupsFull.json"),
-				g = s("./src/graphql/operations/UserPowerups.json"),
-				f = s("./src/lib/makeGqlRequest/index.ts");
-			const m = (e, t) => Object(f.a)(e, Object.assign(Object.assign({}, p), {
+				o = s("./src/reddit/actions/login.ts"),
+				d = s("./src/reddit/actions/modal.ts"),
+				u = s("./src/reddit/actions/toaster.ts"),
+				l = s("./src/reddit/models/Toast/index.ts"),
+				b = s("./src/graphql/operations/ReallocatePowerups.json"),
+				p = s("./src/graphql/operations/RedditorPowerups.json"),
+				O = s("./src/graphql/operations/SubredditPowerups.json"),
+				g = s("./src/graphql/operations/SubredditPowerupsFull.json"),
+				f = s("./src/graphql/operations/UserPowerups.json"),
+				m = s("./src/lib/makeGqlRequest/index.ts");
+			const j = (e, t) => Object(m.a)(e, Object.assign(Object.assign({}, O), {
 					variables: {
 						subredditId: t
 					}
 				})),
-				j = (e, t) => Object(f.a)(e, Object.assign(Object.assign({}, O), {
+				_ = (e, t) => Object(m.a)(e, Object.assign(Object.assign({}, g), {
 					variables: {
 						subredditId: t
 					}
 				}));
-			var _ = s("./src/reddit/selectors/gold/powerups.ts"),
-				h = s("./src/reddit/selectors/user.ts"),
-				y = s("./src/reddit/actions/gold/constants.ts");
-			const E = e => async (t, s, r) => {
+			var h = s("./src/reddit/selectors/gold/powerups.ts"),
+				y = s("./src/reddit/selectors/user.ts"),
+				E = s("./src/reddit/actions/gold/constants.ts");
+			const I = e => async (t, s, r) => {
 				let {
 					gqlContext: i
 				} = r;
 				if (!!s().user.powerups.fetched && !e) return;
-				t(I());
+				t(v());
 				const c = n.fbt._("Something went wrong", null, {
 					hk: "1IJNeH"
 				});
 				try {
-					const e = await (e => Object(f.a)(e, g))(i());
+					const e = await (e => Object(m.a)(e, f))(i());
 					if (e.ok) {
 						const s = e.body;
-						if (s.errors && s.errors.length) return void(await t(T(c)));
-						if (!s.data.identity) return void(await t(S(c)));
-						await t(v({
+						if (s.errors && s.errors.length) return void(await t(w(c)));
+						if (!s.data.identity) return void(await t(T(c)));
+						await t(S({
 							powerups: s.data.identity.powerups
 						}))
 					}
 				} catch (o) {
-					a.c.captureException(o), await t(T(c))
+					a.c.captureException(o), await t(w(c))
 				}
-			}, I = Object(r.a)(y.xb), v = Object(r.a)(y.wb), S = Object(r.a)(y.vb), T = e => async (t, s) => {
-				await t(S(e)), t(Object(d.e)({
-					kind: u.b.Error,
-					duration: d.a,
+			}, v = Object(r.a)(E.xb), S = Object(r.a)(E.wb), T = Object(r.a)(E.vb), w = e => async (t, s) => {
+				await t(T(e)), t(Object(u.e)({
+					kind: l.b.Error,
+					duration: u.a,
 					text: e
 				}))
-			}, w = (e, t) => async (e, s, r) => {
+			}, C = (e, t) => async (e, s, r) => {
 				let {
 					gqlContext: i
 				} = r;
 				var c;
 				if (!!s().users.powerups.fetched) return;
-				e(C());
+				e(A());
 				const o = n.fbt._("Something went wrong", null, {
 					hk: "1IJNeH"
 				});
 				try {
-					const s = await ((e, t) => Object(f.a)(e, Object.assign({
+					const s = await ((e, t) => Object(m.a)(e, Object.assign({
 						variables: {
 							id: t
 						}
-					}, b)))(i(), t);
+					}, p)))(i(), t);
 					if (s.ok) {
 						const n = s.body;
-						if (n.errors && n.errors.length) return void(await e(P(o)));
-						if (!n.data.redditorInfoById) return void(await e(D(o)));
+						if (n.errors && n.errors.length) return void(await e(R(o)));
+						if (!n.data.redditorInfoById) return void(await e(P(o)));
 						const r = (null === (c = n.data.redditorInfoById.powerups) || void 0 === c ? void 0 : c.supportedSubreddits) || [];
-						await e(A({
+						await e(D({
 							supportedSubreddits: r,
 							userId: t
 						}))
 					}
 				} catch (d) {
-					a.c.captureException(d), await e(P(o))
+					a.c.captureException(d), await e(R(o))
 				}
-			}, C = Object(r.a)(y.cb), A = Object(r.a)(y.bb), D = Object(r.a)(y.ab), P = e => async (t, s) => {
-				await t(D(e)), t(Object(d.e)({
-					kind: u.b.Error,
-					duration: d.a,
+			}, A = Object(r.a)(E.cb), D = Object(r.a)(E.bb), P = Object(r.a)(E.ab), R = e => async (t, s) => {
+				await t(P(e)), t(Object(u.e)({
+					kind: l.b.Error,
+					duration: u.a,
 					text: e
 				}))
-			}, R = (e, t) => async (s, r, i) => {
+			}, k = (e, t) => async (s, r, i) => {
 				let {
 					gqlContext: c
 				} = i;
 				var o;
 				const d = r();
-				if (Object(_.f)(d, {
+				if (Object(h.f)(d, {
 						subredditId: e
-					}) && (!t.fullData || Object(_.g)(d, {
+					}) && (!t.fullData || Object(h.g)(d, {
 						subredditId: e
 					})) && !t.forceLoad) return;
-				s(k());
-				const u = t.fullData ? j : m;
+				s(x());
+				const u = t.fullData ? _ : j;
 				try {
 					const n = await u(c(), e);
 					if (n.ok) {
 						const r = n.body;
-						if (null === (o = r.errors) || void 0 === o ? void 0 : o.length) return void(await s(U(r.errors[0].message)));
+						if (null === (o = r.errors) || void 0 === o ? void 0 : o.length) return void(await s(M(r.errors[0].message)));
 						if (t.fullData) {
 							const {
 								powerups: t = null,
 								supporters: n = null
 							} = r.data.subredditInfoById || {};
-							await s(N({
+							await s(L({
 								powerups: t,
 								recentSupporters: n ? n.recentSupporters : [],
 								subredditId: e,
@@ -5852,34 +5853,34 @@
 							const {
 								powerups: t = null
 							} = r.data.subredditInfoById || {};
-							await s(x({
+							await s(N({
 								powerups: t,
 								subredditId: e
 							}))
 						}
 					}
 				} catch (l) {
-					a.c.captureException(l), await s(U(n.fbt._("Something went wrong", null, {
+					a.c.captureException(l), await s(M(n.fbt._("Something went wrong", null, {
 						hk: "1IJNeH"
 					})))
 				}
-			}, k = Object(r.a)(y.mb), x = Object(r.a)(y.lb), N = Object(r.a)(y.kb), L = Object(r.a)(y.jb), U = e => async (t, s) => {
-				await t(L(e)), t(Object(d.e)({
-					kind: u.b.Error,
-					duration: d.a,
+			}, x = Object(r.a)(E.mb), N = Object(r.a)(E.lb), L = Object(r.a)(E.kb), U = Object(r.a)(E.jb), M = e => async (t, s) => {
+				await t(U(e)), t(Object(u.e)({
+					kind: l.b.Error,
+					duration: u.a,
 					text: e
 				}))
-			}, M = Object(r.a)(y.U), F = Object(r.a)(y.V), G = Object(r.a)(y.W), B = e => async (t, s) => {
-				await t(M(e)), t(Object(d.e)({
-					kind: u.b.Error,
-					duration: d.a,
+			}, F = Object(r.a)(E.U), G = Object(r.a)(E.V), B = Object(r.a)(E.W), q = e => async (t, s) => {
+				await t(F(e)), t(Object(u.e)({
+					kind: l.b.Error,
+					duration: u.a,
 					text: e
 				}))
-			}, q = (e, t, s, r) => async (c, b, p) => {
+			}, V = (e, t, s, r) => async (c, o, p) => {
 				let {
 					gqlContext: O
 				} = p;
-				c(F({
+				c(G({
 					subredditId: e,
 					powerupsCount: t,
 					isAnonymous: s,
@@ -5891,24 +5892,24 @@
 							powerupsCount: t,
 							isAnonymous: s
 						},
-						p = await ((e, t) => Object(f.a)(e, Object.assign(Object.assign({}, l), {
+						p = await ((e, t) => Object(m.a)(e, Object.assign(Object.assign({}, b), {
 							variables: t
 						})))(O(), {
 							input: a
 						});
 					let g = !1,
-						m = null;
+						f = null;
 					if (p.ok) {
 						const e = p.body;
-						g = e.data.reallocatePowerups.ok, m = e.data.reallocatePowerups.errors
+						g = e.data.reallocatePowerups.ok, f = e.data.reallocatePowerups.errors
 					}
-					const j = Object(h.i)(b());
+					const j = Object(y.i)(o());
 					if (g && j) await c((e => async (t, s) => {
-						t(G(e)), t(R(e.subredditId, {
+						t(B(e)), t(k(e.subredditId, {
 							forceLoad: !0
-						})), e.powerupsCount && (t(Object(o.g)(i.a.ECON_POWERUPS_PURCHASE)), t(Object(d.e)({
-							kind: u.b.SuccessCommunityGreen,
-							duration: d.a,
+						})), e.powerupsCount && (t(Object(d.g)(i.a.ECON_POWERUPS_PURCHASE)), t(Object(u.e)({
+							kind: l.b.SuccessCommunityGreen,
+							duration: u.a,
 							text: n.fbt._("Your free Powerup is applied.", null, {
 								hk: "3WY7KP"
 							})
@@ -5921,10 +5922,10 @@
 						allocatedAt: r
 					}));
 					else {
-						const e = m && m[0] && m[0].message || n.fbt._("An unknown error occurred", null, {
+						const e = f && f[0] && f[0].message || n.fbt._("An unknown error occurred", null, {
 							hk: "2oAbwZ"
 						});
-						await c(B(e))
+						await c(q(e))
 					}
 				} catch (g) {
 					a.c.captureException(g);
@@ -5932,9 +5933,9 @@
 						t = e && e.message || n.fbt._("An unknown error occurred", null, {
 							hk: "2oAbwZ"
 						});
-					await c(B(t))
+					await c(q(t))
 				}
-			}, V = Object(r.a)(y.H), H = Object(r.a)(y.S), K = () => async (e, t) => Object(c.r)(i.a.ECON_POWERUPS_MARKETING) ? e(Object(o.h)(i.a.ECON_POWERUPS_PURCHASE)) : e(Object(o.h)(i.a.ECON_POWERUPS_MARKETING))
+			}, H = Object(r.a)(E.H), K = Object(r.a)(E.S), W = () => async (e, t) => Object(y.i)(t()) ? Object(c.r)(i.a.ECON_POWERUPS_MARKETING) ? e(Object(d.h)(i.a.ECON_POWERUPS_PURCHASE)) : e(Object(d.h)(i.a.ECON_POWERUPS_MARKETING)) : e(Object(o.h)())
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, s) {
 			"use strict";
@@ -56034,4 +56035,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9a8cc9d3750d89b0ac94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.147bc25ea4dce442d8ab.js.map
