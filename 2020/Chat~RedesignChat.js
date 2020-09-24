@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b53a5c858b56a0930cff.js
-// Retrieved at 9/23/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.204ec88e7d732b30d3ee.js
+// Retrieved at 9/24/2020, 2:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -483,125 +483,133 @@
 		"./src/chat/actions/channel/dropdown.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return f
-			})), n.d(t, "c", (function() {
 				return j
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return C
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "d", (function() {
 				return _
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "i", (function() {
 				return E
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "l", (function() {
 				return v
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "k", (function() {
 				return I
+			})), n.d(t, "a", (function() {
+				return y
 			})), n.d(t, "j", (function() {
-				return x
-			})), n.d(t, "e", (function() {
 				return S
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "e", (function() {
 				return N
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return k
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "f", (function() {
 				return w
+			})), n.d(t, "h", (function() {
+				return T
 			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react-router-redux/es/index.js"),
 				a = n("./src/lib/makeActionCreator/index.ts"),
 				c = n("./src/chat/actions/channel.ts"),
 				r = n("./src/chat/actions/tooltip.ts"),
 				o = n("./src/chat/actions/tracking.ts"),
 				i = n("./src/chat/constants/channels.ts"),
-				l = n("./src/chat/helpers/errors.ts"),
-				d = n("./src/chat/helpers/urls/index.ts"),
-				u = n("./src/chat/selectors/channels.ts"),
-				h = n("./src/chat/selectors/subreddit.ts"),
-				m = n("./src/chat/singleton/SendbirdSDK.ts");
+				l = n("./src/chat/endpoints/sendbird/index.ts"),
+				d = n("./src/chat/helpers/errors.ts"),
+				u = n("./src/chat/helpers/urls/index.ts"),
+				h = n("./src/chat/selectors/channels.ts"),
+				m = n("./src/chat/selectors/subreddit.ts"),
+				b = n("./src/chat/singleton/SendbirdSDK.ts");
 			const {
-				INVITE_MEMBERS: b,
-				LEAVE: p,
-				LOCK_CHANNEL_CONFIRMATION: g,
-				VIEW_MEMBERS: O
-			} = i.a, f = () => async (e, t) => {
+				INVITE_MEMBERS: p,
+				LEAVE: g,
+				LOCK_CHANNEL_CONFIRMATION: O,
+				VIEW_MEMBERS: f
+			} = i.a, j = () => async (e, t) => {
 				const n = t(),
 					{
 						channelId: a
-					} = Object(u.w)(n),
-					c = Object(h.b)(n),
+					} = Object(h.w)(n),
+					c = Object(m.b)(n),
 					r = c && c.name;
-				e(Object(s.b)(Object(d.channelAction)(a, b, r)))
-			}, j = () => async (e, t) => {
-				const n = t(),
-					{
-						channelId: a
-					} = Object(u.w)(n),
-					c = Object(h.b)(n),
-					r = c && c.name;
-				e(Object(s.b)(Object(d.channelAction)(a, p, r)))
+				e(Object(s.b)(Object(u.channelAction)(a, p, r)))
 			}, C = () => async (e, t) => {
 				const n = t(),
 					{
 						channelId: a
-					} = Object(u.w)(n),
-					c = Object(h.b)(n),
+					} = Object(h.w)(n),
+					c = Object(m.b)(n),
 					r = c && c.name;
-				e(Object(s.b)(Object(d.channelAction)(a, g, r)))
-			}, _ = e => async (t, n) => {
-				t(Object(r.c)({
-					tooltipId: e
-				})), t(Object(o.D)())
-			}, E = e => async (t, n) => {
-				e && (t(Object(o.n)()), t(Object(o.q)()).then(() => {
-					window.open(Object(d.viewProfileUrl)(e))
-				}))
-			}, v = () => async (e, t) => {
+				e(Object(s.b)(Object(u.channelAction)(a, g, r)))
+			}, _ = () => async (e, t) => {
 				const n = t(),
 					{
 						channelId: a
-					} = Object(u.w)(n),
-					c = Object(h.b)(n),
+					} = Object(h.w)(n),
+					c = Object(m.b)(n),
 					r = c && c.name;
-				e(Object(s.b)(Object(d.channelAction)(a, O, r)))
-			}, I = "CHANNEL__UPDATE_CHANNEL_NAME", y = Object(a.a)(I), x = e => async (t, n) => {
-				const s = Object(u.w)(n());
+				e(Object(s.b)(Object(u.channelAction)(a, O, r)))
+			}, E = e => async (t, n) => {
+				t(Object(r.c)({
+					tooltipId: e
+				})), t(Object(o.D)())
+			}, v = e => async (t, n) => {
+				e && (t(Object(o.n)()), t(Object(o.q)()).then(() => {
+					window.open(Object(u.viewProfileUrl)(e))
+				}))
+			}, I = () => async (e, t) => {
+				const n = t(),
+					{
+						channelId: a
+					} = Object(h.w)(n),
+					c = Object(m.b)(n),
+					r = c && c.name;
+				e(Object(s.b)(Object(u.channelAction)(a, f, r)))
+			}, y = "CHANNEL__UPDATE_CHANNEL_NAME", x = Object(a.a)(y), S = e => async (t, n) => {
+				const s = Object(h.w)(n());
 				if (s) {
 					const n = Object.assign(Object.assign({}, s), {
 							name: e
 						}),
 						a = Object.assign({}, s);
-					t(y(n)), await m.b.updateChannel(n).catch(e => {
-						Object(l.b)(e), t(y(a))
+					t(x(n)), await b.b.updateChannel(n).catch(e => {
+						Object(d.b)(e), t(x(a))
 					})
-				}
-			}, S = e => {
-				let {
-					channelId: t
-				} = e;
-				return async () => {
-					m.b.setMyCountPreference(t, i.c.Off).catch(l.b)
 				}
 			}, N = e => {
 				let {
 					channelId: t
 				} = e;
 				return async () => {
-					m.b.setMyCountPreference(t, i.c.All).catch(l.b)
+					b.b.setMyCountPreference(t, i.c.Off).catch(d.b)
 				}
-			}, k = e => async (t, n) => {
-				await m.b.setPushPreference(e.channelId, !0).then(() => {
-					const s = Object(u.h)(n(), e);
+			}, k = e => {
+				let {
+					channelId: t
+				} = e;
+				return async () => {
+					b.b.setMyCountPreference(t, i.c.All).catch(d.b)
+				}
+			}, w = e => async (t, n, s) => {
+				let {
+					apiContext: a
+				} = s;
+				await Promise.all([Object(l.n)(a(), e.channelId), b.b.setPushPreference(e.channelId, !0)]).then(() => {
+					const s = Object(h.h)(n(), e);
 					s && t(Object(c.Q)(Object.assign(Object.assign({}, s), {
 						isNotifsMuted: !0
 					})))
-				}).catch(l.b)
-			}, w = e => async (t, n) => {
-				await m.b.setPushPreference(e.channelId, !1).then(() => {
-					const s = Object(u.h)(n(), e);
+				}).catch(d.b)
+			}, T = e => async (t, n, s) => {
+				let {
+					apiContext: a
+				} = s;
+				await Promise.all([Object(l.p)(a(), e.channelId), b.b.setPushPreference(e.channelId, !1)]).then(() => {
+					const s = Object(h.h)(n(), e);
 					s && t(Object(c.Q)(Object.assign(Object.assign({}, s), {
 						isNotifsMuted: !1
 					})))
-				}).catch(l.b)
+				}).catch(d.b)
 			}
 		},
 		"./src/chat/actions/channel/subreddit.ts": function(e, t, n) {
@@ -1588,7 +1596,7 @@
 					} = n;
 					Object(u.b)(t()) || (e(w({
 						userSubredditChatEnabled: !0
-					})), Object(i.n)(s()))
+					})), Object(i.o)(s()))
 				}
 		},
 		"./src/chat/actions/sendbird/sdk.ts": function(e, t, n) {
@@ -14658,4 +14666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b53a5c858b56a0930cff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.204ec88e7d732b30d3ee.js.map
