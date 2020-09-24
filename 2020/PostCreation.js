@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fa7a39bc02129e6517bd.js
-// Retrieved at 9/24/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7c0cd2ba18744c07aaf2.js
+// Retrieved at 9/24/2020, 5:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "1bdadd4-production"
+					SENTRY_RELEASE_VERSION: "9fa91c3-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -2934,7 +2934,16 @@
 					})
 				}
 				componentWillUnmount() {
-					this.visibilityChangeSubscriptionId && u.a.unsubscribe(this.visibilityChangeSubscriptionId)
+					const {
+						post: e,
+						trackDisplay: t,
+						trackVideo: n
+					} = this.props;
+					this.visibilityChangeSubscriptionId && u.a.unsubscribe(this.visibilityChangeSubscriptionId), t && (d.d(e.id, l.q, !1), this.viewabilityStats.forEach(e => {
+						j(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
+					})), n && (d.d(e.id, l.o, !0), this.videoStats.forEach(e => {
+						j(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
+					})), this.outOfViewStats = [], this.inViewStats = []
 				}
 				componentDidUpdate() {
 					this.props.trackVideo && (this.state.currentContinuousViewingStartedAt === this.props.continuousViewingStartedAt ? (this.handleThresholds(this.state.event, l.o, !0), this.videoStats.forEach(e => {
@@ -22319,7 +22328,7 @@
 				},
 				j = (e, t, n) => {
 					if (e && t && /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(n)) {
-						const s = Object(g.a)(e, t),
+						const s = Object(g.a)(e, t, f.a.Click),
 							{
 								url: o,
 								query: r
@@ -33883,4 +33892,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fa7a39bc02129e6517bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7c0cd2ba18744c07aaf2.js.map

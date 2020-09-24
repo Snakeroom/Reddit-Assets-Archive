@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.27ad2572dc268438ea56.js
-// Retrieved at 9/9/2020, 3:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.11579cb0444ff724efa7.js
+// Retrieved at 9/24/2020, 5:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -380,7 +380,7 @@
 					}
 				}),
 				O = Object(h.a)(_);
-			class M extends s.Component {
+			class k extends s.Component {
 				constructor(e) {
 					super(e), this.viewabilityStats = y(), this.videoStats = f(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
 						this.props.trackDisplay && this.handleThresholds(e, l.q), this.props.trackVideo && this.handleThresholds(e, l.o, !0), this.checkViewabilityByType(e)
@@ -403,7 +403,16 @@
 					})
 				}
 				componentWillUnmount() {
-					this.visibilityChangeSubscriptionId && c.a.unsubscribe(this.visibilityChangeSubscriptionId)
+					const {
+						post: e,
+						trackDisplay: t,
+						trackVideo: i
+					} = this.props;
+					this.visibilityChangeSubscriptionId && c.a.unsubscribe(this.visibilityChangeSubscriptionId), t && (u.d(e.id, l.q, !1), this.viewabilityStats.forEach(e => {
+						j(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
+					})), i && (u.d(e.id, l.o, !0), this.videoStats.forEach(e => {
+						j(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
+					})), this.outOfViewStats = [], this.inViewStats = []
 				}
 				componentDidUpdate() {
 					this.props.trackVideo && (this.state.currentContinuousViewingStartedAt === this.props.continuousViewingStartedAt ? (this.handleThresholds(this.state.event, l.o, !0), this.videoStats.forEach(e => {
@@ -494,7 +503,7 @@
 					}, this.props.children)
 				}
 			}
-			t.a = O(M)
+			t.a = O(k)
 		},
 		"./src/reddit/components/BlankPost/index.tsx": function(e, t, i) {
 			"use strict";
@@ -539,4 +548,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.27ad2572dc268438ea56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.11579cb0444ff724efa7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.97a77649d03347a42abe.js
-// Retrieved at 9/24/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.34bcbb1e2ee08d9b35cd.js
+// Retrieved at 9/24/2020, 5:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -12114,7 +12114,7 @@
 				}, Ie = Object(u.b)(Ee), ve = (e, t, s) => async (n, r) => {
 					const a = Object(E.b)(r(), e.id),
 						i = Object(g.a)(e.id, a, t);
-					Ee[t] && n(Ie(t, {
+					Ee[t] && n(Ie(String(t), {
 						postId: e.id,
 						vendorMetadata: i,
 						eventType: s
@@ -25371,7 +25371,7 @@
 					P && P[0] && (R = P[0].getBoundingClientRect());
 					const k = D.getBoundingClientRect(),
 						x = (d = Math.floor(k.width)) * (u = Math.floor(k.height)),
-						N = x > 242499 && w >= 1e3 || C >= 1e3 ? 1 : 0,
+						N = x > 242499 && w >= 1e3 || C >= 1e3 || s === a.a.GroupMViewable ? 1 : 0,
 						L = x > 242499 && T >= 1e3 || C >= 1e3 ? 1 : 0,
 						U = Math.max(p[100].maxContinuousTime, j[100]) > 1,
 						M = p.HALF_DURATION_80_IN_VIEW_AUDIBLE,
@@ -25387,13 +25387,13 @@
 							d: S,
 							e: w,
 							f: C,
-							g: N || v >= 1e3 ? 1 : 0,
-							i: t.timeImpressionViewed ? t.timeImpressionViewed : 0,
+							g: N ? 1 : 0,
+							i: s === a.a.Impression ? l : t.timeImpressionViewed || 0,
 							o: A ? 1 : 0,
 							q: L ? 1 : 0,
 							r: t.eventGlobalCount ? t.eventGlobalCount : 0
 						};
-					return f.isVideo && (F.va = f.isVideo ? 1 : 0, F.vh = R ? Math.floor(R.height) : 0, F.vw = R ? Math.floor(R.width) : 0, F.ve = f.videoVolume || 0, F.vc = f.videoDuration || 0, F.vd = Math.floor(f.cumulativeViewedTime) || 0, F.vq = f.wasFullScreen || 0, F.vg = p[1].timeEntered ? 1 : 0, F.vb = p[50].totalTime + j[50], F.vs = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoStarted, f.videoStarted), F.vt = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched25, f.watched25), F.vu = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched50, f.watched50), F.vv = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched75, f.watched75), F.vx = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched100, f.watched100), F.vo = c("vo", s, a.a.VideoWatched50, y.inView100, f.watched50State) ? 1 : 0, F.vr = c("vr", s, a.a.VideoWatched50, y.inView80 && y.audible, f.watched50State) || M.totalTime + j.HALF_DURATION_80_IN_VIEW_AUDIBLE >= 15e3 ? 1 : 0, F.vj = c("vj", s, a.a.VideoWatched50, y.inView100 && y.audible, f.watched50State) ? 1 : 0, F.vl = c("vl", s, a.a.VideoWatched100, y.inView100, f.watched100State) ? 1 : 0, F.vk = c("vk", s, a.a.VideoWatched100, y.audible, f.watched100State) ? 1 : 0, F.vp = c("vp", s, a.a.VideoWatched100, y.inView100 && y.audible, f.watched100State) ? 1 : 0, F.vm = c("vm", s, a.a.VideoWatched100, y.inView50 && y.audible, f.watched100State) ? 1 : 0, F.vn = c("vn", s, a.a.VideoWatched100, y.inView50 && y.muted, f.watched100State) ? 1 : 0, F.vy = p.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + j.FULL_IN_VIEW_AUDIBLE_TIME, F.vz = p[100].totalTime + j[100], F.xa = U ? 1 : 0, F.xb = Math.max(p[50].maxContinuousTime, j[50])), F
+					return f.isVideo && (F.va = f.isVideo ? 1 : 0, F.vh = R ? Math.floor(R.height) : 0, F.vw = R ? Math.floor(R.width) : 0, F.ve = f.videoVolume || 0, F.vc = Math.floor(f.videoDuration || 0), F.vd = Math.floor(f.cumulativeViewedTime) || 0, F.vq = f.wasFullScreen || 0, F.vg = p[1].timeEntered ? 1 : 0, F.vb = p[50].totalTime + j[50], F.vs = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoStarted, f.videoStarted), F.vt = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched25, f.watched25), F.vu = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched50, f.watched50), F.vv = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched75, f.watched75), F.vx = o(f.videoVolume, p[1].timeEntered, s === a.a.VideoWatched100, f.watched100), F.vo = c("vo", s, a.a.VideoWatched50, y.inView100, f.watched50State) ? 1 : 0, F.vr = c("vr", s, a.a.VideoWatched50, y.inView80 && y.audible, f.watched50State) || M.totalTime + j.HALF_DURATION_80_IN_VIEW_AUDIBLE >= 15e3 ? 1 : 0, F.vj = c("vj", s, a.a.VideoWatched50, y.inView100 && y.audible, f.watched50State) ? 1 : 0, F.vl = c("vl", s, a.a.VideoWatched100, y.inView100, f.watched100State) ? 1 : 0, F.vk = c("vk", s, a.a.VideoWatched100, y.audible, f.watched100State) ? 1 : 0, F.vp = c("vp", s, a.a.VideoWatched100, y.inView100 && y.audible, f.watched100State) ? 1 : 0, F.vm = c("vm", s, a.a.VideoWatched100, y.inView50 && y.audible, f.watched100State) ? 1 : 0, F.vn = c("vn", s, a.a.VideoWatched100, y.inView50 && y.muted, f.watched100State) ? 1 : 0, F.vy = p.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + j.FULL_IN_VIEW_AUDIBLE_TIME, F.vz = p[100].totalTime + j[100], F.xa = U ? 1 : 0, F.xb = Math.max(p[50].maxContinuousTime, j[50])), F
 				}
 		},
 		"./src/reddit/helpers/governanceErrorText/index.ts": function(e, t, s) {
@@ -32485,7 +32485,7 @@
 			const h = {};
 
 			function y(e, t, s, n) {
-				const r = e[t] || {};
+				const r = e[t];
 				return Object.assign(Object.assign({}, e), {
 					[t]: Object.assign(Object.assign({}, r), {
 						[n]: s
@@ -32495,6 +32495,7 @@
 			var E = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : h,
 						t = arguments.length > 1 ? arguments[1] : void 0;
+					if (!t.payload) return e;
 					switch (t.type) {
 						case j.c:
 							return y(e, t.payload.postId, t.payload.vendorMetadata, "adImpression");
@@ -56038,4 +56039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.97a77649d03347a42abe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.34bcbb1e2ee08d9b35cd.js.map
