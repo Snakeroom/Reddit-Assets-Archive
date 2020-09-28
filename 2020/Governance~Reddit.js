@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.87e6fb5b1d4b39ef4489.js
-// Retrieved at 9/28/2020, 7:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.88f8ed870e07f1b68ace.js
+// Retrieved at 9/28/2020, 7:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -15409,7 +15409,7 @@
 						error: d.error,
 						utcTimeStamp: l
 					}))
-				}, E = e => async (t, s) => Object(d.d)(s()) ? t(v(e)) : t(I()), I = () => async (e, t, s) => {
+				}, E = (e, t) => async (s, n) => Object(d.d)(n()) ? s(v(e, t)) : s(I()), I = () => async (e, t, s) => {
 					let {
 						gqlContext: n
 					} = s;
@@ -15428,25 +15428,25 @@
 						error: a.error,
 						utcTimeStamp: i
 					}))
-				}, v = e => async (t, s, n) => {
+				}, v = (e, t) => async (s, n, r) => {
 					let {
-						gqlContext: r
-					} = n;
-					const a = s();
-					if (Object(u.f)(a)) return;
-					t(g());
-					const i = await Object(c.f)(r(), e),
-						o = Date.now();
-					if (i.ok && i.body && i.body.data) {
-						const s = i.body.data;
-						t(f({
+						gqlContext: a
+					} = r;
+					const i = n();
+					if (Object(u.f)(i)) return;
+					s(g());
+					const o = await Object(c.f)(a(), e, t),
+						d = Date.now();
+					if (o.ok && o.body && o.body.data) {
+						const t = o.body.data;
+						s(f({
 							listingName: e,
-							models: s,
-							utcTimeStamp: o
+							models: t,
+							utcTimeStamp: d
 						}))
-					} else t(T({
-						error: i.error,
-						utcTimeStamp: o
+					} else s(T({
+						error: o.error,
+						utcTimeStamp: d
 					}))
 				}, S = e => async t => {
 					t(m(e))
@@ -24236,114 +24236,120 @@
 		"./src/reddit/endpoints/publicAccessNetwork/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return g
-			})), s.d(t, "c", (function() {
 				return f
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "c", (function() {
 				return m
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "e", (function() {
 				return j
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "g", (function() {
 				return _
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "f", (function() {
 				return h
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "d", (function() {
 				return y
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "h", (function() {
 				return E
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "i", (function() {
 				return I
+			})), s.d(t, "j", (function() {
+				return v
 			})), s.d(t, "k", (function() {
-				return C
-			})), s.d(t, "a", (function() {
 				return A
+			})), s.d(t, "a", (function() {
+				return D
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/lodash/omit.js"),
 				a = s.n(r),
 				i = s("./src/config.ts"),
-				c = s("./src/lib/constants/index.ts"),
-				o = s("./src/lib/constants/headers.ts"),
-				d = s("./src/lib/makeRequest/index.ts"),
-				u = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				l = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
-				b = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				p = s("./src/reddit/models/PostCreationForm/index.ts"),
-				O = s("./src/reddit/models/Vote/index.ts");
-			const g = async e => Object(d.b)({
+				c = s("./src/lib/addQueryParams/index.ts"),
+				o = s("./src/lib/constants/index.ts"),
+				d = s("./src/lib/constants/headers.ts"),
+				u = s("./src/lib/makeRequest/index.ts"),
+				l = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				b = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
+				p = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
+				O = s("./src/reddit/models/PostCreationForm/index.ts"),
+				g = s("./src/reddit/models/Vote/index.ts");
+			const f = async e => Object(u.b)({
 				endpoint: "".concat(i.a.streamingApiUrl, "/rpan_config_v1"),
-				method: c.db.GET,
-				headers: a()(e.headers(), [o.c, o.b]),
+				method: o.db.GET,
+				headers: a()(e.headers(), [d.c, d.b]),
 				timeoutMs: void 0
-			}).then(T), f = async (e, t) => {
+			}).then(w), m = async (e, t) => {
 				let s;
-				return s = t === u.R ? "/config" : "/".concat(t, "/config"), Object(d.b)({
+				return s = t === l.R ? "/config" : "/".concat(t, "/config"), Object(u.b)({
 					endpoint: "".concat(i.a.streamingApiUrl).concat(s),
-					method: c.db.GET,
-					headers: a()(e.headers(), [o.c, o.b]),
+					method: o.db.GET,
+					headers: a()(e.headers(), [d.c, d.b]),
 					timeoutMs: void 0
-				}).then(T)
-			}, m = async (e, t) => Object(d.b)({
+				}).then(w)
+			}, j = async (e, t) => Object(u.b)({
 				endpoint: "".concat(i.a.streamingApiUrl, "/videos/").concat(t),
-				method: c.db.GET,
-				headers: a()(e.headers(), [o.c, o.b])
-			}).then(T), j = async e => Object(d.b)({
+				method: o.db.GET,
+				headers: a()(e.headers(), [d.c, d.b])
+			}).then(w), _ = async e => Object(u.b)({
 				endpoint: "".concat(i.a.streamingApiUrl, "/videos"),
-				method: c.db.GET,
-				headers: a()(e.headers(), [o.c, o.b])
-			}).then(T), _ = async (e, t) => {
-				let s;
-				return s = t === u.R ? "/broadcasts" : "/".concat(t, "/broadcasts"), Object(d.b)({
-					endpoint: "".concat(i.a.streamingApiUrl).concat(s),
-					method: c.db.GET,
-					headers: a()(e.headers(), [o.c, o.b])
-				}).then(T)
-			}, h = async e => Object(d.b)({
+				method: o.db.GET,
+				headers: a()(e.headers(), [d.c, d.b])
+			}).then(w), h = async (e, t, s) => {
+				let n;
+				n = t === l.R ? "/broadcasts" : "/".concat(t, "/broadcasts");
+				const r = Object(c.a)(n, {
+					cursor: null == s ? void 0 : s.cursor,
+					page_size: null == s ? void 0 : s.pageSize
+				});
+				return Object(u.b)({
+					endpoint: "".concat(i.a.streamingApiUrl).concat(r),
+					method: o.db.GET,
+					headers: a()(e.headers(), [d.c, d.b])
+				}).then(w)
+			}, y = async e => Object(u.b)({
 				endpoint: "".concat(i.a.streamingApiUrl, "/recommended_viewer_subreddits"),
-				method: c.db.GET,
-				headers: a()(e.headers(), [o.c, o.b])
-			}).then(T), y = async (e, t, s) => Object(d.b)({
-				endpoint: "".concat(i.a.streamingApiUrl, "/videos/").concat(t, "/vote/").concat(w(s)),
-				method: c.db.POST,
-				headers: a()(e.headers, [o.c, o.b])
-			}).then(T), E = async (e, t) => Object(d.b)({
+				method: o.db.GET,
+				headers: a()(e.headers(), [d.c, d.b])
+			}).then(w), E = async (e, t, s) => Object(u.b)({
+				endpoint: "".concat(i.a.streamingApiUrl, "/videos/").concat(t, "/vote/").concat(C(s)),
+				method: o.db.POST,
+				headers: a()(e.headers, [d.c, d.b])
+			}).then(w), I = async (e, t) => Object(u.b)({
 				endpoint: "".concat(i.a.streamingApiUrl, "/videos/").concat(t, "/heartbeat"),
-				method: c.db.POST,
-				headers: a()(e.headers(), [o.c, o.b])
-			}).then(T), I = async (e, t, s, n) => {
+				method: o.db.POST,
+				headers: a()(e.headers(), [d.c, d.b])
+			}).then(w), v = async (e, t, s, n) => {
 				const r = s.rteState;
 				if (!r) return Promise.reject(new Error("Editor state is undefined"));
-				const a = l.a.getRawText(r);
-				return a ? v(e, t, a).then(e => e.ok && e.body && e.body.data ? Object.assign(Object.assign({}, e), {
+				const a = b.a.getRawText(r);
+				return a ? S(e, t, a).then(e => e.ok && e.body && e.body.data ? Object.assign(Object.assign({}, e), {
 					body: {
 						parentId: t,
-						comment: Object.assign(Object.assign({}, Object(b.a)(e.body.data.r2_comment, n)), {
-							media: S(r)
+						comment: Object.assign(Object.assign({}, Object(p.a)(e.body.data.r2_comment, n)), {
+							media: T(r)
 						}),
 						automuteLevel: e.body.data.auto_mute_status.level
 					},
 					error: void 0
 				}) : e) : Promise.reject(new Error("Cannot send empty message"))
-			}, v = async (e, t, s) => Object(d.b)({
+			}, S = async (e, t, s) => Object(u.b)({
 				endpoint: "".concat(i.a.streamingApiUrl, "/broadcasts/").concat(t, "/comment_v2"),
-				method: c.db.POST,
-				headers: a()(e.headers, [o.c, o.b]),
+				method: o.db.POST,
+				headers: a()(e.headers, [d.c, d.b]),
 				data: {
 					text: s
 				},
 				type: "json"
-			}).then(T), S = e => ({
+			}).then(w), T = e => ({
 				type: "rtjson",
 				richtextContent: {
-					document: l.a.toRichTextJSON(e).document
+					document: b.a.toRichTextJSON(e).document
 				},
-				rteMode: p.h.RICH_TEXT
-			}), T = e => {
+				rteMode: O.h.RICH_TEXT
+			}), w = e => {
 				if (e.ok) return Object.assign(Object.assign({}, e), {
 					error: void 0
 				}); {
 					const t = {
-						type: 404 === e.status ? c.E.NOT_FOUND_ERROR : c.E.SERVER_ERROR
+						type: 404 === e.status ? o.E.NOT_FOUND_ERROR : o.E.SERVER_ERROR
 					};
 					return 429 === e.status && (t.fields = [{
 						field: "",
@@ -24354,21 +24360,21 @@
 						error: t
 					})
 				}
-			}, w = e => e === O.a.upvoted ? "up" : e === O.a.downvoted ? "down" : "unset", C = async (e, t, s) => Object(d.b)({
+			}, C = e => e === g.a.upvoted ? "up" : e === g.a.downvoted ? "down" : "unset", A = async (e, t, s) => Object(u.b)({
 				endpoint: "".concat(i.a.streamingApiUrl, "/broadcasts/").concat(t),
-				method: c.db.PUT,
-				headers: a()(e.headers, [o.c, o.b]),
+				method: o.db.PUT,
+				headers: a()(e.headers, [d.c, d.b]),
 				data: {
 					data: {
 						chat_disabled: s
 					}
 				},
 				type: "json"
-			}).then(T), A = async (e, t) => Object(d.b)({
+			}).then(w), D = async (e, t) => Object(u.b)({
 				endpoint: "".concat(i.a.streamingApiUrl, "/broadcasts/").concat(t, "/auto_mute_status"),
-				method: c.db.GET,
-				headers: a()(e.headers, [o.c, o.b])
-			}).then(T)
+				method: o.db.GET,
+				headers: a()(e.headers, [d.c, d.b])
+			}).then(w)
 		},
 		"./src/reddit/endpoints/subreddit/about.ts": function(e, t, s) {
 			"use strict";
@@ -56022,4 +56028,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.87e6fb5b1d4b39ef4489.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.88f8ed870e07f1b68ace.js.map
