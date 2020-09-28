@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.24647a862b76901804dc.js
-// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.34af9dcecd61d68df216.js
+// Retrieved at 9/28/2020, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -12687,7 +12687,7 @@
 					}
 				}),
 				d = Object.keys(o.L).map(e => o.L[e]).join("|"),
-				l = "/message/:pageName(".concat(d, ")/:rest(.+)?"),
+				l = ["/message/:pageName(".concat(d, ")"), "/message/messages/:messageId"],
 				u = {
 					action: i.A,
 					chunk: o.p.INBOX_PAGES,
@@ -13465,7 +13465,7 @@
 			"use strict";
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				a = s("./src/lib/constants/index.ts");
-			const r = "/report/:rest(.+)?",
+			const r = "/report",
 				o = Object(n.a)({
 					resolved: {},
 					chunkName: () => "ReportPage",
@@ -14215,4 +14215,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.24647a862b76901804dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.34af9dcecd61d68df216.js.map
