@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b554fb03dcbb17e71cf6.js
-// Retrieved at 9/28/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ce647176505d6b29e359.js
+// Retrieved at 9/28/2020, 7:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -705,7 +705,7 @@
 							hasBottomCompactPostStyles: n,
 							showPinnnedHeader: r
 						}
-					})(e), Me = !!te && !Object(q.zc)(te), Be = (!f || Me) && !me.isSponsored, Re = Object(w.s)(me, P), {
+					})(e), Me = !!te && !Object(q.xc)(te), Be = (!f || Me) && !me.isSponsored, Re = Object(w.s)(me, P), {
 						source: Ae
 					} = Re, Fe = r.a.createElement(A.a, {
 						className: Object(k.a)(pe.a.container, n, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -1291,9 +1291,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.R
 				});
-				return !(!t || Object(o.zc)(t))
+				return !(!t || Object(o.xc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b554fb03dcbb17e71cf6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ce647176505d6b29e359.js.map
