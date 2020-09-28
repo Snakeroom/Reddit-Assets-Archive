@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.df8d73b7c4a087800b17.js
-// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.043f07966278f551e081.js
+// Retrieved at 9/28/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -201,8 +201,8 @@
 			var G = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				K = n.n(G);
 			const {
-				fbt: Y
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = 3, z = 30 * D.eb, $ = "SubredditAdoption";
+				fbt: q
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, z = 30 * D.eb, $ = "SubredditAdoption";
 			class ee extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -224,7 +224,7 @@
 					Object(B.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
-							subredditNames: A()(e, q)
+							subredditNames: A()(e, Y)
 						})
 					})
 				}
@@ -240,16 +240,16 @@
 						className: K.a.title
 					}, o.a.createElement(R.b, {
 						className: K.a.icon
-					}), Y._("International Subreddit Adoption Week", null, {
+					}), q._("International Subreddit Adoption Week", null, {
 						hk: "487Ffc"
 					})), o.a.createElement("div", {
 						className: K.a.description
-					}, Y._("{subreddits list} and more are looking for moderators!", [Y._param("subreddits list", o.a.createElement("strong", null, e.map(Q.b).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, q._("{subreddits list} and more are looking for moderators!", [q._param("subreddits list", o.a.createElement("strong", null, e.map(Q.b).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), o.a.createElement(p.h, {
 						className: K.a.button,
 						to: "/r/".concat($, "?utm_source=reddit&utm_medium=fp_banner&utm_campaign=subreddit_adoption_week")
-					}, Y._("Go Now", null, {
+					}, q._("Go Now", null, {
 						hk: "LCCmX"
 					}))) : null
 				}
@@ -387,8 +387,8 @@
 						trendingSubredditIds: b
 					} = this.props, p = i && d, g = [...Se.l];
 					p && g.unshift(Se.g);
-					const h = c === fe.tb.Rotate,
-						x = c === fe.tb.RotateAll;
+					const h = c === fe.qb.Rotate,
+						x = c === fe.qb.RotateAll;
 					let _ = Se.m;
 					return p && (h ? _ = this.state.random > .5 ? Se.g : Se.m : x && (_ = g[this.state.randomIndex])), o.a.createElement(P.a, {
 						className: t
@@ -1109,16 +1109,16 @@
 
 			function r(e) {
 				const t = i(e);
-				return t === s.tb.Rotate || t === s.tb.RotateAll
+				return t === s.qb.Rotate || t === s.qb.RotateAll
 			}
 
 			function i(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.sb
+					experimentName: s.pb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.df8d73b7c4a087800b17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.043f07966278f551e081.js.map
