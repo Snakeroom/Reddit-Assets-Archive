@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.cd5d583f91e67f960bb3.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.874de9b55036e181b5de.js
+// Retrieved at 9/30/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -656,16 +656,11 @@
 				nt = b.a.div("Spacer", et.a),
 				st = b.a.wrapped(Ze, "Experiment", et.a),
 				at = b.a.div("Footnote", et.a),
-				rt = Object(h.a)(e => e.user.experiments.models, e => e.experimentOverrides, (e, t) => Object.keys(Re.e).reduce((n, s) => {
-					const a = e.find(e => {
-							let {
-								name: t
-							} = e;
-							return t === s
-						}),
-						r = a ? a.variant : void 0,
-						o = t[s];
-					return n[s] = void 0 !== o ? o : r, n
+				rt = Object(h.a)(e => e.user.experiments.byName, e => e.experimentOverrides, (e, t) => Object.keys(Re.e).reduce((n, s) => {
+					var a;
+					const r = e[s.toLowerCase()],
+						o = null == r ? void 0 : r.variant;
+					return n[s] = null !== (a = t[s]) && void 0 !== a ? a : o, n
 				}, {})),
 				ot = Object(h.c)({
 					experimentsVariants: rt
@@ -1469,4 +1464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.cd5d583f91e67f960bb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.874de9b55036e181b5de.js.map

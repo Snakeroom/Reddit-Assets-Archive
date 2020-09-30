@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8879f422fd62759c70a0.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f9eda078505eb9d6dcf7.js
+// Retrieved at 9/30/2020, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1616,11 +1616,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("113763"),
+				buildNumber: r("113775"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1601503266"),
+				})("1601504287"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3388,9 +3388,10 @@
 					message: n.type,
 					category: "redux-action"
 				});
-				const r = i(n),
-					s = t.getState();
-				return A.c.setExtra("pageInfo", JSON.parse(Object(U.a)(s.platform))), A.c.setUser(JSON.parse(Object(U.a)(s.user, V))), !e && r instanceof Promise && r.catch(q), r
+				const r = t.getState(),
+					s = i(n),
+					o = t.getState();
+				return A.c.setExtra("pageInfo", JSON.parse(Object(U.a)(o.platform))), r.user !== o.user && A.c.setUser(JSON.parse(Object(U.a)(o.user, V))), !e && s instanceof Promise && s.catch(q), s
 			};
 			const H = !1;
 
@@ -3423,14 +3424,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("0894408-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("6d29a40-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0894408-production",
+						release: "6d29a40-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3792,7 +3793,7 @@
 			"use strict";
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/constants/cookie.ts");
-			const r = new Set(["password", "password2", "passwd", "passwd2", "pass", "pass2", "pw", "pw2", "accessToken", "refreshToken", "set-cookie", "cookie", "x-reddit-session", "redditSessionCookie", ...n.a, "authorization"].map(e => e.toLowerCase()));
+			const r = new Set(["password", "password2", "passwd", "passwd2", "pass", "pass2", "pw", "pw2", "accessToken", "refreshToken", "set-cookie", "cookie", "x-reddit-session", "redditSessionCookie", ...n.a, "authorization", "byName"].map(e => e.toLowerCase()));
 			t.a = function(e, t) {
 				try {
 					return JSON.stringify(e, (e, i) => r.has(e.toLowerCase()) ? "<REDACTED />" : t && t.has(e.toLowerCase()) ? "<REDACTED />" : i)
@@ -3860,7 +3861,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "0894408-production",
+							releaseClient: "6d29a40-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -13134,41 +13135,44 @@
 		"./src/reddit/selectors/experiments/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return d
+				return o
 			})), i.d(t, "b", (function() {
-				return a
+				return l
 			})), i.d(t, "d", (function() {
-				return u
+				return a
 			})), i.d(t, "a", (function() {
-				return c
+				return u
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/env/index.ts"),
-				r = i("./node_modules/reselect/es/index.js"),
-				s = i("./src/reddit/constants/experiments.ts"),
-				o = i("./src/reddit/selectors/user.ts");
-			const d = Object(r.a)(e => e.page && e.user ? e.user.experiments.models.concat(e.page.experiments.models) : [], (e, t) => t.experimentName, (e, t) => e.find(e => {
-					let {
-						name: i
-					} = e;
-					return i.toLowerCase() === t.toLowerCase()
-				})),
-				l = (e, t) => Object(n.a)() || e && e.isEmployee || s.db.has(t.toLowerCase()),
-				a = (e, t) => {
+				r = i("./src/reddit/constants/experiments.ts"),
+				s = i("./src/reddit/selectors/user.ts");
+			const o = (e, t) => {
+					var i, n, r, s;
+					const o = null !== (n = null === (i = e.user) || void 0 === i ? void 0 : i.experiments.byName) && void 0 !== n ? n : {},
+						d = null !== (s = null === (r = e.page) || void 0 === r ? void 0 : r.experiments.byName) && void 0 !== s ? s : {},
+						l = t.experimentName.toLowerCase();
+					return o[l] || d[l]
+				},
+				d = (e, t) => Object(n.a)() || (null == e ? void 0 : e.isEmployee) || r.db.has(t.toLowerCase()),
+				l = (e, t) => {
 					let {
 						experimentName: i
 					} = t;
-					const n = Object(o.i)(e);
-					return l(n, i) && e.experimentOverrides ? e.experimentOverrides[i.toLowerCase()] : void 0
+					var n;
+					const r = Object(s.i)(e);
+					return d(r, i) ? null === (n = e.experimentOverrides) || void 0 === n ? void 0 : n[i.toLowerCase()] : void 0
 				},
-				u = e => e.page.experiments.canonicalUrl,
-				c = e => {
-					const t = Object(o.i)(e);
-					return e.user.experiments.models.concat(e.page.experiments.models, Object.keys(e.experimentOverrides).reduce((i, n) => (l(t, n) && i.push({
+				a = e => e.page.experiments.canonicalUrl,
+				u = e => {
+					const t = Object(s.i)(e),
+						i = Object.assign(Object.assign({}, e.user.experiments.byName), e.page.experiments.byName);
+					for (const n of Object.keys(e.experimentOverrides)) d(t, n) && (i[n] = {
 						id: 0,
 						name: n,
 						variant: e.experimentOverrides[n] || ""
-					}), i), []))
+					});
+					return i
 				}
 		},
 		"./src/reddit/selectors/frontpage.ts": function(e, t, i) {
@@ -22666,4 +22670,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8879f422fd62759c70a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f9eda078505eb9d6dcf7.js.map
