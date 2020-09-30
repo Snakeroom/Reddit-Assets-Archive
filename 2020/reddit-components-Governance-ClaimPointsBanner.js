@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.e49c297cef48798cab32.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.6f0b46103a1f4c6248ea.js
+// Retrieved at 9/30/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(A, i, e) {
@@ -83,8 +83,8 @@
 				b = e("./src/reddit/endpoints/economics/banners.ts"),
 				I = e("./src/reddit/helpers/trackers/communityPoints.ts"),
 				C = e("./src/reddit/icons/svgs/Close/index.tsx"),
-				u = e("./src/reddit/selectors/economics.ts"),
-				h = e("./src/reddit/selectors/gov.ts"),
+				h = e("./src/reddit/selectors/economics.ts"),
+				u = e("./src/reddit/selectors/gov.ts"),
 				S = e("./src/reddit/selectors/subreddit.ts"),
 				l = e("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				f = e("./src/reddit/components/Governance/ClaimPointsBanner/banner-image.json"),
@@ -98,11 +98,11 @@
 					super(...arguments), this.state = {
 						modalVisible: !1
 					}, this.imageRef = null, this.hasFiredViewEvent = !1, this.showModal = () => {
-						this.props.sendEvent(Object(I.e)()), this.setState({
+						this.props.sendEvent(Object(I.d)()), this.setState({
 							modalVisible: !0
 						})
 					}, this.dismissBanner = () => {
-						this.props.sendEvent(Object(I.d)()), this.props.onDismissBanner()
+						this.props.sendEvent(Object(I.c)()), this.props.onDismissBanner()
 					}
 				}
 				componentDidMount() {
@@ -132,7 +132,7 @@
 						tokenName: d
 					} = this.props;
 					if (!A || !s || e) return null;
-					this.hasFiredViewEvent || (this.props.sendEvent(Object(I.f)()), this.hasFiredViewEvent = !0);
+					this.hasFiredViewEvent || (this.props.sendEvent(Object(I.e)()), this.hasFiredViewEvent = !0);
 					const k = t && t.claimCta || {
 							title: "",
 							body: ""
@@ -176,13 +176,13 @@
 					let {
 						subredditId: e
 					} = i;
-					return !1 === Object(u.g)(A, e, b.a.ClaimPoints)
+					return !1 === Object(h.g)(A, e, b.a.ClaimPoints)
 				},
-				isClaimingPoints: u.j,
-				nextAvailablePointsClaim: u.l,
-				pointsCopy: u.n,
+				isClaimingPoints: h.j,
+				nextAvailablePointsClaim: h.l,
+				pointsCopy: h.n,
 				subreddit: S.S,
-				tokenName: h.q
+				tokenName: u.q
 			});
 			i.default = Object(p.c)(Object(r.b)(V, (A, i) => {
 				let {
@@ -375,24 +375,22 @@
 		},
 		"./src/reddit/helpers/trackers/communityPoints.ts": function(A, i, e) {
 			"use strict";
-			e.d(i, "f", (function() {
+			e.d(i, "e", (function() {
 				return n
-			})), e.d(i, "e", (function() {
-				return a
 			})), e.d(i, "d", (function() {
-				return r
-			})), e.d(i, "i", (function() {
-				return d
-			})), e.d(i, "g", (function() {
-				return o
-			})), e.d(i, "h", (function() {
-				return k
+				return a
 			})), e.d(i, "c", (function() {
+				return r
+			})), e.d(i, "h", (function() {
+				return d
+			})), e.d(i, "f", (function() {
+				return o
+			})), e.d(i, "g", (function() {
+				return k
+			})), e.d(i, "b", (function() {
 				return m
 			})), e.d(i, "a", (function() {
 				return c
-			})), e.d(i, "b", (function() {
-				return p
 			}));
 			var s = e("./src/reddit/selectors/telemetry.ts");
 			const t = A => i => Object.assign(Object.assign({}, Object(s.defaults)(i)), {
@@ -436,17 +434,10 @@
 				c = A => i => Object.assign(Object.assign({}, Object(s.defaults)(i)), {
 					source: "meta",
 					action: "click",
-					noun: "buy_membership_with_points",
-					subreddit: Object(s.subreddit)(i),
-					correlationId: A
-				}),
-				p = A => i => Object.assign(Object.assign({}, Object(s.defaults)(i)), {
-					source: "meta",
-					action: "click",
 					noun: "cancel_membership_with_points",
 					subreddit: Object(s.subredditById)(i, A)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.e49c297cef48798cab32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.6f0b46103a1f4c6248ea.js.map

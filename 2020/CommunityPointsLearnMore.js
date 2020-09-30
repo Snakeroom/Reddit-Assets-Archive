@@ -1,23 +1,46 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b217a9bfb104a60cc790.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.9b36843096bd6aba6604.js
+// Retrieved at 9/30/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
-		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
+		"./src/reddit/components/Governance/TransactionModals/Common/Bullet.m.less": function(e, t, a) {
+			e.exports = {
+				bullet: "_2UPSb1bt_AsmpAwyZ46B38",
+				circle: "_2_70m35EVFz3WnPe2CwYaG",
+				number: "_3LihX-GKXER0sZAd9F9_Id"
+			}
+		},
+		"./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return o
+				return l
 			}));
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
-				c = a("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.m.less"),
-				r = a.n(c);
-			const o = e => s.a.createElement("div", {
-				className: r.a.bullet
-			}, s.a.createElement("div", {
-				className: r.a.circle
-			}, e.index), e.children)
+				c = a("./src/reddit/constants/colors.ts"),
+				r = a("./src/reddit/helpers/styles/smartTextColor.ts"),
+				o = a("./src/reddit/components/Governance/TransactionModals/Common/Bullet.m.less"),
+				i = a.n(o);
+
+			function l(e) {
+				const {
+					index: t,
+					children: a,
+					color: n
+				} = e, o = n && Object(r.a)(n, void 0, c.a.white);
+				return s.a.createElement("div", {
+					className: i.a.bullet
+				}, s.a.createElement("div", {
+					className: i.a.circle,
+					style: {
+						backgroundColor: n,
+						color: o
+					}
+				}, s.a.createElement("span", {
+					className: i.a.number
+				}, t)), s.a.createElement("div", null, a))
+			}
 		},
-		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/QRCode.tsx": function(e, t, a) {
+		"./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx": function(e, t, a) {
 			"use strict";
 			var n = a("./node_modules/qrcode/lib/browser.js"),
 				s = a.n(n),
@@ -40,11 +63,11 @@
 				async updateDataURL() {
 					const e = await s.a.toDataURL(this.props.url, {
 						color: {
-							dark: this.props.color || Object(i.a)(this.props).button,
+							dark: Object(i.a)(this.props).titleText,
 							light: Object(i.a)(this.props).body
 						},
 						margin: 0,
-						width: 176
+						scale: this.props.scale || 3
 					});
 					this.setState({
 						dataURL: e
@@ -54,83 +77,31 @@
 					const {
 						dataURL: e
 					} = this.state;
-					return e ? r.a.createElement("img", {
-						src: e
-					}) : null
+					return e && r.a.createElement("img", {
+						src: e,
+						className: this.props.className
+					})
 				}
 			}
 			t.a = Object(o.a)(l)
 		},
-		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.m.less": function(e, t, a) {
+		"./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less": function(e, t, a) {
 			e.exports = {
-				container: "zf2hn2CERT9hR1pMinJ8F",
-				header: "_3Qbr92L8VyuinXjEu3tL3Z",
-				title: "_3bzQcWx2T0t87zOlgxrRKU",
-				closeButton: "_22lrdZNOZAr7T7zmwmjUvJ",
-				body: "_3Gcx8rw4-_lVDd-C1xmCEi",
-				leftSection: "_3YqVpshpU6XQk203i6QdDy",
-				sectionHeader: "_1ubUpPIvDdZW-u31PFTQzQ",
-				content: "_1vBcEJHUketYOZJIkZpJEH",
-				bullet: "_1NkUPpb7srAhbim5_nyFUH",
-				circle: "_3dmqOAtE4YgxGinHtv6QZs",
-				rightSection: "_2KqtJ5hLjiAZnv3xLL4_M6",
-				qrCode: "_14NzP1hK14fTKLhwIn2aDG",
-				amount: "yAJDmHckBS4VSNkr7oGi4"
+				container: "_3RwZXlqQ-Iin-F-rL6IYG4",
+				header: "_2jRdJa8cJJOIUqpk7tjmJM",
+				title: "c4tRBYxcJYSuTBRs4uJBu",
+				closeButton: "_23b4K8MIubjQq2ix5KI8QR",
+				body: "_1WFLRa1qVzmEB1vs-gujyU",
+				leftSection: "I4Uc5svBBVMAC3Gv3cumu",
+				sectionHeader: "_2zaE6P94B156zFeiUyAHGj",
+				content: "_1Yqz3rGaFmyEoxy_Wc_MrB",
+				rightSection: "_-4IOB0_BjX0SdDgbB8E5e"
 			}
-		},
-		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n),
-				c = a("./src/higherOrderComponents/asModal/index.tsx"),
-				r = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				o = a("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/QRCode.tsx"),
-				i = a("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.m.less"),
-				l = a.n(i);
-			const {
-				fbt: d
-			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			t.a = Object(c.a)((function(e) {
-				const {
-					amount: t,
-					content: a,
-					header: n,
-					onClose: c,
-					qrUrl: i,
-					title: d
-				} = e;
-				return s.a.createElement("div", {
-					className: l.a.container
-				}, s.a.createElement("header", {
-					className: l.a.header
-				}, s.a.createElement("div", {
-					className: l.a.title
-				}, d), s.a.createElement(r.a, {
-					className: l.a.closeButton,
-					onClick: c
-				})), s.a.createElement("div", {
-					className: l.a.body
-				}, s.a.createElement("section", {
-					className: l.a.leftSection
-				}, s.a.createElement("div", {
-					className: l.a.sectionHeader
-				}, n), s.a.createElement("div", {
-					className: l.a.content
-				}, a)), s.a.createElement("section", {
-					className: l.a.rightSection
-				}, s.a.createElement("div", {
-					className: l.a.qrCode
-				}, s.a.createElement(o.a, {
-					url: i
-				})), t && s.a.createElement("div", {
-					className: l.a.amount
-				}, t))))
-			}))
 		},
 		"./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return p
+				return _
 			}));
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
@@ -138,75 +109,92 @@
 				r = a("./node_modules/reselect/es/index.js"),
 				o = a("./src/higherOrderComponents/asModal/index.tsx"),
 				i = a("./src/lib/addQueryParams/index.ts"),
-				l = a("./src/reddit/selectors/user.ts"),
-				d = a("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/index.tsx"),
-				m = a("./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx");
+				l = a("./src/reddit/icons/svgs/Close/index.tsx"),
+				d = a("./src/reddit/selectors/user.ts"),
+				m = a("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
+				u = a("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
+				b = a("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less"),
+				p = a.n(b);
 			const {
-				fbt: u
+				fbt: x
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			const b = Object(r.c)({
+			const g = Object(r.c)({
 					userId: e => {
-						const t = Object(l.i)(e);
+						const t = Object(d.i)(e);
 						return t ? t.id : ""
 					}
 				}),
-				p = Object(c.b)(b)((function(e) {
+				_ = Object(c.b)(g)((function(e) {
 					const {
 						onClose: t,
 						userId: a
 					} = e;
-					return s.a.createElement(d.a, {
-						onClose: t,
-						title: u._("Create Your Vault on Your Smartphone", null, {
-							hk: "247Dqn"
-						}),
-						header: u._("Use the mobile app to create a Vault", null, {
-							hk: "4DKtAt"
-						}),
-						content: s.a.createElement(s.a.Fragment, null, s.a.createElement(m.a, {
-							index: "1"
-						}, u._("Get the official Reddit app for iOS or Android", null, {
-							hk: "420pUH"
-						})), s.a.createElement(m.a, {
-							index: "2"
-						}, u._("Log in to your Reddit account", null, {
-							hk: "3G7IZ2"
-						})), s.a.createElement(m.a, {
-							index: "3"
-						}, u._("Open your Camera, scan the QR code & follow the URL", null, {
-							hk: "FWSNM"
-						})), s.a.createElement(m.a, {
-							index: "4"
-						}, u._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
-							hk: "3C5vxO"
-						}))),
-						qrUrl: Object(i.a)("http://www.reddit.com/vault/", {
+					return s.a.createElement("div", {
+						className: p.a.container
+					}, s.a.createElement("header", {
+						className: p.a.header
+					}, s.a.createElement("div", {
+						className: p.a.title
+					}, x._("Create Your Vault on Your Smartphone", null, {
+						hk: "247Dqn"
+					})), s.a.createElement(l.a, {
+						className: p.a.closeButton,
+						onClick: t
+					})), s.a.createElement("div", {
+						className: p.a.body
+					}, s.a.createElement("section", {
+						className: p.a.leftSection
+					}, s.a.createElement("div", {
+						className: p.a.sectionHeader
+					}, x._("Use the mobile app to create a Vault", null, {
+						hk: "4DKtAt"
+					})), s.a.createElement("div", {
+						className: p.a.content
+					}, s.a.createElement(m.a, {
+						index: "1"
+					}, x._("Get the official Reddit app for iOS or Android", null, {
+						hk: "420pUH"
+					})), s.a.createElement(m.a, {
+						index: "2"
+					}, x._("Log in to your Reddit account", null, {
+						hk: "3G7IZ2"
+					})), s.a.createElement(m.a, {
+						index: "3"
+					}, x._("Open your Camera, scan the QR code & follow the URL", null, {
+						hk: "FWSNM"
+					})), s.a.createElement(m.a, {
+						index: "4"
+					}, x._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
+						hk: "3C5vxO"
+					})))), s.a.createElement("section", {
+						className: p.a.rightSection
+					}, s.a.createElement(u.a, {
+						url: Object(i.a)("http://www.reddit.com/vault/", {
 							u: a
-						})
-					})
+						}),
+						scale: 5
+					}))))
 				}));
-			t.b = Object(o.a)(p)
+			t.b = Object(o.a)(_)
 		},
 		"./src/reddit/helpers/trackers/communityPoints.ts": function(e, t, a) {
 			"use strict";
-			a.d(t, "f", (function() {
+			a.d(t, "e", (function() {
 				return c
-			})), a.d(t, "e", (function() {
-				return r
 			})), a.d(t, "d", (function() {
-				return o
-			})), a.d(t, "i", (function() {
-				return i
-			})), a.d(t, "g", (function() {
-				return l
-			})), a.d(t, "h", (function() {
-				return d
+				return r
 			})), a.d(t, "c", (function() {
+				return o
+			})), a.d(t, "h", (function() {
+				return i
+			})), a.d(t, "f", (function() {
+				return l
+			})), a.d(t, "g", (function() {
+				return d
+			})), a.d(t, "b", (function() {
 				return m
 			})), a.d(t, "a", (function() {
 				return u
-			})), a.d(t, "b", (function() {
-				return b
 			}));
 			var n = a("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => Object.assign(Object.assign({}, Object(n.defaults)(t)), {
@@ -248,13 +236,6 @@
 					noun: "learn_more_create_vault_button"
 				}),
 				u = e => t => Object.assign(Object.assign({}, Object(n.defaults)(t)), {
-					source: "meta",
-					action: "click",
-					noun: "buy_membership_with_points",
-					subreddit: Object(n.subreddit)(t),
-					correlationId: e
-				}),
-				b = e => t => Object.assign(Object.assign({}, Object(n.defaults)(t)), {
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
@@ -334,11 +315,11 @@
 				x = a("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Carousel/index.m.less"),
 				g = a.n(x);
 
-			function h(e) {
+			function _(e) {
 				let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
 				return "".concat(r.a.assetPath, "/img/communityPoints/learnMore/slide").concat(e).concat(t ? "@2x" : "", ".png")
 			}
-			var _ = function(e) {
+			var h = function(e) {
 					const [t, a] = Object(n.useState)(0), r = Object(c.d)(u.n), o = r && r.learnMore.pages || [], i = o.map(e => e.body).reduce((e, t) => t.length > e.length ? t : e, ""), l = t => {
 						a(t), t + 1 === o.length && e.onComplete()
 					};
@@ -347,8 +328,8 @@
 					}, s.a.createElement("div", {
 						className: g.a.imageContainer
 					}, o.map((e, a) => s.a.createElement("img", {
-						src: h(a),
-						srcSet: "".concat(h(a, !1), ", ").concat(h(a), " 2x"),
+						src: _(a),
+						srcSet: "".concat(_(a, !1), ", ").concat(_(a), " 2x"),
 						className: Object(b.a)(g.a.image, {
 							[g.a.before]: a < t,
 							[g.a.active]: a === t,
@@ -398,7 +379,7 @@
 				}, s.a.createElement("div", {
 					className: E.a.sectionTitle,
 					onClick: () => {
-						t || c(Object(d.h)(e.id)), a(!t)
+						t || c(Object(d.g)(e.id)), a(!t)
 					}
 				}, e.title, s.a.createElement("button", {
 					className: Object(b.a)(E.a.expando, {
@@ -412,18 +393,18 @@
 				}, e.children))
 			}
 
-			function O(e) {
+			function C(e) {
 				const t = "".concat(r.a.assetPath, "/img/communityPoints/faq/").concat(e.id);
 				return s.a.createElement("img", {
 					src: t + ".png",
 					srcSet: "".concat(t, ".png, ").concat(t, "@2x.png 2x")
 				})
 			}
-			var C = function() {
+			var O = function() {
 					const e = Object(c.d)(u.n),
 						t = Object(m.a)();
 					Object(n.useEffect)(() => {
-						t(Object(d.g)())
+						t(Object(d.f)())
 					}, [t]);
 					const a = e && e.faq || [];
 					return s.a.createElement("div", {
@@ -443,39 +424,39 @@
 					}) : "image" in e ? s.a.createElement("div", {
 						className: E.a.imageSection,
 						key: t
-					}, s.a.createElement(O, {
+					}, s.a.createElement(C, {
 						id: e.image
 					})) : null)))))
 				},
 				N = a("./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.m.less"),
-				M = a.n(N);
+				y = a.n(N);
 			const {
-				fbt: T
+				fbt: M
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = function() {
 				const [e, t] = Object(n.useState)(!1), [a, b] = Object(n.useState)(!1), p = Object(c.d)(o.e), x = Object(c.d)(u.n), g = Object(m.a)();
 				Object(n.useEffect)(() => {
-					g(Object(d.i)())
+					g(Object(d.h)())
 				}, [g]);
-				const h = x && x.learnMore.title;
+				const _ = x && x.learnMore.title;
 				return s.a.createElement("div", {
-					className: M.a.container
+					className: y.a.container
 				}, s.a.createElement("div", {
-					className: M.a.title
-				}, h), s.a.createElement(_, {
+					className: y.a.title
+				}, _), s.a.createElement(h, {
 					onComplete: () => t(!0)
 				}), e && s.a.createElement(s.a.Fragment, null, s.a.createElement(l.i, {
-					className: M.a.createVaultButton,
+					className: y.a.createVaultButton,
 					onClick: () => {
-						g(Object(d.c)()), p ? window.location.href = "".concat(r.a.redditUrl, "/vault/") : b(!0)
+						g(Object(d.b)()), p ? window.location.href = "".concat(r.a.redditUrl, "/vault/") : b(!0)
 					}
-				}, T._("Create My Vault", null, {
+				}, M._("Create My Vault", null, {
 					hk: "3ZzMgD"
-				})), s.a.createElement(C, null)), a && s.a.createElement(i.b, {
+				})), s.a.createElement(O, null)), a && s.a.createElement(i.b, {
 					onClose: () => b(!1)
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b217a9bfb104a60cc790.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.9b36843096bd6aba6604.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.5fa2e97a326cb5b54a6a.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.fe16ad49ae0f00b0b15d.js
+// Retrieved at 9/30/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, a) {
@@ -82,6 +82,89 @@
 				spacer: "Njz3Pv3fOjr4zvYsKtTg7"
 			}
 		},
+		"./src/reddit/components/Governance/TransactionModals/Common/Bullet.m.less": function(A, e, a) {
+			A.exports = {
+				bullet: "_2UPSb1bt_AsmpAwyZ46B38",
+				circle: "_2_70m35EVFz3WnPe2CwYaG",
+				number: "_3LihX-GKXER0sZAd9F9_Id"
+			}
+		},
+		"./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx": function(A, e, a) {
+			"use strict";
+			a.d(e, "a", (function() {
+				return c
+			}));
+			var t = a("./node_modules/react/index.js"),
+				i = a.n(t),
+				s = a("./src/reddit/constants/colors.ts"),
+				r = a("./src/reddit/helpers/styles/smartTextColor.ts"),
+				n = a("./src/reddit/components/Governance/TransactionModals/Common/Bullet.m.less"),
+				o = a.n(n);
+
+			function c(A) {
+				const {
+					index: e,
+					children: a,
+					color: t
+				} = A, n = t && Object(r.a)(t, void 0, s.a.white);
+				return i.a.createElement("div", {
+					className: o.a.bullet
+				}, i.a.createElement("div", {
+					className: o.a.circle,
+					style: {
+						backgroundColor: t,
+						color: n
+					}
+				}, i.a.createElement("span", {
+					className: o.a.number
+				}, e)), i.a.createElement("div", null, a))
+			}
+		},
+		"./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx": function(A, e, a) {
+			"use strict";
+			var t = a("./node_modules/qrcode/lib/browser.js"),
+				i = a.n(t),
+				s = a("./node_modules/react/index.js"),
+				r = a.n(s),
+				n = a("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				o = a("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			class c extends r.a.Component {
+				constructor() {
+					super(...arguments), this.state = {
+						dataURL: null
+					}
+				}
+				componentDidMount() {
+					this.updateDataURL()
+				}
+				componentDidUpdate(A) {
+					A.url !== this.props.url && this.updateDataURL()
+				}
+				async updateDataURL() {
+					const A = await i.a.toDataURL(this.props.url, {
+						color: {
+							dark: Object(o.a)(this.props).titleText,
+							light: Object(o.a)(this.props).body
+						},
+						margin: 0,
+						scale: this.props.scale || 3
+					});
+					this.setState({
+						dataURL: A
+					})
+				}
+				render() {
+					const {
+						dataURL: A
+					} = this.state;
+					return A && r.a.createElement("img", {
+						src: A,
+						className: this.props.className
+					})
+				}
+			}
+			e.a = Object(n.a)(c)
+		},
 		"./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/BackupRequired.m.less": function(A, e, a) {
 			A.exports = {
 				container: "zE13diIXKz_4eNH6s8qOJ",
@@ -98,13 +181,6 @@
 				closeButton: "B2h4gP-oFNLan1r0jZ-NH",
 				closeIcon: "_2H4iltSREE7rdryZncAcAO",
 				body: "bs4OM5MhvzyAteQRta0rJ"
-			}
-		},
-		"./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/Bullet.m.less": function(A, e, a) {
-			A.exports = {
-				bullet: "_2dAO1X9jJ1zYBXJ559RvSZ",
-				circle: "_2CxicKxx7enKMepWK4Y-_w",
-				number: "_2jLtdVRrWL6s6Z8oPe5U3W"
 			}
 		},
 		"./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/Loading.m.less": function(A, e, a) {
@@ -138,7 +214,7 @@
 		"./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx": function(A, e, a) {
 			"use strict";
 			a.d(e, "a", (function() {
-				return pA
+				return nA
 			}));
 			a("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var t = a("./node_modules/react/index.js"),
@@ -182,9 +258,9 @@
 				}, A.children))
 			}
 			var y = a("./src/reddit/controls/Button/index.tsx"),
-				f = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				b = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less"),
-				h = a.n(b);
+				b = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				f = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less"),
+				h = a.n(f);
 			const {
 				fbt: X
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
@@ -195,7 +271,7 @@
 					className: h.a.approvalBar
 				}, i.a.createElement("div", {
 					className: h.a.pointsBalance
-				}, i.a.createElement(f.a, {
+				}, i.a.createElement(b.a, {
 					amount: e,
 					className: h.a.amount,
 					subredditId: A.subredditId,
@@ -289,239 +365,189 @@
 					onVaultDecrypted: A => r(A)
 				}))
 			}
-			var H = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/Bullet.m.less"),
-				U = a.n(H);
-
-			function F(A) {
-				return i.a.createElement("div", {
-					className: U.a.bullet
-				}, i.a.createElement("div", {
-					className: U.a.circle
-				}, i.a.createElement("span", {
-					className: U.a.number
-				}, A.index)), i.a.createElement("div", null, A.children))
-			}
-			var O = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/BackupRequired.m.less"),
-				T = a.n(O);
+			var H = a("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
+				U = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/BackupRequired.m.less"),
+				F = a.n(U);
 			const {
-				fbt: j
+				fbt: O
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 
-			function J(A) {
+			function T(A) {
 				return i.a.createElement(C, {
 					title: B(),
 					onClose: A.onClose
 				}, i.a.createElement("div", {
-					className: T.a.container
+					className: F.a.container
 				}, i.a.createElement("h2", {
-					className: T.a.header
-				}, j._("Back up your Vault on Reddit", null, {
+					className: F.a.header
+				}, O._("Back up your Vault on Reddit", null, {
 					hk: "2maHCq"
 				})), i.a.createElement("div", {
-					className: T.a.description
-				}, j._("Oh snap! Your Vault is currently locked on your mobile device. In order to use it in your browser, you first need to back it up to Reddit’s servers.", null, {
+					className: F.a.description
+				}, O._("Oh snap! Your Vault is currently locked on your mobile device. In order to use it in your browser, you first need to back it up to Reddit’s servers.", null, {
 					hk: "19qB2s"
 				})), i.a.createElement("div", {
-					className: T.a.howToHeader
-				}, j._("How to backup your Reddit Vault", null, {
+					className: F.a.howToHeader
+				}, O._("How to backup your Reddit Vault", null, {
 					hk: "1FM9k3"
-				})), i.a.createElement(F, {
+				})), i.a.createElement(H.a, {
 					index: "1"
-				}, j._("Open Reddit Vault on your mobile device", null, {
+				}, O._("Open Reddit Vault on your mobile device", null, {
 					hk: "2Fco4j"
-				})), i.a.createElement(F, {
+				})), i.a.createElement(H.a, {
 					index: "2"
-				}, j._('Proceed to Vault Settings by tapping the three dots at the top, next to "Vault"', null, {
+				}, O._('Proceed to Vault Settings by tapping the three dots at the top, next to "Vault"', null, {
 					hk: "2z4X2"
-				})), i.a.createElement(F, {
+				})), i.a.createElement(H.a, {
 					index: "3"
-				}, j._("Tap Reddit Backup", null, {
+				}, O._("Tap Reddit Backup", null, {
 					hk: "2MqJIb"
-				})), i.a.createElement(F, {
+				})), i.a.createElement(H.a, {
 					index: "4"
-				}, j._("Follow the instructions there to complete the backup process", null, {
+				}, O._("Follow the instructions there to complete the backup process", null, {
 					hk: "t9jEl"
 				}))))
 			}
-			var S = a("./node_modules/lottie-web/build/player/lottie.js"),
-				G = a.n(S),
-				P = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/loading-animation.json"),
-				K = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/Loading.m.less"),
-				Y = a.n(K);
+			var j = a("./node_modules/lottie-web/build/player/lottie.js"),
+				J = a.n(j),
+				S = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/loading-animation.json"),
+				G = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/Loading.m.less"),
+				P = a.n(G);
 
-			function W(A) {
+			function K(A) {
 				return i.a.createElement(C, {
 					onClose: A.onClose
 				}, i.a.createElement("div", {
-					className: Y.a.container
+					className: P.a.container
 				}, i.a.createElement("div", {
-					className: Y.a.image,
+					className: P.a.image,
 					ref: A => {
-						A && !A.children.length && G.a.loadAnimation({
+						A && !A.children.length && J.a.loadAnimation({
 							container: A,
 							renderer: "svg",
 							loop: !0,
 							autoplay: !0,
-							animationData: P
+							animationData: S
 						})
 					}
 				})))
 			}
-			var Z = a("./src/lib/addQueryParams/index.ts"),
-				q = a("./src/reddit/selectors/user.ts"),
-				z = a("./node_modules/qrcode/lib/browser.js"),
-				_ = a.n(z),
-				$ = a("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				AA = a("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			class eA extends i.a.Component {
-				constructor() {
-					super(...arguments), this.state = {
-						dataURL: null
-					}
-				}
-				componentDidMount() {
-					this.updateDataURL()
-				}
-				componentDidUpdate(A) {
-					A.url !== this.props.url && this.updateDataURL()
-				}
-				async updateDataURL() {
-					const A = await _.a.toDataURL(this.props.url, {
-						color: {
-							dark: Object(AA.a)(this.props).titleText,
-							light: Object(AA.a)(this.props).body
-						},
-						margin: 0,
-						scale: 3
-					});
-					this.setState({
-						dataURL: A
-					})
-				}
-				render() {
-					const {
-						dataURL: A
-					} = this.state;
-					return A && i.a.createElement("img", {
-						src: A,
-						className: this.props.className
-					})
-				}
-			}
-			var aA = Object($.a)(eA),
-				tA = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/PushNotificationSent.m.less"),
-				iA = a.n(tA);
+			var Y = a("./src/lib/addQueryParams/index.ts"),
+				W = a("./src/reddit/selectors/user.ts"),
+				Z = a("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
+				q = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/PushNotificationSent.m.less"),
+				z = a.n(q);
 			const {
-				fbt: sA
+				fbt: _
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 
-			function rA(A) {
-				const [e, a] = Object(t.useState)(!1), r = Object(s.d)(q.i), n = Object(Z.a)("http://www.reddit.com/vault/transaction?version=1", {
+			function $(A) {
+				const [e, a] = Object(t.useState)(!1), r = Object(s.d)(W.i), n = Object(Y.a)("http://www.reddit.com/vault/transaction?version=1", {
 					u: r ? r.id : ""
 				});
 				return i.a.createElement(C, {
-					className: iA.a.modal,
+					className: z.a.modal,
 					title: B(),
 					onClose: A.onClose
 				}, i.a.createElement("div", {
-					className: iA.a.container
+					className: z.a.container
 				}, i.a.createElement("h2", {
-					className: iA.a.header
-				}, sA._("Continue with your Reddit Vault on mobile", null, {
+					className: z.a.header
+				}, _._("Continue with your Reddit Vault on mobile", null, {
 					hk: "AnMN0"
-				})), i.a.createElement(F, {
+				})), i.a.createElement(H.a, {
 					index: "1"
-				}, sA._("Tap on the notification we just sent you", null, {
+				}, _._("Tap on the notification we just sent you", null, {
 					hk: "4prB3n"
 				}), i.a.createElement("a", {
-					className: iA.a.didntReceiveLink,
+					className: z.a.didntReceiveLink,
 					href: "#",
 					onClick: A => {
 						a(!e), A.preventDefault()
 					}
-				}, sA._("Didn’t receive a push notification or weren’t able to complete it?", null, {
+				}, _._("Didn’t receive a push notification or weren’t able to complete it?", null, {
 					hk: "1jYZjk"
 				})), e && i.a.createElement("div", {
-					className: iA.a.expandedSection
+					className: z.a.expandedSection
 				}, i.a.createElement("div", {
-					className: iA.a.approveManually
+					className: z.a.approveManually
 				}, i.a.createElement("p", {
-					className: iA.a.approveInstructions
-				}, sA._("You can approve this in your browser with your Vault Password instead.", null, {
+					className: z.a.approveInstructions
+				}, _._("You can approve this in your browser with your Vault Password instead.", null, {
 					hk: "2IOdOY"
 				})), i.a.createElement(y.l, {
 					onClick: A.onNotificationNotReceived
-				}, sA._("Approve with Vault Password", null, {
+				}, _._("Approve with Vault Password", null, {
 					hk: "1lwlYz"
 				}))), i.a.createElement("div", {
-					className: iA.a.approveWithQR
-				}, "Or scan this", i.a.createElement(aA, {
+					className: z.a.approveWithQR
+				}, "Or scan this", i.a.createElement(Z.a, {
 					url: n,
-					className: iA.a.qrCode
-				})))), i.a.createElement(F, {
+					className: z.a.qrCode
+				})))), i.a.createElement(H.a, {
 					index: "2"
-				}, sA._("Reddit Vault will open and ask for your approval", null, {
+				}, _._("Reddit Vault will open and ask for your approval", null, {
 					hk: "1whAiD"
-				})), i.a.createElement(F, {
+				})), i.a.createElement(H.a, {
 					index: "3"
-				}, sA._("Verify and approve the transaction", null, {
+				}, _._("Verify and approve the transaction", null, {
 					hk: "HDXIJ"
 				}))))
 			}
-			var nA = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/snag-animation.json"),
-				oA = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/SnagErrorModal.m.less"),
-				cA = a.n(oA);
+			var AA = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/snag-animation.json"),
+				eA = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/SnagErrorModal.m.less"),
+				aA = a.n(eA);
 			const {
-				fbt: dA
+				fbt: tA
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 
-			function lA(A) {
+			function iA(A) {
 				return i.a.createElement(C, {
 					title: B(),
 					onClose: A.onClose
 				}, i.a.createElement("div", {
-					className: cA.a.container
+					className: aA.a.container
 				}, i.a.createElement("div", {
-					className: cA.a.snagImage,
+					className: aA.a.snagImage,
 					ref: A => {
-						A && !A.children.length && G.a.loadAnimation({
+						A && !A.children.length && J.a.loadAnimation({
 							container: A,
 							renderer: "svg",
 							loop: !0,
 							autoplay: !0,
-							animationData: nA
+							animationData: AA
 						})
 					}
 				}), i.a.createElement("h2", {
-					className: cA.a.header
-				}, dA._("Uh oh, we hit a snag.", null, {
+					className: aA.a.header
+				}, tA._("Uh oh, we hit a snag.", null, {
 					hk: "3ZShEY"
 				})), i.a.createElement("div", {
-					className: cA.a.description
-				}, dA._("Open Reddit Vault on your mobile device", null, {
+					className: aA.a.description
+				}, tA._("Open Reddit Vault on your mobile device", null, {
 					hk: "2DPLLp"
 				}))))
 			}
-			var uA, IA;
+			var sA, rA;
 
-			function pA(A) {
+			function nA(A) {
 				const {
 					onClose: e,
 					subredditId: a,
 					transaction: m,
 					transactionIntent: E
-				} = A, k = Object(t.useRef)(!0), [g, x] = Object(I.a)(IA.LOADING_BACKUP, k), [B, C] = Object(I.a)(uA.NOT_LOADED, k), [y, f] = Object(I.a)(null, k), [b, h] = Object(I.a)("", k), X = function() {
+				} = A, k = Object(t.useRef)(!0), [g, x] = Object(I.a)(rA.LOADING_BACKUP, k), [B, C] = Object(I.a)(sA.NOT_LOADED, k), [y, b] = Object(I.a)(null, k), [f, h] = Object(I.a)("", k), X = function() {
 					const {
 						apiContext: A
 					} = Object(t.useContext)(u.a);
 					return A
 				}(), w = Object(s.d)(e => Object(p.t)(e, A)).toLowerCase(), R = Object(s.d)(e => Object(p.u)(e, A));
 				Object(t.useEffect)(() => (A.transactionIsBlockedOnIOS ? N().then(A => {
-					A && Object(d.b)(A) ? x(IA.REQUEST_VAULT_PASSWORD) : v()
+					A && Object(d.b)(A) ? x(rA.REQUEST_VAULT_PASSWORD) : v()
 				}) : v(), () => {
 					k.current = !1
 				}), []);
-				const N = async () => B !== uA.NOT_LOADED ? Promise.resolve(y) : (C(uA.LOADING), async function(A, e) {
+				const N = async () => B !== sA.NOT_LOADED ? Promise.resolve(y) : (C(sA.LOADING), async function(A, e) {
 					const a = await Object(c.a)(A, {
 						method: "get",
 						endpoint: "".concat(n.a.metaUrl, "/secure-storage/t5_0/me/ethereum-key-backup-").concat(e)
@@ -533,39 +559,39 @@
 					const t = a.body && a.body.wallet;
 					if (!t) throw new Error("Empty wallet backup response");
 					return JSON.parse(t)
-				}(X(), w).then(A => (f(A), C(uA.LOADED), A)).catch(A => {
-					console.error("Backup load failed", A), h("Backup load failed: ".concat(A)), C(uA.FAILED)
+				}(X(), w).then(A => (b(A), C(sA.LOADED), A)).catch(A => {
+					console.error("Backup load failed", A), h("Backup load failed: ".concat(A)), C(sA.FAILED)
 				})), v = async () => {
-					(await Object(r.l)(X(), E)).ok ? x(IA.PUSH_NOTIFICATION_SENT) : Q()
+					(await Object(r.l)(X(), E)).ok ? x(rA.PUSH_NOTIFICATION_SENT) : Q()
 				}, Q = async () => {
-					await N() ? x(IA.REQUEST_VAULT_PASSWORD) : B === uA.FAILED ? (x(IA.TRANSACTION_FAILED), A.onTransactionFailure(b)) : x(IA.BACKUP_REQUIRED)
+					await N() ? x(rA.REQUEST_VAULT_PASSWORD) : B === sA.FAILED ? (x(rA.TRANSACTION_FAILED), A.onTransactionFailure(f)) : x(rA.BACKUP_REQUIRED)
 				}, M = async e => {
 					try {
-						x(IA.TRANSACTION_PENDING);
+						x(rA.TRANSACTION_PENDING);
 						const t = "function" == typeof m ? await m() : m;
 						if (!t) return;
 						const i = await Object(l.b)(X, R, e, t, a);
 						console.log("Transaction sent!", "https://rinkeby.etherscan.io/tx/".concat(i.hash)), await A.onTransactionSuccess(i)
 					} catch (t) {
-						console.error("Error while submitting transaction", t), x(IA.TRANSACTION_FAILED), A.onTransactionFailure(t.toString())
+						console.error("Error while submitting transaction", t), x(rA.TRANSACTION_FAILED), A.onTransactionFailure(t.toString())
 					}
 				};
 				switch (g) {
-					case IA.LOADING_BACKUP:
-					case IA.TRANSACTION_PENDING:
-						return i.a.createElement(W, {
+					case rA.LOADING_BACKUP:
+					case rA.TRANSACTION_PENDING:
+						return i.a.createElement(K, {
 							onClose: e
 						});
-					case IA.PUSH_NOTIFICATION_SENT:
-						return i.a.createElement(rA, {
+					case rA.PUSH_NOTIFICATION_SENT:
+						return i.a.createElement($, {
 							onClose: e,
 							onNotificationNotReceived: Q
 						});
-					case IA.BACKUP_REQUIRED:
-						return i.a.createElement(J, {
+					case rA.BACKUP_REQUIRED:
+						return i.a.createElement(T, {
 							onClose: e
 						});
-					case IA.REQUEST_VAULT_PASSWORD:
+					case rA.REQUEST_VAULT_PASSWORD:
 						return i.a.createElement(V, {
 							approveDisabled: !m,
 							backup: y,
@@ -575,8 +601,8 @@
 							overview: A.approvalOverview,
 							details: A.approvalDetails
 						});
-					case IA.TRANSACTION_FAILED:
-						return i.a.createElement(lA, {
+					case rA.TRANSACTION_FAILED:
+						return i.a.createElement(iA, {
 							onClose: e
 						});
 					default:
@@ -584,10 +610,10 @@
 				}
 			}! function(A) {
 				A[A.NOT_LOADED = 0] = "NOT_LOADED", A[A.LOADING = 1] = "LOADING", A[A.LOADED = 2] = "LOADED", A[A.FAILED = 3] = "FAILED"
-			}(uA || (uA = {})),
+			}(sA || (sA = {})),
 			function(A) {
 				A[A.LOADING_BACKUP = 0] = "LOADING_BACKUP", A[A.PUSH_NOTIFICATION_SENT = 1] = "PUSH_NOTIFICATION_SENT", A[A.BACKUP_REQUIRED = 2] = "BACKUP_REQUIRED", A[A.REQUEST_VAULT_PASSWORD = 3] = "REQUEST_VAULT_PASSWORD", A[A.TRANSACTION_PENDING = 4] = "TRANSACTION_PENDING", A[A.TRANSACTION_SUCCEEDED = 5] = "TRANSACTION_SUCCEEDED", A[A.TRANSACTION_FAILED = 6] = "TRANSACTION_FAILED"
-			}(IA || (IA = {}))
+			}(rA || (rA = {}))
 		},
 		"./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/loading-animation.json": function(A) {
 			A.exports = JSON.parse('{"v":"5.6.5","fr":29.9700012207031,"ip":0,"op":40.0000016292334,"w":130,"h":130,"nm":"Comp 1","ddd":0,"assets":[{"id":"image_0","w":145,"h":145,"u":"","p":"data:image/png;base64,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","e":1}],"layers":[{"ddd":0,"ind":1,"ty":2,"nm":"Layer 15/Payment process.ai","cl":"ai","refId":"image_0","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":0,"s":[0]},{"i":{"x":[0.833],"y":[0.833]},"o":{"x":[0.167],"y":[0.167]},"t":40,"s":[180]},{"t":80.0000032584668,"s":[360]}],"ix":10},"p":{"a":0,"k":[65,65,0],"ix":2},"a":{"a":0,"k":[72.5,72.5,0],"ix":1},"s":{"a":0,"k":[100,100,100],"ix":6}},"ao":0,"ip":0,"op":40.0000016292334,"st":0,"bm":0}],"markers":[]}')
@@ -890,10 +916,10 @@
 					} = I,
 					C = new t.ethers.Contract(g, x, k),
 					y = C.estimate[B](...I.arguments),
-					f = C.interface.functions[B].encode(I.arguments),
-					b = await C.functions.getHubAddr(),
+					b = C.interface.functions[B].encode(I.arguments),
+					f = await C.functions.getHubAddr(),
 					h = await E.getGasPrice(),
-					X = new t.ethers.Contract(b, u, k),
+					X = new t.ethers.Contract(f, u, k),
 					w = await X.functions.getNonce(k.address),
 					R = e.extra.contracts.preferredRelay || {},
 					N = R.address,
@@ -913,13 +939,13 @@
 						if (!i) throw new Error("No signature received for GSN verification");
 						return i
 					}(A(), m, {
-						encodedFunctionCall: f,
+						encodedFunctionCall: b,
 						from: k.address,
 						gas: D.toString(),
 						gasPrice: h.toString(),
 						nonce: w.toString(),
 						relayerAddress: N,
-						relayHubAddress: b,
+						relayHubAddress: f,
 						subredditId: p,
 						to: g,
 						txFee: v
@@ -927,11 +953,11 @@
 						const I = Object(r.keccak256)(Object(s.concat)([Object(n.toUtf8Bytes)("rlx:"), Object(s.arrayify)(A.address), Object(s.arrayify)(e), Object(s.arrayify)(a), Object(s.padZeros)(Object(s.arrayify)(Object(i.bigNumberify)(t)), 32), Object(s.padZeros)(Object(s.arrayify)(o), 32), Object(s.padZeros)(Object(s.arrayify)(c), 32), Object(s.padZeros)(Object(s.arrayify)(Object(i.bigNumberify)(d)), 32), Object(s.arrayify)(l), Object(s.arrayify)(u)])),
 							p = await A.signMessage(Object(s.arrayify)(I));
 						return Array.from(Object(s.arrayify)(p))
-					}(k, g, f, v, h, D, w.toString(), b, N), H = await fetch("".concat(Q, "/relay"), {
+					}(k, g, b, v, h, D, w.toString(), f, N), H = await fetch("".concat(Q, "/relay"), {
 						method: "POST",
 						body: JSON.stringify({
 							approvalData: Array.from(Object(s.arrayify)("0x".concat(L))),
-							encodedFunction: f,
+							encodedFunction: b,
 							from: k.address,
 							gasLimit: D.toNumber(),
 							gasPrice: h.toNumber(),
@@ -939,7 +965,7 @@
 							relayMaxNonce: await M,
 							relayFee: parseInt(v),
 							relayerAddress: N,
-							relayHubAddress: b,
+							relayHubAddress: f,
 							signature: V,
 							to: g
 						})
@@ -991,4 +1017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.5fa2e97a326cb5b54a6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.fe16ad49ae0f00b0b15d.js.map
