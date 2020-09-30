@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.1be5275b1d3e90a2b335.js
-// Retrieved at 9/28/2020, 7:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.461c21861f6a404bc851.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -191,9 +191,9 @@
 				M = n("./src/reddit/helpers/localStorage/index.ts"),
 				Q = n("./src/reddit/helpers/name/index.ts"),
 				Z = n("./src/lib/makeApiRequest/index.ts"),
-				V = n("./src/lib/omitHeaders/index.ts"),
-				H = n("./src/reddit/constants/headers.ts");
-			const X = e => Object(Z.a)(Object(V.a)(e, [H.a]), {
+				H = n("./src/lib/omitHeaders/index.ts"),
+				V = n("./src/reddit/constants/headers.ts");
+			const X = e => Object(Z.a)(Object(H.a)(e, [V.a]), {
 				endpoint: "".concat(e.apiUrl, "/api/multi/user/CommunityAdoptionBot/m/adoption_week/"),
 				method: D.db.GET,
 				type: "json"
@@ -201,8 +201,8 @@
 			var G = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				K = n.n(G);
 			const {
-				fbt: q
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = 3, z = 30 * D.eb, $ = "SubredditAdoption";
+				fbt: Y
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = 3, z = 30 * D.eb, $ = "SubredditAdoption";
 			class ee extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -224,7 +224,7 @@
 					Object(B.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
-							subredditNames: A()(e, Y)
+							subredditNames: A()(e, q)
 						})
 					})
 				}
@@ -240,16 +240,16 @@
 						className: K.a.title
 					}, o.a.createElement(R.b, {
 						className: K.a.icon
-					}), q._("International Subreddit Adoption Week", null, {
+					}), Y._("International Subreddit Adoption Week", null, {
 						hk: "487Ffc"
 					})), o.a.createElement("div", {
 						className: K.a.description
-					}, q._("{subreddits list} and more are looking for moderators!", [q._param("subreddits list", o.a.createElement("strong", null, e.map(Q.b).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, Y._("{subreddits list} and more are looking for moderators!", [Y._param("subreddits list", o.a.createElement("strong", null, e.map(Q.b).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), o.a.createElement(p.h, {
 						className: K.a.button,
 						to: "/r/".concat($, "?utm_source=reddit&utm_medium=fp_banner&utm_campaign=subreddit_adoption_week")
-					}, q._("Go Now", null, {
+					}, Y._("Go Now", null, {
 						hk: "LCCmX"
 					}))) : null
 				}
@@ -356,7 +356,7 @@
 					trendingSubredditIds: Ne.bb,
 					currentUser: Ie.i,
 					frontpageLinks: Pe.b,
-					isOver18: Ie.V
+					isOver18: Ie.X
 				}),
 				Be = e => !(!e.trendingSubredditIds.length || e.currentUser && !e.currentUser.showTrending),
 				De = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
@@ -387,8 +387,8 @@
 						trendingSubredditIds: b
 					} = this.props, p = i && d, g = [...Se.l];
 					p && g.unshift(Se.g);
-					const h = c === fe.qb.Rotate,
-						x = c === fe.qb.RotateAll;
+					const h = c === fe.sb.Rotate,
+						x = c === fe.sb.RotateAll;
 					let _ = Se.m;
 					return p && (h ? _ = this.state.random > .5 ? Se.g : Se.m : x && (_ = g[this.state.randomIndex])), o.a.createElement(P.a, {
 						className: t
@@ -1109,16 +1109,16 @@
 
 			function r(e) {
 				const t = i(e);
-				return t === s.qb.Rotate || t === s.qb.RotateAll
+				return t === s.sb.Rotate || t === s.sb.RotateAll
 			}
 
 			function i(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.pb
+					experimentName: s.rb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.1be5275b1d3e90a2b335.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.461c21861f6a404bc851.js.map

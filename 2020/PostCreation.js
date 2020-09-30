@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d4169f7955e09ed04857.js
-// Retrieved at 9/30/2020, 5:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.18190952371bdcd0db8b.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -677,16 +677,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.sb
+					experimentName: u.ub
 				});
-				return Object(u.xc)(t) ? void 0 : t
+				return Object(u.zc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.tb
+					experimentName: u.vb
 				});
-				return Object(u.xc)(t) ? void 0 : t
-			}, (e, t) => e === u.ub.Enabled && t === u.ub.Enabled);
+				return Object(u.zc)(t) ? void 0 : t
+			}, (e, t) => e === u.wb.Enabled && t === u.wb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -734,7 +734,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "7891203-production"
+					SENTRY_RELEASE_VERSION: "c6fe5fb-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3870,9 +3870,9 @@
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(k.c)(e, {
 							experimentEligibilitySelector: T.H,
-							experimentName: _.W
+							experimentName: _.Y
 						});
-						return !(!t || Object(_.xc)(t))
+						return !(!t || Object(_.zc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: P.c
@@ -5121,7 +5121,7 @@
 					isCurrentUserProfilePost: g.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Bb.TOPIC),
 					post: g.N,
-					shouldOpenPostInNewTab: x.U,
+					shouldOpenPostInNewTab: x.W,
 					subreddit: g.ab
 				}),
 				N = Object(i.b)(M);
@@ -7966,7 +7966,7 @@
 					} = this.props;
 					if (!o) return;
 					let r = "";
-					return s && (r += s), e === A.ob.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.ob.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
+					return s && (r += s), e === A.qb.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.qb.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -11248,7 +11248,7 @@
 							subredditId: n.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: F.U,
+					shouldOpenPostInNewTab: F.W,
 					imageGalleryCurrentItem: (e, t) => {
 						let {
 							post: n
@@ -20373,7 +20373,7 @@
 					currentUser: l.i,
 					isNightMode: l.S,
 					shouldHideNSFW: l.z,
-					user: l.eb
+					user: l.gb
 				}),
 				m = Object(r.b)(p);
 			t.a = m(e => {
@@ -30098,7 +30098,7 @@
 					if (!r) return l.fbt._("A destination community is required to crosspost", null, {
 						hk: "3haidF"
 					});
-					const c = i ? Object(k.W)(e, {
+					const c = i ? Object(k.Y)(e, {
 						userId: r
 					}) : r;
 					if (c) {
@@ -33892,4 +33892,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d4169f7955e09ed04857.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.18190952371bdcd0db8b.js.map

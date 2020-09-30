@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7d6640f2ccd8c1baf63b.js
-// Retrieved at 9/30/2020, 5:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.47fb91ec6c3653b97bc1.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -954,7 +954,7 @@
 				y = x.a.wrapped(u.i, "SecondaryButton", g.a),
 				v = x.a.wrapped(d.c, "StyledTooltip", g.a),
 				E = Object(o.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ab)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
 					userIsSuspended: b.M
 				});
 			t.a = Object(i.b)(E, (e, t) => {
@@ -7082,7 +7082,7 @@
 				post: p.N,
 				showEditFlair: m.a,
 				subredditOrProfile: p.ab,
-				userIsOp: b.hb
+				userIsOp: b.jb
 			}), (e, t) => {
 				let {
 					postId: n
@@ -9045,7 +9045,7 @@
 					match: n
 				} = t;
 				return n.params.sort
-			}, Me, we.V, he.a, (e, t, n, s, r) => {
+			}, Me, we.X, he.a, (e, t, n, s, r) => {
 				let a = t;
 				a || (e === se.f && r ? a = k.O.BEST : Object(v.a)(e) && (a = k.O.HOT));
 				const i = Object(S.g)(n, s);
@@ -9154,7 +9154,7 @@
 					})
 				},
 				isSnoovatarEmbedEnabled: xe.a
-			}), Ze = () => Object(h.a)(we.V, We, Me, De, Ue, (e, t) => {
+			}), Ze = () => Object(h.a)(we.X, We, Me, De, Ue, (e, t) => {
 				let {
 					match: n
 				} = t;
@@ -9598,7 +9598,7 @@
 					let {
 						listingName: n
 					} = t;
-					const s = Object(o.lb)(e);
+					const s = Object(o.nb)(e);
 					if (!s) return !1;
 					let c;
 					if (-1 === [a.R, "r/popular"].indexOf(n)) {
@@ -9929,7 +9929,7 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const i = e => s.Q.Enabled === Object(r.c)(e, {
+			const i = e => s.R.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: a.H,
 				experimentName: s.P
 			})
@@ -9941,11 +9941,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.ec.Enabled === Object(r.c)(e, {
+			const a = e => s.gc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Yb
+				experimentName: s.ac
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7d6640f2ccd8c1baf63b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.47fb91ec6c3653b97bc1.js.map

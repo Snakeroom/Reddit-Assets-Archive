@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.db1c4d48cb938dd76d28.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.a9aedec7858540307fac.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~reddit-components-ProfileIdCard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -243,7 +243,7 @@
 					let {
 						profileName: a
 					} = t;
-					return Object(B.kb)(e, a)
+					return Object(B.mb)(e, a)
 				}, (e, t, a) => ({
 					awardeeKarma: a ? a.awardeeKarma : 0,
 					awardKarmaExperimentEnabled: e,
@@ -747,4 +747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.db1c4d48cb938dd76d28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.a9aedec7858540307fac.js.map

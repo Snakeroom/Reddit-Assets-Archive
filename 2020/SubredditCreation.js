@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.ec21955db3a5dc3c83c4.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.e9720437c0e9a1277b7e.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -347,7 +347,7 @@
 					error: U.i,
 					isCreatePending: U.l,
 					isEmployee: z.E,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(z.ab)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(z.cb)(e),
 					userIsSuspended: z.M,
 					allTags: v.e,
 					existingTags: v.h,
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ec21955db3a5dc3c83c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.e9720437c0e9a1277b7e.js.map

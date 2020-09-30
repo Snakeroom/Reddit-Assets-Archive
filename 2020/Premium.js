@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.ba355e8bd17570b7aeb3.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.40372fc1bf5d5789171d.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -805,4 +805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.ba355e8bd17570b7aeb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.40372fc1bf5d5789171d.js.map

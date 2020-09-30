@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093.57cb53223ee608b3ffb5.js
-// Retrieved at 9/23/2020, 7:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093.906e9a9142d3ca63b6a2.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -619,7 +619,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: f.d,
 					postPermalink: g.M,
-					shouldOpenPostInNewTab: O.U
+					shouldOpenPostInNewTab: O.W
 				})),
 				j = e => {
 					let t, {
@@ -1259,7 +1259,7 @@
 				Oe = Object(a.c)({
 					activeModalId: ae.a,
 					layout: D.N,
-					userIsOp: G.hb,
+					userIsOp: G.jb,
 					subreddit: D.q
 				}),
 				ve = Object(i.b)(Oe, (e, t) => {
@@ -2549,7 +2549,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = be(t, ["isProfilePostListing"]);
-						return Object(X.B)(e, n) && s && Object(ie.hb)(e, n) && Object(ie.fb)(e, {
+						return Object(X.B)(e, n) && s && Object(ie.jb)(e, n) && Object(ie.hb)(e, {
 							userName: Object(oe.N)(e, {
 								postId: n.postId
 							}).author
@@ -2557,7 +2557,7 @@
 					},
 					subredditOrProfile: oe.ab,
 					hasSubredditRules: re.k,
-					userIsOp: ie.hb,
+					userIsOp: ie.jb,
 					isPostPartOfACollection: me.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -4135,4 +4135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093.57cb53223ee608b3ffb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093.906e9a9142d3ca63b6a2.js.map

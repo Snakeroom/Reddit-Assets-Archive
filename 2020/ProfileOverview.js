@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.149e009a8fe756141955.js
-// Retrieved at 9/28/2020, 7:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.396d8e46d117f09e1786.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2602,7 +2602,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: f.d,
 					postPermalink: g.M,
-					shouldOpenPostInNewTab: v.U
+					shouldOpenPostInNewTab: v.W
 				})),
 				E = e => {
 					let t, {
@@ -3249,7 +3249,7 @@
 				v = f.a.wrapped(m.i, "SecondaryButton", x.a),
 				O = f.a.wrapped(d.c, "StyledTooltip", x.a),
 				C = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ab)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
 					userIsSuspended: b.M
 				});
 			t.a = Object(i.b)(C, (e, t) => {
@@ -3367,7 +3367,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: g.U,
+					shouldOpenPostInNewTab: g.W,
 					subreddit: f.ab
 				}),
 				M = Object(i.b)(T);
@@ -4298,7 +4298,7 @@
 				ve = Object(a.c)({
 					activeModalId: ae.a,
 					layout: A.N,
-					userIsOp: H.hb,
+					userIsOp: H.jb,
 					subreddit: A.q
 				}),
 				Oe = Object(i.b)(ve, (e, t) => {
@@ -5758,7 +5758,7 @@
 					showEditFlair: ae.a,
 					showAwardsPlaque: v.a,
 					subredditOrProfile: y.ab,
-					userIsOp: E.hb
+					userIsOp: E.jb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -5822,7 +5822,7 @@
 						showEditFlair: fe,
 						subredditOrProfile: ge,
 						userIsOp: ve
-					} = e, Oe = !!e.redditStyle || !!e["data-redditstyle"], Ce = Oe ? void 0 : p, ye = Object(d.a)(oe), Ee = re && ye, _e = Object(a.a)(oe), we = Object(c.a)(oe), ke = Object(R.c)(me), je = !!me.media && me.media.type === h.o.RTJSON, Pe = ve && je, Se = s ? s - A.a : void 0, Ie = !(E && U || Y), Ne = (e => e === Z.Fb.OnlyTitles)(ue) && !Object($.a)(me), Te = (e => e === Z.Fb.MediumHeight)(ue) && !Object($.a)(me), Me = (e => {
+					} = e, Oe = !!e.redditStyle || !!e["data-redditstyle"], Ce = Oe ? void 0 : p, ye = Object(d.a)(oe), Ee = re && ye, _e = Object(a.a)(oe), we = Object(c.a)(oe), ke = Object(R.c)(me), je = !!me.media && me.media.type === h.o.RTJSON, Pe = ve && je, Se = s ? s - A.a : void 0, Ie = !(E && U || Y), Ne = (e => e === Z.Hb.OnlyTitles)(ue) && !Object($.a)(me), Te = (e => e === Z.Hb.MediumHeight)(ue) && !Object($.a)(me), Me = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -5837,7 +5837,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Le = !!te && !Object(Z.xc)(te), Re = (!O || Le) && !me.isSponsored, Fe = Object(_.s)(me, v), {
+					})(e), Le = !!te && !Object(Z.zc)(te), Re = (!O || Le) && !me.isSponsored, Fe = Object(_.s)(me, v), {
 						source: Be
 					} = Fe, Ae = o.a.createElement(B.a, {
 						className: Object(w.a)(pe.a.container, r, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -8697,7 +8697,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(K.B)(e, n) && s && Object(ie.hb)(e, n) && Object(ie.fb)(e, {
+						return Object(K.B)(e, n) && s && Object(ie.jb)(e, n) && Object(ie.hb)(e, {
 							userName: Object(oe.N)(e, {
 								postId: n.postId
 							}).author
@@ -8705,7 +8705,7 @@
 					},
 					subredditOrProfile: oe.ab,
 					hasSubredditRules: re.k,
-					userIsOp: ie.hb,
+					userIsOp: ie.jb,
 					isPostPartOfACollection: pe.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -10515,7 +10515,7 @@
 					let {
 						profileName: s
 					} = t;
-					const n = Object(p.eb)(e, {
+					const n = Object(p.gb)(e, {
 							userName: s
 						}),
 						o = Object(m.e)(e);
@@ -11619,7 +11619,7 @@
 					let {
 						subredditOrProfile: s
 					} = t;
-					return s.type === l.a.PROFILE ? Object(b.eb)(e, {
+					return s.type === l.a.PROFILE ? Object(b.gb)(e, {
 						userName: s.name
 					}) : null
 				}
@@ -11835,7 +11835,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: b.ab,
-					userIsOp: h.hb,
+					userIsOp: h.jb,
 					flairStyleTemplate: d.R
 				},
 				f = (e, t) => {
@@ -12099,7 +12099,7 @@
 				post: u.N,
 				showEditFlair: p.a,
 				subredditOrProfile: u.ab,
-				userIsOp: b.hb
+				userIsOp: b.jb
 			}), (e, t) => {
 				let {
 					postId: s
@@ -15148,7 +15148,7 @@
 					return o()([...Object(d.a)(s.search)])
 				},
 				At = Object(p.t)(),
-				Dt = Object(c.a)(p.B, mt.V, Bt, p.N, (e, t) => {
+				Dt = Object(c.a)(p.B, mt.X, Bt, p.N, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -15366,9 +15366,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.R
+					experimentName: n.T
 				});
-				return !(!t || Object(n.xc)(t))
+				return !(!t || Object(n.zc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -15385,4 +15385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.149e009a8fe756141955.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.396d8e46d117f09e1786.js.map

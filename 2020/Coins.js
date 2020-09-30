@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.093f563c1d79a0db4330.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.21e31211d855cfcc352a.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -991,4 +991,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.093f563c1d79a0db4330.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.21e31211d855cfcc352a.js.map

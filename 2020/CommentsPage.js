@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.48acebfe2d264affbdc9.js
-// Retrieved at 9/28/2020, 7:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.081499ab8a1927735d7e.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5387,7 +5387,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: g.d,
 					postPermalink: f.M,
-					shouldOpenPostInNewTab: v.U
+					shouldOpenPostInNewTab: v.W
 				})),
 				E = e => {
 					let t, {
@@ -6003,7 +6003,7 @@
 					isCurrentUserProfilePost: g.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
 					post: g.N,
-					shouldOpenPostInNewTab: f.U,
+					shouldOpenPostInNewTab: f.W,
 					subreddit: g.ab
 				}),
 				A = Object(i.b)(N);
@@ -6873,7 +6873,7 @@
 				ve = Object(a.c)({
 					activeModalId: ae.a,
 					layout: B.N,
-					userIsOp: H.hb,
+					userIsOp: H.jb,
 					subreddit: B.q
 				}),
 				Ce = Object(i.b)(ve, (e, t) => {
@@ -9350,7 +9350,7 @@
 					showEditFlair: fe.a,
 					subredditOrProfile: W.ab,
 					isEditing: D.F,
-					userIsOp: H.hb
+					userIsOp: H.jb
 				}), (e, t) => {
 					let {
 						postId: s
@@ -10710,7 +10710,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(z.B)(e, n) && s && Object(ie.hb)(e, n) && Object(ie.fb)(e, {
+						return Object(z.B)(e, n) && s && Object(ie.jb)(e, n) && Object(ie.hb)(e, {
 							userName: Object(oe.N)(e, {
 								postId: n.postId
 							}).author
@@ -10718,7 +10718,7 @@
 					},
 					subredditOrProfile: oe.ab,
 					hasSubredditRules: re.k,
-					userIsOp: ie.hb,
+					userIsOp: ie.jb,
 					isPostPartOfACollection: pe.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -11697,7 +11697,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.xc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.zc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -11727,7 +11727,7 @@
 						post: i,
 						shouldShowSubredditUpsell: c,
 						subredditOrProfile: d
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.xc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.zc)(o), p = i && i.id;
 					return s || n || t || l || !c ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(h.a, {
@@ -17687,7 +17687,7 @@
 						return Object(xe.e)(e, s)
 					},
 					contestModeIsEnabled: pe.F,
-					currentUserShowNSFW: xe.V,
+					currentUserShowNSFW: xe.X,
 					dismissedSubreddits: ie.a,
 					fullyLoaded: ne.v,
 					hasModeratorPostPermissions: me.b,
@@ -17718,7 +17718,7 @@
 							})
 						})
 					},
-					shouldOpenPostInNewTab: xe.U,
+					shouldOpenPostInNewTab: xe.W,
 					subredditAboutInfo: (e, t) => {
 						let {
 							subredditName: s
@@ -17733,7 +17733,7 @@
 						tooltipIdPrefix: W.a,
 						tooltipType: Fe.c.StickyPost
 					}))(e),
-					userPrefs: xe.lb,
+					userPrefs: xe.nb,
 					isInCommentsPageAdExperiment: ce.a
 				}),
 				ht = (e, t) => ({
@@ -18528,7 +18528,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.B
 				});
-				return !!t && !Object(n.xc)(t)
+				return !!t && !Object(n.zc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -18541,9 +18541,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.R
+					experimentName: n.T
 				});
-				return !(!t || Object(n.xc)(t))
+				return !(!t || Object(n.zc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -18560,4 +18560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.48acebfe2d264affbdc9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.081499ab8a1927735d7e.js.map

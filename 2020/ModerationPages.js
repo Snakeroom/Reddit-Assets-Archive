@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2d462761666073c5fbbc.js
-// Retrieved at 9/28/2020, 7:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ad054f2c95f9683341f9.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -6236,7 +6236,7 @@
 					isChatPost: g.d,
 					isPostSEOEligible: f.d,
 					postPermalink: x.M,
-					shouldOpenPostInNewTab: v.U
+					shouldOpenPostInNewTab: v.W
 				})),
 				O = e => {
 					let t, {
@@ -6641,8 +6641,8 @@
 					communityAwardsDisabled: Q.b,
 					disableSettingsAvailable: e => Object(te.c)(e, {
 						experimentEligibilitySelector: te.a,
-						experimentName: ee.X
-					}) === ee.bb.Enabled,
+						experimentName: ee.Z
+					}) === ee.db.Enabled,
 					isAddAwardModalOpen: e => Object(y.a)(e) === m.a,
 					isConfirmModalOpen: e => Object(y.a)(e) === m.b
 				}),
@@ -8526,7 +8526,7 @@
 					post: y.N,
 					showEditFlair: k.a,
 					subredditOrProfile: y.ab,
-					userIsOp: j.hb
+					userIsOp: j.jb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -9574,7 +9574,7 @@
 				v = f.a.wrapped(m.i, "SecondaryButton", g.a),
 				E = f.a.wrapped(c.c, "StyledTooltip", g.a),
 				C = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ab)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
 					userIsSuspended: b.M
 				});
 			t.a = Object(r.b)(C, (e, t) => {
@@ -9692,7 +9692,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: x.U,
+					shouldOpenPostInNewTab: x.W,
 					subreddit: f.ab
 				}),
 				M = Object(r.b)(P);
@@ -10477,7 +10477,7 @@
 				ve = Object(i.c)({
 					activeModalId: ie.a,
 					layout: F.N,
-					userIsOp: H.hb,
+					userIsOp: H.jb,
 					subreddit: F.q
 				}),
 				Ee = Object(r.b)(ve, (e, t) => {
@@ -11681,7 +11681,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(g.eb)(e, {
+				user: (e, t) => Object(g.gb)(e, {
 					userName: t.username
 				})
 			});
@@ -11988,7 +11988,7 @@
 							minSize: 32
 						})
 					},
-					user: g.eb,
+					user: g.gb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: s
@@ -19363,7 +19363,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(K.B)(e, n) && s && Object(re.hb)(e, n) && Object(re.fb)(e, {
+						return Object(K.B)(e, n) && s && Object(re.jb)(e, n) && Object(re.hb)(e, {
 							userName: Object(oe.N)(e, {
 								postId: n.postId
 							}).author
@@ -19371,7 +19371,7 @@
 					},
 					subredditOrProfile: oe.ab,
 					hasSubredditRules: ae.k,
-					userIsOp: re.hb,
+					userIsOp: re.jb,
 					isPostPartOfACollection: ue.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -24781,7 +24781,7 @@
 					showEditFlair: p.a,
 					showMedia: c.r,
 					subredditOrProfile: b.ab,
-					userIsOp: h.hb,
+					userIsOp: h.jb,
 					flairStyleTemplate: c.R
 				},
 				f = (e, t) => {
@@ -29970,7 +29970,7 @@
 						subredditName: t.match.params.subredditName
 					})
 				}),
-				ot = Object(i.b)(() => Object(d.a)(et, N.E, v.N, st, N.V, S.cb, nt, tt, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, o, a, r, i, d, c) => {
+				ot = Object(i.b)(() => Object(d.a)(et, N.E, v.N, st, N.X, S.cb, nt, tt, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, o, a, r, i, d, c) => {
 					let {
 						contentGateInfo: l
 					} = e, {
@@ -30289,7 +30289,7 @@
 					error: J.i,
 					isCreatePending: J.l,
 					isEmployee: Z.E,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(Z.ab)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(Z.cb)(e),
 					userIsSuspended: Z.M,
 					allTags: v.e,
 					existingTags: v.h,
@@ -30907,4 +30907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2d462761666073c5fbbc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ad054f2c95f9683341f9.js.map

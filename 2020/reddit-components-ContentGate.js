@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f402bda8f852ed131ba3.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.4193f29d8474f87f6474.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -411,7 +411,7 @@
 				g = E.a.wrapped(d.i, "SecondaryButton", k.a),
 				y = E.a.wrapped(c.c, "StyledTooltip", k.a),
 				f = Object(s.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.ab)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.cb)(e),
 					userIsSuspended: h.M
 				});
 			t.a = Object(l.b)(f, (e, t) => {
@@ -476,4 +476,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f402bda8f852ed131ba3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.4193f29d8474f87f6474.js.map

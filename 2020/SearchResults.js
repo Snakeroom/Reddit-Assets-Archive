@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.a53f0f3a390199563dd7.js
-// Retrieved at 9/28/2020, 7:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8c4ccdea28ae67b9c6ca.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1786,7 +1786,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: f.d,
 					postPermalink: g.M,
-					shouldOpenPostInNewTab: v.U
+					shouldOpenPostInNewTab: v.W
 				})),
 				E = e => {
 					let t, {
@@ -2055,7 +2055,7 @@
 				v = f.a.wrapped(m.i, "SecondaryButton", x.a),
 				O = f.a.wrapped(d.c, "StyledTooltip", x.a),
 				y = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ab)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
 					userIsSuspended: b.M
 				});
 			t.a = Object(i.b)(y, (e, t) => {
@@ -2187,7 +2187,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: g.U,
+					shouldOpenPostInNewTab: g.W,
 					subreddit: f.ab
 				}),
 				M = Object(i.b)(N);
@@ -3789,7 +3789,7 @@
 				ve = Object(a.c)({
 					activeModalId: ae.a,
 					layout: D.N,
-					userIsOp: W.hb,
+					userIsOp: W.jb,
 					subreddit: D.q
 				}),
 				Oe = Object(i.b)(ve, (e, t) => {
@@ -6374,7 +6374,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(K.B)(e, n) && s && Object(ie.hb)(e, n) && Object(ie.fb)(e, {
+						return Object(K.B)(e, n) && s && Object(ie.jb)(e, n) && Object(ie.hb)(e, {
 							userName: Object(oe.N)(e, {
 								postId: n.postId
 							}).author
@@ -6382,7 +6382,7 @@
 					},
 					subredditOrProfile: oe.ab,
 					hasSubredditRules: re.k,
-					userIsOp: ie.hb,
+					userIsOp: ie.jb,
 					isPostPartOfACollection: pe.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -8179,7 +8179,7 @@
 				}),
 				Ns = Object(i.c)({
 					subreddit: I.B,
-					shouldSeeNSFW: Ve.V
+					shouldSeeNSFW: Ve.X
 				}),
 				Ms = Object(r.b)(Ns),
 				Ls = e => {
@@ -10795,7 +10795,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: b.ab,
-					userIsOp: h.hb,
+					userIsOp: h.jb,
 					flairStyleTemplate: d.R
 				},
 				f = (e, t) => {
@@ -11005,7 +11005,7 @@
 				post: u.N,
 				showEditFlair: p.a,
 				subredditOrProfile: u.ab,
-				userIsOp: b.hb
+				userIsOp: b.jb
 			}), (e, t) => {
 				let {
 					postId: s
@@ -13062,11 +13062,11 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Ub.Treatment1 === Object(o.c)(e, {
+			const r = e => n.Wb.Treatment1 === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: n.Mb
+				experimentName: n.Ob
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a53f0f3a390199563dd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8c4ccdea28ae67b9c6ca.js.map

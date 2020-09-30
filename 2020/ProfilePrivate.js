@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.2016ed60393489f2c6b7.js
-// Retrieved at 9/24/2020, 7:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.5df983bbe8cfd434f642.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2690,7 +2690,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: f.d,
 					postPermalink: v.M,
-					shouldOpenPostInNewTab: g.U
+					shouldOpenPostInNewTab: g.W
 				})),
 				_ = e => {
 					let t, {
@@ -2997,7 +2997,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: v.U,
+					shouldOpenPostInNewTab: v.W,
 					subreddit: f.ab
 				}),
 				M = Object(i.b)(N);
@@ -3898,7 +3898,7 @@
 				ge = Object(a.c)({
 					activeModalId: ae.a,
 					layout: B.N,
-					userIsOp: H.hb,
+					userIsOp: H.jb,
 					subreddit: B.q
 				}),
 				Oe = Object(i.b)(ge, (e, t) => {
@@ -6537,7 +6537,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(q.B)(e, n) && s && Object(ie.hb)(e, n) && Object(ie.fb)(e, {
+						return Object(q.B)(e, n) && s && Object(ie.jb)(e, n) && Object(ie.hb)(e, {
 							userName: Object(oe.N)(e, {
 								postId: n.postId
 							}).author
@@ -6545,7 +6545,7 @@
 					},
 					subredditOrProfile: oe.ab,
 					hasSubredditRules: re.k,
-					userIsOp: ie.hb,
+					userIsOp: ie.jb,
 					isPostPartOfACollection: pe.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -8101,7 +8101,7 @@
 					let {
 						profileName: s
 					} = t;
-					const n = Object(p.eb)(e, {
+					const n = Object(p.gb)(e, {
 							userName: s
 						}),
 						o = Object(m.e)(e);
@@ -9044,7 +9044,7 @@
 					let {
 						subredditOrProfile: s
 					} = t;
-					return s.type === l.a.PROFILE ? Object(b.eb)(e, {
+					return s.type === l.a.PROFILE ? Object(b.gb)(e, {
 						userName: s.name
 					}) : null
 				}
@@ -9116,7 +9116,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: b.ab,
-					userIsOp: h.hb,
+					userIsOp: h.jb,
 					flairStyleTemplate: d.R
 				},
 				f = (e, t) => {
@@ -11174,4 +11174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.2016ed60393489f2c6b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.5df983bbe8cfd434f642.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.d5fc12d2de9874691fa0.js
-// Retrieved at 9/24/2020, 7:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.c50289c8da891e6e0ed9.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2452,7 +2452,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: f.d,
 					postPermalink: g.M,
-					shouldOpenPostInNewTab: v.U
+					shouldOpenPostInNewTab: v.W
 				})),
 				C = e => {
 					let t, {
@@ -3201,7 +3201,7 @@
 				v = f.a.wrapped(m.i, "SecondaryButton", x.a),
 				O = f.a.wrapped(d.c, "StyledTooltip", x.a),
 				_ = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ab)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
 					userIsSuspended: b.M
 				});
 			t.a = Object(a.b)(_, (e, t) => {
@@ -3319,7 +3319,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: g.U,
+					shouldOpenPostInNewTab: g.W,
 					subreddit: f.ab
 				}),
 				L = Object(a.b)(N);
@@ -4220,7 +4220,7 @@
 				ve = Object(i.c)({
 					activeModalId: ie.a,
 					layout: A.N,
-					userIsOp: W.hb,
+					userIsOp: W.jb,
 					subreddit: A.q
 				}),
 				Oe = Object(a.b)(ve, (e, t) => {
@@ -8327,7 +8327,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = he(t, ["isProfilePostListing"]);
-						return Object(K.B)(e, n) && s && Object(ae.hb)(e, n) && Object(ae.fb)(e, {
+						return Object(K.B)(e, n) && s && Object(ae.jb)(e, n) && Object(ae.hb)(e, {
 							userName: Object(oe.N)(e, {
 								postId: n.postId
 							}).author
@@ -8335,7 +8335,7 @@
 					},
 					subredditOrProfile: oe.ab,
 					hasSubredditRules: re.k,
-					userIsOp: ae.hb,
+					userIsOp: ae.jb,
 					isPostPartOfACollection: pe.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -9902,7 +9902,7 @@
 					let {
 						profileName: s
 					} = t;
-					const n = Object(p.eb)(e, {
+					const n = Object(p.gb)(e, {
 							userName: s
 						}),
 						o = Object(m.e)(e);
@@ -10859,7 +10859,7 @@
 					let {
 						subredditOrProfile: s
 					} = t;
-					return s.type === l.a.PROFILE ? Object(b.eb)(e, {
+					return s.type === l.a.PROFILE ? Object(b.gb)(e, {
 						userName: s.name
 					}) : null
 				}
@@ -10931,7 +10931,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: b.ab,
-					userIsOp: h.hb,
+					userIsOp: h.jb,
 					flairStyleTemplate: d.R
 				},
 				f = (e, t) => {
@@ -13244,7 +13244,7 @@
 				}).apply(this, arguments)
 			}
 			const fe = Object(j.t)(),
-				ge = Object(c.a)(j.B, ee.V, (e, t) => {
+				ge = Object(c.a)(j.B, ee.X, (e, t) => {
 					let {
 						location: s
 					} = t;
@@ -13414,4 +13414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.d5fc12d2de9874691fa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.c50289c8da891e6e0ed9.js.map

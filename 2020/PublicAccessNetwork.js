@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4f1b3d005bb077e04f20.js
-// Retrieved at 9/30/2020, 5:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d5a3d49df575a763bba5.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -285,16 +285,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.sb
+					experimentName: m.ub
 				});
-				return Object(m.xc)(t) ? void 0 : t
+				return Object(m.zc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.tb
+					experimentName: m.vb
 				});
-				return Object(m.xc)(t) ? void 0 : t
-			}, (e, t) => e === m.ub.Enabled && t === m.ub.Enabled);
+				return Object(m.zc)(t) ? void 0 : t
+			}, (e, t) => e === m.wb.Enabled && t === m.wb.Enabled);
 			var h = a("./src/config.ts");
 			var b = a("./src/reddit/selectors/user.ts");
 			a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "7891203-production"
+					SENTRY_RELEASE_VERSION: "c6fe5fb-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -618,9 +618,9 @@
 			})), a.d(t, "fetchReasonsAndOpenModal", (function() {
 				return X
 			})), a.d(t, "removalReasonSubmittedPending", (function() {
-				return J
-			})), a.d(t, "removalReasonSubmittedSuccess", (function() {
 				return z
+			})), a.d(t, "removalReasonSubmittedSuccess", (function() {
+				return J
 			})), a.d(t, "removalReasonSubmittedFailed", (function() {
 				return q
 			})), a.d(t, "removalReasonMessagePending", (function() {
@@ -772,7 +772,7 @@
 						subredditId: e,
 						itemIds: t
 					})), a(Object(d.i)(p.a.ADD_REMOVAL_REASON))
-				}, J = Object(o.a)(R.r), z = Object(o.a)(R.s), q = Object(o.a)(R.q), Z = Object(o.a)(R.n), Q = Object(o.a)(R.o), $ = Object(o.a)(R.p), ee = Object(o.a)(R.m), te = (e, t, a, s, o) => async (c, d, u) => {
+				}, z = Object(o.a)(R.r), J = Object(o.a)(R.s), q = Object(o.a)(R.q), Z = Object(o.a)(R.n), Q = Object(o.a)(R.o), $ = Object(o.a)(R.p), ee = Object(o.a)(R.m), te = (e, t, a, s, o) => async (c, d, u) => {
 					let {
 						apiContext: p
 					} = u;
@@ -783,7 +783,7 @@
 						x = g === y.e.Post ? h.posts.models[v] : h.comments.models[v],
 						O = g === y.e.Post ? m.J : l.R;
 					if (!x || !b) return !1;
-					c(J()), c(O({
+					c(z()), c(O({
 						[v]: {
 							modNote: o,
 							modRemovalReason: t && t.title,
@@ -797,7 +797,7 @@
 						},
 						T = await w(p(), R);
 					if (T.ok) {
-						if (c(z()), t) {
+						if (c(J()), t) {
 							c(Z());
 							const o = {
 									itemId: e,
@@ -873,7 +873,7 @@
 					const m = i(),
 						p = m.user.account && m.user.account.displayText;
 					if (!p) return;
-					r(J());
+					r(z());
 					const h = Object(u.e)({
 							kind: O.b.SuccessMod,
 							text: s.fbt._({
@@ -2662,8 +2662,8 @@
 				G = a("./src/lib/lessComponent.tsx"),
 				Y = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				X = a("./src/reddit/controls/Button/index.tsx"),
-				J = a("./src/reddit/controls/TextButton/index.tsx"),
-				z = a("./src/reddit/helpers/localStorage/index.ts"),
+				z = a("./src/reddit/controls/TextButton/index.tsx"),
+				J = a("./src/reddit/helpers/localStorage/index.ts"),
 				q = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				Z = a("./src/reddit/components/PublicAccessNetwork/Modals/ChatMute/index.m.less"),
 				Q = a.n(Z);
@@ -2676,7 +2676,7 @@
 						toggleModal: t
 					} = e;
 					const a = () => {
-						z.jb(), t()
+						J.jb(), t()
 					};
 					return n.a.createElement(Y.d, null, n.a.createElement(te, null, n.a.createElement(q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: Q.a.Title
@@ -2684,7 +2684,7 @@
 						hk: "1lebCx"
 					})), n.a.createElement(Y.o, null, g.fbt._("Before jumping in, keep these tips in mind.", null, {
 						hk: "3evsT7"
-					}))), n.a.createElement(J.a, {
+					}))), n.a.createElement(z.a, {
 						onClick: a
 					}, n.a.createElement(Y.b, null)))), n.a.createElement(ae, null, n.a.createElement("span", null, n.a.createElement("span", null, n.a.createElement("div", {
 						className: Q.a.SubTitle
@@ -2753,7 +2753,7 @@
 						onClick: this.closeDropdown
 					}, a && n.a.createElement(Y.h, null, n.a.createElement(q.a, null, n.a.createElement(Y.p, null, we._("Remove broadcast", null, {
 						hk: "1JfCvD"
-					})), n.a.createElement(J.a, {
+					})), n.a.createElement(z.a, {
 						onClick: this.props.toggleRemovalReasonModal
 					}, n.a.createElement(Y.b, null)))), n.a.createElement(Y.k, null, a ? n.a.createElement(he.a, {
 						isDropdownOpen: t.isDropdownOpen,
@@ -2900,8 +2900,8 @@
 			}(Ie || (Ie = {}));
 			const Ye = 60,
 				Xe = 30,
-				Je = 3 * Ye,
-				ze = 5 * Ye,
+				ze = 3 * Ye,
+				Je = 5 * Ye,
 				qe = 5,
 				Ze = 5 * Ye,
 				Qe = 10,
@@ -3138,7 +3138,7 @@
 				}
 			}
 			var Ft = Dt(Bt);
-			const Ht = (e, t) => e > t ? Ie.EXTENDED : e < Je ? Ie.CRITICAL : e < ze ? Ie.LOW : Ie.NORMAL,
+			const Ht = (e, t) => e > t ? Ie.EXTENDED : e < ze ? Ie.CRITICAL : e < Je ? Ie.LOW : Ie.NORMAL,
 				Ut = e => e / Ye,
 				Wt = e => Kt(e) % Ze == 0,
 				Kt = e => Math.round(e / qe) * qe;
@@ -3149,15 +3149,15 @@
 					for (let t = 1; t < 11; t++) e.push("Delay".concat(t));
 					return e
 				})(),
-				Jt = (() => {
+				zt = (() => {
 					const e = [];
 					for (let t = 0; t < 21; t++) e.push("X".concat(5 * t));
 					return e
 				})(),
-				zt = ["15Deg", "45Deg", "75Deg"],
+				Jt = ["15Deg", "45Deg", "75Deg"],
 				qt = e => e[Math.floor(Math.random() * e.length)],
 				Zt = () => {
-					const e = [qt(Jt), qt(zt), qt(Xt)].map(e => Yt.a["particle".concat(e)]).join(" ");
+					const e = [qt(zt), qt(Jt), qt(Xt)].map(e => Yt.a["particle".concat(e)]).join(" ");
 					return "".concat(Yt.a.particle, " ").concat(e, " ").concat(Math.round(Math.random()) ? Yt.a.particleReverse : "")
 				},
 				Qt = 40,
@@ -3209,7 +3209,7 @@
 					})
 				}
 				static isPillVisible(e, t, a) {
-					return t || a > 0 || Wt(e) || e < ze
+					return t || a > 0 || Wt(e) || e < Je
 				}
 				static getPillLabel(e, t) {
 					const {
@@ -3245,7 +3245,7 @@
 							hk: "2Tjt0F"
 						})
 					}
-					if (Wt(o) && !s && o > ze) {
+					if (Wt(o) && !s && o > Je) {
 						const e = Math.round(Ut(o)).toLocaleString();
 						return g.fbt._("{number of minutes} minutes airtime left", [g.fbt._param("number of minutes", e)], {
 							hk: "3DZxvE"
@@ -3314,7 +3314,7 @@
 					if (!(a && e && e.meter && o)) return null;
 					const i = Ht(o, e.meter.full_meter_duration),
 						l = !s,
-						d = o < ze || t,
+						d = o < Je || t,
 						m = this.state.timerDiff > 0;
 					return n.a.createElement("div", {
 						className: Yt.a.meterOverlay
@@ -3682,7 +3682,7 @@
 						hk: "1iD2Wj"
 					})))
 				},
-				Ja = e => {
+				za = e => {
 					let {
 						onClick: t
 					} = e;
@@ -3693,7 +3693,7 @@
 						hk: "FYgQy"
 					})))
 				},
-				za = e => {
+				Ja = e => {
 					let {
 						onClick: t
 					} = e;
@@ -4063,7 +4063,7 @@
 					className: ss.a.promptButtonSet
 				}, n.a.createElement(Xa, {
 					onClick: t
-				}), n.a.createElement(Ja, {
+				}), n.a.createElement(za, {
 					onClick: a
 				})))
 			}, Os = e => {
@@ -4076,7 +4076,7 @@
 					className: ss.a.awardPromptLabel
 				}, ns._("Award this broadcast to give it more airtime", null, {
 					hk: "20jmEz"
-				})), n.a.createElement(za, {
+				})), n.a.createElement(Ja, {
 					onClick: t
 				})))
 			}, ks = e => {
@@ -4113,7 +4113,7 @@
 				const {
 					id: a,
 					name: s
-				} = t, r = Object(o.d)(e => Object(_a.eb)(e, {
+				} = t, r = Object(o.d)(e => Object(_a.gb)(e, {
 					userName: s
 				})), i = js(r);
 				return n.a.createElement("div", {
@@ -4145,7 +4145,7 @@
 			})), js = e => {
 				const t = Object(o.d)(_a.i),
 					a = Object(o.d)(_a.z),
-					s = Object(o.d)(_a.V);
+					s = Object(o.d)(_a.X);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!s && !a))))
 			}, Ps = e => Object(o.d)(t => Object(ut.fb)(t, {
 				identifier: {
@@ -4583,7 +4583,7 @@
 						className: Ua.a.promptButtonSet
 					}, n.a.createElement(Xa, {
 						onClick: u
-					}), n.a.createElement(Ja, {
+					}), n.a.createElement(za, {
 						onClick: this.onCopyLink
 					}))) : null
 				}
@@ -4622,8 +4622,8 @@
 				Gs = a("./src/reddit/actions/page.ts"),
 				Ys = a("./src/reddit/actions/publicAccessNetwork/automute.ts"),
 				Xs = a("./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.tsx"),
-				Js = a("./src/reddit/components/CommentsChat/Loader.ts"),
-				zs = a("./src/reddit/components/CommentsChat/MessageInput/Loader.tsx");
+				zs = a("./src/reddit/components/CommentsChat/Loader.ts"),
+				Js = a("./src/reddit/components/CommentsChat/MessageInput/Loader.tsx");
 			const {
 				fbt: qs
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), Zs = G.a.wrapped(Y.f, "ModalFooter", Q.a), Qs = G.a.wrapped(Y.h, "ModalHeader", Q.a);
@@ -4635,7 +4635,7 @@
 				} = e;
 				return n.a.createElement(Y.d, null, n.a.createElement(Qs, null, n.a.createElement(q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 					className: Q.a.Title
-				}, s)), n.a.createElement(J.a, {
+				}, s)), n.a.createElement(z.a, {
 					onClick: t
 				}, n.a.createElement(Y.b, null)))), n.a.createElement("div", {
 					className: Q.a.ModalText
@@ -4904,7 +4904,7 @@
 						}),
 						className: Rn.a.streamingChat,
 						onClick: this.props.onChatClick
-					}, n.a.createElement(Js.a, {
+					}, n.a.createElement(zs.a, {
 						className: Rn.a.chatScroller,
 						emptyStateClassName: Rn.a.emptyState,
 						isLivestreaming: !0,
@@ -4913,7 +4913,7 @@
 						postId: e,
 						subredditId: d,
 						commentsPageKey: u
-					}), a && (this.shouldMuteChat ? n.a.createElement(mn, null) : n.a.createElement(zs.a, {
+					}), a && (this.shouldMuteChat ? n.a.createElement(mn, null) : n.a.createElement(Js.a, {
 						key: "chatCommentsForm",
 						postId: e,
 						replyComment: m,
@@ -5075,14 +5075,14 @@
 					return !!e && (t && e.post.id !== t.post.id || !t)
 				}
 			}
-			var Jn = Object(o.b)(null, (e, t) => ({
+			var zn = Object(o.b)(null, (e, t) => ({
 					preloadImages: t => e(((e, t) => async (a, s) => {
 						const n = await a(Hn(e, t));
 						a(Fn(n))
 					})(t))
 				}))(Xn),
-				zn = a("./src/reddit/components/PublicAccessNetwork/Theater/index.m.less"),
-				qn = a.n(zn);
+				Jn = a("./src/reddit/components/PublicAccessNetwork/Theater/index.m.less"),
+				qn = a.n(Jn);
 			const Zn = Object(x.a)(W.a, {
 					playerName: "RPAN Video Player"
 				}),
@@ -5337,7 +5337,7 @@
 					let D, V, B, F;
 					e && j ? (D = 1e3 * e.broadcast_time, V = N, B = L, F = e.post.title) : (D = void 0, V = void 0, B = !1, F = "RPAN Unavailable Video");
 					const H = e && e.meter && 10 * Math.round(e.estimated_remaining_time / 10),
-						U = o && e && e.estimated_remaining_time < Je && !r,
+						U = o && e && e.estimated_remaining_time < ze && !r,
 						W = void 0 !== H && H >= 0 && U ? qn.a["meterCritical".concat(H)] : void 0;
 					let K, G;
 					return O || y ? K = p ? Kn.Preview : s ? Kn.Loading : Kn.Static : U && (K = Kn.Static), O ? G = g.fbt._("video is loading", null, {
@@ -5360,7 +5360,7 @@
 						className: Object(c.a)(qn.a.pane, qn.a.leftPane)
 					}, n.a.createElement("div", {
 						className: qn.a.videoContainer
-					}, K && G && n.a.createElement(Jn, {
+					}, K && G && n.a.createElement(zn, {
 						previousStream: h,
 						currentStream: e,
 						nextStream: m,
@@ -5493,7 +5493,7 @@
 					e && this.isCurrentStreamWatchable() && t(e.post.id)
 				}
 				onChatClick() {
-					this.props.currentStream && (z.G() || this.props.toggleIntroChatModal(), this.props.sendEvent(Object(Ae.h)(this.props.currentStream, this.getPlaybackStats())))
+					this.props.currentStream && (J.G() || this.props.toggleIntroChatModal(), this.props.sendEvent(Object(Ae.h)(this.props.currentStream, this.getPlaybackStats())))
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Ae.l)(this.props.currentStream, this.getPlaybackStats()))
@@ -5840,4 +5840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4f1b3d005bb077e04f20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d5a3d49df575a763bba5.js.map

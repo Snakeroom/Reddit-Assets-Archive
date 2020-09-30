@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.436c118c89abc756d5d7.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.b2f16fa440f1982937d7.js
+// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -549,7 +549,7 @@
 				D = n.n(M);
 			const {
 				fbt: W
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = h.a.div("ButtonsContainer", D.a), H = h.a.div("Container", D.a), U = h.a.div("Description", D.a), G = h.a.div("PrivateSubredditDetails", D.a), I = h.a.div("PrivateSubredditDescription", D.a), q = h.a.h3("PrivateSubredditName", D.a), J = h.a.a("Link", D.a), V = h.a.wrapped(B.h, "LinkRouterButton", D.a), K = h.a.wrapped(B.g, "LinkButton", D.a), X = h.a.wrapped(B.k, "SecondaryLinkRouterButton", D.a), Y = h.a.wrapped(B.j, "SecondaryLinkButton", D.a), Z = h.a.wrapped(V, "GoHomeLinkButton", D.a), Q = h.a.img("Image", D.a), $ = h.a.img("ImagePlaceholder", D.a), ee = h.a.wrapped(V, "LeftLinkRouterButton", D.a), te = h.a.wrapped(K, "LeftLinkButton", D.a), ne = h.a.wrapped(Y, "SecondaryLeftLinkButton", D.a), se = h.a.wrapped(X, "SecondaryLeftLinkRouterButton", D.a), re = h.a.h3("Title", D.a), oe = h.a.div("PageBody", D.a), ie = h.a.div("QuarantineMessageWrapper", D.a), ae = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = h.a.div("ButtonsContainer", D.a), H = h.a.div("Container", D.a), U = h.a.div("Description", D.a), G = h.a.div("PrivateSubredditDetails", D.a), I = h.a.div("PrivateSubredditDescription", D.a), q = h.a.h3("PrivateSubredditName", D.a), J = h.a.a("Link", D.a), V = h.a.wrapped(B.h, "LinkRouterButton", D.a), X = h.a.wrapped(B.g, "LinkButton", D.a), K = h.a.wrapped(B.k, "SecondaryLinkRouterButton", D.a), Y = h.a.wrapped(B.j, "SecondaryLinkButton", D.a), Z = h.a.wrapped(V, "GoHomeLinkButton", D.a), Q = h.a.img("Image", D.a), $ = h.a.img("ImagePlaceholder", D.a), ee = h.a.wrapped(V, "LeftLinkRouterButton", D.a), te = h.a.wrapped(X, "LeftLinkButton", D.a), ne = h.a.wrapped(Y, "SecondaryLeftLinkButton", D.a), se = h.a.wrapped(K, "SecondaryLeftLinkRouterButton", D.a), re = h.a.h3("Title", D.a), oe = h.a.div("PageBody", D.a), ie = h.a.div("QuarantineMessageWrapper", D.a), ae = Object(d.c)({
 				isLoggedIn: F.G,
 				origin: z.l,
 				user: F.i
@@ -678,7 +678,7 @@
 								to: "/"
 							}, W._("No Thank You", null, {
 								hk: "4B26AR"
-							})), o.a.createElement(K, {
+							})), o.a.createElement(X, {
 								href: "".concat(s.a.redditUrl, "/prefs/update")
 							}, W._("Verify Email", null, {
 								hk: "1893cq"
@@ -823,7 +823,7 @@
 				y = g.a.wrapped(u.i, "SecondaryButton", b.a),
 				k = g.a.wrapped(l.c, "StyledTooltip", b.a),
 				x = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(p.ab)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(p.cb)(e),
 					userIsSuspended: p.M
 				});
 			t.a = Object(i.b)(x, (e, t) => {
@@ -1554,7 +1554,7 @@
 				f = n("./src/reddit/selectors/user.ts");
 			const b = n("./src/reddit/components/Snoobuilder/index.tsx").default,
 				g = Object(a.t)(),
-				v = Object(i.a)(a.B, f.V, (e, t) => {
+				v = Object(i.a)(a.B, f.X, (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -1602,4 +1602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.436c118c89abc756d5d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.b2f16fa440f1982937d7.js.map
