@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.210d2da98497489a30ed.js
-// Retrieved at 9/30/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.211c0580eed5be566b22.js
+// Retrieved at 9/30/2020, 5:20:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, t, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) t = i[l], Object.prototype.hasOwnProperty.call(n, t) && n[t] && P.push(n[t][0]), n[t] = 0;
@@ -996,7 +996,7 @@
 						EconTopAwardersModal: "cc5983d58e325599ca4b",
 						Coins: "093f563c1d79a0db4330",
 						CoinsMobile: "6f7363829e3fc3f842df",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "2666285bcc0af7f09970",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "8c7fc6be373d867f3d4c",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478": "bc8d043d03bb536ecb4b",
 						"FramedGild~GildModal": "189cb88cc3f958453a6a",
 						FramedGild: "11357106b976892a6a56",
@@ -1062,11 +1062,11 @@
 						RedesignChat: "0df2d1b0f53fce9fb0d6",
 						"vendors~CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki~reddit-components-Governance-Tra~2c7f90aa": "b20909f1455a3505bd30",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~StandalonePostPage~Subreddit": "163e57e27ed37da29b28",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "1f5798f6a1dcd5f3300d",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "4498e5ff931688414175",
 						CollectionCommentsPage: "de1dd118a64e4f1c7bf0",
 						CommentsPage: "48acebfe2d264affbdc9",
 						"Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit": "ce25b9ff9115e1e19e17",
-						Subreddit: "c9dffb92ab10ea2331c6",
+						Subreddit: "7d6640f2ccd8c1baf63b",
 						"vendors~SubredditWiki": "5c25679a62394e17f53f",
 						"SubredditWiki~reddit-components-Wiki-ModHubWikiManagement": "c532aa5e380c85336e6e",
 						"Frontpage~SubredditWiki": "54fbf372bb93733c7113",
@@ -1075,7 +1075,7 @@
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
 						ModerationPages: "2d462761666073c5fbbc",
 						"vendors~PostCreation~RichTextEditor": "f5d5345f614f740e35e6",
-						PostCreation: "b1192e7f538776b0fc65",
+						PostCreation: "d4169f7955e09ed04857",
 						"vendors~Multireddit": "c9ea46fd1c2e6dcd587d",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "9b2c89cf65bb1134f279",
 						Multireddit: "240073e43bdca6a4deb9",
@@ -1114,7 +1114,7 @@
 						GovernanceTransferPointsModal: "02167daab8217c8a0c80",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"LiveVideoPlayer~PublicAccessNetwork": "90f97d942d658eb82714",
-						PublicAccessNetwork: "99971ed3a8efbcca7ae0",
+						PublicAccessNetwork: "4f1b3d005bb077e04f20",
 						"vendors~ModListing": "c3f87928276a47214bb2",
 						ModListing: "bb737c4efa5902afe9a6",
 						"vendors~ModQueuePages": "707b386648ad89d65795",
@@ -1192,7 +1192,7 @@
 						"reddit-components-Governance-ClaimPointsBanner": "45ffc3e683fab0d99571",
 						"reddit-components-InFeedPostCreation": "44f6462d2e3df2515e8e",
 						"reddit-components-TabBadger-Component": "b1aa497fb89c4701cf14",
-						RpanListingUnit: "a88802b4e8c6861c485b",
+						RpanListingUnit: "6dd68af0312b0ab8d7d0",
 						AwardCreationModal: "27baa2f75d76336a7ac9",
 						"reddit-components-ModHub-Content-ModQueue": "b928aa593f9295830cd0",
 						"reddit-components-Wiki-ModHubWikiManagement": "f4426d516a8b061c035d",
@@ -1289,4 +1289,4 @@
 	var m = c;
 	d()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.210d2da98497489a30ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.211c0580eed5be566b22.js.map
