@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.44786670ac70cfab04fa.js
-// Retrieved at 9/29/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b337c1d5320e26df9676.js
+// Retrieved at 9/30/2020, 2:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -8945,38 +8945,39 @@
 					} = e.params;
 					ee.b[y] === ee.a.PROFILE ? Object(xe.d)(s(), t, e) : Object(xe.b)(s(), t, e)
 				}, Ot = (e, t, s, n) => async (r, a, i) => {
-					const c = a(),
-						o = Object(De.a)(e, t, s),
+					var c;
+					const o = a(),
+						d = Object(De.a)(e, t, s),
 						{
-							subredditName: d
+							subredditName: l
 						} = s,
-						l = c.commentsPage.keyToHeadCommentId.hasOwnProperty(o),
-						b = c.commentsPage.api.fullyLoaded[o],
-						O = c.commentsPage.api.error[o],
-						g = c.commentsPage.api.pending[o],
-						f = !Object(Ae.G)(c),
-						_ = Object(Ae.i)(c),
-						h = n === S.r.CHAT,
-						I = !!c.platform.lastPage;
-					if ((g || l && !O) && !(h && I)) {
-						if (l && !c.sidebarPromotedPosts.firstFetch) {
-							const t = Object(ve.i)(c) ? Me.a.COMMENTS_OVERLAY : Me.a.COMMENTS;
+						b = o.commentsPage.keyToHeadCommentId.hasOwnProperty(d),
+						O = o.commentsPage.api.fullyLoaded[d],
+						g = o.commentsPage.api.error[d],
+						f = o.commentsPage.api.pending[d],
+						_ = !Object(Ae.G)(o),
+						h = Object(Ae.i)(o),
+						I = n === S.r.CHAT,
+						v = !!o.platform.lastPage;
+					if ((f || b && !g) && !(I && v)) {
+						if (b && !o.sidebarPromotedPosts.firstFetch) {
+							const t = Object(ve.i)(o) ? Me.a.COMMENTS_OVERLAY : Me.a.COMMENTS;
 							window.addEventListener("load", () => {
 								r(Object(ke.b)(t)), Math.random() <= .01 && r(Object(ke.a)(e))
 							})
 						}
-						return void(b || r(mt(e, t, s)))
+						return void(O || r(mt(e, t, s)))
 					}
 					r(u.g());
-					const v = c.user.prefs.commentMode;
+					const T = o.user.prefs.commentMode;
 					r(ut({
-						key: o,
+						key: d,
 						postId: e,
-						commentMode: v
+						commentMode: T
 					}));
-					const T = Object.assign(Object.assign({}, s), h ? {
+					const w = Object.assign(Object.assign({}, s), I ? {
 						sort: S.r.LIVE
-					} : f ? {
+					} : _ ? {
 						sort: s.sort,
 						depth: 2
 					} : {
@@ -8985,111 +8986,112 @@
 						const t = Object(Se.N)(a(), {
 							postId: e
 						});
-						t && t.numComments && t.numComments > Je && (T.truncate = ze)
+						t && t.numComments && t.numComments > Je && (w.truncate = ze)
 					}
-					const w = Object(Ue.a)("comments", () => Object(j.a)(i.apiContext(), e, t, T, Object(Oe.a)(a()), Object(He.a)(a()))),
-						A = !f && _ && Object(E.b)(i.gqlContext(), Object(be.e)(_)) || null,
-						[D, P] = await Promise.all([w, A]);
-					let R;
-					if (r(Object(L.m)(D.status)), D.ok) {
-						const t = Object.keys(D.body.posts).filter(e => !!D.body.posts[e].isMeta),
-							s = D.body.posts[e];
+					const A = Object(Ue.a)("comments", () => Object(j.a)(i.apiContext(), e, t, w, Object(Oe.a)(a()), Object(He.a)(a()))),
+						D = !_ && h && Object(E.c)(i.gqlContext(), Object(be.e)(h)) || null,
+						[P, R] = await Promise.all([A, D]);
+					let k;
+					if (r(Object(L.m)(P.status)), P.ok) {
+						const t = Object.keys(P.body.posts).filter(e => !!P.body.posts[e].isMeta),
+							s = P.body.posts[e];
 						if (t.length) {
 							const e = await Object(m.a)(i.apiContext(), s.belongsTo.id, t);
-							e.ok && (R = e.body)
+							e.ok && (k = e.body)
 						}
-						if (P && P.ok) {
-							const e = P.body.data.redditorInfoByName.karma,
-								t = {
+						if (R && R.ok) {
+							const e = null === (c = R.body.data.redditorInfoByName) || void 0 === c ? void 0 : c.karma,
+								t = e ? {
 									awardeeKarma: e.fromAwardsReceived,
 									awarderKarma: e.fromAwardsGiven,
 									commentKarma: e.fromComments,
 									postKarma: e.fromPosts,
 									totalKarma: e.total
-								};
-							D.body && D.body.account && Object.assign(D.body.account, t)
+								} : E.a;
+							P.body && P.body.account && Object.assign(P.body.account, t)
 						}
-						const n = Object(se.a)(D.body, e, c);
+						const n = Object(se.a)(P.body, e, o);
 						r(lt(Object.assign({
-							key: o,
+							key: d,
 							postId: e,
-							meta: c.meta,
-							governance: R,
+							meta: o.meta,
+							governance: k,
 							shouldCollapse: n
-						}, D.body)))
+						}, P.body)))
 					} {
 						const n = Object(Se.N)(a(), {
 							postId: e
 						});
-						n && D.body.comments && Object.keys(D.body.comments).length < n.numComments ? r(mt(e, t, s)) : D.ok && r(ft({
-							key: o
+						n && P.body.comments && Object.keys(P.body.comments).length < n.numComments ? r(mt(e, t, s)) : P.ok && r(ft({
+							key: d
 						}));
-						const i = Object(ve.i)(c) ? Me.a.COMMENTS_OVERLAY : Me.a.COMMENTS;
+						const i = Object(ve.i)(o) ? Me.a.COMMENTS_OVERLAY : Me.a.COMMENTS;
 						r(Object(ke.b)(i)), Math.random() <= .01 && r(Object(ke.a)(e))
 					}
-					if (D.ok) {
-						r(Y.f(o));
+					if (P.ok) {
+						r(Y.f(d));
 						const t = Object(Se.N)(a(), {
 							postId: e
 						});
-						r(V.t(t, J.a.CommentsView)), t && "subreddit" === t.belongsTo.type && D.body.comments && await r(Object(C.a)({
-							commentIds: Object.keys(D.body.comments),
+						r(V.t(t, J.a.CommentsView)), t && "subreddit" === t.belongsTo.type && P.body.comments && await r(Object(C.a)({
+							commentIds: Object.keys(P.body.comments),
 							postIds: [t.id],
 							subredditId: t.belongsTo.id
 						}))
 					} else {
 						let e;
-						d && (r(Object(p.k)({
-							key: o
-						})), e = await Object(Ue.a)("subreddit", () => Object(y.a)(i.apiContext(), d, {})), r(Object(L.m)(e.status)), r(Object(p.f)(e, d))), r(bt(Object.assign({
-							error: D.error,
-							key: o
-						}, e ? e.body : D.body)))
+						l && (r(Object(p.k)({
+							key: d
+						})), e = await Object(Ue.a)("subreddit", () => Object(y.a)(i.apiContext(), l, {})), r(Object(L.m)(e.status)), r(Object(p.f)(e, l))), r(bt(Object.assign({
+							error: P.error,
+							key: d
+						}, e ? e.body : P.body)))
 					}
 				}, gt = "PAGE__COMMENTSPAGE_LOADED_FULL", ft = Object(N.a)(gt), mt = (e, t, s) => async (n, r, a) => {
-					const i = Object(De.a)(e, t, s),
-						c = r(),
-						o = Object(Ae.H)(c),
-						d = Object(Ae.i)(c),
-						u = Object(j.a)(a.apiContext(), e, t, s, Object(Oe.a)(c), Object(He.a)(c)),
-						l = o && d && Object(E.b)(a.gqlContext(), Object(be.e)(d)) || null,
-						[b, p] = await Promise.all([u, l]);
-					if (n(Object(L.m)(b.status)), b.ok) {
-						if (p && p.ok) {
-							const e = p.body.data.redditorInfoByName.karma,
-								t = {
+					var i;
+					const c = Object(De.a)(e, t, s),
+						o = r(),
+						d = Object(Ae.H)(o),
+						u = Object(Ae.i)(o),
+						l = Object(j.a)(a.apiContext(), e, t, s, Object(Oe.a)(o), Object(He.a)(o)),
+						b = d && u && Object(E.c)(a.gqlContext(), Object(be.e)(u)) || null,
+						[p, O] = await Promise.all([l, b]);
+					if (n(Object(L.m)(p.status)), p.ok) {
+						if (O && O.ok) {
+							const e = null === (i = O.body.data.redditorInfoByName) || void 0 === i ? void 0 : i.karma,
+								t = e ? {
 									awardeeKarma: e.fromAwardsReceived,
 									awarderKarma: e.fromAwardsGiven,
 									commentKarma: e.fromComments,
 									postKarma: e.fromPosts,
 									totalKarma: e.total
-								};
-							b.body && b.body.account && Object.assign(b.body.account, t)
+								} : E.a;
+							p.body && p.body.account && Object.assign(p.body.account, t)
 						}
-						const t = Object(se.a)(b.body, e, c);
+						const t = Object(se.a)(p.body, e, o);
 						n(lt(Object.assign({
-							key: i,
+							key: c,
 							postId: e,
-							meta: c.meta,
+							meta: o.meta,
 							shouldCollapse: t
-						}, b.body))), n(ft({
-							key: i
+						}, p.body))), n(ft({
+							key: c
 						}));
 						const s = r().posts.models[e],
 							a = s && Object(Se.ab)(r(), {
 								postId: s.id
 							});
-						s && "subreddit" === s.belongsTo.type && a && Object(Ee.a)(c, {
+						s && "subreddit" === s.belongsTo.type && a && Object(Ee.a)(o, {
 							subredditId: a.id
-						}) && n(Object(f.h)(a.name, a.id)), s && "subreddit" === s.belongsTo.type && b.body.comments && await n(Object(C.a)({
-							commentIds: Object.keys(b.body.comments),
+						}) && n(Object(f.h)(a.name, a.id)), s && "subreddit" === s.belongsTo.type && p.body.comments && await n(Object(C.a)({
+							commentIds: Object.keys(p.body.comments),
 							postIds: [s.id],
 							subredditId: s.belongsTo.id
 						}))
 					} else n(bt(Object.assign({
-						error: b.error,
-						key: i
-					}, b.body)))
+						error: p.error,
+						key: c
+					}, p.body)))
 				}, jt = e => async (t, s, n) => {
 					await t(Object(K.c)(e, !0))
 				}, _t = () => async (e, t, s) => {
@@ -11050,37 +11052,38 @@
 					}
 				}
 			}, me = "PAGE__SUBREDDIT_PENDING", je = "PAGE__SUBREDDIT_LOADED", _e = "PAGE__SUBREDDIT_FAILED", he = Object(l.a)(me), ye = Object(l.a)(je), Ee = Object(l.a)(_e), Ie = (e, t, s, r) => async (a, i, d) => {
-				const l = i(),
-					b = Object(L.H)(l),
-					p = l.listings.postOrder.api.pending[e],
-					f = Object(L.i)(l);
-				if (p) return;
-				const m = t !== q.c.All && t !== q.c.Popular || !l.posts.recent.length ? s : Object.assign(Object.assign({}, s), {
-					recentPostIds: l.posts.recent
+				var l;
+				const b = i(),
+					p = Object(L.H)(b),
+					f = b.listings.postOrder.api.pending[e],
+					m = Object(L.i)(b);
+				if (f) return;
+				const E = t !== q.c.All && t !== q.c.Popular || !b.posts.recent.length ? s : Object.assign(Object.assign({}, s), {
+					recentPostIds: b.posts.recent
 				});
-				m.layout = H.e[Object(K.N)(l, {})], a(he({
+				E.layout = H.e[Object(K.N)(b, {})], a(he({
 					key: e
 				}));
-				const E = Object(ce.b)(l),
-					S = E ? () => Object(Y.b)(d.gqlContext(), Object(Y.c)(l, t, m), b) : () => Object(Y.a)(d.apiContext(), t, m),
-					w = b && f && !E ? Object(z.b)(d.gqlContext(), Object(ne.e)(f)) : null,
-					[A, D] = await Promise.all([Object(Z.a)("subreddit", S), w]),
-					R = A.body;
-				a(I.m(A.status));
-				const k = "error-".concat(e),
-					x = Object(u.a)(t) || c()(R.subreddits, e => e.name.toLowerCase() === t.toLowerCase());
-				if (A.ok && x) {
-					if (!Object(u.a)(t) && Object(ie.a)(l)) {
-						const e = Object.keys(R.subredditAboutInfo)[0];
+				const S = Object(ce.b)(b),
+					w = S ? () => Object(Y.b)(d.gqlContext(), Object(Y.c)(b, t, E), p) : () => Object(Y.a)(d.apiContext(), t, E),
+					A = p && m && !S ? Object(z.c)(d.gqlContext(), Object(ne.e)(m)) : null,
+					[D, R] = await Promise.all([Object(Z.a)("subreddit", w), A]),
+					k = D.body;
+				a(I.m(D.status));
+				const x = "error-".concat(e),
+					U = Object(u.a)(t) || c()(k.subreddits, e => e.name.toLowerCase() === t.toLowerCase());
+				if (D.ok && U) {
+					if (!Object(u.a)(t) && Object(ie.a)(b)) {
+						const e = Object.keys(k.subredditAboutInfo)[0];
 						await Promise.all([a(Object(h.g)()), a(Object(h.f)(e, {
 							fullData: !0
 						})), a(Object(y.a)(e, ee.a.Powerups))])
 					}
 					let s;
-					const n = R.postIds.filter(e => !!R.posts[e].isMeta);
+					const n = k.postIds.filter(e => !!k.posts[e].isMeta);
 					if (n.length) {
-						const e = Object.keys(R.subreddits).reduce((e, s) => {
-							const n = R.subreddits[s];
+						const e = Object.keys(k.subreddits).reduce((e, s) => {
+							const n = k.subreddits[s];
 							return n.name.toLowerCase() === t.toLowerCase() ? n.id : e
 						}, null);
 						if (e) {
@@ -11088,56 +11091,56 @@
 							t.ok && (s = t.body)
 						}
 					}
-					if (D && D.ok) {
-						const e = D.body.data.redditorInfoByName.karma,
-							t = {
+					if (R && R.ok) {
+						const e = null === (l = R.body.data.redditorInfoByName) || void 0 === l ? void 0 : l.karma,
+							t = e ? {
 								awardeeKarma: e.fromAwardsReceived,
 								awarderKarma: e.fromAwardsGiven,
 								commentKarma: e.fromComments,
 								postKarma: e.fromPosts,
 								totalKarma: e.total
-							};
-						R.account && Object.assign(R.account, t)
+							} : z.a;
+						k.account && Object.assign(k.account, t)
 					}
 					if (a(ye(Object.assign(Object.assign({
 							key: e,
-							meta: l.meta,
+							meta: b.meta,
 							governance: s
-						}, R), {
-							postIds: R.postIds
+						}, k), {
+							postIds: k.postIds
 						}))), !Object(u.a)(t)) {
 						const e = Object(N.G)(i(), t);
-						!!Object(N.R)(l, {
+						!!Object(N.R)(b, {
 							subredditId: e
 						}) || await T.o(t)(a, i, d);
-						const s = Object(g.c)(R.posts, e),
-							n = Object(g.b)(R.structuredStyles),
+						const s = Object(g.c)(k.posts, e),
+							n = Object(g.b)(k.structuredStyles),
 							r = (n ? Object(g.d)(n) : []).concat(s);
 						a(Object(g.a)(r, e))
 					}
-					r && a(C.f(k)), a(Object(O.b)(re.a.SUBREDDIT)), a(Object(_.p)());
+					r && a(C.f(x)), a(Object(O.b)(re.a.SUBREDDIT)), a(Object(_.p)());
 					const c = Object(N.G)(i(), t);
 					if (c) {
 						const e = [a(Object(j.a)({
 							subredditId: c,
-							postIds: R.postIds,
+							postIds: k.postIds,
 							skip: ["subscription"]
 						}))];
-						E || e.push(a(Object(F.c)(c))), le(i(), {
+						S || e.push(a(Object(F.c)(c))), le(i(), {
 							subredditId: c
 						}) && e.push(a(Object(v.d)(c))), Object(pe.a)(i(), {
 							subredditId: c
 						}) && e.push(a(Object(G.h)(t, c)), a(Object(B.k)(c, $.a.idCard))), await Promise.all(e)
 					}
 				} else {
-					if (403 === A.status || 404 === A.status || 451 === A.status) return void a(fe(A, t));
+					if (403 === D.status || 404 === D.status || 451 === D.status) return void a(fe(D, t));
 					a(Ee(Object.assign({
-						error: !A.ok && A.error || {
+						error: !D.ok && D.error || {
 							type: o.E.NOT_FOUND_ERROR
 						},
 						key: e
-					}, R))), r && a(C.e({
-						id: k,
+					}, k))), r && a(C.e({
+						id: x,
 						kind: P.b.Error,
 						text: n.fbt._("Sorry, we couldn't load posts for this page.", null, {
 							hk: "CvZvm"
@@ -14685,17 +14688,18 @@
 						apiContext: c,
 						gqlContext: d
 					} = i;
-					const u = n();
-					if (!!(Object(E.j)(u, {
+					var u, l;
+					const b = n();
+					if (!!(Object(E.j)(b, {
 							profileName: e
-						}) && Object(E.h)(u, {
+						}) && Object(E.h)(b, {
 							profileName: e
-						}) && Object(v.eb)(u, {
+						}) && Object(v.eb)(b, {
 							userName: e
 						})) && !t) return;
-					const [l, b] = await Promise.all([Object(o.a)(c(), e), Object(o.b)(d(), e)]);
-					if (l.ok) {
-						l.body && l.body.data && l.body.data.is_suspended && s(Object(a.u)({
+					const [p, O] = await Promise.all([Object(o.b)(c(), e), Object(o.c)(d(), e)]);
+					if (p.ok) {
+						p.body && p.body.data && p.body.data.is_suspended && s(Object(a.u)({
 							profileName: e
 						}));
 						const t = function(e) {
@@ -14714,22 +14718,22 @@
 							}, t.subreddit ? {
 								profile: Object(h.a)(t.subreddit, t.name)
 							} : null)
-						}(l.body);
-						if (b.ok && b.body.data.redditorInfoByName.karma) {
-							const e = b.body.data.redditorInfoByName.karma,
-								s = {
+						}(p.body);
+						if (O.ok && (null === (u = O.body.data.redditorInfoByName) || void 0 === u ? void 0 : u.karma)) {
+							const e = null === (l = O.body.data.redditorInfoByName) || void 0 === l ? void 0 : l.karma,
+								s = e ? {
 									awardeeKarma: e.fromAwardsReceived,
 									awarderKarma: e.fromAwardsGiven,
 									commentKarma: e.fromComments,
 									postKarma: e.fromPosts,
 									totalKarma: e.total
-								};
+								} : o.a;
 							Object.assign(t.about, s), Object.assign(t.user, s)
 						}
 						s(T(t))
-					} else l.error && l.error.type === r.m && s(Object(a.s)({
+					} else p.error && p.error.type === r.m && s(Object(a.s)({
 						profileName: e
-					})), s(w(l.body))
+					})), s(w(p.body))
 				}, N = e => async (t, s, n) => {
 					let {
 						apiContext: a
@@ -14850,14 +14854,15 @@
 						error: b.error
 					})))
 				}, H = e => async (t, s, n) => {
-					const r = e.toLowerCase(),
-						a = await Object(o.b)(n.gqlContext(), r);
-					if (a.ok && a.body) {
-						const e = a.body.data.redditorInfoByName.karma;
+					var r;
+					const a = e.toLowerCase(),
+						c = await Object(o.c)(n.gqlContext(), a);
+					if (c.ok && c.body) {
+						const e = null === (r = c.body.data.redditorInfoByName) || void 0 === r ? void 0 : r.karma;
 						t(Object(i.awardKarmaUpdated)({
-							awardeeKarma: e.fromAwardsReceived,
-							awarderKarma: e.fromAwardsGiven,
-							userName: r
+							awardeeKarma: (null == e ? void 0 : e.fromAwardsReceived) || 0,
+							awarderKarma: (null == e ? void 0 : e.fromAwardsGiven) || 0,
+							userName: a
 						}))
 					}
 				}
@@ -24207,10 +24212,12 @@
 		},
 		"./src/reddit/endpoints/profile/info.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
+			s.d(t, "b", (function() {
 				return d
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "a", (function() {
 				return u
+			})), s.d(t, "c", (function() {
+				return l
 			}));
 			var n = s("./src/graphql/operations/RedditorKarma.json"),
 				r = s("./src/lib/constants/index.ts"),
@@ -24227,7 +24234,14 @@
 						raw_json: 1
 					}
 				}),
-				u = (e, t) => Object(i.a)(e, Object.assign(Object.assign({}, n), {
+				u = {
+					awardeeKarma: 0,
+					awarderKarma: 0,
+					commentKarma: 0,
+					postKarma: 0,
+					totalKarma: 0
+				},
+				l = (e, t) => Object(i.a)(e, Object.assign(Object.assign({}, n), {
 					variables: {
 						name: t
 					}
@@ -56028,4 +56042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.44786670ac70cfab04fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b337c1d5320e26df9676.js.map
