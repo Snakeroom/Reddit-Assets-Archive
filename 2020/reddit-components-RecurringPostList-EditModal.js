@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.7fc65c88f961b4ee13c2.js
-// Retrieved at 8/24/2020, 4:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.be5df0eca432e54e8eb5.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RecurringPostList-EditModal"], {
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, n) {
@@ -597,11 +597,11 @@
 						hk: "1ruCCL"
 					})), o.a.createElement("span", {
 						className: F.a.rightButtons
-					}, o.a.createElement(k.i, {
+					}, o.a.createElement(k.l, {
 						onClick: this.onCancel
 					}, T._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(k.f, {
+					})), o.a.createElement(k.i, {
 						className: F.a.updateButton,
 						onClick: this.onUpdate,
 						disabled: t || !!S
@@ -1328,4 +1328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-RecurringPostList-EditModal.7fc65c88f961b4ee13c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.be5df0eca432e54e8eb5.js.map

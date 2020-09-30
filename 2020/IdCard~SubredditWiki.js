@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.ab5f64b73394f72483b2.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.c8fca3e4b5fce9930c80.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -102,7 +102,7 @@
 				x = n.n(h),
 				g = n("./src/lib/lessComponent.tsx");
 			const f = "create-community-button",
-				T = g.a.wrapped(u.i, "SecondaryButton", x.a),
+				T = g.a.wrapped(u.l, "SecondaryButton", x.a),
 				_ = g.a.wrapped(c.c, "StyledTooltip", x.a),
 				y = Object(a.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
@@ -628,4 +628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.ab5f64b73394f72483b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard~SubredditWiki.c8fca3e4b5fce9930c80.js.map

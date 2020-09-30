@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.482703771ac65b32e445.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.832f92999733837e8ba4.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -484,7 +484,7 @@
 					style: {
 						backgroundImage: t
 					}
-				}), s.a.createElement(g.f, {
+				}), s.a.createElement(g.i, {
 					className: C.a.button,
 					onClick: e.onNextStep
 				}, x._("Start", null, {
@@ -527,7 +527,7 @@
 						style: {
 							backgroundImage: e
 						}
-					}), s.a.createElement(g.i, {
+					}), s.a.createElement(g.l, {
 						className: C.a.button,
 						onClick: l.b
 					}, j._("Connect", null, {
@@ -590,21 +590,21 @@
 						style: {
 							backgroundImage: n
 						}
-					}), t ? s.a.createElement(g.f, {
+					}), t ? s.a.createElement(g.i, {
 						className: C.a.button,
 						onClick: this.props.onNextStep
 					}, M._("Continue", null, {
 						hk: "4aMeJj"
 					}), s.a.createElement(v.a, {
 						className: C.a.buttonIcon
-					})) : e ? s.a.createElement(g.f, {
+					})) : e ? s.a.createElement(g.i, {
 						className: C.a.button,
 						onClick: N.a
 					}, M._("Reload page", null, {
 						hk: "14fa9z"
 					}), s.a.createElement(E.a, {
 						className: C.a.buttonIcon
-					})) : s.a.createElement(g.j, {
+					})) : s.a.createElement(g.m, {
 						className: C.a.button,
 						href: S,
 						target: "_blank",
@@ -666,7 +666,7 @@
 					style: {
 						backgroundImage: t
 					}
-				}), s.a.createElement(g.f, {
+				}), s.a.createElement(g.i, {
 					className: C.a.button,
 					onClick: () => a ? Object(l.i)(a).then(n) : n()
 				}, a ? A._("Track Donuts", null, {
@@ -758,7 +758,7 @@
 						onClick: this.toggleApprovalCheckbox
 					}, U.fbt._("I understand and agree to allow Reddit to publicly display my wallet address linked to my username", null, {
 						hk: "1fQEnc"
-					}))), s.a.createElement(g.i, {
+					}))), s.a.createElement(g.l, {
 						className: C.a.button,
 						onClick: this.runVerification,
 						disabled: !e
@@ -802,7 +802,7 @@
 					style: {
 						backgroundImage: t
 					}
-				}), s.a.createElement(g.i, {
+				}), s.a.createElement(g.l, {
 					className: C.a.button,
 					onClick: e.onNextStep
 				}, z._("Next", null, {
@@ -1515,4 +1515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.482703771ac65b32e445.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.832f92999733837e8ba4.js.map

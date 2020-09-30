@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmotesTooltip.082f92cfc703698b6e4c.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmotesTooltip.9361677d4d8dc8764e1f.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/tooltip.m.less": function(e, t, o) {
@@ -276,7 +276,7 @@
 						className: k.a.upsellMoreEmotesImg,
 						src: e,
 						key: "".concat(e, "_").concat(t)
-					}))), a.a.createElement(g.h, {
+					}))), a.a.createElement(g.k, {
 						className: k.a.upsellMoreEmotesButton,
 						to: p,
 						onClick: e => {
@@ -403,4 +403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=EmotesTooltip.082f92cfc703698b6e4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmotesTooltip.9361677d4d8dc8764e1f.js.map

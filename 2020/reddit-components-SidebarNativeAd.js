@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.75a77292e777ecd7bc00.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.51b9aafd2bb9e96c32dd.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1464,7 +1464,7 @@
 						shouldReverseColor: s
 					} = e, n = f(e, ["small", "shouldReverseColor"]);
 					const a = Object(r.b)(),
-						i = s ? c.i : c.f;
+						i = s ? c.l : c.i;
 					return o.a.createElement(i, v({}, n, {
 						className: Object(b.a)(n.className, {
 							[p.a.isLarge]: !t
@@ -1479,7 +1479,7 @@
 						shouldReverseColor: n
 					} = e, a = f(e, ["small", "belongsToType", "shouldReverseColor"]);
 					const i = Object(r.b)(),
-						d = n ? c.f : c.i;
+						d = n ? c.i : c.l;
 					return o.a.createElement(d, v({}, a, {
 						className: Object(b.a)(a.className, {
 							[p.a.isLarge]: !t
@@ -1825,4 +1825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.75a77292e777ecd7bc00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.51b9aafd2bb9e96c32dd.js.map

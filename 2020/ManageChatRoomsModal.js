@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.30e40e6d6e6fea018ff5.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.cae71bb551de2ceb32a1.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ManageChatRoomsModal"], {
 		"./node_modules/lodash/_basePullAt.js": function(e, t, n) {
@@ -190,7 +190,7 @@
 				_ = n("./src/reddit/components/ManageChatRoomsModal/_Controls.m.less"),
 				x = n.n(_);
 			const E = i.a.button("DeleteButton", x.a),
-				f = i.a.wrapped(b.f, "PrimaryButton", x.a),
+				f = i.a.wrapped(b.i, "PrimaryButton", x.a),
 				S = i.a.wrapped(g.i, "Textarea", x.a),
 				k = i.a.input("ChatSettingsInput", x.a),
 				M = i.a.input("ChatSettingsLongerInput", x.a),
@@ -506,7 +506,7 @@
 				}))(Object(ee.c)(pe)),
 				be = n("./src/reddit/components/ManageChatRoomsModal/Delete.m.less"),
 				Ce = n.n(be);
-			const _e = i.a.wrapped(b.f, "PrimaryButton", Ce.a),
+			const _e = i.a.wrapped(b.i, "PrimaryButton", Ce.a),
 				xe = Object(r.c)({
 					subredditChannel: ie.b
 				});
@@ -1021,7 +1021,7 @@
 						hk: "42JzPG"
 					})), s.a.createElement(J, null, c.fbt._("Messages with any words in your custom will fail to send", null, {
 						hk: "2WMyfF"
-					}))), s.a.createElement(Y, null, s.a.createElement(b.i, {
+					}))), s.a.createElement(Y, null, s.a.createElement(b.l, {
 						onClick: this.onShowEditBannedWords,
 						type: "button"
 					}, c.fbt._("Edit Words", null, {
@@ -1030,7 +1030,7 @@
 						hk: "4zFW2c"
 					})), s.a.createElement(J, null, c.fbt._("Messages caught by regular expression rules will fail to send", null, {
 						hk: "xkxd3"
-					}))), s.a.createElement(Y, null, s.a.createElement(b.i, {
+					}))), s.a.createElement(Y, null, s.a.createElement(b.l, {
 						disabled: 0 === e(),
 						onClick: () => this.onShowEditRegexRules(),
 						type: "button"
@@ -1055,13 +1055,13 @@
 						hk: "20PkWW"
 					})), s.a.createElement(J, null, c.fbt._("Allow or disallow links from domains", null, {
 						hk: "41gK9b"
-					})), a === Be.a.ALLOW_APPROVED_DOMAINS ? s.a.createElement(b.i, {
+					})), a === Be.a.ALLOW_APPROVED_DOMAINS ? s.a.createElement(b.l, {
 						onClick: this.onShowEditDomains,
 						tabIndex: 0,
 						type: "button"
 					}, c.fbt._("Edit Approved Domains", null, {
 						hk: "3BY1XV"
-					})) : a === Be.a.BLOCK_BANNED_DOMAINS ? s.a.createElement(b.i, {
+					})) : a === Be.a.BLOCK_BANNED_DOMAINS ? s.a.createElement(b.l, {
 						onClick: this.onShowEditDomains,
 						tabIndex: 0,
 						type: "button"
@@ -1403,7 +1403,7 @@
 				y = n.n(D);
 			const {
 				fbt: L
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = d.a.wrapped(g.g, "ModalFormItem", y.a), R = d.a.wrapped(x.f, "PrimaryButton", y.a), A = d.a.wrapped(g.o, "ModalText", y.a), N = d.a.a("ItemLink", y.a), B = d.a.p("Detail", y.a), P = d.a.p("DescText", y.a), F = d.a.div("Title", y.a), U = d.a.div("Header", y.a), H = d.a.wrapped(S.a, "ChatIcon", y.a), K = d.a.wrapped(k.a, "PlanetIcon", y.a), W = d.a.wrapped(f.a, "Pencil", y.a), V = d.a.wrapped(M.a, "Group", y.a), G = d.a.wrapped(v.a, "Key", y.a), z = d.a.wrapped(b.b, "SubredditIcon", y.a), Z = d.a.button("EditButton", y.a), X = d.a.button("ShowAllLink", y.a), J = d.a.span("ChannelName", y.a), q = d.a.div("HeaderText", y.a);
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = d.a.wrapped(g.g, "ModalFormItem", y.a), R = d.a.wrapped(x.i, "PrimaryButton", y.a), A = d.a.wrapped(g.o, "ModalText", y.a), N = d.a.a("ItemLink", y.a), B = d.a.p("Detail", y.a), P = d.a.p("DescText", y.a), F = d.a.div("Title", y.a), U = d.a.div("Header", y.a), H = d.a.wrapped(S.a, "ChatIcon", y.a), K = d.a.wrapped(k.a, "PlanetIcon", y.a), W = d.a.wrapped(f.a, "Pencil", y.a), V = d.a.wrapped(M.a, "Group", y.a), G = d.a.wrapped(v.a, "Key", y.a), z = d.a.wrapped(b.b, "SubredditIcon", y.a), Z = d.a.button("EditButton", y.a), X = d.a.button("ShowAllLink", y.a), J = d.a.span("ChannelName", y.a), q = d.a.div("HeaderText", y.a);
 			var Q;
 			! function(e) {
 				e[e.Modal = 0] = "Modal", e[e.Widget = 1] = "Widget"
@@ -1784,4 +1784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.30e40e6d6e6fea018ff5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ManageChatRoomsModal.cae71bb551de2ceb32a1.js.map

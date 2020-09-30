@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.0108fc396af152f3330c.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.7350891aaffe2ab8843f.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -502,7 +502,7 @@
 						onClick: this.props.onClose
 					}, B.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(h.f, {
+					})), o.a.createElement(h.i, {
 						onClick: this.onSaveButtonClick,
 						disabled: this.state.isPending || !s
 					}, this.state.isPending ? o.a.createElement(Y.a, {
@@ -1150,11 +1150,11 @@
 						templateDraft: s
 					}), o.a.createElement("div", {
 						className: ht.a.buttonsRow
-					}, o.a.createElement(h.i, {
+					}, o.a.createElement(h.l, {
 						onClick: this.props.onCancel
 					}, B.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(h.f, {
+					})), o.a.createElement(h.i, {
 						disabled: this.props.isSavePending || r,
 						onClick: this.props.onSave
 					}, this.props.isSavePending ? o.a.createElement(Y.a, {
@@ -1211,17 +1211,17 @@
 						className: Tt.a.settingsCell
 					}, Et(s, e)), o.a.createElement("div", {
 						className: Tt.a.flairIdCell
-					}, o.a.createElement(h.n, {
+					}, o.a.createElement(h.o, {
 						disabled: !this.props.flairTemplate.id,
 						onClick: this.onCopyIdButtonClick
 					}, B.fbt._("Copy Id", null, {
 						hk: "1F6Ntm"
-					})), o.a.createElement(h.n, {
+					})), o.a.createElement(h.o, {
 						disabled: t || a,
 						onClick: this.onStartEditButtonClick
 					}, B.fbt._("Edit", null, {
 						hk: "1nftDt"
-					})), o.a.createElement(h.n, {
+					})), o.a.createElement(h.o, {
 						className: Tt.a.removeButton,
 						disabled: a,
 						onClick: this.onRemoveButtonClick
@@ -1406,28 +1406,28 @@
 						className: It.a.container
 					}, o.a.createElement(c.c, {
 						className: It.a.topBar
-					}, s === Mt.Reordering ? o.a.createElement(o.a.Fragment, null, o.a.createElement(h.i, {
+					}, s === Mt.Reordering ? o.a.createElement(o.a.Fragment, null, o.a.createElement(h.l, {
 						onClick: this.onCancelReorderingClick
 					}, B.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(h.f, {
+					})), o.a.createElement(h.i, {
 						disabled: !this.state.numTemplatesReordered,
 						onClick: this.onSaveCurrentOrderClick
 					}, B.fbt._("Save", null, {
 						hk: "3gwTS0"
-					}))) : o.a.createElement(o.a.Fragment, null, o.a.createElement(h.i, {
+					}))) : o.a.createElement(o.a.Fragment, null, o.a.createElement(h.l, {
 						className: It.a.settingsButton,
 						onClick: this.onSettingsButtonClick
 					}, m ? B.fbt._("User flair settings", null, {
 						hk: "nqCOM"
 					}) : B.fbt._("Post flair settings", null, {
 						hk: "m80j6"
-					})), o.a.createElement(h.i, {
+					})), o.a.createElement(h.l, {
 						disabled: s !== Mt.Default || t.length < 2,
 						onClick: this.onReorderButtonClick
 					}, B.fbt._("Reorder", null, {
 						hk: "1tQe48"
-					})), o.a.createElement(h.f, {
+					})), o.a.createElement(h.i, {
 						disabled: s !== Mt.Default || E,
 						onClick: this.onAddNewTemplateButtonClick,
 						title: E ? B.fbt._("Maximum number of templates reached", null, {
@@ -2053,4 +2053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.0108fc396af152f3330c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.7350891aaffe2ab8843f.js.map

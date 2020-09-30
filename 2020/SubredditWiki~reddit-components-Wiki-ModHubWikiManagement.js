@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.c532aa5e380c85336e6e.js
-// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.37ec9bb403a4e47dc976.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
@@ -341,20 +341,20 @@
 					}, a.a.createElement("div", {
 						ref: this.reasonElementRef,
 						className: W.a.reasonText
-					}, o.reason), !m && a.a.createElement(b.d, {
+					}, o.reason), !m && a.a.createElement(b.g, {
 						className: W.a.moreButton,
 						onClick: this.onShowMoreButtonClick
 					}, n.fbt._("more", null, {
 						hk: "2IGYPS"
 					})))), a.a.createElement("td", null, a.a.createElement("div", {
 						className: W.a.buttons
-					}, a.a.createElement(b.o, {
+					}, a.a.createElement(b.p, {
 						className: W.a.viewButton,
 						onClick: this.onViewClick,
 						to: p
 					}, n.fbt._("View", null, {
 						hk: "4imNnh"
-					})), k && a.a.createElement(a.a.Fragment, null, a.a.createElement(b.n, {
+					})), k && a.a.createElement(a.a.Fragment, null, a.a.createElement(b.o, {
 						className: W.a.hideShowButton,
 						disabled: this.state.isHideRequestPending,
 						onClick: this.onToggleHiddenClick
@@ -362,7 +362,7 @@
 						hk: "3YKyhU"
 					}) : n.fbt._("Hide", null, {
 						hk: "30nwHP"
-					})), a.a.createElement(b.n, {
+					})), a.a.createElement(b.o, {
 						className: W.a.revertButton,
 						onClick: this.onRevertClick
 					}, n.fbt._("Revert", null, {
@@ -506,7 +506,7 @@
 						className: W.a.content
 					}, !o && a.a.createElement("div", {
 						className: W.a.compareBar
-					}, a.a.createElement(b.o, {
+					}, a.a.createElement(b.p, {
 						className: W.a.compareButton,
 						disabled: k.length < 2,
 						onClick: this.onCompareClick,
@@ -1109,7 +1109,7 @@
 						onClick: this.props.onCancel
 					}, n.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), a.a.createElement(y.f, {
+					})), a.a.createElement(y.i, {
 						onClick: this.onSaveButtonClick,
 						disabled: e
 					}, e ? a.a.createElement(D.a, {
@@ -1306,12 +1306,12 @@
 						className: Object(c.a)(J.a.container, this.props.className)
 					}, a.a.createElement("div", {
 						className: Object(c.a)(this.props.topBarClassName, J.a.topBar)
-					}, a.a.createElement(y.i, {
+					}, a.a.createElement(y.l, {
 						onClick: this.onCancel,
 						disabled: d
 					}, n.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), a.a.createElement(y.f, {
+					})), a.a.createElement(y.i, {
 						disabled: !f,
 						onClick: this.showRevisionReasonModal
 					}, n.fbt._("Save", null, {
@@ -1596,12 +1596,12 @@
 						revision: i.revision
 					}), o.a.createElement("div", {
 						className: M.a.flexSpacer
-					}), u && o.a.createElement(b.k, {
+					}), u && o.a.createElement(b.n, {
 						className: M.a.button,
 						to: "/r/".concat(r, "/about/wiki/settings/").concat(a)
 					}, n.fbt._("Page settings", null, {
 						hk: "2IAvWU"
-					})), l && m && o.a.createElement(b.h, {
+					})), l && m && o.a.createElement(b.k, {
 						className: M.a.button,
 						to: Object(s.c)(g, {
 							[p.a]: !0
@@ -1650,11 +1650,11 @@
 					title: d
 				} = e;
 				let l = null;
-				return i && t ? l = n.createElement(s.h, {
+				return i && t ? l = n.createElement(s.k, {
 					className: o.a.button,
 					onClick: e.onButtonClick,
 					to: t
-				}, i) : i && c && (l = n.createElement(s.f, {
+				}, i) : i && c && (l = n.createElement(s.i, {
 					className: o.a.button,
 					onClick: e.onButtonClick
 				}, i)), n.createElement("div", {
@@ -1724,7 +1724,7 @@
 				} = e;
 				return s.a.createElement("div", {
 					className: Object(a.a)(n, c.a.container)
-				}, r, i && t && s.a.createElement(o.o, {
+				}, r, i && t && s.a.createElement(o.p, {
 					className: c.a.linkButton,
 					to: t
 				}, i))
@@ -1931,4 +1931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.c532aa5e380c85336e6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.37ec9bb403a4e47dc976.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.9e65d35fdf521d2d77f1.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.32afeddb1374e9526959.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -382,7 +382,7 @@
 					className: x.a.description
 				}, T._("Get a Special Membership to use GIFs in all of your comments {subredditName} .", [T._param("subredditName", "r/".concat(e.subredditName))], {
 					hk: "dQagV"
-				})), n.a.createElement(u.o, {
+				})), n.a.createElement(u.p, {
 					className: x.a.unlockButton,
 					to: Object(m.a)(e.subredditName, e.correlationId)
 				}, n.a.createElement(f.a, {
@@ -494,4 +494,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.9e65d35fdf521d2d77f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.32afeddb1374e9526959.js.map

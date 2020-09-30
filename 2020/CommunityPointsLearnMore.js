@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.97b0a0fd4fb1a35726fc.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b217a9bfb104a60cc790.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Governance/TransactionModals/BaseTransactionModal/Bullet.tsx": function(e, t, a) {
@@ -464,7 +464,7 @@
 					className: M.a.title
 				}, h), s.a.createElement(_, {
 					onComplete: () => t(!0)
-				}), e && s.a.createElement(s.a.Fragment, null, s.a.createElement(l.f, {
+				}), e && s.a.createElement(s.a.Fragment, null, s.a.createElement(l.i, {
 					className: M.a.createVaultButton,
 					onClick: () => {
 						g(Object(d.c)()), p ? window.location.href = "".concat(r.a.redditUrl, "/vault/") : b(!0)
@@ -478,4 +478,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.97b0a0fd4fb1a35726fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b217a9bfb104a60cc790.js.map

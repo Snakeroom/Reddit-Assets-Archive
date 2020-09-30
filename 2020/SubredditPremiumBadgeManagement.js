@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.1f5ee1797f708d07a3c4.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.e6a281d4e164ae075650.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -75,8 +75,8 @@
 					LoadingComponent: () => null,
 					getComponent: () => a.e("CustomBadgeHovercardTooltip").then(a.bind(null, "./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/tooltip.tsx")).then(e => e.default)
 				}),
-				f = a("./src/reddit/components/Badges/UserDisplay/index.m.less"),
-				y = a.n(f);
+				y = a("./src/reddit/components/Badges/UserDisplay/index.m.less"),
+				f = a.n(y);
 			const E = "add-custom-badge-tooltip",
 				x = 100,
 				_ = 2 * x;
@@ -94,22 +94,22 @@
 				}
 				render() {
 					if (this.props.usePlaceholder && !this.props.badges.length) return n.a.createElement("img", {
-						className: Object(r.a)(y.a.image, this.props.className),
+						className: Object(r.a)(f.a.image, this.props.className),
 						src: "".concat(i.a.assetPath, "/img/badges/placeholder.png")
 					});
 					const e = "".concat(E, "-").concat(this.props.uniqueIdentifier);
 					return n.a.createElement(s.Fragment, null, this.props.showAddCustom && n.a.createElement("div", {
-						className: y.a.wrapper,
+						className: f.a.wrapper,
 						id: e,
 						onMouseEnter: () => this.handleMouseEnter(e),
 						onMouseLeave: () => this.handleMouseLeave()
 					}, n.a.createElement("button", {
-						className: y.a.addCustomLink,
+						className: f.a.addCustomLink,
 						onClick: this.props.onOpenUploadDialog
 					}, n.a.createElement(h.a, {
-						className: y.a.addCustom
+						className: f.a.addCustom
 					})), n.a.createElement(B, {
-						className: y.a.badgeHovercard,
+						className: f.a.badgeHovercard,
 						subredditId: this.props.subredditId,
 						targetPosition: ["left", "bottom"],
 						tooltipId: e,
@@ -121,12 +121,12 @@
 						return n.a.createElement(s.Fragment, {
 							key: "badges-fragement-".concat(e.id)
 						}, n.a.createElement("div", {
-							className: Object(r.a)(y.a.wrapper, this.props.className),
+							className: Object(r.a)(f.a.wrapper, this.props.className),
 							key: "wrapper-".concat(e.id),
 							onMouseEnter: () => this.handleMouseEnter(a),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, n.a.createElement("img", {
-							className: y.a.image,
+							className: f.a.image,
 							id: a,
 							key: e.id,
 							src: t.url2x,
@@ -134,7 +134,7 @@
 						}), this.props.useHovercard ? n.a.createElement(u, {
 							badge: e,
 							correlationId: this.props.correlationId,
-							className: y.a.badgeHovercard,
+							className: f.a.badgeHovercard,
 							key: "tooltip-".concat(e.id),
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
@@ -635,26 +635,26 @@
 				h = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				v = a("./src/reddit/icons/svgs/Lock/index.tsx"),
 				B = a("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/Badge/index.m.less"),
-				f = a.n(B);
+				y = a.n(B);
 
-			function y(e) {
+			function f(e) {
 				const {
 					url: t,
 					url2x: a
 				} = Object(l.b)(40, 40, e.model);
 				return n.a.createElement("div", {
-					className: Object(g.a)(e.className, f.a.container, {
-						[f.a.applied]: !!e.applied,
-						[f.a.selected]: !!e.selected,
-						[f.a.selectable]: !!e.onSelect
+					className: Object(g.a)(e.className, y.a.container, {
+						[y.a.applied]: !!e.applied,
+						[y.a.selected]: !!e.selected,
+						[y.a.selectable]: !!e.onSelect
 					}),
 					onClick: e.onSelect
 				}, e.applied && n.a.createElement(h.a, {
-					className: f.a.checkmark
+					className: y.a.checkmark
 				}), e.locked && n.a.createElement(v.a, {
-					className: f.a.lock
+					className: y.a.lock
 				}), n.a.createElement("img", {
-					className: f.a.image,
+					className: y.a.image,
 					src: a,
 					srcSet: "".concat(t, ", ").concat(a, " 2x")
 				}))
@@ -881,7 +881,7 @@
 					}, t.unlocked.map((t, a) => n.a.createElement("div", {
 						className: U.a.badge,
 						key: t.id + a
-					}, n.a.createElement(y, {
+					}, n.a.createElement(f, {
 						applied: e.appliedBadge && e.appliedBadge.id === t.id,
 						model: t,
 						selected: e.selectedBadge && e.selectedBadge.id === t.id,
@@ -889,7 +889,7 @@
 					}))).concat(t.locked.map(t => n.a.createElement("div", {
 						className: U.a.badge,
 						key: t.id
-					}, n.a.createElement(y, {
+					}, n.a.createElement(f, {
 						locked: !0,
 						model: t,
 						selected: e.selectedBadge && e.selectedBadge.id === t.id,
@@ -1005,7 +1005,7 @@
 					}, t.locked.filter(e => Object(l.d)(e) || !!e.price).map(t => n.a.createElement("div", {
 						className: de.a.badge,
 						key: t.id
-					}, n.a.createElement(y, {
+					}, n.a.createElement(f, {
 						model: t,
 						selected: e.selectedBadge && e.selectedBadge.id === t.id,
 						onSelect: () => e.onSelectBadge(t)
@@ -1049,7 +1049,7 @@
 					}, t.unlocked.map((t, a) => n.a.createElement("div", {
 						className: oe.a.badge,
 						key: t.id + a
-					}, n.a.createElement(y, {
+					}, n.a.createElement(f, {
 						applied: e.appliedBadge && e.appliedBadge.id === t.id,
 						model: t,
 						selected: e.selectedBadge && e.selectedBadge.id === t.id,
@@ -1057,7 +1057,7 @@
 					}))).concat(t.locked.map(t => n.a.createElement("div", {
 						className: oe.a.badge,
 						key: t.id
-					}, n.a.createElement(y, {
+					}, n.a.createElement(f, {
 						locked: !0,
 						model: t,
 						selected: e.selectedBadge && e.selectedBadge.id === t.id,
@@ -1077,9 +1077,9 @@
 				he = a("./src/reddit/components/TrackingHelper/index.tsx"),
 				ve = a("./src/reddit/controls/Button/index.tsx"),
 				Be = a("./src/reddit/helpers/economics/membershipPage.ts"),
-				fe = a("./src/reddit/selectors/telemetry.ts"),
-				ye = a("./node_modules/uuid/v4.js"),
-				Ee = a.n(ye),
+				ye = a("./src/reddit/selectors/telemetry.ts"),
+				fe = a("./node_modules/uuid/v4.js"),
+				Ee = a.n(fe),
 				xe = a("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/LeftRail/MyBadges/NoBadges/index.m.less"),
 				_e = a.n(xe);
 			const je = Object(c.c)({
@@ -1121,7 +1121,7 @@
 						className: _e.a.text
 					}, b.fbt._("Get a {membershipAlt} and receive new style badges every month. You can also buy badges individually from the Gallery.", [b.fbt._param("membershipAlt", e.meta.membershipAlt)], {
 						hk: "1JWnXS"
-					})), n.a.createElement(ve.h, {
+					})), n.a.createElement(ve.k, {
 						className: _e.a.learnMore,
 						disabled: !e.subreddit,
 						to: Object(Be.a)(s, a),
@@ -1131,8 +1131,8 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_myBadges_open_learn_more"
-							}, fe.defaults(e)), {
-								subreddit: fe.subreddit(e)
+							}, ye.defaults(e)), {
+								subreddit: ye.subreddit(e)
 							})), e.onCloseModal()
 						}
 					}, b.fbt._("Learn More", null, {
@@ -1166,7 +1166,7 @@
 					}, t.unlocked.map((t, a) => n.a.createElement("div", {
 						className: Se.a.badge,
 						key: t.id + a
-					}, n.a.createElement(y, {
+					}, n.a.createElement(f, {
 						applied: e.appliedBadge && e.appliedBadge.id === t.id,
 						model: t,
 						selected: e.selectedBadge && e.selectedBadge.id === t.id,
@@ -1377,7 +1377,7 @@
 						className: it.a.price
 					}, b.fbt._("Get monthly reward badges by purchasing a {membershipAlt}!", [b.fbt._param("membershipAlt", e.meta.membershipAlt)], {
 						hk: "19iqHa"
-					}))), e.ownedBadge && n.a.createElement(ve.f, {
+					}))), e.ownedBadge && n.a.createElement(ve.i, {
 						className: it.a.button,
 						disabled: e.alreadyApplied,
 						onClick: e.onApply
@@ -1385,7 +1385,7 @@
 						hk: "3zELtm"
 					}) : b.fbt._("Apply", null, {
 						hk: "19U1iU"
-					})), !Object(l.c)(e.badge) && !e.ownedBadge && Object(l.d)(e.badge) && n.a.createElement(ve.h, {
+					})), !Object(l.c)(e.badge) && !e.ownedBadge && Object(l.d)(e.badge) && n.a.createElement(ve.k, {
 						className: it.a.button,
 						disabled: !e.subreddit,
 						to: Object(Be.a)(t, a),
@@ -1395,8 +1395,8 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_gallery_open_learn_more"
-							}, fe.defaults(e)), {
-								subreddit: fe.subreddit(e)
+							}, ye.defaults(e)), {
+								subreddit: ye.subreddit(e)
 							})), e.onCloseModal()
 						}
 					}, b.fbt._("Learn More", null, {
@@ -1463,7 +1463,7 @@
 									hk: "3H5CTM"
 								})
 						}
-					}(e.badge)), n.a.createElement(ve.f, {
+					}(e.badge)), n.a.createElement(ve.i, {
 						className: mt.a.hide,
 						disabled: e.alreadyApplied,
 						onClick: e.onApply
@@ -1523,8 +1523,8 @@
 					}))
 				})),
 				Bt = a("./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/index.m.less"),
-				ft = a.n(Bt);
-			const yt = {
+				yt = a.n(Bt);
+			const ft = {
 					stiffness: 210,
 					damping: 20
 				},
@@ -1532,7 +1532,7 @@
 					bottom: -200
 				}),
 				xt = () => ({
-					bottom: Object(Ge.spring)(-200, yt)
+					bottom: Object(Ge.spring)(-200, ft)
 				}),
 				_t = [40, 68, 96];
 
@@ -1558,42 +1558,42 @@
 						a = Object(Ve.a)(e.badges.filter(Ot)),
 						s = a.find(t => t.placement === m.b[e.previewedBadge.type]);
 					return n.a.createElement("div", {
-						className: Object(g.a)(e.className, ft.a.container)
+						className: Object(g.a)(e.className, yt.a.container)
 					}, n.a.createElement("article", {
-						className: ft.a.content
+						className: yt.a.content
 					}, n.a.createElement("header", {
-						className: ft.a.header
+						className: yt.a.header
 					}, b.fbt._("Edit {communityName} Badges", [b.fbt._param("communityName", t)], {
 						hk: "3R1TMF"
 					}), n.a.createElement(P.a, {
-						className: ft.a.close,
+						className: yt.a.close,
 						onClick: e.onClose
 					})), n.a.createElement("div", {
-						className: ft.a.contentBackground
+						className: yt.a.contentBackground
 					}), n.a.createElement("div", {
-						className: ft.a.commentPreviewLabel
+						className: yt.a.commentPreviewLabel
 					}, b.fbt._("comment preview", null, {
 						hk: "Lhdaw"
 					})), n.a.createElement("div", {
-						className: Object(g.a)(ft.a.commentPreviewContainer, {
-							[ft.a.previewClosed]: !e.previewedBadge.badge,
-							[ft.a.previewOpen]: !!e.previewedBadge.badge
+						className: Object(g.a)(yt.a.commentPreviewContainer, {
+							[yt.a.previewClosed]: !e.previewedBadge.badge,
+							[yt.a.previewOpen]: !!e.previewedBadge.badge
 						})
 					}, n.a.createElement("div", {
-						className: ft.a.commentPreview
+						className: yt.a.commentPreview
 					}, n.a.createElement("div", {
-						className: ft.a.voteContainer
+						className: yt.a.voteContainer
 					}, n.a.createElement(We.b, {
-						className: ft.a.vote
+						className: yt.a.vote
 					}), n.a.createElement(Ue.b, {
-						className: ft.a.vote
+						className: yt.a.vote
 					})), s && n.a.createElement(n.a.Fragment, null, n.a.createElement(qe.a, {
-						className: ft.a.radialHighlightOuter,
+						className: yt.a.radialHighlightOuter,
 						style: {
 							left: jt(a, s)
 						}
 					}), n.a.createElement(qe.a, {
-						className: ft.a.radialHighlightInner,
+						className: yt.a.radialHighlightInner,
 						style: {
 							left: jt(a, s)
 						}
@@ -1607,13 +1607,13 @@
 							data: e.previewedBadge.badge,
 							key: e.previewedBadge.badge.id,
 							style: {
-								bottom: Object(Ge.spring)(16, yt)
+								bottom: Object(Ge.spring)(16, ft)
 							}
 						}] : [],
 						willEnter: Et,
 						willLeave: xt
 					}, t => n.a.createElement(n.a.Fragment, null, t.map(t => n.a.createElement("div", {
-						className: ft.a.badgePreviewContainer,
+						className: yt.a.badgePreviewContainer,
 						key: t.key,
 						style: {
 							bottom: t.style.bottom
@@ -2193,4 +2193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.1f5ee1797f708d07a3c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.e6a281d4e164ae075650.js.map

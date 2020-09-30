@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.49aaf8e9917919142554.js
-// Retrieved at 9/21/2020, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.1086c2994d7301f9318d.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -3254,8 +3254,8 @@
 				te = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/StatusBar/index.m.less"),
 				ee = n.n(te);
 			const ne = m.a.div("ControlRow", ee.a),
-				oe = m.a.wrapped($t.n, "Button", ee.a),
-				se = m.a.wrapped($t.n, "ErrButton", ee.a),
+				oe = m.a.wrapped($t.o, "Button", ee.a),
+				se = m.a.wrapped($t.o, "ErrButton", ee.a),
 				ie = m.a.div("Status", ee.a),
 				re = m.a.wrapped(Xt.a, "ProgressBar", ee.a),
 				ce = m.a.div("ErrorLine", ee.a),
@@ -5061,7 +5061,7 @@
 				Zs = m.a.label("Label", qs.a),
 				Js = m.a.div("HintAndButtonRow", qs.a),
 				Xs = m.a.span("InvalidUrlHint", qs.a),
-				$s = m.a.wrapped($t.f, "SubmitButton", qs.a),
+				$s = m.a.wrapped($t.i, "SubmitButton", qs.a),
 				ti = t => {
 					t && (t.focus(), t.select())
 				},
@@ -6866,7 +6866,7 @@
 						onSetApi: this.setGifTooltipApi,
 						subreddit: c,
 						userCanUseGifs: !!n
-					}), this.renderInternalLinkSuggestionDropdown(), O && a.a.createElement($t.a, {
+					}), this.renderInternalLinkSuggestionDropdown(), O && a.a.createElement($t.d, {
 						"aria-label": s.fbt._("submit", null, {
 							hk: "12XoZ8"
 						}),
@@ -7492,8 +7492,8 @@
 					src: t.thumbnail.url
 				})),
 				R = u.a.wrapped(b.a, "ButtonRow", E.a),
-				w = h.f,
-				B = u.a.wrapped(h.i, "CancelButton", E.a),
+				w = h.i,
+				B = u.a.wrapped(h.l, "CancelButton", E.a),
 				_ = (t, e) => {
 					if (1 === t) return [0];
 					const n = c()(0, e, e / (t - 1));
@@ -8094,4 +8094,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.49aaf8e9917919142554.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.1086c2994d7301f9318d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ebecf234b6d03127c6be.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.1d24d0f4045609daa144.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -84,20 +84,20 @@
 				p = a("./src/reddit/selectors/subreddit.ts"),
 				b = a("./src/reddit/components/SubredditIcon/index.tsx"),
 				h = a("./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less"),
-				f = a.n(h);
+				w = a.n(h);
 			const {
-				fbt: w
+				fbt: f
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), P = Object(n.c)({
 				subreddit: p.S
 			});
 			var E = Object(c.b)(P)(e => r.a.createElement("div", {
-					className: Object(d.a)(e.className, f.a.container)
+					className: Object(d.a)(e.className, w.a.container)
 				}, r.a.createElement(b.b, {
-					className: f.a.icon,
+					className: w.a.icon,
 					subredditOrProfile: e.subreddit
 				}), r.a.createElement("h3", {
-					className: f.a.title
-				}, w._("Buy Powerups, unlock perks, and become a {subreddit name} hero", [w._param("subreddit name", e.subreddit.displayText)], {
+					className: w.a.title
+				}, f._("Buy Powerups, unlock perks, and become a {subreddit name} hero", [f._param("subreddit name", e.subreddit.displayText)], {
 					hk: "33msfE"
 				})))),
 				g = a("./src/config.ts"),
@@ -158,7 +158,7 @@
 								isAnonymous: c
 							}))
 						};
-					return r.a.createElement(T.f, {
+					return r.a.createElement(T.i, {
 						onClick: async () => {
 							if (!o) return;
 							u(!0);
@@ -193,7 +193,7 @@
 						isPending: s,
 						subredditId: n
 					} = e, o = Object(c.c)();
-					return r.a.createElement(T.f, {
+					return r.a.createElement(T.i, {
 						onClick: () => {
 							o(Object(j.c)(1)), o(Object(j.d)(n, 1, a))
 						},
@@ -330,7 +330,7 @@
 						stripeTokenPending: i,
 						subredditId: d
 					} = e, u = Object(c.c)(), m = i || o;
-					return r.a.createElement(T.f, {
+					return r.a.createElement(T.i, {
 						onClick: () => {
 							l && n && u(Object(v.h)(l, n, d, a, s))
 						},
@@ -344,7 +344,7 @@
 				be = a.n(pe);
 			const {
 				fbt: he
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), fe = 100, we = Object(n.c)({
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), we = 100, fe = Object(n.c)({
 				isAnonymous: C.c,
 				isNightmode: I.S,
 				paypalErrorMessage: z.b,
@@ -363,7 +363,7 @@
 				stripeErrorMessage: z.h,
 				userPowerupsData: C.l
 			});
-			var Pe = Object(c.b)(we)((function(e) {
+			var Pe = Object(c.b)(fe)((function(e) {
 					const {
 						isAnonymous: t,
 						isNightmode: a,
@@ -375,13 +375,13 @@
 						stripeErrorMessage: u,
 						subredditId: m,
 						userPowerupsData: p
-					} = e, b = Object(c.c)(), [h, f] = Object(s.useState)(M.xb);
+					} = e, b = Object(c.c)(), [h, w] = Object(s.useState)(M.xb);
 					Object(s.useEffect)(() => {
 						b(Object(v.d)()), b(Object(y.selectPaymentMethod)(h))
 					}, []);
-					const w = Object(_.a)();
+					const f = Object(_.a)();
 					Object(s.useEffect)(() => {
-						w(Object(x.a)())
+						f(Object(x.a)())
 					}, []);
 					const P = d && d.pricePackages.length ? d.pricePackages[0].price : 0;
 					if (!P || !l) return n(), null;
@@ -392,7 +392,7 @@
 					}, r.a.createElement(O.Elements, null, r.a.createElement(r.a.Fragment, null, r.a.createElement(le, {
 						className: be.a.progressControl,
 						count: i,
-						maxCount: N ? 1 : fe,
+						maxCount: N ? 1 : we,
 						onChange: e => b(Object(j.c)(e)),
 						powerups: l
 					}), r.a.createElement("div", {
@@ -420,7 +420,7 @@
 						nightmode: a,
 						selectedPayment: h,
 						onPaymentSelected: e => {
-							f(e), b(Object(y.selectPaymentMethod)(e))
+							w(e), b(Object(y.selectPaymentMethod)(e))
 						}
 					}), h === M.wb && u && r.a.createElement("div", {
 						className: be.a.errorMessage
@@ -658,4 +658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ebecf234b6d03127c6be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.1d24d0f4045609daa144.js.map

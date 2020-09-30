@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.e4c4ddbdf5d46b297118.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.1622f4825fa0c4e44e5b.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/ethers/utils/address.js": function(e, t, n) {
@@ -737,7 +737,7 @@
 						style: {
 							color: a ? void 0 : x.a.warning
 						}
-					}, Object(v.a)(Object(m.b)(t, e.tokenDisplayConversion)))), e.blockchainProvider === N.a.Stellar && o ? r.a.createElement(j.g, {
+					}, Object(v.a)(Object(m.b)(t, e.tokenDisplayConversion)))), e.blockchainProvider === N.a.Stellar && o ? r.a.createElement(j.j, {
 						redditStyle: !0,
 						className: E.a.button,
 						href: Object(y.b)(e.unlockedToken && e.unlockedToken.address || "", e.unlockedToken && e.unlockedToken.symbol || "", e.publicAddress || "", e.amount && Object(m.b)(e.amount, e.tokenDisplayConversion) || "0", e.contentId ? "t|".concat(e.contentId) : void 0),
@@ -745,7 +745,7 @@
 						tabIndex: e.tabIndex
 					}, O.fbt._("send", null, {
 						hk: "oTFGp"
-					})) : r.a.createElement(j.f, {
+					})) : r.a.createElement(j.i, {
 						disabled: !o,
 						className: E.a.button,
 						tabIndex: e.tabIndex,
@@ -1015,7 +1015,7 @@
 						className: oe.a.description
 					}, ie._("Tipping with Donuts is now managed on Daonuts.org.", null, {
 						hk: "3TBQTj"
-					})), r.a.createElement(j.g, {
+					})), r.a.createElement(j.j, {
 						redditStyle: !0,
 						className: oe.a.button,
 						href: o,
@@ -1216,7 +1216,7 @@
 						className: x.a.detailsContainer
 					}, t), d.a.createElement(v.a, {
 						className: x.a.buttonRow
-					}, d.a.createElement(f.f, {
+					}, d.a.createElement(f.i, {
 						className: x.a.confirmButton,
 						onClick: e.onConfirmed
 					}, s.fbt._("Ok", null, {
@@ -1748,4 +1748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.e4c4ddbdf5d46b297118.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.1622f4825fa0c4e44e5b.js.map

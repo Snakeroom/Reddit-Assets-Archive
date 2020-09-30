@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic.c6b584f1dab81522f54a.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic.e9d59f3f22a35509ced8.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -331,7 +331,7 @@
 			var u = e => i.a.createElement("div", {
 					className: Object(o.a)(e.className, m.a.container),
 					style: e.style
-				}, i.a.createElement(c.f, {
+				}, i.a.createElement(c.i, {
 					className: m.a.button,
 					onClick: () => window.scroll(0, 0)
 				}, p._("Back to top", null, {
@@ -580,7 +580,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? m : "none"
 						}
-					}, e), this.state.isTruncated && n.a.createElement(p.n, {
+					}, e), this.state.isTruncated && n.a.createElement(p.o, {
 						className: _.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, O._("See More", null, {
@@ -918,4 +918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic.c6b584f1dab81522f54a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic.e9d59f3f22a35509ced8.js.map

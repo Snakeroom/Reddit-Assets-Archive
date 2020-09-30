@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.5281ab1c42df947c4455.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.e43d20c9ccbca7263476.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -149,17 +149,17 @@
 				}), x = a().structuredStyles.models[u];
 				if (!b || !g) return;
 				const h = b.displayText || "",
-					f = [],
-					v = void 0 !== e.newPrice && g.price !== e.newPrice,
+					v = [],
+					f = void 0 !== e.newPrice && g.price !== e.newPrice,
 					I = function(e, t, a) {
 						const n = {};
 						return e && e.bannerBackgroundImage !== t.bannerBackgroundImage && t.bannerBackgroundImage !== a.bannerBackgroundImage ? n.bannerBackgroundImage = t.bannerBackgroundImage : !e && t.bannerBackgroundImage && (n.bannerBackgroundImage = t.bannerBackgroundImage), e && e.bannerBackgroundImagePosition === t.bannerBackgroundImagePosition || (n.bannerBackgroundImagePosition = t.bannerBackgroundImagePosition), n
 					}(g.content, e.content, x),
 					j = !s()(I);
-				(v || j) && t(Object(o.i)({
+				(f || j) && t(Object(o.i)({
 					productId: "mainHeader",
 					subredditId: u
-				})), v ? f.push(m(c(), {
+				})), f ? v.push(m(c(), {
 					subredditId: u,
 					price: e.currentPrice,
 					products: [{
@@ -167,7 +167,7 @@
 						owner: g.owner || "",
 						ownerId: g.ownerId || ""
 					}]
-				})) : f.push(Promise.resolve()), j && f.push(function(e, t) {
+				})) : v.push(Promise.resolve()), j && v.push(function(e, t) {
 					return Object(l.a)(e, {
 						method: "patch",
 						endpoint: "".concat(d.a.metaUrl, "/communities/").concat(t.subredditId),
@@ -183,8 +183,8 @@
 					subredditId: u,
 					content: I
 				}));
-				const [O, E] = await Promise.all(f);
-				v && O.ok && j && E.ok ? (t(Object(o.j)({
+				const [O, E] = await Promise.all(v);
+				f && O.ok && j && E.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
 					subredditId: u,
 					mainHeader: {
@@ -196,7 +196,7 @@
 				})), t(Object(i.l)({
 					subredditId: u,
 					styles: I
-				}))) : v && O.ok ? (t(Object(o.j)({
+				}))) : f && O.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
 					subredditId: u,
 					mainHeader: {
@@ -217,7 +217,7 @@
 				})), t(Object(i.l)({
 					subredditId: u,
 					styles: I
-				})), v && !O.ok && Object(r.a)(t, O.error)) : (v && Object(r.a)(t, O.error), j && (t(Object(o.h)({
+				})), f && !O.ok && Object(r.a)(t, O.error)) : (f && Object(r.a)(t, O.error), j && (t(Object(o.h)({
 					productId: "mainHeader",
 					subredditId: u,
 					error: O.error
@@ -289,8 +289,8 @@
 				g = a("./node_modules/fbt/lib/FbtPublic.js"),
 				x = a("./src/lib/uploadToS3/index.ts"),
 				h = a("./src/reddit/components/Settings/shared/ImageUploader.tsx"),
-				f = a("./src/reddit/contexts/ApiContext.tsx"),
-				v = a("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				v = a("./src/reddit/contexts/ApiContext.tsx"),
+				f = a("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				I = a("./src/reddit/endpoints/governance/imageLease.ts"),
 				j = a("./src/reddit/helpers/media/index.ts"),
 				O = a("./src/reddit/icons/svgs/Remove/index.tsx"),
@@ -371,7 +371,7 @@
 						className: _.a.modifiers
 					}, o.a.createElement("div", {
 						className: _.a.toggle
-					}, o.a.createElement(v.a, {
+					}, o.a.createElement(f.a, {
 						redditStyle: !0,
 						className: _.a.toggleSwitch,
 						tabIndex: a ? a + 1 : void 0,
@@ -388,7 +388,7 @@
 			}
 			var w = Object(i.b)(null, e => ({
 					onImageUploadFailed: () => e(Object(l.a)())
-				}))(Object(f.b)(C)),
+				}))(Object(v.b)(C)),
 				y = a("./src/lib/classNames/index.ts"),
 				k = a("./src/lib/prettyPrintNumber/index.ts"),
 				T = a("./src/reddit/actions/modal.ts"),
@@ -417,13 +417,13 @@
 						subredditId: e.subredditId
 					}), Object(k.a)(e.wallet.amount))), o.a.createElement("div", {
 						className: B.a.buttons
-					}, o.a.createElement(S.i, {
+					}, o.a.createElement(S.l, {
 						className: B.a.button,
 						tabIndex: e.tabIndex,
 						onClick: e.onClose
 					}, U._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(S.f, {
+					})), o.a.createElement(S.i, {
 						className: Object(y.a)(B.a.button, B.a.save),
 						disabled: !e.submitEnabled,
 						tabIndex: e.tabIndex ? e.tabIndex + 1 : void 0,
@@ -754,7 +754,7 @@
 		"./src/reddit/components/StructuredStyles/ImageUpload/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return v
+				return f
 			}));
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
@@ -768,7 +768,7 @@
 				u = a.n(m);
 			const {
 				fbt: p
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), b = o.a.wrapped(l.a, "ImageUploadIcon", u.a), g = o.a.div("ImageIconRow", u.a), x = o.a.div("ImageUploadText", u.a), h = o.a.wrapped(i.a, "FileDrop", u.a), f = o.a.div("ContainerUploading", u.a), v = e => s.a.createElement(f, {
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), b = o.a.wrapped(l.a, "ImageUploadIcon", u.a), g = o.a.div("ImageIconRow", u.a), x = o.a.div("ImageUploadText", u.a), h = o.a.wrapped(i.a, "FileDrop", u.a), v = o.a.div("ContainerUploading", u.a), f = e => s.a.createElement(v, {
 				className: e.className
 			}, s.a.createElement(g, null, s.a.createElement(d.a, {
 				sizePx: 40,
@@ -831,23 +831,23 @@
 				g = a("./src/higherOrderComponents/asModal/index.tsx"),
 				x = a("./src/reddit/controls/Button/index.tsx"),
 				h = a("./src/reddit/layout/row/Inline/index.tsx"),
-				f = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				v = a.n(f);
+				v = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				f = a.n(v);
 			var I = Object(g.a)(e => {
 					const {
 						children: t,
 						title: a
 					} = e;
 					return d.a.createElement("div", {
-						className: v.a.wrapper
+						className: f.a.wrapper
 					}, d.a.createElement(h.a, {
-						className: v.a.titleRow
+						className: f.a.titleRow
 					}, a), d.a.createElement("div", {
-						className: v.a.detailsContainer
+						className: f.a.detailsContainer
 					}, t), d.a.createElement(h.a, {
-						className: v.a.buttonRow
-					}, d.a.createElement(x.f, {
-						className: v.a.confirmButton,
+						className: f.a.buttonRow
+					}, d.a.createElement(x.i, {
+						className: f.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
 						hk: "2Giu9U"
@@ -1075,16 +1075,16 @@
 						})
 					}, e.label), e.children)
 				},
-				f = e => s.a.createElement("div", {
+				v = e => s.a.createElement("div", {
 					className: Object(r.a)(m.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", s.a.createElement(c.a, {
 					className: m.a.plus
 				}));
-			var v;
+			var f;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(v || (v = {}));
+			}(f || (f = {}));
 			class I extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -1092,7 +1092,7 @@
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: v.ADD
+							action: f.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const a = this.props.values.slice();
@@ -1101,7 +1101,7 @@
 						const t = this.props.values.slice(),
 							a = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: v.REMOVE,
+							action: f.REMOVE,
 							value: a,
 							index: e
 						})
@@ -1162,10 +1162,10 @@
 					const c = !(!!n && a.length >= n) && !i;
 					return s.a.createElement("div", {
 						className: Object(r.a)(m.a.multiInputWrapper, e)
-					}, t && c && s.a.createElement(f, {
+					}, t && c && s.a.createElement(v, {
 						onClick: this.addValue,
 						text: o
-					}), this.renderFields(), !t && c && s.a.createElement(f, {
+					}), this.renderFields(), !t && c && s.a.createElement(v, {
 						onClick: this.addValue,
 						text: o
 					}))
@@ -1338,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.5281ab1c42df947c4455.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.e43d20c9ccbca7263476.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.40372fc1bf5d5789171d.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.97aaf654be8b2bbd45eb.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -581,7 +581,7 @@
 						className: Object(D.a)(J.a.miscItem, J.a.renewalSubtext)
 					}, s.fbt._("Subscription automatically renews monthly", null, {
 						hk: "21TCR6"
-					})), i.a.createElement(F.n, {
+					})), i.a.createElement(F.o, {
 						className: J.a.redeemCodeLink,
 						onClick: this.onClaimGoldClick
 					}, s.fbt._("Redeem a gift code", null, {
@@ -600,7 +600,7 @@
 						}),
 						onChange: c,
 						value: t
-					}), i.a.createElement(F.f, {
+					}), i.a.createElement(F.i, {
 						className: J.a.redeemButton
 					}, s.fbt._("Redeem", null, {
 						hk: "1d2cH2"
@@ -643,7 +643,7 @@
 						className: J.a.checkmark
 					}), s.fbt._("{monthly-coins} Coins every month", [s.fbt._param("monthly-coins", d)], {
 						hk: "CngQz"
-					}))), i.a.createElement(F.e, {
+					}))), i.a.createElement(F.h, {
 						className: J.a.premiumButton,
 						onClick: t ? n : a
 					}, t ? s.fbt._("Manage", null, {
@@ -724,7 +724,7 @@
 						className: x.a.heroDescription
 					}, s.fbt._("Reddit Premium gives you an ad-free experience, special benefits, and directly supports Reddit. The more Reddit is user-supported, the freer we are to make Reddit the best it can be.", null, {
 						hk: "3BejFp"
-					})), i.a.createElement(F.e, {
+					})), i.a.createElement(F.h, {
 						className: x.a.heroCTA,
 						onClick: this.onClickGetPremium
 					}, a ? s.fbt._("Manage Premium", null, {
@@ -805,4 +805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.40372fc1bf5d5789171d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.97aaf654be8b2bbd45eb.js.map

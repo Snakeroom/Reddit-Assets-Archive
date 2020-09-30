@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.f79187a300bbf2676854.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.085c8e423b0ed92b681a.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -661,7 +661,7 @@
 						className: c.a.title
 					}, t || i.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 						hk: "3VvHek"
-					})), r.a.createElement(o.h, {
+					})), r.a.createElement(o.k, {
 						className: c.a.primaryRouterLink,
 						to: "/"
 					}, i.fbt._("Go Home", null, {
@@ -678,7 +678,7 @@
 						className: c.a.title
 					}, t || i.fbt._("Sorry, You do not have permission to view this page.", null, {
 						hk: "4lRbHD"
-					})), r.a.createElement(o.h, {
+					})), r.a.createElement(o.k, {
 						className: c.a.primaryRouterLink,
 						to: "/"
 					}, i.fbt._("Go Home", null, {
@@ -994,7 +994,7 @@
 					}, n.a.createElement(R.a, {
 						onClick: this.onClick,
 						to: "#"
-					}, n.a.createElement(P.n, {
+					}, n.a.createElement(P.o, {
 						className: Z.a.SeeAllRelatedTopics
 					}, Y._("See all {=[Topic name plural]}", [Y._param("=[Topic name plural]", n.a.createElement("span", {
 						className: Z.a.TopicName
@@ -1337,4 +1337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.f79187a300bbf2676854.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.085c8e423b0ed92b681a.js.map

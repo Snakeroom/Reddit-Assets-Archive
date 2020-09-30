@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.3fd4572df913bbb6d4ab.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.491563592da79f3e73dc.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -346,7 +346,7 @@
 					subredditAboutInfo: u
 				}), o.a.createElement(E.a, {
 					subreddit: l
-				}), o.a.createElement(M, null, Object(T.a)(u.publicDescription || "", 140)), o.a.createElement(C.h, {
+				}), o.a.createElement(M, null, Object(T.a)(u.publicDescription || "", 140)), o.a.createElement(C.k, {
 					onClick: b,
 					to: "".concat(l.url)
 				}, S._("View Community", null, {
@@ -907,4 +907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.3fd4572df913bbb6d4ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.491563592da79f3e73dc.js.map

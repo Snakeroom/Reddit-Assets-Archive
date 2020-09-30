@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3064c2d6772b82bac724.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.24d6d405eba017c02322.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -217,7 +217,7 @@
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => s.a.createElement("div", {
 				className: c.a.purchaseFooter
-			}, s.a.createElement(r.f, {
+			}, s.a.createElement(r.i, {
 				className: c.a.purchaseButton,
 				"data-redditstyle": !0,
 				onClick: e.onCloseClick
@@ -377,8 +377,8 @@
 				N = a("./src/lib/loadRedditAdsPixel.ts"),
 				v = a("./src/reddit/components/Gold/PaymentCompletePageFooter/index.tsx"),
 				k = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				f = a("./src/reddit/helpers/createEmojiText/index.tsx"),
-				_ = a("./src/reddit/icons/fonts/Premium/index.tsx"),
+				_ = a("./src/reddit/helpers/createEmojiText/index.tsx"),
+				f = a("./src/reddit/icons/fonts/Premium/index.tsx"),
 				j = a("./src/reddit/components/PremiumPurchaseModal/index.m.less"),
 				M = a.n(j);
 			class O extends s.a.PureComponent {
@@ -395,7 +395,7 @@
 						style: {
 							backgroundImage: 'url("'.concat(c.a.assetPath, '/img/gold/premium-hero-g.jpg")')
 						}
-					}, s.a.createElement(_.a, {
+					}, s.a.createElement(f.a, {
 						className: M.a.premiumIcon,
 						title: x.fbt._("Reddit Premium", null, {
 							hk: "34acNx"
@@ -419,7 +419,7 @@
 						hk: "1RxPah"
 					}))), s.a.createElement("div", {
 						className: M.a.paymentCompleteTitleItemLast
-					}, Object(f.a)(x.fbt._("Find more about {anchor text} on Reddit.", [x.fbt._param("anchor text", ":loungeLink:")], {
+					}, Object(_.a)(x.fbt._("Find more about {anchor text} on Reddit.", [x.fbt._param("anchor text", ":loungeLink:")], {
 						hk: "2RGr1F"
 					}), {
 						":loungeLink:": s.a.createElement("a", {
@@ -471,7 +471,7 @@
 					type: "hidden",
 					name: "custom",
 					value: n
-				}), s.a.createElement(w.f, {
+				}), s.a.createElement(w.i, {
 					type: "submit",
 					"data-redditstyle": r,
 					disabled: i
@@ -512,7 +512,7 @@
 						title: x.fbt._("Continue to PayPal", null, {
 							hk: "2TCl83"
 						})
-					}), a === i.wb && s.a.createElement(w.f, {
+					}), a === i.wb && s.a.createElement(w.i, {
 						className: M.a.premiumPurchaseButton,
 						"data-redditstyle": !0,
 						disabled: n,
@@ -528,7 +528,7 @@
 				style: {
 					backgroundImage: 'url("'.concat(c.a.assetPath, '/img/gold/premium-hero-g.jpg")')
 				}
-			}, s.a.createElement(_.a, {
+			}, s.a.createElement(f.a, {
 				className: M.a.premiumIcon,
 				title: x.fbt._("Reddit Premium", null, {
 					hk: "34acNx"
@@ -584,7 +584,7 @@
 				hk: "2yMRNq"
 			})), s.a.createElement("div", {
 				className: M.a.agreementLink
-			}, Object(f.a)(x.fbt._("By purchasing Reddit Premium, you agree to the {Link text}.", [x.fbt._param("Link text", ":agreement:")], {
+			}, Object(_.a)(x.fbt._("By purchasing Reddit Premium, you agree to the {Link text}.", [x.fbt._param("Link text", ":agreement:")], {
 				hk: "fXr9v"
 			}), {
 				":agreement:": s.a.createElement("a", {
@@ -740,4 +740,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3064c2d6772b82bac724.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.24d6d405eba017c02322.js.map

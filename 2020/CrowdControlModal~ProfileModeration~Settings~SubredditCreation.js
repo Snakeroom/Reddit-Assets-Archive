@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.627595d6e5309411017e.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.155fc22787c7f90d2464.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal~ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -424,7 +424,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Y, null, r.a.createElement(M.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(V, null, e.subtext)), r.a.createElement(X, null, r.a.createElement(K, null, r.a.createElement(F.i, {
+				}, r.a.createElement(Y, null, r.a.createElement(M.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(V, null, e.subtext)), r.a.createElement(X, null, r.a.createElement(K, null, r.a.createElement(F.l, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				be = e => r.a.createElement(q, {
@@ -888,7 +888,7 @@
 						className: g.a.detailsContainer
 					}, t), c.a.createElement(f.a, {
 						className: g.a.buttonRow
-					}, c.a.createElement(b.f, {
+					}, c.a.createElement(b.i, {
 						className: g.a.confirmButton,
 						onClick: e.onConfirmed
 					}, a.fbt._("Ok", null, {
@@ -1303,4 +1303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.627595d6e5309411017e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.155fc22787c7f90d2464.js.map

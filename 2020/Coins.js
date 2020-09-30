@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.21e31211d855cfcc352a.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.796f70ee96d742b64ef3.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -646,7 +646,7 @@
 						className: Object(G.a)(B.a.description, v)
 					}, d), l.a.createElement("div", {
 						className: B.a.ctaContainer
-					}, l.a.createElement(V.f, {
+					}, l.a.createElement(V.i, {
 						className: Object(G.a)(B.a.cta, v),
 						onClick: c
 					}, h), _ && l.a.createElement("div", {
@@ -703,12 +703,12 @@
 					className: K.a.premiumDescription
 				}, $._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [$._param("Number of monthly coins", d)], {
 					hk: "42dB3q"
-				})), t ? l.a.createElement(V.f, {
+				})), t ? l.a.createElement(V.i, {
 					className: K.a.premiumCTA,
 					onClick: c
 				}, $._("Manage", null, {
 					hk: "4BQsAp"
-				})) : l.a.createElement(V.f, {
+				})) : l.a.createElement(V.i, {
 					className: K.a.premiumCTA,
 					onClick: n
 				}, $._("{monthly-price}/Month", [$._param("monthly-price", m)], {
@@ -773,7 +773,7 @@
 					className: ce.a.heroDescription
 				}, re._("Coins are a virtual good you can use to award exemplary posts or comments. Support Reddit and encourage your favorite contributors to keep making Reddit better.", null, {
 					hk: "3rPVMo"
-				})), l.a.createElement(V.c, {
+				})), l.a.createElement(V.f, {
 					className: ce.a.heroCTA,
 					onClick: n
 				}, re._("Get coins", null, {
@@ -991,4 +991,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.21e31211d855cfcc352a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.796f70ee96d742b64ef3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.348fddc7ba46c6689bce.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.12adcf4dddebb90266aa.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -240,7 +240,7 @@
 					}) : n && r.a.createElement(M, {
 						className: Object(p.a)(T.a.purchaseButton, T.a.paypalCheckoutButton),
 						coinPackage: n
-					}) : null, c === i.wb && r.a.createElement(g.f, {
+					}) : null, c === i.wb && r.a.createElement(g.i, {
 						className: T.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: o || s,
@@ -425,7 +425,7 @@
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.a = e => s.a.createElement("div", {
 				className: o.a.purchaseFooter
-			}, s.a.createElement(r.f, {
+			}, s.a.createElement(r.i, {
 				className: o.a.purchaseButton,
 				"data-redditstyle": !0,
 				onClick: e.onCloseClick
@@ -630,4 +630,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.348fddc7ba46c6689bce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.12adcf4dddebb90266aa.js.map

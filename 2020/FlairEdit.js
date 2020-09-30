@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.177148e0842a28f34402.js
-// Retrieved at 8/31/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.34f5266d9aa5b0a9cbbc.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/lodash/_baseInRange.js": function(e, t) {
@@ -171,7 +171,7 @@
 					src: o.url
 				}), a.a.createElement("span", {
 					className: _.a.emojiLabel
-				}, Object(m.b)(o.name))), a.a.createElement(O.n, {
+				}, Object(m.b)(o.name))), a.a.createElement(O.o, {
 					className: _.a.cancelButton,
 					onClick: e.onCancelClick
 				}, u.fbt._("Cancel", null, {
@@ -1284,4 +1284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.177148e0842a28f34402.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.34f5266d9aa5b0a9cbbc.js.map

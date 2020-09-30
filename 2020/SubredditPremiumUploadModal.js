@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.c0f223a34c47e601eb4e.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.cdfe425edaf6bda9a9a6.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, s) {
@@ -412,7 +412,7 @@
 					image: s,
 					name: n,
 					description: t
-				}) : o.a.createElement(ae, e)), o.a.createElement(m.f, null, o.a.createElement(g.f, {
+				}) : o.a.createElement(ae, e)), o.a.createElement(m.f, null, o.a.createElement(g.i, {
 					onClick: a
 				}, ne._("Okay", null, {
 					hk: "406S0g"
@@ -749,7 +749,7 @@
 						onClick: this.closeModal
 					}, ye._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(g.f, {
+					})), o.a.createElement(g.i, {
 						className: _e.a.submitButton,
 						disabled: !this.canSubmit(),
 						onClick: this.upload
@@ -1240,4 +1240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.c0f223a34c47e601eb4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.cdfe425edaf6bda9a9a6.js.map

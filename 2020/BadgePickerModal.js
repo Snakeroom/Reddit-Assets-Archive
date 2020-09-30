@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.579bd7bb70b4c4d7a8ab.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.0efe91d0244429efd01b.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -146,9 +146,9 @@
 				b = a("./src/reddit/controls/CheckboxInput/index.tsx"),
 				x = a("./src/reddit/helpers/flair.ts"),
 				v = a("./src/reddit/icons/svgs/Tag/index.tsx"),
-				f = a("./src/reddit/models/Flair/index.ts"),
-				C = a("./src/reddit/components/Badges/PickerModal/FlairPicker/index.m.less"),
-				E = a.n(C);
+				C = a("./src/reddit/models/Flair/index.ts"),
+				f = a("./src/reddit/components/Badges/PickerModal/FlairPicker/index.m.less"),
+				E = a.n(f);
 			const {
 				fbt: y
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
@@ -208,7 +208,7 @@
 				renderFlairSearch() {
 					return r.a.createElement(p.a, {
 						flair: this.state.previewFlair || null,
-						flairTemplateType: f.d.UserFlair,
+						flairTemplateType: C.d.UserFlair,
 						className: E.a.flairSearch,
 						subredditId: this.props.subredditId,
 						templates: this.props.userFlairData.templates,
@@ -231,14 +231,14 @@
 					}))))
 				}
 				renderFlairClear() {
-					return r.a.createElement(g.n, {
+					return r.a.createElement(g.o, {
 						onClick: this.handleClearPreviewFlair
 					}, y._("Clear flair", null, {
 						hk: "4eVLMj"
 					}))
 				}
 				renderFlairApply() {
-					return r.a.createElement(g.f, {
+					return r.a.createElement(g.i, {
 						disabled: !!this.state.previewFlair && Object(x.g)(this.state.previewFlair).length > h.g,
 						onClick: () => this.props.onApplyFlair(this.state.previewFlair, this.state.previewFlair ? this.state.previewFlair.templateId : void 0, this.state.userAllowsFlair)
 					}, y._("Apply", null, {
@@ -341,7 +341,7 @@
 						title: e.product.description
 					}, K(e.product), H(e.product), e.product.price && function(e, t, a, s) {
 						if (!e.price) return null;
-						return r.a.createElement(g.i, {
+						return r.a.createElement(g.l, {
 							"data-redditstyle": !0,
 							disabled: t,
 							onClick: () => s && s()
@@ -582,9 +582,9 @@
 					return e.badges.models[a]
 				}
 			});
-			var fe = Object(n.b)(ve)(be),
-				Ce = a("./src/reddit/components/Badges/PickerModal/MyBadges/index.m.less"),
-				Ee = a.n(Ce);
+			var Ce = Object(n.b)(ve)(be),
+				fe = a("./src/reddit/components/Badges/PickerModal/MyBadges/index.m.less"),
+				Ee = a.n(fe);
 			const {
 				fbt: ye
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
@@ -635,7 +635,7 @@
 					}, this.props.badgeIds.map(e => r.a.createElement("div", {
 						className: Ee.a.badge,
 						key: e
-					}, r.a.createElement(fe, {
+					}, r.a.createElement(Ce, {
 						badgeId: e,
 						isApplied: this.props.appliedBadges.has(e),
 						isSelected: this.state.selectedBadges.has(e),
@@ -655,7 +655,7 @@
 						className: Ee.a.noBadgesText
 					}, ye._("You don't have any badges yet. Get them from the Gallery.", null, {
 						hk: "1ZYa4V"
-					})), r.a.createElement(g.i, {
+					})), r.a.createElement(g.l, {
 						onClick: this.props.onGotoGallery
 					}, ye._("get badge", null, {
 						hk: "A4fxk"
@@ -669,7 +669,7 @@
 				renderClear() {
 					return r.a.createElement("div", {
 						className: Ee.a.toggleContainer
-					}, r.a.createElement(g.n, {
+					}, r.a.createElement(g.o, {
 						disabled: 0 === this.state.selectedBadges.size || 0 === this.props.badgeIds.length,
 						onClick: this.handleClearBadges
 					}, ye._("clear selection", null, {
@@ -677,7 +677,7 @@
 					})))
 				}
 				renderApply() {
-					return r.a.createElement(g.f, {
+					return r.a.createElement(g.i, {
 						disabled: 0 === this.props.badgeIds.length || I()(Array.from(this.props.appliedBadges), Array.from(this.state.selectedBadges)),
 						onClick: this.handleApplyBadges
 					}, ye._("apply", null, {
@@ -1036,4 +1036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePickerModal.579bd7bb70b4c4d7a8ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePickerModal.0efe91d0244429efd01b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.cb44d8dbb8b9e67731a2.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5ddd685189d17099e653.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -736,7 +736,7 @@
 						pending: i,
 						selectedAward: o
 					} = this.props, c = o.awardType === b.f.Moderator;
-					return n.a.createElement(oe.f, {
+					return n.a.createElement(oe.i, {
 						className: Object(d.a)(J.a.gildButton, {
 							[J.a.premiumButton]: t
 						}),
@@ -2086,4 +2086,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.cb44d8dbb8b9e67731a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5ddd685189d17099e653.js.map

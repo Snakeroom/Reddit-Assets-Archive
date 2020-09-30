@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.ef59424ca21fc80ccd09.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.e8f757fc10401ceb7a49.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistrationStellarBanner"], {
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
@@ -10,23 +10,23 @@
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
+				a = n.n(s),
+				o = n("./node_modules/react-redux/es/index.js"),
+				r = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/config.ts"),
 				i = n("./src/lib/classNames/index.ts"),
 				l = n("./src/reddit/selectors/gov.ts"),
 				d = n("./src/reddit/components/Governance/Token/index.m.less"),
 				m = n.n(d);
-			const u = Object(o.c)({
+			const u = Object(r.c)({
 				tokenSymbol: l.r
 			});
-			t.a = Object(a.b)(u)((function(e) {
+			t.a = Object(o.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
 					n = "".concat(c.a.assetPath, "/").concat(t);
 				if (e.grey && n.endsWith(".svg")) {
 					const t = "url(".concat(n, ") center/cover");
-					return r.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: Object(i.a)(m.a.grey, e.className),
 						style: {
 							mask: t,
@@ -34,7 +34,7 @@
 						}
 					})
 				}
-				return r.a.createElement("img", {
+				return a.a.createElement("img", {
 					className: e.className,
 					src: n
 				})
@@ -46,10 +46,10 @@
 				return p
 			}));
 			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./src/reddit/components/Governance/Token/index.tsx"),
-				o = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
-				c = n.n(o);
+				a = n.n(s),
+				o = n("./src/reddit/components/Governance/Token/index.tsx"),
+				r = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
+				c = n.n(r);
 			const i = 15753096e5,
 				l = 6e4,
 				d = 60 * l,
@@ -58,7 +58,7 @@
 			function u(e) {
 				return Math.max(0, e - Date.now())
 			}
-			class p extends r.a.Component {
+			class p extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						remainingTimeMs: u(e.deadline || i)
@@ -77,13 +77,13 @@
 				render() {
 					const {
 						remainingTimeMs: e
-					} = this.state, t = Math.floor(e / m), n = Math.floor(e % m / d), s = Math.floor(e % d / l), o = Math.floor(e % l / 1e3);
-					return r.a.createElement("div", {
+					} = this.state, t = Math.floor(e / m), n = Math.floor(e % m / d), s = Math.floor(e % d / l), r = Math.floor(e % l / 1e3);
+					return a.a.createElement("div", {
 						className: c.a.countdownTimer
-					}, r.a.createElement(a.a, {
+					}, a.a.createElement(o.a, {
 						className: c.a.token,
 						subredditId: this.props.subredditId
-					}), e ? "".concat(t, "D : ").concat(n, "H : ").concat(s, "M : ").concat(o, "S REMAINING") : null)
+					}), e ? "".concat(t, "D : ").concat(n, "H : ").concat(s, "M : ").concat(r, "S REMAINING") : null)
 				}
 			}
 		},
@@ -118,9 +118,9 @@
 			n.r(t);
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/lib/classNames/index.ts"),
+				a = n.n(s),
+				o = n("./node_modules/react-redux/es/index.js"),
+				r = n("./src/lib/classNames/index.ts"),
 				c = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
 				i = n("./src/reddit/contexts/ApiContext.tsx"),
 				l = n("./src/reddit/controls/Button/index.tsx"),
@@ -154,33 +154,33 @@
 				return async function(t, n) {
 					if (e[n]) return e[n].response;
 					let s;
-					const r = new Promise(r => {
+					const a = new Promise(a => {
 						s = setInterval(async () => {
-							const a = await h(t, n);
-							if (a.ok && a.body.contacts && a.body.contacts[n]) {
-								const t = a.body.contacts[n].find(e => "stellar" === e.provider);
-								t && t.address && (clearInterval(s), delete e[n], r(!0))
+							const o = await h(t, n);
+							if (o.ok && o.body.contacts && o.body.contacts[n]) {
+								const t = o.body.contacts[n].find(e => "stellar" === e.provider);
+								t && t.address && (clearInterval(s), delete e[n], a(!0))
 							}
 						}, 1e3), setTimeout(() => {
-							clearInterval(s), delete e[n], r(!1)
+							clearInterval(s), delete e[n], a(!1)
 						}, 3e5)
 					});
 					return e[n] = {
 						interval: s,
-						response: r
-					}, r
+						response: a
+					}, a
 				}
 			})();
 			var v = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				y = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				f = n("./src/reddit/selectors/gov.ts"),
+				f = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				y = n("./src/reddit/selectors/gov.ts"),
 				_ = n("./node_modules/reselect/es/index.js"),
 				k = n("./src/reddit/components/Governance/WalletRegistration/StellarBanner/index.m.less"),
 				x = n.n(k);
 			const {
 				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), w = 1576476e6;
-			class S extends r.a.Component {
+			class S extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						completed: !1
@@ -207,9 +207,9 @@
 						userId: n
 					} = this.props;
 					if (n) {
-						const [s, r, a] = await Promise.all([Object(d.b)(e(), t), b(e(), t), h(e(), n)]), o = !!s[d.a.StellarWalletRegistration], c = a.ok && a.body.contacts && a.body.contacts[n] && a.body.contacts[n].find(e => "stellar" === e.provider), i = c && !!c.address;
-						o || !r.url || i || this.setState({
-							sep7link: r.url
+						const [s, a, o] = await Promise.all([Object(d.b)(e(), t), b(e(), t), h(e(), n)]), r = !!s[d.a.StellarWalletRegistration], c = o.ok && o.body.contacts && o.body.contacts[n] && o.body.contacts[n].find(e => "stellar" === e.provider), i = c && !!c.address;
+						r || !a.url || i || this.setState({
+							sep7link: a.url
 						})
 					}
 				}
@@ -220,31 +220,31 @@
 						subredditId: n
 					} = this.props, {
 						completed: s,
-						sep7link: a
+						sep7link: o
 					} = this.state;
-					return a && e ? s ? r.a.createElement("div", {
-						className: Object(o.a)(x.a.completedBanner, t)
-					}, r.a.createElement(c.a, {
+					return o && e ? s ? a.a.createElement("div", {
+						className: Object(r.a)(x.a.completedBanner, t)
+					}, a.a.createElement(c.a, {
 						deadline: w,
 						subredditId: n
-					}), r.a.createElement(v.a, {
+					}), a.a.createElement(v.a, {
 						className: x.a.checkIcon
 					}), j._("Registered for distribution", null, {
 						hk: "p7lNT"
-					})) : r.a.createElement("article", {
-						className: Object(o.a)(x.a.container, t)
-					}, r.a.createElement("div", {
+					})) : a.a.createElement("article", {
+						className: Object(r.a)(x.a.container, t)
+					}, a.a.createElement("div", {
 						className: x.a.content
-					}, r.a.createElement(c.a, {
+					}, a.a.createElement(c.a, {
 						deadline: w,
 						subredditId: n
-					}), r.a.createElement("header", {
+					}), a.a.createElement("header", {
 						className: x.a.title
 					}, j._("Register for Photons Distribution on the Stellar Blockchain", null, {
 						hk: "1jg78N"
-					})), r.a.createElement("div", {
+					})), a.a.createElement("div", {
 						className: x.a.requirements
-					}, j._("Requires an app that can handle SEP7 links, like {=Lobstr} .", [j._param("=Lobstr", r.a.createElement("a", {
+					}, j._("Requires an app that can handle SEP7 links, like {=Lobstr} .", [j._param("=Lobstr", a.a.createElement("a", {
 						href: "https://lobstr.co/",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -252,18 +252,18 @@
 						hk: "2Z47KX"
 					})))], {
 						hk: "3epiNq"
-					})), r.a.createElement("div", {
+					})), a.a.createElement("div", {
 						className: x.a.disclaimer
 					}, j._("Disclaimer: Neither Stellar nor Lobstr are affiliated with Reddit and the following is not an advertisement or an endorsement. You understand and agree that Reddit is not responsible for any actions or inactions or harm caused by using either Stellar or Lobstr.", null, {
 						hk: "2rEXAk"
-					}))), r.a.createElement(l.g, {
+					}))), a.a.createElement(l.j, {
 						className: x.a.registerLink,
-						href: a,
+						href: o,
 						target: "_blank",
 						onClick: this.checkForComplete
-					}, j._("register", null, {
-						hk: "3Pr9JU"
-					})), r.a.createElement(y.a, {
+					}, j._("Register", null, {
+						hk: "4fB6FY"
+					})), a.a.createElement(f.a, {
 						className: x.a.close,
 						onClick: this.onClose
 					})) : null
@@ -274,19 +274,19 @@
 					let {
 						subredditId: n
 					} = t;
-					const s = Object(f.u)(e, {
+					const s = Object(y.u)(e, {
 						subredditId: n
 					});
 					return !(!s || s.provider !== m.a.Stellar)
 				},
 				userId: e => e.user.account ? e.user.account.id : void 0
 			});
-			t.default = Object(a.b)(C)(Object(i.b)(S))
+			t.default = Object(o.b)(C)(Object(i.b)(S))
 		},
 		"./src/reddit/endpoints/economics/banners.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
+				return a
 			})), n.d(t, "b", (function() {
 				return i
 			})), n.d(t, "c", (function() {
@@ -297,38 +297,38 @@
 				return u
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s, r, a = n("./src/config.ts"),
-				o = n("./src/reddit/endpoints/governance/requester.ts");
+			var s, a, o = n("./src/config.ts"),
+				r = n("./src/reddit/endpoints/governance/requester.ts");
 			async function c(e, t, n, s) {
-				return Object(o.a)(e, {
-					endpoint: "".concat(a.a.metaUrl, "/storage/").concat(t, "/me/").concat(n),
+				return Object(r.a)(e, {
+					endpoint: "".concat(o.a.metaUrl, "/storage/").concat(t, "/me/").concat(n),
 					method: "patch",
 					data: s
 				})
 			}
 			async function i(e, t) {
 				const n = await async function(e, t, n) {
-					return Object(o.a)(e, {
-						endpoint: "".concat(a.a.metaUrl, "/storage/").concat(t, "/me/").concat(n),
+					return Object(r.a)(e, {
+						endpoint: "".concat(o.a.metaUrl, "/storage/").concat(t, "/me/").concat(n),
 						method: "get"
 					})
 				}(e, t, s.UpsellBanners);
 				return n.ok && n.body || {}
 			}
-			async function l(e, t, n, r) {
-					const a = await i(e, t),
-						o = Object.assign(Object.assign({}, a), {
-							[n]: r
+			async function l(e, t, n, a) {
+					const o = await i(e, t),
+						r = Object.assign(Object.assign({}, o), {
+							[n]: a
 						});
-					return (await c(e, t, s.UpsellBanners, o)).ok ? o : a
+					return (await c(e, t, s.UpsellBanners, r)).ok ? r : o
 				}! function(e) {
 					e.SubredditPremiumWaitlist = "subreddit_premium_waitlist", e.UpsellBanners = "upsell_banners"
 				}(s || (s = {})),
 				function(e) {
 					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
-				}(r || (r = {}));
-			const d = async (e, t, n) => l(e, t, n, !0), m = async (e, t, n) => l(e, t, n, !1), u = (e, t) => c(e, t, s.UpsellBanners, Object.keys(r).reduce((e, t) => (e[r[t]] = !1, e), {}))
+				}(a || (a = {}));
+			const d = async (e, t, n) => l(e, t, n, !0), m = async (e, t, n) => l(e, t, n, !1), u = (e, t) => c(e, t, s.UpsellBanners, Object.keys(a).reduce((e, t) => (e[a[t]] = !1, e), {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.ef59424ca21fc80ccd09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.e8f757fc10401ceb7a49.js.map

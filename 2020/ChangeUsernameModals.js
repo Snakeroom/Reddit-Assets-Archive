@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.fd523208812c8db83001.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.5f282d486e44273d095d.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -255,7 +255,7 @@
 						validityState: o || void 0
 					}), r.a.createElement(w, {
 						onSuggestedUsernameClick: this.onSuggestedUsernameClickHandler
-					}), r.a.createElement("div", null, r.a.createElement(y.f, {
+					}), r.a.createElement("div", null, r.a.createElement(y.i, {
 						className: Object(g.a)(T.a.commonBtn, T.a.primaryBtn),
 						disabled: !c,
 						onClick: this.handleContinue
@@ -286,11 +286,11 @@
 					className: T.a.username
 				}, r.a.createElement("span", {
 					className: T.a.usernamePrefix
-				}, "u/"), e.username), r.a.createElement("div", null, r.a.createElement(y.f, {
+				}, "u/"), e.username), r.a.createElement("div", null, r.a.createElement(y.i, {
 					className: Object(g.a)(T.a.commonBtn, T.a.primaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onPrimaryButtonClick
-				}, e.primaryButtonText()), r.a.createElement(y.n, {
+				}, e.primaryButtonText()), r.a.createElement(y.o, {
 					className: Object(g.a)(T.a.commonBtn, T.a.secondaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onSecondaryButtonClick
@@ -827,4 +827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.fd523208812c8db83001.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.5f282d486e44273d095d.js.map

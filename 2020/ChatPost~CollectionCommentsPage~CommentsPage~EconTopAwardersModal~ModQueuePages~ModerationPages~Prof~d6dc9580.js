@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.f3252f59faec7c18a1ba.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.376668fb777aadd703be.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -890,14 +890,14 @@
 							hk: "24QeOL"
 						}), h.b.SuccessAward))), e.onClose()
 					},
-					u = o.a.createElement(o.a.Fragment, null, o.a.createElement(Pe.i, {
+					u = o.a.createElement(o.a.Fragment, null, o.a.createElement(Pe.l, {
 						onClick: () => {
 							t(Object(x.clickReportAward)(e.award, e.thing.id)), i(Ie.REPORT_COMMUNITY_AWARD)
 						},
 						className: Ne.a.reportStepButton
 					}, r.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
-					})), o.a.createElement(Pe.i, {
+					})), o.a.createElement(Pe.l, {
 						onClick: () => {
 							t(Object(x.clickFlagAwardUsage)(e.award, e.thing.id)), i(Ie.FLAG_USAGE)
 						},
@@ -966,9 +966,9 @@
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(I.c)(e, {
 							experimentEligibilitySelector: _.H,
-							experimentName: C.Y
+							experimentName: C.ab
 						});
-						return !(!t || Object(C.zc)(t))
+						return !(!t || Object(C.Bc)(t))
 					},
 					isLoggedIn: _.H,
 					prefersReducedAnimations: P.c
@@ -2470,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.f3252f59faec7c18a1ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.376668fb777aadd703be.js.map

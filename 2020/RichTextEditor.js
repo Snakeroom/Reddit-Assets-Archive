@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.daa26d8cbb240d854194.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.ae5b89fa799bd305c945.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -68,7 +68,7 @@
 			})), n.d(t, "c", (function() {
 				return M
 			})), n.d(t, "f", (function() {
-				return R
+				return j
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/lodash/forOwn.js"),
@@ -207,7 +207,7 @@
 						initialView: h.c.MyBadges
 					}))
 				}
-			}, R = e => async (t, n, o) => {
+			}, j = e => async (t, n, o) => {
 				let {
 					apiContext: s
 				} = o;
@@ -282,6 +282,7 @@
 			e.exports = {
 				SubmitButton: "_22S4OsoDdOqiM-hPTeOURa",
 				submitButton: "_22S4OsoDdOqiM-hPTeOURa",
+				is2020: "_2Ke4JTtee3SBjPy2emSZ3G",
 				LoadingIcon: "_2qsMO_C_HwxgUgktaOeqZ2",
 				loadingIcon: "_2qsMO_C_HwxgUgktaOeqZ2",
 				CancelButton: "cZz52cPDbNgzrR1Oo1k27",
@@ -301,39 +302,45 @@
 				i = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/controls/Button/index.tsx"),
 				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				c = n("./src/reddit/components/CommentCreation/FormFooter/index.m.less"),
-				l = n.n(c);
+				c = n("./src/reddit/hooks/useButtons2020.ts"),
+				l = n("./src/reddit/components/CommentCreation/FormFooter/index.m.less"),
+				m = n.n(l);
 			const {
-				fbt: m
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), u = i.a.div("FormFooterWrapper", l.a), p = i.a.wrapped(a.f, "SubmitButton", l.a), h = i.a.wrapped(d.a, "LoadingIcon", l.a), b = i.a.wrapped(a.i, "CancelButton", l.a), f = i.a.div("ButtonWrapper", l.a), x = e => e.preventDefault();
+				fbt: u
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = i.a.div("FormFooterWrapper", m.a), h = i.a.wrapped(a.i, "SubmitButton", m.a), b = i.a.wrapped(d.a, "LoadingIcon", m.a), f = i.a.wrapped(a.l, "CancelButton", m.a), x = i.a.div("ButtonWrapper", m.a), g = e => e.preventDefault();
 			t.a = e => {
 				let {
 					pending: t,
 					cancelButtonEnabled: n = !0,
 					children: o,
 					className: i,
-					submitButtonText: a,
-					canSubmit: d,
-					onSubmit: c,
-					onCancel: g
+					submitButtonText: d,
+					canSubmit: l,
+					onSubmit: C,
+					onCancel: E
 				} = e;
-				return s.a.createElement(u, {
+				const w = Object(c.a)();
+				return s.a.createElement(p, {
 					className: Object(r.a)(i, {
-						[l.a.pending]: t
+						[m.a.pending]: t
 					})
-				}, s.a.createElement(f, null, s.a.createElement(p, {
+				}, s.a.createElement(x, null, s.a.createElement(h, {
+					className: w ? m.a.is2020 : "",
+					size: a.c.XS,
 					type: "submit",
-					disabled: !d,
-					onClick: c,
-					onMouseDown: x
-				}, t ? s.a.createElement(h, {
+					disabled: !l,
+					onClick: C,
+					onMouseDown: g
+				}, t ? s.a.createElement(b, {
 					sizePx: 10
-				}) : a), n && s.a.createElement(b, {
+				}) : d), n && s.a.createElement(f, {
+					className: w ? m.a.is2020 : "",
+					size: a.c.XS,
 					type: "reset",
 					disabled: t,
-					onClick: g,
-					onMouseDown: x
-				}, m._("Cancel", null, {
+					onClick: E,
+					onMouseDown: g
+				}, u._("Cancel", null, {
 					hk: "2TSLl5"
 				}))), o)
 			}
@@ -439,14 +446,14 @@
 				}
 			}
 			var M = n("./src/reddit/icons/svgs/MarkdownMode/index.tsx"),
-				R = n("./src/reddit/components/PostCreationForm/DivButton/index.tsx"),
-				j = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
+				j = n("./src/reddit/components/PostCreationForm/DivButton/index.tsx"),
+				R = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
 				S = n("./src/reddit/components/CommentCreation/MarkdownCommentForm/MarkdownModeButton.m.less"),
 				B = n.n(S);
 			const I = O.a.wrapped(x.a, "LoadingIcon", B.a),
 				F = O.a.div("Wrapper", B.a),
 				P = O.a.wrapped(M.a, "MarkdownModeIcon", B.a),
-				A = O.a.wrapped(R.a, "Button", B.a);
+				A = O.a.wrapped(j.a, "Button", B.a);
 
 			function D(e) {
 				const t = o.fbt._("Switch to fancy pants editor", null, {
@@ -459,7 +466,7 @@
 					onClick: e.onClick
 				}, e.isConverting && r.a.createElement(I, {
 					sizePx: 12
-				}), r.a.createElement(j.a, {
+				}), r.a.createElement(R.a, {
 					text: t
 				}), !e.isConverting && r.a.createElement(P, null)))
 			}
@@ -639,8 +646,8 @@
 						onSwitchMode: y,
 						userName: M
 					} = this.props, {
-						cancelModalText: R,
-						showError: j,
+						cancelModalText: j,
+						showError: R,
 						text: S,
 						breakOut: B,
 						wrapperHeight: I
@@ -710,14 +717,14 @@
 						sizePx: 12
 					})))), r.a.createElement(de, {
 						onClick: this.props.helpModalToggled
-					})))), j && Object(f.c)(g), e === F && r.a.createElement(p.a, {
+					})))), R && Object(f.c)(g), e === F && r.a.createElement(p.a, {
 						actionText: o.fbt._("Discard", null, {
 							hk: "1kJ5PR"
 						}),
 						cancelActionText: o.fbt._("keep", null, {
 							hk: "J0ER1"
 						}),
-						modalText: R,
+						modalText: j,
 						onConfirm: () => this.cancelForm(),
 						toggleModal: n,
 						trackClick: () => {}
@@ -951,8 +958,8 @@
 				y = n("./src/lib/memoizeByReference/index.ts"),
 				T = n("./src/reddit/components/AuthorLink/index.tsx"),
 				M = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				R = n("./src/reddit/components/RichTextEditor/index.tsx"),
-				j = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts"),
+				j = n("./src/reddit/components/RichTextEditor/index.tsx"),
+				R = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts"),
 				S = n("./src/reddit/components/RichTextEditor/helpers/controlsState.ts"),
 				B = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				I = n("./src/reddit/components/CollapseIntoOverflow/index.m.less"),
@@ -1180,8 +1187,8 @@
 				ye = u.a.div("FormWrapper", Oe.a),
 				Te = u.a.div("CommentHeader", Oe.a),
 				Me = u.a.wrapped(ce.a, "FormFooter", Oe.a),
-				Re = u.a.div("MarkdownButtonWrapper", Oe.a),
-				je = u.a.wrapped(se.a, "MarkdownButton", Oe.a),
+				je = u.a.div("MarkdownButtonWrapper", Oe.a),
+				Re = u.a.wrapped(se.a, "MarkdownButton", Oe.a),
 				Se = u.a.wrapped(ne, "SectionSpacer", Oe.a),
 				Be = u.a.div("ToolbarWrapper", Oe.a),
 				Ie = u.a.span("FormHeaderText", Oe.a),
@@ -1199,7 +1206,7 @@
 						const {
 							editorState: c,
 							onMarkdownButtonClick: l
-						} = e, m = c.getCurrentContent(), u = !!m.getPlainText().trim() || m.getBlockMap().some(e => !!e && Object(j.t)(e.getType()));
+						} = e, m = c.getCurrentContent(), u = !!m.getPlainText().trim() || m.getBlockMap().some(e => !!e && Object(R.t)(e.getType()));
 						return i.a.createElement(Me, {
 							cancelButtonEnabled: t,
 							className: Object(O.a)({
@@ -1210,7 +1217,7 @@
 							pending: a,
 							submitButtonText: d,
 							canSubmit: u
-						}, i.a.createElement(Be, null, i.a.createElement(oe, e), i.a.createElement(Se, null), i.a.createElement(Re, null, i.a.createElement(je, {
+						}, i.a.createElement(Be, null, i.a.createElement(oe, e), i.a.createElement(Se, null), i.a.createElement(je, null, i.a.createElement(Re, {
 							draftKey: n,
 							onClick: l
 						}))))
@@ -1362,7 +1369,7 @@
 						breakOut: E,
 						formHeight: v,
 						rteState: k
-					} = this.state, y = Object(le.a)(a), j = r.draftType === ue.c.edit, S = d !== ue.c.replyToPost;
+					} = this.state, y = Object(le.a)(a), R = r.draftType === ue.c.edit, S = d !== ue.c.replyToPost;
 					return i.a.createElement(ye, {
 						className: Object(O.a)(n, {
 							[Oe.a.isTopLevelComment]: f,
@@ -1384,8 +1391,8 @@
 					}))), i.a.createElement(de.a, {
 						breakOut: E,
 						depth: o,
-						isEditing: j
-					}, i.a.createElement(R.a, {
+						isEditing: R
+					}, i.a.createElement(j.a, {
 						userCanUseGifs: x,
 						dataTestId: ie.c,
 						destSubreddit: s,
@@ -1584,7 +1591,7 @@
 					}
 				}
 				render() {
-					return r.a.createElement(u.f, {
+					return r.a.createElement(u.i, {
 						className: Object(d.a)(this.props.smallButton ? null : x.a.RequestButton, this.props.className),
 						onClick: this.onRequest
 					}, this.props.eventSource === h.b.Comment ? o.fbt._("Request to comment", null, {
@@ -1655,7 +1662,7 @@
 						href: "https://www.reddit.com"
 					}, "reddit!"))), r.a.createElement("tr", null, r.a.createElement(c.p, null, r.a.createElement(c.j, null, "* item 1"), r.a.createElement(c.j, null, "* item 2"), r.a.createElement(c.j, null, "* item 3")), r.a.createElement(c.p, null, r.a.createElement(c.v, null, r.a.createElement(c.g, null, "item 1"), r.a.createElement(c.g, null, "item 2"), r.a.createElement(c.g, null, "item 3")))), r.a.createElement("tr", null, r.a.createElement(c.p, null, r.a.createElement(c.j, null, "> quoted text")), r.a.createElement(c.p, null, r.a.createElement(c.c, null, "quoted text"))), r.a.createElement("tr", null, r.a.createElement(c.p, null, r.a.createElement(c.j, null, "~~strikethrough~~")), r.a.createElement(c.p, null, r.a.createElement(c.d, null, "strikethrough"))), r.a.createElement("tr", null, r.a.createElement(c.p, null, r.a.createElement(c.j, null, "super^script")), r.a.createElement(c.p, null, "super", r.a.createElement(c.m, null, "script"))), r.a.createElement("tr", null, r.a.createElement(c.p, null, r.a.createElement(c.j, null, ">!spoilers!<")), r.a.createElement(c.p, null, r.a.createElement(l.a, null, "spoilers")))), r.a.createElement(O, null, "Check the", r.a.createElement(c.a, {
 						href: "https://www.reddit.com/wiki/commenting"
-					}, " commenting wiki page "), "for more help")), r.a.createElement(w, null, r.a.createElement(f.a, null, r.a.createElement(h.f, {
+					}, " commenting wiki page "), "for more help")), r.a.createElement(w, null, r.a.createElement(f.a, null, r.a.createElement(h.i, {
 						onClick: this.props.closeModal,
 						"data-redditstyle": !0
 					}, o.fbt._("Close", null, {
@@ -1721,7 +1728,7 @@
 					helpModalToggled: () => e(Object(a.x)(l.b)),
 					switchToRTEModalToggled: () => e(Object(a.x)(m.a.SWITCH_TO_RTE_MODAL_ID))
 				}));
-			class R extends s.a.Component {
+			class j extends s.a.Component {
 				constructor(e) {
 					super(e), this.textAreaRef = null, this.onChange = e => {
 						const {
@@ -1808,7 +1815,7 @@
 					}))
 				}
 			}
-			t.a = M(R)
+			t.a = M(j)
 		},
 		"./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less": function(e, t, n) {
 			e.exports = {
@@ -1831,7 +1838,7 @@
 				m = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
 				u = n.n(m),
 				p = n("./src/lib/lessComponent.tsx");
-			const h = p.a.wrapped(d.f, "PrimaryButton", u.a),
+			const h = p.a.wrapped(d.i, "PrimaryButton", u.a),
 				b = p.a.wrapped(i.o, "ModalText", u.a);
 			class f extends s.a.PureComponent {
 				constructor() {
@@ -2011,8 +2018,8 @@
 				y = n("./src/reddit/components/RichTextEditor/index.tsx"),
 				T = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				M = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				R = n("./src/reddit/controls/ErrorText/index.tsx"),
-				j = n("./src/reddit/helpers/richTextEditor/index.ts"),
+				j = n("./src/reddit/controls/ErrorText/index.tsx"),
+				R = n("./src/reddit/helpers/richTextEditor/index.ts"),
 				S = n("./src/reddit/selectors/user.ts"),
 				B = n("./src/reddit/controls/Button/index.tsx"),
 				I = n("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -2021,7 +2028,7 @@
 				A = n("./src/lib/lessComponent.tsx");
 			const D = A.a.div("BottomRow", P.a),
 				W = A.a.div("FormContent", P.a),
-				H = A.a.wrapped(B.f, "SubmitButton", P.a),
+				H = A.a.wrapped(B.i, "SubmitButton", P.a),
 				N = A.a.wrapped(I.a, "LoadingIcon", P.a),
 				L = Object(M.t)(),
 				z = Object(l.c)({
@@ -2168,7 +2175,7 @@
 							[P.a.isPending]: !!i
 						}),
 						destSubreddit: this.props.destSubreddit,
-						editorType: j.a.Post,
+						editorType: R.a.Post,
 						initialHeight: this.state.editorHeight,
 						rteState: g,
 						onChange: this.onRichPostChange,
@@ -2189,7 +2196,7 @@
 						onSubmit: this.onSubmit,
 						onSwitchEditorMode: this.onToggleEditorMode,
 						placeholderText: C
-					}), a.a.createElement(D, null, a.a.createElement(B.n, {
+					}), a.a.createElement(D, null, a.a.createElement(B.o, {
 						disabled: !!i,
 						onClick: this.cancelEdit
 					}, o.fbt._("Cancel", null, {
@@ -2201,7 +2208,7 @@
 						sizePx: 10
 					}) : o.fbt._("save", null, {
 						hk: "1RZ7vw"
-					}))), a.a.createElement(R.a, {
+					}))), a.a.createElement(j.a, {
 						className: P.a.errorMessages,
 						messages: v
 					}), a.a.createElement(E.a, {
@@ -2804,8 +2811,8 @@
 			const a = Object(o.a)(i.H, i.G, (e, t) => e || t),
 				d = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: s.o
-				}), e => e === s.t.Enabled)
+					experimentName: s.q
+				}), e => e === s.v.Enabled)
 		},
 		"./src/reddit/selectors/products.ts": function(e, t, n) {
 			"use strict";
@@ -2841,4 +2848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.daa26d8cbb240d854194.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.ae5b89fa799bd305c945.js.map

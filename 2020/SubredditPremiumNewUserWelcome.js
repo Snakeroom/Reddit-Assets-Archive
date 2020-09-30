@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.f1f4263f96cb12c32bb2.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4f14cf4b5684fc705af7.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -397,7 +397,7 @@
 						badge: t,
 						subredditId: s,
 						type: f.a.Achievement
-					}), r.a.createElement(F.f, {
+					}), r.a.createElement(F.i, {
 						onClick: this.onApply
 					}, E.fbt._("apply", null, {
 						hk: "3BGbhR"
@@ -795,4 +795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.f1f4263f96cb12c32bb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4f14cf4b5684fc705af7.js.map

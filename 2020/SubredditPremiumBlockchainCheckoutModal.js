@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.50210f6aaf96884ae693.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.d75c1675b74e71754328.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -284,7 +284,7 @@
 					}, c.a.createElement(w, {
 						className: Z.a.walletAmount,
 						subredditId: a
-					}), this.props.isEthereumProvider ? c.a.createElement(j.f, {
+					}), this.props.isEthereumProvider ? c.a.createElement(j.i, {
 						className: Z.a.purchaseButton,
 						onClick: this.onEthereumPurchase,
 						"data-redditstyle": !0,
@@ -293,7 +293,7 @@
 						sizePx: 10
 					}) : q._("Purchase", null, {
 						hk: "1FAV9c"
-					})) : c.a.createElement(j.g, {
+					})) : c.a.createElement(j.j, {
 						redditStyle: !0,
 						className: Z.a.purchaseButton,
 						href: this.getStellarPurchaseLink(),
@@ -506,7 +506,7 @@
 						className: v.a.detailsContainer
 					}, t), l.a.createElement(g.a, {
 						className: v.a.buttonRow
-					}, l.a.createElement(f.f, {
+					}, l.a.createElement(f.i, {
 						className: v.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
@@ -1051,4 +1051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.50210f6aaf96884ae693.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.d75c1675b74e71754328.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.ff9b4eaca051adedc942.js
-// Retrieved at 8/6/2020, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.2545b73468ef0389dadf.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less": function(e, t, s) {
@@ -75,14 +75,14 @@
 						hk: "lVti0"
 					})), o.a.createElement("footer", {
 						className: v.a.footer
-					}, o.a.createElement(_.n, {
+					}, o.a.createElement(_.o, {
 						className: v.a.link,
 						onClick: () => this.onOpenUploadDialog()
 					}, o.a.createElement(O.a, {
 						className: v.a.addCustomIcon
 					}), l.fbt._("upload custom badge", null, {
 						hk: "26VOvM"
-					})), !e && o.a.createElement(_.o, {
+					})), !e && o.a.createElement(_.p, {
 						className: v.a.link,
 						disabled: !this.props.subreddit,
 						to: Object(C.a)(t, this.correlationId),
@@ -170,4 +170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=CustomBadgeHovercardTooltip.ff9b4eaca051adedc942.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.2545b73468ef0389dadf.js.map

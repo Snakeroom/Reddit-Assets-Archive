@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.bd1f0fa367194eea07f5.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.b72760e59aeabdb70160.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, r) {
@@ -628,7 +628,7 @@
 					useTertiaryButton: e.useTertiaryButton,
 					showTertiaryButtonOnHover: e.showTertiaryButtonOnHover,
 					onTertiaryButtonClick: e.onTertiaryButtonClick
-				})))), e.bottomButtonText && e.onBottomButtonClick && a.a.createElement(f.n, {
+				})))), e.bottomButtonText && e.onBottomButtonClick && a.a.createElement(f.o, {
 					className: E.a.bottomButton,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
@@ -671,7 +671,7 @@
 				}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? a.a.createElement(y.a, {
 					className: Object(c.a)(E.a.communityCta, E.a.smallLoadingIcon),
 					sizePx: 12
-				}) : a.a.createElement(f.n, {
+				}) : a.a.createElement(f.o, {
 					className: Object(c.a)(E.a.communityCta, {
 						[E.a.showOnHover]: e.showTertiaryButtonOnHover
 					}),
@@ -856,9 +856,9 @@
 			const o = e => s.e[Object(a.N)(e, {})] === s.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.y
-				}) === n.H.Treatment
+					experimentName: n.A
+				}) === n.J.Treatment
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.bd1f0fa367194eea07f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.b72760e59aeabdb70160.js.map

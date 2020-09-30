@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.207886fcb7870e48894b.js
-// Retrieved at 9/24/2020, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.d7e02b908affe6ccecbf.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/PowerupsMarketingModal/BenefitStep/index.m.less": function(e, t, a) {
@@ -128,7 +128,7 @@
 						})
 					}, n.a.createElement("div", {
 						className: y.a.buttons
-					}, o ? n.a.createElement(C.f, {
+					}, o ? n.a.createElement(C.i, {
 						onClick: a,
 						className: y.a.primaryButton
 					}, M._("Become a Hero", null, {
@@ -138,7 +138,7 @@
 						className: y.a.secondaryButton
 					}, M._("Skip", null, {
 						hk: "2XN1wD"
-					})), n.a.createElement(C.f, {
+					})), n.a.createElement(C.i, {
 						onClick: () => r(o ? 1 : s + 1),
 						className: y.a.primaryButton
 					}, M._("Next", null, {
@@ -402,4 +402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.207886fcb7870e48894b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.d7e02b908affe6ccecbf.js.map

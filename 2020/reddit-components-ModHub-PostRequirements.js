@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.34f31c77ea9ae8107d27.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.7c7665c6e658e5bc12dc.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-PostRequirements"], {
 		"./src/reddit/components/ModHub/PostRequirements/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -1357,7 +1357,7 @@
 						className: ae.a.container
 					}, d.a.createElement(x.c, {
 						className: ae.a.topBar
-					}, d.a.createElement(y.f, {
+					}, d.a.createElement(y.i, {
 						disabled: t || !i,
 						onClick: this.onSaveClick
 					}, e.hasJustSaved ? s.fbt._("Saved", null, {
@@ -1444,4 +1444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.34f31c77ea9ae8107d27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-PostRequirements.7c7665c6e658e5bc12dc.js.map

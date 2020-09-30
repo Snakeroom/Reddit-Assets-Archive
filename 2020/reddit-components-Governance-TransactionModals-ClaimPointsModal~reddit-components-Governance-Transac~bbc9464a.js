@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.610d9a4a1ca71eccfb15.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.5fa2e97a326cb5b54a6a.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, a) {
@@ -201,12 +201,12 @@
 					subredditId: A.subredditId,
 					small: !0,
 					grey: !0
-				})), i.a.createElement(y.i, {
+				})), i.a.createElement(y.l, {
 					className: h.a.declineButton,
 					onClick: A.onDecline
 				}, X._("Decline", null, {
 					hk: "2k3T9H"
-				})), i.a.createElement(y.i, {
+				})), i.a.createElement(y.l, {
 					disabled: A.disabled,
 					onClick: A.onApprove
 				}, X._("Approve", null, {
@@ -257,7 +257,7 @@
 					})
 				}, m.fbt._("Wrong password", null, {
 					hk: "2L9j8l"
-				})))), i.a.createElement(y.f, {
+				})))), i.a.createElement(y.i, {
 					className: Q.a.approveButton,
 					disabled: s,
 					onClick: l
@@ -449,7 +449,7 @@
 					className: iA.a.approveInstructions
 				}, sA._("You can approve this in your browser with your Vault Password instead.", null, {
 					hk: "2IOdOY"
-				})), i.a.createElement(y.i, {
+				})), i.a.createElement(y.l, {
 					onClick: A.onNotificationNotReceived
 				}, sA._("Approve with Vault Password", null, {
 					hk: "1lwlYz"
@@ -991,4 +991,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.610d9a4a1ca71eccfb15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.5fa2e97a326cb5b54a6a.js.map

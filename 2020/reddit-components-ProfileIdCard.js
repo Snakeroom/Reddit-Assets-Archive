@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8228378ded94cb9dc30c.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aa39976349accf382b9f.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -28,7 +28,7 @@
 					sendEvent: o,
 					contextId: i
 				} = e;
-				return s.a.createElement(d.f, {
+				return s.a.createElement(d.i, {
 					onClick: () => {
 						t(), o(Object(c.b)(i))
 					},
@@ -335,7 +335,7 @@
 						onClick: e.onClick,
 						source: void 0,
 						className: G.a.menuItem
-					}, e.text) : s.a.createElement(u.n, {
+					}, e.text) : s.a.createElement(u.o, {
 						className: G.a.menuItem,
 						key: e.text,
 						onClick: e.onClick
@@ -360,7 +360,7 @@
 						className: G.a.container
 					}, r, s.a.createElement("div", {
 						className: G.a.expandContainer
-					}, s.a.createElement(u.n, {
+					}, s.a.createElement(u.o, {
 						className: G.a.expandButton,
 						onClick: this.moreOptionsToggled
 					}, o)), e && s.a.createElement(j, null), this.state.showCrisisModal && s.a.createElement(L.b, {
@@ -433,7 +433,7 @@
 				} = e;
 				return s.a.createElement("div", {
 					className: Q.a.actionItem
-				}, s.a.createElement(u.h, {
+				}, s.a.createElement(u.k, {
 					className: Q.a.button,
 					to: n ? "/user/".concat(t, "/submit") : "/submit"
 				}, Y._("New post", null, {
@@ -447,12 +447,12 @@
 				} = e;
 				return s.a.createElement("div", {
 					className: Q.a.actionItem
-				}, r ? s.a.createElement(u.i, {
+				}, r ? s.a.createElement(u.l, {
 					className: Q.a.button,
 					onClick: () => n(t, r)
 				}, Y._("Unfollow", null, {
 					hk: "1nM1SO"
-				})) : s.a.createElement(u.f, {
+				})) : s.a.createElement(u.i, {
 					className: Q.a.button,
 					onClick: () => n(t, r)
 				}, Y._("Follow", null, {
@@ -765,4 +765,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8228378ded94cb9dc30c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aa39976349accf382b9f.js.map

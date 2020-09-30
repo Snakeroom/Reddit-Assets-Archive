@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3919c141de419ae9b83d.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.e9d46b882ba043b0e458.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -2307,7 +2307,7 @@
 				M = s.n(W);
 			const {
 				fbt: D
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = p.a.div("ButtonsContainer", M.a), U = p.a.div("Container", M.a), H = p.a.div("Description", M.a), K = p.a.div("PrivateSubredditDetails", M.a), V = p.a.div("PrivateSubredditDescription", M.a), q = p.a.h3("PrivateSubredditName", M.a), z = p.a.a("Link", M.a), G = p.a.wrapped(R.h, "LinkRouterButton", M.a), Y = p.a.wrapped(R.g, "LinkButton", M.a), J = p.a.wrapped(R.k, "SecondaryLinkRouterButton", M.a), X = p.a.wrapped(R.j, "SecondaryLinkButton", M.a), Q = p.a.wrapped(G, "GoHomeLinkButton", M.a), Z = p.a.img("Image", M.a), $ = p.a.img("ImagePlaceholder", M.a), ee = p.a.wrapped(G, "LeftLinkRouterButton", M.a), te = p.a.wrapped(Y, "LeftLinkButton", M.a), se = p.a.wrapped(X, "SecondaryLeftLinkButton", M.a), ne = p.a.wrapped(J, "SecondaryLeftLinkRouterButton", M.a), re = p.a.h3("Title", M.a), ie = p.a.div("PageBody", M.a), ae = p.a.div("QuarantineMessageWrapper", M.a), oe = Object(d.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = p.a.div("ButtonsContainer", M.a), U = p.a.div("Container", M.a), H = p.a.div("Description", M.a), K = p.a.div("PrivateSubredditDetails", M.a), V = p.a.div("PrivateSubredditDescription", M.a), q = p.a.h3("PrivateSubredditName", M.a), z = p.a.a("Link", M.a), G = p.a.wrapped(R.k, "LinkRouterButton", M.a), Y = p.a.wrapped(R.j, "LinkButton", M.a), J = p.a.wrapped(R.n, "SecondaryLinkRouterButton", M.a), X = p.a.wrapped(R.m, "SecondaryLinkButton", M.a), Q = p.a.wrapped(G, "GoHomeLinkButton", M.a), Z = p.a.img("Image", M.a), $ = p.a.img("ImagePlaceholder", M.a), ee = p.a.wrapped(G, "LeftLinkRouterButton", M.a), te = p.a.wrapped(Y, "LeftLinkButton", M.a), se = p.a.wrapped(X, "SecondaryLeftLinkButton", M.a), ne = p.a.wrapped(J, "SecondaryLeftLinkRouterButton", M.a), re = p.a.h3("Title", M.a), ie = p.a.div("PageBody", M.a), ae = p.a.div("QuarantineMessageWrapper", M.a), oe = Object(d.c)({
 				isLoggedIn: B.G,
 				origin: _.l,
 				user: B.i
@@ -2606,7 +2606,7 @@
 						isEnabled: t,
 						isDownToChatExperimentEnabled: s
 					} = this.props;
-					return t && s ? r.a.createElement(l.f, {
+					return t && s ? r.a.createElement(l.i, {
 						className: Object(o.a)(h.a.button, e ? h.a.headerButton : ""),
 						redditStyle: !0,
 						onClick: this.onButtonClick
@@ -3584,7 +3584,7 @@
 					maxSupporters: 50
 				})), r.a.createElement("div", {
 					className: ee.a.group
-				}, r.a.createElement(O.f, {
+				}, r.a.createElement(O.i, {
 					className: ee.a.button,
 					onClick: () => {
 						g(Object(c.d)()), h(Object(l.b)())
@@ -3959,7 +3959,7 @@
 			var p = e => o.a.createElement("div", {
 					className: Object(n.a)(e.className, u.a.container),
 					style: e.style
-				}, o.a.createElement(c.f, {
+				}, o.a.createElement(c.i, {
 					className: u.a.button,
 					onClick: () => window.scroll(0, 0)
 				}, m._("Back to top", null, {
@@ -4168,7 +4168,7 @@
 				P = s.n(I);
 			const {
 				fbt: T
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = c.a.wrapped(h.g, "ModalFormItem", P.a), L = c.a.wrapped(f.f, "PrimaryButton", P.a), _ = c.a.wrapped(h.o, "ModalText", P.a), B = c.a.a("ItemLink", P.a), W = c.a.p("Detail", P.a), M = c.a.p("DescText", P.a), D = c.a.div("Title", P.a), F = c.a.div("Header", P.a), U = c.a.wrapped(w.a, "ChatIcon", P.a), H = c.a.wrapped(v.a, "PlanetIcon", P.a), K = c.a.wrapped(y.a, "Pencil", P.a), V = c.a.wrapped(E.a, "Group", P.a), q = c.a.wrapped(j.a, "Key", P.a), z = c.a.wrapped(g.b, "SubredditIcon", P.a), G = c.a.button("EditButton", P.a), Y = c.a.button("ShowAllLink", P.a), J = c.a.span("ChannelName", P.a), X = c.a.div("HeaderText", P.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = c.a.wrapped(h.g, "ModalFormItem", P.a), L = c.a.wrapped(f.i, "PrimaryButton", P.a), _ = c.a.wrapped(h.o, "ModalText", P.a), B = c.a.a("ItemLink", P.a), W = c.a.p("Detail", P.a), M = c.a.p("DescText", P.a), D = c.a.div("Title", P.a), F = c.a.div("Header", P.a), U = c.a.wrapped(w.a, "ChatIcon", P.a), H = c.a.wrapped(v.a, "PlanetIcon", P.a), K = c.a.wrapped(y.a, "Pencil", P.a), V = c.a.wrapped(E.a, "Group", P.a), q = c.a.wrapped(j.a, "Key", P.a), z = c.a.wrapped(g.b, "SubredditIcon", P.a), G = c.a.button("EditButton", P.a), Y = c.a.button("ShowAllLink", P.a), J = c.a.span("ChannelName", P.a), X = c.a.div("HeaderText", P.a);
 			var Q;
 			! function(e) {
 				e[e.Modal = 0] = "Modal", e[e.Widget = 1] = "Widget"
@@ -5014,7 +5014,7 @@
 						showSubredditMeta: !1,
 						showSubredditName: Object(g.a)(Object(de.f)(s)),
 						trendingPost: x
-					})), f.map(this.renderSmallPost), e, O.map(this.renderSmallPost), d && o.a.createElement(oe.n, {
+					})), f.map(this.renderSmallPost), e, O.map(this.renderSmallPost), d && o.a.createElement(oe.o, {
 						className: Ie.a.SeeMore,
 						onClick: this.showMorePosts
 					}, n || Pe._("See More", null, {
@@ -5275,7 +5275,7 @@
 						className: xt.a.unchecked
 					}), n.fbt._("Customize colors", null, {
 						hk: "40coBA"
-					})), o.a.createElement(oe.k, {
+					})), o.a.createElement(oe.n, {
 						to: "/r/".concat(i, "?styling=true"),
 						className: xt.a.button,
 						onClick: this.customizeAppearance
@@ -5711,7 +5711,7 @@
 					})
 				}
 				renderButton() {
-					return i.a.createElement(g.n, {
+					return i.a.createElement(g.o, {
 						className: v.a.flairFilterButton,
 						onMouseDown: this.trackFlairOverflowClick,
 						onClick: this.onToggleCollapse
@@ -6030,7 +6030,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? u : "none"
 						}
-					}, e), this.state.isTruncated && r.a.createElement(m.n, {
+					}, e), this.state.isTruncated && r.a.createElement(m.o, {
 						className: C.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, N._("See More", null, {
@@ -6111,7 +6111,7 @@
 						button: t,
 						overrideColors: s
 					} = e, n = Object(h.a)(e).button;
-					return r.a.createElement(c.i, {
+					return r.a.createElement(c.l, {
 						className: w(t),
 						style: y(t, s, n)
 					}, t.kind === g.f.Text && r.a.createElement("span", {
@@ -6345,7 +6345,7 @@
 						title: S.fbt._("Moderators", null, {
 							hk: "3AMICc"
 						})
-					}, (s.mods && s.mods.length || n) && r.a.createElement(c.k, {
+					}, (s.mods && s.mods.length || n) && r.a.createElement(c.n, {
 						className: he.a.MessageModsButton,
 						rel: de.b,
 						target: de.c.BLANK,
@@ -7402,9 +7402,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const a = e => n.R.Enabled === Object(r.c)(e, {
+			const a = e => n.T.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: i.H,
-				experimentName: n.P
+				experimentName: n.R
 			})
 		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, s) {
@@ -7556,4 +7556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3919c141de419ae9b83d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.e9d46b882ba043b0e458.js.map

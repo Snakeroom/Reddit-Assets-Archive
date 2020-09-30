@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.4ee8237a25166eb6a799.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.7b0e29b02ae6756785d2.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, r) {
@@ -69,8 +69,8 @@
 			const k = Object(d.c)({
 					canFlagAwards: e => Object(b.c)(e, {
 						experimentEligibilitySelector: b.a,
-						experimentName: w.V
-					}) === w.cb.Enabled,
+						experimentName: w.X
+					}) === w.eb.Enabled,
 					currentUser: g.i,
 					moderatorPermissions: (e, t) => {
 						let {
@@ -171,7 +171,7 @@
 						currentUser: t,
 						onClickPremium: r
 					} = this.props, s = e.awardSubType === h.d.Premium, a = !!t && t.isGold;
-					return s ? a ? null : n.a.createElement(P.e, {
+					return s ? a ? null : n.a.createElement(P.h, {
 						className: L.a.premiumCta,
 						onClick: r
 					}, o.fbt._("Get Premium", null, {
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.4ee8237a25166eb6a799.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.7b0e29b02ae6756785d2.js.map

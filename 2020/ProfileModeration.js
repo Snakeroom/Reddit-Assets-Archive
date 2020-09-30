@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.50a8b2b2ddd2b106f331.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.3d1bb075df00b902f633.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./src/reddit/components/Settings/shared/Heading.m.less": function(e, t, n) {
@@ -147,8 +147,8 @@
 			}(g || (g = {}));
 			const v = c.a.wrapped(h.a, "Gear", f.a),
 				_ = c.a.h3("Title", f.a),
-				E = c.a.div("TabNavContainer", f.a),
-				k = c.a.div("Tabs", f.a),
+				k = c.a.div("TabNavContainer", f.a),
+				E = c.a.div("Tabs", f.a),
 				w = c.a.wrapped(e => {
 					var {
 						active: t,
@@ -209,7 +209,7 @@
 					} = this.props, o = Object(i.a)({
 						[f.a.mResponsive]: t
 					});
-					return s.a.createElement(E, {
+					return s.a.createElement(k, {
 						className: Object(i.a)(o, this.props.className),
 						innerRef: e,
 						onTouchMove: n
@@ -217,7 +217,7 @@
 						className: Object(i.a)(o, {
 							[f.a.mConstrainWidth]: !!this.props.constrainWidth
 						})
-					}, x(this.props.icon), this.props.title), s.a.createElement(k, {
+					}, x(this.props.icon), this.props.title), s.a.createElement(E, {
 						className: Object(i.a)(o, {
 							[f.a.mConstrainWidth]: !!this.props.constrainWidth
 						}),
@@ -272,7 +272,7 @@
 						className: l.a.title
 					}, t || o.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 						hk: "3VvHek"
-					})), r.a.createElement(s.h, {
+					})), r.a.createElement(s.k, {
 						className: l.a.primaryRouterLink,
 						to: "/"
 					}, o.fbt._("Go Home", null, {
@@ -289,7 +289,7 @@
 						className: l.a.title
 					}, t || o.fbt._("Sorry, You do not have permission to view this page.", null, {
 						hk: "4lRbHD"
-					})), r.a.createElement(s.h, {
+					})), r.a.createElement(s.k, {
 						className: l.a.primaryRouterLink,
 						to: "/"
 					}, o.fbt._("Go Home", null, {
@@ -325,8 +325,8 @@
 				y = n("./src/reddit/pages/ProfileModSettings/Navigation.m.less"),
 				v = n.n(y);
 			const _ = p.a.li("listItem", v.a),
-				E = p.a.wrapped(b.j, "sectionWrapper", v.a);
-			class k extends r.a.PureComponent {
+				k = p.a.wrapped(b.j, "sectionWrapper", v.a);
+			class E extends r.a.PureComponent {
 				render() {
 					const {
 						profileName: e
@@ -460,9 +460,9 @@
 				let {
 					children: t
 				} = e;
-				return r.a.createElement(E, null, r.a.createElement(b.m, null, t))
+				return r.a.createElement(k, null, r.a.createElement(b.m, null, t))
 			}
-			var S = k;
+			var S = E;
 			const O = Object(i.c)({
 					isModerator: (e, t) => Object(u.f)(e, t.match.params),
 					isOwnProfile: (e, t) => Object(m.L)(e, t.match.params.profileName),
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.50a8b2b2ddd2b106f331.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.3d1bb075df00b902f633.js.map

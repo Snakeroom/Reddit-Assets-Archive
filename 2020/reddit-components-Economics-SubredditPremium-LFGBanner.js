@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.4f2edfe8138ba958a95b.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.fe8d3ef42852c7825b9f.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, s) {
@@ -251,7 +251,7 @@
 					src: e.img
 				}), r.a.createElement("div", {
 					className: F.a.description
-				}, e.description), r.a.createElement(j.n, {
+				}, e.description), r.a.createElement(j.o, {
 					className: F.a.button,
 					onClick: e.onClaim
 				}, e.cta))
@@ -578,7 +578,7 @@
 							onToggleDropdown: () => this.setState(e => ({
 								visibleDropdown: e.visibleDropdown ? void 0 : "playerType"
 							}))
-						}), r.a.createElement(j.f, {
+						}), r.a.createElement(j.i, {
 							className: ge.a.button,
 							disabled: !s || !a || !i,
 							onClick: () => {
@@ -721,7 +721,7 @@
 						className: ve.a.dismissedText
 					}, n.fbt._("Ok, we won't show you this again.", null, {
 						hk: "4z33KK"
-					})), r.a.createElement(j.f, {
+					})), r.a.createElement(j.i, {
 						onClick: this.handleUndoDismiss
 					}, n.fbt._("undo", null, {
 						hk: "1A9z3Y"
@@ -984,4 +984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.4f2edfe8138ba958a95b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.fe8d3ef42852c7825b9f.js.map

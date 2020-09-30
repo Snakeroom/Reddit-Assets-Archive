@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.a39d544c62ebb1961a81.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.635d4b43e3585e6a6103.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -1265,12 +1265,12 @@
 						onChange: this.setSelectedFlair
 					}), a.a.createElement("div", {
 						className: O.a.buttonsRow
-					}, a.a.createElement(x.f, {
+					}, a.a.createElement(x.i, {
 						disabled: !l,
 						onClick: this.onApply
 					}, o.fbt._("Apply", null, {
 						hk: "3mAjVQ"
-					})), a.a.createElement(x.i, {
+					})), a.a.createElement(x.l, {
 						className: O.a.clearButton,
 						onClick: this.onClear
 					}, o.fbt._("Clear Flair", null, {
@@ -1569,7 +1569,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? m : "none"
 						}
-					}, e), this.state.isTruncated && o.a.createElement(u.n, {
+					}, e), this.state.isTruncated && o.a.createElement(u.o, {
 						className: j.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, E._("See More", null, {
@@ -2365,4 +2365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a39d544c62ebb1961a81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.635d4b43e3585e6a6103.js.map

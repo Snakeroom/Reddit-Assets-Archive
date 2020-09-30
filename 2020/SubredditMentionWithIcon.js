@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d68fe8670685ade99d2a.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.20eb2b18ae830f4f7c52.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditsWithAboutInfo.json": function(e) {
@@ -807,7 +807,7 @@
 						shouldReverseColor: s
 					} = e, n = v(e, ["small", "shouldReverseColor"]);
 					const o = Object(r.b)(),
-						a = s ? d.i : d.f;
+						a = s ? d.l : d.i;
 					return i.a.createElement(a, f({}, n, {
 						className: Object(p.a)(n.className, {
 							[m.a.isLarge]: !t
@@ -822,7 +822,7 @@
 						shouldReverseColor: n
 					} = e, o = v(e, ["small", "belongsToType", "shouldReverseColor"]);
 					const a = Object(r.b)(),
-						c = n ? d.f : d.i;
+						c = n ? d.i : d.l;
 					return i.a.createElement(c, f({}, o, {
 						className: Object(p.a)(o.className, {
 							[m.a.isLarge]: !t
@@ -1105,4 +1105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d68fe8670685ade99d2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.20eb2b18ae830f4f7c52.js.map

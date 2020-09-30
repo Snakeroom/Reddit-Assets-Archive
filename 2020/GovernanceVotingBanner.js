@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.e6780fb35ad6ddfea8da.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.998aafd93ec788638420.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceVotingBanner"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -34,34 +34,69 @@
 				a = n("./node_modules/react/index.js"),
 				r = n.n(a),
 				o = n("./node_modules/react-motion/lib/react-motion.js"),
-				i = n("./node_modules/react-redux/es/index.js"),
-				c = n("./node_modules/reselect/es/index.js"),
+				c = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/reselect/es/index.js"),
 				l = n("./src/lib/constants/index.ts"),
 				d = n("./src/lib/localStorageAvailable/index.ts"),
 				m = n("./src/reddit/contexts/ApiContext.tsx"),
 				u = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				p = n("./src/lib/lessComponent.tsx"),
+				p = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./src/lib/classNames/index.ts")),
 				b = n("./src/reddit/controls/Button/index.tsx"),
 				v = n("./src/reddit/controls/Button/index.m.less"),
-				h = n.n(v);
-			const j = p.a.wrapped(b.m, "InvertedPrimaryRouterLink", h.a),
-				g = p.a.wrapped(b.l, "InvertedTertiaryButton", h.a);
-			var f = n("./src/reddit/endpoints/governance/poll.ts"),
-				O = n("./src/reddit/featureFlags/component.tsx"),
-				x = n("./src/reddit/helpers/overlay/index.ts"),
-				_ = n("./src/reddit/icons/svgs/GovSmall/index.tsx"),
-				E = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				w = n("./src/reddit/selectors/gov.ts"),
-				y = n("./src/reddit/components/Governance/VotingBanner/index.m.less"),
-				N = n.n(y);
+				O = n.n(v);
+
+			function h() {
+				return (h = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			var j = function(e, t) {
+				var n = {};
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var a = 0;
+					for (s = Object.getOwnPropertySymbols(e); a < s.length; a++) t.indexOf(s[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[a]) && (n[s[a]] = e[s[a]])
+				}
+				return n
+			};
+			const f = e => {
+					var {
+						className: t
+					} = e, n = j(e, ["className"]);
+					return r.a.createElement(b.q, h({
+						kind: b.a.InternalLink,
+						className: Object(p.a)(t, O.a.InvertedPrimaryRouterLink)
+					}, n))
+				},
+				g = e => {
+					var {
+						className: t
+					} = e, n = j(e, ["className"]);
+					return r.a.createElement(b.q, h({
+						kind: b.a.Button,
+						className: Object(p.a)(t, O.a.InvertedTertiaryButton)
+					}, n))
+				};
+			var x = n("./src/reddit/endpoints/governance/poll.ts"),
+				E = n("./src/reddit/featureFlags/component.tsx"),
+				_ = n("./src/reddit/helpers/overlay/index.ts"),
+				y = n("./src/reddit/icons/svgs/GovSmall/index.tsx"),
+				w = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				N = n("./src/reddit/selectors/gov.ts"),
+				I = n("./src/reddit/components/Governance/VotingBanner/index.m.less"),
+				S = n.n(I);
 			const C = 100,
-				I = [{
+				P = [{
 					key: "banner",
 					style: {
 						bottom: Object(o.spring)(0)
 					}
 				}];
-			class S extends r.a.Component {
+			class B extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						postTitle: "",
@@ -72,7 +107,7 @@
 							showBanner: !1
 						})
 					}, this.saveDismissState = () => {
-						Object(d.a)() && this.props.subreddit && localStorage.setItem(B(this.props.subreddit.id), (new Date).toISOString())
+						Object(d.a)() && this.props.subreddit && localStorage.setItem(k(this.props.subreddit.id), (new Date).toISOString())
 					}, this.willEnter = () => ({
 						bottom: -C
 					}), this.willLeave = () => ({
@@ -80,7 +115,7 @@
 					})
 				}
 				async componentDidMount() {
-					if (P(this.props.subreddit) || !Object(d.a)()) return;
+					if (L(this.props.subreddit) || !Object(d.a)()) return;
 					const e = function(e) {
 						if (e && e.pinnedPolls) {
 							const t = Object.keys(e.pinnedPolls)[0];
@@ -88,7 +123,7 @@
 						}
 					}(this.props.assets);
 					if (e) {
-						const t = await Object(f.a)(this.props.apiContext(), e);
+						const t = await Object(x.a)(this.props.apiContext(), e);
 						t.ok && this.setState({
 							postTitle: t.body.title,
 							postUrl: t.body.url,
@@ -97,86 +132,86 @@
 					}
 				}
 				render() {
-					if (P(this.props.subreddit) || !this.props.subreddit) return null;
+					if (L(this.props.subreddit) || !this.props.subreddit) return null;
 					const {
 						subreddit: e
 					} = this.props;
 					return r.a.createElement(o.TransitionMotion, {
 						defaultStyles: [],
 						didLeave: this.saveDismissState,
-						styles: this.state.showBanner ? I : [],
+						styles: this.state.showBanner ? P : [],
 						willEnter: this.willEnter,
 						willLeave: this.willLeave
 					}, t => r.a.createElement(a.Fragment, null, t.map(t => r.a.createElement("div", {
-						className: N.a.container,
+						className: S.a.container,
 						key: t.key,
 						style: t.style
 					}, r.a.createElement("div", {
-						className: N.a.inner
+						className: S.a.inner
 					}, r.a.createElement("div", {
-						className: N.a.content
+						className: S.a.content
 					}, r.a.createElement("div", {
-						className: N.a.redditIconContainer
-					}, r.a.createElement(E.a, {
-						className: N.a.redditIcon
+						className: S.a.redditIconContainer
+					}, r.a.createElement(w.a, {
+						className: S.a.redditIcon
 					}), r.a.createElement("div", {
-						className: N.a.glowInner
+						className: S.a.glowInner
 					}), r.a.createElement("div", {
-						className: N.a.glowOuter
+						className: S.a.glowOuter
 					})), r.a.createElement("div", {
-						className: N.a.description
+						className: S.a.description
 					}, r.a.createElement("div", {
-						className: N.a.cta
+						className: S.a.cta
 					}, s.fbt._("{subredditName} Governance Vote is Open:", [s.fbt._param("subredditName", e.displayText)], {
 						hk: "3mIPYS"
 					})), r.a.createElement("div", {
-						className: N.a.postTitle
+						className: S.a.postTitle
 					}, this.state.postTitle))), r.a.createElement("div", {
-						className: N.a.controls
+						className: S.a.controls
 					}, r.a.createElement(g, {
-						className: N.a.button,
+						className: S.a.button,
 						onClick: this.dismissBanner
 					}, s.fbt._("later", null, {
 						hk: "3jW79t"
-					})), r.a.createElement(j, {
-						className: N.a.button,
-						to: Object(x.b)(this.state.postUrl),
+					})), r.a.createElement(f, {
+						className: S.a.button,
+						to: Object(_.b)(this.state.postUrl),
 						onClick: this.dismissBanner
-					}, r.a.createElement(_.a, {
-						className: N.a.govIcon
+					}, r.a.createElement(y.a, {
+						className: S.a.govIcon
 					}), s.fbt._("vote", null, {
 						hk: "3WuKai"
 					}))))))))
 				}
 			}
 
-			function B(e) {
+			function k(e) {
 				return "governance-banner-".concat(e)
 			}
 
-			function P(e) {
+			function L(e) {
 				if (!e) return !0;
 				if (!Object(d.a)()) return !0;
-				const t = B(e.id),
+				const t = k(e.id),
 					n = localStorage.getItem(t);
 				if (!n) return !1;
 				const s = new Date(n).getTime();
 				return Date.now() - l.x < s
 			}
-			const k = Object(c.c)({
+			const D = Object(i.c)({
 					assets: (e, t) => {
 						const n = Object(u.q)(e, t);
-						if (n) return Object(w.m)(e, {
+						if (n) return Object(N.m)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					subreddit: u.q
 				}),
-				D = Object(i.b)(k, e => ({
+				T = Object(c.b)(D, e => ({
 					onOpenPoll: e => {}
 				})),
-				L = Object(u.t)();
-			t.default = Object(O.a)("spGovPolls", L(Object(m.b)(D(S))))
+				A = Object(u.t)();
+			t.default = Object(E.a)("spGovPolls", A(Object(m.b)(T(B))))
 		},
 		"./src/reddit/endpoints/governance/poll.ts": function(e, t, n) {
 			"use strict";
@@ -191,8 +226,8 @@
 				a = n.n(s),
 				r = n("./src/config.ts"),
 				o = n("./src/graphql/operations/PollVote.json"),
-				i = n("./src/lib/makeGqlRequest/index.ts"),
-				c = n("./src/lib/omitHeaders/index.ts"),
+				c = n("./src/lib/makeGqlRequest/index.ts"),
+				i = n("./src/lib/omitHeaders/index.ts"),
 				l = n("./src/reddit/constants/headers.ts"),
 				d = (n("./src/reddit/models/Poll/index.ts"), n("./src/reddit/endpoints/governance/requester.ts"));
 
@@ -202,7 +237,7 @@
 					endpoint: "".concat(r.a.metaUrl, "/polls/").concat(t, "/").concat(n, "/votes/me/").concat(s)
 				})
 			}
-			const u = (e, t, n) => Object(i.a)(e, Object.assign(Object.assign({}, o), {
+			const u = (e, t, n) => Object(c.a)(e, Object.assign(Object.assign({}, o), {
 				variables: {
 					input: {
 						postId: t,
@@ -212,7 +247,7 @@
 			}));
 
 			function p(e, t) {
-				return Object(d.a)(Object(c.a)(e, [l.a]), {
+				return Object(d.a)(Object(i.a)(e, [l.a]), {
 					method: "get",
 					endpoint: "".concat(e.apiUrl, "/by_id/").concat(t, ".json")
 				}).then(e => e.ok ? Object.assign(Object.assign({}, e), {
@@ -233,8 +268,8 @@
 				a = n.n(s),
 				r = n("./node_modules/react-redux/es/index.js"),
 				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/featureFlags/index.ts"),
-				c = function(e, t) {
+				c = n("./src/reddit/featureFlags/index.ts"),
+				i = function(e, t) {
 					var n = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -246,12 +281,12 @@
 
 			function l(e, t, n) {
 				const s = Object(o.c)({
-					featureEnabled: t => i.d[e](t)
+					featureEnabled: t => c.d[e](t)
 				});
 				return Object(r.b)(s)(e => {
 					const {
 						featureEnabled: s
-					} = e, r = c(e, ["featureEnabled"]);
+					} = e, r = i(e, ["featureEnabled"]);
 					return s ? a.a.createElement(t, r) : void 0 !== n ? a.a.createElement(n, r) : null
 				})
 			}
@@ -278,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.e6780fb35ad6ddfea8da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceVotingBanner.998aafd93ec788638420.js.map

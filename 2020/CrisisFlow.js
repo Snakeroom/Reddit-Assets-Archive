@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.32cde7d5a714dfec8513.js
-// Retrieved at 9/10/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.f9b64597532e396d3a8d.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/components/CrisisFlow/CrisisFlowPage.m.less": function(e, s, t) {
@@ -37,14 +37,14 @@
 				} = e;
 				return r.a.createElement("div", {
 					className: d.a.CrisisFooter
-				}, s ? null : r.a.createElement(a.j, {
+				}, s ? null : r.a.createElement(a.m, {
 					className: d.a.CrisisButton,
 					"data-redditstyle": !0,
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank"
 				}, C._("Other Options", null, {
 					hk: "1RadlV"
-				})), r.a.createElement(a.f, {
+				})), r.a.createElement(a.i, {
 					className: d.a.CrisisButton,
 					"data-redditstyle": !0,
 					onClick: s ? t : i
@@ -80,16 +80,16 @@
 				T = t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx"),
 				R = t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"),
 				y = t("./src/reddit/icons/svgs/Person/index.tsx"),
-				j = t("./src/reddit/icons/svgs/TickCircled/index.tsx"),
-				A = t("./src/reddit/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
-				D = t.n(A);
+				A = t("./src/reddit/icons/svgs/TickCircled/index.tsx"),
+				D = t("./src/reddit/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
+				j = t.n(D);
 			const {
 				fbt: I
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), O = w.a.div("CrisisImageContainer", x.a), N = w.a.h2("CrisisTitle", x.a), V = w.a.p("CrisisDescription", x.a), z = w.a.div("CrisisOtherActions", D.a), S = w.a.h4("CrisisOtherActionsTitle", D.a), H = w.a.div("CrisisLinkIconContainer", D.a), Y = w.a.div("CrisisLinkText", D.a), M = w.a.h3("CrisisLinkTitle", D.a), W = w.a.p("CrisisLinkDescription", D.a);
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), O = w.a.div("CrisisImageContainer", x.a), N = w.a.h2("CrisisTitle", x.a), V = w.a.p("CrisisDescription", x.a), z = w.a.div("CrisisOtherActions", j.a), S = w.a.h4("CrisisOtherActionsTitle", j.a), H = w.a.div("CrisisLinkIconContainer", j.a), Y = w.a.div("CrisisLinkText", j.a), M = w.a.h3("CrisisLinkTitle", j.a), W = w.a.p("CrisisLinkDescription", j.a);
 			var B = e => r.a.createElement("div", {
-					className: D.a.CrisisThankYouPage
-				}, r.a.createElement(O, null, r.a.createElement(j.a, {
-					className: D.a.CrisisTickImage
+					className: j.a.CrisisThankYouPage
+				}, r.a.createElement(O, null, r.a.createElement(A.a, {
+					className: j.a.CrisisTickImage
 				})), r.a.createElement(N, null, I._("Thanks for caring about your fellow redditor", null, {
 					hk: "1ePh84"
 				})), r.a.createElement(V, null, I._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [I._param("username", r.a.createElement("span", null, "u/", e.username))], {
@@ -99,23 +99,23 @@
 				})), r.a.createElement(p.a, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank",
-					className: D.a.CrisisLink
+					className: j.a.CrisisLink
 				}, r.a.createElement(H, null, r.a.createElement(R.a, null)), r.a.createElement(Y, null, r.a.createElement(M, null, I._("Learn how to help someone in crisis", null, {
 					hk: "3HohFx"
 				})), r.a.createElement(W, null, I._("Get advice on what you can say and how to be supportive.", null, {
 					hk: "1NHS5d"
 				}))), r.a.createElement(T.a, {
-					className: D.a.CrisisLinkArrow
+					className: j.a.CrisisLinkArrow
 				})), r.a.createElement(p.a, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
 					target: "_blank",
-					className: D.a.CrisisLink
+					className: j.a.CrisisLink
 				}, r.a.createElement(H, null, r.a.createElement(y.a, null)), r.a.createElement(Y, null, r.a.createElement(M, null, I._("Get yourself support", null, {
 					hk: "kTT0U"
 				})), r.a.createElement(W, null, I._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 					hk: "37R4JZ"
 				}))), r.a.createElement(T.a, {
-					className: D.a.CrisisLinkArrow
+					className: j.a.CrisisLinkArrow
 				})))),
 				G = t("./src/reddit/actions/reportFlow.ts"),
 				K = t("./src/reddit/endpoints/post/index.tsx");
@@ -431,4 +431,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.32cde7d5a714dfec8513.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.f9b64597532e396d3a8d.js.map

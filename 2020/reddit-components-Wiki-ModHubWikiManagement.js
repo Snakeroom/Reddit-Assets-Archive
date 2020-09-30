@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f4426d516a8b061c035d.js
-// Retrieved at 9/23/2020, 7:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.24c0a55080c4d72c83fd.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -369,12 +369,12 @@
 				h = a.a.wrapped(d.i, "NumberInput", u.a),
 				b = a.a.div("StyledPermanentLabel", u.a),
 				g = a.a.div("DescriptionText", u.a),
-				f = a.a.div("BanLengthContainer", u.a),
-				k = a.a.div("CheckboxWrapper", u.a),
+				k = a.a.div("BanLengthContainer", u.a),
+				f = a.a.div("CheckboxWrapper", u.a),
 				C = a.a.div("PermanentCheckbox", u.a);
 			t.a = e => r.a.createElement(d.g, null, r.a.createElement(d.j, null, i.fbt._("How long?", null, {
 				hk: "1InKw6"
-			})), r.a.createElement(f, null, r.a.createElement(m, {
+			})), r.a.createElement(k, null, r.a.createElement(m, {
 				className: Object(s.a)({
 					[u.a.isDisabled]: e.isDurationPermanent
 				})
@@ -391,7 +391,7 @@
 				onClick: e.togglePermanent
 			}, r.a.createElement(C, {
 				onKeyDown: e.togglePermanent
-			}, r.a.createElement(k, {
+			}, r.a.createElement(f, {
 				tabIndex: 0
 			}, e.isDurationPermanent ? r.a.createElement(l.b, null) : r.a.createElement(l.a, null))), r.a.createElement(g, null, i.fbt._("Permanent", null, {
 				hk: "172B1w"
@@ -427,8 +427,8 @@
 				h = n("./src/reddit/selectors/subreddit.ts"),
 				b = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.m.less"),
 				g = n.n(b);
-			const f = d.a.div("Container", g.a),
-				k = d.a.wrapped(c.a, "Dropdown", g.a),
+			const k = d.a.div("Container", g.a),
+				f = d.a.wrapped(c.a, "Dropdown", g.a),
 				C = d.a.wrapped(u.b, "DropdownRow", g.a),
 				v = Object(a.c)({
 					oldSiteRules: p.a,
@@ -465,14 +465,14 @@
 						props: e,
 						state: t
 					} = this;
-					return r.a.createElement(f, null, r.a.createElement("button", {
+					return r.a.createElement(k, null, r.a.createElement("button", {
 						className: g.a.dropdownTarget,
 						onClick: this.handleToggleDropdown
 					}, r.a.createElement("div", {
 						className: g.a.targetText
 					}, e.reason || i.fbt._("None", null, {
 						hk: "1IYbYO"
-					})), r.a.createElement(m.b, null)), t.isOpen && r.a.createElement(k, {
+					})), r.a.createElement(m.b, null)), t.isOpen && r.a.createElement(f, {
 						isOverlay: !0
 					}, this.getRuleShortNames().map((t, n) => r.a.createElement(C, {
 						key: t,
@@ -584,8 +584,8 @@
 				h = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
 				b = n("./src/reddit/components/Wiki/WikiPageContent/index.tsx"),
 				g = n("./src/reddit/components/Wiki/WikiPageTopBar/index.tsx"),
-				f = n("./src/reddit/components/Wiki/ModHubWikiManagement/ModHubWikiPage/index.m.less"),
-				k = n.n(f);
+				k = n("./src/reddit/components/Wiki/ModHubWikiManagement/ModHubWikiPage/index.m.less"),
+				f = n.n(k);
 
 			function C(e) {
 				const {
@@ -593,13 +593,13 @@
 					subredditName: n
 				} = e;
 				return i.createElement("div", {
-					className: k.a.container
+					className: f.a.container
 				}, i.createElement(h.c, null, i.createElement(g.a, {
 					isModHub: !0,
 					wikiPageName: t,
 					subredditName: n
 				})), i.createElement(b.a, {
-					className: k.a.pageContent,
+					className: f.a.pageContent,
 					isModHub: !0,
 					subredditName: n,
 					wikiPageName: t
@@ -732,11 +732,11 @@
 						isDurationPermanent: t.isDurationPermanent,
 						onChangeDuration: this.onChangeBanDuration,
 						togglePermanent: this.togglePermanent
-					})), o.a.createElement(I.f, null, o.a.createElement(L.i, {
+					})), o.a.createElement(I.f, null, o.a.createElement(L.l, {
 						onClick: e.toggleModal
 					}, E.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(L.f, {
+					})), o.a.createElement(L.i, {
 						className: G.a.primaryButton,
 						onClick: this.onSubmit,
 						disabled: !Object(X.a)(t.username)
@@ -799,15 +799,15 @@
 								href: "".concat(v.a.redditUrl, "/message/compose/?to=").concat(t.username),
 								rel: "noopener noreferrer",
 								target: "_blank"
-							}, o.a.createElement(L.n, null, E.fbt._("Send message", null, {
+							}, o.a.createElement(L.o, null, E.fbt._("Send message", null, {
 								hk: "21j5K5"
 							}))),
-							secondaryButton: o.a.createElement(L.n, {
+							secondaryButton: o.a.createElement(L.o, {
 								onClick: () => this.onClickEditUser(t)
 							}, E.fbt._("Edit", null, {
 								hk: "1nftDt"
 							})),
-							tertiaryButton: o.a.createElement(L.n, {
+							tertiaryButton: o.a.createElement(L.o, {
 								onClick: () => this.onClickRemove(t.id)
 							}, E.fbt._("Remove", null, {
 								hk: "1P1gt2"
@@ -835,7 +835,7 @@
 						props: e,
 						state: t
 					} = this;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(h.c, null, o.a.createElement(L.f, {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(h.c, null, o.a.createElement(L.i, {
 						onClick: this.props.toggleAddBannedContributorModal
 					}, E.fbt._("Ban contributor", null, {
 						hk: "1vQTTH"
@@ -934,11 +934,11 @@
 						onChange: this.onInputChange,
 						value: this.state.username,
 						autoFocus: !0
-					})), o.a.createElement(I.f, null, o.a.createElement(L.i, {
+					})), o.a.createElement(I.f, null, o.a.createElement(L.l, {
 						onClick: e.toggleModal
 					}, E.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(L.f, {
+					})), o.a.createElement(L.i, {
 						className: de.a.primaryButton,
 						onClick: this.onSubmit,
 						disabled: !Object(X.a)(t.username)
@@ -989,10 +989,10 @@
 								href: "".concat(v.a.redditUrl, "/message/compose/?to=").concat(e.username),
 								rel: "noopener noreferrer",
 								target: "_blank"
-							}, o.a.createElement(L.n, null, E.fbt._("Send message", null, {
+							}, o.a.createElement(L.o, null, E.fbt._("Send message", null, {
 								hk: "13WC98"
 							}))),
-							secondaryButton: o.a.createElement(L.n, {
+							secondaryButton: o.a.createElement(L.o, {
 								onClick: () => this.onClickRemove(e.id)
 							}, E.fbt._("Remove", null, {
 								hk: "2trU4Z"
@@ -1020,7 +1020,7 @@
 						props: e,
 						state: t
 					} = this;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(h.c, null, o.a.createElement(L.f, {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(h.c, null, o.a.createElement(L.i, {
 						onClick: this.props.toggleAddContributorModal
 					}, E.fbt._("Add contributor", null, {
 						hk: "4v9hcQ"
@@ -1074,8 +1074,8 @@
 				})(Object(j.c)(pe)),
 				be = n("./src/reddit/actions/wiki/wikiPageSettings/index.tsx"),
 				ge = n("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
-				fe = n("./src/reddit/components/Wiki/common/PageTitle/index.tsx"),
-				ke = n("./src/reddit/constants/colors.ts"),
+				ke = n("./src/reddit/components/Wiki/common/PageTitle/index.tsx"),
+				fe = n("./src/reddit/constants/colors.ts"),
 				Ce = n("./src/reddit/controls/CheckboxInput/index.tsx"),
 				ve = n("./src/reddit/controls/RadioInput/index.tsx"),
 				Ee = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
@@ -1155,7 +1155,7 @@
 						sendHoverCardEvent: _e.a,
 						tooltipId: "wikiPageContributor--".concat(e.username),
 						userIcon: e.iconUrl
-					}), o.a.createElement(L.n, {
+					}), o.a.createElement(L.o, {
 						className: je.a.removeButton,
 						onClick: () => this.onClickRemove(e.username)
 					}, E.fbt._("Remove", null, {
@@ -1194,7 +1194,7 @@
 						maxLength: 22
 					}), o.a.createElement("div", {
 						className: je.a.buttonRow
-					}, o.a.createElement(L.f, {
+					}, o.a.createElement(L.i, {
 						className: je.a.addButton,
 						disabled: !this.canAdd(),
 						onClick: this.onAddContributor
@@ -1277,17 +1277,17 @@
 					const n = e.subredditSettings && "disabled" === e.subredditSettings.wikimode,
 						i = t.editPermissions !== e.wikiPageSettings.editPermissions || t.isVisible !== e.wikiPageSettings.isVisible,
 						r = t.editPermissions === we.a.Contributors || t.editPermissions === we.a.Inherit;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(h.c, null, i && o.a.createElement(o.a.Fragment, null, o.a.createElement(L.i, {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(h.c, null, i && o.a.createElement(o.a.Fragment, null, o.a.createElement(L.l, {
 						className: je.a.cancelButton,
 						onClick: this.onCancel
 					}, E.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(L.f, {
+					})), o.a.createElement(L.i, {
 						disabled: t.isSavePending,
 						onClick: this.onSave
 					}, E.fbt._("Save", null, {
 						hk: "mmRlX"
-					})))), o.a.createElement(fe.a, {
+					})))), o.a.createElement(ke.a, {
 						title: E.fbt._("Wiki page settings", null, {
 							hk: "2l88sE"
 						}),
@@ -1298,7 +1298,7 @@
 						buttonLink: "/r/".concat(e.subredditName, "/about/wiki/").concat(e.wikiPageName)
 					}), n && o.a.createElement(ge.a, {
 						className: je.a.alertBanner,
-						color: ke.a.quarantine,
+						color: fe.a.quarantine,
 						icon: o.a.createElement(ye.a, {
 							className: je.a.alertIcon
 						}),
@@ -1409,7 +1409,7 @@
 						wikiSubRoute: u,
 						wikiPageName: h,
 						pageName: b
-					} = n, g = i[l.z], f = i[l.A], k = l.B in i;
+					} = n, g = i[l.z], k = i[l.A], f = l.B in i;
 					switch (u) {
 						case c.m.Create:
 						case c.m.Edit:
@@ -1440,13 +1440,13 @@
 								subredditName: e.name
 							}) : b === r.Qb.WikiContributors ? o.a.createElement(he, {
 								subredditName: e.name
-							}) : h && g && f ? o.a.createElement(s.a, {
-								comparisonRevisionId: Object(m.a)(f),
+							}) : h && g && k ? o.a.createElement(s.a, {
+								comparisonRevisionId: Object(m.a)(k),
 								isModHub: !0,
 								revisionId: Object(m.a)(g),
 								subredditName: e.name,
 								wikiPageName: h
-							}) : h && (g || k) ? o.a.createElement(d.a, {
+							}) : h && (g || f) ? o.a.createElement(d.a, {
 								isModHub: !0,
 								revisionId: g ? Object(m.a)(g) : void 0,
 								subredditName: e.name,
@@ -1462,4 +1462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f4426d516a8b061c035d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.24c0a55080c4d72c83fd.js.map

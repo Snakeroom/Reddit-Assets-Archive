@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.9d2f0b45f31bec3a1c05.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e76cf9f19ffc020db94a.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -693,7 +693,7 @@
 						className: j.a.detailsContainer
 					}, t), d.a.createElement(x.a, {
 						className: j.a.buttonRow
-					}, d.a.createElement(v.f, {
+					}, d.a.createElement(v.i, {
 						className: j.a.confirmButton,
 						onClick: e.onConfirmed
 					}, a.fbt._("Ok", null, {
@@ -1135,4 +1135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.9d2f0b45f31bec3a1c05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e76cf9f19ffc020db94a.js.map

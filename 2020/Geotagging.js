@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.4b589b0c033ca93ad62f.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.71c79640d9dcee4ee47c.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -208,7 +208,7 @@
 					},
 					disabled: d,
 					onFocus: l
-				}), y && y !== o && a.a.createElement(c.i, {
+				}), y && y !== o && a.a.createElement(c.l, {
 					className: _.a.submitButton,
 					type: "submit",
 					disabled: d
@@ -417,7 +417,7 @@
 			var b = e => i.a.createElement("div", {
 					className: Object(n.a)(e.className, u.a.container),
 					style: e.style
-				}, i.a.createElement(d.f, {
+				}, i.a.createElement(d.i, {
 					className: u.a.button,
 					onClick: () => window.scroll(0, 0)
 				}, m._("Back to top", null, {
@@ -666,7 +666,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? u : "none"
 						}
-					}, e), this.state.isTruncated && a.a.createElement(m.n, {
+					}, e), this.state.isTruncated && a.a.createElement(m.o, {
 						className: w.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, v._("See More", null, {
@@ -862,7 +862,7 @@
 					hk: "1xzgiX"
 				})), a.a.createElement(y.a, {
 					to: "/"
-				}, a.a.createElement(x.f, null, "Go Home")))
+				}, a.a.createElement(x.i, null, "Go Home")))
 			}
 			var O = s("./src/config.ts");
 			const {
@@ -1005,12 +1005,12 @@
 					className: _.a.question
 				}, Z._("Is this community specific to {place}?", [Z._param("place", t.geoPlace.name)], {
 					hk: "bIGM4"
-				})), a.a.createElement(x.i, {
+				})), a.a.createElement(x.l, {
 					className: _.a.rejectButton,
 					onClick: function() {
 						b(!0), j(M(t, t.geoPlace.id))
 					}
-				}, "No"), a.a.createElement(x.f, {
+				}, "No"), a.a.createElement(x.i, {
 					className: _.a.verifyButton,
 					onClick: function() {
 						K(t.id), j(D(t, t.geoPlace.id)), f(), s(t.id), E()
@@ -1135,4 +1135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.4b589b0c033ca93ad62f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.71c79640d9dcee4ee47c.js.map

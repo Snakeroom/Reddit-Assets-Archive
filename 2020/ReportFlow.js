@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.0077f6349dfffc8249b6.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.653f404c4d0d5f0bb059.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow"], {
 		"./src/reddit/components/CrisisFlow/async.tsx": function(e, t, o) {
@@ -163,7 +163,7 @@
 			const _ = c.a.div("ContentPolicyHolder", S.a),
 				k = c.a.div("Header", S.a),
 				T = c.a.div("Description", S.a),
-				E = c.a.wrapped(b.i, "CloseButton", S.a),
+				E = c.a.wrapped(b.l, "CloseButton", S.a),
 				y = c.a.div("RadioOptionsSectionHeader", S.a),
 				F = c.a.wrapped(x.b, "DropdownRow", S.a),
 				P = c.a.div("PickerWrapper", S.a),
@@ -479,7 +479,7 @@
 				Fe = o("./src/reddit/models/Subreddit/index.ts"),
 				Pe = o("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
 				Ie = o.n(Pe);
-			const Le = c.a.wrapped(b.f, "SubmitButton", Ie.a);
+			const Le = c.a.wrapped(b.i, "SubmitButton", Ie.a);
 			class Ae extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -881,4 +881,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.0077f6349dfffc8249b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.653f404c4d0d5f0bb059.js.map

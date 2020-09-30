@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.585ca1cfdf4c55cbea20.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.7b99e998cca305b37635.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/reddit/components/CrisisFlow/index.tsx": function(e, t, n) {
@@ -603,7 +603,7 @@
 				ye = n.n(xe);
 			const {
 				fbt: Pe
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Se = c.a.header("Header", p.a), _e = c.a.wrapped(be.a, "Footer", ye.a), ve = c.a.wrapped(fe.f, "SubmitButton", ye.a), ke = Object(o.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Se = c.a.header("Header", p.a), _e = c.a.wrapped(be.a, "Footer", ye.a), ve = c.a.wrapped(fe.i, "SubmitButton", ye.a), ke = Object(o.c)({
 				initialReason: e => e.reportPage.initialReason
 			});
 			class Fe extends r.a.Component {
@@ -902,4 +902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.585ca1cfdf4c55cbea20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.7b99e998cca305b37635.js.map

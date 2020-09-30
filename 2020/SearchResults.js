@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.8c4ccdea28ae67b9c6ca.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.22aac97f4649612438c4.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -505,6 +505,11 @@
 			e.exports = {
 				CallToActionButton: "_2pjSQOdNtYd1I2W0Z1Im8I",
 				callToActionButton: "_2pjSQOdNtYd1I2W0Z1Im8I",
+				is2020: "mPBdw3hQ6e5P5e_cMM92-",
+				Icon: "_2W1YFyYH_CTGX4_5OEBs2Q",
+				icon: "_2W1YFyYH_CTGX4_5OEBs2Q",
+				isLeft: "p8bIdnQ5pQUQRETAyCoa5",
+				isRight: "_36ucS75syCWwJ_ee7IieXZ",
 				mNotCardView: "_33VrFkg3gJpkL8AlPfcHUE"
 			}
 		},
@@ -515,11 +520,12 @@
 				o = s.n(n),
 				r = s("./src/lib/classNames/index.ts"),
 				i = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				a = s("./src/reddit/components/CallToActionButton/index.m.less"),
-				c = s.n(a);
+				a = s("./src/reddit/hooks/useButtons2020.ts"),
+				c = s("./src/reddit/components/CallToActionButton/index.m.less"),
+				d = s.n(c);
 
-			function d() {
-				return (d = Object.assign || function(e) {
+			function l() {
+				return (l = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -527,7 +533,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var l = function(e, t) {
+			var m = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -539,10 +545,12 @@
 			t.a = e => {
 				var {
 					className: t
-				} = e, s = l(e, ["className"]);
-				return o.a.createElement(i.a, d({
-					className: Object(r.a)(t, c.a.CallToActionButton, {
-						[c.a.mNotCardView]: s.isNotCardView
+				} = e, s = m(e, ["className"]);
+				const n = Object(a.a)();
+				return o.a.createElement(i.a, l({
+					className: Object(r.a)(t, d.a.CallToActionButton, {
+						[d.a.mNotCardView]: s.isNotCardView,
+						[d.a.is2020]: n
 					})
 				}, s))
 			}
@@ -2052,7 +2060,7 @@
 				x = s.n(h),
 				f = s("./src/lib/lessComponent.tsx");
 			const g = "create-community-button",
-				v = f.a.wrapped(m.i, "SecondaryButton", x.a),
+				v = f.a.wrapped(m.l, "SecondaryButton", x.a),
 				O = f.a.wrapped(d.c, "StyledTooltip", x.a),
 				y = Object(a.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
@@ -5611,7 +5619,7 @@
 				te = T.a.wrapped(h.a, "FilterInput", H.a),
 				se = T.a.wrapped(g.a, "SearchIcon", H.a),
 				ne = T.a.wrapped(f.a, "PlusIcon", H.a),
-				oe = T.a.wrapped(b.j, "CreateCollectionButton", H.a),
+				oe = T.a.wrapped(b.m, "CreateCollectionButton", H.a),
 				re = Object(l.a)((e, t) => {
 					const s = t.toLowerCase();
 					return e.filter(e => e.title.toLowerCase().includes(s))
@@ -5770,13 +5778,13 @@
 				k = E.a.div("TitleRow", C.a),
 				I = E.a.div("Details", C.a),
 				P = E.a.wrapped(m.f, "Footer", C.a),
-				S = E.a.wrapped(u.i, "CancelButton", C.a),
+				S = E.a.wrapped(u.l, "CancelButton", C.a),
 				w = E.a.div("CloseWrapper", C.a),
 				T = E.a.wrapped(g.a, "CloseIcon", C.a),
 				N = E.a.label("Label", C.a),
 				M = E.a.wrapped(h.a, "TitleInput", C.a),
 				L = E.a.wrapped(f.a, "AddCollectionIcon", C.a),
-				R = E.a.wrapped(u.f, "PrimaryActionButton", C.a),
+				R = E.a.wrapped(u.i, "PrimaryActionButton", C.a),
 				F = E.a.wrapped(x.a, "LoadingIcon", C.a),
 				A = E.a.wrapped(b.b, "ErrorText", C.a),
 				D = Object(a.c)({
@@ -5973,12 +5981,12 @@
 						onChange: this.setSelectedFlair
 					}), i.a.createElement("div", {
 						className: j.a.buttonsRow
-					}, i.a.createElement(x.f, {
+					}, i.a.createElement(x.i, {
 						disabled: !l,
 						onClick: this.onApply
 					}, o.fbt._("Apply", null, {
 						hk: "3mAjVQ"
-					})), i.a.createElement(x.i, {
+					})), i.a.createElement(x.l, {
 						className: j.a.clearButton,
 						onClick: this.onClear
 					}, o.fbt._("Clear Flair", null, {
@@ -8171,7 +8179,7 @@
 				},
 				Is = Ht.a.wrapped(us, "LeftSelect", ys.a),
 				Ps = Ht.a.wrapped(hs.a, "ArrowRight", ys.a),
-				Ss = Ht.a.wrapped(bs.n, "TertiaryButton", ys.a),
+				Ss = Ht.a.wrapped(bs.o, "TertiaryButton", ys.a),
 				ws = Ht.a.wrapped(Ss, "AllRedditResultsButton", ys.a),
 				Ts = Object(_.t)({
 					queryParams: _.S,
@@ -9233,12 +9241,12 @@
 						isHeaderContent: !0,
 						subredditIcons: p,
 						suffix: v
-					}), a && o && (this.state.isFollowed ? i.a.createElement(f.i, {
+					}), a && o && (this.state.isFollowed ? i.a.createElement(f.l, {
 						className: E.a.follow,
 						onClick: this.onFollow
 					}, n.fbt._("Unfollow", null, {
 						hk: "ddl2J"
-					})) : i.a.createElement(f.f, {
+					})) : i.a.createElement(f.i, {
 						className: E.a.follow,
 						onClick: this.onFollow
 					}, i.a.createElement(y.a, {
@@ -9250,7 +9258,7 @@
 						permalink: e,
 						sendEventWithName: this.onShareMenuClick,
 						subreddit: null
-					}, i.a.createElement(f.n, {
+					}, i.a.createElement(f.o, {
 						className: E.a.share,
 						"data-click-id": "share",
 						onClick: this.onShare
@@ -9934,13 +9942,14 @@
 				UnsubscribeButtonDefault: "_31L3r0EWsU0weoMZvEJcUA",
 				unsubscribeButtonDefault: "_31L3r0EWsU0weoMZvEJcUA",
 				UnsubscribeButtonHover: "_11Zy7Yp4S1ZArNqhUQ0jZW",
-				unsubscribeButtonHover: "_11Zy7Yp4S1ZArNqhUQ0jZW"
+				unsubscribeButtonHover: "_11Zy7Yp4S1ZArNqhUQ0jZW",
+				is2020: "_2CLbCoThTVSANDpeJGlI6a"
 			}
 		},
 		"./src/reddit/components/SubscribeButton/Base.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return k
+				return P
 			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -9948,16 +9957,17 @@
 				r = s.n(o),
 				i = s("./src/reddit/constants/elementClassNames.ts"),
 				a = s("./src/reddit/controls/Button/index.tsx"),
-				c = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				d = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				l = s("./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts"),
-				m = s("./src/reddit/components/SubscribeButton/Base.m.less"),
-				p = s.n(m),
-				u = s("./src/lib/classNames/index.ts"),
-				b = s("./src/lib/lessComponent.tsx");
+				c = s("./src/reddit/hooks/useButtons2020.ts"),
+				d = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				l = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				m = s("./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts"),
+				p = s("./src/reddit/components/SubscribeButton/Base.m.less"),
+				u = s.n(p),
+				b = s("./src/lib/classNames/index.ts"),
+				h = s("./src/lib/lessComponent.tsx");
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -9965,7 +9975,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var x = function(e, t) {
+			var f = function(e, t) {
 				var s = {};
 				for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -9974,104 +9984,131 @@
 				}
 				return s
 			};
-			const f = b.a.button("IconButton", p.a),
-				g = b.a.wrapped(d.a, "SubscribeIcon", p.a),
-				v = b.a.wrapped(c.a, "UnsubscribeIcon", p.a),
-				O = b.a.wrapped(e => {
+			const g = h.a.button("IconButton", u.a),
+				v = h.a.wrapped(l.a, "SubscribeIcon", u.a),
+				O = h.a.wrapped(d.a, "UnsubscribeIcon", u.a),
+				y = h.a.wrapped(e => {
 					var {
 						border: t,
 						small: s
-					} = e, n = x(e, ["border", "small"]);
-					return r.a.createElement(f, n, r.a.createElement(g, {
-						className: Object(u.a)(n.className, {
-							[p.a.isSmall]: s
+					} = e, n = f(e, ["border", "small"]);
+					return r.a.createElement(g, n, r.a.createElement(v, {
+						className: Object(b.a)(n.className, {
+							[u.a.isSmall]: s
 						})
 					}))
-				}, "SubscribeIconButton", p.a),
-				y = b.a.wrapped(e => {
+				}, "SubscribeIconButton", u.a),
+				C = h.a.wrapped(e => {
 					var {
 						border: t,
 						small: s
-					} = e, n = x(e, ["border", "small"]);
-					return t ? r.a.createElement(a.f, h({}, n, {
-						className: Object(u.a)(n.className, {
-							[p.a.isSmall]: s
+					} = e, n = f(e, ["border", "small"]);
+					return t ? r.a.createElement(a.i, x({}, n, {
+						className: Object(b.a)(n.className, {
+							[u.a.isSmall]: s
 						})
-					})) : r.a.createElement(a.n, h({}, n, {
-						className: Object(u.a)(n.className, {
-							[p.a.isSmall]: s
+					})) : r.a.createElement(a.o, x({}, n, {
+						className: Object(b.a)(n.className, {
+							[u.a.isSmall]: s
 						})
 					}))
-				}, "SubscribeInternalButton", p.a),
-				C = e => {
+				}, "SubscribeInternalButton", u.a),
+				E = e => {
 					var {
-						icon: t
-					} = e, s = x(e, ["icon"]);
-					return t ? r.a.createElement(O, h({}, s, {
-						className: Object(u.a)(s.className, {
-							[p.a.isSmall]: s.small
+						icon: t,
+						border: s,
+						small: n
+					} = e, o = f(e, ["icon", "border", "small"]);
+					const i = Object(c.a)();
+					return t ? r.a.createElement(y, x({}, o, {
+						border: s,
+						small: n,
+						className: Object(b.a)(o.className, {
+							[u.a.isSmall]: n
 						})
-					})) : r.a.createElement(y, h({}, s, {
-						className: Object(u.a)(s.className, {
-							[p.a.isSmall]: s.small
+					})) : i ? r.a.createElement(a.q, x({}, o, {
+						priority: s ? a.b.Primary : a.b.Tertiary,
+						className: Object(b.a)(o.className, u.a.is2020),
+						size: n ? a.c.S : a.c.M
+					})) : r.a.createElement(C, x({}, o, {
+						border: s,
+						small: n,
+						className: Object(b.a)(o.className, {
+							[u.a.isSmall]: n
 						})
 					}))
 				},
-				E = b.a.wrapped(e => {
+				j = h.a.wrapped(e => {
 					var {
 						border: t,
 						small: s,
 						type: n
-					} = e, o = x(e, ["border", "small", "type"]);
-					return r.a.createElement(f, o, r.a.createElement(v, {
-						className: Object(u.a)(i.n, o.className, {
-							[p.a.isSmall]: s
+					} = e, o = f(e, ["border", "small", "type"]);
+					return r.a.createElement(g, o, r.a.createElement(O, {
+						className: Object(b.a)(i.n, o.className, {
+							[u.a.isSmall]: s
 						})
 					}))
-				}, "UnsubscribeIconButton", p.a),
-				j = b.a.wrapped(e => {
+				}, "UnsubscribeIconButton", u.a),
+				_ = e => r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
+					className: u.a.UnsubscribeButtonDefault
+				}, "subreddit" === e ? n.fbt._("Joined", null, {
+					hk: "1MTmIz"
+				}) : n.fbt._("Following", null, {
+					hk: "1wQlVR"
+				})), r.a.createElement("span", {
+					className: u.a.UnsubscribeButtonHover
+				}, "subreddit" === e ? n.fbt._("Leave", null, {
+					hk: "2lLnnn"
+				}) : n.fbt._("Unfollow", null, {
+					hk: "2b5ERD"
+				}))),
+				k = h.a.wrapped(e => {
 					var {
 						border: t,
 						small: s,
-						buttonType: o
-					} = e, i = x(e, ["border", "small", "buttonType"]);
-					const c = r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
-							className: p.a.UnsubscribeButtonDefault
-						}, "subreddit" === o ? n.fbt._("Joined", null, {
-							hk: "1MTmIz"
-						}) : n.fbt._("Following", null, {
-							hk: "1wQlVR"
-						})), r.a.createElement("span", {
-							className: p.a.UnsubscribeButtonHover
-						}, "subreddit" === o ? n.fbt._("Leave", null, {
-							hk: "2lLnnn"
-						}) : n.fbt._("Unfollow", null, {
-							hk: "2b5ERD"
-						}))),
-						d = Object(u.a)(i.className, {
-							[p.a.isSmall]: s
+						buttonType: n
+					} = e, o = f(e, ["border", "small", "buttonType"]);
+					const i = _(n),
+						c = Object(b.a)(o.className, {
+							[u.a.isSmall]: s
 						});
-					return t ? r.a.createElement(a.i, h({}, i, {
-						className: d
-					}), c) : r.a.createElement(a.n, h({}, i, {
-						className: d
-					}), c)
-				}, "UnsubscribeButton", p.a),
-				_ = e => {
+					return t ? r.a.createElement(a.l, x({}, o, {
+						className: c
+					}), i) : r.a.createElement(a.o, x({}, o, {
+						className: c
+					}), i)
+				}, "UnsubscribeButton", u.a),
+				I = e => {
 					var {
-						icon: t
-					} = e, s = x(e, ["icon"]);
-					return t ? r.a.createElement(E, h({}, s, {
-						className: Object(u.a)(s.className, {
-							[p.a.isSmall]: s.small
+						buttonType: t,
+						border: s,
+						small: n,
+						icon: o
+					} = e, i = f(e, ["buttonType", "border", "small", "icon"]);
+					const d = Object(c.a)();
+					return o ? r.a.createElement(j, x({}, i, {
+						border: s,
+						small: n,
+						buttonType: t,
+						className: Object(b.a)(i.className, {
+							[u.a.isSmall]: n
 						})
-					})) : r.a.createElement(j, h({}, s, {
-						className: Object(u.a)(s.className, {
-							[p.a.isSmall]: s.small
+					})) : d ? r.a.createElement(a.q, x({}, i, {
+						priority: s ? a.b.Secondary : a.b.Tertiary,
+						className: Object(b.a)(i.className, u.a.is2020),
+						size: n ? a.c.S : a.c.M,
+						text: _(t)
+					})) : r.a.createElement(k, x({}, i, {
+						border: s,
+						small: n,
+						buttonType: t,
+						className: Object(b.a)(i.className, {
+							[u.a.isSmall]: n
 						})
 					}))
 				};
-			class k extends r.a.Component {
+			class P extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = e => {
 						if (this.props.userIsSubscriber ? this.props.onUnsubscribe() : this.props.onSubscribe(), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
@@ -10097,11 +10134,11 @@
 						onClick: this.onClick,
 						small: o
 					};
-					return this.props.userIsSubscriber ? r.a.createElement(_, h({}, i, {
+					return this.props.userIsSubscriber ? r.a.createElement(I, x({}, i, {
 						buttonType: this.props.identifier.type
-					})) : r.a.createElement(C, h({}, i, {
+					})) : r.a.createElement(E, x({}, i, {
 						id: n
-					}), this.props.children, Object(l.a)({
+					}), this.props.children, Object(m.a)({
 						type: this.props.identifier.type,
 						key: "subscribe"
 					}))
@@ -10166,7 +10203,7 @@
 						shouldReverseColor: s
 					} = e, n = f(e, ["small", "shouldReverseColor"]);
 					const i = Object(r.b)(),
-						a = s ? c.i : c.f;
+						a = s ? c.l : c.i;
 					return o.a.createElement(a, x({}, n, {
 						className: Object(b.a)(n.className, {
 							[u.a.isLarge]: !t
@@ -10181,7 +10218,7 @@
 						shouldReverseColor: n
 					} = e, i = f(e, ["small", "belongsToType", "shouldReverseColor"]);
 					const a = Object(r.b)(),
-						d = n ? c.f : c.i;
+						d = n ? c.i : c.l;
 					return o.a.createElement(d, x({}, i, {
 						className: Object(b.a)(i.className, {
 							[u.a.isLarge]: !t
@@ -10668,7 +10705,7 @@
 					})
 				}
 				renderButton() {
-					return r.a.createElement(x.n, {
+					return r.a.createElement(x.o, {
 						className: E.a.flairFilterButton,
 						onMouseDown: this.trackFlairOverflowClick,
 						onClick: this.onToggleCollapse
@@ -11285,7 +11322,7 @@
 						className: v.a.detailsContainer
 					}, t), d.a.createElement(f.a, {
 						className: v.a.buttonRow
-					}, d.a.createElement(x.f, {
+					}, d.a.createElement(x.i, {
 						className: v.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
@@ -13062,11 +13099,11 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Wb.Treatment1 === Object(o.c)(e, {
+			const r = e => n.Yb.Treatment1 === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: n.Ob
+				experimentName: n.Qb
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8c4ccdea28ae67b9c6ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.22aac97f4649612438c4.js.map

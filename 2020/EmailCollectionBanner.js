@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.63409e32d3a77fcb23db.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.d75ef99e03e7b3d71963.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, s) {
@@ -141,7 +141,7 @@
 							className: H.a.title
 						}, q._("{username}, add your email to verify your Reddit account.", [q._param("username", Object(P.e)(e))], {
 							hk: "1WZjMk"
-						})), a.a.createElement(B.i, {
+						})), a.a.createElement(B.l, {
 							className: H.a.addEmail,
 							onClick: this.addEmail
 						}, q._("Add email", null, {
@@ -347,4 +347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.63409e32d3a77fcb23db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.d75ef99e03e7b3d71963.js.map

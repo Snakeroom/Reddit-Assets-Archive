@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.b7ba7f9b679c1bee5991.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.f133325c103df43182f3.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/graphql/operations/RequestUserDataExport.json": function(e) {
@@ -431,7 +431,7 @@
 						value: this.state.exportEndDate
 					}))), n.a.createElement("fieldset", {
 						className: N.a.submitButtonPanel
-					}, n.a.createElement(u.f, {
+					}, n.a.createElement(u.i, {
 						className: N.a.submitButton,
 						disabled: e
 					}, s.fbt._("Submit", null, {
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.b7ba7f9b679c1bee5991.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.f133325c103df43182f3.js.map

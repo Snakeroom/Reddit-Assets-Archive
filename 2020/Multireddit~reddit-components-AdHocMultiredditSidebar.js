@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.9b2c89cf65bb1134f279.js
-// Retrieved at 9/23/2020, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.ee0b10854260714a5f53.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -135,7 +135,7 @@
 					key: t.url,
 					to: t.url,
 					onMouseDown: e.onSubredditClick ? () => e.onSubredditClick(t) : void 0
-				}, n)), c > 0 && l && r.a.createElement(d.n, {
+				}, n)), c > 0 && l && r.a.createElement(d.o, {
 					onClick: i
 				}, s.fbt._("See more", null, {
 					hk: "QYkk2"
@@ -337,7 +337,7 @@
 						className: Object(u.a)(z.a.FadingDescription, {
 							[z.a.shouldFade]: r
 						})
-					}, t), r && d.a.createElement(A.n, {
+					}, t), r && d.a.createElement(A.o, {
 						onClick: n
 					}, s.fbt._("Read more", null, {
 						hk: "i0AXN"
@@ -648,7 +648,7 @@
 						value: b
 					}), !a && (r || b.length > 0) && (e ? d.a.createElement(ue.a, {
 						sizePx: ve
-					}) : d.a.createElement(A.n, {
+					}) : d.a.createElement(A.o, {
 						className: Oe.a.addButton,
 						onClick: this.onSubmit
 					}, s.fbt._("Add", null, {
@@ -677,7 +677,7 @@
 						useTertiaryButton: !0
 					}))), t.length > _e && d.a.createElement("div", {
 						className: Oe.a.expandButtonContainer
-					}, d.a.createElement(A.n, {
+					}, d.a.createElement(A.o, {
 						className: Oe.a.expandButton,
 						onClick: this.onToggleExpand
 					}, m ? s.fbt._("show less", null, {
@@ -1012,7 +1012,7 @@
 				h = n.n(b),
 				x = n("./src/lib/lessComponent.tsx");
 			const f = 10,
-				E = x.a.wrapped(l.n, "TertiaryButton", h.a);
+				E = x.a.wrapped(l.o, "TertiaryButton", h.a);
 			class g extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -1562,4 +1562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.9b2c89cf65bb1134f279.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.ee0b10854260714a5f53.js.map

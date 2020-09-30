@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.0ae8eccb8e8b37672c39.js
-// Retrieved at 7/28/2020, 10:42:45 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.fa58635a0796bdaa0138.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -202,7 +202,7 @@
 					return i.a.createElement("div", {
 						className: D.a.container,
 						onClick: this.onContainerClick
-					}, i.a.createElement(v.n, {
+					}, i.a.createElement(v.o, {
 						className: D.a.expandButton,
 						onClick: this.onExpandButtonClick
 					}, n.fbt._("Admin Community Topics", null, {
@@ -865,4 +865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=AdminCommunityTopics.0ae8eccb8e8b37672c39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminCommunityTopics.fa58635a0796bdaa0138.js.map

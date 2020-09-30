@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.abeef06577cb17cfe7eb.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d0bc6f5d86e0ad206e28.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -268,7 +268,7 @@
 			var p = e => i.a.createElement("div", {
 					className: Object(s.a)(e.className, m.a.container),
 					style: e.style
-				}, i.a.createElement(c.f, {
+				}, i.a.createElement(c.i, {
 					className: m.a.button,
 					onClick: () => window.scroll(0, 0)
 				}, u._("Back to top", null, {
@@ -879,7 +879,7 @@
 					key: e
 				}))),
 				w = e => {
-					const t = e.isSecondaryButton ? y.k : y.h;
+					const t = e.isSecondaryButton ? y.n : y.k;
 					return c.a.createElement("div", {
 						className: S.a.footer
 					}, c.a.createElement(t, {
@@ -890,8 +890,8 @@
 						hk: "3mjiTN"
 					}) : s.fbt._("See All", null, {
 						hk: "2OZax8"
-					}) : s.fbt._("View all", null, {
-						hk: "Txpck"
+					}) : s.fbt._("View All", null, {
+						hk: "4vfmcB"
 					})))
 				};
 
@@ -1083,7 +1083,7 @@
 						style: {
 							maxHeight: this.state.isTruncated ? m : "none"
 						}
-					}, e), this.state.isTruncated && n.a.createElement(u.n, {
+					}, e), this.state.isTruncated && n.a.createElement(u.o, {
 						className: j.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, N._("See More", null, {
@@ -1265,8 +1265,8 @@
 				R = r("./src/reddit/selectors/subredditLeaderboard.ts"),
 				D = r("./src/reddit/selectors/user.ts");
 			const M = 25,
-				H = .5,
-				A = Object(d.c)({
+				A = .5,
+				H = Object(d.c)({
 					hasPreviousPage: (e, t) => {
 						let {
 							categoryId: r
@@ -1288,7 +1288,7 @@
 					},
 					subreddits: B.Z
 				}),
-				G = Object(i.b)(A, e => ({
+				G = Object(i.b)(H, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.a)(t, r))
 				}));
 			class Q extends o.a.Component {
@@ -1356,7 +1356,7 @@
 						className: C.a.subredditRankingsList
 					}, n ? this.renderSubredditRankItems(d) : this.renderSubredditRankItemPlaceholders(), a && o.a.createElement(v.a, {
 						onChange: this.fetchMoreSubreddits,
-						threshold: H,
+						threshold: A,
 						rootMargin: "0px 0px 0px 0px"
 					}, o.a.createElement("li", null, o.a.createElement(F.a, {
 						large: !0
@@ -1476,7 +1476,7 @@
 						className: Object(c.a)(Y.a.header, n)
 					}, o.a.createElement("h2", null, s || $._("Categories", null, {
 						hk: "46zLMb"
-					}))), this.renderCategoryList(), i && o.a.createElement(X.n, {
+					}))), this.renderCategoryList(), i && o.a.createElement(X.o, {
 						className: Object(c.a)(Y.a.button, e),
 						onClick: this.toggleExpanded
 					}, i && !this.state.isExpanded ? $._("Show More", null, {
@@ -1553,7 +1553,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				xe = Object(u.yc)(p.f),
+				xe = Object(u.Ac)(p.f),
 				Ce = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: xe
@@ -1654,16 +1654,16 @@
 
 			function a(e) {
 				const t = o(e);
-				return t === s.sb.Rotate || t === s.sb.RotateAll
+				return t === s.ub.Rotate || t === s.ub.RotateAll
 			}
 
 			function o(e) {
 				if (e.user.prefs.showLocationBasedRecommendations) return Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.rb
+					experimentName: s.tb
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.abeef06577cb17cfe7eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.d0bc6f5d86e0ad206e28.js.map

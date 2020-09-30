@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.e22713dca10df326a455.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.38fcf5d1bdb03ae28765.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -1014,7 +1014,7 @@
 					})
 				})), c.a.createElement("div", {
 					className: j.a.footer
-				}, c.a.createElement(b.f, {
+				}, c.a.createElement(b.i, {
 					onClick: e.onContinue
 				}, m.fbt._("Convert {pointsName}", [m.fbt._param("pointsName", a)], {
 					hk: "4CnbBc"
@@ -1353,7 +1353,7 @@
 						className: j.a.detailsContainer
 					}, t), i.a.createElement(v.a, {
 						className: j.a.buttonRow
-					}, i.a.createElement(h.f, {
+					}, i.a.createElement(h.i, {
 						className: j.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
@@ -1888,4 +1888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.e22713dca10df326a455.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.38fcf5d1bdb03ae28765.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9e147b5b750ce1d6b62e.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.12c1b243dca81a27ddb9.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -465,7 +465,7 @@
 					className: q.a.infoDesc
 				}, Q._("Award publicly and your username will show up on this leaderboard!", null, {
 					hk: "3reZYa"
-				})), r.a.createElement(A.f, {
+				})), r.a.createElement(A.i, {
 					className: q.a.cta,
 					onClick: T
 				}, r.a.createElement(g.a, {
@@ -604,4 +604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9e147b5b750ce1d6b62e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.12c1b243dca81a27ddb9.js.map

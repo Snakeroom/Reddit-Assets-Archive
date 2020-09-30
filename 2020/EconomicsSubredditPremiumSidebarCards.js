@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.35113301a6d9dc405d47.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.cb0e4b32979441383c84.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(e, t, s) {
@@ -776,7 +776,7 @@
 						s = ee()();
 					return n.a.createElement("footer", {
 						className: e.className
-					}, n.a.createElement(J.h, {
+					}, n.a.createElement(J.k, {
 						className: se.a.cta,
 						disabled: !e.subreddit,
 						to: Object(X.a)(t, s),
@@ -1050,4 +1050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.35113301a6d9dc405d47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.cb0e4b32979441383c84.js.map

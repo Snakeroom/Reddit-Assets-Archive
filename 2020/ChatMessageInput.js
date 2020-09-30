@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.4ce86928890ac84df4a6.js
-// Retrieved at 9/28/2020, 7:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.267f1570381d7e612dea.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -584,7 +584,7 @@
 				Y = 1e3,
 				z = "chat_submission_from_rte",
 				Z = h.a.form("Form", J.a),
-				Q = h.a.wrapped(C.a, "ChatButton", J.a),
+				Q = h.a.wrapped(C.d, "ChatButton", J.a),
 				$ = h.a.div("CloseIconWrap", J.a),
 				ee = h.a.div("Reply", J.a),
 				te = h.a.div("ReplyAuthor", J.a),
@@ -978,7 +978,7 @@
 						className: j.a.detailsContainer
 					}, t), d.a.createElement(g.a, {
 						className: j.a.buttonRow
-					}, d.a.createElement(_.f, {
+					}, d.a.createElement(_.i, {
 						className: j.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
@@ -1669,4 +1669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.4ce86928890ac84df4a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.267f1570381d7e612dea.js.map

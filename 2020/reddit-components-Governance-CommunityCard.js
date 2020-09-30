@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.bbea57f3779c9c08b799.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.4782394583cf75193244.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -434,7 +434,7 @@
 					hk: "31KZbZ"
 				}))), a.a.createElement(K.a, {
 					className: ee.a.snooIcon
-				})), a.a.createElement(h.f, {
+				})), a.a.createElement(h.i, {
 					className: ee.a.claimButton,
 					onClick: () => o(!0),
 					disabled: c
@@ -530,7 +530,7 @@
 					})), n && p && a.a.createElement(F, {
 						publicAddress: C,
 						subredditId: v
-					}), n && !C && i && a.a.createElement(h.f, {
+					}), n && !C && i && a.a.createElement(h.i, {
 						className: oe.a.button,
 						onClick: c ? b : l
 					}, o.fbt._("register", null, {
@@ -1119,4 +1119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.bbea57f3779c9c08b799.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.4782394583cf75193244.js.map

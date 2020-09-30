@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanOnboardingModal.de5b98bb1be10c896082.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanOnboardingModal.eb8754896918566e4c99.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanOnboardingModal"], {
 		"./src/reddit/components/ConfirmModal/index.m.less": function(e, t, n) {
@@ -35,10 +35,10 @@
 				className: l.a.text
 			}, e.children), a.a.createElement("div", {
 				className: l.a.buttonWrapper
-			}, e.cancelText && a.a.createElement(c.i, {
+			}, e.cancelText && a.a.createElement(c.l, {
 				className: l.a.secondaryButton,
 				onClick: e.onCancel
-			}, e.cancelText), a.a.createElement(c.f, {
+			}, e.cancelText), a.a.createElement(c.i, {
 				className: l.a.primaryButton,
 				onClick: e.onAccept
 			}, e.acceptText)))))
@@ -79,4 +79,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=RpanOnboardingModal.de5b98bb1be10c896082.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanOnboardingModal.eb8754896918566e4c99.js.map

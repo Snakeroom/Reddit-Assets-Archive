@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.05f7bcc39d2e8f581d45.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.a2a51b96d18fdb581614.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -100,7 +100,7 @@
 					}, s.a.createElement(I.a, {
 						className: C.a.benefits,
 						subredditId: e.subredditId
-					})), s.a.createElement(w.h, {
+					})), s.a.createElement(w.k, {
 						className: C.a.link,
 						disabled: !e.subreddit,
 						to: Object(k.a)(t, r),
@@ -130,7 +130,7 @@
 					const t = e.correlationId || l()();
 					return s.a.createElement("footer", {
 						className: Object(m.a)(e.className, M.a.container)
-					}, s.a.createElement("div", null), s.a.createElement(w.f, {
+					}, s.a.createElement("div", null), s.a.createElement(w.i, {
 						onClick: r => {
 							r.stopPropagation(), e.sendEvent(e => Object.assign(Object.assign({
 								correlationId: t,
@@ -159,7 +159,7 @@
 					const t = e.correlationId || l()();
 					return s.a.createElement("footer", {
 						className: Object(m.a)(F.a.container, e.className)
-					}, s.a.createElement("div", null), s.a.createElement(w.f, {
+					}, s.a.createElement("div", null), s.a.createElement(w.i, {
 						onClick: r => {
 							r.stopPropagation(), e.sendEvent(e => Object.assign(Object.assign({
 								correlationId: t,
@@ -193,7 +193,7 @@
 				})((function(e) {
 					return s.a.createElement("footer", {
 						className: Object(m.a)(e.className, D.a.container)
-					}, s.a.createElement("div", null), s.a.createElement(w.f, {
+					}, s.a.createElement("div", null), s.a.createElement(w.i, {
 						onClick: t => {
 							t.stopPropagation(), e.onOpen()
 						}
@@ -805,4 +805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.05f7bcc39d2e8f581d45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.a2a51b96d18fdb581614.js.map

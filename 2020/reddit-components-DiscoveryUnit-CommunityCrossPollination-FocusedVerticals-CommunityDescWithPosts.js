@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.4a3e5ae0afa05b1645f6.js
-// Retrieved at 9/24/2020, 7:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.39be3d4baaa47ad9ed1a.js
+// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -968,7 +968,7 @@
 						shouldReverseColor: s
 					} = e, n = E(e, ["small", "shouldReverseColor"]);
 					const i = Object(o.b)(),
-						c = s ? a.i : a.f;
+						c = s ? a.l : a.i;
 					return r.a.createElement(c, v({}, n, {
 						className: Object(m.a)(n.className, {
 							[p.a.isLarge]: !t
@@ -983,7 +983,7 @@
 						shouldReverseColor: n
 					} = e, i = E(e, ["small", "belongsToType", "shouldReverseColor"]);
 					const c = Object(o.b)(),
-						d = n ? a.f : a.i;
+						d = n ? a.i : a.l;
 					return r.a.createElement(d, v({}, i, {
 						className: Object(m.a)(i.className, {
 							[p.a.isLarge]: !t
@@ -1370,4 +1370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.4a3e5ae0afa05b1645f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.39be3d4baaa47ad9ed1a.js.map
