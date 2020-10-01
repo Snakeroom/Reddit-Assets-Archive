@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.aa9b6a220b5f5e00b33a.js
-// Retrieved at 10/1/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.de9c793c4b5a8b05e34c.js
+// Retrieved at 10/1/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -25837,13 +25837,13 @@
 		"./src/reddit/helpers/graphql/normalizePostFromGql/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return h
+				return y
 			})), s.d(t, "b", (function() {
-				return F
+				return G
 			})), s.d(t, "c", (function() {
-				return K
+				return W
 			})), s.d(t, "e", (function() {
-				return z
+				return J
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.match.js"), s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./src/lib/constants/index.ts"),
@@ -25853,24 +25853,48 @@
 				c = s("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				o = s("./src/reddit/helpers/graphql/normalizeModeratorPartFromGql/index.ts"),
 				d = s("./src/reddit/helpers/graphql/helpers.ts"),
-				u = e => {
+				u = function(e, t) {
+					var s = {};
+					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
+					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+						var r = 0;
+						for (n = Object.getOwnPropertySymbols(e); r < n.length; r++) t.indexOf(n[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[r]) && (s[n[r]] = e[n[r]])
+					}
+					return s
+				},
+				l = e => {
 					let {
-						options: t,
-						selectedOptionId: s,
-						totalVoteCount: n,
-						votingEndsAt: r
+						isPrediction: t,
+						options: s,
+						selectedOptionId: n,
+						totalVoteCount: r,
+						votingEndsAt: a,
+						totalStakeAmount: i,
+						wonAmount: c,
+						resolvedOptionId: o
 					} = e;
 					return {
-						options: t,
-						totalVoteCount: n,
-						userSelection: s,
-						votingEndTimestamp: Object(d.d)(r)
+						isPrediction: t,
+						options: s.map(e => {
+							var {
+								redditorStakeAmount: t
+							} = e, s = u(e, ["redditorStakeAmount"]);
+							return Object.assign({
+								userStakeAmount: t
+							}, s)
+						}),
+						totalVoteCount: r,
+						userSelection: n,
+						votingEndTimestamp: Object(d.d)(a),
+						totalStakeAmount: i,
+						userWonAmount: c,
+						resolvedOptionId: o
 					}
 				};
-			const l = /i\.redd\.it|v\.redd\.it|i\.reddituploads\.com/;
-			var b = s("./src/reddit/models/Flair/index.ts"),
-				p = s("./src/reddit/models/Media/index.ts");
-			const O = e => {
+			const b = /i\.redd\.it|v\.redd\.it|i\.reddituploads\.com/;
+			var p = s("./src/reddit/models/Flair/index.ts"),
+				O = s("./src/reddit/models/Media/index.ts");
+			const g = e => {
 				switch (e) {
 					case "IMPRESSION":
 						return a.a.Impression;
@@ -25934,11 +25958,11 @@
 						return a.a.VideoGroupMViewable
 				}
 			};
-			var g = s("./src/reddit/models/Post/index.ts"),
-				f = s("./src/reddit/models/PostCreationForm/index.ts"),
-				m = s("./src/reddit/models/RichTextJson/index.ts"),
-				j = s("./src/reddit/models/User/index.ts"),
-				_ = function(e, t) {
+			var f = s("./src/reddit/models/Post/index.ts"),
+				m = s("./src/reddit/models/PostCreationForm/index.ts"),
+				j = s("./src/reddit/models/RichTextJson/index.ts"),
+				_ = s("./src/reddit/models/User/index.ts"),
+				h = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -25947,9 +25971,9 @@
 					}
 					return s
 				};
-			const h = e => e.__typename === g.f.DeletedProfilePost || e.__typename === g.f.DeletedSubredditPost,
-				y = [g.e.Embed, g.e.Image, g.e.Video, g.e.Gifvideo],
-				E = e => {
+			const y = e => e.__typename === f.f.DeletedProfilePost || e.__typename === f.f.DeletedSubredditPost,
+				E = [f.e.Embed, f.e.Image, f.e.Video, f.e.Gifvideo],
+				I = e => {
 					const t = e.thumbnail ? Object.assign({
 						url: e.thumbnail.url
 					}, e.thumbnail.dimensions) : {
@@ -25957,17 +25981,17 @@
 						width: null,
 						height: null
 					};
-					return e.__typename === g.f.AdPost && e.authorOnlyInfo && t.url ? t : e.__typename !== g.f.SubredditPost || e.subreddit.isThumbnailsEnabled ? t : e.isSelfPost ? Object.assign(Object.assign({}, t), {
+					return e.__typename === f.f.AdPost && e.authorOnlyInfo && t.url ? t : e.__typename !== f.f.SubredditPost || e.subreddit.isThumbnailsEnabled ? t : e.isSelfPost ? Object.assign(Object.assign({}, t), {
 						url: i.a.SELF
-					}) : e.media && e.media.typeHint && y.includes(e.media.typeHint) ? Object.assign(Object.assign({}, t), {
+					}) : e.media && e.media.typeHint && E.includes(e.media.typeHint) ? Object.assign(Object.assign({}, t), {
 						url: i.a.IMAGE
 					}) : Object.assign(Object.assign({}, t), {
 						url: i.a.DEFAULT
 					})
 				},
-				I = e => {
+				v = e => {
 					switch (e.__typename) {
-						case g.f.SubredditPost:
+						case f.f.SubredditPost:
 							return {
 								id: e.subreddit.id, type: "subreddit"
 							};
@@ -25977,42 +26001,42 @@
 							}
 					}
 				},
-				v = e => {
+				S = e => {
 					var {
 						flair: t,
 						isNsfw: s,
 						isSpoiler: n
-					} = e, r = _(e, ["flair", "isNsfw", "isSpoiler"]);
+					} = e, r = h(e, ["flair", "isNsfw", "isSpoiler"]);
 					const a = [];
 					t && a.push(...Object(c.b)(t)), n && a.push({
 						text: "spoiler",
-						type: b.f.Spoiler
+						type: p.f.Spoiler
 					}), s && a.push({
 						text: "nsfw",
-						type: b.f.Nsfw
+						type: p.f.Nsfw
 					});
 					let i = !1;
-					return r.__typename === g.f.ProfilePost ? i = r.profile.isQuarantined : r.__typename === g.f.SubredditPost && (i = r.subreddit.isQuarantined), i && a.push({
+					return r.__typename === f.f.ProfilePost ? i = r.profile.isQuarantined : r.__typename === f.f.SubredditPost && (i = r.subreddit.isQuarantined), i && a.push({
 						text: "quarantined",
-						type: b.f.Quarantined
+						type: p.f.Quarantined
 					}), a
 				},
-				S = e => e.map(e => {
+				T = e => e.map(e => {
 					let {
 						type: t,
 						url: s
 					} = e;
 					return {
 						url: s || "",
-						type: O(t)
+						type: g(t)
 					}
 				}),
-				T = e => {
+				w = e => {
 					var {
 						domain: t,
 						url: s
-					} = e, n = _(e, ["domain", "url"]);
-					if (n.__typename === g.f.AdPost || !n.isSelfPost && !(e => l.test(e))(t || "")) {
+					} = e, n = h(e, ["domain", "url"]);
+					if (n.__typename === f.f.AdPost || !n.isSelfPost && !(e => b.test(e))(t || "")) {
 						const e = n.outboundLink && n.outboundLink.expiresAt && Object(d.d)(n.outboundLink.expiresAt);
 						return Object.assign({
 							displayText: t || "",
@@ -26025,7 +26049,7 @@
 					}
 					return null
 				},
-				w = {
+				C = {
 					small: 108,
 					medium: 216,
 					large: 320,
@@ -26033,7 +26057,7 @@
 					xxlarge: 960,
 					xxxlarge: 1080
 				},
-				C = {
+				A = {
 					originalObfuscated: "dynamic",
 					smallObfuscated: 108,
 					mediumObfuscated: 216,
@@ -26042,20 +26066,20 @@
 					xxlargeObfuscated: 960,
 					xxxlargeObfuscated: 1080
 				},
-				A = (e, t) => {
+				D = (e, t) => {
 					const s = e && (t ? e.animated : e.still);
 					if (!s) return [];
 					const n = e && e.still && e.still.source ? e.still.source.dimensions.width : 0;
-					return Object.keys(w).reduce((e, r) => {
+					return Object.keys(C).reduce((e, r) => {
 						const a = s[t ? "".concat(t, "_").concat(r) : r];
-						if (!a || w[r] > n) return e;
+						if (!a || C[r] > n) return e;
 						const i = Object.assign({
 							url: a.url
 						}, a.dimensions);
 						return i ? [...e, i] : e
 					}, [])
 				},
-				D = (e, t, s) => {
+				P = (e, t, s) => {
 					const n = s[t];
 					return n && n.url && n.dimensions && n.dimensions.width && n.dimensions.height && e.push({
 						x: n.dimensions.width,
@@ -26063,49 +26087,49 @@
 						u: n.url
 					}), e
 				},
-				P = e => Object.keys(w).reduce((t, s) => D(t, s, e), []),
-				R = e => Object.keys(C).reduce((t, s) => D(t, s, e), []),
-				k = e => {
+				R = e => Object.keys(C).reduce((t, s) => P(t, s, e), []),
+				k = e => Object.keys(A).reduce((t, s) => P(t, s, e), []),
+				x = e => {
 					const {
 						media: t,
 						isSelfPost: s
 					} = e;
-					if (s) return e.content && e.content.richtext ? p.o.RTJSON : p.o.TEXT;
-					if (e.gallery) return p.o.GALLERY;
+					if (s) return e.content && e.content.richtext ? O.o.RTJSON : O.o.TEXT;
+					if (e.gallery) return O.o.GALLERY;
 					switch (t && t.typeHint) {
-						case g.e.Image:
-							return p.o.IMAGE;
-						case g.e.Gifvideo:
-							return p.o.GIFVIDEO;
-						case g.e.Video:
-							return p.o.VIDEO;
-						case g.e.Embed:
-							return p.o.EMBED;
-						case g.e.RPAN:
-							return p.o.LIVEVIDEO;
+						case f.e.Image:
+							return O.o.IMAGE;
+						case f.e.Gifvideo:
+							return O.o.GIFVIDEO;
+						case f.e.Video:
+							return O.o.VIDEO;
+						case f.e.Embed:
+							return O.o.EMBED;
+						case f.e.RPAN:
+							return O.o.LIVEVIDEO;
 						default:
 							return null
 					}
 				},
-				x = e => e.authorOnlyInfo && e.authorOnlyInfo.contentMode === g.d.Markdown ? f.h.MARKDOWN : f.h.RICH_TEXT,
-				N = e => Math.min(e.height, e.width),
-				L = (e, t) => {
+				N = e => e.authorOnlyInfo && e.authorOnlyInfo.contentMode === f.d.Markdown ? m.h.MARKDOWN : m.h.RICH_TEXT,
+				L = e => Math.min(e.height, e.width),
+				U = (e, t) => {
 					const {
 						media: s,
 						content: n
 					} = e, r = (e => e.isSpoiler || e.isNsfw)(e) ? s && s.obfuscatedStill && s.obfuscatedStill.source && s.obfuscatedStill.source.url : null;
 					switch (t) {
-						case p.o.VIDEO: {
+						case O.o.VIDEO: {
 							const e = 400,
-								n = A(s),
+								n = D(s),
 								a = s && s.still && s.still.source && Object.assign({
 									url: s.still.source.url
 								}, s.still.source.dimensions);
 							let i;
 							if (n.length) {
 								i = n.reduce((e, t) => e.width > t.width ? e : t);
-								const t = n.reduce((t, s) => N(s) > e && a && N(s) < N(a) ? [...t, s] : t, []);
-								t.length && (i = t.reduce((e, t) => N(e) < N(t) ? e : t))
+								const t = n.reduce((t, s) => L(s) > e && a && L(s) < L(a) ? [...t, s] : t, []);
+								t.length && (i = t.reduce((e, t) => L(e) < L(t) ? e : t))
 							} else i = a;
 							return {
 								type: t,
@@ -26119,47 +26143,47 @@
 								posterUrl: i && i.url || void 0
 							}
 						}
-						case p.o.LIVEVIDEO:
+						case O.o.LIVEVIDEO:
 							return {
 								type: t, obfuscated: null, hlsUrl: s && s.RPAN && s.RPAN.hlsUrl || "", scrubberThumbSource: s && s.RPAN && s.RPAN.scrubberMediaUrl || ""
 							};
-						case p.o.TEXT:
+						case O.o.TEXT:
 							return {
-								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", content: "", rteMode: x(e)
+								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", content: "", rteMode: N(e)
 							};
-						case p.o.RTJSON:
+						case O.o.RTJSON:
 							return {
-								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", richtextContent: Object(d.e)(n.richtext, m.i), content: "", rteMode: x(e), mediaMetadata: H(e)
+								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", richtextContent: Object(d.e)(n.richtext, j.i), content: "", rteMode: N(e), mediaMetadata: K(e)
 							};
-						case p.o.IMAGE: {
+						case O.o.IMAGE: {
 							const n = s && s.animated && s.animated.gif_source ? "gif" : null;
 							let a = "";
 							return "i.redd.it" === e.domain && e.url ? a = e.url : s && s.still && s.still.source && (a = s.still.source.url), {
 								type: t,
 								obfuscated: r,
-								resolutions: A(s, n),
+								resolutions: D(s, n),
 								width: s && s.still && s.still.source ? s.still.source.dimensions.width : 0,
 								height: s && s.still && s.still.source ? s.still.source.dimensions.height : 0,
 								content: a
 							}
 						}
-						case p.o.EMBED:
+						case O.o.EMBED:
 							return {
 								type: t, obfuscated: r, width: s && s.video && s.video.dimensions && s.video.dimensions.width || 0, height: s && s.video && s.video.dimensions && s.video.dimensions.height || 0, provider: s && s.video && s.video.attribution && s.video.attribution.providerName || "", content: s && s.video && s.video.embedUrl ? s.video.embedUrl : ""
 							};
-						case p.o.GIFVIDEO:
+						case O.o.GIFVIDEO:
 							return {
-								type: t, obfuscated: r, resolutions: A(s, "mp4"), width: s && s.still && s.still.source ? s.still.source.dimensions.width : 0, height: s && s.still && s.still.source ? s.still.source.dimensions.height : 0, gifBackgroundImage: s && s.still && s.still.source ? s.still.source.url : "", content: s && s.animated && s.animated.mp4_source ? s.animated.mp4_source.url : ""
+								type: t, obfuscated: r, resolutions: D(s, "mp4"), width: s && s.still && s.still.source ? s.still.source.dimensions.width : 0, height: s && s.still && s.still.source ? s.still.source.dimensions.height : 0, gifBackgroundImage: s && s.still && s.still.source ? s.still.source.url : "", content: s && s.animated && s.animated.mp4_source ? s.animated.mp4_source.url : ""
 							};
-						case p.o.GALLERY: {
-							const s = W(e.gallery);
+						case O.o.GALLERY: {
+							const s = Y(e.gallery);
 							return {
 								type: t,
 								obfuscated: null,
 								gallery: s ? s.gallery : null,
 								mediaMetadata: s ? s.mediaMetadata : void 0,
-								crossPostRootId: Y(e.crosspostRoot),
-								crossPostParentId: Y(e.crosspostRoot),
+								crossPostRootId: z(e.crosspostRoot),
+								crossPostParentId: z(e.crosspostRoot),
 								numCrossposts: e.crosspostCount || 0,
 								isCrosspostable: e.isCrosspostable
 							}
@@ -26168,19 +26192,19 @@
 							return null
 					}
 				},
-				U = {
+				M = {
 					events: [],
 					isBlank: !1,
 					isSponsored: !1
 				},
-				M = /\.gif\?(.*$)/,
-				F = e => {
-					const t = e.adEvents.find(e => O(e.type) === a.a.Impression),
-						s = t && t.url && t.url.match(M);
+				F = /\.gif\?(.*$)/,
+				G = e => {
+					const t = e.adEvents.find(e => g(e.type) === a.a.Impression),
+						s = t && t.url && t.url.match(F);
 					return s && s[1] ? "t3_".concat(s[1]) : null
 				},
-				G = e => e ? e.toLowerCase() : null,
-				B = e => {
+				B = e => e ? e.toLowerCase() : null,
+				q = e => {
 					let {
 						isLive: t,
 						startsAt: s,
@@ -26194,21 +26218,21 @@
 				};
 			t.a = e => {
 				const t = {
-						post: z(e)
+						post: J(e)
 					},
 					{
 						crosspostRoot: s
 					} = e;
-				return s && s.type === g.a.Post && s.postInfo && (t.crosspost = z(s.postInfo)), t
+				return s && s.type === f.a.Post && s.postInfo && (t.crosspost = J(s.postInfo)), t
 			};
-			const q = e => e && e.__typename !== j.c.DeletedRedditor ? "name" in e && e.name || "" : n.A,
-				V = e => !(!e || e.__typename !== j.c.AvailableRedditor) && !!e.isPremiumMember,
-				H = e => e.content && e.content.richtextMedia && e.content.richtextMedia.length ? K(e.content.richtextMedia) : null,
-				K = (e, t) => e.length ? e.reduce((e, t) => {
+			const V = e => e && e.__typename !== _.c.DeletedRedditor ? "name" in e && e.name || "" : n.A,
+				H = e => !(!e || e.__typename !== _.c.AvailableRedditor) && !!e.isPremiumMember,
+				K = e => e.content && e.content.richtextMedia && e.content.richtextMedia.length ? W(e.content.richtextMedia) : null,
+				W = (e, t) => e.length ? e.reduce((e, t) => {
 					switch (t.__typename) {
-						case g.c.ImageAsset:
+						case f.c.ImageAsset:
 							"image/gif" === t.mimetype ? e[t.id] = {
-								e: m.r,
+								e: j.r,
 								id: t.id,
 								s: {
 									gif: t.url,
@@ -26216,7 +26240,7 @@
 									y: t.width
 								}
 							} : e[t.id] = {
-								e: m.s,
+								e: j.s,
 								id: t.id,
 								s: {
 									u: t.url,
@@ -26225,10 +26249,10 @@
 								}
 							};
 							break;
-						case g.c.VideoAsset:
+						case f.c.VideoAsset:
 							e[t.id] = {
 								dashUrl: t.dashUrl,
-								e: m.t,
+								e: j.t,
 								hlsUrl: t.hlsUrl,
 								id: t.id,
 								x: t.height,
@@ -26237,7 +26261,7 @@
 					}
 					return e
 				}, {}) : null,
-				W = e => {
+				Y = e => {
 					if (!(e && "items" in e)) return null;
 					const t = e.items,
 						s = {},
@@ -26258,11 +26282,11 @@
 							const n = (e => e.length ? e.reduce((e, t) => {
 								const s = !!t.url && t.url.endsWith(".gif");
 								return e[t.id] = {
-									e: m.s,
+									e: j.s,
 									id: t.id,
 									m: t.mimetype || "",
-									o: R(t),
-									p: P(t),
+									o: k(t),
+									p: R(t),
 									s: {
 										x: t.width || 0,
 										y: t.height || 0,
@@ -26278,41 +26302,41 @@
 						mediaMetadata: Object.keys(s).length > 0 ? s : null
 					}
 				},
-				Y = e => e ? e.type === g.a.Post ? e.postInfo && e.postInfo.id : e.comment && e.comment.id : null,
-				z = e => {
+				z = e => e ? e.type === f.a.Post ? e.postInfo && e.postInfo.id : e.comment && e.comment.id : null,
+				J = e => {
 					const {
 						awardings: t,
 						commentCount: s,
 						createdAt: a,
 						crosspostCount: i,
 						crosspostRoot: c,
-						discussionType: l,
+						discussionType: u,
 						domain: b,
 						id: p,
 						isArchived: O,
-						isContestMode: f,
+						isContestMode: g,
 						isFollowed: m,
 						isGildable: j,
 						isHidden: _,
 						isLocked: h,
 						isNsfw: y,
-						isOriginalContent: w,
+						isOriginalContent: E,
 						isSaved: C,
 						isSpoiler: A,
 						isStickied: D,
 						liveCommentsWebsocket: P,
 						permalink: R,
-						removedBy: x,
+						removedBy: k,
 						removedByCategory: N,
-						poll: M,
+						poll: L,
 						score: F,
-						suggestedCommentSort: H,
+						suggestedCommentSort: G,
 						title: K,
 						topAwardedType: W,
-						upvoteRatio: z,
+						upvoteRatio: Y,
 						viewCount: J,
 						voteState: Q
-					} = e, X = N && "NONE" !== N ? N.toLowerCase() : null, Z = Y(c);
+					} = e, X = N && "NONE" !== N ? N.toLowerCase() : null, Z = z(c);
 					c && !Z && r.c.withScope(e => {
 						e.setExtra("postId", p), Object(r.a)(e, {
 							serverLogging: !1
@@ -26331,14 +26355,14 @@
 								id: "",
 								type: "subreddit"
 							},
-							contestMode: f,
+							contestMode: g,
 							created: Object(d.d)(a),
 							crosspostParentId: Z,
 							crosspostRootId: Z,
-							discussionType: l,
+							discussionType: u,
 							distinguishType: null,
 							domain: b || "",
-							flair: v(e),
+							flair: S(e),
 							hidden: _,
 							id: p,
 							ignoreReports: !1,
@@ -26352,7 +26376,7 @@
 							isMediaOnly: !1,
 							isMeta: !1,
 							isNSFW: y,
-							isOriginalContent: w,
+							isOriginalContent: E,
 							isPinned: !1,
 							isRemoved: !1,
 							isScoreHidden: null === F,
@@ -26366,17 +26390,17 @@
 							numCrossposts: i || 0,
 							numReports: null,
 							permalink: "https://www.reddit.com".concat(R),
-							pollData: M && u(M) || void 0,
+							pollData: L && l(L) || void 0,
 							postCategories: null,
 							postId: p,
 							previewComments: [],
-							removedBy: x && x.name ? x.name : null,
+							removedBy: k && k.name ? k.name : null,
 							removedByCategory: X,
 							saved: C,
 							score: null !== F && F > 0 ? F : 0,
 							sendReplies: !1,
-							source: T(e),
-							suggestedSort: H && n.r[H] || null,
+							source: w(e),
+							suggestedSort: G && n.r[G] || null,
 							thumbnail: {
 								height: null,
 								url: "",
@@ -26384,11 +26408,11 @@
 							},
 							title: K || "",
 							topAwardedType: W || void 0,
-							upvoteRatio: z,
+							upvoteRatio: Y,
 							userReports: [],
 							viewCount: J || 0,
 							voteState: Q ? Object(d.c)(Q) : 0
-						}, e.__typename === g.f.AdPost ? (e => {
+						}, e.__typename === f.f.AdPost ? (e => {
 							const {
 								adEvents: t,
 								callToAction: s,
@@ -26398,12 +26422,12 @@
 							return {
 								callToAction: s,
 								domainOverride: n,
-								events: S(t),
+								events: T(t),
 								isBlank: r,
 								isSponsored: !0
 							}
-						})(e) : U), Object(o.a)(e));
-					if (e.__typename === g.f.DeletedProfilePost || e.__typename === g.f.DeletedSubredditPost) return ee;
+						})(e) : M), Object(o.a)(e));
+					if (e.__typename === f.f.DeletedProfilePost || e.__typename === f.f.DeletedSubredditPost) return ee;
 					const {
 						authorInfo: te,
 						authorOnlyInfo: se,
@@ -26417,22 +26441,22 @@
 						url: e.still.source.url
 					}, e.still.source.dimensions) : void 0)(ce);
 					return Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, ee), {
-						author: te && q(te) || n.A,
+						author: te && V(te) || n.A,
 						authorId: te && te.id || "",
-						belongsTo: I(e),
-						distinguishType: G(ne),
+						belongsTo: v(e),
+						distinguishType: B(ne),
 						isCrosspostable: re,
 						isMediaOnly: ae,
 						isMeta: ie,
-						isAuthorPremium: V(te),
-						media: L(e, k(e)),
-						thumbnail: E(e)
+						isAuthorPremium: H(te),
+						media: U(e, x(e)),
+						thumbnail: I(e)
 					}), de && {
 						preview: de
 					}), se && {
 						sendReplies: se.isReceivingPostReplies
 					}), oe && {
-						eventInfo: B(oe)
+						eventInfo: q(oe)
 					})
 				}
 		},
@@ -31736,16 +31760,18 @@
 				return n
 			})), s.d(t, "b", (function() {
 				return r
-			})), s.d(t, "f", (function() {
-				return i
 			})), s.d(t, "g", (function() {
+				return i
+			})), s.d(t, "h", (function() {
 				return c
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "f", (function() {
 				return o
 			})), s.d(t, "c", (function() {
 				return d
 			})), s.d(t, "d", (function() {
 				return u
+			})), s.d(t, "e", (function() {
+				return l
 			}));
 			var n, r, a = s("./node_modules/bignumber.js/bignumber.js");
 			! function(e) {
@@ -31794,6 +31820,10 @@
 					default:
 						return !1
 				}
+			}
+
+			function l(e) {
+				return !0 === e.isPrediction
 			}
 		},
 		"./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts": function(e, t, s) {
@@ -43059,30 +43089,35 @@
 				if (!e.pollData) return null;
 				const {
 					id: t,
-					created: s,
-					authorId: n,
-					belongsTo: r
-				} = e, {
-					options: a,
-					votingEndTimestamp: i
-				} = e.pollData;
-				let c = 0;
-				const o = [];
-				return a.forEach(e => {
-					c += e.voteCount, o.push({
-						id: e.id.toString(),
-						text: e.text
-					})
-				}), {
+					authorId: s,
+					belongsTo: n,
+					created: r,
+					pollData: {
+						isPrediction: a,
+						options: i,
+						resolvedOptionId: c,
+						totalStakeAmount: o,
+						totalVoteCount: d,
+						userSelection: u,
+						userWonAmount: l,
+						votingEndTimestamp: b
+					}
+				} = e;
+				return {
 					id: t,
-					createdAt: s,
-					creatorId: n,
-					subredditId: r.id,
-					endsAt: i,
+					createdAt: r,
+					creatorId: s,
+					subredditId: n.id,
+					endsAt: b,
 					postId: t,
-					options: o,
-					totalVoters: c,
-					type: Bi.a.GA
+					options: i,
+					totalVoters: d,
+					type: Bi.a.GA,
+					isPrediction: a,
+					totalStakeAmount: o,
+					userSelection: u,
+					userWonAmount: l,
+					resolvedOptionId: c
 				}
 			};
 			const Lf = {};
@@ -43146,7 +43181,7 @@
 						let a = 0;
 						const i = {};
 						for (const e of r) a += e.voteCount, i[e.id] = {
-							id: parseInt(e.id),
+							id: "number" == typeof e.id ? e.id : parseInt(e.id),
 							userSelected: e.id === n,
 							votes: e.voteCount.toString()
 						};
@@ -56106,4 +56141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.aa9b6a220b5f5e00b33a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.de9c793c4b5a8b05e34c.js.map

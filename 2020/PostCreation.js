@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4568efbaf274efa21988.js
-// Retrieved at 10/1/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.317dfff3efe63e7c93e5.js
+// Retrieved at 10/1/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "5c5180d-production"
+					SENTRY_RELEASE_VERSION: "5a7e3f0-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -5214,6 +5214,30 @@
 					post: e.post
 				}))
 		},
+		"./src/reddit/components/Econ/Prediction/async.ts": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js");
+			t.a = Object(s.a)({
+				resolved: {},
+				chunkName: () => "reddit-components-Econ-Prediction",
+				isReady(e) {
+					const t = this.resolve(e);
+					return !1 !== this.resolved[t] && !!n.m[t]
+				},
+				importAsync: () => n.e("reddit-components-Econ-Prediction").then(n.bind(null, "./src/reddit/components/Econ/Prediction/index.tsx")),
+				requireAsync(e) {
+					const t = this.resolve(e);
+					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+				},
+				requireSync(e) {
+					const t = this.resolve(e);
+					return n(t)
+				},
+				resolve() {
+					return "./src/reddit/components/Econ/Prediction/index.tsx"
+				}
+			})
+		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.m.less": function(e, t, n) {
 			e.exports = {
 				badge: "ekl2maIRbrCrsYFt1OwaE"
@@ -7405,6 +7429,34 @@
 				}))
 			}
 		},
+		"./src/reddit/components/Media/PollContainer/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/reselect/es/index.js"),
+				a = n("./src/reddit/models/Poll/index.ts"),
+				c = n("./src/reddit/selectors/poll/index.ts"),
+				l = n("./src/reddit/components/Econ/Prediction/async.ts"),
+				d = n("./src/reddit/components/Governance/Proposal/async.ts");
+			const u = Object(i.c)({
+				poll: c.e
+			});
+			t.a = Object(r.b)(u)(e => {
+				let {
+					isCommentsPage: t,
+					poll: n,
+					postId: s
+				} = e;
+				return n ? Object(a.e)(n) ? o.a.createElement(l.a, {
+					postId: s,
+					isCommentsPage: t
+				}) : o.a.createElement(d.a, {
+					postId: s,
+					isCommentsPage: t
+				}) : null
+			})
+		},
 		"./src/reddit/components/Media/RichTextContainer/index.m.less": function(e, t, n) {
 			e.exports = {
 				richTextContainer: "Chtkt3BCZQruf0LtmFg2c",
@@ -7695,13 +7747,13 @@
 				y = n("./src/lib/sentry/index.ts"),
 				v = n("./src/lib/truncateText/index.ts"),
 				C = n("./src/reddit/components/AdViewability/index.tsx"),
-				O = n("./src/reddit/components/Governance/Proposal/async.ts"),
-				E = n("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
-				j = n("./src/reddit/components/Media/constants.ts"),
-				w = n("./src/reddit/components/Media/EmbedBox/index.tsx"),
-				S = n("./src/reddit/components/Media/GalleryBox/index.tsx"),
-				_ = n("./src/reddit/components/Media/ImageBox/index.tsx"),
-				k = n("./src/reddit/components/Media/MediaContainer/index.tsx"),
+				O = n("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
+				E = n("./src/reddit/components/Media/constants.ts"),
+				j = n("./src/reddit/components/Media/EmbedBox/index.tsx"),
+				w = n("./src/reddit/components/Media/GalleryBox/index.tsx"),
+				S = n("./src/reddit/components/Media/ImageBox/index.tsx"),
+				_ = n("./src/reddit/components/Media/MediaContainer/index.tsx"),
+				k = n("./src/reddit/components/Media/PollContainer/index.tsx"),
 				T = n("./src/reddit/components/Media/RichTextContainer/index.tsx"),
 				I = n("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
 				P = n("./src/reddit/components/Media/VideoBox/index.tsx"),
@@ -7760,7 +7812,7 @@
 				}, {
 					ssr: !1
 				}),
-				se = Object(p.a)(E.b, {
+				se = Object(p.a)(O.b, {
 					playerName: "Reddit Player"
 				}),
 				oe = 300,
@@ -7901,19 +7953,19 @@
 							e.contentWindow.postMessage({
 								context: ce,
 								method: n
-							}, j.a), e.contentWindow.postMessage({
+							}, E.a), e.contentWindow.postMessage({
 								context: ce,
 								method: z.g.Mute
-							}, j.a)
+							}, E.a)
 						}
 					}, this.pauseEmbed = (e, t) => {
 						e.contentWindow && (t === z.v.YouTube ? e.contentWindow.postMessage(JSON.stringify({
 							event: "command",
 							func: z.B.Pause
-						}), j.a) : e.contentWindow.postMessage({
+						}), E.a) : e.contentWindow.postMessage({
 							context: ce,
 							method: z.g.Pause
-						}, j.a))
+						}, E.a))
 					}, this.onIframeLoaded = () => {
 						const {
 							media: e
@@ -8022,7 +8074,7 @@
 						e && (i = e.url, c = e.width, a = e.height)
 					} else if (o && o.media && (!e.isListing || e.isExpando) && (o.media.type === z.o.IMAGE || o.media.type === z.o.GIFVIDEO)) {
 						let e;
-						(e = Object(z.J)(o.media.height, o.media.width) && Object(_.b)(o.media.height) ? X.c(o.media.height, o.media.width, o.media.resolutions) : X.a(o.media.resolutions)) && (i = e.url, c = e.width, a = e.height)
+						(e = Object(z.J)(o.media.height, o.media.width) && Object(S.b)(o.media.height) ? X.c(o.media.height, o.media.width, o.media.resolutions) : X.a(o.media.resolutions)) && (i = e.url, c = e.width, a = e.height)
 					}
 					if (e.isExpando)
 						if (c > t.viewportWidth) {
@@ -8081,12 +8133,12 @@
 						canLoadContent: f,
 						forcePause: x,
 						shouldPause: v,
-						shouldStop: E,
-						viewportWidth: j
+						shouldStop: O,
+						viewportWidth: E
 					} = this.state;
 					if (!p.media) return null;
 					const L = x || v,
-						A = E,
+						A = O,
 						{
 							source: F,
 							obfuscated: B,
@@ -8104,15 +8156,15 @@
 						Z = Object.assign(Object.assign({}, Q), {
 							className: e,
 							forceAspectRatio: s,
-							viewportWidth: j
+							viewportWidth: E
 						}),
 						Y = this.shouldBlur(),
 						X = !(!p.isSponsored || !p.source);
-					if (B && Y) return l.a.createElement(k.a, te({}, Z, {
+					if (B && Y) return l.a.createElement(_.a, te({}, Z, {
 						blurSrc: B
 					}), l.a.createElement(de, {
 						isVisible: f
-					}, l.a.createElement(_.a, te({}, Q, {
+					}, l.a.createElement(S.a, te({}, Q, {
 						altText: this.getAltText(),
 						className: this.props.imageBoxClassName,
 						contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -8152,7 +8204,7 @@
 								postId: p.id,
 								rtJsonElementProps: xe(this.props),
 								renderMediaAsLinks: a
-							})), l.a.createElement(O.a, {
+							})), l.a.createElement(k.a, {
 								postId: p.id,
 								isCommentsPage: !!o
 							})) : null;
@@ -8178,11 +8230,11 @@
 							}
 							return null;
 						case z.o.EMBED:
-							return this.props.isMiniCard && p.preview && p.preview.url ? l.a.createElement(k.a, te({}, Z, {
+							return this.props.isMiniCard && p.preview && p.preview.url ? l.a.createElement(_.a, te({}, Z, {
 								alwaysWrapMedia: !0
 							}), l.a.createElement(de, {
 								isVisible: f
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(_.a, te({}, Q, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, te({}, Q, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -8203,11 +8255,11 @@
 								onIframeLoaded: this.onIframeLoaded,
 								source: F,
 								title: p.title
-							}) : l.a.createElement(k.a, te({}, Z, {
+							}) : l.a.createElement(_.a, te({}, Z, {
 								alwaysWrapMedia: !0,
 								height: r ? q : z.j,
 								width: r ? G : z.j * (16 / 9)
-							}), f && l.a.createElement(w.a, {
+							}), f && l.a.createElement(j.a, {
 								childRef: this.storeChildRef,
 								height: r ? q : z.j,
 								width: r ? G : void 0,
@@ -8218,9 +8270,9 @@
 								showFull: h,
 								source: F,
 								title: p.title
-							})) : l.a.createElement(k.a, te({}, Z, {
+							})) : l.a.createElement(_.a, te({}, Z, {
 								alwaysWrapMedia: !0
-							}), f && l.a.createElement(w.a, te({}, Q, {
+							}), f && l.a.createElement(j.a, te({}, Q, {
 								isResponsive: r || p.media.provider === z.v.IFrameEmbed,
 								title: p.title,
 								childRef: this.storeChildRef,
@@ -8231,7 +8283,7 @@
 						case z.o.GIFVIDEO: {
 							let e = q,
 								t = G;
-							return e > z.j && (t = G / q * (e = z.j)), l.a.createElement(k.a, te({}, Z, {
+							return e > z.j && (t = G / q * (e = z.j)), l.a.createElement(_.a, te({}, Z, {
 								blurSrc: J ? p.media.gifBackgroundImage : void 0
 							}), l.a.createElement(de, {
 								isVisible: f
@@ -8248,11 +8300,11 @@
 						}
 						case z.o.VIDEO: {
 							const e = p.media.posterUrl || p.preview && p.preview.url;
-							if (this.props.isMiniCard && e) return l.a.createElement(k.a, te({}, Z, {
+							if (this.props.isMiniCard && e) return l.a.createElement(_.a, te({}, Z, {
 								alwaysWrapMedia: !0
 							}), l.a.createElement(de, {
 								isVisible: f
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(_.a, te({}, Q, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(S.a, te({}, Q, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -8266,7 +8318,7 @@
 								source: e,
 								originalSource: e
 							})), l.a.createElement(M.a, null))));
-							const n = l.a.createElement(k.a, te({}, Z, {
+							const n = l.a.createElement(_.a, te({}, Z, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
 							}), f && l.a.createElement(se, {
@@ -8306,14 +8358,14 @@
 							}));
 						case z.o.IMAGE:
 							const x = this.state.viewportHeight - 2 * ae,
-								E = this.state.viewportWidth - 2 * ae;
-							let j = F;
-							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (p.thumbnail && Object(g.a)(p.thumbnail.url) ? j = p.thumbnail.url : p.preview && Object(g.a)(p.preview.url) && (j = p.preview.url)), l.a.createElement(k.a, te({}, Z, {
-								blurSrc: J ? j : void 0,
+								O = this.state.viewportWidth - 2 * ae;
+							let E = F;
+							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (p.thumbnail && Object(g.a)(p.thumbnail.url) ? E = p.thumbnail.url : p.preview && Object(g.a)(p.preview.url) && (E = p.preview.url)), l.a.createElement(_.a, te({}, Z, {
+								blurSrc: J ? E : void 0,
 								isExpando: !!r
 							}), l.a.createElement(de, {
 								isVisible: f
-							}, l.a.createElement(_.a, te({}, Q, {
+							}, l.a.createElement(S.a, te({}, Q, {
 								altText: this.getAltText(),
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -8324,10 +8376,10 @@
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
 								maxHeight: r ? x : void 0,
-								maxWidth: r ? E : void 0,
+								maxWidth: r ? O : void 0,
 								postId: p.id,
 								shouldBlur: Y,
-								source: j,
+								source: E,
 								outboundUrl: X && p.source.outboundUrl || void 0,
 								isSponsored: p.isSponsored,
 								originalSource: p.media.content
@@ -8335,7 +8387,7 @@
 						case z.o.GALLERY:
 							const B = Object(K.b)(p.media.mediaMetadata || {}, Object(K.c)(a), z.p, G),
 								$ = Object(K.a)(p.media.gallery, p.isSponsored);
-							return l.a.createElement(k.a, te({}, Z, {
+							return l.a.createElement(_.a, te({}, Z, {
 								blurSrc: J ? F : void 0,
 								isExpando: !!r,
 								maxGalleryHeight: B + $,
@@ -8343,7 +8395,7 @@
 								isGalleryTileLayout: i
 							}), l.a.createElement(de, {
 								isVisible: f
-							}, l.a.createElement(S.a, {
+							}, l.a.createElement(w.a, {
 								postId: p.id,
 								galleryItems: p.media.gallery ? p.media.gallery.items : [],
 								mediaMetadata: p.media.mediaMetadata || {},
@@ -29111,9 +29163,9 @@
 						i = Object.assign({}, n);
 					return s && (i.type = s), i.type === ce.a.ReplaceTopMod ? (i.params = {
 						userName: r
-					}, i.options = ce.f[ce.a.ReplaceTopMod]()) : i.type === ce.a.Spinoff ? (i.params = {
+					}, i.options = ce.g[ce.a.ReplaceTopMod]()) : i.type === ce.a.Spinoff ? (i.params = {
 						subreddit: o
-					}, i.options = ce.f[ce.a.Spinoff](o)) : i.options = i.options.map(e => ({
+					}, i.options = ce.g[ce.a.Spinoff](o)) : i.options = i.options.map(e => ({
 						text: e.text.trim()
 					})).filter(e => !!e.text), i
 				},
@@ -32334,7 +32386,7 @@
 				}))((function(e) {
 					return o.a.createElement(pl, {
 						className: e.className,
-						options: ce.f[ce.a.Spinoff](e.newSubredditName),
+						options: ce.g[ce.a.Spinoff](e.newSubredditName),
 						poll: e.poll,
 						subreddit: e.subreddit,
 						onUpdatePoll: e.onUpdatePoll
@@ -32371,7 +32423,7 @@
 				}))((function(e) {
 					return o.a.createElement(pl, {
 						className: e.className,
-						options: ce.f[ce.a.ReplaceTopMod](),
+						options: ce.g[ce.a.ReplaceTopMod](),
 						poll: e.poll,
 						subreddit: e.subreddit,
 						onUpdatePoll: e.onUpdatePoll
@@ -33967,6 +34019,74 @@
 					return !!n && !!n.walletProvider && !n.walletProvider.inTransition
 				}
 		},
+		"./src/reddit/selectors/poll/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			})), n.d(t, "e", (function() {
+				return r
+			})), n.d(t, "f", (function() {
+				return i
+			})), n.d(t, "d", (function() {
+				return a
+			})), n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "c", (function() {
+				return l
+			}));
+			var s = n("./src/reddit/models/Poll/index.ts");
+			const o = (e, t) => {
+					let {
+						postId: n
+					} = t;
+					return e.posts.metaMap[n]
+				},
+				r = (e, t) => {
+					let {
+						postId: n
+					} = t;
+					const s = o(e, {
+						postId: n
+					});
+					if (s) return e.polls.models[s]
+				},
+				i = (e, t) => {
+					let {
+						postId: n
+					} = t;
+					const o = r(e, {
+						postId: n
+					});
+					if (o && Object(s.e)(o)) return o
+				},
+				a = (e, t) => {
+					let {
+						postId: n
+					} = t;
+					const s = o(e, {
+						postId: n
+					});
+					if (s) return e.polls.rewards[s]
+				},
+				c = (e, t) => {
+					let {
+						postId: n
+					} = t;
+					const s = o(e, {
+						postId: n
+					});
+					if (s) return e.polls.results.byVotingPower[s]
+				},
+				l = (e, t) => {
+					let {
+						postId: n
+					} = t;
+					const s = o(e, {
+						postId: n
+					});
+					if (s) return e.polls.results.byVoters[s]
+				}
+		},
 		"./src/reddit/selectors/products.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -34067,4 +34187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4568efbaf274efa21988.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.317dfff3efe63e7c93e5.js.map

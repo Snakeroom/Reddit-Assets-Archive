@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.51747b5d0748e42b9b72.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.188f8ac88e444e231244.js
+// Retrieved at 10/1/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -35,9 +35,9 @@
 			})), n.d(t, "d", (function() {
 				return S
 			})), n.d(t, "e", (function() {
-				return V
-			})), n.d(t, "h", (function() {
 				return L
+			})), n.d(t, "h", (function() {
+				return V
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
@@ -100,7 +100,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(f.a)(n, o.error || o.errors[0].messsage)
-				}, V = (e, t) => async (n, r, c) => {
+				}, L = (e, t) => async (n, r, c) => {
 					let {
 						apiContext: l
 					} = c;
@@ -133,7 +133,7 @@
 					})), t && n(Object(a.f)())) : (n(E({
 						error: m.error
 					})), Object(f.a)(n, m.error))
-				}, L = e => async (t, n, s) => {
+				}, V = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -285,11 +285,11 @@
 				},
 				B = n("./src/reddit/components/Poll/ClosedPoll/index.m.less"),
 				S = n.n(B);
-			const V = Object(i.c)({
+			const L = Object(i.c)({
 				tokenName: N.q,
 				tokenDisplayConversion: N.p
 			});
-			var L = Object(c.b)(V)((function(e) {
+			var V = Object(c.b)(L)((function(e) {
 					let t;
 					return e.poll.options.forEach(n => {
 						t || (t = n);
@@ -319,9 +319,9 @@
 				G = n("./src/reddit/controls/Button/index.tsx"),
 				q = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				F = n("./src/reddit/components/Poll/OpenPoll/index.m.less"),
-				M = n.n(F);
+				U = n.n(F);
 			const {
-				fbt: U
+				fbt: M
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function Z(e) {
@@ -352,34 +352,34 @@
 						onSubmit: this.handleSubmit
 					}, a.a.createElement("div", null, this.props.poll.options.map((e, t) => a.a.createElement("label", {
 						key: t,
-						className: M.a.option
+						className: U.a.option
 					}, a.a.createElement("input", {
-						className: M.a.optionRadio,
+						className: U.a.optionRadio,
 						onChange: this.handleOptionSelected,
 						type: "radio",
 						name: "proposal",
 						value: t
 					}), a.a.createElement("div", {
-						className: M.a.optionText
+						className: U.a.optionText
 					}, e.text)))), a.a.createElement("div", {
-						className: M.a.controlRow
+						className: U.a.controlRow
 					}, a.a.createElement("div", {
-						className: M.a.buttonContainer
+						className: U.a.buttonContainer
 					}, a.a.createElement(G.l, {
 						className: A.o,
 						disabled: this.props.voteInProgress || !this.props.userIsLoggedIn || !this.state.optionIsSelected,
 						type: "submit"
 					}, this.props.voteInProgress ? a.a.createElement(q.a, {
-						className: M.a.loadingIcon,
+						className: U.a.loadingIcon,
 						sizePx: 20
-					}) : a.a.createElement(o.Fragment, null, this.props.votingIcon, U._("vote", null, {
+					}) : a.a.createElement(o.Fragment, null, this.props.votingIcon, M._("vote", null, {
 						hk: "2XhbHK"
 					}))), !this.props.userIsLoggedIn && a.a.createElement("div", {
-						className: M.a.loggedOutTooltip
-					}, U._("You must be logged in to vote", null, {
+						className: U.a.loggedOutTooltip
+					}, M._("You must be logged in to vote", null, {
 						hk: "MnQpC"
 					}))), a.a.createElement(I.a, {
-						className: M.a.metaData,
+						className: U.a.metaData,
 						poll: this.props.poll
 					})))
 				}
@@ -392,7 +392,7 @@
 				W = n.n(Q);
 			class Y extends a.a.Component {
 				constructor() {
-					super(...arguments), this.userAlreadyMadeSelection = (e, t) => !(!e || !t) && Object(C.g)(e, t), this.sendPollResultsEvent = () => {
+					super(...arguments), this.userAlreadyMadeSelection = (e, t) => !(!e || !t) && Object(C.h)(e, t), this.sendPollResultsEvent = () => {
 						const {
 							poll: e,
 							sendEvent: t
@@ -427,7 +427,7 @@
 						className: e
 					}, c && a.a.createElement("div", {
 						className: W.a.title
-					}, c), r && Object(C.e)(s, r) ? a.a.createElement(L, {
+					}, c), r && Object(C.f)(s, r) ? a.a.createElement(V, {
 						displayType: t,
 						poll: s,
 						result: r,
@@ -450,14 +450,9 @@
 				})(Object(c.b)(X, (e, t) => ({
 					onVoteSelection: n => e(Object(y.d)(t.pollId, n.id))
 				}))(Object(O.c)(Y))),
-				ee = n("./src/reddit/icons/svgs/GovSmall/index.tsx");
-			const te = (e, t) => {
-				let {
-					postId: n
-				} = t;
-				return e.posts.metaMap[n]
-			};
-			var ne = n("./src/reddit/selectors/postCreations.ts"),
+				ee = n("./src/reddit/icons/svgs/GovSmall/index.tsx"),
+				te = n("./src/reddit/selectors/poll/index.ts"),
+				ne = n("./src/reddit/selectors/postCreations.ts"),
 				se = n("./src/reddit/selectors/posts.ts"),
 				re = (n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./src/reddit/icons/svgs/DynamicThreshold/index.tsx")),
 				oe = n("./src/reddit/components/Governance/Proposal/ResultsSelector/DecisionThreshold/index.m.less"),
@@ -576,7 +571,7 @@
 						resultsByVoters: s
 					} = t;
 					const r = e.polls.models[n];
-					return !!(r && s && Object(C.e)(r, s))
+					return !!(r && s && Object(C.f)(r, s))
 				},
 				wallet: N.g
 			});
@@ -633,8 +628,8 @@
 						const n = Ne(e, t.resultType),
 							s = Ne(this.props, this.state.resultType);
 						if (n && s && e.poll && this.props.poll) {
-							const t = !Object(C.e)(e.poll, n),
-								r = Object(C.e)(this.props.poll, s);
+							const t = !Object(C.f)(e.poll, n),
+								r = Object(C.f)(this.props.poll, s);
 							t && r && this.setState({
 								displayReward: !0
 							})
@@ -664,7 +659,7 @@
 						[je.a.isEditing]: t
 					}) : b = Object(l.a)(je.a.ForNonCommentsPage, {
 						[je.a.mHasNotVoted]: !s,
-						[je.a.mPollIsClosed]: !!s && Object(C.e)(n, s),
+						[je.a.mPollIsClosed]: !!s && Object(C.f)(n, s),
 						[je.a.mGAPoll]: n.type === C.a.GA
 					}), a.a.createElement("div", {
 						className: p
@@ -702,44 +697,12 @@
 			}
 			const Ie = Object(i.c)({
 				isEditing: ne.F,
-				poll: (e, t) => {
-					let {
-						postId: n
-					} = t;
-					const s = te(e, {
-						postId: n
-					});
-					if (s) return e.polls.models[s]
-				},
-				pollId: te,
-				pollReward: (e, t) => {
-					let {
-						postId: n
-					} = t;
-					const s = te(e, {
-						postId: n
-					});
-					if (s) return e.polls.rewards[s]
-				},
+				poll: te.e,
+				pollId: te.a,
+				pollReward: te.d,
 				post: se.N,
-				resultsByVoters: (e, t) => {
-					let {
-						postId: n
-					} = t;
-					const s = te(e, {
-						postId: n
-					});
-					if (s) return e.polls.results.byVoters[s]
-				},
-				resultsByVotingPower: (e, t) => {
-					let {
-						postId: n
-					} = t;
-					const s = te(e, {
-						postId: n
-					});
-					if (s) return e.polls.results.byVotingPower[s]
-				},
+				resultsByVoters: te.c,
+				resultsByVotingPower: te.b,
 				subredditOrProfile: se.ab
 			});
 			t.default = Object(c.b)(Ie)(Ce)
@@ -1290,4 +1253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.51747b5d0748e42b9b72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.188f8ac88e444e231244.js.map
