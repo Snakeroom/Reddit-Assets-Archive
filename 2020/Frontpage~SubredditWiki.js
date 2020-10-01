@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.b72760e59aeabdb70160.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.4fe701d5a2f51847fcfe.js
+// Retrieved at 10/1/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, r) {
@@ -294,7 +294,7 @@
 						return "./src/reddit/components/SidebarNativeAd/index.tsx"
 					}
 				}),
-				j = Object(m.c)({
+				w = Object(m.c)({
 					post: (e, t) => {
 						const {
 							placement: r,
@@ -303,13 +303,13 @@
 						return e.sidebarPromotedPosts.models[Object(x.a)(r, s, n)]
 					},
 					pending: e => !e.sidebarPromotedPosts.firstFetch,
-					IsSubredditOrCommentsPage: e => Object(O.r)(e) === E.Bb.SUBREDDIT || Object(O.r)(e) === E.Bb.COMMENTS
+					isSubredditOrCommentsPage: e => Object(O.r)(e) === E.Bb.SUBREDDIT || Object(O.r)(e) === E.Bb.COMMENTS
 				}),
-				w = Object(l.b)(j),
+				j = Object(l.b)(w),
 				N = _.a.wrapped(p.a, "BannerAd", S.a),
 				B = _.a.wrapped(y.a, "ThemedWidget", S.a),
 				I = _.a.div("SidebarAdPlaceholder", S.a),
-				P = (e, t) => !(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t && e === E.c.BELOW_THE_FOLD),
+				P = (e, t, r) => !!r && (!(window.aax && window.aax.getAbpStatus && window.aax.getAbpStatus()) && (t === E.c.BELOW_THE_FOLD || t === E.c.ABOVE_THE_FOLD && u.a.dfpRefreshAtfSlotTestSubreddits.has(e.toLowerCase()))),
 				k = (e, t, r) => {
 					let n = "";
 					return t && (n += "overlay-"), n += "sidebar-".concat(e), null != r && (n += "-".concat(r)), n
@@ -388,7 +388,7 @@
 						forcePlaceholder: p,
 						forceHouseAd: h,
 						waitForProgrammatic: f,
-						IsSubredditOrCommentsPage: y,
+						isSubredditOrCommentsPage: y,
 						removeSidebarSpacer: x
 					} = this.props, g = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
@@ -422,7 +422,7 @@
 						placementIndex: a
 					}), c.a.createElement(N, {
 						id: k(d, s, a),
-						isRefreshableAd: P(d, y),
+						isRefreshableAd: P(o, d, y),
 						incrementRefreshCounter: this.incrementRefreshCounter,
 						sizes: l,
 						placement: d,
@@ -434,7 +434,7 @@
 					})))
 				}
 			}
-			t.a = w(T)
+			t.a = j(T)
 		},
 		"./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx": function(e, t, r) {
 			"use strict";
@@ -556,7 +556,7 @@
 			r.d(t, "b", (function() {
 				return A
 			})), r.d(t, "a", (function() {
-				return w
+				return j
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./node_modules/react/index.js"),
@@ -613,7 +613,7 @@
 					className: E.a.errorMsg
 				}, e.errorMsg || n.fbt._("Something went wrong.", null, {
 					hk: "pHwDP"
-				})) : a.a.createElement(a.a.Fragment, null, e.communities.map(t => a.a.createElement(w, _({
+				})) : a.a.createElement(a.a.Fragment, null, e.communities.map(t => a.a.createElement(j, _({
 					key: t.name
 				}, t, {
 					getSubscribeEventFactory: e.getSubscribeEventFactoryHandler ? e.getSubscribeEventFactoryHandler(t) : void 0,
@@ -632,10 +632,10 @@
 					className: E.a.bottomButton,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
-				j = Object(d.c)({
+				w = Object(d.c)({
 					hideNSFWPref: O.z
 				}),
-				w = Object(i.b)(j)(e => a.a.createElement("div", {
+				j = Object(i.b)(w)(e => a.a.createElement("div", {
 					className: E.a.communityItemContainer
 				}, a.a.createElement(g.a, {
 					widthRight: b.t
@@ -861,4 +861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.b72760e59aeabdb70160.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.4fe701d5a2f51847fcfe.js.map
