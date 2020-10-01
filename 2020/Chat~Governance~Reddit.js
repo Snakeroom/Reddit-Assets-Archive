@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7beb33d10e9b9c736c6f.js
-// Retrieved at 9/30/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b8b5eb263b5f9d82260c.js
+// Retrieved at 10/1/2020, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1616,11 +1616,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("113785"),
+				buildNumber: r("113851"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1601505266"),
+				})("1601582782"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3424,14 +3424,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("edcb556-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("5c5180d-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "edcb556-production",
+						release: "5c5180d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3861,7 +3861,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "edcb556-production",
+							releaseClient: "5c5180d-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -6357,17 +6357,17 @@
 			})), i.d(t, "yc", (function() {
 				return Qt
 			})), i.d(t, "U", (function() {
-				return ei
-			})), i.d(t, "l", (function() {
 				return ti
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "l", (function() {
 				return ii
-			})), i.d(t, "db", (function() {
+			})), i.d(t, "e", (function() {
 				return ni
-			})), i.d(t, "Ac", (function() {
+			})), i.d(t, "db", (function() {
 				return ri
-			})), i.d(t, "vb", (function() {
+			})), i.d(t, "Ac", (function() {
 				return si
+			})), i.d(t, "vb", (function() {
+				return oi
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			const n = "typeahead_redesign",
@@ -6449,7 +6449,7 @@
 				e.Control1 = "control_1", e.Control2 = "control_2"
 			}(Se || (Se = {}));
 			const Fe = e => e === Se.Control1 || e === Se.Control2;
-			var Ee, Ie, Oe, je, Be, xe, Re, ke, Ne, Ce, Pe, Le, Ae, De, Ge, Me, Ue, qe, Ve, We, He, ze, Ke, Qe, Je, Ye, Xe, Ze, $e, et, tt, it, nt, rt, st, ot, dt, lt, at, ut, ct, _t, mt, pt, ht, gt, ft, bt, wt, yt, vt, Tt, St, Ft, Et, It, Ot, jt, Bt, xt, Rt, kt, Nt, Ct, Pt, Lt, At, Dt, Gt, Mt, Ut, qt, Vt, Wt, Ht, zt, Kt, Qt, Jt, Yt, Xt, Zt, $t, ei, ti;
+			var Ee, Ie, Oe, je, Be, xe, Re, ke, Ne, Ce, Pe, Le, Ae, De, Ge, Me, Ue, qe, Ve, We, He, ze, Ke, Qe, Je, Ye, Xe, Ze, $e, et, tt, it, nt, rt, st, ot, dt, lt, at, ut, ct, _t, mt, pt, ht, gt, ft, bt, wt, yt, vt, Tt, St, Ft, Et, It, Ot, jt, Bt, xt, Rt, kt, Nt, Ct, Pt, Lt, At, Dt, Gt, Mt, Ut, qt, Vt, Wt, Ht, zt, Kt, Qt, Jt, Yt, Xt, Zt, $t, ei, ti, ii;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(Ee || (Ee = {})),
@@ -6704,13 +6704,16 @@
 			}(ei || (ei = {})),
 			function(e) {
 				e.Enabled = "enabled"
-			}(ti || (ti = {}));
-			const ii = {
-					[Te]: [ti.Enabled],
-					[ve]: [ei.Enabled],
-					[ye]: [$t.Enabled],
-					[we]: [Zt.Enabled],
-					[be]: [Xt.Enabled],
+			}(ti || (ti = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(ii || (ii = {}));
+			const ni = {
+					[Te]: [ii.Enabled],
+					[ve]: [ti.Enabled],
+					[ye]: [ei.Enabled],
+					[we]: [$t.Enabled],
+					[be]: [Zt.Enabled],
 					[he]: [Qt.Enabled],
 					[pe]: [Kt.RulesAndWarnings, Kt.WarningsOnly],
 					[fe]: [Yt.Enabled],
@@ -6743,6 +6746,7 @@
 					[H]: [Ce.Variant1, Ce.Variant2, Ce.Variant3],
 					[C]: [vt.Enabled, vt.VariantA, vt.VariantB],
 					[N]: [yt.Prompt, yt.Survey],
+					econ_predictions_web: [Xt.Enabled],
 					[x]: [ft.Enabled],
 					[B]: [gt.BufferTwoSeconds, gt.BufferFiveSeconds, gt.BufferTenSeconds],
 					polls_ga: [ht.Enabled],
@@ -6785,9 +6789,9 @@
 					[k]: [wt.Enabled],
 					[ge]: [Jt.Enabled]
 				},
-				ni = new Set([F, l, I, U, Z, de, le, _e, ge]),
-				ri = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
-				si = ri(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"])
+				ri = new Set([F, l, I, U, Z, de, le, _e, ge]),
+				si = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
+				oi = si(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"])
 		},
 		"./src/reddit/constants/featureThrottling.ts": function(e, t, i) {
 			"use strict";
@@ -22666,4 +22670,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7beb33d10e9b9c736c6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b8b5eb263b5f9d82260c.js.map
