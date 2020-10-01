@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.19ebdbffc2c6494acacb.js
-// Retrieved at 10/1/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.83f01e9386c969d8480f.js
+// Retrieved at 10/1/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -11705,7 +11705,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.Bc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.zc)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -11735,7 +11735,7 @@
 						post: i,
 						shouldShowSubredditUpsell: c,
 						subredditOrProfile: d
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Bc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.zc)(o), p = i && i.id;
 					return s || n || t || l || !c ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(h.a, {
@@ -18565,7 +18565,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.D
 				});
-				return !!t && !Object(n.Bc)(t)
+				return !!t && !Object(n.zc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -18580,7 +18580,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.V
 				});
-				return !(!t || Object(n.Bc)(t))
+				return !(!t || Object(n.zc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -18597,4 +18597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.19ebdbffc2c6494acacb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.83f01e9386c969d8480f.js.map
