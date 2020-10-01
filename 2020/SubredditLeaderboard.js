@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.32921783d56a6679f998.js
-// Retrieved at 10/1/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e1ebb51111d61c83179e.js
+// Retrieved at 10/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, s) {
@@ -1265,8 +1265,8 @@
 				R = s("./src/reddit/selectors/subredditLeaderboard.ts"),
 				D = s("./src/reddit/selectors/user.ts");
 			const M = 25,
-				H = .5,
-				A = Object(d.c)({
+				A = .5,
+				H = Object(d.c)({
 					hasPreviousPage: (e, t) => {
 						let {
 							categoryId: s
@@ -1288,7 +1288,7 @@
 					},
 					subreddits: B.Z
 				}),
-				G = Object(i.b)(A, e => ({
+				G = Object(i.b)(H, e => ({
 					fetchMoreSubreddits: (t, s) => e(Object(P.a)(t, s))
 				}));
 			class Q extends o.a.Component {
@@ -1356,7 +1356,7 @@
 						className: C.a.subredditRankingsList
 					}, n ? this.renderSubredditRankItems(d) : this.renderSubredditRankItemPlaceholders(), a && o.a.createElement(v.a, {
 						onChange: this.fetchMoreSubreddits,
-						threshold: H,
+						threshold: A,
 						rootMargin: "0px 0px 0px 0px"
 					}, o.a.createElement("li", null, o.a.createElement(F.a, {
 						large: !0
@@ -1552,7 +1552,7 @@
 					} = t;
 					return Object(h.b)(s.params.categoryName || "")
 				},
-				_e = Object(u.yc)(p.f),
+				_e = Object(u.Ac)(p.f),
 				xe = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: _e
@@ -1643,4 +1643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.32921783d56a6679f998.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e1ebb51111d61c83179e.js.map

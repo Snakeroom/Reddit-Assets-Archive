@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.caaf89ecc4d37663a81a.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.3a8f7f86efb3d9f0474a.js
+// Retrieved at 10/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./node_modules/lodash/_baseRange.js": function(e, s) {
@@ -201,11 +201,11 @@
 				})),
 				B = t("./src/reddit/helpers/trackers/contentTag.ts"),
 				F = t("./src/reddit/hooks/useGqlContext.ts");
-			var V, _ = t("./src/reddit/hooks/useTracking.ts");
+			var V, H = t("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
 			}(V || (V = {}));
-			var H = t("./src/reddit/models/Toast/index.ts"),
+			var _ = t("./src/reddit/models/Toast/index.ts"),
 				z = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./node_modules/lodash/mapValues.js")),
 				S = t.n(z),
 				O = t("./src/reddit/controls/CheckboxInput/index.tsx");
@@ -289,7 +289,7 @@
 				}, {
 					surveyState: U.Intro,
 					activeSlide: 0
-				}), L = p[E - 1], M = Object(_.a)();
+				}), L = p[E - 1], M = Object(H.a)();
 				Object(l.useEffect)(() => {
 					switch (E) {
 						case 0:
@@ -331,7 +331,7 @@
 				Object(l.useEffect)(() => {
 					j && (x.c.captureException(j), h(Object(C.e)(Object(C.d)(I._("An error occurred", null, {
 						hk: "1VDETi"
-					}), H.b.Error))))
+					}), _.b.Error))))
 				}, [j, h]);
 				const [b, k] = Object(l.useState)(null);
 				if (!c) return null;
@@ -381,7 +381,7 @@
 								}
 							}), h(Object(C.e)(Object(C.d)(I._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), H.b.SuccessCommunityGreen))), h({
+							}), _.b.SuccessCommunityGreen))), h({
 								type: g.b,
 								payload: {
 									id: n,
@@ -2781,43 +2781,6 @@
 				fill: "inherit"
 			}))
 		},
-		"./src/reddit/icons/svgs/Notify/index.m.less": function(e, s, t) {
-			e.exports = {
-				icon: "_7fz7O_5kpe94rgtJU-zES"
-			}
-		},
-		"./src/reddit/icons/svgs/Notify/index.tsx": function(e, s, t) {
-			"use strict";
-			var a = t("./node_modules/react/index.js"),
-				n = t.n(a),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/constants/colors.ts"),
-				r = t("./src/reddit/icons/svgs/Notify/index.m.less"),
-				l = t.n(r);
-			s.a = e => n.a.createElement("svg", {
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 -1 23 20",
-				className: Object(c.a)(l.a.icon, e.className)
-			}, n.a.createElement("g", {
-				fillRule: "evenodd"
-			}, n.a.createElement("polygon", {
-				fill: "none",
-				points: "0 20 20 20 20 .001 0 .001"
-			}), n.a.createElement("path", {
-				fill: "inherit",
-				d: "M17.0066821,15.4208756 C17.3661858,15.7881442 17.1117467,16.4167476 16.6028685,16.4167476 L3.3720345,16.4167476 C2.86361308,16.4167476 2.60871716,15.7881442 2.9682209,15.4208756 L2.99106104,15.3975421 C3.81467634,14.5561376 4.27741749,13.4146649 4.27741749,12.2246585 L4.27741749,8.19170369 C4.27741749,5.37768868 6.24806442,3.03500952 8.85595115,2.52214012 C8.85275353,2.48713993 8.84544468,2.45307308 8.84544468,2.41667289 C8.84544468,1.77266945 9.35660693,1.25 9.98745148,1.25 C10.618296,1.25 11.1294583,1.77266945 11.1294583,2.41667289 C11.1294583,2.45307308 11.1221494,2.48713993 11.1189518,2.52214012 C13.7268385,3.03500952 15.6974855,5.37768868 15.6974855,8.19170369 L15.6974855,12.2246585 C15.6974855,13.4146649 16.1602266,14.5561376 16.9838419,15.3975421 L17.0066821,15.4208756 Z M9.98754284,18.75 C9.05109727,18.75 8.24758128,18.1736636 7.89492959,17.3499925 L12.0801561,17.3499925 C11.7275044,18.1736636 10.9239884,18.75 9.98754284,18.75 Z"
-			}), n.a.createElement("circle", {
-				cx: "18",
-				cy: "3",
-				r: "5",
-				fill: e.isUnread ? "white" : "none"
-			}), n.a.createElement("circle", {
-				cx: "18",
-				cy: "3",
-				r: "4",
-				fill: e.isUnread ? i.a.orangered : "none"
-			})))
-		},
 		"./src/reddit/icons/svgs/Nsfw/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
@@ -4248,4 +4211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.caaf89ecc4d37663a81a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.3a8f7f86efb3d9f0474a.js.map

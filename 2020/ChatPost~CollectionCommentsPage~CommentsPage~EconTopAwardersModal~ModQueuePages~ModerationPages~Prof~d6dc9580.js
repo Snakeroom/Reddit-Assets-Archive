@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ade3f3b2cdac47da3038.js
-// Retrieved at 10/1/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.1e429f05d33966ecc171.js
+// Retrieved at 10/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -968,7 +968,7 @@
 							experimentEligibilitySelector: _.H,
 							experimentName: C.ab
 						});
-						return !(!t || Object(C.zc)(t))
+						return !(!t || Object(C.Bc)(t))
 					},
 					isLoggedIn: _.H,
 					prefersReducedAnimations: P.c
@@ -2470,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.ade3f3b2cdac47da3038.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.1e429f05d33966ecc171.js.map

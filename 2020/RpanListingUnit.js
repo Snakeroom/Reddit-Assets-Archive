@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.d6185d04d131b0aef723.js
-// Retrieved at 10/1/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.92f5e88a6c603ecb1313.js
+// Retrieved at 10/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const m = Object(n.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: h.ub
+					experimentName: h.wb
 				});
-				return Object(h.zc)(t) ? void 0 : t
+				return Object(h.Bc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: h.vb
+					experimentName: h.xb
 				});
-				return Object(h.zc)(t) ? void 0 : t
-			}, (e, t) => e === h.wb.Enabled && t === h.wb.Enabled);
+				return Object(h.Bc)(t) ? void 0 : t
+			}, (e, t) => e === h.yb.Enabled && t === h.yb.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "c069d3c-production"
+					SENTRY_RELEASE_VERSION: "1d30f1b-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -1129,8 +1129,8 @@
 				F = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				W = s("./src/reddit/components/Flatlist/index.tsx"),
 				B = s("./src/reddit/components/Flatlist/constants.ts"),
-				z = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				K = s("./src/reddit/components/HlsVideo/index.tsx"),
+				K = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
+				z = s("./src/reddit/components/HlsVideo/index.tsx"),
 				G = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				Y = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				J = s("./src/reddit/components/PostLeftRail/index.tsx"),
@@ -1147,7 +1147,7 @@
 				ae = s.n(re);
 			const {
 				fbt: ne
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), oe = Object(o.a)(K.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), oe = Object(o.a)(z.a, {
 				playerName: "RPAN DU Video Player"
 			}), de = Object(a.b)(() => Object(n.c)({
 				autoplay: U.b,
@@ -1561,7 +1561,7 @@
 						onClick: t,
 						isLoggedIn: s
 					} = e;
-					return r.a.createElement(z.a, {
+					return r.a.createElement(K.a, {
 						displayText: ne._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
@@ -1701,4 +1701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.d6185d04d131b0aef723.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.92f5e88a6c603ecb1313.js.map

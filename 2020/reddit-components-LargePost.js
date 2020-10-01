@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b618c1fe4ff46fb0ab43.js
-// Retrieved at 10/1/2020, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3f6d7f007abe7d2344fa.js
+// Retrieved at 10/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -390,19 +390,19 @@
 					c = t;
 				return i && !i.media ? n.a.createElement(T, {
 					className: c
-				}, n.a.createElement(E, null, n.a.createElement(w, null, n.a.createElement(p.a, d)), M(i), i.source && n.a.createElement(b.a, {
+				}, n.a.createElement(E, null, n.a.createElement(w, null, n.a.createElement(p.a, d)), B(i), i.source && n.a.createElement(b.a, {
 					post: i
 				}), A(e)), F(e)) : n.a.createElement(C, {
 					className: c
-				}, n.a.createElement(w, null, n.a.createElement(p.a, d)), M(i), B(e), A(e))
+				}, n.a.createElement(w, null, n.a.createElement(p.a, d)), B(i), M(e), A(e))
 			});
-			const M = e => n.a.createElement(k, {
+			const B = e => n.a.createElement(k, {
 					isCrosspost: !0,
 					post: e,
 					shouldLinkWrap: !0,
 					size: u.b.Small
 				}),
-				B = e => {
+				M = e => {
 					const {
 						mediaProps: t,
 						post: s
@@ -535,8 +535,8 @@
 				N = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
 				L = s("./src/reddit/components/Flatlist/index.tsx"),
 				I = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				M = s("./src/reddit/components/ModModeReports/index.tsx"),
-				B = s("./src/reddit/components/ModModeReports/helpers.ts"),
+				B = s("./src/reddit/components/ModModeReports/index.tsx"),
+				M = s("./src/reddit/components/ModModeReports/helpers.ts"),
 				A = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				R = s("./src/reddit/components/PostContainer/index.tsx"),
 				F = s("./src/reddit/components/PostLeftRail/index.tsx"),
@@ -690,7 +690,7 @@
 						showEditFlair: ve,
 						subredditOrProfile: ge,
 						userIsOp: Pe
-					} = e, fe = !!e.redditStyle || !!e["data-redditstyle"], ye = fe ? void 0 : p, Oe = Object(c.a)(re), Ce = ne && Oe, we = Object(a.a)(re), ke = Object(d.a)(re), Se = Object(B.c)(me), je = !!me.media && me.media.type === x.o.RTJSON, _e = Pe && je, Te = s ? s - F.a : void 0, Ee = !(C && V || Y), Ne = (e => e === q.Hb.OnlyTitles)(ue) && !Object($.a)(me), Le = (e => e === q.Hb.MediumHeight)(ue) && !Object($.a)(me), Ie = (e => {
+					} = e, fe = !!e.redditStyle || !!e["data-redditstyle"], ye = fe ? void 0 : p, Oe = Object(c.a)(re), Ce = ne && Oe, we = Object(a.a)(re), ke = Object(d.a)(re), Se = Object(M.c)(me), je = !!me.media && me.media.type === x.o.RTJSON, _e = Pe && je, Te = s ? s - F.a : void 0, Ee = !(C && V || Y), Ne = (e => e === q.Jb.OnlyTitles)(ue) && !Object($.a)(me), Le = (e => e === q.Jb.MediumHeight)(ue) && !Object($.a)(me), Ie = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -705,7 +705,7 @@
 							hasBottomCompactPostStyles: n,
 							showPinnnedHeader: r
 						}
-					})(e), Me = !!te && !Object(q.zc)(te), Be = (!f || Me) && !me.isSponsored, Ae = Object(w.s)(me, P), {
+					})(e), Be = !!te && !Object(q.Bc)(te), Me = (!f || Be) && !me.isSponsored, Ae = Object(w.s)(me, P), {
 						source: Re
 					} = Ae, Fe = r.a.createElement(R.a, {
 						className: Object(k.a)(pe.a.container, n, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -754,7 +754,7 @@
 						listingKey: se,
 						post: me,
 						shouldShowSubscribeButton: Ee,
-						showSubreddit: Be,
+						showSubreddit: Me,
 						showSubredditIcon: !0,
 						subredditOrProfile: ge
 					}), r.a.createElement(G.c, {
@@ -788,7 +788,7 @@
 					}, r.a.createElement(j.a, {
 						post: me,
 						adLinkContent: Ae
-					})), ne && Oe && Se && r.a.createElement(M.a, {
+					})), ne && Oe && Se && r.a.createElement(B.a, {
 						onIgnoreReports: ae,
 						reportable: me
 					}), r.a.createElement(I.d, {
@@ -1104,24 +1104,24 @@
 					post: N,
 					shouldShowSubscribeButton: L,
 					showCornerOutboundLink: I,
-					showSubreddit: M,
-					showSubredditIcon: B,
+					showSubreddit: B,
+					showSubredditIcon: M,
 					subredditOrProfile: A
 				} = e, R = o || T;
 				return r.a.createElement(y, {
 					className: t
-				}, M && A && r.a.createElement("div", {
+				}, B && A && r.a.createElement("div", {
 					className: f.a.subredditIconWrapper
 				}, r.a.createElement(m.a, {
 					"data-click-id": "subreddit",
 					to: A.url
-				}, B && r.a.createElement(l.b, {
+				}, M && r.a.createElement(l.b, {
 					className: Object(n.a)(f.a.subredditIcon, C),
 					shouldHideNsfwIcon: P,
 					subredditOrProfile: A
 				}))), r.a.createElement("div", {
 					className: f.a.everythingElseWrapper
-				}, M && r.a.createElement(a.h, {
+				}, B && r.a.createElement(a.h, {
 					type: N.belongsTo.type,
 					id: N.belongsTo.id
 				}), r.a.createElement(c.d, {
@@ -1129,7 +1129,7 @@
 					flairStyleTemplate: s,
 					tooltipType: _ ? c.c.Lightbox : void 0,
 					post: N,
-					showSub: M,
+					showSub: B,
 					subredditOrProfile: A
 				}), r.a.createElement(d.a, {
 					className: f.a.postBadges,
@@ -1142,7 +1142,7 @@
 					isPostDetail: k,
 					thing: N,
 					tooltipType: _ ? c.c.Lightbox : void 0
-				})), A && M && L && !j && r.a.createElement(p.a, {
+				})), A && B && L && !j && r.a.createElement(p.a, {
 					getEventFactory: e => Object(x.f)(N.id, e ? "unsubscribe" : "subscribe", "post", E, O),
 					identifier: {
 						name: A.name,
@@ -1291,9 +1291,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.V
 				});
-				return !(!t || Object(o.zc)(t))
+				return !(!t || Object(o.Bc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b618c1fe4ff46fb0ab43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3f6d7f007abe7d2344fa.js.map
