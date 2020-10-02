@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.35c40c55a110ff59bd0f.js
-// Retrieved at 10/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4e085d7a3fb69289882b.js
+// Retrieved at 10/1/2020, 8:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -21019,7 +21019,7 @@
 					if (o.ok && o.body && o.body.success) {
 						e && (Object(G.a)(Object(x.f)(e)(u)), ge(t, u));
 						const s = Object(L.a)(u),
-							n = s === l.g || s === l.n ? l.n : l.c;
+							n = s === l.g || s === l.o ? l.o : l.c;
 						t(Object(c.i)(n))
 					} else t(Object(d.e)({
 						duration: d.a,
@@ -21804,43 +21804,46 @@
 				return r
 			})), s.d(t, "g", (function() {
 				return a
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "o", (function() {
 				return i
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "h", (function() {
 				return c
 			})), s.d(t, "l", (function() {
 				return o
 			})), s.d(t, "m", (function() {
 				return d
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "n", (function() {
 				return u
 			})), s.d(t, "i", (function() {
 				return l
 			})), s.d(t, "j", (function() {
 				return b
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "k", (function() {
 				return p
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return O
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return g
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "e", (function() {
 				return f
+			})), s.d(t, "f", (function() {
+				return m
 			}));
 			const n = "change_email_modal_id",
 				r = "check_email_modal_id",
 				a = "set_email_modal_id",
 				i = "verify_email_modal_id",
-				c = "reset_pw_sso_email_modal_id",
-				o = "reset_pw_sso_google_link_modal_id",
-				d = "reset_pw_sso_google_unlink_modal_id",
-				u = "reset_pw_sso_apple_link_modal_id",
-				l = "reset_pw_sso_apple_unlink_modal_id",
-				b = "reset_pw_sso_deactivate_account_modal_id",
-				p = "change_username_modal_id",
-				O = "confirm_save_username_modal_id",
-				g = "intercept_action_modal_id",
-				f = "second_confirm_keep_username_modal_id"
+				c = "reset_pw_sso_2fa_modal_id",
+				o = "reset_pw_sso_email_modal_id",
+				d = "reset_pw_sso_google_link_modal_id",
+				u = "reset_pw_sso_google_unlink_modal_id",
+				l = "reset_pw_sso_apple_link_modal_id",
+				b = "reset_pw_sso_apple_unlink_modal_id",
+				p = "reset_pw_sso_deactivate_account_modal_id",
+				O = "change_username_modal_id",
+				g = "confirm_save_username_modal_id",
+				f = "intercept_action_modal_id",
+				m = "second_confirm_keep_username_modal_id"
 		},
 		"./src/reddit/components/TrackingHelper/index.tsx": function(e, t, s) {
 			"use strict";
@@ -56206,4 +56209,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.35c40c55a110ff59bd0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4e085d7a3fb69289882b.js.map

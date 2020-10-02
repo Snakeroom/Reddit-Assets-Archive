@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.77fdf83b7ad0e4aefc11.js
-// Retrieved at 10/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.02f7dd959a9bbe6346a0.js
+// Retrieved at 10/1/2020, 8:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -3844,7 +3844,7 @@
 				ne = Object(r.b)(te, e => ({
 					changeLanguage: t => e(Object(E.v)(t)),
 					openChangeEmailModal: () => e(Object(_.i)(Z.a)),
-					openSSOCreatePasswordForEmailModal: () => e(Object(_.h)(Z.k)),
+					openSSOCreatePasswordForEmailModal: () => e(Object(_.h)(Z.l)),
 					resendEmail: () => e(Object(k.v)())
 				})),
 				se = e => {
@@ -3987,8 +3987,8 @@
 				shouldShowSSOCreatePasswordModal: S.e
 			});
 			var je = Object(r.b)(Se, e => ({
-					openSSOCreatePasswordForLinkAppleModal: () => e(Object(_.h)(Z.h)),
-					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(_.h)(Z.i)),
+					openSSOCreatePasswordForLinkAppleModal: () => e(Object(_.h)(Z.i)),
+					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(_.h)(Z.j)),
 					openLinkAppleSSOModal: () => e(Object(y.f)()),
 					openUnlinkAppleSSOModal: () => e(Object(y.j)())
 				}))(e => {
@@ -4051,8 +4051,8 @@
 				shouldShowSSOCreatePasswordModal: S.e
 			});
 			var Le = Object(r.b)(Be, e => ({
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(Z.l)),
-					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(_.h)(Z.m)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(Z.m)),
+					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(_.h)(Z.n)),
 					openLinkGoogleSSOModal: () => e(Object(y.g)()),
 					openUnlinkGoogleSSOModal: () => e(Object(y.k)())
 				}))(e => {
@@ -4219,7 +4219,7 @@
 					deactivate: t => {
 						e(Object(k.u)(t))
 					},
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(Z.j)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(_.h)(Z.k)),
 					optOut: async () => {
 						if ("new.reddit.com" === window.location.host) return window.location.assign("https://old.reddit.com/prefs");
 						f.a.get("rseor3") && f.a.remove("rseor3", {
@@ -5711,11 +5711,13 @@
 					chatSettings: e => e.user.chatSettings,
 					whitelist: e => e.user.whitelist.data,
 					whitelistApi: e => e.user.whitelist.api,
-					shouldShowLocationBasedSetting: O.d.privacySettingLocationBasedRecommendations
+					shouldShowLocationBasedSetting: O.d.privacySettingLocationBasedRecommendations,
+					shouldShowSSOCreatePasswordModal: S.e
 				});
 			var na = Object(r.b)(ta, (e, t) => ({
 					addBlocked: t => e(Object(xt.h)(t)),
 					addWhitelisted: t => e(Object(Et.g)(t)),
+					openSSOCreatePasswordFor2FAModal: () => e(Object(_.h)(Z.h)),
 					removeWhitelisted: t => e(Object(Et.h)(t)),
 					removeBlocked: t => e(Object(xt.g)(t)),
 					saveChatSettings: t => e(Object(Ct.c)(t)),
@@ -5741,9 +5743,11 @@
 						disable2FA: g,
 						generateBackupCodes: f,
 						isResponsiveSettingsEnabled: v,
-						removeBlocked: y,
-						update: _,
-						shouldShowLocationBasedSetting: k
+						openSSOCreatePasswordFor2FAModal: y,
+						removeBlocked: _,
+						update: k,
+						shouldShowLocationBasedSetting: C,
+						shouldShowSSOCreatePasswordModal: x
 					} = e;
 					return o.a.createElement(ie.a, null, o.a.createElement(re.b, {
 						isResponsiveSettingsEnabled: v
@@ -5772,7 +5776,7 @@
 							hk: "2OeU8N"
 						}),
 						add: t,
-						remove: y,
+						remove: _,
 						list: n,
 						api: a,
 						padBottom: !0
@@ -5780,7 +5784,7 @@
 						hk: "30eaw9"
 					})), o.a.createElement(Q.o, {
 						on: !i,
-						onClick: () => _(!i, "hideFromRobots"),
+						onClick: () => k(!i, "hideFromRobots"),
 						label: s.fbt._("Show up in search results", null, {
 							hk: "3TWi4z"
 						}),
@@ -5789,7 +5793,7 @@
 						})
 					}), o.a.createElement(Q.o, {
 						on: r,
-						onClick: () => _(!r, "allowClickTracking"),
+						onClick: () => k(!r, "allowClickTracking"),
 						label: s.fbt._("Personalize all of Reddit based on the outbound links you click on", null, {
 							hk: "21vbvn"
 						}),
@@ -5798,7 +5802,7 @@
 						})
 					}), o.a.createElement(Q.o, {
 						on: c,
-						onClick: () => _(!c, "activityRelevantAds"),
+						onClick: () => k(!c, "activityRelevantAds"),
 						label: s.fbt._("Personalize ads based on your Reddit activity", null, {
 							hk: "OqV13"
 						}),
@@ -5807,7 +5811,7 @@
 						})
 					}), o.a.createElement(Q.o, {
 						on: d,
-						onClick: () => _(!d, "thirdPartyDataPersonalizedAds"),
+						onClick: () => k(!d, "thirdPartyDataPersonalizedAds"),
 						label: s.fbt._("Personalize ads based on information from our partners", null, {
 							hk: "4pLCAq"
 						}),
@@ -5816,16 +5820,16 @@
 						})
 					}), o.a.createElement(Q.o, {
 						on: u,
-						onClick: () => _(!u, "thirdPartySiteDataPersonalizedAds"),
+						onClick: () => k(!u, "thirdPartySiteDataPersonalizedAds"),
 						label: s.fbt._("Personalize ads based on your activity with our partners", null, {
 							hk: "3uQVuS"
 						}),
 						subtext: s.fbt._("Allow us to use your interactions with sites and apps we partner with to show you better ads.", null, {
 							hk: "2T8SXc"
 						})
-					}), k && o.a.createElement(Q.o, {
+					}), C && o.a.createElement(Q.o, {
 						on: b,
-						onClick: () => _(!b, "showLocationBasedRecommendations"),
+						onClick: () => k(!b, "showLocationBasedRecommendations"),
 						label: s.fbt._("Personalize recommendations based on your general location", null, {
 							hk: "2ila4i"
 						}),
@@ -5834,7 +5838,7 @@
 						})
 					}), o.a.createElement(Q.o, {
 						on: p,
-						onClick: () => _(!p, "thirdPartySiteDataPersonalizedContent"),
+						onClick: () => k(!p, "thirdPartySiteDataPersonalizedContent"),
 						label: s.fbt._("Personalize recommendations based on your activity with our partners", null, {
 							hk: "2D9ITr"
 						}),
@@ -5846,7 +5850,9 @@
 						hk: "3H7FJN"
 					})), o.a.createElement(Q.o, {
 						on: l,
-						onClick: () => l ? g() : h(),
+						onClick: () => {
+							x ? y() : l ? g() : h()
+						},
 						label: s.fbt._("Use two-factor authentication", null, {
 							hk: "2OxNGe"
 						}),
@@ -5869,6 +5875,8 @@
 						}),
 						link: "".concat(pe.a.redditUrl, "/prefs/apps"),
 						last: !0
+					}), x && o.a.createElement(oe.a, {
+						isResponsiveSettingsEnabled: v
 					}))
 				}),
 				sa = n("./src/reddit/components/Loader/index.m.less"),
@@ -6893,4 +6901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.77fdf83b7ad0e4aefc11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.02f7dd959a9bbe6346a0.js.map

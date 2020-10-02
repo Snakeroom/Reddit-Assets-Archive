@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.b1219300d991b4db48a9.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.78fa33b41cfdc5d078ea.js
+// Retrieved at 10/1/2020, 8:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, s) {
@@ -408,7 +408,7 @@
 					isEmailPermissionRequired: z.f,
 					isResponsiveSettingsEnabled: ee.a,
 					setEmailModalOpen: Object($.b)(A.g),
-					verifyEmailModalOpen: Object($.b)(A.n)
+					verifyEmailModalOpen: Object($.b)(A.o)
 				}),
 				ne = Object(o.b)(ae, (e, t) => {
 					let {
@@ -419,7 +419,7 @@
 							s && e(Object(d.b)()), e(Object(m.g)(A.a))
 						},
 						closeSetEmailModal: () => e(Object(c.b)()),
-						closeVerifyEmailModal: () => e(Object(m.g)(A.n)),
+						closeVerifyEmailModal: () => e(Object(m.g)(A.o)),
 						toggleCheckEmailModal: () => e(Object(m.i)(A.c))
 					}
 				}),
@@ -1045,4 +1045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.b1219300d991b4db48a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.78fa33b41cfdc5d078ea.js.map
