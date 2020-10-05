@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9c78267399e3f5aa161f.js
-// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.f0ee0cba3eb8a2892f57.js
+// Retrieved at 10/5/2020, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1326,7 +1326,7 @@
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/lib/pageTitle.ts"),
-				a = s("./src/reddit/actions/category.ts"),
+				a = s("./src/reddit/actions/category/index.ts"),
 				r = s("./src/reddit/actions/modal.ts"),
 				o = s("./src/reddit/actions/platform.ts"),
 				i = s("./src/reddit/actions/subreddit/topSubreddits.ts"),
@@ -1350,7 +1350,7 @@
 						i = a && Object(u.b)(a);
 					await t(v(i))
 				}, v = e => async (t, s) => {
-					await t(Object(a.h)());
+					await t(Object(a.a)());
 					const n = s(),
 						r = Object(h.I)(n);
 					if (Object(b.a)(n, e)) return;
@@ -1365,6 +1365,30 @@
 						}))(d, g(e, r)),
 						f = Object(b.d)(d, e);
 					await Promise.all([t(Object(i.a)(u, f)), t(Object(c.r)())])
+				}
+		},
+		"./src/reddit/actions/publicAccessNetwork/userSettings.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "b", (function() {
+				return c
+			})), s.d(t, "a", (function() {
+				return d
+			}));
+			var n = s("./src/lib/makeActionCreator/index.ts"),
+				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				r = s("./src/reddit/constants/localStorage.ts"),
+				o = s("./src/reddit/helpers/localStorage/index.ts");
+			const i = Object(n.a)(a.C),
+				c = e => async t => {
+					await t(i(e)), t(u())
+				}, d = () => async e => {
+					const t = l();
+					t && e(i(t))
+				}, l = () => {
+					return Object(o.o)(r.C) || void 0
+				}, u = () => async (e, t) => {
+					const s = t().publicAccessNetwork.userSettings;
+					Object(o.Z)(r.C, s)
 				}
 		},
 		"./src/reddit/actions/shortcuts/close.ts": function(e, t, s) {
@@ -12095,9 +12119,20 @@
 					}
 				};
 			var xs = s("./src/reddit/singleton/EventSystem.ts"),
-				Ps = s("./src/reddit/actions/global.ts");
+				Ps = s("./src/lib/initializeClient/installReducer.ts"),
+				Es = s("./src/reddit/reducers/features/categories/index.ts"),
+				js = s("./src/lib/makeActionCreator/index.ts"),
+				Ss = s("./src/lib/sentry/index.ts"),
+				ws = s("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
+				_s = s("./src/reddit/actions/global/constants.ts");
+			Object(Ps.a)({
+				features: {
+					categories: Es.a
+				}
+			});
+			const ks = Object(js.a)(_s.a);
 			Object(a.e)(a.b.EntryPointStart);
-			const Es = Object(S.a)({
+			const Ms = Object(S.a)({
 					actionDispatchers: {
 						reddaidReceived: z.s,
 						loidReceived: z.q,
@@ -12119,20 +12154,20 @@
 					onBeforeRequestFactory: ts.a,
 					statsAppName: g.l.Redesign
 				}),
-				js = Object(w.a)(Es.apiContext),
-				Ss = et();
-			let ws;
+				Is = Object(w.a)(Ms.apiContext),
+				Ns = et();
+			let Ts;
 			Object(O.a)({
 				reducerMap: gs.a,
 				routes: fs.a,
-				apiContext: Es.apiContext,
-				gqlContext: js.gqlContext,
+				apiContext: Ms.apiContext,
+				gqlContext: Is.gqlContext,
 				appFactory: (e, t) => u.a.createElement(Ze.a.Provider, {
-					value: Ss.broadcaster
+					value: Ns.broadcaster
 				}, u.a.createElement(Ke.a.Provider, {
 					value: {
-						apiContext: Es.apiContext,
-						gqlContext: js.gqlContext
+						apiContext: Ms.apiContext,
+						gqlContext: Is.gqlContext
 					}
 				}, u.a.createElement(Ye.b, null, u.a.createElement(Ie, {
 					ok: !0,
@@ -12142,7 +12177,7 @@
 				appName: g.l.Redesign,
 				history: Object(i.a)({
 					getUserConfirmation(e, t) {
-						const s = ws;
+						const s = Ts;
 						if (!s) return;
 						s.dispatch(Object(B.k)({
 							allowNavigationCallback: function() {
@@ -12154,9 +12189,9 @@
 				}),
 				customMiddleware: [p.a.withExtraArgument({
 					routes: fs.a,
-					apiContext: Es.apiContext,
-					gqlContext: js.gqlContext
-				}), Ss.middleware, ct, Es.middleware, js.middleware, St, ft, _t, zt, xt, Et],
+					apiContext: Ms.apiContext,
+					gqlContext: Is.gqlContext
+				}), Ns.middleware, ct, Ms.middleware, Is.middleware, St, ft, _t, zt, xt, Et],
 				modifyInitialData: e => {
 					let {
 						initialData: t,
@@ -12254,7 +12289,7 @@
 						store: d,
 						localStorageData: l
 					} = e;
-					ws = d;
+					Ts = d;
 					t.listen((e, t) => {
 						const s = d.getState(),
 							{
@@ -12284,7 +12319,19 @@
 					}), r.trigger("pageview", {
 						subreddit: m,
 						advertiserCategory: O
-					}), d.dispatch(Object(Ps.b)({
+					}), d.dispatch((e => async (t, s) => {
+						t(Object(ws.a)());
+						const n = s();
+						n.user.loid.loid || n.meta.isBot || Ss.c.withScope(e => {
+							Object(Ss.a)(e, {
+								serverLogging: !1
+							}), Ss.c.captureMessage("User has no LOID set")
+						});
+						const {
+							localStorageData: a
+						} = e;
+						a && t(ks(a))
+					})({
 						localStorageData: l
 					})), Object(vs.f)(u) && Object(L.d)(u), d.dispatch(Object(L.c)()), window.addEventListener("load", () => {
 						const e = d.getState(),
@@ -14474,4 +14521,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9c78267399e3f5aa161f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f0ee0cba3eb8a2892f57.js.map
