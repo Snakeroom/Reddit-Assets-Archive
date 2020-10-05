@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1c865545f613b0cd77a6.js
-// Retrieved at 10/2/2020, 1:30:18 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c7d6e46830879bf6b6fd.js
+// Retrieved at 10/5/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("113904"),
+				buildNumber: r("114035"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1601658452"),
+				})("1601917358"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3428,14 +3428,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("58f9782-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("eb566f3-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "58f9782-production",
+						release: "eb566f3-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3865,7 +3865,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "58f9782-production",
+							releaseClient: "eb566f3-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -19377,10 +19377,10 @@
 			var n = i("./node_modules/thrift/lib/nodejs/lib/thrift/browser.js"),
 				r = n.Thrift,
 				s = (n.Q, i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.ActionInfo = function(e) {
-					this.page_type = null, this.pane_name = null, this.position = null, this.success = null, this.count = null, this.retried = null, this.reason = null, this.setting_value = null, this.type = null, this.relative_position = null, e && (void 0 !== e.page_type && null !== e.page_type && (this.page_type = e.page_type), void 0 !== e.pane_name && null !== e.pane_name && (this.pane_name = e.pane_name), void 0 !== e.position && null !== e.position && (this.position = e.position), void 0 !== e.success && null !== e.success && (this.success = e.success), void 0 !== e.count && null !== e.count && (this.count = e.count), void 0 !== e.retried && null !== e.retried && (this.retried = e.retried), void 0 !== e.reason && null !== e.reason && (this.reason = e.reason), void 0 !== e.setting_value && null !== e.setting_value && (this.setting_value = e.setting_value), void 0 !== e.type && null !== e.type && (this.type = e.type), void 0 !== e.relative_position && null !== e.relative_position && (this.relative_position = e.relative_position))
+					this.page_type = null, this.pane_name = null, this.position = null, this.success = null, this.count = null, this.retried = null, this.reason = null, this.setting_value = null, this.type = null, this.relative_position = null, this.referral_id = null, e && (void 0 !== e.page_type && null !== e.page_type && (this.page_type = e.page_type), void 0 !== e.pane_name && null !== e.pane_name && (this.pane_name = e.pane_name), void 0 !== e.position && null !== e.position && (this.position = e.position), void 0 !== e.success && null !== e.success && (this.success = e.success), void 0 !== e.count && null !== e.count && (this.count = e.count), void 0 !== e.retried && null !== e.retried && (this.retried = e.retried), void 0 !== e.reason && null !== e.reason && (this.reason = e.reason), void 0 !== e.setting_value && null !== e.setting_value && (this.setting_value = e.setting_value), void 0 !== e.type && null !== e.type && (this.type = e.type), void 0 !== e.relative_position && null !== e.relative_position && (this.relative_position = e.relative_position), void 0 !== e.referral_id && null !== e.referral_id && (this.referral_id = e.referral_id))
 				});
 			s.prototype = {}, s.prototype.write = function(e) {
-				e.writeStructBegin("ActionInfo"), null !== this.page_type && void 0 !== this.page_type && (e.writeFieldBegin("page_type", r.Type.STRING, 1), e.writeString(this.page_type), e.writeFieldEnd()), null !== this.pane_name && void 0 !== this.pane_name && (e.writeFieldBegin("pane_name", r.Type.STRING, 2), e.writeString(this.pane_name), e.writeFieldEnd()), null !== this.position && void 0 !== this.position && (e.writeFieldBegin("position", r.Type.I64, 3), e.writeI64(this.position), e.writeFieldEnd()), null !== this.success && void 0 !== this.success && (e.writeFieldBegin("success", r.Type.BOOL, 4), e.writeBool(this.success), e.writeFieldEnd()), null !== this.count && void 0 !== this.count && (e.writeFieldBegin("count", r.Type.I64, 5), e.writeI64(this.count), e.writeFieldEnd()), null !== this.retried && void 0 !== this.retried && (e.writeFieldBegin("retried", r.Type.BOOL, 6), e.writeBool(this.retried), e.writeFieldEnd()), null !== this.reason && void 0 !== this.reason && (e.writeFieldBegin("reason", r.Type.STRING, 7), e.writeString(this.reason), e.writeFieldEnd()), null !== this.setting_value && void 0 !== this.setting_value && (e.writeFieldBegin("setting_value", r.Type.STRING, 8), e.writeString(this.setting_value), e.writeFieldEnd()), null !== this.type && void 0 !== this.type && (e.writeFieldBegin("type", r.Type.STRING, 9), e.writeString(this.type), e.writeFieldEnd()), null !== this.relative_position && void 0 !== this.relative_position && (e.writeFieldBegin("relative_position", r.Type.I64, 10), e.writeI64(this.relative_position), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
+				e.writeStructBegin("ActionInfo"), null !== this.page_type && void 0 !== this.page_type && (e.writeFieldBegin("page_type", r.Type.STRING, 1), e.writeString(this.page_type), e.writeFieldEnd()), null !== this.pane_name && void 0 !== this.pane_name && (e.writeFieldBegin("pane_name", r.Type.STRING, 2), e.writeString(this.pane_name), e.writeFieldEnd()), null !== this.position && void 0 !== this.position && (e.writeFieldBegin("position", r.Type.I64, 3), e.writeI64(this.position), e.writeFieldEnd()), null !== this.success && void 0 !== this.success && (e.writeFieldBegin("success", r.Type.BOOL, 4), e.writeBool(this.success), e.writeFieldEnd()), null !== this.count && void 0 !== this.count && (e.writeFieldBegin("count", r.Type.I64, 5), e.writeI64(this.count), e.writeFieldEnd()), null !== this.retried && void 0 !== this.retried && (e.writeFieldBegin("retried", r.Type.BOOL, 6), e.writeBool(this.retried), e.writeFieldEnd()), null !== this.reason && void 0 !== this.reason && (e.writeFieldBegin("reason", r.Type.STRING, 7), e.writeString(this.reason), e.writeFieldEnd()), null !== this.setting_value && void 0 !== this.setting_value && (e.writeFieldBegin("setting_value", r.Type.STRING, 8), e.writeString(this.setting_value), e.writeFieldEnd()), null !== this.type && void 0 !== this.type && (e.writeFieldBegin("type", r.Type.STRING, 9), e.writeString(this.type), e.writeFieldEnd()), null !== this.relative_position && void 0 !== this.relative_position && (e.writeFieldBegin("relative_position", r.Type.I64, 10), e.writeI64(this.relative_position), e.writeFieldEnd()), null !== this.referral_id && void 0 !== this.referral_id && (e.writeFieldBegin("referral_id", r.Type.STRING, 11), e.writeString(this.referral_id), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			};
 			var o = e.exports.Expand = function(e) {
 				this.provider = null, e && void 0 !== e.provider && null !== e.provider && (this.provider = e.provider)
@@ -21790,7 +21790,8 @@
 				setting_value: e.settingValue,
 				success: e.success,
 				relative_position: e.relativePosition,
-				type: e.type
+				type: e.type,
+				referral_id: e.referralId
 			});
 			var le = i("./src/telemetry/eventSchemas/adblock_types.js");
 			const ae = e => new le.Adblock({
@@ -22690,4 +22691,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1c865545f613b0cd77a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c7d6e46830879bf6b6fd.js.map
