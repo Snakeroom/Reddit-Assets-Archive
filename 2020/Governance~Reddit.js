@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.2b1ff9450ddcb932c72d.js
-// Retrieved at 10/5/2020, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a934223d65b307f33e46.js
+// Retrieved at 10/5/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -11983,7 +11983,7 @@
 								r = Object(g.a)(s.id, n, O.a.Unload);
 							y(s, O.a.Unload, r)
 						})
-					})(s)), v = !0), I.c.has(e.id)) return;
+					})(s)), v = !0), I.c.has(e.id) || e.isBlank) return;
 				I.c.add(e.id);
 				const n = {
 					post: e,
@@ -11991,7 +11991,7 @@
 						t(Ie(e, O.a.Unload))
 					}, I.d)
 				};
-				if (I.a.push(n), I.a.length > 10) {
+				if (I.a.push(n), I.a.length > 5) {
 					const e = I.a.shift();
 					t(Ie(e.post, O.a.Unload)), clearTimeout(e.unloadTimer)
 				}
@@ -20118,7 +20118,7 @@
 			const n = new Set,
 				r = [],
 				a = "AD_UNLOAD",
-				i = 18e5
+				i = 6e5
 		},
 		"./src/reddit/actions/upload.ts": function(e, t, s) {
 			"use strict";
@@ -56063,4 +56063,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2b1ff9450ddcb932c72d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a934223d65b307f33e46.js.map
