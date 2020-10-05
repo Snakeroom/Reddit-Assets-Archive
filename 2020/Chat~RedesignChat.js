@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.204ec88e7d732b30d3ee.js
-// Retrieved at 9/24/2020, 2:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0babbe6075e2de937275.js
+// Retrieved at 10/5/2020, 2:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -3953,7 +3953,6 @@
 				Fa = i.a.span("Info", La.a),
 				Ka = Object(K.a)({
 					channelType: e => Object(y.A)(e, "type"),
-					contacts: e => e.contacts.models,
 					members: (e, t) => t.members || Object(Ma.b)(e, t.channelId) || [],
 					currentUserId: Da.a
 				}),
@@ -3968,41 +3967,44 @@
 					let {
 						className: t,
 						channelId: n,
-						currentUserId: s,
-						members: a,
-						minimal: c,
-						modIndicator: o,
-						onClick: i,
-						onSelectName: l,
-						onViewProfile: d,
-						selectIndex: u,
-						useNSFWIcons: h
+						channelType: s,
+						currentUserId: a,
+						members: c,
+						minimal: o,
+						modIndicator: i,
+						onClick: l,
+						onSelectName: d,
+						onViewProfile: u,
+						selectIndex: h,
+						useNSFWIcons: m
 					} = e;
 					return ((e, t, n) => {
 						if (n && void 0 !== t && e.length >= t) {
 							const s = e[t];
 							s && n(s.name)
 						}
-					})(a, u, l), r.a.createElement("ul", {
+					})(c, h, d), r.a.createElement("ul", {
 						className: t
-					}, a && a.map((e, t) => r.a.createElement(Ba, {
+					}, c && c.map((e, t) => r.a.createElement(Ba, {
 						key: e.name,
 						className: Object(Oe.a)(rn, {
-							[La.a.selected]: u === t,
-							[La.a.withMenu]: !c
+							[La.a.selected]: h === t,
+							[La.a.withMenu]: !o
 						}),
 						onClick: () => {
-							i ? i(e.name) : d(e.name)
+							l ? l(e.name) : u(e.name)
 						}
-					}, r.a.createElement(Ra, null, h && e.isNSFW ? r.a.createElement(J, null) : r.a.createElement(ae, {
+					}, r.a.createElement(Ra, null, m && e.isNSFW ? r.a.createElement(J, null) : r.a.createElement(ae, {
 						userId: e.id
-					})), r.a.createElement(Pa, null, e.name), e.isModerator && o && r.a.createElement(Fa, null, f.fbt._("Moderator", null, {
-						hk: "1WszpY"
+					})), r.a.createElement(Pa, null, e.name), e.isModerator && i && r.a.createElement(Fa, null, s && s === C.a.Subreddit ? f.fbt._("Moderator", null, {
+						hk: "48EtBe"
+					}) : f.fbt._("Host", null, {
+						hk: "4berci"
 					})), e.isNSFW && r.a.createElement(Ha, null, f.fbt._("NSFW", null, {
 						hk: "36qPno"
 					})), e.isBlockedByMe && r.a.createElement(Ha, null, f.fbt._("Blocked", null, {
 						hk: "1RUrSV"
-					})), !c && e.id !== s && r.a.createElement(Ua, {
+					})), !o && e.id !== a && r.a.createElement(Ua, {
 						channelId: n,
 						containerClassName: rn,
 						dropdownIndex: t,
@@ -14666,4 +14668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.204ec88e7d732b30d3ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0babbe6075e2de937275.js.map
