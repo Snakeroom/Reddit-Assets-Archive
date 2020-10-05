@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.281504710639466e2a75.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9f24347937c5cd19d746.js
+// Retrieved at 10/5/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("114110"),
+				buildNumber: r("114139"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1601927976"),
+				})("1601932926"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3428,14 +3428,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("ec17b87-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("dcffc5e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ec17b87-production",
+						release: "dcffc5e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3865,7 +3865,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "ec17b87-production",
+							releaseClient: "dcffc5e-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -4640,10 +4640,10 @@
 			const o = "object" == typeof s.a && !!s.a.mark && !!s.a.measure && !!s.a.getEntriesByType;
 			var d, l;
 			! function(e) {
-				e.ResponseStart = "responseStart", e.FetchStart = "fetchStart", e.HeadTagStart = "head_tag_start", e.AppHTMLStart = "app_html_start", e.AdsDotJSFetchStart = "ads_dot_js_fetch_start", e.ReduxJSONStart = "redux_json_start", e.JSDepsFetchStart = "js_deps_fetch_start", e.EntryPointStart = "entry_point_start", e.InitClientStart = "init_client_start", e.CreateRouteCompsStart = "create_route_components_start", e.ReactHydrateStart = "react_hydrate_start", e.ReactHydrateEnd = "react_hydrate_end", e.InitClientEnd = "init_client_end", e.FirstPostTitleImageLoaded = "first_post_title_image_loaded"
+				e.ResponseStart = "responseStart", e.FetchStart = "fetchStart", e.HeadTagStart = "head_tag_start", e.AppHTMLStart = "app_html_start", e.AdsDotJSFetchStart = "ads_dot_js_fetch_start", e.ReduxJSONStart = "redux_json_start", e.JSDepsFetchStart = "js_deps_fetch_start", e.EntryPointStart = "entry_point_start", e.InitClientStart = "init_client_start", e.CreateRouteCompsStart = "create_route_components_start", e.ReactHydrateStart = "react_hydrate_start", e.ReactHydrateEnd = "react_hydrate_end", e.InitClientEnd = "init_client_end", e.FirstPostTitleImageLoaded = "first_post_title_image_loaded", e.FirstCommentLoaded = "first_comment_loaded"
 			}(d || (d = {})),
 			function(e) {
-				e.TimeToFirstByte = "Time_To_First_Byte", e.HeadTagParse = "Head_Tag_Parse", e.AppHTMLParse = "App_HTML_Parse", e.AdsDotJSFetchParse = "Ads_Dot_JS_Fetch_Parse", e.ReduxBootstrapJSONParse = "Redux_Bootstrap_JSON_Parse", e.JSDepsFetchToEntryPoint = "JS_Fetch_To_Entry_Point", e.EntryPointToInitClient = "Entry_To_Init_Client", e.InitClientPreamble = "Initailize_Client_Preamble", e.CreateRouteComponents = "Creat_Route_Components", e.ReactHydrate = "React_Hydrate", e.InitClientPostamble = "Initailize_Client_Postamble", e.NavigationToFirstPostTitleVisible = "NavigationStart_To_FirstPostTitleVisible", e.NavigationToInitClientFinished = "NavigationStart_To_InitClientFinished"
+				e.TimeToFirstByte = "Time_To_First_Byte", e.HeadTagParse = "Head_Tag_Parse", e.AppHTMLParse = "App_HTML_Parse", e.AdsDotJSFetchParse = "Ads_Dot_JS_Fetch_Parse", e.ReduxBootstrapJSONParse = "Redux_Bootstrap_JSON_Parse", e.JSDepsFetchToEntryPoint = "JS_Fetch_To_Entry_Point", e.EntryPointToInitClient = "Entry_To_Init_Client", e.InitClientPreamble = "Initailize_Client_Preamble", e.CreateRouteComponents = "Creat_Route_Components", e.ReactHydrate = "React_Hydrate", e.InitClientPostamble = "Initailize_Client_Postamble", e.NavigationToFirstPostTitleVisible = "NavigationStart_To_FirstPostTitleVisible", e.NavigationToFirstCommentVisible = "NavigationStart_To_FirstCommentVisible", e.NavigationToInitClientFinished = "NavigationStart_To_InitClientFinished"
 			}(l || (l = {}));
 			const a = Object.keys(l).reduce((e, t) => (e[l[t]] = !0, e), {}),
 				u = e => {
@@ -4701,6 +4701,10 @@
 					name: l.NavigationToInitClientFinished,
 					start: d.FetchStart,
 					end: d.InitClientEnd
+				}, {
+					name: l.NavigationToFirstCommentVisible,
+					start: d.FetchStart,
+					end: d.FirstCommentLoaded
 				}],
 				_ = e => {
 					if (!o) return null;
@@ -22848,4 +22852,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.281504710639466e2a75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9f24347937c5cd19d746.js.map
