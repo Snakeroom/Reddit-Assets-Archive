@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.2ef8240fcdfcb1697f44.js
-// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.138843a0cf12bc55d8dc.js
+// Retrieved at 10/5/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -445,8 +445,8 @@
 				p = s("./src/reddit/models/PostDraft/index.ts"),
 				b = s("./src/reddit/actions/comment/index.ts"),
 				_ = s("./src/reddit/actions/gold/modals.ts"),
-				f = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
-				g = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.tsx"),
+				g = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
+				f = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.tsx"),
 				j = s("./src/reddit/components/RichTextEditor/index.tsx"),
 				x = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				v = s("./src/reddit/components/RichTextJsonChatReply/index.tsx"),
@@ -590,7 +590,7 @@
 				te = h.a.div("ReplyAuthor", J.a),
 				se = h.a.div("ReplyComment", J.a),
 				ne = h.a.wrapped(j.a, "RichTextEditor", J.a),
-				ae = h.a.wrapped(g.a, "SmallChatUserIcon", J.a),
+				ae = h.a.wrapped(f.a, "SmallChatUserIcon", J.a),
 				re = Object(l.b)(() => Object(u.c)({
 					draft: S.i,
 					errorMsgs: S.J,
@@ -634,7 +634,7 @@
 							commentId: n.id,
 							commentsPageKey: a
 						})),
-						onLivestreamingChatMessageEdit: () => e(Object(f.a)()),
+						onLivestreamingChatMessageEdit: () => e(Object(g.a)()),
 						closeReply: () => i && e(Object(b.O)({
 							parentCommentId: i.id,
 							commentsPageKey: a
@@ -652,7 +652,7 @@
 							hasChanged: t
 						})), this.props.isLivestreaming && t && this.passChangeToLivestreaming()
 					}, this.handleFocus = () => {
-						this.props.isLivestreaming && this.passChangeToLivestreaming()
+						this.props.isLivestreaming && this.passChangeToLivestreaming(), this.props.onFocusMessageInput && this.props.onFocusMessageInput()
 					}, this.passChangeToLivestreaming = i()(() => this.props.onLivestreamingChatMessageEdit(), Y, {
 						leading: !1,
 						trailing: !0
@@ -820,7 +820,7 @@
 				return s ? null : t ? d.a.createElement(ae, {
 					height: 20,
 					width: 20
-				}) : d.a.createElement(g.a, {
+				}) : d.a.createElement(f.a, {
 					height: 25,
 					width: 25
 				})
@@ -881,7 +881,7 @@
 				p = s("./src/reddit/components/RichTextJsonChatReply/index.m.less"),
 				b = s.n(p);
 			const _ = s("./src/lib/lessComponent.tsx").a.div("Container", b.a),
-				f = {
+				g = {
 					[d.a]: "<animated image>",
 					[d.b]: "<quote>",
 					[d.c]: "<code block>",
@@ -899,7 +899,7 @@
 				if (-1 !== c)
 					for (let a = c; a <= p; a++) {
 						const e = n[a],
-							t = e && f[e.e];
+							t = e && g[e.e];
 						switch (e.e) {
 							case d.l:
 								break;
@@ -962,9 +962,9 @@
 				p = s("./src/reddit/selectors/activeModalId.ts"),
 				b = s("./src/higherOrderComponents/asModal/index.tsx"),
 				_ = s("./src/reddit/controls/Button/index.tsx"),
-				f = s("./src/reddit/layout/row/Inline/index.tsx"),
-				g = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				j = s.n(g);
+				g = s("./src/reddit/layout/row/Inline/index.tsx"),
+				f = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				j = s.n(f);
 			var x = Object(b.a)(e => {
 					const {
 						children: t,
@@ -972,11 +972,11 @@
 					} = e;
 					return d.a.createElement("div", {
 						className: j.a.wrapper
-					}, d.a.createElement(f.a, {
+					}, d.a.createElement(g.a, {
 						className: j.a.titleRow
 					}, s), d.a.createElement("div", {
 						className: j.a.detailsContainer
-					}, t), d.a.createElement(f.a, {
+					}, t), d.a.createElement(g.a, {
 						className: j.a.buttonRow
 					}, d.a.createElement(_.i, {
 						className: j.a.confirmButton,
@@ -1128,9 +1128,9 @@
 			})), s.d(t, "s", (function() {
 				return _
 			})), s.d(t, "k", (function() {
-				return f
-			})), s.d(t, "l", (function() {
 				return g
+			})), s.d(t, "l", (function() {
+				return f
 			})), s.d(t, "i", (function() {
 				return j
 			})), s.d(t, "j", (function() {
@@ -1256,7 +1256,7 @@
 					noun: "stream",
 					playback: c(s, e, t)
 				}, d(s)), i(s, e)),
-				f = (e, t, s) => n => Object.assign(Object.assign(Object.assign({
+				g = (e, t, s) => n => Object.assign(Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "share_video",
@@ -1266,7 +1266,7 @@
 						referralId: s
 					})
 				}),
-				g = (e, t) => s => Object.assign(Object.assign({
+				f = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "upvote",
@@ -1461,8 +1461,8 @@
 			var p = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
 			const b = e => e.publicAccessNetwork.models,
 				_ = e => e.publicAccessNetwork.reports.reported,
-				f = e => e.publicAccessNetwork.history,
-				g = e => e.publicAccessNetwork.history.cursor,
+				g = e => e.publicAccessNetwork.history,
+				f = e => e.publicAccessNetwork.history.cursor,
 				j = e => e.publicAccessNetwork.history.visitOrder,
 				x = e => e.publicAccessNetwork.hlsStreams,
 				v = Object(n.a)(x, e => e.ended),
@@ -1578,7 +1578,7 @@
 						listingName: s || a,
 						streamIdFromPath: n
 					})
-				}, f, (e, t, s, n) => {
+				}, g, (e, t, s, n) => {
 					if (!s.length) return;
 					const a = s.map(e => t[e]).filter(t => t && t.post.id !== e),
 						r = a.find(e => e.stream.state === i.a.IS_LIVE);
@@ -1606,8 +1606,8 @@
 						streamIdFromPath: n
 					})
 				}, (e, t, s, n, a) => !e || s.includes(e) || n.includes(e) ? t || a[0] : e),
-				T = Object(n.a)(g, j, A, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				F = Object(n.a)(g, j, (e, t) => {
+				T = Object(n.a)(f, j, A, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
+				F = Object(n.a)(f, j, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
 				R = Object(a.a)(Object(n.a)(L, O, (e, t) => e ? t[e] : void 0)),
@@ -1635,7 +1635,7 @@
 				};
 				return s[t] >= s[e]
 			}
-			const V = Object(n.a)(L, f, (e, t) => e && t.timestamps[e] || 0);
+			const V = Object(n.a)(L, g, (e, t) => e && t.timestamps[e] || 0);
 			var K;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
@@ -1673,4 +1673,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.2ef8240fcdfcb1697f44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.138843a0cf12bc55d8dc.js.map
