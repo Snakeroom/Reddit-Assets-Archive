@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.24c0a55080c4d72c83fd.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f182504b03cbd9c6cd67.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1409,7 +1409,7 @@
 						wikiSubRoute: u,
 						wikiPageName: h,
 						pageName: b
-					} = n, g = i[l.z], k = i[l.A], f = l.B in i;
+					} = n, g = i[l.A], k = i[l.B], f = l.C in i;
 					switch (u) {
 						case c.m.Create:
 						case c.m.Edit:
@@ -1462,4 +1462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.24c0a55080c4d72c83fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f182504b03cbd9c6cd67.js.map

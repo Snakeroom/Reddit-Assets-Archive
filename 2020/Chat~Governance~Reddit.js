@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c7d6e46830879bf6b6fd.js
-// Retrieved at 10/5/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e05e9f602f8580b5f6a3.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("114035"),
+				buildNumber: r("114046"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1601917358"),
+				})("1601918323"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3428,14 +3428,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("eb566f3-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("5d23f57-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "eb566f3-production",
+						release: "5d23f57-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3865,7 +3865,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "eb566f3-production",
+							releaseClient: "5d23f57-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -4372,7 +4372,7 @@
 							t: i,
 							type: n
 						};
-					return void 0 !== e.include_over_18 && (o.include_over_18 = u(a(e.include_over_18))), void 0 !== e.restrict_sr && (o.restrict_sr = u(a(e.restrict_sr))), e.is_multi && (o.is_multi = u(a(e.is_multi))), e.category && (o.category = e.category), e[s.c] && (o.category_name = e.category_name), e[s.u] && (o.source = e.source), o
+					return void 0 !== e.include_over_18 && (o.include_over_18 = u(a(e.include_over_18))), void 0 !== e.restrict_sr && (o.restrict_sr = u(a(e.restrict_sr))), e.is_multi && (o.is_multi = u(a(e.is_multi))), e.category && (o.category = e.category), e[s.c] && (o.category_name = e.category_name), e[s.v] && (o.source = e.source), o
 				};
 			t.b = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
@@ -7061,34 +7061,36 @@
 				return h
 			})), i.d(t, "r", (function() {
 				return g
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "s", (function() {
 				return f
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "u", (function() {
 				return b
-			})), i.d(t, "v", (function() {
-				return w
-			})), i.d(t, "h", (function() {
-				return y
 			})), i.d(t, "x", (function() {
+				return w
+			})), i.d(t, "w", (function() {
+				return y
+			})), i.d(t, "h", (function() {
 				return v
 			})), i.d(t, "y", (function() {
 				return T
-			})), i.d(t, "u", (function() {
-				return S
 			})), i.d(t, "z", (function() {
+				return S
+			})), i.d(t, "v", (function() {
 				return F
 			})), i.d(t, "A", (function() {
 				return E
 			})), i.d(t, "B", (function() {
 				return I
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "C", (function() {
 				return O
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "f", (function() {
 				return j
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "l", (function() {
 				return B
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "k", (function() {
 				return x
+			})), i.d(t, "t", (function() {
+				return R
 			}));
 			const n = "ampcid",
 				r = "category",
@@ -7102,22 +7104,23 @@
 				_ = "newUser",
 				m = "q",
 				p = "connected_account",
-				h = "related",
-				g = "restrict_sr",
-				f = "sort",
-				b = "t",
-				w = "ts",
-				y = "geo_filter",
-				v = "verified",
-				T = "verifiedEmail",
-				S = "source",
-				F = "v",
-				E = "v2",
-				I = "show_source",
-				O = "feature",
-				j = ["ad", "adHash", "clickUrl", b, O],
-				B = ["after", "before"],
-				x = ["ad", "include_over_18", "q", "restrict_sr", "sort", "t", "type", O, a, r, s, S]
+				h = "ref",
+				g = "related",
+				f = "restrict_sr",
+				b = "sort",
+				w = "t",
+				y = "ts",
+				v = "geo_filter",
+				T = "verified",
+				S = "verifiedEmail",
+				F = "source",
+				E = "v",
+				I = "v2",
+				O = "show_source",
+				j = "feature",
+				B = ["ad", "adHash", "clickUrl", w, j],
+				x = ["after", "before"],
+				R = ["ad", "include_over_18", "q", "restrict_sr", "sort", "t", "type", j, a, r, s, F]
 		},
 		"./src/reddit/constants/postCollection.ts": function(e, t, i) {
 			"use strict";
@@ -9039,7 +9042,7 @@
 						const t = e.platform.currentPage && e.platform.currentPage.url;
 						return t && o()([...Object(r.a)(t)]) || new Set([])
 					})(e),
-					f = d.t in g ? g[d.t] : "";
+					f = d.u in g ? g[d.u] : "";
 				return (n.Wb.has(f) ? f : p) === f && (p = f), f && (h = !0), Object(l.d)(e, {
 					postId: t
 				}) && (p = n.r.CHAT, h = !1), {
@@ -9941,35 +9944,39 @@
 		},
 		"./src/reddit/helpers/publicAccessNetwork/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
-				return s
-			})), i.d(t, "g", (function() {
+			i.d(t, "b", (function() {
 				return o
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "h", (function() {
 				return d
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return l
 			})), i.d(t, "f", (function() {
 				return a
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "g", (function() {
 				return u
 			})), i.d(t, "c", (function() {
 				return c
+			})), i.d(t, "d", (function() {
+				return _
+			})), i.d(t, "a", (function() {
+				return m
 			}));
-			var n = i("./src/lib/constants/index.ts"),
-				r = i("./src/reddit/constants/things.ts");
-			const s = e => e.startsWith(r.b) ? e.slice(3) : e,
-				o = e => e.startsWith(r.b) ? e : "".concat(r.b).concat(e),
-				d = e => "/".concat(n.Bb.PUBLIC_ACCESS_NETWORK).concat(e ? "/".concat(s(e)) : ""),
-				l = () => "/".concat(n.Bb.PUBLIC_ACCESS_NETWORK, "/"),
-				a = e => "".concat(l(), "r/").concat(e, "/"),
-				u = (e, t) => t ? "".concat(a(t)).concat(s(e)) : d(e),
-				c = e => {
+			var n = i("./src/config.ts"),
+				r = i("./src/lib/constants/index.ts"),
+				s = i("./src/reddit/constants/things.ts");
+			const o = e => e.startsWith(s.b) ? e.slice(3) : e,
+				d = e => e.startsWith(s.b) ? e : "".concat(s.b).concat(e),
+				l = () => "/".concat(r.Bb.PUBLIC_ACCESS_NETWORK, "/"),
+				a = e => "".concat(l()).concat(o(e)),
+				u = e => "".concat(l(), "r/").concat(e, "/"),
+				c = (e, t) => t ? "".concat(u(t)).concat(o(e)) : a(e),
+				_ = e => {
 					let {
 						post: t
 					} = e;
-					return u(t.id, t.subreddit.name)
-				}
+					return c(t.id, t.subreddit.name)
+				},
+				m = e => "".concat(n.a.redditUrl).concat(a(e))
 		},
 		"./src/reddit/models/Comment/index.ts": function(e, t, i) {
 			"use strict";
@@ -15265,7 +15272,7 @@
 							id: t,
 							type: i
 						} = n.belongsTo, s = "subreddit" === i ? e.subreddits.models[t] : null;
-						r = s ? Object(p.b)(n.id, s.name) : Object(p.b)(n.id)
+						r = s ? Object(p.c)(n.id, s.name) : Object(p.c)(n.id)
 					}
 					return r
 				},
@@ -22691,4 +22698,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c7d6e46830879bf6b6fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e05e9f602f8580b5f6a3.js.map

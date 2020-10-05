@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5ddd685189d17099e653.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6a560025049934a15ba4.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1913,7 +1913,7 @@
 					}, a)
 				}),
 				I = (e, t) => {
-					return x(e)[Object(i.g)(t)]
+					return x(e)[Object(i.h)(t)]
 				},
 				N = Object(a.a)((e, t) => {
 					let {
@@ -1924,7 +1924,7 @@
 					if (d) {
 						const r = [];
 						if (e) {
-							const t = Object(i.g)(e);
+							const t = Object(i.h)(e);
 							s[t] && r.push(t)
 						}
 						const d = r.concat(t),
@@ -2007,7 +2007,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? Object(i.g)(s) : void 0
+					return s ? Object(i.h)(s) : void 0
 				}, A, g, d.h, (e, t) => {
 					let {
 						related: s,
@@ -2086,4 +2086,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5ddd685189d17099e653.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6a560025049934a15ba4.js.map

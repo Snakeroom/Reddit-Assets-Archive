@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.11831b8882cd39746137.js
-// Retrieved at 10/5/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9367b2c1ba3e3ad8c286.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "eb566f3-production"
+					SENTRY_RELEASE_VERSION: "5d23f57-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -4271,7 +4271,18 @@
 							currentStream: t,
 							onShareVideo: a
 						} = this.props;
-						t && (e("".concat(v.a.redditUrl).concat(t.share_link)), a())
+						if (!t) return;
+						const s = Object(Le.a)(t.post.id),
+							n = S()(),
+							o = {
+								[je.q]: n,
+								utm_source: "share",
+								utm_medium: "web2x",
+								utm_content: "rpan_stream"
+							};
+						e(Object(E.a)(s, o)), a({
+							referralId: n
+						})
 					}, this.onToggleLock = () => {
 						this.props.isCommentsLocked ? this.props.onUnlockComments() : this.props.onLockComments()
 					}, this.state = {
@@ -5102,7 +5113,7 @@
 						let {
 							streamIdFromPath: a
 						} = t;
-						return e.reportFlow.postOrCommentId === Object(Le.g)(a || "")
+						return e.reportFlow.postOrCommentId === Object(Le.h)(a || "")
 					},
 					lastChatActivityUtcTs: Ge.c,
 					nextStream: Ke.h,
@@ -5207,8 +5218,8 @@
 						this.cancelSwitchingOnStreamEnded(), this.state.showStreamEndedPrompt && this.playVideo()
 					}, this.onEndBroadcast = () => {
 						this.props.toggleRemovalReasonModal()
-					}, this.onShareVideo = () => {
-						this.props.currentStream && this.props.sendEvent(Object(Ae.k)(this.props.currentStream, this.getPlaybackStats())), this.cancelSwitchingOnStreamEnded()
+					}, this.onShareVideo = e => {
+						this.props.currentStream && this.props.sendEvent(Object(Ae.k)(this.props.currentStream, this.getPlaybackStats(), null == e ? void 0 : e.referralId)), this.cancelSwitchingOnStreamEnded()
 					}, this.onToggleMenu = () => {
 						this.cancelSwitchingOnStreamEnded()
 					}, this.getSessionDurationTimer = e => "session-duration-".concat(e), this.getWatchDurationTimer = e => "watch-duration-".concat(e), this.setVideoMute = e => {
@@ -5641,13 +5652,13 @@
 						timestamp: s
 					} = this.props;
 					if (t) {
-						const t = Object(Le.c)(e);
+						const t = Object(Le.d)(e);
 						return Object(E.a)(t, {
-							[je.q]: a,
-							[je.v]: s
+							[je.r]: a,
+							[je.w]: s
 						})
 					}
-					return Object(Le.e)(e.post.id)
+					return Object(Le.f)(e.post.id)
 				}
 				goToStream(e) {
 					const {
@@ -5697,7 +5708,7 @@
 						streamIdFromPath: s
 					} = this.props;
 					if (!e || t) return;
-					const n = !s || Object(Le.a)(e.post.id) === s;
+					const n = !s || Object(Le.b)(e.post.id) === s;
 					a(this.getStreamLocation(e), n)
 				}
 				startJobIfLiveOrPaused() {
@@ -5746,13 +5757,13 @@
 				} = t;
 				return Object(l.a)(a)
 			}), uo = Object(i.a)(lo, mo, (e, t) => {
-				const a = t.get(je.q),
+				const a = t.get(je.r),
 					{
 						subredditName: s
 					} = e;
 				return "home" === a || "r/popular" === a ? a : "popular" === s ? "r/popular" : s ? void 0 : "home"
 			}), po = Object(i.a)(mo, e => {
-				const t = e.get(je.v);
+				const t = e.get(je.w);
 				if (!t) return;
 				const a = parseInt(t, 10);
 				return isNaN(a) ? void 0 : a
@@ -5840,4 +5851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.11831b8882cd39746137.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9367b2c1ba3e3ad8c286.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7246df1caea26ede5a3a.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.a35f279769cf10fc974f.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -784,7 +784,7 @@
 						n = "".concat(t ? "flair_name" : "flair", ':"').concat(e, '"');
 					return Object(d.a)(s, {
 						[O.p]: n,
-						[O.r]: t ? "1" : ""
+						[O.s]: t ? "1" : ""
 					})
 				},
 				D = e => e.isFlairFilter ? c.a.createElement(C.a, {
@@ -2071,7 +2071,7 @@
 						postId: t.id,
 						source: t.source
 					}, i.a.createElement(Y, e)); {
-						const r = t.media && Object(C.H)(t.media) ? Object(j.b)(t.id, s) : t.permalink,
+						const r = t.media && Object(C.H)(t.media) ? Object(j.c)(t.id, s) : t.permalink,
 							o = e.isCommentPermalink ? Object(v.b)(r) : Object(x.a)(r);
 						return i.a.createElement(G, {
 							disableVisited: e.disableVisited,
@@ -4087,4 +4087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7246df1caea26ede5a3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.a35f279769cf10fc974f.js.map

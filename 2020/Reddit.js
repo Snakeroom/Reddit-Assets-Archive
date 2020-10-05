@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4f70a9dac9983b1008c2.js
-// Retrieved at 10/1/2020, 8:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.9c78267399e3f5aa161f.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -4640,9 +4640,9 @@
 					if ("" !== n.searchQuery) {
 						if (n.isTypeaheadSuggestion) o = "/".concat(n.isProfile ? n.searchQuery.replace("u/", "user/") : n.searchQuery);
 						else {
-							if (i = "".concat(V.p, "=").concat(Object(Lr.b)(n.rawQuery || n.searchQuery)), o = "/search/", n.section !== Ar.c.trending && n.section !== Ar.c.recent || a && a.source && (i += "&source=".concat(a.source)), e && r ? (o = "/r/".concat(e.name).concat(o), i = "".concat(i, "&").concat(V.r, "=1")) : !e && n.subredditOrProfileRestrictedName && (o = "/".concat(n.subredditOrProfileRestrictedName).concat(o), i = "".concat(i, "&").concat(V.r, "=1")), t) {
+							if (i = "".concat(V.p, "=").concat(Object(Lr.b)(n.rawQuery || n.searchQuery)), o = "/search/", n.section !== Ar.c.trending && n.section !== Ar.c.recent || a && a.source && (i += "&source=".concat(a.source)), e && r ? (o = "/r/".concat(e.name).concat(o), i = "".concat(i, "&").concat(V.s, "=1")) : !e && n.subredditOrProfileRestrictedName && (o = "/".concat(n.subredditOrProfileRestrictedName).concat(o), i = "".concat(i, "&").concat(V.s, "=1")), t) {
 								const e = t.url.split("/")[2];
-								o = "/user/".concat(e, "/m/").concat(t.name).concat(o), i = "".concat(i, "&").concat(V.r, "=1&").concat(V.j, "=1")
+								o = "/user/".concat(e, "/m/").concat(t.name).concat(o), i = "".concat(i, "&").concat(V.s, "=1&").concat(V.j, "=1")
 							}
 							a && a.category && (i = "".concat(i, "&").concat(V.b, "=").concat(a.category))
 						}
@@ -7598,7 +7598,7 @@
 					const O = Object(x.a)(this.previousLocation, d),
 						y = C || O ? this.previousLocation : d,
 						P = C || O ? this.previousPage : e,
-						E = !(!(P && P.meta && P.meta.name === f.Bb.SEARCH_RESULTS && P && P.queryParams) || P.queryParams[V.r]),
+						E = !(!(P && P.meta && P.meta.name === f.Bb.SEARCH_RESULTS && P && P.queryParams) || P.queryParams[V.s]),
 						j = !(!P || !P.meta || P.meta.name !== f.Bb.MODERATION_PAGES),
 						w = Object(Cs.w)(P),
 						_ = this.getIsPostCollection(),
@@ -12316,12 +12316,12 @@
 							const o = x.a.timing.domInteractive - x.a.timing.navigationStart;
 							Object(qt.h)(r.routeMatch, d.getState(), k.TimerType.Initial, o);
 							const i = Object(f.a)(window.location.href);
-							i && i.get(Qe.a) && history.replaceState(history.state, "", Object(v.a)(window.location.href, [Qe.a])), Object(E.a)(i.get(Qe.x)) && d.dispatch(Object(Q.e)({
+							i && i.get(Qe.a) && history.replaceState(history.state, "", Object(v.a)(window.location.href, [Qe.a])), Object(E.a)(i.get(Qe.y)) && d.dispatch(Object(Q.e)({
 								kind: hs.b.SuccessCommunity,
 								text: n.fbt._("Email verification complete", null, {
 									hk: "bqMP6"
 								})
-							})), i.get(Qe.y) && (d.dispatch(Object(R.a)(i.get(Qe.y))), history.replaceState(history.state, "", Object(v.a)(window.location.href, [Qe.y])));
+							})), i.get(Qe.z) && (d.dispatch(Object(R.a)(i.get(Qe.z))), history.replaceState(history.state, "", Object(v.a)(window.location.href, [Qe.z])));
 							let l = !1;
 							if ((Object(Ut.b)(We.a.JustLoggedIn) || i && i.get(Qe.o) && Object(E.a)(i.get(Qe.o))) && (d.dispatch(Object(Q.e)({
 									text: n.fbt._("Successfully logged in!", null, {
@@ -14474,4 +14474,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4f70a9dac9983b1008c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9c78267399e3f5aa161f.js.map

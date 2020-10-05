@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4b453e43f4bb5d9113a6.js
-// Retrieved at 10/5/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6d516e599b16a44c48e8.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "eb566f3-production"
+					SENTRY_RELEASE_VERSION: "5d23f57-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -5464,7 +5464,7 @@
 						s = "".concat(t ? "flair_name" : "flair", ':"').concat(e, '"');
 					return Object(d.a)(n, {
 						[O.p]: s,
-						[O.r]: t ? "1" : ""
+						[O.s]: t ? "1" : ""
 					})
 				},
 				B = e => e.isFlairFilter ? c.a.createElement(E.a, {
@@ -11334,7 +11334,7 @@
 						postId: t.id,
 						source: t.source
 					}, r.a.createElement(Y, e)); {
-						const o = t.media && Object(E.H)(t.media) ? Object(v.b)(t.id, n) : t.permalink,
+						const o = t.media && Object(E.H)(t.media) ? Object(v.c)(t.id, n) : t.permalink,
 							i = e.isCommentPermalink ? Object(y.b)(o) : Object(f.a)(o);
 						return r.a.createElement(q, {
 							disableVisited: e.disableVisited,
@@ -34187,4 +34187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4b453e43f4bb5d9113a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6d516e599b16a44c48e8.js.map

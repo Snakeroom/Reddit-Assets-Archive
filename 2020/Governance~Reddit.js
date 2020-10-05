@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d9a3accea11057289546.js
-// Retrieved at 10/5/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d4cf6cc4de10f24fa3ee.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -4609,7 +4609,7 @@
 						T = h.platform.currentPage ? h.platform.currentPage.queryParams : {},
 						w = Object(b.a)(O.a, E, T),
 						C = h.listings.postOrder.loadMore[w],
-						A = T[c.w] ? T[c.w].toUpperCase() : "",
+						A = T[c.x] ? T[c.x].toUpperCase() : "",
 						D = A in p.Sb && p.Sb[A];
 					if (C) {
 						const e = h.listings.postOrder.api.pending[w],
@@ -4661,7 +4661,7 @@
 						} = e,
 						o = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
 						l = Object(b.a)(O.a, a, o),
-						g = o[c.w] ? o[c.w].toUpperCase() : "",
+						g = o[c.x] ? o[c.x].toUpperCase() : "",
 						f = g in p.Sb && p.Sb[g],
 						m = Object(d.a)(n),
 						_ = Object(d.b)(m);
@@ -8160,7 +8160,7 @@
 							queryParams: j
 						} = d,
 						_ = Object(u.a)(m, p, j),
-						h = O.w in j && j[O.w].toUpperCase() || "",
+						h = O.x in j && j[O.x].toUpperCase() || "",
 						y = c.Sb[h] || !1,
 						E = Object(x.i)(r);
 					(f || E && E.displayText) && await e(Object(b.B)(_, (f || E.displayText).toLowerCase(), g.toLowerCase(), Object.assign(Object.assign(Object.assign({}, a()(j, O.l)), a()(j, O.k)), {
@@ -8826,7 +8826,7 @@
 						d = r.listings.postOrder.ids[o],
 						u = r.listings.postOrder.api.error[o],
 						l = r.listings.postOrder.api.pending[o],
-						b = Z.w in e.queryParams && e.queryParams[Z.w].toUpperCase() || "",
+						b = Z.x in e.queryParams && e.queryParams[Z.x].toUpperCase() || "",
 						p = b in S.Sb && S.Sb[b];
 					if (l || d && !u && !t) return void(d && (s(L.l({
 						title: w.c()
@@ -9249,7 +9249,7 @@
 						O = l.listings.postOrder.ids[p],
 						g = l.listings.postOrder.api.error[p],
 						f = l.listings.postOrder.api.pending[p],
-						m = Z.w in e.queryParams && e.queryParams[Z.w].toUpperCase() || "",
+						m = Z.x in e.queryParams && e.queryParams[Z.x].toUpperCase() || "",
 						j = m in S.Sb && S.Sb[m];
 					if (f || O && !g && !t) return void(O && (s(L.l({
 						title: Object(Ie.f)(n(), u)
@@ -9874,7 +9874,7 @@
 				};
 
 			function G(e) {
-				const t = b.w in e && e[b.w].toUpperCase() || "";
+				const t = b.x in e && e[b.x].toUpperCase() || "";
 				return t in i.Sb && i.Sb[t]
 			}
 			const B = Object(c.a)(D.c),
@@ -10875,7 +10875,7 @@
 						buttonAction: P(e, t, s, r)
 					}))
 				}, R = e => async (t, s, n) => {
-					const r = Object(o.c)(a()(e.queryParams, m.s)),
+					const r = Object(o.c)(a()(e.queryParams, m.t)),
 						c = e.params.subredditName || e.params.multiredditName,
 						{
 							username: u
@@ -11201,7 +11201,7 @@
 				const s = e.f;
 				if (s) return {
 					[V.p]: s,
-					[V.r]: "1",
+					[V.s]: "1",
 					[V.i]: t ? "1" : "",
 					sort: o.Lb.New
 				}
@@ -11223,7 +11223,7 @@
 					}) || Object(k.a)(te.c.flair)(e, {
 						subredditId: t
 					}))(e, t),
-					A = V.w in e.queryParams && e.queryParams[V.w].toUpperCase() || "",
+					A = V.x in e.queryParams && e.queryParams[V.x].toUpperCase() || "",
 					D = A in o.Sb && o.Sb[A];
 				if (y || v && !h && !t) {
 					if (C(d, w) && s(S.i(w)), v) {
@@ -12524,7 +12524,7 @@
 								id: e,
 								type: s
 							} = t.belongsTo, n = "subreddit" === s ? a.subreddits.models[e] : null;
-							c = n ? Object(k.b)(t.id, n.name) : Object(k.b)(t.id)
+							c = n ? Object(k.c)(t.id, n.name) : Object(k.c)(t.id)
 						}
 						s && (c = Object(o.a)(c, s)), a.user.prefs.openPostInNewTab || i ? window.open(c) : e(Object(R.a)(c))
 					}
@@ -15426,7 +15426,7 @@
 					let {
 						gqlContext: r
 					} = n;
-					const a = Object(o.g)(e),
+					const a = Object(o.h)(e),
 						i = s();
 					if (Object(u.d)(i, a)) return;
 					t(p(a));
@@ -16131,7 +16131,7 @@
 						{
 							username: j
 						} = p.platform.currentPage.urlParams,
-						h = g || a()(O, u.s),
+						h = g || a()(O, u.t),
 						y = Object(o.c)(h),
 						E = Object.assign(Object.assign({}, y), {
 							sort: y.category ? i.Lb.Relevance : y.sort,
@@ -27866,7 +27866,7 @@
 							if (r) {
 								const e = {
 										[O.p]: r,
-										[O.r]: "1"
+										[O.s]: "1"
 									},
 									t = Object(d.c)(e);
 								return {
@@ -27979,7 +27979,7 @@
 						subredditName: i
 					} = s.params, {
 						username: c
-					} = s.params, o = Object(d.c)(r()(s.queryParams, O.s));
+					} = s.params, o = Object(d.c)(r()(s.queryParams, O.t));
 					return Object(d.b)(i, c, o)
 				},
 				D = (e, t, s) => {
@@ -29897,34 +29897,39 @@
 					let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "post",
 						n = arguments.length > 3 ? arguments[3] : void 0,
 						a = arguments.length > 4 ? arguments[4] : void 0,
-						c = arguments.length > 5 ? arguments[5] : void 0;
-					return u => {
-						const b = d.post(u, e);
-						(null == b ? void 0 : b.promoted) && Object(i.Y)(e);
+						c = arguments.length > 5 ? arguments[5] : void 0,
+						u = arguments.length > 6 ? arguments[6] : void 0;
+					return b => {
+						const p = d.post(b, e);
+						(null == p ? void 0 : p.promoted) && Object(i.Y)(e);
 						const {
-							currentPage: p
-						} = u.platform, O = l(p) ? f(u, e, s, t) : g(u, e, s, t), m = Object(o.b)(u) || c;
-						if (m) {
-							const s = n ? d.getRelativePostOrder(u, e, n) : null;
-							return Object.assign(Object.assign({}, d.defaults(u)), {
+							currentPage: O
+						} = b.platform, m = l(O) ? f(b, e, s, t) : g(b, e, s, t), j = Object(o.b)(b) || c, _ = d.defaults(b);
+						if (j) {
+							const s = n ? d.getRelativePostOrder(b, e, n) : null;
+							return Object.assign(Object.assign({}, _), {
 								action: "click",
-								actionInfo: d.actionInfo(u, {
-									position: "number" == typeof s ? s + 1 : void 0
+								actionInfo: Object.assign(Object.assign({}, _.actionInfo), {
+									position: "number" == typeof s ? s + 1 : void 0,
+									referralId: u
 								}),
 								correlationId: Object(r.c)(r.a.LinkedPosts),
-								media: d.media(u, e),
-								mlModel: d.listingBelowMlModel(m, a),
+								media: d.media(b, e),
+								mlModel: d.listingBelowMlModel(j, a),
 								noun: t,
-								post: b,
-								profile: d.profile(u),
+								post: p,
+								profile: d.profile(b),
 								source: "post_detail",
-								subreddit: d.subreddit(u)
+								subreddit: d.subreddit(b)
 							})
 						}
-						return Object.assign(Object.assign(Object.assign({}, O), d.defaults(u)), {
+						return Object.assign(Object.assign(Object.assign({}, m), _), {
 							action: "click",
-							media: d.media(u, e),
-							subreddit: d.subreddit(u) || d.subredditByPostOrCommentId(u, e)
+							actionInfo: Object.assign(Object.assign({}, _.actionInfo), {
+								referralId: u
+							}),
+							media: d.media(b, e),
+							subreddit: d.subreddit(b) || d.subredditByPostOrCommentId(b, e)
 						})
 					}
 				},
@@ -53555,9 +53560,9 @@
 				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				i = s("./src/reddit/helpers/publicAccessNetwork/index.ts");
 			const c = e => e.publicAccessNetwork.api.config,
-				o = (e, t) => !!t && !!e.publicAccessNetwork.api.error[Object(i.g)(t)],
+				o = (e, t) => !!t && !!e.publicAccessNetwork.api.error[Object(i.h)(t)],
 				d = e => o(e, a.b),
-				u = (e, t) => !!t && !!e.publicAccessNetwork.api.pending[Object(i.g)(t)] && e.publicAccessNetwork.api.pending[Object(i.g)(t)].isPending,
+				u = (e, t) => !!t && !!e.publicAccessNetwork.api.pending[Object(i.h)(t)] && e.publicAccessNetwork.api.pending[Object(i.h)(t)].isPending,
 				l = e => u(e, a.b),
 				b = e => e.publicAccessNetwork.api.pending[a.b] && e.publicAccessNetwork.api.pending[a.b].fetchedUtcTimeStamp,
 				p = Object(n.a)(c, e => e.global),
@@ -53581,11 +53586,11 @@
 				I = Object(n.a)(E, e => [{
 					name: "All",
 					prefixedName: "All",
-					path: Object(i.d)()
+					path: Object(i.e)()
 				}, ...e.map(e => ({
 					name: e,
 					prefixedName: "r/".concat(e),
-					path: Object(i.f)(e)
+					path: Object(i.g)(e)
 				}))])
 		},
 		"./src/reddit/selectors/activeModalId.ts": function(e, t, s) {
@@ -56209,4 +56214,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d9a3accea11057289546.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d4cf6cc4de10f24fa3ee.js.map

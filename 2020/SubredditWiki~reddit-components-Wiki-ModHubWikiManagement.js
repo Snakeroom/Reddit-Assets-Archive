@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.37ec9bb403a4e47dc976.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.f7747bfe2de64a423634.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/ResizableAutosizeTextarea/index.m.less": function(e, t, i) {
@@ -183,7 +183,7 @@
 				} = t;
 				if (!i && !n) return e;
 				const s = {};
-				return i && (s[f.z] = Object(x.b)(i)), n && (s[f.A] = Object(x.b)(n)), Object(g.a)(e, s)
+				return i && (s[f.A] = Object(x.b)(i)), n && (s[f.B] = Object(x.b)(n)), Object(g.a)(e, s)
 			}
 			var w = i("./src/reddit/helpers/wiki/makeRevisionsListingKey.ts"),
 				_ = i("./src/reddit/helpers/wiki/makeWikiPath.ts"),
@@ -1541,7 +1541,7 @@
 						displayText: n.fbt._("View page source", null, {
 							hk: "1d5vg5"
 						}),
-						href: "".concat(c, "/").concat(r, "?").concat(N.B),
+						href: "".concat(c, "/").concat(r, "?").concat(N.C),
 						onClick: this.onViewPageSourceClick
 					}), i && o.a.createElement(E.b, {
 						className: R.a.row,
@@ -1931,4 +1931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.37ec9bb403a4e47dc976.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.f7747bfe2de64a423634.js.map

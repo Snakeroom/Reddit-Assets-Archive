@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.58c51f83ea225468c7e1.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2e9d9754591e6fa8497d.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/ScrollChildFactory.tsx": function(e, t, s) {
@@ -1272,12 +1272,16 @@
 					noun: "stream",
 					playback: c(s, e, t)
 				}, d(s)), a(s, e)),
-				g = (e, t) => s => Object.assign(Object.assign({
+				g = (e, t, s) => r => Object.assign(Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "share_video",
-					playback: c(s, e, t)
-				}, d(s)), a(s, e)),
+					playback: c(r, e, t)
+				}, d(r)), a(r, e)), {
+					actionInfo: i.actionInfo(r, {
+						referralId: s
+					})
+				}),
 				f = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
@@ -1513,7 +1517,7 @@
 					queryParams: d,
 					sort: l
 				} = t;
-				const u = T.w in d && d[T.w].toUpperCase(),
+				const u = T.x in d && d[T.x].toUpperCase(),
 					m = "string" == typeof u && u in Q.Sb ? Q.Sb[u] : Q.Tb,
 					p = Object(v.a)(Y.a, l, d),
 					b = a || Q.w.Everywhere,
@@ -1812,7 +1816,7 @@
 					}, r)
 				}),
 				P = (e, t) => {
-					return _(e)[Object(i.g)(t)]
+					return _(e)[Object(i.h)(t)]
 				},
 				N = Object(r.a)((e, t) => {
 					let {
@@ -1823,7 +1827,7 @@
 					if (c) {
 						const o = [];
 						if (e) {
-							const t = Object(i.g)(e);
+							const t = Object(i.h)(e);
 							s[t] && o.push(t)
 						}
 						const c = o.concat(t),
@@ -1906,7 +1910,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? Object(i.g)(s) : void 0
+					return s ? Object(i.h)(s) : void 0
 				}, S, y, c.h, (e, t) => {
 					let {
 						related: s,
@@ -1995,4 +1999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.58c51f83ea225468c7e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2e9d9754591e6fa8497d.js.map

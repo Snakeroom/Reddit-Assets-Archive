@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.90f97d942d658eb82714.js
-// Retrieved at 9/28/2020, 7:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.96df5af2cd558130bd0f.js
+// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -472,12 +472,16 @@
 					noun: "stream",
 					playback: c(s, e, t)
 				}, d(s)), o(s, e)),
-				f = (e, t) => s => Object.assign(Object.assign({
+				f = (e, t, s) => r => Object.assign(Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "share_video",
-					playback: c(s, e, t)
-				}, d(s)), o(s, e)),
+					playback: c(r, e, t)
+				}, d(r)), o(r, e)), {
+					actionInfo: n.actionInfo(r, {
+						referralId: s
+					})
+				}),
 				O = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
@@ -664,7 +668,7 @@
 					}, r)
 				}),
 				_ = (e, t) => {
-					return w(e)[Object(n.g)(t)]
+					return w(e)[Object(n.h)(t)]
 				},
 				R = Object(r.a)((e, t) => {
 					let {
@@ -675,7 +679,7 @@
 					if (c) {
 						const a = [];
 						if (e) {
-							const t = Object(n.g)(e);
+							const t = Object(n.h)(e);
 							s[t] && a.push(t)
 						}
 						const c = a.concat(t),
@@ -758,7 +762,7 @@
 					let {
 						streamIdFromPath: s
 					} = t;
-					return s ? Object(n.g)(s) : void 0
+					return s ? Object(n.h)(s) : void 0
 				}, k, v, c.h, (e, t) => {
 					let {
 						related: s,
@@ -837,4 +841,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.90f97d942d658eb82714.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.96df5af2cd558130bd0f.js.map
