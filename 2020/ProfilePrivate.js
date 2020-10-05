@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.502b6853898d1aef762e.js
-// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.7b80226970ca38ceedf1.js
+// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -8086,7 +8086,7 @@
 					multireddits: p.o
 				}),
 				x = Object(i.b)(h, (e, t) => ({
-					onLoadMoreMultireddits: () => e(Object(d.f)(t.profileName, !0))
+					onLoadMoreMultireddits: () => e(Object(d.g)(t.profileName, !0))
 				}), (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, s), e), t), {
 					onLoadMore: () => {
 						e.hasMoreMultireddits && t.onLoadMoreMultireddits()
@@ -11258,4 +11258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.502b6853898d1aef762e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7b80226970ca38ceedf1.js.map

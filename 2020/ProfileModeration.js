@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.3d1bb075df00b902f633.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.0a3075304b5892f05d1d.js
+// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./src/reddit/components/Settings/shared/Heading.m.less": function(e, t, n) {
@@ -107,7 +107,7 @@
 			n.d(t, "b", (function() {
 				return g
 			})), n.d(t, "a", (function() {
-				return w
+				return E
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var o = n("./node_modules/lodash/throttle.js"),
@@ -148,8 +148,8 @@
 			const v = c.a.wrapped(h.a, "Gear", f.a),
 				_ = c.a.h3("Title", f.a),
 				k = c.a.div("TabNavContainer", f.a),
-				E = c.a.div("Tabs", f.a),
-				w = c.a.wrapped(e => {
+				w = c.a.div("Tabs", f.a),
+				E = c.a.wrapped(e => {
 					var {
 						active: t,
 						children: n,
@@ -217,7 +217,7 @@
 						className: Object(i.a)(o, {
 							[f.a.mConstrainWidth]: !!this.props.constrainWidth
 						})
-					}, x(this.props.icon), this.props.title), s.a.createElement(E, {
+					}, x(this.props.icon), this.props.title), s.a.createElement(w, {
 						className: Object(i.a)(o, {
 							[f.a.mConstrainWidth]: !!this.props.constrainWidth
 						}),
@@ -326,7 +326,7 @@
 				v = n.n(y);
 			const _ = p.a.li("listItem", v.a),
 				k = p.a.wrapped(b.j, "sectionWrapper", v.a);
-			class E extends r.a.PureComponent {
+			class w extends r.a.PureComponent {
 				render() {
 					const {
 						profileName: e
@@ -347,21 +347,21 @@
 						hk: "1pCYsz"
 					})))], {
 						hk: "3sL7qq"
-					}))), r.a.createElement(w, {
+					}))), r.a.createElement(E, {
 						title: o.fbt._("Traffic", null, {
 							hk: "3p7y3G"
 						}),
 						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/traffic/")
 					}, o.fbt._("View traffic statistics and graphs for your profile.", null, {
 						hk: "Ldtz5"
-					})), r.a.createElement(w, {
+					})), r.a.createElement(E, {
 						title: o.fbt._("Moderators", null, {
 							hk: "3NZZDm"
 						}),
 						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/moderators/")
 					}, o.fbt._("If your profile's comments are busy and you need some help with moderation, you might want to add on some users as mods to assist you. You can do this here. Choose users that you trust to represent you via their statements and mod actions, and be mindful of what permissions your grant them.", null, {
 						hk: "4iZhyS"
-					})), r.a.createElement(w, {
+					})), r.a.createElement(E, {
 						title: o.fbt._("Moderation log", null, {
 							hk: "3SnXfa"
 						}),
@@ -372,7 +372,7 @@
 						hk: "1jkBZO"
 					})), r.a.createElement(_, null, o.fbt._("The moderation log will also list actions taken by Automoderator if it is set up to make actions on your profile.", null, {
 						hk: "1jFtuS"
-					})))), r.a.createElement(w, {
+					})))), r.a.createElement(E, {
 						title: o.fbt._("Automoderator", null, {
 							hk: "RlDIl"
 						}),
@@ -389,14 +389,14 @@
 						hk: "38DU6Z"
 					})))], {
 						hk: "3RyHot"
-					}))))), r.a.createElement(w, {
+					}))))), r.a.createElement(E, {
 						title: o.fbt._("Moderation queue", null, {
 							hk: "2klx0L"
 						}),
 						url: "".concat(h.a.redditUrl, "/").concat(t, "/about/modqueue/")
 					}, o.fbt._("Content that users report can be found here so you can approve or remove it.", null, {
 						hk: "1XCfvS"
-					})), r.a.createElement(w, {
+					})), r.a.createElement(E, {
 						title: o.fbt._("Ban users", null, {
 							hk: "1aSzpl"
 						}),
@@ -415,7 +415,7 @@
 						hk: "lLQqA"
 					})), r.a.createElement(_, null, o.fbt._("It is important to use bans only in situations where it is warranted. Educating users or ignoring someone’s bad behavior can often be more effective than banning them.", null, {
 						hk: "RCs7j"
-					}))))), r.a.createElement(w, {
+					}))))), r.a.createElement(E, {
 						title: o.fbt._("Flairs", null, {
 							hk: "1Xgd2b"
 						}),
@@ -424,7 +424,7 @@
 						hk: "1d8Ly3"
 					}), r.a.createElement("ul", null, r.a.createElement(_, null, o.fbt._("“Flair” is like a label you can apply to a post or a specific user. For example, you could flair someone who works with you so other users are aware of who they are.", null, {
 						hk: "2vQddD"
-					})))), r.a.createElement(w, {
+					})))), r.a.createElement(E, {
 						title: o.fbt._("Spam", null, {
 							hk: "Z2twC"
 						}),
@@ -433,7 +433,14 @@
 						hk: "13xRK1"
 					}), r.a.createElement("ul", null, r.a.createElement(_, null, o.fbt._("You can approve content that was removed accidentally.", null, {
 						hk: "4n2TOC"
-					})))), r.a.createElement(x, null, o.fbt._("Have more questions?", null, {
+					})))), r.a.createElement(E, {
+						title: o.fbt._("Awards", null, {
+							hk: "4C97ga"
+						}),
+						url: "/".concat(t, "/about/awards/")
+					}, o.fbt._("Optional awards can be toggled on or off to make them available on posts and comments in your community. When disabled, users will not be able to use those awards on your content.", null, {
+						hk: "4oO0RA"
+					})), r.a.createElement(x, null, o.fbt._("Have more questions?", null, {
 						hk: "2YqHcl"
 					}), r.a.createElement(b.n, {
 						href: "https://www.reddithelp.com/en/submit-request"
@@ -443,7 +450,7 @@
 				}
 			}
 
-			function w(e) {
+			function E(e) {
 				let {
 					title: t,
 					url: n,
@@ -462,7 +469,7 @@
 				} = e;
 				return r.a.createElement(k, null, r.a.createElement(b.m, null, t))
 			}
-			var S = E;
+			var S = w;
 			const O = Object(i.c)({
 					isModerator: (e, t) => Object(u.f)(e, t.match.params),
 					isOwnProfile: (e, t) => Object(m.L)(e, t.match.params.profileName),
@@ -502,4 +509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.3d1bb075df00b902f633.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.0a3075304b5892f05d1d.js.map

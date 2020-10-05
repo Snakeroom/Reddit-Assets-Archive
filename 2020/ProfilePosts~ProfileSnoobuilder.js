@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.b0fa0bd2999ad32234cd.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.16abfd364f0054587ff7.js
+// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less": function(e, t, n) {
@@ -741,7 +741,7 @@
 					multireddits: m.o
 				}),
 				f = Object(o.b)(x, (e, t) => ({
-					onLoadMoreMultireddits: () => e(Object(d.f)(t.profileName, !0))
+					onLoadMoreMultireddits: () => e(Object(d.g)(t.profileName, !0))
 				}), (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, n), e), t), {
 					onLoadMore: () => {
 						e.hasMoreMultireddits && t.onLoadMoreMultireddits()
@@ -1716,4 +1716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.b0fa0bd2999ad32234cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.16abfd364f0054587ff7.js.map

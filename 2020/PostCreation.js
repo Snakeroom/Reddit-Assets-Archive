@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.dca4171bede1c427a7a8.js
-// Retrieved at 10/5/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.be5a8b3569d121eae936.js
+// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -677,16 +677,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.wb
+					experimentName: u.ub
 				});
-				return Object(u.Bc)(t) ? void 0 : t
+				return Object(u.zc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.xb
+					experimentName: u.vb
 				});
-				return Object(u.Bc)(t) ? void 0 : t
-			}, (e, t) => e === u.yb.Enabled && t === u.yb.Enabled);
+				return Object(u.zc)(t) ? void 0 : t
+			}, (e, t) => e === u.wb.Enabled && t === u.wb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -734,7 +734,7 @@
 			};
 			const E = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "fc0304d-production"
+					SENTRY_RELEASE_VERSION: "ec17b87-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3872,7 +3872,7 @@
 							experimentEligibilitySelector: T.H,
 							experimentName: _.ab
 						});
-						return !(!t || Object(_.Bc)(t))
+						return !(!t || Object(_.zc)(t))
 					},
 					isLoggedIn: T.H,
 					prefersReducedAnimations: P.c
@@ -8025,7 +8025,7 @@
 					} = this.props;
 					if (!o) return;
 					let r = "";
-					return s && (r += s), e === A.tb.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.tb.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
+					return s && (r += s), e === A.rb.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.rb.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -26088,7 +26088,7 @@
 						adblock: g.adblock(s)
 					})
 				},
-				S = (e, t, n) => {
+				S = (e, t, n, s) => {
 					Object(f.a)(Object.assign(Object.assign({
 						source: "global",
 						action: "view",
@@ -26097,6 +26097,7 @@
 						actionInfo: g.actionInfo(e, {
 							success: t
 						}),
+						profile: g.profileById(e, Object(u.m)(e, s)),
 						subreddit: g.subredditById(e, Object(p.G)(e, n)),
 						userSubreddit: g.userSubreddit(e),
 						adblock: g.adblock(e)
@@ -34187,4 +34188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.dca4171bede1c427a7a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.be5a8b3569d121eae936.js.map

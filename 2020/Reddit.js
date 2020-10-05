@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f0ee0cba3eb8a2892f57.js
-// Retrieved at 10/5/2020, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4ad3134f0294cadae927.js
+// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -3198,11 +3198,11 @@
 				xa = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				Pa = s("./src/reddit/selectors/experiments/utils.ts");
 			const Ea = Object(h.a)(e => Object(xa.c)(e, {
-					experimentName: vs.sb,
+					experimentName: vs.qb,
 					experimentEligibilitySelector: ja
 				}), Pa.a),
 				ja = e => Object(Kt.G)(e) || Object(Kt.H)(e),
-				Sa = Object(h.a)(Ea, e => e === vs.ub.Redesign);
+				Sa = Object(h.a)(Ea, e => e === vs.sb.Redesign);
 			var wa = s("./src/reddit/selectors/multireddit.ts"),
 				_a = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				ka = s("./src/lib/LinkedListMap/index.ts");
@@ -5078,9 +5078,9 @@
 			var Eo = s("./src/reddit/helpers/isArrayEqual.ts"),
 				jo = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				So = s("./src/reddit/selectors/experiments/trending.ts");
-			const wo = e => Object(Kt.E)(e) || vs.rc.Treatment1 === Object(xa.c)(e, {
+			const wo = e => Object(Kt.E)(e) || vs.pc.Treatment1 === Object(xa.c)(e, {
 				experimentEligibilitySelector: xa.a,
-				experimentName: vs.oc
+				experimentName: vs.mc
 			});
 			var _o = s("./src/reddit/selectors/searchResults.ts"),
 				ko = s("./src/reddit/selectors/tooltip.ts"),
@@ -6199,7 +6199,7 @@
 						}), e(Object(Dc.b)(!0))) : window.location.host = "old.reddit.com"
 					},
 					requestAwardKarma: () => {
-						t.user && e(Object(Uc.e)(Object(Qt.e)(t.user)))
+						t.user && e(Object(Uc.f)(Object(Qt.e)(t.user)))
 					},
 					dispatchOpenLoginModal: () => e(Object(Ko.h)()),
 					logoutUser: () => {
@@ -12062,8 +12062,8 @@
 			const Cs = {
 					displayDelay: 15,
 					displayOnRoutes: [g.Bb.SUBREDDIT, g.Bb.COMMENTS],
-					experimentName: Se.nb,
-					experimentVariant: Se.qb.On,
+					experimentName: Se.lb,
+					experimentVariant: Se.ob.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -13268,11 +13268,11 @@
 		"./src/reddit/routes/moderationPages/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return d
+				return u
 			})), s.d(t, "b", (function() {
-				return l
+				return m
 			})), s.d(t, "c", (function() {
-				return b
+				return g
 			}));
 			var n = s("./node_modules/core-js/modules/web.dom.iterable.js"),
 				a = s.n(n),
@@ -13280,9 +13280,11 @@
 				o = s("./node_modules/react-router/esm/react-router.js"),
 				i = s("./src/lib/constants/index.ts");
 			const c = Object.keys(i.Qb).map(e => i.Qb[e]).join("|"),
-				d = e => "/".concat(e, "/about/scheduledposts"),
-				l = e => "/".concat(e, "/about/eventposts"),
-				u = Object(r.a)({
+				d = [i.Qb.Awards],
+				l = d.join("|"),
+				u = e => "/".concat(e, "/about/scheduledposts"),
+				m = e => "/".concat(e, "/about/eventposts"),
+				p = Object(r.a)({
 					resolved: {},
 					chunkName: () => "ModerationPages",
 					isReady(e) {
@@ -13302,26 +13304,26 @@
 						return "./src/reddit/pages/ModHub/index.tsx"
 					}
 				}),
-				m = ["/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(revisions|wikibanned|wikicontributors)", "/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(edit|create|settings|revisions)/:wikiPageName+", "/r/:subredditName/about/:pageName(wiki)/:wikiPageName*"],
-				p = ["/r/:subredditName/about", "/r/:subredditName/about/:pageName(".concat(c, ")"), ...m],
-				b = e => !!Object(o.h)(e, {
+				b = ["/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(revisions|wikibanned|wikicontributors)", "/r/:subredditName/about/:pageName(wiki)/:wikiSubRoute(edit|create|settings|revisions)/:wikiPageName+", "/r/:subredditName/about/:pageName(wiki)/:wikiPageName*"],
+				h = ["/r/:subredditName/about", "/r/:subredditName/about/:pageName(".concat(c, ")"), "/user/:profileName/about/:pageName(".concat(l, ")"), ...b],
+				g = e => !!Object(o.h)(e, {
 					path: "/r/:subredditName/about"
 				}),
-				h = {
+				f = {
 					action: e => async (t, n, a) => {
 						const r = await Promise.all([s.e("vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754"), s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("vendors~CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~StandalonePostPage~Subreddit"), s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"), s.e("ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"), s.e("CollectionCommentsPage~CommentsPage~Frontpage~MembershipPaywallPage~ModListing~ModQueuePages~Moderat~83e43315"), s.e("ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49"), s.e("ModerationPages")]).then(s.bind(null, "./src/reddit/actions/pages/moderationPages/index.ts")).then(e => e.moderationPageRequested);
 						await r(e)(t, n, a)
 					},
 					chunk: i.p.MODERATION_PAGES,
-					component: u,
+					component: p,
 					exact: !0,
 					meta: {
 						name: i.Bb.MODERATION_PAGES
 					},
-					path: p,
+					path: h,
 					prefetches: [i.p.SUBREDDIT]
 				};
-			t.a = h
+			t.a = f
 		},
 		"./src/reddit/routes/multireddit/index.ts": function(e, t, s) {
 			"use strict";
@@ -14165,11 +14167,11 @@
 				h = e => e.accountManagerModalData.redirectUrl,
 				g = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, b, c.a, p.a, d.b, e => Object(l.c)(e, {
 					experimentEligibilitySelector: m,
-					experimentName: i.dc
+					experimentName: i.bc
 				}), (e, t, s, a, c, d, l) => {
 					let u = "".concat(n.a.accountManagerOrigin).concat(e);
 					return l && (u = Object(r.a)(u, {
-						["experiment_".concat(i.dc)]: l
+						["experiment_".concat(i.bc)]: l
 					})), e === o.c.GoogleOneTap ? Object(r.a)(u, {
 						[i.F]: d
 					}) : (a && (u = Object(r.a)(u, {
@@ -14212,9 +14214,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.E)(e) || !(n.qc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.E)(e) || !(n.oc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.nc
+				experimentName: n.lc
 			}))
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
@@ -14521,4 +14523,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f0ee0cba3eb8a2892f57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4ad3134f0294cadae927.js.map
