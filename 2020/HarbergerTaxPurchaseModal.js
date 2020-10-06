@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.b69f9fe048f18077d31e.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.4ff5af480f68e7357e82.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, r) {
@@ -606,7 +606,7 @@
 			var N = r("./src/reddit/components/Governance/HarbergerTax/BannerPurchaseModal/Upsell/index.m.less"),
 				C = r.n(N);
 			const _ = Object(u.c)({
-				tokenName: f.q
+				tokenName: f.p
 			});
 			var T = Object(s.b)(_)((function(e) {
 					const {
@@ -768,7 +768,7 @@
 				l = r("./src/reddit/components/Governance/Token/index.m.less"),
 				u = r.n(l);
 			const m = Object(o.c)({
-				tokenSymbol: d.r
+				tokenSymbol: d.q
 			});
 			t.a = Object(s.b)(m)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -854,4 +854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.b69f9fe048f18077d31e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.4ff5af480f68e7357e82.js.map

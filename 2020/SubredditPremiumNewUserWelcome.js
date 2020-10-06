@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4f14cf4b5684fc705af7.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.ed82fc11e9cd9f2856fb.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, s) {
@@ -113,7 +113,7 @@
 					} = t;
 					const a = e.user.account;
 					if (a && !Object(d.c)(s) && r === l.a.Achievement && o.a[s.id]) {
-						const t = Object(u.j)(e, {
+						const t = Object(u.i)(e, {
 							subredditId: n,
 							userId: a.id
 						});
@@ -266,8 +266,8 @@
 				g = s("./src/reddit/endpoints/economics/banners.ts"),
 				h = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				f = s("./src/reddit/models/Badge/managementPage.ts"),
-				j = s("./src/reddit/selectors/economics.ts"),
-				_ = s("./src/reddit/selectors/subreddit.ts"),
+				_ = s("./src/reddit/selectors/economics.ts"),
+				j = s("./src/reddit/selectors/subreddit.ts"),
 				x = s("./src/reddit/selectors/telemetry.ts"),
 				E = s("./node_modules/fbt/lib/FbtPublic.js"),
 				w = s("./src/reddit/icons/svgs/Admin/index.tsx"),
@@ -317,7 +317,7 @@
 					let {
 						subreddit: s
 					} = t;
-					return Object(j.s)(e, s.id)
+					return Object(_.s)(e, s.id)
 				}
 			});
 			var M = Object(m.c)(Object(a.b)(L)((function(e) {
@@ -478,7 +478,7 @@
 			const $ = Object(c.c)({
 					bannerIsDismissed: (e, t) => {
 						const s = Object(p.m)(e, t);
-						return s ? Object(j.g)(e, s, g.a.NewUserWelcome) : void 0
+						return s ? Object(_.g)(e, s, g.a.NewUserWelcome) : void 0
 					},
 					eligibleForBanner: (e, t) => {
 						const s = e.user.account,
@@ -486,7 +486,7 @@
 						if (!s) return !1;
 						if (Object(p.N)(e, t) !== u.g.Large) return !1;
 						if (n) {
-							const t = Object(j.f)(e, n.id)[f.a.Achievement];
+							const t = Object(_.f)(e, n.id)[f.a.Achievement];
 							if (t && t.type === K) return !1
 						}
 						return !0
@@ -494,7 +494,7 @@
 					subreddit: p.q,
 					userIsSubscribed: (e, t) => {
 						const s = Object(p.q)(e, t);
-						return !!s && Object(_.fb)(e, {
+						return !!s && Object(j.fb)(e, {
 							identifier: {
 								name: s.name,
 								type: "subreddit"
@@ -795,4 +795,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4f14cf4b5684fc705af7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.ed82fc11e9cd9f2856fb.js.map

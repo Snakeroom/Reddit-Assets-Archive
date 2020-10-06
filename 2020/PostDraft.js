@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.7f0636bb88f8a9e4440f.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.634c979bd0bd092ec4a0.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -481,7 +481,7 @@
 				f = p.a.ol("Ol", u.a),
 				x = p.a.div("Title", u.a),
 				g = Object(a.c)({
-					submissionType: c.fb
+					submissionType: c.gb
 				});
 			t.a = p.a.wrapped(Object(i.b)(g)(e => {
 				const {
@@ -587,7 +587,7 @@
 				},
 				N = Object(l.c)({
 					hasIdCardWidgetData: M,
-					isCreationPagePending: x.E,
+					isCreationPagePending: x.F,
 					profile: (e, t) => {
 						let {
 							pageLayer: n,
@@ -1046,7 +1046,7 @@
 			const {
 				fbt: u
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = Object(d.c)({
-				title: l.kb
+				title: l.lb
 			});
 			var h = Object(a.b)(p)(e => {
 					const {
@@ -2041,4 +2041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.7f0636bb88f8a9e4440f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.634c979bd0bd092ec4a0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.016b2140796d856e4365.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.d6fba8ffb8ebede824f5.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -372,7 +372,7 @@
 				fbt: H
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const M = Object(i.c)({
-				tokenDisplayConversion: g.p,
+				tokenDisplayConversion: g.o,
 				wallet: g.g
 			});
 			var A = Object(d.b)(M, e => ({
@@ -604,7 +604,7 @@
 				l = n("./src/reddit/components/Governance/Token/index.m.less"),
 				m = n.n(l);
 			const u = Object(o.c)({
-				tokenSymbol: c.r
+				tokenSymbol: c.q
 			});
 			t.a = Object(s.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -927,4 +927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.016b2140796d856e4365.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.d6fba8ffb8ebede824f5.js.map

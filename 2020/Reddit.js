@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4ad3134f0294cadae927.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.03a4168bc98b2e5cf161.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -5740,7 +5740,7 @@
 					communityPointsConversionEnabled: us.d.spPointsCoinConversion,
 					communityPointsName: (e, t) => {
 						const s = Object(Cs.q)(e, t);
-						return Object(qi.q)(e, {
+						return Object(qi.p)(e, {
 							subredditId: null == s ? void 0 : s.id
 						})
 					},
@@ -14199,13 +14199,6 @@
 				})
 			}
 		},
-		"./src/reddit/selectors/experiments/pollsGA.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return n
-			}));
-			const n = e => !0
-		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -14222,64 +14215,59 @@
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return u
+				return c
 			})), s.d(t, "c", (function() {
-				return m
+				return d
 			})), s.d(t, "d", (function() {
-				return p
+				return l
 			})), s.d(t, "e", (function() {
-				return b
+				return u
 			})), s.d(t, "g", (function() {
-				return h
-			})), s.d(t, "t", (function() {
-				return g
-			})), s.d(t, "h", (function() {
-				return f
-			})), s.d(t, "i", (function() {
-				return v
-			})), s.d(t, "j", (function() {
-				return C
-			})), s.d(t, "k", (function() {
-				return O
-			})), s.d(t, "q", (function() {
-				return y
-			})), s.d(t, "r", (function() {
-				return x
-			})), s.d(t, "p", (function() {
-				return P
-			})), s.d(t, "m", (function() {
-				return E
-			})), s.d(t, "n", (function() {
-				return j
-			})), s.d(t, "u", (function() {
-				return S
-			})), s.d(t, "a", (function() {
-				return w
-			})), s.d(t, "f", (function() {
-				return _
+				return m
 			})), s.d(t, "s", (function() {
-				return k
+				return p
+			})), s.d(t, "h", (function() {
+				return b
+			})), s.d(t, "i", (function() {
+				return h
+			})), s.d(t, "j", (function() {
+				return g
+			})), s.d(t, "p", (function() {
+				return f
+			})), s.d(t, "q", (function() {
+				return v
 			})), s.d(t, "o", (function() {
-				return M
+				return C
 			})), s.d(t, "l", (function() {
-				return I
+				return O
+			})), s.d(t, "m", (function() {
+				return y
+			})), s.d(t, "t", (function() {
+				return x
+			})), s.d(t, "a", (function() {
+				return P
+			})), s.d(t, "f", (function() {
+				return E
+			})), s.d(t, "r", (function() {
+				return j
+			})), s.d(t, "n", (function() {
+				return S
+			})), s.d(t, "k", (function() {
+				return w
 			}));
 			var n = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				a = s("./src/reddit/endpoints/governance/crypto.ts"),
-				r = s("./src/reddit/featureFlags/index.ts"),
-				o = s("./src/reddit/selectors/experiments/pollsGA.ts"),
-				i = s("./src/reddit/selectors/postCreations.ts");
-			const c = [],
-				d = {},
-				l = {
+				a = s("./src/reddit/endpoints/governance/crypto.ts");
+			const r = [],
+				o = {},
+				i = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				},
-				u = (e, t) => {
+				c = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
-					const n = S(e, {
+					const n = x(e, {
 						subredditId: s
 					});
 					return n && n.extra && n.extra.contracts && n.extra.contracts.harberger ? n.extra.contracts.harberger : {
@@ -14290,76 +14278,63 @@
 						token: void 0
 					}
 				},
-				m = (e, t) => {
-					const s = E(e, t);
+				d = (e, t) => {
+					const s = O(e, t);
 					if (s) return s.mainHeader
 				},
-				p = (e, t) => {
-					const s = E(e, t);
+				l = (e, t) => {
+					const s = O(e, t);
 					return s && s.mainHeader ? s.mainHeader.price : "0"
 				},
-				b = (e, t) => {
-					const s = E(e, t);
+				u = (e, t) => {
+					const s = O(e, t);
 					return s && s.mainHeader ? {
 						owner: s.mainHeader.owner,
 						ownerId: s.mainHeader.ownerId
-					} : d
+					} : o
 				},
-				h = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
-				g = (e, t) => {
-					const s = h(e, t),
+				m = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
+				p = (e, t) => {
+					const s = m(e, t),
 						n = s && s.publicAddress;
 					if (!n) throw new Error("No wallet address found");
 					return n
 				},
-				f = (e, t) => {
-					const s = h(e, t);
+				b = (e, t) => {
+					const s = m(e, t);
 					return s && s.amount || "0"
 				},
-				v = (e, t) => {
-					if (Object(o.a)(e)) {
-						const t = Object(i.g)(e);
-						if (t.allowedPostTypes && t.allowedPostTypes.polls) return !0
-					}
-					const s = r.d.spPolls(e),
-						n = t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0;
-					if (n) {
-						const e = !!n.polls && !1 === n.polls.canCreate;
-						return s && !e
-					}
-					return s
-				},
-				C = (e, t) => {
+				h = (e, t) => {
 					return (e.users.publicWallets[t.userId] || {})[t.subredditId]
 				},
-				O = (e, t) => {
+				g = (e, t) => {
 					const s = Object(n.m)(e, t);
-					return s && e.subreddits.gov.releaseNotes[s] || c
+					return s && e.subreddits.gov.releaseNotes[s] || r
 				},
-				y = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
-				x = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || l,
-				P = (e, t) => {
-					const s = k(e, t);
+				f = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
+				v = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || i,
+				C = (e, t) => {
+					const s = j(e, t);
 					return s && s.decimals ? "1" + "0".repeat(s.decimals) : "1"
 				},
-				E = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				j = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				S = (e, t) => {
-					const s = j(e, t);
+				O = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				y = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				x = (e, t) => {
+					const s = y(e, t);
 					return s && s.walletProvider
 				},
-				w = (e, t) => {
-					const s = S(e, t),
-						n = j(e, t);
+				P = (e, t) => {
+					const s = x(e, t),
+						n = y(e, t);
 					return s && s.provider || n && n.provider
 				},
-				_ = (e, t) => {
-					const s = w(e, t);
+				E = (e, t) => {
+					const s = P(e, t);
 					return s === a.a.Ethereum || s === a.a.Rinkeby || s === a.a.EthTraderEthereum || s === a.a.EthTraderRinkeby
 				},
-				k = (e, t) => {
-					const s = S(e, t),
-						n = w(e, t);
+				j = (e, t) => {
+					const s = x(e, t),
+						n = P(e, t);
 					if (s && !s.inTransition && n === a.a.Stellar) return {
 						address: s.extra && s.extra.issuerAddress || "",
 						decimals: s.extra && s.extra.decimals || 7,
@@ -14374,19 +14349,19 @@
 						image: o.image
 					}
 				},
-				M = (e, t) => {
+				S = (e, t) => {
 					let {
 						subredditId: s
 					} = t;
-					const n = S(e, {
+					const n = x(e, {
 						subredditId: s
 					});
 					return n && n.extra && n.extra.contracts && n.extra.contracts.subscriptions ? n.extra.contracts.subscriptions : {
 						address: void 0
 					}
 				},
-				I = (e, t) => {
-					const s = j(e, t);
+				w = (e, t) => {
+					const s = y(e, t);
 					return !!s && !!s.walletProvider && !s.walletProvider.inTransition
 				}
 		},
@@ -14523,4 +14498,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4ad3134f0294cadae927.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.03a4168bc98b2e5cf161.js.map

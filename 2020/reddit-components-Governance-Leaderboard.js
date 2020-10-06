@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.f5c99e62b87f3b1a5ec5.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.0a9c23e14d499d3f91c4.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, s) {
@@ -313,12 +313,12 @@
 					subreddit: D.subreddit(r)
 				})
 			};
-			const q = Object(i.c)({
+			const F = Object(i.c)({
 				accountId: e => e.user.account ? e.user.account.id : void 0,
 				badgesEnabled: e => H.d.spBadges(e),
-				tokenDisplayConversion: E.p
+				tokenDisplayConversion: E.o
 			});
-			var F = Object(S.c)(Object(d.b)(q)((function(e) {
+			var q = Object(S.c)(Object(d.b)(F)((function(e) {
 					const t = B()();
 					return a.a.createElement(T.a, {
 						className: Object(O.a)(P.a.container, e.className, {
@@ -382,7 +382,7 @@
 					})) : this.props.leaderboard ? a.a.createElement(o.Fragment, null, this.props.leaderboard.map(e => {
 						switch (e.type) {
 							case r.User:
-								return a.a.createElement(F, {
+								return a.a.createElement(q, {
 									className: W.a.entryUser,
 									entry: e,
 									subredditId: this.props.subredditId,
@@ -405,7 +405,7 @@
 				}
 			}
 			const J = Object(i.c)({
-				tokenName: E.q,
+				tokenName: E.p,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 				leaderboard: (e, t) => {
 					let {
@@ -511,4 +511,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.f5c99e62b87f3b1a5ec5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.0a9c23e14d499d3f91c4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.e8f757fc10401ceb7a49.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.1fd586c8b1c6bb466875.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistrationStellarBanner"], {
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
@@ -19,7 +19,7 @@
 				d = n("./src/reddit/components/Governance/Token/index.m.less"),
 				m = n.n(d);
 			const u = Object(r.c)({
-				tokenSymbol: l.r
+				tokenSymbol: l.q
 			});
 			t.a = Object(o.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -274,7 +274,7 @@
 					let {
 						subredditId: n
 					} = t;
-					const s = Object(y.u)(e, {
+					const s = Object(y.t)(e, {
 						subredditId: n
 					});
 					return !(!s || s.provider !== m.a.Stellar)
@@ -331,4 +331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.e8f757fc10401ceb7a49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistrationStellarBanner.1fd586c8b1c6bb466875.js.map

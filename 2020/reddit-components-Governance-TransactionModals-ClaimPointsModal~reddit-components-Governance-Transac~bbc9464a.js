@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.fe16ad49ae0f00b0b15d.js
-// Retrieved at 9/30/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.6b3356dfa706a5c458e5.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, a) {
@@ -541,7 +541,7 @@
 						apiContext: A
 					} = Object(t.useContext)(u.a);
 					return A
-				}(), w = Object(s.d)(e => Object(p.t)(e, A)).toLowerCase(), R = Object(s.d)(e => Object(p.u)(e, A));
+				}(), w = Object(s.d)(e => Object(p.s)(e, A)).toLowerCase(), R = Object(s.d)(e => Object(p.t)(e, A));
 				Object(t.useEffect)(() => (A.transactionIsBlockedOnIOS ? N().then(A => {
 					A && Object(d.b)(A) ? x(rA.REQUEST_VAULT_PASSWORD) : v()
 				}) : v(), () => {
@@ -1017,4 +1017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.fe16ad49ae0f00b0b15d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a.6b3356dfa706a5c458e5.js.map

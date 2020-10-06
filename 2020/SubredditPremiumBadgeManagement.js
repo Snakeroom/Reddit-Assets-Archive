@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.e6a281d4e164ae075650.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.3271c3ae7e54d21f92a5.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, a) {
@@ -382,7 +382,7 @@
 					} = t;
 					const d = e.user.account;
 					if (d && !Object(o.c)(a) && n === l.a.Achievement && r.a[a.id]) {
-						const t = Object(u.j)(e, {
+						const t = Object(u.i)(e, {
 							subredditId: s,
 							userId: d.id
 						});
@@ -2193,4 +2193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.e6a281d4e164ae075650.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.3271c3ae7e54d21f92a5.js.map

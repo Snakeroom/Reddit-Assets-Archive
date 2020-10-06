@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.2a933c790b4eae452913.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.cc13a540f32b21fc488d.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -2032,14 +2032,14 @@
 				N = A.a.wrapped(I.a, "LoadingIcon", P.a),
 				L = Object(M.t)(),
 				z = Object(l.c)({
-					destSubreddit: x.g,
-					editorMode: x.h,
-					errorMessages: x.i,
-					hasError: x.j,
-					markdownDraft: x.k,
-					pending: x.T,
-					postRequirements: x.ib,
-					rteDraft: x.l,
+					destSubreddit: x.h,
+					editorMode: x.i,
+					errorMessages: x.j,
+					hasError: x.k,
+					markdownDraft: x.l,
+					pending: x.U,
+					postRequirements: x.jb,
+					rteDraft: x.m,
 					subreddit: M.q,
 					uploads: e => e.uploads,
 					user: S.i,
@@ -2848,4 +2848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.2a933c790b4eae452913.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.cc13a540f32b21fc488d.js.map

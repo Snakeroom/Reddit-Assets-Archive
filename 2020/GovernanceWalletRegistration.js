@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.bbd735d30d85c6a4c6e2.js
-// Retrieved at 10/1/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.b814142c5b3f69fd82c8.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -184,7 +184,7 @@
 						subredditId: e.subredditId
 					}))), n(Object(i.e)({
 						kind: p.b.SuccessCommunity,
-						text: a.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [a.fbt._param("amount", Object(r.a)(e.amount)), a.fbt._param("tokenName", Object(g.q)(s(), {
+						text: a.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [a.fbt._param("amount", Object(r.a)(e.amount)), a.fbt._param("tokenName", Object(g.p)(s(), {
 							subredditId: e.subredditId
 						})), a.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
@@ -220,7 +220,7 @@
 				l = n("./src/reddit/components/Governance/Token/index.m.less"),
 				m = n.n(l);
 			const u = Object(o.c)({
-				tokenSymbol: d.r
+				tokenSymbol: d.q
 			});
 			t.a = Object(r.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -335,7 +335,7 @@
 			}
 			const f = Object(m.c)({
 				blockchainProvider: l.a,
-				token: l.s,
+				token: l.r,
 				userIsLoggedIn: e => !!e.user.account,
 				publicAddress: (e, t) => {
 					let {
@@ -1050,7 +1050,7 @@
 					return {
 						blockchainProvider: Object(m.a)(e, n),
 						subredditId: n.subredditId,
-						token: Object(m.s)(e, n)
+						token: Object(m.r)(e, n)
 					}
 				}),
 				v = Object(l.t)(),
@@ -1515,4 +1515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.bbd735d30d85c6a4c6e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.b814142c5b3f69fd82c8.js.map

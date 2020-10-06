@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.655b809b5155aac6fed0.js
-// Retrieved at 10/1/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.a34ce87512b68b68eed0.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -484,7 +484,7 @@
 						subredditId: e.subredditId
 					}))), a(Object(l.e)({
 						kind: b.b.SuccessCommunity,
-						text: n.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [n.fbt._param("amount", Object(r.a)(e.amount)), n.fbt._param("tokenName", Object(h.q)(c(), {
+						text: n.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [n.fbt._param("amount", Object(r.a)(e.amount)), n.fbt._param("tokenName", Object(h.p)(c(), {
 							subredditId: e.subredditId
 						})), n.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
@@ -612,7 +612,7 @@
 				d = a("./src/reddit/components/Governance/Token/index.m.less"),
 				u = a.n(d);
 			const m = Object(s.c)({
-				tokenSymbol: i.r
+				tokenSymbol: i.q
 			});
 			t.a = Object(r.b)(m)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -654,7 +654,7 @@
 				m = a("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = a.n(m);
 			const b = Object(s.c)({
-				tokenDisplayConversion: u.p
+				tokenDisplayConversion: u.o
 			});
 			t.a = Object(r.b)(b)((function(e) {
 				return c.a.createElement("div", {
@@ -1191,7 +1191,7 @@
 					},
 					productOffersPending: B.b,
 					subredditLockedCoins: e => Object(L.a)(e, f),
-					tokenConversion: e => Object(u.p)(e, f)
+					tokenConversion: e => Object(u.o)(e, f)
 				})), E = null === (a = null === (t = null == v ? void 0 : v.pricePackages) || void 0 === t ? void 0 : t[0]) || void 0 === a ? void 0 : a.price, O = Object(i.a)(), V = Object(S.a)(), [G, R] = Object(n.useState)(""), [U, H] = Object(n.useState)(0);
 				Object(n.useEffect)(() => {
 					if (E && !G) {
@@ -1280,8 +1280,8 @@
 				const f = {
 						subredditId: b
 					},
-					h = Object(r.d)(e => Object(u.q)(e, f)),
-					v = Object(r.d)(e => Object(u.u)(e, f)),
+					h = Object(r.d)(e => Object(u.p)(e, f)),
+					v = Object(r.d)(e => Object(u.t)(e, f)),
 					g = null === (a = null === (t = null === (e = null == v ? void 0 : v.extra) || void 0 === e ? void 0 : e.contracts) || void 0 === t ? void 0 : t.unlocked) || void 0 === a ? void 0 : a.address;
 				if (!g) throw new Error("No community points contract address");
 				Object(n.useEffect)(() => {
@@ -1888,4 +1888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.655b809b5155aac6fed0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.a34ce87512b68b68eed0.js.map

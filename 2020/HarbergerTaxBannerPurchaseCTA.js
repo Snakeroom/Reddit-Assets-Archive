@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.6a184af952d8c90da120.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.fc780a016842e0ecce1a.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -77,7 +77,7 @@
 						const n = Object(f.q)(e, t),
 							r = e.user.account;
 						if (n && r) {
-							const t = Object(g.j)(e, {
+							const t = Object(g.i)(e, {
 								subredditId: n.id,
 								userId: r.id
 							});
@@ -87,13 +87,13 @@
 					subreddit: f.q,
 					tokenDisplayConversion: (e, t) => {
 						const n = Object(f.q)(e, t) || void 0;
-						return Object(g.p)(e, {
+						return Object(g.o)(e, {
 							subredditId: n && n.id
 						})
 					},
 					useCrypto: (e, t) => {
 						const n = Object(f.q)(e, t);
-						return !!n && Object(g.l)(e, {
+						return !!n && Object(g.k)(e, {
 							subredditId: n.id
 						})
 					},
@@ -186,7 +186,7 @@
 				u = n("./src/reddit/components/Governance/Token/index.m.less"),
 				b = n.n(u);
 			const l = Object(c.c)({
-				tokenSymbol: a.r
+				tokenSymbol: a.q
 			});
 			t.a = Object(o.b)(l)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -393,4 +393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.6a184af952d8c90da120.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.fc780a016842e0ecce1a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.78ddf2db52a76c4228fb.js
-// Retrieved at 10/5/2020, 5:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.134455c1e586a9e56d6d.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -9370,7 +9370,7 @@
 					showAwardsPlaque: F.a,
 					showEditFlair: fe.a,
 					subredditOrProfile: W.ab,
-					isEditing: D.F,
+					isEditing: D.G,
 					userIsOp: H.jb
 				}), (e, t) => {
 					let {
@@ -15916,10 +15916,10 @@
 					postEvent: E(e)
 				}),
 				C = e => {
-					const t = Object(l.o)(e);
+					const t = Object(l.p)(e);
 					return t && E(t)
 				},
-				O = e => y(Object(l.o)(e)),
+				O = e => y(Object(l.p)(e)),
 				y = e => {
 					return {
 						postScheduled: !!e,
@@ -18657,4 +18657,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.78ddf2db52a76c4228fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.134455c1e586a9e56d6d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.c8c6a6570100959d7331.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.c6f40f19e5fdaa1a9fa3.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -532,8 +532,8 @@
 					subredditId: t
 				}), n)
 			}, k = Object(i.c)({
-				tokenDisplayConversion: p.p,
-				tokenName: p.q
+				tokenDisplayConversion: p.o,
+				tokenName: p.p
 			});
 			t.a = Object(r.b)(k)(e => {
 				const {
@@ -779,7 +779,7 @@
 				d = n("./src/reddit/components/Governance/Token/index.m.less"),
 				m = n.n(d);
 			const u = Object(r.c)({
-				tokenSymbol: l.r
+				tokenSymbol: l.q
 			});
 			t.a = Object(o.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -6901,4 +6901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c8c6a6570100959d7331.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c6f40f19e5fdaa1a9fa3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.7cb2ab403b597072f4e4.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.6644824e846ee71cca77.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, a) {
@@ -191,7 +191,7 @@
 						productId: a
 					} = t;
 					const s = e.products.models[a];
-					return Object(v.q)(e, {
+					return Object(v.p)(e, {
 						subredditId: s ? s.subredditId : void 0
 					})
 				}
@@ -315,7 +315,7 @@
 				i = a("./src/reddit/components/Governance/Token/index.m.less"),
 				m = a.n(i);
 			const u = Object(r.c)({
-				tokenSymbol: l.r
+				tokenSymbol: l.q
 			});
 			t.a = Object(n.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -378,4 +378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.7cb2ab403b597072f4e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.6644824e846ee71cca77.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.d75c1675b74e71754328.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.b6598ef303ba95f445f4.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -68,7 +68,7 @@
 				k = s.n(_);
 			const E = Object(d.c)({
 				latestWallet: v.g,
-				tokenDisplayConversion: v.p
+				tokenDisplayConversion: v.o
 			});
 			var w = Object(l.b)(E)((function(e) {
 					const t = e.latestWallet && e.latestWallet.amount || "0";
@@ -333,10 +333,10 @@
 						return Object(I.p)(e, s)
 					},
 					subreddit: T.S,
-					subscriptionCryptoDetails: v.o,
-					tokenDisplayConversion: v.p,
-					tokenName: v.q,
-					unlockedToken: v.s,
+					subscriptionCryptoDetails: v.n,
+					tokenDisplayConversion: v.o,
+					tokenName: v.p,
+					unlockedToken: v.r,
 					wallet: v.g
 				}),
 				ee = Object(l.b)($, (e, t) => ({
@@ -376,7 +376,7 @@
 				d = s("./src/reddit/components/Governance/Token/index.m.less"),
 				u = s.n(d);
 			const m = Object(a.c)({
-				tokenSymbol: l.r
+				tokenSymbol: l.q
 			});
 			t.a = Object(o.b)(m)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -418,7 +418,7 @@
 				m = s("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = s.n(m);
 			const h = Object(a.c)({
-				tokenDisplayConversion: u.p
+				tokenDisplayConversion: u.o
 			});
 			t.a = Object(o.b)(h)((function(e) {
 				return r.a.createElement("div", {
@@ -1051,4 +1051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.d75c1675b74e71754328.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.b6598ef303ba95f445f4.js.map

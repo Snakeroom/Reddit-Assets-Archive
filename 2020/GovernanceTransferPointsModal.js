@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.7fd6000a47b83f66ade3.js
-// Retrieved at 10/1/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.bfee09b8b34aca00b8e4.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/ethers/utils/address.js": function(e, t, n) {
@@ -311,7 +311,7 @@
 						subredditId: e.subredditId
 					}))), n(Object(c.e)({
 						kind: b.b.SuccessCommunity,
-						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(a.a)(e.amount)), s.fbt._param("tokenName", Object(f.q)(r(), {
+						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(a.a)(e.amount)), s.fbt._param("tokenName", Object(f.p)(r(), {
 							subredditId: e.subredditId
 						})), s.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
@@ -433,7 +433,7 @@
 				l = n("./src/reddit/components/Governance/Token/index.m.less"),
 				u = n.n(l);
 			const m = Object(o.c)({
-				tokenSymbol: d.r
+				tokenSymbol: d.q
 			});
 			t.a = Object(a.b)(m)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -712,9 +712,9 @@
 			const _ = Object(b.c)({
 				contentId: e => e.transfers.communityPoints.contentId,
 				blockchainProvider: p.a,
-				tokenDisplayConversion: p.p,
+				tokenDisplayConversion: p.o,
 				transferIsPending: e => e.transfers.communityPoints.api.pending,
-				unlockedToken: p.s,
+				unlockedToken: p.r,
 				wallet: p.g
 			});
 			var w = Object(a.b)(_)((function(e) {
@@ -847,14 +847,14 @@
 						userId: null,
 						wallet: null
 					};
-					let c = Object(p.j)(o, {
+					let c = Object(p.i)(o, {
 						subredditId: t,
 						userId: i.id
 					});
 					return c || (await n(Object(B.a)({
 						subredditId: t,
 						userIds: [i.id]
-					})), c = Object(p.j)(s(), {
+					})), c = Object(p.i)(s(), {
 						subredditId: t,
 						userId: i.id
 					})), {
@@ -1133,19 +1133,19 @@
 					subreddit: l.q,
 					tokenDisplayConversion: (e, t) => {
 						const n = Object(l.q)(e, t);
-						return Object(p.p)(e, {
+						return Object(p.o)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					tokenName: (e, t) => {
 						const n = Object(l.q)(e, t);
-						return Object(p.q)(e, {
+						return Object(p.p)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					},
 					useCrypto: (e, t) => {
 						const n = Object(l.q)(e, t);
-						return Object(p.l)(e, {
+						return Object(p.k)(e, {
 							subredditId: n ? n.id : void 0
 						})
 					}
@@ -1748,4 +1748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.7fd6000a47b83f66ade3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.bfee09b8b34aca00b8e4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.b2da3d2f022c09d527a6.js
-// Retrieved at 9/30/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.6ef58ab8986b37b50f29.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, s) {
@@ -21,18 +21,18 @@
 				l = s("./src/reddit/helpers/governance/tokens.ts"),
 				m = s("./src/reddit/selectors/gov.ts"),
 				u = s("./src/reddit/components/Governance/TokenAmount/index.m.less"),
-				p = s.n(u);
-			const b = Object(o.c)({
-				tokenDisplayConversion: m.p
+				b = s.n(u);
+			const p = Object(o.c)({
+				tokenDisplayConversion: m.o
 			});
-			t.a = Object(a.b)(b)((function(e) {
+			t.a = Object(a.b)(p)((function(e) {
 				return r.a.createElement("div", {
-					className: Object(c.a)(p.a.container, e.className, {
-						[p.a.small]: e.small
+					className: Object(c.a)(b.a.container, e.className, {
+						[b.a.small]: e.small
 					})
 				}, r.a.createElement(i.a, {
-					className: Object(c.a)(p.a.token, {
-						[p.a.small]: e.small
+					className: Object(c.a)(b.a.token, {
+						[b.a.small]: e.small
 					}),
 					grey: e.grey,
 					subredditId: e.subredditId
@@ -108,8 +108,8 @@
 				l = s("./src/reddit/actions/toaster.ts"),
 				m = s("./src/reddit/endpoints/governance/crypto.ts"),
 				u = s("./src/reddit/helpers/crypto/transactions.ts"),
-				p = s("./src/reddit/helpers/governance/tokens.ts"),
-				b = s("./src/reddit/helpers/trackers/crypto.ts"),
+				b = s("./src/reddit/helpers/governance/tokens.ts"),
+				p = s("./src/reddit/helpers/trackers/crypto.ts"),
 				v = s("./src/reddit/hooks/useTracking.ts"),
 				x = s("./src/reddit/models/Badge/managementPage.ts"),
 				O = s("./src/reddit/models/Toast/index.ts"),
@@ -168,10 +168,10 @@
 					walletProvider: w,
 					walletAddress: I
 				} = Object(o.d)(Object(c.c)({
-					tokenConversion: t => Object(j.p)(t, e),
-					walletProvider: t => Object(j.u)(t, e),
-					walletAddress: t => Object(j.t)(t, e)
-				})), T = Object(u.c)(w.extra.contracts.subscriptions.address, I, !0), g = Object(p.b)(t, f);
+					tokenConversion: t => Object(j.o)(t, e),
+					walletProvider: t => Object(j.t)(t, e),
+					walletAddress: t => Object(j.s)(t, e)
+				})), T = Object(u.c)(w.extra.contracts.subscriptions.address, I, !0), g = Object(b.b)(t, f);
 				return a.a.createElement(_.a, {
 					approvalOverview: a.a.createElement(k, {
 						subredditId: s
@@ -185,7 +185,7 @@
 							subredditId: s,
 							price: t,
 							providerArgs: a
-						})), A(Object(b.b)("subscribe", s, g)), r(Object(l.e)({
+						})), A(Object(p.b)("subscribe", s, g)), r(Object(l.e)({
 							duration: 1e4,
 							kind: O.b.SuccessCommunityGreen,
 							text: n.fbt._("Your purchase was successful! Thank you for your support!", null, {
@@ -197,7 +197,7 @@
 						})), e.onPaymentComplete()
 					},
 					onTransactionFailure: e => {
-						A(Object(b.a)("subscribe", s, g, e))
+						A(Object(p.a)("subscribe", s, g, e))
 					},
 					subredditId: s,
 					transaction: T,
@@ -208,4 +208,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.b2da3d2f022c09d527a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.6ef58ab8986b37b50f29.js.map

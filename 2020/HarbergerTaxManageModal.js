@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.e43d20c9ccbca7263476.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.e7f7e8c5ab5dec37fe4c.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -478,9 +478,9 @@
 				V = a("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/index.m.less"),
 				K = a.n(V);
 			const {
-				fbt: z
+				fbt: q
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			class q extends o.a.Component {
+			class z extends o.a.Component {
 				constructor(e) {
 					super(e), this.handlePriceChange = e => this.setState({
 						price: e
@@ -514,7 +514,7 @@
 						className: K.a.container
 					}, o.a.createElement(m.a, {
 						className: K.a.title
-					}, z._("Manage Banner", null, {
+					}, q._("Manage Banner", null, {
 						hk: "NMRRK"
 					})), o.a.createElement(G, {
 						className: K.a.price,
@@ -586,7 +586,7 @@
 					onUpdateBanner: t => e(Object(l.c)(t))
 				})),
 				J = Object(u.t)();
-			t.default = Object(p.a)("spHarberger", Object(d.a)(J(Y(q))))
+			t.default = Object(p.a)("spHarberger", Object(d.a)(J(Y(z))))
 		},
 		"./src/reddit/components/Governance/ModalClose/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -668,7 +668,7 @@
 				l = a("./src/reddit/components/Governance/Token/index.m.less"),
 				m = a.n(l);
 			const u = Object(o.c)({
-				tokenSymbol: d.r
+				tokenSymbol: d.q
 			});
 			t.a = Object(r.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -1338,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.e43d20c9ccbca7263476.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.e7f7e8c5ab5dec37fe4c.js.map

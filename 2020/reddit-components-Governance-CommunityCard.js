@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.f05b324451ab487c3caf.js
-// Retrieved at 10/1/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.77c71a57eee70445e4a8.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -125,7 +125,7 @@
 						subredditId: e.subredditId
 					}))), n(Object(c.e)({
 						kind: p.b.SuccessCommunity,
-						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(r.a)(e.amount)), s.fbt._param("tokenName", Object(f.q)(o(), {
+						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(r.a)(e.amount)), s.fbt._param("tokenName", Object(f.p)(o(), {
 							subredditId: e.subredditId
 						})), s.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
@@ -360,8 +360,8 @@
 					dropdownIsOpen: Object(B.b)(U),
 					isEthereumProvider: d.f,
 					provider: d.a,
-					token: d.s,
-					tokenName: d.q
+					token: d.r,
+					tokenName: d.p
 				}),
 				V = Object(i.b)(q, (e, t) => ({
 					onGovernanceError: t => {
@@ -558,8 +558,8 @@
 				isLoggedIn: C.H,
 				nextAvailablePointsClaim: k.l,
 				provider: d.a,
-				tokenName: d.q,
-				tokenDisplayConversion: d.p
+				tokenName: d.p,
+				tokenDisplayConversion: d.o
 			});
 			var ce = Object(i.b)(ie, e => ({
 					onFetchMeData: () => e(Object(b.b)()),
@@ -656,7 +656,7 @@
 			var Ie = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
 				Te = n.n(Ie);
 			const Me = Object(l.c)({
-				tokenName: d.q,
+				tokenName: d.p,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 				wallet: d.g,
 				subreddit: (e, t) => e.subreddits.models[t.subredditId]
@@ -700,7 +700,7 @@
 				l = n("./src/reddit/components/Governance/Token/index.m.less"),
 				m = n.n(l);
 			const u = Object(a.c)({
-				tokenSymbol: d.r
+				tokenSymbol: d.q
 			});
 			t.a = Object(r.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -742,7 +742,7 @@
 				u = n("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				b = n.n(u);
 			const p = Object(a.c)({
-				tokenDisplayConversion: m.p
+				tokenDisplayConversion: m.o
 			});
 			t.a = Object(r.b)(p)((function(e) {
 				return o.a.createElement("div", {
@@ -1119,4 +1119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.f05b324451ab487c3caf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.77c71a57eee70445e4a8.js.map

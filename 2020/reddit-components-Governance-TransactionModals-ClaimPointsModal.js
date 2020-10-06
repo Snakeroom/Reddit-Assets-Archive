@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.6addd1a968ba88d78fef.js
-// Retrieved at 10/1/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.2623894f516e7c1786c3.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -133,7 +133,7 @@
 						subredditId: e.subredditId
 					}))), n(Object(i.e)({
 						kind: b.b.SuccessCommunity,
-						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(r.a)(e.amount)), s.fbt._param("tokenName", Object(v.q)(a(), {
+						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(r.a)(e.amount)), s.fbt._param("tokenName", Object(v.p)(a(), {
 							subredditId: e.subredditId
 						})), s.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
@@ -273,7 +273,7 @@
 					n = t && t.pointsToClaim;
 				if (!n) throw new Error("Expected claim amount to approve");
 				const a = Object(o.d)(t => Object(T.S)(t, e)),
-					c = Object(o.d)(t => Object(w.q)(t, e));
+					c = Object(o.d)(t => Object(w.p)(t, e));
 				return r.a.createElement(k.a, {
 					subredditId: e.subredditId,
 					image: r.a.createElement(y.b, {
@@ -311,9 +311,9 @@
 				} = Object(o.d)(Object(c.c)({
 					currentPointsAmount: t => Object(w.h)(t, e),
 					nextPointsClaim: t => Object(_.l)(t, e),
-					pointsName: t => Object(w.q)(t, e),
-					tokenConversion: t => Object(w.p)(t, e),
-					walletProvider: t => Object(w.u)(t, e)
+					pointsName: t => Object(w.p)(t, e),
+					tokenConversion: t => Object(w.o)(t, e),
+					walletProvider: t => Object(w.t)(t, e)
 				}));
 				if (!l) throw new Error("No available claim to make");
 				if (!l.address) return r.a.createElement(N.a, {
@@ -961,4 +961,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.6addd1a968ba88d78fef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.2623894f516e7c1786c3.js.map

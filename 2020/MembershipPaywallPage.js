@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.2e6e86d21ab741e8fda3.js
-// Retrieved at 9/30/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.44c0c34d956ab0fa58a6.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -158,8 +158,8 @@
 					subredditId: t
 				}), a)
 			}, E = Object(i.c)({
-				tokenDisplayConversion: p.p,
-				tokenName: p.q
+				tokenDisplayConversion: p.o,
+				tokenName: p.p
 			});
 			t.a = Object(o.b)(E)(e => {
 				const {
@@ -730,7 +730,7 @@
 				d = a("./src/reddit/components/Governance/Token/index.m.less"),
 				l = a.n(d);
 			const u = Object(o.c)({
-				tokenSymbol: m.r
+				tokenSymbol: m.q
 			});
 			t.a = Object(n.b)(u)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -3803,8 +3803,8 @@
 			}
 			const Dt = Object(i.c)({
 					subreddit: (e, t) => t.subreddit,
-					tokenDisplayConversion: ct.p,
-					tokenName: ct.q,
+					tokenDisplayConversion: ct.o,
+					tokenName: ct.p,
 					wallet: ct.g
 				}),
 				Wt = Object(n.b)((e, t) => {
@@ -4560,4 +4560,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.2e6e86d21ab741e8fda3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.44c0c34d956ab0fa58a6.js.map

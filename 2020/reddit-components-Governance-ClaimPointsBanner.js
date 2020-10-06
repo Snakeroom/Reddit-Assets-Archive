@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.6f0b46103a1f4c6248ea.js
-// Retrieved at 9/30/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.884980f9f05a9a1bc14b.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/reddit/actions/economics/banners/thunkedActions.ts": function(A, i, e) {
@@ -182,7 +182,7 @@
 				nextAvailablePointsClaim: h.l,
 				pointsCopy: h.n,
 				subreddit: S.S,
-				tokenName: u.q
+				tokenName: u.p
 			});
 			i.default = Object(p.c)(Object(r.b)(V, (A, i) => {
 				let {
@@ -213,7 +213,7 @@
 				k = e("./src/reddit/components/Governance/Token/index.m.less"),
 				m = e.n(k);
 			const c = Object(a.c)({
-				tokenSymbol: o.r
+				tokenSymbol: o.q
 			});
 			i.a = Object(n.b)(c)((function(A) {
 				const i = A.grey ? A.tokenSymbol.greyVector || A.tokenSymbol.grey : A.tokenSymbol.filledVector || A.tokenSymbol.filled,
@@ -255,7 +255,7 @@
 				c = e("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = e.n(c);
 			const x = Object(a.c)({
-				tokenDisplayConversion: m.p
+				tokenDisplayConversion: m.o
 			});
 			i.a = Object(n.b)(x)((function(A) {
 				return t.a.createElement("div", {
@@ -440,4 +440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.6f0b46103a1f4c6248ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.884980f9f05a9a1bc14b.js.map

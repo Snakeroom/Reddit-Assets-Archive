@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.0d9f1024d6d2881edea8.js
-// Retrieved at 9/30/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.998edc3e935743fafac5.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, n) {
@@ -52,7 +52,7 @@
 				m = n("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = n.n(m);
 			const b = Object(a.c)({
-				tokenDisplayConversion: u.p
+				tokenDisplayConversion: u.o
 			});
 			t.a = Object(o.b)(b)((function(e) {
 				return r.a.createElement("div", {
@@ -196,13 +196,13 @@
 					walletProvider: G
 				} = Object(c.d)(Object(i.c)({
 					currentPointsAmount: t => Object(T.h)(t, e),
-					pointsName: t => Object(T.q)(t, e),
-					recipientWallet: e => M && Object(T.j)(e, {
+					pointsName: t => Object(T.p)(t, e),
+					recipientWallet: e => M && Object(T.i)(e, {
 						subredditId: A,
 						userId: M.id
 					}),
-					tokenConversion: t => Object(T.p)(t, e),
-					walletProvider: t => Object(T.u)(t, e)
+					tokenConversion: t => Object(T.o)(t, e),
+					walletProvider: t => Object(T.t)(t, e)
 				}));
 				if (!G) throw new Error("No wallet provider");
 				const F = null === (n = null === (t = G.extra) || void 0 === t ? void 0 : t.contracts) || void 0 === n ? void 0 : n.unlocked.address;
@@ -286,4 +286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.0d9f1024d6d2881edea8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.998edc3e935743fafac5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.fd9cafd5dcbd5855fe23.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.4fad09047bdf1b1f93e3.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -302,7 +302,7 @@
 				cost: f.d,
 				currentOwnerId: (e, t) => Object(f.e)(e, t).ownerId,
 				currentOwnerName: (e, t) => Object(f.e)(e, t).owner,
-				tokenDisplayConversion: f.p
+				tokenDisplayConversion: f.o
 			});
 			var N = Object(s.b)(y)((function(e) {
 				const {
@@ -493,7 +493,7 @@
 				fbt: C
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			const T = Object(u.c)({
-				tokenName: f.q,
+				tokenName: f.p,
 				details: f.b
 			});
 			var k = Object(s.b)(T)((function(e) {
@@ -751,8 +751,8 @@
 				currentOwnerId: (e, t) => Object(f.e)(e, t).ownerId,
 				currentOwnerName: (e, t) => Object(f.e)(e, t).owner,
 				details: f.b,
-				unlockedToken: f.s,
-				tokenDisplayConversion: f.p
+				unlockedToken: f.r,
+				tokenDisplayConversion: f.o
 			});
 			var K = Object(s.b)(Q, e => ({
 					onError: t => e(Object(H.e)({
@@ -888,7 +888,7 @@
 				d = a("./src/reddit/components/Governance/Token/index.m.less"),
 				u = a.n(d);
 			const m = Object(o.c)({
-				tokenSymbol: l.r
+				tokenSymbol: l.q
 			});
 			t.a = Object(s.b)(m)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -930,7 +930,7 @@
 				m = a("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = a.n(m);
 			const h = Object(o.c)({
-				tokenDisplayConversion: u.p
+				tokenDisplayConversion: u.o
 			});
 			t.a = Object(s.b)(h)((function(e) {
 				return r.a.createElement("div", {
@@ -1571,4 +1571,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.fd9cafd5dcbd5855fe23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.4fad09047bdf1b1f93e3.js.map

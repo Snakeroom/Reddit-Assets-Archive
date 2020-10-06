@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.0ff337178d302ee7cbec.js
-// Retrieved at 10/5/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.709099aee34ac3c88d64.js
+// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -9981,7 +9981,7 @@
 				q = () => async (e, t) => {
 					const s = t(),
 						n = Object(A.a)(s);
-					n !== Object(A.fb)(s) && e(Object(g.g)({
+					n !== Object(A.gb)(s) && e(Object(g.g)({
 						submissionType: n
 					}))
 				}, V = e => async (t, s, n) => {
@@ -13018,7 +13018,7 @@
 						a.ok && a.body && a.body.json && a.body.json.data && t(g(a.body.json.data))
 					})(e))
 				}, q = Object(a.a)(p.E), V = (e, t) => async (s, r) => {
-					s(q()), s(e ? Object(n.b)(u.b) : Object(n.b)(Object(b.V)(r(), {
+					s(q()), s(e ? Object(n.b)(u.b) : Object(n.b)(Object(b.W)(r(), {
 						pageLayer: t
 					})))
 				}, H = Object(a.a)(i.c), K = e => async t => {
@@ -13026,9 +13026,9 @@
 				}, W = e => async (t, s) => {
 					const n = s(),
 						r = Object(o.D)(e),
-						a = Object(b.B)(n);
+						a = Object(b.C)(n);
 					if (r && a) {
-						Object(b.Q)(n) !== d.c && t(K(d.c))
+						Object(b.R)(n) !== d.c && t(K(d.c))
 					} else t(V(!1, e))
 				}, Y = e => async (t, s) => {
 					const n = s();
@@ -13087,19 +13087,19 @@
 					} : {
 						subredditName: p
 					};
-					if (await s(Object(d.d)(I)), O || !Object(g.x)(o)) return s(v(e, E));
+					if (await s(Object(d.d)(I)), O || !Object(g.y)(o)) return s(v(e, E));
 					const S = e.allowedPostTypes || Object(m.A)(n(), {
 						subredditName: p
 					});
 					if (!S) return void s(v(e, E));
 					let T;
 					o = n();
-					const w = Object(g.fb)(o),
-						C = Object(g.x)(o);
+					const w = Object(g.gb)(o),
+						C = Object(g.y)(o);
 					if (w === a.Jb.MEDIA && C) {
-						const e = Object(g.O)(o),
+						const e = Object(g.P)(o),
 							t = Object(b.v)(e),
-							s = Object(g.G)(o) && e.items.length > 1,
+							s = Object(g.H)(o) && e.items.length > 1,
 							n = !t && !s;
 						if (s && !S.galleries) T = b.p.GalleryWillBeRemovedGalleryNotAllowed;
 						else if (n && !S.images) T = b.p.ImageWillBeRemoved;
@@ -13275,7 +13275,7 @@
 					} = a;
 					const d = s(),
 						b = Object(T.g)(d),
-						O = Object(S.U)(d);
+						O = Object(S.V)(d);
 					if (b || O) return;
 					const g = Object(T.h)(d, e);
 					if (!g) return;
@@ -56124,4 +56124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0ff337178d302ee7cbec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.709099aee34ac3c88d64.js.map
