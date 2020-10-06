@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6dcf5661920bd1750ccd.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.49b27cb7cefb7efcfabc.js
+// Retrieved at 10/6/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -2585,7 +2585,7 @@
 					} = e;
 					const s = Object(r.useRef)(null),
 						[i, d] = Object(r.useState)(!1),
-						[l, u] = Object(r.useState)([void 0, void 0]),
+						[l, u] = Object(r.useState)([594, 628]),
 						m = Object(r.useCallback)(e => {
 							var t, n;
 							s.current && e.data && e.data.layerEmbedHeight && (s.current.style.height = e.data.layerEmbedHeight + 8 + "px");
@@ -2616,7 +2616,12 @@
 					}), i && a.a.createElement(c, {
 						baseUrl: t,
 						withOverlay: !0,
-						onOverlayClick: () => d(!1),
+						onOverlayClick: () => {
+							var e, t;
+							d(!1), null === (t = null === (e = s.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage({
+								action: "layers.closeLayerMaker"
+							}, "*")
+						},
 						width: p,
 						height: b
 					}))
@@ -9988,4 +9993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6dcf5661920bd1750ccd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.49b27cb7cefb7efcfabc.js.map
