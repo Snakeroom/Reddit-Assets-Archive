@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.a9aedec7858540307fac.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.882c4729d31b01c74cee.js
+// Retrieved at 10/6/2020, 11:40:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~reddit-components-ProfileIdCard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -49,9 +49,9 @@
 				o = a("./src/reddit/controls/ImageInput/index.tsx"),
 				i = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				c = a("./src/reddit/icons/svgs/NewPost/index.tsx"),
-				d = a("./src/reddit/models/ApiRequestState/index.ts"),
-				l = a("./src/reddit/components/EditableImage/index.m.less"),
-				m = a.n(l);
+				l = a("./src/reddit/models/ApiRequestState/index.ts"),
+				d = a("./src/reddit/components/EditableImage/index.m.less"),
+				m = a.n(d);
 			const {
 				fbt: u
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), p = 80;
@@ -60,7 +60,7 @@
 					super(...arguments), this.state = {
 						apiRequestId: null
 					}, this.selectFile = e => {
-						const t = Object(d.b)();
+						const t = Object(l.b)();
 						this.setState({
 							apiRequestId: t
 						}), this.props.onFileSelected(e, t)
@@ -72,8 +72,8 @@
 						children: t,
 						className: a,
 						editButtonClassName: n,
-						isLoading: d,
-						imageUrl: l
+						isLoading: l,
+						imageUrl: d
 					} = this.props;
 					return r.a.createElement("div", {
 						className: Object(s.a)(m.a.Container, a)
@@ -82,19 +82,19 @@
 					}, r.a.createElement("span", {
 						className: m.a.ImageContainer,
 						role: "presentation"
-					}, l ? r.a.createElement("img", {
+					}, d ? r.a.createElement("img", {
 						alt: e,
 						className: m.a.Image,
-						src: l
+						src: d
 					}) : t), r.a.createElement(o.a, {
 						className: m.a.ImageUploader,
 						multiple: !1,
 						onChange: this.selectFile
-					}), !d && r.a.createElement("div", {
+					}), !l && r.a.createElement("div", {
 						className: Object(s.a)(m.a.EditButton, n)
 					}, r.a.createElement(c.a, {
 						className: m.a.EditIcon
-					}))), d && r.a.createElement(i.a, {
+					}))), l && r.a.createElement(i.a, {
 						className: m.a.LoadingIcon,
 						sizePx: p
 					}))
@@ -161,8 +161,8 @@
 				o = a.n(s),
 				i = a("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				c = a("./src/lib/lessComponent.tsx"),
-				d = a("./src/reddit/components/Widgets/Base/index.tsx"),
-				l = a("./src/reddit/controls/InternalLink/index.tsx"),
+				l = a("./src/reddit/components/Widgets/Base/index.tsx"),
+				d = a("./src/reddit/controls/InternalLink/index.tsx"),
 				m = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				u = a("./src/reddit/controls/OutboundLink/index.tsx"),
 				p = a("./src/reddit/icons/svgs/Admin/index.tsx"),
@@ -176,9 +176,9 @@
 				v = a("./src/lib/humanizeDate/index.ts"),
 				C = a("./src/lib/prettyPrintNumber/index.ts"),
 				E = a("./src/lib/timeAgo/index.ts"),
-				w = a("./src/reddit/contexts/InsideOverlay.tsx"),
-				P = a("./src/reddit/icons/svgs/Cake/index.tsx"),
-				y = a("./src/reddit/icons/svgs/Karma/index.tsx"),
+				y = a("./src/reddit/contexts/InsideOverlay.tsx"),
+				w = a("./src/reddit/icons/svgs/Cake/index.tsx"),
+				P = a("./src/reddit/icons/svgs/Karma/index.tsx"),
 				O = a("./src/reddit/icons/svgs/User/index.tsx"),
 				N = a("./src/reddit/selectors/experiments/econAwardKarma.ts"),
 				j = a("./src/reddit/selectors/profile.ts"),
@@ -198,9 +198,9 @@
 				}).apply(this, arguments)
 			}
 			const T = c.a.div("Container", U.a),
-				D = c.a.div("Body", U.a),
-				W = c.a.h5("Title", U.a),
-				F = c.a.span("Label", U.a);
+				F = c.a.div("Body", U.a),
+				D = c.a.h5("Title", U.a),
+				W = c.a.span("Label", U.a);
 			class M extends o.a.Component {
 				constructor() {
 					super(...arguments), this.toggleTooltip = () => {
@@ -223,7 +223,7 @@
 						onMouseEnter: this.toggleTooltip,
 						onMouseLeave: this.toggleTooltip
 					} : {};
-					return o.a.createElement(T, null, o.a.createElement(W, null, a), o.a.createElement(D, null, e, o.a.createElement(F, K({
+					return o.a.createElement(T, null, o.a.createElement(D, null, a), o.a.createElement(F, null, e, o.a.createElement(W, K({
 						key: "label"
 					}, s), t)), r && n && o.a.createElement(L.c, {
 						caretOnTop: !0,
@@ -236,7 +236,7 @@
 					toggleTooltip: t => e(Object(S.h)({
 						tooltipId: t
 					}))
-				}))(Object(w.b)(M)),
+				}))(Object(y.b)(M)),
 				z = a("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
 				A = a.n(z);
 			const H = Object(_.a)(N.a, j.j, (e, t) => {
@@ -259,7 +259,7 @@
 			function V(e, t) {
 				return "profile--id-card--highlight-tooltip-".concat(e ? "-overlay" : "", "-").concat(t)
 			}
-			var Z = Object(h.b)(H)(Object(w.b)(e => {
+			var Z = Object(h.b)(H)(Object(y.b)(e => {
 					const {
 						awardeeKarma: t,
 						awardKarmaExperimentEnabled: a,
@@ -267,43 +267,53 @@
 						profileCreated: s,
 						isOverlay: i,
 						commentKarma: c,
-						postKarma: d,
-						totalKarma: l,
+						postKarma: l,
+						totalKarma: d,
 						subscribers: m
 					} = e, u = V(i, "karma"), p = V(i, "cakeday"), g = r.fbt._({
 						"*": "{number} Post Karma",
 						_1: "1 Post Karma"
-					}, [r.fbt._plural(d, "number", Object(C.b)(d, !0))], {
+					}, [r.fbt._plural(l, "number", Object(C.b)(l, {
+						displayFull: !0
+					}))], {
 						hk: "husfU"
 					}), f = r.fbt._({
 						"*": "{number} Comment Karma",
 						_1: "1 Comment Karma"
-					}, [r.fbt._plural(c, "number", Object(C.b)(c, !0))], {
+					}, [r.fbt._plural(c, "number", Object(C.b)(c, {
+						displayFull: !0
+					}))], {
 						hk: "26iPTL"
 					}), x = r.fbt._({
 						"*": "{number} Awardee Karma",
 						_1: "1 Awardee Karma"
-					}, [r.fbt._plural(t, "number", Object(C.b)(t, !0))], {
+					}, [r.fbt._plural(t, "number", Object(C.b)(t, {
+						displayFull: !0
+					}))], {
 						hk: "2Ww5MR"
 					}), b = r.fbt._({
 						"*": "{number} Awarder Karma",
 						_1: "1 Awarder Karma"
-					}, [r.fbt._plural(n, "number", Object(C.b)(n, !0))], {
+					}, [r.fbt._plural(n, "number", Object(C.b)(n, {
+						displayFull: !0
+					}))], {
 						hk: "2F1chz"
 					}), I = a ? "".concat(g, "\n").concat(f, "\n").concat(x, "\n").concat(b) : "".concat(g, "\n").concat(f);
 					return o.a.createElement(G, null, o.a.createElement(R, {
-						icon: o.a.createElement(y.a, {
+						icon: o.a.createElement(P.a, {
 							className: A.a.icon,
 							key: "karma"
 						}),
-						label: Object(C.b)(l, !0),
+						label: Object(C.b)(d, {
+							displayFull: !0
+						}),
 						title: r.fbt._("Karma", null, {
 							hk: "RtSgN"
 						}),
 						tooltipId: u,
 						tooltip: I
 					}), o.a.createElement(R, {
-						icon: o.a.createElement(P.a, {
+						icon: o.a.createElement(w.a, {
 							className: A.a.icon,
 							key: "cakeDay"
 						}),
@@ -321,7 +331,9 @@
 						title: r.fbt._("Followers", null, {
 							hk: "4ucimK"
 						}),
-						label: Object(C.b)(m, !0)
+						label: Object(C.b)(m, {
+							displayFull: !0
+						})
 					}))
 				})),
 				X = a("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileBanner/index.tsx"),
@@ -350,7 +362,7 @@
 				return a
 			};
 			const ae = c.a.div("BannerWrapper", $.a),
-				ne = c.a.wrapped(d.b, "Widget", $.a),
+				ne = c.a.wrapped(l.b, "Widget", $.a),
 				re = c.a.h4("UserTitle", $.a),
 				se = c.a.wrapped(f.a, "PremiumIcon", $.a),
 				oe = c.a.div("Description", $.a),
@@ -358,7 +370,7 @@
 					var {
 						url: t
 					} = e, a = te(e, ["url"]);
-					return t ? o.a.createElement(l.a, ee({}, a, {
+					return t ? o.a.createElement(d.a, ee({}, a, {
 						className: $.a.userName,
 						to: t
 					})) : o.a.createElement("span", ee({}, a, {
@@ -366,8 +378,8 @@
 					}))
 				},
 				ce = c.a.wrapped(b.a, "Actions", $.a),
-				de = c.a.wrapped(g.a, "CloseIcon", $.a),
-				le = c.a.wrapped(i.a, "SettingsLink", $.a),
+				le = c.a.wrapped(g.a, "CloseIcon", $.a),
+				de = c.a.wrapped(i.a, "SettingsLink", $.a),
 				me = c.a.wrapped(x.a, "SettingsIcon", $.a),
 				ue = c.a.wrapped(m.a, "LoadingIconStyled", $.a),
 				pe = () => o.a.createElement(ue, {
@@ -394,8 +406,8 @@
 						footer: s,
 						isEmployee: i,
 						isGold: c,
-						isNSFW: d,
-						isOverlay: l,
+						isNSFW: l,
+						isOverlay: d,
 						isOwnProfile: m,
 						profileIcon: g,
 						publicDescription: f,
@@ -407,10 +419,10 @@
 						isDeletingBanner: v,
 						onDeleteIcon: C,
 						onDeleteBanner: E,
-						editMode: w
-					} = this.props, P = o.a.createElement(q.a, {
+						editMode: y
+					} = this.props, w = o.a.createElement(q.a, {
 						iconUrl: g,
-						isNSFW: d,
+						isNSFW: l,
 						isProfileIdCard: !0,
 						userName: I
 					});
@@ -418,19 +430,19 @@
 						className: a
 					}, o.a.createElement(ae, null, o.a.createElement(X.a, {
 						bannerUrl: t,
-						isNSFW: d,
+						isNSFW: l,
 						userName: I
-					}), w && t && (v ? o.a.createElement(pe, null) : o.a.createElement(de, {
+					}), y && t && (v ? o.a.createElement(pe, null) : o.a.createElement(le, {
 						onClick: E
 					}))), o.a.createElement("div", {
 						className: J.a.SnooIconWrapper
-					}, m || !g || d ? P : o.a.createElement(u.b, {
+					}, m || !g || l ? w : o.a.createElement(u.b, {
 						isSponsored: !1,
 						href: g,
 						source: null
-					}, P), w && !h && (_ ? o.a.createElement(pe, null) : o.a.createElement(de, {
+					}, w), y && !h && (_ ? o.a.createElement(pe, null) : o.a.createElement(le, {
 						onClick: C
-					}))), !w && m && o.a.createElement(le, {
+					}))), !y && m && o.a.createElement(de, {
 						to: "/settings/profile"
 					}, o.a.createElement(me, null)), x && o.a.createElement(re, null, x), o.a.createElement(ie, {
 						url: b
@@ -446,7 +458,7 @@
 						href: "".concat(n.a.redditUrl, "/premium")
 					}, o.a.createElement(se, null)), o.a.createElement(oe, null, f), o.a.createElement(Z, {
 						profileName: I,
-						isOverlay: l
+						isOverlay: d
 					}), this.renderAwardedLastMonth(), o.a.createElement(ce, null, e), s)
 				}
 			}
@@ -465,9 +477,9 @@
 				o = a("./src/reddit/models/Image/index.tsx"),
 				i = a("./src/reddit/components/EditableImage/index.tsx"),
 				c = a("./src/reddit/models/User/index.ts"),
-				d = a("./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts"),
-				l = a("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileBanner/index.m.less"),
-				m = a.n(l);
+				l = a("./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts"),
+				d = a("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileBanner/index.m.less"),
+				m = a.n(d);
 			class u extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -490,26 +502,26 @@
 						currentUser: a,
 						hideNSFWPref: r,
 						isNSFW: o,
-						userName: d
+						userName: l
 					} = this.props, {
-						isUpdating: l
+						isUpdating: d
 					} = this.state, u = e ? s.a.createElement("div", {
 						className: m.a.Banner,
 						style: {
 							backgroundImage: "url(".concat(e, ")")
 						}
 					}) : null;
-					return a && Object(c.e)(a) === d ? s.a.createElement(i.a, {
-						altText: n.fbt._("{userName} banner image", [n.fbt._param("userName", d)], {
+					return a && Object(c.e)(a) === l ? s.a.createElement(i.a, {
+						altText: n.fbt._("{userName} banner image", [n.fbt._param("userName", l)], {
 							hk: "1PcEBS"
 						}),
 						className: t,
-						isLoading: l,
+						isLoading: d,
 						onFileSelected: this.updateProfileIcon
 					}, u) : o && r ? null : u
 				}
 			}
-			t.a = Object(d.a)(u)
+			t.a = Object(l.a)(u)
 		},
 		"./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -527,8 +539,8 @@
 				o = a("./src/reddit/models/Image/index.tsx"),
 				i = a("./src/reddit/components/EditableImage/index.tsx"),
 				c = a("./src/reddit/components/UserIcon/index.tsx"),
-				d = a("./src/reddit/models/User/index.ts"),
-				l = a("./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts"),
+				l = a("./src/reddit/models/User/index.ts"),
+				d = a("./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts"),
 				m = a("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.m.less"),
 				u = a.n(m);
 			class p extends s.a.Component {
@@ -553,17 +565,17 @@
 						iconUrl: a,
 						isNSFW: r,
 						isProfileIdCard: o,
-						userName: l
+						userName: d
 					} = this.props, {
 						isUpdating: m
 					} = this.state, p = s.a.createElement(c.a, {
 						className: u.a.Icon,
 						iconUrl: a,
 						isNSFW: r,
-						userName: l
+						userName: d
 					});
-					return t && Object(d.e)(t) === l ? s.a.createElement(i.a, {
-						altText: n.fbt._("{userName} avatar image", [n.fbt._param("userName", l)], {
+					return t && Object(l.e)(t) === d ? s.a.createElement(i.a, {
+						altText: n.fbt._("{userName} avatar image", [n.fbt._param("userName", d)], {
 							hk: "1LJxYE"
 						}),
 						className: e,
@@ -573,7 +585,7 @@
 					}, p) : p
 				}
 			}
-			t.a = Object(l.a)(p)
+			t.a = Object(d.a)(p)
 		},
 		"./src/reddit/components/ProfileIdCard/ProfileImage/connector.ts": function(e, t, a) {
 			"use strict";
@@ -610,7 +622,7 @@
 				o = a("./src/reddit/components/SEOTitle/index.tsx"),
 				i = a("./src/reddit/components/Widgets/Base/index.m.less"),
 				c = a.n(i),
-				d = function(e, t) {
+				l = function(e, t) {
 					var a = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (a[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -619,18 +631,18 @@
 					}
 					return a
 				};
-			const l = s.a.div("WidgetBackground", c.a),
+			const d = s.a.div("WidgetBackground", c.a),
 				m = s.a.wrapped(e => {
 					var {
 						children: t
-					} = e, a = d(e, ["children"]);
+					} = e, a = l(e, ["children"]);
 					return r.a.createElement("div", a, r.a.createElement(o.b, {
 						type: o.a.Widget
 					}, t))
 				}, "WidgetHeader", c.a);
 			t.b = e => r.a.createElement("div", {
 				className: e.className
-			}, r.a.createElement(l, null, e.children))
+			}, r.a.createElement(d, null, e.children))
 		},
 		"./src/reddit/controls/ImageInput/index.tsx": function(e, t, a) {
 			"use strict";
@@ -747,4 +759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.a9aedec7858540307fac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.882c4729d31b01c74cee.js.map

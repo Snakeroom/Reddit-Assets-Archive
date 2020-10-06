@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.1129ee9b8972d4f1a62d.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.ba8cc4f3a75a0c569238.js
+// Retrieved at 10/6/2020, 11:40:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1805,7 +1805,9 @@
 					id: n
 				}, t), o.a.createElement(de.c, {
 					caretOnTop: !0,
-					text: "".concat(Object(g.b)(e, !0), " ").concat(t),
+					text: "".concat(Object(g.b)(e, {
+						displayFull: !0
+					}), " ").concat(t),
 					tooltipId: n
 				})), o.a.createElement("div", {
 					className: qt.a.Online,
@@ -1818,7 +1820,9 @@
 					id: a
 				}, i), o.a.createElement(de.c, {
 					caretOnTop: !0,
-					text: "".concat(Object(g.b)(r, !0), " ").concat(i),
+					text: "".concat(Object(g.b)(r, {
+						displayFull: !0
+					}), " ").concat(i),
 					tooltipId: a
 				})), o.a.createElement("div", null)), c && o.a.createElement(o.a.Fragment, null, o.a.createElement("hr", {
 					className: qt.a.HorizontalLine
@@ -2953,4 +2957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1129ee9b8972d4f1a62d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ba8cc4f3a75a0c569238.js.map

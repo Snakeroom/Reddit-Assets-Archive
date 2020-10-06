@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.03a4168bc98b2e5cf161.js
-// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.cdb0d1c133ebfac50458.js
+// Retrieved at 10/6/2020, 11:40:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -6303,7 +6303,10 @@
 						className: od.a.accountCoins
 					}, u.a.createElement(Qc.a, {
 						className: od.a.coinFontIcon
-					}), u.a.createElement("span", null, (e => Object(Fc.b)(e.coins || 0))(e)))))) : u.a.createElement("span", {
+					}), u.a.createElement("span", null, (e => Object(Fc.b)(e.coins || 0, {
+						displayFull: !1,
+						roundDown: !0
+					}))(e)))))) : u.a.createElement("span", {
 						className: Object(g.a)(od.a.accountWrapper, od.a.isLoggedOut)
 					}, u.a.createElement(td.a, {
 						className: od.a.myProfileIcon
@@ -14498,4 +14501,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.03a4168bc98b2e5cf161.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.cdb0d1c133ebfac50458.js.map

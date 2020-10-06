@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.757733216700b3c1793d.js
-// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7319dd77e91a907e084f.js
+// Retrieved at 10/6/2020, 11:40:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "668e43a-production"
+					SENTRY_RELEASE_VERSION: "9dce89a-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -3806,7 +3806,9 @@
 				return na._({
 					"*": "{number of watchers} watchers",
 					_1: "1 watcher"
-				}, [na._plural(t, "number of watchers", Object(fs.b)(t, !0))], {
+				}, [na._plural(t, "number of watchers", Object(fs.b)(t, {
+					displayFull: !0
+				}))], {
 					hk: "3F0Nj0"
 				})
 			}, pa = e => {
@@ -3816,7 +3818,9 @@
 				return na._({
 					"*": "{number of views} views",
 					_1: "1 view"
-				}, [na._plural(t, "number of views", Object(fs.b)(t, !0))], {
+				}, [na._plural(t, "number of views", Object(fs.b)(t, {
+					displayFull: !0
+				}))], {
 					hk: "tSTjT"
 				})
 			}, ha = e => {
@@ -5857,4 +5861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.757733216700b3c1793d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7319dd77e91a907e084f.js.map
