@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.c6f40f19e5fdaa1a9fa3.js
-// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.7b05067ee94abbfb2488.js
+// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -6589,11 +6589,11 @@
 				Bo = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				Lo = n("./src/reddit/selectors/experiments/utils.ts");
 			const Uo = Object(c.a)(e => Object(Bo.c)(e, {
-					experimentName: Do.S,
+					experimentName: Do.V,
 					experimentEligibilitySelector: Fo
 				}), Lo.a),
 				Fo = e => Object(j.G)(e) || Object(j.H)(e),
-				Wo = Object(c.a)(Uo, e => e === Do.U.Enabled);
+				Wo = Object(c.a)(Uo, e => e === Do.X.Enabled);
 			var Ho = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
 				Go = n("./src/reddit/selectors/platform.ts"),
 				zo = n("./src/reddit/pages/Settings/index.m.less"),
@@ -6901,4 +6901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c6f40f19e5fdaa1a9fa3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.7b05067ee94abbfb2488.js.map

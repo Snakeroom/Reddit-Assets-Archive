@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.96a3611cf0af5dd288c9.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.890d4b459d584d41c1bb.js
+// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -88,7 +88,7 @@
 				}, Object(p.defaults)(n));
 			var A = t("./src/reddit/hooks/useTracking.ts"),
 				_ = t("./src/reddit/selectors/experiments/index.ts");
-			const O = e => {
+			const C = e => {
 				let {
 					announcements: n,
 					setActiveIndex: t,
@@ -102,7 +102,7 @@
 						a = n.filter(((e, n) => t => {
 							if (t.experimentName) {
 								const n = e[t.experimentName.toLowerCase()];
-								if (n && Object(v.zc)(n.variant)) return !1
+								if (n && Object(v.Cc)(n.variant)) return !1
 							}
 							return !((n[t.id] || 0) >= t.maxImpressionsCount)
 						})(r, e)).slice(0, 5),
@@ -110,8 +110,8 @@
 					u()(a.map(e => e.id), c.map(e => e.id)) || (o(a), t(a.indexOf(i)), s(!1))
 				}, [])
 			};
-			var C = t("./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less"),
-				j = t.n(C);
+			var O = t("./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less"),
+				j = t.n(O);
 
 			function f() {
 				return (f = Object.assign || function(e) {
@@ -176,7 +176,7 @@
 					announcements: n
 				} = e;
 				const [t, r] = Object(a.useState)([]), [d, u] = Object(a.useState)(!0), [m, v] = Object(a.useState)(0);
-				O({
+				C({
 					announcements: n,
 					setActiveIndex: v,
 					setIsHidden: u,
@@ -207,7 +207,7 @@
 					activeIndex: m,
 					visibleAnnouncements: t,
 					setActiveIndex: v
-				}), C = (e => {
+				}), O = (e => {
 					let {
 						setIsHidden: n,
 						visibleAnnouncements: t
@@ -265,7 +265,7 @@
 					hk: "1R94KF"
 				})), o.a.createElement("button", {
 					className: j.a.CloseBtn,
-					onClick: C
+					onClick: O
 				}, o.a.createElement(l.a, null)), o.a.createElement("div", {
 					className: j.a.Carousel
 				}, t.length > 1 ? o.a.createElement("button", {
@@ -332,4 +332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.96a3611cf0af5dd288c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.890d4b459d584d41c1bb.js.map

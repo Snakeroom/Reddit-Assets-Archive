@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.ba8cc4f3a75a0c569238.js
-// Retrieved at 10/6/2020, 11:40:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.87769eea31b729fb1c4c.js
+// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1485,7 +1485,7 @@
 					showCreatePollButton: e => (e => Object(Xe.c)(e, {
 						experimentEligibilitySelector: Xe.a,
 						experimentName: Je.s
-					}) === Je.w.Treatment)(e) && !Object(Fe.g)(),
+					}) === Je.x.Treatment)(e) && !Object(Fe.g)(),
 					subreddit: (e, t) => Object(re.B)(e, {
 						subredditName: t.listingName
 					}),
@@ -2957,4 +2957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ba8cc4f3a75a0c569238.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.87769eea31b729fb1c4c.js.map
