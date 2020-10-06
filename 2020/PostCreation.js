@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.cd6d7de78f9e70e2e70f.js
-// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b98a950db38e5ced1ad3.js
+// Retrieved at 10/6/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "a2c493a-production"
+					SENTRY_RELEASE_VERSION: "92187e5-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -5224,7 +5224,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => n.e("reddit-components-Econ-Prediction").then(n.bind(null, "./src/reddit/components/Econ/Prediction/index.tsx")),
+				importAsync: () => Promise.all([n.e("vendors~EconHelperActions~SubredditPremiumBadgeManagement~reddit-components-Econ-Prediction"), n.e("reddit-components-Econ-Prediction")]).then(n.bind(null, "./src/reddit/components/Econ/Prediction/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -34142,4 +34142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cd6d7de78f9e70e2e70f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b98a950db38e5ced1ad3.js.map
