@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.134455c1e586a9e56d6d.js
-// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.bec7a57b3b5b7472195d.js
+// Retrieved at 10/6/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2435,7 +2435,7 @@
 							tabIndex: -1,
 							to: "".concat(n, "?sort=").concat(e)
 						}, r.a.createElement(_.b, {
-							displayText: C && e === C ? this.addSuggestedLabel(i) : i,
+							displayText: i,
 							isSelected: v === e,
 							skipRoleAttr: !0
 						}))
@@ -18657,4 +18657,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.134455c1e586a9e56d6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.bec7a57b3b5b7472195d.js.map
