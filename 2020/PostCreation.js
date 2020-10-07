@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.cbf34ffa204e978b46fc.js
-// Retrieved at 10/7/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.65677be4be48e16509ab.js
+// Retrieved at 10/7/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "a69c8a2-production"
+					SENTRY_RELEASE_VERSION: "caabbaf-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -21211,19 +21211,6 @@
 				i = "comments-page-link-num-comments",
 				a = "post-content"
 		},
-		"./src/reddit/constants/disclaimers.ts": function(e, t, n) {
-			"use strict";
-			var s;
-			n.d(t, "b", (function() {
-					return s
-				})), n.d(t, "a", (function() {
-					return o
-				})),
-				function(e) {
-					e.ORIGINAL_CONTENT_DISCLAIMER = "original_content_disclaimer"
-				}(s || (s = {}));
-			const o = "https://www.redditinc.com/policies/beta-terms-of-service"
-		},
 		"./src/reddit/constants/elementClassNames.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
@@ -29834,7 +29821,7 @@
 			}
 			var yn = n("./src/reddit/components/PostCreationForm/EduTooltips/EventButtonTooltip/index.m.less"),
 				vn = n.n(yn);
-			var Cn = xn(e => {
+			var Cn, En = xn(e => {
 					const {
 						onCloseTooltip: t
 					} = e;
@@ -29869,10 +29856,12 @@
 						tooltipId: Vt.a
 					})
 				}, Vt.d),
-				En = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/index.tsx"),
-				On = n("./src/reddit/components/PostFlairPicker/index.tsx"),
-				jn = n("./src/reddit/constants/disclaimers.ts"),
-				wn = n("./src/reddit/helpers/trackers/postEvent.ts"),
+				On = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/index.tsx"),
+				jn = n("./src/reddit/components/PostFlairPicker/index.tsx");
+			! function(e) {
+				e.ORIGINAL_CONTENT_DISCLAIMER = "original_content_disclaimer"
+			}(Cn || (Cn = {}));
+			var wn = n("./src/reddit/helpers/trackers/postEvent.ts"),
 				Sn = n("./src/reddit/icons/svgs/Chat/index.tsx"),
 				_n = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				kn = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
@@ -29979,7 +29968,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(rn.S)(jn.b.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(rn.S)(Cn.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -29998,7 +29987,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showOCDisclaimer: !Object(rn.h)(jn.b.ORIGINAL_CONTENT_DISCLAIMER)
+						showOCDisclaimer: !Object(rn.h)(Cn.ORIGINAL_CONTENT_DISCLAIMER)
 					})
 				}
 				render() {
@@ -30061,9 +30050,9 @@
 						removeModifierTooltip: l.fbt._("Edit event data", null, {
 							hk: "1FSblM"
 						})
-					}, o.a.createElement(Cn, null), o.a.createElement(Un, null), c ? Bn(c) : l.fbt._("Event", null, {
+					}, o.a.createElement(En, null), o.a.createElement(Un, null), c ? Bn(c) : l.fbt._("Event", null, {
 						hk: "40pq7b"
-					}), c && o.a.createElement(Kn, null)), e === g.f && o.a.createElement(En.default, {
+					}), c && o.a.createElement(Kn, null)), e === g.f && o.a.createElement(On.default, {
 						schedule: this.props.eventSchedule,
 						onClose: this.handleToggleSchedulePicker,
 						onChange: this.props.onEventScheduleChange,
@@ -30151,7 +30140,7 @@
 								textColor: k
 							})) : O.newCommunityTheme.actionIcon
 						}
-					})), e === Fn && o.a.createElement(On.a, {
+					})), e === Fn && o.a.createElement(jn.a, {
 						flairs: p ? [p] : [],
 						modalId: Fn,
 						onFlairChanged: this.handlePostFlairSelected,
@@ -34142,4 +34131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cbf34ffa204e978b46fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.65677be4be48e16509ab.js.map
