@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0d0f46caa645c0b87efa.js
-// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.cf6d343d475bb77f7903.js
+// Retrieved at 10/7/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -2566,16 +2566,17 @@
 				o = n.n(i);
 			const c = Object(s.a)(e => {
 					let {
-						baseUrl: t,
-						width: n,
-						height: s
-					} = e;
-					return a.a.createElement("iframe", {
+						backgroundUrl: t,
+						baseUrl: n,
+						width: s,
+						height: r
+					} = e, i = n + "/static/layermaker/";
+					return t && (i += "#".concat(encodeURIComponent(t))), a.a.createElement("iframe", {
 						style: {
-							width: n,
-							height: s
+							width: s,
+							height: r
 						},
-						src: t + "/static/layermaker/"
+						src: i
 					})
 				}),
 				d = e => {
@@ -2585,8 +2586,9 @@
 					} = e;
 					const s = Object(r.useRef)(null),
 						[i, d] = Object(r.useState)(!1),
-						[l, u] = Object(r.useState)([594, 628]),
-						m = Object(r.useCallback)(e => {
+						[l, u] = Object(r.useState)(),
+						[m, p] = Object(r.useState)([594, 628]),
+						b = Object(r.useCallback)(e => {
 							var t, n;
 							s.current && e.data && e.data.layerEmbedHeight && (s.current.style.height = e.data.layerEmbedHeight + 8 + "px");
 							const {
@@ -2594,26 +2596,27 @@
 								payload: a
 							} = e.data;
 							if ("string" == typeof r && r.startsWith("layers.")) {
-								if ("layers.openLayerMaker" === r) return d(!0);
+								if ("layers.openLayerMaker" === r) return d(!0), void u(a.backgroundUrl);
 								if ("layers.closeLayerMaker" === r) return d(!1);
-								if ("layers.resizeLayerMaker" === r) {
+								if ("layers.resizeLayerMaker" !== r) null === (n = null === (t = s.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e.data, "*");
+								else {
 									const {
 										width: e,
 										height: t
 									} = a;
-									u([e, t])
+									p([e, t])
 								}
-								null === (n = null === (t = s.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e.data, "*")
 							}
 						}, [s, d]);
-					Object(r.useEffect)(() => (window.addEventListener("message", m), () => window.removeEventListener("message", m)), [m]);
-					const [p, b] = l, h = t + "/static/client/?platform=desktop&subreddit=".concat(n);
+					Object(r.useEffect)(() => (window.addEventListener("message", b), () => window.removeEventListener("message", b)), [b]);
+					const [h, g] = m, x = t + "/static/client/?platform=desktop&subreddit=".concat(n);
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement("iframe", {
 						id: "layersEmbed",
 						ref: s,
 						className: o.a.layerCanvas,
-						src: h
+						src: x
 					}), i && a.a.createElement(c, {
+						backgroundUrl: l,
 						baseUrl: t,
 						withOverlay: !0,
 						onOverlayClick: () => {
@@ -2622,8 +2625,8 @@
 								action: "layers.closeLayerMaker"
 							}, "*")
 						},
-						width: p,
-						height: b
+						width: h,
+						height: g
 					}))
 				}
 		},
@@ -9993,4 +9996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0d0f46caa645c0b87efa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.cf6d343d475bb77f7903.js.map
