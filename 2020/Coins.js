@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.796f70ee96d742b64ef3.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.68b48d6752b464ac812c.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -590,9 +590,9 @@
 				B = t.n(S),
 				G = t("./src/lib/classNames/index.ts"),
 				V = t("./src/reddit/controls/Button/index.tsx"),
-				z = t("./src/reddit/icons/svgs/Coin/index.tsx"),
-				F = t("./src/reddit/icons/svgs/Stamp/index.tsx");
-			var q = e => {
+				q = t("./src/reddit/icons/svgs/Coin/index.tsx"),
+				z = t("./src/reddit/icons/svgs/Stamp/index.tsx");
+			var F = e => {
 					const {
 						className: a,
 						coinPackage: t,
@@ -620,7 +620,7 @@
 						className: B.a.badge
 					}, p), k && l.a.createElement("div", {
 						className: Object(G.a)(B.a.stamp, v)
-					}, l.a.createElement(F.a, {
+					}, l.a.createElement(z.a, {
 						className: B.a.stampIcon
 					}), l.a.createElement("div", {
 						className: Object(G.a)(B.a.stampValue, v)
@@ -630,7 +630,7 @@
 						className: Object(G.a)(B.a.contentContainer, v)
 					}, l.a.createElement("div", {
 						className: Object(G.a)(B.a.price, v)
-					}, l.a.createElement(z.a, {
+					}, l.a.createElement(q.a, {
 						className: B.a.priceCoinIcon
 					}), l.a.createElement("div", null, l.a.createElement("div", {
 						className: B.a.priceValue
@@ -786,8 +786,8 @@
 					activeSaleConfig: A.a,
 					coinPackages: A.b,
 					dealCoinPackages: A.d,
-					isGold: D.p,
-					isLoggedIn: D.H,
+					isGold: D.q,
+					isLoggedIn: D.I,
 					premiumPackages: A.e,
 					purchaseCatalogPending: A.g
 				}),
@@ -955,7 +955,7 @@
 						isLargeView: 0 === e,
 						isLoading: !0,
 						key: e
-					})) : e.map(e => l.a.createElement(q, {
+					})) : e.map(e => l.a.createElement(F, {
 						className: P.a.purchasePackage,
 						coinPackage: e,
 						isLargeView: e.featured,
@@ -991,4 +991,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.796f70ee96d742b64ef3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.68b48d6752b464ac812c.js.map

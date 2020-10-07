@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.dcc40748e2132df480a4.js
-// Retrieved at 10/7/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.ad047433729c6757a4aa.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -55,8 +55,8 @@
 			var N = s("./node_modules/lodash/debounce.js"),
 				j = s.n(N),
 				w = s("./src/lib/classNames/index.ts"),
-				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				R = s("./src/reddit/selectors/user.ts"),
+				R = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				S = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				B = s.n(O);
 			const k = 400;
@@ -88,7 +88,7 @@
 					}, d.a.createElement("button", {
 						className: B.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, d.a.createElement(S.a, {
+					}, d.a.createElement(R.a, {
 						className: B.a.searchIcon
 					})), d.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -109,7 +109,7 @@
 				}
 			}
 			const P = Object(h.c)({
-				isNightMode: R.S
+				isNightMode: S.T
 			});
 			var H = Object(l.b)(P)(M),
 				U = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -498,4 +498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.dcc40748e2132df480a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.ad047433729c6757a4aa.js.map

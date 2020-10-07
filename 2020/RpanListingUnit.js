@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.d577062df4a2dd493e3a.js
-// Retrieved at 10/7/2020, 5:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.18a827e1067d4f9aa68f.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "6ae600f-production"
+					SENTRY_RELEASE_VERSION: "6aa7757-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -1151,7 +1151,7 @@
 				playerName: "RPAN DU Video Player"
 			}), de = Object(a.b)(() => Object(n.c)({
 				autoplay: U.b,
-				isLoggedIn: U.H,
+				isLoggedIn: U.I,
 				inRpanLoadingAnimation: V.b,
 				isOverlayOpen: H.i,
 				location: (e, t) => {
@@ -1701,4 +1701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.d577062df4a2dd493e3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.18a827e1067d4f9aa68f.js.map

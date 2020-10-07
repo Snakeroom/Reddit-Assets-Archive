@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.7f688eb57f0496eefa22.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.5fb0d972d776ead7025e.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -220,15 +220,15 @@
 				T = n("./src/reddit/controls/Button/index.tsx"),
 				R = n("./src/reddit/models/ContentGate.ts"),
 				F = n("./src/reddit/selectors/meta.ts"),
-				D = n("./src/reddit/selectors/user.ts"),
-				I = n("./src/reddit/components/ContentGate/index.m.less"),
-				G = n.n(I);
+				I = n("./src/reddit/selectors/user.ts"),
+				D = n("./src/reddit/components/ContentGate/index.m.less"),
+				G = n.n(D);
 			const {
 				fbt: M
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = p.a.div("ButtonsContainer", G.a), z = p.a.div("Container", G.a), H = p.a.div("Description", G.a), A = p.a.div("PrivateSubredditDetails", G.a), W = p.a.div("PrivateSubredditDescription", G.a), q = p.a.h3("PrivateSubredditName", G.a), K = p.a.a("Link", G.a), Y = p.a.wrapped(T.k, "LinkRouterButton", G.a), V = p.a.wrapped(T.j, "LinkButton", G.a), X = p.a.wrapped(T.n, "SecondaryLinkRouterButton", G.a), Z = p.a.wrapped(T.m, "SecondaryLinkButton", G.a), J = p.a.wrapped(Y, "GoHomeLinkButton", G.a), Q = p.a.img("Image", G.a), $ = p.a.img("ImagePlaceholder", G.a), ee = p.a.wrapped(Y, "LeftLinkRouterButton", G.a), te = p.a.wrapped(V, "LeftLinkButton", G.a), ne = p.a.wrapped(Z, "SecondaryLeftLinkButton", G.a), re = p.a.wrapped(X, "SecondaryLeftLinkRouterButton", G.a), ae = p.a.h3("Title", G.a), se = p.a.div("PageBody", G.a), oe = p.a.div("QuarantineMessageWrapper", G.a), ie = Object(l.c)({
-				isLoggedIn: D.G,
+				isLoggedIn: I.H,
 				origin: F.l,
-				user: D.i
+				user: I.i
 			}), le = Object(C.t)(), ce = Object(o.b)(ie, (e, t) => {
 				let {
 					subredditName: n
@@ -499,8 +499,8 @@
 				x = b.a.wrapped(u.l, "SecondaryButton", g.a),
 				E = b.a.wrapped(c.c, "StyledTooltip", g.a),
 				y = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.cb)(e),
-					userIsSuspended: h.M
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.db)(e),
+					userIsSuspended: h.N
 				});
 			t.a = Object(o.b)(y, (e, t) => {
 				let {
@@ -923,7 +923,7 @@
 				}).apply(this, arguments)
 			}
 			const w = Object(y.t)(),
-				O = Object(l.a)(y.B, S.X, (e, t) => {
+				O = Object(l.a)(y.B, S.Y, (e, t) => {
 					let {
 						location: n
 					} = t;
@@ -940,7 +940,7 @@
 					return Object(j.j)(e, {
 						profileName: n.params.profileName
 					})
-				}, S.H, (e, t) => {
+				}, S.I, (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -1039,4 +1039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.7f688eb57f0496eefa22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.5fb0d972d776ead7025e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.7b80226970ca38ceedf1.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.e220009df52f67c2b767.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2270,7 +2270,7 @@
 							commentId: s.postId
 						})
 					},
-					isLoggedIn: Q.H,
+					isLoggedIn: Q.I,
 					moderatorPermissions: (e, t) => {
 						let {
 							comment: s
@@ -2698,7 +2698,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: f.d,
 					postPermalink: v.M,
-					shouldOpenPostInNewTab: g.W
+					shouldOpenPostInNewTab: g.X
 				})),
 				_ = e => {
 					let t, {
@@ -3005,7 +3005,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: v.W,
+					shouldOpenPostInNewTab: v.X,
 					subreddit: f.ab
 				}),
 				M = Object(i.b)(N);
@@ -3906,7 +3906,7 @@
 				ge = Object(a.c)({
 					activeModalId: ae.a,
 					layout: B.N,
-					userIsOp: H.jb,
+					userIsOp: H.kb,
 					subreddit: B.q
 				}),
 				Oe = Object(i.b)(ge, (e, t) => {
@@ -4840,7 +4840,7 @@
 						return s && s.coinPrice >= c.g
 					})
 				},
-				isNightmodeOn: v.S
+				isNightmodeOn: v.T
 			}), e => ({
 				openPost: t => e(Object(m.C)(t))
 			}));
@@ -6551,7 +6551,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, o = Ee(t, ["isProfilePostListing"]);
-						return Object(Z.B)(e, o) && s && Object(pe.jb)(e, o) && Object(pe.hb)(e, {
+						return Object(Z.B)(e, o) && s && Object(pe.kb)(e, o) && Object(pe.ib)(e, {
 							userName: Object(le.N)(e, {
 								postId: o.postId
 							}).author
@@ -6559,7 +6559,7 @@
 					},
 					subredditOrProfile: le.ab,
 					hasSubredditRules: me.k,
-					userIsOp: pe.jb,
+					userIsOp: pe.kb,
 					isPostPartOfACollection: ve.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -7258,7 +7258,7 @@
 				}),
 				P = Object(c.c)({
 					isDropdownMenuOpen: e => Object(C.a)(e) === S,
-					isOwnProfile: (e, t) => Object(_.L)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(_.M)(e, t.profileName),
 					isSnoovatar30Enabled: E.d.snoovatar30,
 					isSubscriptionsPinned: j.b
 				}),
@@ -8156,7 +8156,7 @@
 					let {
 						profileName: s
 					} = t;
-					const o = Object(p.gb)(e, {
+					const o = Object(p.hb)(e, {
 							userName: s
 						}),
 						n = Object(m.e)(e);
@@ -8931,7 +8931,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				I = Object(c.c)({
-					hideNSFWPref: E.z
+					hideNSFWPref: E.A
 				}),
 				w = Object(i.b)(I)(e => r.a.createElement("div", {
 					className: j.a.communityItemContainer
@@ -9128,7 +9128,7 @@
 					let {
 						subredditOrProfile: s
 					} = t;
-					return s.type === l.a.PROFILE ? Object(b.gb)(e, {
+					return s.type === l.a.PROFILE ? Object(b.hb)(e, {
 						userName: s.name
 					}) : null
 				}
@@ -9182,7 +9182,7 @@
 					isChatPost: m.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.m,
-					isLoggedIn: h.H,
+					isLoggedIn: h.I,
 					isMeta: (e, t) => {
 						let {
 							postId: s
@@ -9200,7 +9200,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: b.ab,
-					userIsOp: h.jb,
+					userIsOp: h.kb,
 					flairStyleTemplate: d.R
 				},
 				f = (e, t) => {
@@ -11258,4 +11258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7b80226970ca38ceedf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.e220009df52f67c2b767.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.066a6a4bfdb975f9b7a6.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.9e39e02fd17001c9ecc1.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -455,7 +455,7 @@
 					post: j.N,
 					showEditFlair: _.a,
 					subredditOrProfile: j.ab,
-					userIsOp: P.jb
+					userIsOp: P.kb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -839,7 +839,7 @@
 					isCurrentUserProfilePost: h.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Bb.TOPIC),
 					post: h.N,
-					shouldOpenPostInNewTab: v.W,
+					shouldOpenPostInNewTab: v.X,
 					subreddit: h.ab
 				}),
 				M = Object(a.b)(I);
@@ -1464,4 +1464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.066a6a4bfdb975f9b7a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.9e39e02fd17001c9ecc1.js.map

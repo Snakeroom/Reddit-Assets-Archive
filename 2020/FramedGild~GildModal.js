@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.230ed974eaaba88d7938.js
-// Retrieved at 10/6/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5f5065e8a3751a464975.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -684,8 +684,8 @@
 				B = s("./src/reddit/selectors/goldPurchaseModals.ts"),
 				G = s("./src/reddit/selectors/posts.ts"),
 				D = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				R = s("./src/reddit/selectors/subreddit.ts"),
-				F = s("./src/reddit/selectors/user.ts"),
+				F = s("./src/reddit/selectors/subreddit.ts"),
+				R = s("./src/reddit/selectors/user.ts"),
 				V = s("./src/reddit/components/CoinPurchaseModal/async.tsx"),
 				W = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/higherOrderComponents/makeAsync.tsx")),
 				z = s("./src/lib/loadWithRetries/index.ts"),
@@ -1314,14 +1314,14 @@
 			};
 			const Ge = (e, t) => e.length > b.l.length && !e.find(e => e.award.id === t.id);
 			var De = s("./src/reddit/components/GildModalContent/index.m.less"),
-				Re = s.n(De);
-			const Fe = (e, t) => {
+				Fe = s.n(De);
+			const Re = (e, t) => {
 					let {
 						thingId: s,
 						subredditId: n
 					} = t, a = n;
 					if (!n) {
-						const t = Object(R.K)(e, {
+						const t = Object(F.K)(e, {
 							thingId: s
 						});
 						a = t && t.id
@@ -1340,7 +1340,7 @@
 							thingId: s,
 							subredditId: n
 						} = t;
-						const a = Fe(e, {
+						const a = Re(e, {
 							thingId: s,
 							subredditId: n
 						});
@@ -1354,7 +1354,7 @@
 							thingId: s,
 							subredditId: n
 						} = t;
-						const a = Fe(e, {
+						const a = Re(e, {
 								thingId: s,
 								subredditId: n
 							}),
@@ -1374,7 +1374,7 @@
 							subredditId: n
 						} = t, a = n;
 						if (!n) {
-							const t = Object(R.K)(e, {
+							const t = Object(F.K)(e, {
 								thingId: s
 							});
 							if (!t) return !1;
@@ -1386,12 +1386,12 @@
 						})
 					},
 					correlationId: e => Object(k.b)(e) || Object(u.d)(u.a.GildingFlow, !1),
-					currentUser: F.i,
+					currentUser: R.i,
 					errorMessage: k.a,
 					isAnonymous: k.g,
 					iFramed: k.h,
 					isGildPending: k.e,
-					isEmployee: F.E,
+					isEmployee: R.F,
 					isRecommendedCoinPackagePending: L.h,
 					message: k.c,
 					postOrComment: (e, t) => {
@@ -1407,17 +1407,17 @@
 					purchaseCatalogPending: L.g,
 					showPurchaseModal: B.r,
 					selectedAward: T.b,
-					subreddit: R.K,
+					subreddit: F.K,
 					subredditCoins: (e, t) => {
 						let {
 							thingId: s,
 							subredditId: n
 						} = t;
-						const a = Object(R.K)(e, {
+						const a = Object(F.K)(e, {
 								thingId: s
 							}),
 							r = a ? a.id : n;
-						return Object(R.C)(e, {
+						return Object(F.C)(e, {
 							subredditId: r
 						})
 					},
@@ -1427,7 +1427,7 @@
 							subredditId: n
 						} = t, a = n;
 						if (!n) {
-							const t = Object(R.K)(e, {
+							const t = Object(F.K)(e, {
 								thingId: s
 							});
 							a = t && t.id
@@ -1443,8 +1443,8 @@
 						}) : []
 					},
 					userCoins: (e, t) => {
-						const s = Object(F.d)(e),
-							n = Fe(e, t);
+						const s = Object(R.d)(e),
+							n = Re(e, t);
 						return s + Object(M.a)(e, {
 							subredditId: n
 						})
@@ -1619,13 +1619,13 @@
 							thingId: x
 						};
 					return a.a.createElement("div", {
-						className: Object(d.a)(n, Re.a.gildModalContent)
+						className: Object(d.a)(n, Fe.a.gildModalContent)
 					}, a.a.createElement(Be, {
 						onCancel: r,
 						onAddCoins: this.onClickAddCoins,
 						userCoins: I
 					}), a.a.createElement("div", {
-						className: Re.a.modalMainContent
+						className: Fe.a.modalMainContent
 					}, a.a.createElement(Me, {
 						awardIcons: t,
 						awardTotals: e,
@@ -1870,7 +1870,7 @@
 			})), s.d(t, "c", (function() {
 				return D
 			})), s.d(t, "f", (function() {
-				return R
+				return F
 			})), s.d(t, "a", (function() {
 				return W
 			})), s.d(t, "j", (function() {
@@ -1908,7 +1908,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							a = F(n, i.a.ENDED) ? i.a.ENDED : n,
+							a = R(n, i.a.ENDED) ? i.a.ENDED : n,
 							r = s.stream.vod_accessible;
 						return a === n && !0 === r ? e : Object.assign(Object.assign({}, e), {
 							[t]: Object.assign(Object.assign({}, s), {
@@ -1923,7 +1923,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const n = s.stream.state,
-							a = F(n, i.a.ENDED) ? i.a.ENDED : n,
+							a = R(n, i.a.ENDED) ? i.a.ENDED : n,
 							r = s.stream.vod_accessible;
 						return a === n && !1 === r ? e : Object.assign(Object.assign({}, e), {
 							[t]: Object.assign(Object.assign({}, s), {
@@ -2052,14 +2052,14 @@
 				D = (Object(a.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)(S, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
-				R = Object(n.a)((e, t) => {
+				F = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
 					return s ? I(e, s) : void 0
 				}, e => !e || e.chat_disabled);
 
-			function F(e, t) {
+			function R(e, t) {
 				const s = {
 					[i.a.NOT_STARTED]: 0,
 					[i.a.PUBLISHED]: 1,
@@ -2109,4 +2109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.230ed974eaaba88d7938.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5f5065e8a3751a464975.js.map

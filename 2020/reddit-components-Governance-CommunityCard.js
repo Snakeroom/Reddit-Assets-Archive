@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.77c71a57eee70445e4a8.js
-// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.a7f4ae6c116532e65701.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -382,16 +382,16 @@
 					}
 				}));
 			var F = Object(P.b)(V(R)),
-				H = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
-				Z = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
-				X = n.n(Z);
+				Z = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
+				H = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
+				X = n.n(H);
 
 			function Y(e) {
 				return a.a.createElement("div", {
 					className: X.a.risk
 				}, a.a.createElement("div", {
 					className: X.a.riskTitle
-				}, a.a.createElement(H.a, {
+				}, a.a.createElement(Z.a, {
 					className: X.a.alertIcon
 				}), e.title), a.a.createElement("div", {
 					className: X.a.riskBody
@@ -555,7 +555,7 @@
 				claimablePointsEnabled: x.d.spClaimablePoints,
 				customCryptoEnabled: x.d.spCustomCrypto,
 				isEthereumProvider: d.f,
-				isLoggedIn: C.H,
+				isLoggedIn: C.I,
 				nextAvailablePointsClaim: k.l,
 				provider: d.a,
 				tokenName: d.p,
@@ -1119,4 +1119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.77c71a57eee70445e4a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.a7f4ae6c116532e65701.js.map

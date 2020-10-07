@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.dd3d882309b17b5fc8bf.js
-// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.54d9ea75be9554a46322.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1794,7 +1794,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: f.d,
 					postPermalink: g.M,
-					shouldOpenPostInNewTab: v.W
+					shouldOpenPostInNewTab: v.X
 				})),
 				E = e => {
 					let t, {
@@ -2063,8 +2063,8 @@
 				v = f.a.wrapped(m.l, "SecondaryButton", x.a),
 				O = f.a.wrapped(d.c, "StyledTooltip", x.a),
 				y = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
-					userIsSuspended: b.M
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.db)(e),
+					userIsSuspended: b.N
 				});
 			t.a = Object(i.b)(y, (e, t) => {
 				let {
@@ -2195,7 +2195,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: g.W,
+					shouldOpenPostInNewTab: g.X,
 					subreddit: f.ab
 				}),
 				M = Object(i.b)(N);
@@ -3797,7 +3797,7 @@
 				ve = Object(a.c)({
 					activeModalId: ae.a,
 					layout: D.N,
-					userIsOp: W.jb,
+					userIsOp: W.kb,
 					subreddit: D.q
 				}),
 				Oe = Object(i.b)(ve, (e, t) => {
@@ -6388,7 +6388,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = ye(t, ["isProfilePostListing"]);
-						return Object(Z.B)(e, n) && s && Object(pe.jb)(e, n) && Object(pe.hb)(e, {
+						return Object(Z.B)(e, n) && s && Object(pe.kb)(e, n) && Object(pe.ib)(e, {
 							userName: Object(le.N)(e, {
 								postId: n.postId
 							}).author
@@ -6396,7 +6396,7 @@
 					},
 					subredditOrProfile: le.ab,
 					hasSubredditRules: me.k,
-					userIsOp: pe.jb,
+					userIsOp: pe.kb,
 					isPostPartOfACollection: ge.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -7554,7 +7554,7 @@
 				Ge = s.n(He);
 			const qe = Object(_.t)(),
 				Ke = Object(i.c)({
-					hideNSFWPref: Ve.z,
+					hideNSFWPref: Ve.A,
 					subredditOrProfile: I.M,
 					subredditOrProfileAboutInfo: I.I,
 					userIsSubscriber: I.fb
@@ -8209,7 +8209,7 @@
 				}),
 				Ns = Object(i.c)({
 					subreddit: I.B,
-					shouldSeeNSFW: Ve.X
+					shouldSeeNSFW: Ve.Y
 				}),
 				Ms = Object(r.b)(Ns),
 				Ls = e => {
@@ -9482,7 +9482,7 @@
 				F = s("./src/reddit/selectors/user.ts"),
 				A = s("./src/reddit/selectors/widgets.ts");
 			const D = Object(i.c)({
-				isLoggedIn: F.H,
+				isLoggedIn: F.I,
 				subredditId: (e, t) => {
 					let {
 						listingName: s
@@ -10861,7 +10861,7 @@
 					isChatPost: m.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.m,
-					isLoggedIn: h.H,
+					isLoggedIn: h.I,
 					isMeta: (e, t) => {
 						let {
 							postId: s
@@ -10879,7 +10879,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: b.ab,
-					userIsOp: h.jb,
+					userIsOp: h.kb,
 					flairStyleTemplate: d.R
 				},
 				f = (e, t) => {
@@ -11082,14 +11082,14 @@
 				crosspostSubredditOrProfile: u.e,
 				currentUser: b.i,
 				flairStyleTemplate: d.R,
-				hideNSFWPref: b.z,
+				hideNSFWPref: b.A,
 				isActive: u.j,
 				moderatorPermissions: m.i,
 				modModeEnabled: d.P,
 				post: u.N,
 				showEditFlair: p.a,
 				subredditOrProfile: u.ab,
-				userIsOp: b.jb
+				userIsOp: b.kb
 			}), (e, t) => {
 				let {
 					postId: s
@@ -13153,4 +13153,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.dd3d882309b17b5fc8bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.54d9ea75be9554a46322.js.map

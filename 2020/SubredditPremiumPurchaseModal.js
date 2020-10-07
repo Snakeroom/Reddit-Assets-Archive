@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.622a7497c23c70b89e42.js
-// Retrieved at 10/7/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.e6bc84dc7d2d2a5847da.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumPurchaseModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -299,7 +299,7 @@
 				}
 			}
 			const S = Object(P.c)({
-				isLoggedIn: j.H,
+				isLoggedIn: j.I,
 				membershipProducts: (e, t) => {
 					let {
 						subreddit: r
@@ -734,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.622a7497c23c70b89e42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumPurchaseModal.e6bc84dc7d2d2a5847da.js.map

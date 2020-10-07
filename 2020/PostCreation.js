@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0a141d758c0f06c35fec.js
-// Retrieved at 10/7/2020, 5:30:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6ac9a7ba58527bf3ecd6.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "6ae600f-production"
+					SENTRY_RELEASE_VERSION: "6aa7757-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -3869,12 +3869,12 @@
 					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(S.a)(e),
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(k.c)(e, {
-							experimentEligibilitySelector: T.H,
+							experimentEligibilitySelector: T.I,
 							experimentName: _.db
 						});
 						return !(!t || Object(_.Cc)(t))
 					},
-					isLoggedIn: T.H,
+					isLoggedIn: T.I,
 					prefersReducedAnimations: P.c
 				}),
 				Ae = e => Object(C.a)(e.id) ? e.postId : e.id,
@@ -4292,7 +4292,7 @@
 			var C = n("./src/reddit/components/CategoryTagList/index.m.less"),
 				E = n.n(C);
 			const O = Object(r.b)(() => Object(i.c)({
-				labelNSFW: c.P
+				labelNSFW: c.Q
 			}));
 			t.a = O(Object(a.c)(e => {
 				let {
@@ -5128,7 +5128,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: x.W,
+					shouldOpenPostInNewTab: x.X,
 					subreddit: f.ab
 				}),
 				N = Object(i.b)(M);
@@ -5716,7 +5716,7 @@
 				u = n("./src/reddit/models/Flair/index.ts"),
 				p = n("./src/reddit/selectors/user.ts");
 			const m = Object(c.c)({
-					labelNSFW: p.P
+					labelNSFW: p.Q
 				}),
 				h = Object(a.b)(m),
 				b = e => {
@@ -11306,7 +11306,7 @@
 							subredditId: n.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: F.W,
+					shouldOpenPostInNewTab: F.X,
 					imageGalleryCurrentItem: (e, t) => {
 						let {
 							post: n
@@ -20334,8 +20334,8 @@
 			};
 			const u = Object(i.c)({
 					currentUser: a.i,
-					isNightMode: a.S,
-					shouldHideNSFW: a.z
+					isNightMode: a.T,
+					shouldHideNSFW: a.A
 				}),
 				p = Object(r.b)(u);
 			t.a = p(e => {
@@ -20429,9 +20429,9 @@
 			};
 			const p = Object(i.c)({
 					currentUser: l.i,
-					isNightMode: l.S,
-					shouldHideNSFW: l.z,
-					user: l.gb
+					isNightMode: l.T,
+					shouldHideNSFW: l.A,
+					user: l.hb
 				}),
 				m = Object(r.b)(p);
 			t.a = m(e => {
@@ -20983,10 +20983,10 @@
 						s = t.redditStyle || Object(f.m)(e, {
 							subredditId: n
 						}),
-						o = Object(x.S)(e);
+						o = Object(x.T)(e);
 					return s || o
 				},
-				nigtmode: x.S,
+				nigtmode: x.T,
 				subredditId: u.m,
 				topPostVariant: g.d
 			}));
@@ -30309,7 +30309,7 @@
 					if (!r) return l.fbt._("A destination community is required to crosspost", null, {
 						hk: "3haidF"
 					});
-					const c = i ? Object(k.Y)(e, {
+					const c = i ? Object(k.Z)(e, {
 						userId: r
 					}) : r;
 					if (c) {
@@ -30648,7 +30648,7 @@
 				no = n.n(to);
 			const so = lt.a.wrapped($s.a, "SubredditPicker", no.a),
 				oo = lt.a.wrapped($e.a, "ControlRow", no.a),
-				ro = Object(i.a)(w.h, nt.a, w.T, k.i, E.q, k.z, (e, t, n, s, o, r) => {
+				ro = Object(i.a)(w.h, nt.a, w.T, k.i, E.q, k.A, (e, t, n, s, o, r) => {
 					const i = n && !t ? n : e;
 					if (!i || !i.name) return Object(eo.b)("", null, null, r);
 					const {
@@ -30896,7 +30896,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ar = "".concat(U.a.assetPath, "/img/snoo-drafts.png"), cr = 3, lr = lt.a.div("Wrapper", or.a), dr = lt.a.div("TitleRow", or.a), ur = lt.a.span("DraftsNumber", or.a), pr = lt.a.div("DetailsContainer", or.a), mr = lt.a.wrapped($e.a, "ButtonRow", or.a), hr = lt.a.wrapped(it.l, "CancelButton", or.a), br = lt.a.div("CloseWrapper", or.a), gr = lt.a.wrapped(ho.a, "Close", or.a), fr = lt.a.div("Empty", or.a), xr = lt.a.img("EmptyImage", or.a), yr = lt.a.p("EmptyText", or.a), vr = Object(i.c)({
 				drafts: S.c,
 				isPending: S.b,
-				maxDrafts: k.R
+				maxDrafts: k.S
 			}), Cr = Object(r.b)(vr);
 			class Er extends o.a.PureComponent {
 				constructor() {
@@ -33101,7 +33101,7 @@
 					eventSchedule: w.p,
 					includeUserProfile: k.f,
 					isChanged: w.C,
-					isNameEditable: k.J,
+					isNameEditable: k.K,
 					isPostSubmitEnabled: Vs,
 					isScheduledPost: w.L,
 					flair: w.s,
@@ -33110,7 +33110,7 @@
 					linkBody: w.N,
 					markdownBody: w.O,
 					rteBody: w.ab,
-					maxDrafts: k.R,
+					maxDrafts: k.S,
 					modalId: w.R,
 					needsCaptcha: w.S,
 					nextSubreddit: w.T,
@@ -34130,4 +34130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0a141d758c0f06c35fec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6ac9a7ba58527bf3ecd6.js.map

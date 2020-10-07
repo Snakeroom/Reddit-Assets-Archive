@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.2e9d9754591e6fa8497d.js
-// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.312fb4659a6b39c6ba18.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/ScrollChildFactory.tsx": function(e, t, s) {
@@ -1496,7 +1496,7 @@
 				geopopular: q.m
 			}), ne = Object(h.c)({
 				isInTrendingEntrypointExperiment: M.a,
-				isLoggedIn: q.H,
+				isLoggedIn: q.I,
 				isPopular: B.C,
 				isRpanDuVisible: e => Object(J.a)(e, {
 					listingName: G.R
@@ -1679,7 +1679,7 @@
 					let {
 						listingName: s
 					} = t;
-					const r = Object(a.nb)(e);
+					const r = Object(a.ob)(e);
 					if (!r) return !1;
 					let c;
 					if (-1 === [o.R, "r/popular"].indexOf(s)) {
@@ -1999,4 +1999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2e9d9754591e6fa8497d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.312fb4659a6b39c6ba18.js.map

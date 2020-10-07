@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.2b4f1153e9fa08185b85.js
-// Retrieved at 10/1/2020, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.d7f038715673fa8f6aba.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/components/NotificationUnit/Component.tsx": function(e, t, n) {
@@ -17,8 +17,8 @@
 				p = n("./src/reddit/icons/svgs/Discover/index.tsx"),
 				v = n("./src/reddit/icons/svgs/Follow/index.tsx"),
 				f = n("./src/reddit/icons/svgs/LiveNotif/index.tsx"),
-				x = n("./src/reddit/icons/svgs/Menu/index.tsx"),
-				g = n("./src/reddit/icons/svgs/Reply/index.tsx"),
+				g = n("./src/reddit/icons/svgs/Menu/index.tsx"),
+				x = n("./src/reddit/icons/svgs/Reply/index.tsx"),
 				h = n("./src/reddit/icons/svgs/ReplyArrow/index.tsx"),
 				b = n("./src/reddit/icons/svgs/Rising/index.tsx"),
 				E = n("./src/reddit/icons/svgs/Top/index.tsx"),
@@ -87,11 +87,11 @@
 						return "./src/reddit/components/NotificationUnit/NotificationButton.tsx"
 					}
 				}),
-				k = l.a.wrapped(x.a, "MenuIcon", C.a),
+				k = l.a.wrapped(g.a, "MenuIcon", C.a),
 				O = l.a.wrapped(p.a, "NotifIcon", C.a),
 				T = l.a.wrapped(v.a, "NotifIcon", C.a),
 				I = l.a.wrapped(f.a, "NotifIcon", C.a),
-				P = l.a.wrapped(g.a, "NotifIcon", C.a),
+				P = l.a.wrapped(x.a, "NotifIcon", C.a),
 				U = l.a.wrapped(b.a, "NotifIcon", C.a),
 				M = l.a.wrapped(E.a, "NotifIcon", C.a),
 				R = l.a.wrapped(_.a, "NotifIcon", C.a),
@@ -269,8 +269,8 @@
 				p = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
 				v = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				f = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				x = n("./src/reddit/selectors/moderatorPermissions.ts"),
-				g = n("./src/reddit/selectors/structuredStyles.ts"),
+				g = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				x = n("./src/reddit/selectors/structuredStyles.ts"),
 				h = n("./src/reddit/selectors/userPrefs.ts"),
 				b = n("./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less"),
 				E = n.n(b),
@@ -309,9 +309,9 @@
 					isLoading: !0
 				})
 			}), T = Object(c.c)({
-				isEditing: g.j,
+				isEditing: x.j,
 				isSubscriptionsPinned: h.b,
-				moderatorPermissions: x.j
+				moderatorPermissions: g.j
 			});
 			t.a = Object(o.b)(T)(e => {
 				const t = e.moderatorPermissions && s()(e.moderatorPermissions).some(e => e);
@@ -381,9 +381,9 @@
 			})), n.d(t, "g", (function() {
 				return f
 			})), n.d(t, "i", (function() {
-				return x
-			})), n.d(t, "e", (function() {
 				return g
+			})), n.d(t, "e", (function() {
+				return x
 			})), n.d(t, "b", (function() {
 				return h
 			})), n.d(t, "c", (function() {
@@ -406,8 +406,8 @@
 				p = a.a.h2("FormGroupTitle", i.a),
 				v = a.a.div("FormElement", i.a),
 				f = a.a.div("FormGroupDescription", i.a),
-				x = a.a.div("FormItem", i.a),
-				g = a.a.h3("FormElementTitle", i.a),
+				g = a.a.div("FormItem", i.a),
+				x = a.a.h3("FormElementTitle", i.a),
 				h = a.a.div("FormElementDescription", i.a),
 				b = a.a.div("FormElementError", i.a),
 				E = a.a.div("FormElementSubGroup", i.a),
@@ -434,7 +434,7 @@
 		"./src/reddit/components/TabNav/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return g
+				return x
 			})), n.d(t, "a", (function() {
 				return y
 			}));
@@ -453,8 +453,8 @@
 				v = n("./src/reddit/components/TabNav/index.m.less"),
 				f = n.n(v);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -462,7 +462,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var g, h = function(e, t) {
+			var x, h = function(e, t) {
 				var n = {};
 				for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -473,7 +473,7 @@
 			};
 			! function(e) {
 				e.GEAR = "gear"
-			}(g || (g = {}));
+			}(x || (x = {}));
 			const b = l.a.wrapped(p.a, "Gear", f.a),
 				E = l.a.h3("Title", f.a),
 				_ = l.a.div("TabNavContainer", f.a),
@@ -484,7 +484,7 @@
 						children: n,
 						enabled: a
 					} = e, s = h(e, ["active", "children", "enabled"]);
-					return r.a.createElement(u.a, x({}, s, {
+					return r.a.createElement(u.a, g({}, s, {
 						"aria-selected": t,
 						className: Object(o.a)(s.className, {
 							[f.a.mIsActive]: t,
@@ -495,7 +495,7 @@
 				}, "Tab", f.a),
 				w = e => {
 					switch (e) {
-						case g.GEAR:
+						case x.GEAR:
 							return r.a.createElement(b, null);
 						default:
 							return null
@@ -899,8 +899,8 @@
 			var f = e => s.a.createElement(v, {
 					notifications: []
 				}),
-				x = n("./node_modules/react-redux/es/index.js"),
-				g = n("./node_modules/reselect/es/index.js"),
+				g = n("./node_modules/react-redux/es/index.js"),
+				x = n("./node_modules/reselect/es/index.js"),
 				h = n("./node_modules/fbt/lib/FbtPublic.js"),
 				b = n("./src/reddit/components/BadgeCounter/index.tsx"),
 				E = n("./src/reddit/components/TabNav/index.tsx"),
@@ -949,10 +949,10 @@
 					}, s.a.createElement(j, null), "Settings")))))
 				},
 				T = n("./src/reddit/selectors/user.ts");
-			const I = Object(g.c)({
-				unreadNotifications: T.fb
+			const I = Object(x.c)({
+				unreadNotifications: T.gb
 			});
-			var P = Object(x.b)(I)(e => s.a.createElement(O, e));
+			var P = Object(g.b)(I)(e => s.a.createElement(O, e));
 			const U = Object(o.t)();
 			class M extends s.a.Component {
 				render() {
@@ -967,4 +967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.2b4f1153e9fa08185b85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.d7f038715673fa8f6aba.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.cf6d343d475bb77f7903.js
-// Retrieved at 10/7/2020, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3b981921e7bd9e28effd.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -628,7 +628,7 @@
 			const {
 				fbt: D
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = p.a.div("ButtonsContainer", R.a), W = p.a.div("Container", R.a), H = p.a.div("Description", R.a), V = p.a.div("PrivateSubredditDetails", R.a), K = p.a.div("PrivateSubredditDescription", R.a), q = p.a.h3("PrivateSubredditName", R.a), G = p.a.a("Link", R.a), z = p.a.wrapped(T.k, "LinkRouterButton", R.a), Y = p.a.wrapped(T.j, "LinkButton", R.a), J = p.a.wrapped(T.n, "SecondaryLinkRouterButton", R.a), Z = p.a.wrapped(T.m, "SecondaryLinkButton", R.a), Q = p.a.wrapped(z, "GoHomeLinkButton", R.a), X = p.a.img("Image", R.a), $ = p.a.img("ImagePlaceholder", R.a), ee = p.a.wrapped(z, "LeftLinkRouterButton", R.a), te = p.a.wrapped(Y, "LeftLinkButton", R.a), ne = p.a.wrapped(Z, "SecondaryLeftLinkButton", R.a), se = p.a.wrapped(J, "SecondaryLeftLinkRouterButton", R.a), re = p.a.h3("Title", R.a), ae = p.a.div("PageBody", R.a), ie = p.a.div("QuarantineMessageWrapper", R.a), oe = Object(c.c)({
-				isLoggedIn: F.G,
+				isLoggedIn: F.H,
 				origin: L.l,
 				user: F.i
 			}), ce = Object(I.t)(), de = Object(i.b)(oe, (e, t) => {
@@ -954,8 +954,8 @@
 				y = x.a.wrapped(u.l, "SecondaryButton", g.a),
 				v = x.a.wrapped(d.c, "StyledTooltip", g.a),
 				E = Object(o.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
-					userIsSuspended: b.M
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.db)(e),
+					userIsSuspended: b.N
 				});
 			t.a = Object(i.b)(E, (e, t) => {
 				let {
@@ -3679,7 +3679,7 @@
 						listingName: n,
 						pageLayer: s
 					}),
-					a = Object(d.y)(e) || Object(c.a)(e),
+					a = Object(d.z)(e) || Object(c.a)(e),
 					i = Object(o.e)(e);
 				return {
 					canShowAd: r && !a,
@@ -6124,7 +6124,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				A = Object(c.c)({
-					hideNSFWPref: E.z
+					hideNSFWPref: E.A
 				}),
 				w = Object(i.b)(A)(e => a.a.createElement("div", {
 					className: k.a.communityItemContainer
@@ -6674,7 +6674,7 @@
 				S = m.a.wrapped(o.a, "RawHTMLDisplay", v.a);
 			var A = Object(a.b)(() => Object(i.c)({
 					forceRedditStyle: x.m,
-					isNightmodeOn: f.S
+					isNightmodeOn: f.T
 				}))(e => r.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -7119,14 +7119,14 @@
 				crosspostSubredditOrProfile: p.e,
 				currentUser: b.i,
 				flairStyleTemplate: d.R,
-				hideNSFWPref: b.z,
+				hideNSFWPref: b.A,
 				isActive: p.j,
 				moderatorPermissions: u.i,
 				modModeEnabled: d.P,
 				post: p.N,
 				showEditFlair: m.a,
 				subredditOrProfile: p.ab,
-				userIsOp: b.jb
+				userIsOp: b.kb
 			}), (e, t) => {
 				let {
 					postId: n
@@ -9093,13 +9093,13 @@
 					match: n
 				} = t;
 				return n.params.sort
-			}, Me, Se.X, he.a, (e, t, n, s, r) => {
+			}, Me, Se.Y, he.a, (e, t, n, s, r) => {
 				let a = t;
 				a || (e === se.f && r ? a = k.O.BEST : Object(v.a)(e) && (a = k.O.HOT));
 				const i = Object(A.g)(n, s);
 				return Object(A.h)(e, a, n, i)
 			}), De = Object(h.c)({
-				isTopContentDismissed: Se.N
+				isTopContentDismissed: Se.O
 			}), Ue = Object(h.c)({
 				subreddit: (e, t) => Object(je.B)(e, {
 					subredditName: t.match.params.subredditName
@@ -9108,7 +9108,7 @@
 				countryMeta: Ee.b,
 				geopopular: Se.m
 			}), He = Object(h.c)({
-				isLoggedIn: Se.H
+				isLoggedIn: Se.I
 			}), Ve = Object(C.a)((e, t) => {
 				const {
 					subreddit: n
@@ -9202,7 +9202,7 @@
 					})
 				},
 				isSnoovatarEmbedEnabled: xe.a
-			}), Ze = () => Object(h.a)(Se.X, We, Me, De, Ue, (e, t) => {
+			}), Ze = () => Object(h.a)(Se.Y, We, Me, De, Ue, (e, t) => {
 				let {
 					match: n
 				} = t;
@@ -9646,7 +9646,7 @@
 					let {
 						listingName: n
 					} = t;
-					const s = Object(o.nb)(e);
+					const s = Object(o.ob)(e);
 					if (!s) return !1;
 					let c;
 					if (-1 === [a.R, "r/popular"].indexOf(n)) {
@@ -9978,7 +9978,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const i = e => s.W.Enabled === Object(r.c)(e, {
-				experimentEligibilitySelector: a.H,
+				experimentEligibilitySelector: a.I,
 				experimentName: s.U
 			})
 		},
@@ -9996,4 +9996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.cf6d343d475bb77f7903.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3b981921e7bd9e28effd.js.map

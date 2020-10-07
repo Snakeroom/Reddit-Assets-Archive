@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.e5c91a626b75f45de5a8.js
-// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.81bc561481bf65435cba.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~SubredditWiki"], {
 		"./src/reddit/components/BannerAd/index.m.less": function(e, t, r) {
@@ -476,7 +476,7 @@
 						listingName: r,
 						pageLayer: n
 					}),
-					a = Object(c.y)(e) || Object(d.a)(e),
+					a = Object(c.z)(e) || Object(d.a)(e),
 					i = Object(o.e)(e);
 				return {
 					canShowAd: s && !a,
@@ -633,7 +633,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				w = Object(d.c)({
-					hideNSFWPref: O.z
+					hideNSFWPref: O.A
 				}),
 				j = Object(i.b)(w)(e => a.a.createElement("div", {
 					className: E.a.communityItemContainer
@@ -861,4 +861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.e5c91a626b75f45de5a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~SubredditWiki.81bc561481bf65435cba.js.map

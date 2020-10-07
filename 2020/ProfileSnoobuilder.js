@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.9090dae5be930f595572.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.0c9b8e933af021a79d4a.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -504,9 +504,9 @@
 				j = n("./src/lib/linkMatchers/index.ts"),
 				C = n("./src/lib/linkMatchers/customLinks.ts"),
 				P = n("./src/reddit/controls/OutboundLink/index.tsx");
-			const O = /\[(.+?)\]\((.+?)\)/g,
-				T = e => {
-					const t = e.split(O);
+			const T = /\[(.+?)\]\((.+?)\)/g,
+				O = e => {
+					const t = e.split(T);
 					if (1 === t.length) return [e];
 					const n = [];
 					for (let s = 0; s < t.length; s += 3) {
@@ -517,7 +517,7 @@
 				};
 			var R = o.a.memo(e => {
 					let t = [e.text];
-					return e.parseMdLinks && (t = S()(t, T)), e.parseRegularLinks && (t = S()(t, e => Array.isArray(e) ? [e] : (e => {
+					return e.parseMdLinks && (t = S()(t, O)), e.parseRegularLinks && (t = S()(t, e => Array.isArray(e) ? [e] : (e => {
 						const t = j.e.add(C.g.subreddit.prefix, C.g.subreddit.config).match(e);
 						if (!t) return [e];
 						const n = [];
@@ -549,8 +549,8 @@
 				D = n.n(M);
 			const {
 				fbt: W
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = h.a.div("ButtonsContainer", D.a), H = h.a.div("Container", D.a), U = h.a.div("Description", D.a), G = h.a.div("PrivateSubredditDetails", D.a), I = h.a.div("PrivateSubredditDescription", D.a), q = h.a.h3("PrivateSubredditName", D.a), J = h.a.a("Link", D.a), V = h.a.wrapped(B.k, "LinkRouterButton", D.a), X = h.a.wrapped(B.j, "LinkButton", D.a), K = h.a.wrapped(B.n, "SecondaryLinkRouterButton", D.a), Y = h.a.wrapped(B.m, "SecondaryLinkButton", D.a), Z = h.a.wrapped(V, "GoHomeLinkButton", D.a), Q = h.a.img("Image", D.a), $ = h.a.img("ImagePlaceholder", D.a), ee = h.a.wrapped(V, "LeftLinkRouterButton", D.a), te = h.a.wrapped(X, "LeftLinkButton", D.a), ne = h.a.wrapped(Y, "SecondaryLeftLinkButton", D.a), se = h.a.wrapped(K, "SecondaryLeftLinkRouterButton", D.a), re = h.a.h3("Title", D.a), oe = h.a.div("PageBody", D.a), ie = h.a.div("QuarantineMessageWrapper", D.a), ae = Object(d.c)({
-				isLoggedIn: F.G,
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = h.a.div("ButtonsContainer", D.a), H = h.a.div("Container", D.a), U = h.a.div("Description", D.a), G = h.a.div("PrivateSubredditDetails", D.a), I = h.a.div("PrivateSubredditDescription", D.a), q = h.a.h3("PrivateSubredditName", D.a), J = h.a.a("Link", D.a), V = h.a.wrapped(B.k, "LinkRouterButton", D.a), Y = h.a.wrapped(B.j, "LinkButton", D.a), K = h.a.wrapped(B.n, "SecondaryLinkRouterButton", D.a), X = h.a.wrapped(B.m, "SecondaryLinkButton", D.a), Z = h.a.wrapped(V, "GoHomeLinkButton", D.a), Q = h.a.img("Image", D.a), $ = h.a.img("ImagePlaceholder", D.a), ee = h.a.wrapped(V, "LeftLinkRouterButton", D.a), te = h.a.wrapped(Y, "LeftLinkButton", D.a), ne = h.a.wrapped(X, "SecondaryLeftLinkButton", D.a), se = h.a.wrapped(K, "SecondaryLeftLinkRouterButton", D.a), re = h.a.h3("Title", D.a), oe = h.a.div("PageBody", D.a), ie = h.a.div("QuarantineMessageWrapper", D.a), ae = Object(d.c)({
+				isLoggedIn: F.H,
 				origin: z.l,
 				user: F.i
 			}), de = Object(L.t)(), le = Object(i.b)(ae, (e, t) => {
@@ -605,7 +605,7 @@
 							to: "/"
 						}, W._("Go Home", null, {
 							hk: "49p4or"
-						})) : o.a.createElement(Y, {
+						})) : o.a.createElement(X, {
 							href: Object(l.a)(a, d)
 						}, W._("Log in", null, {
 							hk: "odEG4"
@@ -624,7 +624,7 @@
 							to: "/"
 						}, W._("No", null, {
 							hk: "3fMglW"
-						})), o.a.createElement(Y, {
+						})), o.a.createElement(X, {
 							onClick: x
 						}, W._("Yes", null, {
 							hk: "2hpRkN"
@@ -678,7 +678,7 @@
 								to: "/"
 							}, W._("No Thank You", null, {
 								hk: "4B26AR"
-							})), o.a.createElement(X, {
+							})), o.a.createElement(Y, {
 								href: "".concat(s.a.redditUrl, "/prefs/update")
 							}, W._("Verify Email", null, {
 								hk: "1893cq"
@@ -686,7 +686,7 @@
 								to: "/"
 							}, W._("No Thank You", null, {
 								hk: "4B26AR"
-							})), o.a.createElement(Y, {
+							})), o.a.createElement(X, {
 								onClick: t
 							}, W._("Continue", null, {
 								hk: "4nU0mS"
@@ -823,8 +823,8 @@
 				y = g.a.wrapped(u.l, "SecondaryButton", b.a),
 				k = g.a.wrapped(l.c, "StyledTooltip", b.a),
 				x = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(p.cb)(e),
-					userIsSuspended: p.M
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(p.db)(e),
+					userIsSuspended: p.N
 				});
 			t.a = Object(i.b)(x, (e, t) => {
 				let {
@@ -1196,8 +1196,8 @@
 					}, e, n, !r && a.a.createElement(p.a, null)), !this.props.hideBackToTop && a.a.createElement(j, null))
 				}
 			}
-			const O = Object(b.t)();
-			t.a = O(P)
+			const T = Object(b.t)();
+			t.a = T(P)
 		},
 		"./src/reddit/components/Snoobuilder/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1362,20 +1362,20 @@
 				j = n.n(S);
 			const {
 				fbt: C
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = Object(u.t)(), O = Object(o.b)(() => Object(i.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = Object(u.t)(), T = Object(o.b)(() => Object(i.c)({
 				forceRedditStyle: (e, t) => {
 					const n = Object(u.m)(e, t) || void 0,
 						s = t.redditStyle || Object(g.m)(e, {
 							subredditId: n
 						}),
-						r = Object(v.S)(e);
+						r = Object(v.T)(e);
 					return s || r
 				},
-				nigtmode: v.S,
+				nigtmode: v.T,
 				subredditId: u.m,
 				topPostVariant: b.d
 			}));
-			class T extends r.a.Component {
+			class O extends r.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = r.a.createRef(), this.state = {
 						isTruncated: !1
@@ -1448,7 +1448,7 @@
 					})))
 				}
 			}
-			t.a = P(O(Object(d.a)(Object(c.c)(T))))
+			t.a = P(T(Object(d.a)(Object(c.c)(O))))
 		},
 		"./src/reddit/icons/fonts/Menu/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1554,7 +1554,7 @@
 				f = n("./src/reddit/selectors/user.ts");
 			const b = n("./src/reddit/components/Snoobuilder/index.tsx").default,
 				g = Object(a.t)(),
-				v = Object(i.a)(a.B, f.X, (e, t) => {
+				v = Object(i.a)(a.B, f.Y, (e, t) => {
 					let {
 						match: n
 					} = t;
@@ -1602,4 +1602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.9090dae5be930f595572.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.0c9b8e933af021a79d4a.js.map

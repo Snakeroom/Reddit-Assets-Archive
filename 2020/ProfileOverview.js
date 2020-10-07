@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.dc70daa5eccded87ef0a.js
-// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.55b4cfac6b0350e20287.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2182,7 +2182,7 @@
 							commentId: s.postId
 						})
 					},
-					isLoggedIn: Q.H,
+					isLoggedIn: Q.I,
 					moderatorPermissions: (e, t) => {
 						let {
 							comment: s
@@ -2610,7 +2610,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: f.d,
 					postPermalink: g.M,
-					shouldOpenPostInNewTab: v.W
+					shouldOpenPostInNewTab: v.X
 				})),
 				E = e => {
 					let t, {
@@ -2806,7 +2806,7 @@
 			const {
 				fbt: D
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), W = u.a.div("ButtonsContainer", A.a), H = u.a.div("Container", A.a), U = u.a.div("Description", A.a), V = u.a.div("PrivateSubredditDetails", A.a), G = u.a.div("PrivateSubredditDescription", A.a), z = u.a.h3("PrivateSubredditName", A.a), K = u.a.a("Link", A.a), q = u.a.wrapped(M.k, "LinkRouterButton", A.a), J = u.a.wrapped(M.j, "LinkButton", A.a), X = u.a.wrapped(M.n, "SecondaryLinkRouterButton", A.a), Q = u.a.wrapped(M.m, "SecondaryLinkButton", A.a), Z = u.a.wrapped(q, "GoHomeLinkButton", A.a), Y = u.a.img("Image", A.a), $ = u.a.img("ImagePlaceholder", A.a), ee = u.a.wrapped(q, "LeftLinkRouterButton", A.a), te = u.a.wrapped(J, "LeftLinkButton", A.a), se = u.a.wrapped(Q, "SecondaryLeftLinkButton", A.a), ne = u.a.wrapped(X, "SecondaryLeftLinkRouterButton", A.a), oe = u.a.h3("Title", A.a), re = u.a.div("PageBody", A.a), ie = u.a.div("QuarantineMessageWrapper", A.a), ae = Object(c.c)({
-				isLoggedIn: F.G,
+				isLoggedIn: F.H,
 				origin: R.l,
 				user: F.i
 			}), ce = Object(T.t)(), de = Object(i.b)(ae, (e, t) => {
@@ -3257,8 +3257,8 @@
 				v = f.a.wrapped(m.l, "SecondaryButton", x.a),
 				O = f.a.wrapped(d.c, "StyledTooltip", x.a),
 				C = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.cb)(e),
-					userIsSuspended: b.M
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.db)(e),
+					userIsSuspended: b.N
 				});
 			t.a = Object(i.b)(C, (e, t) => {
 				let {
@@ -3375,7 +3375,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: g.W,
+					shouldOpenPostInNewTab: g.X,
 					subreddit: f.ab
 				}),
 				M = Object(i.b)(T);
@@ -4306,7 +4306,7 @@
 				ve = Object(a.c)({
 					activeModalId: ae.a,
 					layout: A.N,
-					userIsOp: H.jb,
+					userIsOp: H.kb,
 					subreddit: A.q
 				}),
 				Oe = Object(i.b)(ve, (e, t) => {
@@ -5748,10 +5748,10 @@
 					autoplayPref: E.b,
 					activeModalId: g.a,
 					currentUser: E.i,
-					hideNSFWPref: E.z,
+					hideNSFWPref: E.A,
 					flairStyleTemplate: Y.R,
 					isCurrentUserProfilePost: y.k,
-					isLoggedIn: E.H,
+					isLoggedIn: E.I,
 					isActive: y.j,
 					isPostChainDismissed: O.c,
 					isPostChained: O.d,
@@ -5766,7 +5766,7 @@
 					showEditFlair: ae.a,
 					showAwardsPlaque: v.a,
 					subredditOrProfile: y.ab,
-					userIsOp: E.jb
+					userIsOp: E.kb
 				}), (e, t) => {
 					let {
 						listingKey: s,
@@ -6782,7 +6782,7 @@
 						return s && s.coinPrice >= c.g
 					})
 				},
-				isNightmodeOn: g.S
+				isNightmodeOn: g.T
 			}), e => ({
 				openPost: t => e(Object(m.C)(t))
 			}));
@@ -7121,7 +7121,7 @@
 							return s && s.coinPrice >= d.g
 						})
 					},
-					isNightmodeOn: g.S
+					isNightmodeOn: g.T
 				}), e => ({
 					openPost: t => e(Object(b.C)(t))
 				}));
@@ -8711,7 +8711,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = Ce(t, ["isProfilePostListing"]);
-						return Object(Z.B)(e, n) && s && Object(pe.jb)(e, n) && Object(pe.hb)(e, {
+						return Object(Z.B)(e, n) && s && Object(pe.kb)(e, n) && Object(pe.ib)(e, {
 							userName: Object(le.N)(e, {
 								postId: n.postId
 							}).author
@@ -8719,7 +8719,7 @@
 					},
 					subredditOrProfile: le.ab,
 					hasSubredditRules: me.k,
-					userIsOp: pe.jb,
+					userIsOp: pe.kb,
 					isPostPartOfACollection: ge.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -9536,7 +9536,7 @@
 				}),
 				S = Object(c.c)({
 					isDropdownMenuOpen: e => Object(y.a)(e) === N,
-					isOwnProfile: (e, t) => Object(E.L)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(E.M)(e, t.profileName),
 					isSnoovatar30Enabled: C.d.snoovatar30,
 					isSubscriptionsPinned: _.b
 				}),
@@ -10570,7 +10570,7 @@
 					let {
 						profileName: s
 					} = t;
-					const n = Object(p.gb)(e, {
+					const n = Object(p.hb)(e, {
 							userName: s
 						}),
 						o = Object(m.e)(e);
@@ -11506,7 +11506,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				j = Object(c.c)({
-					hideNSFWPref: C.z
+					hideNSFWPref: C.A
 				}),
 				P = Object(i.b)(j)(e => r.a.createElement("div", {
 					className: _.a.communityItemContainer
@@ -11703,7 +11703,7 @@
 					let {
 						subredditOrProfile: s
 					} = t;
-					return s.type === l.a.PROFILE ? Object(b.gb)(e, {
+					return s.type === l.a.PROFILE ? Object(b.hb)(e, {
 						userName: s.name
 					}) : null
 				}
@@ -11790,10 +11790,10 @@
 						n = t.redditStyle || Object(f.m)(e, {
 							subredditId: s
 						}),
-						o = Object(g.S)(e);
+						o = Object(g.T)(e);
 					return n || o
 				},
-				nigtmode: g.S,
+				nigtmode: g.T,
 				subredditId: m.m,
 				topPostVariant: x.d
 			}));
@@ -11901,7 +11901,7 @@
 					isChatPost: m.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.m,
-					isLoggedIn: h.H,
+					isLoggedIn: h.I,
 					isMeta: (e, t) => {
 						let {
 							postId: s
@@ -11919,7 +11919,7 @@
 					showEditFlair: u.a,
 					showMedia: d.r,
 					subredditOrProfile: b.ab,
-					userIsOp: h.jb,
+					userIsOp: h.kb,
 					flairStyleTemplate: d.R
 				},
 				f = (e, t) => {
@@ -12176,14 +12176,14 @@
 				crosspostSubredditOrProfile: u.e,
 				currentUser: b.i,
 				flairStyleTemplate: d.R,
-				hideNSFWPref: b.z,
+				hideNSFWPref: b.A,
 				isActive: u.j,
 				moderatorPermissions: m.i,
 				modModeEnabled: d.P,
 				post: u.N,
 				showEditFlair: p.a,
 				subredditOrProfile: u.ab,
-				userIsOp: b.jb
+				userIsOp: b.kb
 			}), (e, t) => {
 				let {
 					postId: s
@@ -15232,7 +15232,7 @@
 					return o()([...Object(d.a)(s.search)])
 				},
 				At = Object(p.t)(),
-				Dt = Object(c.a)(p.B, mt.X, Bt, p.N, (e, t) => {
+				Dt = Object(c.a)(p.B, mt.Y, Bt, p.N, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -15256,7 +15256,7 @@
 					return !Object(W.n)(e, {
 						profileName: s.params.profileName
 					})
-				}, mt.H, (e, t) => {
+				}, mt.I, (e, t) => {
 					let {
 						match: s
 					} = t;
@@ -15469,4 +15469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.dc70daa5eccded87ef0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.55b4cfac6b0350e20287.js.map

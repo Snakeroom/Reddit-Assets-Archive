@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.16abfd364f0054587ff7.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.14f08ec4cf9c2ef37f5d.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less": function(e, t, n) {
@@ -153,7 +153,7 @@
 				}),
 				C = Object(c.c)({
 					isDropdownMenuOpen: e => Object(O.a)(e) === B,
-					isOwnProfile: (e, t) => Object(_.L)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(_.M)(e, t.profileName),
 					isSnoovatar30Enabled: E.d.snoovatar30,
 					isSubscriptionsPinned: N.b
 				}),
@@ -811,7 +811,7 @@
 					let {
 						profileName: n
 					} = t;
-					const s = Object(m.gb)(e, {
+					const s = Object(m.hb)(e, {
 							userName: n
 						}),
 						r = Object(u.e)(e);
@@ -1354,7 +1354,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				S = Object(c.c)({
-					hideNSFWPref: E.z
+					hideNSFWPref: E.A
 				}),
 				k = Object(o.b)(S)(e => i.a.createElement("div", {
 					className: N.a.communityItemContainer
@@ -1551,7 +1551,7 @@
 					let {
 						subredditOrProfile: n
 					} = t;
-					return n.type === l.a.PROFILE ? Object(p.gb)(e, {
+					return n.type === l.a.PROFILE ? Object(p.hb)(e, {
 						userName: n.name
 					}) : null
 				}
@@ -1716,4 +1716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.16abfd364f0054587ff7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.14f08ec4cf9c2ef37f5d.js.map

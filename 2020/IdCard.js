@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.87769eea31b729fb1c4c.js
-// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.e9c52d579af11df2be64.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -977,7 +977,7 @@
 				return n
 			};
 			const R = Object(u.c)({
-				isLoggedIn: F.H
+				isLoggedIn: F.I
 			});
 			var D = Object(i.b)(R, e => ({
 				openLoginModal: () => {
@@ -1391,8 +1391,8 @@
 			const Lt = G.a.wrapped(k.o, "TertiaryButton", Bt.a),
 				Mt = Object(u.c)({
 					shouldShowFlairPicker: dt.b,
-					stylesDisabledForSubreddit: F.db,
-					stylesDisabledGlobally: F.eb
+					stylesDisabledForSubreddit: F.eb,
+					stylesDisabledGlobally: F.fb
 				});
 			class Rt extends o.a.Component {
 				constructor(e) {
@@ -1473,7 +1473,7 @@
 						subredditName: t.listingName
 					}),
 					isContributorRequestPending: e => Object(re.h)(e, Ve.e.Post),
-					isLoggedIn: F.H,
+					isLoggedIn: F.I,
 					moderatorPermissions: (e, t) => {
 						const n = Object(re.G)(e, t.listingName);
 						if (n) return Object(Qe.j)(e, {
@@ -2949,7 +2949,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
 			const i = e => {
-				return Object(o.E)(e) || s.t.Treatment1 === Object(r.c)(e, {
+				return Object(o.F)(e) || s.t.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.n
 				})
@@ -2957,4 +2957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.87769eea31b729fb1c4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e9c52d579af11df2be64.js.map

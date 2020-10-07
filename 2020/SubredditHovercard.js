@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.03f8496fdfadbfc490e3.js
-// Retrieved at 10/5/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.e9c355142112042a90d8.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -364,13 +364,13 @@
 					isOpen: t
 				}, e))
 			};
-			const z = Object(m.c)({
+			const J = Object(m.c)({
 				activeTooltipId: v.a,
-				hideNSFWPref: h.z,
+				hideNSFWPref: h.A,
 				subreddit: b.B,
 				subredditAboutInfo: b.y
 			});
-			var J = Object(u.b)(z, e => ({
+			var z = Object(u.b)(J, e => ({
 				onHideTooltip: () => e(Object(p.i)())
 			}))(Object(d.c)(e => o.a.createElement("div", {
 				className: e.className,
@@ -408,7 +408,7 @@
 						sendHoverEvent: this.sendEvent,
 						authorOrSubredditName: e.subredditName,
 						tooltipId: t
-					}, e.children, o.a.createElement(J, {
+					}, e.children, o.a.createElement(z, {
 						className: e.className,
 						hoverId: s,
 						postId: e.postId,
@@ -907,4 +907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.03f8496fdfadbfc490e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.e9c355142112042a90d8.js.map

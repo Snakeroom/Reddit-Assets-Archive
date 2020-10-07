@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.df50f8f4f4db5c6aa134.js
-// Retrieved at 9/30/2020, 5:50:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3c8804190dc9c1e7bc32.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -366,7 +366,7 @@
 			s.r(t), s.d(t, "renderMedia", (function() {
 				return z
 			})), s.d(t, "SearchResultsClassicPost", (function() {
-				return X
+				return J
 			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
@@ -434,8 +434,8 @@
 						formatTitle: F,
 						hostPostId: H,
 						isCheckboxSelected: G,
-						isCurrentUserProfilePost: J,
-						isFrontpage: X,
+						isCurrentUserProfilePost: X,
+						isFrontpage: J,
 						isGalleryTileLayoutDefault: K,
 						isLoggedIn: U,
 						isOverlay: Q,
@@ -460,9 +460,9 @@
 						flairStyleTemplate: ue,
 						post: oe,
 						inSubredditOrProfile: O,
-						isCurrentUserProfilePost: J,
+						isCurrentUserProfilePost: X,
 						isOverlay: Q,
-						shouldShowSubscribeButton: !(X && U),
+						shouldShowSubscribeButton: !(J && U),
 						subredditOrProfile: ce
 					}, we = Object(r.s)(oe, q), {
 						source: Ee
@@ -597,9 +597,9 @@
 					showCentered: !0,
 					showFull: !0
 				}),
-				J = Object(i.a)(H),
-				X = Object(T.a)(J);
-			t.default = Object(N.a)(J)
+				X = Object(i.a)(H),
+				J = Object(T.a)(X);
+			t.default = Object(N.a)(X)
 		},
 		"./src/reddit/components/CrosspostBox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -668,7 +668,7 @@
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== h.Bb.TOPIC),
 					post: f.N,
-					shouldOpenPostInNewTab: v.W,
+					shouldOpenPostInNewTab: v.X,
 					subreddit: f.ab
 				}),
 				I = Object(a.b)(M);
@@ -1166,7 +1166,7 @@
 					isChatPost: m.d,
 					isCurrentUserProfilePost: x.k,
 					isExpanded: x.m,
-					isLoggedIn: b.H,
+					isLoggedIn: b.I,
 					isMeta: (e, t) => {
 						let {
 							postId: s
@@ -1184,7 +1184,7 @@
 					showEditFlair: u.a,
 					showMedia: c.r,
 					subredditOrProfile: x.ab,
-					userIsOp: b.jb,
+					userIsOp: b.kb,
 					flairStyleTemplate: c.R
 				},
 				f = (e, t) => {
@@ -1394,4 +1394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.df50f8f4f4db5c6aa134.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3c8804190dc9c1e7bc32.js.map

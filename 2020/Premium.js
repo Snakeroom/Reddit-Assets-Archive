@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.97aaf654be8b2bbd45eb.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.6988b551da3a29e84865.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -655,9 +655,9 @@
 				Y = Object(o.c)({
 					giftCode: y.a,
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
-					isGold: B.p,
-					isPremiumSubscriber: B.q,
-					isLoggedIn: B.H,
+					isGold: B.q,
+					isPremiumSubscriber: B.r,
+					isLoggedIn: B.I,
 					premiumPackages: R.e,
 					purchaseCatalogPending: R.g,
 					shouldShowPremiumPurchaseModal: T.m,
@@ -805,4 +805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.97aaf654be8b2bbd45eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.6988b551da3a29e84865.js.map

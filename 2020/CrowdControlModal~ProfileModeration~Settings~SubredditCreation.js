@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.155fc22787c7f90d2464.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.a4f94a14a27fd5fe475b.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal~ProfileModeration~Settings~SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -380,7 +380,7 @@
 				ue = b.a.div("TickText", H.a),
 				me = b.a.div("PreSubText", H.a),
 				pe = Object(o.c)({
-					isNightModeOn: L.S
+					isNightModeOn: L.T
 				}),
 				xe = Object(s.b)(pe)(e => r.a.createElement(q, {
 					last: e.last,
@@ -1303,4 +1303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.155fc22787c7f90d2464.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal~ProfileModeration~Settings~SubredditCreation.a4f94a14a27fd5fe475b.js.map

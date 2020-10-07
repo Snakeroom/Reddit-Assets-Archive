@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.c908ecded02d8c4d13d9.js
-// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f840a182a0e57c23323c.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -2308,7 +2308,7 @@
 			const {
 				fbt: D
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = p.a.div("ButtonsContainer", M.a), U = p.a.div("Container", M.a), H = p.a.div("Description", M.a), K = p.a.div("PrivateSubredditDetails", M.a), V = p.a.div("PrivateSubredditDescription", M.a), q = p.a.h3("PrivateSubredditName", M.a), G = p.a.a("Link", M.a), z = p.a.wrapped(L.k, "LinkRouterButton", M.a), Y = p.a.wrapped(L.j, "LinkButton", M.a), J = p.a.wrapped(L.n, "SecondaryLinkRouterButton", M.a), X = p.a.wrapped(L.m, "SecondaryLinkButton", M.a), Q = p.a.wrapped(z, "GoHomeLinkButton", M.a), Z = p.a.img("Image", M.a), $ = p.a.img("ImagePlaceholder", M.a), ee = p.a.wrapped(z, "LeftLinkRouterButton", M.a), te = p.a.wrapped(Y, "LeftLinkButton", M.a), se = p.a.wrapped(X, "SecondaryLeftLinkButton", M.a), ne = p.a.wrapped(J, "SecondaryLeftLinkRouterButton", M.a), re = p.a.h3("Title", M.a), ie = p.a.div("PageBody", M.a), ae = p.a.div("QuarantineMessageWrapper", M.a), oe = Object(d.c)({
-				isLoggedIn: B.G,
+				isLoggedIn: B.H,
 				origin: _.l,
 				user: B.i
 			}), de = Object(T.t)(), ce = Object(a.b)(oe, (e, t) => {
@@ -5958,10 +5958,10 @@
 						n = t.redditStyle || Object(x.m)(e, {
 							subredditId: s
 						}),
-						r = Object(k.S)(e);
+						r = Object(k.T)(e);
 					return n || r
 				},
-				nigtmode: k.S,
+				nigtmode: k.T,
 				subredditId: u.m,
 				topPostVariant: g.d
 			}));
@@ -6128,7 +6128,7 @@
 				C = m.a.wrapped(o.a, "RawHTMLDisplay", O.a);
 			var N = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: x.m,
-					isNightmodeOn: k.S
+					isNightmodeOn: k.T
 				}))(e => r.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -6468,14 +6468,14 @@
 				crosspostSubredditOrProfile: p.e,
 				currentUser: b.i,
 				flairStyleTemplate: c.R,
-				hideNSFWPref: b.z,
+				hideNSFWPref: b.A,
 				isActive: p.j,
 				moderatorPermissions: u.i,
 				modModeEnabled: c.P,
 				post: p.N,
 				showEditFlair: m.a,
 				subredditOrProfile: p.ab,
-				userIsOp: b.jb
+				userIsOp: b.kb
 			}), (e, t) => {
 				let {
 					postId: s
@@ -7329,7 +7329,7 @@
 						return Object(W.e)(e, s.params.subredditName)
 					},
 					layout: O.N,
-					over18Pref: W.X,
+					over18Pref: W.Y,
 					subreddit: (e, t) => {
 						let {
 							match: s
@@ -7363,7 +7363,7 @@
 						contentGateInfo: t,
 						subreddit: s,
 						subredditName: n
-					} = this.props, i = !!s && s.isNSFW && !W.X, a = Object(R.a)(t, i, n);
+					} = this.props, i = !!s && s.isNSFW && !W.Y, a = Object(R.a)(t, i, n);
 					if (a) return r.a.createElement(c.default, a);
 					const o = "/r/".concat(n, "/");
 					return r.a.createElement(_.a, {
@@ -7403,7 +7403,7 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = e => n.W.Enabled === Object(r.c)(e, {
-				experimentEligibilitySelector: i.H,
+				experimentEligibilitySelector: i.I,
 				experimentName: n.U
 			})
 		},
@@ -7556,4 +7556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.c908ecded02d8c4d13d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f840a182a0e57c23323c.js.map

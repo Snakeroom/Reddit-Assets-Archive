@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.aa73ac47ced556bb5ce8.js
-// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.a658a07e4bf6bb0996a8.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -2437,8 +2437,8 @@
 			};
 			const m = Object(i.c)({
 					currentUser: a.i,
-					isNightMode: a.S,
-					shouldHideNSFW: a.z
+					isNightMode: a.T,
+					shouldHideNSFW: a.A
 				}),
 				u = Object(r.b)(m);
 			t.a = u(e => {
@@ -2808,7 +2808,7 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const a = Object(o.a)(i.H, i.G, (e, t) => e || t),
+			const a = Object(o.a)(i.I, i.H, (e, t) => e || t),
 				d = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.q
@@ -2848,4 +2848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.aa73ac47ced556bb5ce8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a658a07e4bf6bb0996a8.js.map

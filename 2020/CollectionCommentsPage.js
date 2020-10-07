@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9f9c68b01f20e54ee82c.js
-// Retrieved at 10/6/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.56c8cd00c2a3ed8cb317.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2311,7 +2311,7 @@
 						let {
 							postId: s
 						} = t;
-						const n = Object(V.p)(e),
+						const n = Object(V.q)(e),
 							o = !!Object(D.i)(e, {
 								postId: s
 							}),
@@ -3923,7 +3923,7 @@
 						} = t;
 						return Object(Q.b)(ze(s.id))(e)
 					},
-					isLoggedIn: P.H,
+					isLoggedIn: P.I,
 					postIsArchived: (e, t) => {
 						let {
 							comment: s
@@ -4459,7 +4459,7 @@
 					focused: k.u,
 					highlightAnimationDisabled: Ht.c,
 					isEditing: k.z,
-					isLoggedIn: P.H,
+					isLoggedIn: P.I,
 					isPendingDeletion: k.A,
 					moderatorPermissions: (e, t) => {
 						const s = Object(k.n)(e, t);
@@ -4874,7 +4874,7 @@
 							commentId: o
 						});
 					if (!r) return !1;
-					const i = Object(P.p)(e),
+					const i = Object(P.q)(e),
 						a = !!Object(w.i)(e, {
 							postId: r.postId
 						}),
@@ -5408,7 +5408,7 @@
 					isChatPost: x.d,
 					isPostSEOEligible: g.d,
 					postPermalink: f.M,
-					shouldOpenPostInNewTab: v.W
+					shouldOpenPostInNewTab: v.X
 				})),
 				E = e => {
 					let t, {
@@ -5560,7 +5560,7 @@
 					}
 				}),
 				M = Object(d.c)({
-					isLoggedIn: I.H,
+					isLoggedIn: I.I,
 					postSEOV2IdCardVariant: _.g,
 					showPowerups: w.a,
 					widgets: Object(p.a)(P.t)
@@ -5697,8 +5697,8 @@
 				fbt: f
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), v = "500px", C = 3, O = Object(i.c)({
 				hasDismissedTruncation: u.b,
-				isGQLLoggedIn: h.G,
-				isLoggedIn: h.H,
+				isGQLLoggedIn: h.H,
+				isLoggedIn: h.I,
 				isPostSEOEligible: b.d,
 				postSEOV2TruncatedVariant: b.h
 			}), y = Object(r.b)(O);
@@ -6024,7 +6024,7 @@
 					isCurrentUserProfilePost: g.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
 					post: g.N,
-					shouldOpenPostInNewTab: f.W,
+					shouldOpenPostInNewTab: f.X,
 					subreddit: g.ab
 				}),
 				A = Object(i.b)(N);
@@ -6894,7 +6894,7 @@
 				ve = Object(a.c)({
 					activeModalId: ae.a,
 					layout: B.N,
-					userIsOp: H.jb,
+					userIsOp: H.kb,
 					subreddit: B.q
 				}),
 				Ce = Object(i.b)(ve, (e, t) => {
@@ -9351,7 +9351,7 @@
 					flairStyleTemplate: xe.R,
 					currentUser: H.i,
 					crosspost: W.d,
-					hideNSFWPref: H.z,
+					hideNSFWPref: H.A,
 					imageGalleryCurrentItem: W.i,
 					isAdminOrMod: (e, t) => {
 						const s = Object(W.ab)(e, {
@@ -9371,7 +9371,7 @@
 					showEditFlair: fe.a,
 					subredditOrProfile: W.ab,
 					isEditing: D.G,
-					userIsOp: H.jb
+					userIsOp: H.kb
 				}), (e, t) => {
 					let {
 						postId: s
@@ -10737,7 +10737,7 @@
 						var {
 							isProfilePostListing: s
 						} = t, n = Oe(t, ["isProfilePostListing"]);
-						return Object(Y.B)(e, n) && s && Object(pe.jb)(e, n) && Object(pe.hb)(e, {
+						return Object(Y.B)(e, n) && s && Object(pe.kb)(e, n) && Object(pe.ib)(e, {
 							userName: Object(le.N)(e, {
 								postId: n.postId
 							}).author
@@ -10745,7 +10745,7 @@
 					},
 					subredditOrProfile: le.ab,
 					hasSubredditRules: me.k,
-					userIsOp: pe.jb,
+					userIsOp: pe.kb,
 					isPostPartOfACollection: fe.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
@@ -11700,8 +11700,8 @@
 				}, w.a, _.b, (e, t, s) => !((!t || s) && e)),
 				H = Object(d.c)({
 					isChatPost: j.d,
-					isGQLLoggedIn: I.G,
-					isLoggedIn: I.H,
+					isGQLLoggedIn: I.H,
+					isLoggedIn: I.I,
 					listingBelowVariant: P.b,
 					shouldShowSubredditUpsell: W
 				}),
@@ -12278,7 +12278,7 @@
 				return {
 					canShowAd: Object(i.a)(e, {
 						postId: s
-					}) && !Object(d.y)(e) && !Object(c.a)(e),
+					}) && !Object(d.z)(e) && !Object(c.a)(e),
 					waitForProgrammatic: Object(a.d)(e, {
 						commentsPageKey: n
 					})
@@ -13591,7 +13591,7 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				_ = Object(c.c)({
-					hideNSFWPref: O.z
+					hideNSFWPref: O.A
 				}),
 				P = Object(i.b)(_)(e => r.a.createElement("div", {
 					className: k.a.communityItemContainer
@@ -14101,10 +14101,10 @@
 						n = t.redditStyle || Object(g.m)(e, {
 							subredditId: s
 						}),
-						o = Object(f.S)(e);
+						o = Object(f.T)(e);
 					return n || o
 				},
-				nigtmode: f.S,
+				nigtmode: f.T,
 				subredditId: m.m,
 				topPostVariant: x.d
 			}));
@@ -14271,7 +14271,7 @@
 				w = p.a.wrapped(a.a, "RawHTMLDisplay", C.a);
 			var _ = Object(r.b)(() => Object(i.c)({
 					forceRedditStyle: g.m,
-					isNightmodeOn: f.S
+					isNightmodeOn: f.T
 				}))(e => o.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -17197,8 +17197,8 @@
 				return s
 			};
 			const y = Object(r.b)(() => Object(i.c)({
-					showFPR: g.F,
-					showSuspended: g.M
+					showFPR: g.G,
+					showSuspended: g.N
 				})),
 				E = Object(c.a)(e => {
 					var {
@@ -17857,7 +17857,7 @@
 						return Object(xe.e)(e, s)
 					},
 					contestModeIsEnabled: pe.F,
-					currentUserShowNSFW: xe.X,
+					currentUserShowNSFW: xe.Y,
 					dismissedSubreddits: ie.a,
 					fullyLoaded: ne.v,
 					hasModeratorPostPermissions: me.b,
@@ -17865,8 +17865,8 @@
 					isAvatarsInCommentsEnabled: ae.a,
 					isChatPost: se.d,
 					isCommentsListTruncated: oe.a,
-					isLoggedIn: xe.H,
-					isNightmodeOn: xe.S,
+					isLoggedIn: xe.I,
+					isNightmodeOn: xe.T,
 					isRealtimeCommentsExperimentEnabled: ue.a,
 					isTooltipOpen: (e, t) => !!Object(he.a)(e),
 					newCommentsCount: ne.D,
@@ -17888,7 +17888,7 @@
 							})
 						})
 					},
-					shouldOpenPostInNewTab: xe.W,
+					shouldOpenPostInNewTab: xe.X,
 					subredditAboutInfo: (e, t) => {
 						let {
 							subredditName: s
@@ -17903,7 +17903,7 @@
 						tooltipIdPrefix: W.a,
 						tooltipType: Fe.c.StickyPost
 					}))(e),
-					userPrefs: xe.nb,
+					userPrefs: xe.ob,
 					isInCommentsPageAdExperiment: ce.a
 				}),
 				ht = (e, t) => ({
@@ -18680,7 +18680,7 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const a = Object(n.a)(i.H, i.G, (e, t) => e || t),
+			const a = Object(n.a)(i.I, i.H, (e, t) => e || t),
 				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: o.q
@@ -18730,4 +18730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9f9c68b01f20e54ee82c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.56c8cd00c2a3ed8cb317.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.a35f279769cf10fc974f.js
-// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5679fa27949b0b36814b.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -581,7 +581,7 @@
 			var y = s("./src/reddit/components/CategoryTagList/index.m.less"),
 				O = s.n(y);
 			const C = Object(i.b)(() => Object(o.c)({
-				labelNSFW: c.P
+				labelNSFW: c.Q
 			}));
 			t.a = C(Object(a.c)(e => {
 				let {
@@ -1036,7 +1036,7 @@
 				u = s("./src/reddit/models/Flair/index.ts"),
 				m = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.P
+					labelNSFW: m.Q
 				}),
 				b = Object(a.b)(p),
 				h = e => {
@@ -2044,7 +2044,7 @@
 							subredditId: s.belongsTo.id
 						}).name
 					},
-					shouldOpenPostInNewTab: A.W,
+					shouldOpenPostInNewTab: A.X,
 					imageGalleryCurrentItem: (e, t) => {
 						let {
 							post: s
@@ -2519,7 +2519,7 @@
 				f = s("./src/reddit/components/VerticalVotes/index.m.less"),
 				x = s.n(f);
 			const g = Object(a.c)({
-					isNightmode: h.S
+					isNightmode: h.T
 				}),
 				v = Object(o.b)(g),
 				j = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.upvoteInactive && Object(p.a)(e).voteIcons.upvoteActive,
@@ -4087,4 +4087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.a35f279769cf10fc974f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.5679fa27949b0b36814b.js.map

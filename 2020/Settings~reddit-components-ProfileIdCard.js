@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.882c4729d31b01c74cee.js
-// Retrieved at 10/6/2020, 11:40:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.0e87a0ba051aa627adee.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings~reddit-components-ProfileIdCard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -237,13 +237,13 @@
 						tooltipId: t
 					}))
 				}))(Object(y.b)(M)),
-				z = a("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
-				A = a.n(z);
+				A = a("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
+				z = a.n(A);
 			const H = Object(_.a)(N.a, j.j, (e, t) => {
 					let {
 						profileName: a
 					} = t;
-					return Object(B.mb)(e, a)
+					return Object(B.nb)(e, a)
 				}, (e, t, a) => ({
 					awardeeKarma: a ? a.awardeeKarma : 0,
 					awardKarmaExperimentEnabled: e,
@@ -254,7 +254,7 @@
 					subscribers: t && t.subscribers || 0,
 					totalKarma: a ? a.totalKarma || a.postKarma + a.commentKarma : 0
 				})),
-				G = c.a.div("Container", A.a);
+				G = c.a.div("Container", z.a);
 
 			function V(e, t) {
 				return "profile--id-card--highlight-tooltip-".concat(e ? "-overlay" : "", "-").concat(t)
@@ -301,7 +301,7 @@
 					}), I = a ? "".concat(g, "\n").concat(f, "\n").concat(x, "\n").concat(b) : "".concat(g, "\n").concat(f);
 					return o.a.createElement(G, null, o.a.createElement(R, {
 						icon: o.a.createElement(P.a, {
-							className: A.a.icon,
+							className: z.a.icon,
 							key: "karma"
 						}),
 						label: Object(C.b)(d, {
@@ -314,7 +314,7 @@
 						tooltip: I
 					}), o.a.createElement(R, {
 						icon: o.a.createElement(w.a, {
-							className: A.a.icon,
+							className: z.a.icon,
 							key: "cakeDay"
 						}),
 						label: Object(v.a)(s, !0),
@@ -325,7 +325,7 @@
 						tooltip: Object(E.d)(s)
 					}), m > 0 && o.a.createElement(R, {
 						icon: o.a.createElement(O.a, {
-							className: A.a.icon,
+							className: z.a.icon,
 							key: "followers"
 						}),
 						title: r.fbt._("Followers", null, {
@@ -595,7 +595,7 @@
 				o = a("./src/reddit/selectors/user.ts");
 			const i = Object(r.c)({
 					currentUser: o.i,
-					hideNSFWPref: o.z
+					hideNSFWPref: o.A
 				}),
 				c = Object(n.b)(i, e => ({
 					imageUpdateRequested: (t, a) => e(Object(s.B)(t, a))
@@ -759,4 +759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.882c4729d31b01c74cee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings~reddit-components-ProfileIdCard.0e87a0ba051aa627adee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9eb1514b4ea017d82419.js
-// Retrieved at 10/7/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.9f0e8899d4c758f03dab.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1923,11 +1923,11 @@
 					cancelSubscriptionModalIsOpen: Object(Z.b)("settings_optout_modal_id"),
 					goldExpiration: Q.n,
 					hasAndroidSubscription: Q.o,
-					hasIOSSubscription: Q.r,
-					hasStripeSubscription: Q.v,
-					hasPaypalSubscription: Q.t,
-					isGold: Q.p,
-					isPremiumSubscriber: Q.q,
+					hasIOSSubscription: Q.s,
+					hasStripeSubscription: Q.w,
+					hasPaypalSubscription: Q.u,
+					isGold: Q.q,
+					isPremiumSubscriber: Q.r,
 					updateCardModalIsOpen: Object(Z.b)(ee)
 				}),
 				ne = Object(i.b)(te, e => ({
@@ -3129,7 +3129,7 @@
 					action: "view",
 					noun: "page",
 					goldPurchase: {
-						type: Object(a.q)(e) ? o.Cancel : o.GetPremium
+						type: Object(a.r)(e) ? o.Cancel : o.GetPremium
 					}
 				}),
 				d = () => e => Object.assign(Object.assign({}, i(e)), {
@@ -3847,9 +3847,9 @@
 					value: "es"
 				}],
 				te = Object(c.c)({
-					hasVerifiedEmail: j.x,
-					isFPR: j.F,
-					language: j.Q,
+					hasVerifiedEmail: j.y,
+					isFPR: j.G,
+					language: j.R,
 					shouldShowSSOCreatePasswordModal: S.e,
 					showLanguageSection: O.d.langSelect
 				}),
@@ -4197,8 +4197,8 @@
 			}
 			const ot = Object(c.c)({
 				hasLinkedIdentities: S.c,
-				isEmployee: j.E,
-				userId: j.ib
+				isEmployee: j.F,
+				userId: j.jb
 			});
 			var rt = Object(r.b)(ot)(e => {
 					const t = !e.isEmployee;
@@ -4222,7 +4222,7 @@
 					}),
 					deactivateModalOpen: Object(me.b)("deactivate_modal_id"),
 					email: j.l,
-					inRedesignBeta: j.B,
+					inRedesignBeta: j.C,
 					optoutModalOpen: Object(me.b)("settins_optout_modal_id"),
 					shouldShowSSOCreatePasswordModal: S.e,
 					user: j.i
@@ -5918,7 +5918,7 @@
 				ha = n.n(ba);
 			const {
 				fbt: ga
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), fa = 30, va = 200, ya = Object(c.a)(j.i, ua.a, j.nb, ma.o, me.a, (e, t, n, s, a) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), fa = 30, va = 200, ya = Object(c.a)(j.i, ua.a, j.ob, ma.o, me.a, (e, t, n, s, a) => {
 				const o = e && e.profileId,
 					r = o && s[o] ? s[o].bannerBackgroundImage : void 0;
 				return {
@@ -6602,7 +6602,7 @@
 					experimentName: Do.V,
 					experimentEligibilitySelector: Fo
 				}), Lo.a),
-				Fo = e => Object(j.G)(e) || Object(j.H)(e),
+				Fo = e => Object(j.H)(e) || Object(j.I)(e),
 				Wo = Object(c.a)(Uo, e => e === Do.X.Enabled);
 			var Ho = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
 				Go = n("./src/reddit/selectors/platform.ts"),
@@ -6911,4 +6911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9eb1514b4ea017d82419.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9f0e8899d4c758f03dab.js.map

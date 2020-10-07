@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.abfdf4b1916cc5c33cd4.js
-// Retrieved at 10/7/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.97ca4e920a1ec8942ba1.js
+// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/HeaderWithSubredditIcon/index.m.less": function(e, t, a) {
@@ -113,11 +113,11 @@
 				k = a("./src/reddit/selectors/gold/productOffers.ts"),
 				z = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				I = a("./src/reddit/selectors/user.ts"),
-				S = a("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
-				L = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
+				L = a("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
+				S = a("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				F = a("./src/reddit/components/StripePaymentForm/index.tsx"),
-				D = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				T = a("./src/reddit/icons/svgs/Premium/index.tsx"),
+				T = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				D = a("./src/reddit/icons/svgs/Premium/index.tsx"),
 				B = a("./src/reddit/hooks/useThunkDispatch.ts"),
 				A = a("./src/reddit/controls/Button/index.tsx");
 			const {
@@ -347,7 +347,7 @@
 				fbt: fe
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), we = 100, Pe = Object(c.c)({
 				isAnonymous: C.c,
-				isNightmode: I.S,
+				isNightmode: I.T,
 				paypalErrorMessage: z.b,
 				powerups: C.f,
 				powerupsCount: C.d,
@@ -398,7 +398,7 @@
 						powerups: l
 					}), r.a.createElement("div", {
 						className: he.a.details
-					}, r.a.createElement(D.a, {
+					}, r.a.createElement(T.a, {
 						className: he.a.anonymousCheckbox,
 						isSelected: t,
 						onClick: () => (e => b(Object(M.a)(e)))(!t),
@@ -416,7 +416,7 @@
 						className: he.a.paymentMethodTitle
 					}, fe._("Payment Method", null, {
 						hk: "3EbT3q"
-					})), r.a.createElement(L.a, {
+					})), r.a.createElement(S.a, {
 						className: he.a.paymentMethodSelector,
 						nightmode: a,
 						selectedPayment: h,
@@ -441,7 +441,7 @@
 						className: he.a.premiumDescription
 					}, r.a.createElement("div", {
 						className: he.a.premiumIconWrapper
-					}, r.a.createElement(T.a, {
+					}, r.a.createElement(D.a, {
 						className: he.a.premiumIcon
 					})), r.a.createElement("span", null, fe._("Premium gives you one free Powerup", null, {
 						hk: "1Rlk9N"
@@ -456,7 +456,7 @@
 						rel: "noopener noreferrer"
 					}, fe._("User Agreement", null, {
 						hk: "n6txc"
-					}))), fe._param("previews terms of use", r.a.createElement(S.a, null)), fe._param("privacy policy", r.a.createElement("a", {
+					}))), fe._param("previews terms of use", r.a.createElement(L.a, null)), fe._param("privacy policy", r.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/privacy-policy",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -678,4 +678,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.abfdf4b1916cc5c33cd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.97ca4e920a1ec8942ba1.js.map
