@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.25c738c5fd49e0d9048a.js
-// Retrieved at 10/7/2020, 7:20:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7ecb777276a8c485a70b.js
+// Retrieved at 10/7/2020, 7:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -43301,11 +43301,13 @@
 							} = s,
 							r = s.prediction,
 							{
-								options: a
+								options: a,
+								selectedOptionId: i
 							} = r,
-							i = yf(r, ["options"]);
+							o = yf(r, ["options", "selectedOptionId"]);
 						return Object.assign(Object.assign({}, e), {
-							[n]: Object.assign(Object.assign(Object.assign({}, e[n]), i), {
+							[n]: Object.assign(Object.assign(Object.assign({}, e[n]), o), {
+								userSelection: i,
 								options: a.map(t => {
 									let {
 										id: s,
@@ -56173,4 +56175,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.25c738c5fd49e0d9048a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7ecb777276a8c485a70b.js.map
