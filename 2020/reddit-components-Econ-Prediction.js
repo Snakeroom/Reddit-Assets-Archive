@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.0b266a751736b8c3291b.js
-// Retrieved at 10/7/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f25b2f862a9faa193a34.js
+// Retrieved at 10/7/2020, 4:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/GetPredictionCoinPackages.json": function(e) {
@@ -797,7 +797,7 @@
 					isSelected: h === e.id,
 					option: e,
 					onClick: () => (e => {
-						y || w !== e.id || x(e.id)
+						y || w && w !== e.id || x(e.id)
 					})(e),
 					resolvedOptionId: C,
 					votePercentage: (w || y) && e.totalStakeAmount ? Math.floor(e.totalStakeAmount / E * 100) : null
@@ -1231,4 +1231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.0b266a751736b8c3291b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f25b2f862a9faa193a34.js.map
