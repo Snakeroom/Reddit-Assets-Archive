@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.65677be4be48e16509ab.js
-// Retrieved at 10/7/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e1de57d5459f580b19f1.js
+// Retrieved at 10/7/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "caabbaf-production"
+					SENTRY_RELEASE_VERSION: "9295ed6-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -7449,8 +7449,7 @@
 					postId: s
 				} = e;
 				return n ? Object(a.e)(n) ? o.a.createElement(l.a, {
-					postId: s,
-					isCommentsPage: t
+					postId: s
 				}) : o.a.createElement(d.a, {
 					postId: s,
 					isCommentsPage: t
@@ -34131,4 +34130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.65677be4be48e16509ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e1de57d5459f580b19f1.js.map

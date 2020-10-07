@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.80dd61824f19593c53dd.js
-// Retrieved at 10/6/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.75a29b236c10f9f2446f.js
+// Retrieved at 10/7/2020, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./node_modules/lodash/_baseRange.js": function(e, s) {
@@ -117,7 +117,7 @@
 				M = t("./src/reddit/controls/Button/index.tsx"),
 				N = t("./src/reddit/controls/TextButton/index.tsx"),
 				A = t("./src/reddit/icons/svgs/Snoo/index.tsx");
-			t("./src/reddit/icons/svgs/AddCollection/index.tsx"), t("./src/reddit/icons/svgs/AddSquare/index.tsx"), t("./src/reddit/icons/svgs/Admin/index.tsx"), t("./src/reddit/icons/svgs/Advance/index.tsx"), t("./src/reddit/icons/svgs/All/index.tsx"), t("./src/reddit/icons/svgs/AppleLogo/index.tsx"), t("./src/reddit/icons/svgs/Approve/index.tsx"), t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx"), t("./src/reddit/icons/svgs/ArrowRight/index.tsx"), t("./src/reddit/icons/svgs/ArrowRightThin/index.tsx"), t("./src/reddit/icons/svgs/Automoderator/index.tsx"), t("./src/reddit/icons/svgs/Badge/index.tsx"), t("./src/reddit/icons/svgs/Ban/index.tsx"), t("./src/reddit/icons/svgs/Best/index.tsx"), t("./src/reddit/icons/svgs/Bling/index.tsx"), t("./src/reddit/icons/svgs/Browse/index.tsx"), t("./src/reddit/icons/svgs/Cake/index.tsx"), t("./src/reddit/icons/svgs/Calendar/index.tsx"), t("./src/reddit/icons/svgs/Center/index.tsx"), t("./src/reddit/icons/svgs/Chat/index.tsx"), t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"), t("./src/reddit/icons/svgs/Checkbox/index.tsx"), t("./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx"), t("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"), t("./src/reddit/icons/svgs/Checkmark/index.tsx"), t("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"), t("./src/reddit/icons/svgs/Chevron/index.tsx"), t("./src/reddit/icons/svgs/ChevronDown/index.tsx"), t("./src/reddit/icons/svgs/ChevronUp/index.tsx"), t("./src/reddit/icons/svgs/Circle/index.tsx"), t("./src/reddit/icons/svgs/CircleCheck/index.tsx"), t("./src/reddit/icons/svgs/CircledPlanet/index.tsx"), t("./src/reddit/icons/svgs/CirclePost/index.tsx"), t("./src/reddit/icons/svgs/ClassicPosts/index.tsx"), t("./src/reddit/icons/svgs/Clear/index.tsx"), t("./src/reddit/icons/svgs/Clock/index.tsx"), t("./src/reddit/icons/svgs/Close/index.tsx"), t("./src/reddit/icons/svgs/Coin/index.tsx"), t("./src/reddit/icons/svgs/CoinV2/index.tsx"), t("./src/reddit/icons/svgs/Collection/index.tsx"), t("./src/reddit/icons/svgs/Comments/index.tsx"), t("./src/reddit/icons/svgs/CompactPosts/index.tsx"), t("./src/reddit/icons/svgs/Controller/index.tsx"), t("./src/reddit/icons/svgs/Controversial/index.tsx"), t("./src/reddit/icons/svgs/Crosspost/index.tsx"), t("./src/reddit/icons/svgs/Crown/index.tsx");
+			t("./src/reddit/icons/svgs/AddCollection/index.tsx"), t("./src/reddit/icons/svgs/AddSquare/index.tsx"), t("./src/reddit/icons/svgs/Admin/index.tsx"), t("./src/reddit/icons/svgs/Advance/index.tsx"), t("./src/reddit/icons/svgs/All/index.tsx"), t("./src/reddit/icons/svgs/AppleLogo/index.tsx"), t("./src/reddit/icons/svgs/Approve/index.tsx"), t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx"), t("./src/reddit/icons/svgs/ArrowRight/index.tsx"), t("./src/reddit/icons/svgs/ArrowRightThin/index.tsx"), t("./src/reddit/icons/svgs/Automoderator/index.tsx"), t("./src/reddit/icons/svgs/Badge/index.tsx"), t("./src/reddit/icons/svgs/Ban/index.tsx"), t("./src/reddit/icons/svgs/Best/index.tsx"), t("./src/reddit/icons/svgs/Bling/index.tsx"), t("./src/reddit/icons/svgs/Browse/index.tsx"), t("./src/reddit/icons/svgs/Cake/index.tsx"), t("./src/reddit/icons/svgs/Calendar/index.tsx"), t("./src/reddit/icons/svgs/Center/index.tsx"), t("./src/reddit/icons/svgs/Chat/index.tsx"), t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"), t("./src/reddit/icons/svgs/Checkbox/index.tsx"), t("./src/reddit/icons/svgs/CheckboxHalfSelected/index.tsx"), t("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"), t("./src/reddit/icons/svgs/Checkmark/index.tsx"), t("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"), t("./src/reddit/icons/svgs/Chevron/index.tsx"), t("./src/reddit/icons/svgs/ChevronDown/index.tsx"), t("./src/reddit/icons/svgs/ChevronUp/index.tsx"), t("./src/reddit/icons/svgs/Circle/index.tsx"), t("./src/reddit/icons/svgs/CircleCheck/index.tsx"), t("./src/reddit/icons/svgs/CircledPlanet/index.tsx"), t("./src/reddit/icons/svgs/CirclePost/index.tsx"), t("./src/reddit/icons/svgs/ClassicPosts/index.tsx"), t("./src/reddit/icons/svgs/Clear/index.tsx"), t("./src/reddit/icons/svgs/Clock/index.tsx"), t("./src/reddit/icons/svgs/ClockFilled/index.tsx"), t("./src/reddit/icons/svgs/Close/index.tsx"), t("./src/reddit/icons/svgs/Coin/index.tsx"), t("./src/reddit/icons/svgs/CoinV2/index.tsx"), t("./src/reddit/icons/svgs/Collection/index.tsx"), t("./src/reddit/icons/svgs/Comments/index.tsx"), t("./src/reddit/icons/svgs/CompactPosts/index.tsx"), t("./src/reddit/icons/svgs/Controller/index.tsx"), t("./src/reddit/icons/svgs/Controversial/index.tsx"), t("./src/reddit/icons/svgs/Crosspost/index.tsx"), t("./src/reddit/icons/svgs/Crown/index.tsx");
 			t("./src/reddit/icons/svgs/DiscoveryUnitArrow/Left/index.tsx"), t("./src/reddit/icons/svgs/DiscoveryUnitArrow/Right/index.tsx"), t("./src/reddit/icons/svgs/DizzySnoo/index.tsx"), t("./src/reddit/icons/svgs/DownToChatAvatar/index.tsx"), t("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"), t("./src/reddit/icons/svgs/Dropdown/index.tsx"), t("./src/reddit/icons/svgs/DynamicThreshold/index.tsx"), t("./src/reddit/icons/svgs/Edit/index.tsx"), t("./src/reddit/icons/svgs/EditPencil/index.tsx"), t("./src/reddit/icons/svgs/Envelope/index.tsx"), t("./src/reddit/icons/svgs/Event/index.tsx");
 			t("./src/reddit/icons/svgs/Eye/index.tsx"), t("./src/reddit/icons/svgs/EyeCancel/index.tsx"), t("./src/reddit/icons/svgs/Favorite/index.tsx"), t("./src/reddit/icons/svgs/Fill/index.tsx"), t("./src/reddit/icons/svgs/Flag/index.tsx"), t("./src/reddit/icons/svgs/FormattingAlignCenter/index.tsx"), t("./src/reddit/icons/svgs/FormattingAlignLeft/index.tsx"), t("./src/reddit/icons/svgs/FormattingAlignRight/index.tsx"), t("./src/reddit/icons/svgs/FormattingBlockQuotes/index.tsx"), t("./src/reddit/icons/svgs/FormattingBold/index.tsx"), t("./src/reddit/icons/svgs/FormattingCodeBlock/index.tsx"), t("./src/reddit/icons/svgs/FormattingDeleteRow/index.tsx"), t("./src/reddit/icons/svgs/FormattingHeading/index.tsx"), t("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"), t("./src/reddit/icons/svgs/FormattingInsertRow/index.tsx"), t("./src/reddit/icons/svgs/FormattingItalics/index.tsx"), t("./src/reddit/icons/svgs/FormattingMonospace/index.tsx"), t("./src/reddit/icons/svgs/FormattingOrderedList/index.tsx"), t("./src/reddit/icons/svgs/FormattingSpoiler/index.tsx"), t("./src/reddit/icons/svgs/FormattingStrikethrough/index.tsx"), t("./src/reddit/icons/svgs/FormattingSubscript/index.m.less");
 			t("./src/reddit/icons/svgs/FormattingSuperscript/index.tsx"), t("./src/reddit/icons/svgs/FormattingTable/index.tsx"), t("./src/reddit/icons/svgs/FormattingUnderline/index.m.less");
@@ -201,10 +201,10 @@
 				})),
 				B = t("./src/reddit/helpers/trackers/contentTag.ts"),
 				F = t("./src/reddit/hooks/useGqlContext.ts");
-			var H, V = t("./src/reddit/hooks/useTracking.ts");
+			var V, H = t("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
-			}(H || (H = {}));
+			}(V || (V = {}));
 			var _ = t("./src/reddit/models/Toast/index.ts"),
 				z = (t("./node_modules/core-js/modules/es6.symbol.js"), t("./node_modules/lodash/mapValues.js")),
 				S = t.n(z),
@@ -289,7 +289,7 @@
 				}, {
 					surveyState: U.Intro,
 					activeSlide: 0
-				}), L = p[E - 1], M = Object(V.a)();
+				}), L = p[E - 1], M = Object(H.a)();
 				Object(l.useEffect)(() => {
 					switch (E) {
 						case 0:
@@ -364,7 +364,7 @@
 									version: e.version,
 									createdAt: Date.now(),
 									isFromMod: !0,
-									status: H.Pending,
+									status: V.Pending,
 									rating: a,
 									ratingReasons: n
 								}
@@ -1013,6 +1013,21 @@
 				d: "M11 5.5C11 8.53754 8.5376 11 5.5 11C2.4624 11 0 8.53754 0 5.5C0 2.46246 2.4624 0 5.5 0C8.5376 0 11 2.46246 11 5.5ZM10 5.5C10 7.98529 7.98535 10 5.5 10C3.01465 10 1 7.98529 1 5.5C1 3.01471 3.01465 1 5.5 1C7.98535 1 10 3.01471 10 5.5Z",
 				fill: "inherit"
 			})))
+		},
+		"./src/reddit/icons/svgs/ClockFilled/index.tsx": function(e, s, t) {
+			"use strict";
+			var a = t("./node_modules/react/index.js"),
+				n = t.n(a);
+			s.a = e => n.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 16 16"
+			}, n.a.createElement("path", {
+				fillRule: "evenodd",
+				clipRule: "evenodd",
+				d: "M11.901 11.809C11.803 11.909 11.673 11.959 11.543 11.959C11.417 11.959 11.291 11.913 11.194 11.817L7.651 8.358C7.554 8.264 7.5 8.135 7.5 8V3C7.5 2.724 7.724 2.5 8 2.5C8.276 2.5 8.5 2.724 8.5 3V7.789L11.892 11.102C12.09 11.294 12.094 11.611 11.901 11.809ZM8 0C3.589 0 0 3.589 0 8C0 12.412 3.589 16 8 16C12.411 16 16 12.412 16 8C16 3.589 12.411 0 8 0Z",
+				fill: "inherit"
+			}))
 		},
 		"./src/reddit/icons/svgs/CoinV2/index.m.less": function(e, s, t) {
 			e.exports = {
@@ -4225,4 +4240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.80dd61824f19593c53dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.75a29b236c10f9f2446f.js.map
