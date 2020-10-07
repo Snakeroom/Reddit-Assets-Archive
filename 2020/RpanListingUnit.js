@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.18a827e1067d4f9aa68f.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.d868fcac80ec2ca49bf5.js
+// Retrieved at 10/7/2020, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "6aa7757-production"
+					SENTRY_RELEASE_VERSION: "a18f26d-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -963,10 +963,11 @@
 					};
 					const {
 						id: t,
-						onError: s,
-						onHeartbeat: i
+						meta: s,
+						onError: i,
+						onHeartbeat: r
 					} = e;
-					this.delayIterator = null, this.id = t, this.onError = s, this.onHeartbeat = i, this.sessionTimer = new v, this.startedAt = 0, this.watchTimer = new v
+					this.delayIterator = null, this.id = t, this.meta = s, this.onError = i, this.onHeartbeat = r, this.sessionTimer = new v, this.startedAt = 0, this.watchTimer = new v
 				}
 				get isPaused() {
 					return !!this.timeout
@@ -1017,7 +1018,10 @@
 					this.onError(e)
 				}
 				emitHeartbeat() {
-					this.onHeartbeat(this.stats)
+					this.onHeartbeat({
+						meta: this.meta,
+						stats: this.stats
+					})
 				}
 				startWatchTimer() {
 					this.watchTimer.start()
@@ -1026,7 +1030,7 @@
 					this.watchTimer.pause()
 				}
 				destroy() {
-					this.clearTimeout(), delete this.onError, delete this.onHeartbeat
+					this.clearTimeout(), delete this.meta, delete this.onError, delete this.onHeartbeat
 				}
 				clearTimeout() {
 					this.timeout && (clearTimeout(this.timeout), delete this.timeout)
@@ -1043,13 +1047,24 @@
 							e && !e.isPaused && e.startWatchTimer()
 						}, this.handleError = e => {
 							const t = R.get(this);
-							t && t.id === e.id && (this.destroySession(), this.startSession())
-						}, this.handleHeartbeat = e => {
-							if (!this.video) return;
-							const t = R.get(this);
 							if (!t || t.id !== e.id) return;
-							const s = Object.assign(Object.assign({}, e), this.videoStats);
-							this.onHeartbeat(s)
+							const {
+								meta: s
+							} = t;
+							this.destroySession(), this.startSession(s)
+						}, this.handleHeartbeat = e => {
+							let {
+								meta: t,
+								stats: s
+							} = e;
+							if (!this.video) return;
+							const i = R.get(this);
+							if (!i || i.id !== s.id) return;
+							const r = Object.assign(Object.assign({}, s), this.videoStats);
+							this.onHeartbeat({
+								meta: t,
+								stats: r
+							})
 						}, "function" != typeof t.onHeartbeat) throw new Error("Invalid video session onHeartbeat callback.");
 					this.idleTimer = new v, this.onHeartbeat = t.onHeartbeat, this.attachVideo(e)
 				}
@@ -1080,18 +1095,19 @@
 					} = this;
 					e && (e.removeEventListener("play", this.handlePlay), e.removeEventListener("pause", this.handlePause), delete this.video)
 				}
-				createSession() {
-					const e = {
+				createSession(e) {
+					const t = {
 						id: u()(),
+						meta: e,
 						onError: this.handleError,
 						onHeartbeat: this.handleHeartbeat
 					};
-					return new O(e)
+					return new O(t)
 				}
-				startSession() {
+				startSession(e) {
 					if (!this.video) return;
-					let e = R.get(this);
-					e && !this.idle || (this.destroySession(), e = this.createSession(), R.set(this, e)), this.idleTimer.reset(), e.startHeartbeats(this.video.paused)
+					let t = R.get(this);
+					t && !this.idle || (this.destroySession(), t = this.createSession(e), R.set(this, t)), this.idleTimer.reset(), t.startHeartbeats(this.video.paused)
 				}
 				pauseSession() {
 					if (!this.video) return;
@@ -1180,6 +1196,7 @@
 						listingName: s
 					})
 				},
+				streamById: e => t => Object(k.l)(e, t),
 				totalLiveWatchers: k.n
 			}), (e, t) => ({
 				onHideRpanUnit: () => e(Object(_.D)(t.listingName)),
@@ -1245,17 +1262,22 @@
 							isInFocus: t
 						})
 					}, this.handleHeartbeat = e => {
+						let {
+							meta: t,
+							stats: s
+						} = e;
 						const {
-							stream: t
-						} = this.props;
-						if (!t) return;
-						const s = !e.sessionDurationMs ? D.u : D.r,
-							i = {
+							stream: i,
+							streamById: r
+						} = this.props, a = i && i.post.id === t.id ? i : r(t.id);
+						if (!a) return;
+						const n = !s.sessionDurationMs ? D.u : D.r,
+							o = {
 								chatState: j.f.None,
 								playerType: D.a.DU
 							},
-							r = s(t, Object.assign(Object.assign({}, e), i));
-						this.props.sendEvent(r)
+							d = n(a, Object.assign(Object.assign({}, s), o));
+						this.props.sendEvent(d)
 					}, this.state = {
 						isInFocus: !0,
 						isIntersecting: !1,
@@ -1315,7 +1337,9 @@
 							t = !l && o,
 							i = f && (t && h || m && o),
 							r = f && p;
-						v && e.endSession(), i ? e.startSession() : r && e.pauseSession()
+						v && e.endSession(), i ? e.startSession({
+							id: b
+						}) : r && e.pauseSession()
 					}
 				}
 				componentWillUnmount() {
@@ -1701,4 +1725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.18a827e1067d4f9aa68f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.d868fcac80ec2ca49bf5.js.map
