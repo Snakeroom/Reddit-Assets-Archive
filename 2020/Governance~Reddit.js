@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.081bab3c42c6cfda451f.js
-// Retrieved at 10/8/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.28c4c6a0ed7b911d933c.js
+// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -2437,7 +2437,7 @@
 					} = e;
 					return async (e, r) => {
 						const a = r(),
-							i = Object(Z.f)(t),
+							i = Object(Z.g)(t),
 							o = Object(ae.o)(a, {
 								commentLink: i,
 								commentsPageKey: s
@@ -8883,7 +8883,7 @@
 						partialCommentId: r
 					} = e.params, {
 						subredditName: a
-					} = e.params || "", o = n ? Object(v.m)(n) : "", c = r && Object(oe.e)(r), {
+					} = e.params || "", o = n ? Object(v.m)(n) : "", c = r && Object(oe.f)(r), {
 						path: u,
 						queryParams: l
 					} = e, b = Object(k.d)(u), p = s(), {
@@ -9555,7 +9555,7 @@
 						partialCommentId: o,
 						subredditName: c = "",
 						routePrefix: d
-					} = e.params, u = r ? Object(x.m)(r) : "", f = o && Object(k.e)(o), {
+					} = e.params, u = r ? Object(x.m)(r) : "", f = o && Object(k.f)(o), {
 						queryParams: m
 					} = e, y = s(), {
 						instanceId: E
@@ -27307,6 +27307,7 @@
 					collapsed: e.collapsed,
 					collapsedReason: e.collapsed_reason,
 					collapsedBecauseCrowdControl: e.collapsed_because_crowd_control,
+					commentType: e.comment_type,
 					created: e.created_utc,
 					deletedBy: u(e),
 					distinguishType: e.distinguished || "",
@@ -27353,7 +27354,7 @@
 				return e.all_awardings && (s.allAwardings = Object(a.a)(e.all_awardings)), e.awarders && (s.awarders = e.awarders), e.associated_award && (s.associatedAwardId = e.associated_award.id, s.associatedAward = Object(a.b)(e.associated_award)), s
 			};
 			const d = e => "string" == typeof e ? JSON.parse(e) : e,
-				u = e => e.author !== n.A ? null : e.body === n.B ? c.a.User : e.body === n.Ab ? c.a.Moderator : null
+				u = e => e.author !== n.A ? null : e.body === n.B ? c.b.User : e.body === n.Ab ? c.b.Moderator : null
 		},
 		"./src/reddit/helpers/r2/normalizePostFromR2/index.ts": function(e, t, s) {
 			"use strict";
@@ -28031,7 +28032,7 @@
 					const {
 						partialCommentId: c,
 						partialPostId: d
-					} = r.params, u = Object(h.m)(d), l = c && Object(j.e)(c), {
+					} = r.params, u = Object(h.m)(d), l = c && Object(j.f)(c), {
 						hasSortParam: b,
 						sortToUse: p
 					} = Object(f.a)(t, u);
@@ -34973,7 +34974,7 @@
 						return Object.assign(Object.assign({}, e), {
 							[s]: Object.assign(Object.assign({}, e[s]), {
 								isDeleted: !0,
-								deletedBy: In.a.User
+								deletedBy: In.b.User
 							})
 						})
 					}
@@ -35501,8 +35502,8 @@
 						} = t.payload, c = e[n], d = {};
 						let u = null;
 						if (o) return a && (d[a] = Object.assign(Object.assign({}, c[a]), {
-							prev: Object(In.f)(s.id)
-						}), u = Object(In.f)(a)), Object.assign(Object.assign({}, e), {
+							prev: Object(In.g)(s.id)
+						}), u = Object(In.g)(a)), Object.assign(Object.assign({}, e), {
 							[n]: Object.assign(Object.assign(Object.assign({}, e[n]), d), {
 								[s.id]: {
 									depth: 0,
@@ -35518,10 +35519,10 @@
 								if (c[a] && !c[s]) {
 									const i = c[a].next;
 									return i && (d[i.id] = Object.assign(Object.assign({}, c[i.id]), {
-										prev: Object(In.g)(s)
+										prev: Object(In.h)(s)
 									}), u = i), d[a] = Object.assign(Object.assign({}, c[a]), {
-										next: Object(In.g)(s)
-									}), t = Object(In.f)(a), Object.assign(Object.assign({}, e), {
+										next: Object(In.h)(s)
+									}), t = Object(In.g)(a), Object.assign(Object.assign({}, e), {
 										[n]: Object.assign(Object.assign(Object.assign({}, e[n]), d), {
 											[s]: {
 												depth: r || 0,
@@ -35542,8 +35543,8 @@
 							} = t.payload, a = e[n], i = {};
 							let o = null;
 							return r && (i[r] = Object.assign(Object.assign({}, a[r]), {
-								prev: Object(In.f)(s.id)
-							}), o = Object(In.f)(r)), Object.assign(Object.assign({}, e), {
+								prev: Object(In.g)(s.id)
+							}), o = Object(In.g)(r)), Object.assign(Object.assign({}, e), {
 								[n]: Object.assign(Object.assign(Object.assign({}, e[n]), i), {
 									[s.id]: {
 										depth: 0,
@@ -35564,15 +35565,15 @@
 							if (!i[r]) return e;
 							const d = i[r].next;
 							return d && (o[d.id] = Object.assign(Object.assign({}, i[d.id]), {
-								prev: Object(In.f)(s.id)
+								prev: Object(In.g)(s.id)
 							}), c = d), o[r] = Object.assign(Object.assign({}, i[r]), {
-								next: Object(In.f)(s.id)
+								next: Object(In.g)(s.id)
 							}), Object.assign(Object.assign({}, e), {
 								[n]: Object.assign(Object.assign(Object.assign({}, e[n]), o), {
 									[s.id]: {
 										depth: a,
 										next: c,
-										prev: Object(In.f)(r)
+										prev: Object(In.g)(r)
 									}
 								})
 							})
@@ -42099,7 +42100,7 @@
 											token: btoa(o),
 											numComments: 1,
 											next: null,
-											prev: Object(In.f)(n),
+											prev: Object(In.g)(n),
 											postId: s.postId,
 											isFromLiveWebSocket: !0
 										}
@@ -56175,4 +56176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.081bab3c42c6cfda451f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.28c4c6a0ed7b911d933c.js.map

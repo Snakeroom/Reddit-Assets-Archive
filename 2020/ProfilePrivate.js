@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.e220009df52f67c2b767.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.25e9161ffffdac79407f.js
+// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -482,7 +482,7 @@
 							node: c
 						} of a.edges) {
 						let e;
-						if (c.__typename === b.b.Comment) {
+						if (c.__typename === b.c.Comment) {
 							const t = I(c);
 							if (i.comments || (i.comments = {}), i.comments[t.id] = t, i.itemIds || (i.itemIds = []), i.itemIds.push(t.id), c.authorFlair && (i.authorFlair[t.subredditId] || (i.authorFlair[t.subredditId] = {}), i.authorFlair[t.subredditId][t.author] = Object(w.a)(c.authorFlair)[0]), e = c.postInfo, c.postInfo) {
 								const {
@@ -1795,7 +1795,7 @@
 				}, O && Z && r.a.createElement(C.b, {
 					flair: O,
 					forceSmallEmojis: v
-				}), !Object(M.d)(b) && r.a.createElement(je, {
+				}), !Object(M.e)(b) && r.a.createElement(je, {
 					showAddCustom: !0,
 					subredditId: b.subredditId,
 					userId: b.authorId,
@@ -1804,14 +1804,14 @@
 					postOrComment: b,
 					tooltipType: V ? I.c.Lightbox : void 0
 				}, r.a.createElement(E.b, {
-					ignore: Object(M.d)(b) || !!b.distinguishType && b.distinguishType !== u.C.NONE,
+					ignore: Object(M.e)(b) || !!b.distinguishType && b.distinguishType !== u.C.NONE,
 					subredditId: b.subredditId,
 					userId: b.authorId
 				}, r.a.createElement(Ae, {
 					comment: b,
 					isLivestreaming: P,
 					isStrong: !!v,
-					isAuthorDeleted: Object(M.d)(b)
+					isAuthorDeleted: Object(M.e)(b)
 				}, a && a))), m && r.a.createElement(Ee, null, "Crowd Control"), m && r.a.createElement(X.c, {
 					className: $.a.metaText,
 					key: "crowdControlSeparator"
@@ -1885,7 +1885,7 @@
 					} = e;
 					return r.a.createElement("div", {
 						className: n
-					}, r.a.createElement(ge, null, i.deletedBy === M.a.User ? o.fbt._("Comment deleted by user", null, {
+					}, r.a.createElement(ge, null, i.deletedBy === M.b.User ? o.fbt._("Comment deleted by user", null, {
 						hk: "1Rtt4V"
 					}) : o.fbt._("Comment removed by moderator", null, {
 						hk: "E1t49"
@@ -1905,7 +1905,7 @@
 						className: s
 					}, r.a.createElement("div", null, r.a.createElement(Ae, {
 						comment: t,
-						isAuthorDeleted: Object(M.d)(t)
+						isAuthorDeleted: Object(M.e)(t)
 					})), r.a.createElement(X.b, {
 						className: $.a.metaText,
 						isScoreHidden: t.isScoreHidden,
@@ -11258,4 +11258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.e220009df52f67c2b767.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.25e9161ffffdac79407f.js.map

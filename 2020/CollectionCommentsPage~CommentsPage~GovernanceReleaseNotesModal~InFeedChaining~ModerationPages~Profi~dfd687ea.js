@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.e72216f1ad500980de5c.js
-// Retrieved at 10/8/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.6a4d78ef172d5ba9745f.js
+// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "2c1d1f5-production"
+					SENTRY_RELEASE_VERSION: "86f980d-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -502,13 +502,13 @@
 					T = M > 0,
 					N = M < c.length - 1,
 					_ = Object(l.a)(),
-					R = Object(i.useCallback)(e => {
+					P = Object(i.useCallback)(e => {
 						t(Object(h.f)({
 							postId: O,
 							index: e
 						}))
 					}, [t, O]),
-					P = Object(i.useCallback)(() => {
+					R = Object(i.useCallback)(() => {
 						t(Object(h.i)({
 							postId: O,
 							isTileLayout: !y
@@ -517,13 +517,13 @@
 					D = Object(i.useCallback)(() => {
 						if (!N) return;
 						const e = M + 1;
-						R(e), _(r.b(O, e)), _(r.d(O, e + 1))
-					}, [N, M, R, _, O]),
+						P(e), _(r.b(O, e)), _(r.d(O, e + 1))
+					}, [N, M, P, _, O]),
 					A = Object(i.useCallback)(() => {
 						if (!T) return;
 						const e = M + 1;
-						R(M - 1), _(r.a(O, e)), _(r.d(O, e - 1))
-					}, [T, M, R, _, O]),
+						P(M - 1), _(r.a(O, e)), _(r.d(O, e - 1))
+					}, [T, M, P, _, O]),
 					V = Object(i.useCallback)(() => {
 						const e = c[M] && c[M].outboundUrl,
 							t = M + 1;
@@ -571,7 +571,7 @@
 						},
 						className: E.a.tileImage,
 						onClick: e.shouldBlur ? void 0 : e => {
-							e.preventDefault(), e.stopPropagation(), P(), R(s)
+							e.preventDefault(), e.stopPropagation(), R(), P(s)
 						},
 						key: i
 					})
@@ -631,7 +631,7 @@
 				}))), c.length > 1 ? n.a.createElement(j, {
 					currentSlide: M + 1,
 					totalSlides: c.length,
-					toggleTileLayout: S && P || void 0
+					toggleTileLayout: S && R || void 0
 				}) : ""), !W && !F || y || L ? !!s && !y && !L && n.a.createElement("div", {
 					className: E.a.emptyCaptionBlock,
 					style: {
@@ -973,8 +973,8 @@
 				T = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
 				N = s("./src/reddit/components/Media/VideoBox/index.tsx"),
 				_ = s("./src/reddit/components/PlayButton/index.tsx"),
-				R = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
-				P = s("./src/reddit/components/RichTextJson/index.tsx"),
+				P = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
+				R = s("./src/reddit/components/RichTextJson/index.tsx"),
 				D = s("./src/reddit/constants/componentSizes.ts"),
 				A = s("./src/reddit/constants/experiments.ts"),
 				V = s("./src/reddit/constants/screenWidths.ts"),
@@ -1411,7 +1411,7 @@
 								isTitleOnly: u,
 								postId: m.id,
 								showFull: p
-							}, l.a.createElement(P.a, {
+							}, l.a.createElement(R.a, {
 								altText: this.getAltText(),
 								flairStyleTemplate: s,
 								content: m.isMeta ? Object(G.a)(i, m.id) : i,
@@ -1438,7 +1438,7 @@
 									"data-click-id": "text",
 									isCommentsPage: n,
 									showFull: p
-								}, l.a.createElement(R.a, {
+								}, l.a.createElement(P.a, {
 									flairStyleTemplate: s,
 									html: m.isMeta ? Object(U.a)(m.media.content, m.id, ee.a.hiddenLink) : m.media.content
 								}))
@@ -1860,66 +1860,79 @@
 		"./src/reddit/selectors/poll/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return n
-			})), s.d(t, "e", (function() {
-				return o
-			})), s.d(t, "f", (function() {
 				return a
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "e", (function() {
 				return r
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "g", (function() {
 				return d
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "f", (function() {
 				return l
+			})), s.d(t, "d", (function() {
+				return c
+			})), s.d(t, "b", (function() {
+				return u
+			})), s.d(t, "c", (function() {
+				return m
 			}));
-			var i = s("./src/reddit/models/Poll/index.ts");
-			const n = (e, t) => {
+			var i = s("./src/reddit/models/Comment/index.ts"),
+				n = s("./src/reddit/models/Poll/index.ts"),
+				o = s("./src/reddit/selectors/comments.ts");
+			const a = (e, t) => {
 					let {
 						postId: s
 					} = t;
 					return e.posts.metaMap[s]
 				},
-				o = (e, t) => {
-					let {
-						postId: s
-					} = t;
-					const i = n(e, {
-						postId: s
-					});
-					if (i) return e.polls.models[i]
-				},
-				a = (e, t) => {
-					let {
-						postId: s
-					} = t;
-					const n = o(e, {
-						postId: s
-					});
-					if (n && Object(i.e)(n)) return n
-				},
 				r = (e, t) => {
 					let {
 						postId: s
 					} = t;
-					const i = n(e, {
+					const i = a(e, {
 						postId: s
 					});
-					if (i) return e.polls.rewards[i]
+					if (i) return e.polls.models[i]
 				},
 				d = (e, t) => {
 					let {
 						postId: s
 					} = t;
-					const i = n(e, {
+					const i = r(e, {
+						postId: s
+					});
+					return i && Object(n.e)(i) ? i : null
+				},
+				l = (e, t) => {
+					let {
+						commentId: s
+					} = t;
+					const n = Object(o.n)(e, {
+						commentId: s
+					});
+					return n && n.commentType === i.a.Prediction && d(e, n) || null
+				},
+				c = (e, t) => {
+					let {
+						postId: s
+					} = t;
+					const i = a(e, {
+						postId: s
+					});
+					if (i) return e.polls.rewards[i]
+				},
+				u = (e, t) => {
+					let {
+						postId: s
+					} = t;
+					const i = a(e, {
 						postId: s
 					});
 					if (i) return e.polls.results.byVotingPower[i]
 				},
-				l = (e, t) => {
+				m = (e, t) => {
 					let {
 						postId: s
 					} = t;
-					const i = n(e, {
+					const i = a(e, {
 						postId: s
 					});
 					if (i) return e.polls.results.byVoters[i]
@@ -1927,4 +1940,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.e72216f1ad500980de5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.6a4d78ef172d5ba9745f.js.map

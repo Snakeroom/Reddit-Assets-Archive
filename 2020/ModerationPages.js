@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.58f389417720a94b60dd.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1df2d958fd58a86d8cfc.js
+// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate", "removalReasonActions"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -5552,7 +5552,7 @@
 				}, E && Z && a.a.createElement(C.b, {
 					flair: E,
 					forceSmallEmojis: x
-				}), !Object(M.d)(b) && a.a.createElement(ke, {
+				}), !Object(M.e)(b) && a.a.createElement(ke, {
 					showAddCustom: !0,
 					subredditId: b.subredditId,
 					userId: b.authorId,
@@ -5561,14 +5561,14 @@
 					postOrComment: b,
 					tooltipType: V ? w.c.Lightbox : void 0
 				}, a.a.createElement(_.b, {
-					ignore: Object(M.d)(b) || !!b.distinguishType && b.distinguishType !== p.C.NONE,
+					ignore: Object(M.e)(b) || !!b.distinguishType && b.distinguishType !== p.C.NONE,
 					subredditId: b.subredditId,
 					userId: b.authorId
 				}, a.a.createElement(Fe, {
 					comment: b,
 					isLivestreaming: I,
 					isStrong: !!x,
-					isAuthorDeleted: Object(M.d)(b)
+					isAuthorDeleted: Object(M.e)(b)
 				}, i && i))), m && a.a.createElement(_e, null, "Crowd Control"), m && a.a.createElement(X.c, {
 					className: $.a.metaText,
 					key: "crowdControlSeparator"
@@ -5642,7 +5642,7 @@
 					} = e;
 					return a.a.createElement("div", {
 						className: o
-					}, a.a.createElement(ve, null, r.deletedBy === M.a.User ? n.fbt._("Comment deleted by user", null, {
+					}, a.a.createElement(ve, null, r.deletedBy === M.b.User ? n.fbt._("Comment deleted by user", null, {
 						hk: "1Rtt4V"
 					}) : n.fbt._("Comment removed by moderator", null, {
 						hk: "E1t49"
@@ -5662,7 +5662,7 @@
 						className: s
 					}, a.a.createElement("div", null, a.a.createElement(Fe, {
 						comment: t,
-						isAuthorDeleted: Object(M.d)(t)
+						isAuthorDeleted: Object(M.e)(t)
 					})), a.a.createElement(X.b, {
 						className: $.a.metaText,
 						isScoreHidden: t.isScoreHidden,
@@ -15969,7 +15969,7 @@
 							}
 						})(t.action),
 						o = t.target && t.target.__typename,
-						a = o === ye.b.Comment || ye.b.DeletedComment;
+						a = o === ye.c.Comment || ye.c.DeletedComment;
 					let i;
 					switch (n && n.type) {
 						case O.AWARD:
@@ -16048,10 +16048,10 @@
 						case ue.c.AvailableRedditor:
 							n = (i = i) && i.name || null, o = null;
 							break;
-						case ye.b.Comment:
+						case ye.c.Comment:
 							n = (i = i).authorInfo && i.authorInfo.__typename === ue.c.AvailableRedditor && i.authorInfo.name || null, o = i.content && i.content.markdown, a = i.permalink;
 							break;
-						case ye.b.DeletedComment:
+						case ye.c.DeletedComment:
 							n = null, o = (i = i).postInfo && i.postInfo.title, a = i.postInfo && i.postInfo.permalink;
 							break;
 						default:
@@ -31068,4 +31068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.58f389417720a94b60dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1df2d958fd58a86d8cfc.js.map

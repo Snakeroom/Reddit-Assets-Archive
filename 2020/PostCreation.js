@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5d29205bd18a472f9f47.js
-// Retrieved at 10/8/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.153ddc55c39d282b6765.js
+// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "2c1d1f5-production"
+					SENTRY_RELEASE_VERSION: "86f980d-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -25823,7 +25823,7 @@
 								partialPostId: o
 							} = e.match.params, c = Object(d.m)(o), u = Object(i.a)(e, t, t.posts.models[c]);
 							if (!u) return;
-							const p = s && Object(l.e)(s),
+							const p = s && Object(l.f)(s),
 								{
 									sortToUse: m
 								} = Object(r.a)(t, c);
@@ -33965,66 +33965,79 @@
 		"./src/reddit/selectors/poll/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return o
-			})), n.d(t, "e", (function() {
-				return r
-			})), n.d(t, "f", (function() {
 				return i
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return a
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "g", (function() {
 				return c
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "f", (function() {
 				return l
+			})), n.d(t, "d", (function() {
+				return d
+			})), n.d(t, "b", (function() {
+				return u
+			})), n.d(t, "c", (function() {
+				return p
 			}));
-			var s = n("./src/reddit/models/Poll/index.ts");
-			const o = (e, t) => {
+			var s = n("./src/reddit/models/Comment/index.ts"),
+				o = n("./src/reddit/models/Poll/index.ts"),
+				r = n("./src/reddit/selectors/comments.ts");
+			const i = (e, t) => {
 					let {
 						postId: n
 					} = t;
 					return e.posts.metaMap[n]
 				},
-				r = (e, t) => {
-					let {
-						postId: n
-					} = t;
-					const s = o(e, {
-						postId: n
-					});
-					if (s) return e.polls.models[s]
-				},
-				i = (e, t) => {
-					let {
-						postId: n
-					} = t;
-					const o = r(e, {
-						postId: n
-					});
-					if (o && Object(s.e)(o)) return o
-				},
 				a = (e, t) => {
 					let {
 						postId: n
 					} = t;
-					const s = o(e, {
+					const s = i(e, {
 						postId: n
 					});
-					if (s) return e.polls.rewards[s]
+					if (s) return e.polls.models[s]
 				},
 				c = (e, t) => {
 					let {
 						postId: n
 					} = t;
-					const s = o(e, {
+					const s = a(e, {
+						postId: n
+					});
+					return s && Object(o.e)(s) ? s : null
+				},
+				l = (e, t) => {
+					let {
+						commentId: n
+					} = t;
+					const o = Object(r.n)(e, {
+						commentId: n
+					});
+					return o && o.commentType === s.a.Prediction && c(e, o) || null
+				},
+				d = (e, t) => {
+					let {
+						postId: n
+					} = t;
+					const s = i(e, {
+						postId: n
+					});
+					if (s) return e.polls.rewards[s]
+				},
+				u = (e, t) => {
+					let {
+						postId: n
+					} = t;
+					const s = i(e, {
 						postId: n
 					});
 					if (s) return e.polls.results.byVotingPower[s]
 				},
-				l = (e, t) => {
+				p = (e, t) => {
 					let {
 						postId: n
 					} = t;
-					const s = o(e, {
+					const s = i(e, {
 						postId: n
 					});
 					if (s) return e.polls.results.byVoters[s]
@@ -34130,4 +34143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5d29205bd18a472f9f47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.153ddc55c39d282b6765.js.map

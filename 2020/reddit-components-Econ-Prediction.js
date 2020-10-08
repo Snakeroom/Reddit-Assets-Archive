@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.013a305b5d7fb134845e.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.04b2c07b2bd0f1b036af.js
+// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/GetPredictionCoinPackages.json": function(e) {
@@ -706,7 +706,7 @@
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), $ = Object(c.c)({
 				isEditing: O.G,
-				prediction: v.f,
+				prediction: v.g,
 				pollId: v.a,
 				post: g.N,
 				subredditOrProfile: g.ab,
@@ -1231,4 +1231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.013a305b5d7fb134845e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.04b2c07b2bd0f1b036af.js.map
