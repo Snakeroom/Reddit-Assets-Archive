@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9f0e8899d4c758f03dab.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.c2c746af52c2e1c05fe7.js
+// Retrieved at 10/8/2020, 4:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -5535,7 +5535,7 @@
 						isResponsiveSettingsEnabled: n
 					}, s.fbt._("Notifications settings", null, {
 						hk: "rYOeb"
-					})), t && o.a.createElement(ss.a, null), o.a.createElement(Y.a, null, s.fbt._("inbox notification", null, {
+					})), t && o.a.createElement(ss.a, null), !t && o.a.createElement(o.a.Fragment, null, o.a.createElement(Y.a, null, s.fbt._("inbox notification", null, {
 						hk: "4a0OKQ"
 					})), o.a.createElement(Q.o, {
 						on: m,
@@ -5583,7 +5583,7 @@
 							hk: "1HKTXz"
 						}),
 						last: !0
-					}), o.a.createElement(Y.a, null, s.fbt._("email notification", null, {
+					})), o.a.createElement(Y.a, null, s.fbt._("email notification", null, {
 						hk: "4oynG5"
 					})), o.a.createElement(Q.o, {
 						on: !r,
@@ -6911,4 +6911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9f0e8899d4c758f03dab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c2c746af52c2e1c05fe7.js.map
