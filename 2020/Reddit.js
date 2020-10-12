@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.81bfc939cd4c5acd6748.js
-// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.db81c032263c53a7029a.js
+// Retrieved at 10/12/2020, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -9185,7 +9185,9 @@
 								surveyExperimentVariants: m,
 								samplingId: a || d
 							});
-							n && n !== t && setTimeout(() => s(n), 1e3 * n.variants[m[n.experiment_name]].delay)
+							if (!n || n === t) return;
+							const r = m[n.experiment_name];
+							(null == r ? void 0 : r.variant) && n.variants[r.variant] && setTimeout(() => s(n), 1e3 * n.variants[r.variant].delay)
 						}, [t, m, a, d]);
 					return Object(o.useEffect)(() => {
 						const e = Object(l.c)(),
@@ -10575,23 +10577,24 @@
 						surveyExperimentVariants: s,
 						samplingId: n
 					} = e;
-					const a = Object(c.z)(),
-						r = Object(c.A)(),
-						i = 864e5 * d.survey_cooldown_days;
-					if (!r || !r[t] || a && Date.now() - a <= i) return null;
-					const l = [],
+					var a;
+					const r = Object(c.z)(),
+						i = Object(c.A)(),
+						l = 864e5 * d.survey_cooldown_days;
+					if (!i || !i[t] || r && Date.now() - r <= l) return null;
+					const u = [],
 						{
-							active_surveys: u
+							active_surveys: m
 						} = d;
-					for (let c = 0; c < u.length; c++) {
+					for (let c = 0; c < m.length; c++) {
 						const {
 							experiment_name: e,
-							trigger_event: a,
-							variants: i
-						} = u[c], d = i[s[e]];
-						a !== t || !r[a] || !d || !d.survey_enabled || r[a] < d.trigger_threshold || o(n + e) > d.sample_factor || l.push(u[c])
+							trigger_event: r,
+							variants: d
+						} = m[c], l = null === (a = s[e]) || void 0 === a ? void 0 : a.variant, p = l && d[l];
+						r !== t || !i[r] || !p || !p.survey_enabled || i[r] < p.trigger_threshold || o(n + e) > p.sample_factor || u.push(m[c])
 					}
-					return l.length ? l[Math.floor(Math.random() * l.length)] : null
+					return u.length ? u[Math.floor(Math.random() * u.length)] : null
 				},
 				b = (e, t) => {
 					const {
@@ -14522,4 +14525,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.81bfc939cd4c5acd6748.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.db81c032263c53a7029a.js.map
