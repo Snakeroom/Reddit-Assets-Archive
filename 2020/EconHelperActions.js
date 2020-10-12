@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.30233525f2a531c6d169.js
-// Retrieved at 10/6/2020, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.9dfe2611f002a5403f17.js
+// Retrieved at 10/12/2020, 6:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -162,10 +162,10 @@
 				i = Object(n.a)(s.d),
 				a = Object(n.a)(s.e),
 				u = Object(n.a)(s.f),
-				m = (Object(n.a)(s.g), Object(n.a)(s.h)),
-				b = Object(n.a)(s.i),
-				l = Object(n.a)(s.j),
-				p = Object(n.a)(s.k)
+				m = Object(n.a)(s.g),
+				b = Object(n.a)(s.h),
+				l = Object(n.a)(s.i),
+				p = Object(n.a)(s.j)
 		},
 		"./src/reddit/actions/economics/subredditPremium/thunkedActions.ts": function(e, t, r) {
 			"use strict";
@@ -1016,4 +1016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.30233525f2a531c6d169.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.9dfe2611f002a5403f17.js.map
