@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3b981921e7bd9e28effd.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8d5548b60f97d68fad03.js
+// Retrieved at 10/12/2020, 11:00:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -2557,14 +2557,35 @@
 		"./src/reddit/components/LayerEmbed/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return p
 			}));
+			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./src/higherOrderComponents/asModal/index.tsx"),
 				r = n("./node_modules/react/index.js"),
 				a = n.n(r),
-				i = n("./src/reddit/components/LayerEmbed/index.m.less"),
-				o = n.n(i);
-			const c = Object(s.a)(e => {
+				i = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx"),
+				o = n("./src/reddit/components/LayerEmbed/index.m.less"),
+				c = n.n(o);
+
+			function d() {
+				return (d = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			var l = function(e, t) {
+				var n = {};
+				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
+				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
+					var r = 0;
+					for (s = Object.getOwnPropertySymbols(e); r < s.length; r++) t.indexOf(s[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, s[r]) && (n[s[r]] = e[s[r]])
+				}
+				return n
+			};
+			const u = Object(s.a)(e => {
 					let {
 						backgroundUrl: t,
 						baseUrl: n,
@@ -2579,15 +2600,33 @@
 						src: i
 					})
 				}),
-				d = e => {
+				m = e => {
+					var {
+						onClose: t
+					} = e, n = l(e, ["onClose"]);
+					const [s, o] = Object(r.useState)(!1), c = () => o(!1);
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(u, d({}, n, {
+						withOverlay: !0,
+						onOverlayClick: () => o(!0)
+					})), s && a.a.createElement(i.a, {
+						titleText: "Close Layer maker",
+						bodyText: "Are you sure you want to discard all your changes?",
+						primaryButtonText: "Back to drawing",
+						onPrimaryAction: c,
+						secondaryButtonText: "Yes, discard",
+						onSecondaryAction: t,
+						onClose: c
+					}))
+				},
+				p = e => {
 					let {
 						baseUrl: t,
 						subredditId: n
 					} = e;
 					const s = Object(r.useRef)(null),
-						[i, d] = Object(r.useState)(!1),
-						[l, u] = Object(r.useState)(),
-						[m, p] = Object(r.useState)([594, 628]),
+						[i, o] = Object(r.useState)(!1),
+						[d, l] = Object(r.useState)(),
+						[u, p] = Object(r.useState)([594, 628]),
 						b = Object(r.useCallback)(e => {
 							var t, n;
 							s.current && e.data && e.data.layerEmbedHeight && (s.current.style.height = e.data.layerEmbedHeight + 8 + "px");
@@ -2596,8 +2635,8 @@
 								payload: a
 							} = e.data;
 							if ("string" == typeof r && r.startsWith("layers.")) {
-								if ("layers.openLayerMaker" === r) return d(!0), void u(a.backgroundUrl);
-								if ("layers.closeLayerMaker" === r) return d(!1);
+								if ("layers.openLayerMaker" === r) return o(!0), void l(a.backgroundUrl);
+								if ("layers.closeLayerMaker" === r) return o(!1);
 								if ("layers.resizeLayerMaker" !== r) null === (n = null === (t = s.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e.data, "*");
 								else {
 									const {
@@ -2607,21 +2646,20 @@
 									p([e, t])
 								}
 							}
-						}, [s, d]);
+						}, [s, o]);
 					Object(r.useEffect)(() => (window.addEventListener("message", b), () => window.removeEventListener("message", b)), [b]);
-					const [h, g] = m, x = t + "/static/client/?platform=desktop&subreddit=".concat(n);
+					const [h, g] = u, x = t + "/static/client/?platform=desktop&subreddit=".concat(n);
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement("iframe", {
 						id: "layersEmbed",
 						ref: s,
-						className: o.a.layerCanvas,
+						className: c.a.layerCanvas,
 						src: x
-					}), i && a.a.createElement(c, {
-						backgroundUrl: l,
+					}), i && a.a.createElement(m, {
+						backgroundUrl: d,
 						baseUrl: t,
-						withOverlay: !0,
-						onOverlayClick: () => {
+						onClose: () => {
 							var e, t;
-							d(!1), null === (t = null === (e = s.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage({
+							o(!1), null === (t = null === (e = s.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage({
 								action: "layers.closeLayerMaker"
 							}, "*")
 						},
@@ -2701,6 +2739,53 @@
 					onClick: i
 				}, b), t)
 			})
+		},
+		"./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less": function(e, t, n) {
+			e.exports = {
+				PrimaryButton: "_35XIX8S5eAkigMxHxx98TS",
+				primaryButton: "_35XIX8S5eAkigMxHxx98TS",
+				ModalText: "_1ShPAP1uGnX3ZkiyNiigAA",
+				modalText: "_1ShPAP1uGnX3ZkiyNiigAA"
+			}
+		},
+		"./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				a = n("./src/higherOrderComponents/asModal/index.tsx"),
+				i = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				o = n("./src/reddit/constants/keycodes.ts"),
+				c = n("./src/reddit/controls/Button/index.tsx"),
+				d = n("./src/reddit/controls/TextButton/index.tsx"),
+				l = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				u = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
+				m = n.n(u),
+				p = n("./src/lib/lessComponent.tsx");
+			const b = p.a.wrapped(c.i, "PrimaryButton", m.a),
+				h = p.a.wrapped(i.o, "ModalText", m.a);
+			class g extends r.a.PureComponent {
+				constructor() {
+					super(...arguments), this.handleEscapeKey = e => {
+						e.keyCode === o.a.Escape && this.props.onClose()
+					}
+				}
+				componentDidMount() {
+					document.addEventListener("keydown", this.handleEscapeKey)
+				}
+				componentWillUnmount() {
+					document.removeEventListener("keydown", this.handleEscapeKey)
+				}
+				render() {
+					return r.a.createElement(i.d, null, r.a.createElement(i.h, null, r.a.createElement(l.a, null, r.a.createElement(i.p, null, this.props.titleText), r.a.createElement(d.a, {
+						onClick: this.props.onClose
+					}, r.a.createElement(i.b, null)))), r.a.createElement(i.k, null, r.a.createElement(h, null, this.props.bodyText)), r.a.createElement(i.f, null, r.a.createElement(i.a, {
+						onClick: this.props.onSecondaryAction
+					}, this.props.secondaryButtonText), r.a.createElement(b, {
+						onClick: this.props.onPrimaryAction
+					}, this.props.primaryButtonText)))
+				}
+			}
+			t.a = Object(a.a)(g)
 		},
 		"./src/reddit/components/PowerupsSidebar/PowerupsProgressBar/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -9996,4 +10081,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3b981921e7bd9e28effd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8d5548b60f97d68fad03.js.map
