@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.e3d10e9fa1ac0bf6ac98.js
-// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.4561bdc1b7ab88dfea7b.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -15356,7 +15356,7 @@
 							inSubredditOrProfile: !Object(l.a)(d),
 							listingKey: r,
 							listingName: h,
-							listingViewed: (e, t) => Object(Tt.l)(r, m, t, e, b),
+							listingViewed: (e, t) => Object(Tt.m)(r, m, t, e, b),
 							noPostsComponent: this.renderNoPosts,
 							onTryAgain: a
 						},
@@ -15469,4 +15469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.e3d10e9fa1ac0bf6ac98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4561bdc1b7ab88dfea7b.js.map

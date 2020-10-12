@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9b0a43b645fc7179dbac.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1242a83464d0c31ef046.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, s) {
@@ -1604,7 +1604,7 @@
 				}
 				componentDidMount() {
 					const e = this.getWidgetCategories();
-					this.setWidgetCategories(e), this.props.sendEvent(Object(b.d)())
+					this.setWidgetCategories(e), this.props.sendEvent(Object(b.e)())
 				}
 				componentDidUpdate(e) {
 					this.resetScrollPosition(), this.updateWidgetCategories(e)
@@ -1645,4 +1645,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9b0a43b645fc7179dbac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1242a83464d0c31ef046.js.map

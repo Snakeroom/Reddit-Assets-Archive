@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.262fe705eb5fe50402d1.js
-// Retrieved at 8/26/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.a0e8affffe34da60a5eb.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-CommentsPage-OtherDiscussions"], {
 		"./src/reddit/pages/CommentsPage/OtherDiscussions/index.m.less": function(e, s, t) {
@@ -109,7 +109,7 @@
 					forcedLayout: b.g.Compact,
 					listingKey: _,
 					listingName: p.c.OtherDiscussions,
-					listingViewed: (e, s) => Object(g.e)(_, n, s, e),
+					listingViewed: (e, s) => Object(g.f)(_, n, s, e),
 					noPostsComponent: () => i.a.createElement(l.b, null),
 					inSubredditOrProfile: !1,
 					preventScrollOnMount: !0
@@ -118,4 +118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-pages-CommentsPage-OtherDiscussions.262fe705eb5fe50402d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.a0e8affffe34da60a5eb.js.map

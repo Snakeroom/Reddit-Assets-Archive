@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.1f536782e10ebb447848.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.63a9cfeaced2b7122a02.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1216,7 +1216,7 @@
 						}), window.scrollTo(0, 0)
 					}, this.openCommunitiesTab = () => {
 						this.openTab(B.Communities)
-					}, this.onViewed = (e, t) => Object(j.e)(Object(c.a)(O.b.Topic, null, {
+					}, this.onViewed = (e, t) => Object(j.f)(Object(c.a)(O.b.Topic, null, {
 						topicSlug: this.props.topic.slug
 					}), this.props.sort, t, e, this.props.timeSort), this.renderNoPosts = () => null, this.renderRelationship = (e, t) => n.a.createElement(q, {
 						key: e.slug,
@@ -1337,4 +1337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.1f536782e10ebb447848.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.63a9cfeaced2b7122a02.js.map

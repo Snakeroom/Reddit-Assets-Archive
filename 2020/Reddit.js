@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.792214f2475f284d35b9.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.81bfc939cd4c5acd6748.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -11932,7 +11932,7 @@
 							const e = Object(Qt.b)(c, n, Object(Gt.a)(n));
 							if (e && _.c.has(e)) {
 								const t = _.c.end(e);
-								!Object(Wt.i)(n) && Object(Ut.b)(We.a.IsOverlay) || Object(qt.h)(c, n, k.TimerType.UserCancelled, t)
+								!Object(Wt.i)(n) && Object(Ut.b)(We.a.IsOverlay) || Object(qt.i)(c, n, k.TimerType.UserCancelled, t)
 							}
 						}
 						const d = s.payload.routeMatch;
@@ -12385,7 +12385,7 @@
 								Object(a.g)(o, t)
 							}
 							const o = x.a.timing.domInteractive - x.a.timing.navigationStart;
-							Object(qt.h)(r.routeMatch, d.getState(), k.TimerType.Initial, o);
+							Object(qt.i)(r.routeMatch, d.getState(), k.TimerType.Initial, o);
 							const i = Object(f.a)(window.location.href);
 							i && i.get(Qe.a) && history.replaceState(history.state, "", Object(v.a)(window.location.href, [Qe.a])), Object(E.a)(i.get(Qe.y)) && d.dispatch(Object(Q.e)({
 								kind: hs.b.SuccessCommunity,
@@ -14522,4 +14522,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.792214f2475f284d35b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.81bfc939cd4c5acd6748.js.map

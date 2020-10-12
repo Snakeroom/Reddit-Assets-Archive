@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.68b48d6752b464ac812c.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.2bbc9707d5501ab6c936.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -836,7 +836,7 @@
 					} = this.props;
 					e.length || a || t(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
 					const s = p.Bb.COINS;
-					x.c.has(s) && this.props.sendEvent(Object(_.a)(C.TimerType.InApp, x.c.end(s))), Object(u.a)(), this.setTargetedOfferTimeout()
+					x.c.has(s) && (this.props.sendEvent(Object(_.b)(C.TimerType.InApp, x.c.end(s))), this.props.sendEvent(Object(_.a)())), Object(u.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
 					!this.targetedOfferTimerId && this.props.dealCoinPackages.length && this.setTargetedOfferTimeout()
@@ -991,4 +991,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.68b48d6752b464ac812c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.2bbc9707d5501ab6c936.js.map

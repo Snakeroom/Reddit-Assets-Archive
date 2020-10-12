@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.80717f66b67de107e424.js
-// Retrieved at 10/12/2020, 4:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.31ff69b14a17ee4f0e7f.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "03896b1-production"
+					SENTRY_RELEASE_VERSION: "214b607-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -25759,40 +25759,42 @@
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "h", (function() {
+			n.d(t, "i", (function() {
 				return x
-			})), n.d(t, "e", (function() {
-				return y
-			})), n.d(t, "l", (function() {
-				return v
-			})), n.d(t, "m", (function() {
-				return C
-			})), n.d(t, "k", (function() {
-				return E
-			})), n.d(t, "n", (function() {
-				return O
-			})), n.d(t, "b", (function() {
-				return j
-			})), n.d(t, "i", (function() {
-				return w
 			})), n.d(t, "f", (function() {
-				return S
-			})), n.d(t, "g", (function() {
-				return _
-			})), n.d(t, "a", (function() {
-				return T
-			})), n.d(t, "j", (function() {
-				return I
+				return y
+			})), n.d(t, "m", (function() {
+				return v
+			})), n.d(t, "n", (function() {
+				return C
+			})), n.d(t, "l", (function() {
+				return E
 			})), n.d(t, "o", (function() {
-				return N
-			})), n.d(t, "q", (function() {
-				return R
-			})), n.d(t, "d", (function() {
-				return L
+				return O
 			})), n.d(t, "c", (function() {
-				return F
+				return j
+			})), n.d(t, "j", (function() {
+				return w
+			})), n.d(t, "g", (function() {
+				return S
+			})), n.d(t, "h", (function() {
+				return _
+			})), n.d(t, "b", (function() {
+				return T
+			})), n.d(t, "a", (function() {
+				return I
+			})), n.d(t, "k", (function() {
+				return P
 			})), n.d(t, "p", (function() {
+				return R
+			})), n.d(t, "r", (function() {
+				return L
+			})), n.d(t, "e", (function() {
+				return A
+			})), n.d(t, "d", (function() {
 				return B
+			})), n.d(t, "q", (function() {
+				return D
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var s = n("./src/lib/constants/index.ts"),
@@ -25893,7 +25895,7 @@
 							break
 						}
 						case s.Bb.SETTINGS:
-							e.match.params.page === s.Ob.Profile ? Object(c.j)(t) : Object(f.a)(M(n, a)(t));
+							e.match.params.page === s.Ob.Profile ? Object(c.j)(t) : Object(f.a)(N(n, a)(t));
 							break;
 						case s.Bb.POST_CREATION:
 							break;
@@ -25906,16 +25908,16 @@
 							break
 						}
 						case s.Bb.SUBREDDIT_WIKI:
-							Object(f.a)(A(n, a)(t));
+							Object(f.a)(F(n, a)(t));
 							break;
 						case s.Bb.COINS:
-							Object(f.a)(T(n, a)(t));
+							Object(f.a)(T(n, a)(t)), Object(f.a)(I()(t));
 							break;
 						case s.Bb.PREMIUM:
-							Object(f.a)(I(n, a)(t));
+							Object(f.a)(P(n, a)(t));
 							break;
 						case s.Bb.APPEAL:
-							Object(f.a)(P(n, a)(t))
+							Object(f.a)(M(n, a)(t))
 					}
 				},
 				y = (e, t, n, s, o, r) => i => {
@@ -26128,7 +26130,12 @@
 					timer: g.timer(e, t),
 					adblock: g.adblock(n)
 				}),
-				I = (e, t) => n => Object.assign(Object.assign({
+				I = () => e => Object.assign({
+					source: "global",
+					action: "view",
+					noun: "screen"
+				}, g.defaults(e)),
+				P = (e, t) => n => Object.assign(Object.assign({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
@@ -26137,37 +26144,37 @@
 					timer: g.timer(e, t),
 					adblock: g.adblock(n)
 				}),
-				P = (e, t) => n => Object.assign(Object.assign({
+				M = (e, t) => n => Object.assign(Object.assign({
 					source: "appeal",
 					action: "view",
 					noun: "page"
 				}, g.defaults(n)), {
 					timer: g.timer(e, t)
 				}),
-				M = (e, t) => n => Object.assign(Object.assign({
+				N = (e, t) => n => Object.assign(Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, g.defaults(n)), {
 					timer: g.timer(e, t)
 				}),
-				N = () => e => Object.assign({
+				R = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					subreddit: g.subreddit(e)
 				}, g.defaults(e)),
-				R = () => e => Object.assign({
-					source: "global",
-					action: "view",
-					noun: "screen"
-				}, g.defaults(e)),
 				L = () => e => Object.assign({
+					source: "global",
+					action: "view",
+					noun: "screen"
+				}, g.defaults(e)),
+				A = () => e => Object.assign({
 					action: "view",
 					source: "global",
 					noun: "screen"
 				}, g.defaults(e)),
-				A = (e, t) => n => Object.assign(Object.assign({
+				F = (e, t) => n => Object.assign(Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
@@ -26178,12 +26185,12 @@
 					userSubreddit: g.userSubreddit(n),
 					adblock: g.adblock(n)
 				}),
-				F = () => e => Object.assign({
+				B = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, g.defaults(e)),
-				B = (e, t, n, o, r, i) => a => {
+				D = (e, t, n, o, r, i) => a => {
 					let c = !0;
 					if (t.type.indexOf(s.Nb.Posts) > -1) {
 						const {
@@ -33434,7 +33441,7 @@
 					const e = this.props.pageLayer;
 					if (e) {
 						const t = Object(ru.a)(e.urlParams);
-						N.c.has(t) && this.props.sendEvent(Object(iu.i)(t, au.TimerType.InApp, N.c.end(t)))
+						N.c.has(t) && this.props.sendEvent(Object(iu.j)(t, au.TimerType.InApp, N.c.end(t)))
 					}
 				}
 				componentWillReceiveProps(e) {
@@ -34143,4 +34150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.80717f66b67de107e424.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.31ff69b14a17ee4f0e7f.js.map

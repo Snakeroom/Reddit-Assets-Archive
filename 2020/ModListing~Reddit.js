@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.bf1ad358837c53d1bdf0.js
-// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.ed034935d7f074456d23.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -2276,40 +2276,42 @@
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "h", (function() {
+			n.d(t, "i", (function() {
 				return g
-			})), n.d(t, "e", (function() {
-				return v
-			})), n.d(t, "l", (function() {
-				return O
-			})), n.d(t, "m", (function() {
-				return x
-			})), n.d(t, "k", (function() {
-				return j
-			})), n.d(t, "n", (function() {
-				return C
-			})), n.d(t, "b", (function() {
-				return w
-			})), n.d(t, "i", (function() {
-				return _
 			})), n.d(t, "f", (function() {
-				return N
-			})), n.d(t, "g", (function() {
-				return S
-			})), n.d(t, "a", (function() {
-				return I
-			})), n.d(t, "j", (function() {
-				return P
+				return v
+			})), n.d(t, "m", (function() {
+				return O
+			})), n.d(t, "n", (function() {
+				return x
+			})), n.d(t, "l", (function() {
+				return j
 			})), n.d(t, "o", (function() {
-				return T
-			})), n.d(t, "q", (function() {
-				return L
-			})), n.d(t, "d", (function() {
-				return M
+				return C
 			})), n.d(t, "c", (function() {
-				return D
+				return w
+			})), n.d(t, "j", (function() {
+				return _
+			})), n.d(t, "g", (function() {
+				return N
+			})), n.d(t, "h", (function() {
+				return S
+			})), n.d(t, "b", (function() {
+				return I
+			})), n.d(t, "a", (function() {
+				return P
+			})), n.d(t, "k", (function() {
+				return k
 			})), n.d(t, "p", (function() {
+				return L
+			})), n.d(t, "r", (function() {
+				return M
+			})), n.d(t, "e", (function() {
+				return U
+			})), n.d(t, "d", (function() {
 				return R
+			})), n.d(t, "q", (function() {
+				return F
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var r = n("./src/lib/constants/index.ts"),
@@ -2410,7 +2412,7 @@
 							break
 						}
 						case r.Bb.SETTINGS:
-							e.match.params.page === r.Ob.Profile ? Object(c.j)(t) : Object(y.a)(B(n, i)(t));
+							e.match.params.page === r.Ob.Profile ? Object(c.j)(t) : Object(y.a)(T(n, i)(t));
 							break;
 						case r.Bb.POST_CREATION:
 							break;
@@ -2423,16 +2425,16 @@
 							break
 						}
 						case r.Bb.SUBREDDIT_WIKI:
-							Object(y.a)(U(n, i)(t));
+							Object(y.a)(D(n, i)(t));
 							break;
 						case r.Bb.COINS:
-							Object(y.a)(I(n, i)(t));
+							Object(y.a)(I(n, i)(t)), Object(y.a)(P()(t));
 							break;
 						case r.Bb.PREMIUM:
-							Object(y.a)(P(n, i)(t));
+							Object(y.a)(k(n, i)(t));
 							break;
 						case r.Bb.APPEAL:
-							Object(y.a)(k(n, i)(t))
+							Object(y.a)(B(n, i)(t))
 					}
 				},
 				v = (e, t, n, r, s, o) => a => {
@@ -2645,7 +2647,12 @@
 					timer: h.timer(e, t),
 					adblock: h.adblock(n)
 				}),
-				P = (e, t) => n => Object.assign(Object.assign({
+				P = () => e => Object.assign({
+					source: "global",
+					action: "view",
+					noun: "screen"
+				}, h.defaults(e)),
+				k = (e, t) => n => Object.assign(Object.assign({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
@@ -2654,37 +2661,37 @@
 					timer: h.timer(e, t),
 					adblock: h.adblock(n)
 				}),
-				k = (e, t) => n => Object.assign(Object.assign({
+				B = (e, t) => n => Object.assign(Object.assign({
 					source: "appeal",
 					action: "view",
 					noun: "page"
 				}, h.defaults(n)), {
 					timer: h.timer(e, t)
 				}),
-				B = (e, t) => n => Object.assign(Object.assign({
+				T = (e, t) => n => Object.assign(Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, h.defaults(n)), {
 					timer: h.timer(e, t)
 				}),
-				T = () => e => Object.assign({
+				L = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					subreddit: h.subreddit(e)
 				}, h.defaults(e)),
-				L = () => e => Object.assign({
-					source: "global",
-					action: "view",
-					noun: "screen"
-				}, h.defaults(e)),
 				M = () => e => Object.assign({
+					source: "global",
+					action: "view",
+					noun: "screen"
+				}, h.defaults(e)),
+				U = () => e => Object.assign({
 					action: "view",
 					source: "global",
 					noun: "screen"
 				}, h.defaults(e)),
-				U = (e, t) => n => Object.assign(Object.assign({
+				D = (e, t) => n => Object.assign(Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
@@ -2695,12 +2702,12 @@
 					userSubreddit: h.userSubreddit(n),
 					adblock: h.adblock(n)
 				}),
-				D = () => e => Object.assign({
+				R = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, h.defaults(e)),
-				R = (e, t, n, s, o, a) => i => {
+				F = (e, t, n, s, o, a) => i => {
 					let c = !0;
 					if (t.type.indexOf(r.Nb.Posts) > -1) {
 						const {
@@ -3355,4 +3362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.bf1ad358837c53d1bdf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.ed034935d7f074456d23.js.map

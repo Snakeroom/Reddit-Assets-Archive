@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.dfd1ccf77f0d1c1595e5.js
-// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.c6d28ee92ac3e6615dff.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -803,7 +803,7 @@
 				}));
 			class ke extends o.a.PureComponent {
 				constructor() {
-					super(...arguments), this.onViewed = (e, t) => Object(je.e)(this.props.listingKey, this.props.sort, t, e), this.renderEmptySubreddit = () => o.a.createElement(b.a, {
+					super(...arguments), this.onViewed = (e, t) => Object(je.f)(this.props.listingKey, this.props.sort, t, e), this.renderEmptySubreddit = () => o.a.createElement(b.a, {
 						listingName: this.props.listingName,
 						sort: this.props.sort
 					})
@@ -834,4 +834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.dfd1ccf77f0d1c1595e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c6d28ee92ac3e6615dff.js.map

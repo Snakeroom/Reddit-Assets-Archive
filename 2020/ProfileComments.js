@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.602a447259932a52976a.js
-// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.2625d5c80feaa9a7b660.js
+// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "RpanListingUnit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargeP~040a1093", "reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddit-compo~0e38b796", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -13431,7 +13431,7 @@
 					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(x.a, _), a.a.createElement(f.a, null), a.a.createElement(ce, {
 						listingKey: r,
 						listingName: v,
-						listingViewed: (e, t) => Object(me.k)(r, p, t, e, u),
+						listingViewed: (e, t) => Object(me.l)(r, p, t, e, u),
 						noPostsComponent: () => a.a.createElement(h.b, {
 							profileName: m,
 							timeSort: u
@@ -13498,4 +13498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.602a447259932a52976a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.2625d5c80feaa9a7b660.js.map
