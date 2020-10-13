@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6b1f01716d96da504b17.js
-// Retrieved at 10/13/2020, 2:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c3c7d2104ec6256c3a0f.js
+// Retrieved at 10/13/2020, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -19084,14 +19084,15 @@
 			s.d(t, "e", (function() {
 				return k
 			})), s.d(t, "d", (function() {
-				return x
+				return N
 			})), s.d(t, "c", (function() {
-				return L
+				return U
 			})), s.d(t, "a", (function() {
-				return M
+				return F
 			})), s.d(t, "b", (function() {
-				return G
+				return B
 			}));
+			s("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/lib/constants/index.ts"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
@@ -19175,11 +19176,11 @@
 						error: a.error
 					}))
 				}),
-				x = (e, t, s) => async (a, d, g) => {
+				x = (e, t) => t.type === l.a.PROFILE && e.displayText === t.name.replace("u_", ""),
+				N = (e, t, s) => async (a, d, g) => {
 					let {
 						apiContext: f
-					} = g;
-					const j = e.map(e => e.type === l.a.SUBREDDIT ? {
+					} = g, j = e.map(e => e.type === l.a.SUBREDDIT ? {
 						id: Object(S.G)(d(), e.name),
 						name: e.name,
 						type: e.type
@@ -19191,6 +19192,18 @@
 					if (!Object(w.I)(d())) return a(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void a(Object(o.i)());
+					const _ = Object(w.i)(d());
+					if (_) {
+						const t = j.length,
+							s = e.length;
+						if (j = j.filter(e => !x(_, e)), (e = e.filter(e => !x(_, e))).length !== s || j.length !== t) {
+							const e = n.fbt._("You cannot follow yourself!", null, {
+								hk: "3tfSaq"
+							});
+							a(Object(u.e)(Object(u.d)(e, I.b.Error)))
+						}
+						if (!e.length && !j.length) return
+					}
 					if (a(R({
 							identifiers: j,
 							nameIdentifiers: e,
@@ -19251,7 +19264,7 @@
 						});
 						a(Object(u.e)(Object(u.d)(r, I.b.Error)))
 					}
-				}, N = Object(a.a)(d.f), L = e => async (t, s, n) => {
+				}, L = Object(a.a)(d.f), U = e => async (t, s, n) => {
 					let {
 						apiContext: a
 					} = n;
@@ -19268,7 +19281,7 @@
 						j = -1 === f && -1 === m,
 						_ = i.subreddits.models,
 						h = i.profiles.models;
-					t(N({
+					t(L({
 						makeFavorite: j,
 						identifier: e,
 						subredditModels: _,
@@ -19281,7 +19294,7 @@
 						E = () => Object(S.fb)(s(), {
 							identifier: y
 						});
-					(E() || (await t(x([y], !0)), E())) && ((await ((e, t, s) => Object(b.a)(Object(p.a)(e, [O.a]), {
+					(E() || (await t(N([y], !0)), E())) && ((await ((e, t, s) => Object(b.a)(Object(p.a)(e, [O.a]), {
 						method: r.db.POST,
 						endpoint: "".concat(e.apiUrl, "/api/favorite"),
 						data: {
@@ -19289,7 +19302,7 @@
 							sr_name: t,
 							api_type: "json"
 						}
-					}))(a(), c, j)).ok || (t(N({
+					}))(a(), c, j)).ok || (t(L({
 						makeFavorite: !j,
 						identifier: e,
 						subredditModels: _,
@@ -19298,7 +19311,7 @@
 						text: C(),
 						kind: I.b.Error
 					}))))
-				}, U = Object(a.a)(d.d), M = e => async (t, s, n) => {
+				}, M = Object(a.a)(d.d), F = e => async (t, s, n) => {
 					let {
 						apiContext: a
 					} = n;
@@ -19312,7 +19325,7 @@
 						c = i[e];
 					if (!c) return void o();
 					const d = !c.isFavorited;
-					t(U({
+					t(M({
 						makeFavorite: d,
 						multiredditPath: e,
 						multiredditsModelsState: i
@@ -19324,12 +19337,12 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(a(), e, d)).ok || (t(U({
+					}))(a(), e, d)).ok || (t(M({
 						makeFavorite: !d,
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), o())
-				}, F = Object(a.a)(d.e), G = e => async (t, s, a) => {
+				}, G = Object(a.a)(d.e), B = e => async (t, s, a) => {
 					let {
 						apiContext: i
 					} = a;
@@ -19352,7 +19365,7 @@
 						l = c[e];
 					if (!l) return void d();
 					const g = !l.isFollowed;
-					t(F({
+					t(G({
 						follow: g,
 						multiredditPath: e,
 						multiredditsModelsState: c
@@ -19365,7 +19378,7 @@
 							api_type: "json"
 						},
 						type: "json"
-					}))(i(), e, g)).ok || (t(F({
+					}))(i(), e, g)).ok || (t(G({
 						follow: !g,
 						multiredditPath: e,
 						multiredditsModelsState: c
@@ -56171,4 +56184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6b1f01716d96da504b17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c3c7d2104ec6256c3a0f.js.map
