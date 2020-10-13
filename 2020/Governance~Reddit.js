@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5831516c242a9e8ab626.js
-// Retrieved at 10/13/2020, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.66cc7f88bff0ad4da122.js
+// Retrieved at 10/13/2020, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -51787,14 +51787,16 @@
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case ge.wb: {
-						const s = t.payload.powerups,
-							{
-								allocation: n
-							} = s,
-							r = (n || []).filter(e => !!e.subredditInfo).reduce((e, t) => Object.assign(Object.assign({}, e), {
+						const s = t.payload.powerups;
+						if (s) {
+							const {
+								allocation: t
+							} = s, n = (t || []).filter(e => !!e.subredditInfo).reduce((e, t) => Object.assign(Object.assign({}, e), {
 								[QA(t.subredditInfo.id, t.allocatedAt)]: t
 							}), {});
-						return Object.assign(Object.assign({}, e), r)
+							return Object.assign(Object.assign({}, e), n)
+						}
+						return e
 					}
 					case ge.V: {
 						const {
@@ -51837,7 +51839,7 @@
 				switch (t.type) {
 					case ge.wb: {
 						const s = t.payload.powerups;
-						return jn()(Object.assign(Object.assign({}, e), s), "allocation")
+						return s ? jn()(Object.assign(Object.assign({}, e), s), "allocation") : e
 					}
 					case ge.V: {
 						const {
@@ -56169,4 +56171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5831516c242a9e8ab626.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.66cc7f88bff0ad4da122.js.map
