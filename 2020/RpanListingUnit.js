@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.87db289d170f6ff0988d.js
-// Retrieved at 10/13/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.025bec3131deb1ed421d.js
+// Retrieved at 10/13/2020, 2:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "9c4cbe8-production"
+					SENTRY_RELEASE_VERSION: "6e64649-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -109,8 +109,8 @@
 					playerName: S,
 					playerVersion: x,
 					respectDoNotTrack: _,
-					saltLength: C,
-					saltTimeToLive: w,
+					saltLength: w,
+					saltTimeToLive: C,
 					viewerUserIdLength: T
 				} = Object.assign(Object.assign({}, I), t);
 				class j extends i.Component {
@@ -256,7 +256,7 @@
 						}
 					}
 				}
-				j.displayName = R(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = c, j.DISABLE_COOKIES = h, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = u, j.LOCAL_STORAGE_SALT_KEY = p, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = S, j.PLAYER_VERSION = x, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = C, j.SALT_TIME_TO_LIVE = w, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = T;
+				j.displayName = R(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = c, j.DISABLE_COOKIES = h, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = u, j.LOCAL_STORAGE_SALT_KEY = p, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, j.PLAYER_NAME = S, j.PLAYER_VERSION = x, j.RESPECT_DO_NOT_TRACK = _, j.SALT_LENGTH = w, j.SALT_TIME_TO_LIVE = C, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = T;
 				const A = Object(i.forwardRef)((e, t) => r.a.createElement(j, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -564,9 +564,9 @@
 			})), s.d(t, "g", (function() {
 				return _
 			})), s.d(t, "h", (function() {
-				return C
-			})), s.d(t, "i", (function() {
 				return w
+			})), s.d(t, "i", (function() {
+				return C
 			}));
 			var i = s("./node_modules/react/index.js"),
 				r = s.n(i),
@@ -812,7 +812,7 @@
 					} : {}
 				}
 			}));
-			var C = Object(a.b)(() => Object(n.c)({
+			var w = Object(a.b)(() => Object(n.c)({
 				subredditOrProfile: (e, t) => Object(v.M)(e, {
 					identifier: t
 				})
@@ -827,7 +827,7 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var w = Object(a.b)(() => Object(n.c)({
+			var C = Object(a.b)(() => Object(n.c)({
 				subreddit: (e, t) => {
 					let {
 						subredditId: s
@@ -865,49 +865,50 @@
 				o = s("./src/higherOrderComponents/withMux/index.tsx"),
 				d = s("./src/lib/classNames/index.ts"),
 				c = s("./src/lib/intersectionObserver/index.ts"),
-				l = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
-				h = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/uuid/v4.js")),
-				u = s.n(h);
-			const m = new WeakMap,
-				p = new WeakMap,
-				b = new WeakMap;
-			class v {
+				l = s("./src/lib/onFocusAndVisibilityChange/index.ts");
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			const h = new WeakMap,
+				u = new WeakMap,
+				m = new WeakMap;
+			class p {
 				get laps() {
-					return m.get(this).slice(1)
+					return h.get(this).slice(1)
 				}
 				get paused() {
-					return !p.has(this)
+					return !u.has(this)
 				}
 				get time() {
 					const e = Date.now(),
-						t = b.get(this);
-					return this.paused ? t : t + (e - p.get(this))
+						t = m.get(this);
+					return this.paused ? t : t + (e - u.get(this))
 				}
 				constructor() {
 					this.reset()
 				}
 				start() {
-					this.paused && p.set(this, Date.now())
+					this.paused && u.set(this, Date.now())
 				}
 				pause() {
-					this.paused || (b.set(this, this.time), p.delete(this))
+					this.paused || (m.set(this, this.time), u.delete(this))
 				}
 				reset() {
-					m.set(this, [
+					h.set(this, [
 						[0, 0]
-					]), b.set(this, 0), p.delete(this)
+					]), m.set(this, 0), u.delete(this)
 				}
 				lap() {
 					const {
 						time: e
-					} = this, t = m.get(this), s = [e - t[t.length - 1][1], e];
-					return m.set(this, [...t, s]), s
+					} = this, t = h.get(this), s = [e - t[t.length - 1][1], e];
+					return h.set(this, [...t, s]), s
 				}
 			}
 
-			function f(e) {
+			function b(e) {
 				return Math.round(1e3 * e)
 			}
+			var v = s("./node_modules/uuid/v4.js"),
+				f = s.n(v);
 			const g = 1e4;
 
 			function S(e, t) {
@@ -962,12 +963,11 @@
 						}) : (this.watchTimer.lap(), this.emitHeartbeat(), this.next())
 					};
 					const {
-						id: t,
-						meta: s,
-						onError: i,
-						onHeartbeat: r
+						meta: t,
+						onError: s,
+						onHeartbeat: i
 					} = e;
-					this.delayIterator = null, this.id = t, this.meta = s, this.onError = i, this.onHeartbeat = r, this.sessionTimer = new v, this.startedAt = 0, this.watchTimer = new v
+					this.delayIterator = null, this.id = f()(), this.meta = t, this.onError = s, this.onHeartbeat = i, this.sessionTimer = new p, this.startedAt = 0, this.watchTimer = new p
 				}
 				get isPaused() {
 					return !!this.timeout
@@ -985,8 +985,8 @@
 					}
 				}
 				initDelayIterator() {
-					const e = [f(5), f(15), f(30), f(45), f(60)],
-						t = f(60);
+					const e = [b(5), b(15), b(30), b(45), b(60)],
+						t = b(60);
 					this.delayIterator = function*(e, t) {
 						const s = function(e) {
 							let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
@@ -1030,7 +1030,7 @@
 					this.watchTimer.pause()
 				}
 				destroy() {
-					this.clearTimeout(), delete this.meta, delete this.onError, delete this.onHeartbeat
+					this.pauseHeartbeats(), delete this.meta, delete this.onError, delete this.onHeartbeat
 				}
 				clearTimeout() {
 					this.timeout && (clearTimeout(this.timeout), delete this.timeout)
@@ -1059,31 +1059,36 @@
 							} = e;
 							if (!this.video) return;
 							const i = R.get(this);
-							if (!i || i.id !== s.id) return;
-							const r = Object.assign(Object.assign({}, s), this.videoStats);
-							this.onHeartbeat({
+							i && i.id === s.id && this.onHeartbeat({
 								meta: t,
-								stats: r
+								stats: this.stats
 							})
 						}, "function" != typeof t.onHeartbeat) throw new Error("Invalid video session onHeartbeat callback.");
-					this.idleTimer = new v, this.onHeartbeat = t.onHeartbeat, this.attachVideo(e)
+					this.idleTimer = new p, this.onHeartbeat = t.onHeartbeat, this.attachVideo(e)
 				}
 				get idle() {
 					return this.idleTimer.time >= x.IDLE_THRESHOLD
 				}
+				get sessionStats() {
+					const e = R.get(this);
+					return e && e.stats
+				}
 				get videoStats() {
-					if (!this.video) return {};
+					if (!this.video) return;
 					const {
 						currentTime: e,
 						duration: t,
 						muted: s,
 						volume: i
 					} = this.video;
-					return isNaN(t) ? {} : {
-						playheadOffsetMs: f(t - e),
-						timestampMs: f(e),
-						volume: s ? 0 : i
+					return isNaN(t) ? void 0 : {
+						playheadOffsetMs: b(t - e),
+						timestampMs: b(e),
+						volume: s ? 0 : Math.round(100 * i)
 					}
+				}
+				get stats() {
+					return Object.assign(Object.assign({}, this.sessionStats), this.videoStats)
 				}
 				attachVideo(e) {
 					if (!e) throw new Error("Invalid video element.");
@@ -1097,7 +1102,6 @@
 				}
 				createSession(e) {
 					const t = {
-						id: u()(),
 						meta: e,
 						onError: this.handleError,
 						onHeartbeat: this.handleHeartbeat
@@ -1125,11 +1129,11 @@
 					this.destroySession(), this.detachVideo(), delete this.onHeartbeat
 				}
 			}
-			x.IDLE_THRESHOLD = f(300);
+			x.IDLE_THRESHOLD = b(300);
 			var I = x,
 				_ = s("./src/reddit/actions/preferences.ts"),
-				C = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				w = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
+				w = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				C = s("./src/reddit/actions/publicAccessNetwork/rpanWorker.ts"),
 				T = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
 				j = s("./src/reddit/constants/chat.ts"),
 				A = s("./src/reddit/constants/postLayout.ts"),
@@ -1184,7 +1188,7 @@
 						r = "".concat(e).concat(t)
 					} else {
 						const e = s.replace(/^r\//, "");
-						r = e === C.R ? Object(M.e)() : Object(M.g)(e)
+						r = e === w.R ? Object(M.e)() : Object(M.g)(e)
 					}
 					return r
 				},
@@ -1201,9 +1205,9 @@
 			}), (e, t) => ({
 				onHideRpanUnit: () => e(Object(_.D)(t.listingName)),
 				openOverlay: t => e(Object(N.a)(t)),
-				subscribeConfig: () => e(w.a.subscribeConfig(t.listingName)),
-				subscribeStats: t => e(w.a.subscribeStats(t)),
-				subscribeStreams: () => e(w.a.subscribeStreams(t.listingName, {
+				subscribeConfig: () => e(C.a.subscribeConfig(t.listingName)),
+				subscribeStats: t => e(C.a.subscribeStats(t)),
+				subscribeStreams: () => e(C.a.subscribeStreams(t.listingName, {
 					pageSize: 1
 				}))
 			})), ce = () => r.a.createElement("h3", {
@@ -1271,7 +1275,7 @@
 							streamById: r
 						} = this.props, a = i && i.post.id === t.id ? i : r(t.id);
 						if (!a) return;
-						const n = !s.sessionDurationMs ? D.u : D.r,
+						const n = !s.sessionDurationMs ? D.w : D.t,
 							o = {
 								chatState: j.f.None,
 								playerType: D.a.DU
@@ -1725,4 +1729,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.87db289d170f6ff0988d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.025bec3131deb1ed421d.js.map

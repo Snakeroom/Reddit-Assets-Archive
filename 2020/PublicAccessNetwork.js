@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3f591373f3dd3c798f93.js
-// Retrieved at 10/13/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8f4759318501825d63d4.js
+// Retrieved at 10/13/2020, 2:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "9c4cbe8-production"
+					SENTRY_RELEASE_VERSION: "6e64649-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -5184,7 +5184,7 @@
 						} = this.props;
 						!s && t && this.isCurrentStreamWatchable() && a(t.post.id, e)
 					}, M.p), this.onVideoPlayerPositionUpdate = e => {
-						this.state.videoCurrentTime !== e && (this.props.sendEvent(Object(Ae.p)(this.props.currentStream, Object.assign(Object.assign({}, this.getPlaybackStats()), {
+						this.state.videoCurrentTime !== e && (this.props.sendEvent(Object(Ae.r)(this.props.currentStream, Object.assign(Object.assign({}, this.getPlaybackStats()), {
 							scrubbingStartMs: this.convertToMs(this.state.videoCurrentTime),
 							scrubbingEndMs: this.convertToMs(e)
 						}))), this.setState({
@@ -5194,7 +5194,7 @@
 						const {
 							nextStream: e
 						} = this.props;
-						e && this.goToStream(e)
+						e && (this.props.sendEvent(Object(Ae.h)(e, this.getPlaybackStats())), this.goToStream(e))
 					}, M.q, {
 						leading: !0,
 						trailing: !1
@@ -5202,7 +5202,7 @@
 						const {
 							previousStream: e
 						} = this.props;
-						e && this.goToStream(e)
+						e && (this.props.sendEvent(Object(Ae.i)(e, this.getPlaybackStats())), this.goToStream(e))
 					}, M.q, {
 						leading: !0,
 						trailing: !1
@@ -5225,7 +5225,7 @@
 					}, this.onEndBroadcast = () => {
 						this.props.toggleRemovalReasonModal()
 					}, this.onShareVideo = e => {
-						this.props.currentStream && this.props.sendEvent(Object(Ae.k)(this.props.currentStream, this.getPlaybackStats(), null == e ? void 0 : e.referralId)), this.cancelSwitchingOnStreamEnded()
+						this.props.currentStream && this.props.sendEvent(Object(Ae.m)(this.props.currentStream, this.getPlaybackStats(), null == e ? void 0 : e.referralId)), this.cancelSwitchingOnStreamEnded()
 					}, this.onToggleMenu = () => {
 						this.cancelSwitchingOnStreamEnded()
 					}, this.getSessionDurationTimer = e => "session-duration-".concat(e), this.getWatchDurationTimer = e => "watch-duration-".concat(e), this.setVideoMute = e => {
@@ -5234,10 +5234,10 @@
 						})) : this.props.setMuteSettings(e);
 						const t = this.hlsVideoApi;
 						if (!t) return;
-						const s = e ? Ae.o : Ae.v;
+						const s = e ? Ae.q : Ae.x;
 						e || t.setVolume(this.props.volume), this.props.sendEvent(s(this.props.currentStream, this.getPlaybackStats()))
 					}, this.goToSubreddit = e => {
-						this.props.sendEvent(Object(Ae.m)(e, this.props.currentStream)), this.props.onNavigation(e.path)
+						this.props.sendEvent(Object(Ae.o)(e, this.props.currentStream)), this.props.onNavigation(e.path)
 					}, this.isCurrentStreamWatchable = () => this.props.playbackState === Ke.a.LIVE || this.props.playbackState === Ke.a.VOD, this.state = {
 						isUnavailableVideoJustFinished: !1,
 						isVodStreamJustFinished: !1,
@@ -5483,7 +5483,7 @@
 					})
 				}
 				onSendHeartbeat() {
-					this.props.sendEvent(Object(Ae.r)(this.props.currentStream, this.getPlaybackStats())), this.setState({
+					this.props.sendEvent(Object(Ae.t)(this.props.currentStream, this.getPlaybackStats())), this.setState({
 						heartbeatDurationOffset: this.getWatchDuration()
 					})
 				}
@@ -5500,7 +5500,7 @@
 						sessionDuration: 0,
 						id: S()()
 					}, () => {
-						this.props.currentStream && (this.props.sendEvent(Object(Ae.u)(this.props.currentStream, this.getPlaybackStats())), this.startTimers())
+						this.props.currentStream && (this.props.sendEvent(Object(Ae.w)(this.props.currentStream, this.getPlaybackStats())), this.startTimers())
 					})
 				}
 				onVideoPlayerResourceRemoved() {
@@ -5511,16 +5511,16 @@
 					e && this.isCurrentStreamWatchable() && t(e.post.id)
 				}
 				onChatClick() {
-					this.props.currentStream && this.props.sendEvent(Object(Ae.h)(this.props.currentStream, this.getPlaybackStats()))
+					this.props.currentStream && this.props.sendEvent(Object(Ae.j)(this.props.currentStream, this.getPlaybackStats()))
 				}
 				handleFocusMessageInput() {
 					z.G() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
-					this.props.currentStream && this.props.sendEvent(Object(Ae.l)(this.props.currentStream, this.getPlaybackStats()))
+					this.props.currentStream && this.props.sendEvent(Object(Ae.n)(this.props.currentStream, this.getPlaybackStats()))
 				}
 				onDownvote() {
-					this.props.currentStream && this.props.sendEvent(Object(Ae.i)(this.props.currentStream, this.getPlaybackStats()))
+					this.props.currentStream && this.props.sendEvent(Object(Ae.k)(this.props.currentStream, this.getPlaybackStats()))
 				}
 				onEnded() {
 					const {
@@ -5535,14 +5535,14 @@
 						}), t) return n(!0), void this.setState(Object.assign(Object.assign({}, this.state), {
 						isLoading: !!e
 					}));
-					e && a(Object(Ae.s)(e, this.getPlaybackStats())), s !== Ke.a.VOD || this.state.isVodStreamJustFinished || this.setState({
+					e && a(Object(Ae.u)(e, this.getPlaybackStats())), s !== Ke.a.VOD || this.state.isVodStreamJustFinished || this.setState({
 						isVodStreamJustFinished: !0
 					}), this.isCurrentStreamWatchable() || this.state.isUnavailableVideoJustFinished || this.setState({
 						isUnavailableVideoJustFinished: !0
 					})
 				}
 				onPlayerError() {
-					this.props.sendEvent(Object(Ae.t)(this.props.currentStream, this.getPlaybackStats())), this.setState(Object.assign(Object.assign({}, this.state), {
+					this.props.sendEvent(Object(Ae.v)(this.props.currentStream, this.getPlaybackStats())), this.setState(Object.assign(Object.assign({}, this.state), {
 						isError: !0
 					}))
 				}
@@ -5555,7 +5555,7 @@
 					this.props.sendEvent(Object(Ae.b)(this.props.currentStream, this.getPlaybackStats())), this.props.isOverlay && this.props.closeLocation()
 				}
 				onReport() {
-					this.props.currentStream && (this.props.onReportModalRequested(this.props.currentStream.post.id, this.props.isOverlay), this.props.sendEvent(Object(Ae.j)(this.props.currentStream)))
+					this.props.currentStream && (this.props.onReportModalRequested(this.props.currentStream.post.id, this.props.isOverlay), this.props.sendEvent(Object(Ae.l)(this.props.currentStream)))
 				}
 				hideStreamEndedPrompt() {
 					this.state.showStreamEndedPrompt && this.setState({
@@ -5681,7 +5681,7 @@
 					}), t(this.getStreamLocation(e))
 				}
 				handleOldStream() {
-					this.state.id && (this.props.sendEvent(Object(Ae.r)(this.props.currentStream, this.getPlaybackStats())), this.endTimers())
+					this.state.id && (this.props.sendEvent(Object(Ae.t)(this.props.currentStream, this.getPlaybackStats())), this.endTimers())
 				}
 				async handleNewStream() {
 					const {
@@ -5698,10 +5698,10 @@
 						id: "",
 						sessionDuration: 0,
 						startTime: 0
-					}), a(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), s(e.post.id), e.post.authorInfo && e.post.authorInfo.name && t(e.post.authorInfo.name), this.syncLocationWithCurrentStreamId(), this.props.sendEvent(Object(Ae.w)(e)), this.setConsumePostTimeout(), this.showOverlayAfterStreamSwitching())
+					}), a(e.post.id), this.unsubscribeStats && this.unsubscribeStats(), this.unsubscribeHeartbeat && this.unsubscribeHeartbeat(), this.startJobIfLiveOrPaused(), s(e.post.id), e.post.authorInfo && e.post.authorInfo.name && t(e.post.authorInfo.name), this.syncLocationWithCurrentStreamId(), this.props.sendEvent(Object(Ae.y)(e)), this.setConsumePostTimeout(), this.showOverlayAfterStreamSwitching())
 				}
 				setConsumePostTimeout() {
-					window.clearTimeout(this.consumePostTimeout), this.consumePostTimeout = window.setTimeout(() => this.props.sendEvent(Object(Ae.n)(this.props.currentStream)), v.a.telemetry.postConsumedThreshold)
+					window.clearTimeout(this.consumePostTimeout), this.consumePostTimeout = window.setTimeout(() => this.props.sendEvent(Object(Ae.p)(this.props.currentStream)), v.a.telemetry.postConsumedThreshold)
 				}
 				showOverlayAfterStreamSwitching() {
 					window.clearTimeout(this.overlayVisibilityTimeout), this.overlayVisibilityTimeout = window.setTimeout(() => this.setState({
@@ -5861,4 +5861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3f591373f3dd3c798f93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8f4759318501825d63d4.js.map

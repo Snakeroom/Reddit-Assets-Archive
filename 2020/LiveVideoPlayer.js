@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.ec68415969ef822a2314.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.374671537e16c7fd8ced.js
+// Retrieved at 10/13/2020, 2:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -88,7 +88,7 @@
 			class A extends r.Component {
 				constructor(e) {
 					super(e), this.sleepTimeout = null, this.onSendHeartbeat = () => {
-						this.props.currentStream && this.props.sendEvent(Object(f.r)(this.props.currentStream, this.getPlaybackStats())), this.setState({
+						this.props.currentStream && this.props.sendEvent(Object(f.t)(this.props.currentStream, this.getPlaybackStats())), this.setState({
 							heartbeatDurationOffset: this.getWatchDuration()
 						})
 					}, this.getSessionDurationTimer = e => "session-duration-".concat(e), this.getWatchDurationTimer = e => "watch-duration-".concat(e), this.handleHlsRefChange = e => {
@@ -438,7 +438,7 @@
 						sessionTimerId: this.getSessionDurationTimer(e),
 						id: e
 					}, () => {
-						this.props.currentStream && (this.props.sendEvent(Object(f.u)(this.props.currentStream, this.getPlaybackStats())), this.startTimers())
+						this.props.currentStream && (this.props.sendEvent(Object(f.w)(this.props.currentStream, this.getPlaybackStats())), this.startTimers())
 					})
 				}
 				subscribeHeartbeat() {
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.ec68415969ef822a2314.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.374671537e16c7fd8ced.js.map

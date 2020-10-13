@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.fc250973259b6075602e.js
-// Retrieved at 10/13/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.979e704096a6fbbaf1b6.js
+// Retrieved at 10/13/2020, 2:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -537,18 +537,18 @@
 						postAwardCount: s.awardCountsById ? Object.values(s.awardCountsById).reduce((e, t) => e + t, 0) : s.allAwardings ? s.allAwardings.reduce((e, t) => e + t.count, 0) : 0
 					}
 				})),
-				q = e => ({
+				G = e => ({
 					initialCommentAwardIds: e.isFullyLoaded ? [...e.commentAwardIds] : [],
 					initialPostAwardCount: e.isFullyLoaded ? e.postAwardCount : 0,
 					prevIsFullyLoaded: e.isFullyLoaded,
 					prevPostId: e.postId
 				});
-			class G extends c.Component {
+			class W extends c.Component {
 				constructor(e) {
-					super(e), this.state = q(e)
+					super(e), this.state = G(e)
 				}
 				static getDerivedStateFromProps(e, t) {
-					return t.prevPostId !== e.postId || !t.prevIsFullyLoaded && e.isFullyLoaded ? q(e) : null
+					return t.prevPostId !== e.postId || !t.prevIsFullyLoaded && e.isFullyLoaded ? G(e) : null
 				}
 				render() {
 					const {
@@ -577,12 +577,12 @@
 					})
 				}
 			}
-			var W = K(G),
+			var q = K(W),
 				H = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
 				J = s.n(H);
 			const X = {},
-				Y = 1e3,
-				z = "chat_submission_from_rte",
+				z = 1e3,
+				Y = "chat_submission_from_rte",
 				Z = h.a.form("Form", J.a),
 				Q = h.a.wrapped(C.d, "ChatButton", J.a),
 				$ = h.a.div("CloseIconWrap", J.a),
@@ -653,7 +653,7 @@
 						})), this.props.isLivestreaming && t && this.passChangeToLivestreaming()
 					}, this.handleFocus = () => {
 						this.props.isLivestreaming && this.passChangeToLivestreaming(), this.props.onFocusMessageInput && this.props.onFocusMessageInput()
-					}, this.passChangeToLivestreaming = i()(() => this.props.onLivestreamingChatMessageEdit(), Y, {
+					}, this.passChangeToLivestreaming = i()(() => this.props.onLivestreamingChatMessageEdit(), z, {
 						leading: !1,
 						trailing: !0
 					}), this.onClickGiveAward = async e => {
@@ -685,7 +685,7 @@
 							};
 							this.cleanInputForm(), this.props.dispatchSubmit(e, N.h.RICH_TEXT, this.props.replyComment)
 						}
-						this.props.isLivestreaming && this.props.sendEvent(Object(w.q)(this.props.postId))
+						this.props.isLivestreaming && this.props.sendEvent(Object(w.s)(this.props.postId))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -765,7 +765,7 @@
 						focusableContentRTEClassName: Object(m.a)({
 							[J.a.LivestreamingFocusableContent]: s && !t
 						}),
-						dataTestId: z,
+						dataTestId: Y,
 						editorType: y.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: s ? 20 : void 0,
@@ -807,7 +807,7 @@
 							hk: "1nXRWY"
 						}),
 						onClick: this.onClickGiveAward
-					}, d.a.createElement(W, {
+					}, d.a.createElement(q, {
 						postId: c
 					}))), this.state.showError && Object(O.c)(e))
 				}
@@ -1113,39 +1113,39 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return n
-			})), s.d(t, "x", (function() {
+			})), s.d(t, "z", (function() {
 				return l
 			})), s.d(t, "f", (function() {
 				return u
 			})), s.d(t, "g", (function() {
 				return m
-			})), s.d(t, "t", (function() {
+			})), s.d(t, "v", (function() {
 				return h
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "t", (function() {
 				return p
-			})), s.d(t, "u", (function() {
-				return b
-			})), s.d(t, "s", (function() {
-				return _
-			})), s.d(t, "k", (function() {
-				return g
-			})), s.d(t, "l", (function() {
-				return f
-			})), s.d(t, "i", (function() {
-				return j
-			})), s.d(t, "j", (function() {
-				return x
-			})), s.d(t, "h", (function() {
-				return v
-			})), s.d(t, "q", (function() {
-				return C
-			})), s.d(t, "m", (function() {
-				return O
-			})), s.d(t, "p", (function() {
-				return E
 			})), s.d(t, "w", (function() {
-				return I
+				return b
+			})), s.d(t, "u", (function() {
+				return _
+			})), s.d(t, "m", (function() {
+				return g
 			})), s.d(t, "n", (function() {
+				return f
+			})), s.d(t, "k", (function() {
+				return j
+			})), s.d(t, "l", (function() {
+				return x
+			})), s.d(t, "j", (function() {
+				return v
+			})), s.d(t, "s", (function() {
+				return C
+			})), s.d(t, "o", (function() {
+				return O
+			})), s.d(t, "r", (function() {
+				return E
+			})), s.d(t, "y", (function() {
+				return I
+			})), s.d(t, "p", (function() {
 				return y
 			})), s.d(t, "b", (function() {
 				return w
@@ -1153,12 +1153,16 @@
 				return k
 			})), s.d(t, "d", (function() {
 				return A
-			})), s.d(t, "o", (function() {
+			})), s.d(t, "q", (function() {
 				return N
-			})), s.d(t, "v", (function() {
+			})), s.d(t, "x", (function() {
 				return S
 			})), s.d(t, "e", (function() {
 				return L
+			})), s.d(t, "h", (function() {
+				return T
+			})), s.d(t, "i", (function() {
+				return F
 			}));
 			var n, a = s("./src/reddit/constants/chat.ts"),
 				r = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -1226,7 +1230,7 @@
 				m = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_du",
 					action: "click",
-					noun: "rpan"
+					noun: "enlarge"
 				}, i(s, e)), {
 					actionInfo: o.actionInfo(s, {
 						position: t || 0
@@ -1365,7 +1369,19 @@
 					action: "click",
 					noun: "replay_video",
 					playback: c(s, e, t)
-				}, i(s, e))
+				}, i(s, e)),
+				T = (e, t) => s => Object.assign(Object.assign({
+					source: "stream_player",
+					action: "swipe",
+					noun: "next",
+					playback: c(s, e, t)
+				}, i(s, e)), d(s)),
+				F = (e, t) => s => Object.assign(Object.assign({
+					source: "stream_player",
+					action: "swipe",
+					noun: "previous",
+					playback: c(s, e, t)
+				}, i(s, e)), d(s))
 		},
 		"./src/reddit/icons/fonts/Gift/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1438,11 +1454,11 @@
 			})), s.d(t, "a", (function() {
 				return K
 			})), s.d(t, "j", (function() {
-				return q
-			})), s.d(t, "b", (function() {
 				return G
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "b", (function() {
 				return W
+			})), s.d(t, "e", (function() {
+				return q
 			})), s.d(t, "g", (function() {
 				return H
 			}));
@@ -1640,15 +1656,15 @@
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
 			}(K || (K = {}));
-			const q = Object(n.a)(L, O, p.b, (e, t, s) => {
+			const G = Object(n.a)(L, O, p.b, (e, t, s) => {
 					if (s) return K.INTRO;
 					const n = e && t[e];
 					if (!n) return K.UNAVAILABLE;
 					const a = n.stream.state;
 					return a === i.a.IS_LIVE || a === i.a.DISCONNECTED ? K.LIVE : a === i.a.ENDED && n.stream.vod_accessible ? K.VOD : K.UNAVAILABLE
 				}),
-				G = Object(n.a)(R, q, p.b, l.b, l.o, (e, t, s, n, a) => s ? n : e ? t === K.LIVE || t === K.VOD ? e.stream.hls_url : a : void 0),
-				W = Object(n.a)(R, q, V, (e, t, s) => e ? t === K.LIVE ? e.broadcast_time : t === K.VOD && s < e.broadcast_time ? s : 0 : 0),
+				W = Object(n.a)(R, G, p.b, l.b, l.o, (e, t, s, n, a) => s ? n : e ? t === K.LIVE || t === K.VOD ? e.stream.hls_url : a : void 0),
+				q = Object(n.a)(R, G, V, (e, t, s) => e ? t === K.LIVE ? e.broadcast_time : t === K.VOD && s < e.broadcast_time ? s : 0 : 0),
 				H = (e, t) => {
 					const s = b(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -1673,4 +1689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.fc250973259b6075602e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.979e704096a6fbbaf1b6.js.map

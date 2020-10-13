@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.96df5af2cd558130bd0f.js
-// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.9998510a6d2a9f24efea.js
+// Retrieved at 10/13/2020, 2:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -329,39 +329,39 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return r
-			})), s.d(t, "x", (function() {
+			})), s.d(t, "z", (function() {
 				return u
 			})), s.d(t, "f", (function() {
 				return l
 			})), s.d(t, "g", (function() {
 				return h
-			})), s.d(t, "t", (function() {
+			})), s.d(t, "v", (function() {
 				return m
-			})), s.d(t, "r", (function() {
+			})), s.d(t, "t", (function() {
 				return b
-			})), s.d(t, "u", (function() {
+			})), s.d(t, "w", (function() {
 				return p
-			})), s.d(t, "s", (function() {
+			})), s.d(t, "u", (function() {
 				return v
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "m", (function() {
 				return f
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "n", (function() {
 				return O
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "k", (function() {
 				return g
+			})), s.d(t, "l", (function() {
+				return y
 			})), s.d(t, "j", (function() {
 				return E
-			})), s.d(t, "h", (function() {
-				return y
-			})), s.d(t, "q", (function() {
+			})), s.d(t, "s", (function() {
 				return j
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "o", (function() {
 				return w
-			})), s.d(t, "p", (function() {
+			})), s.d(t, "r", (function() {
 				return _
-			})), s.d(t, "w", (function() {
+			})), s.d(t, "y", (function() {
 				return R
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "p", (function() {
 				return S
 			})), s.d(t, "b", (function() {
 				return I
@@ -369,12 +369,16 @@
 				return L
 			})), s.d(t, "d", (function() {
 				return A
-			})), s.d(t, "o", (function() {
+			})), s.d(t, "q", (function() {
 				return k
-			})), s.d(t, "v", (function() {
+			})), s.d(t, "x", (function() {
 				return N
 			})), s.d(t, "e", (function() {
 				return D
+			})), s.d(t, "h", (function() {
+				return T
+			})), s.d(t, "i", (function() {
+				return M
 			}));
 			var r, i = s("./src/reddit/constants/chat.ts"),
 				a = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -442,7 +446,7 @@
 				h = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_du",
 					action: "click",
-					noun: "rpan"
+					noun: "enlarge"
 				}, o(s, e)), {
 					actionInfo: n.actionInfo(s, {
 						position: t || 0
@@ -494,13 +498,13 @@
 					noun: "downvote",
 					playback: c(s, e, t)
 				}, d(s)), o(s, e)),
-				E = (e, t) => s => Object.assign(Object.assign({
+				y = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "report",
 					playback: c(s, e, t)
 				}, d(s)), o(s, e)),
-				y = (e, t) => s => Object.assign({
+				E = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "chat",
@@ -581,7 +585,19 @@
 					action: "click",
 					noun: "replay_video",
 					playback: c(s, e, t)
-				}, o(s, e))
+				}, o(s, e)),
+				T = (e, t) => s => Object.assign(Object.assign({
+					source: "stream_player",
+					action: "swipe",
+					noun: "next",
+					playback: c(s, e, t)
+				}, o(s, e)), d(s)),
+				M = (e, t) => s => Object.assign(Object.assign({
+					source: "stream_player",
+					action: "swipe",
+					noun: "previous",
+					playback: c(s, e, t)
+				}, o(s, e)), d(s))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
@@ -632,10 +648,10 @@
 				f = e => e.publicAccessNetwork.history,
 				O = e => e.publicAccessNetwork.history.cursor,
 				g = e => e.publicAccessNetwork.history.visitOrder,
-				E = e => e.publicAccessNetwork.hlsStreams,
-				y = Object(r.a)(E, e => e.ended),
-				j = Object(r.a)(E, e => e.removed),
-				w = Object(r.a)(p, y, j, (e, t, s) => {
+				y = e => e.publicAccessNetwork.hlsStreams,
+				E = Object(r.a)(y, e => e.ended),
+				j = Object(r.a)(y, e => e.removed),
+				w = Object(r.a)(p, E, j, (e, t, s) => {
 					const r = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
@@ -841,4 +857,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.96df5af2cd558130bd0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.9998510a6d2a9f24efea.js.map

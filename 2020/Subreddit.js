@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.8803b85452a9d2885416.js
-// Retrieved at 10/13/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.06fd70678b4bb13dbb34.js
+// Retrieved at 10/13/2020, 2:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -3216,7 +3216,7 @@
 							child: {
 								id: t,
 								estHeight: k(e.layout),
-								trackOnEnteredViewport: () => e.sendEvent(Object(C.x)()),
+								trackOnEnteredViewport: () => e.sendEvent(Object(C.z)()),
 								render: t => {
 									let {
 										className: n
@@ -7744,39 +7744,39 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "z", (function() {
 				return l
 			})), n.d(t, "f", (function() {
 				return u
 			})), n.d(t, "g", (function() {
 				return m
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "v", (function() {
 				return p
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "t", (function() {
 				return b
-			})), n.d(t, "u", (function() {
-				return h
-			})), n.d(t, "s", (function() {
-				return g
-			})), n.d(t, "k", (function() {
-				return x
-			})), n.d(t, "l", (function() {
-				return f
-			})), n.d(t, "i", (function() {
-				return y
-			})), n.d(t, "j", (function() {
-				return v
-			})), n.d(t, "h", (function() {
-				return E
-			})), n.d(t, "q", (function() {
-				return O
-			})), n.d(t, "m", (function() {
-				return C
-			})), n.d(t, "p", (function() {
-				return k
 			})), n.d(t, "w", (function() {
-				return j
+				return h
+			})), n.d(t, "u", (function() {
+				return g
+			})), n.d(t, "m", (function() {
+				return x
 			})), n.d(t, "n", (function() {
+				return f
+			})), n.d(t, "k", (function() {
+				return y
+			})), n.d(t, "l", (function() {
+				return v
+			})), n.d(t, "j", (function() {
+				return E
+			})), n.d(t, "s", (function() {
+				return O
+			})), n.d(t, "o", (function() {
+				return C
+			})), n.d(t, "r", (function() {
+				return k
+			})), n.d(t, "y", (function() {
+				return j
+			})), n.d(t, "p", (function() {
 				return S
 			})), n.d(t, "b", (function() {
 				return A
@@ -7784,12 +7784,16 @@
 				return w
 			})), n.d(t, "d", (function() {
 				return N
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "q", (function() {
 				return _
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "x", (function() {
 				return P
 			})), n.d(t, "e", (function() {
 				return I
+			})), n.d(t, "h", (function() {
+				return T
+			})), n.d(t, "i", (function() {
+				return B
 			}));
 			var s, r = n("./src/reddit/constants/chat.ts"),
 				a = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -7857,7 +7861,7 @@
 				m = (e, t) => n => Object.assign(Object.assign({
 					source: "stream_du",
 					action: "click",
-					noun: "rpan"
+					noun: "enlarge"
 				}, o(n, e)), {
 					actionInfo: i.actionInfo(n, {
 						position: t || 0
@@ -7996,7 +8000,19 @@
 					action: "click",
 					noun: "replay_video",
 					playback: c(n, e, t)
-				}, o(n, e))
+				}, o(n, e)),
+				T = (e, t) => n => Object.assign(Object.assign({
+					source: "stream_player",
+					action: "swipe",
+					noun: "next",
+					playback: c(n, e, t)
+				}, o(n, e)), d(n)),
+				B = (e, t) => n => Object.assign(Object.assign({
+					source: "stream_player",
+					action: "swipe",
+					noun: "previous",
+					playback: c(n, e, t)
+				}, o(n, e)), d(n))
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, n) {
 			"use strict";
@@ -10117,4 +10133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8803b85452a9d2885416.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.06fd70678b4bb13dbb34.js.map
