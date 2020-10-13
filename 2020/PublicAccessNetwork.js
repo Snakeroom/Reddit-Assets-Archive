@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.84063d0b7411ed15262b.js
-// Retrieved at 10/13/2020, 12:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3f591373f3dd3c798f93.js
+// Retrieved at 10/13/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork", "removalReasonActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "b22aef2-production"
+					SENTRY_RELEASE_VERSION: "9c4cbe8-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -1114,7 +1114,7 @@
 				})) : n.a.createElement("div", {
 					className: s,
 					style: b
-				}, t && t.accountIcon ? n.a.createElement(p, {
+				}, t && t.accountIcon && !o ? n.a.createElement(p, {
 					src: t.accountIcon,
 					alt: "user icon"
 				}) : n.a.createElement(l.a, {
@@ -5861,4 +5861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.84063d0b7411ed15262b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3f591373f3dd3c798f93.js.map

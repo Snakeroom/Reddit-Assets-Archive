@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.f83fe3409bfd4491fb19.js
-// Retrieved at 10/8/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.f04f1f66702aa4ba230d.js
+// Retrieved at 10/13/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -811,7 +811,7 @@
 				})) : n.a.createElement("div", {
 					className: o,
 					style: C
-				}, t && t.accountIcon ? n.a.createElement(u, {
+				}, t && t.accountIcon && !r ? n.a.createElement(u, {
 					src: t.accountIcon,
 					alt: "user icon"
 				}) : n.a.createElement(l.a, {
@@ -2786,4 +2786,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.f83fe3409bfd4491fb19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.f04f1f66702aa4ba230d.js.map
