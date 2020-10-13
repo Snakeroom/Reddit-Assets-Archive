@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.8ff316e19468a7e0d6e0.js
-// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.e142820f0ec08699d650.js
+// Retrieved at 10/13/2020, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -2557,18 +2557,20 @@
 		"./src/reddit/components/LayerEmbed/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return h
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
-			var s = n("./src/higherOrderComponents/asModal/index.tsx"),
-				r = n("./node_modules/react/index.js"),
-				a = n.n(r),
-				i = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx"),
-				o = n("./src/reddit/components/LayerEmbed/index.m.less"),
-				c = n.n(o);
+			var s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				a = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/config.ts"),
+				o = n("./src/higherOrderComponents/asModal/index.tsx"),
+				c = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx"),
+				d = n("./src/reddit/components/LayerEmbed/index.m.less"),
+				l = n.n(d);
 
-			function d() {
-				return (d = Object.assign || function(e) {
+			function u() {
+				return (u = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -2576,7 +2578,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var l = function(e, t) {
+			var m = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -2585,86 +2587,105 @@
 				}
 				return n
 			};
-			const u = Object(s.a)(e => {
+			const p = Object(o.a)(e => {
 					let {
 						backgroundUrl: t,
 						baseUrl: n,
 						width: s,
-						height: r
-					} = e, i = n + "/static/layermaker/";
-					return t && (i += "#".concat(encodeURIComponent(t))), a.a.createElement("iframe", {
+						height: a,
+						frameRef: i
+					} = e, o = n + "/static/layermaker/";
+					return t && (o += "#".concat(encodeURIComponent(t))), r.a.createElement("iframe", {
+						ref: i,
 						style: {
 							width: s,
-							height: r
+							height: a
 						},
-						src: i
+						src: o
 					})
 				}),
-				m = e => {
+				b = e => {
 					var {
 						onClose: t
-					} = e, n = l(e, ["onClose"]);
-					const [s, o] = Object(r.useState)(!1), c = () => o(!1);
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(u, d({}, n, {
+					} = e, n = m(e, ["onClose"]);
+					const [a, i] = Object(s.useState)(!1), o = () => i(!1);
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement(p, u({}, n, {
 						withOverlay: !0,
-						onOverlayClick: () => o(!0)
-					})), s && a.a.createElement(i.a, {
+						onOverlayClick: () => i(!0)
+					})), a && r.a.createElement(c.a, {
 						titleText: "Close Layer maker",
 						bodyText: "Are you sure you want to discard all your changes?",
 						primaryButtonText: "Back to drawing",
-						onPrimaryAction: c,
+						onPrimaryAction: o,
 						secondaryButtonText: "Yes, discard",
 						onSecondaryAction: t,
-						onClose: c
+						onClose: o
 					}))
 				},
-				p = e => {
+				h = e => {
 					let {
 						baseUrl: t,
 						subredditId: n
 					} = e;
-					const s = Object(r.useRef)(null),
-						[i, o] = Object(r.useState)(!1),
-						[d, l] = Object(r.useState)(),
-						[u, p] = Object(r.useState)([594, 628]),
-						b = Object(r.useCallback)(e => {
+					const o = Object(s.useRef)(null),
+						c = Object(s.useRef)(null),
+						d = Object(a.d)(e => e.user.session),
+						u = Object(s.useCallback)(() => {
+							d && [o, c].forEach(e => {
+								var t, n;
+								null === (n = null === (t = e.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage({
+									action: "Layers.injectAuthHeaders",
+									payload: {
+										headers: {
+											Authorization: "bearer ".concat(d.accessToken)
+										},
+										expires: new Date(d.expires).getTime()
+									}
+								}, i.a.layersUrl)
+							})
+						}, [d, o, c]),
+						[m, p] = Object(s.useState)(!1),
+						[h, g] = Object(s.useState)(),
+						[x, f] = Object(s.useState)([594, 628]),
+						y = Object(s.useCallback)(e => {
 							var t, n;
-							s.current && e.data && e.data.layerEmbedHeight && (s.current.style.height = e.data.layerEmbedHeight + 8 + "px");
+							o.current && e.data && e.data.layerEmbedHeight && (o.current.style.height = e.data.layerEmbedHeight + 8 + "px");
 							const {
-								action: r,
-								payload: a
+								action: s,
+								payload: r
 							} = e.data;
-							if ("string" == typeof r && r.startsWith("layers.")) {
-								if ("layers.openLayerMaker" === r) return o(!0), void l(a.backgroundUrl);
-								if ("layers.closeLayerMaker" === r) return o(!1);
-								if ("layers.resizeLayerMaker" !== r) null === (n = null === (t = s.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e.data, "*");
+							if ("string" == typeof s && s.startsWith("layers.")) {
+								if ("layers.openLayerMaker" === s) return p(!0), void g(r.backgroundUrl);
+								if ("layers.closeLayerMaker" === s) return p(!1);
+								if ("layers.resizeLayerMaker" !== s) "layers.refreshAuth" !== s ? null === (n = null === (t = o.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e.data, "*") : u();
 								else {
 									const {
 										width: e,
 										height: t
-									} = a;
-									p([e, t])
+									} = r;
+									f([e, t])
 								}
 							}
-						}, [s, o]);
-					Object(r.useEffect)(() => (window.addEventListener("message", b), () => window.removeEventListener("message", b)), [b]);
-					const [h, g] = u, x = t + "/static/client/?platform=desktop&subreddit=".concat(n);
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement("iframe", {
+						}, [o, u, p, g, f]);
+					Object(s.useEffect)(() => (window.addEventListener("message", y), () => window.removeEventListener("message", y)), [y]), Object(s.useEffect)(u, [u]);
+					const [v, E] = x, O = t + "/static/client/?platform=desktop&subreddit=".concat(n);
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement("iframe", {
 						id: "layersEmbed",
-						ref: s,
-						className: c.a.layerCanvas,
-						src: x
-					}), i && a.a.createElement(m, {
-						backgroundUrl: d,
+						ref: o,
+						className: l.a.layerCanvas,
+						src: O
+					}), m && r.a.createElement(b, {
+						frameRef: c,
+						backgroundUrl: h,
 						baseUrl: t,
 						onClose: () => {
 							var e, t;
-							o(!1), null === (t = null === (e = s.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage({
+							p(!1), null === (t = null === (e = o.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage({
 								action: "layers.closeLayerMaker"
 							}, "*")
 						},
-						width: h,
-						height: g
+						width: v,
+						height: E
 					}))
 				}
 		},
@@ -10081,4 +10102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8ff316e19468a7e0d6e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e142820f0ec08699d650.js.map
