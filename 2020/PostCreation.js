@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a96aa34baf613de69ad2.js
-// Retrieved at 10/13/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.df788ccfe47b1be04676.js
+// Retrieved at 10/13/2020, 12:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "ec72ab6-production"
+					SENTRY_RELEASE_VERSION: "b22aef2-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -25894,9 +25894,11 @@
 							Object(f.a)(E(o, c, n, a, l)(t));
 							break
 						}
-						case s.Bb.SETTINGS:
-							e.match.params.page === s.Ob.Profile ? Object(c.j)(t) : Object(f.a)(N(n, a)(t));
-							break;
+						case s.Bb.SETTINGS: {
+							const o = e;
+							Object(f.a)(N(n, a)(t)), o.match.params.page === s.Ob.Profile && Object(c.j)(t);
+							break
+						}
 						case s.Bb.POST_CREATION:
 							break;
 						case s.Bb.POST_DRAFT: {
@@ -34150,4 +34152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a96aa34baf613de69ad2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.df788ccfe47b1be04676.js.map
