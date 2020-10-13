@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e142820f0ec08699d650.js
-// Retrieved at 10/13/2020, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8803b85452a9d2885416.js
+// Retrieved at 10/13/2020, 12:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -2557,20 +2557,21 @@
 		"./src/reddit/components/LayerEmbed/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return h
+				return g
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				i = n("./src/config.ts"),
-				o = n("./src/higherOrderComponents/asModal/index.tsx"),
-				c = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx"),
-				d = n("./src/reddit/components/LayerEmbed/index.m.less"),
-				l = n.n(d);
+			var s = n("./node_modules/query-string/index.js"),
+				r = n("./node_modules/react/index.js"),
+				a = n.n(r),
+				i = n("./node_modules/react-redux/es/index.js"),
+				o = n("./src/config.ts"),
+				c = n("./src/higherOrderComponents/asModal/index.tsx"),
+				d = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx"),
+				l = n("./src/reddit/components/LayerEmbed/index.m.less"),
+				u = n.n(l);
 
-			function u() {
-				return (u = Object.assign || function(e) {
+			function m() {
+				return (m = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -2578,7 +2579,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var m = function(e, t) {
+			var p = function(e, t) {
 				var n = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -2587,32 +2588,39 @@
 				}
 				return n
 			};
-			const p = Object(o.a)(e => {
+			const b = Object(c.a)(e => {
 					let {
 						backgroundUrl: t,
 						baseUrl: n,
-						width: s,
-						height: a,
-						frameRef: i
-					} = e, o = n + "/static/layermaker/";
-					return t && (o += "#".concat(encodeURIComponent(t))), r.a.createElement("iframe", {
-						ref: i,
+						width: r,
+						height: i,
+						frameRef: o,
+						options: c
+					} = e, d = n + "/static/layermaker/";
+					if (c) {
+						const e = Object(s.stringify)(c, {
+							skipNull: !0
+						});
+						e.length && (d += "?".concat(e))
+					}
+					return t && (d += "#".concat(encodeURIComponent(t))), a.a.createElement("iframe", {
+						ref: o,
 						style: {
-							width: s,
-							height: a
+							width: r,
+							height: i
 						},
-						src: o
+						src: d
 					})
 				}),
-				b = e => {
+				h = e => {
 					var {
 						onClose: t
-					} = e, n = m(e, ["onClose"]);
-					const [a, i] = Object(s.useState)(!1), o = () => i(!1);
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement(p, u({}, n, {
+					} = e, n = p(e, ["onClose"]);
+					const [s, i] = Object(r.useState)(!1), o = () => i(!1);
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(b, m({}, n, {
 						withOverlay: !0,
 						onOverlayClick: () => i(!0)
-					})), a && r.a.createElement(c.a, {
+					})), s && a.a.createElement(d.a, {
 						titleText: "Close Layer maker",
 						bodyText: "Are you sure you want to discard all your changes?",
 						primaryButtonText: "Back to drawing",
@@ -2622,16 +2630,16 @@
 						onClose: o
 					}))
 				},
-				h = e => {
+				g = e => {
 					let {
 						baseUrl: t,
 						subredditId: n
 					} = e;
-					const o = Object(s.useRef)(null),
-						c = Object(s.useRef)(null),
-						d = Object(a.d)(e => e.user.session),
-						u = Object(s.useCallback)(() => {
-							d && [o, c].forEach(e => {
+					const s = Object(r.useRef)(null),
+						c = Object(r.useRef)(null),
+						d = Object(i.d)(e => e.user.session),
+						l = Object(r.useCallback)(() => {
+							d && [s, c].forEach(e => {
 								var t, n;
 								null === (n = null === (t = e.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage({
 									action: "Layers.injectAuthHeaders",
@@ -2641,51 +2649,58 @@
 										},
 										expires: new Date(d.expires).getTime()
 									}
-								}, i.a.layersUrl)
+								}, o.a.layersUrl)
 							})
-						}, [d, o, c]),
-						[m, p] = Object(s.useState)(!1),
-						[h, g] = Object(s.useState)(),
-						[x, f] = Object(s.useState)([594, 628]),
-						y = Object(s.useCallback)(e => {
+						}, [d, s, c]),
+						[m, b] = Object(r.useState)(!1),
+						[g, x] = Object(r.useState)(),
+						[f, y] = Object(r.useState)({}),
+						[v, E] = Object(r.useState)([594, 628]),
+						O = Object(r.useCallback)(e => {
 							var t, n;
-							o.current && e.data && e.data.layerEmbedHeight && (o.current.style.height = e.data.layerEmbedHeight + 8 + "px");
+							s.current && e.data && e.data.layerEmbedHeight && (s.current.style.height = e.data.layerEmbedHeight + 8 + "px");
 							const {
-								action: s,
-								payload: r
+								action: r,
+								payload: a
 							} = e.data;
-							if ("string" == typeof s && s.startsWith("layers.")) {
-								if ("layers.openLayerMaker" === s) return p(!0), void g(r.backgroundUrl);
-								if ("layers.closeLayerMaker" === s) return p(!1);
-								if ("layers.resizeLayerMaker" !== s) "layers.refreshAuth" !== s ? null === (n = null === (t = o.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e.data, "*") : u();
+							if ("string" == typeof r && r.startsWith("layers.")) {
+								if ("layers.openLayerMaker" === r) {
+									const {
+										backgroundUrl: e
+									} = a, t = p(a, ["backgroundUrl"]);
+									return x(e), y(t), void b(!0)
+								}
+								if ("layers.closeLayerMaker" === r) return b(!1);
+								if ("layers.resizeLayerMaker" !== r) "layers.refreshAuth" !== r ? null === (n = null === (t = s.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e.data, "*") : l();
 								else {
 									const {
 										width: e,
 										height: t
-									} = r;
-									f([e, t])
+									} = a;
+									E([e, t])
 								}
 							}
-						}, [o, u, p, g, f]);
-					Object(s.useEffect)(() => (window.addEventListener("message", y), () => window.removeEventListener("message", y)), [y]), Object(s.useEffect)(u, [u]);
-					const [v, E] = x, O = t + "/static/client/?platform=desktop&subreddit=".concat(n);
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement("iframe", {
+						}, [s, l, b, x, E]);
+					Object(r.useEffect)(() => (window.addEventListener("message", O), () => window.removeEventListener("message", O)), [O]), Object(r.useEffect)(l, [l]);
+					const [C, k] = v, j = t + "/static/client/?platform=desktop&subreddit=".concat(n);
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement("iframe", {
 						id: "layersEmbed",
-						ref: o,
-						className: l.a.layerCanvas,
-						src: O
-					}), m && r.a.createElement(b, {
+						ref: s,
+						className: u.a.layerCanvas,
+						src: j
+					}), m && a.a.createElement(h, {
 						frameRef: c,
-						backgroundUrl: h,
+						backgroundUrl: g,
 						baseUrl: t,
 						onClose: () => {
 							var e, t;
-							p(!1), null === (t = null === (e = o.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage({
+							b(!1), null === (t = null === (e = s.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t || t.postMessage({
 								action: "layers.closeLayerMaker"
 							}, "*")
 						},
-						width: v,
-						height: E
+						width: C,
+						height: k,
+						options: f
 					}))
 				}
 		},
@@ -10102,4 +10117,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e142820f0ec08699d650.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8803b85452a9d2885416.js.map
