@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.03c431fb768a08d68978.js
-// Retrieved at 10/14/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.e938daa036fba163021c.js
+// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -14875,6 +14875,15 @@
 				return i
 			}
 		},
+		"./node_modules/lodash/_baseSome.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseEach.js");
+			e.exports = function(e, t) {
+				var n;
+				return r(e, (function(e, r, o) {
+					return !(n = t(e, r, o))
+				})), !!n
+			}
+		},
 		"./node_modules/lodash/_baseSortBy.js": function(e, t) {
 			e.exports = function(e, t) {
 				var n = e.length;
@@ -16729,6 +16738,17 @@
 				return e + (n ? "_" : "") + t.toLowerCase()
 			}));
 			e.exports = r
+		},
+		"./node_modules/lodash/some.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_arraySome.js"),
+				o = n("./node_modules/lodash/_baseIteratee.js"),
+				i = n("./node_modules/lodash/_baseSome.js"),
+				s = n("./node_modules/lodash/isArray.js"),
+				a = n("./node_modules/lodash/_isIterateeCall.js");
+			e.exports = function(e, t, n) {
+				var u = s(e) ? r : i;
+				return n && a(e, t, n) && (t = void 0), u(e, o(t, 3))
+			}
 		},
 		"./node_modules/lodash/sortBy.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_baseFlatten.js"),
@@ -34395,4 +34415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.03c431fb768a08d68978.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.e938daa036fba163021c.js.map

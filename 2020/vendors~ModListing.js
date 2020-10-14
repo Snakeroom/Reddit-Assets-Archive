@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~ModListing.c3f87928276a47214bb2.js
-// Retrieved at 6/11/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~ModListing.f40a6050dd87da01c7b5.js
+// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~ModListing"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(t, e, o) {
@@ -26,6 +26,54 @@
 					}
 				}
 			}
+		},
+		"./node_modules/core-js/modules/_new-promise-capability.js": function(t, e, o) {
+			"use strict";
+			var n = o("./node_modules/core-js/modules/_a-function.js");
+
+			function r(t) {
+				var e, o;
+				this.promise = new t((function(t, n) {
+					if (void 0 !== e || void 0 !== o) throw TypeError("Bad Promise constructor");
+					e = t, o = n
+				})), this.resolve = n(e), this.reject = n(o)
+			}
+			t.exports.f = function(t) {
+				return new r(t)
+			}
+		},
+		"./node_modules/core-js/modules/_promise-resolve.js": function(t, e, o) {
+			var n = o("./node_modules/core-js/modules/_an-object.js"),
+				r = o("./node_modules/core-js/modules/_is-object.js"),
+				i = o("./node_modules/core-js/modules/_new-promise-capability.js");
+			t.exports = function(t, e) {
+				if (n(t), r(e) && e.constructor === t) return e;
+				var o = i.f(t);
+				return (0, o.resolve)(e), o.promise
+			}
+		},
+		"./node_modules/core-js/modules/es7.promise.finally.js": function(t, e, o) {
+			"use strict";
+			var n = o("./node_modules/core-js/modules/_export.js"),
+				r = o("./node_modules/core-js/modules/_core.js"),
+				i = o("./node_modules/core-js/modules/_global.js"),
+				s = o("./node_modules/core-js/modules/_species-constructor.js"),
+				c = o("./node_modules/core-js/modules/_promise-resolve.js");
+			n(n.P + n.R, "Promise", {
+				finally: function(t) {
+					var e = s(this, r.Promise || i.Promise),
+						o = "function" == typeof t;
+					return this.then(o ? function(o) {
+						return c(e, t()).then((function() {
+							return o
+						}))
+					} : t, o ? function(o) {
+						return c(e, t()).then((function() {
+							throw o
+						}))
+					} : t)
+				}
+			})
 		},
 		"./node_modules/intersection-observer/intersection-observer.js": function(t, e) {
 			! function(t, e) {
@@ -94,33 +142,33 @@
 						this._observationTargets.forEach((function(r) {
 							var i = r.element,
 								s = c(i),
-								h = this._rootContainsTarget(i),
-								u = r.entry,
-								a = e && h && this._computeTargetAndRootIntersection(i, o),
-								p = r.entry = new n({
+								u = this._rootContainsTarget(i),
+								a = r.entry,
+								h = e && u && this._computeTargetAndRootIntersection(i, o),
+								l = r.entry = new n({
 									time: t.performance && performance.now && performance.now(),
 									target: i,
 									boundingClientRect: s,
 									rootBounds: o,
-									intersectionRect: a
+									intersectionRect: h
 								});
-							u ? e && h ? this._hasCrossedThreshold(u, p) && this._queuedEntries.push(p) : u && u.isIntersecting && this._queuedEntries.push(p) : this._queuedEntries.push(p)
+							a ? e && u ? this._hasCrossedThreshold(a, l) && this._queuedEntries.push(l) : a && a.isIntersecting && this._queuedEntries.push(l) : this._queuedEntries.push(l)
 						}), this), this._queuedEntries.length && this._callback(this.takeRecords(), this)
 					}, r.prototype._computeTargetAndRootIntersection = function(o, n) {
 						if ("none" != t.getComputedStyle(o).display) {
-							for (var r, i, s, h, a, p, l, d, f = c(o), m = u(o), _ = !1; !_;) {
-								var g = null,
-									v = 1 == m.nodeType ? t.getComputedStyle(m) : {};
-								if ("none" == v.display) return;
-								if (m == this.root || m == e ? (_ = !0, g = n) : m != e.body && m != e.documentElement && "visible" != v.overflow && (g = c(m)), g && (r = g, i = f, s = void 0, h = void 0, a = void 0, p = void 0, l = void 0, d = void 0, s = Math.max(r.top, i.top), h = Math.min(r.bottom, i.bottom), a = Math.max(r.left, i.left), p = Math.min(r.right, i.right), d = h - s, !(f = (l = p - a) >= 0 && d >= 0 && {
+							for (var r, i, s, u, h, l, d, p, f = c(o), m = a(o), _ = !1; !_;) {
+								var v = null,
+									y = 1 == m.nodeType ? t.getComputedStyle(m) : {};
+								if ("none" == y.display) return;
+								if (m == this.root || m == e ? (_ = !0, v = n) : m != e.body && m != e.documentElement && "visible" != y.overflow && (v = c(m)), v && (r = v, i = f, s = void 0, u = void 0, h = void 0, l = void 0, d = void 0, p = void 0, s = Math.max(r.top, i.top), u = Math.min(r.bottom, i.bottom), h = Math.max(r.left, i.left), l = Math.min(r.right, i.right), p = u - s, !(f = (d = l - h) >= 0 && p >= 0 && {
 										top: s,
-										bottom: h,
-										left: a,
-										right: p,
-										width: l,
-										height: d
+										bottom: u,
+										left: h,
+										right: l,
+										width: d,
+										height: p
 									}))) break;
-								m = u(m)
+								m = a(m)
 							}
 							return f
 						}
@@ -160,9 +208,9 @@
 								if (i == o || i == n || i < o != i < n) return !0
 							}
 					}, r.prototype._rootIsInDom = function() {
-						return !this.root || h(e, this.root)
+						return !this.root || u(e, this.root)
 					}, r.prototype._rootContainsTarget = function(t) {
-						return h(this.root || e, t)
+						return u(this.root || e, t)
 					}, r.prototype._registerInstance = function() {
 						o.indexOf(this) < 0 && o.push(this)
 					}, r.prototype._unregisterInstance = function() {
@@ -229,15 +277,15 @@
 					}
 				}
 
-				function h(t, e) {
+				function u(t, e) {
 					for (var o = e; o;) {
 						if (o == t) return !0;
-						o = u(o)
+						o = a(o)
 					}
 					return !1
 				}
 
-				function u(t) {
+				function a(t) {
 					var e = t.parentNode;
 					return e && 11 == e.nodeType && e.host ? e.host : e
 				}
@@ -249,14 +297,14 @@
 				i = o("./node_modules/lodash/toInteger.js"),
 				s = 9007199254740991,
 				c = 4294967295,
-				h = Math.min;
+				u = Math.min;
 			t.exports = function(t, e) {
 				if ((t = i(t)) < 1 || t > s) return [];
 				var o = c,
-					u = h(t, c);
+					a = u(t, c);
 				e = r(e), t -= c;
-				for (var a = n(u, e); ++o < t;) e(o);
-				return a
+				for (var h = n(a, e); ++o < t;) e(o);
+				return h
 			}
 		},
 		"./node_modules/react-router-dom/esm/react-router-dom.js": function(t, e, o) {
@@ -266,7 +314,7 @@
 				t.prototype = Object.create(e.prototype), t.prototype.constructor = t, t.__proto__ = e
 			}
 			o.d(e, "a", (function() {
-				return p
+				return l
 			}));
 			var r = o("./node_modules/react/index.js"),
 				i = o.n(r),
@@ -274,8 +322,8 @@
 				c = o("./node_modules/history/esm/history.js");
 			o("./node_modules/react-router-dom/node_modules/prop-types/index.js");
 
-			function h() {
-				return (h = Object.assign || function(t) {
+			function u() {
+				return (u = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var o = arguments[e];
 						for (var n in o) Object.prototype.hasOwnProperty.call(o, n) && (t[n] = o[n])
@@ -284,17 +332,17 @@
 				}).apply(this, arguments)
 			}
 
-			function u(t, e) {
+			function a(t, e) {
 				if (null == t) return {};
 				var o, n, r = {},
 					i = Object.keys(t);
 				for (n = 0; n < i.length; n++) o = i[n], e.indexOf(o) >= 0 || (r[o] = t[o]);
 				return r
 			}
-			var a = o("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
+			var h = o("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
 			i.a.Component;
 			i.a.Component;
-			var p = function(t) {
+			var l = function(t) {
 				function e() {
 					return t.apply(this, arguments) || this
 				}
@@ -314,16 +362,16 @@
 						e = this.props,
 						o = e.innerRef,
 						n = (e.replace, e.to),
-						r = u(e, ["innerRef", "replace", "to"]);
+						r = a(e, ["innerRef", "replace", "to"]);
 					return i.a.createElement(s.g.Consumer, null, (function(e) {
-						e || Object(a.default)(!1);
+						e || Object(h.default)(!1);
 						var s = "string" == typeof n ? Object(c.c)(n, null, null, e.location) : n,
-							u = s ? e.history.createHref(s) : "";
-						return i.a.createElement("a", h({}, r, {
+							a = s ? e.history.createHref(s) : "";
+						return i.a.createElement("a", u({}, r, {
 							onClick: function(o) {
 								return t.handleClick(o, e.history)
 							},
-							href: u,
+							href: a,
 							ref: o
 						}))
 					}))
@@ -383,4 +431,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~ModListing.c3f87928276a47214bb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ModListing.f40a6050dd87da01c7b5.js.map

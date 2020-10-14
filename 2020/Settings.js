@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.596b8a504cc1911a7401.js
-// Retrieved at 10/12/2020, 6:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4b64befd3633b0d2e3ec.js
+// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -844,7 +844,7 @@
 				c = e => e.alwaysShowChildren ? a.a.createElement(a.a.Fragment, null, e.children) : null;
 			t.b = Object(o.a)({
 				ErrorComponent: c,
-				getComponent: () => Object(r.a)(() => Promise.all([n.e("AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki"), n.e("AuthorHovercard")]).then(n.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
+				getComponent: () => Object(r.a)(() => Promise.all([n.e("AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc"), n.e("AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki"), n.e("AuthorHovercard")]).then(n.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
 				LoadingComponent: c
 			})
 		},
@@ -6897,4 +6897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.596b8a504cc1911a7401.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4b64befd3633b0d2e3ec.js.map

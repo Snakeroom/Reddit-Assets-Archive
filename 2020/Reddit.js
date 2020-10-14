@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.20331815244c7c626c23.js
-// Retrieved at 10/14/2020, 1:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ad42f5886501e04f0207.js
+// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -10305,18 +10305,6 @@
 				variables: t
 			}))
 		},
-		"./src/reddit/helpers/canRenderThumbnail.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return r
-			}));
-			var n = s("./src/reddit/constants/thumbnails.ts"),
-				a = s("./src/reddit/models/Media/index.ts");
-
-			function r(e) {
-				return !(!e.thumbnail || !e.thumbnail.url || e.thumbnail.url === n.a.SELF || e.thumbnail.url === n.a.NSFW || e.media && Object(a.F)(e.media))
-			}
-		},
 		"./src/reddit/helpers/categoryPickerWidget/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -14186,21 +14174,6 @@
 					}))
 				})
 		},
-		"./src/reddit/selectors/experiments/categories.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return o
-			}));
-			var n = s("./src/reddit/constants/experiments.ts"),
-				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				r = s("./src/reddit/selectors/user.ts");
-			const o = e => {
-				return Object(r.F)(e) || n.t.Treatment1 === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: n.n
-				})
-			}
-		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -14497,7 +14470,7 @@
 		}
 	},
 	[
-		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit", "ModListing~Reddit"]
+		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "Reddit~reddit-components-MediumPost", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.20331815244c7c626c23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ad42f5886501e04f0207.js.map

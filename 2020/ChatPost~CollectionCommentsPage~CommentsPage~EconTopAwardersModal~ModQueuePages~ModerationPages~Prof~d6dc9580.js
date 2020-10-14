@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.f0f7d0e371729c154503.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.133cc1a494f75fdf7b50.js
+// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -312,8 +312,8 @@
 				j = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				E = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				T = s("./src/reddit/models/Gold/Award.ts"),
-				y = s("./src/reddit/selectors/activeModalId.ts"),
-				C = s("./src/reddit/constants/experiments.ts"),
+				C = s("./src/reddit/selectors/activeModalId.ts"),
+				y = s("./src/reddit/constants/experiments.ts"),
 				I = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				_ = s("./src/reddit/selectors/user.ts");
 			var S = s("./src/reddit/selectors/gold/awardIcon.ts"),
@@ -777,7 +777,7 @@
 				}),
 				Ee = s("./src/reddit/components/AwardBadges/ClassicAwardBadges/index.m.less"),
 				Te = s.n(Ee);
-			class ye extends o.a.PureComponent {
+			class Ce extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						isHovered: !1
@@ -808,7 +808,7 @@
 					}))
 				}
 			}
-			var Ce = ye;
+			var ye = Ce;
 			var Ie, _e = e => {
 					const {
 						awards: t,
@@ -864,7 +864,7 @@
 					}, E), o.a.createElement(Ae.c, {
 						tooltipId: v,
 						text: "View all Awards"
-					})), x && o.a.createElement(Ce, {
+					})), x && o.a.createElement(ye, {
 						onClick: c
 					}))
 				},
@@ -962,13 +962,13 @@
 						minSizes: [32, 128]
 					}),
 					currentUser: _.i,
-					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(y.a)(e),
+					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(C.a)(e),
 					isInEconLeaderboardsExperiment: e => {
 						const t = Object(I.c)(e, {
 							experimentEligibilitySelector: _.I,
-							experimentName: C.db
+							experimentName: y.db
 						});
-						return !(!t || Object(C.Cc)(t))
+						return !(!t || Object(y.Cc)(t))
 					},
 					isLoggedIn: _.I,
 					prefersReducedAnimations: P.c
@@ -1093,12 +1093,12 @@
 						tooltipType: A
 					} = this.props, {
 						showAllAwards: x
-					} = this.state, E = g || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, y = Object(T.q)(Object.keys(f.awardCountsById || {}).map(t => e[t]).filter(Boolean)), C = !!n && n.id === f.authorId;
+					} = this.state, E = g || "undefined" != typeof window && !!window.matchMedia("(prefers-reduced-motion)").matches, C = Object(T.q)(Object.keys(f.awardCountsById || {}).map(t => e[t]).filter(Boolean)), y = !!n && n.id === f.authorId;
 					return o.a.createElement(o.a.Fragment, null, s ? o.a.createElement(be, {
-						awards: y,
+						awards: C,
 						awardsCountInView: t,
 						className: a,
-						hideAddAwardButton: i || !f.isGildable || C,
+						hideAddAwardButton: i || !f.isGildable || y,
 						hideTopAwardedBadge: d,
 						icons: c,
 						isInEconLeaderboardsExperiment: m,
@@ -1113,7 +1113,7 @@
 						tooltipType: A,
 						triggerOverlayAnimation: v
 					}) : o.a.createElement(_e, {
-						awards: y,
+						awards: C,
 						className: a,
 						hideBadgeButton: i || !u,
 						hideTopAwardedBadge: d,
@@ -1132,7 +1132,7 @@
 						actionText: r.fbt._("Hide", null, {
 							hk: "4FKnfB"
 						}),
-						modalText: C ? Object(O.a)(f.id) ? r.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [r.fbt._param("awardName", this.state.selectedAward.name)], {
+						modalText: y ? Object(O.a)(f.id) ? r.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [r.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "4a7Cbu"
 						}) : r.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your comment?", [r.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "294BlY"
@@ -1283,7 +1283,7 @@
 					},
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				y = Object(n.c)({
+				C = Object(n.c)({
 					badges: (e, t) => {
 						let {
 							subredditId: s
@@ -1296,15 +1296,15 @@
 					},
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				C = e => ({
+				y = e => ({
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenUploadDialog: () => e(Object(c.j)())
 				}),
-				I = Object(o.b)(T, C)(E),
-				_ = Object(o.b)(y, C)(E)
+				I = Object(o.b)(T, y)(E),
+				_ = Object(o.b)(C, y)(E)
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1420,7 +1420,7 @@
 				d = e => e.alwaysShowChildren ? a.a.createElement(a.a.Fragment, null, e.children) : null;
 			t.b = Object(o.a)({
 				ErrorComponent: d,
-				getComponent: () => Object(n.a)(() => Promise.all([s.e("AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki"), s.e("AuthorHovercard")]).then(s.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
+				getComponent: () => Object(n.a)(() => Promise.all([s.e("AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc"), s.e("AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki"), s.e("AuthorHovercard")]).then(s.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
 				LoadingComponent: d
 			})
 		},
@@ -1439,9 +1439,9 @@
 			})), s.d(t, "f", (function() {
 				return T
 			})), s.d(t, "g", (function() {
-				return y
-			})), s.d(t, "h", (function() {
 				return C
+			})), s.d(t, "h", (function() {
+				return y
 			})), s.d(t, "i", (function() {
 				return I
 			}));
@@ -1676,7 +1676,7 @@
 					voteState: e.post.voteState
 				}
 			}));
-			var y = Object(o.b)(() => Object(n.c)({
+			var C = Object(o.b)(() => Object(n.c)({
 				subreddit: w.S
 			}))(e => a.a.createElement(h, {
 				className: e.className,
@@ -1689,7 +1689,7 @@
 					} : {}
 				}
 			}));
-			var C = Object(o.b)(() => Object(n.c)({
+			var y = Object(o.b)(() => Object(n.c)({
 				subredditOrProfile: (e, t) => Object(w.M)(e, {
 					identifier: t
 				})
@@ -1782,8 +1782,8 @@
 				j = s("./src/reddit/components/Governance/UserPublicPointsDisplay/async.tsx"),
 				E = s("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
 				T = s("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				y = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
-				C = s("./src/reddit/components/JSAPIContainers/index.tsx"),
+				C = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
+				y = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				I = s("./src/reddit/components/QuarantinedLabel/index.tsx"),
 				_ = s("./src/reddit/components/SponsoredLabel/index.tsx"),
 				S = s("./src/reddit/components/SubredditNameLink/index.tsx"),
@@ -1917,7 +1917,7 @@
 						ref: ie.target.ref
 					}, a.a.createElement(f.a, {
 						className: Y.a.powerupIcon
-					})), a.a.createElement(L, null, a.a.createElement(y.a, {
+					})), a.a.createElement(L, null, a.a.createElement(C.a, {
 						arrowProps: ie.arrowProps,
 						popperProps: ie.popperProps,
 						visible: ie.visible
@@ -1947,7 +1947,7 @@
 					}, a.a.createElement(S.a, {
 						"data-click-id": "subreddit",
 						to: N.url
-					}, N.displayText)), N && N.isQuarantined && a.a.createElement(I.a, null), v && !ce && a.a.createElement(he, null), l.isSponsored && a.a.createElement(r.Fragment, null, a.a.createElement(_.a, null), a.a.createElement(he, null)), be, a.a.createElement(C.e, {
+					}, N.displayText)), N && N.isQuarantined && a.a.createElement(I.a, null), v && !ce && a.a.createElement(he, null), l.isSponsored && a.a.createElement(r.Fragment, null, a.a.createElement(_.a, null), a.a.createElement(he, null)), be, a.a.createElement(y.e, {
 						post: l
 					}), k && a.a.createElement(a.a.Fragment, null, a.a.createElement("a", {
 						className: Y.a.externalLink,
@@ -1961,7 +1961,7 @@
 						},
 						target: "_blank",
 						rel: "nofollow noopener noreferrer"
-					}, Object(m.d)(l.created / 1e3)), a.a.createElement(L, null, a.a.createElement(y.a, {
+					}, Object(m.d)(l.created / 1e3)), a.a.createElement(L, null, a.a.createElement(C.a, {
 						arrowProps: ne.arrowProps,
 						popperProps: ne.popperProps,
 						visible: ne.visible
@@ -2470,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.f0f7d0e371729c154503.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.133cc1a494f75fdf7b50.js.map
