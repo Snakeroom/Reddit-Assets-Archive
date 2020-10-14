@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.9790e86389fadc6f9b63.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.d5385c774f5a9d160a9e.js
+// Retrieved at 10/14/2020, 5:10:21 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -4019,7 +4019,7 @@
 								experimentEligibilitySelector: e => Object(v.I)(e),
 								experimentName: m.kb
 							});
-							return Object(m.Cc)(t) ? void 0 : t
+							return Object(m.Gc)(t) ? void 0 : t
 						})(F) && (s(((e, t) => async (n, s, o) => {
 							let {
 								apiContext: a
@@ -6435,7 +6435,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: o.experiment(r, s.tc),
+					experiment: o.experiment(r, s.xc),
 					post: o.post(r, e),
 					media: o.media(r, e),
 					profile: o.profile(r),
@@ -6447,7 +6447,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: o.experiment(t, s.tc),
+					experiment: o.experiment(t, s.xc),
 					post: o.post(t, e),
 					profile: o.profile(t),
 					subreddit: o.subreddit(t),
@@ -7810,9 +7810,9 @@
 					experimentName: o.S,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				u = e => e === o.qc.NoCommunityWidgets,
-				l = e => e === o.qc.NoRulesModerators,
-				b = e => e === o.qc.RelatedPostsDu
+				u = e => e === o.uc.NoCommunityWidgets,
+				l = e => e === o.uc.NoRulesModerators,
+				b = e => e === o.uc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -8051,4 +8051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.9790e86389fadc6f9b63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.d5385c774f5a9d160a9e.js.map
