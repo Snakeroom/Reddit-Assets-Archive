@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.92dd4b1ab5817fbfcd39.js
-// Retrieved at 9/21/2020, 11:30:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.03c431fb768a08d68978.js
+// Retrieved at 10/14/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -32075,7 +32075,7 @@
 							[s, [c, "HTC"],
 								[u, f]
 							],
-							[/d\/huawei([\w\s-]+)[;\)]/i, /(nexus\s6p|vog-l29|ane-lx1|eml-l29)/i],
+							[/d\/huawei([\w\s-]+)[;\)]/i, /(nexus\s6p|vog-l29|ane-lx1|eml-l29|ele-l29)/i],
 							[s, [c, "Huawei"],
 								[u, d]
 							],
@@ -32187,13 +32187,13 @@
 							[s, [c, "Google"],
 								[u, d]
 							],
-							[/android.+;\s(\w+)\s+build\/hm\1/i, /android.+(hm[\s\-_]*note?[\s_]*(?:\d\w)?)\s+build/i, /android.+(mi[\s\-_]*(?:a\d|one|one[\s_]plus|note lte)?[\s_]*(?:\d?\w?)[\s_]*(?:plus)?)\s+build/i, /android.+(redmi[\s\-_]*(?:note)?(?:[\s_]*[\w\s]+))\s+build/i],
+							[/android.+;\s(\w+)\s+build\/hm\1/i, /android.+(hm[\s\-_]*note?[\s_]*(?:\d\w)?)\s+build/i, /android.+(mi[\s\-_]*(?:a\d|one|one[\s_]plus|note lte)?[\s_]*(?:\d?\w?)[\s_]*(?:plus)?)\s+build/i, /android.+(redmi[\s\-_]*(?:note)?(?:[\s_]?[\w\s]+))\s+build/i],
 							[
 								[s, /_/g, " "],
 								[c, "Xiaomi"],
 								[u, d]
 							],
-							[/android.+(mi[\s\-_]*(?:pad)(?:[\s_]*[\w\s]+))\s+build/i],
+							[/android.+(mi[\s\-_]*(?:pad)(?:[\s_]?[\w\s]+))\s+build/i],
 							[
 								[s, /_/g, " "],
 								[c, "Xiaomi"],
@@ -32417,7 +32417,7 @@
 							return n = e, this
 						}, this
 					};
-				y.VERSION = "0.7.21", y.BROWSER = {
+				y.VERSION = "0.7.22", y.BROWSER = {
 					NAME: a,
 					MAJOR: "major",
 					VERSION: l
@@ -34395,4 +34395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.92dd4b1ab5817fbfcd39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.03c431fb768a08d68978.js.map

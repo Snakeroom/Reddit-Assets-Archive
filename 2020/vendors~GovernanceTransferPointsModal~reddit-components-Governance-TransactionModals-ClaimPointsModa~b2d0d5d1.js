@@ -1,12 +1,12 @@
-// https://www.redditstatic.com/desktop2x/vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~b2d0d5d1.21cff43357ef6f847fb7.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~b2d0d5d1.44654c3fec170b0931e1.js
+// Retrieved at 10/14/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~b2d0d5d1"], {
 		"./node_modules/ethers/_version.js": function(r, t, e) {
 			"use strict";
 			Object.defineProperty(t, "__esModule", {
 				value: !0
-			}), t.version = "4.0.46"
+			}), t.version = "4.0.48"
 		},
 		"./node_modules/ethers/errors.js": function(r, t, e) {
 			"use strict";
@@ -405,4 +405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~b2d0d5d1.21cff43357ef6f847fb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~b2d0d5d1.44654c3fec170b0931e1.js.map

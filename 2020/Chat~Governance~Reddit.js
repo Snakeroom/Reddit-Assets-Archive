@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cdcd3b6b055458a671a1.js
-// Retrieved at 10/13/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ee601fe7083e2ca9a656.js
+// Retrieved at 10/14/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("114924"),
+				buildNumber: r("114996"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1602618815"),
+				})("1602686727"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -1892,76 +1892,75 @@
 		"./src/lib/DeprecatedBrowserProvider/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return T
+				return v
 			})), i.d(t, "b", (function() {
-				return F
+				return S
 			}));
 			var n = i("./node_modules/react/index.js"),
 				r = i.n(n),
 				s = i("./node_modules/react-redux/es/index.js"),
 				o = i("./node_modules/reselect/es/index.js"),
-				d = i("./node_modules/ua-parser-js/src/ua-parser.js"),
-				l = i.n(d);
-			const a = "Apple",
-				u = "iOS",
-				c = "https://www.google.com/chrome/",
-				_ = "https://www.microsoft.com/windows/microsoft-edge",
-				m = "https://www.mozilla.org/firefox/",
-				p = "https://www.apple.com/safari/",
-				h = "https://www.opera.com",
-				g = "https://www.ucweb.com",
-				f = {
+				d = i("./node_modules/ua-parser-js/src/ua-parser.js");
+			const l = "Apple",
+				a = "iOS",
+				u = "https://www.google.com/chrome/",
+				c = "https://www.microsoft.com/windows/microsoft-edge",
+				_ = "https://www.mozilla.org/firefox/",
+				m = "https://www.apple.com/safari/",
+				p = "https://www.opera.com",
+				h = "https://www.ucweb.com",
+				g = {
 					isDeprecated: !1,
 					updateLink: null
 				};
-			var b = i("./src/reddit/selectors/platform.ts"),
-				w = i("./src/reddit/selectors/responsiveSettings.ts");
-			const y = Object(o.c)({
-					isResponsiveSettingsEnabled: e => Object(w.a)(e, {
-						pageLayer: Object(b.b)(e)
+			var f = i("./src/reddit/selectors/platform.ts"),
+				b = i("./src/reddit/selectors/responsiveSettings.ts");
+			const w = Object(o.c)({
+					isResponsiveSettingsEnabled: e => Object(b.a)(e, {
+						pageLayer: Object(f.b)(e)
 					})
 				}),
-				v = Object(s.b)(y),
-				T = r.a.createContext(f);
-			class S extends r.a.Component {
+				y = Object(s.b)(w),
+				v = r.a.createContext(g);
+			class T extends r.a.Component {
 				constructor(e) {
 					super(e), this.contextValue = function(e, t) {
-						if (!e) return f;
-						const i = new l.a(e),
+						if (!e) return g;
+						const i = new d.UAParser(e),
 							n = i.getDevice(),
 							r = i.getOS();
-						if (!t && (n && n.vendor === a || r && r.name === u)) return {
+						if (!t && (n && n.vendor === l || r && r.name === a)) return {
 							isDeprecated: !0,
 							updateLink: null
 						};
-						let s = f.isDeprecated,
-							o = f.updateLink;
-						const d = i.getBrowser();
-						switch (d.name) {
+						let s = g.isDeprecated,
+							o = g.updateLink;
+						const f = i.getBrowser();
+						switch (f.name) {
 							case "Chrome":
 							case "Chrome Headless":
 							case "Chrome WebView":
-								s = parseInt(d.version || "") < 49, o = c;
+								s = parseInt(f.version || "") < 49, o = u;
 								break;
 							case "Edge":
-								s = parseInt(d.version || "") < 15, o = _;
+								s = parseInt(f.version || "") < 15, o = c;
 								break;
 							case "Firefox":
-								s = parseInt(d.version || "") < 45, o = m;
+								s = parseInt(f.version || "") < 45, o = _;
 								break;
 							case "IE":
 							case "Mobile IE":
-								s = !0, o = _;
+								s = !0, o = c;
 								break;
 							case "Safari":
 							case "Mobile Safari":
-								s = parseInt(d.version || "") < 11, o = p;
+								s = parseInt(f.version || "") < 11, o = m;
 								break;
 							case "Opera":
-								s = parseInt(d.version || "") < 35, o = h;
+								s = parseInt(f.version || "") < 35, o = p;
 								break;
 							case "UCBrowser":
-								s = parseFloat((d.version || "").slice(0, 5)) < 11.5, o = g
+								s = parseFloat((f.version || "").slice(0, 5)) < 11.5, o = h
 						}
 						return {
 							isDeprecated: s,
@@ -1970,12 +1969,12 @@
 					}(e.userAgent, e.isResponsiveSettingsEnabled)
 				}
 				render() {
-					return r.a.createElement(T.Provider, {
+					return r.a.createElement(v.Provider, {
 						value: this.contextValue
 					}, this.props.children)
 				}
 			}
-			const F = v(S)
+			const S = y(T)
 		},
 		"./src/lib/FocusTrap/index.ts": function(e, t, i) {
 			"use strict";
@@ -3221,31 +3220,30 @@
 		"./src/lib/getParsedUserAgent/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "e", (function() {
-				return s
+				return r
 			})), i.d(t, "g", (function() {
-				return o
+				return s
 			})), i.d(t, "c", (function() {
-				return d
+				return o
 			})), i.d(t, "b", (function() {
-				return l
+				return d
 			})), i.d(t, "d", (function() {
-				return a
+				return l
 			})), i.d(t, "f", (function() {
-				return u
+				return a
 			})), i.d(t, "a", (function() {
-				return c
+				return u
 			}));
-			var n = i("./node_modules/ua-parser-js/src/ua-parser.js"),
-				r = i.n(n);
-			const s = e => "mobile" === c(e).device.type,
-				o = e => "tablet" === c(e).device.type,
-				d = e => !s(e) && !o(e),
-				l = e => "Chrome" === c(e).browser.name,
-				a = e => "Firefox" === c(e).browser.name,
-				u = e => "Opera" === c(e).browser.name;
+			var n = i("./node_modules/ua-parser-js/src/ua-parser.js");
+			const r = e => "mobile" === u(e).device.type,
+				s = e => "tablet" === u(e).device.type,
+				o = e => !r(e) && !s(e),
+				d = e => "Chrome" === u(e).browser.name,
+				l = e => "Firefox" === u(e).browser.name,
+				a = e => "Opera" === u(e).browser.name;
 
-			function c(e) {
-				return new r.a(e).getResult()
+			function u(e) {
+				return new n.UAParser(e).getResult()
 			}
 		},
 		"./src/lib/initializeClient/combineReducersDynamic.ts": function(e, t, i) {
@@ -3428,14 +3426,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("fce30ec-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("56de425-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "fce30ec-production",
+						release: "56de425-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3865,7 +3863,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "fce30ec-production",
+							releaseClient: "56de425-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -22892,4 +22890,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cdcd3b6b055458a671a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ee601fe7083e2ca9a656.js.map

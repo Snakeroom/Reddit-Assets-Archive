@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~ShortcutWrapper.d5c7a53f2e608b688f9c.js
-// Retrieved at 9/21/2020, 11:30:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~ShortcutWrapper.e0b74288af0e214b01c0.js
+// Retrieved at 10/14/2020, 11:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~ShortcutWrapper"], {
 		"./node_modules/combokeys/Combokeys/index.js": function(e, t, o) {
@@ -346,39 +346,6 @@
 				e.stopPropagation ? e.stopPropagation() : e.cancelBubble = !0
 			}
 		},
-		"./node_modules/fbjs/lib/emptyFunction.js": function(e, t, o) {
-			"use strict";
-
-			function n(e) {
-				return function() {
-					return e
-				}
-			}
-			var r = function() {};
-			r.thatReturns = n, r.thatReturnsFalse = n(!1), r.thatReturnsTrue = n(!0), r.thatReturnsNull = n(null), r.thatReturnsThis = function() {
-				return this
-			}, r.thatReturnsArgument = function(e) {
-				return e
-			}, e.exports = r
-		},
-		"./node_modules/fbjs/lib/invariant.js": function(e, t, o) {
-			"use strict";
-			var n = function(e) {};
-			e.exports = function(e, t, o, r, s, i, a, l) {
-				if (n(t), !e) {
-					var c;
-					if (void 0 === t) c = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");
-					else {
-						var u = [o, r, s, i, a, l],
-							p = 0;
-						(c = new Error(t.replace(/%s/g, (function() {
-							return u[p++]
-						})))).name = "Invariant Violation"
-					}
-					throw c.framesToPop = 1, c
-				}
-			}
-		},
 		"./node_modules/just-reduce-object/index.js": function(e, t) {
 			e.exports = function(e, t) {
 				var o = [function(o, r, s, i) {
@@ -653,7 +620,7 @@
 							else if (E && (N = (a = E.lang.System).getProperty("os.arch"), G = G || a.getProperty("os.name") + " " + a.getProperty("os.version")), C) {
 								try {
 									B = o.require("ringo/engine").version.join("."), W = "RingoJS"
-								} catch (H) {
+								} catch ($) {
 									(a = o.system) && a.global.system == o.system && (W = "Narwhal", G || (G = a[0].os || null))
 								}
 								W || (W = "Rhino")
@@ -666,7 +633,7 @@
 						else if (!/^(?:Chrome|IE|Opera)$/.test(W) && (!W || F || /Browser|Mobi/.test(W)) || "Windows CE" != G && !/Mobi/i.test(t))
 							if ("IE" == W && K) try {
 								null === o.external && A.unshift("platform preview")
-							} catch (H) {
+							} catch ($) {
 								A.unshift("embedded")
 							} else(/\bBlackBerry\b/.test(F) || /\bBB10\b/.test(t)) && (a = (RegExp(F.replace(/ +/g, " *") + "/([.\\d]+)", "i").exec(t) || 0)[1] || B) ? (G = ((a = [a, /BB10/.test(t)])[1] ? (F = null, L = "BlackBerry") : "Device Software") + " " + a[0], B = null) : this != h && "Wii" != F && (K && M || /Opera/.test(W) && /\b(?:MSIE|Firefox)\b/i.test(t) || "Firefox" == W && /\bOS X (?:\d+\.){2,}/.test(G) || "IE" == W && (G && !/^Win/.test(G) && B > 5.5 || /\bWindows XP\b/.test(G) && B > 8 || 8 == B && !/\bTrident\b/.test(t))) && !p.test(a = e.call(h, t.replace(p, "") + ";")) && a.name && (a = "ing as " + a.name + ((a = a.version) ? " " + a : ""), p.test(W) ? (/\bIE\b/.test(a) && "Mac OS" == G && (G = null), a = "identify" + a) : (a = "mask" + a, W = T ? y(T.replace(/([a-z])([A-Z])/g, "$1 $2")) : "Opera", /\bIE\b/.test(a) && (G = null), K || (B = null)), I = ["Presto"], A.push(a));
 							else W += " Mobile";
@@ -679,17 +646,17 @@
 								return this.family + (e && !l ? " " + e : "") + (64 == this.architecture ? " 64-bit" : "")
 							}
 						}), (a = /\b(?:AMD|IA|Win|WOW|x86_|x)64\b/i.exec(N)) && !/\bi686\b/i.test(N) ? (G && (G.architecture = 64, G.family = G.family.replace(RegExp(" *" + a), "")), W && (/\bWOW64\b/i.test(t) || K && /\w(?:86|32)$/.test(r.cpuClass || r.platform) && !/\bWin64; x64\b/i.test(t)) && A.unshift("32-bit")) : G && /^OS X/.test(G.family) && "Chrome" == W && parseFloat(B) >= 39 && (G.architecture = 64), t || (t = null);
-						var $ = {};
-						return $.description = t, $.layout = I && I[0], $.manufacturer = L, $.name = W, $.prerelease = R, $.product = F, $.ua = t, $.version = W && B, $.os = G || {
+						var H = {};
+						return H.description = t, H.layout = I && I[0], H.manufacturer = L, H.name = W, H.prerelease = R, H.product = F, H.ua = t, H.version = W && B, H.os = G || {
 							architecture: null,
 							family: null,
 							version: null,
 							toString: function() {
 								return "null"
 							}
-						}, $.parse = e, $.toString = function() {
+						}, H.parse = e, H.toString = function() {
 							return this.description || ""
-						}, $.version && A.unshift(B), $.name && A.unshift(W), G && W && (G != String(G).split(" ")[0] || G != W.split(" ")[0] && !F) && A.push(F ? "(" + G + ")" : "on " + G), A.length && ($.description = A.join(" ")), $
+						}, H.version && A.unshift(B), H.name && A.unshift(W), G && W && (G != String(G).split(" ")[0] || G != W.split(" ")[0] && !F) && A.push(F ? "(" + G + ")" : "on " + G), A.length && (H.description = A.join(" ")), H
 					}();
 					i.platform = g, void 0 === (r = function() {
 						return g
@@ -699,11 +666,15 @@
 		},
 		"./node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, o) {
 			"use strict";
-			var n = o("./node_modules/fbjs/lib/emptyFunction.js"),
-				r = o("./node_modules/fbjs/lib/invariant.js");
+			var n = o("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+
+			function r() {}
 			e.exports = function() {
-				function e() {
-					r(!1, "Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types")
+				function e(e, t, o, r, s, i) {
+					if (i !== n) {
+						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+						throw a.name = "Invariant Violation", a
+					}
 				}
 
 				function t() {
@@ -726,13 +697,18 @@
 					objectOf: t,
 					oneOf: t,
 					oneOfType: t,
-					shape: t
+					shape: t,
+					exact: t
 				};
-				return o.checkPropTypes = n, o.PropTypes = o, o
+				return o.checkPropTypes = r, o.PropTypes = o, o
 			}
 		},
 		"./node_modules/prop-types/index.js": function(e, t, o) {
 			e.exports = o("./node_modules/prop-types/factoryWithThrowingShims.js")()
+		},
+		"./node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, o) {
+			"use strict";
+			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
 		"./node_modules/react-shortcuts/lib/component/index.js": function(e, t, o) {
 			"use strict";
@@ -1134,4 +1110,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ShortcutWrapper.d5c7a53f2e608b688f9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ShortcutWrapper.e0b74288af0e214b01c0.js.map
