@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.49f4349a66e96372eed8.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.98a1917d94e14ad73da9.js
+// Retrieved at 10/14/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1508,7 +1508,7 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("2a9b92f-production", " ").concat(t);
+									let s = "".concat("Reddit/Version Build", " ").concat("d7fb774-production", " ").concat(t);
 									return i && (s += " [".concat(C.tc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2374,4 +2374,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.49f4349a66e96372eed8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.98a1917d94e14ad73da9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.bdbd9e5fcad0efe7f37e.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.41e4eb2b1e950623c8a2.js
+// Retrieved at 10/14/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -30618,7 +30618,7 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(L.r)()), this.props.clearErrors()
+					e(Object(L.s)()), this.props.clearErrors()
 				}
 				componentWillUnmount() {
 					clearTimeout(this.timeout)
@@ -31068,4 +31068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bdbd9e5fcad0efe7f37e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.41e4eb2b1e950623c8a2.js.map

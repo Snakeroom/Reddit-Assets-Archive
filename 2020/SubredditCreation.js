@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.b58000b2f5265ab5f8f0.js
-// Retrieved at 10/12/2020, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.b32511f8f8d831cf178c.js
+// Retrieved at 10/14/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/controls/CheckboxInput/index.m.less": function(e, t, a) {
@@ -515,7 +515,7 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(A.r)()), this.props.clearErrors()
+					e(Object(A.s)()), this.props.clearErrors()
 				}
 				componentWillUnmount() {
 					clearTimeout(this.timeout)
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.b58000b2f5265ab5f8f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.b32511f8f8d831cf178c.js.map

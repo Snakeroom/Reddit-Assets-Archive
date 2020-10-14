@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.bd2069dc7e94f2877fd5.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.614d9fa0b6e20792904b.js
+// Retrieved at 10/14/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -7686,7 +7686,7 @@
 					} = this.props;
 					if (!this.shouldSendScreenview()) return;
 					const o = $e.c.end(e);
-					n(Object(Xe.q)(e, s, et.TimerType.InApp, o, t))
+					n(Object(Xe.r)(e, s, et.TimerType.InApp, o, t))
 				}
 				componentDidMount() {
 					this.checkAndSendScreenview(), this.timerId && Object($e.b)(a.l.Redesign, {
@@ -9097,7 +9097,7 @@
 				Io = Object(_.t)();
 			class Po extends o.a.PureComponent {
 				constructor() {
-					super(...arguments), this.onViewed = (e, t) => Object(Xe.q)(this.props.listingKey, this.props.searchOptions, t, e, this.props.pageLayer, Ue(this.props))
+					super(...arguments), this.onViewed = (e, t) => Object(Xe.r)(this.props.listingKey, this.props.searchOptions, t, e, this.props.pageLayer, Ue(this.props))
 				}
 				render() {
 					const {
@@ -13153,4 +13153,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.bd2069dc7e94f2877fd5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.614d9fa0b6e20792904b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9507e296b63445e58a75.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4670643db32bbed4a7ed.js
+// Retrieved at 10/14/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -734,7 +734,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "2a9b92f-production"
+					SENTRY_RELEASE_VERSION: "d7fb774-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -25763,13 +25763,13 @@
 				return x
 			})), n.d(t, "f", (function() {
 				return y
-			})), n.d(t, "m", (function() {
-				return v
 			})), n.d(t, "n", (function() {
-				return C
-			})), n.d(t, "l", (function() {
-				return E
+				return v
 			})), n.d(t, "o", (function() {
+				return C
+			})), n.d(t, "m", (function() {
+				return E
+			})), n.d(t, "p", (function() {
 				return O
 			})), n.d(t, "c", (function() {
 				return j
@@ -25783,18 +25783,20 @@
 				return T
 			})), n.d(t, "a", (function() {
 				return I
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "l", (function() {
 				return P
-			})), n.d(t, "p", (function() {
-				return R
-			})), n.d(t, "r", (function() {
-				return L
-			})), n.d(t, "e", (function() {
-				return A
-			})), n.d(t, "d", (function() {
-				return B
+			})), n.d(t, "k", (function() {
+				return M
 			})), n.d(t, "q", (function() {
+				return L
+			})), n.d(t, "s", (function() {
+				return A
+			})), n.d(t, "e", (function() {
+				return F
+			})), n.d(t, "d", (function() {
 				return D
+			})), n.d(t, "r", (function() {
+				return U
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var s = n("./src/lib/constants/index.ts"),
@@ -25896,7 +25898,7 @@
 						}
 						case s.Bb.SETTINGS: {
 							const o = e;
-							Object(f.a)(N(n, a)(t)), o.match.params.page === s.Ob.Profile && Object(c.j)(t);
+							Object(f.a)(R(n, a)(t)), o.match.params.page === s.Ob.Profile && Object(c.j)(t);
 							break
 						}
 						case s.Bb.POST_CREATION:
@@ -25910,16 +25912,16 @@
 							break
 						}
 						case s.Bb.SUBREDDIT_WIKI:
-							Object(f.a)(F(n, a)(t));
+							Object(f.a)(B(n, a)(t));
 							break;
 						case s.Bb.COINS:
 							Object(f.a)(T(n, a)(t)), Object(f.a)(I()(t));
 							break;
 						case s.Bb.PREMIUM:
-							Object(f.a)(P(n, a)(t));
+							Object(f.a)(P(n, a)(t)), Object(f.a)(M()(t));
 							break;
 						case s.Bb.APPEAL:
-							Object(f.a)(M(n, a)(t))
+							Object(f.a)(N(n, a)(t))
 					}
 				},
 				y = (e, t, n, s, o, r) => i => {
@@ -26146,37 +26148,42 @@
 					timer: g.timer(e, t),
 					adblock: g.adblock(n)
 				}),
-				M = (e, t) => n => Object.assign(Object.assign({
+				M = () => e => Object.assign({
+					source: "global",
+					action: "view",
+					noun: "screen"
+				}, g.defaults(e)),
+				N = (e, t) => n => Object.assign(Object.assign({
 					source: "appeal",
 					action: "view",
 					noun: "page"
 				}, g.defaults(n)), {
 					timer: g.timer(e, t)
 				}),
-				N = (e, t) => n => Object.assign(Object.assign({
+				R = (e, t) => n => Object.assign(Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, g.defaults(n)), {
 					timer: g.timer(e, t)
 				}),
-				R = () => e => Object.assign({
+				L = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					subreddit: g.subreddit(e)
 				}, g.defaults(e)),
-				L = () => e => Object.assign({
-					source: "global",
-					action: "view",
-					noun: "screen"
-				}, g.defaults(e)),
 				A = () => e => Object.assign({
+					source: "global",
+					action: "view",
+					noun: "screen"
+				}, g.defaults(e)),
+				F = () => e => Object.assign({
 					action: "view",
 					source: "global",
 					noun: "screen"
 				}, g.defaults(e)),
-				F = (e, t) => n => Object.assign(Object.assign({
+				B = (e, t) => n => Object.assign(Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
@@ -26187,12 +26194,12 @@
 					userSubreddit: g.userSubreddit(n),
 					adblock: g.adblock(n)
 				}),
-				B = () => e => Object.assign({
+				D = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, g.defaults(e)),
-				D = (e, t, n, o, r, i) => a => {
+				U = (e, t, n, o, r, i) => a => {
 					let c = !0;
 					if (t.type.indexOf(s.Nb.Posts) > -1) {
 						const {
@@ -34152,4 +34159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9507e296b63445e58a75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4670643db32bbed4a7ed.js.map
