@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.57fa46e18b05f772b6dc.js
-// Retrieved at 10/15/2020, 5:00:28 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.8408f9da85fa12f23771.js
+// Retrieved at 10/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -5156,9 +5156,9 @@
 			var So = s("./src/reddit/helpers/isArrayEqual.ts"),
 				wo = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				_o = s("./src/reddit/selectors/experiments/trending.ts");
-			const ko = e => Object(re.F)(e) || Os.xc.Treatment1 === Object(Ea.c)(e, {
+			const ko = e => Object(re.F)(e) || Os.zc.Treatment1 === Object(Ea.c)(e, {
 				experimentEligibilitySelector: Ea.a,
-				experimentName: Os.uc
+				experimentName: Os.wc
 			});
 			var Mo = s("./src/reddit/selectors/searchResults.ts"),
 				Io = s("./src/reddit/selectors/tooltip.ts"),
@@ -14208,11 +14208,11 @@
 				h = e => e.accountManagerModalData.redirectUrl,
 				g = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, b, c.a, p.a, d.b, e => Object(l.c)(e, {
 					experimentEligibilitySelector: m,
-					experimentName: i.jc
+					experimentName: i.lc
 				}), (e, t, s, a, c, d, l) => {
 					let u = "".concat(n.a.accountManagerOrigin).concat(e);
 					return l && (u = Object(r.a)(u, {
-						["experiment_".concat(i.jc)]: l
+						["experiment_".concat(i.lc)]: l
 					})), e === o.c.GoogleOneTap ? Object(r.a)(u, {
 						[i.H]: d
 					}) : (a && (u = Object(r.a)(u, {
@@ -14231,16 +14231,22 @@
 				return r
 			})), s.d(t, "a", (function() {
 				return o
+			})), s.d(t, "c", (function() {
+				return i
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Ab.Enabled === Object(a.c)(e, {
+			const r = e => n.Bb.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: n.yb
 				}),
-				o = e => n.zb.Enabled === Object(a.c)(e, {
+				o = e => n.Ab.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: n.xb
+				}),
+				i = e => n.Cb.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: n.zb
 				})
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
@@ -14251,9 +14257,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.F)(e) || !(n.wc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.F)(e) || !(n.yc.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.tc
+				experimentName: n.vc
 			}))
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
@@ -14542,4 +14548,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "Reddit~reddit-components-MediumPost", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.57fa46e18b05f772b6dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8408f9da85fa12f23771.js.map

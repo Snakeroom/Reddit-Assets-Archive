@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.2b5981ab204205e35d99.js
-// Retrieved at 10/15/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5c1b00cbb8706148b632.js
+// Retrieved at 10/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -4297,7 +4297,7 @@
 			const S = e => _.d.reCaptchaEnterprise(e) && !Object(w.d)(e),
 				T = e => !!Object(I.c)(e, {
 					experimentEligibilitySelector: Object(E.d)(Object(E.b)(...r.b)),
-					experimentName: g.Yb
+					experimentName: g.ac
 				}),
 				C = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => b()([S, T, e => e.tracking.reCaptchaEnterprise.load === n.a.New], t => t(e)))(async e => {
@@ -28054,7 +28054,7 @@
 				u = e => e === a.z.OnetapAuto,
 				b = e => e.user.googleOneTapEnabled,
 				g = Object(n.a)(i.I, d, (e, t) => !e && !!t),
-				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.Hc)(t))
+				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.Jc)(t))
 		},
 		"./src/reddit/selectors/profileOverviewChronoItems.ts": function(e, t, s) {
 			"use strict";
@@ -28353,4 +28353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2b5981ab204205e35d99.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5c1b00cbb8706148b632.js.map

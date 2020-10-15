@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.4e80d57f319cde75caff.js
-// Retrieved at 10/15/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.6e61ba4fc9527bdf3bed.js
+// Retrieved at 10/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -3346,8 +3346,8 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => (e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Gb
-				}) === r.Ib.Enabled)(e) || (e => "enabled" === Object(s.c)(e, {
+					experimentName: r.Ib
+				}) === r.Kb.Enabled)(e) || (e => "enabled" === Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: "survey_demo_nps_1"
 				}))(e) || (e => "enabled" === Object(s.c)(e, {
@@ -3356,8 +3356,8 @@
 				}))(e),
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Fb
-				}) === r.Hb.Enabled
+					experimentName: r.Hb
+				}) === r.Jb.Enabled
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, n) {
 			"use strict";
@@ -3371,4 +3371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.4e80d57f319cde75caff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.6e61ba4fc9527bdf3bed.js.map

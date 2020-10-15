@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.05193cbf1bee4318ee2b.js
-// Retrieved at 10/15/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.7ed132954fd9e6c5e1b4.js
+// Retrieved at 10/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -267,16 +267,16 @@
 				R = s("./src/reddit/icons/svgs/VideoSnoo/index.tsx"),
 				j = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
 				I = s.n(j);
-			const H = () => a.a.createElement("div", {
+			const A = () => a.a.createElement("div", {
 				className: I.a.icon
 			}, a.a.createElement(R.a, null));
-			var A = e => "string" == typeof e.postUrl ? a.a.createElement("a", {
+			var H = e => "string" == typeof e.postUrl ? a.a.createElement("a", {
 					href: e.postUrl,
 					className: I.a.button
-				}, a.a.createElement(H, null)) : a.a.createElement(k.a, {
+				}, a.a.createElement(A, null)) : a.a.createElement(k.a, {
 					to: e.postUrl,
 					className: I.a.button
-				}, a.a.createElement(H, null)),
+				}, a.a.createElement(A, null)),
 				U = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				D = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
 				W = s.n(D);
@@ -464,7 +464,7 @@
 						tooltip: f
 					}, a.a.createElement("div", {
 						onClick: this.props.clickSnoo
-					}, a.a.createElement(A, {
+					}, a.a.createElement(H, {
 						postUrl: s
 					}))), a.a.createElement(X, {
 						tooltip: C
@@ -795,16 +795,16 @@
 				L = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				B = s("./src/reddit/selectors/experiments/utils.ts");
 			const N = Object(d.a)(e => Object(L.c)(e, {
-					experimentName: C.yc,
+					experimentName: C.Ac,
 					experimentEligibilitySelector: L.a
 				}), B.a),
 				O = Object(d.a)(N, (function(e) {
 					switch (e) {
-						case C.Cc.BufferTwoSeconds:
+						case C.Ec.BufferTwoSeconds:
 							return 2;
-						case C.Cc.BufferFiveSeconds:
+						case C.Ec.BufferFiveSeconds:
 							return 5;
-						case C.Cc.BufferTenSeconds:
+						case C.Ec.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -814,9 +814,9 @@
 				R = s("./src/reddit/selectors/platform.ts"),
 				j = s("./src/reddit/selectors/posts.ts"),
 				I = s("./src/reddit/selectors/user.ts"),
-				H = s("./src/reddit/selectors/video.ts"),
-				A = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
-				U = s.n(A),
+				A = s("./src/reddit/selectors/video.ts"),
+				H = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
+				U = s.n(H),
 				D = s("./src/lib/lessComponent.tsx"),
 				W = D.a.img("Component", U.a),
 				z = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
@@ -1073,8 +1073,8 @@
 				je = s("./src/reddit/components/HTML5StreamPlayer/VideoContainer/index.m.less"),
 				Ie = s.n(je);
 
-			function He() {
-				return (He = Object.assign || function(e) {
+			function Ae() {
+				return (Ae = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -1082,7 +1082,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Ae = function(e, t) {
+			var He = function(e, t) {
 				var s = {};
 				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1096,8 +1096,8 @@
 						className: t,
 						isVisible: s,
 						setRef: i
-					} = e, n = Ae(e, ["className", "isVisible", "setRef"]);
-					return l.a.createElement("div", He({
+					} = e, n = He(e, ["className", "isVisible", "setRef"]);
+					return l.a.createElement("div", Ae({
 						className: Object(p.a)(Ie.a.Component, t, {
 							[Ie.a.mIsNotVisible]: !s
 						}),
@@ -1118,17 +1118,17 @@
 				qe = Object(c.b)(() => Object(d.c)({
 					isLoggedIn: I.I,
 					autoplayPref: I.b,
-					currentTime: H.d,
+					currentTime: A.d,
 					currentUser: I.i,
 					inVideoNewVolumePolicyFeed: F.a,
 					inVideoNewVolumePolicyTheatre: F.b,
 					isMutedPreference: k.c,
 					isOverlayOpen: R.i,
-					loadTimes: H.g,
-					metadata: H.i,
-					mutedInFeed: H.j,
+					loadTimes: A.g,
+					metadata: A.i,
+					mutedInFeed: A.j,
 					postUrl: j.P,
-					started: H.l,
+					started: A.l,
 					videoBufferTime: O,
 					videoBufferVariant: N,
 					volume: k.d
@@ -1508,8 +1508,8 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("40bfc61-production", " ").concat(t);
-									return i && (s += " [".concat(C.yc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("0f9dff4-production", " ").concat(t);
+									return i && (s += " [".concat(C.Ac, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2361,17 +2361,17 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.zc
+					experimentName: n.Bc
 				}),
-				r = [n.Dc.FeedAndTheatre, n.Dc.FeedOnly],
+				r = [n.Fc.FeedAndTheatre, n.Fc.FeedOnly],
 				l = Object(i.a)(o, e => r.includes(e)),
-				c = [n.Dc.FeedAndTheatre, n.Dc.TheatreOnly],
+				c = [n.Fc.FeedAndTheatre, n.Fc.TheatreOnly],
 				d = Object(i.a)(o, e => c.includes(e)),
 				h = Object(i.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Ac
-				}), e => e === n.Ec.Enabled)
+					experimentName: n.Cc
+				}), e => e === n.Gc.Enabled)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.05193cbf1bee4318ee2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.7ed132954fd9e6c5e1b4.js.map

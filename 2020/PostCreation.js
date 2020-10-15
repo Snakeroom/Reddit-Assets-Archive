@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9f42b57d8a33d17c6738.js
-// Retrieved at 10/15/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.324130828141620a9c26.js
+// Retrieved at 10/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -671,16 +671,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Cb
+					experimentName: u.Eb
 				});
-				return Object(u.Hc)(t) ? void 0 : t
+				return Object(u.Jc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Db
+					experimentName: u.Fb
 				});
-				return Object(u.Hc)(t) ? void 0 : t
-			}, (e, t) => e === u.Eb.Enabled && t === u.Eb.Enabled);
+				return Object(u.Jc)(t) ? void 0 : t
+			}, (e, t) => e === u.Gb.Enabled && t === u.Gb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -728,7 +728,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "40bfc61-production"
+					SENTRY_RELEASE_VERSION: "0f9dff4-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -33810,7 +33810,7 @@
 						experimentEligibilitySelector: r.I,
 						experimentName: s.db
 					});
-					return !(!t || Object(s.Hc)(t))
+					return !(!t || Object(s.Jc)(t))
 				},
 				a = e => {
 					return Object(o.c)(e, {
@@ -34172,4 +34172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9f42b57d8a33d17c6738.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.324130828141620a9c26.js.map
