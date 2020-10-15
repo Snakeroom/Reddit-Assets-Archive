@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4c4f41d6f597cfdde0bf.js
-// Retrieved at 10/15/2020, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3abd8d9c96cd4ad3014c.js
+// Retrieved at 10/15/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("115215"),
+				buildNumber: r("115207"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1602783376"),
+				})("1602778843"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3429,14 +3429,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("7b69c02-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("5b81253-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7b69c02-production",
+						release: "5b81253-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3889,7 +3889,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "7b69c02-production",
+							releaseClient: "5b81253-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -22059,93 +22059,84 @@
 					actionDispatchers: t,
 					authHeaders: i = {},
 					cookies: n,
-					defaultApiUrl: s = h.a.apiUrl,
-					onBeforeRequestFactory: o,
-					customApiContextGenerator: d,
-					receivedActions: l,
-					statsAppName: c
-				} = e, _ = {
-					apiUrl: s,
+					onBeforeRequestFactory: s,
+					customApiContextGenerator: o,
+					receivedActions: d,
+					statsAppName: l
+				} = e, c = {
+					apiUrl: h.a.apiUrl,
 					headers: {},
 					onBeforeRequest: b,
 					onResponse: w,
-					statsAppName: c
+					statsAppName: l
 				};
 				return {
-					apiContext: d ? d(_, n) : () => _,
+					apiContext: o ? o(c, n) : () => c,
 					middleware: e => {
-						_.onResponse === w && (_ = Object.assign(Object.assign({}, _), {
-							onResponse: v(n, e, t, _)
-						})), o && (_ = Object.assign(Object.assign({}, _), {
-							onBeforeRequest: o(e)
+						c.onResponse === w && (c = Object.assign(Object.assign({}, c), {
+							onResponse: v(n, e, t, c)
+						})), s && (c = Object.assign(Object.assign({}, c), {
+							onBeforeRequest: s(e)
 						}));
-						const d = e.getState(),
-							c = (e => {
-								let {
-									receivedActions: t,
-									defaultApiUrl: i,
-									authHeaders: n = {}
-								} = e;
-								const s = Object.keys(n);
-								return (e, o) => {
-									switch (o.type) {
-										case t.loidReceived:
-											return o.payload.loid ? Object.assign(Object.assign({}, e), {
-												headers: Object.assign(Object.assign({}, e.headers), {
-													[a.a]: u(o.payload)
+						const o = e.getState(),
+							l = function(e) {
+								let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+								const i = Object.keys(t);
+								return (n, s) => {
+									switch (s.type) {
+										case e.loidReceived:
+											return s.payload.loid ? Object.assign(Object.assign({}, n), {
+												headers: Object.assign(Object.assign({}, n.headers), {
+													[a.a]: u(s.payload)
 												})
-											}) : e;
-										case t.sessionTrackerReceived:
-											return Object.assign(Object.assign({}, e), {
-												headers: Object.assign(Object.assign({}, e.headers), {
-													[a.c]: o.payload
+											}) : n;
+										case e.sessionTrackerReceived:
+											return Object.assign(Object.assign({}, n), {
+												headers: Object.assign(Object.assign({}, n.headers), {
+													[a.c]: s.payload
 												})
 											});
-										case t.reddaidReceived:
-											return Object.assign(Object.assign({}, e), {
-												headers: Object.assign(Object.assign({}, e.headers), {
-													[a.b]: o.payload
+										case e.reddaidReceived:
+											return Object.assign(Object.assign({}, n), {
+												headers: Object.assign(Object.assign({}, n.headers), {
+													[a.b]: s.payload
 												})
 											});
-										case t.userAuthenticated:
-										case t.userReauthenticated:
-											return Object.assign(Object.assign({}, e), {
+										case e.userAuthenticated:
+										case e.userReauthenticated:
+											return Object.assign(Object.assign({}, n), {
 												apiUrl: h.a.oauthUrl,
-												headers: Object.assign(Object.assign(Object.assign({}, n), e.headers), {
-													Authorization: "Bearer ".concat(o.payload.accessToken)
+												headers: Object.assign(Object.assign(Object.assign({}, t), n.headers), {
+													Authorization: "Bearer ".concat(s.payload.accessToken)
 												})
 											});
-										case t.userLoggedOut:
-											return Object.assign(Object.assign({}, e), {
-												apiUrl: i,
-												headers: r()(e.headers, [...s, "Authorization"])
+										case e.userLoggedOut:
+											return Object.assign(Object.assign({}, n), {
+												apiUrl: h.a.apiUrl,
+												headers: r()(n.headers, [...i, "Authorization"])
 											});
-										case t.headersReceived:
-											return Object.assign(Object.assign({}, e), {
-												headers: Object.assign(Object.assign({}, e.headers), o.payload.headers)
+										case e.headersReceived:
+											return Object.assign(Object.assign({}, n), {
+												headers: Object.assign(Object.assign({}, n.headers), s.payload.headers)
 											});
 										default:
-											return e
+											return n
 									}
 								}
-							})({
-								authHeaders: i,
-								defaultApiUrl: s,
-								receivedActions: l
-							});
-						return d.user.account && (_ = c(_, {
-							type: l.userAuthenticated,
-							payload: d.user.session
-						})), d.user.loid.loid && (_ = c(_, {
-							type: l.loidReceived,
-							payload: d.user.loid
-						})), d.user.sessionTracker && (_ = c(_, {
-							type: l.sessionTrackerReceived,
-							payload: d.user.sessionTracker
-						})), d.user.reddaid && (_ = c(_, {
-							type: l.reddaidReceived,
-							payload: d.user.reddaid
-						})), e => t => (_ = c(_, t), e(t))
+							}(d, i);
+						return o.user.account && (c = l(c, {
+							type: d.userAuthenticated,
+							payload: o.user.session
+						})), o.user.loid.loid && (c = l(c, {
+							type: d.loidReceived,
+							payload: o.user.loid
+						})), o.user.sessionTracker && (c = l(c, {
+							type: d.sessionTrackerReceived,
+							payload: o.user.sessionTracker
+						})), o.user.reddaid && (c = l(c, {
+							type: d.reddaidReceived,
+							payload: o.user.reddaid
+						})), e => t => (c = l(c, t), e(t))
 					}
 				}
 			}
@@ -25640,4 +25631,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4c4f41d6f597cfdde0bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3abd8d9c96cd4ad3014c.js.map
