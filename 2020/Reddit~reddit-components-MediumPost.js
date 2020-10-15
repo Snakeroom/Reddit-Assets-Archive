@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.ca728de75f5b580066cf.js
-// Retrieved at 10/14/2020, 5:10:21 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.240269b01cf940a0ee03.js
+// Retrieved at 10/15/2020, 12:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-MediumPost"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -171,6 +171,12 @@
 					}),
 					[r.x]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
+					}),
+					[r.fb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+						hk: "lYj4d"
+					}),
+					[r.ac]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+						hk: "2OaZ5T"
 					})
 				};
 
@@ -902,7 +908,7 @@
 				H = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(S.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(w.a)(Object(S.a)(e).post, y.a.black, y.a.white) : e.textColor === _.e.Dark ? y.a.black : y.a.white,
 				z = p.a.wrapped(W, "TextFlair", I.a),
 				q = p.a.wrapped(B, "RichTextFlair", I.a),
-				G = e => {
+				Z = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -912,8 +918,8 @@
 							return Object(o.j)(.1, Object(S.a)(i()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				Z = p.a.wrapped(e => {
-					const t = G(e),
+				G = p.a.wrapped(e => {
+					const t = Z(e),
 						s = c.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -991,7 +997,7 @@
 						});
 					case _.f.Nsfw:
 					case _.f.Spoiler:
-						return c.a.createElement(Z, {
+						return c.a.createElement(G, {
 							className: t,
 							text: r.text,
 							type: r.type
@@ -1991,7 +1997,7 @@
 						type: n
 					}, o) : o)
 				}), "Title", R.a),
-				G = e => {
+				Z = e => {
 					var {
 						className: t,
 						disableVisited: s,
@@ -2003,7 +2009,7 @@
 						})
 					}), r.children)
 				},
-				Z = e => {
+				G = e => {
 					var {
 						disableVisited: t,
 						nowrap: s
@@ -2062,7 +2068,7 @@
 					} = e, {
 						isSponsored: n
 					} = t;
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Z, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(G, {
 						nowrap: e.nowrap
 					}, i.a.createElement(Y, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return i.a.createElement(h.b, {
@@ -2073,7 +2079,7 @@
 					}, i.a.createElement(Y, e)); {
 						const r = t.media && Object(C.H)(t.media) ? Object(j.c)(t.id, s) : t.permalink,
 							o = e.isCommentPermalink ? Object(v.b)(r) : Object(x.a)(r);
-						return i.a.createElement(Z, {
+						return i.a.createElement(G, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, n ? ((e, t) => {
@@ -2086,7 +2092,7 @@
 								postId: e.id,
 								source: s
 							}, i.a.createElement(Y, t)) : i.a.createElement(Y, t)
-						})(t, e) : i.a.createElement(G, {
+						})(t, e) : i.a.createElement(Z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -2230,7 +2236,7 @@
 		"./src/reddit/components/Thumbnail/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return G
+				return Z
 			}));
 			var n = s("./src/lib/isUrl/index.ts"),
 				r = s("./node_modules/react/index.js"),
@@ -2407,7 +2413,7 @@
 						placeholderImage: x,
 						redditStyle: b,
 						theme: v
-					}), C = G(e), w = Q(p, t, O, y, g, v, C, l, f, h, b, d, u, m, r), k = Object(I.E)(p);
+					}), C = Z(e), w = Q(p, t, O, y, g, v, C, l, f, h, b, d, u, m, r), k = Object(I.E)(p);
 					return Object(n.a)(k) && !h && k.indexOf("redditmedia") < 0 ? i.a.createElement("div", {
 						className: Object(o.a)(F.a.container, j ? F.a.usePreview : "", s)
 					}, i.a.createElement(S.b, {
@@ -2419,7 +2425,7 @@
 						className: Object(o.a)(F.a.container, j ? F.a.usePreview : "", s)
 					}, w)
 				}),
-				G = e => {
+				Z = e => {
 					let {
 						crosspost: t,
 						post: s,
@@ -2432,13 +2438,13 @@
 						media: o,
 						thumbnail: a
 					} = t || s;
-					return r && i ? i.url : Z(o) ? o.scrubberThumbSource : a.url
+					return r && i ? i.url : G(o) ? o.scrubberThumbSource : a.url
 				},
-				Z = e => !!e && e.type === I.o.LIVEVIDEO,
+				G = e => !!e && e.type === I.o.LIVEVIDEO,
 				Q = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
 					const v = e.source && !e.isSponsored || !1;
 					if (Object(n.a)(d)) {
-						const s = Z(e.media),
+						const s = G(e.media),
 							n = s ? {
 								errorSrc: l.U
 							} : {},
@@ -4114,4 +4120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.ca728de75f5b580066cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.240269b01cf940a0ee03.js.map

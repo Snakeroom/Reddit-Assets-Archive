@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8e40d2b7e76fa74a2bda.js
-// Retrieved at 10/14/2020, 5:10:21 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0b2b0f8df5d7cfdcdbd7.js
+// Retrieved at 10/15/2020, 12:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -679,6 +679,12 @@
 					}),
 					[o.x]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
+					}),
+					[o.fb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+						hk: "lYj4d"
+					}),
+					[o.ac]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+						hk: "2OaZ5T"
 					})
 				};
 
@@ -13725,4 +13731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8e40d2b7e76fa74a2bda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0b2b0f8df5d7cfdcdbd7.js.map
