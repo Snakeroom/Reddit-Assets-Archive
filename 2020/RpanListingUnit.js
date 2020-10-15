@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.640a4c96dfda83eadd4f.js
-// Retrieved at 10/15/2020, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.a053754ecc39902ad6d9.js
+// Retrieved at 10/15/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const m = Object(n.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: h.Bb
+					experimentName: h.Cb
 				});
-				return Object(h.Gc)(t) ? void 0 : t
+				return Object(h.Hc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: h.Cb
+					experimentName: h.Db
 				});
-				return Object(h.Gc)(t) ? void 0 : t
-			}, (e, t) => e === h.Db.Enabled && t === h.Db.Enabled);
+				return Object(h.Hc)(t) ? void 0 : t
+			}, (e, t) => e === h.Eb.Enabled && t === h.Eb.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -83,7 +83,7 @@
 			};
 			const R = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				x = Object({
-					SENTRY_RELEASE_VERSION: "e89c28d-production"
+					SENTRY_RELEASE_VERSION: "e98b0bd-production"
 				}),
 				I = {
 					anonymousUserId: "t2_anonymous",
@@ -1138,8 +1138,8 @@
 				j = s("./src/reddit/constants/chat.ts"),
 				A = s("./src/reddit/constants/postLayout.ts"),
 				N = s("./src/reddit/helpers/overlay/index.ts"),
-				M = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				D = s("./src/reddit/helpers/trackers/rpan.ts"),
+				D = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
+				M = s("./src/reddit/helpers/trackers/rpan.ts"),
 				L = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				P = s("./src/reddit/models/Vote/index.ts"),
 				V = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
@@ -1151,8 +1151,8 @@
 				B = s("./src/reddit/components/Flatlist/constants.ts"),
 				K = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				z = s("./src/reddit/components/HlsVideo/index.tsx"),
-				G = s("./src/reddit/components/OverflowMenu/index.tsx"),
-				Y = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				Y = s("./src/reddit/components/OverflowMenu/index.tsx"),
+				G = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				J = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				Q = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				$ = s("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -1183,12 +1183,12 @@
 					});
 					let r;
 					if (i) {
-						const e = Object(M.d)(i),
+						const e = Object(D.d)(i),
 							t = Object(T.c)(s);
 						r = "".concat(e).concat(t)
 					} else {
 						const e = s.replace(/^r\//, "");
-						r = e === w.R ? Object(M.e)() : Object(M.g)(e)
+						r = e === w.R ? Object(D.e)() : Object(D.g)(e)
 					}
 					return r
 				},
@@ -1237,20 +1237,20 @@
 							onHideRpanUnit: s,
 							sendEvent: i
 						} = this.props;
-						s(), i(Object(D.f)())
+						s(), i(Object(M.f)())
 					}, this.onStreamClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t,
 							stream: s
 						} = this.props;
-						t(s ? Object(D.g)(s, 1) : Object(D.g)()), this.openOverlay()
+						t(s ? Object(M.g)(s, 1) : Object(M.g)()), this.openOverlay()
 					}, this.onHeaderClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t
 						} = this.props;
-						t(Object(D.g)()), this.openOverlay()
+						t(Object(M.g)()), this.openOverlay()
 					}, this.handleIntersectionEvent = e => {
 						let {
 							isIntersecting: t
@@ -1275,10 +1275,10 @@
 							streamById: r
 						} = this.props, a = i && i.post.id === t.id ? i : r(t.id);
 						if (!a) return;
-						const n = !s.sessionDurationMs ? D.w : D.t,
+						const n = !s.sessionDurationMs ? M.w : M.t,
 							o = {
 								chatState: j.f.None,
-								playerType: D.a.DU
+								playerType: M.a.DU
 							},
 							d = n(a, Object.assign(Object.assign({}, s), o));
 						this.props.sendEvent(d)
@@ -1370,7 +1370,7 @@
 						isVertical: !0
 					}), e === A.g.Compact && r.a.createElement(ue, {
 						isVertical: !1
-					})), r.a.createElement(Y.a, {
+					})), r.a.createElement(G.a, {
 						className: ae.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
@@ -1604,7 +1604,7 @@
 					let {
 						onClick: t
 					} = e;
-					return r.a.createElement(G.b, {
+					return r.a.createElement(Y.b, {
 						className: ae.a.overflowMenu,
 						dropdownClassName: ae.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
@@ -1694,27 +1694,6 @@
 			}), "ExpandIcon", o.a);
 			t.a = d
 		},
-		"./src/reddit/icons/fonts/Gift/index.m.less": function(e, t, s) {
-			e.exports = {
-				GiftIcon: "_12P1l1cITUMF05krI6QUSj",
-				giftIcon: "_12P1l1cITUMF05krI6QUSj"
-			}
-		},
-		"./src/reddit/icons/fonts/Gift/index.tsx": function(e, t, s) {
-			"use strict";
-			var i = s("./node_modules/react/index.js"),
-				r = s.n(i),
-				a = s("./src/reddit/icons/fonts/helpers.tsx"),
-				n = s("./src/reddit/icons/fonts/Gift/index.m.less"),
-				o = s.n(n);
-			const d = s("./src/lib/lessComponent.tsx").a.wrapped(e => r.a.createElement("i", {
-				className: "".concat(Object(a.b)("gift"), " ").concat(e.className),
-				id: e.id,
-				onMouseEnter: e.onMouseEnter,
-				onMouseLeave: e.onMouseLeave
-			}, r.a.createElement(a.a, null, e.desc)), "GiftIcon", o.a);
-			t.a = d
-		},
 		"./src/reddit/icons/svgs/Hide/index.tsx": function(e, t, s) {
 			"use strict";
 			var i = s("./node_modules/react/index.js"),
@@ -1729,4 +1708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.640a4c96dfda83eadd4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a053754ecc39902ad6d9.js.map

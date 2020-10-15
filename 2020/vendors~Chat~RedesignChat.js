@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.c138c1dbc53cddbc44b8.js
-// Retrieved at 8/6/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.99b1ff29f4013948d611.js
+// Retrieved at 10/15/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["vendors~Chat~RedesignChat"], {
+	["vendors~Chat~RedesignChat", "FrontpageSidebar"], {
 		"./node_modules/axios/index.js": function(e, n, t) {
 			e.exports = t("./node_modules/axios/lib/axios.js")
 		},
@@ -12930,4 +12930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~Chat~RedesignChat.c138c1dbc53cddbc44b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.99b1ff29f4013948d611.js.map

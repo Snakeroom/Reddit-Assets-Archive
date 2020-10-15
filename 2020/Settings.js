@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.cdb217d7ddf57a1abaef.js
-// Retrieved at 10/14/2020, 5:10:21 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.33f6197e8813072bde06.js
+// Retrieved at 10/15/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1154,37 +1154,39 @@
 		"./src/reddit/components/ListingSort/ListingSortIcon.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return g
+				return f
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
 				r = n("./src/lib/constants/index.ts"),
-				i = n("./src/reddit/icons/svgs/Best/index.tsx"),
-				c = n("./src/reddit/icons/svgs/Controversial/index.tsx"),
-				l = n("./src/reddit/icons/svgs/Hot/index.tsx"),
-				d = n("./src/reddit/icons/svgs/New/index.tsx"),
-				m = n("./src/reddit/icons/svgs/Rising/index.tsx"),
-				u = n("./src/reddit/icons/svgs/Top/index.tsx"),
-				p = n("./src/reddit/controls/Dropdown/index.m.less"),
-				b = n.n(p);
-			const h = {
-				[r.O.BEST]: i.a,
-				[r.O.HOT]: l.a,
-				[r.O.NEW]: d.a,
-				[r.O.CONTROVERSIAL]: c.a,
-				[r.O.TOP]: u.a,
-				[r.O.RISING]: m.a
+				i = n("./src/reddit/icons/fonts/Gift/index.tsx"),
+				c = n("./src/reddit/icons/svgs/Best/index.tsx"),
+				l = n("./src/reddit/icons/svgs/Controversial/index.tsx"),
+				d = n("./src/reddit/icons/svgs/Hot/index.tsx"),
+				m = n("./src/reddit/icons/svgs/New/index.tsx"),
+				u = n("./src/reddit/icons/svgs/Rising/index.tsx"),
+				p = n("./src/reddit/icons/svgs/Top/index.tsx"),
+				b = n("./src/reddit/controls/Dropdown/index.m.less"),
+				h = n.n(b);
+			const g = {
+				[r.O.BEST]: c.a,
+				[r.O.HOT]: d.a,
+				[r.O.NEW]: m.a,
+				[r.O.CONTROVERSIAL]: l.a,
+				[r.O.TOP]: p.a,
+				[r.O.RISING]: u.a,
+				[r.O.AWARDED]: i.a
 			};
 
-			function g(e) {
+			function f(e) {
 				let {
 					className: t,
 					sort: n
 				} = e;
-				const s = h[n];
+				const s = g[n];
 				return s ? a.a.createElement(s, {
-					className: Object(o.a)(t, b.a.iconStyles)
+					className: Object(o.a)(t, h.a.iconStyles)
 				}) : null
 			}
 		},
@@ -2666,6 +2668,9 @@
 					}),
 					[a.O.TOP]: () => s.fbt._("top", null, {
 						hk: "4pcLmp"
+					}),
+					[a.O.AWARDED]: () => s.fbt._("awarded", null, {
+						hk: "2PKXtA"
 					})
 				},
 				r = e => {
@@ -3125,6 +3130,27 @@
 						buttonText: e
 					}
 				})
+		},
+		"./src/reddit/icons/fonts/Gift/index.m.less": function(e, t, n) {
+			e.exports = {
+				GiftIcon: "_12P1l1cITUMF05krI6QUSj",
+				giftIcon: "_12P1l1cITUMF05krI6QUSj"
+			}
+		},
+		"./src/reddit/icons/fonts/Gift/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s),
+				o = n("./src/reddit/icons/fonts/helpers.tsx"),
+				r = n("./src/reddit/icons/fonts/Gift/index.m.less"),
+				i = n.n(r);
+			const c = n("./src/lib/lessComponent.tsx").a.wrapped(e => a.a.createElement("i", {
+				className: "".concat(Object(o.b)("gift"), " ").concat(e.className),
+				id: e.id,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave
+			}, a.a.createElement(o.a, null, e.desc)), "GiftIcon", i.a);
+			t.a = c
 		},
 		"./src/reddit/icons/svgs/AppleLogo/index.tsx": function(e, t, n) {
 			"use strict";
@@ -6897,4 +6923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.cdb217d7ddf57a1abaef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.33f6197e8813072bde06.js.map

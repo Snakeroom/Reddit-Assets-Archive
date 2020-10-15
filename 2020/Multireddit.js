@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.03d0a9c9c9bf43847200.js
-// Retrieved at 10/14/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.fb12f3d5c68bb18b5257.js
+// Retrieved at 10/15/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -257,16 +257,16 @@
 				B = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				P = n("./src/reddit/controls/Button/index.tsx"),
 				I = n("./src/reddit/models/ContentGate.ts"),
-				D = n("./src/reddit/selectors/meta.ts"),
-				M = n("./src/reddit/selectors/user.ts"),
+				M = n("./src/reddit/selectors/meta.ts"),
+				D = n("./src/reddit/selectors/user.ts"),
 				F = n("./src/reddit/components/ContentGate/index.m.less"),
 				R = n.n(F);
 			const {
 				fbt: A
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = p.a.div("ButtonsContainer", R.a), H = p.a.div("Container", R.a), z = p.a.div("Description", R.a), G = p.a.div("PrivateSubredditDetails", R.a), W = p.a.div("PrivateSubredditDescription", R.a), J = p.a.h3("PrivateSubredditName", R.a), V = p.a.a("Link", R.a), X = p.a.wrapped(P.k, "LinkRouterButton", R.a), q = p.a.wrapped(P.j, "LinkButton", R.a), K = p.a.wrapped(P.n, "SecondaryLinkRouterButton", R.a), Z = p.a.wrapped(P.m, "SecondaryLinkButton", R.a), Y = p.a.wrapped(X, "GoHomeLinkButton", R.a), Q = p.a.img("Image", R.a), $ = p.a.img("ImagePlaceholder", R.a), ee = p.a.wrapped(X, "LeftLinkRouterButton", R.a), te = p.a.wrapped(q, "LeftLinkButton", R.a), ne = p.a.wrapped(Z, "SecondaryLeftLinkButton", R.a), re = p.a.wrapped(K, "SecondaryLeftLinkRouterButton", R.a), se = p.a.h3("Title", R.a), ae = p.a.div("PageBody", R.a), ie = p.a.div("QuarantineMessageWrapper", R.a), oe = Object(c.c)({
-				isLoggedIn: M.H,
-				origin: D.l,
-				user: M.i
+				isLoggedIn: D.H,
+				origin: M.l,
+				user: D.i
 			}), ce = Object(B.t)(), le = Object(i.b)(oe, (e, t) => {
 				let {
 					subredditName: n
@@ -1299,6 +1299,27 @@
 				return !n && !s
 			}
 		},
+		"./src/reddit/icons/fonts/Gift/index.m.less": function(e, t, n) {
+			e.exports = {
+				GiftIcon: "_12P1l1cITUMF05krI6QUSj",
+				giftIcon: "_12P1l1cITUMF05krI6QUSj"
+			}
+		},
+		"./src/reddit/icons/fonts/Gift/index.tsx": function(e, t, n) {
+			"use strict";
+			var r = n("./node_modules/react/index.js"),
+				s = n.n(r),
+				a = n("./src/reddit/icons/fonts/helpers.tsx"),
+				i = n("./src/reddit/icons/fonts/Gift/index.m.less"),
+				o = n.n(i);
+			const c = n("./src/lib/lessComponent.tsx").a.wrapped(e => s.a.createElement("i", {
+				className: "".concat(Object(a.b)("gift"), " ").concat(e.className),
+				id: e.id,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave
+			}, s.a.createElement(a.a, null, e.desc)), "GiftIcon", o.a);
+			t.a = c
+		},
 		"./src/reddit/icons/fonts/Pencil/index.m.less": function(e, t, n) {
 			e.exports = {
 				PencilIcon: "fKeLCuOy1oZ3UGfRARX6w",
@@ -1527,8 +1548,8 @@
 					})))
 				}),
 				I = n("./src/reddit/components/RawHTMLDisplay/index.tsx"),
-				D = n("./src/reddit/components/RichTextJson/index.tsx"),
-				M = n("./src/reddit/constants/postLayout.ts"),
+				M = n("./src/reddit/components/RichTextJson/index.tsx"),
+				D = n("./src/reddit/constants/postLayout.ts"),
 				F = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				R = n("./src/reddit/controls/InternalLink/index.tsx"),
 				A = n("./src/reddit/helpers/name/index.ts"),
@@ -1770,13 +1791,13 @@
 				fbt: Be
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Pe = Object(l.c)({
 				isLoggedIn: z.I,
-				layout: (e, t) => M.e[Object(F.N)(e, t)],
+				layout: (e, t) => D.e[Object(F.N)(e, t)],
 				userIsOwner: (e, t) => Object(H.c)(e, t.multireddit.url)
-			}), Ie = Object(c.b)(Pe), De = Object(F.t)(), Me = {};
-			var Fe = De(Ie(e => o.a.createElement("div", {
+			}), Ie = Object(c.b)(Pe), Me = Object(F.t)(), De = {};
+			var Fe = Me(Ie(e => o.a.createElement("div", {
 					className: Se.a.container
 				}, o.a.createElement("div", {
-					className: Object(_.a)(Se.a.layoutContainer, e.layout === M.d.Card ? Se.a.layoutCard : null)
+					className: Object(_.a)(Se.a.layoutContainer, e.layout === D.d.Card ? Se.a.layoutCard : null)
 				}, o.a.createElement("img", {
 					className: Se.a.icon,
 					src: e.multireddit.icon
@@ -1808,9 +1829,9 @@
 					hk: "3AKmgH"
 				}))), o.a.createElement("div", {
 					className: Se.a.descriptionContainer
-				}, e.multireddit.descriptionRtJson ? o.a.createElement(D.a, {
+				}, e.multireddit.descriptionRtJson ? o.a.createElement(M.a, {
 					content: e.multireddit.descriptionRtJson,
-					rtJsonElementProps: Me
+					rtJsonElementProps: De
 				}) : o.a.createElement(I.a, {
 					html: e.multireddit.descriptionHtml || e.multireddit.description
 				}))), o.a.createElement("div", {
@@ -1943,7 +1964,31 @@
 				}))
 			}))(Ye));
 			t.default = e => o.a.createElement(Qe, e)
+		},
+		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return i
+			})), n.d(t, "a", (function() {
+				return o
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				a = n("./src/reddit/selectors/user.ts");
+			const i = e => {
+					const t = Object(s.c)(e, {
+						experimentEligibilitySelector: a.I,
+						experimentName: r.db
+					});
+					return !(!t || Object(r.Hc)(t))
+				},
+				o = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: a.I,
+						experimentName: r.db
+					}) === r.hb.ListingEnabled
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.03d0a9c9c9bf43847200.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.fb12f3d5c68bb18b5257.js.map
