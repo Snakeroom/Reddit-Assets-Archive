@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7bfc76a182e8a7e1e556.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7ebe2e4722d45040a8ba.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -144,7 +144,7 @@
 				_ = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				f = t("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts");
 			const j = Object(k.c)({
-				isGild: e => !!Object(E.p)(e)
+				isGild: e => !!Object(E.q)(e)
 			});
 			class w extends r.a.Component {
 				constructor() {
@@ -476,21 +476,21 @@
 				}).apply(this, arguments)
 			}
 			const N = Object(c.c)({
-					activePage: k.n,
+					activePage: k.o,
 					allowNavigationCallback: e => {
 						const a = Object(x.a)(e);
 						return null === a ? void 0 : a
 					},
 					coinBalance: v.d,
-					gildThingId: k.p,
+					gildThingId: k.q,
 					isIframed: C.h,
 					nightmode: v.T,
-					savedCardsPending: k.t,
+					savedCardsPending: k.u,
 					selectedAward: y.b,
-					selectedPayment: k.a,
-					stripeErrorMessage: k.h,
-					stripeTokenPending: k.k,
-					paypalErrorMessage: k.b,
+					selectedPayment: k.b,
+					stripeErrorMessage: k.i,
+					stripeTokenPending: k.l,
+					paypalErrorMessage: k.c,
 					userName: e => {
 						const a = Object(v.i)(e);
 						return "u/".concat(Object(b.e)(a))
@@ -630,4 +630,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7bfc76a182e8a7e1e556.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7ebe2e4722d45040a8ba.js.map

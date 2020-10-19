@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5f5065e8a3751a464975.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0ace5811d8cb841bba2d.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -349,8 +349,8 @@
 						f = Object(l.c)(l.a.GoldPayment);
 					let w, v;
 					r(Object(i.stripeTokenPending)());
-					const O = Object(p.v)(b);
-					if (O || (w = await r(Object(i.validateAndCreateStripeToken)(e)), v = Object(p.s)(b), w)) try {
+					const O = Object(p.w)(b);
+					if (O || (w = await r(Object(i.validateAndCreateStripeToken)(e)), v = Object(p.t)(b), w)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: o,
@@ -1392,7 +1392,7 @@
 					iFramed: k.h,
 					isGildPending: k.e,
 					isEmployee: R.F,
-					isRecommendedCoinPackagePending: L.h,
+					isRecommendedCoinPackagePending: L.i,
 					message: k.c,
 					postOrComment: (e, t) => {
 						let {
@@ -1404,8 +1404,8 @@
 							commentId: s
 						})
 					},
-					purchaseCatalogPending: L.g,
-					showPurchaseModal: B.r,
+					purchaseCatalogPending: L.h,
+					showPurchaseModal: B.s,
 					selectedAward: T.b,
 					subreddit: F.K,
 					subredditCoins: (e, t) => {
@@ -2109,4 +2109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5f5065e8a3751a464975.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0ace5811d8cb841bba2d.js.map

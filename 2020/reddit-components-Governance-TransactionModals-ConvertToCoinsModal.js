@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.77943d47a77a6e830185.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.32f0b92fd33717bab77f.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -161,8 +161,8 @@
 						return p.c.captureException(E), void(E.message && s(Object(h.stripeApiError)(E.message)))
 					}
 					s(Object(h.stripeTokenPending)());
-					const x = Object(v.v)(u);
-					if (x || (b = await s(Object(h.validateAndCreateStripeToken)(e)), f = Object(v.s)(u), b)) try {
+					const x = Object(v.w)(u);
+					if (x || (b = await s(Object(h.validateAndCreateStripeToken)(e)), f = Object(v.t)(u), b)) try {
 						const e = o()(),
 							t = x || f ? b && f ? ((e, t, a, n) => Object(P.a)(e, Object.assign(Object.assign({}, N), {
 								variables: {
@@ -1888,4 +1888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.77943d47a77a6e830185.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.32f0b92fd33717bab77f.js.map

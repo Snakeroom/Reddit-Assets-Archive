@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7871c1d12a8f3f800be9.js
-// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0a34764c45f725e93a91.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -161,17 +161,17 @@
 				x = (n("./node_modules/core-js/modules/es6.symbol.js"), n("./node_modules/fbt/lib/FbtPublic.js")),
 				w = n("./node_modules/lodash/compact.js"),
 				v = n.n(w),
-				I = n("./src/config.ts"),
-				_ = n("./src/lib/classNames/index.ts"),
+				_ = n("./src/config.ts"),
+				I = n("./src/lib/classNames/index.ts"),
 				M = n("./src/reddit/actions/gold/modals.ts"),
 				P = n("./src/reddit/actions/modal.ts"),
 				E = n("./src/reddit/actions/multireddit/index.ts"),
 				O = n("./src/reddit/actions/profile/index.ts"),
-				L = n("./src/reddit/components/CrisisFlow/index.tsx"),
-				k = n("./src/higherOrderComponents/makeAsync.tsx"),
-				y = n("./src/lib/loadWithRetries/index.ts");
-			var j = Object(k.a)({
-					getComponent: () => Object(y.a)(() => n.e("GivePremiumModal").then(n.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
+				y = n("./src/reddit/components/CrisisFlow/index.tsx"),
+				L = n("./src/higherOrderComponents/makeAsync.tsx"),
+				k = n("./src/lib/loadWithRetries/index.ts");
+			var j = Object(L.a)({
+					getComponent: () => Object(k.a)(() => n.e("GivePremiumModal").then(n.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -219,7 +219,7 @@
 						isLoading: t
 					} = e, n = D(e, ["isLoading"]);
 					return s.a.createElement("div", H({}, n, {
-						className: Object(_.a)(B.a.Shimmer, Object(F.b)({
+						className: Object(I.a)(B.a.Shimmer, Object(F.b)({
 							isLoading: t
 						}))
 					}))
@@ -261,7 +261,7 @@
 							profile: c,
 							crisisFlowEnabled: l,
 							userAcceptsPms: m
-						} = this.props, u = o && Object(R.c)(n, s).length && !a || s, p = v()([(a || i) && r ? {
+						} = this.props, u = o && Object(R.e)(n, s).length && !a || s, p = v()([(a || i) && r ? {
 							text: x.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -271,12 +271,12 @@
 							text: x.fbt._("Send Message", null, {
 								hk: "2oAlZ5"
 							}),
-							url: "".concat(I.a.redditUrl, "/message/compose/?to=").concat(d)
+							url: "".concat(_.a.redditUrl, "/message/compose/?to=").concat(d)
 						} : void 0, !a && t ? {
 							text: x.fbt._("View Snoovatar", null, {
 								hk: "31JWSq"
 							}),
-							url: "".concat(I.a.redditUrl, "/user/").concat(d, "/snoo")
+							url: "".concat(_.a.redditUrl, "/user/").concat(d, "/snoo")
 						} : void 0, !a && l ? {
 							text: x.fbt._("Get Them Help and Support", null, {
 								hk: "3FfPTy"
@@ -286,7 +286,7 @@
 							text: x.fbt._("Report User", null, {
 								hk: "4hFoE2"
 							}),
-							url: "".concat(I.a.redditUrl, "/api/report_redirect?reason_code=USER_PROFILE&thing=").concat(c.id)
+							url: "".concat(_.a.redditUrl, "/api/report_redirect?reason_code=USER_PROFILE&thing=").concat(c.id)
 						} : void 0, o && c && !c.isQuarantined ? {
 							onClick: e,
 							text: x.fbt._("Add to custom feed", null, {
@@ -363,9 +363,9 @@
 					}, s.a.createElement(u.o, {
 						className: B.a.expandButton,
 						onClick: this.moreOptionsToggled
-					}, o)), e && s.a.createElement(j, null), this.state.showCrisisModal && s.a.createElement(L.b, {
+					}, o)), e && s.a.createElement(j, null), this.state.showCrisisModal && s.a.createElement(y.b, {
 						withOverlay: !0,
-						overlayCustomStyles: L.a,
+						overlayCustomStyles: y.a,
 						fromUserProfile: !0,
 						username: this.props.profileName,
 						onCloseCrisisModal: this.onCloseCrisisModal
@@ -501,19 +501,19 @@
 					awardedLastMonth: x,
 					id: w,
 					isEmployee: v,
-					isGold: I,
-					prefShowSnoovatar: _,
+					isGold: _,
+					prefShowSnoovatar: I,
 					username: M
-				} = f, P = !!t && t.id === w, E = p && p.bannerBackgroundImage, O = !!l && l.isNSFW, L = !t && O && r, k = !(!m || !m.userIsSubscriber), y = "/user/".concat(M, "/"), j = C && C.url === y, N = !m || m.acceptChats, S = !m || m.acceptPms;
+				} = f, P = !!t && t.id === w, E = p && p.bannerBackgroundImage, O = !!l && l.isNSFW, y = !t && O && r, L = !(!m || !m.userIsSubscriber), k = "/user/".concat(M, "/"), j = C && C.url === k, N = !m || m.acceptChats, S = !m || m.acceptPms;
 				return s.a.createElement(c.a, {
 					isEmployee: v,
-					isGold: I,
+					isGold: _,
 					isNSFW: O,
 					isOverlay: i,
 					isOwnProfile: P,
 					publicDescription: m ? m.publicDescription : void 0,
 					title: l ? l.title : void 0,
-					url: j ? null : y,
+					url: j ? null : k,
 					username: M,
 					recentAwardings: x,
 					topAwardIcon: h,
@@ -523,7 +523,7 @@
 					}), !P && b && $({
 						profileName: M,
 						onToggleFollow: d,
-						userIsSubscriber: k
+						userIsSubscriber: L
 					}), !!t && !P && N && ee({
 						userId: w
 					})),
@@ -531,13 +531,13 @@
 						hasSubreddit: b,
 						isModerator: o,
 						isOwnProfile: P,
-						allowViewSnoovatar: _,
+						allowViewSnoovatar: I,
 						profileName: M,
 						sendEvent: u,
 						userAcceptsPms: S
 					}),
 					profileIcon: g,
-					bannerBackgroundImage: L ? void 0 : E
+					bannerBackgroundImage: y ? void 0 : E
 				})
 			}))
 		},
@@ -650,12 +650,16 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return o
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return i
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return a
+			})), n.d(t, "b", (function() {
+				return d
+			})), n.d(t, "d", (function() {
+				return c
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js");
 			const s = {
@@ -726,7 +730,12 @@
 					answer: () => r.fbt._("Monthly Coins are a great benefit for being a Premium member, but if you wish you can also buy individual quantities of Coins. Additionally, you will receive Coins if you are awarded Gold or Platinum.", null, {
 						hk: "36zEKr"
 					})
-				}]
+				}],
+				d = "com.reddit.premium_1";
+			var c;
+			! function(e) {
+				e.Monthly = "monthly", e.Yearly = "yearly"
+			}(c || (c = {}))
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
 			"use strict";
@@ -765,4 +774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7871c1d12a8f3f800be9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0a34764c45f725e93a91.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.311ca58694e14a39b3e1.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.305791e038675a85a6c2.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -69,8 +69,8 @@
 				P = (r("./node_modules/core-js/modules/es6.regexp.to-string.js"), r("./node_modules/bignumber.js/bignumber.js")),
 				E = r.n(P),
 				w = r("./src/graphql/operations/CancelEconRecurringPayment.json"),
-				v = r("./src/graphql/operations/ConfirmPaypalPayment.json"),
-				x = r("./src/graphql/operations/CreateEconOrder.json"),
+				x = r("./src/graphql/operations/ConfirmPaypalPayment.json"),
+				v = r("./src/graphql/operations/CreateEconOrder.json"),
 				C = r("./src/graphql/operations/CreatePaypalPayment.json"),
 				S = r("./src/graphql/operations/CreateStripePaymentWithProvidedCard.json"),
 				_ = r("./src/graphql/operations/CreateStripePaymentWithProvidedNonAuthCard.json"),
@@ -89,7 +89,7 @@
 					const d = c()(),
 						l = await ((e, t, r, s, a) => {
 							const n = new E.a(r.pricePackages[0].price).multipliedBy(s).toFixed();
-							return Object(q.a)(e, Object.assign(Object.assign({}, x), {
+							return Object(q.a)(e, Object.assign(Object.assign({}, v), {
 								variables: {
 									input: Object.assign({
 										nonce: t,
@@ -135,8 +135,8 @@
 						return g.c.captureException(P), void(P.message && o(Object(j.stripeApiError)(P.message)))
 					}
 					o(Object(j.stripeTokenPending)());
-					const O = Object(f.v)(p);
-					if (O || (b = await o(Object(j.validateAndCreateStripeToken)(e)), m = Object(f.s)(p), b)) try {
+					const O = Object(f.w)(p);
+					if (O || (b = await o(Object(j.validateAndCreateStripeToken)(e)), m = Object(f.t)(p), b)) try {
 						const e = c()(),
 							t = O || m ? b && m ? ((e, t, r, s) => Object(q.a)(e, Object.assign(Object.assign({}, S), {
 								variables: {
@@ -240,7 +240,7 @@
 					} = a;
 					try {
 						const s = c()(),
-							a = await ((e, t, r, s) => Object(q.a)(e, Object.assign(Object.assign({}, v), {
+							a = await ((e, t, r, s) => Object(q.a)(e, Object.assign(Object.assign({}, x), {
 								variables: {
 									nonce: t,
 									paymentId: r,
@@ -413,7 +413,7 @@
 			const {
 				fbt: m
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), j = "r", f = "o", h = "p", y = "approval_token_id", O = "s", P = Object(o.c)({
-				paypalErrorMessage: l.b
+				paypalErrorMessage: l.c
 			}), E = Object(n.b)(P);
 			var w;
 			! function(e) {
@@ -423,7 +423,7 @@
 				const {
 					params: t,
 					paypalErrorMessage: r
-				} = e, n = t[j], o = t[f], l = t[O], g = t[h], P = t[y], E = Object(d.a)(), v = async () => {
+				} = e, n = t[j], o = t[f], l = t[O], g = t[h], P = t[y], E = Object(d.a)(), x = async () => {
 					C(w.Loading), await E(Object(c.f)(g, P)) ? ((() => e.postMessage({
 						type: "paypal-finish.success",
 						data: {
@@ -439,30 +439,30 @@
 						title: m._("Reddit - Buy Powerups", null, {
 							hk: "4sEI31"
 						})
-					})), l ? v() : ((() => e.postMessage({
+					})), l ? x() : ((() => e.postMessage({
 						type: "paypal-finish.cancel"
 					}))(), setTimeout(() => {
 						window.close(), C(w.Cancel)
 					}, 1500))
 				}, []);
-				const [x, C] = Object(s.useState)(w.Loading);
-				return a.a.createElement(a.a.Fragment, null, x === w.Loading && a.a.createElement(p.a, {
+				const [v, C] = Object(s.useState)(w.Loading);
+				return a.a.createElement(a.a.Fragment, null, v === w.Loading && a.a.createElement(p.a, {
 					className: b.a.loader,
 					sizePx: 60
-				}), x === w.Error && a.a.createElement("div", {
+				}), v === w.Error && a.a.createElement("div", {
 					className: b.a.details
 				}, r && a.a.createElement("div", {
 					className: b.a.error
 				}, r), a.a.createElement("button", {
-					onClick: v,
+					onClick: x,
 					className: b.a.repeatButton
 				}, a.a.createElement(u.a, {
 					className: b.a.repeatIcon
-				}))), x === w.Success && a.a.createElement("div", {
+				}))), v === w.Success && a.a.createElement("div", {
 					className: b.a.details
 				}, m._("Thanks for the purchase. It is safe to close this page now.", null, {
 					hk: "1cdx2b"
-				})), x === w.Cancel && a.a.createElement("div", {
+				})), v === w.Cancel && a.a.createElement("div", {
 					className: b.a.details
 				}, m._("It is safe to close this page.", null, {
 					hk: "Zh0mx"
@@ -471,4 +471,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.311ca58694e14a39b3e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.305791e038675a85a6c2.js.map

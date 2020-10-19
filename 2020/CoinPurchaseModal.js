@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.302fdae14055769f5db7.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.456136d91c8231c05cab.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -75,8 +75,8 @@
 						P = Object(l.c)(l.a.GoldPayment);
 					let C, y;
 					r(Object(o.stripeTokenPending)());
-					const k = Object(u.v)(h);
-					if (k || (C = await r(Object(o.validateAndCreateStripeToken)(e)), y = Object(u.s)(h), C)) try {
+					const k = Object(u.w)(h);
+					if (k || (C = await r(Object(o.validateAndCreateStripeToken)(e)), y = Object(u.t)(h), C)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: c,
@@ -96,7 +96,7 @@
 								isAnonymous: c,
 								message: i
 							},
-							E = await Object(d.f)({
+							w = await Object(d.f)({
 								context: g(),
 								correlationId: P,
 								gildParams: x,
@@ -107,8 +107,8 @@
 								thingId: e,
 								token: C
 							});
-						if (E.error) {
-							const e = Object(s.a)(E.error, E.status);
+						if (w.error) {
+							const e = Object(s.a)(w.error, w.status);
 							return void r(Object(o.stripeApiError)(e))
 						} {
 							const {
@@ -122,7 +122,7 @@
 								awarder_karma_received: s,
 								coins: c,
 								treatment_tags: i
-							} = E.body;
+							} = w.body;
 							return void r(a({
 								awardKarmaReceived: s || 0,
 								awardId: u,
@@ -340,11 +340,11 @@
 				k = t("./node_modules/reselect/es/index.js"),
 				j = t("./src/higherOrderComponents/makeAsync.tsx"),
 				x = t("./src/reddit/helpers/loadThirdPartyScript.ts"),
-				E = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				w = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
+				w = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				E = t("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				v = t("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts");
 			const f = Object(k.c)({
-				isGild: e => !!Object(E.p)(e)
+				isGild: e => !!Object(w.q)(e)
 			});
 			class _ extends r.a.Component {
 				constructor() {
@@ -386,11 +386,11 @@
 				}
 			}
 			const O = Object(y.b)(f, (e, a) => ({
-				createPayment: () => "coinPackage" in a ? e(Object(w.e)(a.coinPackage)) : "awardId" in a ? e(Object(v.d)(a.awardId, a.pennies, a.thingId)) : void 0,
+				createPayment: () => "coinPackage" in a ? e(Object(E.e)(a.coinPackage)) : "awardId" in a ? e(Object(v.d)(a.awardId, a.pennies, a.thingId)) : void 0,
 				executePayment: (t, n) => {
 					if ("coinPackage" in a) {
-						if (t) return void e(Object(w.g)(n, a.coinPackage));
-						e(Object(w.f)(n, a.coinPackage))
+						if (t) return void e(Object(E.g)(n, a.coinPackage));
+						e(Object(E.f)(n, a.coinPackage))
 					} else "awardId" in a && e(Object(v.c)(n))
 				}
 			}))(_);
@@ -630,8 +630,8 @@
 				k = t("./src/reddit/selectors/gild.ts"),
 				j = t("./src/reddit/selectors/gold/giveAwards.ts"),
 				x = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				E = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				w = t("./src/reddit/selectors/platform.ts"),
+				w = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				E = t("./src/reddit/selectors/platform.ts"),
 				v = t("./src/reddit/selectors/user.ts"),
 				f = t("./src/lib/classNames/index.ts"),
 				_ = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
@@ -680,28 +680,28 @@
 				}).apply(this, arguments)
 			}
 			const F = Object(c.c)({
-					activePage: E.n,
+					activePage: w.o,
 					allowNavigationCallback: e => {
-						const a = Object(w.a)(e);
+						const a = Object(E.a)(e);
 						return null === a ? void 0 : a
 					},
 					coinBalance: v.d,
 					coinPackages: x.b,
-					correlationId: e => Object(E.o)(e) || Object(b.d)(b.a.GoldPayment, !1),
+					correlationId: e => Object(w.p)(e) || Object(b.d)(b.a.GoldPayment, !1),
 					dealCoinPackages: x.d,
-					gildThingId: E.p,
+					gildThingId: w.q,
 					isIframed: k.h,
 					nightmode: v.T,
-					savedCardsPending: E.t,
+					savedCardsPending: w.u,
 					selectedAward: j.b,
-					selectedPayment: E.a,
-					stripeErrorMessage: E.h,
-					stripeTokenPending: E.k,
-					paypalErrorMessage: E.b,
-					purchaseCatalogError: x.f,
-					purchaseCatalogPending: x.g,
-					purchasePackageId: E.q,
-					recommendedPackages: x.i,
+					selectedPayment: w.b,
+					stripeErrorMessage: w.i,
+					stripeTokenPending: w.l,
+					paypalErrorMessage: w.c,
+					purchaseCatalogError: x.g,
+					purchaseCatalogPending: x.h,
+					purchasePackageId: w.r,
+					recommendedPackages: x.j,
 					userName: e => {
 						const a = Object(v.i)(e);
 						return "u/".concat(Object(y.e)(a))
@@ -790,13 +790,13 @@
 						userName: x
 					} = this.props;
 					if (p) return i(p), l(), null;
-					const E = !!r,
-						w = [...t, ...n, ...h].filter(e => e.mobileId === g)[0];
+					const w = !!r,
+						E = [...t, ...n, ...h].filter(e => e.mobileId === g)[0];
 					return "paymentCompleted" === e ? s.a.createElement("div", null, s.a.createElement(A.a, {
-						isGild: E,
+						isGild: w,
 						onCloseClick: l,
 						userName: x
-					})) : u || !w ? s.a.createElement("div", null, s.a.createElement(I, {
+					})) : u || !E ? s.a.createElement("div", null, s.a.createElement(I, {
 						award: P,
 						onClickClose: l
 					})) : s.a.createElement("div", null, "selectPayment" === e && s.a.createElement(B.a, {
@@ -807,7 +807,7 @@
 						onCompletePurchaseClick: o,
 						onPaymentSelected: d,
 						paypalErrorMessage: m,
-						purchasePackage: w,
+						purchasePackage: E,
 						savedCardsPending: b,
 						selectedAward: P,
 						selectedPayment: C,
@@ -894,4 +894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.302fdae14055769f5db7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.456136d91c8231c05cab.js.map

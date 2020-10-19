@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e33df5c18225001e537e.js
-// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8937444ca84c7017fe8b.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -671,16 +671,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Ib
+					experimentName: u.Jb
 				});
-				return Object(u.Nc)(t) ? void 0 : t
+				return Object(u.Oc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Jb
+					experimentName: u.Kb
 				});
-				return Object(u.Nc)(t) ? void 0 : t
-			}, (e, t) => e === u.Kb.Enabled && t === u.Kb.Enabled);
+				return Object(u.Oc)(t) ? void 0 : t
+			}, (e, t) => e === u.Lb.Enabled && t === u.Lb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -728,7 +728,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "1b345ea-production"
+					SENTRY_RELEASE_VERSION: "d0e949d-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -8014,7 +8014,7 @@
 					} = this.props;
 					if (!o) return;
 					let r = "";
-					return s && (r += s), e === A.zb.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.zb.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
+					return s && (r += s), e === A.Ab.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.Ab.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -24929,10 +24929,10 @@
 					const {
 						thingId: n,
 						packageId: c
-					} = t, u = !!n, b = r.b(e), g = b ? Object(p.getAwardTypeFromAward)(b) : null, f = u ? g : a.m(e) ? d.Premium : d.Coins, x = n ? Object(h.a)(n) ? "comment" : "post" : void 0, y = c || a.q(e), v = [...Object(i.b)(e), ...Object(i.d)(e)].filter(e => e.mobileId === y)[0], C = Object(o.b)(v, u), E = v ? Math.round(1e4 * (v.baselinePennies - v.pennies) / v.baselinePennies) / 100 : 0, O = v ? Math.round(1e4 * (v.coins - v.baselineCoins) / v.coins) / 100 : 0, j = v ? v.baselinePennies !== v.pennies ? "".concat(E, "_percent_price") : v.baselineCoins !== v.coins ? "".concat(O, "_percent_bonus") : void 0 : void 0, w = f === d.Premium ? s.ob : v ? v.pennies : void 0;
+					} = t, u = !!n, b = r.b(e), g = b ? Object(p.getAwardTypeFromAward)(b) : null, f = u ? g : a.n(e) ? d.Premium : d.Coins, x = n ? Object(h.a)(n) ? "comment" : "post" : void 0, y = c || a.r(e), v = [...Object(i.b)(e), ...Object(i.d)(e)].filter(e => e.mobileId === y)[0], C = Object(o.b)(v, u), E = v ? Math.round(1e4 * (v.baselinePennies - v.pennies) / v.baselinePennies) / 100 : 0, O = v ? Math.round(1e4 * (v.coins - v.baselineCoins) / v.coins) / 100 : 0, j = v ? v.baselinePennies !== v.pennies ? "".concat(E, "_percent_price") : v.baselineCoins !== v.coins ? "".concat(O, "_percent_bonus") : void 0 : void 0, w = f === d.Premium ? s.ob : v ? v.pennies : void 0;
 					return Object.assign(Object.assign({}, l.defaults(e)), {
 						comment: n ? l.comment(e, n) : null,
-						correlationId: a.o(e) || Object(m.d)(m.a.GoldPayment, !1),
+						correlationId: a.p(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? l.post(e, n) : null,
 						screen: l.screen(e),
 						subreddit: n ? l.subreddit(e) : null,
@@ -25020,7 +25020,7 @@
 							defaultOption: u.PaymentMethod.Paypal
 						}),
 						goldPurchase: Object.assign(Object.assign({}, s.goldPurchase), {
-							source: e ? d.GiveGold : a.m(n) ? d.PremiumMarketing : d.CoinsMarketing
+							source: e ? d.GiveGold : a.n(n) ? d.PremiumMarketing : d.CoinsMarketing
 						})
 					})
 				},
@@ -33814,15 +33814,15 @@
 			const i = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: r.I,
-						experimentName: s.fb
+						experimentName: s.gb
 					});
-					return !(!t || Object(s.Nc)(t))
+					return !(!t || Object(s.Oc)(t))
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.I,
-						experimentName: s.fb
-					}) === s.jb.ListingEnabled
+						experimentName: s.gb
+					}) === s.kb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, n) {
@@ -34178,4 +34178,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e33df5c18225001e537e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8937444ca84c7017fe8b.js.map

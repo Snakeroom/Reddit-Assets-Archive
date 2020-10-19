@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.f4cf39a5ea1ed5a86b52.js
-// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.a421585690fee903f006.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -3195,7 +3195,7 @@
 			const Ot = Object(lt.a)(t => {
 				return !!Object(pt.c)(t, {
 					experimentEligibilitySelector: pt.a,
-					experimentName: bt.qb,
+					experimentName: bt.rb,
 					expEventOverride: !1
 				})
 			}, U.I, v.S, L.j, (t, e, r, n) => t && !e && !r.isNSFW && !n.some(t => "community-list" === t));
@@ -7685,7 +7685,7 @@
 								experimentName: i.r,
 								expEventOverride: e
 							});
-							return !!(Object(i.Nc)(r) ? void 0 : r)
+							return !!(Object(i.Oc)(r) ? void 0 : r)
 						})(r)) || (t => !1 !== t.collapsed)(e)
 					})
 				}
@@ -10172,8 +10172,8 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: t
 				});
-				return !(!r || Object(n.Nc)(r))
-			})(n.db)
+				return !(!r || Object(n.Oc)(r))
+			})(n.eb)
 		},
 		"./src/reddit/selectors/experiments/goldSubredditPowerups.ts": function(t, e, r) {
 			"use strict";
@@ -10185,8 +10185,8 @@
 			const i = t => {
 				return Object(s.c)(t, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.ob
-				}) === n.sb.Enabled
+					experimentName: n.pb
+				}) === n.tb.Enabled
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(t, e, r) {
@@ -10229,40 +10229,40 @@
 			var n = r("./node_modules/reselect/es/index.js"),
 				s = r("./src/reddit/constants/experiments.ts"),
 				i = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = t => s.mc.RulesAndWarnings === Object(i.c)(t, {
+			const o = t => s.nc.RulesAndWarnings === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.fc
+					experimentName: s.gc
 				}),
-				d = t => s.mc.WarningsOnly === Object(i.c)(t, {
+				d = t => s.nc.WarningsOnly === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.fc
+					experimentName: s.gc
 				}),
-				c = t => s.bc.Enabled === Object(i.c)(t, {
+				c = t => s.cc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.Ub
+					experimentName: s.Vb
 				}),
-				a = t => s.vc.Enabled === Object(i.c)(t, {
-					experimentEligibilitySelector: i.a,
-					experimentName: s.qc
-				}),
-				u = t => s.wc.Enabled === Object(i.c)(t, {
+				a = t => s.wc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
 					experimentName: s.rc
 				}),
+				u = t => s.xc.Enabled === Object(i.c)(t, {
+					experimentEligibilitySelector: i.a,
+					experimentName: s.sc
+				}),
 				l = (t, e, r) => {
 					const n = r(t, e);
-					return !(!n || !n.meter) && (n.meter.enabled && u(t) && s.Lc.Enabled === Object(i.c)(t, {
+					return !(!n || !n.meter) && (n.meter.enabled && u(t) && s.Mc.Enabled === Object(i.c)(t, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.Hc
+						experimentName: s.Ic
 					}))
 				},
 				b = Object(n.a)(t => Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.hc
-				}), t => t === s.nc.Enabled),
-				p = t => s.bc.Enabled === Object(i.c)(t, {
+					experimentName: s.ic
+				}), t => t === s.oc.Enabled),
+				p = t => s.cc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.gc
+					experimentName: s.hc
 				})
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(t, e, r) {
@@ -10498,16 +10498,18 @@
 				return i
 			})), r.d(e, "c", (function() {
 				return o
-			})), r.d(e, "i", (function() {
+			})), r.d(e, "j", (function() {
 				return d
-			})), r.d(e, "e", (function() {
-				return c
-			})), r.d(e, "g", (function() {
-				return a
 			})), r.d(e, "f", (function() {
-				return u
+				return c
+			})), r.d(e, "e", (function() {
+				return a
 			})), r.d(e, "h", (function() {
+				return u
+			})), r.d(e, "g", (function() {
 				return l
+			})), r.d(e, "i", (function() {
+				return b
 			}));
 			const n = t => t.goldPurchase.purchaseCatalog.activeSaleConfig,
 				s = t => {
@@ -10523,85 +10525,96 @@
 					return t.goldPurchase.purchaseCatalog.coinPackages.recommendedPackageIds.map(e => t.goldPurchase.purchaseCatalog.coinPackages.models[e])
 				},
 				c = t => t.goldPurchase.purchaseCatalog.premiumPackages,
-				a = t => t.goldPurchase.purchaseCatalog.api.storefrontPending,
-				u = t => t.goldPurchase.purchaseCatalog.api.errorMessage,
-				l = t => t.goldPurchase.purchaseCatalog.api.recommendedPending
+				a = (t, e) => {
+					return c(t).find(t => t.mobileId === e)
+				},
+				u = t => t.goldPurchase.purchaseCatalog.api.storefrontPending,
+				l = t => t.goldPurchase.purchaseCatalog.api.errorMessage,
+				b = t => t.goldPurchase.purchaseCatalog.api.recommendedPending
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(t, e, r) {
 			"use strict";
-			r.d(e, "n", (function() {
-				return n
-			})), r.d(e, "p", (function() {
+			r.d(e, "o", (function() {
 				return s
-			})), r.d(e, "o", (function() {
-				return i
-			})), r.d(e, "r", (function() {
-				return o
 			})), r.d(e, "q", (function() {
-				return d
-			})), r.d(e, "w", (function() {
-				return c
-			})), r.d(e, "l", (function() {
-				return a
-			})), r.d(e, "m", (function() {
-				return u
-			})), r.d(e, "x", (function() {
-				return l
-			})), r.d(e, "a", (function() {
-				return b
-			})), r.d(e, "f", (function() {
-				return p
-			})), r.d(e, "t", (function() {
-				return O
-			})), r.d(e, "u", (function() {
-				return m
+				return i
+			})), r.d(e, "p", (function() {
+				return o
 			})), r.d(e, "s", (function() {
+				return d
+			})), r.d(e, "r", (function() {
+				return c
+			})), r.d(e, "x", (function() {
+				return a
+			})), r.d(e, "a", (function() {
+				return u
+			})), r.d(e, "m", (function() {
+				return l
+			})), r.d(e, "n", (function() {
+				return b
+			})), r.d(e, "y", (function() {
+				return p
+			})), r.d(e, "b", (function() {
+				return O
+			})), r.d(e, "g", (function() {
+				return m
+			})), r.d(e, "u", (function() {
 				return f
 			})), r.d(e, "v", (function() {
 				return _
-			})), r.d(e, "d", (function() {
+			})), r.d(e, "t", (function() {
 				return g
-			})), r.d(e, "e", (function() {
+			})), r.d(e, "w", (function() {
 				return j
-			})), r.d(e, "g", (function() {
+			})), r.d(e, "e", (function() {
 				return E
-			})), r.d(e, "i", (function() {
+			})), r.d(e, "f", (function() {
 				return y
-			})), r.d(e, "j", (function() {
-				return S
 			})), r.d(e, "h", (function() {
+				return S
+			})), r.d(e, "j", (function() {
 				return T
 			})), r.d(e, "k", (function() {
 				return h
-			})), r.d(e, "c", (function() {
+			})), r.d(e, "i", (function() {
 				return I
-			})), r.d(e, "b", (function() {
+			})), r.d(e, "l", (function() {
 				return C
+			})), r.d(e, "d", (function() {
+				return A
+			})), r.d(e, "c", (function() {
+				return x
 			}));
-			const n = t => t.goldPurchase.purchaseModal.activePage,
-				s = t => t.goldPurchase.purchaseModal.gildThingId || void 0,
-				i = t => t.goldPurchase.purchaseModal.correlationId || void 0,
-				o = t => t.goldPurchase.purchaseModal.showModal,
-				d = t => t.goldPurchase.purchaseModal.packageId,
-				c = t => t.goldPurchase.targetedOffer.packageId,
-				a = t => t.goldPurchase.premiumPurchaseModal.activePage,
-				u = t => t.goldPurchase.premiumPurchaseModal.showModal,
-				l = t => t.goldPurchase.updateCardModal.pending,
-				b = t => t.goldPurchase.payment.paymentMethod,
-				p = t => t.goldPurchase.payment.cardName,
-				O = t => t.goldPurchase.payment.savedCardsPending,
-				m = t => t.goldPurchase.payment.savedCards,
-				f = t => t.goldPurchase.payment.rememberCard,
-				_ = t => t.goldPurchase.payment.useSavedCard,
-				g = t => t.goldPurchase.payment.cardValidation.cardCvc,
-				j = t => t.goldPurchase.payment.cardValidation.cardExpiry,
-				E = t => t.goldPurchase.payment.cardValidation.cardNumber,
-				y = t => t.goldPurchase.payment.cardValidation.nameOnCard,
-				S = t => t.goldPurchase.payment.cardValidation.postalCode,
-				T = t => t.goldPurchase.payment.stripeToken.errorMessage,
-				h = t => t.goldPurchase.payment.stripeToken.pending,
-				I = t => t.goldPurchase.payment.paypal.passthrough,
-				C = t => t.goldPurchase.payment.paypal.errorMessage
+			var n = r("./src/reddit/selectors/gold/purchaseCatalog.ts");
+			const s = t => t.goldPurchase.purchaseModal.activePage,
+				i = t => t.goldPurchase.purchaseModal.gildThingId || void 0,
+				o = t => t.goldPurchase.purchaseModal.correlationId || void 0,
+				d = t => t.goldPurchase.purchaseModal.showModal,
+				c = t => t.goldPurchase.purchaseModal.packageId,
+				a = t => t.goldPurchase.targetedOffer.packageId,
+				u = t => {
+					const e = Object(n.f)(t),
+						r = (t => t.goldPurchase.premiumPurchaseModal.packageId)(t);
+					return e.length && r && e.find(t => t.mobileId === r) || null
+				},
+				l = t => t.goldPurchase.premiumPurchaseModal.activePage,
+				b = t => t.goldPurchase.premiumPurchaseModal.showModal,
+				p = t => t.goldPurchase.updateCardModal.pending,
+				O = t => t.goldPurchase.payment.paymentMethod,
+				m = t => t.goldPurchase.payment.cardName,
+				f = t => t.goldPurchase.payment.savedCardsPending,
+				_ = t => t.goldPurchase.payment.savedCards,
+				g = t => t.goldPurchase.payment.rememberCard,
+				j = t => t.goldPurchase.payment.useSavedCard,
+				E = t => t.goldPurchase.payment.cardValidation.cardCvc,
+				y = t => t.goldPurchase.payment.cardValidation.cardExpiry,
+				S = t => t.goldPurchase.payment.cardValidation.cardNumber,
+				T = t => t.goldPurchase.payment.cardValidation.nameOnCard,
+				h = t => t.goldPurchase.payment.cardValidation.postalCode,
+				I = t => t.goldPurchase.payment.stripeToken.errorMessage,
+				C = t => t.goldPurchase.payment.stripeToken.pending,
+				A = t => t.goldPurchase.payment.paypal.passthrough,
+				x = t => t.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/inlineSubredditEditing.ts": function(t, e, r) {
 			"use strict";
@@ -11222,4 +11235,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.f4cf39a5ea1ed5a86b52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.a421585690fee903f006.js.map

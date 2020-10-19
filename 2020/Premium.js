@@ -1,47 +1,47 @@
-// https://www.redditstatic.com/desktop2x/Premium.178a49faad8650ce2eca.js
-// Retrieved at 10/14/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.036a504d4a276b7d2a2f.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
-		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
+		"./src/lib/humanizeDate/index.ts": function(e, a, t) {
 			"use strict";
 
-			function n(e, t, a, n) {
+			function n(e, a, t, n) {
 				const s = new Date(1e3 * e);
 				return new Intl.DateTimeFormat("default", {
 					month: n ? "short" : "long",
-					day: t ? "numeric" : void 0,
+					day: a ? "numeric" : void 0,
 					year: "numeric",
-					timeZone: a ? "UTC" : void 0
+					timeZone: t ? "UTC" : void 0
 				}).format(s)
 			}
-			a.d(t, "a", (function() {
+			t.d(a, "a", (function() {
 				return n
 			}))
 		},
-		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
+		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
 			"use strict";
-			a.d(t, "a", (function() {
+			t.d(a, "a", (function() {
 				return s
-			})), a.d(t, "b", (function() {
-				return r
+			})), t.d(a, "b", (function() {
+				return c
 			}));
-			var n = a("./src/lib/sentry/index.ts");
+			var n = t("./src/lib/sentry/index.ts");
 
 			function s() {
-				! function(e, t) {
+				! function(e, a) {
 					if (!e.rdt) {
-						var a = e.rdt = function() {
-							a.sendEvent ? a.sendEvent.apply(a, arguments) : a.callQueue.push(arguments)
+						var t = e.rdt = function() {
+							t.sendEvent ? t.sendEvent.apply(t, arguments) : t.callQueue.push(arguments)
 						};
-						a.callQueue = [];
-						var n = t.createElement("script");
+						t.callQueue = [];
+						var n = a.createElement("script");
 						n.src = "https://www.redditstatic.com/ads/pixel.js", n.async = !0;
-						var s = t.getElementsByTagName("script")[0];
+						var s = a.getElementsByTagName("script")[0];
 						s.parentNode.insertBefore(n, s)
 					}
 				}(window, document), rdt("init", "t2_2q2gwo2t"), rdt("track", "PageVisit")
 			}
-			const r = () => {
+			const c = () => {
 				try {
 					rdt("track", "Purchase")
 				} catch (e) {
@@ -49,7 +49,7 @@
 				}
 			}
 		},
-		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
+		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
 			e.exports = {
 				collapsibleFAQ: "PGMuR8fr8VizHP4fajECO",
 				collapsibleFaq: "PGMuR8fr8VizHP4fajECO",
@@ -60,15 +60,15 @@
 				isOpen: "_1epMyDuMGgpwMk-QoPqYMi"
 			}
 		},
-		"./src/reddit/components/CollapsibleFAQ/index.tsx": function(e, t, a) {
+		"./src/reddit/components/CollapsibleFAQ/index.tsx": function(e, a, t) {
 			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n),
-				r = a("./src/reddit/components/CollapsibleFAQ/index.m.less"),
-				i = a.n(r),
-				l = a("./src/lib/classNames/index.ts"),
-				c = a("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				o = a("./src/reddit/icons/svgs/ChevronUp/index.tsx");
+			var n = t("./node_modules/react/index.js"),
+				s = t.n(n),
+				c = t("./src/reddit/components/CollapsibleFAQ/index.m.less"),
+				l = t.n(c),
+				r = t("./src/lib/classNames/index.ts"),
+				i = t("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				o = t("./src/reddit/icons/svgs/ChevronUp/index.tsx");
 			class m extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleOpen = () => {
@@ -82,32 +82,32 @@
 				render() {
 					const {
 						className: e,
-						question: t,
-						children: a
+						question: a,
+						children: t
 					} = this.props, {
 						isOpen: n
-					} = this.state, r = n ? i.a.isOpen : "";
+					} = this.state, c = n ? l.a.isOpen : "";
 					return s.a.createElement("div", {
-						className: Object(l.a)(e, i.a.collapsibleFAQ)
+						className: Object(r.a)(e, l.a.collapsibleFAQ)
 					}, s.a.createElement("button", {
-						className: i.a.questionButton,
+						className: l.a.questionButton,
 						type: "button",
 						onClick: this.toggleOpen
 					}, s.a.createElement("span", {
-						className: i.a.buttonContent,
+						className: l.a.buttonContent,
 						tabIndex: -1
-					}, t, n ? s.a.createElement(o.a, {
-						className: i.a.collapseIcon
-					}) : s.a.createElement(c.a, {
-						className: i.a.collapseIcon
+					}, a, n ? s.a.createElement(o.a, {
+						className: l.a.collapseIcon
+					}) : s.a.createElement(i.a, {
+						className: l.a.collapseIcon
 					}))), s.a.createElement("div", {
-						className: Object(l.a)(i.a.collapsibleAnswer, r)
-					}, a))
+						className: Object(r.a)(l.a.collapsibleAnswer, c)
+					}, t))
 				}
 			}
-			t.a = m
+			a.a = m
 		},
-		"./src/reddit/components/MarketingPageFooter/index.m.less": function(e, t, a) {
+		"./src/reddit/components/MarketingPageFooter/index.m.less": function(e, a, t) {
 			e.exports = {
 				marketingPageFooter: "_3BwBOzWryMj3__GUbbUsfT",
 				marketingPageFooterInner: "_30YqpAvDOv6bhMsdX4RBmh",
@@ -122,187 +122,187 @@
 				legalLink: "_38avtjw3edhexhYWmJx1Rw"
 			}
 		},
-		"./src/reddit/components/MarketingPageFooter/index.tsx": function(e, t, a) {
+		"./src/reddit/components/MarketingPageFooter/index.tsx": function(e, a, t) {
 			"use strict";
-			a("./node_modules/core-js/modules/es6.regexp.to-string.js");
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n),
-				r = a("./src/reddit/components/MarketingPageFooter/index.m.less"),
-				i = a.n(r),
-				l = a("./src/lib/classNames/index.ts");
+			t("./node_modules/core-js/modules/es6.regexp.to-string.js");
+			var n = t("./node_modules/react/index.js"),
+				s = t.n(n),
+				c = t("./src/reddit/components/MarketingPageFooter/index.m.less"),
+				l = t.n(c),
+				r = t("./src/lib/classNames/index.ts");
 			const {
-				fbt: c
-			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			t.a = e => s.a.createElement("div", {
-				className: Object(l.a)(e.className, i.a.marketingPageFooter)
+				fbt: i
+			} = t("./node_modules/fbt/lib/FbtPublic.js");
+			a.a = e => s.a.createElement("div", {
+				className: Object(r.a)(e.className, l.a.marketingPageFooter)
 			}, s.a.createElement("div", {
-				className: Object(l.a)(e.className, i.a.marketingPageFooterInner)
+				className: Object(r.a)(e.className, l.a.marketingPageFooterInner)
 			}, s.a.createElement("div", {
-				className: i.a.linkContainer
+				className: l.a.linkContainer
 			}, s.a.createElement("div", {
-				className: i.a.linkCol
+				className: l.a.linkCol
 			}, s.a.createElement("ul", {
-				className: i.a.linkColInner
+				className: l.a.linkColInner
 			}, s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://about.reddit.com"
-			}, c._("about", null, {
+			}, i._("about", null, {
 				hk: "3IO4c7"
 			}))), s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://about.reddit.com/careers/"
-			}, c._("careers", null, {
+			}, i._("careers", null, {
 				hk: "2GATRU"
 			}))), s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://about.reddit.com/press/"
-			}, c._("press", null, {
+			}, i._("press", null, {
 				hk: "iUiGg"
 			}))))), s.a.createElement("div", {
-				className: i.a.linkCol
+				className: l.a.linkCol
 			}, s.a.createElement("ul", {
-				className: i.a.linkColInner
+				className: l.a.linkColInner
 			}, s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://www.redditinc.com/advertising"
-			}, c._("advertise", null, {
+			}, i._("advertise", null, {
 				hk: "RYuIn"
 			}))), s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "http://www.redditblog.com/"
-			}, c._("blog", null, {
+			}, i._("blog", null, {
 				hk: "4xzWuA"
 			}))), s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://www.reddithelp.com"
-			}, c._("help", null, {
+			}, i._("help", null, {
 				hk: "36XyzA"
 			}))))), s.a.createElement("div", {
-				className: Object(l.a)(i.a.linkCol, i.a.linkBoldCol)
+				className: Object(r.a)(l.a.linkCol, l.a.linkBoldCol)
 			}, s.a.createElement("ul", {
-				className: i.a.linkColInner
+				className: l.a.linkColInner
 			}, s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://www.reddit.com/mobile/download"
-			}, c._("the reddit app", null, {
+			}, i._("the reddit app", null, {
 				hk: "OcJ1f"
 			}))), s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://www.reddit.com/coins"
-			}, c._("reddit coins", null, {
+			}, i._("reddit coins", null, {
 				hk: "3Ts6tu"
 			}))), s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://www.reddit.com/premium"
-			}, c._("reddit premium", null, {
+			}, i._("reddit premium", null, {
 				hk: "3vPbLO"
 			}))), s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://redditgifts.com/"
-			}, c._("reddit gifts", null, {
+			}, i._("reddit gifts", null, {
 				hk: "3WNNEy"
 			}))))), s.a.createElement("div", {
-				className: Object(l.a)(i.a.linkCol, i.a.linkBoldCol)
+				className: Object(r.a)(l.a.linkCol, l.a.linkBoldCol)
 			}, s.a.createElement("ul", {
-				className: i.a.linkColInner
+				className: l.a.linkColInner
 			}, s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://www.facebook.com/reddit/"
-			}, c._("Facebook", null, {
+			}, i._("Facebook", null, {
 				hk: "47DT2F"
 			}))), s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://twitter.com/reddit"
-			}, c._("Twitter", null, {
+			}, i._("Twitter", null, {
 				hk: "3aUv7u"
 			}))), s.a.createElement("li", {
-				className: i.a.linkItem
+				className: l.a.linkItem
 			}, s.a.createElement("a", {
-				className: i.a.link,
+				className: l.a.link,
 				href: "https://www.instagram.com/reddit/"
-			}, c._("Instagram", null, {
+			}, i._("Instagram", null, {
 				hk: "dVIRX"
 			})))))), s.a.createElement("ul", {
-				className: i.a.legal
+				className: l.a.legal
 			}, s.a.createElement("li", {
-				className: i.a.legalItem
+				className: l.a.legalItem
 			}, s.a.createElement("a", {
-				className: i.a.legalLink,
+				className: l.a.legalLink,
 				href: "https://www.redditinc.com/policies/content-policy"
-			}, c._("content policy", null, {
+			}, i._("content policy", null, {
 				hk: "4ptiaZ"
 			}))), s.a.createElement("li", {
-				className: i.a.legalItem
+				className: l.a.legalItem
 			}, s.a.createElement("a", {
-				className: i.a.legalLink,
+				className: l.a.legalLink,
 				href: "https://www.reddit.com/help/privacypolicy"
-			}, c._("privacy policy", null, {
+			}, i._("privacy policy", null, {
 				hk: "1ybjnz"
 			}))), s.a.createElement("li", {
-				className: i.a.legalItem
+				className: l.a.legalItem
 			}, s.a.createElement("a", {
-				className: i.a.legalLink,
+				className: l.a.legalLink,
 				href: "https://www.redditinc.com/policies/user-agreement"
-			}, c._("user agreement", null, {
+			}, i._("user agreement", null, {
 				hk: "4puRxC"
 			}))), s.a.createElement("li", {
-				className: i.a.legalItem
+				className: l.a.legalItem
 			}, s.a.createElement("a", {
-				className: i.a.legalLink,
+				className: l.a.legalLink,
 				href: "https://www.reddit.com/help/healthycommunities/"
-			}, c._("mod policy", null, {
+			}, i._("mod policy", null, {
 				hk: "1VvAdM"
 			}))), s.a.createElement("li", {
-				className: i.a.legalItem
-			}, c._("© {year} Reddit, Inc. All rights reserved", [c._param("year", (new Date).getFullYear().toString())], {
+				className: l.a.legalItem
+			}, i._("© {year} Reddit, Inc. All rights reserved", [i._param("year", (new Date).getFullYear().toString())], {
 				hk: "23FUx6"
 			})))))
 		},
-		"./src/reddit/helpers/createEmojiText/index.tsx": function(e, t, a) {
+		"./src/reddit/helpers/createEmojiText/index.tsx": function(e, a, t) {
 			"use strict";
-			a.d(t, "a", (function() {
-				return r
+			t.d(a, "a", (function() {
+				return c
 			}));
-			a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./node_modules/core-js/modules/es6.regexp.split.js");
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n);
+			t("./node_modules/core-js/modules/es6.regexp.to-string.js"), t("./node_modules/core-js/modules/es6.regexp.split.js");
+			var n = t("./node_modules/react/index.js"),
+				s = t.n(n);
 
-			function r(e, t) {
-				const a = e.toString().split(":");
-				return a.length % 2 == 0 ? e : a.reduce((e, a, n) => (n % 2 == 0 ? e.push(a) : "" === a ? e.push(":") : ":".concat(a, ":") in t ? e.push(t[":".concat(a, ":")]) : e.push(":".concat(a, ":")), e), []).map((e, t) => s.a.createElement(s.a.Fragment, {
-					key: t
+			function c(e, a) {
+				const t = e.toString().split(":");
+				return t.length % 2 == 0 ? e : t.reduce((e, t, n) => (n % 2 == 0 ? e.push(t) : "" === t ? e.push(":") : ":".concat(t, ":") in a ? e.push(a[":".concat(t, ":")]) : e.push(":".concat(t, ":")), e), []).map((e, a) => s.a.createElement(s.a.Fragment, {
+					key: a
 				}, e))
 			}
 		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, a) {
+		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, a, t) {
 			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n);
-			t.a = e => s.a.createElement("svg", {
+			var n = t("./node_modules/react/index.js"),
+				s = t.n(n);
+			a.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 22",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -311,11 +311,11 @@
 				fill: "inherit"
 			})))
 		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, a) {
+		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, a, t) {
 			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n);
-			t.a = e => s.a.createElement("svg", {
+			var n = t("./node_modules/react/index.js"),
+				s = t.n(n);
+			a.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 12 12",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -325,11 +325,11 @@
 				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
 			})))
 		},
-		"./src/reddit/icons/svgs/PremiumLogo/index.tsx": function(e, t, a) {
+		"./src/reddit/icons/svgs/PremiumLogo/index.tsx": function(e, a, t) {
 			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n);
-			t.a = e => s.a.createElement("svg", {
+			var n = t("./node_modules/react/index.js"),
+				s = t.n(n);
+			a.a = e => s.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 558 98",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -348,93 +348,21 @@
 				fill: "#FFF"
 			}))
 		},
-		"./src/reddit/models/Gold/Premium/index.ts": function(e, t, a) {
-			"use strict";
-			a.d(t, "a", (function() {
-				return s
-			})), a.d(t, "c", (function() {
-				return r
-			})), a.d(t, "d", (function() {
-				return i
-			})), a.d(t, "b", (function() {
-				return l
-			}));
-			var n = a("./node_modules/fbt/lib/FbtPublic.js");
-			const s = {
-					PREMIUM_1_MONTH: {
-						priceInCoins: 1800,
-						monthsOfPremium: 1
-					},
-					PREMIUM_3_MONTHS: {
-						priceInCoins: 5400,
-						monthsOfPremium: 3
-					},
-					PREMIUM_6_MONTHS: {
-						priceInCoins: 10800,
-						monthsOfPremium: 6
-					},
-					PREMIUM_12_MONTHS: {
-						priceInCoins: 21600,
-						monthsOfPremium: 12
-					}
-				},
-				r = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-					const a = [];
-					for (const n in s) {
-						const r = s[n];
-						(r.priceInCoins <= e || t) && a.push(r)
-					}
-					return a
-				},
-				i = e => n.fbt._({
-					"*": "{number of months} months {number of coins} Coins",
-					_1: "1 month {number of coins} Coins"
-				}, [n.fbt._plural(e.monthsOfPremium, "number of months"), n.fbt._param("number of coins", e.priceInCoins.toLocaleString())], {
-					hk: "2bar0C"
-				}),
-				l = [{
-					prompt: () => n.fbt._("What is a Reddit Premium Membership?", null, {
-						hk: "3ibd7e"
-					}),
-					answer: () => n.fbt._("Reddit Premium is our subscription membership program, and it directly supports Reddit and the communities that it hosts. It offers an entirely ads-free Reddit experience as well as other benefits, including monthly Coins and access to the exclusive r/lounge community.", null, {
-						hk: "22tBeJ"
-					})
-				}, {
-					prompt: () => n.fbt._("Why change the name to Premium? What happened to calling it Gold?", null, {
-						hk: "buZNC"
-					}),
-					answer: () => n.fbt._("The membership has a new name for a good reason. Many people confused the subscription Reddit Gold membership with a virtual good or coin. To make things easier to understand, we’ve renamed the membership to “Reddit Premium”, while the virtual good is called “Coins”. We have kept your favorite features and added more.", null, {
-						hk: "2CCKCo"
-					})
-				}, {
-					prompt: () => n.fbt._("What if I was subscribed to the old Gold Membership program?", null, {
-						hk: "2Mv367"
-					}),
-					answer: () => n.fbt._("Fine people everywhere with a Gold Membership are now members of Reddit Premium. It still offers the same great ads-free browsing experience and access to r/lounge, but now you will also receive Coins monthly so you can award exceptional contributions.", null, {
-						hk: "IQrwR"
-					})
-				}, {
-					prompt: () => n.fbt._("The Premium membership gives me Coins, what are those for?", null, {
-						hk: "4FMg0V"
-					}),
-					answer: () => n.fbt._("Coins are a virtual good, and you can use them to award exceptional posts or comments with a Silver, Gold, or Platinum Award. This is a way to show appreciation for an exceptional contribution to Reddit, and can also grant the recipient special bonus benefits. You can award someone by clicking on “Give Award” below a post or comment.", null, {
-						hk: "46r7Aq"
-					})
-				}, {
-					prompt: () => n.fbt._("Do I have to subscribe to Reddit Premium to get Coins?", null, {
-						hk: "boE6i"
-					}),
-					answer: () => n.fbt._("Monthly Coins are a great benefit for being a Premium member, but if you wish you can also buy individual quantities of Coins. Additionally, you will receive Coins if you are awarded Gold or Platinum.", null, {
-						hk: "36zEKr"
-					})
-				}]
+		"./src/reddit/pages/Premium/PremiumButtons/index.m.less": function(e, a, t) {
+			e.exports = {
+				premiumAnnualButton: "_2570j5dKW6IeBhxlQzl5WL",
+				premiumMonthlyButton: "_7__SJMdC4NiDvJ9BVKQrm",
+				premiumDiscountBadge: "_1AJGAPTnSSY4HwOKw5300M",
+				renewalSubtext: "mNwLF2M-GWWkKuxa83xBQ",
+				hero: "_47LcjeuJicuk5sAs6MQM5"
+			}
 		},
-		"./src/reddit/pages/Premium/PurchaseSection/index.m.less": function(e, t, a) {
+		"./src/reddit/pages/Premium/PurchaseSection/index.m.less": function(e, a, t) {
 			e.exports = {
 				purchaseSection: "_1Z4JIk1tig4105EbrIycaL",
 				purchaseSectionTitle: "rHMISrZp9SHJ1IzdhABiz",
 				premiumPackage: "_3WGcoFTTz-GM82WnzxSX73",
+				withAnnual: "_2D-Bgelk33-3kEI8edNq2R",
 				leftPanel: "_1puFgDp5FbTAQr9a_0LrGn",
 				rightPanel: "_3D-ZD1M6iujRD9Do10wzzG",
 				loaderContainer: "_1OLGghaUKpu5I5d4lJ9ppG",
@@ -442,6 +370,7 @@
 				premiumPerks: "bEsD0n_csIvPULyVDGGVd",
 				premiumPerk: "_2z53Gpin--BjLiC-gOY2Fz",
 				checkmark: "DOF92Z56Jpuzu-uk0dtm8",
+				buttons: "_1iRpHhgmaOE6MwDu6nDcyX",
 				premiumButton: "I9OOXc26jbu8k3mMZKfrf",
 				renewalSubtext: "_2l8oKUCqUjuCRML67dacb9",
 				miscContainer: "_3g7Ai2PiGJ7m-aSeJuycky",
@@ -452,7 +381,7 @@
 				redeemButton: "_2nS3QvMYiCrNl4K1Tj6YYP"
 			}
 		},
-		"./src/reddit/pages/Premium/index.m.less": function(e, t, a) {
+		"./src/reddit/pages/Premium/index.m.less": function(e, a, t) {
 			e.exports = {
 				hero: "_3KzmnADgrpURkhkiSnEL8O",
 				heroInner: "_2oUlTJc4IuiAjkfQeGQ6j7",
@@ -461,87 +390,146 @@
 				heroDescription: "hUEA0jAwHPAvz7Q_ME6CQ",
 				heroCTA: "gXFj405BWNVJwvFfEte3S",
 				heroCta: "gXFj405BWNVJwvFfEte3S",
+				heroButtons: "_267SU8HUh3akX44wSBowkV",
 				heroPremiumExpiration: "_3mePsES_o4kEB7LYhNam7d",
 				faqsSection: "La5Bp4i68ssM0jTc6B5JA",
 				faqsTitle: "_2GcqV-6cZ_hX6CL-beaiLm",
 				faqs: "_3-oSsu5eqn4UFdWjr2yxgw"
 			}
 		},
-		"./src/reddit/pages/Premium/index.tsx": function(e, t, a) {
+		"./src/reddit/pages/Premium/index.tsx": function(e, a, t) {
 			"use strict";
-			a.r(t);
-			a("./node_modules/core-js/modules/es6.regexp.to-string.js");
-			var n = a("./src/config.ts"),
-				s = a("./node_modules/fbt/lib/FbtPublic.js"),
-				r = a("./node_modules/react/index.js"),
-				i = a.n(r),
-				l = a("./node_modules/react-redux/es/index.js"),
-				c = a("./node_modules/react-router-redux/es/index.js"),
-				o = a("./node_modules/reselect/es/index.js"),
-				m = a("./src/lib/constants/index.ts"),
-				d = a("./src/lib/humanizeDate/index.ts"),
-				u = a("./src/lib/loadRedditAdsPixel.ts"),
-				h = a("./src/reddit/components/TrackingHelper/index.tsx"),
-				p = a("./src/reddit/helpers/correlationIdTracker.ts"),
-				g = a("./src/reddit/helpers/createEmojiText/index.tsx"),
-				b = a("./src/reddit/selectors/telemetry.ts");
-			const f = "premium_marketing",
-				k = () => e => Object.assign({
-					source: f,
+			t.r(a);
+			t("./node_modules/core-js/modules/es6.regexp.to-string.js");
+			var n = t("./src/config.ts"),
+				s = t("./node_modules/fbt/lib/FbtPublic.js"),
+				c = t("./node_modules/react/index.js"),
+				l = t.n(c),
+				r = t("./node_modules/react-redux/es/index.js"),
+				i = t("./node_modules/react-router-redux/es/index.js"),
+				o = t("./node_modules/reselect/es/index.js"),
+				m = t("./src/lib/constants/index.ts"),
+				d = t("./src/lib/humanizeDate/index.ts"),
+				u = t("./src/lib/loadRedditAdsPixel.ts"),
+				h = t("./src/reddit/components/TrackingHelper/index.tsx"),
+				p = t("./src/reddit/helpers/correlationIdTracker.ts"),
+				g = t("./src/reddit/helpers/createEmojiText/index.tsx"),
+				k = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				b = t("./src/reddit/selectors/telemetry.ts");
+			const v = (e, a) => {
+					const {
+						packageId: t
+					} = a;
+					if (!t) return null;
+					const n = Object(k.e)(e, t);
+					return n ? {
+						goldPurchase: {
+							subscriptionType: n.frequency
+						}
+					} : null
+				},
+				E = "premium_marketing",
+				f = e => a => Object.assign(Object.assign({
+					source: E,
 					action: "click",
 					noun: "get_premium",
 					correlationId: Object(p.c)(p.a.GoldPayment)
-				}, b.defaults(e)),
-				v = () => e => Object.assign({
-					source: f,
+				}, b.defaults(a)), v(a, {
+					packageId: e
+				})),
+				P = e => a => Object.assign(Object.assign({
+					source: E,
 					action: "click",
 					noun: "price",
 					correlationId: Object(p.c)(p.a.GoldPayment)
-				}, b.defaults(e)),
+				}, b.defaults(a)), v(a, {
+					packageId: e
+				})),
 				C = () => e => Object.assign({
-					source: f,
+					source: E,
 					action: "click",
 					noun: "redeem_code",
 					correlationId: Object(p.c)(p.a.GoldPayment)
 				}, b.defaults(e)),
-				P = () => e => Object.assign({
-					source: f,
+				N = () => e => Object.assign({
+					source: E,
 					action: "click",
 					noun: "manage",
 					correlationId: Object(p.c)(p.a.GoldPayment)
 				}, b.defaults(e));
-			var E = a("./src/reddit/helpers/trackers/screenview.ts"),
-				_ = a("./src/telemetry/index.ts"),
-				w = a("./src/telemetry/models/Timer.ts"),
-				N = a("./src/reddit/pages/Premium/index.m.less"),
-				x = a.n(N),
-				M = a("./src/reddit/actions/claimgold.ts"),
-				I = a("./src/reddit/actions/login.ts"),
-				y = a("./src/reddit/selectors/claimgold.ts"),
-				j = a("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
-				O = a("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
-				G = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				S = a("./src/reddit/components/MarketingPageFooter/index.tsx"),
-				L = a("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
-				F = a("./src/reddit/controls/Button/index.tsx"),
-				A = a("./src/reddit/models/Gold/Premium/index.ts"),
-				R = a("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				T = a("./src/reddit/selectors/goldPurchaseModals.ts"),
-				B = a("./src/reddit/selectors/user.ts"),
-				z = a("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
-				D = a("./src/lib/classNames/index.ts"),
-				U = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				q = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				H = a("./src/reddit/pages/Premium/PurchaseSection/index.m.less"),
-				J = a.n(H);
-			class Q extends i.a.Component {
+			var _ = t("./src/reddit/helpers/trackers/screenview.ts"),
+				x = t("./src/telemetry/index.ts"),
+				w = t("./src/telemetry/models/Timer.ts"),
+				j = t("./src/reddit/pages/Premium/index.m.less"),
+				M = t.n(j),
+				I = t("./src/reddit/actions/claimgold.ts"),
+				y = t("./src/reddit/actions/login.ts"),
+				O = t("./src/reddit/selectors/claimgold.ts"),
+				S = t("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
+				G = t("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				A = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
+				B = t("./src/reddit/components/MarketingPageFooter/index.tsx"),
+				L = t("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
+				F = t("./src/reddit/controls/Button/index.tsx"),
+				D = t("./src/reddit/models/Gold/Premium/index.ts"),
+				z = t("./src/reddit/selectors/experiments/econAnnualPremium.ts"),
+				T = t("./src/reddit/selectors/goldPurchaseModals.ts"),
+				R = t("./src/reddit/selectors/user.ts"),
+				U = t("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
+				q = t("./src/lib/classNames/index.ts"),
+				J = t("./src/reddit/pages/Premium/PremiumButtons/index.m.less"),
+				H = t.n(J);
+			const {
+				fbt: Q
+			} = t("./node_modules/fbt/lib/FbtPublic.js");
+			var Y = e => {
+					const {
+						className: a,
+						isHeroStyles: t,
+						onClick: n,
+						premiumPackages: s
+					} = e;
+					if (!s.length) return null;
+					const c = s.find(e => e.frequency === D.d.Monthly),
+						r = s.find(e => e.frequency === D.d.Yearly);
+					return l.a.createElement("div", {
+						className: Object(q.a)(H.a.buttons, a, {
+							[H.a.hero]: !!t
+						})
+					}, r && l.a.createElement(F.h, {
+						className: H.a.premiumAnnualButton,
+						onClick: () => n(r.mobileId)
+					}, Q._("{annual-price} /Year", [Q._param("annual-price", "$".concat((r.pennies / 100).toLocaleString()))], {
+						hk: "3Dkxyy"
+					}), !!r.bonusPct && l.a.createElement("span", {
+						className: H.a.premiumDiscountBadge
+					}, Q._("Save {annual-month-discount}", [Q._param("annual-month-discount", "".concat(r.bonusPct, "%"))], {
+						hk: "TgjzN"
+					}))), c && l.a.createElement(F.h, {
+						className: H.a.premiumMonthlyButton,
+						onClick: () => {
+							n(c.mobileId)
+						}
+					}, Q._("{monthly-price} /Month", [Q._param("monthly-price", "$".concat((c.pennies / 100).toLocaleString()))], {
+						hk: "4dtFlF"
+					})), l.a.createElement("div", {
+						className: H.a.renewalSubtext
+					}, Q._("Subscriptions automatically renew", null, {
+						hk: "v8BCD"
+					})))
+				},
+				V = t("./src/reddit/controls/LoadingIcon/index.tsx"),
+				W = t("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				K = t("./src/reddit/pages/Premium/PurchaseSection/index.m.less"),
+				X = t.n(K);
+			class Z extends l.a.Component {
 				constructor() {
 					super(...arguments), this.onClaimGoldClick = () => {
 						const {
 							sendEvent: e,
-							toggleClaimGoldModal: t
+							toggleClaimGoldModal: a
 						} = this.props;
-						e(C()), t()
+						e(C()), a()
 					}, this.onGiftCodeRedeem = e => {
 						e.preventDefault(), this.props.onGiftCodeRedeem()
 					}
@@ -549,194 +537,236 @@
 				render() {
 					const {
 						className: e,
-						giftCode: t,
-						isPremiumSubscriber: a,
+						giftCode: a,
+						isAnnualPremiumEnabled: t,
+						isPremiumSubscriber: c,
 						onClickBuyPremium: r,
-						onClickManagePremium: l,
-						onGiftCodeInput: c,
-						premiumPackage: o,
-						shouldShowClaimGoldModal: m
-					} = this.props, d = "".concat(n.a.assetPath, "/img/gold/crest-with-background.jpg");
-					return i.a.createElement("div", {
-						className: Object(D.a)(e, J.a.purchaseSection)
-					}, i.a.createElement("h2", {
-						className: J.a.purchaseSectionTitle
+						onClickManagePremium: i,
+						onGiftCodeInput: o,
+						premiumPackages: m,
+						shouldShowClaimGoldModal: d
+					} = this.props, u = "".concat(n.a.assetPath, "/img/gold/crest-with-background.jpg");
+					return l.a.createElement("div", {
+						className: Object(q.a)(e, X.a.purchaseSection)
+					}, l.a.createElement("h2", {
+						className: X.a.purchaseSectionTitle
 					}, s.fbt._("Join Reddit Premium Today", null, {
 						hk: "2sm8Pz"
-					})), i.a.createElement("div", {
-						className: J.a.premiumPackage
-					}, o ? i.a.createElement(V, {
-						isPremiumSubscriber: a,
+					})), l.a.createElement("div", {
+						className: Object(q.a)(X.a.premiumPackage, {
+							[X.a.withAnnual]: t
+						})
+					}, m && m.length ? l.a.createElement(ee, {
+						isAnnualPremiumEnabled: t,
+						isPremiumSubscriber: c,
 						onClickBuyPremium: r,
-						onClickManagePremium: l,
-						premiumPackage: o
-					}) : i.a.createElement(W, null), i.a.createElement("div", {
-						className: J.a.rightPanel,
+						onClickManagePremium: i,
+						premiumPackages: m
+					}) : l.a.createElement($, null), !t && l.a.createElement("div", {
+						className: X.a.rightPanel,
 						style: {
-							backgroundImage: 'url("'.concat(d, '")')
+							backgroundImage: 'url("'.concat(u, '")')
 						}
-					})), i.a.createElement("div", {
-						className: J.a.miscContainer
-					}, i.a.createElement("div", {
-						className: Object(D.a)(J.a.miscItem, J.a.renewalSubtext)
+					})), l.a.createElement("div", {
+						className: X.a.miscContainer
+					}, !t && l.a.createElement("div", {
+						className: Object(q.a)(X.a.miscItem, X.a.renewalSubtext)
 					}, s.fbt._("Subscription automatically renews monthly", null, {
 						hk: "21TCR6"
-					})), i.a.createElement(F.o, {
-						className: J.a.redeemCodeLink,
+					})), l.a.createElement(F.o, {
+						className: X.a.redeemCodeLink,
 						onClick: this.onClaimGoldClick
 					}, s.fbt._("Redeem a gift code", null, {
 						hk: "2NJLkV"
-					})), i.a.createElement("form", {
-						className: Object(D.a)(J.a.giftCodeInputContainer, {
-							[J.a.giftCodeHidden]: !m
+					})), l.a.createElement("form", {
+						className: Object(q.a)(X.a.giftCodeInputContainer, {
+							[X.a.giftCodeHidden]: !d
 						}),
 						onSubmit: this.onGiftCodeRedeem
-					}, i.a.createElement("input", {
-						className: J.a.giftCodeInput,
+					}, l.a.createElement("input", {
+						className: X.a.giftCodeInput,
 						type: "text",
 						maxLength: 30,
 						placeholder: s.fbt._("Gift Code", null, {
 							hk: "1UDPjt"
 						}),
-						onChange: c,
-						value: t
-					}), i.a.createElement(F.i, {
-						className: J.a.redeemButton
+						onChange: o,
+						value: a
+					}), l.a.createElement(F.i, {
+						className: X.a.redeemButton
 					}, s.fbt._("Redeem", null, {
 						hk: "1d2cH2"
 					})))))
 				}
 			}
-			const W = () => i.a.createElement("div", {
-					className: Object(D.a)(J.a.leftPanel, J.a.loaderContainer)
-				}, i.a.createElement(U.a, {
+			const $ = () => l.a.createElement("div", {
+					className: Object(q.a)(X.a.leftPanel, X.a.loaderContainer)
+				}, l.a.createElement(V.a, {
 					sizePx: 80
 				})),
-				V = e => {
+				ee = e => {
 					const {
+						isAnnualPremiumEnabled: a,
 						isPremiumSubscriber: t,
-						onClickBuyPremium: a,
-						onClickManagePremium: n,
-						premiumPackage: r
+						onClickBuyPremium: n,
+						onClickManagePremium: c,
+						premiumPackages: r
 					} = e, {
-						pennies: l,
-						periodicalCoins: c,
+						periodicalCoins: i,
 						signupBonusCoins: o
-					} = r, m = !!o && o > 0 && o.toLocaleString(), d = c.toLocaleString(), u = "$".concat((l / 100).toLocaleString());
-					return i.a.createElement("div", {
-						className: J.a.leftPanel
-					}, m && i.a.createElement("div", {
-						className: J.a.bonusBanner
-					}, s.fbt._("{bonus-coins} Coins Sign Up Gift", [s.fbt._param("bonus-coins", m)], {
+					} = r[0], d = !!o && o > 0 && o.toLocaleString(), u = i.toLocaleString();
+					return l.a.createElement("div", {
+						className: Object(q.a)(X.a.leftPanel, {
+							[X.a.withAnnual]: a
+						})
+					}, d && !a && l.a.createElement("div", {
+						className: X.a.bonusBanner
+					}, s.fbt._("{bonus-coins} Coins Sign Up Gift", [s.fbt._param("bonus-coins", d)], {
 						hk: "1D95uH"
-					})), i.a.createElement("ul", {
-						className: J.a.premiumPerks
-					}, i.a.createElement("li", {
-						className: J.a.premiumPerk
-					}, i.a.createElement(q.a, {
-						className: J.a.checkmark
+					})), l.a.createElement("ul", {
+						className: X.a.premiumPerks
+					}, d && a && l.a.createElement("li", {
+						className: X.a.premiumPerk
+					}, l.a.createElement(W.a, {
+						className: X.a.checkmark
+					}), s.fbt._("{bonus-coins} Coins Sign Up Gift", [s.fbt._param("bonus-coins", d)], {
+						hk: "1D95uH"
+					})), l.a.createElement("li", {
+						className: X.a.premiumPerk
+					}, l.a.createElement(W.a, {
+						className: X.a.checkmark
 					}), s.fbt._("Ads-free experience", null, {
 						hk: "1dmvDS"
-					})), i.a.createElement("li", {
-						className: J.a.premiumPerk
-					}, i.a.createElement(q.a, {
-						className: J.a.checkmark
-					}), s.fbt._("{monthly-coins} Coins every month", [s.fbt._param("monthly-coins", d)], {
+					})), l.a.createElement("li", {
+						className: X.a.premiumPerk
+					}, l.a.createElement(W.a, {
+						className: X.a.checkmark
+					}), s.fbt._("{monthly-coins} Coins every month", [s.fbt._param("monthly-coins", u)], {
 						hk: "CngQz"
-					}))), i.a.createElement(F.h, {
-						className: J.a.premiumButton,
-						onClick: t ? n : a
-					}, t ? s.fbt._("Manage", null, {
+					}))), l.a.createElement("div", {
+						className: X.a.buttons
+					}, t ? l.a.createElement(F.h, {
+						className: X.a.premiumButton,
+						onClick: c
+					}, s.fbt._("Manage", null, {
 						hk: "2SIec3"
-					}) : s.fbt._("{monthly-price}/Month", [s.fbt._param("monthly-price", u)], {
-						hk: "2xmHVK"
-					})))
+					})) : a ? l.a.createElement(Y, {
+						onClick: n,
+						premiumPackages: r
+					}) : l.a.createElement(F.h, {
+						className: X.a.premiumButton,
+						onClick: () => {
+							n(D.b)
+						}
+					}, s.fbt._("{monthly-price} /Month", [s.fbt._param("monthly-price", "$".concat((m.ob / 100).toLocaleString()))], {
+						hk: "4dtFlF"
+					}))))
 				},
-				Y = Object(o.c)({
-					giftCode: y.a,
+				ae = Object(o.c)({
+					giftCode: O.a,
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
-					isGold: B.q,
-					isPremiumSubscriber: B.r,
-					isLoggedIn: B.I,
-					premiumPackages: R.e,
-					purchaseCatalogPending: R.g,
-					shouldShowPremiumPurchaseModal: T.m,
-					shouldShowClaimGoldModal: y.b
+					isAnnualPremiumEnabled: z.a,
+					isGold: R.q,
+					isPremiumSubscriber: R.r,
+					isLoggedIn: R.I,
+					premiumPackages: k.f,
+					purchaseCatalogPending: k.h,
+					shouldShowPremiumPurchaseModal: T.n,
+					shouldShowClaimGoldModal: O.b
 				}),
-				K = Object(l.b)(Y, (e, t) => ({
-					onGiftCodeInput: t => {
-						t.stopPropagation(), e(Object(M.j)(t.target.value))
+				te = Object(r.b)(ae, (e, a) => ({
+					onGiftCodeInput: a => {
+						a.stopPropagation(), e(Object(I.j)(a.target.value))
 					},
-					onGiftCodeRedeem: () => e(Object(M.h)()),
-					onManagePremium: () => e(Object(c.b)("/settings/gold")),
-					onOpenLoginModal: () => e(Object(I.h)()),
-					onPurchasePremium: t => e(Object(j.d)({
-						correlationId: t
+					onGiftCodeRedeem: () => e(Object(I.h)()),
+					onManagePremium: () => e(Object(i.b)("/settings/gold")),
+					onOpenLoginModal: () => e(Object(y.h)()),
+					onPurchasePremium: (a, t) => e(Object(S.d)({
+						correlationId: t,
+						packageId: a
 					})),
-					requestPurchaseCatalog: t => e(Object(O.b)(t)),
-					toggleClaimGoldModal: () => e(Object(M.i)())
+					requestPurchaseCatalog: a => e(Object(G.b)(a)),
+					toggleClaimGoldModal: () => e(Object(I.i)())
 				}));
-			class X extends i.a.Component {
+			class ne extends l.a.Component {
 				constructor() {
-					super(...arguments), this.correlationId = Object(p.d)(p.a.GoldPayment, !1), this.onClickGetPremium = () => {
-						this.onPurchase(k)
-					}, this.onClickPrice = () => {
-						this.onPurchase(v)
+					super(...arguments), this.correlationId = Object(p.d)(p.a.GoldPayment, !1), this.onClickGetPremium = e => {
+						this.onPurchase(e, f)
+					}, this.onClickPrice = e => {
+						this.onPurchase(e, P)
+					}, this.onClickManagePremium = () => {
+						const {
+							onManagePremium: e,
+							sendEvent: a
+						} = this.props;
+						a(N()), e()
 					}
 				}
 				componentDidMount() {
 					const {
 						premiumPackages: e,
-						purchaseCatalogPending: t,
-						requestPurchaseCatalog: a,
+						purchaseCatalogPending: a,
+						requestPurchaseCatalog: t,
 						sendEvent: n
 					} = this.props;
-					e.length || t || a(this.correlationId);
+					e.length || a || t(this.correlationId);
 					const s = m.Bb.PREMIUM;
-					_.c.has(s) && (n(Object(E.l)(w.TimerType.InApp, _.c.end(s))), n(Object(E.k)())), Object(u.a)()
+					x.c.has(s) && (n(Object(_.l)(w.TimerType.InApp, x.c.end(s))), n(Object(_.k)())), Object(u.a)()
 				}
 				render() {
 					const {
 						className: e
 					} = this.props;
-					return i.a.createElement("div", {
+					return l.a.createElement("div", {
 						className: e
-					}, this.renderHero(), this.renderPurchase(), this.renderFAQSection(), this.renderModal(), i.a.createElement(S.a, null))
+					}, this.renderHero(), this.renderPurchase(), this.renderFAQSection(), this.renderModal(), l.a.createElement(B.a, null))
 				}
 				renderHero() {
 					const {
 						goldExpiration: e,
+						isAnnualPremiumEnabled: a,
 						isGold: t,
-						isPremiumSubscriber: a
+						isPremiumSubscriber: c,
+						premiumPackages: r
 					} = this.props;
-					return i.a.createElement("div", {
-						className: x.a.hero,
+					return l.a.createElement("div", {
+						className: M.a.hero,
 						style: {
 							backgroundImage: 'url("'.concat(n.a.assetPath, '/img/gold/premium-hero-g.jpg")')
 						}
-					}, i.a.createElement("div", {
-						className: x.a.heroInner
-					}, i.a.createElement("h1", {
-						className: x.a.heroTitle
-					}, i.a.createElement(z.a, {
-						className: x.a.heroLogo
-					})), i.a.createElement("p", {
-						className: x.a.heroDescription
+					}, l.a.createElement("div", {
+						className: M.a.heroInner
+					}, l.a.createElement("h1", {
+						className: M.a.heroTitle
+					}, l.a.createElement(U.a, {
+						className: M.a.heroLogo
+					})), l.a.createElement("p", {
+						className: M.a.heroDescription
 					}, s.fbt._("Reddit Premium gives you an ad-free experience, special benefits, and directly supports Reddit. The more Reddit is user-supported, the freer we are to make Reddit the best it can be.", null, {
-						hk: "3BejFp"
-					})), i.a.createElement(F.h, {
-						className: x.a.heroCTA,
-						onClick: this.onClickGetPremium
-					}, a ? s.fbt._("Manage Premium", null, {
+						hk: "3mkAF4"
+					})), c ? l.a.createElement(F.h, {
+						className: M.a.heroCTA,
+						onClick: this.onClickManagePremium
+					}, s.fbt._("Manage Premium", null, {
 						hk: "13LAq1"
-					}) : s.fbt._("Get Reddit Premium", null, {
+					})) : a ? l.a.createElement(Y, {
+						className: M.a.heroButtons,
+						isHeroStyles: !0,
+						premiumPackages: r,
+						onClick: this.onClickPrice
+					}) : l.a.createElement(F.h, {
+						className: M.a.heroCTA,
+						onClick: () => {
+							this.onClickGetPremium(D.b)
+						}
+					}, s.fbt._("Get Reddit Premium", null, {
 						hk: "2stvFN"
-					})), !a && t && i.a.createElement("div", {
-						className: x.a.heroPremiumExpiration
+					})), !c && t && l.a.createElement("div", {
+						className: M.a.heroPremiumExpiration
 					}, Object(g.a)(s.fbt._("Your Premium membership is valid until {Premium expiration date}. Manage it :here:.", [s.fbt._param("Premium expiration date", Object(d.a)(e, !0))], {
 						hk: "yMI3j"
 					}).toString(), {
-						":here:": i.a.createElement("a", {
+						":here:": l.a.createElement("a", {
 							href: "/settings/premium",
 							target: "_blank"
 						}, s.fbt._("here", null, {
@@ -744,65 +774,66 @@
 						}))
 					}))))
 				}
-				onPurchase(e) {
+				onPurchase(e, a) {
 					const {
 						isPremiumSubscriber: t,
-						isLoggedIn: a,
-						onManagePremium: n,
+						isLoggedIn: n,
 						onOpenLoginModal: s,
-						onPurchasePremium: r,
-						sendEvent: i
+						onPurchasePremium: c,
+						sendEvent: l
 					} = this.props;
-					t ? (i(P()), n()) : (a && i(e()), a ? r(this.correlationId) : s())
+					t ? this.onClickManagePremium() : n ? (l(a(e)), c(e, this.correlationId)) : s()
 				}
 				renderPurchase() {
 					const {
 						giftCode: e,
+						isAnnualPremiumEnabled: a,
 						isPremiumSubscriber: t,
-						onGiftCodeInput: a,
-						onGiftCodeRedeem: n,
-						premiumPackages: s,
+						onGiftCodeInput: n,
+						onGiftCodeRedeem: s,
+						premiumPackages: c,
 						sendEvent: r,
-						shouldShowClaimGoldModal: l,
-						toggleClaimGoldModal: c
-					} = this.props, o = s.length ? s[0] : void 0;
-					return i.a.createElement(Q, {
+						shouldShowClaimGoldModal: i,
+						toggleClaimGoldModal: o
+					} = this.props;
+					return l.a.createElement(Z, {
 						giftCode: e,
+						isAnnualPremiumEnabled: a,
 						isPremiumSubscriber: t,
 						onClickBuyPremium: this.onClickPrice,
-						onClickManagePremium: this.onClickPrice,
-						onGiftCodeInput: a,
-						onGiftCodeRedeem: n,
-						premiumPackage: o,
+						onClickManagePremium: this.onClickManagePremium,
+						onGiftCodeInput: n,
+						onGiftCodeRedeem: s,
+						premiumPackages: c,
 						sendEvent: r,
-						shouldShowClaimGoldModal: l,
-						toggleClaimGoldModal: c
+						shouldShowClaimGoldModal: i,
+						toggleClaimGoldModal: o
 					})
 				}
 				renderFAQSection() {
-					return i.a.createElement("div", {
-						className: x.a.faqsSection
-					}, i.a.createElement("h2", {
-						className: x.a.faqsTitle
+					return l.a.createElement("div", {
+						className: M.a.faqsSection
+					}, l.a.createElement("h2", {
+						className: M.a.faqsTitle
 					}, s.fbt._("Reddit Premium FAQ", null, {
 						hk: "r4Da2"
-					})), i.a.createElement("div", {
-						className: x.a.faqs
-					}, A.b.map((e, t) => i.a.createElement(G.a, {
+					})), l.a.createElement("div", {
+						className: M.a.faqs
+					}, D.c.map((e, a) => l.a.createElement(A.a, {
 						defaultClosed: !0,
 						question: e.prompt(),
-						key: t
+						key: a
 					}, e.answer()))))
 				}
 				renderModal() {
-					return this.props.shouldShowPremiumPurchaseModal && i.a.createElement(L.a, null)
+					return this.props.shouldShowPremiumPurchaseModal && l.a.createElement(L.a, null)
 				}
 				componentWillUnmount() {
 					Object(p.b)(p.a.GoldPayment)
 				}
 			}
-			t.default = K(Object(h.c)(X))
+			a.default = te(Object(h.c)(ne))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.178a49faad8650ce2eca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.036a504d4a276b7d2a2f.js.map

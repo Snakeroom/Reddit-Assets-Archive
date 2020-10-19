@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.bb58e29b8b82b225e76d.js
-// Retrieved at 6/30/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.409194e408f12cd504d9.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/components/Gold/TargetedOfferModal/index.m.less": function(e, t, a) {
@@ -34,9 +34,9 @@
 				h = a("./src/reddit/components/Gold/TargetedOfferModal/index.m.less"),
 				g = a.n(h);
 			const k = Object(s.c)({
-				correlationId: e => Object(p.o)(e) || Object(i.d)(i.a.GoldPayment, !1),
+				correlationId: e => Object(p.p)(e) || Object(i.d)(i.a.GoldPayment, !1),
 				dealCoinPackages: f.d,
-				purchasePackageId: p.w
+				purchasePackageId: p.x
 			});
 			const O = Object(c.b)(k, e => ({
 				onClose: () => {
@@ -129,4 +129,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=GoldTargetedOfferModal.bb58e29b8b82b225e76d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.409194e408f12cd504d9.js.map

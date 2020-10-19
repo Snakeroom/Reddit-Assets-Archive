@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.784625c67f6c18e66c33.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.5bdf1c5354e07679a630.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -258,8 +258,8 @@
 						coinBalance: e,
 						isEmployee: t
 					} = this.props;
-					return Object(R.c)(e, t).map(e => ({
-						displayText: Object(R.d)(e),
+					return Object(R.e)(e, t).map(e => ({
+						displayText: Object(R.f)(e),
 						value: e
 					}))
 				}
@@ -274,7 +274,7 @@
 						isAnonymous: i,
 						message: r,
 						selectedPackage: d
-					} = this.state, u = Object(R.d)(d), p = a ? [l.a.messageInputOpen] : "";
+					} = this.state, u = Object(R.f)(d), p = a ? [l.a.messageInputOpen] : "";
 					return c.a.createElement(T.d, {
 						className: e
 					}, c.a.createElement(T.h, null, c.a.createElement(G.a, null, c.a.createElement(T.p, null, s.fbt._("Give Premium", null, {
@@ -796,4 +796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.784625c67f6c18e66c33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.5bdf1c5354e07679a630.js.map

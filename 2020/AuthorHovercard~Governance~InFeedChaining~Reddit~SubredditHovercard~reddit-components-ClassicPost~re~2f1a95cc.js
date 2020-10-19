@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.e3508aa5aca4abe84f1b.js
-// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.ff81e3f6bcb1f58113a7.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -89,18 +89,18 @@
 				l = r.n(u),
 				b = r("./src/reddit/models/Gold/Award.ts"),
 				_ = r("./src/reddit/components/Gold/AwardKarmaToastMessage/index.m.less"),
-				O = r.n(_);
+				p = r.n(_);
 			const {
-				fbt: p
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), m = e => p._("Sent! You earned {=awarder karma}", [p._param("=awarder karma", l.a.createElement("a", {
-				className: O.a.karmaLink,
+				fbt: O
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), m = e => O._("Sent! You earned {=awarder karma}", [O._param("=awarder karma", l.a.createElement("a", {
+				className: p.a.karmaLink,
 				href: b.a,
 				target: "_blank",
 				rel: "noopener noreferrer"
-			}, p._({
+			}, O._({
 				"*": "{awarder karma} awarder karma",
 				_1: "1 awarder karma"
-			}, [p._plural(e.awarderKarmaReceived, "awarder karma")], {
+			}, [O._plural(e.awarderKarmaReceived, "awarder karma")], {
 				hk: "2Llmz0"
 			})))], {
 				hk: "3ItXUT"
@@ -243,8 +243,8 @@
 							id: l
 						} = e,
 						_ = Object(I.a)(a, u),
-						O = Object(S.a)(a),
-						p = e.awardKarmaReceived,
+						p = Object(S.a)(a),
+						O = e.awardKarmaReceived,
 						D = Object(C.i)(a),
 						k = Object(y.b)(a) || Object(B.d)(B.a.GildingFlow, !1);
 					if (Object(y.h)(a)) {
@@ -269,8 +269,8 @@
 							});
 						r && (e.subredditCoins = r - _.coinPrice)
 					}
-					if (t(te(a, e)), D && O) {
-						const e = D.awarderKarma + p,
+					if (t(te(a, e)), D && p) {
+						const e = D.awarderKarma + O,
 							r = Object(g.e)(D);
 						t(ne({
 							userName: r,
@@ -287,9 +287,9 @@
 							hk: "2sIK9Y"
 						}),
 						U = _.coinPrice;
-					O ? Object(q.a)(Object(H.viewKarmaSuccessEvent)({
+					p ? Object(q.a)(Object(H.viewKarmaSuccessEvent)({
 						award: _,
-						awarderKarmaEarned: p,
+						awarderKarmaEarned: O,
 						awardeeKarmaEarned: 0,
 						numberCoins: U,
 						thingId: l
@@ -302,8 +302,8 @@
 					t(Object(c.e)({
 						customIconAsset: v,
 						kind: h.b.SuccessAward,
-						text: O && p > 0 ? m({
-							awarderKarmaReceived: p
+						text: p && O > 0 ? m({
+							awarderKarmaReceived: O
 						}) : x
 					})), setTimeout(() => {
 						const e = Object(L.a)(u, l),
@@ -361,8 +361,8 @@
 				l = r("./src/reddit/actions/toaster.ts"),
 				b = r("./src/reddit/endpoints/gold/paypalPurchases.ts"),
 				_ = r("./src/reddit/endpoints/gold/purchase.ts"),
-				O = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				p = r("./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts"),
+				p = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				O = r("./src/reddit/helpers/r2/normalizeAwardingsFromR2.ts"),
 				m = r("./src/reddit/models/Gold/Award.ts"),
 				f = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				E = r("./src/reddit/models/Toast/index.ts"),
@@ -388,15 +388,15 @@
 						s ? ("new_purchaser" !== s.dealInfo.type || (e => {
 							const t = Object(h.c)(e, {
 								experimentEligibilitySelector: h.a,
-								experimentName: j.gb
+								experimentName: j.hb
 							});
-							return !(!t || Object(j.Nc)(t))
+							return !(!t || Object(j.Oc)(t))
 						})(a)) && ("repeat_purchaser" !== s.dealInfo.type || (e => {
 							const t = Object(h.c)(e, {
 								experimentEligibilitySelector: h.a,
-								experimentName: j.eb
+								experimentName: j.fb
 							});
-							return !(!t || Object(j.Nc)(t))
+							return !(!t || Object(j.Oc)(t))
 						})(a)) && (e(w({
 							correlationId: t,
 							packageId: r
@@ -405,14 +405,14 @@
 				}, P = (e, t, r) => async (a, s) => {
 					await a(Object(c.c)(e, r));
 					const o = s(),
-						i = Object(g.i)(o);
+						i = Object(g.j)(o);
 					if (0 !== i.length) a(R({
 						correlationId: r,
 						packageId: i[0].mobileId,
 						thingId: t
 					}));
 					else {
-						const e = Object(g.f)(o),
+						const e = Object(g.g)(o),
 							t = n.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
@@ -431,11 +431,11 @@
 							coins: u,
 							pennies: l
 						} = t,
-						b = Object(D.o)(c) || Object(O.d)(O.a.GoldPayment, !1);
-					let p, m;
+						b = Object(D.p)(c) || Object(p.d)(p.a.GoldPayment, !1);
+					let O, m;
 					r(Object(d.stripeTokenPending)());
-					const E = Object(D.v)(c);
-					if (E || (p = await r(Object(d.validateAndCreateStripeToken)(e)), m = Object(D.s)(c), p)) try {
+					const E = Object(D.w)(c);
+					if (E || (O = await r(Object(d.validateAndCreateStripeToken)(e)), m = Object(D.t)(c), O)) try {
 						const e = await Object(_.e)({
 							coins: u,
 							context: i(),
@@ -444,7 +444,7 @@
 							pennies: l,
 							rememberCard: m,
 							savedCardId: E || void 0,
-							token: p
+							token: O
 						});
 						if (e.error) {
 							const t = Object(a.a)(e.error, e.status);
@@ -453,7 +453,7 @@
 						return r(Object(d.paymentCompleted)({
 							coins: e.body.coins ? e.body.coins : 0,
 							confirmed: !1
-						})), void Object(O.b)(O.a.GoldPayment)
+						})), void Object(p.b)(p.a.GoldPayment)
 					} catch (j) {
 						const e = Object(a.a)(j);
 						r(Object(d.stripeApiError)(e))
@@ -472,11 +472,11 @@
 							coins: b,
 							pennies: E
 						} = t,
-						j = Object(D.o)(l) || Object(O.d)(O.a.GoldPayment, !1);
+						j = Object(D.p)(l) || Object(p.d)(p.a.GoldPayment, !1);
 					let h, g;
 					o(Object(d.stripeTokenPending)());
-					const I = Object(D.v)(l);
-					if (I || (h = await o(Object(d.validateAndCreateStripeToken)(e)), g = Object(D.s)(l), h)) try {
+					const I = Object(D.w)(l);
+					if (I || (h = await o(Object(d.validateAndCreateStripeToken)(e)), g = Object(D.t)(l), h)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: i,
@@ -527,14 +527,14 @@
 							return o(t({
 								awardKarmaReceived: n || 0,
 								awardId: S,
-								awardings: a && a.length ? Object(p.a)(a).map(e => ({
+								awardings: a && a.length ? Object(O.a)(a).map(e => ({
 									award: Object(m.h)(e),
 									total: e.count
 								})) : [],
 								coins: s,
 								id: e,
 								treatmentTags: i
-							})), void Object(O.b)(O.a.GoldPayment)
+							})), void Object(p.b)(p.a.GoldPayment)
 						}
 					} catch (S) {
 						const e = Object(a.a)(S);
@@ -549,7 +549,7 @@
 					let {
 						apiContext: s
 					} = n;
-					const i = Object(O.c)(O.a.GoldPayment),
+					const i = Object(p.c)(p.a.GoldPayment),
 						{
 							coins: c,
 							pennies: u
@@ -580,7 +580,7 @@
 						apiContext: i
 					} = s;
 					const c = n(),
-						u = Object(D.o)(c) || Object(O.d)(O.a.GoldPayment, !1),
+						u = Object(D.p)(c) || Object(p.d)(p.a.GoldPayment, !1),
 						{
 							coins: l,
 							pennies: _
@@ -604,11 +604,11 @@
 							r(Object(d.paymentCompleted)({
 								coins: e,
 								confirmed: !0
-							})), Object(O.b)(O.a.GoldPayment)
+							})), Object(p.b)(p.a.GoldPayment)
 						}
-					} catch (p) {
-						o.c.captureException(p);
-						const e = Object(a.a)(p);
+					} catch (O) {
+						o.c.captureException(O);
+						const e = Object(a.a)(O);
 						r(Object(d.paypalApiError)(e))
 					}
 				}, v = (e, t) => async (s, i, c) => {
@@ -616,7 +616,7 @@
 						apiContext: u
 					} = c;
 					const l = i(),
-						_ = Object(D.o)(l) || Object(O.d)(O.a.GoldPayment, !1),
+						_ = Object(D.p)(l) || Object(p.d)(p.a.GoldPayment, !1),
 						{
 							coins: E,
 							pennies: j
@@ -666,7 +666,7 @@
 							s(c({
 								awardId: g,
 								awardKarmaReceived: t || 0,
-								awardings: Object(p.a)(e).map(e => ({
+								awardings: Object(O.a)(e).map(e => ({
 									award: Object(m.h)(e),
 									total: e.count
 								})),
@@ -674,7 +674,7 @@
 								id: o,
 								subredditCoins: a,
 								treatmentTags: i
-							})), Object(O.b)(O.a.GoldPayment)
+							})), Object(p.b)(p.a.GoldPayment)
 						}
 					} catch (h) {
 						o.c.captureException(h);
@@ -708,9 +708,9 @@
 			})), r.d(t, "A", (function() {
 				return _
 			})), r.d(t, "B", (function() {
-				return O
-			})), r.d(t, "C", (function() {
 				return p
+			})), r.d(t, "C", (function() {
+				return O
 			})), r.d(t, "D", (function() {
 				return m
 			})), r.d(t, "f", (function() {
@@ -763,8 +763,8 @@
 				l = "GOLD_PAYMENT__SELECT_SAVED_CARD",
 				b = "GOLD_PAYMENT__STRIPE_API_ERROR",
 				_ = "GOLD_PAYMENT__STRIPE_ELEMENT_CHANGE",
-				O = "GOLD_PAYMENT__CARD_ERROR",
-				p = "GOLD_PAYMENT__STRIPE_TOKEN_PENDING",
+				p = "GOLD_PAYMENT__CARD_ERROR",
+				O = "GOLD_PAYMENT__STRIPE_TOKEN_PENDING",
 				m = "GOLD_PAYMENT__TOGGLE_REMEMBER_CARD",
 				f = "UPDATE_CARD_MODAL__CLOSE_UPDATE_CARD_MODAL",
 				E = "UPDATE_CARD_MODAL__UPDATE_CARD_FAILED",
@@ -799,9 +799,9 @@
 			})), r.d(t, "cardElementChange", (function() {
 				return _
 			})), r.d(t, "stripeTokenPending", (function() {
-				return O
-			})), r.d(t, "stripeTokenError", (function() {
 				return p
+			})), r.d(t, "stripeTokenError", (function() {
+				return O
 			})), r.d(t, "stripeApiError", (function() {
 				return m
 			})), r.d(t, "validateAndCreateStripeToken", (function() {
@@ -834,12 +834,12 @@
 				l = Object(s.a)(i.b),
 				b = Object(s.a)(i.a),
 				_ = Object(s.a)(i.A),
-				O = Object(s.a)(i.C),
-				p = Object(s.a)(i.B),
+				p = Object(s.a)(i.C),
+				O = Object(s.a)(i.B),
 				m = Object(s.a)(i.z),
 				f = e => async (t, r) => {
 					const a = r(),
-						s = Object(d.f)(a),
+						s = Object(d.g)(a),
 						{
 							token: o,
 							error: i
@@ -848,7 +848,7 @@
 						});
 					if (s.trim()) {
 						if (!i && o) return o;
-						t(p(i || void 0))
+						t(O(i || void 0))
 					} else {
 						const e = n.fbt._("Your card’s name field is incomplete", null, {
 							hk: "VBdRU"
@@ -909,8 +909,8 @@
 				l = r("./src/lib/omitHeaders/index.ts"),
 				b = r("./src/reddit/constants/headers.ts"),
 				_ = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				O = r("./src/reddit/endpoints/gold/purchase.ts");
-			const p = e => ({
+				p = r("./src/reddit/endpoints/gold/purchase.ts");
+			const O = e => ({
 					baselineCoins: e.baseline_coins || e.coins,
 					baselinePennies: e.baseline_pennies || e.pennies,
 					bonusPct: e.bonus_pct,
@@ -925,9 +925,9 @@
 					mobileId: e.mobile_id,
 					pennies: e.pennies
 				}),
-				m = e => e.map(p),
+				m = e => e.map(O),
 				f = e => e.map(e => {
-					const t = p(e);
+					const t = O(e);
 					return Object.assign(Object.assign({}, t), {
 						dealInfo: {
 							type: e.deal_info.type,
@@ -938,6 +938,7 @@
 					})
 				}),
 				E = e => e.map(e => ({
+					bonusPct: e.bonus_pct,
 					description: e.description,
 					frequency: e.frequency,
 					frequencyDays: e.frequency_days,
@@ -947,6 +948,7 @@
 					},
 					mobileId: e.mobile_id,
 					mobilePennies: e.mobile_pennies,
+					paypalButtonId: e.paypal_button_id,
 					pennies: e.pennies,
 					periodicalCoins: e.periodical_coins,
 					signupBonusCoins: e.signup_bonus_coins
@@ -1000,9 +1002,9 @@
 					} = s;
 					t(S());
 					const u = r(),
-						p = Object(D.I)(u);
+						O = Object(D.I)(u);
 					try {
-						const r = !p,
+						const r = !O,
 							n = await (async e => {
 								let {
 									context: t,
@@ -1018,7 +1020,7 @@
 									data: {
 										correlation_id: r
 									}
-								}).then(O.c).then(h)
+								}).then(p.c).then(h)
 							})({
 								context: i(),
 								correlationId: e,
@@ -1055,7 +1057,7 @@
 									correlation_id: n,
 									intended_award: r
 								}
-							}).then(O.c).then(g)
+							}).then(p.c).then(g)
 						})({
 							awardId: e,
 							context: u(),
@@ -1065,8 +1067,8 @@
 						const a = n.body;
 						if (!a.coinPackages || !a.coinPackages.length) throw new Error("Recommended coin packages returned empty for award id ".concat(e));
 						r(T(a))
-					} catch (p) {
-						Object(a.b)() || console.error(p), o.c.captureException(p);
+					} catch (O) {
+						Object(a.b)() || console.error(O), o.c.captureException(O);
 						const e = n.fbt._("There was an error fetching purchasable coins package", null, {
 							hk: "47Fxzt"
 						});
@@ -1146,9 +1148,9 @@
 			})), r.d(t, "d", (function() {
 				return _
 			})), r.d(t, "i", (function() {
-				return O
-			})), r.d(t, "h", (function() {
 				return p
+			})), r.d(t, "h", (function() {
+				return O
 			})), r.d(t, "g", (function() {
 				return m
 			}));
@@ -1163,8 +1165,8 @@
 				l = "MORE__PROFILE_GQL_MODERATED_PENDING",
 				b = "MORE__PROFILE_GQL_MODERATED_LOADED",
 				_ = "MORE__PROFILE_GQL_MODERATED_FAILED",
-				O = "PROFILE__MULTIREDDITS_PENDING",
-				p = "PROFILE__MULTIREDDITS_LOADED",
+				p = "PROFILE__MULTIREDDITS_PENDING",
+				O = "PROFILE__MULTIREDDITS_LOADED",
 				m = "PROFILE__MULTIREDDITS_FAILED"
 		},
 		"./src/reddit/actions/profile/index.ts": function(e, t, r) {
@@ -1196,8 +1198,8 @@
 				l = r("./src/graphql/operations/ModeratedSubreddits.json"),
 				b = r("./src/lib/makeApiRequest/index.ts"),
 				_ = r("./src/lib/makeGqlRequest/index.ts"),
-				O = r("./src/lib/omitHeaders/index.ts"),
-				p = r("./src/reddit/constants/headers.ts");
+				p = r("./src/lib/omitHeaders/index.ts"),
+				O = r("./src/reddit/constants/headers.ts");
 			var m = r("./src/graphql/operations/RedditorMultireddits.json");
 			var f = r("./src/reddit/helpers/graphql/normalizeMultiredditDataFromGql/index.ts"),
 				E = r("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
@@ -1312,7 +1314,7 @@
 						}) && Object(w.hb)(b, {
 							userName: e
 						})) && !t) return;
-					const [_, O] = await Promise.all([Object(u.c)(i(), e), Object(u.d)(d(), e)]);
+					const [_, p] = await Promise.all([Object(u.c)(i(), e), Object(u.d)(d(), e)]);
 					if (_.ok) {
 						_.body && _.body.data && _.body.data.is_suspended && r(Object(s.u)({
 							profileName: e
@@ -1334,8 +1336,8 @@
 								profile: Object(S.a)(t.subreddit, t.name)
 							} : null)
 						}(_.body);
-						if (O.ok && (null === (c = O.body.data.redditorInfoByName) || void 0 === c ? void 0 : c.karma)) {
-							const e = null === (l = O.body.data.redditorInfoByName) || void 0 === l ? void 0 : l.karma,
+						if (p.ok && (null === (c = p.body.data.redditorInfoByName) || void 0 === c ? void 0 : c.karma)) {
+							const e = null === (l = p.body.data.redditorInfoByName) || void 0 === l ? void 0 : l.karma,
 								r = e ? {
 									awardeeKarma: e.fromAwardsReceived,
 									awarderKarma: e.fromAwardsGiven,
@@ -1359,7 +1361,7 @@
 					if (Object(R.a)(r(), o)) return;
 					if (Object(R.k)(r(), o)) return;
 					t(x(o));
-					const i = await ((e, t) => Object(b.a)(Object(O.a)(e, [p.a]), {
+					const i = await ((e, t) => Object(b.a)(Object(p.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/user/").concat(t, "/moderated_subreddits.json"),
 						method: a.db.GET,
 						traceRequestName: "get_profile_moderated_subreddits",
@@ -1529,7 +1531,7 @@
 			})), r.d(t, "i", (function() {
 				return be
 			})), r.d(t, "U", (function() {
-				return pe
+				return Oe
 			})), r.d(t, "nb", (function() {
 				return me
 			})), r.d(t, "m", (function() {
@@ -1589,7 +1591,7 @@
 			})), r.d(t, "R", (function() {
 				return _t
 			})), r.d(t, "mb", (function() {
-				return pt
+				return Ot
 			})), r.d(t, "u", (function() {
 				return mt
 			})), r.d(t, "cb", (function() {
@@ -1633,34 +1635,34 @@
 				l = r("./src/reddit/constants/modals.ts"),
 				b = r("./src/lib/constants/index.ts"),
 				_ = r("./src/lib/makeApiRequest/index.ts"),
-				O = r("./src/lib/omitHeaders/index.ts"),
-				p = r("./src/reddit/constants/headers.ts");
-			const m = (e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+				p = r("./src/lib/omitHeaders/index.ts"),
+				O = r("./src/reddit/constants/headers.ts");
+			const m = (e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 				endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/contributors"),
 				method: b.db.GET,
 				data: r
 			});
 			var f = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const E = (e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+			const E = (e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 					endpoint: Object(f.a)("".concat(e.apiUrl, "/api/v1/").concat(t, "/banned")),
 					method: b.db.GET,
 					data: r
 				}),
-				j = (e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+				j = (e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/moderators"),
 					method: b.db.GET,
 					data: Object.assign(Object.assign({}, r), {
 						count: 10
 					})
 				}),
-				h = (e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+				h = (e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/moderators_invited"),
 					method: b.db.GET,
 					data: Object.assign(Object.assign({}, r), {
 						count: 50
 					})
 				}),
-				g = (e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+				g = (e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/muted"),
 					method: b.db.GET,
 					data: r
@@ -1727,7 +1729,7 @@
 						apiContext: i
 					} = o;
 					const d = a().subreddits.models[e].url,
-						c = await ((e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+						c = await ((e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 							endpoint: "".concat(e.apiUrl).concat(t, "api/unfriend"),
 							method: b.db.POST,
 							data: {
@@ -1758,7 +1760,7 @@
 						l = c.subreddits.models[e].url,
 						m = c.subreddits.models[e].name;
 					t = Object(D.a)(t);
-					const f = await ((e, t, r, n) => Object(_.a)(Object(O.a)(e, [p.a]), {
+					const f = await ((e, t, r, n) => Object(_.a)(Object(p.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl).concat(t, "api/friend"),
 						method: b.db.POST,
 						data: {
@@ -1825,7 +1827,7 @@
 					r(ie());
 					const d = await m(s(), o, i);
 					d.ok ? r(de(d.body)) : r(ce(d.error))
-				}, le = "SUBREDDIT_APPROVEDSUBMITTERS_APPROVED_SUCCESS", be = "SUBREDDIT_APPROVEDSUBMITTERS_UNAPPROVED_SUCCESS", _e = Object(o.a)(le), Oe = Object(o.a)(be), pe = (e, t) => async (r, a, o) => {
+				}, le = "SUBREDDIT_APPROVEDSUBMITTERS_APPROVED_SUCCESS", be = "SUBREDDIT_APPROVEDSUBMITTERS_UNAPPROVED_SUCCESS", _e = Object(o.a)(le), pe = Object(o.a)(be), Oe = (e, t) => async (r, a, o) => {
 					let {
 						apiContext: i
 					} = o;
@@ -1833,7 +1835,7 @@
 						c = d.subreddits.models[e].url,
 						l = d.subreddits.models[e].name;
 					t = Object(D.a)(t);
-					const f = await ((e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+					const f = await ((e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl).concat(t, "api/friend"),
 						method: b.db.POST,
 						data: {
@@ -1869,7 +1871,7 @@
 						apiContext: i
 					} = o;
 					const d = a().subreddits.models[e].url,
-						c = await ((e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+						c = await ((e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 							endpoint: "".concat(e.apiUrl).concat(t, "api/unfriend"),
 							method: b.db.POST,
 							data: {
@@ -1878,7 +1880,7 @@
 								type: "contributor"
 							}
 						}))(i(), d, t);
-					if (c.ok) r(Oe({
+					if (c.ok) r(pe({
 						subredditId: e,
 						userId: t
 					}));
@@ -1935,7 +1937,7 @@
 						m = l.subreddits.models[e].url,
 						f = l.subreddits.models[e].name;
 					t.username = Object(D.a)(t.username), a(Object(i.h)(r));
-					const j = await ((e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+					const j = await ((e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl).concat(t, "api/friend"),
 						method: b.db.POST,
 						data: {
@@ -1978,7 +1980,7 @@
 						apiContext: i
 					} = o;
 					const d = a().subreddits.models[e].url,
-						c = await ((e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+						c = await ((e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 							endpoint: "".concat(e.apiUrl).concat(t, "api/unfriend"),
 							method: b.db.POST,
 							data: {
@@ -2062,7 +2064,7 @@
 							after: d,
 							before: c
 						}),
-						E = await ((e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+						E = await ((e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 							endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/moderators_editable"),
 							method: b.db.GET,
 							data: Object.assign(Object.assign({}, r), {
@@ -2111,7 +2113,7 @@
 						m = c.url;
 					t = Object(D.a)(t), a(st());
 					const f = Object(I.d)(r),
-						E = await ((e, t, r, n) => Object(_.a)(Object(O.a)(e, [p.a]), {
+						E = await ((e, t, r, n) => Object(_.a)(Object(p.a)(e, [O.a]), {
 							endpoint: "".concat(e.apiUrl).concat(t, "api/friend"),
 							method: b.db.POST,
 							data: {
@@ -2148,14 +2150,14 @@
 							duration: 3e3
 						})), a(it())
 					}
-				}, ct = "SUBREDDIT__REMOVEMODERATOR__SUCCESS", ut = Object(o.a)("SUBREDDIT__REMOVEMODERATOR_PENDING"), lt = Object(o.a)(ct), bt = Object(o.a)("SUBREDDIT__REMOVEMODERATOR__FAILED"), _t = "SUBREDDIT__RESIGNMODERATOR__SUCCESS", Ot = Object(o.a)(_t), pt = (e, t, r, n) => async (a, s, o) => {
+				}, ct = "SUBREDDIT__REMOVEMODERATOR__SUCCESS", ut = Object(o.a)("SUBREDDIT__REMOVEMODERATOR_PENDING"), lt = Object(o.a)(ct), bt = Object(o.a)("SUBREDDIT__REMOVEMODERATOR__FAILED"), _t = "SUBREDDIT__RESIGNMODERATOR__SUCCESS", pt = Object(o.a)(_t), Ot = (e, t, r, n) => async (a, s, o) => {
 					let {
 						apiContext: i
 					} = o;
 					const d = s(),
 						c = d.subreddits.models[e].name,
 						u = Object(S.d)(e, r, n);
-					if (a(ut()), (await ((e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+					if (a(ut()), (await ((e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 							endpoint: "".concat(e.apiUrl, "/api/unfriend"),
 							method: b.db.POST,
 							data: {
@@ -2171,7 +2173,7 @@
 							key: u
 						}));
 						const r = Object(P.i)(d);
-						r && r.id === t && a(Ot({
+						r && r.id === t && a(pt({
 							subredditId: e,
 							userId: t
 						}))
@@ -2183,7 +2185,7 @@
 					const d = s().subreddits.models[e].url;
 					a(ft());
 					const c = Object(I.d)(r);
-					if ((await ((e, t, r, n) => Object(_.a)(Object(O.a)(e, [p.a]), {
+					if ((await ((e, t, r, n) => Object(_.a)(Object(p.a)(e, [O.a]), {
 							endpoint: "".concat(e.apiUrl).concat(t, "api/setpermissions"),
 							method: b.db.POST,
 							data: {
@@ -2220,7 +2222,7 @@
 					const i = s.subreddits.models[e],
 						d = i.url,
 						c = i.name;
-					if ((await ((e, t) => Object(_.a)(Object(O.a)(e, [p.a]), {
+					if ((await ((e, t) => Object(_.a)(Object(p.a)(e, [O.a]), {
 							endpoint: "".concat(e.apiUrl).concat(t, "api/accept_moderator_invite"),
 							method: b.db.POST,
 							data: {
@@ -2246,7 +2248,7 @@
 						apiContext: a
 					} = n;
 					const s = r().subreddits.models[e].name;
-					(await ((e, t) => Object(_.a)(Object(O.a)(e, [p.a]), {
+					(await ((e, t) => Object(_.a)(Object(p.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/decline_mod_invite"),
 						method: b.db.POST,
 						data: {
@@ -2263,7 +2265,7 @@
 						i = Object(w.S)(o, {
 							subredditId: e
 						}).name;
-					r(Mt()), (await ((e, t, r) => Object(_.a)(Object(O.a)(e, [p.a]), {
+					r(Mt()), (await ((e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/unfriend"),
 						method: b.db.POST,
 						data: {
@@ -2322,7 +2324,7 @@
 			})), r.d(t, "d", (function() {
 				return _
 			})), r.d(t, "e", (function() {
-				return O
+				return p
 			}));
 			var n = r("./src/lib/constants/index.ts"),
 				a = r("./src/lib/makeApiRequest/index.ts"),
@@ -2414,8 +2416,8 @@
 					message: l,
 					offerContext: b,
 					orderId: _,
-					pennies: O,
-					thingId: p
+					pennies: p,
+					thingId: O
 				} = e;
 				const m = {
 					award_id: t,
@@ -2425,15 +2427,15 @@
 					message: l,
 					offer_context: b,
 					order_id: _,
-					pennies: O,
-					thing_id: p
+					pennies: p,
+					thing_id: O
 				};
 				return Object(a.a)(Object(s.a)(r, [o.a]), {
 					method: n.db.POST,
 					endpoint: "".concat(r.apiUrl, "/api/v2/gold/paypal/execute_coin_with_gild_order"),
 					data: m
 				}).then(d.c)
-			}, O = async e => {
+			}, p = async e => {
 				let {
 					awardId: t,
 					context: r,
@@ -2469,9 +2471,9 @@
 			})), r.d(t, "f", (function() {
 				return _
 			})), r.d(t, "g", (function() {
-				return O
-			})), r.d(t, "h", (function() {
 				return p
+			})), r.d(t, "h", (function() {
+				return O
 			})), r.d(t, "a", (function() {
 				return m
 			})), r.d(t, "b", (function() {
@@ -2499,15 +2501,15 @@
 						pennies: l,
 						rememberCard: b,
 						token: _,
-						savedCardId: O
+						savedCardId: p
 					} = e;
-					const p = {
+					const O = {
 							token: _ ? _.id : void 0,
 							coins: t,
 							offer_context: c,
 							pennies: l,
 							remember_card: b,
-							card_id: O,
+							card_id: p,
 							correlation_id: d
 						},
 						m = "".concat(r.apiUrl, "/api/v2/gold/stripe/buy_coins"),
@@ -2515,7 +2517,7 @@
 					return Object(a.a)(Object(s.a)(r, [o.a]), {
 						method: n.db.POST,
 						endpoint: f,
-						data: p
+						data: O
 					}).then(u)
 				}, b = async e => {
 					let {
@@ -2526,8 +2528,8 @@
 						isOldReddit: l,
 						offerContext: b,
 						pennies: _,
-						rememberCard: O,
-						thingId: p,
+						rememberCard: p,
+						thingId: O,
 						token: m,
 						savedCardId: f
 					} = e;
@@ -2540,11 +2542,11 @@
 						coins: t,
 						offer_context: b,
 						pennies: _,
-						thing_id: p,
+						thing_id: O,
 						gild_type: E,
 						message: h ? h.trim() : "",
 						is_anonymous: j,
-						remember_card: O,
+						remember_card: p,
 						card_id: f,
 						correlation_id: d
 					}, D = "".concat(r.apiUrl, "/api/v2/gold/stripe/buy_coins_and_gild"), I = l ? D : Object(i.a)(D);
@@ -2562,22 +2564,22 @@
 						pennies: l,
 						rememberCard: b,
 						thingId: _,
-						token: O,
-						savedCardId: p
+						token: p,
+						savedCardId: O
 					} = e;
 					const {
 						gildType: m,
 						isAnonymous: f,
 						message: E
 					} = d, j = {
-						token: O ? O.id : void 0,
+						token: p ? p.id : void 0,
 						thing_id: _,
 						award_id: m,
 						message: E ? E.trim() : "",
 						is_anonymous: f,
 						pennies: l,
 						remember_card: b,
-						card_id: p,
+						card_id: O,
 						correlation_id: r
 					}, h = "".concat(t.apiUrl, "/api/v2/gold/stripe/buy_award"), g = c ? h : Object(i.a)(h);
 					return Object(a.a)(Object(s.a)(t, [o.a]), {
@@ -2585,7 +2587,7 @@
 						endpoint: g,
 						data: j
 					}).then(u)
-				}, O = async e => {
+				}, p = async e => {
 					let {
 						context: t,
 						correlationId: r,
@@ -2604,7 +2606,7 @@
 						endpoint: _,
 						data: l
 					}).then(u)
-				}, p = async (e, t) => {
+				}, O = async (e, t) => {
 					const r = {
 						token: t.id
 					};
@@ -2659,7 +2661,7 @@
 		"./src/reddit/helpers/graphql/normalizeMultiredditDataFromGql/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return p
+				return O
 			}));
 			var n = r("./node_modules/lodash/forEach.js"),
 				a = r.n(n),
@@ -2673,7 +2675,7 @@
 				b = r("./src/reddit/models/GqlTopLevelField.ts"),
 				_ = r("./src/reddit/models/Multireddit/index.ts");
 
-			function O(e) {
+			function p(e) {
 				const t = {
 					multireddits: {},
 					multiredditsByUser: {},
@@ -2718,12 +2720,12 @@
 				return t.multireddits[a] = s, t.multiredditsByUser[e.ownerInfo.id] = [a], t
 			}
 
-			function p(e) {
+			function O(e) {
 				const t = {},
 					r = {},
 					n = {},
 					s = {},
-					i = e.map(O);
+					i = e.map(p);
 				for (const d of i) a()(d.multiredditsByUser, (e, t) => {
 					r[t] = [...r[t] || [], ...e]
 				}), o()(t, d.multireddits), o()(n, d.profiles), o()(s, d.subreddits);
@@ -2734,7 +2736,7 @@
 					subreddits: s
 				}
 			}
-			t.a = O
+			t.a = p
 		},
 		"./src/reddit/helpers/normalizeUsername/index.tsx": function(e, t, r) {
 			"use strict";
@@ -2873,9 +2875,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: s.I,
-					experimentName: n.bb
+					experimentName: n.cb
 				});
-				return !(!t || Object(n.Nc)(t))
+				return !(!t || Object(n.Oc)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
@@ -2899,4 +2901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.e3508aa5aca4abe84f1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.ff81e3f6bcb1f58113a7.js.map

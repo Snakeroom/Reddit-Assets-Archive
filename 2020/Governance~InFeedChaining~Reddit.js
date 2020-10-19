@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.5c80886eea6cad644fd7.js
-// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.54661b96c6c4b55dbb79.js
+// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -107,84 +107,90 @@
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return p
-			})), s.d(t, "b", (function() {
-				return m
-			})), s.d(t, "e", (function() {
 				return g
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "b", (function() {
 				return f
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "e", (function() {
+				return h
+			})), s.d(t, "a", (function() {
 				return y
+			})), s.d(t, "d", (function() {
+				return j
 			}));
 			var r = s("./src/config.ts"),
 				i = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./src/lib/makeActionCreator/index.ts"),
-				a = s("./src/lib/constants/index.ts"),
-				o = s("./src/lib/formatApiError/index.ts"),
-				c = s("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				d = s("./src/reddit/endpoints/gold/paypalPurchases.ts"),
-				l = s("./src/reddit/endpoints/gold/purchase.ts"),
-				u = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				b = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const p = Object(n.a)(b.r),
-				m = Object(n.a)(b.e),
-				g = e => async (t, s, r) => {
+				a = s("./src/lib/sentry/index.ts"),
+				o = s("./src/lib/constants/index.ts"),
+				c = s("./src/lib/formatApiError/index.ts"),
+				d = s("./src/reddit/actions/goldPurchaseModals/payment.ts"),
+				l = s("./src/reddit/endpoints/gold/paypalPurchases.ts"),
+				u = s("./src/reddit/endpoints/gold/purchase.ts"),
+				b = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				p = s("./src/reddit/selectors/goldPurchaseModals.ts"),
+				m = s("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const g = Object(n.a)(m.r),
+				f = Object(n.a)(m.e),
+				h = e => async (t, s, r) => {
 					let {
 						apiContext: n
 					} = r;
-					const d = a.ob,
-						b = Object(u.c)(u.a.GoldPayment);
-					t(Object(c.stripeTokenPending)());
-					const p = await t(Object(c.validateAndCreateStripeToken)(e));
-					if (p) try {
-						const e = await Object(l.g)({
+					const a = Object(p.a)(s()),
+						l = (null == a ? void 0 : a.pennies) || o.ob,
+						m = Object(b.c)(b.a.GoldPayment);
+					t(Object(d.stripeTokenPending)());
+					const g = await t(Object(d.validateAndCreateStripeToken)(e));
+					if (g) try {
+						const e = await Object(u.g)({
 							context: n(),
-							correlationId: b,
-							pennies: d,
-							token: p
+							correlationId: m,
+							pennies: l,
+							token: g
 						});
 						if (e.error) {
-							const s = Object(o.a)(e.error);
-							t(Object(c.stripeApiError)(s))
-						} else t(Object(c.paymentCompleted)({
+							const s = Object(c.a)(e.error);
+							t(Object(d.stripeApiError)(s))
+						} else t(Object(d.paymentCompleted)({
 							confirmed: !1
 						}))
-					} catch (m) {
-						const e = Object(o.a)(m);
-						t(Object(c.stripeApiError)(e))
+					} catch (f) {
+						const e = Object(c.a)(f);
+						t(Object(d.stripeApiError)(e))
 					} else {
 						const e = i.fbt._("Looks like something went wrong validating your credit card.", null, {
 							hk: "4eGqpL"
 						});
-						t(Object(c.stripeApiError)(e))
+						t(Object(d.stripeApiError)(e))
 					}
-				}, f = "PREMIUM_PURCHASE_MODAL__PAYMENT_BLOB_CREATED", h = Object(n.a)(f), y = e => {
+				}, y = "PREMIUM_PURCHASE_MODAL__PAYMENT_BLOB_CREATED", O = Object(n.a)(y), j = e => {
 					let {
-						correlationId: t
+						packageId: t,
+						correlationId: s
 					} = e;
-					return async (e, s, i) => {
+					return async (e, i, n) => {
 						let {
-							apiContext: n
-						} = i;
-						e(p({
-							correlationId: t
+							apiContext: o
+						} = n;
+						e(g({
+							packageId: t,
+							correlationId: s
 						}));
-						const a = r.a.paypal.buttons.premium;
-						try {
-							const s = await Object(d.f)({
-								buttonId: a,
-								context: n(),
-								correlationId: t
+						const u = Object(p.a)(i()),
+							b = (null == u ? void 0 : u.paypalButtonId) || r.a.paypal.buttons.premium;
+						if (b) try {
+							const t = await Object(l.f)({
+								buttonId: b,
+								context: o(),
+								correlationId: s
 							});
-							if (s.error) {
-								const t = Object(o.a)(s.error);
-								e(Object(c.paypalApiError)(t))
-							} else e(h(s))
-						} catch (l) {
-							const t = Object(o.a)(l);
-							e(Object(c.paypalApiError)(t))
-						}
+							if (t.error) {
+								const s = Object(c.a)(t.error);
+								e(Object(d.paypalApiError)(s))
+							} else e(O(t))
+						} catch (m) {
+							const t = Object(c.a)(m);
+							e(Object(d.paypalApiError)(t))
+						} else a.c.captureMessage("No Premium packages available on Premium purchase modal")
 					}
 				}
 		},
@@ -1396,7 +1402,7 @@
 				}, _t = Object(R.a)("PAGE__FRONTPAGE_RELOADED"), Et = e => async (t, s, r) => {
 					const i = s(),
 						n = i.platform.currentPage.routeMatch.match;
-					Object(ke.m)(i) || Object(ke.r)(i) || (e || t(_t()), await t(ct(n, !0)))
+					Object(ke.n)(i) || Object(ke.s)(i) || (e || t(_t()), await t(ct(n, !0)))
 				}, xt = "PAGE__MULTIREDDIT_FEED_PENDING", vt = "PAGE__MULTIREDDIT_FEED_LOADED", It = "PAGE__MULTIREDDIT_FEED_FAILED", Dt = Object(R.a)(xt), Tt = Object(R.a)(vt), Pt = Object(R.a)(It), Ct = (e, t, s, i, n) => async (a, o, c) => {
 					const {
 						gqlContext: d
@@ -2021,13 +2027,13 @@
 				return Object(a.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: l,
-					experimentName: i.kb
+					experimentName: i.lb
 				})
 			}
 
 			function b(e) {
 				switch (e) {
-					case i.lb.Enabled:
+					case i.mb.Enabled:
 						return 18;
 					default:
 						return
@@ -2037,7 +2043,7 @@
 			}(r || (r = {}));
 			const p = e => {
 				switch (e) {
-					case i.lb.Enabled:
+					case i.mb.Enabled:
 						return r.Enabled;
 					default:
 						return r.NoBucket
@@ -2210,14 +2216,14 @@
 					experimentEligibilitySelector: e => l(e, t),
 					experimentName: i.S,
 					throttledVariants: {
-						[i.mb.CurrentThrottled]: i.S
+						[i.nb.CurrentThrottled]: i.S
 					}
 				}), o.a),
-				b = e => e === i.mb.CurrentThrottled,
-				p = e => e === i.mb.CurrentThrottled || e === i.mb.CurrentUnthrottled || e === i.mb.CurrentUnthrottledCopy || e === i.mb.NewPopUnthrottledCopy,
-				m = e => e === i.mb.NewPopUnthrottledCopy,
-				g = e => e === i.mb.NewPageUnthrottledCopy || e === i.mb.NewPageUnthrottledCopyFields,
-				f = e => e === i.mb.NewPageUnthrottledCopyFields
+				b = e => e === i.nb.CurrentThrottled,
+				p = e => e === i.nb.CurrentThrottled || e === i.nb.CurrentUnthrottled || e === i.nb.CurrentUnthrottledCopy || e === i.nb.NewPopUnthrottledCopy,
+				m = e => e === i.nb.NewPopUnthrottledCopy,
+				g = e => e === i.nb.NewPageUnthrottledCopy || e === i.nb.NewPageUnthrottledCopyFields,
+				f = e => e === i.nb.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, s) {
 			"use strict";
@@ -2226,7 +2232,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts");
 			const i = e => {
-				if (!Object(r.Nc)(e)) return e || void 0
+				if (!Object(r.Oc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -2243,8 +2249,8 @@
 			const d = e => (e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: r.dc
-				}) === r.lc.Enabled
+					experimentName: r.ec
+				}) === r.mc.Enabled
 			})(e) && (e => {
 				const t = Object(n.e)(e);
 				return !!t && a.has(t.toLowerCase())
@@ -2262,4 +2268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.5c80886eea6cad644fd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.54661b96c6c4b55dbb79.js.map
