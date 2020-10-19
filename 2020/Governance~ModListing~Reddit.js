@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8caa91398c4be6f2fc48.js
-// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.dd072f2d86274a4beb70.js
+// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -4017,9 +4017,9 @@
 						})()) : Object(T.a)(G) && V === A.a.upvoted && !H && (e => {
 							const t = Object(R.c)(e, {
 								experimentEligibilitySelector: e => Object(v.I)(e),
-								experimentName: m.lb
+								experimentName: m.nb
 							});
-							return Object(m.Lc)(t) ? void 0 : t
+							return Object(m.Nc)(t) ? void 0 : t
 						})(F) && (s(((e, t) => async (n, s, o) => {
 							let {
 								apiContext: a
@@ -4058,7 +4058,7 @@
 								if (Object(p.F)(F.platform && F.platform.currentPage)) return;
 								if (o.isSponsored) return;
 								if ("profile" === o.belongsTo.type) return;
-								const r = F.experimentOverrides[m.T],
+								const r = F.experimentOverrides[m.V],
 									i = Object(k.i)(F);
 								("none" !== t || r && V === A.a.downvoted) && (s(Object(_.J)({
 									[n]: {
@@ -4751,13 +4751,15 @@
 				c = n("./src/reddit/models/Comment/addProfileImgParam.ts"),
 				a = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
 				d = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			t.a = (e, t, n, u, l, b) => {
-				let _ = n ? "".concat(s.a.gatewayUrl, "/desktopapi/v1/postcomments/").concat(t, "/").concat(n) : "".concat(s.a.gatewayUrl, "/desktopapi/v1/postcomments/").concat(t);
-				return _ = Object(a.a)(Object(d.a)(_)), l && (_ = Object(c.a)(_)), b && (_ = Object(o.a)(_, {
+			t.a = (e, t, n, u, l, b, _) => {
+				let f = n ? "".concat(s.a.gatewayUrl, "/desktopapi/v1/postcomments/").concat(t, "/").concat(n) : "".concat(s.a.gatewayUrl, "/desktopapi/v1/postcomments/").concat(t);
+				return f = Object(a.a)(Object(d.a)(f)), l && (f = Object(c.a)(f)), b && (f = Object(o.a)(f, {
 					realtime_comments: !0
+				})), _ && (f = Object(o.a)(f, {
+					blend_new_comments: "1"
 				})), Object(i.a)(e, {
 					data: u,
-					endpoint: _,
+					endpoint: f,
 					method: r.db.GET,
 					traceRequestName: "get_comments_page"
 				})
@@ -6435,7 +6437,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: o.experiment(r, s.Cc),
+					experiment: o.experiment(r, s.Ec),
 					post: o.post(r, e),
 					media: o.media(r, e),
 					profile: o.profile(r),
@@ -6447,7 +6449,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: o.experiment(t, s.Cc),
+					experiment: o.experiment(t, s.Ec),
 					post: o.post(t, e),
 					profile: o.profile(t),
 					subreddit: o.subreddit(t),
@@ -7774,10 +7776,10 @@
 			const l = Object(s.a)(a.c, u.H, u.I, d.g, d.f, c.a, (e, t, n, s, r, i) => !e && !t && !n && s && !!r && !r.isNSFW && !!i && Object(o.c)(i.created / 1e3) < 30),
 				b = e => Object(i.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: r.nb,
+					experimentName: r.pb,
 					expEventOverride: !1
 				}),
-				_ = e => e === r.rb.SearchPostToPost || e === r.rb.NlpPostToPost1 || e === r.rb.NlpPostToPost2 || e === r.rb.NlpPostToPost3
+				_ = e => e === r.tb.SearchPostToPost || e === r.tb.NlpPostToPost1 || e === r.tb.NlpPostToPost2 || e === r.tb.NlpPostToPost3
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(e, t, n) {
 			"use strict";
@@ -7807,12 +7809,12 @@
 					return Object(r.K)(n)
 				}, (e, t, n) => !e && !t && n),
 				d = Object(s.a)((e, t) => Object(i.c)(e, {
-					experimentName: o.S,
+					experimentName: o.U,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				u = e => e === o.zc.NoCommunityWidgets,
-				l = e => e === o.zc.NoRulesModerators,
-				b = e => e === o.zc.RelatedPostsDu
+				u = e => e === o.Bc.NoCommunityWidgets,
+				l = e => e === o.Bc.NoRulesModerators,
+				b = e => e === o.Bc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -8051,4 +8053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8caa91398c4be6f2fc48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.dd072f2d86274a4beb70.js.map

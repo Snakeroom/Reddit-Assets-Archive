@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.57798c488e55fc50c730.js
-// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.82bd9b916c822a5e81a0.js
+// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/ScrollChildFactory.tsx": function(e, t, s) {
@@ -2046,15 +2046,15 @@
 			const i = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: o.I,
-						experimentName: r.db
+						experimentName: r.fb
 					});
-					return !(!t || Object(r.Lc)(t))
+					return !(!t || Object(r.Nc)(t))
 				},
 				c = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o.I,
-						experimentName: r.db
-					}) === r.hb.ListingEnabled
+						experimentName: r.fb
+					}) === r.jb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, s) {
@@ -2069,4 +2069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.57798c488e55fc50c730.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.82bd9b916c822a5e81a0.js.map

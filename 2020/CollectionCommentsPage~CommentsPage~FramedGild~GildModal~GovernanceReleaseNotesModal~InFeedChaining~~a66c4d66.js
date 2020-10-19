@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.a547d75c34df74178f4b.js
-// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.20407c13ca78960d0c9c.js
+// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -375,7 +375,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Z = function(e, t) {
+			var K = function(e, t) {
 				var s = {};
 				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -384,25 +384,25 @@
 				}
 				return s
 			};
-			const K = r.a.wrapped(U.a, "TooltipControl", Y.a),
+			const Z = r.a.wrapped(U.a, "TooltipControl", Y.a),
 				Q = r.a.div("NormalControl", Y.a),
-				q = r.a.wrapped(K, "ControlSnoo", Y.a),
-				X = r.a.wrapped(K, "ControlPlay", Y.a),
+				q = r.a.wrapped(Z, "ControlSnoo", Y.a),
+				X = r.a.wrapped(Z, "ControlPlay", Y.a),
 				$ = r.a.wrapped(Q, "Time", Y.a),
 				ee = r.a.wrapped($, "LeftTime", Y.a),
 				te = r.a.wrapped($, "RightTime", Y.a),
 				se = r.a.div("LiveLabel", Y.a),
 				ie = r.a.wrapped(Q, "ControlScrubber", Y.a),
 				ne = r.a.wrapped(Q, "ControlVolume", Y.a),
-				ae = r.a.wrapped(K, "ControlExpand", Y.a),
-				oe = r.a.wrapped(K, "ControlCollapse", Y.a),
+				ae = r.a.wrapped(Z, "ControlExpand", Y.a),
+				oe = r.a.wrapped(Z, "ControlCollapse", Y.a),
 				re = e => {
 					var {
 						className: t,
 						isFullScreen: s,
 						zeroOpacity: i,
 						innerRef: n
-					} = e, r = Z(e, ["className", "isFullScreen", "zeroOpacity", "innerRef"]);
+					} = e, r = K(e, ["className", "isFullScreen", "zeroOpacity", "innerRef"]);
 					return a.a.createElement("div", J({
 						className: Object(o.a)(Y.a.ControlBarContainer, t, {
 							[Y.a.mIsFullScreen]: s,
@@ -795,16 +795,16 @@
 				L = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				B = s("./src/reddit/selectors/experiments/utils.ts");
 			const N = Object(d.a)(e => Object(L.c)(e, {
-					experimentName: C.Cc,
+					experimentName: C.Ec,
 					experimentEligibilitySelector: L.a
 				}), B.a),
 				O = Object(d.a)(N, (function(e) {
 					switch (e) {
-						case C.Gc.BufferTwoSeconds:
+						case C.Ic.BufferTwoSeconds:
 							return 2;
-						case C.Gc.BufferFiveSeconds:
+						case C.Ic.BufferFiveSeconds:
 							return 5;
-						case C.Gc.BufferTenSeconds:
+						case C.Ic.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -823,10 +823,10 @@
 				G = s("./node_modules/fbt/lib/FbtPublic.js"),
 				Y = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/icons/svgs/VideoCheckmark/index.tsx")),
 				J = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
-				Z = s.n(J);
+				K = s.n(J);
 
-			function K() {
-				return (K = Object.assign || function(e) {
+			function Z() {
+				return (Z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -848,12 +848,12 @@
 				$ = [...X, 480, 360, 240, q],
 				ee = e => l.a.createElement("button", {
 					"aria-checked": e.isChecked,
-					className: Z.a.SetAutoplayButton,
+					className: K.a.SetAutoplayButton,
 					onClick: e.onClick,
 					role: "checkbox",
 					tabIndex: 0
 				}, l.a.createElement(Y.a, null), l.a.createElement("div", {
-					className: Z.a.AutoplayDescription
+					className: K.a.AutoplayDescription
 				}, G.fbt._("Autoplay", null, {
 					hk: "1x30w1"
 				}))),
@@ -865,16 +865,16 @@
 					} = e;
 					return l.a.createElement("button", {
 						"aria-checked": i,
-						className: Z.a.VideoResolutionButton,
+						className: K.a.VideoResolutionButton,
 						onClick: s,
 						role: "radio",
 						tabIndex: 0
 					}, l.a.createElement(Y.a, null), l.a.createElement("div", {
-						className: Z.a.VideoResolutionDescription
+						className: K.a.VideoResolutionDescription
 					}, t === q ? G.fbt._("Auto", null, {
 						hk: "6zgZT"
 					}) : l.a.createElement(l.a.Fragment, null, l.a.createElement("span", null, t, "p"), X.includes(t) && l.a.createElement("span", {
-						className: Z.a.VideoHd
+						className: K.a.VideoHd
 					}, " ", G.fbt._("HD", null, {
 						hk: "2KjxjH"
 					})))))
@@ -885,9 +885,9 @@
 						className: s,
 						innerRef: i
 					} = e, n = Q(e, ["isActive", "className", "innerRef"]);
-					return l.a.createElement("div", K({
-						className: Object(p.a)(Z.a.SettingControlContainer, s, {
-							[Z.a.mIsActive]: t
+					return l.a.createElement("div", Z({
+						className: Object(p.a)(K.a.SettingControlContainer, s, {
+							[K.a.mIsActive]: t
 						}),
 						ref: i
 					}, n))
@@ -921,15 +921,15 @@
 					} = this.props, a = [...t.map(e => e.height), q];
 					return l.a.createElement(se, {
 						innerRef: this.setContainerRef,
-						className: Object(p.a)(Z.a.VideoSettingContainer, s),
+						className: Object(p.a)(K.a.VideoSettingContainer, s),
 						isActive: e
 					}, i && l.a.createElement("div", {
-						className: Z.a.AutoplayContainer
+						className: K.a.AutoplayContainer
 					}, l.a.createElement(ee, {
 						isChecked: this.state.autoplayPref,
 						onClick: this.setAutoplay
 					})), l.a.createElement("div", {
-						className: Z.a.VideoResolutionContainer,
+						className: K.a.VideoResolutionContainer,
 						role: "radiogroup"
 					}, $.map((e, t) => a.includes(e) ? l.a.createElement(te, {
 						key: t,
@@ -1112,8 +1112,8 @@
 			! function(e) {
 				e[e.SeekBar = 0] = "SeekBar", e[e.Settings = 1] = "Settings", e[e.Volume = 2] = "Volume"
 			}(Ue || (Ue = {}));
-			const Ze = 3e3,
-				Ke = 6e3,
+			const Ke = 3e3,
+				Ze = 6e3,
 				Qe = 100,
 				qe = Object(c.b)(() => Object(d.c)({
 					isLoggedIn: I.I,
@@ -1333,7 +1333,7 @@
 						} = this;
 						e && clearTimeout(e)
 					}, this.resetControlBarFadeTimer = function() {
-						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ze;
+						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ke;
 						t.clearControlBarFadeTimer(), t.setState({
 							hideControlBar: !1
 						}), t.controlBarFadeTimer = window.setTimeout(() => {
@@ -1508,8 +1508,8 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("2f76ac7-production", " ").concat(t);
-									return i && (s += " [".concat(C.Cc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("1b345ea-production", " ").concat(t);
+									return i && (s += " [".concat(C.Ec, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -1596,8 +1596,8 @@
 					this.state.usingKeys || this.setState({
 						usingKeys: !0
 					});
-					let t = Ke;
-					this.state.settingChange === Ue.Settings && (t = 5 * Ke), this.resetControlBarFadeTimer(t)
+					let t = Ze;
+					this.state.settingChange === Ue.Settings && (t = 5 * Ze), this.resetControlBarFadeTimer(t)
 				}
 				setBuffered() {
 					const e = this.HTML5StreamPlayerVideo;
@@ -2361,17 +2361,17 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Dc
+					experimentName: n.Fc
 				}),
-				r = [n.Hc.FeedAndTheatre, n.Hc.FeedOnly],
+				r = [n.Jc.FeedAndTheatre, n.Jc.FeedOnly],
 				l = Object(i.a)(o, e => r.includes(e)),
-				c = [n.Hc.FeedAndTheatre, n.Hc.TheatreOnly],
+				c = [n.Jc.FeedAndTheatre, n.Jc.TheatreOnly],
 				d = Object(i.a)(o, e => c.includes(e)),
 				h = Object(i.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Ec
-				}), e => e === n.Ic.Enabled)
+					experimentName: n.Gc
+				}), e => e === n.Kc.Enabled)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.a547d75c34df74178f4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.20407c13ca78960d0c9c.js.map

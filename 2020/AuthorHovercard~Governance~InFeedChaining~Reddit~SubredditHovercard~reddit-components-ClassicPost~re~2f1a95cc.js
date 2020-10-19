@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.bbb28cf796624e30de1a.js
-// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.e3508aa5aca4abe84f1b.js
+// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -388,15 +388,15 @@
 						s ? ("new_purchaser" !== s.dealInfo.type || (e => {
 							const t = Object(h.c)(e, {
 								experimentEligibilitySelector: h.a,
-								experimentName: j.eb
+								experimentName: j.gb
 							});
-							return !(!t || Object(j.Lc)(t))
+							return !(!t || Object(j.Nc)(t))
 						})(a)) && ("repeat_purchaser" !== s.dealInfo.type || (e => {
 							const t = Object(h.c)(e, {
 								experimentEligibilitySelector: h.a,
-								experimentName: j.cb
+								experimentName: j.eb
 							});
-							return !(!t || Object(j.Lc)(t))
+							return !(!t || Object(j.Nc)(t))
 						})(a)) && (e(w({
 							correlationId: t,
 							packageId: r
@@ -2873,9 +2873,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: s.I,
-					experimentName: n.Z
+					experimentName: n.bb
 				});
-				return !(!t || Object(n.Lc)(t))
+				return !(!t || Object(n.Nc)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
@@ -2899,4 +2899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.bbb28cf796624e30de1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.e3508aa5aca4abe84f1b.js.map

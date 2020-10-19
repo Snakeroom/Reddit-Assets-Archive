@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.04c5513b16a586b80226.js
-// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d764ded9e9b5bc168099.js
+// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -1646,7 +1646,7 @@
 					n || c || !Object(o.e)(r) && !Object(o.d)(r) || e(Object(a.e)())
 				}, p = e => {
 					Object(c.d)(e, {
-						experimentName: r.H
+						experimentName: r.J
 					})
 				}
 		},
@@ -4297,7 +4297,7 @@
 			const S = e => _.d.reCaptchaEnterprise(e) && !Object(w.d)(e),
 				T = e => !!Object(I.c)(e, {
 					experimentEligibilitySelector: Object(E.d)(Object(E.b)(...r.b)),
-					experimentName: g.cc
+					experimentName: g.ec
 				}),
 				C = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => b()([S, T, e => e.tracking.reCaptchaEnterprise.load === n.a.New], t => t(e)))(async e => {
@@ -28072,14 +28072,14 @@
 			const o = Object(n.a)(c.c, e => !e),
 				d = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => o(e),
-					experimentName: a.H,
+					experimentName: a.J,
 					expEventOverride: !1
 				}), e => e),
-				l = e => e === a.z.Onetap,
-				u = e => e === a.z.OnetapAuto,
+				l = e => e === a.B.Onetap,
+				u = e => e === a.B.OnetapAuto,
 				b = e => e.user.googleOneTapEnabled,
 				g = Object(n.a)(i.I, d, (e, t) => !e && !!t),
-				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.Lc)(t))
+				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.Nc)(t))
 		},
 		"./src/reddit/selectors/profileOverviewChronoItems.ts": function(e, t, s) {
 			"use strict";
@@ -28378,4 +28378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.04c5513b16a586b80226.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d764ded9e9b5bc168099.js.map

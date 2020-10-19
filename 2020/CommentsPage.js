@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7d8d14e0ec8358ed8112.js
-// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.059e5c09ac25425120d0.js
+// Retrieved at 10/19/2020, 2:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "FrontpageSidebar"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -11772,7 +11772,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.Lc)(e) ? Object(I.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.Nc)(e) ? Object(I.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -11802,7 +11802,7 @@
 						post: i,
 						shouldShowSubredditUpsell: c,
 						subredditOrProfile: d
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Lc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Nc)(o), p = i && i.id;
 					return s || n || t || l || !c ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(h.a, {
@@ -18627,8 +18627,8 @@
 			const a = e => o.e[Object(r.N)(e, {})] === o.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.C
-				}) === n.M.Treatment
+					experimentName: n.E
+				}) === n.O.Treatment
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
 			"use strict";
@@ -18642,8 +18642,8 @@
 			const a = Object(n.a)(i.I, i.H, (e, t) => e || t),
 				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: o.q
-				}), e => e === o.v.Enabled)
+					experimentName: o.s
+				}), e => e === o.x.Enabled)
 		},
 		"./src/reddit/selectors/experiments/commentsPageAd.ts": function(e, t, s) {
 			"use strict";
@@ -18655,9 +18655,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.F
+					experimentName: n.H
 				});
-				return !!t && !Object(n.Lc)(t)
+				return !!t && !Object(n.Nc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -18670,9 +18670,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.Y
+					experimentName: n.ab
 				});
-				return !(!t || Object(n.Lc)(t))
+				return !(!t || Object(n.Nc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -18689,4 +18689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7d8d14e0ec8358ed8112.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.059e5c09ac25425120d0.js.map
