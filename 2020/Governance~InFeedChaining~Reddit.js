@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.f81fb6a0a4e699aa7a26.js
-// Retrieved at 10/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.ad4998bfebd80e588eda.js
+// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -299,7 +299,7 @@
 			})), s.d(t, "b", (function() {
 				return Q
 			})), s.d(t, "d", (function() {
-				return Z
+				return $
 			})), s.d(t, "a", (function() {
 				return se
 			})), s.d(t, "i", (function() {
@@ -544,7 +544,7 @@
 						sort: p,
 						t: Object(R.a)(p, k)
 					})))
-				}, Y = Object(d.a)(U.k), J = Object(d.a)(U.l), X = Object(d.a)(U.m), Z = e => {
+				}, Y = Object(d.a)(U.k), J = Object(d.a)(U.l), X = Object(d.a)(U.m), $ = e => {
 					let {
 						description: t,
 						displayName: s,
@@ -595,7 +595,7 @@
 							})
 						}))
 					}
-				}, $ = Object(d.a)(U.b), ee = Object(d.a)(U.c), te = Object(d.a)(U.a), se = e => {
+				}, Z = Object(d.a)(U.b), ee = Object(d.a)(U.c), te = Object(d.a)(U.a), se = e => {
 					let {
 						communityInfo: t,
 						identifier: s,
@@ -608,7 +608,7 @@
 						const l = n(),
 							b = Object(N.i)(l);
 						if (!b || l.multireddits.api.addSubreddit.pending) return;
-						e($({
+						e(Z({
 							name: s.name
 						}));
 						const {
@@ -823,9 +823,9 @@
 			})), s.d(t, "h", (function() {
 				return Xe
 			})), s.d(t, "g", (function() {
-				return Ze
-			})), s.d(t, "f", (function() {
 				return $e
+			})), s.d(t, "f", (function() {
+				return Ze
 			})), s.d(t, "w", (function() {
 				return rt
 			})), s.d(t, "y", (function() {
@@ -933,8 +933,8 @@
 				Y = s("./src/reddit/constants/adEvents.ts"),
 				J = s("./src/reddit/constants/graphql.ts"),
 				X = s("./src/reddit/constants/page.ts"),
-				Z = s("./src/reddit/constants/parameters.ts"),
-				$ = s("./src/reddit/constants/postLayout.ts"),
+				$ = s("./src/reddit/constants/parameters.ts"),
+				Z = s("./src/reddit/constants/postLayout.ts"),
 				ee = s("./src/reddit/constants/posts.ts"),
 				te = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				se = s("./src/reddit/helpers/commentList/index.ts"),
@@ -997,15 +997,15 @@
 					}
 				},
 				Xe = "PAGE__FRONTPAGE_PENDING",
-				Ze = "PAGE__FRONTPAGE_LOADED",
-				$e = "PAGE__FRONTPAGE_FAILED",
+				$e = "PAGE__FRONTPAGE_LOADED",
+				Ze = "PAGE__FRONTPAGE_FAILED",
 				et = Object(R.a)(Xe),
-				tt = Object(R.a)(Ze),
-				st = Object(R.a)($e),
+				tt = Object(R.a)($e),
+				st = Object(R.a)(Ze),
 				rt = (e, t) => async (s, i, n) => {
 					const a = i();
 					if (a.listings.postOrder.api.pending[e]) return;
-					const o = $.e[Object(te.N)(a, {})];
+					const o = Z.e[Object(te.N)(a, {})];
 					t.isMobile = Object(c.e)(a.meta.userAgent), t.recentPostIds = a.posts.recent, t.layout = o, t.useMockData = !!a.platform.currentPage && (!!a.platform.currentPage.queryParams.useMockData && Object(ve.b)(a)), s(et({
 						key: e
 					})); {
@@ -1046,7 +1046,7 @@
 						d = i.listings.postOrder.ids[c],
 						l = i.listings.postOrder.api.error[c],
 						u = i.listings.postOrder.api.pending[c],
-						b = Z.x in e.queryParams && e.queryParams[Z.x].toUpperCase() || "",
+						b = $.x in e.queryParams && e.queryParams[$.x].toUpperCase() || "",
 						p = b in x.Sb && x.Sb[b];
 					if (u || d && !l && !t) return void(d && (s(U.l({
 						title: I.c()
@@ -1056,7 +1056,7 @@
 					const m = Object(re.a)(i),
 						g = Object(re.b)(m),
 						f = [Object(re.c)(m)];
-					await s(rt(c, Object.assign(Object.assign(Object.assign({}, n()(e.queryParams, Z.l)), n()(e.queryParams, Z.k)), {
+					await s(rt(c, Object.assign(Object.assign(Object.assign({}, n()(e.queryParams, $.l)), n()(e.queryParams, $.k)), {
 						limit: g,
 						sort: o,
 						statsdPathsForExperiments: f,
@@ -1091,7 +1091,7 @@
 					} = u, {
 						hasSortParam: f,
 						sortToUse: h
-					} = Object(ie.a)(p, o), y = ["context", "depth", "limit", Z.f].reduce((e, t) => {
+					} = Object(ie.a)(p, o), y = ["context", "depth", "limit", $.f].reduce((e, t) => {
 						const s = parseInt(u[t]);
 						return isNaN(s) || (e[t] = s), e
 					}, {
@@ -1391,7 +1391,7 @@
 					if (l.listings.postOrder.api.pending[e]) return;
 					a(vt({
 						key: e
-					})), i.layout = $.e[Object(te.N)(l, {})];
+					})), i.layout = Z.e[Object(te.N)(l, {})];
 					const u = {
 							path: Object(de.h)(t, s).replace(/\/$/, ""),
 							includeIdentity: !0,
@@ -1469,12 +1469,12 @@
 						m = u.listings.postOrder.ids[p],
 						g = u.listings.postOrder.api.error[p],
 						f = u.listings.postOrder.api.pending[p],
-						h = Z.x in e.queryParams && e.queryParams[Z.x].toUpperCase() || "",
+						h = $.x in e.queryParams && e.queryParams[$.x].toUpperCase() || "",
 						y = h in x.Sb && x.Sb[h];
 					if (f || m && !g && !t) return void(m && (s(U.l({
 						title: Object(_e.f)(r(), l)
 					})), u.sidebarPromotedPosts.firstFetch || s(Object(Ae.b)(Me.a.MULTIREDDIT))));
-					await s(Tt(p, c, i, Object.assign(Object.assign(Object.assign({}, n()(e.queryParams, Z.l)), n()(e.queryParams, Z.k)), {
+					await s(Tt(p, c, i, Object.assign(Object.assign(Object.assign({}, n()(e.queryParams, $.l)), n()(e.queryParams, $.k)), {
 						sort: d,
 						t: Object(ne.a)(d, y)
 					}), !0));
@@ -2213,7 +2213,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts");
 			const i = e => {
-				if (!Object(r.Jc)(e)) return e || void 0
+				if (!Object(r.Lc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -2230,8 +2230,8 @@
 			const d = e => (e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: r.Zb
-				}) === r.hc.Enabled
+					experimentName: r.bc
+				}) === r.jc.Enabled
 			})(e) && (e => {
 				const t = Object(n.e)(e);
 				return !!t && a.has(t.toLowerCase())
@@ -2249,4 +2249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.f81fb6a0a4e699aa7a26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.ad4998bfebd80e588eda.js.map

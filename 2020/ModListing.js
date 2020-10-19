@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.4ef14b8f5d1385b82f23.js
-// Retrieved at 10/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.728bfb77bf67d8207793.js
+// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -595,8 +595,8 @@
 				});
 			var V = s("./src/reddit/routes/modListing/index.ts");
 			const A = e => e.modListingPage.filteredSubreddits.api.pending;
-			var J = s("./src/reddit/constants/keycodes.ts"),
-				Y = s("./src/reddit/layout/row/Inline/index.tsx"),
+			var Y = s("./src/reddit/constants/keycodes.ts"),
+				J = s("./src/reddit/layout/row/Inline/index.tsx"),
 				Q = s("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				X = s.n(Q);
 			const W = Object(a.c)({
@@ -618,14 +618,14 @@
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
-						e.key === J.b.Enter && this.submitInput()
+						e.key === Y.b.Enter && this.submitInput()
 					}, this.canSubmitInput = () => this.state.subredditInput && !this.props.isApiPending
 				}
 				render() {
 					const {
 						props: e
 					} = this;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(Y.a, null, o.a.createElement("input", {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(J.a, null, o.a.createElement("input", {
 						className: X.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
@@ -868,7 +868,7 @@
 						experimentEligibilitySelector: i.I,
 						experimentName: r.db
 					});
-					return !(!t || Object(r.Jc)(t))
+					return !(!t || Object(r.Lc)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
@@ -879,4 +879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4ef14b8f5d1385b82f23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.728bfb77bf67d8207793.js.map

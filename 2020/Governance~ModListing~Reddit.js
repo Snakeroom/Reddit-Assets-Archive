@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.126dac37e4a5e51b3078.js
-// Retrieved at 10/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8caa91398c4be6f2fc48.js
+// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -4019,7 +4019,7 @@
 								experimentEligibilitySelector: e => Object(v.I)(e),
 								experimentName: m.lb
 							});
-							return Object(m.Jc)(t) ? void 0 : t
+							return Object(m.Lc)(t) ? void 0 : t
 						})(F) && (s(((e, t) => async (n, s, o) => {
 							let {
 								apiContext: a
@@ -6435,7 +6435,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: o.experiment(r, s.Ac),
+					experiment: o.experiment(r, s.Cc),
 					post: o.post(r, e),
 					media: o.media(r, e),
 					profile: o.profile(r),
@@ -6447,7 +6447,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: o.experiment(t, s.Ac),
+					experiment: o.experiment(t, s.Cc),
 					post: o.post(t, e),
 					profile: o.profile(t),
 					subreddit: o.subreddit(t),
@@ -7810,9 +7810,9 @@
 					experimentName: o.S,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				u = e => e === o.xc.NoCommunityWidgets,
-				l = e => e === o.xc.NoRulesModerators,
-				b = e => e === o.xc.RelatedPostsDu
+				u = e => e === o.zc.NoCommunityWidgets,
+				l = e => e === o.zc.NoRulesModerators,
+				b = e => e === o.zc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -8051,4 +8051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.126dac37e4a5e51b3078.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.8caa91398c4be6f2fc48.js.map

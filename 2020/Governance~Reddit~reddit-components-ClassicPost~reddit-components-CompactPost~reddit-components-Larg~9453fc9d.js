@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.9f858a6db05745ed696f.js
-// Retrieved at 10/15/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.2940129246a26e9f3a5e.js
+// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -7708,7 +7708,7 @@
 								experimentName: i.p,
 								expEventOverride: e
 							});
-							return !!(Object(i.Jc)(r) ? void 0 : r)
+							return !!(Object(i.Lc)(r) ? void 0 : r)
 						})(r)) || (t => !1 !== t.collapsed)(e)
 					})
 				}
@@ -10193,7 +10193,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: t
 				});
-				return !(!r || Object(n.Jc)(r))
+				return !(!r || Object(n.Lc)(r))
 			})(n.bb)
 		},
 		"./src/reddit/selectors/experiments/goldSubredditPowerups.ts": function(t, e, r) {
@@ -10250,40 +10250,40 @@
 			var n = r("./node_modules/reselect/es/index.js"),
 				s = r("./src/reddit/constants/experiments.ts"),
 				i = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = t => s.ic.RulesAndWarnings === Object(i.c)(t, {
+			const o = t => s.kc.RulesAndWarnings === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.bc
+					experimentName: s.dc
 				}),
-				d = t => s.ic.WarningsOnly === Object(i.c)(t, {
+				d = t => s.kc.WarningsOnly === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.bc
+					experimentName: s.dc
 				}),
-				c = t => s.Xb.Enabled === Object(i.c)(t, {
+				c = t => s.Zb.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.Qb
+					experimentName: s.Sb
 				}),
-				a = t => s.rc.Enabled === Object(i.c)(t, {
+				a = t => s.tc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.mc
+					experimentName: s.oc
 				}),
-				u = t => s.sc.Enabled === Object(i.c)(t, {
+				u = t => s.uc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.nc
+					experimentName: s.pc
 				}),
 				l = (t, e, r) => {
 					const n = r(t, e);
-					return !(!n || !n.meter) && (n.meter.enabled && u(t) && s.Hc.Enabled === Object(i.c)(t, {
+					return !(!n || !n.meter) && (n.meter.enabled && u(t) && s.Jc.Enabled === Object(i.c)(t, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.Dc
+						experimentName: s.Fc
 					}))
 				},
 				b = Object(n.a)(t => Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.dc
-				}), t => t === s.jc.Enabled),
-				p = t => s.Xb.Enabled === Object(i.c)(t, {
+					experimentName: s.fc
+				}), t => t === s.lc.Enabled),
+				p = t => s.Zb.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.cc
+					experimentName: s.ec
 				})
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(t, e, r) {
@@ -11243,4 +11243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.9f858a6db05745ed696f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.2940129246a26e9f3a5e.js.map

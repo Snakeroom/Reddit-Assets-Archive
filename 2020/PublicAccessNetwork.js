@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.2c2b4e3dc68a00ea3b06.js
-// Retrieved at 10/19/2020, 10:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9d0583ed91792d9b9b5b.js
+// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -285,16 +285,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Eb
+					experimentName: m.Gb
 				});
-				return Object(m.Jc)(t) ? void 0 : t
+				return Object(m.Lc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Fb
+					experimentName: m.Hb
 				});
-				return Object(m.Jc)(t) ? void 0 : t
-			}, (e, t) => e === m.Gb.Enabled && t === m.Gb.Enabled);
+				return Object(m.Lc)(t) ? void 0 : t
+			}, (e, t) => e === m.Ib.Enabled && t === m.Ib.Enabled);
 			var h = a("./src/config.ts");
 			var b = a("./src/reddit/selectors/user.ts");
 			a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "8b97635-production"
+					SENTRY_RELEASE_VERSION: "98bda2c-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -616,9 +616,9 @@
 			})), a.d(t, "removedItemsSelected", (function() {
 				return Y
 			})), a.d(t, "fetchReasonsAndOpenModal", (function() {
-				return J
-			})), a.d(t, "removalReasonSubmittedPending", (function() {
 				return X
+			})), a.d(t, "removalReasonSubmittedPending", (function() {
+				return J
 			})), a.d(t, "removalReasonSubmittedSuccess", (function() {
 				return q
 			})), a.d(t, "removalReasonSubmittedFailed", (function() {
@@ -763,7 +763,7 @@
 							hk: "4xzgsa"
 						})
 					}))) : a(K(c.error))
-				}, Y = Object(o.a)(R.t), J = (e, t) => async (a, s, n) => {
+				}, Y = Object(o.a)(R.t), X = (e, t) => async (a, s, n) => {
 					let {
 						apiContext: o
 					} = n;
@@ -772,7 +772,7 @@
 						subredditId: e,
 						itemIds: t
 					})), a(Object(d.i)(p.a.ADD_REMOVAL_REASON))
-				}, X = Object(o.a)(R.r), q = Object(o.a)(R.s), z = Object(o.a)(R.q), Z = Object(o.a)(R.n), Q = Object(o.a)(R.o), $ = Object(o.a)(R.p), ee = Object(o.a)(R.m), te = (e, t, a, s, o) => async (l, d, u) => {
+				}, J = Object(o.a)(R.r), q = Object(o.a)(R.s), z = Object(o.a)(R.q), Z = Object(o.a)(R.n), Q = Object(o.a)(R.o), $ = Object(o.a)(R.p), ee = Object(o.a)(R.m), te = (e, t, a, s, o) => async (l, d, u) => {
 					let {
 						apiContext: p
 					} = u;
@@ -783,7 +783,7 @@
 						x = g === y.e.Post ? h.posts.models[v] : h.comments.models[v],
 						O = g === y.e.Post ? m.J : c.R;
 					if (!x || !b) return !1;
-					l(X()), l(O({
+					l(J()), l(O({
 						[v]: {
 							modNote: o,
 							modRemovalReason: t && t.title,
@@ -873,7 +873,7 @@
 					const m = i(),
 						p = m.user.account && m.user.account.displayText;
 					if (!p) return;
-					r(X());
+					r(J());
 					const h = Object(u.e)({
 							kind: O.b.SuccessMod,
 							text: s.fbt._({
@@ -2661,8 +2661,8 @@
 				K = a("./src/lib/lessComponent.tsx"),
 				G = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				Y = a("./src/reddit/controls/Button/index.tsx"),
-				J = a("./src/reddit/controls/TextButton/index.tsx"),
-				X = a("./src/reddit/helpers/localStorage/index.ts"),
+				X = a("./src/reddit/controls/TextButton/index.tsx"),
+				J = a("./src/reddit/helpers/localStorage/index.ts"),
 				q = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				z = a("./src/reddit/components/PublicAccessNetwork/Modals/ChatMute/index.m.less"),
 				Z = a.n(z);
@@ -2675,7 +2675,7 @@
 						toggleModal: t
 					} = e;
 					const a = () => {
-						X.jb(), t()
+						J.jb(), t()
 					};
 					return n.a.createElement(G.d, null, n.a.createElement(ee, null, n.a.createElement(q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: Z.a.Title
@@ -2683,7 +2683,7 @@
 						hk: "1lebCx"
 					})), n.a.createElement(G.o, null, g.fbt._("Before jumping in, keep these tips in mind.", null, {
 						hk: "3evsT7"
-					}))), n.a.createElement(J.a, {
+					}))), n.a.createElement(X.a, {
 						onClick: a
 					}, n.a.createElement(G.b, null)))), n.a.createElement(te, null, n.a.createElement("span", null, n.a.createElement("span", null, n.a.createElement("div", {
 						className: Z.a.SubTitle
@@ -2752,7 +2752,7 @@
 						onClick: this.closeDropdown
 					}, a && n.a.createElement(G.h, null, n.a.createElement(q.a, null, n.a.createElement(G.p, null, ge._("Remove broadcast", null, {
 						hk: "1JfCvD"
-					})), n.a.createElement(J.a, {
+					})), n.a.createElement(X.a, {
 						onClick: this.props.toggleRemovalReasonModal
 					}, n.a.createElement(G.b, null)))), n.a.createElement(G.k, null, a ? n.a.createElement(pe.a, {
 						isDropdownOpen: t.isDropdownOpen,
@@ -2899,8 +2899,8 @@
 			}(ke || (ke = {}));
 			const Ge = 60,
 				Ye = 30,
-				Je = 3 * Ge,
-				Xe = 5 * Ge,
+				Xe = 3 * Ge,
+				Je = 5 * Ge,
 				qe = 5,
 				ze = 5 * Ge,
 				Ze = 10,
@@ -3139,13 +3139,13 @@
 				}
 			}
 			var Ht = Dt(Ft);
-			const Ut = (e, t) => e > t ? ke.EXTENDED : e < Je ? ke.CRITICAL : e < Xe ? ke.LOW : ke.NORMAL,
+			const Ut = (e, t) => e > t ? ke.EXTENDED : e < Xe ? ke.CRITICAL : e < Je ? ke.LOW : ke.NORMAL,
 				Wt = e => e / Ge,
 				Kt = e => Gt(e) % ze == 0,
 				Gt = e => Math.round(e / qe) * qe;
 			var Yt = a("./src/reddit/components/PublicAccessNetwork/Theater/MeterBar/index.m.less"),
-				Jt = a.n(Yt);
-			const Xt = (() => {
+				Xt = a.n(Yt);
+			const Jt = (() => {
 					const e = [];
 					for (let t = 1; t < 11; t++) e.push("Delay".concat(t));
 					return e
@@ -3158,8 +3158,8 @@
 				zt = ["15Deg", "45Deg", "75Deg"],
 				Zt = e => e[Math.floor(Math.random() * e.length)],
 				Qt = () => {
-					const e = [Zt(qt), Zt(zt), Zt(Xt)].map(e => Jt.a["particle".concat(e)]).join(" ");
-					return "".concat(Jt.a.particle, " ").concat(e, " ").concat(Math.round(Math.random()) ? Jt.a.particleReverse : "")
+					const e = [Zt(qt), Zt(zt), Zt(Jt)].map(e => Xt.a["particle".concat(e)]).join(" ");
+					return "".concat(Xt.a.particle, " ").concat(e, " ").concat(Math.round(Math.random()) ? Xt.a.particleReverse : "")
 				},
 				$t = 40,
 				ea = 20;
@@ -3172,13 +3172,13 @@
 					for (let t = 0; t < $t; t++) e.push(this.createParticle(t, "particleSm"));
 					for (let t = 0; t < ea; t++) e.push(this.createParticle(t, "particleLg"));
 					return n.a.createElement("div", {
-						className: Jt.a.particleWrapper
+						className: Xt.a.particleWrapper
 					}, e)
 				}
 				createParticle(e, t) {
 					return n.a.createElement("div", {
 						key: "".concat(t).concat(innerHeight),
-						className: "".concat(Qt(), " ").concat(Jt.a[t])
+						className: "".concat(Qt(), " ").concat(Xt.a[t])
 					})
 				}
 			}
@@ -3210,7 +3210,7 @@
 					})
 				}
 				static isPillVisible(e, t, a) {
-					return t || a > 0 || Kt(e) || e < Xe
+					return t || a > 0 || Kt(e) || e < Je
 				}
 				static getPillLabel(e, t) {
 					const {
@@ -3246,7 +3246,7 @@
 							hk: "2Tjt0F"
 						})
 					}
-					if (Kt(o) && !s && o > Xe) {
+					if (Kt(o) && !s && o > Je) {
 						const e = Math.round(Wt(o)).toLocaleString();
 						return g.fbt._("{number of minutes} minutes airtime left", [g.fbt._param("number of minutes", e)], {
 							hk: "3DZxvE"
@@ -3315,24 +3315,24 @@
 					if (!(a && e && e.meter && o)) return null;
 					const i = Ut(o, e.meter.full_meter_duration),
 						c = !s,
-						d = o < Xe || t,
+						d = o < Je || t,
 						m = this.state.timerDiff > 0;
 					return n.a.createElement("div", {
-						className: Jt.a.meterOverlay
+						className: Xt.a.meterOverlay
 					}, n.a.createElement("div", {
-						className: Jt.a.meterPillWrapper
+						className: Xt.a.meterPillWrapper
 					}, m && n.a.createElement(aa, null), n.a.createElement("div", {
-						className: Object(l.a)(Jt.a.meterPillContainer, {
-							[Jt.a.animateMeterInAndOut]: c && !d,
-							[Jt.a.animateMeterInOnly]: c && d,
-							[Jt.a.fillMeterCritical]: i === ke.CRITICAL,
-							[Jt.a.fillMeterLow]: i === ke.LOW,
-							[Jt.a.fillMeterNormal]: i === ke.NORMAL || i === ke.EXTENDED,
-							[Jt.a.fillMeterFed]: m
+						className: Object(l.a)(Xt.a.meterPillContainer, {
+							[Xt.a.animateMeterInAndOut]: c && !d,
+							[Xt.a.animateMeterInOnly]: c && d,
+							[Xt.a.fillMeterCritical]: i === ke.CRITICAL,
+							[Xt.a.fillMeterLow]: i === ke.LOW,
+							[Xt.a.fillMeterNormal]: i === ke.NORMAL || i === ke.EXTENDED,
+							[Xt.a.fillMeterFed]: m
 						}),
 						onClick: () => this.props.openGildModal()
 					}, n.a.createElement("div", {
-						className: Jt.a.meterLabel
+						className: Xt.a.meterLabel
 					}, r))))
 				}
 			}
@@ -3618,7 +3618,7 @@
 					}))
 				},
 				Ya = K.a.wrapped(Na.a, "menuIcon", Wa.a),
-				Ja = e => {
+				Xa = e => {
 					let {
 						onClick: t,
 						onHideClick: a,
@@ -3672,7 +3672,7 @@
 						className: Wa.a.overflowItemIcon
 					})))
 				},
-				Xa = e => {
+				Ja = e => {
 					let {
 						onClick: t
 					} = e;
@@ -4066,7 +4066,7 @@
 				} = e;
 				return n.a.createElement(Ss, null, n.a.createElement("div", {
 					className: ns.a.promptButtonSet
-				}, n.a.createElement(Xa, {
+				}, n.a.createElement(Ja, {
 					onClick: t
 				}), n.a.createElement(qa, {
 					onClick: a
@@ -4331,7 +4331,7 @@
 						className: Wa.a.overlayTop
 					}, t && this.renderRecommendedViewerSubreddit(), e && !o && n.a.createElement(n.a.Fragment, null, !t && this.renderTitleContainer(), n.a.createElement(Ka, {
 						onClick: this.onCopyLink
-					}), n.a.createElement(Ja, {
+					}), n.a.createElement(Xa, {
 						onClick: c,
 						onHideClick: r,
 						onReportClick: i
@@ -4597,7 +4597,7 @@
 						className: Wa.a.prompt
 					}, n.a.createElement("div", {
 						className: Wa.a.promptButtonSet
-					}, n.a.createElement(Xa, {
+					}, n.a.createElement(Ja, {
 						onClick: u
 					}), n.a.createElement(qa, {
 						onClick: this.onCopyLink
@@ -4636,8 +4636,8 @@
 				Ks = a("./src/lib/constants/index.ts"),
 				Gs = a("./src/lib/makeDraftKey/index.ts"),
 				Ys = a("./src/reddit/actions/page.ts"),
-				Js = a("./src/reddit/actions/publicAccessNetwork/automute.ts"),
-				Xs = a("./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.tsx"),
+				Xs = a("./src/reddit/actions/publicAccessNetwork/automute.ts"),
+				Js = a("./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.tsx"),
 				qs = a("./src/reddit/components/CommentsChat/Loader.ts"),
 				zs = a("./src/reddit/components/CommentsChat/MessageInput/Loader.tsx");
 			const {
@@ -4651,7 +4651,7 @@
 				} = e;
 				return n.a.createElement(G.d, null, n.a.createElement($s, null, n.a.createElement(q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 					className: Z.a.Title
-				}, s)), n.a.createElement(J.a, {
+				}, s)), n.a.createElement(X.a, {
 					onClick: t
 				}, n.a.createElement(G.b, null)))), n.a.createElement("div", {
 					className: Z.a.ModalText
@@ -4942,7 +4942,7 @@
 						isLivestreaming: !0
 					})), n.a.createElement(On, {
 						postId: e
-					}), !a && n.a.createElement(Xs.a, {
+					}), !a && n.a.createElement(Js.a, {
 						isLiveStreaming: !0,
 						key: "chatLoggedOutForm",
 						location: o,
@@ -4970,7 +4970,7 @@
 						}, Ks.r.CHAT)),
 						openLoginModal: () => e(Object(m.h)()),
 						openRegisterModal: () => e(Object(m.i)()),
-						fetchAutomuteStatus: () => e(Object(Js.b)(a))
+						fetchAutomuteStatus: () => e(Object(Xs.b)(a))
 					}
 				})(Tn),
 				Ln = a("./src/reddit/icons/svgs/Pagination/back.tsx");
@@ -5043,11 +5043,11 @@
 					s.onload = () => t(), s.onerror = () => a(), s.src = e
 				}).then(() => !0, () => !1);
 			var Gn, Yn = a("./src/reddit/components/PublicAccessNetwork/Theater/VisualEffectScreen/index.m.less"),
-				Jn = a.n(Yn);
+				Xn = a.n(Yn);
 			! function(e) {
 				e.Loading = "Loading", e.Preview = "Preview", e.Static = "Static"
 			}(Gn || (Gn = {}));
-			class Xn extends s.Component {
+			class Jn extends s.Component {
 				componentDidMount() {
 					const {
 						currentStream: e,
@@ -5073,16 +5073,16 @@
 						visualEffectLabel: a
 					} = this.props;
 					let s, o;
-					if (t === Gn.Loading) s = Jn.a.loading;
-					else if (t === Gn.Preview) s = Jn.a.preview, o = {
+					if (t === Gn.Loading) s = Xn.a.loading;
+					else if (t === Gn.Preview) s = Xn.a.preview, o = {
 						backgroundImage: "url(".concat(e, ")")
 					};
 					else {
 						if (t !== Gn.Static) return null;
-						s = Jn.a.static
+						s = Xn.a.static
 					}
 					return n.a.createElement("div", {
-						className: Jn.a.container
+						className: Xn.a.container
 					}, n.a.createElement("div", {
 						className: s,
 						"aria-label": a,
@@ -5098,7 +5098,7 @@
 						const n = await a(Un(e, t));
 						a(Hn(n))
 					})(t))
-				}))(Xn),
+				}))(Jn),
 				zn = a("./src/reddit/components/PublicAccessNetwork/Theater/index.m.less"),
 				Zn = a.n(zn);
 			const Qn = Object(C.a)(U.a, {
@@ -5373,7 +5373,7 @@
 					let V, D, B, F;
 					e && T ? (V = 1e3 * e.broadcast_time, D = N, B = L, F = e.post.title) : (V = void 0, D = void 0, B = !1, F = "RPAN Unavailable Video");
 					const H = e && e.meter && 10 * Math.round(e.estimated_remaining_time / 10),
-						U = o && e && e.estimated_remaining_time < Je && !r,
+						U = o && e && e.estimated_remaining_time < Xe && !r,
 						W = void 0 !== H && H >= 0 && U ? Zn.a["meterCritical".concat(H)] : void 0;
 					let K, G;
 					return O || y ? K = p ? Gn.Preview : s ? Gn.Loading : Gn.Static : U && (K = Gn.Static), O ? G = g.fbt._("video is loading", null, {
@@ -5520,7 +5520,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(Le.j)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					X.G() || this.props.toggleIntroChatModal()
+					J.G() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Le.n)(this.props.currentStream, this.playbackStats))
@@ -5841,4 +5841,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.2c2b4e3dc68a00ea3b06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9d0583ed91792d9b9b5b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.768fd58c1ee3305648da.js
-// Retrieved at 10/19/2020, 10:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.49e514d32c33a1b53f84.js
+// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -671,16 +671,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Eb
+					experimentName: u.Gb
 				});
-				return Object(u.Jc)(t) ? void 0 : t
+				return Object(u.Lc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Fb
+					experimentName: u.Hb
 				});
-				return Object(u.Jc)(t) ? void 0 : t
-			}, (e, t) => e === u.Gb.Enabled && t === u.Gb.Enabled);
+				return Object(u.Lc)(t) ? void 0 : t
+			}, (e, t) => e === u.Ib.Enabled && t === u.Ib.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -728,7 +728,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "8b97635-production"
+					SENTRY_RELEASE_VERSION: "98bda2c-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -8013,7 +8013,7 @@
 					} = this.props;
 					if (!o) return;
 					let r = "";
-					return s && (r += s), e === A.vb.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.vb.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
+					return s && (r += s), e === A.xb.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.xb.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -33810,7 +33810,7 @@
 						experimentEligibilitySelector: r.I,
 						experimentName: s.db
 					});
-					return !(!t || Object(s.Jc)(t))
+					return !(!t || Object(s.Lc)(t))
 				},
 				a = e => {
 					return Object(o.c)(e, {
@@ -34172,4 +34172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.768fd58c1ee3305648da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.49e514d32c33a1b53f84.js.map
