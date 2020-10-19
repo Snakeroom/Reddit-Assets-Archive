@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.97ef41c82f616f989c22.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.18ed0ee34c29f7f6adb1.js
+// Retrieved at 10/19/2020, 4:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard", "FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -171,6 +171,10 @@
 				href: "https://www.reddit.com/subreddits/a-1/"
 			}, l._("Communities", null, {
 				hk: "3CJu37"
+			})), n.a.createElement(m, {
+				href: "https://www.reddit.com/posts/2020/"
+			}, l._("Rereddit", null, {
+				hk: "1z3k7C"
 			})), n.a.createElement(m, {
 				href: "https://www.reddit.com/posts/a-1/"
 			}, l._("Top Posts", null, {
@@ -1645,4 +1649,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.97ef41c82f616f989c22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.18ed0ee34c29f7f6adb1.js.map

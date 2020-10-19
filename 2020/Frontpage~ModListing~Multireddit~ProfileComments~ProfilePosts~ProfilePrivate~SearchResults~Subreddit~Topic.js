@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic.29ebc9ae132f6f3b892f.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic.19c2db6a7dce380b6f09.js
+// Retrieved at 10/19/2020, 4:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -78,11 +78,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const b = Object(l.t)(),
-				f = Object(a.c)({
+			const f = Object(l.t)(),
+				b = Object(a.c)({
 					isFakeSubreddit: l.x
 				}),
-				P = Object(r.b)(f),
+				P = Object(r.b)(b),
 				C = e => {
 					const t = {
 						interactive: !1,
@@ -100,7 +100,7 @@
 					className: y.a.emptyScore,
 					key: "s"
 				}));
-			t.b = b(P(e => o.a.createElement("div", {
+			t.b = f(P(e => o.a.createElement("div", {
 				className: Object(i.a)(e.className, h.a.classicPostStyles, h.a.classicAndCompactPlaceholderStyles)
 			}, o.a.createElement(d.b, null, o.a.createElement(w, null)), o.a.createElement("div", {
 				className: y.a.mainBody
@@ -248,6 +248,10 @@
 			}, l._("Communities", null, {
 				hk: "3CJu37"
 			})), o.a.createElement(m, {
+				href: "https://www.reddit.com/posts/2020/"
+			}, l._("Rereddit", null, {
+				hk: "1z3k7C"
+			})), o.a.createElement(m, {
 				href: "https://www.reddit.com/posts/a-1/"
 			}, l._("Top Posts", null, {
 				hk: "2NOEW2"
@@ -341,8 +345,8 @@
 				g = s("./src/reddit/constants/componentSizes.ts"),
 				y = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				v = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				b = s.n(v),
-				f = s("./src/lib/lessComponent.tsx");
+				f = s.n(v),
+				b = s("./src/lib/lessComponent.tsx");
 
 			function P() {
 				return (P = Object.assign || function(e) {
@@ -365,8 +369,8 @@
 			const w = d.e[1] + 24,
 				x = g.f + 8 + 152 + 32 + 16,
 				k = x + w + 8,
-				S = f.a.div("Container", b.a),
-				_ = f.a.wrapped(e => {
+				S = b.a.div("Container", f.a),
+				_ = b.a.wrapped(e => {
 					var {
 						className: t
 					} = e, s = C(e, ["className"]);
@@ -376,7 +380,7 @@
 							top: "calc(100vh - ".concat(40, "px)")
 						}
 					}, s))
-				}, "BackToTop", b.a),
+				}, "BackToTop", f.a),
 				O = e => {
 					let {
 						children: t,
@@ -386,8 +390,8 @@
 					} = e;
 					return i.a.createElement("div", {
 						className: Object(n.a)(s, {
-							[b.a.StickyStyles]: r && !o,
-							[b.a.StickyStylesFakeOverlay]: !!o
+							[f.a.StickyStyles]: r && !o,
+							[f.a.StickyStylesFakeOverlay]: !!o
 						})
 					}, t)
 				};
@@ -485,18 +489,18 @@
 			var g = s("./src/reddit/models/NewStructuredStyles/index.ts"),
 				y = s("./src/reddit/selectors/experiments/topPosts.ts"),
 				v = s("./src/reddit/selectors/structuredStyles.ts"),
-				b = s("./src/reddit/selectors/user.ts"),
-				f = s("./src/reddit/models/Theme/index.ts"),
+				f = s("./src/reddit/selectors/user.ts"),
+				b = s("./src/reddit/models/Theme/index.ts"),
 				P = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
 			const C = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(P.a)(e).widgetColors.sidebarWidgetBackgroundColor,
 				w = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(P.a)(e).widgetColors.sidebarWidgetHeaderColor,
 				x = e => {
 					const t = C(e);
-					return Object(f.f)(t)
+					return Object(b.f)(t)
 				},
 				k = e => {
 					const t = w(e);
-					return Object(f.f)(t)
+					return Object(b.f)(t)
 				};
 			var S = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
 				_ = s.n(S);
@@ -508,10 +512,10 @@
 						n = t.redditStyle || Object(v.m)(e, {
 							subredditId: s
 						}),
-						o = Object(b.T)(e);
+						o = Object(f.T)(e);
 					return n || o
 				},
-				nigtmode: b.T,
+				nigtmode: f.T,
 				subredditId: m.m,
 				topPostVariant: y.d
 			}));
@@ -593,7 +597,7 @@
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return b
+				return f
 			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/lodash/throttle.js"),
@@ -628,7 +632,7 @@
 				}
 				return s
 			};
-			class b extends a.a.Component {
+			class f extends a.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = o()(() => {
 						const {
@@ -685,7 +689,7 @@
 					[g.a.mIsSelected]: s.isSelected,
 					[g.a.topics]: s.isTopicsStyle
 				});
-				return a.a.createElement(b, y({
+				return a.a.createElement(f, y({
 					className: n
 				}, s))
 			}
@@ -839,8 +843,8 @@
 				},
 				y = e => r.a.createElement(l, e),
 				v = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com", "https://www.samsung.com"],
-				b = e => e.source && e.source.url && e.isSponsored && v.some(t => e.source.url.startsWith(t)),
-				f = e => !e.media || e.media.type === c.o.EMBED && !(c.b.has(e.media.provider) || b(e)),
+				f = e => e.source && e.source.url && e.isSponsored && v.some(t => e.source.url.startsWith(t)),
+				b = e => !e.media || e.media.type === c.o.EMBED && !(c.b.has(e.media.provider) || f(e)),
 				P = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
@@ -865,7 +869,7 @@
 				if (o.isBlank) return y;
 				const r = !o.media && !!o.source && Object(a.a)(o.source.url),
 					c = t && r;
-				n === d.g.Large && f(o) && !c && (n = d.g.Medium);
+				n === d.g.Large && b(o) && !c && (n = d.g.Medium);
 				const l = g[n];
 				return void 0 === l ? (Object(i.a)(void 0, "Could not find component for layout ".concat(n, ".")), y) : s && o.isSponsored && n === d.g.Large ? h : l
 			}
@@ -918,4 +922,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic.29ebc9ae132f6f3b892f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic.19c2db6a7dce380b6f09.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e6e1b8df19c5bb447cf4.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.18e19a5e089ae87dad1f.js
+// Retrieved at 10/19/2020, 4:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "FrontpageSidebar"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -12386,6 +12386,10 @@
 			}, l._("Communities", null, {
 				hk: "3CJu37"
 			})), o.a.createElement(m, {
+				href: "https://www.reddit.com/posts/2020/"
+			}, l._("Rereddit", null, {
+				hk: "1z3k7C"
+			})), o.a.createElement(m, {
 				href: "https://www.reddit.com/posts/a-1/"
 			}, l._("Top Posts", null, {
 				hk: "2NOEW2"
@@ -18689,4 +18693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.e6e1b8df19c5bb447cf4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.18e19a5e089ae87dad1f.js.map
