@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Frontpage.200ebabdc82f8e584183.js
-// Retrieved at 9/14/2020, 2:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Frontpage.e1496db3e8f6708275cb.js
+// Retrieved at 10/19/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(t, e) {
@@ -12,7 +12,7 @@
 				});
 				else {
 					var o = [];
-					i.prototype.THROTTLE_TIMEOUT = 100, i.prototype.POLL_INTERVAL = null, i.prototype.observe = function(t) {
+					r.prototype.THROTTLE_TIMEOUT = 100, r.prototype.POLL_INTERVAL = null, r.prototype.observe = function(t) {
 						if (!this._observationTargets.some((function(e) {
 								return e.element == t
 							}))) {
@@ -22,22 +22,22 @@
 								entry: null
 							}), this._monitorIntersections(), this._checkForIntersections()
 						}
-					}, i.prototype.unobserve = function(t) {
+					}, r.prototype.unobserve = function(t) {
 						this._observationTargets = this._observationTargets.filter((function(e) {
 							return e.element != t
 						})), this._observationTargets.length || (this._unmonitorIntersections(), this._unregisterInstance())
-					}, i.prototype.disconnect = function() {
+					}, r.prototype.disconnect = function() {
 						this._observationTargets = [], this._unmonitorIntersections(), this._unregisterInstance()
-					}, i.prototype.takeRecords = function() {
+					}, r.prototype.takeRecords = function() {
 						var t = this._queuedEntries.slice();
 						return this._queuedEntries = [], t
-					}, i.prototype._initThresholds = function(t) {
+					}, r.prototype._initThresholds = function(t) {
 						var e = t || [0];
 						return Array.isArray(e) || (e = [e]), e.sort().filter((function(t, e, o) {
 							if ("number" != typeof t || isNaN(t) || t < 0 || t > 1) throw new Error("threshold must be a number between 0 and 1 inclusively");
 							return t !== o[e - 1]
 						}))
-					}, i.prototype._parseRootMargin = function(t) {
+					}, r.prototype._parseRootMargin = function(t) {
 						var e = (t || "0px").split(/\s+/).map((function(t) {
 							var e = /^(-?\d*\.?\d+)(px|%)$/.exec(t);
 							if (!e) throw new Error("rootMargin must be specified in pixels or percent");
@@ -47,16 +47,16 @@
 							}
 						}));
 						return e[1] = e[1] || e[0], e[2] = e[2] || e[0], e[3] = e[3] || e[1], e
-					}, i.prototype._monitorIntersections = function() {
-						this._monitoringIntersections || (this._monitoringIntersections = !0, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (r(t, "resize", this._checkForIntersections, !0), r(e, "scroll", this._checkForIntersections, !0), "MutationObserver" in t && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(e, {
+					}, r.prototype._monitorIntersections = function() {
+						this._monitoringIntersections || (this._monitoringIntersections = !0, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (s(t, "resize", this._checkForIntersections, !0), s(e, "scroll", this._checkForIntersections, !0), "MutationObserver" in t && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(e, {
 							attributes: !0,
 							childList: !0,
 							characterData: !0,
 							subtree: !0
 						}))))
-					}, i.prototype._unmonitorIntersections = function() {
-						this._monitoringIntersections && (this._monitoringIntersections = !1, clearInterval(this._monitoringInterval), this._monitoringInterval = null, s(t, "resize", this._checkForIntersections, !0), s(e, "scroll", this._checkForIntersections, !0), this._domObserver && (this._domObserver.disconnect(), this._domObserver = null))
-					}, i.prototype._checkForIntersections = function() {
+					}, r.prototype._unmonitorIntersections = function() {
+						this._monitoringIntersections && (this._monitoringIntersections = !1, clearInterval(this._monitoringInterval), this._monitoringInterval = null, i(t, "resize", this._checkForIntersections, !0), i(e, "scroll", this._checkForIntersections, !0), this._domObserver && (this._domObserver.disconnect(), this._domObserver = null))
+					}, r.prototype._checkForIntersections = function() {
 						var e = this._rootIsInDom(),
 							o = e ? this._getRootRect() : {
 								top: 0,
@@ -66,40 +66,40 @@
 								width: 0,
 								height: 0
 							};
-						this._observationTargets.forEach((function(i) {
-							var r = i.element,
-								s = h(r),
-								a = this._rootContainsTarget(r),
-								d = i.entry,
-								u = e && a && this._computeTargetAndRootIntersection(r, o),
-								c = i.entry = new n({
+						this._observationTargets.forEach((function(r) {
+							var s = r.element,
+								i = h(s),
+								a = this._rootContainsTarget(s),
+								d = r.entry,
+								u = e && a && this._computeTargetAndRootIntersection(s, o),
+								l = r.entry = new n({
 									time: t.performance && performance.now && performance.now(),
-									target: r,
-									boundingClientRect: s,
+									target: s,
+									boundingClientRect: i,
 									rootBounds: o,
 									intersectionRect: u
 								});
-							d ? e && a ? this._hasCrossedThreshold(d, c) && this._queuedEntries.push(c) : d && d.isIntersecting && this._queuedEntries.push(c) : this._queuedEntries.push(c)
+							d ? e && a ? this._hasCrossedThreshold(d, l) && this._queuedEntries.push(l) : d && d.isIntersecting && this._queuedEntries.push(l) : this._queuedEntries.push(l)
 						}), this), this._queuedEntries.length && this._callback(this.takeRecords(), this)
-					}, i.prototype._computeTargetAndRootIntersection = function(o, n) {
+					}, r.prototype._computeTargetAndRootIntersection = function(o, n) {
 						if ("none" != t.getComputedStyle(o).display) {
-							for (var i, r, s, a, u, c, l, _, f = h(o), p = d(o), m = !1; !m;) {
+							for (var r, s, i, a, u, l, c, _, f = h(o), m = d(o), p = !1; !p;) {
 								var v = null,
-									g = 1 == p.nodeType ? t.getComputedStyle(p) : {};
+									g = 1 == m.nodeType ? t.getComputedStyle(m) : {};
 								if ("none" == g.display) return;
-								if (p == this.root || p == e ? (m = !0, v = n) : p != e.body && p != e.documentElement && "visible" != g.overflow && (v = h(p)), v && (i = v, r = f, s = void 0, a = void 0, u = void 0, c = void 0, l = void 0, _ = void 0, s = Math.max(i.top, r.top), a = Math.min(i.bottom, r.bottom), u = Math.max(i.left, r.left), c = Math.min(i.right, r.right), _ = a - s, !(f = (l = c - u) >= 0 && _ >= 0 && {
-										top: s,
+								if (m == this.root || m == e ? (p = !0, v = n) : m != e.body && m != e.documentElement && "visible" != g.overflow && (v = h(m)), v && (r = v, s = f, i = void 0, a = void 0, u = void 0, l = void 0, c = void 0, _ = void 0, i = Math.max(r.top, s.top), a = Math.min(r.bottom, s.bottom), u = Math.max(r.left, s.left), l = Math.min(r.right, s.right), _ = a - i, !(f = (c = l - u) >= 0 && _ >= 0 && {
+										top: i,
 										bottom: a,
 										left: u,
-										right: c,
-										width: l,
+										right: l,
+										width: c,
 										height: _
 									}))) break;
-								p = d(p)
+								m = d(m)
 							}
 							return f
 						}
-					}, i.prototype._getRootRect = function() {
+					}, r.prototype._getRootRect = function() {
 						var t;
 						if (this.root) t = h(this.root);
 						else {
@@ -115,7 +115,7 @@
 							}
 						}
 						return this._expandRectByRootMargin(t)
-					}, i.prototype._expandRectByRootMargin = function(t) {
+					}, r.prototype._expandRectByRootMargin = function(t) {
 						var e = this._rootMarginValues.map((function(e, o) {
 								return "px" == e.unit ? e.value : e.value * (o % 2 ? t.width : t.height) / 100
 							})),
@@ -126,23 +126,23 @@
 								left: t.left - e[3]
 							};
 						return o.width = o.right - o.left, o.height = o.bottom - o.top, o
-					}, i.prototype._hasCrossedThreshold = function(t, e) {
+					}, r.prototype._hasCrossedThreshold = function(t, e) {
 						var o = t && t.isIntersecting ? t.intersectionRatio || 0 : -1,
 							n = e.isIntersecting ? e.intersectionRatio || 0 : -1;
 						if (o !== n)
-							for (var i = 0; i < this.thresholds.length; i++) {
-								var r = this.thresholds[i];
-								if (r == o || r == n || r < o != r < n) return !0
+							for (var r = 0; r < this.thresholds.length; r++) {
+								var s = this.thresholds[r];
+								if (s == o || s == n || s < o != s < n) return !0
 							}
-					}, i.prototype._rootIsInDom = function() {
+					}, r.prototype._rootIsInDom = function() {
 						return !this.root || a(e, this.root)
-					}, i.prototype._rootContainsTarget = function(t) {
+					}, r.prototype._rootContainsTarget = function(t) {
 						return a(this.root || e, t)
-					}, i.prototype._registerInstance = function() {
+					}, r.prototype._registerInstance = function() {
 						o.indexOf(this) < 0 && o.push(this)
-					}, i.prototype._unregisterInstance = function() {
+					}, r.prototype._unregisterInstance = function() {
 						var t = o.indexOf(this); - 1 != t && o.splice(t, 1)
-					}, t.IntersectionObserver = i, t.IntersectionObserverEntry = n
+					}, t.IntersectionObserver = r, t.IntersectionObserverEntry = n
 				}
 
 				function n(t) {
@@ -157,28 +157,28 @@
 					var e = this.boundingClientRect,
 						o = e.width * e.height,
 						n = this.intersectionRect,
-						i = n.width * n.height;
-					this.intersectionRatio = o ? i / o : this.isIntersecting ? 1 : 0
+						r = n.width * n.height;
+					this.intersectionRatio = o ? r / o : this.isIntersecting ? 1 : 0
 				}
 
-				function i(t, e) {
-					var o, n, i, r = e || {};
+				function r(t, e) {
+					var o, n, r, s = e || {};
 					if ("function" != typeof t) throw new Error("callback must be a function");
-					if (r.root && 1 != r.root.nodeType) throw new Error("root must be an Element");
-					this._checkForIntersections = (o = this._checkForIntersections.bind(this), n = this.THROTTLE_TIMEOUT, i = null, function() {
-						i || (i = setTimeout((function() {
-							o(), i = null
+					if (s.root && 1 != s.root.nodeType) throw new Error("root must be an Element");
+					this._checkForIntersections = (o = this._checkForIntersections.bind(this), n = this.THROTTLE_TIMEOUT, r = null, function() {
+						r || (r = setTimeout((function() {
+							o(), r = null
 						}), n))
-					}), this._callback = t, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(r.rootMargin), this.thresholds = this._initThresholds(r.threshold), this.root = r.root || null, this.rootMargin = this._rootMarginValues.map((function(t) {
+					}), this._callback = t, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(s.rootMargin), this.thresholds = this._initThresholds(s.threshold), this.root = s.root || null, this.rootMargin = this._rootMarginValues.map((function(t) {
 						return t.value + t.unit
 					})).join(" ")
 				}
 
-				function r(t, e, o, n) {
+				function s(t, e, o, n) {
 					"function" == typeof t.addEventListener ? t.addEventListener(e, o, n || !1) : "function" == typeof t.attachEvent && t.attachEvent("on" + e, o)
 				}
 
-				function s(t, e, o, n) {
+				function i(t, e, o, n) {
 					"function" == typeof t.removeEventListener ? t.removeEventListener(e, o, n || !1) : "function" == typeof t.detatchEvent && t.detatchEvent("on" + e, o)
 				}
 
@@ -220,10 +220,17 @@
 		},
 		"./node_modules/lodash/_arraySampleSize.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_baseClamp.js"),
-				i = o("./node_modules/lodash/_copyArray.js"),
-				r = o("./node_modules/lodash/_shuffleSelf.js");
+				r = o("./node_modules/lodash/_copyArray.js"),
+				s = o("./node_modules/lodash/_shuffleSelf.js");
 			t.exports = function(t, e) {
-				return r(i(t), n(e, 0, t.length))
+				return s(r(t), n(e, 0, t.length))
+			}
+		},
+		"./node_modules/lodash/_arrayShuffle.js": function(t, e, o) {
+			var n = o("./node_modules/lodash/_copyArray.js"),
+				r = o("./node_modules/lodash/_shuffleSelf.js");
+			t.exports = function(t) {
+				return r(n(t))
 			}
 		},
 		"./node_modules/lodash/_baseClamp.js": function(t, e) {
@@ -240,23 +247,30 @@
 		},
 		"./node_modules/lodash/_baseSampleSize.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_baseClamp.js"),
-				i = o("./node_modules/lodash/_shuffleSelf.js"),
-				r = o("./node_modules/lodash/values.js");
+				r = o("./node_modules/lodash/_shuffleSelf.js"),
+				s = o("./node_modules/lodash/values.js");
 			t.exports = function(t, e) {
-				var o = r(t);
-				return i(o, n(e, 0, o.length))
+				var o = s(t);
+				return r(o, n(e, 0, o.length))
+			}
+		},
+		"./node_modules/lodash/_baseShuffle.js": function(t, e, o) {
+			var n = o("./node_modules/lodash/_shuffleSelf.js"),
+				r = o("./node_modules/lodash/values.js");
+			t.exports = function(t) {
+				return n(r(t))
 			}
 		},
 		"./node_modules/lodash/_shuffleSelf.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_baseRandom.js");
 			t.exports = function(t, e) {
 				var o = -1,
-					i = t.length,
-					r = i - 1;
-				for (e = void 0 === e ? i : e; ++o < e;) {
-					var s = n(o, r),
-						h = t[s];
-					t[s] = t[o], t[o] = h
+					r = t.length,
+					s = r - 1;
+				for (e = void 0 === e ? r : e; ++o < e;) {
+					var i = n(o, s),
+						h = t[i];
+					t[i] = t[o], t[o] = h
 				}
 				return t.length = e, t
 			}
@@ -271,49 +285,57 @@
 		},
 		"./node_modules/lodash/random.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_baseRandom.js"),
-				i = o("./node_modules/lodash/_isIterateeCall.js"),
-				r = o("./node_modules/lodash/toFinite.js"),
-				s = parseFloat,
+				r = o("./node_modules/lodash/_isIterateeCall.js"),
+				s = o("./node_modules/lodash/toFinite.js"),
+				i = parseFloat,
 				h = Math.min,
 				a = Math.random;
 			t.exports = function(t, e, o) {
-				if (o && "boolean" != typeof o && i(t, e, o) && (e = o = void 0), void 0 === o && ("boolean" == typeof e ? (o = e, e = void 0) : "boolean" == typeof t && (o = t, t = void 0)), void 0 === t && void 0 === e ? (t = 0, e = 1) : (t = r(t), void 0 === e ? (e = t, t = 0) : e = r(e)), t > e) {
+				if (o && "boolean" != typeof o && r(t, e, o) && (e = o = void 0), void 0 === o && ("boolean" == typeof e ? (o = e, e = void 0) : "boolean" == typeof t && (o = t, t = void 0)), void 0 === t && void 0 === e ? (t = 0, e = 1) : (t = s(t), void 0 === e ? (e = t, t = 0) : e = s(e)), t > e) {
 					var d = t;
 					t = e, e = d
 				}
 				if (o || t % 1 || e % 1) {
 					var u = a();
-					return h(t + u * (e - t + s("1e-" + ((u + "").length - 1))), e)
+					return h(t + u * (e - t + i("1e-" + ((u + "").length - 1))), e)
 				}
 				return n(t, e)
 			}
 		},
 		"./node_modules/lodash/sampleSize.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_arraySampleSize.js"),
-				i = o("./node_modules/lodash/_baseSampleSize.js"),
-				r = o("./node_modules/lodash/isArray.js"),
-				s = o("./node_modules/lodash/_isIterateeCall.js"),
+				r = o("./node_modules/lodash/_baseSampleSize.js"),
+				s = o("./node_modules/lodash/isArray.js"),
+				i = o("./node_modules/lodash/_isIterateeCall.js"),
 				h = o("./node_modules/lodash/toInteger.js");
 			t.exports = function(t, e, o) {
-				return e = (o ? s(t, e, o) : void 0 === e) ? 1 : h(e), (r(t) ? n : i)(t, e)
+				return e = (o ? i(t, e, o) : void 0 === e) ? 1 : h(e), (s(t) ? n : r)(t, e)
+			}
+		},
+		"./node_modules/lodash/shuffle.js": function(t, e, o) {
+			var n = o("./node_modules/lodash/_arrayShuffle.js"),
+				r = o("./node_modules/lodash/_baseShuffle.js"),
+				s = o("./node_modules/lodash/isArray.js");
+			t.exports = function(t) {
+				return (s(t) ? n : r)(t)
 			}
 		},
 		"./node_modules/lodash/times.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_baseTimes.js"),
-				i = o("./node_modules/lodash/_castFunction.js"),
-				r = o("./node_modules/lodash/toInteger.js"),
-				s = 9007199254740991,
+				r = o("./node_modules/lodash/_castFunction.js"),
+				s = o("./node_modules/lodash/toInteger.js"),
+				i = 9007199254740991,
 				h = 4294967295,
 				a = Math.min;
 			t.exports = function(t, e) {
-				if ((t = r(t)) < 1 || t > s) return [];
+				if ((t = s(t)) < 1 || t > i) return [];
 				var o = h,
 					d = a(t, h);
-				e = i(e), t -= h;
+				e = r(e), t -= h;
 				for (var u = n(d, e); ++o < t;) e(o);
 				return u
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Frontpage.200ebabdc82f8e584183.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Frontpage.e1496db3e8f6708275cb.js.map

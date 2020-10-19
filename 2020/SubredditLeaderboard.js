@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.18ed0ee34c29f7f6adb1.js
-// Retrieved at 10/19/2020, 4:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8eaf866a1eb9acf067f4.js
+// Retrieved at 10/19/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard", "FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -663,15 +663,9 @@
 					}
 				}
 				render() {
-					const e = this.props.category,
-						t = e && e.name,
-						r = t || i.a,
-						s = this.state[r],
-						o = s ? s.rankings : [],
-						d = s ? s.subreddits : {},
-						c = o && o[0] && o[0].id,
-						l = d && d[c],
-						m = !(l && l.isNSFW) || this.props.isOver18;
+					const {
+						category: e
+					} = this.props, t = e && e.name, r = t || i.a, s = this.state[r], o = s ? s.rankings : [], d = s ? s.subreddits : {}, c = o && o[0] && o[0].id, l = d && d[c], m = !(l && l.isNSFW) || this.props.isOver18;
 					return n.a.createElement(a.b, g({
 						categoryName: t,
 						onSendEventClick: this.sendEventClick,
@@ -899,38 +893,41 @@
 					})))
 				};
 
-			function T(e) {
-				return "".concat(b.e).concat(Object(x.f)(e), "/")
+			function T(e, t) {
+				return t || "".concat(b.e).concat(Object(x.f)(e), "/")
 			}
 			const L = e => c.a.createElement("div", {
 				className: S.a.categoryPicker
 			}, e.categories && e.categories.map(t => e.activeCategoryName === t.name ? null : c.a.createElement(_, {
 				className: S.a.chip,
 				key: t.name,
-				to: T(t.name)
-			}, t.name === b.i ? s.fbt._("Near You", null, {
+				to: T(t.name, t.path)
+			}, t.name ? t.name === b.i ? s.fbt._("Near You", null, {
 				hk: "RuM7j"
-			}) : t.name)));
+			}) : t.name : s.fbt._("Top", null, {
+				hk: "2rw7Gx"
+			}))));
 			t.b = e => {
 				const {
 					subreddits: t,
 					rankings: r,
 					categoryName: s,
-					categories: n
-				} = e, o = Object(E.a)();
+					category: n,
+					categories: o
+				} = e, i = Object(E.a)();
 				Object(d.useEffect)(() => {
-					o(Object(C.d)(s || b.c))
+					i(Object(C.d)(s || b.c))
 				}, []);
-				const i = a()(r),
-					l = t && i && t[i.id],
-					u = "".concat(m.a.assetPath, "/img/leaderboard/banner-background.png"),
-					p = l ? l.bannerBackgroundImage || u : void 0,
-					g = e.to || s && T(s);
+				const l = a()(r),
+					u = t && l && t[l.id],
+					p = "".concat(m.a.assetPath, "/img/leaderboard/banner-background.png"),
+					g = u ? u.bannerBackgroundImage || p : void 0,
+					y = e.to || s && T(s, n.path);
 				return c.a.createElement(h.a, {
 					className: e.className,
 					contentOnly: !0
 				}, c.a.createElement(j, {
-					bannerBackgroundImage: p,
+					bannerBackgroundImage: g,
 					categoryName: s,
 					onSendEventClick: e.onSendEventClick,
 					rankings: r,
@@ -946,9 +943,9 @@
 					categoryName: s,
 					isSecondaryButton: e.isSecondaryButton,
 					onSendEventClick: e.onSendEventClick,
-					to: g
-				}), n && c.a.createElement(L, {
-					categories: n,
+					to: y
+				}), o && c.a.createElement(L, {
+					categories: o,
 					activeCategoryName: s
 				}))
 			}
@@ -1649,4 +1646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.18ed0ee34c29f7f6adb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8eaf866a1eb9acf067f4.js.map
