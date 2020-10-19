@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.be5df0eca432e54e8eb5.js
-// Retrieved at 9/30/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.55ef208e060b394d9cdc.js
+// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RecurringPostList-EditModal"], {
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, n) {
@@ -143,14 +143,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const k = o()(() => {
+			const P = o()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "date"), e.setAttribute("value", "not-a-date"), "not-a-date" !== e.value
 				}),
-				P = u.a.input("Input", S.a);
+				k = u.a.input("Input", S.a);
 
 			function O(e) {
-				return k() ? r.a.createElement(P, D({
+				return P() ? r.a.createElement(k, D({
 					type: "date"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
@@ -274,14 +274,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const k = o()(() => {
+			const P = o()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "time"), e.setAttribute("value", "not-a-time"), "not-a-time" !== e.value
 				}),
-				P = m.a.input("TimeInput", S.a);
+				k = m.a.input("TimeInput", S.a);
 
 			function O(e) {
-				return k() ? r.a.createElement(P, D({
+				return P() ? r.a.createElement(k, D({
 					type: "time"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
@@ -419,17 +419,17 @@
 				g = n("./src/reddit/components/ScheduledPost/SchedulePicker/index.tsx"),
 				S = n("./src/reddit/components/ScheduledPost/SchedulePicker/withSchedulePicker.ts"),
 				D = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				k = n("./src/reddit/controls/Button/index.tsx"),
-				P = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				P = n("./src/reddit/controls/Button/index.tsx"),
+				k = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				O = n("./src/reddit/controls/TextButton/index.tsx"),
 				v = n("./src/reddit/endpoints/scheduledPosts/index.ts"),
 				I = n("./src/reddit/helpers/scheduledPosts/index.ts"),
 				j = n("./src/reddit/helpers/trackers/scheduledPosts.ts"),
 				_ = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
-				N = n("./src/reddit/layout/row/Inline/index.tsx"),
-				E = n("./src/reddit/selectors/scheduledPosts/index.ts"),
-				M = n("./src/reddit/components/RecurringPostList/EditModal/index.m.less"),
-				F = n.n(M);
+				M = n("./src/reddit/layout/row/Inline/index.tsx"),
+				N = n("./src/reddit/selectors/scheduledPosts/index.ts"),
+				E = n("./src/reddit/components/RecurringPostList/EditModal/index.m.less"),
+				F = n.n(E);
 			const {
 				fbt: T
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), w = Object(r.c)({
@@ -438,13 +438,13 @@
 						subredditId: n,
 						scheduledPostId: s
 					} = t;
-					return Object(E.k)(e, {
+					return Object(N.k)(e, {
 						subredditId: n,
 						scheduledPostId: s
 					})
 				},
-				isLoading: E.o,
-				error: E.f
+				isLoading: N.o,
+				error: N.f
 			}), z = Object(a.b)(w, (e, t) => {
 				let {
 					subredditId: n,
@@ -464,10 +464,11 @@
 				}
 			}, (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), n), {
 				isContestMode: !!e.scheduledPost && e.scheduledPost.isContestMode,
+				isPostAsMetaMod: !!e.scheduledPost && e.scheduledPost.isPostAsMetaMod,
 				schedule: e.scheduledPost ? Object(I.h)(e.scheduledPost) : void 0,
 				stickyPosition: e.scheduledPost ? e.scheduledPost.sticky || null : "NONE",
 				suggestedSort: e.scheduledPost && e.scheduledPost.suggestedCommentSort || null,
-				flair: e.scheduledPost ? Object(E.m)({
+				flair: e.scheduledPost ? Object(N.m)({
 					scheduledPost: e.scheduledPost
 				}) : null,
 				media: e.scheduledPost ? Object.assign(Object.assign({}, f.b), {
@@ -477,7 +478,7 @@
 			}));
 			class q extends o.a.PureComponent {
 				constructor(e) {
-					super(e), this.maxDate = Object(b.a)(), this.isSaving = !1, this.onSubmitDateChange = Object(S.k)(this), this.onSubmitTimeChange = Object(S.l)(this), this.onTimezoneChange = Object(S.n)(this), this.buildPostSchedule = () => {
+					super(e), this.maxDate = Object(b.a)(), this.isSaving = !1, this.onSubmitDateChange = Object(S.l)(this), this.onSubmitTimeChange = Object(S.m)(this), this.onTimezoneChange = Object(S.o)(this), this.buildPostSchedule = () => {
 						if (!this.props.scheduledPost) return {};
 						const e = Object(I.h)(this.props.scheduledPost),
 							t = {},
@@ -586,7 +587,7 @@
 						hk: "3qHKKc"
 					}))), o.a.createElement(p.f, {
 						className: F.a.modalFooter
-					}, o.a.createElement(N.a, {
+					}, o.a.createElement(M.a, {
 						className: F.a.buttonRow
 					}, o.a.createElement(O.a, {
 						className: F.a.deleteButton,
@@ -597,15 +598,15 @@
 						hk: "1ruCCL"
 					})), o.a.createElement("span", {
 						className: F.a.rightButtons
-					}, o.a.createElement(k.l, {
+					}, o.a.createElement(P.l, {
 						onClick: this.onCancel
 					}, T._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(k.i, {
+					})), o.a.createElement(P.i, {
 						className: F.a.updateButton,
 						onClick: this.onUpdate,
 						disabled: t || !!S
-					}, t && o.a.createElement(P.a, {
+					}, t && o.a.createElement(k.a, {
 						className: F.a.loadingIcon,
 						sizePx: 14
 					}), o.a.createElement("span", {
@@ -956,13 +957,13 @@
 						onFrequencyOptionChange: g,
 						onSubmitDateChange: S,
 						onSubmitTimeChange: D,
-						onTimezoneChange: k,
-						recurrenceInfo: P,
+						onTimezoneChange: P,
+						recurrenceInfo: k,
 						submitDate: O,
 						submitMonthDay: v,
 						submitTime: I,
 						timezoneName: j
-					} = this.props, _ = P && e === b.b, N = _ && P.frequency === b.d.Weekly, E = _ && P.frequency === b.d.Monthly;
+					} = this.props, _ = k && e === b.b, M = _ && k.frequency === b.d.Weekly, N = _ && k.frequency === b.d.Monthly;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(r.a, {
 						max: t,
 						onChange: S,
@@ -977,7 +978,7 @@
 						hk: "6skzv"
 					}), o.a.createElement(i.a, {
 						selectedTimezoneName: j,
-						onChange: k,
+						onChange: P,
 						className: f.a.timezoneSelector
 					})), o.a.createElement(d.a, {
 						className: f.a.frequencyOptionSelector,
@@ -994,17 +995,17 @@
 						min: 1,
 						step: 1,
 						onChange: s,
-						value: P.interval,
+						value: k.interval,
 						className: f.a.customIntervalInput
 					}), o.a.createElement(l.a, {
-						selectedFrequency: P.frequency,
+						selectedFrequency: k.frequency,
 						onSelect: n
-					})), N && o.a.createElement(m.a, {
-						selectedWeekDays: P.byWeekDays.map(b.j),
+					})), M && o.a.createElement(m.a, {
+						selectedWeekDays: k.byWeekDays.map(b.j),
 						onChange: C
-					}), E && o.a.createElement(u.a, {
+					}), N && o.a.createElement(u.a, {
 						submitDay: v,
-						selectedMonthDays: P.byMonthDays,
+						selectedMonthDays: k.byMonthDays,
 						onChange: y
 					})))
 				}
@@ -1015,11 +1016,11 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "k", (function() {
-				return m
 			})), n.d(t, "l", (function() {
+				return m
+			})), n.d(t, "m", (function() {
 				return h
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return p
 			})), n.d(t, "i", (function() {
 				return b
@@ -1033,14 +1034,16 @@
 				return C
 			})), n.d(t, "b", (function() {
 				return g
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return S
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "n", (function() {
 				return D
 			})), n.d(t, "d", (function() {
+				return P
+			})), n.d(t, "j", (function() {
 				return k
 			})), n.d(t, "c", (function() {
-				return P
+				return O
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/constants/index.ts"),
@@ -1188,12 +1191,17 @@
 						suggestedSort: t
 					})
 				},
-				k = e => t => {
+				P = e => t => {
 					e.setState({
 						isContestMode: t
 					})
 				},
-				P = e => {
+				k = e => t => {
+					e.setState({
+						isPostAsMetaMod: t
+					})
+				},
+				O = e => {
 					const t = e.schedule || (() => {
 							const e = new Date;
 							return e.setMinutes(60), {
@@ -1209,6 +1217,7 @@
 						l = Object(i.p)(o.getDay());
 					return {
 						isContestMode: e.isContestMode || !1,
+						isPostAsMetaMod: e.isPostAsMetaMod,
 						submitDate: n,
 						submitWeekDay: l,
 						submitMonthDay: c,
@@ -1328,4 +1337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.be5df0eca432e54e8eb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.55ef208e060b394d9cdc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7e960ed4b46b667be154.js
-// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7d8d14e0ec8358ed8112.js
+// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "FrontpageSidebar"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1341,11 +1341,11 @@
 				k = s("./src/reddit/selectors/posts.ts"),
 				j = s("./src/reddit/actions/postCreation/constants.ts"),
 				w = s("./src/reddit/actions/postCreation/general.ts");
-			const _ = Object(o.a)(j.o),
-				I = Object(o.a)(j.p),
-				P = Object(o.a)(j.B),
-				S = Object(o.a)(j.H),
-				T = Object(o.a)(j.I),
+			const _ = Object(o.a)(j.l),
+				I = Object(o.a)(j.m),
+				P = Object(o.a)(j.y),
+				S = Object(o.a)(j.E),
+				T = Object(o.a)(j.F),
 				N = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: r
@@ -18689,4 +18689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7e960ed4b46b667be154.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7d8d14e0ec8358ed8112.js.map

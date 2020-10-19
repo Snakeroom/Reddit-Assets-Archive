@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f411a1c7c29b8f113956.js
-// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fdd071b6fca87b7bfd41.js
+// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -141,7 +141,7 @@
 			e.exports = JSON.parse('{"id":"e29846f6d98c"}')
 		},
 		"./src/graphql/operations/CreateScheduledPost.json": function(e) {
-			e.exports = JSON.parse('{"id":"c896863bf3cc"}')
+			e.exports = JSON.parse('{"id":"1e0a4bfe5ac9"}')
 		},
 		"./src/graphql/operations/DeleteScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"dea861ad7f0d"}')
@@ -171,7 +171,7 @@
 			e.exports = JSON.parse('{"id":"2967fe5e7d03"}')
 		},
 		"./src/graphql/operations/SubredditScheduledPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"fd09f54393b2"}')
+			e.exports = JSON.parse('{"id":"de72339b938a"}')
 		},
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
 			e.exports = JSON.parse('{"id":"5834be60ee7a"}')
@@ -186,7 +186,7 @@
 			e.exports = JSON.parse('{"id":"03acb455993d"}')
 		},
 		"./src/graphql/operations/UpdateScheduledPost.json": function(e) {
-			e.exports = JSON.parse('{"id":"df08261a60e8"}')
+			e.exports = JSON.parse('{"id":"f5276d63e133"}')
 		},
 		"./src/graphql/operations/WikiComparisonDiff.json": function(e) {
 			e.exports = JSON.parse('{"id":"37afdc03bbf6"}')
@@ -1458,7 +1458,7 @@
 						return Object(o.a)(v)
 				}
 				const Z = s(),
-					Y = !!C && Object(re.db)(Z),
+					Y = !!C && Object(re.eb)(Z),
 					$ = Object(ce.F)(Z),
 					ee = C ? Object(_.V)(Z, {
 						subredditName: C.toLowerCase()
@@ -2459,11 +2459,11 @@
 				k = s("./src/reddit/selectors/posts.ts"),
 				y = s("./src/reddit/actions/postCreation/constants.ts"),
 				j = s("./src/reddit/actions/postCreation/general.ts");
-			const S = Object(o.a)(y.o),
-				w = Object(o.a)(y.p),
-				I = Object(o.a)(y.B),
-				T = Object(o.a)(y.H),
-				N = Object(o.a)(y.I),
+			const S = Object(o.a)(y.l),
+				w = Object(o.a)(y.m),
+				I = Object(o.a)(y.y),
+				T = Object(o.a)(y.E),
+				N = Object(o.a)(y.F),
 				P = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: a
@@ -3066,6 +3066,7 @@
 						case "isNsfw":
 						case "isOriginalContent":
 						case "isContestMode":
+						case "isPostAsMetaMod":
 						case "isSpoiler":
 							i[e] = !t[e];
 							break;
@@ -26262,6 +26263,7 @@
 						collectionId: n.collectionId || "",
 						discussionType: n.isChatPost ? d.b.Chat : d.b.Comment,
 						isContestMode: n.isContestMode,
+						isPostAsMetaMod: n.isPostAsMetaMod,
 						isSpoiler: n.isSpoiler,
 						isNsfw: n.isNSFW,
 						poll: t && _(t),
@@ -26599,6 +26601,7 @@
 					collectionId: e.collections.edges.length ? e.collections.edges[0].node.id : void 0,
 					discussionType: e.discussionType,
 					isContestMode: e.isContestMode,
+					isPostAsMetaMod: e.isPostAsMetaMod,
 					isSpoiler: e.isSpoiler,
 					isNsfw: e.isNsfw,
 					isOriginalContent: e.isOriginalContent,
@@ -30131,7 +30134,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				ot = Object(i.b)(() => Object(d.a)(et, N.F, v.N, st, N.Y, S.db, nt, tt, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, o, a, r, i, d, c) => {
+				ot = Object(i.b)(() => Object(d.a)(et, N.F, v.N, st, N.Y, S.eb, nt, tt, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, o, a, r, i, d, c) => {
 					let {
 						contentGateInfo: l
 					} = e, {
@@ -31068,4 +31071,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f411a1c7c29b8f113956.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fdd071b6fca87b7bfd41.js.map

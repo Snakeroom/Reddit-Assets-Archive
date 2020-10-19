@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.078523a1aacf5d39ed17.js
-// Retrieved at 10/15/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.4a7295b49c176984d209.js
+// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -434,11 +434,11 @@
 				y = s("./src/reddit/selectors/posts.ts"),
 				k = s("./src/reddit/actions/postCreation/constants.ts"),
 				w = s("./src/reddit/actions/postCreation/general.ts");
-			const j = Object(o.a)(k.o),
-				I = Object(o.a)(k.p),
-				P = Object(o.a)(k.B),
-				S = Object(o.a)(k.H),
-				T = Object(o.a)(k.I),
+			const j = Object(o.a)(k.l),
+				I = Object(o.a)(k.m),
+				P = Object(o.a)(k.y),
+				S = Object(o.a)(k.E),
+				T = Object(o.a)(k.F),
 				N = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: r
@@ -13505,4 +13505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.078523a1aacf5d39ed17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.4a7295b49c176984d209.js.map

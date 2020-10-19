@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6a7e4f7d09e841d2aa14.js
-// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8fc4f51fd2e9d7f5c737.js
+// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("115572"),
+				buildNumber: r("115596"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603124988"),
+				})("1603129861"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3431,14 +3431,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("98bda2c-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("2f76ac7-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "98bda2c-production",
+						release: "2f76ac7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3891,7 +3891,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "98bda2c-production",
+							releaseClient: "2f76ac7-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -16941,25 +16941,25 @@
 				return B
 			})), i.d(t, "v", (function() {
 				return R
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "M", (function() {
 				return C
 			})), i.d(t, "o", (function() {
 				return P
 			})), i.d(t, "F", (function() {
 				return L
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "W", (function() {
 				return A
-			})), i.d(t, "ib", (function() {
+			})), i.d(t, "jb", (function() {
 				return D
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "R", (function() {
 				return G
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "T", (function() {
 				return M
 			})), i.d(t, "h", (function() {
 				return U
 			})), i.d(t, "g", (function() {
 				return q
-			})), i.d(t, "gb", (function() {
+			})), i.d(t, "hb", (function() {
 				return V
 			})), i.d(t, "e", (function() {
 				return W
@@ -16967,7 +16967,7 @@
 				return H
 			})), i.d(t, "G", (function() {
 				return z
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "V", (function() {
 				return K
 			})), i.d(t, "k", (function() {
 				return Q
@@ -16983,88 +16983,90 @@
 				return $
 			})), i.d(t, "I", (function() {
 				return ee
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "N", (function() {
 				return te
 			})), i.d(t, "J", (function() {
 				return ie
 			})), i.d(t, "p", (function() {
 				return ne
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "Y", (function() {
 				return re
-			})), i.d(t, "kb", (function() {
+			})), i.d(t, "lb", (function() {
 				return se
 			})), i.d(t, "E", (function() {
 				return oe
-			})), i.d(t, "fb", (function() {
-				return de
-			})), i.d(t, "db", (function() {
-				return le
-			})), i.d(t, "q", (function() {
-				return ae
-			})), i.d(t, "s", (function() {
-				return ue
-			})), i.d(t, "n", (function() {
-				return ce
-			})), i.d(t, "lb", (function() {
-				return _e
-			})), i.d(t, "bb", (function() {
-				return me
 			})), i.d(t, "K", (function() {
-				return pe
-			})), i.d(t, "C", (function() {
-				return he
-			})), i.d(t, "hb", (function() {
-				return ge
-			})), i.d(t, "jb", (function() {
-				return fe
+				return de
+			})), i.d(t, "gb", (function() {
+				return le
+			})), i.d(t, "eb", (function() {
+				return ae
+			})), i.d(t, "q", (function() {
+				return ue
+			})), i.d(t, "s", (function() {
+				return ce
+			})), i.d(t, "n", (function() {
+				return _e
+			})), i.d(t, "mb", (function() {
+				return me
 			})), i.d(t, "cb", (function() {
+				return pe
+			})), i.d(t, "L", (function() {
+				return he
+			})), i.d(t, "C", (function() {
+				return ge
+			})), i.d(t, "ib", (function() {
+				return fe
+			})), i.d(t, "kb", (function() {
 				return be
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "db", (function() {
 				return we
 			})), i.d(t, "O", (function() {
 				return ye
 			})), i.d(t, "P", (function() {
 				return ve
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "Q", (function() {
 				return Te
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "bb", (function() {
 				return Se
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "U", (function() {
 				return Ee
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "B", (function() {
 				return Fe
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "A", (function() {
 				return Ie
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "x", (function() {
 				return Oe
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "y", (function() {
 				return je
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "w", (function() {
 				return xe
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "z", (function() {
 				return Be
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "S", (function() {
 				return Re
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "r", (function() {
 				return Ce
-			})), i.d(t, "Y", (function() {
+			})), i.d(t, "b", (function() {
 				return ke
-			})), i.d(t, "t", (function() {
-				return Ne
-			})), i.d(t, "eb", (function() {
-				return Pe
-			})), i.d(t, "f", (function() {
-				return Le
-			})), i.d(t, "W", (function() {
-				return Ae
 			})), i.d(t, "Z", (function() {
+				return Ne
+			})), i.d(t, "t", (function() {
+				return Pe
+			})), i.d(t, "fb", (function() {
+				return Le
+			})), i.d(t, "f", (function() {
+				return Ae
+			})), i.d(t, "X", (function() {
 				return De
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "ab", (function() {
 				return Ge
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "c", (function() {
 				return Me
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "d", (function() {
 				return Ue
+			})), i.d(t, "H", (function() {
+				return qe
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -17238,22 +17240,23 @@
 				re = e => e.creations.formData.postSchedule || void 0,
 				se = e => e.creations.formData.suggestedSort,
 				oe = e => e.creations.formData.isContestMode,
-				de = e => e.creations.formData.stickyPosition,
-				le = e => c.d.scheduledPosts(e),
-				ae = e => c.d.extendedScheduledPosts(e),
-				ue = Object(r.a)(e => e.creations.formData.flair, e => {
+				de = e => e.creations.formData.isPostAsMetaMod,
+				le = e => e.creations.formData.stickyPosition,
+				ae = e => c.d.scheduledPosts(e),
+				ue = e => c.d.extendedScheduledPosts(e),
+				ce = Object(r.a)(e => e.creations.formData.flair, e => {
 					const t = Object(S.d)(e);
 					return t ? Object(E.d)(e, {
 						subredditId: t
 					}) : null
 				}, (e, t) => e && e.templateId && t && t.templateIds.includes(e.templateId) ? e : null),
-				ce = e => e.creations.formState.editorMode || e.user.prefs.editorMode,
-				_e = e => e.creations.formData.title,
-				me = e => e.creations.formData.sendReplies,
-				pe = e => e.creations.formData.isPublicLink,
-				he = e => e.creations.formState.isChanged,
-				ge = e => e.creations.formState.submitMode,
-				fe = e => {
+				_e = e => e.creations.formState.editorMode || e.user.prefs.editorMode,
+				me = e => e.creations.formData.title,
+				pe = e => e.creations.formData.sendReplies,
+				he = e => e.creations.formData.isPublicLink,
+				ge = e => e.creations.formState.isChanged,
+				fe = e => e.creations.formState.submitMode,
+				be = e => {
 					const {
 						name: t
 					} = U(e);
@@ -17261,10 +17264,10 @@
 						subredditName: t
 					})
 				},
-				be = Object(r.a)(W, fe, (e, t) => e || !t || t.bodyRestrictionPolicy !== b.a.NotAllowed),
-				we = e => e.creations.formData.body.link,
-				ye = e => e.creations.formData.body.markdown,
-				ve = Object(r.a)(e => e.creations.formData.body.media, e => e.uploads, U, (e, t, i) => {
+				we = Object(r.a)(W, be, (e, t) => e || !t || t.bodyRestrictionPolicy !== b.a.NotAllowed),
+				ye = e => e.creations.formData.body.link,
+				ve = e => e.creations.formData.body.markdown,
+				Te = Object(r.a)(e => e.creations.formData.body.media, e => e.uploads, U, (e, t, i) => {
 					let {
 						items: r
 					} = e;
@@ -17304,57 +17307,57 @@
 						items: r
 					})
 				}),
-				Te = e => e.creations.formData.body.rte,
-				Se = e => e.creations.formData.nextSubreddit,
-				Ee = e => {
-					return !!_e(e).trim()
-				},
+				Se = e => e.creations.formData.body.rte,
+				Ee = e => e.creations.formData.nextSubreddit,
 				Fe = e => {
-					const t = Te(e);
-					return d.a.hasContent(t)
+					return !!me(e).trim()
 				},
 				Ie = e => {
-					return !!ye(e).trim()
+					const t = Se(e);
+					return d.a.hasContent(t)
 				},
 				Oe = e => {
-					return ve(e).items.some(t => {
+					return !!ve(e).trim()
+				},
+				je = e => {
+					return Te(e).items.some(t => {
 						const i = e.uploads[t.uploadKey];
 						return i && i.status !== y.a.FAILED
 					})
 				},
-				je = e => {
-					return !!we(e).trim()
+				xe = e => {
+					return !!ye(e).trim()
 				},
-				xe = e => Ee(e) || Fe(e) || Ie(e) || Oe(e) || je(e),
-				Be = e => e.creations.formState.modalId || e.activeModalId,
-				Re = (e, t) => {
+				Be = e => Fe(e) || Ie(e) || Oe(e) || je(e) || xe(e),
+				Re = e => e.creations.formState.modalId || e.activeModalId,
+				Ce = (e, t) => {
 					let {
 						field: i
 					} = t;
 					switch (i) {
 						case s.nb.TITLE:
 							return {
-								title: _e(e)
+								title: me(e)
 							};
 						case s.nb.BODY:
-							if (ce(e) === f.h.RICH_TEXT) {
-								const t = Te(e);
+							if (_e(e) === f.h.RICH_TEXT) {
+								const t = Se(e);
 								return {
 									rtjson: d.a.toRichTextJSON(t, e.uploads).document
 								}
 							}
 							return {
-								selftext: ye(e).trim()
+								selftext: ve(e).trim()
 							};
 						case s.nb.LINK: {
-							const t = we(e);
+							const t = ye(e);
 							if (!t) return;
 							return {
 								url: t
 							}
 						}
 						case s.nb.FLAIR: {
-							const t = ue(e);
+							const t = ce(e);
 							return {
 								flairId: t ? t.templateId : void 0
 							}
@@ -17363,21 +17366,22 @@
 							return
 					}
 				},
-				Ce = (e, t) => {
+				ke = (e, t) => {
 					const i = U(e),
-						n = ue(e),
+						n = ce(e),
 						r = oe(e),
 						s = $(e),
 						o = ee(e),
 						d = ie(e),
-						l = te(e),
-						a = me(e),
-						u = _e(e),
-						c = pe(e),
-						_ = e.platform.currentPage.queryParams.collection,
-						m = se(e) || void 0;
+						l = de(e),
+						a = te(e),
+						u = pe(e),
+						c = me(e),
+						_ = he(e),
+						m = e.platform.currentPage.queryParams.collection,
+						p = se(e) || void 0;
 					return {
-						collectionId: _,
+						collectionId: m,
 						destSubreddit: i,
 						draftId: t,
 						flair: n,
@@ -17385,19 +17389,20 @@
 						isChatPost: s,
 						isNSFW: o,
 						isOC: d,
-						isSpoiler: l,
-						sendReplies: a,
-						title: u,
-						isPublicLink: c,
-						sticky: de(e) || void 0,
-						suggestedSort: m
+						isPostAsMetaMod: l,
+						isSpoiler: a,
+						sendReplies: u,
+						title: c,
+						isPublicLink: _,
+						sticky: le(e) || void 0,
+						suggestedSort: p
 					}
 				},
-				ke = (e, t) => {
-					const i = Ce(e, t.draftId);
+				Ne = (e, t) => {
+					const i = ke(e, t.draftId);
 					if (!i || !i.destSubreddit.name) return;
 					const n = (e => e.creations.formData.recaptcha)(e),
-						r = De(e, t),
+						r = Ge(e, t),
 						o = ne(e),
 						l = Object.assign(Object.assign({}, i), {
 							eventSchedule: o,
@@ -17405,12 +17410,12 @@
 							postToTwitter: r,
 							validate_on_submit: !0
 						}),
-						a = ce(e),
-						u = we(e),
-						c = ye(e),
-						_ = ve(e),
-						m = Te(e),
-						p = be(e),
+						a = _e(e),
+						u = ye(e),
+						c = ve(e),
+						_ = Te(e),
+						m = Se(e),
+						p = we(e),
 						h = H(e),
 						{
 							uploads: g
@@ -17470,8 +17475,8 @@
 						sourcePostId: b
 					}) : void 0
 				},
-				Ne = e => e.creations.formData,
-				Pe = (e, t) => {
+				Pe = e => e.creations.formData,
+				Le = (e, t) => {
 					let {
 						sourcePostId: i
 					} = t;
@@ -17479,8 +17484,8 @@
 						postId: i
 					}) : void 0
 				},
-				Le = e => {
-					const t = ve(e);
+				Ae = e => {
+					const t = Te(e);
 					switch (H(e)) {
 						case s.Jb.LINK_ONLY:
 							return "link";
@@ -17490,7 +17495,7 @@
 							return "self"
 					}
 				},
-				Ae = (e, t) => {
+				De = (e, t) => {
 					let {
 						pageLayer: i
 					} = t;
@@ -17506,11 +17511,11 @@
 						pageLayer: i
 					}) && Object(x.f)(e) ? Object(g.a)(r.url, v.b) : v.b
 				},
-				De = (e, t) => {
+				Ge = (e, t) => {
 					const i = Object(u.p)(e, t);
 					return (!i || !i.isQuarantined) && e.creations.formData.postToTwitter
 				},
-				Ge = e => {
+				Me = e => {
 					const t = U(e);
 					if (!t.id || t.isProfile) return !1;
 					const i = {
@@ -17519,7 +17524,7 @@
 					};
 					return Object(E.b)(e, i, !0, !0)
 				},
-				Me = e => {
+				Ue = e => {
 					var t;
 					if (W(e)) return !0;
 					const i = U(e);
@@ -17529,7 +17534,7 @@
 						s = r && !1 === (null === (t = r.polls) || void 0 === t ? void 0 : t.canCreate);
 					return n && !s
 				},
-				Ue = e => {
+				qe = e => {
 					const t = W(e);
 					return (e => {
 						const t = U(e),
@@ -17616,10 +17621,10 @@
 					const i = Object(c.b)(e, t);
 					if (!i) return;
 					const n = Object(c.n)(e),
-						r = Object(c.N)(e),
-						s = Object(c.O)(e),
-						o = Object(c.ab)(e),
-						_ = Object(c.cb)(e),
+						r = Object(c.O)(e),
+						s = Object(c.P)(e),
+						o = Object(c.bb)(e),
+						_ = Object(c.db)(e),
 						m = Object(c.a)(e),
 						{
 							uploads: p
@@ -25654,4 +25659,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6a7e4f7d09e841d2aa14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8fc4f51fd2e9d7f5c737.js.map

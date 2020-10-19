@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.352561ec1baeed2ef7ee.js
-// Retrieved at 10/19/2020, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a40ee21b6cd7494074cc.js
+// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2538,11 +2538,11 @@
 				k = s("./src/reddit/selectors/posts.ts"),
 				C = s("./src/reddit/actions/postCreation/constants.ts"),
 				E = s("./src/reddit/actions/postCreation/general.ts");
-			const w = Object(o.a)(C.o),
-				I = Object(o.a)(C.p),
-				P = Object(o.a)(C.B),
-				S = Object(o.a)(C.H),
-				T = Object(o.a)(C.I),
+			const w = Object(o.a)(C.l),
+				I = Object(o.a)(C.m),
+				P = Object(o.a)(C.y),
+				S = Object(o.a)(C.E),
+				T = Object(o.a)(C.F),
 				N = (e, t) => async (s, n, o) => {
 					let {
 						apiContext: r
@@ -13731,4 +13731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.352561ec1baeed2ef7ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a40ee21b6cd7494074cc.js.map

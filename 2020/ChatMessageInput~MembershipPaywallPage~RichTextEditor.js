@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.2ed1e88c362174f904c5.js
-// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d7c44c4cb9166d83b33f.js
+// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -209,9 +209,9 @@
 				j = n("./src/reddit/selectors/postCreations.ts"),
 				R = n("./src/reddit/actions/postCreation/constants.ts"),
 				w = n("./src/reddit/actions/postCreation/general.ts");
-			const B = Object(a.a)(R.x),
-				_ = Object(a.a)(R.y),
-				I = Object(a.a)(R.w),
+			const B = Object(a.a)(R.u),
+				_ = Object(a.a)(R.v),
+				I = Object(a.a)(R.t),
 				A = t => async (e, n) => {
 					e(B());
 					const o = t.map(t => {
@@ -416,7 +416,7 @@
 					}(u)), d.filter(t => t.isValid).map(t => t.uploadKey)
 				}, P = (t, e) => async (n, s) => {
 					const i = s(),
-						r = Object(j.P)(i),
+						r = Object(j.Q)(i),
 						{
 							items: c
 						} = r,
@@ -8090,8 +8090,8 @@
 				return s
 			}));
 			var o = n("./src/reddit/actions/postCreation/constants.ts");
-			const s = (t, e) => t.creations.api.editor.converting.pending[e || o.n]
+			const s = (t, e) => t.creations.api.editor.converting.pending[e || o.k]
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.2ed1e88c362174f904c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d7c44c4cb9166d83b33f.js.map
