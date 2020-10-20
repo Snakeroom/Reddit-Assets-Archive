@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.567a7f5011c88461e828.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.b24a9d86e4c92ecad1be.js
+// Retrieved at 10/20/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -340,7 +340,8 @@
 					}
 				}, U = Object(p.a)(g.T), Q = e => async (t, a) => {
 					t(U(e)), t(Object(j.f)(e.subredditId, {
-						forceLoad: !0
+						forceLoad: !0,
+						fullData: !1
 					})), t(Object(f.g)(i.a.ECON_POWERUPS_PURCHASE)), t(Object(l.e)({
 						kind: h.b.SuccessCommunityGreen,
 						duration: l.a,
@@ -820,4 +821,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.567a7f5011c88461e828.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal.b24a9d86e4c92ecad1be.js.map

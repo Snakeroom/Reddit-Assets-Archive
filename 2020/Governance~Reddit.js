@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.08867c9b8a67d5fed9c5.js
-// Retrieved at 10/19/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.93f53e9713f7ccfe944b.js
+// Retrieved at 10/20/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -106,6 +106,16 @@
 			t.a = (e, t) => {
 				return "overviewConversations--[profile:'".concat(t, "']--[post:'").concat(e, "']")
 			}
+		},
+		"./src/lib/makeProductOfferKey/index.ts": function(e, t, s) {
+			"use strict";
+
+			function n(e, t) {
+				return "".concat(e, "_").concat(t)
+			}
+			s.d(t, "a", (function() {
+				return n
+			}))
 		},
 		"./src/lib/omitKey/index.ts": function(e, t, s) {
 			"use strict";
@@ -2638,7 +2648,8 @@
 						if (a && Object(T.a)(g)) {
 							const e = Object.keys(a)[0];
 							await t(Object(b.f)(e, {
-								fullData: !0
+								fullData: !0,
+								includeIdentity: !1
 							}))
 						}
 						t(q());
@@ -24150,15 +24161,18 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ES,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case Oe.Y: {
+					case Oe.Y:
+					case Oe.kb: {
 						const {
-							type: s,
-							subredditId: n,
-							productOffers: a
-						} = t.payload, r = Object(_S.a)(n, s);
-						return a && 0 !== a.length ? Object.assign(Object.assign({}, e), {
-							[r]: a
-						}) : e
+							subredditId: s,
+							productOffers: n
+						} = t.payload;
+						if (!n || 0 === n.length) return e;
+						const a = n.reduce((e, t) => {
+							const n = Object(_S.a)(s, t.type);
+							return e[n] = e[n] ? [...e[n], t] : [t], e
+						}, {});
+						return Object.assign(Object.assign({}, e), a)
 					}
 					default:
 						return e
@@ -26424,6 +26438,12 @@
 						const s = t.payload.powerups;
 						return s ? yn()(Object.assign(Object.assign({}, e), s), "allocation") : e
 					}
+					case Oe.kb: {
+						const {
+							userPowerups: s
+						} = t.payload;
+						return s ? yn()(Object.assign(Object.assign({}, e), s), "allocation") : e
+					}
 					case Oe.V: {
 						const {
 							powerupsCount: s
@@ -28397,4 +28417,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.08867c9b8a67d5fed9c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.93f53e9713f7ccfe944b.js.map
