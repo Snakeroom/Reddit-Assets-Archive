@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f182504b03cbd9c6cd67.js
-// Retrieved at 10/5/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.1bd1e14e95fd9e68d11e.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -432,7 +432,7 @@
 				C = d.a.wrapped(u.b, "DropdownRow", g.a),
 				v = Object(a.c)({
 					oldSiteRules: p.a,
-					subredditRules: h.R
+					subredditRules: h.S
 				}),
 				E = Object(s.b)(v);
 			class y extends r.a.Component {
@@ -1228,7 +1228,7 @@
 			const ze = Object(w.c)({
 				subredditSettings: (e, t) => {
 					const n = Object(xe.G)(e, t.subredditName);
-					return Object(xe.U)(e, n)
+					return Object(xe.V)(e, n)
 				},
 				wikiPageSettings: H.d
 			});
@@ -1462,4 +1462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f182504b03cbd9c6cd67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.1bd1e14e95fd9e68d11e.js.map

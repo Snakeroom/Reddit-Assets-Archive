@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.89e23af2d80bd778aab2.js
-// Retrieved at 10/20/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5d2e5416bc9fa61fb44c.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -1076,8 +1076,11 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return n
+			})), s.d(t, "b", (function() {
+				return a
 			}));
-			const n = "PREDICTION_VOTE_SUCCESS"
+			const n = "FETCH_SUBREDDIT_TOP_PREDICTORS_SUCCESS",
+				a = "PREDICTION_VOTE_SUCCESS"
 		},
 		"./src/reddit/actions/emoji.ts": function(e, t, s) {
 			"use strict";
@@ -1187,7 +1190,7 @@
 					} = e;
 					return async (e, n, a) => {
 						const r = n(),
-							u = Object(_.S)(r, {
+							u = Object(_.T)(r, {
 								subredditId: s
 							}).name;
 						e(Object(g.k)(t));
@@ -1227,7 +1230,7 @@
 						subredditId: d,
 						emojiName: u,
 						settings: b
-					} = e, O = Object(f.a)(r.url), j = n(), y = Object(_.S)(j, {
+					} = e, O = Object(f.a)(r.url), j = n(), y = Object(_.T)(j, {
 						subredditId: d
 					}).name, m = await (async (e, t, s, n, a) => Object(i.a)(Object(o.a)(e, [l.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/v1/").concat(t, "/emoji.json"),
@@ -1286,7 +1289,7 @@
 					} = n;
 					const r = s();
 					if (Object(v.a)(r, e)) return;
-					const c = Object(_.S)(r, {
+					const c = Object(_.T)(r, {
 						subredditId: e
 					}).name;
 					t(R(e));
@@ -1311,7 +1314,7 @@
 						apiContext: d
 					} = r;
 					const u = a(),
-						b = Object(_.S)(u, {
+						b = Object(_.T)(u, {
 							subredditId: t
 						}).name,
 						g = await (async (e, t, s) => Object(i.a)(Object(o.a)(e, [l.a]), {
@@ -1340,7 +1343,7 @@
 						apiContext: d
 					} = r;
 					const u = a(),
-						b = Object(_.S)(u, {
+						b = Object(_.T)(u, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, s) => Object(i.a)(Object(o.a)(e, [l.a]), {
@@ -1366,7 +1369,7 @@
 						apiContext: d
 					} = r;
 					const u = a(),
-						b = Object(_.S)(u, {
+						b = Object(_.T)(u, {
 							subredditId: e
 						}).name;
 					(await (async (e, t, s) => Object(i.a)(Object(o.a)(e, [l.a]), {
@@ -1387,7 +1390,7 @@
 						apiContext: b
 					} = u;
 					const g = d(),
-						O = Object(_.S)(g, {
+						O = Object(_.T)(g, {
 							subredditId: a
 						}).name;
 					(await (async (e, t, s, n) => Object(i.a)(Object(o.a)(e, [l.a]), {
@@ -1467,7 +1470,7 @@
 				m = e => async (t, r) => {
 					t(p());
 					const c = r(),
-						o = Object(l.S)(c, {
+						o = Object(l.T)(c, {
 							subredditId: e
 						}).name,
 						u = c.structuredStyles.models[e],
@@ -2421,7 +2424,7 @@
 						});
 						if (!P.isSponsored)
 							if (P.belongsTo.type === m.a.SUBREDDIT) {
-								!!Object(F.R)(v, {
+								!!Object(F.S)(v, {
 									subredditId: P.belongsTo.id
 								}) || await t(O.o(n.name))
 							} else await t(g.d(n.name));
@@ -3670,7 +3673,7 @@
 					let r = v.e;
 					const c = s();
 					if (e.subredditId) {
-						const t = Object(C.S)(c, {
+						const t = Object(C.T)(c, {
 								subredditId: e.subredditId
 							}),
 							s = Object(T.p)(c, {
@@ -4308,7 +4311,7 @@
 			const S = e => _.d.reCaptchaEnterprise(e) && !Object(w.d)(e),
 				T = e => !!Object(I.c)(e, {
 					experimentEligibilitySelector: Object(E.d)(Object(E.b)(...r.b)),
-					experimentName: g.fc
+					experimentName: g.gc
 				}),
 				C = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => b()([S, T, e => e.tracking.reCaptchaEnterprise.load === n.a.New], t => t(e)))(async e => {
@@ -4670,7 +4673,7 @@
 					let {
 						gqlContext: r
 					} = a;
-					const d = Object(u.S)(s(), {
+					const d = Object(u.T)(s(), {
 						subredditId: e
 					});
 					if (void 0 === d) {
@@ -4999,7 +5002,7 @@
 					let {
 						apiContext: p
 					} = b;
-					const O = Object(u.S)(n(), {
+					const O = Object(u.T)(n(), {
 						subredditId: e
 					}) || Object(l.p)(n(), {
 						profileId: e
@@ -5542,7 +5545,7 @@
 							displaySettings: y
 						};
 					r(n === f ? G(h) : q(h));
-					const m = Object(p.S)(u, {
+					const m = Object(p.T)(u, {
 							subredditId: a
 						}),
 						v = t && e ? Object(l.g)(e) : void 0;
@@ -5552,7 +5555,7 @@
 						apiContext: r
 					} = a;
 					const c = n(),
-						i = Object(p.S)(c, {
+						i = Object(p.T)(c, {
 							subredditId: e
 						}).name;
 					s(h());
@@ -5569,7 +5572,7 @@
 						apiContext: r
 					} = a;
 					const c = n(),
-						i = Object(p.S)(c, {
+						i = Object(p.T)(c, {
 							subredditId: e
 						}).name;
 					s(E());
@@ -5586,7 +5589,7 @@
 						apiContext: c
 					} = r;
 					const i = a(),
-						l = Object(p.S)(i, {
+						l = Object(p.T)(i, {
 							subredditId: t
 						}).name;
 					s(T());
@@ -5617,7 +5620,7 @@
 						apiContext: c
 					} = r;
 					const i = a(),
-						l = Object(p.S)(i, {
+						l = Object(p.T)(i, {
 							subredditId: t
 						}).name;
 					if (s(D()), (await Object(d.b)(c(), e, l)).ok) {
@@ -5643,7 +5646,7 @@
 						apiContext: c
 					} = r;
 					const i = a(),
-						l = Object(p.S)(i, {
+						l = Object(p.T)(i, {
 							subredditId: t
 						}).name,
 						g = Object(O.c)(i, {
@@ -5677,7 +5680,7 @@
 					const u = a(),
 						g = u.userFlair;
 					if (g && g[e] && g[e].displaySettings.isEnabled && c()(g[e].templateIds)) {
-						const a = Object(p.S)(u, {
+						const a = Object(p.T)(u, {
 								subredditId: e
 							}).name,
 							r = await Object(d.d)(l(), a);
@@ -17897,7 +17900,7 @@
 							n[e].pollData && (a[e] = _f(n[e]))
 						}), Object.assign(Object.assign({}, e), a)
 					}
-					case mf.a:
+					case mf.b:
 						const s = t.payload,
 							{
 								pollId: n
@@ -25835,7 +25838,7 @@
 							coins: s
 						}) : e
 					}
-					case mf.a: {
+					case mf.b: {
 						const {
 							price: s
 						} = t.payload;
@@ -28126,7 +28129,7 @@
 				u = e => e === a.B.OnetapAuto,
 				b = e => e.user.googleOneTapEnabled,
 				g = Object(n.a)(i.I, d, (e, t) => !e && !!t),
-				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.Oc)(t))
+				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.Pc)(t))
 		},
 		"./src/reddit/selectors/profileOverviewChronoItems.ts": function(e, t, s) {
 			"use strict";
@@ -28425,4 +28428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.89e23af2d80bd778aab2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5d2e5416bc9fa61fb44c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.46b3bbc018b94247ae24.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.5f8b1c593a9d97e20e69.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/ScrollChildFactory.tsx": function(e, t, s) {
@@ -1015,7 +1015,7 @@
 						} = t;
 						return Object(j.K)(e, s, r, n)
 					}),
-					subredditsById: v.Z,
+					subredditsById: v.ab,
 					viewportDataLoaded: x.a,
 					pageReferrer: m.Q,
 					postListPlaceholderComponent: () => h.a,
@@ -1063,7 +1063,7 @@
 				o = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(n.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -2048,13 +2048,13 @@
 						experimentEligibilitySelector: o.I,
 						experimentName: r.gb
 					});
-					return !(!t || Object(r.Oc)(t))
+					return !(!t || Object(r.Pc)(t))
 				},
 				c = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o.I,
 						experimentName: r.gb
-					}) === r.kb.ListingEnabled
+					}) === r.lb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, s) {
@@ -2069,4 +2069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.46b3bbc018b94247ae24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5f8b1c593a9d97e20e69.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.df761acd73493b30e154.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.3279d5b169feadcf9921.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -58,8 +58,8 @@
 				g = i.a.div("ReportsContainer", C.a),
 				k = i.a.wrapped(d.c, "Button", C.a),
 				j = i.a.wrapped(c.a, "Reports", C.a),
-				M = i.a.div("NumReports", C.a),
-				R = e => {
+				R = i.a.div("NumReports", C.a),
+				M = e => {
 					let {
 						className: t,
 						handleToggleExpando: s,
@@ -73,7 +73,7 @@
 						className: Object(a.a)(t, {
 							[C.a.collapseReports]: l
 						})
-					}, l ? r.a.createElement(f, null, r.a.createElement(O, null)) : r.a.createElement(v, null, r.a.createElement(_, null)), l ? r.a.createElement(M, null, i) : r.a.createElement(j, {
+					}, l ? r.a.createElement(f, null, r.a.createElement(O, null)) : r.a.createElement(v, null, r.a.createElement(_, null)), l ? r.a.createElement(R, null, i) : r.a.createElement(j, {
 						modReports: c,
 						userReports: d
 					}), n ? r.a.createElement(k, {
@@ -110,7 +110,7 @@
 						className: e,
 						reportable: t
 					} = this.props, s = (t.modReportsDismissed && t.modReportsDismissed.length || 0) + (t.userReportsDismissed && t.userReportsDismissed.length || 0);
-					return r.a.createElement("div", null, s ? r.a.createElement(R, {
+					return r.a.createElement("div", null, s ? r.a.createElement(M, {
 						className: e,
 						collapseReports: this.state.historicalReportsCollapsed,
 						handleToggleExpando: this.handleToggleHistoricalReports,
@@ -118,7 +118,7 @@
 						numReports: s,
 						modReports: t.modReportsDismissed,
 						userReports: t.userReportsDismissed
-					}) : r.a.createElement(R, {
+					}) : r.a.createElement(M, {
 						className: e,
 						handleToggleExpando: this.handleIgnoreReports,
 						collapseReports: t.ignoreReports,
@@ -330,10 +330,10 @@
 				},
 				j = Object(c.c)({
 					flairData: v.d,
-					subreddit: w.S,
+					subreddit: w.T,
 					isMod: (e, t) => !!Object(f.j)(e, t)
 				});
-			class M extends a.a.Component {
+			class R extends a.a.Component {
 				constructor(e) {
 					super(e), this.getTrackingNoun = (e, t) => this.props.isMod ? e : t, this.onApply = () => {
 						const {
@@ -416,10 +416,10 @@
 					}))))
 				}
 			}
-			const R = Object(i.b)(j, (e, t) => ({
+			const M = Object(i.b)(j, (e, t) => ({
 				closeModal: () => e(Object(p.i)(t.modalId))
-			}))(M);
-			t.a = Object(l.a)(Object(d.c)(R))
+			}))(R);
+			t.a = Object(l.a)(Object(d.c)(M))
 		},
 		"./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less": function(e, t, s) {
 			e.exports = {
@@ -507,8 +507,8 @@
 				g = s("./src/reddit/constants/postLayout.ts"),
 				k = s("./src/reddit/helpers/isCrosspost.ts"),
 				j = s("./src/reddit/models/Flair/index.ts"),
-				M = s("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
-				R = s("./src/reddit/constants/experiments.ts"),
+				R = s("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
+				M = s("./src/reddit/constants/experiments.ts"),
 				N = s("./src/reddit/endpoints/crowdControl/index.ts"),
 				I = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				L = s("./src/reddit/helpers/matchRedditUrls/index.ts"),
@@ -523,9 +523,9 @@
 				T = () => void 0,
 				F = Object(a.c)({
 					crowdControlLevelEnabled: C.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => R.Xb.Enabled === Object(I.c)(e, {
+					postLevelCrowdControlEnabled: e => M.Yb.Enabled === Object(I.c)(e, {
 						experimentEligibilitySelector: y.J,
-						experimentName: R.Qb
+						experimentName: M.Rb
 					}),
 					shouldApplyPostLevelCrowdControl: (e, t) => {
 						let {
@@ -569,12 +569,12 @@
 						onCcPost: f,
 						onRemovePost: v,
 						onModToMemberShareOpened: E,
-						onSpamPost: R,
+						onSpamPost: M,
 						onStickyPost: N,
 						onSpoilerPost: I,
 						post: L
 					} = e, P = L.flair.filter(e => e.type !== j.f.Nsfw && e.type !== j.f.Spoiler).length > 0, y = Object(_.b)(L), F = !(!L.approvedBy || !y), A = !i && l === g.g.Compact, B = Object(k.a)(e.post), W = p ? S : T;
-					return n.a.createElement(M.e, null, o && n.a.createElement(n.a.Fragment, null, !L.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(M.c, {
+					return n.a.createElement(R.e, null, o && n.a.createElement(n.a.Fragment, null, !L.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(R.c, {
 						className: W(O.a.Approve, A),
 						displayText: F ? w.fbt._("reapprove", null, {
 							hk: "ZucfK"
@@ -584,7 +584,7 @@
 							hk: "4GoeOE"
 						}),
 						onClick: m
-					}, n.a.createElement(M.a, null)), n.a.createElement(M.c, {
+					}, n.a.createElement(R.a, null)), n.a.createElement(R.c, {
 						className: W(O.a.Remove, A),
 						displayText: L.isRemoved ? w.fbt._("removed", null, {
 							hk: "cSGLt"
@@ -592,15 +592,15 @@
 							hk: "4mKe0F"
 						}),
 						onClick: v
-					}, n.a.createElement(M.g, null)), n.a.createElement(M.c, {
+					}, n.a.createElement(R.g, null)), n.a.createElement(R.c, {
 						className: W(O.a.Spam, A),
 						displayText: L.isSpam ? w.fbt._("Removed as spam", null, {
 							hk: "2olZT7"
 						}) : w.fbt._("Remove as spam", null, {
 							hk: "4A9ZT8"
 						}),
-						onClick: R
-					}, n.a.createElement(M.h, null))), t && n.a.createElement(M.c, {
+						onClick: M
+					}, n.a.createElement(R.h, null))), t && n.a.createElement(R.c, {
 						className: W(O.a.Flair, A),
 						displayText: P ? w.fbt._("Edit post flair", null, {
 							hk: "2oet1"
@@ -608,47 +608,47 @@
 							hk: "1iPNLQ"
 						}),
 						onClick: x
-					}, n.a.createElement(M.i, null))), a && s && n.a.createElement(M.c, {
+					}, n.a.createElement(R.i, null))), a && s && n.a.createElement(R.c, {
 						displayText: w.fbt._("Share with members", null, {
 							hk: "2XMBQE"
 						}),
 						onClick: E
-					}, n.a.createElement(M.d, null)), !L.isRemoved && !d && n.a.createElement(M.b, {
+					}, n.a.createElement(R.d, null)), !L.isRemoved && !d && n.a.createElement(R.b, {
 						isSelected: L.isStickied,
 						onClick: N,
 						text: w.fbt._("Sticky post", null, {
 							hk: "3uXoIh"
 						})
-					}), c && n.a.createElement(M.b, {
+					}), c && n.a.createElement(R.b, {
 						isSelected: r,
 						onClick: u,
 						text: w.fbt._("Distinguish as Mod", null, {
 							hk: "3cCdJd"
 						})
-					}), n.a.createElement(M.b, {
+					}), n.a.createElement(R.b, {
 						isSelected: L.isLocked,
 						onClick: h,
 						text: w.fbt._("Lock comments", null, {
 							hk: "YAV8n"
 						})
-					}), !B && n.a.createElement(M.b, {
+					}), !B && n.a.createElement(R.b, {
 						isSelected: L.isOriginalContent,
 						onClick: C,
 						text: w.fbt._("Mark as OC", null, {
 							hk: "4yx2EO"
 						})
-					}), n.a.createElement(M.b, {
+					}), n.a.createElement(R.b, {
 						isSelected: L.isNSFW,
 						onClick: b,
 						text: w.fbt._("Mark as NSFW", null, {
 							hk: "8QQ2f"
 						})
-					}), s && "subreddit" === L.belongsTo.type && (e.shouldApplyPostLevelCrowdControl || e.crowdControlLevelEnabled && e.postLevelCrowdControlEnabled) && n.a.createElement(M.c, {
+					}), s && "subreddit" === L.belongsTo.type && (e.shouldApplyPostLevelCrowdControl || e.crowdControlLevelEnabled && e.postLevelCrowdControlEnabled) && n.a.createElement(R.c, {
 						displayText: w.fbt._("Adjust crowd Control", null, {
 							hk: "28dSIi"
 						}),
 						onClick: f
-					}, n.a.createElement(D.a, null)), n.a.createElement(M.b, {
+					}, n.a.createElement(D.a, null)), n.a.createElement(R.b, {
 						isSelected: L.isSpoiler,
 						onClick: I,
 						text: w.fbt._("Mark as Spoiler", null, {
@@ -725,10 +725,10 @@
 						onSpamPost: g,
 						onSpoilerPost: k,
 						onStickyPost: j,
-						post: M,
-						sendEvent: R,
+						post: R,
+						sendEvent: M,
 						tooltipId: N
-					} = e, I = M.distinguishType === i.C.MODERATOR, L = I ? i.C.NONE : i.C.MODERATOR, P = Object(m.b)(M.id, c);
+					} = e, I = R.distinguishType === i.C.MODERATOR, L = I ? i.C.NONE : i.C.MODERATOR, P = Object(m.b)(R.id, c);
 					return n.a.createElement(z, {
 						className: W.a.dropdown,
 						isOpen: r,
@@ -745,42 +745,42 @@
 						layout: p,
 						modModeEnabled: u,
 						onApprovePost: () => {
-							x(), R(Object(f.i)("approve", M.id))
+							x(), M(Object(f.i)("approve", R.id))
 						},
 						onRemovePost: () => {
-							O(), R(Object(f.i)("remove", M.id))
+							O(), M(Object(f.i)("remove", R.id))
 						},
 						onSpamPost: () => {
-							g(), R(Object(f.i)("spam", M.id))
+							g(), M(Object(f.i)("spam", R.id))
 						},
 						onDistinguishPost: () => {
-							h(L), R(Object(f.i)(I ? "undistinguish" : "distinguish", M.id))
+							h(L), M(Object(f.i)(I ? "undistinguish" : "distinguish", R.id))
 						},
 						onFlairPost: () => {
-							b(P), R(Object(f.i)("post_flair", M.id))
+							b(P), M(Object(f.i)("post_flair", R.id))
 						},
 						onLockPost: () => {
-							C(), R(Object(f.i)(M.isLocked ? "unlock" : "lock", M.id))
+							C(), M(Object(f.i)(R.isLocked ? "unlock" : "lock", R.id))
 						},
 						onNsfwPost: () => {
-							v(), R(Object(f.i)(M.isNSFW ? "unmark_nsfw" : "mark_nsfw", M.id))
+							v(), M(Object(f.i)(R.isNSFW ? "unmark_nsfw" : "mark_nsfw", R.id))
 						},
 						onOcPost: () => {
-							w(), R(Object(f.i)(M.isOriginalContent ? "unmark_original_content" : "mark_original_content", M.id))
+							w(), M(Object(f.i)(R.isOriginalContent ? "unmark_original_content" : "mark_original_content", R.id))
 						},
 						onCcPost: () => {
 							_()
 						},
 						onModToMemberShareOpened: () => {
-							E(), R(Object(f.i)("mod_to_member_share", M.id))
+							E(), M(Object(f.i)("mod_to_member_share", R.id))
 						},
 						onSpoilerPost: () => {
-							k(), R(Object(f.i)(M.isSpoiler ? "unmark_spoiler" : "mark_spoiler", M.id))
+							k(), M(Object(f.i)(R.isSpoiler ? "unmark_spoiler" : "mark_spoiler", R.id))
 						},
 						onStickyPost: () => {
-							j(), R(Object(f.i)(M.isStickied ? "unsticky" : "sticky", M.id))
+							j(), M(Object(f.i)(R.isStickied ? "unsticky" : "sticky", R.id))
 						},
-						post: M
+						post: R
 					}))
 				})));
 			t.default = K
@@ -1548,4 +1548,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.df761acd73493b30e154.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.3279d5b169feadcf9921.js.map

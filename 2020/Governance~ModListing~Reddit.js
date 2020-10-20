@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.36d81b9598a01378153e.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.bbdcc80b00e281e890a7.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -2771,7 +2771,7 @@
 						apiContext: r
 					} = o;
 					const i = s();
-					Object(M.S)(i, {
+					Object(M.T)(i, {
 						subredditId: e
 					}) && i.user.prefs.rememberCommunitySort && n(Ve(e, {
 						sort: t
@@ -3121,7 +3121,7 @@
 						const e = Object(y.a)("webSocket");
 						return void o(Object(l.f)(s, e))
 					}
-					const j = Object(p.S)(a, {
+					const j = Object(p.T)(a, {
 							subredditId: e
 						}).name,
 						h = await f.e(c(), j, u),
@@ -3159,7 +3159,7 @@
 					t(B({
 						subredditId: e
 					}));
-					const r = Object(p.S)(n(), {
+					const r = Object(p.T)(n(), {
 							subredditId: e
 						}).name,
 						i = await f.f(o(), r);
@@ -3188,7 +3188,7 @@
 							gqlContext: o
 						} = s;
 						const r = n(),
-							i = Object(p.S)(r, {
+							i = Object(p.T)(r, {
 								subredditId: e
 							});
 						if (!i) return;
@@ -3239,7 +3239,7 @@
 				}, J = Object(u.a)(U.f), X = (e, t, n) => async (s, o, r) => {
 					const i = o(),
 						c = n || i.structuredStyles.isEditing,
-						a = Object(p.S)(i, {
+						a = Object(p.T)(i, {
 							subredditId: c
 						}).name;
 					s(J({
@@ -3307,7 +3307,7 @@
 					n(ce({
 						subredditId: e
 					}));
-					const c = Object(p.S)(s(), {
+					const c = Object(p.T)(s(), {
 						subredditId: e
 					});
 					if (!c) return;
@@ -4017,9 +4017,9 @@
 						})()) : Object(T.a)(G) && V === A.a.upvoted && !H && (e => {
 							const t = Object(R.c)(e, {
 								experimentEligibilitySelector: e => Object(v.I)(e),
-								experimentName: m.ob
+								experimentName: m.pb
 							});
-							return Object(m.Oc)(t) ? void 0 : t
+							return Object(m.Pc)(t) ? void 0 : t
 						})(F) && (s(((e, t) => async (n, s, o) => {
 							let {
 								apiContext: a
@@ -4151,7 +4151,7 @@
 					} = f;
 					o(Object(r.h)(n));
 					const j = b(),
-						S = Object(m.S)(j, {
+						S = Object(m.T)(j, {
 							subredditId: e
 						}).name,
 						I = Object(g.k)(t);
@@ -4196,7 +4196,7 @@
 					o(Object(r.h)(n));
 					const h = t.id,
 						S = b(),
-						T = Object(m.S)(S, {
+						T = Object(m.T)(S, {
 							subredditId: e
 						}).name,
 						y = Object(g.k)(t);
@@ -4279,7 +4279,7 @@
 					} = i;
 					s(Object(r.h)(n));
 					const b = t.id,
-						_ = Object(m.S)(o(), {
+						_ = Object(m.T)(o(), {
 							subredditId: e
 						}).name,
 						f = await (async (e, t, n) => Object(d.a)(Object(u.a)(e, [l.a]), {
@@ -4295,7 +4295,7 @@
 					let {
 						apiContext: r
 					} = o;
-					const i = Object(m.S)(s(), {
+					const i = Object(m.T)(s(), {
 						subredditId: e
 					}).name;
 					(await (async (e, t, n) => Object(d.a)(Object(u.a)(e, [l.a]), {
@@ -4314,7 +4314,7 @@
 					return async (e, n, s) => {
 						const o = n(),
 							r = o.structuredStyles.isEditing,
-							c = Object(m.S)(o, {
+							c = Object(m.T)(o, {
 								subredditId: r
 							}).name;
 						e(Object(i.k)(t));
@@ -4341,7 +4341,7 @@
 						apiContext: i
 					} = o;
 					n(Object(r.h)(t));
-					const c = Object(m.S)(s(), {
+					const c = Object(m.T)(s(), {
 							subredditId: e
 						}).name,
 						a = await b(i(), c);
@@ -4359,7 +4359,7 @@
 					n(k({
 						subredditId: e
 					}));
-					const i = Object(m.S)(s(), {
+					const i = Object(m.T)(s(), {
 							subredditId: e
 						}).name,
 						c = await b(r(), i, t);
@@ -4377,7 +4377,7 @@
 					let {
 						apiContext: r
 					} = o;
-					const i = Object(m.S)(s(), {
+					const i = Object(m.T)(s(), {
 							subredditId: e
 						}).name,
 						c = await b(r(), i, !0);
@@ -6437,7 +6437,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: o.experiment(r, s.Fc),
+					experiment: o.experiment(r, s.Gc),
 					post: o.post(r, e),
 					media: o.media(r, e),
 					profile: o.profile(r),
@@ -6449,7 +6449,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: o.experiment(t, s.Fc),
+					experiment: o.experiment(t, s.Gc),
 					post: o.post(t, e),
 					profile: o.profile(t),
 					subreddit: o.subreddit(t),
@@ -7776,10 +7776,10 @@
 			const l = Object(s.a)(a.c, u.H, u.I, d.g, d.f, c.a, (e, t, n, s, r, i) => !e && !t && !n && s && !!r && !r.isNSFW && !!i && Object(o.c)(i.created / 1e3) < 30),
 				b = e => Object(i.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: r.qb,
+					experimentName: r.rb,
 					expEventOverride: !1
 				}),
-				_ = e => e === r.ub.SearchPostToPost || e === r.ub.NlpPostToPost1 || e === r.ub.NlpPostToPost2 || e === r.ub.NlpPostToPost3
+				_ = e => e === r.vb.SearchPostToPost || e === r.vb.NlpPostToPost1 || e === r.vb.NlpPostToPost2 || e === r.vb.NlpPostToPost3
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(e, t, n) {
 			"use strict";
@@ -7812,9 +7812,9 @@
 					experimentName: o.U,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				u = e => e === o.Cc.NoCommunityWidgets,
-				l = e => e === o.Cc.NoRulesModerators,
-				b = e => e === o.Cc.RelatedPostsDu
+				u = e => e === o.Dc.NoCommunityWidgets,
+				l = e => e === o.Dc.NoRulesModerators,
+				b = e => e === o.Dc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -7849,7 +7849,7 @@
 			const c = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(r.S)(e, {
+						const t = Object(r.T)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -7862,14 +7862,14 @@
 				l = (e, t) => {
 					const n = b(e, t);
 					if (!n) return u;
-					const s = Object(r.W)(e, {
+					const s = Object(r.X)(e, {
 						subredditName: n.name
 					});
 					return s && s.postIds && s.postIds.length ? s.postIds : u
 				},
 				b = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(r.S)(e, {
+					return n ? Object(r.T)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -8053,4 +8053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.36d81b9598a01378153e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.bbdcc80b00e281e890a7.js.map

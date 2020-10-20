@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.2b937eab936d34ad6fc0.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.26b4bb3ee8baaa1ea4f4.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./node_modules/lodash/_assignMergeValue.js": function(e, t, r) {
@@ -43,13 +43,13 @@
 				E = r("./node_modules/lodash/isTypedArray.js"),
 				f = r("./node_modules/lodash/_safeGet.js"),
 				h = r("./node_modules/lodash/toPlainObject.js");
-			e.exports = function(e, t, r, S, j, T, p) {
+			e.exports = function(e, t, r, T, j, p, S) {
 				var O = f(e, r),
 					I = f(t, r),
-					R = p.get(I);
+					R = S.get(I);
 				if (R) n(e, r, R);
 				else {
-					var v = T ? T(O, I, r + "", e, t, p) : void 0,
+					var v = p ? p(O, I, r + "", e, t, S) : void 0,
 						A = void 0 === v;
 					if (A) {
 						var y = c(I),
@@ -57,7 +57,7 @@
 							U = !y && !L && E(I);
 						v = I, y || L || U ? c(O) ? v = O : u(O) ? v = o(O) : L ? (A = !1, v = s(I, !0)) : U ? (A = !1, v = d(I, !0)) : v = [] : m(I) || i(I) ? (v = O, i(O) ? v = h(O) : b(O) && !_(O) || (v = a(I))) : A = !1
 					}
-					A && (p.set(I, v), j(v, I, S, T, p), p.delete(I)), n(e, r, v)
+					A && (S.set(I, v), j(v, I, T, p, S), S.delete(I)), n(e, r, v)
 				}
 			}
 		},
@@ -132,7 +132,7 @@
 			})), r.d(t, "a", (function() {
 				return h
 			})), r.d(t, "d", (function() {
-				return S
+				return T
 			})), r.d(t, "b", (function() {
 				return O
 			})), r.d(t, "h", (function() {
@@ -175,10 +175,10 @@
 				E = r("./src/reddit/selectors/userFlair.ts");
 			const f = "USER_FLAIR_DATA__MUTATED",
 				h = "AUTHOR_FLAIR_DATA__MUTATED",
-				S = "STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_SUCCESS",
+				T = "STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_SUCCESS",
 				j = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_PENDING"),
-				T = Object(s.a)(S),
-				p = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_FAILED"),
+				p = Object(s.a)(T),
+				S = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_FAILED"),
 				O = "STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_SUCCESS",
 				I = Object(s.a)("STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_PENDING"),
 				R = Object(s.a)(O),
@@ -210,44 +210,44 @@
 						h = Object(E.c)(l, {
 							subredditId: s
 						}),
-						S = Object.assign(Object.assign({}, h.displaySettings), {
+						T = Object.assign(Object.assign({}, h.displaySettings), {
 							isUserEnabled: r
 						}),
 						j = {
 							userName: n,
 							subredditId: s,
 							applied: e,
-							displaySettings: S
+							displaySettings: T
 						};
 					d(n === f ? G(j) : Y(j));
-					const T = Object(m.S)(l, {
+					const p = Object(m.T)(l, {
 							subredditId: s
 						}),
-						p = t && e ? Object(u.g)(e) : void 0;
-					Object(c.g)(i(), n, T.name, t, p), Object(c.i)(i(), r, T.name)
+						S = t && e ? Object(u.g)(e) : void 0;
+					Object(c.g)(i(), n, p.name, t, S), Object(c.i)(i(), r, p.name)
 				}, V = (e, t) => async (r, n, s) => {
 					let {
 						apiContext: d
 					} = s;
 					const o = n(),
-						a = Object(m.S)(o, {
+						a = Object(m.T)(o, {
 							subredditId: e
 						}).name;
 					r(j());
 					const i = await Object(c.l)(d(), a, t);
 					if (i.ok) {
-						r(T({
+						r(p({
 							subredditId: e,
 							isEnabled: t
 						}))
-					} else r(p());
+					} else r(S());
 					return i.ok
 				}, W = (e, t) => async (r, n, s) => {
 					let {
 						apiContext: d
 					} = s;
 					const o = n(),
-						a = Object(m.S)(o, {
+						a = Object(m.T)(o, {
 							subredditId: e
 						}).name;
 					r(I());
@@ -264,7 +264,7 @@
 						apiContext: o
 					} = d;
 					const a = s(),
-						u = Object(m.S)(a, {
+						u = Object(m.T)(a, {
 							subredditId: t
 						}).name;
 					r(y());
@@ -295,7 +295,7 @@
 						apiContext: o
 					} = d;
 					const a = s(),
-						u = Object(m.S)(a, {
+						u = Object(m.T)(a, {
 							subredditId: t
 						}).name;
 					if (r(x()), (await Object(c.b)(o(), e, u)).ok) {
@@ -321,7 +321,7 @@
 						apiContext: o
 					} = d;
 					const a = s(),
-						u = Object(m.S)(a, {
+						u = Object(m.T)(a, {
 							subredditId: t
 						}).name,
 						b = Object(E.c)(a, {
@@ -355,7 +355,7 @@
 					const l = s(),
 						b = l.userFlair;
 					if (b && b[e] && b[e].displaySettings.isEnabled && o()(b[e].templateIds)) {
-						const s = Object(m.S)(l, {
+						const s = Object(m.T)(l, {
 								subredditId: e
 							}).name,
 							d = await Object(c.d)(u(), s);
@@ -573,13 +573,13 @@
 			})), r.d(t, "p", (function() {
 				return h
 			})), r.d(t, "q", (function() {
-				return S
+				return T
 			})), r.d(t, "o", (function() {
 				return j
 			})), r.d(t, "l", (function() {
-				return T
-			})), r.d(t, "m", (function() {
 				return p
+			})), r.d(t, "m", (function() {
+				return S
 			})), r.d(t, "t", (function() {
 				return O
 			})), r.d(t, "a", (function() {
@@ -617,15 +617,15 @@
 					}
 				},
 				c = (e, t) => {
-					const r = T(e, t);
+					const r = p(e, t);
 					if (r) return r.mainHeader
 				},
 				u = (e, t) => {
-					const r = T(e, t);
+					const r = p(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
 				l = (e, t) => {
-					const r = T(e, t);
+					const r = p(e, t);
 					return r && r.mainHeader ? {
 						owner: r.mainHeader.owner,
 						ownerId: r.mainHeader.ownerId
@@ -650,20 +650,20 @@
 					return r && e.subreddits.gov.releaseNotes[r] || d
 				},
 				h = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).name || "Subreddit Points",
-				S = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || a,
+				T = (e, t) => t && t.subredditId && (e.subreddits.gov.meta[t.subredditId] || {}).images || a,
 				j = (e, t) => {
 					const r = v(e, t);
 					return r && r.decimals ? "1" + "0".repeat(r.decimals) : "1"
 				},
-				T = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
-				p = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
+				p = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
+				S = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
 				O = (e, t) => {
-					const r = p(e, t);
+					const r = S(e, t);
 					return r && r.walletProvider
 				},
 				I = (e, t) => {
 					const r = O(e, t),
-						n = p(e, t);
+						n = S(e, t);
 					return r && r.provider || n && n.provider
 				},
 				R = (e, t) => {
@@ -699,10 +699,10 @@
 					}
 				},
 				y = (e, t) => {
-					const r = p(e, t);
+					const r = S(e, t);
 					return !!r && !!r.walletProvider && !r.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2b937eab936d34ad6fc0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.26b4bb3ee8baaa1ea4f4.js.map

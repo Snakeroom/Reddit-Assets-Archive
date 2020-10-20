@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.4a7295b49c176984d209.js
-// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.3c10bb6a0205295475ab.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -7231,7 +7231,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(j.S)(e, {
+					return s ? Object(j.T)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -7578,7 +7578,7 @@
 				},
 				w = Object(c.c)({
 					flairData: g.d,
-					subreddit: O.S,
+					subreddit: O.T,
 					isMod: (e, t) => !!Object(v.j)(e, t)
 				});
 			class j extends a.a.Component {
@@ -11092,7 +11092,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: a.fb
+				userIsSubscriber: a.gb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -13257,7 +13257,7 @@
 					measureScrollFPS: X.d.measureScrollFPS,
 					layout: j.N,
 					loadMore: Q.d,
-					subredditsById: Y.Z,
+					subredditsById: Y.ab,
 					viewportDataLoaded: $.a,
 					commentsById: P.r,
 					itemIds: Q.f,
@@ -13505,4 +13505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.4a7295b49c176984d209.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.3c10bb6a0205295475ab.js.map

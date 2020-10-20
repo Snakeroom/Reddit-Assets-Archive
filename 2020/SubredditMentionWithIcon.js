@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.dabd7bcfd38f98175c2b.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2d71ca8ac1b3e87371f7.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
@@ -287,7 +287,7 @@
 			const {
 				fbt: v
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(c.c)({
-				subreddit: g.S,
+				subreddit: g.T,
 				subredditAboutInfo: g.y
 			}), S = Object(r.b)(y);
 			class C extends i.a.Component {
@@ -461,7 +461,7 @@
 							subredditName: e
 						}) && !!Object(_.y)(r, {
 							subredditName: e
-						}) || !!Object(_.cb)(r, {
+						}) || !!Object(_.db)(r, {
 							subredditName: e
 						}),
 						a = Object(v.d)(r, {
@@ -1033,7 +1033,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
-				userIsSubscriber: o.fb
+				userIsSubscriber: o.gb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -1611,4 +1611,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.dabd7bcfd38f98175c2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2d71ca8ac1b3e87371f7.js.map

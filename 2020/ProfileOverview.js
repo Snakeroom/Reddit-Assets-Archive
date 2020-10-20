@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.6bab823554e12b6f09b9.js
-// Retrieved at 10/19/2020, 4:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.659f7d75c434c05a2012.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -5832,7 +5832,7 @@
 						showEditFlair: fe,
 						subredditOrProfile: ge,
 						userIsOp: ve
-					} = e, Oe = !!e.redditStyle || !!e["data-redditstyle"], Ce = Oe ? void 0 : p, ye = Object(d.a)(oe), Ee = re && ye, _e = Object(a.a)(oe), we = Object(c.a)(oe), ke = Object(R.c)(me), je = !!me.media && me.media.type === h.o.RTJSON, Pe = ve && je, Se = s ? s - B.a : void 0, Ie = !(E && U || Y), Ne = (e => e === Q.Wb.OnlyTitles)(ue) && !Object($.a)(me), Te = (e => e === Q.Wb.MediumHeight)(ue) && !Object($.a)(me), Me = (e => {
+					} = e, Oe = !!e.redditStyle || !!e["data-redditstyle"], Ce = Oe ? void 0 : p, ye = Object(d.a)(oe), Ee = re && ye, _e = Object(a.a)(oe), we = Object(c.a)(oe), ke = Object(R.c)(me), je = !!me.media && me.media.type === h.o.RTJSON, Pe = ve && je, Se = s ? s - B.a : void 0, Ie = !(E && U || Y), Ne = (e => e === Q.Xb.OnlyTitles)(ue) && !Object($.a)(me), Te = (e => e === Q.Xb.MediumHeight)(ue) && !Object($.a)(me), Me = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -5847,7 +5847,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Le = !!te && !Object(Q.Oc)(te), Re = (!O || Le) && !me.isSponsored, Fe = Object(_.s)(me, v), {
+					})(e), Le = !!te && !Object(Q.Pc)(te), Re = (!O || Le) && !me.isSponsored, Fe = Object(_.s)(me, v), {
 						source: Ae
 					} = Fe, Be = o.a.createElement(A.a, {
 						className: Object(w.a)(pe.a.container, r, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -7800,7 +7800,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(j.S)(e, {
+					return s ? Object(j.T)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -8147,7 +8147,7 @@
 				},
 				k = Object(c.c)({
 					flairData: v.d,
-					subreddit: O.S,
+					subreddit: O.T,
 					isMod: (e, t) => !!Object(g.j)(e, t)
 				});
 			class j extends i.a.Component {
@@ -12021,7 +12021,7 @@
 					currentUser: f.i,
 					layout: l.N,
 					loadMore: b.d,
-					subredditsById: h.Z,
+					subredditsById: h.ab,
 					viewportDataLoaded: x.a,
 					commentsById: b.g,
 					itemIds: b.f,
@@ -12103,7 +12103,7 @@
 						} = t;
 						return Object(v.K)(e, s, n, o)
 					}),
-					subredditsById: O.Z,
+					subredditsById: O.ab,
 					viewportDataLoaded: C.a,
 					pageReferrer: p.Q,
 					postListPlaceholderComponent: () => h.a,
@@ -12151,7 +12151,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -15463,7 +15463,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.bb
 				});
-				return !(!t || Object(n.Oc)(t))
+				return !(!t || Object(n.Pc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -15480,4 +15480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.6bab823554e12b6f09b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.659f7d75c434c05a2012.js.map

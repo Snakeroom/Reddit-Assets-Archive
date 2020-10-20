@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.d7ceabeb7b58261bca20.js
-// Retrieved at 10/20/2020, 11:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e2271d83eb423f138094.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -685,6 +685,12 @@
 					}),
 					[o.ac]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "2OaZ5T"
+					}),
+					[o.fb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+						hk: "28feBj"
+					}),
+					[o.ac]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+						hk: "10bv8G"
 					})
 				};
 
@@ -2060,7 +2066,7 @@
 						}
 						if (O.belongsTo.type !== $.a.SUBREDDIT || O.isSponsored) O.belongsTo.type === $.a.PROFILE && await t(W.d(o.name));
 						else {
-							!!Object(we.R)(p, {
+							!!Object(we.S)(p, {
 								subredditId: O.belongsTo.id
 							}) || await t(q.o(o.name))
 						}
@@ -5560,7 +5566,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(O.S)(e, {
+						return Object(O.T)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					}
@@ -7616,7 +7622,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(w.S)(e, {
+					return s ? Object(w.T)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -8013,7 +8019,7 @@
 				},
 				E = Object(c.c)({
 					flairData: O.d,
-					subreddit: v.S,
+					subreddit: v.T,
 					isMod: (e, t) => !!Object(x.j)(e, t)
 				});
 			class w extends i.a.Component {
@@ -9078,7 +9084,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(R.S)(e, {
+						return Object(R.T)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					},
@@ -10342,7 +10348,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -11126,13 +11132,13 @@
 				return Object(i.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: l,
-					experimentName: o.lb
+					experimentName: o.mb
 				})
 			}
 
 			function m(e) {
 				switch (e) {
-					case o.mb.Enabled:
+					case o.nb.Enabled:
 						return 18;
 					default:
 						return
@@ -11142,7 +11148,7 @@
 			}(n || (n = {}));
 			const p = e => {
 				switch (e) {
-					case o.mb.Enabled:
+					case o.nb.Enabled:
 						return n.Enabled;
 					default:
 						return n.NoBucket
@@ -13640,14 +13646,14 @@
 					experimentEligibilitySelector: e => l(e, t),
 					experimentName: o.S,
 					throttledVariants: {
-						[o.nb.CurrentThrottled]: o.S
+						[o.ob.CurrentThrottled]: o.S
 					}
 				}), a.a),
-				m = e => e === o.nb.CurrentThrottled,
-				p = e => e === o.nb.CurrentThrottled || e === o.nb.CurrentUnthrottled || e === o.nb.CurrentUnthrottledCopy || e === o.nb.NewPopUnthrottledCopy,
-				b = e => e === o.nb.NewPopUnthrottledCopy,
-				h = e => e === o.nb.NewPageUnthrottledCopy || e === o.nb.NewPageUnthrottledCopyFields,
-				f = e => e === o.nb.NewPageUnthrottledCopyFields
+				m = e => e === o.ob.CurrentThrottled,
+				p = e => e === o.ob.CurrentThrottled || e === o.ob.CurrentUnthrottled || e === o.ob.CurrentUnthrottledCopy || e === o.ob.NewPopUnthrottledCopy,
+				b = e => e === o.ob.NewPopUnthrottledCopy,
+				h = e => e === o.ob.NewPageUnthrottledCopy || e === o.ob.NewPageUnthrottledCopyFields,
+				f = e => e === o.ob.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, s) {
 			"use strict";
@@ -13656,7 +13662,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts");
 			const o = e => {
-				if (!Object(n.Oc)(e)) return e || void 0
+				if (!Object(n.Pc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -13673,8 +13679,8 @@
 			const d = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: n.ec
-				}) === n.mc.Enabled
+					experimentName: n.fc
+				}) === n.nc.Enabled
 			})(e) && (e => {
 				const t = Object(r.e)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -13748,4 +13754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.d7ceabeb7b58261bca20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e2271d83eb423f138094.js.map

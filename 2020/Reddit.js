@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4c8864bf9dcf9cf081cc.js
-// Retrieved at 10/20/2020, 2:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a668aa0dd5fdac1784ce.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -3276,11 +3276,11 @@
 				Ea = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				ja = s("./src/reddit/selectors/experiments/utils.ts");
 			const Sa = Object(h.a)(e => Object(Ea.c)(e, {
-					experimentName: Os.zb,
+					experimentName: Os.Ab,
 					experimentEligibilitySelector: wa
 				}), ja.a),
 				wa = e => Object(re.H)(e) || Object(re.I)(e),
-				_a = Object(h.a)(Sa, e => e === Os.Bb.Redesign);
+				_a = Object(h.a)(Sa, e => e === Os.Cb.Redesign);
 			var ka = s("./src/reddit/selectors/multireddit.ts"),
 				Ma = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				Ia = s("./src/lib/LinkedListMap/index.ts");
@@ -5156,9 +5156,9 @@
 			var So = s("./src/reddit/helpers/isArrayEqual.ts"),
 				wo = s("./src/reddit/helpers/trackers/searchResults.ts"),
 				_o = s("./src/reddit/selectors/experiments/trending.ts");
-			const ko = e => Object(re.F)(e) || Os.Ec.Treatment1 === Object(Ea.c)(e, {
+			const ko = e => Object(re.F)(e) || Os.Fc.Treatment1 === Object(Ea.c)(e, {
 				experimentEligibilitySelector: Ea.a,
-				experimentName: Os.Bc
+				experimentName: Os.Cc
 			});
 			var Mo = s("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				Io = s("./src/reddit/selectors/searchResults.ts"),
@@ -12134,8 +12134,8 @@
 			const xs = {
 					displayDelay: 15,
 					displayOnRoutes: [g.Bb.SUBREDDIT, g.Bb.COMMENTS],
-					experimentName: Se.sb,
-					experimentVariant: Se.vb.On,
+					experimentName: Se.tb,
+					experimentVariant: Se.wb.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -14342,11 +14342,11 @@
 				h = e => e.accountManagerModalData.redirectUrl,
 				g = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, b, c.a, p.a, d.b, e => Object(l.c)(e, {
 					experimentEligibilitySelector: m,
-					experimentName: i.qc
+					experimentName: i.rc
 				}), (e, t, s, a, c, d, l) => {
 					let u = "".concat(n.a.accountManagerOrigin).concat(e);
 					return l && (u = Object(r.a)(u, {
-						["experiment_".concat(i.qc)]: l
+						["experiment_".concat(i.rc)]: l
 					})), e === o.c.GoogleOneTap ? Object(r.a)(u, {
 						[i.J]: d
 					}) : (a && (u = Object(r.a)(u, {
@@ -14371,7 +14371,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.ab
 				});
-				return !!t && !Object(n.Oc)(t)
+				return !!t && !Object(n.Pc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/layer.ts": function(e, t, s) {
@@ -14385,17 +14385,17 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Gb.Enabled === Object(a.c)(e, {
+			const r = e => n.Hb.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: n.Eb
+				}),
+				o = e => n.Gb.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: n.Db
 				}),
-				o = e => n.Fb.Enabled === Object(a.c)(e, {
+				i = e => n.Ib.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Cb
-				}),
-				i = e => n.Hb.Enabled === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: n.Eb
+					experimentName: n.Fb
 				})
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
@@ -14406,9 +14406,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(r.F)(e) || !(n.Dc.Holdout === Object(a.c)(e, {
+			const o = e => Object(r.F)(e) || !(n.Ec.Holdout === Object(a.c)(e, {
 				experimentEligibilitySelector: a.a,
-				experimentName: n.Ac
+				experimentName: n.Bc
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, s) {
@@ -14423,17 +14423,17 @@
 				a = s("./src/reddit/featureFlags/utils.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = ["AU", "CA", "GB", "US"],
-				i = new Set([n.wb.AllItems, n.wb.TrendingSearch]),
+				i = new Set([n.xb.AllItems, n.xb.TrendingSearch]),
 				c = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: Object(a.d)(Object(a.b)(...o)),
-						experimentName: n.xb
+						experimentName: n.yb
 					});
 					return i.has(t)
 				},
-				d = e => n.wb.AllItems === Object(r.c)(e, {
+				d = e => n.xb.AllItems === Object(r.c)(e, {
 					experimentEligibilitySelector: Object(a.d)(Object(a.b)(...o)),
-					experimentName: n.xb
+					experimentName: n.yb
 				})
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, s) {
@@ -14722,4 +14722,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "Reddit~reddit-components-MediumPost", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4c8864bf9dcf9cf081cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a668aa0dd5fdac1784ce.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8eaf866a1eb9acf067f4.js
-// Retrieved at 10/19/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8158c20d81c9297fa27f.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard", "FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, r) {
@@ -1285,9 +1285,9 @@
 						let {
 							categoryId: r
 						} = t;
-						return Object(B.N)(e, r)
+						return Object(B.O)(e, r)
 					},
-					subreddits: B.Z
+					subreddits: B.ab
 				}),
 				G = Object(i.b)(A, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.a)(t, r))
@@ -1369,8 +1369,8 @@
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				Y = r.n(K);
 
-			function Z() {
-				return (Z = Object.assign || function(e) {
+			function z() {
+				return (z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -1378,7 +1378,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const z = e => {
+			const Z = e => {
 				const {
 					category: t,
 					children: r,
@@ -1386,7 +1386,7 @@
 					isActive: n,
 					tabIndex: a
 				} = e, i = Object(c.a)(Y.a.categoryLink, n && Y.a.active, s);
-				return o.a.createElement("li", null, o.a.createElement(V.a, Z({}, t.anchorProps, {
+				return o.a.createElement("li", null, o.a.createElement(V.a, z({}, t.anchorProps, {
 					className: i,
 					"data-active": n,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -1446,7 +1446,7 @@
 						}
 					}, n, e && e.map((e, s) => {
 						const n = a + s * r;
-						return o.a.createElement(z, {
+						return o.a.createElement(Z, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
@@ -1553,7 +1553,7 @@
 					} = t;
 					return Object(h.b)(r.params.categoryName || "")
 				},
-				_e = Object(u.Nc)(p.f),
+				_e = Object(u.Oc)(p.f),
 				xe = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: _e
@@ -1646,4 +1646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8eaf866a1eb9acf067f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8158c20d81c9297fa27f.js.map

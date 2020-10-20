@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.63ecb687cfb92a97ebf3.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.0574642139684c215511.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -384,7 +384,7 @@
 						} = t;
 						return Object(_.K)(e, s, r, n)
 					}),
-					subredditsById: E.Z,
+					subredditsById: E.ab,
 					viewportDataLoaded: S.a,
 					pageReferrer: m.Q,
 					postListPlaceholderComponent: () => h.a,
@@ -514,7 +514,7 @@
 				L = s.n(I);
 			const {
 				fbt: v
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = Object(_.a)(e => o.a.createElement(S.d, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = Object(_.a)(e => o.a.createElement(S.d, {
 				className: L.a.modalBody
 			}, o.a.createElement(S.h, null, o.a.createElement(P.a, null, o.a.createElement(S.p, {
 				className: L.a.modalTitle
@@ -533,7 +533,7 @@
 			})), o.a.createElement(O.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
-			})))), F = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+			})))), k = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 				className: L.a.feedDetailsTitle
 			}, o.a.createElement(C.a, {
 				className: L.a.modIcon
@@ -564,10 +564,10 @@
 						moderatedCommunitiesIds: s,
 						toggleModal: r
 					} = e;
-					return s ? o.a.createElement(o.a.Fragment, null, o.a.createElement(F, {
+					return s ? o.a.createElement(o.a.Fragment, null, o.a.createElement(k, {
 						moderatedCommunitiesIds: s,
 						onSeeMoreDetails: r
-					}), t && o.a.createElement(k, {
+					}), t && o.a.createElement(F, {
 						moderatedCommunitiesIds: s,
 						onCloseModal: r,
 						onOverlayClick: r,
@@ -817,12 +817,12 @@
 						timeSort: a
 					}
 				}),
-				ke = Object(d.b)(ve, (e, t) => ({
+				Fe = Object(d.b)(ve, (e, t) => ({
 					onLoadMorePosts: () => e(m.c({
 						sort: t.match.params.sort
 					}))
 				}));
-			class Fe extends o.a.PureComponent {
+			class ke extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onViewed = (e, t) => Object(je.f)(this.props.listingKey, this.props.sort, t, e), this.renderEmptySubreddit = () => o.a.createElement(b.a, {
 						listingName: this.props.listingName,
@@ -851,7 +851,7 @@
 					}))
 				}
 			}
-			t.default = ke(Fe)
+			t.default = Fe(ke)
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, s) {
 			"use strict";
@@ -868,15 +868,15 @@
 						experimentEligibilitySelector: i.I,
 						experimentName: r.gb
 					});
-					return !(!t || Object(r.Oc)(t))
+					return !(!t || Object(r.Pc)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i.I,
 						experimentName: r.gb
-					}) === r.kb.ListingEnabled
+					}) === r.lb.ListingEnabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.63ecb687cfb92a97ebf3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.0574642139684c215511.js.map

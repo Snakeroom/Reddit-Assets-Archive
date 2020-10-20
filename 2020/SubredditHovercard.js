@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.1d27fe9fbbde4f0613ad.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.ada70f24fbc1b7ae6fa8.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./node_modules/lodash/_assignMergeValue.js": function(e, t, s) {
@@ -401,16 +401,16 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), P = j.a.wrapped(y.b, "SubredditIcon", N.a), H = j.a.wrapped(f.a, "SubredditNameDisplay", N.a), A = j.a.div("SubredditDescription", N.a), M = j.a.div("SubredditNameContainer", N.a), L = j.a.div("SubredditInfoContainer", N.a), k = j.a.div("Subscribers", N.a), D = j.a.div("Online", N.a), B = j.a.div("Count", N.a), U = j.a.div("CountLabel", N.a), R = j.a.div("Container", N.a), V = j.a.div("CardContainer", N.a), Z = e => r.a.createElement(L, null, r.a.createElement(k, null, r.a.createElement(B, null, Object(O.b)(e.subredditAboutInfo.subscribers)), r.a.createElement(U, null, S._({
+				fbt: P
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = j.a.wrapped(y.b, "SubredditIcon", N.a), H = j.a.wrapped(f.a, "SubredditNameDisplay", N.a), A = j.a.div("SubredditDescription", N.a), M = j.a.div("SubredditNameContainer", N.a), L = j.a.div("SubredditInfoContainer", N.a), k = j.a.div("Subscribers", N.a), D = j.a.div("Online", N.a), B = j.a.div("Count", N.a), U = j.a.div("CountLabel", N.a), R = j.a.div("Container", N.a), V = j.a.div("CardContainer", N.a), Z = e => r.a.createElement(L, null, r.a.createElement(k, null, r.a.createElement(B, null, Object(O.b)(e.subredditAboutInfo.subscribers)), r.a.createElement(U, null, P._({
 				"*": "Members",
 				_1: " Member"
-			}, [S._plural(e.subredditAboutInfo.subscribers)], {
+			}, [P._plural(e.subredditAboutInfo.subscribers)], {
 				hk: "2L8qF4"
-			}))), r.a.createElement(D, null, r.a.createElement(B, null, Object(O.b)(e.subredditAboutInfo.accountsActive)), r.a.createElement(U, null, S._({
+			}))), r.a.createElement(D, null, r.a.createElement(B, null, Object(O.b)(e.subredditAboutInfo.accountsActive)), r.a.createElement(U, null, P._({
 				"*": "Online",
 				_1: " Online"
-			}, [S._plural(e.subredditAboutInfo.accountsActive)], {
+			}, [P._plural(e.subredditAboutInfo.accountsActive)], {
 				hk: "3OMjYw"
 			})))), F = Object(E.a)(e => {
 				const {
@@ -431,7 +431,7 @@
 					className: t,
 					id: n,
 					style: a
-				}, r.a.createElement(V, null, r.a.createElement(M, null, r.a.createElement(P, {
+				}, r.a.createElement(V, null, r.a.createElement(M, null, r.a.createElement(S, {
 					subredditOrProfile: l,
 					shouldHideNsfwIcon: s
 				}), r.a.createElement(H, {
@@ -444,7 +444,7 @@
 				}), r.a.createElement(A, null, Object(g.a)(u.publicDescription || "", 140)), r.a.createElement(I.k, {
 					onClick: b,
 					to: "".concat(l.url)
-				}, S._("View Community", null, {
+				}, P._("View Community", null, {
 					hk: "3TWTGC"
 				})), r.a.createElement(x.h, {
 					id: l.id,
@@ -687,7 +687,7 @@
 				}
 			}));
 			var x = Object(n.b)(() => Object(d.c)({
-					subreddit: h.S
+					subreddit: h.T
 				}))(e => r.a.createElement(b, {
 					className: e.className,
 					type: "communityTools",
@@ -799,7 +799,7 @@
 				}
 			}));
 			var C = Object(n.b)(() => Object(d.c)({
-				subreddit: h.S
+				subreddit: h.T
 			}))(e => r.a.createElement(b, {
 				className: e.className,
 				type: "sidebar",
@@ -831,7 +831,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(h.S)(e, {
+					return s ? Object(h.T)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -1002,4 +1002,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.1d27fe9fbbde4f0613ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.ada70f24fbc1b7ae6fa8.js.map

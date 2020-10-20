@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.7fbc0c49c62c027eed4c.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.0f715072d4b04fdcf25a.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1085,7 +1085,7 @@
 				re = n("./src/reddit/selectors/subreddit.ts");
 			const oe = 6,
 				ie = Object(u.c)({
-					apiPending: re.T,
+					apiPending: re.U,
 					unsavedChangesModalIsOpen: Object(se.b)($.a)
 				});
 			class ae extends o.a.Component {
@@ -2477,7 +2477,7 @@
 				o = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -2957,4 +2957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.7fbc0c49c62c027eed4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.0f715072d4b04fdcf25a.js.map

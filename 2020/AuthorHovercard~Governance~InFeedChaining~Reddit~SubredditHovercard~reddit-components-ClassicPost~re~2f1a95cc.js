@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.ff81e3f6bcb1f58113a7.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.a53a2023fb3e2bcdcc4e.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -390,13 +390,13 @@
 								experimentEligibilitySelector: h.a,
 								experimentName: j.hb
 							});
-							return !(!t || Object(j.Oc)(t))
+							return !(!t || Object(j.Pc)(t))
 						})(a)) && ("repeat_purchaser" !== s.dealInfo.type || (e => {
 							const t = Object(h.c)(e, {
 								experimentEligibilitySelector: h.a,
 								experimentName: j.fb
 							});
-							return !(!t || Object(j.Oc)(t))
+							return !(!t || Object(j.Pc)(t))
 						})(a)) && (e(w({
 							correlationId: t,
 							packageId: r
@@ -2013,7 +2013,7 @@
 						apiContext: s
 					} = a;
 					const o = n(),
-						i = Object(w.S)(o, {
+						i = Object(w.T)(o, {
 							subredditId: e
 						}).name,
 						d = t && t.after ? t.after : "",
@@ -2047,7 +2047,7 @@
 						apiContext: s
 					} = a;
 					const o = n(),
-						i = Object(w.S)(o, {
+						i = Object(w.T)(o, {
 							subredditId: e
 						}).name,
 						d = t && t.afterEditable ? t.afterEditable : "",
@@ -2091,7 +2091,7 @@
 						apiContext: a
 					} = n;
 					const s = r(),
-						o = Object(w.S)(s, {
+						o = Object(w.T)(s, {
 							subredditId: e
 						}).name;
 					if (s.moderators.invitedModerators.api.pending) return;
@@ -2106,7 +2106,7 @@
 						apiContext: i
 					} = o;
 					const d = s(),
-						c = Object(w.S)(d, {
+						c = Object(w.T)(d, {
 							subredditId: e
 						}),
 						l = c.name,
@@ -2262,7 +2262,7 @@
 						apiContext: s
 					} = a;
 					const o = n(),
-						i = Object(w.S)(o, {
+						i = Object(w.T)(o, {
 							subredditId: e
 						}).name;
 					r(Mt()), (await ((e, t, r) => Object(_.a)(Object(p.a)(e, [O.a]), {
@@ -2284,10 +2284,10 @@
 					} = a;
 					const o = n();
 					await Promise.all([(async () => {
-						if (!Object(A.b)(l.a.BAN_USER)(o) && !Object(w.P)(o, {
+						if (!Object(A.b)(l.a.BAN_USER)(o) && !Object(w.Q)(o, {
 								subredditId: e
 							})) {
-							const t = Object(w.S)(o, {
+							const t = Object(w.T)(o, {
 								subredditId: e
 							});
 							await r(Object(c.o)(t.name))
@@ -2877,7 +2877,7 @@
 					experimentEligibilitySelector: s.I,
 					experimentName: n.cb
 				});
-				return !(!t || Object(n.Oc)(t))
+				return !(!t || Object(n.Pc)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
@@ -2901,4 +2901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.ff81e3f6bcb1f58113a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.a53a2023fb3e2bcdcc4e.js.map

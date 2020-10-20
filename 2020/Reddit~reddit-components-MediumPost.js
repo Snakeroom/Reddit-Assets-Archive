@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.dd84c8f843eeacbb189a.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.b63c164bda537f90569d.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-MediumPost"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -177,6 +177,12 @@
 					}),
 					[r.ac]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "2OaZ5T"
+					}),
+					[r.fb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+						hk: "28feBj"
+					}),
+					[r.ac]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+						hk: "10bv8G"
 					})
 				};
 
@@ -908,7 +914,7 @@
 				H = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(S.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(w.a)(Object(S.a)(e).post, y.a.black, y.a.white) : e.textColor === _.e.Dark ? y.a.black : y.a.white,
 				z = p.a.wrapped(W, "TextFlair", I.a),
 				q = p.a.wrapped(B, "RichTextFlair", I.a),
-				Z = e => {
+				G = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -918,8 +924,8 @@
 							return Object(o.j)(.1, Object(S.a)(i()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				G = p.a.wrapped(e => {
-					const t = Z(e),
+				Z = p.a.wrapped(e => {
+					const t = G(e),
 						s = c.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -997,7 +1003,7 @@
 						});
 					case _.f.Nsfw:
 					case _.f.Spoiler:
-						return c.a.createElement(G, {
+						return c.a.createElement(Z, {
 							className: t,
 							text: r.text,
 							type: r.type
@@ -1417,7 +1423,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(v.S)(e, {
+						return Object(v.T)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					}
@@ -1997,7 +2003,7 @@
 						type: n
 					}, o) : o)
 				}), "Title", R.a),
-				Z = e => {
+				G = e => {
 					var {
 						className: t,
 						disableVisited: s,
@@ -2009,7 +2015,7 @@
 						})
 					}), r.children)
 				},
-				G = e => {
+				Z = e => {
 					var {
 						disableVisited: t,
 						nowrap: s
@@ -2046,7 +2052,7 @@
 						let {
 							post: s
 						} = t;
-						return Object(M.S)(e, {
+						return Object(M.T)(e, {
 							subredditId: s.belongsTo.id
 						}).name
 					},
@@ -2068,7 +2074,7 @@
 					} = e, {
 						isSponsored: n
 					} = t;
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(G, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return i.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, i.a.createElement(Y, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return i.a.createElement(h.b, {
@@ -2079,7 +2085,7 @@
 					}, i.a.createElement(Y, e)); {
 						const r = t.media && Object(C.H)(t.media) ? Object(j.c)(t.id, s) : t.permalink,
 							o = e.isCommentPermalink ? Object(v.b)(r) : Object(x.a)(r);
-						return i.a.createElement(G, {
+						return i.a.createElement(Z, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, n ? ((e, t) => {
@@ -2092,7 +2098,7 @@
 								postId: e.id,
 								source: s
 							}, i.a.createElement(Y, t)) : i.a.createElement(Y, t)
-						})(t, e) : i.a.createElement(Z, {
+						})(t, e) : i.a.createElement(G, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -2236,7 +2242,7 @@
 		"./src/reddit/components/Thumbnail/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return Z
+				return G
 			}));
 			var n = s("./src/lib/isUrl/index.ts"),
 				r = s("./node_modules/react/index.js"),
@@ -2413,7 +2419,7 @@
 						placeholderImage: x,
 						redditStyle: b,
 						theme: v
-					}), C = Z(e), w = Q(p, t, O, y, g, v, C, l, f, h, b, d, u, m, r), k = Object(I.E)(p);
+					}), C = G(e), w = Q(p, t, O, y, g, v, C, l, f, h, b, d, u, m, r), k = Object(I.E)(p);
 					return Object(n.a)(k) && !h && k.indexOf("redditmedia") < 0 ? i.a.createElement("div", {
 						className: Object(o.a)(F.a.container, j ? F.a.usePreview : "", s)
 					}, i.a.createElement(S.b, {
@@ -2425,7 +2431,7 @@
 						className: Object(o.a)(F.a.container, j ? F.a.usePreview : "", s)
 					}, w)
 				}),
-				Z = e => {
+				G = e => {
 					let {
 						crosspost: t,
 						post: s,
@@ -2438,13 +2444,13 @@
 						media: o,
 						thumbnail: a
 					} = t || s;
-					return r && i ? i.url : G(o) ? o.scrubberThumbSource : a.url
+					return r && i ? i.url : Z(o) ? o.scrubberThumbSource : a.url
 				},
-				G = e => !!e && e.type === I.o.LIVEVIDEO,
+				Z = e => !!e && e.type === I.o.LIVEVIDEO,
 				Q = (e, t, s, r, a, c, d, u, m, p, b, h, f, x, g) => {
 					const v = e.source && !e.isSponsored || !1;
 					if (Object(n.a)(d)) {
-						const s = G(e.media),
+						const s = Z(e.media),
 							n = s ? {
 								errorSrc: l.U
 							} : {},
@@ -4120,4 +4126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.dd84c8f843eeacbb189a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.b63c164bda537f90569d.js.map

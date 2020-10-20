@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5af73ddbd1cf901b42ec.js
-// Retrieved at 10/20/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3aaccadfce62686e1431.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -285,16 +285,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Jb
+					experimentName: m.Kb
 				});
-				return Object(m.Oc)(t) ? void 0 : t
+				return Object(m.Pc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Kb
+					experimentName: m.Lb
 				});
-				return Object(m.Oc)(t) ? void 0 : t
-			}, (e, t) => e === m.Lb.Enabled && t === m.Lb.Enabled);
+				return Object(m.Pc)(t) ? void 0 : t
+			}, (e, t) => e === m.Mb.Enabled && t === m.Mb.Enabled);
 			var h = a("./src/config.ts");
 			var b = a("./src/reddit/selectors/user.ts");
 			a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "2ba13aa-production"
+					SENTRY_RELEASE_VERSION: "e2d5497-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -1910,7 +1910,7 @@
 					let {
 						subredditId: a
 					} = t;
-					return Object(_.S)(e, {
+					return Object(_.T)(e, {
 						subredditId: a
 					}).name
 				}
@@ -4152,7 +4152,7 @@
 					a = Object(o.d)(Sa.A),
 					s = Object(o.d)(Sa.Y);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!s && !a))))
-			}, Ls = e => Object(o.d)(t => Object(pt.fb)(t, {
+			}, Ls = e => Object(o.d)(t => Object(pt.gb)(t, {
 				identifier: {
 					name: e,
 					type: ct.a.PROFILE
@@ -4211,7 +4211,7 @@
 						subreddit: a
 					} = t;
 					const s = a && a.replace(/^r\//, "");
-					return !!s && Object(pt.fb)(e, {
+					return !!s && Object(pt.gb)(e, {
 						identifier: {
 							name: s,
 							type: ct.a.SUBREDDIT
@@ -5841,4 +5841,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5af73ddbd1cf901b42ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3aaccadfce62686e1431.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7b120951009c9f05fd63.js
-// Retrieved at 10/20/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.ba0b0e8b425c847353c2.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -18,16 +18,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Jb
+					experimentName: u.Kb
 				});
-				return Object(u.Oc)(t) ? void 0 : t
+				return Object(u.Pc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Kb
+					experimentName: u.Lb
 				});
-				return Object(u.Oc)(t) ? void 0 : t
-			}, (e, t) => e === u.Lb.Enabled && t === u.Lb.Enabled);
+				return Object(u.Pc)(t) ? void 0 : t
+			}, (e, t) => e === u.Mb.Enabled && t === u.Mb.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "2ba13aa-production"
+					SENTRY_RELEASE_VERSION: "e2d5497-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -1240,7 +1240,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), e === A.Ab.OCR ? o += "".concat(oe).concat(t) : s.title && (o += "".concat(oe).concat(s.title)), e === A.Ab.ShortPostTitleOCR && (o += "".concat(oe).concat(t)), o.length > ne ? Object(E.a)(o, ne, h.cb) : o
+					return i && (o += i), e === A.Bb.OCR ? o += "".concat(oe).concat(t) : s.title && (o += "".concat(oe).concat(s.title)), e === A.Bb.ShortPostTitleOCR && (o += "".concat(oe).concat(t)), o.length > ne ? Object(E.a)(o, ne, h.cb) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(Y.j, this.state.viewportHeight),
@@ -1940,4 +1940,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7b120951009c9f05fd63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.ba0b0e8b425c847353c2.js.map

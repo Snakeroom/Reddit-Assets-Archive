@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d905d534d6b6705097e2.js
-// Retrieved at 10/20/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a4043e733fe68f443814.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -671,16 +671,16 @@
 			const m = Object(i.a)(e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Jb
+					experimentName: u.Kb
 				});
-				return Object(u.Oc)(t) ? void 0 : t
+				return Object(u.Pc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: u.Kb
+					experimentName: u.Lb
 				});
-				return Object(u.Oc)(t) ? void 0 : t
-			}, (e, t) => e === u.Lb.Enabled && t === u.Lb.Enabled);
+				return Object(u.Pc)(t) ? void 0 : t
+			}, (e, t) => e === u.Mb.Enabled && t === u.Mb.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -728,7 +728,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "2ba13aa-production"
+					SENTRY_RELEASE_VERSION: "e2d5497-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -1328,6 +1328,12 @@
 					}),
 					[o.ac]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
 						hk: "2OaZ5T"
+					}),
+					[o.fb]: e => s.fbt._("{amount}m", [s.fbt._param("amount", String(e))], {
+						hk: "28feBj"
+					}),
+					[o.ac]: e => s.fbt._("{amount}y", [s.fbt._param("amount", String(e))], {
+						hk: "10bv8G"
 					})
 				};
 
@@ -6081,7 +6087,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(y.S)(e, {
+						return Object(y.T)(e, {
 							subredditId: n.belongsTo.id
 						}).name
 					}
@@ -6685,7 +6691,7 @@
 				}
 			}));
 			var C = Object(r.b)(() => Object(i.c)({
-					subreddit: g.S
+					subreddit: g.T
 				}))(e => o.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -6797,7 +6803,7 @@
 				}
 			}));
 			var S = Object(r.b)(() => Object(i.c)({
-				subreddit: g.S
+				subreddit: g.T
 			}))(e => o.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -6829,7 +6835,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(g.S)(e, {
+					return n ? Object(g.T)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -8014,7 +8020,7 @@
 					} = this.props;
 					if (!o) return;
 					let r = "";
-					return s && (r += s), e === A.Ab.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.Ab.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
+					return s && (r += s), e === A.Bb.OCR ? r += "".concat(re).concat(t) : n.title && (r += "".concat(re).concat(n.title)), e === A.Bb.ShortPostTitleOCR && (r += "".concat(re).concat(t)), r.length > oe ? Object(v.a)(r, oe, m.cb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -9059,7 +9065,7 @@
 							subredditId: n
 						}
 					} = t;
-					return n ? Object(_.S)(e, {
+					return n ? Object(_.T)(e, {
 						subredditId: n
 					}) : void 0
 				},
@@ -10923,7 +10929,7 @@
 				},
 				S = Object(c.c)({
 					flairData: y.d,
-					subreddit: v.S,
+					subreddit: v.T,
 					isMod: (e, t) => !!Object(x.j)(e, t)
 				});
 			class _ extends i.a.Component {
@@ -11292,7 +11298,7 @@
 						let {
 							post: n
 						} = t;
-						return Object(A.S)(e, {
+						return Object(A.T)(e, {
 							subredditId: n.belongsTo.id
 						}).name
 					},
@@ -11843,7 +11849,7 @@
 					const s = Object(b.q)(e, {
 						pageLayer: n
 					});
-					return s && Object(y.R)(e, {
+					return s && Object(y.S)(e, {
 						subredditId: s.id
 					})
 				}, e => (e || []).filter(e => T.has(e.kind))),
@@ -21077,7 +21083,7 @@
 				r = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(o.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, t) => {
 				let {
 					identifier: n
@@ -30781,7 +30787,7 @@
 								subredditId: n
 							}
 						} = t;
-						return n ? Object(_.S)(e, {
+						return n ? Object(_.T)(e, {
 							subredditId: n
 						}) : void 0
 					},
@@ -33820,13 +33826,13 @@
 						experimentEligibilitySelector: r.I,
 						experimentName: s.gb
 					});
-					return !(!t || Object(s.Oc)(t))
+					return !(!t || Object(s.Pc)(t))
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.I,
 						experimentName: s.gb
-					}) === s.kb.ListingEnabled
+					}) === s.lb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, n) {
@@ -34182,4 +34188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d905d534d6b6705097e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a4043e733fe68f443814.js.map

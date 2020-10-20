@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.c0daf7dc96352969a9ff.js
-// Retrieved at 10/19/2020, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.ff334e8032e754c5a270.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -5670,7 +5670,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(I.S)(e, {
+					return s ? Object(I.T)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -6017,7 +6017,7 @@
 				},
 				k = Object(c.c)({
 					flairData: g.d,
-					subreddit: O.S,
+					subreddit: O.T,
 					isMod: (e, t) => !!Object(v.j)(e, t)
 				});
 			class I extends i.a.Component {
@@ -9294,7 +9294,7 @@
 					currentUser: f.i,
 					layout: l.N,
 					loadMore: b.d,
-					subredditsById: h.Z,
+					subredditsById: h.ab,
 					viewportDataLoaded: x.a,
 					commentsById: b.g,
 					itemIds: b.f,
@@ -9327,7 +9327,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(o.b)(() => Object(n.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -11258,4 +11258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.c0daf7dc96352969a9ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.ff334e8032e754c5a270.js.map

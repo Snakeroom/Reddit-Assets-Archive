@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.aaff6abb22c365ca2b04.js
-// Retrieved at 10/19/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.de7f326b8eee7d792a41.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -9854,7 +9854,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(_.S)(e, {
+					return s ? Object(_.T)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -10201,7 +10201,7 @@
 				},
 				w = Object(c.c)({
 					flairData: v.d,
-					subreddit: C.S,
+					subreddit: C.T,
 					isMod: (e, t) => !!Object(f.j)(e, t)
 				});
 			class _ extends i.a.Component {
@@ -11497,7 +11497,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), se = Object(a.c)({
 				currentUser: g.i,
 				powerups: h.f,
-				subreddit: x.S,
+				subreddit: x.T,
 				topSupporters: h.g,
 				userPowerupsData: h.l
 			}), ne = Object(u.c)(e => {
@@ -11772,7 +11772,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.Oc)(e) ? Object(I.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.Pc)(e) ? Object(I.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -11802,7 +11802,7 @@
 						post: i,
 						shouldShowSubredditUpsell: c,
 						subredditOrProfile: d
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Oc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Pc)(o), p = i && i.id;
 					return s || n || t || l || !c ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(h.a, {
@@ -14511,7 +14511,7 @@
 				ye = p.a.wrapped(le.a, "InternalLink", he.a),
 				Ee = p.a.div("LinkContainer", he.a),
 				ke = Object(i.c)({
-					userIsBanned: ue.db
+					userIsBanned: ue.eb
 				});
 			var je = Object(r.b)(ke)(e => {
 					const {
@@ -14671,7 +14671,7 @@
 						} = t;
 						return Object(v.K)(e, s, n, o)
 					}),
-					subredditsById: C.Z,
+					subredditsById: C.ab,
 					viewportDataLoaded: O.a,
 					pageReferrer: p.Q,
 					postListPlaceholderComponent: () => h.a,
@@ -14719,7 +14719,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(o.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, t) => {
 				let {
 					identifier: s
@@ -18734,7 +18734,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.H
 				});
-				return !!t && !Object(n.Oc)(t)
+				return !!t && !Object(n.Pc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -18749,7 +18749,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.bb
 				});
-				return !(!t || Object(n.Oc)(t))
+				return !(!t || Object(n.Pc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -18766,4 +18766,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.aaff6abb22c365ca2b04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.de7f326b8eee7d792a41.js.map

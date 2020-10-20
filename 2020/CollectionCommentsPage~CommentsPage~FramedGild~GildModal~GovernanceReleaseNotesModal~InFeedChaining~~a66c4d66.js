@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b0e8b3dee74876717f80.js
-// Retrieved at 10/20/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.9560a6e9364e0a04fa9e.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -366,8 +366,8 @@
 			var G = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
 				Y = s.n(G);
 
-			function J() {
-				return (J = Object.assign || function(e) {
+			function K() {
+				return (K = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -375,7 +375,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var K = function(e, t) {
+			var J = function(e, t) {
 				var s = {};
 				for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && t.indexOf(i) < 0 && (s[i] = e[i]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -402,8 +402,8 @@
 						isFullScreen: s,
 						zeroOpacity: i,
 						innerRef: n
-					} = e, r = K(e, ["className", "isFullScreen", "zeroOpacity", "innerRef"]);
-					return a.a.createElement("div", J({
+					} = e, r = J(e, ["className", "isFullScreen", "zeroOpacity", "innerRef"]);
+					return a.a.createElement("div", K({
 						className: Object(o.a)(Y.a.ControlBarContainer, t, {
 							[Y.a.mIsFullScreen]: s,
 							[Y.a.mHasZeroOpacity]: i
@@ -795,16 +795,16 @@
 				L = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				B = s("./src/reddit/selectors/experiments/utils.ts");
 			const N = Object(d.a)(e => Object(L.c)(e, {
-					experimentName: C.Fc,
+					experimentName: C.Gc,
 					experimentEligibilitySelector: L.a
 				}), B.a),
 				O = Object(d.a)(N, (function(e) {
 					switch (e) {
-						case C.Jc.BufferTwoSeconds:
+						case C.Kc.BufferTwoSeconds:
 							return 2;
-						case C.Jc.BufferFiveSeconds:
+						case C.Kc.BufferFiveSeconds:
 							return 5;
-						case C.Jc.BufferTenSeconds:
+						case C.Kc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -822,8 +822,8 @@
 				z = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
 				G = s("./node_modules/fbt/lib/FbtPublic.js"),
 				Y = (s("./node_modules/core-js/modules/es6.symbol.js"), s("./src/reddit/icons/svgs/VideoCheckmark/index.tsx")),
-				J = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
-				K = s.n(J);
+				K = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
+				J = s.n(K);
 
 			function Z() {
 				return (Z = Object.assign || function(e) {
@@ -848,12 +848,12 @@
 				$ = [...X, 480, 360, 240, q],
 				ee = e => l.a.createElement("button", {
 					"aria-checked": e.isChecked,
-					className: K.a.SetAutoplayButton,
+					className: J.a.SetAutoplayButton,
 					onClick: e.onClick,
 					role: "checkbox",
 					tabIndex: 0
 				}, l.a.createElement(Y.a, null), l.a.createElement("div", {
-					className: K.a.AutoplayDescription
+					className: J.a.AutoplayDescription
 				}, G.fbt._("Autoplay", null, {
 					hk: "1x30w1"
 				}))),
@@ -865,16 +865,16 @@
 					} = e;
 					return l.a.createElement("button", {
 						"aria-checked": i,
-						className: K.a.VideoResolutionButton,
+						className: J.a.VideoResolutionButton,
 						onClick: s,
 						role: "radio",
 						tabIndex: 0
 					}, l.a.createElement(Y.a, null), l.a.createElement("div", {
-						className: K.a.VideoResolutionDescription
+						className: J.a.VideoResolutionDescription
 					}, t === q ? G.fbt._("Auto", null, {
 						hk: "6zgZT"
 					}) : l.a.createElement(l.a.Fragment, null, l.a.createElement("span", null, t, "p"), X.includes(t) && l.a.createElement("span", {
-						className: K.a.VideoHd
+						className: J.a.VideoHd
 					}, " ", G.fbt._("HD", null, {
 						hk: "2KjxjH"
 					})))))
@@ -886,8 +886,8 @@
 						innerRef: i
 					} = e, n = Q(e, ["isActive", "className", "innerRef"]);
 					return l.a.createElement("div", Z({
-						className: Object(p.a)(K.a.SettingControlContainer, s, {
-							[K.a.mIsActive]: t
+						className: Object(p.a)(J.a.SettingControlContainer, s, {
+							[J.a.mIsActive]: t
 						}),
 						ref: i
 					}, n))
@@ -921,15 +921,15 @@
 					} = this.props, a = [...t.map(e => e.height), q];
 					return l.a.createElement(se, {
 						innerRef: this.setContainerRef,
-						className: Object(p.a)(K.a.VideoSettingContainer, s),
+						className: Object(p.a)(J.a.VideoSettingContainer, s),
 						isActive: e
 					}, i && l.a.createElement("div", {
-						className: K.a.AutoplayContainer
+						className: J.a.AutoplayContainer
 					}, l.a.createElement(ee, {
 						isChecked: this.state.autoplayPref,
 						onClick: this.setAutoplay
 					})), l.a.createElement("div", {
-						className: K.a.VideoResolutionContainer,
+						className: J.a.VideoResolutionContainer,
 						role: "radiogroup"
 					}, $.map((e, t) => a.includes(e) ? l.a.createElement(te, {
 						key: t,
@@ -1108,11 +1108,11 @@
 				ze = s.n(We),
 				Ge = D.a.div("Component", ze.a),
 				Ye = s("./src/reddit/components/HTML5StreamPlayer/index.m.less"),
-				Je = s.n(Ye);
+				Ke = s.n(Ye);
 			! function(e) {
 				e[e.SeekBar = 0] = "SeekBar", e[e.Settings = 1] = "Settings", e[e.Volume = 2] = "Volume"
 			}(Ue || (Ue = {}));
-			const Ke = 3e3,
+			const Je = 3e3,
 				Ze = 6e3,
 				Qe = 100,
 				qe = Object(c.b)(() => Object(d.c)({
@@ -1333,7 +1333,7 @@
 						} = this;
 						e && clearTimeout(e)
 					}, this.resetControlBarFadeTimer = function() {
-						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ke;
+						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Je;
 						t.clearControlBarFadeTimer(), t.setState({
 							hideControlBar: !1
 						}), t.controlBarFadeTimer = window.setTimeout(() => {
@@ -1508,8 +1508,8 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("2ba13aa-production", " ").concat(t);
-									return i && (s += " [".concat(C.Fc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("e2d5497-production", " ").concat(t);
+									return i && (s += " [".concat(C.Gc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -1659,7 +1659,7 @@
 					});
 					return l.a.createElement(De, {
 						setRef: this.setContainerRef,
-						className: Object(p.a)(e, this.state.videoFullScreen ? Je.a.RedditVideoPlayerRoot__Fullscreen : Je.a.RedditVideoPlayerRoot, this.state.usingKeys ? "using-keys" : null),
+						className: Object(p.a)(e, this.state.videoFullScreen ? Ke.a.RedditVideoPlayerRoot__Fullscreen : Ke.a.RedditVideoPlayerRoot, this.state.usingKeys ? "using-keys" : null),
 						isVisible: f,
 						onClick: this.handleClick,
 						onKeyDown: this.handleKeyDown,
@@ -1679,7 +1679,7 @@
 						onTimeUpdate: this.updateTime,
 						preload: "metadata",
 						ref: this.combinedVideoRefs,
-						className: this.state.videoFullScreen ? Je.a.HTML5StreamPlayer__VideoFullscreen : Je.a.HTML5StreamPlayer__VideoRegular
+						className: this.state.videoFullScreen ? Ke.a.HTML5StreamPlayer__VideoFullscreen : Ke.a.HTML5StreamPlayer__VideoRegular
 					}, this.props.hlsSource && l.a.createElement("source", {
 						src: this.props.hlsSource,
 						type: "application/vnd.apple.mpegURL"
@@ -2361,17 +2361,17 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Gc
+					experimentName: n.Hc
 				}),
-				r = [n.Kc.FeedAndTheatre, n.Kc.FeedOnly],
+				r = [n.Lc.FeedAndTheatre, n.Lc.FeedOnly],
 				l = Object(i.a)(o, e => r.includes(e)),
-				c = [n.Kc.FeedAndTheatre, n.Kc.TheatreOnly],
+				c = [n.Lc.FeedAndTheatre, n.Lc.TheatreOnly],
 				d = Object(i.a)(o, e => c.includes(e)),
 				h = Object(i.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Hc
-				}), e => e === n.Lc.Enabled)
+					experimentName: n.Ic
+				}), e => e === n.Mc.Enabled)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.b0e8b3dee74876717f80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.9560a6e9364e0a04fa9e.js.map

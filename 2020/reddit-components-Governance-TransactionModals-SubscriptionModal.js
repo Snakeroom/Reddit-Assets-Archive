@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.6ef58ab8986b37b50f29.js
-// Retrieved at 10/5/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.72bfde7d2f716a42fe58.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, s) {
@@ -118,16 +118,16 @@
 				A = s("./src/config.ts"),
 				f = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				w = s("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
-				I = s("./src/reddit/selectors/economics.ts"),
-				T = s("./src/reddit/selectors/subreddit.ts"),
+				T = s("./src/reddit/selectors/economics.ts"),
+				I = s("./src/reddit/selectors/subreddit.ts"),
 				g = s("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				M = s("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
 				h = s("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
 				N = s.n(h);
 
 			function k(e) {
-				const t = Object(o.d)(t => Object(T.S)(t, e)),
-					s = Object(o.d)(t => Object(I.s)(t, e.subredditId)),
+				const t = Object(o.d)(t => Object(I.T)(t, e)),
+					s = Object(o.d)(t => Object(T.s)(t, e.subredditId)),
 					r = s.membershipAlt,
 					c = s.prices.points,
 					d = "".concat(A.a.assetPath, "/img/memberships/paywall/").concat(t.name.toLowerCase(), "/membership_frame.svg");
@@ -166,18 +166,18 @@
 				} = e, r = Object(o.c)(), A = Object(v.a)(), {
 					tokenConversion: f,
 					walletProvider: w,
-					walletAddress: I
+					walletAddress: T
 				} = Object(o.d)(Object(c.c)({
 					tokenConversion: t => Object(j.o)(t, e),
 					walletProvider: t => Object(j.t)(t, e),
 					walletAddress: t => Object(j.s)(t, e)
-				})), T = Object(u.c)(w.extra.contracts.subscriptions.address, I, !0), g = Object(b.b)(t, f);
+				})), I = Object(u.c)(w.extra.contracts.subscriptions.address, T, !0), g = Object(b.b)(t, f);
 				return a.a.createElement(_.a, {
 					approvalOverview: a.a.createElement(k, {
 						subredditId: s
 					}),
 					approvalDetails: a.a.createElement(E, {
-						transaction: T
+						transaction: I
 					}),
 					onClose: e.onClose,
 					onTransactionSuccess: async a => {
@@ -200,7 +200,7 @@
 						A(Object(p.a)("subscribe", s, g, e))
 					},
 					subredditId: s,
-					transaction: T,
+					transaction: I,
 					transactionIntent: Object(m.d)(s),
 					transactionIsBlockedOnIOS: !0
 				})
@@ -208,4 +208,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.6ef58ab8986b37b50f29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.72bfde7d2f716a42fe58.js.map

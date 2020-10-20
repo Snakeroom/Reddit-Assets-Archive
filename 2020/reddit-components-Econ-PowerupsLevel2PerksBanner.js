@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.bc9eeeeabb59cbb05c0e.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.3bf64cac573689fa2e18.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/PowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -146,7 +146,7 @@
 						userId: a.id
 					})
 				},
-				subreddit: m.S,
+				subreddit: m.T,
 				userBenefits: u.h
 			});
 			var A;
@@ -240,14 +240,14 @@
 					}, d + 1, "/", m))
 				})),
 				I = s("./src/reddit/components/Econ/PowerupsLevel2PerksBanner/index.m.less"),
-				S = s.n(I);
+				U = s.n(I);
 			const {
-				fbt: U
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(o.c)({
+				fbt: y
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = Object(o.c)({
 				powerups: u.f,
-				subreddit: m.S
+				subreddit: m.T
 			});
-			t.default = Object(c.b)(y)(e => {
+			t.default = Object(c.b)(S)(e => {
 				var t;
 				const {
 					className: s,
@@ -267,26 +267,26 @@
 					tiersInfo: g
 				} = o, f = null === (t = g[E] || g[E - 1]) || void 0 === t ? void 0 : t.benefits;
 				return n.a.createElement("div", {
-					className: Object(i.a)(S.a.container, s)
+					className: Object(i.a)(U.a.container, s)
 				}, n.a.createElement("h2", {
-					className: S.a.title
-				}, U._("Powerup", null, {
+					className: U.a.title
+				}, y._("Powerup", null, {
 					hk: "4p1fZz"
 				})), n.a.createElement(F, {
 					benefits: f,
-					className: S.a.gallery,
+					className: U.a.gallery,
 					onClick: k,
 					subredditId: m
 				}), n.a.createElement("footer", {
-					className: S.a.footer
+					className: U.a.footer
 				}, n.a.createElement(b.l, {
-					className: S.a.button,
+					className: U.a.button,
 					onClick: k
-				}, U._("Learn more", null, {
+				}, y._("Learn more", null, {
 					hk: "1hZsGq"
 				}))))
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.bc9eeeeabb59cbb05c0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.3bf64cac573689fa2e18.js.map

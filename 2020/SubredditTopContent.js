@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.b5b3d016c3324a32d8e8.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.260466ab1a4f25ff9c14.js
+// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -122,13 +122,13 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				x = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				O = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(O.F)(e) || f.zc.ShowTopContent === Object(x.c)(e, {
+			const y = e => Object(O.F)(e) || f.Ac.ShowTopContent === Object(x.c)(e, {
 				experimentEligibilitySelector: x.a,
-				experimentName: f.uc
+				experimentName: f.vc
 			});
 			var j = s("./src/reddit/selectors/subreddit.ts"),
-				C = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
-				v = s.n(C);
+				v = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
+				C = s.n(v);
 			const k = Object(a.b)(() => Object(l.c)({
 				inSubredditTopContentExperiment: y,
 				subredditUrl: j.d
@@ -171,15 +171,15 @@
 						postIds: r,
 						range: o
 					} = s, i = "".concat(t).concat(u.O.TOP, "?t=").concat(o), a = c.a.createElement(h.a, {
-						className: v.a.widgetHeader
+						className: C.a.widgetHeader
 					}, c.a.createElement("button", {
-						className: v.a.closeButton,
+						className: C.a.closeButton,
 						onClick: this.onCloseClick
 					}, c.a.createElement(b.b, {
-						className: v.a.closeIcon,
+						className: C.a.closeIcon,
 						"data-redditstyle": !0
 					})), c.a.createElement(d.a, {
-						className: v.a.headerLink,
+						className: C.a.headerLink,
 						to: i
 					}, n.fbt._("Top posts from the past {range}", [n.fbt._param("range", o)], {
 						hk: "xhJKf"
@@ -187,7 +187,7 @@
 					return c.a.createElement("div", {
 						className: this.props.className
 					}, c.a.createElement(p.a, {
-						className: v.a.layout,
+						className: C.a.layout,
 						header: a,
 						hidePadding: !0
 					}, c.a.createElement(m.a, {
@@ -253,7 +253,7 @@
 				O = s("./src/higherOrderComponents/withClickTracking.tsx"),
 				y = s("./src/reddit/components/PostContainer/index.m.less"),
 				j = s.n(y);
-			const C = Object(o.c)({
+			const v = Object(o.c)({
 					basePixelMetadata: (e, t) => {
 						let {
 							post: s
@@ -305,7 +305,7 @@
 						})
 					}
 				}),
-				v = Object(m.a)(C),
+				C = Object(m.a)(v),
 				k = e => {
 					const t = Object(O.d)(e.target, e.currentTarget),
 						s = Object(O.b)(e.target, e.currentTarget, O.a.buttons);
@@ -356,8 +356,8 @@
 						id: l ? l(p.id) : p.id,
 						tabIndex: -1,
 						"data-testid": p.id
-					}, s), C = !!p.media && p.media.type === b.o.VIDEO;
-					return p.isSponsored || C ? r.a.createElement(c.a, {
+					}, s), v = !!p.media && p.media.type === b.o.VIDEO;
+					return p.isSponsored || v ? r.a.createElement(c.a, {
 						post: p,
 						trackDisplay: !0
 					}, y) : p.media && Object(b.F)(p.media) ? r.a.createElement(u, {
@@ -365,7 +365,7 @@
 					}, y) : y
 				}
 			}
-			t.a = v(Object(O.c)(Object(p.c)(_)))
+			t.a = C(Object(O.c)(Object(p.c)(_)))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -585,4 +585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.b5b3d016c3324a32d8e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.260466ab1a4f25ff9c14.js.map
