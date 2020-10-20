@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.7f27ff96fca39b3f5299.js
-// Retrieved at 10/20/2020, 5:10:33 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.3a1e6722f826dae78484.js
+// Retrieved at 10/20/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -6862,13 +6862,17 @@
 						inviterContact: e,
 						channel: t
 					} = this.props, n = e && !!e.isNSFW;
-					if (t && t.inviter) return r.a.createElement("div", null, r.a.createElement(oh, null, n ? r.a.createElement(sh, null) : r.a.createElement(ah, {
+					if (t && t.inviter) return r.a.createElement("div", null, r.a.createElement("a", {
+						target: fe.c.BLANK,
+						rel: fe.b,
+						href: "".concat(F.a.redditUrl, "/user/").concat(t.inviter.name)
+					}, r.a.createElement(oh, null, n ? r.a.createElement(sh, null) : r.a.createElement(ah, {
 						userId: t.inviter.id
 					}), r.a.createElement(nh, null, r.a.createElement(Ta, {
 						bold: !0
 					}, t.inviter.name), n && r.a.createElement(ch, null, f.fbt._("NSFW", null, {
 						hk: "3rI4EF"
-					}))), this.renderUserInfo()), r.a.createElement(rh, null, f.fbt._("Accept their request if you'd like to continue the conversation. We won't notify them if you decline.", null, {
+					}))), this.renderUserInfo())), r.a.createElement(rh, null, f.fbt._("Accept their request if you'd like to continue the conversation. We won't notify them if you decline.", null, {
 						hk: "1wbHBD"
 					})), t && t.type === C.a.Group ? this.renderMembersList() : this.renderPreviewMessages())
 				}
@@ -14665,4 +14669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.7f27ff96fca39b3f5299.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.3a1e6722f826dae78484.js.map
