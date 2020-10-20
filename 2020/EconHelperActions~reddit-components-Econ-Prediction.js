@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions~reddit-components-Econ-Prediction.b72a1d523c7ee9c16343.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions~reddit-components-Econ-Prediction.161387df600498a8be9d.js
+// Retrieved at 10/20/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions~reddit-components-Econ-Prediction"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -204,7 +204,9 @@
 					}))), await Promise.all(O)
 				};
 
-			function p() {}
+			function p() {
+				window.open("/coins", "_blank")
+			}
 		},
 		"./src/reddit/actions/economics/me/constants.ts": function(e, t, n) {
 			"use strict";
@@ -283,9 +285,9 @@
 			})), n.d(t, "e", (function() {
 				return S
 			})), n.d(t, "c", (function() {
-				return T
+				return w
 			})), n.d(t, "f", (function() {
-				return v
+				return T
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/lodash/forOwn.js"),
@@ -401,7 +403,7 @@
 						products: a
 					}))
 				}
-			}, T = (e, t, n) => async (r, s, c) => {
+			}, w = (e, t, n) => async (r, s, c) => {
 				let {
 					apiContext: o
 				} = c;
@@ -424,7 +426,7 @@
 						initialView: l.c.MyBadges
 					}))
 				}
-			}, v = e => async (t, n, r) => {
+			}, T = e => async (t, n, r) => {
 				let {
 					apiContext: s
 				} = r;
@@ -1008,4 +1010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions~reddit-components-Econ-Prediction.b72a1d523c7ee9c16343.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions~reddit-components-Econ-Prediction.161387df600498a8be9d.js.map
