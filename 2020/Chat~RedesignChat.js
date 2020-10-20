@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.00ac9a7542cf6f2162b8.js
-// Retrieved at 10/20/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0c2f2aa2eb826aea6400.js
+// Retrieved at 10/20/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1572,11 +1572,12 @@
 					Object(s.c)(d, p, _), e(E(b))
 				}, I = "SENDBIRD__IDENTIFY_CONTACT_BEGIN", y = "SENDBIRD__IDENTIFY_CONTACT_END", x = Object(c.a)(I), S = Object(c.a)(y), N = e => async (t, n, s) => {
 					let {
-						apiContext: a
+						apiContext: c
 					} = s;
+					if (e.username === a.A) return;
 					Object(d.c)(n(), e.username) || (t(x({
 						username: e.username
-					})), Object(o.b)(a(), e.username).then(n => {
+					})), Object(o.b)(c(), e.username).then(n => {
 						if (n.ok) {
 							const s = Object(l.d)(n.body.data);
 							if (s) return t(S({
@@ -14673,4 +14674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.00ac9a7542cf6f2162b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0c2f2aa2eb826aea6400.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.a53a2023fb3e2bcdcc4e.js
-// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.8675a87154bc2620b999.js
+// Retrieved at 10/20/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -1306,6 +1306,7 @@
 						gqlContext: d
 					} = o;
 					var c, l;
+					if (e === a.A) return;
 					const b = n();
 					if (!!(Object(R.j)(b, {
 							profileName: e
@@ -2901,4 +2902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.a53a2023fb3e2bcdcc4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.8675a87154bc2620b999.js.map
