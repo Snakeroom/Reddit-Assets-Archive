@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.fc9f4534975c24006ab7.js
-// Retrieved at 10/15/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.7f27ff96fca39b3f5299.js
+// Retrieved at 10/20/2020, 5:10:33 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -12188,37 +12188,36 @@
 		"./src/chat/selectors/channels/next.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return i
+				return o
 			})), n.d(t, "f", (function() {
-				return l
+				return i
 			})), n.d(t, "g", (function() {
-				return d
+				return l
 			})), n.d(t, "c", (function() {
-				return h
+				return d
 			})), n.d(t, "e", (function() {
-				return m
+				return u
 			})), n.d(t, "a", (function() {
-				return O
+				return p
 			})), n.d(t, "b", (function() {
-				return f
+				return g
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/chat/constants/channels.ts"),
 				a = n("./src/chat/constants/sidebar.ts"),
 				c = n("./src/chat/selectors/channels.ts"),
-				r = n("./src/chat/selectors/experiments.ts"),
-				o = n("./src/chat/selectors/subreddit.ts");
-			const i = e => {
+				r = n("./src/chat/selectors/subreddit.ts");
+			const o = e => {
 					const {
 						channels: t
-					} = e, n = t.subreddit.invited.sortedKeys[0], a = Object(o.b)(e, n);
+					} = e, n = t.subreddit.invited.sortedKeys[0], a = Object(r.b)(e, n);
 					return {
 						channelId: n,
 						subredditName: a && a.name,
 						channelAction: s.a.VIEW_INVITE
 					}
 				},
-				l = e => {
+				i = e => {
 					const {
 						channels: t
 					} = e, {
@@ -12229,18 +12228,17 @@
 						subredditName: a
 					}
 				},
-				d = e => {
+				l = e => {
 					const {
 						channels: t
-					} = e, n = t.subreddit.recommended.sortedKeys[0], a = Object(o.b)(e, n);
+					} = e, n = t.subreddit.recommended.sortedKeys[0], a = Object(r.b)(e, n);
 					return {
 						channelId: n,
 						subredditName: a && a.name,
 						channelAction: s.a.VIEW_JOIN
 					}
 				},
-				u = e => [i(e), l(e), d(e)],
-				h = e => {
+				d = e => {
 					const {
 						channels: t
 					} = e;
@@ -12249,7 +12247,7 @@
 						channelAction: s.a.VIEW_INVITE
 					}
 				},
-				m = e => {
+				u = e => {
 					const {
 						channels: t
 					} = e;
@@ -12257,23 +12255,22 @@
 						channelId: t.joined.sortedKeys[0]
 					}
 				},
-				b = e => [h(e), m(e)],
-				p = e => {
+				h = e => [d(e), u(e)],
+				m = e => {
 					const t = Object(c.k)(e);
 					return {
 						channelId: t && t.channelId
 					}
 				},
-				g = e => e.find(e => !!e.channelId),
-				O = (e, t) => {
-					const n = t === a.a.SubredditChannels ? u(e) : b(e),
-						s = g(n);
+				b = e => e.find(e => !!e.channelId),
+				p = (e, t) => {
+					const n = t === a.a.SubredditChannels ? (e => [o(e), i(e), l(e)])(e) : h(e),
+						s = b(n);
 					return s && s.channelId
 				},
-				f = (e, t) => {
-					const n = Object(r.b)(e),
-						s = [...t ? [p(e)] : [], ...n ? u(e) : [], ...b(e)];
-					return g(s)
+				g = (e, t) => {
+					const n = [...t ? [m(e)] : [], ...h(e)];
+					return b(n)
 				}
 		},
 		"./src/chat/selectors/contacts.ts": function(e, t, n) {
@@ -14668,4 +14665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.fc9f4534975c24006ab7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.7f27ff96fca39b3f5299.js.map
