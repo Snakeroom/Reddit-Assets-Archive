@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.146536e6d686b46fe895.js
-// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.6bf33888c1fa187f7262.js
+// Retrieved at 10/20/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, t, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) t = r[l], Object.prototype.hasOwnProperty.call(n, t) && n[t] && P.push(n[t][0]), n[t] = 0;
@@ -39,7 +39,7 @@
 	r.e = function(e) {
 		var o = [];
 		t[e] ? o.push(t[e]) : 0 !== t[e] && {
-			1: 1,
+			0: 1,
 			Acknowledgements: 1,
 			AdminPanel: 1,
 			Appeal: 1,
@@ -122,8 +122,8 @@
 			ProfileComments: 1,
 			ProfilePosts: 1,
 			"CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal": 1,
-			EconPowerupsPurchaseModal: 1,
 			CoinPurchaseModal: 1,
+			EconPowerupsPurchaseModal: 1,
 			PremiumPurchaseModal: 1,
 			"reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a": 1,
 			"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": 1,
@@ -332,8 +332,8 @@
 					ProfilePosts: "ProfilePosts",
 					"vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal": "vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal",
 					"CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal": "CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal",
-					EconPowerupsPurchaseModal: "EconPowerupsPurchaseModal",
 					CoinPurchaseModal: "CoinPurchaseModal",
+					EconPowerupsPurchaseModal: "EconPowerupsPurchaseModal",
 					PremiumPurchaseModal: "PremiumPurchaseModal",
 					"vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~e74e7afb": "vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~e74e7afb",
 					"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~89877e6b": "vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~89877e6b",
@@ -481,8 +481,7 @@
 					"vendors~ModStatsChart": "vendors~ModStatsChart",
 					ModStatsChart: "ModStatsChart"
 				} [e] || e) + "." + {
-					0: "31d6cfe0d16ae931b73c",
-					1: "3d056b59c893d92e9003",
+					0: "3d056b59c893d92e9003",
 					Acknowledgements: "f3bbb5a3854ac8647b5e",
 					AdminPanel: "237a931004f26a4e8b81",
 					Appeal: "13d51d1035e7e0c414db",
@@ -538,7 +537,7 @@
 					MultiredditEditModal: "f1203aac084d716452d3",
 					NotificationsInbox: "a7532f4b704e62657053",
 					NotificationsPrePromptLoader: "a97a4ca8feba3044fe8e",
-					Premium: "0aae4249243df8a258e1",
+					Premium: "86c48fdac03afa0b528b",
 					PushNotifications: "31d6cfe0d16ae931b73c",
 					Report: "31d6cfe0d16ae931b73c",
 					"ReportFlow~ReportPage": "cca23190695b339a3952",
@@ -585,8 +584,8 @@
 					ProfilePosts: "5d6b05b06bf71a5aabc1",
 					"vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal": "31d6cfe0d16ae931b73c",
 					"CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal": "81ab4a0192e95bb15615",
-					EconPowerupsPurchaseModal: "0c03de8296aa178ab680",
 					CoinPurchaseModal: "e0b9d4f484f3287e3766",
+					EconPowerupsPurchaseModal: "53b94d0b637c62376870",
 					PremiumPurchaseModal: "ce7bfa87d30d67c26f2a",
 					"vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~e74e7afb": "31d6cfe0d16ae931b73c",
 					"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~89877e6b": "31d6cfe0d16ae931b73c",
@@ -864,8 +863,8 @@
 						ProfilePosts: "ProfilePosts",
 						"vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal": "vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal",
 						"CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal": "CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal",
-						EconPowerupsPurchaseModal: "EconPowerupsPurchaseModal",
 						CoinPurchaseModal: "CoinPurchaseModal",
+						EconPowerupsPurchaseModal: "EconPowerupsPurchaseModal",
 						PremiumPurchaseModal: "PremiumPurchaseModal",
 						"vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~e74e7afb": "vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~e74e7afb",
 						"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~89877e6b": "vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~89877e6b",
@@ -1013,8 +1012,7 @@
 						"vendors~ModStatsChart": "vendors~ModStatsChart",
 						ModStatsChart: "ModStatsChart"
 					} [e] || e) + "." + {
-						0: "d093c5417c3398a41ebf",
-						1: "379022af9f7d216578f7",
+						0: "5d31213ca472fbe3d90a",
 						Acknowledgements: "fcefa23a8ce7a2f3d108",
 						AdminPanel: "0360efc97c0315351751",
 						Appeal: "8f6c8fbf6b8b15c4b7ef",
@@ -1029,7 +1027,7 @@
 						EconTopAwardersModal: "0c42cca89080a267cfb7",
 						Coins: "635ee8a5e5d5ccadb739",
 						CoinsMobile: "5fc346d13b1c4284cc96",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "9560a6e9364e0a04fa9e",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "2d8e8269aa722f1d833f",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478": "2902065173cf793eb708",
 						"FramedGild~GildModal": "397bdd13ddbc2defbf41",
 						FramedGild: "11357106b976892a6a56",
@@ -1070,7 +1068,7 @@
 						MultiredditEditModal: "2cb231ca3b2f1fd5eb49",
 						NotificationsInbox: "d7f038715673fa8f6aba",
 						NotificationsPrePromptLoader: "4f0b27c6ff8e1fc68ae0",
-						Premium: "036a504d4a276b7d2a2f",
+						Premium: "67be9e21c193095d78d4",
 						PushNotifications: "8cb929fcd04799e5f506",
 						Report: "c0d9f175c071b480564a",
 						"ReportFlow~ReportPage": "ca3c158a1f5bbc32139d",
@@ -1094,20 +1092,20 @@
 						RedesignChat: "7f3efa42fc97bb132030",
 						"vendors~CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki~reddit-components-Governance-Tra~2c7f90aa": "b20909f1455a3505bd30",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~StandalonePostPage~Subreddit": "163e57e27ed37da29b28",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "ba0b0e8b425c847353c2",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "9ceeb1e945f3c38fa4d8",
 						CollectionCommentsPage: "de7f326b8eee7d792a41",
 						CommentsPage: "aa6c2236895e237ae286",
 						"Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit": "dd3d3328532786fc9a19",
-						Subreddit: "5c058933ef82b5df4176",
+						Subreddit: "20fce27fd342d9d7e8cd",
 						"vendors~SubredditWiki": "5c25679a62394e17f53f",
 						"SubredditWiki~reddit-components-Wiki-ModHubWikiManagement": "b10fac7ab8fe887fd6d3",
 						"Frontpage~SubredditWiki": "d92663851c3976a1af4c",
 						"IdCard~SubredditWiki": "d07e172490e34febe9fc",
 						SubredditWiki: "18e52da1e7a567c26d7f",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
-						ModerationPages: "2bd6af436cd7c7c88ce9",
+						ModerationPages: "ef602126c795784a9993",
 						"vendors~PostCreation~RichTextEditor": "f5d5345f614f740e35e6",
-						PostCreation: "a4043e733fe68f443814",
+						PostCreation: "8906fecf7e1e2c9378b0",
 						"vendors~Multireddit": "c9ea46fd1c2e6dcd587d",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "e055cb78e4c43aa86562",
 						Multireddit: "5b9480428bbccd0888a3",
@@ -1117,8 +1115,8 @@
 						ProfilePosts: "4de094e982b00493c36b",
 						"vendors~CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal~UpdateCardModal": "83841061b567be2a9abe",
 						"CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal": "b24a9d86e4c92ecad1be",
-						EconPowerupsPurchaseModal: "1fbe1df0d48211926a2d",
 						CoinPurchaseModal: "456136d91c8231c05cab",
+						EconPowerupsPurchaseModal: "45b4ce9ea1defdc7df0d",
 						PremiumPurchaseModal: "6989ce0c9d4b0b6183a0",
 						"vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~e74e7afb": "6d8d0d97b13aa150fb7b",
 						"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~89877e6b": "ecd4eb10044a4a0f08a6",
@@ -1148,7 +1146,7 @@
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "57b97c68f1aa1a87bbf1",
 						"LiveVideoPlayer~PublicAccessNetwork": "7c77c5870dfe91c8ce32",
-						PublicAccessNetwork: "3aaccadfce62686e1431",
+						PublicAccessNetwork: "1dc8fa069e5b1446c65e",
 						"vendors~ModListing": "f40a6050dd87da01c7b5",
 						ModListing: "0574642139684c215511",
 						"vendors~ModQueuePages": "707b386648ad89d65795",
@@ -1231,7 +1229,7 @@
 						"reddit-components-Governance-ClaimPointsBanner": "ea83b602b1e4c831be04",
 						"reddit-components-InFeedPostCreation": "0ce6bf2e1cda56c56962",
 						"reddit-components-TabBadger-Component": "b1aa497fb89c4701cf14",
-						RpanListingUnit: "e3704d9e5c2ddfdc05fe",
+						RpanListingUnit: "4382d2776d088abed0da",
 						AwardCreationModal: "12039200eabd22d4a8da",
 						"reddit-components-ModHub-Content-ModQueue": "b928aa593f9295830cd0",
 						"reddit-components-Wiki-ModHubWikiManagement": "1bd1e14e95fd9e68d11e",
@@ -1330,4 +1328,4 @@
 	var m = c;
 	d()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.146536e6d686b46fe895.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6bf33888c1fa187f7262.js.map
