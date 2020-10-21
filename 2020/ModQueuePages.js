@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.9b71600c2dce9af246a8.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.89b3cabcedf9b28622a5.js
+// Retrieved at 10/21/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -1339,9 +1339,12 @@
 					flairStyleTemplate: h,
 					redditStyle: x,
 					subreddit: f,
-					isOverlay: g
-				} = e, C = "upvote-button-".concat(t.id).concat(g ? "-overlay" : ""), {
-					moderationPrompt: v
+					isOverlay: g,
+					isActionBarAnimationEnabled: C,
+					postId: v,
+					isForceSelected: k
+				} = e, y = "upvote-button-".concat(t.id).concat(g ? "-overlay" : ""), {
+					moderationPrompt: O
 				} = t;
 				return o.a.createElement(d.b, {
 					isRemoved: !!t.bannedBy,
@@ -1356,10 +1359,13 @@
 					model: t,
 					onVoteClick: n,
 					redditStyle: x,
-					upvoteTooltipId: C
-				}), v && o.a.createElement(i.b, {
-					rightOf: C
-				}, "survey" === v ? o.a.createElement(a.a, {
+					upvoteTooltipId: y,
+					isActionBarAnimationEnabled: C,
+					postId: v,
+					isForceSelected: k
+				}), O && o.a.createElement(i.b, {
+					rightOf: y
+				}, "survey" === O ? o.a.createElement(a.a, {
 					post: t,
 					subredditName: f.name,
 					isOverlay: !!g
@@ -2365,4 +2371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9b71600c2dce9af246a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.89b3cabcedf9b28622a5.js.map
