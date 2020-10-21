@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.b63c164bda537f90569d.js
-// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.51fb4b7c54841bf9ecea.js
+// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-MediumPost"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -2594,7 +2594,7 @@
 							hk: "RguWS"
 						}),
 						"aria-pressed": f === b.a.upvoted,
-						className: Object(c.a)(d.o, o),
+						className: Object(c.a)(d.n, o),
 						onClick: this.onUpvote,
 						"data-click-id": "upvote",
 						id: e.upvoteTooltipId
@@ -2625,7 +2625,7 @@
 							hk: "1mDjTw"
 						}),
 						"aria-pressed": f === b.a.downvoted,
-						className: Object(c.a)(d.o, t),
+						className: Object(c.a)(d.n, t),
 						onClick: this.onDownvote,
 						"data-click-id": "downvote"
 					}, i.a.createElement(m.c, {
@@ -4126,4 +4126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.b63c164bda537f90569d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.51fb4b7c54841bf9ecea.js.map

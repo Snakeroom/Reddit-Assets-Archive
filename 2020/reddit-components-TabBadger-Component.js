@@ -1,72 +1,84 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.b1aa497fb89c4701cf14.js
-// Retrieved at 7/7/2020, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.6185731075b78cdcd80d.js
+// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
-		"./src/reddit/components/Pill/index.m.less": function(e, i, t) {
+		"./src/reddit/components/Pill/index.m.less": function(e, t, i) {
 			e.exports = {
 				pill: "C5WTyRErVZSYP9OMmYtVb",
 				pillHidden: "_2KYStU8hK1Y9Pz3XXd9zFo",
 				primaryButton: "_1NwneinmPwP34LMpJkmKhk",
 				closeButton: "_2t7CUoLNlBt20iCMaqgpTi",
-				closeIcon: "R9MWxs6smL_jBLt-j9hjB"
+				closeIcon: "R9MWxs6smL_jBLt-j9hjB",
+				active: "_1MqiRuKo_uoDt-k-iQ2gij",
+				redditStyle: "_32JLd_VLz6vZi8afTSQx48",
+				DangerButtonColors: "_2Qkb9A7wfBBVxvmMCmKjf9",
+				dangerButtonColors: "_2Qkb9A7wfBBVxvmMCmKjf9",
+				GoldButtonColors: "_2ORI_1yE4z3MsdlL8fUErr",
+				goldButtonColors: "_2ORI_1yE4z3MsdlL8fUErr",
+				PremiumButtonColors: "_1OzvE1NNJH7XjKpjHa5IWl",
+				premiumButtonColors: "_1OzvE1NNJH7XjKpjHa5IWl",
+				Icon: "_3csCSYhumzzvURPTH9KX9y",
+				icon: "_3csCSYhumzzvURPTH9KX9y",
+				isLeft: "_27c5zYCh_rdFccFVuMq8O4",
+				isRight: "W5ik6zISdchkW_G6FdF8Y"
 			}
 		},
-		"./src/reddit/components/TabBadger/Component.tsx": function(e, i, t) {
+		"./src/reddit/components/TabBadger/Component.tsx": function(e, t, i) {
 			"use strict";
-			t.r(i);
-			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
-				n = t("./node_modules/react/index.js"),
-				l = t.n(n),
-				a = t("./src/lib/constants/index.ts"),
-				d = t("./src/lib/classNames/index.ts"),
-				o = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				c = t("./src/reddit/components/Pill/index.m.less"),
-				r = t.n(c);
+			i.r(t);
+			var s = i("./node_modules/fbt/lib/FbtPublic.js"),
+				n = i("./node_modules/react/index.js"),
+				l = i.n(n),
+				a = i("./src/lib/constants/index.ts"),
+				o = i("./src/lib/classNames/index.ts"),
+				d = i("./src/reddit/icons/svgs/Close/index.tsx"),
+				c = i("./src/reddit/components/Pill/index.m.less"),
+				r = i.n(c);
 			var h = e => l.a.createElement("div", {
-				className: Object(d.a)(r.a.pill, e.className)
+				className: Object(o.a)(r.a.pill, e.className)
 			}, l.a.createElement("button", {
 				className: r.a.primaryButton,
 				onClick: e.handleClick
 			}, e.children), l.a.createElement("button", {
 				className: r.a.closeButton,
 				onClick: e.handleCloseClick
-			}, l.a.createElement(o.a, {
+			}, l.a.createElement(d.a, {
 				className: r.a.closeIcon
 			})));
-			var p = e => {
+			var m = e => {
 					let {
-						className: i,
-						children: t,
+						className: t,
+						children: i,
 						handleClick: s,
 						handleCloseClick: n,
 						isHidden: a
 					} = e;
-					const o = a && r.a.pillHidden;
+					const d = a && r.a.pillHidden;
 					return l.a.createElement(h, {
-						className: Object(d.a)(o, i),
+						className: Object(o.a)(d, t),
 						handleClick: s,
 						handleCloseClick: n
-					}, t)
+					}, i)
 				},
-				m = t("./src/reddit/constants/page.ts"),
-				u = t("./src/reddit/helpers/tabBadging/index.ts");
-			const b = "refresh_page_pill",
-				C = e => ({
+				p = i("./src/reddit/constants/page.ts"),
+				u = i("./src/reddit/helpers/tabBadging/index.ts");
+			const C = "refresh_page_pill",
+				_ = e => ({
 					source: "popup",
 					action: "view",
-					noun: b
+					noun: C
 				}),
-				g = e => ({
+				b = e => ({
 					source: "popup",
 					action: "click",
-					noun: b
+					noun: C
 				});
-			var P = t("./src/reddit/components/TabBadger/index.m.less"),
-				_ = t.n(P);
+			var g = i("./src/reddit/components/TabBadger/index.m.less"),
+				B = i.n(g);
 			const v = 12 * a.J,
-				B = 2 * a.J,
-				w = 5e4;
-			class k extends n.Component {
+				P = 2 * a.J,
+				k = 5e4;
+			class w extends n.Component {
 				constructor() {
 					super(...arguments), this.timer = 0, this.state = {
 						isPillHidden: !0
@@ -75,34 +87,34 @@
 					}, this.setTimer = () => {
 						const {
 							shortTimer: e,
-							subredditName: i,
-							subscriberCount: t
+							subredditName: t,
+							subscriberCount: i
 						} = this.props;
-						window.clearTimeout(this.timer), e || i === m.c.All || i === m.c.Popular ? this.timer = window.setTimeout(this.badgeFavicon, B) : t && t > w && (this.timer = window.setTimeout(this.badgeFavicon, v))
+						window.clearTimeout(this.timer), e || t === p.c.All || t === p.c.Popular ? this.timer = window.setTimeout(this.badgeFavicon, P) : i && i > k && (this.timer = window.setTimeout(this.badgeFavicon, v))
 					}, this.unbadgeFavicon = () => !this.props.tabBadged && Object(u.b)(!1), this.hidePill = () => this.setState({
 						isPillHidden: !0
 					}), this.activatePill = () => {
-						this.props.sendEvent(C), this.setState({
+						this.props.sendEvent(_), this.setState({
 							isPillHidden: !1
 						})
 					}, this.handlePillClick = () => {
-						this.props.handlePillClick(), this.props.sendEvent(g), this.unbadgeFavicon(), this.hidePill()
+						this.props.handlePillClick(), this.props.sendEvent(b), this.unbadgeFavicon(), this.hidePill()
 					}
 				}
 				componentDidMount() {
 					this.setTimer()
 				}
-				componentDidUpdate(e, i) {
-					this.unreadMessageBadgingUpdate(e) || this.props.previousPageIsOverlay || (this.state.isPillHidden ? (this.unbadgeFavicon(), this.setTimer()) : i.isPillHidden || (this.unbadgeFavicon(), this.hidePill()))
+				componentDidUpdate(e, t) {
+					this.unreadMessageBadgingUpdate(e) || this.props.previousPageIsOverlay || (this.state.isPillHidden ? (this.unbadgeFavicon(), this.setTimer()) : t.isPillHidden || (this.unbadgeFavicon(), this.hidePill()))
 				}
 				componentWillUnmount() {
 					this.unbadgeFavicon(), window.clearTimeout(this.timer)
 				}
 				render() {
 					return l.a.createElement("div", {
-						className: _.a.pillContainer
-					}, l.a.createElement(p, {
-						className: _.a.pillTop,
+						className: B.a.pillContainer
+					}, l.a.createElement(m, {
+						className: B.a.pillTop,
 						handleClick: this.handlePillClick,
 						handleCloseClick: this.hidePill,
 						isHidden: this.state.isPillHidden
@@ -111,9 +123,9 @@
 					})))
 				}
 			}
-			i.default = k
+			t.default = w
 		},
-		"./src/reddit/components/TabBadger/index.m.less": function(e, i, t) {
+		"./src/reddit/components/TabBadger/index.m.less": function(e, t, i) {
 			e.exports = {
 				pillContainer: "_2w46GjyOK9f8VUpIbu6q1B",
 				pillTop: "_2G32Ut0BL64CVk7JruZpIz"
@@ -121,4 +133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=reddit-components-TabBadger-Component.b1aa497fb89c4701cf14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.6185731075b78cdcd80d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.390230ee0854f084c934.js
-// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.e9fc4575d1d884bde6ba.js
+// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -228,10 +228,10 @@
 				buttons: "_1qiHDKK74j6hUNxM0p9ZIp",
 				SubscribeButton: "_1eMniuqQCoYf3kOpyx83Jj",
 				subscribeButton: "_1eMniuqQCoYf3kOpyx83Jj",
-				CreateCommunityButton: "Jy6FIGP1NvWbVjQZN7FHA",
-				createCommunityButton: "Jy6FIGP1NvWbVjQZN7FHA",
 				CreatePostButton: "_326PJFFRv8chYfOlaEYmGt",
 				createPostButton: "_326PJFFRv8chYfOlaEYmGt",
+				CreateCommunityButton: "Jy6FIGP1NvWbVjQZN7FHA",
+				createCommunityButton: "Jy6FIGP1NvWbVjQZN7FHA",
 				VisitCommunityButton: "_1cDoUuVvel5B1n5wa3K507",
 				visitCommunityButton: "_1cDoUuVvel5B1n5wa3K507",
 				ModSettings: "_2_w8DCFR-DCxgxlP1SGNq5",
@@ -8360,4 +8360,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.390230ee0854f084c934.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.e9fc4575d1d884bde6ba.js.map

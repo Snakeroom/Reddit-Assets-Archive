@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.397bdd13ddbc2defbf41.js
-// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a2589fdef97035c65235.js
+// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -700,8 +700,8 @@
 				X = s("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				J = s.n(X),
 				Q = s("./src/reddit/helpers/awards/message.ts"),
-				Z = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Y = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				Y = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				Z = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				$ = s("./src/reddit/icons/svgs/Eye/index.tsx"),
 				ee = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				te = s("./src/reddit/icons/svgs/CoinV2/index.tsx"),
@@ -835,7 +835,7 @@
 						forcePublic: e,
 						isAnonymous: t
 					} = this.props;
-					return e ? null : a.a.createElement(Y.a, {
+					return e ? null : a.a.createElement(Z.a, {
 						className: J.a.giver,
 						isSelected: t,
 						text: i.fbt._("Make my gift anonymous", null, {
@@ -867,7 +867,7 @@
 						className: Object(d.a)(J.a.textAreaWrapper, {
 							[J.a.messageTooLong]: o
 						})
-					}, a.a.createElement(Z.s, pe({
+					}, a.a.createElement(Y.s, pe({
 						className: J.a.textArea,
 						"data-redditstyle": !0,
 						name: "message",
@@ -1830,20 +1830,12 @@
 				})))
 			}
 		},
-		"./src/reddit/icons/svgs/New/index.m.less": function(e, t, s) {
-			e.exports = {
-				icon: "_14d58ZMXxV3Byed78nS3DU"
-			}
-		},
 		"./src/reddit/icons/svgs/New/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
-				a = s.n(n),
-				r = s("./src/lib/classNames/index.ts"),
-				o = s("./src/reddit/icons/svgs/New/index.m.less"),
-				i = s.n(o);
+				a = s.n(n);
 			t.a = e => a.a.createElement("svg", {
-				className: Object(r.a)(i.a.icon, e.className),
+				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, a.a.createElement("g", null, a.a.createElement("polygon", {
@@ -2109,4 +2101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.397bdd13ddbc2defbf41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a2589fdef97035c65235.js.map

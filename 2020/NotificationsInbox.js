@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.d7f038715673fa8f6aba.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.e9a787b97de7b368b24e.js
+// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/components/NotificationUnit/Component.tsx": function(e, t, n) {
@@ -767,20 +767,12 @@
 				d: "M496.5,233.842c-30.841-76.706-114.112-115.06-249.823-115.06h-63.953V45.693c0-4.952-1.809-9.235-5.424-12.85 c-3.617-3.617-7.896-5.426-12.847-5.426c-4.952,0-9.235,1.809-12.85,5.426L5.424,179.021C1.809,182.641,0,186.922,0,191.871 c0,4.948,1.809,9.229,5.424,12.847L151.604,350.9c3.619,3.613,7.902,5.428,12.85,5.428c4.947,0,9.229-1.814,12.847-5.428 c3.616-3.614,5.424-7.898,5.424-12.848v-73.094h63.953c18.649,0,35.349,0.568,50.099,1.708c14.749,1.143,29.413,3.189,43.968,6.143 c14.564,2.95,27.224,6.991,37.979,12.135c10.753,5.144,20.794,11.756,30.122,19.842c9.329,8.094,16.943,17.7,22.847,28.839 c5.896,11.136,10.513,24.311,13.846,39.539c3.326,15.229,4.997,32.456,4.997,51.675c0,10.466-0.479,22.176-1.428,35.118 c0,1.137-0.236,3.375-0.715,6.708c-0.473,3.333-0.712,5.852-0.712,7.562c0,2.851,0.808,5.232,2.423,7.136 c1.622,1.902,3.86,2.851,6.714,2.851c3.046,0,5.708-1.615,7.994-4.853c1.328-1.711,2.561-3.806,3.71-6.283 c1.143-2.471,2.43-5.325,3.854-8.562c1.431-3.237,2.43-5.513,2.998-6.848c24.17-54.238,36.258-97.158,36.258-128.756 C511.63,291.039,506.589,259.344,496.5,233.842z"
 			}))
 		},
-		"./src/reddit/icons/svgs/Rising/index.m.less": function(e, t, n) {
-			e.exports = {
-				icon: "_3k-hLnRWy2KVi9lKrKSut"
-			}
-		},
 		"./src/reddit/icons/svgs/Rising/index.tsx": function(e, t, n) {
 			"use strict";
 			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				i = n("./src/lib/classNames/index.ts"),
-				r = n("./src/reddit/icons/svgs/Rising/index.m.less"),
-				o = n.n(r);
+				s = n.n(a);
 			t.a = e => s.a.createElement("svg", {
-				className: Object(i.a)(o.a.icon, e.className),
+				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, s.a.createElement("g", null, s.a.createElement("path", {
@@ -788,20 +780,12 @@
 				d: "M18.5 4h-6a.5.5 0 0 0-.35.85l1.64 1.65-3.29 3.29L8.21 7.5a1 1 0 0 0-1.41 0L.65 13.65a.5.5 0 0 0 0 .71l2 2a.5.5 0 0 0 .71 0l4.14-4.15 2.29 2.29a1 1 0 0 0 1.41 0l5.3-5.29 1.65 1.65a.5.5 0 0 0 .85-.36v-6a.5.5 0 0 0-.5-.5z"
 			})))
 		},
-		"./src/reddit/icons/svgs/Top/index.m.less": function(e, t, n) {
-			e.exports = {
-				icon: "_3rlT9yoNCxQn9Q2EW5FjjE"
-			}
-		},
 		"./src/reddit/icons/svgs/Top/index.tsx": function(e, t, n) {
 			"use strict";
 			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				i = n("./src/lib/classNames/index.ts"),
-				r = n("./src/reddit/icons/svgs/Top/index.m.less"),
-				o = n.n(r);
+				s = n.n(a);
 			t.a = e => s.a.createElement("svg", {
-				className: Object(i.a)(o.a.icon, e.className),
+				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, s.a.createElement("g", null, s.a.createElement("path", {
@@ -967,4 +951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.d7f038715673fa8f6aba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.e9a787b97de7b368b24e.js.map

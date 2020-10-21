@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c8500306b7f1685ff279.js
-// Retrieved at 10/21/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ba4a6c57ce3bba754f55.js
+// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "4c08add-production"
+					SENTRY_RELEASE_VERSION: "eb18dd7-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -620,9 +620,9 @@
 			})), a.d(t, "removalReasonSubmittedPending", (function() {
 				return J
 			})), a.d(t, "removalReasonSubmittedSuccess", (function() {
-				return q
-			})), a.d(t, "removalReasonSubmittedFailed", (function() {
 				return z
+			})), a.d(t, "removalReasonSubmittedFailed", (function() {
+				return q
 			})), a.d(t, "removalReasonMessagePending", (function() {
 				return Z
 			})), a.d(t, "removalReasonPrivateMessageSuccess", (function() {
@@ -772,7 +772,7 @@
 						subredditId: e,
 						itemIds: t
 					})), a(Object(d.i)(p.a.ADD_REMOVAL_REASON))
-				}, J = Object(o.a)(R.r), q = Object(o.a)(R.s), z = Object(o.a)(R.q), Z = Object(o.a)(R.n), Q = Object(o.a)(R.o), $ = Object(o.a)(R.p), ee = Object(o.a)(R.m), te = (e, t, a, s, o) => async (l, d, u) => {
+				}, J = Object(o.a)(R.r), z = Object(o.a)(R.s), q = Object(o.a)(R.q), Z = Object(o.a)(R.n), Q = Object(o.a)(R.o), $ = Object(o.a)(R.p), ee = Object(o.a)(R.m), te = (e, t, a, s, o) => async (l, d, u) => {
 					let {
 						apiContext: p
 					} = u;
@@ -797,7 +797,7 @@
 						},
 						M = await w(p(), R);
 					if (M.ok) {
-						if (l(q()), t) {
+						if (l(z()), t) {
 							l(Z());
 							const o = {
 									itemId: e,
@@ -858,7 +858,7 @@
 							}
 							return l(ee(d.error)), !1
 						}
-					} else l(z(M.error)), l(O({
+					} else l(q(M.error)), l(O({
 						[v]: {
 							modNote: x.modNote,
 							modRemovalReason: x.modRemovalReason,
@@ -909,7 +909,7 @@
 								o = await f(d(), Object(y.h)(s, y.e.Bulk), y.e.Bulk);
 							o.ok ? (r(Q()), r(h)) : r(ee(o.error))
 						} else r(h)
-					} else r(z(v.error))
+					} else r(q(v.error))
 				}
 		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, a) {
@@ -998,8 +998,8 @@
 						Object(r.a)(e) && (e.preventDefault(), e.stopPropagation(), i(), u(Object(m.a)("user_convert")))
 					},
 					"data-redditstyle": !0
-				}, h._("log in", null, {
-					hk: "37jFXB"
+				}, h._("Log In", null, {
+					hk: "ZR3pC"
 				})), n.a.createElement(g, {
 					className: Object(o.a)({
 						[p.a.LiveStreamingSignupLink]: a
@@ -1009,8 +1009,8 @@
 						Object(r.a)(e) && (e.preventDefault(), e.stopPropagation(), c(), u(Object(m.c)("user_convert")))
 					},
 					"data-redditstyle": !0
-				}, h._("sign up", null, {
-					hk: "2GqETx"
+				}, h._("Sign Up", null, {
+					hk: "48wH4o"
 				})))
 			})
 		},
@@ -2663,9 +2663,9 @@
 				Y = a("./src/reddit/controls/Button/index.tsx"),
 				X = a("./src/reddit/controls/TextButton/index.tsx"),
 				J = a("./src/reddit/helpers/localStorage/index.ts"),
-				q = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				z = a("./src/reddit/components/PublicAccessNetwork/Modals/ChatMute/index.m.less"),
-				Z = a.n(z);
+				z = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				q = a("./src/reddit/components/PublicAccessNetwork/Modals/ChatMute/index.m.less"),
+				Z = a.n(q);
 			const Q = K.a.div("Image", Z.a),
 				$ = K.a.wrapped(G.f, "ModalFooter", Z.a),
 				ee = K.a.wrapped(G.h, "ModalHeader", Z.a),
@@ -2677,7 +2677,7 @@
 					const a = () => {
 						J.jb(), t()
 					};
-					return n.a.createElement(G.d, null, n.a.createElement(ee, null, n.a.createElement(q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
+					return n.a.createElement(G.d, null, n.a.createElement(ee, null, n.a.createElement(z.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: Z.a.Title
 					}, g.fbt._("Get ready to chat!", null, {
 						hk: "1lebCx"
@@ -2750,7 +2750,7 @@
 					} = this, a = e.isLoading || e.removalReasons.length > 0;
 					return n.a.createElement(G.d, {
 						onClick: this.closeDropdown
-					}, a && n.a.createElement(G.h, null, n.a.createElement(q.a, null, n.a.createElement(G.p, null, ge._("Remove broadcast", null, {
+					}, a && n.a.createElement(G.h, null, n.a.createElement(z.a, null, n.a.createElement(G.p, null, ge._("Remove broadcast", null, {
 						hk: "1JfCvD"
 					})), n.a.createElement(X.a, {
 						onClick: this.props.toggleRemovalReasonModal
@@ -2901,8 +2901,8 @@
 				Ye = 30,
 				Xe = 3 * Ge,
 				Je = 5 * Ge,
-				qe = 5,
-				ze = 5 * Ge,
+				ze = 5,
+				qe = 5 * Ge,
 				Ze = 10,
 				Qe = 5;
 			a("./node_modules/core-js/modules/es6.regexp.split.js");
@@ -3141,8 +3141,8 @@
 			var Ht = Dt(Ft);
 			const Ut = (e, t) => e > t ? ke.EXTENDED : e < Xe ? ke.CRITICAL : e < Je ? ke.LOW : ke.NORMAL,
 				Wt = e => e / Ge,
-				Kt = e => Gt(e) % ze == 0,
-				Gt = e => Math.round(e / qe) * qe;
+				Kt = e => Gt(e) % qe == 0,
+				Gt = e => Math.round(e / ze) * ze;
 			var Yt = a("./src/reddit/components/PublicAccessNetwork/Theater/MeterBar/index.m.less"),
 				Xt = a.n(Yt);
 			const Jt = (() => {
@@ -3150,15 +3150,15 @@
 					for (let t = 1; t < 11; t++) e.push("Delay".concat(t));
 					return e
 				})(),
-				qt = (() => {
+				zt = (() => {
 					const e = [];
 					for (let t = 0; t < 21; t++) e.push("X".concat(5 * t));
 					return e
 				})(),
-				zt = ["15Deg", "45Deg", "75Deg"],
+				qt = ["15Deg", "45Deg", "75Deg"],
 				Zt = e => e[Math.floor(Math.random() * e.length)],
 				Qt = () => {
-					const e = [Zt(qt), Zt(zt), Zt(Jt)].map(e => Xt.a["particle".concat(e)]).join(" ");
+					const e = [Zt(zt), Zt(qt), Zt(Jt)].map(e => Xt.a["particle".concat(e)]).join(" ");
 					return "".concat(Xt.a.particle, " ").concat(e, " ").concat(Math.round(Math.random()) ? Xt.a.particleReverse : "")
 				},
 				$t = 40,
@@ -3285,7 +3285,7 @@
 					if (s > t.estimatedTimeRemaining) {
 						const e = t.estimatedTimeRemaining - t.timer,
 							a = s - t.estimatedTimeRemaining + e;
-						a > qe && (n.timer = s, n.timerDiff = a, n.timerPausedAt = s)
+						a > ze && (n.timer = s, n.timerDiff = a, n.timerPausedAt = s)
 					}
 					s !== t.estimatedTimeRemaining && Math.abs(n.timer - s) > Ze && (n.timer = s, n.timerDiff = s - t.timer, n.timerPausedAt = null), null !== n.timerPausedAt && n.timerPausedAt - n.timer > Qe && (n.timerDiff = 0, n.timerPausedAt = null);
 					const o = na.getPillLabel(e, n),
@@ -3683,7 +3683,7 @@
 						hk: "1iD2Wj"
 					})))
 				},
-				qa = e => {
+				za = e => {
 					let {
 						onClick: t
 					} = e;
@@ -3694,7 +3694,7 @@
 						hk: "FYgQy"
 					})))
 				},
-				za = e => {
+				qa = e => {
 					let {
 						onClick: t
 					} = e;
@@ -4068,7 +4068,7 @@
 					className: ns.a.promptButtonSet
 				}, n.a.createElement(Ja, {
 					onClick: t
-				}), n.a.createElement(qa, {
+				}), n.a.createElement(za, {
 					onClick: a
 				})))
 			}, ks = e => {
@@ -4081,7 +4081,7 @@
 					className: ns.a.awardPromptLabel
 				}, os._("Award this broadcast to give it more airtime", null, {
 					hk: "20jmEz"
-				})), n.a.createElement(za, {
+				})), n.a.createElement(qa, {
 					onClick: t
 				})))
 			}, Is = e => {
@@ -4599,7 +4599,7 @@
 						className: Wa.a.promptButtonSet
 					}, n.a.createElement(Ja, {
 						onClick: u
-					}), n.a.createElement(qa, {
+					}), n.a.createElement(za, {
 						onClick: this.onCopyLink
 					}))) : null
 				}
@@ -4638,8 +4638,8 @@
 				Ys = a("./src/reddit/actions/page.ts"),
 				Xs = a("./src/reddit/actions/publicAccessNetwork/automute.ts"),
 				Js = a("./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.tsx"),
-				qs = a("./src/reddit/components/CommentsChat/Loader.ts"),
-				zs = a("./src/reddit/components/CommentsChat/MessageInput/Loader.tsx");
+				zs = a("./src/reddit/components/CommentsChat/Loader.ts"),
+				qs = a("./src/reddit/components/CommentsChat/MessageInput/Loader.tsx");
 			const {
 				fbt: Zs
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), Qs = K.a.wrapped(G.f, "ModalFooter", Z.a), $s = K.a.wrapped(G.h, "ModalHeader", Z.a);
@@ -4649,7 +4649,7 @@
 					bodyText: a,
 					title: s
 				} = e;
-				return n.a.createElement(G.d, null, n.a.createElement($s, null, n.a.createElement(q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
+				return n.a.createElement(G.d, null, n.a.createElement($s, null, n.a.createElement(z.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 					className: Z.a.Title
 				}, s)), n.a.createElement(X.a, {
 					onClick: t
@@ -4921,7 +4921,7 @@
 						}),
 						className: Mn.a.streamingChat,
 						onClick: this.props.onChatClick
-					}, n.a.createElement(qs.a, {
+					}, n.a.createElement(zs.a, {
 						className: Mn.a.chatScroller,
 						emptyStateClassName: Mn.a.emptyState,
 						isLivestreaming: !0,
@@ -4930,7 +4930,7 @@
 						postId: e,
 						subredditId: d,
 						commentsPageKey: p
-					}), a && (this.shouldMuteChat ? n.a.createElement(un, null) : n.a.createElement(zs.a, {
+					}), a && (this.shouldMuteChat ? n.a.createElement(un, null) : n.a.createElement(qs.a, {
 						key: "chatCommentsForm",
 						postId: e,
 						replyComment: m,
@@ -5093,14 +5093,14 @@
 					return !!e && (t && e.post.id !== t.post.id || !t)
 				}
 			}
-			var qn = Object(o.b)(null, (e, t) => ({
+			var zn = Object(o.b)(null, (e, t) => ({
 					preloadImages: t => e(((e, t) => async (a, s) => {
 						const n = await a(Un(e, t));
 						a(Hn(n))
 					})(t))
 				}))(Jn),
-				zn = a("./src/reddit/components/PublicAccessNetwork/Theater/index.m.less"),
-				Zn = a.n(zn);
+				qn = a("./src/reddit/components/PublicAccessNetwork/Theater/index.m.less"),
+				Zn = a.n(qn);
 			const Qn = Object(C.a)(U.a, {
 					playerName: "RPAN Video Player"
 				}),
@@ -5396,7 +5396,7 @@
 						className: Object(l.a)(Zn.a.pane, Zn.a.leftPane)
 					}, n.a.createElement("div", {
 						className: Zn.a.videoContainer
-					}, K && G && n.a.createElement(qn, {
+					}, K && G && n.a.createElement(zn, {
 						previousStream: h,
 						currentStream: e,
 						nextStream: m,
@@ -5841,4 +5841,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c8500306b7f1685ff279.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ba4a6c57ce3bba754f55.js.map

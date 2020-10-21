@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.5d31213ca472fbe3d90a.js
-// Retrieved at 10/20/2020, 4:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.3872cb8e21f9e3fd4c89.js
+// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./node_modules/lodash/_baseRange.js": function(e, s) {
@@ -194,9 +194,9 @@
 					hk: "3WmYcd"
 				}))))
 			}
-			var b = t("./src/graphql/operations/SubmitContentRatingSurvey.json"),
-				k = t("./src/lib/makeGqlRequest/index.ts");
-			var Z = (e, s) => Object(k.a)(e, Object.assign(Object.assign({}, b), {
+			var k = t("./src/graphql/operations/SubmitContentRatingSurvey.json"),
+				Z = t("./src/lib/makeGqlRequest/index.ts");
+			var b = (e, s) => Object(Z.a)(e, Object.assign(Object.assign({}, k), {
 					variables: s
 				})),
 				B = t("./src/reddit/helpers/trackers/contentTag.ts"),
@@ -327,13 +327,13 @@
 						pending: t,
 						called: n
 					}]
-				}(Z);
+				}(b);
 				Object(l.useEffect)(() => {
 					j && (x.c.captureException(j), h(Object(C.e)(Object(C.d)(I._("An error occurred", null, {
 						hk: "1VDETi"
 					}), _.b.Error))))
 				}, [j, h]);
-				const [b, k] = Object(l.useState)(null);
+				const [k, Z] = Object(l.useState)(null);
 				if (!c) return null;
 				if (!c.isEligible) return null;
 
@@ -346,7 +346,7 @@
 				return d.a.createElement(y, {
 					activeSlide: E,
 					advance: async function() {
-						if (w === U.Survey && E === p.length && k(function(e, s) {
+						if (w === U.Survey && E === p.length && Z(function(e, s) {
 								var t;
 								let a = null,
 									n = [];
@@ -376,7 +376,7 @@
 									version: c.version,
 									answers: q(c.questions, m).map(e => ({
 										questionId: e.id,
-										answerIds: J(e, m).map(e => e.id)
+										answerIds: K(e, m).map(e => e.id)
 									}))
 								}
 							}), h(Object(C.e)(Object(C.d)(I._("Thanks for setting up your Content Tag!", null, {
@@ -385,11 +385,11 @@
 								type: g.b,
 								payload: {
 									id: n,
-									response: b
+									response: k
 								}
 							}), void(j || i())
 						}
-						f("forward"), L ? M(Object(B.i)(L.pageType, J(L, m).map(e => e.id))) : 0 === E && M(Object(B.l)())
+						f("forward"), L ? M(Object(B.i)(L.pageType, K(L, m).map(e => e.id))) : 0 === E && M(Object(B.l)())
 					},
 					goBack: function() {
 						f("back"), L && M(Object(B.b)(L.pageType))
@@ -398,7 +398,7 @@
 					progressCurrent: R ? E - 1 : 0,
 					progressTotal: R ? p.length - 1 : 0,
 					disableNext: A || w === U.Survey && !O,
-					buttonText: K(w)
+					buttonText: J(w)
 				}, d.a.createElement("div", {
 					className: v.a.result
 				}, d.a.createElement("p", {
@@ -431,7 +431,7 @@
 						selectedAnswers: null !== (s = m[e.id]) && void 0 !== s ? s : {},
 						onChange: z
 					})
-				}), b && d.a.createElement("div", {
+				}), k && d.a.createElement("div", {
 					key: "result",
 					className: v.a.result
 				}, d.a.createElement("p", {
@@ -439,25 +439,25 @@
 				}, I._("Your Content Tag:", null, {
 					hk: "2OUAzB"
 				})), d.a.createElement(D.a, {
-					ratingResponse: b,
+					ratingResponse: k,
 					subredditId: n
 				}, d.a.createElement("p", {
 					className: v.a.ratingAudience
-				}, b.rating.name), d.a.createElement("p", {
+				}, k.rating.name), d.a.createElement("p", {
 					className: v.a.ratingDescription
-				}, b.rating.description, " ", d.a.createElement("br", null), I._("(Note: Only moderators can see this tag.)", null, {
+				}, k.rating.description, " ", d.a.createElement("br", null), I._("(Note: Only moderators can see this tag.)", null, {
 					hk: "2PN50Z"
 				}))), d.a.createElement("p", {
 					className: v.a.reasonsHeader
 				}, I._("Posts and discussions include:", null, {
 					hk: "12MdUE"
-				})), d.a.createElement("ul", null, b.ratingReasons.map(e => d.a.createElement("li", {
+				})), d.a.createElement("ul", null, k.ratingReasons.map(e => d.a.createElement("li", {
 					key: e.id,
 					className: v.a.reason
 				}, e.contentRatingReasonText)))))
 			}
 
-			function K(e) {
+			function J(e) {
 				switch (e) {
 					case U.Intro:
 						return I._("Start Survey", null, {
@@ -474,7 +474,7 @@
 				}
 			}
 
-			function J(e, s) {
+			function K(e, s) {
 				return e.answerOptions.filter(t => {
 					var a;
 					return null === (a = s[e.id]) || void 0 === a ? void 0 : a[t.id]
@@ -484,7 +484,7 @@
 			function q(e, s) {
 				let t = [];
 				for (const a of null != e ? e : []) {
-					const e = J(a, s),
+					const e = K(a, s),
 						n = c()(e, e => {
 							var s;
 							return null !== (s = e.subQuestions) && void 0 !== s ? s : []
@@ -752,20 +752,12 @@
 				d: "M12.8172,7.49104 C12.8172,7.70304 12.7332,7.90704 12.5828,8.05664 L9.5196,11.11984 C9.3636,11.27584 9.1588,11.35424 8.954,11.35424 C8.7492,11.35424 8.5444,11.27584 8.3884,11.11984 L7.2572,9.98784 L2.966,14.27904 C2.8092,14.43584 2.6044,14.51344 2.4004,14.51344 C2.1956,14.51344 1.9908,14.43584 1.834,14.27904 C1.522,13.96704 1.522,13.46064 1.834,13.14784 L6.126,8.85664 L4.9948,7.72544 C4.682,7.41264 4.682,6.90704 4.9948,6.59424 L8.0572,3.53104 C8.3572,3.23104 8.8884,3.23104 9.1884,3.53104 L12.5828,6.92544 C12.7332,7.07504 12.8172,7.27904 12.8172,7.49104 Z M3.86328,6.26288 C3.65848,6.26288 3.45368,6.18448 3.29768,6.02848 C2.98488,5.71568 2.98488,5.21008 3.29768,4.89728 L6.36008,1.83408 C6.67288,1.52208 7.17928,1.52208 7.49128,1.83408 C7.80408,2.14688 7.80408,2.65328 7.49128,2.96528 L4.42888,6.02848 C4.27288,6.18448 4.06808,6.26288 3.86328,6.26288 Z M14.27968,8.62264 C14.59248,8.93544 14.59248,9.44104 14.27968,9.75384 L11.21728,12.81624 C11.06128,12.97224 10.85648,13.05064 10.65168,13.05064 C10.44688,13.05064 10.24208,12.97224 10.08608,12.81624 C9.77328,12.50424 9.77328,11.99784 10.08608,11.68504 L13.14848,8.62264 C13.46128,8.30984 13.96688,8.30984 14.27968,8.62264 Z"
 			})))
 		},
-		"./src/reddit/icons/svgs/Best/index.m.less": function(e, s, t) {
-			e.exports = {
-				best: "_3SejsWL-17KHAzDgcp66kT"
-			}
-		},
 		"./src/reddit/icons/svgs/Best/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
-				n = t.n(a),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Best/index.m.less"),
-				r = t.n(i);
+				n = t.n(a);
 			s.a = e => n.a.createElement("svg", {
-				className: Object(c.a)(r.a.best, e.className),
+				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, n.a.createElement("path", {
@@ -1148,20 +1140,12 @@
 				d: "M15.7658 8.30457C15.5196 6.40434 14.6685 3.93402 13.992 2.18306C13.4831 0.865888 12.2136 0 10.8015 0H5.01677C3.60472 0 2.33517 0.865888 1.82628 2.18306C1.1498 3.93402 0.298684 6.40434 0.0525311 8.30457C-0.374308 11.5997 1.94027 12 1.94027 12L5.31936 7.9067H10.4989L13.878 12C13.878 12 16.1926 11.5997 15.7658 8.30457ZM4.36141 3.50639C4.94606 3.50639 5.42001 3.03243 5.42001 2.44778C5.42001 1.86313 4.94606 1.38918 4.36141 1.38918C3.77676 1.38918 3.3028 1.86313 3.3028 2.44778C3.3028 3.03243 3.77676 3.50639 4.36141 3.50639ZM7.02295 5.43958C7.02295 6.02423 6.549 6.49818 5.96435 6.49818C5.3797 6.49818 4.90574 6.02423 4.90574 5.43958C4.90574 4.85493 5.3797 4.38097 5.96435 4.38097C6.549 4.38097 7.02295 4.85493 7.02295 5.43958ZM11.4569 3.50639C12.0416 3.50639 12.5155 3.03244 12.5155 2.44779C12.5155 1.86314 12.0416 1.38919 11.4569 1.38919C10.8723 1.38919 10.3983 1.86314 10.3983 2.44779C10.3983 3.03244 10.8723 3.50639 11.4569 3.50639ZM10.9126 5.43958C10.9126 6.02423 10.4386 6.49818 9.85398 6.49818C9.26933 6.49818 8.79538 6.02423 8.79538 5.43958C8.79538 4.85493 9.26933 4.38097 9.85398 4.38097C10.4386 4.38097 10.9126 4.85493 10.9126 5.43958Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/Controversial/index.m.less": function(e, s, t) {
-			e.exports = {
-				controversial: "_2Yq1cYyaAnws8U-1N7H_f0"
-			}
-		},
 		"./src/reddit/icons/svgs/Controversial/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
-				n = t.n(a),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Controversial/index.m.less"),
-				r = t.n(i);
+				n = t.n(a);
 			s.a = e => n.a.createElement("svg", {
-				className: Object(c.a)(r.a.controversial, e.className),
+				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, n.a.createElement("g", null, n.a.createElement("polygon", {
@@ -2448,20 +2432,12 @@
 				d: "M10,16.25 C8.728,16.25 7.544,15.867 6.556,15.212 L15.212,6.556 C15.867,7.544 16.25,8.728 16.25,10 C16.25,13.4465 13.446,16.25 10,16.25 M3.75,10 C3.75,6.5535 6.554,3.75 10,3.75 C11.272,3.75 12.456,4.133 13.444,4.788 L4.788,13.444 C4.133,12.456 3.75,11.272 3.75,10 M10,1.25 C5.1675,1.25 1.25,5.1675 1.25,10 C1.25,14.8325 5.1675,18.75 10,18.75 C14.8325,18.75 18.75,14.8325 18.75,10 C18.75,5.1675 14.8325,1.25 10,1.25"
 			})))
 		},
-		"./src/reddit/icons/svgs/Hot/index.m.less": function(e, s, t) {
-			e.exports = {
-				icon: "_14JCwSw7Z9KVa3DJCOcJWg"
-			}
-		},
 		"./src/reddit/icons/svgs/Hot/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
-				n = t.n(a),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Hot/index.m.less"),
-				r = t.n(i);
+				n = t.n(a);
 			s.a = e => n.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
 			}, n.a.createElement("title", null, "Hot"), n.a.createElement("path", {
@@ -2774,20 +2750,12 @@
 				d: "M2,0 L8,0 C9.1045695,-2.02906125e-16 10,0.8954305 10,2 L10,8 C10,9.1045695 9.1045695,10 8,10 L2,10 C0.8954305,10 1.3527075e-16,9.1045695 0,8 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z M6.2103,5.78636 C6.3275,5.90356 6.3275,6.09356 6.2103,6.21076 C6.1519,6.26916 6.0751,6.29836 5.9983,6.29836 C5.9211,6.29836 5.8447,6.26916 5.7859,6.21076 L4.9983,5.42276 L4.2103,6.21076 C4.1519,6.26916 4.0751,6.29836 3.9983,6.29836 C3.9211,6.29836 3.8447,6.26916 3.7859,6.21076 C3.6687,6.09356 3.6687,5.90356 3.7859,5.78636 L4.5739,4.99836 L3.7859,4.21076 C3.6687,4.09356 3.6687,3.90356 3.7859,3.78636 C3.9031,3.66916 4.0931,3.66916 4.2103,3.78636 L4.9983,4.57436 L5.7859,3.78636 C5.9031,3.66916 6.0931,3.66916 6.2103,3.78636 C6.3275,3.90356 6.3275,4.09356 6.2103,4.21076 L5.4223,4.99836 L6.2103,5.78636 Z M7.4023,2.59436 C6.0767,1.26836 3.9195,1.26916 2.5939,2.59436 C1.2687,3.91996 1.2687,6.07716 2.5939,7.40276 C3.2567,8.06556 4.1275,8.39676 4.9983,8.39676 C5.8687,8.39676 6.7395,8.06556 7.4023,7.40276 C8.7279,6.07716 8.7279,3.91996 7.4023,2.59436 Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/New/index.m.less": function(e, s, t) {
-			e.exports = {
-				icon: "_14d58ZMXxV3Byed78nS3DU"
-			}
-		},
 		"./src/reddit/icons/svgs/New/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
-				n = t.n(a),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/New/index.m.less"),
-				r = t.n(i);
+				n = t.n(a);
 			s.a = e => n.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, n.a.createElement("g", null, n.a.createElement("polygon", {
@@ -3264,20 +3232,12 @@
 				d: "M14.7861,8.4019 L16.8831,4.4709 C17.0481,4.1609 17.0381,3.7869 16.8571,3.4849 C16.6771,3.1839 16.3511,2.9999 16.0001,2.9999 L4.0001,2.9999 C3.4471,2.9999 3.0001,3.4479 3.0001,3.9999 L3.0001,8.5869 L3.0001,12.8039 L3.0001,16.8039 C3.0001,17.3569 3.4471,17.8039 4.0001,17.8039 C4.5531,17.8039 5.0001,17.3569 5.0001,16.8039 L5.0001,13.8039 L16.0001,13.8039 C16.3511,13.8039 16.6771,13.6199 16.8571,13.3189 C17.0381,13.0179 17.0481,12.6439 16.8831,12.3339 L14.7861,8.4019 Z"
 			})))
 		},
-		"./src/reddit/icons/svgs/Rising/index.m.less": function(e, s, t) {
-			e.exports = {
-				icon: "_3k-hLnRWy2KVi9lKrKSut"
-			}
-		},
 		"./src/reddit/icons/svgs/Rising/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
-				n = t.n(a),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Rising/index.m.less"),
-				r = t.n(i);
+				n = t.n(a);
 			s.a = e => n.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, n.a.createElement("g", null, n.a.createElement("path", {
@@ -3989,20 +3949,12 @@
 				height: "5.5"
 			})))
 		},
-		"./src/reddit/icons/svgs/Top/index.m.less": function(e, s, t) {
-			e.exports = {
-				icon: "_3rlT9yoNCxQn9Q2EW5FjjE"
-			}
-		},
 		"./src/reddit/icons/svgs/Top/index.tsx": function(e, s, t) {
 			"use strict";
 			var a = t("./node_modules/react/index.js"),
-				n = t.n(a),
-				c = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/Top/index.m.less"),
-				r = t.n(i);
+				n = t.n(a);
 			s.a = e => n.a.createElement("svg", {
-				className: Object(c.a)(r.a.icon, e.className),
+				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, n.a.createElement("g", null, n.a.createElement("path", {
@@ -4240,4 +4192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.5d31213ca472fbe3d90a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.3872cb8e21f9e3fd4c89.js.map

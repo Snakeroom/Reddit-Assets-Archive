@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.5b9480428bbccd0888a3.js
-// Retrieved at 10/20/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.43ebccaedef6f79c2e86.js
+// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -321,8 +321,8 @@
 							hk: "49p4or"
 						})) : a.a.createElement(Z, {
 							href: Object(l.a)(o, c)
-						}, A._("Log in", null, {
-							hk: "odEG4"
+						}, A._("Log In", null, {
+							hk: "4Cxw0g"
 						}))));
 					case I.a.Nsfw:
 					case I.a.NsfwCustomFeed:
@@ -510,8 +510,6 @@
 		},
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(e, t, n) {
 			e.exports = {
-				SecondaryButton: "_3U-J6NPoBHbyibarrb7T3F",
-				secondaryButton: "_3U-J6NPoBHbyibarrb7T3F",
 				StyledTooltip: "FIYolDqalszTnjjNfThfT",
 				styledTooltip: "FIYolDqalszTnjjNfThfT"
 			}
@@ -534,13 +532,12 @@
 				x = n.n(h),
 				f = n("./src/lib/lessComponent.tsx");
 			const g = "create-community-button",
-				y = f.a.wrapped(u.l, "SecondaryButton", x.a),
-				E = f.a.wrapped(l.c, "StyledTooltip", x.a),
-				_ = Object(o.c)({
+				y = f.a.wrapped(l.c, "StyledTooltip", x.a),
+				E = Object(o.c)({
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.db)(e),
 					userIsSuspended: b.N
 				});
-			t.a = Object(i.b)(_, (e, t) => {
+			t.a = Object(i.b)(E, (e, t) => {
 				let {
 					eventSource: n
 				} = t;
@@ -564,22 +561,23 @@
 					userDoesNotHaveEnoughExpToCreateCommunity: l,
 					userIsSuspended: d
 				} = e;
-				return a.a.createElement(y, {
+				return a.a.createElement(u.l, {
 					className: t,
 					disabled: d || l,
 					onClick: () => o(c),
 					onMouseEnter: s,
 					onMouseLeave: i,
-					id: g
+					id: g,
+					isFullWidth: !0
 				}, r.fbt._("Create Community", null, {
 					hk: "RLA8A"
-				}), l ? a.a.createElement(E, {
+				}), l ? a.a.createElement(y, {
 					caretOnTop: !0,
 					tooltipId: g,
 					text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "2R1OXu"
 					})
-				}) : d ? a.a.createElement(E, {
+				}) : d ? a.a.createElement(y, {
 					caretOnTop: !0,
 					tooltipId: g,
 					text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
@@ -729,25 +727,22 @@
 		"./src/reddit/components/SubscribeButton/Base.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return w
+				return E
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
 				a = n.n(s),
-				i = n("./src/reddit/constants/elementClassNames.ts"),
-				o = n("./src/reddit/controls/Button/index.tsx"),
-				c = n("./src/reddit/hooks/useButtons2020.ts"),
-				l = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				d = n("./src/reddit/icons/svgs/Plus/index.tsx"),
-				u = n("./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts"),
-				m = n("./src/reddit/components/SubscribeButton/Base.m.less"),
-				p = n.n(m),
-				b = n("./src/lib/classNames/index.ts"),
-				h = n("./src/lib/lessComponent.tsx");
+				i = n("./src/reddit/controls/Button/index.tsx"),
+				o = n("./src/reddit/hooks/useButtons2020.ts"),
+				c = n("./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts"),
+				l = n("./src/reddit/components/SubscribeButton/Base.m.less"),
+				d = n.n(l),
+				u = n("./src/lib/classNames/index.ts"),
+				m = n("./src/lib/lessComponent.tsx");
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function p() {
+				return (p = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -755,7 +750,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var f = function(e, t) {
+			var b = function(e, t) {
 				var n = {};
 				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -764,131 +759,88 @@
 				}
 				return n
 			};
-			const g = h.a.button("IconButton", p.a),
-				y = h.a.wrapped(d.a, "SubscribeIcon", p.a),
-				E = h.a.wrapped(l.a, "UnsubscribeIcon", p.a),
-				_ = h.a.wrapped(e => {
+			const h = m.a.wrapped(e => {
 					var {
 						border: t,
 						small: n
-					} = e, r = f(e, ["border", "small"]);
-					return a.a.createElement(g, r, a.a.createElement(y, {
-						className: Object(b.a)(r.className, {
-							[p.a.isSmall]: n
+					} = e, r = b(e, ["border", "small"]);
+					return t ? a.a.createElement(i.i, p({}, r, {
+						className: Object(u.a)(r.className, {
+							[d.a.isSmall]: n
+						})
+					})) : a.a.createElement(i.o, p({}, r, {
+						className: Object(u.a)(r.className, {
+							[d.a.isSmall]: n
 						})
 					}))
-				}, "SubscribeIconButton", p.a),
-				k = h.a.wrapped(e => {
+				}, "SubscribeInternalButton", d.a),
+				x = e => {
 					var {
 						border: t,
 						small: n
-					} = e, r = f(e, ["border", "small"]);
-					return t ? a.a.createElement(o.i, x({}, r, {
-						className: Object(b.a)(r.className, {
-							[p.a.isSmall]: n
-						})
-					})) : a.a.createElement(o.o, x({}, r, {
-						className: Object(b.a)(r.className, {
-							[p.a.isSmall]: n
-						})
-					}))
-				}, "SubscribeInternalButton", p.a),
-				v = e => {
-					var {
-						icon: t,
-						border: n,
-						small: r
-					} = e, s = f(e, ["icon", "border", "small"]);
-					const i = Object(c.a)();
-					return t ? a.a.createElement(_, x({}, s, {
-						border: n,
-						small: r,
-						className: Object(b.a)(s.className, {
-							[p.a.isSmall]: r
-						})
-					})) : i ? a.a.createElement(o.q, x({}, s, {
-						priority: n ? o.b.Primary : o.b.Tertiary,
-						className: Object(b.a)(s.className, p.a.is2020),
-						size: r ? o.c.S : o.c.M
-					})) : a.a.createElement(k, x({}, s, {
-						border: n,
-						small: r,
-						className: Object(b.a)(s.className, {
-							[p.a.isSmall]: r
+					} = e, r = b(e, ["border", "small"]);
+					return Object(o.a)() ? a.a.createElement(i.q, p({}, r, {
+						priority: t ? i.b.Primary : i.b.Plain,
+						className: Object(u.a)(r.className, d.a.is2020),
+						size: n ? i.c.S : i.c.M
+					})) : a.a.createElement(h, p({}, r, {
+						border: t,
+						small: n,
+						className: Object(u.a)(r.className, {
+							[d.a.isSmall]: n
 						})
 					}))
 				},
-				O = h.a.wrapped(e => {
-					var {
-						border: t,
-						small: n,
-						type: r
-					} = e, s = f(e, ["border", "small", "type"]);
-					return a.a.createElement(g, s, a.a.createElement(E, {
-						className: Object(b.a)(i.n, s.className, {
-							[p.a.isSmall]: n
-						})
-					}))
-				}, "UnsubscribeIconButton", p.a),
-				j = e => a.a.createElement(a.a.Fragment, null, a.a.createElement("span", {
-					className: p.a.UnsubscribeButtonDefault
+				f = e => a.a.createElement(a.a.Fragment, null, a.a.createElement("span", {
+					className: d.a.UnsubscribeButtonDefault
 				}, "subreddit" === e ? r.fbt._("Joined", null, {
 					hk: "1MTmIz"
 				}) : r.fbt._("Following", null, {
 					hk: "1wQlVR"
 				})), a.a.createElement("span", {
-					className: p.a.UnsubscribeButtonHover
+					className: d.a.UnsubscribeButtonHover
 				}, "subreddit" === e ? r.fbt._("Leave", null, {
 					hk: "2lLnnn"
 				}) : r.fbt._("Unfollow", null, {
 					hk: "2b5ERD"
 				}))),
-				C = h.a.wrapped(e => {
+				g = m.a.wrapped(e => {
 					var {
 						border: t,
 						small: n,
 						buttonType: r
-					} = e, s = f(e, ["border", "small", "buttonType"]);
-					const i = j(r),
-						c = Object(b.a)(s.className, {
-							[p.a.isSmall]: n
+					} = e, s = b(e, ["border", "small", "buttonType"]);
+					const o = f(r),
+						c = Object(u.a)(s.className, {
+							[d.a.isSmall]: n
 						});
-					return t ? a.a.createElement(o.l, x({}, s, {
+					return t ? a.a.createElement(i.l, p({}, s, {
 						className: c
-					}), i) : a.a.createElement(o.o, x({}, s, {
+					}), o) : a.a.createElement(i.o, p({}, s, {
 						className: c
-					}), i)
-				}, "UnsubscribeButton", p.a),
-				T = e => {
+					}), o)
+				}, "UnsubscribeButton", d.a),
+				y = e => {
 					var {
 						buttonType: t,
 						border: n,
-						small: r,
-						icon: s
-					} = e, i = f(e, ["buttonType", "border", "small", "icon"]);
-					const l = Object(c.a)();
-					return s ? a.a.createElement(O, x({}, i, {
+						small: r
+					} = e, s = b(e, ["buttonType", "border", "small"]);
+					return Object(o.a)() ? a.a.createElement(i.q, p({}, s, {
+						priority: n ? i.b.Secondary : i.b.Plain,
+						className: Object(u.a)(s.className, d.a.is2020),
+						size: r ? i.c.S : i.c.M,
+						text: f(t)
+					})) : a.a.createElement(g, p({}, s, {
 						border: n,
 						small: r,
 						buttonType: t,
-						className: Object(b.a)(i.className, {
-							[p.a.isSmall]: r
-						})
-					})) : l ? a.a.createElement(o.q, x({}, i, {
-						priority: n ? o.b.Secondary : o.b.Tertiary,
-						className: Object(b.a)(i.className, p.a.is2020),
-						size: r ? o.c.S : o.c.M,
-						text: j(t)
-					})) : a.a.createElement(C, x({}, i, {
-						border: n,
-						small: r,
-						buttonType: t,
-						className: Object(b.a)(i.className, {
-							[p.a.isSmall]: r
+						className: Object(u.a)(s.className, {
+							[d.a.isSmall]: r
 						})
 					}))
 				};
-			class w extends a.a.Component {
+			class E extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = e => {
 						if (this.props.userIsSubscriber ? this.props.onUnsubscribe() : this.props.onSubscribe(), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
@@ -904,21 +856,19 @@
 					const {
 						border: e = !0,
 						className: t,
-						icon: n = !1,
-						id: r,
-						small: s = !1
-					} = this.props, i = {
+						id: n,
+						small: r = !1
+					} = this.props, s = {
 						border: e,
 						className: t,
-						icon: n,
 						onClick: this.onClick,
-						small: s
+						small: r
 					};
-					return this.props.userIsSubscriber ? a.a.createElement(T, x({}, i, {
+					return this.props.userIsSubscriber ? a.a.createElement(y, p({}, s, {
 						buttonType: this.props.identifier.type
-					})) : a.a.createElement(v, x({}, i, {
-						id: r
-					}), this.props.children, Object(u.a)({
+					})) : a.a.createElement(x, p({}, s, {
+						id: n
+					}), this.props.children, Object(c.a)({
 						type: this.props.identifier.type,
 						key: "subscribe"
 					}))
@@ -1991,4 +1941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.5b9480428bbccd0888a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.43ebccaedef6f79c2e86.js.map
