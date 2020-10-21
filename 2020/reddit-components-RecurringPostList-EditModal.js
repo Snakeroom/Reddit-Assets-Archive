@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.a1ecf0a68d92e03e71ca.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.ee15bde204adb0167bb2.js
+// Retrieved at 10/21/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RecurringPostList-EditModal"], {
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, n) {
@@ -503,7 +503,7 @@
 					})
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(j.D)())
+					this.props.sendEvent(Object(j.C)())
 				}
 				componentDidUpdate(e) {
 					this.isSaving && !this.props.isLoading && e.isLoading && (this.isSaving = !1, this.props.error || this.props.onSuccessfulSave())
@@ -1337,4 +1337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.a1ecf0a68d92e03e71ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.ee15bde204adb0167bb2.js.map

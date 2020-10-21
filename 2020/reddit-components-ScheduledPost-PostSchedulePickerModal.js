@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.c311e88b42c218ab6f12.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.7421f89207adc24a3370.js
+// Retrieved at 10/21/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ScheduledPost-PostSchedulePickerModal"], {
 		"./src/reddit/components/ScheduledPost/PostSchedulePickerModal/index.m.less": function(e, t, n) {
@@ -257,7 +257,7 @@
 					}, this.state = Object(H.c)(e)
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(G.E)())
+					this.props.sendEvent(Object(G.D)())
 				}
 				renderModalMainContents() {
 					const {
@@ -1267,4 +1267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.c311e88b42c218ab6f12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.7421f89207adc24a3370.js.map

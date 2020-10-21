@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.167d737ae7a8041c37bb.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.cba6f05d7ed05745f66d.js
+// Retrieved at 10/21/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -11834,7 +11834,7 @@
 			"use strict";
 			s.d(t, "m", (function() {
 				return i
-			})), s.d(t, "E", (function() {
+			})), s.d(t, "D", (function() {
 				return c
 			})), s.d(t, "q", (function() {
 				return d
@@ -11854,48 +11854,44 @@
 				return x
 			})), s.d(t, "h", (function() {
 				return f
-			})), s.d(t, "F", (function() {
-				return v
-			})), s.d(t, "C", (function() {
-				return g
 			})), s.d(t, "f", (function() {
-				return O
+				return v
 			})), s.d(t, "r", (function() {
-				return _
+				return g
 			})), s.d(t, "l", (function() {
-				return E
+				return O
 			})), s.d(t, "k", (function() {
-				return C
+				return _
 			})), s.d(t, "i", (function() {
-				return y
+				return E
 			})), s.d(t, "e", (function() {
-				return k
+				return C
 			})), s.d(t, "w", (function() {
-				return w
+				return y
 			})), s.d(t, "j", (function() {
-				return j
+				return k
 			})), s.d(t, "d", (function() {
-				return I
+				return w
 			})), s.d(t, "p", (function() {
-				return S
+				return j
 			})), s.d(t, "y", (function() {
-				return P
+				return I
 			})), s.d(t, "n", (function() {
-				return T
+				return S
 			})), s.d(t, "g", (function() {
-				return N
-			})), s.d(t, "D", (function() {
-				return L
+				return P
+			})), s.d(t, "C", (function() {
+				return T
 			})), s.d(t, "z", (function() {
-				return M
+				return N
 			})), s.d(t, "a", (function() {
-				return R
+				return L
 			})), s.d(t, "x", (function() {
-				return F
+				return M
 			})), s.d(t, "A", (function() {
-				return A
+				return R
 			})), s.d(t, "B", (function() {
-				return B
+				return F
 			}));
 			var n = s("./src/reddit/models/ScheduledPost/index.ts"),
 				o = s("./src/reddit/selectors/telemetry.ts");
@@ -11970,26 +11966,16 @@
 					noun: "event_posts"
 				}, r(e)),
 				v = () => e => Object.assign({
-					source: "global",
-					action: "view",
-					noun: "screen"
-				}, r(e)),
-				g = () => e => Object.assign({
-					source: "global",
-					action: "view",
-					noun: "screen"
-				}, r(e)),
-				O = () => e => Object.assign({
 					source: "post",
 					action: "click",
 					noun: "edit_post"
 				}, r(e)),
-				_ = () => e => Object.assign({
+				g = () => e => Object.assign({
 					source: "post",
 					action: "click",
 					noun: "submit_post_now"
 				}, r(e)),
-				E = e => t => Object.assign(Object.assign({
+				O = e => t => Object.assign(Object.assign({
 					source: "post",
 					action: "click",
 					noun: "overflow_menu"
@@ -11998,42 +11984,42 @@
 						pageType: e ? "recurring_posts" : "scheduled_posts"
 					})
 				}),
-				C = () => e => Object.assign({
+				_ = () => e => Object.assign({
 					source: "scheduled_post_composer_submit_frequency",
 					action: "click",
 					noun: "one_time_frequency"
 				}, r(e)),
-				y = () => e => Object.assign({
+				E = () => e => Object.assign({
 					source: "scheduled_post_composer_submit_frequency",
 					action: "click",
 					noun: "hourly_frequency"
 				}, r(e)),
-				k = () => e => Object.assign({
+				C = () => e => Object.assign({
 					source: "scheduled_post_composer_submit_frequency",
 					action: "click",
 					noun: "daily_frequency"
 				}, r(e)),
-				w = () => e => Object.assign({
+				y = () => e => Object.assign({
 					source: "scheduled_post_composer_submit_frequency",
 					action: "click",
 					noun: "weekly_frequency"
 				}, r(e)),
-				j = () => e => Object.assign({
+				k = () => e => Object.assign({
 					source: "scheduled_post_composer_submit_frequency",
 					action: "click",
 					noun: "monthly_frequency"
 				}, r(e)),
-				I = () => e => Object.assign({
+				w = () => e => Object.assign({
 					source: "scheduled_post_composer_submit_frequency",
 					action: "click",
 					noun: "custom_frequency"
 				}, r(e)),
-				S = () => e => Object.assign({
+				j = () => e => Object.assign({
 					source: "post",
 					action: "click",
 					noun: "start_event_now"
 				}, r(e)),
-				P = (e, t, s) => a => Object.assign(Object.assign({
+				I = (e, t, s) => a => Object.assign(Object.assign({
 					source: "post",
 					action: "click",
 					noun: Object(n.l)(e)
@@ -12043,46 +12029,46 @@
 						pageType: s ? "recurring_posts" : "scheduled_posts"
 					})
 				}),
-				T = () => e => Object.assign({
+				S = () => e => Object.assign({
 					source: "recurring_post_module",
 					action: "click",
 					noun: "schedule_post_cta"
 				}, r(e)),
-				N = () => e => Object.assign({
+				P = () => e => Object.assign({
 					source: "recurring_post_module",
 					action: "click",
 					noun: "edit_recurring_post"
 				}, r(e)),
-				L = () => e => Object.assign({
+				T = () => e => Object.assign({
 					source: "recurring_post_composer",
 					action: "view",
 					noun: "recurring_post_composer"
 				}, r(e)),
-				M = () => (e, t) => Object.assign(Object.assign({
+				N = () => (e, t) => Object.assign(Object.assign({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "update"
 				}, r(e)), {
 					scheduledPost: a(t)
 				}),
-				R = () => e => Object.assign({
+				L = () => e => Object.assign({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "cancel"
 				}, r(e)),
-				F = () => (e, t) => Object.assign(Object.assign({
+				M = () => (e, t) => Object.assign(Object.assign({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "delete"
 				}, r(e)), {
 					scheduledPost: a(t)
 				}),
-				A = () => e => Object.assign({
+				R = () => e => Object.assign({
 					source: "scheduled_post_composer",
 					action: "view",
 					noun: "custom_schedule_post_composer"
 				}, r(e)),
-				B = () => (e, t) => {
+				F = () => (e, t) => {
 					const s = r(e);
 					return Object.assign(Object.assign({
 						source: "post",
@@ -13481,4 +13467,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.167d737ae7a8041c37bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.cba6f05d7ed05745f66d.js.map
