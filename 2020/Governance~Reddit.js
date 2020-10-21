@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.fb05d31dad3107e35055.js
-// Retrieved at 10/21/2020, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2b8bc2e2241a40bbc016.js
+// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -2443,7 +2443,7 @@
 						const a = s().posts.instances[l] ? e.queryParams.instanceId : D.postId;
 						t(Object(p.b)(a))
 					}
-					I ? Object(A.d)(s(), t, e) : Object(A.e)(s(), t, e), Object(k.s)(s(), !0)
+					I ? Object(A.d)(s(), t, e) : Object(A.e)(s(), t, e), Object(k.t)(s(), !0)
 				}, J = "PAGE__COLLECTIONCOMMENTSPAGE_LOADED_FULL", z = Object(n.a)(J), X = (e, t, s, n) => async (r, c, i) => {
 					const o = Object(a.a)(e, t, s, n),
 						d = c();
@@ -2942,24 +2942,25 @@
 		"./src/reddit/actions/pages/profileModSettings.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return l
 			})), s.d(t, "b", (function() {
-				return u
+				return b
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/lib/makeActionCreator/index.ts"),
 				a = s("./src/reddit/actions/preferences.ts"),
 				r = s("./src/reddit/actions/profile/index.ts"),
 				c = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				i = s("./src/reddit/models/User/index.ts"),
-				o = s("./src/reddit/selectors/user.ts");
-			const d = "PAGE__PROFILE_MOD_SETTINGS_LOADED",
-				l = Object(n.a)(d),
-				u = e => async (t, s) => {
+				i = s("./src/reddit/helpers/trackers/screenview.ts"),
+				o = s("./src/reddit/models/User/index.ts"),
+				d = s("./src/reddit/selectors/user.ts");
+			const l = "PAGE__PROFILE_MOD_SETTINGS_LOADED",
+				u = Object(n.a)(l),
+				b = e => async (t, s) => {
 					const n = [t(a.z()), t(Object(r.d)(e.params.profileName))];
 					await Promise.all(n);
-					const d = Object(o.i)(s());
-					d ? (await t(Object(r.b)(Object(i.e)(d))), t(l())) : Object(c.a)(t, s())
+					const l = Object(d.i)(s());
+					l ? (await t(Object(r.b)(Object(o.e)(l))), t(u()), Object(i.n)(s(), !0)) : Object(c.a)(t, s())
 				}
 		},
 		"./src/reddit/actions/pages/profileOverview.ts": function(e, t, s) {
@@ -28475,4 +28476,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.fb05d31dad3107e35055.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2b8bc2e2241a40bbc016.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.3517768f86fff975827c.js
-// Retrieved at 10/21/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.3d6df4b842d729848111.js
+// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -1039,7 +1039,7 @@
 						content: o.a.createElement(o.a.Fragment, null, o.a.createElement(g.a, S), o.a.createElement(b.a, null), o.a.createElement(x.a, {
 							listingKey: a,
 							listingName: p,
-							listingViewed: (e, t) => Object(k.o)(a, u, t, e, m),
+							listingViewed: (e, t) => Object(k.p)(a, u, t, e, m),
 							noPostsComponent: () => o.a.createElement(h.c, {
 								profileName: d,
 								timeSort: m
@@ -1082,4 +1082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.3517768f86fff975827c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.3d6df4b842d729848111.js.map
