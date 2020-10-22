@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8cbaa87d26122f8c456e.js
-// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2480ba45b2383ff6ebe1.js
+// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -29711,7 +29711,7 @@
 			const qe = Object(d.c)({
 				isBadgesAndEmotesEnabled: V.d.spCustomBadgesAndEmotes,
 				isContentTagEnabled: (e, t) => !!Object(K.c)(e, {
-					experimentName: G.I,
+					experimentName: G.K,
 					experimentEligibilitySelector: K.a
 				}) && !!e.subreddits.survey[t.subreddit.id],
 				isUsingNewModMail: (e, t) => {
@@ -31093,4 +31093,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8cbaa87d26122f8c456e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2480ba45b2383ff6ebe1.js.map

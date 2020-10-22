@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.fca2bb577a6c468d4a9a.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.2e5c3ec95a51859c4b3d.js
+// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -4017,9 +4017,9 @@
 						})()) : Object(T.a)(G) && V === A.a.upvoted && !H && (e => {
 							const t = Object(v.c)(e, {
 								experimentEligibilitySelector: e => Object(R.I)(e),
-								experimentName: p.pb
+								experimentName: p.rb
 							});
-							return Object(p.Pc)(t) ? void 0 : t
+							return Object(p.Rc)(t) ? void 0 : t
 						})(F) && (s(((e, t) => async (n, s, r) => {
 							let {
 								apiContext: a
@@ -4058,7 +4058,7 @@
 								if (Object(O.F)(F.platform && F.platform.currentPage)) return;
 								if (r.isSponsored) return;
 								if ("profile" === r.belongsTo.type) return;
-								const o = F.experimentOverrides[p.V],
+								const o = F.experimentOverrides[p.X],
 									i = Object(k.i)(F);
 								("none" !== t || o && V === A.a.downvoted) && (s(Object(_.J)({
 									[n]: {
@@ -6564,7 +6564,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: r.experiment(o, s.Ic),
+					experiment: r.experiment(o, s.Kc),
 					post: r.post(o, e),
 					media: r.media(o, e),
 					profile: r.profile(o),
@@ -6576,7 +6576,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: r.experiment(t, s.Ic),
+					experiment: r.experiment(t, s.Kc),
 					post: r.post(t, e),
 					profile: r.profile(t),
 					subreddit: r.subreddit(t),
@@ -8424,10 +8424,10 @@
 			const l = Object(s.a)(a.c, u.H, u.I, d.g, d.f, c.a, (e, t, n, s, o, i) => !e && !t && !n && s && !!o && !o.isNSFW && !!i && Object(r.c)(i.created / 1e3) < 30),
 				b = e => Object(i.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: o.rb,
+					experimentName: o.tb,
 					expEventOverride: !1
 				}),
-				_ = e => e === o.vb.SearchPostToPost || e === o.vb.NlpPostToPost1 || e === o.vb.NlpPostToPost2 || e === o.vb.NlpPostToPost3
+				_ = e => e === o.xb.SearchPostToPost || e === o.xb.NlpPostToPost1 || e === o.xb.NlpPostToPost2 || e === o.xb.NlpPostToPost3
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
 			"use strict";
@@ -8448,8 +8448,8 @@
 			const a = e => o.d.actionBarAnimationExperiment(e) && !Object(c.c)(e) && (e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: r.Rb
-					}) === r.Yb.BarAnimation
+						experimentName: r.Tb
+					}) === r.ac.BarAnimation
 				})(e),
 				d = (e, t) => {
 					let {
@@ -8521,12 +8521,12 @@
 					return Object(o.K)(n)
 				}, (e, t, n) => !e && !t && n),
 				d = Object(s.a)((e, t) => Object(i.c)(e, {
-					experimentName: r.U,
+					experimentName: r.W,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				u = e => e === r.Fc.NoCommunityWidgets,
-				l = e => e === r.Fc.NoRulesModerators,
-				b = e => e === r.Fc.RelatedPostsDu
+				u = e => e === r.Hc.NoCommunityWidgets,
+				l = e => e === r.Hc.NoRulesModerators,
+				b = e => e === r.Hc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -8779,4 +8779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.fca2bb577a6c468d4a9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.2e5c3ec95a51859c4b3d.js.map

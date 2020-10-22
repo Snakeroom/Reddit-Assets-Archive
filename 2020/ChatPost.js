@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.e38aceea355530e468bc.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.394afd6ec6db231d21aa.js
+// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -241,13 +241,13 @@
 			! function(e) {
 				e.NEW_COMMENT = "new_comment", e.UPDATE_COMMENT = "update_comment", e.UPDATE_COMMENT_SCORE = "update_comment_score", e.DELETE_COMMENT = "delete_comment", e.REMOVE_COMMENT = "remove_comment", e.USER_JOIN = "join_system_message"
 			}(T || (T = {}));
-			const y = {
+			const I = {
 					backoffTime: 2e3,
 					connectionAttempts: 0,
 					jitterAmount: 3e3,
 					maximumRetries: 9
 				},
-				I = (e, t) => {
+				y = (e, t) => {
 					const o = k(t),
 						s = f.get(o);
 					s && s.socket && (s.isClosePlanned = !0, s.socket.close())
@@ -264,8 +264,8 @@
 						isClosePlanned: !1
 					};
 					f.set(n, a), a.socket.addEventListener("open", () => {
-						a.retries = Object.assign({}, y)
-					}), a.socket.addEventListener("message", S.bind(null, s)), a.socket.addEventListener("close", w.bind(null, n, s)), a.socket.addEventListener("error", N.bind(null, n)), window && window.addEventListener("beforeunload", I.bind(null, e, t))
+						a.retries = Object.assign({}, I)
+					}), a.socket.addEventListener("message", S.bind(null, s)), a.socket.addEventListener("close", w.bind(null, n, s)), a.socket.addEventListener("error", N.bind(null, n)), window && window.addEventListener("beforeunload", y.bind(null, e, t))
 				},
 				w = (e, t, o) => {
 					const s = f.get(e);
@@ -324,7 +324,7 @@
 							uniqueId: n
 						} = e;
 						E.has(n) ? t() : (E.add(n), setTimeout(() => {
-							E.delete(n), O(s, n, Object.assign({}, y), o), t()
+							E.delete(n), O(s, n, Object.assign({}, I), o), t()
 						}, 1))
 					}))({
 						uniqueId: o,
@@ -469,7 +469,7 @@
 						}
 					})
 				}, F = (e, t) => async () => {
-					I(0, t)
+					y(0, t)
 				}
 		},
 		"./src/reddit/components/Comments/PredictionComment/async.ts": function(e, t, o) {
@@ -549,7 +549,7 @@
 			})), o.d(t, "f", (function() {
 				return L
 			})), o.d(t, "a", (function() {
-				return K
+				return H
 			}));
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
 				n = o("./node_modules/lodash/times.js"),
@@ -573,8 +573,8 @@
 				k = o.n(f);
 			const E = d.a.wrapped(x.a, "CommentsIcon", k.a),
 				T = d.a.wrapped(_.a, "SnooFacepalm", k.a),
-				y = d.a.p("EmptyTitle", k.a),
-				I = d.a.p("ErrorTitle", k.a),
+				I = d.a.p("EmptyTitle", k.a),
+				y = d.a.p("ErrorTitle", k.a),
 				O = d.a.p("EmptyText", k.a),
 				w = e => {
 					let {
@@ -583,7 +583,7 @@
 					} = e;
 					return i.a.createElement("div", {
 						className: Object(l.a)(k.a.StateContainer, t)
-					}, i.a.createElement(E, null), i.a.createElement(y, null, o ? s.fbt._("no messages yet", null, {
+					}, i.a.createElement(E, null), i.a.createElement(I, null, o ? s.fbt._("no messages yet", null, {
 						hk: "QOUnY"
 					}) : s.fbt._("no comments yet", null, {
 						hk: "1yqeoX"
@@ -593,7 +593,7 @@
 				},
 				j = () => i.a.createElement("div", {
 					className: k.a.StateContainer
-				}, i.a.createElement(E, null), i.a.createElement(y, null, s.fbt._("no other discussions yet", null, {
+				}, i.a.createElement(E, null), i.a.createElement(I, null, s.fbt._("no other discussions yet", null, {
 					hk: "2N7BWs"
 				})), i.a.createElement(O, null, s.fbt._("Be the first to post the same link or crosspost in another community!", null, {
 					hk: "4yirBw"
@@ -604,7 +604,7 @@
 					} = e;
 					return i.a.createElement("div", {
 						className: k.a.StateContainer
-					}, i.a.createElement(E, null), i.a.createElement(y, null, s.fbt._("That comment is missing", null, {
+					}, i.a.createElement(E, null), i.a.createElement(I, null, s.fbt._("That comment is missing", null, {
 						hk: "1i1U0i"
 					})), i.a.createElement(u.k, {
 						to: Object(C.b)(t)
@@ -630,7 +630,7 @@
 					} = e;
 					return i.a.createElement("div", {
 						className: k.a.StateContainer
-					}, i.a.createElement(T, null), i.a.createElement(I, null, t ? Object(h.a)({
+					}, i.a.createElement(T, null), i.a.createElement(y, null, t ? Object(h.a)({
 						apiError: t,
 						isLoggedOut: !1
 					}) : s.fbt._("Sorry, comments couldn't load!", null, {
@@ -682,7 +682,7 @@
 						isLoading: !0
 					}))
 				}),
-				K = e => i.a.createElement(R, null, r()(10, t => i.a.createElement(A, {
+				H = e => i.a.createElement(R, null, r()(10, t => i.a.createElement(A, {
 					key: t
 				}, e.isAvatarsInCommentsEnabled ? i.a.createElement(P, {
 					className: Object(g.a)({
@@ -989,8 +989,8 @@
 				k = o("./src/lib/classNames/index.ts"),
 				E = o("./src/lib/lessComponent.tsx"),
 				T = o("./src/lib/makeDraftKey/index.ts"),
-				y = o("./src/lib/objectSelector/index.ts"),
-				I = o("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
+				I = o("./src/lib/objectSelector/index.ts"),
+				y = o("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
 				O = o("./src/reddit/components/Comments/PredictionComment/async.ts"),
 				w = o("./src/reddit/helpers/awards/message.ts"),
 				j = o("./src/reddit/helpers/getRichTextContent/index.ts"),
@@ -1000,7 +1000,7 @@
 				L = o("./src/reddit/icons/svgs/Star2/index.tsx"),
 				R = o("./src/reddit/components/CommentsChat/Comment/AwardComment/index.m.less"),
 				A = o.n(R);
-			const P = Object(y.b)(e => ({
+			const P = Object(I.b)(e => ({
 					renderingObjectInfo: e.comment
 				})),
 				B = e => {
@@ -1061,8 +1061,8 @@
 					}))
 				},
 				V = o("./src/lib/humanizeDateTime/index.ts"),
-				K = o("./src/reddit/models/Vote/index.ts"),
-				H = o("./src/reddit/actions/postCreation/general.ts"),
+				H = o("./src/reddit/models/Vote/index.ts"),
+				K = o("./src/reddit/actions/postCreation/general.ts"),
 				q = o("./src/reddit/actions/reportFlow.ts"),
 				z = o("./src/reddit/actions/tooltip.ts"),
 				Y = o("./src/reddit/actions/userBlocks.ts"),
@@ -1163,14 +1163,14 @@
 				ke = o("./src/reddit/models/PostDraft/index.ts"),
 				Ee = o("./src/reddit/selectors/activeModalId.ts"),
 				Te = o("./src/reddit/selectors/blockedRedditors.ts"),
-				ye = o("./src/reddit/constants/experiments.ts"),
-				Ie = o("./src/reddit/helpers/chooseVariant/index.ts");
-			const Oe = Object(d.a)(e => Object(Ie.c)(e, {
-					experimentName: ye.G,
-					experimentEligibilitySelector: Ie.a
+				Ie = o("./src/reddit/constants/experiments.ts"),
+				ye = o("./src/reddit/helpers/chooseVariant/index.ts");
+			const Oe = Object(d.a)(e => Object(ye.c)(e, {
+					experimentName: Ie.I,
+					experimentEligibilitySelector: ye.a
 				}), e => e),
-				we = e => Oe(e) === ye.A.UpvoteOnly,
-				je = e => Oe(e) === ye.A.UpvoteDownvote;
+				we = e => Oe(e) === Ie.C.UpvoteOnly,
+				je = e => Oe(e) === Ie.C.UpvoteDownvote;
 			var Se = o("./src/reddit/selectors/moderatorPermissions.ts"),
 				Ne = o("./src/reddit/selectors/user.ts");
 
@@ -1193,13 +1193,13 @@
 				Ue = E.a.wrapped(ue.a, "UpvoteIcon", oe.a),
 				Fe = E.a.wrapped(pe.a, "DownvoteIcon", oe.a),
 				Ve = E.a.wrapped(ve.a, "ModeratorIcon", oe.a),
-				Ke = e => (t, o) => {
+				He = e => (t, o) => {
 					let {
 						comment: s
 					} = o;
 					return "".concat(e).concat(s.id)
 				},
-				He = e => "Comment-".concat(e, "--Modal--DeleteComment"),
+				Ke = e => "Comment-".concat(e, "--Modal--DeleteComment"),
 				qe = Object(d.c)({
 					currentUser: Ne.i,
 					isMod: (e, t) => {
@@ -1222,23 +1222,23 @@
 						} = t;
 						return e.reportFlow.postOrCommentId === o.id
 					},
-					approveTooltipId: Ke("CommentChatPost--Approve--"),
-					blockTooltipId: Ke("CommentChatPost--Block--"),
-					createTooltipId: Ke("CommentChatPost--Create--"),
-					editTooltipId: Ke("CommentChatPost--Edit--"),
-					replyTooltipId: Ke("CommentChatPost--Reply--"),
-					reportTooltipId: Ke("CommentChatPost--Report--"),
-					upvoteTooltipId: Ke("CommentChatPost--Upvote--"),
-					downvoteTooltipId: Ke("CommentChatPost--Downvote--"),
-					distinguishTooltipId: Ke("CommentChatPost--Distinguish--"),
-					spamTooltipId: Ke("CommentChatPost--Spam--"),
-					removeTooltipId: Ke("CommentChatPost--Remove--"),
-					deleteTooltipId: Ke("CommentChatPost--Delete--"),
+					approveTooltipId: He("CommentChatPost--Approve--"),
+					blockTooltipId: He("CommentChatPost--Block--"),
+					createTooltipId: He("CommentChatPost--Create--"),
+					editTooltipId: He("CommentChatPost--Edit--"),
+					replyTooltipId: He("CommentChatPost--Reply--"),
+					reportTooltipId: He("CommentChatPost--Report--"),
+					upvoteTooltipId: He("CommentChatPost--Upvote--"),
+					downvoteTooltipId: He("CommentChatPost--Downvote--"),
+					distinguishTooltipId: He("CommentChatPost--Distinguish--"),
+					spamTooltipId: He("CommentChatPost--Spam--"),
+					removeTooltipId: He("CommentChatPost--Remove--"),
+					deleteTooltipId: He("CommentChatPost--Delete--"),
 					isDeleteModalOpen: (e, t) => {
 						let {
 							comment: o
 						} = t;
-						return Object(Ee.a)(e) === He(o.id)
+						return Object(Ee.a)(e) === Ke(o.id)
 					},
 					isUpvoteOnly: we,
 					isUpvoteDownvote: je
@@ -1280,8 +1280,8 @@
 						onSpamClick: () => e(Object(C.cb)(o.id, !0)),
 						onRemoveClick: () => e(Object(C.cb)(o.id, !1)),
 						deleteComment: () => s && e(Object(C.db)(o.id, o.postId)),
-						onDeleteClick: () => e(Object(H.l)(He(o.id))),
-						toggleDeleteCommentModal: () => e(Object(H.l)(He(o.id)))
+						onDeleteClick: () => e(Object(K.l)(Ke(o.id))),
+						toggleDeleteCommentModal: () => e(Object(K.l)(Ke(o.id)))
 					}
 				})(Object(me.c)(e => {
 					const {
@@ -1304,8 +1304,8 @@
 						onRemoveClick: f,
 						onReplyClick: E,
 						onReportClick: T,
-						onShowTooltip: y,
-						onSpamClick: I,
+						onShowTooltip: I,
+						onSpamClick: y,
 						onUnblockClick: O,
 						onUpvoteClick: w,
 						onDownvoteClick: j,
@@ -1321,20 +1321,20 @@
 						distinguishTooltipId: W,
 						sendEvent: U,
 						spamTooltipId: F,
-						toggleDeleteCommentModal: H,
+						toggleDeleteCommentModal: K,
 						timestampUpdateTrigger: q,
 						isUpvoteOnly: z,
 						isUpvoteDownvote: Y
 					} = e, J = !!n && n.id === t.authorId, G = Object(le.b)(t), Q = t.isApproved && G, Z = !t.bannedBy || t.bannedBy === m.k, X = {
 						comment: t,
 						onHideTooltip: _,
-						onShowTooltip: y,
+						onShowTooltip: I,
 						sendEvent: U
 					}, $ = t.isMod, {
 						voteState: ee,
 						score: te,
 						isDeleted: se
-					} = t, ne = !se && (0 === te || 1 === te || ee === K.a.notVoted);
+					} = t, ne = !se && (0 === te || 1 === te || ee === H.a.notVoted);
 					return c.a.createElement("div", {
 						className: o
 					}, c.a.createElement("div", {
@@ -1378,7 +1378,7 @@
 							hk: "k46Xu"
 						})
 					}, e), c.a.createElement(Fe, null)), h && Z && c.a.createElement(ae, Me({
-						onClick: I,
+						onClick: y,
 						tooltipId: F,
 						tooltipText: x.fbt._("Spam", null, {
 							hk: "15R6K5"
@@ -1433,7 +1433,7 @@
 							hk: "227ya0"
 						}),
 						onConfirm: r,
-						toggleModal: H,
+						toggleModal: K,
 						withOverlay: !0
 					}), !!n && !J && c.a.createElement(ae, Me({
 						onClick: () => l ? O() : g(),
@@ -1491,7 +1491,7 @@
 				}),
 				st = o("./src/reddit/components/CommentsChat/Comment/SystemMessage/index.m.less"),
 				nt = o.n(st);
-			const rt = Object(y.b)(e => ({
+			const rt = Object(I.b)(e => ({
 				renderingObjectInfo: e.comment || void 0
 			}));
 			var at = e => {
@@ -1526,7 +1526,7 @@
 						voteState: r,
 						score: a,
 						isDeleted: i
-					} = e, l = !i && !(0 === a || 1 === a || r === K.a.notVoted);
+					} = e, l = !i && !(0 === a || 1 === a || r === H.a.notVoted);
 					return (s || n) && l && c.a.createElement("div", {
 						className: Object(k.a)(lt.a.ChatHorizontalVotesWrapper, o)
 					}, c.a.createElement(dt, {
@@ -1546,17 +1546,17 @@
 					} = t;
 					return {
 						handleVote: t => {
-							t === K.a.upvoted && e(Object(C.rb)(o.id)), t === K.a.downvoted && e(Object(C.T)(o.id))
+							t === H.a.upvoted && e(Object(C.rb)(o.id)), t === H.a.downvoted && e(Object(C.T)(o.id))
 						}
 					}
 				})(Object(me.c)(pt)),
 				ht = o("./src/reddit/components/CommentsChat/MessageInput/Loader.tsx"),
 				Ct = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				gt = o("./src/reddit/controls/ErrorText/index.tsx");
-			const bt = e => Object(Ie.c)(e, {
-				experimentName: ye.F,
-				experimentEligibilitySelector: Ie.a
-			}) === ye.D.Enabled;
+			const bt = e => Object(ye.c)(e, {
+				experimentName: Ie.H,
+				experimentEligibilitySelector: ye.a
+			}) === Ie.F.Enabled;
 			var vt = o("./src/reddit/selectors/communityAwards.ts");
 			const xt = (e, t) => {
 				let {
@@ -1572,9 +1572,9 @@
 				kt = o("./src/reddit/components/CommentsChat/Comment/index.m.less"),
 				Et = o.n(kt);
 			const Tt = 250,
-				yt = 10,
-				It = E.a.wrapped(gt.b, "ErrorText", Et.a),
-				Ot = E.a.wrapped(I.a, "TopMeta", Et.a),
+				It = 10,
+				yt = E.a.wrapped(gt.b, "ErrorText", Et.a),
+				Ot = E.a.wrapped(y.a, "TopMeta", Et.a),
 				wt = E.a.span("DeleteText", Et.a),
 				jt = E.a.wrapped(ot, "Reply", Et.a),
 				St = Object(Ct.t)(),
@@ -1614,7 +1614,7 @@
 					subreddit: Ct.q,
 					shouldRenderSystemMessages: bt
 				})),
-				Mt = Object(y.b)(e => ({
+				Mt = Object(I.b)(e => ({
 					renderingObjectInfo: e.comment || void 0
 				}));
 			class Lt extends c.a.Component {
@@ -1654,7 +1654,7 @@
 						const e = this.elemRef.current;
 						let o = Tt;
 						if (t) {
-							o = e.scrollHeight + yt;
+							o = e.scrollHeight + It;
 							const t = () => {
 								e.style.maxHeight = "", e.removeEventListener("transitionend", t)
 							};
@@ -1685,8 +1685,8 @@
 						onReplyClick: _,
 						shouldRenderSystemMessages: E
 					} = this.props, {
-						isCollapsed: y,
-						isExpanded: I,
+						isCollapsed: I,
+						isExpanded: y,
 						isTruncated: w
 					} = this.state;
 					if (!s) return null;
@@ -1697,12 +1697,12 @@
 						R = Object(k.a)({
 							[Et.a.SystemMessageWrapper]: N && !d && E,
 							[Et.a.CommentWrapper]: !d && !N,
-							[Et.a.CommentExpanded]: I,
+							[Et.a.CommentExpanded]: y,
 							[Et.a.CommentTruncated]: w,
 							[Et.a.HighlightTarget]: g,
 							[Et.a.LivestreamingCommentWrapper]: d
 						});
-					return y ? c.a.createElement(F, {
+					return I ? c.a.createElement(F, {
 						commentCount: 1,
 						onClick: this.expandCollapsedComment
 					}) : c.a.createElement("div", {
@@ -1767,7 +1767,7 @@
 						commentsPageKey: n,
 						isLivestreaming: d,
 						timestampUpdateTrigger: b
-					})]), s.isDeleted && c.a.createElement(At, null), M && r && r.map((e, t) => c.a.createElement(It, {
+					})]), s.isDeleted && c.a.createElement(At, null), M && r && r.map((e, t) => c.a.createElement(yt, {
 						key: "".concat(t, "-").concat(e)
 					}, e)), !l && w && c.a.createElement("button", {
 						className: Object(k.a)(Et.a.CommentReadMoreButton, {
@@ -1778,7 +1778,7 @@
 						hk: "3s9Bqf"
 					})), !d && M && c.a.createElement(ut, {
 						className: Object(k.a)({
-							[Et.a.TruncatedVotesButton]: w && !I
+							[Et.a.TruncatedVotesButton]: w && !y
 						}),
 						comment: s
 					}), N && !d && E && c.a.createElement(at, {
@@ -1807,8 +1807,8 @@
 				Ut = o.n(Wt),
 				Ft = o("./src/reddit/controls/Button/index.tsx"),
 				Vt = o("./src/reddit/components/CommentsChat/Scroller/index.m.less"),
-				Kt = o.n(Vt),
-				Ht = function(e, t) {
+				Ht = o.n(Vt),
+				Kt = function(e, t) {
 					var o = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (o[s] = e[s]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -1817,14 +1817,14 @@
 					}
 					return o
 				};
-			const qt = E.a.div("ButtonWrapper", Kt.a),
+			const qt = E.a.div("ButtonWrapper", Ht.a),
 				zt = e => {
 					let {
 						top: t
 					} = e;
 					return c.a.createElement("span", {
-						className: Object(k.a)(Kt.a.ChunkPlaceholder, {
-							[Kt.a.top]: t
+						className: Object(k.a)(Ht.a.ChunkPlaceholder, {
+							[Ht.a.top]: t
 						})
 					}, x.fbt._("Loading...", null, {
 						hk: "2s97tt"
@@ -1836,13 +1836,13 @@
 						isLivestreaming: o,
 						isLoading: s,
 						setRef: n
-					} = e, r = Ht(e, ["className", "isLivestreaming", "isLoading", "setRef"]);
+					} = e, r = Kt(e, ["className", "isLivestreaming", "isLoading", "setRef"]);
 					return c.a.createElement("div", {
 						ref: n,
 						className: Object(k.a)(t, {
-							[Kt.a.ScrollerWrapper]: !o,
-							[Kt.a.LivestreamingWrapper]: o,
-							[Kt.a.loading]: s
+							[Ht.a.ScrollerWrapper]: !o,
+							[Ht.a.LivestreamingWrapper]: o,
+							[Ht.a.loading]: s
 						})
 					}, !s && r.isPrevLoading && !o && c.a.createElement(zt, {
 						top: !0
@@ -1997,7 +1997,7 @@
 					const {
 						className: e,
 						isLivestreaming: t
-					} = this.props, o = this.state.newCommentsCount > 0 ? Object(k.a)([Kt.a.NewComments, Kt.a.show]) : Kt.a.NewComments;
+					} = this.props, o = this.state.newCommentsCount > 0 ? Object(k.a)([Ht.a.NewComments, Ht.a.show]) : Ht.a.NewComments;
 					return c.a.createElement(c.a.Fragment, null, c.a.createElement(Yt, {
 						className: e,
 						key: "chatScroller",
@@ -2010,14 +2010,14 @@
 					}, c.a.createElement("div", {
 						key: "beforeActiveCommentsSection",
 						ref: this._refBeforeActiveComments,
-						className: Kt.a.ScrollerSection
+						className: Ht.a.ScrollerSection
 					}, this.state.chunks[this.state.activeChunkIndex - 1]), c.a.createElement("div", {
 						key: "activeCommentsSection",
-						className: Kt.a.ScrollerSection
+						className: Ht.a.ScrollerSection
 					}, this.state.chunks[this.state.activeChunkIndex]), c.a.createElement("div", {
 						key: "nextActiveCommentsSection",
 						ref: this._refNextActiveComments,
-						className: Kt.a.ScrollerSection
+						className: Ht.a.ScrollerSection
 					}, this.state.chunks[this.state.activeChunkIndex + 1])), c.a.createElement(qt, null, c.a.createElement(Ft.i, {
 						className: o,
 						onClick: () => this.scrollToLastBottomChunk()
@@ -2318,7 +2318,7 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, o) {
 			"use strict";
 			o.d(t, "a", (function() {
-				return I
+				return y
 			})), o.d(t, "c", (function() {
 				return O
 			}));
@@ -2419,10 +2419,10 @@
 					}, n || e))
 				}
 			}
-			const y = Object(d.b)(E, e => ({
+			const I = Object(d.b)(E, e => ({
 					toggleErrorTextModal: t => e(Object(u.i)(t))
 				}))(T),
-				I = e => {
+				y = e => {
 					const {
 						className: t,
 						errorClassName: o,
@@ -2432,19 +2432,19 @@
 					} = e, a = r.length ? r : n ? [n] : [];
 					return a.length ? l.a.createElement("div", {
 						className: t
-					}, a.map((e, t) => l.a.createElement(y, {
+					}, a.map((e, t) => l.a.createElement(I, {
 						className: o,
 						errorModalTitle: s,
 						key: t
 					}, e))) : null
 				},
-				O = e => l.a.createElement(I, {
+				O = e => l.a.createElement(y, {
 					fallbackMessage: s.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = y
+			t.b = I
 		},
 		"./src/reddit/helpers/describeApiError/index.ts": function(e, t, o) {
 			"use strict";
@@ -2786,4 +2786,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.e38aceea355530e468bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.394afd6ec6db231d21aa.js.map

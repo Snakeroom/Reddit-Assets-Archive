@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.79fe4a788069af309536.js
-// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.14df9dfceed39954b154.js
+// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1909,8 +1909,8 @@
 					} = Object(re.a)(e, o);
 				return (!r || r === E.r.CONFIDENCE) && Object(Ae.c)(e, {
 					experimentEligibilitySelector: () => Object(Te.H)(e),
-					experimentName: qe.j
-				}) === qe.m.Enabled
+					experimentName: qe.l
+				}) === qe.o.Enabled
 			};
 			var ze = s("./src/reddit/selectors/chatPost.ts"),
 				Ke = s("./src/reddit/selectors/realtimeComments.ts"),
@@ -11382,13 +11382,13 @@
 				return Object(i.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: l,
-					experimentName: o.mb
+					experimentName: o.ob
 				})
 			}
 
 			function m(e) {
 				switch (e) {
-					case o.nb.Enabled:
+					case o.pb.Enabled:
 						return 18;
 					default:
 						return
@@ -11398,7 +11398,7 @@
 			}(n || (n = {}));
 			const p = e => {
 				switch (e) {
-					case o.nb.Enabled:
+					case o.pb.Enabled:
 						return n.Enabled;
 					default:
 						return n.NoBucket
@@ -13880,16 +13880,16 @@
 				}, c.c, (e, t, s) => !e && t && !s),
 				u = Object(n.a)((e, t) => Object(i.c)(e, {
 					experimentEligibilitySelector: e => l(e, t),
-					experimentName: o.S,
+					experimentName: o.U,
 					throttledVariants: {
-						[o.ob.CurrentThrottled]: o.S
+						[o.qb.CurrentThrottled]: o.U
 					}
 				}), a.a),
-				m = e => e === o.ob.CurrentThrottled,
-				p = e => e === o.ob.CurrentThrottled || e === o.ob.CurrentUnthrottled || e === o.ob.CurrentUnthrottledCopy || e === o.ob.NewPopUnthrottledCopy,
-				b = e => e === o.ob.NewPopUnthrottledCopy,
-				h = e => e === o.ob.NewPageUnthrottledCopy || e === o.ob.NewPageUnthrottledCopyFields,
-				f = e => e === o.ob.NewPageUnthrottledCopyFields
+				m = e => e === o.qb.CurrentThrottled,
+				p = e => e === o.qb.CurrentThrottled || e === o.qb.CurrentUnthrottled || e === o.qb.CurrentUnthrottledCopy || e === o.qb.NewPopUnthrottledCopy,
+				b = e => e === o.qb.NewPopUnthrottledCopy,
+				h = e => e === o.qb.NewPageUnthrottledCopy || e === o.qb.NewPageUnthrottledCopyFields,
+				f = e => e === o.qb.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, s) {
 			"use strict";
@@ -13898,7 +13898,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts");
 			const o = e => {
-				if (!Object(n.Pc)(e)) return e || void 0
+				if (!Object(n.Rc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -13915,8 +13915,8 @@
 			const d = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: n.hc
-				}) === n.pc.Enabled
+					experimentName: n.jc
+				}) === n.rc.Enabled
 			})(e) && (e => {
 				const t = Object(r.e)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -13990,4 +13990,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.79fe4a788069af309536.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.14df9dfceed39954b154.js.map
