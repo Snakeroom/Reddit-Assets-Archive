@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f6acc01462f2452f62fc.js
-// Retrieved at 10/22/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a860110b6b99cac26c91.js
+// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -13796,10 +13796,11 @@
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case Id.r: {
+						if (!t.payload) return e;
 						const {
-							packageId: e
+							packageId: s
 						} = t.payload;
-						return e
+						return s
 					}
 					case Id.e:
 						return null;
@@ -24169,19 +24170,19 @@
 								user: a,
 								isAnonymous: r
 							} = t.payload;
+							let c = !1;
+							const i = e[s].map(e => {
+								var t;
+								return r && !e.supporterInfo || !r && (null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.id) === a.id ? (c = !0, Object.assign(Object.assign({}, e), {
+									lastSupportedAt: n > 0 ? (new Date).toString() : e.lastSupportedAt,
+									score: e.score + n
+								})) : e
+							});
+							if (c) return Object.assign(Object.assign({}, e), {
+								[s]: i.sort(SS)
+							});
 							if (n > 0) {
-								let t = !1;
-								const c = e[s].map(e => {
-									var s;
-									return r && !e.supporterInfo || !r && (null === (s = e.supporterInfo) || void 0 === s ? void 0 : s.id) === a.id ? (t = !0, Object.assign(Object.assign({}, e), {
-										lastSupportedAt: (new Date).toString(),
-										score: e.score + n
-									})) : e
-								});
-								if (t) return Object.assign(Object.assign({}, e), {
-									[s]: c.sort(SS)
-								});
-								const i = {
+								const t = {
 									score: n,
 									lastSupportedAt: (new Date).toString(),
 									supporterInfo: r ? null : {
@@ -24196,7 +24197,7 @@
 									}
 								};
 								return Object.assign(Object.assign({}, e), {
-									[s]: [i, ...e[s]].sort(SS)
+									[s]: [t, ...e[s]].sort(SS)
 								})
 							}
 							return e
@@ -28476,4 +28477,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f6acc01462f2452f62fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a860110b6b99cac26c91.js.map

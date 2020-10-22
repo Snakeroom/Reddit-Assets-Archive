@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.49b7fb0c070ec9005d4e.js
-// Retrieved at 10/22/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.045a09da51a664976593.js
+// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("116322"),
+				buildNumber: r("116326"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603391532"),
+				})("1603391693"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3431,14 +3431,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("6c12188-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("45f5914-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6c12188-production",
+						release: "45f5914-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3891,7 +3891,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "6c12188-production",
+							releaseClient: "45f5914-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -25409,83 +25409,28 @@
 		},
 		"./src/telemetry/models/GoldPurchase.ts": function(e, t, i) {
 			"use strict";
-			i.r(t), i.d(t, "New", (function() {
-				return r
-			})), i.d(t, "Renew", (function() {
-				return s
-			})), i.d(t, "GiftCode", (function() {
-				return o
-			})), i.d(t, "GetPremium", (function() {
-				return d
-			})), i.d(t, "Cancel", (function() {
-				return l
-			})), i.d(t, "Gid1", (function() {
-				return a
-			})), i.d(t, "Gid2", (function() {
-				return u
-			})), i.d(t, "Gid3", (function() {
-				return c
-			})), i.d(t, "GidAppreciation", (function() {
-				return _
-			})), i.d(t, "GidGroup", (function() {
-				return m
-			})), i.d(t, "GidPremium", (function() {
-				return p
-			})), i.d(t, "GidCommunity", (function() {
-				return h
-			})), i.d(t, "GidMod", (function() {
-				return g
-			})), i.d(t, "CoinsGid1", (function() {
-				return f
-			})), i.d(t, "CoinsGid2", (function() {
-				return b
-			})), i.d(t, "CoinsGid3", (function() {
-				return w
-			})), i.d(t, "CoinsGidCommunity", (function() {
-				return y
-			})), i.d(t, "CoinsGidMod", (function() {
-				return v
-			})), i.d(t, "Premium", (function() {
-				return T
-			})), i.d(t, "Coins", (function() {
-				return S
+			i.r(t), i.d(t, "GoldPurchaseType", (function() {
+				return n
 			})), i.d(t, "HideAds", (function() {
-				return E
+				return s
 			})), i.d(t, "PremiumMarketing", (function() {
-				return F
+				return o
 			})), i.d(t, "CoinsMarketing", (function() {
-				return I
+				return d
 			})), i.d(t, "GiveGold", (function() {
-				return O
+				return l
 			})), i.d(t, "toThrift", (function() {
-				return j
+				return a
 			}));
-			var n = i("./src/telemetry/eventSchemas/gold_types.js");
-			const r = "new",
-				s = "renew",
-				o = "gift_code",
-				d = "get_premium",
-				l = "cancel",
-				a = "gid_1",
-				u = "gid_2",
-				c = "gid_3",
-				_ = "gid_appreciation",
-				m = "gid_group",
-				p = "gid_premium",
-				h = "gid_community",
-				g = "gid_mod",
-				f = "coins_gid_1",
-				b = "coins_gid_2",
-				w = "coins_gid_3",
-				y = "coins_gid_community",
-				v = "coins_gid_mod",
-				T = "premium",
-				S = "coins",
-				E = "hide_ads",
-				F = "premium_marketing",
-				I = "coins_marketing",
-				O = "give_gold",
-				j = e => new n.GoldPurchase({
+			var n, r = i("./src/telemetry/eventSchemas/gold_types.js");
+			! function(e) {
+				e.New = "new", e.Renew = "renew", e.GiftCode = "gift_code", e.GetPremium = "get_premium", e.Cancel = "cancel", e.Gid1 = "gid_1", e.Gid2 = "gid_2", e.Gid3 = "gid_3", e.GidAppreciation = "gid_appreciation", e.GidGlobal = "gid_global", e.GidGroup = "gid_group", e.GidPremium = "gid_premium", e.GidCommunity = "gid_community", e.GidMod = "gid_mod", e.GidUnknown = "gid_unknown", e.CoinsGid1 = "coins_gid_1", e.CoinsGid2 = "coins_gid_2", e.CoinsGid3 = "coins_gid_3", e.CoinsGidCommunity = "coins_gid_community", e.CoinsGidMod = "coins_gid_mod", e.Premium = "premium", e.Coins = "coins"
+			}(n || (n = {}));
+			const s = "hide_ads",
+				o = "premium_marketing",
+				d = "coins_marketing",
+				l = "give_gold",
+				a = e => new r.GoldPurchase({
 					default_option: e.defaultOption,
 					default_anonymous: e.defaultAnonymous,
 					gilded_content: e.gildedContent,
@@ -25508,7 +25453,8 @@
 					award_row_position: e.awardRowPosition,
 					filter_id: e.filterId,
 					filter_name: e.filterName,
-					subscription_type: e.subscriptionType
+					subscription_type: e.subscriptionType,
+					is_temporary_award: e.isTemporaryAward
 				})
 		},
 		"./src/telemetry/models/Media.ts": function(e, t, i) {
@@ -25714,4 +25660,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.49b7fb0c070ec9005d4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.045a09da51a664976593.js.map

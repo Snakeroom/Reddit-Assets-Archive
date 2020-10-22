@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.94c27e4bdb240972e091.js
-// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.22a900a3b110ccb1d227.js
+// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -1518,9 +1518,11 @@
 					title: D.a()
 				})), Lt = e => async (t, r) => {
 					const i = r();
-					if (t(L.l({
-							title: D.f()
-						})), e.queryParams.thanks) {
+					t(L.l({
+						title: D.f()
+					})), Object(Ce.I)(i) || await t(Y.r());
+					const n = Object(Ce.I)(i);
+					if (e.queryParams.thanks && n) {
 						const e = await Promise.resolve().then(s.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted);
 						setTimeout(() => {
 							t(S.c()), t(e({
@@ -1528,7 +1530,6 @@
 							}))
 						}, 1e3)
 					}
-					Object(Ce.I)(i) || await t(Y.r())
 				}, Mt = e => async (e, t) => {
 					const s = t();
 					e(L.l({
@@ -2276,4 +2277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.94c27e4bdb240972e091.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.22a900a3b110ccb1d227.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.2e5c3ec95a51859c4b3d.js
-// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.9d83ad9be945e96e875f.js
+// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -911,9 +911,9 @@
 			})), n.d(t, "ub", (function() {
 				return v
 			})), n.d(t, "ib", (function() {
-				return R
-			})), n.d(t, "A", (function() {
 				return P
+			})), n.d(t, "A", (function() {
+				return R
 			})), n.d(t, "E", (function() {
 				return C
 			})), n.d(t, "z", (function() {
@@ -931,9 +931,9 @@
 			})), n.d(t, "w", (function() {
 				return M
 			})), n.d(t, "v", (function() {
-				return V
-			})), n.d(t, "r", (function() {
 				return G
+			})), n.d(t, "r", (function() {
+				return V
 			})), n.d(t, "t", (function() {
 				return F
 			})), n.d(t, "q", (function() {
@@ -1037,8 +1037,8 @@
 				A = "AWARD_SHEET__INFO_LOADED",
 				D = "AWARD_SHEET__INFO_FAILED",
 				v = "COMMUNITY_AWARDS__USABLE_AWARDS_LOADED",
-				R = "COINS__SUBREDDIT_LOCKED_COINS_LOADED",
-				P = "GIVE_PREMIUM__GIVE_PREMIUM_PENDING",
+				P = "COINS__SUBREDDIT_LOCKED_COINS_LOADED",
+				R = "GIVE_PREMIUM__GIVE_PREMIUM_PENDING",
 				C = "GIVE_PREMIUM__GIVE_PREMIUM_SUCCESSFUL",
 				w = "GIVE_PREMIUM__GIVE_PREMIUM_FAILED",
 				k = "GIVE_PREMIUM__SELECT_PACKAGE",
@@ -1047,8 +1047,8 @@
 				x = "GIVE_PREMIUM__UPDATE_MESSAGE",
 				U = "GILD__SET_IS_ANONYMOUS",
 				M = "GILD__UPDATE_MESSAGE",
-				V = "GILD__TRIGGER_LOADER",
-				G = "GILD__GILD_PENDING",
+				G = "GILD__TRIGGER_LOADER",
+				V = "GILD__GILD_PENDING",
 				F = "GILD__GILD_SUCCESSFUL",
 				B = "GILD__GILD_FAILED",
 				W = "GILD__GILD_THING",
@@ -1540,9 +1540,9 @@
 			})), n.d(t, "w", (function() {
 				return ve
 			})), n.d(t, "O", (function() {
-				return Re
-			})), n.d(t, "B", (function() {
 				return Pe
+			})), n.d(t, "B", (function() {
+				return Re
 			})), n.d(t, "A", (function() {
 				return Ce
 			})), n.d(t, "p", (function() {
@@ -1556,9 +1556,9 @@
 			})), n.d(t, "i", (function() {
 				return Ue
 			})), n.d(t, "n", (function() {
-				return Ve
-			})), n.d(t, "l", (function() {
 				return Ge
+			})), n.d(t, "l", (function() {
+				return Ve
 			})), n.d(t, "M", (function() {
 				return Fe
 			})), n.d(t, "D", (function() {
@@ -1658,8 +1658,8 @@
 			var A = n("./src/reddit/actions/video.ts"),
 				D = n("./src/reddit/actions/vote.ts"),
 				v = n("./src/reddit/constants/cookie.ts"),
-				R = n("./src/reddit/constants/history.ts"),
-				P = n("./src/reddit/constants/posts.ts"),
+				P = n("./src/reddit/constants/history.ts"),
+				R = n("./src/reddit/constants/posts.ts"),
 				C = n("./src/reddit/helpers/isPost.ts"),
 				w = n("./src/reddit/helpers/overlay/index.ts"),
 				k = n("./src/reddit/helpers/publicAccessNetwork/index.ts"),
@@ -1668,8 +1668,8 @@
 				x = n("./src/lib/makeGqlRequest/index.ts"),
 				U = n("./src/graphql/operations/RichTextPostContent.json");
 			var M = n("./src/lib/constants/index.ts"),
-				V = n("./src/lib/makeListingKey/index.ts"),
-				G = n("./node_modules/react-router-redux/es/index.js"),
+				G = n("./src/lib/makeListingKey/index.ts"),
+				V = n("./node_modules/react-router-redux/es/index.js"),
 				F = n("./src/reddit/actions/modal.ts"),
 				B = n("./src/reddit/actions/toaster.ts"),
 				W = n("./src/reddit/constants/modals.ts"),
@@ -1896,10 +1896,10 @@
 							const e = Object(B.d)(o.fbt._("Post deleted successfully.", null, {
 								hk: "1sQ4Xf"
 							}), K.b.SuccessMod);
-							if (n) s(Object(G.b)(t.state[R.a.CloseLocation]));
+							if (n) s(Object(V.b)(t.state[P.a.CloseLocation]));
 							else {
 								const e = Object(X.f)(a);
-								e && s(Object(G.b)(e.url))
+								e && s(Object(V.b)(e.url))
 							}
 							s(Object(B.e)(e))
 						} else {
@@ -1929,7 +1929,7 @@
 							isLocked: o.isLocked
 						}
 					}))
-				}, Re = e => async (t, n, s) => {
+				}, Pe = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -1951,7 +1951,7 @@
 							flair: o.flair
 						}
 					}))
-				}, Pe = e => async (t, n, s) => {
+				}, Re = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -2044,7 +2044,7 @@
 						const n = i.belongsTo.id,
 							s = Ne(e, c, o.subredditStickyPosts.data[i.belongsTo.id]),
 							r = o.subreddits.models[n].name,
-							a = Object(V.a)(r, M.P, {});
+							a = Object(G.a)(r, M.P, {});
 						t(ce({
 							newStickiedPostList: s,
 							subredditId: n,
@@ -2079,7 +2079,7 @@
 						}), K.b.Error);
 						t(Object(B.e)(e))
 					}
-				}, Ue = "PREFERENCES__RECENT_POSTS_UPDATED", Me = Object(u.a)(Ue), Ve = () => async (e, t) => {
+				}, Ue = "PREFERENCES__RECENT_POSTS_UPDATED", Me = Object(u.a)(Ue), Ge = () => async (e, t) => {
 					const n = t();
 					if (!n.user.account) return;
 					const s = Object(z.e)(n.user.account);
@@ -2088,12 +2088,12 @@
 					}), e(Me({
 						postIds: []
 					}))
-				}, Ge = e => async (t, n) => {
+				}, Ve = e => async (t, n) => {
 					const o = n();
 					if (!o.user.account || !o.user.account.showRecentPosts || o.posts.recent.indexOf(e) > -1) return;
 					const i = Object(z.e)(o.user.account),
 						c = o.posts.recent ? o.posts.recent.slice(0) : [];
-					c.push(e), c.length > P.c && c.shift(), Object(s.b)("".concat(i).concat(v.g), "".concat(c.join(",")), {
+					c.push(e), c.length > R.c && c.shift(), Object(s.b)("".concat(i).concat(v.g), "".concat(c.join(",")), {
 						domain: r.a.cookieDomain
 					}), t(Me({
 						postIds: c
@@ -2267,7 +2267,7 @@
 		"./src/reddit/actions/preferences.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return G
+				return V
 			})), n.d(t, "i", (function() {
 				return F
 			})), n.d(t, "g", (function() {
@@ -2321,9 +2321,9 @@
 			})), n.d(t, "k", (function() {
 				return De
 			})), n.d(t, "z", (function() {
-				return Re
-			})), n.d(t, "C", (function() {
 				return Pe
+			})), n.d(t, "C", (function() {
+				return Re
 			})), n.d(t, "s", (function() {
 				return Ce
 			})), n.d(t, "B", (function() {
@@ -2335,9 +2335,9 @@
 			})), n.d(t, "G", (function() {
 				return Me
 			})), n.d(t, "J", (function() {
-				return Ve
-			})), n.d(t, "I", (function() {
 				return Ge
+			})), n.d(t, "I", (function() {
+				return Ve
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var s = n("./node_modules/@reddit/onetrust-integration/dist/esm/index.js"),
@@ -2366,8 +2366,8 @@
 				A = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				D = n("./src/reddit/actions/imageUploads.ts"),
 				v = n("./src/reddit/actions/toaster.ts"),
-				R = n("./src/reddit/constants/preferences.ts"),
-				P = n("./src/reddit/endpoints/subreddit/settings.ts"),
+				P = n("./src/reddit/constants/preferences.ts"),
+				R = n("./src/reddit/endpoints/subreddit/settings.ts"),
 				C = n("./src/reddit/helpers/media/index.ts"),
 				w = n("./src/reddit/helpers/trackers/profileSettings.ts"),
 				k = n("./src/reddit/models/Image/index.tsx"),
@@ -2376,8 +2376,8 @@
 				x = n("./src/reddit/selectors/imageUploads.ts"),
 				U = n("./src/reddit/selectors/structuredStyles.ts"),
 				M = n("./src/reddit/selectors/subreddit.ts"),
-				V = n("./src/reddit/selectors/user.ts");
-			const G = "PREFERENCES__AUTOPLAY_TOGGLED",
+				G = n("./src/reddit/selectors/user.ts");
+			const V = "PREFERENCES__AUTOPLAY_TOGGLED",
 				F = "PREFERENCES__NIGHTMODE_TOGGLED",
 				B = "PREFERENCES__LANGUAGE_CHANGED",
 				W = "PREFERENCES__LAYOUT_CHANGED",
@@ -2395,7 +2395,7 @@
 				te = Object(p.a)(Y),
 				ne = Object(p.a)(Q),
 				se = Object(p.a)(J),
-				re = (Object(p.a)(K), Object(p.a)(G)),
+				re = (Object(p.a)(K), Object(p.a)(V)),
 				oe = Object(p.a)(F),
 				ie = (Object(p.a)(z), "PREFERENCES__COLLAPSED_TRAY_TOGGLED"),
 				ce = (Object(p.a)(ie), e => async (t, n, s) => {
@@ -2428,14 +2428,14 @@
 						apiContext: o
 					} = r;
 					const i = s(),
-						c = Object(V.bb)(i),
+						c = Object(G.bb)(i),
 						{
 							hasSeenCustomizeFlyout: a
 						} = i.user.prefs;
 					a || n(ee()), t && c ? (n($({
 						subredditId: t,
 						layout: e
-					})), n(Ve(t, {
+					})), n(Ge(t, {
 						layout: e
 					}, !1)), a || n(Ee({
 						hasSeenCustomizeFlyout: !0
@@ -2493,7 +2493,7 @@
 						const e = a.a.get(h.j);
 						if (e) {
 							const t = JSON.parse(Object(r.atob)(e));
-							t.prefs[R.d] = l, t.prefs[R.e] = u, Object(s.b)(h.j, btoa(JSON.stringify(t)), {
+							t.prefs[P.d] = l, t.prefs[P.e] = u, Object(s.b)(h.j, btoa(JSON.stringify(t)), {
 								domain: o.a.cookieDomain
 							})
 						}
@@ -2521,7 +2521,7 @@
 						if (u) {
 							const n = e.replace(/^r\//, ""),
 								s = Object(M.G)(b, n);
-							t(Ve(s, {
+							t(Ge(s, {
 								rpanDuDismissalTime: l
 							}, !1))
 						} else t(Ee({
@@ -2531,7 +2531,7 @@
 						const e = a.a.get(h.j);
 						if (e) {
 							const t = JSON.parse(Object(r.atob)(e));
-							t.prefs[R.b] = l, Object(s.b)(h.j, btoa(JSON.stringify(t)), {
+							t.prefs[P.b] = l, Object(s.b)(h.j, btoa(JSON.stringify(t)), {
 								domain: o.a.cookieDomain
 							})
 						}
@@ -2548,8 +2548,8 @@
 							apiContext: c
 						} = o;
 						s(pe());
-						const a = b()(e, R.a),
-							d = f()(e, R.a),
+						const a = b()(e, P.a),
+							d = f()(e, P.a),
 							l = [];
 						u()(a) || l.push(Object(S.g)(a, c())), u()(d) || l.push(Object(S.b)(d, c())), (await Promise.all(l)).every(e => e.ok) ? (s(ge({
 							preferences: e
@@ -2565,7 +2565,7 @@
 							})
 						})))
 					}
-				}, he = "SETTINGS__SUCCESS", Ie = Object(p.a)("SETTINGS__PENDING"), Se = Object(p.a)("SETTINGS__FAILURE"), Te = Object(p.a)(he), ye = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", Ae = Object(p.a)(ye), De = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", ve = Object(p.a)(De), Re = e => async (t, n, s) => {
+				}, he = "SETTINGS__SUCCESS", Ie = Object(p.a)("SETTINGS__PENDING"), Se = Object(p.a)("SETTINGS__FAILURE"), Te = Object(p.a)(he), ye = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", Ae = Object(p.a)(ye), De = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", ve = Object(p.a)(De), Pe = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -2578,7 +2578,7 @@
 						}
 					}))(r(), e);
 					i.ok ? t(Te(i.body)) : t(Se())
-				}, Pe = e => async (t, n, r) => {
+				}, Re = e => async (t, n, r) => {
 					let {
 						apiContext: o
 					} = r;
@@ -2607,7 +2607,7 @@
 				}, ke = (e, t) => async (n, s, r) => {
 					const {
 						apiContext: o
-					} = r, c = Object(V.i)(s());
+					} = r, c = Object(G.i)(s());
 					if (!c || !c.profileId) return;
 					n(Object(D.k)(e));
 					const a = Object(N.e)(c),
@@ -2682,7 +2682,7 @@
 					let {
 						apiContext: r
 					} = s;
-					const o = Object(V.i)(n());
+					const o = Object(G.i)(n());
 					if (!o || !o.profileId) return;
 					const c = Object(N.e)(o),
 						a = m.Ub + c,
@@ -2690,7 +2690,7 @@
 							profileIcon: "icon",
 							profileBanner: "banner"
 						} [e],
-						u = await Object(P.b)(r(), a, d);
+						u = await Object(R.b)(r(), a, d);
 					if (u.ok) {
 						const s = u.body[d + "_img"];
 						t(ve({
@@ -2714,12 +2714,12 @@
 					let {
 						apiContext: o
 					} = r;
-					const c = Object(V.i)(s());
+					const c = Object(G.i)(s());
 					if (!c || !c.profileId) return !1;
 					const a = [],
 						d = s().subreddits.settings[c.profileId],
 						u = Object.assign(Object.assign({}, d), e);
-					a.push(Object(P.f)(o(), c.profileId, u));
+					a.push(Object(R.f)(o(), c.profileId, u));
 					const {
 						showActiveCommunities: l,
 						prevShowActiveCommunities: b
@@ -2741,7 +2741,7 @@
 							hk: "1y1wAY"
 						})
 					})), !1)
-				}, Ve = function(e, t) {
+				}, Ge = function(e, t) {
 					let n = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
 					return async (s, r, o) => {
 						let {
@@ -2766,14 +2766,14 @@
 							})
 						})))
 					}
-				}, Ge = (e, t) => async (n, s, r) => {
+				}, Ve = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: o
 					} = r;
 					const i = s();
 					Object(M.T)(i, {
 						subredditId: e
-					}) && i.user.prefs.rememberCommunitySort && n(Ve(e, {
+					}) && i.user.prefs.rememberCommunitySort && n(Ge(e, {
 						sort: t
 					}, !1))
 				}
@@ -2831,9 +2831,9 @@
 			})), n.d(t, "V", (function() {
 				return v
 			})), n.d(t, "C", (function() {
-				return R
-			})), n.d(t, "b", (function() {
 				return P
+			})), n.d(t, "b", (function() {
+				return R
 			})), n.d(t, "s", (function() {
 				return C
 			})), n.d(t, "A", (function() {
@@ -2851,9 +2851,9 @@
 			})), n.d(t, "f", (function() {
 				return M
 			})), n.d(t, "g", (function() {
-				return V
-			})), n.d(t, "j", (function() {
 				return G
+			})), n.d(t, "j", (function() {
+				return V
 			})), n.d(t, "c", (function() {
 				return F
 			})), n.d(t, "h", (function() {
@@ -2909,8 +2909,8 @@
 				A = "RPAN__RECEIVE_VOTE",
 				D = "RPAN__RECEIVE_THEATER_SETTINGS",
 				v = "RPAN__UPDATE_VIDEO_TIMESTAMP",
-				R = "RPAN__RECEIVE_USER_SETTINGS",
-				P = "RPAN__BATCH_OP",
+				P = "RPAN__RECEIVE_USER_SETTINGS",
+				R = "RPAN__BATCH_OP",
 				C = "RPAN__RECEIVE_DISCOVERY_UNIT_THUMBNAILS",
 				w = "RPAN__RECEIVE_STREAM_PREVIEWS",
 				k = "RPAN__SEND_HEARTBEAT",
@@ -2919,8 +2919,8 @@
 				x = 30,
 				U = 6,
 				M = 5,
-				V = 15,
-				G = 5,
+				G = 15,
+				V = 5,
 				F = 57,
 				B = 60,
 				W = 7e3,
@@ -3081,8 +3081,8 @@
 				A = n("./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts"),
 				D = n("./src/reddit/helpers/media/index.ts"),
 				v = n("./src/reddit/models/Image/index.tsx"),
-				R = n("./src/reddit/models/StructuredStyles/index.ts"),
-				P = n("./src/reddit/models/Toast/index.ts"),
+				P = n("./src/reddit/models/StructuredStyles/index.ts"),
+				R = n("./src/reddit/models/Toast/index.ts"),
 				C = n("./src/reddit/selectors/activeModalId.ts"),
 				w = n("./src/reddit/selectors/platform.ts"),
 				k = n("./src/reddit/selectors/structuredStyles.ts"),
@@ -3091,20 +3091,20 @@
 				x = n("./src/telemetry/index.ts"),
 				U = n("./src/reddit/actions/structuredStyles/constants.ts");
 			const M = Object(u.a)(U.m),
-				V = {
+				G = {
 					bannerBackgroundImage: ["bannerBackgroundImagePosition"],
 					bannerPositionedImage: ["bannerPositionedImagePosition", "secondaryBannerPositionedImage"]
 				},
-				G = e => {
+				V = e => {
 					const t = Object.assign({}, e);
 					return Object.keys(e).forEach(n => {
-						V[n] && !e[n] && V[n].forEach(e => t[e] = null)
+						G[n] && !e[n] && G[n].forEach(e => t[e] = null)
 					}), t
 				},
 				F = (e, t, n, s) => async (r, o, i) => {
 					const {
 						apiContext: c
-					} = i, a = o(), u = G(t), _ = a.structuredStyles.models[e];
+					} = i, a = o(), u = V(t), _ = a.structuredStyles.models[e];
 					let m;
 					for (const e in u)
 						if (u[e] !== _[e]) {
@@ -3144,7 +3144,7 @@
 							styles: Object.assign(Object.assign({}, u), S)
 						}))
 					} else g && g.websocket.close(), r(Object(l.f)(s, h.error)), h.body && r(I.e({
-						kind: P.b.Error,
+						kind: R.b.Error,
 						text: Object(d.a)(h.error, h.status)
 					}));
 					Object(x.a)(Object.assign(Object.assign({}, p), {
@@ -3220,10 +3220,10 @@
 						}))
 					})(e)(t, n, s), Object(S.g)(e, !1)(t, n, s)
 				}, z = Object(u.a)(U.c), Q = e => async (t, n, s) => {
-					const r = G(e),
+					const r = V(e),
 						o = n();
 					for (const e in r)
-						if (Object(R.l)(e))
+						if (Object(P.l)(e))
 							if (r[e]) {
 								if ("string" != typeof r[e]) {
 									const o = r[e],
@@ -3479,12 +3479,12 @@
 			};
 			var D = n("./src/reddit/helpers/history/index.ts");
 			const v = 2 * r.eb;
-			var R = e => Date.now() + v < new Date(e.expires).getTime(),
-				P = n("./src/reddit/helpers/localStorage/index.ts"),
+			var P = e => Date.now() + v < new Date(e.expires).getTime(),
+				R = n("./src/reddit/helpers/localStorage/index.ts"),
 				C = async (e, t, n) => {
 					let s = t.accessToken;
 					await j()(async (o, i) => {
-						if (!R(t) || !s) {
+						if (!P(t) || !s) {
 							const r = await Object(I.b)(e, t, n);
 							if (r.ok) {
 								const e = r.body;
@@ -3512,9 +3512,9 @@
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
-						[y.d, y.e, y.h, y.i].forEach(A), Object(P.H)(null), Object(D.a)(h.a.JustLoggedOut, !0), window.location.reload()
+						[y.d, y.e, y.h, y.i].forEach(A), Object(R.H)(null), Object(D.a)(h.a.JustLoggedOut, !0), window.location.reload()
 					})
-				}, w = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), k = n("./src/reddit/helpers/trackers/emailCollection.ts"), L = n("./src/reddit/helpers/trackers/emailVerification.ts"), N = n("./src/reddit/models/Toast/index.ts"), x = n("./src/reddit/selectors/activeModalId.ts"), U = n("./src/reddit/selectors/emailCollection.ts"), M = n("./src/reddit/selectors/notificationBanner.ts"), V = n("./src/reddit/selectors/user.ts"), G = n("./src/telemetry/index.ts"), F = function(e, t) {
+				}, w = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), k = n("./src/reddit/helpers/trackers/emailCollection.ts"), L = n("./src/reddit/helpers/trackers/emailVerification.ts"), N = n("./src/reddit/models/Toast/index.ts"), x = n("./src/reddit/selectors/activeModalId.ts"), U = n("./src/reddit/selectors/emailCollection.ts"), M = n("./src/reddit/selectors/notificationBanner.ts"), G = n("./src/reddit/selectors/user.ts"), V = n("./src/telemetry/index.ts"), F = function(e, t) {
 					var n = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -3605,7 +3605,7 @@
 						apiContext: o
 					} = s;
 					const i = F(e, []);
-					if (Object(V.E)(n(), "changeEmail")) return;
+					if (Object(G.E)(n(), "changeEmail")) return;
 					t(be());
 					const c = await ((e, t) => {
 							let {
@@ -3624,8 +3624,8 @@
 						})(o(), i),
 						d = n();
 					if (c.ok && c.body && c.body.success) {
-						Object(M.a)(u.a.EmailCollectionBannerId)(d) && t(Object(a.c)(u.a.EmailCollectionBannerId)), Object(U.a)(d) && Object(G.a)(Object(k.c)(d));
-						const e = Object(V.G)(d);
+						Object(M.a)(u.a.EmailCollectionBannerId)(d) && t(Object(a.c)(u.a.EmailCollectionBannerId)), Object(U.a)(d) && Object(V.a)(Object(k.c)(d));
+						const e = Object(G.G)(d);
 						e || await t(Oe()), t(_e(i.newEmail)), e && t(Ie()), me(t, d)
 					} else {
 						const e = Object(O.b)(c, "Something went wrong updating your email. Try again later.");
@@ -3645,7 +3645,7 @@
 						}),
 						u = n();
 					if (a.ok && a.body && a.body.success) {
-						e && (Object(G.a)(Object(L.f)(e)(u)), me(t, u));
+						e && (Object(V.a)(Object(L.f)(e)(u)), me(t, u));
 						const n = Object(x.a)(u),
 							s = n === l.g || n === l.o ? l.o : l.c;
 						t(Object(c.i)(s))
@@ -3660,7 +3660,7 @@
 					let {
 						apiContext: o
 					} = s;
-					if (Object(V.E)(n(), "sendResetEmail")) return;
+					if (Object(G.E)(n(), "sendResetEmail")) return;
 					t(he());
 					const i = await ((e, t) => Object(_.a)(Object(f.a)(e, [m.a]), {
 						method: r.db.POST,
@@ -3714,7 +3714,7 @@
 			})), n.d(t, "c", (function() {
 				return v
 			})), n.d(t, "l", (function() {
-				return R
+				return P
 			})), n.d(t, "t", (function() {
 				return C
 			})), n.d(t, "y", (function() {
@@ -3732,7 +3732,7 @@
 			})), n.d(t, "M", (function() {
 				return M
 			})), n.d(t, "N", (function() {
-				return V
+				return G
 			})), n.d(t, "z", (function() {
 				return F
 			})), n.d(t, "A", (function() {
@@ -3790,8 +3790,8 @@
 				A = "VIDEO__BUFFERING",
 				D = "VIDEO__PLAYING",
 				v = "VIDEO__CONTINUOUS_VIEW_STARTED_AT",
-				R = "VIDEO__SET_MUTED_IN_FEED",
-				P = (() => {
+				P = "VIDEO__SET_MUTED_IN_FEED",
+				R = (() => {
 					let e = "";
 					return (t, n, s, r) => async (o, c) => {
 						if (null != t) {
@@ -3808,7 +3808,7 @@
 						o = Object(l.N)(s, {
 							postId: e
 						});
-					t(P(e, "is_viewable", "video", !1)), o.isSponsored && t(Object(c.t)(o, r.a.VideoViewableImpression))
+					t(R(e, "is_viewable", "video", !1)), o.isSponsored && t(Object(c.t)(o, r.a.VideoViewableImpression))
 				}, k = e => async (t, n) => {
 					const s = n(),
 						o = Object(l.N)(s, {
@@ -3826,17 +3826,17 @@
 						o = Object(l.N)(s, {
 							postId: e
 						});
-					t(P(e, "is_fully_viewable", "video", !1)), o.isSponsored && t(Object(c.t)(o, r.a.VideoFullyViewableImpression))
+					t(R(e, "is_fully_viewable", "video", !1)), o.isSponsored && t(Object(c.t)(o, r.a.VideoFullyViewableImpression))
 				}, x = e => async (t, n) => {
 					const s = Object(l.N)(n(), {
 						postId: e
 					});
-					t(P(e, "start", "video", !1)), s.isSponsored && t(Object(c.t)(s, r.a.VideoStarted))
+					t(R(e, "start", "video", !1)), s.isSponsored && t(Object(c.t)(s, r.a.VideoStarted))
 				}, U = (e, t) => async (n, s) => {
 					const o = Object(l.N)(s(), {
 						postId: t
 					});
-					n(P(t, "play_with_sound", "video", !1)), n(P(t, "is_viewable", "video", !1)), n(P(t, "is_fully_viewable", "video", !1)), o.isSponsored && (n(Object(c.t)(o, r.a.VideoPlayedWithSound)), e && (n(Object(c.t)(o, r.a.VideoViewableImpression)), n(Object(c.t)(o, r.a.VideoFullyViewableImpression))))
+					n(R(t, "play_with_sound", "video", !1)), n(R(t, "is_viewable", "video", !1)), n(R(t, "is_fully_viewable", "video", !1)), o.isSponsored && (n(Object(c.t)(o, r.a.VideoPlayedWithSound)), e && (n(Object(c.t)(o, r.a.VideoViewableImpression)), n(Object(c.t)(o, r.a.VideoFullyViewableImpression))))
 				}, M = (e, t) => async (n, s) => {
 					const i = Object(l.N)(s(), {
 						postId: t
@@ -3858,8 +3858,8 @@
 						default:
 							a = "watch_100_percent", d = r.a.VideoWatched100
 					}
-					n(P(t, a, "video", !1)), i.isSponsored && n(Object(c.t)(i, d, a))
-				}, V = (e, t) => async (n, s) => {
+					n(R(t, a, "video", !1)), i.isSponsored && n(Object(c.t)(i, d, a))
+				}, G = (e, t) => async (n, s) => {
 					const i = Object(l.N)(s(), {
 						postId: t
 					});
@@ -3874,15 +3874,15 @@
 						default:
 							a = "watch_10_seconds", d = r.a.VideoWatchedSeconds10
 					}
-					n(P(t, a, "video", !1)), i.isSponsored && n(Object(c.t)(i, d, a))
-				}, G = Object(s.a)(f), F = Object(s.a)(O), B = Object(s.a)(g), W = Object(s.a)(j), H = Object(s.a)(E), q = Object(s.a)(m), Y = Object(s.a)(h), K = Object(s.a)(y), z = Object(s.a)(p), Q = Object(s.a)(I), J = Object(s.a)(S), X = Object(s.a)(T), Z = Object(s.a)(A), $ = Object(s.a)(D), ee = e => async (t, n) => {
+					n(R(t, a, "video", !1)), i.isSponsored && n(Object(c.t)(i, d, a))
+				}, V = Object(s.a)(f), F = Object(s.a)(O), B = Object(s.a)(g), W = Object(s.a)(j), H = Object(s.a)(E), q = Object(s.a)(m), Y = Object(s.a)(h), K = Object(s.a)(y), z = Object(s.a)(p), Q = Object(s.a)(I), J = Object(s.a)(S), X = Object(s.a)(T), Z = Object(s.a)(A), $ = Object(s.a)(D), ee = e => async (t, n) => {
 					const s = Object(l.N)(n(), {
 						postId: e
 					});
 					t(q({
 						postId: e
 					})), ((e, t, n) => {
-						n(P(t, "play_expanded", "video", !1)), n(P(t, "is_viewable", "video", !1)), n(P(t, "is_fully_viewable", "video", !1)), e.isSponsored && (n(Object(c.t)(e, r.a.VideoPlayedExpanded)), n(Object(c.t)(e, r.a.VideoViewableImpression)), n(Object(c.t)(e, r.a.VideoFullyViewableImpression)))
+						n(R(t, "play_expanded", "video", !1)), n(R(t, "is_viewable", "video", !1)), n(R(t, "is_fully_viewable", "video", !1)), e.isSponsored && (n(Object(c.t)(e, r.a.VideoPlayedExpanded)), n(Object(c.t)(e, r.a.VideoViewableImpression)), n(Object(c.t)(e, r.a.VideoFullyViewableImpression)))
 					})(s, e, t)
 				}, te = (e, t) => async (n, s) => {
 					const r = s();
@@ -3920,10 +3920,10 @@
 					const s = n(),
 						r = s.posts.video.autoPlayed[e],
 						o = s.posts.video.consumed[e];
-					t(G({
+					t(V({
 						postId: e
 					})), r && Object(u.k)(s) && !o && d.b(s, e)
-				}, ce = Object(s.a)(R)
+				}, ce = Object(s.a)(P)
 		},
 		"./src/reddit/actions/vote.ts": function(e, t, n) {
 			"use strict";
@@ -3958,8 +3958,8 @@
 				A = n("./src/reddit/models/Vote/index.ts"),
 				D = n("./src/reddit/selectors/comments.ts"),
 				v = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				R = n("./src/reddit/selectors/user.ts");
-			var P = n("./src/reddit/selectors/gild.ts"),
+				P = n("./src/reddit/selectors/user.ts");
+			var R = n("./src/reddit/selectors/gild.ts"),
 				C = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				w = n("./src/reddit/selectors/modQueue.ts"),
 				k = n("./src/reddit/selectors/platform.ts"),
@@ -3970,23 +3970,23 @@
 					let {
 						apiContext: U
 					} = N;
-					if (!Object(R.I)(a())) return s(Object(b.k)({
+					if (!Object(P.I)(a())) return s(Object(b.k)({
 						actionSource: b.a.Vote
 					})), void s(Object(l.i)());
 					const M = e(n, a),
-						V = A.b(M, t),
-						G = Object(T.a)(n) ? M.postId : n;
+						G = A.b(M, t),
+						V = Object(T.a)(n) ? M.postId : n;
 					if (s(x({
-							id: G,
+							id: V,
 							isInstance: !1,
 							vote: t
-						})), (a().posts.instances[G] || []).forEach(e => {
+						})), (a().posts.instances[V] || []).forEach(e => {
 							s(x({
 								id: e,
 								isInstance: !0,
 								vote: t
 							}))
-						}), V)
+						}), G)
 						if (Object(T.a)(n)) {
 							const e = Object(L.N)(a(), {
 									postId: n
@@ -4007,16 +4007,16 @@
 					}
 					const F = a(),
 						B = Object(k.i)(F),
-						W = !!Object(P.f)(F),
-						H = Object(R.cb)(F);
+						W = !!Object(R.f)(F),
+						H = Object(P.cb)(F);
 					if (W ? s((() => async (e, t, n) => {
 							let {
 								apiContext: s
 							} = n;
 							e(d()), e(Object(o.i)())
-						})()) : Object(T.a)(G) && V === A.a.upvoted && !H && (e => {
+						})()) : Object(T.a)(V) && G === A.a.upvoted && !H && (e => {
 							const t = Object(v.c)(e, {
-								experimentEligibilitySelector: e => Object(R.I)(e),
+								experimentEligibilitySelector: e => Object(P.I)(e),
 								experimentName: p.rb
 							});
 							return Object(p.Rc)(t) ? void 0 : t
@@ -4027,7 +4027,7 @@
 							n(u(e)), n(Object(o.h)({
 								tooltipId: Object(i.a)("View--GiveAward", e, t ? "lightbox" : void 0)
 							})), Object(c.c)(a())
-						})(G, B)), Object(r.a)(Object(y.viewGiveAwardTooltipEvent)(G)(F))), Object(R.I)(F)) {
+						})(V, B)), Object(r.a)(Object(y.viewGiveAwardTooltipEvent)(V)(F))), Object(P.I)(F)) {
 						const e = await ((e, t, n) => Object(j.a)(Object(E.a)(e, [h.a]), {
 							endpoint: Object(I.a)("".concat(e.apiUrl, "/api/vote")),
 							method: g.db.POST,
@@ -4036,9 +4036,9 @@
 								dir: n,
 								api_type: "json"
 							}
-						}))(U(), G, V);
+						}))(U(), V, G);
 						e.ok || s(x({
-								id: G,
+								id: V,
 								isInstance: !1,
 								vote: t
 							})),
@@ -4060,7 +4060,7 @@
 								if ("profile" === r.belongsTo.type) return;
 								const o = F.experimentOverrides[p.X],
 									i = Object(k.i)(F);
-								("none" !== t || o && V === A.a.downvoted) && (s(Object(_.J)({
+								("none" !== t || o && G === A.a.downvoted) && (s(Object(_.J)({
 									[n]: {
 										moderationPrompt: o || t
 									}
@@ -4111,9 +4111,9 @@
 			})), n.d(t, "h", (function() {
 				return v
 			})), n.d(t, "a", (function() {
-				return R
-			})), n.d(t, "b", (function() {
 				return P
+			})), n.d(t, "b", (function() {
+				return R
 			})), n.d(t, "f", (function() {
 				return w
 			})), n.d(t, "g", (function() {
@@ -4204,7 +4204,7 @@
 						D = null;
 					try {
 						(A = await Object(i.f)(I, O.a.Widgets)) && (D = Object(i.m)(A)(r, b, f))
-					} catch (R) {
+					} catch (P) {
 						const e = Object(_.a)("webSocket");
 						return void r(Object(o.f)(n, e))
 					}
@@ -4259,7 +4259,7 @@
 						if (D) {
 							try {
 								await D
-							} catch (R) {}
+							} catch (P) {}
 							i = await r(U(e, h)) || i
 						}
 						r(S({
@@ -4307,7 +4307,7 @@
 						subredditId: e,
 						widgetIds: t
 					}))
-				}, R = e => {
+				}, P = e => {
 					let {
 						imageData: t
 					} = e;
@@ -4336,7 +4336,7 @@
 						}
 						return _
 					}
-				}, P = Object(r.a)(E.d), C = Object(r.a)(E.e), w = (e, t) => async (n, s, r) => {
+				}, R = Object(r.a)(E.d), C = Object(r.a)(E.e), w = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: i
 					} = r;
@@ -4931,9 +4931,9 @@
 			})), n.d(t, "z", (function() {
 				return v
 			})), n.d(t, "i", (function() {
-				return R
-			})), n.d(t, "v", (function() {
 				return P
+			})), n.d(t, "v", (function() {
+				return R
 			})), n.d(t, "t", (function() {
 				return C
 			})), n.d(t, "a", (function() {
@@ -5087,14 +5087,14 @@
 						id: t
 					}
 				}),
-				R = (e, t) => Object(o.a)(Object(c.a)(e, [a.a]), {
+				P = (e, t) => Object(o.a)(Object(c.a)(e, [a.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/ignore_reports"),
 					method: r.db.POST,
 					data: {
 						id: t
 					}
 				}),
-				P = (e, t) => Object(o.a)(Object(c.a)(e, [a.a]), {
+				R = (e, t) => Object(o.a)(Object(c.a)(e, [a.a]), {
 					endpoint: "".concat(e.apiUrl, "/api/unignore_reports"),
 					method: r.db.POST,
 					data: {
@@ -5724,19 +5724,19 @@
 						A = Math.max(b[30].maxContinuousTime, O[30]),
 						D = Math.max(b[50].maxContinuousTime, O[50]),
 						v = Math.max(b[100].maxContinuousTime, O[100]),
-						R = D > s.l,
-						P = document.getElementById(e);
-					if (!P) return null;
-					const C = P.getElementsByTagName("video");
+						P = D > s.l,
+						R = document.getElementById(e);
+					if (!R) return null;
+					const C = R.getElementsByTagName("video");
 					let w = null;
 					C && C[0] && (w = C[0].getBoundingClientRect());
-					const k = P.getBoundingClientRect(),
+					const k = R.getBoundingClientRect(),
 						L = (d = Math.floor(k.width)) * (u = Math.floor(k.height)),
 						N = L > 242499 && D >= 1e3 || v >= 1e3 || n === o.a.GroupMViewable ? 1 : 0,
 						x = L > 242499 && A >= 1e3 || v >= 1e3 ? 1 : 0,
 						U = Math.max(_[100].maxContinuousTime, g[100]) > 1,
 						M = _.HALF_DURATION_80_IN_VIEW_AUDIBLE,
-						V = {
+						G = {
 							w: d,
 							h: u,
 							sw: window.screen.width,
@@ -5750,11 +5750,11 @@
 							f: v,
 							g: N ? 1 : 0,
 							i: n === o.a.Impression ? l : t.timeImpressionViewed || 0,
-							o: R ? 1 : 0,
+							o: P ? 1 : 0,
 							q: x ? 1 : 0,
 							r: t.eventGlobalCount ? t.eventGlobalCount : 0
 						};
-					return p.isVideo && (V.va = p.isVideo ? 1 : 0, V.vh = w ? Math.floor(w.height) : 0, V.vw = w ? Math.floor(w.width) : 0, V.ve = p.videoVolume || 0, V.vc = Math.floor(p.videoDuration || 0), V.vd = Math.floor(p.cumulativeViewedTime) || 0, V.vq = p.wasFullScreen || 0, V.vg = _[1].timeEntered ? 1 : 0, V.vb = _[50].totalTime + g[50], V.vs = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoStarted, p.videoStarted), V.vt = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched25, p.watched25), V.vu = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched50, p.watched50), V.vv = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched75, p.watched75), V.vx = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched100, p.watched100), V.vo = c("vo", n, o.a.VideoWatched50, h.inView100, p.watched50State) ? 1 : 0, V.vr = c("vr", n, o.a.VideoWatched50, h.inView80 && h.audible, p.watched50State) || M.totalTime + g.HALF_DURATION_80_IN_VIEW_AUDIBLE >= 15e3 ? 1 : 0, V.vj = c("vj", n, o.a.VideoWatched50, h.inView100 && h.audible, p.watched50State) ? 1 : 0, V.vl = c("vl", n, o.a.VideoWatched100, h.inView100, p.watched100State) ? 1 : 0, V.vk = c("vk", n, o.a.VideoWatched100, h.audible, p.watched100State) ? 1 : 0, V.vp = c("vp", n, o.a.VideoWatched100, h.inView100 && h.audible, p.watched100State) ? 1 : 0, V.vm = c("vm", n, o.a.VideoWatched100, h.inView50 && h.audible, p.watched100State) ? 1 : 0, V.vn = c("vn", n, o.a.VideoWatched100, h.inView50 && h.muted, p.watched100State) ? 1 : 0, V.vy = _.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + g.FULL_IN_VIEW_AUDIBLE_TIME, V.vz = _[100].totalTime + g[100], V.xa = U ? 1 : 0, V.xb = Math.max(_[50].maxContinuousTime, g[50])), V
+					return p.isVideo && (G.va = p.isVideo ? 1 : 0, G.vh = w ? Math.floor(w.height) : 0, G.vw = w ? Math.floor(w.width) : 0, G.ve = p.videoVolume || 0, G.vc = Math.floor(p.videoDuration || 0), G.vd = Math.floor(p.cumulativeViewedTime) || 0, G.vq = p.wasFullScreen || 0, G.vg = _[1].timeEntered ? 1 : 0, G.vb = _[50].totalTime + g[50], G.vs = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoStarted, p.videoStarted), G.vt = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched25, p.watched25), G.vu = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched50, p.watched50), G.vv = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched75, p.watched75), G.vx = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched100, p.watched100), G.vo = c("vo", n, o.a.VideoWatched50, h.inView100, p.watched50State) ? 1 : 0, G.vr = c("vr", n, o.a.VideoWatched50, h.inView80 && h.audible, p.watched50State) || M.totalTime + g.HALF_DURATION_80_IN_VIEW_AUDIBLE >= 15e3 ? 1 : 0, G.vj = c("vj", n, o.a.VideoWatched50, h.inView100 && h.audible, p.watched50State) ? 1 : 0, G.vl = c("vl", n, o.a.VideoWatched100, h.inView100, p.watched100State) ? 1 : 0, G.vk = c("vk", n, o.a.VideoWatched100, h.audible, p.watched100State) ? 1 : 0, G.vp = c("vp", n, o.a.VideoWatched100, h.inView100 && h.audible, p.watched100State) ? 1 : 0, G.vm = c("vm", n, o.a.VideoWatched100, h.inView50 && h.audible, p.watched100State) ? 1 : 0, G.vn = c("vn", n, o.a.VideoWatched100, h.inView50 && h.muted, p.watched100State) ? 1 : 0, G.vy = _.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + g.FULL_IN_VIEW_AUDIBLE_TIME, G.vz = _[100].totalTime + g[100], G.xa = U ? 1 : 0, G.xb = Math.max(_[50].maxContinuousTime, g[50])), G
 				}
 		},
 		"./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts": function(e, t, n) {
@@ -6291,140 +6291,142 @@
 		"./src/reddit/helpers/trackers/gild.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "getAwardTypeFromAward", (function() {
-				return a
+				return d
 			})), n.d(t, "clickGildEvent", (function() {
-				return l
-			})), n.d(t, "clickRpanGiveAward", (function() {
 				return b
-			})), n.d(t, "clickAddAward", (function() {
+			})), n.d(t, "clickRpanGiveAward", (function() {
 				return _
-			})), n.d(t, "clickHideAward", (function() {
+			})), n.d(t, "clickAddAward", (function() {
 				return f
-			})), n.d(t, "clickConfirmHideAward", (function() {
+			})), n.d(t, "clickHideAward", (function() {
 				return m
-			})), n.d(t, "clickCancelHideAward", (function() {
+			})), n.d(t, "clickConfirmHideAward", (function() {
 				return p
+			})), n.d(t, "clickCancelHideAward", (function() {
+				return O
 			})), n.d(t, "clickAwardReportFlow", (function() {
-				return g
-			})), n.d(t, "clickCancelAwardReportFlow", (function() {
 				return j
-			})), n.d(t, "clickFlagAwardUsage", (function() {
+			})), n.d(t, "clickCancelAwardReportFlow", (function() {
 				return E
-			})), n.d(t, "clickCancelFlagAwardUsage", (function() {
+			})), n.d(t, "clickFlagAwardUsage", (function() {
 				return h
-			})), n.d(t, "clickConfirmFlagAwardUsage", (function() {
+			})), n.d(t, "clickCancelFlagAwardUsage", (function() {
 				return I
-			})), n.d(t, "clickReportAward", (function() {
+			})), n.d(t, "clickConfirmFlagAwardUsage", (function() {
 				return S
-			})), n.d(t, "clickCancelReportAward", (function() {
+			})), n.d(t, "clickReportAward", (function() {
 				return T
-			})), n.d(t, "clickConfirmReportAward", (function() {
+			})), n.d(t, "clickCancelReportAward", (function() {
 				return y
-			})), n.d(t, "viewGildModalEvent", (function() {
+			})), n.d(t, "clickConfirmReportAward", (function() {
 				return A
-			})), n.d(t, "clickSelectAwardEvent", (function() {
+			})), n.d(t, "viewGildModalEvent", (function() {
 				return D
-			})), n.d(t, "viewGiveAwardTooltipEvent", (function() {
+			})), n.d(t, "clickSelectAwardEvent", (function() {
 				return v
+			})), n.d(t, "viewGiveAwardTooltipEvent", (function() {
+				return P
 			})), n.d(t, "triggerAnonymousEvent", (function() {
 				return R
 			})), n.d(t, "clickMessageInputEvent", (function() {
-				return P
-			})), n.d(t, "typeMessageInputEvent", (function() {
 				return C
-			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
+			})), n.d(t, "typeMessageInputEvent", (function() {
 				return w
-			})), n.d(t, "clickQuestionMarkEvent", (function() {
+			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
 				return k
-			})), n.d(t, "clickConfirmAwardEvent", (function() {
+			})), n.d(t, "clickQuestionMarkEvent", (function() {
 				return L
-			})), n.d(t, "clickGetPremiumEvent", (function() {
+			})), n.d(t, "clickConfirmAwardEvent", (function() {
 				return N
-			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
+			})), n.d(t, "clickGetPremiumEvent", (function() {
 				return x
-			})), n.d(t, "clickNextButtonEvent", (function() {
+			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
 				return U
-			})), n.d(t, "clickCloseGildModalEvent", (function() {
+			})), n.d(t, "clickNextButtonEvent", (function() {
 				return M
+			})), n.d(t, "clickCloseGildModalEvent", (function() {
+				return G
 			})), n.d(t, "viewSuccessAwardEvent", (function() {
 				return V
 			})), n.d(t, "viewKarmaSuccessEvent", (function() {
-				return G
-			})), n.d(t, "clickFilterEvent", (function() {
 				return F
-			})), n.d(t, "clickNextFiltersEvent", (function() {
+			})), n.d(t, "clickFilterEvent", (function() {
 				return B
-			})), n.d(t, "clickPreviousFiltersEvent", (function() {
+			})), n.d(t, "clickNextFiltersEvent", (function() {
 				return W
+			})), n.d(t, "clickPreviousFiltersEvent", (function() {
+				return H
 			}));
 			var s = n("./src/reddit/models/Gold/Award.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts"),
-				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				i = n("./src/reddit/helpers/isComment.ts"),
-				c = n("./src/reddit/selectors/gild.ts");
-			const a = e => e.awardType === s.f.Global && e.awardSubType === s.d.Appreciation ? "gid_appreciation" : e.awardType === s.f.Global && e.awardSubType === s.d.Premium ? "gid_premium" : e.awardSubType === s.d.Group ? "gid_group" : e.awardType === s.f.Community ? "gid_community" : e.awardType === s.f.Moderator ? "gid_mod" : e.id,
-				d = (e, t) => Object.assign({
+				o = n("./src/telemetry/models/GoldPurchase.ts"),
+				i = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				c = n("./src/reddit/helpers/isComment.ts"),
+				a = n("./src/reddit/selectors/gild.ts");
+			const d = e => e.awardType === s.f.Global && e.awardSubType === s.d.Appreciation ? o.GoldPurchaseType.GidAppreciation : e.awardType === s.f.Global && e.awardSubType === s.d.Premium ? o.GoldPurchaseType.GidPremium : e.awardSubType === s.d.Group ? o.GoldPurchaseType.GidGroup : e.awardType === s.f.Community ? o.GoldPurchaseType.GidCommunity : e.awardType === s.f.Moderator ? o.GoldPurchaseType.GidMod : e.awardType === s.f.Global && e.awardSubType === s.d.Global ? o.GoldPurchaseType.GidGlobal : o.GoldPurchaseType.GidUnknown,
+				u = (e, t) => Object.assign({
 					awardId: e.id,
 					awardName: e.name,
+					isTemporaryAward: !!e.endsAt,
 					numberCoinsToRecipient: e.coinReward,
-					type: a(e)
+					type: d(e)
 				}, t),
-				u = (e, t) => Object.assign(Object.assign({}, r.defaults(e)), {
+				l = (e, t) => Object.assign(Object.assign({}, r.defaults(e)), {
 					comment: t ? r.comment(e, t) : void 0,
-					correlationId: Object(c.b)(e) || Object(o.d)(o.a.GildingFlow, !1),
+					correlationId: Object(a.b)(e) || Object(i.d)(i.a.GildingFlow, !1),
 					post: t ? r.post(e, t) : void 0,
 					screen: r.screen(e),
 					subreddit: r.subreddit(e),
 					userSubreddit: r.userSubreddit(e)
 				}),
-				l = e => t => Object.assign(Object.assign({}, u(t, e)), {
-					source: Object(i.a)(e) ? "comment" : "post",
+				b = e => t => Object.assign(Object.assign({}, l(t, e)), {
+					source: Object(c.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "give_gold"
 				}),
-				b = e => t => Object.assign(Object.assign({}, u(t, e)), {
+				_ = e => t => Object.assign(Object.assign({}, l(t, e)), {
 					source: "stream_player",
 					action: "click",
 					noun: "give_gold"
 				}),
-				_ = e => t => Object.assign(Object.assign({}, u(t, e)), {
-					source: Object(i.a)(e) ? "comment" : "post",
+				f = e => t => Object.assign(Object.assign({}, l(t, e)), {
+					source: Object(c.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "add_award"
 				}),
-				f = (e, t) => n => Object.assign(Object.assign({}, u(n, t)), {
-					source: Object(i.a)(t) ? "comment" : "post",
+				m = (e, t) => n => Object.assign(Object.assign({}, l(n, t)), {
+					source: Object(c.a)(t) ? "comment" : "post",
 					action: "click",
 					noun: "hide_award",
-					goldPurchase: d(e)
+					goldPurchase: u(e)
 				}),
-				m = (e, t) => n => Object.assign(Object.assign({}, u(n, t)), {
-					source: Object(i.a)(t) ? "comment" : "post",
+				p = (e, t) => n => Object.assign(Object.assign({}, l(n, t)), {
+					source: Object(c.a)(t) ? "comment" : "post",
 					action: "click",
 					noun: "confirm_hide_award",
-					goldPurchase: d(e)
+					goldPurchase: u(e)
 				}),
-				p = (e, t) => n => Object.assign(Object.assign({}, u(n, t)), {
-					source: Object(i.a)(t) ? "comment" : "post",
+				O = (e, t) => n => Object.assign(Object.assign({}, l(n, t)), {
+					source: Object(c.a)(t) ? "comment" : "post",
 					action: "click",
 					noun: "cancel_hide_award",
-					goldPurchase: d(e)
+					goldPurchase: u(e)
 				}),
-				O = e => (t, n) => s => Object.assign(Object.assign({}, u(s, n)), {
-					source: Object(i.a)(n) ? "comment" : "post",
+				g = e => (t, n) => s => Object.assign(Object.assign({}, l(s, n)), {
+					source: Object(c.a)(n) ? "comment" : "post",
 					action: "click",
 					noun: e,
-					goldPurchase: d(t)
+					goldPurchase: u(t)
 				}),
-				g = O("award_hovercard_report"),
-				j = O("cancel_award_hovercard_report"),
-				E = O("flag_award"),
-				h = O("cancel_flag_award"),
-				I = O("confirm_flag_award"),
-				S = O("report_community_award"),
-				T = O("cancel_report_community_award"),
-				y = O("confirm_report_community_award"),
-				A = (e, t, n) => s => Object.assign(Object.assign({}, u(s, n)), {
+				j = g("award_hovercard_report"),
+				E = g("cancel_award_hovercard_report"),
+				h = g("flag_award"),
+				I = g("cancel_flag_award"),
+				S = g("confirm_flag_award"),
+				T = g("report_community_award"),
+				y = g("cancel_report_community_award"),
+				A = g("confirm_report_community_award"),
+				D = (e, t, n) => s => Object.assign(Object.assign({}, l(s, n)), {
 					source: "give_gold",
 					action: "view",
 					noun: "page",
@@ -6433,83 +6435,83 @@
 						defaultAnonymous: t
 					}
 				}),
-				D = (e, t, n) => s => Object.assign(Object.assign({}, u(s, t)), {
+				v = (e, t, n) => s => Object.assign(Object.assign({}, l(s, t)), {
 					source: "give_gold",
 					action: "click",
 					noun: "award",
-					goldPurchase: d(e, n)
+					goldPurchase: u(e, n)
 				}),
-				v = e => t => Object.assign(Object.assign({}, u(t, e)), {
+				P = e => t => Object.assign(Object.assign({}, l(t, e)), {
 					source: "give_gold",
 					action: "view",
 					noun: "tooltip"
 				}),
-				R = (e, t) => n => Object.assign(Object.assign({}, u(n, t)), {
+				R = (e, t) => n => Object.assign(Object.assign({}, l(n, t)), {
 					source: "give_gold",
 					action: e,
 					noun: "anonymous"
 				}),
-				P = e => t => Object.assign(Object.assign({}, u(t, e)), {
+				C = e => t => Object.assign(Object.assign({}, l(t, e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "message_input"
 				}),
-				C = e => t => Object.assign(Object.assign({}, u(t, e)), {
+				w = e => t => Object.assign(Object.assign({}, l(t, e)), {
 					source: "give_gold",
 					action: "type",
 					noun: "message_input"
 				}),
-				w = e => t => Object.assign(Object.assign({}, u(t, e)), {
+				k = e => t => Object.assign(Object.assign({}, l(t, e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "learn_more"
 				}),
-				k = e => t => Object.assign(Object.assign({}, u(t, e)), {
+				L = e => t => Object.assign(Object.assign({}, l(t, e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "question"
 				}),
-				L = (e, t) => n => Object.assign(Object.assign({}, u(n, e)), {
+				N = (e, t) => n => Object.assign(Object.assign({}, l(n, e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "confirm",
 					goldPurchase: Object.assign({
-						contentType: Object(i.a)(e) ? "comment" : "post"
-					}, d(t))
+						contentType: Object(c.a)(e) ? "comment" : "post"
+					}, u(t))
 				}),
-				N = (e, t) => n => Object.assign(Object.assign({}, u(n, e)), {
+				x = (e, t) => n => Object.assign(Object.assign({}, l(n, e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "get_premium",
 					goldPurchase: Object.assign({
-						contentType: Object(i.a)(e) ? "comment" : "post"
-					}, d(t))
+						contentType: Object(c.a)(e) ? "comment" : "post"
+					}, u(t))
 				}),
-				x = e => t => Object.assign(Object.assign({}, u(t, e)), {
+				U = e => t => Object.assign(Object.assign({}, l(t, e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "add_coins"
 				}),
-				U = e => t => Object.assign(Object.assign({}, u(t, e)), {
+				M = e => t => Object.assign(Object.assign({}, l(t, e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "next"
 				}),
-				M = e => t => Object.assign(Object.assign({}, u(t, e)), {
+				G = e => t => Object.assign(Object.assign({}, l(t, e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "close"
 				}),
-				V = (e, t, n) => s => Object.assign(Object.assign({}, u(s, e)), {
+				V = (e, t, n) => s => Object.assign(Object.assign({}, l(s, e)), {
 					source: "give_gold",
 					action: "view",
 					noun: "success",
 					goldPurchase: Object.assign({
-						contentType: Object(i.a)(e) ? "comment" : "post",
+						contentType: Object(c.a)(e) ? "comment" : "post",
 						numberCoins: t
-					}, d(n))
+					}, u(n))
 				}),
-				G = e => {
+				F = e => {
 					let {
 						award: t,
 						awardeeKarmaEarned: n,
@@ -6517,19 +6519,19 @@
 						numberCoins: r,
 						thingId: o
 					} = e;
-					return e => Object.assign(Object.assign({}, u(e, o)), {
+					return e => Object.assign(Object.assign({}, l(e, o)), {
 						source: "give_gold",
 						action: "view",
 						noun: "karma_success",
 						goldPurchase: Object.assign({
-							contentType: Object(i.a)(o) ? "comment" : "post",
+							contentType: Object(c.a)(o) ? "comment" : "post",
 							awardeeKarmaEarned: n,
 							awarderKarmaEarned: s,
 							numberCoins: r
-						}, d(t))
+						}, u(t))
 					})
 				},
-				F = e => t => Object.assign(Object.assign({}, u(t)), {
+				B = e => t => Object.assign(Object.assign({}, l(t)), {
 					source: "give_gold",
 					action: "click",
 					noun: "filter",
@@ -6538,12 +6540,12 @@
 						filterName: e.content.markdown
 					}
 				}),
-				B = () => e => Object.assign(Object.assign({}, u(e)), {
+				W = () => e => Object.assign(Object.assign({}, l(e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				W = () => e => Object.assign(Object.assign({}, u(e)), {
+				H = () => e => Object.assign(Object.assign({}, l(e)), {
 					source: "give_gold",
 					action: "click",
 					noun: "previous_filters"
@@ -6816,9 +6818,9 @@
 			})), n.d(t, "t", (function() {
 				return v
 			})), n.d(t, "o", (function() {
-				return R
-			})), n.d(t, "n", (function() {
 				return P
+			})), n.d(t, "n", (function() {
+				return R
 			})), n.d(t, "y", (function() {
 				return C
 			})), n.d(t, "k", (function() {
@@ -6832,9 +6834,9 @@
 			})), n.d(t, "m", (function() {
 				return M
 			})), n.d(t, "h", (function() {
-				return V
-			})), n.d(t, "e", (function() {
 				return G
+			})), n.d(t, "e", (function() {
+				return V
 			})), n.d(t, "f", (function() {
 				return F
 			})), n.d(t, "b", (function() {
@@ -6956,7 +6958,7 @@
 						})
 					}))
 				},
-				R = (e, t) => {
+				P = (e, t) => {
 					t.forEach(t => {
 						const n = Object(o.f)(t.type);
 						n && Object(l.a)(Object.assign(Object.assign({}, m(e)), {
@@ -6965,7 +6967,7 @@
 						}))
 					})
 				},
-				P = (e, t, n) => {
+				R = (e, t, n) => {
 					Object(l.a)(Object.assign(Object.assign({}, m(e)), {
 						noun: "input",
 						postComposer: {
@@ -7046,12 +7048,12 @@
 						postDraft: i
 					}, U(e, s.id))
 				},
-				V = (e, t) => {
+				G = (e, t) => {
 					Object(l.a)(Object.assign(Object.assign({
 						noun: "draft_load"
 					}, m(e)), M(e, t)))
 				},
-				G = (e, t) => {
+				V = (e, t) => {
 					Object(l.a)(Object.assign(Object.assign({
 						noun: t.draftId ? "draft_update" : "draft_create"
 					}, m(e)), M(e, t)))
@@ -7347,7 +7349,7 @@
 			})), n.d(t, "g", (function() {
 				return v
 			})), n.d(t, "h", (function() {
-				return R
+				return P
 			})), n.d(t, "b", (function() {
 				return C
 			})), n.d(t, "a", (function() {
@@ -7361,7 +7363,7 @@
 			})), n.d(t, "u", (function() {
 				return M
 			})), n.d(t, "e", (function() {
-				return V
+				return G
 			})), n.d(t, "d", (function() {
 				return F
 			})), n.d(t, "s", (function() {
@@ -7480,11 +7482,11 @@
 								draftId: s
 							} = e.match.params, o = Object(r.a)(e.match.params);
 							if (!o) return;
-							P(t, o, s, n, c);
+							R(t, o, s, n, c);
 							break
 						}
 						case s.Bb.SUBREDDIT_WIKI:
-							Object(g.a)(G(n, c)(t));
+							Object(g.a)(V(n, c)(t));
 							break;
 						case s.Bb.COINS:
 							Object(g.a)(C(n, c)(t)), Object(g.a)(w()(t));
@@ -7682,7 +7684,7 @@
 						adblock: O.adblock(e)
 					}))
 				},
-				R = (e, t, n, s) => {
+				P = (e, t, n, s) => {
 					Object(g.a)(Object.assign(Object.assign({
 						source: "global",
 						action: "view",
@@ -7694,7 +7696,7 @@
 						adblock: O.adblock(e)
 					}))
 				},
-				P = (e, t, n, s, r) => {
+				R = (e, t, n, s, r) => {
 					const o = e.creations.api.page.pending[t],
 						i = !e.creations.api.page.error[t] && !o && !!n,
 						a = Object(p.h)(e, n);
@@ -7765,12 +7767,12 @@
 					action: "view",
 					noun: "screen"
 				}, O.defaults(e)),
-				V = () => e => Object.assign({
+				G = () => e => Object.assign({
 					action: "view",
 					source: "global",
 					noun: "screen"
 				}, O.defaults(e)),
-				G = (e, t) => n => Object.assign(Object.assign({
+				V = (e, t) => n => Object.assign(Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
@@ -7877,9 +7879,9 @@
 			})), n.d(t, "e", (function() {
 				return v
 			})), n.d(t, "j", (function() {
-				return R
-			})), n.d(t, "d", (function() {
 				return P
+			})), n.d(t, "d", (function() {
+				return R
 			})), n.d(t, "o", (function() {
 				return C
 			})), n.d(t, "n", (function() {
@@ -8103,8 +8105,8 @@
 						discoveryUnit: c ? a.discoveryUnit(c) : null
 					}
 				},
-				R = (e, t, n, s, r, o) => i => P(i, e, t, n, s, r, o),
-				P = (e, t, n, s, u, l, b) => {
+				P = (e, t, n, s, r, o) => i => R(i, e, t, n, s, r, o),
+				R = (e, t, n, s, u, l, b) => {
 					if (!s) {
 						s = Object(c.N)(e, {
 							postId: l
@@ -8779,4 +8781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.2e5c3ec95a51859c4b3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.9d83ad9be945e96e875f.js.map

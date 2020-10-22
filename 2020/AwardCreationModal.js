@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.12039200eabd22d4a8da.js
-// Retrieved at 10/19/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.9f3120d2b8cff78af37e.js
+// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -399,7 +399,7 @@
 					}, this.handleImageRemoval = () => {
 						this.cancelExistingWebsockets(), this.setState({
 							imageUrl: void 0
-						}), this.props.sendEvent(Object(h.c)("remove", "image"))
+						}), this.props.sendEvent(Object(h.d)("remove", "image"))
 					}, this.handleImageUploadError = e => {
 						this.cancelExistingWebsockets(), this.setState({
 							imageError: e,
@@ -410,14 +410,14 @@
 							nameValue: e.target.value
 						})
 					}, this.handleNameFocus = e => {
-						this.props.sendEvent(Object(h.c)("click", "name_input"))
+						this.props.sendEvent(Object(h.d)("click", "name_input"))
 					}, this.handleNameBlur = e => {
-						this.props.sendEvent(Object(h.c)("type", "name_input"))
+						this.props.sendEvent(Object(h.d)("type", "name_input"))
 					}, this.handleModOnlyChange = () => {
 						const e = !this.state.isModOnly;
 						this.setState({
 							isModOnly: e
-						}), this.props.sendEvent(Object(h.b)(e ? "check" : "uncheck", "mod_award", {
+						}), this.props.sendEvent(Object(h.c)(e ? "check" : "uncheck", "mod_award", {
 							defaultOption: e ? I.a.PREMIUM_1_MONTH.priceInCoins : this.defaultCostOptionValue
 						}))
 					}, this.handleCostChange = e => {
@@ -431,7 +431,7 @@
 							isTemporary: e
 						})
 					}, this.onCostInputOpen = () => {
-						this.props.sendEvent(Object(h.c)("click", "coin_cost_input"))
+						this.props.sendEvent(Object(h.d)("click", "coin_cost_input"))
 					}, this.getCostDropdownMenuItems = () => {
 						return Object(y.k)(this.props.awards).map(e => ({
 							displayText: p.fbt._("{Award cost} Coins", [p.fbt._param("Award cost", e.toLocaleString())], {
@@ -440,12 +440,12 @@
 							value: e
 						}))
 					}, this.handlePackageDropdownOpen = () => {
-						this.props.sendEvent(Object(h.c)("open", "mod_award_months"))
+						this.props.sendEvent(Object(h.d)("open", "mod_award_months"))
 					}, this.handlePremiumAmountChange = e => {
 						const t = e.value;
 						this.setState({
 							selectedPackage: t
-						}), this.props.sendEvent(Object(h.b)("click", "mod_award_months", {
+						}), this.props.sendEvent(Object(h.c)("click", "mod_award_months", {
 							numberMonths: t.monthsOfPremium,
 							numberCoins: t.priceInCoins
 						}))
@@ -491,7 +491,7 @@
 							}))
 						}
 						const S = T.award;
-						S.awardType = S.awardType.toUpperCase(), s(S), this.props.sendEvent(Object(h.a)(this.state.imageUrl, this.imageDraft, S))
+						S.awardType = S.awardType.toUpperCase(), s(S), this.props.sendEvent(Object(h.b)(this.state.imageUrl, this.imageDraft, S))
 					}, this.onStartDateChange = e => {
 						this.setState({
 							startDate: e
@@ -538,13 +538,13 @@
 					document.removeEventListener("keydown", this.handleEscapeKey), this.cancelExistingWebsockets()
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(h.b)("view", "page", {
+					this.props.sendEvent(Object(h.c)("view", "page", {
 						defaultOption: this.state.isModOnly ? I.a.PREMIUM_1_MONTH.priceInCoins : this.props.defaultCoinPrice ? this.props.defaultCoinPrice : this.defaultCostOptionValue
 					})), document.addEventListener("keydown", this.handleEscapeKey)
 				}
 				sendUploadImageEvent(e, t, a, n) {
 					const s = (new Date).getTime();
-					this.props.sendEvent(Object(h.e)(e, t, s - a, n))
+					this.props.sendEvent(Object(h.f)(e, t, s - a, n))
 				}
 				cancelExistingWebsockets() {
 					const {
@@ -864,7 +864,7 @@
 					}, this.handleImageRemoval = () => {
 						this.cancelExistingWebsockets(), this.setState({
 							imageUrl: void 0
-						}), this.props.sendEvent(Object(h.c)("remove", "image"))
+						}), this.props.sendEvent(Object(h.d)("remove", "image"))
 					}, this.handleImageUploadError = e => {
 						this.cancelExistingWebsockets(), this.setState({
 							imageError: e,
@@ -907,7 +907,7 @@
 					}), this.handleGiverCoinRewardChange = e => this.setState({
 						giverCoinReward: e
 					}), this.onCostInputOpen = () => {
-						this.props.sendEvent(Object(h.c)("click", "coin_cost_input"))
+						this.props.sendEvent(Object(h.d)("click", "coin_cost_input"))
 					}, this.getIconFormatDropdownMenuItems = () => Object.keys(y.c).map(e => ({
 						displayText: e,
 						value: y.c[e]
@@ -990,7 +990,7 @@
 							}))
 						}
 						const M = j.award;
-						M.awardType = M.awardType.toUpperCase(), n(M), this.props.sendEvent(Object(h.a)(this.state.imageUrl, this.imageDraft, M))
+						M.awardType = M.awardType.toUpperCase(), n(M), this.props.sendEvent(Object(h.b)(this.state.imageUrl, this.imageDraft, M))
 					}, this.onStartDateChange = e => {
 						this.setState({
 							startDate: e
@@ -1050,7 +1050,7 @@
 				}
 				sendUploadImageEvent(e, t, a, n) {
 					const s = (new Date).getTime();
-					this.props.sendEvent(Object(h.e)(e, t, s - a, n))
+					this.props.sendEvent(Object(h.f)(e, t, s - a, n))
 				}
 				cancelExistingWebsockets() {
 					const {
@@ -1483,7 +1483,7 @@
 							sendEvent: t,
 							toggleModal: a
 						} = this.props;
-						e || (t(Object(h.c)("click", "cancel")), a())
+						e || (t(Object(h.d)("click", "cancel")), a())
 					}
 				}
 				render() {
@@ -1960,4 +1960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.12039200eabd22d4a8da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.9f3120d2b8cff78af37e.js.map

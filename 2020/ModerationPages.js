@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2480ba45b2383ff6ebe1.js
-// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6b4cec7b2c89b1a7ba02.js
+// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -6672,7 +6672,7 @@
 						}),
 						onClick: () => (e => {
 							const n = e.isEnabled ? d.g : d.h,
-								a = e.isEnabled ? h.g : h.h;
+								a = e.isEnabled ? h.h : h.i;
 							i(a(e, s)), u && o(n(t, e))
 						})(e),
 						disabled: !u
@@ -6720,7 +6720,7 @@
 			class re extends a.a.Component {
 				constructor(e) {
 					super(e), this.openAddAwardModal = (e, t) => {
-						Object(b.d)(b.a.AwardCreationFlow), this.props.sendEvent(Object(h.d)()), this.setState({
+						Object(b.d)(b.a.AwardCreationFlow), this.props.sendEvent(Object(h.e)()), this.setState({
 							selectedCoinPrice: e,
 							selectedModOnly: t
 						}, this.props.toggleAddAwardModal)
@@ -6736,7 +6736,7 @@
 						} = this.props;
 						if (this.props.toggleConfirmModal(), e) {
 							const s = t.filter(t => t.id === e)[0];
-							s && this.props.sendEvent(Object(h.f)(s)), this.props.deleteAward(e), Object(b.b)(b.a.AwardDeletionFlow)
+							s && this.props.sendEvent(Object(h.g)(s)), this.props.deleteAward(e), Object(b.b)(b.a.AwardDeletionFlow)
 						}
 					}, this.renderAwardSlotRow = e => {
 						const {
@@ -26992,122 +26992,6 @@
 					}
 				}
 		},
-		"./src/reddit/helpers/trackers/communityAwards.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "d", (function() {
-				return d
-			})), s.d(t, "f", (function() {
-				return c
-			})), s.d(t, "b", (function() {
-				return l
-			})), s.d(t, "e", (function() {
-				return m
-			})), s.d(t, "a", (function() {
-				return u
-			})), s.d(t, "c", (function() {
-				return p
-			})), s.d(t, "g", (function() {
-				return h
-			})), s.d(t, "h", (function() {
-				return g
-			}));
-			var n = s("./src/reddit/models/Gold/Award.ts"),
-				o = s("./src/reddit/selectors/telemetry.ts"),
-				a = s("./src/reddit/helpers/correlationIdTracker.ts");
-			const r = e => Object.assign(Object.assign({}, o.defaults(e)), {
-					screen: o.screen(e),
-					subreddit: o.subreddit(e),
-					userSubreddit: o.userSubreddit(e)
-				}),
-				i = e => ({
-					awardId: e.id,
-					awardName: e.name,
-					isModAward: e.awardType === n.f.Moderator,
-					numberCoins: e.coinPrice,
-					numberMonths: Math.floor((e.daysOfPremium || 0) / 30),
-					numberCoinsToRecipient: e.coinReward || 0,
-					numberCoinsToCommunity: e.subredditCoinReward || 0
-				}),
-				d = () => e => Object.assign(Object.assign({}, r(e)), {
-					source: "awards",
-					action: "click",
-					correlationId: Object(a.c)(a.a.AwardCreationFlow),
-					noun: "create"
-				}),
-				c = e => t => Object.assign(Object.assign({}, r(t)), {
-					source: "awards",
-					action: "click",
-					correlationId: Object(a.c)(a.a.AwardDeletionFlow),
-					noun: "delete",
-					goldPurchase: e ? i(e) : null,
-					media: e ? {
-						url: e.icon.url
-					} : null
-				}),
-				l = (e, t, s) => n => Object.assign(Object.assign({}, r(n)), {
-					source: "create_award",
-					action: e,
-					correlationId: Object(a.c)(a.a.AwardCreationFlow),
-					noun: t,
-					goldPurchase: s
-				}),
-				m = (e, t, s, n) => o => Object.assign(Object.assign({}, r(o)), {
-					source: "create_award",
-					action: "upload",
-					correlationId: Object(a.c)(a.a.AwardCreationFlow),
-					noun: "image",
-					actionInfo: n ? {
-						reason: n
-					} : {
-						success: !0
-					},
-					media: t ? {
-						fileName: t.file.name,
-						height: t.height,
-						id: t.id,
-						mimetype: t.file.type,
-						size: t.file.size,
-						type: "image",
-						uploadDuration: s,
-						url: e,
-						width: t.width
-					} : null
-				}),
-				u = (e, t, s) => n => Object.assign(Object.assign({}, r(n)), {
-					source: "create_award",
-					action: "click",
-					correlationId: Object(a.c)(a.a.AwardCreationFlow),
-					noun: "create",
-					media: t && e ? {
-						fileName: t.file.name,
-						height: t.height,
-						id: t.id,
-						mimetype: t.file.type,
-						size: t.file.size,
-						type: "image",
-						url: e,
-						width: t.width
-					} : null,
-					goldPurchase: s ? i(s) : null
-				}),
-				p = (e, t, s) => n => Object.assign(Object.assign({}, r(n)), {
-					source: "create_award",
-					action: e,
-					correlationId: Object(a.c)(a.a.AwardCreationFlow),
-					noun: t,
-					goldPurchase: s ? i(s) : null
-				}),
-				b = (e, t, s) => n => Object.assign(Object.assign({}, r(n)), {
-					source: "awards",
-					action: "click",
-					noun: s,
-					goldPurchase: i(e),
-					profile: o.profileById(n, t),
-					subreddit: o.subredditById(n, t)
-				}),
-				h = (e, t) => b(e, t, "disable_in_community"),
-				g = (e, t) => b(e, t, "enable_in_community")
-		},
 		"./src/reddit/helpers/trackers/communitySettings.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
@@ -31093,4 +30977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2480ba45b2383ff6ebe1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6b4cec7b2c89b1a7ba02.js.map

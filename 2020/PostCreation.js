@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d537b27f69ab0450533e.js
-// Retrieved at 10/22/2020, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b9ab14540de20f941000.js
+// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -728,7 +728,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "6c12188-production"
+					SENTRY_RELEASE_VERSION: "45f5914-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -25006,6 +25006,127 @@
 					return t || n
 				}
 		},
+		"./src/reddit/helpers/trackers/communityAwards.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "e", (function() {
+				return l
+			})), n.d(t, "g", (function() {
+				return d
+			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "f", (function() {
+				return p
+			})), n.d(t, "b", (function() {
+				return m
+			})), n.d(t, "d", (function() {
+				return h
+			})), n.d(t, "h", (function() {
+				return g
+			})), n.d(t, "i", (function() {
+				return f
+			}));
+			var s = n("./src/reddit/models/Gold/Award.ts"),
+				o = n("./src/reddit/selectors/telemetry.ts"),
+				r = n("./src/reddit/helpers/correlationIdTracker.ts"),
+				i = n("./src/reddit/helpers/trackers/gild.ts");
+			const a = e => Object.assign(Object.assign({}, o.defaults(e)), {
+					screen: o.screen(e),
+					subreddit: o.subreddit(e),
+					userSubreddit: o.userSubreddit(e)
+				}),
+				c = e => ({
+					awardId: e.id,
+					awardName: e.name,
+					isModAward: e.awardType === s.f.Moderator,
+					isTemporatyAward: !!e.endsAt,
+					numberCoins: e.coinPrice,
+					numberMonths: Math.floor((e.daysOfPremium || 0) / 30),
+					numberCoinsToRecipient: e.coinReward || 0,
+					numberCoinsToCommunity: e.subredditCoinReward || 0,
+					type: Object(i.getAwardTypeFromAward)(e)
+				}),
+				l = () => e => Object.assign(Object.assign({}, a(e)), {
+					source: "awards",
+					action: "click",
+					correlationId: Object(r.c)(r.a.AwardCreationFlow),
+					noun: "create"
+				}),
+				d = e => t => Object.assign(Object.assign({}, a(t)), {
+					source: "awards",
+					action: "click",
+					correlationId: Object(r.c)(r.a.AwardDeletionFlow),
+					noun: "delete",
+					goldPurchase: e ? c(e) : null,
+					media: e ? {
+						url: e.icon.url
+					} : null
+				}),
+				u = (e, t, n) => s => Object.assign(Object.assign({}, a(s)), {
+					source: "create_award",
+					action: e,
+					correlationId: Object(r.c)(r.a.AwardCreationFlow),
+					noun: t,
+					goldPurchase: n
+				}),
+				p = (e, t, n, s) => o => Object.assign(Object.assign({}, a(o)), {
+					source: "create_award",
+					action: "upload",
+					correlationId: Object(r.c)(r.a.AwardCreationFlow),
+					noun: "image",
+					actionInfo: s ? {
+						reason: s
+					} : {
+						success: !0
+					},
+					media: t ? {
+						fileName: t.file.name,
+						height: t.height,
+						id: t.id,
+						mimetype: t.file.type,
+						size: t.file.size,
+						type: "image",
+						uploadDuration: n,
+						url: e,
+						width: t.width
+					} : null
+				}),
+				m = (e, t, n) => s => Object.assign(Object.assign({}, a(s)), {
+					source: "create_award",
+					action: "click",
+					correlationId: Object(r.c)(r.a.AwardCreationFlow),
+					noun: "create",
+					media: t && e ? {
+						fileName: t.file.name,
+						height: t.height,
+						id: t.id,
+						mimetype: t.file.type,
+						size: t.file.size,
+						type: "image",
+						url: e,
+						width: t.width
+					} : null,
+					goldPurchase: n ? c(n) : null
+				}),
+				h = (e, t, n) => s => Object.assign(Object.assign({}, a(s)), {
+					source: "create_award",
+					action: e,
+					correlationId: Object(r.c)(r.a.AwardCreationFlow),
+					noun: t,
+					goldPurchase: n ? c(n) : null
+				}),
+				b = (e, t, n) => s => Object.assign(Object.assign({}, a(s)), {
+					source: "awards",
+					action: "click",
+					noun: n,
+					goldPurchase: c(e),
+					profile: o.profileById(s, t),
+					subreddit: o.subredditById(s, t)
+				}),
+				g = (e, t) => b(e, t, "disable_in_community"),
+				f = (e, t) => b(e, t, "enable_in_community")
+		},
 		"./src/reddit/helpers/trackers/gallery.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
@@ -25053,25 +25174,25 @@
 		"./src/reddit/helpers/trackers/goldPayment.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "h", (function() {
-				return b
-			})), n.d(t, "b", (function() {
 				return g
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "b", (function() {
 				return f
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return x
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return y
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return v
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "c", (function() {
 				return C
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "a", (function() {
 				return E
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "g", (function() {
 				return O
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return j
+			})), n.d(t, "j", (function() {
+				return w
 			}));
 			var s = n("./src/lib/constants/index.ts"),
 				o = n("./src/reddit/models/Gold/ProductOffer.ts"),
@@ -25084,40 +25205,37 @@
 				u = n("./src/telemetry/models/Payment.ts"),
 				p = n("./src/reddit/helpers/trackers/gild.ts"),
 				m = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				h = n("./src/reddit/helpers/isComment.ts");
-			const b = (e, t) => {
+				h = n("./src/reddit/helpers/isComment.ts"),
+				b = n("./src/reddit/helpers/trackers/communityAwards.ts");
+			const g = (e, t) => {
 					const {
 						thingId: n,
 						packageId: c
-					} = t, u = !!n, b = r.b(e), g = b ? Object(p.getAwardTypeFromAward)(b) : null, f = u ? g : a.n(e) ? d.Premium : d.Coins, x = n ? Object(h.a)(n) ? "comment" : "post" : void 0, y = c || a.r(e), v = [...Object(i.b)(e), ...Object(i.d)(e)].filter(e => e.mobileId === y)[0], C = Object(o.b)(v, u), E = v ? Math.round(1e4 * (v.baselinePennies - v.pennies) / v.baselinePennies) / 100 : 0, O = v ? Math.round(1e4 * (v.coins - v.baselineCoins) / v.coins) / 100 : 0, j = v ? v.baselinePennies !== v.pennies ? "".concat(E, "_percent_price") : v.baselineCoins !== v.coins ? "".concat(O, "_percent_bonus") : void 0 : void 0, w = f === d.Premium ? s.ob : v ? v.pennies : void 0;
+					} = t, u = !!n, g = r.b(e), f = g ? Object(p.getAwardTypeFromAward)(g) : null, x = u ? f : a.n(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, y = n ? Object(h.a)(n) ? "comment" : "post" : void 0, v = c || a.r(e), C = [...Object(i.b)(e), ...Object(i.d)(e)].filter(e => e.mobileId === v)[0], E = Object(o.b)(C, u), O = C ? Math.round(1e4 * (C.baselinePennies - C.pennies) / C.baselinePennies) / 100 : 0, j = C ? Math.round(1e4 * (C.coins - C.baselineCoins) / C.coins) / 100 : 0, w = C ? C.baselinePennies !== C.pennies ? "".concat(O, "_percent_price") : C.baselineCoins !== C.coins ? "".concat(j, "_percent_bonus") : void 0 : void 0, _ = x === d.GoldPurchaseType.Premium ? s.ob : C ? C.pennies : void 0;
 					return Object.assign(Object.assign({}, l.defaults(e)), {
 						comment: n ? l.comment(e, n) : null,
 						correlationId: a.p(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? l.post(e, n) : null,
 						screen: l.screen(e),
 						subreddit: n ? l.subreddit(e) : null,
-						goldPurchase: Object.assign(Object.assign({}, b ? {
-							awardId: b.id,
-							awardName: b.name,
-							numberCoinsToRecipient: b.coinReward
-						} : null), {
-							type: f,
+						goldPurchase: Object.assign(Object.assign({}, g ? Object(b.a)(g) : null), {
+							type: x,
 							gildedContent: u,
-							contentType: x,
-							numberCoins: v ? v.coins : void 0,
-							offerContext: C,
-							offerType: j
+							contentType: y,
+							numberCoins: C ? C.coins : void 0,
+							offerContext: E,
+							offerType: w
 						}),
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: w
+							amountInSmallestDenom: _
 						},
 						purchase: {
-							priceMicros: w
+							priceMicros: _
 						}
 					})
 				},
-				g = (e, t) => n => Object.assign(Object.assign({}, b(n, {
+				f = (e, t) => n => Object.assign(Object.assign({}, g(n, {
 					packageId: t,
 					thingId: e
 				})), {
@@ -25125,50 +25243,50 @@
 					action: "click",
 					noun: "close"
 				}),
-				f = e => t => Object.assign(Object.assign({}, b(t, {
+				x = e => t => Object.assign(Object.assign({}, g(t, {
 					thingId: e
 				})), {
 					source: "gold_payment",
 					action: "click",
 					noun: "paypal"
 				}),
-				x = e => t => Object.assign(Object.assign({}, b(t, {
+				y = e => t => Object.assign(Object.assign({}, g(t, {
 					thingId: e
 				})), {
 					source: "gold_payment",
 					action: "click",
 					noun: "continue_paypal"
 				}),
-				y = e => t => Object.assign(Object.assign({}, b(t, {
+				v = e => t => Object.assign(Object.assign({}, g(t, {
 					thingId: e
 				})), {
 					source: "gold_payment",
 					action: "click",
 					noun: "credit_card"
 				}),
-				v = e => t => Object.assign(Object.assign({}, b(t, {
+				C = e => t => Object.assign(Object.assign({}, g(t, {
 					thingId: e
 				})), {
 					source: "gold_payment",
 					action: "click",
 					noun: "complete_credit_card"
 				}),
-				C = e => t => Object.assign(Object.assign({}, b(t, {
+				E = e => t => Object.assign(Object.assign({}, g(t, {
 					packageId: e
 				})), {
 					source: "gold_payment",
 					action: "click",
 					noun: "confirm"
 				}),
-				E = e => t => Object.assign(Object.assign({}, b(t, {
+				O = e => t => Object.assign(Object.assign({}, g(t, {
 					thingId: e
 				})), {
 					source: "gold_payment",
 					action: "display",
 					noun: "error"
 				}),
-				O = (e, t) => n => {
-					const s = b(n, {
+				j = (e, t) => n => {
+					const s = g(n, {
 						packageId: t,
 						thingId: e
 					});
@@ -25184,8 +25302,8 @@
 						})
 					})
 				},
-				j = e => t => {
-					const n = b(t, {
+				w = e => t => {
+					const n = g(t, {
 						thingId: e
 					});
 					return Object.assign(Object.assign({}, n), {
@@ -33867,4 +33985,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d537b27f69ab0450533e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b9ab14540de20f941000.js.map

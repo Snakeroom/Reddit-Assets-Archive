@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.646368c48bf54039a8df.js
-// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.8d1dfb2fafdbc1809321.js
+// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -2799,8 +2799,10 @@
 						})), t.powerupsCount && (e(Object(a.g)(o.a.ECON_POWERUPS_PURCHASE)), e(Object(u.e)({
 							kind: l.b.SuccessCommunityGreen,
 							duration: u.a,
-							text: r.fbt._("Your free Powerup is applied.", null, {
-								hk: "3WY7KP"
+							text: t.powerupsCount > 0 ? r.fbt._("Your free Powerup has been applied.", null, {
+								hk: "1qt70H"
+							}) : r.fbt._("Your free Powerup subscription has been canceled.", null, {
+								hk: "15U3sb"
 							})
 						})))
 					})({
@@ -11189,4 +11191,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.646368c48bf54039a8df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.8d1dfb2fafdbc1809321.js.map
