@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b87ecaf1859ea593cac8.js
-// Retrieved at 10/22/2020, 5:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8cabb67445d01dd7e9b1.js
+// Retrieved at 10/22/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("116382"),
+				buildNumber: r("116387"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603401451"),
+				})("1603402454"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3431,14 +3431,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("7360795-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("9f380b6-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7360795-production",
+						release: "9f380b6-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3891,7 +3891,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "7360795-production",
+							releaseClient: "9f380b6-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -9298,137 +9298,140 @@
 		"./src/reddit/helpers/chooseVariant/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return m
+				return g
 			})), i.d(t, "b", (function() {
-				return f
-			})), i.d(t, "c", (function() {
 				return b
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "c", (function() {
 				return w
+			})), i.d(t, "d", (function() {
+				return y
 			}));
-			var n = i("./node_modules/reselect/es/index.js"),
-				r = i("./src/reddit/helpers/featureThrottling/store/index.ts"),
-				s = i("./src/reddit/selectors/experiments/index.ts"),
-				o = i("./src/reddit/selectors/platform.ts"),
-				d = i("./src/reddit/selectors/telemetry.ts"),
-				l = i("./src/telemetry/index.ts"),
-				a = i("./src/telemetry/models/Event.ts");
-			const u = (e, t, i, n, r) => {
-					Object(l.a)(Object.assign({
-						action: a.c.Expose,
+			var n = i("./node_modules/reselect/es/index.js");
+			const r = {},
+				s = {};
+			const o = () => r;
+			var d = i("./src/reddit/helpers/featureThrottling/store/index.ts"),
+				l = i("./src/reddit/selectors/experiments/index.ts"),
+				a = i("./src/reddit/selectors/platform.ts"),
+				u = i("./src/reddit/selectors/telemetry.ts"),
+				c = i("./src/telemetry/index.ts"),
+				_ = i("./src/telemetry/models/Event.ts");
+			const m = (e, t, i, n, r) => {
+					Object(c.a)(Object.assign({
+						action: _.c.Expose,
 						actionInfo: void 0,
 						app: e,
 						experiment: n,
-						noun: a.d.UserId,
+						noun: _.d.UserId,
 						referrer: void 0,
 						request: i,
 						session: void 0,
-						source: a.e.Experiment,
+						source: _.e.Experiment,
 						user: t
 					}, r))
 				},
-				c = e => Object(l.a)(e),
-				_ = (e, t) => {
+				p = e => Object(c.a)(e),
+				h = (e, t) => {
 					if (!t.experimentEligibilitySelector(e)) return !1;
-					if (t.isThrottled && r.a.isFeatureThrottled(t.experimentName)) return !1;
+					if (t.isThrottled && d.a.isFeatureThrottled(t.experimentName)) return !1;
 					if (t.throttledVariants) {
 						const i = ((e, t) => {
-								const i = Object(s.c)(e, t),
-									n = Object(s.b)(e, t);
+								const i = Object(l.c)(e, t),
+									n = Object(l.b)(e, t);
 								return void 0 !== n ? n : i && i.name || void 0
 							})(e, t),
 							n = i && t.throttledVariants[i];
-						if (n && r.a.isFeatureThrottled(n)) return !1
+						if (n && d.a.isFeatureThrottled(n)) return !1
 					}
 					return !0
 				},
-				m = () => !0,
-				p = {},
-				h = {},
-				g = [],
-				f = Object(n.a)(s.c, s.b, _, (e, t) => t.expEventOverride, (e, t) => t.experimentName, s.d, (e, t) => {
-					const i = Object.assign(Object.assign({}, d.request(e)), {
-							canonical_url: Object(s.d)(e) || void 0
+				g = () => !0,
+				f = [],
+				b = Object(n.a)(l.c, l.b, h, (e, t) => t.expEventOverride, (e, t) => t.experimentName, l.d, (e, t) => {
+					const i = Object.assign(Object.assign({}, u.request(e)), {
+							canonical_url: Object(l.d)(e) || void 0
 						}),
-						n = Object(s.b)(e, t),
+						n = Object(l.b)(e, t),
 						r = void 0 !== n,
-						l = Object(s.c)(e, t);
-					let u;
-					r ? u = {
+						s = Object(l.c)(e, t);
+					let o;
+					r ? o = {
 						id: -1,
 						isOverride: !0,
 						name: t.experimentName,
 						variant: n,
 						version: "-1"
-					} : l && (u = Object.assign(Object.assign({}, l), {
+					} : s && (o = Object.assign(Object.assign({}, s), {
 						isOverride: !1
 					}));
-					const c = Object(o.o)(e),
-						_ = c ? d.post(e, c) : void 0;
+					const d = Object(a.o)(e),
+						c = d ? u.post(e, d) : void 0;
 					return {
-						source: a.e.Experiment,
-						action: a.c.Expose,
-						noun: a.d.CanonicalUrl,
+						source: _.e.Experiment,
+						action: _.c.Expose,
+						noun: _.d.CanonicalUrl,
 						actionInfo: void 0,
-						app: d.app(e),
-						experiment: u,
-						post: _,
+						app: u.app(e),
+						experiment: o,
+						post: c,
 						request: i,
 						referrer: void 0,
 						session: void 0,
-						subreddit: d.subreddit(e),
-						user: d.user(e)
+						subreddit: u.subreddit(e),
+						user: u.user(e)
 					}
-				}, (e, t, i, n, r, s, o) => {
-					if (!i || !s) return;
-					const d = h[s] || {};
-					if (!e) return t && d[r] !== t && !1 !== n && (c(o), d[r] = t, h[s] = d), t;
-					const l = e.name,
-						a = void 0 !== t ? t : e.variant;
-					if (a) {
-						d[l] === a || !1 === n || (c(o), d[r] = a, h[s] = d)
+				}, (e, t, i, n, r, o, d) => {
+					if (!i || !o) return;
+					const l = (() => s)();
+					let a = l[o];
+					if (a || (a = {}, l[o] = a), !e) return t && a[r] !== t && !1 !== n && (p(d), a[r] = t), t;
+					const u = e.name,
+						c = void 0 !== t ? t : e.variant;
+					if (c) {
+						a[u] === c || !1 === n || (p(d), a[r] = c)
 					}
-					return a
+					return c
 				}),
-				b = Object(n.a)(s.c, s.b, e => d.app(e), e => d.user(e), e => d.request(e), (e, t) => t.expEventOverride, (e, t) => t.customPayloadMaker && t.customPayloadMaker(e), _, (e, t) => t.experimentName, (function(e, t, i, n, r, s) {
-					let o = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : {},
-						d = arguments.length > 7 ? arguments[7] : void 0,
-						l = arguments.length > 8 ? arguments[8] : void 0;
-					if (!d) return;
-					if (!e) return t && !1 !== s && p[l] !== t && !g.includes(l) && (u(i, n, r, {
+				w = Object(n.a)(l.c, l.b, e => u.app(e), e => u.user(e), e => u.request(e), (e, t) => t.expEventOverride, (e, t) => t.customPayloadMaker && t.customPayloadMaker(e), h, (e, t) => t.experimentName, (function(e, t, i, n, r, s) {
+					let d = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : {},
+						l = arguments.length > 7 ? arguments[7] : void 0,
+						a = arguments.length > 8 ? arguments[8] : void 0;
+					if (!l) return;
+					const u = o();
+					if (!e) return t && !1 !== s && u[a] !== t && !f.includes(a) && (m(i, n, r, {
 						id: -1,
 						isOverride: !0,
-						name: l,
+						name: a,
 						variant: t,
 						version: "-1"
-					}, o), p[l] = t), t;
-					const a = e.name,
+					}, d), u[a] = t), t;
+					const c = e.name,
 						{
-							id: c
+							id: _
 						} = e,
-						_ = void 0 !== t,
-						m = _ ? t : e.variant;
-					if (m) {
-						const t = -1 === c,
-							d = p[a] === m;
-						t || d || !1 === s || g.includes(l) || (u(i, n, r, Object.assign(Object.assign({}, e), {
-							isOverride: _,
-							variant: m
-						}), o), p[a] = m)
+						p = void 0 !== t,
+						h = p ? t : e.variant;
+					if (h) {
+						const t = -1 === _,
+							o = u[c] === h;
+						t || o || !1 === s || f.includes(a) || (m(i, n, r, Object.assign(Object.assign({}, e), {
+							isOverride: p,
+							variant: h
+						}), d), u[c] = h)
 					}
-					return _ ? t : m
+					return p ? t : h
 				})),
-				w = (e, t) => {
-					const i = d.app(e),
-						n = d.user(e),
-						r = d.request(e),
-						o = Object(s.c)(e, t),
-						l = Object(s.b)(e, t),
-						a = void 0 !== l;
-					if (o) {
-						const e = a ? l : o.variant;
-						e && u(i, n, r, Object.assign(Object.assign({}, o), {
-							isOverride: a,
+				y = (e, t) => {
+					const i = u.app(e),
+						n = u.user(e),
+						r = u.request(e),
+						s = Object(l.c)(e, t),
+						o = Object(l.b)(e, t),
+						d = void 0 !== o;
+					if (s) {
+						const e = d ? o : s.variant;
+						e && m(i, n, r, Object.assign(Object.assign({}, s), {
+							isOverride: d,
 							variant: e
 						}), {})
 					}
@@ -25692,4 +25695,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b87ecaf1859ea593cac8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8cabb67445d01dd7e9b1.js.map
