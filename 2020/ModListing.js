@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.19a49a7ab2709ea4174b.js
-// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.c430b6e8201240e04c30.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -583,12 +583,12 @@
 					action: "click",
 					noun: "hide_subreddit"
 				}),
-				R = () => e => ({
+				G = () => e => ({
 					source: "r_mod",
 					action: "click",
 					noun: "unhide_subreddit"
 				}),
-				G = e => t => ({
+				R = e => t => ({
 					source: "r_mod",
 					action: "click",
 					noun: e ? "unfiltered_subreddits" : "filtered_subreddits"
@@ -680,7 +680,7 @@
 			class ae extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onClickUnhideSubreddit = e => {
-						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(R()), this.props.unhide(this.props.subredditName))
+						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(G()), this.props.unhide(this.props.subredditName))
 					}
 				}
 				render() {
@@ -739,7 +739,7 @@
 			class _e extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleFiltered = () => {
-						this.props.sendEvent(G(this.props.filtered)), this.props.toggleFiltered()
+						this.props.sendEvent(R(this.props.filtered)), this.props.toggleFiltered()
 					}
 				}
 				render() {
@@ -868,15 +868,15 @@
 						experimentEligibilitySelector: i.I,
 						experimentName: r.ib
 					});
-					return !(!t || Object(r.Rc)(t))
+					return !(!t || Object(r.Sc)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i.I,
 						experimentName: r.ib
-					}) === r.nb.ListingEnabled
+					}) === r.ob.ListingEnabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.19a49a7ab2709ea4174b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c430b6e8201240e04c30.js.map

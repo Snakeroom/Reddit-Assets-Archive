@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.09e62507ba872690492b.js
-// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.532fb67f3d4e6051b53b.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -77,7 +77,7 @@
 			}
 		},
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"10d2b4634bba"}')
+			e.exports = JSON.parse('{"id":"5931b21efba3"}')
 		},
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
 			"use strict";
@@ -3407,7 +3407,6 @@
 				editCommentForm: "JchsqHyN3thfSnN8dUM3",
 				AuthorHoverDiv: "ZvAy-PJfJmB8pzQxpz1sS",
 				authorHoverDiv: "ZvAy-PJfJmB8pzQxpz1sS",
-				userIconWrapper: "Y7H3lsQfOvcg2ONtTUihu",
 				UserIcon: "_13ScjOmi6dGdJw0JAonQEr",
 				userIcon: "_13ScjOmi6dGdJw0JAonQEr",
 				topSupporterIcon: "PjnQ0fgBT0oSZ9nR8HeaJ",
@@ -4624,8 +4623,6 @@
 					}, a.a.createElement(Ft.a, {
 						className: qt.a.UserIconContainer,
 						to: "/user/".concat(n.author, "/")
-					}, a.a.createElement("div", {
-						className: qt.a.userIconWrapper
 					}, ae ? a.a.createElement(Ot.a, {
 						className: qt.a.UserIcon,
 						iconUrl: n.profileImage,
@@ -4634,7 +4631,7 @@
 						userName: n.author
 					}) : a.a.createElement("div", {
 						className: qt.a.UserIcon
-					})), w && a.a.createElement(kt.a, {
+					}), w && a.a.createElement(kt.a, {
 						onClick: e => {
 							q(Object(M.e)("comment")), D(), e.stopPropagation(), e.preventDefault()
 						},
@@ -5618,7 +5615,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("Settings~reddit-components-ProfileIdCard"), s.e("reddit-components-ProfileIdCard")]).then(s.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
+					importAsync: () => Promise.all([s.e("AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard"), s.e("reddit-components-ProfileIdCard")]).then(s.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -7517,7 +7514,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => Promise.all([s.e("IdCard~SubredditWiki"), s.e("IdCard")]).then(s.bind(null, "./src/reddit/components/IdCard/index.tsx")),
+				importAsync: () => s.e("IdCard").then(s.bind(null, "./src/reddit/components/IdCard/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -11855,7 +11852,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.Rc)(e) ? Object(I.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.Sc)(e) ? Object(I.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -11885,7 +11882,7 @@
 						post: i,
 						shouldShowSubredditUpsell: c,
 						subredditOrProfile: d
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Rc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Sc)(o), p = i && i.id;
 					return s || n || t || l || !c ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(h.a, {
@@ -18721,7 +18718,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.J
 				});
-				return !!t && !Object(n.Rc)(t)
+				return !!t && !Object(n.Sc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -18736,7 +18733,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.db
 				});
-				return !(!t || Object(n.Rc)(t))
+				return !(!t || Object(n.Sc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -18753,4 +18750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.09e62507ba872690492b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.532fb67f3d4e6051b53b.js.map

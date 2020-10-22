@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.3cc6f6b46c6ad5b27399.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.0ef64f3467e725f5a060.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -298,7 +298,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("IdCard~SubredditWiki"), n.e("IdCard")]).then(n.bind(null, "./src/reddit/components/IdCard/index.tsx")),
+				importAsync: () => n.e("IdCard").then(n.bind(null, "./src/reddit/components/IdCard/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -547,7 +547,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e("Settings~reddit-components-ProfileIdCard"), n.e("reddit-components-ProfileIdCard")]).then(n.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
+					importAsync: () => Promise.all([n.e("AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard"), n.e("reddit-components-ProfileIdCard")]).then(n.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2004,8 +2004,8 @@
 						draft: t
 					}), r.a.createElement(O, null)))
 				})),
-				W = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				A = n("./src/reddit/layout/page/Listing/index.tsx"),
+				A = n("./src/reddit/components/PostingSidebar/index.tsx"),
+				W = n("./src/reddit/layout/page/Listing/index.tsx"),
 				F = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				z = n("./src/reddit/selectors/postDraft.ts");
 			const H = Object(c.t)(),
@@ -2028,14 +2028,14 @@
 					} = this.props;
 					if (!t || !e) return r.a.createElement(F.b, null);
 					const n = e.subredditId;
-					return r.a.createElement(A.a, {
+					return r.a.createElement(W.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: r.a.createElement("div", null),
 						content: r.a.createElement(B, {
 							draft: e
 						}),
-						sidebar: n && r.a.createElement(W.a, {
+						sidebar: n && r.a.createElement(A.a, {
 							subredditOrProfileId: n
 						})
 					})
@@ -2045,4 +2045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.3cc6f6b46c6ad5b27399.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.0ef64f3467e725f5a060.js.map

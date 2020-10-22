@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.2836d791560555c155db.js
-// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.a35f687c8c024826e3e0.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Mb
+					experimentName: u.Nb
 				});
-				return Object(u.Rc)(t) ? void 0 : t
+				return Object(u.Sc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Nb
+					experimentName: u.Ob
 				});
-				return Object(u.Rc)(t) ? void 0 : t
-			}, (e, t) => e === u.Ob.Enabled && t === u.Ob.Enabled);
+				return Object(u.Sc)(t) ? void 0 : t
+			}, (e, t) => e === u.Pb.Enabled && t === u.Pb.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -53,15 +53,15 @@
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 					return Math.trunc(e).toString(16).padStart(t, "0")
 				};
-			var O;
+			var g;
 			! function(e) {
 				e.SHA1 = "SHA-1", e.SHA256 = "SHA-256", e.SHA384 = "SHA-384", e.SHA512 = "SHA-512"
-			}(O || (O = {}));
-			const g = async e => (async (e, t) => {
+			}(g || (g = {}));
+			const O = async e => (async (e, t) => {
 				const s = (new TextEncoder).encode(t),
 					i = await crypto.subtle.digest(e, s);
 				return Array.from(new Uint8Array(i)).map(E).join("")
-			})(O.SHA1, e);
+			})(g.SHA1, e);
 
 			function y() {
 				return (y = Object.assign || function(e) {
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				C = Object({
-					SENTRY_RELEASE_VERSION: "45f5914-production"
+					SENTRY_RELEASE_VERSION: "0a02d47-production"
 				}),
 				N = {
 					anonymousUserId: "t2_anonymous",
@@ -106,7 +106,7 @@
 					envKey: m,
 					localStorageSaltKey: b,
 					localStorageViewerUserIdKey: E,
-					playerName: O,
+					playerName: g,
 					playerVersion: C,
 					respectDoNotTrack: _,
 					saltLength: I,
@@ -194,7 +194,7 @@
 							t = this.getOrCreateSalt(),
 							s = f(),
 							i = "".concat(s).concat(e).concat(t);
-						return (await g(i)).substr(0, R.VIEWER_USER_ID_LENGTH)
+						return (await O(i)).substr(0, R.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -256,7 +256,7 @@
 						}
 					}
 				}
-				R.displayName = x(e), R.ANONYMOUS_USER_ID = s, R.DEBUG = c, R.DISABLE_COOKIES = u, R.DURATION_LIVE = 1 / 0, R.ENV_KEY = m, R.LOCAL_STORAGE_SALT_KEY = b, R.LOCAL_STORAGE_VIEWER_USER_ID_KEY = E, R.PLAYER_NAME = O, R.PLAYER_VERSION = C, R.RESPECT_DO_NOT_TRACK = _, R.SALT_LENGTH = I, R.SALT_TIME_TO_LIVE = j, R.STREAM_TYPE_LIVE = "live", R.STREAM_TYPE_ON_DEMAND = "on-demand", R.VIEWER_USER_ID_LENGTH = A;
+				R.displayName = x(e), R.ANONYMOUS_USER_ID = s, R.DEBUG = c, R.DISABLE_COOKIES = u, R.DURATION_LIVE = 1 / 0, R.ENV_KEY = m, R.LOCAL_STORAGE_SALT_KEY = b, R.LOCAL_STORAGE_VIEWER_USER_ID_KEY = E, R.PLAYER_NAME = g, R.PLAYER_VERSION = C, R.RESPECT_DO_NOT_TRACK = _, R.SALT_LENGTH = I, R.SALT_TIME_TO_LIVE = j, R.STREAM_TYPE_LIVE = "live", R.STREAM_TYPE_ON_DEMAND = "on-demand", R.VIEWER_USER_ID_LENGTH = A;
 				const T = Object(i.forwardRef)((e, t) => r.a.createElement(R, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -285,7 +285,7 @@
 			s.d(t, "a", (function() {
 				return E
 			})), s.d(t, "b", (function() {
-				return g
+				return O
 			})), s.d(t, "c", (function() {
 				return y
 			})), s.d(t, "d", (function() {
@@ -393,7 +393,7 @@
 					}
 				}
 			}));
-			const O = (e, t) => {
+			const g = (e, t) => {
 				const s = Object(h.n)(e, t),
 					i = Object(v.J)(e, t);
 				return {
@@ -402,7 +402,7 @@
 					subredditOrProfile: i
 				}
 			};
-			var g = Object(n.b)(() => Object(a.a)(O, e => e))(e => r.a.createElement(b, {
+			var O = Object(n.b)(() => Object(a.a)(g, e => e))(e => r.a.createElement(b, {
 				type: "commentAuthor",
 				data: {
 					author: e.comment.author,
@@ -607,8 +607,8 @@
 				v = s("./src/reddit/constants/chat.ts"),
 				f = s("./src/reddit/constants/postLayout.ts"),
 				E = s("./src/reddit/helpers/overlay/index.ts"),
-				O = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				g = s("./src/reddit/helpers/trackers/rpan.ts"),
+				g = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
+				O = s("./src/reddit/helpers/trackers/rpan.ts"),
 				y = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				S = s("./src/reddit/models/Vote/index.ts"),
 				x = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
@@ -652,12 +652,12 @@
 					});
 					let r;
 					if (i) {
-						const e = Object(O.d)(i),
+						const e = Object(g.d)(i),
 							t = Object(h.c)(s);
 						r = "".concat(e).concat(t)
 					} else {
 						const e = s.replace(/^r\//, "");
-						r = e === p.R ? Object(O.e)() : Object(O.g)(e)
+						r = e === p.R ? Object(g.e)() : Object(g.g)(e)
 					}
 					return r
 				},
@@ -706,20 +706,20 @@
 							onHideRpanUnit: s,
 							sendEvent: i
 						} = this.props;
-						s(), i(Object(g.f)())
+						s(), i(Object(O.f)())
 					}, this.onStreamClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t,
 							stream: s
 						} = this.props;
-						t(s ? Object(g.g)(s, 1) : Object(g.g)()), this.openOverlay()
+						t(s ? Object(O.g)(s, 1) : Object(O.g)()), this.openOverlay()
 					}, this.onHeaderClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t
 						} = this.props;
-						t(Object(g.g)()), this.openOverlay()
+						t(Object(O.g)()), this.openOverlay()
 					}, this.handleIntersectionEvent = e => {
 						let {
 							isIntersecting: t
@@ -744,10 +744,10 @@
 							streamById: r
 						} = this.props, n = i && i.post.id === t.id ? i : r(t.id);
 						if (!n) return;
-						const a = !s.sessionDurationMs ? g.w : g.t,
+						const a = !s.sessionDurationMs ? O.w : O.t,
 							o = {
 								chatState: v.f.None,
-								playerType: g.a.DU
+								playerType: O.a.DU
 							},
 							d = a(n, Object.assign(Object.assign({}, s), o));
 						this.props.sendEvent(d)
@@ -1177,4 +1177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.2836d791560555c155db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a35f687c8c024826e3e0.js.map

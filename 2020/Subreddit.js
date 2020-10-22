@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.a7ad854d071a66634942.js
-// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.91719686299c38e25368.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
+	["Subreddit", "Frontpage~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
 			var s = n("./node_modules/lodash/_baseClamp.js"),
 				r = n("./node_modules/lodash/_copyArray.js"),
@@ -2124,7 +2124,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("IdCard~SubredditWiki"), n.e("IdCard")]).then(n.bind(null, "./src/reddit/components/IdCard/index.tsx")),
+				importAsync: () => n.e("IdCard").then(n.bind(null, "./src/reddit/components/IdCard/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -10410,13 +10410,13 @@
 						experimentEligibilitySelector: a.I,
 						experimentName: s.ib
 					});
-					return !(!t || Object(s.Rc)(t))
+					return !(!t || Object(s.Sc)(t))
 				},
 				o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a.I,
 						experimentName: s.ib
-					}) === s.nb.ListingEnabled
+					}) === s.ob.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/snoovatar.ts": function(e, t, n) {
@@ -10426,11 +10426,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.Ac.Enabled === Object(r.c)(e, {
+			const a = e => s.Bc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.uc
+				experimentName: s.vc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a7ad854d071a66634942.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.91719686299c38e25368.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.44b390fcf290852a4455.js
-// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.24775c7f2265b660dd46.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -390,13 +390,13 @@
 								experimentEligibilitySelector: h.a,
 								experimentName: j.jb
 							});
-							return !(!t || Object(j.Rc)(t))
+							return !(!t || Object(j.Sc)(t))
 						})(a)) && ("repeat_purchaser" !== s.dealInfo.type || (e => {
 							const t = Object(h.c)(e, {
 								experimentEligibilitySelector: h.a,
 								experimentName: j.hb
 							});
-							return !(!t || Object(j.Rc)(t))
+							return !(!t || Object(j.Sc)(t))
 						})(a)) && (e(w({
 							correlationId: t,
 							packageId: r
@@ -1235,6 +1235,7 @@
 						prefShowSnoovatar: e.pref_show_snoovatar,
 						prefShowTwitter: e.pref_show_twitter,
 						postKarma: s,
+						snoovatarFullBodyAsset: e.snoovatar_img || null,
 						totalKarma: o,
 						url: "/user/".concat(e.name, "/"),
 						username: e.name
@@ -2878,7 +2879,7 @@
 					experimentEligibilitySelector: s.I,
 					experimentName: n.eb
 				});
-				return !(!t || Object(n.Rc)(t))
+				return !(!t || Object(n.Sc)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
@@ -2902,4 +2903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.44b390fcf290852a4455.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.24775c7f2265b660dd46.js.map

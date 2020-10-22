@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.0009335c7170b060e1ea.js
-// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.79ab52834c10508e0768.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts~ProfileSnoobuilder"], {
 		"./src/reddit/components/LayoutNavigation/ConsiderateNav.m.less": function(e, t, n) {
@@ -185,7 +185,7 @@
 						routeName: o,
 						privateListingType: s,
 						isSnoovatar30Enabled: c
-					}).map(e => i.a.createElement(B, k({}, e, {
+					}).map(e => i.a.createElement(T, k({}, e, {
 						key: e.key
 					}))), i.a.createElement("button", {
 						className: Object(u.a)(j.a.mainLink, j.a.overflowMenuButton),
@@ -200,12 +200,12 @@
 						isOwnProfile: n,
 						routeName: o,
 						privateListingType: s
-					}).map(e => i.a.createElement(T, k({}, e, {
+					}).map(e => i.a.createElement(B, k({}, e, {
 						key: e.key
 					})))))
 				}))
 			}));
-			const B = e => {
+			const T = e => {
 					let {
 						hideOnNarrow: t,
 						isActive: n,
@@ -227,7 +227,7 @@
 						href: r
 					}, s)
 				},
-				T = e => {
+				B = e => {
 					let {
 						isActive: t,
 						internal: n,
@@ -452,7 +452,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e("Settings~reddit-components-ProfileIdCard"), n.e("reddit-components-ProfileIdCard")]).then(n.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
+					importAsync: () => Promise.all([n.e("AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard"), n.e("reddit-components-ProfileIdCard")]).then(n.bind(null, "./src/reddit/components/ProfileIdCard/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1668,4 +1668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.0009335c7170b060e1ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts~ProfileSnoobuilder.79ab52834c10508e0768.js.map

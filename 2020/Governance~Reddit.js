@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a860110b6b99cac26c91.js
-// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2850bd50eb2c6863ace1.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -22,7 +22,7 @@
 			e.exports = JSON.parse('{"id":"3c59e5ed6f14"}')
 		},
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"050ae396c8ed"}')
+			e.exports = JSON.parse('{"id":"0be74799cea4"}')
 		},
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(e) {
 			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
@@ -4324,7 +4324,7 @@
 			const S = e => _.d.reCaptchaEnterprise(e) && !Object(w.d)(e),
 				T = e => !!Object(I.c)(e, {
 					experimentEligibilitySelector: Object(E.d)(Object(E.b)(...r.b)),
-					experimentName: g.kc
+					experimentName: g.lc
 				}),
 				C = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => b()([S, T, e => e.tracking.reCaptchaEnterprise.load === n.a.New], t => t(e)))(async e => {
@@ -28178,7 +28178,7 @@
 				u = e => e === a.D.OnetapAuto,
 				b = e => e.user.googleOneTapEnabled,
 				g = Object(n.a)(i.I, d, (e, t) => !e && !!t),
-				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.Rc)(t))
+				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.Sc)(t))
 		},
 		"./src/reddit/selectors/profileOverviewChronoItems.ts": function(e, t, s) {
 			"use strict";
@@ -28477,4 +28477,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a860110b6b99cac26c91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2850bd50eb2c6863ace1.js.map

@@ -1,15 +1,15 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.22a900a3b110ccb1d227.js
-// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.171812174aa53dee1b9a.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"5ea7b64bc8a4"}')
+			e.exports = JSON.parse('{"id":"8f2551b0bce3"}')
 		},
 		"./src/graphql/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"2a42d91744d4"}')
+			e.exports = JSON.parse('{"id":"3e38b888d309"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"24ab40e0f21d"}')
+			e.exports = JSON.parse('{"id":"fc5afcd4a229"}')
 		},
 		"./src/graphql/operations/SubredditRecommendations.json": function(e) {
 			e.exports = JSON.parse('{"id":"3c4d88474140"}')
@@ -2036,13 +2036,13 @@
 				return Object(a.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: l,
-					experimentName: i.ob
+					experimentName: i.pb
 				})
 			}
 
 			function b(e) {
 				switch (e) {
-					case i.pb.Enabled:
+					case i.qb.Enabled:
 						return 18;
 					default:
 						return
@@ -2052,7 +2052,7 @@
 			}(r || (r = {}));
 			const p = e => {
 				switch (e) {
-					case i.pb.Enabled:
+					case i.qb.Enabled:
 						return r.Enabled;
 					default:
 						return r.NoBucket
@@ -2225,14 +2225,14 @@
 					experimentEligibilitySelector: e => l(e, t),
 					experimentName: i.U,
 					throttledVariants: {
-						[i.qb.CurrentThrottled]: i.U
+						[i.rb.CurrentThrottled]: i.U
 					}
 				}), o.a),
-				b = e => e === i.qb.CurrentThrottled,
-				p = e => e === i.qb.CurrentThrottled || e === i.qb.CurrentUnthrottled || e === i.qb.CurrentUnthrottledCopy || e === i.qb.NewPopUnthrottledCopy,
-				m = e => e === i.qb.NewPopUnthrottledCopy,
-				g = e => e === i.qb.NewPageUnthrottledCopy || e === i.qb.NewPageUnthrottledCopyFields,
-				f = e => e === i.qb.NewPageUnthrottledCopyFields
+				b = e => e === i.rb.CurrentThrottled,
+				p = e => e === i.rb.CurrentThrottled || e === i.rb.CurrentUnthrottled || e === i.rb.CurrentUnthrottledCopy || e === i.rb.NewPopUnthrottledCopy,
+				m = e => e === i.rb.NewPopUnthrottledCopy,
+				g = e => e === i.rb.NewPageUnthrottledCopy || e === i.rb.NewPageUnthrottledCopyFields,
+				f = e => e === i.rb.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, s) {
 			"use strict";
@@ -2241,7 +2241,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts");
 			const i = e => {
-				if (!Object(r.Rc)(e)) return e || void 0
+				if (!Object(r.Sc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -2258,8 +2258,8 @@
 			const d = e => (e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: r.jc
-				}) === r.rc.Enabled
+					experimentName: r.kc
+				}) === r.sc.Enabled
 			})(e) && (e => {
 				const t = Object(n.e)(e);
 				return !!t && a.has(t.toLowerCase())
@@ -2277,4 +2277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.22a900a3b110ccb1d227.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.171812174aa53dee1b9a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.86e3222ca470351579aa.js
-// Retrieved at 10/22/2020, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.642e74d7286bb951978b.js
+// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1351,12 +1351,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Dc.SmIcon:
+						case N.Ec.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case N.Dc.SmIconHc:
+						case N.Ec.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1497,7 +1497,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) n.push(Q(r, o));
+						if (r.e === h.A) n.push(z(r, o));
 						else if (r.e === h.x) n.push(a.a.createElement(C.a, {
 							key: o
 						}, q(r.c, t, s)));
@@ -1524,7 +1524,7 @@
 								href: e.u,
 								key: s,
 								title: e.a
-							}, Q({
+							}, z({
 								t: e.t,
 								f: e.f
 							}, 0));
@@ -1548,7 +1548,7 @@
 							}, e.t)
 					}
 				},
-				Q = (e, t) => {
+				z = (e, t) => {
 					const {
 						f: s,
 						t: r
@@ -1564,7 +1564,7 @@
 					}
 					return c < r.length && o.push($(0, r.substr(c), "remaining".concat(a))), o
 				},
-				z = {
+				Q = {
 					[h.j.monospace]: c.h,
 					[h.j.bold]: c.b,
 					[h.j.italic]: c.f,
@@ -1575,7 +1575,7 @@
 				},
 				$ = (e, t, s) => {
 					let n = t;
-					return n = o()(z, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
+					return n = o()(Q, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
@@ -1799,12 +1799,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.yc
+						experimentName: n.zc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Dc.SmIcon || t === n.Dc.SmIconHc
+					return t === n.Ec.SmIcon || t === n.Ec.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1830,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.86e3222ca470351579aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.642e74d7286bb951978b.js.map
