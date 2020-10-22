@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.9966ace6f9424f6cb7a4.js
-// Retrieved at 10/22/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.48497881686bf76c5d3b.js
+// Retrieved at 10/22/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -770,54 +770,68 @@
 				a = o("./node_modules/reselect/es/index.js"),
 				i = o("./src/lib/lessComponent.tsx"),
 				c = o("./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx"),
-				l = o("./src/reddit/icons/svgs/Redditor/index.tsx"),
-				d = o("./src/reddit/icons/svgs/Remove/index.tsx"),
-				m = o("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
-				p = o.n(m);
-			const u = i.a.img("Userpic", p.a),
-				h = Object(a.c)({
-					account: e => e.user.account
+				l = o("./src/reddit/components/UserIcon/helpers.ts"),
+				d = o("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
+				m = o("./src/reddit/icons/svgs/Redditor/index.tsx"),
+				p = o("./src/reddit/icons/svgs/Remove/index.tsx"),
+				u = o("./src/reddit/selectors/experiments/econ/snoovatar.ts"),
+				h = o("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
+				C = o.n(h);
+			const g = i.a.img("Userpic", C.a),
+				b = Object(a.c)({
+					account: e => e.user.account,
+					isSnoovatarEnabled: u.a
 				}),
-				C = Object(r.b)(h);
-			t.a = i.a.wrapped(C(e => {
+				v = Object(r.b)(b);
+			t.a = i.a.wrapped(v(e => {
 				let {
 					account: t,
 					className: o,
 					height: s,
-					isLivestreaming: r,
-					trash: a,
-					userId: i,
-					width: m
+					icon: r,
+					isLivestreaming: a,
+					isSnoovatarEnabled: i,
+					trash: u,
+					userId: h,
+					width: b
 				} = e;
-				const h = r ? 36 : 20,
-					C = {
-						height: s || h,
-						width: m || h,
-						minWidth: m || h
+				const v = a ? 36 : 20,
+					x = {
+						height: s || v,
+						width: b || v,
+						minWidth: b || v
 					};
-				return a ? n.a.createElement("div", {
+				if (u) return n.a.createElement("div", {
 					className: o,
-					style: C
+					style: x
+				}, n.a.createElement(p.a, {
+					className: C.a.TrashIcon
+				}));
+				const _ = t && t.id === h,
+					f = _ ? t.accountIcon : r;
+				return i && Object(l.a)(f) ? n.a.createElement("div", {
+					className: o,
+					style: x
 				}, n.a.createElement(d.a, {
-					className: p.a.TrashIcon
-				})) : i ? n.a.createElement("div", {
+					headshot: f
+				})) : h ? n.a.createElement("div", {
 					className: o,
-					style: C
-				}, t && t.accountIcon && t.id === i ? n.a.createElement(u, {
+					style: x
+				}, _ && t.accountIcon ? n.a.createElement(g, {
 					src: t.accountIcon,
 					alt: "user icon"
 				}) : n.a.createElement(c.a, {
-					userId: i
+					userId: h
 				})) : n.a.createElement("div", {
 					className: o,
-					style: C
-				}, t && t.accountIcon && !r ? n.a.createElement(u, {
+					style: x
+				}, t && t.accountIcon && !a ? n.a.createElement(g, {
 					src: t.accountIcon,
 					alt: "user icon"
-				}) : n.a.createElement(l.a, {
-					className: p.a.ProfileIcon
+				}) : n.a.createElement(m.a, {
+					className: C.a.ProfileIcon
 				}))
-			}), "ChatIcon", p.a)
+			}), "ChatIcon", C.a)
 		},
 		"./src/reddit/components/CommentsChat/Comment/CollapsedComment/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -1481,7 +1495,8 @@
 						target: "_blank",
 						onClick: Object(Ye.a)(() => n(t.id))
 					}, c.a.createElement($e, {
-						userId: t.authorId
+						userId: t.authorId,
+						icon: t.profileImage
 					}), c.a.createElement(et, null, t.author), c.a.createElement(Je.a, {
 						className: Ze.a.ReplyComment,
 						key: "rich-text-".concat(o),
@@ -1736,6 +1751,7 @@
 							[Et.a.Livestreaming]: d
 						}),
 						isLivestreaming: d,
+						icon: s.profileImage,
 						userId: s.authorId
 					})), s.parentId && c.a.createElement(jt, {
 						commentId: s.parentId,
@@ -2786,4 +2802,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.9966ace6f9424f6cb7a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.48497881686bf76c5d3b.js.map
