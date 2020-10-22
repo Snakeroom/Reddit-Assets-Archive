@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.ae1399cc6bf5d7f42f36.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.75416470cdfbcff9a14d.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				C = Object({
-					SENTRY_RELEASE_VERSION: "dd8c3f3-production"
+					SENTRY_RELEASE_VERSION: "422a63e-production"
 				}),
 				N = {
 					anonymousUserId: "t2_anonymous",
@@ -1177,4 +1177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ae1399cc6bf5d7f42f36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.75416470cdfbcff9a14d.js.map

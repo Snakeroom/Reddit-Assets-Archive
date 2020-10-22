@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.50ba456b8b87b31ae2a2.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.5838c25f4bfcba12c246.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
@@ -509,7 +509,7 @@
 						className: T.a.subredditLink,
 						to: n.url,
 						onMouseDown: this.trackSubredditClicked
-					}, Object(C.b)(n.name)))], {
+					}, Object(C.c)(n.name)))], {
 						hk: "2Qq224"
 					}) : i.fbt._("Similar communities", null, {
 						hk: "ntT00"
@@ -624,7 +624,7 @@
 			}
 
 			function o(e, t) {
-				return t === i.a.PROFILE ? Object(r.c)(e) : Object(r.b)(e)
+				return t === i.a.PROFILE ? Object(r.d)(e) : Object(r.c)(e)
 			}
 		},
 		"./src/reddit/connectors/miniCardPost.ts": function(e, t, s) {
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.50ba456b8b87b31ae2a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.5838c25f4bfcba12c246.js.map

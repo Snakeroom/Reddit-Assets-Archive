@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.65c2f4745cf3a174ba85.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0fb2280dbf8f078c40fc.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -5569,7 +5569,7 @@
 						key: t.name,
 						onEntrySelect: this.onEntrySelect,
 						onEntryFocus: this.onEntryFocus
-					}, Object(Wi.b)(t.name)))) : null
+					}, Object(Wi.c)(t.name)))) : null
 				}
 			}
 			var Yi = Object(l.b)(Gi, (t, e) => ({
@@ -5649,7 +5649,7 @@
 						onEntryFocus: this.onEntryFocus,
 						onEntrySelect: this.onEntrySelect,
 						isFocused: e === this.state.selectedSuggestionIndex
-					}, Object(Wi.c)(t)))) : null
+					}, Object(Wi.d)(t)))) : null
 				}
 			}
 			var $i = Object(l.b)(Ji)(Xi),
@@ -8137,4 +8137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.65c2f4745cf3a174ba85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0fb2280dbf8f078c40fc.js.map

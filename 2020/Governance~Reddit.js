@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.49d128722823453c89d4.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.77e0dff29fb75baf72ad.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -3599,7 +3599,7 @@
 				});
 				return t = e.subreddits.reduce((e, t) => {
 					if (t.subreddit_type === y.e.User) {
-						const s = Object(f.a)(t, Object(p.f)(t.display_name_prefixed));
+						const s = Object(f.a)(t, Object(p.g)(t.display_name_prefixed));
 						e.profiles[s.id] = s
 					} else {
 						const s = Object(j.a)(t);
@@ -4839,7 +4839,7 @@
 						let {
 							gqlContext: r
 						} = a;
-						const i = Object(d.f)(e);
+						const i = Object(d.g)(e);
 						if (!i) return;
 						const u = n(),
 							b = u.subredditAutocomplete;
@@ -12035,7 +12035,7 @@
 							if (Yc()(s)) return e;
 							const n = {};
 							return ti()(s, e => {
-								n[Object(si.f)(e.unitName)] = e.id
+								n[Object(si.g)(e.unitName)] = e.id
 							}), Object.assign(Object.assign({}, e), n)
 						}
 						default:
@@ -28476,4 +28476,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.49d128722823453c89d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.77e0dff29fb75baf72ad.js.map

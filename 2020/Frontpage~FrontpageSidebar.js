@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.f8d1d056b615230a055e.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.ae4e1aafde8050599c26.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -32,9 +32,9 @@
 				k = n("./src/reddit/components/SidebarSpacer/index.tsx"),
 				E = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				y = n("./src/reddit/controls/Button/index.tsx"),
-				f = n("./src/reddit/icons/svgs/Premium/index.tsx"),
-				N = n("./src/reddit/components/PremiumCTA/index.m.less"),
-				S = n.n(N);
+				N = n("./src/reddit/icons/svgs/Premium/index.tsx"),
+				S = n("./src/reddit/components/PremiumCTA/index.m.less"),
+				f = n.n(S);
 			const {
 				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -48,21 +48,21 @@
 						className: e,
 						contentOnly: !0
 					}, c.a.createElement("div", {
-						className: S.a.wrapper
-					}, c.a.createElement(f.a, {
-						className: S.a.icon
+						className: f.a.wrapper
+					}, c.a.createElement(N.a, {
+						className: f.a.icon
 					}), c.a.createElement("div", {
-						className: S.a.content
+						className: f.a.content
 					}, c.a.createElement("div", {
-						className: S.a.title
+						className: f.a.title
 					}, j._("Reddit Premium", null, {
 						hk: "39JIKQ"
 					})), c.a.createElement("div", {
-						className: S.a.description
+						className: f.a.description
 					}, j._("The best Reddit experience, with monthly Coins", null, {
 						hk: "2n1ct3"
 					}))), c.a.createElement(y.h, {
-						className: S.a.cta,
+						className: f.a.cta,
 						onClick: t
 					}, j._("Try Now", null, {
 						hk: "2HeiOg"
@@ -259,7 +259,7 @@
 						hk: "487Ffc"
 					})), c.a.createElement("div", {
 						className: ne.a.description
-					}, se._("{subreddits list} and more are looking for moderators!", [se._param("subreddits list", c.a.createElement("strong", null, e.map(q.b).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, se._("{subreddits list} and more are looking for moderators!", [se._param("subreddits list", c.a.createElement("strong", null, e.map(q.c).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), c.a.createElement(y.k, {
 						className: ne.a.button,
@@ -308,19 +308,19 @@
 					})))
 				}
 			}
-			var fe = ke(ye),
-				Ne = n("./src/reddit/selectors/posts.ts");
-			const Se = Object(m.c)({
-				recentPosts: Ne.W
+			var Ne = ke(ye),
+				Se = n("./src/reddit/selectors/posts.ts");
+			const fe = Object(m.c)({
+				recentPosts: Se.W
 			});
-			var je = Object(l.b)(Se, (e, t) => ({
+			var je = Object(l.b)(fe, (e, t) => ({
 					openLightbox: t => () => e(Object(ge.a)(t.permalink))
 				}))(e => {
 					let {
 						className: t,
 						recentPosts: n
 					} = e;
-					return n && n.length ? c.a.createElement(k.a, null, c.a.createElement(fe, {
+					return n && n.length ? c.a.createElement(k.a, null, c.a.createElement(Ne, {
 						className: t,
 						headerText: s.fbt._("Recent posts", null, {
 							hk: "1olaOT"
@@ -933,7 +933,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var f = e => {
+			var N = e => {
 					if (Object(x.a)()) {
 						const t = e.to ? {
 							kind: _.a.InternalLink,
@@ -955,8 +955,8 @@
 						to: e.to || ""
 					}, e.children)
 				},
-				N = n("./src/reddit/helpers/name/index.ts"),
-				S = n("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
+				S = n("./src/reddit/helpers/name/index.ts"),
+				f = n("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
 				j = n("./src/reddit/hooks/useTracking.ts"),
 				O = n("./src/reddit/components/TopSubredditsWidget/index.m.less"),
 				C = n.n(O);
@@ -1022,11 +1022,11 @@
 				};
 
 			function F(e, t) {
-				return t || "".concat(h.e).concat(Object(N.f)(e), "/")
+				return t || "".concat(h.e).concat(Object(S.g)(e), "/")
 			}
 			const I = e => c.a.createElement("div", {
 				className: C.a.categoryPicker
-			}, e.categories && e.categories.map(t => e.activeCategoryName === t.name ? null : c.a.createElement(f, {
+			}, e.categories && e.categories.map(t => e.activeCategoryName === t.name ? null : c.a.createElement(N, {
 				className: C.a.chip,
 				key: t.name,
 				to: F(t.name, t.path),
@@ -1045,7 +1045,7 @@
 					categories: i
 				} = e, o = Object(j.a)();
 				Object(d.useEffect)(() => {
-					o(Object(S.d)(s || h.c))
+					o(Object(f.d)(s || h.c))
 				}, []);
 				const l = r()(n),
 					u = t && l && t[l.id],
@@ -1167,4 +1167,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.f8d1d056b615230a055e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.ae4e1aafde8050599c26.js.map

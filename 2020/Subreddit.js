@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.40fcd8519729d91bd72c.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.a34bc70cbed01ed9e415.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "IdCard~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -3694,7 +3694,7 @@
 					className: j.a.metaLine
 				}, w && B && i.a.createElement("span", {
 					className: j.a.meta
-				}, Object(f.b)(B)), i.a.createElement("span", {
+				}, Object(f.c)(B)), i.a.createElement("span", {
 					className: j.a.meta
 				}, s.fbt._({
 					"*": "{number} points",
@@ -5397,7 +5397,7 @@
 						className: ke.a.metaLine
 					}, s && !!r && o.a.createElement("span", {
 						className: ke.a.meta
-					}, Object(Oe.g)(r) ? Object(de.c)(r.displayText || r.name) : Object(de.b)(r.displayText || r.name)), o.a.createElement("span", {
+					}, Object(Oe.g)(r) ? Object(de.d)(r.displayText || r.name) : Object(de.c)(r.displayText || r.name)), o.a.createElement("span", {
 						className: ke.a.meta
 					}, je._({
 						"*": "{score} points",
@@ -5462,7 +5462,7 @@
 							containerOnClick: n,
 							postId: e.id,
 							redditStyle: r,
-							showSubredditName: Object(x.a)(Object(de.f)(t)),
+							showSubredditName: Object(x.a)(Object(de.g)(t)),
 							thumbnailOnClick: n
 						}))
 					}
@@ -5505,7 +5505,7 @@
 						onPostClick: this.openLargePost,
 						postId: g.id,
 						showSubredditMeta: !1,
-						showSubredditName: Object(x.a)(Object(de.f)(n)),
+						showSubredditName: Object(x.a)(Object(de.g)(n)),
 						trendingPost: g
 					})), y.map(this.renderSmallPost), e, v.map(this.renderSmallPost), c && o.a.createElement(ce.o, {
 						className: Pe.a.SeeMore,
@@ -6536,7 +6536,7 @@
 			}
 
 			function i(e, t) {
-				return t === s.a.PROFILE ? Object(r.c)(e) : Object(r.b)(e)
+				return t === s.a.PROFILE ? Object(r.d)(e) : Object(r.c)(e)
 			}
 		},
 		"./src/reddit/components/Widgets/CommunityList/index.m.less": function(e, t, n) {
@@ -10433,4 +10433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.40fcd8519729d91bd72c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a34bc70cbed01ed9e415.js.map

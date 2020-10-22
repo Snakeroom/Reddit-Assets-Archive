@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1bc90b37306ef86485f1.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.45aff972ad4ed19b5fe6.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("116279"),
+				buildNumber: r("116281"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603382122"),
+				})("1603384773"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3431,14 +3431,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("dd8c3f3-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("422a63e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "dd8c3f3-production",
+						release: "422a63e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3891,7 +3891,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "dd8c3f3-production",
+							releaseClient: "422a63e-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -5606,11 +5606,11 @@
 					method: o.db.GET
 				});
 			const v = (e, t, i, n) => Object(p.a)(Object(h.a)(e, [g.a]), {
-					endpoint: "".concat(e.apiUrl, "/api/filter/user/").concat(t, "/f/mod/").concat(Object(b.b)(i)),
+					endpoint: "".concat(e.apiUrl, "/api/filter/user/").concat(t, "/f/mod/").concat(Object(b.c)(i)),
 					method: n ? o.db.PUT : o.db.DELETE,
 					data: {
 						model: JSON.stringify({
-							name: Object(b.g)(i)
+							name: Object(b.h)(i)
 						})
 					}
 				}),
@@ -6686,7 +6686,7 @@
 				d = ["#FAAF2A", "#96DE50", "#F9862D", "#2EA1EA", "#297ACA", "#4DCF65", "#96DE50", "#F9862D", "#FAAF2A", "#297ACA", "#2EA1EA", "#2EA1EA", "#37D2BB", "#4DCF65", "#297ACB", "#96DE50", "#F9862D", "#FAAF2A", "#297ACA", "#2EA1EA", "#297ACA", "#37D2BB", "#96DE50", "#37D2BB", "#4DCF65", "#37D2BB", "#F9862D"],
 				l = /\s/g,
 				a = /&/g,
-				u = e => e ? Object(r.f)(e).replace(l, "_").replace(a, "and") : ""
+				u = e => e ? Object(r.g)(e).replace(l, "_").replace(a, "and") : ""
 		},
 		"./src/reddit/constants/chat.ts": function(e, t, i) {
 			"use strict";
@@ -11833,33 +11833,44 @@
 		},
 		"./src/reddit/helpers/name/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "g", (function() {
-				return o
-			})), i.d(t, "f", (function() {
-				return d
-			})), i.d(t, "b", (function() {
-				return l
-			})), i.d(t, "c", (function() {
-				return a
-			})), i.d(t, "d", (function() {
+			i.d(t, "h", (function() {
+				return u
+			})), i.d(t, "g", (function() {
 				return c
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "c", (function() {
 				return _
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "d", (function() {
 				return m
+			})), i.d(t, "e", (function() {
+				return h
+			})), i.d(t, "f", (function() {
+				return g
+			})), i.d(t, "a", (function() {
+				return f
+			})), i.d(t, "b", (function() {
+				return b
 			}));
-			i("./node_modules/core-js/modules/es6.regexp.split.js"), i("./node_modules/core-js/modules/es6.regexp.replace.js"), i("./node_modules/lodash/capitalize.js");
-			const n = /^(r|u)?\//i,
-				r = /^r\//i,
-				s = /^u\//i,
-				o = e => e.replace(n, ""),
-				d = e => o(e.toLowerCase().trim()),
-				l = e => "r/".concat(o(e)),
-				a = e => "u/".concat(o(e)),
-				u = e => n.test(e),
-				c = e => r.test(e),
-				_ = e => s.test(e),
-				m = (e, t) => !((e, t) => u(e) && u(t) && e[0].toLowerCase() !== t[0].toLowerCase())(e, t) && d(e) === d(t)
+			i("./node_modules/core-js/modules/es6.regexp.split.js"), i("./node_modules/core-js/modules/es6.regexp.replace.js");
+			var n = i("./node_modules/lodash/capitalize.js"),
+				r = i.n(n),
+				s = i("./node_modules/lodash/upperFirst.js"),
+				o = i.n(s);
+			const d = /^(r|u)?\//i,
+				l = /^r\//i,
+				a = /^u\//i,
+				u = e => e.replace(d, ""),
+				c = e => u(e.toLowerCase().trim()),
+				_ = e => "r/".concat(u(e)),
+				m = e => "u/".concat(u(e)),
+				p = e => d.test(e),
+				h = e => l.test(e),
+				g = e => a.test(e),
+				f = (e, t) => !((e, t) => p(e) && p(t) && e[0].toLowerCase() !== t[0].toLowerCase())(e, t) && c(e) === c(t),
+				b = (e, t) => {
+					if (!e) return "";
+					const i = t ? o.a : r.a;
+					return e.split(" ").map(i).join(" ")
+				}
 		},
 		"./src/reddit/helpers/pageActionLoginRedirect.ts": function(e, t, i) {
 			"use strict";
@@ -15460,7 +15471,7 @@
 					let {
 						categoryName: i
 					} = t;
-					return e.features.categories.nameToId[Object(l.f)(i)]
+					return e.features.categories.nameToId[Object(l.g)(i)]
 				},
 				w = (e, t) => {
 					const i = b(e, t);
@@ -15475,7 +15486,7 @@
 					const o = [];
 					for (const d of i) {
 						const i = n[d];
-						t.has(Object(l.f)(i.name)) || (e[i.name] || (r[i.name] = s++), o.push(i))
+						t.has(Object(l.g)(i.name)) || (e[i.name] || (r[i.name] = s++), o.push(i))
 					}
 					return o.sort((t, i) => {
 						return (e[t.name] || r[t.name]) - (e[i.name] || r[i.name])
@@ -15511,13 +15522,13 @@
 					for (const e of r) {
 						const r = t[e];
 						if (r) {
-							const e = Object(l.f)(r.name);
-							i[e] || (i[e] = []), i[e].push(Object(l.f)(n))
+							const e = Object(l.g)(r.name);
+							i[e] || (i[e] = []), i[e].push(Object(l.g)(n))
 						}
 					}
 					return i
 				}, {})),
-				O = Object(s.a)((e, t) => t.subredditName, I, (e, t) => t[Object(l.f)(e)] || c),
+				O = Object(s.a)((e, t) => t.subredditName, I, (e, t) => t[Object(l.g)(e)] || c),
 				j = e => e.features.categories.ranking,
 				x = (e, t) => {
 					let {
@@ -16015,7 +16026,7 @@
 						post: i
 					} = t;
 					const n = Object(u.ab)(e, i);
-					return n && n.displayText || i && i.author && Object(o.c)(i.author)
+					return n && n.displayText || i && i.author && Object(o.d)(i.author)
 				},
 				g = (e, t, i) => Object(_.g)(e) && !Object(_.i)(e) && !!t && !!t.title && t.title.length <= 200 && !t.isNSFW && !!t.media && new Date(t.created) > new Date(2020, 5, 20) && new Date(t.created) <= new Date(2020, 7, 29) && (Object(d.G)(t.media) || Object(d.I)(t.media)) && (e => !!e && !!e.media && (Object(d.G)(e.media) || Object(d.I)(e.media) && e.media.richtextContent && e.media.richtextContent.document && e.media.richtextContent.document.some(e => {
 					let {
@@ -17183,11 +17194,11 @@
 					} = r && r.urlParams || {};
 					if (s) return {
 						isProfile: !0,
-						name: e && e.username || Object(h.f)(s),
+						name: e && e.username || Object(h.g)(s),
 						id: e && e.id || void 0
 					}; {
 						const {
-							name: e = Object(h.f)(o),
+							name: e = Object(h.g)(o),
 							id: r = ""
 						} = t || i || {};
 						return {
@@ -19400,7 +19411,7 @@
 					let {
 						substring: i
 					} = t;
-					return Object(o.e)(i) ? "" : Object(o.f)(i)
+					return Object(o.f)(i) ? "" : Object(o.g)(i)
 				},
 				h = (e, t) => {
 					for (let i = e.length; i > 0; i--)
@@ -19421,14 +19432,14 @@
 				}),
 				y = Object(s.a)(p, u.d, (e, t) => t.filter(t => -1 !== t.name.toLowerCase().indexOf(e))),
 				v = Object(s.a)(m, (e, t) => t.includeUserProfile, c.i, (e, t, i) => {
-					if (!t || r()(i) || Object(o.d)(e)) return null;
-					const n = Object(o.f)(Object(a.e)(i)),
-						s = Object(o.f)(e);
+					if (!t || r()(i) || Object(o.e)(e)) return null;
+					const n = Object(o.g)(Object(a.e)(i)),
+						s = Object(o.g)(e);
 					return n.includes(s) ? Object(l.d)(i) : null
 				}),
 				T = Object(s.a)(m, (e, t) => t.allowCrosspostableOnly, v, g, y, e => e.subreddits.crosspostable.ids, c.A, (e, t, i, n, r, s, d) => {
 					const a = [];
-					if (i && a.push(i), Object(o.e)(e)) return a;
+					if (i && a.push(i), Object(o.f)(e)) return a;
 					const u = {};
 					return r.forEach(e => {
 						const i = Object(l.c)(e, d);
@@ -19449,7 +19460,7 @@
 					}), a
 				}),
 				S = Object(s.a)(m, c.h, (e, t) => {
-					const i = Object(o.f)(e);
+					const i = Object(o.g)(e);
 					return t.filter(e => {
 						let {
 							name: t
@@ -19459,7 +19470,7 @@
 				}),
 				E = (Object(s.a)(m, v, S, (e, t) => t.partnerConnectionSafeOnly, c.A, (e, t, i, n, r) => {
 					const s = [];
-					if (t && s.push(t), Object(o.e)(e)) return s;
+					if (t && s.push(t), Object(o.f)(e)) return s;
 					let a = i;
 					return n && (a = i.filter(e => (e.type === d.e.Public || e.type === d.e.Restricted) && !e.isQuarantined && !e.isNSFW && e.subscribers < 2e5)), s.push(...a.map(e => Object(l.b)(e, l.a.MODERATED_SUBREDDIT, r))), s
 				}), Object(s.c)({
@@ -21246,13 +21257,13 @@
 		"./src/reddit/selectors/topic.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return m
-			})), i.d(t, "e", (function() {
 				return p
+			})), i.d(t, "e", (function() {
+				return h
 			})), i.d(t, "a", (function() {
-				return b
-			})), i.d(t, "b", (function() {
 				return w
+			})), i.d(t, "b", (function() {
+				return y
 			})), i.d(t, "f", (function() {
 				return T
 			})), i.d(t, "d", (function() {
@@ -21262,30 +21273,31 @@
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./node_modules/reselect/es/index.js"),
 				s = i("./src/lib/initializeClient/installReducer.ts");
-			var o = i("./node_modules/redux/es/redux.js"),
-				d = i("./src/reddit/actions/pages/topic.ts");
-			const l = {};
-			var a = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
+			var o = i("./src/reddit/helpers/name/index.ts"),
+				d = i("./node_modules/redux/es/redux.js"),
+				l = i("./src/reddit/actions/pages/topic.ts");
+			const a = {};
+			var u = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case d.e:
-						case d.b:
+						case l.e:
+						case l.b:
 							return Object.assign(Object.assign({}, e), t.payload.topics);
 						default:
 							return e
 					}
 				},
-				u = Object(o.c)({
-					models: a
+				c = Object(d.c)({
+					models: u
 				}),
-				c = i("./src/reddit/selectors/subreddit.ts");
+				_ = i("./src/reddit/selectors/subreddit.ts");
 			Object(s.a)({
 				pages: {
-					topics: u
+					topics: c
 				}
 			});
-			const _ = Object(r.a)(e => e.pages.topics.models, e => {
+			const m = Object(r.a)(e => e.pages.topics.models, e => {
 					const t = {};
 					if (!e) return t;
 					for (const i of Object.keys(e)) {
@@ -21294,32 +21306,32 @@
 					}
 					return t
 				}),
-				m = (e, t) => {
+				p = (e, t) => {
 					let {
 						topicSlug: i
 					} = t;
-					return e.pages.topics.models[((e, t) => t ? _(e)[t.toLowerCase()] : void 0)(e, i)]
+					return e.pages.topics.models[((e, t) => t ? m(e)[t.toLowerCase()] : void 0)(e, i)]
 				},
-				p = function(e, t) {
+				h = function(e, t) {
 					let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-					const n = m(e, {
+					const n = p(e, {
 						topicSlug: t
 					});
 					if (!n) return "";
-					const r = i ? n.name : n.namePlural;
+					const r = i ? n.namePlural : n.name;
 					return r || ""
 				};
-			var h;
+			var g;
 			! function(e) {
 				e.Child = "child", e.Parent = "parent", e.Sibling = "sibling"
-			}(h || (h = {}));
-			const g = [],
-				f = e => Object(r.a)(m, t => {
-					if (!t) return g;
+			}(g || (g = {}));
+			const f = [],
+				b = e => Object(r.a)(p, t => {
+					if (!t) return f;
 					return {
-						[h.Parent]: t.parentRelationships,
-						[h.Child]: t.childRelationships,
-						[h.Sibling]: t.siblingRelationships
+						[g.Parent]: t.parentRelationships,
+						[g.Child]: t.childRelationships,
+						[g.Sibling]: t.siblingRelationships
 					} [e].reduce((e, t) => (function(e, t, i) {
 						const n = e.length + t.length,
 							r = Array(n);
@@ -21336,19 +21348,23 @@
 						return r
 					})(e, t.relatedTopics, (e, t) => e.name.localeCompare(t.name)), [])
 				}),
-				b = f(h.Parent),
-				w = f(h.Sibling),
-				y = Object(r.a)(m, c.ab, (e, t) => e ? e.subredditIds.map(e => t[e]) : g),
-				v = (Object(r.a)(y, e => e.map(e => e && e.name)), (e, t) => {
+				w = b(g.Parent),
+				y = b(g.Sibling),
+				v = Object(r.a)(p, _.ab, (e, t) => e ? e.subredditIds.map(e => t[e]) : f),
+				T = (Object(r.a)(v, e => e.map(e => e && e.name)), Object(r.a)((e, t) => {
 					let {
 						topicSlug: i
 					} = t;
-					return p(e, i, !0)
-				}),
-				T = Object(r.a)(v, e => e && n.fbt._("{topic name} on Reddit", [n.fbt._param("topic name", e)], {
-					hk: "1hchAs"
-				})),
-				S = Object(r.a)(v, e => e && n.fbt._("Find the best posts and communities about {topic name} on Reddit", [n.fbt._param("topic name", e)], {
+					return h(e, i)
+				}, e => e && n.fbt._("Best {topic name} Posts - Reddit", [n.fbt._param("topic name", Object(o.b)(e, !0))], {
+					hk: "2ddI1M"
+				}))),
+				S = Object(r.a)((e, t) => {
+					let {
+						topicSlug: i
+					} = t;
+					return h(e, i, !0)
+				}, e => e && n.fbt._("Find the best posts and communities about {topic name} on Reddit", [n.fbt._param("topic name", e)], {
 					hk: "DunIF"
 				}))
 		},
@@ -25689,4 +25705,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1bc90b37306ef86485f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.45aff972ad4ed19b5fe6.js.map

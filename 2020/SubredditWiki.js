@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.82175b89aab35b2ae3e7.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.8c31a95dee59d57225c6.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -3794,7 +3794,7 @@
 					className: j.a.metaLine
 				}, N && R && a.a.createElement("span", {
 					className: j.a.meta
-				}, Object(k.b)(R)), a.a.createElement("span", {
+				}, Object(k.c)(R)), a.a.createElement("span", {
 					className: j.a.meta
 				}, n.fbt._({
 					"*": "{number} points",
@@ -4945,7 +4945,7 @@
 						className: Ee.a.metaLine
 					}, n && !!r && o.a.createElement("span", {
 						className: Ee.a.meta
-					}, Object(we.g)(r) ? Object(ce.c)(r.displayText || r.name) : Object(ce.b)(r.displayText || r.name)), o.a.createElement("span", {
+					}, Object(we.g)(r) ? Object(ce.d)(r.displayText || r.name) : Object(ce.c)(r.displayText || r.name)), o.a.createElement("span", {
 						className: Ee.a.meta
 					}, je._({
 						"*": "{score} points",
@@ -5010,7 +5010,7 @@
 							containerOnClick: s,
 							postId: e.id,
 							redditStyle: r,
-							showSubredditName: Object(x.a)(Object(ce.f)(t)),
+							showSubredditName: Object(x.a)(Object(ce.g)(t)),
 							thumbnailOnClick: s
 						}))
 					}
@@ -5053,7 +5053,7 @@
 						onPostClick: this.openLargePost,
 						postId: g.id,
 						showSubredditMeta: !1,
-						showSubredditName: Object(x.a)(Object(ce.f)(s)),
+						showSubredditName: Object(x.a)(Object(ce.g)(s)),
 						trendingPost: g
 					})), f.map(this.renderSmallPost), e, O.map(this.renderSmallPost), d && o.a.createElement(de.o, {
 						className: Pe.a.SeeMore,
@@ -7606,4 +7606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.82175b89aab35b2ae3e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8c31a95dee59d57225c6.js.map

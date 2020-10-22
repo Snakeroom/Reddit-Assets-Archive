@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.554ce3c98ab147c7e378.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.7b50103a1d5f0d191f78.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -3153,7 +3153,7 @@
 							};
 						case "topic": {
 							const t = Object(ys.s)(s),
-								n = t && Object(ga.e)(e, t, !0);
+								n = t && Object(ga.e)(e, t);
 							if (n) return {
 								type: An.Topic,
 								model: n
@@ -10437,14 +10437,14 @@
 			s("./node_modules/core-js/modules/es6.regexp.split.js");
 			var n = s("./src/reddit/helpers/name/index.ts");
 			const a = (e, t) => t.map(t => {
-					const s = Object(n.f)(t.name),
+					const s = Object(n.g)(t.name),
 						a = s.split(" & ").join("_and_");
 					return Object.assign(Object.assign({}, t), {
 						name: s,
 						path: t.path || "".concat(e).concat(a, "/")
 					})
 				}),
-				r = e => Object(n.f)(e).split("_and_").join(" & ")
+				r = e => Object(n.g)(e).split("_and_").join(" & ")
 		},
 		"./src/reddit/helpers/externalAccount/index.tsx": function(e, t, s) {
 			"use strict";
@@ -14752,4 +14752,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "Reddit~reddit-components-MediumPost", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.554ce3c98ab147c7e378.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7b50103a1d5f0d191f78.js.map

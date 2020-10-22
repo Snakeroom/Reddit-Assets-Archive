@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.dc52fdc51ebd90c6b7bf.js
-// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.00a49baf5c31daad8971.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1038,7 +1038,7 @@
 						isLoggedIn: s,
 						subreddit: i,
 						subredditAboutInfo: r
-					} = e, a = Object(te.b)(i.displayText || i.name);
+					} = e, a = Object(te.c)(i.displayText || i.name);
 					return n.a.createElement("div", {
 						className: Object(o.a)(oe.a.Container, t)
 					}, n.a.createElement(X.b, {
@@ -1185,7 +1185,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(I.t)(), Se = (e, t) => t.match.params.sort || a.P, Re = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(B.Posts), e.hasSubreddits && t.push(B.Communities), e.childRelationships.length && t.push(B.RelatedTopics), t) : t
-			}, Pe = Object(d.b)(() => Object(r.a)((e, t) => Object(Oe.e)(e, t.match.params.topicSlug, !0), (e, t) => Object(Oe.c)(e, {
+			}, Pe = Object(d.b)(() => Object(r.a)((e, t) => Object(Oe.e)(e, t.match.params.topicSlug), (e, t) => Object(Oe.c)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Oe.a)(e, {
 				topicSlug: t.match.params.topicSlug
@@ -1340,4 +1340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.dc52fdc51ebd90c6b7bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.00a49baf5c31daad8971.js.map

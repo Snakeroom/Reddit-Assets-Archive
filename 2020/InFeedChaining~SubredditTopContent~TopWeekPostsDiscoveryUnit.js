@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.aa1d8c9c9a1890a1f50b.js
-// Retrieved at 9/21/2020, 7:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.36c3e01a6d65d9f61e9a.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/CarouselBase/index.m.less": function(e, t, s) {
@@ -766,7 +766,7 @@
 				}), i.a.createElement("span", null, u.displayText)), ((e, t) => {
 					if (t) return i.a.createElement("div", {
 						role: "img",
-						"aria-label": a.fbt._("Crossposted by{author}from{community}", [a.fbt._param("author", Object(d.c)(e)), a.fbt._param("community", t.displayText)], {
+						"aria-label": a.fbt._("Crossposted by{author}from{community}", [a.fbt._param("author", Object(d.d)(e)), a.fbt._param("community", t.displayText)], {
 							hk: "2OZoR0"
 						})
 					}, i.a.createElement(h, null))
@@ -986,4 +986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.aa1d8c9c9a1890a1f50b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit.36c3e01a6d65d9f61e9a.js.map

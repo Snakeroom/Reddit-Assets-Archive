@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.9b21c73cdabfa1858c62.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.fc737716146b4a5f952d.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -9676,7 +9676,7 @@
 							if (g()(n)) return t;
 							const r = {};
 							return h()(n, t => {
-								r[Object(I.f)(t.name)] = t.id
+								r[Object(I.g)(t.name)] = t.id
 							}), Object.assign(Object.assign({}, t), r)
 						}
 						default:
@@ -10101,7 +10101,7 @@
 					let {
 						unitName: n
 					} = e;
-					const r = t.discoveryUnits.nameToId[Object(o.f)(n)];
+					const r = t.discoveryUnits.nameToId[Object(o.g)(n)];
 					return t.discoveryUnits.models[r]
 				},
 				O = (t, e) => {
@@ -11168,7 +11168,7 @@
 						return n ? {
 							profile: {
 								id: n.id,
-								name: Object(i.f)(n.name)
+								name: Object(i.g)(n.name)
 							}
 						} : {}
 					}
@@ -11182,11 +11182,11 @@
 						subreddit: {
 							categoryName: r ? r.contentCategory : null,
 							id: n.id,
-							name: Object(i.f)(n.name)
+							name: Object(i.g)(n.name)
 						}
 					}
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.9b21c73cdabfa1858c62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.fc737716146b4a5f952d.js.map

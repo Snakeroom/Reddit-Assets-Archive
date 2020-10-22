@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.f8cbfd65b197df303ad9.js
-// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.756451207c2bbe26589c.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -1093,7 +1093,7 @@
 			}
 
 			function i(e, t) {
-				return t === r.a.PROFILE ? Object(s.c)(e) : Object(s.b)(e)
+				return t === r.a.PROFILE ? Object(s.d)(e) : Object(s.c)(e)
 			}
 		},
 		"./src/reddit/components/Widgets/CommunityList/index.m.less": function(e, t, n) {
@@ -1774,8 +1774,8 @@
 					multireddit: e.multireddit
 				}) : o.a.createElement(o.a.Fragment, null, Be._("Curated by {multiredditFeedAuthorLink}", [Be._param("multiredditFeedAuthorLink", o.a.createElement(R.a, {
 					className: Se.a.usernameLink,
-					to: "/".concat(Object(A.c)(Object(w.i)(e.multireddit.url)))
-				}, Object(A.c)(Object(w.i)(e.multireddit.url))))], {
+					to: "/".concat(Object(A.d)(Object(w.i)(e.multireddit.url)))
+				}, Object(A.d)(Object(w.i)(e.multireddit.url))))], {
 					hk: "3AKmgH"
 				}))), o.a.createElement("div", {
 					className: Se.a.descriptionContainer
@@ -1941,4 +1941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.f8cbfd65b197df303ad9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.756451207c2bbe26589c.js.map

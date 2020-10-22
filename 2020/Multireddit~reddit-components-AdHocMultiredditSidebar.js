@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.1dff0aa5bee3bbffaba9.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.9a9ded2a529af671bd4d.js
+// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/lib/forEachGroup/index.ts": function(e, t, n) {
@@ -563,7 +563,7 @@
 									query: e
 								} = this.state;
 								if (e.length) {
-									const t = Object(me.g)(e),
+									const t = Object(me.h)(e),
 										n = t.startsWith(oe.Ub) ? "profile" : "subreddit",
 										s = "profile" === n ? t.substring(2) : t;
 									this.props.addSubredditRequested({
@@ -1299,7 +1299,7 @@
 						name: t,
 						subscribers: n
 					}
-				} = e, i = Object(C.c)(t), r = void 0 !== n ? s.fbt._({
+				} = e, i = Object(C.d)(t), r = void 0 !== n ? s.fbt._({
 					"*": "{number} members",
 					_1: "1 member"
 				}, [s.fbt._plural(n, "number")], {
@@ -1332,7 +1332,7 @@
 						name: i,
 						subscribers: r
 					}
-				} = e, o = Object(C.b)(i), a = void 0 !== r ? s.fbt._({
+				} = e, o = Object(C.c)(i), a = void 0 !== r ? s.fbt._({
 					"*": "{number} members",
 					_1: "1 member"
 				}, [s.fbt._plural(r, "number")], {
@@ -1562,4 +1562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.1dff0aa5bee3bbffaba9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.9a9ded2a529af671bd4d.js.map
