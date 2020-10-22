@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.3d6df4b842d729848111.js
-// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.899cfbc19d0d1a68e8a8.js
+// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -219,16 +219,16 @@
 				B = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				T = n("./src/reddit/controls/Button/index.tsx"),
 				I = n("./src/reddit/models/ContentGate.ts"),
-				R = n("./src/reddit/selectors/meta.ts"),
-				F = n("./src/reddit/selectors/user.ts"),
+				F = n("./src/reddit/selectors/meta.ts"),
+				R = n("./src/reddit/selectors/user.ts"),
 				D = n("./src/reddit/components/ContentGate/index.m.less"),
 				M = n.n(D);
 			const {
 				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = p.a.div("ButtonsContainer", M.a), z = p.a.div("Container", M.a), A = p.a.div("Description", M.a), H = p.a.div("PrivateSubredditDetails", M.a), W = p.a.div("PrivateSubredditDescription", M.a), q = p.a.h3("PrivateSubredditName", M.a), K = p.a.a("Link", M.a), Y = p.a.wrapped(T.k, "LinkRouterButton", M.a), V = p.a.wrapped(T.j, "LinkButton", M.a), X = p.a.wrapped(T.n, "SecondaryLinkRouterButton", M.a), Z = p.a.wrapped(T.m, "SecondaryLinkButton", M.a), J = p.a.wrapped(Y, "GoHomeLinkButton", M.a), Q = p.a.img("Image", M.a), $ = p.a.img("ImagePlaceholder", M.a), ee = p.a.wrapped(Y, "LeftLinkRouterButton", M.a), te = p.a.wrapped(V, "LeftLinkButton", M.a), ne = p.a.wrapped(Z, "SecondaryLeftLinkButton", M.a), re = p.a.wrapped(X, "SecondaryLeftLinkRouterButton", M.a), ae = p.a.h3("Title", M.a), se = p.a.div("PageBody", M.a), oe = p.a.div("QuarantineMessageWrapper", M.a), ie = Object(l.c)({
-				isLoggedIn: F.H,
-				origin: R.l,
-				user: F.i
+				isLoggedIn: R.H,
+				origin: F.l,
+				user: R.i
 			}), le = Object(B.t)(), ce = Object(o.b)(ie, (e, t) => {
 				let {
 					subredditName: n
@@ -1071,7 +1071,7 @@
 						experimentEligibilitySelector: s.I,
 						experimentName: r.gb
 					});
-					return !(!t || Object(r.Rc)(t))
+					return !(!t || Object(r.Pc)(t))
 				},
 				i = e => {
 					return Object(a.c)(e, {
@@ -1082,4 +1082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.3d6df4b842d729848111.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.899cfbc19d0d1a68e8a8.js.map

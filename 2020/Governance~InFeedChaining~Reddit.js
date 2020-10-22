@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.f91fb955eb5edd19d715.js
-// Retrieved at 10/21/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.89166b3113e8f94dab20.js
+// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -401,11 +401,11 @@
 				S = s("./src/reddit/selectors/platform.ts"),
 				A = s("./src/reddit/selectors/subreddit.ts"),
 				N = s("./src/reddit/selectors/user.ts"),
-				R = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
-				U = s("./src/reddit/actions/multireddit/constants.ts");
-			const L = Object(d.a)(U.q),
-				M = Object(d.a)(U.r),
-				q = Object(d.a)(U.s),
+				U = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				R = s("./src/reddit/actions/multireddit/constants.ts");
+			const L = Object(d.a)(R.q),
+				M = Object(d.a)(R.r),
+				q = Object(d.a)(R.s),
 				F = e => async (t, s, r) => {
 					const {
 						gqlContext: i
@@ -454,7 +454,7 @@
 						fetchedToken: g.token,
 						key: m
 					}, _.body), Object(E.a)(d, m, I))))
-				}, G = Object(d.a)(U.t), z = Object(d.a)(U.u), B = function(e) {
+				}, G = Object(d.a)(R.t), z = Object(d.a)(R.u), B = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return async (s, r, i) => {
 						let {
@@ -476,7 +476,7 @@
 							})))
 						}
 					}
-				}, H = Object(d.a)(U.e), K = Object(d.a)(U.f), V = Object(d.a)(U.g), Q = e => {
+				}, H = Object(d.a)(R.e), K = Object(d.a)(R.f), V = Object(d.a)(R.g), Q = e => {
 					let {
 						description: t,
 						displayName: s,
@@ -548,9 +548,9 @@
 						w = Object(N.i)(i);
 					(f || w && w.displayText) && await e(Object(b.B)(O, (f || w.displayText).toLowerCase(), g.toLowerCase(), Object.assign(Object.assign(Object.assign({}, n()(y, m.l)), n()(y, m.k)), {
 						sort: p,
-						t: Object(R.a)(p, k)
+						t: Object(U.a)(p, k)
 					})))
-				}, Y = Object(d.a)(U.k), J = Object(d.a)(U.l), X = Object(d.a)(U.m), $ = e => {
+				}, Y = Object(d.a)(R.k), J = Object(d.a)(R.l), X = Object(d.a)(R.m), $ = e => {
 					let {
 						description: t,
 						displayName: s,
@@ -601,7 +601,7 @@
 							})
 						}))
 					}
-				}, Z = Object(d.a)(U.b), ee = Object(d.a)(U.c), te = Object(d.a)(U.a), se = e => {
+				}, Z = Object(d.a)(R.b), ee = Object(d.a)(R.c), te = Object(d.a)(R.a), se = e => {
 					let {
 						communityInfo: t,
 						identifier: s,
@@ -653,9 +653,9 @@
 							let t = r.fbt._("Sorry, something went wrong adding {subredditName}.", [r.fbt._param("subredditName", s.name)], {
 								hk: "ERdWO"
 							});
-							k.body && (k.body.reason === U.d.TooManySubreddits ? t = r.fbt._("Maximum communities reached", null, {
+							k.body && (k.body.reason === R.d.TooManySubreddits ? t = r.fbt._("Maximum communities reached", null, {
 								hk: "2eguyW"
-							}) : k.body.reason === U.d.InvalidSrQuarantine && (t = r.fbt._("{communityname} is invalid because it is quarantined", [r.fbt._param("communityname", "".concat("subreddit" === s.type ? c.d.subreddit : c.d.profile).concat(s.name))], {
+							}) : k.body.reason === R.d.InvalidSrQuarantine && (t = r.fbt._("{communityname} is invalid because it is quarantined", [r.fbt._param("communityname", "".concat("subreddit" === s.type ? c.d.subreddit : c.d.profile).concat(s.name))], {
 								hk: "407xmS"
 							}))), e(Object(p.e)({
 								text: t,
@@ -663,7 +663,7 @@
 							}))
 						}
 					}
-				}, re = Object(d.a)(U.w), ie = Object(d.a)(U.x), ne = Object(d.a)(U.v), ae = e => {
+				}, re = Object(d.a)(R.w), ie = Object(d.a)(R.x), ne = Object(d.a)(R.v), ae = e => {
 					let {
 						id: t,
 						multiredditName: s,
@@ -710,7 +710,7 @@
 							})
 						})))
 					}
-				}, oe = Object(d.a)(U.h), ce = Object(d.a)(U.i), de = Object(d.a)(U.j), le = e => async (t, s, i) => {
+				}, oe = Object(d.a)(R.h), ce = Object(d.a)(R.i), de = Object(d.a)(R.j), le = e => async (t, s, i) => {
 					let {
 						apiContext: n
 					} = i;
@@ -726,7 +726,7 @@
 							hk: "aWGMo"
 						})
 					}))) : t(oe(d.error))
-				}, ue = Object(d.a)(U.n), be = Object(d.a)(U.o), pe = Object(d.a)(U.p), me = e => {
+				}, ue = Object(d.a)(R.n), be = Object(d.a)(R.o), pe = Object(d.a)(R.p), me = e => {
 					let {
 						description: t,
 						displayText: s,
@@ -778,7 +778,7 @@
 							})
 						})))
 					}
-				}, ge = Object(d.a)(U.z), fe = Object(d.a)(U.A), he = Object(d.a)(U.B), ye = e => {
+				}, ge = Object(d.a)(R.z), fe = Object(d.a)(R.A), he = Object(d.a)(R.B), ye = e => {
 					let {
 						multiredditName: t,
 						username: s,
@@ -802,7 +802,7 @@
 							b = await ((e, t) => Object(j.a)(e, Object.assign(Object.assign({}, _), {
 								variables: t
 							})))(a(), {
-								count: U.y,
+								count: R.y,
 								subredditIds: l.subredditIds,
 								toExclude: u
 							});
@@ -875,9 +875,9 @@
 			})), s.d(t, "e", (function() {
 				return Nt
 			})), s.d(t, "p", (function() {
-				return Rt
-			})), s.d(t, "o", (function() {
 				return Ut
+			})), s.d(t, "o", (function() {
+				return Rt
 			})), s.d(t, "D", (function() {
 				return Lt
 			})), s.d(t, "E", (function() {
@@ -922,15 +922,15 @@
 				S = s("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
 				A = s("./src/reddit/actions/login.ts"),
 				N = s("./src/reddit/actions/otherDiscussions/constants.ts"),
-				R = s("./src/config.ts"),
-				U = s("./src/lib/makeActionCreator/index.ts"),
+				U = s("./src/config.ts"),
+				R = s("./src/lib/makeActionCreator/index.ts"),
 				L = s("./src/reddit/actions/platform.ts"),
 				M = s("./src/reddit/endpoints/me/index.ts"),
 				q = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
 				F = s("./src/reddit/actions/pages/appeal/constants.ts");
-			const G = "".concat(R.a.redditHelpUrl, "/en/categories/rules-reporting/account-and-community-restrictions/my-account-was-suspended-or-locked"),
-				z = Object(U.a)(F.b),
-				B = Object(U.a)(F.a);
+			const G = "".concat(U.a.redditHelpUrl, "/en/categories/rules-reporting/account-and-community-restrictions/my-account-was-suspended-or-locked"),
+				z = Object(R.a)(F.b),
+				B = Object(R.a)(F.a);
 			var H = s("./src/reddit/actions/post.ts"),
 				K = s("./src/reddit/actions/profile/index.ts"),
 				V = s("./src/reddit/actions/redditEmbed.ts"),
@@ -976,8 +976,8 @@
 				Se = s("./src/lib/makeCommentsPageKey/index.ts"),
 				Ae = s("./src/lib/makeListingKey/index.ts"),
 				Ne = s("./src/lib/matchRoute/index.ts"),
-				Re = s("./src/reddit/actions/ads/index.ts"),
-				Ue = s("./src/reddit/helpers/canonicalUrls.ts"),
+				Ue = s("./src/reddit/actions/ads/index.ts"),
+				Re = s("./src/reddit/helpers/canonicalUrls.ts"),
 				Le = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				Me = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				qe = s("./src/reddit/helpers/timeApiRoute/index.ts"),
@@ -1019,9 +1019,9 @@
 				et = "PAGE__FRONTPAGE_PENDING",
 				tt = "PAGE__FRONTPAGE_LOADED",
 				st = "PAGE__FRONTPAGE_FAILED",
-				rt = Object(U.a)(et),
-				it = Object(U.a)(tt),
-				nt = Object(U.a)(st),
+				rt = Object(R.a)(et),
+				it = Object(R.a)(tt),
+				nt = Object(R.a)(st),
 				at = (e, t) => async (s, i, n) => {
 					const a = i();
 					if (a.listings.postOrder.api.pending[e]) return;
@@ -1048,7 +1048,7 @@
 							} = t;
 							s(Object(d.a)(Object(y.b)(e, r)))
 						}
-						s(W.f(u)), s(Object(Re.b)(Fe.a.FRONTPAGE))
+						s(W.f(u)), s(Object(Ue.b)(Fe.a.FRONTPAGE))
 					} else s(nt(Object.assign({
 						error: l.error,
 						key: e
@@ -1078,7 +1078,7 @@
 					if (u || d && !l && !t) return void(d && (s(L.l({
 						title: D.c()
 					})), i.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
-						s(Object(Re.b)(Fe.a.FRONTPAGE))
+						s(Object(Ue.b)(Fe.a.FRONTPAGE))
 					})));
 					const m = Object(ie.a)(i),
 						g = Object(ie.b)(m),
@@ -1104,7 +1104,7 @@
 						apiContext: n
 					} = i;
 					await Promise.all([s(Object(b.b)()), s(ot(e, t)), s(ct()), s(Object(Ye.c)(Je.R))])
-				}, lt = "PAGE__COMMENTSPAGE_PENDING", ut = "PAGE__COMMENTSPAGE_LOADED", bt = "PAGE__COMMENTSPAGE_FAILED", pt = Object(U.a)(lt), mt = Object(U.a)(ut), gt = Object(U.a)(bt), ft = e => async (t, s) => {
+				}, lt = "PAGE__COMMENTSPAGE_PENDING", ut = "PAGE__COMMENTSPAGE_LOADED", bt = "PAGE__COMMENTSPAGE_FAILED", pt = Object(R.a)(lt), mt = Object(R.a)(ut), gt = Object(R.a)(bt), ft = e => async (t, s) => {
 					const {
 						partialPostId: r,
 						partialCommentId: i
@@ -1219,7 +1219,7 @@
 					const {
 						routePrefix: k
 					} = e.params;
-					te.b[k] === te.a.PROFILE ? Object(Ue.d)(s(), t, e) : Object(Ue.b)(s(), t, e)
+					te.b[k] === te.a.PROFILE ? Object(Re.d)(s(), t, e) : Object(Re.b)(s(), t, e)
 				}, ht = (e, t, s, r) => async (i, n, a) => {
 					var o;
 					const c = n(),
@@ -1239,7 +1239,7 @@
 						if (b && !c.sidebarPromotedPosts.firstFetch) {
 							const t = Object(ve.i)(c) ? Fe.a.COMMENTS_OVERLAY : Fe.a.COMMENTS;
 							window.addEventListener("load", () => {
-								i(Object(Re.b)(t)), Math.random() <= .01 && i(Object(Re.a)(e))
+								i(Object(Ue.b)(t)), Math.random() <= .01 && i(Object(Ue.a)(e))
 							})
 						}
 						return void(p || i(jt(e, t, s)))
@@ -1302,7 +1302,7 @@
 							key: d
 						}));
 						const a = Object(ve.i)(c) ? Fe.a.COMMENTS_OVERLAY : Fe.a.COMMENTS;
-						i(Object(Re.b)(a)), Math.random() <= .01 && i(Object(Re.a)(e))
+						i(Object(Ue.b)(a)), Math.random() <= .01 && i(Object(Ue.a)(e))
 					}
 					if (C.ok) {
 						i(W.f(d));
@@ -1323,7 +1323,7 @@
 							key: d
 						}, e ? e.body : C.body)))
 					}
-				}, yt = "PAGE__COMMENTSPAGE_LOADED_FULL", Ot = Object(U.a)(yt), jt = (e, t, s) => async (r, i, n) => {
+				}, yt = "PAGE__COMMENTSPAGE_LOADED_FULL", Ot = Object(R.a)(yt), jt = (e, t, s) => async (r, i, n) => {
 					var a;
 					const o = Object(Se.a)(e, t, s),
 						c = i(),
@@ -1407,11 +1407,11 @@
 							await r(Object(a.b)(t)), r(Object(m.i)(s, e, {}))
 						}
 					}
-				}, Et = Object(U.a)("PAGE__FRONTPAGE_RELOADED"), xt = e => async (t, s, r) => {
+				}, Et = Object(R.a)("PAGE__FRONTPAGE_RELOADED"), xt = e => async (t, s, r) => {
 					const i = s(),
 						n = i.platform.currentPage.routeMatch.match;
 					Object(_e.n)(i) || Object(_e.s)(i) || (e || t(Et()), await t(dt(n, !0)))
-				}, vt = "PAGE__MULTIREDDIT_FEED_PENDING", It = "PAGE__MULTIREDDIT_FEED_LOADED", Dt = "PAGE__MULTIREDDIT_FEED_FAILED", Tt = Object(U.a)(vt), Pt = Object(U.a)(It), Ct = Object(U.a)(Dt), St = (e, t, s, i, n) => async (a, o, c) => {
+				}, vt = "PAGE__MULTIREDDIT_FEED_PENDING", It = "PAGE__MULTIREDDIT_FEED_LOADED", Dt = "PAGE__MULTIREDDIT_FEED_FAILED", Tt = Object(R.a)(vt), Pt = Object(R.a)(It), Ct = Object(R.a)(Dt), St = (e, t, s, i, n) => async (a, o, c) => {
 					const {
 						gqlContext: d
 					} = c, l = o();
@@ -1449,7 +1449,7 @@
 							multiredditName: s,
 							username: t
 						})), window.addEventListener("load", () => {
-							a(Object(Re.b)(Fe.a.MULTIREDDIT))
+							a(Object(Ue.b)(Fe.a.MULTIREDDIT))
 						})
 					} else n && a(W.e({
 						id: g,
@@ -1500,7 +1500,7 @@
 						y = h in v.Sb && v.Sb[h];
 					if (f || m && !g && !t) return void(m && (s(L.l({
 						title: Object(xe.f)(r(), l)
-					})), u.sidebarPromotedPosts.firstFetch || s(Object(Re.b)(Fe.a.MULTIREDDIT))));
+					})), u.sidebarPromotedPosts.firstFetch || s(Object(Ue.b)(Fe.a.MULTIREDDIT))));
 					await s(St(p, c, i, Object.assign(Object.assign(Object.assign({}, n()(e.queryParams, Z.l)), n()(e.queryParams, Z.k)), {
 						sort: d,
 						t: Object(ae.a)(d, y)
@@ -1508,13 +1508,13 @@
 					const O = r();
 					Object(xe.d)(O, l) && s(L.l({
 						title: Object(xe.f)(r(), l)
-					})), Object(Ue.c)(O, s, e)
-				}, Nt = "PAGE__DASHBOARD_PENDING", Rt = (Object(U.a)(Nt), e => async (e, t) => {
+					})), Object(Re.c)(O, s, e)
+				}, Nt = "PAGE__DASHBOARD_PENDING", Ut = (Object(R.a)(Nt), e => async (e, t) => {
 					const s = t();
 					e(L.l({
 						title: D.a()
 					})), Object(Ce.I)(s) || await e(Y.r())
-				}), Ut = e => async (e, t) => e(L.l({
+				}), Rt = e => async (e, t) => e(L.l({
 					title: D.a()
 				})), Lt = e => async (t, r) => {
 					const i = r();
@@ -2240,7 +2240,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts");
 			const i = e => {
-				if (!Object(r.Rc)(e)) return e || void 0
+				if (!Object(r.Pc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -2276,4 +2276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.f91fb955eb5edd19d715.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.89166b3113e8f94dab20.js.map

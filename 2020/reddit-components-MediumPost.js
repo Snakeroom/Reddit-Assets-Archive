@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.dde9e55e46e180fbae17.js
-// Retrieved at 10/21/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b1eddb015bebc960556f.js
+// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -614,7 +614,7 @@
 					sendEvent: be,
 					subredditOrProfile: xe,
 					toggleCheckbox: he
-				} = e, fe = ce ? void 0 : d, ve = Object(R.a)(te), ge = se && ve, ye = Object(B.a)(te), Oe = Object(F.a)(te), ke = Object(k.c)(ie), Ee = !!Q && !Object(N.Rc)(Q), je = Object(L.a)(ie), Ce = T && !pe && !Ee, Pe = Ce && !!ie.source && !n, _e = !(D && H || q) && !W && (!T || Ee), Se = (!T || Ee) && !ie.isSponsored, Ie = Object(a.s)(ie, K), {
+				} = e, fe = ce ? void 0 : d, ve = Object(R.a)(te), ge = se && ve, ye = Object(B.a)(te), Oe = Object(F.a)(te), ke = Object(k.c)(ie), Ee = !!Q && !Object(N.Pc)(Q), je = Object(L.a)(ie), Ce = T && !pe && !Ee, Pe = Ce && !!ie.source && !n, _e = !(D && H || q) && !W && (!T || Ee), Se = (!T || Ee) && !ie.isSponsored, Ie = Object(a.s)(ie, K), {
 					source: we
 				} = Ie, Ne = o.a.createElement(j.a, {
 					className: Object(c.a)(Y.a.container, s, J.a.largeAndMediumPostStyles, J.a.largeAndMediumActiveStyles, Object(A.a)(e), {
@@ -2433,9 +2433,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.bb
 				});
-				return !(!t || Object(n.Rc)(t))
+				return !(!t || Object(n.Pc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.dde9e55e46e180fbae17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b1eddb015bebc960556f.js.map

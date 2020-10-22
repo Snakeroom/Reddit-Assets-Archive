@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.794241d72f5c63a4c7fd.js
-// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.fca2bb577a6c468d4a9a.js
+// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -4019,7 +4019,7 @@
 								experimentEligibilitySelector: e => Object(R.I)(e),
 								experimentName: p.pb
 							});
-							return Object(p.Rc)(t) ? void 0 : t
+							return Object(p.Pc)(t) ? void 0 : t
 						})(F) && (s(((e, t) => async (n, s, r) => {
 							let {
 								apiContext: a
@@ -8779,4 +8779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.794241d72f5c63a4c7fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.fca2bb577a6c468d4a9a.js.map

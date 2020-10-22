@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.3f0bfa44a210af571646.js
-// Retrieved at 10/21/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.9b21c73cdabfa1858c62.js
+// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -7674,7 +7674,7 @@
 								experimentName: i.r,
 								expEventOverride: e
 							});
-							return !!(Object(i.Rc)(n) ? void 0 : n)
+							return !!(Object(i.Pc)(n) ? void 0 : n)
 						})(n)) || (t => !1 !== t.collapsed)(e)
 					})
 				}
@@ -10170,7 +10170,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: t
 				});
-				return !(!n || Object(r.Rc)(n))
+				return !(!n || Object(r.Pc)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/goldSubredditPowerups.ts": function(t, e, n) {
@@ -10249,9 +10249,9 @@
 				}),
 				l = (t, e, n) => {
 					const r = n(t, e);
-					return !(!r || !r.meter) && (r.meter.enabled && u(t) && s.Pc.Enabled === Object(i.c)(t, {
+					return !(!r || !r.meter) && (r.meter.enabled && u(t) && s.Nc.Enabled === Object(i.c)(t, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.Lc
+						experimentName: s.Kc
 					}))
 				},
 				b = Object(r.a)(t => Object(i.c)(t, {
@@ -11189,4 +11189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.3f0bfa44a210af571646.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.9b21c73cdabfa1858c62.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.0993dc896d70e64062d0.js
-// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.e49d2e79a4c1717517a1.js
+// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -5915,7 +5915,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Fe = !!te && !Object(Z.Rc)(te), Ae = (!O || Fe) && !me.isSponsored, Be = Object(_.s)(me, v), {
+					})(e), Fe = !!te && !Object(Z.Pc)(te), Ae = (!O || Fe) && !me.isSponsored, Be = Object(_.s)(me, v), {
 						source: De
 					} = Be, We = o.a.createElement(A.a, {
 						className: Object(w.a)(pe.a.container, r, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -15475,7 +15475,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.bb
 				});
-				return !(!t || Object(n.Rc)(t))
+				return !(!t || Object(n.Pc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -15492,4 +15492,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.0993dc896d70e64062d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.e49d2e79a4c1717517a1.js.map

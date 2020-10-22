@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3dcf615909d869196268.js
-// Retrieved at 10/21/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.eff4b0eeecbe84c24d3c.js
+// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6560,7 +6560,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Re = !!te && !Object(Z.Rc)(te), De = (!j || Re) && !ue.isSponsored, Ae = Object(k.s)(ue, O), {
+					})(e), Re = !!te && !Object(Z.Pc)(te), De = (!j || Re) && !ue.isSponsored, Ae = Object(k.s)(ue, O), {
 						source: Be
 					} = Ae, Ue = o.a.createElement(D.a, {
 						className: Object(C.a)(me.a.container, r, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -14392,7 +14392,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.bb
 				});
-				return !(!t || Object(n.Rc)(t))
+				return !(!t || Object(n.Pc)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, s) {
@@ -14443,7 +14443,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts");
 			const o = e => {
-				if (!Object(n.Rc)(e)) return e || void 0
+				if (!Object(n.Pc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, s) {
@@ -14643,4 +14643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3dcf615909d869196268.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.eff4b0eeecbe84c24d3c.js.map

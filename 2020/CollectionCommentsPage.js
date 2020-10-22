@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.80fbaf04c587f6b8e194.js
-// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d0d53b2ad6d60e39446b.js
+// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -11855,7 +11855,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(f.Rc)(e) ? Object(I.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(f.Pc)(e) ? Object(I.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -11885,7 +11885,7 @@
 						post: i,
 						shouldShowSubredditUpsell: c,
 						subredditOrProfile: d
-					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Rc)(o), p = i && i.id;
+					} = this.props, l = i && Object(O.a)(i), m = !!o && !Object(f.Pc)(o), p = i && i.id;
 					return s || n || t || l || !c ? null : a.a.createElement("div", {
 						className: D.a.container
 					}, this.renderSmallBanner(), a.a.createElement(h.a, {
@@ -18794,7 +18794,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.H
 				});
-				return !!t && !Object(n.Rc)(t)
+				return !!t && !Object(n.Pc)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -18809,7 +18809,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.bb
 				});
-				return !(!t || Object(n.Rc)(t))
+				return !(!t || Object(n.Pc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -18826,4 +18826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.80fbaf04c587f6b8e194.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d0d53b2ad6d60e39446b.js.map

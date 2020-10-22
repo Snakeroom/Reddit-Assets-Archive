@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6907d294d1db9d25ced1.js
-// Retrieved at 10/21/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9baa8c1d767b7cf6638f.js
+// Retrieved at 10/22/2020, 12:20:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -13898,7 +13898,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts");
 			const o = e => {
-				if (!Object(n.Rc)(e)) return e || void 0
+				if (!Object(n.Pc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -13990,4 +13990,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6907d294d1db9d25ced1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9baa8c1d767b7cf6638f.js.map
