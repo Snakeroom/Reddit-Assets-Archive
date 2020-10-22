@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.b182744795b42e2a4e37.js
-// Retrieved at 10/22/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.fa649c91c47524798ecf.js
+// Retrieved at 10/22/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -5900,7 +5900,7 @@
 						userIsOp: ve,
 						isActionBarAnimationEnabled: Oe,
 						postId: Ce
-					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], ye = Ee ? void 0 : p, _e = Object(d.a)(oe), we = re && _e, ke = Object(a.a)(oe), je = Object(c.a)(oe), Pe = Object(R.c)(me), Se = !!me.media && me.media.type === h.o.RTJSON, Ie = ve && Se, Ne = s ? s - B.a : void 0, Te = !(y && U || Y), Me = (e => e === Q.cc.OnlyTitles)(ue) && !Object($.a)(me), Le = (e => e === Q.cc.MediumHeight)(ue) && !Object($.a)(me), Re = (e => {
+					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], ye = Ee ? void 0 : p, _e = Object(d.a)(oe), we = re && _e, ke = Object(a.a)(oe), je = Object(c.a)(oe), Pe = Object(R.c)(me), Se = !!me.media && me.media.type === h.o.RTJSON, Ie = ve && Se, Ne = s ? s - B.a : void 0, Te = !(y && U || Y), Me = (e => e === Q.dc.OnlyTitles)(ue) && !Object($.a)(me), Le = (e => e === Q.dc.MediumHeight)(ue) && !Object($.a)(me), Re = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -5915,7 +5915,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Fe = !!te && !Object(Q.Sc)(te), Ae = (!O || Fe) && !me.isSponsored, Be = Object(_.s)(me, v), {
+					})(e), Fe = !!te && !Object(Q.Tc)(te), Ae = (!O || Fe) && !me.isSponsored, Be = Object(_.s)(me, v), {
 						source: De
 					} = Be, We = o.a.createElement(A.a, {
 						className: Object(w.a)(pe.a.container, r, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -15475,7 +15475,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.db
 				});
-				return !(!t || Object(n.Sc)(t))
+				return !(!t || Object(n.Tc)(t))
 			}
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, s) {
@@ -15492,4 +15492,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.b182744795b42e2a4e37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.fa649c91c47524798ecf.js.map

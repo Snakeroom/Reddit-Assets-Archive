@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.330e2a51e5d3b6ef1ed0.js
-// Retrieved at 10/22/2020, 4:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.a97f5b336279fd465159.js
+// Retrieved at 10/22/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -18,16 +18,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Nb
+					experimentName: u.Ob
 				});
-				return Object(u.Sc)(t) ? void 0 : t
+				return Object(u.Tc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ob
+					experimentName: u.Pb
 				});
-				return Object(u.Sc)(t) ? void 0 : t
-			}, (e, t) => e === u.Pb.Enabled && t === u.Pb.Enabled);
+				return Object(u.Tc)(t) ? void 0 : t
+			}, (e, t) => e === u.Qb.Enabled && t === u.Qb.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "a645b7f-production"
+					SENTRY_RELEASE_VERSION: "b065a40-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -103,9 +103,9 @@
 					respectDoNotTrack: j,
 					saltLength: S,
 					saltTimeToLive: L,
-					viewerUserIdLength: M
+					viewerUserIdLength: T
 				} = Object.assign(Object.assign({}, C), t);
-				class T extends i.Component {
+				class M extends i.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(i.createRef)(), this.handleDashCreate = e => {
 							this.setDashInstance(e)
@@ -182,11 +182,11 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || T.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || M.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							s = x(),
 							i = "".concat(s).concat(e).concat(t);
-						return (await y(i)).substr(0, T.VIEWER_USER_ID_LENGTH)
+						return (await y(i)).substr(0, M.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -210,25 +210,25 @@
 							t = this.getVideoData(),
 							s = this.getThirdPartyLibData();
 						return Object.assign(Object.assign({
-							debug: T.DEBUG,
-							disableCookies: T.DISABLE_COOKIES,
-							respectDoNotTrack: T.RESPECT_DO_NOT_TRACK
+							debug: M.DEBUG,
+							disableCookies: M.DISABLE_COOKIES,
+							respectDoNotTrack: M.RESPECT_DO_NOT_TRACK
 						}, s), {
 							data: Object.assign(Object.assign({
-								env_key: T.ENV_KEY,
+								env_key: M.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: T.PLAYER_NAME,
-								player_version: T.PLAYER_VERSION
+								player_name: M.PLAYER_NAME,
+								player_version: M.PLAYER_VERSION
 							}, t), {
 								viewer_user_id: e
 							})
 						})
 					}
 					getOrCreateSalt() {
-						const e = T.LOCAL_STORAGE_SALT_KEY;
+						const e = M.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(r.a)(e);
-						return t || (t = g(T.SALT_LENGTH), Object(r.b)(e, t, T.SALT_TIME_TO_LIVE)), t
+						return t || (t = g(M.SALT_LENGTH), Object(r.b)(e, t, M.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return Object.assign(Object.assign({}, this.getDashInstanceData()), this.getHlsInstanceData())
@@ -241,15 +241,15 @@
 							muxVideoTitle: i
 						} = this.props;
 						return {
-							video_duration: s ? T.DURATION_LIVE : e,
+							video_duration: s ? M.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: s ? T.STREAM_TYPE_LIVE : T.STREAM_TYPE_ON_DEMAND,
+							video_stream_type: s ? M.STREAM_TYPE_LIVE : M.STREAM_TYPE_ON_DEMAND,
 							video_title: i
 						}
 					}
 				}
-				T.displayName = w(e), T.ANONYMOUS_USER_ID = s, T.DEBUG = l, T.DISABLE_COOKIES = u, T.DURATION_LIVE = 1 / 0, T.ENV_KEY = m, T.LOCAL_STORAGE_SALT_KEY = p, T.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, T.PLAYER_NAME = E, T.PLAYER_VERSION = I, T.RESPECT_DO_NOT_TRACK = j, T.SALT_LENGTH = S, T.SALT_TIME_TO_LIVE = L, T.STREAM_TYPE_LIVE = "live", T.STREAM_TYPE_ON_DEMAND = "on-demand", T.VIEWER_USER_ID_LENGTH = M;
-				const N = Object(i.forwardRef)((e, t) => n.a.createElement(T, v({}, e, {
+				M.displayName = w(e), M.ANONYMOUS_USER_ID = s, M.DEBUG = l, M.DISABLE_COOKIES = u, M.DURATION_LIVE = 1 / 0, M.ENV_KEY = m, M.LOCAL_STORAGE_SALT_KEY = p, M.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, M.PLAYER_NAME = E, M.PLAYER_VERSION = I, M.RESPECT_DO_NOT_TRACK = j, M.SALT_LENGTH = S, M.SALT_TIME_TO_LIVE = L, M.STREAM_TYPE_LIVE = "live", M.STREAM_TYPE_ON_DEMAND = "on-demand", M.VIEWER_USER_ID_LENGTH = T;
+				const N = Object(i.forwardRef)((e, t) => n.a.createElement(M, v({}, e, {
 						forwardedRef: t
 					}))),
 					_ = Object(a.c)({
@@ -498,9 +498,9 @@
 						shouldShowTileLayoutOption: S,
 						isSponsored: L
 					} = e,
-					M = Object(o.d)(e => Object(x.a)(e, O)),
-					T = M > 0,
-					N = M < c.length - 1,
+					T = Object(o.d)(e => Object(x.a)(e, O)),
+					M = T > 0,
+					N = T < c.length - 1,
 					_ = Object(l.a)(),
 					P = Object(i.useCallback)(e => {
 						t(Object(h.f)({
@@ -516,24 +516,24 @@
 					}, [t, O, E]),
 					D = Object(i.useCallback)(() => {
 						if (!N) return;
-						const e = M + 1;
+						const e = T + 1;
 						P(e), _(r.b(O, e)), _(r.d(O, e + 1))
-					}, [N, M, P, _, O]),
+					}, [N, T, P, _, O]),
 					A = Object(i.useCallback)(() => {
-						if (!T) return;
-						const e = M + 1;
-						P(M - 1), _(r.a(O, e)), _(r.d(O, e - 1))
-					}, [T, M, P, _, O]),
+						if (!M) return;
+						const e = T + 1;
+						P(T - 1), _(r.a(O, e)), _(r.d(O, e - 1))
+					}, [M, T, P, _, O]),
 					V = Object(i.useCallback)(() => {
-						const e = c[M] && c[M].outboundUrl,
-							t = M + 1;
+						const e = c[T] && c[T].outboundUrl,
+							t = T + 1;
 						e && _(r.c(O, e, t))
-					}, [_, O, M, c]),
+					}, [_, O, T, c]),
 					k = Object(i.useRef)(null),
 					B = Object(i.useRef)(null);
 				d(p.a.ArrowLeft, k.current, A), d(p.a.ArrowRight, k.current, D);
-				const W = c[M] && c[M].caption,
-					F = c[M] && c[M].outboundUrl,
+				const W = c[T] && c[T].caption,
+					F = c[T] && c[T].outboundUrl,
 					H = ((e, t, s) => {
 						const i = Object(b.f)(e),
 							n = Object(b.g)(i),
@@ -602,7 +602,7 @@
 					const d = e.shouldBlur && Object(b.d)(u, o.o || []) || void 0;
 					return n.a.createElement(w, {
 						slideIndex: s,
-						currentIndex: M,
+						currentIndex: T,
 						obfuscatedImage: d,
 						optimalImage: r,
 						originalImage: o.s,
@@ -617,7 +617,7 @@
 				}, Object(f.a)(!!e.isNSFW, !!e.isSpoiler))), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(I, {
 					onClick: A,
 					setFocusTo: B,
-					hasMoreSlides: T,
+					hasMoreSlides: M,
 					title: "Previous",
 					iconClassName: y.a.prevIcon,
 					className: y.a.prevButton
@@ -629,7 +629,7 @@
 					iconClassName: y.a.nextIcon,
 					className: y.a.nextButton
 				}))), c.length > 1 ? n.a.createElement(j, {
-					currentSlide: M + 1,
+					currentSlide: T + 1,
 					totalSlides: c.length,
 					toggleTileLayout: S && R || void 0
 				}) : ""), !W && !F || E || L ? !!s && !E && !L && n.a.createElement("div", {
@@ -962,8 +962,8 @@
 				j = s("./src/reddit/components/Media/ImageBox/index.tsx"),
 				S = s("./src/reddit/components/Media/MediaContainer/index.tsx"),
 				L = s("./src/reddit/components/Media/PollContainer/index.tsx"),
-				M = s("./src/reddit/components/Media/RichTextContainer/index.tsx"),
-				T = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
+				T = s("./src/reddit/components/Media/RichTextContainer/index.tsx"),
+				M = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
 				N = s("./src/reddit/components/Media/VideoBox/index.tsx"),
 				_ = s("./src/reddit/components/PlayButton/index.tsx"),
 				P = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
@@ -1228,7 +1228,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), e === A.Eb.OCR ? o += "".concat(ne).concat(t) : s.title && (o += "".concat(ne).concat(s.title)), e === A.Eb.ShortPostTitleOCR && (o += "".concat(ne).concat(t)), o.length > ie ? Object(y.a)(o, ie, h.cb) : o
+					return i && (o += i), e === A.Fb.OCR ? o += "".concat(ne).concat(t) : s.title && (o += "".concat(ne).concat(s.title)), e === A.Fb.ShortPostTitleOCR && (o += "".concat(ne).concat(t)), o.length > ie ? Object(y.a)(o, ie, h.cb) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(Y.j, this.state.viewportHeight),
@@ -1388,7 +1388,7 @@
 						case Y.o.RTJSON:
 							const i = Object(W.a)(m, null);
 							if (null === i) return;
-							return p || Object(B.a)(m) ? l.a.createElement(l.a.Fragment, null, l.a.createElement(M.a, {
+							return p || Object(B.a)(m) ? l.a.createElement(l.a.Fragment, null, l.a.createElement(T.a, {
 								canLoadContent: x,
 								className: e,
 								"data-click-id": "text",
@@ -1420,7 +1420,7 @@
 										isListing: r,
 										isCommentsPage: n
 									}), E.c.captureMessage(t)
-								}), Object(b.a)() && console.log("".concat(m.id, ": ").concat(t)), l.a.createElement(l.a.Fragment, null, l.a.createElement(M.a, {
+								}), Object(b.a)() && console.log("".concat(m.id, ": ").concat(t)), l.a.createElement(l.a.Fragment, null, l.a.createElement(T.a, {
 									postId: m.id,
 									className: e,
 									"data-click-id": "text",
@@ -1456,7 +1456,7 @@
 								shouldBlur: X,
 								source: m.preview.url,
 								originalSource: m.preview.url
-							})), l.a.createElement(_.a, null)))) : Y.h.has(m.media.provider) ? m.media.provider === Y.v.Twitter ? l.a.createElement(T.a, {
+							})), l.a.createElement(_.a, null)))) : Y.h.has(m.media.provider) ? m.media.provider === Y.v.Twitter ? l.a.createElement(M.a, {
 								canLoadContent: x,
 								embedBoxChildRef: this.storeChildRef,
 								media: m.media,
@@ -1934,4 +1934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.330e2a51e5d3b6ef1ed0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.a97f5b336279fd465159.js.map

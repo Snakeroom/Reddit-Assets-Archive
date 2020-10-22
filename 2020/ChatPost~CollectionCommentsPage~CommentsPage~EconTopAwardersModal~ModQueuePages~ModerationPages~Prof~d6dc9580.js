@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.f2f2e73b5757d68c646c.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.25e684ed2c04c5c142bd.js
+// Retrieved at 10/22/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"], {
 		"./src/graphql/operations/HideAwardOnTarget.json": function(e) {
@@ -306,9 +306,9 @@
 				y = s("./src/reddit/selectors/experiments/econLeaderboards.ts"),
 				I = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				_ = s("./src/reddit/selectors/user.ts"),
-				S = s("./src/reddit/selectors/userPrefs.ts"),
-				P = s("./node_modules/lodash/debounce.js"),
-				k = s.n(P),
+				P = s("./src/reddit/selectors/userPrefs.ts"),
+				S = s("./node_modules/lodash/debounce.js"),
+				k = s.n(S),
 				M = s("./src/lib/classNames/index.ts"),
 				N = s("./src/lib/fastdom/index.ts"),
 				B = s("./src/reddit/models/Gold/TopAwarded/index.ts"),
@@ -858,9 +858,9 @@
 					}))
 				},
 				_e = s("./src/reddit/actions/gold/reportAward.ts"),
-				Se = s("./src/reddit/controls/Button/index.tsx"),
-				Pe = s("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
-				ke = s.n(Pe);
+				Pe = s("./src/reddit/controls/Button/index.tsx"),
+				Se = s("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
+				ke = s.n(Se);
 			! function(e) {
 				e[e.BEGIN = 0] = "BEGIN", e[e.REPORT_COMMUNITY_AWARD = 1] = "REPORT_COMMUNITY_AWARD", e[e.FLAG_USAGE = 2] = "FLAG_USAGE"
 			}(ye || (ye = {}));
@@ -879,14 +879,14 @@
 							hk: "24QeOL"
 						}), h.b.SuccessAward))), e.onClose()
 					},
-					u = n.a.createElement(n.a.Fragment, null, n.a.createElement(Se.l, {
+					u = n.a.createElement(n.a.Fragment, null, n.a.createElement(Pe.l, {
 						onClick: () => {
 							t(Object(O.clickReportAward)(e.award, e.thing.id)), i(ye.REPORT_COMMUNITY_AWARD)
 						},
 						className: ke.a.reportStepButton
 					}, r.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
-					})), n.a.createElement(Se.l, {
+					})), n.a.createElement(Pe.l, {
 						onClick: () => {
 							t(Object(O.clickFlagAwardUsage)(e.award, e.thing.id)), i(ye.FLAG_USAGE)
 						},
@@ -954,7 +954,7 @@
 					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(C.a)(e),
 					isInEconLeaderboardsExperiment: y.b,
 					isLoggedIn: _.I,
-					prefersReducedAnimations: S.c
+					prefersReducedAnimations: P.c
 				}),
 				Be = e => Object(x.a)(e.id) ? e.postId : e.id,
 				Le = Object(o.b)(Ne, (e, t) => {
@@ -1769,8 +1769,8 @@
 				y = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				I = s("./src/reddit/components/QuarantinedLabel/index.tsx"),
 				_ = s("./src/reddit/components/SponsoredLabel/index.tsx"),
-				S = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				P = s("./src/reddit/constants/posts.ts"),
+				P = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				S = s("./src/reddit/constants/posts.ts"),
 				k = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				M = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				N = s("./src/reddit/components/Portal/index.tsx"),
@@ -1913,7 +1913,7 @@
 						flair: D,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: pe
-					})), l.belongsTo.type === P.a.SUBREDDIT && !Object(q.h)(l.author) && a.a.createElement(E.a, {
+					})), l.belongsTo.type === S.a.SUBREDDIT && !Object(q.h)(l.author) && a.a.createElement(E.a, {
 						className: Y.a.publicWallet,
 						contentId: l.id,
 						metaSeparator: a.a.createElement(he, null),
@@ -1927,7 +1927,7 @@
 						postId: l.id,
 						subredditName: M.name,
 						tooltipType: N
-					}, a.a.createElement(S.a, {
+					}, a.a.createElement(P.a, {
 						"data-click-id": "subreddit",
 						to: M.url
 					}, M.displayText)), M && M.isQuarantined && a.a.createElement(I.a, null), v && !ce && a.a.createElement(he, null), l.isSponsored && a.a.createElement(r.Fragment, null, a.a.createElement(_.a, null), a.a.createElement(he, null)), be, a.a.createElement(y.e, {
@@ -2447,13 +2447,13 @@
 						experimentEligibilitySelector: n.I,
 						experimentName: r.ib
 					});
-					return !(!t || Object(r.Sc)(t))
+					return !(!t || Object(r.Tc)(t))
 				},
 				i = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: n.I,
 						experimentName: r.ib
-					}) === r.ob.ListingEnabled
+					}) === r.pb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, s) {
@@ -2477,4 +2477,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.f2f2e73b5757d68c646c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580.25e684ed2c04c5c142bd.js.map

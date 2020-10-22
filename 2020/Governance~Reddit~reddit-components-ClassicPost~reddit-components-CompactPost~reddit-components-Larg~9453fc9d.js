@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.7fcef4edb653857a713d.js
-// Retrieved at 10/22/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.8b40ea38046c26cb0599.js
+// Retrieved at 10/22/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -3167,7 +3167,7 @@
 			const mt = Object(bt.a)(t => {
 				return !!Object(Ot.c)(t, {
 					experimentEligibilitySelector: Ot.a,
-					experimentName: pt.vb,
+					experimentName: pt.wb,
 					expEventOverride: !1
 				})
 			}, U.I, v.T, L.j, (t, e, n, r) => t && !e && !n.isNSFW && !r.some(t => "community-list" === t));
@@ -7676,7 +7676,7 @@
 								experimentName: i.t,
 								expEventOverride: e
 							});
-							return !!(Object(i.Sc)(n) ? void 0 : n)
+							return !!(Object(i.Tc)(n) ? void 0 : n)
 						})(n)) || (t => !1 !== t.collapsed)(e)
 					})
 				}
@@ -10170,8 +10170,8 @@
 			const i = t => {
 				return Object(s.c)(t, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.tb
-				}) === r.xb.Enabled
+					experimentName: r.ub
+				}) === r.yb.Enabled
 			}
 		},
 		"./src/reddit/selectors/experiments/gqlSubredditPage.ts": function(t, e, n) {
@@ -10214,40 +10214,40 @@
 			var r = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/reddit/constants/experiments.ts"),
 				i = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = t => s.tc.RulesAndWarnings === Object(i.c)(t, {
+			const o = t => s.uc.RulesAndWarnings === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.mc
+					experimentName: s.nc
 				}),
-				d = t => s.tc.WarningsOnly === Object(i.c)(t, {
+				d = t => s.uc.WarningsOnly === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.mc
+					experimentName: s.nc
 				}),
-				c = t => s.ic.Enabled === Object(i.c)(t, {
+				c = t => s.jc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.ac
+					experimentName: s.bc
 				}),
-				a = t => s.Cc.Enabled === Object(i.c)(t, {
-					experimentEligibilitySelector: i.a,
-					experimentName: s.xc
-				}),
-				u = t => s.Dc.Enabled === Object(i.c)(t, {
+				a = t => s.Dc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
 					experimentName: s.yc
 				}),
+				u = t => s.Ec.Enabled === Object(i.c)(t, {
+					experimentEligibilitySelector: i.a,
+					experimentName: s.zc
+				}),
 				l = (t, e, n) => {
 					const r = n(t, e);
-					return !(!r || !r.meter) && (r.meter.enabled && u(t) && s.Qc.Enabled === Object(i.c)(t, {
+					return !(!r || !r.meter) && (r.meter.enabled && u(t) && s.Rc.Enabled === Object(i.c)(t, {
 						experimentEligibilitySelector: i.a,
-						experimentName: s.Nc
+						experimentName: s.Oc
 					}))
 				},
 				b = Object(r.a)(t => Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.oc
-				}), t => t === s.uc.Enabled),
-				p = t => s.ic.Enabled === Object(i.c)(t, {
+					experimentName: s.pc
+				}), t => t === s.vc.Enabled),
+				p = t => s.jc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.nc
+					experimentName: s.oc
 				})
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(t, e, n) {
@@ -11176,4 +11176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.7fcef4edb653857a713d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.8b40ea38046c26cb0599.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.303ca83b410afd1dde89.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.feb3685cc53d2ec4bf1d.js
+// Retrieved at 10/22/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -5930,7 +5930,8 @@
 				Wt = s("./src/reddit/selectors/communityFlairs.ts"),
 				Dt = s("./src/reddit/constants/experiments.ts"),
 				Mt = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const Ft = Object(Mt.a)(Dt.kb);
+			Object(Mt.a)(Dt.kb);
+			const Ft = Object(Mt.a)(Dt.lb);
 			var Ut = s("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
 				Ht = s("./src/reddit/selectors/listings.ts"),
 				Kt = s("./src/reddit/components/SubredditSidebar/index.m.less"),
@@ -5953,7 +5954,7 @@
 						} = t;
 						return Object(Wt.c)(e, s)
 					},
-					isPredictionsEnabled: Ft,
+					isPredictionsLeaderboardsEnabled: Ft,
 					showGovernance: Lt.d.spPoints,
 					showLeaderboard: Lt.d.spLeaderboard,
 					showPowerups: Ut.a,
@@ -6008,7 +6009,7 @@
 				render() {
 					const {
 						className: e,
-						isPredictionsEnabled: t,
+						isPredictionsLeaderboardsEnabled: t,
 						listingName: s,
 						showGovernance: n,
 						showLeaderboard: r,
@@ -8202,4 +8203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.303ca83b410afd1dde89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.feb3685cc53d2ec4bf1d.js.map
