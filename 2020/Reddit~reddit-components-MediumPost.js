@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.442269dc537fa80c94d2.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.c66630798663cf15fe00.js
+// Retrieved at 10/22/2020, 4:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-MediumPost"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -173,10 +173,10 @@
 						hk: "39MDc9"
 					}),
 					[r.fb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
-						hk: "lYj4d"
+						hk: "28feBj"
 					}),
 					[r.ac]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
-						hk: "2OaZ5T"
+						hk: "10bv8G"
 					}),
 					[r.fb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
@@ -4389,4 +4389,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.442269dc537fa80c94d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.c66630798663cf15fe00.js.map
