@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.19bf6697dfa098fe38fb.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.71dda0a3906482b43942.js
+// Retrieved at 10/22/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -12,7 +12,7 @@
 			e.exports = JSON.parse('{"id":"fc24b7b690ad"}')
 		},
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"adb3244be9bd"}')
+			e.exports = JSON.parse('{"id":"b4cfc86d2c59"}')
 		},
 		"./src/graphql/operations/SubredditPostFlairStyleTemplates.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a87d9b91dc4"}')
@@ -8796,4 +8796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.19bf6697dfa098fe38fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.71dda0a3906482b43942.js.map

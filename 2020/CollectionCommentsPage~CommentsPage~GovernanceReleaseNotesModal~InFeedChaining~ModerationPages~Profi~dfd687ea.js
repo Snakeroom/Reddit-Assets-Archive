@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.88124dd8202f20e3da75.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.ad8166a91138bb8d2cae.js
+// Retrieved at 10/22/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "0a02d47-production"
+					SENTRY_RELEASE_VERSION: "82f51b3-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -1420,7 +1420,7 @@
 										isListing: r,
 										isCommentsPage: n
 									}), E.c.captureMessage(t)
-								}), Object(b.a)() && console.log("".concat(m.id, ": ").concat(t)), l.a.createElement(M.a, {
+								}), Object(b.a)() && console.log("".concat(m.id, ": ").concat(t)), l.a.createElement(l.a.Fragment, null, l.a.createElement(M.a, {
 									postId: m.id,
 									className: e,
 									"data-click-id": "text",
@@ -1429,9 +1429,15 @@
 								}, l.a.createElement(P.a, {
 									flairStyleTemplate: s,
 									html: m.isMeta ? Object(U.a)(m.media.content, m.id, $.a.hiddenLink) : m.media.content
+								})), l.a.createElement(L.a, {
+									postId: m.id,
+									isCommentsPage: !!n
 								}))
 							}
-							return null;
+							return l.a.createElement(L.a, {
+								postId: m.id,
+								isCommentsPage: !!n
+							});
 						case Y.o.EMBED:
 							return this.props.isMiniCard && m.preview && m.preview.url ? l.a.createElement(S.a, ee({}, Q, {
 								alwaysWrapMedia: !0
@@ -1928,4 +1934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.88124dd8202f20e3da75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.ad8166a91138bb8d2cae.js.map

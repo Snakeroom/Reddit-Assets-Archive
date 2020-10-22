@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.532fb67f3d4e6051b53b.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.fcd1b47c0fc4d7052891.js
+// Retrieved at 10/22/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -77,7 +77,7 @@
 			}
 		},
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"5931b21efba3"}')
+			e.exports = JSON.parse('{"id":"a04c25fcce11"}')
 		},
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
 			"use strict";
@@ -18750,4 +18750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.532fb67f3d4e6051b53b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fcd1b47c0fc4d7052891.js.map

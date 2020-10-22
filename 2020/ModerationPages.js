@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.619565573661e9840b56.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b330a1083f64c61808f7.js
+// Retrieved at 10/22/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -147,7 +147,7 @@
 			e.exports = JSON.parse('{"id":"dea861ad7f0d"}')
 		},
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"5931b21efba3"}')
+			e.exports = JSON.parse('{"id":"a04c25fcce11"}')
 		},
 		"./src/graphql/operations/FetchModerationLogActions.json": function(e) {
 			e.exports = JSON.parse('{"id":"f20f90e251f3"}')
@@ -31556,4 +31556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.619565573661e9840b56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b330a1083f64c61808f7.js.map

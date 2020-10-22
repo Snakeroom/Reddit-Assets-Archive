@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4e2e4428251138226dbd.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.96b79f75a4057968fde9.js
+// Retrieved at 10/22/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -395,13 +395,13 @@
 			e.exports = JSON.parse('{"id":"8f2551b0bce3"}')
 		},
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"5931b21efba3"}')
+			e.exports = JSON.parse('{"id":"a04c25fcce11"}')
 		},
 		"./src/graphql/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"3e38b888d309"}')
+			e.exports = JSON.parse('{"id":"befc715bc764"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"fc5afcd4a229"}')
+			e.exports = JSON.parse('{"id":"7045f0178bed"}')
 		},
 		"./src/graphql/operations/SubredditRecommendations.json": function(e) {
 			e.exports = JSON.parse('{"id":"3c4d88474140"}')
@@ -14762,4 +14762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4e2e4428251138226dbd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.96b79f75a4057968fde9.js.map
