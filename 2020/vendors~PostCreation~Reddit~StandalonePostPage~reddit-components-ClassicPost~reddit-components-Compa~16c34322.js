@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322.9f0752d4fc0b95d81e9e.js
-// Retrieved at 8/26/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322.27cbcb0a73746fa97867.js
+// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -206,63 +206,6 @@
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, r) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
-		},
-		"./node_modules/react-fast-compare/index.js": function(e, t) {
-			var r = "undefined" != typeof Element,
-				n = "function" == typeof Map,
-				o = "function" == typeof Set,
-				i = "function" == typeof ArrayBuffer && !!ArrayBuffer.isView;
-			e.exports = function(e, t) {
-				try {
-					return function e(t, a) {
-						if (t === a) return !0;
-						if (t && a && "object" == typeof t && "object" == typeof a) {
-							if (t.constructor !== a.constructor) return !1;
-							var s, c, f, u;
-							if (Array.isArray(t)) {
-								if ((s = t.length) != a.length) return !1;
-								for (c = s; 0 != c--;)
-									if (!e(t[c], a[c])) return !1;
-								return !0
-							}
-							if (n && t instanceof Map && a instanceof Map) {
-								if (t.size !== a.size) return !1;
-								for (u = t.entries(); !(c = u.next()).done;)
-									if (!a.has(c.value[0])) return !1;
-								for (u = t.entries(); !(c = u.next()).done;)
-									if (!e(c.value[1], a.get(c.value[0]))) return !1;
-								return !0
-							}
-							if (o && t instanceof Set && a instanceof Set) {
-								if (t.size !== a.size) return !1;
-								for (u = t.entries(); !(c = u.next()).done;)
-									if (!a.has(c.value[0])) return !1;
-								return !0
-							}
-							if (i && ArrayBuffer.isView(t) && ArrayBuffer.isView(a)) {
-								if ((s = t.length) != a.length) return !1;
-								for (c = s; 0 != c--;)
-									if (t[c] !== a[c]) return !1;
-								return !0
-							}
-							if (t.constructor === RegExp) return t.source === a.source && t.flags === a.flags;
-							if (t.valueOf !== Object.prototype.valueOf) return t.valueOf() === a.valueOf();
-							if (t.toString !== Object.prototype.toString) return t.toString() === a.toString();
-							if ((s = (f = Object.keys(t)).length) !== Object.keys(a).length) return !1;
-							for (c = s; 0 != c--;)
-								if (!Object.prototype.hasOwnProperty.call(a, f[c])) return !1;
-							if (r && t instanceof Element) return !1;
-							for (c = s; 0 != c--;)
-								if (("_owner" !== f[c] && "__v" !== f[c] && "__o" !== f[c] || !t.$$typeof) && !e(t[f[c]], a[f[c]])) return !1;
-							return !0
-						}
-						return t != t && a != a
-					}(e, t)
-				} catch (a) {
-					if ((a.message || "").match(/stack|recursion/i)) return console.warn("react-fast-compare cannot handle circular refs"), !1;
-					throw a
-				}
-			}
 		},
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, r) {
 			"use strict";
@@ -1269,7 +1212,7 @@
 						}
 					}]
 				}),
-				ce = r("./node_modules/react-fast-compare/index.js"),
+				ce = r("./node_modules/react-popper/node_modules/react-fast-compare/index.js"),
 				fe = r.n(ce),
 				ue = function(e) {
 					return e.reduce((function(e, t) {
@@ -1352,7 +1295,64 @@
 						forceUpdate: p.current ? p.current.forceUpdate : null
 					}
 				}
+		},
+		"./node_modules/react-popper/node_modules/react-fast-compare/index.js": function(e, t) {
+			var r = "undefined" != typeof Element,
+				n = "function" == typeof Map,
+				o = "function" == typeof Set,
+				i = "function" == typeof ArrayBuffer && !!ArrayBuffer.isView;
+			e.exports = function(e, t) {
+				try {
+					return function e(t, a) {
+						if (t === a) return !0;
+						if (t && a && "object" == typeof t && "object" == typeof a) {
+							if (t.constructor !== a.constructor) return !1;
+							var s, c, f, u;
+							if (Array.isArray(t)) {
+								if ((s = t.length) != a.length) return !1;
+								for (c = s; 0 != c--;)
+									if (!e(t[c], a[c])) return !1;
+								return !0
+							}
+							if (n && t instanceof Map && a instanceof Map) {
+								if (t.size !== a.size) return !1;
+								for (u = t.entries(); !(c = u.next()).done;)
+									if (!a.has(c.value[0])) return !1;
+								for (u = t.entries(); !(c = u.next()).done;)
+									if (!e(c.value[1], a.get(c.value[0]))) return !1;
+								return !0
+							}
+							if (o && t instanceof Set && a instanceof Set) {
+								if (t.size !== a.size) return !1;
+								for (u = t.entries(); !(c = u.next()).done;)
+									if (!a.has(c.value[0])) return !1;
+								return !0
+							}
+							if (i && ArrayBuffer.isView(t) && ArrayBuffer.isView(a)) {
+								if ((s = t.length) != a.length) return !1;
+								for (c = s; 0 != c--;)
+									if (t[c] !== a[c]) return !1;
+								return !0
+							}
+							if (t.constructor === RegExp) return t.source === a.source && t.flags === a.flags;
+							if (t.valueOf !== Object.prototype.valueOf) return t.valueOf() === a.valueOf();
+							if (t.toString !== Object.prototype.toString) return t.toString() === a.toString();
+							if ((s = (f = Object.keys(t)).length) !== Object.keys(a).length) return !1;
+							for (c = s; 0 != c--;)
+								if (!Object.prototype.hasOwnProperty.call(a, f[c])) return !1;
+							if (r && t instanceof Element) return !1;
+							for (c = s; 0 != c--;)
+								if (("_owner" !== f[c] && "__v" !== f[c] && "__o" !== f[c] || !t.$$typeof) && !e(t[f[c]], a[f[c]])) return !1;
+							return !0
+						}
+						return t != t && a != a
+					}(e, t)
+				} catch (a) {
+					if ((a.message || "").match(/stack|recursion/i)) return console.warn("react-fast-compare cannot handle circular refs"), !1;
+					throw a
+				}
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322.9f0752d4fc0b95d81e9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322.27cbcb0a73746fa97867.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.81ebbc7161feca596327.js
-// Retrieved at 10/22/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.8aa85251512f678faf48.js
+// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -96,7 +96,7 @@
 			})), n.d(t, "a", (function() {
 				return V
 			})), n.d(t, "e", (function() {
-				return Z
+				return J
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/omit.js"),
@@ -213,7 +213,7 @@
 							if (e && e.errors && e.errors.length) return void r(Object(g.stripeApiError)(A(e.errors)));
 							if (e.ok && "PAID" !== e.payment.status) return void u();
 							const t = Object(v.i)(c());
-							t && r(Z({
+							t && r(J({
 								subredditId: n,
 								powerupsCount: o,
 								user: t,
@@ -272,7 +272,7 @@
 									token: e.providerExecution.billingAgreementToken,
 									url: e.providerExecution.billingAgreementApprovalUrl
 								};
-								if ("PAID" === o && r) return a(Z({
+								if ("PAID" === o && r) return a(J({
 									subredditId: t,
 									powerupsCount: s,
 									user: r,
@@ -388,7 +388,7 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, q = Object(u.a)(h.T), Z = e => async (t, n) => {
+				}, q = Object(u.a)(h.T), J = e => async (t, n) => {
 					t(q(e)), t(Object(y.f)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
@@ -1428,8 +1428,8 @@
 				z = n("./src/reddit/controls/OutboundLink/index.tsx"),
 				V = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				q = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				Z = n("./src/reddit/icons/svgs/Premium/index.tsx"),
-				J = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				J = n("./src/reddit/icons/svgs/Premium/index.tsx"),
+				Z = n("./src/reddit/icons/svgs/Settings/index.tsx"),
 				K = n("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.tsx"),
 				Y = n("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
 				Q = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserBanner/index.tsx"),
@@ -1491,7 +1491,7 @@
 					}))), !n && m && a.a.createElement(H.a, {
 						to: "/settings/profile",
 						className: ee.a.settingsLink
-					}, a.a.createElement(J.a, {
+					}, a.a.createElement(Z.a, {
 						className: ne.a.settingsIcon
 					})), f && a.a.createElement("h4", {
 						className: ee.a.userTitle
@@ -1510,7 +1510,7 @@
 							hk: "3Fylv"
 						}),
 						href: "".concat(W.a.redditUrl, "/premium")
-					}, a.a.createElement(Z.a, {
+					}, a.a.createElement(J.a, {
 						className: ee.a.premiumIcon
 					})), g && m && a.a.createElement(Y.a, {
 						currentUserHasSnoovatar: !1,
@@ -2340,8 +2340,8 @@
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				Z = n("./src/reddit/helpers/trackers/premiumSettings.ts"),
-				J = n("./src/reddit/selectors/activeModalId.ts"),
+				J = n("./src/reddit/helpers/trackers/premiumSettings.ts"),
+				Z = n("./src/reddit/selectors/activeModalId.ts"),
 				K = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
 				Y = n("./src/reddit/selectors/user.ts"),
 				Q = n("./src/reddit/components/Settings/index.m.less"),
@@ -2350,7 +2350,7 @@
 				ee = "update_card_modal_id",
 				te = Object(l.c)({
 					arePowerupsEnabled: K.a,
-					cancelSubscriptionModalIsOpen: Object(J.b)("settings_optout_modal_id"),
+					cancelSubscriptionModalIsOpen: Object(Z.b)("settings_optout_modal_id"),
 					goldExpiration: Y.n,
 					hasAndroidSubscription: Y.o,
 					hasIOSSubscription: Y.s,
@@ -2358,7 +2358,7 @@
 					hasPaypalSubscription: Y.u,
 					isGold: Y.q,
 					isPremiumSubscriber: Y.r,
-					updateCardModalIsOpen: Object(J.b)(ee)
+					updateCardModalIsOpen: Object(Z.b)(ee)
 				}),
 				ne = Object(i.b)(te, e => ({
 					navigateToPurchasePremium: () => e(Object(c.b)("/premium")),
@@ -2380,13 +2380,13 @@
 							navigateToPurchasePremium: t,
 							sendEvent: n
 						} = this.props;
-						n(Object(Z.d)()), t()
+						n(Object(J.d)()), t()
 					}, this.onCancelClick = () => {
 						const {
 							sendEvent: e,
 							toggleCancelSubscriptionModal: t
 						} = this.props;
-						e(Object(Z.a)()), t()
+						e(Object(J.a)()), t()
 					}, this.onHideAdsToggle = () => {
 						const {
 							update: e,
@@ -2395,7 +2395,7 @@
 							},
 							sendEvent: n
 						} = this.props;
-						n(t ? Object(Z.f)() : Object(Z.h)()), e(!t, "hideAds")
+						n(t ? Object(J.f)() : Object(J.h)()), e(!t, "hideAds")
 					}, this.onHighlightCommentsToggle = () => {
 						const {
 							update: e,
@@ -2404,22 +2404,22 @@
 							},
 							sendEvent: n
 						} = this.props;
-						n(t ? Object(Z.g)() : Object(Z.i)()), e(!t, "highlightComments")
+						n(t ? Object(J.g)() : Object(J.i)()), e(!t, "highlightComments")
 					}, this.onYesCancelSubscription = () => {
 						const {
 							sendEvent: e
 						} = this.props;
-						e(Object(Z.c)()), this.navigateToCancel()
+						e(Object(J.c)()), this.navigateToCancel()
 					}, this.onNoCancelSubscription = () => {
 						const {
 							sendEvent: e,
 							toggleCancelSubscriptionModal: t
 						} = this.props;
-						e(Object(Z.b)()), t()
+						e(Object(J.b)()), t()
 					}
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(Z.j)())
+					this.props.sendEvent(Object(J.j)())
 				}
 				navigateToCancel() {
 					const {
@@ -4347,8 +4347,8 @@
 					}))))
 				}
 			}
-			var Z = F(q),
-				J = n("./src/reddit/components/Settings/modalIds.ts"),
+			var J = F(q),
+				Z = n("./src/reddit/components/Settings/modalIds.ts"),
 				K = n("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
 				Y = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				Q = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
@@ -4378,8 +4378,8 @@
 				}),
 				ne = Object(r.b)(te, e => ({
 					changeLanguage: t => e(Object(E.v)(t)),
-					openChangeEmailModal: () => e(Object(C.i)(J.a)),
-					openSSOCreatePasswordForEmailModal: () => e(Object(C.h)(J.l)),
+					openChangeEmailModal: () => e(Object(C.i)(Z.a)),
+					openSSOCreatePasswordForEmailModal: () => e(Object(C.h)(Z.l)),
 					resendEmail: () => e(Object(_.v)())
 				})),
 				se = e => {
@@ -4422,7 +4422,7 @@
 						text: r,
 						value: r
 					}));
-					return n ? o.a.createElement(Z, {
+					return n ? o.a.createElement(J, {
 						email: u.email
 					}) : o.a.createElement(o.a.Fragment, null, o.a.createElement(K.a, null, s.fbt._("Account preferences", null, {
 						hk: "344jzn"
@@ -4522,8 +4522,8 @@
 				shouldShowSSOCreatePasswordModal: S.e
 			});
 			var je = Object(r.b)(Se, e => ({
-					openSSOCreatePasswordForLinkAppleModal: () => e(Object(C.h)(J.i)),
-					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(C.h)(J.j)),
+					openSSOCreatePasswordForLinkAppleModal: () => e(Object(C.h)(Z.i)),
+					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(C.h)(Z.j)),
 					openLinkAppleSSOModal: () => e(Object(y.f)()),
 					openUnlinkAppleSSOModal: () => e(Object(y.j)())
 				}))(e => {
@@ -4586,8 +4586,8 @@
 				shouldShowSSOCreatePasswordModal: S.e
 			});
 			var Le = Object(r.b)(Be, e => ({
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(C.h)(J.m)),
-					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(C.h)(J.n)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(C.h)(Z.m)),
+					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(C.h)(Z.n)),
 					openLinkGoogleSSOModal: () => e(Object(y.g)()),
 					openUnlinkGoogleSSOModal: () => e(Object(y.k)())
 				}))(e => {
@@ -4613,8 +4613,8 @@
 			const ze = ye.a.wrapped(He.a, "TwitterIcon", ve.a),
 				Ve = 15,
 				qe = ye.a.wrapped(Fe.a, "LoadingIcon", ve.a),
-				Ze = ye.a.wrapped(Y.c, "ConnectTwitter", ve.a),
-				Je = ye.a.wrapped(w.i, "ConnectTwitterButton", ve.a),
+				Je = ye.a.wrapped(Y.c, "ConnectTwitter", ve.a),
+				Ze = ye.a.wrapped(w.i, "ConnectTwitterButton", ve.a),
 				Ke = ye.a.span("TextAndIconWrapper", ve.a),
 				Ye = ye.a.wrapped(w.m, "DisconnectButton", ve.a),
 				Qe = ye.a.span("Username", ve.a),
@@ -4665,7 +4665,7 @@
 					}), c = s.fbt._("Connect to Twitter", null, {
 						hk: "3r8ltg"
 					});
-					return o.a.createElement(Ze, {
+					return o.a.createElement(Je, {
 						className: i,
 						label: s.fbt._("Connect to Twitter", null, {
 							hk: "4rhAYG"
@@ -4678,7 +4678,7 @@
 						Icon: r ? qe : ze,
 						text: r ? null : c,
 						onClick: n
-					}) : o.a.createElement(Je, {
+					}) : o.a.createElement(Ze, {
 						className: i,
 						onClick: n
 					}, r ? o.a.createElement(qe, {
@@ -4761,7 +4761,7 @@
 					deactivate: t => {
 						e(Object(_.u)(t))
 					},
-					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(C.h)(J.k)),
+					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(C.h)(Z.k)),
 					optOut: async () => {
 						if ("new.reddit.com" === window.location.host) return window.location.assign("https://old.reddit.com/prefs");
 						f.a.get("rseor3") && f.a.remove("rseor3", {
@@ -4975,9 +4975,9 @@
 					}, "SHOW ALL")) : null))
 				}
 			}
-			var Zt = n("./src/reddit/components/Settings/PrivacyForm.m.less"),
-				Jt = n.n(Zt);
-			const Kt = ye.a.div("ListsWrapper", Jt.a),
+			var Jt = n("./src/reddit/components/Settings/PrivacyForm.m.less"),
+				Zt = n.n(Jt);
+			const Kt = ye.a.div("ListsWrapper", Zt.a),
 				Yt = Object(c.c)({
 					blocked: e => e.user.blocked.data,
 					blockedApi: e => e.user.blocked.api,
@@ -5330,17 +5330,17 @@
 				zn = n("./src/reddit/icons/svgs/CompactPosts/index.tsx"),
 				Vn = n("./src/reddit/icons/svgs/LargePosts/index.tsx"),
 				qn = n("./src/reddit/controls/Dropdown/index.m.less"),
-				Zn = n.n(qn);
-			const Jn = {
+				Jn = n.n(qn);
+			const Zn = {
 				[Hn.d.Card]: Vn.a,
 				[Hn.d.Classic]: Gn.a,
 				[Hn.d.Compact]: zn.a
 			};
 
 			function Kn(e) {
-				const t = Jn[e.layout];
+				const t = Zn[e.layout];
 				return o.a.createElement(t, {
-					className: Zn.a.iconStyles
+					className: Jn.a.iconStyles
 				})
 			}
 			const Yn = [Hn.d.Card, Hn.d.Classic, Hn.d.Compact];
@@ -6221,7 +6221,7 @@
 			const qs = Object(c.c)({
 					savedPayments: rn.q
 				}),
-				Zs = Object(r.b)(qs, e => ({
+				Js = Object(r.b)(qs, e => ({
 					onError: t => e(Object(N.e)({
 						duration: 5e3,
 						kind: R.b.Error,
@@ -6235,16 +6235,16 @@
 						}))
 					}
 				}));
-			var Js = Object(nn.b)(Zs(Vs)),
+			var Zs = Object(nn.b)(Js(Vs)),
 				Ks = n("./src/reddit/components/Settings/Payments/index.m.less"),
 				Ys = n.n(Ks);
 			var Qs = () => o.a.createElement(ie.a, null, o.a.createElement(Fs, {
 					className: Ys.a.header
-				}), o.a.createElement(Js, null)),
+				}), o.a.createElement(Zs, null)),
 				Xs = n("./src/reddit/components/Settings/PremiumForm.tsx");
-			const $s = ye.a.span("SubheaderLink", Jt.a),
-				ea = ye.a.button("GenerateBackupCodesButton", Jt.a),
-				ta = ye.a.wrapped(Y.f, "ThirdPartyAuth", Jt.a),
+			const $s = ye.a.span("SubheaderLink", Zt.a),
+				ea = ye.a.button("GenerateBackupCodesButton", Zt.a),
+				ta = ye.a.wrapped(Y.f, "ThirdPartyAuth", Zt.a),
 				na = Object(c.c)({
 					blocked: e => e.user.blocked.data,
 					blockedApi: e => e.user.blocked.api,
@@ -6257,7 +6257,7 @@
 			var sa = Object(r.b)(na, (e, t) => ({
 					addBlocked: t => e(Object(Et.h)(t)),
 					addWhitelisted: t => e(Object(wt.g)(t)),
-					openSSOCreatePasswordFor2FAModal: () => e(Object(C.h)(J.h)),
+					openSSOCreatePasswordFor2FAModal: () => e(Object(C.h)(Z.h)),
 					removeWhitelisted: t => e(Object(wt.h)(t)),
 					removeBlocked: t => e(Object(Et.g)(t)),
 					saveChatSettings: t => e(Object(xt.c)(t)),
@@ -6408,7 +6408,7 @@
 						})), "."))
 					}), o.a.createElement(ta, {
 						className: Object(m.a)({
-							[Jt.a["m-responsive"]]: v
+							[Zt.a["m-responsive"]]: v
 						}),
 						label: s.fbt._("Manage third-party app authorization", null, {
 							hk: "3J65so"
@@ -6776,8 +6776,8 @@
 				za = n("./src/lib/addQueryParams/index.ts"),
 				Va = n("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
 				qa = n("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
-				Za = n("./src/reddit/components/Governance/TransactionModals/CancelMembershipCard/index.m.less"),
-				Ja = n.n(Za);
+				Ja = n("./src/reddit/components/Governance/TransactionModals/CancelMembershipCard/index.m.less"),
+				Za = n.n(Ja);
 			const {
 				fbt: Ka
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -6796,13 +6796,13 @@
 						s: t.id
 					});
 					return o.a.createElement("div", {
-						className: Ja.a.body
+						className: Za.a.body
 					}, o.a.createElement("section", {
-						className: Ja.a.leftSection
+						className: Za.a.leftSection
 					}, o.a.createElement("div", {
-						className: Ja.a.sectionHeader
+						className: Za.a.sectionHeader
 					}, "Cancel your subscription with your mobile device"), o.a.createElement("div", {
-						className: Ja.a.content
+						className: Za.a.content
 					}, o.a.createElement(Va.a, {
 						index: "1",
 						color: s
@@ -6819,7 +6819,7 @@
 					}, Ka._("Approve your subscription cancellation", null, {
 						hk: "2oJWUP"
 					})))), o.a.createElement("section", {
-						className: Ja.a.rightSection
+						className: Za.a.rightSection
 					}, o.a.createElement(qa.a, {
 						url: a,
 						scale: 4
@@ -7227,12 +7227,12 @@
 				zo = n("./src/reddit/constants/experiments.ts"),
 				Vo = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				qo = n("./src/reddit/selectors/experiments/utils.ts");
-			const Zo = Object(c.a)(e => Object(Vo.c)(e, {
-					experimentName: zo.Z,
-					experimentEligibilitySelector: Jo
+			const Jo = Object(c.a)(e => Object(Vo.c)(e, {
+					experimentName: zo.bb,
+					experimentEligibilitySelector: Zo
 				}), qo.a),
-				Jo = e => Object(j.H)(e) || Object(j.I)(e),
-				Ko = Object(c.a)(Zo, e => e === zo.bb.Enabled);
+				Zo = e => Object(j.H)(e) || Object(j.I)(e),
+				Ko = Object(c.a)(Jo, e => e === zo.db.Enabled);
 			var Yo = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
 				Qo = n("./src/reddit/selectors/platform.ts"),
 				Xo = n("./src/reddit/pages/Settings/index.m.less"),
@@ -7540,4 +7540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.81ebbc7161feca596327.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.8aa85251512f678faf48.js.map

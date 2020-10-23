@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.d48d65877b68c301b4af.js
-// Retrieved at 10/22/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.2425a954bec32936ff16.js
+// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -5840,8 +5840,8 @@
 				Mt = n("./src/reddit/selectors/communityFlairs.ts"),
 				Rt = n("./src/reddit/constants/experiments.ts"),
 				Dt = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			Object(Dt.a)(Rt.kb);
-			const Ut = Object(Dt.a)(Rt.lb);
+			Object(Dt.a)(Rt.mb);
+			const Ut = Object(Dt.a)(Rt.nb);
 			var Wt = n("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
 				Ht = n("./src/reddit/selectors/listings.ts"),
 				Vt = n("./src/reddit/components/SubredditSidebar/index.m.less"),
@@ -9302,7 +9302,7 @@
 						experimentName: e,
 						experimentEligibilitySelector: t
 					}))
-				}(Z.K) && (null == n ? void 0 : n.isEligible) && !(null == n ? void 0 : n.response) ? r.a.createElement(J, {
+				}(Z.M) && (null == n ? void 0 : n.isEligible) && !(null == n ? void 0 : n.response) ? r.a.createElement(J, {
 					subredditId: t,
 					survey: n
 				}) : r.a.createElement(W, {
@@ -10380,8 +10380,8 @@
 			const o = e => r.e[Object(a.N)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: s.G
-				}) === s.Q.Treatment
+					experimentName: s.I
+				}) === s.S.Treatment
 		},
 		"./src/reddit/selectors/experiments/downToChat.ts": function(e, t, n) {
 			"use strict";
@@ -10391,9 +10391,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const i = e => s.ab.Enabled === Object(r.c)(e, {
+			const i = e => s.cb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: a.I,
-				experimentName: s.Y
+				experimentName: s.ab
 			})
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
@@ -10409,15 +10409,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: a.I,
-						experimentName: s.ib
+						experimentName: s.kb
 					});
-					return !(!t || Object(s.Tc)(t))
+					return !(!t || Object(s.Vc)(t))
 				},
 				o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a.I,
-						experimentName: s.ib
-					}) === s.pb.ListingEnabled
+						experimentName: s.kb
+					}) === s.rb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/snoovatar.ts": function(e, t, n) {
@@ -10427,11 +10427,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.Cc.Enabled === Object(r.c)(e, {
+			const a = e => s.Ec.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.wc
+				experimentName: s.yc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d48d65877b68c301b4af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2425a954bec32936ff16.js.map

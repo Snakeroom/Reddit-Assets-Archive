@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.e938daa036fba163021c.js
-// Retrieved at 10/14/2020, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.26f6f55d4bdf756f4363.js
+// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -20350,7 +20350,7 @@
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
 				o = n("./node_modules/object-assign/index.js"),
-				i = n("./node_modules/scheduler/index.js");
+				i = n("./node_modules/react-dom/node_modules/scheduler/index.js");
 
 			function s(e) {
 				for (var t = e.message, n = "https://reactjs.org/docs/error-decoder.html?invariant=" + t, r = 1; r < arguments.length; r++) n += "&args[]=" + encodeURIComponent(arguments[r]);
@@ -25313,6 +25313,327 @@
 				}
 			}(), e.exports = n("./node_modules/react-dom/cjs/react-dom.production.min.js")
 		},
+		"./node_modules/react-dom/node_modules/scheduler/cjs/scheduler.production.min.js": function(e, t, n) {
+			"use strict";
+			Object.defineProperty(t, "__esModule", {
+				value: !0
+			});
+			var r = void 0,
+				o = void 0,
+				i = void 0,
+				s = void 0,
+				a = void 0;
+			if (t.unstable_now = void 0, t.unstable_forceFrameRate = void 0, "undefined" == typeof window || "function" != typeof MessageChannel) {
+				var u = null,
+					c = null,
+					l = function() {
+						if (null !== u) try {
+							var e = t.unstable_now();
+							u(!0, e), u = null
+						} catch (n) {
+							throw setTimeout(l, 0), n
+						}
+					};
+				t.unstable_now = function() {
+					return Date.now()
+				}, r = function(e) {
+					null !== u ? setTimeout(r, 0, e) : (u = e, setTimeout(l, 0))
+				}, o = function(e, t) {
+					c = setTimeout(e, t)
+				}, i = function() {
+					clearTimeout(c)
+				}, s = function() {
+					return !1
+				}, a = t.unstable_forceFrameRate = function() {}
+			} else {
+				var d = window.performance,
+					f = window.Date,
+					h = window.setTimeout,
+					p = window.clearTimeout,
+					m = window.requestAnimationFrame,
+					b = window.cancelAnimationFrame;
+				"undefined" != typeof console && ("function" != typeof m && console.error("This browser doesn't support requestAnimationFrame. Make sure that you load a polyfill in older browsers. https://fb.me/react-polyfills"), "function" != typeof b && console.error("This browser doesn't support cancelAnimationFrame. Make sure that you load a polyfill in older browsers. https://fb.me/react-polyfills")), t.unstable_now = "object" == typeof d && "function" == typeof d.now ? function() {
+					return d.now()
+				} : function() {
+					return f.now()
+				};
+				var _ = !1,
+					y = null,
+					v = -1,
+					g = -1,
+					j = 33.33,
+					w = -1,
+					x = -1,
+					E = 0,
+					S = !1;
+				s = function() {
+					return t.unstable_now() >= E
+				}, a = function() {}, t.unstable_forceFrameRate = function(e) {
+					0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing framerates higher than 125 fps is not unsupported") : 0 < e ? (j = Math.floor(1e3 / e), S = !0) : (j = 33.33, S = !1)
+				};
+				var k = function() {
+						if (null !== y) {
+							var e = t.unstable_now(),
+								n = 0 < E - e;
+							try {
+								y(n, e) || (y = null)
+							} catch (r) {
+								throw O.postMessage(null), r
+							}
+						}
+					},
+					T = new MessageChannel,
+					O = T.port2;
+				T.port1.onmessage = k;
+				var I = function(e) {
+					if (null === y) x = w = -1, _ = !1;
+					else {
+						_ = !0, m((function(e) {
+							p(v), I(e)
+						}));
+						var n = function() {
+							E = t.unstable_now() + j / 2, k(), v = h(n, 3 * j)
+						};
+						if (v = h(n, 3 * j), -1 !== w && .1 < e - w) {
+							var r = e - w;
+							!S && -1 !== x && r < j && x < j && (8.33 > (j = r < x ? x : r) && (j = 8.33)), x = r
+						}
+						w = e, E = e + j, O.postMessage(null)
+					}
+				};
+				r = function(e) {
+					y = e, _ || (_ = !0, m((function(e) {
+						I(e)
+					})))
+				}, o = function(e, n) {
+					g = h((function() {
+						e(t.unstable_now())
+					}), n)
+				}, i = function() {
+					p(g), g = -1
+				}
+			}
+			var C = null,
+				R = null,
+				A = null,
+				M = 3,
+				P = !1,
+				N = !1,
+				B = !1;
+
+			function L(e, t) {
+				var n = e.next;
+				if (n === e) C = null;
+				else {
+					e === C && (C = n);
+					var r = e.previous;
+					r.next = n, n.previous = r
+				}
+				e.next = e.previous = null, n = e.callback, r = M;
+				var o = A;
+				M = e.priorityLevel, A = e;
+				try {
+					var i = e.expirationTime <= t;
+					switch (M) {
+						case 1:
+							var s = n(i);
+							break;
+						case 2:
+						case 3:
+						case 4:
+							s = n(i);
+							break;
+						case 5:
+							s = n(i)
+					}
+				} catch (a) {
+					throw a
+				} finally {
+					M = r, A = o
+				}
+				if ("function" == typeof s)
+					if (t = e.expirationTime, e.callback = s, null === C) C = e.next = e.previous = e;
+					else {
+						s = null, i = C;
+						do {
+							if (t <= i.expirationTime) {
+								s = i;
+								break
+							}
+							i = i.next
+						} while (i !== C);
+						null === s ? s = C : s === C && (C = e), (t = s.previous).next = s.previous = e, e.next = s, e.previous = t
+					}
+			}
+
+			function U(e) {
+				if (null !== R && R.startTime <= e)
+					do {
+						var t = R,
+							n = t.next;
+						if (t === n) R = null;
+						else {
+							R = n;
+							var r = t.previous;
+							r.next = n, n.previous = r
+						}
+						t.next = t.previous = null, q(t, t.expirationTime)
+					} while (null !== R && R.startTime <= e)
+			}
+
+			function D(e) {
+				B = !1, U(e), N || (null !== C ? (N = !0, r(F)) : null !== R && o(D, R.startTime - e))
+			}
+
+			function F(e, n) {
+				N = !1, B && (B = !1, i()), U(n), P = !0;
+				try {
+					if (e) {
+						if (null !== C)
+							do {
+								L(C, n), U(n = t.unstable_now())
+							} while (null !== C && !s())
+					} else
+						for (; null !== C && C.expirationTime <= n;) L(C, n), U(n = t.unstable_now());
+					return null !== C || (null !== R && o(D, R.startTime - n), !1)
+				} finally {
+					P = !1
+				}
+			}
+
+			function z(e) {
+				switch (e) {
+					case 1:
+						return -1;
+					case 2:
+						return 250;
+					case 5:
+						return 1073741823;
+					case 4:
+						return 1e4;
+					default:
+						return 5e3
+				}
+			}
+
+			function q(e, t) {
+				if (null === C) C = e.next = e.previous = e;
+				else {
+					var n = null,
+						r = C;
+					do {
+						if (t < r.expirationTime) {
+							n = r;
+							break
+						}
+						r = r.next
+					} while (r !== C);
+					null === n ? n = C : n === C && (C = e), (t = n.previous).next = n.previous = e, e.next = n, e.previous = t
+				}
+			}
+			var H = a;
+			t.unstable_ImmediatePriority = 1, t.unstable_UserBlockingPriority = 2, t.unstable_NormalPriority = 3, t.unstable_IdlePriority = 5, t.unstable_LowPriority = 4, t.unstable_runWithPriority = function(e, t) {
+				switch (e) {
+					case 1:
+					case 2:
+					case 3:
+					case 4:
+					case 5:
+						break;
+					default:
+						e = 3
+				}
+				var n = M;
+				M = e;
+				try {
+					return t()
+				} finally {
+					M = n
+				}
+			}, t.unstable_next = function(e) {
+				switch (M) {
+					case 1:
+					case 2:
+					case 3:
+						var t = 3;
+						break;
+					default:
+						t = M
+				}
+				var n = M;
+				M = t;
+				try {
+					return e()
+				} finally {
+					M = n
+				}
+			}, t.unstable_scheduleCallback = function(e, n, s) {
+				var a = t.unstable_now();
+				if ("object" == typeof s && null !== s) {
+					var u = s.delay;
+					u = "number" == typeof u && 0 < u ? a + u : a, s = "number" == typeof s.timeout ? s.timeout : z(e)
+				} else s = z(e), u = a;
+				if (e = {
+						callback: n,
+						priorityLevel: e,
+						startTime: u,
+						expirationTime: s = u + s,
+						next: null,
+						previous: null
+					}, u > a) {
+					if (s = u, null === R) R = e.next = e.previous = e;
+					else {
+						n = null;
+						var c = R;
+						do {
+							if (s < c.startTime) {
+								n = c;
+								break
+							}
+							c = c.next
+						} while (c !== R);
+						null === n ? n = R : n === R && (R = e), (s = n.previous).next = n.previous = e, e.next = n, e.previous = s
+					}
+					null === C && R === e && (B ? i() : B = !0, o(D, u - a))
+				} else q(e, s), N || P || (N = !0, r(F));
+				return e
+			}, t.unstable_cancelCallback = function(e) {
+				var t = e.next;
+				if (null !== t) {
+					if (e === t) e === C ? C = null : e === R && (R = null);
+					else {
+						e === C ? C = t : e === R && (R = t);
+						var n = e.previous;
+						n.next = t, t.previous = n
+					}
+					e.next = e.previous = null
+				}
+			}, t.unstable_wrapCallback = function(e) {
+				var t = M;
+				return function() {
+					var n = M;
+					M = t;
+					try {
+						return e.apply(this, arguments)
+					} finally {
+						M = n
+					}
+				}
+			}, t.unstable_getCurrentPriorityLevel = function() {
+				return M
+			}, t.unstable_shouldYield = function() {
+				var e = t.unstable_now();
+				return U(e), null !== A && null !== C && C.startTime <= e && C.expirationTime < A.expirationTime || s()
+			}, t.unstable_requestPaint = H, t.unstable_continueExecution = function() {
+				N || P || (N = !0, r(F))
+			}, t.unstable_pauseExecution = function() {}, t.unstable_getFirstCallbackNode = function() {
+				return C
+			}
+		},
+		"./node_modules/react-dom/node_modules/scheduler/index.js": function(e, t, n) {
+			"use strict";
+			e.exports = n("./node_modules/react-dom/node_modules/scheduler/cjs/scheduler.production.min.js")
+		},
 		"./node_modules/react-is/cjs/react-is.production.min.js": function(e, t, n) {
 			"use strict";
 			Object.defineProperty(t, "__esModule", {
@@ -28974,327 +29295,6 @@
 				if ("number" != typeof e) throw new TypeError("Argument must be a number");
 				return r.SlowBuffer(e)
 			}
-		},
-		"./node_modules/scheduler/cjs/scheduler.production.min.js": function(e, t, n) {
-			"use strict";
-			Object.defineProperty(t, "__esModule", {
-				value: !0
-			});
-			var r = void 0,
-				o = void 0,
-				i = void 0,
-				s = void 0,
-				a = void 0;
-			if (t.unstable_now = void 0, t.unstable_forceFrameRate = void 0, "undefined" == typeof window || "function" != typeof MessageChannel) {
-				var u = null,
-					c = null,
-					l = function() {
-						if (null !== u) try {
-							var e = t.unstable_now();
-							u(!0, e), u = null
-						} catch (n) {
-							throw setTimeout(l, 0), n
-						}
-					};
-				t.unstable_now = function() {
-					return Date.now()
-				}, r = function(e) {
-					null !== u ? setTimeout(r, 0, e) : (u = e, setTimeout(l, 0))
-				}, o = function(e, t) {
-					c = setTimeout(e, t)
-				}, i = function() {
-					clearTimeout(c)
-				}, s = function() {
-					return !1
-				}, a = t.unstable_forceFrameRate = function() {}
-			} else {
-				var d = window.performance,
-					f = window.Date,
-					h = window.setTimeout,
-					p = window.clearTimeout,
-					m = window.requestAnimationFrame,
-					b = window.cancelAnimationFrame;
-				"undefined" != typeof console && ("function" != typeof m && console.error("This browser doesn't support requestAnimationFrame. Make sure that you load a polyfill in older browsers. https://fb.me/react-polyfills"), "function" != typeof b && console.error("This browser doesn't support cancelAnimationFrame. Make sure that you load a polyfill in older browsers. https://fb.me/react-polyfills")), t.unstable_now = "object" == typeof d && "function" == typeof d.now ? function() {
-					return d.now()
-				} : function() {
-					return f.now()
-				};
-				var _ = !1,
-					y = null,
-					v = -1,
-					g = -1,
-					j = 33.33,
-					w = -1,
-					x = -1,
-					E = 0,
-					S = !1;
-				s = function() {
-					return t.unstable_now() >= E
-				}, a = function() {}, t.unstable_forceFrameRate = function(e) {
-					0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing framerates higher than 125 fps is not unsupported") : 0 < e ? (j = Math.floor(1e3 / e), S = !0) : (j = 33.33, S = !1)
-				};
-				var k = function() {
-						if (null !== y) {
-							var e = t.unstable_now(),
-								n = 0 < E - e;
-							try {
-								y(n, e) || (y = null)
-							} catch (r) {
-								throw O.postMessage(null), r
-							}
-						}
-					},
-					T = new MessageChannel,
-					O = T.port2;
-				T.port1.onmessage = k;
-				var I = function(e) {
-					if (null === y) x = w = -1, _ = !1;
-					else {
-						_ = !0, m((function(e) {
-							p(v), I(e)
-						}));
-						var n = function() {
-							E = t.unstable_now() + j / 2, k(), v = h(n, 3 * j)
-						};
-						if (v = h(n, 3 * j), -1 !== w && .1 < e - w) {
-							var r = e - w;
-							!S && -1 !== x && r < j && x < j && (8.33 > (j = r < x ? x : r) && (j = 8.33)), x = r
-						}
-						w = e, E = e + j, O.postMessage(null)
-					}
-				};
-				r = function(e) {
-					y = e, _ || (_ = !0, m((function(e) {
-						I(e)
-					})))
-				}, o = function(e, n) {
-					g = h((function() {
-						e(t.unstable_now())
-					}), n)
-				}, i = function() {
-					p(g), g = -1
-				}
-			}
-			var C = null,
-				R = null,
-				A = null,
-				M = 3,
-				P = !1,
-				N = !1,
-				B = !1;
-
-			function L(e, t) {
-				var n = e.next;
-				if (n === e) C = null;
-				else {
-					e === C && (C = n);
-					var r = e.previous;
-					r.next = n, n.previous = r
-				}
-				e.next = e.previous = null, n = e.callback, r = M;
-				var o = A;
-				M = e.priorityLevel, A = e;
-				try {
-					var i = e.expirationTime <= t;
-					switch (M) {
-						case 1:
-							var s = n(i);
-							break;
-						case 2:
-						case 3:
-						case 4:
-							s = n(i);
-							break;
-						case 5:
-							s = n(i)
-					}
-				} catch (a) {
-					throw a
-				} finally {
-					M = r, A = o
-				}
-				if ("function" == typeof s)
-					if (t = e.expirationTime, e.callback = s, null === C) C = e.next = e.previous = e;
-					else {
-						s = null, i = C;
-						do {
-							if (t <= i.expirationTime) {
-								s = i;
-								break
-							}
-							i = i.next
-						} while (i !== C);
-						null === s ? s = C : s === C && (C = e), (t = s.previous).next = s.previous = e, e.next = s, e.previous = t
-					}
-			}
-
-			function U(e) {
-				if (null !== R && R.startTime <= e)
-					do {
-						var t = R,
-							n = t.next;
-						if (t === n) R = null;
-						else {
-							R = n;
-							var r = t.previous;
-							r.next = n, n.previous = r
-						}
-						t.next = t.previous = null, q(t, t.expirationTime)
-					} while (null !== R && R.startTime <= e)
-			}
-
-			function D(e) {
-				B = !1, U(e), N || (null !== C ? (N = !0, r(F)) : null !== R && o(D, R.startTime - e))
-			}
-
-			function F(e, n) {
-				N = !1, B && (B = !1, i()), U(n), P = !0;
-				try {
-					if (e) {
-						if (null !== C)
-							do {
-								L(C, n), U(n = t.unstable_now())
-							} while (null !== C && !s())
-					} else
-						for (; null !== C && C.expirationTime <= n;) L(C, n), U(n = t.unstable_now());
-					return null !== C || (null !== R && o(D, R.startTime - n), !1)
-				} finally {
-					P = !1
-				}
-			}
-
-			function z(e) {
-				switch (e) {
-					case 1:
-						return -1;
-					case 2:
-						return 250;
-					case 5:
-						return 1073741823;
-					case 4:
-						return 1e4;
-					default:
-						return 5e3
-				}
-			}
-
-			function q(e, t) {
-				if (null === C) C = e.next = e.previous = e;
-				else {
-					var n = null,
-						r = C;
-					do {
-						if (t < r.expirationTime) {
-							n = r;
-							break
-						}
-						r = r.next
-					} while (r !== C);
-					null === n ? n = C : n === C && (C = e), (t = n.previous).next = n.previous = e, e.next = n, e.previous = t
-				}
-			}
-			var H = a;
-			t.unstable_ImmediatePriority = 1, t.unstable_UserBlockingPriority = 2, t.unstable_NormalPriority = 3, t.unstable_IdlePriority = 5, t.unstable_LowPriority = 4, t.unstable_runWithPriority = function(e, t) {
-				switch (e) {
-					case 1:
-					case 2:
-					case 3:
-					case 4:
-					case 5:
-						break;
-					default:
-						e = 3
-				}
-				var n = M;
-				M = e;
-				try {
-					return t()
-				} finally {
-					M = n
-				}
-			}, t.unstable_next = function(e) {
-				switch (M) {
-					case 1:
-					case 2:
-					case 3:
-						var t = 3;
-						break;
-					default:
-						t = M
-				}
-				var n = M;
-				M = t;
-				try {
-					return e()
-				} finally {
-					M = n
-				}
-			}, t.unstable_scheduleCallback = function(e, n, s) {
-				var a = t.unstable_now();
-				if ("object" == typeof s && null !== s) {
-					var u = s.delay;
-					u = "number" == typeof u && 0 < u ? a + u : a, s = "number" == typeof s.timeout ? s.timeout : z(e)
-				} else s = z(e), u = a;
-				if (e = {
-						callback: n,
-						priorityLevel: e,
-						startTime: u,
-						expirationTime: s = u + s,
-						next: null,
-						previous: null
-					}, u > a) {
-					if (s = u, null === R) R = e.next = e.previous = e;
-					else {
-						n = null;
-						var c = R;
-						do {
-							if (s < c.startTime) {
-								n = c;
-								break
-							}
-							c = c.next
-						} while (c !== R);
-						null === n ? n = R : n === R && (R = e), (s = n.previous).next = n.previous = e, e.next = n, e.previous = s
-					}
-					null === C && R === e && (B ? i() : B = !0, o(D, u - a))
-				} else q(e, s), N || P || (N = !0, r(F));
-				return e
-			}, t.unstable_cancelCallback = function(e) {
-				var t = e.next;
-				if (null !== t) {
-					if (e === t) e === C ? C = null : e === R && (R = null);
-					else {
-						e === C ? C = t : e === R && (R = t);
-						var n = e.previous;
-						n.next = t, t.previous = n
-					}
-					e.next = e.previous = null
-				}
-			}, t.unstable_wrapCallback = function(e) {
-				var t = M;
-				return function() {
-					var n = M;
-					M = t;
-					try {
-						return e.apply(this, arguments)
-					} finally {
-						M = n
-					}
-				}
-			}, t.unstable_getCurrentPriorityLevel = function() {
-				return M
-			}, t.unstable_shouldYield = function() {
-				var e = t.unstable_now();
-				return U(e), null !== A && null !== C && C.startTime <= e && C.expirationTime < A.expirationTime || s()
-			}, t.unstable_requestPaint = H, t.unstable_continueExecution = function() {
-				N || P || (N = !0, r(F))
-			}, t.unstable_pauseExecution = function() {}, t.unstable_getFirstCallbackNode = function() {
-				return C
-			}
-		},
-		"./node_modules/scheduler/index.js": function(e, t, n) {
-			"use strict";
-			e.exports = n("./node_modules/scheduler/cjs/scheduler.production.min.js")
 		},
 		"./node_modules/set-cookie-parser/lib/set-cookie.js": function(e, t, n) {
 			"use strict";
@@ -34415,4 +34415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.e938daa036fba163021c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.26f6f55d4bdf756f4363.js.map

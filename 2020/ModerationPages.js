@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.bb1b8239af7f26a7204f.js
-// Retrieved at 10/22/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.52982fcb589456bafe8f.js
+// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -19423,19 +19423,19 @@
 		"./src/reddit/components/PostOverflowMenu/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return Ce
-			})), s.d(t, "b", (function() {
-				return Oe
-			})), s.d(t, "c", (function() {
 				return ke
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return ye
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "c", (function() {
 				return je
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return Se
+			})), s.d(t, "f", (function() {
+				return we
+			})), s.d(t, "e", (function() {
+				return Ie
 			})), s.d(t, "h", (function() {
-				return Ue
+				return We
 			}));
 			s("./node_modules/core-js/modules/es6.symbol.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -19506,15 +19506,17 @@
 				le = s("./src/reddit/selectors/posts.ts"),
 				me = s("./src/reddit/selectors/subreddit.ts"),
 				ue = s("./src/reddit/selectors/user.ts"),
-				pe = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				be = s("./src/reddit/components/PostFlairPicker/index.tsx"),
-				he = s("./src/reddit/actions/postCollection/index.ts"),
-				ge = s("./src/reddit/helpers/trackers/postCollection.ts"),
-				fe = s("./src/reddit/models/PostCreationForm/index.ts"),
-				xe = s("./src/reddit/selectors/postCollection.ts"),
-				ve = s("./src/reddit/components/PostOverflowMenu/index.m.less"),
-				Ee = s.n(ve),
-				_e = function(e, t) {
+				pe = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
+				be = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				he = s("./src/reddit/components/PostFlairPicker/index.tsx"),
+				ge = s("./src/reddit/components/ReportFlow/new.tsx"),
+				fe = s("./src/reddit/actions/postCollection/index.ts"),
+				xe = s("./src/reddit/helpers/trackers/postCollection.ts"),
+				ve = s("./src/reddit/models/PostCreationForm/index.ts"),
+				Ee = s("./src/reddit/selectors/postCollection.ts"),
+				_e = s("./src/reddit/components/PostOverflowMenu/index.m.less"),
+				Ce = s.n(_e),
+				Oe = function(e, t) {
 					var s = {};
 					for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (s[n] = e[n]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -19523,25 +19525,25 @@
 					}
 					return s
 				};
-			const Ce = h.a.wrapped(N.a, "Icon", Ee.a),
-				Oe = h.a.wrapped(L, "Icon", Ee.a),
-				ke = h.a.wrapped(D.a, "Icon", Ee.a),
-				ye = h.a.wrapped(B.a, "Icon", Ee.a),
-				je = h.a.wrapped(Q.a, "Icon", Ee.a),
-				Se = h.a.wrapped(U.a, "Icon", Ee.a),
-				we = h.a.wrapped(w.a, "Icon", Ee.a),
-				Ie = h.a.wrapped(K.a, "AddCollectionIcon", Ee.a),
-				Te = h.a.wrapped(T.a, "Icon", Ee.a),
-				Ne = h.a.wrapped(H.a, "Icon", Ee.a),
-				Pe = h.a.wrapped(W.a, "Icon", Ee.a),
-				Me = h.a.wrapped(z.b, "Icon", Ee.a),
-				Re = h.a.wrapped(V, "Icon", Ee.a),
-				Le = h.a.wrapped(F.a, "LiveIcon", Ee.a),
-				Ae = h.a.wrapped(I.a, "CalendarIcon", Ee.a),
-				Fe = h.a.wrapped(A.a, "LinkIcon", Ee.a),
-				De = h.a.wrapped($.b, "DropdownRow", Ee.a),
-				Be = h.a.wrapped(Y.a, "PostCheckboxMenuItem", Ee.a),
-				Ue = e => {
+			const ke = h.a.wrapped(N.a, "Icon", Ce.a),
+				ye = h.a.wrapped(L, "Icon", Ce.a),
+				je = h.a.wrapped(D.a, "Icon", Ce.a),
+				Se = h.a.wrapped(B.a, "Icon", Ce.a),
+				we = h.a.wrapped(Q.a, "Icon", Ce.a),
+				Ie = h.a.wrapped(U.a, "Icon", Ce.a),
+				Te = h.a.wrapped(w.a, "Icon", Ce.a),
+				Ne = h.a.wrapped(K.a, "AddCollectionIcon", Ce.a),
+				Pe = h.a.wrapped(T.a, "Icon", Ce.a),
+				Me = h.a.wrapped(H.a, "Icon", Ce.a),
+				Re = h.a.wrapped(W.a, "Icon", Ce.a),
+				Le = h.a.wrapped(z.b, "Icon", Ce.a),
+				Ae = h.a.wrapped(V, "Icon", Ce.a),
+				Fe = h.a.wrapped(F.a, "LiveIcon", Ce.a),
+				De = h.a.wrapped(I.a, "CalendarIcon", Ce.a),
+				Be = h.a.wrapped(A.a, "LinkIcon", Ce.a),
+				Ue = h.a.wrapped($.b, "DropdownRow", Ce.a),
+				He = h.a.wrapped(Y.a, "PostCheckboxMenuItem", Ce.a),
+				We = e => {
 					let {
 						gild: t = !0,
 						save: s = !0,
@@ -19559,7 +19561,7 @@
 						[ee.a.Hide]: r
 					}
 				},
-				He = Object(i.b)(() => Object(c.c)({
+				Ge = Object(i.b)(() => Object(c.c)({
 					currentUser: ue.i,
 					isConfirmDeleteOpen: (e, t) => {
 						let {
@@ -19567,7 +19569,7 @@
 						} = t;
 						return Object(ce.a)(e) === "".concat("POST_OVERFLOW_DELETE_CONFIRMATION", "_").concat(s)
 					},
-					isFutureEvent: xe.j,
+					isFutureEvent: Ee.j,
 					isSaved: le.x,
 					isHidden: le.p,
 					isSponsored: le.z,
@@ -19588,7 +19590,7 @@
 					showPinAction: (e, t) => {
 						var {
 							isProfilePostListing: s
-						} = t, n = _e(t, ["isProfilePostListing"]);
+						} = t, n = Oe(t, ["isProfilePostListing"]);
 						return Object(Z.B)(e, n) && s && Object(ue.kb)(e, n) && Object(ue.ib)(e, {
 							userName: Object(le.N)(e, {
 								postId: n.postId
@@ -19598,7 +19600,7 @@
 					subredditOrProfile: le.ab,
 					hasSubredditRules: me.k,
 					userIsOp: ue.kb,
-					isPostPartOfACollection: xe.l,
+					isPostPartOfACollection: Ee.l,
 					shouldRenderCollectionEditButtons: (e, t) => {
 						let {
 							postId: s
@@ -19611,8 +19613,9 @@
 						});
 						if (!n) return !1;
 						const o = n.type === de.e.User;
-						return Object(xe.s)(e, n.name, o)
-					}
+						return Object(Ee.s)(e, n.name, o)
+					},
+					reportingRevampEnabled: pe.a
 				}), (e, t) => {
 					let {
 						permalink: s,
@@ -19642,18 +19645,18 @@
 							const t = !o && !a;
 							e(Object(_.a)(n, t))
 						},
-						onFlairPost: () => e(Object(x.i)(Object(be.b)(n, o))),
+						onFlairPost: () => e(Object(x.i)(Object(he.b)(n, o))),
 						onToggleSendReplies: () => e(Object(E.M)(n)),
 						showCollectionsList: (t, s) => {
-							e(Object(he.e)(t)).then(() => {
-								const t = Object(fe.s)(s, o);
+							e(Object(fe.e)(t)).then(() => {
+								const t = Object(ve.s)(s, o);
 								e(x.i(t))
 							})
 						},
 						toggleConfirmDelete: () => e(Object(x.i)("".concat("POST_OVERFLOW_DELETE_CONFIRMATION", "_").concat(n)))
 					}
 				});
-			class We extends r.a.PureComponent {
+			class qe extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handlePostEvent = (e, t) => {
 						const {
@@ -19708,8 +19711,18 @@
 							post: s,
 							sendEvent: n
 						} = this.props;
-						e || (n(Object(ge.b)(s.id)), t(s.belongsTo.id, s.id))
-					}
+						e || (n(Object(xe.b)(s.id)), t(s.belongsTo.id, s.id))
+					}, this.renderReportFlow = () => this.props.reportingRevampEnabled ? r.a.createElement(ge.a, {
+						withOverlay: !0,
+						overlayCustomStyles: J.b,
+						postId: this.props.postId,
+						timestamp: this.context.currentTime
+					}) : r.a.createElement(J.a, {
+						withOverlay: !0,
+						overlayCustomStyles: J.b,
+						postId: this.props.postId,
+						timestamp: this.context.currentTime
+					})
 				}
 				getOverflowMenuBreakpointClass() {
 					const {
@@ -19738,13 +19751,13 @@
 						toggleEditStartTimeModal: h,
 						userIsOp: g
 					} = e, f = e.currentUser && e.currentUser.isEmployee, x = Object(oe.a)(e.post), v = e.post.belongsTo.type === y.a.PROFILE || Object(de.f)(e.postSubredditAboutInfo), E = t && d.isGildable, _ = Object(ae.a)(e.post);
-					return r.a.createElement("div", null, E && r.a.createElement(De, {
+					return r.a.createElement("div", null, E && r.a.createElement(Ue, {
 						className: this.getBreakpointClass(ee.a.Gild),
 						displayText: n.fbt._("Give Award", null, {
 							hk: "3mYeGJ"
 						}),
 						onClick: this.handleGild
-					}, r.a.createElement(Ce, null)), r.a.createElement(De, {
+					}, r.a.createElement(ke, null)), r.a.createElement(Ue, {
 						className: this.getBreakpointClass(ee.a.Share),
 						displayText: n.fbt._("Copy link", null, {
 							hk: "ETZxA"
@@ -19768,7 +19781,7 @@
 								}), e.onCopyLink(o)
 							} else this.handlePostEvent("share_copy"), e.onCopyLink(t)
 						}
-					}, r.a.createElement(Fe, null)), r.a.createElement(De, {
+					}, r.a.createElement(Be, null)), r.a.createElement(Ue, {
 						className: this.getBreakpointClass(ee.a.Share),
 						displayText: n.fbt._("Embed", null, {
 							hk: "3u0v6r"
@@ -19776,20 +19789,20 @@
 						onClick: () => {
 							this.handlePostEvent("share_embed"), window.open("https://embed.redditmedia.com/widgets/embed?url=".concat(e.post.permalink), "RedditEmbed", "height=500,width=650,modal=yes,alwaysRaised=yes")
 						}
-					}, r.a.createElement(Te, null)), e.showEditPost && r.a.createElement(De, {
+					}, r.a.createElement(Pe, null)), e.showEditPost && r.a.createElement(Ue, {
 						className: this.getBreakpointClass(ee.a.EditPost),
 						displayText: n.fbt._("Edit post", null, {
 							hk: "3gVzz0"
 						}),
 						onClick: this.handleEdit,
 						isSelected: e.isHidden
-					}, r.a.createElement(ke, null)), l && r.a.createElement(De, {
+					}, r.a.createElement(je, null)), l && r.a.createElement(Ue, {
 						displayText: n.fbt._("Edit flair", null, {
 							hk: "qt3W7"
 						}),
 						onClick: e.onFlairPost,
 						isSelected: e.isHidden
-					}, r.a.createElement(Pe, null)), r.a.createElement(De, {
+					}, r.a.createElement(Re, null)), r.a.createElement(Ue, {
 						className: this.getBreakpointClass(ee.a.Save),
 						displayText: e.isSaved ? n.fbt._("unsave", null, {
 							hk: "HDDPm"
@@ -19798,14 +19811,14 @@
 						}),
 						onClick: this.toggleSave,
 						isSelected: e.isSaved
-					}, e.isSaved ? r.a.createElement(je, null) : r.a.createElement(Se, null)), m && r.a.createElement(De, {
+					}, e.isSaved ? r.a.createElement(we, null) : r.a.createElement(Ie, null)), m && r.a.createElement(Ue, {
 						displayText: a ? n.fbt._("Unpin Post from Profile", null, {
 							hk: "6DYfk"
 						}) : n.fbt._("Pin Post to Profile", null, {
 							hk: "2RWbNF"
 						}),
 						onClick: this.togglePinned
-					}, this.props.isPinned ? r.a.createElement(Re, null) : r.a.createElement(Ne, null)), !e.isSponsored && r.a.createElement(De, {
+					}, this.props.isPinned ? r.a.createElement(Ae, null) : r.a.createElement(Me, null)), !e.isSponsored && r.a.createElement(Ue, {
 						className: this.getBreakpointClass(ee.a.Hide),
 						displayText: e.isHidden ? n.fbt._("unhide", null, {
 							hk: "1P4IxC"
@@ -19814,65 +19827,65 @@
 						}),
 						onClick: this.toggleHide,
 						isSelected: e.isHidden
-					}, r.a.createElement(Oe, null)), !e.isSponsored && !g && r.a.createElement(De, {
+					}, r.a.createElement(ye, null)), !e.isSponsored && !g && r.a.createElement(Ue, {
 						className: this.getBreakpointClass(ee.a.Report),
 						displayText: n.fbt._("report", null, {
 							hk: "128RPn"
 						}),
 						onClick: this.handleReport
-					}, r.a.createElement(ye, null)), c && s && i && r.a.createElement(De, {
+					}, r.a.createElement(Se, null)), c && s && i && r.a.createElement(Ue, {
 						onClick: i,
 						displayText: n.fbt._("Start event now", null, {
 							hk: "3VomTN"
 						})
-					}, r.a.createElement(Le, null)), c && s && h && r.a.createElement(De, {
+					}, r.a.createElement(Fe, null)), c && s && h && r.a.createElement(Ue, {
 						onClick: h,
 						displayText: n.fbt._("Edit start time", null, {
 							hk: "2typ17"
 						})
-					}, r.a.createElement(Ae, null)), c && !_ && b && r.a.createElement(De, {
+					}, r.a.createElement(De, null)), c && !_ && b && r.a.createElement(Ue, {
 						displayText: n.fbt._("Add event start time", null, {
 							hk: "1XXqzu"
 						}),
 						onClick: b
-					}, r.a.createElement(Ae, null)), c && r.a.createElement(De, {
-						className: this.props.isPostPartOfACollection ? Ee.a.disabledRow : void 0,
+					}, r.a.createElement(De, null)), c && r.a.createElement(Ue, {
+						className: this.props.isPostPartOfACollection ? Ce.a.disabledRow : void 0,
 						displayText: n.fbt._("Add to collection", null, {
 							hk: "3UNHgN"
 						}),
 						onClick: this.handleAddToCollection,
 						noHover: this.props.isPostPartOfACollection
-					}, r.a.createElement(Ie, null)), g && r.a.createElement(De, {
+					}, r.a.createElement(Ne, null)), g && r.a.createElement(Ue, {
 						displayText: n.fbt._("delete", null, {
 							hk: "4kSfzC"
 						}),
 						onClick: this.props.toggleConfirmDelete
-					}, r.a.createElement(Me, null)), f && e.userIsOp && r.a.createElement(De, {
+					}, r.a.createElement(Le, null)), f && e.userIsOp && r.a.createElement(Ue, {
 						displayText: e.post.distinguishType === o.C.ADMIN ? n.fbt._("undistinguish", null, {
 							hk: "2chGON"
 						}) : n.fbt._("Distinguish as admin", null, {
 							hk: "2xltiM"
 						}),
 						onClick: () => e.post.distinguishType === o.C.ADMIN ? e.onDistinguishPost(o.C.NONE) : e.onDistinguishPost(o.C.ADMIN)
-					}, r.a.createElement(we, null)), g && v && !x && r.a.createElement(Be, {
+					}, r.a.createElement(Te, null)), g && v && !x && r.a.createElement(He, {
 						text: n.fbt._("Mark as OC", null, {
 							hk: "2vGyoC"
 						}),
 						onClick: this.toggleOC,
 						isSelected: this.props.isOC
-					}), g && r.a.createElement(Be, {
+					}), g && r.a.createElement(He, {
 						text: n.fbt._("Mark as Spoiler", null, {
 							hk: "3PJk7A"
 						}),
 						onClick: this.toggleSpoiler,
 						isSelected: this.props.isSpoiler
-					}), g && r.a.createElement(Be, {
+					}), g && r.a.createElement(He, {
 						text: n.fbt._("Mark as NSFW", null, {
 							hk: "4qK6JN"
 						}),
 						onClick: this.toggleNSFW,
 						isSelected: this.props.isNSFW
-					}), e.userIsOp && r.a.createElement(Be, {
+					}), e.userIsOp && r.a.createElement(He, {
 						text: n.fbt._("Send me reply notifications", null, {
 							hk: "6AmTA"
 						}),
@@ -19885,23 +19898,18 @@
 						props: e
 					} = this;
 					return r.a.createElement("div", null, r.a.createElement(X.b, {
-						className: Object(b.a)(Ee.a.overflowMenu, this.getOverflowMenuBreakpointClass(), e.className),
+						className: Object(b.a)(Ce.a.overflowMenu, this.getOverflowMenuBreakpointClass(), e.className),
 						dropdownId: e.dropdownId,
 						isFixed: e.isFixed,
 						layout: e.layout,
 						onClick: this.handleClickMenuButton
-					}, this.renderDropdownIcons()), e.reportFlowIsOpen && e.subredditOrProfile && e.hasSubredditRules && r.a.createElement(J.a, {
-						withOverlay: !0,
-						overlayCustomStyles: J.b,
-						postId: e.postId,
-						timestamp: this.context.currentTime
-					}), this.props.isConfirmDeleteOpen && r.a.createElement(Ge, {
+					}, this.renderDropdownIcons()), e.reportFlowIsOpen && e.subredditOrProfile && e.hasSubredditRules && this.renderReportFlow(), this.props.isConfirmDeleteOpen && r.a.createElement(Ve, {
 						toggleConfirmDelete: this.props.toggleConfirmDelete,
 						handleDeletePost: this.handleDeletePost
 					}))
 				}
 			}
-			const Ge = Object(d.i)(e => r.a.createElement(pe.a, {
+			const Ve = Object(d.i)(e => r.a.createElement(be.a, {
 				toggleModal: e.toggleConfirmDelete,
 				onConfirm: () => e.handleDeletePost(e.location),
 				actionText: n.fbt._("delete post", null, {
@@ -19915,8 +19923,8 @@
 				}),
 				withOverlay: !0
 			}));
-			We.contextType = O.a;
-			t.g = He(We)
+			qe.contextType = O.a;
+			t.g = Ge(qe)
 		},
 		"./src/reddit/components/PostRailAndVotes/index.tsx": function(e, t, s) {
 			"use strict";
@@ -21314,8 +21322,20 @@
 				r = () => null;
 			t.a = Object(n.a)({
 				ErrorComponent: r,
-				getComponent: () => Object(o.a)(() => Promise.all([s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlow.tsx"))).then(e => e.default),
+				getComponent: () => Object(o.a)(() => Promise.all([s.e("vendors~ReportFlow"), s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlow.tsx"))).then(e => e.default),
 				LoadingComponent: r
+			})
+		},
+		"./src/reddit/components/ReportFlow/new.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./src/higherOrderComponents/makeAsync.tsx"),
+				o = s("./src/lib/loadWithRetries/index.ts");
+			s("./src/reddit/constants/colors.ts").a.overlayReportFlow;
+			const a = () => null;
+			t.a = Object(n.a)({
+				ErrorComponent: a,
+				getComponent: () => Object(o.a)(() => Promise.all([s.e("vendors~ReportFlow"), s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNew.tsx"))).then(e => e.default),
+				LoadingComponent: a
 			})
 		},
 		"./src/reddit/components/RestrictedFlatlistButton/index.m.less": function(e, t, s) {
@@ -30174,7 +30194,7 @@
 			const qe = Object(d.c)({
 				isBadgesAndEmotesEnabled: V.d.spCustomBadgesAndEmotes,
 				isContentTagEnabled: (e, t) => !!Object(K.c)(e, {
-					experimentName: G.K,
+					experimentName: G.M,
 					experimentEligibilitySelector: K.a
 				}) && !!e.subreddits.survey[t.subreddit.id],
 				isUsingNewModMail: (e, t) => {
@@ -31313,6 +31333,19 @@
 					return n && n.endCursor || null
 				}
 		},
+		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
+			var n = s("./src/reddit/constants/experiments.ts"),
+				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				a = s("./src/reddit/selectors/user.ts");
+			const r = e => n.c.Enabled === Object(o.c)(e, {
+				experimentEligibilitySelector: a.I,
+				experimentName: n.e
+			})
+		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "e", (function() {
@@ -31556,4 +31589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bb1b8239af7f26a7204f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.52982fcb589456bafe8f.js.map
