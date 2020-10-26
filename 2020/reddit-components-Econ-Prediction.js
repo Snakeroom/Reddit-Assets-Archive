@@ -1,12 +1,12 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f00edf39ff1531050302.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.22b31f570b3b724e0f62.js
+// Retrieved at 10/26/2020, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/GetPredictionCoinPackages.json": function(e) {
 			e.exports = JSON.parse('{"id":"8d63fcc52d73"}')
 		},
 		"./src/graphql/operations/SubredditTopPredictors.json": function(e) {
-			e.exports = JSON.parse('{"id":"eff959e20fd4"}')
+			e.exports = JSON.parse('{"id":"b50c7bdfe9d4"}')
 		},
 		"./src/graphql/operations/VotePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"95f86f022a36"}')
@@ -24,46 +24,49 @@
 		"./src/reddit/actions/economics/predictions/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
-			})), n.d(t, "b", (function() {
 				return m
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return p
+			})), n.d(t, "c", (function() {
+				return b
 			}));
 			var o = n("./src/lib/initializeClient/installReducer.ts"),
 				s = n("./src/reddit/reducers/features/predictions/index.ts"),
 				i = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/reddit/endpoints/economics/predictions.ts"),
 				r = n("./src/reddit/selectors/posts.ts"),
-				c = n("./src/reddit/actions/economics/predictions/constants.ts");
+				c = n("./src/reddit/selectors/user.ts"),
+				d = n("./src/reddit/actions/economics/predictions/constants.ts");
 			Object(o.a)({
 				features: {
 					predictions: s.a
 				}
 			});
-			const d = Object(i.a)(c.a),
-				l = Object(i.a)(c.b),
-				u = (e, t, n) => async (o, s, i) => {
+			const l = Object(i.a)(d.a),
+				u = Object(i.a)(d.b),
+				m = (e, t, n) => async (o, s, i) => {
 					let {
 						gqlContext: r
 					} = i;
-					const c = await Object(a.c)(r(), {
-						subredditId: e,
-						period: t,
-						top: n
-					});
-					if (c.error || !c.ok) throw new Error("Failed to fetch subreddit top predictors");
+					const d = Object(c.I)(s()),
+						u = await Object(a.c)(r(), {
+							subredditId: e,
+							period: t,
+							top: n,
+							includeCurrentRank: d
+						});
+					if (u.error || !u.ok) throw new Error("Failed to fetch subreddit top predictors");
 					const {
-						subredditInfoById: l
-					} = c.body.data;
-					if (!l || !l.predictionWinners) throw new Error("Subreddit has no prediction winners");
+						subredditInfoById: m
+					} = u.body.data;
+					if (!m || !m.predictionWinners) throw new Error("Subreddit has no prediction winners");
 					const {
-						predictionWinners: u
-					} = l, m = Object.assign({
+						predictionWinners: p
+					} = m, b = Object.assign({
 						subredditId: e
-					}, u);
-					return o(d(m)), m
-				}, m = e => async (t, n, o) => {
+					}, p);
+					return o(l(b)), b
+				}, p = e => async (t, n, o) => {
 					let {
 						gqlContext: s
 					} = o;
@@ -80,7 +83,7 @@
 					} = d.body.data;
 					if (!l || !l.predictionCoinPackages.length) throw new Error("Subreddit has no coin packs");
 					return l.predictionCoinPackages
-				}, p = e => {
+				}, b = e => {
 					let {
 						coinPackageId: t,
 						optionId: n,
@@ -99,14 +102,14 @@
 						});
 						if (d.error || !d.ok) throw new Error("Failed to make prediction");
 						const {
-							votePrediction: u
+							votePrediction: l
 						} = d.body.data;
-						if (!u) throw new Error("Failed to create prediction vote");
-						return e(l({
+						if (!l) throw new Error("Failed to create prediction vote");
+						return e(u({
 							pollId: o,
-							prediction: u.poll,
+							prediction: l.poll,
 							price: s
-						})), u.poll
+						})), l.poll
 					}
 				}
 		},
@@ -245,8 +248,8 @@
 				m = n("./src/reddit/actions/toaster.ts"),
 				p = n("./src/reddit/models/Toast/index.ts"),
 				b = n("./src/reddit/selectors/poll/index.ts"),
-				f = n("./src/reddit/selectors/postCreations.ts"),
-				E = n("./src/reddit/selectors/posts.ts"),
+				E = n("./src/reddit/selectors/postCreations.ts"),
+				f = n("./src/reddit/selectors/posts.ts"),
 				g = n("./src/reddit/selectors/user.ts"),
 				C = n("./src/reddit/components/Econ/Prediction/NoPredictionError/index.m.less"),
 				x = n.n(C);
@@ -266,9 +269,9 @@
 				_ = n("./src/higherOrderComponents/asModal/index.tsx"),
 				k = n("./src/reddit/components/Econ/CoinsModalHeader/index.tsx"),
 				P = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				w = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				I = n("./src/reddit/icons/svgs/Minus/index.tsx"),
-				O = n("./src/reddit/icons/svgs/Plus/index.tsx"),
+				I = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				O = n("./src/reddit/icons/svgs/Minus/index.tsx"),
+				w = n("./src/reddit/icons/svgs/Plus/index.tsx"),
 				N = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.m.less"),
 				j = n.n(N);
 			const {
@@ -290,10 +293,10 @@
 						userCoins: u
 					} = e;
 					var m;
-					const [b, f] = Object(o.useState)(0), [E, g] = Object(o.useState)(null);
+					const [b, E] = Object(o.useState)(0), [f, g] = Object(o.useState)(null);
 					Object(o.useEffect)(() => {
 						(async () => {
-							if (!E) try {
+							if (!f) try {
 								const e = await t(c);
 								e.length || (d({
 									duration: 5e3,
@@ -312,8 +315,8 @@
 								}), i()
 							}
 						})()
-					}, [E, t, i, c, d]);
-					const C = (null === (m = null == E ? void 0 : E[b]) || void 0 === m ? void 0 : m.coins) && u < E[b].coins;
+					}, [f, t, i, c, d]);
+					const C = (null === (m = null == f ? void 0 : f[b]) || void 0 === m ? void 0 : m.coins) && u < f[b].coins;
 					return s.a.createElement("div", null, s.a.createElement(k.a, {
 						onAddCoins: l.promptUserToBuyMoreCoins,
 						onCancel: i,
@@ -331,23 +334,23 @@
 						disabled: 0 === b,
 						className: j.a.wagerSelectorButton,
 						onClick: e => {
-							e.preventDefault(), E && 0 !== b && f(b - 1)
-						}
-					}, s.a.createElement(I.a, {
-						className: j.a.wagerSelectorButtonIcon
-					})), E ? s.a.createElement("div", {
-						className: j.a.wagerSelectorAmount
-					}, s.a.createElement(w.a, {
-						className: j.a.coinIcon
-					}), " ", E[b].coins) : s.a.createElement(P.a, {
-						sizePx: 24
-					}), s.a.createElement("button", {
-						disabled: !(!E || b !== E.length - 1),
-						className: j.a.wagerSelectorButton,
-						onClick: e => {
-							e.preventDefault(), E && b !== E.length - 1 && f(b + 1)
+							e.preventDefault(), f && 0 !== b && E(b - 1)
 						}
 					}, s.a.createElement(O.a, {
+						className: j.a.wagerSelectorButtonIcon
+					})), f ? s.a.createElement("div", {
+						className: j.a.wagerSelectorAmount
+					}, s.a.createElement(I.a, {
+						className: j.a.coinIcon
+					}), " ", f[b].coins) : s.a.createElement(P.a, {
+						sizePx: 24
+					}), s.a.createElement("button", {
+						disabled: !(!f || b !== f.length - 1),
+						className: j.a.wagerSelectorButton,
+						onClick: e => {
+							e.preventDefault(), f && b !== f.length - 1 && E(b + 1)
+						}
+					}, s.a.createElement(w.a, {
 						className: j.a.wagerSelectorButtonIcon
 					}))), C && s.a.createElement("div", {
 						className: j.a.insufficientCoinsMessage
@@ -355,12 +358,12 @@
 						hk: "2Mo83P"
 					}))), s.a.createElement("button", {
 						className: Object(r.a)(j.a.predictButton, {
-							[j.a.isFetchingCoinPacks]: !E,
+							[j.a.isFetchingCoinPacks]: !f,
 							[j.a.isCreatingVote]: n
 						}),
-						disabled: !E || n,
+						disabled: !f || n,
 						onClick: e => {
-							e.preventDefault(), E && a(E[b])
+							e.preventDefault(), f && a(f[b])
 						}
 					}, n ? s.a.createElement(P.a, {
 						sizePx: 16
@@ -414,7 +417,7 @@
 						className: L.a.optionText
 					}, i.text), i.userStakeAmount && s.a.createElement("div", {
 						className: L.a.optionStake
-					}, s.a.createElement(w.a, {
+					}, s.a.createElement(I.a, {
 						className: L.a.coinIcon
 					}), " ", i.userStakeAmount)), l && l > 0 && s.a.createElement("div", {
 						className: L.a.optionPercentage,
@@ -429,45 +432,45 @@
 				},
 				V = n("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
 				F = n("./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less"),
-				q = n.n(F);
+				R = n.n(F);
 			const {
-				fbt: U
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = e => {
+				fbt: q
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = e => {
 				let {
 					endsAt: t,
 					resolvedOptionId: n
 				} = e;
 				return Date.now() > t ? s.a.createElement("div", {
-					className: q.a.statusBar
+					className: R.a.statusBar
 				}, s.a.createElement(V.a, {
-					className: q.a.clockIcon
-				}), n ? U._("Prediction ended", null, {
+					className: R.a.clockIcon
+				}), n ? q._("Prediction ended", null, {
 					hk: "3o79Ig"
-				}) : U._("Ended. Awaiting results", null, {
+				}) : q._("Ended. Awaiting results", null, {
 					hk: "1szagh"
 				})) : s.a.createElement("div", {
-					className: q.a.statusBar
+					className: R.a.statusBar
 				}, s.a.createElement(V.a, {
-					className: q.a.clockIcon
-				}), U._("Prediction ends in {expirationDuration}", [U._param("expirationDuration", Object(c.a)(new Date(t), !0))], {
+					className: R.a.clockIcon
+				}), q._("Prediction ends in {expirationDuration}", [q._param("expirationDuration", Object(c.a)(new Date(t), !0))], {
 					hk: "3ysXEE"
 				}))
 			};
-			var R = e => {
+			var G = e => {
 					let {
 						endsAt: t,
 						resolvedOptionId: n,
 						totalStakeAmount: o
 					} = e;
 					return s.a.createElement("div", {
-						className: q.a.container
+						className: R.a.container
 					}, o > 0 && s.a.createElement("div", {
-						className: q.a.statusBar
-					}, s.a.createElement(w.a, {
-						className: q.a.coinIcon
-					}), o, " ", U._("added by participants", null, {
+						className: R.a.statusBar
+					}, s.a.createElement(I.a, {
+						className: R.a.coinIcon
+					}), o, " ", q._("added by participants", null, {
 						hk: "PSq3T"
-					})), s.a.createElement(G, {
+					})), s.a.createElement(U, {
 						endsAt: t,
 						resolvedOptionId: n
 					}))
@@ -477,11 +480,11 @@
 			const {
 				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = Object(a.c)({
-				isEditing: f.G,
+				isEditing: E.G,
 				prediction: b.g,
 				pollId: b.a,
-				post: E.O,
-				subredditOrProfile: E.bb,
+				post: f.O,
+				subredditOrProfile: f.bb,
 				userCoins: g.d,
 				userIsLoggedIn: g.I
 			}), K = {
@@ -499,8 +502,8 @@
 					pollId: u,
 					subredditOrProfile: m,
 					showToast: b,
-					userCoins: f,
-					userIsLoggedIn: E
+					userCoins: E,
+					userIsLoggedIn: f
 				} = e;
 				const [g, C] = Object(o.useState)(!1), [x, h] = Object(o.useState)(null);
 				if (!u || !d || !m) return s.a.createElement(v, null);
@@ -508,9 +511,9 @@
 					endsAt: _,
 					options: k,
 					resolvedOptionId: P,
-					totalStakeAmount: w,
-					userSelection: I
-				} = d, O = _ < Date.now(), N = () => {
+					totalStakeAmount: I,
+					userSelection: O
+				} = d, w = _ < Date.now(), N = () => {
 					h(null)
 				}, j = n ? Object(r.a)(t, W.a.container, W.a.forCommentsPage, {
 					[W.a.isEditing]: i
@@ -524,28 +527,28 @@
 					className: W.a.poll
 				}, k.map(e => s.a.createElement(D, {
 					key: "prediction-option-".concat(e.id),
-					isEnded: O,
+					isEnded: w,
 					isSelected: x === e.id,
 					option: e,
 					onClick: () => (e => {
-						O || I || h(e.id)
+						w || O || h(e.id)
 					})(e),
 					resolvedOptionId: P,
-					userSelection: I,
-					userIsLoggedOut: !E,
-					votePercentage: (I || O) && e.totalStakeAmount ? Math.floor(e.totalStakeAmount / w * 100) : null
-				}))), s.a.createElement(R, {
+					userSelection: O,
+					userIsLoggedOut: !f,
+					votePercentage: (O || w) && e.totalStakeAmount ? Math.floor(e.totalStakeAmount / I * 100) : null
+				}))), s.a.createElement(G, {
 					endsAt: _,
 					resolvedOptionId: P,
-					totalStakeAmount: w
+					totalStakeAmount: I
 				}), !!x && s.a.createElement(A, {
 					isCreatingVote: g,
 					onOverlayClick: N,
 					onCancel: N,
 					onPredict: async e => {
-						if (e.coins > f) Object(l.promptUserToBuyMoreCoins)();
+						if (e.coins > E) Object(l.promptUserToBuyMoreCoins)();
 						else {
-							if (O) return b({
+							if (w) return b({
 								duration: 5e3,
 								kind: p.b.Error,
 								text: J._("Error: Failed to make prediction. This prediction has already ended", null, {
@@ -631,13 +634,15 @@
 				let {
 					subredditId: n,
 					period: s,
-					top: a
+					top: a,
+					includeCurrentRank: r
 				} = t;
 				return Object(o.a)(e, Object.assign(Object.assign({}, i), {
 					variables: {
 						subredditId: n,
 						period: s,
-						top: a
+						top: a,
+						includeCurrentRank: r
 					}
 				}))
 			}
@@ -769,4 +774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f00edf39ff1531050302.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.22b31f570b3b724e0f62.js.map
