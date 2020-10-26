@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.a06f5e6aab504e0e9144.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6c6b88be8a1508bd68b5.js
+// Retrieved at 10/26/2020, 12:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -30,25 +30,28 @@
 		"./src/reddit/actions/snoovatar.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return l
-			})), r.d(t, "b", (function() {
 				return d
+			})), r.d(t, "b", (function() {
+				return m
 			}));
 			var n = r("./src/telemetry/index.ts"),
 				s = r("./src/reddit/actions/login.ts"),
 				o = r("./src/reddit/actions/modal.ts"),
-				a = r("./src/reddit/constants/modals.ts"),
-				i = r("./src/reddit/selectors/telemetry.ts");
-			var c = r("./src/reddit/selectors/user.ts");
-			const l = () => async e => {
-				await e(Object(o.g)(a.a.SNOOVATAR_MODAL))
-			}, d = e => async (t, r) => {
-				const l = r();
+				a = r("./src/reddit/actions/users.ts"),
+				i = r("./src/reddit/constants/modals.ts"),
+				c = r("./src/reddit/selectors/telemetry.ts");
+			var l = r("./src/reddit/selectors/user.ts");
+			const d = () => async e => {
+				e(Object(a.r)({
+					forceFetch: !0
+				})), await e(Object(o.g)(i.a.SNOOVATAR_MODAL))
+			}, m = e => async (t, r) => {
+				const a = r();
 				Object(n.a)((e => t => Object.assign({
 					source: e,
 					action: "click",
 					noun: "edit_snoovatar"
-				}, i.defaults(t)))(e)(l)), Object(c.I)(l) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
+				}, c.defaults(t)))(e)(a)), Object(l.I)(a) ? await t(Object(o.h)(i.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
 			}
 		},
 		"./src/reddit/components/CrisisFlow/index.tsx": function(e, t, r) {
@@ -1338,4 +1341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.a06f5e6aab504e0e9144.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6c6b88be8a1508bd68b5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.1aac05cbb09f6e68cc4f.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.fd72e56122e1f9c14b21.js
+// Retrieved at 10/26/2020, 12:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./node_modules/lodash/_assignMergeValue.js": function(e, t, r) {
@@ -128,25 +128,28 @@
 		"./src/reddit/actions/snoovatar.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return c
-			})), r.d(t, "b", (function() {
 				return u
+			})), r.d(t, "b", (function() {
+				return l
 			}));
 			var n = r("./src/telemetry/index.ts"),
 				s = r("./src/reddit/actions/login.ts"),
 				d = r("./src/reddit/actions/modal.ts"),
-				o = r("./src/reddit/constants/modals.ts"),
-				a = r("./src/reddit/selectors/telemetry.ts");
-			var i = r("./src/reddit/selectors/user.ts");
-			const c = () => async e => {
-				await e(Object(d.g)(o.a.SNOOVATAR_MODAL))
-			}, u = e => async (t, r) => {
-				const c = r();
+				o = r("./src/reddit/actions/users.ts"),
+				a = r("./src/reddit/constants/modals.ts"),
+				i = r("./src/reddit/selectors/telemetry.ts");
+			var c = r("./src/reddit/selectors/user.ts");
+			const u = () => async e => {
+				e(Object(o.r)({
+					forceFetch: !0
+				})), await e(Object(d.g)(a.a.SNOOVATAR_MODAL))
+			}, l = e => async (t, r) => {
+				const o = r();
 				Object(n.a)((e => t => Object.assign({
 					source: e,
 					action: "click",
 					noun: "edit_snoovatar"
-				}, a.defaults(t)))(e)(c)), Object(i.I)(c) ? await t(Object(d.h)(o.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
+				}, i.defaults(t)))(e)(o)), Object(c.I)(o) ? await t(Object(d.h)(a.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
 			}
 		},
 		"./src/reddit/actions/userFlair.ts": function(e, t, r) {
@@ -767,4 +770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.1aac05cbb09f6e68cc4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.fd72e56122e1f9c14b21.js.map

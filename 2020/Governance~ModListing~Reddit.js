@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.3fd147a12294a345ca3b.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.02a6d7e61cf4a5f6ed82.js
+// Retrieved at 10/26/2020, 12:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -3398,55 +3398,55 @@
 		"./src/reddit/actions/users.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return B
-			})), n.d(t, "q", (function() {
 				return W
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "q", (function() {
 				return H
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return q
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return Y
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "e", (function() {
 				return K
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "k", (function() {
 				return z
+			})), n.d(t, "d", (function() {
+				return Q
 			})), n.d(t, "y", (function() {
-				return Z
-			})), n.d(t, "c", (function() {
 				return $
+			})), n.d(t, "c", (function() {
+				return ee
 			})), n.d(t, "r", (function() {
-				return te
-			})), n.d(t, "p", (function() {
 				return ne
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "p", (function() {
 				return se
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "x", (function() {
 				return re
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "s", (function() {
 				return oe
+			})), n.d(t, "a", (function() {
+				return ie
 			})), n.d(t, "o", (function() {
-				return ce
-			})), n.d(t, "u", (function() {
 				return ae
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "u", (function() {
 				return de
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "m", (function() {
 				return ue
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "n", (function() {
 				return le
+			})), n.d(t, "l", (function() {
+				return be
 			})), n.d(t, "t", (function() {
-				return pe
-			})), n.d(t, "v", (function() {
 				return Oe
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "v", (function() {
 				return ge
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "i", (function() {
 				return je
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "j", (function() {
 				return Ee
+			})), n.d(t, "h", (function() {
+				return he
 			})), n.d(t, "w", (function() {
-				return Te
+				return ye
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -3463,29 +3463,38 @@
 				f = n("./src/lib/omitHeaders/index.ts"),
 				m = n("./src/reddit/constants/headers.ts"),
 				p = n("./src/config.ts"),
-				O = n("./src/reddit/helpers/getErrorMsgFromR2JQueryResponse.ts"),
-				g = (n("./node_modules/core-js/modules/es7.promise.finally.js"), n("./node_modules/promise-retry/index.js")),
-				j = n.n(g),
-				E = n("./src/lib/makeRequest/index.ts");
-			var h = n("./src/reddit/constants/history.ts"),
-				I = n("./src/reddit/endpoints/session/index.ts"),
-				S = n("./node_modules/js-cookie/src/js.cookie.js"),
-				T = n.n(S),
-				y = n("./src/lib/constants/cookie.ts");
-			const A = e => {
-				T.a.remove(e, {
+				O = e => Object(_.a)(e, {
+					endpoint: "".concat(p.a.gatewayUrl, "/desktopapi/v1/me"),
+					method: r.db.GET,
+					data: {
+						api_type: "json",
+						gilding_detail: 1,
+						awarded_detail: 1
+					}
+				}),
+				g = n("./src/reddit/helpers/getErrorMsgFromR2JQueryResponse.ts"),
+				j = (n("./node_modules/core-js/modules/es7.promise.finally.js"), n("./node_modules/promise-retry/index.js")),
+				E = n.n(j),
+				h = n("./src/lib/makeRequest/index.ts");
+			var I = n("./src/reddit/constants/history.ts"),
+				S = n("./src/reddit/endpoints/session/index.ts"),
+				T = n("./node_modules/js-cookie/src/js.cookie.js"),
+				y = n.n(T),
+				A = n("./src/lib/constants/cookie.ts");
+			const D = e => {
+				y.a.remove(e, {
 					domain: p.a.cookieDomain
 				})
 			};
-			var D = n("./src/reddit/helpers/history/index.ts");
-			const v = 2 * r.eb;
-			var P = e => Date.now() + v < new Date(e.expires).getTime(),
-				R = n("./src/reddit/helpers/localStorage/index.ts"),
-				C = async (e, t, n) => {
+			var v = n("./src/reddit/helpers/history/index.ts");
+			const P = 2 * r.eb;
+			var R = e => Date.now() + P < new Date(e.expires).getTime(),
+				C = n("./src/reddit/helpers/localStorage/index.ts"),
+				w = async (e, t, n) => {
 					let s = t.accessToken;
-					await j()(async (o, i) => {
-						if (!P(t) || !s) {
-							const r = await Object(I.b)(e, t, n);
+					await E()(async (o, i) => {
+						if (!R(t) || !s) {
+							const r = await Object(S.b)(e, t, n);
 							if (r.ok) {
 								const e = r.body;
 								s = e.accessToken
@@ -3499,7 +3508,7 @@
 							}
 						});
 						if (await async function(e, t) {
-								return await Object(E.b)({
+								return await Object(h.b)({
 									method: r.db.POST,
 									endpoint: "/timings/logoutrequest",
 									data: {
@@ -3512,9 +3521,9 @@
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
-						[y.d, y.e, y.h, y.i].forEach(A), Object(R.H)(null), Object(D.a)(h.a.JustLoggedOut, !0), window.location.reload()
+						[A.d, A.e, A.h, A.i].forEach(D), Object(C.H)(null), Object(v.a)(I.a.JustLoggedOut, !0), window.location.reload()
 					})
-				}, w = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), k = n("./src/reddit/helpers/trackers/emailCollection.ts"), L = n("./src/reddit/helpers/trackers/emailVerification.ts"), x = n("./src/reddit/models/Toast/index.ts"), N = n("./src/reddit/selectors/activeModalId.ts"), U = n("./src/reddit/selectors/emailCollection.ts"), M = n("./src/reddit/selectors/notificationBanner.ts"), G = n("./src/reddit/selectors/user.ts"), V = n("./src/telemetry/index.ts"), F = function(e, t) {
+				}, k = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), L = n("./src/reddit/helpers/trackers/emailCollection.ts"), x = n("./src/reddit/helpers/trackers/emailVerification.ts"), N = n("./src/reddit/models/Toast/index.ts"), U = n("./src/reddit/selectors/activeModalId.ts"), M = n("./src/reddit/selectors/emailCollection.ts"), G = n("./src/reddit/selectors/notificationBanner.ts"), V = n("./src/reddit/selectors/user.ts"), F = n("./src/telemetry/index.ts"), B = function(e, t) {
 					var n = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -3523,22 +3532,22 @@
 					}
 					return n
 				};
-			const B = "USER__LOID_RECEIVED",
-				W = Object(o.a)(B),
-				H = "USER__REQUEST_PENDING",
-				q = "USER__REQUEST_LOADED",
-				Y = "USER__REQUEST_FAILED",
-				K = "USER__SESSION_TRACKER_RECEIVED",
-				z = "USER__REDDAID_RECEIVED",
-				Q = Object(o.a)(H),
+			const W = "USER__LOID_RECEIVED",
+				H = Object(o.a)(W),
+				q = "USER__REQUEST_PENDING",
+				Y = "USER__REQUEST_LOADED",
+				K = "USER__REQUEST_FAILED",
+				z = "USER__SESSION_TRACKER_RECEIVED",
+				Q = "USER__REDDAID_RECEIVED",
 				J = Object(o.a)(q),
 				X = Object(o.a)(Y),
-				Z = e => async (t, n, s) => {
+				Z = Object(o.a)(K),
+				$ = e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
 					if (n().users.models[e.toLowerCase()] || e === r.A) return;
-					t(Q({
+					t(J({
 						username: e
 					}));
 					const i = await Object(b.b)(o(), e);
@@ -3546,140 +3555,140 @@
 						const n = {
 							data: i.body
 						};
-						n.username = e, t(J(n))
+						n.username = e, t(X(n))
 					} else {
 						const n = i.error;
-						n.username = e, t(X(n))
+						n.username = e, t(Z(n))
 					}
-				}, $ = "USER__MYSELF_LOADED", ee = Object(o.a)($), te = () => async (e, t, n) => {
+				}, ee = "USER__MYSELF_LOADED", te = Object(o.a)(ee);
+
+			function ne() {
+				let {
+					forceFetch: e
+				} = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+				return async (t, n, s) => {
 					let {
-						apiContext: s
-					} = n;
-					const o = t();
-					if (o.user.account || !o.user.session || o.user.session.unsafeLoggedOut) return;
-					const i = await (e => Object(_.a)(e, {
-						endpoint: "".concat(p.a.gatewayUrl, "/desktopapi/v1/me"),
-						method: r.db.GET,
-						data: {
-							api_type: "json",
-							gilding_detail: 1,
-							awarded_detail: 1
-						}
-					}))(s());
-					i.ok && e(ee(i.body))
-				}, ne = () => async (e, t, n) => {
-					let {
-						apiContext: s
-					} = n;
-					const r = t().user.session;
-					Object(w.a)(), r && C(s(), r)
-				}, se = Object(o.a)(K), re = Object(o.a)(z), oe = "USER__LAYOUT_SWITCH_VIEWED", ie = Object(o.a)(oe), ce = () => async (e, t, n) => {
-					let {
-						apiContext: s
-					} = n;
-					const r = t();
-					r.user.account && !r.user.account.seenLayoutSwitch && (e(ie()), Object(b.d)(s()))
-				}, ae = e => async (t, n, s) => {
-					let {
-						apiContext: o
+						apiContext: r
 					} = s;
-					const i = await ((e, t) => Object(_.a)(Object(f.a)(e, [m.a]), {
-							method: r.db.POST,
-							endpoint: "".concat(e.apiUrl, "/api/deactivate_user"),
-							data: {
-								user: t.username,
-								passwd: t.password,
-								confirm: t.checkbox,
-								deactivate_message: t.feedback
-							}
-						}))(o(), e),
-						c = n().user.session;
-					i.ok && i.body && i.body.success ? c && C(o(), c) : t(Object(d.e)({
-						kind: x.b.Error,
-						text: "Something went wrong deactivating your account. Try again later."
-					}))
-				}, de = "USER__UPDATE_EMAIL_PENDING", ue = "USER__UPDATE_EMAIL_SUCCESS", le = "USER__UPDATE_EMAIL_FAILURE", be = Object(o.a)(de), _e = Object(o.a)(ue), fe = Object(o.a)(le), me = (e, t) => {
-					t.isEmailVerificationTooltipShowing && e(Object(i.b)())
-				}, pe = e => async (t, n, s) => {
-					let {
-						apiContext: o
-					} = s;
-					const i = F(e, []);
-					if (Object(G.E)(n(), "changeEmail")) return;
-					t(be());
-					const c = await ((e, t) => {
-							let {
-								newEmail: n,
-								password: s
-							} = t;
-							return Object(_.a)(Object(f.a)(e, [m.a]), {
-								method: r.db.POST,
-								endpoint: "".concat(e.apiUrl, "/api/update_email"),
-								data: Object.assign(Object.assign({}, s && {
-									curpass: s
-								}), {
-									email: n
-								})
-							})
-						})(o(), i),
-						d = n();
-					if (c.ok && c.body && c.body.success) {
-						Object(M.a)(u.a.EmailCollectionBannerId)(d) && t(Object(a.c)(u.a.EmailCollectionBannerId)), Object(U.a)(d) && Object(V.a)(Object(k.c)(d));
-						const e = Object(G.G)(d);
-						e || await t(Oe()), t(_e(i.newEmail)), e && t(Ie()), me(t, d)
-					} else {
-						const e = Object(O.b)(c, "Something went wrong updating your email. Try again later.");
-						t(fe(e))
-					}
-				}, Oe = e => async (t, n, o) => {
-					let {
-						apiContext: i
-					} = o;
-					const a = await ((e, t) => Object(_.a)(Object(f.a)(e, [m.a]), Object.assign({
-							method: r.db.GET,
-							endpoint: "".concat(e.apiUrl, "/api/send_verification_email")
-						}, t.source && {
-							data: t
-						})))(i(), {
-							source: e
-						}),
-						u = n();
-					if (a.ok && a.body && a.body.success) {
-						e && (Object(V.a)(Object(L.f)(e)(u)), me(t, u));
-						const n = Object(N.a)(u),
-							s = n === l.g || n === l.o ? l.o : l.c;
-						t(Object(c.i)(s))
-					} else t(Object(d.e)({
-						duration: d.a,
-						kind: x.b.Error,
-						text: s.fbt._("Something went wrong sending verification email. Try again later.", null, {
-							hk: "2yTdAw"
-						})
-					}))
-				}, ge = "USER__SEND_RESET_EMAIL_PENDING", je = "USER__SEND_RESET_EMAIL_SUCCESS", Ee = "USER__SEND_RESET_EMAIL_FAILURE", he = Object(o.a)(ge), Ie = Object(o.a)(je), Se = Object(o.a)(Ee), Te = e => async (t, n, s) => {
-					let {
-						apiContext: o
-					} = s;
-					if (Object(G.E)(n(), "sendResetEmail")) return;
-					t(he());
-					const i = await ((e, t) => Object(_.a)(Object(f.a)(e, [m.a]), {
-						method: r.db.POST,
-						endpoint: "".concat(e.apiUrl, "/api/password"),
-						data: {
-							email: t.curEmail,
-							name: t.name
-						}
-					}))(o(), e);
-					if (!i.ok || !i.body || !i.body.success) {
-						const e = Object(O.b)(i, "Something went wrong sending the reset email. Please try again.");
-						return t(Se()), void t(Object(d.e)({
-							duration: d.a,
-							kind: x.b.Error,
-							text: e
-						}))
-					}
-					t(Ie())
+					const o = n();
+					if (o.user.account && !e || !o.user.session || o.user.session.unsafeLoggedOut) return;
+					const i = await O(r());
+					i.ok && t(te(i.body))
 				}
+			}
+			const se = () => async (e, t, n) => {
+				let {
+					apiContext: s
+				} = n;
+				const r = t().user.session;
+				Object(k.a)(), r && w(s(), r)
+			}, re = Object(o.a)(z), oe = Object(o.a)(Q), ie = "USER__LAYOUT_SWITCH_VIEWED", ce = Object(o.a)(ie), ae = () => async (e, t, n) => {
+				let {
+					apiContext: s
+				} = n;
+				const r = t();
+				r.user.account && !r.user.account.seenLayoutSwitch && (e(ce()), Object(b.d)(s()))
+			}, de = e => async (t, n, s) => {
+				let {
+					apiContext: o
+				} = s;
+				const i = await ((e, t) => Object(_.a)(Object(f.a)(e, [m.a]), {
+						method: r.db.POST,
+						endpoint: "".concat(e.apiUrl, "/api/deactivate_user"),
+						data: {
+							user: t.username,
+							passwd: t.password,
+							confirm: t.checkbox,
+							deactivate_message: t.feedback
+						}
+					}))(o(), e),
+					c = n().user.session;
+				i.ok && i.body && i.body.success ? c && w(o(), c) : t(Object(d.e)({
+					kind: N.b.Error,
+					text: "Something went wrong deactivating your account. Try again later."
+				}))
+			}, ue = "USER__UPDATE_EMAIL_PENDING", le = "USER__UPDATE_EMAIL_SUCCESS", be = "USER__UPDATE_EMAIL_FAILURE", _e = Object(o.a)(ue), fe = Object(o.a)(le), me = Object(o.a)(be), pe = (e, t) => {
+				t.isEmailVerificationTooltipShowing && e(Object(i.b)())
+			}, Oe = e => async (t, n, s) => {
+				let {
+					apiContext: o
+				} = s;
+				const i = B(e, []);
+				if (Object(V.E)(n(), "changeEmail")) return;
+				t(_e());
+				const c = await ((e, t) => {
+						let {
+							newEmail: n,
+							password: s
+						} = t;
+						return Object(_.a)(Object(f.a)(e, [m.a]), {
+							method: r.db.POST,
+							endpoint: "".concat(e.apiUrl, "/api/update_email"),
+							data: Object.assign(Object.assign({}, s && {
+								curpass: s
+							}), {
+								email: n
+							})
+						})
+					})(o(), i),
+					d = n();
+				if (c.ok && c.body && c.body.success) {
+					Object(G.a)(u.a.EmailCollectionBannerId)(d) && t(Object(a.c)(u.a.EmailCollectionBannerId)), Object(M.a)(d) && Object(F.a)(Object(L.c)(d));
+					const e = Object(V.G)(d);
+					e || await t(ge()), t(fe(i.newEmail)), e && t(Se()), pe(t, d)
+				} else {
+					const e = Object(g.b)(c, "Something went wrong updating your email. Try again later.");
+					t(me(e))
+				}
+			}, ge = e => async (t, n, o) => {
+				let {
+					apiContext: i
+				} = o;
+				const a = await ((e, t) => Object(_.a)(Object(f.a)(e, [m.a]), Object.assign({
+						method: r.db.GET,
+						endpoint: "".concat(e.apiUrl, "/api/send_verification_email")
+					}, t.source && {
+						data: t
+					})))(i(), {
+						source: e
+					}),
+					u = n();
+				if (a.ok && a.body && a.body.success) {
+					e && (Object(F.a)(Object(x.f)(e)(u)), pe(t, u));
+					const n = Object(U.a)(u),
+						s = n === l.g || n === l.o ? l.o : l.c;
+					t(Object(c.i)(s))
+				} else t(Object(d.e)({
+					duration: d.a,
+					kind: N.b.Error,
+					text: s.fbt._("Something went wrong sending verification email. Try again later.", null, {
+						hk: "2yTdAw"
+					})
+				}))
+			}, je = "USER__SEND_RESET_EMAIL_PENDING", Ee = "USER__SEND_RESET_EMAIL_SUCCESS", he = "USER__SEND_RESET_EMAIL_FAILURE", Ie = Object(o.a)(je), Se = Object(o.a)(Ee), Te = Object(o.a)(he), ye = e => async (t, n, s) => {
+				let {
+					apiContext: o
+				} = s;
+				if (Object(V.E)(n(), "sendResetEmail")) return;
+				t(Ie());
+				const i = await ((e, t) => Object(_.a)(Object(f.a)(e, [m.a]), {
+					method: r.db.POST,
+					endpoint: "".concat(e.apiUrl, "/api/password"),
+					data: {
+						email: t.curEmail,
+						name: t.name
+					}
+				}))(o(), e);
+				if (!i.ok || !i.body || !i.body.success) {
+					const e = Object(g.b)(i, "Something went wrong sending the reset email. Please try again.");
+					return t(Te()), void t(Object(d.e)({
+						duration: d.a,
+						kind: N.b.Error,
+						text: e
+					}))
+				}
+				t(Se())
+			}
 		},
 		"./src/reddit/actions/video.ts": function(e, t, n) {
 			"use strict";
@@ -8796,4 +8805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.3fd147a12294a345ca3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.02a6d7e61cf4a5f6ed82.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.be869b1445d6e53c0567.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.21f78a2e592351ee506b.js
+// Retrieved at 10/26/2020, 12:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1436,25 +1436,28 @@
 		"./src/reddit/actions/snoovatar.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
-			})), s.d(t, "b", (function() {
 				return l
+			})), s.d(t, "b", (function() {
+				return u
 			}));
 			var n = s("./src/telemetry/index.ts"),
 				a = s("./src/reddit/actions/login.ts"),
 				r = s("./src/reddit/actions/modal.ts"),
-				o = s("./src/reddit/constants/modals.ts"),
-				i = s("./src/reddit/selectors/telemetry.ts");
-			var c = s("./src/reddit/selectors/user.ts");
-			const d = () => async e => {
-				await e(Object(r.g)(o.a.SNOOVATAR_MODAL))
-			}, l = e => async (t, s) => {
-				const d = s();
+				o = s("./src/reddit/actions/users.ts"),
+				i = s("./src/reddit/constants/modals.ts"),
+				c = s("./src/reddit/selectors/telemetry.ts");
+			var d = s("./src/reddit/selectors/user.ts");
+			const l = () => async e => {
+				e(Object(o.r)({
+					forceFetch: !0
+				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
+			}, u = e => async (t, s) => {
+				const o = s();
 				Object(n.a)((e => t => Object.assign({
 					source: e,
 					action: "click",
 					noun: "edit_snoovatar"
-				}, i.defaults(t)))(e)(d)), Object(c.I)(d) ? await t(Object(r.h)(o.a.SNOOVATAR_MODAL)) : await t(Object(a.h)())
+				}, c.defaults(t)))(e)(o)), Object(d.I)(o) ? await t(Object(r.h)(i.a.SNOOVATAR_MODAL)) : await t(Object(a.h)())
 			}
 		},
 		"./src/reddit/actions/subreddit/topSubreddits.ts": function(e, t, s) {
@@ -14954,4 +14957,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "Reddit~reddit-components-MediumPost", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.be869b1445d6e53c0567.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.21f78a2e592351ee506b.js.map
