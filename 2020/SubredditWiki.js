@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.13f33d8e9a31c8874a81.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.3be768822067bdf77aaf.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -5766,7 +5766,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(dt.bb)(yt, !0, this.props.subredditId), this.props.sendEvent(Object(ct.d)("close"))
+						}), Object(dt.db)(yt, !0, this.props.subredditId), this.props.sendEvent(Object(ct.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(ct.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -8203,4 +8203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.13f33d8e9a31c8874a81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3be768822067bdf77aaf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.f7dca0257a8f26fa5bdc.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.f29ef8da07279370b770.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -15199,7 +15199,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(lt.hb)(), this.setState({
+						Object(lt.kb)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -15219,7 +15219,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showEducation: !Object(lt.x)()
+						showEducation: !Object(lt.y)()
 					}), document.addEventListener("scroll", this.handleScroll), this.handleScroll()
 				}
 				componentWillUnmount() {
@@ -15525,4 +15525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.f7dca0257a8f26fa5bdc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.f29ef8da07279370b770.js.map

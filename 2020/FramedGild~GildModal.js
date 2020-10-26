@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.76b0ce5e470810f4d183.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2c1804db498765e8b20f.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -699,8 +699,8 @@
 				K = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				X = s("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				J = s.n(X),
-				Q = s("./src/reddit/helpers/awards/message.ts"),
-				Y = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				Y = s("./src/reddit/helpers/awards/message.ts"),
+				Q = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				Z = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				$ = s("./src/reddit/icons/svgs/Eye/index.tsx"),
 				ee = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
@@ -851,7 +851,7 @@
 						message: s
 					} = this.props, n = {
 						disabled: !1,
-						maxLength: Object(Q.c)(t, e),
+						maxLength: Object(Y.c)(t, e),
 						placeholder: i.fbt._("Optional private message", null, {
 							hk: "22UGRj"
 						})
@@ -867,7 +867,7 @@
 						className: Object(d.a)(J.a.textAreaWrapper, {
 							[J.a.messageTooLong]: o
 						})
-					}, a.a.createElement(Y.s, pe({
+					}, a.a.createElement(Q.s, pe({
 						className: J.a.textArea,
 						"data-redditstyle": !0,
 						name: "message",
@@ -1541,7 +1541,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.W)(e)
+					Object(p.Y)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -1684,7 +1684,7 @@
 						})
 					})),
 					setIsAnonymous: t => {
-						e(Object(O.setIsAnonymous)(t)), Object(p.W)(t)
+						e(Object(O.setIsAnonymous)(t)), Object(p.Y)(t)
 					},
 					subredditAboutRequested: t => e(Object(y.t)(t)),
 					subredditLockedCoinsRequested: (t, s) => e(Object(v.a)(t, s)),
@@ -2101,4 +2101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.76b0ce5e470810f4d183.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2c1804db498765e8b20f.js.map

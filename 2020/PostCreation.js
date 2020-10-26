@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.ceb806ad8b7203936a6b.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9e4a3a0b107c6501ce45.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -728,7 +728,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "5c5abdd-production"
+					SENTRY_RELEASE_VERSION: "39f5b8e-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -29629,14 +29629,14 @@
 				};
 			const dn = [{
 					id: Vt.d,
-					getShowTimesLeft: an.w,
-					setShowTimesLeft: an.gb,
+					getShowTimesLeft: an.x,
+					setShowTimesLeft: an.jb,
 					tooltipShown: cn.n,
 					tooltipDismissed: cn.m
 				}, {
 					id: Vt.c,
-					getShowTimesLeft: an.v,
-					setShowTimesLeft: an.fb,
+					getShowTimesLeft: an.w,
+					setShowTimesLeft: an.ib,
 					tooltipShown: cn.f,
 					tooltipDismissed: cn.e
 				}],
@@ -29837,7 +29837,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(an.S)(En.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(an.U)(En.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -34058,4 +34058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ceb806ad8b7203936a6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9e4a3a0b107c6501ce45.js.map

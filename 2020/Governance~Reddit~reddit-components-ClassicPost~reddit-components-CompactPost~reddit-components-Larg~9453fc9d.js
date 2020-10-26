@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.fc33bb2890d473ef0ab0.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.aeb42b92fbd2e3f691e4.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -304,7 +304,7 @@
 					e(T({
 						categoryId: t,
 						rank: s + 1
-					})), Object(b.P)(Object(p.e)(n()))
+					})), Object(b.R)(Object(p.e)(n()))
 				}
 		},
 		"./src/reddit/actions/comment/index.ts": function(t, e, n) {
@@ -3130,7 +3130,7 @@
 					id: "createPostCta",
 					kind: w.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(D.ab)(),
+					secondButtonAction: async () => Object(D.cb)(),
 					secondButtonText: "Dismiss",
 					text: "There have been over ".concat(_, " visits to r/").concat(i, " in the past week. Create a new post and start the next conversation.")
 				}))
@@ -3865,7 +3865,7 @@
 						}),
 						kind: l.b.SuccessCommunity,
 						text: c
-					})), Object(d.T)(r + 1)
+					})), Object(d.V)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/general.ts": function(t, e, n) {
@@ -11084,4 +11084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.fc33bb2890d473ef0ab0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.aeb42b92fbd2e3f691e4.js.map

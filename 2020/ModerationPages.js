@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.5a1feed78dd8022a70c4.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.98e2c150f0c19dca9460.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -7087,7 +7087,7 @@
 					update: n
 				} = e, o = Object(J.a)(), d = Object(i.c)(), [c, l] = Object(a.useState)(t.id), [m, u] = Object(a.useState)(!1), [p, b] = Object(a.useState)(!0);
 				return Object(a.useEffect)(() => {
-					b(Object(X.t)("location")), Object(X.db)("location")
+					b(Object(X.t)("location")), Object(X.fb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(P.a, null, S.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(M.k, {
@@ -7990,10 +7990,10 @@
 			}
 			var v = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(p.X)()
+					e(Object(c.i)()), Object(p.Z)()
 				},
 				onViewTooltip: () => {
-					Object(p.mb)()
+					Object(p.pb)()
 				}
 			}))(Object(m.c)(x));
 			const E = "editable-primary-topic-idcard";
@@ -31589,4 +31589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5a1feed78dd8022a70c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.98e2c150f0c19dca9460.js.map

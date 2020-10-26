@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e7b8629231cd08d36722.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ae0958532eefeceb083d.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "5c5abdd-production"
+					SENTRY_RELEASE_VERSION: "39f5b8e-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -2690,7 +2690,7 @@
 						toggleModal: t
 					} = e;
 					const a = () => {
-						J.jb(), t()
+						J.mb(), t()
 					};
 					return n.a.createElement(G.d, null, n.a.createElement(ee, null, n.a.createElement(z.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: Z.a.Title
@@ -5542,7 +5542,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(Le.j)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					J.G() || this.props.toggleIntroChatModal()
+					J.H() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Le.n)(this.props.currentStream, this.playbackStats))
@@ -5863,4 +5863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e7b8629231cd08d36722.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ae0958532eefeceb083d.js.map

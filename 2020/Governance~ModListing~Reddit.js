@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.25f55859eb1eddcf6df9.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.935b7821540ffd5ed01c.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -1466,7 +1466,7 @@
 						t(_(e))
 					}
 				}, j = () => async (e, t, n) => {
-					Object(a.cb)(i.a.REDESIGN_MODAL, !0), Object(l.I)(t()) && Object(c.e)(n.apiContext())
+					Object(a.eb)(i.a.REDESIGN_MODAL, !0), Object(l.I)(t()) && Object(c.e)(n.apiContext())
 				}, E = "SET_ACCOUNT_MANAGER_MODAL_DATA";
 			var h;
 			! function(e) {
@@ -3521,7 +3521,7 @@
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
-						[A.d, A.e, A.h, A.i].forEach(D), Object(C.H)(null), Object(v.a)(I.a.JustLoggedOut, !0), window.location.reload()
+						[A.d, A.e, A.h, A.i].forEach(D), Object(C.I)(null), Object(v.a)(I.a.JustLoggedOut, !0), window.location.reload()
 					})
 				}, k = n("./src/reddit/helpers/redesignOptoutCookie/index.ts"), L = n("./src/reddit/helpers/trackers/emailCollection.ts"), x = n("./src/reddit/helpers/trackers/emailVerification.ts"), N = n("./src/reddit/models/Toast/index.ts"), U = n("./src/reddit/selectors/activeModalId.ts"), M = n("./src/reddit/selectors/emailCollection.ts"), G = n("./src/reddit/selectors/notificationBanner.ts"), V = n("./src/reddit/selectors/user.ts"), F = n("./src/telemetry/index.ts"), B = function(e, t) {
 					var n = {};
@@ -6721,22 +6721,23 @@
 						c = arguments.length > 5 ? arguments[5] : void 0,
 						d = arguments.length > 6 ? arguments[6] : void 0;
 					return l => {
-						const _ = u.post(l, e);
-						(null == _ ? void 0 : _.promoted) && Object(i.Y)(e);
+						const _ = u.post(l, e),
+							f = u.defaults(l);
+						(null == _ ? void 0 : _.promoted) && (Object(i.ab)(e), f.actionInfo.pageType && Object(i.gb)(f.actionInfo.pageType));
 						const {
-							currentPage: f
-						} = l.platform, m = b(f) ? O(l, e, n, t) : p(l, e, n, t), g = Object(a.b)(l) || c, j = u.defaults(l);
-						if (g) {
+							currentPage: m
+						} = l.platform, g = b(m) ? O(l, e, n, t) : p(l, e, n, t), j = Object(a.b)(l) || c;
+						if (j) {
 							const n = s ? u.getRelativePostOrder(l, e, s) : null;
-							return Object.assign(Object.assign({}, j), {
+							return Object.assign(Object.assign({}, f), {
 								action: "click",
-								actionInfo: Object.assign(Object.assign({}, j.actionInfo), {
+								actionInfo: Object.assign(Object.assign({}, f.actionInfo), {
 									position: "number" == typeof n ? n + 1 : void 0,
 									referralId: d
 								}),
 								correlationId: Object(r.c)(r.a.LinkedPosts),
 								media: u.media(l, e),
-								mlModel: u.listingBelowMlModel(g, o),
+								mlModel: u.listingBelowMlModel(j, o),
 								noun: t,
 								post: _,
 								profile: u.profile(l),
@@ -6744,9 +6745,9 @@
 								subreddit: u.subreddit(l)
 							})
 						}
-						return Object.assign(Object.assign(Object.assign({}, m), j), {
+						return Object.assign(Object.assign(Object.assign({}, g), f), {
 							action: "click",
-							actionInfo: Object.assign(Object.assign({}, j.actionInfo), {
+							actionInfo: Object.assign(Object.assign({}, f.actionInfo), {
 								referralId: d
 							}),
 							media: u.media(l, e),
@@ -8805,4 +8806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.25f55859eb1eddcf6df9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.935b7821540ffd5ed01c.js.map

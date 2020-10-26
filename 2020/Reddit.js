@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.498b175d10393d7ce285.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.dadb7de1039668991e7e.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, s) {},
@@ -1385,10 +1385,10 @@
 					const t = l();
 					t && e(i(t))
 				}, l = () => {
-					return Object(o.o)(r.C) || void 0
+					return Object(o.o)(r.D) || void 0
 				}, u = () => async (e, t) => {
 					const s = t().publicAccessNetwork.userSettings;
-					Object(o.Z)(r.C, s)
+					Object(o.bb)(r.D, s)
 				}
 		},
 		"./src/reddit/actions/shortcuts/close.ts": function(e, t, s) {
@@ -2482,13 +2482,13 @@
 							domain: I.a.cookieDomain
 						});
 						const t = Object(bs.s)(q.a.ALPHA_CONSUMER);
-						t && Object(bs.I)(q.a.ALPHA_CONSUMER), (e || t) && Object(bs.cb)(q.a.REDESIGN_MODAL, !0)
+						t && Object(bs.J)(q.a.ALPHA_CONSUMER), (e || t) && Object(bs.eb)(q.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
 					} = this.props, s = Object(bs.s)(q.a.REDESIGN_MODAL);
-					!e && s ? t() : e && !s && Object(bs.cb)(q.a.REDESIGN_MODAL, !0)
+					!e && s ? t() : e && !s && Object(bs.eb)(q.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -5324,7 +5324,7 @@
 					}, this.close = () => {
 						this.props.dropdownIsOpen && this.props.onToggleDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(bs.J)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(bs.K)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -5334,7 +5334,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(bs.ib)(Object.assign(Object.assign({}, e), {
+							recentSearches: Object(bs.lb)(Object.assign(Object.assign({}, e), {
 								section: Ur.c.recent
 							}), this.props.currentUser.id)
 						})
@@ -5425,7 +5425,7 @@
 						}
 					}, this.toggleDropdownAndGetTrending = () => {
 						if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser) {
-							const e = Object(bs.y)(this.props.currentUser.id);
+							const e = Object(bs.z)(this.props.currentUser.id);
 							e.length > 0 && (this.setState({
 								recentSearches: this.props.isLoggedIn ? e : [],
 								itemList: [...e, ...this.props.trendingItems]
@@ -10833,8 +10833,8 @@
 						samplingId: n
 					} = e;
 					var a;
-					const r = Object(c.z)(),
-						i = Object(c.A)(),
+					const r = Object(c.A)(),
+						i = Object(c.B)(),
 						l = 864e5 * d.survey_cooldown_days;
 					if (!i || !i[t] || r && Date.now() - r <= l) return null;
 					const u = [],
@@ -10855,7 +10855,7 @@
 					const {
 						trigger_event: s
 					} = e;
-					Object(c.kb)(t), Object(c.L)(s)
+					Object(c.nb)(t), Object(c.N)(s)
 				},
 				h = () => d.active_surveys.map(e => e.experiment_name),
 				g = e => e.steps.reduce((e, t) => e + 1 + (t.follow_up_question ? 1 : 0), 0)
@@ -12016,7 +12016,7 @@
 			const De = 1e3;
 			class Ge extends u.a.Component {
 				constructor() {
-					super(...arguments), this.flush = Le()(() => Object(Fe.Z)(this.props.storageKey, this.props.value), De)
+					super(...arguments), this.flush = Le()(() => Object(Fe.bb)(this.props.storageKey, this.props.value), De)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -12139,7 +12139,7 @@
 					return n
 				} : () => e => t => e(t),
 				Pt = s("./src/reddit/helpers/survey/index.ts");
-			var Et = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Pt.b).filter(t => t === e).length)(t.type) && (Object(Fe.D)(Pt.b[t.type]), Object(Pt.c)().setState(Pt.b[t.type])), e(t)) : () => e => t => e(t);
+			var Et = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Pt.b).filter(t => t === e).length)(t.type) && (Object(Fe.E)(Pt.b[t.type]), Object(Pt.c)().setState(Pt.b[t.type])), e(t)) : () => e => t => e(t);
 			const jt = 5 * g.eb;
 			var St = e => {
 					const t = Le()(() => {
@@ -12678,7 +12678,7 @@
 									text: n.fbt._("Successfully logged in!", null, {
 										hk: "2POUVB"
 									})
-								})), l = !0, Object(Ut.c)(qe.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [Qe.o]))), Object(Ut.b)(qe.a.JustLoggedOut) && (l = !0, Object(Ut.c)(qe.a.JustLoggedOut)), Object(G.b)(e), !1 !== Fe.E()) {
+								})), l = !0, Object(Ut.c)(qe.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [Qe.o]))), Object(Ut.b)(qe.a.JustLoggedOut) && (l = !0, Object(Ut.c)(qe.a.JustLoggedOut)), Object(G.b)(e), !1 !== Fe.F()) {
 								let s;
 								Object(Os.a)(e) && (s = () => {
 									const {
@@ -12716,24 +12716,28 @@
 							});
 							e()
 						}), document.addEventListener("visibilitychange", () => {
-							if ("visible" !== document.visibilityState && (Fe.lb(Date.now()), Object(_.a)(Xt("tab_backgrounded")(d.getState()))), "visible" === document.visibilityState) {
+							if ("visible" !== document.visibilityState && (Fe.ob(Date.now()), Object(_.a)(Xt("tab_backgrounded")(d.getState()))), "visible" === document.visibilityState) {
 								const e = Fe.n(),
-									t = Fe.B();
-								if (t && e) {
-									const s = Date.now() - t;
-									Object(_.a)((e => (t, s, n) => Object.assign(Object.assign({}, Yt.defaults(t)), {
+									t = Fe.u(),
+									s = Fe.C();
+								if (s && e && t) {
+									const n = Date.now() - s;
+									Object(_.a)(((e, t) => (s, n, a) => Object.assign(Object.assign({}, Yt.defaults(s)), {
 										action: "refocus",
-										actionInfo: Yt.actionInfo(t, {
-											reason: e
-										}),
+										actionInfo: {
+											reason: Yt.actionInfo(s, {
+												reason: e
+											}).reason,
+											pageType: t
+										},
 										noun: "ad",
 										source: "post",
-										post: Yt.post(t, n),
+										post: Yt.post(s, a),
 										adClick: {
-											landingPageDuration: s
+											landingPageDuration: n
 										}
-									}))("tab_backgrounded")(d.getState(), s, e))
-								}(t || e) && (Fe.K(), Fe.M())
+									}))("tab_backgrounded", t)(d.getState(), n, e))
+								}(s || e || t) && (Fe.L(), Fe.O(), Fe.M())
 							}
 						}), Object(ne.j)(d.getState()) && es(d.getState), d.dispatch(Object(q.c)())
 					}), window.history.scrollRestoration = "manual", ws.a.attachStore(d), d.dispatch(Object(H.b)(P.a.PageLoad))
@@ -14965,4 +14969,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "Reddit~reddit-components-MediumPost", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.498b175d10393d7ce285.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.dadb7de1039668991e7e.js.map

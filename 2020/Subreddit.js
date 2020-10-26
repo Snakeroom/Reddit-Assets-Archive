@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.61330c66b4f9de306d9f.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.cca91e1f5cb0cf54e834.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -386,7 +386,7 @@
 				} = e, n = Object(c.f)(i.a.AWARDED_LISTING_BANNER, o.f), [u, m] = Object(s.useState)(n ? w.Hidden : w.Visible);
 				if (u === w.Hidden) return null;
 				const p = () => {
-					m(w.Visible), Object(c.O)(i.a.AWARDED_LISTING_BANNER, !1, o.f)
+					m(w.Visible), Object(c.Q)(i.a.AWARDED_LISTING_BANNER, !1, o.f)
 				};
 				return u === w.Dismissed ? r.a.createElement("div", {
 					className: Object(a.a)(x.a.dismissedContainer, t)
@@ -407,7 +407,7 @@
 				})), r.a.createElement(j, null), r.a.createElement(l.a, {
 					className: x.a.close,
 					onClick: () => {
-						m(w.Dismissed), Object(c.O)(i.a.AWARDED_LISTING_BANNER, !0, o.f)
+						m(w.Dismissed), Object(c.Q)(i.a.AWARDED_LISTING_BANNER, !0, o.f)
 					}
 				}))
 			}
@@ -1264,7 +1264,7 @@
 			class y extends a.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.O)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.Q)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(m.b)())
 					}, this.createPost = () => {
@@ -5676,7 +5676,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(ct.bb)(vt, !0, this.props.subredditId), this.props.sendEvent(Object(dt.d)("close"))
+						}), Object(ct.db)(vt, !0, this.props.subredditId), this.props.sendEvent(Object(dt.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(dt.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -9163,7 +9163,7 @@
 					n = Object(y.o)(e);
 					const [r, a] = Object(s.useState)(null != n ? n : t);
 					return [r, function(t) {
-						Object(y.Z)(e, t), a(t)
+						Object(y.bb)(e, t), a(t)
 					}]
 				}(d.f, []), [A, w] = Object(s.useState)(!1), S = function() {
 					const [e, t] = Object(s.useState)(!1);
@@ -10434,4 +10434,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.61330c66b4f9de306d9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.cca91e1f5cb0cf54e834.js.map

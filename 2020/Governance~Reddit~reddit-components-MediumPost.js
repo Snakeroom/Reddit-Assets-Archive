@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.f9f5b2ad57d8ac0adccc.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.0da2d12d1f5484878c1e.js
+// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/reddit/actions/inFeedChaining.ts": function(t, e, n) {
@@ -37,7 +37,7 @@
 				y = Object(r.a)(m),
 				C = t => {
 					const e = Date.now() - t,
-						n = Object(j.u)();
+						n = Object(j.v)();
 					return Object.keys(n).filter(t => n[t].when >= e).map(t => n[t])
 				},
 				T = t => {
@@ -56,12 +56,12 @@
 							T = e === m;
 						if (!(e === l.f || e === l.b || T)) return;
 						if (T) return void v(f, n, s)(t, r, b);
-						0 === C(c.fb).length && Object(j.eb)(!1);
+						0 === C(c.fb).length && Object(j.hb)(!1);
 						let E = r();
 						if (Object(I.d)(E, {
 								listingKey: n,
 								postId: s
-							}) || Object(I.a)(E).length >= O.a || Object(j.F)() || C(c.x).length >= O.a) return;
+							}) || Object(I.a)(E).length >= O.a || Object(j.G)() || C(c.x).length >= O.a) return;
 						const D = Object(p.C)(E, {
 							listingKey: n,
 							postId: s
@@ -115,14 +115,14 @@
 				D = (Object(r.a)(E), "FEED_CHAINING__CHAINING_TOGGLED"),
 				h = Object(r.a)(D),
 				S = () => async t => {
-					Object(j.eb)(!0), t(h({
+					Object(j.hb)(!0), t(h({
 						isDismissed: !0
 					})), t(Object(b.e)(Object(b.d)(s.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), f.b.Undo, s.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(j.eb)(!1), t(h({
+						Object(j.hb)(!1), t(h({
 							isDismissed: !1
 						}))
 					})))
@@ -750,4 +750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.f9f5b2ad57d8ac0adccc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.0da2d12d1f5484878c1e.js.map
