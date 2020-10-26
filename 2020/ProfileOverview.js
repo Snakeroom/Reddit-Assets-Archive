@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.b0bea4eeafd9283615e5.js
-// Retrieved at 10/26/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.f19d1e359351d457371f.js
+// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -5885,7 +5885,7 @@
 						userIsOp: ve,
 						isActionBarAnimationEnabled: Oe,
 						postId: Ce
-					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], ye = Ee ? void 0 : p, _e = Object(d.a)(oe), we = re && _e, ke = Object(a.a)(oe), je = Object(c.a)(oe), Pe = Object(R.c)(le), Se = !!le.media && le.media.type === h.o.RTJSON, Ie = ve && Se, Ne = s ? s - B.a : void 0, Te = !(y && U || Y), Me = (e => e === Q.ic.OnlyTitles)(pe) && !Object($.a)(le), Le = (e => e === Q.ic.MediumHeight)(pe) && !Object($.a)(le), Re = (e => {
+					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], ye = Ee ? void 0 : p, _e = Object(d.a)(oe), we = re && _e, ke = Object(a.a)(oe), je = Object(c.a)(oe), Pe = Object(R.c)(le), Se = !!le.media && le.media.type === h.o.RTJSON, Ie = ve && Se, Ne = s ? s - B.a : void 0, Te = !(y && U || Y), Me = (e => e === Q.kc.OnlyTitles)(pe) && !Object($.a)(le), Le = (e => e === Q.kc.MediumHeight)(pe) && !Object($.a)(le), Re = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -5900,7 +5900,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Fe = !!te && !Object(Q.Yc)(te), Ae = (!O || Fe) && !le.isSponsored, Be = Object(_.s)(le, v), {
+					})(e), Fe = !!te && !Object(Q.ad)(te), Ae = (!O || Fe) && !le.isSponsored, Be = Object(_.s)(le, v), {
 						source: De
 					} = Be, We = o.a.createElement(A.a, {
 						className: Object(w.a)(ue.a.container, r, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -15564,7 +15564,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.gb
 				});
-				return !(!t || Object(n.Yc)(t))
+				return !(!t || Object(n.ad)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
@@ -15594,4 +15594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.b0bea4eeafd9283615e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.f19d1e359351d457371f.js.map

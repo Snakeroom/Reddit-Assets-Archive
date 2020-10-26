@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.d348bb986d7b583741b3.js
-// Retrieved at 10/26/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.d8015a25ebf67db9167b.js
+// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -39,7 +39,7 @@
 			t.exports = JSON.parse('{"id":"5d042135b4c5"}')
 		},
 		"./src/graphql/operations/GetSubredditQuestions.json": function(t) {
-			t.exports = JSON.parse('{"id":"461753a8d2ae"}')
+			t.exports = JSON.parse('{"id":"aad0074284e6"}')
 		},
 		"./src/graphql/operations/GlobalAwards.json": function(t) {
 			t.exports = JSON.parse('{"id":"06dccfbe114b"}')
@@ -5256,39 +5256,46 @@
 		"./src/reddit/actions/subreddit/questions.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "b", (function() {
-				return i
-			})), n.d(e, "c", (function() {
-				return o
-			})), n.d(e, "a", (function() {
 				return d
-			})), n.d(e, "d", (function() {
+			})), n.d(e, "c", (function() {
 				return c
+			})), n.d(e, "a", (function() {
+				return a
+			})), n.d(e, "d", (function() {
+				return u
 			}));
-			var s = n("./src/graphql/operations/GetSubredditQuestions.json"),
-				r = n("./src/lib/makeGqlRequest/index.ts");
-			const i = "SUBREDDIT_QUESTIONS_LOADED",
-				o = "SUBREDDIT_SURVEY_ANSWERED",
-				d = "DISMISS_NCP_CARD",
-				c = t => async (e, n, o) => {
+			var s = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/graphql/operations/GetSubredditQuestions.json"),
+				i = n("./src/lib/makeGqlRequest/index.ts"),
+				o = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const d = "SUBREDDIT_QUESTIONS_LOADED",
+				c = "SUBREDDIT_SURVEY_ANSWERED",
+				a = "DISMISS_NCP_CARD",
+				u = t => async (e, n, c) => {
 					let {
-						gqlContext: d
-					} = o;
-					var c, a, u, l, b, p;
-					const O = (await ((t, e) => Object(r.a)(t, Object.assign(Object.assign({}, s), {
+						gqlContext: a
+					} = c;
+					var u, l, b, p, O, m;
+					const f = Object(o.c)(n(), {
+							experimentName: s.Xb,
+							experimentEligibilitySelector: o.a
+						}) === s.Wb.Enabled,
+						_ = (await ((t, e) => Object(i.a)(t, Object.assign(Object.assign({}, r), {
 							variables: e
-						})))(d(), {
-							id: t
+						})))(a(), {
+							id: t,
+							includeProgressModule: f
 						})).body,
-						m = null === (a = null === (c = O.data) || void 0 === c ? void 0 : c.subredditInfoById) || void 0 === a ? void 0 : a.answerableQuestions,
-						f = null === (l = null === (u = O.data) || void 0 === u ? void 0 : u.subredditInfoById) || void 0 === l ? void 0 : l.contentRatingSurvey,
-						_ = null === (p = null === (b = O.data) || void 0 === b ? void 0 : b.subredditInfoById) || void 0 === p ? void 0 : p.communityProgressModule;
-					(m || f || _) && e({
-						type: i,
+						g = null === (l = null === (u = _.data) || void 0 === u ? void 0 : u.subredditInfoById) || void 0 === l ? void 0 : l.answerableQuestions,
+						j = null === (p = null === (b = _.data) || void 0 === b ? void 0 : b.subredditInfoById) || void 0 === p ? void 0 : p.contentRatingSurvey,
+						E = null === (m = null === (O = _.data) || void 0 === O ? void 0 : O.subredditInfoById) || void 0 === m ? void 0 : m.communityProgressModule;
+					(g || j || E) && e({
+						type: d,
 						payload: {
 							id: t,
-							questions: m,
-							survey: f,
-							progressModule: _
+							questions: g,
+							survey: j,
+							progressModule: E
 						}
 					})
 				}
@@ -7711,7 +7718,7 @@
 								experimentName: i.w,
 								expEventOverride: e
 							});
-							return !!(Object(i.Yc)(n) ? void 0 : n)
+							return !!(Object(i.ad)(n) ? void 0 : n)
 						})(n)) || (t => !1 !== t.collapsed)(e)
 					})
 				}
@@ -10140,40 +10147,40 @@
 			var s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/constants/experiments.ts"),
 				i = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = t => r.zc.RulesAndWarnings === Object(i.c)(t, {
+			const o = t => r.Bc.RulesAndWarnings === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.sc
+					experimentName: r.uc
 				}),
-				d = t => r.zc.WarningsOnly === Object(i.c)(t, {
+				d = t => r.Bc.WarningsOnly === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.sc
+					experimentName: r.uc
 				}),
-				c = t => r.oc.Enabled === Object(i.c)(t, {
+				c = t => r.qc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.gc
+					experimentName: r.ic
 				}),
-				a = t => r.Ic.Enabled === Object(i.c)(t, {
+				a = t => r.Kc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.Dc
+					experimentName: r.Fc
 				}),
-				u = t => r.Jc.Enabled === Object(i.c)(t, {
+				u = t => r.Lc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.Ec
+					experimentName: r.Gc
 				}),
 				l = (t, e, n) => {
 					const s = n(t, e);
-					return !(!s || !s.meter) && (s.meter.enabled && u(t) && r.Wc.Enabled === Object(i.c)(t, {
+					return !(!s || !s.meter) && (s.meter.enabled && u(t) && r.Yc.Enabled === Object(i.c)(t, {
 						experimentEligibilitySelector: i.a,
-						experimentName: r.Tc
+						experimentName: r.Vc
 					}))
 				},
 				b = Object(s.a)(t => Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.uc
-				}), t => t === r.Ac.Enabled),
-				p = t => r.oc.Enabled === Object(i.c)(t, {
+					experimentName: r.wc
+				}), t => t === r.Cc.Enabled),
+				p = t => r.qc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.tc
+					experimentName: r.vc
 				})
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(t, e, n) {
@@ -11102,4 +11109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.d348bb986d7b583741b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.d8015a25ebf67db9167b.js.map

@@ -1,46 +1,53 @@
-// https://www.redditstatic.com/desktop2x/1.d97374d1d14b8631d8d2.js
-// Retrieved at 10/26/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.513f6da3ea647aac7b32.js
+// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./src/graphql/operations/GetSubredditQuestions.json": function(e) {
-			e.exports = JSON.parse('{"id":"461753a8d2ae"}')
+			e.exports = JSON.parse('{"id":"aad0074284e6"}')
 		},
 		"./src/reddit/actions/subreddit/questions.ts": function(e, s, t) {
 			"use strict";
 			t.d(s, "b", (function() {
-				return n
-			})), t.d(s, "c", (function() {
-				return i
-			})), t.d(s, "a", (function() {
 				return r
-			})), t.d(s, "d", (function() {
+			})), t.d(s, "c", (function() {
 				return l
+			})), t.d(s, "a", (function() {
+				return d
+			})), t.d(s, "d", (function() {
+				return o
 			}));
-			var a = t("./src/graphql/operations/GetSubredditQuestions.json"),
-				c = t("./src/lib/makeGqlRequest/index.ts");
-			const n = "SUBREDDIT_QUESTIONS_LOADED",
-				i = "SUBREDDIT_SURVEY_ANSWERED",
-				r = "DISMISS_NCP_CARD",
-				l = e => async (s, t, i) => {
+			var a = t("./src/reddit/constants/experiments.ts"),
+				c = t("./src/graphql/operations/GetSubredditQuestions.json"),
+				n = t("./src/lib/makeGqlRequest/index.ts"),
+				i = t("./src/reddit/helpers/chooseVariant/index.ts");
+			const r = "SUBREDDIT_QUESTIONS_LOADED",
+				l = "SUBREDDIT_SURVEY_ANSWERED",
+				d = "DISMISS_NCP_CARD",
+				o = e => async (s, t, l) => {
 					let {
-						gqlContext: r
-					} = i;
-					var l, d, o, m, x, v;
-					const g = (await ((e, s) => Object(c.a)(e, Object.assign(Object.assign({}, a), {
+						gqlContext: d
+					} = l;
+					var o, m, x, v, g, C;
+					const h = Object(i.c)(t(), {
+							experimentName: a.Xb,
+							experimentEligibilitySelector: i.a
+						}) === a.Wb.Enabled,
+						u = (await ((e, s) => Object(n.a)(e, Object.assign(Object.assign({}, c), {
 							variables: s
-						})))(r(), {
-							id: e
+						})))(d(), {
+							id: e,
+							includeProgressModule: h
 						})).body,
-						C = null === (d = null === (l = g.data) || void 0 === l ? void 0 : l.subredditInfoById) || void 0 === d ? void 0 : d.answerableQuestions,
-						h = null === (m = null === (o = g.data) || void 0 === o ? void 0 : o.subredditInfoById) || void 0 === m ? void 0 : m.contentRatingSurvey,
-						u = null === (v = null === (x = g.data) || void 0 === x ? void 0 : x.subredditInfoById) || void 0 === v ? void 0 : v.communityProgressModule;
-					(C || h || u) && s({
-						type: n,
+						w = null === (m = null === (o = u.data) || void 0 === o ? void 0 : o.subredditInfoById) || void 0 === m ? void 0 : m.answerableQuestions,
+						f = null === (v = null === (x = u.data) || void 0 === x ? void 0 : x.subredditInfoById) || void 0 === v ? void 0 : v.contentRatingSurvey,
+						p = null === (C = null === (g = u.data) || void 0 === g ? void 0 : g.subredditInfoById) || void 0 === C ? void 0 : C.communityProgressModule;
+					(w || f || p) && s({
+						type: r,
 						payload: {
 							id: e,
-							questions: C,
-							survey: h,
-							progressModule: u
+							questions: w,
+							survey: f,
+							progressModule: p
 						}
 					})
 				}
@@ -4274,4 +4281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.d97374d1d14b8631d8d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.513f6da3ea647aac7b32.js.map

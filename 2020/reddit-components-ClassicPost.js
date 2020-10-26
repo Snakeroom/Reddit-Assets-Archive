@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c388c6dd3483bc3659c2.js
-// Retrieved at 10/26/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.76ffe75ff2863a2863c0.js
+// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -14110,7 +14110,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts");
 			const o = e => {
-				if (!Object(n.Yc)(e)) return e || void 0
+				if (!Object(n.ad)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -14127,8 +14127,8 @@
 			const d = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: n.qc
-				}) === n.yc.Enabled
+					experimentName: n.sc
+				}) === n.Ac.Enabled
 			})(e) && (e => {
 				const t = Object(r.e)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -14202,4 +14202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c388c6dd3483bc3659c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.76ffe75ff2863a2863c0.js.map

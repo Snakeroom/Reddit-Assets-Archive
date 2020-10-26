@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.aae611f8018388daa0db.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.15873ea1321d0a9a1526.js
+// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -2243,7 +2243,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts");
 			const i = e => {
-				if (!Object(r.Yc)(e)) return e || void 0
+				if (!Object(r.ad)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -2260,8 +2260,8 @@
 			const d = e => (e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: r.qc
-				}) === r.yc.Enabled
+					experimentName: r.sc
+				}) === r.Ac.Enabled
 			})(e) && (e => {
 				const t = Object(n.e)(e);
 				return !!t && a.has(t.toLowerCase())
@@ -2279,4 +2279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.aae611f8018388daa0db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.15873ea1321d0a9a1526.js.map

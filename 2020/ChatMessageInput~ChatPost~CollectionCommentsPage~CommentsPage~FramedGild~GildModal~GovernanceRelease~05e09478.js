@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.75a4bab5dee63bd2f2d4.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.686878f440b79bbd6b24.js
+// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1306,8 +1306,8 @@
 						}, a.a.createElement(S.b, null)), "r/".concat(t)))
 					}
 				}),
-				N = s("./src/reddit/constants/experiments.ts"),
-				M = s("./src/reddit/helpers/trackers/subredditMentions.ts"),
+				M = s("./src/reddit/constants/experiments.ts"),
+				N = s("./src/reddit/helpers/trackers/subredditMentions.ts"),
 				B = s("./src/reddit/selectors/subredditMention.ts");
 			class D extends a.a.PureComponent {
 				constructor() {
@@ -1317,7 +1317,7 @@
 							sendEvent: t,
 							subredditName: s
 						} = this.props;
-						t(Object(M.a)(Object.assign(Object.assign({}, e), {
+						t(Object(N.a)(Object.assign(Object.assign({}, e), {
 							subredditName: s
 						})))
 					}
@@ -1351,12 +1351,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Kc.SmIcon:
+						case M.Mc.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case N.Kc.SmIconHc:
+						case M.Mc.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1799,12 +1799,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Fc
+						experimentName: n.Hc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Kc.SmIcon || t === n.Kc.SmIconHc
+					return t === n.Mc.SmIcon || t === n.Mc.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1830,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.75a4bab5dee63bd2f2d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.686878f440b79bbd6b24.js.map
