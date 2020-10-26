@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.27297d18a4beb56780a3.js
-// Retrieved at 10/21/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.af6ca9d80b91871cb9aa.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -216,7 +216,7 @@
 						className: E.a.flexSpacer
 					}), r.a.createElement("div", {
 						className: E.a.mediaWrapper
-					}, b))) : p = Object(v.a)(d) || Object(O.c)(d) && Object(f.a)(d) ? r.a.createElement("div", {
+					}, b))) : p = Object(v.a)(d) || Object(O.d)(d) && Object(f.a)(d) ? r.a.createElement("div", {
 						className: E.a.textWrapper
 					}, b) : r.a.createElement("div", {
 						className: E.a.flexSpacer
@@ -1058,4 +1058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.27297d18a4beb56780a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.af6ca9d80b91871cb9aa.js.map

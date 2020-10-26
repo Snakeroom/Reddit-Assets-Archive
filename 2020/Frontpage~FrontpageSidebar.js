@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.1ac2513e159d876fde2c.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.cf038452e0ab883db182.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -33,8 +33,8 @@
 				E = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				y = n("./src/reddit/controls/Button/index.tsx"),
 				f = n("./src/reddit/icons/svgs/Premium/index.tsx"),
-				N = n("./src/reddit/components/PremiumCTA/index.m.less"),
-				S = n.n(N);
+				S = n("./src/reddit/components/PremiumCTA/index.m.less"),
+				N = n.n(S);
 			const {
 				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -48,21 +48,21 @@
 						className: e,
 						contentOnly: !0
 					}, c.a.createElement("div", {
-						className: S.a.wrapper
+						className: N.a.wrapper
 					}, c.a.createElement(f.a, {
-						className: S.a.icon
+						className: N.a.icon
 					}), c.a.createElement("div", {
-						className: S.a.content
+						className: N.a.content
 					}, c.a.createElement("div", {
-						className: S.a.title
+						className: N.a.title
 					}, j._("Reddit Premium", null, {
 						hk: "39JIKQ"
 					})), c.a.createElement("div", {
-						className: S.a.description
+						className: N.a.description
 					}, j._("The best Reddit experience, with monthly Coins", null, {
 						hk: "2n1ct3"
 					}))), c.a.createElement(y.h, {
-						className: S.a.cta,
+						className: N.a.cta,
 						onClick: t
 					}, j._("Try Now", null, {
 						hk: "2HeiOg"
@@ -309,11 +309,11 @@
 				}
 			}
 			var fe = ke(ye),
-				Ne = n("./src/reddit/selectors/posts.ts");
-			const Se = Object(m.c)({
-				recentPosts: Ne.W
+				Se = n("./src/reddit/selectors/posts.ts");
+			const Ne = Object(m.c)({
+				recentPosts: Se.X
 			});
-			var je = Object(l.b)(Se, (e, t) => ({
+			var je = Object(l.b)(Ne, (e, t) => ({
 					openLightbox: t => () => e(Object(ge.a)(t.permalink))
 				}))(e => {
 					let {
@@ -514,7 +514,7 @@
 				g = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/MiniPost/index.m.less"),
 				_ = n.n(h);
-			const x = Object(o.a)(e => e, p.N, p.d, (e, t, n) => {
+			const x = Object(o.a)(e => e, p.O, p.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -979,8 +979,8 @@
 						to: e.to || ""
 					}, e.children)
 				},
-				N = n("./src/reddit/helpers/name/index.ts"),
-				S = n("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
+				S = n("./src/reddit/helpers/name/index.ts"),
+				N = n("./src/reddit/helpers/trackers/subredditLeaderboard.ts"),
 				j = n("./src/reddit/hooks/useTracking.ts"),
 				C = n("./src/reddit/components/TopSubredditsWidget/index.m.less"),
 				v = n.n(C);
@@ -1081,7 +1081,7 @@
 				};
 
 			function I(e, t) {
-				return t || "".concat(h.f).concat(Object(N.g)(e), "/")
+				return t || "".concat(h.f).concat(Object(S.g)(e), "/")
 			}
 			const P = e => {
 				return c.a.createElement("div", {
@@ -1109,7 +1109,7 @@
 					categories: i
 				} = e, o = Object(j.a)();
 				Object(d.useEffect)(() => {
-					o(Object(S.d)(s || h.d))
+					o(Object(N.d)(s || h.d))
 				}, []);
 				const l = r()(n),
 					u = t && l && t[l.id],
@@ -1244,4 +1244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.1ac2513e159d876fde2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.cf038452e0ab883db182.js.map

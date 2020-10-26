@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.00a49baf5c31daad8971.js
-// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.54ca090315def2a3c499.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -477,14 +477,14 @@
 					measureScrollFPS: g.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(u.N)(e, t),
 					loadMore: x.g,
-					postsById: T.Y,
+					postsById: T.Z,
 					postIds: Object(r.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: i,
 							inSubredditOrProfile: n
 						} = t;
-						return Object(T.K)(e, s, i, n)
+						return Object(T.L)(e, s, i, n)
 					}),
 					subredditsById: _.ab,
 					viewportDataLoaded: f.a,
@@ -970,9 +970,9 @@
 				z = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
 				Z = s.n(z);
 			const {
-				fbt: Y
+				fbt: G
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			class G extends n.a.Component {
+			class Y extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -996,16 +996,16 @@
 						to: "#"
 					}, n.a.createElement(P.o, {
 						className: Z.a.SeeAllRelatedTopics
-					}, Y._("See all {=[Topic name plural]}", [Y._param("=[Topic name plural]", n.a.createElement("span", {
+					}, G._("See all {=[Topic name plural]}", [G._param("=[Topic name plural]", n.a.createElement("span", {
 						className: Z.a.TopicName
-					}, Y._("{Topic name plural}", [Y._param("Topic name plural", e)], {
+					}, G._("{Topic name plural}", [G._param("Topic name plural", e)], {
 						hk: "27C3n9"
 					})))], {
 						hk: "uH0jh"
 					}))))
 				}
 			}
-			var q = G,
+			var q = Y,
 				K = s("./src/lib/prettyPrintNumber/index.ts"),
 				Q = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -1340,4 +1340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.00a49baf5c31daad8971.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.54ca090315def2a3c499.js.map

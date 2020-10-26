@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0163564f1e191083b5e2.js
-// Retrieved at 10/23/2020, 1:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4517c72cb141aacba4fe.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -671,16 +671,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Qb
+					experimentName: u.Sb
 				});
-				return Object(u.Vc)(t) ? void 0 : t
+				return Object(u.Xc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Rb
+					experimentName: u.Tb
 				});
-				return Object(u.Vc)(t) ? void 0 : t
-			}, (e, t) => e === u.Sb.Enabled && t === u.Sb.Enabled);
+				return Object(u.Xc)(t) ? void 0 : t
+			}, (e, t) => e === u.Ub.Enabled && t === u.Ub.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			n("./node_modules/core-js/modules/es6.regexp.to-string.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -728,7 +728,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "0339399-production"
+					SENTRY_RELEASE_VERSION: "76b94aa-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -2003,7 +2003,7 @@
 					} = i;
 					if ((await y(a(), e, t)).ok) {
 						const i = r(),
-							a = Object(k.N)(i, {
+							a = Object(k.O)(i, {
 								postId: t
 							}),
 							l = a && a.title || "",
@@ -2020,7 +2020,7 @@
 									collectionId: e
 								}),
 								s = n && n.postIds && n.postIds[u] || "",
-								i = Object(k.N)(t, {
+								i = Object(k.O)(t, {
 									postId: s
 								});
 							i && i.permalink && o(Object(j.a)(i.permalink))
@@ -2054,7 +2054,7 @@
 							collectionId: e,
 							postId: t
 						}));
-						const o = Object(k.N)(a, {
+						const o = Object(k.O)(a, {
 								postId: t
 							}),
 							r = Object(S.r)(a, {
@@ -5135,9 +5135,9 @@
 				M = Object(c.c)({
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Bb.TOPIC),
-					post: f.N,
+					post: f.O,
 					shouldOpenPostInNewTab: x.X,
-					subreddit: f.ab
+					subreddit: f.bb
 				}),
 				N = Object(i.b)(M);
 			t.a = N(e => {
@@ -6718,10 +6718,10 @@
 				})),
 				E = n("./src/reddit/selectors/posts.ts");
 			var O = Object(r.b)(() => Object(i.c)({
-				post: E.N,
-				subredditOrProfile: E.ab,
+				post: E.O,
+				subredditOrProfile: E.bb,
 				isModerator: (e, t) => {
-					const n = Object(E.ab)(e, t);
+					const n = Object(E.bb)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => o.a.createElement(h, {
@@ -6755,11 +6755,11 @@
 				}
 			}));
 			var j = Object(r.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(E.ab)(e, {
+				subredditOrProfile: (e, t) => Object(E.bb)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const n = Object(E.ab)(e, {
+					const n = Object(E.bb)(e, {
 						postId: t.post.id
 					});
 					return n && !!e.moderatingSubreddits[n.name] || !1
@@ -6781,10 +6781,10 @@
 				}
 			}));
 			var w = Object(r.b)(() => Object(i.c)({
-				post: E.N,
-				subredditOrProfile: E.ab,
+				post: E.O,
+				subredditOrProfile: E.bb,
 				isModerator: (e, t) => {
-					const n = Object(E.ab)(e, t);
+					const n = Object(E.bb)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => o.a.createElement(h, {
@@ -7841,12 +7841,12 @@
 						} = t;
 						return Object(q.a)(e, n.id)
 					},
-					subredditOrProfileDisplayText: (e, t) => Object(q.i)(e, t),
+					subredditOrProfileDisplayText: (e, t) => Object(q.k)(e, t),
 					subredditOrProfile: (e, t) => {
 						let {
 							post: n
 						} = t;
-						return Object(Q.ab)(e, {
+						return Object(Q.bb)(e, {
 							postId: n.id
 						})
 					},
@@ -8020,7 +8020,7 @@
 					} = this.props;
 					if (!o) return;
 					let r = "";
-					return s && (r += s), e === A.Hb.OCR ? r += "".concat(oe).concat(t) : n.title && (r += "".concat(oe).concat(n.title)), e === A.Hb.ShortPostTitleOCR && (r += "".concat(oe).concat(t)), r.length > se ? Object(v.a)(r, se, p.cb) : r
+					return s && (r += s), e === A.Jb.OCR ? r += "".concat(oe).concat(t) : n.title && (r += "".concat(oe).concat(n.title)), e === A.Jb.ShortPostTitleOCR && (r += "".concat(oe).concat(t)), r.length > se ? Object(v.a)(r, se, p.cb) : r
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -20932,7 +20932,7 @@
 			const S = ["right", "bottom"],
 				k = ["right", "top"];
 			var T = Object(a.b)(() => Object(c.c)({
-					post: y.N
+					post: y.O
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(x.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -22715,7 +22715,7 @@
 						postId: s
 					} = t;
 					return n && s ? Object(x.b)(e, s) : null
-				}, x.N, (e, t, n, s) => ({
+				}, x.O, (e, t, n, s) => ({
 					allowClickTracking: e,
 					basePixelMetadata: n,
 					userId: t ? Object(h.a)(t.id) : null,
@@ -33696,7 +33696,7 @@
 						experimentEligibilitySelector: r.I,
 						experimentName: s.kb
 					});
-					return !(!t || Object(s.Vc)(t))
+					return !(!t || Object(s.Xc)(t))
 				},
 				a = e => {
 					return Object(o.c)(e, {
@@ -34058,4 +34058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0163564f1e191083b5e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4517c72cb141aacba4fe.js.map

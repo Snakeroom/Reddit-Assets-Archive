@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.29acf2c35fd8de1cedce.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f00edf39ff1531050302.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/GetPredictionCoinPackages.json": function(e) {
@@ -68,7 +68,7 @@
 						gqlContext: s
 					} = o;
 					const i = n(),
-						c = Object(r.ab)(i, {
+						c = Object(r.bb)(i, {
 							postId: e,
 							disallowProfile: !0
 						});
@@ -480,8 +480,8 @@
 				isEditing: f.G,
 				prediction: b.g,
 				pollId: b.a,
-				post: E.N,
-				subredditOrProfile: E.ab,
+				post: E.O,
+				subredditOrProfile: E.bb,
 				userCoins: g.d,
 				userIsLoggedIn: g.I
 			}), K = {
@@ -769,4 +769,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.29acf2c35fd8de1cedce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f00edf39ff1531050302.js.map

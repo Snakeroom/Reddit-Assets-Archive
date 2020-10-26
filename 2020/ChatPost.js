@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.d0dbad3dfaf65f7f24b3.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.68474731689132036fcc.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -549,7 +549,7 @@
 			})), o.d(t, "f", (function() {
 				return L
 			})), o.d(t, "a", (function() {
-				return H
+				return V
 			}));
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
 				n = o("./node_modules/lodash/times.js"),
@@ -677,18 +677,18 @@
 						isLoading: !0
 					}))
 				}),
-				V = () => i.a.createElement("div", {
+				H = () => i.a.createElement("div", {
 					className: Object(l.a)(E.a.CommentBodyPlaceholder, Object(g.a)({
 						isLoading: !0
 					}))
 				}),
-				H = e => i.a.createElement(R, null, r()(10, t => i.a.createElement(A, {
+				V = e => i.a.createElement(R, null, r()(10, t => i.a.createElement(A, {
 					key: t
 				}, e.isAvatarsInCommentsEnabled ? i.a.createElement(P, {
 					className: Object(g.a)({
 						isLoading: !0
 					})
-				}) : i.a.createElement(B, null, i.a.createElement(W, null), i.a.createElement(U, null)), i.a.createElement(D, null, i.a.createElement(F, null), i.a.createElement(V, null)))))
+				}) : i.a.createElement(B, null, i.a.createElement(W, null), i.a.createElement(U, null)), i.a.createElement(D, null, i.a.createElement(F, null), i.a.createElement(H, null)))))
 		},
 		"./src/reddit/components/CommentsChat/Comment/AwardComment/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -1074,8 +1074,8 @@
 						hk: "3equVw"
 					}))
 				},
-				V = o("./src/lib/humanizeDateTime/index.ts"),
-				H = o("./src/reddit/models/Vote/index.ts"),
+				H = o("./src/lib/humanizeDateTime/index.ts"),
+				V = o("./src/reddit/models/Vote/index.ts"),
 				K = o("./src/reddit/actions/postCreation/general.ts"),
 				q = o("./src/reddit/actions/reportFlow.ts"),
 				z = o("./src/reddit/actions/tooltip.ts"),
@@ -1206,8 +1206,8 @@
 				We = k.a.wrapped(fe.a, "SpamIcon", oe.a),
 				Ue = k.a.wrapped(ue.a, "UpvoteIcon", oe.a),
 				Fe = k.a.wrapped(pe.a, "DownvoteIcon", oe.a),
-				Ve = k.a.wrapped(ve.a, "ModeratorIcon", oe.a),
-				He = e => (t, o) => {
+				He = k.a.wrapped(ve.a, "ModeratorIcon", oe.a),
+				Ve = e => (t, o) => {
 					let {
 						comment: s
 					} = o;
@@ -1236,18 +1236,18 @@
 						} = t;
 						return e.reportFlow.postOrCommentId === o.id
 					},
-					approveTooltipId: He("CommentChatPost--Approve--"),
-					blockTooltipId: He("CommentChatPost--Block--"),
-					createTooltipId: He("CommentChatPost--Create--"),
-					editTooltipId: He("CommentChatPost--Edit--"),
-					replyTooltipId: He("CommentChatPost--Reply--"),
-					reportTooltipId: He("CommentChatPost--Report--"),
-					upvoteTooltipId: He("CommentChatPost--Upvote--"),
-					downvoteTooltipId: He("CommentChatPost--Downvote--"),
-					distinguishTooltipId: He("CommentChatPost--Distinguish--"),
-					spamTooltipId: He("CommentChatPost--Spam--"),
-					removeTooltipId: He("CommentChatPost--Remove--"),
-					deleteTooltipId: He("CommentChatPost--Delete--"),
+					approveTooltipId: Ve("CommentChatPost--Approve--"),
+					blockTooltipId: Ve("CommentChatPost--Block--"),
+					createTooltipId: Ve("CommentChatPost--Create--"),
+					editTooltipId: Ve("CommentChatPost--Edit--"),
+					replyTooltipId: Ve("CommentChatPost--Reply--"),
+					reportTooltipId: Ve("CommentChatPost--Report--"),
+					upvoteTooltipId: Ve("CommentChatPost--Upvote--"),
+					downvoteTooltipId: Ve("CommentChatPost--Downvote--"),
+					distinguishTooltipId: Ve("CommentChatPost--Distinguish--"),
+					spamTooltipId: Ve("CommentChatPost--Spam--"),
+					removeTooltipId: Ve("CommentChatPost--Remove--"),
+					deleteTooltipId: Ve("CommentChatPost--Delete--"),
 					isDeleteModalOpen: (e, t) => {
 						let {
 							comment: o
@@ -1348,7 +1348,7 @@
 						voteState: ee,
 						score: te,
 						isDeleted: se
-					} = t, ne = !se && (0 === te || 1 === te || ee === H.a.notVoted);
+					} = t, ne = !se && (0 === te || 1 === te || ee === V.a.notVoted);
 					return c.a.createElement("div", {
 						className: o
 					}, c.a.createElement("div", {
@@ -1379,7 +1379,7 @@
 						}) : x.fbt._("Distinguish as Mod", null, {
 							hk: "jywZz"
 						})
-					}, e), c.a.createElement(Ve, null)), (z || Y) && !p && ne && c.a.createElement(ae, Me({
+					}, e), c.a.createElement(He, null)), (z || Y) && !p && ne && c.a.createElement(ae, Me({
 						onClick: w,
 						tooltipId: B,
 						tooltipText: x.fbt._("Upvote", null, {
@@ -1460,7 +1460,7 @@
 						trackingNoun: "sitewide_".concat(l ? "unblock" : "block")
 					}, X), c.a.createElement(Le, null))), !p && c.a.createElement(ie, Me({}, e, {
 						tooltipId: s,
-						tooltipText: Object(V.a)(t.created),
+						tooltipText: Object(H.a)(t.created),
 						timestampUpdateTrigger: q
 					}), Object(u.d)(t.created)))
 				})),
@@ -1541,7 +1541,7 @@
 						voteState: r,
 						score: a,
 						isDeleted: i
-					} = e, l = !i && !(0 === a || 1 === a || r === H.a.notVoted);
+					} = e, l = !i && !(0 === a || 1 === a || r === V.a.notVoted);
 					return (s || n) && l && c.a.createElement("div", {
 						className: Object(E.a)(lt.a.ChatHorizontalVotesWrapper, o)
 					}, c.a.createElement(dt, {
@@ -1561,7 +1561,7 @@
 					} = t;
 					return {
 						handleVote: t => {
-							t === H.a.upvoted && e(Object(C.rb)(o.id)), t === H.a.downvoted && e(Object(C.T)(o.id))
+							t === V.a.upvoted && e(Object(C.rb)(o.id)), t === V.a.downvoted && e(Object(C.T)(o.id))
 						}
 					}
 				})(Object(me.c)(pt)),
@@ -1616,7 +1616,7 @@
 						})
 					},
 					comment: Ge.n,
-					errorMsgs: Ge.F,
+					errorMsgs: Ge.H,
 					flair: Ge.e,
 					isActive: (e, t) => {
 						let {
@@ -1822,8 +1822,8 @@
 				Wt = o("./node_modules/lodash/isEqual.js"),
 				Ut = o.n(Wt),
 				Ft = o("./src/reddit/controls/Button/index.tsx"),
-				Vt = o("./src/reddit/components/CommentsChat/Scroller/index.m.less"),
-				Ht = o.n(Vt),
+				Ht = o("./src/reddit/components/CommentsChat/Scroller/index.m.less"),
+				Vt = o.n(Ht),
 				Kt = function(e, t) {
 					var o = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (o[s] = e[s]);
@@ -1833,14 +1833,14 @@
 					}
 					return o
 				};
-			const qt = k.a.div("ButtonWrapper", Ht.a),
+			const qt = k.a.div("ButtonWrapper", Vt.a),
 				zt = e => {
 					let {
 						top: t
 					} = e;
 					return c.a.createElement("span", {
-						className: Object(E.a)(Ht.a.ChunkPlaceholder, {
-							[Ht.a.top]: t
+						className: Object(E.a)(Vt.a.ChunkPlaceholder, {
+							[Vt.a.top]: t
 						})
 					}, x.fbt._("Loading...", null, {
 						hk: "2s97tt"
@@ -1856,9 +1856,9 @@
 					return c.a.createElement("div", {
 						ref: n,
 						className: Object(E.a)(t, {
-							[Ht.a.ScrollerWrapper]: !o,
-							[Ht.a.LivestreamingWrapper]: o,
-							[Ht.a.loading]: s
+							[Vt.a.ScrollerWrapper]: !o,
+							[Vt.a.LivestreamingWrapper]: o,
+							[Vt.a.loading]: s
 						})
 					}, !s && r.isPrevLoading && !o && c.a.createElement(zt, {
 						top: !0
@@ -2013,7 +2013,7 @@
 					const {
 						className: e,
 						isLivestreaming: t
-					} = this.props, o = this.state.newCommentsCount > 0 ? Object(E.a)([Ht.a.NewComments, Ht.a.show]) : Ht.a.NewComments;
+					} = this.props, o = this.state.newCommentsCount > 0 ? Object(E.a)([Vt.a.NewComments, Vt.a.show]) : Vt.a.NewComments;
 					return c.a.createElement(c.a.Fragment, null, c.a.createElement(Yt, {
 						className: e,
 						key: "chatScroller",
@@ -2026,14 +2026,14 @@
 					}, c.a.createElement("div", {
 						key: "beforeActiveCommentsSection",
 						ref: this._refBeforeActiveComments,
-						className: Ht.a.ScrollerSection
+						className: Vt.a.ScrollerSection
 					}, this.state.chunks[this.state.activeChunkIndex - 1]), c.a.createElement("div", {
 						key: "activeCommentsSection",
-						className: Ht.a.ScrollerSection
+						className: Vt.a.ScrollerSection
 					}, this.state.chunks[this.state.activeChunkIndex]), c.a.createElement("div", {
 						key: "nextActiveCommentsSection",
 						ref: this._refNextActiveComments,
-						className: Ht.a.ScrollerSection
+						className: Vt.a.ScrollerSection
 					}, this.state.chunks[this.state.activeChunkIndex + 1])), c.a.createElement(qt, null, c.a.createElement(Ft.i, {
 						className: o,
 						onClick: () => this.scrollToLastBottomChunk()
@@ -2060,7 +2060,7 @@
 					blockedRedditorsPending: Te.b,
 					chatCommentLinks: Ge.g,
 					isPending: Ge.d,
-					liveCommentsWebsocket: Qt.L,
+					liveCommentsWebsocket: Qt.M,
 					moreCommentsLink: Ge.E
 				}),
 				eo = Object(l.b)($t, (e, t) => ({
@@ -2802,4 +2802,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.d0dbad3dfaf65f7f24b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.68474731689132036fcc.js.map

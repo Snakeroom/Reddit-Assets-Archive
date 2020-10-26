@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.ef5e918d5d889410bd83.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.fcf640e42fd24fe61412.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./node_modules/lodash/_assignMergeValue.js": function(e, t, s) {
@@ -702,10 +702,10 @@
 				})),
 				E = s("./src/reddit/selectors/posts.ts");
 			var y = Object(n.b)(() => Object(d.c)({
-				post: E.N,
-				subredditOrProfile: E.ab,
+				post: E.O,
+				subredditOrProfile: E.bb,
 				isModerator: (e, t) => {
-					const s = Object(E.ab)(e, t);
+					const s = Object(E.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -739,11 +739,11 @@
 				}
 			}));
 			var I = Object(n.b)(() => Object(d.c)({
-				subredditOrProfile: (e, t) => Object(E.ab)(e, {
+				subredditOrProfile: (e, t) => Object(E.bb)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const s = Object(E.ab)(e, {
+					const s = Object(E.bb)(e, {
 						postId: t.post.id
 					});
 					return s && !!e.moderatingSubreddits[s.name] || !1
@@ -765,10 +765,10 @@
 				}
 			}));
 			var g = Object(n.b)(() => Object(d.c)({
-				post: E.N,
-				subredditOrProfile: E.ab,
+				post: E.O,
+				subredditOrProfile: E.bb,
 				isModerator: (e, t) => {
-					const s = Object(E.ab)(e, t);
+					const s = Object(E.bb)(e, t);
 					return s && !!e.moderatingSubreddits[s.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -1002,4 +1002,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.ef5e918d5d889410bd83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.fcf640e42fd24fe61412.js.map

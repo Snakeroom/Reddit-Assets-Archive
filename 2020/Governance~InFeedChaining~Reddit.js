@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.40910e1600d187eeb3e8.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.503c3796af63f5cd33bd.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -1139,10 +1139,10 @@
 					}
 					if (O) {
 						const r = ((e, t) => {
-								const s = Object(Ie.ab)(e, {
+								const s = Object(Ie.bb)(e, {
 										postId: t
 									}),
-									r = Object(Ie.N)(e, {
+									r = Object(Ie.O)(e, {
 										postId: t
 									});
 								if (!s || !r) return "";
@@ -1175,8 +1175,9 @@
 							m = !d && (c || !0) && (!Object(ue.g)(i) && !Object(Ve.d)(p, {
 								postId: o
 							}) && !!i || !Object(ve.i)(p) && Object(je.d)(p)),
-							g = !!Object(je.b)(p, O, !1) && !1;
-						if (u || m || d || g) {
+							g = !!Object(je.b)(p, O, !1) && !1,
+							h = Object(je.e)(p, O) && !1;
+						if (u || m || d || g || h) {
 							Object(Me.d)(Me.a.LinkedPosts);
 							const e = Object(Me.c)(Me.a.LinkedPosts),
 								s = {
@@ -1199,15 +1200,16 @@
 									includePostImageOCRAltText: g,
 									includeListingBelowExperiment: d,
 									includeOtherDiscussions: u,
-									includePostFeed: m
+									includePostFeed: m,
+									includePostQASchemaEligibilityFlag: h
 								})));
-							(m && c || g) && await a
+							(m && c || g || h) && await a
 						}
 						t(Object(P.p)()), t(L.l({
 							title: r
 						}));
-						const h = s().posts.instances[o] ? e.queryParams.instanceId : O.postId;
-						t(Object(f.b)(h)); {
+						const y = s().posts.instances[o] ? e.queryParams.instanceId : O.postId;
+						t(Object(f.b)(y)); {
 							const e = Object(me.d)(s(), {
 								subredditName: i.name
 							});
@@ -1259,7 +1261,7 @@
 					} : {
 						sort: s.sort
 					}); {
-						const t = Object(Ie.N)(n(), {
+						const t = Object(Ie.O)(n(), {
 							postId: e
 						});
 						t && t.numComments && t.numComments > $e && (I.truncate = Xe)
@@ -1295,7 +1297,7 @@
 							shouldCollapse: r
 						}, C.body)))
 					} {
-						const r = Object(Ie.N)(n(), {
+						const r = Object(Ie.O)(n(), {
 							postId: e
 						});
 						r && C.body.comments && Object.keys(C.body.comments).length < r.numComments ? i(jt(e, t, s)) : C.ok && i(Ot({
@@ -1306,7 +1308,7 @@
 					}
 					if (C.ok) {
 						i(W.f(d));
-						const t = Object(Ie.N)(n(), {
+						const t = Object(Ie.O)(n(), {
 							postId: e
 						});
 						i(H.t(t, J.a.CommentsView)), t && "subreddit" === t.belongsTo.type && C.body.comments && await i(Object(T.a)({
@@ -1354,7 +1356,7 @@
 							key: o
 						}));
 						const s = i().posts.models[e],
-							n = s && Object(Ie.ab)(i(), {
+							n = s && Object(Ie.bb)(i(), {
 								postId: s.id
 							});
 						s && "subreddit" === s.belongsTo.type && n && Object(Ee.a)(c, {
@@ -2241,7 +2243,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts");
 			const i = e => {
-				if (!Object(r.Vc)(e)) return e || void 0
+				if (!Object(r.Xc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -2258,8 +2260,8 @@
 			const d = e => (e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: r.nc
-				}) === r.vc.Enabled
+					experimentName: r.pc
+				}) === r.xc.Enabled
 			})(e) && (e => {
 				const t = Object(n.e)(e);
 				return !!t && a.has(t.toLowerCase())
@@ -2277,4 +2279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.40910e1600d187eeb3e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.503c3796af63f5cd33bd.js.map

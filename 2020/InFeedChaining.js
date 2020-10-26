@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.5838c25f4bfcba12c246.js
-// Retrieved at 10/22/2020, 1:00:27 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.97618ca018e3771715c2.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
@@ -129,7 +129,7 @@
 						className: j.a.flexSpacer
 					}), r.a.createElement("div", {
 						className: j.a.mediaWrapper
-					}, u))) : b = Object(g.a)(c) || Object(y.c)(c) && Object(f.a)(c) ? r.a.createElement("div", {
+					}, u))) : b = Object(g.a)(c) || Object(y.d)(c) && Object(f.a)(c) ? r.a.createElement("div", {
 						className: j.a.textWrapper
 					}, u) : r.a.createElement("div", {
 						className: j.a.flexSpacer
@@ -366,7 +366,7 @@
 				F = Object(d.c)({
 					discoveryUnit: O.b,
 					postChain: O.f,
-					postSubreddit: S.ab,
+					postSubreddit: S.bb,
 					routeName: P.r,
 					subscribedProfiles: j.c,
 					subscribedSubreddits: j.d
@@ -652,9 +652,9 @@
 				isActive: u.j,
 				moderatorPermissions: m.i,
 				modModeEnabled: c.P,
-				post: u.N,
+				post: u.O,
 				showEditFlair: p.a,
-				subredditOrProfile: u.ab,
+				subredditOrProfile: u.bb,
 				userIsOp: b.kb
 			}), (e, t) => {
 				let {
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.5838c25f4bfcba12c246.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.97618ca018e3771715c2.js.map

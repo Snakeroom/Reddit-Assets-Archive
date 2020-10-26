@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.2425a954bec32936ff16.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.557d154ce716c9aaa12d.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -2616,10 +2616,10 @@
 				})),
 				O = n("./src/reddit/selectors/posts.ts");
 			var C = Object(a.b)(() => Object(i.c)({
-				post: O.N,
-				subredditOrProfile: O.ab,
+				post: O.O,
+				subredditOrProfile: O.bb,
 				isModerator: (e, t) => {
-					const n = Object(O.ab)(e, t);
+					const n = Object(O.bb)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -2653,11 +2653,11 @@
 				}
 			}));
 			var k = Object(a.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(O.ab)(e, {
+				subredditOrProfile: (e, t) => Object(O.bb)(e, {
 					postId: t.post.id
 				}),
 				isModerator: (e, t) => {
-					const n = Object(O.ab)(e, {
+					const n = Object(O.bb)(e, {
 						postId: t.post.id
 					});
 					return n && !!e.moderatingSubreddits[n.name] || !1
@@ -2679,10 +2679,10 @@
 				}
 			}));
 			var j = Object(a.b)(() => Object(i.c)({
-				post: O.N,
-				subredditOrProfile: O.ab,
+				post: O.O,
+				subredditOrProfile: O.bb,
 				isModerator: (e, t) => {
-					const n = Object(O.ab)(e, t);
+					const n = Object(O.bb)(e, t);
 					return n && !!e.moderatingSubreddits[n.name] || !1
 				}
 			}))(e => r.a.createElement(b, {
@@ -5344,8 +5344,8 @@
 			const {
 				fbt: je
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ae = e => e.type === Ee.f.Nsfw || e.type === Ee.f.Spoiler, we = Object(d.c)({
-				post: me.N,
-				subredditOrProfile: me.ab
+				post: me.O,
+				subredditOrProfile: me.bb
 			});
 			class Se extends o.a.PureComponent {
 				constructor() {
@@ -5423,7 +5423,7 @@
 				Pe = n.n(_e);
 			const {
 				fbt: Ie
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Te = 10, Be = 2, Le = Object(d.a)(me.T, e => e.filter(e => !e.isSponsored)), Fe = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Te = 10, Be = 2, Le = Object(d.a)(me.U, e => e.filter(e => !e.isSponsored)), Fe = Object(d.c)({
 				posts: Le
 			});
 			class Me extends o.a.Component {
@@ -5534,7 +5534,7 @@
 					listingKey: qe,
 					posts: (e, t) => {
 						const n = qe(e, t);
-						return Object(me.T)(e, {
+						return Object(me.U)(e, {
 							listingKey: n
 						})
 					},
@@ -6282,7 +6282,7 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
-					postCount: l.S,
+					postCount: l.T,
 					previousPageIsOverlay: d.p,
 					tabBadged: e => e.tabBadged
 				}),
@@ -7359,14 +7359,14 @@
 					measureScrollFPS: g.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
 					loadMore: f.g,
-					postsById: y.Y,
+					postsById: y.Z,
 					postIds: Object(a.a)((e, t) => {
 						let {
 							listingKey: n,
 							listingName: s,
 							inSubredditOrProfile: r
 						} = t;
-						return Object(y.K)(e, n, s, r)
+						return Object(y.L)(e, n, s, r)
 					}),
 					subredditsById: v.ab,
 					viewportDataLoaded: E.a,
@@ -7453,9 +7453,9 @@
 				isActive: p.j,
 				moderatorPermissions: u.i,
 				modModeEnabled: d.P,
-				post: p.N,
+				post: p.O,
 				showEditFlair: m.a,
-				subredditOrProfile: p.ab,
+				subredditOrProfile: p.bb,
 				userIsOp: b.kb
 			}), (e, t) => {
 				let {
@@ -9502,7 +9502,7 @@
 						a = Object(we.a)(be.c.config)(e, {
 							subredditId: n.id
 						}),
-						i = Object(Se.K)(e, r, s, !0),
+						i = Object(Se.L)(e, r, s, !0),
 						o = !Object(je.d)(e, {
 							listingKey: r
 						});
@@ -10411,7 +10411,7 @@
 						experimentEligibilitySelector: a.I,
 						experimentName: s.kb
 					});
-					return !(!t || Object(s.Vc)(t))
+					return !(!t || Object(s.Xc)(t))
 				},
 				o = e => {
 					return Object(r.c)(e, {
@@ -10427,11 +10427,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.Ec.Enabled === Object(r.c)(e, {
+			const a = e => s.Gc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.yc
+				experimentName: s.Ac
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2425a954bec32936ff16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.557d154ce716c9aaa12d.js.map

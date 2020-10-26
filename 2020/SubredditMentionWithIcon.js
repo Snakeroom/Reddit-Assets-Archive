@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.3f20b92bfffa1ea53408.js
-// Retrieved at 10/22/2020, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.ea8da784bbefe06382b4.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
@@ -531,7 +531,7 @@
 				A = s.n(U);
 			const {
 				fbt: q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = Object(a.a)(e => e, R.N, R.d, (e, t, s) => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = Object(a.a)(e => e, R.O, R.d, (e, t, s) => {
 				return {
 					crosspost: s,
 					post: t,
@@ -1652,4 +1652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.3f20b92bfffa1ea53408.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.ea8da784bbefe06382b4.js.map

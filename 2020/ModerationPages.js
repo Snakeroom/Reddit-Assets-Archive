@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.52982fcb589456bafe8f.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.924b6d89fec3c4a83167.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -613,7 +613,7 @@
 							postId: e
 						}));
 						const a = s(),
-							r = Object(x.N)(a, {
+							r = Object(x.O)(a, {
 								postId: e
 							}),
 							d = r && r.title || "";
@@ -645,7 +645,7 @@
 							eventInfo: m
 						}));
 						const u = a(),
-							p = Object(x.N)(u, {
+							p = Object(x.O)(u, {
 								postId: e
 							}),
 							b = p && p.title || "",
@@ -2469,7 +2469,7 @@
 						apiContext: a
 					} = o;
 					const r = n(),
-						i = Object(k.N)(r, {
+						i = Object(k.O)(r, {
 							postId: e
 						});
 					t ? (s(Object(g.a)(i.permalink)), Object(x.d)(e, "edit")(r)) : Object(v.b)(e, "edit")(r);
@@ -6259,7 +6259,7 @@
 			const j = Object(r.b)(() => Object(d.c)({
 					isChatPost: v.d,
 					isPostSEOEligible: _.d,
-					postPermalink: C.M,
+					postPermalink: C.N,
 					shouldOpenPostInNewTab: O.X,
 					totalDiscount: E.a
 				})),
@@ -8575,9 +8575,9 @@
 						const s = e.posts.metaMap[t.postId];
 						if (s) return e.polls.models[s]
 					},
-					post: y.N,
+					post: y.O,
 					showEditFlair: k.a,
-					subredditOrProfile: y.ab,
+					subredditOrProfile: y.bb,
 					userIsOp: j.kb
 				}), (e, t) => {
 					let {
@@ -9741,9 +9741,9 @@
 				P = Object(d.c)({
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Bb.TOPIC),
-					post: f.N,
+					post: f.O,
 					shouldOpenPostInNewTab: x.X,
-					subreddit: f.ab
+					subreddit: f.bb
 				}),
 				M = Object(r.b)(P);
 			t.a = M(e => {
@@ -19577,8 +19577,8 @@
 					isOC: le.t,
 					isPinned: le.u,
 					isSpoiler: le.y,
-					post: le.N,
-					postSubredditAboutInfo: le.O,
+					post: le.O,
+					postSubredditAboutInfo: le.P,
 					reportFlowIsOpen: (e, t) => {
 						let {
 							isOverlay: s,
@@ -19586,18 +19586,18 @@
 						} = t;
 						return e.reportFlow.openedFromModalPage === s && e.reportFlow.postOrCommentId === n
 					},
-					sendRepliesToggled: le.X,
+					sendRepliesToggled: le.Y,
 					showPinAction: (e, t) => {
 						var {
 							isProfilePostListing: s
 						} = t, n = Oe(t, ["isProfilePostListing"]);
 						return Object(Z.B)(e, n) && s && Object(ue.kb)(e, n) && Object(ue.ib)(e, {
-							userName: Object(le.N)(e, {
+							userName: Object(le.O)(e, {
 								postId: n.postId
 							}).author
 						})
 					},
-					subredditOrProfile: le.ab,
+					subredditOrProfile: le.bb,
 					hasSubredditRules: me.k,
 					userIsOp: ue.kb,
 					isPostPartOfACollection: Ee.l,
@@ -19605,10 +19605,10 @@
 						let {
 							postId: s
 						} = t;
-						if (Object(le.N)(e, {
+						if (Object(le.O)(e, {
 								postId: s
 							}).isSponsored) return !1;
-						const n = Object(le.ab)(e, {
+						const n = Object(le.bb)(e, {
 							postId: s
 						});
 						if (!n) return !1;
@@ -25512,14 +25512,14 @@
 					imageGalleryCurrentItem: b.i,
 					moderatorPermissions: u.i,
 					modModeEnabled: c.P,
-					post: b.N,
+					post: b.O,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: p.a,
 					showMedia: c.r,
-					subredditOrProfile: b.ab,
+					subredditOrProfile: b.bb,
 					userIsOp: h.kb,
 					flairStyleTemplate: c.R
 				},
@@ -31310,7 +31310,7 @@
 				},
 				r = (e, t) => {
 					const s = a(e, t);
-					return Object(o.T)(e, {
+					return Object(o.U)(e, {
 						listingKey: s
 					}) || []
 				},
@@ -31589,4 +31589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.52982fcb589456bafe8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.924b6d89fec3c4a83167.js.map

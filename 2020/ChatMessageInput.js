@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.f7755b08b2c633819823.js
-// Retrieved at 10/22/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.4a00dfc87c2d7d1e964a.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -464,8 +464,8 @@
 				j = s("./src/reddit/components/RichTextEditor/index.tsx"),
 				x = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				v = s("./src/reddit/components/RichTextJsonChatReply/index.tsx"),
-				C = s("./src/reddit/controls/Button/index.tsx"),
-				O = s("./src/reddit/controls/ErrorText/index.tsx"),
+				O = s("./src/reddit/controls/Button/index.tsx"),
+				C = s("./src/reddit/controls/ErrorText/index.tsx"),
 				E = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				I = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				y = s("./src/reddit/helpers/richTextEditor/index.ts"),
@@ -526,7 +526,7 @@
 					return Object(S.g)(e, {
 						commentsPageKey: Object(F.a)(s)
 					})
-				}, L.N, (e, t) => {
+				}, L.O, (e, t) => {
 					let {
 						postId: s
 					} = t;
@@ -598,7 +598,7 @@
 				z = 1e3,
 				Y = "chat_submission_from_rte",
 				Z = h.a.form("Form", J.a),
-				Q = h.a.wrapped(C.d, "ChatButton", J.a),
+				Q = h.a.wrapped(O.d, "ChatButton", J.a),
 				$ = h.a.div("CloseIconWrap", J.a),
 				ee = h.a.div("Reply", J.a),
 				te = h.a.div("ReplyAuthor", J.a),
@@ -607,11 +607,11 @@
 				ae = h.a.wrapped(f.a, "SmallChatUserIcon", J.a),
 				re = Object(l.b)(() => Object(u.c)({
 					draft: S.i,
-					errorMsgs: S.J,
+					errorMsgs: S.L,
 					hasError: S.w,
 					liveStreamingChatCharacterLimit: T.a,
 					pending: (e, t) => e.comments.submit.pending[t.draftKey],
-					post: L.N
+					post: L.O
 				}), (e, t) => {
 					let {
 						isEditing: s,
@@ -823,7 +823,7 @@
 						onClick: this.onClickGiveAward
 					}, d.a.createElement(W, {
 						postId: i
-					}))), this.state.showError && Object(O.c)(e))
+					}))), this.state.showError && Object(C.c)(e))
 				}
 			}
 			const ce = e => {
@@ -1000,8 +1000,8 @@
 					}))))
 				}),
 				v = s("./src/reddit/controls/ErrorText/index.m.less"),
-				C = s.n(v);
-			const O = Object(u.c)({
+				O = s.n(v);
+			const C = Object(u.c)({
 				activeModalId: p.a
 			});
 			class E extends d.a.Component {
@@ -1046,12 +1046,12 @@
 						textHasOverflowed: i
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(m.a)(C.a.wrapper, s)
+						className: Object(m.a)(O.a.wrapper, s)
 					}, d.a.createElement("span", {
-						className: C.a.description,
+						className: O.a.description,
 						ref: this.spanRef
 					}, e), i && d.a.createElement("span", {
-						className: C.a.moreText,
+						className: O.a.moreText,
 						onClick: this.toggleModal
 					}, o), t === c && d.a.createElement(x, {
 						onConfirmed: this.toggleModal,
@@ -1059,7 +1059,7 @@
 					}, a || e))
 				}
 			}
-			const I = Object(l.b)(O, e => ({
+			const I = Object(l.b)(C, e => ({
 					toggleErrorTextModal: t => e(Object(h.i)(t))
 				}))(E),
 				y = e => {
@@ -1152,9 +1152,9 @@
 			})), s.d(t, "j", (function() {
 				return v
 			})), s.d(t, "s", (function() {
-				return C
-			})), s.d(t, "o", (function() {
 				return O
+			})), s.d(t, "o", (function() {
+				return C
 			})), s.d(t, "r", (function() {
 				return E
 			})), s.d(t, "y", (function() {
@@ -1308,7 +1308,7 @@
 					noun: "chat",
 					playback: i(s, e, t)
 				}, c(s, e)),
-				C = e => t => {
+				O = e => t => {
 					const s = Object(r.l)(t, e);
 					return Object.assign({
 						source: "stream_chat",
@@ -1316,7 +1316,7 @@
 						noun: "send_chat"
 					}, c(t, s))
 				},
-				O = (e, t, s) => n => Object.assign({
+				C = (e, t, s) => n => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
@@ -1496,8 +1496,8 @@
 				j = e => e.publicAccessNetwork.history.visitOrder,
 				x = e => e.publicAccessNetwork.hlsStreams,
 				v = Object(n.a)(x, e => e.ended),
-				C = Object(n.a)(x, e => e.removed),
-				O = Object(n.a)(b, v, C, (e, t, s) => {
+				O = Object(n.a)(x, e => e.removed),
+				C = Object(n.a)(b, v, O, (e, t, s) => {
 					const n = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
@@ -1530,14 +1530,14 @@
 					}, n)
 				}),
 				E = (e, t) => {
-					return O(e)[Object(o.h)(t)]
+					return C(e)[Object(o.h)(t)]
 				},
 				I = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => h(t.listingName)(e, t), O, _, i.h, d.d, (e, t, s, n, a, i) => {
+				}, (e, t) => h(t.listingName)(e, t), C, _, i.h, d.d, (e, t, s, n, a, i) => {
 					if (i) {
 						const r = [];
 						if (e) {
@@ -1560,7 +1560,7 @@
 						count: s
 					} = t;
 					return s
-				}, O, (e, t) => {
+				}, C, (e, t) => {
 					let {
 						listingName: s,
 						streamIdFromPath: n
@@ -1573,11 +1573,11 @@
 					const n = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? n.slice(0, e) : n
 				}),
-				w = Object(n.a)(O, y, (e, t) => {
+				w = Object(n.a)(C, y, (e, t) => {
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				k = Object(n.a)(O, y, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === c.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				k = Object(n.a)(C, y, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === c.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				A = Object(n.a)(j, (e, t) => {
 					let {
 						related: s,
@@ -1598,7 +1598,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, O, (e, t) => {
+				}, C, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: n,
@@ -1619,7 +1619,7 @@
 					});
 					return o ? o.post.id : void 0
 				}),
-				S = Object(a.a)(Object(n.a)(N, O, (e, t) => e ? t[e] : void 0)),
+				S = Object(a.a)(Object(n.a)(N, C, (e, t) => e ? t[e] : void 0)),
 				L = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
@@ -1640,10 +1640,10 @@
 				F = Object(n.a)(f, j, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				R = Object(a.a)(Object(n.a)(L, O, (e, t) => e ? t[e] : void 0)),
-				D = Object(a.a)(Object(n.a)(T, O, (e, t) => e ? t[e] : void 0)),
-				M = Object(a.a)(Object(n.a)(F, O, (e, t) => e ? t[e] : void 0)),
-				P = (Object(a.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, O, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
+				R = Object(a.a)(Object(n.a)(L, C, (e, t) => e ? t[e] : void 0)),
+				D = Object(a.a)(Object(n.a)(T, C, (e, t) => e ? t[e] : void 0)),
+				M = Object(a.a)(Object(n.a)(F, C, (e, t) => e ? t[e] : void 0)),
+				P = (Object(a.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, C, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => Object.assign(Object.assign({}, t[s]), {
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)(L, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				B = Object(n.a)((e, t) => {
@@ -1670,7 +1670,7 @@
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
 			}(K || (K = {}));
-			const G = Object(n.a)(L, O, p.b, (e, t, s) => {
+			const G = Object(n.a)(L, C, p.b, (e, t, s) => {
 					if (s) return K.INTRO;
 					const n = e && t[e];
 					if (!n) return K.UNAVAILABLE;
@@ -1703,4 +1703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.f7755b08b2c633819823.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.4a00dfc87c2d7d1e964a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.1f57b731bca6e3230688.js
-// Retrieved at 9/24/2020, 6:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.edc6353599bfdc187f77.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, i) {
@@ -518,7 +518,7 @@
 				d = i("./src/reddit/selectors/posts.ts"),
 				l = i("./src/lib/classNames/index.ts");
 			const u = Object(a.a)(() => Object(s.c)({
-					post: d.N
+					post: d.O
 				})),
 				c = e => {
 					let {
@@ -548,4 +548,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.1f57b731bca6e3230688.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.edc6353599bfdc187f77.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0cdd26340cf388162589.js
-// Retrieved at 10/23/2020, 1:20:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.56b96ef6bd8c6584029d.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -285,16 +285,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Qb
+					experimentName: m.Sb
 				});
-				return Object(m.Vc)(t) ? void 0 : t
+				return Object(m.Xc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Rb
+					experimentName: m.Tb
 				});
-				return Object(m.Vc)(t) ? void 0 : t
-			}, (e, t) => e === m.Sb.Enabled && t === m.Sb.Enabled);
+				return Object(m.Xc)(t) ? void 0 : t
+			}, (e, t) => e === m.Ub.Enabled && t === m.Ub.Enabled);
 			var h = a("./src/config.ts");
 			var b = a("./src/reddit/selectors/user.ts");
 			a("./node_modules/core-js/modules/es6.regexp.to-string.js"), a("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "0339399-production"
+					SENTRY_RELEASE_VERSION: "76b94aa-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -4790,7 +4790,7 @@
 						let {
 							postId: a
 						} = t;
-						return Object(fn.N)(e, {
+						return Object(fn.O)(e, {
 							postId: a
 						})
 					}
@@ -4871,7 +4871,7 @@
 					let {
 						postId: a
 					} = t;
-					return !!Object(fn.N)(e, {
+					return !!Object(fn.O)(e, {
 						postId: a
 					})
 				},
@@ -5863,4 +5863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0cdd26340cf388162589.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.56b96ef6bd8c6584029d.js.map

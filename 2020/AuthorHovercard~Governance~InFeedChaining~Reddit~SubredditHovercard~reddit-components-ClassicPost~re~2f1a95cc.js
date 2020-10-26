@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.ee8d01a946627a5d6339.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.662e190f1290601972d0.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -222,7 +222,7 @@
 				}, ee = Object(a.a)(K.t), te = (e, t) => {
 					const {
 						id: r
-					} = t, n = Object(F.a)(r) ? Object(T.N)(e, {
+					} = t, n = Object(F.a)(r) ? Object(T.O)(e, {
 						postId: r
 					}) : Object(D.n)(e, {
 						commentId: r
@@ -310,7 +310,7 @@
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const N = Object(F.a)(l) && Object(j.i)(Object(T.N)(a, {
+					const N = Object(F.a)(l) && Object(j.i)(Object(T.O)(a, {
 						postId: l
 					}));
 					await t(Object(i.b)(k));
@@ -390,13 +390,13 @@
 								experimentEligibilitySelector: h.a,
 								experimentName: j.lb
 							});
-							return !(!t || Object(j.Vc)(t))
+							return !(!t || Object(j.Xc)(t))
 						})(a)) && ("repeat_purchaser" !== s.dealInfo.type || (e => {
 							const t = Object(h.c)(e, {
 								experimentEligibilitySelector: h.a,
 								experimentName: j.jb
 							});
-							return !(!t || Object(j.Vc)(t))
+							return !(!t || Object(j.Xc)(t))
 						})(a)) && (e(w({
 							correlationId: t,
 							packageId: r
@@ -2879,7 +2879,7 @@
 					experimentEligibilitySelector: s.I,
 					experimentName: n.gb
 				});
-				return !(!t || Object(n.Vc)(t))
+				return !(!t || Object(n.Xc)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
@@ -2903,4 +2903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.ee8d01a946627a5d6339.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.662e190f1290601972d0.js.map

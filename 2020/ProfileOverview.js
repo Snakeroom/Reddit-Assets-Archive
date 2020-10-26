@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.f193b566ca87ae9075e3.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.749eae98e604a1df0ce8.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -376,7 +376,7 @@
 							postId: e
 						}));
 						const r = s(),
-							i = Object(g.N)(r, {
+							i = Object(g.O)(r, {
 								postId: e
 							}),
 							c = i && i.title || "";
@@ -408,7 +408,7 @@
 							eventInfo: m
 						}));
 						const p = r(),
-							u = Object(g.N)(p, {
+							u = Object(g.O)(p, {
 								postId: e
 							}),
 							b = u && u.title || "",
@@ -485,7 +485,7 @@
 						apiContext: r
 					} = o;
 					const i = n(),
-						a = Object(_.N)(i, {
+						a = Object(_.O)(i, {
 							postId: e
 						});
 					t ? (s(Object(x.a)(a.permalink)), Object(g.d)(e, "edit")(i)) : Object(v.b)(e, "edit")(i);
@@ -2211,7 +2211,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.M)(e, {
+						return Object(J.N)(e, {
 							postId: s.postId
 						})
 					},
@@ -2226,7 +2226,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.ab)(e, {
+						return Object(J.bb)(e, {
 							postId: s.postId
 						})
 					}
@@ -2620,7 +2620,7 @@
 			const k = Object(i.b)(() => Object(c.c)({
 					isChatPost: v.d,
 					isPostSEOEligible: C.d,
-					postPermalink: E.M,
+					postPermalink: E.N,
 					shouldOpenPostInNewTab: y.X,
 					totalDiscount: O.a
 				})),
@@ -3417,9 +3417,9 @@
 				T = Object(c.c)({
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
-					post: f.N,
+					post: f.O,
 					shouldOpenPostInNewTab: g.X,
-					subreddit: f.ab
+					subreddit: f.bb
 				}),
 				M = Object(i.b)(T);
 			t.a = M(e => {
@@ -5777,7 +5777,7 @@
 				te = s("./src/reddit/selectors/experiments/listingBelow.ts"),
 				se = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				ne = s("./src/reddit/helpers/getRichTextContent/index.ts");
-			const oe = Object(i.a)(E.T, e => e.some(ne.c)),
+			const oe = Object(i.a)(E.U, e => e.some(ne.d)),
 				re = Object(i.a)(oe, e => e),
 				ie = (e, t) => Object(se.c)(e, {
 					experimentName: Q.X,
@@ -5800,7 +5800,7 @@
 					const {
 						listingKey: s
 					} = t;
-					return s ? Object(E.T)(e, {
+					return s ? Object(E.U)(e, {
 						listingKey: s
 					}) : void 0
 				},
@@ -5827,13 +5827,13 @@
 					imageGalleryCurrentItem: E.i,
 					moderatorPermissions: C.i,
 					modModeEnabled: Y.P,
-					post: E.N,
+					post: E.O,
 					posts: ue,
 					postHeightVariant: ie,
 					postIds: be,
 					showEditFlair: ae.a,
 					showAwardsPlaque: v.a,
-					subredditOrProfile: E.ab,
+					subredditOrProfile: E.bb,
 					userIsOp: y.kb
 				}), (e, t) => {
 					let {
@@ -5900,7 +5900,7 @@
 						userIsOp: ve,
 						isActionBarAnimationEnabled: Oe,
 						postId: Ce
-					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], ye = Ee ? void 0 : p, _e = Object(d.a)(oe), we = re && _e, ke = Object(a.a)(oe), je = Object(c.a)(oe), Pe = Object(R.c)(me), Se = !!me.media && me.media.type === h.o.RTJSON, Ie = ve && Se, Ne = s ? s - B.a : void 0, Te = !(y && U || Y), Me = (e => e === Q.fc.OnlyTitles)(ue) && !Object($.a)(me), Le = (e => e === Q.fc.MediumHeight)(ue) && !Object($.a)(me), Re = (e => {
+					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], ye = Ee ? void 0 : p, _e = Object(d.a)(oe), we = re && _e, ke = Object(a.a)(oe), je = Object(c.a)(oe), Pe = Object(R.c)(me), Se = !!me.media && me.media.type === h.o.RTJSON, Ie = ve && Se, Ne = s ? s - B.a : void 0, Te = !(y && U || Y), Me = (e => e === Q.hc.OnlyTitles)(ue) && !Object($.a)(me), Le = (e => e === Q.hc.MediumHeight)(ue) && !Object($.a)(me), Re = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -5915,7 +5915,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Fe = !!te && !Object(Q.Vc)(te), Ae = (!O || Fe) && !me.isSponsored, Be = Object(_.s)(me, v), {
+					})(e), Fe = !!te && !Object(Q.Xc)(te), Ae = (!O || Fe) && !me.isSponsored, Be = Object(_.s)(me, v), {
 						source: De
 					} = Be, We = o.a.createElement(A.a, {
 						className: Object(w.a)(pe.a.container, r, le.a.largeAndMediumPostStyles, le.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -7034,8 +7034,8 @@
 				fbt: y
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = d.a.wrapped(m.a, "InternalLink", E.a), w = d.a.div("Wrapper", E.a), k = d.a.div("Row", E.a), j = d.a.wrapped(g.a, "CommentIcon", E.a), P = d.a.div("TitleContainer", E.a), S = d.a.div("PostTitleContainer", E.a), I = d.a.wrapped(x.c, "PostTitle", E.a), N = d.a.wrapped(f.d, "PostTopMeta", E.a), T = d.a.wrapped(f.a, "MetaSeparator", E.a), M = Object(r.b)(() => Object(i.c)({
 				comment: u.n,
-				post: b.N,
-				subredditOrProfile: b.ab
+				post: b.O,
+				subredditOrProfile: b.bb
 			})), L = e => {
 				const {
 					post: t,
@@ -8779,8 +8779,8 @@
 					isOC: le.t,
 					isPinned: le.u,
 					isSpoiler: le.y,
-					post: le.N,
-					postSubredditAboutInfo: le.O,
+					post: le.O,
+					postSubredditAboutInfo: le.P,
 					reportFlowIsOpen: (e, t) => {
 						let {
 							isOverlay: s,
@@ -8788,18 +8788,18 @@
 						} = t;
 						return e.reportFlow.openedFromModalPage === s && e.reportFlow.postOrCommentId === n
 					},
-					sendRepliesToggled: le.X,
+					sendRepliesToggled: le.Y,
 					showPinAction: (e, t) => {
 						var {
 							isProfilePostListing: s
 						} = t, n = ye(t, ["isProfilePostListing"]);
 						return Object(Z.B)(e, n) && s && Object(pe.kb)(e, n) && Object(pe.ib)(e, {
-							userName: Object(le.N)(e, {
+							userName: Object(le.O)(e, {
 								postId: n.postId
 							}).author
 						})
 					},
-					subredditOrProfile: le.ab,
+					subredditOrProfile: le.bb,
 					hasSubredditRules: me.k,
 					userIsOp: pe.kb,
 					isPostPartOfACollection: Oe.l,
@@ -8807,10 +8807,10 @@
 						let {
 							postId: s
 						} = t;
-						if (Object(le.N)(e, {
+						if (Object(le.O)(e, {
 								postId: s
 							}).isSponsored) return !1;
-						const n = Object(le.ab)(e, {
+						const n = Object(le.bb)(e, {
 							postId: s
 						});
 						if (!n) return !1;
@@ -12027,14 +12027,14 @@
 					imageGalleryCurrentItem: b.i,
 					moderatorPermissions: p.i,
 					modModeEnabled: d.P,
-					post: b.N,
+					post: b.O,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: u.a,
 					showMedia: d.r,
-					subredditOrProfile: b.ab,
+					subredditOrProfile: b.bb,
 					userIsOp: h.kb,
 					flairStyleTemplate: d.R
 				},
@@ -12202,14 +12202,14 @@
 					measureScrollFPS: x.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(p.N)(e, t),
 					loadMore: g.g,
-					postsById: v.Y,
+					postsById: v.Z,
 					postIds: Object(r.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: n,
 							inSubredditOrProfile: o
 						} = t;
-						return Object(v.K)(e, s, n, o)
+						return Object(v.L)(e, s, n, o)
 					}),
 					subredditsById: O.ab,
 					viewportDataLoaded: C.a,
@@ -12296,9 +12296,9 @@
 				isActive: u.j,
 				moderatorPermissions: m.i,
 				modModeEnabled: d.P,
-				post: u.N,
+				post: u.O,
 				showEditFlair: p.a,
-				subredditOrProfile: u.ab,
+				subredditOrProfile: u.bb,
 				userIsOp: b.kb
 			}), (e, t) => {
 				let {
@@ -14757,7 +14757,7 @@
 						} = t;
 						return !!n && Object(W.v)(e, s, n)
 					},
-					post: W.N,
+					post: W.O,
 					profileName: (e, t) => {
 						let {
 							currentProfileName: s
@@ -14890,7 +14890,7 @@
 				xe = s("./src/reddit/selectors/tracking.ts"),
 				fe = s("./src/reddit/connectors/PostList/index.ts");
 			const ge = Object(c.c)(Object.assign(Object.assign({}, fe.d), {
-					postIds: W.U,
+					postIds: W.V,
 					viewportDataLoaded: xe.a
 				})),
 				ve = Object(fe.c)(),
@@ -15175,7 +15175,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), wt = 320, kt = 300, jt = Object(c.c)({
 				arePinnedPostsLoaded: W.a,
 				currentUser: mt.i,
-				pinnedPostIds: W.V
+				pinnedPostIds: W.W
 			}), Pt = Object(a.b)(jt, e => ({
 				openPost: t => e(Object(we.C)(t))
 			}));
@@ -15460,7 +15460,7 @@
 				},
 				i = (e, t) => {
 					const s = r(e, t);
-					return Object(o.T)(e, {
+					return Object(o.U)(e, {
 						listingKey: s
 					}) || []
 				},
@@ -15495,7 +15495,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.fb
 				});
-				return !(!t || Object(n.Vc)(t))
+				return !(!t || Object(n.Xc)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
@@ -15525,4 +15525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.f193b566ca87ae9075e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.749eae98e604a1df0ce8.js.map

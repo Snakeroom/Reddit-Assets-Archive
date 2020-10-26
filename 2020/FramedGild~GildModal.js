@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a2589fdef97035c65235.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.76b0ce5e470810f4d183.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -670,9 +670,9 @@
 				j = s("./src/reddit/actions/gold/modals.ts"),
 				x = s("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
 				I = s("./src/reddit/actions/goldPurchaseModals/pennyPurchaseModal.ts"),
-				N = s("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
-				C = s("./src/reddit/actions/subreddit.ts"),
-				y = s("./src/reddit/actions/toaster.ts"),
+				C = s("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				y = s("./src/reddit/actions/subreddit.ts"),
+				N = s("./src/reddit/actions/toaster.ts"),
 				P = s("./src/reddit/selectors/comments.ts"),
 				A = s("./src/reddit/selectors/communityAwards.ts"),
 				_ = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
@@ -947,7 +947,7 @@
 			}));
 			var ve = Object(r.b)((e, t) => {
 					if (Object(l.a)(t.thingId)) {
-						const s = Object(G.N)(e, {
+						const s = Object(G.O)(e, {
 							postId: t.thingId
 						});
 						if (!s) return {};
@@ -1092,9 +1092,9 @@
 			}
 			var xe = je,
 				Ie = s("./src/reddit/icons/svgs/Lock/index.tsx"),
-				Ne = s("./src/reddit/icons/svgs/New/index.tsx"),
-				Ce = s("./src/reddit/icons/svgs/Premium/index.tsx");
-			var ye = e => a.a.createElement("svg", {
+				Ce = s("./src/reddit/icons/svgs/New/index.tsx"),
+				ye = s("./src/reddit/icons/svgs/Premium/index.tsx");
+			var Ne = e => a.a.createElement("svg", {
 				width: "20",
 				height: "20",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -1133,11 +1133,11 @@
 				let t, s;
 				const n = !!e.award.tags && e.award.tags.some(e => e.includes("econ:render:lottie:"));
 				if (e.award.awardSubType === b.d.Moderator) t = ee.a, s = fe.a.moderatorIcon;
-				else if (e.award.awardSubType === b.d.Premium) t = e.premiumUser ? Ce.a : Ie.a, s = e.premiumUser ? fe.a.premiumIcon : fe.a.lockIcon;
-				else if (n) t = ye, s = fe.a.transferableIcon;
+				else if (e.award.awardSubType === b.d.Premium) t = e.premiumUser ? ye.a : Ie.a, s = e.premiumUser ? fe.a.premiumIcon : fe.a.lockIcon;
+				else if (n) t = Ne, s = fe.a.transferableIcon;
 				else {
 					if (!e.award.isNew) return null;
-					t = Ne.a, s = fe.a.newIcon
+					t = Ce.a, s = fe.a.newIcon
 				}
 				return a.a.createElement("div", {
 					className: Object(d.a)(fe.a.iconBadgeContainer, s)
@@ -1227,8 +1227,8 @@
 					const O = [ke, ...m.filter(e => g[e.tag])],
 						E = g[w],
 						[j, x] = Object(n.useState)(!1),
-						[I, N] = Object(n.useState)(1),
-						C = Object(n.useCallback)(e => {
+						[I, C] = Object(n.useState)(1),
+						y = Object(n.useCallback)(e => {
 							if (null !== e) {
 								const t = e.clientWidth,
 									{
@@ -1236,17 +1236,17 @@
 										colGutter: n
 									} = _e,
 									a = t > (s + n) * (E.length - 1) + s + s + n;
-								if (x(a), a) N(E.length);
+								if (x(a), a) C(E.length);
 								else {
 									const e = Math.floor((t - s) / (s + n) + 1);
-									N(e)
+									C(e)
 								}
 							}
 						}, [E]);
 					if (r || !s.length) return a.a.createElement("div", {
 						className: fe.a.awardSelectorPane
 					});
-					const y = e => {
+					const N = e => {
 						o(e);
 						const t = O.find(e => e.tag === w) || ke,
 							s = E.findIndex(t => t === e.id),
@@ -1276,7 +1276,7 @@
 						className: Object(d.a)(fe.a.awardSection, {
 							[fe.a.singleRowGrid]: j
 						}),
-						ref: C
+						ref: y
 					}, E.map(e => {
 						const s = p[e].award,
 							n = e === c.id,
@@ -1288,7 +1288,7 @@
 							isSelected: n,
 							key: s.id,
 							premiumUser: i,
-							onSelect: y,
+							onSelect: N,
 							thingId: u
 						})
 					})))))
@@ -1327,7 +1327,7 @@
 						a = t && t.id
 					}
 					if (!a && Object(l.a)(s)) {
-						const t = Object(G.N)(e, {
+						const t = Object(G.O)(e, {
 							postId: s
 						});
 						a = t && t.belongsTo.id
@@ -1398,7 +1398,7 @@
 						let {
 							thingId: s
 						} = t;
-						return Object(l.a)(s) ? Object(G.N)(e, {
+						return Object(l.a)(s) ? Object(G.O)(e, {
 							postId: s
 						}) : Object(P.n)(e, {
 							commentId: s
@@ -1433,7 +1433,7 @@
 							a = t && t.id
 						}
 						if (!a && Object(l.a)(s)) {
-							const t = Object(G.N)(e, {
+							const t = Object(G.O)(e, {
 								postId: s
 							});
 							a = t && t.belongsTo.id
@@ -1568,8 +1568,8 @@
 						displayUnusableAwardError: I
 					} = this.props;
 					s || Object(u.d)(u.a.GildingFlow, !1), m(Object(h.viewGildModalEvent)(l.id, n, x)), f(!a && Object(p.l)());
-					const N = w ? w.id : O || (o && o.belongsTo ? o.belongsTo.id : void 0);
-					if (N && t(N, x), Ge(e, l) && (I(), c(b.m)), w || j) {
+					const C = w ? w.id : O || (o && o.belongsTo ? o.belongsTo.id : void 0);
+					if (C && t(C, x), Ge(e, l) && (I(), c(b.m)), w || j) {
 						v(w ? w.name : j)
 					}
 					w && w.type !== g.e.User && E(w.id, w.name), r && (l.pennyPrice ? q() : Object(V.a)(), i || d(s))
@@ -1602,9 +1602,9 @@
 						thingId: x,
 						userCoins: I
 					} = this.props, {
-						showPurchaseModalInThisInstance: N
-					} = this.state, C = w && N, y = C && !g.pennyPrice, P = C && !!g.pennyPrice, A = (y || P) && !c;
-					if (y && A) return null;
+						showPurchaseModalInThisInstance: C
+					} = this.state, y = w && C, N = y && !g.pennyPrice, P = y && !!g.pennyPrice, A = (N || P) && !c;
+					if (N && A) return null;
 					if (P && A) return a.a.createElement(H, null);
 					const _ = v ? v.name : E,
 						k = !(!o || !o.isGold),
@@ -1674,11 +1674,11 @@
 						} = t;
 						e(r ? Object(I.b)(a, o, n) : Object(x.c)(s, o, n))
 					},
-					purchaseCatalogRequested: t => e(Object(N.b)(t)),
+					purchaseCatalogRequested: t => e(Object(C.b)(t)),
 					selectAward: t => e(Object(E.a)(t)),
-					displayUnusableAwardError: () => e(Object(y.e)({
+					displayUnusableAwardError: () => e(Object(N.e)({
 						kind: f.b.Error,
-						duration: y.a,
+						duration: N.a,
 						text: i.fbt._("This award is not available on this content.", null, {
 							hk: "13VV1D"
 						})
@@ -1686,7 +1686,7 @@
 					setIsAnonymous: t => {
 						e(Object(O.setIsAnonymous)(t)), Object(p.W)(t)
 					},
-					subredditAboutRequested: t => e(Object(C.t)(t)),
+					subredditAboutRequested: t => e(Object(y.t)(t)),
 					subredditLockedCoinsRequested: (t, s) => e(Object(v.a)(t, s)),
 					updateMessage: t => e(Object(O.updateMessage)(t))
 				}
@@ -1848,7 +1848,7 @@
 			s.d(t, "l", (function() {
 				return I
 			})), s.d(t, "m", (function() {
-				return y
+				return N
 			})), s.d(t, "n", (function() {
 				return P
 			})), s.d(t, "i", (function() {
@@ -1930,7 +1930,7 @@
 				I = (e, t) => {
 					return x(e)[Object(o.h)(t)]
 				},
-				N = Object(n.a)((e, t) => {
+				C = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -1953,7 +1953,7 @@
 					const c = new Set([...n, ...a]);
 					return Object.keys(s).filter(e => !c.has(e)).map(e => s[e]).filter(e => e.rank !== r.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.a.KILLED && e.stream.state !== i.a.PURGED).map(e => e.post.id)
 				}),
-				C = Object(n.a)((e, t) => {
+				y = Object(n.a)((e, t) => {
 					let {
 						count: s
 					} = t;
@@ -1963,7 +1963,7 @@
 						listingName: s,
 						streamIdFromPath: n
 					} = t;
-					return N(e, {
+					return C(e, {
 						listingName: s,
 						streamIdFromPath: n
 					})
@@ -1971,18 +1971,18 @@
 					const n = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? n.slice(0, e) : n
 				}),
-				y = Object(n.a)(x, C, (e, t) => {
+				N = Object(n.a)(x, y, (e, t) => {
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				P = Object(n.a)(x, C, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === i.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
+				P = Object(n.a)(x, y, (e, t) => t.map(t => e[t]).filter(e => !!e && e.stream.state === i.a.IS_LIVE).reduce((e, t) => e + t.continuous_watchers, 0)),
 				A = Object(n.a)(v, (e, t) => {
 					let {
 						related: s,
 						streamIdFromPath: n,
 						subreddit: a
 					} = t;
-					return C(e, {
+					return y(e, {
 						listingName: s || a,
 						streamIdFromPath: n
 					})
@@ -2002,7 +2002,7 @@
 						streamIdFromPath: n,
 						subreddit: a
 					} = t;
-					return C(e, {
+					return y(e, {
 						listingName: s || a,
 						streamIdFromPath: n
 					})
@@ -2029,7 +2029,7 @@
 						streamIdFromPath: n,
 						subreddit: a
 					} = t;
-					return C(e, {
+					return y(e, {
 						listingName: s || a,
 						streamIdFromPath: n
 					})
@@ -2101,4 +2101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a2589fdef97035c65235.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.76b0ce5e470810f4d183.js.map

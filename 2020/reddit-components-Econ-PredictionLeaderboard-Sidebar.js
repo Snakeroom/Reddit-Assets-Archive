@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.d97e237c1f7e491a9c8d.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.df7a8d7ef5b878a78c0d.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/graphql/operations/GetPredictionCoinPackages.json": function(e) {
@@ -58,7 +58,7 @@
 						gqlContext: o
 					} = n;
 					const i = r(),
-						d = Object(c.ab)(i, {
+						d = Object(c.bb)(i, {
 							postId: e,
 							disallowProfile: !0
 						});
@@ -422,4 +422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.d97e237c1f7e491a9c8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.df7a8d7ef5b878a78c0d.js.map

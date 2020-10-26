@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7a06a72bd3c2aa41454f.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.26035b97cc0994a47059.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -969,7 +969,7 @@
 							postId: e
 						}));
 						const r = s(),
-							i = Object(x.N)(r, {
+							i = Object(x.O)(r, {
 								postId: e
 							}),
 							c = i && i.title || "";
@@ -1001,7 +1001,7 @@
 							eventInfo: u
 						}));
 						const m = r(),
-							p = Object(x.N)(m, {
+							p = Object(x.O)(m, {
 								postId: e
 							}),
 							b = p && p.title || "",
@@ -2053,10 +2053,10 @@
 					}
 					if (O) {
 						const n = ((e, t) => {
-								const s = Object(we.ab)(e, {
+								const s = Object(we.bb)(e, {
 										postId: t
 									}),
-									n = Object(we.N)(e, {
+									n = Object(we.O)(e, {
 										postId: t
 									});
 								if (!s || !n) return "";
@@ -2089,8 +2089,9 @@
 							b = !d && (c || !0) && (!Object(ue.g)(o) && !Object(ze.d)(p, {
 								postId: a
 							}) && !!o || !Object(Ce.i)(p) && Object(ve.d)(p)),
-							h = !!Object(ve.b)(p, O, !1) && !1;
-						if (u || b || d || h) {
+							h = !!Object(ve.b)(p, O, !1) && !1,
+							g = Object(ve.e)(p, O) && !1;
+						if (u || b || d || h || g) {
 							Object(De.d)(De.a.LinkedPosts);
 							const e = Object(De.c)(De.a.LinkedPosts),
 								s = {
@@ -2113,15 +2114,16 @@
 									includePostImageOCRAltText: h,
 									includeListingBelowExperiment: d,
 									includeOtherDiscussions: u,
-									includePostFeed: b
+									includePostFeed: b,
+									includePostQASchemaEligibilityFlag: g
 								})));
-							(b && c || h) && await i
+							(b && c || h || g) && await i
 						}
 						t(Object(S.p)()), t(A.l({
 							title: n
 						}));
-						const g = s().posts.instances[a] ? e.queryParams.instanceId : O.postId;
-						t(Object(f.b)(g)); {
+						const x = s().posts.instances[a] ? e.queryParams.instanceId : O.postId;
+						t(Object(f.b)(x)); {
 							const e = Object(be.d)(s(), {
 								subredditName: o.name
 							});
@@ -2173,7 +2175,7 @@
 					} : {
 						sort: s.sort
 					}); {
-						const t = Object(we.N)(r(), {
+						const t = Object(we.O)(r(), {
 							postId: e
 						});
 						t && t.numComments && t.numComments > Ye && (w.truncate = Qe)
@@ -2209,7 +2211,7 @@
 							shouldCollapse: n
 						}, T.body)))
 					} {
-						const n = Object(we.N)(r(), {
+						const n = Object(we.O)(r(), {
 							postId: e
 						});
 						n && T.body.comments && Object.keys(T.body.comments).length < n.numComments ? o(vt(e, t, s)) : T.ok && o(Ot({
@@ -2220,7 +2222,7 @@
 					}
 					if (T.ok) {
 						o(X.f(d));
-						const t = Object(we.N)(r(), {
+						const t = Object(we.O)(r(), {
 							postId: e
 						});
 						o(H.t(t, Z.a.CommentsView)), t && "subreddit" === t.belongsTo.type && T.body.comments && await o(Object(P.a)({
@@ -2268,7 +2270,7 @@
 							key: a
 						}));
 						const s = o().posts.models[e],
-							r = s && Object(we.ab)(o(), {
+							r = s && Object(we.bb)(o(), {
 								postId: s.id
 							});
 						s && "subreddit" === s.belongsTo.type && r && Object(ke.a)(c, {
@@ -2582,7 +2584,7 @@
 						apiContext: r
 					} = o;
 					const i = n(),
-						a = Object(k.N)(i, {
+						a = Object(k.O)(i, {
 							postId: e
 						});
 					t ? (s(Object(f.a)(a.permalink)), Object(x.d)(e, "edit")(i)) : Object(O.b)(e, "edit")(i);
@@ -3662,7 +3664,7 @@
 			const C = Object(i.b)(() => Object(c.c)({
 					isChatPost: O.d,
 					isPostSEOEligible: j.d,
-					postPermalink: y.M,
+					postPermalink: y.N,
 					shouldOpenPostInNewTab: _.X,
 					totalDiscount: v.a
 				})),
@@ -3968,9 +3970,9 @@
 						const s = e.posts.metaMap[t.postId];
 						if (s) return e.polls.models[s]
 					},
-					post: E.N,
+					post: E.O,
 					showEditFlair: k.a,
-					subredditOrProfile: E.ab,
+					subredditOrProfile: E.bb,
 					userIsOp: C.kb
 				}), (e, t) => {
 					let {
@@ -4622,9 +4624,9 @@
 				N = Object(c.c)({
 					isCurrentUserProfilePost: g.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Bb.TOPIC),
-					post: g.N,
+					post: g.O,
 					shouldOpenPostInNewTab: x.X,
-					subreddit: g.ab
+					subreddit: g.bb
 				}),
 				M = Object(i.b)(N);
 			t.a = M(e => {
@@ -8813,8 +8815,8 @@
 					isOC: le.t,
 					isPinned: le.u,
 					isSpoiler: le.y,
-					post: le.N,
-					postSubredditAboutInfo: le.O,
+					post: le.O,
+					postSubredditAboutInfo: le.P,
 					reportFlowIsOpen: (e, t) => {
 						let {
 							isOverlay: s,
@@ -8822,18 +8824,18 @@
 						} = t;
 						return e.reportFlow.openedFromModalPage === s && e.reportFlow.postOrCommentId === n
 					},
-					sendRepliesToggled: le.X,
+					sendRepliesToggled: le.Y,
 					showPinAction: (e, t) => {
 						var {
 							isProfilePostListing: s
 						} = t, n = _e(t, ["isProfilePostListing"]);
 						return Object(Q.B)(e, n) && s && Object(me.kb)(e, n) && Object(me.ib)(e, {
-							userName: Object(le.N)(e, {
+							userName: Object(le.O)(e, {
 								postId: n.postId
 							}).author
 						})
 					},
-					subredditOrProfile: le.ab,
+					subredditOrProfile: le.bb,
 					hasSubredditRules: ue.k,
 					userIsOp: me.kb,
 					isPostPartOfACollection: ve.l,
@@ -8841,10 +8843,10 @@
 						let {
 							postId: s
 						} = t;
-						if (Object(le.N)(e, {
+						if (Object(le.O)(e, {
 								postId: s
 							}).isSponsored) return !1;
-						const n = Object(le.ab)(e, {
+						const n = Object(le.bb)(e, {
 							postId: s
 						});
 						if (!n) return !1;
@@ -14025,7 +14027,7 @@
 				},
 				i = (e, t) => {
 					const s = r(e, t);
-					return Object(o.T)(e, {
+					return Object(o.U)(e, {
 						listingKey: s
 					}) || []
 				},
@@ -14109,7 +14111,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts");
 			const o = e => {
-				if (!Object(n.Vc)(e)) return e || void 0
+				if (!Object(n.Xc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -14126,8 +14128,8 @@
 			const d = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: n.nc
-				}) === n.vc.Enabled
+					experimentName: n.pc
+				}) === n.xc.Enabled
 			})(e) && (e => {
 				const t = Object(r.e)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -14201,4 +14203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7a06a72bd3c2aa41454f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.26035b97cc0994a47059.js.map

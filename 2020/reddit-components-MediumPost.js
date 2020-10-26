@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1c48b37743f8a80e719d.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.cc2fdf19dc142bd51df9.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -526,32 +526,32 @@
 				z = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				G = s("./src/reddit/selectors/postFlair.ts"),
 				Z = s("./src/reddit/selectors/posts.ts"),
-				q = s("./src/reddit/selectors/user.ts"),
-				X = s("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
+				X = s("./src/reddit/selectors/user.ts"),
+				q = s("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
 				K = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				J = s.n(K),
 				Q = s("./src/reddit/components/MediumPost/index.m.less"),
 				Y = s.n(Q);
 			const $ = Object(r.b)(() => Object(i.c)({
 				crosspost: Z.d,
-				currentUser: q.i,
+				currentUser: X.i,
 				flairStyleTemplate: M.R,
-				hideNSFWPref: q.A,
+				hideNSFWPref: X.A,
 				isActive: Z.j,
 				isCurrentUserProfilePost: Z.k,
-				isLoggedIn: q.I,
+				isLoggedIn: X.I,
 				isPostChainDismissed: H.c,
 				isPostChained: H.d,
 				listingBelowVariant: D.b,
 				imageGalleryCurrentItem: Z.i,
 				moderatorPermissions: z.i,
 				modModeEnabled: M.P,
-				post: Z.N,
+				post: Z.O,
 				showAwardsPlaque: W.a,
 				showEditFlair: G.a,
 				showMedia: M.r,
 				isInCategoriesExperiment: V.a,
-				subredditOrProfile: Z.ab
+				subredditOrProfile: Z.bb
 			}), (e, t) => {
 				let {
 					listingKey: s,
@@ -593,7 +593,7 @@
 					isOverlay: z,
 					isPostChainDismissed: G,
 					isPostChained: Z,
-					isTopicPage: q,
+					isTopicPage: X,
 					imageGalleryCurrentItem: K,
 					listingBelowVariant: Q,
 					listingKey: $,
@@ -614,7 +614,7 @@
 					sendEvent: be,
 					subredditOrProfile: xe,
 					toggleCheckbox: he
-				} = e, fe = ce ? void 0 : d, ve = Object(R.a)(te), ge = se && ve, ye = Object(B.a)(te), Oe = Object(F.a)(te), ke = Object(k.c)(ie), Ee = !!Q && !Object(N.Vc)(Q), je = Object(L.a)(ie), Ce = T && !pe && !Ee, Pe = Ce && !!ie.source && !n, _e = !(D && H || q) && !W && (!T || Ee), Se = (!T || Ee) && !ie.isSponsored, Ie = Object(a.s)(ie, K), {
+				} = e, fe = ce ? void 0 : d, ve = Object(R.a)(te), ge = se && ve, ye = Object(B.a)(te), Oe = Object(F.a)(te), ke = Object(k.c)(ie), Ee = !!Q && !Object(N.Xc)(Q), je = Object(L.a)(ie), Ce = T && !pe && !Ee, Pe = Ce && !!ie.source && !n, _e = !(D && H || X) && !W && (!T || Ee), Se = (!T || Ee) && !ie.isSponsored, Ie = Object(a.s)(ie, K), {
 					source: we
 				} = Ie, Ne = o.a.createElement(j.a, {
 					className: Object(c.a)(Y.a.container, s, J.a.largeAndMediumPostStyles, J.a.largeAndMediumActiveStyles, Object(A.a)(e), {
@@ -660,7 +660,7 @@
 					isCommentsPage: V,
 					isCurrentUserProfilePost: W,
 					isOverlay: !!z,
-					isTopicPage: !!q,
+					isTopicPage: !!X,
 					listingKey: $,
 					post: ie,
 					shouldShowSubscribeButton: !1,
@@ -685,7 +685,7 @@
 					className: Y.a.sourceLink,
 					isCommentsPage: V,
 					post: ie
-				})), !Ce && je && o.a.createElement(X.a, {
+				})), !Ce && je && o.a.createElement(q.a, {
 					crosspost: n ? ie : void 0,
 					hasModPostPerms: ve,
 					isCommentsPage: V,
@@ -1210,8 +1210,8 @@
 					},
 					G = D.isRemoved && !D.modRemovalReason && !D.modNote && D.belongsTo.type === p.a.SUBREDDIT,
 					Z = A("Approve", D.id, H),
-					q = A("Archived", D.id, H),
-					X = A("Automod", D.id, H),
+					X = A("Archived", D.id, H),
+					q = A("Automod", D.id, H),
 					K = A("Lock", D.id, H),
 					J = A("Mod", D.id, H),
 					Q = A("Remove", D.id, H),
@@ -1233,11 +1233,11 @@
 				}, z))), D.isArchived && r.a.createElement(o.Fragment, null, r.a.createElement(O.a, {
 					className: w.a.archivedIcon,
 					desc: M(),
-					id: q,
-					onMouseEnter: W(q),
+					id: X,
+					onMouseEnter: W(X),
 					onMouseLeave: U
 				}), r.a.createElement(u.c, N({
-					tooltipId: q,
+					tooltipId: X,
 					text: M()
 				}, z))), D.isLocked && r.a.createElement(o.Fragment, null, r.a.createElement(k.a, {
 					className: w.a.lockIcon,
@@ -1307,11 +1307,11 @@
 				}, z))), ("AutoModerator" === D.approvedBy || "AutoModerator" === D.bannedBy) && r.a.createElement(o.Fragment, null, r.a.createElement(_.a, {
 					className: Object(c.a)(w.a.automoderator, !!D.bannedBy && w.a.isRemoved),
 					desc: h.b,
-					id: X,
-					onMouseEnter: W(X),
+					id: q,
+					onMouseEnter: W(q),
 					onMouseLeave: U
 				}), r.a.createElement(u.c, N({
-					tooltipId: X,
+					tooltipId: q,
 					text: h.b
 				}, z))), Object(f.a)(D) && !I && r.a.createElement(o.Fragment, null, r.a.createElement(j.a, {
 					className: w.a.reportIcon,
@@ -2433,9 +2433,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.fb
 				});
-				return !(!t || Object(n.Vc)(t))
+				return !(!t || Object(n.Xc)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1c48b37743f8a80e719d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.cc2fdf19dc142bd51df9.js.map

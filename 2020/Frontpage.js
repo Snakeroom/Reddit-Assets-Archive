@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3fdcc7923711309b0ce4.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.46433e3cce3a5a915518.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/ScrollChildFactory.tsx": function(e, t, s) {
@@ -896,7 +896,7 @@
 				d = s("./src/reddit/selectors/platform.ts"),
 				l = s("./src/reddit/selectors/posts.ts");
 			const u = Object(o.c)({
-					postCount: l.S,
+					postCount: l.T,
 					previousPageIsOverlay: d.p,
 					tabBadged: e => e.tabBadged
 				}),
@@ -958,14 +958,14 @@
 					measureScrollFPS: y.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
 					loadMore: f.g,
-					postsById: j.Y,
+					postsById: j.Z,
 					postIds: Object(i.a)((e, t) => {
 						let {
 							listingKey: s,
 							listingName: r,
 							inSubredditOrProfile: n
 						} = t;
-						return Object(j.K)(e, s, r, n)
+						return Object(j.L)(e, s, r, n)
 					}),
 					subredditsById: v.ab,
 					viewportDataLoaded: x.a,
@@ -1451,8 +1451,8 @@
 				Q = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
 				q = s("./src/reddit/selectors/user.ts"),
 				Z = s("./src/lib/constants/index.ts"),
-				Y = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				z = s("./src/lib/objectSelector/index.ts"),
+				z = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				Y = s("./src/lib/objectSelector/index.ts"),
 				X = s("./src/reddit/constants/page.ts"),
 				$ = s("./src/reddit/pages/Frontpage/index.m.less"),
 				ee = s.n($);
@@ -1469,7 +1469,7 @@
 			const {
 				fbt: se
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), re = Object(B.t)(), ne = Object(h.c)({
-				queryParams: Object(z.a)((e, t) => {
+				queryParams: Object(Y.a)((e, t) => {
 					let {
 						location: s
 					} = t;
@@ -1491,17 +1491,17 @@
 				isLoggedIn: q.I,
 				isPopular: B.C,
 				isRpanDuVisible: e => Object(Q.a)(e, {
-					listingName: Y.R
+					listingName: z.R
 				}),
 				rpanInjectionIndex: e => Object(Q.b)(e, {
-					listingName: Y.R
+					listingName: z.R
 				}),
 				layout: B.N,
 				isInUISimplificationI18NExperiment: K.a
 			}), ce = () => Object(h.a)(ie, ne, oe, e => Object(Q.a)(e, {
-				listingName: Y.R
+				listingName: z.R
 			}), e => Object(Q.b)(e, {
-				listingName: Y.R
+				listingName: z.R
 			}), e => e, F.a, (e, t, s, r, n, i, o) => {
 				let {
 					countryMeta: c,
@@ -1613,7 +1613,7 @@
 							desiredIndex: a,
 							layout: o,
 							listingKey: c,
-							listingName: Y.R,
+							listingName: z.R,
 							sendEvent: d
 						});
 						h[t] = e
@@ -2004,7 +2004,7 @@
 						experimentEligibilitySelector: i.I,
 						experimentName: r.kb
 					});
-					return !(!t || Object(r.Vc)(t))
+					return !(!t || Object(r.Xc)(t))
 				},
 				c = e => {
 					return Object(n.c)(e, {
@@ -2025,4 +2025,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3fdcc7923711309b0ce4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.46433e3cce3a5a915518.js.map

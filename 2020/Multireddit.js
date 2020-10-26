@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.ec54b228e3d140fa8721.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.42438283630069b97f5e.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -1168,14 +1168,14 @@
 					measureScrollFPS: x.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
 					loadMore: g.g,
-					postsById: y.Y,
+					postsById: y.Z,
 					postIds: Object(a.a)((e, t) => {
 						let {
 							listingKey: n,
 							listingName: r,
 							inSubredditOrProfile: s
 						} = t;
-						return Object(y.K)(e, n, r, s)
+						return Object(y.L)(e, n, r, s)
 					}),
 					subredditsById: E.ab,
 					viewportDataLoaded: _.a,
@@ -1930,7 +1930,7 @@
 						experimentEligibilitySelector: a.I,
 						experimentName: r.kb
 					});
-					return !(!t || Object(r.Vc)(t))
+					return !(!t || Object(r.Xc)(t))
 				},
 				o = e => {
 					return Object(s.c)(e, {
@@ -1941,4 +1941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ec54b228e3d140fa8721.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.42438283630069b97f5e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.4d8397d643c737b16f57.js
-// Retrieved at 10/23/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.ec0bc3511e114b49b490.js
+// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -335,7 +335,7 @@
 							postId: e
 						}));
 						const r = s(),
-							a = Object(g.N)(r, {
+							a = Object(g.O)(r, {
 								postId: e
 							}),
 							c = a && a.title || "";
@@ -367,7 +367,7 @@
 							eventInfo: m
 						}));
 						const p = r(),
-							u = Object(g.N)(p, {
+							u = Object(g.O)(p, {
 								postId: e
 							}),
 							b = u && u.title || "",
@@ -444,7 +444,7 @@
 						apiContext: r
 					} = o;
 					const a = n(),
-						i = Object(y.N)(a, {
+						i = Object(y.O)(a, {
 							postId: e
 						});
 					t ? (s(Object(x.a)(i.permalink)), Object(g.d)(e, "edit")(a)) : Object(v.b)(e, "edit")(a);
@@ -2061,7 +2061,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.M)(e, {
+						return Object(J.N)(e, {
 							postId: s.postId
 						})
 					},
@@ -2076,7 +2076,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(J.ab)(e, {
+						return Object(J.bb)(e, {
 							postId: s.postId
 						})
 					}
@@ -2470,7 +2470,7 @@
 			const w = Object(a.b)(() => Object(c.c)({
 					isChatPost: v.d,
 					isPostSEOEligible: E.d,
-					postPermalink: _.M,
+					postPermalink: _.N,
 					shouldOpenPostInNewTab: C.X,
 					totalDiscount: O.a
 				})),
@@ -3369,9 +3369,9 @@
 				N = Object(c.c)({
 					isCurrentUserProfilePost: f.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Bb.TOPIC),
-					post: f.N,
+					post: f.O,
 					shouldOpenPostInNewTab: g.X,
-					subreddit: f.ab
+					subreddit: f.bb
 				}),
 				L = Object(a.b)(N);
 			t.a = L(e => {
@@ -6484,8 +6484,8 @@
 				fbt: C
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = d.a.wrapped(m.a, "InternalLink", _.a), k = d.a.div("Wrapper", _.a), w = d.a.div("Row", _.a), j = d.a.wrapped(g.a, "CommentIcon", _.a), I = d.a.div("TitleContainer", _.a), S = d.a.div("PostTitleContainer", _.a), P = d.a.wrapped(x.c, "PostTitle", _.a), T = d.a.wrapped(f.d, "PostTopMeta", _.a), N = d.a.wrapped(f.a, "MetaSeparator", _.a), L = Object(r.b)(() => Object(a.c)({
 				comment: u.n,
-				post: b.N,
-				subredditOrProfile: b.ab
+				post: b.O,
+				subredditOrProfile: b.bb
 			})), M = e => {
 				const {
 					post: t,
@@ -8404,8 +8404,8 @@
 					isOC: le.t,
 					isPinned: le.u,
 					isSpoiler: le.y,
-					post: le.N,
-					postSubredditAboutInfo: le.O,
+					post: le.O,
+					postSubredditAboutInfo: le.P,
 					reportFlowIsOpen: (e, t) => {
 						let {
 							isOverlay: s,
@@ -8413,18 +8413,18 @@
 						} = t;
 						return e.reportFlow.openedFromModalPage === s && e.reportFlow.postOrCommentId === n
 					},
-					sendRepliesToggled: le.X,
+					sendRepliesToggled: le.Y,
 					showPinAction: (e, t) => {
 						var {
 							isProfilePostListing: s
 						} = t, n = Ce(t, ["isProfilePostListing"]);
 						return Object(Q.B)(e, n) && s && Object(pe.kb)(e, n) && Object(pe.ib)(e, {
-							userName: Object(le.N)(e, {
+							userName: Object(le.O)(e, {
 								postId: n.postId
 							}).author
 						})
 					},
-					subredditOrProfile: le.ab,
+					subredditOrProfile: le.bb,
 					hasSubredditRules: me.k,
 					userIsOp: pe.kb,
 					isPostPartOfACollection: Oe.l,
@@ -8432,10 +8432,10 @@
 						let {
 							postId: s
 						} = t;
-						if (Object(le.N)(e, {
+						if (Object(le.O)(e, {
 								postId: s
 							}).isSponsored) return !1;
-						const n = Object(le.ab)(e, {
+						const n = Object(le.bb)(e, {
 							postId: s
 						});
 						if (!n) return !1;
@@ -11109,14 +11109,14 @@
 					imageGalleryCurrentItem: b.i,
 					moderatorPermissions: p.i,
 					modModeEnabled: d.P,
-					post: b.N,
+					post: b.O,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: u.a,
 					showMedia: d.r,
-					subredditOrProfile: b.ab,
+					subredditOrProfile: b.bb,
 					userIsOp: h.kb,
 					flairStyleTemplate: d.R
 				},
@@ -13284,7 +13284,7 @@
 					commentsById: S.r,
 					itemIds: Q.f,
 					itemIdToPostId: Q.e,
-					postsById: Z.Q,
+					postsById: Z.R,
 					estimateItemHeight: e => (e, t, s) => {
 						if (s) switch (t) {
 							case w.g.Medium:
@@ -13502,7 +13502,7 @@
 				},
 				a = (e, t) => {
 					const s = r(e, t);
-					return Object(o.T)(e, {
+					return Object(o.U)(e, {
 						listingKey: s
 					}) || []
 				},
@@ -13540,4 +13540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.4d8397d643c737b16f57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.ec0bc3511e114b49b490.js.map
