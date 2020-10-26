@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.65b513ba8f9ac22c7555.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.13f33d8e9a31c8874a81.js
+// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -5930,8 +5930,8 @@
 				Wt = s("./src/reddit/selectors/communityFlairs.ts"),
 				Dt = s("./src/reddit/constants/experiments.ts"),
 				Mt = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			Object(Mt.a)(Dt.mb);
-			const Ft = Object(Mt.a)(Dt.nb);
+			Object(Mt.a)(Dt.nb);
+			const Ft = Object(Mt.a)(Dt.ob);
 			var Ut = s("./src/reddit/selectors/experiments/goldSubredditPowerups.ts"),
 				Ht = s("./src/reddit/selectors/listings.ts"),
 				Kt = s("./src/reddit/components/SubredditSidebar/index.m.less"),
@@ -8049,9 +8049,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const a = e => n.cb.Enabled === Object(r.c)(e, {
+			const a = e => n.db.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: i.I,
-				experimentName: n.ab
+				experimentName: n.bb
 			})
 		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, s) {
@@ -8203,4 +8203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.65b513ba8f9ac22c7555.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.13f33d8e9a31c8874a81.js.map

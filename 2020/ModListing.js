@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.a33e4e7efb933bacc7ae.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.f9656587f2fc871cc8be.js
+// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/reddit/components/EmptySubreddit.m.less": function(e, t, s) {
@@ -514,7 +514,7 @@
 				L = s.n(I);
 			const {
 				fbt: v
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = Object(_.a)(e => o.a.createElement(S.d, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = Object(_.a)(e => o.a.createElement(S.d, {
 				className: L.a.modalBody
 			}, o.a.createElement(S.h, null, o.a.createElement(P.a, null, o.a.createElement(S.p, {
 				className: L.a.modalTitle
@@ -533,7 +533,7 @@
 			})), o.a.createElement(O.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
-			})))), F = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+			})))), k = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 				className: L.a.feedDetailsTitle
 			}, o.a.createElement(C.a, {
 				className: L.a.modIcon
@@ -564,10 +564,10 @@
 						moderatedCommunitiesIds: s,
 						toggleModal: r
 					} = e;
-					return s ? o.a.createElement(o.a.Fragment, null, o.a.createElement(F, {
+					return s ? o.a.createElement(o.a.Fragment, null, o.a.createElement(k, {
 						moderatedCommunitiesIds: s,
 						onSeeMoreDetails: r
-					}), t && o.a.createElement(k, {
+					}), t && o.a.createElement(F, {
 						moderatedCommunitiesIds: s,
 						onCloseModal: r,
 						onOverlayClick: r,
@@ -595,8 +595,8 @@
 				});
 			var V = s("./src/reddit/routes/modListing/index.ts");
 			const A = e => e.modListingPage.filteredSubreddits.api.pending;
-			var J = s("./src/reddit/constants/keycodes.ts"),
-				Y = s("./src/reddit/layout/row/Inline/index.tsx"),
+			var Y = s("./src/reddit/constants/keycodes.ts"),
+				J = s("./src/reddit/layout/row/Inline/index.tsx"),
 				Q = s("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				X = s.n(Q);
 			const W = Object(a.c)({
@@ -618,14 +618,14 @@
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
-						e.key === J.b.Enter && this.submitInput()
+						e.key === Y.b.Enter && this.submitInput()
 					}, this.canSubmitInput = () => this.state.subredditInput && !this.props.isApiPending
 				}
 				render() {
 					const {
 						props: e
 					} = this;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(Y.a, null, o.a.createElement("input", {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(J.a, null, o.a.createElement("input", {
 						className: X.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
@@ -817,12 +817,12 @@
 						timeSort: a
 					}
 				}),
-				ke = Object(d.b)(ve, (e, t) => ({
+				Fe = Object(d.b)(ve, (e, t) => ({
 					onLoadMorePosts: () => e(m.c({
 						sort: t.match.params.sort
 					}))
 				}));
-			class Fe extends o.a.PureComponent {
+			class ke extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onViewed = (e, t) => Object(je.f)(this.props.listingKey, this.props.sort, t, e), this.renderEmptySubreddit = () => o.a.createElement(b.a, {
 						listingName: this.props.listingName,
@@ -851,7 +851,7 @@
 					}))
 				}
 			}
-			t.default = ke(Fe)
+			t.default = Fe(ke)
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, s) {
 			"use strict";
@@ -866,17 +866,17 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: i.I,
-						experimentName: r.kb
+						experimentName: r.lb
 					});
-					return !(!t || Object(r.Xc)(t))
+					return !(!t || Object(r.Yc)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i.I,
-						experimentName: r.kb
-					}) === r.rb.ListingEnabled
+						experimentName: r.lb
+					}) === r.sb.ListingEnabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.a33e4e7efb933bacc7ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f9656587f2fc871cc8be.js.map

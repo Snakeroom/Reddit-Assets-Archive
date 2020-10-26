@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.503c3796af63f5cd33bd.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.aae611f8018388daa0db.js
+// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -550,7 +550,7 @@
 						sort: p,
 						t: Object(U.a)(p, k)
 					})))
-				}, Y = Object(d.a)(R.k), J = Object(d.a)(R.l), X = Object(d.a)(R.m), $ = e => {
+				}, Y = Object(d.a)(R.k), X = Object(d.a)(R.l), J = Object(d.a)(R.m), $ = e => {
 					let {
 						description: t,
 						displayName: s,
@@ -565,7 +565,7 @@
 							m = Object(N.i)(b);
 						if (!m || !m.displayText) return;
 						const O = Object(T.h)((n || m.displayText).toLowerCase(), i.toLowerCase());
-						e(J());
+						e(X());
 						const j = await ((e, t) => Object(g.a)(Object(f.a)(e, [h.a]), {
 							endpoint: Object(y.a)("".concat(e.apiUrl, "/api/multi/copy")),
 							data: {
@@ -582,7 +582,7 @@
 						});
 						if (j.ok) {
 							const t = D(j.body.data);
-							e(Object(u.f)()), e(X({
+							e(Object(u.f)()), e(J({
 								multireddit: t,
 								multiredditsModelsState: b.multireddits.models,
 								userId: m.id
@@ -821,7 +821,7 @@
 		"./src/reddit/actions/page.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "m", (function() {
-				return Xe
+				return Je
 			})), s.d(t, "i", (function() {
 				return $e
 			})), s.d(t, "G", (function() {
@@ -937,8 +937,8 @@
 				Q = s("./src/reddit/actions/subreddit.ts"),
 				W = s("./src/reddit/actions/toaster.ts"),
 				Y = s("./src/reddit/actions/users.ts"),
-				J = s("./src/reddit/constants/adEvents.ts"),
-				X = s("./src/reddit/constants/graphql.ts"),
+				X = s("./src/reddit/constants/adEvents.ts"),
+				J = s("./src/reddit/constants/graphql.ts"),
 				$ = s("./src/reddit/constants/page.ts"),
 				Z = s("./src/reddit/constants/parameters.ts"),
 				ee = s("./src/reddit/constants/postLayout.ts"),
@@ -995,16 +995,16 @@
 					} = Object(ne.a)(e, i);
 				return (!n || n === v.r.CONFIDENCE) && Object(Le.c)(e, {
 					experimentEligibilitySelector: () => Object(Ce.H)(e),
-					experimentName: He.n
-				}) === He.q.Enabled
+					experimentName: He.o
+				}) === He.r.Enabled
 			};
 			var Ve = s("./src/reddit/selectors/chatPost.ts"),
 				Qe = s("./src/reddit/selectors/realtimeComments.ts"),
 				We = s("./src/reddit/selectors/seo/linksModule.ts"),
 				Ye = s("./src/reddit/actions/publicAccessNetwork/api.ts"),
-				Je = s("./src/reddit/actions/publicAccessNetwork/constants.ts");
+				Xe = s("./src/reddit/actions/publicAccessNetwork/constants.ts");
 			s("./src/reddit/actions/publicAccessNetwork/streams.ts");
-			const Xe = 25,
+			const Je = 25,
 				$e = 100,
 				Ze = function(e) {
 					let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
@@ -1103,7 +1103,7 @@
 					let {
 						apiContext: n
 					} = i;
-					await Promise.all([s(Object(b.b)()), s(ot(e, t)), s(ct()), s(Object(Ye.c)(Je.R))])
+					await Promise.all([s(Object(b.b)()), s(ot(e, t)), s(ct()), s(Object(Ye.c)(Xe.R))])
 				}, lt = "PAGE__COMMENTSPAGE_PENDING", ut = "PAGE__COMMENTSPAGE_LOADED", bt = "PAGE__COMMENTSPAGE_FAILED", pt = Object(R.a)(lt), mt = Object(R.a)(ut), gt = Object(R.a)(bt), ft = e => async (t, s) => {
 					const {
 						partialPostId: r,
@@ -1182,7 +1182,7 @@
 							const e = Object(Me.c)(Me.a.LinkedPosts),
 								s = {
 									adContext: {
-										layout: X.a.Card,
+										layout: J.a.Card,
 										reddaid: p.user.reddaid,
 										sourcePostId: o
 									},
@@ -1264,7 +1264,7 @@
 						const t = Object(Ie.O)(n(), {
 							postId: e
 						});
-						t && t.numComments && t.numComments > $e && (I.truncate = Xe)
+						t && t.numComments && t.numComments > $e && (I.truncate = Je)
 					}
 					const D = Object(qe.a)("comments", () => Object(j.a)(a.apiContext(), e, t, I, Object(ge.a)(n()), Object(Qe.a)(n()), Ke(n()))),
 						P = !h && y && Object(E.d)(a.gqlContext(), Object(pe.e)(y)) || null,
@@ -1311,7 +1311,7 @@
 						const t = Object(Ie.O)(n(), {
 							postId: e
 						});
-						i(H.t(t, J.a.CommentsView)), t && "subreddit" === t.belongsTo.type && C.body.comments && await i(Object(T.a)({
+						i(H.t(t, X.a.CommentsView)), t && "subreddit" === t.belongsTo.type && C.body.comments && await i(Object(T.a)({
 							commentIds: Object.keys(C.body.comments),
 							postIds: [t.id],
 							subredditId: t.belongsTo.id
@@ -2038,13 +2038,13 @@
 				return Object(a.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: l,
-					experimentName: i.sb
+					experimentName: i.tb
 				})
 			}
 
 			function b(e) {
 				switch (e) {
-					case i.tb.Enabled:
+					case i.ub.Enabled:
 						return 18;
 					default:
 						return
@@ -2054,7 +2054,7 @@
 			}(r || (r = {}));
 			const p = e => {
 				switch (e) {
-					case i.tb.Enabled:
+					case i.ub.Enabled:
 						return r.Enabled;
 					default:
 						return r.NoBucket
@@ -2225,16 +2225,16 @@
 				}, c.c, (e, t, s) => !e && t && !s),
 				u = Object(r.a)((e, t) => Object(a.c)(e, {
 					experimentEligibilitySelector: e => l(e, t),
-					experimentName: i.W,
+					experimentName: i.X,
 					throttledVariants: {
-						[i.ub.CurrentThrottled]: i.W
+						[i.vb.CurrentThrottled]: i.X
 					}
 				}), o.a),
-				b = e => e === i.ub.CurrentThrottled,
-				p = e => e === i.ub.CurrentThrottled || e === i.ub.CurrentUnthrottled || e === i.ub.CurrentUnthrottledCopy || e === i.ub.NewPopUnthrottledCopy,
-				m = e => e === i.ub.NewPopUnthrottledCopy,
-				g = e => e === i.ub.NewPageUnthrottledCopy || e === i.ub.NewPageUnthrottledCopyFields,
-				f = e => e === i.ub.NewPageUnthrottledCopyFields
+				b = e => e === i.vb.CurrentThrottled,
+				p = e => e === i.vb.CurrentThrottled || e === i.vb.CurrentUnthrottled || e === i.vb.CurrentUnthrottledCopy || e === i.vb.NewPopUnthrottledCopy,
+				m = e => e === i.vb.NewPopUnthrottledCopy,
+				g = e => e === i.vb.NewPageUnthrottledCopy || e === i.vb.NewPageUnthrottledCopyFields,
+				f = e => e === i.vb.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, s) {
 			"use strict";
@@ -2243,7 +2243,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts");
 			const i = e => {
-				if (!Object(r.Xc)(e)) return e || void 0
+				if (!Object(r.Yc)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -2260,8 +2260,8 @@
 			const d = e => (e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: r.pc
-				}) === r.xc.Enabled
+					experimentName: r.qc
+				}) === r.yc.Enabled
 			})(e) && (e => {
 				const t = Object(n.e)(e);
 				return !!t && a.has(t.toLowerCase())
@@ -2279,4 +2279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.503c3796af63f5cd33bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.aae611f8018388daa0db.js.map

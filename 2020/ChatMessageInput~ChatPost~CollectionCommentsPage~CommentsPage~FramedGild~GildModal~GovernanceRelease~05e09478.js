@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.f2a8d90fc3a6213aa2ab.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.75a4bab5dee63bd2f2d4.js
+// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1177,9 +1177,9 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return J
-			})), s.d(t, "d", (function() {
 				return W
+			})), s.d(t, "d", (function() {
+				return J
 			})), s.d(t, "a", (function() {
 				return V
 			})), s.d(t, "b", (function() {
@@ -1351,12 +1351,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Jc.SmIcon:
+						case N.Kc.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case N.Jc.SmIconHc:
+						case N.Kc.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1370,7 +1370,7 @@
 					}
 				}),
 				F = s("./src/reddit/helpers/richTextJson/index.ts");
-			const J = (e, t, s) => {
+			const W = (e, t, s) => {
 					const n = e.c || [],
 						r = e.l,
 						o = [],
@@ -1384,7 +1384,7 @@
 						key: s
 					}, o)
 				},
-				W = e => a.a.createElement(c.e, {
+				J = e => a.a.createElement(c.e, {
 					key: e
 				}),
 				V = (e, t, s, n) => {
@@ -1430,9 +1430,9 @@
 						case h.c:
 							return A(e, n);
 						case h.k:
-							return J(e, s, n);
+							return W(e, s, n);
 						case h.l:
-							return W(n);
+							return J(n);
 						case h.p:
 							return G(e, t, s, n);
 						case h.u:
@@ -1799,12 +1799,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ec
+						experimentName: n.Fc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Jc.SmIcon || t === n.Jc.SmIconHc
+					return t === n.Kc.SmIcon || t === n.Kc.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1830,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.f2a8d90fc3a6213aa2ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.75a4bab5dee63bd2f2d4.js.map

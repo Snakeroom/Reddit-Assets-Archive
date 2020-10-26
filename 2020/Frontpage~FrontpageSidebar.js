@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.cf038452e0ab883db182.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.913423f644370c845cfc.js
+// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~FrontpageSidebar"], {
 		"./src/reddit/components/FrontpageSidebar/index.tsx": function(e, t, n) {
@@ -362,7 +362,7 @@
 			function Re(e) {
 				return Object(We.c)(e, {
 					experimentEligibilitySelector: We.a,
-					experimentName: we.m
+					experimentName: we.n
 				})
 			}
 			var Ue = n("./src/reddit/selectors/experiments/layer.ts"),
@@ -382,7 +382,7 @@
 					showLayersSidebar: Ue.c,
 					isUISimplificationAllItemsVariant: Qe.b,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return Re(e) === we.l.RotateEven
+						return Re(e) === we.m.RotateEven
 					},
 					bffsLeaderboardVariant: Re
 				}),
@@ -396,7 +396,7 @@
 						shouldShowLocalRecommendations: s
 					} = e;
 					let a, i, d, c, l;
-					n && t === we.l.RotateEven ? (a = Le.q, i = Le.k, d = Le.o, c = Le.a) : (a = Le.p, i = Le.h, d = Le.n, c = []), l = [a, ...c, ...d], s && l.unshift(i);
+					n && t === we.m.RotateEven ? (a = Le.q, i = Le.k, d = Le.o, c = Le.a) : (a = Le.p, i = Le.h, d = Le.n, c = []), l = [a, ...c, ...d], s && l.unshift(i);
 					const m = l[r()(l.length - 1)];
 					l = [], m.id !== a.id && l.push(a), s && m.id !== i.id && l.push(i);
 					let u = [...c, ...d];
@@ -1244,4 +1244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.cf038452e0ab883db182.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~FrontpageSidebar.913423f644370c845cfc.js.map

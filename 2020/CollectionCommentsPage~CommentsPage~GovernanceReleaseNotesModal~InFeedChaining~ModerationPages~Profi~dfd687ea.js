@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7047fefa6e9413a1de4b.js
-// Retrieved at 10/26/2020, 12:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.c92f66d4006e5d827bd6.js
+// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -18,16 +18,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Sb
+					experimentName: u.Tb
 				});
-				return Object(u.Xc)(t) ? void 0 : t
+				return Object(u.Yc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Tb
+					experimentName: u.Ub
 				});
-				return Object(u.Xc)(t) ? void 0 : t
-			}, (e, t) => e === u.Ub.Enabled && t === u.Ub.Enabled);
+				return Object(u.Yc)(t) ? void 0 : t
+			}, (e, t) => e === u.Vb.Enabled && t === u.Vb.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -75,7 +75,7 @@
 			};
 			const w = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				I = Object({
-					SENTRY_RELEASE_VERSION: "05a7e46-production"
+					SENTRY_RELEASE_VERSION: "5c5abdd-production"
 				}),
 				C = {
 					anonymousUserId: "t2_anonymous",
@@ -983,8 +983,8 @@
 				z = s("./src/reddit/selectors/media.ts"),
 				J = s("./src/reddit/selectors/postCreations.ts"),
 				q = s("./src/reddit/selectors/posts.ts"),
-				X = s("./src/reddit/selectors/seo/index.ts"),
-				Q = s("./src/reddit/components/Media/getResolution.ts"),
+				Q = s("./src/reddit/selectors/seo/index.ts"),
+				X = s("./src/reddit/components/Media/getResolution.ts"),
 				Z = s("./src/reddit/components/Media/index.m.less"),
 				$ = s.n(Z);
 
@@ -1042,7 +1042,7 @@
 				},
 				pe = Object(k.t)(),
 				be = Object(u.c)({
-					imgOCRAltTextVariant: (e, t) => Object(X.c)(e, t) ? Object(K.b)(e, t.post, !0) : void 0,
+					imgOCRAltTextVariant: (e, t) => Object(Q.c)(e, t) ? Object(K.b)(e, t.post, !0) : void 0,
 					OCRAltText: (e, t) => {
 						let {
 							post: s
@@ -1066,7 +1066,7 @@
 							postId: s.id
 						})
 					},
-					shouldShowAltText: (e, t) => Object(X.c)(e, t),
+					shouldShowAltText: (e, t) => Object(Q.c)(e, t),
 					isGalleryTileLayout: (e, t) => {
 						let {
 							shouldShowGalleryTileOption: s,
@@ -1228,7 +1228,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), e === A.Jb.OCR ? o += "".concat(ne).concat(t) : s.title && (o += "".concat(ne).concat(s.title)), e === A.Jb.ShortPostTitleOCR && (o += "".concat(ne).concat(t)), o.length > ie ? Object(y.a)(o, ie, h.cb) : o
+					return i && (o += i), e === A.Kb.OCR ? o += "".concat(ne).concat(t) : s.title && (o += "".concat(ne).concat(s.title)), e === A.Kb.ShortPostTitleOCR && (o += "".concat(ne).concat(t)), o.length > ie ? Object(y.a)(o, ie, h.cb) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(Y.j, this.state.viewportHeight),
@@ -1273,11 +1273,11 @@
 						r = Object(F.b)(n.media.mediaMetadata || {}, Object(F.c)(i), Y.p, s) + Y.i, d = s
 					}
 					if (s && n.media && (n.media.type === Y.o.IMAGE || n.media.type === Y.o.GIFVIDEO)) {
-						const e = Q.b(s, n.media.resolutions);
+						const e = X.b(s, n.media.resolutions);
 						e && (a = e.url, d = e.width, r = e.height)
 					} else if (n && n.media && (!e.isListing || e.isExpando) && (n.media.type === Y.o.IMAGE || n.media.type === Y.o.GIFVIDEO)) {
 						let e;
-						(e = Object(Y.J)(n.media.height, n.media.width) && Object(j.b)(n.media.height) ? Q.c(n.media.height, n.media.width, n.media.resolutions) : Q.a(n.media.resolutions)) && (a = e.url, d = e.width, r = e.height)
+						(e = Object(Y.J)(n.media.height, n.media.width) && Object(j.b)(n.media.height) ? X.c(n.media.height, n.media.width, n.media.resolutions) : X.a(n.media.resolutions)) && (a = e.url, d = e.width, r = e.height)
 					}
 					if (e.isExpando)
 						if (d > t.viewportWidth) {
@@ -1356,14 +1356,14 @@
 							height: K,
 							width: z
 						},
-						X = Object.assign(Object.assign({}, q), {
+						Q = Object.assign(Object.assign({}, q), {
 							className: e,
 							forceAspectRatio: i,
 							viewportWidth: w
 						}),
-						Q = this.shouldBlur(),
+						X = this.shouldBlur(),
 						Z = !(!m.isSponsored || !m.source);
-					if (k && Q) return l.a.createElement(S.a, ee({}, X, {
+					if (k && X) return l.a.createElement(S.a, ee({}, Q, {
 						blurSrc: k
 					}), l.a.createElement(le, {
 						isVisible: x
@@ -1378,7 +1378,7 @@
 						isVideoThumbnail: !!m.media && m.media.type === Y.o.VIDEO,
 						onClick: this.onClickRevealBlurred,
 						postId: m.id,
-						shouldBlur: Q,
+						shouldBlur: X,
 						source: k,
 						outboundUrl: Z && m.source.outboundUrl || void 0,
 						originalSource: V
@@ -1439,7 +1439,7 @@
 								isCommentsPage: !!n
 							});
 						case Y.o.EMBED:
-							return this.props.isMiniCard && m.preview && m.preview.url ? l.a.createElement(S.a, ee({}, X, {
+							return this.props.isMiniCard && m.preview && m.preview.url ? l.a.createElement(S.a, ee({}, Q, {
 								alwaysWrapMedia: !0
 							}), l.a.createElement(le, {
 								isVisible: x
@@ -1453,18 +1453,18 @@
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
 								postId: m.id,
-								shouldBlur: Q,
+								shouldBlur: X,
 								source: m.preview.url,
 								originalSource: m.preview.url
 							})), l.a.createElement(_.a, null)))) : Y.h.has(m.media.provider) ? m.media.provider === Y.v.Twitter ? l.a.createElement(M.a, {
 								canLoadContent: x,
 								embedBoxChildRef: this.storeChildRef,
 								media: m.media,
-								mediaContainerProps: X,
+								mediaContainerProps: Q,
 								onIframeLoaded: this.onIframeLoaded,
 								source: V,
 								title: m.title
-							}) : l.a.createElement(S.a, ee({}, X, {
+							}) : l.a.createElement(S.a, ee({}, Q, {
 								alwaysWrapMedia: !0,
 								height: o ? K : Y.j,
 								width: o ? z : Y.j * (16 / 9)
@@ -1479,7 +1479,7 @@
 								showFull: p,
 								source: V,
 								title: m.title
-							})) : l.a.createElement(S.a, ee({}, X, {
+							})) : l.a.createElement(S.a, ee({}, Q, {
 								alwaysWrapMedia: !0
 							}), x && l.a.createElement(I.a, ee({}, q, {
 								isResponsive: o || m.media.provider === Y.v.IFrameEmbed,
@@ -1492,7 +1492,7 @@
 						case Y.o.GIFVIDEO: {
 							let e = K,
 								t = z;
-							return e > Y.j && (t = z / K * (e = Y.j)), l.a.createElement(S.a, ee({}, X, {
+							return e > Y.j && (t = z / K * (e = Y.j)), l.a.createElement(S.a, ee({}, Q, {
 								blurSrc: J ? m.media.gifBackgroundImage : void 0
 							}), l.a.createElement(le, {
 								isVisible: x
@@ -1509,7 +1509,7 @@
 						}
 						case Y.o.VIDEO: {
 							const e = m.media.posterUrl || m.preview && m.preview.url;
-							if (this.props.isMiniCard && e) return l.a.createElement(S.a, ee({}, X, {
+							if (this.props.isMiniCard && e) return l.a.createElement(S.a, ee({}, Q, {
 								alwaysWrapMedia: !0
 							}), l.a.createElement(le, {
 								isVisible: x
@@ -1523,11 +1523,11 @@
 								isCrosspost: !!t,
 								isSpoiler: this.isSpoiler(),
 								postId: m.id,
-								shouldBlur: Q,
+								shouldBlur: X,
 								source: e,
 								originalSource: e
 							})), l.a.createElement(_.a, null))));
-							const s = l.a.createElement(S.a, ee({}, X, {
+							const s = l.a.createElement(S.a, ee({}, Q, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
 							}), x && l.a.createElement(se, {
@@ -1569,7 +1569,7 @@
 							const f = this.state.viewportHeight - 2 * ae,
 								O = this.state.viewportWidth - 2 * ae;
 							let w = V;
-							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (m.thumbnail && Object(g.a)(m.thumbnail.url) ? w = m.thumbnail.url : m.preview && Object(g.a)(m.preview.url) && (w = m.preview.url)), l.a.createElement(S.a, ee({}, X, {
+							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (m.thumbnail && Object(g.a)(m.thumbnail.url) ? w = m.thumbnail.url : m.preview && Object(g.a)(m.preview.url) && (w = m.preview.url)), l.a.createElement(S.a, ee({}, Q, {
 								blurSrc: J ? w : void 0,
 								isExpando: !!o
 							}), l.a.createElement(le, {
@@ -1587,7 +1587,7 @@
 								maxHeight: o ? f : void 0,
 								maxWidth: o ? O : void 0,
 								postId: m.id,
-								shouldBlur: Q,
+								shouldBlur: X,
 								source: w,
 								outboundUrl: Z && m.source.outboundUrl || void 0,
 								isSponsored: m.isSponsored,
@@ -1596,7 +1596,7 @@
 						case Y.o.GALLERY:
 							const k = Object(F.b)(m.media.mediaMetadata || {}, Object(F.c)(r), Y.p, z),
 								ie = Object(F.a)(m.media.gallery, m.isSponsored);
-							return l.a.createElement(S.a, ee({}, X, {
+							return l.a.createElement(S.a, ee({}, Q, {
 								blurSrc: J ? V : void 0,
 								isExpando: !!o,
 								maxGalleryHeight: k + ie,
@@ -1615,7 +1615,7 @@
 								isListing: r,
 								isNSFW: this.isNSFW(),
 								isSpoiler: this.isSpoiler(),
-								shouldBlur: Q,
+								shouldBlur: X,
 								onClickRevealBlurred: this.onClickRevealBlurred,
 								isTileLayout: !!a,
 								shouldShowTileLayoutOption: this.props.shouldShowGalleryTileOption
@@ -1934,4 +1934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.7047fefa6e9413a1de4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea.c92f66d4006e5d827bd6.js.map

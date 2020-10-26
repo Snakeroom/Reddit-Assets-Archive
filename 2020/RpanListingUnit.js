@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.67dd79a42b1724a4c41e.js
-// Retrieved at 10/26/2020, 12:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.c0cf505dc9a87b913d0a.js
+// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Sb
+					experimentName: u.Tb
 				});
-				return Object(u.Xc)(t) ? void 0 : t
+				return Object(u.Yc)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Tb
+					experimentName: u.Ub
 				});
-				return Object(u.Xc)(t) ? void 0 : t
-			}, (e, t) => e === u.Ub.Enabled && t === u.Ub.Enabled);
+				return Object(u.Yc)(t) ? void 0 : t
+			}, (e, t) => e === u.Vb.Enabled && t === u.Vb.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				C = Object({
-					SENTRY_RELEASE_VERSION: "05a7e46-production"
+					SENTRY_RELEASE_VERSION: "5c5abdd-production"
 				}),
 				N = {
 					anonymousUserId: "t2_anonymous",
@@ -588,7 +588,7 @@
 			s.r(t), s.d(t, "RpanTitle", (function() {
 				return Q
 			})), s.d(t, "RpanDescription", (function() {
-				return X
+				return $
 			}));
 			s("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var i = s("./node_modules/react/index.js"),
@@ -683,12 +683,12 @@
 				className: W.a.title
 			}, G._("Top broadcast", null, {
 				hk: "HADCh"
-			})), X = () => r.a.createElement("p", {
+			})), $ = () => r.a.createElement("p", {
 				className: W.a.description
 			}, G._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
-			class $ extends i.Component {
+			class q extends i.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.onResourceRemoved = () => {
 						this.subscribeStats()
@@ -835,9 +835,9 @@
 					}, e !== f.g.Large && r.a.createElement(w.b, {
 						className: W.a.leftRail,
 						withoutComputedStyles: e === f.g.Compact
-					}, r.a.createElement(q, {
+					}, r.a.createElement(X, {
 						isVertical: !0
-					}), e === f.g.Compact && r.a.createElement(q, {
+					}), e === f.g.Compact && r.a.createElement(X, {
 						isVertical: !1
 					})), r.a.createElement(L.a, {
 						className: W.a.backgroundWrapper,
@@ -849,7 +849,7 @@
 						className: W.a.titleAndDescriptionContainer
 					}, r.a.createElement(k.a, {
 						to: this.props.location
-					}, r.a.createElement(Q, null), e && r.a.createElement(X, null)))
+					}, r.a.createElement(Q, null), e && r.a.createElement($, null)))
 				}
 				renderLargeContent() {
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
@@ -1031,7 +1031,7 @@
 					null === (e = this.videoSessionManager) || void 0 === e || e.destroy()
 				}
 			}
-			const q = e => r.a.createElement(I.a, {
+			const X = e => r.a.createElement(I.a, {
 					className: Object(d.a)({
 						[W.a.verticalVotes]: e.isVertical,
 						[W.a.horizontalVotes]: !e.isVertical
@@ -1089,7 +1089,7 @@
 						className: W.a.hideIcon
 					})))
 				};
-			t.default = z(Object(P.c)($))
+			t.default = z(Object(P.c)(q))
 		},
 		"./src/reddit/controls/MetaSeparator/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1177,4 +1177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.67dd79a42b1724a4c41e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c0cf505dc9a87b913d0a.js.map
