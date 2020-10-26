@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.935b7821540ffd5ed01c.js
-// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.fc6d0ab0d704102484cf.js
+// Retrieved at 10/26/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -363,13 +363,13 @@
 		"./src/reddit/actions/ads/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return p
+				return O
 			})), n.d(t, "b", (function() {
-				return I
-			})), n.d(t, "c", (function() {
 				return S
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "c", (function() {
 				return T
+			})), n.d(t, "a", (function() {
+				return y
 			}));
 			n("./node_modules/core-js/modules/es6.regexp.split.js");
 			var s = n("./src/lib/makeActionCreator/index.ts"),
@@ -399,21 +399,22 @@
 				l = n("./src/reddit/selectors/brandSafety.ts"),
 				b = n("./src/reddit/selectors/platform.ts"),
 				_ = n("./src/reddit/selectors/posts.ts"),
-				f = n("./src/reddit/actions/ads/constants.ts");
-			const m = Object(s.a)(f.a),
-				p = e => async (t, n) => {
+				f = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				m = n("./src/reddit/actions/ads/constants.ts");
+			const p = Object(s.a)(m.a),
+				O = e => async (t, n) => {
 					const s = n();
-					Object(l.c)(s) && Object(l.d)(s) === e.isViewSafe || t(m(e))
-				}, O = Object(s.a)(f.p), g = Object(s.a)(f.q), j = Object(s.a)(f.s), E = Object(s.a)(f.t), h = (Object(s.a)(f.u), Object(s.a)(f.n)), I = (Object(s.a)(f.o), e => async (t, n, s) => {
+					Object(l.c)(s) && Object(l.d)(s) === e.isViewSafe || t(p(e))
+				}, g = Object(s.a)(m.p), j = Object(s.a)(m.q), E = Object(s.a)(m.s), h = Object(s.a)(m.t), I = (Object(s.a)(m.u), Object(s.a)(m.n)), S = (Object(s.a)(m.o), e => async (t, n, s) => {
 					let {
 						apiContext: o
 					} = s;
 					var i;
 					const c = n(),
 						l = Object(b.q)(c),
-						f = Object(d.b)(c, e),
-						m = f.length;
-					if (0 === m) return;
+						m = Object(d.b)(c, e),
+						p = m.length;
+					if (0 === p) return;
 					switch (e) {
 						case u.a.COMMENTS:
 						case u.a.COMMENTS_OVERLAY: {
@@ -429,7 +430,8 @@
 						case u.a.SUBREDDIT: {
 							const e = c.listings.activeKey,
 								t = Object(_.U)(c, {
-									listingKey: e
+									listingKey: e,
+									predictionsEnabled: Object(f.a)(c)
 								});
 							if (!t || !t.length) return;
 							break
@@ -437,20 +439,20 @@
 						default:
 							return void 0
 					}
-					const p = Object(b.e)(c);
-					let j;
-					if ((j = await a({
+					const O = Object(b.e)(c);
+					let E;
+					if ((E = await a({
 							context: o(),
-							count: m,
-							subreddit: p || void 0,
+							count: p,
+							subreddit: O || void 0,
 							forceAd: null === (i = null == l ? void 0 : l.sidebar_ad) || void 0 === i ? void 0 : i.split(",")
-						})).body && j.body.length) {
-						const e = j.body,
+						})).body && E.body.length) {
+						const e = E.body,
 							n = {};
-						for (let t = 0; t < e.length; t++) n[f[t]] = e[t];
-						t(O(n))
-					} else t(g(j.error))
-				}), S = e => async (t, n, s) => {
+						for (let t = 0; t < e.length; t++) n[m[t]] = e[t];
+						t(g(n))
+					} else t(j(E.error))
+				}), T = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -462,10 +464,10 @@
 							count: 1,
 							forceAd: null === (o = null == c ? void 0 : c.sidebar_ad) || void 0 === o ? void 0 : o.split(",")
 						});
-					d.body && d.body.length ? t(j({
+					d.body && d.body.length ? t(E({
 						[e]: d.body[0]
-					})) : t(E(d.error))
-				}, T = e => async (t, n, s) => {
+					})) : t(h(d.error))
+				}, y = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
@@ -499,8 +501,8 @@
 							subredditName: u,
 							forceAd: d ? d.comments_ad : void 0
 						});
-					if (l.body && l.body.length) return t(h(l.body)), l.body[0].id;
-					t(g(l.error))
+					if (l.body && l.body.length) return t(I(l.body)), l.body[0].id;
+					t(j(l.error))
 				}
 		},
 		"./src/reddit/actions/apiRequestState.ts": function(e, t, n) {
@@ -8418,6 +8420,18 @@
 				}), e => e === r.k.Active),
 				l = Object(s.a)(a, u, (e, t) => e || t)
 		},
+		"./src/reddit/selectors/experiments/econ/predictions.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return i
+			}));
+			var s = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const o = Object(r.a)(s.nb),
+				i = Object(r.a)(s.ob)
+		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -8558,34 +8572,35 @@
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "i", (function() {
-				return c
-			})), n.d(t, "h", (function() {
 				return a
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "h", (function() {
 				return d
+			})), n.d(t, "a", (function() {
+				return u
 			})), n.d(t, "k", (function() {
-				return l
-			})), n.d(t, "j", (function() {
 				return b
+			})), n.d(t, "j", (function() {
+				return _
 			})), n.d(t, "b", (function() {
-				return m
-			})), n.d(t, "e", (function() {
 				return p
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "e", (function() {
 				return O
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "f", (function() {
 				return g
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "c", (function() {
 				return j
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "g", (function() {
 				return E
+			})), n.d(t, "d", (function() {
+				return h
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js");
 			var s = n("./src/reddit/featureFlags/index.ts"),
 				r = n("./src/reddit/selectors/posts.ts"),
 				o = n("./src/reddit/selectors/subreddit.ts"),
-				i = n("./src/reddit/selectors/user.ts");
-			const c = (e, t) => {
+				i = n("./src/reddit/selectors/user.ts"),
+				c = n("./src/reddit/selectors/experiments/econ/predictions.ts");
+			const a = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
 						const t = Object(o.T)(e, {
@@ -8595,24 +8610,24 @@
 					}
 					return ""
 				},
-				a = (e, t) => e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t] || "",
-				d = e => e.focusedVerticals.components.dismissed,
-				u = [],
-				l = (e, t) => {
-					const n = b(e, t);
-					if (!n) return u;
+				d = (e, t) => e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t] || "",
+				u = e => e.focusedVerticals.components.dismissed,
+				l = [],
+				b = (e, t) => {
+					const n = _(e, t);
+					if (!n) return l;
 					const s = Object(o.X)(e, {
 						subredditName: n.name
 					});
-					return s && s.postIds && s.postIds.length ? s.postIds : u
+					return s && s.postIds && s.postIds.length ? s.postIds : l
 				},
-				b = (e, t) => {
+				_ = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
 					return n ? Object(o.T)(e, {
 						subredditId: n
 					}) : null
 				},
-				_ = (e, t, n, s, o) => {
+				f = (e, t, n, s, o) => {
 					const i = o.find(e => e <= t) || -1,
 						c = o.find(e => e > t) || 1 / 0;
 					return t !== c && t !== i && (!(i + n > t) && (!(t + n > c) && !((e, t, n) => {
@@ -8627,34 +8642,35 @@
 						return i && i.isSponsored || c && c.isSponsored
 					})(e, t, s)))
 				},
-				f = [3],
-				m = (e, t, n) => {
+				m = [3],
+				p = (e, t, n) => {
 					let {
 						listingKey: s
 					} = n;
 					const o = t.slice().sort();
 					let i = -1;
-					const c = Object(r.H)(e, {
-							listingKey: s
+					const a = Object(r.H)(e, {
+							listingKey: s,
+							predictionsEnabled: Object(c.a)(e)
 						}),
-						a = [];
-					return f.forEach(t => {
+						d = [];
+					return m.forEach(t => {
 						let n = i + t;
-						if (!(n >= c.length)) {
-							for (; n < c.length && !_(e, n, t, c, o);) n += 1;
-							n < c.length && (a.push(n), i = n)
+						if (!(n >= a.length)) {
+							for (; n < a.length && !f(e, n, t, a, o);) n += 1;
+							n < a.length && (d.push(n), i = n)
 						}
-					}), a
-				},
-				p = e => {
-					return e.focusedVerticals.api.pending.focusedVerticalGqlPending
+					}), d
 				},
 				O = e => {
+					return e.focusedVerticals.api.pending.focusedVerticalGqlPending
+				},
+				g = e => {
 					return e.focusedVerticals.api.error.focusedVerticalGqlError
 				},
-				g = e => e.focusedVerticals.category,
-				j = e => e.focusedVerticals.lastLoadedEnv,
-				E = e => {
+				j = e => e.focusedVerticals.category,
+				E = e => e.focusedVerticals.lastLoadedEnv,
+				h = e => {
 					const t = Object(i.H)(e),
 						n = s.d.geoSubredditRecommendationDULoggedIn(e),
 						r = s.d.geoSubredditRecommendationDULoggedOut(e);
@@ -8806,4 +8822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.935b7821540ffd5ed01c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.fc6d0ab0d704102484cf.js.map

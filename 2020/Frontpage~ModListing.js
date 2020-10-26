@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.67363942b8da6eb8634b.js
-// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.4794e172c596f0ad875a.js
+// Retrieved at 10/26/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/graphql/operations/RecordCommunityAnswer.json": function(e) {
@@ -75,9 +75,9 @@
 			var v = n("./src/reddit/helpers/localStorage/index.ts");
 			var x = n("./src/reddit/hooks/useTracking.ts"),
 				h = n("./src/reddit/models/Subreddit/index.ts"),
-				S = n("./src/reddit/models/Toast/index.ts"),
-				C = n("./src/reddit/components/StructuredStyles/StyledComponents/index.tsx"),
-				O = n("./src/reddit/controls/Button/index.tsx"),
+				O = n("./src/reddit/models/Toast/index.ts"),
+				S = n("./src/reddit/components/StructuredStyles/StyledComponents/index.tsx"),
+				C = n("./src/reddit/controls/Button/index.tsx"),
 				j = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/react-uid/dist/es2015/hooks.js")),
 				k = n("./src/reddit/controls/ButtonGroup/index.m.less"),
 				w = n.n(k);
@@ -144,7 +144,7 @@
 				}, o.a.createElement(T.a, {
 					className: N.a.closeButton,
 					onClick: () => i(t)
-				}, o.a.createElement(C.b, null), o.a.createElement("span", {
+				}, o.a.createElement(S.b, null), o.a.createElement("span", {
 					className: N.a.closeText
 				}, P._("Close", null, {
 					hk: "4gbyAA"
@@ -160,7 +160,7 @@
 						var s;
 						c(n), null === (s = e.onSelect) || void 0 === s || s.call(e, t, n)
 					}
-				}), o.a.createElement(O.i, {
+				}), o.a.createElement(C.i, {
 					className: N.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
@@ -189,7 +189,7 @@
 				}, o.a.createElement(T.a, {
 					className: N.a.closeButton,
 					onClick: () => i(t)
-				}, o.a.createElement(C.b, null), o.a.createElement("span", {
+				}, o.a.createElement(S.b, null), o.a.createElement("span", {
 					className: N.a.closeText
 				}, B._("Close", null, {
 					hk: "4gbyAA"
@@ -209,7 +209,7 @@
 					options: s.map(e => Object.assign(Object.assign({}, e), {
 						isMutuallyExclusive: !0
 					}))
-				})), !a && o.a.createElement(O.i, {
+				})), !a && o.a.createElement(C.i, {
 					className: N.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
@@ -226,7 +226,7 @@
 				var t;
 				const {
 					subredditId: n
-				} = e, u = Object(x.a)(), l = Object(f.a)(), p = null !== (t = Object(i.d)(e => e.subreddits.questions[n])) && void 0 !== t ? t : [], C = Object(i.c)(), [O, j] = function(e, t) {
+				} = e, u = Object(x.a)(), l = Object(f.a)(), p = null !== (t = Object(i.d)(e => e.subreddits.questions[n])) && void 0 !== t ? t : [], S = Object(i.c)(), [C, j] = function(e, t) {
 					let n;
 					n = Object(v.o)(e);
 					const [s, o] = Object(r.useState)(null != n ? n : t);
@@ -242,7 +242,7 @@
 					let {
 						id: t
 					} = e;
-					return !O.includes(t)
+					return !C.includes(t)
 				})[0];
 				if (Object(r.useEffect)(() => {
 						T && !k && u(b(T))
@@ -251,7 +251,7 @@
 				if (!T) return null;
 
 				function I(e) {
-					w(!0), j([...O, e])
+					w(!0), j([...C, e])
 				}
 				async function N(e) {
 					m(l(), {
@@ -269,11 +269,11 @@
 							answerIds: t,
 							skip: !1
 						}
-					}), u(y(T, t)), I(e), C(Object(c.e)({
+					}), u(y(T, t)), I(e), S(Object(c.e)({
 						text: s.fbt._("Thank you for your help!", null, {
 							hk: "1asBUQ"
 						}),
-						kind: S.b.SuccessCommunityGreen
+						kind: O.b.SuccessCommunityGreen
 					}))
 				}
 
@@ -476,7 +476,7 @@
 							})
 					}
 				},
-				S = e => {
+				O = e => {
 					let {
 						listingName: t,
 						sort: n
@@ -510,7 +510,7 @@
 						hk: "1vnCSW"
 					}))))
 				},
-				C = () => a.a.createElement("div", {
+				S = () => a.a.createElement("div", {
 					className: g.a.MainContent
 				}, a.a.createElement("img", {
 					className: g.a.SnooImg,
@@ -533,7 +533,7 @@
 				layout: l.g.Classic
 			}), a.a.createElement("div", {
 				className: g.a.MainContentWrapper
-			}, e.subreddit ? a.a.createElement(S, e) : a.a.createElement(C, null))))
+			}, e.subreddit ? a.a.createElement(O, e) : a.a.createElement(S, null))))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, n) {
 			"use strict";
@@ -634,9 +634,9 @@
 			n.d(t, "c", (function() {
 				return S
 			})), n.d(t, "d", (function() {
-				return O
+				return j
 			})), n.d(t, "b", (function() {
-				return k
+				return w
 			}));
 			var s = n("./node_modules/react-redux/es/index.js"),
 				r = n("./node_modules/reselect/es/index.js"),
@@ -652,11 +652,12 @@
 				b = n("./src/reddit/helpers/trackers/post.ts"),
 				g = n("./src/reddit/components/PostList/Placeholder.tsx"),
 				y = n("./src/reddit/featureFlags/index.ts"),
-				_ = n("./src/reddit/selectors/experiments/survey.ts"),
-				f = n("./src/reddit/selectors/listings.ts"),
-				v = n("./src/reddit/selectors/posts.ts"),
-				x = n("./src/reddit/selectors/subreddit.ts"),
-				h = n("./src/reddit/selectors/tracking.ts");
+				_ = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				f = n("./src/reddit/selectors/experiments/survey.ts"),
+				v = n("./src/reddit/selectors/listings.ts"),
+				x = n("./src/reddit/selectors/posts.ts"),
+				h = n("./src/reddit/selectors/subreddit.ts"),
+				O = n("./src/reddit/selectors/tracking.ts");
 
 			function S() {
 				return Object(m.t)({
@@ -670,29 +671,31 @@
 				})
 			}
 			const C = S(),
-				O = {
-					apiError: f.c,
-					apiPending: f.d,
+				j = {
+					apiError: v.c,
+					apiPending: v.d,
 					measureScrollFPS: y.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
-					loadMore: f.g,
-					postsById: v.Z,
+					loadMore: v.g,
+					postsById: (e, t) => Object(x.Z)(e, Object.assign(Object.assign({}, t), {
+						predictionsEnabled: Object(_.a)(e)
+					})),
 					postIds: Object(o.a)((e, t) => {
 						let {
 							listingKey: n,
 							listingName: s,
 							inSubredditOrProfile: r
 						} = t;
-						return Object(v.L)(e, n, s, r)
+						return Object(x.L)(e, n, s, r, Object(_.a)(e))
 					}),
-					subredditsById: x.ab,
-					viewportDataLoaded: h.a,
+					subredditsById: h.ab,
+					viewportDataLoaded: O.a,
 					pageReferrer: m.Q,
 					postListPlaceholderComponent: () => g.a,
-					isNpsScrollSurveyEnabled: _.b
+					isNpsScrollSurveyEnabled: f.b
 				},
-				j = Object(r.c)(O),
-				k = (e, t) => {
+				k = Object(r.c)(j),
+				w = (e, t) => {
 					let {
 						isFrontpage: n
 					} = t;
@@ -720,11 +723,11 @@
 						surveyTriggerScrollCounted: () => e(Object(u.b)())
 					}
 				},
-				w = Object(s.b)(j, k, (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), n), {
+				E = Object(s.b)(k, w, (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), n), {
 					postClickEvent: (e, t, s) => Object(b.f)(e, t, s, n.listingKey, n.hostPostId, n.listingBelowVariant),
 					postComponentForLayout: e => Object(p.b)(Object.assign({}, e))
 				}));
-			t.a = e => Object(l.c)(C(w(e)))
+			t.a = e => Object(l.c)(C(E(e)))
 		},
 		"./src/reddit/controls/ButtonGroup/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1056,4 +1059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.67363942b8da6eb8634b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.4794e172c596f0ad875a.js.map

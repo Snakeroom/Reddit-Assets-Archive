@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.46172fc02d6527ec36d0.js
-// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c388c6dd3483bc3659c2.js
+// Retrieved at 10/26/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -14000,21 +14000,22 @@
 		"./src/reddit/selectors/eventPosts.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "e", (function() {
-				return r
-			})), s.d(t, "f", (function() {
 				return i
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "f", (function() {
 				return a
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "d", (function() {
 				return c
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "b", (function() {
 				return d
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return l
+			})), s.d(t, "a", (function() {
+				return u
 			}));
 			var n = s("./src/lib/makeListingKey/index.ts"),
-				o = s("./src/reddit/selectors/posts.ts");
-			const r = (e, t) => {
+				o = s("./src/reddit/selectors/posts.ts"),
+				r = s("./src/reddit/selectors/experiments/econ/predictions.ts");
+			const i = (e, t) => {
 					let {
 						subredditName: s
 					} = t;
@@ -14022,27 +14023,28 @@
 						subredditName: s
 					})
 				},
-				i = (e, t) => {
-					const s = r(e, t);
+				a = (e, t) => {
+					const s = i(e, t);
 					return Object(o.U)(e, {
-						listingKey: s
+						listingKey: s,
+						predictionsEnabled: Object(r.a)(e)
 					}) || []
 				},
-				a = (e, t) => {
-					const s = r(e, t);
+				c = (e, t) => {
+					const s = i(e, t);
 					return !!e.listings.postOrder.api.pending[s]
 				},
-				c = (e, t) => {
-					const s = r(e, t);
+				d = (e, t) => {
+					const s = i(e, t);
 					return !!(e.listings.postOrder.ids[s] || []).length
 				},
-				d = (e, t) => {
-					const s = r(e, t),
+				l = (e, t) => {
+					const s = i(e, t),
 						n = e.listings.postOrder.pageInfo[s];
 					return !(!n || !n.hasNextPage)
 				},
-				l = (e, t) => {
-					const s = r(e, t),
+				u = (e, t) => {
+					const s = i(e, t),
 						n = e.listings.postOrder.pageInfo[s];
 					return n && n.endCursor || null
 				}
@@ -14200,4 +14202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.46172fc02d6527ec36d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c388c6dd3483bc3659c2.js.map

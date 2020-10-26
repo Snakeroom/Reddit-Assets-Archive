@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.78f161df558998969a58.js
-// Retrieved at 10/26/2020, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e99749185f979d2bf808.js
+// Retrieved at 10/26/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -31393,21 +31393,22 @@
 		"./src/reddit/selectors/eventPosts.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "e", (function() {
-				return a
-			})), s.d(t, "f", (function() {
 				return r
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "f", (function() {
 				return i
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "d", (function() {
 				return d
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "b", (function() {
 				return c
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return l
+			})), s.d(t, "a", (function() {
+				return m
 			}));
 			var n = s("./src/lib/makeListingKey/index.ts"),
-				o = s("./src/reddit/selectors/posts.ts");
-			const a = (e, t) => {
+				o = s("./src/reddit/selectors/posts.ts"),
+				a = s("./src/reddit/selectors/experiments/econ/predictions.ts");
+			const r = (e, t) => {
 					let {
 						subredditName: s
 					} = t;
@@ -31415,27 +31416,28 @@
 						subredditName: s
 					})
 				},
-				r = (e, t) => {
-					const s = a(e, t);
+				i = (e, t) => {
+					const s = r(e, t);
 					return Object(o.U)(e, {
-						listingKey: s
+						listingKey: s,
+						predictionsEnabled: Object(a.a)(e)
 					}) || []
 				},
-				i = (e, t) => {
-					const s = a(e, t);
+				d = (e, t) => {
+					const s = r(e, t);
 					return !!e.listings.postOrder.api.pending[s]
 				},
-				d = (e, t) => {
-					const s = a(e, t);
+				c = (e, t) => {
+					const s = r(e, t);
 					return !!(e.listings.postOrder.ids[s] || []).length
 				},
-				c = (e, t) => {
-					const s = a(e, t),
+				l = (e, t) => {
+					const s = r(e, t),
 						n = e.listings.postOrder.pageInfo[s];
 					return !(!n || !n.hasNextPage)
 				},
-				l = (e, t) => {
-					const s = a(e, t),
+				m = (e, t) => {
+					const s = r(e, t),
 						n = e.listings.postOrder.pageInfo[s];
 					return n && n.endCursor || null
 				}
@@ -31696,4 +31698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.78f161df558998969a58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e99749185f979d2bf808.js.map

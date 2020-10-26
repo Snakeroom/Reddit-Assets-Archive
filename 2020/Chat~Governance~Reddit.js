@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5773f94eaa28e67c7b0b.js
-// Retrieved at 10/26/2020, 6:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b49075f7ad228800ac45.js
+// Retrieved at 10/26/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("116686"),
+				buildNumber: r("116696"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603748691"),
+				})("1603750000"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3431,14 +3431,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("44ec303-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("5bb7b9f-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "44ec303-production",
+						release: "5bb7b9f-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3891,7 +3891,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "44ec303-production",
+							releaseClient: "5bb7b9f-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -18183,14 +18183,17 @@
 				},
 				x = Object(c.a)((e, t) => {
 					let {
-						listingKey: i
+						listingKey: i,
+						predictionsEnabled: n
 					} = t;
-					const n = e.posts.models;
+					const r = e.posts.models;
 					return R(e, {
 						listingKey: i
 					}).filter(e => {
-						const t = n[e];
-						return t && !t.hidden
+						var t;
+						const i = r[e],
+							s = (null === (t = i.pollData) || void 0 === t ? void 0 : t.isPrediction) && !n;
+						return i && !i.hidden && !s
 					})
 				}),
 				B = Object(a.a)(e => e.posts.models, e => Object.keys(e).filter(t => e[t].hidden)),
@@ -18202,20 +18205,24 @@
 				}),
 				C = Object(c.a)((e, t) => {
 					let {
-						listingKey: i
+						listingKey: i,
+						predictionsEnabled: n
 					} = t;
 					return x(e, {
-						listingKey: i
+						listingKey: i,
+						predictionsEnabled: n
 					}).map(t => e.posts.models[t])
 				}),
 				k = (e, t) => {
 					let {
-						listingKey: i
+						listingKey: i,
+						predictionsEnabled: n
 					} = t;
-					const n = C(e, {
-						listingKey: i
+					const r = C(e, {
+						listingKey: i,
+						predictionsEnabled: n
 					});
-					return n ? n.length : 0
+					return r ? r.length : 0
 				},
 				N = (e, t) => {
 					let {
@@ -18556,20 +18563,21 @@
 						return !!t && !t.isBlank && !t.hidden
 					})
 				}),
-				Ee = (e, t, i, n) => {
-					const r = x(e, {
-						listingKey: t
+				Ee = (e, t, i, n, r) => {
+					const s = x(e, {
+						listingKey: t,
+						predictionsEnabled: r
 					});
 					if (n) {
 						const t = Object(S.G)(e, i);
 						if (t) {
 							if (!!e.subreddits.appliedFilters.meta[t]) {
 								const t = e.posts.metaMap;
-								return r.filter(e => !!t[e])
+								return s.filter(e => !!t[e])
 							}
 						}
 					}
-					return r
+					return s
 				},
 				Fe = (e, t) => {
 					const i = L(e, t);
@@ -25934,4 +25942,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5773f94eaa28e67c7b0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b49075f7ad228800ac45.js.map
