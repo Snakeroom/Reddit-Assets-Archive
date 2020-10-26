@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.24e3e68f8a1c215535f7.js
-// Retrieved at 10/26/2020, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f380196c958796cf846e.js
+// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -1295,10 +1295,9 @@
 				r = s("./src/reddit/icons/fonts/helpers.tsx"),
 				a = s("./src/reddit/icons/fonts/Envelope/index.m.less"),
 				i = s.n(a);
-			const c = s("./src/lib/lessComponent.tsx").a.wrapped(e => n.a.createElement("i", {
-				className: "".concat(Object(r.b)("envelope"), " ").concat(e.className)
-			}), "Envelope", i.a);
-			t.a = c
+			t.a = e => n.a.createElement("i", {
+				className: "".concat(Object(r.b)("envelope"), " ").concat(i.a.Envelope, " ").concat(e.className)
+			})
 		},
 		"./src/reddit/icons/fonts/IgnoreReport/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1557,4 +1556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.24e3e68f8a1c215535f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f380196c958796cf846e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.beef5a671e5d9bf5561a.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f9b5f469e1e5f66285c8.js
+// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
@@ -256,9 +256,9 @@
 		"./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return D
+				return R
 			})), n.d(t, "a", (function() {
-				return G
+				return F
 			}));
 			n("./node_modules/core-js/modules/es6.symbol.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -283,19 +283,14 @@
 				y = n("./src/reddit/selectors/tooltip.ts"),
 				O = n("./src/reddit/selectors/user.ts"),
 				_ = n("./src/reddit/icons/fonts/Approve/index.tsx"),
-				P = n("./src/reddit/icons/fonts/helpers.tsx"),
-				j = n("./src/reddit/icons/fonts/DistinguishShield/index.m.less"),
-				E = n.n(j);
-			var w = l.a.wrapped(e => r.a.createElement("i", {
-					className: "".concat(Object(P.b)("distinguishShield"), " ").concat(e.className)
-				}), "DistinguishShield", E.a),
-				S = n("./src/reddit/icons/fonts/Lock/index.tsx"),
-				N = n("./src/reddit/icons/fonts/Remove/index.tsx"),
-				M = n("./src/reddit/icons/fonts/Spam/index.tsx"),
-				T = n("./src/reddit/icons/svgs/Show/index.tsx"),
-				R = n("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less"),
-				I = n.n(R),
-				A = function(e, t) {
+				P = n("./src/reddit/icons/fonts/DistinguishShield/index.tsx"),
+				j = n("./src/reddit/icons/fonts/Lock/index.tsx"),
+				E = n("./src/reddit/icons/fonts/Remove/index.tsx"),
+				w = n("./src/reddit/icons/fonts/Spam/index.tsx"),
+				S = n("./src/reddit/icons/svgs/Show/index.tsx"),
+				N = n("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less"),
+				M = n.n(N),
+				T = function(e, t) {
 					var n = {};
 					for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && t.indexOf(s) < 0 && (n[s] = e[s]);
 					if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -304,16 +299,16 @@
 					}
 					return n
 				};
-			const D = l.a.wrapped(h.c, "RestrictedButton", I.a),
-				L = l.a.wrapped(_.a, "Approve", I.a),
-				B = l.a.wrapped(S.a, "Lock", I.a),
-				F = l.a.wrapped(N.a, "Remove", I.a),
-				W = l.a.wrapped(M.a, "Spam", I.a),
-				U = l.a.wrapped(T.a, "Show", I.a),
-				G = l.a.wrapped(w, "DistinguishShield", I.a),
-				X = Object(f.t)(),
-				V = e => "Distinguish--Dropdown--".concat(e),
-				H = Object(i.c)({
+			const R = l.a.wrapped(h.c, "RestrictedButton", M.a),
+				I = l.a.wrapped(_.a, "Approve", M.a),
+				A = l.a.wrapped(j.a, "Lock", M.a),
+				D = l.a.wrapped(E.a, "Remove", M.a),
+				L = l.a.wrapped(w.a, "Spam", M.a),
+				B = l.a.wrapped(S.a, "Show", M.a),
+				F = l.a.wrapped(P.a, "DistinguishShield", M.a),
+				W = Object(f.t)(),
+				U = e => "Distinguish--Dropdown--".concat(e),
+				G = Object(i.c)({
 					currentUser: O.i,
 					collapsedBecauseCrowdControl: (e, t) => {
 						let {
@@ -327,7 +322,7 @@
 						let {
 							comment: n
 						} = t;
-						return Object(y.b)(V(n.id))(e)
+						return Object(y.b)(U(n.id))(e)
 					},
 					moderatorPermissions: (e, t) => {
 						const {
@@ -339,7 +334,7 @@
 					},
 					modModeEnabled: f.P
 				}),
-				q = Object(a.b)(H, (e, t) => {
+				X = Object(a.b)(G, (e, t) => {
 					let {
 						comment: n
 					} = t;
@@ -351,11 +346,11 @@
 						onSpamComment: () => e(Object(m.cb)(n.id, !0)),
 						onShowComment: () => e(Object(m.Y)(n.id)),
 						onToggleDistinguishDropdown: () => e(Object(u.h)({
-							tooltipId: V(n.id)
+							tooltipId: U(n.id)
 						}))
 					}
 				});
-			t.c = X(q(l.a.wrapped(Object(x.c)(e => {
+			t.c = W(X(l.a.wrapped(Object(x.c)(e => {
 				var {
 					className: t,
 					comment: n,
@@ -372,58 +367,58 @@
 					onSpamComment: k,
 					onToggleDistinguishDropdown: y,
 					sendEvent: O
-				} = e, _ = A(e, ["className", "comment", "currentUser", "isCommentAuthor", "collapsedBecauseCrowdControl", "moderatorPermissions", "modModeEnabled", "onApproveComment", "onDistinguishComment", "onLockComment", "onRemoveComment", "onShowComment", "onSpamComment", "onToggleDistinguishDropdown", "sendEvent"]);
+				} = e, _ = T(e, ["className", "comment", "currentUser", "isCommentAuthor", "collapsedBecauseCrowdControl", "moderatorPermissions", "modModeEnabled", "onApproveComment", "onDistinguishComment", "onLockComment", "onRemoveComment", "onShowComment", "onSpamComment", "onToggleDistinguishDropdown", "sendEvent"]);
 				const P = Object(g.a)(l),
 					j = Object(b.b)(n),
 					E = n.isApproved && j,
 					w = !!o && o.isEmployee,
 					S = !n.isRemoved,
 					N = i,
-					M = e => O(Object(C.a)(e, n.id));
+					W = e => O(Object(C.a)(e, n.id));
 				return r.a.createElement("div", {
 					className: t
-				}, (n.bannedBy || j) && r.a.createElement(D, {
+				}, (n.bannedBy || j) && r.a.createElement(R, {
 					text: E ? s.fbt._("Reapprove", null, {
 						hk: "1XngBU"
 					}) : s.fbt._("Approve", null, {
 						hk: "2219Nh"
 					}),
 					onClick: () => {
-						u(), M("approve")
+						u(), W("approve")
 					}
-				}, r.a.createElement(L, null)), S && r.a.createElement(r.a.Fragment, null, r.a.createElement(D, {
+				}, r.a.createElement(I, null)), S && r.a.createElement(r.a.Fragment, null, r.a.createElement(R, {
 					text: n.bannedBy === c.k ? s.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
 					}) : s.fbt._("Remove", null, {
 						hk: "VP5J0"
 					}),
 					onClick: () => {
-						f(), n.bannedBy === c.k ? M("confirm_remove") : M("remove")
+						f(), n.bannedBy === c.k ? W("confirm_remove") : W("remove")
 					}
-				}, r.a.createElement(F, null)), r.a.createElement(D, {
+				}, r.a.createElement(D, null)), r.a.createElement(R, {
 					text: s.fbt._("Spam", null, {
 						hk: "1jEVwZ"
 					}),
 					onClick: () => {
-						k(), M("spam")
+						k(), W("spam")
 					}
-				}, r.a.createElement(W, null))), r.a.createElement(D, {
+				}, r.a.createElement(L, null))), r.a.createElement(R, {
 					text: n.isLocked ? s.fbt._("Unlock", null, {
 						hk: "KGYeO"
 					}) : s.fbt._("Lock", null, {
 						hk: "3rDzwU"
 					}),
 					onClick: () => {
-						x(), M(n.isLocked ? "unlock" : "lock")
+						x(), W(n.isLocked ? "unlock" : "lock")
 					}
-				}, r.a.createElement(B, null)), a && !w && !n.bannedBy && r.a.createElement(D, {
+				}, r.a.createElement(A, null)), a && !w && !n.bannedBy && r.a.createElement(R, {
 					className: Object(d.a)({
-						[I.a.selected]: _.isDistinguishDropdownOpen
+						[M.a.selected]: _.isDistinguishDropdownOpen
 					}),
 					onClick: () => {
-						M("mod_distinguish_menu"), y()
+						W("mod_distinguish_menu"), y()
 					}
-				}, r.a.createElement(G, null), r.a.createElement(p.a, {
+				}, r.a.createElement(F, null), r.a.createElement(p.a, {
 					isAdminDistinguished: n.isAdmin,
 					isDropdownOpen: _.isDistinguishDropdownOpen,
 					isModDistinguished: n.isMod,
@@ -432,17 +427,17 @@
 					isUserEmployee: w,
 					isUserMod: P,
 					onDistinguishComment: h,
-					sendEventWithName: M,
-					tooltipId: V(n.id)
-				})), N && r.a.createElement(D, {
+					sendEventWithName: W,
+					tooltipId: U(n.id)
+				})), N && r.a.createElement(R, {
 					text: s.fbt._("Show Comment", null, {
 						hk: "2ki02n"
 					}),
 					onClick: () => {
 						v()
 					}
-				}, r.a.createElement(U, null)))
-			}), "CommentModToolsFlatlist", I.a)))
+				}, r.a.createElement(B, null)))
+			}), "CommentModToolsFlatlist", M.a)))
 		},
 		"./src/reddit/components/Comments/UnthreadedComment/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2022,6 +2017,18 @@
 				distinguishShield: "_3qx_qM22xH7s5oSucqWca"
 			}
 		},
+		"./src/reddit/icons/fonts/DistinguishShield/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/reddit/icons/fonts/helpers.tsx"),
+				a = n("./src/reddit/icons/fonts/DistinguishShield/index.m.less"),
+				i = n.n(a);
+			const d = n("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
+				className: "".concat(Object(r.b)("distinguishShield"), " ").concat(e.className)
+			}), "DistinguishShield", i.a);
+			t.a = d
+		},
 		"./src/reddit/icons/fonts/DropdownTriangle/index.m.less": function(e, t, n) {
 			e.exports = {
 				DropdownTriangle: "_28O0gzb6GMS8lbDeySdpwp",
@@ -2371,4 +2378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.beef5a671e5d9bf5561a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f9b5f469e1e5f66285c8.js.map

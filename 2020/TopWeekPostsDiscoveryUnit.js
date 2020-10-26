@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.af6ca9d80b91871cb9aa.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2af478d485cbc806e8ab.js
+// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
@@ -994,10 +994,9 @@
 				o = s("./src/reddit/icons/fonts/helpers.tsx"),
 				i = s("./src/reddit/icons/fonts/Crosspost/index.m.less"),
 				a = s.n(i);
-			const c = s("./src/lib/lessComponent.tsx").a.wrapped(e => r.a.createElement("i", {
-				className: "".concat(Object(o.b)("crosspost"), " ").concat(e.className)
-			}), "CrosspostIcon", a.a);
-			t.a = c
+			t.a = e => r.a.createElement("i", {
+				className: "".concat(Object(o.b)("crosspost"), " ").concat(a.a.CrosspostIcon, " ").concat(e.className)
+			})
 		},
 		"./src/reddit/layout/twoCol/ExpandRight/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1058,4 +1057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.af6ca9d80b91871cb9aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2af478d485cbc806e8ab.js.map

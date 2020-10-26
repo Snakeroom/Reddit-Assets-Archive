@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.da6030b6839ed43d85d5.js
-// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.0f23c84ed948e9294072.js
+// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -60,7 +60,7 @@
 				v = t("./src/reddit/constants/experiments.ts"),
 				b = t("./src/reddit/helpers/localStorage/index.ts"),
 				p = t("./src/reddit/selectors/telemetry.ts");
-			const x = (e, n) => {
+			const A = (e, n) => {
 					let {
 						id: t,
 						title: s,
@@ -81,14 +81,14 @@
 						}
 					}, Object(p.defaults)(n))
 				},
-				h = e => n => Object.assign({
+				x = e => n => Object.assign({
 					source: "announcement",
 					action: e,
 					noun: "announcement"
 				}, Object(p.defaults)(n));
-			var A = t("./src/reddit/hooks/useTracking.ts"),
+			var O = t("./src/reddit/hooks/useTracking.ts"),
 				_ = t("./src/reddit/selectors/experiments/index.ts");
-			const O = e => {
+			const h = e => {
 				let {
 					announcements: n,
 					setActiveIndex: t,
@@ -122,7 +122,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var g = function(e, n) {
+			var E = function(e, n) {
 				var t = {};
 				for (var s in e) Object.prototype.hasOwnProperty.call(e, s) && n.indexOf(s) < 0 && (t[s] = e[s]);
 				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -131,7 +131,7 @@
 				}
 				return t
 			};
-			const E = o.a.memo(e => {
+			const g = o.a.memo(e => {
 					let {
 						announcement: n,
 						className: t,
@@ -163,7 +163,7 @@
 						announcement: n,
 						children: t,
 						to: s
-					} = e, a = g(e, ["announcement", "children", "to"]);
+					} = e, a = E(e, ["announcement", "children", "to"]);
 					const c = n.url.split("reddit.com");
 					return c.length > 1 ? o.a.createElement(r.a, f({
 						to: c[1]
@@ -176,7 +176,7 @@
 					announcements: n
 				} = e;
 				const [t, r] = Object(a.useState)([]), [d, u] = Object(a.useState)(!0), [m, v] = Object(a.useState)(0);
-				O({
+				h({
 					announcements: n,
 					setActiveIndex: v,
 					setIsHidden: u,
@@ -192,12 +192,12 @@
 						visibleAnnouncements: t,
 						setActiveIndex: s
 					} = e;
-					const o = Object(A.a)(),
+					const o = Object(O.a)(),
 						[c, r] = Object(a.useState)(!0),
 						i = Object(a.useRef)(null);
 					return {
 						onCarouselNavigate: Object(a.useCallback)(e => () => {
-							"next" === e && n + 1 >= t.length ? s(0) : s("prev" === e && n <= 0 ? t.length - 1 : n + ("next" === e ? 1 : -1)), o(h("next" === e ? "scroll_next" : "scroll_previous")), i.current && window.clearTimeout(i.current), r(!1), i.current = window.setTimeout(() => {
+							"next" === e && n + 1 >= t.length ? s(0) : s("prev" === e && n <= 0 ? t.length - 1 : n + ("next" === e ? 1 : -1)), o(x("next" === e ? "scroll_next" : "scroll_previous")), i.current && window.clearTimeout(i.current), r(!1), i.current = window.setTimeout(() => {
 								r(!0)
 							}, 200)
 						}, [n, o, s, t]),
@@ -212,7 +212,7 @@
 						setIsHidden: n,
 						visibleAnnouncements: t
 					} = e;
-					const s = Object(A.a)();
+					const s = Object(O.a)();
 					return Object(a.useCallback)(() => {
 						n(!0), t.forEach(e => {
 							const {
@@ -220,7 +220,7 @@
 								maxImpressionsCount: t
 							} = e;
 							Object(b.P)(n, t)
-						}), s(h("dismiss_all"))
+						}), s(x("dismiss_all"))
 					}, [t, s, n])
 				})({
 					visibleAnnouncements: t,
@@ -231,9 +231,9 @@
 						setActiveIndex: t,
 						visibleAnnouncements: s
 					} = e;
-					const o = Object(A.a)();
+					const o = Object(O.a)();
 					return Object(a.useCallback)(() => {
-						n < 0 || n >= s.length ? t(0) : o(x("click", s[n]))
+						n < 0 || n >= s.length ? t(0) : o(A("click", s[n]))
 					}, [n, o, t, s])
 				})({
 					activeIndex: m,
@@ -246,12 +246,12 @@
 						setActiveIndex: t,
 						visibleAnnouncements: s
 					} = e;
-					const o = Object(A.a)();
+					const o = Object(O.a)();
 					Object(a.useEffect)(() => {
 						if (n < 0 || n >= s.length) return void t(0);
 						const e = s[n],
 							a = Object(b.d)(e.id);
-						o(x("view", e)), Object(b.P)(e.id, a + 1)
+						o(A("view", e)), Object(b.P)(e.id, a + 1)
 					}, [n, o, t, s])
 				})({
 					activeIndex: m,
@@ -275,7 +275,7 @@
 					className: j.a.ArrowPlaceholder
 				}), o.a.createElement("div", {
 					className: j.a.AnnouncementsWrapper
-				}, t.map((e, n) => o.a.createElement(E, {
+				}, t.map((e, n) => o.a.createElement(g, {
 					announcement: e,
 					className: Object(c.a)(j.a.Announcement, {
 						[j.a.isActive]: n === m,
@@ -303,33 +303,7 @@
 					className: j.a.DotsPlaceholder
 				}))
 			}
-		},
-		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, n, t) {
-			e.exports = {
-				chevron: "_1c_YBKkiW4FhhLJPkq9c1v"
-			}
-		},
-		"./src/reddit/icons/svgs/Chevron/index.tsx": function(e, n, t) {
-			"use strict";
-			var s = t("./node_modules/react/index.js"),
-				a = t.n(s),
-				o = t("./src/lib/classNames/index.ts"),
-				c = t("./src/reddit/icons/svgs/Chevron/index.m.less"),
-				r = t.n(c);
-			n.a = e => a.a.createElement("svg", {
-				className: Object(o.a)(r.a.chevron, e.className),
-				viewBox: "0 0 9 14",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, a.a.createElement("g", {
-				transform: "translate(-6.000000, -3.000000)"
-			}, a.a.createElement("polygon", {
-				fill: "none",
-				points: "0 20 20 20 20 0 0 0"
-			}), a.a.createElement("polygon", {
-				fill: "inherit",
-				points: "7.47566213 3 14.4756621 10 7.47566213 17 6 15.5239203 11.5239203 10 6 4.47566213"
-			})))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.da6030b6839ed43d85d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.0f23c84ed948e9294072.js.map

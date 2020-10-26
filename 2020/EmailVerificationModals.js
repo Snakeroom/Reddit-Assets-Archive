@@ -1,7 +1,58 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.9fd6fb27f06d0c1af40e.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.145c31035ef70e6f15ec.js
+// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
+		"./src/lib/colors/constants.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return a
+			})), s.d(t, "b", (function() {
+				return n
+			})), s.d(t, "c", (function() {
+				return i
+			}));
+			const a = "#FFF",
+				n = {
+					black: "#000",
+					white: a,
+					orangered: "#FF4500",
+					alienblue: "#0079D3",
+					tone1: "#1A1A1B",
+					tone2: "#6A6D6F",
+					tone3: "#878A8C",
+					tone4: "#D3D6DA",
+					tone5: "#EDEFF1",
+					tone6: "#F6F7F8",
+					tone7: "#FFFFFF",
+					primary: "#24A0ED",
+					secondary: "#006CBF",
+					upvote: "#FF4500",
+					downvote: "#7193FF",
+					positive: "#46D160",
+					negative: "#EA0027",
+					caution: "#FFB000",
+					admin: "#FF4500",
+					moderator: "#46D160",
+					self: "#0DD3BB",
+					coins: "#DDBD37",
+					live: "#FF4500",
+					nsfw: "#FF585B",
+					spoiler: "#1A1A1B"
+				},
+				i = Object.assign(Object.assign({}, n), {
+					tone1: "#D7DADC",
+					tone2: "#818384",
+					tone3: "#565758",
+					tone4: "#3A3A3C",
+					tone5: "#272729",
+					tone6: "#1A1A1B",
+					tone7: "#121213",
+					primary: "#006CBF",
+					secondary: "#24A0ED",
+					coins: "#FFE600",
+					spoiler: "#D7DADC"
+				})
+		},
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, s) {
 			e.exports = {
 				container: "_1yYBGklEZ27AA6Pk4a5xcB",
@@ -270,28 +321,28 @@
 			}
 			var j = Object(u.a)(S(Object(f.c)(N))),
 				M = s("./src/reddit/icons/svgs/Approve/index.tsx"),
-				P = s("./src/reddit/components/EmailCollection/Success/index.m.less"),
-				B = s.n(P);
-			var F = e => i.a.createElement("div", {
+				F = s("./src/reddit/components/EmailCollection/Success/index.m.less"),
+				B = s.n(F);
+			var P = e => i.a.createElement("div", {
 					className: Object(l.a)(B.a.container, e.className)
 				}, i.a.createElement(M.a, {
 					className: B.a.icon
 				})),
-				I = s("./src/reddit/helpers/styles/mixins/fonts.m.less"),
-				R = s.n(I);
-			var L = Object(u.a)(e => i.a.createElement(y.a, {
+				A = s("./src/reddit/helpers/styles/mixins/fonts.m.less"),
+				D = s.n(A);
+			var I = Object(u.a)(e => i.a.createElement(y.a, {
 					className: Object(l.a)({
 						[k.a["m-responsive"]]: e.isResponsive
 					}),
 					description: i.a.createElement(i.a.Fragment, null, a.fbt._("Reddit sent a confirmation email to:", null, {
 						hk: "3IsFLZ"
 					}), " ", i.a.createElement("strong", {
-						className: R.a.strongTextFont
+						className: D.a.strongTextFont
 					}, e.email), i.a.createElement("br", null), a.fbt._("Click the verify link in the email to secure your Reddit account.", null, {
 						hk: "jJSSU"
 					})),
 					descriptionClassName: k.a.description,
-					icon: i.a.createElement(F, null),
+					icon: i.a.createElement(P, null),
 					onClose: e.onConfirm,
 					title: a.fbt._("Check your email", null, {
 						hk: "1aob6x"
@@ -303,10 +354,10 @@
 				}, a.fbt._("Got it", null, {
 					hk: "2LxUeS"
 				}))))),
-				A = s("./src/reddit/components/Settings/modalIds.ts");
-			const T = "#FFF";
-			var H = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				D = s("./src/reddit/actions/preferences.ts"),
+				R = s("./src/reddit/components/Settings/modalIds.ts"),
+				L = s("./src/lib/colors/constants.ts"),
+				T = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				H = s("./src/reddit/actions/preferences.ts"),
 				J = s("./src/reddit/controls/Checkbox/index.tsx"),
 				U = s("./src/reddit/controls/InternalLink/index.tsx"),
 				W = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
@@ -320,7 +371,7 @@
 				}),
 				Y = Object(o.b)(V, e => ({
 					resendEmail: () => e(Object(p.v)()),
-					toggleEmailDigests: t => e(Object(D.H)({
+					toggleEmailDigests: t => e(Object(H.H)({
 						emailDigests: t
 					}))
 				}));
@@ -360,7 +411,7 @@
 							hk: "bg4j6"
 						})))),
 						descriptionClassName: X.a.description,
-						icon: i.a.createElement(F, null),
+						icon: i.a.createElement(P, null),
 						onClose: n,
 						title: a.fbt._("Verification email sent", null, {
 							hk: "3rXaUZ"
@@ -370,7 +421,7 @@
 					}, i.a.createElement(J.a, {
 						className: Object(l.a)(X.a.checkbox, !r && X.a.unchecked),
 						checkBoxStyle: {
-							backgroundColor: T,
+							backgroundColor: L.a,
 							borderRadius: "50%",
 							fill: Object(W.a)(this.props).active,
 							visibility: r ? "visible" : "hidden"
@@ -396,19 +447,19 @@
 					}))))
 				}
 			}
-			var Z = Object(u.a)(Y(Object(f.c)(Object(H.a)(K)))),
+			var Z = Object(u.a)(Y(Object(f.c)(Object(T.a)(K)))),
 				G = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				$ = s("./src/reddit/selectors/activeModalId.ts"),
 				ee = s("./src/reddit/selectors/responsiveSettings.ts"),
 				te = s("./src/reddit/components/EmailVerificationModals/index.m.less"),
 				se = s.n(te);
 			const ae = Object(r.c)({
-					changeEmailModalOpen: Object($.b)(A.a),
-					checkEmailModalOpen: Object($.b)(A.c),
+					changeEmailModalOpen: Object($.b)(R.a),
+					checkEmailModalOpen: Object($.b)(R.c),
 					isEmailPermissionRequired: z.f,
 					isResponsiveSettingsEnabled: ee.a,
-					setEmailModalOpen: Object($.b)(A.g),
-					verifyEmailModalOpen: Object($.b)(A.o)
+					setEmailModalOpen: Object($.b)(R.g),
+					verifyEmailModalOpen: Object($.b)(R.o)
 				}),
 				ne = Object(o.b)(ae, (e, t) => {
 					let {
@@ -416,11 +467,11 @@
 					} = t;
 					return {
 						closeChangeEmailModal: () => {
-							s && e(Object(d.b)()), e(Object(m.g)(A.a))
+							s && e(Object(d.b)()), e(Object(m.g)(R.a))
 						},
 						closeSetEmailModal: () => e(Object(c.b)()),
-						closeVerifyEmailModal: () => e(Object(m.g)(A.o)),
-						toggleCheckEmailModal: () => e(Object(m.i)(A.c))
+						closeVerifyEmailModal: () => e(Object(m.g)(R.o)),
+						toggleCheckEmailModal: () => e(Object(m.i)(R.c))
 					}
 				}),
 				ie = Object(G.t)(),
@@ -472,7 +523,7 @@
 						hk: "27ZUuQ"
 					}),
 					withOverlay: !0
-				}), o && i.a.createElement(L, {
+				}), o && i.a.createElement(I, {
 					email: t,
 					isResponsive: u,
 					onConfirm: h,
@@ -1045,4 +1096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.9fd6fb27f06d0c1af40e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.145c31035ef70e6f15ec.js.map

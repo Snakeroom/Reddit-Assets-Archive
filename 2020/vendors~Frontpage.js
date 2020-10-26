@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Frontpage.e1496db3e8f6708275cb.js
-// Retrieved at 10/19/2020, 6:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Frontpage.e5512e119c2c1a692876.js
+// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(t, e) {
@@ -48,14 +48,14 @@
 						}));
 						return e[1] = e[1] || e[0], e[2] = e[2] || e[0], e[3] = e[3] || e[1], e
 					}, r.prototype._monitorIntersections = function() {
-						this._monitoringIntersections || (this._monitoringIntersections = !0, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (s(t, "resize", this._checkForIntersections, !0), s(e, "scroll", this._checkForIntersections, !0), "MutationObserver" in t && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(e, {
+						this._monitoringIntersections || (this._monitoringIntersections = !0, this.POLL_INTERVAL ? this._monitoringInterval = setInterval(this._checkForIntersections, this.POLL_INTERVAL) : (i(t, "resize", this._checkForIntersections, !0), i(e, "scroll", this._checkForIntersections, !0), "MutationObserver" in t && (this._domObserver = new MutationObserver(this._checkForIntersections), this._domObserver.observe(e, {
 							attributes: !0,
 							childList: !0,
 							characterData: !0,
 							subtree: !0
 						}))))
 					}, r.prototype._unmonitorIntersections = function() {
-						this._monitoringIntersections && (this._monitoringIntersections = !1, clearInterval(this._monitoringInterval), this._monitoringInterval = null, i(t, "resize", this._checkForIntersections, !0), i(e, "scroll", this._checkForIntersections, !0), this._domObserver && (this._domObserver.disconnect(), this._domObserver = null))
+						this._monitoringIntersections && (this._monitoringIntersections = !1, clearInterval(this._monitoringInterval), this._monitoringInterval = null, s(t, "resize", this._checkForIntersections, !0), s(e, "scroll", this._checkForIntersections, !0), this._domObserver && (this._domObserver.disconnect(), this._domObserver = null))
 					}, r.prototype._checkForIntersections = function() {
 						var e = this._rootIsInDom(),
 							o = e ? this._getRootRect() : {
@@ -67,41 +67,41 @@
 								height: 0
 							};
 						this._observationTargets.forEach((function(r) {
-							var s = r.element,
-								i = h(s),
-								a = this._rootContainsTarget(s),
-								d = r.entry,
-								u = e && a && this._computeTargetAndRootIntersection(s, o),
+							var i = r.element,
+								s = a(i),
+								h = this._rootContainsTarget(i),
+								u = r.entry,
+								d = e && h && this._computeTargetAndRootIntersection(i, o),
 								l = r.entry = new n({
 									time: t.performance && performance.now && performance.now(),
-									target: s,
-									boundingClientRect: i,
+									target: i,
+									boundingClientRect: s,
 									rootBounds: o,
-									intersectionRect: u
+									intersectionRect: d
 								});
-							d ? e && a ? this._hasCrossedThreshold(d, l) && this._queuedEntries.push(l) : d && d.isIntersecting && this._queuedEntries.push(l) : this._queuedEntries.push(l)
+							u ? e && h ? this._hasCrossedThreshold(u, l) && this._queuedEntries.push(l) : u && u.isIntersecting && this._queuedEntries.push(l) : this._queuedEntries.push(l)
 						}), this), this._queuedEntries.length && this._callback(this.takeRecords(), this)
 					}, r.prototype._computeTargetAndRootIntersection = function(o, n) {
 						if ("none" != t.getComputedStyle(o).display) {
-							for (var r, s, i, a, u, l, c, _, f = h(o), m = d(o), p = !1; !p;) {
+							for (var r, i, s, h, d, l, c, f, _ = a(o), p = u(o), m = !1; !m;) {
 								var v = null,
-									g = 1 == m.nodeType ? t.getComputedStyle(m) : {};
+									g = 1 == p.nodeType ? t.getComputedStyle(p) : {};
 								if ("none" == g.display) return;
-								if (m == this.root || m == e ? (p = !0, v = n) : m != e.body && m != e.documentElement && "visible" != g.overflow && (v = h(m)), v && (r = v, s = f, i = void 0, a = void 0, u = void 0, l = void 0, c = void 0, _ = void 0, i = Math.max(r.top, s.top), a = Math.min(r.bottom, s.bottom), u = Math.max(r.left, s.left), l = Math.min(r.right, s.right), _ = a - i, !(f = (c = l - u) >= 0 && _ >= 0 && {
-										top: i,
-										bottom: a,
-										left: u,
+								if (p == this.root || p == e ? (m = !0, v = n) : p != e.body && p != e.documentElement && "visible" != g.overflow && (v = a(p)), v && (r = v, i = _, s = void 0, h = void 0, d = void 0, l = void 0, c = void 0, f = void 0, s = Math.max(r.top, i.top), h = Math.min(r.bottom, i.bottom), d = Math.max(r.left, i.left), l = Math.min(r.right, i.right), f = h - s, !(_ = (c = l - d) >= 0 && f >= 0 && {
+										top: s,
+										bottom: h,
+										left: d,
 										right: l,
 										width: c,
-										height: _
+										height: f
 									}))) break;
-								m = d(m)
+								p = u(p)
 							}
-							return f
+							return _
 						}
 					}, r.prototype._getRootRect = function() {
 						var t;
-						if (this.root) t = h(this.root);
+						if (this.root) t = a(this.root);
 						else {
 							var o = e.documentElement,
 								n = e.body;
@@ -131,13 +131,13 @@
 							n = e.isIntersecting ? e.intersectionRatio || 0 : -1;
 						if (o !== n)
 							for (var r = 0; r < this.thresholds.length; r++) {
-								var s = this.thresholds[r];
-								if (s == o || s == n || s < o != s < n) return !0
+								var i = this.thresholds[r];
+								if (i == o || i == n || i < o != i < n) return !0
 							}
 					}, r.prototype._rootIsInDom = function() {
-						return !this.root || a(e, this.root)
+						return !this.root || h(e, this.root)
 					}, r.prototype._rootContainsTarget = function(t) {
-						return a(this.root || e, t)
+						return h(this.root || e, t)
 					}, r.prototype._registerInstance = function() {
 						o.indexOf(this) < 0 && o.push(this)
 					}, r.prototype._unregisterInstance = function() {
@@ -162,27 +162,27 @@
 				}
 
 				function r(t, e) {
-					var o, n, r, s = e || {};
+					var o, n, r, i = e || {};
 					if ("function" != typeof t) throw new Error("callback must be a function");
-					if (s.root && 1 != s.root.nodeType) throw new Error("root must be an Element");
+					if (i.root && 1 != i.root.nodeType) throw new Error("root must be an Element");
 					this._checkForIntersections = (o = this._checkForIntersections.bind(this), n = this.THROTTLE_TIMEOUT, r = null, function() {
 						r || (r = setTimeout((function() {
 							o(), r = null
 						}), n))
-					}), this._callback = t, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(s.rootMargin), this.thresholds = this._initThresholds(s.threshold), this.root = s.root || null, this.rootMargin = this._rootMarginValues.map((function(t) {
+					}), this._callback = t, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(i.rootMargin), this.thresholds = this._initThresholds(i.threshold), this.root = i.root || null, this.rootMargin = this._rootMarginValues.map((function(t) {
 						return t.value + t.unit
 					})).join(" ")
 				}
 
-				function s(t, e, o, n) {
+				function i(t, e, o, n) {
 					"function" == typeof t.addEventListener ? t.addEventListener(e, o, n || !1) : "function" == typeof t.attachEvent && t.attachEvent("on" + e, o)
 				}
 
-				function i(t, e, o, n) {
+				function s(t, e, o, n) {
 					"function" == typeof t.removeEventListener ? t.removeEventListener(e, o, n || !1) : "function" == typeof t.detatchEvent && t.detatchEvent("on" + e, o)
 				}
 
-				function h(t) {
+				function a(t) {
 					var e;
 					try {
 						e = t.getBoundingClientRect()
@@ -204,15 +204,15 @@
 					}
 				}
 
-				function a(t, e) {
+				function h(t, e) {
 					for (var o = e; o;) {
 						if (o == t) return !0;
-						o = d(o)
+						o = u(o)
 					}
 					return !1
 				}
 
-				function d(t) {
+				function u(t) {
 					var e = t.parentNode;
 					return e && 11 == e.nodeType && e.host ? e.host : e
 				}
@@ -221,9 +221,9 @@
 		"./node_modules/lodash/_arraySampleSize.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_baseClamp.js"),
 				r = o("./node_modules/lodash/_copyArray.js"),
-				s = o("./node_modules/lodash/_shuffleSelf.js");
+				i = o("./node_modules/lodash/_shuffleSelf.js");
 			t.exports = function(t, e) {
-				return s(r(t), n(e, 0, t.length))
+				return i(r(t), n(e, 0, t.length))
 			}
 		},
 		"./node_modules/lodash/_arrayShuffle.js": function(t, e, o) {
@@ -248,9 +248,9 @@
 		"./node_modules/lodash/_baseSampleSize.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_baseClamp.js"),
 				r = o("./node_modules/lodash/_shuffleSelf.js"),
-				s = o("./node_modules/lodash/values.js");
+				i = o("./node_modules/lodash/values.js");
 			t.exports = function(t, e) {
-				var o = s(t);
+				var o = i(t);
 				return r(o, n(e, 0, o.length))
 			}
 		},
@@ -266,11 +266,11 @@
 			t.exports = function(t, e) {
 				var o = -1,
 					r = t.length,
-					s = r - 1;
+					i = r - 1;
 				for (e = void 0 === e ? r : e; ++o < e;) {
-					var i = n(o, s),
-						h = t[i];
-					t[i] = t[o], t[o] = h
+					var s = n(o, i),
+						a = t[s];
+					t[s] = t[o], t[o] = a
 				}
 				return t.length = e, t
 			}
@@ -286,18 +286,18 @@
 		"./node_modules/lodash/random.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_baseRandom.js"),
 				r = o("./node_modules/lodash/_isIterateeCall.js"),
-				s = o("./node_modules/lodash/toFinite.js"),
-				i = parseFloat,
-				h = Math.min,
-				a = Math.random;
+				i = o("./node_modules/lodash/toFinite.js"),
+				s = parseFloat,
+				a = Math.min,
+				h = Math.random;
 			t.exports = function(t, e, o) {
-				if (o && "boolean" != typeof o && r(t, e, o) && (e = o = void 0), void 0 === o && ("boolean" == typeof e ? (o = e, e = void 0) : "boolean" == typeof t && (o = t, t = void 0)), void 0 === t && void 0 === e ? (t = 0, e = 1) : (t = s(t), void 0 === e ? (e = t, t = 0) : e = s(e)), t > e) {
-					var d = t;
-					t = e, e = d
+				if (o && "boolean" != typeof o && r(t, e, o) && (e = o = void 0), void 0 === o && ("boolean" == typeof e ? (o = e, e = void 0) : "boolean" == typeof t && (o = t, t = void 0)), void 0 === t && void 0 === e ? (t = 0, e = 1) : (t = i(t), void 0 === e ? (e = t, t = 0) : e = i(e)), t > e) {
+					var u = t;
+					t = e, e = u
 				}
 				if (o || t % 1 || e % 1) {
-					var u = a();
-					return h(t + u * (e - t + i("1e-" + ((u + "").length - 1))), e)
+					var d = h();
+					return a(t + d * (e - t + s("1e-" + ((d + "").length - 1))), e)
 				}
 				return n(t, e)
 			}
@@ -305,37 +305,77 @@
 		"./node_modules/lodash/sampleSize.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_arraySampleSize.js"),
 				r = o("./node_modules/lodash/_baseSampleSize.js"),
-				s = o("./node_modules/lodash/isArray.js"),
-				i = o("./node_modules/lodash/_isIterateeCall.js"),
-				h = o("./node_modules/lodash/toInteger.js");
+				i = o("./node_modules/lodash/isArray.js"),
+				s = o("./node_modules/lodash/_isIterateeCall.js"),
+				a = o("./node_modules/lodash/toInteger.js");
 			t.exports = function(t, e, o) {
-				return e = (o ? i(t, e, o) : void 0 === e) ? 1 : h(e), (s(t) ? n : r)(t, e)
+				return e = (o ? s(t, e, o) : void 0 === e) ? 1 : a(e), (i(t) ? n : r)(t, e)
 			}
 		},
 		"./node_modules/lodash/shuffle.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_arrayShuffle.js"),
 				r = o("./node_modules/lodash/_baseShuffle.js"),
-				s = o("./node_modules/lodash/isArray.js");
+				i = o("./node_modules/lodash/isArray.js");
 			t.exports = function(t) {
-				return (s(t) ? n : r)(t)
+				return (i(t) ? n : r)(t)
 			}
 		},
 		"./node_modules/lodash/times.js": function(t, e, o) {
 			var n = o("./node_modules/lodash/_baseTimes.js"),
 				r = o("./node_modules/lodash/_castFunction.js"),
-				s = o("./node_modules/lodash/toInteger.js"),
-				i = 9007199254740991,
-				h = 4294967295,
-				a = Math.min;
+				i = o("./node_modules/lodash/toInteger.js"),
+				s = 9007199254740991,
+				a = 4294967295,
+				h = Math.min;
 			t.exports = function(t, e) {
-				if ((t = s(t)) < 1 || t > i) return [];
-				var o = h,
-					d = a(t, h);
-				e = r(e), t -= h;
-				for (var u = n(d, e); ++o < t;) e(o);
-				return u
+				if ((t = i(t)) < 1 || t > s) return [];
+				var o = a,
+					u = h(t, a);
+				e = r(e), t -= a;
+				for (var d = n(u, e); ++o < t;) e(o);
+				return d
 			}
+		},
+		"./node_modules/react-uid/dist/es2015/hooks.js": function(t, e, o) {
+			"use strict";
+			o.d(e, "a", (function() {
+				return u
+			}));
+			var n = o("./node_modules/react/index.js"),
+				r = function() {
+					var t = 1,
+						e = new WeakMap,
+						o = function(n, r) {
+							return "number" == typeof n || "string" == typeof n ? r ? "idx-" + r : "val-" + n : e.has(n) ? "uid" + e.get(n) : (e.set(n, t++), o(n))
+						};
+					return o
+				},
+				i = (r(), function(t) {
+					return void 0 === t && (t = ""), {
+						value: 1,
+						prefix: t,
+						uid: r()
+					}
+				}),
+				s = i(),
+				a = n.createContext(i()),
+				h = function() {
+					return n.useState((t = n.useContext(a), {
+						uid: o = function(t) {
+							return t ? t.prefix : ""
+						}(e = t || s) + function(t) {
+							return t.value++
+						}(e),
+						gen: function(t) {
+							return o + e.uid(t)
+						}
+					}));
+					var t, e, o
+				},
+				u = function() {
+					return h()[0].gen
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Frontpage.e1496db3e8f6708275cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Frontpage.e5512e119c2c1a692876.js.map
