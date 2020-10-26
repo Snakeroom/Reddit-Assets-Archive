@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f74b8fbbca48c836df58.js
-// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.78f161df558998969a58.js
+// Retrieved at 10/26/2020, 4:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -20565,14 +20565,16 @@
 				failedStateIndicator: "_3wJPsvksvDytrEsrrZd1vI",
 				metaRow: "NjfRmSRZrEkWYNAACYBql",
 				replayIcon: "_17pwQtUdmIHAeybqNegNzP",
+				metaRowText: "qlCreM7NlHbkzV-xkEGE7",
 				recurrenceRules: "rX2aiRDwgPF22x70hQxqp",
+				parametricMetaData: "_3mlGpRO1Z1gZJkATQcRNHO",
 				pencilIcon: "z5A_DxaYn2G2TQSSQCpi2"
 			}
 		},
 		"./src/reddit/components/RecurringPostList/RecurringPost/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return M
+				return R
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -20581,116 +20583,135 @@
 				i = s("./src/lib/classNames/index.ts"),
 				d = s("./src/reddit/actions/modal.ts"),
 				c = s("./src/reddit/actions/scheduledPosts/index.ts"),
-				l = s("./src/reddit/components/AuthorLink/index.tsx"),
-				m = s("./src/reddit/components/Thumbnail/index.tsx"),
-				u = s("./src/reddit/components/RecurringPostList/Thumbnail/index.m.less"),
-				p = s.n(u);
-			var b = e => {
+				l = s("./src/lib/constants/index.ts"),
+				m = s("./src/reddit/components/AuthorLink/index.tsx"),
+				u = s("./src/reddit/components/Thumbnail/index.tsx"),
+				p = s("./src/reddit/components/RecurringPostList/Thumbnail/index.m.less"),
+				b = s.n(p);
+			var h = e => {
 					let {
 						post: t
 					} = e;
 					return o.a.createElement("div", {
-						className: p.a.thumbnailContainer
-					}, o.a.createElement(m.a, {
+						className: b.a.thumbnailContainer
+					}, o.a.createElement(u.a, {
 						post: t,
-						contentTypeClassName: p.a.placeholderIcon
+						contentTypeClassName: b.a.placeholderIcon
 					}))
 				},
-				h = s("./src/reddit/components/ScheduledPost/index.tsx"),
-				g = s("./src/reddit/models/ScheduledPost/index.ts"),
-				f = s("./node_modules/reselect/es/index.js"),
-				x = s("./src/reddit/components/RecurringPostList/RecurringPost/ContentMeta/index.m.less"),
-				v = s.n(x);
+				g = s("./src/reddit/components/ScheduledPost/index.tsx"),
+				f = s("./src/reddit/models/ScheduledPost/index.ts"),
+				x = s("./node_modules/reselect/es/index.js"),
+				v = s("./src/reddit/components/RecurringPostList/RecurringPost/ContentMeta/index.m.less"),
+				E = s.n(v);
 			const {
-				fbt: E
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = Object(f.c)({
+				fbt: _
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = Object(x.c)({
 				media: (e, t) => {
 					let {
 						scheduledPost: s
 					} = t;
-					return Object.assign(Object.assign({}, h.b), {
+					return Object.assign(Object.assign({}, g.b), {
 						isNSFW: s.isNsfw,
 						title: s.title
 					})
 				}
 			});
-			var C = Object(a.b)(_)(e => o.a.createElement("div", {
-					className: Object(i.a)(v.a.contentRow, e.className)
-				}, o.a.createElement(b, {
-					post: e.media
-				}), o.a.createElement("div", {
-					className: v.a.contentRowMeta
-				}, o.a.createElement("div", {
-					className: v.a.title
-				}, e.scheduledPost.title), o.a.createElement("div", {
-					className: v.a.ownerNameContainer
-				}, Object(g.m)(e.scheduledPost.owner) && o.a.createElement("span", {
-					className: v.a.ownerName
-				}, E._("by {username}", [E._param("username", o.a.createElement(l.a, {
-					author: e.scheduledPost.owner.name,
-					isUnstyled: !0
-				}, e.scheduledPost.owner.prefixedName))], {
-					hk: "FAgpK"
-				})), e.children)))),
-				O = s("./src/reddit/components/ScheduledPost/OverflowMenu/withOverflowMenu.tsx");
-			var k = Object(O.a)(e => o.a.createElement(o.a.Fragment, null, e.renderOverflowMenu())),
-				y = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				j = s("./src/reddit/helpers/scheduledPosts/index.ts"),
-				S = s("./src/reddit/helpers/trackers/scheduledPosts.ts"),
-				w = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				I = s("./src/reddit/icons/svgs/Replay/index.tsx"),
-				T = s("./src/reddit/components/RecurringPostList/RecurringPost/index.m.less"),
-				N = s.n(T);
+			var O = Object(a.b)(C)(e => {
+					const {
+						scheduledPost: t
+					} = e, {
+						isPostAsMetaMod: s,
+						owner: n
+					} = t, a = s ? l.k : Object(f.m)(n) ? n.name : void 0;
+					return o.a.createElement("div", {
+						className: Object(i.a)(E.a.contentRow, e.className)
+					}, o.a.createElement(h, {
+						post: e.media
+					}), o.a.createElement("div", {
+						className: E.a.contentRowMeta
+					}, o.a.createElement("div", {
+						className: E.a.title
+					}, e.scheduledPost.title), o.a.createElement("div", {
+						className: E.a.ownerNameContainer
+					}, a && o.a.createElement("span", {
+						className: E.a.ownerName
+					}, _._("by {username}", [_._param("username", o.a.createElement(m.a, {
+						author: a,
+						isUnstyled: !0
+					}, "u/".concat(a)))], {
+						hk: "FAgpK"
+					})), e.children)))
+				}),
+				k = s("./src/reddit/components/ScheduledPost/OverflowMenu/withOverflowMenu.tsx");
+			var y = Object(k.a)(e => o.a.createElement(o.a.Fragment, null, e.renderOverflowMenu())),
+				j = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				S = s("./src/reddit/helpers/scheduledPosts/index.ts"),
+				w = s("./src/reddit/helpers/trackers/scheduledPosts.ts"),
+				I = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
+				T = s("./src/reddit/icons/svgs/Replay/index.tsx"),
+				N = s("./src/reddit/components/RecurringPostList/RecurringPost/index.m.less"),
+				P = s.n(N);
 			const {
-				fbt: P
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = "RECURRING_POSTS__EDIT", R = Object(a.b)(null, (e, t) => ({
+				fbt: M
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = "RECURRING_POSTS__EDIT", L = Object(a.b)(null, (e, t) => ({
 				editRecurringPostRequested: () => {
 					e(Object(c.c)({
 						id: t.item.id,
 						subredditId: t.item.subreddit.id
-					})), e((e, t) => Object(r.a)(Object(S.g)()(t()))), e(Object(d.i)(M))
+					})), e((e, t) => Object(r.a)(Object(w.g)()(t()))), e(Object(d.i)(R))
 				},
 				onOpenOverflow: () => {
-					e((e, t) => Object(r.a)(Object(S.l)(!0)(t())))
+					e((e, t) => Object(r.a)(Object(w.l)(!0)(t())))
 				},
 				onUpdateMetadata: s => e(Object(c.b)(s, t.item))
 			}));
-			class L extends o.a.PureComponent {
+			class A extends o.a.PureComponent {
 				render() {
 					const {
 						className: e,
 						item: t,
 						editRecurringPostRequested: s
-					} = this.props, n = Object(j.e)(t), a = t.state === g.e.FAILED;
+					} = this.props, n = Object(S.e)(t), a = t.state === f.e.FAILED, {
+						owner: r
+					} = t, d = Object(f.m)(r) && r.prefixedName;
 					return o.a.createElement("div", {
-						className: Object(i.a)(e, N.a.container)
+						className: Object(i.a)(e, P.a.container)
 					}, a && o.a.createElement("div", {
-						className: N.a.failedStateIndicator
-					}, P._("Recurring post failed to submit. {Link: update recurring scheduled post} to reset", [P._param("Link: update recurring scheduled post", o.a.createElement(y.n, {
+						className: P.a.failedStateIndicator
+					}, M._("Recurring post failed to submit. {Link: update recurring scheduled post} to reset", [M._param("Link: update recurring scheduled post", o.a.createElement(j.n, {
 						onClick: s
 					}, "Update schedule"))], {
 						hk: "3Uitas"
 					})), o.a.createElement("div", {
-						className: N.a.metaRow
-					}, o.a.createElement(I.a, {
-						className: N.a.replayIcon
+						className: P.a.metaRow
+					}, o.a.createElement(T.a, {
+						className: P.a.replayIcon
 					}), o.a.createElement("div", {
-						className: N.a.recurrenceRules,
+						className: P.a.metaRowText
+					}, o.a.createElement("div", {
+						className: P.a.recurrenceRules,
 						title: n
-					}, n), o.a.createElement("button", {
+					}, n), o.a.createElement("div", null, M._("Scheduled by {=[post owner]}", [M._param("=[post owner]", o.a.createElement("span", {
+						className: P.a.parametricMetaData
+					}, M._("{post owner}", [M._param("post owner", d)], {
+						hk: "25fi1G"
+					})))], {
+						hk: "36vTyl"
+					}))), o.a.createElement("button", {
 						onClick: s
-					}, o.a.createElement(w.a, {
-						className: N.a.pencilIcon
-					}))), o.a.createElement(C, {
+					}, o.a.createElement(I.a, {
+						className: P.a.pencilIcon
+					}))), o.a.createElement(O, {
 						scheduledPost: t
-					}, o.a.createElement(k, {
+					}, o.a.createElement(y, {
 						scheduledPost: t,
 						onUpdateMetadata: this.props.onUpdateMetadata,
 						onOpenOverflow: this.props.onOpenOverflow
 					})))
 				}
 			}
-			t.b = R(L)
+			t.b = L(A)
 		},
 		"./src/reddit/components/RecurringPostList/Thumbnail/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -21464,39 +21485,41 @@
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
-				a = s("./src/reddit/components/AuthorLink/index.tsx"),
-				r = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				i = s("./src/reddit/controls/MetaSeparator/index.tsx"),
-				d = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
-				c = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				l = s("./src/reddit/models/ScheduledPost/index.ts"),
-				m = s("./src/reddit/components/ScheduledPost/MetaLine/index.m.less"),
-				u = s.n(m);
-			class p extends o.a.PureComponent {
+				a = s("./src/lib/constants/index.ts"),
+				r = s("./src/reddit/components/AuthorLink/index.tsx"),
+				i = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				d = s("./src/reddit/controls/MetaSeparator/index.tsx"),
+				c = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
+				l = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				m = s("./src/reddit/models/ScheduledPost/index.ts"),
+				u = s("./src/reddit/components/ScheduledPost/MetaLine/index.m.less"),
+				p = s.n(u);
+			class b extends o.a.PureComponent {
 				render() {
-					if (!Object(l.n)(this.props.subreddit)) return null;
+					if (!Object(m.n)(this.props.subreddit)) return null;
 					const {
 						isModDistinguished: e,
-						subreddit: t,
-						owner: s,
-						isSticky: n
-					} = this.props;
+						isPostAsMetaMod: t,
+						subreddit: s,
+						owner: n,
+						isSticky: u
+					} = this.props, b = t ? a.k : Object(m.m)(n) ? n.name : void 0;
 					return o.a.createElement("span", {
-						className: u.a.content
-					}, o.a.createElement(r.a, {
-						to: t.path
-					}, t.prefixedName), Object(l.m)(s) && o.a.createElement(o.a.Fragment, null, o.a.createElement(i.a, null), o.a.createElement(a.a, {
-						className: u.a.author,
-						author: s.name,
+						className: p.a.content
+					}, o.a.createElement(i.a, {
+						to: s.path
+					}, s.prefixedName), b && o.a.createElement(o.a.Fragment, null, o.a.createElement(d.a, null), o.a.createElement(r.a, {
+						className: p.a.author,
+						author: b,
 						isUnstyled: !0
-					}, s.prefixedName)), e && o.a.createElement(c.a, {
-						className: u.a.modIcon
-					}), n && o.a.createElement(d.a, {
-						className: u.a.stickyIcon
+					}, "u/".concat(b))), e && o.a.createElement(l.a, {
+						className: p.a.modIcon
+					}), u && o.a.createElement(c.a, {
+						className: p.a.stickyIcon
 					}))
 				}
 			}
-			t.a = p
+			t.a = b
 		},
 		"./src/reddit/components/ScheduledPost/OverflowMenu/withOverflowMenu.tsx": function(e, t, s) {
 			"use strict";
@@ -21639,14 +21662,15 @@
 			e.exports = {
 				container: "_1YrhJ0z1RfTXg7jHYgApSr",
 				error: "_2_f_ecVpbx4yoMzazJYkDP",
-				retryButton: "_1KbjdUJVdbZQOJN8d6LTsX"
+				retryButton: "_1KbjdUJVdbZQOJN8d6LTsX",
+				parametricMetaData: "_2x3oXUTdLAKAob3BYLRkmH"
 			}
 		},
 		"./src/reddit/components/ScheduledPost/TopMetaLine/TemporalMetaLine/index.m.less": function(e, t, s) {
 			e.exports = {
 				container: "qDE3oDok1392-t8IDOBfk",
 				clock: "_2sfIhl6E6vfZCwxx54EUNB",
-				timeMetaData: "_3ZqmD_fQ-lxmvQJVOuIgP1"
+				parametricMetaData: "_3bAfM2inJTjD3ZXNzO5nE5"
 			}
 		},
 		"./src/reddit/components/ScheduledPost/index.m.less": function(e, t, s) {
@@ -21817,9 +21841,14 @@
 					this.props.onViewFailedPost()
 				}
 				render() {
+					const {
+						scheduledPost: e
+					} = this.props, {
+						owner: t
+					} = e, s = Object(D.m)(t) && t.prefixedName;
 					return a.a.createElement("div", {
 						className: $.a.container
-					}, a.a.createElement(Z.a, {
+					}, a.a.createElement("div", null, a.a.createElement(Z.a, {
 						className: $.a.error
 					}), ee._("Post failed to submit! Please {=retry}", [ee._param("=retry", a.a.createElement("button", {
 						className: $.a.retryButton,
@@ -21828,7 +21857,13 @@
 						hk: "hER94"
 					})))], {
 						hk: "4yOnl8"
-					}))
+					})), a.a.createElement("div", null, ee._("Scheduled by {=[post owner]}", [ee._param("=[post owner]", a.a.createElement("span", {
+						className: $.a.parametricMetaData
+					}, ee._("{post owner}", [ee._param("post owner", s)], {
+						hk: "25fi1G"
+					})))], {
+						hk: "36vTyl"
+					})))
 				}
 			}
 			var se = Object(r.b)(null, (e, t) => {
@@ -21855,17 +21890,28 @@
 			};
 			class ce extends a.a.PureComponent {
 				render() {
+					const {
+						scheduledPost: e
+					} = this.props, {
+						owner: t
+					} = e, s = Object(D.m)(t) && t.prefixedName;
 					return a.a.createElement("div", {
 						className: re.a.container
 					}, a.a.createElement(oe.a, {
 						className: re.a.clock
-					}), ie._("This post is scheduled for {=[time]}", [ie._param("=[time]", a.a.createElement("span", {
-						className: re.a.timeMetaData
-					}, ie._("{time}", [ie._param("time", de(this.props.scheduledPost))], {
+					}), a.a.createElement("div", null, a.a.createElement("div", null, ie._("This post is scheduled for {=[time]}", [ie._param("=[time]", a.a.createElement("span", {
+						className: re.a.parametricMetaData
+					}, ie._("{time}", [ie._param("time", de(e))], {
 						hk: "JrMs3"
 					})))], {
 						hk: "4gFrnr"
-					}))
+					})), a.a.createElement("div", null, ie._("Scheduled by {=[post owner]}", [ie._param("=[post owner]", a.a.createElement("span", {
+						className: re.a.parametricMetaData
+					}, ie._("{post owner}", [ie._param("post owner", s)], {
+						hk: "25fi1G"
+					})))], {
+						hk: "36vTyl"
+					}))))
 				}
 			}
 			var le = ce;
@@ -22027,6 +22073,7 @@
 						flair: t
 					})), a.a.createElement(X.a, {
 						isModDistinguished: s.isModDistinguished,
+						isPostAsMetaMod: s.isPostAsMetaMod,
 						isSticky: !!s.sticky && "NONE" !== s.sticky,
 						subreddit: s.subreddit,
 						owner: s.owner
@@ -31649,4 +31696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f74b8fbbca48c836df58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.78f161df558998969a58.js.map

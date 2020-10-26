@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.ee15bde204adb0167bb2.js
-// Retrieved at 10/21/2020, 3:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.e99708a38bfb37e714e3.js
+// Retrieved at 10/26/2020, 4:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RecurringPostList-EditModal"], {
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, n) {
@@ -551,6 +551,7 @@
 						flair: r
 					})), o.a.createElement(x.a, {
 						isModDistinguished: e.isModDistinguished,
+						isPostAsMetaMod: e.isPostAsMetaMod,
 						isSticky: !!e.sticky && "NONE" !== e.sticky,
 						subreddit: e.subreddit,
 						owner: e.owner
@@ -1337,4 +1338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.ee15bde204adb0167bb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.e99708a38bfb37e714e3.js.map
