@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.15382075d4632ba15a4e.js
-// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.2d6f4024a64452bdfab4.js
+// Retrieved at 10/27/2020, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/lib/humanizeDate/index.ts": function(e, a, t) {
@@ -713,7 +713,7 @@
 						requestPurchaseCatalog: t,
 						sendEvent: n
 					} = this.props;
-					e.length || a || t(this.correlationId);
+					e.length || a || t(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
 					const s = d.Bb.PREMIUM;
 					w.c.has(s) && (n(Object(x.l)(j.TimerType.InApp, w.c.end(s))), n(Object(x.k)())), Object(h.a)()
 				}
@@ -842,4 +842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.15382075d4632ba15a4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.2d6f4024a64452bdfab4.js.map
