@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.09628854d9c68d692eb2.js
-// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0c6045a64568f41eef99.js
+// Retrieved at 10/27/2020, 3:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9749,7 +9749,7 @@
 				i = () => null;
 			t.a = Object(n.a)({
 				ErrorComponent: i,
-				getComponent: () => Object(o.a)(() => Promise.all([s.e("vendors~ReportFlow"), s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlow.tsx"))).then(e => e.default),
+				getComponent: () => Object(o.a)(() => Promise.all([s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlow.tsx"))).then(e => e.default),
 				LoadingComponent: i
 			})
 		},
@@ -9761,7 +9761,7 @@
 			const r = () => null;
 			t.a = Object(n.a)({
 				ErrorComponent: r,
-				getComponent: () => Object(o.a)(() => Promise.all([s.e("vendors~ReportFlow"), s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNew.tsx"))).then(e => e.default),
+				getComponent: () => Object(o.a)(() => Promise.all([s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNew.tsx"))).then(e => e.default),
 				LoadingComponent: r
 			})
 		},
@@ -14860,4 +14860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.09628854d9c68d692eb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0c6045a64568f41eef99.js.map

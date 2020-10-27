@@ -1,24 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.5a7209a69910a1cb05d0.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.6e3558392f4243b9033d.js
+// Retrieved at 10/27/2020, 3:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
-		"./src/reddit/components/CrisisFlow/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return a
-			}));
-			var s = n("./src/higherOrderComponents/makeAsync.tsx"),
-				r = n("./src/lib/loadWithRetries/index.ts");
-			const a = {
-					backgroundColor: n("./src/reddit/constants/colors.ts").a.overlayReportFlow
-				},
-				o = () => null;
-			t.b = Object(s.a)({
-				ErrorComponent: o,
-				getComponent: () => Object(r.a)(() => n.e("CrisisFlow").then(n.bind(null, "./src/reddit/components/CrisisFlow/_CrisisFlow.tsx"))).then(e => e.default),
-				LoadingComponent: o
-			})
-		},
 		"./src/reddit/components/ReportPage/AdditionalInfoInput/index.m.less": function(e, t, n) {
 			e.exports = {
 				AdditionalInfoCheckbox: "Sn4k24mpI2Iqd0y6hRfHR",
@@ -165,29 +148,29 @@
 				}, u.fbt._("Redirect back to your home in Reddit universe", null, {
 					hk: "1pMLva"
 				})))),
-				x = n("./src/reddit/components/ReportPage/FinalPage/index.m.less"),
-				y = n.n(x);
-			const P = c.a.div("OptionHolder", y.a),
-				S = c.a.div("OptionHeader", y.a),
-				_ = c.a.div("OptionDescription", y.a),
+				y = n("./src/reddit/components/ReportPage/FinalPage/index.m.less"),
+				x = n.n(y);
+			const P = c.a.div("OptionHolder", x.a),
+				S = c.a.div("OptionHeader", x.a),
+				_ = c.a.div("OptionDescription", x.a),
 				v = c.a.header("Header", p.a),
 				k = c.a.footer("Footer", p.a),
-				F = c.a.div("Description", p.a),
-				O = c.a.a("Link", p.a),
+				O = c.a.div("Description", p.a),
+				F = c.a.a("Link", p.a),
 				w = c.a.a("RedirectToRedditLink", p.a),
 				U = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse";
 			class I extends r.a.Component {
 				constructor() {
 					super(...arguments), this.renderAbuseOfReportButtonOption = () => r.a.createElement(P, null, r.a.createElement(S, null, u.fbt._("Turn off free-form reports", null, {
 						hk: "2yXM3i"
-					})), r.a.createElement(_, null, u.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit's reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [u.fbt._param("=visit the Help Center", r.a.createElement(O, {
+					})), r.a.createElement(_, null, u.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit's reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [u.fbt._param("=visit the Help Center", r.a.createElement(F, {
 						target: "_blank",
 						href: U
 					}, u.fbt._("visit the Help Center", null, {
 						hk: "1bc2jS"
 					})))], {
 						hk: "3sQZ0g"
-					}))), this.renderWithoutOptions = () => r.a.createElement(r.a.Fragment, null, r.a.createElement(F, null, u.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
+					}))), this.renderWithoutOptions = () => r.a.createElement(r.a.Fragment, null, r.a.createElement(O, null, u.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
 						hk: "2tRkyQ"
 					})), r.a.createElement(k, null, r.a.createElement(w, {
 						href: "/"
@@ -203,7 +186,7 @@
 						className: e.className
 					}, r.a.createElement(v, null, u.fbt._("Thank you for your report.", null, {
 						hk: "2l8iOp"
-					})), e.chosenRule.isAbuseOfReportButton ? r.a.createElement(r.a.Fragment, null, r.a.createElement(F, null, u.fbt._("We've received your report. Here are some things you can do:", null, {
+					})), e.chosenRule.isAbuseOfReportButton ? r.a.createElement(r.a.Fragment, null, r.a.createElement(O, null, u.fbt._("We've received your report. Here are some things you can do:", null, {
 						hk: "12EkwP"
 					})), this.renderAbuseOfReportButtonOption()) : this.renderWithoutOptions())
 				}
@@ -599,14 +582,14 @@
 				Ee = n("./src/reddit/helpers/reportPage/index.ts"),
 				be = n("./src/reddit/layout/row/Inline/index.tsx"),
 				Re = n("./src/reddit/models/RulesSequence/index.ts"),
-				xe = n("./src/reddit/components/ReportPage/FirstPage/index.m.less"),
-				ye = n.n(xe);
+				ye = n("./src/reddit/components/ReportPage/FirstPage/index.m.less"),
+				xe = n.n(ye);
 			const {
 				fbt: Pe
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Se = c.a.header("Header", p.a), _e = c.a.wrapped(be.a, "Footer", ye.a), ve = c.a.wrapped(fe.i, "SubmitButton", ye.a), ke = Object(o.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Se = c.a.header("Header", p.a), _e = c.a.wrapped(be.a, "Footer", xe.a), ve = c.a.wrapped(fe.i, "SubmitButton", xe.a), ke = Object(o.c)({
 				initialReason: e => e.reportPage.initialReason
 			});
-			class Fe extends r.a.Component {
+			class Oe extends r.a.Component {
 				constructor(e) {
 					super(e), this.onSubmit = () => {
 						this.setState({
@@ -654,7 +637,7 @@
 					}, r.a.createElement(Se, null, Pe._("How can we help?", null, {
 						hk: "1iOApB"
 					})), t.map((e, t) => this.renderRulesSection(e, t)), r.a.createElement(_e, null, r.a.createElement("div", {
-						className: ye.a.contentPolicyHolder
+						className: xe.a.contentPolicyHolder
 					}, r.a.createElement(T.a, null)), r.a.createElement(ve, {
 						onClick: this.onSubmit,
 						disabled: !e.isReasonChosen
@@ -692,7 +675,7 @@
 					}))
 				}
 			}
-			var Oe = Object(a.b)(ke)(Fe),
+			var Fe = Object(a.b)(ke)(Oe),
 				we = n("./src/reddit/contexts/ApiContext.tsx"),
 				Ue = n("./src/reddit/endpoints/accounts/index.ts"),
 				Ie = n("./src/reddit/endpoints/post/index.tsx"),
@@ -882,7 +865,7 @@
 					} = this, {
 						chosenReasonPayload: n
 					} = t;
-					return r.a.createElement(Oe, {
+					return r.a.createElement(Fe, {
 						chosenReasonPayload: n,
 						dirtyFields: t.dirtyFields,
 						fieldsValidity: t.fieldsValidity,
@@ -902,4 +885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.5a7209a69910a1cb05d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.6e3558392f4243b9033d.js.map

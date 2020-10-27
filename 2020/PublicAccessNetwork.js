@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.61a4afec61de9ae962ca.js
-// Retrieved at 10/27/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.78de60e704e3139cb743.js
+// Retrieved at 10/27/2020, 3:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, a) {
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "117d163-production"
+					SENTRY_RELEASE_VERSION: "b06c212-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -2081,7 +2081,7 @@
 				r = () => null;
 			t.a = Object(s.a)({
 				ErrorComponent: r,
-				getComponent: () => Object(n.a)(() => Promise.all([a.e("vendors~ReportFlow"), a.e("ReportFlow~ReportPage"), a.e("ReportFlow")]).then(a.bind(null, "./src/reddit/components/ReportFlow/_ReportFlow.tsx"))).then(e => e.default),
+				getComponent: () => Object(n.a)(() => Promise.all([a.e("ReportFlow~ReportPage"), a.e("ReportFlow")]).then(a.bind(null, "./src/reddit/components/ReportFlow/_ReportFlow.tsx"))).then(e => e.default),
 				LoadingComponent: r
 			})
 		},
@@ -5863,4 +5863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.61a4afec61de9ae962ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.78de60e704e3139cb743.js.map

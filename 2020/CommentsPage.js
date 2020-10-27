@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.3c38367f430ea66fe6c6.js
-// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.03a6ef5cddfa1d240685.js
+// Retrieved at 10/27/2020, 3:30:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -11926,7 +11926,7 @@
 				i = () => null;
 			t.a = Object(n.a)({
 				ErrorComponent: i,
-				getComponent: () => Object(o.a)(() => Promise.all([s.e("vendors~ReportFlow"), s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlow.tsx"))).then(e => e.default),
+				getComponent: () => Object(o.a)(() => Promise.all([s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlow.tsx"))).then(e => e.default),
 				LoadingComponent: i
 			})
 		},
@@ -11938,7 +11938,7 @@
 			const r = () => null;
 			t.a = Object(n.a)({
 				ErrorComponent: r,
-				getComponent: () => Object(o.a)(() => Promise.all([s.e("vendors~ReportFlow"), s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNew.tsx"))).then(e => e.default),
+				getComponent: () => Object(o.a)(() => Promise.all([s.e("ReportFlow~ReportPage"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNew.tsx"))).then(e => e.default),
 				LoadingComponent: r
 			})
 		},
@@ -18881,4 +18881,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3c38367f430ea66fe6c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.03a6ef5cddfa1d240685.js.map
