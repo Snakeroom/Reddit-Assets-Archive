@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f9b5f469e1e5f66285c8.js
-// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.90b28b49d07ca2dd85d1.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
-		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, n) {
+		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
 				return u
@@ -42,9 +42,10 @@
 			const m = (e, t, n) => (function() {
 				let s = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = h(o.target, o.currentTarget);
-					n && t && (b(o.target, o.currentTarget, p.anchors) ? r && n(t(e, r)) : r && n(n => {
-						const s = t(e, r)(n);
+					const r = h(o.target, o.currentTarget),
+						a = x(o.target, o.currentTarget);
+					r && n && t && (b(o.target, o.currentTarget, p.anchors) ? n(t(e, r, a)) : n(n => {
+						const s = t(e, r, a)(n);
 						let o;
 						if (s && s.actionInfo) {
 							const e = s.actionInfo,
@@ -87,7 +88,8 @@
 				h = (e, t) => {
 					const n = e.dataset.clickId;
 					return n || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
-				}
+				},
+				x = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && x(e.parentElement, t))
 		},
 		"./src/lib/intersectionObserver/index.ts": function(e, t, n) {
 			"use strict";
@@ -563,7 +565,7 @@
 				o = n.n(s),
 				r = n("./node_modules/react-redux/es/index.js"),
 				a = n("./src/lib/addQueryParams/index.ts"),
-				i = n("./src/higherOrderComponents/withClickTracking.tsx"),
+				i = n("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				d = n("./src/reddit/helpers/overlay/index.ts"),
 				c = function(e, t) {
 					var n = {};
@@ -2378,4 +2380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f9b5f469e1e5f66285c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.90b28b49d07ca2dd85d1.js.map

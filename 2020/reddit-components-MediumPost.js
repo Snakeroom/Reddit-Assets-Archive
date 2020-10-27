@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.26c0365e9f595d57f898.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.90a052dd17fe3e55bbd9.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -10,7 +10,7 @@
 				return n(e) + t
 			}
 		},
-		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
+		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
 				return m
@@ -50,9 +50,10 @@
 			const u = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = x(o.target, o.currentTarget);
-					s && t && (b(o.target, o.currentTarget, p.anchors) ? r && s(t(e, r)) : r && s(s => {
-						const n = t(e, r)(s);
+					const r = x(o.target, o.currentTarget),
+						i = h(o.target, o.currentTarget);
+					r && s && t && (b(o.target, o.currentTarget, p.anchors) ? s(t(e, r, i)) : s(s => {
+						const n = t(e, r, i)(s);
 						let o;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -95,7 +96,8 @@
 				x = (e, t) => {
 					const s = e.dataset.clickId;
 					return s || (e === t ? null : !!e.parentElement && x(e.parentElement, t))
-				}
+				},
+				h = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && h(e.parentElement, t))
 		},
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
 			"use strict";
@@ -1369,7 +1371,7 @@
 				h = s("./src/reddit/selectors/posts.ts"),
 				v = s("./src/reddit/selectors/video.ts"),
 				f = s("./src/lib/classNames/index.ts"),
-				g = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				g = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				y = s("./src/reddit/components/PostContainer/index.m.less"),
 				C = s.n(y);
 			const O = Object(r.c)({
@@ -2662,4 +2664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.26c0365e9f595d57f898.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.90a052dd17fe3e55bbd9.js.map

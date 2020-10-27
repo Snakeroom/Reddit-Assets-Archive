@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.b1583277f990a000fe79.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.abad2852e40e011a15e8.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -777,7 +777,7 @@
 					}
 				},
 				N = Object(r.b)(L, S, (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), n), {
-					postClickEvent: (e, t, r) => Object(f.f)(e, t, r, n.listingKey, n.hostPostId, n.listingBelowVariant),
+					postClickEventFactory: (e, t) => Object(f.f)(e, t, "post", n.listingKey, n.hostPostId, n.listingBelowVariant),
 					postComponentForLayout: e => Object(p.b)(Object.assign({}, e))
 				}));
 			t.a = e => Object(u.c)(j(N(e)))
@@ -1085,4 +1085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.b1583277f990a000fe79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.abad2852e40e011a15e8.js.map

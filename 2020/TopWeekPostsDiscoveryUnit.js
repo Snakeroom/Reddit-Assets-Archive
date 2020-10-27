@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2af478d485cbc806e8ab.js
-// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f3ea72e1f2ce9bb2958e.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
-		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
+		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
 				return m
@@ -42,9 +42,10 @@
 			const u = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return r => {
-					const o = h(r.target, r.currentTarget);
-					s && t && (p(r.target, r.currentTarget, b.anchors) ? o && s(t(e, o)) : o && s(s => {
-						const n = t(e, o)(s);
+					const o = h(r.target, r.currentTarget),
+						i = x(r.target, r.currentTarget);
+					o && s && t && (p(r.target, r.currentTarget, b.anchors) ? s(t(e, o, i)) : s(s => {
+						const n = t(e, o, i)(s);
 						let r;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -87,7 +88,8 @@
 				h = (e, t) => {
 					const s = e.dataset.clickId;
 					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
-				}
+				},
+				x = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && x(e.parentElement, t))
 		},
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -235,9 +237,9 @@
 					}), p)
 				},
 				_ = s("./node_modules/fbt/lib/FbtPublic.js"),
-				N = s("./src/lib/prettyPrintNumber/index.ts"),
-				T = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Footer/index.m.less"),
-				w = s.n(T);
+				T = s("./src/lib/prettyPrintNumber/index.ts"),
+				N = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Footer/index.m.less"),
+				w = s.n(N);
 			var L = e => {
 					const {
 						className: t,
@@ -250,14 +252,14 @@
 					}, _.fbt._({
 						"*": "{number} points",
 						_1: "1 score"
-					}, [_.fbt._plural(s.score, "number", Object(N.b)(s.score))], {
+					}, [_.fbt._plural(s.score, "number", Object(T.b)(s.score))], {
 						hk: "2ncFte"
 					})), r.a.createElement("span", {
 						className: w.a.metaText
 					}, _.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
-					}, [_.fbt._plural(s.numComments, "number", Object(N.b)(s.numComments))], {
+					}, [_.fbt._plural(s.numComments, "number", Object(T.b)(s.numComments))], {
 						hk: "1QQoSA"
 					})))
 				},
@@ -528,7 +530,7 @@
 				x = s("./src/reddit/selectors/posts.ts"),
 				y = s("./src/reddit/selectors/video.ts"),
 				g = s("./src/lib/classNames/index.ts"),
-				f = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				f = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				O = s("./src/reddit/components/PostContainer/index.m.less"),
 				v = s.n(O);
 			const C = Object(o.c)({
@@ -1057,4 +1059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.2af478d485cbc806e8ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f3ea72e1f2ce9bb2958e.js.map

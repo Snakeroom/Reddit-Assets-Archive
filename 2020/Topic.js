@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.14ead6b26faf6c4c1b22.js
-// Retrieved at 10/26/2020, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.40a19e5662b307f2582f.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -525,7 +525,7 @@
 					}
 				},
 				j = Object(i.b)(C, L, (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), s), {
-					postClickEvent: (e, t, i) => Object(h.f)(e, t, i, s.listingKey, s.hostPostId, s.listingBelowVariant),
+					postClickEventFactory: (e, t) => Object(h.f)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant),
 					postComponentForLayout: e => Object(m.b)(Object.assign({}, e))
 				}));
 			t.a = e => Object(p.c)(w(j(e)))
@@ -886,8 +886,8 @@
 				}
 			}
 			var D = V,
-				W = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
-				F = s.n(W);
+				F = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
+				W = s.n(F);
 
 			function M() {
 				return (M = Object.assign || function(e) {
@@ -911,7 +911,7 @@
 						parentRelatedTopics: e
 					} = this.props;
 					return e.length ? n.a.createElement("ul", {
-						className: F.a.parentRelatedTopics
+						className: W.a.parentRelatedTopics
 					}, e.map((e, t) => {
 						let {
 							namePlural: s,
@@ -920,7 +920,7 @@
 						return n.a.createElement("li", {
 							key: t
 						}, n.a.createElement(m.a, {
-							className: F.a.link,
+							className: W.a.link,
 							to: i
 						}, s))
 					})) : A._("Topic on Reddit", null, {
@@ -941,19 +941,19 @@
 						tabs: r
 					};
 					return n.a.createElement("div", {
-						className: Object(o.a)(F.a.Container, t)
+						className: Object(o.a)(W.a.Container, t)
 					}, n.a.createElement("div", {
-						className: Object(o.a)(F.a.Content, s === L.g.Large ? F.a.cardWidth : F.a.fullWidth)
+						className: Object(o.a)(W.a.Content, s === L.g.Large ? W.a.cardWidth : W.a.fullWidth)
 					}, n.a.createElement("div", {
-						className: F.a.Header
+						className: W.a.Header
 					}, n.a.createElement("div", {
-						className: F.a.Title
+						className: W.a.Title
 					}, n.a.createElement(x.b, {
 						type: x.a.TopicHeader
 					}, a)), n.a.createElement("div", {
-						className: F.a.Subtitle
+						className: W.a.Subtitle
 					}, this.renderSubtitleContent())), n.a.createElement("div", {
-						className: F.a.Tabs
+						className: W.a.Tabs
 					}, n.a.createElement(D, M({
 						tab: B.Posts
 					}, c), A._("Posts", null, {
@@ -1343,4 +1343,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.14ead6b26faf6c4c1b22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.40a19e5662b307f2582f.js.map

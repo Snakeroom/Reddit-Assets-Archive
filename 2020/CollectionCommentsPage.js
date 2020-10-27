@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.59670196dec10ce0b49c.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.90845ba295b6a0c82568.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -79,7 +79,7 @@
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"a04c25fcce11"}')
 		},
-		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
+		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
 				return p
@@ -119,9 +119,10 @@
 			const m = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = h(o.target, o.currentTarget);
-					s && t && (b(o.target, o.currentTarget, u.anchors) ? r && s(t(e, r)) : r && s(s => {
-						const n = t(e, r)(s);
+					const r = h(o.target, o.currentTarget),
+						i = x(o.target, o.currentTarget);
+					r && s && t && (b(o.target, o.currentTarget, u.anchors) ? s(t(e, r, i)) : s(s => {
+						const n = t(e, r, i)(s);
 						let o;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -164,7 +165,8 @@
 				h = (e, t) => {
 					const s = e.dataset.clickId;
 					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
-				}
+				},
+				x = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && x(e.parentElement, t))
 		},
 		"./src/lib/humanizeDate/index.ts": function(e, t, s) {
 			"use strict";
@@ -8807,7 +8809,7 @@
 				x = s("./src/reddit/selectors/posts.ts"),
 				g = s("./src/reddit/selectors/video.ts"),
 				f = s("./src/lib/classNames/index.ts"),
-				v = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				v = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				C = s("./src/reddit/components/PostContainer/index.m.less"),
 				O = s.n(C);
 			const y = Object(r.c)({
@@ -9803,13 +9805,14 @@
 					isActionBarAnimationEnabled: u,
 					isForceSelected: !I && u
 				}), Le)));
+				const Fe = Object(r.useCallback)((e, t) => Object(E.f)(e, t), []);
 				return i.a.createElement(te.a, {
 					className: Object(p.a)(t, We.a.postContainer, {
 						[We.a.hasEventMeta]: Object(fe.a)(F)
 					}),
 					isOverlay: I,
 					post: F,
-					eventFactory: I ? y.b : E.f,
+					eventFactory: I ? y.b : Fe,
 					onClick: se
 				}, i.a.createElement(z.a, {
 					post: F
@@ -14800,7 +14803,7 @@
 					}
 				},
 				I = Object(n.b)(w, _, (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), s), {
-					postClickEvent: (e, t, n) => Object(b.f)(e, t, n, s.listingKey, s.hostPostId, s.listingBelowVariant),
+					postClickEventFactory: (e, t) => Object(b.f)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant),
 					postComponentForLayout: e => Object(u.b)(Object.assign({}, e))
 				}));
 			t.a = e => Object(m.c)(k(I(e)))
@@ -18951,4 +18954,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.59670196dec10ce0b49c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.90845ba295b6a0c82568.js.map

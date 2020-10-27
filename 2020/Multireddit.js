@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.ddb33a544295f80a8791.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.01e15a03547b24c1ae3d.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -1216,7 +1216,7 @@
 					}
 				},
 				w = Object(r.b)(C, T, (e, t, n) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), n), {
-					postClickEvent: (e, t, r) => Object(b.f)(e, t, r, n.listingKey, n.hostPostId, n.listingBelowVariant),
+					postClickEventFactory: (e, t) => Object(b.f)(e, t, "post", n.listingKey, n.hostPostId, n.listingBelowVariant),
 					postComponentForLayout: e => Object(p.b)(Object.assign({}, e))
 				}));
 			t.a = e => Object(u.c)(O(w(e)))
@@ -1944,4 +1944,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ddb33a544295f80a8791.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.01e15a03547b24c1ae3d.js.map

@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.8c3aaa18455ee41e1d0c.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.1801d21bd19f8b09e2d9.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
-		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
+		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
 				return p
@@ -42,9 +42,10 @@
 			const u = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return r => {
-					const o = h(r.target, r.currentTarget);
-					s && t && (b(r.target, r.currentTarget, m.anchors) ? o && s(t(e, o)) : o && s(s => {
-						const n = t(e, o)(s);
+					const o = h(r.target, r.currentTarget),
+						i = g(r.target, r.currentTarget);
+					o && s && t && (b(r.target, r.currentTarget, m.anchors) ? s(t(e, o, i)) : s(s => {
+						const n = t(e, o, i)(s);
 						let r;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -87,7 +88,8 @@
 				h = (e, t) => {
 					const s = e.dataset.clickId;
 					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
-				}
+				},
+				g = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && g(e.parentElement, t))
 		},
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -128,8 +130,8 @@
 			});
 			var j = s("./src/reddit/selectors/subreddit.ts"),
 				C = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
-				v = s.n(C);
-			const k = Object(a.b)(() => Object(l.c)({
+				k = s.n(C);
+			const v = Object(a.b)(() => Object(l.c)({
 				inSubredditTopContentExperiment: y,
 				subredditUrl: j.d
 			}), e => ({
@@ -171,15 +173,15 @@
 						postIds: r,
 						range: o
 					} = s, i = "".concat(t).concat(u.O.TOP, "?t=").concat(o), a = c.a.createElement(h.a, {
-						className: v.a.widgetHeader
+						className: k.a.widgetHeader
 					}, c.a.createElement("button", {
-						className: v.a.closeButton,
+						className: k.a.closeButton,
 						onClick: this.onCloseClick
 					}, c.a.createElement(b.b, {
-						className: v.a.closeIcon,
+						className: k.a.closeIcon,
 						"data-redditstyle": !0
 					})), c.a.createElement(d.a, {
-						className: v.a.headerLink,
+						className: k.a.headerLink,
 						to: i
 					}, n.fbt._("Top posts from the past {range}", [n.fbt._param("range", o)], {
 						hk: "xhJKf"
@@ -187,7 +189,7 @@
 					return c.a.createElement("div", {
 						className: this.props.className
 					}, c.a.createElement(p.a, {
-						className: v.a.layout,
+						className: k.a.layout,
 						header: a,
 						hidePadding: !0
 					}, c.a.createElement(m.a, {
@@ -204,7 +206,7 @@
 					})))
 				}
 			}
-			t.default = k(_)
+			t.default = v(_)
 		},
 		"./src/reddit/components/PostContainer/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -250,7 +252,7 @@
 				g = s("./src/reddit/selectors/posts.ts"),
 				x = s("./src/reddit/selectors/video.ts"),
 				f = s("./src/lib/classNames/index.ts"),
-				O = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				O = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				y = s("./src/reddit/components/PostContainer/index.m.less"),
 				j = s.n(y);
 			const C = Object(o.c)({
@@ -305,8 +307,8 @@
 						})
 					}
 				}),
-				v = Object(m.a)(C),
-				k = e => {
+				k = Object(m.a)(C),
+				v = e => {
 					const t = Object(O.d)(e.target, e.currentTarget),
 						s = Object(O.b)(e.target, e.currentTarget, O.a.buttons);
 					return "subreddit" !== t && s
@@ -340,7 +342,7 @@
 							}, 1e3))
 						},
 						onClick: s => {
-							if (!this.cancelClick && s.button < 2 && (e(() => m && m(s, p, t, d))(s), h && k(s) && h(s, p)), p.id && d) {
+							if (!this.cancelClick && s.button < 2 && (e(() => m && m(s, p, t, d))(s), h && v(s) && h(s, p)), p.id && d) {
 								const {
 									source: e
 								} = Object(i.s)(p, d);
@@ -365,7 +367,7 @@
 					}, y) : y
 				}
 			}
-			t.a = v(Object(O.c)(Object(p.c)(_)))
+			t.a = k(Object(O.c)(Object(p.c)(_)))
 		},
 		"./src/reddit/components/QuarantinedLabel/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -570,4 +572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.8c3aaa18455ee41e1d0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.1801d21bd19f8b09e2d9.js.map

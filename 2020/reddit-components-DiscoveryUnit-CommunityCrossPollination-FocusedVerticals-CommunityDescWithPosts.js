@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c57ea6702d86e7be6f55.js
-// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.2efd435a19d6a9ff7255.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
-		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
+		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
 				return b
@@ -42,9 +42,10 @@
 			const u = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return r => {
-					const o = h(r.target, r.currentTarget);
-					s && t && (m(r.target, r.currentTarget, p.anchors) ? o && s(t(e, o)) : o && s(s => {
-						const n = t(e, o)(s);
+					const o = h(r.target, r.currentTarget),
+						i = v(r.target, r.currentTarget);
+					o && s && t && (m(r.target, r.currentTarget, p.anchors) ? s(t(e, o, i)) : s(s => {
+						const n = t(e, o, i)(s);
 						let r;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -87,7 +88,8 @@
 				h = (e, t) => {
 					const s = e.dataset.clickId;
 					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
-				}
+				},
+				v = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && v(e.parentElement, t))
 		},
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -793,7 +795,7 @@
 				v = s("./src/reddit/selectors/posts.ts"),
 				E = s("./src/reddit/selectors/video.ts"),
 				O = s("./src/lib/classNames/index.ts"),
-				g = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				g = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				j = s("./src/reddit/components/PostContainer/index.m.less"),
 				x = s.n(j);
 			const C = Object(o.c)({
@@ -1405,4 +1407,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c57ea6702d86e7be6f55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.2efd435a19d6a9ff7255.js.map

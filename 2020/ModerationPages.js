@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.79ec4ade9e83af768e2e.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.776082dc361795919502.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -194,7 +194,7 @@
 		"./src/graphql/operations/WikiRevisions.json": function(e) {
 			e.exports = JSON.parse('{"id":"83e11ebf7cbf"}')
 		},
-		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
+		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
 				return u
@@ -234,9 +234,10 @@
 			const m = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const a = h(o.target, o.currentTarget);
-					s && t && (b(o.target, o.currentTarget, p.anchors) ? a && s(t(e, a)) : a && s(s => {
-						const n = t(e, a)(s);
+					const a = h(o.target, o.currentTarget),
+						r = g(o.target, o.currentTarget);
+					a && s && t && (b(o.target, o.currentTarget, p.anchors) ? s(t(e, a, r)) : s(s => {
+						const n = t(e, a, r)(s);
 						let o;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -279,7 +280,8 @@
 				h = (e, t) => {
 					const s = e.dataset.clickId;
 					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
-				}
+				},
+				g = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && g(e.parentElement, t))
 		},
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
 			"use strict";
@@ -5978,7 +5980,7 @@
 				o = s.n(n),
 				a = s("./node_modules/react-redux/es/index.js"),
 				r = s("./src/lib/addQueryParams/index.ts"),
-				i = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				i = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				d = s("./src/reddit/helpers/overlay/index.ts"),
 				c = function(e, t) {
 					var s = {};
@@ -18444,7 +18446,7 @@
 				g = s("./src/reddit/selectors/posts.ts"),
 				f = s("./src/reddit/selectors/video.ts"),
 				x = s("./src/lib/classNames/index.ts"),
-				v = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				v = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				E = s("./src/reddit/components/PostContainer/index.m.less"),
 				_ = s.n(E);
 			const C = Object(a.c)({
@@ -31698,4 +31700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.79ec4ade9e83af768e2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.776082dc361795919502.js.map

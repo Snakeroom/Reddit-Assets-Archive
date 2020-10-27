@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.aa745ff3eb1f5513ce23.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8d431ad4f56a5f2d5b3e.js
+// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"a04c25fcce11"}')
 		},
-		"./src/higherOrderComponents/withClickTracking.tsx": function(e, t, s) {
+		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
 				return p
@@ -45,9 +45,10 @@
 			const m = (e, t, s) => (function() {
 				let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : () => {};
 				return o => {
-					const r = h(o.target, o.currentTarget);
-					s && t && (b(o.target, o.currentTarget, u.anchors) ? r && s(t(e, r)) : r && s(s => {
-						const n = t(e, r)(s);
+					const r = h(o.target, o.currentTarget),
+						i = x(o.target, o.currentTarget);
+					r && s && t && (b(o.target, o.currentTarget, u.anchors) ? s(t(e, r, i)) : s(s => {
+						const n = t(e, r, i)(s);
 						let o;
 						if (n && n.actionInfo) {
 							const e = n.actionInfo,
@@ -90,7 +91,8 @@
 				h = (e, t) => {
 					const s = e.dataset.clickId;
 					return s || (e === t ? null : !!e.parentElement && h(e.parentElement, t))
-				}
+				},
+				x = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && x(e.parentElement, t))
 		},
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
 			"use strict";
@@ -1620,7 +1622,7 @@
 				o = s.n(n),
 				r = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/lib/addQueryParams/index.ts"),
-				a = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				a = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				c = s("./src/reddit/helpers/overlay/index.ts"),
 				d = function(e, t) {
 					var s = {};
@@ -5383,7 +5385,7 @@
 				x = s("./src/reddit/selectors/posts.ts"),
 				f = s("./src/reddit/selectors/video.ts"),
 				g = s("./src/lib/classNames/index.ts"),
-				v = s("./src/higherOrderComponents/withClickTracking.tsx"),
+				v = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
 				O = s("./src/reddit/components/PostContainer/index.m.less"),
 				y = s.n(O);
 			const C = Object(r.c)({
@@ -8055,7 +8057,7 @@
 					}
 				}), (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), s), {
 					openPost: e => t.openPost(e),
-					postClickEvent: (e, t, n) => n ? Object(Ft.f)(e, t) : ("body" === t || "background" === t || "expando_open" === t || "image" === t || "timestamp" === t ? (s.sendEvent(Object(je.i)(s.listingKey, e, Object.assign(Object.assign({}, s.searchOptions), {
+					postClickEventFactory: (e, t, n) => n ? Object(Ft.f)(e, t) : ("body" === t || "background" === t || "expando_open" === t || "image" === t || "timestamp" === t ? (s.sendEvent(Object(je.i)(s.listingKey, e, Object.assign(Object.assign({}, s.searchOptions), {
 						id: e,
 						eventType: "post"
 					}), We(s))), s.sendEvent(Object(je.k)(e, Object.assign(Object.assign({}, s.searchOptions), {
@@ -11114,7 +11116,7 @@
 					}
 				},
 				S = Object(n.b)(k, I, (e, t, s) => Object.assign(Object.assign(Object.assign(Object.assign({}, e), t), s), {
-					postClickEvent: (e, t, n) => Object(b.f)(e, t, n, s.listingKey, s.hostPostId, s.listingBelowVariant),
+					postClickEventFactory: (e, t) => Object(b.f)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant),
 					postComponentForLayout: e => Object(u.b)(Object.assign({}, e))
 				}));
 			t.a = e => Object(m.c)(j(S(e)))
@@ -13307,4 +13309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.aa745ff3eb1f5513ce23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8d431ad4f56a5f2d5b3e.js.map
