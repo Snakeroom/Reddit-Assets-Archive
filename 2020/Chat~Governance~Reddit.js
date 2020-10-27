@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.774f3596c9138db12a40.js
-// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.db2488fab8687e6b0ce9.js
+// Retrieved at 10/27/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("116793"),
+				buildNumber: r("116807"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603819474"),
+				})("1603822380"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3431,14 +3431,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("4b07553-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("117d163-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4b07553-production",
+						release: "117d163-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3891,7 +3891,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "4b07553-production",
+							releaseClient: "117d163-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -24639,9 +24639,9 @@
 		"./src/telemetry/helpers/sendEvent.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return h
+				return g
 			})), i.d(t, "b", (function() {
-				return w
+				return y
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var n = i("./node_modules/Base64/base64.js"),
@@ -24655,40 +24655,46 @@
 				c = i("./src/telemetry/eventSchemas/event_types.js"),
 				_ = i("./src/telemetry/models/Event.ts"),
 				m = i("./src/telemetry/helpers/ThriftSerializer.ts");
-			let p;
-			const h = e => {
-				p = e
-			};
-			let g = [],
-				f = !1,
-				b = !1;
-			const w = Object(u.b)();
-			let y = !1;
-			const v = window && window.fetch;
-			t.a = e => {
-				b || (window.addEventListener("beforeunload", () => {
-					w.flush(), f || T(!0)
-				}), b = !0);
-				const t = _.f(e);
-				if (g = g.concat([t]), p) {
-					const e = p.getState();
-					e.push(t);
-					const {
-						length: i
-					} = e;
-					i > 250 && e.splice(0, 250 - i), p.setState(e)
+			class p {
+				constructor(e, t) {
+					this.event = e, this.schemaId = t
 				}
-				f || S()
+			}
+			let h;
+			const g = e => {
+				h = e
 			};
-			const T = e => {
-					if (!g.length) return;
-					const t = [...g],
+			let f = [],
+				b = !1,
+				w = !1;
+			const y = Object(u.b)();
+			let v = !1;
+			const T = window && window.fetch;
+			t.a = e => {
+				w || (window.addEventListener("beforeunload", () => {
+					y.flush(), b || S(!0)
+				}), w = !0);
+				const t = _.f(e),
+					i = new p(t, e.schemaId);
+				if (h) {
+					const e = h.getState();
+					e.push(i);
+					const {
+						length: t
+					} = e;
+					t > 250 && e.splice(0, 250 - t), h.setState(e)
+				}
+				b || E(), f = f.concat([t])
+			};
+			const S = e => {
+					if (!f.length) return;
+					const t = [...f],
 						i = new c.EventBatch({
 							events: t
 						}),
 						r = new m.a,
 						o = Object(n.atob)("YWVjYWltMnNlaTlzZXNoNmVpQ2hhZXJ1dW03dHU4");
-					g = [], f = !0, i.write(r);
+					f = [], b = !0, i.write(r);
 					const d = r.getString(),
 						u = s()(d, o).toString(),
 						_ = "https://www.reddit.com"; {
@@ -24696,9 +24702,9 @@
 								"X-Signature-v2": "key=".concat("Desktop2x3", ", mac=").concat(u)
 							},
 							i = () => {
-								g.length ? e ? T() : S() : f = !1
+								f.length ? e ? S() : E() : b = !1
 							};
-						y && e && !window.chrome && v ? v(_, {
+						v && e && !window.chrome && T ? T(_, {
 							body: d,
 							headers: Object.assign(Object.assign({}, t), {
 								"Content-Type": "text/plain"
@@ -24715,7 +24721,7 @@
 						}).then(i)
 					}
 				},
-				S = d()(T, 1e3, {
+				E = d()(S, 1e3, {
 					leading: !1,
 					trailing: !0
 				})
@@ -25951,4 +25957,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.774f3596c9138db12a40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.db2488fab8687e6b0ce9.js.map

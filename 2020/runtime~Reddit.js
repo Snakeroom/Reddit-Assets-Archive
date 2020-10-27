@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.6cdfc8088b03469427e8.js
-// Retrieved at 10/27/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c5603a81db14c0f980c4.js
+// Retrieved at 10/27/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, t, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) t = r[l], Object.prototype.hasOwnProperty.call(n, t) && n[t] && P.push(n[t][0]), n[t] = 0;
@@ -42,7 +42,6 @@
 			1: 1,
 			2: 1,
 			Acknowledgements: 1,
-			AdminPanel: 1,
 			Appeal: 1,
 			SubredditHovercard: 1,
 			BadgePickerModal: 1,
@@ -101,6 +100,7 @@
 			SubredditLeaderboard: 1,
 			SurveyAsync: 1,
 			UserDataRequestPage: 1,
+			AdminPanel: 1,
 			"vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor": 1,
 			FlairEdit: 1,
 			"ProfilePosts~ProfileSnoobuilder": 1,
@@ -234,7 +234,6 @@
 		} [e] && o.push(t[e] = new Promise((function(o, d) {
 			for (var a = "chunkCSS/" + ({
 					Acknowledgements: "Acknowledgements",
-					AdminPanel: "AdminPanel",
 					Appeal: "Appeal",
 					SubredditHovercard: "SubredditHovercard",
 					BadgePickerModal: "BadgePickerModal",
@@ -301,6 +300,8 @@
 					UserZoomIntegration: "UserZoomIntegration",
 					givePremiumTrackers: "givePremiumTrackers",
 					"translations/en-US-json": "translations/en-US-json",
+					"vendors~AdminPanel": "vendors~AdminPanel",
+					AdminPanel: "AdminPanel",
 					"vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor": "vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor",
 					FlairEdit: "FlairEdit",
 					"vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754": "vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754",
@@ -490,7 +491,6 @@
 					1: "8ad3e16c04edf266e332",
 					2: "a9302627c7d9c037f068",
 					Acknowledgements: "f3bbb5a3854ac8647b5e",
-					AdminPanel: "237a931004f26a4e8b81",
 					Appeal: "13d51d1035e7e0c414db",
 					SubredditHovercard: "38fab0f8817b7e419ab0",
 					BadgePickerModal: "e54b002d5e2376d955b9",
@@ -557,6 +557,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
 					"translations/en-US-json": "31d6cfe0d16ae931b73c",
+					"vendors~AdminPanel": "31d6cfe0d16ae931b73c",
+					AdminPanel: "162630f71200796de465",
 					"vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor": "c5fa24469a22c9356c7c",
 					FlairEdit: "9e0745d5e9e876fa8e22",
 					"vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754": "31d6cfe0d16ae931b73c",
@@ -772,7 +774,6 @@
 				s.charset = "utf-8", s.timeout = 120, r.nc && s.setAttribute("nonce", r.nc), s.src = function(e) {
 					return r.p + "" + ({
 						Acknowledgements: "Acknowledgements",
-						AdminPanel: "AdminPanel",
 						Appeal: "Appeal",
 						SubredditHovercard: "SubredditHovercard",
 						BadgePickerModal: "BadgePickerModal",
@@ -839,6 +840,8 @@
 						UserZoomIntegration: "UserZoomIntegration",
 						givePremiumTrackers: "givePremiumTrackers",
 						"translations/en-US-json": "translations/en-US-json",
+						"vendors~AdminPanel": "vendors~AdminPanel",
+						AdminPanel: "AdminPanel",
 						"vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor": "vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor",
 						FlairEdit: "FlairEdit",
 						"vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754": "vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754",
@@ -1028,7 +1031,6 @@
 						1: "513f6da3ea647aac7b32",
 						2: "50635cb84976c97872c0",
 						Acknowledgements: "fcefa23a8ce7a2f3d108",
-						AdminPanel: "e28e7091a6c0d4dd711f",
 						Appeal: "ea55bc8fbaa634649164",
 						SubredditHovercard: "fcf640e42fd24fe61412",
 						BadgePickerModal: "330c36c3bb60724d46f3",
@@ -1042,7 +1044,7 @@
 						EconTopAwardersModal: "99ec6059bc30ef9173f1",
 						Coins: "d181ae1e67efef499840",
 						CoinsMobile: "cb55d93c014a895ab2a0",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "d72e8f1e319685c1f4a6",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66": "38590d30576dfa2a6fc2",
 						"ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478": "686878f440b79bbd6b24",
 						"FramedGild~GildModal": "e75ebd0fbd6939792e7d",
 						FramedGild: "5670cbdb141707cfc3c8",
@@ -1095,6 +1097,8 @@
 						UserZoomIntegration: "5a254a11a77817c276f1",
 						givePremiumTrackers: "9f3efc86eeddf557cae7",
 						"translations/en-US-json": "cb8f211807c3b1925e04",
+						"vendors~AdminPanel": "4849214f6d5906082ff1",
+						AdminPanel: "f1af14ba3eacb6b257d7",
 						"vendors~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RichTextEditor": "34ac35bb59ad920d9788",
 						FlairEdit: "3ead3a2b8a35693c242b",
 						"vendors~Chat~ChatMessageInput~CollectionCommentsPage~CommentsPage~MembershipPaywallPage~ModerationPa~e7ce6754": "f9e4c0adf28ca9355d1e",
@@ -1108,7 +1112,7 @@
 						RedesignChat: "7f3efa42fc97bb132030",
 						"vendors~CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki~reddit-components-Governance-Tra~2c7f90aa": "b20909f1455a3505bd30",
 						"vendors~CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~StandalonePostPage~Subreddit": "163e57e27ed37da29b28",
-						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "a6c0eee8a1722beba57d",
+						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea": "d5c19c164a93d032346a",
 						CollectionCommentsPage: "90845ba295b6a0c82568",
 						CommentsPage: "3c38367f430ea66fe6c6",
 						"Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit": "c0d7e7bb55cf86b8e5a4",
@@ -1120,7 +1124,7 @@
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
 						ModerationPages: "776082dc361795919502",
 						"vendors~PostCreation~RichTextEditor": "f5d5345f614f740e35e6",
-						PostCreation: "16501dcea0510adc83af",
+						PostCreation: "d21c39583522738eb1fb",
 						"vendors~Multireddit": "c9ea46fd1c2e6dcd587d",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "9a9ded2a529af671bd4d",
 						Multireddit: "01e15a03547b24c1ae3d",
@@ -1161,7 +1165,7 @@
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "57b97c68f1aa1a87bbf1",
 						"LiveVideoPlayer~PublicAccessNetwork": "d2afd1fe635e2ed705c1",
-						PublicAccessNetwork: "b0e50c8a886aab3a68b0",
+						PublicAccessNetwork: "61a4afec61de9ae962ca",
 						"vendors~ModListing": "a6fd66f3be04319115ee",
 						ModListing: "138607fc1ce9a8a65889",
 						"vendors~ModQueuePages": "707b386648ad89d65795",
@@ -1246,7 +1250,7 @@
 						"reddit-components-Governance-ClaimPointsBanner": "5b96b59589fb607a1cda",
 						"reddit-components-InFeedPostCreation": "d9444414c15ed9ea78e0",
 						"reddit-components-TabBadger-Component": "6185731075b78cdcd80d",
-						RpanListingUnit: "4eef35f85ec200c5fbe2",
+						RpanListingUnit: "84d322ffd235bed04157",
 						AwardCreationModal: "9f3120d2b8cff78af37e",
 						"reddit-components-ModHub-Content-ModQueue": "b928aa593f9295830cd0",
 						"reddit-components-Wiki-ModHubWikiManagement": "5f1a927ea7f6aaae7848",
@@ -1345,4 +1349,4 @@
 	var m = c;
 	d()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6cdfc8088b03469427e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c5603a81db14c0f980c4.js.map
