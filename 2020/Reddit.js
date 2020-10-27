@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.54356053564a8ec6e7a6.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.82079f6f1436aaaef25f.js
+// Retrieved at 10/27/2020, 1:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -8923,27 +8923,36 @@
 				w = n("./src/reddit/selectors/experiments/categories.ts"),
 				I = n("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
 				M = n("./src/reddit/selectors/platform.ts"),
-				N = n("./src/reddit/components/LightboxHeader/index.m.less"),
-				T = n.n(N);
-			const R = Object(i.c)({
+				N = n("./src/reddit/selectors/user.ts"),
+				T = n("./src/reddit/components/LightboxHeader/index.m.less"),
+				R = n.n(T);
+			const A = Object(i.c)({
 					isInCategoriesExperiment: w.a,
 					post: M.n,
 					isScoreDiscounted: (e, t) => {
 						let {
-							page: n
+							page: n,
+							post: s
 						} = t;
-						if (!n) return !1;
-						const s = n && Object(M.n)(e, {
+						var r;
+						if (!n && !s) return !1;
+						const o = e.platform.lastPage,
+							a = e.platform.currentPage,
+							i = (null === (r = null == a ? void 0 : a.meta) || void 0 === r ? void 0 : r.name) === d.Bb.COMMENTS,
+							c = !Object(N.H)(e) && i && !o;
+						if (c && !Object(I.b)(e)) return !1;
+						const l = n && Object(M.n)(e, {
 								page: n
-							}),
-							r = Object(I.d)(e, {
+							}) || s,
+							u = Object(I.d)(e, {
 								isActionBarAnimationEnabled: !0,
-								postId: s && s.id
+								postId: l && l.id,
+								isForceSelected: c
 							});
-						return !!r && r > 0
+						return !!u && u > 0
 					}
 				}),
-				A = Object(a.b)(R, (e, t) => {
+				L = Object(a.b)(A, (e, t) => {
 					let {
 						sendEvent: n
 					} = t;
@@ -8959,7 +8968,7 @@
 						r && t.toggleVote(r.id, s)
 					}
 				}));
-			class L extends o.a.Component {
+			class F extends o.a.Component {
 				constructor() {
 					super(...arguments), this.closeLightbox = e => {
 						e.preventDefault(), e.stopPropagation(), this.props.close()
@@ -8973,24 +8982,24 @@
 						page: a,
 						post: i,
 						isScoreDiscounted: l
-					} = this.props, u = D[i && i.media ? i.media.type : _.o.EMBED], h = !i && a && a.meta && a.meta.name === d.Bb.META_MEMBERSHIP_PAYWALL_PAGE;
+					} = this.props, u = G[i && i.media ? i.media.type : _.o.EMBED], h = !i && a && a.meta && a.meta.name === d.Bb.META_MEMBERSHIP_PAYWALL_PAGE;
 					return o.a.createElement("div", {
-						className: Object(c.a)(T.a.container, e, {
-							[T.a.isCollection]: i && Object(v.a)(i)
+						className: Object(c.a)(R.a.container, e, {
+							[R.a.isCollection]: i && Object(v.a)(i)
 						})
 					}, o.a.createElement("div", {
-						className: T.a.postDetails
+						className: R.a.postDetails
 					}, i && o.a.createElement(r.Fragment, null, l ? void 0 : o.a.createElement(m.a, {
-						className: T.a.horizontalVotes,
+						className: R.a.horizontalVotes,
 						compact: !1,
 						light: !0,
 						model: i,
 						onVoteClick: n,
 						redditStyle: !0
 					}), o.a.createElement(u, {
-						className: T.a.mediaIcon
+						className: R.a.mediaIcon
 					}), o.a.createElement(b.c, {
-						className: T.a.postTitle,
+						className: R.a.postTitle,
 						post: i,
 						size: b.b.Small,
 						hideSourceLink: !0,
@@ -8998,7 +9007,7 @@
 						isOverlay: !0,
 						nowrap: !0,
 						titleColor: g.a.lightboxHeaderText,
-						titleLinkClassName: T.a.postTitleLink,
+						titleLinkClassName: R.a.postTitleLink,
 						showCategoryTag: !0
 					}), o.a.createElement(p.a, {
 						post: i,
@@ -9006,17 +9015,17 @@
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: this.props.isInCategoriesExperiment
 					})), h && a && a.urlParams.subredditName && o.a.createElement("div", {
-						className: T.a.membershipPaywallTitle
+						className: R.a.membershipPaywallTitle
 					}, s.fbt._("{communityName} Special Membership", [s.fbt._param("communityName", "r/".concat(a.urlParams.subredditName))], {
 						hk: "4vP4VY"
 					}))), o.a.createElement("div", {
-						className: T.a.actions
-					}, o.a.createElement(F, {
+						className: R.a.actions
+					}, o.a.createElement(D, {
 						onClick: t || this.closeLightbox
 					})))
 				}
 			}
-			const F = o.a.memo(e => {
+			const D = o.a.memo(e => {
 					return Object(O.a)() ? o.a.createElement(f.q, {
 						size: f.c.XS,
 						onClick: e.onClick,
@@ -9033,7 +9042,7 @@
 						}),
 						"data-redditstyle": !0
 					}) : o.a.createElement(f.o, {
-						className: T.a.close,
+						className: R.a.close,
 						onClick: e.onClick,
 						title: s.fbt._("Close", null, {
 							hk: "4gbyAA"
@@ -9042,14 +9051,14 @@
 							hk: "4gbyAA"
 						})
 					}, o.a.createElement(j.a, {
-						className: T.a.closeIcon
+						className: R.a.closeIcon
 					}), o.a.createElement("span", {
-						className: T.a.closeText
+						className: R.a.closeText
 					}, s.fbt._("Close", null, {
 						hk: "4gbyAA"
 					})))
 				}),
-				D = {
+				G = {
 					[_.o.GIFVIDEO]: C.a,
 					[_.o.IMAGE]: x.a,
 					[_.o.TEXT]: E.a,
@@ -9058,10 +9067,10 @@
 					[_.o.EMBED]: P.a,
 					[_.o.LIVEVIDEO]: y.a,
 					[_.o.GALLERY]: e => o.a.createElement("i", {
-						className: Object(c.a)(T.a.galleryIcon, e.className)
+						className: Object(c.a)(R.a.galleryIcon, e.className)
 					}, o.a.createElement(S.a, null))
 				};
-			t.a = Object(h.c)(A(L))
+			t.a = Object(h.c)(L(F))
 		},
 		"./src/reddit/components/ModerationDropdown/index.tsx": function(e, t, n) {
 			"use strict";
@@ -14269,4 +14278,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", 0, "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "ModListing~Reddit", "Reddit~reddit-components-MediumPost"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.54356053564a8ec6e7a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.82079f6f1436aaaef25f.js.map
