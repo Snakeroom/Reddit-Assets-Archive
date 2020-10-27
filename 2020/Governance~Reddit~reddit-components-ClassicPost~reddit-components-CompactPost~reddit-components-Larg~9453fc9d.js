@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.d8015a25ebf67db9167b.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.eefa90bb45b9ab73ada3.js
+// Retrieved at 10/27/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -2365,58 +2365,58 @@
 							markdown: n.markdown
 						}
 					}
-				}), q = (t, e) => async (n, s, r) => {
+				}), q = (t, e, n) => async (s, r, o) => {
 					let {
-						gqlContext: o
-					} = r;
-					const d = s(),
-						c = d.awards.sortedUsable.order[t];
-					if (!!c && !!c[e]) return;
-					const a = Object(b.a)(d);
-					n(B({
+						gqlContext: d
+					} = o;
+					const c = r(),
+						a = c.awards.sortedUsable.order[t];
+					if (!!a && !!a[e]) return;
+					const u = Object(b.a)(c);
+					s(B({
 						subredditOrProfileId: t,
 						thingId: e
 					}));
 					try {
-						const s = y(d, {
+						const r = n || y(c, {
 							thingId: e,
 							subredditId: t
 						});
-						if (s) {
-							const r = await Object(f.g)(o(), s, e, a);
-							if (r.ok) {
-								const s = r.body,
-									i = F(s.data.profileByName.awardingTray.sortedUsableTags);
-								return void(await n(H({
-									awards: s.data.profileByName.sortedUsableAwards,
+						if (r) {
+							const n = await Object(f.g)(d(), r, e, u);
+							if (n.ok) {
+								const r = n.body,
+									i = F(r.data.profileByName.awardingTray.sortedUsableTags);
+								return void(await s(H({
+									awards: r.data.profileByName.sortedUsableAwards,
 									tags: i,
 									subredditOrProfileId: t,
 									thingId: e
 								})))
 							}
-							n(M(t, e)), await n(K({
+							s(M(t, e)), await s(K({
 								subredditOrProfileId: t,
 								thingId: e
 							}))
 						} else {
-							const s = await Object(f.f)(o(), t, e, a);
-							if (s.ok) {
-								const r = s.body,
+							const n = await Object(f.f)(d(), t, e, u);
+							if (n.ok) {
+								const r = n.body,
 									i = F(r.data.subredditInfoById.awardingTray.sortedUsableTags);
-								return void(await n(H({
+								return void(await s(H({
 									awards: r.data.subredditInfoById.sortedUsableAwards,
 									tags: i,
 									subredditOrProfileId: t,
 									thingId: e
 								})))
 							}
-							n(M(t, e)), await n(K({
+							s(M(t, e)), await s(K({
 								subredditOrProfileId: t,
 								thingId: e
 							}))
 						}
-					} catch (u) {
-						i.c.captureException(u), n(M(t, e)), await n(K({
+					} catch (l) {
+						i.c.captureException(l), s(M(t, e)), await s(K({
 							subredditOrProfileId: t,
 							thingId: e
 						}))
@@ -11109,4 +11109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.d8015a25ebf67db9167b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.eefa90bb45b9ab73ada3.js.map

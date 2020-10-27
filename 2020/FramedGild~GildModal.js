@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2c1804db498765e8b20f.js
-// Retrieved at 10/26/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e75ebd0fbd6939792e7d.js
+// Retrieved at 10/27/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1569,7 +1569,7 @@
 					} = this.props;
 					s || Object(u.d)(u.a.GildingFlow, !1), m(Object(h.viewGildModalEvent)(l.id, n, x)), f(!a && Object(p.l)());
 					const C = w ? w.id : O || (o && o.belongsTo ? o.belongsTo.id : void 0);
-					if (C && t(C, x), Ge(e, l) && (I(), c(b.m)), w || j) {
+					if (C && t(C), Ge(e, l) && (I(), c(b.m)), w || j) {
 						v(w ? w.name : j)
 					}
 					w && w.type !== g.e.User && E(w.id, w.name), r && (l.pennyPrice ? q() : Object(V.a)(), i || d(s))
@@ -1655,14 +1655,16 @@
 			}
 			t.a = Object(r.b)(Ve, (e, t) => {
 				let {
-					thingId: s
+					author: s,
+					profileId: n,
+					thingId: a
 				} = t;
 				return {
-					awardsAndTagsRequested: t => e(Object(w.a)(t, s)),
+					awardsAndTagsRequested: t => e(Object(w.a)(t, a, n && s)),
 					closeGildModal: () => e(Object(j.a)()),
-					gildRequested: (t, n) => e(Object(O.gildGqlRequested)(s, {
+					gildRequested: (t, s) => e(Object(O.gildGqlRequested)(a, {
 						isOldReddit: t,
-						isLivestream: n
+						isLivestream: s
 					})),
 					needPaymentRequested: t => {
 						let {
@@ -2101,4 +2103,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2c1804db498765e8b20f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e75ebd0fbd6939792e7d.js.map
