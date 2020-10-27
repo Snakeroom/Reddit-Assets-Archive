@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ea2c503d6871a75a29a5.js
-// Retrieved at 10/27/2020, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.374838ea34ad08d86068.js
+// Retrieved at 10/27/2020, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "Frontpage~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -784,8 +784,8 @@
 					raterTag: p(e)
 				});
 			var f = n("./src/reddit/hooks/useGqlContext.ts");
-			var y = n("./src/reddit/hooks/useLocalStorage.ts"),
-				v = n("./src/reddit/hooks/useTracking.ts"),
+			var y = n("./src/reddit/helpers/localStorage/index.ts");
+			var v = n("./src/reddit/hooks/useTracking.ts"),
 				E = n("./src/reddit/models/Subreddit/index.ts"),
 				O = n("./src/reddit/models/Toast/index.ts"),
 				C = n("./src/reddit/components/StructuredStyles/StyledComponents/index.tsx"),
@@ -938,7 +938,14 @@
 				var t;
 				const {
 					subredditId: n
-				} = e, l = Object(v.a)(), u = Object(f.a)(), p = null !== (t = Object(i.d)(e => e.subreddits.questions[n])) && void 0 !== t ? t : [], C = Object(i.c)(), [k, j] = Object(y.a)(d.f, []), [A, S] = Object(r.useState)(!1), w = function() {
+				} = e, l = Object(v.a)(), u = Object(f.a)(), p = null !== (t = Object(i.d)(e => e.subreddits.questions[n])) && void 0 !== t ? t : [], C = Object(i.c)(), [k, j] = function(e, t) {
+					let n;
+					n = Object(y.o)(e);
+					const [s, a] = Object(r.useState)(null != n ? n : t);
+					return [s, function(t) {
+						Object(y.bb)(e, t), a(t)
+					}]
+				}(d.f, []), [A, S] = Object(r.useState)(!1), w = function() {
 					const [e, t] = Object(r.useState)(!1);
 					return Object(r.useEffect)(() => {
 						setTimeout(t, 1, !0)
@@ -8762,23 +8769,6 @@
 				return e
 			}
 		},
-		"./src/reddit/hooks/useLocalStorage.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return a
-			}));
-			var s = n("./node_modules/react/index.js"),
-				r = n("./src/reddit/helpers/localStorage/index.ts");
-
-			function a(e, t) {
-				let n;
-				n = Object(r.o)(e);
-				const [a, i] = Object(s.useState)(null != n ? n : t);
-				return [a, function(t) {
-					Object(r.bb)(e, t), i(t)
-				}]
-			}
-		},
 		"./src/reddit/icons/fonts/Envelope/index.m.less": function(e, t, n) {
 			e.exports = {
 				Envelope: "gsQG-L1wCCIUe8dJEOA6C",
@@ -10526,4 +10516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ea2c503d6871a75a29a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.374838ea34ad08d86068.js.map
