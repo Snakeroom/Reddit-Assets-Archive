@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.9f3120d2b8cff78af37e.js
-// Retrieved at 10/22/2020, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.ff5245f776a78cdd3cca.js
+// Retrieved at 10/28/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -331,7 +331,7 @@
 						error: new Error(le)
 					}
 				}, me = async (e, t) => {
-					const a = await Object(ae.p)(e, t.file);
+					const a = await Object(ae.n)(e, t.file);
 					if (!a.ok) {
 						const e = new Error("Error uploading award imagine to S3 temp bucket: ".concat(a.error && a.error.type));
 						return ee.c.captureException(e), {
@@ -1960,4 +1960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.9f3120d2b8cff78af37e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.ff5245f776a78cdd3cca.js.map
