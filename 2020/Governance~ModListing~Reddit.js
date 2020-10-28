@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.30735b57742015830702.js
-// Retrieved at 10/28/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.cc631c3a10363b228407.js
+// Retrieved at 10/28/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -910,106 +910,108 @@
 				return A
 			})), n.d(t, "b", (function() {
 				return D
-			})), n.d(t, "ib", (function() {
-				return v
-			})), n.d(t, "A", (function() {
-				return P
-			})), n.d(t, "E", (function() {
-				return R
-			})), n.d(t, "z", (function() {
-				return C
-			})), n.d(t, "B", (function() {
-				return w
-			})), n.d(t, "D", (function() {
-				return k
-			})), n.d(t, "C", (function() {
-				return L
-			})), n.d(t, "F", (function() {
-				return x
-			})), n.d(t, "s", (function() {
-				return N
-			})), n.d(t, "w", (function() {
-				return U
-			})), n.d(t, "v", (function() {
-				return M
-			})), n.d(t, "r", (function() {
-				return G
-			})), n.d(t, "t", (function() {
-				return V
-			})), n.d(t, "q", (function() {
-				return F
-			})), n.d(t, "u", (function() {
-				return B
-			})), n.d(t, "hb", (function() {
-				return W
-			})), n.d(t, "gb", (function() {
-				return H
-			})), n.d(t, "x", (function() {
-				return q
-			})), n.d(t, "y", (function() {
-				return Y
-			})), n.d(t, "G", (function() {
-				return K
-			})), n.d(t, "mb", (function() {
-				return z
-			})), n.d(t, "lb", (function() {
-				return Q
-			})), n.d(t, "jb", (function() {
-				return J
-			})), n.d(t, "kb", (function() {
-				return X
-			})), n.d(t, "wb", (function() {
-				return Z
-			})), n.d(t, "vb", (function() {
-				return $
 			})), n.d(t, "ub", (function() {
+				return v
+			})), n.d(t, "ib", (function() {
+				return P
+			})), n.d(t, "A", (function() {
+				return R
+			})), n.d(t, "E", (function() {
+				return C
+			})), n.d(t, "z", (function() {
+				return w
+			})), n.d(t, "B", (function() {
+				return k
+			})), n.d(t, "D", (function() {
+				return L
+			})), n.d(t, "C", (function() {
+				return x
+			})), n.d(t, "F", (function() {
+				return N
+			})), n.d(t, "s", (function() {
+				return U
+			})), n.d(t, "w", (function() {
+				return M
+			})), n.d(t, "v", (function() {
+				return G
+			})), n.d(t, "r", (function() {
+				return V
+			})), n.d(t, "t", (function() {
+				return F
+			})), n.d(t, "q", (function() {
+				return B
+			})), n.d(t, "u", (function() {
+				return W
+			})), n.d(t, "hb", (function() {
+				return H
+			})), n.d(t, "gb", (function() {
+				return q
+			})), n.d(t, "x", (function() {
+				return Y
+			})), n.d(t, "y", (function() {
+				return K
+			})), n.d(t, "G", (function() {
+				return z
+			})), n.d(t, "mb", (function() {
+				return Q
+			})), n.d(t, "lb", (function() {
+				return J
+			})), n.d(t, "jb", (function() {
+				return X
+			})), n.d(t, "kb", (function() {
+				return Z
+			})), n.d(t, "xb", (function() {
+				return $
+			})), n.d(t, "wb", (function() {
 				return ee
-			})), n.d(t, "cb", (function() {
+			})), n.d(t, "vb", (function() {
 				return te
-			})), n.d(t, "bb", (function() {
+			})), n.d(t, "cb", (function() {
 				return ne
-			})), n.d(t, "ab", (function() {
+			})), n.d(t, "bb", (function() {
 				return se
-			})), n.d(t, "V", (function() {
+			})), n.d(t, "ab", (function() {
 				return re
-			})), n.d(t, "W", (function() {
+			})), n.d(t, "V", (function() {
 				return oe
-			})), n.d(t, "U", (function() {
+			})), n.d(t, "W", (function() {
 				return ie
-			})), n.d(t, "Q", (function() {
+			})), n.d(t, "U", (function() {
 				return ce
-			})), n.d(t, "R", (function() {
+			})), n.d(t, "Q", (function() {
 				return ae
-			})), n.d(t, "P", (function() {
+			})), n.d(t, "R", (function() {
 				return de
-			})), n.d(t, "T", (function() {
+			})), n.d(t, "P", (function() {
 				return ue
-			})), n.d(t, "S", (function() {
+			})), n.d(t, "T", (function() {
 				return le
-			})), n.d(t, "H", (function() {
+			})), n.d(t, "S", (function() {
 				return be
-			})), n.d(t, "Z", (function() {
+			})), n.d(t, "H", (function() {
 				return _e
-			})), n.d(t, "Y", (function() {
+			})), n.d(t, "Z", (function() {
 				return fe
-			})), n.d(t, "X", (function() {
+			})), n.d(t, "Y", (function() {
 				return me
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "X", (function() {
 				return pe
-			})), n.d(t, "nb", (function() {
+			})), n.d(t, "a", (function() {
 				return Oe
-			})), n.d(t, "ob", (function() {
+			})), n.d(t, "nb", (function() {
 				return ge
-			})), n.d(t, "pb", (function() {
+			})), n.d(t, "ob", (function() {
 				return je
-			})), n.d(t, "qb", (function() {
+			})), n.d(t, "pb", (function() {
 				return Ee
-			})), n.d(t, "rb", (function() {
+			})), n.d(t, "qb", (function() {
 				return he
-			})), n.d(t, "sb", (function() {
+			})), n.d(t, "rb", (function() {
 				return Ie
-			})), n.d(t, "tb", (function() {
+			})), n.d(t, "sb", (function() {
 				return Se
+			})), n.d(t, "tb", (function() {
+				return Te
 			}));
 			const s = "GIVE_PREMIUM__OPEN_GIVE_PREMIUM_MODAL",
 				r = "GIVE_PREMIUM__CLOSE_GIVE_PREMIUM_MODAL",
@@ -1036,56 +1038,57 @@
 				y = "AWARD_SHEET__INFO_PENDING",
 				A = "AWARD_SHEET__INFO_LOADED",
 				D = "AWARD_SHEET__INFO_FAILED",
-				v = "COINS__SUBREDDIT_LOCKED_COINS_LOADED",
-				P = "GIVE_PREMIUM__GIVE_PREMIUM_PENDING",
-				R = "GIVE_PREMIUM__GIVE_PREMIUM_SUCCESSFUL",
-				C = "GIVE_PREMIUM__GIVE_PREMIUM_FAILED",
-				w = "GIVE_PREMIUM__SELECT_PACKAGE",
-				k = "GIVE_PREMIUM__SET_IS_ANONYMOUS",
-				L = "GIVE_PREMIUM__SET_INCLUDE_MESSAGE",
-				x = "GIVE_PREMIUM__UPDATE_MESSAGE",
-				N = "GILD__SET_IS_ANONYMOUS",
-				U = "GILD__UPDATE_MESSAGE",
-				M = "GILD__TRIGGER_LOADER",
-				G = "GILD__GILD_PENDING",
-				V = "GILD__GILD_SUCCESSFUL",
-				F = "GILD__GILD_FAILED",
-				B = "GILD__GILD_THING",
-				W = "GIVE_AWARD__SELECT_AWARD",
-				H = "AWARDS__REPORT_AWARD",
-				q = "AWARDS__GIVE_AWARD_TOOLTIP_CLOSED",
-				Y = "AWARDS__GIVE_AWARD_TOOLTIP_OPENED",
-				K = "AWARDS__HIDE_AWARD",
-				z = "POWERUPS__SUBREDDIT_POWERUPS_PENDING",
-				Q = "POWERUPS__SUBREDDIT_POWERUPS_LOADED",
-				J = "POWERUPS__SUBREDDIT_POWERUPS_FAILED",
-				X = "POWERUPS__SUBREDDIT_POWERUPS_FULL_LOADED",
-				Z = "POWERUPS__USER_POWERUPS_PENDING",
-				$ = "POWERUPS__USER_POWERUPS_LOADED",
-				ee = "POWERUPS__USER_POWERUPS_FAILED",
-				te = "POWERUPS__REDDITOR_POWERUPS_PENDING",
-				ne = "POWERUPS__REDDITOR_POWERUPS_LOADED",
-				se = "POWERUPS__REDDITOR_POWERUPS_FAILED",
-				re = "POWERUPS__REALLOCATE_PENDING",
-				oe = "POWERUPS__REALLOCATE_SUCCESSFUL",
-				ie = "POWERUPS__REALLOCATE_FAILED",
-				ce = "POWERUPS__CANCEL_PAYMENT_PENDING",
-				ae = "POWERUPS__CANCEL_PAYMENT_SUCCESSFUL",
-				de = "POWERUPS__CANCEL_PAYMENT_FAILED",
-				ue = "POWERUPS__PAYMENT_COMPLETED",
-				le = "POWERUPS_PURCHASE__POWERUPS_COUNT_CHANGED",
-				be = "POWERUPS_PURCHASE__IS_ANONYMOUS_CHANGED",
-				_e = "PRODUCT_OFFERS__OFFERS_PENDING",
-				fe = "PRODUCT_OFFERS__OFFERS_LOADED",
-				me = "PRODUCT_OFFERS__OFFERS_FAILED",
-				pe = "GILD__AWARD_KARMA_UPDATED",
-				Oe = "TOP_AWARDED__POSTS_FAILED",
-				ge = "TOP_AWARDED__POSTS_LOADED",
-				je = "TOP_AWARDED__POSTS_PENDING",
-				Ee = "TOP_AWARDERS__LEADERBOARD_FAILED",
-				he = "TOP_AWARDERS__LEADERBOARD_LOADED",
-				Ie = "TOP_AWARDERS__LEADERBOARD_PENDING",
-				Se = "TOP_AWARDERS__MODAL_OPENED"
+				v = "COMMUNITY_AWARDS__USABLE_AWARDS_LOADED",
+				P = "COINS__SUBREDDIT_LOCKED_COINS_LOADED",
+				R = "GIVE_PREMIUM__GIVE_PREMIUM_PENDING",
+				C = "GIVE_PREMIUM__GIVE_PREMIUM_SUCCESSFUL",
+				w = "GIVE_PREMIUM__GIVE_PREMIUM_FAILED",
+				k = "GIVE_PREMIUM__SELECT_PACKAGE",
+				L = "GIVE_PREMIUM__SET_IS_ANONYMOUS",
+				x = "GIVE_PREMIUM__SET_INCLUDE_MESSAGE",
+				N = "GIVE_PREMIUM__UPDATE_MESSAGE",
+				U = "GILD__SET_IS_ANONYMOUS",
+				M = "GILD__UPDATE_MESSAGE",
+				G = "GILD__TRIGGER_LOADER",
+				V = "GILD__GILD_PENDING",
+				F = "GILD__GILD_SUCCESSFUL",
+				B = "GILD__GILD_FAILED",
+				W = "GILD__GILD_THING",
+				H = "GIVE_AWARD__SELECT_AWARD",
+				q = "AWARDS__REPORT_AWARD",
+				Y = "AWARDS__GIVE_AWARD_TOOLTIP_CLOSED",
+				K = "AWARDS__GIVE_AWARD_TOOLTIP_OPENED",
+				z = "AWARDS__HIDE_AWARD",
+				Q = "POWERUPS__SUBREDDIT_POWERUPS_PENDING",
+				J = "POWERUPS__SUBREDDIT_POWERUPS_LOADED",
+				X = "POWERUPS__SUBREDDIT_POWERUPS_FAILED",
+				Z = "POWERUPS__SUBREDDIT_POWERUPS_FULL_LOADED",
+				$ = "POWERUPS__USER_POWERUPS_PENDING",
+				ee = "POWERUPS__USER_POWERUPS_LOADED",
+				te = "POWERUPS__USER_POWERUPS_FAILED",
+				ne = "POWERUPS__REDDITOR_POWERUPS_PENDING",
+				se = "POWERUPS__REDDITOR_POWERUPS_LOADED",
+				re = "POWERUPS__REDDITOR_POWERUPS_FAILED",
+				oe = "POWERUPS__REALLOCATE_PENDING",
+				ie = "POWERUPS__REALLOCATE_SUCCESSFUL",
+				ce = "POWERUPS__REALLOCATE_FAILED",
+				ae = "POWERUPS__CANCEL_PAYMENT_PENDING",
+				de = "POWERUPS__CANCEL_PAYMENT_SUCCESSFUL",
+				ue = "POWERUPS__CANCEL_PAYMENT_FAILED",
+				le = "POWERUPS__PAYMENT_COMPLETED",
+				be = "POWERUPS_PURCHASE__POWERUPS_COUNT_CHANGED",
+				_e = "POWERUPS_PURCHASE__IS_ANONYMOUS_CHANGED",
+				fe = "PRODUCT_OFFERS__OFFERS_PENDING",
+				me = "PRODUCT_OFFERS__OFFERS_LOADED",
+				pe = "PRODUCT_OFFERS__OFFERS_FAILED",
+				Oe = "GILD__AWARD_KARMA_UPDATED",
+				ge = "TOP_AWARDED__POSTS_FAILED",
+				je = "TOP_AWARDED__POSTS_LOADED",
+				Ee = "TOP_AWARDED__POSTS_PENDING",
+				he = "TOP_AWARDERS__LEADERBOARD_FAILED",
+				Ie = "TOP_AWARDERS__LEADERBOARD_LOADED",
+				Se = "TOP_AWARDERS__LEADERBOARD_PENDING",
+				Te = "TOP_AWARDERS__MODAL_OPENED"
 		},
 		"./src/reddit/actions/header.ts": function(e, t, n) {
 			"use strict";
@@ -8819,4 +8822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.30735b57742015830702.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.cc631c3a10363b228407.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8f7d62cb82f9b949f2a3.js
-// Retrieved at 10/28/2020, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.38adb1b0efef4a595068.js
+// Retrieved at 10/28/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("116881"),
+				buildNumber: r("116889"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603901029"),
+				})("1603902683"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3431,14 +3431,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("d6544be-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("8520027-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d6544be-production",
+						release: "8520027-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3891,7 +3891,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "d6544be-production",
+							releaseClient: "8520027-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -16068,11 +16068,11 @@
 			})), i.d(t, "a", (function() {
 				return u
 			})), i.d(t, "h", (function() {
-				return _
-			})), i.d(t, "g", (function() {
 				return m
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "g", (function() {
 				return p
+			})), i.d(t, "i", (function() {
+				return h
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/core-js/modules/es6.array.sort.js");
 			var n = i("./src/lib/objectSelector/index.ts"),
@@ -16115,11 +16115,25 @@
 				})),
 				_ = Object(n.a)((e, t) => {
 					let {
+						subredditId: i
+					} = t;
+					const n = e.awards.usable.order[i];
+					return n ? n.map(t => ({
+						award: e.awards.models[t],
+						total: 0
+					})).filter(e => e.award.isEnabled) : c
+				}),
+				m = Object(n.a)((e, t) => {
+					let {
 						subredditId: i,
 						thingId: n
 					} = t;
-					const r = e.awards.sortedUsable.order[i][n];
-					return r ? r.map(t => {
+					const r = e.awards.sortedUsable.order[i];
+					if (!r) return _(e, {
+						subredditId: i
+					});
+					const s = r[n];
+					return s ? s.map(t => {
 						let {
 							award: i,
 							total: n
@@ -16135,7 +16149,7 @@
 						return t.isEnabled
 					}) : c
 				}),
-				m = (e, t) => {
+				p = (e, t) => {
 					let {
 						subredditId: i,
 						thingId: n
@@ -16143,7 +16157,7 @@
 					const r = e.awards.sortedUsable.api.pending[i];
 					return !!r && r[n]
 				},
-				p = Object(n.a)((e, t) => {
+				h = Object(n.a)((e, t) => {
 					let {
 						subredditId: i
 					} = t;
@@ -25943,4 +25957,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8f7d62cb82f9b949f2a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.38adb1b0efef4a595068.js.map
