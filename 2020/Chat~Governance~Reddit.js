@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d5d50ed23fa6604d93e3.js
-// Retrieved at 10/28/2020, 4:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.38da3c3d9985057e4d68.js
+// Retrieved at 10/28/2020, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("116944"),
+				buildNumber: r("116947"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603913984"),
+				})("1603914834"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -2055,16 +2055,12 @@
 				o = i.n(s),
 				d = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				l = i.n(d),
-				a = i("./src/lib/extractQueryParams/index.ts");
-			i("./node_modules/core-js/modules/web.dom.iterable.js");
+				a = i("./src/lib/extractQueryParams/index.ts"),
+				u = i("./src/lib/mapToObject/index.ts");
 			t.a = (e, t) => {
 				const i = l.a.parse(e),
 					n = o()(t, e => !r()(e));
-				return i.query = Object.assign(Object.assign({}, function(e) {
-					const t = {};
-					for (const i of e.keys()) "string" == typeof i && (t[i] = e.get(i));
-					return t
-				}(Object(a.a)(e))), n), i.search = void 0, l.a.format(i)
+				return i.query = Object.assign(Object.assign({}, Object(u.a)(Object(a.a)(e))), n), i.search = void 0, l.a.format(i)
 			}
 		},
 		"./src/lib/apiErrorHelpers.ts": function(e, t, i) {
@@ -3431,14 +3427,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("df9799e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("bc5e458-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "df9799e-production",
+						release: "bc5e458-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3891,7 +3887,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "df9799e-production",
+							releaseClient: "bc5e458-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -4413,6 +4409,19 @@
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
 					n = e || "!";
 				return t && (n = "".concat(n, "--[user:").concat(t, "]")), void 0 !== i.include_over_18 && (n = "".concat(n, "--[include_over_18:").concat(i.include_over_18, "]")), i.q && (n = "".concat(n, "--[q:").concat(i.q, "]")), i.restrict_sr && (n = "".concat(n, "--[restrict_sr:").concat(i.restrict_sr, "]")), i.sort && (n = "".concat(n, "--[sort:").concat(i.sort, "]")), i.t && (n = "".concat(n, "--[t:").concat(i.t, "]")), i.category && (n = "".concat(n, "--[c:").concat(i.category, "]")), i.type && (n = "".concat(n, "--[type:").concat(o(i.type), "]")), n.toLowerCase()
+			}
+		},
+		"./src/lib/mapToObject/index.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return n
+			}));
+			i("./node_modules/core-js/modules/web.dom.iterable.js");
+
+			function n(e) {
+				const t = {};
+				for (const i of e.keys()) "string" == typeof i && (t[i] = e.get(i));
+				return t
 			}
 		},
 		"./src/lib/matchRoute/index.ts": function(e, t, i) {
@@ -25957,4 +25966,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d5d50ed23fa6604d93e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.38da3c3d9985057e4d68.js.map

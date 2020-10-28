@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e75ebd0fbd6939792e7d.js
-// Retrieved at 10/28/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1bbaee89fc3bea1e59a9.js
+// Retrieved at 10/28/2020, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -952,7 +952,7 @@
 						});
 						if (!s) return {};
 						const n = !!s.media && "rpan" === s.media.type,
-							a = n && Object(_.f)(e, t.thingId, D.l);
+							a = n && Object(_.g)(e, t.thingId, D.l);
 						return {
 							post: Object.assign(Object.assign({}, s), {
 								isRPANBroadcast: n,
@@ -1453,7 +1453,7 @@
 						let {
 							thingId: s
 						} = t;
-						return Object(_.f)(e, s, D.l)
+						return Object(_.g)(e, s, D.l)
 					}
 				}), e => {
 					const {
@@ -1937,7 +1937,7 @@
 						streamIdFromPath: s
 					} = t;
 					return s
-				}, (e, t) => p(t.listingName)(e, t), x, g, d.h, c.d, (e, t, s, n, a, d) => {
+				}, (e, t) => p(t.listingName)(e, t), x, g, d.h, c.e, (e, t, s, n, a, d) => {
 					if (d) {
 						const r = [];
 						if (e) {
@@ -2103,4 +2103,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e75ebd0fbd6939792e7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1bbaee89fc3bea1e59a9.js.map

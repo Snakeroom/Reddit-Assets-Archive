@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.15873ea1321d0a9a1526.js
-// Retrieved at 10/26/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.a76dfd364533e283a5d0.js
+// Retrieved at 10/28/2020, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -1153,7 +1153,7 @@
 								identifier: O.belongsTo
 							});
 						if ((O.media && O.media.type) === de.o.LIVEVIDEO) {
-							const e = Object(ke.d)(p),
+							const e = Object(ke.e)(p),
 								s = O.belongsTo.type === te.a.SUBREDDIT,
 								r = e && s ? i.url : "/",
 								n = Object(x.n)(O.id),
@@ -1608,110 +1608,6 @@
 						account: O.account,
 						userDataExportEligibility: j.data.identity.userDataExportEligibility.isUserEligibleForDataExport
 					}))
-				}
-		},
-		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "c", (function() {
-				return b
-			})), s.d(t, "a", (function() {
-				return O
-			})), s.d(t, "b", (function() {
-				return j
-			})), s.d(t, "d", (function() {
-				return k
-			})), s.d(t, "e", (function() {
-				return w
-			}));
-			s("./node_modules/core-js/modules/es6.regexp.search.js"), s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r = s("./node_modules/query-string/index.js"),
-				i = s.n(r),
-				n = s("./src/lib/makeActionCreator/index.ts"),
-				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				o = s("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
-				c = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				l = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const u = new Set(["home", "r/popular"]),
-				b = e => {
-					const t = location && location.search || "",
-						s = i.a.parse(t);
-					u.has(e) && (s.related = e);
-					const r = i.a.stringify(s);
-					return r ? "?".concat(r) : ""
-				},
-				p = Object(n.a)(a.N),
-				m = Object(n.a)(a.y),
-				g = Object(n.a)(a.O),
-				f = Object(n.a)(a.z),
-				h = Object(n.a)(a.M),
-				y = Object(n.a)(a.L),
-				O = Object(n.a)(a.t),
-				j = Object(n.a)(a.u),
-				k = e => async (t, s, r) => {
-					let {
-						gqlContext: i
-					} = r;
-					const n = Object(c.h)(e),
-						a = s();
-					if (Object(l.d)(a, n)) return;
-					t(p(n));
-					const d = await Object(o.e)(i(), n),
-						u = Date.now();
-					if (d.ok && d.body && d.body.data) {
-						const e = d.body.data;
-						t(m({
-							model: e,
-							utcTimeStamp: u
-						}))
-					} else t(x({
-						streamId: n,
-						error: d.error,
-						utcTimeStamp: u
-					}))
-				}, w = (e, t) => async (s, r) => Object(d.d)(r()) ? s(E(e, t)) : s(_()), _ = () => async (e, t, s) => {
-					let {
-						gqlContext: r
-					} = s;
-					const i = t();
-					if (Object(l.f)(i)) return;
-					e(g());
-					const n = await Object(o.g)(r()),
-						a = Date.now();
-					if (n.ok && n.body && n.body.data) {
-						const t = n.body.data;
-						e(f({
-							models: t,
-							utcTimeStamp: a
-						}))
-					} else e(v({
-						error: n.error,
-						utcTimeStamp: a
-					}))
-				}, E = (e, t) => async (s, r, i) => {
-					let {
-						gqlContext: n
-					} = i;
-					const a = r();
-					if (Object(l.f)(a)) return;
-					s(g());
-					const c = await Object(o.f)(n(), e, t),
-						d = Date.now();
-					if (c.ok && c.body && c.body.data) {
-						const t = c.body.data;
-						s(f({
-							listingName: e,
-							models: t,
-							utcTimeStamp: d
-						}))
-					} else s(v({
-						error: c.error,
-						utcTimeStamp: d
-					}))
-				}, x = e => async t => {
-					t(h(e))
-				}, v = e => async t => {
-					t(y(e))
 				}
 		},
 		"./src/reddit/actions/redditEmbed.ts": function(e, t, s) {
@@ -2279,4 +2175,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.15873ea1321d0a9a1526.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.a76dfd364533e283a5d0.js.map
