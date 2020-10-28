@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.afc87050fe62be34323e.js
-// Retrieved at 10/28/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.a29a0ee6811e6535a39c.js
+// Retrieved at 10/28/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -3492,21 +3492,21 @@
 			const P = 2 * r.eb;
 			var R = e => Date.now() + P < new Date(e.expires).getTime(),
 				C = n("./src/reddit/helpers/localStorage/index.ts"),
-				w = async (e, t, n) => {
-					let s = t.accessToken;
-					await E()(async (o, i) => {
-						if (!R(t) || !s) {
-							const r = await Object(S.b)(e, t, n);
+				w = async (e, t) => {
+					let n = t.accessToken;
+					await E()(async (s, o) => {
+						if (!R(t) || !n) {
+							const r = await Object(S.b)(e, t);
 							if (r.ok) {
 								const e = r.body;
-								s = e.accessToken
-							} else if (1 === i) return o()
+								n = e.accessToken
+							} else if (1 === o) return s()
 						}
-						const c = await Object(_.a)(e, {
+						const i = await Object(_.a)(e, {
 							endpoint: "/logoutproxy",
 							method: r.db.POST,
 							data: {
-								access_token: s
+								access_token: n
 							}
 						});
 						if (await async function(e, t) {
@@ -3519,7 +3519,7 @@
 									},
 									type: "json"
 								})
-							}(e, c && c.ok), !c.ok) return o()
+							}(e, i && i.ok), !i.ok) return s()
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
@@ -8822,4 +8822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.afc87050fe62be34323e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.a29a0ee6811e6535a39c.js.map

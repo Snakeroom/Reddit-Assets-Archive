@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.10b2f444ecf88758bc99.js
-// Retrieved at 10/28/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.80d7e78fec337619d23c.js
+// Retrieved at 10/28/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("116972"),
+				buildNumber: r("117002"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603922455"),
+				})("1603927020"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3427,14 +3427,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("08c107e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("7c4dfb3-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "08c107e-production",
+						release: "7c4dfb3-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3887,7 +3887,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "08c107e-production",
+							releaseClient: "7c4dfb3-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -6141,50 +6141,47 @@
 		"./src/reddit/actions/session.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return o
+				return s
 			})), i.d(t, "d", (function() {
-				return d
+				return o
 			})), i.d(t, "e", (function() {
-				return l
+				return d
 			})), i.d(t, "f", (function() {
-				return a
+				return l
 			})), i.d(t, "a", (function() {
-				return u
+				return a
 			})), i.d(t, "b", (function() {
-				return c
+				return u
 			})), i.d(t, "g", (function() {
-				return p
+				return m
 			})), i.d(t, "h", (function() {
-				return g
+				return h
 			}));
 			var n = i("./src/lib/makeActionCreator/index.ts"),
-				r = i("./src/reddit/endpoints/session/index.ts"),
-				s = i("./src/reddit/selectors/platform.ts");
-			const o = "SESSION__USER_AUTHENTICATED",
-				d = "SESSION__USER_LOGGED_OUT",
-				l = "SESSION__USER_REAUTHENTICATED",
-				a = "SESSION__USER_REFRESH_FAILED",
-				u = "SESSION__LOAT_RECEIVED",
-				c = "SESSION__LOAT_REFRESHED",
-				_ = (Object(n.a)(o), Object(n.a)(l)),
-				m = Object(n.a)(d),
-				p = (Object(n.a)(a), () => async (e, t, i) => {
+				r = i("./src/reddit/endpoints/session/index.ts");
+			const s = "SESSION__USER_AUTHENTICATED",
+				o = "SESSION__USER_LOGGED_OUT",
+				d = "SESSION__USER_REAUTHENTICATED",
+				l = "SESSION__USER_REFRESH_FAILED",
+				a = "SESSION__LOAT_RECEIVED",
+				u = "SESSION__LOAT_REFRESHED",
+				c = (Object(n.a)(s), Object(n.a)(d)),
+				_ = Object(n.a)(o),
+				m = (Object(n.a)(l), () => async (e, t, i) => {
 					let {
 						apiContext: n
 					} = i;
-					const o = t(),
-						d = o.user.session,
-						l = Object(s.q)(o);
-					if (d) {
-						const t = await Object(r.b)(n(), d, l);
+					const s = t().user.session;
+					if (s) {
+						const t = await Object(r.b)(n(), s);
 						if (t.ok) {
 							const i = t.body;
-							i.unsafeLoggedOut ? (d.unsafeLoggedOut || e(m()), e(h(i))) : e(_(i))
+							i.unsafeLoggedOut ? (s.unsafeLoggedOut || e(_()), e(p(i))) : e(c(i))
 						}
 					}
 				}),
-				h = (Object(n.a)(u), Object(n.a)(c)),
-				g = () => async (e, t, i) => {
+				p = (Object(n.a)(a), Object(n.a)(u)),
+				h = () => async (e, t, i) => {
 					let {
 						apiContext: n
 					} = i;
@@ -8815,12 +8812,11 @@
 				o = i("./src/lib/omitHeaders/index.ts"),
 				d = i("./src/reddit/constants/headers.ts");
 			const l = Object(n.a)(400),
-				a = (e, t, i) => Object(s.a)(e, {
+				a = (e, t) => Object(s.a)(e, {
 					allowErrorLogging: l,
 					data: t,
 					endpoint: "/refreshproxy",
-					method: r.db.POST,
-					query: i
+					method: r.db.POST
 				}),
 				u = e => Object(s.a)(Object(o.a)(e, [d.a]), {
 					endpoint: "/api/v2/issue_session",
@@ -25966,4 +25962,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.10b2f444ecf88758bc99.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.80d7e78fec337619d23c.js.map
