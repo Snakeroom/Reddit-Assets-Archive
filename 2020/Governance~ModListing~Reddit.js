@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.cc631c3a10363b228407.js
-// Retrieved at 10/28/2020, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.afc87050fe62be34323e.js
+// Retrieved at 10/28/2020, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -5765,7 +5765,7 @@
 							q: N ? 1 : 0,
 							r: t.eventGlobalCount ? t.eventGlobalCount : 0
 						};
-					return p.isVideo && (G.va = p.isVideo ? 1 : 0, G.vh = w ? Math.floor(w.height) : 0, G.vw = w ? Math.floor(w.width) : 0, G.ve = p.videoVolume || 0, G.vc = Math.floor(p.videoDuration || 0), G.vd = Math.floor(p.cumulativeViewedTime) || 0, G.vq = p.wasFullScreen || 0, G.vg = _[1].timeEntered ? 1 : 0, G.vb = _[50].totalTime + g[50], G.vs = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoStarted, p.videoStarted), G.vt = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched25, p.watched25), G.vu = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched50, p.watched50), G.vv = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched75, p.watched75), G.vx = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched100, p.watched100), G.vo = c("vo", n, o.a.VideoWatched50, h.inView100, p.watched50State) ? 1 : 0, G.vr = c("vr", n, o.a.VideoWatched50, h.inView80 && h.audible, p.watched50State) || M.totalTime + g.HALF_DURATION_80_IN_VIEW_AUDIBLE >= 15e3 ? 1 : 0, G.vj = c("vj", n, o.a.VideoWatched50, h.inView100 && h.audible, p.watched50State) ? 1 : 0, G.vl = c("vl", n, o.a.VideoWatched100, h.inView100, p.watched100State) ? 1 : 0, G.vk = c("vk", n, o.a.VideoWatched100, h.audible, p.watched100State) ? 1 : 0, G.vp = c("vp", n, o.a.VideoWatched100, h.inView100 && h.audible, p.watched100State) ? 1 : 0, G.vm = c("vm", n, o.a.VideoWatched100, h.inView50 && h.audible, p.watched100State) ? 1 : 0, G.vn = c("vn", n, o.a.VideoWatched100, h.inView50 && h.muted, p.watched100State) ? 1 : 0, G.vy = _.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + g.FULL_IN_VIEW_AUDIBLE_TIME, G.vz = _[100].totalTime + g[100], G.xa = U ? 1 : 0, G.xb = Math.max(_[50].maxContinuousTime, g[50])), G
+					return p.isVideo && (G.va = p.isVideo ? 1 : 0, G.vh = w ? Math.floor(w.height) : 0, G.vw = w ? Math.floor(w.width) : 0, G.ve = p.videoVolume || 0, G.vc = Math.floor(p.videoDuration || 0), G.vd = Math.floor(p.cumulativeViewedTime) || 0, G.vq = p.wasFullScreen || 0, G.vg = _[1].timeEntered ? 1 : 0, G.vb = _[50].totalTime + g[50], G.vs = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoStarted, p.videoStarted), G.vt = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched25, p.watched25), G.vu = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched50, p.watched50), G.vv = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched75, p.watched75), G.vx = a(p.videoVolume, _[1].timeEntered, n === o.a.VideoWatched100, p.watched100), G.vo = c("vo", n, o.a.VideoWatched50, h.inView100, p.watched50State) ? 1 : 0, G.vr = c("vr", n, o.a.VideoWatched50, h.inView80 && h.audible, p.watched50State) || M.totalTime + g.HALF_DURATION_80_IN_VIEW_AUDIBLE >= 15e3 ? 1 : 0, G.vj = c("vj", n, o.a.VideoWatched50, h.inView100 && h.audible, p.watched50State) ? 1 : 0, G.vl = c("vl", n, o.a.VideoWatched100, h.inView100, p.watched100State) ? 1 : 0, G.vk = c("vk", n, o.a.VideoWatched100, h.audible, p.watched100State) ? 1 : 0, G.vp = c("vp", n, o.a.VideoWatched100, h.inView100 && h.audible, p.watched100State) ? 1 : 0, G.vm = c("vm", n, o.a.VideoWatched100, h.inView50 && h.audible, p.watched100State) ? 1 : 0, G.vn = c("vn", n, o.a.VideoWatched100, h.inView50 && h.muted, p.watched100State) ? 1 : 0, G.vy = _.FULL_IN_VIEW_AUDIBLE_TIME.totalTime + g.FULL_IN_VIEW_AUDIBLE_TIME, G.vi = _.AUDIBLE_TIME.totalTime + g.AUDIBLE_TIME, G.vz = _[100].totalTime + g[100], G.xa = U ? 1 : 0, G.xb = Math.max(_[50].maxContinuousTime, g[50])), G
 				}
 		},
 		"./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts": function(e, t, n) {
@@ -8822,4 +8822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.cc631c3a10363b228407.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.afc87050fe62be34323e.js.map
