@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.67a3bc946dfc27714f05.js
-// Retrieved at 10/29/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.c4804bdf6bbd66a1cd56.js
+// Retrieved at 10/29/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -687,7 +687,7 @@
 						a = Object(y.O)(i, {
 							postId: e
 						});
-					t ? (s(Object(x.a)(a.permalink)), Object(v.d)(e, "edit")(i)) : Object(g.b)(e, "edit")(i);
+					t ? (s(Object(x.a)(a.permalink)), Object(v.e)(e, "edit")(i)) : Object(g.b)(e, "edit")(i);
 					const {
 						media: c
 					} = a;
@@ -11475,4 +11475,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.67a3bc946dfc27714f05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.c4804bdf6bbd66a1cd56.js.map

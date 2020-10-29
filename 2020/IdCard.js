@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.b66fdfcefc9235344b5c.js
-// Retrieved at 10/29/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.b53a92d8bc684d894d9f.js
+// Retrieved at 10/29/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3169,46 +3169,61 @@
 		"./src/reddit/helpers/trackers/lightbox.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return c
-			})), n.d(t, "c", (function() {
 				return d
 			})), n.d(t, "d", (function() {
 				return l
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "c", (function() {
 				return u
+			})), n.d(t, "e", (function() {
+				return m
+			})), n.d(t, "a", (function() {
+				return p
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/telemetry/index.ts"),
-				o = n("./src/reddit/selectors/platform.ts"),
-				i = n("./src/reddit/selectors/telemetry.ts");
-			const a = e => ({
-					profile: i.profile(e),
-					screen: i.screen(e),
-					subreddit: i.subreddit(e)
+				o = n("./src/reddit/helpers/getCommentsPageSort/index.ts"),
+				i = n("./src/reddit/selectors/platform.ts"),
+				a = n("./src/reddit/selectors/telemetry.ts");
+			const c = e => ({
+					profile: a.profile(e),
+					screen: a.screen(e),
+					subreddit: a.subreddit(e)
 				}),
-				c = (e, t, n) => s => Object.assign(Object.assign({
-					source: Object(o.i)(s) || n ? "post_lightbox" : "post_detail",
+				d = (e, t, n) => s => Object.assign(Object.assign({
+					source: Object(i.i)(s) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t
-				}, a(s)), {
-					post: i.post(s, e)
+				}, c(s)), {
+					post: a.post(s, e)
 				}),
-				d = (e, t) => n => {
-					const s = i.currentPost(n);
-					return s ? c(s.id, e, t)(n) : Object.assign({
-						source: Object(o.i)(n) || t ? "post_lightbox" : "post_detail",
+				l = (e, t, n, s) => r => {
+					const i = n ? a.comment(r, n) : null,
+						{
+							sortToUse: c
+						} = Object(o.a)(r, e);
+					return Object.assign(Object.assign({}, d(e, t, s)(r)), {
+						comment: i,
+						listing: {
+							sort: c
+						}
+					})
+				},
+				u = (e, t) => n => {
+					const s = a.currentPost(n);
+					return s ? d(s.id, e, t)(n) : Object.assign({
+						source: Object(i.i)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e
-					}, a(n))
+					}, c(n))
 				},
-				l = (e, t) => n => Object(r.a)(Object.assign(Object.assign({}, c(e, t)(n)), i.defaults(n))),
-				u = e => t => Object.assign(Object.assign({
+				m = (e, t) => n => Object(r.a)(Object.assign(Object.assign({}, d(e, t)(n)), a.defaults(n))),
+				p = e => t => Object.assign(Object.assign({
 					source: "id_card",
 					action: s.c.CLICK,
 					noun: e
-				}, a(t)), {
-					post: i.currentPost(t),
-					userSubreddit: i.userSubreddit(t)
+				}, c(t)), {
+					post: a.currentPost(t),
+					userSubreddit: a.userSubreddit(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/modHub.ts": function(e, t, n) {
@@ -3538,4 +3553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.b66fdfcefc9235344b5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.b53a92d8bc684d894d9f.js.map

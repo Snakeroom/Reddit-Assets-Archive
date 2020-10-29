@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.43b68d731d51764a4b47.js
-// Retrieved at 10/29/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.556edd589e8b8d5cea16.js
+// Retrieved at 10/29/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2590,7 +2590,7 @@
 						a = Object(k.O)(i, {
 							postId: e
 						});
-					t ? (s(Object(f.a)(a.permalink)), Object(x.d)(e, "edit")(i)) : Object(O.b)(e, "edit")(i);
+					t ? (s(Object(f.a)(a.permalink)), Object(x.e)(e, "edit")(i)) : Object(O.b)(e, "edit")(i);
 					const {
 						media: c
 					} = a;
@@ -12033,46 +12033,61 @@
 		"./src/reddit/helpers/trackers/lightbox.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return c
-			})), s.d(t, "c", (function() {
 				return d
 			})), s.d(t, "d", (function() {
 				return l
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return u
+			})), s.d(t, "e", (function() {
+				return m
+			})), s.d(t, "a", (function() {
+				return p
 			}));
 			var n = s("./src/reddit/constants/tracking.ts"),
 				o = s("./src/telemetry/index.ts"),
-				r = s("./src/reddit/selectors/platform.ts"),
-				i = s("./src/reddit/selectors/telemetry.ts");
-			const a = e => ({
-					profile: i.profile(e),
-					screen: i.screen(e),
-					subreddit: i.subreddit(e)
+				r = s("./src/reddit/helpers/getCommentsPageSort/index.ts"),
+				i = s("./src/reddit/selectors/platform.ts"),
+				a = s("./src/reddit/selectors/telemetry.ts");
+			const c = e => ({
+					profile: a.profile(e),
+					screen: a.screen(e),
+					subreddit: a.subreddit(e)
 				}),
-				c = (e, t, s) => n => Object.assign(Object.assign({
-					source: Object(r.i)(n) || s ? "post_lightbox" : "post_detail",
+				d = (e, t, s) => n => Object.assign(Object.assign({
+					source: Object(i.i)(n) || s ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t
-				}, a(n)), {
-					post: i.post(n, e)
+				}, c(n)), {
+					post: a.post(n, e)
 				}),
-				d = (e, t) => s => {
-					const n = i.currentPost(s);
-					return n ? c(n.id, e, t)(s) : Object.assign({
-						source: Object(r.i)(s) || t ? "post_lightbox" : "post_detail",
+				l = (e, t, s, n) => o => {
+					const i = s ? a.comment(o, s) : null,
+						{
+							sortToUse: c
+						} = Object(r.a)(o, e);
+					return Object.assign(Object.assign({}, d(e, t, n)(o)), {
+						comment: i,
+						listing: {
+							sort: c
+						}
+					})
+				},
+				u = (e, t) => s => {
+					const n = a.currentPost(s);
+					return n ? d(n.id, e, t)(s) : Object.assign({
+						source: Object(i.i)(s) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e
-					}, a(s))
+					}, c(s))
 				},
-				l = (e, t) => s => Object(o.a)(Object.assign(Object.assign({}, c(e, t)(s)), i.defaults(s))),
-				u = e => t => Object.assign(Object.assign({
+				m = (e, t) => s => Object(o.a)(Object.assign(Object.assign({}, d(e, t)(s)), a.defaults(s))),
+				p = e => t => Object.assign(Object.assign({
 					source: "id_card",
 					action: n.c.CLICK,
 					noun: e
-				}, a(t)), {
-					post: i.currentPost(t),
-					userSubreddit: i.userSubreddit(t)
+				}, c(t)), {
+					post: a.currentPost(t),
+					userSubreddit: a.userSubreddit(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, s) {
@@ -14249,4 +14264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.43b68d731d51764a4b47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.556edd589e8b8d5cea16.js.map

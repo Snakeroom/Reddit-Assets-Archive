@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.bb1a9c5dca7e7ca2a02c.js
-// Retrieved at 10/29/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.c7654a22cecb9be1fa43.js
+// Retrieved at 10/29/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-MediumPost"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -3335,46 +3335,61 @@
 		"./src/reddit/helpers/trackers/lightbox.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return c
-			})), s.d(t, "c", (function() {
 				return l
 			})), s.d(t, "d", (function() {
 				return d
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return u
+			})), s.d(t, "e", (function() {
+				return m
+			})), s.d(t, "a", (function() {
+				return p
 			}));
 			var n = s("./src/reddit/constants/tracking.ts"),
 				r = s("./src/telemetry/index.ts"),
-				i = s("./src/reddit/selectors/platform.ts"),
-				o = s("./src/reddit/selectors/telemetry.ts");
-			const a = e => ({
-					profile: o.profile(e),
-					screen: o.screen(e),
-					subreddit: o.subreddit(e)
+				i = s("./src/reddit/helpers/getCommentsPageSort/index.ts"),
+				o = s("./src/reddit/selectors/platform.ts"),
+				a = s("./src/reddit/selectors/telemetry.ts");
+			const c = e => ({
+					profile: a.profile(e),
+					screen: a.screen(e),
+					subreddit: a.subreddit(e)
 				}),
-				c = (e, t, s) => n => Object.assign(Object.assign({
-					source: Object(i.i)(n) || s ? "post_lightbox" : "post_detail",
+				l = (e, t, s) => n => Object.assign(Object.assign({
+					source: Object(o.i)(n) || s ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t
-				}, a(n)), {
-					post: o.post(n, e)
+				}, c(n)), {
+					post: a.post(n, e)
 				}),
-				l = (e, t) => s => {
-					const n = o.currentPost(s);
-					return n ? c(n.id, e, t)(s) : Object.assign({
-						source: Object(i.i)(s) || t ? "post_lightbox" : "post_detail",
+				d = (e, t, s, n) => r => {
+					const o = s ? a.comment(r, s) : null,
+						{
+							sortToUse: c
+						} = Object(i.a)(r, e);
+					return Object.assign(Object.assign({}, l(e, t, n)(r)), {
+						comment: o,
+						listing: {
+							sort: c
+						}
+					})
+				},
+				u = (e, t) => s => {
+					const n = a.currentPost(s);
+					return n ? l(n.id, e, t)(s) : Object.assign({
+						source: Object(o.i)(s) || t ? "post_lightbox" : "post_detail",
 						action: "click",
 						noun: e
-					}, a(s))
+					}, c(s))
 				},
-				d = (e, t) => s => Object(r.a)(Object.assign(Object.assign({}, c(e, t)(s)), o.defaults(s))),
-				u = e => t => Object.assign(Object.assign({
+				m = (e, t) => s => Object(r.a)(Object.assign(Object.assign({}, l(e, t)(s)), a.defaults(s))),
+				p = e => t => Object.assign(Object.assign({
 					source: "id_card",
 					action: n.c.CLICK,
 					noun: e
-				}, a(t)), {
-					post: o.currentPost(t),
-					userSubreddit: o.userSubreddit(t)
+				}, c(t)), {
+					post: a.currentPost(t),
+					userSubreddit: a.userSubreddit(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, s) {
@@ -4193,4 +4208,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.bb1a9c5dca7e7ca2a02c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-MediumPost.c7654a22cecb9be1fa43.js.map

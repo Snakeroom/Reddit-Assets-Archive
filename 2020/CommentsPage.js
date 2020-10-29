@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.0fe011f121c79759d908.js
-// Retrieved at 10/29/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.06887855b5d360c57b9f.js
+// Retrieved at 10/29/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1356,7 +1356,7 @@
 						a = Object(k.O)(i, {
 							postId: e
 						});
-					t ? (s(Object(x.a)(a.permalink)), Object(f.d)(e, "edit")(i)) : Object(v.b)(e, "edit")(i);
+					t ? (s(Object(x.a)(a.permalink)), Object(f.e)(e, "edit")(i)) : Object(v.b)(e, "edit")(i);
 					const {
 						media: c
 					} = a;
@@ -4047,13 +4047,13 @@
 						subredditAboutInfo: j,
 						toggleDeleteCommentModal: w,
 						toggleSendReplies: _,
-						trackClick: I
+						trackCommentClick: I
 					} = this.props, P = Object(Z.a)(h), S = !!s && s.displayText === e.author, N = !!s && s.isEmployee, A = !(j && j.userIsBanned) && (f || g || P && d || e.isLocked ? P && d : d || c), M = Object(pe.a)(e), L = P && !x && S && !e.bannedBy, R = S && N && !e.bannedBy, F = L || R, B = s && e.isGildable, D = [];
 					A && D.push(a.a.createElement(We, {
 						disabled: m,
 						key: "reply",
 						onClick: () => {
-							r(), G()(() => I("reply")())
+							r(), G()(() => I("reply", e.id)())
 						}
 					}, a.a.createElement(Ae, null), T.fbt._("Reply", null, {
 						hk: "dq9W0"
@@ -4506,7 +4506,7 @@
 						commentId: s,
 						commentsPageKey: n,
 						scrollToAndRemeasure: o,
-						trackClick: r
+						trackCommentClick: r
 					} = t;
 					return {
 						onCollapseClick: () => e(Object(u.nb)({
@@ -4518,7 +4518,7 @@
 						onOpenPowerupsModal: () => e(Object(F.b)()),
 						onVoteClick: t => {
 							const [n, o] = t === Dt.a.upvoted ? [Object(u.rb)(s), "upvote_comment"] : [Object(u.T)(s), "downvote_comment"];
-							r(o)(), e(n)
+							r(o, s)(), e(n)
 						}
 					}
 				}),
@@ -4560,7 +4560,7 @@
 						prediction: W,
 						replyFormOpen: H,
 						subreddit: V,
-						trackClick: U,
+						trackCommentClick: U,
 						renderedInOverlay: G,
 						subredditType: K
 					} = e, q = Object(N.a)(), z = n.isDeleted, J = !O && !z && !!p && p.length > 0, X = Object(M.a)(A.c.edit, n.id), Q = Object(M.a)(A.c.replyToComment, n.id), Y = Object(Z.a)(_), $ = n.authorIsContractor && K === Bt.e.EmployeesOnly, ee = n.isLocked, te = Y && I, se = !O && !z && (k || C), [ne, oe] = Object(i.useState)(null), [re, ie] = Object(i.useState)(null);
@@ -4602,7 +4602,7 @@
 					}), r && a.a.createElement(Xt, {
 						className: n.id,
 						onClick: () => {
-							s(), P(), U("collapse")()
+							s(), P(), U("collapse", n.id)()
 						},
 						onMouseOver: () => L(n.id),
 						onMouseOut: s
@@ -4714,7 +4714,7 @@
 						moderatorPermissions: d || _,
 						renderedInOverlay: G,
 						subreddit: V,
-						trackClick: U
+						trackCommentClick: U
 					})), J && p.map(e => a.a.createElement(Yt, {
 						key: e
 					}, e)), H && a.a.createElement(B.a, {
@@ -4752,7 +4752,7 @@
 					}))))
 				}));
 			var ls = e => a.a.createElement(wt.a.Consumer, null, t => a.a.createElement(ds, zt({}, e, {
-					trackClick: t
+					trackCommentClick: t
 				}))),
 				ms = s("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
 				ps = s("./src/reddit/contexts/InsideOverlay.tsx"),
@@ -18184,7 +18184,7 @@
 								tooltipType: Be.c.StickyPost
 							}))
 						})), l && this.postScrollItemRef && (this.postPaused || !c && !this.didScrollPastPost ? this.postPaused && !this.didScrollPastPost && (c ? this.recheckScrollTimer = setTimeout(this.handleScroll, 4 * j.G) : (this.postPaused = !1, _.a.write(this.postScrollItemRef.focusContent))) : (this.postPaused = !0, _.a.write(this.postScrollItemRef.pauseContent)))
-					}, j.G), this.sendEventWithName = e => () => this.props.sendEvent(Object(qe.b)(this.props.postId, e)), this.updateWindowHeight = () => {
+					}, j.G), this.sendEventWithName = (e, t) => () => this.props.sendEvent(Object(qe.d)(this.props.postId, e, t)), this.updateWindowHeight = () => {
 						this.needsUpdatedMeasurements = !0, this.handleScroll()
 					}, this.updateCommentSortRef = e => {
 						this.commentSortRef = e, this.needsUpdatedMeasurements = !0
@@ -18970,4 +18970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0fe011f121c79759d908.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.06887855b5d360c57b9f.js.map

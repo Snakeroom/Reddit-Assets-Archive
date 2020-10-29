@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.61c4efefb4a663085ffa.js
-// Retrieved at 10/29/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.203dbdf20e004a660db3.js
+// Retrieved at 10/29/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -449,7 +449,7 @@
 						i = Object(C.O)(a, {
 							postId: e
 						});
-					t ? (s(Object(x.a)(i.permalink)), Object(v.d)(e, "edit")(a)) : Object(g.b)(e, "edit")(a);
+					t ? (s(Object(x.a)(i.permalink)), Object(v.e)(e, "edit")(a)) : Object(g.b)(e, "edit")(a);
 					const {
 						media: c
 					} = i;
@@ -13703,4 +13703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.61c4efefb4a663085ffa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.203dbdf20e004a660db3.js.map

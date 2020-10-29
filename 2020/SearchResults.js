@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.19c30e53ab2db9a8a951.js
-// Retrieved at 10/29/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.2593e3003e4b0708df98.js
+// Retrieved at 10/29/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -346,7 +346,7 @@
 						a = Object(j.O)(i, {
 							postId: e
 						});
-					t ? (s(Object(x.a)(a.permalink)), Object(g.d)(e, "edit")(i)) : Object(v.b)(e, "edit")(i);
+					t ? (s(Object(x.a)(a.permalink)), Object(g.e)(e, "edit")(i)) : Object(v.b)(e, "edit")(i);
 					const {
 						media: c
 					} = a;
@@ -13398,4 +13398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.19c30e53ab2db9a8a951.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.2593e3003e4b0708df98.js.map

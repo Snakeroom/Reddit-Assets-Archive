@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.6edb601d88facdc469a6.js
-// Retrieved at 8/17/2020, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.f9c8ee7004fd11fafee6.js
+// Retrieved at 10/29/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./src/reddit/components/Comments/helpers/hiddenComments.ts": function(t, e, s) {
@@ -382,4 +382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=ShortcutWrapper.6edb601d88facdc469a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.f9c8ee7004fd11fafee6.js.map

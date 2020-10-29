@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.728a6d9535f26c01b58b.js
-// Retrieved at 10/29/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.e34be1675cb371457a20.js
+// Retrieved at 10/29/2020, 6:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -490,7 +490,7 @@
 						a = Object(_.O)(i, {
 							postId: e
 						});
-					t ? (s(Object(x.a)(a.permalink)), Object(g.d)(e, "edit")(i)) : Object(v.b)(e, "edit")(i);
+					t ? (s(Object(x.a)(a.permalink)), Object(g.e)(e, "edit")(i)) : Object(v.b)(e, "edit")(i);
 					const {
 						media: c
 					} = a;
@@ -15695,4 +15695,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.728a6d9535f26c01b58b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.e34be1675cb371457a20.js.map
