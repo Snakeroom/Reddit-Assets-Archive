@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.d181ae1e67efef499840.js
-// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.701e20fc6d231ba28a99.js
+// Retrieved at 10/29/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, a, t) {
@@ -590,9 +590,9 @@
 				B = t("./src/reddit/components/CoinPurchasePackage/index.m.less"),
 				G = t.n(B),
 				V = t("./src/lib/classNames/index.ts"),
-				q = t("./src/reddit/controls/Button/index.tsx"),
-				z = t("./src/reddit/icons/svgs/Coin/index.tsx"),
-				F = t("./src/reddit/icons/svgs/Stamp/index.tsx");
+				z = t("./src/reddit/controls/Button/index.tsx"),
+				F = t("./src/reddit/icons/svgs/Coin/index.tsx"),
+				q = t("./src/reddit/icons/svgs/Stamp/index.tsx");
 			var R = e => {
 					const {
 						className: a,
@@ -621,7 +621,7 @@
 						className: G.a.badge
 					}, p), k && l.a.createElement("div", {
 						className: Object(V.a)(G.a.stamp, v)
-					}, l.a.createElement(F.a, {
+					}, l.a.createElement(q.a, {
 						className: G.a.stampIcon
 					}), l.a.createElement("div", {
 						className: Object(V.a)(G.a.stampValue, v)
@@ -631,7 +631,7 @@
 						className: Object(V.a)(G.a.contentContainer, v)
 					}, l.a.createElement("div", {
 						className: Object(V.a)(G.a.price, v)
-					}, l.a.createElement(z.a, {
+					}, l.a.createElement(F.a, {
 						className: G.a.priceCoinIcon
 					}), l.a.createElement("div", null, l.a.createElement("div", {
 						className: G.a.priceValue
@@ -647,7 +647,7 @@
 						className: Object(V.a)(G.a.description, v)
 					}, d), l.a.createElement("div", {
 						className: G.a.ctaContainer
-					}, l.a.createElement(q.i, {
+					}, l.a.createElement(z.i, {
 						className: Object(V.a)(G.a.cta, v),
 						onClick: c
 					}, h), _ && l.a.createElement("div", {
@@ -705,12 +705,12 @@
 					className: $.a.premiumDescription
 				}, ee._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [ee._param("Number of monthly coins", p)], {
 					hk: "42dB3q"
-				})), n ? l.a.createElement(q.i, {
+				})), n ? l.a.createElement(z.i, {
 					className: $.a.premiumCTA,
 					onClick: r
 				}, ee._("Manage", null, {
 					hk: "4BQsAp"
-				})) : l.a.createElement(q.i, {
+				})) : l.a.createElement(z.i, {
 					className: $.a.premiumCTA,
 					onClick: c
 				}, t ? ee._("Upgrade", null, {
@@ -777,11 +777,11 @@
 					className: re.a.heroDescription
 				}, ie._("Coins are a virtual good you can use to award exemplary posts or comments. Support Reddit and encourage your favorite contributors to keep making Reddit better.", null, {
 					hk: "3rPVMo"
-				})), l.a.createElement(q.f, {
+				})), l.a.createElement(z.f, {
 					className: re.a.heroCTA,
 					onClick: n
-				}, ie._("Get coins", null, {
-					hk: "2VvlEq"
+				}, ie._("Get Coins", null, {
+					hk: "2YmtPc"
 				}))))
 			});
 			const oe = 3e3,
@@ -998,4 +998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.d181ae1e67efef499840.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.701e20fc6d231ba28a99.js.map

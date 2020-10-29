@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.148f85b0fe8e5a8aa077.js
-// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.50e6fe26451d2bdd6382.js
+// Retrieved at 10/29/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(e, t, n) {
@@ -1918,8 +1918,8 @@
 					body: () => s.fbt._("Loading this draft will discard your current post.", null, {
 						hk: "49vMci"
 					}),
-					confirm: () => s.fbt._("Load draft", null, {
-						hk: "1gZRcm"
+					confirm: () => s.fbt._("Load Draft", null, {
+						hk: "29mFSs"
 					}),
 					cancel: () => s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -1932,8 +1932,8 @@
 					body: () => s.fbt._("Looks like you’ve hit your max number of drafts. Please delete one to make room.", null, {
 						hk: "4g9gOF"
 					}),
-					confirm: () => s.fbt._("Manage drafts", null, {
-						hk: "1nFlZw"
+					confirm: () => s.fbt._("Manage Drafts", null, {
+						hk: "3a6SXJ"
 					}),
 					cancel: () => s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -2904,4 +2904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.148f85b0fe8e5a8aa077.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.50e6fe26451d2bdd6382.js.map

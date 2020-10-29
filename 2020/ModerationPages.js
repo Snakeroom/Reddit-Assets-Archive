@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2ddd02703ad0323c5921.js
-// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.bb760712b272ac12c776.js
+// Retrieved at 10/29/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -23934,8 +23934,8 @@
 					} = this.props;
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement(l.c, null, a.a.createElement(i.a, {
 						to: Object(M.c)(s.name)
-					}, a.a.createElement(h.i, null, n.fbt._("Schedule post", null, {
-						hk: "4qwaw0"
+					}, a.a.createElement(h.i, null, n.fbt._("Schedule Post", null, {
+						hk: "2Ygkzg"
 					})))), a.a.createElement(l.a, null, a.a.createElement(l.b, {
 						className: Q.a.pageTitle
 					}, n.fbt._("Scheduled posts", null, {
@@ -31815,4 +31815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2ddd02703ad0323c5921.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bb760712b272ac12c776.js.map

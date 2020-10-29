@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1ff1d7ebae7acb9a394e.js
-// Retrieved at 10/29/2020, 7:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.20548b46721f5519fd33.js
+// Retrieved at 10/29/2020, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580", "CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~Profi~dfd687ea", "ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49", "ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
@@ -728,7 +728,7 @@
 			};
 			const O = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				j = Object({
-					SENTRY_RELEASE_VERSION: "417f297-production"
+					SENTRY_RELEASE_VERSION: "d805095-production"
 				}),
 				w = {
 					anonymousUserId: "t2_anonymous",
@@ -10161,8 +10161,8 @@
 					body: () => o.fbt._("Loading this draft will discard your current post.", null, {
 						hk: "49vMci"
 					}),
-					confirm: () => o.fbt._("Load draft", null, {
-						hk: "1gZRcm"
+					confirm: () => o.fbt._("Load Draft", null, {
+						hk: "29mFSs"
 					}),
 					cancel: () => o.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -10175,8 +10175,8 @@
 					body: () => o.fbt._("Looks like you’ve hit your max number of drafts. Please delete one to make room.", null, {
 						hk: "4g9gOF"
 					}),
-					confirm: () => o.fbt._("Manage drafts", null, {
-						hk: "1nFlZw"
+					confirm: () => o.fbt._("Manage Drafts", null, {
+						hk: "3a6SXJ"
 					}),
 					cancel: () => o.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -29243,11 +29243,11 @@
 						onClose: s,
 						onPrimaryAction: i,
 						onSecondaryAction: r,
-						primaryButtonText: l.fbt._("Save draft", null, {
-							hk: "292J1G"
+						primaryButtonText: l.fbt._("Save Draft", null, {
+							hk: "1VdofA"
 						}),
-						secondaryButtonText: l.fbt._("Discard post", null, {
-							hk: "1RpuOL"
+						secondaryButtonText: l.fbt._("Discard Post", null, {
+							hk: "1CBjtn"
 						}),
 						titleText: l.fbt._("Save draft", null, {
 							hk: "44JnYT"
@@ -29261,8 +29261,8 @@
 						onClose: s,
 						onPrimaryAction: s,
 						onSecondaryAction: r,
-						primaryButtonText: l.fbt._("Edit post", null, {
-							hk: "1e3xR0"
+						primaryButtonText: l.fbt._("Edit Post", null, {
+							hk: "3dI1el"
 						}),
 						secondaryButtonText: t ? l.fbt._("Discard Changes", null, {
 							hk: "7JOA"
@@ -30142,8 +30142,8 @@
 				Cs = () => l.fbt._("Saved!", null, {
 					hk: "34qXtS"
 				}),
-				Es = () => l.fbt._("Save draft", null, {
-					hk: "1xneFj"
+				Es = () => l.fbt._("Save Draft", null, {
+					hk: "3wckxd"
 				}),
 				Os = () => l.fbt._("Updated!", null, {
 					hk: "45fGGU"
@@ -34090,4 +34090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1ff1d7ebae7acb9a394e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.20548b46721f5519fd33.js.map
