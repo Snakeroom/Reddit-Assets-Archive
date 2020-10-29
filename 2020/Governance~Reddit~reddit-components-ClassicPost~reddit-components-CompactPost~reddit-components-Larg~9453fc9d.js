@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.c38ce83ecc42c0dab505.js
-// Retrieved at 10/28/2020, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.01e4bb056e27faf2c552.js
+// Retrieved at 10/29/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -7822,7 +7822,7 @@
 								experimentName: i.w,
 								expEventOverride: e
 							});
-							return !!(Object(i.ad)(n) ? void 0 : n)
+							return !!(Object(i.cd)(n) ? void 0 : n)
 						})(n)) || (t => !1 !== t.collapsed)(e)
 					})
 				}
@@ -10253,44 +10253,44 @@
 			var s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/constants/experiments.ts"),
 				i = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = t => r.Bc.RulesAndWarnings === Object(i.c)(t, {
+			const o = t => r.Dc.RulesAndWarnings === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.uc
+					experimentName: r.vc
 				}),
-				d = t => r.Bc.WarningsOnly === Object(i.c)(t, {
+				d = t => r.Dc.WarningsOnly === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.uc
+					experimentName: r.vc
 				}),
 				c = t => r.qc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
 					experimentName: r.ic
 				}),
-				a = t => r.Kc.Enabled === Object(i.c)(t, {
+				a = t => r.Mc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.Fc
+					experimentName: r.Hc
 				}),
-				u = t => r.Lc.Enabled === Object(i.c)(t, {
+				u = t => r.Nc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.Gc
+					experimentName: r.Ic
 				}),
 				l = (t, e, n) => {
 					const s = n(t, e);
-					return !(!s || !s.meter) && (s.meter.enabled && u(t) && r.Yc.Enabled === Object(i.c)(t, {
+					return !(!s || !s.meter) && (s.meter.enabled && u(t) && r.ad.Enabled === Object(i.c)(t, {
 						experimentEligibilitySelector: i.a,
-						experimentName: r.Vc
+						experimentName: r.Xc
 					}))
 				},
 				b = Object(s.a)(t => Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.wc
-				}), t => t === r.Cc.Enabled),
+					experimentName: r.xc
+				}), t => t === r.Ec.Enabled),
 				p = t => r.qc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.vc
+					experimentName: r.wc
 				}),
 				O = t => r.qc.Enabled === Object(i.c)(t, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.yc
+					experimentName: r.zc
 				})
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(t, e, n) {
@@ -11219,4 +11219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.c38ce83ecc42c0dab505.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.01e4bb056e27faf2c552.js.map

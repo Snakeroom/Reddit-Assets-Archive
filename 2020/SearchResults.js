@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.2f2c42a40f19f73e1f4a.js
-// Retrieved at 10/28/2020, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.47495fadfbc9ec0a3d28.js
+// Retrieved at 10/29/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -13406,7 +13406,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.zc.Treatment1 === Object(o.c)(e, {
+			const r = e => n.Ac.Treatment1 === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
 				experimentName: n.rc
 			})
@@ -13426,4 +13426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.2f2c42a40f19f73e1f4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.47495fadfbc9ec0a3d28.js.map

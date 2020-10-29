@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.a29a0ee6811e6535a39c.js
-// Retrieved at 10/28/2020, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.90ba66bd658ee5f02e1a.js
+// Retrieved at 10/29/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -4030,7 +4030,7 @@
 								experimentEligibilitySelector: e => Object(P.I)(e),
 								experimentName: p.wb
 							});
-							return Object(p.ad)(t) ? void 0 : t
+							return Object(p.cd)(t) ? void 0 : t
 						})(F) && (s(((e, t) => async (n, s, r) => {
 							let {
 								apiContext: a
@@ -6577,7 +6577,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: r.experiment(o, s.Tc),
+					experiment: r.experiment(o, s.Vc),
 					post: r.post(o, e),
 					media: r.media(o, e),
 					profile: r.profile(o),
@@ -6589,7 +6589,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: r.experiment(t, s.Tc),
+					experiment: r.experiment(t, s.Vc),
 					post: r.post(t, e),
 					profile: r.profile(t),
 					subreddit: r.subreddit(t),
@@ -8444,7 +8444,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: e
 				});
-				return !(!n || Object(s.ad)(n))
+				return !(!n || Object(s.cd)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/listingBelow.ts": function(e, t, n) {
@@ -8565,9 +8565,9 @@
 					experimentName: r.Z,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				u = e => e === r.Qc.NoCommunityWidgets,
-				l = e => e === r.Qc.NoRulesModerators,
-				b = e => e === r.Qc.RelatedPostsDu
+				u = e => e === r.Sc.NoCommunityWidgets,
+				l = e => e === r.Sc.NoRulesModerators,
+				b = e => e === r.Sc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -8822,4 +8822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.a29a0ee6811e6535a39c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.90ba66bd658ee5f02e1a.js.map
