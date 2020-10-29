@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f6cce187339fe5bdb6aa.js
-// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.358a717cb2e83d18df02.js
+// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Governance~InFeedChaining~Reddit", "Governance~Reddit~reddit-components-MediumPost", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6554,7 +6554,7 @@
 						userIsOp: Oe,
 						isActionBarAnimationEnabled: je,
 						postId: ve
-					} = e, ye = !!e.redditStyle || !!e["data-redditstyle"], _e = ye ? void 0 : m, ke = Object(d.a)(oe), Ce = re && ke, Ee = Object(a.a)(oe), we = Object(c.a)(oe), Ie = Object(F.c)(le), Pe = !!le.media && le.media.type === h.o.RTJSON, Se = Oe && Pe, Te = s ? s - D.a : void 0, Ne = !(_ && G || Y), Me = (e => e === Z.kc.OnlyTitles)(me) && !Object($.a)(le), Le = (e => e === Z.kc.MediumHeight)(me) && !Object($.a)(le), Fe = (e => {
+					} = e, ye = !!e.redditStyle || !!e["data-redditstyle"], _e = ye ? void 0 : m, ke = Object(d.a)(oe), Ce = re && ke, Ee = Object(a.a)(oe), we = Object(c.a)(oe), Ie = Object(F.c)(le), Pe = !!le.media && le.media.type === h.o.RTJSON, Se = Oe && Pe, Te = s ? s - D.a : void 0, Ne = !(_ && G || Y), Me = (e => e === Z.lc.OnlyTitles)(me) && !Object($.a)(le), Le = (e => e === Z.lc.MediumHeight)(me) && !Object($.a)(le), Fe = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -6569,7 +6569,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Re = !!te && !Object(Z.cd)(te), Ae = (!j || Re) && !le.isSponsored, De = Object(k.s)(le, O), {
+					})(e), Re = !!te && !Object(Z.dd)(te), Ae = (!j || Re) && !le.isSponsored, De = Object(k.s)(le, O), {
 						source: Be
 					} = De, Ue = o.a.createElement(A.a, {
 						className: Object(C.a)(pe.a.container, r, ue.a.largeAndMediumPostStyles, ue.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -11555,13 +11555,13 @@
 				return Object(i.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: l,
-					experimentName: o.tb
+					experimentName: o.ub
 				})
 			}
 
 			function m(e) {
 				switch (e) {
-					case o.ub.Enabled:
+					case o.vb.Enabled:
 						return 18;
 					default:
 						return
@@ -11571,7 +11571,7 @@
 			}(n || (n = {}));
 			const p = e => {
 				switch (e) {
-					case o.ub.Enabled:
+					case o.vb.Enabled:
 						return n.Enabled;
 					default:
 						return n.NoBucket
@@ -14582,7 +14582,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.gb
 				});
-				return !(!t || Object(n.cd)(t))
+				return !(!t || Object(n.dd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, s) {
@@ -14617,14 +14617,14 @@
 					experimentEligibilitySelector: e => l(e, t),
 					experimentName: o.X,
 					throttledVariants: {
-						[o.vb.CurrentThrottled]: o.X
+						[o.wb.CurrentThrottled]: o.X
 					}
 				}), a.a),
-				m = e => e === o.vb.CurrentThrottled,
-				p = e => e === o.vb.CurrentThrottled || e === o.vb.CurrentUnthrottled || e === o.vb.CurrentUnthrottledCopy || e === o.vb.NewPopUnthrottledCopy,
-				b = e => e === o.vb.NewPopUnthrottledCopy,
-				h = e => e === o.vb.NewPageUnthrottledCopy || e === o.vb.NewPageUnthrottledCopyFields,
-				f = e => e === o.vb.NewPageUnthrottledCopyFields
+				m = e => e === o.wb.CurrentThrottled,
+				p = e => e === o.wb.CurrentThrottled || e === o.wb.CurrentUnthrottled || e === o.wb.CurrentUnthrottledCopy || e === o.wb.NewPopUnthrottledCopy,
+				b = e => e === o.wb.NewPopUnthrottledCopy,
+				h = e => e === o.wb.NewPageUnthrottledCopy || e === o.wb.NewPageUnthrottledCopyFields,
+				f = e => e === o.wb.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -14646,7 +14646,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts");
 			const o = e => {
-				if (!Object(n.cd)(e)) return e || void 0
+				if (!Object(n.dd)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, s) {
@@ -14773,8 +14773,8 @@
 			const d = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: n.sc
-				}) === n.Bc.Enabled
+					experimentName: n.tc
+				}) === n.Cc.Enabled
 			})(e) && (e => {
 				const t = Object(r.e)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -14848,4 +14848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f6cce187339fe5bdb6aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.358a717cb2e83d18df02.js.map

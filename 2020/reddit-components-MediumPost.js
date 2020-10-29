@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0894ad73ee3de5f015cf.js
-// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.4a08edb61c1b98f5e45a.js
+// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -616,7 +616,7 @@
 					sendEvent: be,
 					subredditOrProfile: xe,
 					toggleCheckbox: he
-				} = e, ve = ce ? void 0 : d, fe = Object(R.a)(te), ge = se && fe, ye = Object(B.a)(te), Ce = Object(F.a)(te), Oe = Object(O.c)(ie), Ee = !!Y && !Object(I.cd)(Y), ke = Object(T.a)(ie), je = N && !pe && !Ee, _e = je && !!ie.source && !n, Pe = !(U && W || q) && !Z && (!N || Ee), Se = (!N || Ee) && !ie.isSponsored, we = Object(a.s)(ie, X), {
+				} = e, ve = ce ? void 0 : d, fe = Object(R.a)(te), ge = se && fe, ye = Object(B.a)(te), Ce = Object(F.a)(te), Oe = Object(O.c)(ie), Ee = !!Y && !Object(I.dd)(Y), ke = Object(T.a)(ie), je = N && !pe && !Ee, _e = je && !!ie.source && !n, Pe = !(U && W || q) && !Z && (!N || Ee), Se = (!N || Ee) && !ie.isSponsored, we = Object(a.s)(ie, X), {
 					source: Le
 				} = we, Ie = o.a.createElement(k.a, {
 					className: Object(c.a)(Q.a.container, s, K.a.largeAndMediumPostStyles, K.a.largeAndMediumActiveStyles, Object(A.a)(e), {
@@ -2659,9 +2659,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.gb
 				});
-				return !(!t || Object(n.cd)(t))
+				return !(!t || Object(n.dd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0894ad73ee3de5f015cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.4a08edb61c1b98f5e45a.js.map

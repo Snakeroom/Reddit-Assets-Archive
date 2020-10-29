@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.2b6011a761c64700801d.js
-// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.91f5e350a5555f191d68.js
+// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -2039,13 +2039,13 @@
 				return Object(a.c)(e, {
 					expEventOverride: !1,
 					experimentEligibilitySelector: l,
-					experimentName: i.tb
+					experimentName: i.ub
 				})
 			}
 
 			function b(e) {
 				switch (e) {
-					case i.ub.Enabled:
+					case i.vb.Enabled:
 						return 18;
 					default:
 						return
@@ -2055,7 +2055,7 @@
 			}(r || (r = {}));
 			const p = e => {
 				switch (e) {
-					case i.ub.Enabled:
+					case i.vb.Enabled:
 						return r.Enabled;
 					default:
 						return r.NoBucket
@@ -2228,14 +2228,14 @@
 					experimentEligibilitySelector: e => l(e, t),
 					experimentName: i.X,
 					throttledVariants: {
-						[i.vb.CurrentThrottled]: i.X
+						[i.wb.CurrentThrottled]: i.X
 					}
 				}), o.a),
-				b = e => e === i.vb.CurrentThrottled,
-				p = e => e === i.vb.CurrentThrottled || e === i.vb.CurrentUnthrottled || e === i.vb.CurrentUnthrottledCopy || e === i.vb.NewPopUnthrottledCopy,
-				m = e => e === i.vb.NewPopUnthrottledCopy,
-				g = e => e === i.vb.NewPageUnthrottledCopy || e === i.vb.NewPageUnthrottledCopyFields,
-				f = e => e === i.vb.NewPageUnthrottledCopyFields
+				b = e => e === i.wb.CurrentThrottled,
+				p = e => e === i.wb.CurrentThrottled || e === i.wb.CurrentUnthrottled || e === i.wb.CurrentUnthrottledCopy || e === i.wb.NewPopUnthrottledCopy,
+				m = e => e === i.wb.NewPopUnthrottledCopy,
+				g = e => e === i.wb.NewPageUnthrottledCopy || e === i.wb.NewPageUnthrottledCopyFields,
+				f = e => e === i.wb.NewPageUnthrottledCopyFields
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, s) {
 			"use strict";
@@ -2244,7 +2244,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts");
 			const i = e => {
-				if (!Object(r.cd)(e)) return e || void 0
+				if (!Object(r.dd)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -2261,8 +2261,8 @@
 			const d = e => (e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
-					experimentName: r.sc
-				}) === r.Bc.Enabled
+					experimentName: r.tc
+				}) === r.Cc.Enabled
 			})(e) && (e => {
 				const t = Object(n.e)(e);
 				return !!t && a.has(t.toLowerCase())
@@ -2280,4 +2280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.2b6011a761c64700801d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.91f5e350a5555f191d68.js.map

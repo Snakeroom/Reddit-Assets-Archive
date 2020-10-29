@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.448b217d83e934c9cc5e.js
-// Retrieved at 10/29/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.f156c502d098e399a2b3.js
+// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -4025,9 +4025,9 @@
 						})()) : Object(T.a)(V) && G === A.a.upvoted && !H && (e => {
 							const t = Object(v.c)(e, {
 								experimentEligibilitySelector: e => Object(P.I)(e),
-								experimentName: p.wb
+								experimentName: p.xb
 							});
-							return Object(p.cd)(t) ? void 0 : t
+							return Object(p.dd)(t) ? void 0 : t
 						})(F) && (s(((e, t) => async (n, s, r) => {
 							let {
 								apiContext: a
@@ -6574,7 +6574,7 @@
 					source: "videoplayer",
 					action: t,
 					noun: n,
-					experiment: r.experiment(o, s.Vc),
+					experiment: r.experiment(o, s.Wc),
 					post: r.post(o, e),
 					media: r.media(o, e),
 					profile: r.profile(o),
@@ -6586,7 +6586,7 @@
 					source: "videoplayer",
 					action: "underrun",
 					noun: "playback",
-					experiment: r.experiment(t, s.Vc),
+					experiment: r.experiment(t, s.Wc),
 					post: r.post(t, e),
 					profile: r.profile(t),
 					subreddit: r.subreddit(t),
@@ -8441,7 +8441,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: e
 				});
-				return !(!n || Object(s.cd)(n))
+				return !(!n || Object(s.dd)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/listingBelow.ts": function(e, t, n) {
@@ -8462,10 +8462,10 @@
 			const l = Object(s.a)(a.c, u.H, u.I, d.g, d.f, c.a, (e, t, n, s, o, i) => !e && !t && !n && s && !!o && !o.isNSFW && !!i && Object(r.c)(i.created / 1e3) < 30),
 				b = e => Object(i.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: o.zb,
+					experimentName: o.Ab,
 					expEventOverride: !1
 				}),
-				_ = e => e === o.Eb.SearchPostToPost || e === o.Eb.NlpPostToPost1 || e === o.Eb.NlpPostToPost2 || e === o.Eb.NlpPostToPost3
+				_ = e => e === o.Fb.SearchPostToPost || e === o.Fb.NlpPostToPost1 || e === o.Fb.NlpPostToPost2 || e === o.Fb.NlpPostToPost3
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
 			"use strict";
@@ -8486,8 +8486,8 @@
 			const a = e => o.d.actionBarAnimationExperiment(e) && !Object(c.c)(e) && (e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: i.a,
-						experimentName: r.cc
-					}) === r.jc.BarAnimation
+						experimentName: r.dc
+					}) === r.kc.BarAnimation
 				})(e),
 				d = (e, t) => {
 					let {
@@ -8562,9 +8562,9 @@
 					experimentName: r.Z,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				u = e => e === r.Sc.NoCommunityWidgets,
-				l = e => e === r.Sc.NoRulesModerators,
-				b = e => e === r.Sc.RelatedPostsDu
+				u = e => e === r.Tc.NoCommunityWidgets,
+				l = e => e === r.Tc.NoRulesModerators,
+				b = e => e === r.Tc.RelatedPostsDu
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -8819,4 +8819,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.448b217d83e934c9cc5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.f156c502d098e399a2b3.js.map

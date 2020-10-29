@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.faad4dc3453d0867c893.js
-// Retrieved at 10/29/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.89b62b01e00dbfa05a79.js
+// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./src/graphql/operations/GetSubredditQuestions.json": function(e) {
@@ -29,9 +29,9 @@
 					} = l;
 					var o, m, x, v, g, C;
 					const h = Object(i.c)(t(), {
-							experimentName: a.Xb,
+							experimentName: a.Yb,
 							experimentEligibilitySelector: i.a
-						}) === a.Wb.Enabled,
+						}) === a.Xb.Enabled,
 						u = (await ((e, s) => Object(n.a)(e, Object.assign(Object.assign({}, c), {
 							variables: s
 						})))(d(), {
@@ -4281,4 +4281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.faad4dc3453d0867c893.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.89b62b01e00dbfa05a79.js.map

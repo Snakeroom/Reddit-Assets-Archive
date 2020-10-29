@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.57f7746577e908c143ff.js
-// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7ed364bfed7fb1779734.js
+// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -4324,7 +4324,7 @@
 			const S = e => _.d.reCaptchaEnterprise(e) && !Object(w.d)(e),
 				T = e => !!Object(I.c)(e, {
 					experimentEligibilitySelector: Object(E.d)(Object(E.b)(...r.b)),
-					experimentName: g.tc
+					experimentName: g.uc
 				}),
 				C = Object(n.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = () => l(e => b()([S, T, e => e.tracking.reCaptchaEnterprise.load === n.a.New], t => t(e)))(async e => {
@@ -4870,17 +4870,17 @@
 		"./src/reddit/actions/subredditCreation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return p
-			})), s.d(t, "d", (function() {
 				return O
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "d", (function() {
 				return f
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "b", (function() {
 				return j
+			})), s.d(t, "a", (function() {
+				return y
 			})), s.d(t, "e", (function() {
-				return v
-			})), s.d(t, "f", (function() {
 				return _
+			})), s.d(t, "f", (function() {
+				return E
 			}));
 			var n = s("./src/config.ts"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
@@ -4900,44 +4900,45 @@
 				new_tags: e.newTags.join(","),
 				primary_tag: e.primaryTagId
 			});
-			var u = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				b = s("./src/reddit/selectors/subreddit.ts"),
-				g = s("./src/telemetry/index.ts");
-			const p = "SUBREDDIT__CREATE_PENDING",
-				O = "SUBREDDIT__CREATE_SUCCEEDED",
-				f = "SUBREDDIT__CREATE_FAILED",
-				j = "SUBREDDIT__CREATE_CLEARED",
-				y = Object(a.a)(p),
+			var u = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				b = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				g = s("./src/reddit/selectors/subreddit.ts"),
+				p = s("./src/telemetry/index.ts");
+			const O = "SUBREDDIT__CREATE_PENDING",
+				f = "SUBREDDIT__CREATE_SUCCEEDED",
+				j = "SUBREDDIT__CREATE_FAILED",
+				y = "SUBREDDIT__CREATE_CLEARED",
 				h = Object(a.a)(O),
 				m = Object(a.a)(f),
 				v = Object(a.a)(j),
-				_ = e => async (t, s, a) => {
+				_ = Object(a.a)(y),
+				E = e => async (t, s, a) => {
 					let {
-						apiContext: p
+						apiContext: O
 					} = a;
-					const O = s(),
+					const f = s(),
 						{
-							name: f,
-							type: j
+							name: j,
+							type: y
 						} = e;
-					if (Object(b.l)(O)) return;
-					t(y({
-						subredditName: f
+					if (Object(g.l)(f)) return;
+					t(h({
+						subredditName: j
 					}));
-					const v = await ((e, t) => Object(c.a)(Object(i.a)(e, [o.a]), {
+					const _ = await ((e, t) => Object(c.a)(Object(i.a)(e, [o.a]), {
 						endpoint: Object(d.a)("".concat(e.apiUrl, "/api/v1/subreddit/create_subreddit")),
 						method: r.db.POST,
 						data: l(t)
-					}))(p(), e);
-					if (v.ok) {
-						const s = v.body,
+					}))(O(), e);
+					if (_.ok) {
+						const s = _.body,
 							a = s.fullname;
-						Object(g.a)(Object(u.c)(j, e, a)(O)), t(h({
-							subredditName: f
-						})), window.location.href = "".concat(n.a.redditUrl).concat(s.path, "new")
-					} else v.error && Object(g.a)(Object(u.d)(v.error.type)(O)), t(m({
-						subredditName: f,
-						error: v.error
+						Object(p.a)(Object(b.c)(y, e, a)(f)), t(m({
+							subredditName: j
+						})), window.location.href = "".concat(n.a.redditUrl).concat(s.path, "new"), Object(u.b)(u.a.SubredditCreation)
+					} else _.error && Object(p.a)(Object(b.d)(_.error.type)(f)), t(v({
+						subredditName: j,
+						error: _.error
 					}))
 				}
 		},
@@ -6934,30 +6935,32 @@
 		"./src/reddit/helpers/trackers/subredditCreation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return a
-			})), s.d(t, "c", (function() {
 				return r
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "c", (function() {
 				return c
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "a", (function() {
 				return i
+			})), s.d(t, "d", (function() {
+				return o
 			}));
-			var n = s("./src/reddit/selectors/telemetry.ts");
-			const a = e => t => Object.assign(Object.assign({
+			var n = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				a = s("./src/reddit/selectors/telemetry.ts");
+			const r = e => t => Object.assign(Object.assign({
 					source: e,
 					noun: "create_community_button",
 					action: "click"
-				}, n.defaults(t)), {
-					actionInfo: n.actionInfo(t, {
+				}, a.defaults(t)), {
+					actionInfo: a.actionInfo(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
-					})
+					}),
+					correlationId: Object(n.d)(n.a.SubredditCreation, !0)
 				}),
-				r = (e, t, s) => a => Object.assign(Object.assign({
+				c = (e, t, s) => r => Object.assign(Object.assign({
 					source: "community_form",
 					noun: "save_community_button",
 					action: "click"
-				}, n.defaults(a)), {
-					actionInfo: n.actionInfo(a, {
+				}, a.defaults(r)), {
+					actionInfo: a.actionInfo(r, {
 						settingValue: e
 					}),
 					subreddit: {
@@ -6968,23 +6971,26 @@
 						accessType: t.type,
 						topicTagContents: t.allTags,
 						topicTagPrimaryId: t.primaryTagId
-					}
+					},
+					correlationId: Object(n.c)(n.a.SubredditCreation)
 				}),
-				c = () => e => Object.assign(Object.assign({
+				i = () => e => Object.assign(Object.assign({
 					source: "community_form",
 					noun: "cancel",
 					action: "click"
-				}, n.defaults(e)), {
-					actionInfo: n.actionInfo(e)
+				}, a.defaults(e)), {
+					actionInfo: a.actionInfo(e),
+					correlationId: Object(n.c)(n.a.SubredditCreation)
 				}),
-				i = e => t => Object.assign(Object.assign({
+				o = e => t => Object.assign(Object.assign({
 					source: "community_form",
 					noun: "error_message",
 					action: "view"
-				}, n.defaults(t)), {
-					actionInfo: n.actionInfo(t, {
+				}, a.defaults(t)), {
+					actionInfo: a.actionInfo(t, {
 						reason: e
-					})
+					}),
+					correlationId: Object(n.c)(n.a.SubredditCreation)
 				})
 		},
 		"./src/reddit/models/ChatSettingsPage/index.ts": function(e, t, s) {
@@ -28287,7 +28293,7 @@
 				u = e => e === a.G.OnetapAuto,
 				b = e => e.user.googleOneTapEnabled,
 				g = Object(n.a)(i.I, d, (e, t) => !e && !!t),
-				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.cd)(t))
+				p = Object(n.a)(i.I, d, (e, t) => !e && !!t && !Object(a.dd)(t))
 		},
 		"./src/reddit/selectors/profileOverviewChronoItems.ts": function(e, t, s) {
 			"use strict";
@@ -28586,4 +28592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.57f7746577e908c143ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7ed364bfed7fb1779734.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.8b08180345cf62f5cfdb.js
-// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.03ec2d325211b1f69ed7.js
+// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -26,16 +26,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Tb
+					experimentName: u.Ub
 				});
-				return Object(u.cd)(t) ? void 0 : t
+				return Object(u.dd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ub
+					experimentName: u.Vb
 				});
-				return Object(u.cd)(t) ? void 0 : t
-			}, (e, t) => e === u.Vb.Enabled && t === u.Vb.Enabled);
+				return Object(u.dd)(t) ? void 0 : t
+			}, (e, t) => e === u.Wb.Enabled && t === u.Wb.Enabled);
 			var b = s("./src/config.ts");
 			var h = s("./src/reddit/selectors/user.ts");
 			s("./node_modules/core-js/modules/es6.regexp.to-string.js"), s("./node_modules/core-js/modules/es6.regexp.replace.js");
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				C = Object({
-					SENTRY_RELEASE_VERSION: "c4f7c6a-production"
+					SENTRY_RELEASE_VERSION: "2d44b8f-production"
 				}),
 				N = {
 					anonymousUserId: "t2_anonymous",
@@ -631,9 +631,9 @@
 				H = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
 				B = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				K = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				Y = s.n(K),
-				F = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				W = s.n(F);
+				W = s.n(K),
+				Y = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				F = s.n(Y);
 			const {
 				fbt: G
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), J = Object(o.a)(T.a, {
@@ -680,11 +680,11 @@
 					pageSize: 1
 				}))
 			})), Q = () => r.a.createElement("h3", {
-				className: W.a.title
+				className: F.a.title
 			}, G._("Top broadcast", null, {
 				hk: "HADCh"
 			})), $ = () => r.a.createElement("p", {
-				className: W.a.description
+				className: F.a.description
 			}, G._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
@@ -823,100 +823,100 @@
 						layout: e
 					} = this.props, t = e === f.g.Classic ? this.renderClassicContent() : e === f.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return r.a.createElement("div", {
-						className: Object(d.a)(W.a.container, {
-							[Y.a.largeAndMediumPostStyles]: e === f.g.Large || e === f.g.Medium,
-							[Y.a.classicPostStyles]: e === f.g.Classic,
-							[Y.a.compactPostStyles]: e === f.g.Compact,
-							[W.a.large]: e === f.g.Large || e === f.g.Medium,
-							[W.a.classic]: e === f.g.Classic,
-							[W.a.compact]: e === f.g.Compact
+						className: Object(d.a)(F.a.container, {
+							[W.a.largeAndMediumPostStyles]: e === f.g.Large || e === f.g.Medium,
+							[W.a.classicPostStyles]: e === f.g.Classic,
+							[W.a.compactPostStyles]: e === f.g.Compact,
+							[F.a.large]: e === f.g.Large || e === f.g.Medium,
+							[F.a.classic]: e === f.g.Classic,
+							[F.a.compact]: e === f.g.Compact
 						}, this.props.className),
 						ref: this.observableElement
 					}, e !== f.g.Large && r.a.createElement(w.b, {
-						className: W.a.leftRail,
+						className: F.a.leftRail,
 						withoutComputedStyles: e === f.g.Compact
 					}, r.a.createElement(X, {
 						isVertical: !0
 					}), e === f.g.Compact && r.a.createElement(X, {
 						isVertical: !1
 					})), r.a.createElement(L.a, {
-						className: W.a.backgroundWrapper,
+						className: F.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
 				}
 				renderTitleAndDescription(e) {
 					return r.a.createElement("div", {
-						className: W.a.titleAndDescriptionContainer
+						className: F.a.titleAndDescriptionContainer
 					}, r.a.createElement(k.a, {
 						to: this.props.location
 					}, r.a.createElement(Q, null), e && r.a.createElement($, null)))
 				}
 				renderLargeContent() {
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: W.a.header
+						className: F.a.header
 					}, this.renderTitleAndDescription(), r.a.createElement("div", {
-						className: W.a.flatListContainer
+						className: F.a.flatListContainer
 					}, r.a.createElement(te, {
 						onClick: this.onHideUnitClicked
 					}))), r.a.createElement("div", {
-						className: W.a.body
+						className: F.a.body
 					}, r.a.createElement(k.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
-						className: W.a.previewLink,
+						className: F.a.previewLink,
 						tabIndex: 0
 					}, r.a.createElement("div", {
-						className: W.a.previewContainer
+						className: F.a.previewContainer
 					}, this.renderThumbnail()), this.renderInfo())))
 				}
 				renderClassicContent() {
 					return r.a.createElement("div", {
-						className: W.a.body
+						className: F.a.body
 					}, r.a.createElement(k.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, r.a.createElement("div", {
-						className: W.a.thumbnailContainer
+						className: F.a.thumbnailContainer
 					}, this.renderThumbnail())), r.a.createElement("div", {
-						className: W.a.main
+						className: F.a.main
 					}, this.renderTitleAndDescription(!0), r.a.createElement("div", {
-						className: W.a.flatListContainer
+						className: F.a.flatListContainer
 					}, r.a.createElement(Z, {
 						onClick: this.onHeaderClicked
 					}), r.a.createElement(j.a, {
-						className: W.a.flatlistSeparator
+						className: F.a.flatlistSeparator
 					}), r.a.createElement("div", null, r.a.createElement(ee, {
 						onClick: this.onHideUnitClicked
 					})))))
 				}
 				renderCompactContent() {
 					return r.a.createElement("div", {
-						className: W.a.body
+						className: F.a.body
 					}, r.a.createElement("div", {
-						className: W.a.main
+						className: F.a.main
 					}, r.a.createElement(Z, {
 						onClick: this.onHeaderClicked
 					}), this.renderTitleAndDescription(!0), r.a.createElement("div", {
-						className: W.a.flatListContainer
+						className: F.a.flatListContainer
 					}, r.a.createElement(te, {
 						onClick: this.onHideUnitClicked
 					}))))
 				}
 				renderInfo() {
 					if (this.props.stream && this.state.isReady) return r.a.createElement("div", {
-						className: W.a.infoContainer
+						className: F.a.infoContainer
 					}, this.renderExpandIcon(), this.renderLiveStatus(), this.renderWatcherCount())
 				}
 				renderExpandIcon() {
 					return r.a.createElement("div", {
-						className: W.a.bigExpando
+						className: F.a.bigExpando
 					}, r.a.createElement(H.a, {
-						className: W.a.bigExpandoIcon
+						className: F.a.bigExpandoIcon
 					}))
 				}
 				renderLiveStatus() {
 					return this.isLive ? r.a.createElement("span", {
-						className: W.a.liveStatus
+						className: F.a.liveStatus
 					}, G._("Live", null, {
 						hk: "TwJSs"
 					})) : null
@@ -925,7 +925,7 @@
 					if (!this.isLive) return null;
 					const e = Math.max(1, this.props.totalLiveWatchers);
 					return r.a.createElement("span", {
-						className: W.a.watchingCount
+						className: F.a.watchingCount
 					}, G._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
@@ -934,9 +934,9 @@
 					}))
 				}
 				renderThumbnail() {
-					const e = this.props.inRpanLoadingAnimation ? W.a.loading : W.a.noise;
+					const e = this.props.inRpanLoadingAnimation ? F.a.loading : F.a.noise;
 					return r.a.createElement("div", {
-						className: Object(d.a)(W.a.thumbnail, {
+						className: Object(d.a)(F.a.thumbnail, {
 							[e]: !this.state.isReady
 						})
 					}, this.renderVideo())
@@ -1033,11 +1033,11 @@
 			}
 			const X = e => r.a.createElement(I.a, {
 					className: Object(d.a)({
-						[W.a.verticalVotes]: e.isVertical,
-						[W.a.horizontalVotes]: !e.isVertical
+						[F.a.verticalVotes]: e.isVertical,
+						[F.a.horizontalVotes]: !e.isVertical
 					})
 				}, r.a.createElement(U.a, {
-					className: W.a.score,
+					className: F.a.score,
 					isScoreHidden: !0,
 					score: 0,
 					voteState: S.a.notVoted
@@ -1047,10 +1047,10 @@
 						onClick: t
 					} = e;
 					return r.a.createElement("button", {
-						className: W.a.expandoButton,
+						className: F.a.expandoButton,
 						onClick: t
 					}, r.a.createElement(H.a, {
-						className: W.a.expandoIcon
+						className: F.a.expandoIcon
 					}))
 				},
 				ee = e => {
@@ -1074,19 +1074,19 @@
 						onClick: t
 					} = e;
 					return r.a.createElement(D.b, {
-						className: W.a.overflowMenu,
-						dropdownClassName: W.a.overflowDropdown,
+						className: F.a.overflowMenu,
+						dropdownClassName: F.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
 					}, r.a.createElement(V.b, {
-						className: W.a.overflowItem,
+						className: F.a.overflowItem,
 						displayText: G._("Show me less of this", null, {
 							hk: "2c4uFK"
 						}),
-						iconWrapperClassName: W.a.overflowItemIconWrapper,
-						textClassName: W.a.overflowItemText,
+						iconWrapperClassName: F.a.overflowItemIconWrapper,
+						textClassName: F.a.overflowItemText,
 						onClick: t
 					}, r.a.createElement(B.a, {
-						className: W.a.hideIcon
+						className: F.a.hideIcon
 					})))
 				};
 			t.default = z(Object(P.c)(q))
@@ -1177,4 +1177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.8b08180345cf62f5cfdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.03ec2d325211b1f69ed7.js.map

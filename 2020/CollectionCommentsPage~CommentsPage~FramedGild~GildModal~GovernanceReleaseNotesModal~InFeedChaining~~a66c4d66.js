@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.507313c9a0af78c93be1.js
-// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.aeeaf35551e02631b733.js
+// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -795,16 +795,16 @@
 				L = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				B = s("./src/reddit/selectors/experiments/utils.ts");
 			const N = Object(d.a)(e => Object(L.c)(e, {
-					experimentName: C.Vc,
+					experimentName: C.Wc,
 					experimentEligibilitySelector: L.a
 				}), B.a),
 				k = Object(d.a)(N, (function(e) {
 					switch (e) {
-						case C.Yc.BufferTwoSeconds:
+						case C.Zc.BufferTwoSeconds:
 							return 2;
-						case C.Yc.BufferFiveSeconds:
+						case C.Zc.BufferFiveSeconds:
 							return 5;
-						case C.Yc.BufferTenSeconds:
+						case C.Zc.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1508,8 +1508,8 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = "".concat("Reddit/Version Build", " ").concat("c4f7c6a-production", " ").concat(t);
-									return i && (s += " [".concat(C.Vc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = "".concat("Reddit/Version Build", " ").concat("2d44b8f-production", " ").concat(t);
+									return i && (s += " [".concat(C.Wc, ":").concat(i, "]")), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2359,13 +2359,13 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Wc
+					experimentName: n.Xc
 				}),
-				r = [n.Zc.FeedAndTheatre, n.Zc.FeedOnly],
+				r = [n.ad.FeedAndTheatre, n.ad.FeedOnly],
 				l = Object(i.a)(o, e => r.includes(e)),
-				c = [n.Zc.FeedAndTheatre, n.Zc.TheatreOnly],
+				c = [n.ad.FeedAndTheatre, n.ad.TheatreOnly],
 				d = Object(i.a)(o, e => c.includes(e))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.507313c9a0af78c93be1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66.aeeaf35551e02631b733.js.map
