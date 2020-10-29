@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.26a08b4f586a422a41a4.js
-// Retrieved at 10/29/2020, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b7073211d58379808b79.js
+// Retrieved at 10/29/2020, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("117094"),
+				buildNumber: r("117102"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1603998736"),
+				})("1603999730"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3427,14 +3427,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("52d5954-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("66400ae-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "52d5954-production",
+						release: "66400ae-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3887,7 +3887,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "52d5954-production",
+							releaseClient: "66400ae-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -16099,11 +16099,11 @@
 			})), i.d(t, "a", (function() {
 				return u
 			})), i.d(t, "h", (function() {
-				return m
+				return _
 			})), i.d(t, "g", (function() {
-				return p
+				return m
 			})), i.d(t, "i", (function() {
-				return h
+				return p
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/core-js/modules/es6.array.sort.js");
 			var n = i("./src/lib/objectSelector/index.ts"),
@@ -16146,24 +16146,11 @@
 				})),
 				_ = Object(n.a)((e, t) => {
 					let {
-						subredditId: i
-					} = t;
-					const n = e.awards.usable.order[i];
-					return n ? n.map(t => ({
-						award: e.awards.models[t],
-						total: 0
-					})).filter(e => e.award.isEnabled) : c
-				}),
-				m = Object(n.a)((e, t) => {
-					let {
 						subredditId: i,
 						thingId: n
 					} = t;
-					const r = e.awards.sortedUsable.order[i];
-					if (!r) return _(e, {
-						subredditId: i
-					});
-					const s = r[n];
+					const r = e.awards.sortedUsable.order[i],
+						s = null == r ? void 0 : r[n];
 					return s ? s.map(t => {
 						let {
 							award: i,
@@ -16180,7 +16167,7 @@
 						return t.isEnabled
 					}) : c
 				}),
-				p = (e, t) => {
+				m = (e, t) => {
 					let {
 						subredditId: i,
 						thingId: n
@@ -16188,7 +16175,7 @@
 					const r = e.awards.sortedUsable.api.pending[i];
 					return !!r && r[n]
 				},
-				h = Object(n.a)((e, t) => {
+				p = Object(n.a)((e, t) => {
 					let {
 						subredditId: i
 					} = t;
@@ -26007,4 +25994,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.26a08b4f586a422a41a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b7073211d58379808b79.js.map
