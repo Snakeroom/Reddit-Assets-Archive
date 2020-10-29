@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~MuxEmbed.af80344a327be37c29ed.js
-// Retrieved at 5/29/2020, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~MuxEmbed.02fc3988fbab4d819162.js
+// Retrieved at 10/29/2020, 7:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~MuxEmbed"], {
 		"./node_modules/mux-embed/dist/mux.js": function(e, t, r) {
@@ -29,8 +29,13 @@
 					return t.d(r, "a", r), r
 				}, t.o = function(e, t) {
 					return Object.prototype.hasOwnProperty.call(e, t)
-				}, t.p = "", t(t.s = 16)
-			}([function(e, t) {
+				}, t.p = "", t(t.s = 18)
+			}([function(e, t, r) {
+				(function(t) {
+					var r;
+					r = "undefined" != typeof window ? window : void 0 !== t ? t : "undefined" != typeof self ? self : {}, e.exports = r
+				}).call(t, r(6))
+			}, function(e, t) {
 				function r(e, t, r) {
 					switch (r.length) {
 						case 0:
@@ -51,20 +56,20 @@
 								return function(e) {
 									return !!e && "object" == typeof e
 								}(e) && u(e)
-							}(e) && m.call(e, "callee") && (!b.call(e, "callee") || y.call(e) == f)
+							}(e) && y.call(e, "callee") && (!b.call(e, "callee") || m.call(e) == f)
 						}(e) ? function(e, t) {
 							for (var r = -1, a = Array(e); ++r < e;) a[r] = t(r);
 							return a
 						}(e.length, String) : [],
 						a = r.length,
 						i = !!a;
-					for (var o in e) !t && !m.call(e, o) || i && ("length" == o || n(o, a)) || r.push(o);
+					for (var o in e) !t && !y.call(e, o) || i && ("length" == o || n(o, a)) || r.push(o);
 					return r
 				}
 
 				function i(e, t, r) {
 					var a = e[t];
-					m.call(e, t) && s(a, r) && (void 0 !== r || t in e) || (e[t] = r)
+					y.call(e, t) && s(a, r) && (void 0 !== r || t in e) || (e[t] = r)
 				}
 
 				function n(e, t) {
@@ -84,8 +89,8 @@
 					return null != e && function(e) {
 						return "number" == typeof e && e > -1 && e % 1 == 0 && e <= c
 					}(e.length) && ! function(e) {
-						var t = l(e) ? y.call(e) : "";
-						return t == p || t == h
+						var t = l(e) ? m.call(e) : "";
+						return t == h || t == p
 					}(e)
 				}
 
@@ -98,18 +103,18 @@
 					return u(e) ? a(e) : function(e) {
 						if (!o(e)) return g(e);
 						var t = [];
-						for (var r in Object(e)) m.call(e, r) && "constructor" != r && t.push(r);
+						for (var r in Object(e)) y.call(e, r) && "constructor" != r && t.push(r);
 						return t
 					}(e)
 				}
 				var c = 9007199254740991,
 					f = "[object Arguments]",
-					p = "[object Function]",
-					h = "[object GeneratorFunction]",
+					h = "[object Function]",
+					p = "[object GeneratorFunction]",
 					_ = /^(?:0|[1-9]\d*)$/,
 					v = Object.prototype,
-					m = v.hasOwnProperty,
-					y = v.toString,
+					y = v.hasOwnProperty,
+					m = v.toString,
 					b = v.propertyIsEnumerable,
 					g = function(e, t) {
 						return function(r) {
@@ -155,7 +160,7 @@
 							}
 						}(t, d(t), e);
 						else
-							for (var r in t) m.call(t, r) && i(e, r, t[r])
+							for (var r in t) y.call(t, r) && i(e, r, t[r])
 					}));
 				e.exports = T
 			}, function(e, t, r) {
@@ -166,10 +171,23 @@
 					r = void 0 === r ? 1 : r, e[t] = e[t] || 0, e[t] += r
 				}
 			}, function(e, t, r) {
-				(function(t) {
-					var r;
-					r = "undefined" != typeof window ? window : void 0 !== t ? t : "undefined" != typeof self ? self : {}, e.exports = r
-				}).call(t, r(5))
+				"use strict";
+				Object.defineProperty(t, "__esModule", {
+					value: !0
+				});
+				var a = function(e) {
+						return e && e.__esModule ? e : {
+							default: e
+						}
+					}(r(0)),
+					i = {
+						now: function() {
+							var e = a.default.performance,
+								t = e && e.timing;
+							return t && "number" == typeof t.navigationStart && "function" == typeof e.now ? t.navigationStart + e.now() : Date.now()
+						}
+					};
+				t.default = i
 			}, function(e, t, r) {
 				"use strict";
 				Object.defineProperty(t, "__esModule", {
@@ -179,7 +197,7 @@
 						return e && e.__esModule ? e : {
 							default: e
 						}
-					}(r(18)),
+					}(r(20)),
 					i = a.default.methodFactory;
 				a.default.methodFactory = function(e, t, r) {
 					var a = i(e, t, r);
@@ -244,7 +262,7 @@
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				}), t.findMediaElement = t.getMuxPlayerId = void 0;
-				var a = r(6),
+				var a = r(7),
 					i = function(e) {
 						return e && void 0 !== e.nodeName ? (e.muxId || (e.muxId = e.id || (0, a.generateShortID)()), e.muxId) : e
 					};
@@ -257,19 +275,46 @@
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				}), t.default = function() {
-					return "1" === (a.default.doNotTrack || a.default.navigator.doNotTrack || a.default.navigator.msDoNotTrack)
+					return "1" === (a.default.doNotTrack || a.default.navigator && (a.default.navigator.doNotTrack || a.default.navigator.msDoNotTrack))
 				};
 				var a = function(e) {
 					return e && e.__esModule ? e : {
 						default: e
 					}
-				}(r(2))
+				}(r(0))
+			}, function(e, t, r) {
+				"use strict";
+				Object.defineProperty(t, "__esModule", {
+					value: !0
+				});
+				var a = function(e) {
+						return e && e.__esModule ? e : {
+							default: e
+						}
+					}(r(0)),
+					i = {
+						exists: function() {
+							var e = a.default.performance;
+							return void 0 !== (e && e.timing)
+						},
+						domContentLoadedEventEnd: function() {
+							var e = a.default.performance,
+								t = e && e.timing;
+							return t && t.domContentLoadedEventEnd
+						},
+						navigationStart: function() {
+							var e = a.default.performance,
+								t = e && e.timing;
+							return t && t.navigationStart
+						}
+					};
+				t.default = i
 			}, function(e, t, r) {
 				(function(t) {
 					var a, i = void 0 !== t ? t : "undefined" != typeof window ? window : {},
-						n = r(21);
+						n = r(23);
 					"undefined" != typeof document ? a = document : (a = i["__GLOBAL_DOCUMENT_CACHE@4"]) || (a = i["__GLOBAL_DOCUMENT_CACHE@4"] = n), e.exports = a
-				}).call(t, r(5))
+				}).call(t, r(6))
 			}, function(e, t) {
 				e.exports = function(e) {
 					return e.webpackPolyfill || (e.deprecate = function() {}, e.paths = [], e.children || (e.children = []), Object.defineProperty(e, "loaded", {
@@ -286,9 +331,9 @@
 				}
 			}, function(e, t, r) {
 				"use strict";
-				var a = r(40),
-					i = r(41),
-					n = r(14);
+				var a = r(42),
+					i = r(43),
+					n = r(16);
 				e.exports = {
 					formats: n,
 					parse: i,
@@ -417,8 +462,8 @@
 						}
 					})), (0, o.default)(t, r)
 				};
-				var n = a(r(3)),
-					o = a(r(0)),
+				var n = a(r(4)),
+					o = a(r(1)),
 					s = i({
 						a: "env",
 						b: "beacon",
@@ -455,12 +500,15 @@
 						cb: "cancel",
 						cd: "code",
 						cg: "category",
+						ch: "changed",
 						cn: "config",
 						co: "count",
 						ce: "counter",
 						cp: "complete",
+						cr: "creative",
 						ct: "content",
 						cu: "current",
+						cx: "connection",
 						dg: "downscaling",
 						dm: "domain",
 						dn: "cdn",
@@ -518,6 +566,7 @@
 						pd: "producer",
 						pe: "percentage",
 						pf: "played",
+						pg: "program",
 						ph: "playhead",
 						pi: "plugin",
 						pl: "preroll",
@@ -568,7 +617,7 @@
 					})
 			}, function(e, t, r) {
 				"use strict";
-				e.exports = r(17).default
+				e.exports = r(19).default
 			}, function(e, t, r) {
 				"use strict";
 
@@ -602,14 +651,15 @@
 						}(e, t);
 						throw new TypeError("Invalid attempt to destructure non-iterable instance")
 					},
-					n = a(r(2)),
-					o = r(8),
-					s = a(r(3)),
-					u = a(r(9)),
-					l = a(r(19)),
-					d = a(r(48)),
-					c = a(r(49)),
-					f = {},
+					n = a(r(0)),
+					o = r(9),
+					s = a(r(4)),
+					u = a(r(10)),
+					l = a(r(3)),
+					d = a(r(21)),
+					c = a(r(51)),
+					f = a(r(52)),
+					h = {},
 					p = function e(t) {
 						var r = arguments;
 						"string" == typeof t ? e.hasOwnProperty(t) ? n.default.setTimeout((function() {
@@ -618,33 +668,34 @@
 							t(e)
 						}), 0) : s.default.warn("`" + t + "` is invalid.")
 					};
-				p.loaded = Date.now(), p.VERSION = "2.6.0", p.API_VERSION = "2.0", p.PLAYER_TRACKED = !1, p.monitor = function(e, t) {
-					return (0, d.default)(p, e, t)
+				p.loaded = l.default.now(), p.VERSION = "3.4.1", p.API_VERSION = "2.1", p.PLAYER_TRACKED = !1, p.monitor = function(e, t) {
+					return (0, c.default)(p, e, t)
 				}, p.destroyMonitor = function(e) {
 					var t = (0, o.findMediaElement)(e),
 						r = i(t, 1)[0];
 					r && r.mux && "function" == typeof r.mux.destroy ? r.mux.destroy() : s.default.error("A video element monitor for `" + e + "` has not been initialized via `mux.monitor`.")
 				}, p.addHLSJS = function(e, t) {
 					var r = (0, o.getMuxPlayerId)(e);
-					f[r] ? f[r].addHLSJS(t) : s.default.error("A monitor for `" + r + "` has not been initialized.")
+					h[r] ? h[r].addHLSJS(t) : s.default.error("A monitor for `" + r + "` has not been initialized.")
 				}, p.addDashJS = function(e, t) {
 					var r = (0, o.getMuxPlayerId)(e);
-					f[r] ? f[r].addDashJS(t) : s.default.error("A monitor for `" + r + "` has not been initialized.")
+					h[r] ? h[r].addDashJS(t) : s.default.error("A monitor for `" + r + "` has not been initialized.")
 				}, p.removeHLSJS = function(e) {
 					var t = (0, o.getMuxPlayerId)(e);
-					f[t] ? f[t].removeHLSJS() : s.default.error("A monitor for `" + t + "` has not been initialized.")
-				}, p.removeDashJS = function(e, t) {
-					var r = (0, o.getMuxPlayerId)(e);
-					f[r] ? f[r].removeDashJS(t) : s.default.error("A monitor for `" + r + "` has not been initialized.")
+					h[t] ? h[t].removeHLSJS() : s.default.error("A monitor for `" + t + "` has not been initialized.")
+				}, p.removeDashJS = function(e) {
+					var t = (0, o.getMuxPlayerId)(e);
+					h[t] ? h[t].removeDashJS() : s.default.error("A monitor for `" + t + "` has not been initialized.")
 				}, p.init = function(e, t) {
+					(0, u.default)() && t && t.respectDoNotTrack && s.default.info("The browser's Do Not Track flag is enabled - Mux beaconing is disabled.");
 					var r = (0, o.getMuxPlayerId)(e);
-					f[r] = new l.default(p, r, t)
+					h[r] = new d.default(p, r, t)
 				}, p.emit = function(e, t, r) {
 					var a = (0, o.getMuxPlayerId)(e);
-					f[a] ? (f[a].emit(t, r), "destroy" === t && delete f[a]) : s.default.error("A monitor for `" + a + "` has not been initialized.")
-				}, (0, u.default)() && s.default.info("The browser's Do Not Track flag is enabled - Mux beaconing may be disabled."), n.default.addEventListener("unload", (function() {
+					h[a] ? (h[a].emit(t, r), "destroy" === t && delete h[a]) : s.default.error("A monitor for `" + a + "` has not been initialized.")
+				}, void 0 !== n.default && "function" == typeof n.default.addEventListener && n.default.addEventListener("unload", (function() {
 					p.WINDOW_UNLOADING = !0
-				}), !1), p.checkDoNotTrack = u.default, p.log = s.default, p.utils = c.default, t.default = p
+				}), !1), p.checkDoNotTrack = u.default, p.log = s.default, p.utils = f.default, t.default = p
 			}, function(e, t, r) {
 				var a, i;
 				! function(n, o) {
@@ -782,78 +833,91 @@
 						}(e, t);
 						throw new TypeError("Invalid attempt to destructure non-iterable instance")
 					},
-					n = a(r(3)),
-					o = a(r(0)),
-					s = r(6),
-					u = r(4),
-					l = a(r(2)),
-					d = a(r(1)),
-					c = a(r(20)),
-					f = r(23),
-					p = r(24),
-					h = a(r(25)),
-					_ = a(r(26)),
-					v = a(r(27)),
-					m = a(r(28)),
+					n = a(r(4)),
+					o = a(r(1)),
+					s = r(7),
+					u = r(5),
+					l = a(r(0)),
+					d = a(r(11)),
+					c = a(r(2)),
+					f = a(r(22)),
+					h = r(25),
+					p = r(26),
+					_ = a(r(27)),
+					v = a(r(28)),
 					y = a(r(29)),
-					b = a(r(30)),
-					g = a(r(31)),
-					w = a(r(32)),
-					x = a(r(33)),
-					S = a(r(34)),
-					T = a(r(35)),
-					O = a(r(36)),
-					E = a(r(37)),
-					k = a(r(38)),
-					M = a(r(47)),
-					P = ["viewstart", "ended", "loadstart", "pause", "play", "playing", "ratechange", "waiting", "adplay", "adpause", "adended", "aderror", "adplaying", "adrequest", "adresponse", "adbreakstart", "adbreakend", "rebufferstart", "rebufferend", "seeked", "error", "hb", "requestcompleted", "requestfailed", "requestcanceled"],
+					m = a(r(30)),
+					b = a(r(31)),
+					g = a(r(32)),
+					w = a(r(33)),
+					x = a(r(34)),
+					S = a(r(35)),
+					T = a(r(36)),
+					k = a(r(37)),
+					E = a(r(38)),
+					O = a(r(39)),
+					M = a(r(40)),
+					P = a(r(50)),
+					A = ["viewstart", "ended", "loadstart", "pause", "play", "playing", "ratechange", "waiting", "adplay", "adpause", "adended", "aderror", "adplaying", "adrequest", "adresponse", "adbreakstart", "adbreakend", "rebufferstart", "rebufferend", "seeked", "error", "hb", "requestcompleted", "requestfailed", "requestcanceled", "renditionchange"],
 					D = function(e, t, r) {
 						var a = this;
-						this.DOM_CONTENT_LOADED_EVENT_END = l.default.performance && l.default.performance.timing.domContentLoadedEventEnd, this.NAVIGATION_START = l.default.performance && l.default.performance.timing.navigationStart, this.mux = e, this.id = t, (r = (0, o.default)({
+						this.DOM_CONTENT_LOADED_EVENT_END = d.default.domContentLoadedEventEnd(), this.NAVIGATION_START = d.default.navigationStart(), this.mux = e, this.id = t, (r = (0, o.default)({
 							debug: !1,
 							minimumRebufferDuration: 250,
 							sustainedRebufferThreshold: 1e3,
 							playbackHeartbeatTime: 25,
-							sampleRate: 1,
 							beaconDomain: "litix.io",
+							sampleRate: 1,
 							disableCookies: !1,
-							respectDoNotTrack: !0
-						}, r)).data = r.data || {}, r.data.property_key && (r.data.env_key = r.data.property_key, delete r.data.property_key), n.default.setLevel(r.debug ? "debug" : "warn"), this.getPlayheadTime = r.getPlayheadTime, this.getStateData = r.getStateData || function() {}, this.getAdData = r.getAdData || function() {}, this.minimumRebufferDuration = r.minimumRebufferDuration, this.sustainedRebufferThreshold = r.sustainedRebufferThreshold, this.playbackHeartbeatTime = r.playbackHeartbeatTime, this.playbackEventDispatcher = new k.default(e, r.data.env_key, r), this.data = {
-							player_instance_id: (0, s.generateShortID)(),
+							respectDoNotTrack: !1,
+							disableRebufferTracking: !1,
+							errorTranslator: function(e) {
+								return e
+							}
+						}, r)).data = r.data || {}, r.data.property_key && (r.data.env_key = r.data.property_key, delete r.data.property_key), n.default.setLevel(r.debug ? "debug" : "warn"), this.getPlayheadTime = r.getPlayheadTime, this.getStateData = r.getStateData || function() {}, this.getAdData = r.getAdData || function() {}, this.minimumRebufferDuration = r.minimumRebufferDuration, this.sustainedRebufferThreshold = r.sustainedRebufferThreshold, this.playbackHeartbeatTime = r.playbackHeartbeatTime, this.disableRebufferTracking = r.disableRebufferTracking, this.disableRebufferTracking && this.mux.log.warn("Disabling rebuffer tracking. This should only be used in specific circumstances as a last resort when your player is known to unreliably track rebuffering."), this.errorTranslator = r.errorTranslator, this.playbackEventDispatcher = new M.default(e, r.data.env_key, r), this.data = {
+							player_instance_id: (0, s.generateUUID)(),
 							mux_sample_rate: r.sampleRate,
 							beacon_domain: r.beaconDomain
 						}, this.data.view_sequence_number = 1, this.data.player_sequence_number = 1, this.oldEmit = this.emit, this.emit = function(e, t) {
 							t = (0, o.default)({
-								viewer_time: Date.now()
+								viewer_time: this.mux.utils.now()
 							}, t), this.oldEmit(e, t)
-						}, this.on("viewinit", (function(e, t) {
-							this._resetVideoData(), this._resetViewData(), this._resetErrorData(), this._updateStateData(), (0, o.default)(this.data, t), this._initializeViewData();
-							var r = function() {
-								void 0 === this.data.view_start && (this.data.view_start = Date.now(), this.emit("viewstart"))
-							}.bind(this);
-							this.one("play", r), this.one("adbreakstart", r)
-						})), this.on("videochange", (function(e, t) {
-							this.emit("viewend"), this.send("viewend"), this.emit("viewinit", t)
+						};
+						var i = function() {
+							void 0 === this.data.view_start && (this.data.view_start = this.mux.utils.now(), this.emit("viewstart"))
+						}.bind(this);
+						this.on("viewinit", (function(e, t) {
+							this._resetVideoData(), this._resetViewData(), this._resetErrorData(), this._updateStateData(), (0, o.default)(this.data, t), this._initializeViewData(), this.one("play", i), this.one("adbreakstart", i)
+						}));
+						var u = function(e) {
+							this.emit("viewend"), this.send("viewend"), this.emit("viewinit", e)
+						}.bind(this);
+						this.on("videochange", (function(e, t) {
+							u(t)
+						})), this.on("programchange", (function(e, t) {
+							this.data.player_is_paused && this.mux.log.warn("The `programchange` event is intended to be used when the content changes mid playback without the video source changing, however the video is not currently playing. If the video source is changing please use the videochange event otherwise you will lose startup time information."), u((0, o.default)(t, {
+								view_program_changed: !0
+							})), i()
 						})), this.on("destroy", this.destroy);
-						var i = this.destroy.bind(this);
-						l.default.addEventListener("unload", i, !1), this.on("destroy", (function() {
-							l.default.removeEventListener("unload", i)
+						var c = this.destroy.bind(this);
+						void 0 !== l.default && "function" == typeof l.default.addEventListener && l.default.addEventListener("unload", c, !1), this.on("destroy", (function() {
+							void 0 !== l.default && "function" == typeof l.default.removeEventListener && l.default.removeEventListener("unload", c)
 						})), this.on("playerready", (function(e, t) {
 							(0, o.default)(this.data, t)
-						})), P.forEach((function(e) {
+						})), A.forEach((function(e) {
 							a.on(e, (function(t, r) {
 								0 !== e.indexOf("ad") && this._updateStateData(), (0, o.default)(this.data, r), this._sanitizeData()
 							})), a.on("after" + e, (function() {
-								this.send(e)
+								("error" !== e || this.viewErrored) && this.send(e)
 							}))
 						})), this.on("viewend", (function(e, t) {
 							(0, o.default)(a.data, t)
 						})), this.one("playerready", (function(e) {
-							var t = Date.now();
+							var t = this.mux.utils.now();
 							this.data.player_init_time && (this.data.player_startup_time = t - this.data.player_init_time), !this.mux.PLAYER_TRACKED && this.NAVIGATION_START && (this.mux.PLAYER_TRACKED = !0, (this.data.player_init_time || this.DOM_CONTENT_LOADED_EVENT_END) && (this.data.page_load_time = Math.min(this.data.player_init_time || 1 / 0, this.DOM_CONTENT_LOADED_EVENT_END || 1 / 0) - this.NAVIGATION_START)), this.send("playerready"), delete this.data.player_startup_time, delete this.data.page_load_time
-						})), v.default.apply(this), E.default.apply(this), S.default.apply(this), b.default.apply(this), _.default.apply(this), x.default.apply(this), m.default.apply(this), y.default.apply(this), T.default.apply(this), g.default.apply(this), w.default.apply(this), O.default.apply(this), M.default.apply(this), r.hlsjs && this.addHLSJS(r), r.dashjs && this.addDashJS(r), this.emit("viewinit", r.data)
+						})), y.default.apply(this), O.default.apply(this), T.default.apply(this), g.default.apply(this), v.default.apply(this), S.default.apply(this), m.default.apply(this), b.default.apply(this), k.default.apply(this), w.default.apply(this), x.default.apply(this), E.default.apply(this), P.default.apply(this), r.hlsjs && this.addHLSJS(r), r.dashjs && this.addDashJS(r), this.emit("viewinit", r.data)
 					};
-				(0, o.default)(D.prototype, h.default.prototype), (0, o.default)(D.prototype, b.default.prototype), (0, o.default)(D.prototype, S.default.prototype), (0, o.default)(D.prototype, _.default.prototype), (0, o.default)(D.prototype, m.default.prototype), (0, o.default)(D.prototype, y.default.prototype), (0, o.default)(D.prototype, T.default.prototype), (0, o.default)(D.prototype, g.default.prototype), (0, o.default)(D.prototype, w.default.prototype), D.prototype.destroy = function() {
+				(0, o.default)(D.prototype, _.default.prototype), (0, o.default)(D.prototype, g.default.prototype), (0, o.default)(D.prototype, T.default.prototype), (0, o.default)(D.prototype, v.default.prototype), (0, o.default)(D.prototype, m.default.prototype), (0, o.default)(D.prototype, b.default.prototype), (0, o.default)(D.prototype, k.default.prototype), (0, o.default)(D.prototype, w.default.prototype), (0, o.default)(D.prototype, x.default.prototype), D.prototype.destroy = function() {
 					this._destroyed || (this._destroyed = !0, void 0 !== this.data.view_start && (this.emit("viewend"), this.send("viewend")), this.playbackEventDispatcher.destroy(), this.removeHLSJS(), this.removeDashJS(), l.default.clearTimeout(this._heartBeatTimeout))
 				}, D.prototype.send = function(e) {
 					var t = (0, o.default)({}, this.data);
@@ -869,9 +933,11 @@
 					(0, o.default)(this.data, this.getStateData()), this.getPlayheadTime && (this.data.player_playhead_time = this.getPlayheadTime()), this._sanitizeData()
 				}, D.prototype._sanitizeData = function() {
 					var e = this;
-					["player_width", "player_height", "video_source_width", "video_source_height", "player_playhead_time"].forEach((function(t) {
+					["player_width", "player_height", "video_source_width", "video_source_height", "player_playhead_time", "video_source_bitrate"].forEach((function(t) {
 						var r = parseInt(e.data[t], 10);
 						e.data[t] = isNaN(r) ? void 0 : r
+					})), ["player_source_url", "video_source_url"].forEach((function(t) {
+						e.data[t] && 0 === e.data[t].toLowerCase().indexOf("data:") && (e.data[t] = "MSE style URL")
 					}))
 				}, D.prototype._resetVideoData = function(e, t) {
 					var r = this;
@@ -888,9 +954,9 @@
 				}, D.prototype._initializeViewData = function() {
 					var e = this,
 						t = this.data.view_id = (0, s.generateUUID)();
-					this.data.video_id || (this.data.video_id = (0, c.default)(this.data.player_source_url));
+					this.data.video_id || (this.data.video_id = (0, f.default)(this.data.player_source_url));
 					var r = function() {
-						t === e.data.view_id && (0, d.default)(e.data, "player_view_count", 1)
+						t === e.data.view_id && (0, c.default)(e.data, "player_view_count", 1)
 					};
 					this.data.player_is_paused ? this.one("play", r) : r()
 				}, D.prototype._restartHeartBeat = function() {
@@ -899,9 +965,9 @@
 						e.data.player_is_paused || e.emit("hb")
 					}), 1e4))
 				}, D.prototype.addHLSJS = function(e) {
-					return e.hlsjs ? this.hlsjs ? void this.mux.log.warn("An instance of HLS.js is already being monitored for this player.") : (this.hlsjs = e.hlsjs, void(0, f.monitorHlsJs)(this.mux, this.id, e.hlsjs, {}, e.Hls || l.default.Hls)) : void this.mux.log.warn("You must pass a valid hlsjs instance in order to track it.")
+					return e.hlsjs ? this.hlsjs ? void this.mux.log.warn("An instance of HLS.js is already being monitored for this player.") : (this.hlsjs = e.hlsjs, void(0, h.monitorHlsJs)(this.mux, this.id, e.hlsjs, {}, e.Hls || l.default.Hls)) : void this.mux.log.warn("You must pass a valid hlsjs instance in order to track it.")
 				}, D.prototype.removeHLSJS = function() {
-					this.hlsjs && ((0, f.stopMonitoringHlsJs)(this.hlsjs), this.hlsjs = void 0)
+					this.hlsjs && ((0, h.stopMonitoringHlsJs)(this.hlsjs), this.hlsjs = void 0)
 				}, D.prototype.addDashJS = function(e) {
 					return e.dashjs ? this.dashjs ? void this.mux.log.warn("An instance of Dash.js is already being monitored for this player.") : (this.dashjs = e.dashjs, void(0, p.monitorDashJS)(this.mux, this.id, e.dashjs)) : void this.mux.log.warn("You must pass a valid dashjs instance in order to track it.")
 				}, D.prototype.removeDashJS = function() {
@@ -923,8 +989,8 @@
 					var r = t.pathname.replace(/\.[^\/.]+$/, "");
 					return n.default.encode(t.host + r).split("=")[0]
 				};
-				var i = a(r(10)),
-					n = a(r(22))
+				var i = a(r(12)),
+					n = a(r(24))
 			}, function(e, t) {}, function(e, t, r) {
 				(function(e, a) {
 					var i;
@@ -957,7 +1023,7 @@
 							return l
 						}.call(t, r, t, e)) && (e.exports = i)
 					}()
-				}).call(t, r(11)(e), r(5))
+				}).call(t, r(13)(e), r(6))
 			}, function(e, t, r) {
 				"use strict";
 
@@ -969,12 +1035,12 @@
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				}), t.stopMonitoringHlsJs = t.monitorHlsJs = void 0;
-				var i = a(r(2)),
-					n = a(r(7)),
-					o = r(4),
+				var i = a(r(8)),
+					n = a(r(11)),
+					o = r(5),
 					s = function(e) {
 						if (!e) return {};
-						var t = i.default.performance.timing.navigationStart;
+						var t = n.default.navigationStart();
 						return {
 							bytesLoaded: e.total,
 							requestStart: Math.round(t + e.trequest),
@@ -983,12 +1049,12 @@
 						}
 					},
 					u = function(e) {
-						if (e && "function" == typeof e.getAllResponseHeaders) return (0, n.default)(e.getAllResponseHeaders())
+						if (e && "function" == typeof e.getAllResponseHeaders) return (0, i.default)(e.getAllResponseHeaders())
 					};
 				t.monitorHlsJs = function(e, t, r) {
 					var a = (arguments.length > 3 && void 0 !== arguments[3] && arguments[3], arguments[4]),
-						n = e.log;
-					if (i.default.performance && i.default.performance.timing) {
+						i = e.log;
+					if (n.default.exists()) {
 						var l = function(r, a) {
 								return e.emit(t, r, a)
 							},
@@ -1014,17 +1080,17 @@
 										bitrate: e.bitrate
 									}
 								}));
-								var p = s(n),
-									h = p.bytesLoaded,
-									_ = p.requestStart,
-									v = p.responseStart,
-									m = p.responseEnd;
+								var h = s(n),
+									p = h.bytesLoaded,
+									_ = h.requestStart,
+									v = h.responseStart,
+									y = h.responseEnd;
 								l("requestcompleted", {
 									request_event_type: e,
-									request_bytes_loaded: h,
+									request_bytes_loaded: p,
 									request_start: _,
 									request_response_start: v,
-									request_response_end: m,
+									request_response_end: y,
 									request_type: "manifest",
 									request_hostname: (0, o.extractHostname)(i),
 									request_response_headers: u(d),
@@ -1044,14 +1110,14 @@
 								d = s(n),
 								c = d.bytesLoaded,
 								f = d.requestStart,
-								p = d.responseStart,
-								h = d.responseEnd;
+								h = d.responseStart,
+								p = d.responseEnd;
 							l("requestcompleted", {
 								request_event_type: e,
 								request_bytes_loaded: c,
 								request_start: f,
-								request_response_start: p,
-								request_response_end: h,
+								request_response_start: h,
+								request_response_end: p,
 								request_current_level: a,
 								request_type: "manifest",
 								request_hostname: (0, o.extractHostname)(r.url),
@@ -1067,20 +1133,20 @@
 								d = n.bytesLoaded,
 								c = n.requestStart,
 								f = n.responseStart,
-								p = n.responseEnd;
+								h = n.responseEnd;
 							l("requestcompleted", {
 								request_event_type: e,
 								request_bytes_loaded: d,
 								request_start: c,
 								request_response_start: f,
-								request_response_end: p,
+								request_response_end: h,
 								request_type: "manifest",
 								request_hostname: (0, o.extractHostname)(r.url),
 								request_response_headers: u(a)
 							})
 						};
 						r.on(a.Events.AUDIO_TRACK_LOADED, f);
-						var p = function(e, t) {
+						var h = function(e, t) {
 							var a = t.stats,
 								i = t.networkDetails,
 								n = t.frag,
@@ -1097,8 +1163,8 @@
 								};
 							"main" === n.type ? (c.request_type = "media", c.request_current_level = n.level, c.request_video_width = (r.levels[n.level] || {}).width, c.request_video_height = (r.levels[n.level] || {}).height) : c.request_type = n.type, l("requestcompleted", c)
 						};
-						r.on(a.Events.FRAG_LOADED, p);
-						var h = function(e, t) {
+						r.on(a.Events.FRAG_LOADED, h);
+						var p = function(e, t) {
 							var r = t.details,
 								i = t.response,
 								n = t.context,
@@ -1115,7 +1181,7 @@
 								})
 							}
 						};
-						r.on(a.Events.ERROR, h);
+						r.on(a.Events.ERROR, p);
 						var _ = function(e, t) {
 							var r = t.frag,
 								a = r && r._url || "";
@@ -1126,10 +1192,25 @@
 								request_hostname: (0, o.extractHostname)(a)
 							})
 						};
-						r.on(a.Events.FRAG_LOAD_EMERGENCY_ABORTED, _), r._stopMuxMonitor = function() {
-							r.off(a.Events.MANIFEST_LOADED, d), r.off(a.Events.LEVEL_LOADED, c), r.off(a.Events.AUDIO_TRACK_LOADED, f), r.off(a.Events.FRAG_LOADED, p), r.off(a.Events.ERROR, h), r.off(a.Events.FRAG_LOAD_EMERGENCY_ABORTED, _), r.off(a.Events.DESTROYING, r._stopMuxMonitor), delete r._stopMuxMonitor
+						r.on(a.Events.FRAG_LOAD_EMERGENCY_ABORTED, _);
+						var v = function(e, t) {
+							var a = t.level,
+								n = r.levels.find((function(e) {
+									return e.level === a
+								}));
+							if (n && n.attrs && n.attrs.BANDWIDTH) {
+								var o = n.attrs.BANDWIDTH;
+								o ? l("renditionchange", {
+									video_source_bitrate: o,
+									video_source_width: n.width,
+									video_source_height: n.height
+								}) : i.warn("missing BANDWIDTH from HLS manifest parsed by HLS.js")
+							}
+						};
+						r.on(a.Events.LEVEL_SWITCHED, v), r._stopMuxMonitor = function() {
+							r.off(a.Events.MANIFEST_LOADED, d), r.off(a.Events.LEVEL_LOADED, c), r.off(a.Events.AUDIO_TRACK_LOADED, f), r.off(a.Events.FRAG_LOADED, h), r.off(a.Events.ERROR, p), r.off(a.Events.FRAG_LOAD_EMERGENCY_ABORTED, _), r.off(a.Events.LEVEL_SWITCHED, v), r.off(a.Events.DESTROYING, r._stopMuxMonitor), delete r._stopMuxMonitor
 						}, r.on(a.Events.DESTROYING, r._stopMuxMonitor)
-					} else n.warn("window.performance.timing not supported. Not tracking HLS.js.")
+					} else i.warn("performance timing not supported. Not tracking HLS.js.")
 				}, t.stopMonitoringHlsJs = function(e) {
 					e && "function" == typeof e._stopMuxMonitor && e._stopMuxMonitor()
 				}
@@ -1144,9 +1225,9 @@
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				}), t.stopMonitoringDashJS = t.monitorDashJS = void 0;
-				var i = a(r(2)),
-					n = a(r(7)),
-					o = r(4),
+				var i = a(r(0)),
+					n = a(r(8)),
+					o = r(5),
 					s = function(e, t) {
 						if (!e || "function" != typeof e.getRequests) return {};
 						var r = e.getRequests({
@@ -1159,15 +1240,15 @@
 							u = new Date(a.requestStartDate).getTime(),
 							l = new Date(a.firstByteDate).getTime(),
 							d = new Date(a.requestEndDate).getTime(),
-							c = Number.isNaN(a.duration) ? 0 : a.duration,
-							f = t.getMetricsFor(a.mediaType).HttpList,
-							p = void 0;
-						return f.length > 0 && (p = (0, n.default)(f[f.length - 1]._responseHeaders || "")), {
+							c = isNaN(a.duration) ? 0 : a.duration,
+							f = "function" == typeof t.getMetricsFor ? t.getMetricsFor(a.mediaType).HttpList : t.getDashMetrics().getHttpRequests(a.mediaType),
+							h = void 0;
+						return f.length > 0 && (h = (0, n.default)(f[f.length - 1]._responseHeaders || "")), {
 							requestStart: u,
 							requestResponseStart: l,
 							requestResponseEnd: d,
 							requestBytesLoaded: s,
-							requestResponseHeaders: p,
+							requestResponseHeaders: h,
 							requestMediaDuration: c,
 							requestHostname: i
 						}
@@ -1215,20 +1296,20 @@
 								})), "video" === o ? d.video = l : "audio" === o ? d.audio = l : d.media = l;
 								var c = s(a, r),
 									f = c.requestStart,
-									p = c.requestResponseStart,
-									h = c.requestResponseEnd,
+									h = c.requestResponseStart,
+									p = c.requestResponseEnd,
 									_ = c.requestResponseHeaders,
 									v = c.requestMediaDuration,
-									m = c.requestHostname;
+									y = c.requestHostname;
 								n("requestcompleted", {
 									request_event_type: t,
 									request_start: f,
-									request_response_start: p,
-									request_response_end: h,
+									request_response_start: h,
+									request_response_end: p,
 									request_bytes_loaded: -1,
 									request_type: o + "_init",
 									request_response_headers: _,
-									request_hostname: m,
+									request_hostname: y,
 									request_media_duration: v,
 									request_rendition_lists: d
 								})
@@ -1243,12 +1324,12 @@
 								d = (o || {}).type,
 								c = s(a, r),
 								f = c.requestStart,
-								p = c.requestResponseStart,
-								h = c.requestResponseEnd,
+								h = c.requestResponseStart,
+								p = c.requestResponseEnd,
 								_ = c.requestBytesLoaded,
 								v = c.requestResponseHeaders,
-								m = c.requestMediaDuration,
-								y = c.requestHostname,
+								y = c.requestMediaDuration,
+								m = c.requestHostname,
 								b = u(d, r),
 								g = b.currentLevel,
 								w = b.renditionWidth,
@@ -1257,14 +1338,14 @@
 							n("requestcompleted", {
 								request_event_type: t,
 								request_start: f,
-								request_response_start: p,
-								request_response_end: h,
+								request_response_start: h,
+								request_response_end: p,
 								request_bytes_loaded: _,
 								request_type: d,
 								request_response_headers: v,
-								request_hostname: y,
+								request_hostname: m,
 								request_media_start_time: l,
-								request_media_duration: m,
+								request_media_duration: y,
 								request_current_level: g,
 								request_labeled_bitrate: S,
 								request_video_width: w,
@@ -1272,7 +1353,38 @@
 							})
 						};
 						r.on("mediaFragmentLoaded", f);
-						var p = function(e) {
+						var h = {
+								video: void 0,
+								audio: void 0,
+								totalBitrate: void 0
+							},
+							p = function() {
+								if (h.video && "number" == typeof h.video.bitrate) {
+									if (!h.video.width || !h.video.height) return void a.warn("have bitrate info for video but missing width/height");
+									var e = h.video.bitrate;
+									return h.audio && "number" == typeof h.audio.bitrate && (e += h.audio.bitrate), e !== h.totalBitrate ? (h.totalBitrate = e, {
+										video_source_bitrate: e,
+										video_source_height: h.video.height,
+										video_source_width: h.video.width
+									}) : void 0
+								}
+							},
+							_ = function(e, t, i) {
+								if ("number" == typeof e.newQuality) {
+									var o = e.mediaType;
+									if ("audio" === o || "video" === o) {
+										var s = r.getBitrateInfoListFor(o).find((function(t) {
+											return t.qualityIndex === e.newQuality
+										}));
+										if (!s || "number" != typeof s.bitrate) return void a.warn("missing bitrate info for " + o);
+										h[o] = s;
+										var u = p();
+										u && n("renditionchange", u)
+									}
+								} else a.warn("missing evt.newQuality in qualityChangeRendered event", e)
+							};
+						r.on("qualityChangeRendered", _);
+						var v = function(e) {
 							var t = e.error,
 								r = e.event,
 								a = (r = r || {}).request || {},
@@ -1286,8 +1398,8 @@
 								request_error_type: s.statusText
 							})
 						};
-						r.on("error", p), r._stopMuxMonitor = function() {
-							r.off("manifestLoaded", l), r.off("initFragmentLoaded", c), r.off("mediaFragmentLoaded", f), r.off("error", p), delete r._stopMuxMonitor
+						r.on("error", v), r._stopMuxMonitor = function() {
+							r.off("manifestLoaded", l), r.off("initFragmentLoaded", c), r.off("mediaFragmentLoaded", f), r.off("qualityChangeRendered", _), r.off("error", v), delete r._stopMuxMonitor
 						}
 					} else a.warn("Invalid dash.js player reference. Monitoring blocked.")
 				}, t.stopMonitoringDashJS = function(e) {
@@ -1340,12 +1452,12 @@
 						return e && e.__esModule ? e : {
 							default: e
 						}
-					}(r(2)),
+					}(r(0)),
 					i = function() {
 						this._playbackHeartbeatInterval = null, this._playheadShouldBeProgressing = !1, this.on("playing", (function() {
 							this._playheadShouldBeProgressing = !0
-						})), this.on("play", this._startPlaybackHeartbeatInterval), this.on("adbreakstart", this._startPlaybackHeartbeatInterval), this.on("adplay", this._startPlaybackHeartbeatInterval), this.on("seeking", this._startPlaybackHeartbeatInterval), this.on("devicewake", this._startPlaybackHeartbeatInterval), this.on("pause", this._stopPlaybackHeartbeatInterval), this.on("ended", this._stopPlaybackHeartbeatInterval), this.on("viewend", this._stopPlaybackHeartbeatInterval), this.on("error", this._stopPlaybackHeartbeatInterval), this.on("adpause", this._stopPlaybackHeartbeatInterval), this.on("adbreakend", this._stopPlaybackHeartbeatInterval), this.on("seeked", (function() {
-							this.data.player_is_paused && this._stopPlaybackHeartbeatInterval()
+						})), this.on("play", this._startPlaybackHeartbeatInterval), this.on("playing", this._startPlaybackHeartbeatInterval), this.on("adbreakstart", this._startPlaybackHeartbeatInterval), this.on("adplay", this._startPlaybackHeartbeatInterval), this.on("adplaying", this._startPlaybackHeartbeatInterval), this.on("seeking", this._startPlaybackHeartbeatInterval), this.on("devicewake", this._startPlaybackHeartbeatInterval), this.on("viewstart", this._startPlaybackHeartbeatInterval), this.on("pause", this._stopPlaybackHeartbeatInterval), this.on("ended", this._stopPlaybackHeartbeatInterval), this.on("viewend", this._stopPlaybackHeartbeatInterval), this.on("error", this._stopPlaybackHeartbeatInterval), this.on("aderror", this._stopPlaybackHeartbeatInterval), this.on("adpause", this._stopPlaybackHeartbeatInterval), this.on("adended", this._stopPlaybackHeartbeatInterval), this.on("adbreakend", this._stopPlaybackHeartbeatInterval), this.on("seeked", (function() {
+							this.data.player_is_paused ? this._stopPlaybackHeartbeatInterval() : this._startPlaybackHeartbeatInterval()
 						})), this.on("timeupdate", (function() {
 							null !== this._playbackHeartbeatInterval && this.emit("playbackheartbeat")
 						})), this.on("devicesleep", (function(e, t) {
@@ -1371,7 +1483,15 @@
 					this.on("viewinit", (function() {
 						e.viewErrored = !1
 					})), this.on("error", (function() {
-						e.viewErrored = !0
+						try {
+							var t = e.errorTranslator({
+								player_error_code: e.data.player_error_code,
+								player_error_message: e.data.player_error_message
+							});
+							t ? (e.data.player_error_code = t.player_error_code, e.data.player_error_message = t.player_error_message, e.viewErrored = !0) : (delete e.data.player_error_code, delete e.data.player_error_message)
+						} catch (t) {
+							e.mux.log.warn("Exception in error translator callback.", t), e.viewErrored = !0
+						}
 					}))
 				}
 			}, function(e, t, r) {
@@ -1383,7 +1503,7 @@
 						return e && e.__esModule ? e : {
 							default: e
 						}
-					}(r(1)),
+					}(r(2)),
 					i = function() {
 						this._watchTimeTrackerLastCheckedTime = null, this.on("playbackheartbeat", this._updateWatchTime), this.on("playbackheartbeatend", this._clearWatchTimeState)
 					};
@@ -1402,7 +1522,7 @@
 						return e && e.__esModule ? e : {
 							default: e
 						}
-					}(r(1)),
+					}(r(2)),
 					i = function() {
 						this._playbackTimeTrackerLastPlayheadPosition = -1, this.on("playbackheartbeat", this._updatePlaybackTime), this.on("playbackheartbeatend", this._clearPlaybackTimeState), this.on("seeking", this._clearPlaybackTimeState)
 					};
@@ -1435,6 +1555,59 @@
 				}, t.default = a
 			}, function(e, t, r) {
 				"use strict";
+
+				function a(e) {
+					return e && e.__esModule ? e : {
+						default: e
+					}
+				}
+				Object.defineProperty(t, "__esModule", {
+					value: !0
+				});
+				var i = a(r(3)),
+					n = a(r(2)),
+					o = function() {
+						this._lastCheckedTime = null, this._lastPlayheadTime = null, this._lastPlayheadTimeUpdatedTime = null, this.on("playbackheartbeat", this._checkIfRebuffering), this.on("playbackheartbeatend", this._cleanupRebufferTracker), this.on("seeking", (function() {
+							this._cleanupRebufferTracker(null, {
+								viewer_time: i.default.now()
+							})
+						}))
+					};
+				o.prototype._checkIfRebuffering = function(e, t) {
+					if (!this.disableRebufferTracking) {
+						if (this.isSeeking || this.isAdBreak || !this._playheadShouldBeProgressing) return void this._cleanupRebufferTracker(e, t);
+						if (null === this._lastCheckedTime) return this._prepareRebufferTrackerState(t.viewer_time), void this._updateRebufferMetrics();
+						if (this._lastPlayheadTime !== this.data.player_playhead_time) return void this._cleanupRebufferTracker(e, t, !0);
+						var r = t.viewer_time - this._lastPlayheadTimeUpdatedTime;
+						r >= this.sustainedRebufferThreshold && (this._rebuffering ? this._updateRebufferMetrics(t.viewer_time - this._lastCheckedTime) : (this._rebuffering = !0, (0, n.default)(this.data, "view_rebuffer_count", 1), this._updateRebufferMetrics(r), this.emit("rebufferstart"))), this._lastCheckedTime = t.viewer_time
+					}
+				}, o.prototype._clearRebufferTrackerState = function() {
+					this._lastCheckedTime = null, this._lastPlayheadTime = null, this._lastPlayheadTimeUpdatedTime = null
+				}, o.prototype._prepareRebufferTrackerState = function(e) {
+					this._lastCheckedTime = e, this._lastPlayheadTime = this.data.player_playhead_time, this._lastPlayheadTimeUpdatedTime = e
+				}, o.prototype._cleanupRebufferTracker = function(e, t) {
+					var r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+					if (!this.disableRebufferTracking) {
+						if (this._rebuffering) this._rebuffering = !1, this._updateRebufferMetrics(t.viewer_time - this._lastCheckedTime), this.emit("rebufferend", {
+							viewer_time: t.viewer_time
+						});
+						else {
+							if (null === this._lastCheckedTime) return void this._updateRebufferMetrics();
+							var a = this.data.player_playhead_time - this._lastPlayheadTime,
+								i = t.viewer_time - this._lastPlayheadTimeUpdatedTime;
+							a > 0 && i - a > this.minimumRebufferDuration ? ((0, n.default)(this.data, "view_rebuffer_count", 1), this._updateRebufferMetrics(i - a), this.emit("rebufferstart", {
+								viewer_time: this._lastPlayheadTimeUpdatedTime
+							}), this.emit("rebufferend", {
+								viewer_time: this._lastPlayheadTimeUpdatedTime + i - a
+							})) : this._updateRebufferMetrics()
+						}
+						r ? this._prepareRebufferTrackerState(t.viewer_time) : this._clearRebufferTrackerState()
+					}
+				}, o.prototype._updateRebufferMetrics = function(e) {
+					e > 0 && (0, n.default)(this.data, "view_rebuffer_duration", e), this.data.view_watch_time >= 0 && this.data.view_rebuffer_count > 0 && (this.data.view_rebuffer_frequency = this.data.view_rebuffer_count / this.data.view_watch_time, this.data.view_rebuffer_percentage = this.data.view_rebuffer_duration / this.data.view_watch_time)
+				}, t.default = o
+			}, function(e, t, r) {
+				"use strict";
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				});
@@ -1442,68 +1615,27 @@
 						return e && e.__esModule ? e : {
 							default: e
 						}
-					}(r(1)),
+					}(r(3)),
 					i = function() {
-						this._lastCheckedTime = null, this._lastPlayheadTime = null, this._lastPlayheadTimeUpdatedTime = null, this.on("playbackheartbeat", this._checkIfRebuffering), this.on("playbackheartbeatend", this._cleanupRebufferTracker), this.on("seeking", (function() {
-							this._cleanupRebufferTracker(null, {
-								viewer_time: Date.now()
-							})
+						this.on("viewinit", (function() {
+							var e = this.data,
+								t = e.view_id;
+							if (!e.view_program_changed) {
+								var r = function(e, r) {
+									var i = r.viewer_time;
+									"playing" === e.type && void 0 === this.data.view_time_to_first_frame ? this.calculateTimeToFirstFrame(i || a.default.now(), t) : "adplaying" !== e.type || void 0 !== this.data.view_time_to_first_frame && !this.inPrerollPosition() || this.calculateTimeToFirstFrame(i || a.default.now(), t)
+								};
+								this.one("playing", r), this.one("adplaying", r), this.one("viewend", (function() {
+									this.off("playing", r), this.off("adplaying", r)
+								}))
+							}
 						}))
 					};
-				i.prototype._checkIfRebuffering = function(e, t) {
-					if (this.isSeeking || this.isAdBreak || !this._playheadShouldBeProgressing) this._cleanupRebufferTracker(e, t);
-					else {
-						if (null === this._lastCheckedTime) return this._prepareRebufferTrackerState(t.viewer_time), void this._updateRebufferMetrics();
-						if (this._lastPlayheadTime === this.data.player_playhead_time) {
-							var r = t.viewer_time - this._lastPlayheadTimeUpdatedTime;
-							r >= this.sustainedRebufferThreshold && (this._rebuffering ? this._updateRebufferMetrics(t.viewer_time - this._lastCheckedTime) : (this._rebuffering = !0, (0, a.default)(this.data, "view_rebuffer_count", 1), this._updateRebufferMetrics(r), this.emit("rebufferstart"))), this._lastCheckedTime = t.viewer_time
-						} else this._cleanupRebufferTracker(e, t, !0)
-					}
-				}, i.prototype._clearRebufferTrackerState = function() {
-					this._lastCheckedTime = null, this._lastPlayheadTime = null, this._lastPlayheadTimeUpdatedTime = null
-				}, i.prototype._prepareRebufferTrackerState = function(e) {
-					this._lastCheckedTime = e, this._lastPlayheadTime = this.data.player_playhead_time, this._lastPlayheadTimeUpdatedTime = e
-				}, i.prototype._cleanupRebufferTracker = function(e, t) {
-					var r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-					if (this._rebuffering) this._rebuffering = !1, this._updateRebufferMetrics(t.viewer_time - this._lastCheckedTime), this.emit("rebufferend", {
-						viewer_time: t.viewer_time
-					});
-					else {
-						if (null === this._lastCheckedTime) return void this._updateRebufferMetrics();
-						var i = this.data.player_playhead_time - this._lastPlayheadTime,
-							n = t.viewer_time - this._lastPlayheadTimeUpdatedTime;
-						i > 0 && n - i > this.minimumRebufferDuration ? ((0, a.default)(this.data, "view_rebuffer_count", 1), this._updateRebufferMetrics(n - i), this.emit("rebufferstart", {
-							viewer_time: this._lastPlayheadTimeUpdatedTime
-						}), this.emit("rebufferend", {
-							viewer_time: this._lastPlayheadTimeUpdatedTime + n - i
-						})) : this._updateRebufferMetrics()
-					}
-					r ? this._prepareRebufferTrackerState(t.viewer_time) : this._clearRebufferTrackerState()
-				}, i.prototype._updateRebufferMetrics = function(e) {
-					e > 0 && (0, a.default)(this.data, "view_rebuffer_duration", e), this.data.view_watch_time >= 0 && this.data.view_rebuffer_count > 0 && (this.data.view_rebuffer_frequency = this.data.view_rebuffer_count / this.data.view_watch_time, this.data.view_rebuffer_percentage = this.data.view_rebuffer_duration / this.data.view_watch_time)
-				}, t.default = i
-			}, function(e, t, r) {
-				"use strict";
-				Object.defineProperty(t, "__esModule", {
-					value: !0
-				});
-				var a = function() {
-					this.on("viewinit", (function() {
-						var e = this.data.view_id,
-							t = function(t, r) {
-								var a = r.viewer_time;
-								"playing" === t.type && void 0 === this.data.view_time_to_first_frame ? this.calculateTimeToFirstFrame(a || Date.now(), e) : "adplaying" !== t.type || void 0 !== this.data.view_time_to_first_frame && !this.inPrerollPosition() || this.calculateTimeToFirstFrame(a || Date.now(), e)
-							};
-						this.one("playing", t), this.one("adplaying", t), this.one("viewend", (function() {
-							this.off("playing", t), this.off("adplaying", t)
-						}))
-					}))
-				};
-				a.prototype.calculateTimeToFirstFrame = function(e, t) {
+				i.prototype.calculateTimeToFirstFrame = function(e, t) {
 					t === this.data.view_id && (this._updateWatchTime(null, {
 						viewer_time: e
 					}), this.data.view_time_to_first_frame = this.data.view_watch_time, (this.data.player_autoplay_on || this.data.video_is_autoplay) && this.NAVIGATION_START && (this.data.view_aggregate_startup_time = this.data.view_start + this.data.view_watch_time - this.NAVIGATION_START))
-				}, t.default = a
+				}, t.default = i
 			}, function(e, t, r) {
 				"use strict";
 				Object.defineProperty(t, "__esModule", {
@@ -1534,7 +1666,7 @@
 					return e && e.__esModule ? e : {
 						default: e
 					}
-				}(r(1))
+				}(r(2))
 			}, function(e, t, r) {
 				"use strict";
 
@@ -1547,20 +1679,21 @@
 					value: !0
 				}), t.default = function() {
 					this.isSeeking = !1, this.on("seeking", (function(e, t) {
-						(0, n.default)(this.data, t), this._lastSeekingTime = Date.now(), !1 === this.isSeeking && (this.isSeeking = !0, this.send("seeking"))
+						(0, o.default)(this.data, t), this._lastSeekingTime = i.default.now(), !1 === this.isSeeking && (this.isSeeking = !0, this.send("seeking"))
 					})), this.on("seeked", (function() {
 						this.isSeeking = !1;
-						var e = this._lastSeekingTime || Date.now(),
-							t = Date.now() - e;
-						(0, i.default)(this.data, "view_seek_count", 1), (0, i.default)(this.data, "view_seek_duration", t);
+						var e = this._lastSeekingTime || i.default.now(),
+							t = i.default.now() - e;
+						(0, n.default)(this.data, "view_seek_count", 1), (0, n.default)(this.data, "view_seek_duration", t);
 						var r = this.data.view_max_seek_time || 0;
 						this.data.view_max_seek_time = Math.max(r, t)
 					})), this.on("viewend", (function() {
 						this.isSeeking = !1
 					}))
 				};
-				var i = a(r(1)),
-					n = a(r(0))
+				var i = a(r(3)),
+					n = a(r(2)),
+					o = a(r(1))
 			}, function(e, t, r) {
 				"use strict";
 
@@ -1594,9 +1727,9 @@
 						}(e, t);
 						throw new TypeError("Invalid attempt to destructure non-iterable instance")
 					},
-					n = a(r(1)),
-					o = r(4),
-					s = a(r(0)),
+					n = a(r(2)),
+					o = r(5),
+					s = a(r(1)),
 					u = function(e, t) {
 						e.push(t), e.sort((function(e, t) {
 							return e.viewer_time - t.viewer_time
@@ -1660,63 +1793,69 @@
 				}, t.default = d
 			}, function(e, t, r) {
 				"use strict";
+
+				function a(e) {
+					return e && e.__esModule ? e : {
+						default: e
+					}
+				}
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				}), t.default = function() {
 					var e = this,
 						t = void 0,
 						r = void 0,
-						i = function() {
-							t && ((0, a.default)(e.data, "view_waiting_rebuffer_duration", Date.now() - t), t = !1, window.clearInterval(r))
+						a = function() {
+							e.disableRebufferTracking || t && ((0, n.default)(e.data, "view_waiting_rebuffer_duration", i.default.now() - t), t = !1, window.clearInterval(r))
 						},
-						n = !1,
-						o = function() {
-							n = !1, i()
+						o = !1,
+						s = function() {
+							o = !1, a()
 						};
 					this.on("waiting", (function() {
-						n && ((0, a.default)(e.data, "view_waiting_rebuffer_count", 1), t = Date.now(), r = window.setInterval((function() {
+						o && (e.disableRebufferTracking || ((0, n.default)(e.data, "view_waiting_rebuffer_count", 1), t = i.default.now(), r = window.setInterval((function() {
 							if (t) {
-								var r = Date.now();
-								(0, a.default)(e.data, "view_waiting_rebuffer_duration", r - t), t = r
+								var r = i.default.now();
+								(0, n.default)(e.data, "view_waiting_rebuffer_duration", r - t), t = r
 							}
-						}), 250))
+						}), 250)))
 					})), this.on("playing", (function() {
-						i(), n = !0
-					})), this.on("pause", o), this.on("seeking", o)
+						a(), o = !0
+					})), this.on("pause", s), this.on("seeking", s)
 				};
-				var a = function(e) {
+				var i = a(r(3)),
+					n = a(r(2))
+			}, function(e, t, r) {
+				"use strict";
+
+				function a(e) {
 					return e && e.__esModule ? e : {
 						default: e
 					}
-				}(r(1))
-			}, function(e, t, r) {
-				"use strict";
+				}
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				}), t.default = function() {
 					var e = this;
-					this.one("playbackheartbeat", i), this.on("playbackheartbeatend", (function() {
-						e.off("before*", n), e.one("playbackheartbeat", i)
+					this.one("playbackheartbeat", o), this.on("playbackheartbeatend", (function() {
+						e.off("before*", s), e.one("playbackheartbeat", o)
 					}))
 				};
-				var a = function(e) {
-						return e && e.__esModule ? e : {
-							default: e
-						}
-					}(r(0)),
-					i = function() {
-						this.lastWallClockTime = Date.now(), this.on("before*", n)
+				var i = a(r(1)),
+					n = a(r(3)),
+					o = function() {
+						this.lastWallClockTime = n.default.now(), this.on("before*", s)
 					},
-					n = function(e) {
-						var t = Date.now(),
+					s = function(e) {
+						var t = n.default.now(),
 							r = this.lastWallClockTime;
 						this.lastWallClockTime = t, t - r > 3e4 && (this.emit("devicesleep", {
 							viewer_time: r
-						}), (0, a.default)(this.data, {
+						}), (0, i.default)(this.data, {
 							viewer_time: r
 						}), this.send("devicesleep"), this.emit("devicewake", {
 							viewer_time: t
-						}), (0, a.default)(this.data, {
+						}), (0, i.default)(this.data, {
 							viewer_time: t
 						}), this.send("devicewake"))
 					}
@@ -1736,69 +1875,78 @@
 					} : function(e) {
 						return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
 					},
-					n = r(39),
-					o = a(r(3)),
-					s = a(r(43)),
-					u = a(r(9)),
-					l = a(r(15)),
-					d = a(r(44)),
-					c = a(r(46)),
-					f = a(r(0)),
-					p = ["env_key", "view_id", "view_sequence_number", "player_sequence_number", "beacon_domain", "player_playhead_time", "viewer_time", "mux_api_version", "event", "video_id"],
-					h = ["viewstart", "error", "ended", "viewend"],
-					_ = function(e, t) {
+					n = a(r(0)),
+					o = r(41),
+					s = a(r(4)),
+					u = a(r(45)),
+					l = a(r(10)),
+					d = a(r(46)),
+					c = a(r(17)),
+					f = a(r(47)),
+					h = a(r(49)),
+					p = a(r(1)),
+					_ = ["env_key", "view_id", "view_sequence_number", "player_sequence_number", "beacon_domain", "player_playhead_time", "viewer_time", "mux_api_version", "event", "video_id", "player_instance_id"],
+					v = ["viewstart", "error", "ended", "viewend"],
+					y = function(e, t) {
 						var r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-						this.mux = e, this.envKey = t, this.eventQueue = new d.default((0, s.default)(t, r.beaconDomain)), this.previousBeaconData = null, this.lastEventTime = null, this.sampleRate = r.sampleRate, this.disableCookies = r.disableCookies, this.respectDoNotTrack = r.respectDoNotTrack, this.pageLevelData = {
+						this.mux = e, this.envKey = t, this.eventQueue = new f.default((0, u.default)(t, r.beaconDomain)), this.previousBeaconData = null, this.lastEventTime = null, this.sampleRate = r.sampleRate, this.disableCookies = r.disableCookies, this.respectDoNotTrack = r.respectDoNotTrack;
+						var a = (0, p.default)(h.default, r.platform || {});
+						this.pageLevelData = {
 							mux_api_version: this.mux.API_VERSION,
 							mux_embed_version: this.mux.VERSION,
-							page_url: window.location.href,
-							viewer_application_name: c.default.name,
-							viewer_application_version: c.default.version,
-							viewer_application_engine: c.default.layout,
-							viewer_device_name: c.default.product,
+							viewer_application_name: a.name,
+							viewer_application_version: a.version,
+							viewer_application_engine: a.layout,
+							viewer_device_name: a.product,
 							viewer_device_category: "",
-							viewer_device_manufacturer: c.default.manufacturer,
-							viewer_os_family: c.default.os && c.default.os.family,
-							viewer_os_architecture: c.default.os && c.default.os.architecture,
-							viewer_os_version: c.default.os && c.default.os.version
-						}, this.viewerData = this.disableCookies ? {} : (0, n.getAndUpdateViewerData)()
+							viewer_device_manufacturer: a.manufacturer,
+							viewer_os_family: a.os && a.os.family,
+							viewer_os_architecture: a.os && a.os.architecture,
+							viewer_os_version: a.os && a.os.version
+						};
+						var i = (0, d.default)();
+						i && (this.pageLevelData = (0, p.default)(this.pageLevelData, {
+							viewer_connection_type: i
+						})), void 0 !== n.default && n.default.location && n.default.location.href && (this.pageLevelData.page_url = n.default.location.href), this.viewerData = this.disableCookies ? {} : (0, o.getAndUpdateViewerData)()
 					};
-				_.prototype.send = function(e, t) {
+				y.prototype.send = function(e, t) {
 					if (e) {
-						if (this.respectDoNotTrack && (0, u.default)()) return o.default.info("Not sending `" + e + "` because Do Not Track is enabled in your browser");
-						if (!t || "object" !== (void 0 === t ? "undefined" : i(t))) return o.default.error("A data object was expected in send() but was not provided");
-						var r = this.disableCookies ? {} : (0, n.getAndUpdateSessionData)(),
+						if (this.respectDoNotTrack && (0, l.default)()) return s.default.info("Not sending `" + e + "` because Do Not Track is enabled");
+						if (!t || "object" !== (void 0 === t ? "undefined" : i(t))) return s.default.error("A data object was expected in send() but was not provided");
+						var r = this.disableCookies ? {} : (0, o.getAndUpdateSessionData)(),
 							a = {};
-						(0, f.default)(a, this.pageLevelData), (0, f.default)(a, t), (0, f.default)(a, r), (0, f.default)(a, this.viewerData), a.event = e, a.env_key = this.envKey, a.user_id && (a.viewer_user_id = a.user_id, delete a.user_id);
-						var s = a.mux_sample_number >= this.sampleRate,
-							d = this._deduplicateBeaconData(e, a),
-							c = (0, l.default)(d);
-						if (this.lastEventTime = Date.now(), s) return o.default.info("Not sending event due to sample rate restriction", e, a, c);
-						if (!this.envKey) return o.default.info("Not sending event due to missing environment key", e, a, c);
+						(0, p.default)(a, this.pageLevelData), (0, p.default)(a, t), (0, p.default)(a, r), (0, p.default)(a, this.viewerData), a.event = e, a.env_key = this.envKey, a.user_id && (a.viewer_user_id = a.user_id, delete a.user_id);
+						var n = a.mux_sample_number >= this.sampleRate,
+							u = this._deduplicateBeaconData(e, a),
+							d = (0, c.default)(u);
+						if (this.lastEventTime = this.mux.utils.now(), n) return s.default.info("Not sending event due to sample rate restriction", e, a, d);
+						if (!this.envKey) return s.default.info("Not sending event due to missing environment key", e, a, d);
 						if (!this.rateLimited)
-							if (o.default.info("Sending event", e, a, c), this.rateLimited = !this.eventQueue.queueEvent(e, c), this.mux.WINDOW_UNLOADING && "viewend" === e) this.eventQueue.destroy(!0);
-							else if (h.indexOf(e) >= 0 && this.eventQueue.flushEvents(), this.rateLimited) return a.event = "eventrateexceeded", c = (0, l.default)(a), this.eventQueue.queueEvent(a.event, c), o.default.error("Beaconing disabled due to rate limit.")
+							if (s.default.info("Sending event", e, a, d), this.rateLimited = !this.eventQueue.queueEvent(e, d), this.mux.WINDOW_UNLOADING && "viewend" === e) this.eventQueue.destroy(!0);
+							else if (v.indexOf(e) >= 0 && this.eventQueue.flushEvents(), this.rateLimited) return a.event = "eventrateexceeded", d = (0, c.default)(a), this.eventQueue.queueEvent(a.event, d), s.default.error("Beaconing disabled due to rate limit.")
 					}
-				}, _.prototype.destroy = function() {
+				}, y.prototype.destroy = function() {
 					this.eventQueue.destroy(!1)
 				};
-				var v = function(e, t, r, a) {
+				var m = function(e, t, r, a) {
 					return !(!e || 0 !== t.indexOf("request_") || "request_response_headers" !== t && "object" === (void 0 === r ? "undefined" : i(r)) && "object" === (void 0 === a ? "undefined" : i(a)) && Object.keys(r || {}).length === Object.keys(a || {}).length)
 				};
-				_.prototype._deduplicateBeaconData = function(e, t) {
+				y.prototype._deduplicateBeaconData = function(e, t) {
 					var r = this,
 						a = {},
 						i = t.view_id;
-					if (!i || "viewstart" === e || "viewend" === e || !this.previousBeaconData || Date.now() - this.lastEventTime >= 6e5) a = (0, f.default)({}, t), i && (this.previousBeaconData = a), i && "viewend" === e && (this.previousBeaconData = null);
+					if (!i || "viewstart" === e || "viewend" === e || !this.previousBeaconData || this.mux.utils.now() - this.lastEventTime >= 6e5) a = (0, p.default)({}, t), i && (this.previousBeaconData = a), i && "viewend" === e && (this.previousBeaconData = null);
 					else {
 						var n = 0 === e.indexOf("request");
-						Object.keys(t).forEach((function(e) {
-							var i = t[e];
-							(i !== r.previousBeaconData[e] || p.indexOf(e) > -1 || v(n, e, i, r.previousBeaconData[e])) && (a[e] = i, r.previousBeaconData[e] = i)
+						Object.keys(t).forEach((function(i) {
+							var o = t[i];
+							(o !== r.previousBeaconData[i] || _.indexOf(i) > -1 || m(n, i, o, r.previousBeaconData[i]) || function(e, t) {
+								return "renditionchange" === e && 0 === t.indexOf("video_source_")
+							}(e, i)) && (a[i] = o, r.previousBeaconData[i] = o)
 						}))
 					}
 					return a
-				}, t.default = _
+				}, t.default = y
 			}, function(e, t, r) {
 				"use strict";
 
@@ -1810,10 +1958,11 @@
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				}), t.getAndUpdateSessionData = t.getAndUpdateViewerData = void 0;
-				var i = a(r(12)),
-					n = a(r(42)),
-					o = r(6),
-					s = function() {
+				var i = a(r(14)),
+					n = a(r(44)),
+					o = r(7),
+					s = a(r(3)),
+					u = function() {
 						var e = void 0;
 						try {
 							e = i.default.parse(n.default.get("muxData") || "")
@@ -1822,21 +1971,21 @@
 						}
 						return e
 					},
-					u = function(e) {
+					l = function(e) {
 						n.default.set("muxData", i.default.stringify(e), {
 							expires: 7300
 						})
 					};
 				t.getAndUpdateViewerData = function() {
-					var e = s();
-					return e.mux_viewer_id = e.mux_viewer_id || (0, o.generateUUID)(), e.msn = e.msn || Math.random(), u(e), {
+					var e = u();
+					return e.mux_viewer_id = e.mux_viewer_id || (0, o.generateUUID)(), e.msn = e.msn || Math.random(), l(e), {
 						mux_viewer_id: e.mux_viewer_id,
 						mux_sample_number: e.msn
 					}
 				}, t.getAndUpdateSessionData = function() {
-					var e = s(),
-						t = Date.now();
-					return e.session_start && (e.sst = e.session_start, delete e.session_start), e.session_id && (e.sid = e.session_id, delete e.session_id), e.session_expires && (e.sex = e.session_expires, delete e.session_expires), (!e.sex || e.sex < t) && (e.sid = (0, o.generateUUID)(), e.sst = t), e.sex = t + 15e5, u(e), {
+					var e = u(),
+						t = s.default.now();
+					return e.session_start && (e.sst = e.session_start, delete e.session_start), e.session_id && (e.sid = e.session_id, delete e.session_id), e.session_expires && (e.sex = e.session_expires, delete e.session_expires), (!e.sex || e.sex < t) && (e.sid = (0, o.generateUUID)(), e.sst = t), e.sex = t + 15e5, l(e), {
 						session_id: e.sid,
 						session_start: e.sst,
 						session_expires: e.sex
@@ -1844,8 +1993,8 @@
 				}
 			}, function(e, t, r) {
 				"use strict";
-				var a = r(13),
-					i = r(14),
+				var a = r(15),
+					i = r(16),
 					n = {
 						brackets: function(e) {
 							return e + "[]"
@@ -1869,27 +2018,27 @@
 						skipNulls: !1,
 						strictNullHandling: !1
 					},
-					u = function e(t, r, i, n, o, u, l, d, c, f, p, h) {
+					u = function e(t, r, i, n, o, u, l, d, c, f, h, p) {
 						var _ = t;
 						if ("function" == typeof l) _ = l(r, _);
 						else if (_ instanceof Date) _ = f(_);
 						else if (null === _) {
-							if (n) return u && !h ? u(r, s.encoder) : r;
+							if (n) return u && !p ? u(r, s.encoder) : r;
 							_ = ""
 						}
-						if ("string" == typeof _ || "number" == typeof _ || "boolean" == typeof _ || a.isBuffer(_)) return u ? [p(h ? r : u(r, s.encoder)) + "=" + p(u(_, s.encoder))] : [p(r) + "=" + p(String(_))];
-						var v, m = [];
-						if (void 0 === _) return m;
+						if ("string" == typeof _ || "number" == typeof _ || "boolean" == typeof _ || a.isBuffer(_)) return u ? [h(p ? r : u(r, s.encoder)) + "=" + h(u(_, s.encoder))] : [h(r) + "=" + h(String(_))];
+						var v, y = [];
+						if (void 0 === _) return y;
 						if (Array.isArray(l)) v = l;
 						else {
-							var y = Object.keys(_);
-							v = d ? y.sort(d) : y
+							var m = Object.keys(_);
+							v = d ? m.sort(d) : m
 						}
 						for (var b = 0; b < v.length; ++b) {
 							var g = v[b];
-							o && null === _[g] || (m = Array.isArray(_) ? m.concat(e(_[g], i(r, g), i, n, o, u, l, d, c, f, p, h)) : m.concat(e(_[g], r + (c ? "." + g : "[" + g + "]"), i, n, o, u, l, d, c, f, p, h)))
+							o && null === _[g] || (y = Array.isArray(_) ? y.concat(e(_[g], i(r, g), i, n, o, u, l, d, c, f, h, p)) : y.concat(e(_[g], r + (c ? "." + g : "[" + g + "]"), i, n, o, u, l, d, c, f, h, p)))
 						}
-						return m
+						return y
 					};
 				e.exports = function(e, t) {
 					var r = e,
@@ -1899,31 +2048,31 @@
 						d = "boolean" == typeof o.strictNullHandling ? o.strictNullHandling : s.strictNullHandling,
 						c = "boolean" == typeof o.skipNulls ? o.skipNulls : s.skipNulls,
 						f = "boolean" == typeof o.encode ? o.encode : s.encode,
-						p = "function" == typeof o.encoder ? o.encoder : s.encoder,
-						h = "function" == typeof o.sort ? o.sort : null,
+						h = "function" == typeof o.encoder ? o.encoder : s.encoder,
+						p = "function" == typeof o.sort ? o.sort : null,
 						_ = void 0 !== o.allowDots && o.allowDots,
 						v = "function" == typeof o.serializeDate ? o.serializeDate : s.serializeDate,
-						m = "boolean" == typeof o.encodeValuesOnly ? o.encodeValuesOnly : s.encodeValuesOnly;
+						y = "boolean" == typeof o.encodeValuesOnly ? o.encodeValuesOnly : s.encodeValuesOnly;
 					if (void 0 === o.format) o.format = i.default;
 					else if (!Object.prototype.hasOwnProperty.call(i.formatters, o.format)) throw new TypeError("Unknown format option provided.");
-					var y, b, g = i.formatters[o.format];
-					"function" == typeof o.filter ? r = (b = o.filter)("", r) : Array.isArray(o.filter) && (y = b = o.filter);
+					var m, b, g = i.formatters[o.format];
+					"function" == typeof o.filter ? r = (b = o.filter)("", r) : Array.isArray(o.filter) && (m = b = o.filter);
 					var w, x = [];
 					if ("object" != typeof r || null === r) return "";
 					w = o.arrayFormat in n ? o.arrayFormat : "indices" in o ? o.indices ? "indices" : "repeat" : "indices";
 					var S = n[w];
-					y || (y = Object.keys(r)), h && y.sort(h);
-					for (var T = 0; T < y.length; ++T) {
-						var O = y[T];
-						c && null === r[O] || (x = x.concat(u(r[O], O, S, d, c, f ? p : null, b, h, _, v, g, m)))
+					m || (m = Object.keys(r)), p && m.sort(p);
+					for (var T = 0; T < m.length; ++T) {
+						var k = m[T];
+						c && null === r[k] || (x = x.concat(u(r[k], k, S, d, c, f ? h : null, b, p, _, v, g, y)))
 					}
 					var E = x.join(l),
-						k = !0 === o.addQueryPrefix ? "?" : "";
-					return E.length > 0 ? k + E : ""
+						O = !0 === o.addQueryPrefix ? "?" : "";
+					return E.length > 0 ? O + E : ""
 				}
 			}, function(e, t, r) {
 				"use strict";
-				var a = r(13),
+				var a = r(15),
 					i = Object.prototype.hasOwnProperty,
 					n = {
 						allowDots: !1,
@@ -1940,7 +2089,7 @@
 						for (var r = {}, a = t.ignoreQueryPrefix ? e.replace(/^\?/, "") : e, o = t.parameterLimit === 1 / 0 ? void 0 : t.parameterLimit, s = a.split(t.delimiter, o), u = 0; u < s.length; ++u) {
 							var l, d, c = s[u],
 								f = c.indexOf("]="),
-								p = -1 === f ? c.indexOf("=") : f + 1; - 1 === p ? (l = t.decoder(c, n.decoder), d = t.strictNullHandling ? null : "") : (l = t.decoder(c.slice(0, p), n.decoder), d = t.decoder(c.slice(p + 1), n.decoder)), i.call(r, l) ? r[l] = [].concat(r[l]).concat(d) : r[l] = d
+								h = -1 === f ? c.indexOf("=") : f + 1; - 1 === h ? (l = t.decoder(c, n.decoder), d = t.strictNullHandling ? null : "") : (l = t.decoder(c.slice(0, h), n.decoder), d = t.decoder(c.slice(h + 1), n.decoder)), i.call(r, l) ? r[l] = [].concat(r[l]).concat(d) : r[l] = d
 						}
 						return r
 					},
@@ -2033,15 +2182,15 @@
 										f = c.slice(1).join("=");
 									'"' === f.charAt(0) && (f = f.slice(1, -1));
 									try {
-										var p = c[0].replace(l, decodeURIComponent);
-										if (f = r.read ? r.read(f, p) : r(f, p) || f.replace(l, decodeURIComponent), this.json) try {
+										var h = c[0].replace(l, decodeURIComponent);
+										if (f = r.read ? r.read(f, h) : r(f, h) || f.replace(l, decodeURIComponent), this.json) try {
 											f = JSON.parse(f)
 										} catch (t) {}
-										if (t === p) {
+										if (t === h) {
 											o = f;
 											break
 										}
-										t || (o[p] = f)
+										t || (o[h] = f)
 									} catch (t) {}
 								}
 								return o
@@ -2069,6 +2218,40 @@
 				}
 			}, function(e, t, r) {
 				"use strict";
+				Object.defineProperty(t, "__esModule", {
+					value: !0
+				});
+				var a = function(e) {
+						return e && e.__esModule ? e : {
+							default: e
+						}
+					}(r(0)),
+					i = function() {
+						var e = a.default.navigator,
+							t = e && (e.connection || e.mozConnection || e.webkitConnection);
+						return t && t.type
+					};
+				t.default = function() {
+					var e = void 0;
+					switch (i()) {
+						case "cellular":
+							e = "cellular";
+							break;
+						case "ethernet":
+							e = "ethernet";
+							break;
+						case "wifi":
+							e = "wifi";
+							break;
+						case void 0:
+							break;
+						default:
+							e = "other"
+					}
+					return e
+				}
+			}, function(e, t, r) {
+				"use strict";
 
 				function a(e) {
 					return e && e.__esModule ? e : {
@@ -2078,11 +2261,11 @@
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				});
-				var i = a(r(2)),
-					n = a(r(3)),
-					o = a(r(45)),
-					s = a(r(0)),
-					u = a(r(15)),
+				var i = a(r(0)),
+					n = a(r(4)),
+					o = a(r(48)),
+					s = a(r(1)),
+					u = a(r(17)),
 					l = !!i.default.XMLHttpRequest && "withCredentials" in new i.default.XMLHttpRequest,
 					d = {
 						maxBeaconSize: 300,
@@ -2147,8 +2330,8 @@
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				});
-				var i = a(r(12)),
-					n = a(r(2)),
+				var i = a(r(14)),
+					n = a(r(0)),
 					o = {
 						send: function(e, t) {
 							function r() {
@@ -2212,54 +2395,54 @@
 						function f(e) {
 							return String(e).replace(/^ +| +$/g, "")
 						}
-						var p = {
+						var h = {
 								function: !0,
 								object: !0
 							},
-							h = p[typeof window] && window || this,
-							_ = h,
-							v = p[typeof t] && t,
-							m = p[typeof e] && e && !e.nodeType && e,
-							y = v && m && "object" == typeof a && a;
-						!y || y.global !== y && y.window !== y && y.self !== y || (h = y);
+							p = h[typeof window] && window || this,
+							_ = p,
+							v = h[typeof t] && t,
+							y = h[typeof e] && e && !e.nodeType && e,
+							m = v && y && "object" == typeof a && a;
+						!m || m.global !== m && m.window !== m && m.self !== m || (p = m);
 						var b = Math.pow(2, 53) - 1,
 							g = /\bOpera/,
 							w = this,
 							x = Object.prototype,
 							S = x.hasOwnProperty,
 							T = x.toString,
-							O = function e(t) {
+							k = function e(t) {
 								function r(e) {
 									return c(e, (function(e, r) {
 										var a = r.pattern || d(r);
 										return !e && (e = RegExp("\\b" + a + " *\\d+[.\\w_]*", "i").exec(t) || RegExp("\\b" + a + " *\\w+-[\\w]*", "i").exec(t) || RegExp("\\b" + a + "(?:; *(?:[a-z]+[_-])?[a-z]+\\d+|[^ ();-]*)", "i").exec(t)) && ((e = String(r.label && !RegExp(a, "i").test(r.label) ? r.label : e).split("/"))[1] && !/[\d.]+/.test(e[0]) && (e[0] += " " + e[1]), r = r.label || r, e = o(e[0].replace(RegExp(a, "i"), r).replace(RegExp("; *(?:" + r + "[_-])?", "i"), " ").replace(RegExp("(" + r + ")[-_.]?(\\w)", "i"), "$1 $2"))), e
 									}))
 								}
-								var a = h,
+								var a = p,
 									i = t && "object" == typeof t && "String" != u(t);
 								i && (a = t, t = null);
 								var n = a.navigator || {},
-									p = n.userAgent || "";
-								t || (t = p);
-								var v, m, y = i || w == _,
+									h = n.userAgent || "";
+								t || (t = h);
+								var v, y, m = i || w == _,
 									b = i ? !!n.likeChrome : /\bChrome\b/.test(t) && !/internal|\n/i.test(T.toString()),
 									x = i ? "Object" : "ScriptBridgingProxyObject",
 									S = i ? "Object" : "Environment",
-									O = i && a.java ? "JavaPackage" : u(a.java),
+									k = i && a.java ? "JavaPackage" : u(a.java),
 									E = i ? "Object" : "RuntimeObject",
-									k = /\bJava/.test(O) && a.java,
-									M = k && u(a.environment) == S,
-									P = k ? "a" : "α",
-									D = k ? "b" : "β",
-									A = a.document || {},
+									O = /\bJava/.test(k) && a.java,
+									M = O && u(a.environment) == S,
+									P = O ? "a" : "α",
+									A = O ? "b" : "β",
+									D = a.document || {},
 									q = a.operamini || a.opera,
 									R = g.test(R = i && q ? q["[[Class]]"] : u(q)) ? R : q = null,
 									j = t,
 									I = [],
 									L = null,
-									C = t == p,
-									N = C && q && "function" == typeof q.version && q.version(),
-									H = c([{
+									C = t == h,
+									H = C && q && "function" == typeof q.version && q.version(),
+									N = c([{
 										label: "EdgeHTML",
 										pattern: "Edge"
 									}, "Trident", {
@@ -2400,7 +2583,7 @@
 									}, (function(e, r, a) {
 										return e || (r[F] || r[/^[a-z]+(?: +[a-z]+\b)*/i.exec(F)] || RegExp("\\b" + d(a) + "(?:\\b|\\w*\\d)", "i").exec(t)) && a
 									})),
-									G = c(["Windows Phone", "Android", "CentOS", {
+									U = c(["Windows Phone", "Android", "CentOS", {
 										label: "Chrome OS",
 										pattern: "CrOS"
 									}, "Debian", "Fedora", "FreeBSD", "Gentoo", "Haiku", "Kubuntu", "Linux Mint", "OpenBSD", "Red Hat", "SuSE", "Ubuntu", "Xubuntu", "Cygwin", "Symbian OS", "hpwOS", "webOS ", "webOS", "Tablet OS", "Tizen", "Linux", "Mac OS X", "Macintosh", "Mac", "Windows 98;", "Windows "], (function(e, r) {
@@ -2423,59 +2606,59 @@
 											return t && r && /^Win/i.test(e) && !/^Windows Phone /i.test(e) && (a = a[/[\d.]+$/.exec(e)]) && (e = "Windows " + a), e = String(e), t && r && (e = e.replace(RegExp(t, "i"), r)), o(e.replace(/ ce$/i, " CE").replace(/\bhpw/i, "web").replace(/\bMacintosh\b/, "Mac OS").replace(/_PowerPC\b/i, " OS").replace(/\b(OS X) [^ \d]+/i, "$1").replace(/\bMac (OS X)\b/, "$1").replace(/\/(\d)/, " $1").replace(/_/g, ".").replace(/(?: BePC|[ .]*fc[ \d.]+)$/i, "").replace(/\bx86\.64\b/gi, "x86_64").replace(/\b(Windows Phone) OS\b/, "$1").replace(/\b(Chrome OS \w+) [\d.]+\b/, "$1").split(" on ")[0])
 										}(e, a, r.label || r)), e
 									}));
-								if (H && (H = [H]), W && !F && (F = r([W])), (v = /\bGoogle TV\b/.exec(F)) && (F = v[0]), /\bSimulator\b/i.test(t) && (F = (F ? F + " " : "") + "Simulator"), "Opera Mini" == B && /\bOPiOS\b/.test(t) && I.push("running in Turbo/Uncompressed mode"), "IE" == B && /\blike iPhone OS\b/.test(t) ? (W = (v = e(t.replace(/like iPhone OS/, ""))).manufacturer, F = v.product) : /^iP/.test(F) ? (B || (B = "Safari"), G = "iOS" + ((v = / OS ([\d_]+)/i.exec(t)) ? " " + v[1].replace(/_/g, ".") : "")) : "Konqueror" != B || /buntu/i.test(G) ? W && "Google" != W && (/Chrome/.test(B) && !/\bMobile Safari\b/i.test(t) || /\bVita\b/.test(F)) || /\bAndroid\b/.test(G) && /^Chrome/.test(B) && /\bVersion\//i.test(t) ? (B = "Android Browser", G = /\bAndroid\b/.test(G) ? G : "Android") : "Silk" == B ? (/\bMobi/i.test(t) || (G = "Android", I.unshift("desktop mode")), /Accelerated *= *true/i.test(t) && I.unshift("accelerated")) : "PaleMoon" == B && (v = /\bFirefox\/([\d.]+)\b/.exec(t)) ? I.push("identifying as Firefox " + v[1]) : "Firefox" == B && (v = /\b(Mobile|Tablet|TV)\b/i.exec(t)) ? (G || (G = "Firefox OS"), F || (F = v[1])) : !B || (v = !/\bMinefield\b/i.test(t) && /\b(?:Firefox|Safari)\b/.exec(B)) ? (B && !F && /[\/,]|^[^(]+?\)/.test(t.slice(t.indexOf(v + "/") + 8)) && (B = null), (v = F || W || G) && (F || W || /\b(?:Android|Symbian OS|Tablet OS|webOS)\b/.test(G)) && (B = /[a-z]+(?: Hat)?/i.exec(/\bAndroid\b/.test(G) ? G : v) + " Browser")) : "Electron" == B && (v = (/\bChrome\/([\d.]+)\b/.exec(t) || 0)[1]) && I.push("Chromium " + v) : G = "Kubuntu", N || (N = function(e) {
+								if (N && (N = [N]), W && !F && (F = r([W])), (v = /\bGoogle TV\b/.exec(F)) && (F = v[0]), /\bSimulator\b/i.test(t) && (F = (F ? F + " " : "") + "Simulator"), "Opera Mini" == B && /\bOPiOS\b/.test(t) && I.push("running in Turbo/Uncompressed mode"), "IE" == B && /\blike iPhone OS\b/.test(t) ? (W = (v = e(t.replace(/like iPhone OS/, ""))).manufacturer, F = v.product) : /^iP/.test(F) ? (B || (B = "Safari"), U = "iOS" + ((v = / OS ([\d_]+)/i.exec(t)) ? " " + v[1].replace(/_/g, ".") : "")) : "Konqueror" != B || /buntu/i.test(U) ? W && "Google" != W && (/Chrome/.test(B) && !/\bMobile Safari\b/i.test(t) || /\bVita\b/.test(F)) || /\bAndroid\b/.test(U) && /^Chrome/.test(B) && /\bVersion\//i.test(t) ? (B = "Android Browser", U = /\bAndroid\b/.test(U) ? U : "Android") : "Silk" == B ? (/\bMobi/i.test(t) || (U = "Android", I.unshift("desktop mode")), /Accelerated *= *true/i.test(t) && I.unshift("accelerated")) : "PaleMoon" == B && (v = /\bFirefox\/([\d.]+)\b/.exec(t)) ? I.push("identifying as Firefox " + v[1]) : "Firefox" == B && (v = /\b(Mobile|Tablet|TV)\b/i.exec(t)) ? (U || (U = "Firefox OS"), F || (F = v[1])) : !B || (v = !/\bMinefield\b/i.test(t) && /\b(?:Firefox|Safari)\b/.exec(B)) ? (B && !F && /[\/,]|^[^(]+?\)/.test(t.slice(t.indexOf(v + "/") + 8)) && (B = null), (v = F || W || U) && (F || W || /\b(?:Android|Symbian OS|Tablet OS|webOS)\b/.test(U)) && (B = /[a-z]+(?: Hat)?/i.exec(/\bAndroid\b/.test(U) ? U : v) + " Browser")) : "Electron" == B && (v = (/\bChrome\/([\d.]+)\b/.exec(t) || 0)[1]) && I.push("Chromium " + v) : U = "Kubuntu", H || (H = function(e) {
 										return c(e, (function(e, r) {
 											return e || (RegExp(r + "(?:-[\\d.]+/|(?: for [\\w-]+)?[ /-])([\\d.]+[^ ();/_-]*)", "i").exec(t) || 0)[1] || null
 										}))
-									}(["(?:Cloud9|CriOS|CrMo|Edge|FxiOS|IEMobile|Iron|Opera ?Mini|OPiOS|OPR|Raven|SamsungBrowser|Silk(?!/[\\d.]+$))", "Version", d(B), "(?:Firefox|Minefield|NetFront)"])), (v = ("iCab" == H && parseFloat(N) > 3 ? "WebKit" : /\bOpera\b/.test(B) && (/\bOPR\b/.test(t) ? "Blink" : "Presto")) || /\b(?:Midori|Nook|Safari)\b/i.test(t) && !/^(?:Trident|EdgeHTML)$/.test(H) && "WebKit" || !H && /\bMSIE\b/i.test(t) && ("Mac OS" == G ? "Tasman" : "Trident") || "WebKit" == H && /\bPlayStation\b(?! Vita\b)/i.test(B) && "NetFront") && (H = [v]), "IE" == B && (v = (/; *(?:XBLWP|ZuneWP)(\d+)/i.exec(t) || 0)[1]) ? (B += " Mobile", G = "Windows Phone " + (/\+$/.test(v) ? v : v + ".x"), I.unshift("desktop mode")) : /\bWPDesktop\b/i.test(t) ? (B = "IE Mobile", G = "Windows Phone 8.x", I.unshift("desktop mode"), N || (N = (/\brv:([\d.]+)/.exec(t) || 0)[1])) : "IE" != B && "Trident" == H && (v = /\brv:([\d.]+)/.exec(t)) && (B && I.push("identifying as " + B + (N ? " " + N : "")), B = "IE", N = v[1]), C) {
+									}(["(?:Cloud9|CriOS|CrMo|Edge|FxiOS|IEMobile|Iron|Opera ?Mini|OPiOS|OPR|Raven|SamsungBrowser|Silk(?!/[\\d.]+$))", "Version", d(B), "(?:Firefox|Minefield|NetFront)"])), (v = ("iCab" == N && parseFloat(H) > 3 ? "WebKit" : /\bOpera\b/.test(B) && (/\bOPR\b/.test(t) ? "Blink" : "Presto")) || /\b(?:Midori|Nook|Safari)\b/i.test(t) && !/^(?:Trident|EdgeHTML)$/.test(N) && "WebKit" || !N && /\bMSIE\b/i.test(t) && ("Mac OS" == U ? "Tasman" : "Trident") || "WebKit" == N && /\bPlayStation\b(?! Vita\b)/i.test(B) && "NetFront") && (N = [v]), "IE" == B && (v = (/; *(?:XBLWP|ZuneWP)(\d+)/i.exec(t) || 0)[1]) ? (B += " Mobile", U = "Windows Phone " + (/\+$/.test(v) ? v : v + ".x"), I.unshift("desktop mode")) : /\bWPDesktop\b/i.test(t) ? (B = "IE Mobile", U = "Windows Phone 8.x", I.unshift("desktop mode"), H || (H = (/\brv:([\d.]+)/.exec(t) || 0)[1])) : "IE" != B && "Trident" == N && (v = /\brv:([\d.]+)/.exec(t)) && (B && I.push("identifying as " + B + (H ? " " + H : "")), B = "IE", H = v[1]), C) {
 									if (l(a, "global"))
-										if (k && (j = (v = k.lang.System).getProperty("os.arch"), G = G || v.getProperty("os.name") + " " + v.getProperty("os.version")), y && l(a, "system") && (v = [a.system])[0]) {
-											G || (G = v[0].os || null);
+										if (O && (j = (v = O.lang.System).getProperty("os.arch"), U = U || v.getProperty("os.name") + " " + v.getProperty("os.version")), m && l(a, "system") && (v = [a.system])[0]) {
+											U || (U = v[0].os || null);
 											try {
-												v[1] = a.require("ringo/engine").version, N = v[1].join("."), B = "RingoJS"
+												v[1] = a.require("ringo/engine").version, H = v[1].join("."), B = "RingoJS"
 											} catch (t) {
 												v[0].global.system == a.system && (B = "Narwhal")
 											}
-										} else "object" == typeof a.process && !a.process.browser && (v = a.process) ? "object" == typeof v.versions ? "string" == typeof v.versions.electron ? (I.push("Node " + v.versions.node), B = "Electron", N = v.versions.electron) : "string" == typeof v.versions.nw && (I.push("Chromium " + N, "Node " + v.versions.node), B = "NW.js", N = v.versions.nw) : (B = "Node.js", j = v.arch, G = v.platform, N = (N = /[\d.]+/.exec(v.version)) ? N[0] : "unknown") : M && (B = "Rhino");
-									else u(v = a.runtime) == x ? (B = "Adobe AIR", G = v.flash.system.Capabilities.os) : u(v = a.phantom) == E ? (B = "PhantomJS", N = (v = v.version || null) && v.major + "." + v.minor + "." + v.patch) : "number" == typeof A.documentMode && (v = /\bTrident\/(\d+)/i.exec(t)) ? (N = [N, A.documentMode], (v = +v[1] + 4) != N[1] && (I.push("IE " + N[1] + " mode"), H && (H[1] = ""), N[1] = v), N = "IE" == B ? String(N[1].toFixed(1)) : N[0]) : "number" == typeof A.documentMode && /^(?:Chrome|Firefox)\b/.test(B) && (I.push("masking as " + B + " " + N), B = "IE", N = "11.0", H = ["Trident"], G = "Windows");
-									G = G && o(G)
+										} else "object" == typeof a.process && !a.process.browser && (v = a.process) ? "object" == typeof v.versions ? "string" == typeof v.versions.electron ? (I.push("Node " + v.versions.node), B = "Electron", H = v.versions.electron) : "string" == typeof v.versions.nw && (I.push("Chromium " + H, "Node " + v.versions.node), B = "NW.js", H = v.versions.nw) : (B = "Node.js", j = v.arch, U = v.platform, H = (H = /[\d.]+/.exec(v.version)) ? H[0] : "unknown") : M && (B = "Rhino");
+									else u(v = a.runtime) == x ? (B = "Adobe AIR", U = v.flash.system.Capabilities.os) : u(v = a.phantom) == E ? (B = "PhantomJS", H = (v = v.version || null) && v.major + "." + v.minor + "." + v.patch) : "number" == typeof D.documentMode && (v = /\bTrident\/(\d+)/i.exec(t)) ? (H = [H, D.documentMode], (v = +v[1] + 4) != H[1] && (I.push("IE " + H[1] + " mode"), N && (N[1] = ""), H[1] = v), H = "IE" == B ? String(H[1].toFixed(1)) : H[0]) : "number" == typeof D.documentMode && /^(?:Chrome|Firefox)\b/.test(B) && (I.push("masking as " + B + " " + H), B = "IE", H = "11.0", N = ["Trident"], U = "Windows");
+									U = U && o(U)
 								}
-								if (N && (v = /(?:[ab]|dp|pre|[ab]\d+pre)(?:\d+\+?)?$/i.exec(N) || /(?:alpha|beta)(?: ?\d)?/i.exec(t + ";" + (C && n.appMinorVersion)) || /\bMinefield\b/i.test(t) && "a") && (L = /b/i.test(v) ? "beta" : "alpha", N = N.replace(RegExp(v + "\\+?$"), "") + ("beta" == L ? D : P) + (/\d+\+?/.exec(v) || "")), "Fennec" == B || "Firefox" == B && /\b(?:Android|Firefox OS)\b/.test(G)) B = "Firefox Mobile";
-								else if ("Maxthon" == B && N) N = N.replace(/\.[\d.]+/, ".x");
-								else if (/\bXbox\b/i.test(F)) "Xbox 360" == F && (G = null), "Xbox 360" == F && /\bIEMobile\b/.test(t) && I.unshift("mobile mode");
-								else if (!/^(?:Chrome|IE|Opera)$/.test(B) && (!B || F || /Browser|Mobi/.test(B)) || "Windows CE" != G && !/Mobi/i.test(t))
+								if (H && (v = /(?:[ab]|dp|pre|[ab]\d+pre)(?:\d+\+?)?$/i.exec(H) || /(?:alpha|beta)(?: ?\d)?/i.exec(t + ";" + (C && n.appMinorVersion)) || /\bMinefield\b/i.test(t) && "a") && (L = /b/i.test(v) ? "beta" : "alpha", H = H.replace(RegExp(v + "\\+?$"), "") + ("beta" == L ? A : P) + (/\d+\+?/.exec(v) || "")), "Fennec" == B || "Firefox" == B && /\b(?:Android|Firefox OS)\b/.test(U)) B = "Firefox Mobile";
+								else if ("Maxthon" == B && H) H = H.replace(/\.[\d.]+/, ".x");
+								else if (/\bXbox\b/i.test(F)) "Xbox 360" == F && (U = null), "Xbox 360" == F && /\bIEMobile\b/.test(t) && I.unshift("mobile mode");
+								else if (!/^(?:Chrome|IE|Opera)$/.test(B) && (!B || F || /Browser|Mobi/.test(B)) || "Windows CE" != U && !/Mobi/i.test(t))
 									if ("IE" == B && C) try {
 										null === a.external && I.unshift("platform preview")
 									} catch (t) {
 										I.unshift("embedded")
-									} else(/\bBlackBerry\b/.test(F) || /\bBB10\b/.test(t)) && (v = (RegExp(F.replace(/ +/g, " *") + "/([.\\d]+)", "i").exec(t) || 0)[1] || N) ? (G = ((v = [v, /BB10/.test(t)])[1] ? (F = null, W = "BlackBerry") : "Device Software") + " " + v[0], N = null) : this != s && "Wii" != F && (C && q || /Opera/.test(B) && /\b(?:MSIE|Firefox)\b/i.test(t) || "Firefox" == B && /\bOS X (?:\d+\.){2,}/.test(G) || "IE" == B && (G && !/^Win/.test(G) && N > 5.5 || /\bWindows XP\b/.test(G) && N > 8 || 8 == N && !/\bTrident\b/.test(t))) && !g.test(v = e.call(s, t.replace(g, "") + ";")) && v.name && (v = "ing as " + v.name + ((v = v.version) ? " " + v : ""), g.test(B) ? (/\bIE\b/.test(v) && "Mac OS" == G && (G = null), v = "identify" + v) : (v = "mask" + v, B = R ? o(R.replace(/([a-z])([A-Z])/g, "$1 $2")) : "Opera", /\bIE\b/.test(v) && (G = null), C || (N = null)), H = ["Presto"], I.push(v));
+									} else(/\bBlackBerry\b/.test(F) || /\bBB10\b/.test(t)) && (v = (RegExp(F.replace(/ +/g, " *") + "/([.\\d]+)", "i").exec(t) || 0)[1] || H) ? (U = ((v = [v, /BB10/.test(t)])[1] ? (F = null, W = "BlackBerry") : "Device Software") + " " + v[0], H = null) : this != s && "Wii" != F && (C && q || /Opera/.test(B) && /\b(?:MSIE|Firefox)\b/i.test(t) || "Firefox" == B && /\bOS X (?:\d+\.){2,}/.test(U) || "IE" == B && (U && !/^Win/.test(U) && H > 5.5 || /\bWindows XP\b/.test(U) && H > 8 || 8 == H && !/\bTrident\b/.test(t))) && !g.test(v = e.call(s, t.replace(g, "") + ";")) && v.name && (v = "ing as " + v.name + ((v = v.version) ? " " + v : ""), g.test(B) ? (/\bIE\b/.test(v) && "Mac OS" == U && (U = null), v = "identify" + v) : (v = "mask" + v, B = R ? o(R.replace(/([a-z])([A-Z])/g, "$1 $2")) : "Opera", /\bIE\b/.test(v) && (U = null), C || (H = null)), N = ["Presto"], I.push(v));
 									else B += " Mobile";
-								(v = (/\bAppleWebKit\/([\d.]+\+?)/i.exec(t) || 0)[1]) && (v = [parseFloat(v.replace(/\.(\d)$/, ".0$1")), v], "Safari" == B && "+" == v[1].slice(-1) ? (B = "WebKit Nightly", L = "alpha", N = v[1].slice(0, -1)) : N != v[1] && N != (v[2] = (/\bSafari\/([\d.]+\+?)/i.exec(t) || 0)[1]) || (N = null), v[1] = (/\bChrome\/([\d.]+)/i.exec(t) || 0)[1], 537.36 == v[0] && 537.36 == v[2] && parseFloat(v[1]) >= 28 && "WebKit" == H && (H = ["Blink"]), C && (b || v[1]) ? (H && (H[1] = "like Chrome"), v = v[1] || ((v = v[0]) < 530 ? 1 : v < 532 ? 2 : v < 532.05 ? 3 : v < 533 ? 4 : v < 534.03 ? 5 : v < 534.07 ? 6 : v < 534.1 ? 7 : v < 534.13 ? 8 : v < 534.16 ? 9 : v < 534.24 ? 10 : v < 534.3 ? 11 : v < 535.01 ? 12 : v < 535.02 ? "13+" : v < 535.07 ? 15 : v < 535.11 ? 16 : v < 535.19 ? 17 : v < 536.05 ? 18 : v < 536.1 ? 19 : v < 537.01 ? 20 : v < 537.11 ? "21+" : v < 537.13 ? 23 : v < 537.18 ? 24 : v < 537.24 ? 25 : v < 537.36 ? 26 : "Blink" != H ? "27" : "28")) : (H && (H[1] = "like Safari"), v = (v = v[0]) < 400 ? 1 : v < 500 ? 2 : v < 526 ? 3 : v < 533 ? 4 : v < 534 ? "4+" : v < 535 ? 5 : v < 537 ? 6 : v < 538 ? 7 : v < 601 ? 8 : "8"), H && (H[1] += " " + (v += "number" == typeof v ? ".x" : /[.+]/.test(v) ? "" : "+")), "Safari" == B && (!N || parseInt(N) > 45) && (N = v)), "Opera" == B && (v = /\bzbov|zvav$/.exec(G)) ? (B += " ", I.unshift("desktop mode"), "zvav" == v ? (B += "Mini", N = null) : B += "Mobile", G = G.replace(RegExp(" *" + v + "$"), "")) : "Safari" == B && /\bChrome\b/.exec(H && H[1]) && (I.unshift("desktop mode"), B = "Chrome Mobile", N = null, /\bOS X\b/.test(G) ? (W = "Apple", G = "iOS 4.3+") : G = null), N && 0 == N.indexOf(v = /[\d.]+$/.exec(G)) && t.indexOf("/" + v + "-") > -1 && (G = f(G.replace(v, ""))), H && !/\b(?:Avant|Nook)\b/.test(B) && (/Browser|Lunascape|Maxthon/.test(B) || "Safari" != B && /^iOS/.test(G) && /\bSafari\b/.test(H[1]) || /^(?:Adobe|Arora|Breach|Midori|Opera|Phantom|Rekonq|Rock|Samsung Internet|Sleipnir|Web)/.test(B) && H[1]) && (v = H[H.length - 1]) && I.push(v), I.length && (I = ["(" + I.join("; ") + ")"]), W && F && F.indexOf(W) < 0 && I.push("on " + W), F && I.push((/^on /.test(I[I.length - 1]) ? "" : "on ") + F), G && (v = / ([\d.+]+)$/.exec(G), m = v && "/" == G.charAt(G.length - v[0].length - 1), G = {
+								(v = (/\bAppleWebKit\/([\d.]+\+?)/i.exec(t) || 0)[1]) && (v = [parseFloat(v.replace(/\.(\d)$/, ".0$1")), v], "Safari" == B && "+" == v[1].slice(-1) ? (B = "WebKit Nightly", L = "alpha", H = v[1].slice(0, -1)) : H != v[1] && H != (v[2] = (/\bSafari\/([\d.]+\+?)/i.exec(t) || 0)[1]) || (H = null), v[1] = (/\bChrome\/([\d.]+)/i.exec(t) || 0)[1], 537.36 == v[0] && 537.36 == v[2] && parseFloat(v[1]) >= 28 && "WebKit" == N && (N = ["Blink"]), C && (b || v[1]) ? (N && (N[1] = "like Chrome"), v = v[1] || ((v = v[0]) < 530 ? 1 : v < 532 ? 2 : v < 532.05 ? 3 : v < 533 ? 4 : v < 534.03 ? 5 : v < 534.07 ? 6 : v < 534.1 ? 7 : v < 534.13 ? 8 : v < 534.16 ? 9 : v < 534.24 ? 10 : v < 534.3 ? 11 : v < 535.01 ? 12 : v < 535.02 ? "13+" : v < 535.07 ? 15 : v < 535.11 ? 16 : v < 535.19 ? 17 : v < 536.05 ? 18 : v < 536.1 ? 19 : v < 537.01 ? 20 : v < 537.11 ? "21+" : v < 537.13 ? 23 : v < 537.18 ? 24 : v < 537.24 ? 25 : v < 537.36 ? 26 : "Blink" != N ? "27" : "28")) : (N && (N[1] = "like Safari"), v = (v = v[0]) < 400 ? 1 : v < 500 ? 2 : v < 526 ? 3 : v < 533 ? 4 : v < 534 ? "4+" : v < 535 ? 5 : v < 537 ? 6 : v < 538 ? 7 : v < 601 ? 8 : "8"), N && (N[1] += " " + (v += "number" == typeof v ? ".x" : /[.+]/.test(v) ? "" : "+")), "Safari" == B && (!H || parseInt(H) > 45) && (H = v)), "Opera" == B && (v = /\bzbov|zvav$/.exec(U)) ? (B += " ", I.unshift("desktop mode"), "zvav" == v ? (B += "Mini", H = null) : B += "Mobile", U = U.replace(RegExp(" *" + v + "$"), "")) : "Safari" == B && /\bChrome\b/.exec(N && N[1]) && (I.unshift("desktop mode"), B = "Chrome Mobile", H = null, /\bOS X\b/.test(U) ? (W = "Apple", U = "iOS 4.3+") : U = null), H && 0 == H.indexOf(v = /[\d.]+$/.exec(U)) && t.indexOf("/" + v + "-") > -1 && (U = f(U.replace(v, ""))), N && !/\b(?:Avant|Nook)\b/.test(B) && (/Browser|Lunascape|Maxthon/.test(B) || "Safari" != B && /^iOS/.test(U) && /\bSafari\b/.test(N[1]) || /^(?:Adobe|Arora|Breach|Midori|Opera|Phantom|Rekonq|Rock|Samsung Internet|Sleipnir|Web)/.test(B) && N[1]) && (v = N[N.length - 1]) && I.push(v), I.length && (I = ["(" + I.join("; ") + ")"]), W && F && F.indexOf(W) < 0 && I.push("on " + W), F && I.push((/^on /.test(I[I.length - 1]) ? "" : "on ") + F), U && (v = / ([\d.+]+)$/.exec(U), y = v && "/" == U.charAt(U.length - v[0].length - 1), U = {
 									architecture: 32,
-									family: v && !m ? G.replace(v[0], "") : G,
+									family: v && !y ? U.replace(v[0], "") : U,
 									version: v ? v[1] : null,
 									toString: function() {
 										var e = this.version;
-										return this.family + (e && !m ? " " + e : "") + (64 == this.architecture ? " 64-bit" : "")
+										return this.family + (e && !y ? " " + e : "") + (64 == this.architecture ? " 64-bit" : "")
 									}
-								}), (v = /\b(?:AMD|IA|Win|WOW|x86_|x)64\b/i.exec(j)) && !/\bi686\b/i.test(j) ? (G && (G.architecture = 64, G.family = G.family.replace(RegExp(" *" + v), "")), B && (/\bWOW64\b/i.test(t) || C && /\w(?:86|32)$/.test(n.cpuClass || n.platform) && !/\bWin64; x64\b/i.test(t)) && I.unshift("32-bit")) : G && /^OS X/.test(G.family) && "Chrome" == B && parseFloat(N) >= 39 && (G.architecture = 64), t || (t = null);
-								var U = {};
-								return U.description = t, U.layout = H && H[0], U.manufacturer = W, U.name = B, U.prerelease = L, U.product = F, U.ua = t, U.version = B && N, U.os = G || {
+								}), (v = /\b(?:AMD|IA|Win|WOW|x86_|x)64\b/i.exec(j)) && !/\bi686\b/i.test(j) ? (U && (U.architecture = 64, U.family = U.family.replace(RegExp(" *" + v), "")), B && (/\bWOW64\b/i.test(t) || C && /\w(?:86|32)$/.test(n.cpuClass || n.platform) && !/\bWin64; x64\b/i.test(t)) && I.unshift("32-bit")) : U && /^OS X/.test(U.family) && "Chrome" == B && parseFloat(H) >= 39 && (U.architecture = 64), t || (t = null);
+								var G = {};
+								return G.description = t, G.layout = N && N[0], G.manufacturer = W, G.name = B, G.prerelease = L, G.product = F, G.ua = t, G.version = B && H, G.os = U || {
 									architecture: null,
 									family: null,
 									version: null,
 									toString: function() {
 										return "null"
 									}
-								}, U.parse = e, U.toString = function() {
+								}, G.parse = e, G.toString = function() {
 									return this.description || ""
-								}, U.version && I.unshift(N), U.name && I.unshift(B), G && B && (G != String(G).split(" ")[0] || G != B.split(" ")[0] && !F) && I.push(F ? "(" + G + ")" : "on " + G), I.length && (U.description = I.join(" ")), U
+								}, G.version && I.unshift(H), G.name && I.unshift(B), U && B && (U != String(U).split(" ")[0] || U != B.split(" ")[0] && !F) && I.push(F ? "(" + U + ")" : "on " + U), I.length && (G.description = I.join(" ")), G
 							}();
-						h.platform = O, void 0 !== (i = function() {
-							return O
+						p.platform = k, void 0 !== (i = function() {
+							return k
 						}.call(t, r, t, e)) && (e.exports = i)
 					}).call(this)
-				}).call(t, r(11)(e), r(5))
+				}).call(t, r(13)(e), r(6))
 			}, function(e, t, r) {
 				"use strict";
 				Object.defineProperty(t, "__esModule", {
@@ -2494,11 +2677,11 @@
 							l = o.request_response_end,
 							d = o.request_bytes_loaded;
 						a++;
-						var c = u - s,
-							f = l - u;
-						if (c > 0 && f > 0 && d > 0) {
-							var p = d / f * 8e3;
-							i++, e += c, t += d, r += f, this.data.view_min_request_throughput = Math.min(this.data.view_min_request_throughput || 1 / 0, p), this.data.view_average_request_throughput = t / r * 8e3, this.data.view_max_request_latency = Math.max(this.data.view_max_request_latency || 0, c), this.data.view_average_request_latency = e / i, this.data.view_request_count = a
+						var c = void 0,
+							f = void 0;
+						if (u ? (c = u - s, f = l - u) : f = l - s, f > 0 && d > 0) {
+							var h = d / f * 8e3;
+							i++, t += d, r += f, this.data.view_min_request_throughput = Math.min(this.data.view_min_request_throughput || 1 / 0, h), this.data.view_average_request_throughput = t / r * 8e3, this.data.view_request_count = a, c > 0 && (e += c, this.data.view_max_request_latency = Math.max(this.data.view_max_request_latency || 0, c), this.data.view_average_request_latency = e / i)
 						}
 					})), this.on("requestfailed", (function(e, t) {
 						a++, n++, this.data.view_request_count = a, this.data.view_request_failed_count = n
@@ -2511,94 +2694,105 @@
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				});
-				var a = function(e, t) {
-					if (Array.isArray(e)) return e;
-					if (Symbol.iterator in Object(e)) return function(e, t) {
-						var r = [],
-							a = !0,
-							i = !1,
-							n = void 0;
-						try {
-							for (var o, s = e[Symbol.iterator](); !(a = (o = s.next()).done) && (r.push(o.value), !t || r.length !== t); a = !0);
-						} catch (e) {
-							i = !0, n = e
-						} finally {
+				var a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+						return typeof e
+					} : function(e) {
+						return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+					},
+					i = function(e, t) {
+						if (Array.isArray(e)) return e;
+						if (Symbol.iterator in Object(e)) return function(e, t) {
+							var r = [],
+								a = !0,
+								i = !1,
+								n = void 0;
 							try {
-								!a && s.return && s.return()
+								for (var o, s = e[Symbol.iterator](); !(a = (o = s.next()).done) && (r.push(o.value), !t || r.length !== t); a = !0);
+							} catch (e) {
+								i = !0, n = e
 							} finally {
-								if (i) throw n
+								try {
+									!a && s.return && s.return()
+								} finally {
+									if (i) throw n
+								}
 							}
-						}
-						return r
-					}(e, t);
-					throw new TypeError("Invalid attempt to destructure non-iterable instance")
-				};
+							return r
+						}(e, t);
+						throw new TypeError("Invalid attempt to destructure non-iterable instance")
+					};
 				t.default = function(e, t, r) {
-					var u = (0, n.findMediaElement)(t),
-						l = a(u, 3),
-						d = l[0],
-						c = l[1],
-						f = l[2],
+					var l = (0, o.findMediaElement)(t),
+						d = i(l, 3),
+						c = d[0],
+						f = d[1],
+						h = d[2],
 						p = e.log,
-						h = e.utils.getComputedStyle,
-						_ = e.utils.secondsToMs;
-					return d ? "video" !== f && "audio" !== f ? p.error("The element of `" + c + "` was not a media element.") : ((r = r || {}).data = (0, i.default)({
+						_ = e.utils.getComputedStyle,
+						v = e.utils.secondsToMs;
+					return c ? "video" !== h && "audio" !== h ? p.error("The element of `" + f + "` was not a media element.") : ((r = (0, n.default)({
+						automaticErrorTracking: !0
+					}, r)).data = (0, n.default)({
 						player_software: "HTML5 Video Element",
 						player_software_version: "No Versions",
 						player_mux_plugin_name: "VideoElementMonitor",
-						player_mux_plugin_version: "2.6.0"
+						player_mux_plugin_version: "3.4.1"
 					}, r.data), r.getPlayheadTime = function() {
-						return _(d.currentTime)
+						return v(c.currentTime)
 					}, r.getStateData = function() {
+						var e = this.hlsjs && this.hlsjs.url,
+							t = this.dashjs && a("function" === this.dashjs.getSource) && this.dashjs.getSource();
 						return {
-							player_is_paused: d.paused,
-							player_playhead_time: _(d.currentTime),
-							player_width: parseInt(h(d, "width")),
-							player_height: parseInt(h(d, "height")),
-							player_autoplay_on: d.autoplay,
-							player_preload_on: d.preload,
-							video_poster_url: d.poster,
-							video_source_url: d.currentSrc,
-							video_source_duration: _(d.duration),
-							video_source_height: d.videoHeight,
-							video_source_width: d.videoWidth
+							player_is_paused: c.paused,
+							player_playhead_time: v(c.currentTime),
+							player_width: parseInt(_(c, "width")),
+							player_height: parseInt(_(c, "height")),
+							player_autoplay_on: c.autoplay,
+							player_preload_on: c.preload,
+							video_poster_url: c.poster,
+							video_source_url: e || t || c.currentSrc,
+							video_source_duration: v(c.duration),
+							video_source_height: c.videoHeight,
+							video_source_width: c.videoWidth
 						}
-					}, d.mux = d.mux || {}, d.mux.destroy = function() {
-						Object.keys(d.mux.listeners).forEach((function(e) {
-							d.removeEventListener(e, d.mux.listeners[e], !1)
-						})), delete d.mux.listeners, e.emit(c, "destroy")
-					}, d.mux.swapElement = function(t) {
-						var r = (0, n.findMediaElement)(t),
-							o = a(r, 3),
-							s = o[0],
-							u = o[1],
-							l = o[2];
-						return s ? "video" !== l && "audio" !== l ? e.log.error("The element of `" + u + "` was not a media element.") : (s.muxId = d.muxId, delete d.muxId, s.mux = s.mux || {}, s.mux.listeners = (0, i.default)({}, d.mux.listeners), delete d.mux.listeners, Object.keys(s.mux.listeners).forEach((function(e) {
-							d.removeEventListener(e, s.mux.listeners[e], !1), s.addEventListener(e, s.mux.listeners[e], !1)
-						})), s.mux.swapElement = d.mux.swapElement, s.mux.destroy = d.mux.destroy, delete d.mux, void(d = s)) : e.log.error("No element was found with the `" + u + "` query selector.")
-					}, d.mux.addHLSJS = function(t) {
-						e.addHLSJS(c, t)
-					}, d.mux.addDashJS = function(t) {
-						e.addDashJS(c, t)
-					}, d.mux.removeHLSJS = function() {
-						e.removeHLSJS(c)
-					}, d.mux.removeDashJS = function() {
-						e.removeDashJS(c)
-					}, e.init(c, r), e.emit(c, "playerready"), d.paused || (e.emit(c, "play"), d.readyState > 2 && e.emit(c, "playing")), d.mux.listeners = {}, void o.forEach((function(t) {
-						d.mux.listeners[t] = function() {
+					}, c.mux = c.mux || {}, c.mux.emit = function(t, r) {
+						e.emit(f, t, r)
+					}, c.mux.destroy = function() {
+						Object.keys(c.mux.listeners).forEach((function(e) {
+							c.removeEventListener(e, c.mux.listeners[e], !1)
+						})), delete c.mux.listeners, e.emit(f, "destroy")
+					}, c.mux.swapElement = function(t) {
+						var r = (0, o.findMediaElement)(t),
+							a = i(r, 3),
+							s = a[0],
+							u = a[1],
+							l = a[2];
+						return s ? "video" !== l && "audio" !== l ? e.log.error("The element of `" + u + "` was not a media element.") : (s.muxId = c.muxId, delete c.muxId, s.mux = s.mux || {}, s.mux.listeners = (0, n.default)({}, c.mux.listeners), delete c.mux.listeners, Object.keys(s.mux.listeners).forEach((function(e) {
+							c.removeEventListener(e, s.mux.listeners[e], !1), s.addEventListener(e, s.mux.listeners[e], !1)
+						})), s.mux.swapElement = c.mux.swapElement, s.mux.destroy = c.mux.destroy, delete c.mux, void(c = s)) : e.log.error("No element was found with the `" + u + "` query selector.")
+					}, c.mux.addHLSJS = function(t) {
+						e.addHLSJS(f, t)
+					}, c.mux.addDashJS = function(t) {
+						e.addDashJS(f, t)
+					}, c.mux.removeHLSJS = function() {
+						e.removeHLSJS(f)
+					}, c.mux.removeDashJS = function() {
+						e.removeDashJS(f)
+					}, e.init(f, r), e.emit(f, "playerready"), c.paused || (e.emit(f, "play"), c.readyState > 2 && e.emit(f, "playing")), c.mux.listeners = {}, void s.forEach((function(t) {
+						("error" !== t || r.automaticErrorTracking) && (c.mux.listeners[t] = function() {
 							var r = {};
-							"error" === t && (r.player_error_code = d.error && d.error.code, r.player_error_message = d.error && s[d.error.code]), e.emit(c, t, r)
-						}, d.addEventListener(t, d.mux.listeners[t], !1)
-					}))) : p.error("No element was found with the `" + c + "` query selector.")
+							"error" === t && (r.player_error_code = c.error && c.error.code, r.player_error_message = c.error && u[c.error.code]), e.emit(f, t, r)
+						}, c.addEventListener(t, c.mux.listeners[t], !1))
+					}))) : p.error("No element was found with the `" + f + "` query selector.")
 				};
-				var i = function(e) {
+				var n = function(e) {
 						return e && e.__esModule ? e : {
 							default: e
 						}
-					}(r(0)),
-					n = r(8),
-					o = ["loadstart", "pause", "play", "playing", "seeking", "seeked", "timeupdate", "ratechange", "stalled", "waiting", "error", "ended"],
-					s = {
+					}(r(1)),
+					o = r(9),
+					s = ["loadstart", "pause", "play", "playing", "seeking", "seeked", "timeupdate", "ratechange", "stalled", "waiting", "error", "ended"],
+					u = {
 						1: "MEDIA_ERR_ABORTED",
 						2: "MEDIA_ERR_NETWORK",
 						3: "MEDIA_ERR_DECODE",
@@ -2615,15 +2809,16 @@
 				Object.defineProperty(t, "__esModule", {
 					value: !0
 				});
-				var i = a(r(50)),
-					n = a(r(1)),
-					o = a(r(51)),
-					s = a(r(52)),
-					u = a(r(0)),
-					l = a(r(7)),
-					d = r(4),
-					c = {};
-				c.safeCall = i.default, c.safeIncrement = n.default, c.getComputedStyle = o.default, c.secondsToMs = s.default, c.assign = u.default, c.headersStringToObject = l.default, c.extractHostnameAndDomain = d.extractHostnameAndDomain, t.default = c
+				var i = a(r(53)),
+					n = a(r(2)),
+					o = a(r(54)),
+					s = a(r(55)),
+					u = a(r(1)),
+					l = a(r(8)),
+					d = r(5),
+					c = a(r(3)),
+					f = {};
+				f.safeCall = i.default, f.safeIncrement = n.default, f.getComputedStyle = o.default, f.secondsToMs = s.default, f.assign = u.default, f.headersStringToObject = l.default, f.extractHostnameAndDomain = d.extractHostnameAndDomain, f.extractHostname = d.extractHostname, f.now = c.default.now, t.default = f
 			}, function(e, t, r) {
 				"use strict";
 				Object.defineProperty(t, "__esModule", {
@@ -2641,7 +2836,7 @@
 					return e && e.__esModule ? e : {
 						default: e
 					}
-				}(r(3))
+				}(r(4))
 			}, function(e, t, r) {
 				"use strict";
 				Object.defineProperty(t, "__esModule", {
@@ -2653,7 +2848,7 @@
 					return e && e.__esModule ? e : {
 						default: e
 					}
-				}(r(10))
+				}(r(12))
 			}, function(e, t, r) {
 				"use strict";
 				Object.defineProperty(t, "__esModule", {
@@ -2665,4 +2860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=vendors~MuxEmbed.af80344a327be37c29ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~MuxEmbed.02fc3988fbab4d819162.js.map
