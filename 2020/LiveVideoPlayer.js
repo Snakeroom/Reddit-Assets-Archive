@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.9e12fc915f3f19fed96c.js
-// Retrieved at 10/28/2020, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.8d8cf6b2e188d10951d1.js
+// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -29,14 +29,14 @@
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
 				return N
 			})), s.d(t, "Overlay", (function() {
-				return B
-			})), s.d(t, "LiveIndicator", (function() {
 				return A
+			})), s.d(t, "LiveIndicator", (function() {
+				return B
 			}));
 			var i = s("./node_modules/lodash/isUndefined.js"),
 				o = s.n(i),
-				a = s("./node_modules/react/index.js"),
-				n = s.n(a),
+				n = s("./node_modules/react/index.js"),
+				a = s.n(n),
 				r = s("./node_modules/react-redux/es/index.js"),
 				d = s("./node_modules/reselect/es/index.js"),
 				l = s("./src/higherOrderComponents/withMux/index.tsx"),
@@ -54,38 +54,38 @@
 				M = s("./src/reddit/constants/chat.ts"),
 				V = s("./src/reddit/constants/keycodes.ts"),
 				C = s("./src/reddit/helpers/trackers/rpan.ts"),
-				L = s("./src/reddit/selectors/experiments/video.ts"),
-				R = s("./src/reddit/selectors/platform.ts"),
-				T = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				T = s("./src/reddit/selectors/experiments/video.ts"),
+				L = s("./src/reddit/selectors/platform.ts"),
+				f = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				w = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				f = s("./src/reddit/selectors/user.ts"),
+				R = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/selectors/video.ts"),
 				k = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
 				E = s.n(k);
 			const {
 				fbt: _
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), H = Object(l.a)(b.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(l.a)(b.a, {
 				playerName: "RPAN Listing Player"
-			}), I = 3e3, O = Object(d.c)({
-				autoplay: f.b,
-				inVideoNewVolumePolicyFeed: L.a,
-				isOverlayOpen: R.i,
+			}), H = 3e3, I = Object(d.c)({
+				autoplay: R.b,
+				inVideoNewVolumePolicyFeed: T.a,
+				isOverlayOpen: L.i,
 				mutedInFeed: x.j,
-				unavailableVideoUrl: T.o,
+				unavailableVideoUrl: f.o,
 				currentStream: (e, t) => {
 					let {
 						postId: s
 					} = t;
 					return Object(w.l)(e, s)
 				}
-			}), j = Object(r.b)(O, (e, t) => ({
+			}), j = Object(r.b)(I, (e, t) => ({
 				setMutedInFeed: t => e(Object(v.H)(t)),
 				onHeartbeatSubscribe: t => e(p.a.subscribeHeartbeat(t)),
 				onStreamByIdRequested: async t => await e(Object(m.d)(t))
 			}));
-			class N extends a.Component {
+			class N extends n.Component {
 				constructor(e) {
-					super(e), this.sleepTimeout = null, this.videoRef = n.a.createRef(), this._videoSessionManager = null, this.handleHlsRefChange = e => {
+					super(e), this.sleepTimeout = null, this.videoRef = a.a.createRef(), this._videoSessionManager = null, this.handleHlsRefChange = e => {
 						this.hlsVideo = e
 					}, this.handleClick = e => {
 						o()(this.state.settingChange) || (e.stopPropagation(), this.setState({
@@ -133,7 +133,7 @@
 					}, this.handleMouseMove = () => {
 						this.state.isHovered || this.setState({
 							isHovered: !0
-						}), this.wake(), this.sleepTimeout = setTimeout(this.sleep, I)
+						}), this.wake(), this.sleepTimeout = setTimeout(this.sleep, H)
 					}, this.handleMouseMoveControls = e => {
 						const {
 							seekBar: t,
@@ -177,7 +177,7 @@
 					}, this.handleTimeUpdate = e => {
 						this.setState({
 							currentTime: e
-						})
+						}), this.context.setCurrentTime(e)
 					}, this.handleToggleMuted = () => {
 						this.setState(e => {
 							let {
@@ -221,12 +221,12 @@
 							currentStream: i
 						} = this.props;
 						if (!i) return void(null === (s = this.videoSessionManager) || void 0 === s || s.destroySession());
-						const o = !t.sessionDurationMs ? C.y : C.u,
-							a = Object.assign(Object.assign({}, t), {
+						const o = !t.sessionDurationMs ? C.w : C.t,
+							n = Object.assign(Object.assign({}, t), {
 								chatState: M.f.None,
 								playerType: C.a.Feed
 							});
-						this.props.sendEvent(o(i, a))
+						this.props.sendEvent(o(i, n))
 					}, this.state = {
 						currentTime: 0,
 						duration: 0,
@@ -242,7 +242,7 @@
 						userShowedIntent: !1,
 						volume: .8,
 						wasRemoved: !1
-					}, this.focusVisibleRef = Object(a.createRef)()
+					}, this.focusVisibleRef = Object(n.createRef)()
 				}
 				get hasPlayableMedia() {
 					return !(this.state.wasRemoved || this.state.hasError)
@@ -255,9 +255,9 @@
 					} = this.props, {
 						isEnded: i,
 						userPaused: o,
-						userShowedIntent: a
+						userShowedIntent: n
 					} = this.state;
-					return !!t || (!!i || (a ? o : !e || s))
+					return !!t || (!!i || (n ? o : !e || s))
 				}
 				get shouldRenderOverlay() {
 					return this.shouldRenderVideo && this.hasPlayableMedia
@@ -303,14 +303,14 @@
 						userShowedIntent: !1
 					}), this.updateVideoSession(e, t), this.controlBar && (s !== t.currentTime && this.controlBar.setCurrentTime(s), i !== t.duration && this.controlBar.setTotalTime(i)), this.props.inVideoNewVolumePolicyFeed && (this.state.isPlaying || this.props.mutedInFeed !== e.mutedInFeed && this.setState({
 						muted: this.props.mutedInFeed
-					})), this.context.setIsLive(this.state.live), this.context.setCurrentTime(s)
+					}))
 				}
 				componentWillUnmount() {
 					var e;
 					this.unsubscribeHeartbeat(), null === (e = this.videoSessionManager) || void 0 === e || e.destroy()
 				}
 				render() {
-					return n.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: Object(h.a)(E.a.LiveVideoPlayer, {
 							[E.a.isSleeping]: this.state.isSleeping && !this.shouldPause
 						}),
@@ -323,7 +323,7 @@
 					}, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
-					return n.a.createElement(B, null, this.state.live ? n.a.createElement(A, null) : null, this.shouldRenderControls ? this.renderControls() : null)
+					return a.a.createElement(A, null, this.state.live ? a.a.createElement(B, null) : null, this.shouldRenderControls ? this.renderControls() : null)
 				}
 				renderVideo() {
 					const {
@@ -331,9 +331,9 @@
 						postId: t,
 						postTitle: s
 					} = this.props;
-					return n.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: E.a.clip9x16
-					}, n.a.createElement(H, {
+					}, a.a.createElement(O, {
 						autoplay: e,
 						controls: !1,
 						isPaused: this.shouldPause,
@@ -364,15 +364,15 @@
 						isHovered: s,
 						isSleeping: i,
 						muted: o,
-						settingChange: a,
+						settingChange: n,
 						volume: r
 					} = this.state;
-					return n.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: E.a.controls,
 						onMouseDown: this.handleMouseDownControls,
 						onMouseMove: this.handleMouseMoveControls,
 						onMouseUp: this.handleMouseUpControls
-					}, n.a.createElement(S.a, {
+					}, a.a.createElement(S.a, {
 						currentTime: e,
 						hasAudio: !0,
 						hideControlBar: !s || i && !this.shouldPause,
@@ -386,7 +386,7 @@
 						playPauseVideo: this.handleTogglePaused,
 						ref: e => this.controlBar = e,
 						seekBarRef: e => this.seekBar = e,
-						settingChange: a,
+						settingChange: n,
 						setVideoPosition: this.handleSeeked,
 						setVolume: this.handleVolumeChange,
 						hideLiveLabel: !0,
@@ -408,29 +408,55 @@
 					var s, i;
 					const {
 						isPlaying: o,
-						isReady: a
+						isReady: n
 					} = this.state, {
-						isPlaying: n,
+						isPlaying: a,
 						isReady: r
-					} = t, d = a && (n && !o);
-					!r && a && o || a && (!n && o) ? null === (s = this.videoSessionManager) || void 0 === s || s.startSession() : d && (null === (i = this.videoSessionManager) || void 0 === i || i.pauseSession())
+					} = t, d = n && (a && !o);
+					!r && n && o || n && (!a && o) ? null === (s = this.videoSessionManager) || void 0 === s || s.startSession() : d && (null === (i = this.videoSessionManager) || void 0 === i || i.pauseSession())
 				}
 			}
 			N.contextType = y.a, t.default = j(Object(P.c)(N));
-			const B = e => {
+			const A = e => {
 					let {
 						children: t
 					} = e;
-					return n.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: E.a.Overlay
 					}, t)
 				},
-				A = () => n.a.createElement("span", {
+				B = () => a.a.createElement("span", {
 					className: E.a.LiveIndicator
 				}, _._("Live", null, {
 					hk: "TwJSs"
 				}))
+		},
+		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return n
+			})), s.d(t, "b", (function() {
+				return a
+			}));
+			var i = s("./node_modules/react/index.js"),
+				o = s.n(i);
+			const n = Object(i.createContext)({
+					currentTime: 0,
+					setCurrentTime: () => {}
+				}),
+				a = e => {
+					let {
+						children: t
+					} = e;
+					const [s, a] = Object(i.useState)(0), r = {
+						currentTime: s,
+						setCurrentTime: a
+					};
+					return o.a.createElement(n.Provider, {
+						value: r
+					}, t)
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.9e12fc915f3f19fed96c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.8d8cf6b2e188d10951d1.js.map

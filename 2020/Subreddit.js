@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.d912c09fca5934e83b36.js
-// Retrieved at 10/29/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.618ed07840ea3d02ffc4.js
+// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "Frontpage~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -3858,7 +3858,7 @@
 							child: {
 								id: t,
 								estHeight: k(e.layout),
-								trackOnEnteredViewport: () => e.sendEvent(Object(C.B)()),
+								trackOnEnteredViewport: () => e.sendEvent(Object(C.z)()),
 								render: t => {
 									let {
 										className: n
@@ -8362,60 +8362,56 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return s
-			})), n.d(t, "B", (function() {
+			})), n.d(t, "z", (function() {
 				return l
 			})), n.d(t, "f", (function() {
 				return u
 			})), n.d(t, "g", (function() {
 				return m
-			})), n.d(t, "x", (function() {
-				return p
-			})), n.d(t, "u", (function() {
-				return b
-			})), n.d(t, "y", (function() {
-				return h
-			})), n.d(t, "w", (function() {
-				return g
 			})), n.d(t, "v", (function() {
-				return x
-			})), n.d(t, "p", (function() {
-				return f
-			})), n.d(t, "q", (function() {
-				return y
-			})), n.d(t, "m", (function() {
-				return v
-			})), n.d(t, "k", (function() {
-				return E
-			})), n.d(t, "l", (function() {
-				return O
-			})), n.d(t, "j", (function() {
-				return C
+				return p
 			})), n.d(t, "t", (function() {
-				return k
+				return b
+			})), n.d(t, "w", (function() {
+				return h
+			})), n.d(t, "u", (function() {
+				return g
+			})), n.d(t, "m", (function() {
+				return x
 			})), n.d(t, "n", (function() {
-				return j
+				return f
+			})), n.d(t, "k", (function() {
+				return y
+			})), n.d(t, "l", (function() {
+				return v
+			})), n.d(t, "j", (function() {
+				return E
 			})), n.d(t, "s", (function() {
-				return A
-			})), n.d(t, "A", (function() {
-				return S
+				return O
 			})), n.d(t, "o", (function() {
-				return w
-			})), n.d(t, "b", (function() {
-				return N
-			})), n.d(t, "c", (function() {
-				return _
-			})), n.d(t, "d", (function() {
-				return P
+				return C
 			})), n.d(t, "r", (function() {
-				return I
-			})), n.d(t, "z", (function() {
-				return T
+				return k
+			})), n.d(t, "y", (function() {
+				return j
+			})), n.d(t, "p", (function() {
+				return A
+			})), n.d(t, "b", (function() {
+				return S
+			})), n.d(t, "c", (function() {
+				return w
+			})), n.d(t, "d", (function() {
+				return N
+			})), n.d(t, "q", (function() {
+				return _
+			})), n.d(t, "x", (function() {
+				return P
 			})), n.d(t, "e", (function() {
-				return B
+				return I
 			})), n.d(t, "h", (function() {
-				return L
+				return T
 			})), n.d(t, "i", (function() {
-				return F
+				return B
 			}));
 			var s, r = n("./src/reddit/constants/chat.ts"),
 				a = n("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -8513,53 +8509,41 @@
 					noun: "stream",
 					playback: c(n, e, t)
 				}, d(n)), o(n, e)),
-				x = (e, t, n) => s => Object.assign(Object.assign({
+				x = (e, t, n) => s => Object.assign(Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
-					noun: e,
-					playback: c(s, t, n)
-				}, d(s)), o(s, t)),
-				f = (e, t, n, s) => r => Object.assign(Object.assign(Object.assign({
-					source: "stream_player",
-					action: "click",
-					noun: e,
-					playback: c(r, t, n)
-				}, d(r)), o(r, t)), {
-					actionInfo: i.actionInfo(r, {
-						referralId: s
+					noun: "share_video",
+					playback: c(s, e, t)
+				}, d(s)), o(s, e)), {
+					actionInfo: i.actionInfo(s, {
+						referralId: n
 					})
 				}),
-				y = (e, t, n) => s => Object.assign(Object.assign({
-					source: "stream_player",
-					action: "click",
-					noun: e,
-					playback: c(s, t, n)
-				}, d(s)), o(s, t)),
-				v = (e, t) => n => Object.assign(Object.assign({
+				f = (e, t) => n => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "upvote",
 					playback: c(n, e, t)
 				}, d(n)), o(n, e)),
-				E = (e, t) => n => Object.assign(Object.assign({
+				y = (e, t) => n => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "downvote",
 					playback: c(n, e, t)
 				}, d(n)), o(n, e)),
-				O = (e, t) => n => Object.assign(Object.assign({
+				v = (e, t) => n => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "report",
 					playback: c(n, e, t)
 				}, d(n)), o(n, e)),
-				C = (e, t) => n => Object.assign({
+				E = (e, t) => n => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "chat",
 					playback: c(n, e, t)
 				}, o(n, e)),
-				k = e => t => {
+				O = e => t => {
 					const n = Object(a.l)(t, e);
 					return Object.assign({
 						source: "stream_chat",
@@ -8567,7 +8551,7 @@
 						noun: "send_chat"
 					}, o(t, n))
 				},
-				j = (e, t, n) => s => Object.assign({
+				C = (e, t, n) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
@@ -8576,20 +8560,20 @@
 					},
 					playback: c(s, t, n)
 				}, o(s, t)),
-				A = (e, t) => n => Object.assign({
+				k = (e, t) => n => Object.assign({
 					source: "stream_player",
 					action: "scrub",
 					noun: "video",
 					playback: c(n, e, t)
 				}, d(n)),
-				S = e => t => Object.assign({
+				j = e => t => Object.assign({
 					source: "post",
 					action: "view",
 					noun: "post",
 					profile: i.profile(t),
 					screen: i.screen(t)
 				}, o(t, e)),
-				w = e => e => {
+				A = e => e => {
 					const t = o(e);
 					return Object.assign({
 						source: "post",
@@ -8599,49 +8583,49 @@
 						screen: i.screen(e)
 					}, t)
 				},
-				N = (e, t) => n => Object.assign({
+				S = (e, t) => n => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "close",
 					playback: c(n, e, t)
 				}, o(n, e)),
-				_ = (e, t) => n => Object.assign({
+				w = (e, t) => n => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "pause",
 					playback: c(n, e, t)
 				}, o(n, e)),
-				P = (e, t) => n => Object.assign({
+				N = (e, t) => n => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: c(n, e, t)
 				}, o(n, e)),
-				I = (e, t) => n => Object.assign({
+				_ = (e, t) => n => Object.assign({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
 					playback: c(n, e, t)
 				}, o(n, e)),
-				T = (e, t) => n => Object.assign({
+				P = (e, t) => n => Object.assign({
 					source: "stream_player",
 					action: "unmute",
 					noun: "volume",
 					playback: c(n, e, t)
 				}, o(n, e)),
-				B = (e, t) => n => Object.assign({
+				I = (e, t) => n => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "replay_video",
 					playback: c(n, e, t)
 				}, o(n, e)),
-				L = (e, t) => n => Object.assign(Object.assign({
+				T = (e, t) => n => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "swipe",
 					noun: "next",
 					playback: c(n, e, t)
 				}, o(n, e)), d(n)),
-				F = (e, t) => n => Object.assign(Object.assign({
+				B = (e, t) => n => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "swipe",
 					noun: "previous",
@@ -10158,7 +10142,7 @@
 				o = n("./src/reddit/selectors/user.ts"),
 				c = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				d = n("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const l = Object(s.a)(c.a, c.e, (e, t) => {
+			const l = Object(s.a)(c.a, c.d, (e, t) => {
 					let {
 						listingName: n
 					} = t;
@@ -10200,7 +10184,7 @@
 					if (!o.global.viewer_enabled) return !1;
 					return [a.R, "r/popular"].indexOf(s) > -1
 				}),
-				u = Object(s.a)(c.e, (e, t) => {
+				u = Object(s.a)(c.d, (e, t) => {
 					let {
 						listingName: n
 					} = t;
@@ -10312,7 +10296,7 @@
 						streamIdFromPath: n
 					} = t;
 					return n
-				}, (e, t) => p(t.listingName)(e, t), C, g, c.h, d.e, (e, t, n, s, r, c) => {
+				}, (e, t) => p(t.listingName)(e, t), C, g, c.h, d.d, (e, t, n, s, r, c) => {
 					if (c) {
 						const a = [];
 						if (e) {
@@ -10542,4 +10526,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d912c09fca5934e83b36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.618ed07840ea3d02ffc4.js.map
