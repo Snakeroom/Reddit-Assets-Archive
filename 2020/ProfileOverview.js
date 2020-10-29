@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.47e76da1a3e060c643ba.js
-// Retrieved at 10/28/2020, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.e23ff1c406d3858bd01c.js
+// Retrieved at 10/28/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -5263,6 +5263,12 @@
 				[h.w.Finland]: () => g.fbt._("Finland", null, {
 					hk: "jmDeD"
 				}),
+				[h.w.France]: () => g.fbt._("France", null, {
+					hk: "1fX2Y8"
+				}),
+				[h.w.Germany]: () => g.fbt._("Germany", null, {
+					hk: "2mADuB"
+				}),
 				[h.w.Greece]: () => g.fbt._("Greece", null, {
 					hk: "UUFTD"
 				}),
@@ -5277,6 +5283,9 @@
 				}),
 				[h.w.Ireland]: () => g.fbt._("Ireland", null, {
 					hk: "3rG4DM"
+				}),
+				[h.w.Italy]: () => g.fbt._("Italy", null, {
+					hk: "3EvGjk"
 				}),
 				[h.w.Japan]: () => g.fbt._("Japan", null, {
 					hk: "3EAE8v"
@@ -5310,6 +5319,9 @@
 				}),
 				[h.w.Singapore]: () => g.fbt._("Singapore", null, {
 					hk: "3qEBqp"
+				}),
+				[h.w.Spain]: () => g.fbt._("Spain", null, {
+					hk: "44RpFE"
 				}),
 				[h.w.Sweden]: () => g.fbt._("Sweden", null, {
 					hk: "A5nWO"
@@ -15711,4 +15723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.47e76da1a3e060c643ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.e23ff1c406d3858bd01c.js.map
