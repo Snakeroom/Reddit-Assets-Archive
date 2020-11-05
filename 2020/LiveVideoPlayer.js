@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.9e12fc915f3f19fed96c.js
-// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d933c0acd8ad9f86ecd1.js
+// Retrieved at 11/5/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -29,9 +29,9 @@
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
 				return N
 			})), s.d(t, "Overlay", (function() {
-				return B
-			})), s.d(t, "LiveIndicator", (function() {
 				return A
+			})), s.d(t, "LiveIndicator", (function() {
+				return B
 			}));
 			var i = s("./node_modules/lodash/isUndefined.js"),
 				o = s.n(i),
@@ -55,9 +55,9 @@
 				V = s("./src/reddit/constants/keycodes.ts"),
 				C = s("./src/reddit/helpers/trackers/rpan.ts"),
 				L = s("./src/reddit/selectors/experiments/video.ts"),
-				R = s("./src/reddit/selectors/platform.ts"),
-				T = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				w = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				w = s("./src/reddit/selectors/platform.ts"),
+				R = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				T = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				f = s("./src/reddit/selectors/user.ts"),
 				x = s("./src/reddit/selectors/video.ts"),
 				k = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
@@ -69,14 +69,14 @@
 			}), I = 3e3, O = Object(d.c)({
 				autoplay: f.b,
 				inVideoNewVolumePolicyFeed: L.a,
-				isOverlayOpen: R.i,
+				isOverlayOpen: w.i,
 				mutedInFeed: x.j,
-				unavailableVideoUrl: T.o,
+				unavailableVideoUrl: R.o,
 				currentStream: (e, t) => {
 					let {
 						postId: s
 					} = t;
-					return Object(w.l)(e, s)
+					return Object(T.l)(e, s)
 				}
 			}), j = Object(r.b)(O, (e, t) => ({
 				setMutedInFeed: t => e(Object(v.H)(t)),
@@ -221,7 +221,7 @@
 							currentStream: i
 						} = this.props;
 						if (!i) return void(null === (s = this.videoSessionManager) || void 0 === s || s.destroySession());
-						const o = !t.sessionDurationMs ? C.y : C.u,
+						const o = !t.sessionDurationMs ? C.A : C.w,
 							a = Object.assign(Object.assign({}, t), {
 								chatState: M.f.None,
 								playerType: C.a.Feed
@@ -323,7 +323,7 @@
 					}, this.shouldRenderVideo ? this.renderVideo() : null, this.shouldRenderOverlay ? this.renderOverlay() : null)
 				}
 				renderOverlay() {
-					return n.a.createElement(B, null, this.state.live ? n.a.createElement(A, null) : null, this.shouldRenderControls ? this.renderControls() : null)
+					return n.a.createElement(A, null, this.state.live ? n.a.createElement(B, null) : null, this.shouldRenderControls ? this.renderControls() : null)
 				}
 				renderVideo() {
 					const {
@@ -417,7 +417,7 @@
 				}
 			}
 			N.contextType = y.a, t.default = j(Object(P.c)(N));
-			const B = e => {
+			const A = e => {
 					let {
 						children: t
 					} = e;
@@ -425,7 +425,7 @@
 						className: E.a.Overlay
 					}, t)
 				},
-				A = () => n.a.createElement("span", {
+				B = () => n.a.createElement("span", {
 					className: E.a.LiveIndicator
 				}, _._("Live", null, {
 					hk: "TwJSs"
@@ -433,4 +433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.9e12fc915f3f19fed96c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d933c0acd8ad9f86ecd1.js.map

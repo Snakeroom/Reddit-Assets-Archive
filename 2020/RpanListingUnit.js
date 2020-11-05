@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.c02147dda7aa8f2e2632.js
-// Retrieved at 11/5/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.3fb5143177d0faeac76e.js
+// Retrieved at 11/5/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				C = Object({
-					SENTRY_RELEASE_VERSION: "d36b649-production"
+					SENTRY_RELEASE_VERSION: "0e4f85a-production"
 				}),
 				N = {
 					anonymousUserId: "t2_anonymous",
@@ -706,20 +706,20 @@
 							onHideRpanUnit: s,
 							sendEvent: i
 						} = this.props;
-						s(), i(Object(g.f)())
+						s(), i(Object(g.g)())
 					}, this.onStreamClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t,
 							stream: s
 						} = this.props;
-						t(s ? Object(g.g)(s, 1) : Object(g.g)()), this.openOverlay()
+						t(s ? Object(g.h)(s, 1) : Object(g.h)()), this.openOverlay()
 					}, this.onHeaderClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t
 						} = this.props;
-						t(Object(g.g)()), this.openOverlay()
+						t(Object(g.h)()), this.openOverlay()
 					}, this.handleIntersectionEvent = e => {
 						let {
 							isIntersecting: t
@@ -744,7 +744,7 @@
 							streamById: r
 						} = this.props, n = i && i.post.id === t.id ? i : r(t.id);
 						if (!n) return;
-						const a = !s.sessionDurationMs ? g.y : g.u,
+						const a = !s.sessionDurationMs ? g.A : g.w,
 							o = {
 								chatState: v.f.None,
 								playerType: g.a.DU
@@ -1177,4 +1177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c02147dda7aa8f2e2632.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3fb5143177d0faeac76e.js.map

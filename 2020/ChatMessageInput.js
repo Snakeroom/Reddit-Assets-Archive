@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.1da04b343d7a19a1bfbf.js
-// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.d043c7c76d72aad05457.js
+// Retrieved at 11/5/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
@@ -699,7 +699,7 @@
 							};
 							this.cleanInputForm(), this.props.dispatchSubmit(e, N.h.RICH_TEXT, this.props.replyComment)
 						}
-						this.props.isLivestreaming && this.props.sendEvent(Object(w.t)(this.props.postId))
+						this.props.isLivestreaming && this.props.sendEvent(Object(w.v)(this.props.postId))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -1127,60 +1127,64 @@
 			"use strict";
 			s.d(t, "a", (function() {
 				return n
-			})), s.d(t, "B", (function() {
+			})), s.d(t, "D", (function() {
 				return l
-			})), s.d(t, "f", (function() {
-				return u
 			})), s.d(t, "g", (function() {
-				return m
-			})), s.d(t, "x", (function() {
-				return h
-			})), s.d(t, "u", (function() {
-				return p
-			})), s.d(t, "y", (function() {
-				return b
-			})), s.d(t, "w", (function() {
-				return _
-			})), s.d(t, "v", (function() {
-				return g
-			})), s.d(t, "p", (function() {
-				return f
-			})), s.d(t, "q", (function() {
-				return j
-			})), s.d(t, "m", (function() {
-				return x
-			})), s.d(t, "k", (function() {
-				return v
-			})), s.d(t, "l", (function() {
-				return O
-			})), s.d(t, "j", (function() {
-				return C
-			})), s.d(t, "t", (function() {
-				return E
-			})), s.d(t, "n", (function() {
-				return I
-			})), s.d(t, "s", (function() {
-				return y
-			})), s.d(t, "A", (function() {
-				return w
-			})), s.d(t, "o", (function() {
-				return k
-			})), s.d(t, "b", (function() {
-				return A
-			})), s.d(t, "c", (function() {
-				return N
-			})), s.d(t, "d", (function() {
-				return S
-			})), s.d(t, "r", (function() {
-				return L
-			})), s.d(t, "z", (function() {
-				return T
-			})), s.d(t, "e", (function() {
-				return F
+				return u
 			})), s.d(t, "h", (function() {
-				return R
+				return m
+			})), s.d(t, "z", (function() {
+				return h
+			})), s.d(t, "w", (function() {
+				return p
+			})), s.d(t, "A", (function() {
+				return b
+			})), s.d(t, "y", (function() {
+				return _
+			})), s.d(t, "x", (function() {
+				return g
+			})), s.d(t, "r", (function() {
+				return f
+			})), s.d(t, "s", (function() {
+				return j
+			})), s.d(t, "o", (function() {
+				return x
+			})), s.d(t, "m", (function() {
+				return v
+			})), s.d(t, "n", (function() {
+				return O
+			})), s.d(t, "l", (function() {
+				return C
+			})), s.d(t, "v", (function() {
+				return E
+			})), s.d(t, "p", (function() {
+				return I
+			})), s.d(t, "u", (function() {
+				return y
+			})), s.d(t, "C", (function() {
+				return w
+			})), s.d(t, "q", (function() {
+				return k
+			})), s.d(t, "c", (function() {
+				return A
 			})), s.d(t, "i", (function() {
+				return N
+			})), s.d(t, "b", (function() {
+				return S
+			})), s.d(t, "d", (function() {
+				return L
+			})), s.d(t, "e", (function() {
+				return T
+			})), s.d(t, "t", (function() {
+				return F
+			})), s.d(t, "B", (function() {
+				return R
+			})), s.d(t, "f", (function() {
 				return D
+			})), s.d(t, "j", (function() {
+				return M
+			})), s.d(t, "k", (function() {
+				return P
 			}));
 			var n, a = s("./src/reddit/constants/chat.ts"),
 				r = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -1364,49 +1368,61 @@
 						screen: o.screen(e)
 					}, t)
 				},
-				A = (e, t) => s => Object.assign({
+				A = e => t => Object.assign({
+					source: "stream_player",
+					action: "click",
+					noun: "follow"
+				}, c(t, e)),
+				N = e => t => Object.assign(Object.assign({
+					source: "stream_player",
+					action: "click",
+					noun: "subscribe"
+				}, c(t, e)), {
+					targetSubreddit: o.subreddit(t)
+				}),
+				S = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "close",
 					playback: i(s, e, t)
 				}, c(s, e)),
-				N = (e, t) => s => Object.assign({
+				L = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "pause",
 					playback: i(s, e, t)
 				}, c(s, e)),
-				S = (e, t) => s => Object.assign({
+				T = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: i(s, e, t)
 				}, c(s, e)),
-				L = (e, t) => s => Object.assign({
+				F = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
 					playback: i(s, e, t)
 				}, c(s, e)),
-				T = (e, t) => s => Object.assign({
+				R = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "unmute",
 					noun: "volume",
 					playback: i(s, e, t)
 				}, c(s, e)),
-				F = (e, t) => s => Object.assign({
+				D = (e, t) => s => Object.assign({
 					source: "stream_player",
 					action: "click",
 					noun: "replay_video",
 					playback: i(s, e, t)
 				}, c(s, e)),
-				R = (e, t) => s => Object.assign(Object.assign({
+				M = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "swipe",
 					noun: "next",
 					playback: i(s, e, t)
 				}, c(s, e)), d(s)),
-				D = (e, t) => s => Object.assign(Object.assign({
+				P = (e, t) => s => Object.assign(Object.assign({
 					source: "stream_player",
 					action: "swipe",
 					noun: "previous",
@@ -1719,4 +1735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.1da04b343d7a19a1bfbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.d043c7c76d72aad05457.js.map
