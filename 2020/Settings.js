@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f6281ff0dafaf4b3ee22.js
-// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.cd495bbc3a3495b6fc60.js
+// Retrieved at 11/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -3576,9 +3576,12 @@
 					correlationId: void 0
 				}),
 				g = (e, t) => n => Object.assign(Object.assign({}, s.defaults(n)), {
-					action: r(t),
-					noun: e,
-					source: "notification"
+					action: r(e),
+					notification: {
+						type: t
+					},
+					noun: "notification",
+					source: "notification_app_settings"
 				})
 		},
 		"./src/reddit/helpers/trackers/premiumSettings.ts": function(e, t, n) {
@@ -5650,7 +5653,7 @@
 							notificationPermission: n
 						})), this.lastNotificationsState = e
 					}, this.trackPreferenceToggled = (e, t) => {
-						this.props.sendEvent(Object(us.e)(e, t))
+						this.props.sendEvent(Object(us.e)(t))
 					}, this.setDesktopNotificationsLocalValue = e => {
 						this.setState({
 							desktopNotifications: e
@@ -7540,4 +7543,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f6281ff0dafaf4b3ee22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.cd495bbc3a3495b6fc60.js.map

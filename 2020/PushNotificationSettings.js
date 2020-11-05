@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotificationSettings.c0c25b66e166ba695f2b.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotificationSettings.fa29511550a3ac2e79f4.js
+// Retrieved at 11/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -154,17 +154,17 @@
 				};
 			var O = s("./node_modules/lodash/times.js"),
 				x = s.n(O),
-				N = s("./src/lib/lessComponent.tsx"),
-				S = s("./src/reddit/helpers/trackers/notifications.ts"),
-				w = s("./src/reddit/hooks/useTracking.ts"),
-				P = s("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
-				T = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				S = s("./src/lib/lessComponent.tsx"),
+				w = s("./src/reddit/helpers/trackers/notifications.ts"),
+				T = s("./src/reddit/hooks/useTracking.ts"),
+				N = s("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
+				P = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				L = s("./src/reddit/components/Settings/PushNotificationSettings/index.m.less"),
 				v = s.n(L);
-			const k = N.a.div("LoadingSectionHeader", v.a),
-				A = N.a.div("LoadingToggleWrapper", v.a),
-				C = N.a.span("LoadingToggleName", v.a),
-				B = N.a.span("LoadingToggleButton", v.a),
+			const k = S.a.div("LoadingSectionHeader", v.a),
+				A = S.a.div("LoadingToggleWrapper", v.a),
+				C = S.a.span("LoadingToggleName", v.a),
+				B = S.a.span("LoadingToggleButton", v.a),
 				D = () => a.a.createElement("div", {
 					role: "alert",
 					"aria-busy": "true"
@@ -175,16 +175,16 @@
 					Object(n.useEffect)(() => {
 						e.fetchNotificationSettings()
 					}, []);
-					const t = Object(w.a)(),
+					const t = Object(T.a)(),
 						s = (s, n, o) => {
 							const i = e.rows && e.rows.byId[s];
-							return i ? a.a.createElement(T.o, {
+							return i ? a.a.createElement(P.o, {
 								key: i.displayName,
 								label: i.displayName,
 								last: o.length === n + 1,
 								on: i.isEnabled,
 								onClick: () => (s => {
-									s.analyticsNoun && t(Object(S.e)(s.analyticsNoun, !s.isEnabled)), e.updateNotificationPreference({
+									s.messageType && t(Object(w.e)(!s.isEnabled, s.messageType)), e.updateNotificationPreference({
 										isEnabled: !s.isEnabled,
 										messageType: s.messageType
 									})
@@ -203,7 +203,7 @@
 							const n = e.sections && e.sections.byId && e.sections.byId[t];
 							return n ? a.a.createElement("div", {
 								key: t
-							}, a.a.createElement(P.a, null, n.title), n.rows ? n.rows.map(s) : null) : null
+							}, a.a.createElement(N.a, null, n.title), n.rows ? n.rows.map(s) : null) : null
 						});
 					return e.hasError ? o : i && i.length > 0 ? a.a.createElement(a.a.Fragment, null, c) : a.a.createElement(D, null)
 				};
@@ -225,4 +225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.c0c25b66e166ba695f2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.fa29511550a3ac2e79f4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.8cb929fcd04799e5f506.js
-// Retrieved at 10/7/2020, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.ec23d5b1a9b6cba9a11e.js
+// Retrieved at 11/5/2020, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
@@ -8,14 +8,14 @@
 		"./src/lib/notifications/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return r
+				return o
 			}));
 			i("./node_modules/core-js/modules/es6.regexp.to-string.js");
 			var s = i("./src/lib/localStorageAvailable/index.ts"),
 				n = i("./src/lib/notifications/constants.ts"),
 				c = i("./src/lib/notifications/featureFlags.ts");
 			i("./src/lib/serviceWorker/index.ts");
-			const r = async (e, t, i, r, o, a) => {
+			const o = async (e, t, i, o, r, a) => {
 				if (Object(s.a)()) {
 					const t = localStorage.getItem(n.h),
 						i = (new Date).getTime();
@@ -24,18 +24,18 @@
 				}
 				const d = Object(c.a)();
 				if (d === n.c.BrowserUnsupported || d === n.c.LocalStorageUnavailable || d === n.c.NotAllRequiredAPIsSupported) return void a();
-				if ("denied" === Notification.permission) return r(!1, !1), void a();
-				if ("granted" === Notification.permission) return o(!1), void a();
+				if ("denied" === Notification.permission) return o(!1, !1), void a();
+				if ("granted" === Notification.permission) return r(!1), void a();
 				const u = localStorage.getItem(n.f);
 				if (t || !u || u !== n.g) switch (i(), await Notification.requestPermission()) {
 					case "granted":
-						o(!0);
+						r(!0);
 						break;
 					case "denied":
-						r(!0, !0);
+						o(!0, !0);
 						break;
 					default:
-						r(!0, !1), localStorage.setItem(n.f, n.g)
+						o(!0, !1), localStorage.setItem(n.f, n.g)
 				} else a()
 			}
 		},
@@ -49,8 +49,8 @@
 			var s = i("./src/config.ts"),
 				n = i("./src/graphql/operations/RegisterWebPushToken.json"),
 				c = i("./src/lib/makeGqlRequest/index.ts"),
-				r = i("./src/lib/serviceWorker/index.ts"),
-				o = i("./src/lib/timezone/index.ts"),
+				o = i("./src/lib/serviceWorker/index.ts"),
+				r = i("./src/lib/timezone/index.ts"),
 				a = (i("./node_modules/core-js/modules/es6.regexp.replace.js"), e => {
 					const t = (e + "=".repeat((4 - e.length % 4) % 4)).replace(/\-/g, "+").replace(/_/g, "/"),
 						i = window.atob(t),
@@ -64,7 +64,7 @@
 			}(d || (d = {}));
 			const u = async e => {
 				try {
-					const t = await Object(r.a)();
+					const t = await Object(o.a)();
 					if (!t) return d.FailedNoServiceWorker;
 					let i = await t.pushManager.getSubscription();
 					if (!i) {
@@ -78,7 +78,7 @@
 					const u = await ((e, t) => {
 						const i = {
 							pushToken: JSON.stringify(t),
-							timezoneName: Object(o.b)() || o.a,
+							timezoneName: Object(r.b)() || r.a,
 							timestamp: (new Date).toISOString(),
 							language: "en_us"
 						};
@@ -97,7 +97,7 @@
 		"./src/reddit/actions/notifications/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
-				return _
+				return S
 			})), i.d(t, "requestNotificationsPermissions", (function() {
 				return y
 			})), i.d(t, "subscribeForPNs", (function() {
@@ -108,8 +108,8 @@
 			var s = i("./node_modules/fbt/lib/FbtPublic.js"),
 				n = i("./node_modules/lodash/omit.js"),
 				c = i.n(n),
-				r = i("./src/lib/browser/isIncognito.ts"),
-				o = i("./src/lib/notifications/token.ts"),
+				o = i("./src/lib/browser/isIncognito.ts"),
+				r = i("./src/lib/notifications/token.ts"),
 				a = i("./src/lib/notifications/index.ts"),
 				d = i("./src/lib/notifications/constants.ts"),
 				u = i("./src/lib/serviceWorker/index.ts"),
@@ -124,20 +124,20 @@
 				m = i("./src/reddit/models/Toast/index.ts"),
 				v = i("./src/reddit/selectors/meta.ts"),
 				k = i("./src/reddit/selectors/user.ts");
-			let S = !1;
-			const _ = async (e, t) => {
+			let _ = !1;
+			const S = async (e, t) => {
 				const i = Object(k.H)(e);
-				if (S) return;
-				if (S = !0, Object(g.a)(e) !== d.c.NotificationsSupported) return;
+				if (_) return;
+				if (_ = !0, Object(g.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(u.a)();
 				navigator.serviceWorker.addEventListener("message", s => {
 					const n = s.data,
-						r = n.command || n.type;
-					if ("registerWithServiceWorker" === r) w(e);
-					else if (r === O.a && i) {
+						o = n.command || n.type;
+					if ("registerWithServiceWorker" === o) w(e);
+					else if (o === O.a && i) {
 						const e = c()(n, ["command"]);
 						t(Object(f.d)(e))
-					} else if ("navigate.chat" === r) {
+					} else if ("navigate.chat" === o) {
 						const e = Object(j.a)(n.data.href);
 						e && e.pathname && t(Object(l.b)(e.pathname))
 					}
@@ -150,16 +150,16 @@
 			}, y = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (s, n, c) => {
-					const o = n(),
-						u = Object(v.h)(o);
-					if (await Object(r.a)() || u) return;
-					await _(o, s);
-					h.h(o), Object(a.a)(e, t, () => {
-						s(Object(d.n)()), s(Object(d.m)()), h.f(o)
+					const r = n(),
+						u = Object(v.h)(r);
+					if (await Object(o.a)() || u) return;
+					await S(r, s);
+					h.h(r), Object(a.a)(e, t, () => {
+						s(Object(d.n)()), s(Object(d.m)()), h.f(r)
 					}, (e, t) => {
-						s(Object(d.k)()), e && (t ? h.c(o) : h.d(o))
+						s(Object(d.k)()), e && (t ? h.c(r) : h.d(r))
 					}, e => {
-						s(Object(d.l)()), s(F()), e && h.b(o)
+						s(Object(d.l)()), s(F()), e && h.b(r)
 					}, () => {
 						i()
 					})
@@ -167,9 +167,9 @@
 			}, F = e => async (t, i, n) => {
 				const c = i();
 				try {
-					const i = await Object(o.b)(n.gqlContext);
+					const i = await Object(r.b)(n.gqlContext);
 					switch (Object(b.c)(), i) {
-						case o.a.Success:
+						case r.a.Success:
 							h.i(c), e && t(Object(p.e)({
 								kind: m.b.SuccessCommunity,
 								text: s.fbt._("Changes saved", null, {
@@ -177,14 +177,14 @@
 								})
 							}));
 							break;
-						case o.a.FailedResponse:
+						case r.a.FailedResponse:
 							h.g(c, "registration_failed_generally");
 							break;
-						case o.a.FailedGqlReponse:
+						case r.a.FailedGqlReponse:
 							h.g(c, "registration_failed_in_gql")
 					}
-				} catch (r) {
-					h.g(c, "registration_failed_uncaught_exception"), console.error(r)
+				} catch (o) {
+					h.g(c, "registration_failed_uncaught_exception"), console.error(o)
 				}
 			}, N = e => async (t, i, n) => {
 				try {
@@ -204,7 +204,7 @@
 		"./src/reddit/helpers/trackers/notifications.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "f", (function() {
-				return o
+				return r
 			})), i.d(t, "b", (function() {
 				return a
 			})), i.d(t, "c", (function() {
@@ -227,8 +227,8 @@
 			const c = e => Object.assign(Object.assign({}, s.defaults(e)), {
 					noun: "desktop_notification_permissions"
 				}),
-				r = e => e ? "enable" : "disable",
-				o = e => {
+				o = e => e ? "enable" : "disable",
+				r = e => {
 					Object(n.a)(Object.assign(Object.assign({}, c(e)), {
 						action: "view",
 						source: "popup"
@@ -286,11 +286,14 @@
 					correlationId: void 0
 				}),
 				j = (e, t) => i => Object.assign(Object.assign({}, s.defaults(i)), {
-					action: r(t),
-					noun: e,
-					source: "notification"
+					action: o(e),
+					notification: {
+						type: t
+					},
+					noun: "notification",
+					source: "notification_app_settings"
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.8cb929fcd04799e5f506.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.ec23d5b1a9b6cba9a11e.js.map
