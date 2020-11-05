@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.8661f19ff3fc57316011.js
-// Retrieved at 11/5/2020, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.f0a1a912ae0562919c31.js
+// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -83,7 +83,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				C = Object({
-					SENTRY_RELEASE_VERSION: "17f3e22-production"
+					SENTRY_RELEASE_VERSION: "880c096-production"
 				}),
 				N = {
 					anonymousUserId: "t2_anonymous",
@@ -744,7 +744,7 @@
 							streamById: r
 						} = this.props, n = i && i.post.id === t.id ? i : r(t.id);
 						if (!n) return;
-						const a = !s.sessionDurationMs ? g.w : g.t,
+						const a = !s.sessionDurationMs ? g.y : g.u,
 							o = {
 								chatState: v.f.None,
 								playerType: g.a.DU
@@ -1177,4 +1177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.8661f19ff3fc57316011.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.f0a1a912ae0562919c31.js.map

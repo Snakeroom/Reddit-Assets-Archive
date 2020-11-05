@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.90b28b49d07ca2dd85d1.js
-// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.687fcb612956ac883b38.js
+// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -302,8 +302,8 @@
 					return n
 				};
 			const R = l.a.wrapped(h.c, "RestrictedButton", M.a),
-				I = l.a.wrapped(_.a, "Approve", M.a),
-				A = l.a.wrapped(j.a, "Lock", M.a),
+				A = l.a.wrapped(_.a, "Approve", M.a),
+				I = l.a.wrapped(j.a, "Lock", M.a),
 				D = l.a.wrapped(E.a, "Remove", M.a),
 				L = l.a.wrapped(w.a, "Spam", M.a),
 				B = l.a.wrapped(S.a, "Show", M.a),
@@ -388,7 +388,7 @@
 					onClick: () => {
 						u(), W("approve")
 					}
-				}, r.a.createElement(I, null)), S && r.a.createElement(r.a.Fragment, null, r.a.createElement(R, {
+				}, r.a.createElement(A, null)), S && r.a.createElement(r.a.Fragment, null, r.a.createElement(R, {
 					text: n.bannedBy === c.k ? s.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
 					}) : s.fbt._("Remove", null, {
@@ -413,7 +413,7 @@
 					onClick: () => {
 						x(), W(n.isLocked ? "unlock" : "lock")
 					}
-				}, r.a.createElement(A, null)), a && !w && !n.bannedBy && r.a.createElement(R, {
+				}, r.a.createElement(I, null)), a && !w && !n.bannedBy && r.a.createElement(R, {
 					className: Object(d.a)({
 						[M.a.selected]: _.isDistinguishDropdownOpen
 					}),
@@ -1902,7 +1902,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e("vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322"), n.e("vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19"), n.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"), n.e("ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49"), n.e("Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"), n.e("Governance~Reddit~reddit-components-MediumPost"), n.e("Reddit~reddit-components-MediumPost"), n.e("RpanListingUnit~reddit-components-MediumPost"), n.e("reddit-components-MediumPost")]).then(n.bind(null, "./src/reddit/components/MediumPost/index.tsx")),
+					importAsync: () => Promise.all([n.e("vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322"), n.e("vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19"), n.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Prof~d6dc9580"), n.e("ModerationPages~PostDraft~ProfileComments~ProfileOverview~ProfilePrivate~RpanListingUnit~SearchResul~972c7c49"), n.e("Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"), n.e("Governance~Reddit~reddit-components-MediumPost"), n.e("RpanListingUnit~reddit-components-MediumPost"), n.e("Reddit~reddit-components-MediumPost"), n.e("reddit-components-MediumPost")]).then(n.bind(null, "./src/reddit/components/MediumPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2134,6 +2134,29 @@
 				d: "M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z M4.5,8.5 C4.22385763,8.5 4,8.72385763 4,9 L4,11 C4,11.2761424 4.22385763,11.5 4.5,11.5 L15.5,11.5 C15.7761424,11.5 16,11.2761424 16,11 L16,9 C16,8.72385763 15.7761424,8.5 15.5,8.5 L4.5,8.5 Z"
 			}))))
 		},
+		"./src/reddit/icons/svgs/Crosspost/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+
+			function r() {
+				return (r = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			t.a = e => o.a.createElement("svg", r({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), o.a.createElement("path", {
+				d: "M9.06,8.64c1.12-1.26,2.2-2.45,4.44-2.6V7.5a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74L15.18,1.7a1,1,0,0,0-1.68.74V4c-3.14.17-4.69,1.88-5.93,3.28C6.58,8.42,6,9,5,9H2a1,1,0,0,0,0,2H5C6.93,11,8,9.82,9.06,8.64Z"
+			}), o.a.createElement("path", {
+				d: "M15.18,11.76a1,1,0,0,0-1.68.74V14c-2.23-.16-3.29-1.32-4.39-2.56-.21-.24-.43-.48-.66-.72a5.63,5.63,0,0,1-1.77,1.06,13.34,13.34,0,0,1,.94,1A7.85,7.85,0,0,0,13.5,16v1.59a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74Z"
+			}))
+		},
 		"./src/reddit/icons/svgs/Show/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -2239,12 +2262,12 @@
 				M = n("./src/config.ts"),
 				T = n("./src/lib/lessComponent.tsx"),
 				R = n("./src/lib/opener/index.ts"),
-				I = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				A = n("./src/reddit/components/Widgets/ModSupportLinks/index.m.less"),
-				D = n.n(A);
+				A = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				I = n("./src/reddit/components/Widgets/ModSupportLinks/index.m.less"),
+				D = n.n(I);
 			const L = T.a.a("ExternalLink", D.a),
 				B = T.a.wrapped(_.a, "InternalLink", D.a);
-			var F = () => a.a.createElement(I.a, {
+			var F = () => a.a.createElement(A.a, {
 				title: C.fbt._("Moderator resources", null, {
 					hk: "1i4sLY"
 				}),
@@ -2274,7 +2297,7 @@
 			})));
 			var W = e => a.a.createElement("div", {
 				className: j.a.sidebar
-			}, e.subredditOrProfileUrl && a.a.createElement(N.a, null, a.a.createElement(I.a, {
+			}, e.subredditOrProfileUrl && a.a.createElement(N.a, null, a.a.createElement(A.a, {
 				title: C.fbt._("Moderation", null, {
 					hk: "K4118"
 				})
@@ -2380,4 +2403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.90b28b49d07ca2dd85d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.687fcb612956ac883b38.js.map

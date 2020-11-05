@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.99ec6059bc30ef9173f1.js
-// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.01875fd2486905282be0.js
+// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -127,16 +127,16 @@
 				p = t("./src/reddit/hooks/useTracking.ts"),
 				u = t("./src/reddit/actions/gold/modals.ts"),
 				h = t("./src/reddit/contexts/InsideOverlay.tsx"),
-				w = t("./src/reddit/models/Gold/TopAwarded/index.ts"),
-				f = t("./src/reddit/selectors/gold/topAwarded.ts"),
-				v = t("./src/reddit/selectors/posts.ts"),
+				v = t("./src/reddit/models/Gold/TopAwarded/index.ts"),
+				w = t("./src/reddit/selectors/gold/topAwarded.ts"),
+				f = t("./src/reddit/selectors/posts.ts"),
 				x = t("./src/reddit/selectors/user.ts"),
 				E = t("./src/reddit/actions/gold/topAwarded.ts"),
 				C = t("./src/reddit/actions/modal.ts"),
 				N = t("./src/reddit/components/AwardBadges/index.tsx"),
 				_ = t("./src/reddit/components/PostTopMeta/index.tsx"),
-				A = t("./src/reddit/controls/Button/index.tsx"),
-				g = t("./src/reddit/controls/LoadingIcon/index.tsx"),
+				g = t("./src/reddit/controls/Button/index.tsx"),
+				A = t("./src/reddit/controls/LoadingIcon/index.tsx"),
 				b = t("./src/reddit/icons/fonts/Gift/index.tsx"),
 				M = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				k = t("./src/reddit/icons/svgs/TopAwarded/index.tsx");
@@ -268,7 +268,7 @@
 				G = t("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				S = t("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
 				D = t.n(S);
-			var X = function(e) {
+			var V = function(e) {
 					const {
 						showScore: a,
 						awarder: t,
@@ -303,9 +303,9 @@
 						className: D.a.coinIcon
 					}), t.score))
 				},
-				V = t("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
-				J = t.n(V);
-			var Z = function(e) {
+				X = t("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
+				Z = t.n(X);
+			var J = function(e) {
 					const {
 						awarders: a,
 						className: t,
@@ -314,12 +314,12 @@
 					if (!a.length) return null;
 					const s = [a[0], a[1] || void 0, a[2] || void 0];
 					return r.a.createElement("div", {
-						className: Object(d.a)(t, J.a.container, {
-							[J.a.flexContainer]: s.length < 3
+						className: Object(d.a)(t, Z.a.container, {
+							[Z.a.flexContainer]: s.length < 3
 						})
-					}, s.map((e, a) => r.a.createElement(X, {
+					}, s.map((e, a) => r.a.createElement(V, {
 						showScore: n,
-						className: J.a.winner,
+						className: Z.a.winner,
 						awarder: e,
 						rank: a + 1,
 						key: a
@@ -339,7 +339,7 @@
 			}
 			const {
 				fbt: Q
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), $ = 7, ee = Object(o.a)(e => e, f.a, f.c, f.e, x.i, (e, a, t, n, r) => {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), $ = 7, ee = Object(o.a)(e => e, w.a, w.c, w.e, x.i, (e, a, t, n, r) => {
 				if (!a) return {
 					anonymousRank: void 0,
 					currentPostId: a,
@@ -350,11 +350,11 @@
 					pending: n,
 					post: null
 				};
-				const s = Object(v.O)(e, {
+				const s = Object(f.O)(e, {
 						postId: a
 					}),
-					o = Object(f.b)(e, a),
-					c = Object(f.d)(e, a),
+					o = Object(w.b)(e, a),
+					c = Object(w.d)(e, a),
 					d = [];
 				let l, i = -1;
 				return c && c.forEach((e, a) => {
@@ -382,18 +382,18 @@
 					currentUser: c,
 					post: d,
 					list: h,
-					pending: f
-				} = e, v = Object(s.c)(), x = Object(p.a)();
+					pending: w
+				} = e, f = Object(s.c)(), x = Object(p.a)();
 				Object(n.useEffect)(() => {
-					t && v(Object(E.a)(t))
-				}, [t, v]), Object(n.useEffect)(() => {
+					t && f(Object(E.a)(t))
+				}, [t, f]), Object(n.useEffect)(() => {
 					t && x(Object(m.c)(t))
 				}, [t, x]);
-				const j = () => v(Object(C.g)(l.a.ECON_TOP_AWARDERS)),
+				const j = () => f(Object(C.g)(l.a.ECON_TOP_AWARDERS)),
 					O = () => {
 						if (t) {
 							const e = Object(i.d)(i.a.GildingFlow, !0);
-							x(Object(m.b)()), v(Object(u.d)({
+							x(Object(m.b)()), f(Object(u.d)({
 								thingId: t,
 								correlationId: e
 							}))
@@ -402,10 +402,10 @@
 				if (!t || !d) return j(), null;
 				const T = c && c.id === d.authorId,
 					y = !d.isGildable || !!T,
-					B = d.topAwardedType === w.a.Active,
-					H = d.topAwardedType === w.a.Inactive,
-					z = !f && !!h && !!h.length,
-					L = !f && h && !h.length && d && B;
+					B = d.topAwardedType === v.a.Active,
+					H = d.topAwardedType === v.a.Inactive,
+					z = !w && !!h && !!h.length,
+					L = !w && h && !h.length && d && B;
 				return r.a.createElement("div", {
 					className: q.a.inner
 				}, r.a.createElement("div", {
@@ -428,7 +428,7 @@
 					hideTopAwardedBadge: !0,
 					tooltipType: _.c.TopAwardedModal,
 					thing: d
-				})), f && r.a.createElement(g.a, {
+				})), w && r.a.createElement(A.a, {
 					className: q.a.loader,
 					sizePx: 60
 				}), z && H && o && 1 === o.rank && r.a.createElement("div", {
@@ -437,7 +437,7 @@
 					hk: "1MxirM"
 				}), r.a.createElement(I, {
 					className: q.a.youWonIcon
-				})), z && r.a.createElement(Z, {
+				})), z && r.a.createElement(J, {
 					className: q.a.winners,
 					awarders: h,
 					showScores: H
@@ -465,7 +465,7 @@
 					className: q.a.infoDesc
 				}, Q._("Award publicly and your username will show up on this leaderboard!", null, {
 					hk: "3reZYa"
-				})), r.a.createElement(A.i, {
+				})), r.a.createElement(g.i, {
 					className: q.a.cta,
 					onClick: O
 				}, r.a.createElement(b.a, {
@@ -479,7 +479,7 @@
 					currentUserId: c && c.id,
 					hideAddAwardButton: y,
 					onGild: O
-				}), !f && B && a && r.a.createElement("div", {
+				}), !w && B && a && r.a.createElement("div", {
 					className: q.a.anonymousRank
 				}, Q._("Anonymous redditors have awarded for {score} Coins", [Q._param("score", a.score.toLocaleString())], {
 					hk: "11BYuy"
@@ -614,7 +614,30 @@
 				stopColor: "#fff",
 				stopOpacity: "0"
 			}))))
+		},
+		"./src/reddit/icons/svgs/Crosspost/index.tsx": function(e, a, t) {
+			"use strict";
+			var n = t("./node_modules/react/index.js"),
+				r = t.n(n);
+
+			function s() {
+				return (s = Object.assign || function(e) {
+					for (var a = 1; a < arguments.length; a++) {
+						var t = arguments[a];
+						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			a.a = e => r.a.createElement("svg", s({
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), r.a.createElement("path", {
+				d: "M9.06,8.64c1.12-1.26,2.2-2.45,4.44-2.6V7.5a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74L15.18,1.7a1,1,0,0,0-1.68.74V4c-3.14.17-4.69,1.88-5.93,3.28C6.58,8.42,6,9,5,9H2a1,1,0,0,0,0,2H5C6.93,11,8,9.82,9.06,8.64Z"
+			}), r.a.createElement("path", {
+				d: "M15.18,11.76a1,1,0,0,0-1.68.74V14c-2.23-.16-3.29-1.32-4.39-2.56-.21-.24-.43-.48-.66-.72a5.63,5.63,0,0,1-1.77,1.06,13.34,13.34,0,0,1,.94,1A7.85,7.85,0,0,0,13.5,16v1.59a1,1,0,0,0,.6.92,1,1,0,0,0,.41.09,1,1,0,0,0,.67-.26l3.16-2.9a.5.5,0,0,0,0-.74Z"
+			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.99ec6059bc30ef9173f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.01875fd2486905282be0.js.map

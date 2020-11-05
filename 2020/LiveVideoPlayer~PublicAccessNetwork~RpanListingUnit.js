@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.57b97c68f1aa1a87bbf1.js
-// Retrieved at 10/29/2020, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.fca23df11900777422d8.js
+// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(t, e, s) {
@@ -546,7 +546,37 @@
 					this.video && this.video.volume !== t && (this.video.volume = t)
 				}
 			}
+		},
+		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx": function(t, e, s) {
+			"use strict";
+			s.d(e, "a", (function() {
+				return a
+			})), s.d(e, "b", (function() {
+				return o
+			}));
+			var i = s("./node_modules/react/index.js"),
+				r = s.n(i);
+			const a = Object(i.createContext)({
+					currentTime: 0,
+					setCurrentTime: () => {},
+					isLive: !1,
+					setIsLive: () => {}
+				}),
+				o = t => {
+					let {
+						children: e
+					} = t;
+					const [s, o] = Object(i.useState)(0), [n, h] = Object(i.useState)(!1), d = {
+						currentTime: s,
+						setCurrentTime: o,
+						isLive: n,
+						setIsLive: h
+					};
+					return r.a.createElement(a.Provider, {
+						value: d
+					}, e)
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.57b97c68f1aa1a87bbf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.fca23df11900777422d8.js.map
