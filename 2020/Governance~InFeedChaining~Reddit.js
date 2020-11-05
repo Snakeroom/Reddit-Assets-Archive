@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.e67722d252fd5b4d8411.js
-// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.3e2bc9d0a47edbe00d78.js
+// Retrieved at 11/5/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -1153,7 +1153,8 @@
 							i = Object(Ce.M)(s(), {
 								identifier: O.belongsTo
 							});
-						if (i && Object(we.a)(s()) && t(Object(a.c)(i.url)), (O.media && O.media.type) === de.o.LIVEVIDEO) {
+						if (i && Object(we.a)(s())) return void t(Object(a.c)(i.url));
+						if ((O.media && O.media.type) === de.o.LIVEVIDEO) {
 							const e = Object(ke.e)(p),
 								s = O.belongsTo.type === te.a.SUBREDDIT,
 								r = e && s ? i.url : "/",
@@ -2176,4 +2177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.e67722d252fd5b4d8411.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.3e2bc9d0a47edbe00d78.js.map

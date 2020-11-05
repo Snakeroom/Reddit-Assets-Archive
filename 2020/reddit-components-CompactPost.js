@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.065c8fce55726696b1bd.js
-// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.31cd4fce74e16fbf00eb.js
+// Retrieved at 11/5/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2069,7 +2069,8 @@
 							o = Object(Te.M)(s(), {
 								identifier: O.belongsTo
 							});
-						if (o && Object(ye.a)(s()) && t(Object(i.c)(o.url)), (O.media && O.media.type) === de.o.LIVEVIDEO) {
+						if (o && Object(ye.a)(s())) return void t(Object(i.c)(o.url));
+						if ((O.media && O.media.type) === de.o.LIVEVIDEO) {
 							const e = Object(je.e)(p),
 								s = O.belongsTo.type === te.a.SUBREDDIT,
 								n = e && s ? o.url : "/",
@@ -14294,4 +14295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.065c8fce55726696b1bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.31cd4fce74e16fbf00eb.js.map
