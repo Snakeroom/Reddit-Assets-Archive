@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.8920dc744d9eca6a8b00.js
-// Retrieved at 11/5/2020, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.342e403144a77ac7c2da.js
+// Retrieved at 11/5/2020, 7:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "Frontpage~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6287,7 +6287,7 @@
 							data: n
 						} : void 0
 					}, this.makeFlairFilterWidget = () => {
-						if (this.props.communityFlairSortedKeys) return Object.assign(Object.assign({}, this.getPostFlairWidget()), {
+						if (this.props.communityFlairSortedKeys && this.props.communityFlairSortedKeys.length) return Object.assign(Object.assign({}, this.getPostFlairWidget()), {
 							id: "post-flair-widget",
 							kind: "post-flair",
 							order: this.props.communityFlairSortedKeys,
@@ -10558,4 +10558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8920dc744d9eca6a8b00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.342e403144a77ac7c2da.js.map
