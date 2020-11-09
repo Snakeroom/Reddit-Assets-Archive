@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/schedulePickerModal.23d6c3fad855d31576e0.js
-// Retrieved at 10/21/2020, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/schedulePickerModal.ed1dbf0a657ba2b9e8e5.js
+// Retrieved at 11/9/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["schedulePickerModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -907,7 +907,7 @@
 					let t = null;
 					e.frequency && (t = e.frequency), (e.byWeekDays.length > 1 || e.byMonthDays.length > 1 || e.interval > 1) && (t = m.b);
 					const n = Object(c.f)(e.publishAt),
-						a = Object(m.p)(n.getDay()),
+						a = Object(m.q)(n.getDay()),
 						s = n.getDate();
 					return 1 === e.byWeekDays.length && e.byWeekDays[0] !== a && (t = m.b), 1 === e.byMonthDays.length && e.byMonthDays[0] !== s && (t = m.b), {
 						recurrenceInfo: e.frequency ? {
@@ -949,4 +949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.23d6c3fad855d31576e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.ed1dbf0a657ba2b9e8e5.js.map

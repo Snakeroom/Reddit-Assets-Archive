@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.f738f935a0135b9ff5aa.js
-// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.77a23bcfd41958530f27.js
+// Retrieved at 11/9/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -9217,7 +9217,7 @@
 		},
 		"./src/reddit/models/ScheduledPost/index.ts": function(t, e, n) {
 			"use strict";
-			n.d(e, "q", (function() {
+			n.d(e, "r", (function() {
 				return o
 			})), n.d(e, "a", (function() {
 				return c
@@ -9225,15 +9225,15 @@
 				return a
 			})), n.d(e, "g", (function() {
 				return u
-			})), n.d(e, "m", (function() {
-				return l
 			})), n.d(e, "n", (function() {
+				return l
+			})), n.d(e, "o", (function() {
 				return b
 			})), n.d(e, "f", (function() {
 				return p
 			})), n.d(e, "c", (function() {
 				return m
-			})), n.d(e, "p", (function() {
+			})), n.d(e, "q", (function() {
 				return _
 			})), n.d(e, "k", (function() {
 				return g
@@ -9245,12 +9245,14 @@
 				return y
 			})), n.d(e, "d", (function() {
 				return S
-			})), n.d(e, "b", (function() {
+			})), n.d(e, "m", (function() {
 				return T
-			})), n.d(e, "l", (function() {
+			})), n.d(e, "b", (function() {
 				return h
-			})), n.d(e, "o", (function() {
+			})), n.d(e, "l", (function() {
 				return I
+			})), n.d(e, "p", (function() {
+				return C
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/lib/assertNever.ts"),
@@ -9294,8 +9296,18 @@
 			! function(t) {
 				t.Hourly = "HOURLY", t.Daily = "DAILY", t.Weekly = "WEEKLY", t.Monthly = "MONTHLY"
 			}(S || (S = {}));
-			const T = "custom",
-				h = t => {
+			const T = t => {
+					switch (t) {
+						case S.Hourly:
+						case S.Daily:
+						case S.Weekly:
+						case S.Monthly:
+							return !0
+					}
+					return !1
+				},
+				h = "custom",
+				I = t => {
 					switch (t) {
 						case "isNsfw":
 							return "mark_as_nsfw";
@@ -9315,7 +9327,7 @@
 							return Object(s.a)(t)
 					}
 				},
-				I = t => "frequency" in t && !!t.frequency
+				C = t => "frequency" in t && !!t.frequency
 		},
 		"./src/reddit/models/Tags/index.ts": function(t, e, n) {
 			"use strict";
@@ -11156,4 +11168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.f738f935a0135b9ff5aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.77a23bcfd41958530f27.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.7421f89207adc24a3370.js
-// Retrieved at 11/1/2020, 10:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.98052f76b6f8145fd391.js
+// Retrieved at 11/9/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ScheduledPost-PostSchedulePickerModal"], {
 		"./src/reddit/components/ScheduledPost/PostSchedulePickerModal/index.m.less": function(e, t, n) {
@@ -37,8 +37,8 @@
 				}) : l.fbt._("Not a sticky post", null, {
 					hk: "42KLHI"
 				}),
-				y = [null, "CONFIDENCE", "NEW", "TOP", "CONTROVERSIAL", "OLD", "QA"],
-				S = {
+				S = [null, "CONFIDENCE", "NEW", "TOP", "CONTROVERSIAL", "OLD", "QA"],
+				y = {
 					CONFIDENCE: () => l.fbt._("Best", null, {
 						hk: "2Fg1Gn"
 					}),
@@ -63,7 +63,7 @@
 						hk: "3skj2X"
 					});
 					if (!e) return t;
-					const n = S[e];
+					const n = y[e];
 					return n ? n() : t
 				};
 			class g extends o.a.Component {
@@ -77,10 +77,10 @@
 						onSuggestedSortChange: c,
 						stickyPosition: r,
 						suggestedSort: i
-					} = this.props, m = y.map(e => ({
+					} = this.props, m = S.map(e => ({
 						value: e,
 						displayText: C(e)
-					})), S = p.map(e => ({
+					})), y = p.map(e => ({
 						value: e,
 						displayText: b(e)
 					}));
@@ -91,7 +91,7 @@
 						className: h.a.dropdownSelector
 					}), o.a.createElement(d.b, {
 						displayText: b(r),
-						options: S,
+						options: y,
 						onSelect: e => a(e.value),
 						className: h.a.dropdownSelector
 					}), o.a.createElement("label", {
@@ -114,15 +114,15 @@
 				}
 			}
 			var f = g,
-				k = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
-				x = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
+				x = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
+				k = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
 				D = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimezoneSelector/index.tsx"),
-				O = n("./src/reddit/components/ScheduledPost/SchedulePicker/DateTimePicker/index.m.less"),
-				P = n.n(O);
+				P = n("./src/reddit/components/ScheduledPost/SchedulePicker/DateTimePicker/index.m.less"),
+				O = n.n(P);
 			const {
 				fbt: v
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class M extends o.a.Component {
+			class E extends o.a.Component {
 				render() {
 					const {
 						maxDate: e,
@@ -133,27 +133,27 @@
 						submitTime: c,
 						timezoneName: r
 					} = this.props;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(k.a, {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(x.a, {
 						max: e,
 						onChange: t,
 						value: a
-					}), o.a.createElement(x.a, {
+					}), o.a.createElement(k.a, {
 						onChange: n,
 						value: c,
-						className: P.a.timeInput
+						className: O.a.timeInput
 					}), o.a.createElement("label", {
-						className: P.a.timezoneLabel
+						className: O.a.timezoneLabel
 					}, v._("Time zone:", null, {
 						hk: "6skzv"
 					}), o.a.createElement(D.a, {
 						selectedTimezoneName: r,
 						onChange: s,
-						className: P.a.timezoneSelector
+						className: O.a.timezoneSelector
 					})))
 				}
 			}
-			var E = M,
-				_ = n("./src/lib/timezone/index.ts"),
+			var _ = E,
+				M = n("./src/lib/timezone/index.ts"),
 				N = n("./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.tsx"),
 				j = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.tsx"),
 				I = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/index.tsx"),
@@ -161,8 +161,8 @@
 				T = n("./src/reddit/controls/NumberInput/index.tsx"),
 				F = n("./src/reddit/helpers/scheduledPosts/index.ts"),
 				q = n("./src/reddit/models/ScheduledPost/index.ts"),
-				W = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyPicker/index.m.less"),
-				R = n.n(W);
+				R = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyPicker/index.m.less"),
+				W = n.n(R);
 			const {
 				fbt: z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -181,20 +181,20 @@
 						submitTime: d
 					} = this.props, u = r && e === q.b, m = u && r.frequency === q.d.Weekly, h = u && r.frequency === q.d.Monthly;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(j.a, {
-						className: R.a.frequencyOptionSelector,
+						className: W.a.frequencyOptionSelector,
 						selectedFrequencyOption: e,
-						submitDate: Object(_.f)(Object(F.a)(i, d)),
+						submitDate: Object(M.f)(Object(F.a)(i, d)),
 						onSelect: c
 					}), u && o.a.createElement("div", null, o.a.createElement("hr", {
-						className: R.a.customControlsHr
+						className: W.a.customControlsHr
 					}), o.a.createElement("div", {
-						className: R.a.marginBottom24
+						className: W.a.marginBottom24
 					}, z._("Repeat every {Numeric input: Select repeat cadence}", [z._param("Numeric input: Select repeat cadence", o.a.createElement(T.a, {
 						min: 1,
 						step: 1,
 						onChange: n,
 						value: r.interval,
-						className: R.a.customIntervalInput
+						className: W.a.customIntervalInput
 					}))], {
 						hk: "3pWn0k"
 					}), o.a.createElement(N.a, {
@@ -225,11 +225,11 @@
 			class U extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.maxDate = Object(r.a)(), this._onSubmitDateChange = Object(H.l)(this), this.onSubmitDateChange = e => {
-						this.props.sendEvent(Object(G.q)()), this._onSubmitDateChange(e)
+						this.props.sendEvent(Object(G.m)()), this._onSubmitDateChange(e)
 					}, this._onSubmitTimeChange = Object(H.m)(this), this.onSubmitTimeChange = e => {
-						this.props.sendEvent(Object(G.t)()), this._onSubmitTimeChange(e)
+						this.props.sendEvent(Object(G.p)()), this._onSubmitTimeChange(e)
 					}, this._onTimezoneChange = Object(H.o)(this), this.onTimezoneChange = e => {
-						this.props.sendEvent(Object(G.u)()), this._onTimezoneChange(e)
+						this.props.sendEvent(Object(G.q)()), this._onTimezoneChange(e)
 					}, this.buildPostSchedule = Object(H.a)(this), this.onFrequencyOptionChange = Object(H.i)(this), this.onContestModeChange = Object(H.d)(this), this.onCustomFrequencyChange = Object(H.e)(this), this.onCustomIntervalChange = Object(H.f)(this), this.onCustomWeekDaysChange = Object(H.h)(this), this.onCustomMonthDaysChange = Object(H.g)(this), this.onPostAsMetaModChange = Object(H.j)(this), this.onStickyPositionChange = Object(H.k)(this), this.onSuggestedSortChange = Object(H.n)(this), this.getValidationError = Object(H.b)(this), this.onApplyClick = () => {
 						const {
 							isContestMode: e,
@@ -257,7 +257,7 @@
 					}, this.state = Object(H.c)(e)
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(G.D)())
+					this.props.sendEvent(Object(G.y)())
 				}
 				renderModalMainContents() {
 					const {
@@ -280,7 +280,7 @@
 						className: J.a.timeLegend
 					}, Q._("Submit Time", null, {
 						hk: "1YyF9n"
-					})), o.a.createElement(E, {
+					})), o.a.createElement(_, {
 						maxDate: this.maxDate,
 						onSubmitDateChange: this.onSubmitDateChange,
 						onSubmitTimeChange: this.onSubmitTimeChange,
@@ -425,7 +425,7 @@
 			});
 			class h extends o.a.PureComponent {
 				componentDidMount() {
-					this.props.sendEvent(Object(r.A)())
+					this.props.sendEvent(Object(r.v)())
 				}
 				render() {
 					const {
@@ -559,7 +559,7 @@
 			! function(e) {
 				e.Default = "default", e.Custom = "custom"
 			}(b || (b = {}));
-			const y = e => ({
+			const S = e => ({
 				[b.Default]: h._("Monthly on {submit day} day", [h._param("submit day", Object(c.a)(e))], {
 					hk: "nXxbI"
 				}),
@@ -567,7 +567,7 @@
 					hk: "1l9xD9"
 				})
 			});
-			class S extends o.a.PureComponent {
+			class y extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.onDropdownChange = e => {
 						const t = e.value;
@@ -601,7 +601,7 @@
 				render() {
 					const {
 						selectedOption: e
-					} = this.state, t = y(this.props.submitDay), n = Object.keys(t).map(e => ({
+					} = this.state, t = S(this.props.submitDay), n = Object.keys(t).map(e => ({
 						displayText: t[e],
 						value: e
 					}));
@@ -627,7 +627,7 @@
 					}))))
 				}
 			}
-			t.a = S
+			t.a = y
 		},
 		"./src/reddit/components/ScheduledPost/SchedulePicker/WeekDaysCheckboxes/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -710,8 +710,8 @@
 				h = n("./src/reddit/controls/NumberInput/index.tsx"),
 				p = n("./src/reddit/helpers/scheduledPosts/index.ts"),
 				b = n("./src/reddit/models/ScheduledPost/index.ts"),
-				y = n("./src/reddit/components/ScheduledPost/SchedulePicker/index.m.less"),
-				S = n.n(y);
+				S = n("./src/reddit/components/ScheduledPost/SchedulePicker/index.m.less"),
+				y = n.n(S);
 			const {
 				fbt: C
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -722,61 +722,61 @@
 						maxDate: t,
 						onCustomFrequencyChange: n,
 						onCustomIntervalChange: s,
-						onCustomMonthDaysChange: y,
+						onCustomMonthDaysChange: S,
 						onCustomWeekDaysChange: g,
 						onFrequencyOptionChange: f,
-						onSubmitDateChange: k,
-						onSubmitTimeChange: x,
+						onSubmitDateChange: x,
+						onSubmitTimeChange: k,
 						onTimezoneChange: D,
-						recurrenceInfo: O,
-						submitDate: P,
+						recurrenceInfo: P,
+						submitDate: O,
 						submitMonthDay: v,
-						submitTime: M,
-						timezoneName: E
-					} = this.props, _ = O && e === b.b, N = _ && O.frequency === b.d.Weekly, j = _ && O.frequency === b.d.Monthly;
+						submitTime: E,
+						timezoneName: _
+					} = this.props, M = P && e === b.b, N = M && P.frequency === b.d.Weekly, j = M && P.frequency === b.d.Monthly;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(c.a, {
 						max: t,
-						onChange: k,
-						value: P
-					}), o.a.createElement(r.a, {
 						onChange: x,
-						value: M,
-						className: S.a.timeInput
+						value: O
+					}), o.a.createElement(r.a, {
+						onChange: k,
+						value: E,
+						className: y.a.timeInput
 					}), o.a.createElement("label", {
-						className: S.a.timezoneLabel
+						className: y.a.timezoneLabel
 					}, C._("Time zone:", null, {
 						hk: "6skzv"
 					}), o.a.createElement(i.a, {
-						selectedTimezoneName: E,
+						selectedTimezoneName: _,
 						onChange: D,
-						className: S.a.timezoneSelector
+						className: y.a.timezoneSelector
 					})), o.a.createElement(d.a, {
-						className: S.a.frequencyOptionSelector,
+						className: y.a.frequencyOptionSelector,
 						selectedFrequencyOption: e,
-						submitDate: Object(a.f)(Object(p.a)(P, this.props.submitTime)),
+						submitDate: Object(a.f)(Object(p.a)(O, this.props.submitTime)),
 						onSelect: f
-					}), _ && o.a.createElement("div", null, o.a.createElement("hr", {
-						className: S.a.customControlsHr
+					}), M && o.a.createElement("div", null, o.a.createElement("hr", {
+						className: y.a.customControlsHr
 					}), o.a.createElement("div", {
-						className: S.a.marginBottom24
+						className: y.a.marginBottom24
 					}, C._("Repeat every", null, {
 						hk: "1tE86M"
 					}), o.a.createElement(h.a, {
 						min: 1,
 						step: 1,
 						onChange: s,
-						value: O.interval,
-						className: S.a.customIntervalInput
+						value: P.interval,
+						className: y.a.customIntervalInput
 					}), o.a.createElement(l.a, {
-						selectedFrequency: O.frequency,
+						selectedFrequency: P.frequency,
 						onSelect: n
 					})), N && o.a.createElement(m.a, {
-						selectedWeekDays: O.byWeekDays.map(b.j),
+						selectedWeekDays: P.byWeekDays.map(b.j),
 						onChange: g
 					}), j && o.a.createElement(u.a, {
 						submitDay: v,
-						selectedMonthDays: O.byMonthDays,
-						onChange: y
+						selectedMonthDays: P.byMonthDays,
+						onChange: S
 					})))
 				}
 			}
@@ -787,31 +787,31 @@
 			n.d(t, "a", (function() {
 				return d
 			})), n.d(t, "l", (function() {
-				return m
+				return u
 			})), n.d(t, "m", (function() {
-				return h
+				return m
 			})), n.d(t, "o", (function() {
-				return p
+				return h
 			})), n.d(t, "i", (function() {
-				return b
+				return p
 			})), n.d(t, "e", (function() {
-				return y
+				return b
 			})), n.d(t, "f", (function() {
 				return S
 			})), n.d(t, "h", (function() {
-				return C
+				return y
 			})), n.d(t, "g", (function() {
-				return g
+				return C
 			})), n.d(t, "b", (function() {
-				return f
+				return g
 			})), n.d(t, "k", (function() {
-				return k
+				return f
 			})), n.d(t, "n", (function() {
 				return x
 			})), n.d(t, "d", (function() {
-				return D
+				return k
 			})), n.d(t, "j", (function() {
-				return O
+				return D
 			})), n.d(t, "c", (function() {
 				return P
 			}));
@@ -820,14 +820,9 @@
 				a = n("./src/lib/timezone/index.ts"),
 				c = n("./src/reddit/helpers/scheduledPosts/index.ts"),
 				r = n("./src/reddit/helpers/trackers/scheduledPosts.ts"),
-				i = n("./src/reddit/models/ScheduledPost/index.ts");
-			const l = {
-					frequency: i.d.Hourly,
-					interval: 1,
-					byMonthDays: [],
-					byWeekDays: []
-				},
-				d = e => () => {
+				i = n("./src/reddit/models/ScheduledPost/index.ts"),
+				l = n("./src/reddit/components/ScheduledPost/SchedulePicker/helpers.ts");
+			const d = e => () => {
 					const {
 						submitDate: t,
 						submitTime: n,
@@ -842,65 +837,40 @@
 						recurrenceInfo: a ? Object.assign({}, a) : null
 					}
 				},
-				u = (e, t, n) => e.state.recurrenceInfo ? 1 === e.state.recurrenceInfo.byWeekDays.length && e.state.recurrenceInfo.byWeekDays[0] === e.state.submitWeekDay ? Object.assign(Object.assign({}, e.state.recurrenceInfo), {
-					byWeekDays: [t]
-				}) : 1 === e.state.recurrenceInfo.byMonthDays.length && e.state.recurrenceInfo.byMonthDays[0] === e.state.submitMonthDay ? Object.assign(Object.assign({}, e.state.recurrenceInfo), {
-					byMonthDays: [n]
-				}) : Object.assign({}, e.state.recurrenceInfo) : null,
-				m = e => t => {
+				u = e => t => {
 					const n = Object(a.f)(Object(c.a)(t, e.state.submitTime)),
-						s = Object(i.p)(n.getDay()),
+						s = Object(i.q)(n.getDay()),
 						o = n.getDate();
 					e.setState({
 						submitDate: t,
 						submitWeekDay: s,
 						submitMonthDay: o,
-						recurrenceInfo: u(e, s, o)
+						recurrenceInfo: Object(l.b)(new Date(n), e.state.frequencyOption, e.state.recurrenceInfo)
 					})
 				},
-				h = e => t => {
+				m = e => t => {
 					e.setState({
 						submitTime: t
 					})
 				},
-				p = e => t => {
+				h = e => t => {
 					e.setState({
 						timezoneName: t
 					})
 				},
-				b = e => t => {
+				p = e => t => {
 					const {
-						submitWeekDay: n,
-						submitMonthDay: s
+						submitDate: n,
+						submitTime: s
 					} = e.state, {
 						sendEvent: o
-					} = e.props;
-					let a = Object.assign({}, l);
-					switch (t) {
-						case null:
-							o(Object(r.k)()), a = null;
-							break;
-						case i.d.Monthly:
-							o(Object(r.j)()), a.frequency = t, a.byMonthDays = [s];
-							break;
-						case i.d.Weekly:
-							o(Object(r.w)()), a.frequency = t, a.byWeekDays = [n];
-							break;
-						case i.d.Hourly:
-							o(Object(r.i)()), a.frequency = t;
-							break;
-						case i.d.Daily:
-							o(Object(r.e)()), a.frequency = t;
-							break;
-						case i.b:
-							o(Object(r.d)())
-					}
-					e.setState({
+					} = e.props, i = Object(a.f)(Object(c.a)(n, s)), d = Object(l.b)(new Date(i), t);
+					o(Object(r.g)(t)), e.setState({
 						frequencyOption: t,
-						recurrenceInfo: a
+						recurrenceInfo: d
 					})
 				},
-				y = e => t => {
+				b = e => t => {
 					const {
 						submitWeekDay: n,
 						submitMonthDay: s
@@ -918,21 +888,21 @@
 						})
 					})
 				},
-				C = e => t => {
+				y = e => t => {
 					e.state.recurrenceInfo && e.setState({
 						recurrenceInfo: Object.assign(Object.assign({}, e.state.recurrenceInfo), {
 							byWeekDays: t.map(i.h)
 						})
 					})
 				},
-				g = e => t => {
+				C = e => t => {
 					e.state.recurrenceInfo && e.setState({
 						recurrenceInfo: Object.assign(Object.assign({}, e.state.recurrenceInfo), {
 							byMonthDays: t
 						})
 					})
 				},
-				f = e => () => {
+				g = e => () => {
 					const {
 						submitDate: t,
 						submitTime: n
@@ -951,7 +921,7 @@
 					}
 					return null
 				},
-				k = e => t => {
+				f = e => t => {
 					e.setState({
 						stickyPosition: t
 					})
@@ -961,35 +931,27 @@
 						suggestedSort: t
 					})
 				},
-				D = e => t => {
+				k = e => t => {
 					e.setState({
 						isContestMode: t
 					})
 				},
-				O = e => t => {
+				D = e => t => {
 					e.setState({
 						isPostAsMetaMod: t
 					})
 				},
 				P = e => {
-					const t = e.schedule || (() => {
-							const e = new Date;
-							return e.setMinutes(60), {
-								submitDate: Object(a.g)(e),
-								timezoneName: Object(a.b)() || a.a,
-								frequencyOption: null,
-								recurrenceInfo: null
-							}
-						})(),
+					const t = e.schedule || Object(l.c)(),
 						[n, s] = Object(c.i)(t.submitDate),
 						o = Object(a.f)(t.submitDate),
 						r = o.getDate(),
-						l = Object(i.p)(o.getDay());
+						d = Object(i.q)(o.getDay());
 					return {
 						isContestMode: e.isContestMode || !1,
 						isPostAsMetaMod: e.isPostAsMetaMod,
 						submitDate: n,
-						submitWeekDay: l,
+						submitWeekDay: d,
 						submitMonthDay: r,
 						submitTime: s,
 						timezoneName: t.timezoneName,
@@ -1267,4 +1229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.7421f89207adc24a3370.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.98052f76b6f8145fd391.js.map
