@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.1a1499d963cd19655a9b.js
-// Retrieved at 10/29/2020, 6:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.1acd86811386ff88a052.js
+// Retrieved at 11/9/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -1121,31 +1121,34 @@
 						if (!i || !e) return;
 						const {
 							ruleId: l,
-							ruleType: a
-						} = e, c = "comment" === i ? r : n, d = {
+							ruleType: a,
+							customRule: c
+						} = e, d = "comment" === i ? r : n, u = {
 							fromHelpDesk: !1,
-							["".concat(i, "Id")]: c
+							["".concat(i, "Id")]: d
 						};
 						switch (a) {
 							case "site":
-								d.siteRule = s()(t, l.ref);
+								const e = s()(t, l.ref);
+								u.siteRule = e.value;
 								break;
 							case "subreddit":
-								d.subredditRule = s()(t, l.ref);
-								break;
-							case "custom":
 							default:
-								d.customRule = s()(t, l.ref)
+								const o = s()(t, l.ref);
+								if ("other" === o && c) {
+									const e = s()(t, c.ref);
+									u.customRule = e.value
+								} else u.subredditRule = o
 						}
 						switch (i) {
 							case "post":
 								await C(o(), {
-									input: d
+									input: u
 								});
 								break;
 							case "comment":
 								await R(o(), {
-									input: d
+									input: u
 								});
 								break;
 							default:
@@ -1421,4 +1424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.1a1499d963cd19655a9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.1acd86811386ff88a052.js.map
