@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.8bfbe5dd16b99209d9df.js
-// Retrieved at 11/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d54f21652ca5f54abb6a.js
+// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, s) {},
@@ -2443,7 +2443,7 @@
 						const a = s().posts.instances[l] ? e.queryParams.instanceId : D.postId;
 						t(Object(p.b)(a))
 					}
-					I ? Object(A.d)(s(), t, e) : Object(A.e)(s(), t, e), Object(k.t)(s(), !0)
+					I ? Object(A.d)(s(), t, e) : Object(A.e)(s(), t, e), Object(k.u)(s(), !0)
 				}, J = "PAGE__COLLECTIONCOMMENTSPAGE_LOADED_FULL", z = Object(n.a)(J), X = (e, t, s, n) => async (r, c, i) => {
 					const o = Object(a.a)(e, t, s, n),
 						d = c();
@@ -2960,7 +2960,7 @@
 					const n = [t(a.z()), t(Object(r.d)(e.params.profileName))];
 					await Promise.all(n);
 					const l = Object(d.i)(s());
-					l ? (await t(Object(r.b)(Object(o.e)(l))), t(u()), Object(i.n)(s(), !0)) : Object(c.a)(t, s())
+					l ? (await t(Object(r.b)(Object(o.e)(l))), t(u()), Object(i.o)(s(), !0)) : Object(c.a)(t, s())
 				}
 		},
 		"./src/reddit/actions/pages/profileOverview.ts": function(e, t, s) {
@@ -28591,4 +28591,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.8bfbe5dd16b99209d9df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d54f21652ca5f54abb6a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.5ded07099fbdf67bafae.js
-// Retrieved at 10/21/2020, 7:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.30ea6bc11ff0d9a90009.js
+// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/pages/modQueue/index.ts": function(e, t, r) {
@@ -8,8 +8,8 @@
 				return m
 			}));
 			var s = r("./node_modules/lodash/get.js"),
-				d = r.n(s),
-				i = r("./src/lib/constants/index.ts"),
+				i = r.n(s),
+				d = r("./src/lib/constants/index.ts"),
 				o = r("./src/lib/pageTitle.ts"),
 				n = r("./src/reddit/helpers/makeModQueueListingKey/index.ts"),
 				c = r("./src/reddit/helpers/pageActionLoginRedirect.ts"),
@@ -33,16 +33,16 @@
 					}),
 					Q = g.modQueue[m].itemOrder[A],
 					L = !!(Q && Q[_] && Q[_].length),
-					h = g.modQueue[m].api.error;
-				if (g.modQueue[m].api.pending || L && !h) return;
+					j = g.modQueue[m].api.error;
+				if (g.modQueue[m].api.pending || L && !j) return;
 				Object(l.p)(g) || await Object(a.e)(A, m, O)(t, r, s);
-				const j = r();
-				if (d()(j.modQueue[m].api.error, "type") === i.E.AUTHENTICATION_ERROR) return Object(c.a)(t, j);
-				Object(u.h)(j, m, f, b), t(p.l({
+				const y = r();
+				if (i()(y.modQueue[m].api.error, "type") === d.E.AUTHENTICATION_ERROR) return Object(c.a)(t, y);
+				Object(u.i)(y, m, f, b), t(p.l({
 					title: Object(o.d)()
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.5ded07099fbdf67bafae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.30ea6bc11ff0d9a90009.js.map

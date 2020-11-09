@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.3dcd7760b13e4cce2089.js
-// Retrieved at 11/9/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.0f91736eca4c089d5bc7.js
+// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2631,29 +2631,33 @@
 		"./src/reddit/actions/redditEmbed.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return a
+				return d
 			})), s.d(t, "a", (function() {
-				return c
+				return l
 			})), s.d(t, "c", (function() {
-				return m
+				return b
 			}));
-			var n = s("./src/lib/makeActionCreator/index.ts"),
-				o = s("./src/reddit/actions/tabBadging.ts"),
-				r = s("./src/reddit/endpoints/me/index.ts"),
-				i = s("./src/reddit/helpers/pageActionLoginRedirect.ts");
-			const a = "REDDIT_EMBED_LOADED",
-				c = "REDDIT_EMBED_FAILED",
-				d = Object(n.a)("REDDIT_EMBED_PENDING"),
-				l = Object(n.a)(a),
-				u = Object(n.a)(c),
-				m = (e, t) => async (e, s, n) => {
+			var n = s("./src/lib/constants/index.ts"),
+				o = s("./src/lib/makeActionCreator/index.ts"),
+				r = s("./src/reddit/actions/tabBadging.ts"),
+				i = s("./src/reddit/endpoints/me/index.ts"),
+				a = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				c = s("./src/reddit/helpers/trackers/screenview.ts");
+			const d = "REDDIT_EMBED_LOADED",
+				l = "REDDIT_EMBED_FAILED",
+				u = Object(o.a)("REDDIT_EMBED_PENDING"),
+				m = Object(o.a)(d),
+				p = Object(o.a)(l),
+				b = (e, t) => async (e, s, n) => {
 					let {
-						apiContext: a
+						apiContext: o
 					} = n;
 					const c = s();
-					e(d());
-					const m = await Object(r.a)(a());
-					m.ok && m.body ? !t || m.body.account ? (e(l(m.body)), e(Object(o.c)())) : Object(i.a)(e, c) : e(u(m.error))
+					e(u());
+					const d = await Object(i.a)(o());
+					d.ok && d.body ? !t || d.body.account ? (e(m(d.body)), e(Object(r.c)()), h(c)) : Object(a.a)(e, c) : e(p(d.error))
+				}, h = e => {
+					e.platform.currentPage && e.platform.currentPage.routeMatch && e.platform.currentPage.routeMatch.route && e.platform.currentPage.routeMatch.route.meta && e.platform.currentPage.routeMatch.route.meta.name && e.platform.currentPage.routeMatch.route.meta.name === n.Bb.INBOX_PAGES && Object(c.g)(e)
 				}
 		},
 		"./src/reddit/actions/shortcuts/active.ts": function(e, t, s) {
@@ -14267,4 +14271,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.3dcd7760b13e4cce2089.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.0f91736eca4c089d5bc7.js.map

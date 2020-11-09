@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c6020c36832aed0aa83f.js
-// Retrieved at 11/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.0d462f0bb82a3b25cc3c.js
+// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -11518,7 +11518,7 @@
 							const e = Object(Qt.b)(c, s, Object(Gt.a)(s));
 							if (e && k.c.has(e)) {
 								const t = k.c.end(e);
-								!Object(qt.i)(s) && Object(Ut.b)(qe.a.IsOverlay) || Object(Wt.i)(c, s, w.TimerType.UserCancelled, t)
+								!Object(qt.i)(s) && Object(Ut.b)(qe.a.IsOverlay) || Object(Wt.j)(c, s, w.TimerType.UserCancelled, t)
 							}
 						}
 						const d = n.payload.routeMatch;
@@ -11957,7 +11957,7 @@
 								Object(r.g)(i, t, o)
 							}
 							const a = P.a.timing.domInteractive - P.a.timing.navigationStart;
-							Object(Wt.i)(o.routeMatch, d.getState(), w.TimerType.Initial, a);
+							Object(Wt.j)(o.routeMatch, d.getState(), w.TimerType.Initial, a);
 							const i = Object(f.a)(window.location.href);
 							i && i.get(Qe.a) && history.replaceState(history.state, "", Object(v.a)(window.location.href, [Qe.a])), Object(E.a)(i.get(Qe.y)) && d.dispatch(Object(Q.e)({
 								kind: vn.b.SuccessCommunity,
@@ -14262,4 +14262,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", 0, "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "ModListing~Reddit", "Reddit~reddit-components-MediumPost"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c6020c36832aed0aa83f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0d462f0bb82a3b25cc3c.js.map

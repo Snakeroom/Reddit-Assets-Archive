@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.f156c502d098e399a2b3.js
-// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.3983803703e418640e4b.js
+// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -7337,48 +7337,50 @@
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "i", (function() {
+			n.d(t, "j", (function() {
 				return j
 			})), n.d(t, "f", (function() {
 				return E
-			})), n.d(t, "o", (function() {
-				return h
 			})), n.d(t, "p", (function() {
-				return I
-			})), n.d(t, "m", (function() {
-				return S
+				return h
 			})), n.d(t, "q", (function() {
+				return I
+			})), n.d(t, "n", (function() {
+				return S
+			})), n.d(t, "r", (function() {
 				return T
 			})), n.d(t, "c", (function() {
 				return y
-			})), n.d(t, "j", (function() {
-				return A
-			})), n.d(t, "n", (function() {
-				return D
-			})), n.d(t, "g", (function() {
-				return v
-			})), n.d(t, "h", (function() {
-				return P
-			})), n.d(t, "b", (function() {
-				return C
-			})), n.d(t, "a", (function() {
-				return w
-			})), n.d(t, "l", (function() {
-				return k
 			})), n.d(t, "k", (function() {
+				return A
+			})), n.d(t, "o", (function() {
+				return D
+			})), n.d(t, "h", (function() {
+				return v
+			})), n.d(t, "i", (function() {
+				return P
+			})), n.d(t, "g", (function() {
+				return R
+			})), n.d(t, "b", (function() {
+				return w
+			})), n.d(t, "a", (function() {
+				return k
+			})), n.d(t, "m", (function() {
 				return L
-			})), n.d(t, "r", (function() {
-				return U
-			})), n.d(t, "u", (function() {
-				return M
-			})), n.d(t, "e", (function() {
-				return G
-			})), n.d(t, "d", (function() {
-				return F
+			})), n.d(t, "l", (function() {
+				return x
 			})), n.d(t, "s", (function() {
+				return M
+			})), n.d(t, "v", (function() {
+				return G
+			})), n.d(t, "e", (function() {
+				return V
+			})), n.d(t, "d", (function() {
 				return B
 			})), n.d(t, "t", (function() {
 				return W
+			})), n.d(t, "u", (function() {
+				return H
 			}));
 			n("./node_modules/core-js/modules/es6.array.sort.js"), n("./node_modules/core-js/modules/es6.regexp.match.js");
 			var s = n("./src/lib/constants/index.ts"),
@@ -7481,7 +7483,7 @@
 						}
 						case s.Bb.SETTINGS: {
 							const r = e;
-							Object(g.a)(N(n, c)(t)), r.match.params.page === s.Ob.Profile && Object(a.j)(t);
+							Object(g.a)(U(n, c)(t)), r.match.params.page === s.Ob.Profile && Object(a.j)(t);
 							break
 						}
 						case s.Bb.POST_CREATION:
@@ -7491,20 +7493,20 @@
 								draftId: s
 							} = e.match.params, o = Object(r.a)(e.match.params);
 							if (!o) return;
-							R(t, o, s, n, c);
+							C(t, o, s, n, c);
 							break
 						}
 						case s.Bb.SUBREDDIT_WIKI:
-							Object(g.a)(V(n, c)(t));
+							Object(g.a)(F(n, c)(t));
 							break;
 						case s.Bb.COINS:
-							Object(g.a)(C(n, c)(t)), Object(g.a)(w()(t));
+							Object(g.a)(w(n, c)(t)), Object(g.a)(k()(t));
 							break;
 						case s.Bb.PREMIUM:
-							Object(g.a)(k(n, c)(t)), Object(g.a)(L()(t));
+							Object(g.a)(L(n, c)(t)), Object(g.a)(x()(t));
 							break;
 						case s.Bb.APPEAL:
-							Object(g.a)(x(n, c)(t))
+							Object(g.a)(N(n, c)(t))
 					}
 				},
 				E = (e, t, n, s, r, o) => i => {
@@ -7705,7 +7707,16 @@
 						adblock: O.adblock(e)
 					}))
 				},
-				R = (e, t, n, s, r) => {
+				R = e => {
+					Object(g.a)(Object.assign(Object.assign({
+						source: "global",
+						action: "view",
+						noun: "screen"
+					}, O.defaults(e)), {
+						actionInfo: O.actionInfo(e)
+					}))
+				},
+				C = (e, t, n, s, r) => {
 					const o = e.creations.api.page.pending[t],
 						i = !e.creations.api.page.error[t] && !o && !!n,
 						a = Object(p.h)(e, n);
@@ -7723,7 +7734,7 @@
 						adblock: O.adblock(e)
 					}), a ? Object(c.m)(e, a) : {}))
 				},
-				C = (e, t) => n => Object.assign(Object.assign({
+				w = (e, t) => n => Object.assign(Object.assign({
 					source: "coins_marketing",
 					action: "view",
 					noun: "page",
@@ -7732,12 +7743,12 @@
 					timer: O.timer(e, t),
 					adblock: O.adblock(n)
 				}),
-				w = () => e => Object.assign({
+				k = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, O.defaults(e)),
-				k = (e, t) => n => Object.assign(Object.assign({
+				L = (e, t) => n => Object.assign(Object.assign({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
@@ -7746,42 +7757,42 @@
 					timer: O.timer(e, t),
 					adblock: O.adblock(n)
 				}),
-				L = () => e => Object.assign({
+				x = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, O.defaults(e)),
-				x = (e, t) => n => Object.assign(Object.assign({
+				N = (e, t) => n => Object.assign(Object.assign({
 					source: "appeal",
 					action: "view",
 					noun: "page"
 				}, O.defaults(n)), {
 					timer: O.timer(e, t)
 				}),
-				N = (e, t) => n => Object.assign(Object.assign({
+				U = (e, t) => n => Object.assign(Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, O.defaults(n)), {
 					timer: O.timer(e, t)
 				}),
-				U = () => e => Object.assign({
+				M = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					subreddit: O.subreddit(e)
 				}, O.defaults(e)),
-				M = () => e => Object.assign({
-					source: "global",
-					action: "view",
-					noun: "screen"
-				}, O.defaults(e)),
 				G = () => e => Object.assign({
+					source: "global",
+					action: "view",
+					noun: "screen"
+				}, O.defaults(e)),
+				V = () => e => Object.assign({
 					action: "view",
 					source: "global",
 					noun: "screen"
 				}, O.defaults(e)),
-				V = (e, t) => n => Object.assign(Object.assign({
+				F = (e, t) => n => Object.assign(Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
@@ -7792,12 +7803,12 @@
 					userSubreddit: O.userSubreddit(n),
 					adblock: O.adblock(n)
 				}),
-				F = () => e => Object.assign({
+				B = () => e => Object.assign({
 					source: "global",
 					action: "view",
 					noun: "screen"
 				}, O.defaults(e)),
-				B = (e, t, n, r, o, i) => c => {
+				W = (e, t, n, r, o, i) => c => {
 					let a = !0;
 					if (t.type.indexOf(s.Nb.Posts) > -1) {
 						const {
@@ -7839,7 +7850,7 @@
 						}
 					})
 				},
-				W = (e, t) => {
+				H = (e, t) => {
 					Object(g.a)(Object.assign(Object.assign({
 						source: "global",
 						action: "view",
@@ -8819,4 +8830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.f156c502d098e399a2b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.3983803703e418640e4b.js.map

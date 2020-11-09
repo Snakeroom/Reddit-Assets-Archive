@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.83492f7c0d92b982daad.js
-// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.d9fed18cc5ace29d1d95.js
+// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./src/reddit/components/EmailInvitePaintedDoor/loader.tsx": function(e, t, a) {
@@ -597,7 +597,7 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(B.u)()), this.props.clearErrors()
+					e(Object(B.v)()), this.props.clearErrors()
 				}
 				componentWillUnmount() {
 					clearTimeout(this.timeout)
@@ -784,4 +784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.83492f7c0d92b982daad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.d9fed18cc5ace29d1d95.js.map

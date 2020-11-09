@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.3e2bc9d0a47edbe00d78.js
-// Retrieved at 11/5/2020, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.c4be1a74f6052ac1e33c.js
+// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -1615,29 +1615,33 @@
 		"./src/reddit/actions/redditEmbed.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return o
+				return d
 			})), s.d(t, "a", (function() {
-				return c
+				return l
 			})), s.d(t, "c", (function() {
-				return b
+				return m
 			}));
-			var r = s("./src/lib/makeActionCreator/index.ts"),
-				i = s("./src/reddit/actions/tabBadging.ts"),
-				n = s("./src/reddit/endpoints/me/index.ts"),
-				a = s("./src/reddit/helpers/pageActionLoginRedirect.ts");
-			const o = "REDDIT_EMBED_LOADED",
-				c = "REDDIT_EMBED_FAILED",
-				d = Object(r.a)("REDDIT_EMBED_PENDING"),
-				l = Object(r.a)(o),
-				u = Object(r.a)(c),
-				b = (e, t) => async (e, s, r) => {
+			var r = s("./src/lib/constants/index.ts"),
+				i = s("./src/lib/makeActionCreator/index.ts"),
+				n = s("./src/reddit/actions/tabBadging.ts"),
+				a = s("./src/reddit/endpoints/me/index.ts"),
+				o = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				c = s("./src/reddit/helpers/trackers/screenview.ts");
+			const d = "REDDIT_EMBED_LOADED",
+				l = "REDDIT_EMBED_FAILED",
+				u = Object(i.a)("REDDIT_EMBED_PENDING"),
+				b = Object(i.a)(d),
+				p = Object(i.a)(l),
+				m = (e, t) => async (e, s, r) => {
 					let {
-						apiContext: o
+						apiContext: i
 					} = r;
 					const c = s();
-					e(d());
-					const b = await Object(n.a)(o());
-					b.ok && b.body ? !t || b.body.account ? (e(l(b.body)), e(Object(i.c)())) : Object(a.a)(e, c) : e(u(b.error))
+					e(u());
+					const d = await Object(a.a)(i());
+					d.ok && d.body ? !t || d.body.account ? (e(b(d.body)), e(Object(n.c)()), g(c)) : Object(o.a)(e, c) : e(p(d.error))
+				}, g = e => {
+					e.platform.currentPage && e.platform.currentPage.routeMatch && e.platform.currentPage.routeMatch.route && e.platform.currentPage.routeMatch.route.meta && e.platform.currentPage.routeMatch.route.meta.name && e.platform.currentPage.routeMatch.route.meta.name === r.Bb.INBOX_PAGES && Object(c.g)(e)
 				}
 		},
 		"./src/reddit/actions/shortcuts/active.ts": function(e, t, s) {
@@ -2177,4 +2181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.3e2bc9d0a47edbe00d78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.c4be1a74f6052ac1e33c.js.map
