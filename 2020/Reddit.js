@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.73867d2a49a3bb22b814.js
-// Retrieved at 11/5/2020, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.c6020c36832aed0aa83f.js
+// Retrieved at 11/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -11648,19 +11648,11 @@
 				fn = n("./src/reddit/layout/page/Listing/index.tsx"),
 				vn = n("./src/reddit/models/Toast/index.ts"),
 				On = n("./src/reddit/reducers/index.ts"),
-				yn = n("./src/reddit/routes/index.ts");
-			var Cn = n("./src/reddit/selectors/experiments/googleOneTap.ts");
-			const Pn = e => Object(rn.c)(e, {
-					experimentName: nn.R,
-					experimentEligibilitySelector: xn
-				}),
-				xn = e => !Object(se.d)(e);
-			Object(X.a)(Pn, e => e === nn.H.Active);
-			var En;
-			! function(e) {
-				e.Active = "html_response_streaming.active", e.Control = "html_response_streaming.control_1"
-			}(En || (En = {}));
-			const jn = {
+				yn = n("./src/reddit/routes/index.ts"),
+				Cn = n("./src/reddit/selectors/experiments/index.ts");
+			var Pn = n("./src/reddit/selectors/experiments/googleOneTap.ts"),
+				xn = n("./src/reddit/selectors/experiments/htmlResponseStreaming.ts");
+			const En = {
 					displayDelay: 15,
 					displayOnRoutes: [g.Bb.SUBREDDIT, g.Bb.COMMENTS],
 					experimentName: nn.Cb,
@@ -11669,7 +11661,7 @@
 					samplingRate: 25,
 					seed: Math.random()
 				},
-				Sn = e => {
+				jn = e => {
 					const {
 						base_url: t
 					} = Object(Xt.requestWithParams)(e), n = Object(qt.b)(e), s = n && n.urlParams.partialPostId, r = n && n.urlParams.subredditName;
@@ -11681,31 +11673,31 @@
 						p: s
 					})
 				},
-				_n = e => {
+				Sn = e => {
 					if ((((e, t) => {
 							let {
 								experimentName: n,
 								experimentVariant: s
 							} = e;
 							return t.experimentOverrides[n] === s
-						})(jn, e) || (e => {
+						})(En, e) || (e => {
 							let {
 								samplingRate: t,
 								seed: n
 							} = e;
 							return !!n && 0 === Math.floor(n * t)
-						})(jn)) && ((e, t) => {
+						})(En)) && ((e, t) => {
 							let {
 								displayOnRoutes: n
 							} = e;
 							const s = t.platform.currentPage && t.platform.currentPage.meta && t.platform.currentPage.meta.name;
 							return !!s && n.includes(s)
-						})(jn, e) && ((e, t) => {
+						})(En, e) && ((e, t) => {
 							let {
 								isSEOOnly: n
 							} = e;
 							return !n || t.meta.isSessionSeo
-						})(jn, e) && ((e, t) => {
+						})(En, e) && ((e, t) => {
 							let {
 								experimentName: n,
 								experimentVariant: s
@@ -11714,26 +11706,26 @@
 								experimentName: n,
 								experimentEligibilitySelector: rn.a
 							}) === s
-						})(jn, e)) return {
-						displayDelay: jn.displayDelay,
-						externalVars: Sn(e)
+						})(En, e)) return {
+						displayDelay: En.displayDelay,
+						externalVars: jn(e)
 					}
 				};
-			var kn = n("./src/reddit/singleton/EventSystem.ts"),
-				wn = n("./src/lib/initializeClient/installReducer.ts"),
-				In = n("./src/reddit/reducers/features/categories/index.ts"),
-				Mn = n("./src/lib/makeActionCreator/index.ts"),
-				Nn = n("./src/lib/sentry/index.ts"),
-				Tn = n("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
-				Rn = n("./src/reddit/actions/global/constants.ts");
-			Object(wn.a)({
+			var _n = n("./src/reddit/singleton/EventSystem.ts"),
+				kn = n("./src/lib/initializeClient/installReducer.ts"),
+				wn = n("./src/reddit/reducers/features/categories/index.ts"),
+				In = n("./src/lib/makeActionCreator/index.ts"),
+				Mn = n("./src/lib/sentry/index.ts"),
+				Nn = n("./src/reddit/actions/publicAccessNetwork/userSettings.ts"),
+				Tn = n("./src/reddit/actions/global/constants.ts");
+			Object(kn.a)({
 				features: {
-					categories: In.a
+					categories: wn.a
 				}
 			});
-			const An = Object(Mn.a)(Rn.a);
+			const Rn = Object(In.a)(Tn.a);
 			Object(r.e)(r.b.EntryPointStart);
-			const Ln = Object(S.a)({
+			const An = Object(S.a)({
 					actionDispatchers: {
 						reddaidReceived: z.s,
 						loidReceived: z.q,
@@ -11755,20 +11747,20 @@
 					onBeforeRequestFactory: tn.a,
 					statsAppName: g.l.Redesign
 				}),
-				Fn = Object(_.a)(Ln.apiContext),
-				Dn = et();
-			let Gn;
+				Ln = Object(_.a)(An.apiContext),
+				Fn = et();
+			let Dn;
 			Object(y.a)({
 				reducerMap: On.a,
 				routes: yn.a,
-				apiContext: Ln.apiContext,
-				gqlContext: Fn.gqlContext,
+				apiContext: An.apiContext,
+				gqlContext: Ln.gqlContext,
 				appFactory: (e, t) => u.a.createElement(Ke.a.Provider, {
-					value: Dn.broadcaster
+					value: Fn.broadcaster
 				}, u.a.createElement(Ye.a.Provider, {
 					value: {
-						apiContext: Ln.apiContext,
-						gqlContext: Fn.gqlContext
+						apiContext: An.apiContext,
+						gqlContext: Ln.gqlContext
 					}
 				}, u.a.createElement(Xe.b, null, u.a.createElement(Me, {
 					ok: !0,
@@ -11778,7 +11770,7 @@
 				appName: g.l.Redesign,
 				history: Object(i.a)({
 					getUserConfirmation(e, t) {
-						const n = Gn;
+						const n = Dn;
 						if (!n) return;
 						n.dispatch(Object(B.k)({
 							allowNavigationCallback: function() {
@@ -11790,9 +11782,9 @@
 				}),
 				customMiddleware: [p.a.withExtraArgument({
 					routes: yn.a,
-					apiContext: Ln.apiContext,
-					gqlContext: Fn.gqlContext
-				}), Dn.middleware, ct, Ln.middleware, Fn.middleware, St, ft, kt, zt, Pt, Et],
+					apiContext: An.apiContext,
+					gqlContext: Ln.gqlContext
+				}), Fn.middleware, ct, An.middleware, Ln.middleware, St, ft, kt, zt, Pt, Et],
 				modifyInitialData: e => {
 					let {
 						initialData: t,
@@ -11890,7 +11882,7 @@
 						store: d,
 						localStorageData: l
 					} = e;
-					Gn = d;
+					Dn = d;
 					t.listen((e, t) => {
 						const n = d.getState(),
 							{
@@ -11905,7 +11897,7 @@
 							},
 							a = s.subredditName,
 							i = Object(Vt.G)(n, a) || "";
-						hn(i), kn.a.publish(Ve.c, o, document)
+						hn(i), _n.a.publish(Ve.c, o, document)
 					});
 					const u = d.getState(),
 						m = (u.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
@@ -11921,20 +11913,20 @@
 						subreddit: m,
 						advertiserCategory: y
 					}), d.dispatch((e => async (t, n) => {
-						t(Object(Tn.a)());
+						t(Object(Nn.a)());
 						const s = n();
-						s.user.loid.loid || s.meta.isBot || Nn.c.withScope(e => {
-							Object(Nn.a)(e, {
+						s.user.loid.loid || s.meta.isBot || Mn.c.withScope(e => {
+							Object(Mn.a)(e, {
 								serverLogging: !1
-							}), Nn.c.captureMessage("User has no LOID set")
+							}), Mn.c.captureMessage("User has no LOID set")
 						});
 						const {
 							localStorageData: r
 						} = e;
-						r && t(An(r))
+						r && t(Rn(r))
 					})({
 						localStorageData: l
-					})), Object(Cn.f)(u) && Object(A.d)(u), d.dispatch(Object(A.c)()), window.addEventListener("load", () => {
+					})), Object(Pn.f)(u) && Object(A.d)(u), d.dispatch(Object(A.c)()), window.addEventListener("load", () => {
 						const e = d.getState(),
 							{
 								currentPage: o
@@ -11955,16 +11947,7 @@
 									const t = Object(Yt.a)(e);
 									s.push(Object(Yt.c)(t))
 								}
-								const a = (e => {
-									switch (Pn(e)) {
-										case nn.H.Active:
-											return En.Active;
-										case nn.D.Control1:
-											return En.Control;
-										default:
-											return
-									}
-								})(e);
+								const a = Object(xn.a)(e);
 								a && (s.push(a), o = !1);
 								const i = {
 									isLoggedIn: Object(Re.I)(e),
@@ -11989,7 +11972,7 @@
 									})
 								})), l = !0, Object(Ut.c)(qe.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [Qe.o]))), Object(Ut.b)(qe.a.JustLoggedOut) && (l = !0, Object(Ut.c)(qe.a.JustLoggedOut)), Object(G.b)(e), !1 !== Fe.F()) {
 								let n;
-								Object(Cn.a)(e) && (n = () => {
+								Object(Pn.a)(e) && (n = () => {
 									const {
 										dispatch: e
 									} = d;
@@ -12016,7 +11999,7 @@
 							})))(d.getState());
 							const e = async () => {
 								const e = d.getState(),
-									t = _n(e);
+									t = Sn(e);
 								t && (await (async e => {
 									return (await Object(gn.a)(() => n.e("UserZoomIntegration").then(n.bind(null, "./src/reddit/helpers/userzoom/index.ts")))).embedFrame(e)
 								})(t), s && s())
@@ -12049,7 +12032,7 @@
 								}(n || e || t) && (Fe.L(), Fe.O(), Fe.M())
 							}
 						}), Object(se.j)(d.getState()) && en(d.getState), d.dispatch(Object(q.c)())
-					}), window.history.scrollRestoration = "manual", kn.a.attachStore(d), d.dispatch(Object(H.b)(x.a.PageLoad))
+					}), window.history.scrollRestoration = "manual", _n.a.attachStore(d), d.dispatch(Object(H.b)(x.a.PageLoad))
 				},
 				raven: {
 					tags: {
@@ -12058,7 +12041,8 @@
 				},
 				ssr: !0,
 				target: document.getElementById("2x-container"),
-				timingsSampleRate: 1
+				timingsSampleRate: 1,
+				perfExperimentNameSelector: e => Object(Cn.d)(e.getState())
 			})
 		},
 		"./src/reddit/models/EmailSettings/index.ts": function(e, t, n) {
@@ -14278,4 +14262,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", 0, "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "ModListing~Reddit", "Reddit~reddit-components-MediumPost"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.73867d2a49a3bb22b814.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c6020c36832aed0aa83f.js.map

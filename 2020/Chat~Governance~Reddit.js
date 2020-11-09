@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c5e8e46b9f8494faca77.js
-// Retrieved at 11/9/2020, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.13202f0a3d886fd6bfa1.js
+// Retrieved at 11/9/2020, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("117682"),
+				buildNumber: r("117708"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1604953440"),
+				})("1604958704"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3427,14 +3427,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("cf38957-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("2636125-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "cf38957-production",
+						release: "2636125-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3550,13 +3550,19 @@
 						localStorageData: U.localStorageData
 					});
 				const V = Object(G.I)(F.getState());
-				return Object(P.e)(P.b.InitClientEnd), e.appName === v.l.Redesign && Object(M.b)(v.l.Redesign, {
-					type: M.a.ClientScreenview,
-					data: {
-						pageName: u,
-						loggedIn: V
-					}
-				}), {
+				if (Object(P.e)(P.b.InitClientEnd), e.appName === v.l.Redesign) {
+					let t = null;
+					e.perfExperimentNameSelector && (t = e.perfExperimentNameSelector(F)), Object(M.b)(v.l.Redesign, {
+						type: M.a.ClientScreenview,
+						data: Object.assign({
+							pageName: u,
+							loggedIn: V
+						}, t ? {
+							perf: t
+						} : {})
+					})
+				}
+				return {
 					store: F
 				}
 			}
@@ -3887,7 +3893,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "cf38957-production",
+							releaseClient: "2636125-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -9394,7 +9400,7 @@
 				},
 				b = e => Object(h.a)(e);
 			var w = i("./src/server/helpers/seoMetadata.tsx");
-			const y = Object(n.a)(e => Object(a.d)(e), e => Object(w.a)(e), (e, t) => !!e && e === t),
+			const y = Object(n.a)(e => Object(a.e)(e), e => Object(w.a)(e), (e, t) => !!e && e === t),
 				v = (e, t) => {
 					if (!t.experimentEligibilitySelector(e)) return !1;
 					if (t.isThrottled && d.a.isFeatureThrottled(t.experimentName)) return !1;
@@ -9411,7 +9417,7 @@
 				},
 				T = () => !0,
 				S = [],
-				E = Object(n.a)(a.c, a.b, v, (e, t) => t.expEventOverride, (e, t) => t.experimentName, a.d, e => Object(w.a)(e), (e, t) => {
+				E = Object(n.a)(a.c, a.b, v, (e, t) => t.expEventOverride, (e, t) => t.experimentName, a.e, e => Object(w.a)(e), (e, t) => {
 					const i = Object(a.b)(e, t),
 						n = void 0 !== i,
 						r = Object(a.c)(e, t);
@@ -9428,7 +9434,7 @@
 					const o = Object(c.o)(e),
 						d = o ? p.post(e, o) : void 0,
 						h = p.request(e),
-						f = Object(a.d)(e);
+						f = Object(a.e)(e);
 					if (Object(u.b)(s) && o) {
 						const t = Object(_.O)(e, {
 							postId: o
@@ -16208,47 +16214,84 @@
 				experimentName: n.l
 			}))
 		},
+		"./src/reddit/selectors/experiments/htmlResponseStreaming.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return u
+			}));
+			var n = i("./node_modules/reselect/es/index.js"),
+				r = i("./src/reddit/constants/experiments.ts"),
+				s = i("./src/reddit/helpers/chooseVariant/index.ts"),
+				o = i("./src/reddit/selectors/meta.ts");
+			const d = e => Object(s.c)(e, {
+					experimentName: r.R,
+					experimentEligibilitySelector: l
+				}),
+				l = e => !Object(o.d)(e);
+			Object(n.a)(d, e => e === r.H.Active);
+			var a;
+			! function(e) {
+				e.Active = "html_response_streaming.active", e.Control = "html_response_streaming.control_1"
+			}(a || (a = {}));
+			const u = e => {
+				switch (d(e)) {
+					case r.H.Active:
+						return a.Active;
+					case r.D.Control1:
+						return a.Control;
+					default:
+						return
+				}
+			}
+		},
 		"./src/reddit/selectors/experiments/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return o
+				return d
 			})), i.d(t, "b", (function() {
-				return l
-			})), i.d(t, "d", (function() {
 				return a
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "e", (function() {
 				return u
+			})), i.d(t, "a", (function() {
+				return c
+			})), i.d(t, "d", (function() {
+				return _
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/env/index.ts"),
 				r = i("./src/reddit/constants/experiments.ts"),
-				s = i("./src/reddit/selectors/user.ts");
-			const o = (e, t) => {
+				s = i("./src/reddit/selectors/experiments/htmlResponseStreaming.ts"),
+				o = i("./src/reddit/selectors/user.ts");
+			const d = (e, t) => {
 					var i, n, r, s;
 					const o = null !== (n = null === (i = e.user) || void 0 === i ? void 0 : i.experiments.byName) && void 0 !== n ? n : {},
 						d = null !== (s = null === (r = e.page) || void 0 === r ? void 0 : r.experiments.byName) && void 0 !== s ? s : {},
 						l = t.experimentName.toLowerCase();
 					return o[l] || d[l]
 				},
-				d = (e, t) => Object(n.a)() || (null == e ? void 0 : e.isEmployee) || r.rb.has(t.toLowerCase()),
-				l = (e, t) => {
+				l = (e, t) => Object(n.a)() || (null == e ? void 0 : e.isEmployee) || r.rb.has(t.toLowerCase()),
+				a = (e, t) => {
 					let {
 						experimentName: i
 					} = t;
 					var n;
-					const r = Object(s.i)(e);
-					return d(r, i) ? null === (n = e.experimentOverrides) || void 0 === n ? void 0 : n[i.toLowerCase()] : void 0
+					const r = Object(o.i)(e);
+					return l(r, i) ? null === (n = e.experimentOverrides) || void 0 === n ? void 0 : n[i.toLowerCase()] : void 0
 				},
-				a = e => e.page.experiments.canonicalUrl,
-				u = e => {
-					const t = Object(s.i)(e),
+				u = e => e.page.experiments.canonicalUrl,
+				c = e => {
+					const t = Object(o.i)(e),
 						i = Object.assign(Object.assign({}, e.user.experiments.byName), e.page.experiments.byName);
-					for (const n of Object.keys(e.experimentOverrides)) d(t, n) && (i[n] = {
+					for (const n of Object.keys(e.experimentOverrides)) l(t, n) && (i[n] = {
 						id: 0,
 						name: n,
 						variant: e.experimentOverrides[n] || ""
 					});
 					return i
+				},
+				_ = e => {
+					const t = Object(s.a)(e);
+					return t || null
 				}
 		},
 		"./src/reddit/selectors/experiments/postSeo.ts": function(e, t, i) {
@@ -26016,4 +26059,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c5e8e46b9f8494faca77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.13202f0a3d886fd6bfa1.js.map
