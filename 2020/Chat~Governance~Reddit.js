@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bb18b9c0566e45048310.js
-// Retrieved at 11/9/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.72ebb318d8ccd99d07a7.js
+// Retrieved at 11/9/2020, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("117652"),
+				buildNumber: r("117659"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1604944747"),
+				})("1604945942"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3427,14 +3427,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("5f811cf-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("d6320c2-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5f811cf-production",
+						release: "d6320c2-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3887,7 +3887,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "5f811cf-production",
+							releaseClient: "d6320c2-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -9997,7 +9997,7 @@
 			})), i.d(t, "c", (function() {
 				return m
 			})), i.d(t, "b", (function() {
-				return p
+				return h
 			}));
 			var n = i("./src/lib/env/index.ts"),
 				r = i("./src/lib/sentry/index.ts"),
@@ -10035,34 +10035,40 @@
 						for (const i of e.flair) i.type === o.f.Text && i.text && t.push(i.text);
 					return t.join(", ")
 				},
-				p = e => {
-					const t = c(e, null, !1);
-					if (!t) return;
-					const i = t.document,
-						n = [];
-					return i.forEach(e => {
+				p = (e, t) => {
+					if (e.e !== d.o || t) return e.e === d.A || e.e === d.o || e.e === d.w ? e.t && e.t.trim() : void 0
+				},
+				h = (e, t) => {
+					const i = c(e, null, !1);
+					if (!i) return;
+					const n = i.document,
+						r = [];
+					return n.forEach(e => {
 						switch (e.e) {
 							case d.u:
 								e.c.forEach(e => {
-									e.e === d.A && n.push(e.t)
+									const i = p(e, t);
+									i && r.push(i)
 								});
 								break;
 							case d.p:
-								const t = e.c;
-								t && t.forEach(e => {
+								const i = e.c;
+								i && i.forEach(e => {
 									e.e === d.q && e.c && e.c.forEach(e => {
 										e.e === d.u && e.c.forEach(e => {
-											e.e === d.A && n.push(e.t)
+											const i = p(e, t);
+											i && r.push(i)
 										})
 									})
 								});
 								break;
 							case d.k:
 								e.c && e.c.forEach(e => {
-									e.e === d.w && n.push(e.t)
+									const i = p(e, t);
+									i && r.push(i)
 								})
 						}
-					}), 0 !== n.length ? n.join(" ") : void 0
+					}), 0 !== r.length ? r.join(" ") : void 0
 				};
 			t.a = c
 		},
@@ -26010,4 +26016,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bb18b9c0566e45048310.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.72ebb318d8ccd99d07a7.js.map
