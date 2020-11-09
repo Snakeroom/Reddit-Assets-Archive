@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.994c53ddcb236f28ea96.js
-// Retrieved at 10/26/2020, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.fa683a57de21692b5285.js
+// Retrieved at 11/9/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/graphql/operations/DismissCommunityProgressCard.json": function(e) {
@@ -59,7 +59,7 @@
 		"./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx": function(e, s, n) {
 			"use strict";
 			n.r(s), n.d(s, "default", (function() {
-				return te
+				return re
 			}));
 			var t = n("./node_modules/react/index.js"),
 				o = n.n(t),
@@ -117,7 +117,7 @@
 						reason: "expanded_module"
 					}
 				}),
-				j = e => () => ({
+				_ = e => () => ({
 					source: "new_community_setup",
 					action: "click",
 					noun: "collapse_progress_module",
@@ -127,7 +127,7 @@
 						reason: "collapses_module"
 					}
 				}),
-				v = (e, s) => () => ({
+				j = (e, s) => () => ({
 					source: "new_community_setup",
 					action: "click",
 					noun: "hide_card",
@@ -136,68 +136,70 @@
 						pageType: "community"
 					}
 				});
-			var _ = n("./src/reddit/hooks/useMutation.ts"),
+			var v = n("./src/reddit/hooks/useMutation.ts"),
 				E = n("./src/reddit/hooks/useTracking.ts"),
 				N = n("./src/reddit/icons/svgs/svgIcons.tsx"),
-				h = n("./src/reddit/selectors/subreddit.ts"),
-				I = n("./src/reddit/selectors/user.ts"),
+				I = n("./src/reddit/selectors/subreddit.ts"),
+				h = n("./src/reddit/selectors/user.ts"),
 				O = (n("./node_modules/core-js/modules/es6.regexp.match.js"), n("./src/lib/classNames/index.ts")),
 				g = n("./node_modules/polished/dist/polished.es.js"),
-				M = n("./src/lib/colors/constants.ts"),
-				C = n("./src/lib/copyToClipboard/index.ts"),
-				y = n("./src/reddit/actions/toaster.ts"),
-				w = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				L = n("./src/reddit/controls/Button/index.tsx"),
-				S = n("./src/reddit/controls/TextButton/index.tsx"),
-				A = (n("./src/reddit/icons/fonts/AddCollection/index.tsx"), n("./src/reddit/icons/fonts/AddGild/index.tsx"), n("./src/reddit/icons/fonts/AddGildDashed/index.tsx"), n("./src/reddit/icons/fonts/Admin/index.tsx"), n("./src/reddit/icons/fonts/Approve/index.tsx"), n("./src/reddit/icons/fonts/Archived/index.tsx"), n("./src/reddit/icons/fonts/Calendar/index.tsx"), n("./src/reddit/icons/fonts/Clear/index.tsx"), n("./src/reddit/icons/fonts/Coin/index.tsx"), n("./src/reddit/icons/fonts/Comment/index.tsx"), n("./src/reddit/icons/fonts/Create/index.tsx"), n("./src/reddit/icons/fonts/Crosspost/index.tsx")),
-				D = (n("./src/reddit/icons/fonts/DistinguishShield/index.tsx"), n("./src/reddit/icons/fonts/Downvote/index.tsx"), n("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"), n("./src/reddit/icons/fonts/Embed/index.tsx"), n("./src/reddit/icons/fonts/Envelope/index.tsx")),
-				k = (n("./src/reddit/icons/fonts/Expand/index.tsx"), n("./src/reddit/icons/fonts/Expandos/Arrows/Collapse/index.tsx"), n("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"), n("./src/reddit/icons/fonts/helpers.tsx")),
-				F = n("./src/reddit/icons/fonts/Expandos/Media/GIF/index.m.less"),
-				G = n.n(F),
-				R = n("./src/lib/lessComponent.tsx");
-			R.a.wrapped(e => o.a.createElement("i", {
-				className: "".concat(Object(k.b)("expandoMediaGif"), " ").concat(e.className)
+				M = n("./node_modules/query-string/index.js"),
+				C = n("./src/lib/colors/constants.ts"),
+				y = n("./src/lib/copyToClipboard/index.ts"),
+				w = n("./src/reddit/actions/toaster.ts"),
+				L = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				S = n("./src/reddit/controls/Button/index.tsx"),
+				A = n("./src/reddit/controls/TextButton/index.tsx"),
+				D = (n("./src/reddit/icons/fonts/AddCollection/index.tsx"), n("./src/reddit/icons/fonts/AddGild/index.tsx"), n("./src/reddit/icons/fonts/AddGildDashed/index.tsx"), n("./src/reddit/icons/fonts/Admin/index.tsx"), n("./src/reddit/icons/fonts/Approve/index.tsx"), n("./src/reddit/icons/fonts/Archived/index.tsx"), n("./src/reddit/icons/fonts/Calendar/index.tsx"), n("./src/reddit/icons/fonts/Clear/index.tsx"), n("./src/reddit/icons/fonts/Coin/index.tsx"), n("./src/reddit/icons/fonts/Comment/index.tsx"), n("./src/reddit/icons/fonts/Create/index.tsx"), n("./src/reddit/icons/fonts/Crosspost/index.tsx")),
+				k = (n("./src/reddit/icons/fonts/DistinguishShield/index.tsx"), n("./src/reddit/icons/fonts/Downvote/index.tsx"), n("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"), n("./src/reddit/icons/fonts/Embed/index.tsx"), n("./src/reddit/icons/fonts/Envelope/index.tsx")),
+				F = (n("./src/reddit/icons/fonts/Expand/index.tsx"), n("./src/reddit/icons/fonts/Expandos/Arrows/Collapse/index.tsx"), n("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"), n("./src/reddit/icons/fonts/helpers.tsx")),
+				T = n("./src/reddit/icons/fonts/Expandos/Media/GIF/index.m.less"),
+				G = n.n(T),
+				P = n("./src/lib/lessComponent.tsx");
+			P.a.wrapped(e => o.a.createElement("i", {
+				className: "".concat(Object(F.b)("expandoMediaGif"), " ").concat(e.className)
 			}), "GifMediaIcon", G.a);
-			var P = n("./src/reddit/icons/fonts/Expandos/Media/Image/index.m.less"),
-				U = n.n(P);
-			R.a.wrapped(e => o.a.createElement("i", {
-				className: "".concat(Object(k.b)("expandoMediaImage"), " ").concat(e.className)
+			var R = n("./src/reddit/icons/fonts/Expandos/Media/Image/index.m.less"),
+				U = n.n(R);
+			P.a.wrapped(e => o.a.createElement("i", {
+				className: "".concat(Object(F.b)("expandoMediaImage"), " ").concat(e.className)
 			}), "ImageMediaIcon", U.a), n("./src/reddit/icons/fonts/Expandos/Media/Lightbox/index.tsx");
-			var K = n("./src/reddit/icons/fonts/Expandos/Media/Link/index.m.less"),
-				T = n.n(K);
-			R.a.wrapped(e => o.a.createElement("i", {
-				className: "".concat(Object(k.b)("expandoMediaLink"), " ").concat(e.className)
-			}), "LinkMediaIcon", T.a);
-			var B = n("./src/reddit/icons/fonts/Expandos/Media/Text/index.m.less"),
-				H = n.n(B);
-			R.a.wrapped(e => o.a.createElement("i", {
-				className: "".concat(Object(k.b)("expandoMediaText"), " ").concat(e.className)
-			}), "TextMediaIcon", H.a), n("./src/reddit/icons/fonts/Expandos/Media/Video/index.tsx"), n("./src/reddit/icons/fonts/Gif/index.tsx"), n("./src/reddit/icons/fonts/Gift/index.tsx");
-			var Q = n("./src/reddit/icons/fonts/Gild/index.m.less"),
-				V = n.n(Q);
-			R.a.wrapped(e => o.a.createElement("i", {
-				className: "".concat(Object(k.b)("gild"), " ").concat(e.className),
+			var B = n("./src/reddit/icons/fonts/Expandos/Media/Link/index.m.less"),
+				K = n.n(B);
+			P.a.wrapped(e => o.a.createElement("i", {
+				className: "".concat(Object(F.b)("expandoMediaLink"), " ").concat(e.className)
+			}), "LinkMediaIcon", K.a);
+			var H = n("./src/reddit/icons/fonts/Expandos/Media/Text/index.m.less"),
+				Q = n.n(H);
+			P.a.wrapped(e => o.a.createElement("i", {
+				className: "".concat(Object(F.b)("expandoMediaText"), " ").concat(e.className)
+			}), "TextMediaIcon", Q.a), n("./src/reddit/icons/fonts/Expandos/Media/Video/index.tsx"), n("./src/reddit/icons/fonts/Gif/index.tsx"), n("./src/reddit/icons/fonts/Gift/index.tsx");
+			var V = n("./src/reddit/icons/fonts/Gild/index.m.less"),
+				W = n.n(V);
+			P.a.wrapped(e => o.a.createElement("i", {
+				className: "".concat(Object(F.b)("gild"), " ").concat(e.className),
 				id: e.id,
 				onMouseEnter: e.onMouseEnter,
 				onMouseLeave: e.onMouseLeave
-			}, o.a.createElement(k.a, null, e.desc)), "GildIcon", V.a), n("./src/reddit/icons/fonts/Hide/index.tsx"), n("./src/reddit/icons/fonts/IgnoreReport/index.tsx"), n("./src/reddit/icons/fonts/Info/index.tsx"), n("./src/reddit/icons/fonts/Link/index.tsx"), n("./src/reddit/icons/fonts/List/index.tsx"), n("./src/reddit/icons/fonts/Live/index.tsx"), n("./src/reddit/icons/fonts/Lock/index.tsx"), n("./src/reddit/icons/fonts/Menu/index.tsx"), n("./src/reddit/icons/fonts/ModActions/index.tsx"), n("./src/reddit/icons/fonts/ModSettings/index.tsx"), n("./src/reddit/icons/fonts/Op/index.tsx"), n("./src/reddit/icons/fonts/OutboundLink/index.tsx"), n("./src/reddit/icons/fonts/Pencil/index.tsx"), n("./src/reddit/icons/fonts/Photos/index.tsx");
-			var W = n("./src/reddit/icons/fonts/Plus/index.tsx"),
-				X = (n("./src/reddit/icons/fonts/Premium/index.tsx"), n("./src/reddit/icons/fonts/Remove/index.tsx"), n("./src/reddit/icons/fonts/Report/index.tsx"), n("./src/reddit/icons/fonts/Save/index.tsx"), n("./src/reddit/icons/fonts/Share/index.tsx")),
-				Z = (n("./src/reddit/icons/fonts/Spam/index.tsx"), n("./src/reddit/icons/fonts/Sticky/index.tsx"), n("./src/reddit/icons/fonts/Tag/index.tsx"), n("./src/reddit/icons/fonts/Text/index.tsx"), n("./src/reddit/icons/fonts/Unpin/index.tsx"), n("./src/reddit/icons/fonts/Upvote/index.tsx"), n("./src/reddit/icons/fonts/Video/index.tsx"), n("./src/reddit/models/Toast/index.ts"));
+			}, o.a.createElement(F.a, null, e.desc)), "GildIcon", W.a), n("./src/reddit/icons/fonts/Hide/index.tsx"), n("./src/reddit/icons/fonts/IgnoreReport/index.tsx"), n("./src/reddit/icons/fonts/Info/index.tsx"), n("./src/reddit/icons/fonts/Link/index.tsx"), n("./src/reddit/icons/fonts/List/index.tsx"), n("./src/reddit/icons/fonts/Live/index.tsx"), n("./src/reddit/icons/fonts/Lock/index.tsx"), n("./src/reddit/icons/fonts/Menu/index.tsx"), n("./src/reddit/icons/fonts/ModActions/index.tsx"), n("./src/reddit/icons/fonts/ModSettings/index.tsx"), n("./src/reddit/icons/fonts/Op/index.tsx"), n("./src/reddit/icons/fonts/OutboundLink/index.tsx"), n("./src/reddit/icons/fonts/Pencil/index.tsx"), n("./src/reddit/icons/fonts/Photos/index.tsx");
+			var X = n("./src/reddit/icons/fonts/Plus/index.tsx"),
+				Z = (n("./src/reddit/icons/fonts/Premium/index.tsx"), n("./src/reddit/icons/fonts/Remove/index.tsx"), n("./src/reddit/icons/fonts/Report/index.tsx"), n("./src/reddit/icons/fonts/Save/index.tsx"), n("./src/reddit/icons/fonts/Share/index.tsx")),
+				q = (n("./src/reddit/icons/fonts/Spam/index.tsx"), n("./src/reddit/icons/fonts/Sticky/index.tsx"), n("./src/reddit/icons/fonts/Tag/index.tsx"), n("./src/reddit/icons/fonts/Text/index.tsx"), n("./src/reddit/icons/fonts/Unpin/index.tsx"), n("./src/reddit/icons/fonts/Upvote/index.tsx"), n("./src/reddit/icons/fonts/Video/index.tsx"), n("./src/reddit/models/NewCommunityProgress/index.ts")),
+				z = n("./src/reddit/models/Toast/index.ts");
 			const {
-				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = {
-				add: W.a,
-				crosspost: A.a,
-				message: D.a,
+				fbt: J
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = {
+				add: X.a,
+				crosspost: D.a,
+				message: k.a,
 				refresh: N.h,
-				share: X.a,
+				share: Z.a,
 				nsfw: N.e,
 				redditor: N.g,
 				comments: N.d
 			};
 
-			function q(e) {
+			function $(e) {
 				var s, n;
 				const {
 					id: t,
@@ -209,53 +211,70 @@
 					onClose: x = (() => {}),
 					isNightMode: u,
 					subredditUrl: b,
-					progressModule: j
-				} = e, v = Object(c.c)(), _ = Object(E.a)(), h = null !== (s = J[a]) && void 0 !== s ? s : N.a, I = u ? M.c : M.b, g = null !== (n = I[m]) && void 0 !== n ? n : I.downvote;
+					progressModule: _
+				} = e, j = Object(c.c)(), v = Object(E.a)(), I = null !== (s = Y[a]) && void 0 !== s ? s : N.a, h = u ? C.c : C.b, g = null !== (n = h[m]) && void 0 !== n ? n : h.downvote;
 
-				function A(e) {
-					Y(e) ? e.url.match(/reddithelp\.com/) && _(f(j, t)) : (Object(C.a)("https://reddit.com".concat(b)), v(Object(y.e)(Object(y.d)("Copied community URL to clipboard!", Z.b.SuccessCommunityGreen)))), _(p(j, t)), x()
+				function M(e) {
+					! function(e) {
+						return "CommunityProgressShareButton" === e.__typename
+					}(e) ? ee(e) && e.url.match(/reddithelp\.com/) && v(f(_, t)): (Object(y.a)("https://reddit.com".concat(b)), j(Object(w.e)(Object(w.d)("Copied community URL to clipboard!", z.b.SuccessCommunityGreen)))), x(q.a.CTA_BUTTON_CLICK), v(p(_, t))
 				}
 				return o.a.createElement("div", {
 					className: r.a.ncpCard
-				}, o.a.createElement($, {
+				}, o.a.createElement(te, {
 					color: g,
 					className: Object(O.a)(r.a.stripe, r.a.stripeUp)
-				}), o.a.createElement(ee, {
+				}), o.a.createElement(oe, {
 					color: g,
 					className: Object(O.a)(r.a.stripe, r.a.stripeDown)
-				}), o.a.createElement(S.a, {
+				}), o.a.createElement(A.a, {
 					className: r.a.headerButton,
-					onClick: x
-				}, o.a.createElement(w.b, null), o.a.createElement("div", null, z._("Close", null, {
+					onClick: () => x(q.a.HIDE_BUTTON_CLICK)
+				}, o.a.createElement(L.b, null), o.a.createElement("div", null, J._("Close", null, {
 					hk: "4gbyAA"
 				}))), o.a.createElement("div", {
 					className: r.a.iconCircle,
 					style: {
 						backgroundColor: g
 					}
-				}, o.a.createElement(h, {
+				}, o.a.createElement(I, {
 					className: r.a.icon
 				})), o.a.createElement("h2", {
 					className: r.a.title
 				}, i), o.a.createElement("p", {
 					className: r.a.bodyText
-				}, d), l.map(e => o.a.createElement(L.j, {
+				}, d), l.map(e => o.a.createElement(S.j, {
 					key: e.buttonText,
 					className: r.a.button,
 					style: {
 						backgroundColor: g,
 						borderColor: g
 					},
-					href: Y(e) ? e.url : void 0,
-					onClick: () => A(e)
+					href: ee(e) ? e.url : se(e) ? ne(e, b) : void 0,
+					onClick: () => M(e)
 				}, e.buttonText)))
 			}
 
-			function Y(e) {
+			function ee(e) {
 				return "CommunityProgressUrlButton" === e.__typename
 			}
 
-			function $(e) {
+			function se(e) {
+				return "CommunityProgressMakePostButton" === e.__typename
+			}
+
+			function ne(e, s) {
+				var n;
+				return "".concat(s, "submit?").concat(Object(M.stringify)({
+					title: e.postTitle,
+					text: null === (n = e.postBody) || void 0 === n ? void 0 : n.markdown,
+					frequency: e.postRepeatFrequency
+				}, {
+					skipNull: !0
+				}))
+			}
+
+			function te(e) {
 				let {
 					className: s,
 					color: n
@@ -272,7 +291,7 @@
 				}))
 			}
 
-			function ee(e) {
+			function oe(e) {
 				let {
 					className: s,
 					color: n
@@ -289,8 +308,8 @@
 				}))
 			}
 
-			function se() {
-				return (se = Object.assign || function(e) {
+			function ce() {
+				return (ce = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var n = arguments[s];
 						for (var t in n) Object.prototype.hasOwnProperty.call(n, t) && (e[t] = n[t])
@@ -299,23 +318,23 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: ne
+				fbt: ie
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function te(e) {
+			function re(e) {
 				let {
 					subredditId: s,
 					progressModule: n
 				} = e;
 				const i = Object(t.useRef)(null),
 					[a, l] = Object(t.useState)(!0),
-					x = Object(c.d)(I.T),
-					p = Object(c.d)(e => Object(h.Z)(e, s)),
+					x = Object(c.d)(h.T),
+					p = Object(c.d)(e => Object(I.Z)(e, s)),
 					f = Object(E.a)();
 				Object(t.useEffect)(() => {
 					f(u(n, a ? "expanded_module" : "collapses_module"))
 				}, [a]);
-				const [O] = Object(_.a)(m), g = Object(c.c)();
+				const [O] = Object(v.a)(m), g = Object(c.c)();
 				return 0 === n.cards.length ? null : o.a.createElement("details", {
 					ref: i,
 					open: !0,
@@ -323,7 +342,7 @@
 					onToggle: () => {
 						var e;
 						const s = !!(null === (e = i.current) || void 0 === e ? void 0 : e.open);
-						l(s), f(s ? b(n) : j(n))
+						l(s), f(s ? b(n) : _(n))
 					}
 				}, o.a.createElement("summary", {
 					className: r.a.ncpHeading
@@ -333,10 +352,10 @@
 					className: r.a.chevron
 				}), !a && o.a.createElement("div", {
 					className: r.a.dot
-				})), n.cards.slice(0, 3).map(e => o.a.createElement(q, se({
+				})), n.cards.slice(0, 3).map(e => o.a.createElement($, ce({
 					key: e.id,
 					isNightMode: x,
-					onClose: () => (async function(e) {
+					onClose: t => (async function(e, t) {
 						g({
 							type: d.a,
 							payload: {
@@ -346,10 +365,11 @@
 						}), await O({
 							input: {
 								subredditId: s,
-								cardId: e
+								cardId: e,
+								action: t
 							}
-						}), f(v(n, e))
-					})(e.id),
+						}), f(j(n, e))
+					})(e.id, t),
 					subredditUrl: null != p ? p : "",
 					progressModule: n
 				}, e))))
@@ -1185,7 +1205,20 @@
 				archivedIcon: "_2trXhUAJMhIhxp8a2zvOVP",
 				liveIcon: "_3cdJ6BHH65ws78AzuO0KLw"
 			}
+		},
+		"./src/reddit/models/NewCommunityProgress/index.ts": function(e, s, n) {
+			"use strict";
+			n.d(s, "b", (function() {
+				return t
+			})), n.d(s, "a", (function() {
+				return o
+			}));
+			const t = ["CommunityProgressShareButton", "CommunityProgressUrlButton", "CommunityProgressMakePostButton"];
+			var o;
+			! function(e) {
+				e.HIDE_BUTTON_CLICK = "HIDE_BUTTON_CLICK", e.CTA_BUTTON_CLICK = "CTA_BUTTON_CLICK"
+			}(o || (o = {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.994c53ddcb236f28ea96.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.fa683a57de21692b5285.js.map

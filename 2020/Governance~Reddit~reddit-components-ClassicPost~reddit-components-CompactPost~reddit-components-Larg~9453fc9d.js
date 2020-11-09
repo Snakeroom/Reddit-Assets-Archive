@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.77a23bcfd41958530f27.js
-// Retrieved at 11/9/2020, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.87f87fac347409b661e6.js
+// Retrieved at 11/9/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(t) {
@@ -39,7 +39,7 @@
 			t.exports = JSON.parse('{"id":"5d042135b4c5"}')
 		},
 		"./src/graphql/operations/GetSubredditQuestions.json": function(t) {
-			t.exports = JSON.parse('{"id":"aad0074284e6"}')
+			t.exports = JSON.parse('{"id":"65f76f8ef4c5"}')
 		},
 		"./src/graphql/operations/GlobalAwards.json": function(t) {
 			t.exports = JSON.parse('{"id":"06dccfbe114b"}')
@@ -11168,4 +11168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.77a23bcfd41958530f27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.87f87fac347409b661e6.js.map
