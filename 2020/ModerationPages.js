@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.85f4fcd2f29cea564eee.js
-// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fb097752214b41eb0e03.js
+// Retrieved at 11/10/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -15273,6 +15273,9 @@
 					DELETE_SCHEDULED_POST: () => o.fbt._("Delete scheduled post", null, {
 						hk: "MhwRy"
 					}),
+					DELETE_OVERRIDDEN_CLASSIFICATION: () => o.fbt._("Delete overridden classification", null, {
+						hk: "3hPfDT"
+					}),
 					DISABLE_AWARD: () => o.fbt._("Disable award", null, {
 						hk: "2yFBt7"
 					}),
@@ -15329,6 +15332,9 @@
 					}),
 					MUTE_USER: () => o.fbt._("Mute user", null, {
 						hk: "3kPYe4"
+					}),
+					OVERRIDE_CLASSIFICATION: () => o.fbt._("Override classification", null, {
+						hk: "2VPY6n"
 					}),
 					REMOVE_COMMENT: () => o.fbt._("Remove comment", null, {
 						hk: "vEI4S"
@@ -16112,6 +16118,8 @@
 								case "EDIT_SETTINGS":
 								case "MODMAIL_ENROLLMENT":
 								case "SUBMIT_CONTENT_RATING_SURVEY":
+								case "DELETE_OVERRIDDEN_CLASSIFICATION":
+								case "OVERRIDE_CLASSIFICATION":
 									return {
 										type: O.SETTINGS, treatment: k.NONE
 									};
@@ -31934,4 +31942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.85f4fcd2f29cea564eee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fb097752214b41eb0e03.js.map
