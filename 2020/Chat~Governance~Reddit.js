@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1769a25b9777ccbc0a18.js
-// Retrieved at 11/9/2020, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.733a9667cb89784810ed.js
+// Retrieved at 11/9/2020, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("117727"),
+				buildNumber: r("117735"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1604962818"),
+				})("1604964592"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3427,14 +3427,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("f10f16e-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("c38ee49-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f10f16e-production",
+						release: "c38ee49-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3893,7 +3893,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "f10f16e-production",
+							releaseClient: "c38ee49-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -6076,47 +6076,51 @@
 					const s = Object(d.a)(r.url, e);
 					s && s.route.action(s.match)(t, i, n)
 				}, S = (e, t, i) => async (s, o, d) => {
-					const g = o().platform.currentPage;
-					(!i || i.route.chunk === r.p.SUBREDDIT && c.a.has(i.match.params.subredditName.toLowerCase())) && window.location.replace("https://www.reddit.com".concat(e.pathname).concat(e.search));
-					const f = i ? Object(_.c)(i, o()).listingKey : null,
-						{
-							user: b
-						} = o(),
-						w = i && i.match && i.match.queryParams,
-						y = w && w["experiment_".concat(u.fc)];
-					Object(m.h)(o()), e.pathname.split("/").some(e => "comments" === e), Object(p.i)(o());
-					if (s(E({
+					s(((e, t, i) => (s, o, d) => {
+						const l = o().platform.currentPage;
+						(!i || i.route.chunk === r.p.SUBREDDIT && c.a.has(i.match.params.subredditName.toLowerCase())) && window.location.replace("https://www.reddit.com".concat(e.pathname).concat(e.search));
+						const a = i ? Object(_.c)(i, o()).listingKey : null,
+							{
+								user: g
+							} = o(),
+							f = i && i.match && i.match.queryParams,
+							b = f && f["experiment_".concat(u.fc)];
+						Object(m.h)(o()), e.pathname.split("/").some(e => "comments" === e), Object(p.i)(o());
+						s(E({
 							action: t,
-							listingKey: f,
+							listingKey: a,
 							location: e,
 							routeMatch: i,
-							user: b
-						})), g && Object(n.a)(g.url, e)) return;
-					h.b.isEnabled;
-					let v = !1;
-					if (h.b.isEnabled) {
-						if (g && g.locationState && Object(l.a)(g.locationState.closeLocation, e)) {
-							const e = h.b.createRootSpanId();
-							h.b.setParent(e), s(Object(a.b)(e.spanId))
-						} else v = !0
-					}
-					if (i) {
-						const {
-							match: e
-						} = i;
-						if (v) {
-							const t = h.b.createRootSpanId();
-							h.b.setParent(t), s(Object(a.b)(t.spanId));
-							const n = i && i.route.action.name,
-								r = i && i.route ? "".concat(n, "_").concat(i.route.meta.name) : "",
-								l = {
-									[h.a.HttpUrl]: e.url
-								};
-							await h.b.recordRequest(r, l, async () => {
-								await i.route.action(e)(s, o, d)
-							})
-						} else await i.route.action(e)(s, o, d)
-					}
+							user: g
+						})), l && Object(n.a)(l.url, e) || h.b.isEnabled
+					})(e, t, i)), await s(((e, t) => async (i, r, s) => {
+						const o = r().platform.currentPage;
+						if (o && Object(n.a)(o.url, e)) return;
+						let d = !1;
+						if (h.b.isEnabled) {
+							if (o && o.locationState && Object(l.a)(o.locationState.closeLocation, e)) {
+								const e = h.b.createRootSpanId();
+								h.b.setParent(e), i(Object(a.b)(e.spanId))
+							} else d = !0
+						}
+						if (t) {
+							const {
+								match: e
+							} = t;
+							if (d) {
+								const n = h.b.createRootSpanId();
+								h.b.setParent(n), i(Object(a.b)(n.spanId));
+								const o = t && t.route.action.name,
+									d = t && t.route ? "".concat(o, "_").concat(t.route.meta.name) : "",
+									l = {
+										[h.a.HttpUrl]: e.url
+									};
+								await h.b.recordRequest(d, l, async () => {
+									await t.route.action(e)(i, r, s)
+								})
+							} else await t.route.action(e)(i, r, s)
+						}
+					})(e, i))
 				}, E = Object(o.a)(g), F = (Object(o.a)(f), Object(o.a)(y)), I = Object(o.a)(v), O = e => async (t, i, n) => {
 					const r = i(),
 						{
@@ -26061,4 +26065,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1769a25b9777ccbc0a18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.733a9667cb89784810ed.js.map
