@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.6e5831666f3fda2c5126.js
-// Retrieved at 10/26/2020, 11:00:17 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.58a11a99b62f805ab8a7.js
+// Retrieved at 11/11/2020, 2:10:20 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -465,8 +465,8 @@
 					}, this.props.voteInProgress ? a.a.createElement(F.a, {
 						className: M.a.loadingIcon,
 						sizePx: 20
-					}) : a.a.createElement(o.Fragment, null, this.props.votingIcon, q._("vote", null, {
-						hk: "2XhbHK"
+					}) : a.a.createElement(o.Fragment, null, this.props.votingIcon, q._("Vote", null, {
+						hk: "4gs6FY"
 					}))), !this.props.userIsLoggedIn && a.a.createElement("div", {
 						className: M.a.loggedOutTooltip
 					}, q._("You must be logged in to vote", null, {
@@ -480,9 +480,9 @@
 			const z = Object(i.c)({
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var K = Object(c.b)(z)(Object(N.c)(Z)),
+			var Y = Object(c.b)(z)(Object(N.c)(Z)),
 				J = n("./src/reddit/components/Poll/index.m.less"),
-				Y = n.n(J);
+				K = n.n(J);
 			class Q extends a.a.Component {
 				constructor() {
 					super(...arguments), this.userAlreadyMadeSelection = (e, t) => !(!e || !t) && Object(C.h)(e, t), this.sendPollResultsEvent = () => {
@@ -519,13 +519,13 @@
 					return r ? a.a.createElement("div", {
 						className: e
 					}, c && a.a.createElement("div", {
-						className: Y.a.title
+						className: K.a.title
 					}, c), s && Object(C.f)(r, s) ? a.a.createElement(V, {
 						displayType: t,
 						poll: r,
 						result: s,
 						subredditId: o
-					}) : a.a.createElement(K, {
+					}) : a.a.createElement(Y, {
 						poll: r,
 						onVoteSelection: n,
 						voteInProgress: i,
@@ -1346,4 +1346,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.6e5831666f3fda2c5126.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.58a11a99b62f805ab8a7.js.map
