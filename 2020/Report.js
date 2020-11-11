@@ -1,66 +1,73 @@
-// https://www.redditstatic.com/desktop2x/Report.c0d9f175c071b480564a.js
-// Retrieved at 9/8/2020, 4:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Report.e429102c2cb73eb1a8d1.js
+// Retrieved at 11/11/2020, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Report"], {
-		"./src/reddit/actions/pages/report/index.ts": function(e, t, r) {
+		"./src/reddit/actions/pages/report/index.ts": function(e, t, n) {
 			"use strict";
-			r.r(t), r.d(t, "reportPageFailed", (function() {
-				return g
-			})), r.d(t, "reportPagePending", (function() {
-				return O
-			})), r.d(t, "reportPageLoaded", (function() {
+			n.r(t), n.d(t, "reportPageFailed", (function() {
 				return _
-			})), r.d(t, "reportPageInitialReasonSet", (function() {
-				return j
-			})), r.d(t, "reportPageRequested", (function() {
-				return x
+			})), n.d(t, "reportPagePending", (function() {
+				return g
+			})), n.d(t, "reportPageLoaded", (function() {
+				return O
+			})), n.d(t, "reportPageInitialReasonSet", (function() {
+				return P
+			})), n.d(t, "reportPageRequested", (function() {
+				return R
 			}));
-			var n = r("./src/lib/makeActionCreator/index.ts"),
-				s = r("./src/lib/constants/index.ts"),
-				a = r("./src/lib/makeApiRequest/index.ts"),
-				o = r("./src/lib/omitHeaders/index.ts"),
-				c = r("./src/reddit/constants/headers.ts");
-			var i = r("./src/reddit/actions/reportPageRules/constants.ts");
-			const d = Object(n.a)(i.a),
-				p = () => async (e, t, r) => {
+			var s = n("./src/lib/makeActionCreator/index.ts"),
+				r = n("./src/lib/constants/index.ts"),
+				a = n("./src/lib/makeApiRequest/index.ts"),
+				o = n("./src/lib/omitHeaders/index.ts"),
+				c = n("./src/reddit/constants/headers.ts");
+			var i = n("./src/reddit/actions/reportPageRules/constants.ts");
+			const d = Object(s.a)(i.a),
+				u = () => async (e, t, n) => {
 					let {
-						apiContext: n
-					} = r;
+						apiContext: s
+					} = n;
 					const i = t();
 					if (!i.user || !i.user.language) return;
-					const p = await (e => Object(a.a)(Object(o.a)(e, [c.a]), {
+					const u = await (e => Object(a.a)(Object(o.a)(e, [c.a]), {
 						endpoint: "".concat(e.apiUrl, "/api/report_page_rules.json"),
-						method: s.db.GET
-					}))(n());
-					if (p.ok) {
+						method: r.db.GET
+					}))(s());
+					if (u.ok) {
 						const {
 							rules: t
-						} = p.body, r = t.map(e => (e.nextStepReasons && e.nextStepReasons.length || (e.nextStepReasons = [Object.assign({}, e)]), e));
-						e(d(r))
+						} = u.body, n = t.map(e => (e.nextStepReasons && e.nextStepReasons.length || (e.nextStepReasons = [Object.assign({}, e)]), e));
+						e(d(n))
 					}
 				};
-			var u = r("./src/reddit/endpoints/me/index.ts"),
-				b = r("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				l = r("./src/reddit/actions/pages/report/constants.ts");
-			const g = Object(n.a)(l.b),
-				O = Object(n.a)(l.d),
-				_ = Object(n.a)(l.c),
-				j = Object(n.a)(l.a),
-				x = e => async (t, r, n) => {
-					let s, {
+			var p = n("./src/reddit/endpoints/me/index.ts"),
+				b = n("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				l = n("./src/reddit/actions/pages/report/constants.ts");
+			const _ = Object(s.a)(l.b),
+				g = Object(s.a)(l.d),
+				O = Object(s.a)(l.c),
+				P = Object(s.a)(l.a),
+				R = e => async (t, n, s) => {
+					let r, {
 						apiContext: a
-					} = n;
-					e.queryParams && e.queryParams.reason && (s = e.queryParams.reason, t(j(s))), t(p()), t(O());
-					const o = await Object(u.a)(a());
+					} = s;
+					e.queryParams && e.queryParams.reason && (r = e.queryParams.reason, t(P(r))), t(u()), t(g());
+					const o = await Object(p.a)(a());
 					if (o.ok && o.body)
-						if (o.body.account) t(_(o.body));
+						if (o.body.account) t(O(o.body));
 						else {
-							const e = r();
+							const e = n();
 							Object(b.a)(t, e)
 						}
-					else t(g(o.error))
+					else t(_(o.error))
 				}
+		},
+		"./src/reddit/actions/reportPageRules/constants.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			}));
+			const s = "REPORT_PAGE_RULES__LOADED"
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.c0d9f175c071b480564a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.e429102c2cb73eb1a8d1.js.map
