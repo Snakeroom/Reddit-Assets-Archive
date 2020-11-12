@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.0d462f0bb82a3b25cc3c.js
-// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.59bd1411ee8e42aebee3.js
+// Retrieved at 11/12/2020, 11:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -14262,4 +14262,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-Compa~16c34322", "vendors~Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~c822ce19", "vendors~InFeedChaining~PostCreation~Reddit~StandalonePostPage~SubredditPremiumBadgeHovercardTooltip", "vendors~Chat~Governance~Reddit", "vendors~Governance~Reddit", "AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "Governance~ModListing~Reddit", "Governance~InFeedChaining~Reddit", 0, "Governance~Reddit~reddit-components-MediumPost", "Governance~Reddit", "ModListing~Reddit", "Reddit~reddit-components-MediumPost"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0d462f0bb82a3b25cc3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.59bd1411ee8e42aebee3.js.map

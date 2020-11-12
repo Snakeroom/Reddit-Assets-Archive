@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.59de0bcbfd84a70151a6.js
-// Retrieved at 11/11/2020, 8:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.331acfead7908b3c507f.js
+// Retrieved at 11/12/2020, 11:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1618,11 +1618,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("117941"),
+				buildNumber: r("117970"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1605141601"),
+				})("1605195481"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3427,14 +3427,14 @@
 					}))
 				},
 				J = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c".concat("858f168-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c".concat("52920a0-production") + " %cpublic url %c".concat(y.a.sentryClientPublicURL), "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp("^".concat(y.a.assetPath), "i")];
 					r.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "858f168-production",
+						release: "52920a0-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(A.d)(), new s.Integrations.Breadcrumbs({
@@ -3893,7 +3893,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "858f168-production",
+							releaseClient: "52920a0-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(a.a)(n)) : void 0
 						},
@@ -5939,7 +5939,7 @@
 						h = !!u.listings.postOrder.ids[_];
 					if (p || h && !m && !t) {
 						if (h) {
-							const e = Object(f.f)(n(), {
+							const e = Object(f.g)(n(), {
 								topicSlug: c
 							});
 							e && i(s.l({
@@ -5968,7 +5968,7 @@
 						key: _,
 						meta: u.meta
 					})));
-					const y = Object(f.f)(n(), {
+					const y = Object(f.g)(n(), {
 						topicSlug: c
 					});
 					y && i(s.l({
@@ -21643,8 +21643,10 @@
 				return y
 			})), i.d(t, "f", (function() {
 				return T
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "g", (function() {
 				return S
+			})), i.d(t, "d", (function() {
+				return E
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -21728,20 +21730,21 @@
 				w = b(g.Parent),
 				y = b(g.Sibling),
 				v = Object(r.a)(p, _.ab, (e, t) => e ? e.subredditIds.map(e => t[e]) : f),
-				T = (Object(r.a)(v, e => e.map(e => e && e.name)), Object(r.a)((e, t) => {
+				T = (Object(r.a)(v, e => e.map(e => e && e.name)), (e, t) => {
+					let {
+						topicSlug: i
+					} = t;
+					return h(e, i, !0)
+				}),
+				S = Object(r.a)((e, t) => {
 					let {
 						topicSlug: i
 					} = t;
 					return h(e, i)
 				}, e => e && n.fbt._("Best {topic name} Posts - Reddit", [n.fbt._param("topic name", Object(o.b)(e, !0))], {
 					hk: "2ddI1M"
-				}))),
-				S = Object(r.a)((e, t) => {
-					let {
-						topicSlug: i
-					} = t;
-					return h(e, i, !0)
-				}, e => e && n.fbt._("Find the best posts and communities about {topic name} on Reddit", [n.fbt._param("topic name", e)], {
+				})),
+				E = Object(r.a)(T, e => e && n.fbt._("Find the best posts and communities about {topic name} on Reddit", [n.fbt._param("topic name", e)], {
 					hk: "DunIF"
 				}))
 		},
@@ -26077,4 +26080,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.59de0bcbfd84a70151a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.331acfead7908b3c507f.js.map

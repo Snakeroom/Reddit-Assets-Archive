@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.79ee7865ed58475e5479.js
-// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.6b8fab0c33d0ba376d33.js
+// Retrieved at 11/12/2020, 11:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -274,8 +274,8 @@
 				v = s("./src/reddit/controls/Dropdown/index.tsx"),
 				x = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				T = s("./src/reddit/icons/svgs/ClassicPosts/index.tsx"),
-				_ = s("./src/reddit/icons/svgs/CompactPosts/index.tsx"),
-				f = s("./src/reddit/icons/svgs/LargePosts/index.tsx"),
+				f = s("./src/reddit/icons/svgs/CompactPosts/index.tsx"),
+				_ = s("./src/reddit/icons/svgs/LargePosts/index.tsx"),
 				y = s("./src/reddit/selectors/telemetry.ts"),
 				E = s("./src/reddit/selectors/tooltip.ts"),
 				w = s("./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less"),
@@ -294,9 +294,9 @@
 				j = "LayoutSwitch--picker",
 				I = Object(c.a)(v.a),
 				N = {
-					[h.d.Card]: f.a,
+					[h.d.Card]: _.a,
 					[h.d.Classic]: T.a,
-					[h.d.Compact]: _.a
+					[h.d.Compact]: f.a
 				},
 				S = {
 					[h.d.Card]: () => i.fbt._("card", null, {
@@ -309,13 +309,13 @@
 						hk: "1N7pcz"
 					})
 				},
-				R = Object(b.t)(),
-				P = Object(a.c)({
+				P = Object(b.t)(),
+				R = Object(a.c)({
 					dropdownIsOpen: Object(E.b)(j),
 					postLayout: b.N,
 					redditStyle: b.A
 				}),
-				k = Object(o.b)(P, e => ({
+				k = Object(o.b)(R, e => ({
 					onListingLayoutChange: (t, s) => e(Object(p.x)(t, s)),
 					openDropdown: () => e(Object(u.h)({
 						tooltipId: j
@@ -392,7 +392,7 @@
 					}), r.a.createElement(g.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = R(k(Object(m.c)(Object(l.a)(H))))
+			t.a = P(k(Object(m.c)(Object(l.a)(H))))
 		},
 		"./src/reddit/components/Governance/VotingBanner/async.tsx": function(e, t, s) {
 			"use strict";
@@ -456,8 +456,8 @@
 				v = s("./src/reddit/selectors/experiments/econ/predictions.ts"),
 				x = s("./src/reddit/selectors/experiments/survey.ts"),
 				T = s("./src/reddit/selectors/listings.ts"),
-				_ = s("./src/reddit/selectors/posts.ts"),
-				f = s("./src/reddit/selectors/subreddit.ts"),
+				f = s("./src/reddit/selectors/posts.ts"),
+				_ = s("./src/reddit/selectors/subreddit.ts"),
 				y = s("./src/reddit/selectors/tracking.ts");
 
 			function E() {
@@ -478,7 +478,7 @@
 					measureScrollFPS: g.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(u.N)(e, t),
 					loadMore: T.g,
-					postsById: (e, t) => Object(_.Z)(e, Object.assign(Object.assign({}, t), {
+					postsById: (e, t) => Object(f.Z)(e, Object.assign(Object.assign({}, t), {
 						predictionsEnabled: Object(v.a)(e)
 					})),
 					postIds: Object(r.a)((e, t) => {
@@ -487,9 +487,9 @@
 							listingName: i,
 							inSubredditOrProfile: n
 						} = t;
-						return Object(_.L)(e, s, i, n, Object(v.a)(e))
+						return Object(f.L)(e, s, i, n, Object(v.a)(e))
 					}),
-					subredditsById: f.ab,
+					subredditsById: _.ab,
 					viewportDataLoaded: y.a,
 					pageReferrer: u.Q,
 					postListPlaceholderComponent: () => b.a,
@@ -824,8 +824,8 @@
 				},
 				x = s("./src/reddit/components/SEOTitle/index.tsx"),
 				T = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				_ = s("./src/reddit/components/RelatedTopicList/index.m.less"),
-				f = s.n(_);
+				f = s("./src/reddit/components/RelatedTopicList/index.m.less"),
+				_ = s.n(f);
 
 			function y(e) {
 				const {
@@ -835,13 +835,13 @@
 					topics: r
 				} = e;
 				return r.length ? n.a.createElement(T.a, {
-					className: f.a.Container
+					className: _.a.Container
 				}, i && n.a.createElement("div", {
-					className: f.a.Title
+					className: _.a.Title
 				}, n.a.createElement(x.b, {
 					type: x.a.Widget
 				}, i)), n.a.createElement("div", {
-					className: f.a.RelatedTopicList
+					className: _.a.RelatedTopicList
 				}, r.slice(0, s).map(e => n.a.createElement(v, {
 					key: e.id,
 					topic: e
@@ -856,8 +856,8 @@
 				I = s("./src/reddit/helpers/trackers/screenview.ts"),
 				N = s("./src/reddit/layout/page/Listing/index.tsx"),
 				S = s("./src/reddit/pages/ErrorPages/index.tsx"),
-				R = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				P = s("./src/reddit/controls/Button/index.tsx"),
+				P = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				R = s("./src/reddit/controls/Button/index.tsx"),
 				k = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
 				H = s.n(k);
 			class V extends n.a.Component {
@@ -994,10 +994,10 @@
 						limit: 5,
 						title: e,
 						topics: t
-					}, n.a.createElement(R.a, {
+					}, n.a.createElement(P.a, {
 						onClick: this.onClick,
 						to: "#"
-					}, n.a.createElement(P.o, {
+					}, n.a.createElement(R.o, {
 						className: Z.a.SeeAllRelatedTopics
 					}, G._("See all {=[Topic name plural]}", [G._param("=[Topic name plural]", n.a.createElement("span", {
 						className: Z.a.TopicName
@@ -1128,8 +1128,8 @@
 				}
 			}
 			var Te = xe,
-				_e = s("./src/reddit/pages/Topic/TabHeader/index.m.less"),
-				fe = s.n(_e);
+				fe = s("./src/reddit/pages/Topic/TabHeader/index.m.less"),
+				_e = s.n(fe);
 			const {
 				fbt: ye
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -1148,11 +1148,11 @@
 							relationship: e
 						})
 					}, this.renderRelatedTopicsHeader = () => n.a.createElement("div", {
-						className: fe.a.TabHeader
+						className: _e.a.TabHeader
 					}, this.props.topic.childRelationships.map(this.renderRelatedTopic)), this.renderTitle = () => {
 						const {
 							activeTab: e,
-							topicName: t
+							topicNamePlural: t
 						} = this.props;
 						return e === B.Posts ? ye._("Posts about {topic name}", [ye._param("topic name", t)], {
 							hk: "3AGfU"
@@ -1167,13 +1167,13 @@
 						activeTab: t
 					} = this.props, s = t === B.Posts;
 					return t === B.RelatedTopics ? this.renderRelatedTopicsHeader() : n.a.createElement("div", {
-						className: fe.a.TabHeader
+						className: _e.a.TabHeader
 					}, n.a.createElement("div", {
-						className: fe.a.TabTitle
+						className: _e.a.TabTitle
 					}, n.a.createElement(x.b, {
 						type: x.a.Widget
 					}, this.renderTitle())), s && n.a.createElement(be.a, {
-						className: fe.a.PostsLayoutSwitch,
+						className: _e.a.PostsLayoutSwitch,
 						layout: L.e[e]
 					}))
 				}
@@ -1185,25 +1185,28 @@
 				je = s.n(Le);
 			const {
 				fbt: Ie
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(j.t)(), Se = (e, t) => t.match.params.sort || a.P, Re = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(j.t)(), Se = (e, t) => t.match.params.sort || a.P, Pe = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(B.Posts), e.hasSubreddits && t.push(B.Communities), e.childRelationships.length && t.push(B.RelatedTopics), t) : t
-			}, Pe = Object(d.b)(() => Object(r.a)((e, t) => Object(Ce.e)(e, t.match.params.topicSlug), (e, t) => Object(Ce.c)(e, {
+			}, Re = Object(d.b)(() => Object(r.a)((e, t) => Object(Ce.e)(e, t.match.params.topicSlug), (e, t) => Object(Ce.f)(e, {
+				topicSlug: t.match.params.topicSlug
+			}), (e, t) => Object(Ce.c)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Ce.a)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Ce.b)(e, {
 				topicSlug: t.match.params.topicSlug
-			}), j.N, Se, Oe.c, (e, t, s, i, n, r, o) => ({
-				layout: n,
-				parentRelatedTopics: s,
-				siblingRelatedTopics: i,
-				sort: r,
-				status: o || 200,
-				tabs: Re(t),
+			}), j.N, Se, Oe.c, (e, t, s, i, n, r, o, a) => ({
+				layout: r,
+				parentRelatedTopics: i,
+				siblingRelatedTopics: n,
+				sort: o,
+				status: a || 200,
+				tabs: Pe(s),
 				timeSort: void 0,
-				topic: t,
-				topicName: e
+				topic: s,
+				topicName: e,
+				topicNamePlural: t
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.h)(t.match.params))
 			})), ke = (e, t) => e === B.Communities ? L.g.Large : t;
@@ -1260,58 +1263,60 @@
 						status: r,
 						tabs: a,
 						topic: d,
-						topicName: l
-					} = this.props, m = t.params.topicSlug, h = Object(c.a)(C.b.Topic, null, {
-						topicSlug: m
+						topicName: l,
+						topicNamePlural: m
+					} = this.props, h = t.params.topicSlug, b = Object(c.a)(C.b.Topic, null, {
+						topicSlug: h
 					}), {
-						activeLayout: b,
-						activeRelationshipIndex: g,
-						activeTab: v
-					} = this.state, x = C.b.Topic;
+						activeLayout: g,
+						activeRelationshipIndex: v,
+						activeTab: x
+					} = this.state, T = C.b.Topic;
 					if (404 === r) return n.a.createElement(S.b, null);
 					if (!d) return null;
-					const T = d.childRelationships[g],
-						_ = T && T.relatedTopics || [],
-						f = n.a.createElement(n.a.Fragment, null, n.a.createElement(we, {
-							activeLayout: b,
-							activeRelationshipIndex: g,
-							activeTab: v,
+					const f = d.childRelationships[v],
+						_ = f && f.relatedTopics || [],
+						L = n.a.createElement(n.a.Fragment, null, n.a.createElement(we, {
+							activeLayout: g,
+							activeRelationshipIndex: v,
+							activeTab: x,
 							onTabClick: this.openTab,
 							topic: d,
-							topicName: l
+							topicName: l,
+							topicNamePlural: m
 						}), n.a.createElement("div", {
 							className: Object(o.a)(je.a.TopicTab, {
-								[je.a.active]: v === B.Communities
+								[je.a.active]: x === B.Communities
 							})
 						}, n.a.createElement(he, {
 							subredditIds: d.subredditIds
 						})), n.a.createElement("div", {
 							className: Object(o.a)(je.a.TopicTab, {
-								[je.a.active]: v === B.Posts
+								[je.a.active]: x === B.Posts
 							})
-						}, v === B.Posts && n.a.createElement(u.a, {
-							forcedLayout: b,
-							listingKey: h,
-							listingName: x,
+						}, x === B.Posts && n.a.createElement(u.a, {
+							forcedLayout: g,
+							listingKey: b,
+							listingName: T,
 							listingViewed: this.onViewed,
 							noPostsComponent: this.renderNoPosts,
 							onLoadMore: this.props.onLoadMorePosts
 						}), n.a.createElement(p.a, null)), n.a.createElement("div", {
 							className: Object(o.a)(je.a.TopicTab, {
-								[je.a.active]: v === B.RelatedTopics
+								[je.a.active]: x === B.RelatedTopics
 							})
 						}, n.a.createElement(y, {
 							topics: _
 						}))),
-						L = v !== B.RelatedTopics,
-						j = v !== B.Communities && a.includes(B.Communities),
-						I = n.a.createElement("div", {
+						j = x !== B.RelatedTopics,
+						I = x !== B.Communities && a.includes(B.Communities),
+						P = n.a.createElement("div", {
 							className: je.a.WidgetsContainer
-						}, j && n.a.createElement(O.a, {
+						}, I && n.a.createElement(O.a, {
 							onSeeMoreCommunities: this.openCommunitiesTab,
 							subredditIds: d.subredditIds,
 							topicUrl: d.url
-						}), L && d.childRelationships.map(this.renderRelationship), n.a.createElement(y, {
+						}), j && d.childRelationships.map(this.renderRelationship), n.a.createElement(y, {
 							limit: 5,
 							title: Ie._("Similar Topics", null, {
 								hk: "1Kv3xR"
@@ -1320,17 +1325,17 @@
 						}));
 					return n.a.createElement(E.a, null, n.a.createElement(N.a, {
 						className: Object(o.a)(je.a.Container, e),
-						content: f,
+						content: L,
 						fitPageToContent: !0,
-						forcedLayout: b,
+						forcedLayout: g,
 						sidebars: [null, n.a.createElement(w.a, {
 							key: "right",
 							className: je.a.SidebarRight,
-							listingName: x
-						}, I)],
+							listingName: T
+						}, P)],
 						navBar: n.a.createElement(U, {
-							activeTab: v,
-							layout: b,
+							activeTab: x,
+							layout: g,
 							onTabClick: this.openTab,
 							parentRelatedTopics: s,
 							tabs: a,
@@ -1339,8 +1344,8 @@
 					}))
 				}
 			}
-			t.default = Ne(Pe(He))
+			t.default = Ne(Re(He))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.79ee7865ed58475e5479.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.6b8fab0c33d0ba376d33.js.map
