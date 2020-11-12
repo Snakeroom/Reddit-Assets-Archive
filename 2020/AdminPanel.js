@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.62ae12212f6b56c48956.js
-// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.a501e68e7e5da0ebd883.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -1551,4 +1551,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.62ae12212f6b56c48956.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.a501e68e7e5da0ebd883.js.map

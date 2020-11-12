@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5feeba0ce4f6d924e805.js
-// Retrieved at 11/12/2020, 11:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.23412abe06c96145beb4.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -287,13 +287,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Ub
 				});
-				return Object(m.dd)(t) ? void 0 : t
+				return Object(m.ed)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Vb
 				});
-				return Object(m.dd)(t) ? void 0 : t
+				return Object(m.ed)(t) ? void 0 : t
 			}, (e, t) => e === m.Wb.Enabled && t === m.Wb.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -342,7 +342,7 @@
 			};
 			const x = (e => t => ((e, t) => "".concat(e, "(").concat((e => e.displayName || e.name || "Component")(t), ")"))(e, t))("WithMux"),
 				E = Object({
-					SENTRY_RELEASE_VERSION: "52920a0-production"
+					SENTRY_RELEASE_VERSION: "7027c64-production"
 				}),
 				y = {
 					anonymousUserId: "t2_anonymous",
@@ -3546,7 +3546,7 @@
 				} = n;
 				const r = a();
 				if (Object(ys.I)(r))
-					if (Object(Be.f)(r)) await Object(ot.h)(o(), e, t);
+					if (Object(Be.g)(r)) await Object(ot.h)(o(), e, t);
 					else {
 						await Object(u.d)(e);
 						const s = Object(Ke.l)(a(), e);
@@ -4319,10 +4319,10 @@
 				},
 				Qa = Object(i.c)({
 					currentStream: Za,
-					inRpanSharingTimestampExperiment: Be.d,
-					inStreamingSubredditIntegration: Be.e,
-					inStreamingUiRefreshViewer: Be.f,
-					inViewerFeedTheMeter: (e, t) => Object(Be.g)(e, t, Za),
+					inRpanSharingTimestampExperiment: Be.e,
+					inStreamingSubredditIntegration: Be.f,
+					inStreamingUiRefreshViewer: Be.g,
+					inViewerFeedTheMeter: (e, t) => Object(Be.h)(e, t, Za),
 					isApiError: (e, t) => {
 						let {
 							currentStreamId: s
@@ -5066,8 +5066,8 @@
 					} = t;
 					return Bn(e, s)
 				},
-				shouldSendAutoMuteRulesAndWarnings: e => Object(Be.h)(e),
-				shouldSendAutoMuteWarningsOnly: e => Object(Be.i)(e)
+				shouldSendAutoMuteRulesAndWarnings: e => Object(Be.i)(e),
+				shouldSendAutoMuteWarningsOnly: e => Object(Be.j)(e)
 			});
 			var Wn;
 			! function(e) {
@@ -5307,11 +5307,11 @@
 					currentStream: Ke.d,
 					currentStreamStartTime: Ke.e,
 					currentHlsUrl: Ke.b,
-					inRpanLoadingAnimation: Be.b,
-					inRpanNewVolumePolicy: Be.c,
-					inStreamingSubredditIntegration: Be.e,
+					inRpanLoadingAnimation: Be.c,
+					inRpanNewVolumePolicy: Be.d,
+					inStreamingSubredditIntegration: Be.f,
 					inVideoNewVolumePolicyFeed: Fe.a,
-					inViewerFeedTheMeter: (e, t) => Object(Be.g)(e, t, Ke.d),
+					inViewerFeedTheMeter: (e, t) => Object(Be.h)(e, t, Ke.d),
 					isIntroInProgress: Ge.b,
 					isMuted: e => e.publicAccessNetwork.userSettings.isMuted,
 					isOverlayOpen: Ue.i,
@@ -5332,7 +5332,7 @@
 					isEndBroadcastModalOpen: e => "rpan-end-broadcast-confirmation-id" === Object(me.a)(e),
 					isRemovalReasonModalOpen: e => "rpan-add-removal-reason-id" === Object(me.a)(e),
 					isIntroChatModalOpen: e => "rpan-intro-chat-modal-id" === Object(me.a)(e),
-					shouldSendAutoMuteRulesAndWarnings: e => Object(Be.h)(e),
+					shouldSendAutoMuteRulesAndWarnings: e => Object(Be.i)(e),
 					previewUrl: Ke.c
 				}),
 				uo = Object(o.b)(mo, (e, t) => ({
@@ -6060,4 +6060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5feeba0ce4f6d924e805.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.23412abe06c96145beb4.js.map

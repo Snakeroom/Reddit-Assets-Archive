@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.4cbd6b388ba2f8c765f8.js
-// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.58036edc66d9d2a75b9d.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -8438,7 +8438,7 @@
 						} = t;
 						return Object(re.a)(e) === Object(Q.a)(s)
 					},
-					inRpanSharingTimestampExperiment: ae.d
+					inRpanSharingTimestampExperiment: ae.e
 				}), (e, t) => {
 					let {
 						permalink: s,
@@ -9744,7 +9744,7 @@
 						} = t;
 						return Object(S.b)(Object(f.a)(s))(e)
 					},
-					inRpanSharingTimestampExperiment: I.d
+					inRpanSharingTimestampExperiment: I.e
 				}),
 				F = Object(a.b)(A, (e, t) => {
 					var {
@@ -13705,4 +13705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.4cbd6b388ba2f8c765f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.58036edc66d9d2a75b9d.js.map

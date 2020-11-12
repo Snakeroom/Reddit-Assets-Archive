@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.9890ce2ece9ecc09025b.js
-// Retrieved at 10/22/2020, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.d68c8b46e5d51c6ca91a.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -627,7 +627,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!a.m[t]
 				},
-				importAsync: () => Promise.all([a.e("vendors~CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki~reddit-components-Governance-Tra~2c7f90aa"), a.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~e74e7afb"), a.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~89877e6b"), a.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~231ed33d"), a.e("vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~b2d0d5d1"), a.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a"), a.e("reddit-components-Governance-TransactionModals-SubscriptionModal")]).then(a.bind(null, "./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.tsx")),
+				importAsync: () => Promise.all([a.e("vendors~CollectionCommentsPage~CommentsPage~RpanListingUnit~Subreddit~SubredditWiki~reddit-component~1ffa6388"), a.e("vendors~CommunityPointsLearnMore~Settings~reddit-components-Governance-TransactionModals-ClaimPoints~e74e7afb"), a.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-compo~89877e6b"), a.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance~231ed33d"), a.e("vendors~GovernanceTransferPointsModal~reddit-components-Governance-TransactionModals-ClaimPointsModa~b2d0d5d1"), a.e("reddit-components-Governance-TransactionModals-ClaimPointsModal~reddit-components-Governance-Transac~bbc9464a"), a.e("reddit-components-Governance-TransactionModals-SubscriptionModal")]).then(a.bind(null, "./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -862,8 +862,8 @@
 				M = a("./src/reddit/selectors/user.ts"),
 				S = a("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				T = a.n(S);
-			const B = 400;
-			class L extends m.a.Component {
+			const L = 400;
+			class B extends m.a.Component {
 				constructor() {
 					super(...arguments), this.elementRef = null, this.state = {
 						query: ""
@@ -873,7 +873,7 @@
 						}, this.dispatchOnChange)
 					}, this.dispatchOnChange = O()(() => {
 						this.props.onChange(this.state.query)
-					}, B), this.focusOnInput = () => {
+					}, L), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
 					}
 				}
@@ -914,7 +914,7 @@
 			const A = Object(l.c)({
 				isNightMode: M.T
 			});
-			var R = Object(d.b)(A)(L),
+			var R = Object(d.b)(A)(B),
 				z = a("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				F = a.n(z);
 			const G = 4,
@@ -2295,8 +2295,8 @@
 				M = a("./src/reddit/components/ScrollAnimation/index.tsx"),
 				S = a("./src/reddit/helpers/richTextEditor/index.ts"),
 				T = a("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
-				B = a("./src/reddit/icons/svgs/FormattingBold/index.tsx"),
-				L = a("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
+				L = a("./src/reddit/icons/svgs/FormattingBold/index.tsx"),
+				B = a("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
 				A = a("./src/reddit/icons/svgs/FormattingItalics/index.tsx"),
 				R = a("./src/reddit/icons/svgs/FormattingMonospace/index.tsx"),
 				z = a("./src/reddit/icons/svgs/FormattingOrderedList/index.tsx"),
@@ -2635,11 +2635,11 @@
 						className: Object(l.a)(ne.a.gifIcon)
 					})), r.a.createElement("div", {
 						className: ne.a.divider
-					}), r.a.createElement(B.a, {
+					}), r.a.createElement(L.a, {
 						className: ne.a.icon
 					}), r.a.createElement(A.a, {
 						className: ne.a.icon
-					}), r.a.createElement(L.a, {
+					}), r.a.createElement(B.a, {
 						className: ne.a.icon
 					}), r.a.createElement(G.a, {
 						className: ne.a.icon
@@ -2981,7 +2981,7 @@
 				Me = a.n(Ie);
 			const Se = 1e3,
 				Te = 66;
-			class Be extends r.a.Component {
+			class Le extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						currentBadgeIdx: 0
@@ -3037,7 +3037,7 @@
 					}))))
 				}
 			}
-			const Le = Object(i.c)({
+			const Be = Object(i.c)({
 				styleBadges: (e, t) => {
 					let {
 						subredditId: a
@@ -3049,7 +3049,7 @@
 				},
 				username: e => e.user.account && "u/".concat(e.user.account.displayText) || "u/username"
 			});
-			var Ae = Object(n.b)(Le)(Be),
+			var Ae = Object(n.b)(Be)(Le),
 				Re = a("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/index.m.less"),
 				ze = a.n(Re);
 			const Fe = [{
@@ -3476,8 +3476,8 @@
 				Mt = a("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
 				St = a("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
 				Tt = a("./src/reddit/actions/governance/errorToast.ts"),
-				Bt = a("./src/reddit/actions/shortcuts/close.ts"),
-				Lt = a("./src/reddit/contexts/ApiContext.tsx"),
+				Lt = a("./src/reddit/actions/shortcuts/close.ts"),
+				Bt = a("./src/reddit/contexts/ApiContext.tsx"),
 				At = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				Rt = a("./src/reddit/endpoints/economics/specialMembership.ts"),
 				zt = a("./src/reddit/helpers/economics/setupSubredditPremiumButton.ts"),
@@ -3602,7 +3602,7 @@
 					return Object(O.x)(e, a.id)
 				}
 			});
-			var Ut = Object(Lt.b)(Object(n.b)(Zt, (e, t) => {
+			var Ut = Object(Bt.b)(Object(n.b)(Zt, (e, t) => {
 					let {
 						subreddit: a,
 						onComplete: s
@@ -3610,7 +3610,7 @@
 					return {
 						onError: t => Object(Tt.a)(e, t),
 						onPaymentSuccessful: t => {
-							t ? e(Object(St.g)(a.id, !0)).then(() => e(Object(Bt.a)(() => {}))).then(() => s && s()).then(() => e(Object(Mt.c)({
+							t ? e(Object(St.g)(a.id, !0)).then(() => e(Object(Lt.a)(() => {}))).then(() => s && s()).then(() => e(Object(Mt.c)({
 								subredditId: a.id,
 								initialView: Ft.c.MyBadges
 							}))) : e(Object(It.b)(a.url))
@@ -4092,7 +4092,7 @@
 					username: "Jachael123_"
 				}]).slice(0, 3),
 				Ta = 1e4;
-			class Ba extends r.a.Component {
+			class La extends r.a.Component {
 				constructor() {
 					super(...arguments), this.timeoutRef = null, this.state = {
 						currentSlideIdx: 0
@@ -4211,11 +4211,11 @@
 					}))))
 				}
 			}
-			Ba.defaultProps = {
+			La.defaultProps = {
 				testimonies: Sa
 			};
-			var La = a("./src/reddit/pages/meta/MembershipPaywallPage/Thanks/index.m.less"),
-				Aa = a.n(La);
+			var Ba = a("./src/reddit/pages/meta/MembershipPaywallPage/Thanks/index.m.less"),
+				Aa = a.n(Ba);
 			const Ra = Object(i.c)({
 				meta: (e, t) => {
 					let {
@@ -4237,7 +4237,7 @@
 						className: Aa.a.title
 					}, E.fbt._("The Community Thanks You", null, {
 						hk: "28CsBt"
-					})), o.testimonials && r.a.createElement(Ba, {
+					})), o.testimonials && r.a.createElement(La, {
 						flatDisplay: !0
 					}), o.testimonials && r.a.createElement("div", {
 						className: Aa.a.divider
@@ -4401,7 +4401,7 @@
 					}, x.defaults(t)), {
 						subreddit: x.subreddit(t)
 					})
-				}, r.a.createElement(Ba, null)), a && r.a.createElement(b, {
+				}, r.a.createElement(La, null)), a && r.a.createElement(b, {
 					fireOnce: !0,
 					onEnter: t => Object.assign(Object.assign({
 						source: "meta",
@@ -4541,4 +4541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.9890ce2ece9ecc09025b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.d68c8b46e5d51c6ca91a.js.map

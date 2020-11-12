@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.c4be1a74f6052ac1e33c.js
-// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.536809903db4adea4855.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~InFeedChaining~Reddit"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -1155,7 +1155,7 @@
 							});
 						if (i && Object(we.a)(s())) return void t(Object(a.c)(i.url));
 						if ((O.media && O.media.type) === de.o.LIVEVIDEO) {
-							const e = Object(ke.e)(p),
+							const e = Object(ke.f)(p),
 								s = O.belongsTo.type === te.a.SUBREDDIT,
 								r = e && s ? i.url : "/",
 								n = Object(x.n)(O.id),
@@ -2145,7 +2145,7 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts");
 			const i = e => {
-				if (!Object(r.dd)(e)) return e || void 0
+				if (!Object(r.ed)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -2163,7 +2163,7 @@
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
 					experimentName: r.tc
-				}) === r.Cc.Enabled
+				}) === r.Dc.Enabled
 			})(e) && (e => {
 				const t = Object(n.e)(e);
 				return !!t && a.has(t.toLowerCase())
@@ -2181,4 +2181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.c4be1a74f6052ac1e33c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~InFeedChaining~Reddit.536809903db4adea4855.js.map

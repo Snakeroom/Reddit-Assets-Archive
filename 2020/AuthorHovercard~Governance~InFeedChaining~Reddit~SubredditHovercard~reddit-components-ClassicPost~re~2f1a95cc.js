@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.f13716490e7dafab35fb.js
-// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.4ad88a6bc8785126c3b8.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc"], {
 		"./src/graphql/operations/FetchActiveCoinSale.json": function(e) {
@@ -390,13 +390,13 @@
 								experimentEligibilitySelector: h.a,
 								experimentName: j.mb
 							});
-							return !(!t || Object(j.dd)(t))
+							return !(!t || Object(j.ed)(t))
 						})(a)) && ("repeat_purchaser" !== s.dealInfo.type || (e => {
 							const t = Object(h.c)(e, {
 								experimentEligibilitySelector: h.a,
 								experimentName: j.kb
 							});
-							return !(!t || Object(j.dd)(t))
+							return !(!t || Object(j.ed)(t))
 						})(a)) && (e(w({
 							correlationId: t,
 							packageId: r
@@ -2879,7 +2879,7 @@
 					experimentEligibilitySelector: s.I,
 					experimentName: n.hb
 				});
-				return !(!t || Object(n.dd)(t))
+				return !(!t || Object(n.ed)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
@@ -2903,4 +2903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.f13716490e7dafab35fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Governance~InFeedChaining~Reddit~SubredditHovercard~reddit-components-ClassicPost~re~2f1a95cc.4ad88a6bc8785126c3b8.js.map

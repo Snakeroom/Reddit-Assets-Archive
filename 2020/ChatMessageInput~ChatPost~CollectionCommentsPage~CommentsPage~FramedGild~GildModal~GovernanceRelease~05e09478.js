@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.adcba788ffe30a133986.js
-// Retrieved at 10/29/2020, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.d0af484f4509a25c8d44.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1193,7 +1193,7 @@
 			})), s.d(t, "i", (function() {
 				return q
 			})), s.d(t, "e", (function() {
-				return Z
+				return Q
 			}));
 			var n = s("./src/lib/unicodeUtils/index.ts"),
 				r = s("./node_modules/lodash/reduce.js"),
@@ -1351,12 +1351,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case N.Pc.SmIcon:
+						case N.Qc.SmIcon:
 							return a.a.createElement(k, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case N.Pc.SmIconHc:
+						case N.Qc.SmIconHc:
 							return a.a.createElement(k, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1377,7 +1377,7 @@
 						i = n.length;
 					for (let a = 0; a < i; a++) {
 						const e = n[a];
-						o.push(e.e === h.w ? e.t : Z(e, t, a))
+						o.push(e.e === h.w ? e.t : Q(e, t, a))
 					}
 					const d = c.w[r - 1];
 					return a.a.createElement(d, {
@@ -1497,7 +1497,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) n.push(Q(r, o));
+						if (r.e === h.A) n.push(Z(r, o));
 						else if (r.e === h.x) n.push(a.a.createElement(C.a, {
 							key: o
 						}, q(r.c, t, s)));
@@ -1513,18 +1513,18 @@
 									media: e
 								}))
 							}
-						} else n.push(Z(r, s, o))
+						} else n.push(Q(r, s, o))
 					}
 					return n
 				},
-				Z = (e, t, s) => {
+				Q = (e, t, s) => {
 					switch (e.e) {
 						case h.o:
 							return a.a.createElement(c.a, {
 								href: e.u,
 								key: s,
 								title: e.a
-							}, Q({
+							}, Z({
 								t: e.t,
 								f: e.f
 							}, 0));
@@ -1548,7 +1548,7 @@
 							}, e.t)
 					}
 				},
-				Q = (e, t) => {
+				Z = (e, t) => {
 					const {
 						f: s,
 						t: r
@@ -1799,12 +1799,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Kc
+						experimentName: n.Lc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Pc.SmIcon || t === n.Pc.SmIconHc
+					return t === n.Qc.SmIcon || t === n.Qc.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -1830,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.adcba788ffe30a133986.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost~CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceRelease~05e09478.d0af484f4509a25c8d44.js.map

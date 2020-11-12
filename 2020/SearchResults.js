@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.daf24163d1db79586e37.js
-// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.fb3ab7c9ef6c184dee6e.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults", "InFeedChaining~SubredditTopContent~TopWeekPostsDiscoveryUnit", "ChatPost~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -6450,7 +6450,7 @@
 						} = t;
 						return Object(re.a)(e) === Object(Z.a)(s)
 					},
-					inRpanSharingTimestampExperiment: ie.d
+					inRpanSharingTimestampExperiment: ie.e
 				}), (e, t) => {
 					let {
 						permalink: s,
@@ -9769,7 +9769,7 @@
 						} = t;
 						return Object(I.b)(Object(f.a)(s))(e)
 					},
-					inRpanSharingTimestampExperiment: P.d
+					inRpanSharingTimestampExperiment: P.e
 				}),
 				A = Object(i.b)(F, (e, t) => {
 					var {
@@ -13380,7 +13380,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => n.Bc.Treatment1 === Object(o.c)(e, {
+			const r = e => n.Cc.Treatment1 === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
 				experimentName: n.sc
 			})
@@ -13400,4 +13400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.daf24163d1db79586e37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.fb3ab7c9ef6c184dee6e.js.map

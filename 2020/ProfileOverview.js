@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.1aafe3a3254f1360f987.js
-// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.212e39991379c44f7b6d.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "Frontpage~ModListing~Multireddit~ProfileComments~ProfilePosts~ProfilePrivate~SearchResults~Subreddit~Topic", "Frontpage~ModListing~Multireddit~ProfilePosts~Subreddit", "ChatPost~ModQueuePages", "ProfilePosts~ProfileSnoobuilder", "RpanListingUnit~reddit-components-MediumPost", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -5914,7 +5914,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Fe = !!te && !Object(Z.dd)(te), Ae = (!O || Fe) && !le.isSponsored, Be = Object(_.s)(le, v), {
+					})(e), Fe = !!te && !Object(Z.ed)(te), Ae = (!O || Fe) && !le.isSponsored, Be = Object(_.s)(le, v), {
 						source: De
 					} = Be, We = o.a.createElement(A.a, {
 						className: Object(w.a)(ue.a.container, r, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -8817,7 +8817,7 @@
 						} = t;
 						return Object(re.a)(e) === Object(Q.a)(s)
 					},
-					inRpanSharingTimestampExperiment: ie.d
+					inRpanSharingTimestampExperiment: ie.e
 				}), (e, t) => {
 					let {
 						permalink: s,
@@ -10258,7 +10258,7 @@
 						} = t;
 						return Object(P.b)(Object(f.a)(s))(e)
 					},
-					inRpanSharingTimestampExperiment: S.d
+					inRpanSharingTimestampExperiment: S.e
 				}),
 				A = Object(i.b)(F, (e, t) => {
 					var {
@@ -15667,7 +15667,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.gb
 				});
-				return !(!t || Object(n.dd)(t))
+				return !(!t || Object(n.ed)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
@@ -15697,4 +15697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1aafe3a3254f1360f987.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.212e39991379c44f7b6d.js.map

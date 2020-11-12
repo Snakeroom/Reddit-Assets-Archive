@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.0f91736eca4c089d5bc7.js
-// Retrieved at 11/9/2020, 5:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b806f218e1d19d686cec.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Governance~InFeedChaining~Reddit", "RpanListingUnit~reddit-components-MediumPost", "EconHelperActions", "vendors~InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2071,7 +2071,7 @@
 							});
 						if (o && Object(ye.a)(s())) return void t(Object(i.c)(o.url));
 						if ((O.media && O.media.type) === de.o.LIVEVIDEO) {
-							const e = Object(je.e)(p),
+							const e = Object(je.f)(p),
 								s = O.belongsTo.type === te.a.SUBREDDIT,
 								n = e && s ? o.url : "/",
 								r = Object(E.n)(O.id),
@@ -8747,7 +8747,7 @@
 						} = t;
 						return Object(re.a)(e) === Object(Q.a)(s)
 					},
-					inRpanSharingTimestampExperiment: ie.d
+					inRpanSharingTimestampExperiment: ie.e
 				}), (e, t) => {
 					let {
 						permalink: s,
@@ -9689,7 +9689,7 @@
 						} = t;
 						return Object(I.b)(Object(g.a)(s))(e)
 					},
-					inRpanSharingTimestampExperiment: P.d
+					inRpanSharingTimestampExperiment: P.e
 				}),
 				A = Object(i.b)(R, (e, t) => {
 					var {
@@ -14179,7 +14179,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts");
 			const o = e => {
-				if (!Object(n.dd)(e)) return e || void 0
+				if (!Object(n.ed)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/realtimeComments.ts": function(e, t, s) {
@@ -14197,7 +14197,7 @@
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(c.H)(e),
 					experimentName: n.tc
-				}) === n.Cc.Enabled
+				}) === n.Dc.Enabled
 			})(e) && (e => {
 				const t = Object(r.e)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -14271,4 +14271,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.0f91736eca4c089d5bc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b806f218e1d19d686cec.js.map

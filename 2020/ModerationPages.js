@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.fb097752214b41eb0e03.js
-// Retrieved at 11/10/2020, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d19992dfe9cde2c0e53d.js
+// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki~reddit-components-ProfileIdCard", "AuthorHovercard~EconTopAwardersModal~Settings~SubredditWiki", "CrowdControlModal~ProfileModeration~Settings~SubredditCreation", "ChatPost~ModQueuePages", "ModQueue~ModQueuePages", "RpanListingUnit~reddit-components-MediumPost", "SubredditCreation~SubredditInlineEditing", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
@@ -19640,7 +19640,7 @@
 						} = t;
 						return Object(ae.a)(e) === Object(Z.a)(s)
 					},
-					inRpanSharingTimestampExperiment: re.d
+					inRpanSharingTimestampExperiment: re.e
 				}), (e, t) => {
 					let {
 						permalink: s,
@@ -22757,7 +22757,7 @@
 						} = t;
 						return Object(w.b)(Object(f.a)(s))(e)
 					},
-					inRpanSharingTimestampExperiment: I.d
+					inRpanSharingTimestampExperiment: I.e
 				}),
 				F = Object(r.b)(A, (e, t) => {
 					var {
@@ -31683,7 +31683,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.qb
 				});
-				return !(!t || Object(n.dd)(t))
+				return !(!t || Object(n.ed)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
@@ -31942,4 +31942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fb097752214b41eb0e03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d19992dfe9cde2c0e53d.js.map
