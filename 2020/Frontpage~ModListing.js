@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.72242d755cceca8fcbc5.js
-// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.9b3e632526603e4b5e3f.js
+// Retrieved at 11/12/2020, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/graphql/operations/RecordCommunityAnswer.json": function(e) {
@@ -685,7 +685,7 @@
 					viewportDataLoaded: O.a,
 					pageReferrer: m.Q,
 					postListPlaceholderComponent: () => g.a,
-					isNpsScrollSurveyEnabled: f.b
+					isNpsScrollSurveyEnabled: f.c
 				},
 				k = Object(o.c)(C),
 				w = (e, t) => {
@@ -1069,4 +1069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.72242d755cceca8fcbc5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.9b3e632526603e4b5e3f.js.map
