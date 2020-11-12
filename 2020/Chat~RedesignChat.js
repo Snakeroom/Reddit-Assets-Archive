@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d8553674e78bcf61fd8d.js
-// Retrieved at 11/12/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d0163a3c7f5c3688703.js
+// Retrieved at 11/12/2020, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -8737,35 +8737,60 @@
 		"./src/chat/components/Root/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return I
 			}));
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a),
 				c = n("./node_modules/react-router/esm/react-router.js"),
 				r = (n("./assets/fonts/IBMPlexSans/font.less"), n("./assets/fonts/NotoSans/font.less"), n("./src/chat/components/FrameContent/index.tsx")),
 				o = n("./node_modules/react-redux/es/index.js"),
-				i = n("./src/chat/icons/Loader/index.tsx"),
-				l = n("./src/chat/components/CloseIcon/index.tsx"),
+				i = n("./src/config.ts"),
+				l = n("./src/lib/lessComponent.tsx"),
 				d = n("./src/chat/helpers/chatSelector.ts"),
-				u = n("./src/chat/selectors/app.ts");
-			const h = Object(d.a)({
-				isHidden: u.e,
-				isReady: u.f,
-				alert: u.b,
-				experiments: u.a
+				u = n("./src/chat/constants/theme.ts");
+			const {
+				REDDIT: h
+			} = u.b;
+			var m = n("./src/chat/icons/Loader/index.m.less"),
+				b = n.n(m);
+			const p = l.a.div("Square", b.a),
+				g = l.a.img("LoadingIcon", b.a),
+				O = l.a.wrapped(e => s.a.createElement("div", {
+					role: "progressbar",
+					className: e.className,
+					style: {
+						zIndex: e.zIndex || 1
+					}
+				}, e.children), "Wrapper", b.a),
+				f = Object(d.a)({
+					isNightmode: e => (e => !(e.user.prefs.globalTheme !== h))(e)
+				});
+			var j = Object(o.b)(f)(e => s.a.createElement(O, {
+					zIndex: e.zIndex || 1
+				}, s.a.createElement(p, null, s.a.createElement(g, {
+					src: e.isNightmode ? "".concat(i.a.assetPath, "/img/loader_2orbit_loop.gif") : "".concat(i.a.assetPath, "/img/loader_2orbit_loop_nightmode.gif"),
+					alt: "Loading"
+				})))),
+				C = n("./src/chat/components/CloseIcon/index.tsx"),
+				E = n("./src/chat/selectors/app.ts");
+			const _ = Object(d.a)({
+				isHidden: E.e,
+				isReady: E.f,
+				alert: E.b,
+				experiments: E.a
 			});
-			var m = Object(o.b)(h)(e => e.isHidden ? null : e.isReady && e.experiments ? e.children : s.a.createElement(s.a.Fragment, null, s.a.createElement(l.a, null), s.a.createElement(i.a, {
+			var v = Object(o.b)(_)(e => e.isHidden ? null : e.isReady && e.experiments ? e.children : s.a.createElement(s.a.Fragment, null, s.a.createElement(C.a, null), s.a.createElement(j, {
 					textType: e.alert || "",
 					isFadeOut: e.isReady,
 					zIndex: 2
 				}))),
-				b = n("./src/chat/components/ThemeProvider/index.tsx");
+				y = n("./src/chat/components/ThemeProvider/index.tsx");
 
-			function p(e, t) {
-				return s.a.createElement(b.a, {
+			function I(e, t) {
+				return s.a.createElement(y.a, {
 					className: r.a
 				}, s.a.createElement(e, null, s.a.createElement(c.d, {
-					component: e => s.a.createElement(m, null, s.a.createElement(c.f, {
+					component: e => s.a.createElement(v, null, s.a.createElement(c.f, {
 						location: e.location
 					}, t))
 				})))
@@ -10166,40 +10191,6 @@
 				Wrapper: "_2zstkXjlzum5VrIXwJ_LbE",
 				wrapper: "_2zstkXjlzum5VrIXwJ_LbE"
 			}
-		},
-		"./src/chat/icons/Loader/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./src/config.ts"),
-				s = n("./node_modules/react/index.js"),
-				c = n.n(s),
-				r = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/lib/lessComponent.tsx"),
-				i = n("./src/chat/helpers/chatSelector.ts"),
-				l = n("./src/chat/constants/theme.ts");
-			const {
-				REDDIT: d
-			} = l.b;
-			var u = n("./src/chat/icons/Loader/index.m.less"),
-				h = n.n(u);
-			const m = o.a.div("Square", h.a),
-				b = o.a.img("LoadingIcon", h.a),
-				p = o.a.wrapped(e => c.a.createElement("div", {
-					role: "progressbar",
-					className: e.className,
-					style: {
-						zIndex: e.zIndex || 1
-					}
-				}, e.children), "Wrapper", h.a),
-				g = Object(i.a)({
-					isNightmode: e => (e => !(e.user.prefs.globalTheme !== d))(e)
-				}),
-				O = Object(r.b)(g);
-			t.a = O(e => c.a.createElement(p, {
-				zIndex: e.zIndex || 1
-			}, c.a.createElement(m, null, c.a.createElement(b, {
-				src: e.isNightmode ? "".concat(a.a.assetPath, "/img/loader_2orbit_loop.gif") : "".concat(a.a.assetPath, "/img/loader_2orbit_loop_nightmode.gif"),
-				alt: "Loading"
-			}))))
 		},
 		"./src/chat/icons/Nsfw/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -14885,4 +14876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d8553674e78bcf61fd8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.8d0163a3c7f5c3688703.js.map
