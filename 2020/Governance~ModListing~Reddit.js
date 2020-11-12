@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.ca13b938cc587969f7de.js
-// Retrieved at 11/12/2020, 11:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.66b55f35c1f3fab9287a.js
+// Retrieved at 11/12/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit"], {
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
@@ -2340,26 +2340,26 @@
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/core-js/modules/es6.regexp.replace.js");
 			var s = n("./node_modules/@reddit/onetrust-integration/dist/esm/index.js"),
-				r = n("./node_modules/Base64/base64.js"),
-				o = n("./src/config.ts"),
-				i = n("./node_modules/fbt/lib/FbtPublic.js"),
-				c = n("./node_modules/js-cookie/src/js.cookie.js"),
-				a = n.n(c),
-				d = n("./node_modules/lodash/isEmpty.js"),
-				u = n.n(d),
-				l = n("./node_modules/lodash/omit.js"),
-				b = n.n(l),
-				_ = n("./node_modules/lodash/pick.js"),
-				f = n.n(_),
-				m = n("./src/lib/constants/index.ts"),
-				p = n("./src/lib/makeActionCreator/index.ts"),
-				O = n("./src/lib/omitHeaders/index.ts"),
-				g = n("./src/reddit/actions/chat/toggle.ts"),
-				j = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				E = n("./src/reddit/actions/users.ts"),
-				h = n("./src/reddit/constants/cookie.ts"),
-				I = n("./src/reddit/constants/headers.ts"),
-				S = n("./src/reddit/endpoints/user/preferences.ts"),
+				r = n("./src/config.ts"),
+				o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				i = n("./node_modules/js-cookie/src/js.cookie.js"),
+				c = n.n(i),
+				a = n("./node_modules/lodash/isEmpty.js"),
+				d = n.n(a),
+				u = n("./node_modules/lodash/omit.js"),
+				l = n.n(u),
+				b = n("./node_modules/lodash/pick.js"),
+				_ = n.n(b),
+				f = n("./src/lib/constants/index.ts"),
+				m = n("./src/lib/makeActionCreator/index.ts"),
+				p = n("./src/lib/omitHeaders/index.ts"),
+				O = n("./src/reddit/actions/chat/toggle.ts"),
+				g = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				j = n("./src/reddit/actions/users.ts"),
+				E = n("./src/reddit/constants/cookie.ts"),
+				h = n("./src/reddit/constants/headers.ts"),
+				I = n("./src/reddit/endpoints/user/preferences.ts"),
+				S = n("./src/reddit/helpers/cookies/index.ts"),
 				T = n("./src/reddit/endpoints/moderator/structuredStyles.ts"),
 				y = n("./src/lib/makeApiRequest/index.ts"),
 				A = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
@@ -2387,27 +2387,27 @@
 				z = "PREFERENCES__HAMBURGER_TRAY_TOGGLED",
 				Q = "PREFERENCES__RPAN_DU_DISMISSED",
 				J = "PREFERENCES__TOP_CONTENT_DISMISSAL_PREF_SET",
-				X = Object(p.a)(B),
-				Z = Object(p.a)(W),
-				$ = Object(p.a)(H),
-				ee = Object(p.a)(q),
-				te = Object(p.a)(Y),
-				ne = Object(p.a)(Q),
-				se = Object(p.a)(J),
-				re = (Object(p.a)(K), Object(p.a)(V)),
-				oe = Object(p.a)(F),
-				ie = (Object(p.a)(z), "PREFERENCES__COLLAPSED_TRAY_TOGGLED"),
-				ce = (Object(p.a)(ie), e => async (t, n, s) => {
+				X = Object(m.a)(B),
+				Z = Object(m.a)(W),
+				$ = Object(m.a)(H),
+				ee = Object(m.a)(q),
+				te = Object(m.a)(Y),
+				ne = Object(m.a)(Q),
+				se = Object(m.a)(J),
+				re = (Object(m.a)(K), Object(m.a)(V)),
+				oe = Object(m.a)(F),
+				ie = (Object(m.a)(z), "PREFERENCES__COLLAPSED_TRAY_TOGGLED"),
+				ce = (Object(m.a)(ie), e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
 					const o = r(),
-						i = await Object(y.a)(Object(O.a)(o, [I.a]), {
+						i = await Object(y.a)(Object(p.a)(o, [h.a]), {
 							data: {
 								lang: e.replace("-", "_")
 							},
 							endpoint: "".concat(o.apiUrl, "/api/v1/me/prefs"),
-							method: m.db.PATCH,
+							method: f.db.PATCH,
 							type: "json"
 						});
 					if (i.ok) {
@@ -2421,7 +2421,7 @@
 					} = s;
 					t(Z({
 						layout: e
-					})), t(Object(E.o)())
+					})), t(Object(j.o)())
 				}, de = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: o
@@ -2448,176 +2448,158 @@
 					let {
 						apiContext: r
 					} = s;
-					n().user.account && await Object(S.d)(e, r())
-				}, le = e => async (t, n, c) => {
+					n().user.account && await Object(I.d)(e, r())
+				}, le = e => async (t, n, s) => {
 					let {
-						apiContext: d
-					} = c;
-					const u = n();
-					if (Object(U.j)(u)) t(Object(v.e)({
+						apiContext: i
+					} = s;
+					const a = n();
+					Object(U.j)(a) ? t(Object(v.e)({
 						kind: L.b.Error,
-						text: i.fbt._("In order to continue styling your community, Night Mode must be turned off.", null, {
+						text: o.fbt._("In order to continue styling your community, Night Mode must be turned off.", null, {
 							hk: "1yZidT"
 						})
-					}));
-					else {
-						if (u.user.account) await Object(S.e)(e, d());
-						else {
-							const t = a.a.get(h.j);
-							if (t) {
-								const n = JSON.parse(Object(r.atob)(t));
-								n.prefs.nightmode = e, Object(s.b)(h.j, btoa(JSON.stringify(n)), {
-									domain: o.a.cookieDomain
-								})
-							}
-						}
-						t(oe({
+					})) : (a.user.account ? await Object(I.e)(e, i()) : Object(S.a)({
+						prefs: {
 							nightmode: e
-						})), t(Object(g.f)(e)), a.a.remove(h.d, {
-							domain: o.a.cookieDomain
-						})
-					}
+						}
+					}), t(oe({
+						nightmode: e
+					})), t(Object(O.f)(e)), c.a.remove(E.d, {
+						domain: r.a.cookieDomain
+					}))
 				}, be = () => async (e, t, n) => {
 					let {
-						apiContext: c
+						apiContext: s
 					} = n;
-					const d = t(),
-						u = d.user.prefs.topContentTimesDismissed + 1,
-						l = Date.now();
-					if (d.user.account) e(Ee({
-						topContentDismissalTime: l,
-						topContentTimesDismissed: u
-					}, !1));
-					else {
-						const e = a.a.get(h.j);
-						if (e) {
-							const t = JSON.parse(Object(r.atob)(e));
-							t.prefs[P.d] = l, t.prefs[P.e] = u, Object(s.b)(h.j, btoa(JSON.stringify(t)), {
-								domain: o.a.cookieDomain
-							})
+					const r = t(),
+						i = r.user.prefs.topContentTimesDismissed + 1,
+						c = Date.now();
+					r.user.account ? e(Ee({
+						topContentDismissalTime: c,
+						topContentTimesDismissed: i
+					}, !1)) : Object(S.a)({
+						prefs: {
+							[P.d]: c,
+							[P.e]: i
 						}
-					}
-					e(se({
-						topContentDismissalTime: l,
-						topContentTimesDismissed: u
+					}), e(se({
+						topContentDismissalTime: c,
+						topContentTimesDismissed: i
 					})), e(Object(v.e)({
 						kind: L.b.SuccessCommunity,
-						text: i.fbt._("Got it! We will show you less of this", null, {
+						text: o.fbt._("Got it! We will show you less of this", null, {
 							hk: "4op5Wa"
 						})
 					}))
-				}, _e = e => async (t, n, c) => {
+				}, _e = e => async (t, n, s) => {
 					let {
-						apiContext: d
-					} = c;
-					const u = -1 === [j.R, "r/popular"].indexOf(e),
-						l = Date.now(),
-						b = n(),
-						_ = i.fbt._("Got it! We will show you less of this", null, {
+						apiContext: r
+					} = s;
+					const i = -1 === [g.R, "r/popular"].indexOf(e),
+						c = Date.now(),
+						a = n(),
+						d = o.fbt._("Got it! We will show you less of this", null, {
 							hk: "4op5Wa"
 						});
-					if (b.user.account)
-						if (u) {
+					if (a.user.account)
+						if (i) {
 							const n = e.replace(/^r\//, ""),
-								s = Object(M.G)(b, n);
+								s = Object(M.G)(a, n);
 							t(Ge(s, {
-								rpanDuDismissalTime: l
+								rpanDuDismissalTime: c
 							}, !1))
 						} else t(Ee({
-							rpanDuDismissalTime: l
+							rpanDuDismissalTime: c
 						}, !1));
-					else {
-						const e = a.a.get(h.j);
-						if (e) {
-							const t = JSON.parse(Object(r.atob)(e));
-							t.prefs[P.b] = l, Object(s.b)(h.j, btoa(JSON.stringify(t)), {
-								domain: o.a.cookieDomain
-							})
+					else Object(S.a)({
+						prefs: {
+							[P.b]: c
 						}
-					}
+					});
 					t(Object(v.e)({
 						kind: L.b.SuccessCommunity,
-						text: _
-					})), t(ne(l))
-				}, fe = "SETTINGS__ACCOUNT_PREFS_UPDATE_SUCCESS", me = "SETTINGS__SUBREDDIT_PREFS_UPDATED", pe = Object(p.a)("SETTINGS__UPDATE_PENDING"), Oe = Object(p.a)("SETTINGS__UPDATE_FAILURE"), ge = Object(p.a)(fe), je = Object(p.a)(me), Ee = function(e) {
+						text: d
+					})), t(ne(c))
+				}, fe = "SETTINGS__ACCOUNT_PREFS_UPDATE_SUCCESS", me = "SETTINGS__SUBREDDIT_PREFS_UPDATED", pe = Object(m.a)("SETTINGS__UPDATE_PENDING"), Oe = Object(m.a)("SETTINGS__UPDATE_FAILURE"), ge = Object(m.a)(fe), je = Object(m.a)(me), Ee = function(e) {
 					let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
 						n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "";
-					return async (s, r, o) => {
+					return async (s, r, i) => {
 						let {
 							apiContext: c
-						} = o;
+						} = i;
 						s(pe());
-						const a = b()(e, P.a),
-							d = f()(e, P.a),
-							l = [];
-						u()(a) || l.push(Object(S.g)(a, c())), u()(d) || l.push(Object(S.b)(d, c())), (await Promise.all(l)).every(e => e.ok) ? (s(ge({
+						const a = l()(e, P.a),
+							u = _()(e, P.a),
+							b = [];
+						d()(a) || b.push(Object(I.g)(a, c())), d()(u) || b.push(Object(I.b)(u, c())), (await Promise.all(b)).every(e => e.ok) ? (s(ge({
 							preferences: e
 						})), t && s(Object(v.e)({
 							kind: L.b.SuccessCommunity,
-							text: n || i.fbt._("Changes saved", null, {
+							text: n || o.fbt._("Changes saved", null, {
 								hk: "2isjrZ"
 							})
 						}))) : (s(Oe()), t && s(Object(v.e)({
 							kind: L.b.Error,
-							text: i.fbt._("Changes failed to save", null, {
+							text: o.fbt._("Changes failed to save", null, {
 								hk: "XrtIq"
 							})
 						})))
 					}
-				}, he = "SETTINGS__SUCCESS", Ie = Object(p.a)("SETTINGS__PENDING"), Se = Object(p.a)("SETTINGS__FAILURE"), Te = Object(p.a)(he), ye = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", Ae = Object(p.a)(ye), De = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", ve = Object(p.a)(De), Pe = e => async (t, n, s) => {
+				}, he = "SETTINGS__SUCCESS", Ie = Object(m.a)("SETTINGS__PENDING"), Se = Object(m.a)("SETTINGS__FAILURE"), Te = Object(m.a)(he), ye = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", Ae = Object(m.a)(ye), De = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", ve = Object(m.a)(De), Pe = e => async (t, n, s) => {
 					let {
-						apiContext: r
+						apiContext: o
 					} = s;
 					t(Ie());
 					const i = await ((e, t) => Object(y.a)(e, {
-						endpoint: Object(A.a)("".concat(o.a.gatewayUrl, "/desktopapi/v1/prefs")),
-						method: m.db.GET,
+						endpoint: Object(A.a)("".concat(r.a.gatewayUrl, "/desktopapi/v1/prefs")),
+						method: f.db.GET,
 						data: {
 							timestamp: t ? Date.now() : void 0
 						}
-					}))(r(), e);
+					}))(o(), e);
 					i.ok ? t(Te(i.body)) : t(Se())
 				}, Re = e => async (t, n, r) => {
 					let {
 						apiContext: o
 					} = r;
-					if (n().user.account) await Object(S.a)(e, o());
+					if (n().user.account) await Object(I.a)(e, o());
 					else {
-						const e = a.a.get(h.e);
+						const e = c.a.get(E.e);
 						if (e) {
 							const t = JSON.parse(decodeURIComponent(e));
-							t.pref_quarantine_optin = !0, Object(s.b)(h.e, JSON.stringify(encodeURIComponent(t)), m.y)
+							t.pref_quarantine_optin = !0, Object(s.b)(E.e, JSON.stringify(encodeURIComponent(t)), f.y)
 						} else {
 							const e = JSON.stringify({
 								pref_quarantine_optin: !0
 							});
-							Object(s.b)(h.e, e, m.y)
+							Object(s.b)(E.e, e, f.y)
 						}
 					}
 				}, Ce = e => async (t, n, s) => {
 					let {
 						apiContext: r
 					} = s;
-					n().user.account && await Object(S.c)(e, r()), t(re({
+					n().user.account && await Object(I.c)(e, r()), t(re({
 						autoplayVideo: e
 					}))
 				}, we = (e, t) => async (n, s, r) => {
 					await ke(e, t)(n, s, r)
 				}, ke = (e, t) => async (n, s, r) => {
 					const {
-						apiContext: o
+						apiContext: i
 					} = r, c = Object(G.i)(s());
 					if (!c || !c.profileId) return;
 					n(Object(D.k)(e));
 					const a = Object(x.e)(c),
-						d = m.Ub + a,
-						u = await Object(T.d)(o(), d, e.file.name, t, await Object(C.g)(e.file));
+						d = f.Ub + a,
+						u = await Object(T.d)(i(), d, e.file.name, t, await Object(C.g)(e.file));
 					if (u.ok) {
 						let _;
 						try {
 							if (!(_ = await Object(D.g)(s(), u, e, k.a.Profiles))) return void n(Object(v.e)({
 								kind: L.b.Error,
-								text: i.fbt._("Changes failed to save", null, {
+								text: o.fbt._("Changes failed to save", null, {
 									hk: "3QlXrl"
 								})
 							}));
@@ -2632,7 +2614,7 @@
 						} catch (b) {
 							return void n(Object(v.e)({
 								kind: L.b.Error,
-								text: i.fbt._("Changes failed to save", null, {
+								text: o.fbt._("Changes failed to save", null, {
 									hk: "3QlXrl"
 								})
 							}))
@@ -2643,7 +2625,7 @@
 								key: t,
 								subredditId: c.profileId,
 								username: a
-							})), (await Object(T.e)(o(), d, {
+							})), (await Object(T.e)(i(), d, {
 								[t]: p
 							})).ok) {
 							if (m) try {
@@ -2651,7 +2633,7 @@
 							} catch (b) {}
 							n(Object(v.e)({
 								kind: L.b.SuccessCommunity,
-								text: i.fbt._("Changes saved", null, {
+								text: o.fbt._("Changes saved", null, {
 									hk: "xEVHp"
 								})
 							})), Object(w.g)(s(), t);
@@ -2664,7 +2646,7 @@
 							}))
 						} else n(Object(v.e)({
 							kind: L.b.Error,
-							text: i.fbt._("Changes failed to save", null, {
+							text: o.fbt._("Changes failed to save", null, {
 								hk: "1y1wAY"
 							})
 						}))
@@ -2672,7 +2654,7 @@
 						const e = "profileBanner" === t ? "1280x384" : "256x256";
 						n(Object(v.e)({
 							kind: L.b.Error,
-							text: i.fbt._("There was an error uploading your image. Please verify that the size of your image is {maxImageSize} and less than 500KB.", [i.fbt._param("maxImageSize", e)], {
+							text: o.fbt._("There was an error uploading your image. Please verify that the size of your image is {maxImageSize} and less than 500KB.", [o.fbt._param("maxImageSize", e)], {
 								hk: "I6lfz"
 							})
 						}))
@@ -2681,10 +2663,10 @@
 					let {
 						apiContext: r
 					} = s;
-					const o = Object(G.i)(n());
-					if (!o || !o.profileId) return;
-					const c = Object(x.e)(o),
-						a = m.Ub + c,
+					const i = Object(G.i)(n());
+					if (!i || !i.profileId) return;
+					const c = Object(x.e)(i),
+						a = f.Ub + c,
 						d = {
 							profileIcon: "icon",
 							profileBanner: "banner"
@@ -2695,64 +2677,64 @@
 						t(ve({
 							imageUrl: s,
 							key: e,
-							subredditId: o.profileId,
+							subredditId: i.profileId,
 							username: c
 						})), t(Object(v.e)({
 							kind: L.b.SuccessCommunity,
-							text: i.fbt._("Changes saved", null, {
+							text: o.fbt._("Changes saved", null, {
 								hk: "xEVHp"
 							})
 						})), Object(w.f)(n(), e)
 					} else t(Object(v.e)({
 						kind: L.b.Error,
-						text: i.fbt._("Changes failed to save", null, {
+						text: o.fbt._("Changes failed to save", null, {
 							hk: "1y1wAY"
 						})
 					}))
-				}, xe = "SETTINGS__PROFILE_SETTINGS_UPDATE_SUCCESS", Ne = Object(p.a)(xe), Ue = Object(p.a)("SETTINGS__PROFILE_SETTINGS_UPDATE_FAILED"), Me = (e, t) => async (n, s, r) => {
+				}, xe = "SETTINGS__PROFILE_SETTINGS_UPDATE_SUCCESS", Ne = Object(m.a)(xe), Ue = Object(m.a)("SETTINGS__PROFILE_SETTINGS_UPDATE_FAILED"), Me = (e, t) => async (n, s, r) => {
 					let {
-						apiContext: o
+						apiContext: i
 					} = r;
 					const c = Object(G.i)(s());
 					if (!c || !c.profileId) return !1;
 					const a = [],
 						d = s().subreddits.settings[c.profileId],
 						u = Object.assign(Object.assign({}, d), e);
-					a.push(Object(R.f)(o(), c.profileId, u));
+					a.push(Object(R.f)(i(), c.profileId, u));
 					const {
 						showActiveCommunities: l,
 						prevShowActiveCommunities: b
 					} = t;
-					return l !== b && a.push(Object(S.g)({
+					return l !== b && a.push(Object(I.g)({
 						showActiveCommunities: l
-					}, o())), (await Promise.all(a)).every(e => e.ok) ? (n(Ne({
+					}, i())), (await Promise.all(a)).every(e => e.ok) ? (n(Ne({
 						settings: e,
 						additional: t,
 						subredditId: c.profileId
 					})), Object(w.i)(s()), n(Object(v.e)({
 						kind: L.b.SuccessCommunity,
-						text: i.fbt._("Changes saved", null, {
+						text: o.fbt._("Changes saved", null, {
 							hk: "xEVHp"
 						})
 					})), !0) : (n(Ue()), n(Object(v.e)({
 						kind: L.b.Error,
-						text: i.fbt._("Changes failed to save", null, {
+						text: o.fbt._("Changes failed to save", null, {
 							hk: "1y1wAY"
 						})
 					})), !1)
 				}, Ge = function(e, t) {
 					let n = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
-					return async (s, r, o) => {
+					return async (s, r, i) => {
 						let {
 							apiContext: c
-						} = o;
+						} = i;
 						const a = r().user.prefs.subreddit[e];
 						s(je({
 							subredditId: e,
 							prefs: t
-						})), (await Object(S.h)(e, t, c())).ok ? n && s(Object(v.e)({
+						})), (await Object(I.h)(e, t, c())).ok ? n && s(Object(v.e)({
 							kind: L.b.SuccessCommunity,
-							text: i.fbt._("Changes saved", null, {
+							text: o.fbt._("Changes saved", null, {
 								hk: "xEVHp"
 							})
 						})) : (a && s(je({
@@ -2760,7 +2742,7 @@
 							prefs: a
 						})), n && s(Object(v.e)({
 							kind: L.b.Error,
-							text: i.fbt._("Changes failed to save", null, {
+							text: o.fbt._("Changes failed to save", null, {
 								hk: "1y1wAY"
 							})
 						})))
@@ -5639,6 +5621,33 @@
 							return [i(s.c.ABOVE_THE_FOLD, !1, 0), i(s.c.BELOW_THE_FOLD, !1, 1)]
 					}
 				}
+		},
+		"./src/reddit/helpers/cookies/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return u
+			}));
+			var s = n("./node_modules/@reddit/onetrust-integration/dist/esm/index.js"),
+				r = n("./node_modules/Base64/base64.js"),
+				o = n("./node_modules/icepick/icepick.js"),
+				i = n("./node_modules/js-cookie/src/js.cookie.js"),
+				c = n.n(i),
+				a = n("./src/lib/permanentCookieOptions.ts"),
+				d = n("./src/reddit/constants/cookie.ts");
+
+			function u(e) {
+				const t = function() {
+						const e = c.a.get(d.j);
+						if (e) try {
+							return JSON.parse(Object(r.atob)(e))
+						} catch (t) {
+							0
+						}
+					}(),
+					n = Object(o.merge)(t || {}, e),
+					i = new Date;
+				i.setFullYear(i.getFullYear() + 2), Object(s.b)(d.j, btoa(JSON.stringify(n)), Object(a.a)(2))
+			}
 		},
 		"./src/reddit/helpers/getErrorMsgFromR2JQueryResponse.ts": function(e, t, n) {
 			"use strict";
@@ -8830,4 +8839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.ca13b938cc587969f7de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit.66b55f35c1f3fab9287a.js.map

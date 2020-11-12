@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d044a7d40da7975ff2c0.js
-// Retrieved at 11/10/2020, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d8553674e78bcf61fd8d.js
+// Retrieved at 11/12/2020, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9678,25 +9678,40 @@
 		"./src/chat/customMiddleware/loggedOutPreferencesSync.ts": function(e, t, n) {
 			"use strict";
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = n("./node_modules/@reddit/onetrust-integration/dist/esm/index.js"),
-				s = n("./node_modules/lodash/pick.js"),
-				c = n.n(s),
-				r = n("./src/config.ts"),
-				o = n("./src/chat/actions/theme.ts");
-			const i = new Set([o.THEME_CHANGED]);
+			var a = n("./node_modules/lodash/pick.js"),
+				s = n.n(a),
+				c = n("./src/chat/actions/theme.ts"),
+				r = n("./node_modules/@reddit/onetrust-integration/dist/esm/index.js"),
+				o = n("./node_modules/Base64/base64.js"),
+				i = n("./node_modules/icepick/icepick.js"),
+				l = n("./node_modules/js-cookie/src/js.cookie.js"),
+				d = n.n(l),
+				u = n("./src/lib/permanentCookieOptions.ts");
+			const h = "USER";
+
+			function m(e) {
+				const t = function() {
+						const e = d.a.get(h);
+						if (e) try {
+							return JSON.parse(Object(o.atob)(e))
+						} catch (t) {
+							0
+						}
+					}(),
+					n = Object(i.merge)(t || {}, e),
+					a = new Date;
+				a.setFullYear(a.getFullYear() + 2), Object(r.b)(h, btoa(JSON.stringify(n)), Object(u.a)(2))
+			}
+			const b = new Set([c.THEME_CHANGED]);
 			t.a = e => t => n => {
-				const s = t(n);
-				if (i.has(n.type)) {
-					const t = e.getState().user,
-						n = {
-							prefs: c()(t.prefs, ["layout", "globalTheme", "subscriptionsPinned"]),
-							language: t.language
-						};
-					Object(a.b)("USER", btoa(JSON.stringify(n)), {
-						domain: r.a.cookieDomain
+				const a = t(n);
+				if (b.has(n.type)) {
+					const t = e.getState().user;
+					m({
+						prefs: s()(t.prefs, ["layout", "globalTheme", "subscriptionsPinned"])
 					})
 				}
-				return s
+				return a
 			}
 		},
 		"./src/chat/customMiddleware/sendbirdToken.ts": function(e, t, n) {
@@ -14870,4 +14885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d044a7d40da7975ff2c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d8553674e78bcf61fd8d.js.map
