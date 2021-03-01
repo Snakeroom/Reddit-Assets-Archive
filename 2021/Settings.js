@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.31ee1219943082919b48.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.bf16aabe0265410b295f.js
+// Retrieved at 3/1/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -6642,26 +6642,28 @@
 		},
 		"./src/reddit/helpers/trackers/notifications.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
+			n.d(t, "h", (function() {
 				return c
-			})), n.d(t, "c", (function() {
-				return l
 			})), n.d(t, "d", (function() {
-				return d
+				return l
 			})), n.d(t, "e", (function() {
-				return u
-			})), n.d(t, "i", (function() {
-				return p
-			})), n.d(t, "j", (function() {
-				return h
-			})), n.d(t, "h", (function() {
-				return b
-			})), n.d(t, "b", (function() {
-				return g
+				return d
 			})), n.d(t, "f", (function() {
+				return u
+			})), n.d(t, "j", (function() {
+				return p
+			})), n.d(t, "k", (function() {
+				return h
+			})), n.d(t, "i", (function() {
+				return b
+			})), n.d(t, "c", (function() {
+				return g
+			})), n.d(t, "b", (function() {
 				return v
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "g", (function() {
 				return y
+			})), n.d(t, "a", (function() {
+				return x
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts"),
 				r = n("./src/telemetry/index.ts"),
@@ -6739,16 +6741,25 @@
 					source: "notification",
 					correlationId: void 0
 				}),
-				v = (e, t, n) => r => ({
-					...s.defaults(r),
+				v = (e, t) => n => ({
+					...s.defaults(n),
+					action: i(e),
+					email: {
+						type: t
+					},
+					noun: "email",
+					source: "email_app_settings"
+				}),
+				y = (e, t) => n => ({
+					...s.defaults(n),
 					action: i(e),
 					notification: {
 						type: t
 					},
-					noun: n ? "email" : "notification",
-					source: n ? "email_app_settings" : "notification_app_settings"
+					noun: "notification",
+					source: "notification_app_settings"
 				}),
-				y = e => t => ({
+				x = e => t => ({
 					...s.defaults(t),
 					source: "email_app_settings",
 					action: i(e),
@@ -8970,7 +8981,7 @@
 							notificationPermission: n
 						})), this.lastNotificationsState = e
 					}, this.trackPreferenceToggled = (e, t) => {
-						this.props.sendEvent(Object(os.f)(t))
+						this.props.sendEvent(Object(os.g)(t))
 					}, this.setDesktopNotificationsLocalValue = e => {
 						this.setState({
 							desktopNotifications: e
@@ -11267,4 +11278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.31ee1219943082919b48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.bf16aabe0265410b295f.js.map

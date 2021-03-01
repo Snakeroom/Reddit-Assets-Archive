@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.a8f925a4a9551d274ede.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.26fb37d8c92738c2e0a0.js
+// Retrieved at 3/1/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -44,8 +44,8 @@
 				u = Object(o.a)(i.b),
 				g = Object(o.a)(i.a),
 				f = Object(o.a)(i.f),
-				m = Object(o.a)(i.e),
-				b = Object(o.a)(i.d),
+				b = Object(o.a)(i.e),
+				m = Object(o.a)(i.d),
 				p = e => async (t, n, {
 					gqlContext: s
 				}) => {
@@ -104,8 +104,8 @@
 									}
 								}(s)
 							}(s.body);
-							t === c.a.Push ? n(m(e)) : n(u(e))
-						} else t === c.a.Push ? n(b({
+							t === c.a.Push ? n(b(e)) : n(u(e))
+						} else t === c.a.Push ? n(m({
 							error: s.error
 						})) : n(g({
 							error: s.error
@@ -176,15 +176,15 @@
 				u = n("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
 				g = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				f = n("./src/reddit/components/Settings/Notifications/index.m.less"),
-				m = n.n(f);
-			const b = c.a.div("LoadingSectionHeader", m.a),
-				p = c.a.div("LoadingToggleWrapper", m.a),
-				y = c.a.span("LoadingToggleName", m.a),
-				h = c.a.span("LoadingToggleButton", m.a),
+				b = n.n(f);
+			const m = c.a.div("LoadingSectionHeader", b.a),
+				p = c.a.div("LoadingToggleWrapper", b.a),
+				y = c.a.span("LoadingToggleName", b.a),
+				h = c.a.span("LoadingToggleButton", b.a),
 				_ = () => r.a.createElement("div", {
 					role: "alert",
 					"aria-busy": "true"
-				}, r.a.createElement(b, null), i()(5, e => r.a.createElement(p, {
+				}, r.a.createElement(m, null), i()(5, e => r.a.createElement(p, {
 					key: e
 				}, r.a.createElement(y, null), r.a.createElement(h, null)))),
 				E = e => {
@@ -204,7 +204,7 @@
 								onClick: () => (n => {
 									if (n.messageType) {
 										const s = e.isEmailSettings;
-										t(Object(d.f)(!n.isEnabled, n.messageType, s))
+										t(s ? Object(d.b)(!n.isEnabled, n.messageType) : Object(d.g)(!n.isEnabled, n.messageType))
 									}
 									e.updateNotificationPreference({
 										isEnabled: !n.isEnabled,
@@ -269,4 +269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.a8f925a4a9551d274ede.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.26fb37d8c92738c2e0a0.js.map
