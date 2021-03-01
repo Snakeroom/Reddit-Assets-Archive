@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.9e889143c0f2520f6936.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.4f9ff3308f9e32b7c10b.js
+// Retrieved at 3/1/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -645,6 +645,7 @@
 				}, r.a.createElement(p.i, {
 					disabled: !1,
 					onChange: e.onChange,
+					onFocus: e.onFocus,
 					placeholder: e.placeholder,
 					maxLength: e.maxChars,
 					rows: e.rows || 4,
@@ -659,7 +660,7 @@
 				}, !e.hideCountdown && r.a.createElement(u.a, {
 					maxChars: e.maxChars,
 					text: e.value || ""
-				}), !!e.actionLink && r.a.createElement("div", {
+				}), e.warning && e.warning, !!e.actionLink && r.a.createElement("div", {
 					className: B.a.ActionLinkContainer
 				}, e.actionLink)))
 		},
@@ -1759,4 +1760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.9e889143c0f2520f6936.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.4f9ff3308f9e32b7c10b.js.map

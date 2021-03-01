@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.b4acbdc3dd260293e35f.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.b8b8d742ce14d562811c.js
+// Retrieved at 3/1/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(t, e, n) {
@@ -40,8 +40,8 @@
 				p = n("./src/chat/actions/user.ts"),
 				g = n("./node_modules/react/index.js"),
 				j = n.n(g),
-				x = n("./node_modules/react-redux/es/index.js"),
-				O = n("./src/lib/classNames/index.ts"),
+				O = n("./node_modules/react-redux/es/index.js"),
+				x = n("./src/lib/classNames/index.ts"),
 				C = n("./src/lib/CSSVariableProvider/index.tsx"),
 				_ = n("./src/lib/lessComponent.tsx"),
 				E = n("./src/chat/components/PortalContainer/index.m.less"),
@@ -53,10 +53,10 @@
 			const {
 				NIGHT: R
 			} = T.b, w = t => !(t.user.prefs.globalTheme !== R), A = _.a.div("ChatPortalContainer", y.a), D = t => {
-				const e = Object(x.e)(t => t.container.size),
-					n = Object(x.e)(w);
+				const e = Object(O.e)(t => t.container.size),
+					n = Object(O.e)(w);
 				return j.a.createElement(A, {
-					className: Object(O.a)(t.className, {
+					className: Object(x.a)(t.className, {
 						[y.a.light]: !n
 					}),
 					style: {
@@ -360,7 +360,7 @@
 			})), n.d(e, "b", (function() {
 				return g
 			})), n.d(e, "d", (function() {
-				return O
+				return x
 			}));
 			var s, c = n("./src/lib/constants/index.ts"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
@@ -378,8 +378,8 @@
 				REQUEST_SUCCESS: h
 			} = s, m = Object(r.a)(u), f = Object(r.a)(b), p = Object(r.a)(l), g = Object(r.a)(h);
 			let j;
-			const x = 5 * c.db,
-				O = () => async (t, e, {
+			const O = 5 * c.db,
+				x = () => async (t, e, {
 					apiContext: n
 				}) => {
 					const s = e();
@@ -402,8 +402,8 @@
 							}))
 						}
 					})()), j = setTimeout(() => {
-						t(O())
-					}, x)
+						t(x())
+					}, O)
 				}
 		},
 		"./src/reddit/actions/inbox.ts": function(t, e, n) {
@@ -422,9 +422,9 @@
 			n.d(e, "a", (function() {
 				return g
 			})), n.d(e, "c", (function() {
-				return x
-			})), n.d(e, "b", (function() {
 				return O
+			})), n.d(e, "b", (function() {
+				return x
 			})), n.d(e, "e", (function() {
 				return _
 			})), n.d(e, "d", (function() {
@@ -448,14 +448,14 @@
 				p = n("./src/reddit/actions/appBadgeIndicators/index.ts");
 			const g = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
 				j = Object(r.a)(g),
-				x = (t, e) => {
+				O = (t, e) => {
 					t <= 0 ? c.a.write(() => {
 						Object(d.b)(!1), window.document.title = e
 					}) : c.a.write(() => {
 						Object(d.b)(), window.document.title = `(${t}) ${e}`
 					})
 				},
-				O = Object(s.c)({
+				x = Object(s.c)({
 					basicChannelCount: b.e,
 					subredditChannelCount: b.d,
 					subredditMentionCount: b.c
@@ -480,7 +480,7 @@
 							basicChannelCount: n
 						} = C(t);
 						return e + n
-					})(n), x(i, s), t(j({
+					})(n), O(i, s), t(j({
 						hasUnreadMessages: !!i
 					})))
 				}, E = () => async (t, e) => {
@@ -747,18 +747,8 @@
 					experimentEligibilitySelector: d
 				}), a.a),
 				m = Object(s.a)(h, t => t === c.ac.Enabled)
-		},
-		"./src/reddit/selectors/experiments/utils.ts": function(t, e, n) {
-			"use strict";
-			n.d(e, "a", (function() {
-				return c
-			}));
-			var s = n("./src/reddit/constants/experiments.ts");
-			const c = t => {
-				if (!Object(s.qd)(t)) return t || void 0
-			}
 		}
 	},
 	0, ["ChatEmpty", "ChatPage"]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.b4acbdc3dd260293e35f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.b8b8d742ce14d562811c.js.map

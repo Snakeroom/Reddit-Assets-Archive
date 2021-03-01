@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.a990189f9d9461300de0.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.20a7fb73021211fb8e47.js
+// Retrieved at 3/1/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -192,8 +192,8 @@
 			var O = n("./src/reddit/controls/DropdownSelector/index.tsx"),
 				E = n("./src/reddit/models/Tags/index.ts"),
 				y = n("./src/reddit/selectors/tags.ts"),
-				_ = n("./src/reddit/components/CommunityTopics/PrimaryTopic/index.m.less"),
-				w = n.n(_);
+				w = n("./src/reddit/components/CommunityTopics/PrimaryTopic/index.m.less"),
+				_ = n.n(w);
 			const T = ({
 					hasPrimaryTag: e,
 					hasSecondaryTags: t
@@ -210,7 +210,7 @@
 					}), a = s.fbt._("Oops we don’t have a primary topic yet. Add one so we can surface your community to the right users", null, {
 						hk: "XayPA"
 					})), o.a.createElement(d.a, {
-						className: w.a.tooltip,
+						className: _.a.tooltip,
 						tooltipId: g,
 						defaultTooltipPosition: "left",
 						tooltipSizeEstimate: {
@@ -288,7 +288,7 @@
 							isSelected: !!r && r.id === e.id
 						})),
 						onSelect: i,
-						menuItemsClassName: w.a.menuItemsWrapper,
+						menuItemsClassName: _.a.menuItemsWrapper,
 						showSelectedCheckmark: !0,
 						isSaving: a
 					}), this.isTooltipEnabled() && o.a.createElement(T, {
@@ -768,8 +768,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const _ = 10,
-				w = e => e.stopPropagation();
+			const w = 10,
+				_ = e => e.stopPropagation();
 			class T extends i.a.Component {
 				constructor(e) {
 					super(e), this.handleKeyPress = e => {
@@ -832,7 +832,7 @@
 					}, e), this.props.options.map((e, s) => {
 						if (!(n && s >= (this.props.maxOptionsToDisplay || 0))) return i.a.createElement(t, {
 							tabIndex: 0,
-							onFocus: w,
+							onFocus: _,
 							key: e.id || e.displayText,
 							option: e,
 							onKeyDown: t => this.onSelectedOptionComponentKeyDown(t, e),
@@ -858,7 +858,7 @@
 						maxLength: this.props.maxLength
 					}), this.props.isLoading && i.a.createElement(v.a, {
 						className: E.a.loadingIcon,
-						sizePx: _
+						sizePx: w
 					}), this.state.isFocused && i.a.createElement(m, {
 						className: this.props.dropdownClassName,
 						dropdownHeaderText: this.props.dropdownHeaderText,
@@ -1082,9 +1082,9 @@
 			})), n.d(t, "d", (function() {
 				return ye
 			})), n.d(t, "h", (function() {
-				return _e
-			})), n.d(t, "c", (function() {
 				return we
+			})), n.d(t, "c", (function() {
+				return _e
 			})), n.d(t, "e", (function() {
 				return Te
 			})), n.d(t, "g", (function() {
@@ -1121,9 +1121,9 @@
 			}
 			const E = f.a.span("Wrapper", g.a),
 				y = f.a.select("Inner", g.a),
-				_ = f.a.wrapped(C.b, "Caret", g.a);
+				w = f.a.wrapped(C.b, "Caret", g.a);
 
-			function w({
+			function _({
 				className: e,
 				innerClassName: t,
 				...n
@@ -1135,7 +1135,7 @@
 					className: e
 				}, a.a.createElement(y, O({
 					className: t
-				}, n)), a.a.createElement(_, O({
+				}, n)), a.a.createElement(w, O({
 					isSubreddit: !0
 				}, s)))
 			}
@@ -1350,7 +1350,7 @@
 					onClick: () => e.onClick(t),
 					key: n
 				}))), e.descriptions && a.a.createElement(Oe, null, e.descriptions[e.items.indexOf(e.selected)])))(e)))),
-				_e = ({
+				we = ({
 					disabled: e,
 					last: t,
 					onChange: n,
@@ -1365,7 +1365,7 @@
 						last: t,
 						indent: !0,
 						disabled: e
-					}, a.a.createElement(w, {
+					}, a.a.createElement(_, {
 						className: "redditStyle",
 						disabled: e || o.inputDisabled,
 						onChange: i,
@@ -1378,7 +1378,7 @@
 						value: e
 					}, t)))))
 				},
-				we = e => a.a.createElement(Y, {
+				_e = e => a.a.createElement(Y, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
@@ -1414,6 +1414,7 @@
 				}, a.a.createElement(m.i, {
 					disabled: !1,
 					onChange: e.onChange,
+					onFocus: e.onFocus,
 					placeholder: e.placeholder,
 					maxLength: e.maxChars,
 					rows: e.rows || 4,
@@ -1428,7 +1429,7 @@
 				}, !e.hideCountdown && a.a.createElement(p.a, {
 					maxChars: e.maxChars,
 					text: e.value || ""
-				}), !!e.actionLink && a.a.createElement("div", {
+				}), e.warning && e.warning, !!e.actionLink && a.a.createElement("div", {
 					className: A.a.ActionLinkContainer
 				}, e.actionLink)))
 		},
@@ -1947,7 +1948,7 @@
 			const y = Object(p.c)({
 				activeModalId: h.a
 			});
-			class _ extends c.a.Component {
+			class w extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -2002,9 +2003,9 @@
 					}, a || e))
 				}
 			}
-			const w = Object(d.b)(y, e => ({
+			const _ = Object(d.b)(y, e => ({
 					toggleErrorTextModal: t => e(Object(m.i)(t))
-				}))(_),
+				}))(w),
 				T = e => {
 					const {
 						className: t,
@@ -2015,7 +2016,7 @@
 					} = e, i = o.length ? o : a ? [a] : [];
 					return i.length ? c.a.createElement("div", {
 						className: t
-					}, i.map((e, t) => c.a.createElement(w, {
+					}, i.map((e, t) => c.a.createElement(_, {
 						className: n,
 						errorModalTitle: s,
 						key: t
@@ -2027,7 +2028,7 @@
 					}),
 					messages: e
 				});
-			t.b = w
+			t.b = _
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2633,7 +2634,7 @@
 					}))
 				}
 			}
-			var _ = Object(i.b)(E, e => ({
+			var w = Object(i.b)(E, e => ({
 					optionSelected: t => {
 						e(Object(m.c)({
 							option: t
@@ -2657,7 +2658,7 @@
 						}))
 					})
 				}))(y),
-				w = n("./src/reddit/components/EmailInvitePaintedDoor/loader.tsx"),
+				_ = n("./src/reddit/components/EmailInvitePaintedDoor/loader.tsx"),
 				T = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				S = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				k = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -2990,7 +2991,7 @@
 							hk: "3LM2Jb"
 						}), o.a.createElement("span", null, `${this.props.selectedCommunityTopicsOptions.length}/${f.a}`)),
 						direction: "column"
-					}, o.a.createElement(_, null)), x.topics && o.a.createElement(xe, null, x.topics), o.a.createElement(S.g, {
+					}, o.a.createElement(w, null)), x.topics && o.a.createElement(xe, null, x.topics), o.a.createElement(S.g, {
 						hideCountdown: !0,
 						isCreateCommunity: !0,
 						isRequired: !0,
@@ -3066,7 +3067,7 @@
 						onClick: this.onCreateCommunityClick
 					}, s.fbt._("Create Community", null, {
 						hk: "QE8Y3"
-					}))))), C && o.a.createElement(w.a, {
+					}))))), C && o.a.createElement(_.a, {
 						onClose: this.onCloseInviteViaEmailModal,
 						sendEvent: u
 					}))
@@ -3086,9 +3087,9 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: s.yb
 				});
-				return !(!t || Object(s.qd)(t))
+				return !(!t || Object(s.sd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.a990189f9d9461300de0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.20a7fb73021211fb8e47.js.map
