@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.81207121cd96004a7335.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.6cd54971ae38236d7057.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -84,12 +84,12 @@
 							return e
 					}
 				},
-				k = Object(N.c)({
+				P = Object(N.c)({
 					error: y,
 					pending: U
 				});
-			const P = {};
-			var S = (e = P, t) => {
+			const k = {};
+			var S = (e = k, t) => {
 					switch (t.type) {
 						case j.n: {
 							const {
@@ -237,7 +237,7 @@
 					}
 				},
 				z = Object(N.c)({
-					api: k,
+					api: P,
 					fetchedTokens: S,
 					inContext: M,
 					loadMore: T,
@@ -373,7 +373,7 @@
 							await r(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(w.kb)(s, {
+						const n = Object(w.lb)(s, {
 							userName: t
 						});
 						if (!n) return;
@@ -531,8 +531,8 @@
 				y = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				L = r("./src/reddit/components/SubscribeButton/index.tsx"),
 				U = r("./src/reddit/components/UserIcon/index.tsx"),
-				k = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
-				P = r("./src/reddit/icons/fonts/Info/index.tsx"),
+				P = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
+				k = r("./src/reddit/icons/fonts/Info/index.tsx"),
 				S = r("./src/reddit/icons/svgs/Admin/index.tsx"),
 				B = r("./src/reddit/icons/svgs/Karma/index.tsx"),
 				M = r("./src/reddit/icons/svgs/Premium/index.tsx"),
@@ -560,7 +560,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(h.kb)(e, {
+				user: (e, t) => Object(h.lb)(e, {
 					userName: t.username
 				})
 			});
@@ -584,21 +584,21 @@
 					}, n ? s.a.createElement(q.a, {
 						role: "button",
 						onClick: () => {
-							a(this.props.user.id), o(k.e(t))
+							a(this.props.user.id), o(P.e(t))
 						}
 					}, s.a.createElement(te, null), V._("Unban User", null, {
 						hk: "1aASyW"
 					})) : s.a.createElement(q.a, {
 						role: "button",
 						onClick: () => {
-							i(), o(k.a(t))
+							i(), o(P.a(t))
 						}
 					}, s.a.createElement($, null), V._("Ban User", null, {
 						hk: "3OhuLx"
 					})), r && s.a.createElement(q.a, {
 						role: "button",
 						onClick: () => {
-							c(), o(k.d(t))
+							c(), o(P.d(t))
 						}
 					}, s.a.createElement(ee, null), V._("Mute User", null, {
 						hk: "3MCujH"
@@ -641,7 +641,7 @@
 				}))(e => s.a.createElement(q.a, {
 					role: "button",
 					onClick: () => {
-						e.onToggleUserFlairModal(), e.sendEvent(k.c(e.contextId))
+						e.onToggleUserFlairModal(), e.sendEvent(P.c(e.contextId))
 					}
 				}, s.a.createElement(le, null), de._("Edit user flair", null, {
 					hk: "4mTxM"
@@ -674,8 +674,8 @@
 				ye = E.a.div("KarmaGrid", pe.a),
 				Le = E.a.div("GenericKarma", pe.a),
 				Ue = E.a.a("InfoLink", pe.a),
-				ke = E.a.div("KarmaCount", pe.a),
-				Pe = E.a.div("KarmaLabel", pe.a),
+				Pe = E.a.div("KarmaCount", pe.a),
+				ke = E.a.div("KarmaLabel", pe.a),
 				Se = E.a.div("GenericKarmaLabel", pe.a),
 				Be = E.a.div("BannerImage", pe.a),
 				Me = E.a.div("UserContainer", pe.a),
@@ -696,17 +696,17 @@
 						showAwardKarma: t,
 						user: r
 					} = e;
-					return t ? s.a.createElement(ye, null, s.a.createElement(Le, null, s.a.createElement(ke, null, Object(w.b)(r.postKarma)), s.a.createElement(Se, null, g.fbt._({
+					return t ? s.a.createElement(ye, null, s.a.createElement(Le, null, s.a.createElement(Pe, null, Object(w.b)(r.postKarma)), s.a.createElement(Se, null, g.fbt._({
 						"*": "Post Karma",
 						_1: " Post Karma"
 					}, [g.fbt._plural(r.postKarma)], {
 						hk: "3K4oaH"
-					}))), s.a.createElement(Le, null, s.a.createElement(ke, null, Object(w.b)(r.commentKarma)), s.a.createElement(Se, null, g.fbt._({
+					}))), s.a.createElement(Le, null, s.a.createElement(Pe, null, Object(w.b)(r.commentKarma)), s.a.createElement(Se, null, g.fbt._({
 						"*": "Comment Karma",
 						_1: " Comment Karma"
 					}, [g.fbt._plural(r.commentKarma)], {
 						hk: "3gKRx9"
-					}))), s.a.createElement(Le, null, s.a.createElement(ke, null, Object(w.b)(r.awardeeKarma)), s.a.createElement(Se, null, g.fbt._({
+					}))), s.a.createElement(Le, null, s.a.createElement(Pe, null, Object(w.b)(r.awardeeKarma)), s.a.createElement(Se, null, g.fbt._({
 						"*": "Awardee Karma",
 						_1: " Awardee Karma"
 					}, [g.fbt._plural(r.awardeeKarma)], {
@@ -715,9 +715,9 @@
 						href: A.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, s.a.createElement(P.a, {
+					}, s.a.createElement(k.a, {
 						className: pe.a.infoIcon
-					})))), s.a.createElement(Le, null, s.a.createElement(ke, null, Object(w.b)(r.awarderKarma)), s.a.createElement(Se, null, g.fbt._({
+					})))), s.a.createElement(Le, null, s.a.createElement(Pe, null, Object(w.b)(r.awarderKarma)), s.a.createElement(Se, null, g.fbt._({
 						"*": "Awarder Karma",
 						_1: " Awarder Karma"
 					}, [g.fbt._plural(r.awarderKarma)], {
@@ -726,14 +726,14 @@
 						href: A.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, s.a.createElement(P.a, {
+					}, s.a.createElement(k.a, {
 						className: pe.a.infoIcon
-					}))))) : s.a.createElement(je, null, s.a.createElement(xe, null), s.a.createElement(Oe, null, s.a.createElement(ke, null, Object(w.b)(r.postKarma)), s.a.createElement(Pe, null, g.fbt._({
+					}))))) : s.a.createElement(je, null, s.a.createElement(xe, null), s.a.createElement(Oe, null, s.a.createElement(Pe, null, Object(w.b)(r.postKarma)), s.a.createElement(ke, null, g.fbt._({
 						"*": "Post Karma",
 						_1: " Post Karma"
 					}, [g.fbt._plural(r.postKarma)], {
 						hk: "3K4oaH"
-					}))), s.a.createElement(Ne, null, s.a.createElement(ke, null, Object(w.b)(r.commentKarma)), s.a.createElement(Pe, null, g.fbt._({
+					}))), s.a.createElement(Ne, null, s.a.createElement(Pe, null, Object(w.b)(r.commentKarma)), s.a.createElement(ke, null, g.fbt._({
 						"*": "Comment Karma",
 						_1: " Comment Karma"
 					}, [g.fbt._plural(r.commentKarma)], {
@@ -772,7 +772,7 @@
 						y = x.accountIcon || `${C.a.assetPath}/img/snoo_user_placeholder.png`,
 						L = l && l.flair,
 						U = l && l.access,
-						P = I && I.templateIds && I.templateIds.length > 0,
+						k = I && I.templateIds && I.templateIds.length > 0,
 						S = I && I.displaySettings && I.displaySettings.isEnabled,
 						{
 							awardedLastMonth: B
@@ -828,14 +828,14 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(k.g)(e ? "unfollow" : "follow", r),
+						getEventFactory: e => Object(P.g)(e ? "unfollow" : "follow", r),
 						small: !0
 					})), U && r && !j && v && s.a.createElement(se, {
 						contextId: r,
 						subredditId: v,
 						sendEvent: m,
 						username: h
-					}), L && r && P && S && v && s.a.createElement(ue, {
+					}), L && r && k && S && v && s.a.createElement(ue, {
 						contextId: r,
 						subredditId: v,
 						sendEvent: m,
@@ -877,7 +877,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: h.kb,
+					user: h.lb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(x.c)(e, {
@@ -1500,7 +1500,7 @@
 				title: N,
 				userCreated: L,
 				username: U,
-				url: k
+				url: P
 			}) => a.a.createElement(a.a.Fragment, null, a.a.createElement(b.a, {
 				bannerBackgroundImage: e,
 				editMode: !!s,
@@ -1548,7 +1548,7 @@
 				shouldDisplaySnoovatar: !0,
 				username: U,
 				userCreated: L,
-				url: k
+				url: P
 			}), (C || !r && !!j) && a.a.createElement(p.a, {
 				compact: t,
 				currentUserHasSnoovatar: r,
@@ -2328,4 +2328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.81207121cd96004a7335.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.6cd54971ae38236d7057.js.map

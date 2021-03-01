@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.8b13e0c8842862800e04.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.82c666d0e5d4229c2de9.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -339,8 +339,8 @@
 				A = s("./src/reddit/components/PostTitle/index.tsx"),
 				W = s("./src/reddit/connectors/miniCardPost.ts"),
 				R = s("./src/reddit/contexts/Post/index.tsx"),
-				V = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				B = s("./src/reddit/helpers/styles/mixins/index.tsx"),
+				B = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				V = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				H = s("./src/reddit/models/Media/index.ts"),
 				F = s("./src/reddit/models/Subreddit/index.ts"),
 				Q = s("./src/reddit/models/Widgets/index.ts"),
@@ -348,8 +348,8 @@
 				K = s.n(G),
 				z = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				q = s.n(z),
-				Z = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
-				J = s.n(Z);
+				J = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
+				Z = s.n(J);
 
 			function Y() {
 				return (Y = Object.assign || function(e) {
@@ -403,20 +403,20 @@
 						}),
 						j = !1;
 					E && _ && (E.type !== H.o.RTJSON && E.type !== H.o.TEXT ? (_ = r.a.createElement("div", {
-						className: J.a.mediaWrapper
-					}, _), j = !0) : E && E.content && Object(V.a)(p) && (_ = r.a.createElement("div", {
-						className: J.a.textWrapper
+						className: Z.a.mediaWrapper
+					}, _), j = !0) : E && E.content && Object(B.a)(p) && (_ = r.a.createElement("div", {
+						className: Z.a.textWrapper
 					}, _)));
 					const N = !j && !O;
 					let w;
 					return k && (w = Object(F.g)(k) ? Object(Q.h)(k) : Object(Q.i)(k)), r.a.createElement(U.a, {
-						className: Object(c.a)(J.a.container, q.a.largeAndMediumActiveStyles, q.a.largeAndMediumPostStyles, K.a.postContainer, Object(B.a)(this.props), s),
+						className: Object(c.a)(Z.a.container, q.a.largeAndMediumActiveStyles, q.a.largeAndMediumPostStyles, K.a.postContainer, Object(V.a)(this.props), s),
 						post: p,
 						onClick: u,
 						eventFactory: i,
 						style: {
-							...Object(B.b)(this.props.flairStyleTemplate),
-							...Object(B.d)(this.props),
+							...Object(V.b)(this.props.flairStyleTemplate),
+							...Object(V.d)(this.props),
 							...this.props.style
 						},
 						"data-click-id": this.props["data-click-id"]
@@ -424,46 +424,46 @@
 						className: K.a.backgroundWrapper,
 						flairStyleTemplate: o
 					}, r.a.createElement("div", {
-						className: Object(c.a)(J.a.innerContainer, K.a.innerContainer)
+						className: Object(c.a)(Z.a.innerContainer, K.a.innerContainer)
 					}, y && k && r.a.createElement(I, Y({
 						created: p.created
 					}, w)), f && k && r.a.createElement(P, Y({
 						created: p.created,
 						author: p.author
 					}, w)), r.a.createElement(A.c, {
-						className: N ? J.a.postTitle : J.a.postTitleCompact,
+						className: N ? Z.a.postTitle : Z.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
 						post: p,
 						size: A.b.Large,
 						titleColor: o && o.postTitleColor
 					}), v && k && r.a.createElement(T.a, {
-						className: J.a.metaLine,
+						className: Z.a.metaLine,
 						crosspostSubredditOrProfile: a,
 						hideNSFWPref: d,
 						post: p,
 						subredditOrProfile: k
 					}), (j || O) && r.a.createElement("div", {
-						className: J.a.flexSpacer
+						className: Z.a.flexSpacer
 					}), O && r.a.createElement("div", {
-						className: J.a.mediaWrapper
+						className: Z.a.mediaWrapper
 					}, r.a.createElement(D.a, {
-						className: J.a.thumbnailWrapper,
-						thumbnailClassName: J.a.thumbnail,
-						thumbnailContainerClassName: J.a.thumbnailContainer,
+						className: Z.a.thumbnailWrapper,
+						thumbnailClassName: Z.a.thumbnail,
+						thumbnailContainerClassName: Z.a.thumbnailContainer,
 						post: p,
 						templatePlaceholderImage: o && o.postPlaceholderImage
 					})), _, r.a.createElement("div", {
-						className: J.a.metaWrapper
+						className: Z.a.metaWrapper
 					}, r.a.createElement("span", {
-						className: J.a.meta
+						className: Z.a.meta
 					}, h.fbt._({
 						"*": "{number} points",
 						_1: "1 score"
 					}, [h.fbt._plural(p.score, "number", Object(x.b)(p.score))], {
 						hk: "2ncFte"
 					})), r.a.createElement("span", {
-						className: J.a.meta
+						className: Z.a.meta
 					}, h.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
@@ -804,9 +804,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				C = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				f = s("./src/reddit/selectors/user.ts");
-			const v = e => Object(f.G)(e) || g.Zc.ShowTopContent === Object(C.c)(e, {
+			const v = e => Object(f.G)(e) || g.bd.ShowTopContent === Object(C.c)(e, {
 				experimentEligibilitySelector: C.a,
-				experimentName: g.Vc
+				experimentName: g.Xc
 			});
 			var y = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1479,4 +1479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.8b13e0c8842862800e04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.82c666d0e5d4229c2de9.js.map

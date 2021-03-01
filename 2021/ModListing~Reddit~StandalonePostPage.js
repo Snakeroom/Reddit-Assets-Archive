@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit~StandalonePostPage.be9f87be1e7a88485d47.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit~StandalonePostPage.9c2e9978d6900ed1d893.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, n) {
@@ -926,9 +926,10 @@
 				a = n.n(s);
 			t.a = function({
 				className: e,
-				headshot: t
+				headerIcon: t,
+				headshot: n
 			}) {
-				return r.a.createElement("div", {
+				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: Object(l.a)(a.a.snoovatarWrapper, e)
 				}, r.a.createElement("div", {
 					className: a.a.snoovatarBackground
@@ -939,12 +940,13 @@
 						hk: "12gjW8"
 					}),
 					className: a.a.snoovatarHeadshot,
-					src: t
-				})))
+					src: n
+				}))))
 			}
 		},
 		"./src/reddit/components/UserIcon/UserIcon.m.less": function(e, t, n) {
 			e.exports = {
+				currentUserIconWrapper: "efdkOLo3oigH_95whTYCp",
 				DefaultUserIcon: "_3utuhrSAkEkzgaswqglvpN",
 				defaultUserIcon: "_3utuhrSAkEkzgaswqglvpN",
 				UserIcon: "_2TN8dEgAQbSyKntWpSPYM7",
@@ -953,7 +955,9 @@
 				snoovatarWrapper: "_1cyAeeYDGrx7MPL_jRwKZ",
 				snoovatarBackground: "_2_QqG5dG916znjlVV8ZCbw",
 				snoovatarHeadshotContainer: "_1XJXnCAngvZLEeLpB3oa4L",
-				snoovatarHeadshot: "ScrrUjzznpAqm92uwgnvO"
+				snoovatarHeadshot: "ScrrUjzznpAqm92uwgnvO",
+				presenceDot: "_2dn5Ncenn0BSD4tCSmxQhA",
+				isLit: "GpWjjkZl5_kV4yZYWBaT2"
 			}
 		},
 		"./src/reddit/components/UserIcon/UserIcon.tsx": function(e, t, n) {
@@ -1021,7 +1025,7 @@
 					currentUser: u.i,
 					isNightMode: u.U,
 					shouldHideNSFW: u.B,
-					user: u.kb
+					user: u.lb
 				}),
 				p = Object(r.b)(_);
 			t.a = p(e => {
@@ -2719,4 +2723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit~StandalonePostPage.be9f87be1e7a88485d47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit~StandalonePostPage.9c2e9978d6900ed1d893.js.map

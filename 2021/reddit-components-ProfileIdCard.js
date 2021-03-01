@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6e926c8f109d7257d16a.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.804c63b64844811db61f.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -354,7 +354,7 @@
 				B = r.n(U);
 			const F = Object(p.a)(I.j, (e, {
 					profileName: t
-				}) => Object(_.rb)(e, t), (e, t) => ({
+				}) => Object(_.sb)(e, t), (e, t) => ({
 					awardeeKarma: t ? t.awardeeKarma : 0,
 					awarderKarma: t ? t.awarderKarma : 0,
 					commentKarma: t ? t.commentKarma : 0,
@@ -1388,12 +1388,12 @@
 				structuredStyle: (e, t) => Object(b.m)(e, Object(g.m)(e, t.profileName)),
 				userHasSubreddit: (e, {
 					profileName: t
-				}) => Object(h.lb)(e, {
+				}) => Object(h.mb)(e, {
 					userName: t
 				}),
 				user: (e, {
 					profileName: t
-				}) => Object(h.kb)(e, {
+				}) => Object(h.lb)(e, {
 					userName: t
 				}),
 				page: v.b
@@ -2100,4 +2100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6e926c8f109d7257d16a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.804c63b64844811db61f.js.map

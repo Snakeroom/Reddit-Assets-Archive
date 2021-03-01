@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.acd6a791f7bacfbe6bd4.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.dcb7171f4b4224529989.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, n) {
@@ -184,7 +184,7 @@
 					recipient: d,
 					subredditId: N,
 					transferAmount: y
-				} = e, M = Object(c.d)(), k = Object(x.a)(), E = Object(c.e)(e => Object(A.kb)(e, {
+				} = e, M = Object(c.d)(), k = Object(x.a)(), E = Object(c.e)(e => Object(A.lb)(e, {
 					userName: d
 				})), {
 					currentPointsAmount: I,
@@ -284,4 +284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.acd6a791f7bacfbe6bd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.dcb7171f4b4224529989.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncement.3a87a1cb4850475701bb.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncement.54e20a025bda7d7f2150.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncement"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/LiveThread/index.m.less": function(e, n, t) {
@@ -26,60 +26,35 @@
 			t.r(n);
 			var i = t("./src/config.ts"),
 				r = t("./node_modules/fbt/lib/FbtPublic.js"),
-				s = t("./node_modules/react/index.js"),
-				a = t.n(s),
+				a = t("./node_modules/react/index.js"),
+				d = t.n(a),
 				l = t("./src/lib/lessComponent.tsx"),
-				c = t("./src/reddit/icons/svgs/Circle/index.tsx"),
-				d = t("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				o = t("./src/reddit/layout/row/Inline/index.tsx"),
-				u = t("./src/reddit/components/FeaturedLiveEntrypoint/LiveThread/index.m.less"),
-				_ = t.n(u);
+				s = t("./src/reddit/icons/svgs/Circle/index.tsx"),
+				o = t("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				c = t("./src/reddit/layout/row/Inline/index.tsx"),
+				_ = t("./src/reddit/components/FeaturedLiveEntrypoint/LiveThread/index.m.less"),
+				u = t.n(_);
 			const v = `${i.a.redditUrl}/live/`,
-				m = l.a.a("Container", _.a),
-				E = l.a.wrapped(c.a, "Circle", _.a),
-				L = l.a.div("LiveLabel", _.a),
-				x = l.a.div("ViewCount", _.a),
-				p = l.a.div("Title", _.a),
-				h = l.a.wrapped(d.a, "OutboundLink", _.a),
-				w = l.a.div("Description", _.a);
+				L = l.a.a("Container", u.a),
+				E = l.a.wrapped(s.a, "Circle", u.a),
+				m = l.a.div("LiveLabel", u.a),
+				p = l.a.div("ViewCount", u.a),
+				h = l.a.div("Title", u.a),
+				b = l.a.wrapped(o.a, "OutboundLink", u.a),
+				V = l.a.div("Description", u.a);
 			n.default = ({
 				featuredLiveThread: e
-			}) => a.a.createElement(m, {
+			}) => d.a.createElement(L, {
 				href: `${v}${e.id}`
-			}, a.a.createElement(o.a, null, a.a.createElement(E, null), a.a.createElement(L, null, r.fbt._("live", null, {
+			}, d.a.createElement(c.a, null, d.a.createElement(E, null), d.a.createElement(m, null, r.fbt._("live", null, {
 				hk: "aD7Tn"
-			})), a.a.createElement(w, null, "·"), a.a.createElement(x, null, r.fbt._({
+			})), d.a.createElement(V, null, "·"), d.a.createElement(p, null, r.fbt._({
 				"*": "{number} viewers",
 				_1: "1 viewer"
 			}, [r.fbt._plural(e.viewerCount || 0, "number")], {
 				hk: "49aRHF"
-			}))), a.a.createElement(p, null, e.liveEventTitle, a.a.createElement(h, null)), a.a.createElement(w, null, e.description))
-		},
-		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, n, t) {
-			e.exports = {
-				circle: "_17IuRdA-NY8vFk-Tt991sn"
-			}
-		},
-		"./src/reddit/icons/svgs/Circle/index.tsx": function(e, n, t) {
-			"use strict";
-			var i = t("./node_modules/react/index.js"),
-				r = t.n(i),
-				s = t("./src/lib/classNames/index.ts"),
-				a = t("./src/reddit/icons/svgs/Circle/index.m.less"),
-				l = t.n(a);
-			n.a = e => r.a.createElement("svg", {
-				className: Object(s.a)(l.a.circle, e.className),
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 8 8"
-			}, r.a.createElement("g", {
-				fill: "inherit",
-				stroke: "none"
-			}, r.a.createElement("circle", {
-				r: "4",
-				cy: "4",
-				cx: "4"
-			})))
+			}))), d.a.createElement(h, null, e.liveEventTitle, d.a.createElement(b, null)), d.a.createElement(V, null, e.description))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncement.3a87a1cb4850475701bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncement.54e20a025bda7d7f2150.js.map

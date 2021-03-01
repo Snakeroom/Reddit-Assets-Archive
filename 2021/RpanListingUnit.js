@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.9d32facf9964c4902a54.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.b8f991a3da29f5967334.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -27,13 +27,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.fc
 				});
-				return Object(m.od)(t) ? void 0 : t
+				return Object(m.qd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.gc
 				});
-				return Object(m.od)(t) ? void 0 : t
+				return Object(m.qd)(t) ? void 0 : t
 			}, (e, t) => e === m.hc.Enabled && t === m.hc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -2504,7 +2504,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, r = Object(i.e)(e => Object(H.kb)(e, {
+				} = e, r = Object(i.e)(e => Object(H.lb)(e, {
 					userName: s
 				})), o = Ie(r), c = o && Object(g.a)(r.accountIcon);
 				return a.a.createElement("div", {
@@ -2767,4 +2767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.9d32facf9964c4902a54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b8f991a3da29f5967334.js.map

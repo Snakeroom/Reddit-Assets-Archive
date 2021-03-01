@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.1882e1b6f081a5959899.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.fa3c2216e5af12864e7f.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -97,7 +97,7 @@
 			}
 		},
 		"./src/graphql/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"370ac557d32b"}')
+			e.exports = JSON.parse('{"id":"b293ae413895"}')
 		},
 		"./src/graphql/operations/GetNearbySubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"26ddd553d11e"}')
@@ -4489,7 +4489,7 @@
 			const l = Object(n.a)(c.a, c.e, (e, {
 					listingName: t
 				}) => {
-					const s = Object(o.sb)(e);
+					const s = Object(o.tb)(e);
 					if (!s) return !1;
 					let n;
 					if (-1 === [a.R, "r/popular"].indexOf(t)) {
@@ -4817,4 +4817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1882e1b6f081a5959899.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fa3c2216e5af12864e7f.js.map

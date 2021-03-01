@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.cae78cc8d69bb9509c08.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.e0269cac625a06926a11.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -1675,7 +1675,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, r = Object(a.e)(e => Object(B.kb)(e, {
+				} = e, r = Object(a.e)(e => Object(B.lb)(e, {
 					userName: s
 				})), i = ke(r), c = i && Object(E.a)(r.accountIcon);
 				return n.a.createElement("div", {
@@ -2651,4 +2651,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.cae78cc8d69bb9509c08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.e0269cac625a06926a11.js.map

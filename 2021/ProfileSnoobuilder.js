@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.a98a14979f2299879265.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.cb2c8d4cadc1d166252e.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -2456,17 +2456,19 @@
 		"./src/reddit/components/RichTextJson/index.m.less": function(e, t, n) {
 			e.exports = {
 				Container: "_292iotee39Lmt0MkQZ2hPV",
-				container: "_292iotee39Lmt0MkQZ2hPV"
+				container: "_292iotee39Lmt0MkQZ2hPV",
+				unblurButtonContainer: "YCBAlwtFjC7cDSMdBeA2W",
+				unblurButton: "gCpM4Pkvf_Xth42z4uIrQ"
 			}
 		},
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return E
-			})), n.d(t, "b", (function() {
 				return k
+			})), n.d(t, "b", (function() {
+				return w
 			})), n.d(t, "a", (function() {
-				return C
+				return j
 			}));
 			var s = n("./node_modules/lodash/findLastIndex.js"),
 				r = n.n(s),
@@ -2475,17 +2477,18 @@
 				a = n("./src/lib/classNames/index.ts"),
 				c = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				d = n("./src/lib/sentry/index.ts"),
-				l = n("./src/reddit/constants/elementClassNames.ts"),
-				u = n("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				m = n("./src/reddit/helpers/styles/smartTextColor.ts"),
-				p = n("./src/reddit/models/RichTextJson/index.ts"),
-				h = n("./src/reddit/components/RichTextJson/media.tsx"),
-				b = n("./src/reddit/components/RichTextJson/renderers.tsx"),
-				f = n("./src/reddit/components/RichTextJson/index.m.less"),
-				_ = n.n(f);
+				l = n("./src/reddit/components/Media/blurredContent.ts"),
+				u = n("./src/reddit/constants/elementClassNames.ts"),
+				m = n("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				p = n("./src/reddit/helpers/styles/smartTextColor.ts"),
+				h = n("./src/reddit/models/RichTextJson/index.ts"),
+				b = n("./src/reddit/components/RichTextJson/media.tsx"),
+				f = n("./src/reddit/components/RichTextJson/renderers.tsx"),
+				_ = n("./src/reddit/components/RichTextJson/index.m.less"),
+				g = n.n(_);
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -2493,75 +2496,88 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = n("./src/lib/lessComponent.tsx").a.div("Container", _.a),
-				y = Object(c.a)(({
+			const y = n("./src/lib/lessComponent.tsx").a.div("Container", g.a),
+				v = Object(c.a)(({
 					flairStyleTemplate: e,
 					theme: t,
 					...n
-				}) => o.a.createElement(x, g({}, n, {
+				}) => o.a.createElement(y, x({}, n, {
 					style: {
-						color: Object(m.a)(Object(u.a)({
+						color: Object(p.a)(Object(m.a)({
 							flairStyleTemplate: e,
 							theme: t,
 							...n
 						}))
 					}
 				}))),
-				v = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.u || !!e.c && !e.c.every(e => e.e === p.A && !e.t),
-				E = e => r()(e, v),
-				k = e => e.findIndex(v),
-				w = e => {
+				E = e => e.e === h.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== h.u || !!e.c && !e.c.every(e => e.e === h.A && !e.t),
+				k = e => r()(e, E),
+				w = e => e.findIndex(E),
+				C = e => {
 					const {
 						altText: t,
 						className: n,
 						content: s,
-						postId: r,
-						renderMediaAsLinks: i,
-						rtJsonElementProps: c,
-						useExplicitTextColor: d
-					} = e, u = s.document, m = [], f = e.mediaMetadata || null, _ = k(u), g = E(u);
-					if (-1 !== _)
-						for (let o = _; o <= g; o++) {
-							const e = u[o];
+						isListing: r,
+						isNSFW: i,
+						isSpoiler: c,
+						onClickRevealBlurred: d,
+						postId: m,
+						renderMediaAsLinks: p,
+						rtJsonElementProps: _,
+						useExplicitTextColor: x,
+						shouldBlur: E
+					} = e, C = s.document, j = [], O = e.mediaMetadata || null, S = w(C), N = k(C);
+					if (E && !r) return o.a.createElement(y, {
+						className: Object(a.a)(u.j, n)
+					}, o.a.createElement("div", {
+						className: g.a.unblurButtonContainer
+					}, o.a.createElement("button", {
+						className: g.a.unblurButton,
+						onClick: d
+					}, Object(l.a)(!!i, !!c))));
+					if (-1 !== S)
+						for (let o = S; o <= N; o++) {
+							const e = C[o];
 							switch (e.e) {
-								case p.k:
-									m.push(b.c(e, c, o));
+								case h.k:
+									j.push(f.c(e, _, o));
 									break;
-								case p.l:
-									m.push(b.d(o));
+								case h.l:
+									j.push(f.d(o));
 									break;
-								case p.b:
-									m.push(b.a(e, f, c, o));
+								case h.b:
+									j.push(f.a(e, O, _, o));
 									break;
-								case p.c:
-									m.push(b.b(e, o));
+								case h.c:
+									j.push(f.b(e, o));
 									break;
-								case p.p:
-									m.push(b.f(e, f, c, o));
+								case h.p:
+									j.push(f.f(e, O, _, o));
 									break;
-								case p.z:
-									m.push(b.h(e, f, c, o));
+								case h.z:
+									j.push(f.h(e, O, _, o));
 									break;
-								case p.u:
-									m.push(b.g(e, f, c, o));
+								case h.u:
+									j.push(f.g(e, O, _, o));
 									break;
-								case p.h:
-									m.push(Object(h.a)(e, o));
+								case h.h:
+									j.push(Object(b.a)(e, o));
 									break;
-								case p.m:
-								case p.a:
-								case p.D:
-									m.push(...Object(h.b)(e, o, f, i, r, t))
+								case h.m:
+								case h.a:
+								case h.D:
+									j.push(...Object(b.b)(e, o, O, p, m, t))
 							}
 						}
-					return d ? o.a.createElement(x, {
-						className: Object(a.a)(l.j, n)
-					}, m) : o.a.createElement(y, {
-						className: Object(a.a)(l.j, n),
+					return x ? o.a.createElement(y, {
+						className: Object(a.a)(u.j, n)
+					}, j) : o.a.createElement(v, {
+						className: Object(a.a)(u.j, n),
 						flairStyleTemplate: e.flairStyleTemplate
-					}, m)
+					}, j)
 				};
-			class C extends o.a.Component {
+			class j extends o.a.Component {
 				constructor() {
 					super(...arguments), this.hasError = !1, this.state = {
 						hasError: !1
@@ -2584,7 +2600,7 @@
 					} = this.props;
 					if (this.hasError || this.state.hasError) return e();
 					try {
-						return w(t)
+						return C(t)
 					} catch (n) {
 						return this.hasError = !0, this.logError(n), e()
 					}
@@ -3550,7 +3566,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const n = Object(m.kb)(e, {
+					const n = Object(m.lb)(e, {
 							userName: t
 						}),
 						s = Object(u.e)(e);
@@ -4042,12 +4058,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case b.Yc.SmIcon:
+						case b.ad.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.Yc.SmIconHc:
+						case b.ad.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4591,7 +4607,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(h.kb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(h.lb)(e, {
 					userName: t.name
 				}) : null
 			}), O = Object(i.b)(j, e => ({
@@ -5332,12 +5348,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Uc
+						experimentName: s.Wc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Yc.SmIcon || t === s.Yc.SmIconHc
+					return t === s.ad.SmIcon || t === s.ad.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5360,4 +5376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.a98a14979f2299879265.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.cb2c8d4cadc1d166252e.js.map

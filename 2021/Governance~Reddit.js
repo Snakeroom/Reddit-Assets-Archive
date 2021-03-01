@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7ef7e39a77a16cdb3a17.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.75631d73bad674ffc299.js
+// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -3732,7 +3732,7 @@
 			const j = e => g.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				v = e => !!Object(D.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.c)),
-					experimentName: b.Fc
+					experimentName: b.Hc
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -24366,7 +24366,7 @@
 			function(e) {
 				e.Whitelisted = "nobody", e.Everyone = "everyone"
 			}(n || (n = {}));
-			const q = ["acceptPrivateMessages", "allowClickTracking", "autoplayVideo", "collapseReadMessages", "defaultCommentSort", "emailDigests", "emailUnreadMessages", "emailUnsubscribe", "geopopular", "hideAds", "hideFromRobots", "hideNSFW", "highlightComments", "ignoreSuggestedSort", "inBeta", "labelNSFW", "lang", "markMessagesRead", "nightmode", "over18", "sendWelcomeMessages", "showMessagesInInbox", "showNotifications", "showTwitter", "showUsernameMentionNotifications", "showActiveCommunities", ...U.a, "loginOtpEnabled"],
+			const q = ["acceptPrivateMessages", "allowClickTracking", "autoplayVideo", "collapseReadMessages", "defaultCommentSort", "emailDigests", "emailUnreadMessages", "emailUnsubscribe", "geopopular", "hideAds", "hideFromRobots", "hideNSFW", "highlightComments", "ignoreSuggestedSort", "inBeta", "labelNSFW", "lang", "markMessagesRead", "nightmode", "over18", "sendWelcomeMessages", "showMessagesInInbox", "showNotifications", "showTwitter", "showUsernameMentionNotifications", "showActiveCommunities", "showPresence", ...U.a, "loginOtpEnabled"],
 				H = {
 					acceptPrivateMessages: void 0,
 					activityRelevantAds: !0,
@@ -24395,6 +24395,7 @@
 					reduceAnimationsFromAwards: !1,
 					rpanDuDismissalTime: void 0,
 					showActiveCommunities: !0,
+					showPresence: !0,
 					showRpanDu: !0,
 					showTwitter: !1,
 					sort: l.R.Hot,
@@ -24894,7 +24895,7 @@
 				l = e => e === n.G.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.od)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.qd)(t))
 		},
 		"./src/reddit/selectors/experiments/inboxAppBadgingGql.ts": function(e, t, r) {
 			"use strict";
@@ -24951,7 +24952,7 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts");
 			const n = e => {
-				if (!Object(s.od)(e)) return e || void 0
+				if (!Object(s.qd)(e)) return e || void 0
 			}
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, r) {
@@ -25210,4 +25211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7ef7e39a77a16cdb3a17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.75631d73bad674ffc299.js.map
