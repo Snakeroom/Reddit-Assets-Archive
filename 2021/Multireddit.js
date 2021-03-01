@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.fa75b74b4a68a8aad8db.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.c7fbe10c3090eb073c5d.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5875,16 +5875,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? r.a.createElement("span", l({}, t, {
-				className: Object(o.a)(c.a.compactDownvoteWrapper, t.className)
+				isFilled: t,
+				...s
+			}) => e ? r.a.createElement("span", l({}, s, {
+				className: Object(o.a)(c.a.compactDownvoteWrapper, s.className)
 			}), r.a.createElement(d, {
 				className: c.a.compactDownvote,
-				isFilled: t.isFilled
-			})) : r.a.createElement("span", l({}, t, {
-				className: Object(o.a)(c.a.downvoteWrapper, t.className)
+				isFilled: t
+			})) : r.a.createElement("span", l({}, s, {
+				className: Object(o.a)(c.a.downvoteWrapper, s.className)
 			}), r.a.createElement(d, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/fonts/Gift/index.m.less": function(e, t, s) {
@@ -6009,16 +6010,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? r.a.createElement("span", l({}, t, {
-				className: Object(o.a)(c.a.compactUpvoteWrapper, t.className)
+				isFilled: t,
+				...s
+			}) => e ? r.a.createElement("span", l({}, s, {
+				className: Object(o.a)(c.a.compactUpvoteWrapper, s.className)
 			}), r.a.createElement(d, {
 				className: c.a.compactUpvote,
-				isFilled: t.isFilled
-			})) : r.a.createElement("span", l({}, t, {
-				className: Object(o.a)(c.a.upvoteWrapper, t.className)
+				isFilled: t
+			})) : r.a.createElement("span", l({}, s, {
+				className: Object(o.a)(c.a.upvoteWrapper, s.className)
 			}), r.a.createElement(d, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {
@@ -6972,4 +6974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.fa75b74b4a68a8aad8db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.c7fbe10c3090eb073c5d.js.map

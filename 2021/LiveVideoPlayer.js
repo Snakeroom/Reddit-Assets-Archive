@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.ec5d6b537b15925ef140.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.7432de4b1cee3565fbc2.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -490,16 +490,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? a.a.createElement("span", d({}, t, {
-				className: Object(n.a)(l.a.compactDownvoteWrapper, t.className)
+				isFilled: t,
+				...s
+			}) => e ? a.a.createElement("span", d({}, s, {
+				className: Object(n.a)(l.a.compactDownvoteWrapper, s.className)
 			}), a.a.createElement(c, {
 				className: l.a.compactDownvote,
-				isFilled: t.isFilled
-			})) : a.a.createElement("span", d({}, t, {
-				className: Object(n.a)(l.a.downvoteWrapper, t.className)
+				isFilled: t
+			})) : a.a.createElement("span", d({}, s, {
+				className: Object(n.a)(l.a.downvoteWrapper, s.className)
 			}), a.a.createElement(c, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/fonts/Upvote/index.m.less": function(e, t, s) {
@@ -536,16 +537,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? a.a.createElement("span", d({}, t, {
-				className: Object(n.a)(l.a.compactUpvoteWrapper, t.className)
+				isFilled: t,
+				...s
+			}) => e ? a.a.createElement("span", d({}, s, {
+				className: Object(n.a)(l.a.compactUpvoteWrapper, s.className)
 			}), a.a.createElement(c, {
 				className: l.a.compactUpvote,
-				isFilled: t.isFilled
-			})) : a.a.createElement("span", d({}, t, {
-				className: Object(n.a)(l.a.upvoteWrapper, t.className)
+				isFilled: t
+			})) : a.a.createElement("span", d({}, s, {
+				className: Object(n.a)(l.a.upvoteWrapper, s.className)
 			}), a.a.createElement(c, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/svgs/Lock/index.tsx": function(e, t, s) {
@@ -659,4 +661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.ec5d6b537b15925ef140.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.7432de4b1cee3565fbc2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.f26295af8a2d03a66abb.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.0002131ad2f6964d17c6.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -1108,16 +1108,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? n.a.createElement("span", l({}, t, {
-				className: Object(r.a)(i.a.compactDownvoteWrapper, t.className)
+				isFilled: t,
+				...s
+			}) => e ? n.a.createElement("span", l({}, s, {
+				className: Object(r.a)(i.a.compactDownvoteWrapper, s.className)
 			}), n.a.createElement(d, {
 				className: i.a.compactDownvote,
-				isFilled: t.isFilled
-			})) : n.a.createElement("span", l({}, t, {
-				className: Object(r.a)(i.a.downvoteWrapper, t.className)
+				isFilled: t
+			})) : n.a.createElement("span", l({}, s, {
+				className: Object(r.a)(i.a.downvoteWrapper, s.className)
 			}), n.a.createElement(d, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/fonts/Upvote/index.m.less": function(e, t, s) {
@@ -1154,16 +1155,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? n.a.createElement("span", l({}, t, {
-				className: Object(r.a)(i.a.compactUpvoteWrapper, t.className)
+				isFilled: t,
+				...s
+			}) => e ? n.a.createElement("span", l({}, s, {
+				className: Object(r.a)(i.a.compactUpvoteWrapper, s.className)
 			}), n.a.createElement(d, {
 				className: i.a.compactUpvote,
-				isFilled: t.isFilled
-			})) : n.a.createElement("span", l({}, t, {
-				className: Object(r.a)(i.a.upvoteWrapper, t.className)
+				isFilled: t
+			})) : n.a.createElement("span", l({}, s, {
+				className: Object(r.a)(i.a.upvoteWrapper, s.className)
 			}), n.a.createElement(d, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/svgs/Hide/index.tsx": function(e, t, s) {
@@ -1665,4 +1667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.f26295af8a2d03a66abb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.0002131ad2f6964d17c6.js.map

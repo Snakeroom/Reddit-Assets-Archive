@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.db9b50ca7854b4074389.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.97bfe0b5234d67915a8c.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4604,16 +4604,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? r.a.createElement("span", l({}, t, {
-				className: Object(i.a)(c.a.compactDownvoteWrapper, t.className)
+				isFilled: t,
+				...s
+			}) => e ? r.a.createElement("span", l({}, s, {
+				className: Object(i.a)(c.a.compactDownvoteWrapper, s.className)
 			}), r.a.createElement(d, {
 				className: c.a.compactDownvote,
-				isFilled: t.isFilled
-			})) : r.a.createElement("span", l({}, t, {
-				className: Object(i.a)(c.a.downvoteWrapper, t.className)
+				isFilled: t
+			})) : r.a.createElement("span", l({}, s, {
+				className: Object(i.a)(c.a.downvoteWrapper, s.className)
 			}), r.a.createElement(d, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/fonts/Upvote/index.m.less": function(e, t, s) {
@@ -4650,16 +4651,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? r.a.createElement("span", l({}, t, {
-				className: Object(i.a)(c.a.compactUpvoteWrapper, t.className)
+				isFilled: t,
+				...s
+			}) => e ? r.a.createElement("span", l({}, s, {
+				className: Object(i.a)(c.a.compactUpvoteWrapper, s.className)
 			}), r.a.createElement(d, {
 				className: c.a.compactUpvote,
-				isFilled: t.isFilled
-			})) : r.a.createElement("span", l({}, t, {
-				className: Object(i.a)(c.a.upvoteWrapper, t.className)
+				isFilled: t
+			})) : r.a.createElement("span", l({}, s, {
+				className: Object(i.a)(c.a.upvoteWrapper, s.className)
 			}), r.a.createElement(d, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/svgs/ChevronDown/index.tsx": function(e, t, s) {
@@ -4909,4 +4911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.db9b50ca7854b4074389.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.97bfe0b5234d67915a8c.js.map

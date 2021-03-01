@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.0a49ea574057af019b83.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.ca8051aeb35773759790.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~SubredditWiki"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -784,13 +784,6 @@
 				return e == e && (void 0 !== o && (e = e <= o ? e : o), void 0 !== t && (e = e >= t ? e : t)), e
 			}
 		},
-		"./node_modules/lodash/_baseRandom.js": function(e, t) {
-			var o = Math.floor,
-				n = Math.random;
-			e.exports = function(e, t) {
-				return e + o(n() * (t - e + 1))
-			}
-		},
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
 			var o = Math.ceil,
 				n = Math.max;
@@ -828,25 +821,6 @@
 				i = o("./node_modules/lodash/map.js");
 			e.exports = function(e, t) {
 				return n(i(e, t), 1)
-			}
-		},
-		"./node_modules/lodash/random.js": function(e, t, o) {
-			var n = o("./node_modules/lodash/_baseRandom.js"),
-				i = o("./node_modules/lodash/_isIterateeCall.js"),
-				r = o("./node_modules/lodash/toFinite.js"),
-				s = parseFloat,
-				a = Math.min,
-				u = Math.random;
-			e.exports = function(e, t, o) {
-				if (o && "boolean" != typeof o && i(e, t, o) && (t = o = void 0), void 0 === o && ("boolean" == typeof t ? (o = t, t = void 0) : "boolean" == typeof e && (o = e, e = void 0)), void 0 === e && void 0 === t ? (e = 0, t = 1) : (e = r(e), void 0 === t ? (t = e, e = 0) : t = r(t)), e > t) {
-					var c = e;
-					e = t, t = c
-				}
-				if (o || e % 1 || t % 1) {
-					var l = u();
-					return a(e + l * (t - e + s("1e-" + ((l + "").length - 1))), t)
-				}
-				return n(e, t)
 			}
 		},
 		"./node_modules/lodash/range.js": function(e, t, o) {
@@ -1104,4 +1078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.0a49ea574057af019b83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.ca8051aeb35773759790.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.d4c2237b80808b1c80f5.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.a81d1931354601374d53.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -893,142 +893,144 @@
 		"./src/reddit/components/CommentsLink/index.tsx": function(e, t, s) {
 			"use strict";
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
-				n = s("./node_modules/react/index.js"),
+				n = s("./node_modules/lodash/random.js"),
 				r = s.n(n),
-				i = s("./node_modules/react-redux/es/index.js"),
-				c = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				a = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/lib/classNames/index.ts"),
-				l = s("./src/lib/permalinkToOverlayLocation/index.ts"),
-				p = s("./src/lib/prettyPrintNumber/index.ts"),
-				u = s("./src/reddit/components/CountAnimation/index.tsx"),
-				m = s("./src/reddit/components/CountAnimation/config.ts"),
-				b = s("./src/reddit/components/CountAnimation/helpers.ts"),
-				h = s("./src/reddit/constants/componentTestIds.ts"),
-				x = s("./src/reddit/constants/postLayout.ts"),
-				f = s("./src/reddit/helpers/path/index.ts"),
-				v = s("./src/reddit/icons/fonts/Comment/index.tsx"),
-				_ = s("./src/reddit/selectors/chatPost.ts"),
-				O = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				C = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				g = s("./src/reddit/selectors/posts.ts"),
-				j = s("./src/reddit/selectors/user.ts"),
-				E = s("./src/reddit/components/CommentsLink/index.m.less"),
-				k = s.n(E);
-			const w = Object(i.b)(() => Object(a.c)({
-					isChatPost: _.d,
-					isPostSEOEligible: C.e,
-					postPermalink: g.H,
-					shouldOpenPostInNewTab: j.ab,
-					totalDiscount: O.a,
-					variantAnimationConfig: O.e
+				i = s("./node_modules/react/index.js"),
+				c = s.n(i),
+				a = s("./node_modules/react-redux/es/index.js"),
+				d = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				l = s("./node_modules/reselect/es/index.js"),
+				p = s("./src/lib/classNames/index.ts"),
+				u = s("./src/lib/permalinkToOverlayLocation/index.ts"),
+				m = s("./src/lib/prettyPrintNumber/index.ts"),
+				b = s("./src/reddit/components/CountAnimation/index.tsx"),
+				h = s("./src/reddit/components/CountAnimation/config.ts"),
+				x = s("./src/reddit/components/CountAnimation/helpers.ts"),
+				f = s("./src/reddit/constants/componentTestIds.ts"),
+				v = s("./src/reddit/constants/postLayout.ts"),
+				_ = s("./src/reddit/helpers/path/index.ts"),
+				O = s("./src/reddit/icons/fonts/Comment/index.tsx"),
+				C = s("./src/reddit/selectors/chatPost.ts"),
+				g = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				j = s("./src/reddit/selectors/experiments/postSeo.ts"),
+				E = s("./src/reddit/selectors/posts.ts"),
+				k = s("./src/reddit/selectors/user.ts"),
+				w = s("./src/reddit/components/CommentsLink/index.m.less"),
+				I = s.n(w);
+			const y = Object(a.b)(() => Object(l.c)({
+					isChatPost: C.d,
+					isPostSEOEligible: j.e,
+					postPermalink: E.H,
+					shouldOpenPostInNewTab: k.ab,
+					totalDiscount: g.a,
+					variantAnimationConfig: g.e
 				})),
 				{
 					commentCount: {
 						inititalDelayRange: {
-							lower: I,
-							upper: y
-						},
-						subsequentRecurringDelayRange: {
 							lower: P,
 							upper: S
 						},
-						incrementRangeRelativeToTotalDiscount: {
+						subsequentRecurringDelayRange: {
 							lower: T,
 							upper: M
+						},
+						incrementRangeRelativeToTotalDiscount: {
+							lower: N,
+							upper: F
 						}
 					}
-				} = m.b,
-				N = () => Object(b.l)(I, y),
-				F = () => Object(b.l)(P, S),
-				R = ({
+				} = h.b,
+				R = () => r()(P, S),
+				A = () => r()(T, M),
+				L = ({
 					type: e,
 					numComments: t,
 					isChatPost: s,
-					modModeEnabled: i,
-					hasModPostPerms: c,
-					shouldShowIcon: a,
+					modModeEnabled: n,
+					hasModPostPerms: a,
+					shouldShowIcon: d,
 					shouldShowText: l,
-					text: m,
+					text: u,
 					totalDiscount: h,
 					shouldDisjointAnimation: f,
 					shouldShowPageTransPersistence: _,
-					postId: O
+					postId: C
 				}) => {
-					let C;
-					C = m || (e === x.g.Compact || s || i && c ? Object(p.b)(t) : o.fbt._({
+					let g;
+					g = u || (e === v.g.Compact || s || n && a ? Object(m.b)(t) : o.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
-					}, [o.fbt._plural(t, "number", Object(p.b)(t))], {
+					}, [o.fbt._plural(t, "number", Object(m.b)(t))], {
 						hk: "1QeOde"
 					}));
-					const g = Object(n.useCallback)(() => Object(b.l)(Math.ceil((h || 0) * T), Math.ceil((h || 0) * M)), [h]),
-						j = Object(n.useRef)(Object(b.k)(O, b.a.Comment)),
-						E = Object(n.useRef)(_ && void 0 !== h && Object(b.e)(j.current));
-					return r.a.createElement(n.Fragment, null, a && r.a.createElement(v.a, {
-						className: k.a.commentIcon,
+					const j = Object(i.useCallback)(() => r()(Math.ceil((h || 0) * N), Math.ceil((h || 0) * F)), [h]),
+						E = Object(i.useRef)(Object(x.k)(C, x.a.Comment)),
+						k = Object(i.useRef)(_ && void 0 !== h && Object(x.e)(E.current));
+					return c.a.createElement(i.Fragment, null, d && c.a.createElement(O.a, {
+						className: I.a.commentIcon,
 						role: "presentation"
-					}), l && r.a.createElement("span", {
-						className: k.a.text
-					}, void 0 !== h ? r.a.createElement(u.a, {
-						initialDisplayCount: E.current || t - h,
+					}), l && c.a.createElement("span", {
+						className: I.a.text
+					}, void 0 !== h ? c.a.createElement(b.a, {
+						initialDisplayCount: k.current || t - h,
 						countToUpperBound: t,
-						initialDelay: N,
-						subsequentRecurringDelay: F,
-						incrementDelta: g,
+						initialDelay: R,
+						subsequentRecurringDelay: A,
+						incrementDelta: j,
 						shouldDisjointAnimation: f,
-						id: j.current
-					}) : C), l && (!i || !c) && void 0 !== h && r.a.createElement("span", {
-						className: Object(d.a)(k.a.text, k.a.commentsText)
+						id: E.current
+					}) : g), l && (!n || !a) && void 0 !== h && c.a.createElement("span", {
+						className: Object(p.a)(I.a.text, I.a.commentsText)
 					}, o.fbt._("comments", null, {
 						hk: "ZQ8MY"
 					})))
 				};
-			t.a = w(e => {
+			t.a = y(e => {
 				const {
 					className: t,
 					hasModPostPerms: s,
 					isChatPost: o,
 					isCommentPermalink: n,
-					isCommentsPage: i,
-					isOverlay: a,
-					isPostSEOEligible: p,
-					modModeEnabled: u,
+					isCommentsPage: r,
+					isOverlay: i,
+					isPostSEOEligible: a,
+					modModeEnabled: l,
 					numComments: m,
 					onClick: b,
-					postPermalink: x,
-					shouldOpenPostInNewTab: v,
-					shouldShowIcon: _ = !0,
+					postPermalink: h,
+					shouldOpenPostInNewTab: x,
+					shouldShowIcon: v = !0,
 					shouldShowText: O = !0,
 					text: C,
 					type: g,
 					totalDiscount: j,
 					variantAnimationConfig: E,
-					postId: w
-				} = e, I = i && !n && !p, y = n && !a, P = r.a.createElement(R, {
+					postId: k
+				} = e, w = r && !n && !a, y = n && !i, P = c.a.createElement(L, {
 					type: g,
 					numComments: m,
 					isChatPost: o,
 					totalDiscount: j,
-					modModeEnabled: u,
+					modModeEnabled: l,
 					hasModPostPerms: s,
 					shouldDisjointAnimation: null == E ? void 0 : E.shouldDisjointAnimation,
 					shouldShowPageTransPersistence: null == E ? void 0 : E.shouldShowPageTransPersistence,
-					shouldShowIcon: _,
+					shouldShowIcon: v,
 					shouldShowText: O,
 					text: C,
-					postId: w
+					postId: k
 				});
-				return I ? r.a.createElement("div", {
-					className: Object(d.a)(k.a.commentsLink, k.a.defaultCursorWrapper, t),
+				return w ? c.a.createElement("div", {
+					className: Object(p.a)(I.a.commentsLink, I.a.defaultCursorWrapper, t),
 					onClick: b
-				}, P) : r.a.createElement(c.a, {
+				}, P) : c.a.createElement(d.a, {
 					rel: "nofollow",
 					"data-click-id": "comments",
-					"data-test-id": h.a,
-					className: Object(d.a)(k.a.commentsLink, k.a.link, t),
-					target: v ? "_blank" : void 0,
-					to: y ? Object(f.b)(x) : Object(l.a)(x, !0),
+					"data-test-id": f.a,
+					className: Object(p.a)(I.a.commentsLink, I.a.link, t),
+					target: x ? "_blank" : void 0,
+					to: y ? Object(_.b)(h) : Object(u.a)(h, !0),
 					onClick: b
 				}, P)
 			})
@@ -4976,4 +4978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.d4c2237b80808b1c80f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.a81d1931354601374d53.js.map

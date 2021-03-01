@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.279350f8adb29cafdbec.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.152e33449fe5db2c6caf.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -11496,69 +11496,71 @@
 		},
 		"./src/reddit/controls/Score/index.tsx": function(e, t, n) {
 			"use strict";
-			var s = n("./node_modules/react/index.js"),
+			var s = n("./node_modules/lodash/random.js"),
 				r = n.n(s),
-				o = n("./src/lib/classNames/index.ts"),
-				a = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				i = n("./src/lib/prettyPrintNumber/index.ts"),
-				c = n("./src/reddit/components/CountAnimation/index.tsx"),
-				d = n("./src/reddit/components/CountAnimation/config.ts"),
-				l = n("./src/reddit/components/CountAnimation/helpers.ts"),
-				m = n("./src/reddit/constants/colors.ts"),
-				u = n("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				p = n("./src/reddit/helpers/styles/smartTextColor.ts"),
-				b = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				h = n("./src/reddit/models/Vote/index.ts"),
-				g = n("./src/reddit/controls/Score/index.m.less"),
-				f = n.n(g);
-			const v = e => e.voteState === h.a.downvoted ? Object(b.a)(e).voteText.downvote : e.voteState === h.a.upvoted ? Object(b.a)(e).voteText.upvote : Object(p.a)(Object(u.a)(e)),
+				o = n("./node_modules/react/index.js"),
+				a = n.n(o),
+				i = n("./src/lib/classNames/index.ts"),
+				c = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				d = n("./src/lib/prettyPrintNumber/index.ts"),
+				l = n("./src/reddit/components/CountAnimation/index.tsx"),
+				m = n("./src/reddit/components/CountAnimation/config.ts"),
+				u = n("./src/reddit/components/CountAnimation/helpers.ts"),
+				p = n("./src/reddit/constants/colors.ts"),
+				b = n("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				h = n("./src/reddit/helpers/styles/smartTextColor.ts"),
+				g = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				f = n("./src/reddit/models/Vote/index.ts"),
+				v = n("./src/reddit/controls/Score/index.m.less"),
+				x = n.n(v);
+			const C = e => e.voteState === f.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === f.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(h.a)(Object(b.a)(e)),
 				{
 					upvoteCount: {
 						inititalDelayRange: {
-							lower: x,
-							upper: C
-						},
-						subsequentRecurringDelayRange: {
 							lower: O,
 							upper: y
 						},
-						incrementRangeRelativeToTotalDiscount: {
+						subsequentRecurringDelayRange: {
 							lower: E,
 							upper: P
+						},
+						incrementRangeRelativeToTotalDiscount: {
+							lower: j,
+							upper: S
 						}
 					}
-				} = d.b,
-				j = () => Object(l.l)(x, C),
-				S = () => Object(l.l)(O, y),
-				_ = Object(a.a)(e => {
+				} = m.b,
+				_ = () => r()(O, y),
+				w = () => r()(E, P),
+				k = Object(c.a)(e => {
 					const t = {
-							color: e.light ? m.b.lightboxHeaderText : v(e)
+							color: e.light ? p.b.lightboxHeaderText : C(e)
 						},
 						{
 							totalDiscount: n,
-							score: a,
-							shouldDisjointAnimation: d,
-							shouldShowPageTransPersistence: u,
-							postId: p = ""
+							score: s,
+							shouldDisjointAnimation: c,
+							shouldShowPageTransPersistence: m,
+							postId: b = ""
 						} = e,
-						b = e.isScoreHidden ? "Vote" : Object(i.b)(a),
-						h = Object(s.useCallback)(() => Object(l.l)(Math.ceil((n || 0) * E), Math.ceil((n || 0) * P)), [n]),
-						g = Object(s.useRef)(Object(l.k)(p, l.a.Vote)),
-						x = Object(s.useRef)(u && void 0 !== n && Object(l.e)(g.current));
-					return r.a.createElement("div", {
-						className: Object(o.a)(f.a.score, e.className),
+						h = e.isScoreHidden ? "Vote" : Object(d.b)(s),
+						g = Object(o.useCallback)(() => r()(Math.ceil((n || 0) * j), Math.ceil((n || 0) * S)), [n]),
+						f = Object(o.useRef)(Object(u.k)(b, u.a.Vote)),
+						v = Object(o.useRef)(m && void 0 !== n && Object(u.e)(f.current));
+					return a.a.createElement("div", {
+						className: Object(i.a)(x.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t
-					}, e.isScoreHidden || void 0 === n ? b : r.a.createElement(c.a, {
-						initialDisplayCount: x.current || a - n,
-						countToUpperBound: a,
-						initialDelay: j,
-						subsequentRecurringDelay: S,
-						incrementDelta: h,
-						shouldDisjointAnimation: d,
-						id: g.current
+					}, e.isScoreHidden || void 0 === n ? h : a.a.createElement(l.a, {
+						initialDisplayCount: v.current || s - n,
+						countToUpperBound: s,
+						initialDelay: _,
+						subsequentRecurringDelay: w,
+						incrementDelta: g,
+						shouldDisjointAnimation: c,
+						id: f.current
 					}))
 				});
-			t.a = _
+			t.a = k
 		},
 		"./src/reddit/controls/Search/RelatedSubredditMetaData.tsx": function(e, t, n) {
 			"use strict";
@@ -13459,16 +13461,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? r.a.createElement("span", d({}, t, {
-				className: Object(o.a)(c.a.compactDownvoteWrapper, t.className)
+				isFilled: t,
+				...n
+			}) => e ? r.a.createElement("span", d({}, n, {
+				className: Object(o.a)(c.a.compactDownvoteWrapper, n.className)
 			}), r.a.createElement(l, {
 				className: c.a.compactDownvote,
-				isFilled: t.isFilled
-			})) : r.a.createElement("span", d({}, t, {
-				className: Object(o.a)(c.a.downvoteWrapper, t.className)
+				isFilled: t
+			})) : r.a.createElement("span", d({}, n, {
+				className: Object(o.a)(c.a.downvoteWrapper, n.className)
 			}), r.a.createElement(l, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/fonts/Expandos/Media/Video/index.m.less": function(e, t, n) {
@@ -13527,16 +13530,17 @@
 			});
 			t.b = ({
 				compact: e,
-				...t
-			}) => e ? r.a.createElement("span", d({}, t, {
-				className: Object(o.a)(c.a.compactUpvoteWrapper, t.className)
+				isFilled: t,
+				...n
+			}) => e ? r.a.createElement("span", d({}, n, {
+				className: Object(o.a)(c.a.compactUpvoteWrapper, n.className)
 			}), r.a.createElement(l, {
 				className: c.a.compactUpvote,
-				isFilled: t.isFilled
-			})) : r.a.createElement("span", d({}, t, {
-				className: Object(o.a)(c.a.upvoteWrapper, t.className)
+				isFilled: t
+			})) : r.a.createElement("span", d({}, n, {
+				className: Object(o.a)(c.a.upvoteWrapper, n.className)
 			}), r.a.createElement(l, {
-				isFilled: t.isFilled
+				isFilled: t
 			}))
 		},
 		"./src/reddit/icons/svgs/All/index.tsx": function(e, t, n) {
@@ -16284,7 +16288,7 @@
 							const t = this.resolve(e);
 							return !1 !== this.resolved[t] && !!n.m[t]
 						},
-						importAsync: () => Promise.all([n.e("vendors~Chat~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RedesignChat~RichTextEditor"), n.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"), n.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), n.e("MembershipPaywallPage")]).then(n.bind(null, "./src/reddit/pages/meta/MembershipPaywallPage/index.tsx")),
+						importAsync: () => Promise.all([n.e("vendors~Chat~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RedesignChat~RichTextEditor"), n.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~a66c4d66"), n.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), n.e("MembershipPaywallPage")]).then(n.bind(null, "./src/reddit/pages/meta/MembershipPaywallPage/index.tsx")),
 						requireAsync(e) {
 							const t = this.resolve(e);
 							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -17679,7 +17683,7 @@
 		}
 	},
 	[
-		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
+		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.279350f8adb29cafdbec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.152e33449fe5db2c6caf.js.map

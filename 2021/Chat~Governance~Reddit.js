@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.07dc7d7d59b10d993e03.js
-// Retrieved at 3/1/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d495e721b27f9074095c.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1440,11 +1440,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("127525"),
+				buildNumber: r("127527"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1614626749"),
+				})("1614628072"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3583,14 +3583,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c35edd8c14f93e75d6945ad02e82abc7fa1005241-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1fd30d8b4cf0d56787beeeb97e9d56d2b65d9975-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "35edd8c14f93e75d6945ad02e82abc7fa1005241-production",
+						release: "1fd30d8b4cf0d56787beeeb97e9d56d2b65d9975-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4028,7 +4028,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "35edd8c14f93e75d6945ad02e82abc7fa1005241-production",
+						releaseClient: "1fd30d8b4cf0d56787beeeb97e9d56d2b65d9975-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -15111,26 +15111,24 @@
 				return s
 			})), i.d(t, "f", (function() {
 				return o
-			})), i.d(t, "l", (function() {
-				return d
 			})), i.d(t, "a", (function() {
-				return a
+				return d
 			})), i.d(t, "k", (function() {
-				return l
+				return a
 			})), i.d(t, "e", (function() {
-				return c
+				return l
 			})), i.d(t, "j", (function() {
-				return u
+				return c
 			})), i.d(t, "h", (function() {
-				return _
+				return u
 			})), i.d(t, "i", (function() {
-				return p
+				return _
 			})), i.d(t, "g", (function() {
-				return h
+				return m
 			})), i.d(t, "c", (function() {
-				return f
+				return b
 			})), i.d(t, "b", (function() {
-				return w
+				return g
 			}));
 			var n = i("./src/reddit/constants/experiments.ts"),
 				r = i("./src/reddit/components/CountAnimation/config.ts");
@@ -15145,29 +15143,28 @@
 					let s = !0;
 					for (; s;) ++i > 9 && (i = 0), r.push(i), i === n && (s = !1);
 					return r
-				},
-				d = (e, t) => Math.floor(Math.random() * (t - e + 1) + e);
-			var a;
+				};
+			var d;
 			! function(e) {
 				e.Vote = "vote", e.Comment = "comment"
-			}(a || (a = {}));
-			const l = (e, t) => `${t}_${e}_count_animation`,
-				c = e => {
+			}(d || (d = {}));
+			const a = (e, t) => `${t}_${e}_count_animation`,
+				l = e => {
 					{
 						const t = document.getElementById(e);
 						return t && t.textContent && Number.parseInt(t.textContent) || void 0
 					}
 				},
-				u = e => !!e && !e.isSponsored && !e.isScoreHidden && g(e.score),
-				_ = e => !!e && !e.isSponsored && g(e.numComments),
-				p = (e, t) => {
+				c = e => !!e && !e.isSponsored && !e.isScoreHidden && f(e.score),
+				u = e => !!e && !e.isSponsored && f(e.numComments),
+				_ = (e, t) => {
 					if (!t) return !1;
 					const i = Date.now(),
 						n = Math.abs(i - t.created);
 					return !!t && n <= e
 				},
-				m = (e, t) => p(e, t) && (u(t) || _(t)),
-				h = e => {
+				p = (e, t) => _(e, t) && (c(t) || u(t)),
+				m = e => {
 					switch (e) {
 						case n.wc.Original:
 							return r.d;
@@ -15181,18 +15178,18 @@
 							return r.d
 					}
 				},
-				b = (e, t, i) => {
+				h = (e, t, i) => {
 					const n = ((e, t, i) => {
 							let n = 0;
 							return e.forEach(e => {
 								const r = t[e];
-								m(i, r) || n++
+								p(i, r) || n++
 							}), n
 						})(e, t, i),
 						r = Math.round(n / e.length * 100) / 100;
 					return Math.round(r / 2 * 100) / 100
 				},
-				f = (e, t, i) => {
+				b = (e, t, i) => {
 					const n = {},
 						s = {},
 						{
@@ -15202,34 +15199,34 @@
 							chancePerPostListing: d,
 							isAnimationEnabled: a,
 							expandFourDigit: l
-						} = i && h(i) || r.b,
-						c = b(e, t, o) + d;
-					let p = !1;
+						} = i && m(i) || r.b,
+						_ = h(e, t, o) + d;
+					let b = !1;
 					return e.forEach(e => {
 						const i = t[e],
-							r = c + (p ? 0 : .15);
-						m(o, i) && (e => Math.random() < e)(r) ? (p = !0, u(i) && (n[e] = {
-							totalDiscount: a(i) ? w(i.score) : 0
-						}), _(i) && (s[e] = {
-							totalDiscount: a(i) ? w(i.numComments) : 0
-						})) : (l && m(Number.POSITIVE_INFINITY, i) && (u(i) && (n[e] = {
+							r = _ + (b ? 0 : .15);
+						p(o, i) && (e => Math.random() < e)(r) ? (b = !0, c(i) && (n[e] = {
+							totalDiscount: a(i) ? g(i.score) : 0
+						}), u(i) && (s[e] = {
+							totalDiscount: a(i) ? g(i.numComments) : 0
+						})) : (l && p(Number.POSITIVE_INFINITY, i) && (c(i) && (n[e] = {
 							totalDiscount: 0
-						}), _(i) && (s[e] = {
+						}), u(i) && (s[e] = {
 							totalDiscount: 0
-						})), p = !1)
+						})), b = !1)
 					}), {
 						upvoteDiscount: n,
 						commentDiscount: s
 					}
 				},
-				g = e => {
+				f = e => {
 					const {
 						countUpperLimit: t,
 						countLowerLimit: i
 					} = r.b.postSelectionRequirements;
 					return e >= i && e <= t
 				},
-				w = e => {
+				g = e => {
 					if (e <= 2) return 0;
 					const t = 1 / Math.log10(e);
 					return Math.round(t * r.b.discountAmountCoefficient * e)
@@ -43768,4 +43765,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.07dc7d7d59b10d993e03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d495e721b27f9074095c.js.map

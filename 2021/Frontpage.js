@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.fa3c2216e5af12864e7f.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.c17c256ce89e58425e2c.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -20,13 +20,6 @@
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
 			e.exports = function(e, t, s) {
 				return e == e && (void 0 !== s && (e = e <= s ? e : s), void 0 !== t && (e = e >= t ? e : t)), e
-			}
-		},
-		"./node_modules/lodash/_baseRandom.js": function(e, t) {
-			var s = Math.floor,
-				n = Math.random;
-			e.exports = function(e, t) {
-				return e + s(n() * (t - e + 1))
 			}
 		},
 		"./node_modules/lodash/_baseSampleSize.js": function(e, t, s) {
@@ -57,25 +50,6 @@
 					e[i] = e[s], e[s] = o
 				}
 				return e.length = t, e
-			}
-		},
-		"./node_modules/lodash/random.js": function(e, t, s) {
-			var n = s("./node_modules/lodash/_baseRandom.js"),
-				r = s("./node_modules/lodash/_isIterateeCall.js"),
-				a = s("./node_modules/lodash/toFinite.js"),
-				i = parseFloat,
-				o = Math.min,
-				c = Math.random;
-			e.exports = function(e, t, s) {
-				if (s && "boolean" != typeof s && r(e, t, s) && (t = s = void 0), void 0 === s && ("boolean" == typeof t ? (s = t, t = void 0) : "boolean" == typeof e && (s = e, e = void 0)), void 0 === e && void 0 === t ? (e = 0, t = 1) : (e = a(e), void 0 === t ? (t = e, e = 0) : t = a(t)), e > t) {
-					var d = e;
-					e = t, t = d
-				}
-				if (s || e % 1 || t % 1) {
-					var l = c();
-					return o(e + l * (t - e + i("1e-" + ((l + "").length - 1))), t)
-				}
-				return n(e, t)
 			}
 		},
 		"./node_modules/lodash/sampleSize.js": function(e, t, s) {
@@ -2967,6 +2941,7 @@
 					className: N.a.categoryPicker
 				}, e.categories && e.categories.map((t, s) => e.activeCategoryName === t.name ? null : d.a.createElement("span", {
 					className: N.a.chipWrapper,
+					key: t.name,
 					onMouseDown: () => ((t, s) => e.onSendEventClick("bottom_leaderboards", t || g.d, void 0, s))(t.name, s + 1)
 				}, d.a.createElement(j, {
 					className: e.hasTagline ? N.a.taglineChip : N.a.chip,
@@ -4817,4 +4792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fa3c2216e5af12864e7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c17c256ce89e58425e2c.js.map

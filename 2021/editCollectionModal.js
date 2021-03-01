@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.a48d21f537b005da6064.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.99f802c43ed8950c6b4b.js
+// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -913,7 +913,7 @@
 						className: e
 					}, this.state.values.map((e, o) => a.a.createElement(l, {
 						id: e,
-						key: t && t(e),
+						key: t && t(e, o),
 						index: o,
 						render: s,
 						onDrop: this.onDrop,
@@ -1004,4 +1004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.a48d21f537b005da6064.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.99f802c43ed8950c6b4b.js.map
