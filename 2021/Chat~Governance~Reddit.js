@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6c8af1e7b8088aadfe18.js
-// Retrieved at 3/1/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.21133d920fed708f2810.js
+// Retrieved at 3/1/2021, 5:20:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1440,11 +1440,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("127552"),
+				buildNumber: r("127561"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1614633347"),
+				})("1614635330"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3058,44 +3058,47 @@
 		"./src/lib/cookieConsent/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return l
+				return u
 			})), i.d(t, "c", (function() {
-				return c
+				return _
 			}));
 			var n = i("./node_modules/js-cookie/src/js.cookie.js"),
 				r = i.n(n),
-				s = i("./src/lib/constants/euCookiePolicy.ts"),
-				o = i("./src/lib/sentry/index.ts");
-			const d = {
+				s = (i("./src/lib/constants/index.ts"), i("./src/lib/constants/euCookiePolicy.ts"));
+			var o = i("./src/lib/permanentCookieOptions.ts"),
+				d = i("./src/lib/sentry/index.ts");
+			i("./src/reddit/constants/cookie.ts");
+			const a = {
 					setConsent: e => {},
 					get consent() {
 						return new Promise(e => this.setConsent = e)
 					}
 				},
-				a = (e, t, i, n) => e.nonessential ? (r.a.set(t, i, n), !0) : (console.log("Cookie lacking consent, not setting"), !1),
-				l = e => (r.a.set(s.b, JSON.stringify(e)), d.setConsent(e), !0),
-				c = async e => {
-					const t = (() => {
-						const e = {
-								opted: !1
-							},
-							t = r.a.get(s.b);
-						if (!t) return e;
-						let i = e;
-						try {
-							const e = JSON.parse(t);
-							if (void 0 === e.opted) throw new Error(`Invalid consent cookie: ${e}`);
-							i = e
-						} catch (n) {
-							o.c.captureException(n), console.error(n)
-						}
-						return i
-					})();
-					return void 0 !== e.cookieContext.country && s.c.includes(e.cookieContext.country) && e.cookieContext.inExperiment ? t.opted ? (a(t, e.name, e.value, e.cookieOptions), Promise.resolve(t)) : _().then(t => (a(t, e.name, e.value, e.cookieOptions), t)) : (r.a.set(e.name, e.value, e.cookieOptions), Promise.resolve(t))
+				l = e => {
+					const t = {
+							opted: !1
+						},
+						i = e ? e.cookies.get(s.b) : r.a.get(s.b);
+					if (!i) return t;
+					let n = t;
+					try {
+						const e = JSON.parse(i);
+						if (void 0 === e.opted) throw new Error(`Invalid consent cookie: ${e}`);
+						n = e
+					} catch (o) {
+						d.c.captureException(o), console.error(o)
+					}
+					return n
+				},
+				c = (e, t, i, n) => e.nonessential ? (r.a.set(t, i, n), !0) : (console.log("Cookie lacking consent, not setting"), !1),
+				u = e => (r.a.set(s.b, JSON.stringify(e), Object(o.a)(10)), a.setConsent(e), !0),
+				_ = async e => {
+					const t = l();
+					return void 0 !== e.cookieContext.country && s.c.includes(e.cookieContext.country) && e.cookieContext.inExperiment ? t.opted ? (c(t, e.name, e.value, e.cookieOptions), Promise.resolve(t)) : m().then(t => (c(t, e.name, e.value, e.cookieOptions), t)) : (r.a.set(e.name, e.value, e.cookieOptions), Promise.resolve(t))
 				};
-			let u;
-			const _ = () => u = u || d.consent;
-			t.a = c
+			let p;
+			const m = () => p = p || a.consent;
+			t.a = _
 		},
 		"./src/lib/copyToClipboard/index.ts": function(e, t, i) {
 			"use strict";
@@ -3589,14 +3592,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c160c87fa1a4f9e3201e57aa3dc7b3e25c1a0b745-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c041dc2e9d218978c84a3f6012a83c8171fab05fd-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "160c87fa1a4f9e3201e57aa3dc7b3e25c1a0b745-production",
+						release: "041dc2e9d218978c84a3f6012a83c8171fab05fd-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4034,7 +4037,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "160c87fa1a4f9e3201e57aa3dc7b3e25c1a0b745-production",
+						releaseClient: "041dc2e9d218978c84a3f6012a83c8171fab05fd-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -43979,4 +43982,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6c8af1e7b8088aadfe18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.21133d920fed708f2810.js.map
