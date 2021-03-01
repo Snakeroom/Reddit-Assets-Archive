@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.cb2c8d4cadc1d166252e.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.d384837527b9ab096a78.js
+// Retrieved at 3/1/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -3683,7 +3683,7 @@
 				}).apply(this, arguments)
 			}
 			const v = c.e[1] + 24,
-				E = b.f + 8 + 152 + 32 + 16,
+				E = b.f + 8 + 152 + 16,
 				k = E + v + 8,
 				w = x.a.div("Container", g.a),
 				C = x.a.wrapped(({
@@ -3692,7 +3692,7 @@
 				}) => a.a.createElement(p, y({
 					className: e,
 					style: {
-						top: "calc(100vh - 40px)"
+						top: "calc(100vh - 8px)"
 					}
 				}, t)), "BackToTop", g.a),
 				j = ({
@@ -5376,4 +5376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.cb2c8d4cadc1d166252e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.d384837527b9ab096a78.js.map

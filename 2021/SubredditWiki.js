@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.081088da7eeb4e66df1b.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.a57d6c4719aede88026b.js
+// Retrieved at 3/1/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -2428,7 +2428,7 @@
 				}).apply(this, arguments)
 			}
 			const v = d.e[1] + 24,
-				N = h.f + 8 + 152 + 32 + 16,
+				N = h.f + 8 + 152 + 16,
 				O = N + v + 8,
 				_ = x.a.div("Container", f.a),
 				y = x.a.wrapped(({
@@ -2437,7 +2437,7 @@
 				}) => o.a.createElement(b, w({
 					className: e,
 					style: {
-						top: "calc(100vh - 40px)"
+						top: "calc(100vh - 8px)"
 					}
 				}, t)), "BackToTop", f.a),
 				E = ({
@@ -5124,4 +5124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.081088da7eeb4e66df1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a57d6c4719aede88026b.js.map

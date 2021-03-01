@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bfede87d6f2b09eb00b8.js
-// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.0a643c87cabd9982cfe5.js
+// Retrieved at 3/1/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -393,7 +393,7 @@
 				}).apply(this, arguments)
 			}
 			const _ = d.e[1] + 24,
-				C = h.f + 8 + 152 + 32 + 16,
+				C = h.f + 8 + 152 + 16,
 				x = C + _ + 8,
 				S = k.a.div("Container", y.a),
 				v = k.a.wrapped(({
@@ -402,7 +402,7 @@
 				}) => o.a.createElement(g, E({
 					className: e,
 					style: {
-						top: "calc(100vh - 40px)"
+						top: "calc(100vh - 8px)"
 					}
 				}, t)), "BackToTop", y.a),
 				N = ({
@@ -2165,4 +2165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bfede87d6f2b09eb00b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.0a643c87cabd9982cfe5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.1282644f0214158e18c0.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.a8b12d262fc6ded1943e.js
+// Retrieved at 3/1/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1631,7 +1631,7 @@
 				}).apply(this, arguments)
 			}
 			const w = l.e[1] + 24,
-				x = g.f + 8 + 152 + 32 + 16,
+				x = g.f + 8 + 152 + 16,
 				I = x + w + 8,
 				R = C.a.div("Container", v.a),
 				P = C.a.wrapped(({
@@ -1640,7 +1640,7 @@
 				}) => a.a.createElement(p, y({
 					className: e,
 					style: {
-						top: "calc(100vh - 40px)"
+						top: "calc(100vh - 8px)"
 					}
 				}, t)), "BackToTop", v.a),
 				_ = ({
@@ -2290,4 +2290,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.1282644f0214158e18c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.a8b12d262fc6ded1943e.js.map
