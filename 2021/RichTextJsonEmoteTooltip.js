@@ -1,0 +1,69 @@
+// https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.79798870d5a05068a53c.js
+// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+(window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
+	["RichTextJsonEmoteTooltip"], {
+		"./src/reddit/components/RichTextJson/Emote/Tooltip/index.m.less": function(e, t, o) {
+			e.exports = {
+				container: "_1ZYKZ99fLnKdRuVBpU1Vwr",
+				emojiDescription: "_1-ukLvwGGC9jlnWBDbqc44",
+				emojiName: "gezkWzBxfb326kZkDHhyZ",
+				img: "N2IInBRimpNCR9ScSiMpa"
+			}
+		},
+		"./src/reddit/components/RichTextJson/Emote/Tooltip/index.tsx": function(e, t, o) {
+			"use strict";
+			o.r(t);
+			var s = o("./node_modules/react/index.js"),
+				n = o.n(s),
+				c = o("./node_modules/react-redux/es/index.js"),
+				i = o("./node_modules/reselect/es/index.js"),
+				r = o("./src/higherOrderComponents/addOverlayEvents.tsx"),
+				a = o("./src/lib/classNames/index.ts"),
+				m = o("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				d = o("./src/reddit/components/RichTextJson/index.tsx"),
+				l = o("./src/reddit/contexts/PageLayer/index.tsx"),
+				x = o("./src/reddit/models/Product/index.ts"),
+				p = o("./src/reddit/components/RichTextJson/Emote/Tooltip/index.m.less"),
+				u = o.n(p);
+			const _ = {};
+			const j = Object(i.c)({
+					emote: (e, {
+						emoteId: t,
+						pageLayer: o
+					}) => {
+						const s = Object(x.b)(t),
+							n = Object(l.q)(e, {
+								pageLayer: o
+							});
+						if (n) {
+							const o = n.id,
+								c = e.economics.emotes[o] || [];
+							for (const e of c)
+								if (e.emotes[s] && e.emotes[s].fullId === t) return e.emotes[s]
+						}
+					}
+				}),
+				E = Object(c.b)(j),
+				O = Object(l.t)()(E((function(e) {
+					return e.emote && e.emote.extra && e.emote.extra.rtDescription ? n.a.createElement("div", {
+						className: Object(a.a)(u.a.container, e.className),
+						style: e.style
+					}, n.a.createElement("img", {
+						className: u.a.img,
+						src: e.emote.sticker.path
+					}), n.a.createElement("div", null, n.a.createElement("div", {
+						className: u.a.emojiName
+					}, ":", Object(x.b)(e.emoteId), ":"), n.a.createElement("div", {
+						className: u.a.emojiDescription
+					}, n.a.createElement(d.a, {
+						content: {
+							document: e.emote.extra.rtDescription
+						},
+						rtJsonElementProps: _
+					})))) : null
+				})));
+			t.default = Object(m.a)(O, [r.a.Click, r.a.Keydown])
+		}
+	}
+]);
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.79798870d5a05068a53c.js.map
