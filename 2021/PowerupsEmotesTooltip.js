@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.606731945df816e37b38.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.4fbca6f5bf18e3acb800.js
+// Retrieved at 3/1/2021, 6:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/components/Econ/Common/NewIcon/index.m.less": function(e, t, o) {
@@ -189,11 +189,7 @@
 					f = a ? s.fbt._("Images under 128kb with a transparent background work the best.", null, {
 						hk: "c6yXl"
 					}) : _;
-				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-					className: Object(m.a)({
-						[x.a.disabled]: !l
-					})
-				}, n.a.createElement("article", null, n.a.createElement("header", {
+				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", null, n.a.createElement("article", null, n.a.createElement("header", {
 					className: x.a.emotePackTitle
 				}, n.a.createElement("span", null, a ? s.fbt._("Add up to 20 emojis", null, {
 					hk: "4kR3Q8"
@@ -204,7 +200,9 @@
 				})), n.a.createElement("header", {
 					className: x.a.emotePackSubtitle
 				}, f), n.a.createElement("div", {
-					className: x.a.emotes
+					className: Object(m.a)(x.a.emotes, {
+						[x.a.disabled]: !l
+					})
 				}, w.map(t => n.a.createElement(k.a, {
 					key: t.id,
 					className: x.a.emoteButton,
@@ -218,7 +216,9 @@
 				}, s.fbt._("Reddit emojis", null, {
 					hk: "2k2TMN"
 				})), n.a.createElement("div", {
-					className: x.a.emotes
+					className: Object(m.a)(x.a.emotes, {
+						[x.a.disabled]: !l
+					})
 				}, T.map(t => n.a.createElement(k.a, {
 					key: t.id,
 					className: x.a.emoteButton,
@@ -395,4 +395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.606731945df816e37b38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.4fbca6f5bf18e3acb800.js.map
