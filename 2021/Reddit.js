@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c0fecbafde4219766311.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e17a6b0f636821f8819c.js
+// Retrieved at 3/2/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -170,7 +170,7 @@
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
 		"./src/graphql/operations/FetchSpecialEvents.json": function(e) {
-			e.exports = JSON.parse('{"id":"c256825faee4"}')
+			e.exports = JSON.parse('{"id":"7537a71b4f14"}')
 		},
 		"./src/lib/LinkedListMap/index.ts": function(e, t, n) {
 			"use strict";
@@ -1462,33 +1462,29 @@
 		"./src/reddit/actions/goldPurchaseModals/requestSpecialEvents.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return m
 			}));
 			var s = n("./src/lib/env/index.ts"),
 				o = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/lib/sentry/index.ts"),
-				a = n("./src/reddit/endpoints/gold/productCatalog.ts");
-			const i = {
-				active: !0,
-				assetUrls: ["https://styles.redditmedia.com/t5_2dpfh6/styles/profileIcon_snoocbb350a1-0c24-41ce-bfc1-c3846143629c-headshot.png?width=256&height=256&crop=256:256,smart&s=f7f3b9711b9b637db6a656c3c32e3ef52282828e"]
-			};
-			var c = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				d = n("./src/lib/initializeClient/installReducer.ts"),
-				l = n("./src/reddit/reducers/features/avatar/index.ts");
-			Object(d.a)({
+				a = n("./src/reddit/endpoints/gold/productCatalog.ts"),
+				i = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				c = n("./src/lib/initializeClient/installReducer.ts"),
+				d = n("./src/reddit/reducers/features/avatar/index.ts");
+			Object(c.a)({
 				features: {
-					avatar: l.a
+					avatar: d.a
 				}
 			});
-			const m = Object(o.a)(c.o),
-				u = () => async (e, t, {
+			const l = Object(o.a)(i.o),
+				m = () => async (e, t, {
 					gqlContext: n
 				}) => {
 					try {
 						const t = await Object(a.d)(n());
 						if (!t.ok) throw new Error(`Got bad response in GQL call for special events: ${JSON.stringify(t||{})}`); {
 							const n = t.body.data.econSpecialEvents;
-							n.avatarMarketingEvent = i, await e(m(n))
+							await e(l(n))
 						}
 					} catch (o) {
 						Object(s.b)() || console.error(o), r.c.captureException(o)
@@ -15541,7 +15537,17 @@
 						const {
 							avatarMarketingEvent: n
 						} = t.payload;
-						return n || {
+						return n ? function(e) {
+							const {
+								startsAt: t,
+								endsAt: n,
+								webAssetUrls: s
+							} = e, o = t && new Date(t) <= new Date, r = !!n && new Date(n) < new Date, a = s || null;
+							return {
+								active: !!o && !r && !!a,
+								assetUrls: a
+							}
+						}(n) : {
 							active: !1,
 							assetUrls: []
 						};
@@ -17330,13 +17336,8 @@
 				c = Object(s.a)(a.a, e => {
 					var t, n;
 					const s = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing;
-					if (null == s ? void 0 : s.active) {
-						const e = s.assetUrls;
-						return e && d(e)
-					}
-					return null
-				}, (e, t) => e ? t : null),
-				d = e => e[Math.floor(Math.random() * e.length)]
+					return (null == s ? void 0 : s.active) ? s.assetUrls && s.assetUrls[0] : null
+				}, (e, t) => e ? t : null)
 		},
 		"./src/reddit/selectors/bannedUser.ts": function(e, t, n) {
 			"use strict";
@@ -17711,4 +17712,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c0fecbafde4219766311.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e17a6b0f636821f8819c.js.map

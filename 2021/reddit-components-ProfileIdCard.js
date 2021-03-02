@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.fb707bbd4c52fcf29f1e.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.35e4c248307ad9678d70.js
+// Retrieved at 3/2/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2011,7 +2011,17 @@
 						const {
 							avatarMarketingEvent: r
 						} = t.payload;
-						return r || {
+						return r ? function(e) {
+							const {
+								startsAt: t,
+								endsAt: r,
+								webAssetUrls: n
+							} = e, s = t && new Date(t) <= new Date, a = !!r && new Date(r) < new Date, o = n || null;
+							return {
+								active: !!s && !a && !!o,
+								assetUrls: o
+							}
+						}(r) : {
 							active: !1,
 							assetUrls: []
 						};
@@ -2046,13 +2056,8 @@
 				c = Object(n.a)(o.a, e => {
 					var t, r;
 					const n = null === (r = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === r ? void 0 : r.marketing;
-					if (null == n ? void 0 : n.active) {
-						const e = n.assetUrls;
-						return e && l(e)
-					}
-					return null
-				}, (e, t) => e ? t : null),
-				l = e => e[Math.floor(Math.random() * e.length)]
+					return (null == n ? void 0 : n.active) ? n.assetUrls && n.assetUrls[0] : null
+				}, (e, t) => e ? t : null)
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -2100,4 +2105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.fb707bbd4c52fcf29f1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.35e4c248307ad9678d70.js.map
