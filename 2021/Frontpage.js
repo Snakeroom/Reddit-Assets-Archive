@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3e51b9e9664bce666258.js
-// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ce4d5b5c769b43865f5c.js
+// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -1325,7 +1325,7 @@
 					},
 					isInIcons2020: Ue.b,
 					bffsLeaderboardVariant: Re,
-					inRpanTopVideoEntrypointExperiment: Me.d,
+					inRpanTopVideoEntrypointExperiment: Me.e,
 					rankings: e => Object(Ce.N)(e, Qe)
 				}),
 				ze = e => !((e.inRpanTopVideoEntrypointExperiment ? !e.rankings : !e.trendingSubredditIds.length) || e.currentUser && !e.currentUser.showTrending || e.isUISimplificationAllItemsVariant),
@@ -4461,7 +4461,7 @@
 				o = s("./src/reddit/selectors/user.ts"),
 				c = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				d = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const l = Object(n.a)(c.a, c.e, (e, {
+			const l = Object(n.a)(c.a, c.f, (e, {
 					listingName: t
 				}) => {
 					const s = Object(o.tb)(e);
@@ -4493,7 +4493,7 @@
 					if (!o.global.viewer_enabled) return !1;
 					return [a.R, "r/popular"].indexOf(n) > -1
 				}),
-				u = Object(n.a)(c.e, (e, {
+				u = Object(n.a)(c.f, (e, {
 					listingName: t
 				}) => t, (e, {
 					listingName: t
@@ -4600,7 +4600,7 @@
 				},
 				E = Object(n.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => p(t.listingName)(e, t), O, g, c.h, d.e, (e, t, s, n, r, c) => {
+				}) => t, (e, t) => p(t.listingName)(e, t), O, g, c.h, d.f, (e, t, s, n, r, c) => {
 					if (c) {
 						const a = [];
 						if (e) {
@@ -4792,4 +4792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3e51b9e9664bce666258.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ce4d5b5c769b43865f5c.js.map

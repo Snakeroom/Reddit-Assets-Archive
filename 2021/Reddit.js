@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.860e957b8d437e445992.js
-// Retrieved at 3/2/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.37751288a87f49450526.js
+// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -703,7 +703,7 @@
 					const C = v.user.account.displayText,
 						O = r.commentMode;
 					let y;
-					if (c ? (y = await Object(T.j)(f(), e, r, C), m(Object(u.a)({
+					if (c ? (y = await Object(T.k)(f(), e, r, C), m(Object(u.a)({
 							streamId: e,
 							level: y.body.automuteLevel
 						}))) : y = await I(f(), e, r, C, O), y.ok) {
@@ -5582,9 +5582,9 @@
 				Jr = n("./src/reddit/helpers/trackers/searchResults.ts"),
 				Yr = n("./src/reddit/selectors/experiments/trending.ts"),
 				Xr = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const $r = e => Object(Ct.G)(e) || Wt.id.Treatment1 === Object(Xr.c)(e, {
+			const $r = e => Object(Ct.G)(e) || Wt.jd.Treatment1 === Object(Xr.c)(e, {
 				experimentEligibilitySelector: Xr.a,
-				experimentName: Wt.fd
+				experimentName: Wt.gd
 			});
 			var ea = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				ta = n("./src/reddit/selectors/searchResults.ts"),
@@ -17308,13 +17308,13 @@
 				x = e => e.accountManagerModalData.redirectUrl,
 				C = Object(o.a)((e, t) => t.path, (e, t) => t.uiMode, v, d.a, f.a, l.b, e => Object(m.c)(e, {
 					experimentEligibilitySelector: g,
-					experimentName: i.Tc
+					experimentName: i.Uc
 				}), c.a, h, (e, t, n, o, c, d, l, m, u) => {
 					let p = `${s.a.accountManagerOrigin}${e}`;
 					return m && (p = Object(r.a)(p, {
 						[`experiment_${i.s}`]: "enabled"
 					})), l && (p = Object(r.a)(p, {
-						[`experiment_${i.Tc}`]: l
+						[`experiment_${i.Uc}`]: l
 					})), e === a.c.GoogleOneTap ? Object(r.a)(p, {
 						[i.N]: d
 					}) : (o && (p = Object(r.a)(p, {
@@ -17467,7 +17467,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: e
 				});
-				return !(!n || Object(s.sd)(n))
+				return !(!n || Object(s.td)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/econStorefrontClaim.ts": function(e, t, n) {
@@ -17483,7 +17483,7 @@
 					experimentEligibilitySelector: r.J,
 					experimentName: s.xb
 				});
-				return !(!t || Object(s.sd)(t))
+				return !(!t || Object(s.td)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -17546,9 +17546,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(r.G)(e) || !(s.hd.Holdout === Object(o.c)(e, {
+			const a = e => Object(r.G)(e) || !(s.id.Holdout === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: s.ed
+				experimentName: s.fd
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -17728,4 +17728,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.860e957b8d437e445992.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.37751288a87f49450526.js.map

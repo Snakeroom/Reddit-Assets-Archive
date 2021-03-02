@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.fb8e2048d4d111f319ca.js
-// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.570b56727819b6ead462.js
+// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -1812,4 +1812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.fb8e2048d4d111f319ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.570b56727819b6ead462.js.map

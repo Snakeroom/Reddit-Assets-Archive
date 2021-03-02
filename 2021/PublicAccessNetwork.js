@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b7743220b8c2b94b522b.js
-// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1f5ba7b7433300db16b5.js
+// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.fc
 				});
-				return Object(m.sd)(t) ? void 0 : t
+				return Object(m.td)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.gc
 				});
-				return Object(m.sd)(t) ? void 0 : t
+				return Object(m.td)(t) ? void 0 : t
 			}, (e, t) => e === m.hc.Enabled && t === m.hc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -892,7 +892,7 @@
 							});
 						if (r && Object(V.a)(s())) return void t(Object(a.c)(r.url));
 						if ((B.media && B.media.type) === I.o.LIVEVIDEO) {
-							const e = Object(D.e)(s()),
+							const e = Object(D.f)(s()),
 								o = B.belongsTo.type === x.a.SUBREDDIT,
 								n = `/rpan${e&&o?r.url:"/"}${Object(p.s)(B.id)}`;
 							return void t(Object(a.c)(n))
@@ -3361,7 +3361,7 @@
 			const nt = e => async (t, s, {
 				apiContext: a
 			}) => {
-				const o = await Object(ot.k)(a(), e, !0);
+				const o = await Object(ot.l)(a(), e, !0);
 				o && o.ok ? t(Object(re.e)({
 					kind: le.b.SuccessLockComment,
 					text: b.fbt._("Comments locked", null, {
@@ -3377,7 +3377,7 @@
 			}, rt = e => async (t, s, {
 				apiContext: a
 			}) => {
-				const o = await Object(ot.k)(a(), e, !1);
+				const o = await Object(ot.l)(a(), e, !1);
 				o && o.ok ? t(Object(re.e)({
 					kind: le.b.SuccessUnlockComment,
 					text: b.fbt._("Comments unlocked", null, {
@@ -4020,9 +4020,9 @@
 				}) => t ? Object(Ke.l)(e, t) : void 0,
 				Ws = Object(i.c)({
 					currentStream: Ks,
-					inStreamingSubredditIntegration: Be.e,
-					inStreamingUiRefreshViewer: Be.f,
-					inViewerFeedTheMeter: (e, t) => Object(Be.g)(e, t, Ks),
+					inStreamingSubredditIntegration: Be.f,
+					inStreamingUiRefreshViewer: Be.g,
+					inViewerFeedTheMeter: (e, t) => Object(Be.h)(e, t, Ks),
 					isApiError: (e, {
 						currentStreamId: t
 					}) => Object(He.c)(e, t),
@@ -4990,8 +4990,8 @@
 					currentStream: Ke.d,
 					currentStreamStartTime: Ke.e,
 					currentHlsUrl: Ke.b,
-					inStreamingSubredditIntegration: Be.e,
-					inViewerFeedTheMeter: (e, t) => Object(Be.g)(e, t, Ke.d),
+					inStreamingSubredditIntegration: Be.f,
+					inViewerFeedTheMeter: (e, t) => Object(Be.h)(e, t, Ke.d),
 					isIntroInProgress: We.b,
 					isOverlayOpen: Ue.h,
 					isReportFlowOpen: (e, {
@@ -5780,7 +5780,7 @@
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
 					experimentName: a.Gc
-				}) === a.Pc.Enabled
+				}) === a.Qc.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -5788,4 +5788,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b7743220b8c2b94b522b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1f5ba7b7433300db16b5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.3beff49ce8e2b9a5517c.js
-// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.84f3320f120790b92552.js
+// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -22,11 +22,11 @@
 			}) => {
 				const u = a();
 				if (Object(d.J)(u))
-					if (Object(i.f)(u)) await Object(o.h)(n(), e, t);
+					if (Object(i.g)(u)) await Object(o.i)(n(), e, t);
 					else {
 						await Object(r.d)(e);
 						const s = Object(l.l)(a(), e);
-						null !== s.post.voteState && Object(c.e)(s.post.voteState) === t || await Object(o.h)(n(), e, t)
+						null !== s.post.voteState && Object(c.e)(s.post.voteState) === t || await Object(o.i)(n(), e, t)
 					}
 				else s(Object(m.h)())
 			}
@@ -95,8 +95,8 @@
 				m = s("./src/lib/mapToObject/index.ts"),
 				u = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				p = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
-				h = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx"),
-				v = s("./src/reddit/controls/RadioInput/index.tsx"),
+				v = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx"),
+				h = s("./src/reddit/controls/RadioInput/index.tsx"),
 				b = s("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				C = s("./src/reddit/controls/TextButton/index.tsx"),
 				x = s("./src/reddit/layout/row/Inline/index.tsx"),
@@ -191,7 +191,7 @@
 						onClick: this.handleClickCopy
 					}, N._("Copy", null, {
 						hk: "2bETeK"
-					})))), n.a.createElement(g, null, n.a.createElement(v.a, {
+					})))), n.a.createElement(g, null, n.a.createElement(h.a, {
 						name: "share-link",
 						onChange: this.onTypeChange,
 						value: String(this.state.useTimestamp)
@@ -203,7 +203,7 @@
 						hk: "3LcrOx"
 					}), n.a.createElement("span", {
 						className: E.a.liveStatus
-					}, n.a.createElement(h.g, null))) : N._("Share from beginning", null, {
+					}, n.a.createElement(v.g, null))) : N._("Share from beginning", null, {
 						hk: "4rKJB"
 					})), n.a.createElement(b.a, {
 						showButton: !0,
@@ -285,8 +285,8 @@
 				m = s("./src/reddit/icons/fonts/Menu/index.tsx"),
 				u = s("./src/reddit/icons/fonts/Share/index.tsx"),
 				p = s("./src/reddit/icons/svgs/Crosspost/index.tsx"),
-				h = s("./src/reddit/icons/svgs/Hide/index.tsx"),
-				v = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
+				v = s("./src/reddit/icons/svgs/Hide/index.tsx"),
+				h = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				b = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				C = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				x = s("./src/reddit/icons/svgs/VideoMute/index.tsx"),
@@ -352,7 +352,7 @@
 					iconWrapperClassName: _.a.overflowItemIconWrapper,
 					key: `${L}-community`,
 					onClick: () => Object(c.d)(d.Q, c.c.BLANK)
-				}, r.a.createElement(v.c, {
+				}, r.a.createElement(h.c, {
 					className: _.a.overflowItemIcon
 				})), r.a.createElement(l.b, {
 					className: _.a.overflowItem,
@@ -372,7 +372,7 @@
 					iconWrapperClassName: _.a.overflowItemIconWrapper,
 					key: `${L}-hide`,
 					onClick: t
-				}, r.a.createElement(h.a, {
+				}, r.a.createElement(v.a, {
 					className: _.a.overflowItemIcon
 				}))),
 				j = ({
@@ -529,9 +529,9 @@
 			})), s.d(t, "b", (function() {
 				return pe
 			})), s.d(t, "a", (function() {
-				return he
-			})), s.d(t, "e", (function() {
 				return ve
+			})), s.d(t, "e", (function() {
+				return he
 			})), s.d(t, "s", (function() {
 				return be
 			})), s.d(t, "m", (function() {
@@ -549,8 +549,8 @@
 				m = s("./src/reddit/actions/publicAccessNetwork/votes.ts"),
 				u = s("./src/reddit/actions/subscription/index.ts"),
 				p = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx"),
-				h = s("./src/reddit/components/OverflowMenu/index.tsx"),
-				v = s("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
+				v = s("./src/reddit/components/OverflowMenu/index.tsx"),
+				h = s("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
 				b = s("./src/reddit/constants/posts.ts"),
 				C = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				x = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
@@ -630,7 +630,7 @@
 				r = "home" === t ? "All" : "r/popular" === t ? "r/popular" : s || "All";
 				const o = a.filter(e => e.prefixedName !== r),
 					c = 30 + 35 * o.length;
-				return n.a.createElement(h.b, {
+				return n.a.createElement(v.b, {
 					dropdownId: "rpan-recommended-viewer-subreddits-dropdown",
 					icon: n.a.createElement("span", {
 						className: W.a.subreddit
@@ -686,7 +686,7 @@
 				onClickCrosspost: e,
 				onClickVideoShare: t,
 				onClickShare: s
-			}) => n.a.createElement(h.b, {
+			}) => n.a.createElement(v.b, {
 				className: W.a.menuButton,
 				defaultButtonOutline: !0,
 				dropdownId: ee,
@@ -728,7 +728,7 @@
 				onEndBroadcastClick: c,
 				onRpanStudioClick: l,
 				subreddit: m
-			}) => n.a.createElement(h.b, {
+			}) => n.a.createElement(v.b, {
 				className: W.a.menuButton,
 				defaultButtonOutline: !0,
 				dropdownId: ne,
@@ -961,7 +961,7 @@
 				hk: "3dG7Ks"
 			})), pe = () => n.a.createElement(de, null, H._("Broadcast paused", null, {
 				hk: "jxvku"
-			})), he = ({
+			})), ve = ({
 				onClickCrosspost: e,
 				onClickReplay: t,
 				onClickShare: s
@@ -973,7 +973,7 @@
 				onClick: s
 			}), n.a.createElement(R.f, {
 				onClick: e
-			}))), ve = ({
+			}))), he = ({
 				onClickAward: e
 			}) => n.a.createElement(de, null, n.a.createElement("div", {
 				className: W.a.awardPromptWrapper
@@ -1039,7 +1039,7 @@
 					className: Object(o.a)(W.a.subscribeToProfileAvatar, {
 						[W.a.snoovatarHeadshot]: i
 					})
-				}, a ? c ? i ? n.a.createElement(v.a, {
+				}, a ? c ? i ? n.a.createElement(h.a, {
 					headshot: a.accountIcon
 				}) : n.a.createElement("img", {
 					src: a.accountIcon
@@ -1473,8 +1473,8 @@
 				m = s("./node_modules/lodash/memoize.js");
 			const u = e => e.publicAccessNetwork.listings,
 				p = s.n(m)()(e => Object(n.a)(Object(a.a)(u, t => e && t.hasOwnProperty(e) ? t[e] : [])));
-			var h = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
-			const v = e => e.publicAccessNetwork.models,
+			var v = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
+			const h = e => e.publicAccessNetwork.models,
 				b = e => e.publicAccessNetwork.reports.reported,
 				C = e => e.publicAccessNetwork.history,
 				x = e => e.publicAccessNetwork.history.cursor,
@@ -1482,7 +1482,7 @@
 				w = e => e.publicAccessNetwork.hlsStreams,
 				E = Object(a.a)(w, e => e.ended),
 				N = Object(a.a)(w, e => e.removed),
-				_ = Object(a.a)(v, E, N, (e, t, s) => {
+				_ = Object(a.a)(h, E, N, (e, t, s) => {
 					const a = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
@@ -1525,7 +1525,7 @@
 				},
 				I = Object(a.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => p(t.listingName)(e, t), _, b, i.h, l.e, (e, t, s, a, n, i) => {
+				}) => t, (e, t) => p(t.listingName)(e, t), _, b, i.h, l.f, (e, t, s, a, n, i) => {
 					if (i) {
 						const r = [];
 						if (e) {
@@ -1634,17 +1634,17 @@
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
 			}(U || (U = {}));
-			const W = Object(a.a)(S, _, h.b, (e, t, s) => {
+			const W = Object(a.a)(S, _, v.b, (e, t, s) => {
 					if (s) return U.INTRO;
 					const a = e && t[e];
 					if (!a) return U.UNAVAILABLE;
 					const n = a.stream.state;
 					return n === c.a.IS_LIVE || n === c.a.DISCONNECTED ? U.LIVE : n === c.a.ENDED && a.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
 				}),
-				H = Object(a.a)(M, W, h.b, d.b, d.o, (e, t, s, a, n) => s ? a : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : n : void 0),
+				H = Object(a.a)(M, W, v.b, d.b, d.o, (e, t, s, a, n) => s ? a : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : n : void 0),
 				Z = Object(a.a)(M, W, R, (e, t, s) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && s < e.broadcast_time ? s : 0 : 0),
 				K = (e, t) => {
-					const s = v(e);
+					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
 		},
@@ -1667,4 +1667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.3beff49ce8e2b9a5517c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.84f3320f120790b92552.js.map

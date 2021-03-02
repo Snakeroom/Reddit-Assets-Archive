@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5353ac6aa642a33ed375.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.fc157145725de2c83523.js
+// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3470,7 +3470,7 @@
 				o = s("./src/reddit/selectors/user.ts"),
 				c = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				l = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const d = Object(n.a)(c.a, c.e, (e, {
+			const d = Object(n.a)(c.a, c.f, (e, {
 					listingName: t
 				}) => {
 					const s = Object(o.tb)(e);
@@ -3502,7 +3502,7 @@
 					if (!o.global.viewer_enabled) return !1;
 					return [a.R, "r/popular"].indexOf(n) > -1
 				}),
-				u = Object(n.a)(c.e, (e, {
+				u = Object(n.a)(c.f, (e, {
 					listingName: t
 				}) => t, (e, {
 					listingName: t
@@ -3609,7 +3609,7 @@
 				},
 				j = Object(n.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => p(t.listingName)(e, t), C, _, c.h, l.e, (e, t, s, n, r, c) => {
+				}) => t, (e, t) => p(t.listingName)(e, t), C, _, c.h, l.f, (e, t, s, n, r, c) => {
 					if (c) {
 						const a = [];
 						if (e) {
@@ -3760,8 +3760,8 @@
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(a.d)(e) && "US" === Object(a.b)(e),
 				experimentName: n.Jc
-			}) === n.Rc.Enabled
+			}) === n.Sc.Enabled
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5353ac6aa642a33ed375.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fc157145725de2c83523.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f12db53164622f84f181.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e44cfe7777e7b8dbb1e7.js
+// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1850,7 +1850,7 @@
 						});
 						if (!s) return {};
 						const n = !!s.media && "rpan" === s.media.type,
-							r = n && Object(N.g)(e, t.thingId, D.l);
+							r = n && Object(N.h)(e, t.thingId, D.l);
 						return {
 							post: {
 								...s,
@@ -2345,7 +2345,7 @@
 					},
 					inViewerFeedTheMeter: (e, {
 						thingId: t
-					}) => Object(N.g)(e, t, D.l)
+					}) => Object(N.h)(e, t, D.l)
 				}), e => {
 					const {
 						awardings: t,
@@ -4209,12 +4209,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case b.bd.SmIcon:
+						case b.cd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.bd.SmIconHc:
+						case b.cd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5010,7 +5010,7 @@
 				},
 				I = Object(n.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => p(t.listingName)(e, t), y, f, d.h, c.e, (e, t, s, n, r, d) => {
+				}) => t, (e, t) => p(t.listingName)(e, t), y, f, d.h, c.f, (e, t, s, n, r, d) => {
 					if (d) {
 						const a = [];
 						if (e) {
@@ -5189,12 +5189,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Wc
+						experimentName: n.Xc
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.bd.SmIcon || t === n.bd.SmIconHc
+					return t === n.cd.SmIcon || t === n.cd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5217,4 +5217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f12db53164622f84f181.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e44cfe7777e7b8dbb1e7.js.map

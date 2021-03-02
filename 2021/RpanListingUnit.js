@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.4da45bf0f6a91c49f676.js
-// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.4d3f29e4ba2a8f586292.js
+// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -27,13 +27,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.fc
 				});
-				return Object(m.sd)(t) ? void 0 : t
+				return Object(m.td)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.gc
 				});
-				return Object(m.sd)(t) ? void 0 : t
+				return Object(m.td)(t) ? void 0 : t
 			}, (e, t) => e === m.hc.Enabled && t === m.hc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -558,8 +558,9 @@
 				a = s("./src/reddit/actions/publicAccessNetwork/api.ts"),
 				i = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				n = s("./src/reddit/actions/publicAccessNetwork/streams.ts"),
-				o = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const c = new class {
+				o = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				c = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
+			const d = new class {
 				constructor() {
 					this.isInitialized = !1, this.streamOptions = {}, this.currentStreamsRateSec = i.c, this.currentConfigRateSec = i.d, this.heartbeatDelaySec = i.f, this.heartbeatRateSec = i.g, this.statsRefreshRateSec = i.j, this.recommendedViewerSubredditsRefreshRateSec = i.h, this.MIN_RATE_MS = 1e3, this.subscribeConfig = e => async (t, s) => (this.initializeConfig(e, t, s).then(() => this.startConfigWork(e, t, s)), () => this.unsubscribeConfig()), this.subscribeStreams = (e, t = {}) => async (s, r) => (this.streamOptions = t, this.initializeConfig(e, s, r).then(() => this.startStreamsWork(e, this.streamOptions, s, r)), () => this.unsubscribeStreams()), this.subscribeRecommendedViewerSubreddits = () => async (e, t) => (this.startRecommendedViewerSubredditsWork(e, t), () => this.unsubscribeRecommendedViewerSubreddits()), this.subscribeStats = e => async (t, s) => (this.currentStatsId = e, this.startStatsWork(t, s), () => this.unsubscribeStats()), this.subscribeHeartbeat = e => async (t, s) => (this.currentHeartbeatId = e, this.startHeartbeatWork(t, s), () => this.unsubscribeHeartbeat())
 				}
@@ -581,47 +582,47 @@
 				async initializeConfig(e, t, s) {
 					if (this.isInitialized) return;
 					await t(Object(a.c)(e));
-					const r = Object(o.l)(s());
+					const r = Object(c.l)(s());
 					r.lastUpdated && (this.currentStreamsRateSec = r.viewer_streams_refresh, this.currentConfigRateSec = r.rpan_config_refresh_rate, this.isInitialized = !0)
 				}
 				async startConfigWork(e, t, s) {
 					window.clearTimeout(this.configTimeout), await t(Object(a.c)(e));
-					const r = Object(o.l)(s()),
+					const r = Object(c.l)(s()),
 						i = r.rpan_config_refresh_rate;
 					this.currentConfigRateSec !== i && (this.currentConfigRateSec = i);
 					const n = r.viewer_streams_refresh;
 					this.currentStreamsRateSec !== n && (this.currentStreamsRateSec = n, this.startStreamsWork(e, this.streamOptions, t, s));
-					const c = r.viewer_heartbeat_interval;
-					c && this.heartbeatRateSec !== c && this.startHeartbeatWork(t, s);
+					const o = r.viewer_heartbeat_interval;
+					o && this.heartbeatRateSec !== o && this.startHeartbeatWork(t, s);
 					const d = r.viewer_heartbeat_interval;
 					d && this.statsRefreshRateSec !== d && this.startStatsWork(t, s), this.configTimeout = window.setTimeout(() => this.startConfigWork(e, t, s), this.getConfigTimeout())
 				}
 				async startStreamsWork(e, t, s, r) {
-					window.clearTimeout(this.streamsTimeout), await s(Object(n.e)(e, t)), this.streamsTimeout = window.setTimeout(() => this.startStreamsWork(e, t, s, r), this.getStreamsTimeout(r()))
+					window.clearTimeout(this.streamsTimeout), Object(o.d)(r()) ? await s(Object(n.f)(e, t)) : await s(Object(n.e)(e, t)), this.streamsTimeout = window.setTimeout(() => this.startStreamsWork(e, t, s, r), this.getStreamsTimeout(r()))
 				}
 				async startRecommendedViewerSubredditsWork(e, t) {
 					await this.initializeConfig(i.R, e, t), this.clearFetchRecommendedViewerSubredditsInterval && this.clearFetchRecommendedViewerSubredditsInterval(), e(Object(a.b)());
-					const s = Object(o.l)(t()).recommended_viewer_subreddits_refresh_rate;
+					const s = Object(c.l)(t()).recommended_viewer_subreddits_refresh_rate;
 					s && (this.recommendedViewerSubredditsRefreshRateSec = s), this.clearFetchRecommendedViewerSubredditsInterval = Object(r.a)(() => e(Object(a.b)()), Math.max(1e3 * this.recommendedViewerSubredditsRefreshRateSec, this.MIN_RATE_MS))
 				}
 				async startStatsWork(e, t) {
-					await this.initializeConfig(i.R, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(o.l)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
+					await this.initializeConfig(i.R, e, t), this.currentStatsId && (this.clearFetchCurrentStreamInterval && this.clearFetchCurrentStreamInterval(), this.statsRefreshRateSec = Object(c.l)(t()).viewer_stream_stats_refresh_rate || this.statsRefreshRateSec, this.clearFetchCurrentStreamInterval = Object(r.a)(() => {
 						this.currentStatsId && e(Object(n.d)(this.currentStatsId))
 					}, Math.max(1e3 * this.statsRefreshRateSec, this.MIN_RATE_MS)))
 				}
 				async startHeartbeatWork(e, t) {
 					if (await this.initializeConfig(i.R, e, t), !this.currentHeartbeatId) return;
 					this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval();
-					const s = Object(o.l)(t());
+					const s = Object(c.l)(t());
 					this.heartbeatDelaySec = s.viewer_initial_heartbeat_delay_seconds || this.heartbeatDelaySec;
 					const n = 1e3 * this.heartbeatDelaySec;
 					this.heartbeatRateSec = s.viewer_heartbeat_interval || this.heartbeatRateSec;
-					const c = Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS),
+					const o = Math.max(1e3 * this.heartbeatRateSec, this.MIN_RATE_MS),
 						d = () => {
 							this.currentHeartbeatId && e(Object(a.d)(this.currentHeartbeatId))
 						};
 					this.clearSendHeartbeatInterval = Object(r.a)(() => {
-						d(), this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.clearSendHeartbeatInterval = Object(r.a)(d, c)
+						d(), this.clearSendHeartbeatInterval && this.clearSendHeartbeatInterval(), this.clearSendHeartbeatInterval = Object(r.a)(d, o)
 					}, n)
 				}
 				getStreamsTimeout(e) {
@@ -631,12 +632,12 @@
 					return Math.max(1e3 * this.currentConfigRateSec, this.MIN_RATE_MS)
 				}
 				getRandomFetchStreamsJitterSec(e) {
-					const t = Object(o.l)(e).viewer_streams_refresh_slop,
+					const t = Object(c.l)(e).viewer_streams_refresh_slop,
 						s = Math.cos(Math.PI * Math.round(Math.random()));
 					return Math.random() * t * s
 				}
 			};
-			t.a = c
+			t.a = d
 		},
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
 			"use strict";
@@ -658,11 +659,11 @@
 			}) => {
 				const u = r();
 				if (Object(l.J)(u))
-					if (Object(c.f)(u)) await Object(n.h)(a(), e, t);
+					if (Object(c.g)(u)) await Object(n.i)(a(), e, t);
 					else {
 						await Object(i.d)(e);
 						const s = Object(d.l)(r(), e);
-						null !== s.post.voteState && Object(o.e)(s.post.voteState) === t || await Object(n.h)(a(), e, t)
+						null !== s.post.voteState && Object(o.e)(s.post.voteState) === t || await Object(n.i)(a(), e, t)
 					}
 				else s(Object(m.h)())
 			}
@@ -1217,8 +1218,8 @@
 				k = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				R = s("./src/reddit/selectors/user.ts"),
 				T = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				L = s("./src/reddit/components/Flatlist/index.tsx"),
-				j = s("./src/reddit/components/Flatlist/constants.ts"),
+				j = s("./src/reddit/components/Flatlist/index.tsx"),
+				L = s("./src/reddit/components/Flatlist/constants.ts"),
 				A = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				M = s("./src/reddit/components/HlsVideo/index.tsx"),
 				D = s("./src/reddit/components/OverflowMenu/index.tsx"),
@@ -1264,7 +1265,7 @@
 					listingName: t
 				}),
 				streamById: e => t => Object(k.l)(e, t),
-				rpanDuThresholdVariant: N.i,
+				rpanDuThresholdVariant: N.j,
 				inRpanDUPreloadExperiment: N.b,
 				inRpanDuTargetingExperiment: N.c
 			}), (e, t) => ({
@@ -1511,7 +1512,7 @@
 						className: G.a.flatListContainer
 					}, a.a.createElement(oe, {
 						onClick: this.onHeaderClicked
-					}), a.a.createElement(L.a, {
+					}), a.a.createElement(j.a, {
 						className: G.a.flatlistSeparator
 					}), a.a.createElement("div", null, a.a.createElement(ce, {
 						onClick: this.onHideUnitClicked
@@ -1616,7 +1617,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(N.h)(t) : .01
+						threshold: t ? Object(N.i)(t) : .01
 					}), this.intersectionObserver.observe(e), this.loadingIntersectionObserver = new IntersectionObserver(e => {
 						e.forEach(e => {
 							this.setState({
@@ -1624,7 +1625,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(N.h)(t) : .01,
+						threshold: t ? Object(N.i)(t) : .01,
 						rootMargin: s ? "400%" : "0px"
 					}), this.loadingIntersectionObserver.observe(e))
 				}
@@ -1702,7 +1703,7 @@
 					displayText: $._("Show me less of this", null, {
 						hk: "4t8AKC"
 					}),
-					flatlistItem: j.a.Hide,
+					flatlistItem: L.a.Hide,
 					isLoggedIn: !!t,
 					isUserOp: !1,
 					onClick: e,
@@ -1744,7 +1745,7 @@
 			})), s.d(t, "f", (function() {
 				return T
 			})), s.d(t, "a", (function() {
-				return L
+				return j
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./node_modules/react/index.js"),
@@ -1873,7 +1874,7 @@
 				}), i.a.createElement("span", null, r.fbt._("Crosspost", null, {
 					hk: "gORNr"
 				}))),
-				L = ({
+				j = ({
 					onClick: e
 				}) => i.a.createElement("button", {
 					className: `${S.a.promptButton} ${S.a.awardButton}`,
@@ -2039,8 +2040,8 @@
 				k = s("./src/reddit/icons/svgs/Link/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Lock/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				L = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
-				j = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				j = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
+				L = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				A = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				D = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
@@ -2229,7 +2230,7 @@
 				iconWrapperClassName: U.a.overflowItemIconWrapper,
 				key: `${ae}-rpanstudio`,
 				onClick: d
-			}, a.a.createElement(L.b, {
+			}, a.a.createElement(j.b, {
 				className: U.a.overflowItemIcon
 			})), a.a.createElement(f.b, {
 				className: U.a.overflowItem,
@@ -2310,7 +2311,7 @@
 				iconWrapperClassName: U.a.overflowItemIconWrapper,
 				key: `${ae}-end`,
 				onClick: o
-			}, a.a.createElement(j.a, {
+			}, a.a.createElement(L.a, {
 				className: U.a.endBroadcastIcon
 			})))), ne = Object(i.b)(null, e => ({
 				vote: (t, s) => e(Object(m.a)(t, s))
@@ -2767,4 +2768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.4da45bf0f6a91c49f676.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.4d3f29e4ba2a8f586292.js.map

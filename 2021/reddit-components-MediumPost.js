@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a5866c3b9046b985ad84.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6cef9e2fedbc280f3587.js
+// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2701,7 +2701,7 @@
 					sendEvent: he,
 					subredditOrProfile: ve,
 					toggleCheckbox: xe
-				} = e, ge = le ? void 0 : d, Oe = Object(R.a)(ne), ye = se && Oe, je = Object(L.a)(ne), _e = Object(B.a)(ne), Ee = Object(j.c)(ce), ke = !!Y && !Object(T.sd)(Y), Se = Object(A.a)(ce), Ce = N && !fe && !ke, Ie = Ce && !!ce.source && !s, we = !(W && H || Z) && !V && (!N || ke), Pe = (!N || ke) && !ce.isSponsored, Te = Object(c.t)(ce, J), {
+				} = e, ge = le ? void 0 : d, Oe = Object(R.a)(ne), ye = se && Oe, je = Object(L.a)(ne), _e = Object(B.a)(ne), Ee = Object(j.c)(ce), ke = !!Y && !Object(T.td)(Y), Se = Object(A.a)(ce), Ce = N && !fe && !ke, Ie = Ce && !!ce.source && !s, we = !(W && H || Z) && !V && (!N || ke), Pe = (!N || ke) && !ce.isSponsored, Te = Object(c.t)(ce, J), {
 					source: Ne
 				} = Te, Me = o.a.createElement(E.a, {
 					className: Object(a.a)(ee.a.container, n, Q.a.largeAndMediumPostStyles, Q.a.largeAndMediumActiveStyles, Object(D.a)(e), {
@@ -5813,7 +5813,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: s.nb
 				});
-				return !(!t || Object(s.sd)(t))
+				return !(!t || Object(s.td)(t))
 			}
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, n) {
@@ -5921,4 +5921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a5866c3b9046b985ad84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6cef9e2fedbc280f3587.js.map
