@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.ff5950b2beca26e3758b.js
-// Retrieved at 3/2/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.e7b464b4c9b4c41f9c12.js
+// Retrieved at 3/2/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -787,16 +787,16 @@
 				B = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				F = s("./src/reddit/selectors/experiments/utils.ts");
 			const N = Object(d.a)(e => Object(B.c)(e, {
-					experimentName: w.jd,
+					experimentName: w.hd,
 					experimentEligibilitySelector: B.a
 				}), F.a),
 				k = Object(d.a)(N, (function(e) {
 					switch (e) {
-						case w.nd.BufferTwoSeconds:
+						case w.ld.BufferTwoSeconds:
 							return 2;
-						case w.nd.BufferFiveSeconds:
+						case w.ld.BufferFiveSeconds:
 							return 5;
-						case w.nd.BufferTenSeconds:
+						case w.ld.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1503,8 +1503,8 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = `Reddit/Version Build a857469dd73c1dfd259fde1741877ac8843f4595-production ${t}`;
-									return i && (s += ` [${w.jd}:${i}]`), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = `Reddit/Version Build cb82035aea70c0c5b13f4607df3e53fd1aaf45da-production ${t}`;
+									return i && (s += ` [${w.hd}:${i}]`), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2388,4 +2388,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.ff5950b2beca26e3758b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.e7b464b4c9b4c41f9c12.js.map

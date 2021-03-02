@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.65df8f43c0369a7ac81e.js
-// Retrieved at 3/1/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.97325ada0fe533662c98.js
+// Retrieved at 3/2/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -27,13 +27,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.fc
 				});
-				return Object(m.sd)(t) ? void 0 : t
+				return Object(m.qd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.gc
 				});
-				return Object(m.sd)(t) ? void 0 : t
+				return Object(m.qd)(t) ? void 0 : t
 			}, (e, t) => e === m.hc.Enabled && t === m.hc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -658,11 +658,11 @@
 			}) => {
 				const u = r();
 				if (Object(l.J)(u))
-					if (Object(c.f)(u)) await Object(n.h)(a(), e, t);
+					if (Object(c.e)(u)) await Object(n.f)(a(), e, t);
 					else {
 						await Object(i.d)(e);
 						const s = Object(d.l)(r(), e);
-						null !== s.post.voteState && Object(o.e)(s.post.voteState) === t || await Object(n.h)(a(), e, t)
+						null !== s.post.voteState && Object(o.e)(s.post.voteState) === t || await Object(n.f)(a(), e, t)
 					}
 				else s(Object(m.h)())
 			}
@@ -1254,7 +1254,7 @@
 						r = `${Object(S.d)(s)}${Object(f.c)(t)}`
 					} else {
 						const e = t.replace(/^r\//, "");
-						r = e === b.R ? Object(S.e)() : Object(S.g)(e)
+						r = e === b.R ? Object(S.e)() : Object(S.f)(e)
 					}
 					return r
 				},
@@ -1264,7 +1264,7 @@
 					listingName: t
 				}),
 				streamById: e => t => Object(k.l)(e, t),
-				rpanDuThresholdVariant: N.i,
+				rpanDuThresholdVariant: N.h,
 				inRpanDUPreloadExperiment: N.b,
 				inRpanDuTargetingExperiment: N.c
 			}), (e, t) => ({
@@ -1616,7 +1616,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(N.h)(t) : .01
+						threshold: t ? Object(N.g)(t) : .01
 					}), this.intersectionObserver.observe(e), this.loadingIntersectionObserver = new IntersectionObserver(e => {
 						e.forEach(e => {
 							this.setState({
@@ -1624,7 +1624,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(N.h)(t) : .01,
+						threshold: t ? Object(N.g)(t) : .01,
 						rootMargin: s ? "400%" : "0px"
 					}), this.loadingIntersectionObserver.observe(e))
 				}
@@ -2767,4 +2767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.65df8f43c0369a7ac81e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.97325ada0fe533662c98.js.map

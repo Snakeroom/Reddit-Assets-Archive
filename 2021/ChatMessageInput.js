@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.dfdbaaa76b5ee302e0de.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.714d90055804f943d7c8.js
+// Retrieved at 3/2/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -619,7 +619,7 @@
 					prevIsFullyLoaded: e.isFullyLoaded,
 					prevPostId: e.postId
 				});
-			class K extends c.Component {
+			class V extends c.Component {
 				constructor(e) {
 					super(e), this.state = G(e)
 				}
@@ -653,7 +653,7 @@
 					})
 				}
 			}
-			var V = q(K),
+			var K = q(V),
 				W = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
 				H = s.n(W);
 			const J = {},
@@ -880,7 +880,7 @@
 							hk: "1nXRWY"
 						}),
 						onClick: this.onClickGiveAward
-					}, u.a.createElement(V, {
+					}, u.a.createElement(K, {
 						postId: c
 					}))), this.state.showError && Object(j.c)(e))
 				}
@@ -1489,31 +1489,31 @@
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "l", (function() {
-				return C
+				return j
 			})), s.d(t, "m", (function() {
-				return E
+				return F
 			})), s.d(t, "i", (function() {
-				return I
+				return A
 			})), s.d(t, "d", (function() {
-				return P
+				return z
 			})), s.d(t, "h", (function() {
-				return L
+				return P
 			})), s.d(t, "k", (function() {
-				return N
+				return L
 			})), s.d(t, "c", (function() {
-				return B
+				return N
 			})), s.d(t, "f", (function() {
-				return R
+				return B
 			})), s.d(t, "a", (function() {
-				return U
+				return M
 			})), s.d(t, "j", (function() {
-				return Z
+				return U
 			})), s.d(t, "b", (function() {
-				return q
+				return Z
 			})), s.d(t, "e", (function() {
-				return G
+				return q
 			})), s.d(t, "g", (function() {
-				return K
+				return G
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/reselect/es/index.js"),
@@ -1522,26 +1522,25 @@
 				o = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				i = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				c = s("./src/reddit/selectors/posts.ts"),
-				u = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				d = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				l = s("./node_modules/lodash/memoize.js");
-			const m = e => e.publicAccessNetwork.listings,
-				p = s.n(l)()(e => Object(n.a)(Object(r.a)(m, t => e && t.hasOwnProperty(e) ? t[e] : [])));
-			var h = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
-			const _ = e => e.publicAccessNetwork.models,
-				b = e => e.publicAccessNetwork.reports.reported,
-				f = e => e.publicAccessNetwork.history,
-				g = e => e.publicAccessNetwork.history.cursor,
-				y = e => e.publicAccessNetwork.history.visitOrder,
-				v = e => e.publicAccessNetwork.hlsStreams,
-				x = Object(r.a)(v, e => e.ended),
-				k = Object(r.a)(v, e => e.removed),
-				j = Object(r.a)(_, x, k, (e, t, s) => {
+				u = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				d = s("./node_modules/lodash/memoize.js");
+			const l = e => e.publicAccessNetwork.listings,
+				m = s.n(d)()(e => Object(n.a)(Object(r.a)(l, t => e && t.hasOwnProperty(e) ? t[e] : [])));
+			var p = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
+			const h = e => e.publicAccessNetwork.models,
+				_ = e => e.publicAccessNetwork.reports.reported,
+				b = e => e.publicAccessNetwork.history,
+				f = e => e.publicAccessNetwork.history.cursor,
+				g = e => e.publicAccessNetwork.history.visitOrder,
+				y = e => e.publicAccessNetwork.hlsStreams,
+				v = Object(r.a)(y, e => e.ended),
+				x = Object(r.a)(y, e => e.removed),
+				k = Object(r.a)(h, v, x, (e, t, s) => {
 					const r = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
 						const r = s.stream.state,
-							n = T(r, i.a.ENDED) ? i.a.ENDED : r,
+							n = R(r, i.a.ENDED) ? i.a.ENDED : r,
 							a = s.stream.vod_accessible;
 						return n === r && !0 === a ? e : {
 							...e,
@@ -1559,7 +1558,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const r = s.stream.state,
-							n = T(r, i.a.ENDED) ? i.a.ENDED : r,
+							n = R(r, i.a.ENDED) ? i.a.ENDED : r,
 							a = s.stream.vod_accessible;
 						return n === r && !1 === a ? e : {
 							...e,
@@ -1574,50 +1573,36 @@
 						}
 					}, r)
 				}),
-				C = (e, t) => {
-					return j(e)[Object(o.h)(t)]
+				j = (e, t) => {
+					return k(e)[Object(o.g)(t)]
 				},
-				w = Object(r.a)((e, {
+				C = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => p(t.listingName)(e, t), j, b, c.h, u.e, (e, t, s, r, n, c) => {
-					if (c) {
-						const a = [];
-						if (e) {
-							const t = Object(o.h)(e);
-							s[t] && a.push(t)
-						}
-						const c = a.concat(t),
-							u = [...new Set(c)],
-							d = new Set([...r, ...n]);
-						return u.filter(e => {
-							const t = s[e];
-							return !d.has(e) && !t.post.isHidden && t.stream.state !== i.a.KILLED && t.stream.state !== i.a.PURGED
-						})
-					}
-					const u = new Set([...r, ...n]);
-					return Object.keys(s).filter(e => !u.has(e)).map(e => s[e]).filter(e => e.rank !== a.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.a.KILLED && e.stream.state !== i.a.PURGED).map(e => e.post.id)
+				}) => t, (e, t) => m(t.listingName)(e, t), k, _, c.h, (e, t, s, r, n) => {
+					const o = new Set([...r, ...n]);
+					return Object.keys(s).filter(e => !o.has(e)).map(e => s[e]).filter(e => e.rank !== a.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.a.KILLED && e.stream.state !== i.a.PURGED).map(e => e.post.id)
 				}),
-				F = Object(r.a)((e, {
+				w = Object(r.a)((e, {
 					count: t
-				}) => t, j, (e, {
+				}) => t, k, (e, {
 					listingName: t,
 					streamIdFromPath: s
-				}) => w(e, {
+				}) => C(e, {
 					listingName: t,
 					streamIdFromPath: s
 				}), (e, t, s) => {
 					const r = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? r.slice(0, e) : r
 				}),
-				E = Object(r.a)(j, F, (e, t) => {
+				F = Object(r.a)(k, w, (e, t) => {
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				D = Object(r.a)(y, (e, {
+				E = Object(r.a)(g, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
-				}) => F(e, {
+				}) => w(e, {
 					listingName: t || r,
 					streamIdFromPath: s
 				}), (e, t) => {
@@ -1625,16 +1610,16 @@
 						r = t.filter(e => !s.has(e));
 					if (r.length) return r[0]
 				}),
-				A = Object(r.a)((e, {
+				D = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, j, (e, {
+				}) => t, k, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
-				}) => F(e, {
+				}) => w(e, {
 					listingName: t || r,
 					streamIdFromPath: s
-				}), f, (e, t, s, r) => {
+				}), b, (e, t, s, r) => {
 					if (!s.length) return;
 					const n = s.map(e => t[e]).filter(t => t && t.post.id !== e),
 						a = n.find(e => e.stream.state === i.a.IS_LIVE);
@@ -1645,33 +1630,33 @@
 					});
 					return o ? o.post.id : void 0
 				}),
-				I = Object(n.a)(Object(r.a)(A, j, (e, t) => e ? t[e] : void 0)),
-				O = Object(r.a)((e, {
+				A = Object(n.a)(Object(r.a)(D, k, (e, t) => e ? t[e] : void 0)),
+				I = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(o.h)(t) : void 0, A, b, c.h, (e, {
+				}) => t ? Object(o.g)(t) : void 0, D, _, c.h, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
-				}) => F(e, {
+				}) => w(e, {
 					listingName: t || r,
 					streamIdFromPath: s
 				}), (e, t, s, r, n) => !e || s.includes(e) || r.includes(e) ? t || n[0] : e),
-				S = Object(r.a)(g, y, D, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				z = Object(r.a)(g, y, (e, t) => {
+				O = Object(r.a)(f, g, E, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
+				S = Object(r.a)(f, g, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				P = Object(n.a)(Object(r.a)(O, j, (e, t) => e ? t[e] : void 0)),
-				L = Object(n.a)(Object(r.a)(S, j, (e, t) => e ? t[e] : void 0)),
-				N = Object(n.a)(Object(r.a)(z, j, (e, t) => e ? t[e] : void 0)),
-				B = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, j, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
+				z = Object(n.a)(Object(r.a)(I, k, (e, t) => e ? t[e] : void 0)),
+				P = Object(n.a)(Object(r.a)(O, k, (e, t) => e ? t[e] : void 0)),
+				L = Object(n.a)(Object(r.a)(S, k, (e, t) => e ? t[e] : void 0)),
+				N = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, k, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
-				})))), Object(r.a)(O, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
-				R = Object(r.a)((e, {
+				})))), Object(r.a)(I, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
+				B = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? C(e, t) : void 0, e => !e || e.chat_disabled);
+				}) => t ? j(e, t) : void 0, e => !e || e.chat_disabled);
 
-			function T(e, t) {
+			function R(e, t) {
 				const s = {
 					[i.a.NOT_STARTED]: 0,
 					[i.a.PUBLISHED]: 1,
@@ -1683,22 +1668,22 @@
 				};
 				return s[t] >= s[e]
 			}
-			const M = Object(r.a)(O, f, (e, t) => e && t.timestamps[e] || 0);
-			var U;
+			const T = Object(r.a)(I, b, (e, t) => e && t.timestamps[e] || 0);
+			var M;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(U || (U = {}));
-			const Z = Object(r.a)(O, j, h.b, (e, t, s) => {
-					if (s) return U.INTRO;
+			}(M || (M = {}));
+			const U = Object(r.a)(I, k, p.b, (e, t, s) => {
+					if (s) return M.INTRO;
 					const r = e && t[e];
-					if (!r) return U.UNAVAILABLE;
+					if (!r) return M.UNAVAILABLE;
 					const n = r.stream.state;
-					return n === i.a.IS_LIVE || n === i.a.DISCONNECTED ? U.LIVE : n === i.a.ENDED && r.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
+					return n === i.a.IS_LIVE || n === i.a.DISCONNECTED ? M.LIVE : n === i.a.ENDED && r.stream.vod_accessible ? M.VOD : M.UNAVAILABLE
 				}),
-				q = Object(r.a)(P, Z, h.b, d.b, d.o, (e, t, s, r, n) => s ? r : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : n : void 0),
-				G = Object(r.a)(P, Z, M, (e, t, s) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && s < e.broadcast_time ? s : 0 : 0),
-				K = (e, t) => {
-					const s = _(e);
+				Z = Object(r.a)(z, U, p.b, u.b, u.o, (e, t, s, r, n) => s ? r : e ? t === M.LIVE || t === M.VOD ? e.stream.hls_url : n : void 0),
+				q = Object(r.a)(z, U, T, (e, t, s) => e ? t === M.LIVE ? e.broadcast_time : t === M.VOD && s < e.broadcast_time ? s : 0 : 0),
+				G = (e, t) => {
+					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
 		},
@@ -1996,4 +1981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.dfdbaaa76b5ee302e0de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.714d90055804f943d7c8.js.map
