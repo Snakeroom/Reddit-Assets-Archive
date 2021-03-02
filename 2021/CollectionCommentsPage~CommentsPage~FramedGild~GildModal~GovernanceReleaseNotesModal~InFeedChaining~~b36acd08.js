@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.dca65f8e3a2661101d4e.js
-// Retrieved at 3/2/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.5ccb9073d85786c378ad.js
+// Retrieved at 3/2/2021, 6:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1504,7 +1504,7 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = `Reddit/Version Build 5356258ef42c3f4d247d1d4ffebcfec8831b063f-production ${t}`;
+									let s = `Reddit/Version Build e7a6fbe16cfc10a0e075a8f1f4e127ee5587accb-production ${t}`;
 									return n && (s += ` [${w.id}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -1569,10 +1569,10 @@
 				}
 				async destroyMediaPlayer() {
 					var e, t;
-					this.dashPlayer && (await (null === (t = (e = this.props).onDashDestroy) || void 0 === t ? void 0 : t.call(e, this.dashPlayer)), this.dashPlayer.destroy())
+					this.dashPlayer && (await (null === (t = (e = this.props).onDashDestroy) || void 0 === t ? void 0 : t.call(e, this.dashPlayer)), this.dashPlayer.destroy(), this.dashPlayer = null)
 				}
 				componentWillUnmount() {
-					document.removeEventListener("webkitfullscreenchange", this.exitHandler, !1), document.removeEventListener("fullscreenchange", this.exitHandler, !1), document.removeEventListener("mozfullscreenchange", this.exitHandler, !1), document.removeEventListener("MSFullscreenChange", this.exitHandler, !1), this.destroyMediaPlayer(), this.dashPlayer = null, this.clearControlBarFadeTimer(), null == this.props.postId || this.state.videoScrollPaused || this.sendEvent("served", "video", !0)
+					document.removeEventListener("webkitfullscreenchange", this.exitHandler, !1), document.removeEventListener("fullscreenchange", this.exitHandler, !1), document.removeEventListener("mozfullscreenchange", this.exitHandler, !1), document.removeEventListener("MSFullscreenChange", this.exitHandler, !1), this.destroyMediaPlayer(), this.clearControlBarFadeTimer(), null == this.props.postId || this.state.videoScrollPaused || this.sendEvent("served", "video", !0)
 				}
 				shouldComponentUpdate(e, t) {
 					const s = !!this.props.isListing && !this.props.isOverlayOpen && e.isOverlayOpen,
@@ -2390,4 +2390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.dca65f8e3a2661101d4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.5ccb9073d85786c378ad.js.map
