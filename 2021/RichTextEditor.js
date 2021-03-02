@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.30bebbe60780c4c2e6f9.js
-// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.9fab8ff36cfea5cf7d07.js
+// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -935,7 +935,7 @@
 					const y = x.user.account.displayText,
 						C = r.commentMode;
 					let v;
-					if (c ? (v = await Object(D.k)(_(), e, r, y), u(Object(m.a)({
+					if (c ? (v = await Object(D.i)(_(), e, r, y), u(Object(m.a)({
 							streamId: e,
 							level: v.body.automuteLevel
 						}))) : v = await R(_(), e, r, y, C), v.ok) {
@@ -4510,7 +4510,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!o || Object(n.td)(o))
+				return !(!o || Object(n.rd)(o))
 			}
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, o) {
@@ -4553,4 +4553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.30bebbe60780c4c2e6f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.9fab8ff36cfea5cf7d07.js.map

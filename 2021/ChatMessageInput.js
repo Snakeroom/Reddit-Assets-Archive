@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.03542d7eade9da6c048a.js
-// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.b0872b374bdd66643be1.js
+// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -619,7 +619,7 @@
 					prevIsFullyLoaded: e.isFullyLoaded,
 					prevPostId: e.postId
 				});
-			class K extends c.Component {
+			class V extends c.Component {
 				constructor(e) {
 					super(e), this.state = G(e)
 				}
@@ -653,7 +653,7 @@
 					})
 				}
 			}
-			var V = q(K),
+			var K = q(V),
 				W = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
 				H = s.n(W);
 			const J = {},
@@ -880,7 +880,7 @@
 							hk: "1nXRWY"
 						}),
 						onClick: this.onClickGiveAward
-					}, u.a.createElement(V, {
+					}, u.a.createElement(K, {
 						postId: c
 					}))), this.state.showError && Object(j.c)(e))
 				}
@@ -1489,59 +1489,57 @@
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "l", (function() {
-				return C
+				return k
 			})), s.d(t, "m", (function() {
-				return E
+				return w
 			})), s.d(t, "i", (function() {
-				return I
+				return D
 			})), s.d(t, "d", (function() {
-				return P
+				return S
 			})), s.d(t, "h", (function() {
-				return L
+				return z
 			})), s.d(t, "k", (function() {
-				return N
+				return P
 			})), s.d(t, "c", (function() {
-				return B
+				return L
 			})), s.d(t, "f", (function() {
-				return R
+				return N
 			})), s.d(t, "a", (function() {
-				return U
+				return T
 			})), s.d(t, "j", (function() {
-				return Z
+				return M
 			})), s.d(t, "b", (function() {
-				return q
+				return U
 			})), s.d(t, "e", (function() {
-				return G
+				return Z
 			})), s.d(t, "g", (function() {
-				return K
+				return q
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/reselect/es/index.js"),
 				n = s("./src/lib/objectSelector/index.ts"),
-				a = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				o = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				i = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
-				c = s("./src/reddit/selectors/posts.ts"),
-				u = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				d = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				l = s("./node_modules/lodash/memoize.js");
-			const m = e => e.publicAccessNetwork.listings,
-				p = s.n(l)()(e => Object(n.a)(Object(r.a)(m, t => e && t.hasOwnProperty(e) ? t[e] : [])));
-			var h = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
-			const _ = e => e.publicAccessNetwork.models,
-				b = e => e.publicAccessNetwork.reports.reported,
-				f = e => e.publicAccessNetwork.history,
-				g = e => e.publicAccessNetwork.history.cursor,
-				y = e => e.publicAccessNetwork.history.visitOrder,
-				v = e => e.publicAccessNetwork.hlsStreams,
-				x = Object(r.a)(v, e => e.ended),
-				k = Object(r.a)(v, e => e.removed),
-				j = Object(r.a)(_, x, k, (e, t, s) => {
+				a = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
+				o = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
+				i = s("./src/reddit/selectors/posts.ts"),
+				c = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				u = s("./node_modules/lodash/memoize.js");
+			const d = e => e.publicAccessNetwork.listings,
+				l = s.n(u)()(e => Object(n.a)(Object(r.a)(d, t => e && t.hasOwnProperty(e) ? t[e] : [])));
+			var m = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
+			const p = e => e.publicAccessNetwork.models,
+				h = e => e.publicAccessNetwork.reports.reported,
+				_ = e => e.publicAccessNetwork.history,
+				b = e => e.publicAccessNetwork.history.cursor,
+				f = e => e.publicAccessNetwork.history.visitOrder,
+				g = e => e.publicAccessNetwork.hlsStreams,
+				y = Object(r.a)(g, e => e.ended),
+				v = Object(r.a)(g, e => e.removed),
+				x = Object(r.a)(p, y, v, (e, t, s) => {
 					const r = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
 						const r = s.stream.state,
-							n = T(r, i.a.ENDED) ? i.a.ENDED : r,
+							n = B(r, o.a.ENDED) ? o.a.ENDED : r,
 							a = s.stream.vod_accessible;
 						return n === r && !0 === a ? e : {
 							...e,
@@ -1559,7 +1557,7 @@
 						const s = e[t];
 						if (!s) return e;
 						const r = s.stream.state,
-							n = T(r, i.a.ENDED) ? i.a.ENDED : r,
+							n = B(r, o.a.ENDED) ? o.a.ENDED : r,
 							a = s.stream.vod_accessible;
 						return n === r && !1 === a ? e : {
 							...e,
@@ -1574,50 +1572,46 @@
 						}
 					}, r)
 				}),
-				C = (e, t) => {
-					return j(e)[Object(o.h)(t)]
+				k = (e, t) => {
+					return x(e)[Object(a.g)(t)]
 				},
-				w = Object(r.a)((e, {
+				j = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => p(t.listingName)(e, t), j, b, c.h, u.f, (e, t, s, r, n, c) => {
-					if (c) {
-						const a = [];
-						if (e) {
-							const t = Object(o.h)(e);
-							s[t] && a.push(t)
-						}
-						const c = a.concat(t),
-							u = [...new Set(c)],
-							d = new Set([...r, ...n]);
-						return u.filter(e => {
-							const t = s[e];
-							return !d.has(e) && !t.post.isHidden && t.stream.state !== i.a.KILLED && t.stream.state !== i.a.PURGED
-						})
+				}) => t, (e, t) => l(t.listingName)(e, t), x, h, i.h, (e, t, s, r, n) => {
+					const i = [];
+					if (e) {
+						const t = Object(a.g)(e);
+						s[t] && i.push(t)
 					}
-					const u = new Set([...r, ...n]);
-					return Object.keys(s).filter(e => !u.has(e)).map(e => s[e]).filter(e => e.rank !== a.m).filter(e => !e.post.isHidden).filter(e => e.stream.state !== i.a.KILLED && e.stream.state !== i.a.PURGED).map(e => e.post.id)
+					const c = i.concat(t),
+						u = [...new Set(c)],
+						d = new Set([...r, ...n]);
+					return u.filter(e => {
+						const t = s[e];
+						return !d.has(e) && !t.post.isHidden && t.stream.state !== o.a.KILLED && t.stream.state !== o.a.PURGED
+					})
 				}),
-				F = Object(r.a)((e, {
+				C = Object(r.a)((e, {
 					count: t
-				}) => t, j, (e, {
+				}) => t, x, (e, {
 					listingName: t,
 					streamIdFromPath: s
-				}) => w(e, {
+				}) => j(e, {
 					listingName: t,
 					streamIdFromPath: s
 				}), (e, t, s) => {
 					const r = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? r.slice(0, e) : r
 				}),
-				E = Object(r.a)(j, F, (e, t) => {
+				w = Object(r.a)(x, C, (e, t) => {
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				D = Object(r.a)(y, (e, {
+				F = Object(r.a)(f, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
-				}) => F(e, {
+				}) => C(e, {
 					listingName: t || r,
 					streamIdFromPath: s
 				}), (e, t) => {
@@ -1625,80 +1619,80 @@
 						r = t.filter(e => !s.has(e));
 					if (r.length) return r[0]
 				}),
-				A = Object(r.a)((e, {
+				E = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, j, (e, {
+				}) => t, x, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
-				}) => F(e, {
+				}) => C(e, {
 					listingName: t || r,
 					streamIdFromPath: s
-				}), f, (e, t, s, r) => {
+				}), _, (e, t, s, r) => {
 					if (!s.length) return;
 					const n = s.map(e => t[e]).filter(t => t && t.post.id !== e),
-						a = n.find(e => e.stream.state === i.a.IS_LIVE);
+						a = n.find(e => e.stream.state === o.a.IS_LIVE);
 					if (a) return a.post.id;
-					const o = n.find(e => {
+					const i = n.find(e => {
 						if (!e.stream.vod_accessible) return !1;
 						return (r.timestamps[e.post.id] || 0) < e.broadcast_time
 					});
-					return o ? o.post.id : void 0
+					return i ? i.post.id : void 0
 				}),
-				I = Object(n.a)(Object(r.a)(A, j, (e, t) => e ? t[e] : void 0)),
-				O = Object(r.a)((e, {
+				D = Object(n.a)(Object(r.a)(E, x, (e, t) => e ? t[e] : void 0)),
+				A = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(o.h)(t) : void 0, A, b, c.h, (e, {
+				}) => t ? Object(a.g)(t) : void 0, E, h, i.h, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
-				}) => F(e, {
+				}) => C(e, {
 					listingName: t || r,
 					streamIdFromPath: s
 				}), (e, t, s, r, n) => !e || s.includes(e) || r.includes(e) ? t || n[0] : e),
-				S = Object(r.a)(g, y, D, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				z = Object(r.a)(g, y, (e, t) => {
+				I = Object(r.a)(b, f, F, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
+				O = Object(r.a)(b, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				P = Object(n.a)(Object(r.a)(O, j, (e, t) => e ? t[e] : void 0)),
-				L = Object(n.a)(Object(r.a)(S, j, (e, t) => e ? t[e] : void 0)),
-				N = Object(n.a)(Object(r.a)(z, j, (e, t) => e ? t[e] : void 0)),
-				B = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, j, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
+				S = Object(n.a)(Object(r.a)(A, x, (e, t) => e ? t[e] : void 0)),
+				z = Object(n.a)(Object(r.a)(I, x, (e, t) => e ? t[e] : void 0)),
+				P = Object(n.a)(Object(r.a)(O, x, (e, t) => e ? t[e] : void 0)),
+				L = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
-				})))), Object(r.a)(O, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
-				R = Object(r.a)((e, {
+				})))), Object(r.a)(A, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
+				N = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? C(e, t) : void 0, e => !e || e.chat_disabled);
+				}) => t ? k(e, t) : void 0, e => !e || e.chat_disabled);
 
-			function T(e, t) {
+			function B(e, t) {
 				const s = {
-					[i.a.NOT_STARTED]: 0,
-					[i.a.PUBLISHED]: 1,
-					[i.a.IS_LIVE]: 2,
-					[i.a.DISCONNECTED]: 2,
-					[i.a.ENDED]: 3,
-					[i.a.KILLED]: 4,
-					[i.a.PURGED]: 4
+					[o.a.NOT_STARTED]: 0,
+					[o.a.PUBLISHED]: 1,
+					[o.a.IS_LIVE]: 2,
+					[o.a.DISCONNECTED]: 2,
+					[o.a.ENDED]: 3,
+					[o.a.KILLED]: 4,
+					[o.a.PURGED]: 4
 				};
 				return s[t] >= s[e]
 			}
-			const M = Object(r.a)(O, f, (e, t) => e && t.timestamps[e] || 0);
-			var U;
+			const R = Object(r.a)(A, _, (e, t) => e && t.timestamps[e] || 0);
+			var T;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(U || (U = {}));
-			const Z = Object(r.a)(O, j, h.b, (e, t, s) => {
-					if (s) return U.INTRO;
+			}(T || (T = {}));
+			const M = Object(r.a)(A, x, m.b, (e, t, s) => {
+					if (s) return T.INTRO;
 					const r = e && t[e];
-					if (!r) return U.UNAVAILABLE;
+					if (!r) return T.UNAVAILABLE;
 					const n = r.stream.state;
-					return n === i.a.IS_LIVE || n === i.a.DISCONNECTED ? U.LIVE : n === i.a.ENDED && r.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
+					return n === o.a.IS_LIVE || n === o.a.DISCONNECTED ? T.LIVE : n === o.a.ENDED && r.stream.vod_accessible ? T.VOD : T.UNAVAILABLE
 				}),
-				q = Object(r.a)(P, Z, h.b, d.b, d.o, (e, t, s, r, n) => s ? r : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : n : void 0),
-				G = Object(r.a)(P, Z, M, (e, t, s) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && s < e.broadcast_time ? s : 0 : 0),
-				K = (e, t) => {
-					const s = _(e);
+				U = Object(r.a)(S, M, m.b, c.b, c.o, (e, t, s, r, n) => s ? r : e ? t === T.LIVE || t === T.VOD ? e.stream.hls_url : n : void 0),
+				Z = Object(r.a)(S, M, R, (e, t, s) => e ? t === T.LIVE ? e.broadcast_time : t === T.VOD && s < e.broadcast_time ? s : 0 : 0),
+				q = (e, t) => {
+					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
 		},
@@ -1996,4 +1990,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.03542d7eade9da6c048a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.b0872b374bdd66643be1.js.map

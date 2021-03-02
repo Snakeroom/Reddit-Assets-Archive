@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1f5ba7b7433300db16b5.js
-// Retrieved at 3/2/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b5ac40f3325caa29ab14.js
+// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.fc
 				});
-				return Object(m.td)(t) ? void 0 : t
+				return Object(m.rd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.gc
 				});
-				return Object(m.td)(t) ? void 0 : t
+				return Object(m.rd)(t) ? void 0 : t
 			}, (e, t) => e === m.hc.Enabled && t === m.hc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -702,29 +702,29 @@
 		"./src/reddit/actions/pages/comments.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "NUM_COMMENTS_TRUNCATE", (function() {
-				return le
+				return ce
 			})), s.d(t, "MIN_NUM_COMMENTS_TO_TRUNCATE", (function() {
-				return me
+				return le
 			})), s.d(t, "commentsPagePending", (function() {
-				return ue
+				return me
 			})), s.d(t, "commentsPageLoaded", (function() {
-				return pe
+				return ue
 			})), s.d(t, "commentsPageFailed", (function() {
-				return he
+				return pe
 			})), s.d(t, "getGuestExperimentIncludes", (function() {
-				return be
+				return he
 			})), s.d(t, "shouldFetchPostFeedAndOtherDiscussions", (function() {
-				return ge
+				return be
 			})), s.d(t, "guestExperimentIncludesToOptions", (function() {
-				return ve
+				return ge
 			})), s.d(t, "commentsPageRequested", (function() {
-				return fe
+				return ve
 			})), s.d(t, "commentsPageDataRequested", (function() {
-				return we
+				return fe
 			})), s.d(t, "commentsPageLoadedFull", (function() {
-				return Se
+				return we
 			})), s.d(t, "fullCommentsPageDataRequested", (function() {
-				return ye
+				return Se
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = s("./node_modules/react-router-redux/es/index.js"),
@@ -761,64 +761,63 @@
 				L = s("./src/reddit/selectors/category.ts"),
 				N = s("./src/reddit/selectors/experiments/avatarsInComments.ts"),
 				A = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				D = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				V = s("./src/reddit/selectors/experiments/removedPosts.ts"),
-				B = s("./src/reddit/selectors/inlineSubredditEditing.ts"),
-				F = s("./src/reddit/selectors/platform.ts"),
-				U = s("./src/reddit/selectors/posts.ts"),
-				H = s("./src/reddit/selectors/subreddit.ts"),
-				K = s("./src/reddit/selectors/user.ts"),
-				W = s("./src/lib/makeActionCreator/index.ts"),
-				q = s("./src/lib/makeCommentsPageKey/index.ts"),
-				G = s("./src/reddit/actions/ads/index.ts"),
-				z = s("./src/reddit/helpers/canonicalUrls.ts"),
-				J = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				X = s("./src/reddit/helpers/timeApiRoute/index.ts"),
-				Y = s("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
-				Q = s("./src/reddit/actions/gold/powerups.ts"),
-				Z = s("./src/reddit/actions/subreddit/subredditPosts.ts"),
-				$ = s("./src/lib/performanceTimings/index.tsx"),
-				ee = s("./src/reddit/constants/experiments.ts"),
-				te = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const se = e => {
+				D = s("./src/reddit/selectors/experiments/removedPosts.ts"),
+				V = s("./src/reddit/selectors/inlineSubredditEditing.ts"),
+				B = s("./src/reddit/selectors/platform.ts"),
+				F = s("./src/reddit/selectors/posts.ts"),
+				U = s("./src/reddit/selectors/subreddit.ts"),
+				H = s("./src/reddit/selectors/user.ts"),
+				K = s("./src/lib/makeActionCreator/index.ts"),
+				W = s("./src/lib/makeCommentsPageKey/index.ts"),
+				q = s("./src/reddit/actions/ads/index.ts"),
+				G = s("./src/reddit/helpers/canonicalUrls.ts"),
+				z = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				J = s("./src/reddit/helpers/timeApiRoute/index.ts"),
+				X = s("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
+				Y = s("./src/reddit/actions/gold/powerups.ts"),
+				Q = s("./src/reddit/actions/subreddit/subredditPosts.ts"),
+				Z = s("./src/lib/performanceTimings/index.tsx"),
+				$ = s("./src/reddit/constants/experiments.ts"),
+				ee = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const te = e => {
 				var t, s;
 				const a = null === (s = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.urlParams) || void 0 === s ? void 0 : s.partialPostId,
 					o = a && Object(p.r)(a),
 					{
 						sortToUse: n
 					} = Object(M.a)(e, o);
-				return (!n || n === h.r.CONFIDENCE) && Object(te.c)(e, {
-					experimentEligibilitySelector: () => Object(K.I)(e),
-					experimentName: ee.r
-				}) === ee.u.Enabled
+				return (!n || n === h.r.CONFIDENCE) && Object(ee.c)(e, {
+					experimentEligibilitySelector: () => Object(H.I)(e),
+					experimentName: $.r
+				}) === $.u.Enabled
 			};
-			var ae = s("./src/reddit/selectors/chatPost.ts"),
-				oe = s("./src/reddit/selectors/experiments/listingBelow.ts"),
-				ne = s("./src/reddit/selectors/realtimeComments.ts"),
-				re = s("./src/reddit/selectors/seo/index.ts"),
-				ie = s("./src/reddit/actions/pages/constants.ts"),
-				de = s("./src/lib/initializeClient/installReducer.ts"),
-				ce = s("./src/reddit/reducers/pages/comments/index.ts");
-			Object(de.a)({
+			var se = s("./src/reddit/selectors/chatPost.ts"),
+				ae = s("./src/reddit/selectors/experiments/listingBelow.ts"),
+				oe = s("./src/reddit/selectors/realtimeComments.ts"),
+				ne = s("./src/reddit/selectors/seo/index.ts"),
+				re = s("./src/reddit/actions/pages/constants.ts"),
+				ie = s("./src/lib/initializeClient/installReducer.ts"),
+				de = s("./src/reddit/reducers/pages/comments/index.ts");
+			Object(ie.a)({
 				pages: {
-					comments: ce.a
+					comments: de.a
 				}
 			});
-			const le = 25,
-				me = 100,
-				ue = Object(W.a)(ie.h),
-				pe = Object(W.a)(ie.f),
-				he = Object(W.a)(ie.e),
-				be = (e, t, s) => {
+			const ce = 25,
+				le = 100,
+				me = Object(K.a)(re.h),
+				ue = Object(K.a)(re.f),
+				pe = Object(K.a)(re.e),
+				he = (e, t, s) => {
 					const a = !e,
-						o = Object(U.I)(t, {
+						o = Object(F.I)(t, {
 							postId: s
 						}),
 						n = o.belongsTo,
-						r = Object(H.L)(t, {
+						r = Object(U.L)(t, {
 							identifier: n
 						}),
-						i = Object(re.c)(t, {
+						i = Object(ne.c)(t, {
 							identifier: n
 						}),
 						d = {
@@ -827,18 +826,18 @@
 							postImageOCRAltText: !1,
 							postQASchema: !1
 						};
-					return Object(re.b)(t) ? d.listingBelow = i || a : d.postFeed = (i || a) && (!Object(T.g)(r) && !Object(ae.d)(t, {
+					return Object(ne.b)(t) ? d.listingBelow = i || a : d.postFeed = (i || a) && (!Object(T.g)(r) && !Object(se.d)(t, {
 						postId: s
-					}) && !!r || !Object(F.h)(t) && Object(A.e)(t)), e && (d.postImageOCRAltText = Object(A.c)(o) && !!Object(A.b)(t, o, !1), d.postQASchema = Object(A.f)(t, o)), d
+					}) && !!r || !Object(B.h)(t) && Object(A.e)(t)), e && (d.postImageOCRAltText = Object(A.c)(o) && !!Object(A.b)(t, o, !1), d.postQASchema = Object(A.f)(t, o)), d
 				},
-				ge = (e, t) => e || t.postFeed || t.listingBelow || t.postImageOCRAltText || t.postQASchema,
-				ve = e => ({
+				be = (e, t) => e || t.postFeed || t.listingBelow || t.postImageOCRAltText || t.postQASchema,
+				ge = e => ({
 					includePostFeed: e.postFeed,
 					includeListingBelowExperiment: e.listingBelow,
 					includePostImageOCRAltText: e.postImageOCRAltText,
 					includePostQASchemaEligibilityFlag: e.postQASchema
 				}),
-				fe = e => async (t, s) => {
+				ve = e => async (t, s) => {
 					var n, r;
 					const {
 						partialPostId: d,
@@ -853,7 +852,7 @@
 					} = _, {
 						hasSortParam: T,
 						sortToUse: P
-					} = Object(M.a)(s(), m), N = null === (r = null === (n = Object(F.b)(s())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk, A = ["context", "depth", "limit", E.f].reduce((e, t) => {
+					} = Object(M.a)(s(), m), N = null === (r = null === (n = Object(B.b)(s())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk, A = ["context", "depth", "limit", E.f].reduce((e, t) => {
 						const s = parseInt(_[t]);
 						return isNaN(s) || (e[t] = s), e
 					}, {
@@ -862,68 +861,66 @@
 						instanceId: R,
 						include_categories: !0
 					});
-					T && (A.sort = P), A.onOtherDiscussions = C, t(S.m(m)), await t(we(m, u, A, P));
-					const B = s().posts.models[m],
-						W = Object(K.J)(s());
-					if (B && "subreddit" === B.belongsTo.type) {
-						const e = B.belongsTo.id,
-							s = Object($.i)(() => t(Object(Q.f)(e, {
+					T && (A.sort = P), A.onOtherDiscussions = C, t(S.m(m)), await t(fe(m, u, A, P));
+					const V = s().posts.models[m],
+						K = Object(H.J)(s());
+					if (V && "subreddit" === V.belongsTo.type) {
+						const e = V.belongsTo.id,
+							s = Object(Z.i)(() => t(Object(Y.f)(e, {
 								fullData: !0,
-								includeIdentity: W
+								includeIdentity: K
 							})), {
 								name: "subredditPowerupsRequested",
 								page: N,
-								isLoggedIn: W
+								isLoggedIn: K
 							});
 						await s
 					}
-					if (B) {
+					if (V) {
 						const n = ((e, t) => {
-								const s = Object(U.U)(e, {
+								const s = Object(F.U)(e, {
 										postId: t
 									}),
-									a = Object(U.I)(e, {
+									a = Object(F.I)(e, {
 										postId: t
 									});
 								return s && a ? `${e.posts.models[t].title} : ${s.name}` : ""
 							})(s(), m),
-							r = Object(H.L)(s(), {
-								identifier: B.belongsTo
+							r = Object(U.L)(s(), {
+								identifier: V.belongsTo
 							});
-						if (r && Object(V.a)(s())) return void t(Object(a.c)(r.url));
-						if ((B.media && B.media.type) === I.o.LIVEVIDEO) {
-							const e = Object(D.f)(s()),
-								o = B.belongsTo.type === x.a.SUBREDDIT,
-								n = `/rpan${e&&o?r.url:"/"}${Object(p.s)(B.id)}`;
-							return void t(Object(a.c)(n))
+						if (r && Object(D.a)(s())) return void t(Object(a.c)(r.url));
+						if ((V.media && V.media.type) === I.o.LIVEVIDEO) {
+							const e = `/rpan${V.belongsTo.type===x.a.SUBREDDIT?r.url:"/"}${Object(p.s)(V.id)}`;
+							return void t(Object(a.c)(e))
 						}
-						if (B.belongsTo.type !== x.a.SUBREDDIT || B.isSponsored) {
-							if (B.belongsTo.type === x.a.PROFILE) {
-								const e = Object($.i)(() => t(y.d(r.name)), {
+						if (V.belongsTo.type !== x.a.SUBREDDIT || V.isSponsored) {
+							if (V.belongsTo.type === x.a.PROFILE) {
+								const e = Object(Z.i)(() => t(y.d(r.name)), {
 									name: "getProfileInfo",
 									page: N,
-									isLoggedIn: W
+									isLoggedIn: K
 								});
 								await e
 							}
 						} else {
-							if (!!!Object(H.R)(s(), {
-									subredditId: B.belongsTo.id
+							if (!!!Object(U.R)(s(), {
+									subredditId: V.belongsTo.id
 								})) {
-								const e = Object($.i)(() => t(k.o(r.name)), {
+								const e = Object(Z.i)(() => t(k.o(r.name)), {
 									name: "getSubredditRules",
 									page: N,
-									isLoggedIn: W
+									isLoggedIn: K
 								});
 								await e
 							}
 						}
-						const d = be(!1, s(), m),
-							c = Object(oe.c)(s()),
+						const d = he(!1, s(), m),
+							c = Object(ae.c)(s()),
 							l = C;
-						if (ge(l, d)) {
-							Object(J.d)(J.a.LinkedPosts);
-							const e = Object(J.c)(J.a.LinkedPosts),
+						if (be(l, d)) {
+							Object(z.d)(z.a.LinkedPosts);
+							const e = Object(z.c)(z.a.LinkedPosts),
 								a = {
 									adContext: {
 										layout: O.a.Card,
@@ -941,8 +938,8 @@
 									correlationId: e,
 									experimentVariant: c
 								},
-								i = ve(d);
-							Object($.i)(() => t(Object(Z.a)({
+								i = ge(d);
+							Object(Z.i)(() => t(Object(Q.a)({
 								...o,
 								...a,
 								...n,
@@ -950,7 +947,7 @@
 								includeOtherDiscussions: l
 							})), {
 								name: "fetchPostFeedAndOtherDiscussions",
-								isLoggedIn: W,
+								isLoggedIn: K,
 								page: N
 							});
 							0
@@ -958,7 +955,7 @@
 						t(Object(v.p)()), t(w.l({
 							title: n
 						}));
-						const u = s().posts.instances[m] ? e.queryParams.instanceId : B.postId;
+						const u = s().posts.instances[m] ? e.queryParams.instanceId : V.postId;
 						t(Object(i.b)(u)); {
 							const e = Object(L.d)(s(), {
 								subredditName: r.name
@@ -969,13 +966,13 @@
 						title: b.c()
 					}));
 					const {
-						routePrefix: q
+						routePrefix: W
 					} = e.params;
-					x.b[q] === x.a.PROFILE ? Object(z.d)(s(), t, e) : Object(z.b)(s(), t, e)
-				}, we = (e, t, s, a) => async (o, i, d) => {
+					x.b[W] === x.a.PROFILE ? Object(G.d)(s(), t, e) : Object(G.b)(s(), t, e)
+				}, fe = (e, t, s, a) => async (o, i, d) => {
 					var p, b, v;
 					const f = i(),
-						y = Object(q.a)(e, t, s),
+						y = Object(W.a)(e, t, s),
 						{
 							subredditName: k
 						} = s,
@@ -983,22 +980,22 @@
 						E = f.pages.comments.api.fullyLoaded[y],
 						x = f.pages.comments.api.error[y],
 						M = f.pages.comments.api.pending[y],
-						j = !Object(K.I)(f),
-						I = Object(K.i)(f),
+						j = !Object(H.I)(f),
+						I = Object(H.i)(f),
 						T = a === h.r.CHAT,
 						L = !!f.platform.lastPage;
 					if ((M || O && !x) && !(T && L)) {
 						if (O && !f.sidebarPromotedPosts.firstFetch) {
-							const t = Object(F.h)(f) ? Y.a.COMMENTS_OVERLAY : Y.a.COMMENTS;
+							const t = Object(B.h)(f) ? X.a.COMMENTS_OVERLAY : X.a.COMMENTS;
 							window.addEventListener("load", () => {
-								o(Object(G.b)(t)), Math.random() <= .01 && o(Object(G.a)(e))
+								o(Object(q.b)(t)), Math.random() <= .01 && o(Object(q.a)(e))
 							})
 						}
-						return void(E || o(ye(e, t, s)))
+						return void(E || o(Se(e, t, s)))
 					}
 					o(n.g());
 					const A = f.user.prefs.commentMode;
-					o(ue({
+					o(me({
 						key: y,
 						postId: e,
 						commentMode: A
@@ -1014,35 +1011,35 @@
 							sort: s.sort
 						}
 					}; {
-						const t = Object(U.I)(i(), {
+						const t = Object(F.I)(i(), {
 							postId: e
 						});
-						t && t.numComments && t.numComments > me && (D.truncate = le)
+						t && t.numComments && t.numComments > le && (D.truncate = ce)
 					}
-					const V = null === (b = null === (p = Object(F.b)(f)) || void 0 === p ? void 0 : p.routeMatch) || void 0 === b ? void 0 : b.route.chunk,
-						B = Object($.i)(() => Object(l.a)(d.apiContext(), e, t, D, Object(N.a)(i()), Object(ne.a)(i()), se(i())), {
+					const V = null === (b = null === (p = Object(B.b)(f)) || void 0 === p ? void 0 : p.routeMatch) || void 0 === b ? void 0 : b.route.chunk,
+						U = Object(Z.i)(() => Object(l.a)(d.apiContext(), e, t, D, Object(N.a)(i()), Object(oe.a)(i()), te(i())), {
 							name: "fetchCommentsPage",
 							isLoggedIn: !j,
 							page: V
 						}),
-						H = !j && I && Object($.i)(() => Object(u.d)(d.gqlContext(), Object(P.e)(I)), {
+						K = !j && I && Object(Z.i)(() => Object(u.d)(d.gqlContext(), Object(P.e)(I)), {
 							name: "fetchProfileKarma",
 							isLoggedIn: !j,
 							page: V
 						}) || null,
-						[W, z] = await Promise.all([B, H]);
-					let J;
-					if (o(Object(w.m)(W.status)), W.ok) {
-						const t = Object.keys(W.body.posts).filter(e => !!W.body.posts[e].isMeta),
-							s = W.body.posts[e];
+						[G, z] = await Promise.all([U, K]);
+					let Y;
+					if (o(Object(w.m)(G.status)), G.ok) {
+						const t = Object.keys(G.body.posts).filter(e => !!G.body.posts[e].isMeta),
+							s = G.body.posts[e];
 						if (t.length) {
-							const e = Object($.i)(() => Object(c.a)(d.apiContext(), s.belongsTo.id, t), {
+							const e = Object(Z.i)(() => Object(c.a)(d.apiContext(), s.belongsTo.id, t), {
 									name: "getGovernanceData",
 									page: V,
 									isLoggedIn: !j
 								}),
 								a = await e;
-							a.ok && (J = a.body)
+							a.ok && (Y = a.body)
 						}
 						if (z && z.ok) {
 							const e = null === (v = z.body.data.redditorInfoByName) || void 0 === v ? void 0 : v.karma,
@@ -1053,35 +1050,35 @@
 									postKarma: e.fromPosts,
 									totalKarma: e.total
 								} : u.a;
-							W.body && W.body.account && Object.assign(W.body.account, t)
+							G.body && G.body.account && Object.assign(G.body.account, t)
 						}
-						const a = Object(R.a)(W.body, e, f);
-						o(pe({
+						const a = Object(R.a)(G.body, e, f);
+						o(ue({
 							key: y,
 							postId: e,
 							meta: f.meta,
-							governance: J,
+							governance: Y,
 							shouldCollapse: a,
-							...W.body
+							...G.body
 						}))
 					} {
-						const a = Object(U.I)(i(), {
+						const a = Object(F.I)(i(), {
 							postId: e
 						});
-						a && W.body.comments && Object.keys(W.body.comments).length < a.numComments ? o(ye(e, t, s)) : W.ok && o(Se({
+						a && G.body.comments && Object.keys(G.body.comments).length < a.numComments ? o(Se(e, t, s)) : G.ok && o(we({
 							key: y
 						}));
-						const n = Object(F.h)(f) ? Y.a.COMMENTS_OVERLAY : Y.a.COMMENTS;
-						o(Object(G.b)(n)), Math.random() <= .01 && o(Object(G.a)(e))
+						const n = Object(B.h)(f) ? X.a.COMMENTS_OVERLAY : X.a.COMMENTS;
+						o(Object(q.b)(n)), Math.random() <= .01 && o(Object(q.a)(e))
 					}
-					if (W.ok) {
+					if (G.ok) {
 						o(_.f(y));
-						const t = Object(U.I)(i(), {
+						const t = Object(F.I)(i(), {
 							postId: e
 						});
-						if (o(S.u(t, C.a.CommentsView)), t && "subreddit" === t.belongsTo.type && W.body.comments) {
-							const e = Object($.i)(() => o(Object(g.a)({
-								commentIds: Object.keys(W.body.comments),
+						if (o(S.u(t, C.a.CommentsView)), t && "subreddit" === t.belongsTo.type && G.body.comments) {
+							const e = Object(Z.i)(() => o(Object(g.a)({
+								commentIds: Object.keys(G.body.comments),
 								postIds: [t.id],
 								subredditId: t.belongsTo.id
 							})), {
@@ -1095,19 +1092,19 @@
 						let e;
 						k && (o(Object(r.subredditPending)({
 							key: y
-						})), e = await Object(X.a)("subreddit", () => Object(m.a)(d.apiContext(), k, {})), o(Object(w.m)(e.status)), o(Object(r.handleSubredditPageApiError)(e, k))), o(he({
-							error: W.error,
+						})), e = await Object(J.a)("subreddit", () => Object(m.a)(d.apiContext(), k, {})), o(Object(w.m)(e.status)), o(Object(r.handleSubredditPageApiError)(e, k))), o(pe({
+							error: G.error,
 							key: y,
-							...e ? e.body : W.body
+							...e ? e.body : G.body
 						}))
 					}
-				}, Se = Object(W.a)(ie.g), ye = (e, t, s) => async (a, o, n) => {
+				}, we = Object(K.a)(re.g), Se = (e, t, s) => async (a, o, n) => {
 					var r;
-					const i = Object(q.a)(e, t, s),
+					const i = Object(W.a)(e, t, s),
 						c = o(),
-						m = Object(K.J)(c),
-						p = Object(K.i)(c),
-						h = Object(l.a)(n.apiContext(), e, t, s, Object(N.a)(c), Object(ne.a)(c), se(c)),
+						m = Object(H.J)(c),
+						p = Object(H.i)(c),
+						h = Object(l.a)(n.apiContext(), e, t, s, Object(N.a)(c), Object(oe.a)(c), te(c)),
 						b = m && p && Object(u.d)(n.gqlContext(), Object(P.e)(p)) || null,
 						[v, f] = await Promise.all([h, b]);
 					if (a(Object(w.m)(v.status)), v.ok) {
@@ -1123,27 +1120,27 @@
 							v.body && v.body.account && Object.assign(v.body.account, t)
 						}
 						const t = Object(R.a)(v.body, e, c);
-						a(pe({
+						a(ue({
 							key: i,
 							postId: e,
 							meta: c.meta,
 							shouldCollapse: t,
 							...v.body
-						})), a(Se({
+						})), a(we({
 							key: i
 						}));
 						const s = o().posts.models[e],
-							n = s && Object(U.U)(o(), {
+							n = s && Object(F.U)(o(), {
 								postId: s.id
 							});
-						s && "subreddit" === s.belongsTo.type && n && Object(B.a)(c, {
+						s && "subreddit" === s.belongsTo.type && n && Object(V.a)(c, {
 							subredditId: n.id
 						}) && a(Object(d.h)(n.name, n.id)), s && "subreddit" === s.belongsTo.type && v.body.comments && await a(Object(g.a)({
 							commentIds: Object.keys(v.body.comments),
 							postIds: [s.id],
 							subredditId: s.belongsTo.id
 						}))
-					} else a(he({
+					} else a(pe({
 						error: v.error,
 						key: i,
 						...v.body
@@ -3361,7 +3358,7 @@
 			const nt = e => async (t, s, {
 				apiContext: a
 			}) => {
-				const o = await Object(ot.l)(a(), e, !0);
+				const o = await Object(ot.j)(a(), e, !0);
 				o && o.ok ? t(Object(re.e)({
 					kind: le.b.SuccessLockComment,
 					text: b.fbt._("Comments locked", null, {
@@ -3377,7 +3374,7 @@
 			}, rt = e => async (t, s, {
 				apiContext: a
 			}) => {
-				const o = await Object(ot.l)(a(), e, !1);
+				const o = await Object(ot.j)(a(), e, !1);
 				o && o.ok ? t(Object(re.e)({
 					kind: le.b.SuccessUnlockComment,
 					text: b.fbt._("Comments unlocked", null, {
@@ -4020,9 +4017,8 @@
 				}) => t ? Object(Ke.l)(e, t) : void 0,
 				Ws = Object(i.c)({
 					currentStream: Ks,
-					inStreamingSubredditIntegration: Be.f,
-					inStreamingUiRefreshViewer: Be.g,
-					inViewerFeedTheMeter: (e, t) => Object(Be.h)(e, t, Ks),
+					inStreamingUiRefreshViewer: Be.f,
+					inViewerFeedTheMeter: (e, t) => Object(Be.g)(e, t, Ks),
 					isApiError: (e, {
 						currentStreamId: t
 					}) => Object(He.c)(e, t),
@@ -4171,16 +4167,15 @@
 				renderUiLegacy() {
 					const {
 						currentStream: e,
-						inStreamingSubredditIntegration: t,
-						isIntroInProgress: s,
-						isLive: a,
-						isUnavailable: n,
-						onHide: r,
-						onReport: i,
-						onToggleMenu: c,
-						onUpvote: l,
-						onDownvote: m
-					} = this.props, u = e && e.post.id;
+						isIntroInProgress: t,
+						isLive: s,
+						isUnavailable: a,
+						onHide: n,
+						onReport: r,
+						onToggleMenu: i,
+						onUpvote: c,
+						onDownvote: l
+					} = this.props, m = e && e.post.id;
 					return o.a.createElement("div", {
 						className: Object(d.a)(Vs.a.overlay, {
 							[Vs.a.visible]: this.isVisible()
@@ -4190,28 +4185,28 @@
 						onMouseLeave: this.onMouseLeave,
 						onMouseMove: this.onMouseMove,
 						onMouseUp: this.onMouseUp
-					}, !s && o.a.createElement("div", {
+					}, !t && o.a.createElement("div", {
 						className: Vs.a.overlayTop
-					}, t && this.renderRecommendedViewerSubreddit(), e && !n && o.a.createElement(o.a.Fragment, null, !t && this.renderTitleContainer(), o.a.createElement(Ps.e, {
+					}, this.renderRecommendedViewerSubreddit(), e && !a && o.a.createElement(o.a.Fragment, null, o.a.createElement(Ps.e, {
 						onClick: this.props.onToggleVideoShareModal
 					}), o.a.createElement(Ps.b, {
-						onClick: c,
-						onHideClick: r,
-						onReportClick: i
-					}))), e && !s && !n && !!u && o.a.createElement(Wt, {
+						onClick: i,
+						onHideClick: n,
+						onReportClick: r
+					}))), e && !t && !a && !!m && o.a.createElement(Wt, {
 						className: Vs.a.awardOverlaySpectacle,
-						commentsPageKey: Object(tt.a)(u)
-					}), t && e && !s && !n && o.a.createElement("div", {
+						commentsPageKey: Object(tt.a)(m)
+					}), e && !t && !a && o.a.createElement("div", {
 						className: Vs.a.overlayTitle
 					}, this.renderTitleContainer()), o.a.createElement("div", {
 						className: Vs.a.overlayCenter
-					}, this.getContent()), e && !s && !n && o.a.createElement("div", {
+					}, this.getContent()), e && !t && !a && o.a.createElement("div", {
 						className: Vs.a.overlayBottom
 					}, o.a.createElement(Ts, {
 						currentStreamId: e.post.id,
-						isLive: a,
-						onUpvote: l,
-						onDownvote: m
+						isLive: s,
+						onUpvote: c,
+						onDownvote: l
 					}), this.renderScrubber()))
 				}
 				renderUiRefresh() {
@@ -4990,15 +4985,14 @@
 					currentStream: Ke.d,
 					currentStreamStartTime: Ke.e,
 					currentHlsUrl: Ke.b,
-					inStreamingSubredditIntegration: Be.f,
-					inViewerFeedTheMeter: (e, t) => Object(Be.h)(e, t, Ke.d),
+					inViewerFeedTheMeter: (e, t) => Object(Be.g)(e, t, Ke.d),
 					isIntroInProgress: We.b,
 					isOverlayOpen: Ue.h,
 					isReportFlowOpen: (e, {
 						streamIdFromPath: t
 					}) => {
 						var s, a;
-						return (null === (a = null === (s = e.features) || void 0 === s ? void 0 : s.reportFlow) || void 0 === a ? void 0 : a.postOrCommentId) === Object(Ne.h)(t || "")
+						return (null === (a = null === (s = e.features) || void 0 === s ? void 0 : s.reportFlow) || void 0 === a ? void 0 : a.postOrCommentId) === Object(Ne.g)(t || "")
 					},
 					lastChatActivityUtcTs: We.c,
 					nextStream: Ke.h,
@@ -5187,7 +5181,7 @@
 				}
 				componentDidMount() {
 					const e = this.focusRef.current;
-					e.classList.add(so.a.focusVisible), Object(y.a)(e), this.props.isOverlay && (this.previouslyActiveElement = document.activeElement, S(e)), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.inStreamingSubredditIntegration && this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(De.t)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream(), window.localStorage && this.setState({
+					e.classList.add(so.a.focusVisible), Object(y.a)(e), this.props.isOverlay && (this.previouslyActiveElement = document.activeElement, S(e)), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(De.t)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream(), window.localStorage && this.setState({
 						shouldShowOBSBanner: !q.j()
 					})
 				}
@@ -5548,19 +5542,11 @@
 					})
 				}
 				getStreamLocation(e) {
-					const {
-						inStreamingSubredditIntegration: t,
-						related: s,
-						timestamp: a
-					} = this.props;
-					if (t) {
-						const t = Object(Ne.d)(e);
-						return Object(w.a)(t, {
-							[Pe.r]: s,
-							[Pe.w]: a
-						})
-					}
-					return Object(Ne.f)(e.post.id)
+					const t = Object(Ne.d)(e);
+					return Object(w.a)(t, {
+						[Pe.r]: this.props.related,
+						[Pe.w]: this.props.timestamp
+					})
 				}
 				goToStream(e) {
 					const {
@@ -5788,4 +5774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1f5ba7b7433300db16b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b5ac40f3325caa29ab14.js.map
