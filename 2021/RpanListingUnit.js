@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1e57720cd96900c4ff60.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.b446a46fabfdc3eb6417.js
+// Retrieved at 3/2/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -98,15 +98,7 @@
 				};
 				class k extends r.Component {
 					constructor(e) {
-						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(r.createRef)(), this.handleDashCreate = e => {
-							this.setDashInstance(e)
-						}, this.handleDashDestroy = () => {
-							this.setDashInstance(null)
-						}, this.handleHlsCreate = e => {
-							this.setHlsInstance(e)
-						}, this.handleHlsDestroy = () => {
-							this.setHlsInstance(null)
-						}, this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
+						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(r.createRef)(), this.handleDashCreate = e => this.setDashInstance(e), this.handleDashDestroy = () => this.setDashInstance(null), this.handleHlsCreate = e => this.setHlsInstance(e), this.handleHlsDestroy = () => this.setHlsInstance(null), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
 					get experimentName() {
 						return ""
@@ -119,6 +111,9 @@
 					}
 					componentDidUpdate(e) {
 						this.props.muxVideoId !== e.muxVideoId && this.doMuxThings(), this.props.videoRef !== e.videoRef && (this.combinedVideoRefs = this.combineExternalVideoRef(this.props.videoRef))
+					}
+					componentWillUnmount() {
+						this.handleDashDestroy(), this.handleHlsDestroy()
 					}
 					combineExternalVideoRef(e) {
 						return e ? Object(c.a)(this.videoRef, e) : this.videoRef
@@ -141,8 +136,10 @@
 						if (!this.props.isMuxEnabled) return;
 						const t = e || null;
 						if (t !== this.dashInstance && (this.dashInstance = t, this.isMonitoring)) try {
-							const e = await l();
-							e.removeDashJS(this.video), this.dashInstance && e.addDashJS(this.video, this.getDashInstanceData())
+							const {
+								video: e
+							} = this, t = await l();
+							e && t.removeDashJS(e), this.video && this.dashInstance && t.addDashJS(this.video, this.getDashInstanceData())
 						} catch (s) {
 							console.error(s)
 						}
@@ -151,8 +148,10 @@
 						if (!this.props.isMuxEnabled) return;
 						const t = e || null;
 						if (t !== this.hlsInstance && (this.hlsInstance = t, this.isMonitoring)) try {
-							const e = await l();
-							e.removeHLSJS(this.video), this.hlsInstance && e.addHLSJS(this.video, this.getHlsInstanceData())
+							const {
+								video: e
+							} = this, t = await l();
+							e && t.removeHLSJS(e), this.video && this.hlsInstance && t.addHLSJS(this.video, this.getHlsInstanceData())
 						} catch (s) {
 							console.error(s)
 						}
@@ -161,11 +160,13 @@
 						if (this.props.isMuxEnabled) try {
 							const e = await l();
 							if (this.isMonitoring) {
-								const t = this.getVideoData();
-								e.emit(this.video, "videochange", t)
+								if (this.video) {
+									const t = this.getVideoData();
+									e.emit(this.video, "videochange", t)
+								}
 							} else {
 								const t = await this.getMuxData();
-								e.monitor(this.video, t), this.isMonitoring = !0
+								this.video && (e.monitor(this.video, t), this.isMonitoring = !0)
 							}
 						} catch (e) {
 							console.error(e)
@@ -1221,8 +1222,8 @@
 				j = s("./src/reddit/components/Flatlist/index.tsx"),
 				L = s("./src/reddit/components/Flatlist/constants.ts"),
 				A = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				M = s("./src/reddit/components/HlsVideo/index.tsx"),
-				D = s("./src/reddit/components/OverflowMenu/index.tsx"),
+				D = s("./src/reddit/components/HlsVideo/index.tsx"),
+				M = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				V = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				P = s("./src/reddit/components/PostLeftRail/index.tsx"),
 				H = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
@@ -1238,7 +1239,7 @@
 				G = s.n(J);
 			const {
 				fbt: $
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 20, Q = l.cc, X = l.cc, ee = Object(c.a)(M.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 20, Q = l.cc, X = l.cc, ee = Object(c.a)(D.a, {
 				playerName: "RPAN DU Video Player"
 			}), te = Object(i.b)(() => Object(n.c)({
 				autoplay: R.b,
@@ -1711,7 +1712,7 @@
 				}, a.a.createElement(H.b, null)),
 				de = ({
 					onClick: e
-				}) => a.a.createElement(D.b, {
+				}) => a.a.createElement(M.b, {
 					className: G.a.overflowMenu,
 					dropdownClassName: G.a.overflowDropdown,
 					dropdownId: "rpan-du-overflow"
@@ -2043,8 +2044,8 @@
 				j = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				L = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				A = s("./src/reddit/icons/svgs/Report/index.tsx"),
-				M = s("./src/reddit/icons/svgs/Rules/index.tsx"),
-				D = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
+				D = s("./src/reddit/icons/svgs/Rules/index.tsx"),
+				M = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
 				V = s("./src/reddit/models/Vote/index.ts"),
 				P = s("./src/reddit/selectors/subreddit.ts"),
 				H = s("./src/reddit/selectors/user.ts"),
@@ -2220,7 +2221,7 @@
 				iconWrapperClassName: U.a.overflowItemIconWrapper,
 				key: `${ae}-rules`,
 				onClick: () => Object(c.d)(l.S, c.c.BLANK)
-			}, a.a.createElement(M.a, {
+			}, a.a.createElement(D.a, {
 				className: U.a.overflowItemIcon
 			})), a.a.createElement(f.b, {
 				className: U.a.overflowItem,
@@ -2299,7 +2300,7 @@
 				iconWrapperClassName: U.a.overflowItemIconWrapper,
 				key: `${ae}-lock`,
 				onClick: r
-			}, i ? a.a.createElement(D.a, {
+			}, i ? a.a.createElement(M.a, {
 				className: U.a.overflowItemIcon
 			}) : a.a.createElement(R.a, {
 				className: U.a.overflowItemIcon
@@ -2768,4 +2769,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1e57720cd96900c4ff60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b446a46fabfdc3eb6417.js.map

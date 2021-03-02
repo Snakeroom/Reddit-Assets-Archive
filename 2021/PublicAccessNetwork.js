@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b5ac40f3325caa29ab14.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.532609580c513857b44c.js
+// Retrieved at 3/2/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -357,15 +357,7 @@
 				};
 				class M extends a.Component {
 					constructor(e) {
-						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(a.createRef)(), this.handleDashCreate = e => {
-							this.setDashInstance(e)
-						}, this.handleDashDestroy = () => {
-							this.setDashInstance(null)
-						}, this.handleHlsCreate = e => {
-							this.setHlsInstance(e)
-						}, this.handleHlsDestroy = () => {
-							this.setHlsInstance(null)
-						}, this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
+						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(a.createRef)(), this.handleDashCreate = e => this.setDashInstance(e), this.handleDashDestroy = () => this.setDashInstance(null), this.handleHlsCreate = e => this.setHlsInstance(e), this.handleHlsDestroy = () => this.setHlsInstance(null), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
 					get experimentName() {
 						return ""
@@ -378,6 +370,9 @@
 					}
 					componentDidUpdate(e) {
 						this.props.muxVideoId !== e.muxVideoId && this.doMuxThings(), this.props.videoRef !== e.videoRef && (this.combinedVideoRefs = this.combineExternalVideoRef(this.props.videoRef))
+					}
+					componentWillUnmount() {
+						this.handleDashDestroy(), this.handleHlsDestroy()
 					}
 					combineExternalVideoRef(e) {
 						return e ? Object(d.a)(this.videoRef, e) : this.videoRef
@@ -400,8 +395,10 @@
 						if (!this.props.isMuxEnabled) return;
 						const t = e || null;
 						if (t !== this.dashInstance && (this.dashInstance = t, this.isMonitoring)) try {
-							const e = await l();
-							e.removeDashJS(this.video), this.dashInstance && e.addDashJS(this.video, this.getDashInstanceData())
+							const {
+								video: e
+							} = this, t = await l();
+							e && t.removeDashJS(e), this.video && this.dashInstance && t.addDashJS(this.video, this.getDashInstanceData())
 						} catch (s) {
 							console.error(s)
 						}
@@ -410,8 +407,10 @@
 						if (!this.props.isMuxEnabled) return;
 						const t = e || null;
 						if (t !== this.hlsInstance && (this.hlsInstance = t, this.isMonitoring)) try {
-							const e = await l();
-							e.removeHLSJS(this.video), this.hlsInstance && e.addHLSJS(this.video, this.getHlsInstanceData())
+							const {
+								video: e
+							} = this, t = await l();
+							e && t.removeHLSJS(e), this.video && this.hlsInstance && t.addHLSJS(this.video, this.getHlsInstanceData())
 						} catch (s) {
 							console.error(s)
 						}
@@ -420,11 +419,13 @@
 						if (this.props.isMuxEnabled) try {
 							const e = await l();
 							if (this.isMonitoring) {
-								const t = this.getVideoData();
-								e.emit(this.video, "videochange", t)
+								if (this.video) {
+									const t = this.getVideoData();
+									e.emit(this.video, "videochange", t)
+								}
 							} else {
 								const t = await this.getMuxData();
-								e.monitor(this.video, t), this.isMonitoring = !0
+								this.video && (e.monitor(this.video, t), this.isMonitoring = !0)
 							}
 						} catch (e) {
 							console.error(e)
@@ -5774,4 +5775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b5ac40f3325caa29ab14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.532609580c513857b44c.js.map

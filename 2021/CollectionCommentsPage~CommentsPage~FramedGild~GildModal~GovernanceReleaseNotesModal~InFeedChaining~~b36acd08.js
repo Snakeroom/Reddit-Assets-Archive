@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.603fb60c2fc5830ea95c.js
-// Retrieved at 3/2/2021, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.964d52060df66d783d60.js
+// Retrieved at 3/2/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1489,11 +1489,12 @@
 				}
 				componentDidMount() {
 					Qe.dashjs.then(e => {
-						const t = this.HTML5StreamPlayerVideo,
-							s = this.props.mpegDashSource;
-						if (!t || !s) return;
-						const i = this.props.videoBufferVariant;
-						this.dashPlayer = e.MediaPlayer().create(), this.props.onDashCreate && this.props.onDashCreate(this.dashPlayer), Object(_.b)() && (console.log("🚨", this.props.postId, this.dashPlayer), this.dashPlayer.updateSettings({
+						var t, s;
+						const i = this.HTML5StreamPlayerVideo,
+							a = this.props.mpegDashSource;
+						if (!i || !a) return;
+						const n = this.props.videoBufferVariant;
+						this.dashPlayer = e.MediaPlayer().create(), Object(_.b)() && (console.log("🚨", this.props.postId, this.dashPlayer), this.dashPlayer.updateSettings({
 							debug: {
 								logLevel: e.Debug.LOG_LEVEL_DEBUG
 							}
@@ -1503,8 +1504,8 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = `Reddit/Version Build 0145df6ed00c09ff45bd8efc9fcbe09008a28be8-production ${t}`;
-									return i && (s += ` [${w.id}:${i}]`), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = `Reddit/Version Build 0d3bee7a5de956236eaa85ad2d4445f5d25f18fe-production ${t}`;
+									return n && (s += ` [${w.id}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -1513,7 +1514,7 @@
 							const {
 								videoBufferTime: e
 							} = this.props;
-							this.dashPlayer.initialize(t, s, t.autoplay || !t.paused), e && this.setBufferTime(e), this.dashPlayer.updateSettings({
+							this.dashPlayer.initialize(i, a, i.autoplay || !i.paused), e && this.setBufferTime(e), this.dashPlayer.updateSettings({
 								streaming: {
 									fastSwitchEnabled: !0,
 									abr: {
@@ -1526,8 +1527,8 @@
 									}
 								}
 							})
-						} catch (a) {
-							return void(Object(_.b)() && console.error("🚨", this.props.postId, a))
+						} catch (o) {
+							return void(Object(_.b)() && console.error("🚨", this.props.postId, o))
 						}
 						null != this.props.postId && this.props.onLoadStarted(performance.now()), this.dashPlayer.on(e.MediaPlayer.events.STREAM_INITIALIZED, () => {
 							this.getVideoQualityList(), this.getAudioInfo(), null != this.props.postId && this.props.onPlayable(performance.now()), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(0)
@@ -1538,7 +1539,7 @@
 									ignoreUnderrunsUntil: Date.now() + Ke
 								})
 							}
-						})
+						}), null === (s = (t = this.props).onDashCreate) || void 0 === s || s.call(t, this.dashPlayer)
 					});
 					const e = this.HTML5StreamPlayerVideo;
 					document.addEventListener("webkitfullscreenchange", this.exitHandler, !1), document.addEventListener("fullscreenchange", this.exitHandler, !1), document.addEventListener("mozfullscreenchange", this.exitHandler, !1), document.addEventListener("MSFullscreenChange", this.exitHandler, !1), e && (f() ? e.play() : a.a.safari && !this.props.mpegDashSource && setTimeout(async () => {
@@ -1566,11 +1567,12 @@
 						volume: a
 					})))
 				}
-				resetMediaPlayer() {
-					this.dashPlayer && (this.dashPlayer.reset(), this.props.onDashDestroy && this.props.onDashDestroy(this.dashPlayer))
+				async destroyMediaPlayer() {
+					var e, t;
+					this.dashPlayer && (await (null === (t = (e = this.props).onDashDestroy) || void 0 === t ? void 0 : t.call(e, this.dashPlayer)), this.dashPlayer.destroy())
 				}
 				componentWillUnmount() {
-					document.removeEventListener("webkitfullscreenchange", this.exitHandler, !1), document.removeEventListener("fullscreenchange", this.exitHandler, !1), document.removeEventListener("mozfullscreenchange", this.exitHandler, !1), document.removeEventListener("MSFullscreenChange", this.exitHandler, !1), this.resetMediaPlayer(), this.clearControlBarFadeTimer(), null == this.props.postId || this.state.videoScrollPaused || this.sendEvent("served", "video", !0)
+					document.removeEventListener("webkitfullscreenchange", this.exitHandler, !1), document.removeEventListener("fullscreenchange", this.exitHandler, !1), document.removeEventListener("mozfullscreenchange", this.exitHandler, !1), document.removeEventListener("MSFullscreenChange", this.exitHandler, !1), this.destroyMediaPlayer(), this.dashPlayer = null, this.clearControlBarFadeTimer(), null == this.props.postId || this.state.videoScrollPaused || this.sendEvent("served", "video", !0)
 				}
 				shouldComponentUpdate(e, t) {
 					const s = !!this.props.isListing && !this.props.isOverlayOpen && e.isOverlayOpen,
@@ -2388,4 +2390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.603fb60c2fc5830ea95c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.964d52060df66d783d60.js.map
