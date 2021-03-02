@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2b09562e6e93288226df.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.fd058b032dedcdd49953.js
+// Retrieved at 3/2/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
@@ -1647,7 +1647,7 @@
 						media: r,
 						thumbnail: o
 					} = e || t;
-					return n && i ? i.url : G(r) ? r.scrubberThumbSource : o.url
+					return n && i ? i.url : t.isSponsored && i && "default" === o.url ? i.url : G(r) ? r.scrubberThumbSource : o.url
 				},
 				G = e => !!e && e.type === y.o.LIVEVIDEO,
 				K = (e, t, s, i, c, a, l, u, b, m, p, h, f, x, O, C) => {
@@ -2475,4 +2475,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2b09562e6e93288226df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.fd058b032dedcdd49953.js.map

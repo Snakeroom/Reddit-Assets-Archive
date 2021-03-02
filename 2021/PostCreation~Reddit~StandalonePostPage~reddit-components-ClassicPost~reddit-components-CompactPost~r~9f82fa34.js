@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.8e6b48e99d8ee6fb9204.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.bfe0c6e7bd13cd49d668.js
+// Retrieved at 3/2/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, r) {
@@ -2358,7 +2358,7 @@
 						media: i,
 						thumbnail: o
 					} = e || t;
-					return s && n ? n.url : B(i) ? i.scrubberThumbSource : o.url
+					return s && n ? n.url : t.isSponsored && n && "default" === o.url ? n.url : B(i) ? i.scrubberThumbSource : o.url
 				},
 				B = e => !!e && e.type === I.o.LIVEVIDEO,
 				q = (e, t, r, n, a, c, l, u, m, p, b, h, f, g, x, v) => {
@@ -4111,4 +4111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.8e6b48e99d8ee6fb9204.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.bfe0c6e7bd13cd49d668.js.map
