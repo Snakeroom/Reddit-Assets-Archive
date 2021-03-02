@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d2ab67cd9f4ae52ac7e6.js
-// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8b87998ab2a98fe23fcb.js
+// Retrieved at 3/2/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -425,8 +425,8 @@
 				z = r("./src/reddit/icons/svgs/Admin/index.tsx"),
 				q = r("./src/reddit/icons/svgs/Close/index.tsx"),
 				Y = r("./src/reddit/icons/svgs/Premium/index.tsx"),
-				X = r("./src/reddit/icons/svgs/Settings/index.tsx"),
-				V = r("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.tsx"),
+				V = r("./src/reddit/icons/svgs/Settings/index.tsx"),
+				X = r("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.tsx"),
 				Q = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
 				J = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserBanner/index.tsx"),
 				$ = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserName.tsx"),
@@ -461,7 +461,7 @@
 					onDeleteBanner: u
 				}), s.a.createElement("div", {
 					className: te.a.SnooIconWrapper
-				}, l || !f || c ? s.a.createElement(V.a, {
+				}, l || !f || c ? s.a.createElement(X.a, {
 					iconUrl: f,
 					isNSFW: c,
 					userName: b,
@@ -470,7 +470,7 @@
 					isSponsored: !1,
 					href: f,
 					source: null
-				}, s.a.createElement(V.a, {
+				}, s.a.createElement(X.a, {
 					iconUrl: f,
 					isNSFW: c,
 					userName: b,
@@ -484,7 +484,7 @@
 				}))), !t && l && s.a.createElement(H.a, {
 					to: "/settings/profile",
 					className: te.a.settingsLink
-				}, s.a.createElement(X.a, {
+				}, s.a.createElement(V.a, {
 					className: ne.a.settingsIcon
 				})), v && s.a.createElement("h4", {
 					className: te.a.userTitle
@@ -1366,8 +1366,8 @@
 					})),
 					onModeratorsRequested: () => e(Object(y.b)(t))
 				}))(q),
-				X = r("./src/reddit/components/ProfileIdCard/index.m.less"),
-				V = r.n(X);
+				V = r("./src/reddit/components/ProfileIdCard/index.m.less"),
+				X = r.n(V);
 			const {
 				fbt: Q
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), J = Object(o.c)({
@@ -1401,9 +1401,9 @@
 				username: e,
 				currentUserHasSubreddit: t
 			}) => s.a.createElement("div", {
-				className: V.a.actionItem
+				className: X.a.actionItem
 			}, s.a.createElement(p.k, {
-				className: V.a.button,
+				className: X.a.button,
 				to: t ? `/user/${e}/submit` : "/submit"
 			}, Q._("New Post", null, {
 				hk: "2VCZwF"
@@ -1412,24 +1412,24 @@
 				onToggleFollow: t,
 				userIsSubscriber: r
 			}) => s.a.createElement("div", {
-				className: V.a.actionItem
+				className: X.a.actionItem
 			}, r ? s.a.createElement(p.l, {
-				className: V.a.button,
+				className: X.a.button,
 				onClick: () => t(e, r)
 			}, Q._("Unfollow", null, {
 				hk: "1nM1SO"
 			})) : s.a.createElement(p.i, {
-				className: V.a.button,
+				className: X.a.button,
 				onClick: () => t(e, r)
 			}, Q._("Follow", null, {
 				hk: "OPQuq"
 			}))), te = ({
 				userId: e
 			}) => s.a.createElement("div", {
-				className: V.a.actionItem
+				className: X.a.actionItem
 			}, s.a.createElement(l.a, {
 				contextId: e,
-				className: V.a.button,
+				className: X.a.button,
 				userId: e
 			}, Q._("Chat", null, {
 				hk: "UKkIW"
@@ -2004,14 +2004,21 @@
 		"./src/reddit/reducers/features/avatar/index.ts": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/redux/es/redux.js"),
-				s = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			var a = (e = null, t) => {
+				s = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				a = r("./src/reddit/actions/modal.ts"),
+				o = r("./src/reddit/constants/modals.ts");
+			const i = {
+				active: !1,
+				assetUrls: null
+			};
+			var c = (e = null, t) => {
+				var r;
 				switch (t.type) {
 					case s.o:
 						const {
-							avatarMarketingEvent: r
+							avatarMarketingEvent: n
 						} = t.payload;
-						return r ? function(e) {
+						return n ? function(e) {
 							const {
 								startsAt: t,
 								endsAt: r,
@@ -2021,16 +2028,15 @@
 								active: !!s && !a && !!o,
 								assetUrls: o
 							}
-						}(r) : {
-							active: !1,
-							assetUrls: []
-						};
+						}(n) : i;
+					case a.c:
+						return (null === (r = t.payload) || void 0 === r ? void 0 : r.id) === o.a.SNOOVATAR_MODAL ? i : e;
 					default:
 						return e
 				}
 			};
 			t.a = Object(n.c)({
-				marketing: a
+				marketing: c
 			})
 		},
 		"./src/reddit/selectors/avatarMarketing.ts": function(e, t, r) {
@@ -2105,4 +2111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d2ab67cd9f4ae52ac7e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8b87998ab2a98fe23fcb.js.map

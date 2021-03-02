@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.796a4fdb18c29a439a97.js
-// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.860e957b8d437e445992.js
+// Retrieved at 3/2/2021, 2:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -15540,14 +15540,21 @@
 		"./src/reddit/reducers/features/avatar/index.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/redux/es/redux.js"),
-				o = n("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			var r = (e = null, t) => {
+				o = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				r = n("./src/reddit/actions/modal.ts"),
+				a = n("./src/reddit/constants/modals.ts");
+			const i = {
+				active: !1,
+				assetUrls: null
+			};
+			var c = (e = null, t) => {
+				var n;
 				switch (t.type) {
 					case o.o:
 						const {
-							avatarMarketingEvent: n
+							avatarMarketingEvent: s
 						} = t.payload;
-						return n ? function(e) {
+						return s ? function(e) {
 							const {
 								startsAt: t,
 								endsAt: n,
@@ -15557,16 +15564,15 @@
 								active: !!o && !r && !!a,
 								assetUrls: a
 							}
-						}(n) : {
-							active: !1,
-							assetUrls: []
-						};
+						}(s) : i;
+					case r.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === a.a.SNOOVATAR_MODAL ? i : e;
 					default:
 						return e
 				}
 			};
 			t.a = Object(s.c)({
-				marketing: r
+				marketing: c
 			})
 		},
 		"./src/reddit/routes/acknowledgements/index.ts": function(e, t, n) {
@@ -17722,4 +17728,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.796a4fdb18c29a439a97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.860e957b8d437e445992.js.map
