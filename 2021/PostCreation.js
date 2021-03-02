@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.eacf22c9f7470024f5f2.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.12733bcf5e781c62d6d4.js
+// Retrieved at 3/2/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ModListing~Reddit~StandalonePostPage"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -1514,7 +1514,7 @@
 							}))
 						} else n(w(i.body));
 						const s = o();
-						if ((l = s.polls.models[e]) && Object(m.d)(l)) {
+						if ((l = s.polls.models[e]) && Object(m.e)(l)) {
 							const {
 								postId: e
 							} = l, t = s.posts.models[e];
@@ -14076,9 +14076,9 @@
 						};
 					return o && (i.type = o), i.type === Z.a.ReplaceTopMod ? (i.params = {
 						userName: r
-					}, i.options = Z.g[Z.a.ReplaceTopMod]()) : i.type === Z.a.Spinoff ? (i.params = {
+					}, i.options = Z.h[Z.a.ReplaceTopMod]()) : i.type === Z.a.Spinoff ? (i.params = {
 						subreddit: s
-					}, i.options = Z.g[Z.a.Spinoff](s)) : i.options = i.options.map(e => ({
+					}, i.options = Z.h[Z.a.Spinoff](s)) : i.options = i.options.map(e => ({
 						text: e.text.trim()
 					})).filter(e => !!e.text), i
 				},
@@ -17454,7 +17454,7 @@
 						allowPredictions: t,
 						isModerator: n,
 						poll: o = this.makeDefaultPoll()
-					} = this.props, r = !Object(Z.d)(o) && t && n;
+					} = this.props, r = !Object(Z.e)(o) && t && n;
 					return s.a.createElement("div", {
 						"data-testid": "poll-creator"
 					}, r && s.a.createElement(jc, null), s.a.createElement("div", {
@@ -17606,7 +17606,7 @@
 				}))((function(e) {
 					return s.a.createElement(Kc, {
 						className: e.className,
-						options: Z.g[Z.a.Spinoff](e.newSubredditName),
+						options: Z.h[Z.a.Spinoff](e.newSubredditName),
 						poll: e.poll,
 						subreddit: e.subreddit,
 						onUpdatePoll: e.onUpdatePoll
@@ -17643,7 +17643,7 @@
 				}))((function(e) {
 					return s.a.createElement(Kc, {
 						className: e.className,
-						options: Z.g[Z.a.ReplaceTopMod](),
+						options: Z.h[Z.a.ReplaceTopMod](),
 						poll: e.poll,
 						subreddit: e.subreddit,
 						onUpdatePoll: e.onUpdatePoll
@@ -18920,4 +18920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.eacf22c9f7470024f5f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.12733bcf5e781c62d6d4.js.map

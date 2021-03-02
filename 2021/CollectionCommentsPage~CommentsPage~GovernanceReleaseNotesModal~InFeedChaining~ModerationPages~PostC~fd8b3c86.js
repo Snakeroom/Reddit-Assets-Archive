@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.9c4c20d77cd9c2f6731e.js
-// Retrieved at 3/2/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.8ef54ddfe059e84e8fbd.js
+// Retrieved at 3/2/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -722,7 +722,7 @@
 				isCommentsPage: e,
 				poll: t,
 				postId: s
-			}) => t ? Object(r.e)(t) ? n.a.createElement(l.a, {
+			}) => t ? Object(r.f)(t) ? n.a.createElement(l.a, {
 				postId: s
 			}) : n.a.createElement(c.a, {
 				postId: s,
@@ -1917,7 +1917,7 @@
 					const s = r(e, {
 						postId: t
 					});
-					return s && Object(n.e)(s) ? s : null
+					return s && Object(n.f)(s) ? s : null
 				},
 				l = (e, {
 					commentId: t
@@ -1954,4 +1954,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.9c4c20d77cd9c2f6731e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.8ef54ddfe059e84e8fbd.js.map

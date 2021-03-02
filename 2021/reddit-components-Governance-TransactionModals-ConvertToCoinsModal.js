@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6ab5ea6527e9c44b9b64.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.65fa16b8166084cc23de.js
+// Retrieved at 3/2/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -1016,7 +1016,7 @@
 							}))
 						} else r(N(c.body));
 						const a = n();
-						if ((i = a.polls.models[e]) && Object(m.d)(i)) {
+						if ((i = a.polls.models[e]) && Object(m.e)(i)) {
 							const {
 								postId: e
 							} = i, t = a.posts.models[e];
@@ -2831,4 +2831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6ab5ea6527e9c44b9b64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.65fa16b8166084cc23de.js.map

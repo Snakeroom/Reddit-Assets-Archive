@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.cd9a7924a9424b534c86.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.62da23c2d7d56fd56388.js
+// Retrieved at 3/2/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(i, a, r) {
@@ -380,6 +380,14 @@
 				return a.__actions__ = k(i.__actions__), a.__index__ = i.__index__, a.__values__ = i.__values__, a
 			}
 		},
+		"./node_modules/lodash/cloneDeep.js": function(i, a, r) {
+			var t = r("./node_modules/lodash/_baseClone.js"),
+				x = 1,
+				k = 4;
+			i.exports = function(i) {
+				return t(i, x | k)
+			}
+		},
 		"./node_modules/lodash/curry.js": function(i, a, r) {
 			var t = r("./node_modules/lodash/_createWrap.js"),
 				x = 8;
@@ -685,16 +693,25 @@
 		},
 		"./src/reddit/actions/economics/predictions/constants.ts": function(i, a, r) {
 			"use strict";
-			r.d(a, "a", (function() {
+			r.d(a, "c", (function() {
 				return t
-			})), r.d(a, "c", (function() {
+			})), r.d(a, "e", (function() {
 				return x
-			})), r.d(a, "b", (function() {
+			})), r.d(a, "d", (function() {
 				return k
+			})), r.d(a, "b", (function() {
+				return n
+			})), r.d(a, "a", (function() {
+				return o
+			})), r.d(a, "f", (function() {
+				return s
 			}));
 			const t = "FETCH_SUBREDDIT_TOP_PREDICTORS_SUCCESS",
 				x = "PREDICTION_VOTE_SUCCESS",
-				k = "PREDICTION_RESOLVE_SUCCESS"
+				k = "PREDICTION_RESOLVE_SUCCESS",
+				n = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_SUCCESS",
+				o = "ADD_PREDICTION_TO_TOURNAMENT",
+				s = "RESET_TOURNAMENT_PREDICTIONS"
 		},
 		"./src/reddit/actions/economics/predictions/index.ts": function(i, a, r) {
 			"use strict";
@@ -711,18 +728,18 @@
 				x = r("./src/reddit/reducers/features/predictions/index.ts"),
 				k = r("./src/lib/makeActionCreator/index.ts"),
 				n = r("./src/reddit/endpoints/economics/predictions.ts"),
-				o = r("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				o = (r("./src/reddit/models/Poll/index.ts"), r("./src/reddit/selectors/experiments/econ/predictions.ts")),
 				s = r("./src/reddit/selectors/posts.ts"),
-				e = r("./src/reddit/selectors/user.ts"),
+				e = (r("./src/reddit/selectors/subreddit.ts"), r("./src/reddit/selectors/user.ts")),
 				m = r("./src/reddit/actions/economics/predictions/constants.ts");
 			Object(t.a)({
 				features: {
 					predictions: x.a
 				}
 			});
-			const l = Object(k.a)(m.a),
-				c = Object(k.a)(m.c),
-				p = Object(k.a)(m.b),
+			const l = Object(k.a)(m.c),
+				c = Object(k.a)(m.e),
+				p = Object(k.a)(m.d),
 				h = (i, a, r) => async (t, x, {
 					gqlContext: k
 				}) => {
@@ -803,7 +820,13 @@
 						pollId: a,
 						prediction: o.poll
 					})), o.poll
-				}
+				};
+			Object(k.a)(m.b);
+			var y;
+			! function(i) {
+				i.All = "ALL", i.LiveOnly = "LIVE_ONLY", i.DraftOnly = "DRAFT_ONLY"
+			}(y || (y = {}));
+			Object(k.a)(m.a), Object(k.a)(m.f)
 		},
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(i, a, r) {
 			"use strict";
@@ -1585,7 +1608,7 @@
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function z({
+			function Y({
 				onCancel: i,
 				selectedCoinPack: a
 			}) {
@@ -1627,7 +1650,7 @@
 					userCoins: n
 				})
 			}
-			var Y = r("./src/lib/truncateText/index.ts"),
+			var z = r("./src/lib/truncateText/index.ts"),
 				$ = r("./src/reddit/components/Econ/Prediction/PredictionModal/Selection/index.m.less"),
 				J = r.n($);
 			const {
@@ -1639,7 +1662,7 @@
 			}) {
 				return x.a.createElement(x.a.Fragment, null, x.a.createElement("h1", {
 					className: J.a.selection
-				}, X._("You picked {lineBreak}{optionText}", [X._param("lineBreak", x.a.createElement("br", null)), X._param("optionText", `‘${Object(Y.a)(i.text,40,"...")}’`)], {
+				}, X._("You picked {lineBreak}{optionText}", [X._param("lineBreak", x.a.createElement("br", null)), X._param("optionText", `‘${Object(z.a)(i.text,40,"...")}’`)], {
 					hk: "4CMKTn"
 				})), x.a.createElement("p", {
 					className: J.a.upsell
@@ -1693,7 +1716,7 @@
 								}), k()
 							}
 						})()
-					}, [u, i, k, e, m]), x.a.createElement("div", null, x.a.createElement(z, {
+					}, [u, i, k, e, m]), x.a.createElement("div", null, x.a.createElement(Y, {
 						onCancel: k,
 						selectedCoinPack: D
 					}), x.a.createElement("div", {
@@ -2193,13 +2216,13 @@
 					userWonAmount: H
 				} = l, W = I < Date.now(), q = W && N === G && !L, K = w.find(({
 					id: i
-				}) => i === F), z = () => {
+				}) => i === F), Y = () => {
 					g(null), P(null)
-				}, Y = a ? Object(o.a)(i, Mi.a.container, Mi.a.forCommentsPage, {
+				}, z = a ? Object(o.a)(i, Mi.a.container, Mi.a.forCommentsPage, {
 					[Mi.a.isEditing]: r
 				}) : Object(o.a)(i, Mi.a.container);
 				return x.a.createElement("div", {
-					className: Y,
+					className: z,
 					onClick: i => {
 						l && i.stopPropagation()
 					}
@@ -2240,8 +2263,8 @@
 					totalStakeAmount: R
 				}), !!K && x.a.createElement(xi, {
 					isCreatingVote: B,
-					onOverlayClick: z,
-					onCancel: z,
+					onOverlayClick: Y,
+					onCancel: Y,
 					onPredict: async i => {
 						if (i.coins > y) return Object(m.promptUserToBuyMoreCoins)(), void j(h.a);
 						if (W) return u({
@@ -2285,8 +2308,8 @@
 					withOverlay: !0
 				}), q && v && x.a.createElement(bi, {
 					isResolving: B,
-					onOverlayClick: z,
-					onCancel: z,
+					onOverlayClick: Y,
+					onCancel: Y,
 					onResolve: async () => {
 						if (V(!0), !v) throw new Error("Failed to create prediction, missing selected option");
 						try {
@@ -3032,11 +3055,30 @@
 		"./src/reddit/reducers/features/predictions/index.ts": function(i, a, r) {
 			"use strict";
 			var t = r("./node_modules/redux/es/redux.js"),
-				x = r("./src/reddit/actions/economics/predictions/constants.ts");
-			const k = {};
-			var n = (i = k, a) => {
+				x = r("./node_modules/lodash/cloneDeep.js"),
+				k = r.n(x),
+				n = r("./src/reddit/actions/economics/predictions/constants.ts"),
+				o = r("./src/reddit/actions/postCreation/constants.ts");
+			const s = [];
+			var e = (i = s, a) => {
 				switch (a.type) {
-					case x.a: {
+					case n.f:
+					case o.A:
+						return s;
+					case n.a: {
+						const {
+							prediction: r
+						} = a.payload;
+						return [...i, k()(r)]
+					}
+					default:
+						return i
+				}
+			};
+			const m = {};
+			var l = (i = m, a) => {
+				switch (a.type) {
+					case n.c: {
 						const {
 							currentRank: r,
 							subredditId: t,
@@ -3054,8 +3096,27 @@
 						return i
 				}
 			};
+			const c = {};
+			var p = (i = c, a) => {
+				switch (a.type) {
+					case n.b: {
+						const {
+							subredditId: r,
+							tournaments: t
+						} = a.payload;
+						return {
+							...i,
+							[r]: t
+						}
+					}
+					default:
+						return i
+				}
+			};
 			a.a = Object(t.c)({
-				leaderboards: n
+				creation: e,
+				leaderboards: l,
+				tournaments: p
 			})
 		},
 		"./src/reddit/selectors/economics.ts": function(i, a, r) {
@@ -3400,4 +3461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.cd9a7924a9424b534c86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.62da23c2d7d56fd56388.js.map

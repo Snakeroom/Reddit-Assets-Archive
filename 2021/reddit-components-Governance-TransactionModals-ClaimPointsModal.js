@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.8dbcd8edbf71da48ef1d.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.62c66cc4a3de6dc29bb0.js
+// Retrieved at 3/2/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -513,7 +513,7 @@
 							}))
 						} else r(w(o.body));
 						const s = n();
-						if ((c = s.polls.models[e]) && Object(m.d)(c)) {
+						if ((c = s.polls.models[e]) && Object(m.e)(c)) {
 							const {
 								postId: e
 							} = c, t = s.posts.models[e];
@@ -1323,4 +1323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.8dbcd8edbf71da48ef1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.62c66cc4a3de6dc29bb0.js.map
