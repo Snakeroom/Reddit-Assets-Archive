@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5cd9c32dd0816cba5703.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b7743220b8c2b94b522b.js
+// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4855,7 +4855,7 @@
 						sort: zs.r.CHAT
 					}, zs.r.CHAT)),
 					openLoginModal: () => e(Object(m.h)()),
-					openRegisterModal: () => e(Object(m.i)()),
+					openRegisterModal: () => e(Object(m.j)()),
 					fetchAutomuteStatus: () => e(Object(Ys.b)(t))
 				}))(Va),
 				Fa = s("./src/reddit/icons/svgs/Pagination/back.tsx");
@@ -5788,4 +5788,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5cd9c32dd0816cba5703.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b7743220b8c2b94b522b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.39a61ca51d1028334065.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.99f6dcaf80f74b200662.js
+// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -7847,7 +7847,7 @@
 					openSSOCreatePasswordForLinkAppleModal: () => e(Object(x.h)(Q.i)),
 					openSSOCreatePasswordForUnlinkAppleModal: () => e(Object(x.h)(Q.j)),
 					openLinkAppleSSOModal: () => e(Object(y.f)()),
-					openUnlinkAppleSSOModal: () => e(Object(y.j)())
+					openUnlinkAppleSSOModal: () => e(Object(y.k)())
 				}))(e => {
 					const t = Object(fe.a)();
 					return a.a.createElement(Oe, {
@@ -7911,7 +7911,7 @@
 					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(x.h)(Q.m)),
 					openSSOCreatePasswordForUnlinkGoogleModal: () => e(Object(x.h)(Q.n)),
 					openLinkGoogleSSOModal: () => e(Object(y.g)()),
-					openUnlinkGoogleSSOModal: () => e(Object(y.k)())
+					openUnlinkGoogleSSOModal: () => e(Object(y.l)())
 				}))(e => {
 					const t = Object(fe.a)();
 					return a.a.createElement(De, {
@@ -11279,4 +11279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.39a61ca51d1028334065.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.99f6dcaf80f74b200662.js.map

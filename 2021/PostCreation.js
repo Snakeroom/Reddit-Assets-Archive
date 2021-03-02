@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.986470fa1963c37acde7.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.97f6774bf91c95d2482d.js
+// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ModListing~Reddit~StandalonePostPage"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -942,7 +942,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						d = Object(i.a)(F.c.replyToComment, t);
-					if (!Object(V.J)(s())) return o(Object(l.i)()), void o(Object(c.k)({
+					if (!Object(V.J)(s())) return o(Object(l.j)()), void o(Object(c.k)({
 						actionSource: c.a.Reply,
 						redirectUrl: Object(W.m)(s(), {
 							commentId: t
@@ -1209,7 +1209,7 @@
 				P = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(O.J)(n())) return t(Object(l.i)()), void t(Object(c.k)({
+					if (!Object(O.J)(n())) return t(Object(l.j)()), void t(Object(c.k)({
 						actionSource: c.a.Save,
 						redirectUrl: Object(C.m)(n(), {
 							commentId: e
@@ -18920,4 +18920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.986470fa1963c37acde7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.97f6774bf91c95d2482d.js.map

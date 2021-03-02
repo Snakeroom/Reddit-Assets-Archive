@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e17a6b0f636821f8819c.js
-// Retrieved at 3/2/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.796a4fdb18c29a439a97.js
+// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -835,7 +835,7 @@
 				}) => async (s, o) => {
 					const r = o(),
 						l = Object(a.a)(F.c.replyToComment, t);
-					if (!Object(V.J)(o())) return s(Object(c.i)()), void s(Object(d.k)({
+					if (!Object(V.J)(o())) return s(Object(c.j)()), void s(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(B.m)(o(), {
 							commentId: t
@@ -1102,7 +1102,7 @@
 				w = e => async (t, n, {
 					apiContext: s
 				}) => {
-					if (!Object(P.J)(n())) return t(Object(c.i)()), void t(Object(d.k)({
+					if (!Object(P.J)(n())) return t(Object(c.j)()), void t(Object(d.k)({
 						actionSource: d.a.Save,
 						redirectUrl: Object(C.m)(n(), {
 							commentId: e
@@ -2923,7 +2923,8 @@
 					[A.c.UnlinkAppleSSO]: et.a.UNLINK_APPLE_SSO,
 					[A.c.LinkGoogleSSO]: et.a.LINK_GOOGLE_SSO,
 					[A.c.UnlinkGoogleSSO]: et.a.UNLINK_GOOGLE_SSO,
-					[A.c.GoogleOneTap]: et.a.GOOGLE_ONE_TAP_MODAL_ID
+					[A.c.GoogleOneTap]: et.a.GOOGLE_ONE_TAP_MODAL_ID,
+					[A.c.Onboarding]: et.a.ONBOARDING_MODAL_ID
 				};
 			class nn extends u.a.Component {
 				constructor() {
@@ -3020,6 +3021,8 @@
 				path: A.c.ChangePassword
 			})), Object(qt.b)(et.a.LOGIN_MODAL_ID, e => u.a.createElement(sn, {
 				path: A.c.Index
+			})), Object(qt.b)(et.a.ONBOARDING_MODAL_ID, e => u.a.createElement(sn, {
+				path: A.c.Onboarding
 			})), Object(qt.b)(et.a.ENABLE_TWO_FACTOR, e => u.a.createElement(sn, {
 				path: A.c.EnableTwoFactor
 			})), Object(qt.b)(et.a.DISABLE_TWO_FACTOR, e => u.a.createElement(sn, {
@@ -7057,7 +7060,7 @@
 					onOpenRegisterModal: () => {
 						e(Object(je.k)({
 							actionSource: je.a.HeaderSignup
-						})), e(Object(ya.i)())
+						})), e(Object(ya.j)())
 					}
 				}))(Object(T.c)(Fc))),
 				Uc = n("./src/reddit/components/Header/index.m.less"),
@@ -7457,7 +7460,7 @@
 				}
 			}
 			const cl = Object(p.b)(null, e => ({
-					onSignup: () => e(Object(ya.i)())
+					onSignup: () => e(Object(ya.j)())
 				}))(Object(T.c)(il)),
 				dl = `${ll("subscribe-cap.png")} 1x,\n  ${ll("subscribe-cap@2x.png")} 2x,`;
 
@@ -11320,7 +11323,7 @@
 					return a
 				})),
 				function(e) {
-					e.ChangePassword = "/change_password/", e.Index = "/login/", e.Register = "/register/", e.EnableTwoFactor = "/2fa/enable/", e.DisableTwoFactor = "/2fa/disable/", e.TwoFactorBackupCodes = "/2fa/backup-keys/", e.LinkAppleSSO = "/account/sso/link/?provider=apple", e.UnlinkAppleSSO = "/account/sso/unlink/?provider=apple", e.LinkGoogleSSO = "/account/sso/link/?provider=google", e.UnlinkGoogleSSO = "/account/sso/unlink/?provider=google", e.GoogleOneTap = "/account/sso/one_tap/"
+					e.ChangePassword = "/change_password/", e.Index = "/login/", e.Register = "/register/", e.EnableTwoFactor = "/2fa/enable/", e.DisableTwoFactor = "/2fa/disable/", e.TwoFactorBackupCodes = "/2fa/backup-keys/", e.LinkAppleSSO = "/account/sso/link/?provider=apple", e.UnlinkAppleSSO = "/account/sso/unlink/?provider=apple", e.LinkGoogleSSO = "/account/sso/link/?provider=google", e.UnlinkGoogleSSO = "/account/sso/unlink/?provider=google", e.GoogleOneTap = "/account/sso/one_tap/", e.Onboarding = "/account/onboarding/"
 				}(s || (s = {})),
 				function(e) {
 					e.ChangePassword = "changePassword", e.Close = "close", e.CreateAccount = "createAccount", e.GoogleOneTapDisplayed = "googleOneTapDisplayed", e.GoogleOneTapFlowFailed = "googleOneTapFlowFailed", e.GoogleOneTapSkipped = "googleOneTapSkipped", e.Login = "login", e.PreferenceStatus = "preferenceStatus", e.Register = "register", e.Resize = "resize", e.ShowStep = "showStep", e.SSOLinkFail = "ssoLinkFail", e.SSOLinkSuccess = "ssoLinkSuccess", e.SSOUnlinkFail = "ssoUnlinkFail", e.SSOUnlinkSuccess = "ssoUnlinkSuccess", e.Subscribe = "subscribe", e.TwoFactorChanged = "twoFactorChanged"
@@ -14882,8 +14885,9 @@
 					} = e;
 					o && t($t(o))
 				};
+			var tn = n("./src/reddit/actions/login.ts");
 			Object(o.e)(o.b.EntryPointStart);
-			const tn = Object(_.a)({
+			const nn = Object(_.a)({
 					actionDispatchers: {
 						reddaidReceived: z.s,
 						loidReceived: z.q,
@@ -14905,20 +14909,20 @@
 					onBeforeRequestFactory: Pt.a,
 					statsAppName: g.l.Redesign
 				}),
-				nn = Object(w.a)(tn.apiContext),
-				sn = ve();
-			let on;
+				sn = Object(w.a)(nn.apiContext),
+				on = ve();
+			let rn;
 			Object(C.a)({
 				reducerMap: Mt.a,
 				routes: Tt.a,
-				apiContext: tn.apiContext,
-				gqlContext: nn.gqlContext,
+				apiContext: nn.apiContext,
+				gqlContext: sn.gqlContext,
 				appFactory: (e, t) => m.a.createElement(ue.a.Provider, {
-					value: sn.broadcaster
+					value: on.broadcaster
 				}, m.a.createElement(pe.a.Provider, {
 					value: {
-						apiContext: tn.apiContext,
-						gqlContext: nn.gqlContext
+						apiContext: nn.apiContext,
+						gqlContext: sn.gqlContext
 					}
 				}, m.a.createElement(be.b, null, m.a.createElement(K.a, {
 					ok: !0,
@@ -14928,7 +14932,7 @@
 				appName: g.l.Redesign,
 				history: Object(i.a)({
 					getUserConfirmation(e, t) {
-						const n = on;
+						const n = rn;
 						if (!n) return;
 						n.dispatch(Object(B.k)({
 							allowNavigationCallback: (e = !1) => {
@@ -14939,9 +14943,9 @@
 				}),
 				customMiddleware: [p.a.withExtraArgument({
 					routes: Tt.a,
-					apiContext: tn.apiContext,
-					gqlContext: nn.gqlContext
-				}), sn.middleware, Se, tn.middleware, nn.middleware, Ye, Ae, $e, gt, ze, Ze],
+					apiContext: nn.apiContext,
+					gqlContext: sn.gqlContext
+				}), on.middleware, Se, nn.middleware, sn.middleware, Ye, Ae, $e, gt, ze, Ze],
 				modifyInitialData: ({
 					initialData: e,
 					browserHistory: t
@@ -15019,7 +15023,7 @@
 					store: c,
 					localStorageData: d
 				}) => {
-					on = c;
+					rn = c;
 					e.listen((e, t) => {
 						const n = c.getState(),
 							{
@@ -15055,7 +15059,13 @@
 						advertiserCategory: p
 					}), c.dispatch(en({
 						localStorageData: d
-					})), Object(Dt.f)(l) && Object(L.d)(l), c.dispatch(Object(L.c)()), window.addEventListener("load", () => {
+					})), Object(Dt.f)(l) && Object(L.d)(l), c.dispatch(Object(L.c)()), c.dispatch((() => async (e, t) => {
+						const n = t(),
+							{
+								sessionReferrer: s
+							} = n.platform;
+						s && s.includes("account/magic_link/landing") && e(Object(tn.i)())
+					})()), window.addEventListener("load", () => {
 						const t = c.getState(),
 							{
 								currentPage: r
@@ -17712,4 +17722,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e17a6b0f636821f8819c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.796a4fdb18c29a439a97.js.map

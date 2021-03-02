@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.08bcf1f5230451d84563.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.b3816c40b2f12ce89195.js
+// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1067,7 +1067,7 @@
 				}) => async (n, s) => {
 					const r = s(),
 						l = Object(a.a)(P.c.replyToComment, t);
-					if (!Object(q.J)(s())) return n(Object(c.i)()), void n(Object(d.k)({
+					if (!Object(q.J)(s())) return n(Object(c.j)()), void n(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(L.m)(s(), {
 							commentId: t
@@ -1334,7 +1334,7 @@
 				T = e => async (t, o, {
 					apiContext: n
 				}) => {
-					if (!Object(j.J)(o())) return t(Object(c.i)()), void t(Object(d.k)({
+					if (!Object(j.J)(o())) return t(Object(c.j)()), void t(Object(d.k)({
 						actionSource: d.a.Save,
 						redirectUrl: Object(y.m)(o(), {
 							commentId: e
@@ -4553,4 +4553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.08bcf1f5230451d84563.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b3816c40b2f12ce89195.js.map

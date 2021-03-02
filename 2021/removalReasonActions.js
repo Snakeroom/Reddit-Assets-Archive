@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.6697118fc9a8877d6000.js
-// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.31bb41a8e3bcdcf1470c.js
+// Retrieved at 3/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -338,7 +338,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						m = Object(c.a)(L.c.replyToComment, t);
-					if (!Object(G.J)(s())) return o(Object(a.i)()), void o(Object(i.k)({
+					if (!Object(G.J)(s())) return o(Object(a.j)()), void o(Object(i.k)({
 						actionSource: i.a.Reply,
 						redirectUrl: Object(V.m)(s(), {
 							commentId: t
@@ -605,7 +605,7 @@
 				C = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(E.J)(n())) return t(Object(a.i)()), void t(Object(i.k)({
+					if (!Object(E.J)(n())) return t(Object(a.j)()), void t(Object(i.k)({
 						actionSource: i.a.Save,
 						redirectUrl: Object(S.m)(n(), {
 							commentId: e
@@ -1840,4 +1840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.6697118fc9a8877d6000.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.31bb41a8e3bcdcf1470c.js.map
