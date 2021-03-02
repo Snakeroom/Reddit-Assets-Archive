@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.77d78fafb75553d5bc18.js
-// Retrieved at 3/2/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.986470fa1963c37acde7.js
+// Retrieved at 3/2/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ModListing~Reddit~StandalonePostPage"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -810,7 +810,7 @@
 					const C = _.user.account.displayText,
 						v = r.commentMode;
 					let y;
-					if (l ? (y = await Object(N.h)(g(), e, r, C), u(Object(m.a)({
+					if (l ? (y = await Object(N.j)(g(), e, r, C), u(Object(m.a)({
 							streamId: e,
 							level: y.body.automuteLevel
 						}))) : y = await T(g(), e, r, C, v), y.ok) {
@@ -18723,7 +18723,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!n || Object(o.qd)(n))
+				return !(!n || Object(o.sd)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
@@ -18920,4 +18920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.77d78fafb75553d5bc18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.986470fa1963c37acde7.js.map
