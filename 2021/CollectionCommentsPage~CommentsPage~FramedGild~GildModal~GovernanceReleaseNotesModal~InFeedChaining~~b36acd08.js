@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.8338db6531b458804769.js
-// Retrieved at 3/3/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.00b70c149b894331958c.js
+// Retrieved at 3/3/2021, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -97,8 +97,8 @@
 				w = s("./src/reddit/components/HTML5StreamPlayer/SeekBar/index.m.less"),
 				M = s.n(w);
 			const T = r.a.div("Thumb", M.a),
-				_ = r.a.div("ProgressBar", M.a),
-				L = r.a.div("Floating", M.a),
+				L = r.a.div("ProgressBar", M.a),
+				_ = r.a.div("Floating", M.a),
 				B = r.a.video("PreviewVideo", M.a),
 				F = r.a.div("PreviewTime", M.a),
 				N = r.a.div("VideoSeekbar", M.a);
@@ -244,7 +244,7 @@
 					}), n.a.createElement("div", {
 						className: Object(o.a)(M.a.Bar, M.a.Buffered),
 						style: this.getBufferedStyle()
-					}), n.a.createElement(_, {
+					}), n.a.createElement(L, {
 						className: Object(o.a)(this.props.isLive && M.a.Live),
 						innerRef: this.setProgressBar,
 						style: r
@@ -252,7 +252,7 @@
 						className: Object(o.a)(this.props.isLive && M.a.Live),
 						innerRef: this.setProgressThumbRef,
 						style: l
-					}), !this.props.controlBarIsHidden && n.a.createElement(L, {
+					}), !this.props.controlBarIsHidden && n.a.createElement(_, {
 						innerRef: this.setPreviewThumbnailContainer
 					}, this.props.thumbSource && n.a.createElement(B, {
 						innerRef: this.setPreviewThumbnailVideo,
@@ -782,8 +782,8 @@
 				w = s("./src/reddit/constants/experiments.ts"),
 				M = s("./src/reddit/constants/video.ts"),
 				T = s("./src/reddit/contexts/InsideOverlay.tsx"),
-				_ = s("./src/reddit/featureFlags/debugVideoMegafail.ts"),
-				L = s("./src/reddit/helpers/trackers/media.ts"),
+				L = s("./src/reddit/featureFlags/debugVideoMegafail.ts"),
+				_ = s("./src/reddit/helpers/trackers/media.ts"),
 				B = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				F = s("./src/reddit/selectors/experiments/utils.ts");
 			const N = Object(d.a)(e => Object(B.c)(e, {
@@ -1027,12 +1027,12 @@
 					}, t || "Learn More")))
 				}),
 				Te = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
-				_e = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
-				Le = s.n(_e);
-			const Be = D.a.div("Centered", Le.a),
-				Fe = D.a.div("EndedOverlay", Le.a),
-				Ne = D.a.span("ReplayText", Le.a),
-				ke = D.a.button("ReplayButton", Le.a);
+				Le = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
+				_e = s.n(Le);
+			const Be = D.a.div("Centered", _e.a),
+				Fe = D.a.div("EndedOverlay", _e.a),
+				Ne = D.a.span("ReplayText", _e.a),
+				ke = D.a.button("ReplayButton", _e.a);
 			var Re = e => {
 					const {
 						onClick: t,
@@ -1173,9 +1173,31 @@
 						[M.f]: !1
 					}, this.sendEvent = (e, t, s = !1) => {
 						if (this.HTML5StreamPlayerVideo && null != this.props.postId) {
-							const i = s ? L.b(this.props.postId, e, t) : L.a(this.props.postId, e, t);
+							const i = s ? _.b(this.props.postId, e, t) : _.a(this.props.postId, e, t);
 							this.props.sendEvent(i)
 						}
+					}, this.resetMediaPlayer = () => {
+						const e = this.HTML5StreamPlayerVideo,
+							t = this.props.mpegDashSource;
+						if (!e || !t) return;
+						const {
+							currentTime: s
+						} = e;
+						this.setState({
+							isRecovering: !0,
+							videoWaiting: !0
+						}), e.addEventListener("loadedmetadata", () => {
+							e.addEventListener("playing", () => {
+								this.setState({
+									isRecovering: !1,
+									videoWaiting: !1
+								})
+							}, {
+								once: !0
+							}), e.currentTime = s, null == e || e.play()
+						}, {
+							once: !0
+						}), this.dashPlayer.attachSource(t)
 					}, this.getVideoQualityList = () => {
 						if (this.dashPlayer) {
 							const e = this.dashPlayer.getBitrateInfoListFor("video");
@@ -1462,6 +1484,7 @@
 						hasHovered: !1,
 						hideControlBar: !0,
 						isMuted: t,
+						isRecovering: !1,
 						lastUpdate: null,
 						ignoreUnderrunsUntil: 0,
 						maxTimeServed: 0,
@@ -1494,7 +1517,7 @@
 							a = this.props.mpegDashSource;
 						if (!i || !a) return;
 						const n = this.props.videoBufferVariant;
-						this.dashPlayer = e.MediaPlayer().create(), Object(_.b)() && (console.log("🚨", this.props.postId, this.dashPlayer), this.dashPlayer.updateSettings({
+						this.dashPlayer = e.MediaPlayer().create(), Object(L.b)() && (console.log("🚨", this.props.postId, this.dashPlayer), this.dashPlayer.updateSettings({
 							debug: {
 								logLevel: e.Debug.LOG_LEVEL_DEBUG
 							}
@@ -1504,7 +1527,7 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = `Reddit/Version Build aca9bbecdcd04455e4f493f0d2768188c4b0fe3d-production ${t}`;
+									let s = `Reddit/Version Build aa7b22e03d192122a47d04b51a8922562ca09680-production ${t}`;
 									return n && (s += ` [${w.id}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -1528,18 +1551,18 @@
 								}
 							})
 						} catch (o) {
-							return void(Object(_.b)() && console.error("🚨", this.props.postId, o))
+							return void(Object(L.b)() && console.error("🚨", this.props.postId, o))
 						}
 						null != this.props.postId && this.props.onLoadStarted(performance.now()), this.dashPlayer.on(e.MediaPlayer.events.STREAM_INITIALIZED, () => {
 							this.getVideoQualityList(), this.getAudioInfo(), null != this.props.postId && this.props.onPlayable(performance.now()), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(0)
 						}), this.dashPlayer.on(e.MediaPlayer.events.BUFFER_EMPTY, e => {
 							if (null != this.props.postId && Date.now() > this.state.ignoreUnderrunsUntil) {
-								const e = L.c(this.props.postId);
+								const e = _.c(this.props.postId);
 								this.props.sendEvent(e), this.setState({
 									ignoreUnderrunsUntil: Date.now() + Ke
 								})
 							}
-						}), null === (s = (t = this.props).onDashCreate) || void 0 === s || s.call(t, this.dashPlayer)
+						}), i.addEventListener("error", this.resetMediaPlayer), null === (s = (t = this.props).onDashCreate) || void 0 === s || s.call(t, this.dashPlayer)
 					});
 					const e = this.HTML5StreamPlayerVideo;
 					document.addEventListener("webkitfullscreenchange", this.exitHandler, !1), document.addEventListener("fullscreenchange", this.exitHandler, !1), document.addEventListener("mozfullscreenchange", this.exitHandler, !1), document.addEventListener("MSFullscreenChange", this.exitHandler, !1), e && (f() ? e.play() : a.a.safari && !this.props.mpegDashSource && setTimeout(async () => {
@@ -1685,23 +1708,24 @@
 						hasHovered: o,
 						hideControlBar: r,
 						isMuted: c,
-						settingChange: d,
-						videoEnded: h,
-						videoLoaded: u
-					} = this.state, p = this.HTML5StreamPlayerVideo, g = d === je.SeekBar, v = u || !t, f = v && p && 0 !== p.currentTime, x = !o && c, y = h && !g, S = {
+						isRecovering: d,
+						settingChange: h,
+						videoEnded: u,
+						videoLoaded: p
+					} = this.state, g = this.HTML5StreamPlayerVideo, v = h === je.SeekBar, f = p || !t, x = d || f && g && 0 !== g.currentTime, y = !o && c, S = u && !v, P = {
 						...this.props,
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
 						setAutoplay: this.setAutoplay,
 						setResolution: this.setResolution,
-						settingChange: d,
+						settingChange: h,
 						settingRef: this.setSettingRef,
 						toggleSetting: this.toggleSetting
 					};
 					return l.a.createElement(Ae, {
 						setRef: this.setContainerRef,
 						className: Object(m.a)(e, this.state.videoFullScreen ? Ge.a.RedditVideoPlayerRoot__Fullscreen : Ge.a.RedditVideoPlayerRoot, this.state.usingKeys ? "using-keys" : null),
-						isVisible: v,
+						isVisible: f,
 						onClick: this.handleClick,
 						onKeyDown: this.handleKeyDown,
 						onKeyUp: this.handleKeyUp,
@@ -1713,7 +1737,7 @@
 					}, this.props.blurImageSrc && l.a.createElement(W, {
 						src: this.props.blurImageSrc
 					}), l.a.createElement("video", {
-						poster: this.props.posterUrl,
+						poster: d ? "" : this.props.posterUrl,
 						loop: this.props.isGif,
 						autoPlay: this.isUnobscured && this.props.autoPlay,
 						muted: c,
@@ -1726,17 +1750,17 @@
 						type: "application/vnd.apple.mpegURL"
 					}), this.props.otherSource && l.a.createElement("source", {
 						src: this.props.otherSource
-					})), y ? l.a.createElement(Re, {
+					})), S ? l.a.createElement(Re, {
 						onClick: this.resetVideo,
 						postId: this.props.postId,
 						source: this.props.callToActionSource,
 						callToAction: this.props.callToActionText
-					}) : l.a.createElement(We, null), this.state.videoWaiting ? f && l.a.createElement(E.a, null) : this.state.videoPaused && !y && l.a.createElement(C.a, {
+					}) : l.a.createElement(We, null), this.state.videoWaiting ? x && l.a.createElement(E.a, null) : this.state.videoPaused && !S && l.a.createElement(C.a, {
 						onClick: s ? void 0 : this.playPauseVideo
 					}), i && l.a.createElement(z.b, {
 						clickSnoo: this.clickSnoo,
 						controlBarRef: this.setControlBarRef,
-						currentTime: p ? p.currentTime : 0,
+						currentTime: g ? g.currentTime : 0,
 						hasAudio: n,
 						updateContinuousStartTime: this.updateContinuousStartTime,
 						enterFullScreen: this.enterFullScreen,
@@ -1749,14 +1773,14 @@
 						playPauseVideo: this.playPauseVideo,
 						postUrl: this.props.postUrl,
 						ref: this.setControlBarApi,
-						settingsButton: l.a.createElement(ce, S),
+						settingsButton: l.a.createElement(ce, P),
 						scrubberThumbSource: this.props.scrubberThumbSource,
 						seekBarRef: this.setSeekBarRef,
-						settingChange: d,
+						settingChange: h,
 						setVideoPosition: this.setVideoPos,
 						setVolume: this.setVolume,
 						showSettingsIcon: a,
-						showVolumeIcon: x,
+						showVolumeIcon: y,
 						toggleMute: this.toggleMuteVideo,
 						totalTime: this.state.totalTime,
 						volume: this.state.volume,
@@ -2390,4 +2414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.8338db6531b458804769.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.00b70c149b894331958c.js.map
