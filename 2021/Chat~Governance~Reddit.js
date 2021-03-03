@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.571512d70b64f78c855e.js
-// Retrieved at 3/3/2021, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f23869df352428d84472.js
+// Retrieved at 3/3/2021, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1440,11 +1440,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("127813"),
+				buildNumber: r("127821"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1614787688"),
+				})("1614790073"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -1586,6 +1586,9 @@
 		},
 		"./src/graphql/operations/RedditorPowerups.json": function(e) {
 			e.exports = JSON.parse('{"id":"e2bcd0fbaace"}')
+		},
+		"./src/graphql/operations/ReportMessage.json": function(e) {
+			e.exports = JSON.parse('{"id":"ae01229e1caa"}')
 		},
 		"./src/graphql/operations/RichTextPostContent.json": function(e) {
 			e.exports = JSON.parse('{"id":"fc24b7b690ad"}')
@@ -3595,14 +3598,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c7d2c1170f1aa63b750cf0683827c1409e5a46cc7-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c8f73528804a23a4c36b6125d44fd5e336a147031-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7d2c1170f1aa63b750cf0683827c1409e5a46cc7-production",
+						release: "8f73528804a23a4c36b6125d44fd5e336a147031-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4040,7 +4043,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "7d2c1170f1aa63b750cf0683827c1409e5a46cc7-production",
+						releaseClient: "8f73528804a23a4c36b6125d44fd5e336a147031-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -12289,45 +12292,45 @@
 		"./src/reddit/actions/subreddit.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "m", (function() {
-				return K
+				return H
 			})), i.d(t, "l", (function() {
-				return Q
+				return $
 			})), i.d(t, "k", (function() {
-				return Y
+				return z
 			})), i.d(t, "j", (function() {
-				return J
+				return K
 			})), i.d(t, "i", (function() {
-				return X
+				return Q
 			})), i.d(t, "h", (function() {
-				return Z
+				return Y
 			})), i.d(t, "d", (function() {
-				return ee
+				return J
 			})), i.d(t, "p", (function() {
-				return re
+				return te
 			})), i.d(t, "o", (function() {
-				return ae
+				return se
 			})), i.d(t, "r", (function() {
-				return ue
+				return ae
 			})), i.d(t, "g", (function() {
-				return _e
+				return le
 			})), i.d(t, "f", (function() {
-				return pe
+				return ce
 			})), i.d(t, "e", (function() {
-				return me
+				return ue
 			})), i.d(t, "q", (function() {
-				return ge
+				return he
 			})), i.d(t, "b", (function() {
-				return we
+				return be
 			})), i.d(t, "c", (function() {
-				return ye
+				return fe
 			})), i.d(t, "a", (function() {
-				return ve
+				return ge
 			})), i.d(t, "t", (function() {
-				return Oe
+				return Ee
 			})), i.d(t, "n", (function() {
-				return Ie
+				return Se
 			})), i.d(t, "s", (function() {
-				return je
+				return Te
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./node_modules/lodash/pick.js"),
@@ -12351,81 +12354,78 @@
 				E = i("./src/reddit/constants/postLayout.ts"),
 				S = i("./src/reddit/contexts/PageLayer/index.tsx"),
 				T = i("./src/reddit/endpoints/governance/posts.ts"),
-				O = i("./src/lib/makeApiRequest/index.ts"),
-				I = i("./src/lib/omitHeaders/index.ts"),
-				j = i("./src/reddit/constants/headers.ts"),
-				F = i("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			var R = i("./src/reddit/endpoints/modQueue/index.ts"),
-				x = i("./src/reddit/endpoints/page/subredditPage.ts"),
-				C = i("./src/reddit/endpoints/subreddit/about.ts"),
-				D = i("./src/reddit/endpoints/subreddit/rules.ts"),
-				N = i("./src/reddit/endpoints/user/preferences.ts"),
-				A = i("./src/reddit/helpers/filterListingResponse/index.ts"),
-				P = i("./src/reddit/helpers/getSubredditSortForListingKeyCreation/index.ts"),
-				k = i("./src/reddit/helpers/graphql/normalizeSubredditAboutFromGql/index.ts"),
-				B = i("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
-				L = i("./src/reddit/models/Subreddit/index.ts"),
-				U = i("./src/reddit/models/Toast/index.ts"),
-				M = i("./src/reddit/models/User/index.ts"),
-				G = i("./src/reddit/selectors/experiments/index.ts"),
-				q = i("./src/reddit/selectors/experiments/gqlSubredditPage.ts"),
-				V = i("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				W = i("./src/reddit/selectors/profile.ts"),
-				H = i("./src/reddit/selectors/subreddit.ts"),
-				$ = i("./src/reddit/selectors/user.ts");
-			const z = {},
-				K = "SUBREDDIT__MODEL_SUCCEEDED",
-				Q = "SUBREDDIT__MODEL_PENDING",
-				Y = "SUBREDDIT__MODEL_FAILED",
-				J = "SUBREDDIT__MORE_POSTS_PENDING",
-				X = "SUBREDDIT__MORE_POSTS_LOADED",
-				Z = "SUBREDDIT__MORE_POSTS_FAILED",
-				ee = "SUBREDDIT__META_FILTER_TOGGLED",
+				O = i("./src/reddit/endpoints/messages/index.ts"),
+				I = i("./src/reddit/endpoints/modQueue/index.ts"),
+				j = i("./src/reddit/endpoints/page/subredditPage.ts"),
+				F = i("./src/reddit/endpoints/subreddit/about.ts"),
+				R = i("./src/reddit/endpoints/subreddit/rules.ts"),
+				x = i("./src/reddit/endpoints/user/preferences.ts"),
+				C = i("./src/reddit/helpers/filterListingResponse/index.ts"),
+				D = i("./src/reddit/helpers/getSubredditSortForListingKeyCreation/index.ts"),
+				N = i("./src/reddit/helpers/graphql/normalizeSubredditAboutFromGql/index.ts"),
+				A = i("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				P = i("./src/reddit/models/Subreddit/index.ts"),
+				k = i("./src/reddit/models/Toast/index.ts"),
+				B = i("./src/reddit/models/User/index.ts"),
+				L = i("./src/reddit/selectors/experiments/index.ts"),
+				U = i("./src/reddit/selectors/experiments/gqlSubredditPage.ts"),
+				M = i("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				G = i("./src/reddit/selectors/profile.ts"),
+				q = i("./src/reddit/selectors/subreddit.ts"),
+				V = i("./src/reddit/selectors/user.ts");
+			const W = {},
+				H = "SUBREDDIT__MODEL_SUCCEEDED",
+				$ = "SUBREDDIT__MODEL_PENDING",
+				z = "SUBREDDIT__MODEL_FAILED",
+				K = "SUBREDDIT__MORE_POSTS_PENDING",
+				Q = "SUBREDDIT__MORE_POSTS_LOADED",
+				Y = "SUBREDDIT__MORE_POSTS_FAILED",
+				J = "SUBREDDIT__META_FILTER_TOGGLED",
+				X = Object(a.a)(K),
+				Z = Object(a.a)(Q),
+				ee = Object(a.a)(Y),
 				te = Object(a.a)(J),
-				ie = Object(a.a)(X),
-				ne = Object(a.a)(Z),
-				re = Object(a.a)(ee),
-				se = Object(a.a)(h.b),
-				oe = Object(a.a)(h.c),
-				de = Object(a.a)(h.a),
-				ae = (e, t) => async (i, n) => {
-					await (t === L.e.User ? i(le(e)) : i(ce(e)))
-				}, le = e => async (t, i, {
+				ie = Object(a.a)(h.b),
+				ne = Object(a.a)(h.c),
+				re = Object(a.a)(h.a),
+				se = (e, t) => async (i, n) => {
+					await (t === P.e.User ? i(oe(e)) : i(de(e)))
+				}, oe = e => async (t, i, {
 					apiContext: n
 				}) => {
-					const r = Object(W.m)(i(), e),
-						s = await Object(D.c)(n(), e);
+					const r = Object(G.m)(i(), e),
+						s = await Object(R.c)(n(), e);
 					if (s.ok) {
 						const e = s.body;
-						t(se({
+						t(ie({
 							rules: e,
 							subredditId: r
 						}))
 					}
-				}, ce = e => async (t, i, {
+				}, de = e => async (t, i, {
 					gqlContext: r
 				}) => {
-					const s = Object(H.F)(i(), e);
-					t(oe());
-					const o = await Object(D.b)(r(), e);
+					const s = Object(q.F)(i(), e);
+					t(ne());
+					const o = await Object(R.b)(r(), e);
 					if (o.ok) {
 						const e = o.body;
-						t(se({
+						t(ie({
 							rules: e,
 							subredditId: s
 						}))
 					} else {
-						t(de());
+						t(re());
 						const i = `error-block-${e}`;
 						t(b.e({
 							id: i,
-							kind: U.b.Error,
+							kind: k.b.Error,
 							text: n.fbt._("An error has occurred. Please try again later", null, {
 								hk: "Elbdz"
 							})
 						}))
 					}
-				}, ue = e => async (t, i, {
+				}, ae = e => async (t, i, {
 					apiContext: n,
 					gqlContext: r
 				}) => {
@@ -12434,7 +12434,7 @@
 					} = e;
 					let _ = e.t;
 					const p = i(),
-						m = Object(P.a)(e, p),
+						m = Object(D.a)(e, p),
 						h = p.platform.currentPage ? p.platform.currentPage.queryParams : {},
 						b = Object(l.a)(a, m, {
 							t: _,
@@ -12447,18 +12447,18 @@
 						const e = Object(d.d)(O.sort);
 						I = e.sort, _ = e.timeSort
 					}
-					const j = p.listings.postOrder.api.pending[b],
+					const F = p.listings.postOrder.api.pending[b],
 						{
-							fetchedTokens: F
+							fetchedTokens: R
 						} = p.listings.postOrder,
-						R = !(!F[b] || !F[b][w.token]);
-					if (j || R) return;
+						x = !(!R[b] || !R[b][w.token]);
+					if (F || x) return;
 					if (I === o.P.AWARDED && a === y.f) return;
-					t(te({
+					t(X({
 						key: b,
 						fetchedToken: w.token
 					}));
-					const C = {
+					const N = {
 						after: w.token,
 						dist: w.dist,
 						layout: E.e[Object(S.N)(p, {})],
@@ -12466,38 +12466,38 @@
 						t: _,
 						...s()(h, [...v.l, v.h])
 					};
-					if (!C[v.h]) {
-						const e = Object($.I)(p) || Object($.J)(p) ? p.user.prefs.geopopular : p.meta.country;
-						C[v.h] = e
+					if (!N[v.h]) {
+						const e = Object(V.I)(p) || Object(V.J)(p) ? p.user.prefs.geopopular : p.meta.country;
+						N[v.h] = e
 					}
-					const D = Object(q.a)(p) ? () => Object(x.b)(r(), Object(x.c)(p, a, {
-							...C,
+					const A = Object(U.a)(p) ? () => Object(j.b)(r(), Object(j.c)(p, a, {
+							...N,
 							limit: E.a
-						}), Object($.Q)(p)) : () => Object(x.a)(n(), a, C),
-						N = await D(),
+						}), Object(V.Q)(p)) : () => Object(j.a)(n(), a, N),
+						P = await A(),
 						k = {
-							...N.body,
-							...Object(A.a)(p, b, N.body)
+							...P.body,
+							...Object(C.a)(p, b, P.body)
 						};
-					if (N.ok) {
+					if (P.ok) {
 						let e;
 						const r = k.postIds.filter(e => !!k.posts[e].isMeta),
-							s = Object(H.F)(i(), a);
+							s = Object(q.F)(i(), a);
 						if (r.length) {
 							const t = await Object(T.a)(n(), s, r);
 							t.ok && (e = t.body)
 						}
-						if (t(ie({
+						if (t(Z({
 								fetchedToken: w.token,
 								key: b,
 								meta: p.meta,
 								governance: e,
 								...k
-							})), Object(V.b)(p)) {
+							})), Object(M.b)(p)) {
 							const {
 								postIds: e,
 								posts: i
-							} = k, n = Object(G.d)(p, {
+							} = k, n = Object(L.d)(p, {
 								experimentName: g.oc
 							});
 							t(Object(c.a)(Object(f.c)(e, i, null == n ? void 0 : n.variant)))
@@ -12507,87 +12507,83 @@
 							postIds: k.postIds,
 							skip: ["communityDetails", "subscription"]
 						}))
-					} else t(ne({
-						error: N.error,
+					} else t(ee({
+						error: P.error,
 						fetchedToken: w.token,
 						key: b,
 						...k
 					}))
-				}, _e = "SUBSCRIPTION__MODERATED_SUBREDDITS_PENDING", pe = "SUBSCRIPTION__MODERATED_SUBREDDITS_LOADED", me = "SUBSCRIPTION__MODERATED_SUBREDDITS_FAILED", he = Object(a.a)(_e), be = Object(a.a)(pe), fe = Object(a.a)(me), ge = () => async (e, t, {
+				}, le = "SUBSCRIPTION__MODERATED_SUBREDDITS_PENDING", ce = "SUBSCRIPTION__MODERATED_SUBREDDITS_LOADED", ue = "SUBSCRIPTION__MODERATED_SUBREDDITS_FAILED", _e = Object(a.a)(le), pe = Object(a.a)(ce), me = Object(a.a)(ue), he = () => async (e, t, {
 					apiContext: i
 				}) => {
 					const n = t();
 					if (!n.user.account || n.subreddits.moderated.api.fetched) return;
-					e(he());
-					const r = await Object(R.b)(i(), o.jb.Modqueue, {
+					e(_e());
+					const r = await Object(I.b)(i(), o.jb.Modqueue, {
 						moderated: !0,
 						moderated_limit: 50
 					});
-					r.ok ? e(be(r.body)) : e(fe({
+					r.ok ? e(pe(r.body)) : e(me({
 						error: r.error
 					}))
-				}, we = "SUBREDDIT__ABOUT_PENDING", ye = "SUBREDDIT__ABOUT_SUCCEEDED", ve = "SUBREDDIT__ABOUT_FAILED", Ee = Object(a.a)(we), Se = Object(a.a)(ye), Te = Object(a.a)(ve), Oe = e => async (t, i, {
+				}, be = "SUBREDDIT__ABOUT_PENDING", fe = "SUBREDDIT__ABOUT_SUCCEEDED", ge = "SUBREDDIT__ABOUT_FAILED", we = Object(a.a)(be), ye = Object(a.a)(fe), ve = Object(a.a)(ge), Ee = e => async (t, i, {
 					gqlContext: n
 				}) => {
 					const r = i();
-					if (Object(H.x)(r, {
+					if (Object(q.x)(r, {
 							subredditName: e
 						}) || r.subreddits.api.about.error[e.toLowerCase()] || r.subreddits.api.about.pending[e.toLowerCase()]) return;
-					t(Ee({
+					t(we({
 						subredditName: e
 					}));
-					const s = !Object(H.F)(r, e),
-						o = await Object(C.a)(n(), e, s);
+					const s = !Object(q.F)(r, e),
+						o = await Object(F.a)(n(), e, s);
 					if (o.ok) {
 						const i = o.body.data.subreddit,
-							n = Object(k.a)(i),
-							r = s ? Object(B.a)(i) : void 0;
-						t(Se({
+							n = Object(N.a)(i),
+							r = s ? Object(A.a)(i) : void 0;
+						t(ye({
 							subredditName: e,
 							subreddits: r ? {
 								[r.id]: r
 							} : void 0,
 							data: n
 						}))
-					} else t(Te({
+					} else t(ve({
 						subredditName: e,
 						error: o.error
 					}))
-				}, Ie = (e, t, i) => async (n, r, {
+				}, Se = (e, t, i) => async (n, r, {
 					apiContext: s
 				}) => {
-					const d = Object(H.F)(r(), e.substring(2)),
-						a = Object($.i)(r());
-					if (a) {
-						const r = Object(M.e)(a),
-							l = {
+					const o = Object(q.F)(r(), e.substring(2)),
+						d = Object(V.i)(r());
+					if (d) {
+						const r = Object(B.e)(d),
+							a = {
 								to: `/${e}`,
 								subject: `I would like to join ${e}`,
 								text: t + "\n\n   *To approve this user*, visit [the approved users page for " + e + "](https://www.reddit.com/" + e + "/about/contributors?user=" + r + ') and click "ADD USER".\n    Approving this user gives them permission to ' + i + ". You can change these community restrictions from the [community settings](/" + e + "/about/edit) page.\n\n   To get more information about this user, visit the profile page of [u/" + r + "](/u/" + r + ") or reply to this message to start a conversation."
 							};
-						if ((await ((e, t) => Object(O.a)(Object(I.a)(e, [j.a]), {
-								endpoint: Object(F.a)(`${e.apiUrl}/api/compose`),
-								method: o.cb.POST,
-								data: t
-							}))(s(), l)).ok) {
+						if ((await Object(O.b)(s(), a)).ok) {
 							const e = new Date,
 								t = {
 									isContributorRequestTimestamp: e.setDate(e.getDate())
 								};
 							n(Object(m.E)({
-								subredditId: d,
+								subredditId: o,
 								prefs: t
-							})), Object(N.h)(d, t, s()), n(Object(_.i)(w.a.CONTRIBUTOR_REQUEST_PENDING))
+							})), Object(x.h)(o, t, s()), n(Object(_.i)(w.a.CONTRIBUTOR_REQUEST_PENDING))
 						}
 					}
-				}, je = e => async (t, i) => {
+				}, Te = e => async (t, i) => {
 					const n = i(),
 						{
 							subredditName: r
 						} = e,
 						s = e.t,
-						o = Object(P.a)(e, n),
-						d = n.platform.currentPage ? n.platform.currentPage.queryParams : z,
+						o = Object(D.a)(e, n),
+						d = n.platform.currentPage ? n.platform.currentPage.queryParams : W,
 						a = Object(l.a)(r, o, {
 							t: s,
 							...d
@@ -18316,6 +18312,30 @@
 					}
 				})
 			}
+		},
+		"./src/reddit/endpoints/messages/index.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "b", (function() {
+				return c
+			})), i.d(t, "a", (function() {
+				return u
+			}));
+			var n = i("./src/graphql/operations/ReportMessage.json"),
+				r = i("./src/lib/constants/index.ts"),
+				s = i("./src/lib/makeApiRequest/index.ts"),
+				o = i("./src/lib/makeGqlRequest/index.ts"),
+				d = i("./src/lib/omitHeaders/index.ts"),
+				a = i("./src/reddit/constants/headers.ts"),
+				l = i("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const c = (e, t) => Object(s.a)(Object(d.a)(e, [a.a]), {
+					endpoint: Object(l.a)(`${e.apiUrl}/api/compose`),
+					method: r.cb.POST,
+					data: t
+				}),
+				u = (e, t) => Object(o.a)(e, {
+					...n,
+					variables: t
+				})
 		},
 		"./src/reddit/endpoints/modQueue/index.ts": function(e, t, i) {
 			"use strict";
@@ -43989,4 +44009,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.571512d70b64f78c855e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f23869df352428d84472.js.map

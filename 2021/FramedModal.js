@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.4e3b377e21235c7bcb12.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.f4b63472cbf0b4410b37.js
+// Retrieved at 3/3/2021, 12:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/async.tsx": function(e, s, t) {
@@ -111,13 +111,13 @@
 				i = t("./node_modules/react/index.js"),
 				n = t.n(i),
 				a = t("./src/lib/extractQueryParams/index.ts"),
-				l = t("./src/lib/postParentMessage/index.ts"),
-				d = t("./src/reddit/pages/FramedModalPage/index.m.less"),
-				c = t.n(d),
+				d = t("./src/lib/postParentMessage/index.ts"),
+				l = t("./src/reddit/pages/FramedModalPage/index.m.less"),
+				c = t.n(l),
 				_ = t("./src/reddit/components/CrisisFlow/async.tsx"),
-				O = t("./src/reddit/components/ReportFlow/new.tsx"),
+				m = t("./src/reddit/components/ReportFlow/new.tsx"),
 				h = t("./src/reddit/models/ReportFlow/index.ts"),
-				m = t("./src/reddit/pages/PaypalFinishPage/async.tsx");
+				O = t("./src/reddit/pages/PaypalFinishPage/async.tsx");
 
 			function p() {
 				return (p = Object.assign || function(e) {
@@ -149,7 +149,7 @@
 					this.parentOrigin = s
 				}
 				postMessage(e) {
-					Object(l.a)(e, E, this.parentOrigin, window.opener || window.parent)
+					Object(d.a)(e, E, this.parentOrigin, window.opener || window.parent)
 				}
 				componentForIframe() {
 					switch (this.modalType) {
@@ -163,16 +163,17 @@
 								postMessage: e => this.postMessage(e)
 							}, this.queryParams));
 						case N.PAYPAL_FINISH:
-							return n.a.createElement(m.a, {
+							return n.a.createElement(O.a, {
 								params: this.queryParams,
 								postMessage: e => this.postMessage(e)
 							});
 						case N.REPORT: {
 							const e = this.queryParams.host_app_name;
-							return n.a.createElement(O.b, {
+							return n.a.createElement(m.b, {
 								hostAppName: h.b.has(e) ? e : void 0,
 								postId: this.queryParams.post_id,
 								commentId: this.queryParams.comment_id,
+								messageId: this.queryParams.message_id,
 								author: this.queryParams.author,
 								onCloseReportModal: () => this.postMessage({
 									type: "close"
@@ -252,4 +253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.4e3b377e21235c7bcb12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.f4b63472cbf0b4410b37.js.map
