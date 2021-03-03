@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.4fbca6f5bf18e3acb800.js
-// Retrieved at 3/1/2021, 6:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.797ad83b42dabb98e032.js
+// Retrieved at 3/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/components/Econ/Common/NewIcon/index.m.less": function(e, t, o) {
@@ -13,16 +13,16 @@
 				return l
 			}));
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s),
-				n = o("./src/lib/classNames/index.ts"),
+				n = o.n(s),
+				i = o("./src/lib/classNames/index.ts"),
 				r = o("./src/reddit/components/Econ/Common/NewIcon/index.m.less"),
 				c = o.n(r);
 			const {
 				fbt: a
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), l = ({
 				className: e
-			}) => i.a.createElement("span", {
-				className: Object(n.a)(c.a.new, e)
+			}) => n.a.createElement("span", {
+				className: Object(i.a)(c.a.new, e)
 			}, a._("NEW", null, {
 				hk: "2P5bsM"
 			}))
@@ -30,27 +30,27 @@
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, o) {
 			"use strict";
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s),
-				n = o("./src/lib/classNames/index.ts"),
+				n = o.n(s),
+				i = o("./src/lib/classNames/index.ts"),
 				r = o("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
 				c = o("./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts"),
 				a = o("./src/reddit/icons/svgs/Close/index.tsx"),
 				l = o("./src/reddit/components/RichTextEditor/emotes/tooltipHeader.m.less"),
 				d = o.n(l);
-			const m = ({
+			const u = ({
 				title: e,
 				onClickClose: t
-			}) => i.a.createElement("div", {
+			}) => n.a.createElement("div", {
 				className: d.a.header
-			}, e, i.a.createElement("div", {
+			}, e, n.a.createElement("div", {
 				className: d.a.spacer
-			}), i.a.createElement(a.a, {
+			}), n.a.createElement(a.a, {
 				className: d.a.closeIcon,
 				onClick: t
 			}));
-			var p = o("./src/reddit/components/RichTextEditor/emotes/baseTooltip.m.less"),
-				u = o.n(p);
-			class b extends i.a.Component {
+			var m = o("./src/reddit/components/RichTextEditor/emotes/baseTooltip.m.less"),
+				p = o.n(m);
+			class b extends n.a.Component {
 				constructor() {
 					super(...arguments), this.updateTooltipPosition = null, this.closeTooltip = () => {
 						this.props.setIsVisible(!1)
@@ -96,13 +96,13 @@
 					})
 				}
 				render() {
-					return i.a.createElement(r.b, {
+					return n.a.createElement(r.b, {
 						className: this.props.className,
 						onSetPositionUpdater: e => this.updateTooltipPosition = e,
 						trianglePlacement: r.a.Below
-					}, this.props.isVisible && i.a.createElement("div", {
-						className: Object(n.a)(u.a.tooltip, this.props.bodyClassName)
-					}, i.a.createElement(m, {
+					}, this.props.isVisible && n.a.createElement("div", {
+						className: Object(i.a)(p.a.tooltip, this.props.bodyClassName)
+					}, n.a.createElement(u, {
 						title: this.props.title,
 						onClickClose: this.closeTooltip
 					}), this.props.children))
@@ -116,8 +116,8 @@
 				return a
 			}));
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s),
-				n = o("./src/lib/classNames/index.ts"),
+				n = o.n(s),
+				i = o("./src/lib/classNames/index.ts"),
 				r = o("./src/reddit/components/RichTextEditor/emotes/emoteButton.m.less"),
 				c = o.n(r);
 			const a = ({
@@ -128,15 +128,15 @@
 				onClick: r,
 				onKeyDown: a,
 				title: l
-			}) => i.a.createElement("button", {
-				className: Object(n.a)(c.a.emoteButton, e),
+			}) => n.a.createElement("button", {
+				className: Object(i.a)(c.a.emoteButton, e),
 				disabled: t,
 				id: o,
 				title: l,
 				onClick: r,
 				onKeyDown: a,
 				tabIndex: 1
-			}, i.a.createElement("div", {
+			}, n.a.createElement("div", {
 				className: c.a.emoteImage,
 				style: {
 					backgroundImage: `url(${s})`
@@ -147,130 +147,152 @@
 			"use strict";
 			o.r(t);
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
-				i = o("./node_modules/react/index.js"),
-				n = o.n(i),
+				n = o("./node_modules/react/index.js"),
+				i = o.n(n),
 				r = o("./src/reddit/helpers/trackers/powerups.ts"),
 				c = o("./src/reddit/hooks/useTracking.ts"),
 				a = o("./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx"),
 				l = o("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
 				d = o("./node_modules/react-redux/es/index.js"),
-				m = o("./src/lib/classNames/index.ts"),
-				p = o("./src/reddit/actions/gold/powerups.ts"),
-				u = o("./src/reddit/components/Econ/Common/NewIcon/index.tsx"),
+				u = o("./src/lib/classNames/index.ts"),
+				m = o("./src/reddit/actions/gold/powerups.ts"),
+				p = o("./src/reddit/components/Econ/Common/NewIcon/index.tsx"),
 				b = o("./src/reddit/controls/Button/index.tsx"),
-				h = o("./src/reddit/selectors/gold/powerups.ts"),
-				E = o("./src/reddit/selectors/isModeratorOfSubreddit.ts"),
-				k = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
-				w = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
-				x = o.n(w);
-			const T = ({
+				h = o("./src/reddit/icons/svgs/AddSquare/index.tsx"),
+				E = o("./src/reddit/selectors/gold/powerups.ts"),
+				x = o("./src/reddit/selectors/isModeratorOfSubreddit.ts"),
+				w = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
+				f = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
+				k = o.n(f);
+			const _ = ({
 				onEmoteClicked: e,
 				subredditId: t
 			}) => {
-				const o = Object(d.d)(),
-					i = Object(c.a)(),
-					a = Object(d.e)(e => !!t && Object(E.a)(e, {
+				const o = Object(n.useRef)(null),
+					a = Object(d.d)(),
+					l = Object(c.a)(),
+					f = Object(d.e)(e => !!t && Object(x.a)(e, {
 						subredditId: t
 					})),
-					l = Object(d.e)(e => Object(h.n)(e, {
+					_ = Object(d.e)(e => Object(E.n)(e, {
 						subredditId: t
 					})),
-					w = Object(d.e)(e => Object(h.g)(e, {
+					j = Object(d.e)(e => Object(E.g)(e, {
 						subredditId: t
 					})),
-					T = Object(d.e)(e => Object(h.h)(e, {
+					T = Object(d.e)(e => Object(E.h)(e, {
 						subredditId: t
 					})),
-					_ = l ? s.fbt._("Your community has been powered up with emojis.", null, {
+					I = _ ? s.fbt._("Your community has been powered up with emojis.", null, {
 						hk: "1S9hhd"
 					}) : s.fbt._("Power up this community to unlock emojis.", null, {
 						hk: "3ol6Ts"
 					}),
-					f = a ? s.fbt._("Images under 128kb with a transparent background work the best.", null, {
+					O = f ? s.fbt._("Images under 128kb with a transparent background work the best.", null, {
 						hk: "c6yXl"
-					}) : _;
-				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", null, n.a.createElement("article", null, n.a.createElement("header", {
-					className: x.a.emotePackTitle
-				}, n.a.createElement("span", null, a ? s.fbt._("Add up to 20 emojis", null, {
+					}) : I;
+				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", null, i.a.createElement("article", null, i.a.createElement("header", {
+					className: k.a.emotePackTitle
+				}, i.a.createElement("span", null, f ? s.fbt._("Add up to 20 emojis", null, {
 					hk: "4kR3Q8"
 				}) : s.fbt._("Custom emojis", null, {
 					hk: "3K8KMy"
-				})), n.a.createElement(u.a, {
-					className: x.a.newIcon
-				})), n.a.createElement("header", {
-					className: x.a.emotePackSubtitle
-				}, f), n.a.createElement("div", {
-					className: Object(m.a)(x.a.emotes, {
-						[x.a.disabled]: !l
+				})), i.a.createElement(p.a, {
+					className: k.a.newIcon
+				})), i.a.createElement("header", {
+					className: k.a.emotePackSubtitle
+				}, O), i.a.createElement("div", {
+					className: Object(u.a)(k.a.emotes, {
+						[k.a.disabled]: !_
 					})
-				}, w.map(t => n.a.createElement(k.a, {
+				}, f && i.a.createElement(i.a.Fragment, null, i.a.createElement("input", {
+					ref: o,
+					className: k.a.uploadInput,
+					type: "file",
+					accept: "image/png,image/jpeg",
+					multiple: !0
+				}), i.a.createElement("button", {
+					className: Object(u.a)(k.a.emoteButton, k.a.addButton),
+					onClick: () => {
+						var e;
+						l(Object(r.a)()), null === (e = o.current) || void 0 === e || e.click()
+					},
+					title: s.fbt._("Add Custom Emoji", null, {
+						hk: "M580t"
+					})
+				}, i.a.createElement(h.a, {
+					className: k.a.addIcon
+				}))), j.map(t => i.a.createElement(w.a, {
 					key: t.id,
-					className: x.a.emoteButton,
+					className: k.a.emoteButton,
 					imagePath: t.emoji.path,
 					title: t.id,
 					onClick: () => e(t)
-				})))), n.a.createElement("article", {
-					className: x.a.freeEmotePack
-				}, n.a.createElement("header", {
-					className: x.a.emotePackTitle
+				})))), i.a.createElement("article", {
+					className: k.a.freeEmotePack
+				}, i.a.createElement("header", {
+					className: k.a.emotePackTitle
 				}, s.fbt._("Reddit emojis", null, {
 					hk: "2k2TMN"
-				})), n.a.createElement("div", {
-					className: Object(m.a)(x.a.emotes, {
-						[x.a.disabled]: !l
+				})), i.a.createElement("div", {
+					className: Object(u.a)(k.a.emotes, {
+						[k.a.disabled]: !_
 					})
-				}, T.map(t => n.a.createElement(k.a, {
+				}, T.map(t => i.a.createElement(w.a, {
 					key: t.id,
-					className: x.a.emoteButton,
+					className: k.a.emoteButton,
 					imagePath: t.emoji.path,
 					title: t.id,
 					onClick: () => e(t),
-					disabled: !l
-				}))))), !l && n.a.createElement(b.q, {
-					className: x.a.unlockButton,
+					disabled: !_
+				}))))), !_ && i.a.createElement(b.q, {
+					className: k.a.unlockButton,
 					onClick: () => {
-						i(Object(r.g)()), o(Object(p.b)())
+						l(Object(r.h)()), a(Object(m.b)())
 					},
 					priority: b.b.Primary
 				}, s.fbt._("Unlock Emojis", null, {
 					hk: "44jXM7"
 				})))
 			};
-			var _ = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
-				f = o.n(_);
+			var j = o("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltip.m.less"),
+				T = o.n(j);
 			t.default = ({
 				editorState: e,
 				onChange: t,
 				onSetApi: o,
 				subreddit: d
 			}) => {
-				const m = Object(c.a)(),
-					[p, u] = Object(i.useState)(!1);
-				Object(i.useEffect)(() => {
-					p && m(Object(r.c)())
-				}, [p, m]);
-				return n.a.createElement(a.a, {
-					className: f.a.toolbarTooltip,
-					bodyClassName: f.a.tooltipBody,
-					isVisible: p,
-					setIsVisible: u,
+				const u = Object(c.a)(),
+					[m, p] = Object(n.useState)(!1);
+				Object(n.useEffect)(() => {
+					m && u(Object(r.d)())
+				}, [m, u]);
+				return i.a.createElement(a.a, {
+					className: T.a.toolbarTooltip,
+					bodyClassName: T.a.tooltipBody,
+					isVisible: m,
+					setIsVisible: p,
 					onSetApi: o,
 					title: s.fbt._("r/{communityName} Emojis", [s.fbt._param("communityName", d.name)], {
 						hk: "3OrFxB"
 					})
-				}, n.a.createElement("div", {
-					className: f.a.body
-				}, n.a.createElement(T, {
+				}, i.a.createElement("div", {
+					className: T.a.body
+				}, i.a.createElement(_, {
 					subredditId: d.id,
 					onEmoteClicked: o => {
 						const s = Object(l.g)(o, e);
-						t(s), u(!1)
+						t(s), p(!1)
 					}
 				})))
 			}
 		},
 		"./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less": function(e, t, o) {
 			e.exports = {
+				addButton: "_131SsHx6UfUQsBbPHh8m1D",
+				addIcon: "R3xFUrQvsMx3gn2gqGv0w",
+				uploadInput: "_183AY4WVSatH9Qe_MAXDE-",
 				emoteButton: "_2s68zj-4Pb6nTX2IUDzLkz",
 				emotePackTitle: "_2ukOHQG9KkBde1ztDLudOP",
 				newIcon: "_3_QvdlHkxRkqBb9ZNRQZXx",
@@ -308,32 +330,34 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, o) {
 			"use strict";
-			o.d(t, "h", (function() {
+			o.d(t, "i", (function() {
 				return r
-			})), o.d(t, "f", (function() {
-				return c
-			})), o.d(t, "e", (function() {
-				return a
-			})), o.d(t, "d", (function() {
-				return l
-			})), o.d(t, "a", (function() {
-				return d
-			})), o.d(t, "b", (function() {
-				return m
 			})), o.d(t, "g", (function() {
-				return p
+				return c
+			})), o.d(t, "f", (function() {
+				return a
+			})), o.d(t, "e", (function() {
+				return l
+			})), o.d(t, "b", (function() {
+				return d
 			})), o.d(t, "c", (function() {
 				return u
+			})), o.d(t, "h", (function() {
+				return m
+			})), o.d(t, "d", (function() {
+				return p
+			})), o.d(t, "a", (function() {
+				return b
 			}));
 			var s = o("./src/reddit/helpers/correlationIdTracker.ts"),
-				i = o("./src/reddit/selectors/telemetry.ts");
-			const n = (e, t, o) => ({
-					...i.defaults(e),
+				n = o("./src/reddit/selectors/telemetry.ts");
+			const i = (e, t, o) => ({
+					...n.defaults(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !1),
-					profile: i.profile(e),
-					subreddit: i.subreddit(e),
+					profile: n.profile(e),
+					subreddit: n.subreddit(e),
 					powerups: {
-						...i.subredditPowerups(e),
+						...n.subredditPowerups(e),
 						freeCount: t,
 						paidCount: o
 					}
@@ -342,57 +366,94 @@
 					source: e,
 					action: "click",
 					noun: "powerups_user_badge",
-					...n(t),
+					...i(t),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
 				c = () => e => ({
 					source: "postlist",
 					action: "click",
 					noun: "powerups_supporters_cta",
-					...n(e),
+					...i(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
 				a = () => e => ({
 					source: "powerups",
 					action: "view",
 					noun: "post_upsell",
-					...n(e),
+					...i(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
 				l = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "post_upsell",
-					...n(e),
+					...i(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
 				d = (e, t) => o => ({
 					source: "powerups_modal",
 					action: "click",
 					noun: "benefit",
-					...n(o, e, t)
+					...i(o, e, t)
 				}),
-				m = (e, t) => o => ({
+				u = (e, t) => o => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step",
-					...n(o, e, t)
+					...i(o, e, t)
 				}),
-				p = () => e => ({
+				m = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_emojis",
-					...n(e),
+					...i(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				u = () => e => ({
+				p = () => e => ({
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
-					...n(e),
+					...i(e),
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				b = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "add_custom_emojis",
+					...i(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				})
+		},
+		"./src/reddit/icons/svgs/AddSquare/index.tsx": function(e, t, o) {
+			"use strict";
+			o.d(t, "a", (function() {
+				return i
+			}));
+			var s = o("./node_modules/react/index.js"),
+				n = o.n(s);
+
+			function i(e) {
+				return n.a.createElement("svg", {
+					className: e.className,
+					viewBox: "0 0 20 20",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, n.a.createElement("rect", {
+					fill: "transparent",
+					height: "18",
+					rx: "4.5",
+					strokeDasharray: "2 2",
+					strokeLinejoin: "round",
+					strokeWidth: "1",
+					width: "18",
+					x: "1",
+					y: "1"
+				}), n.a.createElement("path", {
+					clipRule: "evenodd",
+					d: "M13 9H11V7C11 6.7235 10.7765 6.5 10.5 6.5H9.5C9.2235 6.5 9 6.7235 9 7V9H7C6.724 9 6.5 9.2235 6.5 9.5V10.5C6.5 10.7765 6.724 11 7 11H9V13C9 13.2765 9.2235 13.5 9.5 13.5H10.5C10.7765 13.5 11 13.2765 11 13V11H13C13.2765 11 13.5 10.7765 13.5 10.5V9.5C13.5 9.2235 13.2765 9 13 9Z",
+					fillRule: "evenodd"
+				}))
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.4fbca6f5bf18e3acb800.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.797ad83b42dabb98e032.js.map

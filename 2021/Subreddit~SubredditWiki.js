@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.824bb86f783a909eb4f9.js
-// Retrieved at 3/3/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.ad88ca4b526aa5d32413.js
+// Retrieved at 3/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4638,22 +4638,24 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "h", (function() {
+			n.d(t, "i", (function() {
 				return a
-			})), n.d(t, "f", (function() {
-				return o
-			})), n.d(t, "e", (function() {
-				return d
-			})), n.d(t, "d", (function() {
-				return c
-			})), n.d(t, "a", (function() {
-				return l
-			})), n.d(t, "b", (function() {
-				return u
 			})), n.d(t, "g", (function() {
-				return m
+				return o
+			})), n.d(t, "f", (function() {
+				return d
+			})), n.d(t, "e", (function() {
+				return c
+			})), n.d(t, "b", (function() {
+				return l
 			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "h", (function() {
+				return m
+			})), n.d(t, "d", (function() {
 				return p
+			})), n.d(t, "a", (function() {
+				return b
 			}));
 			var s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -4719,6 +4721,13 @@
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
+					...i(e),
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				b = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "add_custom_emojis",
 					...i(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				})
@@ -5049,4 +5058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.824bb86f783a909eb4f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.ad88ca4b526aa5d32413.js.map

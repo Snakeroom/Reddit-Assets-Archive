@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.48937097c9a0becdfadb.js
-// Retrieved at 3/1/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.4652f55c735b51d2bdf4.js
+// Retrieved at 3/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -151,34 +151,34 @@
 				w = s("./src/reddit/controls/Button/index.tsx"),
 				_ = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				f = s("./src/config.ts"),
-				E = s("./src/reddit/helpers/trackers/powerups.ts"),
-				k = s("./src/reddit/hooks/useTracking.ts"),
+				k = s("./src/reddit/helpers/trackers/powerups.ts"),
+				E = s("./src/reddit/hooks/useTracking.ts"),
 				h = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				x = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
-				N = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
-				P = s.n(N);
+				P = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
+				N = s.n(P);
 			const {
 				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var O = function(e) {
+			var j = function(e) {
 					const {
 						benefits: t,
 						className: s
-					} = e, n = Object(k.a)(), r = [...t, h.a.HeroStatus];
+					} = e, n = Object(E.a)(), r = [...t, h.a.HeroStatus];
 					return o.a.createElement("div", {
-						className: Object(u.a)(P.a.container, s)
+						className: Object(u.a)(N.a.container, s)
 					}, r.map(e => h.e[e] && o.a.createElement(x.a, {
-						className: P.a.benefit,
+						className: N.a.benefit,
 						description: h.d[e](),
 						iconUrl: `${f.a.assetPath}/img/powerups/${e}_v2.svg`,
 						key: `cell_${e}`,
 						onClick: () => {
-							n(Object(E.a)())
+							n(Object(k.b)())
 						},
 						title: h.e[e]()
 					})))
 				},
-				j = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
+				O = s("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
 				I = s("./src/reddit/components/Econ/PowerupsMarketingModal/index.m.less"),
 				C = s.n(I);
 
@@ -229,14 +229,14 @@
 					className: C.a.container
 				}, o.a.createElement("div", {
 					className: C.a.main
-				}, o.a.createElement(j.a, {
+				}, o.a.createElement(O.a, {
 					title: S._("Powerup {r/community}", [S._param("r/community", a.displayText)], {
 						hk: "2HkBNV"
 					}),
 					subtitle: S._("Unlock perks for the whole community", null, {
 						hk: "faCTq"
 					})
-				}), o.a.createElement(O, {
+				}), o.a.createElement(j, {
 					benefits: p,
 					className: C.a.benefits
 				}), o.a.createElement("h2", {
@@ -288,22 +288,24 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "h", (function() {
+			s.d(t, "i", (function() {
 				return a
-			})), s.d(t, "f", (function() {
-				return c
-			})), s.d(t, "e", (function() {
-				return i
-			})), s.d(t, "d", (function() {
-				return l
-			})), s.d(t, "a", (function() {
-				return d
-			})), s.d(t, "b", (function() {
-				return u
 			})), s.d(t, "g", (function() {
-				return m
+				return c
+			})), s.d(t, "f", (function() {
+				return i
+			})), s.d(t, "e", (function() {
+				return l
+			})), s.d(t, "b", (function() {
+				return d
 			})), s.d(t, "c", (function() {
+				return u
+			})), s.d(t, "h", (function() {
+				return m
+			})), s.d(t, "d", (function() {
 				return p
+			})), s.d(t, "a", (function() {
+				return b
 			}));
 			var n = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				o = s("./src/reddit/selectors/telemetry.ts");
@@ -371,8 +373,15 @@
 					noun: "emote_picker",
 					...r(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				b = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "add_custom_emojis",
+					...r(e),
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.48937097c9a0becdfadb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.4652f55c735b51d2bdf4.js.map

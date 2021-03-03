@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.9cb8bd212509576e6e83.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.ede632e4d8752e75345b.js
+// Retrieved at 3/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1937,7 +1937,7 @@
 						onMouseEnter: ie.show,
 						onMouseLeave: ie.hide,
 						onClick: () => {
-							F(Object(m.h)(M ? "post" : "postlist")), B(Object(p.b)())
+							F(Object(m.i)(M ? "post" : "postlist")), B(Object(p.b)())
 						},
 						ref: ie.target.ref
 					}, n.a.createElement(A.a, {
@@ -2378,22 +2378,24 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "h", (function() {
+			r.d(t, "i", (function() {
 				return o
-			})), r.d(t, "f", (function() {
-				return i
-			})), r.d(t, "e", (function() {
-				return d
-			})), r.d(t, "d", (function() {
-				return c
-			})), r.d(t, "a", (function() {
-				return l
-			})), r.d(t, "b", (function() {
-				return u
 			})), r.d(t, "g", (function() {
-				return m
+				return i
+			})), r.d(t, "f", (function() {
+				return d
+			})), r.d(t, "e", (function() {
+				return c
+			})), r.d(t, "b", (function() {
+				return l
 			})), r.d(t, "c", (function() {
+				return u
+			})), r.d(t, "h", (function() {
+				return m
+			})), r.d(t, "d", (function() {
 				return p
+			})), r.d(t, "a", (function() {
+				return h
 			}));
 			var s = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				n = r("./src/reddit/selectors/telemetry.ts");
@@ -2459,6 +2461,13 @@
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
+					...a(e),
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				h = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "add_custom_emojis",
 					...a(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				})
@@ -3066,4 +3075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.9cb8bd212509576e6e83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.ede632e4d8752e75345b.js.map
