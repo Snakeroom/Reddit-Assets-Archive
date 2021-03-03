@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.9b6df9584a56819d8450.js
-// Retrieved at 3/3/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.a1a29f80f5b8e71978bd.js
+// Retrieved at 3/3/2021, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -1641,7 +1641,6 @@
 							if (!n) throw new Error("Invalid object type passed to reporting flow");
 							o = n, s = L.Message
 						}
-						if (!r) throw new Error("No author found for reported object.");
 						return {
 							itemId: o,
 							itemType: s,
@@ -2794,4 +2793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.9b6df9584a56819d8450.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.a1a29f80f5b8e71978bd.js.map

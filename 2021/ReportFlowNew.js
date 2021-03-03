@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.96811cfb3a582f4a68cf.js
-// Retrieved at 3/3/2021, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.3f20c25170ada58451a5.js
+// Retrieved at 3/3/2021, 4:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -31,7 +31,7 @@
 			})), o.d(t, "h", (function() {
 				return b
 			})), o.d(t, "g", (function() {
-				return w
+				return _
 			}));
 			var r = o("./src/lib/makeActionCreator/index.ts"),
 				s = o("./src/graphql/operations/FetchBlockedRedditorsInfo.json"),
@@ -53,7 +53,7 @@
 				h = Object(r.a)(l),
 				f = Object(r.a)(p),
 				O = Object(r.a)(u),
-				w = () => async (e, t, {
+				_ = () => async (e, t, {
 					gqlContext: o
 				}) => {
 					const r = t(),
@@ -124,9 +124,9 @@
 			})), o.d(t, "b", (function() {
 				return O
 			})), o.d(t, "c", (function() {
-				return w
-			})), o.d(t, "a", (function() {
 				return _
+			})), o.d(t, "a", (function() {
+				return w
 			})), o.d(t, "g", (function() {
 				return g
 			}));
@@ -175,7 +175,7 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", w = "USER_UNBLOCK__SUCCESS", _ = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(w), j = Object(s.a)(_), g = e => async (t, o, {
+				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), j = Object(s.a)(w), g = e => async (t, o, {
 					apiContext: s
 				}) => {
 					const l = o(),
@@ -276,11 +276,11 @@
 				h = o("./src/reddit/actions/userBlocks.ts"),
 				f = o("./src/graphql/operations/ReportComment.json"),
 				O = o("./src/lib/makeGqlRequest/index.ts");
-			const w = (e, t) => Object(O.a)(e, {
+			const _ = (e, t) => Object(O.a)(e, {
 				...f,
 				variables: t
 			});
-			var _ = o("./src/reddit/endpoints/messages/index.ts"),
+			var w = o("./src/reddit/endpoints/messages/index.ts"),
 				C = o("./src/graphql/operations/ReportPost.json");
 			const R = (e, t) => Object(O.a)(e, {
 				...C,
@@ -390,7 +390,6 @@
 							if (!o) throw new Error("Invalid object type passed to reporting flow");
 							r = o, s = B.Message
 						}
-						if (!n) throw new Error("No author found for reported object.");
 						return {
 							itemId: r,
 							itemType: s,
@@ -457,7 +456,7 @@
 									commentId: n,
 									...p
 								};
-								u = () => w(o(), {
+								u = () => _(o(), {
 									input: t
 								});
 								break;
@@ -466,7 +465,7 @@
 									messageId: n,
 									...p
 								};
-								u = () => Object(_.a)(o(), {
+								u = () => Object(w.a)(o(), {
 									input: r
 								});
 								break;
@@ -663,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.96811cfb3a582f4a68cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.3f20c25170ada58451a5.js.map
