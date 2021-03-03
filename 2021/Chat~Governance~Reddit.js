@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.53b6a9163d282bb05608.js
-// Retrieved at 3/3/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1ae58548448a92c657e5.js
+// Retrieved at 3/3/2021, 4:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -183,9 +183,11 @@
 		},
 		"./src/chat/customMiddleware/containerSize.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "c", (function() {
 				return f
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "b", (function() {
+				return g
+			})), i.d(t, "d", (function() {
 				return w
 			}));
 			var n = i("./node_modules/lodash/once.js"),
@@ -210,7 +212,7 @@
 				}),
 				f = r()(e => {
 					const t = e.getState(),
-						i = Object(u.d)(t),
+						i = Object(u.e)(t),
 						n = t.user.account && t.user.account.id,
 						r = w(n),
 						s = g(n);
@@ -1101,31 +1103,36 @@
 		},
 		"./src/chat/selectors/app.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "c", (function() {
+			i.d(t, "f", (function() {
 				return d
-			})), i.d(t, "b", (function() {
-				return a
-			})), i.d(t, "e", (function() {
-				return l
 			})), i.d(t, "d", (function() {
+				return a
+			})), i.d(t, "c", (function() {
+				return l
+			})), i.d(t, "g", (function() {
 				return c
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "e", (function() {
 				return u
+			})), i.d(t, "b", (function() {
+				return _
+			})), i.d(t, "a", (function() {
+				return p
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./node_modules/lodash/isEmpty.js"),
 				s = i.n(r),
 				o = i("./src/chat/constants/container.ts");
-			const d = e => e.container.size === o.a.EMBED || e.container.size === o.a.FULL,
-				a = e => e.container.size === o.a.EMBED || e.container.size === o.a.MINIMIZED,
-				l = e => !(!e.user.account || u(e) || (e => e.container.size === o.a.HIDDEN)(e) || !_(e)),
-				c = e => window.parent !== window || !!(e && e.meta && e.meta.isRedesign),
-				u = e => {
+			const d = e => e.container.size === o.a.HIDDEN,
+				a = e => e.container.size === o.a.EMBED || e.container.size === o.a.FULL,
+				l = e => e.container.size === o.a.EMBED || e.container.size === o.a.MINIMIZED,
+				c = e => !(!e.user.account || _(e) || d(e) || !p(e)),
+				u = e => window.parent !== window || !!(e && e.meta && e.meta.isRedesign),
+				_ = e => {
 					if (!e.user.account) return n.fbt._("Sign in, please.", null, {
 						hk: "3cGIp8"
 					})
 				},
-				_ = e => !s()(e.user.experiments)
+				p = e => !s()(e.user.experiments)
 		},
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
@@ -1445,11 +1452,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("127892"),
+				buildNumber: r("127895"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1614805844"),
+				})("1614807193"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3603,14 +3610,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %caa71afc8adb7cc644087dfb0eda36ab79b68fc5b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c270290afa67eae77a6f93e07001d285f1441d901-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "aa71afc8adb7cc644087dfb0eda36ab79b68fc5b-production",
+						release: "270290afa67eae77a6f93e07001d285f1441d901-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4059,7 +4066,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "aa71afc8adb7cc644087dfb0eda36ab79b68fc5b-production",
+						releaseClient: "270290afa67eae77a6f93e07001d285f1441d901-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -6134,7 +6141,7 @@
 					const s = Date.now(),
 						o = await Object(n.a)(() => Promise.all([i.e("vendors~Chat~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RedesignChat~RichTextEditor"), i.e("vendors~Chat~RedesignChat"), i.e("Chat~RedesignChat"), i.e("RedesignChat")]).then(i.bind(null, "./src/chat/initializer.ts"))).then(e => e.default);
 					return (await o(t(), s, r)).store
-				})(0, t, r), Object(s.b)(l), Object(o.b)(l), await (async (e, t, r) => {
+				})(0, t, r), Object(s.c)(l), Object(o.b)(l), await (async (e, t, r) => {
 					if (!a) {
 						const s = (await Object(n.a)(() => Promise.all([i.e("vendors~Chat~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RedesignChat~RichTextEditor"), i.e("vendors~Chat~RedesignChat"), i.e("Chat~RedesignChat"), i.e("RedesignChat")]).then(i.bind(null, "./src/reddit/actions/chat/proxy.ts"))).then(e => e.default))(t, r),
 							o = Object(d.b)(e, s);
@@ -6203,7 +6210,7 @@
 			}, f = () => async (e, t) => {
 				const i = t(),
 					n = i.user.account && i.user.account.id || "unknown";
-				Object(o.c)(n) && Object(d.c)(e, t)
+				Object(o.d)(n) && Object(d.c)(e, t)
 			}
 		},
 		"./src/reddit/actions/comment/constants.ts": function(e, t, i) {
@@ -44025,4 +44032,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.53b6a9163d282bb05608.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1ae58548448a92c657e5.js.map

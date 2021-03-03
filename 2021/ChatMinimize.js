@@ -1,21 +1,20 @@
-// https://www.redditstatic.com/desktop2x/ChatMinimize.cd71ccd46c7c0e3fe819.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMinimize.d9055b288c8e61a1d298.js
+// Retrieved at 3/3/2021, 4:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMinimize"], {
-		"./src/chat/pages/Minimize.tsx": function(e, n, t) {
+		"./src/chat/pages/Minimize.tsx": function(n, e, t) {
 			"use strict";
-			t.r(n), t.d(n, "default", (function() {
-				return _
+			t.r(e), t.d(e, "default", (function() {
+				return r
 			}));
-			var s = t("./node_modules/react/index.js"),
-				r = t.n(s),
-				i = t("./src/chat/components/FrameContent/index.tsx");
-			class _ extends r.a.Component {
+			var _ = t("./node_modules/react/index.js"),
+				i = t.n(_);
+			class r extends i.a.Component {
 				render() {
-					return r.a.createElement(i.b, this.props)
+					return null
 				}
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMinimize.cd71ccd46c7c0e3fe819.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMinimize.d9055b288c8e61a1d298.js.map
