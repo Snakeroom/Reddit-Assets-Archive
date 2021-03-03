@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.3ddb435464b84c3ed9cc.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4d9f3f0823d21d3b608f.js
+// Retrieved at 3/3/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -37,24 +37,26 @@
 		},
 		"./src/lib/linkMatchers/index.ts": function(t, e, n) {
 			"use strict";
-			n.d(e, "e", (function() {
+			n.d(e, "f", (function() {
 				return h
-			})), n.d(e, "d", (function() {
+			})), n.d(e, "e", (function() {
 				return m
-			})), n.d(e, "f", (function() {
+			})), n.d(e, "g", (function() {
 				return g
-			})), n.d(e, "i", (function() {
+			})), n.d(e, "j", (function() {
 				return f
 			})), n.d(e, "a", (function() {
 				return b
 			})), n.d(e, "b", (function() {
-				return E
+				return y
 			})), n.d(e, "c", (function() {
 				return x
-			})), n.d(e, "g", (function() {
+			})), n.d(e, "d", (function() {
 				return S
 			})), n.d(e, "h", (function() {
 				return C
+			})), n.d(e, "i", (function() {
+				return O
 			}));
 			var o = n("./node_modules/linkify-it/index.js"),
 				s = n.n(o),
@@ -84,24 +86,27 @@
 				b = s()().tlds(i.a).set({
 					fuzzyIP: !0
 				}).add(c.g.subreddit.prefix, c.g.subreddit.config).add(c.g.subredditFull.prefix, c.g.subreddit.config).add(c.g.profile.prefix, c.g.profile.config).add(c.g.profileFull.prefix, c.g.profile.config).add(c.g.mention.prefix, c.g.mention.config),
-				y = h.normalize;
+				y = s()().tlds(i.a).set({
+					fuzzyIP: !0
+				}).add(c.g.subreddit.prefix, c.g.subredditFullUrl.config).add(c.g.subredditFull.prefix, c.g.subredditFullUrl.config),
+				E = h.normalize;
 			h.normalize = t => {
-				y.call(h, t), !t.schema && t.url.startsWith("http:") && (t.url = `https:${t.url.slice(5)}`)
+				E.call(h, t), !t.schema && t.url.startsWith("http:") && (t.url = `https:${t.url.slice(5)}`)
 			};
-			const E = (t, e) => {
+			const x = (t, e) => {
 					return (b.match(t) || []).filter(t => {
 						const n = d(t.text);
 						return !n || n && e
 					})
 				},
-				x = t => {
+				S = t => {
 					return [...f.match(t) || [], ...m.match(t) || []].map(t => !d(t.text) && t.text.replace(c.a, "")).filter(t => t)
 				},
-				S = (t, e) => {
+				C = (t, e) => {
 					const n = t.match(e);
 					if (n && 1 === n.length && 0 === n[0].index && n[0].lastIndex === e.length) return n[0]
 				},
-				C = t => {
+				O = t => {
 					const e = h.match(t);
 					if (e && 1 === e.length && 0 === e[0].index) {
 						const n = e[0];
@@ -2330,7 +2335,7 @@
 						l = a.lastIndexOf(" ", c - 1) + 1,
 						p = a.slice(l, c);
 					if (!p) return;
-					const h = s.e.match(p);
+					const h = s.f.match(p);
 					if (!h) return;
 					const m = h[h.length - 1],
 						g = l + m.index,
@@ -4897,7 +4902,7 @@
 					return r.forEach((e, n) => {
 						if (n) {
 							if (e === i.get(n)) return;
-							c = Po(c, n, K.a.SUBREDDIT_LINK, Do.f), c = Po(c, n, K.a.USER_LINK, Do.i), c = Po(c, n, K.a.USER_MENTION, Do.d, t, e => t = e)
+							c = Po(c, n, K.a.SUBREDDIT_LINK, Do.g), c = Po(c, n, K.a.USER_LINK, Do.j), c = Po(c, n, K.a.USER_MENTION, Do.e, t, e => t = e)
 						}
 					}), t.getCurrentContent() === c ? t : (c = c.merge({
 						selectionAfter: t.getCurrentContent().getSelectionAfter(),
@@ -5261,7 +5266,7 @@
 							o = e;
 						return e.forEach(t => {
 							const e = t.getText(),
-								s = Do.e.match(e);
+								s = Do.f.match(e);
 							if (!s) return;
 							let r = t;
 							s.forEach(({
@@ -5326,7 +5331,7 @@
 					super(t), this.focused = !1, this.focusLostTimer = 0, this.textInputElementRef = null, this.urlInputElementRef = null, this.onEdited = () => {
 						const t = this.state.url.trim(),
 							e = rr(t),
-							n = Object(Do.h)(e);
+							n = Object(Do.i)(e);
 						if (!n) return this.setState({
 							isInvalidUrl: !0
 						}), void(this.urlInputElementRef && this.urlInputElementRef.focus());
@@ -5345,7 +5350,7 @@
 						let {
 							isInvalidUrl: n
 						} = this.state;
-						n && Object(Do.g)(Do.e, e) && (n = !1), this.setState({
+						n && Object(Do.h)(Do.f, e) && (n = !1), this.setState({
 							url: e,
 							isInvalidUrl: n
 						})
@@ -5362,7 +5367,7 @@
 					}
 				}
 				componentDidMount() {
-					Object(Do.g)(Do.e, this.state.displayText) ? or(this.textInputElementRef) : or(this.urlInputElementRef)
+					Object(Do.h)(Do.f, this.state.displayText) ? or(this.textInputElementRef) : or(this.urlInputElementRef)
 				}
 				componentWillUnmount() {
 					this.focusLostTimer && clearTimeout(this.focusLostTimer)
@@ -5424,7 +5429,7 @@
 						if (t.getStartKey() !== t.getEndKey()) throw new Error("Selection must be in a single block");
 						return t.isCollapsed() ? "" : e.getBlockForKey(t.getStartKey()).getText().slice(t.getStartOffset(), t.getEndOffset())
 					}(e, t.getCurrentContent());
-					const n = Object(Do.g)(Do.e, s.text);
+					const n = Object(Do.h)(Do.f, s.text);
 					n && (s.url = n.url)
 				}
 				return s
@@ -8590,4 +8595,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.3ddb435464b84c3ed9cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4d9f3f0823d21d3b608f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.50184294dd7cc613bf16.js
-// Retrieved at 3/2/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.d3b1c00f1561bad55d9f.js
+// Retrieved at 3/3/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -524,24 +524,26 @@
 		},
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "f", (function() {
 				return p
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return h
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return b
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return f
 			})), n.d(t, "a", (function() {
 				return _
 			})), n.d(t, "b", (function() {
-				return x
+				return g
 			})), n.d(t, "c", (function() {
 				return y
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "d", (function() {
 				return v
 			})), n.d(t, "h", (function() {
 				return E
+			})), n.d(t, "i", (function() {
+				return k
 			}));
 			var s = n("./node_modules/linkify-it/index.js"),
 				r = n.n(s),
@@ -571,24 +573,27 @@
 				_ = r()().tlds(o.a).set({
 					fuzzyIP: !0
 				}).add(a.g.subreddit.prefix, a.g.subreddit.config).add(a.g.subredditFull.prefix, a.g.subreddit.config).add(a.g.profile.prefix, a.g.profile.config).add(a.g.profileFull.prefix, a.g.profile.config).add(a.g.mention.prefix, a.g.mention.config),
-				g = p.normalize;
+				g = r()().tlds(o.a).set({
+					fuzzyIP: !0
+				}).add(a.g.subreddit.prefix, a.g.subredditFullUrl.config).add(a.g.subredditFull.prefix, a.g.subredditFullUrl.config),
+				x = p.normalize;
 			p.normalize = e => {
-				g.call(p, e), !e.schema && e.url.startsWith("http:") && (e.url = `https:${e.url.slice(5)}`)
+				x.call(p, e), !e.schema && e.url.startsWith("http:") && (e.url = `https:${e.url.slice(5)}`)
 			};
-			const x = (e, t) => {
+			const y = (e, t) => {
 					return (_.match(e) || []).filter(e => {
 						const n = l(e.text);
 						return !n || n && t
 					})
 				},
-				y = e => {
+				v = e => {
 					return [...f.match(e) || [], ...h.match(e) || []].map(e => !l(e.text) && e.text.replace(a.a, "")).filter(e => e)
 				},
-				v = (e, t) => {
+				E = (e, t) => {
 					const n = e.match(t);
 					if (n && 1 === n.length && 0 === n[0].index && n[0].lastIndex === t.length) return n[0]
 				},
-				E = e => {
+				k = e => {
 					const t = p.match(e);
 					if (t && 1 === t.length && 0 === t[0].index) {
 						const n = t[0];
@@ -773,7 +778,7 @@
 			var L = i.a.memo(e => {
 					let t = [e.text];
 					return e.parseMdLinks && (t = C()(t, T)), e.parseRegularLinks && (t = C()(t, e => Array.isArray(e) ? [e] : (e => {
-						const t = j.e.add(O.g.subreddit.prefix, O.g.subreddit.config).match(e);
+						const t = j.f.add(O.g.subreddit.prefix, O.g.subreddit.config).match(e);
 						if (!t) return [e];
 						const n = [];
 						let s = null;
@@ -5376,4 +5381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.50184294dd7cc613bf16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.d3b1c00f1561bad55d9f.js.map

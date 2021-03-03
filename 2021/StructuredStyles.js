@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.4d009d168c1c7a3ddab1.js
-// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.1ac3a16691352b4fbfcb.js
+// Retrieved at 3/3/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -253,24 +253,26 @@
 		},
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "f", (function() {
 				return h
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return p
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return g
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return b
 			})), n.d(t, "a", (function() {
 				return f
 			})), n.d(t, "b", (function() {
-				return x
+				return E
 			})), n.d(t, "c", (function() {
 				return v
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "d", (function() {
 				return _
 			})), n.d(t, "h", (function() {
 				return C
+			})), n.d(t, "i", (function() {
+				return y
 			}));
 			var a = n("./node_modules/linkify-it/index.js"),
 				r = n.n(a),
@@ -300,24 +302,27 @@
 				f = r()().tlds(i.a).set({
 					fuzzyIP: !0
 				}).add(l.g.subreddit.prefix, l.g.subreddit.config).add(l.g.subredditFull.prefix, l.g.subreddit.config).add(l.g.profile.prefix, l.g.profile.config).add(l.g.profileFull.prefix, l.g.profile.config).add(l.g.mention.prefix, l.g.mention.config),
-				E = h.normalize;
+				E = r()().tlds(i.a).set({
+					fuzzyIP: !0
+				}).add(l.g.subreddit.prefix, l.g.subredditFullUrl.config).add(l.g.subredditFull.prefix, l.g.subredditFullUrl.config),
+				x = h.normalize;
 			h.normalize = e => {
-				E.call(h, e), !e.schema && e.url.startsWith("http:") && (e.url = `https:${e.url.slice(5)}`)
+				x.call(h, e), !e.schema && e.url.startsWith("http:") && (e.url = `https:${e.url.slice(5)}`)
 			};
-			const x = (e, t) => {
+			const v = (e, t) => {
 					return (f.match(e) || []).filter(e => {
 						const n = c(e.text);
 						return !n || n && t
 					})
 				},
-				v = e => {
+				_ = e => {
 					return [...b.match(e) || [], ...p.match(e) || []].map(e => !c(e.text) && e.text.replace(l.a, "")).filter(e => e)
 				},
-				_ = (e, t) => {
+				C = (e, t) => {
 					const n = e.match(t);
 					if (n && 1 === n.length && 0 === n[0].index && n[0].lastIndex === t.length) return n[0]
 				},
-				C = e => {
+				y = e => {
 					const t = h.match(e);
 					if (t && 1 === t.length && 0 === t[0].index) {
 						const n = t[0];
@@ -2093,7 +2098,7 @@
 			const Gn = e => {
 					if (!e) return Hn.NoUrl;
 					if (e.length < 4) return Hn.TooShort;
-					const t = Object(Kn.g)(Kn.e, e);
+					const t = Object(Kn.h)(Kn.f, e);
 					return t ? "ftp:" === t.schema ? Hn.Invalid : "mailto:" === t.schema ? Hn.Invalid : Hn.Valid : Hn.Invalid
 				},
 				Zn = 20;
@@ -8478,4 +8483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.4d009d168c1c7a3ddab1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.1ac3a16691352b4fbfcb.js.map

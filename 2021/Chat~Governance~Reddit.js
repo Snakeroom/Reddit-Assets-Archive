@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.43f6a896076625a0bb74.js
-// Retrieved at 3/3/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.207507dde3df5138f611.js
+// Retrieved at 3/3/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -159,7 +159,7 @@
 					e.ADMIN = "system", e.USER = "user", e.PENDING = "pending", e.FILE = "file"
 				}(s || (s = {})),
 				function(e) {
-					e.TEXT = "text", e.POST = "post", e.USER_POST = "userPost", e.EMBED = "embedCollection", e.SNOOMOJI = "snoomoji", e.SUBREDDIT = "subreddit", e.COMMENT = "comment", e.EXTERNAL_LINK = "external-link"
+					e.TEXT = "text", e.POST = "post", e.USER_POST = "userPost", e.EMBED = "embedCollection", e.SNOOMOJI = "snoomoji", e.SUBREDDIT = "subreddit", e.COMMENT = "comment"
 				}(o || (o = {})),
 				function(e) {
 					e.DELETE = "delete", e.REPORT = "report"
@@ -512,23 +512,23 @@
 			})), i.d(t, "getShortChannelUrl", (function() {
 				return h
 			})), i.d(t, "inviteMessageActionUrl", (function() {
-				return f
-			})), i.d(t, "messageActionUrl", (function() {
 				return g
-			})), i.d(t, "userActionUrl", (function() {
+			})), i.d(t, "messageActionUrl", (function() {
 				return w
-			})), i.d(t, "getSubredditFromUrl", (function() {
+			})), i.d(t, "userActionUrl", (function() {
 				return y
-			})), i.d(t, "viewProfileUrl", (function() {
+			})), i.d(t, "getSubredditFromUrl", (function() {
 				return v
-			})), i.d(t, "getChannelUrl", (function() {
+			})), i.d(t, "isRedditLink", (function() {
 				return E
-			})), i.d(t, "getHostName", (function() {
+			})), i.d(t, "viewProfileUrl", (function() {
 				return S
-			})), i.d(t, "containsSubredditLinkOnly", (function() {
+			})), i.d(t, "viewSubredditUrl", (function() {
 				return T
-			})), i.d(t, "getChatUnitType", (function() {
+			})), i.d(t, "getChannelUrl", (function() {
 				return O
+			})), i.d(t, "getChatUnitType", (function() {
+				return I
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./node_modules/query-string/index.js"),
@@ -543,26 +543,33 @@
 				p = (e, t) => `/chat/${u()}/${e}/${t}`,
 				m = e => `/chat/user_id/${e}`,
 				h = e => `${n.a.shortUrl}/${c}/${e}`;
-			var b;
+			var b, f;
 			! function(e) {
-				e[e.SUBREDDIT_ID = 3] = "SUBREDDIT_ID", e[e.POST_ID = 4] = "POST_ID", e[e.POST_TITLE = 5] = "POST_TITLE", e[e.COMMENT_ID = 6] = "COMMENT_ID"
-			}(b || (b = {}));
-			const f = (e, t, i) => ({
+				e[e.SUBREDDIT_ID = 2] = "SUBREDDIT_ID", e[e.POST_ID = 4] = "POST_ID", e[e.POST_TITLE = 5] = "POST_TITLE", e[e.COMMENT_ID = 6] = "COMMENT_ID"
+			}(b || (b = {})),
+			function(e) {
+				e[e.SUBREDDIT = 0] = "SUBREDDIT", e[e.USER_PROFILE = 1] = "USER_PROFILE"
+			}(f || (f = {}));
+			const g = (e, t, i) => ({
 					pathname: `${p(e,i)}/invite/${t}`,
 					state: {
 						isOverlay: !0
 					}
 				}),
-				g = (e, t, i) => ({
+				w = (e, t, i) => ({
 					pathname: `${p(e,i)}/message/${t}`,
 					state: {
 						isOverlay: !0
 					}
 				}),
-				w = (e, t, i, n) => `${p(e,i)}/user/${t}${n?"?"+Object(r.stringify)(n):""}`,
-				y = e => new RegExp("reddit.com").test(e) ? e.replace(/^.+reddit.com(\/r\/.+?\/).*$/g, "$1") : "",
-				v = e => `${n.a.redditUrl}/user/${e}`,
+				y = (e, t, i, n) => `${p(e,i)}/user/${t}${n?"?"+Object(r.stringify)(n):""}`,
+				v = e => new RegExp("reddit.com").test(e) ? e.replace(/^.+reddit.com(\/r\/.+?\/).*$/g, "$1") : "",
 				E = e => {
+					return new RegExp(`^${n.a.redditUrl}/(r|user|u)/.+($|/)`, "i").test(e)
+				},
+				S = e => e.length ? `${n.a.redditUrl}/user/${e}` : n.a.redditUrl,
+				T = e => e.length ? `${n.a.redditUrl}/r/${e}` : n.a.redditUrl,
+				O = e => {
 					const {
 						channelId: t,
 						channelState: i
@@ -585,17 +592,9 @@
 							return l
 					}
 				},
-				S = () => window.location.hostname,
-				T = e => {
-					return new RegExp(`^https?://${S()}/(r|user)/.+($|/)`, "i").test(e)
-				},
-				O = e => {
-					if (!T(e)) return {
-						type: d.c.TEXT,
-						value: ""
-					};
-					const t = e.replace(new RegExp(`^https?://${S()}/?`, "gi"), "").replace(/\/?\?.+/gi, "").replace(/\/$/gi, "").split("/"),
-						i = "user" === t[0] || "u" === t[0] ? d.c.USER_POST : d.c.POST;
+				I = e => {
+					const t = e.replace(new RegExp(`^${n.a.redditUrl}/?`, "gi"), "").replace(/\/?\?.+/gi, "").replace(/\/$/gi, "").split("/"),
+						i = ("user" === t[0] || "u" === t[0] ? f.USER_PROFILE : f.SUBREDDIT) === f.SUBREDDIT ? d.c.POST : d.c.USER_POST;
 					switch (t.length) {
 						case b.SUBREDDIT_ID:
 							return {
@@ -1312,7 +1311,7 @@
 		},
 		"./src/chat/selectors/messages.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "k", (function() {
+			i.d(t, "l", (function() {
 				return d
 			})), i.d(t, "d", (function() {
 				return l
@@ -1320,24 +1319,28 @@
 				return c
 			})), i.d(t, "b", (function() {
 				return u
-			})), i.d(t, "l", (function() {
-				return _
-			})), i.d(t, "e", (function() {
-				return p
-			})), i.d(t, "f", (function() {
-				return m
-			})), i.d(t, "g", (function() {
-				return h
-			})), i.d(t, "h", (function() {
-				return b
-			})), i.d(t, "i", (function() {
-				return f
-			})), i.d(t, "c", (function() {
-				return g
-			})), i.d(t, "a", (function() {
-				return w
 			})), i.d(t, "m", (function() {
+				return _
+			})), i.d(t, "k", (function() {
+				return p
+			})), i.d(t, "o", (function() {
+				return m
+			})), i.d(t, "e", (function() {
+				return h
+			})), i.d(t, "f", (function() {
+				return b
+			})), i.d(t, "g", (function() {
+				return f
+			})), i.d(t, "h", (function() {
+				return g
+			})), i.d(t, "i", (function() {
+				return w
+			})), i.d(t, "c", (function() {
 				return y
+			})), i.d(t, "a", (function() {
+				return v
+			})), i.d(t, "n", (function() {
+				return E
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/linkMatchers/customLinks.ts"),
@@ -1352,38 +1355,40 @@
 				l = (e, t) => {
 					if (t) return e.messages.models[t]
 				},
-				c = (e, t) => e.messages.richUnits.posts[t],
-				u = (e, t) => e.messages.richUnits.comments[t],
-				_ = (e, t) => e.messages.richUnits.userPosts[t],
-				p = (e, t) => {
+				c = (e, t) => e.messages.richUnits.posts[t.toLowerCase()],
+				u = (e, t) => e.messages.richUnits.comments[t.toLowerCase()],
+				_ = (e, t) => e.messages.richUnits.userPosts[t.toLowerCase()],
+				p = (e, t) => e.messages.richUnits.subreddits[t.toLowerCase()],
+				m = e => e.messages.richUnits.dataReceived,
+				h = (e, t) => {
 					if (t) {
 						let i;
-						return "string" == typeof t && (i = f(e, t)), "number" != typeof t || isNaN(t) || (i = l(e, t)), i && i.messageData
+						return "string" == typeof t && (i = w(e, t)), "number" != typeof t || isNaN(t) || (i = l(e, t)), i && i.messageData
 					}
-				},
-				m = (e, t) => {
-					const i = l(e, t);
-					return i && i.sender
-				},
-				h = (e, t) => {
-					const i = m(e, t);
-					return i && i.userId
 				},
 				b = (e, t) => {
 					const i = l(e, t);
+					return i && i.sender
+				},
+				f = (e, t) => {
+					const i = b(e, t);
+					return i && i.userId
+				},
+				g = (e, t) => {
+					const i = l(e, t);
 					return i && i.messageData.type
 				},
-				f = (e, t) => e.messages.pending[t],
-				g = (e, t) => {
+				w = (e, t) => e.messages.pending[t],
+				y = (e, t) => {
 					const i = Object(s.a)(e);
 					return Object.keys(n.b).map(e => i && t.includes("@" + n.b[e]) && n.b[e]).filter(e => e)
 				},
-				w = e => {
+				v = e => {
 					const t = a(e),
 						i = Object(o.b)(e);
 					return Object(r.a)(t, i)
 				},
-				y = e => {
+				E = e => {
 					const t = a(e);
 					return Object(r.b)(t)
 				}
@@ -1440,11 +1445,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("127866"),
+				buildNumber: r("127873"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1614800896"),
+				})("1614802059"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3598,14 +3603,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c2a1c8a4deeba1af68af95821c12d750aa4d9e93b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce4fc5cb45cad447e7a20f28e89a55115f581e28c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "2a1c8a4deeba1af68af95821c12d750aa4d9e93b-production",
+						release: "e4fc5cb45cad447e7a20f28e89a55115f581e28c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -3822,95 +3827,106 @@
 		"./src/lib/linkMatchers/customLinks.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return s
-			})), i.d(t, "d", (function() {
 				return o
+			})), i.d(t, "d", (function() {
+				return d
 			})), i.d(t, "c", (function() {
-				return l
-			})), i.d(t, "e", (function() {
 				return c
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "e", (function() {
 				return u
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "a", (function() {
 				return _
+			})), i.d(t, "f", (function() {
+				return p
 			}));
-			const n = /\s/,
-				r = (e, t) => (i, r, s) => {
-					if (r > e.length) {
-						const t = i[r - e.length - 1];
-						if (!t.match(n)) {
+			var n = i("./src/config.ts");
+			const r = /\s/,
+				s = (e, t) => (i, n, s) => {
+					if (n > e.length) {
+						const t = i[n - e.length - 1];
+						if (!t.match(r)) {
 							if ("/" !== t) return 0; {
-								const t = r - e.length - 2;
-								if (t >= 0 && !i[t].match(n)) return 0
+								const t = n - e.length - 2;
+								if (t >= 0 && !i[t].match(r)) return 0
 							}
 						}
 					}
-					const o = i.slice(r);
+					const o = i.slice(n);
 					return "" === o || (t.test(o) ? o.match(t)[0].length : 0)
 				};
-			var s, o;
+			var o, d;
 			! function(e) {
 				e.All = "all", e.Here = "here"
-			}(s || (s = {})),
+			}(o || (o = {})),
 			function(e) {
 				e.subreddit = "r/", e.subredditFull = "/r/", e.profile = "u/", e.profileFull = "/u/", e.mention = "@"
-			}(o || (o = {}));
-			const d = new RegExp("^[A-Za-z0-9][A-Za-z0-9_]{0,20}\\b"),
-				a = new RegExp(`^@${s.All}`, "i"),
-				l = new RegExp("^[A-Za-z0-9_-]{0,20}"),
-				c = new RegExp("^/?(u|r)/", "i"),
-				u = new RegExp("^/?(u/|@)", "i"),
-				_ = o.subreddit,
-				p = {
+			}(d || (d = {}));
+			const a = new RegExp("^[A-Za-z0-9][A-Za-z0-9_]{0,20}\\b"),
+				l = new RegExp(`^@${o.All}`, "i"),
+				c = new RegExp("^[A-Za-z0-9_-]{0,20}"),
+				u = new RegExp("^/?(u|r)/", "i"),
+				_ = new RegExp("^/?(u/|@)", "i"),
+				p = d.subreddit,
+				m = {
 					subreddit: {
-						prefix: o.subreddit,
+						prefix: d.subreddit,
 						config: {
-							validate: r(o.subreddit, d),
+							validate: s(d.subreddit, a),
 							normalize(e) {
-								const t = e.url.replace(c, "");
+								const t = e.url.replace(u, "");
 								!t && e.lastIndex--, e.url = "/r/" + t
 							}
 						}
 					},
 					profile: {
-						prefix: o.profile,
+						prefix: d.profile,
 						config: {
-							validate: r(o.profile, l),
+							validate: s(d.profile, c),
 							normalize(e) {
-								const t = e.url.replace(c, "");
+								const t = e.url.replace(u, "");
 								!t && e.lastIndex--, e.url = "/user/" + t
 							}
 						}
 					},
 					mention: {
-						prefix: o.mention,
+						prefix: d.mention,
 						config: {
-							validate: r(o.mention, l),
+							validate: s(d.mention, c),
 							normalize(e) {
-								if (a.test(e.text)) e.url = "";
+								if (l.test(e.text)) e.url = "";
 								else {
-									const t = e.url.replace(u, "");
+									const t = e.url.replace(_, "");
 									!t && e.lastIndex--, e.url = "/user/" + t
 								}
 							}
 						}
-					}
-				},
-				m = {
-					subredditFull: {
-						prefix: o.subredditFull,
-						config: p.subreddit.config
 					},
-					profileFull: {
-						prefix: o.profileFull,
-						config: p.profile.config
+					subredditFullUrl: {
+						prefix: d.subreddit,
+						config: {
+							validate: s(d.subreddit, a),
+							normalize(e) {
+								const t = e.url.replace(u, "");
+								!t && e.lastIndex--, e.url = `${n.a.redditUrl}/r/${t}`
+							}
+						}
 					}
 				},
 				h = {
-					...p,
-					...m
+					subredditFull: {
+						prefix: d.subredditFull,
+						config: m.subreddit.config
+					},
+					profileFull: {
+						prefix: d.profileFull,
+						config: m.profile.config
+					}
+				},
+				b = {
+					...m,
+					...h
 				};
-			t.g = h
+			t.g = b
 		},
 		"./src/lib/listingSort/index.ts": function(e, t, i) {
 			"use strict";
@@ -4043,7 +4059,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "2a1c8a4deeba1af68af95821c12d750aa4d9e93b-production",
+						releaseClient: "e4fc5cb45cad447e7a20f28e89a55115f581e28c-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -44009,4 +44025,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.43f6a896076625a0bb74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.207507dde3df5138f611.js.map

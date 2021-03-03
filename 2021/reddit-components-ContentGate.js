@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.cb8863f1a872c25c4781.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.d7c8f792cc5c4c8b4c79.js
+// Retrieved at 3/3/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -146,7 +146,7 @@
 			var j = o.a.memo(e => {
 					let t = [e.text];
 					return e.parseMdLinks && (t = S()(t, P)), e.parseRegularLinks && (t = S()(t, e => Array.isArray(e) ? [e] : (e => {
-						const t = w.e.add(B.g.subreddit.prefix, B.g.subreddit.config).match(e);
+						const t = w.f.add(B.g.subreddit.prefix, B.g.subreddit.config).match(e);
 						if (!t) return [e];
 						const n = [];
 						let a = null;
@@ -521,4 +521,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.cb8863f1a872c25c4781.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.d7c8f792cc5c4c8b4c79.js.map
