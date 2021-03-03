@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.84a86e426aae9a20faa9.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.40e2612664b69506ebda.js
+// Retrieved at 3/3/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -439,17 +439,17 @@
 		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return u
+				return m
 			})), s.d(t, "a", (function() {
-				return w
-			})), s.d(t, "b", (function() {
 				return _
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return E
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return x
+			})), s.d(t, "e", (function() {
+				return I
 			})), s.d(t, "f", (function() {
-				return C
+				return k
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/query-string/index.js"),
@@ -458,98 +458,101 @@
 				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				i = s("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				c = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				d = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const l = new Set(["home", "r/popular"]),
-				u = e => {
+				d = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				l = s("./src/reddit/selectors/subreddit.ts");
+			const u = new Set(["home", "r/popular"]),
+				m = e => {
 					const t = location && location.search || "",
 						s = n.a.parse(t);
-					l.has(e) && (s.related = e);
+					u.has(e) && (s.related = e);
 					const r = n.a.stringify(s);
 					return r ? `?${r}` : ""
 				},
-				m = Object(a.a)(o.N),
-				h = Object(a.a)(o.y),
-				p = Object(a.a)(o.O),
-				b = Object(a.a)(o.z),
-				v = Object(a.a)(o.M),
-				f = Object(a.a)(o.L),
-				w = Object(a.a)(o.t),
-				_ = Object(a.a)(o.u),
-				E = e => async (t, s, {
+				h = Object(a.a)(o.N),
+				p = Object(a.a)(o.y),
+				b = Object(a.a)(o.O),
+				v = Object(a.a)(o.z),
+				f = Object(a.a)(o.M),
+				w = Object(a.a)(o.L),
+				_ = Object(a.a)(o.t),
+				E = Object(a.a)(o.u),
+				x = e => async (t, s, {
 					gqlContext: r
 				}) => {
 					const n = Object(c.g)(e),
 						a = s();
 					if (Object(d.d)(a, n)) return;
-					t(m(n));
+					t(h(n));
 					const o = await Object(i.e)(r(), n),
 						l = Date.now();
 					if (o.ok && o.body && o.body.data) {
 						const e = o.body.data;
-						t(h({
+						t(p({
 							model: e,
 							utcTimeStamp: l
 						}))
-					} else t(y({
+					} else t(g({
 						streamId: n,
 						error: o.error,
 						utcTimeStamp: l
 					}))
-				}, x = (e, t) => async (s, r) => s(I(e, t)), I = (e, t) => async (s, r, {
+				}, I = (e, t) => async (s, r) => s(C(e, t)), C = (e, t) => async (s, r, {
 					gqlContext: n
 				}) => {
 					const a = r();
 					if (Object(d.f)(a)) return;
-					s(p());
+					s(b());
 					const o = await Object(i.f)(n(), e, t),
 						c = Date.now();
 					if (o.ok && o.body && o.body.data) {
 						const t = o.body.data;
-						s(b({
+						s(v({
 							listingName: e,
 							models: t,
 							utcTimeStamp: c
 						}))
-					} else s(g({
+					} else s(N({
 						error: o.error,
 						utcTimeStamp: c
 					}))
-				}, C = (e, t) => async (s, r) => s(k(e, t)), k = (e, t) => async (s, r, {
+				}, k = (e, t) => async (s, r) => s(y(e, t)), y = (e, t) => async (s, r, {
 					gqlContext: n
 				}) => {
 					const a = r();
 					if (Object(d.f)(a)) return;
-					s(p());
+					s(b());
 					const o = Date.now(),
-						c = await Object(i.b)(n(), {
-							subredditId: e,
+						c = e.replace("r/", ""),
+						u = Object(l.F)(a, c),
+						m = await Object(i.b)(n(), {
+							subredditId: u,
 							options: t
 						}),
-						l = c.body;
-					c.ok && l && l.data || s(g({
-						error: c.error,
+						h = m.body;
+					m.ok && h && h.data || s(N({
+						error: m.error,
 						utcTimeStamp: o
 					}));
-					const u = l.data.liveVideoFeed.posts.edges.map(e => (async (e, t) => {
+					const p = h.data.liveVideoFeed.posts.edges.map(e => (async (e, t) => {
 							const s = await Object(i.e)(e, t),
 								r = Date.now(),
 								n = s.body;
-							return n && n.data ? n.data : void y({
+							return n && n.data ? n.data : void g({
 								streamId: t,
 								error: s.error,
 								utcTimeStamp: r
 							})
 						})(n(), e.node.id)),
-						m = (await Promise.all(u)).filter(e => void 0 !== typeof e);
-					s(b({
+						f = (await Promise.all(p)).filter(e => void 0 !== typeof e);
+					s(v({
 						listingName: e,
-						models: m,
+						models: f,
 						utcTimeStamp: o
 					}))
-				}, y = e => async t => {
-					t(v(e))
 				}, g = e => async t => {
 					t(f(e))
+				}, N = e => async t => {
+					t(w(e))
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -2661,4 +2664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.84a86e426aae9a20faa9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.40e2612664b69506ebda.js.map

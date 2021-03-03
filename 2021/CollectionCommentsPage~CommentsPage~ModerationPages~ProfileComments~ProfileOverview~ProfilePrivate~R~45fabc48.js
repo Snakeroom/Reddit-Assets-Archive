@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.e174e4e2e8168eaa001a.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.4ec79e40bb1c8beaf501.js
+// Retrieved at 3/3/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -662,17 +662,17 @@
 		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return p
+				return u
 			})), s.d(t, "a", (function() {
-				return v
-			})), s.d(t, "b", (function() {
 				return _
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "b", (function() {
 				return O
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return C
+			})), s.d(t, "e", (function() {
+				return g
 			})), s.d(t, "f", (function() {
-				return j
+				return E
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = s("./node_modules/query-string/index.js"),
@@ -681,98 +681,101 @@
 				i = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				c = s("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				a = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				d = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const l = new Set(["home", "r/popular"]),
-				p = e => {
+				d = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				l = s("./src/reddit/selectors/subreddit.ts");
+			const p = new Set(["home", "r/popular"]),
+				u = e => {
 					const t = location && location.search || "",
 						s = n.a.parse(t);
-					l.has(e) && (s.related = e);
+					p.has(e) && (s.related = e);
 					const o = n.a.stringify(s);
 					return o ? `?${o}` : ""
 				},
-				u = Object(r.a)(i.N),
-				m = Object(r.a)(i.y),
-				b = Object(r.a)(i.O),
-				h = Object(r.a)(i.z),
-				x = Object(r.a)(i.M),
-				f = Object(r.a)(i.L),
-				v = Object(r.a)(i.t),
-				_ = Object(r.a)(i.u),
-				O = e => async (t, s, {
+				m = Object(r.a)(i.N),
+				b = Object(r.a)(i.y),
+				h = Object(r.a)(i.O),
+				x = Object(r.a)(i.z),
+				f = Object(r.a)(i.M),
+				v = Object(r.a)(i.L),
+				_ = Object(r.a)(i.t),
+				O = Object(r.a)(i.u),
+				C = e => async (t, s, {
 					gqlContext: o
 				}) => {
 					const n = Object(a.g)(e),
 						r = s();
 					if (Object(d.d)(r, n)) return;
-					t(u(n));
+					t(m(n));
 					const i = await Object(c.e)(o(), n),
 						l = Date.now();
 					if (i.ok && i.body && i.body.data) {
 						const e = i.body.data;
-						t(m({
+						t(b({
 							model: e,
 							utcTimeStamp: l
 						}))
-					} else t(k({
+					} else t(w({
 						streamId: n,
 						error: i.error,
 						utcTimeStamp: l
 					}))
-				}, C = (e, t) => async (s, o) => s(g(e, t)), g = (e, t) => async (s, o, {
+				}, g = (e, t) => async (s, o) => s(j(e, t)), j = (e, t) => async (s, o, {
 					gqlContext: n
 				}) => {
 					const r = o();
 					if (Object(d.f)(r)) return;
-					s(b());
+					s(h());
 					const i = await Object(c.f)(n(), e, t),
 						a = Date.now();
 					if (i.ok && i.body && i.body.data) {
 						const t = i.body.data;
-						s(h({
+						s(x({
 							listingName: e,
 							models: t,
 							utcTimeStamp: a
 						}))
-					} else s(w({
+					} else s(I({
 						error: i.error,
 						utcTimeStamp: a
 					}))
-				}, j = (e, t) => async (s, o) => s(E(e, t)), E = (e, t) => async (s, o, {
+				}, E = (e, t) => async (s, o) => s(k(e, t)), k = (e, t) => async (s, o, {
 					gqlContext: n
 				}) => {
 					const r = o();
 					if (Object(d.f)(r)) return;
-					s(b());
+					s(h());
 					const i = Date.now(),
-						a = await Object(c.b)(n(), {
-							subredditId: e,
+						a = e.replace("r/", ""),
+						p = Object(l.F)(r, a),
+						u = await Object(c.b)(n(), {
+							subredditId: p,
 							options: t
 						}),
-						l = a.body;
-					a.ok && l && l.data || s(w({
-						error: a.error,
+						m = u.body;
+					u.ok && m && m.data || s(I({
+						error: u.error,
 						utcTimeStamp: i
 					}));
-					const p = l.data.liveVideoFeed.posts.edges.map(e => (async (e, t) => {
+					const b = m.data.liveVideoFeed.posts.edges.map(e => (async (e, t) => {
 							const s = await Object(c.e)(e, t),
 								o = Date.now(),
 								n = s.body;
-							return n && n.data ? n.data : void k({
+							return n && n.data ? n.data : void w({
 								streamId: t,
 								error: s.error,
 								utcTimeStamp: o
 							})
 						})(n(), e.node.id)),
-						u = (await Promise.all(p)).filter(e => void 0 !== typeof e);
-					s(h({
+						f = (await Promise.all(b)).filter(e => void 0 !== typeof e);
+					s(x({
 						listingName: e,
-						models: u,
+						models: f,
 						utcTimeStamp: i
 					}))
-				}, k = e => async t => {
-					t(x(e))
 				}, w = e => async t => {
 					t(f(e))
+				}, I = e => async t => {
+					t(v(e))
 				}
 		},
 		"./src/reddit/actions/reportFlow/index.ts": function(e, t, s) {
@@ -4993,4 +4996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.e174e4e2e8168eaa001a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.4ec79e40bb1c8beaf501.js.map
