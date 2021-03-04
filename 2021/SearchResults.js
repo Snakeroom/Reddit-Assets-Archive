@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/SearchResults.88a32c34662007747ee2.js
-// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {

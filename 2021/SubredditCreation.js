@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/SubredditCreation.42eb74a16652d71cca01.js
-// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {

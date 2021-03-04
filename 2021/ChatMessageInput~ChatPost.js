@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.a395bde1c1efe68a8dac.js
-// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
