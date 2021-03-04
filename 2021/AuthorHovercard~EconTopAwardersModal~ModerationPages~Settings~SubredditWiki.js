@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.6cd54971ae38236d7057.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.9a0de8fe13d2c12532b2.js
+// Retrieved at 3/4/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -629,7 +629,7 @@
 						})), e(Object(D.i)(Z.a.MUTE_USER))
 					}
 				}))(ne),
-				ae = r("./src/reddit/actions/userFlair.ts"),
+				ae = r("./src/reddit/actions/userFlair/index.ts"),
 				oe = r("./src/reddit/icons/svgs/Tag/index.tsx"),
 				ie = r("./src/reddit/components/Hovercards/AuthorHovercard/ModFlairActions.m.less"),
 				ce = r.n(ie);
@@ -637,7 +637,7 @@
 				fbt: de
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), le = E.a.wrapped(oe.a, "FlairIcon", ce.a);
 			var ue = Object(a.b)(null, (e, t) => ({
-					onToggleUserFlairModal: () => e(Object(ae.p)(t.subredditId, t.username))
+					onToggleUserFlairModal: () => e(Object(ae.g)(t.subredditId, t.username))
 				}))(e => s.a.createElement(q.a, {
 					role: "button",
 					onClick: () => {
@@ -2328,4 +2328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.6cd54971ae38236d7057.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.9a0de8fe13d2c12532b2.js.map

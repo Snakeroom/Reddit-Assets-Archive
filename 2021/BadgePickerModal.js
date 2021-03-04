@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePickerModal.469eddad385b51d8255d.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePickerModal.47e990305a67cce2cac2.js
+// Retrieved at 3/4/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -12,11 +12,11 @@
 					d = Object.keys(t);
 				if (n.length !== d.length) return !1;
 				for (var i = Object.prototype.hasOwnProperty.bind(t), c = 0; c < n.length; c++) {
-					var o = n[c];
-					if (!i(o)) return !1;
-					var l = e[o],
-						u = t[o];
-					if (!1 === (s = r ? r.call(a, l, u, o) : void 0) || void 0 === s && l !== u) return !1
+					var l = n[c];
+					if (!i(l)) return !1;
+					var o = e[l],
+						u = t[l];
+					if (!1 === (s = r ? r.call(a, o, u, l) : void 0) || void 0 === s && o !== u) return !1
 				}
 				return !0
 			}
@@ -136,10 +136,10 @@
 				d = r("./node_modules/reselect/es/index.js"),
 				i = r("./src/higherOrderComponents/asModal/index.tsx"),
 				c = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				o = r("./src/reddit/selectors/userFlair.ts"),
-				l = r("./src/lib/classNames/index.ts"),
+				l = r("./src/reddit/selectors/userFlair.ts"),
+				o = r("./src/lib/classNames/index.ts"),
 				u = r("./src/reddit/actions/modal.ts"),
-				m = r("./src/reddit/actions/userFlair.ts"),
+				m = r("./src/reddit/actions/userFlair/index.ts"),
 				p = r("./src/reddit/components/FlairSearch/index.tsx"),
 				h = r("./src/reddit/constants/flair.ts"),
 				g = r("./src/reddit/controls/Button/index.tsx"),
@@ -174,7 +174,7 @@
 				render() {
 					const e = this.props.userFlairData.permissions.canUserChange;
 					return s.a.createElement("div", {
-						className: Object(l.a)(this.props.className, E.a.container)
+						className: Object(o.a)(this.props.className, E.a.container)
 					}, e ? this.renderTitle() : this.renderCannotSetFlair(), s.a.createElement("div", {
 						className: E.a.content
 					}, e && this.renderFlairSearch(), s.a.createElement("div", {
@@ -247,12 +247,12 @@
 				}
 			}
 			const B = Object(d.c)({
-				userFlairData: o.c,
+				userFlairData: l.c,
 				user: e => e.user.account
 			});
 			var N = Object(n.b)(B, e => ({
 					onApplyFlair: (t, r, a, s, n) => {
-						e(Object(m.o)(t, r, a, s, n)), e(Object(u.f)())
+						e(Object(m.f)(t, r, a, s, n)), e(Object(u.f)())
 					}
 				}), (e, t, r) => ({
 					...e,
@@ -333,7 +333,7 @@
 						r = !e.wallet || !e.product.price || new w.BigNumber(e.wallet.amount).isLessThan(new w.BigNumber(e.product.price)),
 						a = t || r || e.alreadyOwned;
 					return s.a.createElement("div", {
-						className: Object(l.a)(D.a.container, e.className),
+						className: Object(o.a)(D.a.container, e.className),
 						title: e.product.description
 					}, R(e.product), H(e.product), e.product.price && function(e, t, r, a) {
 						if (!e.price) return null;
@@ -368,7 +368,7 @@
 
 			function V(e) {
 				return s.a.createElement("div", {
-					className: Object(l.a)(Z.a.container, e.className)
+					className: Object(o.a)(Z.a.container, e.className)
 				}, s.a.createElement("div", {
 					className: Z.a.image
 				}), s.a.createElement("div", {
@@ -476,11 +476,11 @@
 				return s.a.createElement("div", {
 					className: e.className
 				}, s.a.createElement("div", {
-					className: Object(l.a)(se.a.sectionTitle, se.a.sectionBadges)
+					className: Object(o.a)(se.a.sectionTitle, se.a.sectionBadges)
 				}, q.fbt._("badges", null, {
 					hk: "33xQMz"
 				})), t($.Gallery), t($.MyBadges), s.a.createElement("div", {
-					className: Object(l.a)(se.a.sectionTitle, se.a.sectionFlairs)
+					className: Object(o.a)(se.a.sectionTitle, se.a.sectionFlairs)
 				}, q.fbt._("flairs", null, {
 					hk: "42LtF9"
 				})), t($.Flairs))
@@ -488,7 +488,7 @@
 			const ie = (e, t) => r => {
 				const a = ne[r];
 				return s.a.createElement("div", {
-					className: Object(l.a)(se.a.mode, {
+					className: Object(o.a)(se.a.mode, {
 						[se.a.modeSelected]: e === r
 					}),
 					onClick: () => t(r)
@@ -497,8 +497,8 @@
 				}), a.str())
 			};
 			var ce = r("./src/reddit/actions/badge.ts"),
-				oe = r("./src/higherOrderComponents/asTooltip.tsx"),
-				le = r("./src/lib/timeUntil/index.ts"),
+				le = r("./src/higherOrderComponents/asTooltip.tsx"),
+				oe = r("./src/lib/timeUntil/index.ts"),
 				ue = r("./src/reddit/constants/zIndex.ts"),
 				me = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				pe = r("./src/reddit/icons/svgs/Clock/index.tsx"),
@@ -520,7 +520,7 @@
 				}
 				render() {
 					return this.props.badge ? s.a.createElement("div", {
-						className: Object(l.a)(this.props.className, ge.a.container, {
+						className: Object(o.a)(this.props.className, ge.a.container, {
 							[ge.a.containerApplied]: !!this.props.isApplied,
 							[ge.a.containerSelected]: !!this.props.isSelected
 						}),
@@ -543,11 +543,11 @@
 						className: ge.a.expiry
 					}, s.a.createElement(pe.a, {
 						className: ge.a.clock
-					}), s.a.createElement("span", null, Object(le.a)(new Date(e.endsAt), !0))))) : null;
+					}), s.a.createElement("span", null, Object(oe.a)(new Date(e.endsAt), !0))))) : null;
 					var e
 				}
 			}
-			const xe = Object(oe.a)((function({
+			const xe = Object(le.a)((function({
 				badge: e,
 				style: t
 			}) {
@@ -595,7 +595,7 @@
 				}
 				render() {
 					return s.a.createElement("div", {
-						className: Object(l.a)(this.props.className, Ee.a.container)
+						className: Object(o.a)(this.props.className, Ee.a.container)
 					}, this.renderTitle(), this.props.badgesPending ? this.renderPlaceholder() : this.props.badgeIds.length ? this.renderBadges() : this.renderNoBadges(), this.renderControls())
 				}
 				renderTitle() {
@@ -735,7 +735,7 @@
 				Se = r.n(Me);
 			var Te = function(e) {
 					return s.a.createElement("div", {
-						className: Object(l.a)(Se.a.container, e.className)
+						className: Object(o.a)(Se.a.container, e.className)
 					}, s.a.createElement("div", {
 						className: Se.a.title
 					}, q.fbt._("Community Flairs & Badges", null, {
@@ -836,7 +836,7 @@
 							pageLayer: t
 						});
 						if (r) {
-							return Object(o.c)(e, {
+							return Object(l.c)(e, {
 								subredditId: r
 							})
 						}
@@ -859,8 +859,8 @@
 				d = r("./src/lib/classNames/index.ts"),
 				i = r("./src/reddit/actions/modal.ts"),
 				c = r("./src/reddit/icons/svgs/Close/index.tsx"),
-				o = r("./src/reddit/components/Governance/ModalClose/index.m.less"),
-				l = r.n(o);
+				l = r("./src/reddit/components/Governance/ModalClose/index.m.less"),
+				o = r.n(l);
 			t.a = Object(n.b)(void 0, (e, {
 				afterClose: t
 			}) => ({
@@ -869,7 +869,7 @@
 				}
 			}))((function(e) {
 				return s.a.createElement(c.a, {
-					className: Object(d.a)(l.a.closeIcon, e.className),
+					className: Object(d.a)(o.a.closeIcon, e.className),
 					onClick: e.onClose
 				})
 			}))
@@ -887,11 +887,11 @@
 				d = r("./node_modules/reselect/es/index.js"),
 				i = r("./src/config.ts"),
 				c = r("./src/lib/classNames/index.ts"),
-				o = r("./src/reddit/selectors/gov.ts"),
-				l = r("./src/reddit/components/Governance/Token/index.m.less"),
-				u = r.n(l);
+				l = r("./src/reddit/selectors/gov.ts"),
+				o = r("./src/reddit/components/Governance/Token/index.m.less"),
+				u = r.n(o);
 			const m = Object(d.c)({
-				tokenSymbol: o.o
+				tokenSymbol: l.o
 			});
 			t.a = Object(n.b)(m)((function(e) {
 				const t = e.grey ? e.tokenSymbol.greyVector || e.tokenSymbol.grey : e.tokenSymbol.filledVector || e.tokenSymbol.filled,
@@ -927,20 +927,20 @@
 				d = r("./src/reddit/icons/svgs/Checkbox/index.tsx"),
 				i = r("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				c = r("./src/reddit/layout/row/Inline/index.tsx"),
-				o = r("./src/reddit/controls/CheckboxInput/index.m.less"),
-				l = r.n(o);
+				l = r("./src/reddit/controls/CheckboxInput/index.m.less"),
+				o = r.n(l);
 			t.a = e => s.a.createElement(c.a, {
 				"aria-checked": !!e.value,
 				"aria-disabled": e.disabled,
 				"aria-labelledby": e.name,
-				className: Object(n.a)(e.className, l.a.checkboxInput, e.disabled ? l.a.disabled : null),
+				className: Object(n.a)(e.className, o.a.checkboxInput, e.disabled ? o.a.disabled : null),
 				onClick: e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0,
 				role: "checkbox"
 			}, s.a.createElement("input", {
 				value: e.value ? e.value.toString() : "",
 				type: "hidden"
 			}), e.value ? s.a.createElement(i.a, {
-				className: l.a.checkboxSelected
+				className: o.a.checkboxSelected
 			}) : s.a.createElement(d.a, null), e.children)
 		},
 		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, r) {
@@ -954,9 +954,9 @@
 			})), r.d(t, "h", (function() {
 				return c
 			})), r.d(t, "k", (function() {
-				return o
-			})), r.d(t, "l", (function() {
 				return l
+			})), r.d(t, "l", (function() {
+				return o
 			})), r.d(t, "g", (function() {
 				return u
 			})), r.d(t, "b", (function() {
@@ -1010,7 +1010,7 @@
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
-			async function o(e, t, r) {
+			async function l(e, t, r) {
 				return Object(n.a)(e, {
 					method: "post",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/challenges`,
@@ -1020,7 +1020,7 @@
 					}
 				})
 			}
-			async function l(e, t, r) {
+			async function o(e, t, r) {
 				return await Object(n.a)(e, {
 					method: "post",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations`,
@@ -1147,9 +1147,9 @@
 			r.d(t, "b", (function() {
 				return c
 			})), r.d(t, "c", (function() {
-				return o
-			})), r.d(t, "d", (function() {
 				return l
+			})), r.d(t, "d", (function() {
+				return o
 			})), r.d(t, "e", (function() {
 				return u
 			})), r.d(t, "g", (function() {
@@ -1203,11 +1203,11 @@
 						token: void 0
 					}
 				},
-				o = (e, t) => {
+				l = (e, t) => {
 					const r = v(e, t);
 					if (r) return r.mainHeader
 				},
-				l = (e, t) => {
+				o = (e, t) => {
 					const r = v(e, t);
 					return r && r.mainHeader ? r.mainHeader.price : "0"
 				},
@@ -1319,4 +1319,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePickerModal.469eddad385b51d8255d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePickerModal.47e990305a67cce2cac2.js.map

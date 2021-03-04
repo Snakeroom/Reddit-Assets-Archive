@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.07d02652c39f6c80fdff.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.31e0fa4ae201d3baad0a.js
+// Retrieved at 3/4/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -19,7 +19,7 @@
 				o = s("./src/lib/makeActionCreator/index.ts"),
 				i = s("./src/reddit/actions/postFlair.ts"),
 				l = s("./src/reddit/actions/toaster.ts"),
-				r = s("./src/reddit/actions/userFlair.ts"),
+				r = s("./src/reddit/actions/userFlair/index.ts"),
 				d = s("./src/reddit/constants/flair.ts"),
 				c = s("./src/reddit/constants/posts.ts"),
 				p = s("./src/lib/constants/index.ts"),
@@ -32,8 +32,8 @@
 			const C = (e, t) => async (s, n) => {
 				const o = t.type === h.d.UserFlair,
 					d = o ? b.e : g.e,
-					c = o ? r.n : i.l,
-					p = o ? r.m : i.k,
+					c = o ? r.e : i.l,
+					p = o ? r.d : i.k,
 					m = d(n(), {
 						subredditId: e
 					});
@@ -2068,4 +2068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.07d02652c39f6c80fdff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.31e0fa4ae201d3baad0a.js.map
