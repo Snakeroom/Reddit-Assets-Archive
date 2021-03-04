@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/AuthorHovercard.44d5d3f1b17a74337d50.js
-// Retrieved at 3/4/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
