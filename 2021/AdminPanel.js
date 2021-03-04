@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/AdminPanel.34f0dc375bb6cc67b0d0.js
-// Retrieved at 3/4/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
