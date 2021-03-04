@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/runtime~Reddit.9bccb1421f9cc6538012.js
-// Retrieved at 3/4/2021, 5:00:06 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, a, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(n, a) && n[a] && b.push(n[a][0]), n[a] = 0;

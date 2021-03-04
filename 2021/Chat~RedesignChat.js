@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/Chat~RedesignChat.15d8eca126e748b9df7e.js
-// Retrieved at 3/4/2021, 5:00:06 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
