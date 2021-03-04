@@ -1,32 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ModListing.bfc8cbc0f0edc35b8322.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.87feff18ffb5ea48202e.js
+// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
-		"./node_modules/brcast/dist/brcast.es.js": function(e, t, r) {
-			"use strict";
-			t.a = function(e) {
-				var t = {},
-					r = 1,
-					n = e;
-				return {
-					getState: function() {
-						return n
-					},
-					setState: function(e) {
-						n = e;
-						for (var r = Object.keys(t), s = 0, o = r.length; s < o; s++) t[r[s]] && t[r[s]](e)
-					},
-					subscribe: function(e) {
-						if ("function" != typeof e) throw new Error("listener must be a function.");
-						var n = r;
-						return t[n] = e, r += 1, n
-					},
-					unsubscribe: function(e) {
-						t[e] = void 0
-					}
-				}
-			}
-		},
 		"./node_modules/react-router-dom/esm/react-router-dom.js": function(e, t, r) {
 			"use strict";
 
@@ -273,9 +248,9 @@
 		"./src/reddit/actions/pages/modListing/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "modListingDataPending", (function() {
-				return w
-			})), r.d(t, "modListingDataLoaded", (function() {
 				return L
+			})), r.d(t, "modListingDataLoaded", (function() {
+				return w
 			})), r.d(t, "modListingDataFailed", (function() {
 				return D
 			})), r.d(t, "modListingPageRequested", (function() {
@@ -348,18 +323,18 @@
 				k = r("./src/reddit/routes/modListing/index.ts"),
 				N = r("./src/reddit/selectors/user.ts"),
 				T = r("./src/reddit/actions/pages/modListing/constants.ts");
-			const w = Object(a.a)(T.f),
-				L = Object(a.a)(T.e),
+			const L = Object(a.a)(T.f),
+				w = Object(a.a)(T.e),
 				D = Object(a.a)(T.d),
 				M = (e, t) => async (r, s, o) => {
 					const i = s();
 					if (i.listings.postOrder.api.pending[e]) return;
-					r(w({
+					r(L({
 						key: e
 					}));
 					const a = await Object(I.a)("modListing", () => y(o.apiContext(), t)),
 						c = `error-${e}`;
-					a.ok ? (r(L({
+					a.ok ? (r(w({
 						key: e,
 						meta: i.meta,
 						...a.body
@@ -885,9 +860,9 @@
 			r.d(t, "a", (function() {
 				return T
 			})), r.d(t, "b", (function() {
-				return w
-			})), r.d(t, "c", (function() {
 				return L
+			})), r.d(t, "c", (function() {
+				return w
 			})), r.d(t, "d", (function() {
 				return D
 			}));
@@ -986,7 +961,7 @@
 						style: r
 					}))
 				}),
-				w = Object(i.a)(e => {
+				L = Object(i.a)(e => {
 					const {
 						voteIcons: t
 					} = Object(I.a)(e), r = {
@@ -1003,7 +978,7 @@
 						style: r
 					}))
 				}),
-				L = h,
+				w = h,
 				D = j
 		},
 		"./src/reddit/connectors/connectClickToToggleEditor.ts": function(e, t, r) {
@@ -1166,9 +1141,9 @@
 			})), r.d(t, "y", (function() {
 				return T
 			})), r.d(t, "k", (function() {
-				return w
-			})), r.d(t, "j", (function() {
 				return L
+			})), r.d(t, "j", (function() {
+				return w
 			})), r.d(t, "l", (function() {
 				return D
 			})), r.d(t, "d", (function() {
@@ -1344,8 +1319,8 @@
 						actionInfo: d.chatPostActionInfo(e)
 					})
 				},
-				w = e => M("input", e),
-				L = () => M("add"),
+				L = e => M("input", e),
+				w = () => M("add"),
 				D = () => M("remove"),
 				M = (e, t) => r => ({
 					...f(r),
@@ -1500,9 +1475,9 @@
 			})), r.d(t, "l", (function() {
 				return T
 			})), r.d(t, "p", (function() {
-				return w
-			})), r.d(t, "i", (function() {
 				return L
+			})), r.d(t, "i", (function() {
+				return w
 			})), r.d(t, "j", (function() {
 				return D
 			})), r.d(t, "g", (function() {
@@ -1643,7 +1618,7 @@
 							break
 						}
 						case o.Db.PROFILE_MODERATION:
-							b && w(t, !0);
+							b && L(t, !0);
 							break;
 						case o.Db.SETTINGS: {
 							const s = e;
@@ -1680,7 +1655,7 @@
 							b && M(t);
 							break;
 						case o.Db.MODERATION_PAGES:
-							b && L(t, !0, u ? u.subredditName : null, u ? u.profileName : null);
+							b && w(t, !0, u ? u.subredditName : null, u ? u.profileName : null);
 							break;
 						case o.Db.COLLECTION_COMMENTS:
 							b && X(t, !0);
@@ -1872,7 +1847,7 @@
 						adblock: _.adblock(n)
 					}
 				},
-				w = (e, t) => {
+				L = (e, t) => {
 					Object(j.a)({
 						source: "global",
 						action: "view",
@@ -1883,7 +1858,7 @@
 						})
 					})
 				},
-				L = (e, t, r, n) => {
+				w = (e, t, r, n) => {
 					Object(j.a)({
 						source: "global",
 						action: "view",
@@ -2130,9 +2105,9 @@
 			})), r.d(t, "o", (function() {
 				return T
 			})), r.d(t, "n", (function() {
-				return w
-			})), r.d(t, "l", (function() {
 				return L
+			})), r.d(t, "l", (function() {
+				return w
 			})), r.d(t, "m", (function() {
 				return D
 			})), r.d(t, "b", (function() {
@@ -2426,11 +2401,11 @@
 					},
 					subreddit: c.subreddit(r)
 				}),
-				w = (e, t, r, n, s) => i => ({
+				L = (e, t, r, n, s) => i => ({
 					...P(i, t, r, n, e, s),
 					action: o.c.VIEW
 				}),
-				L = (e, t, r, n) => s => ({
+				w = (e, t, r, n) => s => ({
 					...l(s, r),
 					source: d,
 					action: "view",
@@ -2857,7 +2832,7 @@
 			})), i.a.createElement(_.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
-			})))), w = e => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
+			})))), L = e => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 				className: k.a.feedDetailsTitle
 			}, i.a.createElement(E.a, {
 				className: k.a.modIcon
@@ -2873,11 +2848,11 @@
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
 			}) : i.a.createElement("div", {
 				className: k.a.loadingBar
-			})), L = Object(c.c)({
+			})), w = Object(c.c)({
 				isModalOpen: Object(I.b)("MOD_LISTING_FEED_DETAILS_MODAL_ID"),
 				moderatedCommunitiesIds: C.f
 			});
-			var D = Object(a.b)(L, (e, {}) => ({
+			var D = Object(a.b)(w, (e, {}) => ({
 					toggleModal: () => e(Object(y.i)("MOD_LISTING_FEED_DETAILS_MODAL_ID"))
 				}))(e => {
 					const {
@@ -2885,7 +2860,7 @@
 						moderatedCommunitiesIds: r,
 						toggleModal: n
 					} = e;
-					return r ? i.a.createElement(i.a.Fragment, null, i.a.createElement(w, {
+					return r ? i.a.createElement(i.a.Fragment, null, i.a.createElement(L, {
 						moderatedCommunitiesIds: r,
 						onSeeMoreDetails: n
 					}), t && i.a.createElement(T, {
@@ -3177,4 +3152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.bfc8cbc0f0edc35b8322.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.87feff18ffb5ea48202e.js.map

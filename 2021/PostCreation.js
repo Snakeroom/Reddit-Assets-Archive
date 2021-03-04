@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5e6667f62210672bd1f1.js
-// Retrieved at 3/3/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0fac9dc152b354736fec.js
+// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ModListing~Reddit~StandalonePostPage"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -18723,7 +18723,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!n || Object(o.rd)(n))
+				return !(!n || Object(o.qd)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
@@ -18736,8 +18736,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: o.uc
-				}) === o.Dc.Enabled
+					experimentName: o.sc
+				}) === o.Bc.Enabled
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -18920,4 +18920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5e6667f62210672bd1f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0fac9dc152b354736fec.js.map

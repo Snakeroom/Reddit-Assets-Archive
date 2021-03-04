@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.8dfb929f7cc2f3b67bd8.js
-// Retrieved at 3/3/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.ec1cadf0b6c2eb5e053c.js
+// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4700,12 +4700,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.ad.SmIcon:
+						case b.Zc.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.ad.SmIconHc:
+						case b.Zc.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5365,7 +5365,7 @@
 					trackOnPostExitedViewport: (t, s, n, r, o) => {
 						e(l.I(t, n, r, o))
 					},
-					surveyTriggerScrollCounted: () => e(Object(u.c)())
+					surveyTriggerScrollCounted: () => e(Object(u.g)())
 				}),
 				S = Object(n.b)(O, j, (e, t, s) => ({
 					...e,
@@ -6815,7 +6815,7 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: n.qb
 					});
-					return !(!t || Object(n.rd)(t))
+					return !(!t || Object(n.qd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -6951,12 +6951,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Wc
+						experimentName: n.Uc
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.ad.SmIcon || t === n.ad.SmIconHc
+					return t === n.Zc.SmIcon || t === n.Zc.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -6979,4 +6979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.8dfb929f7cc2f3b67bd8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ec1cadf0b6c2eb5e053c.js.map

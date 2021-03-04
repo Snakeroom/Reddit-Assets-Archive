@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.49cf5b3164f03ff9808f.js
-// Retrieved at 3/4/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.b59c8e47874c052d9e89.js
+// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -5773,6 +5773,31 @@
 					}
 				}(e, this)
 			}).call(this, n("./node_modules/webpack/buildin/module.js")(e))
+		},
+		"./node_modules/brcast/dist/brcast.es.js": function(e, t, n) {
+			"use strict";
+			t.a = function(e) {
+				var t = {},
+					n = 1,
+					r = e;
+				return {
+					getState: function() {
+						return r
+					},
+					setState: function(e) {
+						r = e;
+						for (var n = Object.keys(t), o = 0, i = n.length; o < i; o++) t[n[o]] && t[n[o]](e)
+					},
+					subscribe: function(e) {
+						if ("function" != typeof e) throw new Error("listener must be a function.");
+						var r = n;
+						return t[r] = e, n += 1, r
+					},
+					unsubscribe: function(e) {
+						t[e] = void 0
+					}
+				}
+			}
 		},
 		"./node_modules/brorand/index.js": function(e, t, n) {
 			var r;
@@ -34517,4 +34542,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.49cf5b3164f03ff9808f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.b59c8e47874c052d9e89.js.map

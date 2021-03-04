@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.cd63c1f4be4f3404f88b.js
-// Retrieved at 3/2/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.47e2783fc2724af3959f.js
+// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -339,8 +339,8 @@
 				A = s("./src/reddit/components/PostTitle/index.tsx"),
 				W = s("./src/reddit/connectors/miniCardPost.ts"),
 				R = s("./src/reddit/contexts/Post/index.tsx"),
-				B = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				V = s("./src/reddit/helpers/styles/mixins/index.tsx"),
+				V = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				B = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				H = s("./src/reddit/models/Media/index.ts"),
 				F = s("./src/reddit/models/Subreddit/index.ts"),
 				Q = s("./src/reddit/models/Widgets/index.ts"),
@@ -404,19 +404,19 @@
 						j = !1;
 					E && _ && (E.type !== H.o.RTJSON && E.type !== H.o.TEXT ? (_ = r.a.createElement("div", {
 						className: Z.a.mediaWrapper
-					}, _), j = !0) : E && E.content && Object(B.a)(p) && (_ = r.a.createElement("div", {
+					}, _), j = !0) : E && E.content && Object(V.a)(p) && (_ = r.a.createElement("div", {
 						className: Z.a.textWrapper
 					}, _)));
 					const N = !j && !O;
 					let w;
 					return k && (w = Object(F.g)(k) ? Object(Q.h)(k) : Object(Q.i)(k)), r.a.createElement(U.a, {
-						className: Object(c.a)(Z.a.container, q.a.largeAndMediumActiveStyles, q.a.largeAndMediumPostStyles, K.a.postContainer, Object(V.a)(this.props), s),
+						className: Object(c.a)(Z.a.container, q.a.largeAndMediumActiveStyles, q.a.largeAndMediumPostStyles, K.a.postContainer, Object(B.a)(this.props), s),
 						post: p,
 						onClick: u,
 						eventFactory: i,
 						style: {
-							...Object(V.b)(this.props.flairStyleTemplate),
-							...Object(V.d)(this.props),
+							...Object(B.b)(this.props.flairStyleTemplate),
+							...Object(B.d)(this.props),
 							...this.props.style
 						},
 						"data-click-id": this.props["data-click-id"]
@@ -804,9 +804,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				C = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				f = s("./src/reddit/selectors/user.ts");
-			const v = e => Object(f.G)(e) || g.bd.ShowTopContent === Object(C.c)(e, {
+			const v = e => Object(f.G)(e) || g.ad.ShowTopContent === Object(C.c)(e, {
 				experimentEligibilitySelector: C.a,
-				experimentName: g.Xc
+				experimentName: g.Vc
 			});
 			var y = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1479,4 +1479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.cd63c1f4be4f3404f88b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.47e2783fc2724af3959f.js.map

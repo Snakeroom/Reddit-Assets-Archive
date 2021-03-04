@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.2da8f5b06f6e009ba564.js
-// Retrieved at 3/2/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.7cc4227bc57d3cb57804.js
+// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1274,7 +1274,7 @@
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return Q
+				return Z
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -1503,7 +1503,7 @@
 				}
 			}
 			const K = Object(m.b)(Object(u.a)(Object(a.a)(z)));
-			class Q extends r.a.Component {
+			class Z extends r.a.Component {
 				render() {
 					return r.a.createElement(K, this.props)
 				}
@@ -1910,8 +1910,8 @@
 				z = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
 				K = s.n(z);
 
-			function Q() {
-				return (Q = Object.assign || function(e) {
+			function Z() {
+				return (Z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -1919,7 +1919,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			class Z extends i.a.Component {
+			class Q extends i.a.Component {
 				render() {
 					const {
 						autoplayPref: e,
@@ -1984,9 +1984,9 @@
 						flairStyleTemplate: a
 					}, i.a.createElement("div", {
 						className: Object(c.a)(K.a.innerContainer, q.a.innerContainer)
-					}, _ && w && i.a.createElement(k, Q({
+					}, _ && w && i.a.createElement(k, Z({
 						created: p.created
-					}, I)), y && w && i.a.createElement(O, Q({
+					}, I)), y && w && i.a.createElement(O, Z({
 						created: p.created,
 						author: p.author
 					}, I)), i.a.createElement(B.c, {
@@ -2031,7 +2031,7 @@
 					}))))), i.a.createElement(N.d, null))
 				}
 			}
-			const $ = Object(W.b)(Object(R.a)(Object(v.a)(Z)));
+			const $ = Object(W.b)(Object(R.a)(Object(v.a)(Q)));
 			class ee extends i.a.Component {
 				render() {
 					return i.a.createElement($, this.props)
@@ -4118,12 +4118,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.ad.SmIcon:
+						case b.Zc.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.ad.SmIconHc:
+						case b.Zc.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4873,12 +4873,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Wc
+						experimentName: n.Uc
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.ad.SmIcon || t === n.ad.SmIconHc
+					return t === n.Zc.SmIcon || t === n.Zc.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -4901,4 +4901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.2da8f5b06f6e009ba564.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.7cc4227bc57d3cb57804.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.af41ab3857ec43850cb9.js
-// Retrieved at 3/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.88a32c34662007747ee2.js
+// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7835,7 +7835,7 @@
 					trackOnPostExitedViewport: (t, s, r, n, o) => {
 						e(d.I(t, r, n, o))
 					},
-					surveyTriggerScrollCounted: () => e(Object(m.c)())
+					surveyTriggerScrollCounted: () => e(Object(m.g)())
 				}),
 				I = Object(r.b)(j, S, (e, t, s) => ({
 					...e,
@@ -8845,9 +8845,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.Pc.Treatment1 === Object(n.c)(e, {
+			const o = e => r.Nc.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Fc
+				experimentName: r.Dc
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -8956,4 +8956,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.af41ab3857ec43850cb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.88a32c34662007747ee2.js.map

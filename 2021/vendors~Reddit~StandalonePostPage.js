@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit~StandalonePostPage.afa76ba70fc83660f662.js
-// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit~StandalonePostPage.8c700812183259010dec.js
+// Retrieved at 3/4/2021, 5:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit~StandalonePostPage"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -55,11 +55,11 @@
 				}
 			}
 
-			function d(e) {
+			function p(e) {
 				return u(e) || new IntersectionObserver(f, e)
 			}
-			var p = r("./node_modules/invariant/browser.js"),
-				m = r.n(p),
+			var d = r("./node_modules/invariant/browser.js"),
+				m = r.n(d),
 				y = {},
 				h = Object.create(null, {
 					errorReporter: {
@@ -118,7 +118,7 @@
 							}
 							t.targetNode = e && Object(a.findDOMNode)(e)
 						})), b(v(t), "observe", (function() {
-							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = d(S(t.props)), t.target = t.targetNode, e = v(t), l.has(e.observer) || l.set(e.observer, new Set), l.get(e.observer).add(e), e.observer.observe(e.target), !0) : (h.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = p(S(t.props)), t.target = t.targetNode, e = v(t), l.has(e.observer) || l.set(e.observer, new Set), l.get(e.observer).add(e), e.observer.observe(e.target), !0) : (h.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
 						})), b(v(t), "unobserve", (function(e) {
 							! function(e, t) {
@@ -207,31 +207,6 @@
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
-		"./node_modules/brcast/dist/brcast.es.js": function(e, t, r) {
-			"use strict";
-			t.a = function(e) {
-				var t = {},
-					r = 1,
-					n = e;
-				return {
-					getState: function() {
-						return n
-					},
-					setState: function(e) {
-						n = e;
-						for (var r = Object.keys(t), o = 0, a = r.length; o < a; o++) t[r[o]] && t[r[o]](e)
-					},
-					subscribe: function(e) {
-						if ("function" != typeof e) throw new Error("listener must be a function.");
-						var n = r;
-						return t[n] = e, r += 1, n
-					},
-					unsubscribe: function(e) {
-						t[e] = void 0
-					}
-				}
-			}
-		},
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
 			var r = Math.floor,
 				n = Math.random;
@@ -291,8 +266,8 @@
 				u = a(r("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
 				c = a(r("./node_modules/raf/index.js")),
 				f = a(r("./node_modules/react-motion/lib/shouldStopAnimation.js")),
-				d = a(r("./node_modules/react/index.js")),
-				p = a(r("./node_modules/react-motion/node_modules/prop-types/index.js")),
+				p = a(r("./node_modules/react/index.js")),
+				d = a(r("./node_modules/react-motion/node_modules/prop-types/index.js")),
 				m = 1e3 / 60,
 				y = function(e) {
 					function t(r) {
@@ -328,12 +303,12 @@
 									i = Math.floor(o.accumulatedTime / m),
 									s = {},
 									c = {},
-									d = {},
-									p = {};
+									p = {},
+									d = {};
 								for (var y in t)
 									if (Object.prototype.hasOwnProperty.call(t, y)) {
 										var h = t[y];
-										if ("number" == typeof h) d[y] = h, p[y] = 0, s[y] = h, c[y] = 0;
+										if ("number" == typeof h) p[y] = h, d[y] = 0, s[y] = h, c[y] = 0;
 										else {
 											for (var v = o.state.lastIdealStyle[y], b = o.state.lastIdealVelocity[y], g = 0; g < i; g++) {
 												var O = l.default(m / 1e3, v, b, h.val, h.stiffness, h.damping, h.precision);
@@ -342,11 +317,11 @@
 											var _ = l.default(m / 1e3, v, b, h.val, h.stiffness, h.damping, h.precision),
 												j = _[0],
 												w = _[1];
-											d[y] = v + (j - v) * a, p[y] = b + (w - b) * a, s[y] = v, c[y] = b
+											p[y] = v + (j - v) * a, d[y] = b + (w - b) * a, s[y] = v, c[y] = b
 										}
 									} o.animationID = null, o.accumulatedTime -= i * m, o.setState({
-									currentStyle: d,
-									currentVelocity: p,
+									currentStyle: p,
+									currentVelocity: d,
 									lastIdealStyle: s,
 									lastIdealVelocity: c
 								}), o.unreadPropStyle = null, o.startAnimationIfNecessary()
@@ -366,10 +341,10 @@
 					}(t, e), o(t, null, [{
 						key: "propTypes",
 						value: {
-							defaultStyle: p.default.objectOf(p.default.number),
-							style: p.default.objectOf(p.default.oneOfType([p.default.number, p.default.object])).isRequired,
-							children: p.default.func.isRequired,
-							onRest: p.default.func
+							defaultStyle: d.default.objectOf(d.default.number),
+							style: d.default.objectOf(d.default.oneOfType([d.default.number, d.default.object])).isRequired,
+							children: d.default.func.isRequired,
+							onRest: d.default.func
 						},
 						enumerable: !0
 					}]), t.prototype.defaultState = function() {
@@ -392,9 +367,9 @@
 						null != this.animationID && (c.default.cancel(this.animationID), this.animationID = null)
 					}, t.prototype.render = function() {
 						var e = this.props.children(this.state.currentStyle);
-						return e && d.default.Children.only(e)
+						return e && p.default.Children.only(e)
 					}, t
-				}(d.default.Component);
+				}(p.default.Component);
 			t.default = y, e.exports = t.default
 		},
 		"./node_modules/react-motion/lib/StaggeredMotion.js": function(e, t, r) {
@@ -430,8 +405,8 @@
 				u = a(r("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
 				c = a(r("./node_modules/raf/index.js")),
 				f = a(r("./node_modules/react-motion/lib/shouldStopAnimation.js")),
-				d = a(r("./node_modules/react/index.js")),
-				p = a(r("./node_modules/react-motion/node_modules/prop-types/index.js")),
+				p = a(r("./node_modules/react/index.js")),
+				d = a(r("./node_modules/react-motion/node_modules/prop-types/index.js")),
 				m = 1e3 / 60;
 			var y = function(e) {
 				function t(r) {
@@ -442,10 +417,10 @@
 						for (var t = o.state, r = t.currentStyles, a = t.currentVelocities, i = t.lastIdealStyles, s = t.lastIdealVelocities, l = !1, u = 0; u < e.length; u++) {
 							var c = e[u],
 								f = !1;
-							for (var d in c)
-								if (Object.prototype.hasOwnProperty.call(c, d)) {
-									var p = c[d];
-									"number" == typeof p && (f || (f = !0, l = !0, r[u] = n({}, r[u]), a[u] = n({}, a[u]), i[u] = n({}, i[u]), s[u] = n({}, s[u])), r[u][d] = p, a[u][d] = 0, i[u][d] = p, s[u][d] = 0)
+							for (var p in c)
+								if (Object.prototype.hasOwnProperty.call(c, p)) {
+									var d = c[p];
+									"number" == typeof d && (f || (f = !0, l = !0, r[u] = n({}, r[u]), a[u] = n({}, a[u]), i[u] = n({}, i[u]), s[u] = n({}, s[u])), r[u][p] = d, a[u][p] = 0, i[u][p] = d, s[u][p] = 0)
 								}
 						}
 						l && o.setState({
@@ -465,7 +440,7 @@
 							var r = e || u.default(),
 								n = r - o.prevTime;
 							if (o.prevTime = r, o.accumulatedTime = o.accumulatedTime + n, o.accumulatedTime > 10 * m && (o.accumulatedTime = 0), 0 === o.accumulatedTime) return o.animationID = null, void o.startAnimationIfNecessary();
-							for (var a = (o.accumulatedTime - Math.floor(o.accumulatedTime / m) * m) / m, i = Math.floor(o.accumulatedTime / m), s = [], c = [], d = [], p = [], y = 0; y < t.length; y++) {
+							for (var a = (o.accumulatedTime - Math.floor(o.accumulatedTime / m) * m) / m, i = Math.floor(o.accumulatedTime / m), s = [], c = [], p = [], d = [], y = 0; y < t.length; y++) {
 								var h = t[y],
 									v = {},
 									b = {},
@@ -485,11 +460,11 @@
 												k = P[1];
 											v[_] = w + (I - w) * a, b[_] = S + (k - S) * a, g[_] = w, O[_] = S
 										}
-									} d[y] = v, p[y] = b, s[y] = g, c[y] = O
+									} p[y] = v, d[y] = b, s[y] = g, c[y] = O
 							}
 							o.animationID = null, o.accumulatedTime -= i * m, o.setState({
-								currentStyles: d,
-								currentVelocities: p,
+								currentStyles: p,
+								currentVelocities: d,
 								lastIdealStyles: s,
 								lastIdealVelocities: c
 							}), o.unreadPropStyles = null, o.startAnimationIfNecessary()
@@ -509,9 +484,9 @@
 				}(t, e), o(t, null, [{
 					key: "propTypes",
 					value: {
-						defaultStyles: p.default.arrayOf(p.default.objectOf(p.default.number)),
-						styles: p.default.func.isRequired,
-						children: p.default.func.isRequired
+						defaultStyles: d.default.arrayOf(d.default.objectOf(d.default.number)),
+						styles: d.default.func.isRequired,
+						children: d.default.func.isRequired
 					},
 					enumerable: !0
 				}]), t.prototype.defaultState = function() {
@@ -536,9 +511,9 @@
 					null != this.animationID && (c.default.cancel(this.animationID), this.animationID = null)
 				}, t.prototype.render = function() {
 					var e = this.props.children(this.state.currentStyles);
-					return e && d.default.Children.only(e)
+					return e && p.default.Children.only(e)
 				}, t
-			}(d.default.Component);
+			}(p.default.Component);
 			t.default = y, e.exports = t.default
 		},
 		"./node_modules/react-motion/lib/TransitionMotion.js": function(e, t, r) {
@@ -574,8 +549,8 @@
 				u = a(r("./node_modules/react-motion/lib/mergeDiff.js")),
 				c = a(r("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
 				f = a(r("./node_modules/raf/index.js")),
-				d = a(r("./node_modules/react-motion/lib/shouldStopAnimation.js")),
-				p = a(r("./node_modules/react/index.js")),
+				p = a(r("./node_modules/react-motion/lib/shouldStopAnimation.js")),
+				d = a(r("./node_modules/react/index.js")),
 				m = a(r("./node_modules/react-motion/node_modules/prop-types/index.js")),
 				y = 1e3 / 60;
 
@@ -608,7 +583,7 @@
 						return null == o ? (r({
 							key: n.key,
 							data: n.data
-						}), null) : d.default(a[e], o, s[e]) ? (r({
+						}), null) : p.default(a[e], o, s[e]) ? (r({
 							key: n.key,
 							data: n.data
 						}), null) : {
@@ -616,19 +591,19 @@
 							data: n.data,
 							style: o
 						}
-					})), p = [], m = [], y = [], h = [], v = 0; v < f.length; v++) {
+					})), d = [], m = [], y = [], h = [], v = 0; v < f.length; v++) {
 					for (var b = f[v], g = null, O = 0; O < n.length; O++)
 						if (n[O].key === b.key) {
 							g = O;
 							break
 						} if (null == g) {
 						var _ = e(b);
-						p[v] = _, y[v] = _;
+						d[v] = _, y[v] = _;
 						var j = i.default(b.style);
 						m[v] = j, h[v] = j
-					} else p[v] = a[g], y[v] = l[g], m[v] = s[g], h[v] = c[g]
+					} else d[v] = a[g], y[v] = l[g], m[v] = s[g], h[v] = c[g]
 				}
-				return [f, p, m, y, h]
+				return [f, d, m, y, h]
 			}
 			var b = function(e) {
 				function t(r) {
@@ -639,14 +614,14 @@
 						for (var t = v(o.props.willEnter, o.props.willLeave, o.props.didLeave, o.state.mergedPropsStyles, e, o.state.currentStyles, o.state.currentVelocities, o.state.lastIdealStyles, o.state.lastIdealVelocities), r = t[0], a = t[1], i = t[2], s = t[3], l = t[4], u = 0; u < e.length; u++) {
 							var c = e[u].style,
 								f = !1;
-							for (var d in c)
-								if (Object.prototype.hasOwnProperty.call(c, d)) {
-									var p = c[d];
-									"number" == typeof p && (f || (f = !0, a[u] = n({}, a[u]), i[u] = n({}, i[u]), s[u] = n({}, s[u]), l[u] = n({}, l[u]), r[u] = {
+							for (var p in c)
+								if (Object.prototype.hasOwnProperty.call(c, p)) {
+									var d = c[p];
+									"number" == typeof d && (f || (f = !0, a[u] = n({}, a[u]), i[u] = n({}, i[u]), s[u] = n({}, s[u]), l[u] = n({}, l[u]), r[u] = {
 										key: r[u].key,
 										data: r[u].data,
 										style: n({}, r[u].style)
-									}), a[u][d] = p, i[u][d] = 0, s[u][d] = p, l[u][d] = 0, r[u].style[d] = p)
+									}), a[u][p] = d, i[u][p] = 0, s[u][p] = d, l[u][p] = 0, r[u].style[p] = d)
 								}
 						}
 						o.setState({
@@ -666,13 +641,13 @@
 										for (var o = 0; o < n.length; o++)
 											if (n[o].key !== t[o].key) return !1;
 										for (o = 0; o < n.length; o++)
-											if (!d.default(e[o], t[o].style, r[o])) return !1;
+											if (!p.default(e[o], t[o].style, r[o])) return !1;
 										return !0
 									}(o.state.currentStyles, r, o.state.currentVelocities, o.state.mergedPropsStyles)) return o.animationID = null, void(o.accumulatedTime = 0);
 								var n = e || c.default(),
 									a = n - o.prevTime;
 								if (o.prevTime = n, o.accumulatedTime = o.accumulatedTime + a, o.accumulatedTime > 10 * y && (o.accumulatedTime = 0), 0 === o.accumulatedTime) return o.animationID = null, void o.startAnimationIfNecessary();
-								for (var i = (o.accumulatedTime - Math.floor(o.accumulatedTime / y) * y) / y, s = Math.floor(o.accumulatedTime / y), u = v(o.props.willEnter, o.props.willLeave, o.props.didLeave, o.state.mergedPropsStyles, r, o.state.currentStyles, o.state.currentVelocities, o.state.lastIdealStyles, o.state.lastIdealVelocities), f = u[0], p = u[1], m = u[2], b = u[3], g = u[4], O = 0; O < f.length; O++) {
+								for (var i = (o.accumulatedTime - Math.floor(o.accumulatedTime / y) * y) / y, s = Math.floor(o.accumulatedTime / y), u = v(o.props.willEnter, o.props.willLeave, o.props.didLeave, o.state.mergedPropsStyles, r, o.state.currentStyles, o.state.currentVelocities, o.state.lastIdealStyles, o.state.lastIdealVelocities), f = u[0], d = u[1], m = u[2], b = u[3], g = u[4], O = 0; O < f.length; O++) {
 									var _ = f[O].style,
 										j = {},
 										w = {},
@@ -692,10 +667,10 @@
 													A = E[1];
 												j[T] = I + (R - I) * i, w[T] = k + (A - k) * i, S[T] = I, x[T] = k
 											}
-										} b[O] = S, g[O] = x, p[O] = j, m[O] = w
+										} b[O] = S, g[O] = x, d[O] = j, m[O] = w
 								}
 								o.animationID = null, o.accumulatedTime -= s * y, o.setState({
-									currentStyles: p,
+									currentStyles: d,
 									currentVelocities: m,
 									lastIdealStyles: b,
 									lastIdealVelocities: g,
@@ -770,14 +745,14 @@
 						})) : t.map((function(e) {
 							return i.default(e.style)
 						})),
-						d = v(n, o, a, u, l, c, f, c, f),
-						p = d[0];
+						p = v(n, o, a, u, l, c, f, c, f),
+						d = p[0];
 					return {
-						currentStyles: d[1],
-						currentVelocities: d[2],
-						lastIdealStyles: d[3],
-						lastIdealVelocities: d[4],
-						mergedPropsStyles: p
+						currentStyles: p[1],
+						currentVelocities: p[2],
+						lastIdealStyles: p[3],
+						lastIdealVelocities: p[4],
+						mergedPropsStyles: d
 					}
 				}, t.prototype.componentDidMount = function() {
 					this.prevTime = c.default(), this.startAnimationIfNecessary()
@@ -790,9 +765,9 @@
 				}, t.prototype.render = function() {
 					var e = h(this.state.mergedPropsStyles, this.unreadPropStyles, this.state.currentStyles),
 						t = this.props.children(e);
-					return t && p.default.Children.only(t)
+					return t && d.default.Children.only(t)
 				}, t
-			}(p.default.Component);
+			}(d.default.Component);
 			t.default = b, e.exports = t.default
 		},
 		"./node_modules/react-motion/lib/mapToZero.js": function(e, t, r) {
@@ -1020,7 +995,7 @@
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return pe
+				return de
 			}));
 			var n = r("./node_modules/react/index.js");
 
@@ -1074,12 +1049,12 @@
 				return o(c(e)).left + i(e).scrollLeft
 			}
 
-			function d(e) {
+			function p(e) {
 				return a(e).getComputedStyle(e)
 			}
 
-			function p(e) {
-				var t = d(e),
+			function d(e) {
+				var t = p(e),
 					r = t.overflow,
 					n = t.overflowX,
 					o = t.overflowY;
@@ -1088,7 +1063,7 @@
 
 			function m(e, t, r) {
 				void 0 === r && (r = !1);
-				var n, s, d = c(t),
+				var n, s, p = c(t),
 					m = o(e),
 					y = l(t),
 					h = {
@@ -1099,10 +1074,10 @@
 						x: 0,
 						y: 0
 					};
-				return (y || !y && !r) && (("body" !== u(t) || p(d)) && (h = (n = t) !== a(n) && l(n) ? {
+				return (y || !y && !r) && (("body" !== u(t) || d(p)) && (h = (n = t) !== a(n) && l(n) ? {
 					scrollLeft: (s = n).scrollLeft,
 					scrollTop: s.scrollTop
-				} : i(n)), l(t) ? ((v = o(t)).x += t.clientLeft, v.y += t.clientTop) : d && (v.x = f(d))), {
+				} : i(n)), l(t) ? ((v = o(t)).x += t.clientLeft, v.y += t.clientTop) : p && (v.x = f(p))), {
 					x: m.left + h.scrollLeft - v.x,
 					y: m.top + h.scrollTop - v.y,
 					width: m.width,
@@ -1126,11 +1101,11 @@
 			function v(e, t) {
 				void 0 === t && (t = []);
 				var r = function e(t) {
-						return ["html", "body", "#document"].indexOf(u(t)) >= 0 ? t.ownerDocument.body : l(t) && p(t) ? t : e(h(t))
+						return ["html", "body", "#document"].indexOf(u(t)) >= 0 ? t.ownerDocument.body : l(t) && d(t) ? t : e(h(t))
 					}(e),
 					n = "body" === u(r),
 					o = a(r),
-					i = n ? [o].concat(o.visualViewport || [], p(r) ? r : []) : r,
+					i = n ? [o].concat(o.visualViewport || [], d(r) ? r : []) : r,
 					s = t.concat(i);
 				return n ? s : s.concat(v(h(i)))
 			}
@@ -1140,14 +1115,14 @@
 			}
 
 			function g(e) {
-				return l(e) && "fixed" !== d(e).position ? e.offsetParent : null
+				return l(e) && "fixed" !== p(e).position ? e.offsetParent : null
 			}
 
 			function O(e) {
-				for (var t = a(e), r = g(e); r && b(r) && "static" === d(r).position;) r = g(r);
-				return r && "body" === u(r) && "static" === d(r).position ? t : r || function(e) {
+				for (var t = a(e), r = g(e); r && b(r) && "static" === p(r).position;) r = g(r);
+				return r && "body" === u(r) && "static" === p(r).position ? t : r || function(e) {
 					for (var t = h(e); l(t) && ["html", "body"].indexOf(u(t)) < 0;) {
-						var r = d(t);
+						var r = p(t);
 						if ("none" !== r.transform || "none" !== r.perspective || "auto" !== r.willChange) return t;
 						t = t.parentNode
 					}
@@ -1230,7 +1205,7 @@
 						f = {
 							state: l,
 							setOptions: function(r) {
-								d(), l.options = Object.assign(Object.assign(Object.assign({}, a), l.options), r), l.scrollParents = {
+								p(), l.options = Object.assign(Object.assign(Object.assign({}, a), l.options), r), l.scrollParents = {
 									reference: s(e) ? v(e) : e.contextElement ? v(e.contextElement) : [],
 									popper: v(t)
 								};
@@ -1312,12 +1287,12 @@
 								}))), i
 							}),
 							destroy: function() {
-								d(), c = !0
+								p(), c = !0
 							}
 						};
 					if (!V(e, t)) return f;
 
-					function d() {
+					function p() {
 						u.forEach((function(e) {
 							return e()
 						})), u = []
@@ -1419,8 +1394,8 @@
 							y: Math.round(r * n) / n || 0
 						}
 					}(i),
-					d = f.x,
-					p = f.y,
+					p = f.x,
+					d = f.y,
 					m = i.hasOwnProperty("x"),
 					y = i.hasOwnProperty("y"),
 					h = S,
@@ -1428,12 +1403,12 @@
 					b = window;
 				if (u) {
 					var g = O(r);
-					g === a(r) && (g = c(r)), o === _ && (v = j, p -= g.clientHeight - n.height, p *= l ? 1 : -1), o === S && (h = w, d -= g.clientWidth - n.width, d *= l ? 1 : -1)
+					g === a(r) && (g = c(r)), o === _ && (v = j, d -= g.clientHeight - n.height, d *= l ? 1 : -1), o === S && (h = w, p -= g.clientWidth - n.width, p *= l ? 1 : -1)
 				}
 				var x, T = Object.assign({
 					position: s
 				}, u && K);
-				return l ? Object.assign(Object.assign({}, T), {}, ((x = {})[v] = y ? "0" : "", x[h] = m ? "0" : "", x.transform = (b.devicePixelRatio || 1) < 2 ? "translate(" + d + "px, " + p + "px)" : "translate3d(" + d + "px, " + p + "px, 0)", x)) : Object.assign(Object.assign({}, T), {}, ((t = {})[v] = y ? p + "px" : "", t[h] = m ? d + "px" : "", t.transform = "", t))
+				return l ? Object.assign(Object.assign({}, T), {}, ((x = {})[v] = y ? "0" : "", x[h] = m ? "0" : "", x.transform = (b.devicePixelRatio || 1) < 2 ? "translate(" + p + "px, " + d + "px)" : "translate3d(" + p + "px, " + d + "px, 0)", x)) : Object.assign(Object.assign({}, T), {}, ((t = {})[v] = y ? d + "px" : "", t[h] = m ? p + "px" : "", t.transform = "", t))
 			}
 			var Y = {
 				left: "right",
@@ -1506,7 +1481,7 @@
 						a = Math.max(t.scrollHeight, t.clientHeight, n ? n.scrollHeight : 0, n ? n.clientHeight : 0),
 						s = -r.scrollLeft + f(e),
 						l = -r.scrollTop;
-					return "rtl" === d(n || t).direction && (s += Math.max(t.clientWidth, n ? n.clientWidth : 0) - o), {
+					return "rtl" === p(n || t).direction && (s += Math.max(t.clientWidth, n ? n.clientWidth : 0) - o), {
 						width: o,
 						height: a,
 						x: s,
@@ -1518,7 +1493,7 @@
 			function ee(e, t, r) {
 				var n = "clippingParents" === t ? function(e) {
 						var t = v(e),
-							r = ["absolute", "fixed"].indexOf(d(e).position) >= 0 && l(e) ? O(e) : e;
+							r = ["absolute", "fixed"].indexOf(p(e).position) >= 0 && l(e) ? O(e) : e;
 						return s(r) ? t.filter((function(e) {
 							return s(e) && G(e, r)
 						})) : []
@@ -1556,17 +1531,17 @@
 					l = void 0 === i ? k : i,
 					u = r.rootBoundary,
 					f = void 0 === u ? M : u,
-					d = r.elementContext,
-					p = void 0 === d ? D : d,
+					p = r.elementContext,
+					d = void 0 === p ? D : p,
 					m = r.altBoundary,
 					y = void 0 !== m && m,
 					h = r.padding,
 					v = void 0 === h ? 0 : h,
 					b = te("number" != typeof v ? v : re(v, T)),
-					g = p === D ? E : D,
+					g = d === D ? E : D,
 					O = e.elements.reference,
 					S = e.rects.popper,
-					x = e.elements[y ? g : p],
+					x = e.elements[y ? g : d],
 					P = ee(s(x) ? x : x.contextElement || c(e.elements.popper), l, f),
 					I = o(O),
 					R = F({
@@ -1576,7 +1551,7 @@
 						placement: a
 					}),
 					A = J(Object.assign(Object.assign({}, S), R)),
-					C = p === D ? A : I,
+					C = d === D ? A : I,
 					N = {
 						top: P.top - C.top + b.top,
 						bottom: C.bottom - P.bottom + b.bottom,
@@ -1584,7 +1559,7 @@
 						right: C.right - P.right + b.right
 					},
 					L = e.modifiersData.offset;
-				if (p === D && L) {
+				if (d === D && L) {
 					var V = L[a];
 					Object.keys(N).forEach((function(e) {
 						var t = [w, j].indexOf(e) >= 0 ? 1 : -1,
@@ -1775,7 +1750,7 @@
 								r = e.options,
 								n = e.name;
 							if (!t.modifiersData[n]._skip) {
-								for (var o = r.mainAxis, a = void 0 === o || o, i = r.altAxis, s = void 0 === i || i, l = r.fallbackPlacements, u = r.padding, c = r.boundary, f = r.rootBoundary, d = r.altBoundary, p = r.flipVariations, m = void 0 === p || p, y = r.allowedAutoPlacements, h = t.options.placement, v = B(h), b = l || (v === h || !m ? [Z(h)] : function(e) {
+								for (var o = r.mainAxis, a = void 0 === o || o, i = r.altAxis, s = void 0 === i || i, l = r.fallbackPlacements, u = r.padding, c = r.boundary, f = r.rootBoundary, p = r.altBoundary, d = r.flipVariations, m = void 0 === d || d, y = r.allowedAutoPlacements, h = t.options.placement, v = B(h), b = l || (v === h || !m ? [Z(h)] : function(e) {
 										if (B(e) === x) return [];
 										var t = Z(e);
 										return [X(e), t, X(t)]
@@ -1824,7 +1799,7 @@
 											placement: C,
 											boundary: c,
 											rootBoundary: f,
-											altBoundary: d,
+											altBoundary: p,
 											padding: u
 										}),
 										H = V ? L ? w : S : L ? j : _;
@@ -1874,8 +1849,8 @@
 								u = r.rootBoundary,
 								c = r.altBoundary,
 								f = r.padding,
-								d = r.tether,
-								p = void 0 === d || d,
+								p = r.tether,
+								d = void 0 === p || p,
 								m = r.tetherOffset,
 								h = void 0 === m ? 0 : m,
 								v = ne(t, {
@@ -1907,11 +1882,11 @@
 										L = k[T],
 										V = k[T] + v[A],
 										W = k[T] - v[C],
-										U = p ? -D[N] / 2 : 0,
+										U = d ? -D[N] / 2 : 0,
 										F = g === P ? M[N] : D[N],
 										K = g === P ? -D[N] : -M[N],
 										z = t.elements.arrow,
-										Y = p && z ? y(z) : {
+										Y = d && z ? y(z) : {
 											width: 0,
 											height: 0
 										},
@@ -1931,7 +1906,7 @@
 										re = t.modifiersData.offset ? t.modifiersData.offset[t.placement][T] : 0,
 										ae = k[T] + J - re - te,
 										ie = k[T] + Q - re,
-										se = oe(p ? Math.min(V, ae) : V, L, p ? Math.max(W, ie) : W);
+										se = oe(d ? Math.min(V, ae) : V, L, d ? Math.max(W, ie) : W);
 									k[T] = se, R[T] = se - L
 								}
 								if (s) {
@@ -1961,14 +1936,14 @@
 								var u = r.modifiersData[n + "#persistent"].padding,
 									c = y(o),
 									f = "y" === s ? _ : S,
-									d = "y" === s ? j : w,
-									p = r.rects.reference[l] + r.rects.reference[s] - a[s] - r.rects.popper[l],
+									p = "y" === s ? j : w,
+									d = r.rects.reference[l] + r.rects.reference[s] - a[s] - r.rects.popper[l],
 									m = a[s] - r.rects.reference[s],
 									h = O(o),
 									v = h ? "y" === s ? h.clientHeight || 0 : h.clientWidth || 0 : 0,
-									b = p / 2 - m / 2,
+									b = d / 2 - m / 2,
 									g = u[f],
-									x = v - c[l] - u[d],
+									x = v - c[l] - u[p],
 									T = v / 2 - c[l] / 2 + b,
 									P = oe(g, T, x),
 									I = s;
@@ -2032,15 +2007,15 @@
 					}), {})
 				},
 				fe = "undefined" != typeof window && window.document && window.document.createElement ? n.useLayoutEffect : n.useEffect,
-				de = [],
-				pe = function(e, t, r) {
+				pe = [],
+				de = function(e, t, r) {
 					void 0 === r && (r = {});
 					var o = n.useRef(null),
 						a = {
 							onFirstUpdate: r.onFirstUpdate,
 							placement: r.placement || "bottom",
 							strategy: r.strategy || "absolute",
-							modifiers: r.modifiers || de
+							modifiers: r.modifiers || pe
 						},
 						i = n.useState({
 							styles: {
@@ -2287,4 +2262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~StandalonePostPage.afa76ba70fc83660f662.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~StandalonePostPage.8c700812183259010dec.js.map
