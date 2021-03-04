@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.56fbfa3dfa70914c2383.js
-// Retrieved at 3/4/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.14e49f7f5d65afde1ceb.js
+// Retrieved at 3/4/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var t, a, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(n, a) && n[a] && b.push(n[a][0]), n[a] = 0;
@@ -331,6 +331,7 @@
 					SubredditPremiumBadgeManagement: "SubredditPremiumBadgeManagement",
 					SurveyAsync: "SurveyAsync",
 					UserDataRequestPage: "UserDataRequestPage",
+					UserFlair: "UserFlair",
 					UserZoomIntegration: "UserZoomIntegration",
 					"css-vars-ponyfill": "css-vars-ponyfill",
 					givePremiumTrackers: "givePremiumTrackers",
@@ -582,11 +583,12 @@
 					SubredditPremiumBadgeManagement: "34721cd683b001f539cd",
 					SurveyAsync: "3a0c970eede589103db4",
 					UserDataRequestPage: "4819b651cde10df74777",
+					UserFlair: "31d6cfe0d16ae931b73c",
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "d9b7305c70ec6b5e52aa",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "fc8b5ba0e2e75c2d1e87",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "30ca9b2135a02a0111a4",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "6061d20046f717e7e755",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/pseudo_long-json": "31d6cfe0d16ae931b73c",
 					"translations/pseudo_short-json": "31d6cfe0d16ae931b73c",
@@ -858,6 +860,7 @@
 						SubredditPremiumBadgeManagement: "SubredditPremiumBadgeManagement",
 						SurveyAsync: "SurveyAsync",
 						UserDataRequestPage: "UserDataRequestPage",
+						UserFlair: "UserFlair",
 						UserZoomIntegration: "UserZoomIntegration",
 						"css-vars-ponyfill": "css-vars-ponyfill",
 						givePremiumTrackers: "givePremiumTrackers",
@@ -1024,19 +1027,19 @@
 						Acknowledgements: "2e1f5f7d5ffd48ab76ed",
 						Appeal: "cb383dcf6c4d4e4395b5",
 						Avatar: "a2dfc0200ad64e4135e8",
-						BadgePickerModal: "469eddad385b51d8255d",
+						BadgePickerModal: "47e990305a67cce2cac2",
 						BadgePurchaseModal: "d28bc3e936ac76aa7b64",
 						BannedUserModal: "dc2aa4b4f834e2f61816",
 						ChangeUsernameModals: "34f3b6adf1b6f0d61e3a",
 						ChangeUsernameTooltip: "8f4f8fc0b8e25990ed40",
 						"ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8": "ede632e4d8752e75345b",
-						"AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki": "6cd54971ae38236d7057",
+						"AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki": "9a0de8fe13d2c12532b2",
 						EconTopAwardersModal: "b32fff58799245d63df5",
 						"CoinPurchaseModal~PennyPurchaseModal": "a9f5d9c9451f98928e06",
 						CoinPurchaseModal: "5ffa322c7678ac2e3d04",
 						Coins: "eb7c92ee077366a8bbab",
 						CoinsMobile: "eafc69370a5cc9da858a",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "11c88c2fb3b507608104",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "49a1f60b78f876d77b8a",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86": "8ef54ddfe059e84e8fbd",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "4ec79e40bb1c8beaf501",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "991df4e9b636e6ac9079",
@@ -1109,11 +1112,12 @@
 						SubredditPremiumBadgeManagement: "17e7dc462dd352b8b3f8",
 						SurveyAsync: "badfdb1103b2c153c24d",
 						UserDataRequestPage: "70fcf17713cd23390a95",
+						UserFlair: "fe257954426b7c0222a1",
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "85490f87c936c0c8d32c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "57c822b46b2e889abf3b",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "611a9209ea28e959f729",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "c4ce695003fe76e96782",
 						"translations/de_DE-json": "69faee7802ae1bb59576",
 						"translations/pseudo_long-json": "50505f0292d1fe805abb",
 						"translations/pseudo_short-json": "7414f6e6c8d56316860a",
@@ -1159,7 +1163,7 @@
 						"LiveVideoPlayer~PublicAccessNetwork": "40e2612664b69506ebda",
 						PublicAccessNetwork: "2bc7ae1749e261d22fa8",
 						"vendors~xml2js": "88f76e2e07b71eb98128",
-						AuthorHovercard: "c1c62759828bed962f81",
+						AuthorHovercard: "44d5d3f1b17a74337d50",
 						AwardTooltip: "75192321b39ffb1b87c5",
 						CustomBadgeHovercardTooltip: "db7aee427da69fc16368",
 						GovernanceUserPublicPointsDisplay: "5cc5fc4991a4aff07d33",
@@ -1251,9 +1255,9 @@
 						"reddit-components-ModHub-ChatSettings": "f3149364bd656a564064",
 						"reddit-components-ModHub-ContentControls": "ccb2e3cce85b8894e534",
 						"reddit-components-ModHub-TrafficStats": "1ffc7a812f05eb914eff",
-						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "07d02652c39f6c80fdff",
+						"reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement": "31e0fa4ae201d3baad0a",
 						"reddit-components-ModHub-flairs-PostFlairManagement": "1c119806531abe89c804",
-						"reddit-components-ModHub-flairs-UserFlairManagement": "8ed862d6bbcc58d7ff75",
+						"reddit-components-ModHub-flairs-UserFlairManagement": "f2c6968a1a8e54b0d999",
 						"reddit-components-RecurringPostList-EditModal": "43ae1797ae89b5518f12",
 						"reddit-components-Wiki-ModHubWikiManagement": "167450e92988b9bd48ae",
 						"Download OBS Modal": "911b385f5ac3f5ff9d61",
@@ -1333,4 +1337,4 @@
 	var m = c;
 	d()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.56fbfa3dfa70914c2383.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.14e49f7f5d65afde1ceb.js.map
