@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/translations/pseudo_long-json.50505f0292d1fe805abb.js
-// Retrieved at 3/4/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["translations/pseudo_long-json"], {
 		"./src/i18n/translatedFbts/pseudo_long.json": function(e) {
