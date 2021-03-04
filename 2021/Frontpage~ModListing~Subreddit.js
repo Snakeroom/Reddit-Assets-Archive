@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.6715e03c8bc5fa357da3.js
-// Retrieved at 3/4/2021, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.81af632372c0f052ff41.js
+// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2564,7 +2564,7 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: n.qb
 					});
-					return !(!t || Object(n.qd)(t))
+					return !(!t || Object(n.sd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -2679,4 +2679,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.6715e03c8bc5fa357da3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.81af632372c0f052ff41.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.940d33c340748d3d7c10.js
-// Retrieved at 3/4/2021, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.028f9ceec93f7ae2f165.js
+// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -1984,7 +1984,7 @@
 								experimentName: o.y,
 								expEventOverride: e
 							});
-							return !!(Object(o.qd)(n) ? void 0 : n)
+							return !!(Object(o.sd)(n) ? void 0 : n)
 						})(n)) || (t => !1 !== t.collapsed)(e)
 					})
 				}
@@ -3276,4 +3276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.940d33c340748d3d7c10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d.028f9ceec93f7ae2f165.js.map

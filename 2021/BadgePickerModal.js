@@ -1,5 +1,5 @@
 // https://www.redditstatic.com/desktop2x/BadgePickerModal.47e990305a67cce2cac2.js
-// Retrieved at 3/4/2021, 6:40:03 PM by Reddit Dataminer v1.0.0
+// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePickerModal"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {

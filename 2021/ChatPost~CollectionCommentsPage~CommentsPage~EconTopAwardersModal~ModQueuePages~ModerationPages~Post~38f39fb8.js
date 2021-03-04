@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.9a873e9605a8b0c853f1.js
-// Retrieved at 3/4/2021, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8c1ae6ed74ef6c546af1.js
+// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -3045,7 +3045,7 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.qb
 					});
-					return !(!t || Object(s.qd)(t))
+					return !(!t || Object(s.sd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
@@ -3075,4 +3075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.9a873e9605a8b0c853f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8c1ae6ed74ef6c546af1.js.map

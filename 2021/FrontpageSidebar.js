@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.816b216640c808455022.js
-// Retrieved at 3/4/2021, 6:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.c3acaf7bbe9974186e6c.js
+// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -1683,4 +1683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.816b216640c808455022.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.c3acaf7bbe9974186e6c.js.map
