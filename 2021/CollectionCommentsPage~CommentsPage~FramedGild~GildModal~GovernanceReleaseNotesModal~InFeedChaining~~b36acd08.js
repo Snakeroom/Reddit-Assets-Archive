@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.cf50fe45322333789597.js
-// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.fd9eceed32ccccdd0fa4.js
+// Retrieved at 3/4/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/lib/combineRefs/index.tsx": function(e, t, s) {
@@ -1186,17 +1186,11 @@
 							currentTime: s
 						} = e;
 						this.setState({
-							isRecovering: !0,
-							videoWaiting: !0
-						}), e.addEventListener("loadedmetadata", () => {
-							e.addEventListener("playing", () => {
-								this.setState({
-									isRecovering: !1,
-									videoWaiting: !1
-								})
-							}, {
-								once: !0
-							}), e.currentTime = s, null == e || e.play()
+							isRecovering: !0
+						}), e.addEventListener("loadedmetadata", async () => {
+							e.currentTime = s, await e.play(), this.setState({
+								isRecovering: !1
+							})
 						}, {
 							once: !0
 						}), this.dashPlayer.attachSource(t)
@@ -1529,7 +1523,7 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = `Reddit/Version Build d1bfdac2733066d13ffc03c3f297fe170ba5f39c-production ${t}`;
+									let s = `Reddit/Version Build 25fd2b3e100d6a43069defda28d8041f69070f70-production ${t}`;
 									return n && (s += ` [${w.id}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -1605,7 +1599,7 @@
 						a = this.props.isOverlayOpen !== e.isOverlayOpen,
 						n = !!this.props.isListing && e.mutedInFeed !== this.props.mutedInFeed,
 						o = e.volume !== this.props.volume;
-					return t.videoFullScreen !== this.state.videoFullScreen || t.videoPaused !== this.state.videoPaused || t.isMuted !== this.state.isMuted || t.hideControlBar !== this.state.hideControlBar || t.settingChange !== this.state.settingChange || t.videoScrollPaused !== this.state.videoScrollPaused || t.videoWaiting !== this.state.videoWaiting || e.shouldPause !== this.props.shouldPause || e.shouldStop !== this.props.shouldStop || t.videoLoaded !== this.state.videoLoaded || t.usingKeys !== this.state.usingKeys || t.resolution !== this.state.resolution || s || i || a || n || o
+					return t.videoFullScreen !== this.state.videoFullScreen || t.videoPaused !== this.state.videoPaused || t.isMuted !== this.state.isMuted || t.hideControlBar !== this.state.hideControlBar || t.settingChange !== this.state.settingChange || t.videoScrollPaused !== this.state.videoScrollPaused || t.videoWaiting !== this.state.videoWaiting || t.isRecovering !== this.state.isRecovering || e.shouldPause !== this.props.shouldPause || e.shouldStop !== this.props.shouldStop || t.videoLoaded !== this.state.videoLoaded || t.usingKeys !== this.state.usingKeys || t.resolution !== this.state.resolution || s || i || a || n || o
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					const t = this.HTML5StreamPlayerVideo,
@@ -1714,7 +1708,7 @@
 						settingChange: h,
 						videoEnded: u,
 						videoLoaded: p
-					} = this.state, g = this.HTML5StreamPlayerVideo, v = h === Ae.SeekBar, f = p || !t, x = d || f && g && 0 !== g.currentTime, y = !o && c, S = u && !v, P = {
+					} = this.state, g = this.HTML5StreamPlayerVideo, v = h === Ae.SeekBar, f = p || !t, x = f && g && 0 !== g.currentTime, y = !o && c, S = u && !v, P = {
 						...this.props,
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
@@ -1757,7 +1751,7 @@
 						postId: this.props.postId,
 						source: this.props.callToActionSource,
 						callToAction: this.props.callToActionText
-					}) : l.a.createElement(ze, null), this.state.videoWaiting ? x && l.a.createElement(E.a, null) : this.state.videoPaused && !S && l.a.createElement(C.a, {
+					}) : l.a.createElement(ze, null), d ? l.a.createElement(E.a, null) : this.state.videoWaiting ? x && l.a.createElement(E.a, null) : this.state.videoPaused && !S && l.a.createElement(C.a, {
 						onClick: s ? void 0 : this.playPauseVideo
 					}), i && l.a.createElement(G.b, {
 						clickSnoo: this.clickSnoo,
@@ -2434,4 +2428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.cf50fe45322333789597.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.fd9eceed32ccccdd0fa4.js.map
