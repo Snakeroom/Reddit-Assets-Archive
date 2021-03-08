@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.87d2c2d95c3823fa1f5d.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.67db2a2e5b1be0f3564a.js
+// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -8966,7 +8966,7 @@
 							permission: n
 						} = e;
 						let s = !1;
-						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && ls.X(t)), this.setState(e => ({
+						t !== this.lastNotificationsState.isEnabled && (s = t !== this.state.desktopNotifications, t && ls.Z(t)), this.setState(e => ({
 							desktopNotifications: s ? t : e.desktopNotifications,
 							notificationPermission: n
 						})), this.lastNotificationsState = e
@@ -8976,7 +8976,7 @@
 						this.setState({
 							desktopNotifications: e
 						}, () => {
-							this.trackPreferenceToggled("desktop_notification_permissions", e), ls.X(e)
+							this.trackPreferenceToggled("desktop_notification_permissions", e), ls.Z(e)
 						})
 					}, this.handleBroadcastRecommendationsClick = () => {
 						const {
@@ -11268,4 +11268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.87d2c2d95c3823fa1f5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.67db2a2e5b1be0f3564a.js.map

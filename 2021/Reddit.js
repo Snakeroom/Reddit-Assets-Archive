@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ecbcafc902580a58b6bb.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.f22721b0db84338f74b8.js
+// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1800,7 +1800,7 @@
 						}),
 						kind: m.b.SuccessCommunity,
 						text: c
-					})), Object(i.bb)(r + 1)
+					})), Object(i.db)(r + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, n) {
@@ -2848,14 +2848,14 @@
 						e && Ee.a.remove(Lt.a, {
 							domain: U.a.cookieDomain
 						});
-						const t = Object(Dt.u)(et.a.ALPHA_CONSUMER);
-						t && Object(Dt.N)(et.a.ALPHA_CONSUMER), (e || t) && Object(Dt.kb)(et.a.REDESIGN_MODAL, !0)
+						const t = Object(Dt.v)(et.a.ALPHA_CONSUMER);
+						t && Object(Dt.O)(et.a.ALPHA_CONSUMER), (e || t) && Object(Dt.nb)(et.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
-					} = this.props, n = Object(Dt.u)(et.a.REDESIGN_MODAL);
-					!e && n ? t() : e && !n && Object(Dt.kb)(et.a.REDESIGN_MODAL, !0)
+					} = this.props, n = Object(Dt.v)(et.a.REDESIGN_MODAL);
+					!e && n ? t() : e && !n && Object(Dt.nb)(et.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -5749,7 +5749,7 @@
 					}, this.close = () => {
 						this.props.dropdownIsOpen && this.props.onToggleDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(Dt.O)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(Dt.P)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -5759,7 +5759,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(Dt.rb)({
+							recentSearches: Object(Dt.ub)({
 								...e,
 								section: co.c.recent
 							}, this.props.currentUser.id)
@@ -5853,7 +5853,7 @@
 						}
 					}, this.toggleDropdownAndGetTrending = () => {
 						if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser) {
-							const e = Object(Dt.B)(this.props.currentUser.id);
+							const e = Object(Dt.C)(this.props.currentUser.id);
 							e.length > 0 && (this.setState({
 								recentSearches: this.props.isLoggedIn ? e : [],
 								itemList: [...e, ...this.props.trendingItems]
@@ -14497,7 +14497,7 @@
 			const ne = 1e3;
 			class se extends m.a.Component {
 				constructor() {
-					super(...arguments), this.flush = ee()(() => Object(te.hb)(this.props.storageKey, this.props.value), ne)
+					super(...arguments), this.flush = ee()(() => Object(te.kb)(this.props.storageKey, this.props.value), ne)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -14655,7 +14655,7 @@
 					return s
 				} : () => e => t => e(t),
 				Ke = n("./src/reddit/helpers/survey/index.ts");
-			var Ze = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Ke.b).filter(t => t === e).length)(t.type) && Object(te.H)(Ke.b[t.type]), e(t)) : () => e => t => e(t);
+			var Ze = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Ke.b).filter(t => t === e).length)(t.type) && Object(te.I)(Ke.b[t.type]), e(t)) : () => e => t => e(t);
 			const Je = 5 * g.db;
 			var Ye = e => {
 					const t = ee()(() => {
@@ -14911,7 +14911,7 @@
 				Zt = n("./src/reddit/actions/publicAccessNetwork/constants.ts");
 			const Jt = Object(zt.a)(Zt.C),
 				Yt = () => {
-					return Object(te.q)(Y.a.RPAN_USER_SETTINGS_STORE) || void 0
+					return Object(te.r)(Y.a.RPAN_USER_SETTINGS_STORE) || void 0
 				};
 			var Xt = n("./src/reddit/actions/global/constants.ts");
 			Object(Wt.a)({
@@ -15064,7 +15064,7 @@
 						Object(qe.i)(o) && e.push(le.e), e.length > 0 && n.dispatch(Object(u.c)(Object(v.a)(c.url, e)))
 					}
 					return ft.a.initialize(), {
-						localStorageData: Object(te.r)()
+						localStorageData: Object(te.s)()
 					}
 				},
 				postRender: ({
@@ -15164,7 +15164,7 @@
 									text: s.fbt._("Successfully logged in!", null, {
 										hk: "2POUVB"
 									})
-								})), m = !0, Object(lt.c)(ce.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [le.o]))), Object(lt.b)(ce.a.JustLoggedOut) && (m = !0, Object(lt.c)(ce.a.JustLoggedOut)), Object(U.b)(t), !1 !== te.I()) {
+								})), m = !0, Object(lt.c)(ce.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [le.o]))), Object(lt.b)(ce.a.JustLoggedOut) && (m = !0, Object(lt.c)(ce.a.JustLoggedOut)), Object(U.b)(t), !1 !== te.J()) {
 								let n;
 								Object(Dt.a)(t) && (n = () => {
 									const {
@@ -15207,16 +15207,17 @@
 								{
 									currentPage: t
 								} = e.platform;
-							if ("visible" !== document.visibilityState && (te.vb(Date.now()), Object(k.a)(Ct("tab_backgrounded")(e))), (e => Object(Lt.c)(e, {
+							if ("visible" !== document.visibilityState && (te.yb(Date.now()), Object(k.a)(Ct("tab_backgrounded")(e))), (e => Object(Lt.c)(e, {
 									experimentEligibilitySelector: e => !Object(qt.d)(e),
 									experimentName: Rt.T
 								}) === Rt.bb.Enabled)(e) && "visible" === document.visibilityState && t && Object(pt.k)(t.routeMatch, c.getState(), I.TimerType.Revisit, 0, t.urlParams, !0), "visible" === document.visibilityState) {
 								const e = te.p(),
-									t = te.w(),
-									n = te.F();
-								if (n && e && t) {
-									const s = Date.now() - n;
-									Object(k.a)(((e, t) => (n, s, r) => ({
+									t = te.q(),
+									n = te.x(),
+									s = te.G();
+								if (s && e && n) {
+									const r = Date.now() - s;
+									Object(k.a)(((e, t) => (n, s, r, o) => ({
 										...xt.defaults(n),
 										action: "refocus",
 										actionInfo: {
@@ -15230,9 +15231,12 @@
 										post: xt.post(n, r),
 										adClick: {
 											landingPageDuration: s
+										},
+										adMetadata: {
+											impressionId: o
 										}
-									}))("tab_backgrounded", t)(c.getState(), s, e))
-								}(n || e || t) && (te.P(), te.S(), te.Q())
+									}))("tab_backgrounded", n)(c.getState(), r, e, t))
+								}(s || e || n || t) && (te.Q(), te.U(), te.S(), te.R())
 							}
 						}), Object(qt.j)(c.getState()) && Et(c.getState), c.dispatch(Object(V.i)())
 					}), window.history.scrollRestoration = "manual", Vt.a.attachStore(c), c.dispatch(Object(H.b)(P.a.PageLoad))
@@ -17772,4 +17776,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ecbcafc902580a58b6bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f22721b0db84338f74b8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.db12689bfcea0a3f0b7f.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.7cfa20ad979325977f84.js
+// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1628,7 +1628,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.bb)(s + 1)
+					})), Object(i.db)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, o) {
@@ -3088,7 +3088,7 @@
 					} = e,
 					x = Object(n.useMemo)(() => {
 						const e = !Object(l.i)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE);
-						return e && Object(l.Z)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE), e
+						return e && Object(l.bb)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE), e
 					}, [o]),
 					[g, y] = Object(n.useState)(x);
 				Object(n.useEffect)(() => {
@@ -4522,4 +4522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.db12689bfcea0a3f0b7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.7cfa20ad979325977f84.js.map

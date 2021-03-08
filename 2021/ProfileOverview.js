@@ -1,9 +1,9 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.f330016fb5a8f3ca1388.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.1743102893cbe542879e.js
+// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"c63a85ddc7f8"}')
+			e.exports = JSON.parse('{"id":"c4b7fd558de2"}')
 		},
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
 			"use strict";
@@ -2870,7 +2870,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(Ct.qb)(), this.setState({
+						Object(Ct.tb)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -2890,7 +2890,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showEducation: !Object(Ct.A)()
+						showEducation: !Object(Ct.B)()
 					}), document.addEventListener("scroll", this.handleScroll), this.handleScroll()
 				}
 				componentWillUnmount() {
@@ -3367,4 +3367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.f330016fb5a8f3ca1388.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1743102893cbe542879e.js.map

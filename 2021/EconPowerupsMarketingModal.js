@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.4652f55c735b51d2bdf4.js
-// Retrieved at 3/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c0ee0ecf6de5c3854d03.js
+// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -151,8 +151,8 @@
 				w = s("./src/reddit/controls/Button/index.tsx"),
 				_ = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				f = s("./src/config.ts"),
-				k = s("./src/reddit/helpers/trackers/powerups.ts"),
-				E = s("./src/reddit/hooks/useTracking.ts"),
+				E = s("./src/reddit/helpers/trackers/powerups.ts"),
+				k = s("./src/reddit/hooks/useTracking.ts"),
 				h = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				x = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				P = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
@@ -164,7 +164,7 @@
 					const {
 						benefits: t,
 						className: s
-					} = e, n = Object(E.a)(), r = [...t, h.a.HeroStatus];
+					} = e, n = Object(k.a)(), r = [...t, h.a.HeroStatus];
 					return o.a.createElement("div", {
 						className: Object(u.a)(N.a.container, s)
 					}, r.map(e => h.e[e] && o.a.createElement(x.a, {
@@ -173,7 +173,7 @@
 						iconUrl: `${f.a.assetPath}/img/powerups/${e}_v2.svg`,
 						key: `cell_${e}`,
 						onClick: () => {
-							n(Object(k.b)())
+							n(Object(E.b)())
 						},
 						title: h.e[e]()
 					})))
@@ -276,7 +276,7 @@
 				}, o.a.createElement(w.i, {
 					className: C.a.footerButton,
 					onClick: () => {
-						Object(i.kb)(l.a.ECON_POWERUPS_MARKETING, !0), c(Object(b.h)(l.a.ECON_POWERUPS_PURCHASE))
+						Object(i.nb)(l.a.ECON_POWERUPS_MARKETING, !0), c(Object(b.h)(l.a.ECON_POWERUPS_PURCHASE))
 					}
 				}, S._("Powerup This Community", null, {
 					hk: "3gjy90"
@@ -384,4 +384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.4652f55c735b51d2bdf4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c0ee0ecf6de5c3854d03.js.map
