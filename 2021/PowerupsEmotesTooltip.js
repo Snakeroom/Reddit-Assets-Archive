@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.797ad83b42dabb98e032.js
-// Retrieved at 3/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.8f0f68494a455af72665.js
+// Retrieved at 3/8/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/components/Econ/Common/NewIcon/index.m.less": function(e, t, o) {
@@ -185,8 +185,8 @@
 					})),
 					I = _ ? s.fbt._("Your community has been powered up with emojis.", null, {
 						hk: "1S9hhd"
-					}) : s.fbt._("Power up this community to unlock emojis.", null, {
-						hk: "3ol6Ts"
+					}) : s.fbt._("Powerup this community to unlock emojis.", null, {
+						hk: "17izsl"
 					}),
 					O = f ? s.fbt._("Images under 128kb with a transparent background work the best.", null, {
 						hk: "c6yXl"
@@ -456,4 +456,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.797ad83b42dabb98e032.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.8f0f68494a455af72665.js.map
