@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.15d8eca126e748b9df7e.js
-// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.81b3461e78ef936893b5.js
+// Retrieved at 3/8/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -12418,12 +12418,7 @@
 				onDeleteMessage() {
 					const e = new this.self.ChannelHandler;
 					e.onMessageDeleted = (e, t) => {
-						try {
-							const e = Number(t);
-							this.dispatch(Object(E.v)(e))
-						} catch (n) {
-							Object(N.b)(n)
-						}
+						this.dispatch(Object(E.v)(t))
 					}, this.self.addChannelHandler("DELETE_CHANNEL_MESSAGE", e), this.channelUniqueHandlerID.push("DELETE_CHANNEL_MESSAGE")
 				}
 				onTypingStatusUpdated() {
@@ -14229,4 +14224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.15d8eca126e748b9df7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.81b3461e78ef936893b5.js.map

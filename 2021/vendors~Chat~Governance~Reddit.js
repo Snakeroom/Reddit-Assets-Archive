@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.b59c8e47874c052d9e89.js
-// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.c207dcd2e6dab5dd3fac.js
+// Retrieved at 3/8/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -31970,7 +31970,7 @@
 					},
 					_ = {
 						browser: [
-							[/(opera\smini)\/([\w\.-]+)/i, /(opera\s[mobiletab]+).+version\/([\w\.-]+)/i, /(opera).+version\/([\w\.]+)/i, /(opera)[\/\s]+([\w\.]+)/i],
+							[/(opera\smini)\/([\w\.-]+)/i, /(opera\s[mobiletab]{3,6}).+version\/([\w\.-]+)/i, /(opera).+version\/([\w\.]+)/i, /(opera)[\/\s]+([\w\.]+)/i],
 							[a, l],
 							[/(opios)[\/\s]+([\w\.]+)/i],
 							[
@@ -31986,7 +31986,7 @@
 							[
 								[a, "Konqueror"], l
 							],
-							[/(trident).+rv[:\s]([\w\.]+).+like\sgecko/i],
+							[/(trident).+rv[:\s]([\w\.]{1,9}).+like\sgecko/i],
 							[
 								[a, "IE"], l
 							],
@@ -32038,6 +32038,10 @@
 							[
 								[a, "Brave"], l
 							],
+							[/(whale)\/([\w\.]+)/i],
+							[
+								[a, "Whale"], l
+							],
 							[/(qqbrowserlite)\/([\w\.]+)/i],
 							[a, l],
 							[/(QQ)\/([\d\.]+)/i],
@@ -32056,6 +32060,10 @@
 							[l, [a, "MIUI Browser"]],
 							[/;fbav\/([\w\.]+);/i],
 							[l, [a, "Facebook"]],
+							[/FBAN\/FBIOS|FB_IAB\/FB4A/i],
+							[
+								[a, "Facebook"]
+							],
 							[/safari\s(line)\/([\w\.]+)/i, /android.+(line)\/([\w\.]+)\/iab/i],
 							[a, l],
 							[/headlesschrome(?:\/([\w\.]+)|\s)/i],
@@ -32094,11 +32102,11 @@
 							],
 							[/fxios\/([\w\.-]+)/i],
 							[l, [a, "Firefox"]],
-							[/version\/([\w\.]+).+?mobile\/\w+\s(safari)/i],
+							[/version\/([\w\.]+)\s.*mobile\/\w+\s(safari)/i],
 							[l, [a, "Mobile Safari"]],
-							[/version\/([\w\.]+).+?(mobile\s?safari|safari)/i],
+							[/version\/([\w\.]+)\s.*(mobile\s?safari|safari)/i],
 							[l, a],
-							[/webkit.+?(gsa)\/([\w\.]+).+?(mobile\s?safari|safari)(\/[\w\.]+)/i],
+							[/webkit.+?(gsa)\/([\w\.]+)\s.*(mobile\s?safari|safari)(\/[\w\.]+)/i],
 							[
 								[a, "GSA"], l
 							],
@@ -32110,7 +32118,7 @@
 							[
 								[a, "Netscape"], l
 							],
-							[/(swiftfox)/i, /(icedragon|iceweasel|camino|chimera|fennec|maemo\sbrowser|minimo|conkeror)[\/\s]?([\w\.\+]+)/i, /(firefox|seamonkey|k-meleon|icecat|iceape|firebird|phoenix|palemoon|basilisk|waterfox)\/([\w\.-]+)$/i, /(mozilla)\/([\w\.]+).+rv\:.+gecko\/\d+/i, /(polaris|lynx|dillo|icab|doris|amaya|w3m|netsurf|sleipnir)[\/\s]?([\w\.]+)/i, /(links)\s\(([\w\.]+)/i, /(gobrowser)\/?([\w\.]*)/i, /(ice\s?browser)\/v?([\w\._]+)/i, /(mosaic)[\/\s]([\w\.]+)/i],
+							[/(swiftfox)/i, /(icedragon|iceweasel|camino|chimera|fennec|maemo\sbrowser|minimo|conkeror)[\/\s]?([\w\.\+]+)/i, /(firefox|seamonkey|k-meleon|icecat|iceape|firebird|phoenix|palemoon|basilisk|waterfox)\/([\w\.-]+)$/i, /(firefox)\/([\w\.]+)\s[\w\s\-]+\/[\w\.]+$/i, /(mozilla)\/([\w\.]+)\s.+rv\:.+gecko\/\d+/i, /(polaris|lynx|dillo|icab|doris|amaya|w3m|netsurf|sleipnir)[\/\s]?([\w\.]+)/i, /(links)\s\(([\w\.]+)/i, /(gobrowser)\/?([\w\.]*)/i, /(ice\s?browser)\/v?([\w\._]+)/i, /(mosaic)[\/\s]([\w\.]+)/i],
 							[a, l]
 						],
 						cpu: [
@@ -32158,11 +32166,11 @@
 							],
 							[/(archos)\s(gamepad2?)/i, /(hp).+(touchpad)/i, /(hp).+(tablet)/i, /(kindle)\/([\w\.]+)/i, /\s(nook)[\w\s]+build\/(\w+)/i, /(dell)\s(strea[kpr\s\d]*[\dko])/i],
 							[c, s, [u, f]],
-							[/(kf[A-z]+)\sbuild\/.+silk\//i],
+							[/(kf[A-z]+)(\sbuild\/|\)).+silk\//i],
 							[s, [c, "Amazon"],
 								[u, f]
 							],
-							[/(sd|kf)[0349hijorstuw]+\sbuild\/.+silk\//i],
+							[/(sd|kf)[0349hijorstuw]+(\sbuild\/|\)).+silk\//i],
 							[
 								[s, m.str, b.device.amazon.model],
 								[c, "Amazon"],
@@ -32214,7 +32222,7 @@
 								[s, m.str, b.device.sprint.model],
 								[u, d]
 							],
-							[/(htc)[;_\s-]+([\w\s]+(?=\)|\sbuild)|\w+)/i, /(zte)-(\w*)/i, /(alcatel|geeksphone|nexian|panasonic|(?=;\s)sony)[_\s-]?([\w-]*)/i],
+							[/(htc)[;_\s-]{1,2}([\w\s]+(?=\)|\sbuild)|\w+)/i, /(zte)-(\w*)/i, /(alcatel|geeksphone|nexian|panasonic|(?=;\s)sony)[_\s-]?([\w-]*)/i],
 							[c, [s, /_/g, " "],
 								[u, d]
 							],
@@ -32222,7 +32230,7 @@
 							[s, [c, "HTC"],
 								[u, f]
 							],
-							[/d\/huawei([\w\s-]+)[;\)]/i, /(nexus\s6p|vog-l29|ane-lx1|eml-l29|ele-l29)/i],
+							[/d\/huawei([\w\s-]+)[;\)]/i, /android.+\s(nexus\s6p|vog-[at]?l\d\d|ane-[at]?l[x\d]\d|eml-a?l\d\da?|lya-[at]?l\d[\dc]|clt-a?l\d\di?)/i],
 							[s, [c, "Huawei"],
 								[u, d]
 							],
@@ -32266,7 +32274,7 @@
 							[s, [c, "Sharp"],
 								[u, h]
 							],
-							[/android.+((sch-i[89]0\d|shw-m380s|gt-p\d{4}|gt-n\d+|sgh-t8[56]9|nexus 10))/i, /((SM-T\w+))/i],
+							[/android.+((sch-i[89]0\d|shw-m380s|SM-P605|SM-P610|gt-p\d{4}|gt-n\d+|sgh-t8[56]9|nexus 10))/i, /((SM-T\w+))/i],
 							[
 								[c, "Samsung"], s, [u, f]
 							],
@@ -32296,8 +32304,10 @@
 							[
 								[c, "LG"], s, [u, f]
 							],
-							[/(lg) netcast\.tv/i],
-							[c, s, [u, h]],
+							[/linux;\snetcast.+smarttv/i, /lg\snetcast\.tv-201\d/i],
+							[
+								[c, "LG"], s, [u, h]
+							],
 							[/(nexus\s[45])/i, /lg[e;\s\/-]+(\w*)/i, /android.+lg(\-?[\d\w]+)\s+build/i],
 							[s, [c, "LG"],
 								[u, d]
@@ -32330,17 +32340,17 @@
 							[s, [c, "Google"],
 								[u, f]
 							],
-							[/android.+;\s(pixel( [23])?( xl)?)[\s)]/i],
+							[/android.+;\s(pixel( [2-9]a?)?( xl)?)[\s)]/i],
 							[s, [c, "Google"],
 								[u, d]
 							],
-							[/android.+;\s(\w+)\s+build\/hm\1/i, /android.+(hm[\s\-_]*note?[\s_]*(?:\d\w)?)\s+build/i, /android.+(mi[\s\-_]*(?:a\d|one|one[\s_]plus|note lte)?[\s_]*(?:\d?\w?)[\s_]*(?:plus)?)\s+build/i, /android.+(redmi[\s\-_]*(?:note)?(?:[\s_]?[\w\s]+))\s+build/i],
+							[/android.+;\s(\w+)\s+build\/hm\1/i, /android.+(hm[\s\-_]?note?[\s_]?(?:\d\w)?)\sbuild/i, /android.+(redmi[\s\-_]?(?:note|k)?(?:[\s_]?[\w\s]+))(?:\sbuild|\))/i, /android.+(mi[\s\-_]?(?:a\d|one|one[\s_]plus|note lte)?[\s_]?(?:\d?\w?)[\s_]?(?:plus)?)\sbuild/i],
 							[
 								[s, /_/g, " "],
 								[c, "Xiaomi"],
 								[u, d]
 							],
-							[/android.+(mi[\s\-_]*(?:pad)(?:[\s_]?[\w\s]+))\s+build/i],
+							[/android.+(mi[\s\-_]?(?:pad)(?:[\s_]?[\w\s]+))(?:\sbuild|\))/i],
 							[
 								[s, /_/g, " "],
 								[c, "Xiaomi"],
@@ -32362,7 +32372,7 @@
 							[s, [c, "RCA"],
 								[u, f]
 							],
-							[/android.+[;\/\s]+(Venue[\d\s]{2,7})\s+build/i],
+							[/android.+[;\/\s](Venue[\d\s]{2,7})\s+build/i],
 							[s, [c, "Dell"],
 								[u, f]
 							],
@@ -32424,7 +32434,7 @@
 							],
 							[/android.+[;\/]\s*(Le[\s\-]+Pan)[\s\-]+(\w{1,9})\s+build/i],
 							[c, s, [u, f]],
-							[/android.+[;\/]\s*(Trio[\s\-]*.*)\s+build/i],
+							[/android.+[;\/]\s*(Trio[\s\w\-\.]+)\s+build/i],
 							[s, [c, "MachSpeed"],
 								[u, f]
 							],
@@ -32434,12 +32444,12 @@
 							[s, [c, "Rotor"],
 								[u, f]
 							],
-							[/android.+(KS(.+))\s+build/i],
-							[s, [c, "Amazon"],
-								[u, f]
-							],
 							[/android.+(Gigaset)[\s\-]+(Q\w{1,9})\s+build/i],
 							[c, s, [u, f]],
+							[/android .+?; ([^;]+?)(?: build|\) applewebkit).+? mobile safari/i],
+							[s, [u, d]],
+							[/android .+?;\s([^;]+?)(?: build|\) applewebkit).+?(?! mobile) safari/i],
+							[s, [u, f]],
 							[/\s(tablet|tab)[;\/]/i, /\s(mobile)(?:[;\/]|\ssafari)/i],
 							[
 								[u, p.lowerize], c, s
@@ -32487,6 +32497,8 @@
 							[
 								[a, "Firefox OS"], l
 							],
+							[/crkey\/([\d\.]+)/i],
+							[l, [a, "Chromecast"]],
 							[/(nintendo|playstation)\s([wids34portablevu]+)/i, /(mint)[\/\s\(]?(\w*)/i, /(mageia|vectorlinux)[;\s]/i, /(joli|[kxln]?ubuntu|debian|suse|opensuse|gentoo|(?=\s)arch|slackware|fedora|mandriva|centos|pclinuxos|redhat|zenwalk|linpus)[\/\s-]?(?!chrom)([\w\.-]*)/i, /(hurd|linux)\s?([\w\.]*)/i, /(gnu)\s?([\w\.]*)/i],
 							[a, l],
 							[/(cros)\s[\w]+\s([\w\.]+\w)/i],
@@ -32564,7 +32576,7 @@
 							return n = e, this
 						}, this
 					};
-				y.VERSION = "0.7.22", y.BROWSER = {
+				y.VERSION = "0.7.23", y.BROWSER = {
 					NAME: a,
 					MAJOR: "major",
 					VERSION: l
@@ -34542,4 +34554,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.b59c8e47874c052d9e89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.c207dcd2e6dab5dd3fac.js.map
