@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.8652ba973fd68736cdb1.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.5aa3d131f205fea8b718.js
+// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip"], {
 		"./src/graphql/operations/DeleteInboxNotifications.json": function(t) {
@@ -20,7 +20,7 @@
 		"./src/reddit/actions/notificationSettingsLayout/index.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "a", (function() {
-				return g
+				return j
 			})), n.d(e, "b", (function() {
 				return x
 			})), n.d(e, "c", (function() {
@@ -39,7 +39,7 @@
 				f = Object(o.a)(s.f),
 				O = Object(o.a)(s.e),
 				p = Object(o.a)(s.d),
-				g = t => async (e, n, {
+				j = t => async (e, n, {
 					gqlContext: i
 				}) => {
 					t === r.a.Push ? e(f()) : e(b()), await async function(t, e, n) {
@@ -105,7 +105,7 @@
 						}))
 					}(i, t, e)
 				};
-			const j = Object(o.a)(s.g),
+			const g = Object(o.a)(s.g),
 				x = t => async (e, n, {
 					gqlContext: o
 				}) => {
@@ -127,7 +127,7 @@
 				};
 
 			function h(t, e) {
-				t(j({
+				t(g({
 					isEnabled: e.isEnabled,
 					messageType: e.messageType
 				}))
@@ -136,21 +136,21 @@
 		"./src/reddit/actions/notificationsInbox/index.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "d", (function() {
-				return P
+				return R
 			})), n.d(e, "a", (function() {
 				return M
 			})), n.d(e, "e", (function() {
-				return U
-			})), n.d(e, "b", (function() {
 				return B
-			})), n.d(e, "c", (function() {
+			})), n.d(e, "b", (function() {
 				return D
+			})), n.d(e, "c", (function() {
+				return q
 			})), n.d(e, "g", (function() {
-				return F
-			})), n.d(e, "h", (function() {
 				return G
-			})), n.d(e, "f", (function() {
+			})), n.d(e, "h", (function() {
 				return Y
+			})), n.d(e, "f", (function() {
+				return H
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/makeActionCreator/index.ts"),
@@ -165,45 +165,46 @@
 				f = n("./src/graphql/operations/NotificationInboxFeed.json"),
 				O = n("./src/lib/constants/index.ts"),
 				p = n("./src/lib/makeApiRequest/index.ts"),
-				g = n("./src/lib/omitHeaders/index.ts"),
-				j = n("./src/reddit/constants/headers.ts"),
+				j = n("./src/lib/omitHeaders/index.ts"),
+				g = n("./src/reddit/constants/headers.ts"),
 				x = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var h;
 			! function(t) {
 				t.Activity = "activity", t.Messages = "messages"
 			}(h || (h = {}));
-			var y = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
-				m = n("./src/graphql/operations/UpdateInboxActivitySeenState.json");
+			var m = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				y = n("./src/graphql/operations/UpdateInboxActivitySeenState.json");
 			var S = n("./src/reddit/models/Badge/index.ts"),
 				E = n("./src/reddit/models/NotificationInbox/index.ts"),
 				I = n("./src/reddit/models/Toast/index.ts"),
 				C = n("./src/reddit/selectors/appBadges.ts"),
-				T = n("./src/reddit/selectors/notificationPrefs.ts"),
-				_ = n("./src/reddit/selectors/notificationsInbox.tsx");
+				k = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				_ = n("./src/reddit/selectors/notificationPrefs.ts"),
+				T = n("./src/reddit/selectors/notificationsInbox.tsx");
 			const N = Object(o.a)(c.d),
-				k = Object(o.a)(c.b),
-				A = Object(o.a)(c.a),
-				P = t => async (e, n, {
+				A = Object(o.a)(c.b),
+				P = Object(o.a)(c.a),
+				R = t => async (e, n, {
 					gqlContext: i
 				}) => {
 					const o = n(),
-						s = Object(_.a)(o);
+						s = Object(T.a)(o);
 					e(N());
 					const a = await ((t, e) => Object(l.a)(t, {
 						...f,
 						variables: e
 					}))(i(), t);
-					if (!a.ok) return void A({
+					if (!a.ok) return void P({
 						error: a.error
 					});
 					const c = a && a.body,
-						r = R(c);
+						r = v(c);
 					if (null === s) {
-						const t = Object(_.f)(o);
-						e(v(r.nodes, t.length))
+						const t = Object(T.f)(o);
+						e(w(r.nodes, t.length))
 					}
-					e(k(r))
-				}, R = t => {
+					e(A(r))
+				}, v = t => {
 					const e = t && t.data,
 						n = e && e.notificationInbox,
 						i = n && n.elements,
@@ -212,9 +213,9 @@
 						nodes: (i && i.edges).map(t => t.node),
 						pageInfo: o
 					}
-				}, v = (t, e) => async (n, i) => {
+				}, w = (t, e) => async (n, i) => {
 					const o = i(),
-						s = Object(_.a)(o),
+						s = Object(T.a)(o),
 						a = ((t, e) => {
 							let n, i = 0;
 							const o = new Date,
@@ -233,10 +234,10 @@
 							}
 							return n
 						})(t, e);
-					a && a !== s && n(w({
+					a && a !== s && n(L({
 						index: a
 					}))
-				}, w = Object(o.a)(c.f), L = (Object(o.a)(c.g), Object(o.a)(c.e)), M = t => async (e, n, {
+				}, L = Object(o.a)(c.f), U = (Object(o.a)(c.g), Object(o.a)(c.e)), M = t => async (e, n, {
 					gqlContext: o
 				}) => {
 					const s = [t];
@@ -248,48 +249,90 @@
 						}))(o(), {
 							notificationIds: s
 						})).ok) {
-						e(L({
+						e(U({
 							id: t
 						}));
-						const o = Object(_.f)(n());
-						e(v(o)), e(Object(d.e)(Object(d.d)(i.fbt._("Notification hidden", null, {
+						const o = Object(T.f)(n());
+						e(w(o)), e(Object(d.e)(Object(d.d)(i.fbt._("Notification hidden", null, {
 							hk: "1jfPqO"
 						}), I.b.SuccessCommunityGreen)))
 					} else e(Object(d.e)(Object(d.d)(i.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
 					}), I.b.Error)))
-				}, U = t => async (e, n, {
-					gqlContext: o
+				}, B = (t, e) => async (n, o, {
+					gqlContext: s
 				}) => {
 					if (!t) return;
-					(await Object(y.b)(o(), t, {
+					const a = o(),
+						c = () => {
+							const n = Object(k.e)(a),
+								o = i.fbt._("Success! You won't see notifications from this community in the future.", null, {
+									hk: "2tkhbk"
+								});
+							return n ? Object(d.e)(Object(d.d)(o, I.b.Undo, i.fbt._("Undo", null, {
+								hk: "4zFGDk"
+							}), ((t, e) => async (n, o, {
+								gqlContext: s
+							}) => {
+								if (!t) return;
+								(await Object(m.b)(s(), t, {
+									isSubredditUpdatesInterestingPostEnabled: !0,
+									isUpdateFromSubredditEnabled: !0
+								})).ok ? (e && e(), n(Object(d.e)(Object(d.d)(i.fbt._("Success! Undone hiding notifications from this community.", null, {
+									hk: "1na0NP"
+								}), I.b.SuccessCommunityGreen)))) : n(Object(d.e)(Object(d.d)(i.fbt._("Failed to undo hiding notifications, please try again.", null, {
+									hk: "4jo7Pf"
+								}), I.b.Error)))
+							})(t, e))) : Object(d.e)(Object(d.d)(o, I.b.SuccessCommunityGreen))
+						};
+					(await Object(m.b)(s(), t, {
 						isSubredditUpdatesInterestingPostEnabled: !1,
 						isUpdateFromSubredditEnabled: !1
-					})).ok ? e(Object(d.e)(Object(d.d)(i.fbt._("Success! You won't see notifications from this community in the future.", null, {
-						hk: "2tkhbk"
-					}), I.b.SuccessCommunityGreen))) : e(Object(d.e)(Object(d.d)(i.fbt._("Failed to hide notifications, please try again.", null, {
+					})).ok ? n(c()) : n(Object(d.e)(Object(d.d)(i.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
 					}), I.b.Error)))
-				}, B = t => async (e, n, {
-					gqlContext: o
+				}, D = (t, e) => async (n, o, {
+					gqlContext: s
 				}) => {
 					if (!t) return;
-					(await Object(u.b)(o(), {
+					const c = o(),
+						r = () => {
+							const n = Object(k.e)(c),
+								o = i.fbt._("Success! You won't see notifications like this in the future.", null, {
+									hk: "1ijcqU"
+								});
+							return n ? Object(d.e)(Object(d.d)(o, I.b.Undo, i.fbt._("Undo", null, {
+								hk: "4zFGDk"
+							}), ((t, e) => async (n, o, {
+								gqlContext: s
+							}) => {
+								(await Object(u.b)(s(), {
+									isEnabled: !0,
+									messageType: t
+								})).ok ? (Object(_.c)(o(), t) && Object(a.c)(n, {
+									isEnabled: !1,
+									messageType: t
+								}), e && e(), n(Object(d.e)(Object(d.d)(i.fbt._("Success! Notifications like this were turned on.", null, {
+									hk: "2krVMd"
+								}), I.b.SuccessCommunityGreen)))) : n(Object(d.e)(Object(d.d)(i.fbt._("Failed to turn on these types of notifications.", null, {
+									hk: "1dBLEQ"
+								}), I.b.Error)))
+							})(t, e))) : Object(d.e)(Object(d.d)(o, I.b.SuccessCommunityGreen))
+						};
+					(await Object(u.b)(s(), {
 						isEnabled: !1,
 						messageType: t
-					})).ok ? (Object(T.c)(n(), t) && Object(a.c)(e, {
+					})).ok ? (Object(_.c)(c, t) && Object(a.c)(n, {
 						isEnabled: !1,
 						messageType: t
-					}), e(Object(d.e)(Object(d.d)(i.fbt._("Success! You won't see notifications like this in the future.", null, {
-						hk: "1ijcqU"
-					}), I.b.SuccessCommunityGreen)))) : e(Object(d.e)(Object(d.d)(i.fbt._("Failed to turn off these types of notifications, please try again.", null, {
+					}), n(r())) : n(Object(d.e)(Object(d.d)(i.fbt._("Failed to turn off these types of notifications, please try again.", null, {
 						hk: "2pNRDO"
 					}), I.b.Error)))
-				}, D = t => async (e, n, {
+				}, q = t => async (e, n, {
 					apiContext: o
 				}) => {
 					if (!t) return;
-					(await ((t, e) => Object(p.a)(Object(g.a)(t, [j.a]), {
+					(await ((t, e) => Object(p.a)(Object(j.a)(t, [g.a]), {
 						endpoint: Object(x.a)(`${t.apiUrl}/api/sendreplies`),
 						method: O.cb.POST,
 						data: {
@@ -300,12 +343,12 @@
 					}), I.b.SuccessCommunityGreen))) : e(Object(d.e)(Object(d.d)(i.fbt._("Failed to turn off updates on this, please try again", null, {
 						hk: "1zhpEy"
 					}), I.b.Error)))
-				}, q = Object(o.a)(c.c), F = (t, e) => async (n, i, {
+				}, F = Object(o.a)(c.c), G = (t, e) => async (n, i, {
 					apiContext: o
 				}) => {
 					let a;
 					if (e === E.a.CommentReply || e === E.a.PostReply || e === E.a.PrivateMessage || e === E.a.UsernameMention) {
-						if ((a = await ((t, e) => Object(p.a)(Object(g.a)(t, [j.a]), {
+						if ((a = await ((t, e) => Object(p.a)(Object(j.a)(t, [g.a]), {
 								endpoint: Object(x.a)(`${t.apiUrl}/api/read_message`),
 								method: O.cb.POST,
 								data: {
@@ -322,7 +365,7 @@
 								n(Object(s.a)(e)), n(Object(r.e)())
 							}
 						}
-					} else a = await ((t, e) => Object(p.a)(Object(g.a)(t, [j.a]), {
+					} else a = await ((t, e) => Object(p.a)(Object(j.a)(t, [g.a]), {
 						endpoint: Object(x.a)(`${t.apiUrl}/api/read_notification`),
 						method: O.cb.POST,
 						data: {
@@ -331,17 +374,17 @@
 					}))(o(), t);
 					if (a.ok) {
 						const e = (new Date).toISOString();
-						n(q({
+						n(F({
 							id: t,
 							now: e
 						}))
 					}
-				}, G = () => async (t, e, {
+				}, Y = () => async (t, e, {
 					gqlContext: n
 				}) => {
 					const i = (new Date).toLocaleDateString(),
 						o = await ((t, e) => Object(l.a)(t, {
-							...m,
+							...y,
 							variables: {
 								input: e
 							}
@@ -353,10 +396,10 @@
 							n = e && e.data && e.data.updateInboxActivitySeenState && e.data.updateInboxActivitySeenState.badgeIndicators;
 						n && (t(Object(s.a)(n)), t(Object(r.d)()))
 					}
-				}, Y = () => async (t, e, {
+				}, H = () => async (t, e, {
 					apiContext: n
 				}) => {
-					if ((await ((t, e) => Object(p.a)(Object(g.a)(t, [j.a]), {
+					if ((await ((t, e) => Object(p.a)(Object(j.a)(t, [g.a]), {
 							endpoint: Object(x.a)(`${t.apiUrl}/api/read_all_messages`),
 							method: O.cb.POST,
 							data: {
@@ -397,24 +440,24 @@
 				O = n("./src/reddit/selectors/notificationsInbox.tsx");
 			const p = Object(a.c)({
 					inboxBadgeCount: u.g,
-					isInboxMarkAllAsReadEnabled: f.a,
-					isInboxPostEmbedEnabled: f.b,
+					isInboxMarkAllAsReadEnabled: f.b,
+					isInboxPostEmbedEnabled: f.c,
 					isPending: O.e,
 					messagesBadgeCount: u.h,
 					notifications: O.g
 				}),
-				g = Object(s.b)(p, t => ({
+				j = Object(s.b)(p, t => ({
 					clearMessageTabBadgeCount: () => t(Object(c.b)()),
-					disableMessageTypeNotifications: e => t(Object(r.b)(e)),
+					disableMessageTypeNotifications: (e, n) => t(Object(r.b)(e, n)),
 					disableNotificationUpdates: e => t(Object(r.c)(e)),
 					fetchNotifications: e => t(Object(r.d)(e)),
 					hideNotification: e => t(Object(r.a)(e)),
-					hideSubredditNotifications: e => t(Object(r.e)(e)),
+					hideSubredditNotifications: (e, n) => t(Object(r.e)(e, n)),
 					markAllAsRead: () => t(Object(r.f)()),
 					markNotificationAsRead: (e, n) => t(Object(r.g)(e, n)),
 					updateInboxActivitySeenState: () => t(Object(r.h)())
 				}));
-			e.default = g(({
+			e.default = j(({
 				clearMessageTabBadgeCount: t,
 				disableMessageTypeNotifications: e,
 				disableNotificationUpdates: n,
@@ -426,13 +469,13 @@
 				isInboxPostEmbedEnabled: f,
 				isOpen: O,
 				isPending: p,
-				markAllAsRead: g,
-				markNotificationAsRead: j,
+				markAllAsRead: j,
+				markNotificationAsRead: g,
 				messagesBadgeCount: x,
 				notifications: h,
-				updateInboxActivitySeenState: y
+				updateInboxActivitySeenState: m
 			}) => {
-				const m = Object(l.a)(),
+				const y = Object(l.a)(),
 					[S, E] = Object(i.useState)("");
 				return Object(i.useEffect)(() => {
 					if (O && !h.length) {
@@ -440,7 +483,7 @@
 							first: 5
 						})
 					}
-					O && (y(), m(Object(b.l)({
+					O && (m(), y(Object(b.l)({
 						badgeCount: r
 					})))
 				}, [O]), o.a.createElement(d.c, {
@@ -455,8 +498,8 @@
 					isInboxPostEmbedEnabled: f,
 					isOpen: O,
 					isPending: p,
-					markAllAsRead: g,
-					markNotificationAsRead: j,
+					markAllAsRead: j,
+					markNotificationAsRead: g,
 					messagesBadgeCount: x,
 					notifications: h,
 					setActiveOverflowMenuId: E
@@ -555,4 +598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.8652ba973fd68736cdb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.5aa3d131f205fea8b718.js.map

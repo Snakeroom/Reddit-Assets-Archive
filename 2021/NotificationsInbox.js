@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.3fa15ec2f2edc9af8881.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.de3289ccf5361011bd34.js
+// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/graphql/operations/DeleteInboxNotifications.json": function(e) {
@@ -136,21 +136,21 @@
 		"./src/reddit/actions/notificationsInbox/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return P
+				return L
 			})), n.d(t, "a", (function() {
-				return M
-			})), n.d(t, "e", (function() {
 				return F
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "e", (function() {
 				return U
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return B
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "c", (function() {
 				return G
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "g", (function() {
 				return q
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "h", (function() {
 				return H
+			})), n.d(t, "f", (function() {
+				return W
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -173,37 +173,38 @@
 				e.Activity = "activity", e.Messages = "messages"
 			}(O || (O = {}));
 			var E = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
-				v = n("./src/graphql/operations/UpdateInboxActivitySeenState.json");
-			var j = n("./src/reddit/models/Badge/index.ts"),
+				j = n("./src/graphql/operations/UpdateInboxActivitySeenState.json");
+			var v = n("./src/reddit/models/Badge/index.ts"),
 				y = n("./src/reddit/models/NotificationInbox/index.ts"),
 				C = n("./src/reddit/models/Toast/index.ts"),
 				_ = n("./src/reddit/selectors/appBadges.ts"),
-				S = n("./src/reddit/selectors/notificationPrefs.ts"),
-				N = n("./src/reddit/selectors/notificationsInbox.tsx");
+				S = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				N = n("./src/reddit/selectors/notificationPrefs.ts"),
+				k = n("./src/reddit/selectors/notificationsInbox.tsx");
 			const I = Object(s.a)(r.d),
-				k = Object(s.a)(r.b),
-				T = Object(s.a)(r.a),
-				P = e => async (t, n, {
+				T = Object(s.a)(r.b),
+				P = Object(s.a)(r.a),
+				L = e => async (t, n, {
 					gqlContext: i
 				}) => {
 					const s = n(),
-						a = Object(N.a)(s);
+						a = Object(k.a)(s);
 					t(I());
 					const o = await ((e, t) => Object(u.a)(e, {
 						...m,
 						variables: t
 					}))(i(), e);
-					if (!o.ok) return void T({
+					if (!o.ok) return void P({
 						error: o.error
 					});
 					const r = o && o.body,
-						c = L(r);
+						c = w(r);
 					if (null === a) {
-						const e = Object(N.f)(s);
-						t(w(c.nodes, e.length))
+						const e = Object(k.f)(s);
+						t(R(c.nodes, e.length))
 					}
-					t(k(c))
-				}, L = e => {
+					t(T(c))
+				}, w = e => {
 					const t = e && e.data,
 						n = t && t.notificationInbox,
 						i = n && n.elements,
@@ -212,9 +213,9 @@
 						nodes: (i && i.edges).map(e => e.node),
 						pageInfo: s
 					}
-				}, w = (e, t) => async (n, i) => {
+				}, R = (e, t) => async (n, i) => {
 					const s = i(),
-						a = Object(N.a)(s),
+						a = Object(k.a)(s),
 						o = ((e, t) => {
 							let n, i = 0;
 							const s = new Date,
@@ -233,10 +234,10 @@
 							}
 							return n
 						})(e, t);
-					o && o !== a && n(R({
+					o && o !== a && n(A({
 						index: o
 					}))
-				}, R = Object(s.a)(r.f), A = (Object(s.a)(r.g), Object(s.a)(r.e)), M = e => async (t, n, {
+				}, A = Object(s.a)(r.f), M = (Object(s.a)(r.g), Object(s.a)(r.e)), F = e => async (t, n, {
 					gqlContext: s
 				}) => {
 					const a = [e];
@@ -248,44 +249,86 @@
 						}))(s(), {
 							notificationIds: a
 						})).ok) {
-						t(A({
+						t(M({
 							id: e
 						}));
-						const s = Object(N.f)(n());
-						t(w(s)), t(Object(d.e)(Object(d.d)(i.fbt._("Notification hidden", null, {
+						const s = Object(k.f)(n());
+						t(R(s)), t(Object(d.e)(Object(d.d)(i.fbt._("Notification hidden", null, {
 							hk: "1jfPqO"
 						}), C.b.SuccessCommunityGreen)))
 					} else t(Object(d.e)(Object(d.d)(i.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
 					}), C.b.Error)))
-				}, F = e => async (t, n, {
-					gqlContext: s
+				}, U = (e, t) => async (n, s, {
+					gqlContext: a
 				}) => {
 					if (!e) return;
-					(await Object(E.b)(s(), e, {
+					const o = s(),
+						r = () => {
+							const n = Object(S.e)(o),
+								s = i.fbt._("Success! You won't see notifications from this community in the future.", null, {
+									hk: "2tkhbk"
+								});
+							return n ? Object(d.e)(Object(d.d)(s, C.b.Undo, i.fbt._("Undo", null, {
+								hk: "4zFGDk"
+							}), ((e, t) => async (n, s, {
+								gqlContext: a
+							}) => {
+								if (!e) return;
+								(await Object(E.b)(a(), e, {
+									isSubredditUpdatesInterestingPostEnabled: !0,
+									isUpdateFromSubredditEnabled: !0
+								})).ok ? (t && t(), n(Object(d.e)(Object(d.d)(i.fbt._("Success! Undone hiding notifications from this community.", null, {
+									hk: "1na0NP"
+								}), C.b.SuccessCommunityGreen)))) : n(Object(d.e)(Object(d.d)(i.fbt._("Failed to undo hiding notifications, please try again.", null, {
+									hk: "4jo7Pf"
+								}), C.b.Error)))
+							})(e, t))) : Object(d.e)(Object(d.d)(s, C.b.SuccessCommunityGreen))
+						};
+					(await Object(E.b)(a(), e, {
 						isSubredditUpdatesInterestingPostEnabled: !1,
 						isUpdateFromSubredditEnabled: !1
-					})).ok ? t(Object(d.e)(Object(d.d)(i.fbt._("Success! You won't see notifications from this community in the future.", null, {
-						hk: "2tkhbk"
-					}), C.b.SuccessCommunityGreen))) : t(Object(d.e)(Object(d.d)(i.fbt._("Failed to hide notifications, please try again.", null, {
+					})).ok ? n(r()) : n(Object(d.e)(Object(d.d)(i.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
 					}), C.b.Error)))
-				}, U = e => async (t, n, {
-					gqlContext: s
+				}, B = (e, t) => async (n, s, {
+					gqlContext: a
 				}) => {
 					if (!e) return;
-					(await Object(b.b)(s(), {
+					const r = s(),
+						c = () => {
+							const n = Object(S.e)(r),
+								s = i.fbt._("Success! You won't see notifications like this in the future.", null, {
+									hk: "1ijcqU"
+								});
+							return n ? Object(d.e)(Object(d.d)(s, C.b.Undo, i.fbt._("Undo", null, {
+								hk: "4zFGDk"
+							}), ((e, t) => async (n, s, {
+								gqlContext: a
+							}) => {
+								(await Object(b.b)(a(), {
+									isEnabled: !0,
+									messageType: e
+								})).ok ? (Object(N.c)(s(), e) && Object(o.c)(n, {
+									isEnabled: !1,
+									messageType: e
+								}), t && t(), n(Object(d.e)(Object(d.d)(i.fbt._("Success! Notifications like this were turned on.", null, {
+									hk: "2krVMd"
+								}), C.b.SuccessCommunityGreen)))) : n(Object(d.e)(Object(d.d)(i.fbt._("Failed to turn on these types of notifications.", null, {
+									hk: "1dBLEQ"
+								}), C.b.Error)))
+							})(e, t))) : Object(d.e)(Object(d.d)(s, C.b.SuccessCommunityGreen))
+						};
+					(await Object(b.b)(a(), {
 						isEnabled: !1,
 						messageType: e
-					})).ok ? (Object(S.c)(n(), e) && Object(o.c)(t, {
+					})).ok ? (Object(N.c)(r, e) && Object(o.c)(n, {
 						isEnabled: !1,
 						messageType: e
-					}), t(Object(d.e)(Object(d.d)(i.fbt._("Success! You won't see notifications like this in the future.", null, {
-						hk: "1ijcqU"
-					}), C.b.SuccessCommunityGreen)))) : t(Object(d.e)(Object(d.d)(i.fbt._("Failed to turn off these types of notifications, please try again.", null, {
+					}), n(c())) : n(Object(d.e)(Object(d.d)(i.fbt._("Failed to turn off these types of notifications, please try again.", null, {
 						hk: "2pNRDO"
 					}), C.b.Error)))
-				}, B = e => async (t, n, {
+				}, G = e => async (t, n, {
 					apiContext: s
 				}) => {
 					if (!e) return;
@@ -300,7 +343,7 @@
 					}), C.b.SuccessCommunityGreen))) : t(Object(d.e)(Object(d.d)(i.fbt._("Failed to turn off updates on this, please try again", null, {
 						hk: "1zhpEy"
 					}), C.b.Error)))
-				}, D = Object(s.a)(r.c), G = (e, t) => async (n, i, {
+				}, D = Object(s.a)(r.c), q = (e, t) => async (n, i, {
 					apiContext: s
 				}) => {
 					let o;
@@ -317,7 +360,7 @@
 								e--;
 								const t = Object(a.e)({
 									count: e,
-									key: j.c.ActivityTab
+									key: v.c.ActivityTab
 								});
 								n(Object(a.a)(t)), n(Object(c.e)())
 							}
@@ -336,12 +379,12 @@
 							now: t
 						}))
 					}
-				}, q = () => async (e, t, {
+				}, H = () => async (e, t, {
 					gqlContext: n
 				}) => {
 					const i = (new Date).toLocaleDateString(),
 						s = await ((e, t) => Object(u.a)(e, {
-							...v,
+							...j,
 							variables: {
 								input: t
 							}
@@ -353,7 +396,7 @@
 							n = t && t.data && t.data.updateInboxActivitySeenState && t.data.updateInboxActivitySeenState.badgeIndicators;
 						n && (e(Object(a.a)(n)), e(Object(c.d)()))
 					}
-				}, H = () => async (e, t, {
+				}, W = () => async (e, t, {
 					apiContext: n
 				}) => {
 					if ((await ((e, t) => Object(p.a)(Object(g.a)(e, [h.a]), {
@@ -365,11 +408,11 @@
 						}))(n())).ok) {
 						const t = Object(a.e)({
 								count: 0,
-								key: j.c.MessageTab
+								key: v.c.MessageTab
 							}),
 							n = Object(a.e)({
 								count: 0,
-								key: j.c.ActivityTab
+								key: v.c.ActivityTab
 							});
 						e(Object(a.a)({
 							...t,
@@ -399,7 +442,7 @@
 			const f = () => async (e, t) => {
 				const n = t();
 				if (!(Object(m.J)(n) || Object(m.I)(n))) return Object(d.a)(e, n);
-				Object(u.c)(n) ? (e(p()), e(g()), await e(h())) : e(Object(i.c)("/"))
+				Object(u.d)(n) ? (e(p()), e(g()), await e(h())) : e(Object(i.c)("/"))
 			}, p = () => Object(a.k)({
 				actionSource: a.a.NotificationsInbox,
 				redirectUrl: l.b
@@ -410,7 +453,7 @@
 					i = Object(b.g)(t()),
 					s = !(!i || !i.length),
 					a = Object(m.J)(n) || Object(m.I)(n);
-				if (s || !a || !Object(u.c)(n)) return;
+				if (s || !a || !Object(u.d)(n)) return;
 				const r = {
 					first: 10
 				};
@@ -463,10 +506,10 @@
 				O = n("./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less"),
 				E = n.n(O);
 			const {
-				fbt: v
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), j = u.a.div("BladeContainer", E.a), y = u.a.wrapped(p.a, "CloseIcon", E.a), C = u.a.div("LoadingTitleContainer", E.a), _ = u.a.div("LoadingNavContainer", E.a), S = u.a.div("ShortLoadingNav", E.a), N = u.a.wrapped(f.a, "ThemedChevron", E.a), I = ({
+				fbt: j
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = u.a.div("BladeContainer", E.a), y = u.a.wrapped(p.a, "CloseIcon", E.a), C = u.a.div("LoadingTitleContainer", E.a), _ = u.a.div("LoadingNavContainer", E.a), S = u.a.div("ShortLoadingNav", E.a), N = u.a.wrapped(f.a, "ThemedChevron", E.a), k = ({
 				...e
-			}) => o.a.createElement(j, null, o.a.createElement(y, null), o.a.createElement(m.k, null, o.a.createElement(m.p, null, v._("Back to mod tools", null, {
+			}) => o.a.createElement(v, null, o.a.createElement(y, null), o.a.createElement(m.k, null, o.a.createElement(m.p, null, j._("Back to mod tools", null, {
 				hk: "1YCI0W"
 			})), o.a.createElement(m.o, null, o.a.createElement(C, null, o.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingTitle, e.isLoading && E.a.loading)
@@ -476,13 +519,13 @@
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
 			}), o.a.createElement(N, null)), o.a.createElement(_, null, o.a.createElement(S, null), o.a.createElement(N, null)), o.a.createElement(_, null, o.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), o.a.createElement(N, null))))), k = Object(d.a)({
+			}), o.a.createElement(N, null))))), I = Object(d.a)({
 				getComponent: () => Object(b.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("StructuredStyles")]).then(n.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => o.a.createElement(I, {
+				ErrorComponent: () => o.a.createElement(k, {
 					gradientType: "posts",
 					isLoading: !1
 				}),
-				LoadingComponent: () => o.a.createElement(I, {
+				LoadingComponent: () => o.a.createElement(k, {
 					gradientType: "posts",
 					isLoading: !0
 				})
@@ -495,7 +538,7 @@
 				const t = e.moderatorPermissions && s()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? o.a.createElement("div", {
 					className: Object(l.a)(E.a.Container, e.isSubscriptionsPinned && E.a.isSubscriptionPinned)
-				}, e.children, o.a.createElement(k, {
+				}, e.children, o.a.createElement(I, {
 					subredditId: e.subredditId
 				})) : o.a.createElement(a.Fragment, null, e.children)
 			})
@@ -569,7 +612,7 @@
 			})), n.d(t, "d", (function() {
 				return E
 			})), n.d(t, "j", (function() {
-				return v
+				return j
 			}));
 			var i = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -589,7 +632,7 @@
 				x = i.a.div("FormElementDescription", a.a),
 				O = i.a.div("FormElementError", a.a),
 				E = i.a.div("FormElementSubGroup", a.a),
-				v = i.a.li("FormListItem", a.a)
+				j = i.a.li("FormListItem", a.a)
 		},
 		"./src/reddit/components/TabNav/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -614,7 +657,7 @@
 			n.d(t, "b", (function() {
 				return i
 			})), n.d(t, "a", (function() {
-				return j
+				return v
 			}));
 			var i, s = n("./node_modules/lodash/throttle.js"),
 				a = n.n(s),
@@ -644,8 +687,8 @@
 			const x = l.a.wrapped(f.a, "Gear", g.a),
 				O = l.a.h3("Title", g.a),
 				E = l.a.div("TabNavContainer", g.a),
-				v = l.a.div("Tabs", g.a),
-				j = l.a.wrapped(({
+				j = l.a.div("Tabs", g.a),
+				v = l.a.wrapped(({
 					active: e,
 					children: t,
 					enabled: n,
@@ -711,7 +754,7 @@
 						className: Object(c.a)(i, {
 							[g.a.mConstrainWidth]: !!this.props.constrainWidth
 						})
-					}, y(this.props.icon), this.props.title), r.a.createElement(v, {
+					}, y(this.props.icon), this.props.title), r.a.createElement(j, {
 						className: Object(c.a)(i, {
 							[g.a.mConstrainWidth]: !!this.props.constrainWidth
 						}),
@@ -839,14 +882,14 @@
 				x = n("./src/reddit/helpers/trackers/inbox.ts"),
 				O = n("./src/reddit/pages/NotificationsInbox/Content/EmptyState.tsx"),
 				E = n("./src/reddit/pages/NotificationsInbox/Content/index.m.less"),
-				v = n.n(E);
-			const j = "",
+				j = n.n(E);
+			const v = "",
 				y = .5,
-				C = p.a.span("divider", v.a),
-				_ = p.a.wrapped(g.a, "NotificationUnit", v.a);
+				C = p.a.span("divider", j.a),
+				_ = p.a.wrapped(g.a, "NotificationUnit", j.a);
 			class S extends s.a.Component {
 				constructor() {
-					super(...arguments), this.earlierDividerNotificationId = j, this.todayDividerNotificationId = j, this.fetchNotifications = e => {
+					super(...arguments), this.earlierDividerNotificationId = v, this.todayDividerNotificationId = v, this.fetchNotifications = e => {
 						const {
 							cursor: t
 						} = this.props;
@@ -887,7 +930,7 @@
 						todayNotifications: i
 					} = this.props, a = !!((t && t.length || 0) + (i && i.length));
 					return s.a.createElement("div", {
-						className: v.a.notificationsContainer
+						className: j.a.notificationsContainer
 					}, !a && n && s.a.createElement(h.a, null), !a && !n && s.a.createElement(O.a, null), a && this.renderNotifications(), a && !n && e && s.a.createElement(f.a, {
 						onChange: this.fetchNotifications,
 						rootMargin: "0px 0px 0px 0px",
@@ -896,8 +939,8 @@
 				}
 			}
 			var N = Object(o.c)(S),
-				I = n("./src/reddit/selectors/appBadges.ts"),
-				k = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				k = n("./src/reddit/selectors/appBadges.ts"),
+				I = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				T = n("./src/reddit/selectors/notificationsInbox.tsx"),
 				P = n("./src/reddit/selectors/tooltip.ts");
 			const L = Object(l.c)({
@@ -905,18 +948,18 @@
 				cursor: T.c,
 				earlierNotifications: T.b,
 				hasNextPage: T.d,
-				inboxBadgeCount: I.g,
-				isInboxPostEmbedEnabled: k.b,
+				inboxBadgeCount: k.g,
+				isInboxPostEmbedEnabled: I.c,
 				isPending: T.e,
 				todayNotifications: T.h
 			});
 			var w = Object(d.b)(L, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
-					disableMessageTypeNotifications: t => e(Object(b.b)(t)),
+					disableMessageTypeNotifications: (t, n) => e(Object(b.b)(t, n)),
 					disableNotificationUpdates: t => e(Object(b.c)(t)),
 					fetchNotifications: t => e(Object(b.d)(t)),
 					hideNotification: t => e(Object(b.a)(t)),
-					hideSubredditNotifications: t => e(Object(b.e)(t)),
+					hideSubredditNotifications: (t, n) => e(Object(b.e)(t, n)),
 					markNotificationAsRead: (t, n) => e(Object(b.g)(t, n)),
 					setActiveOverflowMenuId: t => {
 						e(Object(m.h)({
@@ -931,11 +974,11 @@
 				F = n("./src/reddit/controls/InternalLink/index.tsx"),
 				U = n("./src/reddit/hooks/useTracking.ts"),
 				B = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
-				D = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				G = n("./src/reddit/pages/NotificationsInbox/NavBar/index.m.less"),
-				q = n.n(G);
+				G = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				D = n("./src/reddit/pages/NotificationsInbox/NavBar/index.m.less"),
+				q = n.n(D);
 			const H = p.a.wrapped(A.a, "Badge", q.a),
-				W = p.a.wrapped(D.a, "Gear", q.a),
+				W = p.a.wrapped(G.a, "Gear", q.a),
 				J = p.a.wrapped(B.a, "MarkAsRead", q.a),
 				z = p.a.wrapped(M.a, "Tab", q.a);
 			var Q = e => {
@@ -992,9 +1035,9 @@
 				}))))))
 			};
 			const Y = Object(l.c)({
-				isInboxMarkAllAsReadEnabled: k.a,
-				messagesTabBadgeCount: I.h,
-				notificationsTabBadgeCount: I.a
+				isInboxMarkAllAsReadEnabled: I.b,
+				messagesTabBadgeCount: k.h,
+				notificationsTabBadgeCount: k.a
 			});
 			var V = Object(d.b)(Y, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
@@ -1059,4 +1102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.3fa15ec2f2edc9af8881.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.de3289ccf5361011bd34.js.map

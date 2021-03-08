@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.45ec233d3cdcbef98aac.js
-// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4cbe886e3b70517f5ea3.js
+// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -10656,17 +10656,17 @@
 				Za = n("./src/reddit/helpers/trackers/premiumSettings.ts"),
 				Xa = n("./src/reddit/selectors/experiments/utils.ts");
 			const $a = Object(c.a)(e => Object(ar.c)(e, {
-					experimentName: rr.hb,
+					experimentName: rr.jb,
 					experimentEligibilitySelector: eo
 				}), Xa.a),
 				eo = e => Object(j.I)(e) || Object(j.J)(e),
-				to = Object(c.a)($a, e => e === rr.kb.Enabled),
+				to = Object(c.a)($a, e => e === rr.mb.Enabled),
 				no = Object(c.a)(e => Object(ar.c)(e, {
-					experimentName: rr.ib,
+					experimentName: rr.kb,
 					experimentEligibilitySelector: so
 				}), Xa.a),
 				so = e => Object(j.I)(e) || Object(j.J)(e),
-				ro = Object(c.a)(no, e => e === rr.lb.Enabled);
+				ro = Object(c.a)(no, e => e === rr.nb.Enabled);
 			var ao = n("./src/reddit/selectors/platform.ts"),
 				oo = n("./src/reddit/pages/Settings/index.m.less"),
 				io = n.n(oo);
@@ -11279,4 +11279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.45ec233d3cdcbef98aac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4cbe886e3b70517f5ea3.js.map

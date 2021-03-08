@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.4d6cd0c3abac8c1fbd52.js
-// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f0156d0a77d2b3107994.js
+// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -288,8 +288,8 @@
 				R = s("./src/reddit/constants/parameters.ts"),
 				U = s("./src/reddit/constants/postLayout.ts"),
 				M = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				V = s("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
-				W = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				W = s("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
+				V = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				q = s("./src/reddit/models/Toast/index.ts"),
 				H = s("./src/reddit/selectors/experiments/index.ts"),
 				G = s("./src/reddit/selectors/experiments/frontpageSignup.ts"),
@@ -343,7 +343,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(H.d)(m, {
-								experimentName: l.mc
+								experimentName: l.oc
 							});
 							s(Object(o.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -380,16 +380,16 @@
 					})), r.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
 						s(Object(X.b)(ee.a.FRONTPAGE))
 					})));
-					const h = Object(V.a)(r),
-						g = Object(V.b)(h),
-						f = [Object(V.c)(h)];
+					const h = Object(W.a)(r),
+						g = Object(W.b)(h),
+						f = [Object(W.c)(h)];
 					await s(le(c, {
 						...a()(e.queryParams, R.l),
 						...a()(e.queryParams, R.k),
 						limit: g,
 						sort: o,
 						statsdPathsForExperiments: f,
-						t: Object(W.a)(o, b)
+						t: Object(V.a)(o, b)
 					})), s(D.l({
 						title: T.c()
 					})), Object($.c)(r, {
@@ -438,9 +438,9 @@
 								fetchedToken: h.token
 							}));
 							const e = !!r.platform.currentPage && !!r.platform.currentPage.queryParams.useMockData,
-								s = Object(V.a)(r),
+								s = Object(W.a)(r),
 								c = U.a,
-								p = [Object(V.c)(s)],
+								p = [Object(W.c)(s)],
 								g = {
 									after: h.token,
 									dist: h.dist,
@@ -448,7 +448,7 @@
 									isMobile: Object(i.e)(r.meta.userAgent),
 									limit: c,
 									sort: u,
-									t: Object(W.a)(u, f),
+									t: Object(V.a)(u, f),
 									layout: U.e[Object(M.N)(r, {})],
 									useMockData: e
 								}; {
@@ -473,7 +473,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(H.d)(r, {
-										experimentName: l.mc
+										experimentName: l.oc
 									});
 									t(Object(o.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -495,12 +495,12 @@
 						o = Object(Z.a)(B.a, a, i),
 						c = i[R.x] ? i[R.x].toUpperCase() : "",
 						d = c in p.Ub && p.Ub[c],
-						l = Object(V.a)(n),
-						u = Object(V.b)(l);
+						l = Object(W.a)(n),
+						u = Object(W.b)(l);
 					await t(le(o, {
 						limit: u,
 						sort: a,
-						t: Object(W.a)(a, d)
+						t: Object(V.a)(a, d)
 					}))
 				}
 		},
@@ -1131,8 +1131,8 @@
 				R = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				U = s("./node_modules/lodash/sampleSize.js"),
 				M = s.n(U),
-				V = s("./node_modules/request-idle-callback/index.js"),
-				W = s("./src/lib/constants/index.ts"),
+				W = s("./node_modules/request-idle-callback/index.js"),
+				V = s("./src/lib/constants/index.ts"),
 				q = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				H = s("./src/reddit/constants/localStorage.ts"),
 				G = s("./src/reddit/contexts/ApiContext.tsx"),
@@ -1144,14 +1144,14 @@
 				Z = s("./src/reddit/constants/headers.ts");
 			const X = e => Object(z.a)(Object(Y.a)(e, [Z.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: W.cb.GET,
+				method: V.cb.GET,
 				type: "json"
 			});
 			var $ = s("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				ee = s.n($);
 			const {
 				fbt: te
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * W.db, re = "SubredditAdoption";
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * V.db, re = "SubredditAdoption";
 			class ae extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -1170,7 +1170,7 @@
 					return ae.cachedData = e, e ? e.subreddits : []
 				}
 				componentDidMount() {
-					Object(V.requestIdleCallback)(async () => {
+					Object(W.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
 							subredditNames: M()(e, se)
@@ -1303,8 +1303,8 @@
 			}
 			var Ue = s("./src/reddit/selectors/experiments/coreStyles.ts"),
 				Me = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				Ve = s("./src/reddit/selectors/experiments/uiSimplification.ts"),
-				We = s("./src/reddit/selectors/seo/linksModule.ts"),
+				We = s("./src/reddit/selectors/experiments/uiSimplification.ts"),
+				Ve = s("./src/reddit/selectors/seo/linksModule.ts"),
 				qe = s("./src/reddit/selectors/subredditLeaderboard.ts"),
 				He = s("./src/reddit/selectors/user.ts");
 			s("./src/reddit/components/TopSubredditsWidget/index.tsx"), s("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
@@ -1317,9 +1317,9 @@
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					trendingSubredditIds: Ce.bb,
 					currentUser: He.i,
-					frontpageLinks: We.b,
+					frontpageLinks: Ve.b,
 					isOver18: He.bb,
-					isUISimplificationAllItemsVariant: Ve.b,
+					isUISimplificationAllItemsVariant: We.b,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Re(e) === Se.p.RotateEven
 					},
@@ -1413,11 +1413,11 @@
 						shouldDisplayDelta: !this.props.isMod && m.id !== Pe.i,
 						to: m.path
 					}), d.a.createElement(F.a, {
-						placement: W.c.ABOVE_THE_FOLD,
+						placement: V.c.ABOVE_THE_FOLD,
 						listingName: i,
 						removeSidebarSpacer: !h,
 						position: Ge.a.FIRST,
-						sizes: W.h,
+						sizes: V.h,
 						placementIndex: e++
 					}), Ze(this.props) && d.a.createElement(E, {
 						isInIcons2020: u
@@ -1436,10 +1436,10 @@
 						links: s
 					})), d.a.createElement(R.a, {
 						adComponent: d.a.createElement(F.a, {
-							placement: W.c.BELOW_THE_FOLD,
+							placement: V.c.BELOW_THE_FOLD,
 							listingName: i,
 							position: Ge.a.BOTTOM,
-							sizes: W.n,
+							sizes: V.n,
 							placementIndex: e++
 						})
 					}, r && d.a.createElement(ie, null)))
@@ -3750,7 +3750,7 @@
 			})), s.d(t, "g", (function() {
 				return M
 			})), s.d(t, "h", (function() {
-				return V
+				return W
 			}));
 			var n, r = s("./src/reddit/constants/chat.ts"),
 				a = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -4048,7 +4048,7 @@
 					...o(s, t),
 					...d(s)
 				}),
-				V = (e, t) => s => ({
+				W = (e, t) => s => ({
 					source: "rpanstudio_modal",
 					action: "click",
 					noun: e,
@@ -4245,8 +4245,8 @@
 				R = s("./src/reddit/selectors/focusedVerticalSuggestion.ts"),
 				U = s("./src/reddit/selectors/frontpage.ts"),
 				M = s("./src/reddit/selectors/meta.ts"),
-				V = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
-				W = s("./src/reddit/selectors/user.ts"),
+				W = s("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
+				V = s("./src/reddit/selectors/user.ts"),
 				q = s("./src/lib/constants/index.ts"),
 				H = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
 				G = s("./src/lib/objectSelector/index.ts"),
@@ -4277,23 +4277,23 @@
 				}
 			}), $ = Object(d.c)({
 				countryMeta: M.b,
-				geopopular: W.m
+				geopopular: V.m
 			}), ee = Object(d.c)({
 				isActionBarAnimationEnabled: D.b,
 				isInTrendingEntrypointExperiment: F.a,
-				isLoggedIn: W.J,
+				isLoggedIn: V.J,
 				isPopular: I.C,
-				isRpanDuVisible: e => Object(V.a)(e, {
+				isRpanDuVisible: e => Object(W.a)(e, {
 					listingName: H.R
 				}),
-				rpanInjectionIndex: e => Object(V.b)(e, {
+				rpanInjectionIndex: e => Object(W.b)(e, {
 					listingName: H.R
 				}),
 				layout: I.N,
 				isInUISimplificationI18NExperiment: B.a
-			}), te = () => Object(d.a)($, X, ee, e => Object(V.a)(e, {
+			}), te = () => Object(d.a)($, X, ee, e => Object(W.a)(e, {
 				listingName: H.R
-			}), e => Object(V.b)(e, {
+			}), e => Object(W.b)(e, {
 				listingName: H.R
 			}), e => e, A.a, ({
 				countryMeta: e,
@@ -4516,9 +4516,9 @@
 			})), s.d(t, "j", (function() {
 				return M
 			})), s.d(t, "b", (function() {
-				return V
-			})), s.d(t, "e", (function() {
 				return W
+			})), s.d(t, "e", (function() {
+				return V
 			})), s.d(t, "g", (function() {
 				return q
 			}));
@@ -4696,8 +4696,8 @@
 					const r = n.stream.state;
 					return r === i.a.IS_LIVE || r === i.a.DISCONNECTED ? U.LIVE : r === i.a.ENDED && n.stream.vod_accessible ? U.VOD : U.UNAVAILABLE
 				}),
-				V = Object(n.a)(A, M, m.b, c.b, c.o, (e, t, s, n, r) => s ? n : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : r : void 0),
-				W = Object(n.a)(A, M, R, (e, t, s) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && s < e.broadcast_time ? s : 0 : 0),
+				W = Object(n.a)(A, M, m.b, c.b, c.o, (e, t, s, n, r) => s ? n : e ? t === U.LIVE || t === U.VOD ? e.stream.hls_url : r : void 0),
+				V = Object(n.a)(A, M, R, (e, t, s) => e ? t === U.LIVE ? e.broadcast_time : t === U.VOD && s < e.broadcast_time ? s : 0 : 0),
 				q = (e, t) => {
 					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -4733,7 +4733,7 @@
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.J
-				}) === n.V.Treatment
+				}) === n.W.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, s) {
 			"use strict";
@@ -4772,4 +4772,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4d6cd0c3abac8c1fbd52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f0156d0a77d2b3107994.js.map

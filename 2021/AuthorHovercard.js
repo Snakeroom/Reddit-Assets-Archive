@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.9ddc6a6723eae368682b.js
-// Retrieved at 3/4/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.b79214009d480de9160a.js
+// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
@@ -144,7 +144,7 @@
 				f = n("./src/reddit/components/InboxTooltip/index.m.less"),
 				h = n.n(f);
 			const b = 3;
-			class v extends a.a.Component {
+			class x extends a.a.Component {
 				constructor() {
 					super(...arguments), this.ref = a.a.createRef(), this.handleResize = () => {
 						const e = this.ref && this.ref.current && this.ref.current.clientHeight || 0;
@@ -189,7 +189,7 @@
 					})))
 				}
 			}
-			var x = n("./src/reddit/components/NotificationUnit/Placeholder.tsx"),
+			var v = n("./src/reddit/components/NotificationUnit/Placeholder.tsx"),
 				g = n("./src/reddit/pages/NotificationsInbox/Content/EmptyState.tsx");
 
 			function C() {
@@ -205,7 +205,7 @@
 				I = "",
 				w = 0,
 				N = "200px";
-			class E extends a.a.Component {
+			class O extends a.a.Component {
 				constructor() {
 					super(...arguments), this.container = a.a.createRef(), this.state = {
 						notificationHeights: _
@@ -230,7 +230,7 @@
 							{
 								notificationHeights: t
 							} = this.state;
-						return this.props.notifications.map((n, i) => a.a.createElement(v, C({}, e, {
+						return this.props.notifications.map((n, i) => a.a.createElement(x, C({}, e, {
 							index: i,
 							key: i,
 							notification: n,
@@ -259,12 +259,12 @@
 							height: i,
 							maxHeight: i
 						}
-					}, n ? this.renderNotifications() : e ? a.a.createElement(x.a, null) : a.a.createElement(g.a, null))
+					}, n ? this.renderNotifications() : e ? a.a.createElement(v.a, null) : a.a.createElement(g.a, null))
 				}
 			}
-			var O = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				A = n("./src/reddit/controls/Dropdown/index.tsx"),
-				y = n("./src/reddit/controls/InternalLink/index.tsx"),
+			var E = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				y = n("./src/reddit/controls/Dropdown/index.tsx"),
+				A = n("./src/reddit/controls/InternalLink/index.tsx"),
 				k = n("./src/reddit/helpers/trackers/inbox.ts"),
 				j = n("./src/reddit/hooks/useTracking.ts"),
 				L = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
@@ -281,8 +281,8 @@
 			}
 			const M = "INBOX--TOOLTIP",
 				F = [],
-				S = l.a.wrapped(A.a, "StyledDropdown", h.a),
-				B = Object(O.a)(S, [c.a.Click]),
+				S = l.a.wrapped(y.a, "StyledDropdown", h.a),
+				B = Object(E.a)(S, [c.a.Click]),
 				T = l.a.wrapped(R.a, "Gear", h.a),
 				D = l.a.wrapped(L.a, "MarkAsRead", h.a),
 				U = e => {
@@ -297,7 +297,7 @@
 						className: h.a.topNavLinks
 					}, a.a.createElement("span", {
 						className: h.a.messagesLinkContainer
-					}, a.a.createElement(y.a, {
+					}, a.a.createElement(A.a, {
 						className: Object(d.a)(h.a.messagesLink, {
 							[h.a.mActive]: t
 						}),
@@ -312,7 +312,7 @@
 					})), e.isInboxMarkAllAsReadEnabled && a.a.createElement("button", {
 						className: h.a.navLink,
 						onClick: e.markAllAsRead
-					}, a.a.createElement(D, null)), a.a.createElement(y.a, {
+					}, a.a.createElement(D, null)), a.a.createElement(A.a, {
 						className: h.a.navLink,
 						onClick: e.sendInboxClickSettings,
 						to: "/settings/notifications"
@@ -320,7 +320,7 @@
 				},
 				V = e => a.a.createElement("div", {
 					className: h.a.bottomBar
-				}, a.a.createElement(y.a, {
+				}, a.a.createElement(A.a, {
 					className: h.a.bottomLink,
 					onClick: e.sendInboxClickSeeAll,
 					to: "/notifications"
@@ -363,7 +363,7 @@
 							})), t(Object(k.e)()), n()
 						},
 						sendInboxClickSettings: () => t(Object(k.j)(k.a.MiniInbox))
-					}), a.a.createElement(E, H({}, m, {
+					}), a.a.createElement(O, H({}, m, {
 						isPending: c
 					})), (u || c) && a.a.createElement(V, {
 						sendInboxClickSeeAll: () => t(Object(k.i)())
@@ -482,7 +482,7 @@
 				postEmbedThumbnail: "msJLWFmahK0W8JhaqYny9",
 				StyledDropdown: "_1i_9WvxHOe7AlJZQ6w_-X9",
 				styledDropdown: "_1i_9WvxHOe7AlJZQ6w_-X9",
-				overlowMenuContainer: "w_ehW50Lg2v1-XfJ1CWEe",
+				overflowMenuContainer: "_2UKt6pQu-os9uxZnfhPydP",
 				overflowMenuOption: "_1g8x_Z2KsTf65RBk7dRBZm",
 				placeholderWrapper: "_2iacm7sPgvO9z8gO1W7FoY",
 				placeholderAvatar: "_2_cDiTNVpitX7CtTmIambB",
@@ -555,14 +555,16 @@
 				return h
 			})), n.d(t, "h", (function() {
 				return b
+			})), n.d(t, "p", (function() {
+				return x
 			})), n.d(t, "j", (function() {
 				return v
 			})), n.d(t, "i", (function() {
-				return x
-			})), n.d(t, "e", (function() {
 				return g
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return C
+			})), n.d(t, "d", (function() {
+				return _
 			}));
 			var i, s, o, r, a = n("./src/reddit/constants/tracking.ts"),
 				c = n("./src/reddit/selectors/telemetry.ts");
@@ -716,6 +718,30 @@
 						type: e
 					}
 				}),
+				x = ({
+					actionInfoType: e,
+					id: t,
+					isClicked: n,
+					isViewed: i,
+					type: s
+				}) => o => ({
+					...c.defaults(o),
+					action: a.c.UNDO,
+					noun: "overflow_option",
+					source: r.Inbox,
+					inbox: {
+						id: t,
+						isClicked: n,
+						isViewed: i
+					},
+					notification: {
+						type: s
+					},
+					actionInfo: {
+						...c.actionInfo(o),
+						type: e
+					}
+				}),
 				v = e => t => ({
 					...c.defaults(t),
 					action: a.c.CLICK,
@@ -726,7 +752,7 @@
 						pageType: e
 					}
 				}),
-				x = () => e => ({
+				g = () => e => ({
 					...c.defaults(e),
 					action: a.c.CLICK,
 					noun: "see_all",
@@ -736,13 +762,13 @@
 						pageType: o.MiniInbox
 					}
 				}),
-				g = () => e => ({
+				C = () => e => ({
 					...c.defaults(e),
 					action: a.c.CLICK,
 					noun: "messages",
 					source: r.Inbox
 				}),
-				C = ({
+				_ = ({
 					isMiniInbox: e
 				}) => t => ({
 					...c.defaults(t),
@@ -1035,7 +1061,7 @@
 			}));
 			var i = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(i.mb)
+			const o = Object(s.a)(i.ob)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -1049,9 +1075,9 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!n || Object(i.sd)(n))
+				return !(!n || Object(i.ud)(n))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.9ddc6a6723eae368682b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b79214009d480de9160a.js.map
