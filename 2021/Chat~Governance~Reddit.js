@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.829d4f67b861c1cc060d.js
-// Retrieved at 3/8/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f4ad2ac1840231102117.js
+// Retrieved at 3/8/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1441,11 +1441,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("128174"),
+				buildNumber: r("128180"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1615219210"),
+				})("1615223853"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -1645,6 +1645,7 @@
 		"./src/i18n/translatedFbts lazy recursive ^\\.\\/.*\\.json$": function(e, t, i) {
 			var n = {
 				"./de_DE.json": ["./src/i18n/translatedFbts/de_DE.json", "translations/de_DE-json"],
+				"./pseudo_ext.json": ["./src/i18n/translatedFbts/pseudo_ext.json", "translations/pseudo_ext-json"],
 				"./pseudo_long.json": ["./src/i18n/translatedFbts/pseudo_long.json", "translations/pseudo_long-json"],
 				"./pseudo_short.json": ["./src/i18n/translatedFbts/pseudo_short.json", "translations/pseudo_short-json"],
 				"./pt_BR.json": ["./src/i18n/translatedFbts/pt_BR.json", "translations/pt_BR-json"]
@@ -3599,14 +3600,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c469d172b026283e9a930522d9e4ae752cfcf786c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c53f20178c61c9e65b5be8c80d185f30c40302aa7-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "469d172b026283e9a930522d9e4ae752cfcf786c-production",
+						release: "53f20178c61c9e65b5be8c80d185f30c40302aa7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4055,7 +4056,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "469d172b026283e9a930522d9e4ae752cfcf786c-production",
+						releaseClient: "53f20178c61c9e65b5be8c80d185f30c40302aa7-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -44240,4 +44241,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.829d4f67b861c1cc060d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f4ad2ac1840231102117.js.map

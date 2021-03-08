@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.ead557b61ec8277add40.js
-// Retrieved at 3/8/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.64a5bbed40f1de6066c2.js
+// Retrieved at 3/8/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, d, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(n, d) && n[d] && b.push(n[d][0]), n[d] = 0;
@@ -338,6 +338,7 @@
 					"reddit-components-Root-IconFontLoaders-RedesignFont": "reddit-components-Root-IconFontLoaders-RedesignFont",
 					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "reddit-components-Root-IconFontLoaders-RedesignFont2020",
 					"translations/de_DE-json": "translations/de_DE-json",
+					"translations/pseudo_ext-json": "translations/pseudo_ext-json",
 					"translations/pseudo_long-json": "translations/pseudo_long-json",
 					"translations/pseudo_short-json": "translations/pseudo_short-json",
 					"translations/pt_BR-json": "translations/pt_BR-json",
@@ -587,9 +588,10 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "f7c0bc121bac61b69b88",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "b9a967d62759b5f6aec0",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "afc3294afc5fb8ac88d6",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "d06c9a579c8ce90a074a",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
+					"translations/pseudo_ext-json": "31d6cfe0d16ae931b73c",
 					"translations/pseudo_long-json": "31d6cfe0d16ae931b73c",
 					"translations/pseudo_short-json": "31d6cfe0d16ae931b73c",
 					"translations/pt_BR-json": "31d6cfe0d16ae931b73c",
@@ -867,6 +869,7 @@
 						"reddit-components-Root-IconFontLoaders-RedesignFont": "reddit-components-Root-IconFontLoaders-RedesignFont",
 						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "reddit-components-Root-IconFontLoaders-RedesignFont2020",
 						"translations/de_DE-json": "translations/de_DE-json",
+						"translations/pseudo_ext-json": "translations/pseudo_ext-json",
 						"translations/pseudo_long-json": "translations/pseudo_long-json",
 						"translations/pseudo_short-json": "translations/pseudo_short-json",
 						"translations/pt_BR-json": "translations/pt_BR-json",
@@ -1039,7 +1042,7 @@
 						CoinPurchaseModal: "5ffa322c7678ac2e3d04",
 						Coins: "eb7c92ee077366a8bbab",
 						CoinsMobile: "eafc69370a5cc9da858a",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "6bde6c6fe18854bedf2b",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "70cd363faccf674c9f0d",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86": "5602c22aed4072d4365c",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "1468a016e03a58bcc251",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "8fef59e6dc65e7741520",
@@ -1116,10 +1119,11 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "b65c46eb69c30246338f",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "d05fe01cc7f1d5974558",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "5c9bd70d139b85e70717",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "c88d335956ddd5275ea5",
 						"translations/de_DE-json": "69faee7802ae1bb59576",
-						"translations/pseudo_long-json": "50505f0292d1fe805abb",
+						"translations/pseudo_ext-json": "804d8c00d75de8350bd2",
+						"translations/pseudo_long-json": "1bcd24fc81010f2a45b1",
 						"translations/pseudo_short-json": "7414f6e6c8d56316860a",
 						"translations/pt_BR-json": "a223720ef2a9fdb5356b",
 						"vendors~AdminPanel": "4236fd8123d0d8860547",
@@ -1337,4 +1341,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ead557b61ec8277add40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.64a5bbed40f1de6066c2.js.map
