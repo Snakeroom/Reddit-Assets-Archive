@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.a221acb3c9841f680ab0.js
-// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.a595064090d2b61906f5.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -25,16 +25,16 @@
 			const h = Object(n.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.hc
+					experimentName: m.fc
 				});
-				return Object(m.ud)(t) ? void 0 : t
+				return Object(m.sd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.ic
+					experimentName: m.gc
 				});
-				return Object(m.ud)(t) ? void 0 : t
-			}, (e, t) => e === m.jc.Enabled && t === m.jc.Enabled);
+				return Object(m.sd)(t) ? void 0 : t
+			}, (e, t) => e === m.hc.Enabled && t === m.hc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -2605,7 +2605,7 @@
 				c = s("./src/lib/lessComponent.tsx"),
 				d = s("./src/reddit/hooks/useCoreStyleExperiments.ts");
 			const l = c.a.wrapped(e => {
-				const t = Object(d.b)();
+				const t = Object(d.a)();
 				return a.a.createElement("i", {
 					className: `${Object(i.b)(t?"expand":"expandoArrowExpand",e.isFilled)} ${e.className}`,
 					onClick: e.onClick,
@@ -2761,4 +2761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a221acb3c9841f680ab0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a595064090d2b61906f5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.7ccc3712d3a53cf7080e.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.90460d03b008ee727e4c.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -510,9 +510,9 @@
 				F = () => void 0,
 				T = Object(a.c)({
 					crowdControlLevelEnabled: b.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => j.yc.Enabled === Object(I.c)(e, {
+					postLevelCrowdControlEnabled: e => j.wc.Enabled === Object(I.c)(e, {
 						experimentEligibilitySelector: D.K,
-						experimentName: j.pc
+						experimentName: j.nc
 					}),
 					shouldApplyPostLevelCrowdControl: (e, {
 						post: t
@@ -894,7 +894,7 @@
 				}).apply(this, arguments)
 			}
 			const x = e => {
-					const t = Object(a.b)();
+					const t = Object(a.a)();
 					return n.a.createElement("div", {
 						className: Object(r.a)(m.a.checkboxMenuItem, e.className),
 						onClick: e.onClick
@@ -1121,7 +1121,7 @@
 						className: m.a.metaContainer
 					}, u));
 				return s ? e => {
-					const t = Object(c.b)();
+					const t = Object(c.a)();
 					return n.a.createElement("a", {
 						"data-redditstyle": !0,
 						className: Object(a.a)(e.className, m.a.basicLink),
@@ -1253,7 +1253,7 @@
 				i = s("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				c = s.n(i);
 			const d = s("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return n.a.createElement("i", {
 					className: `${Object(a.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -1275,7 +1275,7 @@
 				i = s("./src/reddit/icons/fonts/Envelope/index.m.less"),
 				c = s.n(i);
 			t.a = e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return n.a.createElement("i", {
 					className: `${Object(a.b)(t?"message":"envelope",e.isFilled)} ${c.a.Envelope} ${e.className}`
 				})
@@ -1529,4 +1529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.7ccc3712d3a53cf7080e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.90460d03b008ee727e4c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.bf1df1684730d6961936.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.6001bef5cb4d546a2f9c.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -124,9 +124,9 @@
 			})), n.d(e, "g", (function() {
 				return k
 			})), n.d(e, "b", (function() {
-				return v
-			})), n.d(e, "d", (function() {
 				return T
+			})), n.d(e, "d", (function() {
+				return v
 			})), n.d(e, "e", (function() {
 				return j
 			})), n.d(e, "c", (function() {
@@ -190,7 +190,7 @@
 					const e = await Object(a.a)(s(), t, r.id);
 					n(Object(x.i)(e))
 				}
-			}, v = t => async (e, n, {
+			}, T = t => async (e, n, {
 				apiContext: o
 			}) => {
 				const s = n(),
@@ -211,14 +211,14 @@
 						userId: i.id
 					})), Object(r.a)(e, s.error))
 				}
-			}, T = (t, e) => async (n, o, {
+			}, v = (t, e) => async (n, o, {
 				apiContext: s
 			}) => {
 				await n(k(t, !0));
 				const r = o().economics.subredditPremium[t];
 				if (r && r.status === f.a.Fetched) {
 					const o = r.data.userOwnedBadges.find(t => t.type === e.id);
-					o && (n(v({
+					o && (n(T({
 						badge: o,
 						subredditId: t,
 						placement: o.placement
@@ -257,7 +257,7 @@
 							subredditId: t,
 							badge: i
 						});
-						e && await o(v({
+						e && await o(T({
 							badge: e,
 							subredditId: t
 						}))
@@ -321,16 +321,16 @@
 			var C = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				O = n("./src/reddit/models/Gold/Powerups/index.ts"),
 				k = n("./src/reddit/models/PostCreationForm/index.ts"),
-				v = n("./src/reddit/models/Toast/index.ts"),
-				T = n("./src/reddit/selectors/gold/powerups.ts"),
+				T = n("./src/reddit/models/Toast/index.ts"),
+				v = n("./src/reddit/selectors/gold/powerups.ts"),
 				j = n("./src/reddit/selectors/postCreations.ts"),
 				w = n("./src/reddit/actions/postCreation/constants.ts"),
 				R = n("./src/reddit/actions/postCreation/general.ts");
-			const B = Object(a.a)(w.u),
-				_ = Object(a.a)(w.v),
+			const _ = Object(a.a)(w.u),
+				B = Object(a.a)(w.v),
 				I = Object(a.a)(w.t),
 				A = t => async (e, n) => {
-					e(B());
+					e(_());
 					const o = t.map(({
 						url: t,
 						uploadKey: n
@@ -343,7 +343,7 @@
 						r = t.map(({
 							uploadKey: t
 						}) => s[t]).find(t => t.status !== y.a.SUCCESS);
-					e(r ? I(r.error) : _())
+					e(r ? I(r.error) : B())
 				}, K = (t, e) => ({
 					error: e ? {
 						type: t,
@@ -363,11 +363,11 @@
 					const l = Object(j.h)(c()),
 						u = Date.now();
 					let k = null,
-						v = !1,
+						T = !1,
 						w = !1,
 						R = !1;
-					const B = t => {
-						if (!R && n && v) {
+					const _ = t => {
+						if (!R && n && T) {
 							R = !0;
 							const o = c(),
 								s = Date.now() - u,
@@ -440,8 +440,8 @@
 						}
 					};
 					return await r(Object(d.l)(t, e, async u => {
-						v = !0, Object(d.k)(u.id, () => {
-							B(!0)
+						T = !0, Object(d.k)(u.id, () => {
+							_(!0)
 						});
 						const {
 							error: g,
@@ -474,7 +474,7 @@
 								const t = await Object(f.a)(a);
 								l.width = t.width, l.height = t.height
 							} else if (c.startsWith("video/")) {
-								const c = !(null == n || !n.id) && Object(T.m)(t, {
+								const c = !(null == n || !n.id) && Object(v.m)(t, {
 										subredditId: n.id,
 										benefit: O.a.HdVideo
 									}),
@@ -553,7 +553,7 @@
 						}) : {
 							error: x.error || void 0
 						}
-					}, !0)), B(!1), c().uploads[e] || null
+					}, !0)), _(!1), c().uploads[e] || null
 				}, D = t => async (e, n, {
 					apiContext: o
 				}) => {
@@ -578,11 +578,11 @@
 						} = s(), i = t.map(t => r[t]).filter(t => t.status === y.a.FAILED && !t.metadata.mimetype).map(t => t.error), a = i.length > e ? e - 1 : i.length, d = i.length - a;
 						i.slice(0, a).forEach(t => n(Object(l.e)({
 							duration: l.a,
-							kind: v.b.Error,
+							kind: T.b.Error,
 							text: Object(c.a)(t)
 						}))), d > 0 && n(Object(l.e)({
 							duration: l.a,
-							kind: v.b.Error,
+							kind: T.b.Error,
 							text: o.fbt._({
 								"*": "Couldn't add {number} more files",
 								_1: "Couldn't add 1 more file"
@@ -603,20 +603,20 @@
 						m = t;
 					if (p) {
 						if (Object(k.v)(i)) return void n(Object(l.e)({
-							kind: v.b.Error,
+							kind: T.b.Error,
 							text: o.fbt._("Please remove the existing video first. Videos aren't supported within galleries yet.", null, {
 								hk: "3lGxp4"
 							})
 						}));
 						m.some(t => Object(b.l)(t.type)) && n(Object(l.e)({
-							kind: v.b.Error,
+							kind: T.b.Error,
 							text: o.fbt._("Videos aren’t supported within galleries...yet", null, {
 								hk: "9Cl20"
 							})
 						})), m = m.filter(t => Object(b.k)(t.type));
 						const t = Math.max(0, u.b - c.length);
 						m.length > t && (n(Object(l.e)({
-							kind: v.b.Error,
+							kind: T.b.Error,
 							text: o.fbt._("You have hit the limit of {images_limit} images", [o.fbt._param("images_limit", `${u.b}`)], {
 								hk: "6M4kX"
 							})
@@ -743,54 +743,6 @@
 				tooltipContentClass: u.a.tooltipContentClass,
 				text: t.tooltip
 			}) : null)
-		},
-		"./src/reddit/components/PostCreationForm/DivButton/index.m.less": function(t, e, n) {
-			t.exports = {
-				button: "ypAk-GyDXsczk_xkC7Eq_",
-				disabled: "_3hBIa9WhGl-wxARDDgBvSE"
-			}
-		},
-		"./src/reddit/components/PostCreationForm/DivButton/index.tsx": function(t, e, n) {
-			"use strict";
-			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/constants/keycodes.ts"),
-				c = n("./src/reddit/components/PostCreationForm/DivButton/index.m.less"),
-				a = n.n(c);
-
-			function l() {
-				return (l = Object.assign || function(t) {
-					for (var e = 1; e < arguments.length; e++) {
-						var n = arguments[e];
-						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
-					}
-					return t
-				}).apply(this, arguments)
-			}
-			const d = (t, e, n) => {
-					!e && n && n(t)
-				},
-				u = (t, e, n) => {
-					e || (n && n(t), t.defaultPrevented || t.which !== i.a.Enter && t.which !== i.a.Space || t.currentTarget.click())
-				};
-			e.a = ({
-				className: t,
-				disabled: e,
-				onClick: n,
-				onKeyPress: o,
-				setRef: i,
-				tabIndex: c,
-				...p
-			}) => s.a.createElement("div", l({
-				"aria-disabled": !!e,
-				className: Object(r.a)(t, a.a.button, e ? a.a.disabled : null),
-				onClick: t => d(t, e, n),
-				onKeyPress: t => u(t, e, o),
-				role: "button",
-				ref: i,
-				tabIndex: c || 0
-			}, p))
 		},
 		"./src/reddit/components/PostCreationForm/MediaInput/ImageGalleryDrop/constants.ts": function(t, e, n) {
 			"use strict";
@@ -1075,8 +1027,7 @@
 		},
 		"./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.m.less": function(t, e, n) {
 			t.exports = {
-				FormatterButton: "alPx0QCb4Fws5307SrGWu",
-				formatterButton: "alPx0QCb4Fws5307SrGWu",
+				button: "_2lAJkFZXhr5kbH7YF-sYFf",
 				enabled: "_1H0LLEwUP5ys6cgxr9KhMa",
 				active: "_32EiQr-Px2GJvCfigwwmuK"
 			}
@@ -1088,13 +1039,12 @@
 				r = n("./src/lib/classNames/index.ts"),
 				i = n("./src/lib/lessComponent.tsx"),
 				c = n("./src/reddit/controls/Button/index.tsx"),
-				a = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				l = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
-				d = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.m.less"),
-				u = n.n(d);
+				a = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
+				l = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.m.less"),
+				d = n.n(l);
 
-			function p() {
-				return (p = Object.assign || function(t) {
+			function u() {
+				return (u = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var n = arguments[e];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
@@ -1102,7 +1052,7 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const h = t => {
+			const p = t => {
 				t.preventDefault(), t.stopPropagation()
 			};
 			e.a = i.a.wrapped(t => {
@@ -1111,40 +1061,36 @@
 					className: n,
 					disabledTooltip: o,
 					enabled: i = !0,
-					tooltip: d,
-					Icon: m,
-					onClick: g,
-					tooltipBelow: f,
-					children: b
-				} = t, y = Object(a.a)(), E = {
-					"aria-label": d,
+					tooltip: l,
+					Icon: h,
+					onClick: m,
+					tooltipBelow: g,
+					children: f
+				} = t, b = {
+					"aria-label": l,
 					"aria-selected": e,
-					className: Object(r.a)(u.a.button, n, {
-						[u.a.active]: !!e,
-						[u.a.enabled]: i
+					className: Object(r.a)(d.a.button, n, {
+						[d.a.active]: !!e,
+						[d.a.enabled]: i
 					}),
-					onMouseDown: h,
+					onMouseDown: p,
 					onClick: t => {
-						h(t), i && g && g(t)
+						p(t), i && m && m(t)
 					},
 					role: "button",
 					tabIndex: -1
 				};
-				return y ? s.a.createElement(c.q, p({}, E, {
+				return s.a.createElement(c.q, u({}, b, {
 					size: c.c.S,
 					priority: c.b.Plain,
 					isSquare: !0,
-					Icon: m
-				}), s.a.createElement(l.a, {
-					text: (i ? d : o) || "",
+					Icon: h
+				}), s.a.createElement(a.a, {
+					text: (i ? l : o) || "",
 					tooltipContentClass: t.tooltipContentClass,
-					renderBelow: f
-				}), b) : s.a.createElement("div", E, s.a.createElement(l.a, {
-					text: (i ? d : o) || "",
-					tooltipContentClass: t.tooltipContentClass,
-					renderBelow: f
-				}), m ? s.a.createElement(m, null) : null, b)
-			}, "FormatterButton", u.a)
+					renderBelow: g
+				}), f)
+			}, "FormatterButton", d.a)
 		},
 		"./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.m.less": function(t, e, n) {
 			t.exports = {
@@ -1164,57 +1110,36 @@
 				i = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/reselect/es/index.js"),
 				a = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/reddit/components/PostCreationForm/DivButton/index.tsx"),
-				d = n("./src/reddit/controls/Button/index.tsx"),
-				u = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				p = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				h = n("./src/reddit/selectors/editorContent.ts"),
-				m = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
-				g = n("./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.m.less"),
-				f = n.n(g);
-			const b = a.a.wrapped(u.a, "LoadingIcon", f.a),
-				y = a.a.span("Text", f.a),
-				E = a.a.wrapped(l.a, "Button", f.a),
-				x = Object(c.c)({
-					isConverting: (t, e) => Object(h.a)(t, e.draftKey)
+				l = n("./src/reddit/controls/Button/index.tsx"),
+				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				u = n("./src/reddit/selectors/editorContent.ts"),
+				p = n("./src/reddit/components/RichTextEditor/HoverTooltip/index.tsx"),
+				h = n("./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.m.less"),
+				m = n.n(h);
+			const g = a.a.wrapped(d.a, "LoadingIcon", m.a),
+				f = Object(c.c)({
+					isConverting: (t, e) => Object(u.a)(t, e.draftKey)
 				}),
-				S = Object(i.b)(x);
-			e.a = r.a.memo(S(t => {
-				return Object(p.a)() ? r.a.createElement(d.q, {
-					priority: d.b.Plain,
-					size: d.c.XS,
-					text: r.a.createElement(r.a.Fragment, null, t.isConverting && r.a.createElement(b, {
-						sizePx: 12
-					}), o.fbt._("Markdown Mode", null, {
-						hk: "1DXoXV"
-					})),
-					"aria-label": o.fbt._("Switch to markdown", null, {
-						hk: "OxsM0"
-					}),
-					tabIndex: -1,
-					className: t.className,
-					onClick: t.onClick
-				}, !t.shouldHideTooltip && r.a.createElement(m.a, {
-					text: o.fbt._("Switch to markdown", null, {
-						hk: "4mWw83"
-					})
-				})) : r.a.createElement(E, {
-					"aria-label": o.fbt._("Switch to markdown", null, {
-						hk: "OxsM0"
-					}),
-					tabIndex: -1,
-					className: t.className,
-					onClick: t.onClick
-				}, t.isConverting && r.a.createElement(b, {
+				b = Object(i.b)(f);
+			e.a = r.a.memo(b(t => r.a.createElement(l.q, {
+				priority: l.b.Plain,
+				size: l.c.XS,
+				text: r.a.createElement(r.a.Fragment, null, t.isConverting && r.a.createElement(g, {
 					sizePx: 12
-				}), !t.shouldHideTooltip && r.a.createElement(m.a, {
-					text: o.fbt._("Switch to markdown", null, {
-						hk: "4mWw83"
-					})
-				}), r.a.createElement(y, null, o.fbt._("Markdown mode", null, {
-					hk: "VQcEn"
-				})))
-			}))
+				}), o.fbt._("Markdown Mode", null, {
+					hk: "1DXoXV"
+				})),
+				"aria-label": o.fbt._("Switch to markdown", null, {
+					hk: "OxsM0"
+				}),
+				tabIndex: -1,
+				className: t.className,
+				onClick: t.onClick
+			}, !t.shouldHideTooltip && r.a.createElement(p.a, {
+				text: o.fbt._("Switch to markdown", null, {
+					hk: "4mWw83"
+				})
+			}))))
 		},
 		"./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.m.less": function(t, e, n) {
 			t.exports = {
@@ -1297,13 +1222,13 @@
 				},
 				O = C(c.a),
 				k = C(a.a),
-				v = C(l.a),
-				T = C(d.a),
+				T = C(l.a),
+				v = C(d.a),
 				j = C(u.a),
 				w = C(p.a),
 				R = C(h.a),
-				B = C(m.a, 1),
-				_ = C(g.a),
+				_ = C(m.a, 1),
+				B = C(g.a),
 				I = C(f.a),
 				A = C(b.a),
 				K = {
@@ -1327,7 +1252,7 @@
 				L = {
 					type: "style",
 					name: "strikethrough",
-					Icon: _,
+					Icon: B,
 					style: y.k.STRIKETHROUGH,
 					tooltipTranslation: () => o.fbt._("Strikethrough", null, {
 						hk: "U4hXC"
@@ -1345,7 +1270,7 @@
 				D = {
 					type: "style",
 					name: "spoiler",
-					Icon: B,
+					Icon: _,
 					style: y.k.SPOILER,
 					tooltipTranslation: () => o.fbt._("Spoiler", null, {
 						hk: "1tb6Ht"
@@ -1363,7 +1288,7 @@
 				P = {
 					type: "block",
 					name: "heading",
-					Icon: T,
+					Icon: v,
 					block: y.b.H1,
 					tooltipTranslation: () => o.fbt._("Heading", null, {
 						hk: "4jnBPs"
@@ -1399,7 +1324,7 @@
 				V = {
 					type: "block",
 					name: "code_block",
-					Icon: v,
+					Icon: T,
 					block: y.f,
 					tooltipTranslation: () => o.fbt._("Code Block", null, {
 						hk: "2y19DH"
@@ -1466,10 +1391,10 @@
 				C = n("./src/reddit/icons/svgs/ImagePost/index.tsx"),
 				O = n("./src/reddit/icons/svgs/Video/index.tsx"),
 				k = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.m.less"),
-				v = n.n(k);
-			const T = a.a.wrapped(C.a, "ImageIcon", v.a),
-				j = a.a.wrapped(O.a, "VideoIcon", v.a),
-				w = a.a.input("HiddenInput", v.a);
+				T = n.n(k);
+			const v = a.a.wrapped(C.a, "ImageIcon", T.a),
+				j = a.a.wrapped(O.a, "VideoIcon", T.a),
+				w = a.a.input("HiddenInput", T.a);
 			class R extends r.Component {
 				constructor() {
 					super(...arguments), this.hiddenInputEl = null, this.onFileInputChange = t => {
@@ -1495,7 +1420,7 @@
 						c = o ? t : n
 					}
 					return i.a.createElement(y.a, {
-						Icon: o ? T : j,
+						Icon: o ? v : j,
 						active: r.isActive,
 						enabled: r.isEnabled && c,
 						tooltip: o ? s.fbt._("Add an image", null, {
@@ -1514,8 +1439,8 @@
 					}))
 				}
 			}
-			var B = n("./src/reddit/components/RichTextEditor/Toolbar/index.m.less"),
-				_ = n.n(B);
+			var _ = n("./src/reddit/components/RichTextEditor/Toolbar/index.m.less"),
+				B = n.n(_);
 
 			function I() {
 				return (I = Object.assign || function(t) {
@@ -1529,10 +1454,10 @@
 			const A = Object(E.f)(l.a),
 				K = Object(E.f)(d.a),
 				M = t => i.a.createElement(y.a, I({}, t, {
-					tooltipContentClass: _.a.tooltip
+					tooltipContentClass: B.a.tooltip
 				})),
-				L = a.a.div("SectionSpacer", _.a),
-				F = a.a.div("Spacer", _.a),
+				L = a.a.div("SectionSpacer", B.a),
+				F = a.a.div("Spacer", B.a),
 				D = (t, e, n, s, r) => {
 					const {
 						name: c,
@@ -1612,8 +1537,8 @@
 						onMarkdownButtonClick: m
 					} = t, g = Object(p.a)(s);
 					return d && Object(p.b)(g), i.a.createElement("div", {
-						className: Object(c.a)(_.a.toolbarContent, e, {
-							[_.a.isSticky]: !r
+						className: Object(c.a)(B.a.toolbarContent, e, {
+							[B.a.isSticky]: !r
 						})
 					}, N(P, g, s, a, u), i.a.createElement(z, {
 						controlsState: g,
@@ -2880,7 +2805,7 @@
 				C = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				O = n("./src/reddit/models/PostCreationForm/index.ts"),
 				k = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts");
-			const v = {
+			const T = {
 				BREAK_HEADER_ENTITY: "BREAK_HEADER_ENTITY",
 				CONVERT_TO_LIST_ON_SPACE: "CONVERT_TO_LIST_ON_SPACE",
 				EXEC_TABLE_ON_ENTER_HANDLER: "EXEC_TABLE_ON_ENTER_HANDLER",
@@ -2894,7 +2819,7 @@
 				RESET_CURRENT_AND_PREVIOUS_BLOCKS: "RESET_CURRENT_AND_PREVIOUS_BLOCKS",
 				SUBMIT: "SUBMIT"
 			};
-			const T = t => {
+			const v = t => {
 					const e = t.getCurrentContent().getBlockMap();
 					if (e.size > 2 || (t => !!t.reduce((t = 0, e) => t + e.getLength(), 0))(e) || (t => !!t.find(t => Object(k.o)(t.getType())))(e)) return null; {
 						const n = t.getSelection();
@@ -2909,8 +2834,8 @@
 				};
 			var w = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				R = n("./src/reddit/components/RichTextEditor/constants/draftEditorCommands.ts"),
-				B = n("./node_modules/lodash/escape.js"),
-				_ = n.n(B),
+				_ = n("./node_modules/lodash/escape.js"),
+				B = n.n(_),
 				I = n("./src/reddit/components/RichTextEditor/media/helpers.ts"),
 				A = n("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				K = n("./src/reddit/components/RichTextEditor/entity/entityTypes.ts"),
@@ -2927,9 +2852,9 @@
 				W = n("./node_modules/lodash/last.js"),
 				q = n.n(W),
 				G = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
-				Q = n("./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts"),
-				Y = n("./node_modules/lodash/find.js"),
-				Z = n.n(Y);
+				Y = n("./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts"),
+				Q = n("./node_modules/lodash/find.js"),
+				Z = n.n(Q);
 			var J = (t, e) => {
 				const n = t.getSelection(),
 					s = t.getCurrentContent(),
@@ -2968,15 +2893,15 @@
 					k = s.merge({
 						blockMap: o.BlockMapBuilder.createFromArray(O)
 					}),
-					v = {
+					T = {
 						colIndex: g,
 						rowIndex: f
 					};
-				let T = Z()(S, t => Object(V.h)(v, Object(V.g)(t)));
-				T || (T = S.length ? S[S.length - 1] : C[p > 0 ? p - 1 : 0]);
-				const j = o.SelectionState.createEmpty(T.getKey()).merge({
-					focusOffset: T.getLength(),
-					anchorOffset: T.getLength()
+				let v = Z()(S, t => Object(V.h)(T, Object(V.g)(t)));
+				v || (v = S.length ? S[S.length - 1] : C[p > 0 ? p - 1 : 0]);
+				const j = o.SelectionState.createEmpty(v.getKey()).merge({
+					focusOffset: v.getLength(),
+					anchorOffset: v.getLength()
 				});
 				let w = o.EditorState.push(t, k, G.e);
 				return w = o.EditorState.forceSelection(w, j)
@@ -2998,7 +2923,7 @@
 					l[i.getKey()] = Object(V.j)(i, [t, e]), d = n
 				} else {
 					if (c.blocks[0].getKey() === n.getStartKey() && q()(c.blocks).getKey() === n.getEndKey()) return J(t, "rows");
-					Object(Q.a)(s, n, (t, e) => {
+					Object(Y.a)(s, n, (t, e) => {
 						l[e] = Object(V.n)(t, 0, 0)
 					}), d = n.merge({
 						anchorOffset: 0,
@@ -3279,7 +3204,7 @@
 				}
 				const s = o.ContentState.createFromBlockArray(n),
 					r = JSON.stringify(Object(o.convertToRaw)(s));
-				return `<div data-reddit-rtjson="${_()(r)}">${e}</div>`
+				return `<div data-reddit-rtjson="${B()(r)}">${e}</div>`
 			};
 			const gt = () => !!window.clipboardData,
 				ft = (t, e, n = !1) => {
@@ -3298,7 +3223,7 @@
 			var yt = (t, e, n) => {
 				const s = t.getCurrentContent(),
 					r = t.getSelection(),
-					i = vt(t) || at(s, r);
+					i = Tt(t) || at(s, r);
 				if (!i || !i.count()) return;
 				const c = i.toArray(),
 					a = {
@@ -3391,7 +3316,7 @@
 				Ot = (t, e, n) => {
 					const o = ((t, e, n) => {
 						const o = e ? e.getText() : "";
-						return `<span data-editor="${n}">${_()(o)}</span>`
+						return `<span data-editor="${n}">${B()(o)}</span>`
 					})(0, e, n.editor.getEditorKey());
 					n.htmlParts.push(o)
 				},
@@ -3404,7 +3329,7 @@
 						e.textParts.push(n)
 					})(o, t), t.processed.push(n), o && t.processed.push(o)
 				},
-				vt = t => {
+				Tt = t => {
 					const e = t.getSelection(),
 						n = e.getFocusKey();
 					if (n !== e.getAnchorKey()) return;
@@ -3416,8 +3341,8 @@
 						return e && Object(k.u)(e.getType()) && t.push(e), o.ContentState.createFromBlockArray(t).getBlockMap()
 					}
 				},
-				Tt = t => {
-					const e = vt(t);
+				vt = t => {
+					const e = Tt(t);
 					if (e) return Object(I.d)(t, e.first().getKey())
 				},
 				jt = t => {
@@ -3449,12 +3374,12 @@
 					const n = wt(e, "up");
 					return n && t.preventDefault(), n
 				},
-				Bt = (t, e) => {
+				_t = (t, e) => {
 					if (t.shiftKey) return;
 					const n = wt(e, "down");
 					return n && t.preventDefault(), n
 				},
-				_t = (t, e) => {
+				Bt = (t, e) => {
 					const n = t.getSelection();
 					return n.isCollapsed() && 0 === n.getStartOffset() && Object(k.o)(t.getCurrentContent().getBlockForKey(n.getStartKey()).getType())
 				};
@@ -3495,15 +3420,15 @@
 				}, "Component", zt.a),
 				qt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/Placeholder/index.m.less"),
 				Gt = n.n(qt);
-			const Qt = g.a.div("Message", Gt.a);
-			var Yt = g.a.wrapped(t => {
+			const Yt = g.a.div("Message", Gt.a);
+			var Qt = g.a.wrapped(t => {
 					const {
 						className: e,
 						isImage: n
 					} = t;
 					return a.a.createElement("div", {
 						className: e
-					}, a.a.createElement(Qt, null, n ? s.fbt._("Processing video...", null, {
+					}, a.a.createElement(Yt, null, n ? s.fbt._("Processing video...", null, {
 						hk: "3g3QoU"
 					}) : s.fbt._("Processing image...", null, {
 						hk: "1xoNB3"
@@ -3741,7 +3666,7 @@
 							[Ce.a.isUploaded]: m,
 							[Ce.a.isSelected]: n
 						})
-					}, d), f ? a.a.createElement(Yt, {
+					}, d), f ? a.a.createElement(Qt, {
 						className: Ce.a.placeholder,
 						isImage: u
 					}) : u ? a.a.createElement(Wt, {
@@ -3763,8 +3688,8 @@
 						upload: i
 					}))
 				},
-				ve = n("./src/reddit/components/RichTextEditor/media/MediaBlock/SelectionHook/index.m.less"),
-				Te = n.n(ve);
+				Te = n("./src/reddit/components/RichTextEditor/media/MediaBlock/SelectionHook/index.m.less"),
+				ve = n.n(Te);
 
 			function je() {
 				return (je = Object.assign || function(t) {
@@ -3775,15 +3700,15 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const we = g.a.div("HiddenDiv", Te.a);
+			const we = g.a.div("HiddenDiv", ve.a);
 			var Re = ({
 					elementRef: t,
 					...e
 				}) => a.a.createElement(we, je({}, e, {
 					innerRef: t
 				}), a.a.createElement("br", null)),
-				Be = n("./src/reddit/components/MakeGifToggle/index.tsx"),
-				_e = n("./src/reddit/icons/svgs/ThumbnailSelect/index.tsx"),
+				_e = n("./src/reddit/components/MakeGifToggle/index.tsx"),
+				Be = n("./src/reddit/icons/svgs/ThumbnailSelect/index.tsx"),
 				Ie = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				Ae = n("./src/reddit/layout/row/Inline/index.tsx"),
 				Ke = n("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
@@ -3793,7 +3718,7 @@
 				De = n.n(Fe);
 			const Ne = g.a.wrapped(Me.a, "FormatterButton", De.a),
 				Pe = Object(Le.f)(Ie.b),
-				Ue = Object(Le.f)(_e.a),
+				Ue = Object(Le.f)(Be.a),
 				He = g.a.wrapped(Ae.a, "ToolbarContent", De.a);
 			var ze = t => {
 					const {
@@ -3811,7 +3736,7 @@
 						})
 					}, a.a.createElement(He, {
 						className: De.a.content
-					}, i && a.a.createElement(Be.a, {
+					}, i && a.a.createElement(_e.a, {
 						isCompact: !0,
 						key: "make-gif",
 						on: l,
@@ -3841,7 +3766,7 @@
 					const n = Object(I.h)(e.block);
 					return n && n.uploadInfo && n.uploadInfo.uploadKey
 				}, (t, e) => e ? t[e] : void 0),
-				Qe = Object(l.b)((t, e) => ({
+				Ye = Object(l.b)((t, e) => ({
 					upload: Ge(t, e),
 					isThumbnailSelectorOpen: Object(Nt.a)(t) === qe(e.block),
 					isRteVideoPosterEnabled: S.d.rteVideoPoster(t)
@@ -3849,7 +3774,7 @@
 					onCancelUpload: e => t(Kt.i(e, !1)),
 					toggleVideoThumbnailsSelector: () => t(Object(At.i)(qe(e.block)))
 				})),
-				Ye = g.a.div("MediaContainer", We.a),
+				Qe = g.a.div("MediaContainer", We.a),
 				Ze = g.a.div("Container", We.a);
 			class Je extends a.a.Component {
 				constructor(t) {
@@ -3958,7 +3883,7 @@
 					}), a.a.createElement(Re, null), a.a.createElement("div", {
 						contentEditable: !1,
 						"data-offset-key": o
-					}, a.a.createElement(Ye, {
+					}, a.a.createElement(Qe, {
 						draggable: !0,
 						onDragStart: this.onDragStart,
 						innerRef: t => this.mediaContainer = t
@@ -3982,7 +3907,7 @@
 					})), a.a.createElement(Re, null))
 				}
 			}
-			var Xe = Qe(Je),
+			var Xe = Ye(Je),
 				$e = n("./src/reddit/components/RichTextEditor/media/MediaCaption/index.m.less"),
 				tn = n.n($e);
 			class en extends a.a.PureComponent {
@@ -4058,12 +3983,12 @@
 						C = r.getBlocksAsArray(),
 						O = P()(S),
 						k = [...C.slice(0, u), ...O, ...C.slice(u + d.length)],
-						v = r.merge({
+						T = r.merge({
 							blockMap: o.BlockMapBuilder.createFromArray(k)
 						}),
-						T = Z()(O, t => Object(V.h)(x, Object(V.g)(t))),
-						j = Object(V.o)(s, T, T);
-					let w = o.EditorState.push(t, v, G.e);
+						v = Z()(O, t => Object(V.h)(x, Object(V.g)(t))),
+						j = Object(V.o)(s, v, v);
+					let w = o.EditorState.push(t, T, G.e);
 					return w = o.EditorState.forceSelection(w, j)
 				},
 				sn = n("./node_modules/lodash/clamp.js"),
@@ -4286,7 +4211,7 @@
 						n.parentElement && (n = n.parentElement), o--
 					}
 				},
-				vn = t => {
+				Tn = t => {
 					const {
 						dataset: e
 					} = t;
@@ -4295,7 +4220,7 @@
 						colIndex: +e.col
 					}
 				},
-				Tn = t => {
+				vn = t => {
 					const e = window.getSelection(),
 						{
 							focusNode: n,
@@ -4358,7 +4283,7 @@
 						if (e.anchorNode === e.focusNode) return void this.resetSelection();
 						const n = On(t, e.anchorNode),
 							o = On(t, e.focusNode);
-						n && n === o ? this.resetSelection() : n && o ? this.setCellsRange(n, o) : n || o ? this.selectWholeTable() : Tn(t) ? this.selectWholeTable() : this.resetSelection()
+						n && n === o ? this.resetSelection() : n && o ? this.setCellsRange(n, o) : n || o ? this.selectWholeTable() : vn(t) ? this.selectWholeTable() : this.resetSelection()
 					}, this.resetSelection = () => {
 						(this.state.anchorCell || this.state.focusCell || this.state.isSelectWholeTable) && this.setState({
 							isSelectWholeTable: !1,
@@ -4366,8 +4291,8 @@
 							anchorCell: void 0
 						})
 					}, this.setCellsRange = (t, e) => {
-						const n = vn(e),
-							o = vn(t);
+						const n = Tn(e),
+							o = Tn(t);
 						Object(V.h)(n, this.state.focusCell) && Object(V.h)(o, this.state.anchorCell) && !this.state.isSelectWholeTable || this.setState({
 							focusCell: n,
 							anchorCell: o,
@@ -4424,8 +4349,8 @@
 					wrapper: a.a.createElement(wn, null)
 				}
 			});
-			var Bn = n("./node_modules/lodash/isEqual.js"),
-				_n = n.n(Bn),
+			var _n = n("./node_modules/lodash/isEqual.js"),
+				Bn = n.n(_n),
 				In = n("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
 				An = n("./src/reddit/icons/svgs/FormattingAlignCenter/index.tsx"),
 				Kn = n("./src/reddit/icons/svgs/FormattingAlignLeft/index.tsx"),
@@ -4499,11 +4424,11 @@
 				Gn = Vn(Wn, {
 					orientation: "right"
 				}),
-				Qn = Vn(Wn, {
+				Yn = Vn(Wn, {
 					orientation: "left"
 				}),
-				Yn = Object(Le.f)(Ln.a),
-				Zn = Vn(Yn, {
+				Qn = Object(Le.f)(Ln.a),
+				Zn = Vn(Qn, {
 					orientation: "vertical"
 				}),
 				Jn = Object(Le.f)(An.a),
@@ -4539,7 +4464,7 @@
 							hk: "3oHuXw"
 						})
 					}), a.a.createElement(Ke.c, null), a.a.createElement(no, {
-						Icon: Qn,
+						Icon: Yn,
 						onClick: () => n(on(e, "columns", "before")),
 						tooltip: s.fbt._("Insert column before", null, {
 							hk: "11EB6Q"
@@ -4569,7 +4494,7 @@
 							hk: "3t7ZU"
 						})
 					}), a.a.createElement(no, {
-						Icon: Yn,
+						Icon: Qn,
 						onClick: () => n(J(e, "rows")),
 						tooltip: s.fbt._("Delete row", null, {
 							hk: "3yJYqS"
@@ -4626,7 +4551,7 @@
 								top: Math.min(n.top, o.top),
 								left: Math.max(n.right, o.right) - io
 							};
-						_n()(this.state.tooltipPosition, s) || this.setState({
+						Bn()(this.state.tooltipPosition, s) || this.setState({
 							tooltipPosition: s
 						}), this.hideToolbar()
 					}, this.hideActionButton = () => {
@@ -4760,8 +4685,8 @@
 				Co = () => So;
 			var Oo = n("./src/reddit/selectors/experiments/econ/customEmojis.ts"),
 				ko = n("./src/reddit/selectors/gold/enabledFeatures.ts"),
-				vo = n("./src/reddit/selectors/gold/powerups.ts"),
-				To = n("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltipAsync.ts"),
+				To = n("./src/reddit/selectors/gold/powerups.ts"),
+				vo = n("./src/reddit/components/RichTextEditor/emotes/Powerups/tooltipAsync.ts"),
 				jo = n("./src/higherOrderComponents/makeAsync.tsx"),
 				wo = Object(jo.a)({
 					ErrorComponent: () => null,
@@ -4778,19 +4703,19 @@
 					return t
 				}).apply(this, arguments)
 			}
-			var Bo = t => {
+			var _o = t => {
 				const {
 					subreddit: e
 				} = t, n = e.id, o = Object(l.e)(S.d.spEmotes), s = Object(l.e)(t => Object(ko.b)(t, {
 					subredditId: n
 				})), r = Object(l.e)(Oo.a);
-				return Object(l.e)(t => Object(vo.f)(t, {
+				return Object(l.e)(t => Object(To.f)(t, {
 					subredditId: n
-				})) && r ? a.a.createElement(To.a, t) : a.a.createElement(a.a.Fragment, null, s && a.a.createElement(wo, Ro({}, t, {
+				})) && r ? a.a.createElement(vo.a, t) : a.a.createElement(a.a.Fragment, null, s && a.a.createElement(wo, Ro({}, t, {
 					shouldHideAddEmote: !o
 				})))
 			};
-			const _o = new Set([K.a.LINK]);
+			const Bo = new Set([K.a.LINK]);
 			var Io = n("./src/reddit/components/RichTextEditor/entity/link/helpers.tsx"),
 				Ao = n("./src/reddit/components/RichTextEditor/entity/link/decorator.m.less"),
 				Ko = n.n(Ao);
@@ -4924,7 +4849,7 @@
 					let i = n,
 						c = s.getAnchorOffset(),
 						a = s.getFocusOffset();
-					if (Object(Q.a)(n, s, (t, e) => {
+					if (Object(Y.a)(n, s, (t, e) => {
 							const n = t.getType();
 							if ("paragraph" === n || !Wo.has(n)) return !1;
 							let l = null;
@@ -4974,7 +4899,7 @@
 						}
 					}
 				})(t, e),
-				Qo = (t, e) => (t => {
+				Yo = (t, e) => (t => {
 					const e = t.getSelection(),
 						n = t.getCurrentContent();
 					if (!e.isCollapsed()) return X(t); {
@@ -5001,7 +4926,7 @@
 						}
 					}
 				})(t, e),
-				Yo = t => {
+				Qo = t => {
 					const e = t.getSelection();
 					if (!e.isCollapsed()) return !1;
 					const n = o.RichUtils.getCurrentBlockType(t);
@@ -5084,7 +5009,7 @@
 				Cs = n.n(Ss);
 			const Os = g.a.div("DropLine", Cs.a),
 				ks = g.a.wrapped(In.b, "Tooltip", Cs.a);
-			class vs extends c.Component {
+			class Ts extends c.Component {
 				constructor(t) {
 					super(t), this.dragCount = 0, this.setContainerRef = t => this.containerRef = t, this.preventDocumentDrop = t => {
 						!! function t(e) {
@@ -5112,7 +5037,7 @@
 								left: t
 							}
 						}
-						_n()(o, this.state.point) || this.setState({
+						Bn()(o, this.state.point) || this.setState({
 							point: o
 						})
 					}, this.onDragEnter = t => {
@@ -5169,12 +5094,12 @@
 					}, a.a.createElement(Os, null)))
 				}
 			}
-			var Ts = n("./node_modules/draft-js/lib/DraftPasteProcessor.js"),
-				js = n.n(Ts),
+			var vs = n("./node_modules/draft-js/lib/DraftPasteProcessor.js"),
+				js = n.n(vs),
 				ws = n("./node_modules/draft-js/lib/getEntityKeyForSelection.js"),
 				Rs = n.n(ws),
-				Bs = n("./node_modules/draft-js/lib/splitTextIntoTextBlocks.js"),
-				_s = n.n(Bs),
+				_s = n("./node_modules/draft-js/lib/splitTextIntoTextBlocks.js"),
+				Bs = n.n(_s),
 				Is = n("./src/reddit/components/RichTextEditor/entity/cloneEntitiesInFragment.ts"),
 				As = n("./src/reddit/components/RichTextEditor/entity/applyEntityToContentBlock.ts");
 
@@ -5196,7 +5121,7 @@
 			}
 
 			function Ms(t, e, n) {
-				const s = _s()(e),
+				const s = Bs()(e),
 					r = n && 1 === s.length ? n : o.CharacterMetadata.create(),
 					i = js.a.processText(s, r).map(t => t.merge({
 						type: k.n
@@ -5312,15 +5237,15 @@
 					hk: "3nPt5D"
 				})))),
 				Gs = n("./src/reddit/controls/Input/index.tsx"),
-				Qs = n("./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less"),
-				Ys = n.n(Qs);
-			const Zs = g.a.form("EditForm", Ys.a),
-				Js = g.a.wrapped(t => a.a.createElement("div", t, t.children), "LinkEditorBox", Ys.a),
-				Xs = g.a.wrapped(Gs.a, "Input", Ys.a),
-				$s = g.a.label("Label", Ys.a),
-				tr = g.a.div("HintAndButtonRow", Ys.a),
-				er = g.a.span("InvalidUrlHint", Ys.a),
-				nr = g.a.wrapped(Xt.i, "SubmitButton", Ys.a),
+				Ys = n("./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less"),
+				Qs = n.n(Ys);
+			const Zs = g.a.form("EditForm", Qs.a),
+				Js = g.a.wrapped(t => a.a.createElement("div", t, t.children), "LinkEditorBox", Qs.a),
+				Xs = g.a.wrapped(Gs.a, "Input", Qs.a),
+				$s = g.a.label("Label", Qs.a),
+				tr = g.a.div("HintAndButtonRow", Qs.a),
+				er = g.a.span("InvalidUrlHint", Qs.a),
+				nr = g.a.wrapped(Xt.i, "SubmitButton", Qs.a),
 				or = t => {
 					t && (t.focus(), t.select())
 				},
@@ -5624,8 +5549,8 @@
 				Cr = g.a.div("H1", xr.a),
 				Or = g.a.div("H2", xr.a),
 				kr = g.a.div("H3", xr.a),
-				vr = g.a.div("H4", xr.a),
-				Tr = g.a.div("H5", xr.a),
+				Tr = g.a.div("H4", xr.a),
+				vr = g.a.div("H5", xr.a),
 				jr = g.a.div("H6", xr.a),
 				wr = t => ({
 					component: e => a.a.createElement(t, null, a.a.createElement(o.EditorBlock, e)),
@@ -5635,14 +5560,14 @@
 					[k.g.H1]: wr(Cr),
 					[k.g.H2]: wr(Or),
 					[k.g.H3]: wr(kr),
-					[k.g.H4]: wr(vr),
-					[k.g.H5]: wr(Tr),
+					[k.g.H4]: wr(Tr),
+					[k.g.H5]: wr(vr),
 					[k.g.H6]: wr(jr)
 				},
-				Br = ["italic normal 1em 'Noto Sans'", "italic bold 1em 'Noto Sans'", "normal bold 1em 'Noto Sans'"],
-				_r = () => {
+				_r = ["italic normal 1em 'Noto Sans'", "italic bold 1em 'Noto Sans'", "normal bold 1em 'Noto Sans'"],
+				Br = () => {
 					const t = document.fonts;
-					t && t.load && Br.forEach(e => t.load(e))
+					t && t.load && _r.forEach(e => t.load(e))
 				};
 			var Ir = n("./src/reddit/components/RichTextEditor/UnorderedList/index.m.less"),
 				Ar = n.n(Ir);
@@ -5708,7 +5633,7 @@
 					return n ? n.subreddits : []
 				}
 			});
-			class Qr extends c.Component {
+			class Yr extends c.Component {
 				constructor(t) {
 					super(t), this.api = null, this.onEntrySelect = t => {
 						this.props.onSelect(this.props.subredditSuggestions[t].name)
@@ -5774,11 +5699,11 @@
 					}, Object(Wr.c)(t.name)))) : null
 				}
 			}
-			var Yr = Object(l.b)(Gr, (t, e) => ({
+			var Qr = Object(l.b)(Gr, (t, e) => ({
 					onGetSubredditAutocomplete: e => {
 						t(Nr.a(e))
 					}
-				}))(Qr),
+				}))(Yr),
 				Zr = n("./src/reddit/selectors/comments.ts");
 			const Jr = Object(d.c)({
 				commentAuthors: Zr.h
@@ -5918,7 +5843,7 @@
 									popped: e,
 									stack: n
 								} = ui(s, t => t.getType() === k.f);
-								s = n, o.push(vi([t, ...e]));
+								s = n, o.push(Ti([t, ...e]));
 								break
 							}
 							case k.i.ORDERED:
@@ -5927,7 +5852,7 @@
 									popped: n,
 									stack: i
 								} = ui(s, t => t.getType() === r);
-								s = i, o.push(Ti([t, ...n], e));
+								s = i, o.push(vi([t, ...n], e));
 								break
 							}
 							case k.l: {
@@ -6021,8 +5946,8 @@
 					return t && "raw" === n.e && "raw" === t.e ? [Object(mi.m)(n.t + t.t), ...o] : [n, t, ...o]
 				}, []))(t, e)),
 				ki = (t, e) => Object(mi.c)(ei()(t.map(t => ((t, e) => t.getText().trim().length ? Si(t, e) : mi.a)(t, e)), t => t === mi.a)),
-				vi = t => Object(mi.d)(t.map(t => Object(mi.m)(t.getText()))),
-				Ti = (t, e) => {
+				Ti = t => Object(mi.d)(t.map(t => Object(mi.m)(t.getText()))),
+				vi = (t, e) => {
 					if (!t.length) return Object(mi.k)([], !1);
 					const n = t[0].getDepth();
 					let o = null;
@@ -6031,7 +5956,7 @@
 					const i = () => null !== o || r.length,
 						c = () => {
 							const t = [];
-							null !== o && (t.push(o), o = null), r.length && (t.push(Ti(r, e)), r = []), s.push(Object(mi.j)(t))
+							null !== o && (t.push(o), o = null), r.length && (t.push(vi(r, e)), r = []), s.push(Object(mi.j)(t))
 						};
 					return t.forEach(t => {
 						t.getDepth() > n ? r.push(t) : (i() && c(), o = Object(mi.l)(xi(t, e)))
@@ -6091,15 +6016,15 @@
 						return Object(hi.f)(t) ? Object(mi.l)([n]) : n
 					}
 				};
-			var Ri, Bi = n("./src/reddit/constants/componentSizes.ts"),
-				_i = n("./src/reddit/constants/elementIds.ts");
+			var Ri, _i = n("./src/reddit/constants/componentSizes.ts"),
+				Bi = n("./src/reddit/constants/elementIds.ts");
 			! function(t) {
 				t.Up = "up", t.Down = "down"
 			}(Ri || (Ri = {}));
 			var Ii = t => {
 					const e = window.getSelection().focusNode;
 					if (!e || !e.parentElement) return;
-					const n = document.getElementById(_i.d),
+					const n = document.getElementById(Bi.d),
 						o = n || document.documentElement;
 					if (!o) return;
 					const s = window.innerHeight,
@@ -6107,7 +6032,7 @@
 							bottom: r,
 							top: i
 						} = e.parentElement.getBoundingClientRect(),
-						c = n ? 0 : Bi.f + Bi.p;
+						c = n ? 0 : _i.f + _i.p;
 					t === Ri.Up && i < c ? o.scrollBy(0, i - c) : t === Ri.Down && r > s && o.scrollBy(0, r - s)
 				},
 				Ai = n("./src/reddit/models/Product/index.ts"),
@@ -6304,7 +6229,7 @@
 						s = "";
 					const r = [];
 					if (t.forEach(t => {
-							const e = Qi(t, o, n);
+							const e = Yi(t, o, n);
 							o = e.updatedContent || o, s += e.text, r.push(...e.charList)
 						}), s.length !== r.length) throw new Error("Characters length mismatch!");
 					return {
@@ -6313,7 +6238,7 @@
 						updatedContent: o !== e ? o : void 0
 					}
 				},
-				Qi = (t, e, n) => {
+				Yi = (t, e, n) => {
 					switch (t.e) {
 						case Dn.A: {
 							const {
@@ -6321,7 +6246,7 @@
 								f: n
 							} = t;
 							return {
-								charList: Yi(e, n),
+								charList: Qi(e, n),
 								text: e
 							}
 						}
@@ -6341,7 +6266,7 @@
 								t: e
 							} = t;
 							return {
-								charList: Yi(e),
+								charList: Qi(e),
 								text: e
 							}
 						}
@@ -6350,7 +6275,7 @@
 						case Dn.C: {
 							const [n, o] = Vi[t.e], s = (t.l ? "/" : "") + n + t.t, r = o + t.t, i = Ki(e, Wi[t.e], r), c = i.getLastCreatedEntityKey();
 							return {
-								charList: Yi(s, void 0, c),
+								charList: Qi(s, void 0, c),
 								text: s,
 								updatedContent: i
 							}
@@ -6362,7 +6287,7 @@
 								f: s
 							} = t, r = Ki(e, K.a.LINK, o), i = r.getLastCreatedEntityKey();
 							return {
-								charList: Yi(n, s, i),
+								charList: Qi(n, s, i),
 								text: n,
 								updatedContent: r
 							}
@@ -6380,27 +6305,27 @@
 										n = t.getLastCreatedEntityKey(),
 										s = yo.a;
 									return {
-										charList: Yi(s, void 0, n),
+										charList: Qi(s, void 0, n),
 										text: s,
 										updatedContent: t
 									}
 								}
 								const r = `:${t}:`;
 								return {
-									charList: Yi(r),
+									charList: Qi(r),
 									text: r
 								}
 							}
 							return {
-								text: "", charList: Yi("")
+								text: "", charList: Qi("")
 							};
 						default:
 							return {
-								text: "", charList: Yi("")
+								text: "", charList: Qi("")
 							}
 					}
 				},
-				Yi = (t, e, n = null) => {
+				Qi = (t, e, n = null) => {
 					const s = o.CharacterMetadata.create({
 							entity: n
 						}),
@@ -6505,12 +6430,12 @@
 			class gc extends c.Component {
 				constructor(t) {
 					super(t), this.blockRenderMap = o.DefaultDraftBlockRenderMap.merge(us, gs, Rn, hr, br, Mr, nn), this.editorHeight = null, this.editorRef = null, this.editorRootStyleMutationObserver = null, this.linksControllerApi = null, this.suggestionDropdownApi = null, this.tableToolbarControllerApi = null, this.emotesTooltipApi = null, this.gifTooltipApi = null, this.updateSuggestionDropdownPosition = null, this.isJustAutocompleteSelected = !1, this.isJustLinkified = !1, this.isMouseDown = !1, this.isJustConvertedToList = !1, this.needSyncScroll = null, this.transforms = {
-						[v.BREAK_HEADER_ENTITY]: ho.b,
-						[v.INSERT_LINE_BREAK]: ho.e,
-						[v.REDUCE_LIST_INDENT]: ho.f,
-						[v.RESET_CURRENT_AND_PREVIOUS_BLOCKS]: ho.g,
-						[v.REMOVE_EXTRA_LIST_ITEM]: ho.h,
-						[R.d]: t => Qo(t, this.props.editorType),
+						[T.BREAK_HEADER_ENTITY]: ho.b,
+						[T.INSERT_LINE_BREAK]: ho.e,
+						[T.REDUCE_LIST_INDENT]: ho.f,
+						[T.RESET_CURRENT_AND_PREVIOUS_BLOCKS]: ho.g,
+						[T.REMOVE_EXTRA_LIST_ITEM]: ho.h,
+						[R.d]: t => Yo(t, this.props.editorType),
 						[R.b]: t => Go(t, this.props.editorType),
 						[R.f]: ho.d,
 						[R.c]: t => Object(ho.c)(k.k.BOLD, t),
@@ -6589,7 +6514,7 @@
 							editorState: e
 						} = this.state;
 						if (this.isMouseDown) return ic;
-						if (_t(e, t)) return ic;
+						if (Bt(e, t)) return ic;
 						let n = function(t, e) {
 							const n = t.getSelection(),
 								s = n.getFocusOffset();
@@ -6601,7 +6526,7 @@
 								l = c.getEntityAt(s);
 							if (!(a && (!l || l !== a))) return;
 							const d = i.getEntity(a),
-								u = _o.has(d.getType());
+								u = Bo.has(d.getType());
 							if ("MUTABLE" === d.getMutability() && u) {
 								const s = o.Modifier.insertText(i, n, e, t.getCurrentInlineStyle());
 								return o.EditorState.push(t, s, "insert-characters")
@@ -6614,13 +6539,13 @@
 						} = this.state, {
 							submitOnEnter: n
 						} = this.props, s = e.getSelection();
-						if (t.metaKey && t.keyCode === tc.a.K) return v.OPEN_LINK_TOOLTIP;
+						if (t.metaKey && t.keyCode === tc.a.K) return T.OPEN_LINK_TOOLTIP;
 						if (t.keyCode === tc.a.Space) {
-							if (Jo(e)) return v.CONVERT_TO_LIST_ON_SPACE;
-							if (Object(Io.d)(e)) return v.LINKIFY_ON_SPACE
+							if (Jo(e)) return T.CONVERT_TO_LIST_ON_SPACE;
+							if (Object(Io.d)(e)) return T.LINKIFY_ON_SPACE
 						} else if (t.keyCode === tc.a.Enter) {
-							if (t.ctrlKey || t.metaKey || n && !t.shiftKey) return v.SUBMIT;
-							if (t.shiftKey && Yo(e)) return v.INSERT_LINE_BREAK; {
+							if (t.ctrlKey || t.metaKey || n && !t.shiftKey) return T.SUBMIT;
+							if (t.shiftKey && Qo(e)) return T.INSERT_LINE_BREAK; {
 								const t = this.enterKeyBinding(e);
 								if (t) return t
 							}
@@ -6634,7 +6559,7 @@
 									i = r.getType();
 								if ((Object(k.s)(i) || Object(k.q)(i) || Object(k.p)(i)) && 0 === o && r.getLength() > 0) {
 									const e = t.getBlockBefore(n);
-									if (!e || e.getType() !== i) return v.MAKE_PLAIN_BLOCK
+									if (!e || e.getType() !== i) return T.MAKE_PLAIN_BLOCK
 								}
 							}
 						}
@@ -6656,20 +6581,20 @@
 							}
 							return this.onChange(e), this.isJustLinkified = !!s, ic
 						};
-						if (n === v.SUBMIT) this.props.onSubmit();
+						if (n === T.SUBMIT) this.props.onSubmit();
 						else {
-							if (n === v.CONVERT_TO_LIST_ON_SPACE) {
+							if (n === T.CONVERT_TO_LIST_ON_SPACE) {
 								const t = r(Xo(e));
 								return this.isJustConvertedToList = !0, t
 							}
-							if (n === v.LINKIFY_ON_SPACE) return s = Object(Io.d)(e), r(Object(ho.a)(e));
-							if (n === v.LINKIFY_ON_ENTER && (s = Object(Io.d)(e), !(n = this.enterKeyBinding(e, !1)))) return r(Object(ho.d)(e))
+							if (n === T.LINKIFY_ON_SPACE) return s = Object(Io.d)(e), r(Object(ho.a)(e));
+							if (n === T.LINKIFY_ON_ENTER && (s = Object(Io.d)(e), !(n = this.enterKeyBinding(e, !1)))) return r(Object(ho.d)(e))
 						}
-						if (n === v.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), ic;
-						if (n === v.MAKE_PLAIN_BLOCK) {
+						if (n === T.OPEN_LINK_TOOLTIP) return this.onToolbarLinkButtonClick(), ic;
+						if (n === T.MAKE_PLAIN_BLOCK) {
 							return r(Object(ho.i)(k.n, e))
 						}
-						if (n === v.EXEC_TABLE_ON_ENTER_HANDLER) return r(this.tableOnEnterHandler.handle(e));
+						if (n === T.EXEC_TABLE_ON_ENTER_HANDLER) return r(this.tableOnEnterHandler.handle(e));
 						const i = this.transforms[n];
 						if (i) {
 							const t = i(e);
@@ -6692,7 +6617,7 @@
 						e && this.onChange(e), this.needSyncScroll = Ri.Up
 					}, this.handleOnDownArrow = t => {
 						if (this.suggestionDropdownApi && this.suggestionDropdownApi.moveDown()) return void t.preventDefault();
-						const e = un(t, this.state.editorState) || Bt(t, this.state.editorState);
+						const e = un(t, this.state.editorState) || _t(t, this.state.editorState);
 						e && this.onChange(e), this.needSyncScroll = Ri.Down
 					}, this.handleReturn = t => {
 						const e = jt(this.state.editorState);
@@ -6712,7 +6637,7 @@
 						} = this.state;
 						if (!this.editorRef) return;
 						if (!yt(e, this.editorRef, t)) return;
-						const n = st(e) || Tt(e) || Object(I.e)(e);
+						const n = st(e) || vt(e) || Object(I.e)(e);
 						n && this.onChange(n)
 					}, this.handleOnPaste = t => {
 						const {
@@ -6863,7 +6788,7 @@
 					})]), this.editorDecorators())
 				}
 				componentDidMount() {
-					if (this.props.rteRef && this.props.rteRef(this), m.a.write(_r), this.rteStateChanged(this.state.editorState, !1), this.editorRef) {
+					if (this.props.rteRef && this.props.rteRef(this), m.a.write(Br), this.rteStateChanged(this.state.editorState, !1), this.editorRef) {
 						const t = this.editorRef.refs.editor;
 						t.addEventListener("scroll", this.hideTooltips), this.editorRootStyleMutationObserver = new MutationObserver(this.onEditorStyleChanged), this.editorRootStyleMutationObserver.observe(t, {
 							attributes: !0,
@@ -6922,19 +6847,19 @@
 						a = n.getBlockForKey(r),
 						l = a.getType(),
 						d = i === a.getText().length;
-					if (c === k.l || l === k.l) return v.EXEC_TABLE_ON_ENTER_HANDLER;
+					if (c === k.l || l === k.l) return T.EXEC_TABLE_ON_ENTER_HANDLER;
 					if (o.isCollapsed()) {
-						if (e && Object(Io.d)(t)) return v.LINKIFY_ON_ENTER;
-						if (Object(k.r)(l) && d) return v.BREAK_HEADER_ENTITY;
+						if (e && Object(Io.d)(t)) return T.LINKIFY_ON_ENTER;
+						if (Object(k.r)(l) && d) return T.BREAK_HEADER_ENTITY;
 						if (Object(k.s)(l)) {
-							if (ac.test(a.getText())) return a.getDepth() > 0 ? v.REDUCE_LIST_INDENT : v.REMOVE_EXTRA_LIST_ITEM
+							if (ac.test(a.getText())) return a.getDepth() > 0 ? T.REDUCE_LIST_INDENT : T.REMOVE_EXTRA_LIST_ITEM
 						} else if (l === k.e) {
 							const t = n.getBlockBefore(r);
-							if (t && t.getType() === k.e && ac.test(t.getText()) && ac.test(a.getText())) return v.RESET_CURRENT_AND_PREVIOUS_BLOCKS
+							if (t && t.getType() === k.e && ac.test(t.getText()) && ac.test(a.getText())) return T.RESET_CURRENT_AND_PREVIOUS_BLOCKS
 						} else if (l === k.f) {
 							const t = n.getBlockBefore(r),
 								e = n.getBlockAfter(r);
-							if (!a.getText() && t && t.getType() === k.f && !t.getText() && (!e || e.getType() !== k.f)) return v.RESET_CURRENT_AND_PREVIOUS_BLOCKS
+							if (!a.getText() && t && t.getType() === k.f && !t.getText() && (!e || e.getType() !== k.f)) return T.RESET_CURRENT_AND_PREVIOUS_BLOCKS
 						}
 					}
 				}
@@ -6956,7 +6881,7 @@
 						aboveParent: t,
 						dropdown: !0,
 						onSetPositionUpdater: this.setSuggestionDropdownPositionUpdater
-					}, e.entityText.startsWith(f.f) && a.a.createElement(Yr, {
+					}, e.entityText.startsWith(f.f) && a.a.createElement(Qr, {
 						onDropdownApi: this.setSuggestionDropdownApi,
 						onSelect: this.onInternalSuggestionSelected,
 						substring: e.internalName
@@ -6991,19 +6916,19 @@
 						editorKey: O
 					} = u, {
 						containerRef: k,
-						editorState: v,
+						editorState: T,
 						mediaToInsert: j,
 						confirmModalOpen: R
-					} = this.state, B = this.props.readOnly || !!j, _ = T(v), I = this.isEmpty(), A = C({
+					} = this.state, _ = this.props.readOnly || !!j, B = v(T), I = this.isEmpty(), A = C({
 						allowMediaUploads: n,
 						destSubreddit: i,
 						editorKey: O,
-						editorState: v,
+						editorState: T,
 						isOverlay: !!m,
 						onChange: this.toolbarSetState,
 						onFilesSelect: this.onFilesSelect,
 						trackOnClick: this.props.trackToolbarClick,
-						readOnly: B,
+						readOnly: _,
 						onEmoteButtonClick: this.onToolbarEmoteButtonClick,
 						onGifButtonClick: this.onToolbarGifButtonClick,
 						onLinkButtonClick: this.onToolbarLinkButtonClick,
@@ -7025,8 +6950,8 @@
 						isFocused: this.isFocused(),
 						ref: this.setFocusableContentRef
 					}, K && "top" === S && A, k && a.a.createElement(po, {
-						editorState: v,
-						readOnly: B,
+						editorState: T,
+						readOnly: _,
 						onChange: this.onChange,
 						onSetApi: this.setTableToolbarControllerApi,
 						rteDomRef: k
@@ -7048,23 +6973,23 @@
 						onMouseUp: this.handleOnMouseUp
 					}, a.a.createElement("style", {
 						dangerouslySetInnerHTML: {
-							__html: `\n                .${$i.b}[${$i.d}="${_}-0-0"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '${b}';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              `
+							__html: `\n                .${$i.b}[${$i.d}="${B}-0-0"]::after {\n                  bottom: 0;\n                  color: var(--newCommunityTheme-actionIcon);\n                  content: '${b}';\n                  cursor: text;\n                  left: 0;\n                  position: absolute;\n                  top: 0;\n                }\n              `
 						}
-					}), a.a.createElement(vs, {
-						allowMediaUploads: n && !B,
+					}), a.a.createElement(Ts, {
+						allowMediaUploads: n && !_,
 						onBlockMove: this.onBlockMove,
 						onFilesDrop: this.onFilesDrop,
-						editorState: v,
+						editorState: T,
 						onChange: this.onChange
 					}, a.a.createElement(fo.Provider, {
 						value: this.entityElementRegistry
 					}, a.a.createElement(o.Editor, {
-						readOnly: B,
+						readOnly: _,
 						ref: this.setEditorRef,
 						blockRendererFn: this.blockRendererFn,
 						blockRenderMap: this.blockRenderMap,
 						editorKey: O,
-						editorState: v,
+						editorState: T,
 						keyBindingFn: this.keyBindingFN,
 						handleBeforeInput: this.handleBeforeInput,
 						handleKeyCommand: this.handleKeyCommand,
@@ -7082,17 +7007,17 @@
 						handleReturn: this.handleReturn,
 						customStyleMap: Sr()
 					})))), K && "bottom" === S && A, a.a.createElement(lr, {
-						editorState: v,
+						editorState: T,
 						entityElementRegistry: this.entityElementRegistry,
 						onSetApi: this.setLinksControllerApi,
 						onChange: this.onChange
-					}), c === Dt.a.Comment && i && a.a.createElement(Bo, {
-						editorState: v,
+					}), c === Dt.a.Comment && i && a.a.createElement(_o, {
+						editorState: T,
 						onChange: this.onChange,
 						onSetApi: this.setEmotesTooltipApi,
 						subreddit: i
 					}), (y || e) && i && a.a.createElement(es, {
-						editorState: v,
+						editorState: T,
 						onChange: this.onChange,
 						onSetApi: this.setGifTooltipApi,
 						subreddit: i,
@@ -7245,17 +7170,17 @@
 			})), n.d(e, "p", (function() {
 				return O
 			})), n.d(e, "d", (function() {
-				return v
-			})), n.d(e, "c", (function() {
 				return T
+			})), n.d(e, "c", (function() {
+				return v
 			})), n.d(e, "e", (function() {
 				return j
 			})), n.d(e, "m", (function() {
 				return R
 			})), n.d(e, "g", (function() {
-				return B
-			})), n.d(e, "j", (function() {
 				return _
+			})), n.d(e, "j", (function() {
+				return B
 			})), n.d(e, "i", (function() {
 				return I
 			})), n.d(e, "o", (function() {
@@ -7377,7 +7302,7 @@
 					const n = t.getBlockAfter(e);
 					return t = Object(g.i)(t, e), n && Object(f.u)(n.getType()) && (t = Object(g.i)(t, n.getKey())), t
 				},
-				v = (t, e, n = !0) => {
+				T = (t, e, n = !0) => {
 					let o = t.getCurrentContent();
 					o = k(o, e);
 					let r = n ? s.EditorState.push(t, o, m.f) : s.EditorState.set(t, {
@@ -7385,7 +7310,7 @@
 					});
 					return r = s.EditorState.forceSelection(r, o.getSelectionAfter())
 				},
-				T = t => {
+				v = t => {
 					let e = t.getCurrentContent();
 					w(e).forEach(t => {
 						e = k(e, t.getKey())
@@ -7406,7 +7331,7 @@
 						o = n && n.uploadInfo && n.uploadInfo.uploadKey;
 					return !(!o || e[o] && e[o].url)
 				}).isEmpty(),
-				B = t => {
+				_ = t => {
 					const e = w(t),
 						n = {
 							gifvideo: 0,
@@ -7420,7 +7345,7 @@
 						s = e.makeGif ? "gifvideo" : e.uploadInfo && "video" === e.uploadInfo.mediaType || e.mediaAsset && e.mediaAsset.type === o.Video ? "video" : "image", n[s]++, n.total++
 					}), n
 				},
-				_ = t => !w(t).isEmpty(),
+				B = t => !w(t).isEmpty(),
 				I = (t, e) => {
 					const n = w(t).map(t => {
 						const n = y(t),
@@ -7705,8 +7630,8 @@
 				C = u.a.wrapped(b.a, "TitleRow", E.a),
 				O = u.a.wrapped(f.a, "Close", E.a),
 				k = u.a.div("CloseWrapper", E.a),
-				v = u.a.div("ThumbnailsContainer", E.a),
-				T = u.a.img("Image", E.a),
+				T = u.a.div("ThumbnailsContainer", E.a),
+				v = u.a.img("Image", E.a),
 				j = t => l.a.createElement("div", {
 					className: Object(d.a)(E.a.thumbnail, Object(g.a)({
 						isLoading: t.isLoading
@@ -7715,13 +7640,13 @@
 					}),
 					onClick: t.onClick,
 					ref: t.elementRef
-				}, t.thumbnail.url && l.a.createElement(T, {
+				}, t.thumbnail.url && l.a.createElement(v, {
 					src: t.thumbnail.url
 				})),
 				w = u.a.wrapped(b.a, "ButtonRow", E.a),
 				R = h.i,
-				B = u.a.wrapped(h.l, "CancelButton", E.a),
-				_ = (t, e) => {
+				_ = u.a.wrapped(h.l, "CancelButton", E.a),
+				B = (t, e) => {
 					if (1 === t) return [0];
 					const n = c()(0, e, e / (t - 1));
 					return n.push(e), n.map(t => +t.toFixed(2))
@@ -7749,7 +7674,7 @@
 						thumbnailsCount: e = x,
 						selected: n,
 						videoDuration: o
-					} = this.props, s = _(e, o).map(t => ({
+					} = this.props, s = B(e, o).map(t => ({
 						time: t,
 						url: n && n.time === t ? n.url : void 0
 					})), i = n ? s.findIndex(t => n.time === t.time) : -1;
@@ -7790,14 +7715,14 @@
 						hk: "XlI0H"
 					}), l.a.createElement(k, {
 						onClick: this.props.onToggleModal
-					}, l.a.createElement(O, null))), l.a.createElement(v, null, e.map((e, n) => l.a.createElement(j, {
+					}, l.a.createElement(O, null))), l.a.createElement(T, null, e.map((e, n) => l.a.createElement(j, {
 						key: n,
 						elementRef: n === t ? this.setSelectedElementRef : void 0,
 						isLoading: !e.url,
 						onClick: () => this.setSelected(n),
 						isSelected: n === t,
 						thumbnail: e
-					}))), l.a.createElement(w, null, l.a.createElement(B, {
+					}))), l.a.createElement(w, null, l.a.createElement(_, {
 						onClick: this.props.onToggleModal
 					}, o.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -8525,7 +8450,7 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(o.qb)
+			const r = Object(s.a)(o.ob)
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(t, e, n) {
 			"use strict";
@@ -8595,4 +8520,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.bf1df1684730d6961936.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.6001bef5cb4d546a2f9c.js.map

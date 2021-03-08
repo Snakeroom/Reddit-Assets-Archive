@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.93a1da19c700755cc085.js
-// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.44c76640752113c95438.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1822,13 +1822,13 @@
 			e.exports = {
 				CallToActionButton: "_2pjSQOdNtYd1I2W0Z1Im8I",
 				callToActionButton: "_2pjSQOdNtYd1I2W0Z1Im8I",
-				mNotCardView: "_33VrFkg3gJpkL8AlPfcHUE",
 				Icon: "_2W1YFyYH_CTGX4_5OEBs2Q",
 				icon: "_2W1YFyYH_CTGX4_5OEBs2Q",
 				isLeft: "p8bIdnQ5pQUQRETAyCoa5",
 				isRight: "_36ucS75syCWwJ_ee7IieXZ",
 				active: "NPw0Z_HL-yJPXnZ3mpWEA",
-				redditStyle: "OGOshepc50ul-kJHrocIO"
+				redditStyle: "OGOshepc50ul-kJHrocIO",
+				mNotCardView: "_33VrFkg3gJpkL8AlPfcHUE"
 			}
 		},
 		"./src/reddit/components/CallToActionButton/index.tsx": function(e, t, n) {
@@ -1837,12 +1837,11 @@
 				s = n.n(o),
 				r = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/controls/OutboundLink/styled.tsx"),
-				a = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				c = n("./src/reddit/components/CallToActionButton/index.m.less"),
-				d = n.n(c);
+				a = n("./src/reddit/components/CallToActionButton/index.m.less"),
+				c = n.n(a);
 
-			function l() {
-				return (l = Object.assign || function(e) {
+			function d() {
+				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -1853,15 +1852,11 @@
 			t.a = ({
 				className: e,
 				...t
-			}) => {
-				const n = Object(a.a)();
-				return s.a.createElement(i.a, l({
-					className: Object(r.a)(e, d.a.CallToActionButton, {
-						[d.a.mNotCardView]: t.isNotCardView,
-						[d.a.is2020]: n
-					})
-				}, t))
-			}
+			}) => s.a.createElement(i.a, d({
+				className: Object(r.a)(e, c.a.CallToActionButton, {
+					[c.a.mNotCardView]: t.isNotCardView
+				})
+			}, t))
 		},
 		"./src/reddit/components/ClassicPost/Thumbnail.tsx": function(e, t, n) {
 			"use strict";
@@ -2555,7 +2550,7 @@
 					post: l,
 					toggle: f,
 					useMediaIcons: b
-				} = e, g = Object(m.b)(), y = n || l, O = s && !!n;
+				} = e, g = Object(m.a)(), y = n || l, O = s && !!n;
 				return y.media && !(("rtjson" === y.media.type || "text" === y.media.type) && !Object(p.a)(y)) || !!l.pollData ? r.a.createElement("button", {
 					"aria-expanded": i,
 					"aria-haspopup": !0,
@@ -3543,7 +3538,7 @@
 					interactive: e
 				}) => !1 !== e, m);
 			var v = e => {
-					const t = Object(c.b)();
+					const t = Object(c.a)();
 					return s.a.createElement(d.b, {
 						className: b(e),
 						compact: e.compact,
@@ -3564,7 +3559,7 @@
 					interactive: e
 				}) => !1 !== e, y);
 			var w = e => {
-					const t = Object(c.b)();
+					const t = Object(c.a)();
 					return s.a.createElement(h.b, {
 						className: j(e),
 						compact: e.compact,
@@ -4325,7 +4320,7 @@
 				c = n("./src/lib/lessComponent.tsx"),
 				d = n("./src/reddit/hooks/useCoreStyleExperiments.ts");
 			const l = c.a.wrapped(e => {
-				const t = Object(d.b)();
+				const t = Object(d.a)();
 				return s.a.createElement("i", {
 					className: `${Object(r.b)(t?"collapse":"expandoArrowCollapse",e.isFilled)} ${e.className}`,
 					onClick: e.onClick,
@@ -4350,7 +4345,7 @@
 				c = n("./src/lib/lessComponent.tsx"),
 				d = n("./src/reddit/hooks/useCoreStyleExperiments.ts");
 			const l = c.a.wrapped(e => {
-				const t = Object(d.b)();
+				const t = Object(d.a)();
 				return s.a.createElement("i", {
 					className: `${Object(r.b)(t?"expand":"expandoArrowExpand",e.isFilled)} ${e.className}`,
 					onClick: e.onClick,
@@ -4393,7 +4388,7 @@
 				a = n("./src/reddit/icons/fonts/Expandos/Media/Video/index.m.less"),
 				c = n.n(a);
 			const d = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return s.a.createElement("i", {
 					className: `${Object(i.b)(t?"video_post":"expandoMediaVideo",e.isFilled)} ${e.className}`
 				})
@@ -4548,20 +4543,14 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "b", (function() {
-				return i
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => o.v.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: s.a,
-					experimentName: o.s
-				}),
-				i = e => o.Zb.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: s.a,
-					experimentName: o.Tb
-				})
+			const r = e => o.Xb.Enabled === Object(s.c)(e, {
+				experimentEligibilitySelector: s.a,
+				experimentName: o.Rb
+			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.93a1da19c700755cc085.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.44c76640752113c95438.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a31030c1fad8874bb7cd.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e3c02f58e680ace14335.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1622,7 +1622,7 @@
 					s || c || !Object(d.e)(a) && !Object(d.d)(a) || e(Object(n.e)())
 				}, f = e => {
 					Object(c.d)(e, {
-						experimentName: a.N
+						experimentName: a.L
 					})
 				}
 		},
@@ -3281,7 +3281,7 @@
 			const j = e => I.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				v = e => !!Object(D.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.c)),
-					experimentName: b.Hc
+					experimentName: b.Fc
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				w = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -23958,14 +23958,14 @@
 			const d = Object(s.a)(c.c, e => !e),
 				i = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: e => d(e),
-					experimentName: n.N,
+					experimentName: n.L,
 					expEventOverride: !1
 				}), e => e),
-				u = e => e === n.G.Onetap,
-				l = e => e === n.G.OnetapAuto,
+				u = e => e === n.E.Onetap,
+				l = e => e === n.E.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.ud)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.sd)(t))
 		},
 		"./src/reddit/selectors/experiments/inboxAppBadgingGql.ts": function(e, t, r) {
 			"use strict";
@@ -23978,11 +23978,11 @@
 				c = r("./src/reddit/selectors/experiments/utils.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.Vb,
+					experimentName: n.Tb,
 					experimentEligibilitySelector: i
 				}), c.a),
 				i = e => Object(o.I)(e) || Object(o.J)(e),
-				u = Object(s.a)(d, e => e === n.bc.Enabled)
+				u = Object(s.a)(d, e => e === n.Zb.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, r) {
 			"use strict";
@@ -24003,27 +24003,27 @@
 				c = r("./src/reddit/selectors/experiments/utils.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.Yb,
-					experimentEligibilitySelector: i
-				}), c.a),
-				i = e => Object(o.I)(e) || Object(o.J)(e),
-				u = Object(s.a)(d, e => e === n.ec.Redesign),
-				l = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.Xb,
-					experimentEligibilitySelector: i
-				}), c.a),
-				p = Object(s.a)(l, e => e === n.dc.Enabled),
-				b = Object(s.a)(e => Object(a.c)(e, {
 					experimentName: n.Wb,
 					experimentEligibilitySelector: i
 				}), c.a),
-				f = Object(s.a)(b, e => e === n.cc.Enabled),
-				y = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.R,
+				i = e => Object(o.I)(e) || Object(o.J)(e),
+				u = Object(s.a)(d, e => e === n.cc.Redesign),
+				l = Object(s.a)(e => Object(a.c)(e, {
+					experimentName: n.Vb,
 					experimentEligibilitySelector: i
 				}), c.a),
-				m = Object(s.a)(y, e => e === n.Z.NoOverflow),
-				E = Object(s.a)(y, e => e === n.Z.UndoBar)
+				p = Object(s.a)(l, e => e === n.bc.Enabled),
+				b = Object(s.a)(e => Object(a.c)(e, {
+					experimentName: n.Ub,
+					experimentEligibilitySelector: i
+				}), c.a),
+				f = Object(s.a)(b, e => e === n.ac.Enabled),
+				y = Object(s.a)(e => Object(a.c)(e, {
+					experimentName: n.P,
+					experimentEligibilitySelector: i
+				}), c.a),
+				m = Object(s.a)(y, e => e === n.X.NoOverflow),
+				E = Object(s.a)(y, e => e === n.X.UndoBar)
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, r) {
 			"use strict";
@@ -24281,4 +24281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a31030c1fad8874bb7cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e3c02f58e680ace14335.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.17db0ede028e626acb51.js
-// Retrieved at 3/8/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9cd10086a62f6d1305ee.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -13723,7 +13723,7 @@
 			function O(e, t) {
 				const n = Object(d.b)(e, t),
 					a = Object(u.a)(e => {
-						const t = Object(b.b)(),
+						const t = Object(b.a)(),
 							{
 								container: a,
 								containerHeight: r,
@@ -14285,25 +14285,21 @@
 			var a, s = n("./node_modules/react/index.js"),
 				r = n.n(s);
 			! function(e) {
-				e.Buttons = "buttons2020", e.Icons = "icons2020"
+				e.Icons = "icons2020"
 			}(a || (a = {}));
 			const c = r.a.createContext({
-				[a.Buttons]: !1,
 				[a.Icons]: !1
 			});
 			t.b = c
 		},
 		"./src/reddit/hooks/useCoreStyleExperiments.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "a", (function() {
-				return c
 			}));
 			var a = n("./node_modules/react/index.js"),
 				s = n("./src/reddit/contexts/CoreStyleExperiments.ts");
-			const r = () => Object(a.useContext)(s.b)[s.a.Icons],
-				c = () => Object(a.useContext)(s.b)[s.a.Buttons]
+			const r = () => Object(a.useContext)(s.b)[s.a.Icons]
 		},
 		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -14319,4 +14315,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.17db0ede028e626acb51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9cd10086a62f6d1305ee.js.map

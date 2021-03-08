@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.ffa728620a885a564933.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.7dbe5de8125e1b2105c1.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -1521,7 +1521,7 @@
 				a = i("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				o = i.n(a);
 			const l = i("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(n.b)();
+				const t = Object(n.a)();
 				return s.a.createElement("i", {
 					className: `${Object(d.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -1543,4 +1543,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.ffa728620a885a564933.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.7dbe5de8125e1b2105c1.js.map

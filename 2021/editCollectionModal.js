@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.99f802c43ed8950c6b4b.js
-// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.21d7bb5bf4388760667b.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -940,7 +940,7 @@
 				c = n("./src/reddit/icons/fonts/commonStyles.m.less"),
 				d = n.n(c);
 			t.a = e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return a.a.createElement("i", {
 					className: Object(o.a)(Object(i.b)(t ? "scheduled" : "calendar", e.isFilled), d.a.calendarIcon, e.className)
 				})
@@ -1004,4 +1004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.99f802c43ed8950c6b4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.21d7bb5bf4388760667b.js.map

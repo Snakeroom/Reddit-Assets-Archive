@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.54c5716466595b6dc78a.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f98a837d40146c40ebcd.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1850,7 +1850,7 @@
 				re = l.a.span("text", K.a),
 				se = Object(Q.t)(),
 				ne = e => {
-					const t = Object(b.b)(),
+					const t = Object(b.a)(),
 						r = !e.isDeleted && e.post.distinguishType === i.C.ADMIN;
 					return n.a.createElement(x.a, {
 						className: K.a.authorLink,
@@ -2567,7 +2567,7 @@
 				d = r("./src/lib/lessComponent.tsx"),
 				c = r("./src/reddit/hooks/useCoreStyleExperiments.ts");
 			const l = d.a.wrapped(e => {
-				const t = Object(c.b)();
+				const t = Object(c.a)();
 				return n.a.createElement("i", {
 					className: `${Object(a.b)(t?"award":"gift")} ${e.className}`,
 					id: e.id,
@@ -3043,15 +3043,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
-						experimentName: s.sb
+						experimentName: s.qb
 					});
-					return !(!t || Object(s.ud)(t))
+					return !(!t || Object(s.sd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
-						experimentName: s.sb
-					}) === s.Eb.ListingEnabled
+						experimentName: s.qb
+					}) === s.Cb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3075,4 +3075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.54c5716466595b6dc78a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f98a837d40146c40ebcd.js.map

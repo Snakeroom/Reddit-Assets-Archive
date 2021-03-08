@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.dc2aa4b4f834e2f61816.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.308b8361388b5b979ac5.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -1103,7 +1103,7 @@
 				d = n("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				i = n.n(d);
 			const l = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(a.b)();
+				const t = Object(a.a)();
 				return r.a.createElement("i", {
 					className: `${Object(o.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -1157,4 +1157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.dc2aa4b4f834e2f61816.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.308b8361388b5b979ac5.js.map

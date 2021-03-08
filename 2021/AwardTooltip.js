@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.aad0c72e9f2b404d896f.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.6accc96cdf2ac38dafb8.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -69,8 +69,8 @@
 			const y = Object(d.c)({
 					canFlagAwards: e => Object(b.c)(e, {
 						experimentEligibilitySelector: b.a,
-						experimentName: w.rb
-					}) === w.Db.Enabled,
+						experimentName: w.pb
+					}) === w.Bb.Enabled,
 					currentUser: g.i,
 					moderatorPermissions: (e, {
 						postOrComment: t
@@ -417,7 +417,7 @@
 				c = s("./src/reddit/icons/fonts/Coin/index.m.less"),
 				l = s.n(c);
 			const m = s("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(n.b)();
+				const t = Object(n.a)();
 				return r.a.createElement("i", {
 					className: Object(i.a)(e.className, Object(d.b)(t ? "coins" : "coin", e.isFilled)),
 					style: {
@@ -469,4 +469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.aad0c72e9f2b404d896f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.6accc96cdf2ac38dafb8.js.map

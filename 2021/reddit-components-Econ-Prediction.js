@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4da9d53f44c8928d886d.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a4207762a75776652301.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(i, a, r) {
@@ -3407,11 +3407,11 @@
 			}));
 			var t = r("./src/reddit/constants/experiments.ts"),
 				x = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const k = Object(x.a)(t.ub),
-				n = Object(x.a)(t.tb),
-				o = Object(x.a)(t.vb),
-				s = Object(x.a)(t.xb);
-			Object(x.a)(t.wb)
+			const k = Object(x.a)(t.sb),
+				n = Object(x.a)(t.rb),
+				o = Object(x.a)(t.tb),
+				s = Object(x.a)(t.vb);
+			Object(x.a)(t.ub)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(i, a, r) {
 			"use strict";
@@ -3425,7 +3425,7 @@
 					experimentEligibilitySelector: x.a,
 					experimentName: i
 				});
-				return !(!r || Object(t.ud)(r))
+				return !(!r || Object(t.sd)(r))
 			}
 		},
 		"./src/reddit/selectors/products.ts": function(i, a, r) {
@@ -3461,4 +3461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4da9d53f44c8928d886d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a4207762a75776652301.js.map

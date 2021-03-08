@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.b9982f2641e2a80c49f9.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.91321c976a675180139f.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1720,7 +1720,7 @@
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
 			t.b = v(e => {
-				const t = Object(b.b)();
+				const t = Object(b.a)();
 				return n.a.createElement(j, {
 					"aria-expanded": e.dropdownIsOpen,
 					"aria-haspopup": !0,
@@ -1747,12 +1747,6 @@
 				}, e.children))
 			})
 		},
-		"./src/reddit/components/SidebarExpandableList/index.m.less": function(e, t, s) {
-			e.exports = {
-				TertiaryButton: "_1rpFWd0ROODHctwG096Da",
-				tertiaryButton: "_1rpFWd0ROODHctwG096Da"
-			}
-		},
 		"./src/reddit/components/SidebarExpandableList/index.tsx": function(e, t, s) {
 			"use strict";
 			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1765,13 +1759,9 @@
 				l = s("./src/reddit/controls/Button/index.tsx"),
 				u = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				m = s("./src/reddit/layout/row/Inline/index.tsx"),
-				p = s("./src/reddit/layout/row/RightAlign/index.tsx"),
-				b = s("./src/reddit/components/SidebarExpandableList/index.m.less"),
-				h = s.n(b),
-				f = s("./src/lib/lessComponent.tsx");
-			const x = 10,
-				y = f.a.wrapped(l.o, "TertiaryButton", h.a);
-			class O extends o.a.Component {
+				p = s("./src/reddit/layout/row/RightAlign/index.tsx");
+			const b = 10;
+			class h extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						expanded: !1
@@ -1799,10 +1789,10 @@
 						}) : i.fbt._("View Less", null, {
 							hk: "1M72mK"
 						});
-						return o.a.createElement(y, {
+						return o.a.createElement(l.o, {
 							onClick: this.onButtonClick
 						}, r ? o.a.createElement(u.a, {
-							sizePx: x
+							sizePx: b
 						}) : n)
 					}
 				}
@@ -1827,9 +1817,9 @@
 					}, b, o.a.createElement(m.a, null, o.a.createElement(p.a, null, u && this.renderToggleButton())))
 				}
 			}
-			O.defaultProps = {
+			h.defaultProps = {
 				minimizedLength: a.Ib
-			}, t.a = O
+			}, t.a = h
 		},
 		"./src/reddit/components/SidebarSectionHeader/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2411,4 +2401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.b9982f2641e2a80c49f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.91321c976a675180139f.js.map

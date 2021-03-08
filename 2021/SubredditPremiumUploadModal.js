@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.cbffcb1a306469383052.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.37406a171917f6f760ee.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, s) {
@@ -1237,7 +1237,7 @@
 				i = s("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				l = s.n(i);
 			const c = s("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return a.a.createElement("i", {
 					className: `${Object(o.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -1259,4 +1259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.cbffcb1a306469383052.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.37406a171917f6f760ee.js.map

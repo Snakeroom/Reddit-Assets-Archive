@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.20e1b08e332fbaee8081.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.819aba560a83a421084a.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -2564,7 +2564,7 @@
 				i = n("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				l = n.n(i);
 			const d = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return s.a.createElement("i", {
 					className: `${Object(a.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -2793,4 +2793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.20e1b08e332fbaee8081.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.819aba560a83a421084a.js.map

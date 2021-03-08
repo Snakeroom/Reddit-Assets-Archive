@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopicLinksContainer.3ddca4610958425c0d59.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopicLinksContainer.30e749191d9d5942eb9a.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopicLinksContainer"], {
 		"./src/reddit/components/IdCard/TopicLinksContainer/index.m.less": function(e, t, s) {
@@ -29,26 +29,24 @@
 				o = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = s("./src/reddit/controls/Button/index.tsx"),
 				l = s("./src/reddit/constants/tracking.ts"),
-				m = s("./src/reddit/selectors/telemetry.ts");
-			var p = s("./src/reddit/icons/svgs/Tag/index.tsx"),
-				u = s("./src/reddit/selectors/seo/topicLinks.ts"),
-				_ = s("./src/reddit/selectors/subreddit.ts"),
+				p = s("./src/reddit/selectors/telemetry.ts");
+			var m = s("./src/reddit/icons/svgs/Tag/index.tsx"),
+				_ = s("./src/reddit/selectors/seo/topicLinks.ts"),
+				u = s("./src/reddit/selectors/subreddit.ts"),
 				L = s("./src/reddit/components/IdCard/TopicLinksContainer/index.m.less"),
-				C = s.n(L),
-				x = s("./src/reddit/controls/Button/index.m.less"),
-				g = s.n(x);
-			const k = Object(r.c)({
-					subreddit: _.S,
-					topicLinks: u.a
+				C = s.n(L);
+			const x = Object(r.c)({
+					subreddit: u.S,
+					topicLinks: _.a
 				}),
-				T = Object(a.b)(k),
-				b = ({
+				g = Object(a.b)(x),
+				k = ({
 					topicName: e,
 					slug: t
 				}) => {
 					const s = Object(o.b)(),
 						n = Object(i.useCallback)(() => s((e => t => ({
-							...m.defaults(t),
+							...p.defaults(t),
 							action: l.c.CLICK,
 							noun: "link",
 							source: "subreddit_topic_link",
@@ -62,19 +60,18 @@
 					}, c.a.createElement(d.q, {
 						className: C.a.TopicLink,
 						kind: d.a.InternalLink,
-						legacyClassName: g.a.PrimaryLinkButton,
 						onClick: n,
 						to: `/t/${t}/`
 					}, e))
 				};
-			t.default = T(({
+			t.default = g(({
 				subreddit: e,
 				topicLinks: t
 			}) => t && t.length ? c.a.createElement("div", {
 				className: C.a.TopicsContainer
 			}, c.a.createElement("div", {
 				className: C.a.TopicListHeader
-			}, c.a.createElement(p.a, {
+			}, c.a.createElement(m.a, {
 				className: C.a.TagIcon,
 				key: "tag"
 			}), `${e.displayText} ${n.fbt._("topics",null,{hk:"2BYU7m"})}`), c.a.createElement("div", {
@@ -82,7 +79,7 @@
 			}, c.a.createElement("ul", null, t.map(({
 				name: e,
 				slug: t
-			}) => c.a.createElement(b, {
+			}) => c.a.createElement(k, {
 				key: e,
 				topicName: e,
 				slug: t
@@ -104,4 +101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.3ddca4610958425c0d59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.30e749191d9d5942eb9a.js.map

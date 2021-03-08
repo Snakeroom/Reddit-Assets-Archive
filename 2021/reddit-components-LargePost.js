@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.cdefeb81bf86cbe6328f.js
-// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0e472a0cb962f7255475.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2376,13 +2376,13 @@
 			e.exports = {
 				CallToActionButton: "_2pjSQOdNtYd1I2W0Z1Im8I",
 				callToActionButton: "_2pjSQOdNtYd1I2W0Z1Im8I",
-				mNotCardView: "_33VrFkg3gJpkL8AlPfcHUE",
 				Icon: "_2W1YFyYH_CTGX4_5OEBs2Q",
 				icon: "_2W1YFyYH_CTGX4_5OEBs2Q",
 				isLeft: "p8bIdnQ5pQUQRETAyCoa5",
 				isRight: "_36ucS75syCWwJ_ee7IieXZ",
 				active: "NPw0Z_HL-yJPXnZ3mpWEA",
-				redditStyle: "OGOshepc50ul-kJHrocIO"
+				redditStyle: "OGOshepc50ul-kJHrocIO",
+				mNotCardView: "_33VrFkg3gJpkL8AlPfcHUE"
 			}
 		},
 		"./src/reddit/components/CallToActionButton/index.tsx": function(e, t, n) {
@@ -2391,12 +2391,11 @@
 				o = n.n(s),
 				r = n("./src/lib/classNames/index.ts"),
 				i = n("./src/reddit/controls/OutboundLink/styled.tsx"),
-				a = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				c = n("./src/reddit/components/CallToActionButton/index.m.less"),
-				d = n.n(c);
+				a = n("./src/reddit/components/CallToActionButton/index.m.less"),
+				c = n.n(a);
 
-			function l() {
-				return (l = Object.assign || function(e) {
+			function d() {
+				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -2407,15 +2406,11 @@
 			t.a = ({
 				className: e,
 				...t
-			}) => {
-				const n = Object(a.a)();
-				return o.a.createElement(i.a, l({
-					className: Object(r.a)(e, d.a.CallToActionButton, {
-						[d.a.mNotCardView]: t.isNotCardView,
-						[d.a.is2020]: n
-					})
-				}, t))
-			}
+			}) => o.a.createElement(i.a, d({
+				className: Object(r.a)(e, c.a.CallToActionButton, {
+					[c.a.mNotCardView]: t.isNotCardView
+				})
+			}, t))
 		},
 		"./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx": function(e, t, n) {
 			"use strict";
@@ -2872,7 +2867,7 @@
 				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var K = () => {
-					const e = Object(W.b)();
+					const e = Object(W.a)();
 					return o.a.createElement("div", {
 						className: q.a.container
 					}, o.a.createElement(H.a, {
@@ -2900,7 +2895,7 @@
 			const ae = Object(i.a)(j.O, e => e.some(ie.c)),
 				ce = Object(i.a)(ae, e => e),
 				de = (e, t) => Object(re.c)(e, {
-					experimentName: Z.fb,
+					experimentName: Z.db,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: n
@@ -3005,7 +3000,7 @@
 						isActionBarAnimationEnabled: Oe,
 						postId: je,
 						postIds: _e
-					} = e, we = !!e.redditStyle || !!e["data-redditstyle"], ke = we ? void 0 : p, Ce = Object(d.a)(re), Ee = ie && Ce, Se = Object(a.a)(re), Ie = Object(c.a)(re), Pe = Object(M.c)(le), Te = !!le.media && le.media.type === b.o.RTJSON, Ne = ye && Te, Ae = n ? n - R.a : void 0, De = !(_ && H || $), Le = (e => e === Z.xc.OnlyTitles)(pe) && !Object(ne.a)(le), Me = (e => e === Z.xc.MediumHeight)(pe) && !Object(ne.a)(le), Be = (e => {
+					} = e, we = !!e.redditStyle || !!e["data-redditstyle"], ke = we ? void 0 : p, Ce = Object(d.a)(re), Ee = ie && Ce, Se = Object(a.a)(re), Ie = Object(c.a)(re), Pe = Object(M.c)(le), Te = !!le.media && le.media.type === b.o.RTJSON, Ne = ye && Te, Ae = n ? n - R.a : void 0, De = !(_ && H || $), Le = (e => e === Z.vc.OnlyTitles)(pe) && !Object(ne.a)(le), Me = (e => e === Z.vc.MediumHeight)(pe) && !Object(ne.a)(le), Be = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -3020,7 +3015,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Fe = !!ee && !Object(Z.ud)(ee), Re = (!y || Fe) && !le.isSponsored, Ue = Object(w.t)(le, g), {
+					})(e), Fe = !!ee && !Object(Z.sd)(ee), Re = (!y || Fe) && !le.isSponsored, Ue = Object(w.t)(le, g), {
 						source: Ve
 					} = Ue, We = o.a.createElement(o.a.Fragment, null, o.a.createElement(F.a, {
 						className: Object(k.a)(be.a.container, r, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -4223,7 +4218,7 @@
 					interactive: e
 				}) => !1 !== e, m);
 			var h = e => {
-					const t = Object(c.b)();
+					const t = Object(c.a)();
 					return o.a.createElement(d.b, {
 						className: b(e),
 						compact: e.compact,
@@ -4244,7 +4239,7 @@
 					interactive: e
 				}) => !1 !== e, y);
 			var _ = e => {
-					const t = Object(c.b)();
+					const t = Object(c.a)();
 					return o.a.createElement(v.b, {
 						className: j(e),
 						compact: e.compact,
@@ -5517,19 +5512,13 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "b", (function() {
-				return i
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => s.v.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: o.a,
-					experimentName: s.s
-				}),
-				i = e => s.Zb.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: o.a,
-					experimentName: s.Tb
-				})
+			const r = e => s.Xb.Enabled === Object(o.c)(e, {
+				experimentEligibilitySelector: o.a,
+				experimentName: s.Rb
+			})
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, n) {
 			"use strict";
@@ -5541,9 +5530,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.pb
+					experimentName: s.nb
 				});
-				return !(!t || Object(s.ud)(t))
+				return !(!t || Object(s.sd)(t))
 			}
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, n) {
@@ -5651,4 +5640,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.cdefeb81bf86cbe6328f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0e472a0cb962f7255475.js.map

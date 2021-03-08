@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.c5f5091784e89d9f87db.js
-// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.f6968f4755cd03a18d5e.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, o) {
@@ -1563,7 +1563,7 @@
 					}) => Object(Z.d)(e, {
 						subredditId: t.subredditId
 					}),
-					isInIcons2020: X.b
+					isInIcons2020: X.a
 				}), (e, t) => ({
 					onCreatedClick: () => {
 						window.addEventListener("focus", (function o() {
@@ -3967,7 +3967,7 @@
 				d = o("./src/reddit/icons/fonts/DistinguishShield/index.m.less"),
 				l = o.n(d);
 			t.a = e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return n.a.createElement("i", {
 					className: Object(i.a)(l.a.DistinguishShield, Object(a.b)(t ? "distinguish" : "distinguishShield", e.isFilled), e.className)
 				})
@@ -3988,7 +3988,7 @@
 				a = o("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				d = o.n(a);
 			const l = o("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(i.b)();
+				const t = Object(i.a)();
 				return n.a.createElement("i", {
 					className: `${Object(r.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -4010,7 +4010,7 @@
 				a = o("./src/reddit/icons/fonts/Op/index.m.less"),
 				d = o.n(a);
 			const l = o("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(i.b)();
+				const t = Object(i.a)();
 				return n.a.createElement("i", {
 					className: `${Object(r.b)(t?"author":"op",e.isFilled)} ${e.className}`,
 					id: e.id,
@@ -4184,4 +4184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.c5f5091784e89d9f87db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.f6968f4755cd03a18d5e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.a57d6c4719aede88026b.js
-// Retrieved at 3/1/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.d9f35a3bca75817590bc.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -2126,7 +2126,7 @@
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
 			t.b = E(e => {
-				const t = Object(p.b)();
+				const t = Object(p.a)();
 				return r.a.createElement(N, {
 					"aria-expanded": e.dropdownIsOpen,
 					"aria-haspopup": !0,
@@ -2681,6 +2681,7 @@
 				moreButton: "MlwbIZHA-n0l6pJotytjr",
 				buttons: "_2NPnlVPBDNk-5rZwESZ9B9",
 				viewButton: "_1QQV3g6raY4DMIZmGWf_EB",
+				active: "Jkkj0xIEOc5nizoeloGlN",
 				cellCheckbox: "_2jHe0kuo-s2zjj9AFEoKIR",
 				checkbox: "_2z1fkA5gXEWTIixh5mc5Mu",
 				loadingRow: "_1twsCmeo_Rv87GnJLkvjOG",
@@ -4227,7 +4228,8 @@
 		"./src/reddit/components/Wiki/common/PageTitle/index.m.less": function(e, t, i) {
 			e.exports = {
 				container: "_2NCACehu2vXVQzdHocg7Rq",
-				linkButton: "_28uXMdKULX2ygqCKM5Apfz"
+				linkButton: "_28uXMdKULX2ygqCKM5Apfz",
+				active: "_2DijTkAaakBaDtqxBeulFO"
 			}
 		},
 		"./src/reddit/components/Wiki/common/PageTitle/index.tsx": function(e, t, i) {
@@ -4715,7 +4717,7 @@
 				o = i("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				d = i.n(o);
 			const c = i("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return n.a.createElement("i", {
 					className: `${Object(a.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -5124,4 +5126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a57d6c4719aede88026b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d9f35a3bca75817590bc.js.map

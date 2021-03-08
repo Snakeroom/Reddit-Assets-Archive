@@ -1,14 +1,13 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.40741519218a0be48f2e.js
-// Retrieved at 3/1/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.4aeecadaa9d271a8a058.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
 		"./src/reddit/components/Pill/index.m.less": function(e, i, t) {
 			e.exports = {
 				pill: "C5WTyRErVZSYP9OMmYtVb",
 				pillHidden: "_2KYStU8hK1Y9Pz3XXd9zFo",
-				primaryButton: "_1NwneinmPwP34LMpJkmKhk",
 				closeButton: "_2t7CUoLNlBt20iCMaqgpTi",
-				closeIcon: "R9MWxs6smL_jBLt-j9hjB",
+				primaryButton: "_1NwneinmPwP34LMpJkmKhk",
 				active: "_1MqiRuKo_uoDt-k-iQ2gij",
 				redditStyle: "_32JLd_VLz6vZi8afTSQx48",
 				DangerButtonColors: "_2Qkb9A7wfBBVxvmMCmKjf9",
@@ -20,7 +19,8 @@
 				Icon: "_3csCSYhumzzvURPTH9KX9y",
 				icon: "_3csCSYhumzzvURPTH9KX9y",
 				isLeft: "_27c5zYCh_rdFccFVuMq8O4",
-				isRight: "W5ik6zISdchkW_G6FdF8Y"
+				isRight: "W5ik6zISdchkW_G6FdF8Y",
+				closeIcon: "R9MWxs6smL_jBLt-j9hjB"
 			}
 		},
 		"./src/reddit/components/TabBadger/Component.tsx": function(e, i, t) {
@@ -132,4 +132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.40741519218a0be48f2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.4aeecadaa9d271a8a058.js.map

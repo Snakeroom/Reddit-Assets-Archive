@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.968858e0fefcd185b415.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.45ed13b74816f43d882e.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1553,7 +1553,7 @@
 				Ce = Object(c.c)({
 					activeModalId: de.a,
 					claimedFreeAward: j.b,
-					isInIcons2020: le.b,
+					isInIcons2020: le.a,
 					layout: W.N,
 					userIsOp: U.ob,
 					subreddit: W.q
@@ -2169,7 +2169,7 @@
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
 			t.b = w(e => {
-				const t = Object(b.b)();
+				const t = Object(b.a)();
 				return r.a.createElement(g, {
 					"aria-expanded": e.dropdownIsOpen,
 					"aria-haspopup": !0,
@@ -2859,7 +2859,7 @@
 				Pe = h.a.wrapped(D.a, "Icon", ke.a),
 				Se = h.a.wrapped(B.a, "Icon", ke.a),
 				Te = h.a.wrapped(e => {
-					return Object(P.b)() ? i.a.createElement(W.a, we({}, e, {
+					return Object(P.a)() ? i.a.createElement(W.a, we({}, e, {
 						isFilled: !0
 					})) : i.a.createElement(K.a, e)
 				}, "SavedIcon", ke.a),
@@ -2898,7 +2898,7 @@
 						postId: t
 					}) => Object(ae.a)(e) === `POST_OVERFLOW_DELETE_CONFIRMATION_${t}`,
 					isFutureEvent: je.i,
-					isInIcons2020: de.b,
+					isInIcons2020: de.a,
 					isPinned: pe.r,
 					subredditAboutInfo: pe.J,
 					reportFlowIsOpen: (e, {
@@ -3691,7 +3691,7 @@
 				}).apply(this, arguments)
 			}
 			const b = e => {
-					const t = Object(i.b)();
+					const t = Object(i.a)();
 					return n.a.createElement("div", {
 						className: Object(r.a)(u.a.checkboxMenuItem, e.className),
 						onClick: e.onClick
@@ -4475,7 +4475,7 @@
 				a = s("./src/reddit/icons/fonts/commonStyles.m.less"),
 				d = s.n(a);
 			t.a = e => {
-				const t = Object(i.b)();
+				const t = Object(i.a)();
 				return n.a.createElement("i", {
 					className: Object(r.a)(Object(c.b)(t ? "scheduled" : "calendar", e.isFilled), d.a.calendarIcon, e.className)
 				})
@@ -4609,7 +4609,7 @@
 				}).apply(this, arguments)
 			}
 			t.a = e => {
-				const t = Object(i.b)();
+				const t = Object(i.a)();
 				return n.a.createElement("i", l({}, e, {
 					className: Object(r.a)(Object(c.b)(t ? "mod" : "modActions", e.isFilled), d.a.modActions, e.className)
 				}))
@@ -4630,7 +4630,7 @@
 				c = s("./src/reddit/icons/fonts/Pencil/index.m.less"),
 				a = s.n(c);
 			const d = s("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return n.a.createElement("i", {
 					className: `${Object(i.b)(t?"edit":"pencil",e.isFilled)} ${e.className}`
 				})
@@ -4722,7 +4722,7 @@
 				a = s("./src/reddit/icons/fonts/commonStyles.m.less"),
 				d = s.n(a);
 			t.a = e => {
-				const t = Object(i.b)();
+				const t = Object(i.a)();
 				return n.a.createElement("i", {
 					className: Object(r.a)(Object(c.b)(t ? "pin" : "sticky", e.isFilled), d.a.stickyIcon, e.className),
 					id: e.id,
@@ -4978,8 +4978,8 @@
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.S
-			}) === o.ab.Enabled
+				experimentName: o.Q
+			}) === o.Y.Enabled
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -4996,4 +4996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.968858e0fefcd185b415.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.45ed13b74816f43d882e.js.map

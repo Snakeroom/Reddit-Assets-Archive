@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.40e2612664b69506ebda.js
-// Retrieved at 3/3/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.43b592e5a5c727a370da.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -857,7 +857,7 @@
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
 			t.b = g(e => {
-				const t = Object(p.b)();
+				const t = Object(p.a)();
 				return a.a.createElement(I, {
 					"aria-expanded": e.dropdownIsOpen,
 					"aria-haspopup": !0,
@@ -2253,7 +2253,7 @@
 				i = s("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				c = s.n(i);
 			const d = s("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(a.b)();
+				const t = Object(a.a)();
 				return n.a.createElement("i", {
 					className: `${Object(o.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -2664,4 +2664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.40e2612664b69506ebda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.43b592e5a5c727a370da.js.map

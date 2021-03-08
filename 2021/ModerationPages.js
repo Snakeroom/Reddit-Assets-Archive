@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d45bf9c8d252bef6960c.js
-// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.3979bc63c6edbdc7bdfd.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -3704,13 +3704,13 @@
 			e.exports = {
 				CallToActionButton: "_2pjSQOdNtYd1I2W0Z1Im8I",
 				callToActionButton: "_2pjSQOdNtYd1I2W0Z1Im8I",
-				mNotCardView: "_33VrFkg3gJpkL8AlPfcHUE",
 				Icon: "_2W1YFyYH_CTGX4_5OEBs2Q",
 				icon: "_2W1YFyYH_CTGX4_5OEBs2Q",
 				isLeft: "p8bIdnQ5pQUQRETAyCoa5",
 				isRight: "_36ucS75syCWwJ_ee7IieXZ",
 				active: "NPw0Z_HL-yJPXnZ3mpWEA",
-				redditStyle: "OGOshepc50ul-kJHrocIO"
+				redditStyle: "OGOshepc50ul-kJHrocIO",
+				mNotCardView: "_33VrFkg3gJpkL8AlPfcHUE"
 			}
 		},
 		"./src/reddit/components/CallToActionButton/index.tsx": function(e, t, s) {
@@ -3719,12 +3719,11 @@
 				a = s.n(n),
 				o = s("./src/lib/classNames/index.ts"),
 				r = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				i = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				d = s("./src/reddit/components/CallToActionButton/index.m.less"),
-				l = s.n(d);
+				i = s("./src/reddit/components/CallToActionButton/index.m.less"),
+				d = s.n(i);
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function l() {
+				return (l = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -3735,15 +3734,11 @@
 			t.a = ({
 				className: e,
 				...t
-			}) => {
-				const s = Object(i.a)();
-				return a.a.createElement(r.a, c({
-					className: Object(o.a)(e, l.a.CallToActionButton, {
-						[l.a.mNotCardView]: t.isNotCardView,
-						[l.a.is2020]: s
-					})
-				}, t))
-			}
+			}) => a.a.createElement(r.a, l({
+				className: Object(o.a)(e, d.a.CallToActionButton, {
+					[d.a.mNotCardView]: t.isNotCardView
+				})
+			}, t))
 		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7420,7 +7415,7 @@
 					post: c,
 					toggle: b,
 					useMediaIcons: h
-				} = e, E = Object(p.b)(), v = s || c, _ = a && !!s;
+				} = e, E = Object(p.a)(), v = s || c, _ = a && !!s;
 				return v.media && !(("rtjson" === v.media.type || "text" === v.media.type) && !Object(m.a)(v)) || !!c.pollData ? o.a.createElement("button", {
 					"aria-expanded": r,
 					"aria-haspopup": !0,
@@ -18591,6 +18586,7 @@
 				caret: "_8fOXBcWxu_c3tlrAKMR3R",
 				Inner: "_3-_epznhOfLDNH3-plYM6l",
 				inner: "_3-_epznhOfLDNH3-plYM6l",
+				active: "wFEhEmBm9HI3jG6QDUnaw",
 				redditStyle: "_2PDExzXmSTOdxzNjRB1Pww"
 			}
 		},
@@ -19846,7 +19842,7 @@
 				i = s("./src/reddit/icons/fonts/Envelope/index.m.less"),
 				d = s.n(i);
 			t.a = e => {
-				const t = Object(o.b)();
+				const t = Object(o.a)();
 				return a.a.createElement("i", {
 					className: `${Object(r.b)(t?"message":"envelope",e.isFilled)} ${d.a.Envelope} ${e.className}`
 				})
@@ -19868,7 +19864,7 @@
 				d = s("./src/lib/lessComponent.tsx"),
 				l = s("./src/reddit/hooks/useCoreStyleExperiments.ts");
 			const c = d.a.wrapped(e => {
-				const t = Object(l.b)();
+				const t = Object(l.a)();
 				return a.a.createElement("i", {
 					className: `${Object(o.b)(t?"collapse":"expandoArrowCollapse",e.isFilled)} ${e.className}`,
 					onClick: e.onClick,
@@ -19893,7 +19889,7 @@
 				d = s("./src/lib/lessComponent.tsx"),
 				l = s("./src/reddit/hooks/useCoreStyleExperiments.ts");
 			const c = d.a.wrapped(e => {
-				const t = Object(l.b)();
+				const t = Object(l.a)();
 				return a.a.createElement("i", {
 					className: `${Object(o.b)(t?"expand":"expandoArrowExpand",e.isFilled)} ${e.className}`,
 					onClick: e.onClick,
@@ -22023,9 +22019,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Ab
+					experimentName: n.yb
 				});
-				return !(!t || Object(n.ud)(t))
+				return !(!t || Object(n.sd)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -22258,4 +22254,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d45bf9c8d252bef6960c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3979bc63c6edbdc7bdfd.js.map

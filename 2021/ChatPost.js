@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.efa39a6e8fd7bc3402e3.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.f1366c00fe05a2dfed29.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -653,7 +653,7 @@
 					}) => Object(Y.d)(e, {
 						subredditId: t.subredditId
 					}),
-					isInIcons2020: Z.b
+					isInIcons2020: Z.a
 				}), (e, t) => ({
 					onCreatedClick: () => {
 						window.addEventListener("focus", (function o() {
@@ -1659,11 +1659,11 @@
 				we = o("./src/reddit/constants/experiments.ts"),
 				Se = o("./src/reddit/helpers/chooseVariant/index.ts");
 			const Me = Object(l.a)(e => Object(Se.c)(e, {
-					experimentName: we.L,
+					experimentName: we.J,
 					experimentEligibilitySelector: Se.a
 				}), e => e),
-				Oe = e => Me(e) === we.F.UpvoteOnly,
-				je = e => Me(e) === we.F.UpvoteDownvote;
+				Oe = e => Me(e) === we.D.UpvoteOnly,
+				je = e => Me(e) === we.D.UpvoteDownvote;
 			var Le = o("./src/reddit/selectors/moderatorPermissions.ts"),
 				Ne = o("./src/reddit/selectors/user.ts");
 
@@ -2028,9 +2028,9 @@
 				gt = o("./src/reddit/controls/ErrorText/index.tsx"),
 				xt = o("./src/reddit/selectors/comments.ts");
 			const _t = e => Object(Se.c)(e, {
-				experimentName: we.K,
+				experimentName: we.I,
 				experimentEligibilitySelector: Se.a
-			}) === we.I.Enabled;
+			}) === we.G.Enabled;
 			var ft = o("./src/reddit/selectors/communityAwards.ts");
 			const Tt = (e, {
 				commentId: t
@@ -2908,7 +2908,7 @@
 				i = o("./src/reddit/icons/fonts/Op/index.m.less"),
 				c = o.n(i);
 			const d = o("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(r.b)();
+				const t = Object(r.a)();
 				return s.a.createElement("i", {
 					className: `${Object(a.b)(t?"author":"op",e.isFilled)} ${e.className}`,
 					id: e.id,
@@ -3281,4 +3281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.efa39a6e8fd7bc3402e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.f1366c00fe05a2dfed29.js.map

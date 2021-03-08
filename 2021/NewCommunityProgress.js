@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.f4a84b59832c787b1db8.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.9f02f6af972e8aa37a46.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/graphql/operations/DismissCommunityProgressCard.json": function(e) {
@@ -394,7 +394,7 @@
 				c = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
 				r = n("./src/reddit/icons/fonts/helpers.tsx");
 			s.a = e => {
-				const s = Object(c.b)();
+				const s = Object(c.a)();
 				return o.a.createElement("i", {
 					className: Object(i.a)(Object(r.b)(s ? "collection" : "addCollection", e.isFilled), e.className)
 				})
@@ -475,7 +475,7 @@
 				d = n("./src/reddit/icons/fonts/commonStyles.m.less"),
 				a = n.n(d);
 			s.a = e => {
-				const s = Object(c.b)();
+				const s = Object(c.a)();
 				return o.a.createElement("i", {
 					className: Object(i.a)(Object(r.b)(s ? "scheduled" : "calendar", e.isFilled), a.a.calendarIcon, e.className)
 				})
@@ -508,7 +508,7 @@
 				a = n("./src/reddit/icons/fonts/Coin/index.m.less"),
 				l = n.n(a);
 			const m = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const s = Object(r.b)();
+				const s = Object(r.a)();
 				return o.a.createElement("i", {
 					className: Object(i.a)(e.className, Object(d.b)(s ? "coins" : "coin", e.isFilled)),
 					style: {
@@ -586,7 +586,7 @@
 				d = n("./src/reddit/icons/fonts/DistinguishShield/index.m.less"),
 				a = n.n(d);
 			s.a = e => {
-				const s = Object(c.b)();
+				const s = Object(c.a)();
 				return o.a.createElement("i", {
 					className: Object(i.a)(a.a.DistinguishShield, Object(r.b)(s ? "distinguish" : "distinguishShield", e.isFilled), e.className)
 				})
@@ -625,7 +625,7 @@
 				r = n("./src/reddit/icons/fonts/Envelope/index.m.less"),
 				d = n.n(r);
 			s.a = e => {
-				const s = Object(i.b)();
+				const s = Object(i.a)();
 				return o.a.createElement("i", {
 					className: `${Object(c.b)(s?"message":"envelope",e.isFilled)} ${d.a.Envelope} ${e.className}`
 				})
@@ -665,7 +665,7 @@
 				d = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/hooks/useCoreStyleExperiments.ts");
 			const l = d.a.wrapped(e => {
-				const s = Object(a.b)();
+				const s = Object(a.a)();
 				return o.a.createElement("i", {
 					className: `${Object(i.b)(s?"collapse":"expandoArrowCollapse",e.isFilled)} ${e.className}`,
 					onClick: e.onClick,
@@ -690,7 +690,7 @@
 				d = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/hooks/useCoreStyleExperiments.ts");
 			const l = d.a.wrapped(e => {
-				const s = Object(a.b)();
+				const s = Object(a.a)();
 				return o.a.createElement("i", {
 					className: `${Object(i.b)(s?"expand":"expandoArrowExpand",e.isFilled)} ${e.className}`,
 					onClick: e.onClick,
@@ -757,7 +757,7 @@
 				r = n("./src/reddit/icons/fonts/Expandos/Media/Video/index.m.less"),
 				d = n.n(r);
 			const a = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const s = Object(i.b)();
+				const s = Object(i.a)();
 				return o.a.createElement("i", {
 					className: `${Object(c.b)(s?"video_post":"expandoMediaVideo",e.isFilled)} ${e.className}`
 				})
@@ -779,7 +779,7 @@
 				r = n("./src/reddit/icons/fonts/Gif/index.m.less"),
 				d = n.n(r);
 			const a = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const s = Object(i.b)();
+				const s = Object(i.a)();
 				return o.a.createElement("i", {
 					className: `${Object(c.b)(s?"gif_post":"gif",e.isFilled)} ${e.className}`
 				})
@@ -861,7 +861,7 @@
 				r = n("./src/reddit/icons/fonts/Link/index.m.less"),
 				d = n.n(r);
 			const a = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const s = Object(i.b)();
+				const s = Object(i.a)();
 				return o.a.createElement("i", {
 					className: `${Object(c.b)(s?"link_post":"link",e.isFilled)} ${e.className}`
 				})
@@ -933,7 +933,7 @@
 				}).apply(this, arguments)
 			}
 			s.a = e => {
-				const s = Object(c.b)();
+				const s = Object(c.a)();
 				return o.a.createElement("i", l({}, e, {
 					className: Object(i.a)(Object(r.b)(s ? "mod" : "modActions", e.isFilled), a.a.modActions, e.className)
 				}))
@@ -955,7 +955,7 @@
 				d = n("./src/reddit/icons/fonts/ModSettings/index.m.less"),
 				a = n.n(d);
 			s.a = e => {
-				const s = Object(c.b)();
+				const s = Object(c.a)();
 				return o.a.createElement("i", {
 					className: Object(i.a)(a.a.ModSettings, Object(r.b)(s ? "mod" : "modSettings", e.isFilled), e.className)
 				})
@@ -976,7 +976,7 @@
 				r = n("./src/reddit/icons/fonts/Op/index.m.less"),
 				d = n.n(r);
 			const a = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const s = Object(i.b)();
+				const s = Object(i.a)();
 				return o.a.createElement("i", {
 					className: `${Object(c.b)(s?"author":"op",e.isFilled)} ${e.className}`,
 					id: e.id,
@@ -993,7 +993,7 @@
 				i = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
 				c = n("./src/reddit/icons/fonts/helpers.tsx");
 			s.a = e => {
-				const s = Object(i.b)();
+				const s = Object(i.a)();
 				return o.a.createElement("i", {
 					className: `${Object(c.b)(s?"external_link":"outboundLink",e.isFilled)} ${e.className}`
 				})
@@ -1014,7 +1014,7 @@
 				r = n("./src/reddit/icons/fonts/Pencil/index.m.less"),
 				d = n.n(r);
 			const a = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const s = Object(i.b)();
+				const s = Object(i.a)();
 				return o.a.createElement("i", {
 					className: `${Object(c.b)(s?"edit":"pencil",e.isFilled)} ${e.className}`
 				})
@@ -1036,7 +1036,7 @@
 				r = n("./src/reddit/icons/fonts/Photos/index.m.less"),
 				d = n.n(r);
 			const a = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const s = Object(i.b)();
+				const s = Object(i.a)();
 				return o.a.createElement("i", {
 					className: `${Object(c.b)(s?"image_post":"photos",e.isFilled)} ${e.className}`
 				})
@@ -1157,7 +1157,7 @@
 				d = n("./src/reddit/icons/fonts/commonStyles.m.less"),
 				a = n.n(d);
 			s.a = e => {
-				const s = Object(c.b)();
+				const s = Object(c.a)();
 				return o.a.createElement("i", {
 					className: Object(i.a)(Object(r.b)(s ? "pin" : "sticky", e.isFilled), a.a.stickyIcon, e.className),
 					id: e.id,
@@ -1199,7 +1199,7 @@
 				r = n("./src/reddit/icons/fonts/Text/index.m.less"),
 				d = n.n(r);
 			const a = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const s = Object(i.b)();
+				const s = Object(i.a)();
 				return o.a.createElement("i", {
 					className: `${Object(c.b)(s?"text_post":"text",e.isFilled)} ${e.className}`
 				})
@@ -1277,4 +1277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.f4a84b59832c787b1db8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.9f02f6af972e8aa37a46.js.map

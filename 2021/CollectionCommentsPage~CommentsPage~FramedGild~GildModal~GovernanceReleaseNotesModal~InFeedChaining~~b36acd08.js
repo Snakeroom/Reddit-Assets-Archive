@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.0eded15477a8cc2703b0.js
-// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.35b6035d791c9076d62f.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -257,17 +257,17 @@
 			var R = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				O = s("./src/reddit/icons/svgs/VideoSnoo/index.tsx"),
 				H = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
-				I = s.n(H);
-			const j = () => n.a.createElement("div", {
-				className: I.a.icon
+				j = s.n(H);
+			const I = () => n.a.createElement("div", {
+				className: j.a.icon
 			}, n.a.createElement(O.a, null));
 			var A = e => "string" == typeof e.postUrl ? n.a.createElement("a", {
 					href: e.postUrl,
-					className: I.a.button
-				}, n.a.createElement(j, null)) : n.a.createElement(R.a, {
+					className: j.a.button
+				}, n.a.createElement(I, null)) : n.a.createElement(R.a, {
 					to: e.postUrl,
-					className: I.a.button
-				}, n.a.createElement(j, null)),
+					className: j.a.button
+				}, n.a.createElement(I, null)),
 				U = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				D = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
 				W = s.n(D);
@@ -780,16 +780,16 @@
 				F = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				N = s("./src/reddit/selectors/experiments/utils.ts");
 			const k = Object(d.a)(e => Object(F.c)(e, {
-					experimentName: w.kd,
+					experimentName: w.id,
 					experimentEligibilitySelector: F.a
 				}), N.a),
 				R = Object(d.a)(k, (function(e) {
 					switch (e) {
-						case w.pd.BufferTwoSeconds:
+						case w.nd.BufferTwoSeconds:
 							return 2;
-						case w.pd.BufferFiveSeconds:
+						case w.nd.BufferFiveSeconds:
 							return 5;
-						case w.pd.BufferTenSeconds:
+						case w.nd.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -797,8 +797,8 @@
 				}));
 			var O = s("./src/reddit/selectors/media.ts"),
 				H = s("./src/reddit/selectors/platform.ts"),
-				I = s("./src/reddit/selectors/posts.ts"),
-				j = s("./src/reddit/selectors/user.ts"),
+				j = s("./src/reddit/selectors/posts.ts"),
+				I = s("./src/reddit/selectors/user.ts"),
 				A = s("./src/reddit/selectors/video.ts"),
 				U = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
 				D = s.n(U),
@@ -1046,10 +1046,10 @@
 					})))
 				},
 				He = s("./src/reddit/components/HTML5StreamPlayer/VideoContainer/index.m.less"),
-				Ie = s.n(He);
+				je = s.n(He);
 
-			function je() {
-				return (je = Object.assign || function(e) {
+			function Ie() {
+				return (Ie = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -1062,9 +1062,9 @@
 					isVisible: t,
 					setRef: s,
 					...i
-				}) => l.a.createElement("div", je({
-					className: Object(m.a)(Ie.a.Component, e, {
-						[Ie.a.mIsNotVisible]: !t
+				}) => l.a.createElement("div", Ie({
+					className: Object(m.a)(je.a.Component, e, {
+						[je.a.mIsNotVisible]: !t
 					}),
 					ref: s
 				}, i)),
@@ -1080,16 +1080,16 @@
 				Ke = 6e3,
 				Ze = 100,
 				Qe = Object(c.b)(() => Object(d.c)({
-					isLoggedIn: j.J,
-					autoplayPref: j.b,
+					isLoggedIn: I.J,
+					autoplayPref: I.b,
 					currentTime: A.d,
-					currentUser: j.i,
+					currentUser: I.i,
 					inVideoMegafailExperiment: B.a,
 					isOverlayOpen: H.h,
 					loadTimes: A.h,
 					metadata: A.j,
 					mutedInFeed: A.k,
-					postUrl: I.K,
+					postUrl: j.K,
 					started: A.m,
 					videoBufferTime: R,
 					videoBufferVariant: k,
@@ -1515,8 +1515,8 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = `Reddit/Version Build 6194c7bb392aac35d02d21c8dfe39e44685c8a0d-production ${t}`;
-									return n && (s += ` [${w.kd}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = `Reddit/Version Build 8f62f9d2a47e5656c9956c680449d89d599c425e-production ${t}`;
+									return n && (s += ` [${w.id}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2409,15 +2409,15 @@
 			}));
 			var i = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const n = e => i.rd.Enabled === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: i.nd
-				}),
-				o = e => i.qd.Enabled === Object(a.c)(e, {
+			const n = e => i.pd.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: i.ld
+				}),
+				o = e => i.od.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: i.jd
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.0eded15477a8cc2703b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.35b6035d791c9076d62f.js.map

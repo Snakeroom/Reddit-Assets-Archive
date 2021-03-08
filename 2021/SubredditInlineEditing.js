@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.db0cb77b98ef34c74753.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.c1a5354cf6920cbb66d0.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -811,7 +811,7 @@
 				}),
 				hasPendingChanges: N.o,
 				hasSecondaryTags: N.p,
-				isInIcons2020: R.b,
+				isInIcons2020: R.a,
 				unsavedChangesModalIsOpen: Object(P.b)(E.a),
 				isLoading: e => Object(N.E)(e),
 				selectedPrimaryTag: N.A
@@ -1625,4 +1625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.db0cb77b98ef34c74753.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.c1a5354cf6920cbb66d0.js.map

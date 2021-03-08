@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.ab60e9ac9528fb4264c7.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.39d361faee2ef66907fb.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, s) {
@@ -7,6 +7,7 @@
 				wrapper: "kEQVd8aneM1tVkcIKUyDT",
 				innerContainer: "_1I7r9jQEbdVXbklbNNdr9d",
 				addEmail: "_1W9_YG1glHXb4sNlEEB1Yi",
+				active: "_3ndPlMEDEQ0VlfTedxJKXg",
 				topLine: "_25n1vjWrHyVcdDkuLwR2Y-",
 				layout: "_2p2GJqXvl9hoFT7vpcbdQj",
 				envelope: "Qw7S_mLx6jh-G7N9EwHQN",
@@ -40,12 +41,12 @@
 				E = s("./src/lib/lessComponent.tsx");
 			const g = E.a.div("BodyContainer", x.a),
 				y = E.a.div("SidebarPlaceholder", x.a),
-				C = E.a.div("InnerContainer", x.a),
-				_ = Object(r.c)({
+				_ = E.a.div("InnerContainer", x.a),
+				C = Object(r.c)({
 					bladeOpen: e => !!Object(h.i)(e),
 					isSubscriptionsPinned: v.b
 				}),
-				N = Object(o.b)(_);
+				N = Object(o.b)(C);
 			class O extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -91,7 +92,7 @@
 						onBlur: i
 					}, a.a.createElement(u.a, {
 						fitPageToContent: !0
-					}, a.a.createElement(C, {
+					}, a.a.createElement(_, {
 						className: s
 					}, a.a.createElement(b.a, {
 						bladeOpen: e,
@@ -113,18 +114,18 @@
 				H = s.n(D);
 			const {
 				fbt: q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = "banner", M = Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = "banner", F = Object(r.c)({
 				user: I.i
-			}), A = Object(o.b)(M, e => ({
+			}), A = Object(o.b)(F, e => ({
 				onAddEmail: () => e(Object(l.h)(S.g)),
 				onClose: () => e(Object(c.a)())
 			}));
 			class G extends a.a.Component {
 				constructor() {
 					super(...arguments), this.closeBanner = () => {
-						this.props.sendEvent(Object(k.e)(F)), this.props.onClose()
+						this.props.sendEvent(Object(k.e)(M)), this.props.onClose()
 					}, this.addEmail = () => {
-						this.props.onAddEmail(), this.props.sendEvent(Object(k.a)(F))
+						this.props.onAddEmail(), this.props.sendEvent(Object(k.a)(M))
 					}, this.renderLayout = () => {
 						const {
 							user: e
@@ -154,7 +155,7 @@
 					}
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(k.f)(F))
+					this.props.sendEvent(Object(k.f)(M))
 				}
 				render() {
 					const {
@@ -347,4 +348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.ab60e9ac9528fb4264c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.39d361faee2ef66907fb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.2134a0f18aee8f93b115.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.b0dfa4a8a8a5477f6070.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -775,7 +775,7 @@
 				l = n("./src/reddit/icons/fonts/Coin/index.m.less"),
 				d = n.n(l);
 			const m = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(c.b)();
+				const t = Object(c.a)();
 				return o.a.createElement("i", {
 					className: Object(a.a)(e.className, Object(r.b)(t ? "coins" : "coin", e.isFilled)),
 					style: {
@@ -800,7 +800,7 @@
 				c = n("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				r = n.n(c);
 			const l = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(a.b)();
+				const t = Object(a.a)();
 				return o.a.createElement("i", {
 					className: `${Object(i.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -822,4 +822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.2134a0f18aee8f93b115.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.b0dfa4a8a8a5477f6070.js.map

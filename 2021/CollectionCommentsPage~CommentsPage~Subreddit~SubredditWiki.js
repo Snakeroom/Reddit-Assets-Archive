@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7ca6fc2373be773588f2.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.74bb4b4ae8b44bedf77e.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, s) {
@@ -1682,7 +1682,7 @@
 				}
 			}
 			const O = e => {
-				const t = Object(o.b)();
+				const t = Object(o.a)();
 				return e.rules.length > 0 ? i.a.createElement(a.a, {
 					className: e.className,
 					styles: e.styles,
@@ -2397,9 +2397,9 @@
 			const o = e => n.e[Object(i.N)(e, {})] === n.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: r.J
-				}) === r.W.Treatment
+					experimentName: r.H
+				}) === r.U.Treatment
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7ca6fc2373be773588f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.74bb4b4ae8b44bedf77e.js.map

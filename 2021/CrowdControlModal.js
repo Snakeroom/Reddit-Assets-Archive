@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.55a75a533d0d3755dfb2.js
-// Retrieved at 3/1/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.0d718157011bda3e4afd.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -619,7 +619,7 @@
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "m", (function() {
-				return z
+				return U
 			})), n.d(t, "j", (function() {
 				return K
 			})), n.d(t, "n", (function() {
@@ -725,8 +725,8 @@
 			const H = Object(c.a)(x.a),
 				W = C.a.wrapped(j.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
-				z = C.a.wrapped(O.c, "Subtext", A.a),
-				U = C.a.wrapped(u.a, "HoverTooltip", A.a),
+				U = C.a.wrapped(O.c, "Subtext", A.a),
+				z = C.a.wrapped(u.a, "HoverTooltip", A.a),
 				Q = C.a.div("ControlContainer", A.a),
 				q = C.a.div("TextContainer", A.a),
 				J = C.a.div("ActionContainer", A.a),
@@ -764,7 +764,7 @@
 					last: e.last
 				}, a.a.createElement(q, {
 					className: e.textContainerClassName
-				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, e.children)),
+				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, e.children)),
 				ne = C.a.div("StyledFlair", A.a),
 				re = C.a.wrapped(ne, "SpoilerFlair", A.a),
 				ae = C.a.wrapped(ne, "NSFWFlair", A.a),
@@ -787,7 +787,7 @@
 						last: e.last
 					}, a.a.createElement(q, null, a.a.createElement(F.a, null, a.a.createElement("label", {
 						htmlFor: t
-					}, a.a.createElement(V, null, e.label))), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(U, {
+					}, a.a.createElement(V, null, e.label))), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(z, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), a.a.createElement(N.a, {
@@ -817,7 +817,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(z, null, " ", a.a.createElement(me, {
+				}, !e.inModal && a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(U, null, " ", a.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -848,7 +848,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(q, null, a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, a.a.createElement(M.l, {
+				}, a.a.createElement(q, null, a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, a.a.createElement(M.l, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				be = e => a.a.createElement(K, {
@@ -860,7 +860,7 @@
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, a.a.createElement(Z, null)), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(X, {
+				}, e.label, a.a.createElement(Z, null)), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -872,7 +872,7 @@
 					last: e.last
 				}, a.a.createElement(q, null, a.a.createElement($, {
 					onClick: e.onClick
-				}, e.label), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement($, {
+				}, e.label), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement($, {
 					onClick: e.onClick
 				}, a.a.createElement(ee, null)))),
 				Ce = C.a.div("DropdownWrapper", A.a),
@@ -893,7 +893,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, (e => a.a.createElement(Ce, {
+				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, (e => a.a.createElement(Ce, {
 					onClick: e.openDropdown
 				}, a.a.createElement(ve, {
 					id: `SettingDropdown--${e.id}`
@@ -918,7 +918,7 @@
 					const s = Object(r.useCallback)(e => n(e.target.value), [n]);
 					return a.a.createElement(K, {
 						disabled: e
-					}, a.a.createElement(q, null, a.a.createElement(V, null, o.label), a.a.createElement(z, null, o.subtext)), a.a.createElement("div", {
+					}, a.a.createElement(q, null, a.a.createElement(V, null, o.label), a.a.createElement(U, null, o.subtext)), a.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
 					}), a.a.createElement(K, {
 						last: t,
@@ -943,7 +943,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, e.children)),
+				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, e.children)),
 				Ne = e => a.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -1638,6 +1638,7 @@
 				caret: "_8fOXBcWxu_c3tlrAKMR3R",
 				Inner: "_3-_epznhOfLDNH3-plYM6l",
 				inner: "_3-_epznhOfLDNH3-plYM6l",
+				active: "wFEhEmBm9HI3jG6QDUnaw",
 				redditStyle: "_2PDExzXmSTOdxzNjRB1Pww"
 			}
 		},
@@ -1669,7 +1670,7 @@
 				l = n("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
 				i = n.n(l);
 			const d = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(o.b)();
+				const t = Object(o.a)();
 				return a.a.createElement("i", {
 					className: `${Object(s.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
 				})
@@ -1741,4 +1742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.55a75a533d0d3755dfb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.0d718157011bda3e4afd.js.map

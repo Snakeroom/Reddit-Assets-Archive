@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReredditLink.6c8a57691d74676286df.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReredditLink.ca52fff65f8dcf20f34a.js
+// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReredditLink"], {
 		"./src/reddit/components/Widgets/ReredditLink/ImageBlock/index.m.less": function(e, t, n) {
@@ -85,10 +85,8 @@
 				},
 				u = n("./src/reddit/controls/Button/index.tsx"),
 				g = n("./src/reddit/components/Widgets/ReredditLink/ReredditButton/index.m.less"),
-				b = n.n(g),
-				E = n("./src/reddit/controls/Button/index.m.less"),
-				x = n.n(E);
-			var C = ({
+				b = n.n(g);
+			var E = ({
 					buttonText: e,
 					children: t,
 					postId: n,
@@ -102,57 +100,56 @@
 						className: b.a.Button,
 						href: `${o.a.redditUrl}/posts/${a}`,
 						kind: u.a.ExternalLink,
-						legacyClassName: x.a.PrimaryLinkButton,
 						onClick: l,
 						target: "_blank"
 					}, t)
 				},
-				$ = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				L = n("./src/reddit/helpers/ordinal/index.ts"),
-				k = n("./src/reddit/components/Widgets/ReredditLink/index.m.less"),
-				f = n.n(k);
+				x = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				$ = n("./src/reddit/helpers/ordinal/index.ts"),
+				C = n("./src/reddit/components/Widgets/ReredditLink/index.m.less"),
+				L = n.n(C);
 			const {
-				fbt: h
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), B = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"], j = a.a.div("ButtonContainer", f.a);
+				fbt: k
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), f = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"], h = a.a.div("ButtonContainer", L.a);
 			t.default = ({
 				directoryTimestamp: e,
 				postId: t
 			}) => {
 				const n = new Date(e),
-					r = B[n.getMonth()],
+					r = f[n.getMonth()],
 					a = n.getFullYear(),
 					o = n.getDate(),
-					d = Object(L.a)(o),
+					d = Object($.a)(o),
 					c = `${a}/${r}-${o}-1/`,
 					l = `${a}/${r}/`,
 					m = `${a}/`;
-				return s.a.createElement(i.a, null, s.a.createElement($.a, {
-					className: f.a.Widget,
+				return s.a.createElement(i.a, null, s.a.createElement(x.a, {
+					className: L.a.Widget,
 					contentOnly: !0
 				}, s.a.createElement(p, {
 					postId: t,
 					url: c
-				}), s.a.createElement(j, null, s.a.createElement(C, {
+				}), s.a.createElement(h, null, s.a.createElement(E, {
 					buttonText: `top_posts_${r}_${d}_${a}`,
 					postId: t,
 					url: c
-				}, h._("Top posts {date}", [h._param("date", `${r} ${d} ${a}`)], {
+				}, k._("Top posts {date}", [k._param("date", `${r} ${d} ${a}`)], {
 					hk: "4xgYoo"
-				})), s.a.createElement(C, {
+				})), s.a.createElement(E, {
 					buttonText: `top_posts_of_${r}_${a}`,
 					postId: t,
 					url: l
-				}, h._("Top posts of {date}", [h._param("date", `${r}, ${a}`)], {
+				}, k._("Top posts of {date}", [k._param("date", `${r}, ${a}`)], {
 					hk: "HQnvs"
-				})), s.a.createElement(C, {
+				})), s.a.createElement(E, {
 					buttonText: `top_posts_${a}`,
 					postId: t,
 					url: m
-				}, h._("Top posts {date}", [h._param("date", `${a}`)], {
+				}, k._("Top posts {date}", [k._param("date", `${a}`)], {
 					hk: "4xgYoo"
 				})))))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReredditLink.6c8a57691d74676286df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReredditLink.ca52fff65f8dcf20f34a.js.map
