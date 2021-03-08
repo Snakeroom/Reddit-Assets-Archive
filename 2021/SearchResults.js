@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.63f31b55e95647b4ee02.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.0f7672422ef6bf8a2b36.js
+// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -8252,26 +8252,6 @@
 					post: r.post(o, t)
 				})
 		},
-		"./src/reddit/hooks/useOnClickOutside.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return n
-			}));
-			var r = s("./node_modules/react/index.js");
-
-			function n(e, t) {
-				const s = Object(r.useCallback)(s => {
-					if (!t) return;
-					const r = document.getElementById(e);
-					r && (r.contains(s.target) || t(s))
-				}, [e, t]);
-				Object(r.useEffect)(() => {
-					if (t) return document.body.addEventListener("click", s), () => {
-						document.body.removeEventListener("click", s)
-					}
-				}, [t, s])
-			}
-		},
 		"./src/reddit/icons/fonts/Expandos/Arrows/Collapse/index.m.less": function(e, t, s) {
 			e.exports = {
 				CollapseIcon: "_3D7Ev4BX__nKnbqb-KPpvI",
@@ -8956,4 +8936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.63f31b55e95647b4ee02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0f7672422ef6bf8a2b36.js.map

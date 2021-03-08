@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.70b3863942661889bb86.js
-// Retrieved at 3/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.3197b93c16ab9f6b7991.js
+// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, o) {
@@ -3326,26 +3326,6 @@
 					post: n.post(r, t)
 				})
 		},
-		"./src/reddit/hooks/useOnClickOutside.ts": function(e, t, o) {
-			"use strict";
-			o.d(t, "a", (function() {
-				return s
-			}));
-			var n = o("./node_modules/react/index.js");
-
-			function s(e, t) {
-				const o = Object(n.useCallback)(o => {
-					if (!t) return;
-					const n = document.getElementById(e);
-					n && (n.contains(o.target) || t(o))
-				}, [e, t]);
-				Object(n.useEffect)(() => {
-					if (t) return document.body.addEventListener("click", o), () => {
-						document.body.removeEventListener("click", o)
-					}
-				}, [t, o])
-			}
-		},
 		"./src/reddit/icons/fonts/DistinguishShield/index.m.less": function(e, t, o) {
 			e.exports = {
 				DistinguishShield: "_3qx_qM22xH7s5oSucqWca",
@@ -3619,4 +3599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.70b3863942661889bb86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.3197b93c16ab9f6b7991.js.map

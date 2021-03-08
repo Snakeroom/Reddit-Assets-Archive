@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.314539c6ccafa0576bf9.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.034877fee27f1bfd6586.js
+// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1742,6 +1742,14 @@
 					return n || (e === t ? null : !!e.parentElement && p(e.parentElement, t))
 				},
 				m = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && m(e.parentElement, t))
+		},
+		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
+			"use strict";
+			t.a = (...e) => t => {
+				e.forEach(e => {
+					if (e) return "function" == typeof e ? e(t) : void(e.current = t)
+				})
+			}
 		},
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
 			"use strict";
@@ -4272,8 +4280,8 @@
 					o && (o.contains(n.target) || t(n))
 				}, [e, t]);
 				Object(o.useEffect)(() => {
-					if (t) return document.body.addEventListener("click", n), () => {
-						document.body.removeEventListener("click", n)
+					if (t) return window.addEventListener("click", n), () => {
+						window.removeEventListener("click", n)
 					}
 				}, [t, n])
 			}
@@ -4580,4 +4588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.314539c6ccafa0576bf9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.034877fee27f1bfd6586.js.map

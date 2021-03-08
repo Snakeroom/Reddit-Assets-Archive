@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.1fc576a3539f904610e4.js
-// Retrieved at 3/4/2021, 3:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.c0fb8d0a834268d33971.js
+// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, r) {
@@ -3347,63 +3347,24 @@
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return d
+				return o
 			}));
 			var s = r("./node_modules/icepick/icepick.js"),
 				n = r("./node_modules/react/index.js"),
-				i = r("./node_modules/react-popper/lib/esm/usePopper.js");
+				i = r("./src/reddit/hooks/useTooltip.ts");
 			const a = Object(s.freeze)({
-				modifiers: []
-			});
-
-			function o(e) {
-				let t = "object" == typeof e ? e : a;
-				return Array.isArray(t.modifiers) || (t = Object(s.assoc)(t, "modifiers", a.modifiers)), t
-			}
-			const c = Object(s.freeze)({
 				name: "offset",
 				options: {
 					offset: [0, 6]
 				}
 			});
 
-			function d(e) {
-				return function(e) {
-					const [t, r] = Object(n.useState)(null), [a, c] = Object(n.useState)(null), [d, l] = Object(n.useState)(null), [u, m] = Object(n.useState)(!1), p = Object(n.useCallback)(async () => m(!0), []), b = Object(n.useCallback)(() => m(!1), []), h = Object(n.useMemo)(() => {
-						const t = o(e);
-						return d ? Object(s.updateIn)(t, ["modifiers"], e => Object(s.push)(e, {
-							name: "arrow",
-							options: {
-								element: d
-							}
-						})) : t
-					}, [d, e]), {
-						attributes: f,
-						styles: g
-					} = Object(i.a)(t, a, h);
-					return Object(n.useMemo)(() => ({
-						arrowProps: {
-							ref: l,
-							style: g.arrow,
-							...f.arrow
-						},
-						hide: b,
-						popperProps: {
-							ref: c,
-							style: g.popper,
-							...f.popper
-						},
-						show: p,
-						target: {
-							element: t,
-							ref: r
-						},
-						visible: u
-					}), [l, f, c, b, p, g, t, r, u])
-				}(Object(n.useMemo)(() => {
-					const t = o(e);
-					return Object(s.updateIn)(t, ["modifiers"], e => Object(s.push)(e, c))
-				}, [e]))
+			function o(e) {
+				const t = Object(n.useMemo)(() => {
+					const t = Object(i.a)(e);
+					return Object(s.updateIn)(t, ["modifiers"], e => Object(s.push)(e, a))
+				}, [e]);
+				return Object(i.b)(t)
 			}
 		},
 		"./src/reddit/hooks/useIntersectionObserver.ts": function(e, t, r) {
@@ -3432,6 +3393,59 @@
 				return Object(s.useEffect)(() => {
 					t.current = e
 				}), t.current
+			}
+		},
+		"./src/reddit/hooks/useTooltip.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return o
+			})), r.d(t, "b", (function() {
+				return c
+			}));
+			var s = r("./node_modules/icepick/icepick.js"),
+				n = r("./node_modules/react/index.js"),
+				i = r("./node_modules/react-popper/lib/esm/usePopper.js");
+			const a = Object(s.freeze)({
+				modifiers: []
+			});
+
+			function o(e) {
+				let t = "object" == typeof e ? e : a;
+				return Array.isArray(t.modifiers) || (t = Object(s.assoc)(t, "modifiers", a.modifiers)), t
+			}
+
+			function c(e) {
+				const [t, r] = Object(n.useState)(null), [a, c] = Object(n.useState)(null), [d, l] = Object(n.useState)(null), [u, m] = Object(n.useState)(!1), p = Object(n.useCallback)(async () => m(!0), []), b = Object(n.useCallback)(() => m(!1), []), h = Object(n.useMemo)(() => {
+					const t = o(e);
+					return d ? Object(s.updateIn)(t, ["modifiers"], e => Object(s.push)(e, {
+						name: "arrow",
+						options: {
+							element: d
+						}
+					})) : t
+				}, [d, e]), {
+					attributes: f,
+					styles: g
+				} = Object(i.a)(t, a, h);
+				return Object(n.useMemo)(() => ({
+					arrowProps: {
+						ref: l,
+						style: g.arrow,
+						...f.arrow
+					},
+					hide: b,
+					popperProps: {
+						ref: c,
+						style: g.popper,
+						...f.popper
+					},
+					show: p,
+					target: {
+						element: t,
+						ref: r
+					},
+					visible: u
+				}), [l, f, c, b, p, g, t, r, u])
 			}
 		},
 		"./src/reddit/icons/fonts/Gif/index.m.less": function(e, t, r) {
@@ -4334,4 +4348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.1fc576a3539f904610e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.c0fb8d0a834268d33971.js.map

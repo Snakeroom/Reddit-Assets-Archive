@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.996a3e67577541fcd88b.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d45bf9c8d252bef6960c.js
+// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -3271,7 +3271,7 @@
 				subredditId: t
 			}) => {
 				const s = e.pages.modHub.approvedSubmitters.userOrder[t];
-				return s ? s.map(s => e.pages.modHub.approvedSubmitters.models[t][s]) : w.b
+				return s ? s.map(s => e.pages.modHub.approvedSubmitters.models[t][s]) : w.a
 			});
 			var T = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				I = s("./src/reddit/components/ApprovedSubmitterList/AddApprovedSubmitterModal.tsx"),
@@ -22258,4 +22258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.996a3e67577541fcd88b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d45bf9c8d252bef6960c.js.map

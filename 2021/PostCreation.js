@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9c2d1d1506144915a160.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.81fc652504f7de472c22.js
+// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ModListing~Reddit~StandalonePostPage"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -500,6 +500,14 @@
 					r = new o.BigNumber(n.dividedBy(s)),
 					i = new o.BigNumber("100").multipliedBy(r);
 				return new o.BigNumber(i).toNumber()
+			}
+		},
+		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
+			"use strict";
+			t.a = (...e) => t => {
+				e.forEach(e => {
+					if (e) return "function" == typeof e ? e(t) : void(e.current = t)
+				})
 			}
 		},
 		"./src/lib/convertToCamelCase/index.ts": function(e, t, n) {
@@ -18920,4 +18928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9c2d1d1506144915a160.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.81fc652504f7de472c22.js.map

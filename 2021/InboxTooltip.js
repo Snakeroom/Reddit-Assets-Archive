@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.5aa3d131f205fea8b718.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.4f7cfa07a9abada178df.js
+// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip"], {
 		"./src/graphql/operations/DeleteInboxNotifications.json": function(t) {
@@ -486,7 +486,7 @@
 					O && (m(), y(Object(b.l)({
 						badgeCount: r
 					})))
-				}, [O]), o.a.createElement(d.c, {
+				}, [O]), o.a.createElement(d.b, {
 					activeOverflowMenuId: S,
 					clearMessageTabBadgeCount: t,
 					disableMessageTypeNotifications: e,
@@ -496,7 +496,6 @@
 					inboxBadgeCount: r,
 					isInboxMarkAllAsReadEnabled: u,
 					isInboxPostEmbedEnabled: f,
-					isOpen: O,
 					isPending: p,
 					markAllAsRead: j,
 					markNotificationAsRead: g,
@@ -598,4 +597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.5aa3d131f205fea8b718.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.4f7cfa07a9abada178df.js.map
