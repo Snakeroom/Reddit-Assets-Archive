@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7b3aa1de5fd0ef806504.js
-// Retrieved at 3/9/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3fc180cd48eec9574998.js
+// Retrieved at 3/9/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -14938,9 +14938,8 @@
 					r && t($t(r))
 				};
 			var tn = n("./src/reddit/actions/login.ts");
-			const nn = /account\/magic_link\/landing\/[^\/]+\/?$/;
 			Object(r.e)(r.b.EntryPointStart);
-			const sn = Object(w.a)({
+			const nn = Object(w.a)({
 					actionDispatchers: {
 						reddaidReceived: z.s,
 						loidReceived: z.q,
@@ -14962,20 +14961,20 @@
 					onBeforeRequestFactory: Pt.a,
 					statsAppName: g.l.Redesign
 				}),
-				rn = Object(_.a)(sn.apiContext),
-				on = ve();
-			let an;
+				sn = Object(_.a)(nn.apiContext),
+				rn = ve();
+			let on;
 			Object(C.a)({
 				reducerMap: Mt.a,
 				routes: Tt.a,
-				apiContext: sn.apiContext,
-				gqlContext: rn.gqlContext,
+				apiContext: nn.apiContext,
+				gqlContext: sn.gqlContext,
 				appFactory: (e, t) => m.a.createElement(ue.a.Provider, {
-					value: on.broadcaster
+					value: rn.broadcaster
 				}, m.a.createElement(pe.a.Provider, {
 					value: {
-						apiContext: sn.apiContext,
-						gqlContext: rn.gqlContext
+						apiContext: nn.apiContext,
+						gqlContext: sn.gqlContext
 					}
 				}, m.a.createElement(be.b, null, m.a.createElement(K.a, {
 					ok: !0,
@@ -14985,7 +14984,7 @@
 				appName: g.l.Redesign,
 				history: Object(i.a)({
 					getUserConfirmation(e, t) {
-						const n = an;
+						const n = on;
 						if (!n) return;
 						n.dispatch(Object(B.k)({
 							allowNavigationCallback: (e = !1) => {
@@ -14996,9 +14995,9 @@
 				}),
 				customMiddleware: [p.a.withExtraArgument({
 					routes: Tt.a,
-					apiContext: sn.apiContext,
-					gqlContext: rn.gqlContext
-				}), on.middleware, Se, sn.middleware, rn.middleware, Ye, Ae, $e, gt, ze, Ze],
+					apiContext: nn.apiContext,
+					gqlContext: sn.gqlContext
+				}), rn.middleware, Se, nn.middleware, sn.middleware, Ye, Ae, $e, gt, ze, Ze],
 				modifyInitialData: ({
 					initialData: e,
 					browserHistory: t
@@ -15076,7 +15075,7 @@
 					store: c,
 					localStorageData: d
 				}) => {
-					an = c;
+					on = c;
 					e.listen((e, t) => {
 						const n = c.getState(),
 							{
@@ -15117,7 +15116,7 @@
 							{
 								sessionReferrer: s
 							} = n.platform;
-						s && nn.test(s) && e(Object(tn.i)())
+						s && s.includes("account/magic_link/landing") && e(Object(tn.i)())
 					})()), window.addEventListener("load", () => {
 						const t = c.getState(),
 							{
@@ -17778,4 +17777,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7b3aa1de5fd0ef806504.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3fc180cd48eec9574998.js.map
