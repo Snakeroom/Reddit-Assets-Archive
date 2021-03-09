@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2c150b978c32ba66ccfe.js
-// Retrieved at 3/9/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.28df52f83ae55b41b178.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ModListing~Reddit~StandalonePostPage"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -4096,7 +4096,7 @@
 					collection: {
 						subredditId: t
 					}
-				}) => t ? Object(j.S)(e, {
+				}) => t ? Object(j.T)(e, {
 					subredditId: t
 				}) : void 0,
 				user: P.i
@@ -5847,7 +5847,7 @@
 			const k = (e, t = !1, n = o.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${n}]`,
 				w = Object(l.c)({
 					flairData: x.d,
-					subreddit: C.S,
+					subreddit: C.T,
 					isMod: (e, t) => !!Object(_.i)(e, t)
 				});
 			class j extends i.a.Component {
@@ -6091,7 +6091,7 @@
 					const n = Object(b.q)(e, {
 						pageLayer: t
 					});
-					return n && Object(x.R)(e, {
+					return n && Object(x.S)(e, {
 						subredditId: n.id
 					})
 				}, e => (e || []).filter(e => I.has(e.kind))),
@@ -7608,7 +7608,7 @@
 				r = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(o.b)(() => Object(s.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -15568,7 +15568,7 @@
 						draft: {
 							subredditId: t
 						}
-					}) => t ? Object(P.S)(e, {
+					}) => t ? Object(P.T)(e, {
 						subredditId: t
 					}) : void 0,
 					user: I.i
@@ -18603,21 +18603,6 @@
 			}
 			t.default = Au(Bu(Object(ho.c)(Uu)))
 		},
-		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var o = n("./src/reddit/constants/experiments.ts"),
-				s = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => t => {
-				const n = Object(s.c)(t, {
-					experimentEligibilitySelector: s.a,
-					experimentName: e
-				});
-				return !(!n || Object(o.sd)(n))
-			}
-		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -18812,4 +18797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2c150b978c32ba66ccfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.28df52f83ae55b41b178.js.map

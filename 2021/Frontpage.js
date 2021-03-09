@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.14e9a059f76ca8b0bf3e.js
-// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b1fd71c2bc29d80301a8.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -1315,7 +1315,7 @@
 					isMod: He.K,
 					isLoggedIn: He.I,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					trendingSubredditIds: Ce.bb,
+					trendingSubredditIds: Ce.cb,
 					currentUser: He.i,
 					frontpageLinks: qe.b,
 					isOver18: He.bb,
@@ -1326,7 +1326,7 @@
 					isInIcons2020: Ue.a,
 					bffsLeaderboardVariant: Re,
 					inRpanTopVideoEntrypointExperiment: Me.e,
-					rankings: e => Object(Ce.N)(e, Ke)
+					rankings: e => Object(Ce.O)(e, Ke)
 				}),
 				Je = e => !((e.inRpanTopVideoEntrypointExperiment ? !e.rankings : !e.trendingSubredditIds.length) || e.currentUser && !e.currentUser.showTrending || e.isUISimplificationAllItemsVariant),
 				Ze = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
@@ -3185,7 +3185,7 @@
 				a = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -4699,4 +4699,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.14e9a059f76ca8b0bf3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b1fd71c2bc29d80301a8.js.map

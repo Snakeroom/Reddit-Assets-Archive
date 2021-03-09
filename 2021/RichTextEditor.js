@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.b64324669ab0f0ab524e.js
-// Retrieved at 3/9/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.2eb9a39d95eb96b6efeb.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4468,21 +4468,6 @@
 					experimentName: s.x
 				}), e => e === s.B.Enabled)
 		},
-		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, o) {
-			"use strict";
-			o.d(t, "a", (function() {
-				return r
-			}));
-			var n = o("./src/reddit/constants/experiments.ts"),
-				s = o("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => t => {
-				const o = Object(s.c)(t, {
-					experimentEligibilitySelector: s.a,
-					experimentName: e
-				});
-				return !(!o || Object(n.sd)(o))
-			}
-		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "a", (function() {
@@ -4523,4 +4508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b64324669ab0f0ab524e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.2eb9a39d95eb96b6efeb.js.map

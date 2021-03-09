@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.1f7a7c4a6fab89b98645.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.1a347c4a6f3e32c5aa08.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -67,7 +67,7 @@
 		"./src/reddit/actions/emoji.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "i", (function() {
-				return y
+				return I
 			})), o.d(t, "d", (function() {
 				return _
 			})), o.d(t, "c", (function() {
@@ -141,9 +141,9 @@
 				b = o("./src/reddit/models/Image/index.tsx"),
 				x = o("./src/reddit/models/Toast/index.ts"),
 				O = o("./src/reddit/selectors/emojis.ts"),
-				S = o("./src/reddit/selectors/subreddit.ts");
-			const y = "STRUCTURED_STYLES__NEW_EMOJI_ADDED",
-				I = Object(m.a)(y),
+				y = o("./src/reddit/selectors/subreddit.ts");
+			const I = "STRUCTURED_STYLES__NEW_EMOJI_ADDED",
+				S = Object(m.a)(I),
 				_ = "STRUCTURED_STYLES__EMOJI_DELETE_LOADED",
 				T = "STRUCTURED_STYLES__EMOJI_DELETE_FAILED",
 				C = Object(m.a)(_),
@@ -170,7 +170,7 @@
 					subredditId: t
 				}) => async (o, s, i) => {
 					const n = s(),
-						p = Object(S.S)(n, {
+						p = Object(y.T)(n, {
 							subredditId: t
 						}).name;
 					o(Object(u.k)(e));
@@ -208,7 +208,7 @@
 						subredditId: l,
 						emojiName: p,
 						settings: m
-					} = e, f = Object(j.a)(n.url), g = s(), E = Object(S.S)(g, {
+					} = e, f = Object(j.a)(n.url), g = s(), E = Object(y.T)(g, {
 						subredditId: l
 					}).name, x = await (async (e, t, o, s, i) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -248,7 +248,7 @@
 								o = Object(b.o)(i, e);
 							t(Object(u.l)(o));
 							const l = Object(E.e)(r, o.url, n, a);
-							t(I(l)), t(K(n))
+							t(S(l)), t(K(n))
 						} else {
 							const o = Object(f.a)(r),
 								s = Object(b.k)(i, o);
@@ -266,7 +266,7 @@
 				}) => {
 					const i = o();
 					if (Object(O.a)(i, e)) return;
-					const n = Object(S.S)(i, {
+					const n = Object(y.T)(i, {
 						subredditId: e
 					}).name;
 					t(P(e));
@@ -289,7 +289,7 @@
 					apiContext: n
 				}) => {
 					const l = i(),
-						p = Object(S.S)(l, {
+						p = Object(y.T)(l, {
 							subredditId: t
 						}).name,
 						m = await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -317,7 +317,7 @@
 					apiContext: n
 				}) => {
 					const l = i(),
-						p = Object(S.S)(l, {
+						p = Object(y.T)(l, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -342,7 +342,7 @@
 					apiContext: n
 				}) => {
 					const l = i(),
-						p = Object(S.S)(l, {
+						p = Object(y.T)(l, {
 							subredditId: e
 						}).name;
 					(await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -362,7 +362,7 @@
 					apiContext: p
 				}) => {
 					const m = l(),
-						u = Object(S.S)(m, {
+						u = Object(y.T)(m, {
 							subredditId: i
 						}).name;
 					(await (async (e, t, o, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
@@ -432,9 +432,9 @@
 				b = o("./src/reddit/controls/Dropdown/index.tsx"),
 				x = o("./src/reddit/constants/keycodes.ts"),
 				O = o("./src/reddit/selectors/emojis.ts"),
-				S = o("./src/reddit/controls/EmojiPicker/EmojiGrid/EmojiItem/index.m.less"),
-				y = o.n(S);
-			class I extends r.Component {
+				y = o("./src/reddit/controls/EmojiPicker/EmojiGrid/EmojiItem/index.m.less"),
+				I = o.n(y);
+			class S extends r.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						this.props.onClick(this.props.itemIndex)
@@ -451,8 +451,8 @@
 					} = this.props;
 					return a.a.createElement("img", {
 						src: e.url,
-						className: Object(p.a)(y.a.emojiImg, {
-							[y.a.mIsFocused]: t
+						className: Object(p.a)(I.a.emojiImg, {
+							[I.a.mIsFocused]: t
 						}),
 						onMouseEnter: this.onMouseEnter,
 						onMouseLeave: this.onMouseLeave,
@@ -472,7 +472,7 @@
 					className: T.a.container
 				}, a.a.createElement("div", {
 					className: T.a.gridWrapper
-				}, t.map((t, s) => a.a.createElement(I, {
+				}, t.map((t, s) => a.a.createElement(S, {
 					emoji: t,
 					itemIndex: s,
 					isFocused: s === o,
@@ -787,7 +787,7 @@
 						e.getCharacterList().forEach((e, s) => {
 							const i = e && e.getEntity();
 							if (i) {
-								o.getEntity(i).getType() === Ie.InlineImage && t(s, s + 1)
+								o.getEntity(i).getType() === Se.InlineImage && t(s, s + 1)
 							}
 						})
 					},
@@ -804,17 +804,17 @@
 						}, e.children)
 					}
 				},
-				Se = o("./node_modules/immutable/dist/immutable.js");
-			var ye, Ie;
+				ye = o("./node_modules/immutable/dist/immutable.js");
+			var Ie, Se;
 			! function(e) {
 				e.Image = "image", e.Text = "text"
-			}(ye || (ye = {})),
+			}(Ie || (Ie = {})),
 			function(e) {
 				e.InlineImage = "InlineImage"
-			}(Ie || (Ie = {}));
+			}(Se || (Se = {}));
 			const _e = () => new s.CompositeDecorator([Ee, Oe]),
 				Te = (e, t) => {
-					return e.createEntity(Ie.InlineImage, "MUTABLE", {
+					return e.createEntity(Se.InlineImage, "MUTABLE", {
 						url: t.url,
 						id: t.id
 					})
@@ -822,7 +822,7 @@
 				Ce = (e, t, o) => {
 					let i, n = e,
 						r = "";
-					return o.type === ye.Image ? (i = (n = Te(n, o)).getLastCreatedEntityKey(), r = " ") : (i = void 0, r = o.text), s.Modifier.replaceText(n, t, r, void 0, i)
+					return o.type === Ie.Image ? (i = (n = Te(n, o)).getLastCreatedEntityKey(), r = " ") : (i = void 0, r = o.text), s.Modifier.replaceText(n, t, r, void 0, i)
 				},
 				we = (e, t) => {
 					const o = e.getSelection(),
@@ -856,7 +856,7 @@
 							focusOffset: o.endIndex + (n === Q ? 1 : 0)
 						}),
 						a = {
-							type: ye.Image,
+							type: Ie.Image,
 							id: Object(m.b)(t.name),
 							url: t.url
 						};
@@ -870,7 +870,7 @@
 						a = r.getBlockForKey(n),
 						c = i > 0 ? a.getEntityAt(i - 1) : null,
 						l = c && r.getEntity(c);
-					if (l && l.getType() === Ie.InlineImage) {
+					if (l && l.getType() === Se.InlineImage) {
 						const i = s.Modifier.replaceText(r, o, t, e.getCurrentInlineStyle());
 						return s.EditorState.push(e, i, "insert-characters")
 					}
@@ -1020,15 +1020,15 @@
 					const t = [];
 					return e.type === Be.f.Richtext ? e.richtext.forEach(e => {
 						e.e === Be.c.Emoji ? t.push({
-							type: ye.Image,
+							type: Ie.Image,
 							id: e.a,
 							url: e.u
 						}) : e.t && t.push({
-							type: ye.Text,
+							type: Ie.Text,
 							text: e.t
 						})
 					}) : e.text && t.push({
-						type: ye.Text,
+						type: Ie.Text,
 						text: e.text
 					}), t
 				},
@@ -1056,7 +1056,7 @@
 						let a = i.getBlockMap(),
 							c = i.getFirstBlock().merge({
 								text: n.join(""),
-								characterList: Object(Se.List)(r)
+								characterList: Object(ye.List)(r)
 							});
 						a = a.set(c.getKey(), c), c = (i = i.merge({
 							blockMap: a
@@ -1085,31 +1085,31 @@
 						}, (e, i, n, r) => {
 							const a = e.getEntity(),
 								c = a && t.getEntity(a);
-							if (c && c.getType() === Ie.InlineImage) {
+							if (c && c.getType() === Se.InlineImage) {
 								const {
 									id: e,
 									url: t
 								} = c.getData(), o = r - n;
 								s.push(...je()(o, () => ({
-									type: ye.Image,
+									type: Ie.Image,
 									id: e,
 									url: t
 								})))
 							} else s.push({
-								type: ye.Text,
+								type: Ie.Text,
 								text: o.slice(n, r)
 							})
 						}), s
 					})(e);
-					if (!!!n.find(e => e.type === ye.Image)) return {
+					if (!!!n.find(e => e.type === Ie.Image)) return {
 						backgroundColor: t,
 						templateId: o,
 						type: Be.f.Text,
-						text: n.map(e => e.type === ye.Text ? e.text : "").join(),
+						text: n.map(e => e.type === Ie.Text ? e.text : "").join(),
 						textColor: s,
 						cssClass: i
 					};
-					const r = n.map(e => e.type === ye.Image ? {
+					const r = n.map(e => e.type === Ie.Image ? {
 						e: Be.c.Emoji,
 						a: e.id,
 						u: e.url
@@ -1171,7 +1171,7 @@
 						})
 					}, this.onSelectEmoji = e => {
 						const t = {
-							type: ye.Image,
+							type: Ie.Image,
 							id: Object(m.b)(e.name),
 							url: e.url
 						};
@@ -1658,4 +1658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.1f7a7c4a6fab89b98645.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.1a347c4a6f3e32c5aa08.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.32248408e886697732af.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ee5b65b3a4d57e097c50.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1222,7 +1222,7 @@
 			const j = (e, t = !1, s = n.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${s}]`,
 				k = Object(d.c)({
 					flairData: v.d,
-					subreddit: _.S,
+					subreddit: _.T,
 					isMod: (e, t) => !!Object(g.i)(e, t)
 				});
 			class C extends i.a.Component {
@@ -3294,7 +3294,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(i.W)(e, {
+					const s = Object(i.X)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -3302,4 +3302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.32248408e886697732af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ee5b65b3a4d57e097c50.js.map

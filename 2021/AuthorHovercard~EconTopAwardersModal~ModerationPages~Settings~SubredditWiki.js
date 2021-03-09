@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.a6454da0fa42196b1e7e.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.a54d64de177203c888cd.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -251,8 +251,8 @@
 				}
 			});
 			const G = Object(o.a)(j.o),
-				X = Object(o.a)(j.n),
-				Q = Object(o.a)(j.m),
+				Q = Object(o.a)(j.n),
+				X = Object(o.a)(j.m),
 				V = (e, t = {}) => async (r, n, {
 					apiContext: s
 				}) => {
@@ -267,10 +267,10 @@
 					}));
 					const c = a.subreddits.models[e].name,
 						l = await x(s(), c, t);
-					l.ok ? r(X({
+					l.ok ? r(Q({
 						...l.body,
 						fetchedToken: o
-					})) : r(Q({
+					})) : r(X({
 						subredditId: e,
 						fetchedToken: o
 					}))
@@ -364,10 +364,10 @@
 				}, ie = (e, t) => async (r, n) => {
 					const s = n();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.P)(s, {
+						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.Q)(s, {
 								subredditId: e
 							})) {
-							const t = Object(E.S)(s, {
+							const t = Object(E.T)(s, {
 								subredditId: e
 							});
 							await r(Object(c.o)(t.name))
@@ -550,11 +550,11 @@
 				z = r("./src/reddit/icons/svgs/Unban/index.tsx"),
 				J = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				G = r("./src/reddit/selectors/bannedUser.ts"),
-				X = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
-				Q = r.n(X);
+				Q = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
+				X = r.n(Q);
 			const {
 				fbt: V
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), $ = E.a.wrapped(W.a, "BanIcon", Q.a), ee = E.a.wrapped(Y.a, "MuteIcon", Q.a), te = E.a.wrapped(z.a, "UnbanIcon", Q.a), re = Object(o.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), $ = E.a.wrapped(W.a, "BanIcon", X.a), ee = E.a.wrapped(Y.a, "MuteIcon", X.a), te = E.a.wrapped(z.a, "UnbanIcon", X.a), re = Object(o.c)({
 				hasModMailPermissions: Object(m.a)(J.c.mail),
 				isUserBanned: (e, t) => !!Object(G.b)(e, {
 					subredditId: t.subredditId,
@@ -883,7 +883,7 @@
 					}) => t ? Object(h.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(v.m)(t) && Object(v.eb)(e, t),
+					userIsBanned: (e, t) => !!Object(v.m)(t) && Object(v.fb)(e, t),
 					userProfileStyles: (e, t) => Object(b.m)(e, Object(p.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(p.h)(e, {
@@ -1727,7 +1727,7 @@
 				a = r("./src/reddit/actions/subscription/index.ts"),
 				o = r("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(s.c)({
-				userIsSubscriber: o.fb
+				userIsSubscriber: o.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2265,4 +2265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.a6454da0fa42196b1e7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.a54d64de177203c888cd.js.map

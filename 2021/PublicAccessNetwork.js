@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e99f477ff2dec1cc99b6.js
-// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b467c5f09df5274b2f42.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -905,7 +905,7 @@
 								await e
 							}
 						} else {
-							if (!!!Object(U.R)(s(), {
+							if (!!!Object(U.S)(s(), {
 									subredditId: V.belongsTo.id
 								})) {
 								const e = Object(Z.i)(() => t(k.o(r.name)), {
@@ -2594,7 +2594,7 @@
 				removalReasons: S.c,
 				subredditName: (e, {
 					subredditId: t
-				}) => Object(y.S)(e, {
+				}) => Object(y.T)(e, {
 					subredditId: t
 				}).name
 			}), I = Object(n.b)(j, M), T = d.a.wrapped(l.a, "CharacterCountdown", O.a), P = d.a.div("EmptyState", O.a), L = d.a.wrapped(m.n, "ModNoteDescription", O.a), N = d.a.wrapped(u.i, "PrimaryButton", O.a), A = d.a.wrapped(b.a, "RadioOption", O.a), D = d.a.span("BoldText", O.a), V = d.a.wrapped(m.s, "ModNoteInput", O.a), B = d.a.wrapped(m.s, "MessageInput", O.a), F = d.a.wrapped(v.a, "Info", O.a), U = d.a.div("SmallInfoText", O.a), H = d.a.div("FormOptionsContainer", O.a), K = d.a.wrapped(m.f, "ModalFooter", O.a), W = d.a.div("FooterRow", O.a), q = d.a.wrapped(W, "ButtonRow", O.a);
@@ -4045,7 +4045,7 @@
 						subreddit: t
 					}) => {
 						const s = t && t.replace(/^r\//, "");
-						return !!s && Object(bt.fb)(e, {
+						return !!s && Object(bt.gb)(e, {
 							identifier: {
 								name: s,
 								type: lt.a.SUBREDDIT
@@ -5775,4 +5775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.e99f477ff2dec1cc99b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b467c5f09df5274b2f42.js.map

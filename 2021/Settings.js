@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.67db2a2e5b1be0f3564a.js
-// Retrieved at 3/9/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4f92fa4eab8de2b2d9dd.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2774,7 +2774,7 @@
 				}
 			}));
 			var _ = Object(a.b)(() => Object(o.c)({
-					subreddit: f.S
+					subreddit: f.T
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -2887,7 +2887,7 @@
 				})
 			};
 			var O = Object(a.b)(() => Object(o.c)({
-				subreddit: f.S
+				subreddit: f.T
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -2917,7 +2917,7 @@
 			var j = Object(a.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.S)(e, {
+				}) => t ? Object(f.T)(e, {
 					subredditId: t
 				}) : null
 			}))(e => r.a.createElement(p, {
@@ -11268,4 +11268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.67db2a2e5b1be0f3564a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4f92fa4eab8de2b2d9dd.js.map

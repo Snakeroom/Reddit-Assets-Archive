@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.6561bc781a509d302d79.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.cf80386db488b704c43f.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -638,7 +638,7 @@
 				}
 			}));
 			var _ = Object(s.b)(() => Object(i.c)({
-					subreddit: b.S
+					subreddit: b.T
 				}))(e => r.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -751,7 +751,7 @@
 				})
 			};
 			var w = Object(s.b)(() => Object(i.c)({
-				subreddit: b.S
+				subreddit: b.T
 			}))(e => r.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -781,7 +781,7 @@
 			var T = Object(s.b)(() => Object(i.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(b.S)(e, {
+				}) => t ? Object(b.T)(e, {
 					subredditId: t
 				}) : null
 			}))(e => r.a.createElement(h, {
@@ -1039,7 +1039,7 @@
 				isImportExportThemesEnabled: Q.d.importExportThemes,
 				isStylingRestrictedDueToQuarantine: J.j,
 				moderatorPermissions: Y.i,
-				subreddit: X.S
+				subreddit: X.T
 			});
 			class ee extends r.a.Component {
 				constructor() {
@@ -1588,7 +1588,7 @@
 						activeModalId: M.a,
 						draftStyles: (e, n) => St()(e.structuredStyles.draft, t),
 						savedStyles: (e, t) => e.structuredStyles.models[t.subredditId],
-						subreddit: X.S,
+						subreddit: X.T,
 						isExportPending: J.d
 					}),
 					a = Object(o.b)(n, (e, n) => ({
@@ -4828,7 +4828,7 @@
 					postFlairData: vs.d,
 					subredditName: (e, {
 						subredditId: t
-					}) => Object(X.S)(e, {
+					}) => Object(X.T)(e, {
 						subredditId: t
 					}).name
 				})),
@@ -4933,7 +4933,7 @@
 			const Ti = s.a.wrapped(Z.b, "FormElementDescription", Di.a),
 				Oi = Object(c.c)({
 					rulesWidget: re.h,
-					subreddit: X.S
+					subreddit: X.T
 				});
 			var Fi = Object(o.b)(Oi, e => ({
 					refreshRulesWidget: (t, n) => e(Object(en.f)(t, n))
@@ -8483,4 +8483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.6561bc781a509d302d79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.cf80386db488b704c43f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1b18569759fbfcb3977a.js
-// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.4fa4b6a025988d12587a.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1013,7 +1013,7 @@
 				}
 			}));
 			var C = Object(i.b)(() => Object(n.c)({
-					subreddit: v.S
+					subreddit: v.T
 				}))(e => a.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -1126,7 +1126,7 @@
 				})
 			};
 			var N = Object(i.b)(() => Object(n.c)({
-				subreddit: v.S
+				subreddit: v.T
 			}))(e => a.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -1156,7 +1156,7 @@
 			var k = Object(i.b)(() => Object(n.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(v.S)(e, {
+				}) => t ? Object(v.T)(e, {
 					subredditId: t
 				}) : null
 			}))(e => a.a.createElement(h, {
@@ -2479,7 +2479,7 @@
 				}), a.a.createElement(Ce, {
 					isSubscribed: i
 				}))
-			}, Ee = e => Object(i.e)(t => Object(P.fb)(t, {
+			}, Ee = e => Object(i.e)(t => Object(P.gb)(t, {
 				identifier: {
 					name: e,
 					type: v.a.PROFILE
@@ -2761,4 +2761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1b18569759fbfcb3977a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.4fa4b6a025988d12587a.js.map

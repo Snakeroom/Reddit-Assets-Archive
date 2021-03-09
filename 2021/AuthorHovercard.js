@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.577cc58085c02ab9dbb8.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.0c6c48d0289fc9073de5.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
@@ -201,8 +201,8 @@
 			const C = {},
 				_ = "",
 				I = 0,
-				N = "200px";
-			class w extends o.a.Component {
+				w = "200px";
+			class N extends o.a.Component {
 				constructor() {
 					super(...arguments), this.container = o.a.createRef(), this.state = {
 						notificationHeights: C
@@ -214,7 +214,7 @@
 						} = this.state;
 						let t = 0;
 						for (const n in e) t += e[n];
-						return 0 === t ? N : t
+						return 0 === t ? w : t
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -262,8 +262,8 @@
 			var E = n("./src/reddit/controls/InternalLink/index.tsx"),
 				y = n("./src/reddit/helpers/trackers/inbox.ts"),
 				A = n("./src/reddit/hooks/useTracking.ts"),
-				O = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
-				k = n("./src/reddit/icons/svgs/Settings/index.tsx");
+				k = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
+				O = n("./src/reddit/icons/svgs/Settings/index.tsx");
 
 			function j() {
 				return (j = Object.assign || function(e) {
@@ -276,8 +276,8 @@
 			}
 			const L = [],
 				R = a.a.div("StyledDropdown", p.a),
-				H = a.a.wrapped(k.a, "Gear", p.a),
-				M = a.a.wrapped(O.a, "MarkAsRead", p.a),
+				H = a.a.wrapped(O.a, "Gear", p.a),
+				M = a.a.wrapped(k.a, "MarkAsRead", p.a),
 				F = e => {
 					const t = !!e.messagesBadgeCount;
 					return o.a.createElement("nav", {
@@ -348,7 +348,7 @@
 							})), t(Object(y.e)()), n()
 						},
 						sendInboxClickSettings: () => t(Object(y.j)(y.a.MiniInbox))
-					}), o.a.createElement(w, j({}, e, {
+					}), o.a.createElement(N, j({}, e, {
 						isPending: r
 					})), (d || r) && o.a.createElement(S, {
 						sendInboxClickSeeAll: () => t(Object(y.i)())
@@ -1047,22 +1047,7 @@
 			var i = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const o = Object(s.a)(i.mb)
-		},
-		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			}));
-			var i = n("./src/reddit/constants/experiments.ts"),
-				s = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => t => {
-				const n = Object(s.c)(t, {
-					experimentEligibilitySelector: s.a,
-					experimentName: e
-				});
-				return !(!n || Object(i.sd)(n))
-			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.577cc58085c02ab9dbb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.0c6c48d0289fc9073de5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ecc4219c00c1dfada47a.js
-// Retrieved at 3/9/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3d02e28d222ec17f7e44.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1104,28 +1104,6 @@
 				n = "ECONOMICS__ME__POINTS_COPY_REQUESTED",
 				a = "ECONOMICS__ME__POINTS_COPY_SUCCESS"
 		},
-		"./src/reddit/actions/economics/predictions/constants.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "c", (function() {
-				return s
-			})), r.d(t, "e", (function() {
-				return n
-			})), r.d(t, "d", (function() {
-				return a
-			})), r.d(t, "b", (function() {
-				return c
-			})), r.d(t, "a", (function() {
-				return o
-			})), r.d(t, "f", (function() {
-				return d
-			}));
-			const s = "FETCH_SUBREDDIT_TOP_PREDICTORS_SUCCESS",
-				n = "PREDICTION_VOTE_SUCCESS",
-				a = "PREDICTION_RESOLVE_SUCCESS",
-				c = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_SUCCESS",
-				o = "ADD_PREDICTION_TO_TOURNAMENT",
-				d = "RESET_TOURNAMENT_PREDICTIONS"
-		},
 		"./src/reddit/actions/embedAndImage.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -1249,7 +1227,7 @@
 					subredditId: t
 				}) => async (r, s, n) => {
 					const a = s(),
-						l = Object(I.S)(a, {
+						l = Object(I.T)(a, {
 							subredditId: t
 						}).name;
 					r(Object(b.k)(e));
@@ -1287,7 +1265,7 @@
 						subredditId: i,
 						emojiName: l,
 						settings: p
-					} = e, y = Object(m.a)(a.url), E = s(), O = Object(I.S)(E, {
+					} = e, y = Object(m.a)(a.url), E = s(), O = Object(I.T)(E, {
 						subredditId: i
 					}).name, h = await (async (e, t, r, s, n) => Object(o.a)(Object(d.a)(e, [u.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -1345,7 +1323,7 @@
 				}) => {
 					const n = r();
 					if (Object(g.a)(n, e)) return;
-					const a = Object(I.S)(n, {
+					const a = Object(I.T)(n, {
 						subredditId: e
 					}).name;
 					t(R(e));
@@ -1368,7 +1346,7 @@
 					apiContext: a
 				}) => {
 					const i = n(),
-						l = Object(I.S)(i, {
+						l = Object(I.T)(i, {
 							subredditId: t
 						}).name,
 						p = await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1396,7 +1374,7 @@
 					apiContext: a
 				}) => {
 					const i = n(),
-						l = Object(I.S)(i, {
+						l = Object(I.T)(i, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1421,7 +1399,7 @@
 					apiContext: a
 				}) => {
 					const i = n(),
-						l = Object(I.S)(i, {
+						l = Object(I.T)(i, {
 							subredditId: e
 						}).name;
 					(await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1441,7 +1419,7 @@
 					apiContext: l
 				}) => {
 					const p = i(),
-						b = Object(I.S)(p, {
+						b = Object(I.T)(p, {
 							subredditId: n
 						}).name;
 					(await (async (e, t, r, s) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1520,7 +1498,7 @@
 				h = e => async (t, a) => {
 					t(f());
 					const c = a(),
-						d = Object(u.S)(c, {
+						d = Object(u.T)(c, {
 							subredditId: e
 						}).name,
 						l = c.structuredStyles.models[e],
@@ -2985,7 +2963,7 @@
 					let n = g.e;
 					const a = r();
 					if (e.subredditId) {
-						const t = Object(A.S)(a, {
+						const t = Object(A.T)(a, {
 								subredditId: e.subredditId
 							}),
 							r = Object(v.p)(a, {
@@ -3699,7 +3677,7 @@
 				_ = e => async (t, r, {
 					gqlContext: n
 				}) => {
-					const a = Object(l.S)(r(), {
+					const a = Object(l.T)(r(), {
 						subredditId: e
 					});
 					if (void 0 === a) {
@@ -14428,9 +14406,10 @@
 										resolvedOptionId: o,
 										totalStakeAmount: d,
 										totalVoteCount: i,
-										userSelection: u,
-										userWonAmount: l,
-										votingEndTimestamp: p
+										tournamentId: u,
+										userSelection: l,
+										userWonAmount: p,
+										votingEndTimestamp: b
 									}
 								} = e;
 								return {
@@ -14438,15 +14417,16 @@
 									createdAt: n,
 									creatorId: r,
 									subredditId: s.id,
-									endsAt: p,
+									endsAt: b,
 									postId: t,
 									options: c,
 									totalVoters: i,
 									type: wn.a.GA,
 									isPrediction: a,
 									totalStakeAmount: d,
-									userSelection: u,
-									userWonAmount: l,
+									tournamentId: u,
+									userSelection: l,
+									userWonAmount: p,
 									resolvedOptionId: o
 								}
 							})(s[e]))
@@ -24309,4 +24289,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ecc4219c00c1dfada47a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3d02e28d222ec17f7e44.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.dba4c2a51fd624d7392b.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.30f1281581c56a7a3680.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1455,11 +1455,11 @@
 				G = s.n(J),
 				q = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.m.less"),
 				Y = s.n(q);
-			const z = Object(i.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
+			const X = Object(i.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
 				if (!e) return !1;
 				return (Object(h.g)(e) ? t : s).some(t => t.id === e.id)
 			});
-			class X extends r.a.Component {
+			class z extends r.a.Component {
 				constructor() {
 					super(...arguments), this.trackSubredditOrProfileClicked = e => {
 						e.stopPropagation(), this.props.onSubredditOrProfileClick(this.props.postId)
@@ -1480,7 +1480,7 @@
 						subredditOrProfile: u,
 						subscribedProfiles: m,
 						subscribedSubreddits: h
-					} = t, b = !z({
+					} = t, b = !X({
 						subredditOrProfile: u,
 						subscribedProfiles: m,
 						subscribedSubreddits: h
@@ -1509,7 +1509,7 @@
 					})), r.a.createElement(c.d, null))
 				}
 			}
-			const K = Object(m.b)(Object(u.a)(Object(a.a)(X)));
+			const K = Object(m.b)(Object(u.a)(Object(a.a)(z)));
 			class Z extends r.a.Component {
 				render() {
 					return r.a.createElement(K, this.props)
@@ -1913,9 +1913,9 @@
 				G = s("./src/reddit/components/MiniCardPost/index.m.less"),
 				q = s.n(G),
 				Y = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				z = s.n(Y),
-				X = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
-				K = s.n(X);
+				X = s.n(Y),
+				z = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
+				K = s.n(z);
 
 			function Z() {
 				return (Z = Object.assign || function(e) {
@@ -1976,7 +1976,7 @@
 					const P = !S && !C;
 					let I;
 					return w && (I = Object(H.g)(w) ? Object(J.h)(w) : Object(J.i)(w)), i.a.createElement(U.a, {
-						className: Object(c.a)(K.a.container, z.a.largeAndMediumActiveStyles, z.a.largeAndMediumPostStyles, q.a.postContainer, Object(F.a)(this.props), s),
+						className: Object(c.a)(K.a.container, X.a.largeAndMediumActiveStyles, X.a.largeAndMediumPostStyles, q.a.postContainer, Object(F.a)(this.props), s),
 						post: p,
 						onClick: m,
 						eventFactory: o,
@@ -2085,7 +2085,7 @@
 					showSubreddit: s,
 					...n
 				}) => i.a.createElement("div", {
-					className: Object(c.a)(ae.a.container, z.a.largeAndMediumPostStyles, e)
+					className: Object(c.a)(ae.a.container, X.a.largeAndMediumPostStyles, e)
 				}, i.a.createElement("div", {
 					className: Object(c.a)(ae.a.thumbnail, Object(re.b)({
 						isLoading: t
@@ -4900,7 +4900,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(o.W)(e, {
+					const s = Object(o.X)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -4908,4 +4908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.dba4c2a51fd624d7392b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.30f1281581c56a7a3680.js.map

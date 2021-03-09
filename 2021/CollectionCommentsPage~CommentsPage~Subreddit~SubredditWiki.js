@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.74bb4b4ae8b44bedf77e.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.60f8a2543852186fceb2.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, s) {
@@ -786,7 +786,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), re = Object(o.c)({
 				currentUser: g.i,
 				powerups: b.i,
-				subreddit: x.S,
+				subreddit: x.T,
 				topSupporters: b.k,
 				userPowerupsData: b.r
 			}), ne = Object(p.c)(e => {
@@ -2011,7 +2011,7 @@
 				ye = u.a.wrapped(ce.a, "InternalLink", be.a),
 				Ee = u.a.div("LinkContainer", be.a),
 				we = Object(a.c)({
-					userIsBanned: pe.db
+					userIsBanned: pe.eb
 				});
 			var Ne = Object(i.b)(we)(e => {
 					const {
@@ -2402,4 +2402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.74bb4b4ae8b44bedf77e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.60f8a2543852186fceb2.js.map

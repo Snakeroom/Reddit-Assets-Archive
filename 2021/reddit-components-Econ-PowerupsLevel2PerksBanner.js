@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.7e4f6de9e2917de065ec.js
-// Retrieved at 3/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.4cb1f60b20a72578d4ac.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/PowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -145,7 +145,7 @@
 						userId: s.id
 					})
 				},
-				subreddit: m.S,
+				subreddit: m.T,
 				userBenefits: u.l
 			});
 			var C;
@@ -243,12 +243,12 @@
 				I = s("./src/reddit/components/Econ/PowerupsLevel2PerksBanner/index.m.less"),
 				U = s.n(I);
 			const {
-				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(o.c)({
+				fbt: y
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = Object(o.c)({
 				powerups: u.i,
-				subreddit: m.S
+				subreddit: m.T
 			});
-			t.default = Object(r.b)(y)(e => {
+			t.default = Object(r.b)(S)(e => {
 				var t;
 				const {
 					className: s,
@@ -271,7 +271,7 @@
 					className: Object(i.a)(U.a.container, s)
 				}, n.a.createElement("h2", {
 					className: U.a.title
-				}, S._("Powerup", null, {
+				}, y._("Powerup", null, {
 					hk: "4p1fZz"
 				})), n.a.createElement(F, {
 					areAllBenefitsUnlocked: j,
@@ -284,11 +284,11 @@
 				}, n.a.createElement(b.l, {
 					className: U.a.button,
 					onClick: k
-				}, S._("Learn more", null, {
+				}, y._("Learn more", null, {
 					hk: "1hZsGq"
 				}))))
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.7e4f6de9e2917de065ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.4cb1f60b20a72578d4ac.js.map

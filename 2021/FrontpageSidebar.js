@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.912c7eee3929a6e891b8.js
-// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.72a1b3523f46d3f0493a.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -451,7 +451,7 @@
 					isMod: Me.K,
 					isLoggedIn: Me.I,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					trendingSubredditIds: Ce.bb,
+					trendingSubredditIds: Ce.cb,
 					currentUser: Me.i,
 					frontpageLinks: qe.b,
 					isOver18: Me.bb,
@@ -462,7 +462,7 @@
 					isInIcons2020: We.a,
 					bffsLeaderboardVariant: Re,
 					inRpanTopVideoEntrypointExperiment: Ue.e,
-					rankings: e => Object(Ce.N)(e, Je)
+					rankings: e => Object(Ce.O)(e, Je)
 				}),
 				He = e => !((e.inRpanTopVideoEntrypointExperiment ? !e.rankings : !e.trendingSubredditIds.length) || e.currentUser && !e.currentUser.showTrending || e.isUISimplificationAllItemsVariant),
 				Xe = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
@@ -1673,4 +1673,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.912c7eee3929a6e891b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.72a1b3523f46d3f0493a.js.map

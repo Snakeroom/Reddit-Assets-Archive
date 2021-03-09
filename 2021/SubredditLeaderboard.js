@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.fb7242023097cfce5332.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ce9343be49ec3c598acf.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -1773,8 +1773,8 @@
 					isMod: D.K,
 					rankings: (e, {
 						categoryId: t
-					}) => Object(R.N)(e, t),
-					subreddits: R.Z
+					}) => Object(R.O)(e, t),
+					subreddits: R.ab
 				}),
 				G = Object(i.b)(H, e => ({
 					fetchMoreSubreddits: (t, n) => e(Object(P.a)(t, n))
@@ -2155,4 +2155,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.fb7242023097cfce5332.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ce9343be49ec3c598acf.js.map

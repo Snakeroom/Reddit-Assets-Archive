@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.8812906e4099a0596c0a.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.29cf27715e25b571f3a0.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, r) {
@@ -1440,7 +1440,7 @@
 					}) => Object(x.y)(e, t),
 					subredditName: (e, {
 						post: t
-					}) => Object(v.S)(e, {
+					}) => Object(v.T)(e, {
 						subredditId: t.belongsTo.id
 					}).name
 				})),
@@ -1969,7 +1969,7 @@
 					}),
 					subredditName: (e, {
 						post: t
-					}) => Object(V.S)(e, {
+					}) => Object(V.T)(e, {
 						subredditId: t.belongsTo.id
 					}).name,
 					shouldOpenPostInNewTab: D.ab,
@@ -4348,4 +4348,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.8812906e4099a0596c0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34.29cf27715e25b571f3a0.js.map

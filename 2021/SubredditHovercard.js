@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.365a568161772dd7b0c0.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.4279f1186b124ad9c851.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -39,7 +39,7 @@
 				C = Object(a.c)({
 					restrictions: O.p
 				}),
-				N = e => o.a.createElement(o.a.Fragment, null, o.a.createElement(d.b, {
+				T = e => o.a.createElement(o.a.Fragment, null, o.a.createElement(d.b, {
 					flair: {
 						type: x.f.Nsfw,
 						text: "nsfw"
@@ -49,7 +49,7 @@
 				}, r.fbt._("Adult content", null, {
 					hk: "3KWIyX"
 				}))),
-				T = ({
+				N = ({
 					isInIcons2020: e
 				}) => o.a.createElement(j, null, e ? o.a.createElement(m.a, {
 					name: "quarantined",
@@ -59,14 +59,14 @@
 				}), o.a.createElement("span", null, r.fbt._("Quarantined", null, {
 					hk: "1GDuqm"
 				}))),
-				_ = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("span", null, e.subreddit.isNSFW && o.a.createElement(N, null)), o.a.createElement(j, {
+				_ = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("span", null, e.subreddit.isNSFW && o.a.createElement(T, null)), o.a.createElement(j, {
 					className: e.className
 				}, e.description ? o.a.createElement(l.a, {
 					icon: e.icon,
 					text: e.description
 				}) : e.icon, o.a.createElement("span", {
 					className: e.textClassName
-				}, e.text)), e.subreddit.isQuarantined && o.a.createElement(T, {
+				}, e.text)), e.subreddit.isQuarantined && o.a.createElement(N, {
 					isInIcons2020: e.isInIcons2020
 				})),
 				g = Object(i.b)(C);
@@ -131,9 +131,9 @@
 							subreddit: i
 						});
 					default:
-						return o.a.createElement(o.a.Fragment, null, i.isQuarantined && o.a.createElement(T, {
+						return o.a.createElement(o.a.Fragment, null, i.isQuarantined && o.a.createElement(N, {
 							isInIcons2020: d
-						}), i.isNSFW && o.a.createElement(N, null))
+						}), i.isNSFW && o.a.createElement(T, null))
 				}
 			})
 		},
@@ -311,8 +311,8 @@
 				I = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				j = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				C = s("./src/reddit/controls/Button/index.tsx"),
-				N = s("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
-				T = s("./src/reddit/components/DiscoveryUnit/SubredditsDiscoveryUnit/communityClickContext.ts").c,
+				T = s("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
+				N = s("./src/reddit/components/DiscoveryUnit/SubredditsDiscoveryUnit/communityClickContext.ts").c,
 				_ = s("./src/reddit/components/Hovercards/SubredditHovercard/SubredditOptions.m.less"),
 				g = s.n(_);
 
@@ -347,7 +347,7 @@
 					style: a,
 					subreddit: l,
 					subredditAboutInfo: u
-				} = e, m = T(), p = Object(r.useCallback)(() => {
+				} = e, m = N(), p = Object(r.useCallback)(() => {
 					d(c(l.id, "title", i)), i && m(i)
 				}, [d, i, l]), b = Object(r.useCallback)(() => {
 					d(c(l.id, "visit", i)), i && m(i)
@@ -366,7 +366,7 @@
 					subredditAboutInfo: u
 				}), n.a.createElement(O.a, {
 					subreddit: l
-				}), n.a.createElement(A, null, Object(N.a)(u.publicDescription || "", 140)), n.a.createElement(C.k, {
+				}), n.a.createElement(A, null, Object(T.a)(u.publicDescription || "", 140)), n.a.createElement(C.k, {
 					onClick: b,
 					to: `${l.url}`
 				}, S._("View Community", null, {
@@ -482,9 +482,9 @@
 			})), s.d(t, "d", (function() {
 				return C
 			})), s.d(t, "e", (function() {
-				return N
-			})), s.d(t, "f", (function() {
 				return T
+			})), s.d(t, "f", (function() {
+				return N
 			})), s.d(t, "g", (function() {
 				return _
 			})), s.d(t, "h", (function() {
@@ -606,7 +606,7 @@
 				}
 			}));
 			var y = Object(o.b)(() => Object(i.c)({
-					subreddit: h.S
+					subreddit: h.T
 				}))(e => n.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -662,7 +662,7 @@
 					data: o
 				})
 			};
-			var N = e => {
+			var T = e => {
 				const {
 					post: t,
 					subredditOrProfile: s,
@@ -685,7 +685,7 @@
 					data: i
 				})
 			};
-			var T = e => {
+			var N = e => {
 				const {
 					post: t,
 					subredditOrProfile: s
@@ -719,7 +719,7 @@
 				})
 			};
 			var _ = Object(o.b)(() => Object(i.c)({
-				subreddit: h.S
+				subreddit: h.T
 			}))(e => n.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -749,7 +749,7 @@
 			var w = Object(o.b)(() => Object(i.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(h.S)(e, {
+				}) => t ? Object(h.T)(e, {
 					subredditId: t
 				}) : null
 			}))(e => n.a.createElement(p, {
@@ -915,4 +915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.365a568161772dd7b0c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.4279f1186b124ad9c851.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.9f02f6af972e8aa37a46.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.9dd6e633001aab67a884.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/graphql/operations/DismissCommunityProgressCard.json": function(e) {
@@ -322,7 +322,7 @@
 				const n = Object(t.useRef)(null),
 					[c, a] = Object(t.useState)(!0),
 					l = Object(i.e)(I.U),
-					x = Object(i.e)(s => Object(N.Y)(s, e)),
+					x = Object(i.e)(s => Object(N.Z)(s, e)),
 					p = Object(h.a)();
 				Object(t.useEffect)(() => {
 					p(u(s, c ? "expanded_module" : "collapses_module"))
@@ -1277,4 +1277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.9f02f6af972e8aa37a46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.9dd6e633001aab67a884.js.map

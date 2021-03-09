@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.ef5c5674cc383939c34f.js
-// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.d3ee55cda5b28e7a3a66.js
+// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -1992,7 +1992,7 @@
 						listingName: s,
 						inSubredditOrProfile: n
 					}) => Object(v.F)(e, t, s, n)),
-					subredditsById: S.Z,
+					subredditsById: S.ab,
 					viewportDataLoaded: x.a,
 					pageReferrer: m.Q,
 					postListPlaceholderComponent: () => g.a,
@@ -2591,7 +2591,7 @@
 			const a = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.S)(e, {
+						const t = Object(o.T)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -2604,14 +2604,14 @@
 				u = (e, t) => {
 					const s = p(e, t);
 					if (!s) return l;
-					const n = Object(o.W)(e, {
+					const n = Object(o.X)(e, {
 						subredditName: s.name
 					});
 					return n && n.postIds && n.postIds.length ? n.postIds : l
 				},
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.S)(e, {
+					return s ? Object(o.T)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -2665,4 +2665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.ef5c5674cc383939c34f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.d3ee55cda5b28e7a3a66.js.map
