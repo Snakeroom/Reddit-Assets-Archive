@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.d7ecb715609dc4e05ce4.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.abcb1d35556aec161c60.js
+// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "EconHelperActions"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -460,7 +460,7 @@
 				H = n.n(U);
 			const {
 				fbt: W
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), V = c.a.wrapped(F, "PrivateKey", H.a), q = c.a.div("ButtonsContainer", H.a), J = c.a.div("Container", H.a), K = c.a.div("Description", H.a), Y = c.a.div("PrivateSubredditDetails", H.a), G = c.a.div("PrivateSubredditDescription", H.a), z = c.a.h3("PrivateSubredditName", H.a), Q = c.a.a("Link", H.a), Z = c.a.wrapped(L.k, "LinkRouterButton", H.a), X = c.a.wrapped(L.j, "LinkButton", H.a), $ = c.a.wrapped(L.n, "SecondaryLinkRouterButton", H.a), ee = c.a.wrapped(L.m, "SecondaryLinkButton", H.a), te = c.a.wrapped(Z, "GoHomeLinkButton", H.a), ne = c.a.img("Image", H.a), se = c.a.img("ImagePlaceholder", H.a), re = c.a.wrapped(Z, "LeftLinkRouterButton", H.a), ie = c.a.wrapped(X, "LeftLinkButton", H.a), ae = c.a.wrapped(ee, "SecondaryLeftLinkButton", H.a), oe = c.a.wrapped($, "SecondaryLeftLinkRouterButton", H.a), de = c.a.h3("Title", H.a), ce = c.a.div("PageBody", H.a), le = c.a.div("QuarantineMessageWrapper", H.a), ue = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), V = c.a.wrapped(F, "PrivateKey", H.a), q = c.a.div("ButtonsContainer", H.a), J = c.a.div("Container", H.a), K = c.a.div("Description", H.a), Y = c.a.div("PrivateSubredditDetails", H.a), G = c.a.div("PrivateSubredditDescription", H.a), z = c.a.h3("PrivateSubredditName", H.a), Q = c.a.a("Link", H.a), X = c.a.wrapped(L.k, "LinkRouterButton", H.a), Z = c.a.wrapped(L.j, "LinkButton", H.a), $ = c.a.wrapped(L.n, "SecondaryLinkRouterButton", H.a), ee = c.a.wrapped(L.m, "SecondaryLinkButton", H.a), te = c.a.wrapped(X, "GoHomeLinkButton", H.a), ne = c.a.img("Image", H.a), se = c.a.img("ImagePlaceholder", H.a), re = c.a.wrapped(X, "LeftLinkRouterButton", H.a), ie = c.a.wrapped(Z, "LeftLinkButton", H.a), ae = c.a.wrapped(ee, "SecondaryLeftLinkButton", H.a), oe = c.a.wrapped($, "SecondaryLeftLinkRouterButton", H.a), de = c.a.h3("Title", H.a), ce = c.a.div("PageBody", H.a), le = c.a.div("QuarantineMessageWrapper", H.a), ue = Object(d.c)({
 				isLoggedIn: A.I,
 				origin: D.l,
 				user: A.i
@@ -509,7 +509,7 @@
 							href: Object(l.a)(o, d)
 						}, W._("Sign Up", null, {
 							hk: "rvpjy"
-						})), E ? i.a.createElement(Z, {
+						})), E ? i.a.createElement(X, {
 							to: "/"
 						}, W._("Go Home", null, {
 							hk: "49p4or"
@@ -554,7 +554,7 @@
 							href: Object(l.a)(o, d)
 						}, W._("Sign Up", null, {
 							hk: "rvpjy"
-						})), i.a.createElement(Z, {
+						})), i.a.createElement(X, {
 							to: "/"
 						}, W._("Browse Reddit", null, {
 							hk: "1fi8kh"
@@ -586,7 +586,7 @@
 								to: "/"
 							}, W._("No Thank You", null, {
 								hk: "4B26AR"
-							})), i.a.createElement(X, {
+							})), i.a.createElement(Z, {
 								href: `${s.a.redditUrl}/prefs/update`
 							}, W._("Verify Email", null, {
 								hk: "1893cq"
@@ -612,7 +612,7 @@
 							parseRegularLinks: !0
 						}) : W._("This community has been banned for violating the Reddit rules.", null, {
 							hk: "3iUVxA"
-						})))(t), i.a.createElement(q, null, i.a.createElement(Z, {
+						})))(t), i.a.createElement(q, null, i.a.createElement(X, {
 							to: "/"
 						}, W._("Explore Reddit", null, {
 							hk: "FrUWU"
@@ -622,7 +622,7 @@
 							src: `${s.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
 						}), i.a.createElement(de, null, W._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "4bCnhl"
-						})), i.a.createElement(q, null, i.a.createElement(Z, {
+						})), i.a.createElement(q, null, i.a.createElement(X, {
 							to: "/"
 						}, W._("Explore Reddit", null, {
 							hk: "FrUWU"
@@ -693,7 +693,7 @@
 							src: `${s.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
 						}), i.a.createElement(de, null, W._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "1q1rVU"
-						})), i.a.createElement(q, null, i.a.createElement(Z, {
+						})), i.a.createElement(q, null, i.a.createElement(X, {
 							to: "/"
 						}, W._("Browse Reddit", null, {
 							hk: "1XnYmj"
@@ -3431,12 +3431,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case h.Zc.SmIcon:
+						case h.bd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.Zc.SmIconHc:
+						case h.bd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -3593,13 +3593,13 @@
 					}))))
 				}
 			}
-			var Z = Object(d.b)(z, e => ({
+			var X = Object(d.b)(z, e => ({
 					openLightbox: t => e(Object(N.a)(t.permalink))
 				}), null, {
 					forwardRef: !0
 				})(Q),
-				X = n("./src/reddit/components/SidebarPostList/index.m.less"),
-				$ = n.n(X);
+				Z = n("./src/reddit/components/SidebarPostList/index.m.less"),
+				$ = n.n(Z);
 			const {
 				fbt: ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = 10, ne = 2, se = Object(c.a)(B.O, e => e.filter(e => !e.isSponsored)), re = Object(c.c)({
@@ -3638,7 +3638,7 @@
 							key: e.id,
 							onPostVisible: s,
 							postId: e.id
-						}, o.a.createElement(Z, {
+						}, o.a.createElement(X, {
 							className: Object(w.a)($.a.smallPost, i),
 							containerOnClick: n,
 							postId: e.id,
@@ -3857,7 +3857,7 @@
 					modHasEditedColors: !n || !!(n.primaryColor || n.highlightColor || n.backgroundColor || n.backgroundImage),
 					modHasEditedIcon: !n || (!!n.communityIcon || !!n.bannerShowCommunityIcon)
 				}));
-			class Ze extends o.a.Component {
+			class Xe extends o.a.Component {
 				constructor(e) {
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
@@ -3976,12 +3976,12 @@
 					})) : null
 				}
 			}
-			var Xe = Object(d.b)(Qe, (e, {
+			var Ze = Object(d.b)(Qe, (e, {
 					subredditId: t,
 					subredditName: n
 				}) => ({
 					toggleCloseMenuModal: () => e(Object(Ce.i)(Ge))
-				}))(Object(oe.c)(Ze)),
+				}))(Object(oe.c)(Xe)),
 				$e = n("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
 				et = n("./src/reddit/constants/tracking.ts"),
 				tt = n("./src/reddit/selectors/seo/linksModule.ts"),
@@ -4153,7 +4153,7 @@
 							truncateThreshold: gt,
 							widget: e
 						}))
-					}), o.a.createElement(Xe, {
+					}), o.a.createElement(Ze, {
 						subredditId: a,
 						subredditName: d
 					}), s && o.a.createElement(b.a, {
@@ -4970,9 +4970,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const a = e => s.jb.Enabled === Object(r.c)(e, {
+			const a = e => s.kb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: i.J,
-				experimentName: s.gb
+				experimentName: s.hb
 			})
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
@@ -4998,12 +4998,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.Uc
+						experimentName: s.Wc
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Zc.SmIcon || t === s.Zc.SmIconHc
+					return t === s.bd.SmIcon || t === s.bd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5026,4 +5026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.d7ecb715609dc4e05ce4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.abcb1d35556aec161c60.js.map

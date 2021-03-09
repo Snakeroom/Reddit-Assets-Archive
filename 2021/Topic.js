@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.46ce7dc609f913f18a0b.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.4dd50d612ebe8d7484ef.js
+// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2412,8 +2412,10 @@
 					}
 				}
 				componentDidUpdate(e) {
-					var t, s;
-					(null === (t = this.props.topic) || void 0 === t ? void 0 : t.id) !== (null === (s = e.topic) || void 0 === s ? void 0 : s.id) && this.openTab(this.props.tabs[0])
+					var t, s, r;
+					const n = null === (t = e.topic) || void 0 === t ? void 0 : t.id,
+						i = null === (s = this.props.topic) || void 0 === s ? void 0 : s.id;
+					n && i !== (null === (r = e.topic) || void 0 === r ? void 0 : r.id) && this.openTab(this.props.tabs[0])
 				}
 				render() {
 					const {
@@ -2618,4 +2620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.46ce7dc609f913f18a0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.4dd50d612ebe8d7484ef.js.map

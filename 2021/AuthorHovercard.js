@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.aa9b0c910117afc5e2bf.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.6c4139df76788437eee2.js
+// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
@@ -1058,8 +1058,8 @@
 			}));
 			var i = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(i.mb)
+			const o = Object(s.a)(i.nb)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.aa9b0c910117afc5e2bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.6c4139df76788437eee2.js.map

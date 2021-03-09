@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.283532970037b79d4608.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d4a8dd8df3f127601f19.js
+// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2560,7 +2560,7 @@
 					sendEvent: he,
 					subredditOrProfile: xe,
 					toggleCheckbox: ve
-				} = e, ge = le ? void 0 : d, ye = Object(B.a)(ne), Oe = se && ye, je = Object(A.a)(ne), Ee = Object(F.a)(ne), _e = Object(j.c)(ae), ke = !!Q && !Object(T.sd)(Q), Ie = Object(L.a)(ae), Se = N && !fe && !ke, Ce = Se && !!ae.source && !s, Pe = !(H && q || Z) && !W && (!N || ke), we = (!N || ke) && !ae.isSponsored, Te = Object(a.t)(ae, J), {
+				} = e, ge = le ? void 0 : d, ye = Object(B.a)(ne), Oe = se && ye, je = Object(A.a)(ne), Ee = Object(F.a)(ne), _e = Object(j.c)(ae), ke = !!Q && !Object(T.ud)(Q), Ie = Object(L.a)(ae), Se = N && !fe && !ke, Ce = Se && !!ae.source && !s, Pe = !(H && q || Z) && !W && (!N || ke), we = (!N || ke) && !ae.isSponsored, Te = Object(a.t)(ae, J), {
 					source: Ne
 				} = Te, Me = r.a.createElement(_.a, {
 					className: Object(c.a)(ee.a.container, n, Y.a.largeAndMediumPostStyles, Y.a.largeAndMediumActiveStyles, Object(R.a)(e), {
@@ -4866,9 +4866,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.nb
+					experimentName: s.ob
 				});
-				return !(!t || Object(s.sd)(t))
+				return !(!t || Object(s.ud)(t))
 			}
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, n) {
@@ -4976,4 +4976,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.283532970037b79d4608.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d4a8dd8df3f127601f19.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.a33b333c1be6767a4979.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.58c50b274c2467daaf91.js
+// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -2897,7 +2897,7 @@
 								experimentName: a.w,
 								expEventOverride: t
 							});
-							return !!(Object(a.sd)(n) ? void 0 : n)
+							return !!(Object(a.ud)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -7617,8 +7617,8 @@
 				a = n("./src/reddit/selectors/meta.ts");
 			const o = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(a.d)(e) && "US" === Object(a.b)(e),
-				experimentName: s.Hc
-			}) === s.Qc.Enabled
+				experimentName: s.Jc
+			}) === s.Sc.Enabled
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, n) {
 			"use strict";
@@ -7628,9 +7628,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const o = e => Object(a.G)(e) || !(s.gd.Holdout === Object(r.c)(e, {
+			const o = e => Object(a.G)(e) || !(s.id.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.dd
+				experimentName: s.fd
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -7645,19 +7645,19 @@
 				r = n("./src/reddit/featureFlags/utils.ts"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = ["AU", "CA", "GB", "US"],
-				i = new Set([s.Pb.AllItems, s.Pb.TrendingSearch]),
+				i = new Set([s.Rb.AllItems, s.Rb.TrendingSearch]),
 				c = e => {
 					const t = Object(a.c)(e, {
 						experimentEligibilitySelector: Object(r.d)(Object(r.b)(...o)),
-						experimentName: s.Qb
+						experimentName: s.Sb
 					});
 					return i.has(t)
 				},
-				d = e => s.Pb.AllItems === Object(a.c)(e, {
+				d = e => s.Rb.AllItems === Object(a.c)(e, {
 					experimentEligibilitySelector: Object(r.d)(Object(r.b)(...o)),
-					experimentName: s.Qb
+					experimentName: s.Sb
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a33b333c1be6767a4979.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.58c50b274c2467daaf91.js.map

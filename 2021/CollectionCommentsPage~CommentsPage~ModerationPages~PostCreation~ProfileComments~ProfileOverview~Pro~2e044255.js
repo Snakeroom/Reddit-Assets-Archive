@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.4e205a958674a4a83585.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.81da368a0912c4f1053e.js
+// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -851,9 +851,9 @@
 					K = {
 						caretOnTop: !1
 					},
-					Z = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === p.a.SUBREDDIT,
-					q = U("Approve", V.id, G),
-					Y = U("Archived", V.id, G),
+					q = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === p.a.SUBREDDIT,
+					Y = U("Approve", V.id, G),
+					Z = U("Archived", V.id, G),
 					z = U("Automod", V.id, G),
 					Q = U("Lock", V.id, G),
 					$ = U("Mod", V.id, G),
@@ -882,11 +882,11 @@
 					isFilled: X,
 					className: Object(c.a)(M.a.icon, M.a.archivedIcon),
 					desc: B(),
-					id: Y,
-					onMouseEnter: J(Y),
+					id: Z,
+					onMouseEnter: J(Z),
 					onMouseLeave: w
 				}), o.a.createElement(u.c, N({
-					tooltipId: Y,
+					tooltipId: Z,
 					text: B()
 				}, K))), V.isLocked && o.a.createElement(r.Fragment, null, o.a.createElement(C.a, {
 					isFilled: X,
@@ -922,11 +922,11 @@
 					isFilled: X,
 					className: Object(c.a)(M.a.icon, M.a.approveIcon),
 					desc: Object(x.a)(V),
-					id: q,
-					onMouseEnter: J(q),
+					id: Y,
+					onMouseEnter: J(Y),
 					onMouseLeave: w
 				}), o.a.createElement(u.c, N({
-					tooltipId: q,
+					tooltipId: Y,
 					text: Object(x.a)(V)
 				}, K))), Object(b.a)(V) && !oe && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
 					isFilled: X,
@@ -935,7 +935,7 @@
 					id: ee,
 					onMouseEnter: J(ee),
 					onMouseLeave: w
-				}), Z && o.a.createElement(m.a, {
+				}), q && o.a.createElement(m.a, {
 					className: M.a.addRemovalReason,
 					onClick: W,
 					text: n.fbt._("Add a removal reason", null, {
@@ -2260,12 +2260,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.Zc.SmIcon:
+						case b.bd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Zc.SmIconHc:
+						case b.bd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2745,12 +2745,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Uc
+						experimentName: n.Wc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Zc.SmIcon || t === n.Zc.SmIconHc
+					return t === n.bd.SmIcon || t === n.bd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2773,4 +2773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.4e205a958674a4a83585.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.81da368a0912c4f1053e.js.map

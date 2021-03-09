@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.932e6902b3f317412abf.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.19dcf2355731d01dc1f2.js
+// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -13034,14 +13034,18 @@
 				return i
 			})), n.d(t, "a", (function() {
 				return c
+			})), n.d(t, "d", (function() {
+				return d
+			})), n.d(t, "c", (function() {
+				return l
 			}));
 			var s, o, r = n("./src/reddit/constants/tracking.ts"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			! function(e) {
-				e.REREDDIT_PROMO = "rereddit_promo", e.SEE_MORE = "see_more"
+				e.REREDDIT_PROMO = "rereddit_promo", e.SEE_MORE = "see_more", e.TOPIC = "topic", e.TOPICS_WIDGET = "topics_widget"
 			}(s || (s = {})),
 			function(e) {
-				e.COMMUNITY_WIDGETS = "community_widgets", e.POST = "post"
+				e.COMMUNITY_WIDGETS = "community_widgets", e.POST = "post", e.SIDEBAR = "sidebar", e.TOPICS_WIDGET = "topics_widget"
 			}(o || (o = {}));
 			const i = (e, t) => n => ({
 					source: o.COMMUNITY_WIDGETS,
@@ -13066,6 +13070,21 @@
 						}
 					},
 					...a.defaults(n)
+				}),
+				d = () => e => ({
+					source: o.SIDEBAR,
+					action: r.c.VIEW,
+					noun: s.TOPICS_WIDGET,
+					...a.defaults(e)
+				}),
+				l = e => t => ({
+					source: o.TOPICS_WIDGET,
+					action: r.c.CLICK,
+					noun: s.TOPIC,
+					...a.defaults(t),
+					topicMetadata: {
+						displayName: e
+					}
 				})
 		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, n) {
@@ -19968,8 +19987,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.sc
-				}) === s.Bc.Enabled
+					experimentName: s.uc
+				}) === s.Dc.Enabled
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -20508,4 +20527,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.932e6902b3f317412abf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.19dcf2355731d01dc1f2.js.map

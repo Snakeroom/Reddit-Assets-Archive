@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.1c03f6da62e5d6089646.js
-// Retrieved at 3/9/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.c5b3b472189a5d35902c.js
+// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/index.tsx": function(e, t, a) {
@@ -161,8 +161,8 @@
 				e.HideMessageType = "HideMessageType", e.HideNotif = "HideNotif", e.HideNotifUpdate = "HideNotifUpdate", e.HideSubUpdates = "HideSubUpdates"
 			}(R || (R = {}));
 			const z = l.a.wrapped(V.a, "StyledDropdown", N.a),
-				Z = Object(D.a)(z),
-				Y = Object(P.a)(z, [L.a.Click]),
+				Y = Object(D.a)(z),
+				Z = Object(P.a)(z, [L.a.Click]),
 				G = e => {
 					const {
 						disableMessageTypeNotifications: t,
@@ -229,7 +229,7 @@
 								onClick: r
 							}, o)
 						},
-						f = r ? Y : Z;
+						f = r ? Z : Y;
 					return s.a.createElement(f, {
 						id: b,
 						isOverlayOff: !0,
@@ -274,9 +274,9 @@
 					}))
 				};
 			var J = a("./src/lib/constants/index.ts"),
-				X = a("./src/lib/timeAgo/index.ts"),
-				q = a("./src/reddit/icons/svgs/Menu/index.tsx");
-			const Q = l.a.wrapped(q.a, "MenuIcon", N.a),
+				q = a("./src/lib/timeAgo/index.ts"),
+				Q = a("./src/reddit/icons/svgs/Menu/index.tsx");
+			const X = l.a.wrapped(Q.a, "MenuIcon", N.a),
 				ee = e => {
 					const {
 						dropdownId: t,
@@ -301,7 +301,7 @@
 						})
 					}, u), s.a.createElement(K.c, null), s.a.createElement("span", {
 						className: N.a.timeAgo
-					}, Object(X.a)(g, !0))), b && s.a.createElement("button", {
+					}, Object(q.a)(g, !0))), b && s.a.createElement("button", {
 						"aria-expanded": n,
 						"aria-haspopup": !0,
 						className: E,
@@ -309,7 +309,7 @@
 						onClick: e => {
 							e.stopPropagation(), e.preventDefault(), n ? p("") : (d(), p(t))
 						}
-					}, s.a.createElement(Q, null)))
+					}, s.a.createElement(X, null)))
 				};
 			var te = a("./src/reddit/controls/InternalLink/index.tsx"),
 				ae = a("./src/reddit/helpers/trackers/inbox.ts"),
@@ -584,28 +584,28 @@
 				r = a("./src/reddit/selectors/experiments/utils.ts"),
 				o = a("./src/reddit/selectors/user.ts");
 			const l = Object(i.a)(e => Object(s.c)(e, {
-					experimentName: n.Wb,
+					experimentName: n.Yb,
 					experimentEligibilitySelector: c
 				}), r.a),
 				c = e => Object(o.I)(e) || Object(o.J)(e),
-				d = Object(i.a)(l, e => e === n.cc.Redesign),
+				d = Object(i.a)(l, e => e === n.ec.Redesign),
 				m = Object(i.a)(e => Object(s.c)(e, {
-					experimentName: n.Vb,
+					experimentName: n.Xb,
 					experimentEligibilitySelector: c
 				}), r.a),
-				p = Object(i.a)(m, e => e === n.bc.Enabled),
+				p = Object(i.a)(m, e => e === n.dc.Enabled),
 				u = Object(i.a)(e => Object(s.c)(e, {
-					experimentName: n.Ub,
+					experimentName: n.Wb,
 					experimentEligibilitySelector: c
 				}), r.a),
-				b = Object(i.a)(u, e => e === n.ac.Enabled),
+				b = Object(i.a)(u, e => e === n.cc.Enabled),
 				E = Object(i.a)(e => Object(s.c)(e, {
 					experimentName: n.P,
 					experimentEligibilitySelector: c
 				}), r.a),
-				g = Object(i.a)(E, e => e === n.X.NoOverflow),
-				f = Object(i.a)(E, e => e === n.X.UndoBar)
+				g = Object(i.a)(E, e => e === n.Y.NoOverflow),
+				f = Object(i.a)(E, e => e === n.Y.UndoBar)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.1c03f6da62e5d6089646.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.c5b3b472189a5d35902c.js.map

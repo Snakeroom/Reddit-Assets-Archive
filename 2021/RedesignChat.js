@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.4666484edf59ae7d3706.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.76b33e26a1d10ef5f5fb.js
+// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(t, e, n) {
@@ -672,11 +672,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.Tb,
+					experimentName: c.Vb,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = t => Object(i.I)(t) || Object(i.J)(t),
-				u = Object(s.a)(o, t => t === c.Zb.Enabled)
+				u = Object(s.a)(o, t => t === c.bc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(t, e, n) {
 			"use strict";
@@ -697,28 +697,28 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.Wb,
+					experimentName: c.Yb,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = t => Object(i.I)(t) || Object(i.J)(t),
-				u = Object(s.a)(o, t => t === c.cc.Redesign),
+				u = Object(s.a)(o, t => t === c.ec.Redesign),
 				b = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.Vb,
+					experimentName: c.Xb,
 					experimentEligibilitySelector: d
 				}), a.a),
-				l = Object(s.a)(b, t => t === c.bc.Enabled),
+				l = Object(s.a)(b, t => t === c.dc.Enabled),
 				h = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.Ub,
+					experimentName: c.Wb,
 					experimentEligibilitySelector: d
 				}), a.a),
-				m = Object(s.a)(h, t => t === c.ac.Enabled),
+				m = Object(s.a)(h, t => t === c.cc.Enabled),
 				f = Object(s.a)(t => Object(r.c)(t, {
 					experimentName: c.P,
 					experimentEligibilitySelector: d
 				}), a.a),
-				p = Object(s.a)(f, t => t === c.X.NoOverflow),
-				j = Object(s.a)(f, t => t === c.X.UndoBar)
+				p = Object(s.a)(f, t => t === c.Y.NoOverflow),
+				j = Object(s.a)(f, t => t === c.Y.UndoBar)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.4666484edf59ae7d3706.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.76b33e26a1d10ef5f5fb.js.map
