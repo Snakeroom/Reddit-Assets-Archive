@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f22721b0db84338f74b8.js
-// Retrieved at 3/9/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3fc180cd48eec9574998.js
+// Retrieved at 3/9/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -4943,7 +4943,7 @@
 								case cs.Inbox:
 								case cs.Settings:
 									return u.a.createElement(Es.a, {
-										className: Ds.a.userIcon
+										wrapperClassName: Ds.a.userIcon
 									});
 								case cs.ModListing:
 									return n("mod_queue");
@@ -5046,7 +5046,7 @@
 							case cs.Inbox:
 							case cs.Settings:
 								return u.a.createElement(Es.a, {
-									className: Ds.a.userIcon
+									wrapperClassName: Ds.a.userIcon
 								});
 							case cs.ModListing:
 								return u.a.createElement(Is.a, {
@@ -6550,13 +6550,13 @@
 					}, l && o && u.a.createElement(u.a.Fragment, null, u.a.createElement("h3", {
 						className: tc.a.sectionHeader,
 						role: "heading"
-					}, r.fbt._("Status", null, {
-						hk: "2DsuQN"
+					}, r.fbt._("Online Status", null, {
+						hk: "23SMHV"
 					})), u.a.createElement(ic, {
-						displayText: c ? r.fbt._("Online", null, {
-							hk: "3haTNl"
-						}) : r.fbt._("Hiding", null, {
-							hk: "3uxzWx"
+						displayText: c ? r.fbt._("On", null, {
+							hk: "3aW5MW"
+						}) : r.fbt._("Off", null, {
+							hk: "pRgYU"
 						}),
 						isEnabled: c,
 						onClick: () => {
@@ -11035,10 +11035,10 @@
 				r = n.n(s),
 				o = n("./node_modules/react-redux/es/index.js"),
 				a = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/helpers/userSnoovatar/index.ts"),
-				c = n("./src/reddit/selectors/experiments/presenceIndicator.ts"),
-				d = n("./src/reddit/selectors/user.ts"),
-				l = n("./src/lib/classNames/index.ts"),
+				i = n("./src/lib/classNames/index.ts"),
+				c = n("./src/reddit/helpers/userSnoovatar/index.ts"),
+				d = n("./src/reddit/selectors/experiments/presenceIndicator.ts"),
+				l = n("./src/reddit/selectors/user.ts"),
 				m = n("./src/reddit/icons/svgs/PresenceCircle/index.tsx"),
 				u = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				p = n.n(u);
@@ -11047,7 +11047,7 @@
 						showPresence: t
 					} = e;
 					return r.a.createElement(m.a, {
-						className: Object(l.a)(p.a.presenceDot, {
+						className: Object(i.a)(p.a.presenceDot, {
 							[p.a.isLit]: t
 						})
 					})
@@ -11065,11 +11065,11 @@
 				}).apply(this, arguments)
 			}
 			const v = Object(a.c)({
-					currentUser: d.i,
-					isNightMode: d.U,
-					isPresenceExpEnabled: c.a,
-					isPresenceUserPrefEnabled: d.gb,
-					shouldHideNSFW: d.B
+					currentUser: l.i,
+					isNightMode: l.U,
+					isPresenceExpEnabled: d.a,
+					isPresenceUserPrefEnabled: l.gb,
+					shouldHideNSFW: l.B
 				}),
 				x = Object(o.b)(v);
 			t.a = x(e => {
@@ -11078,14 +11078,15 @@
 					shouldShowPresenceIndicator: n,
 					isPresenceUserPrefEnabled: s,
 					isPresenceExpEnabled: o,
-					...a
-				} = e, c = Object(i.a)(null == t ? void 0 : t.accountIcon);
+					wrapperClassName: a,
+					...d
+				} = e, l = Object(c.a)(null == t ? void 0 : t.accountIcon);
 				return r.a.createElement("div", {
-					className: p.a.currentUserIconWrapper
-				}, c ? r.a.createElement(h.a, {
-					className: e.className,
-					headshot: t.accountIcon
-				}) : r.a.createElement(g.a, f({}, a, {
+					className: Object(i.a)(p.a.currentUserIconWrapper, a)
+				}, l ? r.a.createElement(h.a, {
+					headshot: t.accountIcon,
+					className: e.className
+				}) : r.a.createElement(g.a, f({}, d, {
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
@@ -17776,4 +17777,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~9f82fa34", "Governance~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Larg~9453fc9d", "Chat~Governance~Reddit", "ModListing~Reddit~StandalonePostPage", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f22721b0db84338f74b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3fc180cd48eec9574998.js.map

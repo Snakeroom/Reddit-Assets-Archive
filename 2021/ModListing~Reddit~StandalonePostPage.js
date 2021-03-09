@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit~StandalonePostPage.32a8698a9bd55ec210ca.js
-// Retrieved at 3/8/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit~StandalonePostPage.e25e9c2cc51072878fae.js
+// Retrieved at 3/9/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit~StandalonePostPage"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, i) {
@@ -929,7 +929,7 @@
 				headerIcon: t,
 				headshot: i
 			}) {
-				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+				return r.a.createElement("div", {
 					className: Object(l.a)(a.a.snoovatarWrapper, e)
 				}, r.a.createElement("div", {
 					className: a.a.snoovatarBackground
@@ -941,7 +941,7 @@
 					}),
 					className: a.a.snoovatarHeadshot,
 					src: i
-				}))))
+				})))
 			}
 		},
 		"./src/reddit/components/UserIcon/UserIcon.m.less": function(e, t, i) {
@@ -2675,4 +2675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit~StandalonePostPage.32a8698a9bd55ec210ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit~StandalonePostPage.e25e9c2cc51072878fae.js.map

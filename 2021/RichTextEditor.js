@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.7cfa20ad979325977f84.js
-// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.b64324669ab0f0ab524e.js
+// Retrieved at 3/9/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -3932,10 +3932,10 @@
 				s = o.n(n),
 				r = o("./node_modules/react-redux/es/index.js"),
 				a = o("./node_modules/reselect/es/index.js"),
-				i = o("./src/reddit/helpers/userSnoovatar/index.ts"),
-				c = o("./src/reddit/selectors/experiments/presenceIndicator.ts"),
-				d = o("./src/reddit/selectors/user.ts"),
-				l = o("./src/lib/classNames/index.ts"),
+				i = o("./src/lib/classNames/index.ts"),
+				c = o("./src/reddit/helpers/userSnoovatar/index.ts"),
+				d = o("./src/reddit/selectors/experiments/presenceIndicator.ts"),
+				l = o("./src/reddit/selectors/user.ts"),
 				u = o("./src/reddit/icons/svgs/PresenceCircle/index.tsx"),
 				m = o("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				p = o.n(m);
@@ -3944,7 +3944,7 @@
 						showPresence: t
 					} = e;
 					return s.a.createElement(u.a, {
-						className: Object(l.a)(p.a.presenceDot, {
+						className: Object(i.a)(p.a.presenceDot, {
 							[p.a.isLit]: t
 						})
 					})
@@ -3962,11 +3962,11 @@
 				}).apply(this, arguments)
 			}
 			const x = Object(a.c)({
-					currentUser: d.i,
-					isNightMode: d.U,
-					isPresenceExpEnabled: c.a,
-					isPresenceUserPrefEnabled: d.gb,
-					shouldHideNSFW: d.B
+					currentUser: l.i,
+					isNightMode: l.U,
+					isPresenceExpEnabled: d.a,
+					isPresenceUserPrefEnabled: l.gb,
+					shouldHideNSFW: l.B
 				}),
 				g = Object(r.b)(x);
 			t.a = g(e => {
@@ -3975,14 +3975,15 @@
 					shouldShowPresenceIndicator: o,
 					isPresenceUserPrefEnabled: n,
 					isPresenceExpEnabled: r,
-					...a
-				} = e, c = Object(i.a)(null == t ? void 0 : t.accountIcon);
+					wrapperClassName: a,
+					...d
+				} = e, l = Object(c.a)(null == t ? void 0 : t.accountIcon);
 				return s.a.createElement("div", {
-					className: p.a.currentUserIconWrapper
-				}, c ? s.a.createElement(b.a, {
-					className: e.className,
-					headshot: t.accountIcon
-				}) : s.a.createElement(f.a, _({}, a, {
+					className: Object(i.a)(p.a.currentUserIconWrapper, a)
+				}, l ? s.a.createElement(b.a, {
+					headshot: t.accountIcon,
+					className: e.className
+				}) : s.a.createElement(f.a, _({}, d, {
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
@@ -4522,4 +4523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.7cfa20ad979325977f84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b64324669ab0f0ab524e.js.map

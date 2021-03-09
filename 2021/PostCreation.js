@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.290c7ceb7ad487e5bef8.js
-// Retrieved at 3/8/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2c150b978c32ba66ccfe.js
+// Retrieved at 3/9/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ModListing~Reddit~StandalonePostPage"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -6796,10 +6796,10 @@
 				s = n.n(o),
 				r = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
-				a = n("./src/reddit/helpers/userSnoovatar/index.ts"),
-				l = n("./src/reddit/selectors/experiments/presenceIndicator.ts"),
-				c = n("./src/reddit/selectors/user.ts"),
-				d = n("./src/lib/classNames/index.ts"),
+				a = n("./src/lib/classNames/index.ts"),
+				l = n("./src/reddit/helpers/userSnoovatar/index.ts"),
+				c = n("./src/reddit/selectors/experiments/presenceIndicator.ts"),
+				d = n("./src/reddit/selectors/user.ts"),
 				u = n("./src/reddit/icons/svgs/PresenceCircle/index.tsx"),
 				m = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				p = n.n(m);
@@ -6808,7 +6808,7 @@
 						showPresence: t
 					} = e;
 					return s.a.createElement(u.a, {
-						className: Object(d.a)(p.a.presenceDot, {
+						className: Object(a.a)(p.a.presenceDot, {
 							[p.a.isLit]: t
 						})
 					})
@@ -6826,11 +6826,11 @@
 				}).apply(this, arguments)
 			}
 			const _ = Object(i.c)({
-					currentUser: c.i,
-					isNightMode: c.U,
-					isPresenceExpEnabled: l.a,
-					isPresenceUserPrefEnabled: c.gb,
-					shouldHideNSFW: c.B
+					currentUser: d.i,
+					isNightMode: d.U,
+					isPresenceExpEnabled: c.a,
+					isPresenceUserPrefEnabled: d.gb,
+					shouldHideNSFW: d.B
 				}),
 				x = Object(r.b)(_);
 			t.a = x(e => {
@@ -6839,14 +6839,15 @@
 					shouldShowPresenceIndicator: n,
 					isPresenceUserPrefEnabled: o,
 					isPresenceExpEnabled: r,
-					...i
-				} = e, l = Object(a.a)(null == t ? void 0 : t.accountIcon);
+					wrapperClassName: i,
+					...c
+				} = e, d = Object(l.a)(null == t ? void 0 : t.accountIcon);
 				return s.a.createElement("div", {
-					className: p.a.currentUserIconWrapper
-				}, l ? s.a.createElement(b.a, {
-					className: e.className,
-					headshot: t.accountIcon
-				}) : s.a.createElement(f.a, g({}, i, {
+					className: Object(a.a)(p.a.currentUserIconWrapper, i)
+				}, d ? s.a.createElement(b.a, {
+					headshot: t.accountIcon,
+					className: e.className
+				}) : s.a.createElement(f.a, g({}, c, {
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
@@ -6868,7 +6869,7 @@
 				headerIcon: t,
 				headshot: n
 			}) {
-				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+				return r.a.createElement("div", {
 					className: Object(i.a)(l.a.snoovatarWrapper, e)
 				}, r.a.createElement("div", {
 					className: l.a.snoovatarBackground
@@ -6880,7 +6881,7 @@
 					}),
 					className: l.a.snoovatarHeadshot,
 					src: n
-				}))))
+				})))
 			}
 		},
 		"./src/reddit/components/UserIcon/UserIcon.m.less": function(e, t, n) {
@@ -18811,4 +18812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.290c7ceb7ad487e5bef8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2c150b978c32ba66ccfe.js.map
