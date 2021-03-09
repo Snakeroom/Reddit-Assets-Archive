@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.ca8051aeb35773759790.js
-// Retrieved at 3/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.46e21d94e36841f512c7.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~SubredditWiki"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1071,6 +1071,39 @@
 		"./node_modules/uc.micro/properties/Any/regex.js": function(e, t) {
 			e.exports = /[\0-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/
 		},
+		"./node_modules/uuid/index.js": function(e, t, o) {
+			var n = o("./node_modules/uuid/v1.js"),
+				i = o("./node_modules/uuid/v4.js"),
+				r = i;
+			r.v1 = n, r.v4 = i, e.exports = r
+		},
+		"./node_modules/uuid/v1.js": function(e, t, o) {
+			var n, i, r = o("./node_modules/uuid/lib/rng-browser.js"),
+				s = o("./node_modules/uuid/lib/bytesToUuid.js"),
+				a = 0,
+				u = 0;
+			e.exports = function(e, t, o) {
+				var c = t && o || 0,
+					l = t || [],
+					d = (e = e || {}).node || n,
+					h = void 0 !== e.clockseq ? e.clockseq : i;
+				if (null == d || null == h) {
+					var p = r();
+					null == d && (d = n = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == h && (h = i = 16383 & (p[6] << 8 | p[7]))
+				}
+				var m = void 0 !== e.msecs ? e.msecs : (new Date).getTime(),
+					_ = void 0 !== e.nsecs ? e.nsecs : u + 1,
+					f = m - a + (_ - u) / 1e4;
+				if (f < 0 && void 0 === e.clockseq && (h = h + 1 & 16383), (f < 0 || m > a) && void 0 === e.nsecs && (_ = 0), _ >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				a = m, u = _, i = h;
+				var g = (1e4 * (268435455 & (m += 122192928e5)) + _) % 4294967296;
+				l[c++] = g >>> 24 & 255, l[c++] = g >>> 16 & 255, l[c++] = g >>> 8 & 255, l[c++] = 255 & g;
+				var v = m / 4294967296 * 1e4 & 268435455;
+				l[c++] = v >>> 8 & 255, l[c++] = 255 & v, l[c++] = v >>> 24 & 15 | 16, l[c++] = v >>> 16 & 255, l[c++] = h >>> 8 | 128, l[c++] = 255 & h;
+				for (var b = 0; b < 6; ++b) l[c + b] = d[b];
+				return t || s(l)
+			}
+		},
 		"./node_modules/webpack/buildin/amd-define.js": function(e, t) {
 			e.exports = function() {
 				throw new Error("define cannot be used indirect")
@@ -1078,4 +1111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.ca8051aeb35773759790.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~SubredditWiki.46e21d94e36841f512c7.js.map

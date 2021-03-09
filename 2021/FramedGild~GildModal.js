@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1b8c114708cfa718cd63.js
-// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e9a5748ee3d0cc29fe7d.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["FramedGild~GildModal", "gildActions"], {
+	["FramedGild~GildModal", "EconHelperActions", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
 			var n;
 			n = function() {
@@ -5211,4 +5211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1b8c114708cfa718cd63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e9a5748ee3d0cc29fe7d.js.map

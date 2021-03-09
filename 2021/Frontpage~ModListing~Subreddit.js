@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.d3ee55cda5b28e7a3a66.js
-// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.002f484203db5a536f1a.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -487,7 +487,7 @@
 				A = Object(a.c)({
 					dropdownIsOpen: Object(O.b)(N),
 					isInIcons2020: _.a,
-					postLayout: h.N,
+					postLayout: h.O,
 					redditStyle: h.A
 				}),
 				B = Object(i.b)(A, e => ({
@@ -1939,11 +1939,11 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return _
+				return C
 			})), s.d(t, "d", (function() {
-				return O
+				return k
 			})), s.d(t, "b", (function() {
-				return E
+				return P
 			}));
 			var n = s("./node_modules/react-redux/es/index.js"),
 				r = s("./node_modules/reselect/es/index.js"),
@@ -1961,45 +1961,57 @@
 				g = s("./src/reddit/components/PostList/Placeholder.tsx"),
 				f = s("./src/reddit/featureFlags/index.ts"),
 				w = s("./src/reddit/selectors/experiments/survey.ts"),
-				y = s("./src/reddit/selectors/listings.ts"),
-				v = s("./src/reddit/selectors/posts.ts"),
-				S = s("./src/reddit/selectors/subreddit.ts"),
-				x = s("./src/reddit/selectors/tracking.ts");
+				y = s("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				v = s("./src/reddit/selectors/listings.ts"),
+				S = s("./src/reddit/selectors/posts.ts"),
+				x = s("./src/reddit/selectors/subreddit.ts"),
+				_ = s("./src/reddit/selectors/tracking.ts");
 
-			function _() {
+			function C() {
 				return Object(m.t)({
 					currentProfileName: m.h,
 					isCommentPermalink: m.v,
 					isCommentsPage: m.w,
 					isFrontpage: m.y,
+					isPredictionsPage: m.L,
 					isProfilePostListing: m.I,
-					isTopicPage: m.M,
+					isTopicPage: m.N,
 					pageLayer: e => e
 				})
 			}
-			const C = _(),
-				O = {
-					apiError: y.c,
-					apiPending: y.d,
+			const O = C(),
+				k = {
+					apiError: v.c,
+					apiPending: v.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(m.N)(e, t),
-					loadMore: y.g,
-					postsById: (e, t) => Object(v.S)(e, {
+					layout: (e, t) => t.forcedLayout || Object(m.O)(e, t),
+					loadMore: (e, t) => t.isPredictionsPage && !Object(y.a)(e, t.listingKey) ? null : Object(v.g)(e, t),
+					postsById: (e, t) => Object(S.S)(e, {
 						...t
 					}),
 					postIds: Object(o.a)((e, {
 						listingKey: t,
 						listingName: s,
-						inSubredditOrProfile: n
-					}) => Object(v.F)(e, t, s, n)),
-					subredditsById: S.ab,
-					viewportDataLoaded: x.a,
-					pageReferrer: m.Q,
+						isPredictionsPage: n,
+						inSubredditOrProfile: r
+					}) => {
+						if (n) {
+							const n = Object(x.F)(e, s);
+							return Object(y.f)(e, {
+								subredditId: n,
+								listingKey: t
+							})
+						}
+						return Object(S.F)(e, t, s, r)
+					}),
+					subredditsById: x.ab,
+					viewportDataLoaded: _.a,
+					pageReferrer: m.R,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: w.d
 				},
-				k = Object(r.c)(O),
-				E = (e, {
+				E = Object(r.c)(k),
+				P = (e, {
 					isFrontpage: t
 				}) => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
@@ -2025,7 +2037,7 @@
 					},
 					surveyTriggerScrollCounted: () => e(Object(u.g)())
 				}),
-				P = Object(n.b)(k, E, (e, t, s) => ({
+				I = Object(n.b)(E, P, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
@@ -2034,7 +2046,7 @@
 						...e
 					})
 				}));
-			t.a = e => Object(p.c)(C(P(e)))
+			t.a = e => Object(p.c)(O(I(e)))
 		},
 		"./src/reddit/constants/listingSorts.ts": function(e, t, s) {
 			"use strict";
@@ -2665,4 +2677,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.d3ee55cda5b28e7a3a66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.002f484203db5a536f1a.js.map

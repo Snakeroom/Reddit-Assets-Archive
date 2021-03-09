@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.5ae29826a2054f36c877.js
-// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.744a709eec079b74a117.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["ChatMessageInput"], {
+	["ChatMessageInput", "EconHelperActions"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
 			"use strict";
@@ -1990,4 +1990,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.5ae29826a2054f36c877.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.744a709eec079b74a117.js.map

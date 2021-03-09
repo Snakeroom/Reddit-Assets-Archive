@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.3a4c60e96d62636a8fe8.js
-// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.a7e7f8d0a02eace9a0b9.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -213,8 +213,8 @@
 						return a && (e = i << 2, t = n[o], a > 0 && (c[e] = 255 & t), a > 1 && (c[e + 1] = t >> 8 & 255), a > 2 && (c[e + 2] = t >> 16 & 255)), c
 					};
 					var _ = function(e) {
-						var t, r, n, s, a, o, c, l, d, u, m, p, h, f, b, v, x, g, E, N, _, O, j, C, w, I, y, T, M, A, S, k, R, U, P, D, B, G, L, F, V, H, Y, W, X, q, z, J, K, Z, Q, $, ee, te, re, ne, se, ae, oe, ie, ce, le, de;
-						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], l = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], d = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | c >>> 31), r = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | o >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (l << 1 | d >>> 31), r = a ^ (d << 1 | l >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = o ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = l ^ (p << 1 | h >>> 31), r = d ^ (h << 1 | p >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | a >>> 31), r = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, f = e[0], b = e[1], q = e[11] << 4 | e[10] >>> 28, z = e[10] << 4 | e[11] >>> 28, T = e[20] << 3 | e[21] >>> 29, M = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, Y = e[41] << 18 | e[40] >>> 14, U = e[2] << 1 | e[3] >>> 31, P = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, x = e[12] << 12 | e[13] >>> 20, J = e[22] << 10 | e[23] >>> 22, K = e[23] << 10 | e[22] >>> 22, A = e[33] << 13 | e[32] >>> 19, S = e[32] << 13 | e[33] >>> 19, le = e[42] << 2 | e[43] >>> 30, de = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, D = e[14] << 6 | e[15] >>> 26, B = e[15] << 6 | e[14] >>> 26, g = e[25] << 11 | e[24] >>> 21, E = e[24] << 11 | e[25] >>> 21, Z = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, k = e[45] << 29 | e[44] >>> 3, R = e[44] << 29 | e[45] >>> 3, C = e[6] << 28 | e[7] >>> 4, w = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, G = e[26] << 25 | e[27] >>> 7, L = e[27] << 25 | e[26] >>> 7, N = e[36] << 21 | e[37] >>> 11, _ = e[37] << 21 | e[36] >>> 11, $ = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, W = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, I = e[18] << 20 | e[19] >>> 12, y = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, F = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, O = e[48] << 14 | e[49] >>> 18, j = e[49] << 14 | e[48] >>> 18, e[0] = f ^ ~v & g, e[1] = b ^ ~x & E, e[10] = C ^ ~I & T, e[11] = w ^ ~y & M, e[20] = U ^ ~D & G, e[21] = P ^ ~B & L, e[30] = W ^ ~q & J, e[31] = X ^ ~z & K, e[40] = te ^ ~ne & ae, e[41] = re ^ ~se & oe, e[2] = v ^ ~g & N, e[3] = x ^ ~E & _, e[12] = I ^ ~T & A, e[13] = y ^ ~M & S, e[22] = D ^ ~G & F, e[23] = B ^ ~L & V, e[32] = q ^ ~J & Z, e[33] = z ^ ~K & Q, e[42] = ne ^ ~ae & ie, e[43] = se ^ ~oe & ce, e[4] = g ^ ~N & O, e[5] = E ^ ~_ & j, e[14] = T ^ ~A & k, e[15] = M ^ ~S & R, e[24] = G ^ ~F & H, e[25] = L ^ ~V & Y, e[34] = J ^ ~Z & $, e[35] = K ^ ~Q & ee, e[44] = ae ^ ~ie & le, e[45] = oe ^ ~ce & de, e[6] = N ^ ~O & f, e[7] = _ ^ ~j & b, e[16] = A ^ ~k & C, e[17] = S ^ ~R & w, e[26] = F ^ ~H & U, e[27] = V ^ ~Y & P, e[36] = Z ^ ~$ & W, e[37] = Q ^ ~ee & X, e[46] = ie ^ ~le & te, e[47] = ce ^ ~de & re, e[8] = O ^ ~f & v, e[9] = j ^ ~b & x, e[18] = k ^ ~C & I, e[19] = R ^ ~w & y, e[28] = H ^ ~U & D, e[29] = Y ^ ~P & B, e[38] = $ ^ ~W & q, e[39] = ee ^ ~X & z, e[48] = le ^ ~te & ne, e[49] = de ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
+						var t, r, n, s, a, o, c, l, d, u, m, p, h, f, b, v, x, g, E, N, _, O, j, w, C, y, I, T, M, A, k, S, R, P, U, D, B, G, F, L, V, H, Y, W, X, q, z, K, J, Z, $, Q, ee, te, re, ne, se, ae, oe, ie, ce, le, de;
+						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], l = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], d = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | c >>> 31), r = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | o >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (l << 1 | d >>> 31), r = a ^ (d << 1 | l >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = o ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = l ^ (p << 1 | h >>> 31), r = d ^ (h << 1 | p >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | a >>> 31), r = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, f = e[0], b = e[1], q = e[11] << 4 | e[10] >>> 28, z = e[10] << 4 | e[11] >>> 28, T = e[20] << 3 | e[21] >>> 29, M = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, Y = e[41] << 18 | e[40] >>> 14, P = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, x = e[12] << 12 | e[13] >>> 20, K = e[22] << 10 | e[23] >>> 22, J = e[23] << 10 | e[22] >>> 22, A = e[33] << 13 | e[32] >>> 19, k = e[32] << 13 | e[33] >>> 19, le = e[42] << 2 | e[43] >>> 30, de = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, D = e[14] << 6 | e[15] >>> 26, B = e[15] << 6 | e[14] >>> 26, g = e[25] << 11 | e[24] >>> 21, E = e[24] << 11 | e[25] >>> 21, Z = e[34] << 15 | e[35] >>> 17, $ = e[35] << 15 | e[34] >>> 17, S = e[45] << 29 | e[44] >>> 3, R = e[44] << 29 | e[45] >>> 3, w = e[6] << 28 | e[7] >>> 4, C = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, G = e[26] << 25 | e[27] >>> 7, F = e[27] << 25 | e[26] >>> 7, N = e[36] << 21 | e[37] >>> 11, _ = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, W = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, y = e[18] << 20 | e[19] >>> 12, I = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, L = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, O = e[48] << 14 | e[49] >>> 18, j = e[49] << 14 | e[48] >>> 18, e[0] = f ^ ~v & g, e[1] = b ^ ~x & E, e[10] = w ^ ~y & T, e[11] = C ^ ~I & M, e[20] = P ^ ~D & G, e[21] = U ^ ~B & F, e[30] = W ^ ~q & K, e[31] = X ^ ~z & J, e[40] = te ^ ~ne & ae, e[41] = re ^ ~se & oe, e[2] = v ^ ~g & N, e[3] = x ^ ~E & _, e[12] = y ^ ~T & A, e[13] = I ^ ~M & k, e[22] = D ^ ~G & L, e[23] = B ^ ~F & V, e[32] = q ^ ~K & Z, e[33] = z ^ ~J & $, e[42] = ne ^ ~ae & ie, e[43] = se ^ ~oe & ce, e[4] = g ^ ~N & O, e[5] = E ^ ~_ & j, e[14] = T ^ ~A & S, e[15] = M ^ ~k & R, e[24] = G ^ ~L & H, e[25] = F ^ ~V & Y, e[34] = K ^ ~Z & Q, e[35] = J ^ ~$ & ee, e[44] = ae ^ ~ie & le, e[45] = oe ^ ~ce & de, e[6] = N ^ ~O & f, e[7] = _ ^ ~j & b, e[16] = A ^ ~S & w, e[17] = k ^ ~R & C, e[26] = L ^ ~H & P, e[27] = V ^ ~Y & U, e[36] = Z ^ ~Q & W, e[37] = $ ^ ~ee & X, e[46] = ie ^ ~le & te, e[47] = ce ^ ~de & re, e[8] = O ^ ~f & v, e[9] = j ^ ~b & x, e[18] = S ^ ~w & y, e[19] = R ^ ~C & I, e[28] = H ^ ~P & D, e[29] = Y ^ ~U & B, e[38] = Q ^ ~W & q, e[39] = ee ^ ~X & z, e[48] = le ^ ~te & ne, e[49] = de ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
 					};
 					if (s) e.exports = h;
 					else
@@ -429,6 +429,23 @@
 				return new n.BigNumber(o).toNumber()
 			}
 		},
+		"./src/reddit/actions/governance/errorToast.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return o
+			}));
+			var n = r("./src/reddit/actions/toaster.ts"),
+				s = r("./src/reddit/helpers/governanceErrorText/index.ts"),
+				a = r("./src/reddit/models/Toast/index.ts");
+
+			function o(e, t) {
+				e(Object(n.e)({
+					duration: 5e3,
+					kind: a.b.Error,
+					text: Object(s.a)(t)
+				}))
+			}
+		},
 		"./src/reddit/actions/governance/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -438,13 +455,13 @@
 			})), r.d(t, "c", (function() {
 				return O
 			})), r.d(t, "f", (function() {
-				return y
+				return I
 			})), r.d(t, "g", (function() {
 				return R
 			})), r.d(t, "d", (function() {
-				return U
-			})), r.d(t, "e", (function() {
 				return P
+			})), r.d(t, "e", (function() {
+				return U
 			})), r.d(t, "h", (function() {
 				return D
 			}));
@@ -470,22 +487,22 @@
 				_ = Object(s.a)(x.e),
 				O = (Object(s.a)(x.f), Object(s.a)(x.g), Object(s.a)(x.h)),
 				j = Object(s.a)(x.i),
-				C = Object(s.a)(x.j),
-				w = Object(s.a)(x.k),
-				I = Object(s.a)(x.q),
-				y = Object(s.a)(x.r),
+				w = Object(s.a)(x.j),
+				C = Object(s.a)(x.k),
+				y = Object(s.a)(x.q),
+				I = Object(s.a)(x.r),
 				T = Object(s.a)(x.s),
 				M = Object(s.a)(x.t),
 				A = Object(s.a)(x.u),
-				S = Object(s.a)(x.v),
-				k = Object(s.a)(x.w),
+				k = Object(s.a)(x.v),
+				S = Object(s.a)(x.w),
 				R = Object(s.a)(x.x),
-				U = (e, t) => async (r, n, {
+				P = (e, t) => async (r, n, {
 					apiContext: s,
 					gqlContext: a
 				}) => {
 					let o, c = n().polls.models[e];
-					if (r(C({
+					if (r(w({
 							pollId: e
 						})), (o = c.type === m.a.GA ? await ((e, t, r) => Object(u.a)(e, {
 								...d,
@@ -511,7 +528,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else r(w(o.body));
+						} else r(C(o.body));
 						const s = n();
 						if ((c = s.polls.models[e]) && Object(m.e)(c)) {
 							const {
@@ -523,7 +540,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(g.a)(r, o.error || o.errors[0].messsage)
-				}, P = (e, t) => async (r, s, {
+				}, U = (e, t) => async (r, s, {
 					apiContext: i
 				}) => {
 					r(T());
@@ -554,15 +571,15 @@
 						})), n.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && r(Object(o.f)())) : (r(I({
+					})), t && r(Object(o.f)())) : (r(y({
 						error: u.error
 					})), Object(g.a)(r, u.error))
 				}, D = e => async (t, r, {
 					apiContext: n
 				}) => {
-					t(S());
+					t(k());
 					const s = await Object(h.a)(n(), e);
-					s.ok ? t(k(s.body)) : t(A({
+					s.ok ? t(S(s.body)) : t(A({
 						error: s.error
 					}))
 				}
@@ -670,26 +687,26 @@
 				_ = r("./src/reddit/hooks/useTracking.ts"),
 				O = r("./src/reddit/models/Toast/index.ts"),
 				j = r("./src/reddit/selectors/crypto/claims.ts"),
-				C = r("./src/reddit/selectors/gov.ts"),
-				w = r("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.tsx"),
-				I = r("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				y = r("./src/reddit/components/SubredditIcon/index.tsx"),
+				w = r("./src/reddit/selectors/gov.ts"),
+				C = r("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.tsx"),
+				y = r("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				I = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				T = r("./src/reddit/selectors/subreddit.ts"),
 				M = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				A = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
-				S = r("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/Approval.m.less"),
-				k = r.n(S);
+				k = r("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/Approval.m.less"),
+				S = r.n(k);
 
 			function R(e) {
 				const t = Object(o.e)(t => Object(j.b)(t, e)),
 					r = t && t.pointsToClaim;
 				if (!r) throw new Error("Expected claim amount to approve");
 				const s = Object(o.e)(t => Object(T.T)(t, e)),
-					i = Object(o.e)(t => Object(C.n)(t, e));
+					i = Object(o.e)(t => Object(w.n)(t, e));
 				return a.a.createElement(A.a, {
 					subredditId: e.subredditId,
-					image: a.a.createElement(y.b, {
-						className: k.a.subredditIcon,
+					image: a.a.createElement(I.b, {
+						className: S.a.subredditIcon,
 						subredditOrProfile: s
 					}),
 					title: n.fbt._("Claim {pointsName}", [n.fbt._param("pointsName", i)], {
@@ -701,7 +718,7 @@
 					pointsAmount: r
 				})
 			}
-			const U = e => a.a.createElement(M.b, {
+			const P = e => a.a.createElement(M.b, {
 				values: [
 					[n.fbt._("Karma earned", null, {
 						hk: "46NXlD"
@@ -717,31 +734,31 @@
 				} = e, s = Object(o.d)(), c = Object(_.a)(), {
 					currentPointsAmount: l,
 					nextPointsClaim: d,
-					pointsName: y,
+					pointsName: I,
 					tokenConversion: T,
 					walletProvider: M
 				} = Object(o.e)(Object(i.c)({
-					currentPointsAmount: t => Object(C.h)(t, e),
+					currentPointsAmount: t => Object(w.h)(t, e),
 					nextPointsClaim: t => Object(j.b)(t, e),
-					pointsName: t => Object(C.n)(t, e),
-					tokenConversion: t => Object(C.m)(t, e),
-					walletProvider: t => Object(C.r)(t, e)
+					pointsName: t => Object(w.n)(t, e),
+					tokenConversion: t => Object(w.m)(t, e),
+					walletProvider: t => Object(w.r)(t, e)
 				}));
 				if (!d) throw new Error("No available claim to make");
-				if (!d.address) return a.a.createElement(w.a, {
+				if (!d.address) return a.a.createElement(C.a, {
 					onClose: t
 				});
 				if (!M) throw new Error("No wallet provider");
 				const A = Object(x.b)(M.extra.contracts.distribution.address, d.round, d.address, d.userKarma, d.signature),
-					S = e => {
-						c(Object(N.a)("points_claim", r, k, e))
+					k = e => {
+						c(Object(N.a)("points_claim", r, S, e))
 					},
-					k = Object(E.b)(d.pointsToClaim, T);
-				return a.a.createElement(I.a, {
+					S = Object(E.b)(d.pointsToClaim, T);
+				return a.a.createElement(y.a, {
 					approvalOverview: a.a.createElement(R, {
 						subredditId: r
 					}),
-					approvalDetails: a.a.createElement(U, {
+					approvalDetails: a.a.createElement(P, {
 						transaction: A
 					}),
 					onClose: t,
@@ -754,7 +771,7 @@
 							await Object(g.a)(t, r), await e(Object(b.a)(Object(h.h)({
 								subredditId: n
 							}), async e => {
-								const t = Object(C.h)(e(), {
+								const t = Object(w.h)(e(), {
 									subredditId: n
 								});
 								return s !== t || null
@@ -762,24 +779,24 @@
 								forceFetch: !0
 							}))
 						}(s, M, e.hash, r, l).then(() => {
-							c(Object(N.b)("points_claim", r, k)), s(function(e) {
+							c(Object(N.b)("points_claim", r, S)), s(function(e) {
 								return Object(f.e)(Object(f.d)(n.fbt._("Your {pointsName} are ready!", [n.fbt._param("pointsName", e)], {
 									hk: "2LpLml"
 								}), O.b.SuccessCommunityGreen))
-							}(y))
+							}(I))
 						}).catch(e => {
-							S(e.toString()), s(function(e) {
+							k(e.toString()), s(function(e) {
 								return Object(f.e)(Object(f.d)(n.fbt._("Failed to claim your {pointsName}. Try again later", [n.fbt._param("pointsName", e)], {
 									hk: "ch1Bl"
 								}), O.b.Error))
-							}(y))
+							}(I))
 						}).finally(() => {
 							s(u({
 								subredditId: r
 							}))
 						})
 					},
-					onTransactionFailure: S,
+					onTransactionFailure: k,
 					subredditId: r,
 					transaction: A,
 					transactionIntent: Object(v.c)(r)
@@ -897,9 +914,9 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return w
+				return C
 			})), r.d(t, "c", (function() {
-				return I
+				return y
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./node_modules/lodash/uniqueId.js"),
@@ -998,10 +1015,10 @@
 					}, s || e))
 				}
 			}
-			const C = Object(d.b)(O, e => ({
+			const w = Object(d.b)(O, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
 				}))(j),
-				w = e => {
+				C = e => {
 					const {
 						className: t,
 						errorClassName: r,
@@ -1011,19 +1028,19 @@
 					} = e, o = a.length ? a : s ? [s] : [];
 					return o.length ? l.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => l.a.createElement(C, {
+					}, o.map((e, t) => l.a.createElement(w, {
 						className: r,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				I = e => l.a.createElement(w, {
+				y = e => l.a.createElement(C, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = C
+			t.b = w
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1266,6 +1283,31 @@
 				} : e)
 			}
 		},
+		"./src/reddit/helpers/governanceErrorText/index.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return a
+			})), r.d(t, "b", (function() {
+				return o
+			}));
+			r("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = r("./node_modules/fbt/lib/FbtPublic.js");
+
+			function s(e) {
+				return e[0].toUpperCase() + e.slice(1)
+			}
+
+			function a(e) {
+				return "extra" in e ? "string" == typeof e.extra ? e.extra : Object.keys(e.extra).map(t => e.extra[t]).map(s).join(" ") : n.fbt._("Something went wrong. Please try again later.", null, {
+					hk: "16ibYk"
+				})
+			}
+
+			function o(e) {
+				const t = `${e.type} (${e.code})`;
+				return "message" in e ? `${t}: ${e.message}` : t
+			}
+		},
 		"./src/reddit/hooks/useSafeState.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -1320,7 +1362,19 @@
 				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
 			}));
 			t.b = c
+		},
+		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, r) {
+			e.exports = {
+				inlineRow: "XZK-LTFT5CgGo9MvPQQsy"
+			}
+		},
+		"./src/reddit/layout/row/Inline/index.tsx": function(e, t, r) {
+			"use strict";
+			var n = r("./src/lib/lessComponent.tsx"),
+				s = r("./src/reddit/layout/row/Inline/index.m.less"),
+				a = r.n(s);
+			t.a = n.a.div("inlineRow", a.a)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.3a4c60e96d62636a8fe8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.a7e7f8d0a02eace9a0b9.js.map

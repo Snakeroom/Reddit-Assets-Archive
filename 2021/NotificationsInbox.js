@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.de3289ccf5361011bd34.js
-// Retrieved at 3/8/2021, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.4a8608a6d5411684ec28.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/graphql/operations/DeleteInboxNotifications.json": function(e) {
@@ -1102,4 +1102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.de3289ccf5361011bd34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.4a8608a6d5411684ec28.js.map

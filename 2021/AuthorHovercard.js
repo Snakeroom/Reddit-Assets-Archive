@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.0c6c48d0289fc9073de5.js
-// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.aa9b0c910117afc5e2bf.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
@@ -259,8 +259,8 @@
 					}, n ? this.renderNotifications() : e ? o.a.createElement(v.a, null) : o.a.createElement(x.a, null))
 				}
 			}
-			var E = n("./src/reddit/controls/InternalLink/index.tsx"),
-				y = n("./src/reddit/helpers/trackers/inbox.ts"),
+			var y = n("./src/reddit/controls/InternalLink/index.tsx"),
+				E = n("./src/reddit/helpers/trackers/inbox.ts"),
 				A = n("./src/reddit/hooks/useTracking.ts"),
 				k = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
 				O = n("./src/reddit/icons/svgs/Settings/index.tsx");
@@ -290,7 +290,7 @@
 						className: p.a.topNavLinks
 					}, o.a.createElement("span", {
 						className: p.a.messagesLinkContainer
-					}, o.a.createElement(E.a, {
+					}, o.a.createElement(y.a, {
 						className: Object(r.a)(p.a.messagesLink, {
 							[p.a.mActive]: t
 						}),
@@ -305,7 +305,7 @@
 					})), e.isInboxMarkAllAsReadEnabled && o.a.createElement("button", {
 						className: p.a.navLink,
 						onClick: e.markAllAsRead
-					}, o.a.createElement(M, null)), o.a.createElement(E.a, {
+					}, o.a.createElement(M, null)), o.a.createElement(y.a, {
 						className: p.a.navLink,
 						onClick: e.sendInboxClickSettings,
 						to: "/settings/notifications"
@@ -313,7 +313,7 @@
 				},
 				S = e => o.a.createElement("div", {
 					className: p.a.bottomBar
-				}, o.a.createElement(E.a, {
+				}, o.a.createElement(y.a, {
 					className: p.a.bottomLink,
 					onClick: e.sendInboxClickSeeAll,
 					to: "/notifications"
@@ -336,22 +336,22 @@
 					}, o.a.createElement(F, {
 						isInboxMarkAllAsReadEnabled: s,
 						markAllAsRead: () => {
-							e.markAllAsRead(), t(Object(y.d)({
+							e.markAllAsRead(), t(Object(E.d)({
 								isMiniInbox: !0
 							}))
 						},
 						messagesBadgeCount: a,
 						onMessagesClick: () => {
-							t(Object(y.k)({
+							t(Object(E.k)({
 								badgeCount: i,
-								tab: y.c.Messages
-							})), t(Object(y.e)()), n()
+								tab: E.c.Messages
+							})), t(Object(E.e)()), n()
 						},
-						sendInboxClickSettings: () => t(Object(y.j)(y.a.MiniInbox))
+						sendInboxClickSettings: () => t(Object(E.j)(E.a.MiniInbox))
 					}), o.a.createElement(N, j({}, e, {
 						isPending: r
 					})), (d || r) && o.a.createElement(S, {
-						sendInboxClickSeeAll: () => t(Object(y.i)())
+						sendInboxClickSeeAll: () => t(Object(E.i)())
 					})))
 				}
 		},
@@ -869,6 +869,18 @@
 				})))
 			}
 		},
+		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
+			e.exports = {
+				inlineRow: "XZK-LTFT5CgGo9MvPQQsy"
+			}
+		},
+		"./src/reddit/layout/row/Inline/index.tsx": function(e, t, n) {
+			"use strict";
+			var i = n("./src/lib/lessComponent.tsx"),
+				s = n("./src/reddit/layout/row/Inline/index.m.less"),
+				o = n.n(s);
+			t.a = i.a.div("inlineRow", o.a)
+		},
 		"./src/reddit/pages/NotificationsInbox/Content/EmptyState.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1050,4 +1062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.0c6c48d0289fc9073de5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.aa9b0c910117afc5e2bf.js.map

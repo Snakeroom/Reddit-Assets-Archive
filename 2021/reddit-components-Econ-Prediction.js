@@ -1,444 +1,38 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.66f10a3c7d41a029d5b7.js
-// Retrieved at 3/9/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.3cb76dd3d1595f1c5432.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
-		"./node_modules/lodash/_LazyWrapper.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_baseCreate.js"),
-				x = r("./node_modules/lodash/_baseLodash.js"),
-				k = 4294967295;
-
-			function n(i) {
-				this.__wrapped__ = i, this.__actions__ = [], this.__dir__ = 1, this.__filtered__ = !1, this.__iteratees__ = [], this.__takeCount__ = k, this.__views__ = []
-			}
-			n.prototype = t(x.prototype), n.prototype.constructor = n, i.exports = n
-		},
-		"./node_modules/lodash/_LodashWrapper.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_baseCreate.js"),
-				x = r("./node_modules/lodash/_baseLodash.js");
-
-			function k(i, a) {
-				this.__wrapped__ = i, this.__actions__ = [], this.__chain__ = !!a, this.__index__ = 0, this.__values__ = void 0
-			}
-			k.prototype = t(x.prototype), k.prototype.constructor = k, i.exports = k
-		},
-		"./node_modules/lodash/_baseLodash.js": function(i, a) {
-			i.exports = function() {}
-		},
-		"./node_modules/lodash/_baseSetData.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/identity.js"),
-				x = r("./node_modules/lodash/_metaMap.js"),
-				k = x ? function(i, a) {
-					return x.set(i, a), i
-				} : t;
-			i.exports = k
-		},
-		"./node_modules/lodash/_composeArgs.js": function(i, a) {
-			var r = Math.max;
-			i.exports = function(i, a, t, x) {
-				for (var k = -1, n = i.length, o = t.length, s = -1, e = a.length, m = r(n - o, 0), l = Array(e + m), c = !x; ++s < e;) l[s] = a[s];
-				for (; ++k < o;)(c || k < n) && (l[t[k]] = i[k]);
-				for (; m--;) l[s++] = i[k++];
-				return l
-			}
-		},
-		"./node_modules/lodash/_composeArgsRight.js": function(i, a) {
-			var r = Math.max;
-			i.exports = function(i, a, t, x) {
-				for (var k = -1, n = i.length, o = -1, s = t.length, e = -1, m = a.length, l = r(n - s, 0), c = Array(l + m), p = !x; ++k < l;) c[k] = i[k];
-				for (var h = k; ++e < m;) c[h + e] = a[e];
-				for (; ++o < s;)(p || k < n) && (c[h + t[o]] = i[k++]);
-				return c
-			}
-		},
-		"./node_modules/lodash/_countHolders.js": function(i, a) {
-			i.exports = function(i, a) {
-				for (var r = i.length, t = 0; r--;) i[r] === a && ++t;
-				return t
-			}
-		},
-		"./node_modules/lodash/_createBind.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_createCtor.js"),
-				x = r("./node_modules/lodash/_root.js"),
-				k = 1;
-			i.exports = function(i, a, r) {
-				var n = a & k,
-					o = t(i);
-				return function a() {
-					return (this && this !== x && this instanceof a ? o : i).apply(n ? r : this, arguments)
-				}
-			}
-		},
-		"./node_modules/lodash/_createCtor.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_baseCreate.js"),
-				x = r("./node_modules/lodash/isObject.js");
-			i.exports = function(i) {
-				return function() {
-					var a = arguments;
-					switch (a.length) {
-						case 0:
-							return new i;
-						case 1:
-							return new i(a[0]);
-						case 2:
-							return new i(a[0], a[1]);
-						case 3:
-							return new i(a[0], a[1], a[2]);
-						case 4:
-							return new i(a[0], a[1], a[2], a[3]);
-						case 5:
-							return new i(a[0], a[1], a[2], a[3], a[4]);
-						case 6:
-							return new i(a[0], a[1], a[2], a[3], a[4], a[5]);
-						case 7:
-							return new i(a[0], a[1], a[2], a[3], a[4], a[5], a[6])
-					}
-					var r = t(i.prototype),
-						k = i.apply(r, a);
-					return x(k) ? k : r
-				}
-			}
-		},
-		"./node_modules/lodash/_createCurry.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_apply.js"),
-				x = r("./node_modules/lodash/_createCtor.js"),
-				k = r("./node_modules/lodash/_createHybrid.js"),
-				n = r("./node_modules/lodash/_createRecurry.js"),
-				o = r("./node_modules/lodash/_getHolder.js"),
-				s = r("./node_modules/lodash/_replaceHolders.js"),
-				e = r("./node_modules/lodash/_root.js");
-			i.exports = function(i, a, r) {
-				var m = x(i);
-				return function x() {
-					for (var l = arguments.length, c = Array(l), p = l, h = o(x); p--;) c[p] = arguments[p];
-					var d = l < 3 && c[0] !== h && c[l - 1] !== h ? [] : s(c, h);
-					return (l -= d.length) < r ? n(i, a, k, x.placeholder, void 0, c, d, void 0, void 0, r - l) : t(this && this !== e && this instanceof x ? m : i, this, c)
-				}
-			}
-		},
-		"./node_modules/lodash/_createHybrid.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_composeArgs.js"),
-				x = r("./node_modules/lodash/_composeArgsRight.js"),
-				k = r("./node_modules/lodash/_countHolders.js"),
-				n = r("./node_modules/lodash/_createCtor.js"),
-				o = r("./node_modules/lodash/_createRecurry.js"),
-				s = r("./node_modules/lodash/_getHolder.js"),
-				e = r("./node_modules/lodash/_reorder.js"),
-				m = r("./node_modules/lodash/_replaceHolders.js"),
-				l = r("./node_modules/lodash/_root.js"),
-				c = 1,
-				p = 2,
-				h = 8,
-				d = 16,
-				f = 128,
-				u = 512;
-			i.exports = function i(a, r, y, G, E, A, D, B, V, b) {
-				var F = r & f,
-					g = r & c,
-					v = r & p,
-					P = r & (h | d),
-					S = r & u,
-					T = v ? void 0 : n(a);
-				return function c() {
-					for (var p = arguments.length, h = Array(p), d = p; d--;) h[d] = arguments[d];
-					if (P) var f = s(c),
-						u = k(h, f);
-					if (G && (h = t(h, G, E, P)), A && (h = x(h, A, D, P)), p -= u, P && p < b) {
-						var _ = m(h, f);
-						return o(a, r, i, c.placeholder, y, h, _, B, V, b - p)
-					}
-					var O = g ? y : this,
-						j = v ? O[a] : a;
-					return p = h.length, B ? h = e(h, B) : S && p > 1 && h.reverse(), F && V < p && (h.length = V), this && this !== l && this instanceof c && (j = T || n(j)), j.apply(O, h)
-				}
-			}
-		},
-		"./node_modules/lodash/_createPartial.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_apply.js"),
-				x = r("./node_modules/lodash/_createCtor.js"),
-				k = r("./node_modules/lodash/_root.js"),
-				n = 1;
-			i.exports = function(i, a, r, o) {
-				var s = a & n,
-					e = x(i);
-				return function a() {
-					for (var x = -1, n = arguments.length, m = -1, l = o.length, c = Array(l + n), p = this && this !== k && this instanceof a ? e : i; ++m < l;) c[m] = o[m];
-					for (; n--;) c[m++] = arguments[++x];
-					return t(p, s ? r : this, c)
-				}
-			}
-		},
-		"./node_modules/lodash/_createRecurry.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_isLaziable.js"),
-				x = r("./node_modules/lodash/_setData.js"),
-				k = r("./node_modules/lodash/_setWrapToString.js"),
-				n = 1,
-				o = 2,
-				s = 4,
-				e = 8,
-				m = 32,
-				l = 64;
-			i.exports = function(i, a, r, c, p, h, d, f, u, y) {
-				var G = a & e;
-				a |= G ? m : l, (a &= ~(G ? l : m)) & s || (a &= ~(n | o));
-				var E = [i, a, p, G ? h : void 0, G ? d : void 0, G ? void 0 : h, G ? void 0 : d, f, u, y],
-					A = r.apply(void 0, E);
-				return t(i) && x(A, E), A.placeholder = c, k(A, i, a)
-			}
-		},
-		"./node_modules/lodash/_createWrap.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_baseSetData.js"),
-				x = r("./node_modules/lodash/_createBind.js"),
-				k = r("./node_modules/lodash/_createCurry.js"),
-				n = r("./node_modules/lodash/_createHybrid.js"),
-				o = r("./node_modules/lodash/_createPartial.js"),
-				s = r("./node_modules/lodash/_getData.js"),
-				e = r("./node_modules/lodash/_mergeData.js"),
-				m = r("./node_modules/lodash/_setData.js"),
-				l = r("./node_modules/lodash/_setWrapToString.js"),
-				c = r("./node_modules/lodash/toInteger.js"),
-				p = "Expected a function",
-				h = 1,
-				d = 2,
-				f = 8,
-				u = 16,
-				y = 32,
-				G = 64,
-				E = Math.max;
-			i.exports = function(i, a, r, A, D, B, V, b) {
-				var F = a & d;
-				if (!F && "function" != typeof i) throw new TypeError(p);
-				var g = A ? A.length : 0;
-				if (g || (a &= ~(y | G), A = D = void 0), V = void 0 === V ? V : E(c(V), 0), b = void 0 === b ? b : c(b), g -= D ? D.length : 0, a & G) {
-					var v = A,
-						P = D;
-					A = D = void 0
-				}
-				var S = F ? void 0 : s(i),
-					T = [i, a, r, A, D, v, P, B, V, b];
-				if (S && e(T, S), i = T[0], a = T[1], r = T[2], A = T[3], D = T[4], !(b = T[9] = void 0 === T[9] ? F ? 0 : i.length : E(T[9] - g, 0)) && a & (f | u) && (a &= ~(f | u)), a && a != h) _ = a == f || a == u ? k(i, a, b) : a != y && a != (h | y) || D.length ? n.apply(void 0, T) : o(i, a, r, A);
-				else var _ = x(i, a, r);
-				return l((S ? t : m)(_, T), i, a)
-			}
-		},
-		"./node_modules/lodash/_getData.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_metaMap.js"),
-				x = r("./node_modules/lodash/noop.js"),
-				k = t ? function(i) {
-					return t.get(i)
-				} : x;
-			i.exports = k
-		},
-		"./node_modules/lodash/_getFuncName.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_realNames.js"),
-				x = Object.prototype.hasOwnProperty;
-			i.exports = function(i) {
-				for (var a = i.name + "", r = t[a], k = x.call(t, a) ? r.length : 0; k--;) {
-					var n = r[k],
-						o = n.func;
-					if (null == o || o == i) return n.name
-				}
-				return a
-			}
-		},
-		"./node_modules/lodash/_getHolder.js": function(i, a) {
-			i.exports = function(i) {
-				return i.placeholder
-			}
-		},
-		"./node_modules/lodash/_getWrapDetails.js": function(i, a) {
-			var r = /\{\n\/\* \[wrapped with (.+)\] \*/,
-				t = /,? & /;
-			i.exports = function(i) {
-				var a = i.match(r);
-				return a ? a[1].split(t) : []
-			}
-		},
-		"./node_modules/lodash/_insertWrapDetails.js": function(i, a) {
-			var r = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/;
-			i.exports = function(i, a) {
-				var t = a.length;
-				if (!t) return i;
-				var x = t - 1;
-				return a[x] = (t > 1 ? "& " : "") + a[x], a = a.join(t > 2 ? ", " : " "), i.replace(r, "{\n/* [wrapped with " + a + "] */\n")
-			}
-		},
-		"./node_modules/lodash/_isLaziable.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_LazyWrapper.js"),
-				x = r("./node_modules/lodash/_getData.js"),
-				k = r("./node_modules/lodash/_getFuncName.js"),
-				n = r("./node_modules/lodash/wrapperLodash.js");
-			i.exports = function(i) {
-				var a = k(i),
-					r = n[a];
-				if ("function" != typeof r || !(a in t.prototype)) return !1;
-				if (i === r) return !0;
-				var o = x(r);
-				return !!o && i === o[0]
-			}
-		},
-		"./node_modules/lodash/_mergeData.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_composeArgs.js"),
-				x = r("./node_modules/lodash/_composeArgsRight.js"),
-				k = r("./node_modules/lodash/_replaceHolders.js"),
-				n = "__lodash_placeholder__",
-				o = 1,
-				s = 2,
-				e = 4,
-				m = 8,
-				l = 128,
-				c = 256,
-				p = Math.min;
-			i.exports = function(i, a) {
-				var r = i[1],
-					h = a[1],
-					d = r | h,
-					f = d < (o | s | l),
-					u = h == l && r == m || h == l && r == c && i[7].length <= a[8] || h == (l | c) && a[7].length <= a[8] && r == m;
-				if (!f && !u) return i;
-				h & o && (i[2] = a[2], d |= r & o ? 0 : e);
-				var y = a[3];
-				if (y) {
-					var G = i[3];
-					i[3] = G ? t(G, y, a[4]) : y, i[4] = G ? k(i[3], n) : a[4]
-				}
-				return (y = a[5]) && (G = i[5], i[5] = G ? x(G, y, a[6]) : y, i[6] = G ? k(i[5], n) : a[6]), (y = a[7]) && (i[7] = y), h & l && (i[8] = null == i[8] ? a[8] : p(i[8], a[8])), null == i[9] && (i[9] = a[9]), i[0] = a[0], i[1] = d, i
-			}
-		},
-		"./node_modules/lodash/_metaMap.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_WeakMap.js"),
-				x = t && new t;
-			i.exports = x
-		},
-		"./node_modules/lodash/_realNames.js": function(i, a) {
-			i.exports = {}
-		},
-		"./node_modules/lodash/_reorder.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_copyArray.js"),
-				x = r("./node_modules/lodash/_isIndex.js"),
-				k = Math.min;
-			i.exports = function(i, a) {
-				for (var r = i.length, n = k(a.length, r), o = t(i); n--;) {
-					var s = a[n];
-					i[n] = x(s, r) ? o[s] : void 0
-				}
-				return i
-			}
-		},
-		"./node_modules/lodash/_replaceHolders.js": function(i, a) {
-			var r = "__lodash_placeholder__";
-			i.exports = function(i, a) {
-				for (var t = -1, x = i.length, k = 0, n = []; ++t < x;) {
-					var o = i[t];
-					o !== a && o !== r || (i[t] = r, n[k++] = t)
-				}
-				return n
-			}
-		},
-		"./node_modules/lodash/_setData.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_baseSetData.js"),
-				x = r("./node_modules/lodash/_shortOut.js")(t);
-			i.exports = x
-		},
-		"./node_modules/lodash/_setWrapToString.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_getWrapDetails.js"),
-				x = r("./node_modules/lodash/_insertWrapDetails.js"),
-				k = r("./node_modules/lodash/_setToString.js"),
-				n = r("./node_modules/lodash/_updateWrapDetails.js");
-			i.exports = function(i, a, r) {
-				var o = a + "";
-				return k(i, x(o, n(t(o), r)))
-			}
-		},
-		"./node_modules/lodash/_updateWrapDetails.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_arrayEach.js"),
-				x = r("./node_modules/lodash/_arrayIncludes.js"),
-				k = [
-					["ary", 128],
-					["bind", 1],
-					["bindKey", 2],
-					["curry", 8],
-					["curryRight", 16],
-					["flip", 512],
-					["partial", 32],
-					["partialRight", 64],
-					["rearg", 256]
-				];
-			i.exports = function(i, a) {
-				return t(k, (function(r) {
-					var t = "_." + r[0];
-					a & r[1] && !x(i, t) && i.push(t)
-				})), i.sort()
-			}
-		},
-		"./node_modules/lodash/_wrapperClone.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_LazyWrapper.js"),
-				x = r("./node_modules/lodash/_LodashWrapper.js"),
-				k = r("./node_modules/lodash/_copyArray.js");
-			i.exports = function(i) {
-				if (i instanceof t) return i.clone();
-				var a = new x(i.__wrapped__, i.__chain__);
-				return a.__actions__ = k(i.__actions__), a.__index__ = i.__index__, a.__values__ = i.__values__, a
-			}
-		},
-		"./node_modules/lodash/curry.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_createWrap.js"),
-				x = 8;
-
-			function k(i, a, r) {
-				var n = t(i, x, void 0, void 0, void 0, void 0, void 0, a = r ? void 0 : a);
-				return n.placeholder = k.placeholder, n
-			}
-			k.placeholder = {}, i.exports = k
-		},
-		"./node_modules/lodash/wrapperLodash.js": function(i, a, r) {
-			var t = r("./node_modules/lodash/_LazyWrapper.js"),
-				x = r("./node_modules/lodash/_LodashWrapper.js"),
-				k = r("./node_modules/lodash/_baseLodash.js"),
-				n = r("./node_modules/lodash/isArray.js"),
-				o = r("./node_modules/lodash/isObjectLike.js"),
-				s = r("./node_modules/lodash/_wrapperClone.js"),
-				e = Object.prototype.hasOwnProperty;
-
-			function m(i) {
-				if (o(i) && !n(i) && !(i instanceof t)) {
-					if (i instanceof x) return i;
-					if (e.call(i, "__wrapped__")) return s(i)
-				}
-				return new x(i)
-			}
-			m.prototype = k.prototype, m.prototype.constructor = m, i.exports = m
-		},
 		"./node_modules/uuid/index.js": function(i, a, r) {
-			var t = r("./node_modules/uuid/v1.js"),
-				x = r("./node_modules/uuid/v4.js"),
-				k = x;
-			k.v1 = t, k.v4 = x, i.exports = k
+			var x = r("./node_modules/uuid/v1.js"),
+				t = r("./node_modules/uuid/v4.js"),
+				k = t;
+			k.v1 = x, k.v4 = t, i.exports = k
 		},
 		"./node_modules/uuid/v1.js": function(i, a, r) {
-			var t, x, k = r("./node_modules/uuid/lib/rng-browser.js"),
+			var x, t, k = r("./node_modules/uuid/lib/rng-browser.js"),
 				n = r("./node_modules/uuid/lib/bytesToUuid.js"),
 				o = 0,
-				s = 0;
+				m = 0;
 			i.exports = function(i, a, r) {
-				var e = a && r || 0,
-					m = a || [],
-					l = (i = i || {}).node || t,
-					c = void 0 !== i.clockseq ? i.clockseq : x;
+				var s = a && r || 0,
+					e = a || [],
+					l = (i = i || {}).node || x,
+					c = void 0 !== i.clockseq ? i.clockseq : t;
 				if (null == l || null == c) {
 					var p = k();
-					null == l && (l = t = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == c && (c = x = 16383 & (p[6] << 8 | p[7]))
+					null == l && (l = x = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == c && (c = t = 16383 & (p[6] << 8 | p[7]))
 				}
 				var h = void 0 !== i.msecs ? i.msecs : (new Date).getTime(),
-					d = void 0 !== i.nsecs ? i.nsecs : s + 1,
-					f = h - o + (d - s) / 1e4;
-				if (f < 0 && void 0 === i.clockseq && (c = c + 1 & 16383), (f < 0 || h > o) && void 0 === i.nsecs && (d = 0), d >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				o = h, s = d, x = c;
-				var u = (1e4 * (268435455 & (h += 122192928e5)) + d) % 4294967296;
-				m[e++] = u >>> 24 & 255, m[e++] = u >>> 16 & 255, m[e++] = u >>> 8 & 255, m[e++] = 255 & u;
+					f = void 0 !== i.nsecs ? i.nsecs : m + 1,
+					d = h - o + (f - m) / 1e4;
+				if (d < 0 && void 0 === i.clockseq && (c = c + 1 & 16383), (d < 0 || h > o) && void 0 === i.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				o = h, m = f, t = c;
+				var u = (1e4 * (268435455 & (h += 122192928e5)) + f) % 4294967296;
+				e[s++] = u >>> 24 & 255, e[s++] = u >>> 16 & 255, e[s++] = u >>> 8 & 255, e[s++] = 255 & u;
 				var y = h / 4294967296 * 1e4 & 268435455;
-				m[e++] = y >>> 8 & 255, m[e++] = 255 & y, m[e++] = y >>> 24 & 15 | 16, m[e++] = y >>> 16 & 255, m[e++] = c >>> 8 | 128, m[e++] = 255 & c;
-				for (var G = 0; G < 6; ++G) m[e + G] = l[G];
-				return a || n(m)
+				e[s++] = y >>> 8 & 255, e[s++] = 255 & y, e[s++] = y >>> 24 & 15 | 16, e[s++] = y >>> 16 & 255, e[s++] = c >>> 8 | 128, e[s++] = 255 & c;
+				for (var G = 0; G < 6; ++G) e[s + G] = l[G];
+				return a || n(e)
 			}
 		},
 		"./src/graphql/operations/AddPredictionDrafts.json": function(i) {
@@ -465,374 +59,114 @@
 		"./src/graphql/operations/VotePrediction.json": function(i) {
 			i.exports = JSON.parse('{"id":"1712829dfb21"}')
 		},
-		"./src/lib/bigNumberUtils/percent.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return x
-			}));
-			var t = r("./node_modules/bignumber.js/bignumber.js");
-
-			function x(i, a) {
-				const r = new t.BigNumber(i),
-					x = new t.BigNumber(a),
-					k = new t.BigNumber(r.dividedBy(x)),
-					n = new t.BigNumber("100").multipliedBy(k);
-				return new t.BigNumber(n).toNumber()
-			}
-		},
-		"./src/reddit/actions/badge.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "c", (function() {
-				return n
-			})), r.d(a, "b", (function() {
-				return o
-			})), r.d(a, "a", (function() {
-				return s
-			})), r.d(a, "f", (function() {
-				return e
-			})), r.d(a, "d", (function() {
-				return m
-			})), r.d(a, "e", (function() {
-				return l
-			})), r.d(a, "i", (function() {
-				return c
-			})), r.d(a, "g", (function() {
-				return p
-			})), r.d(a, "h", (function() {
-				return h
-			})), r.d(a, "j", (function() {
-				return d
-			})), r.d(a, "k", (function() {
-				return V
-			})), r.d(a, "l", (function() {
-				return b
-			})), r.d(a, "m", (function() {
-				return F
-			}));
-			var t = r("./src/lib/makeActionCreator/index.ts"),
-				x = r("./src/reddit/actions/governance/errorToast.ts"),
-				k = r("./src/reddit/endpoints/governance/badges.ts");
-			const n = "BADGE__BADGE_MODAL_OPENED",
-				o = "BADGE__BADGE_APPLICATION_SUCCESS",
-				s = "BADGE__BADGE_APPLICATION_FAILURE",
-				e = "BADGE__SUBREDDIT_BADGES_FETCH_SUCCESS",
-				m = "BADGE__SUBREDDIT_BADGES_FETCH_FAILURE",
-				l = "BADGE__SUBREDDIT_BADGES_FETCH_PENDING",
-				c = "BADGE__USER_BADGES_FETCH_SUCCESS",
-				p = "BADGE__USER_BADGES_FETCH_FAILURE",
-				h = "BADGE__USER_BADGES_FETCH_PENDING",
-				d = Object(t.a)(n),
-				f = Object(t.a)(o),
-				u = Object(t.a)(s),
-				y = (Object(t.a)("BADGE__BADGE_APPLICATION_PENDING"), Object(t.a)(e)),
-				G = Object(t.a)(m),
-				E = Object(t.a)(l),
-				A = Object(t.a)(c),
-				D = Object(t.a)(p),
-				B = Object(t.a)(h),
-				V = ({
-					badgeIds: i,
-					subredditId: a
-				}) => async (r, t, {
-					apiContext: n
-				}) => {
-					const o = t(),
-						s = o.user.account;
-					if (s) {
-						const t = (o.users.appliedBadges[s.id] || {})[a] || [],
-							e = i.length ? i[0] : t[0],
-							m = !!i.length;
-						r(f({
-							badgeIds: i,
-							subredditId: a,
-							userId: s.id
-						}));
-						const l = await Object(k.a)(n(), a, e, m);
-						l.ok || (r(u({
-							badgeIds: i,
-							subredditId: a,
-							error: l.error,
-							previousBadgeIds: t,
-							userId: s.id
-						})), Object(x.a)(r, l.error))
-					}
-				}, b = ({
-					subredditId: i,
-					userIds: a
-				}) => async (r, t, {
-					apiContext: x
-				}) => {
-					r(E({
-						subredditId: i
-					}));
-					const n = await Object(k.b)(x(), i, a);
-					n.ok ? r(y({
-						...n.body,
-						subredditId: i
-					})) : r(G({
-						subredditId: i,
-						error: n.error
-					}))
-				}, F = ({
-					subredditId: i
-				}) => async (a, r, {
-					apiContext: t
-				}) => {
-					const x = r().user.account;
-					if (x) {
-						a(B({
-							subredditId: i
-						}));
-						const r = await Object(k.c)(t(), i, x.id);
-						r.ok ? a(A({
-							...r.body,
-							subredditId: i
-						})) : a(D({
-							subredditId: i,
-							error: r.error
-						}))
-					}
-				}
-		},
-		"./src/reddit/actions/economics/helpers/index.ts": function(i, a, r) {
-			"use strict";
-			r.r(a), r.d(a, "fetchAll", (function() {
-				return h
-			})), r.d(a, "promptUserToBuyMoreCoins", (function() {
-				return d
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var t = r("./node_modules/lodash/curry.js"),
-				x = r.n(t),
-				k = r("./src/reddit/actions/badge.ts"),
-				n = r("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
-				o = r("./src/reddit/actions/governance/communityDetails.ts"),
-				s = r("./src/reddit/actions/governance/publicWalletsFetched.ts"),
-				e = r("./src/reddit/featureFlags/index.ts"),
-				m = r("./src/lib/initializeClient/installReducer.ts"),
-				l = r("./src/reddit/reducers/features/comments/index.ts");
-			Object(m.a)({
-				features: {
-					comments: l.a
-				}
-			});
-			const c = {
-					badgesroyaletest: "t5_socj8",
-					ethtrader: "t5_37jgj",
-					fortnitebr: "t5_3oeyf",
-					funkygoose: "t5_kzsl3"
-				},
-				p = x()((i, a) => a.some(a => e.d[a](i))),
-				h = i => async (a, r, {
-					apiContext: t
-				}) => {
-					const {
-						commentIds: x = [],
-						postIds: e = [],
-						skip: m = []
-					} = i;
-					let l = i.subredditId;
-					if (!l) {
-						i.subredditName && (l = c[i.subredditName.toLowerCase()])
-					}
-					if (!l) return;
-					const h = [],
-						d = r(),
-						f = p(d),
-						u = d.features.comments.models,
-						y = d.posts.models,
-						G = new Set(d.user.account ? [d.user.account.id] : []);
-					e.forEach(i => {
-						const a = y[i];
-						a && G.add(a.authorId)
-					}), x.forEach(i => {
-						const a = u[i];
-						a && G.add(a.authorId)
-					});
-					const E = Array.from(G);
-					!m.includes("badges") && E.length && f(["spBadges"]) && h.push(a(Object(k.l)({
-						subredditId: l,
-						userIds: E
-					}))), !m.includes("communityDetails") && f(["spPoints", "spSpecialMemberships"]) && h.push(a(Object(o.a)({
-						subredditId: l
-					}))), !m.includes("subscription") && f(["spSpecialMemberships"]) && h.push(a(Object(n.g)(l))), !m.includes("wallets") && E.length && f(["spPoints"]) && h.push(a(Object(s.a)({
-						subredditId: l,
-						userIds: E
-					}))), await Promise.all(h)
-				};
-
-			function d() {
-				window.open("/coins", "_blank")
-			}
-		},
-		"./src/reddit/actions/economics/me/constants.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return t
-			})), r.d(a, "b", (function() {
-				return x
-			})), r.d(a, "c", (function() {
-				return k
-			}));
-			const t = "ECONOMICS__ME__ME_DATA_SUCCESS",
-				x = "ECONOMICS__ME__POINTS_COPY_REQUESTED",
-				k = "ECONOMICS__ME__POINTS_COPY_SUCCESS"
-		},
-		"./src/reddit/actions/economics/me/thunkedActions.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "b", (function() {
-				return c
-			})), r.d(a, "a", (function() {
-				return p
-			}));
-			var t = r("./src/lib/constants/index.ts"),
-				x = r("./src/lib/makeRequest/index.ts"),
-				k = r("./src/config.ts"),
-				n = r("./src/reddit/endpoints/governance/requester.ts");
-			var o = r("./src/lib/makeActionCreator/index.ts"),
-				s = r("./src/reddit/actions/economics/me/constants.ts");
-			const e = Object(o.a)(s.a),
-				m = Object(o.a)(s.b),
-				l = Object(o.a)(s.c),
-				c = i => async (a, r, {
-					apiContext: t
-				}) => {
-					const x = i && i.includeMemberships || !1,
-						o = i && i.forceFetch || !1,
-						s = r();
-					if (!s.economics.me.fetched || x && !s.economics.me.data.specialMemberships || o) {
-						const i = await
-						function(i, a) {
-							return Object(n.a)(i, {
-								method: "get",
-								endpoint: `${k.a.metaUrl}/users/me${a?"?fields=specialMemberships":""}`
-							})
-						}(t(), x);
-						if (i.ok) {
-							const r = i.body;
-							x && !r.specialMemberships && (r.specialMemberships = {}), a(e(r))
-						}
-					}
-				}, p = () => async (i, a) => {
-					const r = a(),
-						k = r.economics.me.data;
-					if (!k) throw new Error("me data required for copy to be fetched");
-					if (!r.economics.pointsCopy.fetched) {
-						i(m());
-						const a = `https://${k.pointsDocsBaseUrl}v1.json?web`,
-							r = await Object(x.b)({
-								endpoint: a,
-								method: t.cb.GET
-							});
-						r.ok && r.body && i(l(r.body))
-					}
-				}
-		},
 		"./src/reddit/actions/economics/predictions/index.ts": function(i, a, r) {
 			"use strict";
 			r.d(a, "a", (function() {
-				return h
-			})), r.d(a, "b", (function() {
 				return d
-			})), r.d(a, "d", (function() {
-				return f
 			})), r.d(a, "c", (function() {
 				return u
+			})), r.d(a, "e", (function() {
+				return y
+			})), r.d(a, "d", (function() {
+				return G
+			})), r.d(a, "b", (function() {
+				return B
 			}));
 			r("./node_modules/uuid/index.js");
-			var t = r("./src/lib/initializeClient/installReducer.ts"),
-				x = r("./src/reddit/reducers/features/predictions/index.ts"),
+			var x = r("./src/lib/initializeClient/installReducer.ts"),
+				t = r("./src/reddit/reducers/features/predictions/index.ts"),
 				k = r("./src/lib/makeActionCreator/index.ts"),
 				n = r("./src/reddit/endpoints/economics/predictions.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/predictions.ts"),
-				s = r("./src/reddit/selectors/posts.ts"),
-				e = (r("./src/reddit/selectors/subreddit.ts"), r("./src/reddit/selectors/user.ts"));
+				m = r("./src/reddit/selectors/posts.ts"),
+				s = r("./src/reddit/selectors/subreddit.ts"),
+				e = r("./src/reddit/selectors/user.ts");
 			r("./src/reddit/selectors/postCreations.ts");
-			Object(t.a)({
+			Object(x.a)({
 				features: {
-					predictions: x.a
+					predictions: t.a
 				}
 			});
-			r("./src/reddit/selectors/features/predictions/tournaments/index.ts");
-			var m = r("./src/reddit/actions/economics/predictions/constants.ts");
-			Object(t.a)({
+			var l = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				c = r("./src/reddit/actions/economics/predictions/constants.ts");
+			Object(x.a)({
 				features: {
-					predictions: x.a
+					predictions: t.a
 				}
 			});
-			const l = Object(k.a)(m.d),
-				c = Object(k.a)(m.f),
-				p = Object(k.a)(m.e),
-				h = (i, a, r, t) => async (x, k, {
+			const p = Object(k.a)(c.d),
+				h = Object(k.a)(c.f),
+				f = Object(k.a)(c.e),
+				d = (i, a, r, x) => async (t, k, {
 					gqlContext: o
 				}) => {
-					const s = Object(e.J)(k()),
-						m = await Object(n.f)(o(), {
+					const m = Object(e.J)(k()),
+						s = await Object(n.f)(o(), {
 							subredditId: i,
 							period: a,
 							top: r,
-							includeCurrentRank: s,
-							tournamentId: t
+							includeCurrentRank: m,
+							tournamentId: x
 						});
-					if (m.error || !m.ok) throw new Error("Failed to fetch subreddit top predictors");
+					if (s.error || !s.ok) throw new Error("Failed to fetch subreddit top predictors");
 					const {
-						subredditInfoById: c
-					} = m.body.data;
-					if (!c || !c.predictionWinners) throw new Error("Subreddit has no prediction winners");
+						subredditInfoById: l
+					} = s.body.data;
+					if (!l || !l.predictionWinners) throw new Error("Subreddit has no prediction winners");
 					const {
-						predictionWinners: p
-					} = c, h = {
+						predictionWinners: c
+					} = l, h = {
 						subredditId: i,
-						...p
+						...c
 					};
-					return x(l(h)), h
-				}, d = i => async (a, r, {
-					gqlContext: t
+					return t(p(h)), h
+				}, u = i => async (a, r, {
+					gqlContext: x
 				}) => {
-					const x = r(),
-						k = Object(s.U)(x, {
+					const t = r(),
+						k = Object(m.U)(t, {
 							postId: i,
 							disallowProfile: !0
 						});
 					if (!k) throw new Error("Post does not belong to a subreddit");
-					const e = await Object(n.e)(t(), k.name, Object(o.a)(x));
-					if (e.error || !e.ok) throw new Error("Failed to fetch coin packs");
+					const s = await Object(n.e)(x(), k.name, Object(o.a)(t));
+					if (s.error || !s.ok) throw new Error("Failed to fetch coin packs");
 					const {
-						subredditInfoByName: m
-					} = e.body.data;
-					if (!m || !m.predictionCoinPackages.length) throw new Error("Subreddit has no coin packs");
-					return m.predictionCoinPackages
-				}, f = ({
+						subredditInfoByName: e
+					} = s.body.data;
+					if (!e || !e.predictionCoinPackages.length) throw new Error("Subreddit has no coin packs");
+					return e.predictionCoinPackages
+				}, y = ({
 					coinPackageId: i,
 					optionId: a,
 					postId: r,
-					price: t
-				}) => async (x, k, {
+					price: x
+				}) => async (t, k, {
 					gqlContext: o
 				}) => {
-					const s = await Object(n.j)(o(), {
+					const m = await Object(n.j)(o(), {
 						coinPackageId: i,
 						optionId: a,
 						postId: r,
-						price: t
+						price: x
 					});
-					if (s.error || !s.ok) throw new Error("Failed to make prediction");
+					if (m.error || !m.ok) throw new Error("Failed to make prediction");
 					const {
-						votePrediction: e
-					} = s.body.data;
-					if (!e) throw new Error("Failed to create prediction vote");
-					return x(c({
+						votePrediction: s
+					} = m.body.data;
+					if (!s) throw new Error("Failed to create prediction vote");
+					return t(h({
 						pollId: r,
-						prediction: e.poll,
-						price: t
-					})), e.poll
-				}, u = ({
+						prediction: s.poll,
+						price: x
+					})), s.poll
+				}, G = ({
 					optionId: i,
 					postId: a
-				}) => async (r, t, {
-					gqlContext: x
+				}) => async (r, x, {
+					gqlContext: t
 				}) => {
-					const k = await Object(n.h)(x(), {
+					const k = await Object(n.h)(t(), {
 							optionId: i,
 							postId: a
 						}),
@@ -840,352 +174,41 @@
 							resolvePrediction: o
 						} = k.body.data;
 					if (!(null == o ? void 0 : o.poll)) throw new Error("Failed to resolve prediction");
-					return r(p({
+					return r(f({
 						pollId: a,
 						prediction: o.poll
 					})), o.poll
-				};
-			Object(k.a)(m.b), Object(k.a)(m.c), Object(k.a)(m.a), Object(k.a)(m.g), Object(k.a)(m.h)
-		},
-		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return o
-			})), r.d(a, "b", (function() {
-				return s
-			})), r.d(a, "c", (function() {
-				return e
-			})), r.d(a, "d", (function() {
-				return m
-			})), r.d(a, "e", (function() {
-				return l
-			})), r.d(a, "f", (function() {
-				return c
-			})), r.d(a, "g", (function() {
-				return p
-			})), r.d(a, "h", (function() {
-				return h
-			})), r.d(a, "i", (function() {
-				return d
-			})), r.d(a, "j", (function() {
-				return f
-			}));
-			var t = r("./src/lib/makeActionCreator/index.ts"),
-				x = r("./src/reddit/actions/modal.ts"),
-				k = r("./src/reddit/constants/modals.ts"),
-				n = r("./src/reddit/actions/economics/subredditPremium/constants.ts");
-			const o = Object(t.a)(n.a),
-				s = Object(t.a)(n.b),
-				e = Object(t.a)(n.c),
-				m = Object(t.a)(n.d),
-				l = Object(t.a)(n.e),
-				c = Object(t.a)(n.f),
-				p = Object(t.a)(n.g),
-				h = Object(t.a)(n.h),
-				d = Object(t.a)(n.i),
-				f = i => Object(x.h)(k.a.SUBREDDIT_PREMIUM_UPLOAD_MODAL, {
-					uploadAssetType: i
-				})
-		},
-		"./src/reddit/actions/economics/subredditPremium/thunkedActions.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return B
-			})), r.d(a, "g", (function() {
-				return V
-			})), r.d(a, "b", (function() {
-				return b
-			})), r.d(a, "d", (function() {
-				return F
-			})), r.d(a, "e", (function() {
-				return g
-			})), r.d(a, "c", (function() {
-				return v
-			})), r.d(a, "f", (function() {
-				return P
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var t = r("./node_modules/lodash/forOwn.js"),
-				x = r.n(t),
-				k = r("./src/reddit/actions/governance/errorToast.ts"),
-				n = r("./src/reddit/endpoints/economics/emojis.ts"),
-				o = r("./src/reddit/endpoints/economics/specialMembership.ts"),
-				s = r("./src/reddit/endpoints/economics/subredditPremium.ts"),
-				e = r("./src/reddit/endpoints/governance/badges.ts"),
-				m = r("./src/config.ts"),
-				l = r("./src/reddit/endpoints/governance/requester.ts");
-
-			function c(i, a, r) {
-				return Object(l.a)(i, {
-					method: "get",
-					endpoint: `${m.a.metaUrl}/products/${a}?owners=${r}` + "&types=emotes_pack,giphy"
-				})
-			}
-			var p = r("./src/reddit/models/Badge/index.ts"),
-				h = r("./src/reddit/models/Badge/managementPage.ts"),
-				d = r("./src/reddit/models/Product/index.ts"),
-				f = r("./src/reddit/reducers/economics/subredditPremium/index.ts"),
-				u = r("./src/reddit/selectors/economics.ts"),
-				y = r("./src/reddit/selectors/products.ts"),
-				G = r("./src/reddit/actions/economics/me/thunkedActions.ts"),
-				E = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts");
-
-			function A(i) {
-				return !!i && "removeBadge" === i.type
-			}
-
-			function D(i) {
-				if (!A(i)) return i
-			}
-			const B = () => async (i, a, {
-				apiContext: r
-			}) => {
-				if (!a().user.account) return;
-				await i(Object(G.b)({
-					includeMemberships: !0
-				}));
-				const t = a().economics.me.data.specialMemberships || {},
-					x = Object.keys(t);
-				if (x.length) {
-					const a = await Object(o.e)(r(), x);
-					a.ok && i(Object(E.g)(a.body))
-				}
-			}, V = (i, a) => async (r, t, {
-				apiContext: x
-			}) => {
-				const k = t().user.account,
-					n = t().economics.subredditPremium[i],
-					o = !n || n.status !== f.a.Fetched || a;
-				if (k && o) {
-					const a = await Object(s.a)(x(), i, k.id);
-					r(Object(E.i)(a))
-				}
-			}, b = i => async (a, r, {
-				apiContext: t
-			}) => {
-				const x = r(),
-					n = x.user.account,
-					o = Object(u.f)(x, i.subredditId),
-					s = Object.keys(o).map(i => o[i]).filter(Boolean);
-				if (n && i.badge) {
-					let r, x;
-					r = i.placement === p.a.First ? o[h.a.Loyalty] : i.placement === p.a.Second ? o[h.a.Achievement] : o[h.a.Cosmetic], a(Object(E.a)({
-						...i,
-						badge: D(i.badge),
-						currentAppliedBadges: s,
-						userId: n.id
-					})), A(i.badge) && r ? x = await Object(e.a)(t(), i.subredditId, r.id, !1) : A(i.badge) || (x = await Object(e.a)(t(), i.subredditId, i.badge.id)), x && !x.ok && (a(Object(E.a)({
-						...i,
-						badge: r,
-						currentAppliedBadges: s,
-						userId: n.id
-					})), Object(k.a)(a, x.error))
-				}
-			}, F = (i, a) => async (r, t, {
-				apiContext: x
-			}) => {
-				await r(V(i, !0));
-				const k = t().economics.subredditPremium[i];
-				if (k && k.status === f.a.Fetched) {
-					const t = k.data.userOwnedBadges.find(i => i.type === a.id);
-					t && (r(b({
-						badge: t,
-						subredditId: i,
-						placement: t.placement
-					})), r(Object(E.d)(h.c.MyBadges)))
-				}
-			}, g = i => async (a, r, {
-				apiContext: t
-			}) => {
-				const o = r().user.account,
-					s = !r().economics.emotes[i],
-					e = !r().economics.gifs[i];
-				if (o && (s || e)) {
-					const [r, s] = await Promise.all([Object(n.b)(t(), i), c(t(), i, o.id)]);
-					if (!s.ok) return void Object(k.a)(a, s.error);
-					const e = {
-						emotes: [],
-						emoteCollections: r.ok ? r.body : {},
-						giphy: []
-					};
-					x()(s.body, i => {
-						i.type === d.a.EmotesPack ? e.emotes.push(i) : i.type === d.a.Giphy && e.giphy.push(i)
-					}), a(Object(E.e)({
-						subredditId: i,
-						products: e
-					}))
-				}
-			}, v = (i, a, r) => async (t, x, {
-				apiContext: k
-			}) => {
-				if (await t(V(i, !0)), r && a) {
-					const r = x(),
-						k = Object(u.f)(r, i),
-						n = Object(y.a)(r, a);
-					if (!k[Object(h.d)(n.placement)] && n) {
-						const a = Object(u.k)(r, {
-							subredditId: i,
-							badge: n
-						});
-						a && await t(b({
-							badge: a,
-							subredditId: i
-						}))
-					}
-					t(Object(E.c)({
-						subredditId: i,
-						initialView: h.c.MyBadges
-					}))
-				}
-			}, P = i => async (a, r, {
-				apiContext: t
-			}) => {
-				const {
-					wallet: x
-				} = await Object(o.c)(t(), i);
-				a(Object(E.f)({
-					wallet: x
-				})), await a(V(i.subredditId, !0))
-			}
-		},
-		"./src/reddit/actions/governance/communityDetails.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return o
-			}));
-			var t = r("./src/lib/makeActionCreator/index.ts"),
-				x = r("./src/reddit/endpoints/governance/community.ts"),
-				k = r("./src/reddit/actions/governance/constants.ts");
-			const n = Object(t.a)(k.a),
-				o = ({
-					subredditId: i
-				}) => async (a, r, {
-					apiContext: t
+				}, E = Object(k.a)(c.b), A = Object(k.a)(c.c), B = i => async (a, r, {
+					gqlContext: x
 				}) => {
-					const k = await Object(x.a)(t(), {
-						subredditId: i
+					const t = r(),
+						k = Object(s.F)(t, i);
+					if (Object(l.e)(t, {
+							subredditId: k
+						})) return Object(l.d)(t, {
+						subredditId: k
 					});
-					k.ok && a(n({
-						subredditId: i,
-						...k.body
-					}))
-				}
-		},
-		"./src/reddit/actions/governance/constants.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return t
-			})), r.d(a, "b", (function() {
-				return x
-			})), r.d(a, "c", (function() {
-				return k
-			})), r.d(a, "d", (function() {
-				return n
-			})), r.d(a, "e", (function() {
-				return o
-			})), r.d(a, "f", (function() {
-				return s
-			})), r.d(a, "g", (function() {
-				return e
-			})), r.d(a, "h", (function() {
-				return m
-			})), r.d(a, "i", (function() {
-				return l
-			})), r.d(a, "j", (function() {
-				return c
-			})), r.d(a, "k", (function() {
-				return p
-			})), r.d(a, "l", (function() {
-				return h
-			})), r.d(a, "m", (function() {
-				return d
-			})), r.d(a, "n", (function() {
-				return f
-			})), r.d(a, "o", (function() {
-				return u
-			})), r.d(a, "p", (function() {
-				return y
-			})), r.d(a, "q", (function() {
-				return G
-			})), r.d(a, "r", (function() {
-				return E
-			})), r.d(a, "s", (function() {
-				return A
-			})), r.d(a, "t", (function() {
-				return D
-			})), r.d(a, "u", (function() {
-				return B
-			})), r.d(a, "v", (function() {
-				return V
-			})), r.d(a, "w", (function() {
-				return b
-			})), r.d(a, "x", (function() {
-				return F
-			}));
-			const t = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
-				x = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
-				k = "GOVERNANCE__NEW_TOP_MOD_SUGGESTED",
-				n = "GOVERNANCE__OPT_OUT_MODAL_OPENED",
-				o = "POLL_VOTE_SUCCESS",
-				s = "GOVERNANCE__PROPOSAL_CREATION_FAILURE",
-				e = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
-				m = "GOVERNANCE__PROPOSAL_CREATION_SUCCESS",
-				l = "GOVERNANCE__PROPOSAL_OPTION_VOTE_FAILURE",
-				c = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
-				p = "GOVERNANCE__PROPOSAL_OPTION_VOTE_SUCCESS",
-				h = "GOVERNANCE__PUBLIC_WALLET_INFO_FAILURE",
-				d = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
-				f = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
-				u = "GOVERNANCE__RELEASE_NOTES_MODAL_OPENED",
-				y = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
-				G = "GOVERNANCE__TRANSFER_FAILURE",
-				E = "GOVERNANCE__TRANSFER_MODAL_OPENED",
-				A = "GOVERNANCE__TRANSFER_PENDING",
-				D = "GOVERNANCE__TRANSFER_SUCCESS",
-				B = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				V = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				b = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				F = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
-		},
-		"./src/reddit/actions/governance/errorToast.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return n
-			}));
-			var t = r("./src/reddit/actions/toaster.ts"),
-				x = r("./src/reddit/helpers/governanceErrorText/index.ts"),
-				k = r("./src/reddit/models/Toast/index.ts");
-
-			function n(i, a) {
-				i(Object(t.e)({
-					duration: 5e3,
-					kind: k.b.Error,
-					text: Object(x.a)(a)
-				}))
-			}
-		},
-		"./src/reddit/actions/governance/publicWalletsFetched.ts": function(i, a, r) {
-			"use strict";
-			var t = r("./src/lib/makeActionCreator/index.ts"),
-				x = r("./src/reddit/endpoints/governance/wallet.ts"),
-				k = r("./src/reddit/actions/governance/constants.ts");
-			const n = Object(t.a)(k.m),
-				o = Object(t.a)(k.n),
-				s = Object(t.a)(k.l);
-			a.a = i => async (a, r, {
-				apiContext: t
-			}) => {
-				a(n({
-					subredditId: i.subredditId
-				}));
-				const k = await Object(x.b)(t(), i);
-				k.ok ? a(o({
-					subredditId: i.subredditId,
-					...k.body
-				})) : a(s({
-					error: k.error
-				}))
-			}
+					a(E({
+						subredditId: k
+					}));
+					const o = await Object(n.g)(x(), {
+						subredditName: i,
+						isLatestOnly: !0,
+						isIncludingPredictions: !0,
+						isIncludingParticipants: !0
+					});
+					if (o.error || !o.ok) throw new Error("Failed to fetch tournaments");
+					const {
+						subredditInfoByName: m
+					} = o.body.data;
+					if (!m.predictionTournaments) return [];
+					const e = m.predictionTournaments;
+					return a(A({
+						subredditId: k,
+						tournaments: e
+					})), e
+				};
+			Object(k.a)(c.a), Object(k.a)(c.g), Object(k.a)(c.h)
 		},
 		"./src/reddit/components/Econ/CoinsModalHeader/index.m.less": function(i, a, r) {
 			i.exports = {
@@ -1207,59 +230,59 @@
 			r.d(a, "a", (function() {
 				return l
 			}));
-			var t = r("./node_modules/react/index.js"),
-				x = r.n(t),
+			var x = r("./node_modules/react/index.js"),
+				t = r.n(x),
 				k = r("./src/reddit/components/Econ/CoinsModalHeader/index.m.less"),
 				n = r.n(k),
 				o = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				s = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				e = r("./src/reddit/icons/svgs/Plus/index.tsx");
+				m = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				s = r("./src/reddit/icons/svgs/Plus/index.tsx");
 			const {
-				fbt: m
+				fbt: e
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
 			function l({
 				onAddCoins: i,
 				onCancel: a,
 				title: r,
-				userCoins: t
+				userCoins: x
 			}) {
-				return x.a.createElement("div", {
+				return t.a.createElement("div", {
 					className: n.a.gildHeader
-				}, x.a.createElement("button", {
+				}, t.a.createElement("button", {
 					className: n.a.closeBtn,
 					onClick: a
-				}, x.a.createElement(o.b, {
+				}, t.a.createElement(o.b, {
 					className: n.a.closeBtnIcon
-				})), x.a.createElement("div", {
+				})), t.a.createElement("div", {
 					className: n.a.headerText
-				}, r), x.a.createElement("button", {
+				}, r), t.a.createElement("button", {
 					className: n.a.coinButton,
 					onClick: i
-				}, x.a.createElement("div", {
+				}, t.a.createElement("div", {
 					className: n.a.coinBalanceIndicator,
 					tabIndex: -1
-				}, x.a.createElement(s.a, {
+				}, t.a.createElement(m.a, {
 					className: n.a.coinIcon
-				}), x.a.createElement("div", {
+				}), t.a.createElement("div", {
 					className: n.a.coinBalance
-				}, (t || 0).toLocaleString())), x.a.createElement("div", {
+				}, (x || 0).toLocaleString())), t.a.createElement("div", {
 					className: n.a.addCoins,
 					tabIndex: -1
-				}, x.a.createElement(e.a, {
+				}, t.a.createElement(s.a, {
 					className: n.a.plusIcon
 				}))))
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/EducationMessage/constants.ts": function(i, a, r) {
 			"use strict";
-			var t;
+			var x;
 			r.d(a, "a", (function() {
-					return t
+					return x
 				})),
 				function(i) {
 					i.nonDismissable = "predictionEducationNonDismissable", i.creation = "predictionEducationCreation", i.feature = "predictionEducationFeature"
-				}(t || (t = {}))
+				}(x || (x = {}))
 		},
 		"./src/reddit/components/Econ/Prediction/EducationMessage/index.m.less": function(i, a, r) {
 			i.exports = {
@@ -1276,14 +299,14 @@
 			r.d(a, "a", (function() {
 				return c
 			}));
-			var t = r("./node_modules/react/index.js"),
-				x = r.n(t),
+			var x = r("./node_modules/react/index.js"),
+				t = r.n(x),
 				k = r("./src/reddit/hooks/useLocalStorage.ts"),
 				n = r("./src/reddit/controls/Button/index.tsx"),
 				o = r("./src/reddit/icons/svgs/Close/index.tsx"),
-				s = r("./src/reddit/components/Econ/Prediction/EducationMessage/constants.ts"),
-				e = r("./src/reddit/components/Econ/Prediction/EducationMessage/index.m.less"),
-				m = r.n(e);
+				m = r("./src/reddit/components/Econ/Prediction/EducationMessage/constants.ts"),
+				s = r("./src/reddit/components/Econ/Prediction/EducationMessage/index.m.less"),
+				e = r.n(s);
 			const {
 				fbt: l
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1292,35 +315,35 @@
 				message: i,
 				newBadge: a,
 				onClose: r,
-				onView: e,
-				storageKey: c = s.a.nonDismissable,
+				onView: s,
+				storageKey: c = m.a.nonDismissable,
 				title: p
 			}) {
-				const h = c !== s.a.nonDismissable,
-					[d, f] = Object(k.a)(c, !h || !1),
-					[u, y] = Object(t.useState)(!1);
-				return Object(t.useEffect)(() => {
-					d || u || !e || (e(), y(!0))
-				}, [d, u, e]), h && d ? null : x.a.createElement("div", {
-					className: m.a.educationMessage
-				}, x.a.createElement("div", {
-					className: m.a.titleRow
-				}, x.a.createElement("div", {
-					className: m.a.header
-				}, x.a.createElement("h3", {
-					className: m.a.title
-				}, p), a && x.a.createElement("div", {
-					className: m.a.newBadge
+				const h = c !== m.a.nonDismissable,
+					[f, d] = Object(k.a)(c, !h || !1),
+					[u, y] = Object(x.useState)(!1);
+				return Object(x.useEffect)(() => {
+					f || u || !s || (s(), y(!0))
+				}, [f, u, s]), h && f ? null : t.a.createElement("div", {
+					className: e.a.educationMessage
+				}, t.a.createElement("div", {
+					className: e.a.titleRow
+				}, t.a.createElement("div", {
+					className: e.a.header
+				}, t.a.createElement("h3", {
+					className: e.a.title
+				}, p), a && t.a.createElement("div", {
+					className: e.a.newBadge
 				}, l._("New", null, {
 					hk: "2N0EBb"
-				}))), h && x.a.createElement(n.q, {
+				}))), h && t.a.createElement(n.q, {
 					"aria-label": l._("Close", null, {
 						hk: "2UjnU"
 					}),
-					className: m.a.closeButton,
+					className: e.a.closeButton,
 					Icon: o.a,
 					onClick: () => {
-						f(!0), r && r()
+						d(!0), r && r()
 					},
 					priority: n.b.Plain
 				})), i)
@@ -1341,9 +364,9 @@
 			r.d(a, "a", (function() {
 				return o
 			}));
-			var t = r("./node_modules/fbt/lib/FbtPublic.js"),
-				x = r("./node_modules/react/index.js"),
-				k = r.n(x),
+			var x = r("./node_modules/fbt/lib/FbtPublic.js"),
+				t = r("./node_modules/react/index.js"),
+				k = r.n(t),
 				n = r("./src/reddit/components/Econ/Prediction/EducationMessage/index.tsx");
 
 			function o({
@@ -1351,16 +374,16 @@
 				onView: a,
 				storageKey: r
 			}) {
-				const x = t.fbt._("Predictions", null, {
+				const t = x.fbt._("Predictions", null, {
 						hk: "3X6mhV"
 					}),
-					o = t.fbt._("Redditors add coins to their answers, then everyone who gets it right splits the winnings", null, {
+					o = x.fbt._("Redditors add coins to their answers, then everyone who gets it right splits the winnings", null, {
 						hk: "zV4JN"
 					});
 				return k.a.createElement("div", null, k.a.createElement(n.a, {
 					onClose: i,
 					onView: a,
-					title: x,
+					title: t,
 					newBadge: !0,
 					message: o,
 					storageKey: r
@@ -1480,34 +503,34 @@
 			r.r(a), r.d(a, "Prediction", (function() {
 				return Ki
 			}));
-			var t = r("./node_modules/react/index.js"),
-				x = r.n(t),
+			var x = r("./node_modules/react/index.js"),
+				t = r.n(x),
 				k = r("./node_modules/react-redux/es/index.js"),
 				n = r("./node_modules/reselect/es/index.js"),
 				o = r("./src/lib/classNames/index.ts"),
-				s = r("./src/lib/timeUntil/index.ts"),
-				e = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				m = r("./src/reddit/actions/economics/helpers/index.ts"),
+				m = r("./src/lib/timeUntil/index.ts"),
+				s = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				e = r("./src/reddit/actions/economics/helpers/index.ts"),
 				l = r("./src/reddit/actions/economics/predictions/index.ts"),
 				c = r("./src/reddit/actions/toaster.ts"),
 				p = r("./src/reddit/selectors/experiments/econ/predictions.ts"),
 				h = r("./src/reddit/helpers/trackers/predictions.ts"),
-				d = r("./src/reddit/hooks/useTracking.ts"),
-				f = r("./src/reddit/models/Toast/index.ts"),
+				f = r("./src/reddit/hooks/useTracking.ts"),
+				d = r("./src/reddit/models/Toast/index.ts"),
 				u = r("./src/reddit/selectors/poll/index.ts"),
 				y = r("./src/reddit/selectors/postCreations.ts"),
 				G = r("./src/reddit/selectors/posts.ts"),
 				E = r("./src/reddit/selectors/user.ts"),
 				A = r("./src/reddit/components/Econ/Prediction/EducationMessage/constants.ts"),
-				D = r("./src/reddit/components/Econ/Prediction/NoPredictionError/index.m.less"),
-				B = r.n(D);
+				B = r("./src/reddit/components/Econ/Prediction/NoPredictionError/index.m.less"),
+				D = r.n(B);
 			const {
 				fbt: V
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			var b = ({
 					className: i
-				}) => x.a.createElement("div", {
-					className: Object(o.a)(B.a.container, i)
+				}) => t.a.createElement("div", {
+					className: Object(o.a)(D.a.container, i)
 				}, V._("Error: Could not load prediction", null, {
 					hk: "3SDSgH"
 				})),
@@ -1524,14 +547,14 @@
 				const a = P._("This prediction has ended", null, {
 						hk: "3VMLnq"
 					}),
-					r = x.a.createElement(x.a.Fragment, null, P._("The outcome is pending.", null, {
+					r = t.a.createElement(t.a.Fragment, null, P._("The outcome is pending.", null, {
 						hk: "4tsv1U"
-					}), i && x.a.createElement("div", {
+					}), i && t.a.createElement("div", {
 						className: v.a.notificationBlurb
 					}, P._("You'll be notified when the results are in.", null, {
 						hk: "45tyVv"
 					})));
-				return x.a.createElement("div", null, x.a.createElement(F.a, {
+				return t.a.createElement("div", null, t.a.createElement(F.a, {
 					title: a,
 					message: r
 				}))
@@ -1539,24 +562,24 @@
 			var T = r("./src/reddit/components/Econ/Prediction/PredictionFeatureEducationMessage/index.tsx"),
 				_ = r("./src/higherOrderComponents/asModal/index.tsx"),
 				O = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				j = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				C = r("./src/reddit/icons/svgs/Minus/index.tsx"),
+				C = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				w = r("./src/reddit/icons/svgs/Minus/index.tsx"),
 				N = r("./src/reddit/icons/svgs/Plus/index.tsx"),
-				w = r("./src/reddit/components/Econ/CoinsModalHeader/index.tsx"),
-				I = r("./src/reddit/controls/Button/index.tsx"),
-				L = r("./src/reddit/icons/svgs/Close/index.tsx");
+				I = r("./src/reddit/components/Econ/CoinsModalHeader/index.tsx"),
+				j = r("./src/reddit/controls/Button/index.tsx"),
+				M = r("./src/reddit/icons/svgs/Close/index.tsx");
 
-			function M({
+			function L({
 				className: i
 			}) {
-				return x.a.createElement("svg", {
+				return t.a.createElement("svg", {
 					className: i,
 					width: "24",
 					height: "24",
 					viewBox: "0 0 24 24",
 					fill: "none",
 					xmlns: "http://www.w3.org/2000/svg"
-				}, x.a.createElement("path", {
+				}, t.a.createElement("path", {
 					opacity: "0.4",
 					d: "M12 0L13.6971 10.3029L24 12L13.6971 13.6971L12 24L10.3029 13.6971L0 12L10.3029 10.3029L12 0Z",
 					fill: "#DDBD37"
@@ -1564,7 +587,7 @@
 			}
 			const {
 				fbt: R
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), U = {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), H = {
 				0: [R._("IT’S LIKE YOU HAVE ESPN OR SOMETHING", null, {
 					hk: "4uUPl5"
 				}), R._("SOMEONE’S WEARING THEIR SMARTYPANTS", null, {
@@ -1617,51 +640,51 @@
 				}), R._("WELCOME TO THE CENTURY CLUB", null, {
 					hk: "2crGlm"
 				})]
-			}, H = (i = 0) => {
-				const a = U[i];
+			}, q = (i = 0) => {
+				const a = H[i];
 				return a[Math.floor(Math.random() * a.length)]
 			};
-			var W = r("./src/reddit/components/Econ/Prediction/PredictionModal/Header/index.m.less"),
-				q = r.n(W);
+			var U = r("./src/reddit/components/Econ/Prediction/PredictionModal/Header/index.m.less"),
+				W = r.n(U);
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function z({
+			function Y({
 				onCancel: i,
 				selectedCoinPack: a
 			}) {
 				const r = Object(k.e)(p.d),
 					n = Object(k.e)(E.d),
-					[s, e] = Object(t.useState)(null),
-					[l, c] = Object(t.useState)(!1);
-				return Object(t.useEffect)(() => {
-					e(H(null == a ? void 0 : a.coins)), c(!0), setTimeout(() => c(!1), 400)
-				}, [a]), r ? x.a.createElement("div", {
-					className: q.a.header
-				}, x.a.createElement(I.q, {
+					[m, s] = Object(x.useState)(null),
+					[l, c] = Object(x.useState)(!1);
+				return Object(x.useEffect)(() => {
+					s(q(null == a ? void 0 : a.coins)), c(!0), setTimeout(() => c(!1), 400)
+				}, [a]), r ? t.a.createElement("div", {
+					className: W.a.header
+				}, t.a.createElement(j.q, {
 					"aria-label": K._("Close", null, {
 						hk: "40q8CL"
 					}),
-					className: q.a.closeButton,
-					Icon: L.a,
+					className: W.a.closeButton,
+					Icon: M.a,
 					onClick: i,
-					priority: I.b.Plain
-				}), x.a.createElement("h3", {
-					className: Object(o.a)(q.a.colorCommentary, {
-						[q.a.hasAddedCoins]: !!(null == a ? void 0 : a.coins)
+					priority: j.b.Plain
+				}), t.a.createElement("h3", {
+					className: Object(o.a)(W.a.colorCommentary, {
+						[W.a.hasAddedCoins]: !!(null == a ? void 0 : a.coins)
 					}),
 					"data-testid": "color-commentary"
-				}, s || x.a.createElement(x.a.Fragment, null, " "), x.a.createElement("div", {
-					className: Object(o.a)(q.a.highlight, {
-						[q.a.isHighlighting]: l
+				}, m || t.a.createElement(t.a.Fragment, null, " "), t.a.createElement("div", {
+					className: Object(o.a)(W.a.highlight, {
+						[W.a.isHighlighting]: l
 					})
-				}, x.a.createElement(M, {
-					className: q.a.leftStar
-				}), x.a.createElement(M, {
-					className: q.a.rightStar
-				})))) : x.a.createElement(w.a, {
-					onAddCoins: m.promptUserToBuyMoreCoins,
+				}, t.a.createElement(L, {
+					className: W.a.leftStar
+				}), t.a.createElement(L, {
+					className: W.a.rightStar
+				})))) : t.a.createElement(I.a, {
+					onAddCoins: e.promptUserToBuyMoreCoins,
 					onCancel: i,
 					title: K._("Predict the Future", null, {
 						hk: "4bHA0N"
@@ -1669,84 +692,84 @@
 					userCoins: n
 				})
 			}
-			var Y = r("./src/lib/truncateText/index.ts"),
-				$ = r("./src/reddit/components/Econ/Prediction/PredictionModal/Selection/index.m.less"),
-				J = r.n($);
+			var z = r("./src/lib/truncateText/index.ts"),
+				J = r("./src/reddit/components/Econ/Prediction/PredictionModal/Selection/index.m.less"),
+				X = r.n(J);
 			const {
-				fbt: X
+				fbt: Z
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Z({
+			function Q({
 				option: i
 			}) {
-				return x.a.createElement(x.a.Fragment, null, x.a.createElement("h1", {
-					className: J.a.selection
-				}, X._("You picked {lineBreak}{optionText}", [X._param("lineBreak", x.a.createElement("br", null)), X._param("optionText", `‘${Object(Y.a)(i.text,40,"...")}’`)], {
+				return t.a.createElement(t.a.Fragment, null, t.a.createElement("h1", {
+					className: X.a.selection
+				}, Z._("You picked {lineBreak}{optionText}", [Z._param("lineBreak", t.a.createElement("br", null)), Z._param("optionText", `‘${Object(z.a)(i.text,40,"...")}’`)], {
 					hk: "4CMKTn"
-				})), x.a.createElement("p", {
-					className: J.a.upsell
-				}, X._("Prove you’re right, taunt your fellow redditors, and earn bragging rights.", null, {
+				})), t.a.createElement("p", {
+					className: X.a.upsell
+				}, Z._("Prove you’re right, taunt your fellow redditors, and earn bragging rights.", null, {
 					hk: "2fEaS6"
 				})))
 			}
-			var Q = r("./src/reddit/components/Econ/Prediction/PredictionModal/index.m.less"),
-				ii = r.n(Q);
+			var $ = r("./src/reddit/components/Econ/Prediction/PredictionModal/index.m.less"),
+				ii = r.n($);
 			const {
 				fbt: ai
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ri = Object(n.c)({
 				isNewPredictionsSheet: p.d,
 				userCoins: E.d
-			}), ti = {
-				getCoinPacks: l.b,
+			}), xi = {
+				getCoinPacks: l.c,
 				showToast: c.e
 			};
-			var xi = Object(k.b)(ri, ti)(Object(_.a)(({
+			var ti = Object(k.b)(ri, xi)(Object(_.a)(({
 					getCoinPacks: i,
 					isCreatingVote: a,
 					isNewPredictionsSheet: r,
 					onCancel: k,
 					onPredict: n,
-					option: s,
-					pollId: e,
-					showToast: m,
+					option: m,
+					pollId: s,
+					showToast: e,
 					userCoins: l
 				}) => {
-					const [c, p] = Object(t.useState)(0), [u, y] = Object(t.useState)(null), [G, E] = Object(t.useState)(!1), A = Object(d.a)(), D = null == u ? void 0 : u[c], B = u && c === u.length - 1, V = D && l < D.coins;
-					return Object(t.useEffect)(() => {
+					const [c, p] = Object(x.useState)(0), [u, y] = Object(x.useState)(null), [G, E] = Object(x.useState)(!1), A = Object(f.a)(), B = null == u ? void 0 : u[c], D = u && c === u.length - 1, V = B && l < B.coins;
+					return Object(x.useEffect)(() => {
 						G || (A(h.i), E(!0))
-					}, [G, A]), Object(t.useEffect)(() => {
+					}, [G, A]), Object(x.useEffect)(() => {
 						(async () => {
 							if (!u) try {
-								const a = await i(e);
-								a.length || (m({
+								const a = await i(s);
+								a.length || (e({
 									duration: 5e3,
-									kind: f.b.Error,
+									kind: d.b.Error,
 									text: ai._("Error: Subreddit is not configured with coin packs", null, {
 										hk: "2t8uz0"
 									})
 								}), k()), y(a)
 							} catch (a) {
-								m({
+								e({
 									duration: 5e3,
-									kind: f.b.Error,
+									kind: d.b.Error,
 									text: ai._("Error: Failed to fetch coin packs, please try again later", null, {
 										hk: "2aROIr"
 									})
 								}), k()
 							}
 						})()
-					}, [u, i, k, e, m]), x.a.createElement("div", null, x.a.createElement(z, {
+					}, [u, i, k, s, e]), t.a.createElement("div", null, t.a.createElement(Y, {
 						onCancel: k,
-						selectedCoinPack: D
-					}), x.a.createElement("div", {
+						selectedCoinPack: B
+					}), t.a.createElement("div", {
 						className: ii.a.modalContent
-					}, r && x.a.createElement(Z, {
-						option: s
-					}), x.a.createElement("div", {
+					}, r && t.a.createElement(Q, {
+						option: m
+					}), t.a.createElement("div", {
 						className: ii.a.wagerSelectorContainer
-					}, x.a.createElement("div", {
+					}, t.a.createElement("div", {
 						className: ii.a.wagerSelector
-					}, x.a.createElement("button", {
+					}, t.a.createElement("button", {
 						"aria-label": ai._("Decrease coins", null, {
 							hk: "2TS1h9"
 						}),
@@ -1755,52 +778,52 @@
 						onClick: i => {
 							i.preventDefault(), u && 0 !== c && p(c - 1)
 						}
-					}, x.a.createElement(C.a, {
+					}, t.a.createElement(w.a, {
 						className: ii.a.wagerSelectorButtonIcon
-					})), D ? x.a.createElement("div", {
+					})), B ? t.a.createElement("div", {
 						className: ii.a.wagerSelectorAmount
-					}, x.a.createElement(j.a, {
+					}, t.a.createElement(C.a, {
 						className: ii.a.coinIcon
-					}), " ", D.coins ? D.coins : ai._("Free", null, {
+					}), " ", B.coins ? B.coins : ai._("Free", null, {
 						hk: "2EqRoV"
-					})) : x.a.createElement(O.a, {
+					})) : t.a.createElement(O.a, {
 						className: ii.a.loadingIcon,
 						sizePx: 24
-					}), x.a.createElement("button", {
+					}), t.a.createElement("button", {
 						"aria-label": ai._("Increase coins", null, {
 							hk: "4b2nPj"
 						}),
-						disabled: !(!u || !B),
+						disabled: !(!u || !D),
 						className: ii.a.wagerSelectorButton,
 						onClick: i => {
-							i.preventDefault(), u && (B || p(c + 1))
+							i.preventDefault(), u && (D || p(c + 1))
 						}
-					}, x.a.createElement(N.a, {
+					}, t.a.createElement(N.a, {
 						className: ii.a.wagerSelectorButtonIcon
-					}))), x.a.createElement("div", {
+					}))), t.a.createElement("div", {
 						className: ii.a.amountMessage
 					}, V ? ai._("Insufficient coins", null, {
 						hk: "2Mo83P"
-					}) : B ? ai._("Max amount", null, {
+					}) : D ? ai._("Max amount", null, {
 						hk: "1BpnPd"
-					}) : x.a.createElement(x.a.Fragment, null, " "))), x.a.createElement("button", {
+					}) : t.a.createElement(t.a.Fragment, null, " "))), t.a.createElement("button", {
 						className: Object(o.a)(ii.a.predictButton, {
 							[ii.a.isFetchingCoinPacks]: !u,
 							[ii.a.isCreatingVote]: a
 						}),
 						disabled: !u || a,
 						onClick: i => {
-							i.preventDefault(), D && n(D)
+							i.preventDefault(), B && n(B)
 						}
-					}, a ? x.a.createElement(O.a, {
+					}, a ? t.a.createElement(O.a, {
 						sizePx: 16
 					}) : V ? ai._("Get Coins", null, {
 						hk: "11KD6n"
 					}) : ai._("Let's do this!", null, {
 						hk: "342MNr"
-					})), x.a.createElement("div", {
+					})), t.a.createElement("div", {
 						className: ii.a.disclaimer
-					}, ai._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.} Your username and prediction is viewable by other redditors.", [ai._param("=Predictions don’t offer an opportunity to win real money or prizes.", x.a.createElement("a", {
+					}, ai._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.} Your username and prediction is viewable by other redditors.", [ai._param("=Predictions don’t offer an opportunity to win real money or prizes.", t.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/previews-terms",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -1819,59 +842,59 @@
 					a = ki.fbt._("The prediction has ended and the outcome is needed to resolve the prediction.", null, {
 						hk: "4CkrEz"
 					});
-				return x.a.createElement("div", null, x.a.createElement(F.a, {
+				return t.a.createElement("div", null, t.a.createElement(F.a, {
 					title: i,
 					message: a
 				}))
 			}
 			var oi = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				si = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
-				ei = r.n(si);
+				mi = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
+				si = r.n(mi);
 			const {
-				fbt: mi
+				fbt: ei
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			var li = Object(t.forwardRef)(({
+			var li = Object(x.forwardRef)(({
 					disabled: i,
 					isEnded: a,
 					isSelected: r,
-					needsResolution: t,
+					needsResolution: x,
 					onClick: k,
 					option: n,
-					resolvedOptionId: s,
-					userIsLoggedOut: e,
-					userSelection: m,
+					resolvedOptionId: m,
+					userIsLoggedOut: s,
+					userSelection: e,
 					votePercentage: l
 				}, c) => {
-					const p = s === n.id,
-						h = a || !!m || !!s;
-					return x.a.createElement("button", {
+					const p = m === n.id,
+						h = a || !!e || !!m;
+					return t.a.createElement("button", {
 						"aria-label": n.text,
-						className: Object(o.a)(ei.a.optionButton, {
-							[ei.a.hasVoted]: null !== n.userStakeAmount,
-							[ei.a.isCorrect]: p,
-							[ei.a.isSelected]: r
+						className: Object(o.a)(si.a.optionButton, {
+							[si.a.hasVoted]: null !== n.userStakeAmount,
+							[si.a.isCorrect]: p,
+							[si.a.isSelected]: r
 						}),
-						disabled: i || !t && (h || e),
+						disabled: i || !x && (h || s),
 						onClick: k,
 						ref: c
-					}, x.a.createElement("div", {
-						className: ei.a.optionBody
-					}, p && x.a.createElement(oi.a, {
-						className: ei.a.checkmarkIcon
-					}), x.a.createElement("div", {
-						className: ei.a.optionText
-					}, n.text), !!n.userStakeAmount && x.a.createElement("div", {
-						className: ei.a.optionStake
-					}, x.a.createElement(j.a, {
-						className: ei.a.coinIcon
-					}), " ", n.userStakeAmount)), !!l && x.a.createElement("div", {
-						className: ei.a.optionPercentage,
+					}, t.a.createElement("div", {
+						className: si.a.optionBody
+					}, p && t.a.createElement(oi.a, {
+						className: si.a.checkmarkIcon
+					}), t.a.createElement("div", {
+						className: si.a.optionText
+					}, n.text), !!n.userStakeAmount && t.a.createElement("div", {
+						className: si.a.optionStake
+					}, t.a.createElement(C.a, {
+						className: si.a.coinIcon
+					}), " ", n.userStakeAmount)), !!l && t.a.createElement("div", {
+						className: si.a.optionPercentage,
 						style: {
 							width: `${l}%`
 						}
-					}, " "), e && !h && x.a.createElement("div", {
-						className: ei.a.loggedOutTooltip
-					}, mi._("You must be logged in", null, {
+					}, " "), s && !h && t.a.createElement("div", {
+						className: si.a.loggedOutTooltip
+					}, ei._("You must be logged in", null, {
 						hk: "18KrL7"
 					})))
 				}),
@@ -1881,58 +904,58 @@
 				fbt: hi
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function di({
+			function fi({
 				didParticipate: i,
 				isWinner: a,
 				predictedAmount: r,
-				wonAmount: t
+				wonAmount: x
 			}) {
-				return i && !a ? x.a.createElement("div", null, x.a.createElement(F.a, {
+				return i && !a ? t.a.createElement("div", null, t.a.createElement(F.a, {
 					title: hi._("Better luck next time", null, {
 						hk: "1KYUZf"
 					}),
-					message: x.a.createElement(x.a.Fragment, null, hi._("Sorry, your prediction was wrong this time.", null, {
+					message: t.a.createElement(t.a.Fragment, null, hi._("Sorry, your prediction was wrong this time.", null, {
 						hk: "4aEoP2"
-					}), !!r && x.a.createElement("div", {
+					}), !!r && t.a.createElement("div", {
 						className: pi.a.wonOrLostAmountRow
-					}, hi._("You lost {lostAmount}", [hi._param("lostAmount", x.a.createElement("div", {
+					}, hi._("You lost {lostAmount}", [hi._param("lostAmount", t.a.createElement("div", {
 						className: pi.a.wonOrLostAmount
-					}, x.a.createElement(j.a, {
+					}, t.a.createElement(C.a, {
 						className: pi.a.coinIcon
 					}), r))], {
 						hk: "1OwQLA"
 					})))
-				})) : i && a && r && !t ? x.a.createElement("div", null, x.a.createElement(F.a, {
+				})) : i && a && r && !x ? t.a.createElement("div", null, t.a.createElement(F.a, {
 					title: hi._("And the winner is... EVERYONE!", null, {
 						hk: "2qfnkC"
 					}),
-					message: x.a.createElement(x.a.Fragment, null, hi._("Well, and no one.", null, {
+					message: t.a.createElement(t.a.Fragment, null, hi._("Well, and no one.", null, {
 						hk: "2nGCUb"
-					}), x.a.createElement("div", {
+					}), t.a.createElement("div", {
 						className: pi.a.wonOrLostAmountRow
-					}, hi._("You've been refunded {refundedAmount}", [hi._param("refundedAmount", x.a.createElement("div", {
+					}, hi._("You've been refunded {refundedAmount}", [hi._param("refundedAmount", t.a.createElement("div", {
 						className: pi.a.wonOrLostAmount
-					}, x.a.createElement(j.a, {
+					}, t.a.createElement(C.a, {
 						className: pi.a.coinIcon
 					}), r))], {
 						hk: "1TDgrT"
 					})))
-				})) : i && a ? x.a.createElement("div", null, x.a.createElement(F.a, {
+				})) : i && a ? t.a.createElement("div", null, t.a.createElement(F.a, {
 					title: hi._("And the winner is... YOU!", null, {
 						hk: "19q97O"
 					}),
-					message: x.a.createElement(x.a.Fragment, null, hi._("It’s confirmed—Your prediction was spot on.", null, {
+					message: t.a.createElement(t.a.Fragment, null, hi._("It’s confirmed—Your prediction was spot on.", null, {
 						hk: "3AtcRD"
-					}), !!t && x.a.createElement("div", {
+					}), !!x && t.a.createElement("div", {
 						className: pi.a.wonOrLostAmountRow
-					}, hi._("You won {wonAmount}", [hi._param("wonAmount", x.a.createElement("div", {
+					}, hi._("You won {wonAmount}", [hi._param("wonAmount", t.a.createElement("div", {
 						className: pi.a.wonOrLostAmount
-					}, x.a.createElement(j.a, {
+					}, t.a.createElement(C.a, {
 						className: pi.a.coinIcon
-					}), t))], {
+					}), x))], {
 						hk: "1zg0cH"
 					})))
-				})) : x.a.createElement("div", null, x.a.createElement(F.a, {
+				})) : t.a.createElement("div", null, t.a.createElement(F.a, {
 					title: hi._("This prediction has ended", null, {
 						hk: "3VMLnq"
 					}),
@@ -1941,7 +964,7 @@
 					})
 				}))
 			}
-			var fi = r("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
+			var di = r("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
 				ui = r("./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less"),
 				yi = r.n(ui);
 			const {
@@ -1949,39 +972,39 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Ei = ({
 				endsAt: i,
 				resolvedOptionId: a
-			}) => Date.now() > i ? x.a.createElement("div", {
+			}) => Date.now() > i ? t.a.createElement("div", {
 				className: yi.a.statusBar
-			}, x.a.createElement(fi.a, {
+			}, t.a.createElement(di.a, {
 				className: yi.a.clockIcon
 			}), a ? Gi._("Prediction ended", null, {
 				hk: "3o79Ig"
 			}) : Gi._("Ended. Awaiting results", null, {
 				hk: "1szagh"
-			})) : x.a.createElement("div", {
+			})) : t.a.createElement("div", {
 				className: yi.a.statusBar
-			}, x.a.createElement(fi.a, {
+			}, t.a.createElement(di.a, {
 				className: yi.a.clockIcon
-			}), Gi._("Prediction ends in {expirationDuration}", [Gi._param("expirationDuration", Object(s.a)(new Date(i), !0))], {
+			}), Gi._("Prediction ends in {expirationDuration}", [Gi._param("expirationDuration", Object(m.a)(new Date(i), !0))], {
 				hk: "3ysXEE"
 			}));
 			var Ai = ({
 					endsAt: i,
 					resolvedOptionId: a,
 					totalStakeAmount: r
-				}) => x.a.createElement("div", {
+				}) => t.a.createElement("div", {
 					className: yi.a.container
-				}, r > 0 && x.a.createElement("div", {
+				}, r > 0 && t.a.createElement("div", {
 					className: yi.a.statusBar
-				}, x.a.createElement(j.a, {
+				}, t.a.createElement(C.a, {
 					className: yi.a.coinIcon
 				}), r, " ", Gi._("added by participants", null, {
 					hk: "PSq3T"
-				})), x.a.createElement(Ei, {
+				})), t.a.createElement(Ei, {
 					endsAt: i,
 					resolvedOptionId: a
 				})),
-				Di = r("./src/reddit/components/Econ/Prediction/ResolutionModal/index.m.less"),
-				Bi = r.n(Di);
+				Bi = r("./src/reddit/components/Econ/Prediction/ResolutionModal/index.m.less"),
+				Di = r.n(Bi);
 			const {
 				fbt: Vi
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1990,39 +1013,39 @@
 					onCancel: a,
 					onResolve: r
 				}) {
-					return x.a.createElement(x.a.Fragment, null, x.a.createElement("div", {
-						className: Bi.a.header
-					}, x.a.createElement(I.q, {
-						className: Bi.a.closeButton,
-						Icon: L.a,
-						priority: I.b.Plain,
+					return t.a.createElement(t.a.Fragment, null, t.a.createElement("div", {
+						className: Di.a.header
+					}, t.a.createElement(j.q, {
+						className: Di.a.closeButton,
+						Icon: M.a,
+						priority: j.b.Plain,
 						onClick: a
-					}), x.a.createElement("h1", null, Vi._("Confirm Your Answer", null, {
+					}), t.a.createElement("h1", null, Vi._("Confirm Your Answer", null, {
 						hk: "4yIXaD"
-					}))), x.a.createElement("div", {
-						className: Bi.a.content
-					}, x.a.createElement("p", {
-						className: Bi.a.message
+					}))), t.a.createElement("div", {
+						className: Di.a.content
+					}, t.a.createElement("p", {
+						className: Di.a.message
 					}, Vi._("Once you hit Submit, the answer is final and Reddit Coins will be distributed to the winners", null, {
 						hk: "1A6v9f"
-					})), x.a.createElement("div", {
-						className: Bi.a.actions
-					}, x.a.createElement(I.l, {
+					})), t.a.createElement("div", {
+						className: Di.a.actions
+					}, t.a.createElement(j.l, {
 						disabled: i,
 						onClick: a,
-						priority: I.b.Secondary,
+						priority: j.b.Secondary,
 						redditStyle: !0,
-						size: I.c.S
+						size: j.c.S
 					}, Vi._("Cancel", null, {
 						hk: "4Gco5s"
-					})), x.a.createElement(I.i, {
-						className: Bi.a.submitButton,
+					})), t.a.createElement(j.i, {
+						className: Di.a.submitButton,
 						disabled: i,
 						onClick: () => {
 							r()
 						},
 						redditStyle: !0,
-						size: I.c.S
+						size: j.c.S
 					}, Vi._("Submit", null, {
 						hk: "ZLsi7"
 					})))))
@@ -2039,7 +1062,7 @@
 				_i = r.n(Ti);
 			const {
 				fbt: Oi
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), ji = [Oi._("Noice!", null, {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Ci = [Oi._("Noice!", null, {
 				hk: "27jDNM"
 			}), Oi._("Sweet!", null, {
 				hk: "488CcB"
@@ -2055,7 +1078,7 @@
 				hk: "4f99e5"
 			}), Oi._("Tada!", null, {
 				hk: "3Wlnwj"
-			})], Ci = () => ji[Math.floor(Math.random() * ji.length)];
+			})], wi = () => Ci[Math.floor(Math.random() * Ci.length)];
 
 			function Ni({
 				children: i,
@@ -2063,21 +1086,21 @@
 				isShowingVoteAnimation: r,
 				onAnimationEnd: k
 			}) {
-				const n = Object(t.useRef)(null),
-					[s, e] = Object(t.useState)(0),
-					[m, l] = Object(t.useState)(!1),
-					[c, p] = Object(t.useState)(null),
-					[h, d] = Object(t.useState)(!1),
-					[f, u] = Object(t.useState)(!1),
-					[y] = Object(t.useState)(Ci());
-				return Object(t.useEffect)(() => {
+				const n = Object(x.useRef)(null),
+					[m, s] = Object(x.useState)(0),
+					[e, l] = Object(x.useState)(!1),
+					[c, p] = Object(x.useState)(null),
+					[h, f] = Object(x.useState)(!1),
+					[d, u] = Object(x.useState)(!1),
+					[y] = Object(x.useState)(wi());
+				return Object(x.useEffect)(() => {
 					(async () => {
 						var i;
 						if (r && !h) {
-							await Pi(1), d(!0);
+							await Pi(1), f(!0);
 							const a = null === (i = null == n ? void 0 : n.current) || void 0 === i ? void 0 : i.getBoundingClientRect();
-							if (!a) return d(!1), void k();
-							e(a.width), p(a), await Pi(0), p({
+							if (!a) return f(!1), void k();
+							s(a.width), p(a), await Pi(0), p({
 								top: a.top,
 								left: 0,
 								width: window.innerWidth,
@@ -2092,20 +1115,20 @@
 								left: 0,
 								width: window.innerWidth,
 								height: a.height
-							}), await Pi(300), l(!1), p(a), await Pi(200), k(), d(!1)
+							}), await Pi(300), l(!1), p(a), await Pi(200), k(), f(!1)
 						}
 					})()
-				}, [h, r, k]), x.a.createElement(x.a.Fragment, null, x.a.createElement("div", {
+				}, [h, r, k]), t.a.createElement(t.a.Fragment, null, t.a.createElement("div", {
 					className: Object(o.a)(_i.a.optionContainer)
-				}, Object(t.cloneElement)(i, {
+				}, Object(x.cloneElement)(i, {
 					ref: n
-				})), r && x.a.createElement(Li, {
+				})), r && t.a.createElement(Mi, {
 					background: c,
 					endsAt: a,
-					initialWidth: s,
+					initialWidth: m,
 					isAnimating: h,
-					isFullWidth: m,
-					isRaining: f,
+					isFullWidth: e,
+					isRaining: d,
 					overlayCustomStyles: {
 						padding: 0,
 						zIndex: 100
@@ -2113,26 +1136,26 @@
 					successMessage: y
 				}, i))
 			}
-			const wi = `${Fi.a.assetPath}/img/econ/predictions/waiting@2x.png`,
-				Ii = `\n  ${Fi.a.assetPath}/img/econ/predictions/waiting.png,\n  ${wi} 2x,\n  ${Fi.a.assetPath}/img/econ/predictions/waiting@3x.png 3x,\n`,
-				Li = Object(_.a)(({
+			const Ii = `${Fi.a.assetPath}/img/econ/predictions/waiting@2x.png`,
+				ji = `\n  ${Fi.a.assetPath}/img/econ/predictions/waiting.png,\n  ${Ii} 2x,\n  ${Fi.a.assetPath}/img/econ/predictions/waiting@3x.png 3x,\n`,
+				Mi = Object(_.a)(({
 					background: i,
 					children: a,
 					endsAt: r,
 					initialWidth: k,
 					isAnimating: n,
-					isFullWidth: e,
-					isRaining: m,
+					isFullWidth: s,
+					isRaining: e,
 					successMessage: l
 				}) => {
-					const [c, p] = Object(t.useState)(null);
-					return Object(t.useEffect)(() => {
-						m && c && c.play()
-					}, [c, m]), x.a.createElement("div", {
+					const [c, p] = Object(x.useState)(null);
+					return Object(x.useEffect)(() => {
+						e && c && c.play()
+					}, [c, e]), t.a.createElement("div", {
 						"data-testid": "success-animation",
 						className: Object(o.a)(_i.a.animationContainer, {
 							[_i.a.isAnimating]: n,
-							[_i.a.isFullWidth]: e
+							[_i.a.isFullWidth]: s
 						}),
 						style: {
 							top: `${null==i?void 0:i.top}px`,
@@ -2140,9 +1163,9 @@
 							width: `${null==i?void 0:i.width}px`,
 							height: `${null==i?void 0:i.height}px`
 						}
-					}, x.a.createElement("div", {
+					}, t.a.createElement("div", {
 						className: Object(o.a)(_i.a.confetti, {
-							[_i.a.isShowing]: m
+							[_i.a.isShowing]: e
 						}),
 						ref: i => {
 							if (i && !i.children.length) {
@@ -2160,35 +1183,35 @@
 								p(a)
 							}
 						}
-					}), x.a.createElement("div", {
+					}), t.a.createElement("div", {
 						className: _i.a.animatedOptionContainer,
 						style: {
 							width: `${k}px`
 						}
-					}, x.a.createElement("img", {
+					}, t.a.createElement("img", {
 						className: _i.a.image,
-						srcSet: Ii,
-						src: wi,
+						srcSet: ji,
+						src: Ii,
 						alt: Oi._("Snoos gazing into a crystal ball", null, {
 							hk: "1XM1Zp"
 						})
-					}), a, x.a.createElement("h1", {
+					}), a, t.a.createElement("h1", {
 						className: _i.a.splashText
-					}, l), x.a.createElement("div", {
+					}, l), t.a.createElement("div", {
 						className: _i.a.timer
-					}, x.a.createElement("h4", {
+					}, t.a.createElement("h4", {
 						className: _i.a.timerLabel
 					}, Oi._("Prediction ends in", null, {
 						hk: "gsPdK"
-					})), x.a.createElement("h3", {
+					})), t.a.createElement("h3", {
 						className: _i.a.timerValue
-					}, Object(s.a)(new Date(r), !1, !0)))))
+					}, Object(m.a)(new Date(r), !1, !0)))))
 				});
-			var Mi = r("./src/reddit/components/Econ/Prediction/index.m.less"),
-				Ri = r.n(Mi);
+			var Li = r("./src/reddit/components/Econ/Prediction/index.m.less"),
+				Ri = r.n(Li);
 			const {
-				fbt: Ui
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Hi = Object(n.c)({
+				fbt: Hi
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), qi = Object(n.c)({
 				isEditing: y.F,
 				isVoteAnimationEnabled: p.b,
 				prediction: u.g,
@@ -2198,19 +1221,19 @@
 				userCoins: E.d,
 				userIsLoggedIn: E.J,
 				userId: E.nb
-			}), Wi = {
-				onPredictionResolve: l.c,
-				onPredictionVote: l.d,
+			}), Ui = {
+				onPredictionResolve: l.d,
+				onPredictionVote: l.e,
 				showToast: c.e
-			}, qi = Object(e.t)({
-				isCommentsPage: e.w
+			}, Wi = Object(s.t)({
+				isCommentsPage: s.w
 			}), Ki = ({
 				className: i,
 				isCommentsPage: a,
 				isEditing: r,
 				isVoteAnimationEnabled: k,
 				onPredictionResolve: n,
-				onPredictionVote: e,
+				onPredictionVote: s,
 				prediction: l,
 				pollId: c,
 				subredditOrProfile: p,
@@ -2219,104 +1242,104 @@
 				userId: G,
 				userIsLoggedIn: E
 			}) => {
-				var D;
-				const [B, V] = Object(t.useState)(!1), [F, g] = Object(t.useState)(null), [v, P] = Object(t.useState)(null), [_, O] = Object(t.useState)(!1), j = Object(d.a)(), C = Object(t.useCallback)(() => {
+				var B;
+				const [D, V] = Object(x.useState)(!1), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [_, O] = Object(x.useState)(!1), C = Object(f.a)(), w = Object(x.useCallback)(() => {
 					O(!1)
 				}, []);
-				if (!c || !l || !p) return x.a.createElement(b, null);
+				if (!c || !l || !p) return t.a.createElement(b, null);
 				const {
 					creatorId: N,
-					endsAt: w,
-					options: I,
-					resolvedOptionId: L,
-					totalStakeAmount: M,
+					endsAt: I,
+					options: j,
+					resolvedOptionId: M,
+					totalStakeAmount: L,
 					totalVoters: R,
-					userSelection: U,
-					userWonAmount: H
-				} = l, W = w < Date.now(), q = W && N === G && !L, K = I.find(({
+					userSelection: H,
+					userWonAmount: q
+				} = l, U = I < Date.now(), W = U && N === G && !M, K = j.find(({
 					id: i
-				}) => i === F), z = () => {
+				}) => i === F), Y = () => {
 					g(null), P(null)
-				}, Y = a ? Object(o.a)(i, Ri.a.container, Ri.a.forCommentsPage, {
+				}, z = a ? Object(o.a)(i, Ri.a.container, Ri.a.forCommentsPage, {
 					[Ri.a.isEditing]: r
 				}) : Object(o.a)(i, Ri.a.container);
-				return x.a.createElement("div", {
-					className: Y,
+				return t.a.createElement("div", {
+					className: z,
 					onClick: i => {
 						l && i.stopPropagation()
 					}
-				}, a ? W ? L ? x.a.createElement(di, {
-					didParticipate: !!U,
-					isWinner: L === U,
-					predictedAmount: U && (null === (D = I.find(({
+				}, a ? U ? M ? t.a.createElement(fi, {
+					didParticipate: !!H,
+					isWinner: M === H,
+					predictedAmount: H && (null === (B = j.find(({
 						id: i
-					}) => i === U)) || void 0 === D ? void 0 : D.userStakeAmount) || 0,
-					wonAmount: H
-				}) : q ? x.a.createElement(ni, null) : x.a.createElement(S, {
-					didParticipate: !!U
-				}) : x.a.createElement(T.a, {
+					}) => i === H)) || void 0 === B ? void 0 : B.userStakeAmount) || 0,
+					wonAmount: q
+				}) : W ? t.a.createElement(ni, null) : t.a.createElement(S, {
+					didParticipate: !!H
+				}) : t.a.createElement(T.a, {
 					storageKey: A.a.feature
-				}) : null, x.a.createElement("div", {
+				}) : null, t.a.createElement("div", {
 					className: Ri.a.poll
-				}, I.map(i => x.a.createElement(Ni, {
-					endsAt: w,
+				}, j.map(i => t.a.createElement(Ni, {
+					endsAt: I,
 					key: `prediction-option-${i.id}`,
-					isShowingVoteAnimation: _ && U === i.id,
-					onAnimationEnd: C
-				}, x.a.createElement(li, {
+					isShowingVoteAnimation: _ && H === i.id,
+					onAnimationEnd: w
+				}, t.a.createElement(li, {
 					disabled: _,
-					isEnded: W,
+					isEnded: U,
 					isSelected: F === i.id,
-					needsResolution: q,
+					needsResolution: W,
 					option: i,
 					onClick: () => (i => {
-						(q || !W && !U) && (q ? P(i.id) : g(i.id))
+						(W || !U && !H) && (W ? P(i.id) : g(i.id))
 					})(i),
-					resolvedOptionId: L,
-					userSelection: U,
+					resolvedOptionId: M,
+					userSelection: H,
 					userIsLoggedOut: !E,
-					votePercentage: (U || W) && i.voteCount ? Math.floor(i.voteCount / R * 100) : null
-				})))), x.a.createElement(Ai, {
-					endsAt: w,
-					resolvedOptionId: L,
-					totalStakeAmount: M
-				}), !!K && x.a.createElement(xi, {
-					isCreatingVote: B,
-					onOverlayClick: z,
-					onCancel: z,
+					votePercentage: (H || U) && i.voteCount ? Math.floor(i.voteCount / R * 100) : null
+				})))), t.a.createElement(Ai, {
+					endsAt: I,
+					resolvedOptionId: M,
+					totalStakeAmount: L
+				}), !!K && t.a.createElement(ti, {
+					isCreatingVote: D,
+					onOverlayClick: Y,
+					onCancel: Y,
 					onPredict: async i => {
-						if (i.coins > y) return Object(m.promptUserToBuyMoreCoins)(), void j(h.a);
-						if (W) return u({
+						if (i.coins > y) return Object(e.promptUserToBuyMoreCoins)(), void C(h.a);
+						if (U) return u({
 							duration: 5e3,
-							kind: f.b.Error,
-							text: Ui._("Error: Failed to make prediction. This prediction has already ended", null, {
+							kind: d.b.Error,
+							text: Hi._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})
 						}), void g(null);
 						if (!c || !F) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						V(!0), j(Object(h.d)({
+						V(!0), C(Object(h.d)({
 							pollId: c,
 							selectedNumberCoins: i.coins,
-							totalStakeAmount: M
+							totalStakeAmount: L
 						}));
 						try {
-							await e({
+							await s({
 								coinPackageId: i.id,
 								optionId: F,
 								postId: c,
 								price: i.coins
 							}), V(!1), g(null), k ? O(!0) : u({
 								duration: 5e3,
-								kind: f.b.SuccessCommunity,
-								text: Ui._("Thanks! See if you're right in {timeToResult}", [Ui._param("timeToResult", Object(s.a)(new Date(w), !0))], {
+								kind: d.b.SuccessCommunity,
+								text: Hi._("Thanks! See if you're right in {timeToResult}", [Hi._param("timeToResult", Object(m.a)(new Date(I), !0))], {
 									hk: "3ZSdoo"
 								})
 							})
 						} catch (a) {
 							V(!1), g(null), u({
 								duration: 5e3,
-								kind: f.b.Error,
-								text: Ui._("Error: Failed to make prediction, please try again later", null, {
+								kind: d.b.Error,
+								text: Hi._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
 								})
 							})
@@ -2325,10 +1348,10 @@
 					option: K,
 					pollId: c,
 					withOverlay: !0
-				}), q && v && x.a.createElement(bi, {
-					isResolving: B,
-					onOverlayClick: z,
-					onCancel: z,
+				}), W && v && t.a.createElement(bi, {
+					isResolving: D,
+					onOverlayClick: Y,
+					onCancel: Y,
 					onResolve: async () => {
 						if (V(!0), !v) throw new Error("Failed to create prediction, missing selected option");
 						try {
@@ -2339,8 +1362,8 @@
 						} catch (i) {
 							u({
 								duration: 5e3,
-								kind: f.b.Error,
-								text: Ui._("Error: Failed to resolve prediction, please try again later", null, {
+								kind: d.b.Error,
+								text: Hi._("Error: Failed to resolve prediction, please try again later", null, {
 									hk: "3Ve2Mb"
 								})
 							})
@@ -2350,7 +1373,7 @@
 					withOverlay: !0
 				}))
 			};
-			a.default = qi(Object(k.b)(Hi, Wi)(Ki))
+			a.default = Wi(Object(k.b)(qi, Ui)(Ki))
 		},
 		"./src/reddit/controls/LoadingIcon/index.m.less": function(i, a, r) {
 			i.exports = {
@@ -2361,8 +1384,8 @@
 		},
 		"./src/reddit/controls/LoadingIcon/index.tsx": function(i, a, r) {
 			"use strict";
-			var t = r("./node_modules/react/index.js"),
-				x = r.n(t),
+			var x = r("./node_modules/react/index.js"),
+				t = r.n(x),
 				k = r("./src/lib/classNames/index.ts"),
 				n = r("./src/reddit/controls/LoadingIcon/index.m.less"),
 				o = r.n(n);
@@ -2370,7 +1393,7 @@
 				center: i,
 				className: a,
 				sizePx: r
-			}) => x.a.createElement("div", {
+			}) => t.a.createElement("div", {
 				className: Object(k.a)(o.a.loadingIcon, a, {
 					[o.a.mCentered]: i
 				}),
@@ -2378,33 +1401,6 @@
 					"--sizePx": `${r}px`
 				}
 			})
-		},
-		"./src/reddit/endpoints/economics/emojis.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return k
-			})), r.d(a, "b", (function() {
-				return n
-			}));
-			var t = r("./src/config.ts"),
-				x = r("./src/reddit/endpoints/governance/requester.ts");
-			const k = (i, a) => Object(x.a)(i, {
-					method: "post",
-					endpoint: `${t.a.metaUrl}/orders`,
-					data: {
-						price: "0",
-						currency: "usd",
-						products: [{
-							productId: a.productId,
-							quantity: "1"
-						}],
-						subredditId: a.subredditId
-					}
-				}),
-				n = (i, a) => Object(x.a)(i, {
-					method: "get",
-					endpoint: `${t.a.metaUrl}/product-collections/${a}?types=emotes_pack`
-				})
 		},
 		"./src/reddit/endpoints/economics/predictions.ts": function(i, a, r) {
 			"use strict";
@@ -2415,9 +1411,9 @@
 			})), r.d(a, "h", (function() {
 				return h
 			})), r.d(a, "a", (function() {
-				return d
-			})), r.d(a, "f", (function() {
 				return f
+			})), r.d(a, "f", (function() {
+				return d
 			})), r.d(a, "c", (function() {
 				return u
 			})), r.d(a, "g", (function() {
@@ -2429,16 +1425,16 @@
 			})), r.d(a, "d", (function() {
 				return A
 			}));
-			var t = r("./src/lib/makeGqlRequest/index.ts"),
-				x = r("./src/graphql/operations/AddPredictionDrafts.json"),
+			var x = r("./src/lib/makeGqlRequest/index.ts"),
+				t = r("./src/graphql/operations/AddPredictionDrafts.json"),
 				k = r("./src/graphql/operations/CreatePredictionTournament.json"),
 				n = r("./src/graphql/operations/GetPredictionCoinPackages.json"),
 				o = r("./src/graphql/operations/GetTournaments.json"),
-				s = r("./src/graphql/operations/ResolvePrediction.json"),
-				e = r("./src/graphql/operations/SubredditTopPredictors.json"),
-				m = r("./src/graphql/operations/UpdatePredictionTournament.json"),
+				m = r("./src/graphql/operations/ResolvePrediction.json"),
+				s = r("./src/graphql/operations/SubredditTopPredictors.json"),
+				e = r("./src/graphql/operations/UpdatePredictionTournament.json"),
 				l = r("./src/graphql/operations/VotePrediction.json");
-			const c = (i, a, r) => Object(t.a)(i, {
+			const c = (i, a, r) => Object(x.a)(i, {
 					...n,
 					variables: {
 						subredditName: a,
@@ -2448,15 +1444,15 @@
 				p = (i, {
 					postId: a,
 					optionId: r,
-					coinPackageId: x,
+					coinPackageId: t,
 					price: k
-				}) => Object(t.a)(i, {
+				}) => Object(x.a)(i, {
 					...l,
 					variables: {
 						input: {
 							postId: a,
 							optionId: r,
-							coinPackageId: x,
+							coinPackageId: t,
 							price: k
 						}
 					}
@@ -2464,8 +1460,8 @@
 				h = (i, {
 					postId: a,
 					optionId: r
-				}) => Object(t.a)(i, {
-					...s,
+				}) => Object(x.a)(i, {
+					...m,
 					variables: {
 						input: {
 							postId: a,
@@ -2473,430 +1469,59 @@
 						}
 					}
 				});
-			var d;
+			var f;
 			! function(i) {
 				i.AllTime = "ALL_TIME", i.Monthly = "MONTHLY"
-			}(d || (d = {}));
-			const f = (i, {
+			}(f || (f = {}));
+			const d = (i, {
 					subredditId: a,
 					period: r,
-					top: x,
+					top: t,
 					includeCurrentRank: k,
 					tournamentId: n
-				}) => Object(t.a)(i, {
-					...e,
+				}) => Object(x.a)(i, {
+					...s,
 					variables: {
 						subredditId: a,
 						period: r,
-						top: x,
+						top: t,
 						includeCurrentRank: k,
 						tournamentId: n
 					}
 				}),
-				u = (i, a) => Object(t.a)(i, {
+				u = (i, a) => Object(x.a)(i, {
 					...k,
 					variables: {
 						input: a
 					}
 				}),
-				y = (i, a) => Object(t.a)(i, {
+				y = (i, a) => Object(x.a)(i, {
 					...o,
 					variables: a
 				}),
-				G = (i, a) => Object(t.a)(i, {
-					...x,
+				G = (i, a) => Object(x.a)(i, {
+					...t,
 					variables: {
 						input: a
 					}
 				}),
-				E = (i, a) => Object(t.a)(i, {
-					...m,
+				E = (i, a) => Object(x.a)(i, {
+					...e,
 					variables: {
 						input: a
 					}
 				}),
-				A = (i, a) => Object(t.a)(i, {
-					...m,
+				A = (i, a) => Object(x.a)(i, {
+					...e,
 					variables: {
 						input: a
 					}
 				})
-		},
-		"./src/reddit/endpoints/economics/specialMembership.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return e
-			})), r.d(a, "b", (function() {
-				return m
-			})), r.d(a, "d", (function() {
-				return l
-			})), r.d(a, "e", (function() {
-				return c
-			})), r.d(a, "c", (function() {
-				return p
-			}));
-			var t = r("./src/config.ts"),
-				x = r("./src/lib/omitHeaders/index.ts"),
-				k = r("./src/reddit/constants/headers.ts"),
-				n = r("./src/reddit/endpoints/governance/requester.ts"),
-				o = r("./src/reddit/helpers/governanceErrorText/index.ts"),
-				s = r("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts");
-
-			function e(i, a) {
-				return Object(n.a)(i, {
-					endpoint: `${t.a.metaUrl}/communities/${a.subredditId}/me`,
-					method: "patch",
-					data: {
-						specialMemberships: {
-							settings: {
-								renew: !1
-							}
-						}
-					}
-				})
-			}
-
-			function m(i, a) {
-				return Object(n.a)(i, {
-					endpoint: `${t.a.metaUrl}/ps/me/braintree-client-tokens`,
-					method: "post",
-					data: {
-						username: a && a.username
-					}
-				})
-			}
-
-			function l(i, a) {
-				return Object(n.a)(i, {
-					endpoint: `${t.a.metaUrl}/orders`,
-					method: "post",
-					data: {
-						currency: "usd",
-						orderTarget: "special_membership",
-						price: a.trial ? "0" : a.price,
-						products: [{
-							productId: a.productId,
-							quantity: "1"
-						}],
-						providerArgs: {
-							paymentNonce: a.nonce,
-							savePaymentMethod: !0
-						},
-						providerName: "braintree",
-						subredditId: a.subredditId,
-						targetArgs: {
-							renew: !0,
-							receiverName: a.username
-						}
-					}
-				})
-			}
-
-			function c(i, a) {
-				return Object(n.a)(Object(x.a)(i, [k.a]), {
-					endpoint: `${i.apiUrl}/api/info?id=${a.join(",")}`,
-					method: "get"
-				}).then(i => {
-					if (i.ok) {
-						const a = i.body.data.children.map(({
-							data: i
-						}) => Object(s.a)(i)).reduce((i, a) => (i[a.id] = a, i), {});
-						return {
-							...i,
-							body: a
-						}
-					}
-					return i
-				})
-			}
-			async function p(i, a) {
-				const r = await Object(n.a)(i, {
-					endpoint: `${t.a.metaUrl}/orders`,
-					method: "post",
-					data: {
-						...a,
-						currency: "points",
-						orderTarget: "special_membership",
-						products: [{
-							productId: "provisional_membership",
-							quantity: "1"
-						}],
-						targetArgs: {
-							renew: !1
-						}
-					}
-				});
-				if (!r.ok) throw new Error(`Error fetching provisional membership: ${Object(o.b)(r.error)}`);
-				return r.body
-			}
-		},
-		"./src/reddit/endpoints/economics/subredditPremium.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return m
-			})), r.d(a, "b", (function() {
-				return l
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var t = r("./node_modules/lodash/merge.js"),
-				x = r.n(t),
-				k = r("./src/config.ts"),
-				n = r("./src/reddit/endpoints/governance/badges.ts"),
-				o = r("./src/reddit/endpoints/governance/community.ts"),
-				s = r("./src/reddit/endpoints/governance/products/badges.ts"),
-				e = r("./src/reddit/endpoints/governance/requester.ts");
-			async function m(i, a, r) {
-				const t = {
-						subredditId: a,
-						badges: {},
-						errors: {},
-						collections: {},
-						products: {},
-						subscription: void 0,
-						userOwnedBadges: []
-					},
-					m = function(i, a) {
-						return Object(e.a)(i, {
-							method: "get",
-							endpoint: `${k.a.metaUrl}/product-collections/${a}?types=badge`
-						})
-					}(i, a),
-					l = Object(o.a)(i, {
-						subredditId: a
-					}),
-					c = Object(s.b)(i, a),
-					p = Object(n.c)(i, a, r),
-					[h, d, f, u] = await Promise.all([m, l, c, p]);
-				if (h.ok ? t.collections = h.body : t.errors.collections = h.error, d.ok) {
-					const i = d.body;
-					t.subscription = i.specialMemberships, t.communityRaw = i
-				}
-				return f.ok ? t.products = f.body : t.errors.products = f.error, u.ok ? (x()(t.badges, u.body.badges), t.userOwnedBadges = u.body.userOwnedBadges) : t.errors.userBadges = u.error, t
-			}
-			const l = (i, a) => Object(e.a)(i, {
-				endpoint: `${k.a.metaUrl}/products/${a}?types=badge,membership`,
-				method: "delete"
-			})
-		},
-		"./src/reddit/endpoints/governance/badges.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "b", (function() {
-				return k
-			})), r.d(a, "c", (function() {
-				return n
-			})), r.d(a, "a", (function() {
-				return o
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var t = r("./src/config.ts"),
-				x = r("./src/reddit/endpoints/governance/requester.ts");
-			async function k(i, a, r) {
-				const k = Object(x.a)(i, {
-						headers: {
-							"X-HTTP-Method-Override": "GET"
-						},
-						method: "post",
-						endpoint: `${t.a.metaUrl}/badges/${a}`,
-						data: {
-							selected: !0,
-							users: r
-						}
-					}),
-					n = await k;
-				if (n.ok) {
-					const i = {},
-						a = {},
-						r = n.body;
-					return Object.keys(r).forEach(t => {
-						const x = r[t];
-						a[t] = x, i[x.userId] || (i[x.userId] = []), i[x.userId].push(x.id)
-					}), {
-						...n,
-						body: {
-							badges: a,
-							usersAppliedBadges: i
-						}
-					}
-				}
-				return n
-			}
-			async function n(i, a, r) {
-				const k = await Object(x.a)(i, {
-					method: "get",
-					endpoint: `${t.a.metaUrl}/badges/${a}?users=${r}`
-				});
-				if (k.ok) {
-					const i = {},
-						a = [],
-						r = k.body;
-					return Object.keys(r).forEach(t => {
-						const x = r[t];
-						i[t] = x, a.push(x.id)
-					}), {
-						...k,
-						body: {
-							badges: i,
-							userOwnedBadges: a
-						}
-					}
-				}
-				return k
-			}
-
-			function o(i, a, r, k = !0) {
-				return Object(x.a)(i, {
-					method: "patch",
-					endpoint: `${t.a.metaUrl}/badges/${a}/${r}`,
-					data: {
-						selected: k
-					}
-				})
-			}
-		},
-		"./src/reddit/endpoints/governance/community.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return n
-			}));
-			var t = r("./src/config.ts"),
-				x = r("./src/lib/constants/index.ts"),
-				k = r("./src/reddit/endpoints/governance/requester.ts");
-
-			function n(i, a) {
-				return Object(k.a)(i, {
-					endpoint: `${t.a.metaUrl}/communities/${a.subredditId}/me`,
-					method: x.cb.GET
-				})
-			}
-		},
-		"./src/reddit/endpoints/governance/products/badges.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return k
-			})), r.d(a, "b", (function() {
-				return n
-			})), r.d(a, "c", (function() {
-				return o
-			})), r.d(a, "d", (function() {
-				return s
-			}));
-			var t = r("./src/config.ts"),
-				x = r("./src/reddit/endpoints/governance/requester.ts");
-
-			function k(i, a) {
-				return Object(x.a)(i, {
-					method: "get",
-					endpoint: `${t.a.metaUrl}/products/${a}?types=badge`
-				})
-			}
-
-			function n(i, a) {
-				return Object(x.a)(i, {
-					method: "get",
-					endpoint: `${t.a.metaUrl}/products/${a}?types=badge,membership`
-				})
-			}
-
-			function o(i, a) {
-				return Object(x.a)(i, {
-					method: "post",
-					endpoint: `${t.a.metaUrl}/orders`,
-					data: a
-				})
-			}
-
-			function s(i, a) {
-				return Object(x.a)(i, {
-					method: "post",
-					endpoint: `${t.a.metaUrl}/orders`,
-					data: {
-						currency: "usd",
-						price: a.price,
-						products: a.products,
-						providerArgs: {
-							paymentNonce: a.nonce
-						},
-						providerName: "braintree",
-						subredditId: a.subredditId
-					}
-				})
-			}
-		},
-		"./src/reddit/endpoints/governance/wallet.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return n
-			})), r.d(a, "b", (function() {
-				return o
-			}));
-			var t = r("./src/config.ts"),
-				x = (r("./src/lib/bigNumberUtils/percent.ts"), r("./src/lib/constants/index.ts")),
-				k = r("./src/reddit/endpoints/governance/requester.ts");
-
-			function n(i, a) {
-				return Object(k.a)(i, {
-					endpoint: `${t.a.metaUrl}/wallets/${a.subredditId}/me`,
-					method: x.cb.GET
-				}).then(i => {
-					if (i.ok) {
-						const r = i.body,
-							t = {
-								[a.subredditId]: r
-							};
-						return {
-							...i,
-							body: t
-						}
-					}
-					return i
-				})
-			}
-
-			function o(i, a) {
-				return Object(k.a)(i, {
-					headers: {
-						"X-HTTP-Method-Override": "GET"
-					},
-					endpoint: `${t.a.metaUrl}/wallets/${a.subredditId}`,
-					method: x.cb.POST,
-					data: a.userIds
-				}).then(i => i.ok ? {
-					...i,
-					body: {
-						wallets: i.body
-					}
-				} : i)
-			}
-		},
-		"./src/reddit/helpers/governanceErrorText/index.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return k
-			})), r.d(a, "b", (function() {
-				return n
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var t = r("./node_modules/fbt/lib/FbtPublic.js");
-
-			function x(i) {
-				return i[0].toUpperCase() + i.slice(1)
-			}
-
-			function k(i) {
-				return "extra" in i ? "string" == typeof i.extra ? i.extra : Object.keys(i.extra).map(a => i.extra[a]).map(x).join(" ") : t.fbt._("Something went wrong. Please try again later.", null, {
-					hk: "16ibYk"
-				})
-			}
-
-			function n(i) {
-				const a = `${i.type} (${i.code})`;
-				return "message" in i ? `${a}: ${i.message}` : a
-			}
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(i, a, r) {
 			"use strict";
 			r.d(a, "e", (function() {
-				return x
+				return t
 			})), r.d(a, "f", (function() {
 				return k
 			})), r.d(a, "g", (function() {
@@ -2904,69 +1529,69 @@
 			})), r.d(a, "c", (function() {
 				return o
 			})), r.d(a, "i", (function() {
-				return s
-			})), r.d(a, "d", (function() {
-				return e
-			})), r.d(a, "a", (function() {
 				return m
+			})), r.d(a, "d", (function() {
+				return s
+			})), r.d(a, "a", (function() {
+				return e
 			})), r.d(a, "h", (function() {
 				return l
 			})), r.d(a, "b", (function() {
 				return c
 			}));
-			var t = r("./src/reddit/selectors/telemetry.ts");
-			const x = i => ({
-					...Object(t.defaults)(i),
+			var x = r("./src/reddit/selectors/telemetry.ts");
+			const t = i => ({
+					...Object(x.defaults)(i),
 					source: "poll",
 					action: "select",
 					noun: "poll_option"
 				}),
 				k = i => ({
-					...Object(t.defaults)(i),
+					...Object(x.defaults)(i),
 					source: "poll",
 					action: "select",
 					noun: "prediction_option"
 				}),
 				n = i => ({
-					...Object(t.defaults)(i),
+					...Object(x.defaults)(i),
 					source: "poll",
 					action: "view",
 					noun: "predict_info_modal"
 				}),
 				o = i => ({
-					...Object(t.defaults)(i),
+					...Object(x.defaults)(i),
 					source: "poll",
 					action: "close",
 					noun: "predict_info_modal"
 				}),
-				s = i => ({
-					...Object(t.defaults)(i),
+				m = i => ({
+					...Object(x.defaults)(i),
 					source: "poll",
 					action: "view",
 					noun: "predict_option_modal"
 				}),
-				e = ({
+				s = ({
 					pollId: i,
 					selectedNumberCoins: a,
 					totalStakeAmount: r
-				}) => x => ({
-					...Object(t.defaults)(x),
+				}) => t => ({
+					...Object(x.defaults)(t),
 					source: "poll",
 					action: "confirm",
 					noun: "predict",
-					poll: Object(t.poll)(x, i, !1, void 0, a),
+					poll: Object(x.poll)(t, i, !1, void 0, a),
 					goldPurchase: {
 						numberCoins: r
 					}
 				}),
-				m = i => ({
-					...Object(t.defaults)(i),
+				e = i => ({
+					...Object(x.defaults)(i),
 					source: "poll",
 					action: "click",
 					noun: "add_coins"
 				}),
 				l = i => a => ({
-					...Object(t.defaults)(a),
+					...Object(x.defaults)(a),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2978,7 +1603,7 @@
 				c = ({
 					targetUserId: i
 				}) => a => ({
-					...Object(t.defaults)(a),
+					...Object(x.defaults)(a),
 					source: "prediction",
 					action: "click",
 					noun: "leaderboard_profile",
@@ -2992,40 +1617,40 @@
 			r.d(a, "a", (function() {
 				return k
 			}));
-			var t = r("./node_modules/react/index.js"),
-				x = r("./src/reddit/helpers/localStorage/index.ts");
+			var x = r("./node_modules/react/index.js"),
+				t = r("./src/reddit/helpers/localStorage/index.ts");
 
 			function k(i, a) {
 				let r;
-				r = Object(x.r)(i);
-				const [k, n] = Object(t.useState)(null != r ? r : a);
+				r = Object(t.r)(i);
+				const [k, n] = Object(x.useState)(null != r ? r : a);
 				return [k, function(a) {
-					Object(x.kb)(i, a), n(a)
+					Object(t.kb)(i, a), n(a)
 				}]
 			}
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(i, a, r) {
 			"use strict";
-			var t = r("./node_modules/react/index.js"),
-				x = r.n(t);
-			a.a = i => x.a.createElement("svg", {
+			var x = r("./node_modules/react/index.js"),
+				t = r.n(x);
+			a.a = i => t.a.createElement("svg", {
 				className: i.className,
 				viewBox: "0 0 20 22",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, x.a.createElement("g", null, x.a.createElement("path", {
+			}, t.a.createElement("g", null, t.a.createElement("path", {
 				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
 				fill: "inherit"
 			})))
 		},
 		"./src/reddit/icons/svgs/ClockFilled/index.tsx": function(i, a, r) {
 			"use strict";
-			var t = r("./node_modules/react/index.js"),
-				x = r.n(t);
-			a.a = i => x.a.createElement("svg", {
+			var x = r("./node_modules/react/index.js"),
+				t = r.n(x);
+			a.a = i => t.a.createElement("svg", {
 				className: i.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 16 16"
-			}, x.a.createElement("path", {
+			}, t.a.createElement("path", {
 				fillRule: "evenodd",
 				clipRule: "evenodd",
 				d: "M11.901 11.809C11.803 11.909 11.673 11.959 11.543 11.959C11.417 11.959 11.291 11.913 11.194 11.817L7.651 8.358C7.554 8.264 7.5 8.135 7.5 8V3C7.5 2.724 7.724 2.5 8 2.5C8.276 2.5 8.5 2.724 8.5 3V7.789L11.892 11.102C12.09 11.294 12.094 11.611 11.901 11.809ZM8 0C3.589 0 0 3.589 0 8C0 12.412 3.589 16 8 16C12.411 16 16 12.412 16 8C16 3.589 12.411 0 8 0Z",
@@ -3040,46 +1665,46 @@
 		},
 		"./src/reddit/icons/svgs/CoinV2/index.tsx": function(i, a, r) {
 			"use strict";
-			var t = r("./node_modules/react/index.js"),
-				x = r.n(t),
+			var x = r("./node_modules/react/index.js"),
+				t = r.n(x),
 				k = r("./src/lib/classNames/index.ts"),
 				n = r("./src/reddit/icons/svgs/CoinV2/index.m.less"),
 				o = r.n(n);
-			a.a = i => x.a.createElement("svg", {
+			a.a = i => t.a.createElement("svg", {
 				className: i.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, x.a.createElement("path", {
+			}, t.a.createElement("path", {
 				className: Object(k.a)(o.a.shadow, i.shadowClassName),
 				d: "M11.1 1.889H8.722v16.219h2.212a5.86 5.86 0 001.951-.274c3.658-1.158 5.837-5.614 4.856-9.933C16.92 4.28 14.134 1.886 11.1 1.89z"
-			}), x.a.createElement("path", {
+			}), t.a.createElement("path", {
 				d: "M11.1 1.889H8.722v16.219h2.212a5.86 5.86 0 001.951-.274c3.658-1.158 5.837-5.614 4.856-9.933C16.92 4.28 14.134 1.886 11.1 1.89z",
 				fill: "url(#shine)",
 				fillOpacity: ".3"
-			}), x.a.createElement("path", {
+			}), t.a.createElement("path", {
 				className: Object(k.a)(o.a.standardColor, i.standardColorClassName),
 				d: "M6.991 2.166C3.334 3.324 1.155 7.78 2.135 12.1c.98 4.32 4.754 6.891 8.411 5.734 3.658-1.157 5.837-5.613 4.857-9.932-.98-4.32-4.754-6.892-8.412-5.735z"
-			}), x.a.createElement("path", {
+			}), t.a.createElement("path", {
 				className: Object(k.a)(o.a.shadow, i.shadowClassName),
 				d: "M7.54 12.335c1.122.765 2.664.277 3.311-1.047.224-.457.718-.613 1.104-.35.387.264.52.847.296 1.304-.54 1.103-1.41 1.892-2.453 2.222-1.043.33-2.13.16-3.065-.476-1.929-1.316-2.592-4.24-1.479-6.517.54-1.104 1.41-1.893 2.453-2.223 1.042-.33 2.13-.16 3.065.477.387.263.52.847.296 1.303-.223.456-.717.612-1.104.35-1.121-.765-2.663-.277-3.31 1.047-.669 1.367-.271 3.121.887 3.91z"
-			}), x.a.createElement("defs", null, x.a.createElement("linearGradient", {
+			}), t.a.createElement("defs", null, t.a.createElement("linearGradient", {
 				id: "shine",
 				x1: "11.107",
 				y1: "1.889",
 				x2: "11.107",
 				y2: "18.111",
 				gradientUnits: "userSpaceOnUse"
-			}, x.a.createElement("stop", {
+			}, t.a.createElement("stop", {
 				offset: ".063",
 				stopColor: "#fff",
 				stopOpacity: "0"
-			}), x.a.createElement("stop", {
+			}), t.a.createElement("stop", {
 				offset: ".302",
 				stopColor: "#fff"
-			}), x.a.createElement("stop", {
+			}), t.a.createElement("stop", {
 				offset: "0.432",
 				stopColor: "#fff"
-			}), x.a.createElement("stop", {
+			}), t.a.createElement("stop", {
 				offset: "0.474",
 				stopColor: "#fff",
 				stopOpacity: "0"
@@ -3087,340 +1712,18 @@
 		},
 		"./src/reddit/icons/svgs/Minus/index.tsx": function(i, a, r) {
 			"use strict";
-			var t = r("./node_modules/react/index.js"),
-				x = r.n(t);
-			a.a = i => x.a.createElement("svg", {
+			var x = r("./node_modules/react/index.js"),
+				t = r.n(x);
+			a.a = i => t.a.createElement("svg", {
 				className: i.className,
 				viewBox: "0 0 20 20",
 				version: "1.1"
-			}, x.a.createElement("g", {
+			}, t.a.createElement("g", {
 				transform: "translate(4, 8), scale(0.75)"
-			}, x.a.createElement("path", {
+			}, t.a.createElement("path", {
 				d: "M10.3785 4.86328H14.9734C15.6086 4.86328 16.1221 4.3498 16.1221 3.71456V1.41713C16.1221 0.781889 15.6086 0.268413 14.9734 0.268413H10.3785H5.78363H1.18876C0.554665 0.268413 0.0400391 0.781889 0.0400391 1.41713V3.71456C0.0400391 4.3498 0.554665 4.86328 1.18876 4.86328H5.78363H10.3785Z"
 			})))
-		},
-		"./src/reddit/models/Payments/index.ts": function(i, a, r) {
-			"use strict";
-			var t, x, k;
-			r.d(a, "a", (function() {
-					return x
-				})),
-				function(i) {
-					i.PayPal = "paypal", i.Stripe = "stripe"
-				}(t || (t = {})),
-				function(i) {
-					i.NewPayPal = "new-paypal", i.NewStripe = "new-stripe", i.SavedPayPal = "saved-paypal", i.SavedStripe = "saved-stripe"
-				}(x || (x = {})),
-				function(i) {
-					i.Comment = "comment", i.Post = "post", i.Profile = "profile", i.Subreddit = "subreddit"
-				}(k || (k = {}))
-		},
-		"./src/reddit/selectors/economics.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "c", (function() {
-				return d
-			})), r.d(a, "n", (function() {
-				return f
-			})), r.d(a, "a", (function() {
-				return u
-			})), r.d(a, "v", (function() {
-				return y
-			})), r.d(a, "f", (function() {
-				return G
-			})), r.d(a, "p", (function() {
-				return E
-			})), r.d(a, "h", (function() {
-				return A
-			})), r.d(a, "x", (function() {
-				return D
-			})), r.d(a, "k", (function() {
-				return B
-			})), r.d(a, "m", (function() {
-				return V
-			})), r.d(a, "e", (function() {
-				return b
-			})), r.d(a, "d", (function() {
-				return F
-			})), r.d(a, "i", (function() {
-				return g
-			})), r.d(a, "o", (function() {
-				return v
-			})), r.d(a, "j", (function() {
-				return T
-			})), r.d(a, "q", (function() {
-				return O
-			})), r.d(a, "w", (function() {
-				return j
-			})), r.d(a, "s", (function() {
-				return C
-			})), r.d(a, "t", (function() {
-				return N
-			})), r.d(a, "b", (function() {
-				return w
-			})), r.d(a, "u", (function() {
-				return I
-			})), r.d(a, "r", (function() {
-				return L
-			})), r.d(a, "g", (function() {
-				return M
-			})), r.d(a, "l", (function() {
-				return R
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var t = r("./src/reddit/featureFlags/index.ts"),
-				x = r("./src/reddit/helpers/economics/sortBadges.ts"),
-				k = r("./src/reddit/helpers/richTextJson/index.ts"),
-				n = r("./src/reddit/models/Badge/index.ts"),
-				o = r("./src/reddit/models/Badge/managementPage.ts"),
-				s = r("./src/reddit/models/Gold/Powerups/index.ts"),
-				e = r("./src/reddit/models/Payments/index.ts"),
-				m = r("./src/reddit/models/Product/index.ts"),
-				l = r("./src/reddit/reducers/economics/paymentSystems/index.ts"),
-				c = r("./src/reddit/reducers/economics/subredditPremium/index.ts"),
-				p = r("./src/reddit/selectors/commentSelector.ts"),
-				h = r("./src/reddit/selectors/gold/powerups.ts");
-			const d = (i, a) => {
-					const r = i.economics.subredditPremium[a];
-					if (r && r.status === c.a.Fetched) {
-						const i = r.data.subscription,
-							a = i && i.active;
-						if (a) {
-							let i = Object.keys(a);
-							return i.length > 1 && (i = i.filter(i => "provisional_membership" !== i)), a[i[0]] || null
-						}
-					}
-					return null
-				},
-				f = (i, a) => {
-					const r = d(i, a);
-					return r && r.endsAt || null
-				};
-			var u;
-			! function(i) {
-				i[i.DontKnow = 0] = "DontKnow", i[i.NotSubscribed = 1] = "NotSubscribed", i[i.Subscribed = 2] = "Subscribed"
-			}(u || (u = {}));
-			const y = (i, a) => {
-					const r = i.economics.subredditPremium[a];
-					if (r && r.status === c.a.Fetched) {
-						const r = f(i, a),
-							t = Date.now();
-						return r && t < r ? u.Subscribed : u.NotSubscribed
-					}
-					return u.DontKnow
-				},
-				G = (i, a) => {
-					const r = i.user.account,
-						t = i.economics.subredditPremium[a];
-					if (r && t && t.status === c.a.Fetched) {
-						const t = ((i.users.appliedBadges[r.id] || {})[a] || []).map(a => i.badges.models[a]).filter(Boolean);
-						if (t) return {
-							[o.a.Loyalty]: t.find(i => i.placement === n.a.First),
-							[o.a.Achievement]: t.find(i => i.placement === n.a.Second),
-							[o.a.Cosmetic]: t.find(i => !i.placement)
-						}
-					}
-					return {
-						[o.a.Loyalty]: void 0,
-						[o.a.Achievement]: void 0,
-						[o.a.Cosmetic]: void 0
-					}
-				},
-				E = (i, a, r) => {
-					if (!t.d.spBadges(i)) return [];
-					const k = (i.users.appliedBadges[r] || {})[a] || [];
-					return Object(x.a)(k.map(a => i.badges.models[a]).filter(Boolean))
-				},
-				A = (i, a) => {
-					const r = i.economics.subredditPremium[a.subredditId];
-					if (r && r.status === c.a.Fetched) {
-						const i = r.raw.collections[a.collectionId];
-						if (i) return {
-							highlight: i.extra && i.extra.style && i.extra.style.color,
-							title: i.title
-						}
-					}
-				};
-
-			function D(i, a) {
-				const r = (i.economics.me.data.specialMemberships || {})[a];
-				return !!(r && r.settings && r.settings.optOut)
-			}
-
-			function B(i, a) {
-				const {
-					badge: r,
-					subredditId: t
-				} = a, x = i.user.account ? i.user.account.id : void 0;
-				if (Object(n.e)(r) && r.userId === x) return r;
-				const k = i.badges.models,
-					o = i.user.ownedBadges[t] || {},
-					s = Object(n.e)(r) ? r.type : r.id;
-				return Object.keys(o).map(i => k[i]).find(i => i && i.type === s)
-			}
-
-			function V(i, a, r, t) {
-				const x = i.economics.subredditPremium[a];
-				if (x && x.status === c.a.Fetched) {
-					if (r === o.a.Loyalty || r === o.a.Achievement) return x.data.collections[r];
-					if (r === o.a.Cosmetic && t) return x.data.collections[r][t]
-				}
-				return []
-			}
-
-			function b(i, a) {
-				const r = V(i, a, o.a.Loyalty).find(i => "membership" === i.id);
-				return r ? [].concat(r.locked, r.unlocked).filter(i => i.position).sort((i, a) => i.position - a.position) : []
-			}
-
-			function F(i, a) {
-				const r = i.economics.subredditPremium[a];
-				if (r && r.status === c.a.Fetched) {
-					const i = r.data.collections[o.a.Cosmetic];
-					return Object.values(i).reduce((i, a) => i.concat(a), []).reduce((i, a) => i.concat(a.locked, a.unlocked), []).filter(n.f)
-				}
-				return []
-			}
-
-			function g(i, a) {
-				return V(i, a, o.a.Cosmetic, o.c.Gallery).some(i => i.locked.some(i => Object(n.f)(i) || !!i.price))
-			}
-			const v = i => {
-				const a = [],
-					r = i.economics.paymentSystems;
-				if (r.status === l.a.Fetched && r.data.stripe && r.data.stripe.sources) {
-					const i = r.data.stripe.sources;
-					for (const r in i) {
-						const t = i[r];
-						a.push({
-							display: `${t.brand} •••• ${t.last4}`,
-							id: r,
-							type: e.a.SavedStripe
-						})
-					}
-				}
-				if (r.status === l.a.Fetched && r.data.braintree && r.data.braintree.sources) {
-					const i = r.data.braintree.sources;
-					for (const r in i) {
-						const t = i[r];
-						"PayPal" === t.brand && a.push({
-							display: "PayPal",
-							id: t.id,
-							type: e.a.SavedPayPal
-						})
-					}
-				}
-				return a
-			};
-			var P;
-			! function(i) {
-				i[i.Fetched = 0] = "Fetched", i[i.Fetching = 1] = "Fetching", i[i.NotFetched = 2] = "NotFetched"
-			}(P || (P = {}));
-			const S = {
-					prices: {},
-					member: "Supporter",
-					memberPlural: "Supporters",
-					memberAlt: "Subreddit Supporter",
-					memberAltPlural: "Subreddit Supporters",
-					membership: "Membership",
-					membershipAlt: "Supporter Membership"
-				},
-				T = (i, a) => Object.values(i.products.models).filter(i => i.type === m.a.Membership && a && i.subredditId === a),
-				_ = (i, a) => {
-					if (!a) return {};
-					const r = S.prices;
-					T(i, a).forEach(i => {
-						i.price && i.currency && (r[i.currency] = i.price)
-					});
-					const t = d(i, a);
-					return t && t.price && t.currency && (r[t.currency] = t.price), r
-				},
-				O = (i, a) => {
-					const r = i.subreddits.gov.meta[a || ""],
-						t = r && r.extra && r.extra.nomenclature || S;
-					return {
-						prices: _(i, a),
-						member: t.member || S.member,
-						memberPlural: t.memberPlural || S.memberPlural,
-						memberAlt: t.memberAlt || S.memberAlt,
-						memberAltPlural: t.memberAltPlural || S.memberAltPlural,
-						membership: t.membership || S.membership,
-						membershipAlt: t.membershipAlt || S.membershipAlt
-					}
-				},
-				j = i => {
-					const a = i.economics.paymentSystems;
-					return !!(a.status === l.a.Fetched && a.data && a.data.tips && a.data.tips.usdr && a.data.tips.usdr.allowed)
-				},
-				C = (i, a) => {
-					const r = i.user.ownedBadges[a] || {};
-					return !!Object.keys(r).length
-				},
-				N = i => {
-					const a = i.economics.paymentSystems;
-					return a.status === l.a.Fetched && !!a.data && !!a.data.stripe && !!a.data.stripe.stripeAccountId
-				},
-				w = (i, {
-					subredditId: a
-				}) => {
-					if (!a) return;
-					return i.economics.emotes[a]
-				},
-				I = (i, a) => {
-					const r = a && i.economics.gifs[a];
-					return !!r && r.hasGifProduct
-				},
-				L = (i, a, r) => {
-					const x = "replyToPost" !== r && Object(p.a)(i, {
-						commentId: r
-					});
-					if (!!x && Object(k.a)(x)) return !0;
-					if (a && Object(h.m)(i, {
-							subredditId: a,
-							benefit: s.a.CommentsWithGifs
-						})) return !0;
-					const n = t.d.spGiphy(i),
-						o = I(i, a);
-					return n && o
-				},
-				M = (i, a, r) => {
-					if (a) {
-						const t = i.economics.banners.dismissedBanners[a];
-						if (t && t.data) return !!t.data[r]
-					}
-				},
-				R = i => i.economics.pointsCopy.data
-		},
-		"./src/reddit/selectors/products.ts": function(i, a, r) {
-			"use strict";
-			r.d(a, "a", (function() {
-				return x
-			})), r.d(a, "b", (function() {
-				return k
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var t = r("./src/reddit/models/Product/index.ts");
-			const x = (i, a) => {
-					const r = i.products.models[a];
-					if (r && r.type === t.a.Badge) return r
-				},
-				k = (i, {
-					productId: a
-				}) => {
-					const r = i.products.models[a];
-					if (r) {
-						const t = r.subredditId,
-							x = Object.keys(i.user.ownedBadges[t] || {}),
-							k = i.badges.models,
-							n = Date.now();
-						let o = !1;
-						return x.forEach(i => {
-							const r = k[i];
-							r && r.type === a && r.endsAt > n && (o = !0)
-						}), o
-					}
-					return !1
-				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.66f10a3c7d41a029d5b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.3cb76dd3d1595f1c5432.js.map

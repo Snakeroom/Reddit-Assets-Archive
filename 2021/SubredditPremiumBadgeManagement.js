@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.8c23e5320815b5ef5127.js
-// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.8555db7b466746291417.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["SubredditPremiumBadgeManagement"], {
+	["SubredditPremiumBadgeManagement", "EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
 			var a = s("./node_modules/lodash/_baseCreate.js"),
 				n = s("./node_modules/lodash/_baseLodash.js"),
@@ -3448,4 +3448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.8c23e5320815b5ef5127.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.8555db7b466746291417.js.map

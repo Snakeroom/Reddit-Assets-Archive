@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.e47ed7f48861f9ad184f.js
-// Retrieved at 3/1/2021, 12:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.287a3c80f60024b587df.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["CommunityPointsLearnMore"], {
+	["CommunityPointsLearnMore", "EconHelperActions"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
 			"use strict";
 			var n = {
@@ -1994,4 +1994,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.e47ed7f48861f9ad184f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.287a3c80f60024b587df.js.map

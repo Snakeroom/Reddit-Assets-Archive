@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.30f1281581c56a7a3680.js
-// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.3500846e924b10e2b9d5.js
+// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1281,7 +1281,7 @@
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return Z
+				return Q
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -1510,7 +1510,7 @@
 				}
 			}
 			const K = Object(m.b)(Object(u.a)(Object(a.a)(z)));
-			class Z extends r.a.Component {
+			class Q extends r.a.Component {
 				render() {
 					return r.a.createElement(K, this.props)
 				}
@@ -1917,8 +1917,8 @@
 				z = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
 				K = s.n(z);
 
-			function Z() {
-				return (Z = Object.assign || function(e) {
+			function Q() {
+				return (Q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -1926,7 +1926,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			class Q extends i.a.Component {
+			class Z extends i.a.Component {
 				render() {
 					const {
 						autoplayPref: e,
@@ -1991,9 +1991,9 @@
 						flairStyleTemplate: a
 					}, i.a.createElement("div", {
 						className: Object(c.a)(K.a.innerContainer, q.a.innerContainer)
-					}, _ && w && i.a.createElement(k, Z({
+					}, _ && w && i.a.createElement(k, Q({
 						created: p.created
-					}, I)), y && w && i.a.createElement(O, Z({
+					}, I)), y && w && i.a.createElement(O, Q({
 						created: p.created,
 						author: p.author
 					}, I)), i.a.createElement(B.c, {
@@ -2038,7 +2038,7 @@
 					}))))), i.a.createElement(N.d, null))
 				}
 			}
-			const $ = Object(W.b)(Object(R.a)(Object(v.a)(Q)));
+			const $ = Object(W.b)(Object(R.a)(Object(v.a)(Z)));
 			class ee extends i.a.Component {
 				render() {
 					return i.a.createElement($, this.props)
@@ -4316,11 +4316,11 @@
 				autoplayPref: h.b,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: l.R,
+				flairStyleTemplate: l.S,
 				hideNSFWPref: h.B,
 				isActive: p.j,
 				moderatorPermissions: u.h,
-				modModeEnabled: l.P,
+				modModeEnabled: l.Q,
 				showEditFlair: m.a
 			}), (e, {
 				postId: t
@@ -4908,4 +4908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.30f1281581c56a7a3680.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.3500846e924b10e2b9d5.js.map
