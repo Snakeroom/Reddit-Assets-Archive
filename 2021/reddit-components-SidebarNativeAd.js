@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e5246b8047a1cd1580d6.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9a09937ad9f4841ab78b.js
+// Retrieved at 3/10/2021, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -276,6 +276,63 @@
 				var c = a(e) ? n : i,
 					d = arguments.length < 3;
 				return c(e, o(t, 4), r, d, s)
+			}
+		},
+		"./node_modules/react-fast-compare/index.js": function(e, t) {
+			var r = "undefined" != typeof Element,
+				n = "function" == typeof Map,
+				s = "function" == typeof Set,
+				o = "function" == typeof ArrayBuffer && !!ArrayBuffer.isView;
+			e.exports = function(e, t) {
+				try {
+					return function e(t, i) {
+						if (t === i) return !0;
+						if (t && i && "object" == typeof t && "object" == typeof i) {
+							if (t.constructor !== i.constructor) return !1;
+							var a, c, d, u;
+							if (Array.isArray(t)) {
+								if ((a = t.length) != i.length) return !1;
+								for (c = a; 0 != c--;)
+									if (!e(t[c], i[c])) return !1;
+								return !0
+							}
+							if (n && t instanceof Map && i instanceof Map) {
+								if (t.size !== i.size) return !1;
+								for (u = t.entries(); !(c = u.next()).done;)
+									if (!i.has(c.value[0])) return !1;
+								for (u = t.entries(); !(c = u.next()).done;)
+									if (!e(c.value[1], i.get(c.value[0]))) return !1;
+								return !0
+							}
+							if (s && t instanceof Set && i instanceof Set) {
+								if (t.size !== i.size) return !1;
+								for (u = t.entries(); !(c = u.next()).done;)
+									if (!i.has(c.value[0])) return !1;
+								return !0
+							}
+							if (o && ArrayBuffer.isView(t) && ArrayBuffer.isView(i)) {
+								if ((a = t.length) != i.length) return !1;
+								for (c = a; 0 != c--;)
+									if (t[c] !== i[c]) return !1;
+								return !0
+							}
+							if (t.constructor === RegExp) return t.source === i.source && t.flags === i.flags;
+							if (t.valueOf !== Object.prototype.valueOf) return t.valueOf() === i.valueOf();
+							if (t.toString !== Object.prototype.toString) return t.toString() === i.toString();
+							if ((a = (d = Object.keys(t)).length) !== Object.keys(i).length) return !1;
+							for (c = a; 0 != c--;)
+								if (!Object.prototype.hasOwnProperty.call(i, d[c])) return !1;
+							if (r && t instanceof Element) return !1;
+							for (c = a; 0 != c--;)
+								if (("_owner" !== d[c] && "__v" !== d[c] && "__o" !== d[c] || !t.$$typeof) && !e(t[d[c]], i[d[c]])) return !1;
+							return !0
+						}
+						return t != t && i != i
+					}(e, t)
+				} catch (i) {
+					if ((i.message || "").match(/stack|recursion/i)) return console.warn("react-fast-compare cannot handle circular refs"), !1;
+					throw i
+				}
 			}
 		},
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, r) {
@@ -1283,7 +1340,7 @@
 						}
 					}]
 				}),
-				ce = r("./node_modules/react-popper/node_modules/react-fast-compare/index.js"),
+				ce = r("./node_modules/react-fast-compare/index.js"),
 				de = r.n(ce),
 				ue = function(e) {
 					return e.reduce((function(e, t) {
@@ -1366,63 +1423,6 @@
 						forceUpdate: l.current ? l.current.forceUpdate : null
 					}
 				}
-		},
-		"./node_modules/react-popper/node_modules/react-fast-compare/index.js": function(e, t) {
-			var r = "undefined" != typeof Element,
-				n = "function" == typeof Map,
-				s = "function" == typeof Set,
-				o = "function" == typeof ArrayBuffer && !!ArrayBuffer.isView;
-			e.exports = function(e, t) {
-				try {
-					return function e(t, i) {
-						if (t === i) return !0;
-						if (t && i && "object" == typeof t && "object" == typeof i) {
-							if (t.constructor !== i.constructor) return !1;
-							var a, c, d, u;
-							if (Array.isArray(t)) {
-								if ((a = t.length) != i.length) return !1;
-								for (c = a; 0 != c--;)
-									if (!e(t[c], i[c])) return !1;
-								return !0
-							}
-							if (n && t instanceof Map && i instanceof Map) {
-								if (t.size !== i.size) return !1;
-								for (u = t.entries(); !(c = u.next()).done;)
-									if (!i.has(c.value[0])) return !1;
-								for (u = t.entries(); !(c = u.next()).done;)
-									if (!e(c.value[1], i.get(c.value[0]))) return !1;
-								return !0
-							}
-							if (s && t instanceof Set && i instanceof Set) {
-								if (t.size !== i.size) return !1;
-								for (u = t.entries(); !(c = u.next()).done;)
-									if (!i.has(c.value[0])) return !1;
-								return !0
-							}
-							if (o && ArrayBuffer.isView(t) && ArrayBuffer.isView(i)) {
-								if ((a = t.length) != i.length) return !1;
-								for (c = a; 0 != c--;)
-									if (t[c] !== i[c]) return !1;
-								return !0
-							}
-							if (t.constructor === RegExp) return t.source === i.source && t.flags === i.flags;
-							if (t.valueOf !== Object.prototype.valueOf) return t.valueOf() === i.valueOf();
-							if (t.toString !== Object.prototype.toString) return t.toString() === i.toString();
-							if ((a = (d = Object.keys(t)).length) !== Object.keys(i).length) return !1;
-							for (c = a; 0 != c--;)
-								if (!Object.prototype.hasOwnProperty.call(i, d[c])) return !1;
-							if (r && t instanceof Element) return !1;
-							for (c = a; 0 != c--;)
-								if (("_owner" !== d[c] && "__v" !== d[c] && "__o" !== d[c] || !t.$$typeof) && !e(t[d[c]], i[d[c]])) return !1;
-							return !0
-						}
-						return t != t && i != i
-					}(e, t)
-				} catch (i) {
-					if ((i.message || "").match(/stack|recursion/i)) return console.warn("react-fast-compare cannot handle circular refs"), !1;
-					throw i
-				}
-			}
 		},
 		"./node_modules/webpack/buildin/amd-define.js": function(e, t) {
 			e.exports = function() {
@@ -5248,4 +5248,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e5246b8047a1cd1580d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.9a09937ad9f4841ab78b.js.map

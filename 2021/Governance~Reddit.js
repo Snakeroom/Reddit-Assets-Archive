@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.396c197ba88762f84200.js
-// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4ead91da8d9d67b581c6.js
+// Retrieved at 3/10/2021, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -23781,44 +23781,63 @@
 		"./src/reddit/selectors/appBadges.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return c
-			})), r.d(t, "e", (function() {
-				return o
-			})), r.d(t, "d", (function() {
 				return d
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "e", (function() {
 				return i
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "d", (function() {
 				return u
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "c", (function() {
 				return l
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "f", (function() {
 				return p
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "a", (function() {
 				return b
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "h", (function() {
 				return f
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "g", (function() {
 				return y
+			})), r.d(t, "j", (function() {
+				return m
+			})), r.d(t, "i", (function() {
+				return E
 			}));
 			var s = r("./node_modules/reselect/es/index.js"),
 				n = r("./src/reddit/selectors/chat.ts"),
-				a = r("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts");
-			const c = e => e.appBadges.badges,
-				o = Object(s.a)(a.a, c, n.a, (e, t, r) => e ? t && t.directMessages && t.directMessages.count || 0 : r),
-				d = Object(s.a)(c, e => e && e.chatRooms && e.chatRooms.count || 0),
-				i = Object(s.a)(c, e => e && e.chatRoomMentions && e.chatRoomMentions.count || 0),
-				u = Object(s.a)(a.a, n.a, o, d, i, (e, t, r, s, n) => {
+				a = r("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts"),
+				c = r("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				o = r("./src/reddit/selectors/user.ts");
+			const d = e => e.appBadges.badges,
+				i = Object(s.a)(a.a, d, n.a, (e, t, r) => e ? t && t.directMessages && t.directMessages.count || 0 : r),
+				u = Object(s.a)(d, e => e && e.chatRooms && e.chatRooms.count || 0),
+				l = Object(s.a)(d, e => e && e.chatRoomMentions && e.chatRoomMentions.count || 0),
+				p = Object(s.a)(a.a, n.a, i, u, l, (e, t, r, s, n) => {
 					if (e) {
 						return r + s + n > 0
 					}
 					return t > 0
 				}),
-				l = Object(s.a)(c, e => e && e.activityTab && e.activityTab.count || 0),
-				p = Object(s.a)(c, e => e && e.messageTab && e.messageTab.count || 0),
-				b = Object(s.a)(l, p, (e, t) => e + t),
-				f = Object(s.a)(o, p, (e, t) => e + t),
-				y = Object(s.a)(o, b, (e, t) => e + t)
+				b = Object(s.a)(d, e => e && e.activityTab && e.activityTab.count || 0),
+				f = Object(s.a)(d, e => e && e.messageTab && e.messageTab.count || 0),
+				y = Object(s.a)(b, f, (e, t) => e + t),
+				m = Object(s.a)(i, f, (e, t) => e + t),
+				E = Object(s.a)(i, y, (e, t) => e + t);
+			Object(s.a)(o.J, a.a, E, m, f, o.E, i, n.a, c.d, (e, t, r, s, n, a, c, o, d) => {
+				if (!e) return 0;
+				const i = () => {
+					return {
+						inboxCount: t ? n : a || 0,
+						basicChannelCount: t ? c : o || 0
+					}
+				};
+				let u = 0;
+				return u = t ? d ? r : s : (() => {
+					const {
+						inboxCount: e,
+						basicChannelCount: t
+					} = i();
+					return e + t
+				})()
+			})
 		},
 		"./src/reddit/selectors/blockedRedditors.ts": function(e, t, r) {
 			"use strict";
@@ -24278,4 +24297,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.396c197ba88762f84200.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4ead91da8d9d67b581c6.js.map
