@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.abcb1d35556aec161c60.js
-// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.da356a219dfac2ca01f4.js
+// Retrieved at 3/10/2021, 4:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "EconHelperActions"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4625,24 +4625,22 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "i", (function() {
+			n.d(t, "h", (function() {
 				return a
-			})), n.d(t, "g", (function() {
-				return o
 			})), n.d(t, "f", (function() {
-				return d
+				return o
 			})), n.d(t, "e", (function() {
-				return c
-			})), n.d(t, "b", (function() {
-				return l
-			})), n.d(t, "c", (function() {
-				return u
-			})), n.d(t, "h", (function() {
-				return m
+				return d
 			})), n.d(t, "d", (function() {
-				return p
+				return c
 			})), n.d(t, "a", (function() {
-				return b
+				return l
+			})), n.d(t, "b", (function() {
+				return u
+			})), n.d(t, "g", (function() {
+				return m
+			})), n.d(t, "c", (function() {
+				return p
 			}));
 			var s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -4708,13 +4706,6 @@
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
-					...i(e),
-					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
-				}),
-				b = () => e => ({
-					source: "powerups",
-					action: "click",
-					noun: "add_custom_emojis",
 					...i(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				})
@@ -5026,4 +5017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.abcb1d35556aec161c60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.da356a219dfac2ca01f4.js.map
