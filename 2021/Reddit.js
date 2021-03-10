@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.09b43ca01b3eb9d6080e.js
-// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ceb399e2721c85d3e01d.js
+// Retrieved at 3/10/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6394,6 +6394,7 @@
 				}, e.displayText), u.a.createElement(Oi.a, {
 					className: tc.a.toggleSwitch,
 					"data-redditstyle": !0,
+					redditStyle: !0,
 					on: e.isEnabled
 				})),
 				cc = Object(p.b)(() => Object(g.c)({
@@ -11167,13 +11168,14 @@
 			e.exports = {
 				toggleDisplay: "_2FKpII1jz0h6xCAw1kQAvS",
 				toggleSwitch: "_2e2g485kpErHhJQUiyvvC2",
+				redditStyle: "_3kUvbpMbR21zJBboDdBH7D",
+				mActive: "_1L5kUnhRYhUJ4TkMbOTKkI",
+				mDisabled: "_3clF3xRMqSWmoBQpXv8U5z",
 				xs: "_1asGWL2_XadHoBuUlNArOq",
 				s: "_1hku5xiXsbqzLmszstPyR3",
 				m: "_10hZCcuqkss2sf5UbBMCSD",
 				l: "_1fCdbQCDv6tiX242k80-LO",
-				xl: "_2Jp5Pv4tgpAsTcnUzTsXgO",
-				mActive: "_1L5kUnhRYhUJ4TkMbOTKkI",
-				mDisabled: "_3clF3xRMqSWmoBQpXv8U5z"
+				xl: "_2Jp5Pv4tgpAsTcnUzTsXgO"
 			}
 		},
 		"./src/reddit/controls/ToggleSwitch/index.tsx": function(e, t, n) {
@@ -11190,7 +11192,8 @@
 					"aria-checked": e.on,
 					className: Object(a.a)(c.a.toggleSwitch, e.className, c.a[t], {
 						[c.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
-						[c.a.mDisabled]: e.disabled
+						[c.a.mDisabled]: e.disabled,
+						[c.a.redditStyle]: e.redditStyle
 					}),
 					style: e.on && !e.disabled && e.activeColorOverride ? {
 						backgroundColor: e.activeColorOverride
@@ -11847,11 +11850,11 @@
 		"./src/reddit/helpers/makeHeaderUserDropdownItem/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return u
 			})), n.d(t, "b", (function() {
-				return h
+				return b
 			})), n.d(t, "c", (function() {
-				return g
+				return h
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -11859,68 +11862,63 @@
 				o = n("./src/lib/classNames/index.ts"),
 				i = n("./src/lib/lessComponent.tsx"),
 				c = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				d = n("./src/reddit/icons/fonts/index.tsx"),
-				l = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				m = n("./src/reddit/helpers/makeHeaderUserDropdownItem/index.m.less"),
-				u = n.n(m);
-			const p = i.a.button("button", u.a),
-				b = e => t => r.a.createElement("div", {
+				d = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				l = n("./src/reddit/helpers/makeHeaderUserDropdownItem/index.m.less"),
+				m = n.n(l);
+			const u = i.a.button("button", m.a),
+				p = e => t => r.a.createElement("div", {
 					className: t.className
 				}, e);
 
+			function b(e, t, n) {
+				return g(e, t, !0, {
+					...n
+				})
+			}
+
 			function h(e, t, n) {
-				return f(e, t, !0, {
+				return g(e, t, !1, {
 					...n
 				})
 			}
 
-			function g(e, t, n) {
-				return f(e, t, !1, {
-					...n
-				})
-			}
-
-			function f(e, t, n, s) {
+			function g(e, t, n, s) {
 				const i = e,
-					m = "function" == typeof t ? t : b(t),
+					l = "function" == typeof t ? t : p(t),
 					{
-						meta: p
+						meta: u
 					} = s,
-					h = e => r.a.createElement(r.a.Fragment, null, r.a.createElement(i, {
-						className: Object(o.a)(u.a.icon, {
-							[u.a.isLit]: e
+					b = e => r.a.createElement(r.a.Fragment, null, r.a.createElement(i, {
+						className: Object(o.a)(m.a.icon, {
+							[m.a.isLit]: e
 						})
-					}), r.a.createElement(m, {
-						className: u.a.body
-					}), p && r.a.createElement("div", {
-						className: u.a.metaContainer
-					}, p));
+					}), r.a.createElement(l, {
+						className: m.a.body
+					}), u && r.a.createElement("div", {
+						className: m.a.metaContainer
+					}, u));
 				return n ? e => {
 					const t = Object(c.a)();
 					return r.a.createElement("a", {
 						"data-redditstyle": !0,
-						className: Object(o.a)(e.className, u.a.basicLink),
+						className: Object(o.a)(e.className, m.a.basicLink),
 						href: e.href,
 						onClick: e.onClick,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, h(e.isLit), t ? r.a.createElement(d.a, {
-						name: "external_link",
-						isFilled: !0,
-						className: u.a.outboundLink
-					}) : r.a.createElement(l.a, {
-						className: u.a.outboundLink
+					}, b(e.isLit), !t && r.a.createElement(d.a, {
+						className: m.a.outboundLink
 					}))
 				} : e => e.href ? r.a.createElement(a.a, {
 					"data-redditstyle": !0,
-					className: Object(o.a)(e.className, u.a.basicLink),
+					className: Object(o.a)(e.className, m.a.basicLink),
 					to: e.href,
 					onClick: e.onClick
-				}, h(e.isLit)) : r.a.createElement("button", {
+				}, b(e.isLit)) : r.a.createElement("button", {
 					"data-redditstyle": !0,
-					className: Object(o.a)(e.className, u.a.button),
+					className: Object(o.a)(e.className, m.a.button),
 					onClick: e.onClick
-				}, h(e.isLit))
+				}, b(e.isLit))
 			}
 		},
 		"./src/reddit/helpers/trackers/ads.ts": function(e, t, n) {
@@ -16853,4 +16851,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.09b43ca01b3eb9d6080e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ceb399e2721c85d3e01d.js.map

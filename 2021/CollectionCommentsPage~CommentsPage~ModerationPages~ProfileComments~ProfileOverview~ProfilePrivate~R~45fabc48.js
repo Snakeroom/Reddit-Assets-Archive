@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.741e076ca0327bd1d366.js
-// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.6d72c77a7a035900fe35.js
+// Retrieved at 3/10/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1683,8 +1683,8 @@
 						isActionBarAnimationEnabled: re,
 						isForceSelected: ae
 					}), ke && r.a.createElement(r.a.Fragment, null, r.a.createElement(H.a, {
-						displayText: o.fbt._("Give Award", null, {
-							hk: "NIFUn"
+						displayText: o.fbt._("Award", null, {
+							hk: "2fZCpE"
 						}),
 						flatlistItem: se.a.Gild,
 						isLoggedIn: !!i,
@@ -4996,4 +4996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.741e076ca0327bd1d366.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.6d72c77a7a035900fe35.js.map

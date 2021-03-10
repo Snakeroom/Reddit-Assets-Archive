@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.906e2faf84845a1bd3dc.js
-// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.ae76f4d3c83322fa3d36.js
+// Retrieved at 3/10/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -87,7 +87,7 @@
 						hk: "48jlNW"
 					})
 				}, d ? r.a.createElement(k, null) : r.a.createElement(E, null)));
-			class N extends r.a.Component {
+			class I extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleIgnoreReports = () => {
 						let e;
@@ -125,7 +125,7 @@
 					}))
 				}
 			}
-			t.default = Object(l.c)(N)
+			t.default = Object(l.c)(I)
 		},
 		"./src/reddit/components/ModModeReports/helpers.ts": function(e, t, s) {
 			"use strict";
@@ -496,8 +496,8 @@
 				M = s("./src/reddit/models/Flair/index.ts"),
 				R = s("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
 				j = s("./src/reddit/constants/experiments.ts"),
-				N = s("./src/reddit/endpoints/crowdControl/index.ts"),
-				I = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				I = s("./src/reddit/endpoints/crowdControl/index.ts"),
+				N = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				L = s("./src/reddit/helpers/matchRedditUrls/index.ts"),
 				P = s("./src/reddit/models/Post/index.ts"),
 				D = s("./src/reddit/selectors/user.ts");
@@ -510,7 +510,7 @@
 				F = () => void 0,
 				T = Object(a.c)({
 					crowdControlLevelEnabled: b.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => j.Ac.Enabled === Object(I.c)(e, {
+					postLevelCrowdControlEnabled: e => j.Ac.Enabled === Object(N.c)(e, {
 						experimentEligibilitySelector: D.K,
 						experimentName: j.rc
 					}),
@@ -519,7 +519,7 @@
 					}) => {
 						var s;
 						const o = e.posts.postLevelCrowdControl[t.id];
-						if (o && o !== N.a.Off) return !0;
+						if (o && o !== I.a.Off) return !0;
 						if (t.crosspostRootId) return e.posts.isTrackingCrossposts[t.crosspostRootId];
 						if (t.source && t.source.url) {
 							const o = Object(L.a)(t.source.url);
@@ -556,8 +556,8 @@
 						onRemovePost: v,
 						onModToMemberShareOpened: k,
 						onSpamPost: j,
-						onStickyPost: N,
-						onSpoilerPost: I,
+						onStickyPost: I,
+						onSpoilerPost: N,
 						post: L
 					} = e, P = L.flair.filter(e => e.type !== M.f.Nsfw && e.type !== M.f.Spoiler).length > 0, D = Object(w.b)(L), T = !(!L.approvedBy || !D), A = !i && l === O.g.Compact, B = Object(g.a)(e.post), W = p ? y : F;
 					return n.a.createElement(R.e, null, o && n.a.createElement(n.a.Fragment, null, !L.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(R.c, {
@@ -601,7 +601,7 @@
 						onClick: k
 					}, n.a.createElement(R.d, null)), !L.isRemoved && !d && n.a.createElement(R.b, {
 						isSelected: L.isStickied,
-						onClick: N,
+						onClick: I,
 						text: _.fbt._("Sticky post", null, {
 							hk: "3uXoIh"
 						})
@@ -636,7 +636,7 @@
 						onClick: f
 					}, n.a.createElement(S.a, null)), n.a.createElement(R.b, {
 						isSelected: L.isSpoiler,
-						onClick: I,
+						onClick: N,
 						text: _.fbt._("Mark as Spoiler", null, {
 							hk: "1IlEnE"
 						})
@@ -707,17 +707,17 @@
 						onStickyPost: M,
 						post: R,
 						sendEvent: j,
-						tooltipId: N
-					} = e, I = R.distinguishType === i.C.MODERATOR, L = I ? i.C.NONE : i.C.MODERATOR, P = Object(m.b)(R.id, c);
+						tooltipId: I
+					} = e, N = R.distinguishType === i.C.MODERATOR, L = N ? i.C.NONE : i.C.MODERATOR, P = Object(m.b)(R.id, c);
 					return n.a.createElement(z, {
 						className: W.a.dropdown,
 						isOpen: r,
-						tooltipId: N
+						tooltipId: I
 					}, n.a.createElement(A, {
 						canEditFlair: t,
 						hasModFullPerms: s,
 						hasModPostPerms: o,
-						isDistinguished: I,
+						isDistinguished: N,
 						isModToMemberShareEnabled: a,
 						isOverlay: c,
 						isPostAuthor: d,
@@ -734,7 +734,7 @@
 							O(), j(Object(f.i)("spam", R.id))
 						},
 						onDistinguishPost: () => {
-							h(L), j(Object(f.i)(I ? "undistinguish" : "distinguish", R.id))
+							h(L), j(Object(f.i)(N ? "undistinguish" : "distinguish", R.id))
 						},
 						onFlairPost: () => {
 							C(P), j(Object(f.i)("post_flair", R.id))
@@ -1072,11 +1072,11 @@
 		"./src/reddit/helpers/makeHeaderUserDropdownItem/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return u
+				return m
 			})), s.d(t, "b", (function() {
-				return h
+				return x
 			})), s.d(t, "c", (function() {
-				return C
+				return h
 			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
@@ -1084,68 +1084,63 @@
 				a = s("./src/lib/classNames/index.ts"),
 				i = s("./src/lib/lessComponent.tsx"),
 				c = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				d = s("./src/reddit/icons/fonts/index.tsx"),
-				l = s("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				p = s("./src/reddit/helpers/makeHeaderUserDropdownItem/index.m.less"),
-				m = s.n(p);
-			const u = i.a.button("button", m.a),
-				x = e => t => n.a.createElement("div", {
+				d = s("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				l = s("./src/reddit/helpers/makeHeaderUserDropdownItem/index.m.less"),
+				p = s.n(l);
+			const m = i.a.button("button", p.a),
+				u = e => t => n.a.createElement("div", {
 					className: t.className
 				}, e);
 
+			function x(e, t, s) {
+				return C(e, t, !0, {
+					...s
+				})
+			}
+
 			function h(e, t, s) {
-				return b(e, t, !0, {
+				return C(e, t, !1, {
 					...s
 				})
 			}
 
-			function C(e, t, s) {
-				return b(e, t, !1, {
-					...s
-				})
-			}
-
-			function b(e, t, s, o) {
+			function C(e, t, s, o) {
 				const i = e,
-					p = "function" == typeof t ? t : x(t),
+					l = "function" == typeof t ? t : u(t),
 					{
-						meta: u
+						meta: m
 					} = o,
-					h = e => n.a.createElement(n.a.Fragment, null, n.a.createElement(i, {
-						className: Object(a.a)(m.a.icon, {
-							[m.a.isLit]: e
+					x = e => n.a.createElement(n.a.Fragment, null, n.a.createElement(i, {
+						className: Object(a.a)(p.a.icon, {
+							[p.a.isLit]: e
 						})
-					}), n.a.createElement(p, {
-						className: m.a.body
-					}), u && n.a.createElement("div", {
-						className: m.a.metaContainer
-					}, u));
+					}), n.a.createElement(l, {
+						className: p.a.body
+					}), m && n.a.createElement("div", {
+						className: p.a.metaContainer
+					}, m));
 				return s ? e => {
 					const t = Object(c.a)();
 					return n.a.createElement("a", {
 						"data-redditstyle": !0,
-						className: Object(a.a)(e.className, m.a.basicLink),
+						className: Object(a.a)(e.className, p.a.basicLink),
 						href: e.href,
 						onClick: e.onClick,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, h(e.isLit), t ? n.a.createElement(d.a, {
-						name: "external_link",
-						isFilled: !0,
-						className: m.a.outboundLink
-					}) : n.a.createElement(l.a, {
-						className: m.a.outboundLink
+					}, x(e.isLit), !t && n.a.createElement(d.a, {
+						className: p.a.outboundLink
 					}))
 				} : e => e.href ? n.a.createElement(r.a, {
 					"data-redditstyle": !0,
-					className: Object(a.a)(e.className, m.a.basicLink),
+					className: Object(a.a)(e.className, p.a.basicLink),
 					to: e.href,
 					onClick: e.onClick
-				}, h(e.isLit)) : n.a.createElement("button", {
+				}, x(e.isLit)) : n.a.createElement("button", {
 					"data-redditstyle": !0,
-					className: Object(a.a)(e.className, m.a.button),
+					className: Object(a.a)(e.className, p.a.button),
 					onClick: e.onClick
-				}, h(e.isLit))
+				}, x(e.isLit))
 			}
 		},
 		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, s) {
@@ -1529,4 +1524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.906e2faf84845a1bd3dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.ae76f4d3c83322fa3d36.js.map
