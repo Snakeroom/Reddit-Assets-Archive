@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.10baa85986a3d9044db1.js
-// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.774f8cf4cbed9bdcca28.js
+// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft", "EconHelperActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -506,15 +506,15 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, W = Object(i.a)(a.a), A = Object(i.a)(a.t), F = (e, t) => async (n, o, {
+				}, A = Object(i.a)(a.a), W = Object(i.a)(a.t), F = (e, t) => async (n, o, {
 					apiContext: r
 				}) => {
 					const i = o();
 					if ((await h(r(), e, t)).ok) {
-						n(W({
+						n(A({
 							collectionId: e,
 							postId: t
-						})), n(A({
+						})), n(W({
 							collectionId: e,
 							postId: t
 						}));
@@ -2369,7 +2369,7 @@
 			})), n.d(t, "i", (function() {
 				return B
 			})), n.d(t, "e", (function() {
-				return W
+				return A
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				o = n("./node_modules/lodash/reduce.js"),
@@ -2471,7 +2471,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						r.push(e.e === p.w ? e.t : W(e, t, a))
+						r.push(e.e === p.w ? e.t : A(e, t, a))
 					}
 					const c = d.x[o - 1];
 					return a.a.createElement(c, {
@@ -2590,7 +2590,7 @@
 						o = e.length;
 					for (let r = 0; r < o; r++) {
 						const o = e[r];
-						if (o.e === p.A) s.push(A(o, r));
+						if (o.e === p.A) s.push(W(o, r));
 						else if (o.e === p.x) s.push(a.a.createElement(j.a, {
 							key: r
 						}, B(o.c, t, n)));
@@ -2606,14 +2606,14 @@
 									media: e
 								}))
 							}
-						} else s.push(W(o, n, r))
+						} else s.push(A(o, n, r))
 					}
 					return s
 				},
-				W = (e, t, n) => {
+				A = (e, t, n) => {
 					switch (e.e) {
 						case p.o:
-							const s = A({
+							const s = W({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2646,7 +2646,7 @@
 							}, e.t)
 					}
 				},
-				A = (e, t) => {
+				W = (e, t) => {
 					const {
 						f: n,
 						t: o
@@ -2942,12 +2942,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.bd.SmIcon:
+						case b.dd.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.bd.SmIconHc:
+						case b.dd.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4725,8 +4725,8 @@
 						draft: t
 					}), o.a.createElement(O, null)))
 				})),
-				W = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				A = n("./src/reddit/layout/page/Listing/index.tsx"),
+				A = n("./src/reddit/components/PostingSidebar/index.tsx"),
+				W = n("./src/reddit/layout/page/Listing/index.tsx"),
 				F = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				H = n("./src/reddit/selectors/postDraft.ts");
 			const U = Object(l.t)(),
@@ -4746,14 +4746,14 @@
 					} = this.props;
 					if (!t || !e) return o.a.createElement(F.b, null);
 					const n = e.subredditId;
-					return o.a.createElement(A.a, {
+					return o.a.createElement(W.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: o.a.createElement("div", null),
 						content: o.a.createElement(B, {
 							draft: e
 						}),
-						sidebar: n && o.a.createElement(W.a, {
+						sidebar: n && o.a.createElement(A.a, {
 							subredditOrProfileId: n
 						})
 					})
@@ -4784,12 +4784,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Wc
+						experimentName: s.Yc
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.bd.SmIcon || t === s.bd.SmIconHc
+					return t === s.dd.SmIcon || t === s.dd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4812,4 +4812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.10baa85986a3d9044db1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.774f8cf4cbed9bdcca28.js.map

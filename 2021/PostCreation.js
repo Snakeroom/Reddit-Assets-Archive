@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.19dcf2355731d01dc1f2.js
-// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.110b4928315e220b722d.js
+// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -19987,8 +19987,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.uc
-				}) === s.Dc.Enabled
+					experimentName: s.wc
+				}) === s.Fc.Enabled
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -20527,4 +20527,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.19dcf2355731d01dc1f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.110b4928315e220b722d.js.map

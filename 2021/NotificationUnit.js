@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.c5b3b472189a5d35902c.js
-// Retrieved at 3/9/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.1f4a803c8ffc08750608.js
+// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/index.tsx": function(e, t, a) {
@@ -161,8 +161,8 @@
 				e.HideMessageType = "HideMessageType", e.HideNotif = "HideNotif", e.HideNotifUpdate = "HideNotifUpdate", e.HideSubUpdates = "HideSubUpdates"
 			}(R || (R = {}));
 			const z = l.a.wrapped(V.a, "StyledDropdown", N.a),
-				Y = Object(D.a)(z),
-				Z = Object(P.a)(z, [L.a.Click]),
+				Z = Object(D.a)(z),
+				Y = Object(P.a)(z, [L.a.Click]),
 				G = e => {
 					const {
 						disableMessageTypeNotifications: t,
@@ -229,7 +229,7 @@
 								onClick: r
 							}, o)
 						},
-						f = r ? Z : Y;
+						f = r ? Y : Z;
 					return s.a.createElement(f, {
 						id: b,
 						isOverlayOff: !0,
@@ -241,7 +241,7 @@
 					}, o && g(R.HideNotif), m && !E && g(R.HideSubUpdates), c && !E && g(R.HideMessageType), d && g(R.HideNotifUpdate)))
 				};
 			var K = a("./src/reddit/controls/MetaData/index.tsx");
-			const W = e => {
+			const $ = e => {
 					const {
 						isNsfw: t,
 						url: a
@@ -251,7 +251,7 @@
 						src: a
 					}) : null
 				},
-				$ = e => {
+				J = e => {
 					const {
 						post: t,
 						isUnread: a
@@ -268,12 +268,12 @@
 						isScoreHidden: !1,
 						score: t.score || 0,
 						useUpvotes: !0
-					}), s.a.createElement(K.c, null), Object(K.d)(t.commentCount || 0))), s.a.createElement(W, {
+					}), s.a.createElement(K.c, null), Object(K.d)(t.commentCount || 0))), s.a.createElement($, {
 						isNsfw: t.isNsfw,
 						url: i
 					}))
 				};
-			var J = a("./src/lib/constants/index.ts"),
+			var W = a("./src/lib/constants/index.ts"),
 				q = a("./src/lib/timeAgo/index.ts"),
 				Q = a("./src/reddit/icons/svgs/Menu/index.tsx");
 			const X = l.a.wrapped(Q.a, "MenuIcon", N.a),
@@ -292,7 +292,7 @@
 						title: u
 					} = e, b = a || o || l || c, E = Object(r.a)(N.a.menuButton, {
 						[N.a.isOpen]: n
-					}), g = Date.parse(m) / J.Hb;
+					}), g = Date.parse(m) / W.Hb;
 					return s.a.createElement("span", {
 						className: N.a.topBar
 					}, s.a.createElement("span", null, s.a.createElement("span", {
@@ -382,7 +382,7 @@
 					sentAt: O,
 					setActiveOverflowMenuId: c,
 					title: T
-				}), n && y ? s.a.createElement($, {
+				}), n && y ? s.a.createElement(J, {
 					post: y,
 					isUnread: H
 				}) : s.a.createElement("span", {
@@ -584,28 +584,28 @@
 				r = a("./src/reddit/selectors/experiments/utils.ts"),
 				o = a("./src/reddit/selectors/user.ts");
 			const l = Object(i.a)(e => Object(s.c)(e, {
-					experimentName: n.Yb,
+					experimentName: n.ac,
 					experimentEligibilitySelector: c
 				}), r.a),
 				c = e => Object(o.I)(e) || Object(o.J)(e),
-				d = Object(i.a)(l, e => e === n.ec.Redesign),
+				d = Object(i.a)(l, e => e === n.gc.Redesign),
 				m = Object(i.a)(e => Object(s.c)(e, {
-					experimentName: n.Xb,
+					experimentName: n.Zb,
 					experimentEligibilitySelector: c
 				}), r.a),
-				p = Object(i.a)(m, e => e === n.dc.Enabled),
+				p = Object(i.a)(m, e => e === n.fc.Enabled),
 				u = Object(i.a)(e => Object(s.c)(e, {
-					experimentName: n.Wb,
+					experimentName: n.Yb,
 					experimentEligibilitySelector: c
 				}), r.a),
-				b = Object(i.a)(u, e => e === n.cc.Enabled),
+				b = Object(i.a)(u, e => e === n.ec.Enabled),
 				E = Object(i.a)(e => Object(s.c)(e, {
-					experimentName: n.P,
+					experimentName: n.R,
 					experimentEligibilitySelector: c
 				}), r.a),
-				g = Object(i.a)(E, e => e === n.Y.NoOverflow),
-				f = Object(i.a)(E, e => e === n.Y.UndoBar)
+				g = Object(i.a)(E, e => e === n.ab.NoOverflow),
+				f = Object(i.a)(E, e => e === n.ab.UndoBar)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.c5b3b472189a5d35902c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.1f4a803c8ffc08750608.js.map
