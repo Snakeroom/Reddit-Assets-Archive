@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7b7394f316163ba4ebb9.js
-// Retrieved at 3/10/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.efe680be106998d8e56e.js
+// Retrieved at 3/10/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1447,11 +1447,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("128630"),
+				buildNumber: r("128639"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1615416649"),
+				})("1615418126"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3609,14 +3609,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c3783f89b1543c201d7b2c259fc461bf6fd4b4a2e-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7139b33680975d28870b354ce1a0c09b09d9339b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3783f89b1543c201d7b2c259fc461bf6fd4b4a2e-production",
+						release: "7139b33680975d28870b354ce1a0c09b09d9339b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4065,7 +4065,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "3783f89b1543c201d7b2c259fc461bf6fd4b4a2e-production",
+						releaseClient: "7139b33680975d28870b354ce1a0c09b09d9339b-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -34840,18 +34840,22 @@
 		},
 		"./src/reddit/selectors/features/predictions/tournaments/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "e", (function() {
+			i.d(t, "g", (function() {
 				return l
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "f", (function() {
 				return c
-			})), i.d(t, "c", (function() {
-				return _
+			})), i.d(t, "e", (function() {
+				return u
 			})), i.d(t, "b", (function() {
 				return p
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "d", (function() {
+				return m
+			})), i.d(t, "c", (function() {
 				return h
+			})), i.d(t, "h", (function() {
+				return f
 			})), i.d(t, "a", (function() {
-				return b
+				return g
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/lib/initializeClient/installReducer.ts"),
@@ -34872,31 +34876,33 @@
 					var i, n, r;
 					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.tournaments) || []
 				},
-				u = Object(n.a)(c, e => e.filter(e => e.status === o.c.Live)),
-				_ = (e, t) => !!c(e, t).length,
-				p = (e, t) => !!u(e, t).length,
-				m = Object(n.a)((e, t) => {
+				u = (e, t) => {
 					const i = c(e, t);
 					return i.length ? i[i.length - 1] : null
-				}, e => {
+				},
+				_ = Object(n.a)(c, e => e.filter(e => e.status === o.c.Live)),
+				p = (e, t) => _(e, t)[0],
+				m = (e, t) => !!c(e, t).length,
+				h = (e, t) => !!_(e, t).length,
+				b = Object(n.a)(u, e => {
 					var t;
 					return (null === (t = null == e ? void 0 : e.predictionPosts) || void 0 === t ? void 0 : t.length) ? e.predictionPosts.map(({
 						id: e
 					}) => e) : []
 				}),
-				h = Object(n.a)(m, d.B, (e, t) => e.length ? t.filter(t => e.includes(t)) : []),
-				b = (e, t) => {
+				f = Object(n.a)(b, d.B, (e, t) => e.length ? t.filter(t => e.includes(t)) : []),
+				g = (e, t) => {
 					const i = Object(a.F)(e, t),
-						n = m(e, {
+						n = b(e, {
 							subredditId: i
 						}),
-						r = h(e, {
+						r = f(e, {
 							listingKey: t,
 							subredditId: i
 						});
 					return n.length > r.length
 				};
-			Object(n.a)((e, t) => u(e, t)[0], e => {
+			Object(n.a)(p, e => {
 				var t;
 				return null !== (t = null === (null == e ? void 0 : e.predictionPosts) || 0 === (null == e ? void 0 : e.predictionPosts.length) || (null == e ? void 0 : e.predictionPosts.every(e => !!e.poll.resolvedOptionId))) && void 0 !== t && t
 			})
@@ -39571,6 +39577,7 @@
 					} : null
 				},
 				ct = (e, t) => {
+					var i;
 					if (t) {
 						const i = nt(e, t);
 						return {
@@ -39580,25 +39587,25 @@
 						}
 					}
 					const {
-						pageType: i
+						pageType: n
 					} = Ne(e);
 					if (!e.platform.currentPage) return null;
-					if (i && i.includes("profile")) {
+					if (n && n.includes("profile")) {
 						const {
 							profileName: t
 						} = e.platform.currentPage.urlParams;
 						if (t) {
-							const i = t.toLowerCase(),
-								n = Object(be.lb)(e, {
-									userName: i
-								}).id;
-							return n ? {
-								id: n,
-								name: i,
+							const n = t.toLowerCase(),
+								r = null === (i = Object(be.lb)(e, {
+									userName: n
+								})) || void 0 === i ? void 0 : i.id;
+							return r ? {
+								id: r,
+								name: n,
 								type: "default"
 							} : null
 						}
-					} else if ("post_detail" === i) {
+					} else if ("post_detail" === n) {
 						const {
 							subredditName: t
 						} = e.platform.currentPage.urlParams;
@@ -39612,7 +39619,7 @@
 								type: "default"
 							} : null
 						}
-						if (i && i.includes("moderation_pages")) {
+						if (n && n.includes("moderation_pages")) {
 							let t = e.platform.currentPage.urlParams.profileName;
 							t = t ? t.toLowerCase() : "";
 							const i = Object(ae.m)(e, t);
@@ -44752,4 +44759,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7b7394f316163ba4ebb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.efe680be106998d8e56e.js.map

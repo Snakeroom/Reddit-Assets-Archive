@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ceb399e2721c85d3e01d.js
-// Retrieved at 3/10/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.da4e1276f4f22f9bf36e.js
+// Retrieved at 3/10/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -10891,8 +10891,8 @@
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
-				})), a && n && r.a.createElement(b, {
-					showPresence: s
+				})), a && n && s && r.a.createElement(b, {
+					showPresence: !0
 				}))
 			})
 		},
@@ -16851,4 +16851,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ceb399e2721c85d3e01d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.da4e1276f4f22f9bf36e.js.map

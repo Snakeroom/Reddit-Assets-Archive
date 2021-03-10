@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b23ac5281f0df7b2535b.js
-// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.82e5cc626a0ef063a799.js
+// Retrieved at 3/10/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -258,9 +258,9 @@
 				}) => {
 					const n = r(),
 						i = Object(c.F)(n, e);
-					if (Object(m.e)(n, {
+					if (Object(m.g)(n, {
 							subredditId: i
-						})) return Object(m.d)(n, {
+						})) return Object(m.f)(n, {
 						subredditId: i
 					});
 					t(v({
@@ -1430,7 +1430,7 @@
 					l = Object(i.e)(t => Object(W.N)(t, {
 						subredditId: e
 					})),
-					m = Object(i.e)(t => Object(F.c)(t, {
+					m = Object(i.e)(t => Object(F.d)(t, {
 						subredditId: e
 					}));
 				return Object(s.useEffect)(() => {
@@ -2739,4 +2739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b23ac5281f0df7b2535b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.82e5cc626a0ef063a799.js.map

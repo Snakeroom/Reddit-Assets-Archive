@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9a16d8393c80abe21851.js
-// Retrieved at 3/10/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.30ade3e2e7c2a3862936.js
+// Retrieved at 3/10/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -8354,8 +8354,8 @@
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
-				})), r && n && o.a.createElement(h, {
-					showPresence: s
+				})), r && n && s && o.a.createElement(h, {
+					showPresence: !0
 				}))
 			})
 		},
@@ -20529,4 +20529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9a16d8393c80abe21851.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.30ade3e2e7c2a3862936.js.map

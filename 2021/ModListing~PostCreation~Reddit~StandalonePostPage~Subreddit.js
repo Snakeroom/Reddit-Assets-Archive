@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.a8dfe7a6c7e82115dbfa.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.db9e5840e5a1d0e3d3ba.js
+// Retrieved at 3/10/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, i) {
@@ -925,14 +925,14 @@
 				s = i("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				a = i.n(s);
 			t.a = function({
-				className: e,
-				headerIcon: t,
+				backgroundClassName: e,
+				className: t,
 				headshot: i
 			}) {
 				return r.a.createElement("div", {
-					className: Object(l.a)(a.a.snoovatarWrapper, e)
+					className: Object(l.a)(a.a.snoovatarWrapper, t)
 				}, r.a.createElement("div", {
-					className: a.a.snoovatarBackground
+					className: Object(l.a)(a.a.snoovatarBackground, e)
 				}), r.a.createElement("div", {
 					className: a.a.snoovatarHeadshotContainer
 				}, r.a.createElement("img", {
@@ -2637,4 +2637,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.a8dfe7a6c7e82115dbfa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.db9e5840e5a1d0e3d3ba.js.map
