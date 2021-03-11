@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.fe76e4089939f6a4bfe7.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.8648501c97c2e46abd30.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -301,7 +301,7 @@
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(K.kb)(Q.a.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(K.jb)(Q.a.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return re.cachedData = e, e ? e.subreddits : []
 				}
@@ -732,7 +732,7 @@
 							return Object(Ze.c)(e, {
 								experimentEligibilitySelector: ze.K,
 								experimentName: We.X
-							}) === We.Gb
+							}) === We.Cb
 						}(e))
 					}
 				}),
@@ -1964,4 +1964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.fe76e4089939f6a4bfe7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.8648501c97c2e46abd30.js.map

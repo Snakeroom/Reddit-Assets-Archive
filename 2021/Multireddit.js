@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.b75a2bde423176d7654a.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.62016d03691bf75c9d55.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -923,7 +923,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), z = d.a.wrapped(M, "PrivateKey", G.a), q = d.a.div("ButtonsContainer", G.a), K = d.a.div("Container", G.a), J = d.a.div("Description", G.a), Y = d.a.div("PrivateSubredditDetails", G.a), Z = d.a.div("PrivateSubredditDescription", G.a), X = d.a.h3("PrivateSubredditName", G.a), Q = d.a.a("Link", G.a), $ = d.a.wrapped(R.k, "LinkRouterButton", G.a), ee = d.a.wrapped(R.j, "LinkButton", G.a), te = d.a.wrapped(R.n, "SecondaryLinkRouterButton", G.a), ne = d.a.wrapped(R.m, "SecondaryLinkButton", G.a), se = d.a.wrapped($, "GoHomeLinkButton", G.a), re = d.a.img("Image", G.a), oe = d.a.img("ImagePlaceholder", G.a), ie = d.a.wrapped($, "LeftLinkRouterButton", G.a), ae = d.a.wrapped(ee, "LeftLinkButton", G.a), ce = d.a.wrapped(ne, "SecondaryLeftLinkButton", G.a), de = d.a.wrapped(te, "SecondaryLeftLinkRouterButton", G.a), le = d.a.h3("Title", G.a), ue = d.a.div("PageBody", G.a), me = d.a.div("QuarantineMessageWrapper", G.a), pe = Object(c.c)({
 				isLoggedIn: H.J,
 				isRequestToJoinPrivateCommunitiesEnabled: U.a,
-				origin: A.l,
+				origin: A.i,
 				user: H.j
 			}), he = Object(L.t)(), be = Object(i.b)(pe, (e, {
 				subredditName: t
@@ -4583,12 +4583,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.hd.SmIcon:
+						case b.dd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.hd.SmIconHc:
+						case b.dd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6737,9 +6737,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.fc.Enabled === Object(r.c)(e, {
+			const o = e => s.bc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Zb
+				experimentName: s.Vb
 			})
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
@@ -6755,15 +6755,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.xb
+						experimentName: s.tb
 					});
-					return !(!t || Object(s.Ad)(t))
+					return !(!t || Object(s.wd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.xb
-					}) === s.Kb.ListingEnabled
+						experimentName: s.tb
+					}) === s.Gb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -6893,12 +6893,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.cd
+						experimentName: s.Yc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.hd.SmIcon || t === s.hd.SmIconHc
+					return t === s.dd.SmIcon || t === s.dd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6921,4 +6921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.b75a2bde423176d7654a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.62016d03691bf75c9d55.js.map

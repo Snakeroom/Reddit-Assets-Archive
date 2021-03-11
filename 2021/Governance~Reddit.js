@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.daa6715ba3a506b649a1.js
-// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.27cbb19c3da3c78f06df.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1745,7 +1745,7 @@
 						g = e === h;
 					if (!(e === b.f || e === b.b || g)) return;
 					if (g) return void j(E, t, r)(s, c, l);
-					0 === S(a.hb).length && Object(f.qb)(!1);
+					0 === S(a.hb).length && Object(f.pb)(!1);
 					let D = c();
 					if (Object(m.d)(D, {
 							listingKey: t,
@@ -1800,14 +1800,14 @@
 						postId: r
 					})))) : Object(n.a)(Object(y.c)(v, "no_chaining", E)(D))
 				}, D = "FEED_CHAINING__CHAIN_TOGGLED", T = (Object(c.a)(D), "FEED_CHAINING__CHAINING_TOGGLED"), v = Object(c.a)(T), A = () => async e => {
-					Object(f.qb)(!0), e(v({
+					Object(f.pb)(!0), e(v({
 						isDismissed: !0
 					})), e(Object(l.e)(Object(l.d)(s.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), E.b.Undo, s.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(f.qb)(!1), e(v({
+						Object(f.pb)(!1), e(v({
 							isDismissed: !1
 						}))
 					})))
@@ -2693,7 +2693,7 @@
 			const v = e => S.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				A = e => !!Object(D.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.c)),
-					experimentName: b.Nc
+					experimentName: b.Jc
 				}),
 				j = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				w = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -23384,7 +23384,7 @@
 				l = e => e === n.G.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Ad)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.wd)(t))
 		},
 		"./src/reddit/selectors/experiments/inboxAppBadgingGql.ts": function(e, t, r) {
 			"use strict";
@@ -23397,11 +23397,11 @@
 				c = r("./src/reddit/selectors/experiments/utils.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.bc,
+					experimentName: n.Xb,
 					experimentEligibilitySelector: i
 				}), c.a),
 				i = e => Object(o.J)(e) || Object(o.K)(e),
-				u = Object(s.a)(d, e => e === n.hc.Enabled)
+				u = Object(s.a)(d, e => e === n.dc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, r) {
 			"use strict";
@@ -23422,21 +23422,21 @@
 				c = r("./src/reddit/selectors/experiments/utils.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.ec,
+					experimentName: n.ac,
 					experimentEligibilitySelector: i
 				}), c.a),
 				i = e => Object(o.J)(e) || Object(o.K)(e),
-				u = Object(s.a)(d, e => e === n.kc.Redesign),
+				u = Object(s.a)(d, e => e === n.gc.Redesign),
 				l = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.dc,
+					experimentName: n.Zb,
 					experimentEligibilitySelector: i
 				}), c.a),
-				p = Object(s.a)(l, e => e === n.jc.Enabled),
+				p = Object(s.a)(l, e => e === n.fc.Enabled),
 				b = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.cc,
+					experimentName: n.Yb,
 					experimentEligibilitySelector: i
 				}), c.a),
-				f = Object(s.a)(b, e => e === n.ic.Enabled),
+				f = Object(s.a)(b, e => e === n.ec.Enabled),
 				y = Object(s.a)(e => Object(a.c)(e, {
 					experimentName: n.R,
 					experimentEligibilitySelector: i
@@ -23700,4 +23700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.daa6715ba3a506b649a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.27cbb19c3da3c78f06df.js.map

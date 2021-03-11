@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.dc6d81024f8886e81cf1.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.955d55efcd8d40cc25b6.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1220,7 +1220,7 @@
 								postIds: e,
 								posts: r
 							} = t, s = Object(W.d)(m, {
-								experimentName: l.uc
+								experimentName: l.qc
 							});
 							n(Object(a.a)(Object(d.c)(e, r, null == s ? void 0 : s.variant)))
 						}
@@ -1346,7 +1346,7 @@
 										postIds: e,
 										posts: n
 									} = _, r = Object(W.d)(s, {
-										experimentName: l.uc
+										experimentName: l.qc
 									});
 									t(Object(a.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 								}
@@ -2038,7 +2038,7 @@
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(z.kb)(V.a.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(z.jb)(V.a.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return oe.cachedData = e, e ? e.subreddits : []
 				}
@@ -2469,7 +2469,7 @@
 							return Object(Qe.c)(e, {
 								experimentEligibilitySelector: Xe.K,
 								experimentName: Ue.X
-							}) === Ue.Gb
+							}) === Ue.Cb
 						}(e))
 					}
 				}),
@@ -5858,4 +5858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.dc6d81024f8886e81cf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.955d55efcd8d40cc25b6.js.map

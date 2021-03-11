@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.999050e15a1a484b2c92.js
-// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.851fb7afb978009e9ab0.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6854,7 +6854,7 @@
 						style: {
 							color: o
 						}
-					}, e && !Object(x.Ad)(e) ? Object(j.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(x.wd)(e) ? Object(j.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -6885,7 +6885,7 @@
 						post: d,
 						shouldShowSubredditUpsell: c,
 						subredditOrProfile: l
-					} = this.props, m = d && Object(C.a)(d), p = !!i && !Object(x.Ad)(i), u = d && d.id;
+					} = this.props, m = d && Object(C.a)(d), p = !!i && !Object(x.wd)(i), u = d && d.id;
 					return s || n || t || m || !c ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -9665,7 +9665,7 @@
 					isRealtimeCommentsExperimentEnabled: he.a,
 					isTooltipOpen: (e, t) => !!Object(ge.a)(e),
 					newCommentsCount: te.C,
-					origin: me.l,
+					origin: me.i,
 					pageTitle: gt,
 					post: te.F,
 					postSEOV2IdCardVariant: de.i,
@@ -10447,7 +10447,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.M
 				});
-				return !!t && !Object(n.Ad)(t)
+				return !!t && !Object(n.wd)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -10460,9 +10460,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.ub
+					experimentName: n.qb
 				});
-				return !(!t || Object(n.Ad)(t))
+				return !(!t || Object(n.wd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -10475,8 +10475,8 @@
 				o = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: n.Pc
-			}) === n.Yc.Enabled
+				experimentName: n.Lc
+			}) === n.Uc.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -10596,8 +10596,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.J)(e),
-					experimentName: n.Mc
-				}) === n.Wc.Enabled
+					experimentName: n.Ic
+				}) === n.Sc.Enabled
 			})(e) && (e => {
 				const t = Object(o.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -10621,4 +10621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.999050e15a1a484b2c92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.851fb7afb978009e9ab0.js.map

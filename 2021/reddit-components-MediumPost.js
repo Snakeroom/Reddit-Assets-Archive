@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e34df0d4e6ef18f7ad8e.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8212e5028d16a98c5c94.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1602,7 +1602,7 @@
 						g = e === O;
 					if (!(e === m.f || e === m.b || g)) return;
 					if (g) return void T(h, t, n)(s, i, u);
-					0 === y(o.hb).length && Object(b.qb)(!1);
+					0 === y(o.hb).length && Object(b.pb)(!1);
 					let S = i();
 					if (Object(E.d)(S, {
 							listingKey: t,
@@ -1657,14 +1657,14 @@
 						postId: n
 					})))) : Object(r.a)(Object(f.c)(I, "no_chaining", h)(S))
 				}, S = "FEED_CHAINING__CHAIN_TOGGLED", C = (Object(i.a)(S), "FEED_CHAINING__CHAINING_TOGGLED"), I = Object(i.a)(C), j = () => async e => {
-					Object(b.qb)(!0), e(I({
+					Object(b.pb)(!0), e(I({
 						isDismissed: !0
 					})), e(Object(u.e)(Object(u.d)(s.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), h.b.Undo, s.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(b.qb)(!1), e(I({
+						Object(b.pb)(!1), e(I({
 							isDismissed: !1
 						}))
 					})))
@@ -2758,7 +2758,7 @@
 							listingName: oe,
 							postId: le
 						}))
-					}, [xe, re, oe, le]), ge = e => e === F.a.upvoted ? xe(Object(l.U)(le)) : xe(Object(l.r)(le)), Se = () => xe(Object(l.S)(le)), Ce = pe ? void 0 : U, Ie = Object(w.a)(ie), je = ce && Ie, Te = Object(R.a)(ie), ke = Object(D.a)(ie), Pe = Object(y.c)(de), Ae = !!se && !Object(A.Ad)(se), Ne = Object(L.a)(de), Le = W && !Ee && !Ae, Re = Le && !!de.source && !n, De = !(K && i || te) && !z && (!W || Ae), we = (!W || Ae) && !de.isSponsored, Me = Object(c.t)(de, ne), {
+					}, [xe, re, oe, le]), ge = e => e === F.a.upvoted ? xe(Object(l.U)(le)) : xe(Object(l.r)(le)), Se = () => xe(Object(l.S)(le)), Ce = pe ? void 0 : U, Ie = Object(w.a)(ie), je = ce && Ie, Te = Object(R.a)(ie), ke = Object(D.a)(ie), Pe = Object(y.c)(de), Ae = !!se && !Object(A.wd)(se), Ne = Object(L.a)(de), Le = W && !Ee && !Ae, Re = Le && !!de.source && !n, De = !(K && i || te) && !z && (!W || Ae), we = (!W || Ae) && !de.isSponsored, Me = Object(c.t)(de, ne), {
 						source: Fe
 					} = Me, Ue = r.a.createElement(S.a, {
 						className: Object(a.a)(ee.a.container, t, Q.a.largeAndMediumPostStyles, Q.a.largeAndMediumActiveStyles, Object(M.a)(e), {
@@ -5523,9 +5523,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.ub
+					experimentName: s.qb
 				});
-				return !(!t || Object(s.Ad)(t))
+				return !(!t || Object(s.wd)(t))
 			}
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, n) {
@@ -5633,4 +5633,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e34df0d4e6ef18f7ad8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8212e5028d16a98c5c94.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.50989d9780415868cc62.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.44585aabf6e3ddc1fefe.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
@@ -118,8 +118,8 @@
 				b = i("./src/reddit/actions/notifications/utils.ts"),
 				p = i("./src/reddit/actions/tabBadging.ts"),
 				g = i("./src/reddit/actions/toaster.ts"),
-				h = i("./src/reddit/helpers/parseUrl.ts"),
-				m = i("./src/reddit/helpers/tabBadging/index.ts"),
+				m = i("./src/reddit/helpers/parseUrl.ts"),
+				h = i("./src/reddit/helpers/tabBadging/index.ts"),
 				v = i("./src/reddit/helpers/trackers/notifications.ts"),
 				O = i("./src/reddit/models/Toast/index.ts"),
 				j = i("./src/reddit/selectors/meta.ts"),
@@ -134,11 +134,11 @@
 					const s = n.data,
 						r = s.command || s.type;
 					if ("registerWithServiceWorker" === r) w(e);
-					else if (r === m.a && i) {
+					else if (r === h.a && i) {
 						const e = o()(s, ["command"]);
 						t(Object(p.f)(e))
 					} else if ("navigate.chat" === r) {
-						const e = Object(h.a)(s.data.href);
+						const e = Object(m.a)(s.data.href);
 						e && e.pathname && t(Object(d.b)(e.pathname))
 					}
 				}), w(e)
@@ -149,7 +149,7 @@
 				})
 			}, y = (e, t, i = (() => {})) => async (n, s, o) => {
 				const c = s(),
-					l = Object(j.h)(c);
+					l = Object(j.f)(c);
 				if (await Object(r.a)() || l) return;
 				await S(c, n);
 				v.j(c), Object(a.a)(e, t, () => {
@@ -165,7 +165,7 @@
 				const o = i();
 				try {
 					const i = await Object(c.b)(s.gqlContext);
-					switch (Object(f.c)(), i) {
+					switch (Object(f.b)(), i) {
 						case c.a.Success:
 							v.k(o), e && t(Object(g.e)({
 								kind: O.b.SuccessCommunity,
@@ -188,7 +188,7 @@
 					const i = await Object(l.a)();
 					if (i) {
 						const s = await i.pushManager.getSubscription();
-						s && (s.unsubscribe(), Object(f.c)(), e && t(Object(g.e)({
+						s && (s.unsubscribe(), Object(f.b)(), e && t(Object(g.e)({
 							kind: O.b.SuccessCommunity,
 							text: n.fbt._("Changes saved", null, {
 								hk: "wGH5U"
@@ -215,7 +215,7 @@
 			})), i.d(t, "i", (function() {
 				return g
 			})), i.d(t, "c", (function() {
-				return m
+				return h
 			})), i.d(t, "b", (function() {
 				return v
 			})), i.d(t, "g", (function() {
@@ -288,12 +288,12 @@
 						source: "notification"
 					})
 				},
-				h = e => ({
+				m = e => ({
 					...n.defaults(e),
 					noun: "push_notification"
 				}),
-				m = e => ({
-					...h(e),
+				h = e => ({
+					...m(e),
 					notification: n.notification(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
@@ -329,4 +329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.50989d9780415868cc62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.44585aabf6e3ddc1fefe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.022842d496815d06959c.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.03594e1206706c67fda3.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -442,7 +442,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = c.a.wrapped(U, "PrivateKey", q.a), K = c.a.div("ButtonsContainer", q.a), Y = c.a.div("Container", q.a), Z = c.a.div("Description", q.a), V = c.a.div("PrivateSubredditDetails", q.a), J = c.a.div("PrivateSubredditDescription", q.a), X = c.a.h3("PrivateSubredditName", q.a), Q = c.a.a("Link", q.a), $ = c.a.wrapped(T.k, "LinkRouterButton", q.a), ee = c.a.wrapped(T.j, "LinkButton", q.a), te = c.a.wrapped(T.n, "SecondaryLinkRouterButton", q.a), ne = c.a.wrapped(T.m, "SecondaryLinkButton", q.a), re = c.a.wrapped($, "GoHomeLinkButton", q.a), se = c.a.img("Image", q.a), ae = c.a.img("ImagePlaceholder", q.a), oe = c.a.wrapped($, "LeftLinkRouterButton", q.a), ie = c.a.wrapped(ee, "LeftLinkButton", q.a), le = c.a.wrapped(ne, "SecondaryLeftLinkButton", q.a), ce = c.a.wrapped(te, "SecondaryLeftLinkRouterButton", q.a), de = c.a.h3("Title", q.a), ue = c.a.div("PageBody", q.a), me = c.a.div("QuarantineMessageWrapper", q.a), pe = Object(l.c)({
 				isLoggedIn: H.J,
 				isRequestToJoinPrivateCommunitiesEnabled: F.a,
-				origin: M.l,
+				origin: M.i,
 				user: H.j
 			}), be = Object(I.t)(), he = Object(o.b)(pe, (e, {
 				subredditName: t
@@ -2697,4 +2697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.022842d496815d06959c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.03594e1206706c67fda3.js.map

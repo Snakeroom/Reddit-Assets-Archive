@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b245e8c2886a42560bc1.js
-// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.613f7a6fd3a424cd30f7.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9547,7 +9547,7 @@
 				D = () => Object(m.c)({
 					headerContent: w.a,
 					isInFollowExperiment: S.a,
-					origin: T.l,
+					origin: T.i,
 					subreddit: (e, t) => Object(P.A)(e, {
 						subredditName: t.match.params.subredditName
 					}),
@@ -9656,9 +9656,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.Vc.Treatment1 === Object(n.c)(e, {
+			const o = e => r.Rc.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Lc
+				experimentName: r.Hc
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -9767,4 +9767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b245e8c2886a42560bc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.613f7a6fd3a424cd30f7.js.map

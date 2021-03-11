@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.55fd425e6a73fbedd214.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.d149b5d898ac2a1eefd7.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1628,7 +1628,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.db)(s + 1)
+					})), Object(i.cb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, o) {
@@ -3113,7 +3113,7 @@
 					} = e,
 					x = Object(n.useMemo)(() => {
 						const e = !Object(l.i)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE);
-						return e && Object(l.bb)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE), e
+						return e && Object(l.ab)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE), e
 					}, [o]),
 					[g, y] = Object(n.useState)(x);
 				Object(n.useEffect)(() => {
@@ -4528,8 +4528,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Ac
-				}) === n.Jc.Enabled
+					experimentName: n.wc
+				}) === n.Fc.Enabled
 			}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4558,4 +4558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.55fd425e6a73fbedd214.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.d149b5d898ac2a1eefd7.js.map

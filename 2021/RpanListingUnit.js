@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.494543d4cbcfd9af4bac.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.1da5651f21540a533f21.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const h = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.nc
+					experimentName: u.jc
 				});
-				return Object(u.Ad)(t) ? void 0 : t
+				return Object(u.wd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.oc
+					experimentName: u.kc
 				});
-				return Object(u.Ad)(t) ? void 0 : t
-			}, (e, t) => e === u.pc.Enabled && t === u.pc.Enabled);
+				return Object(u.wd)(t) ? void 0 : t
+			}, (e, t) => e === u.lc.Enabled && t === u.lc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -272,11 +272,11 @@
 				const k = Object(r.forwardRef)((e, t) => n.a.createElement(N, w({}, e, {
 						forwardedRef: t
 					}))),
-					A = Object(i.c)({
+					j = Object(i.c)({
 						redditUserId: b.g,
 						isMuxEnabled: h
 					});
-				return Object(a.b)(A, null, null, {
+				return Object(a.b)(j, null, null, {
 					forwardRef: !0
 				})(k)
 			}
@@ -1015,11 +1015,11 @@
 					})
 				}, []);
 				Object(a.a)(O, k);
-				const A = Object(i.a)(s);
-				Object(r.useEffect)(() => (void 0 !== A && A !== s && y.current(s - A), () => {
+				const j = Object(i.a)(s);
+				Object(r.useEffect)(() => (void 0 !== j && j !== s && y.current(s - j), () => {
 					clearTimeout(T.current), clearTimeout(N.current), clearTimeout(I.current)
 				}), [s]);
-				const j = Object(r.useCallback)(() => g(!0), [g]),
+				const A = Object(r.useCallback)(() => g(!0), [g]),
 					R = 0 === C.length,
 					L = v || R;
 				return n.a.createElement("div", {
@@ -1032,7 +1032,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: j,
+						onTransitionEnd: A,
 						style: b && C.length > 0 && !v ? {
 							transform: `translateY(-${h&&r.length>1?100:100*(r.length-1)}%)`,
 							transitionDuration: `${(h?o.b.disjointAnimationDuration:o.b.animationIncrementDuration)/1e3}s`
@@ -1864,8 +1864,8 @@
 				T = s("./src/reddit/selectors/platform.ts"),
 				N = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				k = s("./src/reddit/selectors/user.ts"),
-				A = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				j = s("./src/reddit/components/Flatlist/index.tsx"),
+				j = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
+				A = s("./src/reddit/components/Flatlist/index.tsx"),
 				R = s("./src/reddit/components/Flatlist/constants.ts"),
 				L = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				D = s("./src/reddit/components/HlsVideo/index.tsx"),
@@ -1953,7 +1953,7 @@
 									showToast: !1
 								})
 							}
-						} else Object(w.vb)(Date.now())
+						} else Object(w.ub)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -2159,7 +2159,7 @@
 						className: q.a.flatListContainer
 					}, n.a.createElement(oe, {
 						onClick: this.onHeaderClicked
-					}), n.a.createElement(j.a, {
+					}), n.a.createElement(A.a, {
 						className: q.a.flatlistSeparator
 					}), n.a.createElement("div", null, n.a.createElement(ce, {
 						onClick: this.onHideUnitClicked
@@ -2324,7 +2324,7 @@
 					null === (e = this.videoSessionManager) || void 0 === e || e.destroy()
 				}
 			}
-			const ie = e => n.a.createElement(A.a, {
+			const ie = e => n.a.createElement(j.a, {
 					className: Object(d.a)({
 						[q.a.verticalVotes]: e.isVertical,
 						[q.a.horizontalVotes]: !e.isVertical
@@ -2390,9 +2390,9 @@
 			})), s.d(t, "h", (function() {
 				return k
 			})), s.d(t, "f", (function() {
-				return A
-			})), s.d(t, "a", (function() {
 				return j
+			})), s.d(t, "a", (function() {
+				return A
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
@@ -2511,7 +2511,7 @@
 				}, a.a.createElement(E.a, null), a.a.createElement("span", null, r.fbt._("Share Video", null, {
 					hk: "FYgQy"
 				}))),
-				A = ({
+				j = ({
 					onClick: e
 				}) => a.a.createElement("button", {
 					className: x.a.promptButton,
@@ -2521,7 +2521,7 @@
 				}), a.a.createElement("span", null, r.fbt._("Crosspost", null, {
 					hk: "gORNr"
 				}))),
-				j = ({
+				A = ({
 					onClick: e
 				}) => a.a.createElement("button", {
 					className: `${x.a.promptButton} ${x.a.awardButton}`,
@@ -2686,8 +2686,8 @@
 				T = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				N = s("./src/reddit/icons/svgs/Link/index.tsx"),
 				k = s("./src/reddit/icons/svgs/Lock/index.tsx"),
-				A = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				j = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				A = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				L = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				D = s("./src/reddit/icons/svgs/Rules/index.tsx"),
@@ -2733,7 +2733,7 @@
 						a(!0), e()
 					},
 					className: B.a.joinButton
-				}, n.a.createElement(A.a, {
+				}, n.a.createElement(j.a, {
 					className: B.a.plusIcon
 				}), n.a.createElement("span", {
 					className: B.a.joinText
@@ -2877,7 +2877,7 @@
 				iconWrapperClassName: B.a.overflowItemIconWrapper,
 				key: `${ne}-rpanstudio`,
 				onClick: d
-			}, n.a.createElement(j.b, {
+			}, n.a.createElement(A.b, {
 				className: B.a.overflowItemIcon
 			})), n.a.createElement(v.b, {
 				className: B.a.overflowItem,
@@ -3667,9 +3667,9 @@
 			})), s.d(t, "clickMessageInputEvent", (function() {
 				return k
 			})), s.d(t, "typeMessageInputEvent", (function() {
-				return A
-			})), s.d(t, "clickLearnMoreLinkEvent", (function() {
 				return j
+			})), s.d(t, "clickLearnMoreLinkEvent", (function() {
+				return A
 			})), s.d(t, "clickQuestionMarkEvent", (function() {
 				return R
 			})), s.d(t, "clickConfirmAwardEvent", (function() {
@@ -3798,13 +3798,13 @@
 					action: "click",
 					noun: "message_input"
 				}),
-				A = e => t => ({
+				j = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "type",
 					noun: "message_input"
 				}),
-				j = e => t => ({
+				A = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -5068,4 +5068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.494543d4cbcfd9af4bac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1da5651f21540a533f21.js.map

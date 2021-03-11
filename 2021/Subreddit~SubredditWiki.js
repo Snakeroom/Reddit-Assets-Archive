@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.cfc68a6bf66ad305bfaa.js
-// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.5ac28a61b4e47defccc7.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -928,7 +928,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = c.a.wrapped(F, "PrivateKey", V.a), Y = c.a.div("ButtonsContainer", V.a), z = c.a.div("Container", V.a), J = c.a.div("Description", V.a), G = c.a.div("PrivateSubredditDetails", V.a), X = c.a.div("PrivateSubredditDescription", V.a), Q = c.a.h3("PrivateSubredditName", V.a), Z = c.a.a("Link", V.a), $ = c.a.wrapped(B.k, "LinkRouterButton", V.a), ee = c.a.wrapped(B.j, "LinkButton", V.a), te = c.a.wrapped(B.n, "SecondaryLinkRouterButton", V.a), se = c.a.wrapped(B.m, "SecondaryLinkButton", V.a), ne = c.a.wrapped($, "GoHomeLinkButton", V.a), re = c.a.img("Image", V.a), ie = c.a.img("ImagePlaceholder", V.a), ae = c.a.wrapped($, "LeftLinkRouterButton", V.a), oe = c.a.wrapped(ee, "LeftLinkButton", V.a), de = c.a.wrapped(se, "SecondaryLeftLinkButton", V.a), ce = c.a.wrapped(te, "SecondaryLeftLinkRouterButton", V.a), le = c.a.h3("Title", V.a), ue = c.a.div("PageBody", V.a), me = c.a.div("QuarantineMessageWrapper", V.a), pe = Object(d.c)({
 				isLoggedIn: U.J,
 				isRequestToJoinPrivateCommunitiesEnabled: D.a,
-				origin: W.l,
+				origin: W.i,
 				user: U.j
 			}), be = Object(L.t)(), he = Object(a.b)(pe, (e, {
 				subredditName: t
@@ -4728,12 +4728,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case h.hd.SmIcon:
+						case h.dd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.hd.SmIconHc:
+						case h.dd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5499,7 +5499,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(Be.mb)(Ge, !0, this.props.subredditId), this.props.sendEvent(Object(_e.d)("close"))
+						}), Object(Be.lb)(Ge, !0, this.props.subredditId), this.props.sendEvent(Object(_e.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(_e.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -7800,7 +7800,7 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const a = e => n.qb.Enabled === Object(r.c)(e, {
+			const a = e => n.ob.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: i.K,
 				experimentName: n.nb
 			})
@@ -7828,12 +7828,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: n.cd
+						experimentName: n.Yc
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.hd.SmIcon || t === n.hd.SmIconHc
+					return t === n.dd.SmIcon || t === n.dd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7856,4 +7856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.cfc68a6bf66ad305bfaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.5ac28a61b4e47defccc7.js.map

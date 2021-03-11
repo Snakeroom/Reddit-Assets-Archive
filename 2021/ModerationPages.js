@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.13d12f85180bb586616a.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d74613eb9c72c3cb6fe5.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -4897,7 +4897,7 @@
 					update: a
 				} = e, d = Object(Y.a)(), l = Object(i.d)(), [c, u] = Object(o.useState)(s), [m, p] = Object(o.useState)(!1), [b, h] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					h(Object(Q.w)("location")), Object(Q.ob)("location")
+					h(Object(Q.w)("location")), Object(Q.nb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(L.a, null, N.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(D.k, {
@@ -5854,10 +5854,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.hb)()
+					e(Object(l.i)()), Object(p.gb)()
 				},
 				onViewTooltip: () => {
-					Object(p.zb)()
+					Object(p.yb)()
 				}
 			}))(Object(u.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -6914,7 +6914,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), G = l.a.wrapped(F, "PrivateKey", q.a), z = l.a.div("ButtonsContainer", q.a), K = l.a.div("Container", q.a), J = l.a.div("Description", q.a), X = l.a.div("PrivateSubredditDetails", q.a), Q = l.a.div("PrivateSubredditDescription", q.a), Y = l.a.h3("PrivateSubredditName", q.a), Z = l.a.a("Link", q.a), $ = l.a.wrapped(R.k, "LinkRouterButton", q.a), ee = l.a.wrapped(R.j, "LinkButton", q.a), te = l.a.wrapped(R.n, "SecondaryLinkRouterButton", q.a), se = l.a.wrapped(R.m, "SecondaryLinkButton", q.a), ne = l.a.wrapped($, "GoHomeLinkButton", q.a), ae = l.a.img("Image", q.a), oe = l.a.img("ImagePlaceholder", q.a), re = l.a.wrapped($, "LeftLinkRouterButton", q.a), ie = l.a.wrapped(ee, "LeftLinkButton", q.a), de = l.a.wrapped(se, "SecondaryLeftLinkButton", q.a), le = l.a.wrapped(te, "SecondaryLeftLinkRouterButton", q.a), ce = l.a.h3("Title", q.a), ue = l.a.div("PageBody", q.a), me = l.a.div("QuarantineMessageWrapper", q.a), pe = Object(d.c)({
 				isLoggedIn: H.J,
 				isRequestToJoinPrivateCommunitiesEnabled: B.a,
-				origin: U.l,
+				origin: U.i,
 				user: H.j
 			}), be = Object(P.t)(), he = Object(r.b)(pe, (e, {
 				subredditName: t
@@ -8295,7 +8295,7 @@
 					isFlairedUsersListPending: e => e.pages.modHub.flairedUsers.api.pending,
 					isSearchPending: e => e.pages.modHub.flairedUsers.search.api.pending,
 					isUserFlairEnabled: $.a,
-					origin: Z.l,
+					origin: Z.i,
 					pageInfo: (e, t) => {
 						const s = Object(Q.d)(t.subredditId, t.after, t.before);
 						return e.pages.modHub.flairedUsers.pageInfo[s]
@@ -12873,7 +12873,7 @@
 						return !!e.pages.modHub.moderators.userOrder.api.pending[s]
 					},
 					isResignAsModeratorModalOpen: Object(y.b)("ModerationPage--Modal--Resign"),
-					origin: S.l,
+					origin: S.i,
 					searchPending: e => !!e.pages.modHub.moderators.search.api.pending,
 					searchResult: e => e.pages.modHub.moderators.search.result
 				}),
@@ -22274,9 +22274,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Fb
+					experimentName: n.Bb
 				});
-				return !(!t || Object(n.Ad)(t))
+				return !(!t || Object(n.wd)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -22509,4 +22509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.13d12f85180bb586616a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d74613eb9c72c3cb6fe5.js.map

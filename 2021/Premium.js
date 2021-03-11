@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.be05b095f58b7d3405a2.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.97e746cd42f0c1870c29.js
+// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-helmet/es/Helmet.js": function(e, t, n) {
@@ -70,7 +70,7 @@
 					H = function(e, t) {
 						if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 					},
-					D = function() {
+					q = function() {
 						function e(e, t) {
 							for (var n = 0; n < t.length; n++) {
 								var r = t[n];
@@ -81,7 +81,7 @@
 							return n && e(t.prototype, n), r && e(t, r), t
 						}
 					}(),
-					q = Object.assign || function(e) {
+					D = Object.assign || function(e) {
 						for (var t = 1; t < arguments.length; t++) {
 							var n = arguments[t];
 							for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -119,7 +119,7 @@
 						})).map((function(t) {
 							return t[e]
 						})).reduce((function(e, t) {
-							return q({}, e, t)
+							return D({}, e, t)
 						}), {})
 					},
 					Q = function(e, t) {
@@ -425,7 +425,7 @@
 								r = e.arrayTypeChildren,
 								a = e.newChildProps,
 								o = e.nestedChildren;
-							return q({}, r, ((t = {})[n.type] = [].concat(r[n.type] || [], [q({}, a, this.mapNestedChildrenToProps(n, o))]), t))
+							return D({}, r, ((t = {})[n.type] = [].concat(r[n.type] || [], [D({}, a, this.mapNestedChildrenToProps(n, o))]), t))
 						}, t.prototype.mapObjectTypeChildren = function(e) {
 							var t, n, r = e.child,
 								a = e.newProps,
@@ -433,22 +433,22 @@
 								i = e.nestedChildren;
 							switch (r.type) {
 								case v.TITLE:
-									return q({}, a, ((t = {})[r.type] = i, t.titleAttributes = q({}, o), t));
+									return D({}, a, ((t = {})[r.type] = i, t.titleAttributes = D({}, o), t));
 								case v.BODY:
-									return q({}, a, {
-										bodyAttributes: q({}, o)
+									return D({}, a, {
+										bodyAttributes: D({}, o)
 									});
 								case v.HTML:
-									return q({}, a, {
-										htmlAttributes: q({}, o)
+									return D({}, a, {
+										htmlAttributes: D({}, o)
 									})
 							}
-							return q({}, a, ((n = {})[r.type] = q({}, o), n))
+							return D({}, a, ((n = {})[r.type] = D({}, o), n))
 						}, t.prototype.mapArrayTypeChildrenToProps = function(e, t) {
-							var n = q({}, t);
+							var n = D({}, t);
 							return Object.keys(e).forEach((function(t) {
 								var r;
-								n = q({}, n, ((r = {})[t] = e[t], r))
+								n = D({}, n, ((r = {})[t] = e[t], r))
 							})), n
 						}, t.prototype.warnOnInvalidChildren = function(e, t) {
 							return !0
@@ -492,9 +492,9 @@
 							var e = this.props,
 								t = e.children,
 								n = W(e, ["children"]),
-								r = q({}, n);
+								r = D({}, n);
 							return t && (r = this.mapChildrenToProps(t, r)), h.a.createElement(a, r)
-						}, D(t, null, [{
+						}, q(t, null, [{
 							key: "canUseDOM",
 							set: function(e) {
 								a.canUseDOM = e
@@ -1741,13 +1741,13 @@
 				A = n("./src/reddit/components/TitleTagManager/index.tsx"),
 				L = n("./src/reddit/constants/experiments.ts"),
 				B = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const R = Object(B.a)(L.Db);
+			const R = Object(B.a)(L.zb);
 			var G = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				F = n("./src/reddit/selectors/user.ts"),
 				U = n("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
 				H = n("./src/reddit/controls/Button/index.tsx"),
-				D = n("./src/lib/classNames/index.ts"),
-				q = n("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
+				q = n("./src/lib/classNames/index.ts"),
+				D = n("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				W = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				z = n("./src/reddit/hooks/useTracking.ts"),
 				Y = n("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
@@ -1862,14 +1862,14 @@
 						bonusCoins: c
 					};
 					return i.a.createElement("div", {
-						className: Object(D.a)(K.a.container, e)
+						className: Object(q.a)(K.a.container, e)
 					}, d.map(e => {
 						const {
 							key: t,
 							isNew: a,
 							telemetryTag: o
 						} = e;
-						return i.a.createElement(q.a, {
+						return i.a.createElement(D.a, {
 							className: K.a.benefit,
 							description: V[t](m),
 							iconUrl: `${r.a.assetPath}/img/gold/premium-marketing/benefits-icons/${t}.png`,
@@ -1934,7 +1934,7 @@
 							hk: "v8BCD"
 						})));
 					return i.a.createElement("div", {
-						className: Object(D.a)(Z.a.buttons, e, {
+						className: Object(q.a)(Z.a.buttons, e, {
 							[Z.a.hero]: !!t
 						})
 					}, o ? c : m)
@@ -1959,7 +1959,7 @@
 				}, a.fbt._("Redeem a Gift Code", null, {
 					hk: "10i0AM"
 				})), i.a.createElement("form", {
-					className: Object(D.a)(oe.a.giftCodeInputContainer, {
+					className: Object(q.a)(oe.a.giftCodeInputContainer, {
 						[oe.a.giftCodeHidden]: !r
 					}),
 					onSubmit: e => {
@@ -2002,7 +2002,7 @@
 					const o = a.find(e => e.frequency === X.d.Monthly),
 						s = a.find(e => e.frequency === X.d.Yearly);
 					return i.a.createElement("div", {
-						className: Object(D.a)(me.a.buttons, t, {
+						className: Object(q.a)(me.a.buttons, t, {
 							[me.a.hero]: !!n
 						})
 					}, s && i.a.createElement(H.h, {
@@ -2054,7 +2054,7 @@
 						shouldShowClaimGoldModal: l
 					} = this.props;
 					return i.a.createElement("div", {
-						className: Object(D.a)(e, be.a.purchaseSection)
+						className: Object(q.a)(e, be.a.purchaseSection)
 					}, i.a.createElement("h2", {
 						className: be.a.purchaseSectionTitle
 					}, a.fbt._("Join Reddit Premium Today", null, {
@@ -2074,7 +2074,7 @@
 					}, a.fbt._("Redeem a Gift Code", null, {
 						hk: "10i0AM"
 					})), i.a.createElement("form", {
-						className: Object(D.a)(be.a.giftCodeInputContainer, {
+						className: Object(q.a)(be.a.giftCodeInputContainer, {
 							[be.a.giftCodeHidden]: !l
 						}),
 						onSubmit: this.onGiftCodeRedeem
@@ -2095,7 +2095,7 @@
 				}
 			}
 			const ye = () => i.a.createElement("div", {
-					className: Object(D.a)(be.a.leftPanel, be.a.loaderContainer)
+					className: Object(q.a)(be.a.leftPanel, be.a.loaderContainer)
 				}, i.a.createElement(W.a, {
 					sizePx: 80
 				})),
@@ -2110,9 +2110,9 @@
 						signupBonusCoins: c
 					} = o[0], l = !!c && c > 0 && c.toLocaleString(), d = s.toLocaleString();
 					return i.a.createElement("div", {
-						className: Object(D.a)(be.a.leftPanel, be.a.withAnnual)
+						className: Object(q.a)(be.a.leftPanel, be.a.withAnnual)
 					}, i.a.createElement("ul", {
-						className: Object(D.a)(be.a.premiumPerks, {
+						className: Object(q.a)(be.a.premiumPerks, {
 							[be.a.premiumPerksWithBonus]: !!l
 						})
 					}, l && i.a.createElement("li", {
@@ -2497,4 +2497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.be05b095f58b7d3405a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.97e746cd42f0c1870c29.js.map
