@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.b9da8ae1a8961be72399.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.55ea41f5ae6784593978.js
+// Retrieved at 3/11/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -3098,6 +3098,31 @@
 				fill: "inherit"
 			})))
 		},
+		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, t, n) {
+			e.exports = {
+				circle: "_17IuRdA-NY8vFk-Tt991sn"
+			}
+		},
+		"./src/reddit/icons/svgs/Circle/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				o = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/icons/svgs/Circle/index.m.less"),
+				i = n.n(a);
+			t.a = e => r.a.createElement("svg", {
+				className: Object(o.a)(i.a.circle, e.className),
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 8 8"
+			}, r.a.createElement("g", {
+				fill: "inherit",
+				stroke: "none"
+			}, r.a.createElement("circle", {
+				r: "4",
+				cy: "4",
+				cx: "4"
+			})))
+		},
 		"./src/reddit/icons/svgs/Eye/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -3774,4 +3799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.b9da8ae1a8961be72399.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.55ea41f5ae6784593978.js.map
