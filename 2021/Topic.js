@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.5d75271b671bb6b5e60e.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.965718bec81be24854a5.js
+// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -881,7 +881,7 @@
 			}
 		},
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"c4b7fd558de2"}')
+			e.exports = JSON.parse('{"id":"34f3ef97014d"}')
 		},
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, r) {
 			"use strict";
@@ -2283,7 +2283,7 @@
 					}) => {
 						if (n) {
 							const n = Object(E.F)(e, r);
-							return Object(y.h)(e, {
+							return Object(y.i)(e, {
 								subredditId: n,
 								listingKey: t
 							})
@@ -3317,4 +3317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.5d75271b671bb6b5e60e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.965718bec81be24854a5.js.map

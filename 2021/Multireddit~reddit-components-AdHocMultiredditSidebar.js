@@ -1,12 +1,12 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.493eec2e19cdf731df15.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.d265744a3af24dd30149.js
+// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"8f2551b0bce3"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"a1a910f92055"}')
+			e.exports = JSON.parse('{"id":"2f97e2a1f36f"}')
 		},
 		"./src/graphql/operations/SubredditRecommendations.json": function(e) {
 			e.exports = JSON.parse('{"id":"3c4d88474140"}')
@@ -2636,4 +2636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.493eec2e19cdf731df15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.d265744a3af24dd30149.js.map

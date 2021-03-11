@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.35655ca92c7542a4f9e5.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3d599cbe146a86f07372.js
+// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -3046,6 +3046,68 @@
 				snoovatarBackground: "_2TJo5CZBd22_s9OR3EIwI3"
 			}
 		},
+		"./src/reddit/components/Econ/Tournament/Facepile/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return f
+			}));
+			var r = n("./node_modules/react/index.js"),
+				s = n.n(r),
+				o = n("./node_modules/react-redux/es/index.js"),
+				a = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
+				c = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
+				d = n("./src/reddit/helpers/userSnoovatar/index.ts"),
+				l = n("./src/reddit/models/User/index.ts"),
+				u = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				m = n("./src/reddit/selectors/user.ts"),
+				p = n("./src/reddit/components/Econ/Tournament/Facepile/index.m.less"),
+				b = n.n(p);
+
+			function f({
+				className: e,
+				faceClassName: t,
+				subredditId: n
+			}) {
+				var r;
+				const p = Object(o.e)(m.V),
+					f = Object(o.e)(m.j),
+					h = Object(o.e)(m.C),
+					y = Object(o.e)(e => Object(u.b)(e, {
+						subredditId: n
+					}));
+				return (null === (r = null == y ? void 0 : y.latestParticipants) || void 0 === r ? void 0 : r.length) ? s.a.createElement("div", {
+					className: Object(a.a)(b.a.tournamentFacepile, e)
+				}, y.latestParticipants.slice(0, 3).map(({
+					icon: e,
+					name: n,
+					profile: r
+				}) => {
+					const o = !!f && Object(l.e)(f) === n,
+						{
+							url: u
+						} = e,
+						{
+							isNsfw: m
+						} = r,
+						y = `tournament-facepile-face-${n}`;
+					return Object(d.a)(u) ? s.a.createElement(i.a, {
+						key: y,
+						backgroundClassName: b.a.snoovatarBackground,
+						className: Object(a.a)(b.a.snoovatar, t),
+						headshot: u
+					}) : s.a.createElement(c.a, {
+						key: y,
+						className: Object(a.a)(b.a.userIcon, t),
+						iconUrl: u,
+						isCurrentUser: o,
+						isNSFW: m,
+						isNightMode: p,
+						shouldHideNSFW: h
+					})
+				})) : null
+			}
+		},
 		"./src/reddit/components/Econ/Tournament/Sidebar/Header/index.m.less": function(e, t, n) {
 			e.exports = {
 				tournamentHeader: "_2L8VNMjNWlcP7ToGgB-MVT",
@@ -3060,151 +3122,100 @@
 		"./src/reddit/components/Econ/Tournament/Sidebar/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return P
+				return v
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				o = n("./node_modules/react-redux/es/index.js"),
 				a = n("./src/lib/prettyPrintNumber/index.ts"),
-				i = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
-				d = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
-				l = n("./src/reddit/helpers/userSnoovatar/index.ts"),
-				u = n("./src/reddit/models/User/index.ts"),
-				m = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				p = n("./src/reddit/selectors/user.ts"),
-				b = n("./src/reddit/components/Econ/Tournament/Facepile/index.m.less"),
-				f = n.n(b);
-
-			function h({
-				className: e,
-				faceClassName: t,
-				subredditId: n
-			}) {
-				var r;
-				const a = Object(o.e)(p.V),
-					b = Object(o.e)(p.j),
-					h = Object(o.e)(p.C),
-					y = Object(o.e)(e => Object(m.b)(e, {
-						subredditId: n
-					}));
-				return (null === (r = null == y ? void 0 : y.latestParticipants) || void 0 === r ? void 0 : r.length) ? s.a.createElement("div", {
-					className: Object(i.a)(f.a.tournamentFacepile, e)
-				}, y.latestParticipants.slice(0, 3).map(({
-					icon: e,
-					name: n,
-					profile: r
-				}) => {
-					const o = !!b && Object(u.e)(b) === n,
-						{
-							url: m
-						} = e,
-						{
-							isNsfw: p
-						} = r,
-						y = `tournament-facepile-face-${n}`;
-					return Object(l.a)(m) ? s.a.createElement(c.a, {
-						key: y,
-						backgroundClassName: f.a.snoovatarBackground,
-						className: Object(i.a)(f.a.snoovatar, t),
-						headshot: m
-					}) : s.a.createElement(d.a, {
-						key: y,
-						className: Object(i.a)(f.a.userIcon, t),
-						iconUrl: m,
-						isCurrentUser: o,
-						isNSFW: p,
-						isNightMode: a,
-						shouldHideNSFW: h
-					})
-				})) : null
-			}
-			var y = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
-				g = n("./src/reddit/models/Poll/index.ts"),
-				v = n("./src/reddit/selectors/subreddit.ts"),
-				_ = n("./src/reddit/components/Econ/Tournament/Sidebar/Header/index.m.less"),
-				x = n.n(_);
+				i = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
+				c = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
+				d = n("./src/reddit/models/Poll/index.ts"),
+				l = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				u = n("./src/reddit/selectors/subreddit.ts"),
+				m = n("./src/reddit/components/Econ/Tournament/Sidebar/Header/index.m.less"),
+				p = n.n(m);
 			const {
-				fbt: O
+				fbt: b
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function j({
+			function f({
 				subredditId: e
 			}) {
-				const t = Object(o.e)(t => Object(m.e)(t, {
+				const t = Object(o.e)(t => Object(l.e)(t, {
 						subredditId: e
 					})),
-					n = Object(o.e)(t => Object(v.T)(t, {
+					n = Object(o.e)(t => Object(u.T)(t, {
 						subredditId: e
 					})),
-					r = Object(y.a)({
+					r = Object(c.a)({
 						shouldHideNsfwIcon: !1,
 						subredditOrProfile: n
 					});
 				if (!t) return null;
 				const {
-					name: i,
-					status: c,
-					totalParticipantsCount: d
+					name: m,
+					status: f,
+					totalParticipantsCount: h
 				} = t;
 				return s.a.createElement("div", {
-					className: x.a.tournamentHeader
+					className: p.a.tournamentHeader
 				}, s.a.createElement("img", {
-					alt: O._("Subreddit icon", null, {
+					alt: b._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
-					className: x.a.icon,
+					className: p.a.icon,
 					src: r.url,
 					style: {
 						backgroundColor: r.color
 					}
 				}), s.a.createElement("h1", {
-					className: x.a.title
-				}, i), s.a.createElement("h3", {
-					className: x.a.subtitle
-				}, O._("Predictions tournament", null, {
+					className: p.a.title
+				}, m), s.a.createElement("h3", {
+					className: p.a.subtitle
+				}, b._("Predictions tournament", null, {
 					hk: "447IA5"
 				})), s.a.createElement("div", {
-					className: x.a.status
-				}, c !== g.c.Closed ? d > 0 && s.a.createElement("div", {
-					className: x.a.facepileRow
-				}, s.a.createElement(h, {
+					className: p.a.status
+				}, f !== d.c.Closed ? h > 0 && s.a.createElement("div", {
+					className: p.a.facepileRow
+				}, s.a.createElement(i.a, {
 					subredditId: e
 				}), s.a.createElement("div", {
-					className: x.a.numberOfPlayers
-				}, O._({
+					className: p.a.numberOfPlayers
+				}, b._({
 					"*": "{totalPlayers} players",
 					_1: "{totalPlayers} player"
-				}, [O._param("totalPlayers", Object(a.b)(d)), O._plural(d)], {
+				}, [b._param("totalPlayers", Object(a.b)(h)), b._plural(h)], {
 					hk: "4vb2za"
-				}))) : O._("Tournament ended", null, {
+				}))) : b._("Tournament ended", null, {
 					hk: "2gUDWl"
 				})))
 			}
 			n("./src/reddit/components/Econ/PredictionLeaderboard/List/index.tsx"), n("./src/reddit/components/Econ/PredictionLeaderboard/Modal/index.tsx");
-			var E = n("./src/reddit/components/Econ/PredictionLeaderboard/Sidebar/index.tsx");
+			var h = n("./src/reddit/components/Econ/PredictionLeaderboard/Sidebar/index.tsx");
 
-			function S({
+			function y({
 				subredditId: e
 			}) {
-				const t = Object(o.e)(t => Object(m.e)(t, {
+				const t = Object(o.e)(t => Object(l.e)(t, {
 					subredditId: e
 				}));
-				return t ? s.a.createElement(E.default, {
+				return t ? s.a.createElement(h.default, {
 					subredditId: e,
 					tournamentId: t.tournamentId
 				}) : null
 			}
 			const {
-				fbt: I
+				fbt: g
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function P({
+			function v({
 				subredditId: e
 			}) {
-				return s.a.createElement("div", null, s.a.createElement(j, {
+				return s.a.createElement("div", null, s.a.createElement(f, {
 					subredditId: e
-				}), s.a.createElement(S, {
+				}), s.a.createElement(y, {
 					subredditId: e
 				}))
 			}
@@ -9733,4 +9744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.35655ca92c7542a4f9e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3d599cbe146a86f07372.js.map

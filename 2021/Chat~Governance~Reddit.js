@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6e7984d19a55f25b437a.js
-// Retrieved at 3/11/2021, 9:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.810cdc05a085abbde427.js
+// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1447,11 +1447,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("128723"),
+				buildNumber: r("128725"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1615472346"),
+				})("1615478344"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -1613,7 +1613,7 @@
 			e.exports = JSON.parse('{"id":"29aee4089528"}')
 		},
 		"./src/graphql/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"7dc8f018e9b9"}')
+			e.exports = JSON.parse('{"id":"d8e8b72bd46f"}')
 		},
 		"./src/graphql/operations/SubredditPostFlairStyleTemplates.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a87d9b91dc4"}')
@@ -1631,13 +1631,13 @@
 			e.exports = JSON.parse('{"id":"8d0e34deaa32"}')
 		},
 		"./src/graphql/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"059231227d92"}')
+			e.exports = JSON.parse('{"id":"e9fe82729baf"}')
 		},
 		"./src/graphql/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"2a194e7926dd"}')
 		},
 		"./src/graphql/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"47b191b8cc6c"}')
+			e.exports = JSON.parse('{"id":"182c5d25c672"}')
 		},
 		"./src/graphql/operations/UpdateSubredditNotificationSettings.json": function(e) {
 			e.exports = JSON.parse('{"id":"0af4f630a2e1"}')
@@ -3612,14 +3612,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cbd9072cbc9ed4d6306a4a9d8cda7f9046926189c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cc49b935da793eb36fc7690b93e7a632f1084525b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bd9072cbc9ed4d6306a4a9d8cda7f9046926189c-production",
+						release: "c49b935da793eb36fc7690b93e7a632f1084525b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4068,7 +4068,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "bd9072cbc9ed4d6306a4a9d8cda7f9046926189c-production",
+						releaseClient: "c49b935da793eb36fc7690b93e7a632f1084525b-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -34827,20 +34827,22 @@
 			"use strict";
 			i.d(t, "g", (function() {
 				return l
-			})), i.d(t, "f", (function() {
-				return c
-			})), i.d(t, "e", (function() {
-				return u
-			})), i.d(t, "b", (function() {
-				return p
-			})), i.d(t, "d", (function() {
-				return m
-			})), i.d(t, "c", (function() {
-				return h
 			})), i.d(t, "h", (function() {
-				return f
-			})), i.d(t, "a", (function() {
+				return c
+			})), i.d(t, "f", (function() {
+				return u
+			})), i.d(t, "e", (function() {
+				return _
+			})), i.d(t, "b", (function() {
+				return m
+			})), i.d(t, "d", (function() {
+				return h
+			})), i.d(t, "c", (function() {
+				return b
+			})), i.d(t, "i", (function() {
 				return g
+			})), i.d(t, "a", (function() {
+				return w
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/lib/initializeClient/installReducer.ts"),
@@ -34854,40 +34856,44 @@
 				}
 			});
 			const l = (e, t) => {
-					var i, n, r;
-					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.isFetching) || !1
+					var i, n;
+					return !!(null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId])
 				},
 				c = (e, t) => {
 					var i, n, r;
-					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.tournaments) || []
+					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.isFetching) || !1
 				},
 				u = (e, t) => {
-					const i = c(e, t);
+					var i, n, r;
+					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.tournaments) || []
+				},
+				_ = (e, t) => {
+					const i = u(e, t);
 					return i.length ? i[i.length - 1] : null
 				},
-				_ = Object(n.a)(c, e => e.filter(e => e.status === o.c.Live)),
-				p = (e, t) => _(e, t)[0],
-				m = (e, t) => !!c(e, t).length,
-				h = (e, t) => !!_(e, t).length,
-				b = Object(n.a)(u, e => {
+				p = Object(n.a)(u, e => e.filter(e => e.status === o.c.Live)),
+				m = (e, t) => p(e, t)[0],
+				h = (e, t) => !!u(e, t).length,
+				b = (e, t) => !!p(e, t).length,
+				f = Object(n.a)(_, e => {
 					var t;
 					return (null === (t = null == e ? void 0 : e.predictionPosts) || void 0 === t ? void 0 : t.length) ? e.predictionPosts.map(({
 						id: e
 					}) => e) : []
 				}),
-				f = Object(n.a)(b, d.B, (e, t) => e.length ? t.filter(t => e.includes(t)) : []),
-				g = (e, t) => {
+				g = Object(n.a)(f, d.B, (e, t) => e.length ? t.filter(t => e.includes(t)) : []),
+				w = (e, t) => {
 					const i = Object(a.F)(e, t),
-						n = b(e, {
+						n = f(e, {
 							subredditId: i
 						}),
-						r = f(e, {
+						r = g(e, {
 							listingKey: t,
 							subredditId: i
 						});
 					return n.length > r.length
 				};
-			Object(n.a)(p, e => {
+			Object(n.a)(m, e => {
 				var t;
 				return null !== (t = null === (null == e ? void 0 : e.predictionPosts) || 0 === (null == e ? void 0 : e.predictionPosts.length) || (null == e ? void 0 : e.predictionPosts.every(e => !!e.poll.resolvedOptionId))) && void 0 !== t && t
 			})
@@ -44749,4 +44755,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6e7984d19a55f25b437a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.810cdc05a085abbde427.js.map

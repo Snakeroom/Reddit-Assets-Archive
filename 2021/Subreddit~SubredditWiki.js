@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.b7d09f13460c2b964f4c.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.7cb6c1b600c7d7e40959.js
+// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "EconHelperActions", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -361,7 +361,7 @@
 				}) => {
 					const r = s(),
 						i = Object(c.F)(r, e);
-					if (Object(u.g)(r, {
+					if (Object(u.h)(r, {
 							subredditId: i
 						})) return Object(u.f)(r, {
 						subredditId: i
@@ -7813,4 +7813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.b7d09f13460c2b964f4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.7cb6c1b600c7d7e40959.js.map

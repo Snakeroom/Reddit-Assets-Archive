@@ -1,12 +1,12 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.0b473a78fe29d5295c09.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.40ab22d0d5f7ac47369c.js
+// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"8f2551b0bce3"}')
 		},
 		"./src/graphql/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"a1a910f92055"}')
+			e.exports = JSON.parse('{"id":"2f97e2a1f36f"}')
 		},
 		"./src/graphql/operations/SubredditRecommendations.json": function(e) {
 			e.exports = JSON.parse('{"id":"3c4d88474140"}')
@@ -1268,4 +1268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.0b473a78fe29d5295c09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.40ab22d0d5f7ac47369c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.06bd58a3e58584fbe666.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.2bc6a719b3914720f1b0.js
+// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1182,7 +1182,7 @@
 			}
 		},
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"c4b7fd558de2"}')
+			e.exports = JSON.parse('{"id":"34f3ef97014d"}')
 		},
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
 			"use strict";
@@ -8642,7 +8642,7 @@
 					}) => {
 						if (r) {
 							const r = Object(E.F)(e, s);
-							return Object(y.h)(e, {
+							return Object(y.i)(e, {
 								subredditId: r,
 								listingKey: t
 							})
@@ -9792,4 +9792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.06bd58a3e58584fbe666.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.2bc6a719b3914720f1b0.js.map

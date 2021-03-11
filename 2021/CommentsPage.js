@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.9ca6f950669808259c8d.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7292a66126ba6e1eee20.js
+// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -75,7 +75,7 @@
 			e.exports = JSON.parse('{"id":"45c2e0b86b90"}')
 		},
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"c4b7fd558de2"}')
+			e.exports = JSON.parse('{"id":"34f3ef97014d"}')
 		},
 		"./src/graphql/operations/SubredditTopPredictors.json": function(e) {
 			e.exports = JSON.parse('{"id":"3407d5f67207"}')
@@ -736,7 +736,7 @@
 				}) => {
 					const r = s(),
 						o = Object(c.F)(r, e);
-					if (Object(m.g)(r, {
+					if (Object(m.h)(r, {
 							subredditId: o
 						})) return Object(m.f)(r, {
 						subredditId: o
@@ -8447,7 +8447,7 @@
 					}) => {
 						if (n) {
 							const n = Object(k.F)(e, s);
-							return Object(v.h)(e, {
+							return Object(v.i)(e, {
 								subredditId: n,
 								listingKey: t
 							})
@@ -10624,4 +10624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9ca6f950669808259c8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7292a66126ba6e1eee20.js.map
