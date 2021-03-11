@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.2bc6a719b3914720f1b0.js
-// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.75427cfe4871ec295989.js
+// Retrieved at 3/11/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -8680,7 +8680,7 @@
 					trackOnPostExitedViewport: (t, s, r, n, o) => {
 						e(d.I(t, r, n, o))
 					},
-					surveyTriggerScrollCounted: () => e(Object(m.g)())
+					surveyTriggerScrollCounted: () => e(Object(m.h)())
 				}),
 				T = Object(r.b)(I, S, (e, t, s) => ({
 					...e,
@@ -9525,26 +9525,28 @@
 				m = s("./node_modules/reselect/es/index.js"),
 				p = s("./src/lib/constants/index.ts"),
 				u = s("./src/lib/makeSearchKey/index.ts"),
-				h = s("./src/reddit/components/JumpToContent/index.tsx"),
-				b = s("./src/reddit/components/SearchResultsContent/index.tsx"),
-				f = s("./src/reddit/components/SearchResultsNav/index.tsx"),
-				x = s("./src/reddit/components/SearchResultsSidebar/index.tsx"),
-				g = s("./src/reddit/components/TitleTagManager/index.tsx"),
-				y = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				v = s("./src/reddit/constants/covid.ts"),
-				C = s("./src/reddit/constants/page.ts"),
-				E = s("./src/reddit/constants/parameters.ts"),
-				O = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				_ = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				k = s("./src/reddit/helpers/trackers/searchResults.ts"),
-				j = s("./src/reddit/layout/page/Listing/index.tsx"),
-				I = s("./src/reddit/selectors/experiments/railsSearchResults.ts"),
-				S = s("./src/reddit/selectors/meta.ts"),
-				T = s("./src/reddit/selectors/searchResults.ts"),
-				w = s("./src/reddit/selectors/subreddit.ts"),
-				P = s("./src/reddit/pages/SearchResults/index.m.less"),
-				N = s.n(P);
-			const L = Object(r.a)({
+				h = s("./src/reddit/actions/survey/index.ts"),
+				b = s("./src/reddit/components/JumpToContent/index.tsx"),
+				f = s("./src/reddit/components/SearchResultsContent/index.tsx"),
+				x = s("./src/reddit/components/SearchResultsNav/index.tsx"),
+				g = s("./src/reddit/components/SearchResultsSidebar/index.tsx"),
+				y = s("./src/reddit/components/TitleTagManager/index.tsx"),
+				v = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				C = s("./src/reddit/constants/covid.ts"),
+				E = s("./src/reddit/constants/page.ts"),
+				O = s("./src/reddit/constants/parameters.ts"),
+				_ = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				k = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				j = s("./src/reddit/helpers/trackers/searchResults.ts"),
+				I = s("./src/reddit/layout/page/Listing/index.tsx"),
+				S = s("./src/reddit/selectors/experiments/railsSearchResults.ts"),
+				T = s("./src/reddit/selectors/meta.ts"),
+				w = s("./src/reddit/selectors/searchResults.ts"),
+				P = s("./src/reddit/selectors/subreddit.ts"),
+				N = s("./src/reddit/pages/SearchResults/index.m.less"),
+				L = s.n(N);
+			const M = 3e3,
+				R = Object(r.a)({
 					resolved: {},
 					chunkName: () => "FeaturedLiveEntrypointLegacyAnnouncement",
 					isReady(e) {
@@ -9564,36 +9566,39 @@
 						return "./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.tsx"
 					}
 				}),
-				M = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
+				A = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
 					hk: "1XOKAg"
 				}),
-				R = Object(O.t)({
-					currentPageUrl: O.e,
-					queryParams: O.T,
-					shouldShowCovidBanner: O.X
+				F = Object(_.t)({
+					currentPageUrl: _.e,
+					queryParams: _.T,
+					shouldShowCovidBanner: _.X
 				}),
-				A = () => Object(m.c)({
-					headerContent: T.a,
-					isInFollowExperiment: I.a,
-					origin: S.l,
-					subreddit: (e, t) => Object(w.A)(e, {
+				B = () => Object(m.c)({
+					headerContent: w.a,
+					isInFollowExperiment: S.a,
+					origin: T.l,
+					subreddit: (e, t) => Object(P.A)(e, {
 						subredditName: t.match.params.subredditName
 					}),
-					viewTreatment: T.h
+					viewTreatment: w.h
 				}),
-				F = Object(l.b)(A);
-			class B extends d.a.Component {
+				D = e => ({
+					searchViewedTrigger: () => e(Object(h.f)())
+				}),
+				U = Object(l.b)(B, D);
+			class V extends d.a.Component {
 				constructor(e) {
 					super(e), this.renderCovidBanner = () => {
 						const {
 							queryParams: e,
 							sendEvent: t
-						} = this.props, s = s => t(Object(k.b)(s, Object(u.c)(a()(e || {}, E.t))));
+						} = this.props, s = s => t(Object(j.b)(s, Object(u.c)(a()(e || {}, O.t))));
 						return this.state.didSendCovidSeenEvent || (s("view"), this.setState({
 							didSendCovidSeenEvent: !0
-						})), d.a.createElement(L, {
-							announcement: v.a,
-							className: N.a.announcement,
+						})), d.a.createElement(R, {
+							announcement: C.a,
+							className: L.a.announcement,
 							onBtnClick: () => s("click"),
 							onClose: () => {
 								s("dismiss"), this.setState({
@@ -9604,23 +9609,23 @@
 					}, this.state = {
 						didSendCovidSeenEvent: !1,
 						isCovidBannerHidden: !1
-					}
+					}, this.triggerTimeoutId = 0
 				}
 				componentDidMount() {
-					Object(_.c)(_.a.SearchResults) || Object(_.d)(_.a.SearchResults)
+					Object(k.c)(k.a.SearchResults) || Object(k.d)(k.a.SearchResults), this.triggerTimeoutId = window.setTimeout(() => this.props.searchViewedTrigger(), M)
 				}
 				componentWillUnmount() {
-					Object(_.b)(_.a.SearchResults)
+					Object(k.b)(k.a.SearchResults), window.clearTimeout(this.triggerTimeoutId)
 				}
 				componentDidUpdate(e) {
 					this.props.queryParams !== e.queryParams && this.setState({
 						didSendCovidSeenEvent: !1,
 						isCovidBannerHidden: !1
-					}), this.props.queryParams && e.queryParams && this.props.queryParams[E.p] !== e.queryParams[E.p] && (Object(_.b)(_.a.SearchResults), Object(_.d)(_.a.SearchResults))
+					}), this.props.queryParams && e.queryParams && this.props.queryParams[O.p] !== e.queryParams[O.p] && (Object(k.b)(k.a.SearchResults), Object(k.d)(k.a.SearchResults))
 				}
 				render() {
-					return d.a.createElement(d.a.Fragment, null, d.a.createElement(g.a, {
-						title: M(this.props.queryParams.q).toString()
+					return d.a.createElement(d.a.Fragment, null, d.a.createElement(y.a, {
+						title: A(this.props.queryParams.q).toString()
 					}), this.renderContent())
 				}
 				renderContent() {
@@ -9636,43 +9641,43 @@
 						subreddit: l,
 						viewTreatment: m
 					} = this.props, {
-						isCovidBannerHidden: g
-					} = this.state, y = n.params.subredditName || n.params.multiredditName || "", v = n.params.username, O = Object(u.c)(a()(i || {}, E.t)), _ = {
-						...O,
-						sort: O.category ? p.Nb.Relevance : O.sort,
-						t: O.category ? p.Ub.DAY : O.t
+						isCovidBannerHidden: h
+					} = this.state, y = n.params.subredditName || n.params.multiredditName || "", v = n.params.username, C = Object(u.c)(a()(i || {}, O.t)), _ = {
+						...C,
+						sort: C.category ? p.Nb.Relevance : C.sort,
+						t: C.category ? p.Ub.DAY : C.t
 					}, k = Object(u.b)(y, v, _);
-					let I;
-					return I = l && O.restrict_sr || 1 === _.type.length && _.type[0] === p.Pb.Posts ? C.g.Posts : _.type.length > 0 && -1 === _.type.indexOf(p.Pb.Posts) && (_.type.indexOf(p.Pb.Subreddits) > -1 || _.type.indexOf(p.Pb.Users) > -1) ? C.g.Listings : C.g.Top, d.a.createElement(j.a, {
+					let j;
+					return j = l && C.restrict_sr || 1 === _.type.length && _.type[0] === p.Pb.Posts ? E.g.Posts : _.type.length > 0 && -1 === _.type.indexOf(p.Pb.Posts) && (_.type.indexOf(p.Pb.Subreddits) > -1 || _.type.indexOf(p.Pb.Users) > -1) ? E.g.Listings : E.g.Top, d.a.createElement(I.a, {
 						className: this.props.className,
-						navBar: d.a.createElement(f.a, {
+						navBar: d.a.createElement(x.a, {
 							currentPageUrl: `${o}${e}`,
 							headerContent: t,
 							isInFollowExperiment: s,
 							location: r,
 							searchOptions: _,
 							subreddit: l,
-							tab: I,
+							tab: j,
 							viewTreatment: m
 						}),
-						content: d.a.createElement(d.a.Fragment, null, d.a.createElement(h.a, null), c && !g && this.renderCovidBanner(), d.a.createElement(b.a, {
+						content: d.a.createElement(d.a.Fragment, null, d.a.createElement(b.a, null), c && !h && this.renderCovidBanner(), d.a.createElement(f.a, {
 							listingKey: k,
 							listingName: y,
 							location: r,
 							searchOptions: _,
-							tab: I
+							tab: j
 						})),
-						sidebar: d.a.createElement(x.a, {
-							className: N.a.sidebar,
+						sidebar: d.a.createElement(g.a, {
+							className: L.a.sidebar,
 							listingKey: k,
-							listingName: y || C.b,
+							listingName: y || E.b,
 							searchOptions: _,
-							tab: I
+							tab: j
 						})
 					})
 				}
 			}
-			t.default = R(F(Object(y.c)(B)))
+			t.default = F(U(Object(v.c)(V)))
 		},
 		"./src/reddit/selectors/experiments/railsSearchResults.ts": function(e, t, s) {
 			"use strict";
@@ -9792,4 +9797,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.2bc6a719b3914720f1b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.75427cfe4871ec295989.js.map

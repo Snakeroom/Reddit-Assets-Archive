@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7292a66126ba6e1eee20.js
-// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.7785cff166df6a242c9b.js
+// Retrieved at 3/11/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -8485,7 +8485,7 @@
 					trackOnPostExitedViewport: (t, s, n, r, o) => {
 						e(c.I(t, n, r, o))
 					},
-					surveyTriggerScrollCounted: () => e(Object(m.g)())
+					surveyTriggerScrollCounted: () => e(Object(m.h)())
 				}),
 				S = Object(n.b)(P, j, (e, t, s) => ({
 					...e,
@@ -10624,4 +10624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7292a66126ba6e1eee20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7785cff166df6a242c9b.js.map

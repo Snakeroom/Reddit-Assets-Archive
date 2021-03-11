@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e7bf4380abfcb1cd7d7c.js
-// Retrieved at 3/11/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.468fe679d3e29656b60f.js
+// Retrieved at 3/11/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7937,7 +7937,7 @@
 				}), e => ({
 					onClickOutsideOverlay: t => e(Object(h.b)(t)),
 					onUnpinSubscriptions: () => e(Object(S.j)()),
-					onPostDismissTrigger: () => e(Object(j.f)())
+					onPostDismissTrigger: () => e(Object(j.g)())
 				})),
 				Tm = (e, t) => !(!e.state || !e.state[aa.a.IsOverlay] || t === e);
 			class Am extends u.a.Component {
@@ -14344,7 +14344,7 @@
 									}))("tab_backgrounded", n)(c.getState(), r, e, t))
 								}(s || e || n || t) && (te.Q(), te.U(), te.S(), te.R())
 							}
-						}), Object(qt.j)(c.getState()) && Et(c.getState), c.dispatch(Object(W.i)())
+						}), Object(qt.j)(c.getState()) && Et(c.getState), c.dispatch(Object(W.j)())
 					}), window.history.scrollRestoration = "manual", Wt.a.attachStore(c), c.dispatch(Object(H.b)(P.a.PageLoad))
 				},
 				raven: {
@@ -16813,4 +16813,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e7bf4380abfcb1cd7d7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.468fe679d3e29656b60f.js.map

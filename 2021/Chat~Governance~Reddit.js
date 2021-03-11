@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f7e52c3c97f73bca83b0.js
-// Retrieved at 3/11/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d8d55b24a68d3bd1a8ca.js
+// Retrieved at 3/11/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1447,11 +1447,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("128763"),
+				buildNumber: r("128766"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1615485891"),
+				})("1615487362"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3612,14 +3612,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cbb42ac7caf846121cc0a2a09c98d8a57b9f5778e-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c4b5cd54128c1a0174e093ff3b9d15815c2e2ccb8-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bb42ac7caf846121cc0a2a09c98d8a57b9f5778e-production",
+						release: "4b5cd54128c1a0174e093ff3b9d15815c2e2ccb8-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4068,7 +4068,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "bb42ac7caf846121cc0a2a09c98d8a57b9f5778e-production",
+						releaseClient: "4b5cd54128c1a0174e093ff3b9d15815c2e2ccb8-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -9982,7 +9982,7 @@
 							})(e));
 							i(Ie(e, t))
 						} else i(Oe(e, t))
-					} else Object(Y.e)(n()) && i(Object(m.h)())
+					} else Object(Y.e)(n()) && i(Object(m.i)())
 				}, Fe = e => async (t, i, {
 					apiContext: n
 				}) => {
@@ -13540,7 +13540,7 @@
 		},
 		"./src/reddit/actions/survey/constants.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "i", (function() {
+			i.d(t, "j", (function() {
 				return n
 			})), i.d(t, "e", (function() {
 				return r
@@ -13548,7 +13548,7 @@
 				return s
 			})), i.d(t, "g", (function() {
 				return o
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "k", (function() {
 				return d
 			})), i.d(t, "a", (function() {
 				return a
@@ -13560,6 +13560,8 @@
 				return u
 			})), i.d(t, "h", (function() {
 				return _
+			})), i.d(t, "i", (function() {
+				return p
 			}));
 			const n = "SURVEY__TRIGGER_SCROLL_COUNTED",
 				r = "SURVEY__LAYER_TRIGGER_SCROLL_COUNTED",
@@ -13570,7 +13572,8 @@
 				l = "SURVEY__DEMO_SURVEY_TOGGLED",
 				c = "SURVEY__DEMO_TRIGGER_SELECTED",
 				u = "SURVEY__DEMO_TRIGGER_THRESHOLD_CHANGED",
-				_ = "SURVEY__SAMPLE_FACTOR_TOGGLED"
+				_ = "SURVEY__SAMPLE_FACTOR_TOGGLED",
+				p = "SURVEY__SEARCH_VIEW_TRIGGER"
 		},
 		"./src/reddit/actions/survey/index.ts": function(e, t, i) {
 			"use strict";
@@ -13582,23 +13585,25 @@
 				return p
 			})), i.d(t, "d", (function() {
 				return m
-			})), i.d(t, "f", (function() {
-				return h
-			})), i.d(t, "h", (function() {
-				return b
 			})), i.d(t, "g", (function() {
-				return f
+				return h
 			})), i.d(t, "i", (function() {
+				return b
+			})), i.d(t, "h", (function() {
+				return f
+			})), i.d(t, "j", (function() {
 				return g
 			})), i.d(t, "e", (function() {
 				return w
+			})), i.d(t, "f", (function() {
+				return y
 			}));
 			var n = i("./src/lib/makeActionCreator/index.ts"),
 				r = i("./src/reddit/actions/preferences.ts"),
 				s = i("./src/reddit/helpers/localStorage/index.ts"),
 				o = i("./src/reddit/selectors/experiments/survey.ts"),
 				d = i("./src/reddit/actions/survey/constants.ts");
-			const a = Object(n.a)(d.i),
+			const a = Object(n.a)(d.j),
 				l = Object(n.a)(d.e),
 				c = Object(n.a)(d.f),
 				u = Object(n.a)(d.b),
@@ -13606,7 +13611,7 @@
 				p = Object(n.a)(d.d),
 				m = Object(n.a)(d.h),
 				h = Object(n.a)(d.g),
-				b = Object(n.a)(d.j),
+				b = Object(n.a)(d.k),
 				f = () => async (e, t) => {
 					const i = t();
 					Object(o.b)(i) ? e(c()) : Object(o.a)(i) ? e(l()) : e(a())
@@ -13616,7 +13621,7 @@
 					i && (!n || i > n) ? Object(s.xb)(i) : n && (!i || n > i) && e(Object(r.H)({
 						surveyLastSeenTime: n
 					}, !1))
-				}, w = Object(n.a)(d.a)
+				}, w = Object(n.a)(d.a), y = Object(n.a)(d.i)
 		},
 		"./src/reddit/actions/tags/constants.ts": function(e, t, i) {
 			"use strict";
@@ -24885,15 +24890,16 @@
 				e.CES = "CES", e.CSAT = "CSAT", e.NPS = "NPS"
 			}(_ || (_ = {})),
 			function(e) {
-				e.dismiss_post = "dismiss_post", e.feed_scroll_1_page = "feed_scroll_1_page", e.layer_feed_scroll_1_page = "layer_feed_scroll_1_page", e.mods_feed_scroll_1_page = "mods_feed_scroll_1_page", e.videos_watched = "videos_watched", e.chat_view_trigger = "chat_view_trigger"
+				e.dismiss_post = "dismiss_post", e.feed_scroll_1_page = "feed_scroll_1_page", e.layer_feed_scroll_1_page = "layer_feed_scroll_1_page", e.mods_feed_scroll_1_page = "mods_feed_scroll_1_page", e.videos_watched = "videos_watched", e.chat_view_trigger = "chat_view_trigger", e.search_view_trigger = "search_view_trigger"
 			}(p || (p = {}));
 			const m = {
 					[d.f]: p.mods_feed_scroll_1_page,
 					[d.e]: p.layer_feed_scroll_1_page,
-					[d.i]: p.feed_scroll_1_page,
+					[d.j]: p.feed_scroll_1_page,
 					[d.g]: p.dismiss_post,
-					[d.j]: p.videos_watched,
-					[d.a]: p.chat_view_trigger
+					[d.k]: p.videos_watched,
+					[d.a]: p.chat_view_trigger,
+					[d.i]: p.search_view_trigger
 				},
 				h = ({
 					triggerName: e,
@@ -44755,4 +44761,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f7e52c3c97f73bca83b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d8d55b24a68d3bd1a8ca.js.map
