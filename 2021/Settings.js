@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.c3c6913b9429f28e9c01.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.bdbb15ae1d64c94cfd23.js
+// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -9445,17 +9445,17 @@
 				Kr = n("./src/reddit/helpers/trackers/premiumSettings.ts"),
 				Yr = n("./src/reddit/selectors/experiments/utils.ts");
 			const Zr = Object(c.a)(e => Object(na.c)(e, {
-					experimentName: ta.kb,
+					experimentName: ta.ob,
 					experimentEligibilitySelector: Xr
 				}), Yr.a),
 				Xr = e => Object(N.J)(e) || Object(N.K)(e),
-				$r = Object(c.a)(Zr, e => e === ta.nb.Enabled),
+				$r = Object(c.a)(Zr, e => e === ta.rb.Enabled),
 				eo = Object(c.a)(e => Object(na.c)(e, {
-					experimentName: ta.lb,
+					experimentName: ta.pb,
 					experimentEligibilitySelector: to
 				}), Yr.a),
 				to = e => Object(N.J)(e) || Object(N.K)(e),
-				no = Object(c.a)(eo, e => e === ta.ob.Enabled);
+				no = Object(c.a)(eo, e => e === ta.sb.Enabled);
 			var so = n("./src/reddit/selectors/platform.ts"),
 				ao = n("./src/reddit/pages/Settings/index.m.less"),
 				ro = n.n(ao);
@@ -10080,4 +10080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c3c6913b9429f28e9c01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.bdbb15ae1d64c94cfd23.js.map

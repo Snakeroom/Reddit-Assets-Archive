@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.4cd01670b368b5dec164.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.a15633fa184351e4f6a0.js
+// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4214,9 +4214,9 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const s = e => r.bc.Enabled === Object(o.c)(e, {
+			const s = e => r.fc.Enabled === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: r.Vb
+				experimentName: r.Zb
 			})
 		},
 		"./src/reddit/selectors/experiments/inboxAppBadgingGql.ts": function(e, t, n) {
@@ -4230,11 +4230,11 @@
 				i = n("./src/reddit/selectors/experiments/utils.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Xb,
+					experimentName: o.bc,
 					experimentEligibilitySelector: d
 				}), i.a),
 				d = e => Object(a.J)(e) || Object(a.K)(e),
-				u = Object(r.a)(c, e => e === o.dc.Enabled)
+				u = Object(r.a)(c, e => e === o.hc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -4255,28 +4255,28 @@
 				i = n("./src/reddit/selectors/experiments/utils.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.ac,
+					experimentName: o.ec,
 					experimentEligibilitySelector: d
 				}), i.a),
 				d = e => Object(a.J)(e) || Object(a.K)(e),
-				u = Object(r.a)(c, e => e === o.gc.Redesign),
+				u = Object(r.a)(c, e => e === o.kc.Redesign),
 				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Zb,
+					experimentName: o.dc,
 					experimentEligibilitySelector: d
 				}), i.a),
-				p = Object(r.a)(l, e => e === o.fc.Enabled),
+				p = Object(r.a)(l, e => e === o.jc.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Yb,
+					experimentName: o.cc,
 					experimentEligibilitySelector: d
 				}), i.a),
-				f = Object(r.a)(m, e => e === o.ec.Enabled),
+				f = Object(r.a)(m, e => e === o.ic.Enabled),
 				b = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.R,
 					experimentEligibilitySelector: d
 				}), i.a),
-				h = Object(r.a)(b, e => e === o.ab.NoOverflow),
-				g = Object(r.a)(b, e => e === o.ab.UndoBar)
+				h = Object(r.a)(b, e => e === o.db.NoOverflow),
+				g = Object(r.a)(b, e => e === o.db.UndoBar)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4cd01670b368b5dec164.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.a15633fa184351e4f6a0.js.map

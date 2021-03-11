@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.371bd0d314281d962048.js
-// Retrieved at 3/11/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2fea1bace642109e6096.js
+// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2690,7 +2690,7 @@
 			const v = e => S.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				A = e => !!Object(D.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.c)),
-					experimentName: b.Jc
+					experimentName: b.Nc
 				}),
 				j = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				w = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -9087,14 +9087,16 @@
 					case Nr.b: {
 						const {
 							subredditDescription: r,
-							subredditName: s
+							subredditName: s,
+							isContributorRequestsDisabled: n
 						} = t.payload;
 						if (s) {
 							if (e[s]) {
 								const t = {
 									[s]: {
 										privateSubreddit: !0,
-										subredditDescription: r
+										subredditDescription: r,
+										isContributorRequestsDisabled: n
 									}
 								};
 								return q()({
@@ -9107,7 +9109,8 @@
 								...e,
 								[s]: {
 									privateSubreddit: !0,
-									subredditDescription: r
+									subredditDescription: r,
+									isContributorRequestsDisabled: n
 								}
 							}
 						}
@@ -23351,7 +23354,7 @@
 				l = e => e === n.G.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.wd)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.Ad)(t))
 		},
 		"./src/reddit/selectors/experiments/inboxAppBadgingGql.ts": function(e, t, r) {
 			"use strict";
@@ -23364,11 +23367,11 @@
 				c = r("./src/reddit/selectors/experiments/utils.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.Xb,
+					experimentName: n.bc,
 					experimentEligibilitySelector: i
 				}), c.a),
 				i = e => Object(o.J)(e) || Object(o.K)(e),
-				u = Object(s.a)(d, e => e === n.dc.Enabled)
+				u = Object(s.a)(d, e => e === n.hc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, r) {
 			"use strict";
@@ -23389,27 +23392,27 @@
 				c = r("./src/reddit/selectors/experiments/utils.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.ac,
+					experimentName: n.ec,
 					experimentEligibilitySelector: i
 				}), c.a),
 				i = e => Object(o.J)(e) || Object(o.K)(e),
-				u = Object(s.a)(d, e => e === n.gc.Redesign),
+				u = Object(s.a)(d, e => e === n.kc.Redesign),
 				l = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.Zb,
+					experimentName: n.dc,
 					experimentEligibilitySelector: i
 				}), c.a),
-				p = Object(s.a)(l, e => e === n.fc.Enabled),
+				p = Object(s.a)(l, e => e === n.jc.Enabled),
 				b = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.Yb,
+					experimentName: n.cc,
 					experimentEligibilitySelector: i
 				}), c.a),
-				f = Object(s.a)(b, e => e === n.ec.Enabled),
+				f = Object(s.a)(b, e => e === n.ic.Enabled),
 				y = Object(s.a)(e => Object(a.c)(e, {
 					experimentName: n.R,
 					experimentEligibilitySelector: i
 				}), c.a),
-				E = Object(s.a)(y, e => e === n.ab.NoOverflow),
-				m = Object(s.a)(y, e => e === n.ab.UndoBar)
+				E = Object(s.a)(y, e => e === n.db.NoOverflow),
+				m = Object(s.a)(y, e => e === n.db.UndoBar)
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, r) {
 			"use strict";
@@ -23667,4 +23670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.371bd0d314281d962048.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2fea1bace642109e6096.js.map

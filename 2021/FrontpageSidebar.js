@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4d8b3fe771c32cd251c4.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.fe76e4089939f6a4bfe7.js
+// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -731,8 +731,8 @@
 						return (!t || !n) && (!Object($e.b)(e) && function(e) {
 							return Object(Ze.c)(e, {
 								experimentEligibilitySelector: ze.K,
-								experimentName: We.U
-							}) === We.Cb
+								experimentName: We.X
+							}) === We.Gb
 						}(e))
 					}
 				}),
@@ -1964,4 +1964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.4d8b3fe771c32cd251c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.fe76e4089939f6a4bfe7.js.map

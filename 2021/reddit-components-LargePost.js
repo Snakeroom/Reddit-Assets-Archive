@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a1ccfacabb03f09f282d.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8ec464bb71fe10231bc0.js
+// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2966,7 +2966,7 @@
 			const ae = Object(i.a)(O.J, e => e.some(ie.c)),
 				ce = Object(i.a)(ae, e => e),
 				de = (e, t) => Object(oe.c)(e, {
-					experimentName: Z.gb,
+					experimentName: Z.kb,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: n
@@ -3070,7 +3070,7 @@
 						isActionBarAnimationEnabled: xe,
 						postId: Oe,
 						postIds: ye
-					} = e, Se = !!e.redditStyle || !!e["data-redditstyle"], Ce = Se ? void 0 : p, Te = Object(d.a)(oe), Ie = ie && Te, je = Object(a.a)(oe), Pe = Object(c.a)(oe), ke = Object(R.c)(le), we = !!le.media && le.media.type === b.o.RTJSON, Ae = ge && we, Ne = n ? n - F.a : void 0, Le = !(y && G || $), De = (e => e === Z.zc.OnlyTitles)(pe) && !Object(ne.a)(le), Re = (e => e === Z.zc.MediumHeight)(pe) && !Object(ne.a)(le), Me = (e => {
+					} = e, Se = !!e.redditStyle || !!e["data-redditstyle"], Ce = Se ? void 0 : p, Te = Object(d.a)(oe), Ie = ie && Te, je = Object(a.a)(oe), Pe = Object(c.a)(oe), ke = Object(R.c)(le), we = !!le.media && le.media.type === b.o.RTJSON, Ae = ge && we, Ne = n ? n - F.a : void 0, Le = !(y && G || $), De = (e => e === Z.Dc.OnlyTitles)(pe) && !Object(ne.a)(le), Re = (e => e === Z.Dc.MediumHeight)(pe) && !Object(ne.a)(le), Me = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -3085,7 +3085,7 @@
 							hasBottomCompactPostStyles: o,
 							showPinnnedHeader: r
 						}
-					})(e), Ue = !!ee && !Object(Z.wd)(ee), Fe = (!g || Ue) && !le.isSponsored, Be = Object(S.t)(le, E), {
+					})(e), Ue = !!ee && !Object(Z.Ad)(ee), Fe = (!g || Ue) && !le.isSponsored, Be = Object(S.t)(le, E), {
 						source: We
 					} = Be, Ye = r.a.createElement(r.a.Fragment, null, r.a.createElement(U.a, {
 						className: Object(C.a)(be.a.container, o, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -5301,9 +5301,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.qb
+					experimentName: s.ub
 				});
-				return !(!t || Object(s.wd)(t))
+				return !(!t || Object(s.Ad)(t))
 			}
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, n) {
@@ -5411,4 +5411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a1ccfacabb03f09f282d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8ec464bb71fe10231bc0.js.map

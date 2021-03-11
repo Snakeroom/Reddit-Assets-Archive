@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b10293a483c4d159fa51.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.dc6d81024f8886e81cf1.js
+// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1220,7 +1220,7 @@
 								postIds: e,
 								posts: r
 							} = t, s = Object(W.d)(m, {
-								experimentName: l.qc
+								experimentName: l.uc
 							});
 							n(Object(a.a)(Object(d.c)(e, r, null == s ? void 0 : s.variant)))
 						}
@@ -1346,7 +1346,7 @@
 										postIds: e,
 										posts: n
 									} = _, r = Object(W.d)(s, {
-										experimentName: l.qc
+										experimentName: l.uc
 									});
 									t(Object(a.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 								}
@@ -2468,8 +2468,8 @@
 						return (!t || !n) && (!Object($e.b)(e) && function(e) {
 							return Object(Qe.c)(e, {
 								experimentEligibilitySelector: Xe.K,
-								experimentName: Ue.U
-							}) === Ue.Cb
+								experimentName: Ue.X
+							}) === Ue.Gb
 						}(e))
 					}
 				}),
@@ -5819,7 +5819,7 @@
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: r.J
-				}) === r.X.Treatment
+				}) === r.ab.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, n) {
 			"use strict";
@@ -5858,4 +5858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b10293a483c4d159fa51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.dc6d81024f8886e81cf1.js.map
