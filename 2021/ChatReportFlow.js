@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.07bcbbcc6650e3ee116e.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.8178e3213d617e04bc98.js
+// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/CrisisFlow/CrisisFlowPage.m.less": function(e, t, n) {
@@ -115,7 +115,8 @@
 				hk: "3RFVlj"
 			})), r.a.createElement(k, null, C._("We’ve partnered with {ctl} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [C._param("ctl", r.a.createElement("a", {
 				href: "https://www.crisistextline.org/",
-				target: "_blank"
+				target: "_blank",
+				rel: "noopener noreferrer"
 			}, "Crisis Text Line")), C._param("username", r.a.createElement("strong", null, "u/", e.username))], {
 				hk: "srFNa"
 			})));
@@ -198,6 +199,7 @@
 			})), r.a.createElement("a", {
 				href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 				target: "_blank",
+				rel: "noopener noreferrer",
 				className: L.a.CrisisLink
 			}, r.a.createElement(D, null, r.a.createElement(b, null)), r.a.createElement(N, null, r.a.createElement(Z, null, T._("Learn how to help someone in crisis", null, {
 				hk: "3HohFx"
@@ -208,6 +210,7 @@
 			})), r.a.createElement("a", {
 				href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
 				target: "_blank",
+				rel: "noopener noreferrer",
 				className: L.a.CrisisLink
 			}, r.a.createElement(D, null, r.a.createElement(R, null)), r.a.createElement(N, null, r.a.createElement(Z, null, T._("Get yourself support", null, {
 				hk: "kTT0U"
@@ -663,4 +666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.07bcbbcc6650e3ee116e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.8178e3213d617e04bc98.js.map

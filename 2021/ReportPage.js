@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.7a4d24dbc987ffd3941d.js
-// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.a2fca181e573ca85ba05.js
+// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -1385,7 +1385,7 @@
 						showErrors: !1
 					}
 				}
-				componentWillReceiveProps(e) {
+				UNSAFE_componentWillReceiveProps(e) {
 					if (e.reasons && e.reasons.length && e.initialReason && !this.state.gotInitialReason) {
 						const t = Object(xe.a)(e.reasons, e.initialReason);
 						this.setState({
@@ -1690,4 +1690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.7a4d24dbc987ffd3941d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.a2fca181e573ca85ba05.js.map

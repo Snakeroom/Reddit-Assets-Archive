@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.fbc374140160e3489dfe.js
-// Retrieved at 3/10/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4d42cbc5dd8eac96f229.js
+// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "EconHelperActions"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3924,7 +3924,8 @@
 					}, s.fbt._("Styling your community helps attract members. For assistance, take a look at the {=Customize Appearance Overview} . Here are some great ways to get started.", [s.fbt._param("=Customize Appearance Overview", o.a.createElement("a", {
 						href: Ne.e.exportImport,
 						className: Ye.a.modHelpLink,
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, s.fbt._("Customize Appearance Overview", null, {
 						hk: "11UFaE"
 					})))], {
@@ -5023,4 +5024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.fbc374140160e3489dfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4d42cbc5dd8eac96f229.js.map
