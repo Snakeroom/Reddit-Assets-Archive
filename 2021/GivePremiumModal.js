@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.0bbe2af8c745fbed233d.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.532cb56fb7e17b387b40.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -148,14 +148,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const z = 10,
-				H = Object(c.c)({
+			const H = 10,
+				z = Object(c.c)({
 					coinBalance: F.d,
-					isEmployee: F.G,
+					isEmployee: F.H,
 					isPending: w.b,
 					recipientName: w.d
 				}),
-				U = Object(i.b)(H, e => ({
+				U = Object(i.b)(z, e => ({
 					closeModal: () => e(Object(D.b)()),
 					onGivePremium: (t, n, s, o, a) => {
 						e(((e, t, n, s) => async (o, a, {
@@ -339,7 +339,7 @@
 						onClick: this.onGivePremium
 					}, n ? a.a.createElement(A.a, {
 						className: l.a.loadingIcon,
-						sizePx: z
+						sizePx: H
 					}) : s.fbt._("Confirm", null, {
 						hk: "2nHzsu"
 					}))))))
@@ -822,4 +822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.0bbe2af8c745fbed233d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.532cb56fb7e17b387b40.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.4f7cfa07a9abada178df.js
-// Retrieved at 3/8/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.865ca8b55d72df6512ad.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip"], {
 		"./src/graphql/operations/DeleteInboxNotifications.json": function(t) {
@@ -439,11 +439,11 @@
 				f = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				O = n("./src/reddit/selectors/notificationsInbox.tsx");
 			const p = Object(a.c)({
-					inboxBadgeCount: u.g,
+					inboxBadgeCount: u.h,
 					isInboxMarkAllAsReadEnabled: f.b,
 					isInboxPostEmbedEnabled: f.c,
 					isPending: O.e,
-					messagesBadgeCount: u.h,
+					messagesBadgeCount: u.i,
 					notifications: O.g
 				}),
 				j = Object(s.b)(p, t => ({
@@ -597,4 +597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.4f7cfa07a9abada178df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.865ca8b55d72df6512ad.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.531b9085381aa299acfc.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.7da792b625d854753905.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -6989,11 +6989,11 @@
 				}).apply(this, arguments)
 			}
 			const E = Object(i.c)({
-					currentUser: c.i,
-					isNightMode: c.U,
+					currentUser: c.j,
+					isNightMode: c.V,
 					isPresenceExpEnabled: d.a,
-					isPresenceUserPrefEnabled: c.gb,
-					shouldHideNSFW: c.B
+					isPresenceUserPrefEnabled: c.hb,
+					shouldHideNSFW: c.C
 				}),
 				x = Object(s.b)(E);
 			t.a = x(e => {
@@ -9136,4 +9136,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.531b9085381aa299acfc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.7da792b625d854753905.js.map

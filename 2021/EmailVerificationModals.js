@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.fa1ec54aceb44666d136.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.9be7b9983949ffaa58fb.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -186,7 +186,7 @@
 				},
 				S = Object(r.c)({
 					changeEmailError: v.c,
-					currentEmail: v.l
+					currentEmail: v.m
 				}),
 				N = Object(o.b)(S, e => ({
 					changeEmail: t => e(Object(p.t)(t))
@@ -357,7 +357,7 @@
 				X = s("./src/reddit/components/Settings/VerifyEmailModal.m.less"),
 				Q = s.n(X);
 			const Y = Object(r.c)({
-					emailDigests: v.k,
+					emailDigests: v.l,
 					isEmailPermissionRequired: z.f
 				}),
 				V = Object(o.b)(Y, e => ({
@@ -1059,4 +1059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.fa1ec54aceb44666d136.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.9be7b9983949ffaa58fb.js.map

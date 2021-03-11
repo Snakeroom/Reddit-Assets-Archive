@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.9a99e218f1618e551b30.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.3dbf262f7010a183af91.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -619,7 +619,7 @@
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "m", (function() {
-				return U
+				return z
 			})), n.d(t, "j", (function() {
 				return K
 			})), n.d(t, "n", (function() {
@@ -725,8 +725,8 @@
 			const H = Object(c.a)(x.a),
 				W = C.a.wrapped(j.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
-				U = C.a.wrapped(O.c, "Subtext", A.a),
-				z = C.a.wrapped(u.a, "HoverTooltip", A.a),
+				z = C.a.wrapped(O.c, "Subtext", A.a),
+				U = C.a.wrapped(u.a, "HoverTooltip", A.a),
 				Q = C.a.div("ControlContainer", A.a),
 				q = C.a.div("TextContainer", A.a),
 				J = C.a.div("ActionContainer", A.a),
@@ -764,7 +764,7 @@
 					last: e.last
 				}, a.a.createElement(q, {
 					className: e.textContainerClassName
-				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, e.children)),
+				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, e.children)),
 				ne = C.a.div("StyledFlair", A.a),
 				re = C.a.wrapped(ne, "SpoilerFlair", A.a),
 				ae = C.a.wrapped(ne, "NSFWFlair", A.a),
@@ -787,7 +787,7 @@
 						last: e.last
 					}, a.a.createElement(q, null, a.a.createElement(F.a, null, a.a.createElement("label", {
 						htmlFor: t
-					}, a.a.createElement(V, null, e.label))), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(z, {
+					}, a.a.createElement(V, null, e.label))), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(U, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), a.a.createElement(N.a, {
@@ -804,7 +804,7 @@
 				ce = C.a.div("TickText", A.a),
 				me = C.a.div("PreSubText", A.a),
 				ue = Object(l.c)({
-					isNightModeOn: D.U
+					isNightModeOn: D.V
 				}),
 				pe = Object(o.b)(ue)(e => a.a.createElement(K, {
 					last: e.last,
@@ -817,7 +817,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(U, null, " ", a.a.createElement(me, {
+				}, !e.inModal && a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(z, null, " ", a.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -848,7 +848,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(q, null, a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, a.a.createElement(M.l, {
+				}, a.a.createElement(q, null, a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, a.a.createElement(M.l, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				be = e => a.a.createElement(K, {
@@ -860,7 +860,7 @@
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, a.a.createElement(Z, null)), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(X, {
+				}, e.label, a.a.createElement(Z, null)), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -872,7 +872,7 @@
 					last: e.last
 				}, a.a.createElement(q, null, a.a.createElement($, {
 					onClick: e.onClick
-				}, e.label), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement($, {
+				}, e.label), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement($, {
 					onClick: e.onClick
 				}, a.a.createElement(ee, null)))),
 				Ce = C.a.div("DropdownWrapper", A.a),
@@ -893,7 +893,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, (e => a.a.createElement(Ce, {
+				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, (e => a.a.createElement(Ce, {
 					onClick: e.openDropdown
 				}, a.a.createElement(ve, {
 					id: `SettingDropdown--${e.id}`
@@ -918,7 +918,7 @@
 					const s = Object(r.useCallback)(e => n(e.target.value), [n]);
 					return a.a.createElement(K, {
 						disabled: e
-					}, a.a.createElement(q, null, a.a.createElement(V, null, o.label), a.a.createElement(U, null, o.subtext)), a.a.createElement("div", {
+					}, a.a.createElement(q, null, a.a.createElement(V, null, o.label), a.a.createElement(z, null, o.subtext)), a.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
 					}), a.a.createElement(K, {
 						last: t,
@@ -943,7 +943,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, e.children)),
+				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, e.children)),
 				Ne = e => a.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -1742,4 +1742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.9a99e218f1618e551b30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.3dbf262f7010a183af91.js.map

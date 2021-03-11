@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.461ade9b059f997c6322.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f3228b7ba982c1ad38f4.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -132,9 +132,9 @@
 				w = n("./src/lib/linkMatchers/index.ts"),
 				B = n("./src/lib/linkMatchers/customLinks.ts"),
 				T = n("./src/reddit/controls/OutboundLink/index.tsx");
-			const C = /\[(.+?)\]\((.+?)\)/g,
-				P = e => {
-					const t = e.split(C);
+			const P = /\[(.+?)\]\((.+?)\)/g,
+				C = e => {
+					const t = e.split(P);
 					if (1 === t.length) return [e];
 					const n = [];
 					for (let a = 0; a < t.length; a += 3) {
@@ -145,7 +145,7 @@
 				};
 			var j = o.a.memo(e => {
 					let t = [e.text];
-					return e.parseMdLinks && (t = S()(t, P)), e.parseRegularLinks && (t = S()(t, e => Array.isArray(e) ? [e] : (e => {
+					return e.parseMdLinks && (t = S()(t, C)), e.parseRegularLinks && (t = S()(t, e => Array.isArray(e) ? [e] : (e => {
 						const t = w.f.add(B.g.subreddit.prefix, B.g.subreddit.config).match(e);
 						if (!t) return [e];
 						const n = [];
@@ -168,9 +168,9 @@
 						}, t)
 					}), " ")
 				}),
-				O = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				R = n("./src/reddit/controls/Button/index.tsx"),
-				D = n("./src/chat/controls/Svg/index.tsx");
+				R = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				D = n("./src/reddit/controls/Button/index.tsx"),
+				O = n("./src/chat/controls/Svg/index.tsx");
 
 			function M() {
 				return (M = Object.assign || function(e) {
@@ -181,7 +181,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var A = e => o.a.createElement(D.a, M({}, e, {
+			var A = e => o.a.createElement(O.a, M({}, e, {
 					viewBox: "-1 -1 21 21"
 				}), o.a.createElement("path", {
 					d: "M16.64,2.32a4.5,4.5,0,0,0-7,5.57L4.85,12.69,3.59,13.95h0L2.34,15.2a1,1,0,0,0,0,1.41l1.25,1.25h0l.42.42a1,1,0,0,0,1.41-1.41L5,16.46H5a.78.78,0,0,1,0-1.09.79.79,0,0,1,1.09,0h0l.42.42a1,1,0,0,0,1.41-1.41L7.52,14h0L7,13.4l4.1-4.1a4.5,4.5,0,0,0,5.57-7Zm-1.41,5a2.5,2.5,0,1,1,0-3.54A2.5,2.5,0,0,1,15.22,7.27Z"
@@ -193,11 +193,11 @@
 				H = n.n(U);
 			const {
 				fbt: G
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), z = c.a.wrapped(A, "PrivateKey", H.a), I = c.a.div("ButtonsContainer", H.a), W = c.a.div("Container", H.a), K = c.a.div("Description", H.a), Y = c.a.div("PrivateSubredditDetails", H.a), Z = c.a.div("PrivateSubredditDescription", H.a), J = c.a.h3("PrivateSubredditName", H.a), X = c.a.a("Link", H.a), V = c.a.wrapped(R.k, "LinkRouterButton", H.a), Q = c.a.wrapped(R.j, "LinkButton", H.a), $ = c.a.wrapped(R.n, "SecondaryLinkRouterButton", H.a), ee = c.a.wrapped(R.m, "SecondaryLinkButton", H.a), te = c.a.wrapped(V, "GoHomeLinkButton", H.a), ne = c.a.img("Image", H.a), ae = c.a.img("ImagePlaceholder", H.a), re = c.a.wrapped(V, "LeftLinkRouterButton", H.a), oe = c.a.wrapped(Q, "LeftLinkButton", H.a), le = c.a.wrapped(ee, "SecondaryLeftLinkButton", H.a), se = c.a.wrapped($, "SecondaryLeftLinkRouterButton", H.a), ie = c.a.h3("Title", H.a), ce = c.a.div("PageBody", H.a), ue = c.a.div("QuarantineMessageWrapper", H.a), de = Object(i.c)({
-				isLoggedIn: q.I,
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), z = c.a.wrapped(A, "PrivateKey", H.a), I = c.a.div("ButtonsContainer", H.a), W = c.a.div("Container", H.a), K = c.a.div("Description", H.a), Y = c.a.div("PrivateSubredditDetails", H.a), Z = c.a.div("PrivateSubredditDescription", H.a), J = c.a.h3("PrivateSubredditName", H.a), X = c.a.a("Link", H.a), V = c.a.wrapped(D.k, "LinkRouterButton", H.a), Q = c.a.wrapped(D.j, "LinkButton", H.a), $ = c.a.wrapped(D.n, "SecondaryLinkRouterButton", H.a), ee = c.a.wrapped(D.m, "SecondaryLinkButton", H.a), te = c.a.wrapped(V, "GoHomeLinkButton", H.a), ne = c.a.img("Image", H.a), ae = c.a.img("ImagePlaceholder", H.a), re = c.a.wrapped(V, "LeftLinkRouterButton", H.a), oe = c.a.wrapped(Q, "LeftLinkButton", H.a), le = c.a.wrapped(ee, "SecondaryLeftLinkButton", H.a), se = c.a.wrapped($, "SecondaryLeftLinkRouterButton", H.a), ie = c.a.h3("Title", H.a), ce = c.a.div("PageBody", H.a), ue = c.a.div("QuarantineMessageWrapper", H.a), de = Object(i.c)({
+				isLoggedIn: q.J,
 				origin: N.l,
-				user: q.i
-			}), me = Object(O.t)(), he = Object(l.b)(de, (e, {
+				user: q.j
+			}), me = Object(R.t)(), he = Object(l.b)(de, (e, {
 				subredditName: t
 			}) => ({
 				continueToQuarantinedSubreddit: async () => {
@@ -461,8 +461,8 @@
 			const b = "create-community-button",
 				g = E.a.wrapped(c.c, "StyledTooltip", k.a),
 				f = Object(s.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(p.fb)(e),
-					userIsSuspended: p.O
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(p.gb)(e),
+					userIsSuspended: p.P
 				});
 			t.a = Object(l.b)(f, (e, {
 				eventSource: t
@@ -521,4 +521,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.461ade9b059f997c6322.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f3228b7ba982c1ad38f4.js.map

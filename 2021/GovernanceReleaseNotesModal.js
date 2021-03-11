@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.dc8378c769c3987d2703.js
-// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.29aa243225b4e2fa52d7.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal", "EconHelperActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -937,7 +937,7 @@
 				p = n.n(h);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.U
+					isNightmodeOn: m.V
 				}));
 			t.a = f(e => {
 				const t = {
@@ -1032,7 +1032,7 @@
 						style: t
 					}, e.children)
 				},
-				T = Object(i.b)(() => Object(d.a)(x.H, g.ab, (e, {
+				T = Object(i.b)(() => Object(d.a)(x.H, g.bb, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(x.b)(e, n) : null, (e, t, n) => ({
@@ -3203,4 +3203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.dc8378c769c3987d2703.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.29aa243225b4e2fa52d7.js.map

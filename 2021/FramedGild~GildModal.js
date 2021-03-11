@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b4ecaf94c4a0ba38a46f.js
-// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e120f480981bf2e8039f.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "EconHelperActions", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -528,7 +528,7 @@
 						postId: s
 					}) : Object(y.a)(e, {
 						commentId: s
-					}), r = Object(A.i)(e), a = e.gild, {
+					}), r = Object(A.j)(e), a = e.gild, {
 						isAnonymous: o
 					} = a, i = !o && r && (r.username || r.displayText) ? r.username || r.displayText : void 0, d = n ? n.author : void 0, c = Object(N.J)(e, {
 						thingId: s
@@ -547,7 +547,7 @@
 						} = e,
 						h = Object(E.a)(r, u),
 						b = e.awardKarmaReceived,
-						f = Object(A.i)(r),
+						f = Object(A.j)(r),
 						y = Object(I.b)(r) || Object(F.d)(F.a.GildingFlow, !1);
 					if (Object(I.g)(r)) {
 						const e = "success.gild",
@@ -1339,7 +1339,7 @@
 				}) => {
 					t(p());
 					const c = s(),
-						l = Object(d.J)(c);
+						l = Object(d.K)(c);
 					try {
 						const s = !l,
 							n = await Object(i.b)({
@@ -2284,12 +2284,12 @@
 						})
 					},
 					correlationId: e => Object(A.b)(e) || Object(m.d)(m.a.GildingFlow, !1),
-					currentUser: F.i,
+					currentUser: F.j,
 					errorMessage: A.a,
 					isAnonymous: A.f,
 					iFramed: A.g,
 					isGildPending: A.e,
-					isEmployee: F.G,
+					isEmployee: F.H,
 					isRecommendedCoinPackagePending: L.l,
 					message: A.c,
 					postOrComment: (e, {
@@ -2662,7 +2662,7 @@
 				h = s.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(a.b)(() => Object(o.c)({
-					isNightmodeOn: m.U
+					isNightmodeOn: m.V
 				}));
 			t.a = f(e => {
 				const t = {
@@ -2757,7 +2757,7 @@
 						style: t
 					}, e.children)
 				},
-				C = Object(o.b)(() => Object(d.a)(g.H, w.ab, (e, {
+				C = Object(o.b)(() => Object(d.a)(g.H, w.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(g.b)(e, s) : null, (e, t, s) => ({
@@ -5211,4 +5211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b4ecaf94c4a0ba38a46f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e120f480981bf2e8039f.js.map

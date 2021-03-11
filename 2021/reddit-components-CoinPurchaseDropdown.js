@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.6ec3bbc6e010a3617f45.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.1eed6538ff08c2bb9cc7.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown", "GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -556,7 +556,7 @@
 				}) => {
 					t(b());
 					const d = r(),
-						l = Object(c.J)(d);
+						l = Object(c.K)(d);
 					try {
 						const r = !l,
 							n = await Object(i.b)({
@@ -721,8 +721,8 @@
 				B = r("./src/reddit/components/LottieAnimation/index.tsx"),
 				q = r("./src/reddit/controls/Button/index.tsx"),
 				$ = r("./src/reddit/components/CompactCoinPurchaseList/ListItem/index.m.less"),
-				z = r.n($);
-			var K = e => {
+				K = r.n($);
+			var z = e => {
 					const {
 						className: t,
 						buttonClass: r,
@@ -736,26 +736,26 @@
 						subtextCrossout: m
 					} = e, b = r ? q.f : q.i;
 					return o.a.createElement("div", {
-						className: Object(s.a)(t, z.a.CompactCoinPurchaseListItem)
+						className: Object(s.a)(t, K.a.CompactCoinPurchaseListItem)
 					}, o.a.createElement("div", {
-						className: z.a.productSection
+						className: K.a.productSection
 					}, c, o.a.createElement("div", null, o.a.createElement("span", {
-						className: z.a.primaryText
+						className: K.a.primaryText
 					}, l), u && o.a.createElement("span", {
-						className: Object(s.a)(z.a.subtext, {
-							[z.a.crossout]: m
+						className: Object(s.a)(K.a.subtext, {
+							[K.a.crossout]: m
 						})
 					}, Array.isArray(u) ? u.map((e, t) => o.a.createElement("p", {
 						key: t
 					}, e)) : u))), o.a.createElement("div", {
-						className: z.a.priceSection
+						className: K.a.priceSection
 					}, o.a.createElement(b, {
-						className: Object(s.a)(z.a.button, r),
+						className: Object(s.a)(K.a.button, r),
 						redditStyle: !0,
 						onClick: d
 					}, i), o.a.createElement("span", {
-						className: Object(s.a)(z.a.buttonSubtext, {
-							[z.a.crossout]: a
+						className: Object(s.a)(K.a.buttonSubtext, {
+							[K.a.crossout]: a
 						})
 					}, n)))
 				},
@@ -771,7 +771,7 @@
 						})
 					},
 					isFreeAwardEventEnabled: e => Object(F.a)(e) && Object(H.g)(e),
-					isPremiumSubscriber: G.s,
+					isPremiumSubscriber: G.t,
 					premiumPackages: H.i,
 					purchaseCatalogError: H.j,
 					purchaseCatalogPending: H.k
@@ -789,7 +789,7 @@
 					})) : Object(v.d)("/premium", v.c.BLANK),
 					requestPurchaseCatalog: t => e(Object(A.b)(t))
 				}));
-			class J extends o.a.Component {
+			class Q extends o.a.Component {
 				constructor(e) {
 					super(e), this.handleClickBuyCoins = e => {
 						const {
@@ -902,7 +902,7 @@
 						hk: "4EQRS8"
 					}))) : o.a.createElement("div", {
 						className: e
-					}, a && o.a.createElement(K, {
+					}, a && o.a.createElement(z, {
 						buttonClass: V.a.freeAwardButton,
 						buttonText: w.fbt._("Claim", null, {
 							hk: "OUYUl"
@@ -926,7 +926,7 @@
 							primaryText: s,
 							subtext: i
 						} = e, c = a && a.coins !== a.baselineCoins, d = a && a.pennies !== a.baselinePennies;
-						return o.a.createElement(K, {
+						return o.a.createElement(z, {
 							buttonClass: t,
 							buttonSubtext: r,
 							buttonSubtextCrossout: d,
@@ -937,7 +937,7 @@
 							subtext: i,
 							subtextCrossout: c
 						})
-					}), r && o.a.createElement(K, {
+					}), r && o.a.createElement(z, {
 						buttonText: w.fbt._("Convert", null, {
 							hk: "zVTTU"
 						}),
@@ -951,7 +951,7 @@
 					}))
 				}
 			}
-			var Q = Object(N.t)()(Y(Object(c.c)(J))),
+			var J = Object(N.t)()(Y(Object(c.c)(Q))),
 				X = r("./src/reddit/components/CoinPurchaseDropdown/index.m.less"),
 				ee = r.n(X);
 			const {
@@ -997,7 +997,7 @@
 						tooltipId: a
 					}, o.a.createElement(j, {
 						activeSaleConfig: e
-					}), o.a.createElement(Q, {
+					}), o.a.createElement(J, {
 						className: ee.a.purchaseList,
 						onClick: n,
 						sorted: !0
@@ -1651,4 +1651,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.6ec3bbc6e010a3617f45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.1eed6538ff08c2bb9cc7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.784e9a1d32c82eede8f4.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.6770c4803edb00d2f123.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1142,7 +1142,7 @@
 				apiContext: n
 			}) => {
 				const m = r();
-				if (Object(l.J)(m))
+				if (Object(l.K)(m))
 					if (Object(c.f)(m)) await Object(i.g)(n(), e, t);
 					else {
 						await Object(a.d)(e);
@@ -2142,7 +2142,7 @@
 				playerName: "RPAN DU Video Player"
 			}), te = Object(a.b)(() => Object(i.c)({
 				autoplay: T.b,
-				isLoggedIn: T.J,
+				isLoggedIn: T.K,
 				isOverlayOpen: N.h,
 				location: (e, {
 					listingName: t
@@ -3405,7 +3405,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, r = Object(a.e)(e => Object(V.lb)(e, {
+				} = e, r = Object(a.e)(e => Object(V.mb)(e, {
 					userName: s
 				})), o = Oe(r), c = o && Object(E.a)(r.accountIcon);
 				return n.a.createElement("div", {
@@ -3436,9 +3436,9 @@
 			}, n.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), Oe = e => {
-				const t = Object(a.e)(V.i),
-					s = Object(a.e)(V.B),
-					r = Object(a.e)(V.bb);
+				const t = Object(a.e)(V.j),
+					s = Object(a.e)(V.C),
+					r = Object(a.e)(V.cb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!r && !s))))
 			}
 		},
@@ -5218,7 +5218,7 @@
 					minSize: t,
 					userName: s
 				}) => {
-					const r = Object(o.lb)(e, {
+					const r = Object(o.mb)(e, {
 						userName: s
 					});
 					if (r && r.awardedLastMonth && r.awardedLastMonth.topAward) return h(e, {
@@ -5339,4 +5339,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.784e9a1d32c82eede8f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.6770c4803edb00d2f123.js.map

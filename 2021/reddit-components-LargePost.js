@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.76ec0e2b2d17e5acecc8.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.53f145f59538c6c44c5a.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -522,63 +522,6 @@
 				return s(e) + t
 			}
 		},
-		"./node_modules/react-fast-compare/index.js": function(e, t) {
-			var n = "undefined" != typeof Element,
-				s = "function" == typeof Map,
-				r = "function" == typeof Set,
-				o = "function" == typeof ArrayBuffer && !!ArrayBuffer.isView;
-			e.exports = function(e, t) {
-				try {
-					return function e(t, i) {
-						if (t === i) return !0;
-						if (t && i && "object" == typeof t && "object" == typeof i) {
-							if (t.constructor !== i.constructor) return !1;
-							var a, c, d, l;
-							if (Array.isArray(t)) {
-								if ((a = t.length) != i.length) return !1;
-								for (c = a; 0 != c--;)
-									if (!e(t[c], i[c])) return !1;
-								return !0
-							}
-							if (s && t instanceof Map && i instanceof Map) {
-								if (t.size !== i.size) return !1;
-								for (l = t.entries(); !(c = l.next()).done;)
-									if (!i.has(c.value[0])) return !1;
-								for (l = t.entries(); !(c = l.next()).done;)
-									if (!e(c.value[1], i.get(c.value[0]))) return !1;
-								return !0
-							}
-							if (r && t instanceof Set && i instanceof Set) {
-								if (t.size !== i.size) return !1;
-								for (l = t.entries(); !(c = l.next()).done;)
-									if (!i.has(c.value[0])) return !1;
-								return !0
-							}
-							if (o && ArrayBuffer.isView(t) && ArrayBuffer.isView(i)) {
-								if ((a = t.length) != i.length) return !1;
-								for (c = a; 0 != c--;)
-									if (t[c] !== i[c]) return !1;
-								return !0
-							}
-							if (t.constructor === RegExp) return t.source === i.source && t.flags === i.flags;
-							if (t.valueOf !== Object.prototype.valueOf) return t.valueOf() === i.valueOf();
-							if (t.toString !== Object.prototype.toString) return t.toString() === i.toString();
-							if ((a = (d = Object.keys(t)).length) !== Object.keys(i).length) return !1;
-							for (c = a; 0 != c--;)
-								if (!Object.prototype.hasOwnProperty.call(i, d[c])) return !1;
-							if (n && t instanceof Element) return !1;
-							for (c = a; 0 != c--;)
-								if (("_owner" !== d[c] && "__v" !== d[c] && "__o" !== d[c] || !t.$$typeof) && !e(t[d[c]], i[d[c]])) return !1;
-							return !0
-						}
-						return t != t && i != i
-					}(e, t)
-				} catch (i) {
-					if ((i.message || "").match(/stack|recursion/i)) return console.warn("react-fast-compare cannot handle circular refs"), !1;
-					throw i
-				}
-			}
-		},
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -728,10 +671,10 @@
 				S = "viewport",
 				T = "popper",
 				N = "reference",
-				A = C.reduce((function(e, t) {
+				L = C.reduce((function(e, t) {
 					return e.concat([t + "-" + E, t + "-" + P])
 				}), []),
-				L = [].concat(C, [w]).reduce((function(e, t) {
+				A = [].concat(C, [w]).reduce((function(e, t) {
 					return e.concat([t, t + "-" + E, t + "-" + P])
 				}), []),
 				M = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
@@ -1131,14 +1074,14 @@
 					w = e.elements[b ? g : m],
 					E = ee(a(w) ? w : w.contextElement || l(e.elements.popper), c, u),
 					P = r(y),
-					A = V({
+					L = V({
 						reference: P,
 						element: k,
 						strategy: "absolute",
 						placement: o
 					}),
-					L = Z(Object.assign(Object.assign({}, k), A)),
-					M = m === T ? L : P,
+					A = Z(Object.assign(Object.assign({}, k), L)),
+					M = m === T ? A : P,
 					B = {
 						top: E.top - M.top + x.top,
 						bottom: M.bottom - E.bottom + x.bottom,
@@ -1305,7 +1248,7 @@
 								s = e.name,
 								r = n.offset,
 								o = void 0 === r ? [0, 0] : r,
-								i = L.reduce((function(e, n) {
+								i = A.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
 										var s = W(e),
 											r = [k, O].indexOf(s) >= 0 ? -1 : 1,
@@ -1351,9 +1294,9 @@
 												i = n.padding,
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
-												d = void 0 === c ? L : c,
+												d = void 0 === c ? A : c,
 												l = H(s),
-												u = (l ? a ? A : A.filter((function(e) {
+												u = (l ? a ? L : L.filter((function(e) {
 													return H(e) === l
 												})) : C).filter((function(e) {
 													return d.indexOf(e) >= 0
@@ -1457,17 +1400,17 @@
 								N = "function" == typeof h ? h(Object.assign(Object.assign({}, t.rects), {}, {
 									placement: t.placement
 								})) : h,
-								A = {
+								L = {
 									x: 0,
 									y: 0
 								};
 							if (I) {
 								if (o) {
-									var L = "y" === C ? O : k,
+									var A = "y" === C ? O : k,
 										M = "y" === C ? j : _,
 										B = "y" === C ? "height" : "width",
 										F = I[C],
-										D = I[C] + v[L],
+										D = I[C] + v[A],
 										R = I[C] - v[M],
 										U = m ? -T[B] / 2 : 0,
 										V = g === E ? S[B] : T[B],
@@ -1483,7 +1426,7 @@
 											bottom: 0,
 											left: 0
 										},
-										X = J[L],
+										X = J[A],
 										Y = J[M],
 										Q = re(0, S[B], G[B]),
 										Z = w ? S[B] / 2 - U - Q - X - N : V - Q - X - N,
@@ -1494,16 +1437,16 @@
 										oe = I[C] + Z - ne - te,
 										ie = I[C] + $ - ne,
 										ae = re(m ? Math.min(D, oe) : D, F, m ? Math.max(R, ie) : R);
-									I[C] = ae, A[C] = ae - F
+									I[C] = ae, L[C] = ae - F
 								}
 								if (a) {
 									var ce = "x" === C ? O : k,
 										de = "x" === C ? j : _,
 										le = I[P],
 										ue = re(le + v[ce], le, le - v[de]);
-									I[P] = ue, A[P] = ue - le
+									I[P] = ue, L[P] = ue - le
 								}
-								t.modifiersData[s] = A
+								t.modifiersData[s] = L
 							}
 						},
 						requiresIfExists: ["offset"]
@@ -2205,10 +2148,10 @@
 					}
 				},
 				N = n("./src/reddit/models/Media/index.ts"),
-				A = n("./src/reddit/selectors/posts.ts"),
-				L = n("./src/reddit/actions/imageOCRAltText/constants.ts");
-			const M = Object(r.a)(L.b),
-				B = Object(r.a)(L.a),
+				L = n("./src/reddit/selectors/posts.ts"),
+				A = n("./src/reddit/actions/imageOCRAltText/constants.ts");
+			const M = Object(r.a)(A.b),
+				B = Object(r.a)(A.a),
 				F = Object(r.a)(k.k),
 				D = Object(r.a)(k.j),
 				R = Object(r.a)(k.s),
@@ -2261,15 +2204,15 @@
 						subredditName: C
 					} = e, I = Object(i.a)(x, null, {
 						isOtherDiscussions: !0
-					}), S = n(), L = Object(A.B)(S, {
+					}), S = n(), A = Object(L.B)(S, {
 						listingKey: I
-					}), R = b && (!L || 0 === L.length), U = Object(i.a)(C, s.P[k], {
+					}), R = b && (!A || 0 === A.length), U = Object(i.a)(C, s.P[k], {
 						t: g
-					}), W = Object(A.B)(S, {
+					}), W = Object(L.B)(S, {
 						listingKey: U
-					}), H = h && (!W || 0 === W.length), q = Object(o.a)(x), V = Object(A.B)(S, {
+					}), H = h && (!W || 0 === W.length), q = Object(o.a)(x), V = Object(L.B)(S, {
 						listingKey: q
-					}), z = m && (!V || 0 === V.length), K = Object(A.I)(S, {
+					}), z = m && (!V || 0 === V.length), K = Object(L.I)(S, {
 						postId: x
 					}), G = l && !!K && !!K.media && (Object(N.H)(K.media) || Object(N.F)(K.media)) && !K.media.altText;
 					if (!(R || H || z || G || v)) return;
@@ -2714,8 +2657,8 @@
 				S = n("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
 				T = n("./src/reddit/components/DiscoveryUnit/InFeedChaining/Loader.tsx"),
 				N = n("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
-				A = n("./src/reddit/components/Flatlist/index.tsx"),
-				L = n("./src/reddit/components/JSAPIContainers/index.tsx"),
+				L = n("./src/reddit/components/Flatlist/index.tsx"),
+				A = n("./src/reddit/components/JSAPIContainers/index.tsx"),
 				M = n("./src/reddit/components/ModModeReports/index.tsx"),
 				B = n("./src/reddit/components/ModModeReports/helpers.ts"),
 				F = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
@@ -2786,10 +2729,10 @@
 				ve = Object(o.b)(() => Object(i.c)({
 					autoplayPref: _.b,
 					activeModalId: x.a,
-					hideNSFWPref: _.B,
+					hideNSFWPref: _.C,
 					flairStyleTemplate: ee.S,
 					isCurrentUserProfilePost: j.k,
-					isLoggedIn: _.J,
+					isLoggedIn: _.K,
 					isActive: j.j,
 					isPostChainDismissed: y.c,
 					isPostChained: y.d,
@@ -2864,7 +2807,7 @@
 						isActionBarAnimationEnabled: Oe,
 						postId: je,
 						postIds: _e
-					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], we = ke ? void 0 : p, Ce = Object(d.a)(oe), Ee = ie && Ce, Pe = Object(a.a)(oe), Ie = Object(c.a)(oe), Se = Object(B.c)(le), Te = !!le.media && le.media.type === b.o.RTJSON, Ne = ye && Te, Ae = n ? n - R.a : void 0, Le = !(_ && q || $), Me = (e => e === Z.zc.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Z.zc.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
+					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], we = ke ? void 0 : p, Ce = Object(d.a)(oe), Ee = ie && Ce, Pe = Object(a.a)(oe), Ie = Object(c.a)(oe), Se = Object(B.c)(le), Te = !!le.media && le.media.type === b.o.RTJSON, Ne = ye && Te, Le = n ? n - R.a : void 0, Ae = !(_ && q || $), Me = (e => e === Z.zc.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Z.zc.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2929,7 +2872,7 @@
 						isTopicPage: !!$,
 						listingKey: te,
 						post: le,
-						shouldShowSubscribeButton: Le,
+						shouldShowSubscribeButton: Ae,
 						showSubreddit: Re,
 						showSubredditIcon: !0,
 						subredditOrProfile: ge
@@ -2954,7 +2897,7 @@
 						showCentered: !0,
 						flairStyleTemplate: we,
 						post: le,
-						availableWidth: Ae,
+						availableWidth: Le,
 						shouldLoad: m,
 						scrollerItemRef: fe,
 						autoplayPref: t,
@@ -2967,7 +2910,7 @@
 					})), ie && Ce && Se && r.a.createElement(M.a, {
 						onIgnoreReports: ce,
 						reportable: le
-					}), r.a.createElement(L.d, null), ve && r.a.createElement(P.a, {
+					}), r.a.createElement(A.d, null), ve && r.a.createElement(P.a, {
 						awardsPlaqueStyle: !0,
 						isPostDetail: !1,
 						thing: le,
@@ -2980,7 +2923,7 @@
 						flairStyleTemplate: we,
 						model: le,
 						onVoteClick: e.handleVote
-					}), r.a.createElement(A.c, {
+					}), r.a.createElement(L.c, {
 						currentUser: i,
 						hasModFlairPerms: Pe,
 						hasModFullPerms: Ie,
@@ -3723,8 +3666,8 @@
 					isTopicPage: S,
 					listingKey: T,
 					post: N,
-					shouldShowSubscribeButton: A,
-					showCornerOutboundLink: L,
+					shouldShowSubscribeButton: L,
+					showCornerOutboundLink: A,
 					showSubreddit: M,
 					showSubredditIcon: B,
 					subredditOrProfile: F
@@ -3763,7 +3706,7 @@
 					isPostDetail: C,
 					thing: N,
 					tooltipType: I ? d.c.Lightbox : void 0
-				})), F && M && A && !P && r.a.createElement(p.a, {
+				})), F && M && L && !P && r.a.createElement(p.a, {
 					className: O.a.SubscribeButton,
 					getEventFactory: e => Object(h.f)(N.id, e ? "unsubscribe" : "subscribe", "post", T, _),
 					identifier: {
@@ -3772,7 +3715,7 @@
 					},
 					postId: N.id,
 					size: f.c.XS
-				}), L && r.a.createElement(b.b, {
+				}), A && r.a.createElement(b.b, {
 					className: O.a.OutboundLink,
 					isSponsored: N.isSponsored,
 					postId: N.id,
@@ -4083,9 +4026,9 @@
 			})), n.d(t, "w", (function() {
 				return N
 			})), n.d(t, "x", (function() {
-				return A
-			})), n.d(t, "L", (function() {
 				return L
+			})), n.d(t, "L", (function() {
+				return A
 			})), n.d(t, "K", (function() {
 				return M
 			})), n.d(t, "I", (function() {
@@ -4275,9 +4218,9 @@
 					})
 				},
 				N = (e, t, n, s) => {
-					Object(f.a)(A(t, n, s)(e))
+					Object(f.a)(L(t, n, s)(e))
 				},
-				A = (e, t, n, r) => o => {
+				L = (e, t, n, r) => o => {
 					return {
 						...y(o, e, n, r),
 						source: b,
@@ -4286,7 +4229,7 @@
 						post: p.post(o, t)
 					}
 				},
-				L = (e, t, n, s) => r => o => Object(c.e)(o, r, e, t, n, s),
+				A = (e, t, n, s) => r => o => Object(c.e)(o, r, e, t, n, s),
 				M = (e, t, n, s) => r => o => Object(c.d)(o, e, t, void 0, n, r, s),
 				B = (e, t, n, s) => r => o => ({
 					...Object(c.e)(o, r, e, t, n, s),
@@ -4772,4 +4715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.76ec0e2b2d17e5acecc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.53f145f59538c6c44c5a.js.map

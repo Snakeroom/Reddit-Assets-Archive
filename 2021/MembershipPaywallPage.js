@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a5e704ab2c5b2cfdae7a.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.59c15e40a59abe9e4511.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage", "EconHelperActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1654,7 +1654,7 @@
 				}
 			}
 			const A = Object(m.c)({
-				isNightMode: S.U
+				isNightMode: S.V
 			});
 			var z = Object(l.b)(A)(R),
 				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -5272,7 +5272,7 @@
 				}
 			}
 			const Zt = Object(o.c)({
-				isLoggedIn: y.J,
+				isLoggedIn: y.K,
 				membershipProducts: (e, {
 					subreddit: t
 				}) => Object(N.j)(e, t.id),
@@ -6169,7 +6169,7 @@
 				}
 			}
 			const ti = Object(o.c)({
-				currentUser: y.i,
+				currentUser: y.j,
 				isOverlay: g.h,
 				subreddit: (e, {
 					match: t
@@ -6618,4 +6618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a5e704ab2c5b2cfdae7a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.59c15e40a59abe9e4511.js.map

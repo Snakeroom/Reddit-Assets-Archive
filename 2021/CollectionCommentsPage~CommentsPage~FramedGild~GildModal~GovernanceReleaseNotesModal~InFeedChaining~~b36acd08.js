@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.a9bcc469368cf51c7111.js
-// Retrieved at 3/10/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.65b10954a2a6190c6304.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -257,17 +257,17 @@
 			var R = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				O = s("./src/reddit/icons/svgs/VideoSnoo/index.tsx"),
 				H = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
-				I = s.n(H);
-			const j = () => n.a.createElement("div", {
-				className: I.a.icon
+				j = s.n(H);
+			const I = () => n.a.createElement("div", {
+				className: j.a.icon
 			}, n.a.createElement(O.a, null));
 			var A = e => "string" == typeof e.postUrl ? n.a.createElement("a", {
 					href: e.postUrl,
-					className: I.a.button
-				}, n.a.createElement(j, null)) : n.a.createElement(R.a, {
+					className: j.a.button
+				}, n.a.createElement(I, null)) : n.a.createElement(R.a, {
 					to: e.postUrl,
-					className: I.a.button
-				}, n.a.createElement(j, null)),
+					className: j.a.button
+				}, n.a.createElement(I, null)),
 				U = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				D = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
 				W = s.n(D);
@@ -797,8 +797,8 @@
 				}));
 			var O = s("./src/reddit/selectors/media.ts"),
 				H = s("./src/reddit/selectors/platform.ts"),
-				I = s("./src/reddit/selectors/posts.ts"),
-				j = s("./src/reddit/selectors/user.ts"),
+				j = s("./src/reddit/selectors/posts.ts"),
+				I = s("./src/reddit/selectors/user.ts"),
 				A = s("./src/reddit/selectors/video.ts"),
 				U = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
 				D = s.n(U),
@@ -1046,10 +1046,10 @@
 					})))
 				},
 				He = s("./src/reddit/components/HTML5StreamPlayer/VideoContainer/index.m.less"),
-				Ie = s.n(He);
+				je = s.n(He);
 
-			function je() {
-				return (je = Object.assign || function(e) {
+			function Ie() {
+				return (Ie = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -1062,9 +1062,9 @@
 					isVisible: t,
 					setRef: s,
 					...i
-				}) => l.a.createElement("div", je({
-					className: Object(m.a)(Ie.a.Component, e, {
-						[Ie.a.mIsNotVisible]: !t
+				}) => l.a.createElement("div", Ie({
+					className: Object(m.a)(je.a.Component, e, {
+						[je.a.mIsNotVisible]: !t
 					}),
 					ref: s
 				}, i)),
@@ -1080,16 +1080,16 @@
 				Ke = 6e3,
 				Ze = 100,
 				Qe = Object(c.b)(() => Object(d.c)({
-					isLoggedIn: j.J,
-					autoplayPref: j.b,
+					isLoggedIn: I.K,
+					autoplayPref: I.b,
 					currentTime: A.d,
-					currentUser: j.i,
+					currentUser: I.j,
 					inVideoMegafailExperiment: B.a,
 					isOverlayOpen: H.h,
 					loadTimes: A.h,
 					metadata: A.j,
 					mutedInFeed: A.k,
-					postUrl: I.K,
+					postUrl: j.K,
 					started: A.m,
 					videoBufferTime: R,
 					videoBufferVariant: k,
@@ -1515,7 +1515,7 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = `Reddit/Version Build 832858e826452b824e1ee63c8f0c5cd1607e544b-production ${t}`;
+									let s = `Reddit/Version Build b482bf8b2a905d4878af98c89ae09c640b5622c6-production ${t}`;
 									return n && (s += ` [${w.md}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2420,4 +2420,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.a9bcc469368cf51c7111.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.65b10954a2a6190c6304.js.map

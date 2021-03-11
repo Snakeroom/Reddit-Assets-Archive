@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.aa89e4e4c7ce5b016d2d.js
-// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.043f854efe73f6513cf2.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
@@ -22,7 +22,7 @@
 				})), await e(Object(o.g)(a.a.SNOOVATAR_MODAL))
 			}, u = e => async (t, n) => {
 				const r = n();
-				Object(i.a)(Object(c.a)(e)(r)), Object(d.J)(r) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
+				Object(i.a)(Object(c.a)(e)(r)), Object(d.K)(r) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
 			}
 		},
 		"./src/reddit/actions/userFlair/index.ts": function(e, t, n) {
@@ -1023,7 +1023,7 @@
 					subredditId: t,
 					username: n
 				}) => {
-					const i = Object(r.lb)(e, {
+					const i = Object(r.mb)(e, {
 						userName: n
 					});
 					if (!i) return;
@@ -1062,4 +1062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.aa89e4e4c7ce5b016d2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.043f854efe73f6513cf2.js.map

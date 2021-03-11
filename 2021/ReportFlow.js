@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.ee42afb593357b04f376.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.1d92e60b268c8cca2532.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -314,7 +314,7 @@
 						return e
 				}
 			};
-			var N = (e = !1, t) => {
+			var j = (e = !1, t) => {
 				switch (t.type) {
 					case O.g:
 						return t.payload;
@@ -324,11 +324,11 @@
 						return e
 				}
 			};
-			var j = Object(_.c)({
+			var N = Object(_.c)({
 				api: y,
 				openedFromModalPage: F,
 				postOrCommentId: k,
-				userIsMod: N,
+				userIsMod: j,
 				rulesCategory: (e = null, t) => {
 					switch (t.type) {
 						case O.b:
@@ -339,7 +339,7 @@
 			});
 			Object(C.a)({
 				features: {
-					reportFlow: j
+					reportFlow: N
 				}
 			});
 			const A = Object(s.a)(O.e),
@@ -387,7 +387,7 @@
 					if (!f && !p) return;
 					const C = p ? u.features.comments.models[e] : u.posts.models[e];
 					if (!C) return;
-					if (!Object(R.J)(s())) return o(Object(r.j)()), void o(Object(a.k)({
+					if (!Object(R.K)(s())) return o(Object(r.j)()), void o(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: C.permalink
 					}));
@@ -541,7 +541,7 @@
 					apiContext: s
 				}) => {
 					const c = n(),
-						u = Object(d.i)(c),
+						u = Object(d.j)(c),
 						p = u ? u.id : void 0,
 						m = c.user.blocked.data.filter(t => t.name === e)[0];
 					p && (t(_({
@@ -905,7 +905,7 @@
 				I = c.a.wrapped(C.b, "DropdownRow", w.a),
 				F = c.a.div("PickerWrapper", w.a),
 				k = c.a.div("SelectARuleLabel", w.a),
-				N = ({
+				j = ({
 					className: e,
 					isChosen: t,
 					...n
@@ -914,8 +914,8 @@
 						[w.a.isChosen]: t
 					})
 				}, n)),
-				j = Object(b.a)(R.a),
-				A = c.a.wrapped(j, "Dropdown", w.a),
+				N = Object(b.a)(R.a),
+				A = c.a.wrapped(N, "Dropdown", w.a),
 				P = c.a.wrapped(_.b, "DropdownTriangle", w.a),
 				L = c.a.wrapped(C.b, "Row", w.a);
 			var D = n("./src/reddit/components/ReportFlow/FileAComplaint/index.m.less"),
@@ -941,8 +941,8 @@
 				W = n("./src/reddit/icons/svgs/ProfileSlashed/index.tsx"),
 				z = n("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
 				V = n.n(z);
-			const J = c.a.wrapped(h.a, "blockUserHolder", V.a),
-				Y = c.a.wrapped(W.a, "BlockUserIcon", V.a),
+			const Y = c.a.wrapped(h.a, "blockUserHolder", V.a),
+				J = c.a.wrapped(W.a, "BlockUserIcon", V.a),
 				X = c.a.div("BlockUserHeader", V.a),
 				Q = c.a.div("OptionHolder", V.a),
 				Z = c.a.div("OptionHeader", V.a),
@@ -988,9 +988,9 @@
 						const {
 							props: e
 						} = this, t = this.getBlockUserHeaderText();
-						return r.a.createElement(J, {
+						return r.a.createElement(Y, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, r.a.createElement(Y, null), r.a.createElement("div", null, r.a.createElement(X, null, t), r.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
+						}, r.a.createElement(J, null), r.a.createElement("div", null, r.a.createElement(X, null, t), r.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -1051,7 +1051,7 @@
 					}, r.a.createElement(L, {
 						displayText: d ? d.reasonTextToShow : "",
 						id: pe
-					}), r.a.createElement(P, null), r.a.createElement(N, {
+					}), r.a.createElement(P, null), r.a.createElement(j, {
 						isChosen: !!d
 					}, o.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -1168,7 +1168,7 @@
 					}, r.a.createElement(L, {
 						displayText: n,
 						id: _e
-					}), r.a.createElement(P, null), r.a.createElement(N, {
+					}), r.a.createElement(P, null), r.a.createElement(j, {
 						isChosen: !!n
 					}, o.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -1211,8 +1211,8 @@
 				Ie = n("./src/reddit/models/Subreddit/index.ts"),
 				Fe = n("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
 				ke = n.n(Fe);
-			const Ne = c.a.wrapped(x.i, "SubmitButton", ke.a);
-			class je extends r.a.Component {
+			const je = c.a.wrapped(x.i, "SubmitButton", ke.a);
+			class Ne extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						rulesSequence: new ye.a
@@ -1286,7 +1286,7 @@
 						onClick: e.onClose
 					}, o.fbt._("Close", null, {
 						hk: "4gbyAA"
-					})), r.a.createElement(Ne, {
+					})), r.a.createElement(je, {
 						onClick: e.onSubmit,
 						disabled: !e.ruleIsChosen
 					}, e.submitButtonText ? e.submitButtonText : o.fbt._("Submit", null, {
@@ -1294,7 +1294,7 @@
 					}))))
 				}
 			}
-			var Ae = je,
+			var Ae = Ne,
 				Pe = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				Le = n("./src/reddit/components/ReportFlow/Title/index.m.less"),
 				De = n.n(Le);
@@ -1310,9 +1310,9 @@
 				We = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				ze = n("./src/reddit/selectors/posts.ts"),
 				Ve = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
-				Je = n.n(Ve);
-			const Ye = c.a.div("CloseWrapper", Je.a),
-				Xe = c.a.wrapped(Pe.a, "Close", Je.a),
+				Ye = n.n(Ve);
+			const Je = c.a.div("CloseWrapper", Ye.a),
+				Xe = c.a.wrapped(Pe.a, "Close", Ye.a),
 				Qe = Object(i.c)({
 					comment: (e, {
 						commentId: t
@@ -1465,7 +1465,7 @@
 					} = this;
 					if (t.crisisFlowEnabled && e.chosenRuleKind === ce.a.CrisisTextLine && e.showCTLPage) {
 						let e;
-						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(s.Fragment, null, r.a.createElement(Ye, {
+						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(s.Fragment, null, r.a.createElement(Je, {
 							onClick: this.handleReportFlowClose
 						}, r.a.createElement(Xe, null)), r.a.createElement(u.a, {
 							onCloseReportFlow: this.handleReportFlowClose,
@@ -1487,7 +1487,7 @@
 				}
 				render() {
 					return r.a.createElement("div", {
-						className: Je.a.Wrapper
+						className: Ye.a.Wrapper
 					}, this.getContent())
 				}
 			}
@@ -1547,9 +1547,9 @@
 				I = n("./src/reddit/selectors/user.ts"),
 				F = n("./src/lib/lessComponent.tsx"),
 				k = n("./src/reddit/components/ReportFlow/index.m.less"),
-				N = n.n(k);
-			const j = F.a.div("ReportLoaderWrapper", N.a),
-				A = F.a.img("LoadingIcon", N.a),
+				j = n.n(k);
+			const N = F.a.div("ReportLoaderWrapper", j.a),
+				A = F.a.img("LoadingIcon", j.a),
 				P = "2.0";
 			var L;
 			! function(e) {
@@ -1585,7 +1585,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: I.U
+					isNightmodeOn: I.V
 				}),
 				M = Object(d.b)(D, (e, {
 					timestamp: t
@@ -1775,7 +1775,7 @@
 						onOpenCtlFlow: this.onOpenCtlFlow,
 						onBlockAuthor: () => this.onBlockAuthor(a),
 						onResize: this.props.onResize
-					}) : l.a.createElement(j, null, l.a.createElement(A, {
+					}) : l.a.createElement(N, null, l.a.createElement(A, {
 						src: e ? `${o.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${o.a.assetPath}/img/loader_2orbit_loop.gif`,
 						alt: "Loading"
 					}))
@@ -2783,14 +2783,14 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => o.b.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: r.J,
+					experimentEligibilitySelector: r.K,
 					experimentName: o.g
 				}),
 				i = e => o.d.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: r.J,
+					experimentEligibilitySelector: r.K,
 					experimentName: o.j
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.ee42afb593357b04f376.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.1d92e60b268c8cca2532.js.map

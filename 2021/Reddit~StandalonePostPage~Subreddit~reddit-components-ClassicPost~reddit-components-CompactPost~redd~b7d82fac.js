@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.85ad6a4090b82a351b57.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.c9492a757884189c6375.js
+// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -442,7 +442,7 @@
 			var y = s("./src/reddit/components/CategoryTagList/index.m.less"),
 				j = s.n(y);
 			const w = Object(r.b)(() => Object(o.c)({
-				labelNSFW: c.R
+				labelNSFW: c.S
 			}));
 			t.a = w(Object(a.c)(({
 				postCategories: e,
@@ -829,7 +829,7 @@
 				u = s("./src/reddit/models/Flair/index.ts"),
 				m = s("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.R
+					labelNSFW: m.S
 				}),
 				h = Object(a.b)(p),
 				b = e => {
@@ -1632,7 +1632,7 @@
 				const t = Object(r.e)(t => Object(c.I)(t, {
 						postId: e
 					})),
-					s = Object(r.e)(e => Object(d.i)(e)),
+					s = Object(r.e)(e => Object(d.j)(e)),
 					i = Object(r.e)(e => t ? Object(l.L)(e, {
 						identifier: t.belongsTo
 					}) : null),
@@ -2153,4 +2153,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.85ad6a4090b82a351b57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.c9492a757884189c6375.js.map
