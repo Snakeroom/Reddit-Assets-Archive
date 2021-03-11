@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.83b5122517d9526e603e.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.504a89ea60cd704f8a1a.js
+// Retrieved at 3/10/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, o) {
@@ -1692,7 +1692,7 @@
 					onHideTooltip: D,
 					onShowTooltip: F,
 					openPowerupsModal: () => {
-						Z(Object(C.h)("comment")), B()
+						Z(Object(C.j)("comment")), B()
 					},
 					opTooltipId: V,
 					renderContractorBadge: W,
@@ -4184,4 +4184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.83b5122517d9526e603e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.504a89ea60cd704f8a1a.js.map

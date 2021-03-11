@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.82e5cc626a0ef063a799.js
-// Retrieved at 3/10/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e6f89b8e7a64befc41c4.js
+// Retrieved at 3/10/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -991,7 +991,7 @@
 				})), n.a.createElement("button", {
 					className: te.a.perksButton,
 					onClick: () => {
-						x(Object(c.f)()), h(r ? Object(u.h)(d.a.ECON_POWERUPS_MARKETING) : Object(m.h)())
+						x(Object(c.h)()), h(r ? Object(u.h)(d.a.ECON_POWERUPS_MARKETING) : Object(m.h)())
 					}
 				}, re._("Show Perks", null, {
 					hk: "3TgZRL"
@@ -1013,7 +1013,7 @@
 				}, n.a.createElement(v.i, {
 					className: te.a.button,
 					onClick: () => {
-						x(Object(c.f)()), h(Object(l.b)())
+						x(Object(c.h)()), h(Object(l.b)())
 					}
 				}, g ? re._("Apply Your Free Powerup", null, {
 					hk: "3HJ66L"
@@ -2739,4 +2739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.82e5cc626a0ef063a799.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e6f89b8e7a64befc41c4.js.map

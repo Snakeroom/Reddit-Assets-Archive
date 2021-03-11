@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.12b35832381ff2dc2103.js
-// Retrieved at 3/10/2021, 4:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.0b94d7db3bb238041bc1.js
+// Retrieved at 3/10/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/PowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -257,10 +257,10 @@
 					subredditId: m
 				} = e, p = Object(r.d)(), v = Object(c.a)();
 				Object(n.useEffect)(() => {
-					v(Object(l.e)())
+					v(Object(l.f)())
 				}, [m, v]);
 				const k = () => {
-					v(Object(l.d)()), p(Object(d.b)())
+					v(Object(l.e)()), p(Object(d.b)())
 				};
 				if (!o || 1 === o.tiersInfo.length || !u) return null;
 				const {
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.12b35832381ff2dc2103.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.0b94d7db3bb238041bc1.js.map

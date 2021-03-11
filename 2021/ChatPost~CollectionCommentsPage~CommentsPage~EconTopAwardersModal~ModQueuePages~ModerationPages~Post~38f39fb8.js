@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.1336efcb8cd1aba59feb.js
-// Retrieved at 3/10/2021, 5:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.7d92135762bfec32567b.js
+// Retrieved at 3/10/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8", "EconHelperActions"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -368,8 +368,8 @@
 				T = r("./src/reddit/selectors/activeModalId.ts"),
 				C = r("./src/reddit/selectors/experiments/econLeaderboards.ts"),
 				I = r("./src/reddit/selectors/gold/awardIcon.ts"),
-				S = r("./src/reddit/selectors/user.ts"),
-				P = r("./src/reddit/selectors/userPrefs.ts"),
+				P = r("./src/reddit/selectors/user.ts"),
+				S = r("./src/reddit/selectors/userPrefs.ts"),
 				_ = r("./node_modules/lodash/debounce.js"),
 				k = r.n(_),
 				N = r("./src/lib/classNames/index.ts"),
@@ -915,9 +915,9 @@
 					}))
 				},
 				Ie = r("./src/reddit/actions/gold/reportAward.ts"),
-				Se = r("./src/reddit/controls/Button/index.tsx"),
-				Pe = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
-				_e = r.n(Pe);
+				Pe = r("./src/reddit/controls/Button/index.tsx"),
+				Se = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
+				_e = r.n(Se);
 			! function(e) {
 				e[e.BEGIN = 0] = "BEGIN", e[e.REPORT_COMMUNITY_AWARD = 1] = "REPORT_COMMUNITY_AWARD", e[e.FLAG_USAGE = 2] = "FLAG_USAGE"
 			}(Te || (Te = {}));
@@ -936,14 +936,14 @@
 							hk: "24QeOL"
 						}), h.b.SuccessAward))), e.onClose()
 					},
-					m = a.a.createElement(a.a.Fragment, null, a.a.createElement(Se.l, {
+					m = a.a.createElement(a.a.Fragment, null, a.a.createElement(Pe.l, {
 						onClick: () => {
 							t(Object(O.clickReportAward)(e.award, e.thing.id)), i(Te.REPORT_COMMUNITY_AWARD)
 						},
 						className: _e.a.reportStepButton
 					}, s.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
-					})), a.a.createElement(Se.l, {
+					})), a.a.createElement(Pe.l, {
 						onClick: () => {
 							t(Object(O.clickFlagAwardUsage)(e.award, e.thing.id)), i(Te.FLAG_USAGE)
 						},
@@ -1007,11 +1007,11 @@
 						postOrComment: t.thing,
 						minSizes: [32, 128]
 					}),
-					currentUser: S.i,
+					currentUser: P.i,
 					isConfirmModalOpen: e => "AwardBadges--Modal--HideAwardConfirmation" === Object(T.a)(e),
 					isInEconLeaderboardsExperiment: C.b,
-					isLoggedIn: S.J,
-					prefersReducedAnimations: P.c
+					isLoggedIn: P.J,
+					prefersReducedAnimations: S.c
 				}),
 				Me = e => Object(v.a)(e.id) ? e.postId : e.id,
 				Be = Object(o.b)(Ne, (e, {
@@ -1209,7 +1209,7 @@
 			})), r.d(t, "c", (function() {
 				return I
 			})), r.d(t, "a", (function() {
-				return S
+				return P
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
@@ -1339,7 +1339,7 @@
 					onOpenUploadDialog: () => e(Object(c.j)())
 				}),
 				I = Object(a.b)(E, C)(y),
-				S = Object(a.b)(T, C)(y)
+				P = Object(a.b)(T, C)(y)
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1473,7 +1473,7 @@
 			})), r.d(t, "h", (function() {
 				return I
 			})), r.d(t, "i", (function() {
-				return S
+				return P
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
@@ -1729,7 +1729,7 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var S = Object(a.b)(() => Object(o.c)({
+			var P = Object(a.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
 				}) => t ? Object(f.T)(e, {
@@ -1807,8 +1807,8 @@
 				T = r("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				C = r("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
 				I = r("./src/reddit/components/JSAPIContainers/index.tsx"),
-				S = r("./src/reddit/components/QuarantinedLabel/index.tsx"),
-				P = r("./src/reddit/components/SponsoredLabel/index.tsx"),
+				P = r("./src/reddit/components/QuarantinedLabel/index.tsx"),
+				S = r("./src/reddit/components/SponsoredLabel/index.tsx"),
 				_ = r("./src/reddit/components/SubredditNameLink/index.tsx"),
 				k = r("./src/reddit/constants/posts.ts"),
 				N = r("./src/reddit/contexts/InsideOverlay.tsx"),
@@ -1937,7 +1937,7 @@
 						onMouseEnter: ie.show,
 						onMouseLeave: ie.hide,
 						onClick: () => {
-							F(Object(m.h)(M ? "post" : "postlist")), B(Object(p.b)())
+							F(Object(m.j)(M ? "post" : "postlist")), B(Object(p.b)())
 						},
 						ref: ie.target.ref
 					}, n.a.createElement(A.a, {
@@ -1972,7 +1972,7 @@
 					}, n.a.createElement(_.a, {
 						"data-click-id": "subreddit",
 						to: N.url
-					}, N.displayText)), N && N.isQuarantined && n.a.createElement(S.a, null), b && !ce && n.a.createElement(he, null), l.isSponsored && n.a.createElement(s.Fragment, null, n.a.createElement(P.a, null), n.a.createElement(he, null)), be, n.a.createElement(I.e, null), x && n.a.createElement(n.a.Fragment, null, n.a.createElement("a", {
+					}, N.displayText)), N && N.isQuarantined && n.a.createElement(P.a, null), b && !ce && n.a.createElement(he, null), l.isSponsored && n.a.createElement(s.Fragment, null, n.a.createElement(S.a, null), n.a.createElement(he, null)), be, n.a.createElement(I.e, null), x && n.a.createElement(n.a.Fragment, null, n.a.createElement("a", {
 						className: K.a.externalLink,
 						"data-click-id": "timestamp",
 						href: l.permalink,
@@ -2144,9 +2144,9 @@
 			})), r.d(t, "j", (function() {
 				return I
 			})), r.d(t, "f", (function() {
-				return S
-			})), r.d(t, "g", (function() {
 				return P
+			})), r.d(t, "g", (function() {
+				return S
 			})), r.d(t, "m", (function() {
 				return _
 			})), r.d(t, "h", (function() {
@@ -2264,14 +2264,14 @@
 					}
 				}), I = e => Object(a.a)(e, {
 					...b
-				}), S = (e, t, r) => Object(a.a)(e, {
+				}), P = (e, t, r) => Object(a.a)(e, {
 					...d,
 					variables: {
 						subredditId: t,
 						thingId: r,
 						includeGroup: !0
 					}
-				}), P = (e, t, r) => Object(a.a)(e, {
+				}), S = (e, t, r) => Object(a.a)(e, {
 					...c,
 					variables: {
 						profileName: t,
@@ -2378,22 +2378,26 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "h", (function() {
+			r.d(t, "j", (function() {
 				return o
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "h", (function() {
 				return i
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "f", (function() {
 				return d
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return c
-			})), r.d(t, "a", (function() {
-				return l
 			})), r.d(t, "b", (function() {
-				return u
-			})), r.d(t, "g", (function() {
-				return m
+				return l
 			})), r.d(t, "c", (function() {
+				return u
+			})), r.d(t, "i", (function() {
+				return m
+			})), r.d(t, "d", (function() {
 				return p
+			})), r.d(t, "a", (function() {
+				return h
+			})), r.d(t, "g", (function() {
+				return b
 			}));
 			var s = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				n = r("./src/reddit/selectors/telemetry.ts");
@@ -2460,6 +2464,28 @@
 					action: "open",
 					noun: "emote_picker",
 					...a(e),
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				h = e => t => ({
+					source: "powerups",
+					action: "click",
+					noun: "add_custom_emojis",
+					...a(t),
+					powerups: {
+						...n.subredditPowerups(t),
+						emojiCount: e
+					},
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				b = e => t => ({
+					source: "powerups",
+					action: "save",
+					noun: "custom_emojis",
+					...a(t),
+					powerups: {
+						...n.subredditPowerups(t),
+						emojiCount: e
+					},
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				})
 		},
@@ -2942,11 +2968,11 @@
 				}
 				return t
 			};
-			var S;
+			var P;
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
-			}(S || (S = {}));
-			const P = {
+			}(P || (P = {}));
+			const S = {
 					prices: {},
 					member: "Supporter",
 					memberPlural: "Supporters",
@@ -2958,7 +2984,7 @@
 				_ = (e, t) => Object.values(e.products.models).filter(e => e.type === l.a.Membership && t && e.subredditId === t),
 				k = (e, t) => {
 					if (!t) return {};
-					const r = P.prices;
+					const r = S.prices;
 					_(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
@@ -2967,15 +2993,15 @@
 				},
 				N = (e, t) => {
 					const r = e.subreddits.gov.meta[t || ""],
-						s = r && r.extra && r.extra.nomenclature || P;
+						s = r && r.extra && r.extra.nomenclature || S;
 					return {
 						prices: k(e, t),
-						member: s.member || P.member,
-						memberPlural: s.memberPlural || P.memberPlural,
-						memberAlt: s.memberAlt || P.memberAlt,
-						memberAltPlural: s.memberAltPlural || P.memberAltPlural,
-						membership: s.membership || P.membership,
-						membershipAlt: s.membershipAlt || P.membershipAlt
+						member: s.member || S.member,
+						memberPlural: s.memberPlural || S.memberPlural,
+						memberAlt: s.memberAlt || S.memberAlt,
+						memberAltPlural: s.memberAltPlural || S.memberAltPlural,
+						membership: s.membership || S.membership,
+						membershipAlt: s.membershipAlt || S.membershipAlt
 					}
 				},
 				M = e => {
@@ -3066,4 +3092,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.1336efcb8cd1aba59feb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.7d92135762bfec32567b.js.map

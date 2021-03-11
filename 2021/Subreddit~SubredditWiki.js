@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4d42cbc5dd8eac96f229.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.298a940f7d28309e9a1d.js
+// Retrieved at 3/10/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "EconHelperActions"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4632,22 +4632,26 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "h", (function() {
+			n.d(t, "j", (function() {
 				return a
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "h", (function() {
 				return o
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return d
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return c
-			})), n.d(t, "a", (function() {
-				return l
 			})), n.d(t, "b", (function() {
-				return u
-			})), n.d(t, "g", (function() {
-				return m
+				return l
 			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "i", (function() {
+				return m
+			})), n.d(t, "d", (function() {
 				return p
+			})), n.d(t, "a", (function() {
+				return b
+			})), n.d(t, "g", (function() {
+				return h
 			}));
 			var s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -4714,6 +4718,28 @@
 					action: "open",
 					noun: "emote_picker",
 					...i(e),
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				b = e => t => ({
+					source: "powerups",
+					action: "click",
+					noun: "add_custom_emojis",
+					...i(t),
+					powerups: {
+						...r.subredditPowerups(t),
+						emojiCount: e
+					},
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				h = e => t => ({
+					source: "powerups",
+					action: "save",
+					noun: "custom_emojis",
+					...i(t),
+					powerups: {
+						...r.subredditPowerups(t),
+						emojiCount: e
+					},
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				})
 		},
@@ -5024,4 +5050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4d42cbc5dd8eac96f229.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.298a940f7d28309e9a1d.js.map
