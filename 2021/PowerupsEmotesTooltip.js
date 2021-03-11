@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.ffc18fb7382443f5dd2f.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.f6d56874824f6c9c2755.js
+// Retrieved at 3/11/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -370,7 +370,6 @@
 					key: t.id,
 					className: F.a.emoteButton,
 					imagePath: t.emoji.path,
-					title: t.id,
 					onClick: () => e(t)
 				})))), i.a.createElement("article", {
 					className: F.a.freeEmotePack
@@ -618,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.ffc18fb7382443f5dd2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.f6d56874824f6c9c2755.js.map
