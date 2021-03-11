@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.ddea9bc36bd48ef68d08.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.e588c1b2ecd60bfabb87.js
+// Retrieved at 3/11/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/graphql/operations/BadgeIndicators.json": function(e) {
@@ -3348,17 +3348,23 @@
 					case y.d:
 					case g.d:
 					case g.a:
-					case h.PROFILE_POSTS_FAILED:
+					case h.PROFILE_POSTS_FAILED: {
+						let s = e;
 						if (t.payload && t.payload.account) {
 							const {
-								nightmode: s
+								nightmode: r,
+								showPresence: n
 							} = t.payload.account;
-							if (e.nightmode !== s) return {
-								...e,
-								nightmode: s
-							}
+							e.nightmode !== r && (s = {
+								...s,
+								nightmode: r
+							}), e.showPresence !== n && (s = {
+								...s,
+								showPresence: n
+							})
 						}
-						return e;
+						return s
+					}
 					case O.h:
 					case O.j:
 					case O.i:
@@ -3728,4 +3734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.ddea9bc36bd48ef68d08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.e588c1b2ecd60bfabb87.js.map

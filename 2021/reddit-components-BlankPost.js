@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.98e8b10e6b20ecc549ba.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.f6b14f38c01174694459.js
+// Retrieved at 3/11/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -2863,17 +2863,23 @@
 					case E.d:
 					case P.d:
 					case P.a:
-					case v.PROFILE_POSTS_FAILED:
+					case v.PROFILE_POSTS_FAILED: {
+						let s = e;
 						if (t.payload && t.payload.account) {
 							const {
-								nightmode: s
+								nightmode: r,
+								showPresence: n
 							} = t.payload.account;
-							if (e.nightmode !== s) return {
-								...e,
-								nightmode: s
-							}
+							e.nightmode !== r && (s = {
+								...s,
+								nightmode: r
+							}), e.showPresence !== n && (s = {
+								...s,
+								showPresence: n
+							})
 						}
-						return e;
+						return s
+					}
 					case h.h:
 					case h.j:
 					case h.i:
@@ -2953,4 +2959,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.98e8b10e6b20ecc549ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.f6b14f38c01174694459.js.map
