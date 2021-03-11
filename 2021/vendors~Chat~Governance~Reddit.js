@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.cc2ac58b68f5f017ccef.js
-// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.e60f739a45cb2dd5fd1f.js
+// Retrieved at 3/11/2021, 9:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -329,7 +329,7 @@
 			"use strict";
 			Object.defineProperty(t, "__esModule", {
 				value: !0
-			}), t.SWITZERLAND = t.GERMANY = t.AUSTRIA = t.PORTUGUESE_BRAZILLIAN_LOCALE = t.FRENCH_LOCALE = t.GERMAN_LOCALE = t.DEFAULT_LOCALE = void 0, t.DEFAULT_LOCALE = "en-US", t.GERMAN_LOCALE = "de-DE", t.FRENCH_LOCALE = "fr", t.PORTUGUESE_BRAZILLIAN_LOCALE = "pt-BR", t.AUSTRIA = "AT", t.GERMANY = "DE", t.SWITZERLAND = "CH"
+			}), t.SWITZERLAND = t.GERMANY = t.AUSTRIA = t.PORTUGUESE_BRAZILLIAN_LOCALE = t.FRENCH_LOCALE = t.GERMAN_LOCALE = t.DEFAULT_LOCALE = t.PSEUDO_EXT_LOCALE = t.PSEUDO_SHORT_LOCALE = t.PSEUDO_LONG_LOCALE = void 0, t.PSEUDO_LONG_LOCALE = "pseudo_long", t.PSEUDO_SHORT_LOCALE = "pseudo_short", t.PSEUDO_EXT_LOCALE = "pseudo_ext", t.DEFAULT_LOCALE = "en-US", t.GERMAN_LOCALE = "de-DE", t.FRENCH_LOCALE = "fr", t.PORTUGUESE_BRAZILLIAN_LOCALE = "pt-BR", t.AUSTRIA = "AT", t.GERMANY = "DE", t.SWITZERLAND = "CH"
 		},
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/fbt.js": function(e, t, n) {
 			"use strict";
@@ -34562,4 +34562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.cc2ac58b68f5f017ccef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.e60f739a45cb2dd5fd1f.js.map
