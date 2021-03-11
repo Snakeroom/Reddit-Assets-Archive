@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.c95f33af29b488488bf7.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.cfc68a6bf66ad305bfaa.js
+// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -2954,7 +2954,7 @@
 				})), r.a.createElement("button", {
 					className: te.a.perksButton,
 					onClick: () => {
-						x(Object(c.h)()), h(s ? Object(m.h)(d.a.ECON_POWERUPS_MARKETING) : Object(u.h)())
+						x(Object(c.i)()), h(s ? Object(m.h)(d.a.ECON_POWERUPS_MARKETING) : Object(u.h)())
 					}
 				}, se._("Show Perks", null, {
 					hk: "3TgZRL"
@@ -2976,7 +2976,7 @@
 				}, r.a.createElement(E.i, {
 					className: te.a.button,
 					onClick: () => {
-						x(Object(c.h)()), h(Object(l.b)())
+						x(Object(c.i)()), h(Object(l.b)())
 					}
 				}, g ? se._("Apply Your Free Powerup", null, {
 					hk: "3HJ66L"
@@ -7178,26 +7178,28 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "j", (function() {
+			s.d(t, "k", (function() {
 				return a
-			})), s.d(t, "h", (function() {
-				return o
-			})), s.d(t, "f", (function() {
-				return d
-			})), s.d(t, "e", (function() {
-				return c
-			})), s.d(t, "b", (function() {
-				return l
-			})), s.d(t, "c", (function() {
-				return u
 			})), s.d(t, "i", (function() {
-				return m
+				return o
+			})), s.d(t, "g", (function() {
+				return d
+			})), s.d(t, "f", (function() {
+				return c
+			})), s.d(t, "c", (function() {
+				return l
 			})), s.d(t, "d", (function() {
+				return u
+			})), s.d(t, "j", (function() {
+				return m
+			})), s.d(t, "e", (function() {
 				return p
 			})), s.d(t, "a", (function() {
 				return b
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "h", (function() {
 				return h
+			})), s.d(t, "b", (function() {
+				return x
 			}));
 			var n = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
@@ -7280,6 +7282,17 @@
 				h = e => t => ({
 					source: "powerups",
 					action: "save",
+					noun: "custom_emojis",
+					...i(t),
+					powerups: {
+						...r.subredditPowerups(t),
+						emojiCount: e
+					},
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				x = (e = 1) => t => ({
+					source: "powerups",
+					action: "delete",
 					noun: "custom_emojis",
 					...i(t),
 					powerups: {
@@ -7843,4 +7856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.c95f33af29b488488bf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.cfc68a6bf66ad305bfaa.js.map

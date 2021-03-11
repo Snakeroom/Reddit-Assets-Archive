@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.689f3ec74d4ed73ae2d5.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b8da32d20479055c9ef0.js
+// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3520,7 +3520,7 @@
 						className: Yt.a.UserIcon
 					}), P && a.a.createElement(Pt.a, {
 						onClick: e => {
-							z(Object(H.j)("comment")), T(), e.stopPropagation(), e.preventDefault()
+							z(Object(H.k)("comment")), T(), e.stopPropagation(), e.preventDefault()
 						},
 						className: Yt.a.topSupporterIcon,
 						title: B.fbt._("Powerups Top Supporter", null, {
@@ -6907,7 +6907,7 @@
 				})), r.a.createElement("button", {
 					className: te.a.perksButton,
 					onClick: () => {
-						g(Object(c.h)()), b(s ? Object(p.h)(d.a.ECON_POWERUPS_MARKETING) : Object(m.h)())
+						g(Object(c.i)()), b(s ? Object(p.h)(d.a.ECON_POWERUPS_MARKETING) : Object(m.h)())
 					}
 				}, se._("Show Perks", null, {
 					hk: "3TgZRL"
@@ -6929,7 +6929,7 @@
 				}, r.a.createElement(y.i, {
 					className: te.a.button,
 					onClick: () => {
-						g(Object(c.h)()), b(Object(l.b)())
+						g(Object(c.i)()), b(Object(l.b)())
 					}
 				}, f ? se._("Apply Your Free Powerup", null, {
 					hk: "3HJ66L"
@@ -10957,4 +10957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.689f3ec74d4ed73ae2d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b8da32d20479055c9ef0.js.map

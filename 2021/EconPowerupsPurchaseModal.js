@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.4e6c790a63e245b072a5.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b1dc4cd4185cfdf8e57e.js
+// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1695,7 +1695,7 @@
 					}, []);
 					const x = Object(y.a)();
 					Object(n.useEffect)(() => {
-						x(Object(g.c)())
+						x(Object(g.d)())
 					}, []);
 					const j = d && d.pricePackages.length ? d.pricePackages[0].price : 0;
 					if (!j || !i) return s(), null;
@@ -2149,26 +2149,28 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "j", (function() {
+			r.d(t, "k", (function() {
 				return s
-			})), r.d(t, "h", (function() {
-				return c
-			})), r.d(t, "f", (function() {
-				return i
-			})), r.d(t, "e", (function() {
-				return l
-			})), r.d(t, "b", (function() {
-				return d
-			})), r.d(t, "c", (function() {
-				return u
 			})), r.d(t, "i", (function() {
-				return p
+				return c
+			})), r.d(t, "g", (function() {
+				return i
+			})), r.d(t, "f", (function() {
+				return l
+			})), r.d(t, "c", (function() {
+				return d
 			})), r.d(t, "d", (function() {
+				return u
+			})), r.d(t, "j", (function() {
+				return p
+			})), r.d(t, "e", (function() {
 				return m
 			})), r.d(t, "a", (function() {
 				return f
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "h", (function() {
 				return h
+			})), r.d(t, "b", (function() {
+				return y
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				o = r("./src/reddit/selectors/telemetry.ts");
@@ -2251,6 +2253,17 @@
 				h = e => t => ({
 					source: "powerups",
 					action: "save",
+					noun: "custom_emojis",
+					...a(t),
+					powerups: {
+						...o.subredditPowerups(t),
+						emojiCount: e
+					},
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				y = (e = 1) => t => ({
+					source: "powerups",
+					action: "delete",
 					noun: "custom_emojis",
 					...a(t),
 					powerups: {
@@ -2422,4 +2435,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.4e6c790a63e245b072a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b1dc4cd4185cfdf8e57e.js.map

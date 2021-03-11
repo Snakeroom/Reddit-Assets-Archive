@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.38039f2f0c1487374e2d.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.981312064f0f9ce85ce1.js
+// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1447,11 +1447,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("128792"),
+				buildNumber: r("128795"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1615494457"),
+				})("1615497657"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -1548,6 +1548,9 @@
 		},
 		"./src/graphql/operations/CreateSubredditTags.json": function(e) {
 			e.exports = JSON.parse('{"id":"80c9a3cd96b8"}')
+		},
+		"./src/graphql/operations/DeleteCustomEmoji.json": function(e) {
+			e.exports = JSON.parse('{"id":"c13d195ee7ca"}')
 		},
 		"./src/graphql/operations/ExperimentVariants.json": function(e) {
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
@@ -3612,14 +3615,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cb99e56b0e79372266fc66a84923e9935f0b3a440-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c5be6e9f57389844bfb71a30a80085f04a5c69291-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "b99e56b0e79372266fc66a84923e9935f0b3a440-production",
+						release: "5be6e9f57389844bfb71a30a80085f04a5c69291-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4068,7 +4071,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "b99e56b0e79372266fc66a84923e9935f0b3a440-production",
+						releaseClient: "5be6e9f57389844bfb71a30a80085f04a5c69291-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7507,7 +7510,7 @@
 					hk: "1IJNeH"
 				});
 				try {
-					const e = await Object(_.g)(r());
+					const e = await Object(_.h)(r());
 					if (e.ok) {
 						const i = e.body;
 						if (i.errors && i.errors.length) return void(await t(y(o)));
@@ -7535,7 +7538,7 @@
 					hk: "1IJNeH"
 				});
 				try {
-					const i = await Object(_.d)(r(), t);
+					const i = await Object(_.e)(r(), t);
 					if (i.ok) {
 						const n = i.body;
 						if (n.errors && n.errors.length) return void(await e(O(d)));
@@ -7566,7 +7569,7 @@
 						subredditId: e
 					})) && !t.forceLoad) return;
 				i(j());
-				const c = t.fullData ? _.f : _.e;
+				const c = t.fullData ? _.g : _.f;
 				try {
 					const n = await c(o(), e, !!t.includeIdentity);
 					if (n.ok) {
@@ -7628,7 +7631,7 @@
 							powerupsCount: t,
 							isAnonymous: i
 						},
-						h = await Object(_.c)(p(), {
+						h = await Object(_.d)(p(), {
 							input: s
 						});
 					let b = !1,
@@ -18424,42 +18427,45 @@
 		},
 		"./src/reddit/endpoints/gold/powerups.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "g", (function() {
-				return u
-			})), i.d(t, "d", (function() {
+			i.d(t, "h", (function() {
 				return _
 			})), i.d(t, "e", (function() {
 				return p
 			})), i.d(t, "f", (function() {
 				return m
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "g", (function() {
 				return h
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "d", (function() {
 				return b
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "c", (function() {
 				return f
+			})), i.d(t, "a", (function() {
+				return g
+			})), i.d(t, "b", (function() {
+				return w
 			}));
 			var n = i("./src/graphql/operations/CreateCustomEmoji.json"),
-				r = i("./src/graphql/operations/GenerateCustomEmojiUploadLease.json"),
-				s = i("./src/graphql/operations/ReallocatePowerups.json"),
-				o = i("./src/graphql/operations/RedditorPowerups.json"),
-				d = i("./src/graphql/operations/SubredditPowerups.json"),
-				a = i("./src/graphql/operations/SubredditPowerupsFull.json"),
-				l = i("./src/graphql/operations/UserPowerups.json"),
-				c = i("./src/lib/makeGqlRequest/index.ts");
-			const u = e => Object(c.a)(e, l, {
+				r = i("./src/graphql/operations/DeleteCustomEmoji.json"),
+				s = i("./src/graphql/operations/GenerateCustomEmojiUploadLease.json"),
+				o = i("./src/graphql/operations/ReallocatePowerups.json"),
+				d = i("./src/graphql/operations/RedditorPowerups.json"),
+				a = i("./src/graphql/operations/SubredditPowerups.json"),
+				l = i("./src/graphql/operations/SubredditPowerupsFull.json"),
+				c = i("./src/graphql/operations/UserPowerups.json"),
+				u = i("./src/lib/makeGqlRequest/index.ts");
+			const _ = e => Object(u.a)(e, c, {
 					traceRequestName: "user_powerups"
 				}),
-				_ = (e, t) => Object(c.a)(e, {
+				p = (e, t) => Object(u.a)(e, {
 					variables: {
 						id: t
 					},
-					...o
+					...d
 				}, {
 					traceRequestName: "redditor_powerups"
 				}),
-				p = (e, t, i) => Object(c.a)(e, {
-					...d,
+				m = (e, t, i) => Object(u.a)(e, {
+					...a,
 					variables: {
 						subredditId: t,
 						includeIdentity: i
@@ -18467,8 +18473,8 @@
 				}, {
 					traceRequestName: "subreddit_powerups"
 				}),
-				m = (e, t, i) => Object(c.a)(e, {
-					...a,
+				h = (e, t, i) => Object(u.a)(e, {
+					...l,
 					variables: {
 						subredditId: t,
 						includeIdentity: i
@@ -18476,16 +18482,20 @@
 				}, {
 					traceRequestName: "subreddit_powerups_full"
 				}),
-				h = (e, t) => Object(c.a)(e, {
+				b = (e, t) => Object(u.a)(e, {
+					...o,
+					variables: t
+				}),
+				f = (e, t) => Object(u.a)(e, {
 					...s,
 					variables: t
 				}),
-				b = (e, t) => Object(c.a)(e, {
-					...r,
+				g = (e, t) => Object(u.a)(e, {
+					...n,
 					variables: t
 				}),
-				f = (e, t) => Object(c.a)(e, {
-					...n,
+				w = (e, t) => Object(u.a)(e, {
+					...r,
 					variables: t
 				})
 		},
@@ -44723,4 +44733,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.38039f2f0c1487374e2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.981312064f0f9ce85ce1.js.map

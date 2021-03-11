@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.eecb1b11a8a05352eb04.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.117fabc40ca221856aa6.js
+// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1995,7 +1995,7 @@
 						onMouseEnter: ie.show,
 						onMouseLeave: ie.hide,
 						onClick: () => {
-							F(Object(m.j)(M ? "post" : "postlist")), B(Object(p.b)())
+							F(Object(m.k)(M ? "post" : "postlist")), B(Object(p.b)())
 						},
 						ref: ie.target.ref
 					}, n.a.createElement(A.a, {
@@ -2436,26 +2436,28 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "j", (function() {
+			r.d(t, "k", (function() {
 				return o
-			})), r.d(t, "h", (function() {
-				return i
-			})), r.d(t, "f", (function() {
-				return d
-			})), r.d(t, "e", (function() {
-				return c
-			})), r.d(t, "b", (function() {
-				return l
-			})), r.d(t, "c", (function() {
-				return u
 			})), r.d(t, "i", (function() {
-				return m
+				return i
+			})), r.d(t, "g", (function() {
+				return d
+			})), r.d(t, "f", (function() {
+				return c
+			})), r.d(t, "c", (function() {
+				return l
 			})), r.d(t, "d", (function() {
+				return u
+			})), r.d(t, "j", (function() {
+				return m
+			})), r.d(t, "e", (function() {
 				return p
 			})), r.d(t, "a", (function() {
 				return h
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "h", (function() {
 				return b
+			})), r.d(t, "b", (function() {
+				return f
 			}));
 			var s = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				n = r("./src/reddit/selectors/telemetry.ts");
@@ -2538,6 +2540,17 @@
 				b = e => t => ({
 					source: "powerups",
 					action: "save",
+					noun: "custom_emojis",
+					...a(t),
+					powerups: {
+						...n.subredditPowerups(t),
+						emojiCount: e
+					},
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				f = (e = 1) => t => ({
+					source: "powerups",
+					action: "delete",
 					noun: "custom_emojis",
 					...a(t),
 					powerups: {
@@ -3157,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.eecb1b11a8a05352eb04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.117fabc40ca221856aa6.js.map
