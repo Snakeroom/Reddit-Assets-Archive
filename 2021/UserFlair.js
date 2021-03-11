@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserFlair.3ef6f843463a08ff8655.js
-// Retrieved at 3/9/2021, 3:40:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserFlair.989d665cce084fb1829b.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserFlair"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -13,262 +13,320 @@
 			const s = "IN_CONTEXT_AUTHOR_FLAIR_UPDATED",
 				d = Object(n.a)(s)
 		},
+		"./src/reddit/actions/userFlair/constants.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "r", (function() {
+				return n
+			})), r.d(t, "a", (function() {
+				return s
+			})), r.d(t, "i", (function() {
+				return d
+			})), r.d(t, "j", (function() {
+				return i
+			})), r.d(t, "h", (function() {
+				return c
+			})), r.d(t, "c", (function() {
+				return u
+			})), r.d(t, "d", (function() {
+				return a
+			})), r.d(t, "b", (function() {
+				return o
+			})), r.d(t, "p", (function() {
+				return l
+			})), r.d(t, "q", (function() {
+				return E
+			})), r.d(t, "o", (function() {
+				return S
+			})), r.d(t, "f", (function() {
+				return _
+			})), r.d(t, "g", (function() {
+				return b
+			})), r.d(t, "e", (function() {
+				return T
+			})), r.d(t, "m", (function() {
+				return R
+			})), r.d(t, "n", (function() {
+				return O
+			})), r.d(t, "l", (function() {
+				return F
+			})), r.d(t, "k", (function() {
+				return f
+			}));
+			const n = "USER_FLAIR_DATA__MUTATED",
+				s = "AUTHOR_FLAIR_DATA__MUTATED",
+				d = "STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_PENDING",
+				i = "STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_SUCCESS",
+				c = "STRUCTURED_STYLES__USERFLAIR_ENABLED_SETTING_FAILED",
+				u = "STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_PENDING",
+				a = "STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_SUCCESS",
+				o = "STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_FAILED",
+				l = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_PENDING",
+				E = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_SUCCESS",
+				S = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_FAILED",
+				_ = "STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_PENDING",
+				b = "STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_SUCCESS",
+				T = "STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_FAILED",
+				R = "STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_PENDING",
+				O = "STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_SUCCESS",
+				F = "STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_FAILED",
+				f = "USERFLAIR_FETCH_SUCCESS"
+		},
 		"./src/reddit/actions/userFlair/userFlair.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "userFlairEnabledSettingPending", (function() {
-				return g
+				return F
 			})), r.d(t, "userFlairEnabledSettingSuccess", (function() {
-				return S
+				return f
 			})), r.d(t, "userFlairEnabledSettingFailed", (function() {
-				return _
-			})), r.d(t, "userFlairAllowAssingOwnSettingPending", (function() {
-				return I
-			})), r.d(t, "userFlairAllowAssingOwnSettingSuccess", (function() {
-				return w
-			})), r.d(t, "userFlairAllowAssingOwnSettingFailed", (function() {
-				return T
-			})), r.d(t, "userFlairSaveTemplatePending", (function() {
-				return k
-			})), r.d(t, "userFlairSaveTemplateSuccess", (function() {
-				return y
-			})), r.d(t, "userFlairSaveTemplateFailed", (function() {
 				return A
-			})), r.d(t, "userFlairDeleteTemplatePending", (function() {
-				return h
-			})), r.d(t, "userFlairDeleteTemplateSuccess", (function() {
-				return E
-			})), r.d(t, "userFlairDeleteTemplateFailed", (function() {
-				return C
-			})), r.d(t, "userFlairReorderTemplatesPending", (function() {
-				return v
-			})), r.d(t, "userFlairReorderTemplatesSuccess", (function() {
-				return x
-			})), r.d(t, "userFlairReorderTemplatesFailed", (function() {
+			})), r.d(t, "userFlairAllowAssingOwnSettingPending", (function() {
 				return U
-			})), r.d(t, "userFlairFetchSuccess", (function() {
-				return D
-			})), r.d(t, "userFlairMutated", (function() {
-				return N
-			})), r.d(t, "authorFlairMutated", (function() {
-				return R
-			})), r.d(t, "userFlairChanged", (function() {
-				return P
-			})), r.d(t, "toggleUserFlairInSubreddit", (function() {
+			})), r.d(t, "userFlairAllowAssingOwnSettingSuccess", (function() {
 				return L
-			})), r.d(t, "toggleAssignOwnFlairPermission", (function() {
+			})), r.d(t, "userFlairAllowAssingOwnSettingFailed", (function() {
+				return I
+			})), r.d(t, "userFlairSaveTemplatePending", (function() {
+				return j
+			})), r.d(t, "userFlairSaveTemplateSuccess", (function() {
+				return D
+			})), r.d(t, "userFlairSaveTemplateFailed", (function() {
+				return m
+			})), r.d(t, "userFlairDeleteTemplatePending", (function() {
+				return C
+			})), r.d(t, "userFlairDeleteTemplateSuccess", (function() {
+				return p
+			})), r.d(t, "userFlairDeleteTemplateFailed", (function() {
+				return N
+			})), r.d(t, "userFlairReorderTemplatesPending", (function() {
+				return g
+			})), r.d(t, "userFlairReorderTemplatesSuccess", (function() {
+				return k
+			})), r.d(t, "userFlairReorderTemplatesFailed", (function() {
+				return w
+			})), r.d(t, "userFlairFetchSuccess", (function() {
+				return P
+			})), r.d(t, "userFlairMutated", (function() {
+				return h
+			})), r.d(t, "authorFlairMutated", (function() {
+				return y
+			})), r.d(t, "userFlairChanged", (function() {
 				return M
+			})), r.d(t, "toggleUserFlairInSubreddit", (function() {
+				return Y
+			})), r.d(t, "toggleAssignOwnFlairPermission", (function() {
+				return v
 			})), r.d(t, "saveUserFlairTemplate", (function() {
-				return H
+				return x
 			})), r.d(t, "deleteUserFlairTemplate", (function() {
-				return z
+				return G
 			})), r.d(t, "reorderUserFlairTemplates", (function() {
-				return K
+				return H
 			})), r.d(t, "userFlairLoadedAndModalOpened", (function() {
-				return B
+				return W
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/makeActionCreator/index.ts"),
 				d = r("./node_modules/lodash/isEmpty.js"),
 				i = r.n(d),
-				a = r("./src/reddit/actions/authorFlair.ts"),
-				c = r("./src/reddit/actions/toaster.ts"),
-				u = r("./src/reddit/endpoints/flair/index.ts"),
-				l = r("./src/reddit/helpers/flair.ts"),
-				o = r("./src/reddit/models/Flair/index.ts"),
-				b = r("./src/reddit/models/Toast/index.ts"),
-				O = r("./src/reddit/models/User/index.ts"),
-				j = r("./src/reddit/selectors/subreddit.ts"),
-				f = r("./src/reddit/selectors/userFlair.ts"),
-				F = r("./src/lib/initializeClient/installReducer.ts"),
-				m = r("./src/reddit/reducers/features/userFlair/index.ts"),
-				p = r("./src/reddit/actions/userFlair/constants.ts");
-			Object(F.a)({
+				c = r("./src/reddit/actions/authorFlair.ts"),
+				u = r("./src/reddit/actions/toaster.ts"),
+				a = r("./src/reddit/endpoints/flair/index.ts"),
+				o = r("./src/reddit/helpers/flair.ts"),
+				l = r("./src/reddit/models/Flair/index.ts"),
+				E = r("./src/reddit/models/Toast/index.ts"),
+				S = r("./src/reddit/models/User/index.ts"),
+				_ = r("./src/reddit/selectors/subreddit.ts"),
+				b = r("./src/reddit/selectors/userFlair.ts"),
+				T = r("./src/lib/initializeClient/installReducer.ts"),
+				R = r("./src/reddit/reducers/features/userFlair/index.ts"),
+				O = r("./src/reddit/actions/userFlair/constants.ts");
+			Object(T.a)({
 				features: {
-					userFlair: m.a
+					userFlair: R.a
 				}
 			});
-			const g = Object(s.a)(p.i),
-				S = Object(s.a)(p.j),
-				_ = Object(s.a)(p.h),
-				I = Object(s.a)(p.c),
-				w = Object(s.a)(p.d),
-				T = Object(s.a)(p.b),
-				k = Object(s.a)(p.p),
-				y = Object(s.a)(p.q),
-				A = Object(s.a)(p.o),
-				h = Object(s.a)(p.f),
-				E = Object(s.a)(p.g),
-				C = Object(s.a)(p.e),
-				v = Object(s.a)(p.m),
-				x = Object(s.a)(p.n),
-				U = Object(s.a)(p.l),
-				D = Object(s.a)(p.k),
-				N = Object(s.a)(p.r),
-				R = Object(s.a)(p.a),
-				P = (e, t, r, n, s) => async (d, i, {
-					apiContext: a
+			const F = Object(s.a)(O.i),
+				f = Object(s.a)(O.j),
+				A = Object(s.a)(O.h),
+				U = Object(s.a)(O.c),
+				L = Object(s.a)(O.d),
+				I = Object(s.a)(O.b),
+				j = Object(s.a)(O.p),
+				D = Object(s.a)(O.q),
+				m = Object(s.a)(O.o),
+				C = Object(s.a)(O.f),
+				p = Object(s.a)(O.g),
+				N = Object(s.a)(O.e),
+				g = Object(s.a)(O.m),
+				k = Object(s.a)(O.n),
+				w = Object(s.a)(O.l),
+				P = Object(s.a)(O.k),
+				h = Object(s.a)(O.r),
+				y = Object(s.a)(O.a),
+				M = (e, t, r, n, s) => async (d, i, {
+					apiContext: c
 				}) => {
-					const c = i(),
-						o = c.user.account,
-						b = o ? Object(O.e)(o) : void 0,
-						F = {
-							...Object(f.c)(c, {
+					const u = i(),
+						l = u.user.account,
+						E = l ? Object(S.e)(l) : void 0,
+						T = {
+							...Object(b.c)(u, {
 								subredditId: s
 							}).displaySettings,
 							isUserEnabled: r
 						},
-						m = {
+						R = {
 							userName: n,
 							subredditId: s,
 							applied: e,
-							displaySettings: F
+							displaySettings: T
 						};
-					d(n === b ? N(m) : R(m));
-					const p = Object(j.T)(c, {
+					d(n === E ? h(R) : y(R));
+					const O = Object(_.T)(u, {
 							subredditId: s
 						}),
-						g = t && e ? Object(l.g)(e) : void 0;
-					Object(u.g)(a(), n, p.name, t, g), Object(u.i)(a(), r, p.name)
-				}, L = (e, t) => async (r, n, {
+						F = t && e ? Object(o.g)(e) : void 0;
+					Object(a.g)(c(), n, O.name, t, F), Object(a.i)(c(), r, O.name)
+				}, Y = (e, t) => async (r, n, {
 					apiContext: s
 				}) => {
 					const d = n(),
-						i = Object(j.T)(d, {
+						i = Object(_.T)(d, {
 							subredditId: e
 						}).name;
-					r(g());
-					const a = await Object(u.l)(s(), i, t);
-					if (a.ok) {
-						r(S({
+					r(F());
+					const c = await Object(a.l)(s(), i, t);
+					if (c.ok) {
+						r(f({
 							subredditId: e,
 							isEnabled: t
 						}))
-					} else r(_());
-					return a.ok
-				}, M = (e, t) => async (r, n, {
+					} else r(A());
+					return c.ok
+				}, v = (e, t) => async (r, n, {
 					apiContext: s
 				}) => {
 					const d = n(),
-						i = Object(j.T)(d, {
+						i = Object(_.T)(d, {
 							subredditId: e
 						}).name;
-					r(I());
-					const a = await Object(u.j)(s(), t, o.d.UserFlair, i);
-					if (a.ok) {
-						r(w({
+					r(U());
+					const c = await Object(a.j)(s(), t, l.d.UserFlair, i);
+					if (c.ok) {
+						r(L({
 							subredditId: e,
 							canAssignOwn: t
 						}))
-					} else r(T());
-					return a.ok
+					} else r(I());
+					return c.ok
+				}, x = (e, t) => async (r, s, {
+					apiContext: d
+				}) => {
+					const i = s(),
+						c = Object(_.T)(i, {
+							subredditId: t
+						}).name;
+					r(j());
+					const o = await Object(a.f)(d(), e, c, l.d.UserFlair),
+						S = o.ok && !(o.body && !1 === o.body.success);
+					if (S) {
+						const e = {
+							subredditId: t,
+							template: o.body
+						};
+						r(D(e));
+						const s = Object(u.d)(n.fbt._("Flair saved!", null, {
+							hk: "354KI0"
+						}), E.b.SuccessMod);
+						r(Object(u.e)(s))
+					} else {
+						r(m());
+						const s = Object(u.d)(n.fbt._("Sorry, flair wasn't saved.", null, {
+							hk: "4tkRNl"
+						}), E.b.Error, n.fbt._("Retry", null, {
+							hk: "4zNHTm"
+						}), x(e, t));
+						r(Object(u.e)(s))
+					}
+					return S
+				}, G = (e, t) => async (r, s, {
+					apiContext: d
+				}) => {
+					const i = s(),
+						c = Object(_.T)(i, {
+							subredditId: t
+						}).name;
+					if (r(C()), (await Object(a.b)(d(), e, c)).ok) {
+						r(p({
+							subredditId: t,
+							templateId: e
+						}));
+						const s = Object(u.d)(n.fbt._("Flair deleted!", null, {
+							hk: "1mNdn0"
+						}), E.b.SuccessMod);
+						r(Object(u.e)(s))
+					} else {
+						r(N());
+						const s = Object(u.d)(n.fbt._("Sorry, flair wasn't deleted.", null, {
+							hk: "2QrdJr"
+						}), E.b.Error, n.fbt._("Retry", null, {
+							hk: "1buF3Y"
+						}), G(e, t));
+						r(Object(u.e)(s))
+					}
 				}, H = (e, t) => async (r, s, {
 					apiContext: d
 				}) => {
 					const i = s(),
-						a = Object(j.T)(i, {
-							subredditId: t
-						}).name;
-					r(k());
-					const l = await Object(u.f)(d(), e, a, o.d.UserFlair),
-						O = l.ok && !(l.body && !1 === l.body.success);
-					if (O) {
-						const e = {
-							subredditId: t,
-							template: l.body
-						};
-						r(y(e));
-						const s = Object(c.d)(n.fbt._("Flair saved!", null, {
-							hk: "354KI0"
-						}), b.b.SuccessMod);
-						r(Object(c.e)(s))
-					} else {
-						r(A());
-						const s = Object(c.d)(n.fbt._("Sorry, flair wasn't saved.", null, {
-							hk: "4tkRNl"
-						}), b.b.Error, n.fbt._("Retry", null, {
-							hk: "4zNHTm"
-						}), H(e, t));
-						r(Object(c.e)(s))
-					}
-					return O
-				}, z = (e, t) => async (r, s, {
-					apiContext: d
-				}) => {
-					const i = s(),
-						a = Object(j.T)(i, {
-							subredditId: t
-						}).name;
-					if (r(h()), (await Object(u.b)(d(), e, a)).ok) {
-						r(E({
-							subredditId: t,
-							templateId: e
-						}));
-						const s = Object(c.d)(n.fbt._("Flair deleted!", null, {
-							hk: "1mNdn0"
-						}), b.b.SuccessMod);
-						r(Object(c.e)(s))
-					} else {
-						r(C());
-						const s = Object(c.d)(n.fbt._("Sorry, flair wasn't deleted.", null, {
-							hk: "2QrdJr"
-						}), b.b.Error, n.fbt._("Retry", null, {
-							hk: "1buF3Y"
-						}), z(e, t));
-						r(Object(c.e)(s))
-					}
-				}, K = (e, t) => async (r, s, {
-					apiContext: d
-				}) => {
-					const i = s(),
-						a = Object(j.T)(i, {
+						c = Object(_.T)(i, {
 							subredditId: t
 						}).name,
-						l = Object(f.c)(i, {
+						o = Object(b.c)(i, {
 							subredditId: t
 						}).templateIds;
-					if (r(v({
+					if (r(g({
 							subredditId: t,
 							templateIds: e
-						})), (await Object(u.e)(d(), a, o.d.UserFlair, e)).ok) {
-						r(x());
-						const e = Object(c.d)(n.fbt._("Flair reorder saved.", null, {
+						})), (await Object(a.e)(d(), c, l.d.UserFlair, e)).ok) {
+						r(k());
+						const e = Object(u.d)(n.fbt._("Flair reorder saved.", null, {
 							hk: "1zrDON"
-						}), b.b.SuccessMod);
-						r(Object(c.e)(e))
+						}), E.b.SuccessMod);
+						r(Object(u.e)(e))
 					} else {
-						r(U({
+						r(w({
 							subredditId: t,
-							templateIds: l
+							templateIds: o
 						}));
-						const s = Object(c.d)(n.fbt._("Sorry. Flair reorder wasn't saved.", null, {
+						const s = Object(u.d)(n.fbt._("Sorry. Flair reorder wasn't saved.", null, {
 							hk: "3gAbwk"
-						}), b.b.Error, n.fbt._("Retry", null, {
+						}), E.b.Error, n.fbt._("Retry", null, {
 							hk: "2nPnNw"
-						}), K(e, t));
-						r(Object(c.e)(s))
+						}), H(e, t));
+						r(Object(u.e)(s))
 					}
-				}, B = (e, t) => async (r, s, {
+				}, W = (e, t) => async (r, s, {
 					apiContext: d
 				}) => {
-					var l;
-					const o = s(),
-						O = null === (l = o.features) || void 0 === l ? void 0 : l.userFlair;
-					if (O && O[e] && O[e].displaySettings.isEnabled && i()(O[e].templateIds)) {
-						const s = Object(j.T)(o, {
+					var o;
+					const l = s(),
+						S = null === (o = l.features) || void 0 === o ? void 0 : o.userFlair;
+					if (S && S[e] && S[e].displaySettings.isEnabled && i()(S[e].templateIds)) {
+						const s = Object(_.T)(l, {
 								subredditId: e
 							}).name,
-							i = await Object(u.d)(d(), s);
-						if (i.ok) r(D(i.body)), r(Object(a.b)({
+							i = await Object(a.d)(d(), s);
+						if (i.ok) r(P(i.body)), r(Object(c.b)({
 							username: t,
 							subredditId: e
 						}));
 						else {
-							const e = Object(c.d)(n.fbt._("Something went wrong. Just don't panic.", null, {
+							const e = Object(u.d)(n.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
-							}), b.b.Error);
-							r(Object(c.e)(e))
+							}), E.b.Error);
+							r(Object(u.e)(e))
 						}
-					} else r(Object(a.b)({
+					} else r(Object(c.b)({
 						username: t,
 						subredditId: e
 					}))
@@ -276,4 +334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.3ef6f843463a08ff8655.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.989d665cce084fb1829b.js.map

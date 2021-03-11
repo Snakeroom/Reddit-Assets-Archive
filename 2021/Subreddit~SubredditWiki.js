@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.7cb6c1b600c7d7e40959.js
-// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.57174762158d709e7591.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["Subreddit~SubredditWiki", "EconHelperActions", "reddit-components-ContentGate"], {
+	["Subreddit~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
 			var n = s("./node_modules/lodash/_baseFlatten.js"),
 				r = s("./node_modules/lodash/map.js");
@@ -302,7 +302,7 @@
 					gqlContext: n
 				}) => {
 					const r = s(),
-						i = Object(d.U)(r, {
+						i = Object(d.P)(r, {
 							postId: e,
 							disallowProfile: !0
 						});
@@ -1871,17 +1871,17 @@
 			})), s.d(t, "c", (function() {
 				return v
 			})), s.d(t, "d", (function() {
-				return C
+				return O
 			})), s.d(t, "e", (function() {
-				return w
+				return C
 			})), s.d(t, "f", (function() {
-				return j
+				return w
 			})), s.d(t, "g", (function() {
-				return S
+				return j
 			})), s.d(t, "h", (function() {
-				return A
+				return S
 			})), s.d(t, "i", (function() {
-				return I
+				return A
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -2010,18 +2010,12 @@
 						} : {}
 					}
 				})),
-				k = s("./src/reddit/contexts/Post/index.tsx");
-
-			function O() {
-				const e = Object(n.useContext)(k.c);
-				if (!e) throw new Error("No Post context!");
-				return e
-			}
-			var C = e => {
+				k = s("./src/reddit/hooks/usePostContext.ts");
+			var O = e => {
 				const {
 					post: t,
 					subredditOrProfile: s
-				} = O(), i = Object(n.useMemo)(() => ({
+				} = Object(k.a)(), i = Object(n.useMemo)(() => ({
 					author: t.author,
 					approvedAtUTC: t.approvedAtUTC,
 					approvedBy: t.approvedBy,
@@ -2053,12 +2047,12 @@
 					data: i
 				})
 			};
-			var w = e => {
+			var C = e => {
 				const {
 					post: t,
 					subredditOrProfile: s,
 					isModerator: i
-				} = O(), a = Object(n.useMemo)(() => ({
+				} = Object(k.a)(), a = Object(n.useMemo)(() => ({
 					author: t.author,
 					isModerator: i,
 					post: {
@@ -2076,11 +2070,11 @@
 					data: a
 				})
 			};
-			var j = e => {
+			var w = e => {
 				const {
 					post: t,
 					subredditOrProfile: s
-				} = O(), i = Object(n.useMemo)(() => ({
+				} = Object(k.a)(), i = Object(n.useMemo)(() => ({
 					author: t.author,
 					approvedAtUTC: t.approvedAtUTC,
 					approvedBy: t.approvedBy,
@@ -2109,7 +2103,7 @@
 					data: i
 				})
 			};
-			var S = Object(i.b)(() => Object(a.c)({
+			var j = Object(i.b)(() => Object(a.c)({
 				subreddit: x.T
 			}))(e => r.a.createElement(p, {
 				className: e.className,
@@ -2122,7 +2116,7 @@
 					} : {}
 				}
 			}));
-			var A = Object(i.b)(() => Object(a.c)({
+			var S = Object(i.b)(() => Object(a.c)({
 				subredditOrProfile: (e, t) => Object(x.L)(e, {
 					identifier: t
 				})
@@ -2137,7 +2131,7 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var I = Object(i.b)(() => Object(a.c)({
+			var A = Object(i.b)(() => Object(a.c)({
 				subreddit: (e, {
 					subredditId: t
 				}) => t ? Object(x.T)(e, {
@@ -2273,7 +2267,7 @@
 						style: t
 					}, e.children)
 				},
-				S = Object(a.b)(() => Object(d.a)(g.H, f.bb, (e, {
+				S = Object(a.b)(() => Object(d.a)(g.C, f.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(g.b)(e, s) : null, (e, t, s) => ({
@@ -2520,10 +2514,10 @@
 				k = s.n(v);
 			const O = Object(d.c)({
 					autoplayPref: p.b,
-					consumed: b.b,
-					loadTimes: b.h,
-					metadata: b.j,
-					started: b.m
+					consumed: b.a,
+					loadTimes: b.f,
+					metadata: b.h,
+					started: b.k
 				}),
 				C = Object(o.b)(O, (e, {
 					postId: t
@@ -5130,8 +5124,8 @@
 			const {
 				fbt: z
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), J = e => e.type === V.f.Nsfw || e.type === V.f.Spoiler, G = Object(c.c)({
-				post: B.I,
-				subredditOrProfile: B.U
+				post: B.D,
+				subredditOrProfile: B.P
 			});
 			class X extends o.a.PureComponent {
 				constructor() {
@@ -5209,7 +5203,7 @@
 				$ = s.n(Z);
 			const {
 				fbt: ee
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = 10, se = 2, ne = Object(c.a)(B.O, e => e.filter(e => !e.isSponsored)), re = Object(c.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = 10, se = 2, ne = Object(c.a)(B.J, e => e.filter(e => !e.isSponsored)), re = Object(c.c)({
 				posts: (e, t) => ne(e, {
 					...t
 				})
@@ -5325,7 +5319,7 @@
 					listingKey: xe,
 					posts: (e, t) => {
 						const s = xe(e, t);
-						return Object(B.O)(e, {
+						return Object(B.J)(e, {
 							listingKey: s
 						})
 					},
@@ -7813,4 +7807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.7cb6c1b600c7d7e40959.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.57174762158d709e7591.js.map

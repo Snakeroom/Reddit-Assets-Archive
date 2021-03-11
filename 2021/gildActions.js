@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.147b55961c649d8b6e28.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.c7cff83333c7275edd56.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -101,8 +101,8 @@
 				y = s("./src/reddit/models/Toast/index.ts"),
 				v = s("./src/reddit/models/User/index.ts"),
 				k = s("./src/reddit/selectors/commentSelector.ts"),
-				I = s("./src/reddit/selectors/communityAwards.ts"),
-				_ = s("./src/reddit/selectors/gild.ts"),
+				_ = s("./src/reddit/selectors/communityAwards.ts"),
+				I = s("./src/reddit/selectors/gild.ts"),
 				A = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				x = s("./src/reddit/selectors/gold/econPurchase.ts"),
 				C = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -112,18 +112,18 @@
 				R = s("./src/graphql/operations/GildComment.json"),
 				q = s("./src/graphql/operations/GildPost.json"),
 				T = s("./src/lib/makeGqlRequest/index.ts"),
-				K = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const L = (e, t, s) => Object(T.a)(e, {
+				D = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const K = (e, t, s) => Object(T.a)(e, {
 					...q,
 					variables: t
 				}, {
-					query: s ? {} : Object(K.b)()
+					query: s ? {} : Object(D.b)()
 				}),
-				D = (e, t, s) => Object(T.a)(e, {
+				L = (e, t, s) => Object(T.a)(e, {
 					...R,
 					variables: t
 				}, {
-					query: s ? {} : Object(K.b)()
+					query: s ? {} : Object(D.b)()
 				});
 			var E = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				M = s("./src/reddit/helpers/awards/message.ts"),
@@ -153,7 +153,7 @@
 								message: Object(M.d)(n.message, n.selectedAward, i),
 								nodeId: e
 							},
-							a = Object(F.a)(e) ? L : D,
+							a = Object(F.a)(e) ? K : L,
 							c = await a(d(), {
 								input: t
 							}, o);
@@ -213,7 +213,7 @@
 				}, te = Object(a.a)(J.t), se = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(F.a)(s) ? Object(P.I)(e, {
+					} = t, r = Object(F.a)(s) ? Object(P.D)(e, {
 						postId: s
 					}) : Object(k.a)(e, {
 						commentId: s
@@ -234,11 +234,11 @@
 							awardId: u,
 							id: m
 						} = e,
-						h = Object(I.a)(a, u),
+						h = Object(_.a)(a, u),
 						w = e.awardKarmaReceived,
 						p = Object(S.j)(a),
-						k = Object(_.b)(a) || Object(N.d)(N.a.GildingFlow, !1);
-					if (Object(_.g)(a)) {
+						k = Object(I.b)(a) || Object(N.d)(N.a.GildingFlow, !1);
+					if (Object(I.g)(a)) {
 						const e = "success.gild",
 							t = {},
 							s = Object(A.a)(a, {
@@ -302,15 +302,15 @@
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const K = Date.now();
+					const D = Date.now();
 					await t(Object(i.b)(k));
-					const L = Date.now() - K;
+					const K = Date.now() - D;
 					if (q > 0) {
 						const e = Object(C.f)(s()).filter(e => j.a.has(e.dealInfo.type));
 						if (e.length) {
-							const s = Math.max(900 - L, 10),
-								r = Math.max(300 - L, 10),
-								d = Object(F.a)(m) && Object(O.n)(Object(P.I)(a, {
+							const s = Math.max(900 - K, 10),
+								r = Math.max(300 - K, 10),
+								d = Object(F.a)(m) && Object(O.n)(Object(P.D)(a, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(o.e)({
@@ -319,15 +319,15 @@
 							})), d ? s : r)
 						}
 					}
-					const D = Object(G.J)(a, {
+					const L = Object(G.J)(a, {
 						thingId: m
 					});
-					if (D && Object(x.a)(a, {
-							subredditId: D.id
-						}) && t(Object(U.a)(D.id, D.name, {
+					if (L && Object(x.a)(a, {
+							subredditId: L.id
+						}) && t(Object(U.a)(L.id, L.name, {
 							force: !0
-						})), 0 === q && D) {
-						t(Object(n.a)(D.id, m, void 0, !0));
+						})), 0 === q && L) {
+						t(Object(n.a)(L.id, m, void 0, !0));
 						const e = 399,
 							r = Object(C.d)(s()).reduce((t, s) => {
 								const r = Math.abs(s.pennies - e);
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.147b55961c649d8b6e28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.c7cff83333c7275edd56.js.map

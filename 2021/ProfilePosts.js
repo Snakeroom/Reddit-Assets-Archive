@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.038eae478ad44220d49a.js
-// Retrieved at 3/11/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.e0b899dbecea1ff35505.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["ProfilePosts", "EconHelperActions"], {
+	["ProfilePosts"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
 			e.exports = {
 				Component: "_2Qq40Mz_DMe0iARkTh8cZn",
@@ -2607,7 +2607,7 @@
 						style: t
 					}, e.children)
 				},
-				j = Object(i.b)(() => Object(d.a)(g.H, x.bb, (e, {
+				j = Object(i.b)(() => Object(d.a)(g.C, x.bb, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(g.b)(e, n) : null, (e, t, n) => ({
@@ -2854,10 +2854,10 @@
 				E = n.n(w);
 			const _ = Object(d.c)({
 					autoplayPref: p.b,
-					consumed: h.b,
-					loadTimes: h.h,
-					metadata: h.j,
-					started: h.m
+					consumed: h.a,
+					loadTimes: h.f,
+					metadata: h.h,
+					started: h.k
 				}),
 				O = Object(a.b)(_, (e, {
 					postId: t
@@ -5914,7 +5914,7 @@
 					measureScrollFPS: g.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(p.O)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage && !Object(y.a)(e, t.listingKey) ? null : Object(v.g)(e, t),
-					postsById: (e, t) => Object(w.S)(e, {
+					postsById: (e, t) => Object(w.N)(e, {
 						...t
 					}),
 					postIds: Object(o.a)((e, {
@@ -5930,7 +5930,7 @@
 								listingKey: t
 							})
 						}
-						return Object(w.F)(e, t, n, r)
+						return Object(w.A)(e, t, n, r)
 					}),
 					subredditsById: E.ab,
 					viewportDataLoaded: _.a,
@@ -6962,10 +6962,10 @@
 					return t !== a && t !== i && (!(i + n > t) && (!(t + n > a) && !((e, t, n) => {
 						const s = n[t - 1],
 							o = n[t],
-							i = o && Object(r.I)(e, {
+							i = o && Object(r.D)(e, {
 								postId: s
 							}) || null,
-							a = o && Object(r.I)(e, {
+							a = o && Object(r.D)(e, {
 								postId: o
 							}) || null;
 						return i && i.isSponsored || a && a.isSponsored
@@ -6977,7 +6977,7 @@
 				}) => {
 					const s = t.slice().sort();
 					let o = -1;
-					const i = Object(r.B)(e, {
+					const i = Object(r.w)(e, {
 							listingKey: n
 						}),
 						a = [];
@@ -7055,4 +7055,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.038eae478ad44220d49a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.e0b899dbecea1ff35505.js.map

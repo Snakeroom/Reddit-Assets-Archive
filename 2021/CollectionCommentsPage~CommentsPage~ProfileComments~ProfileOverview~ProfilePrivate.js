@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.f40bda0360713ce5a379.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.30729db3b15d0f4b92de.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, o) {
@@ -718,8 +718,8 @@
 				H = o("./src/reddit/icons/fonts/Op/index.tsx"),
 				U = o("./src/reddit/icons/fonts/Remove/index.tsx"),
 				W = o("./src/reddit/icons/fonts/Report/index.tsx"),
-				V = o("./src/reddit/icons/fonts/Spam/index.tsx"),
-				G = o("./src/reddit/icons/svgs/Automoderator/index.tsx"),
+				G = o("./src/reddit/icons/fonts/Spam/index.tsx"),
+				V = o("./src/reddit/icons/svgs/Automoderator/index.tsx"),
 				z = o("./src/reddit/icons/svgs/Cake/index.tsx"),
 				Q = o("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				J = o("./src/reddit/icons/svgs/Powerup/index.tsx"),
@@ -744,13 +744,13 @@
 				ne = x.a.wrapped(F.a, "ApproveIcon", $.a),
 				se = x.a.wrapped(R.a, "LockIcon", $.a),
 				re = x.a.div("AdminEmeritus", $.a),
-				ie = x.a.wrapped(G.a, "AutomoderatorIcon", $.a),
+				ie = x.a.wrapped(V.a, "AutomoderatorIcon", $.a),
 				ae = x.a.wrapped(J.a, "TopSupporterIcon", $.a),
 				de = x.a.wrapped(z.a, "CakeIcon", $.a),
 				ce = x.a.wrapped(Q.a, "ModeratorIcon", $.a),
 				le = x.a.wrapped(U.a, "RemoveIcon", $.a),
 				me = x.a.wrapped(W.a, "ReportIcon", $.a),
-				pe = x.a.wrapped(V.a, "SpamIcon", $.a),
+				pe = x.a.wrapped(G.a, "SpamIcon", $.a),
 				ue = x.a.wrapped(H.a, "OpIcon", $.a),
 				be = x.a.wrapped(D.a, "ContractorIcon", $.a),
 				xe = x.a.a("MetaLink", $.a),
@@ -805,7 +805,7 @@
 					topSupporterTooltipId: Oe("CommentTopMeta--TopSupporter--"),
 					hasBadges: (e, {
 						comment: t
-					}) => !!Object(w.p)(e, t.subredditId, t.authorId).length,
+					}) => !!Object(w.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
 						const o = Object(q.I)(e, {
 							commentId: t.comment.id
@@ -870,8 +870,8 @@
 					openPowerupsModal: H,
 					openRemovalReasonModal: U,
 					removeTooltipId: W,
-					renderContractorBadge: V,
-					renderTopSupporterBadge: G,
+					renderContractorBadge: G,
+					renderTopSupporterBadge: V,
 					renderedInOverlay: z,
 					reportTooltipId: Q,
 					spamTooltipId: J,
@@ -949,8 +949,8 @@
 						K(Object(f.j)("comment")), H()
 					},
 					opTooltipId: R,
-					renderContractorBadge: V,
-					renderTopSupporterBadge: G,
+					renderContractorBadge: G,
+					renderTopSupporterBadge: V,
 					subredditDisplayText: Z,
 					topSupporterTooltipId: q,
 					isInIcons2020: j
@@ -1979,51 +1979,31 @@
 				p = o("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = o("./src/reddit/connectors/PostViewable/index.ts"),
 				b = o("./src/reddit/models/Media/index.ts"),
-				x = o("./src/reddit/selectors/media.ts"),
-				h = o("./src/reddit/selectors/posts.ts"),
-				f = o("./src/reddit/selectors/video.ts"),
-				E = o("./src/lib/classNames/index.ts"),
-				v = o("./src/lib/objectSelector/index.ts"),
-				C = o("./src/higherOrderComponents/withClickTracking/index.tsx"),
-				k = o("./src/reddit/components/PostContainer/index.m.less"),
-				_ = o.n(k);
-			const g = Object(u.a)(() => Object(r.c)({
-					basePixelMetadata: Object(v.a)((e, {
+				x = o("./src/reddit/selectors/posts.ts"),
+				h = o("./src/lib/classNames/index.ts"),
+				f = o("./src/lib/objectSelector/index.ts"),
+				E = o("./src/higherOrderComponents/withClickTracking/index.tsx"),
+				v = o("./src/reddit/components/PostContainer/index.m.less"),
+				C = o.n(v);
+			const k = Object(u.a)(() => Object(r.c)({
+					basePixelMetadata: Object(f.a)((e, {
 						post: t
-					}) => Object(h.b)(e, t.id)),
+					}) => Object(x.b)(e, t.id)),
 					clickTrackingId: (e, {
 						post: t
 					}) => t.id,
-					currentIndex: (e, {
-						post: t
-					}) => Object(x.b)(e, t.id),
-					buffering: (e, {
-						post: t
-					}) => Object(f.a)(e, {
-						postId: t.id
-					}),
-					playing: (e, {
-						post: t
-					}) => Object(f.g)(e, {
-						postId: t.id
-					}),
-					continuousViewingStartedAt: (e, {
-						post: t
-					}) => Object(f.c)(e, {
-						postId: t.id
-					}),
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(h.i)(e, {
+					}) => Object(x.i)(e, {
 						postId: t.id
 					})
 				})),
-				O = e => {
-					const t = Object(C.d)(e.target, e.currentTarget),
-						o = Object(C.b)(e.target, e.currentTarget, C.a.buttons);
+				_ = e => {
+					const t = Object(E.d)(e.target, e.currentTarget),
+						o = Object(E.b)(e.target, e.currentTarget, E.a.buttons);
 					return "subreddit" !== t && o
 				};
-			class T extends s.a.Component {
+			class g extends s.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -2033,51 +2013,46 @@
 						basePixelMetadata: t,
 						children: o,
 						className: n,
-						currentIndex: r,
-						imageGalleryCurrentItem: c,
-						makePostContainerId: l,
-						post: p,
-						onClick: u,
-						onPostContentClick: x,
-						sendEvent: h,
+						imageGalleryCurrentItem: r,
+						makePostContainerId: c,
+						post: l,
+						onClick: p,
+						onPostContentClick: u,
+						sendEvent: x,
 						style: f,
-						ref: v
-					} = this.props, C = s.a.createElement("div", {
+						ref: E
+					} = this.props, v = s.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
 						style: f,
-						ref: v,
+						ref: E,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: o => {
-							if (!this.cancelClick && o.button < 2 && (e(() => u && u(o, p, t, c))(o), x && O(o) && x(o, p)), p.id && c) {
+							if (!this.cancelClick && o.button < 2 && (e(() => p && p(o, l, t, r))(o), u && _(o) && u(o, l)), l.id && r) {
 								const {
 									source: e
-								} = Object(i.t)(p, c);
-								if (e && e.outboundUrl) {
-									const t = r + 1;
-									h(Object(d.c)(p.id, e.outboundUrl, t))
-								}
+								} = Object(i.t)(l, r);
+								e && e.outboundUrl && x(Object(d.c)(l.id, e.outboundUrl))
 							}
 						},
-						className: Object(E.a)(_.a.WrappedPost, n, `Post ${p.id}`, {
-							promotedlink: p.isSponsored
+						className: Object(h.a)(C.a.WrappedPost, n, `Post ${l.id}`, {
+							promotedlink: l.isSponsored
 						}),
-						id: l ? l(p.id) : p.id,
-						tabIndex: -1,
-						"data-testid": p.id
-					}, o), k = !!p.media && p.media.type === b.o.VIDEO;
-					return p.isSponsored || k ? s.a.createElement(a.a, {
-						post: p,
+						id: c ? c(l.id) : l.id,
+						tabIndex: -1
+					}, o), k = !!l.media && l.media.type === b.o.VIDEO;
+					return l.isSponsored || k ? s.a.createElement(a.a, {
+						post: l,
 						trackDisplay: !0
-					}, C) : p.media && Object(b.E)(p.media) ? s.a.createElement(m, {
-						postId: p.id
-					}, C) : C
+					}, v) : l.media && Object(b.E)(l.media) ? s.a.createElement(m, {
+						postId: l.id
+					}, v) : v
 				}
 			}
-			t.a = g(Object(C.c)(Object(p.c)(T)))
+			t.a = k(Object(E.c)(Object(p.c)(g)))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -3237,4 +3212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.f40bda0360713ce5a379.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.30729db3b15d0f4b92de.js.map

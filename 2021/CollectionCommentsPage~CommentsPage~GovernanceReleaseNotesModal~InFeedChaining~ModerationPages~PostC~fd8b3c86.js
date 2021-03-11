@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.59794633baca2c9fa105.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.0ea33e160844cfb6ad6d.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -584,9 +584,8 @@
 						te(e), G(u.a(A, t)), G(u.d(A, t - 1)), se()
 					}, [H, F, se, te, G, A, $]),
 					ae = Object(i.useCallback)(() => {
-						const e = p[F] && p[F].outboundUrl,
-							t = F + 1;
-						e && G(u.c(A, e, t))
+						const e = p[F] && p[F].outboundUrl;
+						e && G(u.c(A, e))
 					}, [G, A, F, p]);
 				m(v.a.ArrowLeft, K.current, oe), m(v.a.ArrowRight, K.current, ne);
 				const re = p[F] && p[F].caption,
@@ -1091,7 +1090,7 @@
 					subredditOrProfileDisplayText: (e, t) => Object($.k)(e, t),
 					subredditOrProfile: (e, {
 						post: t
-					}) => Object(q.U)(e, {
+					}) => Object(q.P)(e, {
 						postId: t.id
 					}),
 					isEditing: (e, {
@@ -1954,4 +1953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.59794633baca2c9fa105.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.0ea33e160844cfb6ad6d.js.map

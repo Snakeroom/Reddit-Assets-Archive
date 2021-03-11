@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.2c6d284c0561f4a143cd.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.c139ebff963e7c6af010.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -838,7 +838,7 @@
 					flairData: et.d,
 					isApiPending: Ce.a,
 					moderatorPermissions: Ye.i,
-					posts: tt.L,
+					posts: tt.G,
 					selectedItems: Ce.g
 				}),
 				Pt = Object(d.b)(It, e => ({
@@ -985,12 +985,13 @@
 						hk: "4uf9Ow"
 					})))
 				}, "ModToolsBulkOperations", gt.a)),
-				Lt = s("./src/reddit/components/ModQueueList/index.m.less"),
-				wt = s.n(Lt);
-			const Tt = e => Object(P.a)(e.id),
-				Nt = p.a.div("ItemContainer", wt.a),
-				Ft = p.a.div("ButtonContainer", wt.a),
-				Rt = Object(S.t)({
+				Lt = s("./src/reddit/contexts/Post/index.tsx"),
+				wt = s("./src/reddit/components/ModQueueList/index.m.less"),
+				Tt = s.n(wt);
+			const Nt = e => Object(P.a)(e.id),
+				Ft = p.a.div("ItemContainer", Tt.a),
+				Rt = p.a.div("ButtonContainer", Tt.a),
+				Mt = Object(S.t)({
 					currentProfileName: S.h,
 					isCommentPermalink: S.v,
 					isCommentsPage: S.w,
@@ -1000,7 +1001,7 @@
 					queryParams: S.T,
 					pageLayer: e => e
 				}),
-				Mt = Object(c.c)({
+				Bt = Object(c.c)({
 					currentPage: e => e.platform.currentPage,
 					isModQueueListingPending: Ce.c,
 					loadMore: Ce.e,
@@ -1009,7 +1010,7 @@
 					selectedItems: Ce.g,
 					subredditId: (e, t) => t.subredditName ? Object(Ee.F)(e, t.subredditName) : null
 				}),
-				Bt = Object(d.b)(Mt, e => ({
+				At = Object(d.b)(Bt, e => ({
 					addSelectedItems: t => e(Object(u.a)({
 						ids: t
 					})),
@@ -1022,19 +1023,19 @@
 					fireAdPixelsOfType: (t, s) => e(Object(h.u)(t, s)),
 					openPost: t => e(Object(h.E)(t))
 				})),
-				At = e => e.page ? parseInt(e.page, 10) : fe.b,
-				Dt = e => At(e) + 1,
-				Vt = e => Math.max(fe.b, At(e) - 1),
-				Qt = e => {
+				Dt = e => e.page ? parseInt(e.page, 10) : fe.b,
+				Vt = e => Dt(e) + 1,
+				Qt = e => Math.max(fe.b, Dt(e) - 1),
+				Ut = e => {
 					const t = e.modQueueListingItems ? e.modQueueListingItems.length : 0;
-					return At(e) === fe.b ? t : 25 * Vt(e) + t
+					return Dt(e) === fe.b ? t : 25 * Qt(e) + t
 				},
-				Ut = e => At(e) === fe.b ? fe.b : 25 * Vt(e) + 1;
-			var Wt;
+				Wt = e => Dt(e) === fe.b ? fe.b : 25 * Qt(e) + 1;
+			var Kt;
 			! function(e) {
 				e.comments = "comments", e.hasReports = "hasReports", e.posts = "posts", e.postsWithFlair = "postsWithFlair", e.selfPosts = "selfPosts", e.spamFiltered = "spamFiltered"
-			}(Wt || (Wt = {}));
-			class Kt extends l.a.Component {
+			}(Kt || (Kt = {}));
+			class Xt extends l.a.Component {
 				constructor() {
 					super(...arguments), this.isCheckboxSelected = e => i()(this.props.selectedItems, e), this.isAllSelected = e => {
 						const t = n()(e, this.props.selectedItems);
@@ -1045,22 +1046,22 @@
 						const t = [];
 						if (!this.props.modQueueListingItems || !this.props.modQueueListingItems.length) return t;
 						switch (e) {
-							case Wt.posts:
+							case Kt.posts:
 								this.props.modQueueListingItems.forEach(e => {
 									Object(P.a)(e.id) && t.push(e.id)
 								});
 								break;
-							case Wt.comments:
+							case Kt.comments:
 								this.props.modQueueListingItems.forEach(e => {
 									Object(I.a)(e.id) && t.push(e.id)
 								});
 								break;
-							case Wt.hasReports:
+							case Kt.hasReports:
 								this.props.modQueueListingItems.forEach(e => {
 									e.numReports && e.numReports > 0 && t.push(e.id)
 								});
 								break;
-							case Wt.postsWithFlair:
+							case Kt.postsWithFlair:
 								this.props.modQueueListingItems.forEach(e => {
 									if (Object(P.a)(e.id)) {
 										const s = e;
@@ -1068,7 +1069,7 @@
 									}
 								});
 								break;
-							case Wt.selfPosts:
+							case Kt.selfPosts:
 								this.props.modQueueListingItems.forEach(e => {
 									if (Object(P.a)(e.id)) {
 										const s = e;
@@ -1076,7 +1077,7 @@
 									}
 								});
 								break;
-							case Wt.spamFiltered:
+							case Kt.spamFiltered:
 								this.props.modQueueListingItems.forEach(e => {
 									e.isSpam && t.push(e.id)
 								})
@@ -1088,13 +1089,13 @@
 							o = !!e.loadMore && !!e.modQueueListingItems && 25 === e.modQueueListingItems.length;
 						return e.modQueueListingItems && e.modQueueListingItems.length && (t = e.modQueueListingItems.map(t => {
 							const s = `modqueue-item-[layout: ${e.layout}]-[id: ${t.id}]`;
-							if (Tt(t)) {
+							if (Nt(t)) {
 								const o = t,
 									n = Object(_.b)({
 										layout: e.layout,
 										post: o
 									});
-								return l.a.createElement(Nt, {
+								return l.a.createElement(Ft, {
 									key: s
 								}, l.a.createElement(n, {
 									availableWidth: O.g,
@@ -1119,8 +1120,10 @@
 								const s = he[t];
 								return void 0 === s ? (Object(j.a)(void 0, `Could not find component for layout ${t}.`), be) : s
 							}(0, e.layout);
-							return l.a.createElement(Nt, {
+							return l.a.createElement(Ft, {
 								key: s
+							}, l.a.createElement(Lt.a, {
+								postId: t.postId
 							}, l.a.createElement(o, {
 								commentId: t.id,
 								hasReports: Object(b.c)(t),
@@ -1130,16 +1133,16 @@
 								showModTools: !0,
 								toggleCheckbox: () => this.toggleSelectedItems(this.isCheckboxSelected(t.id), [t.id]),
 								trackClick: e.sendEventWithName
-							}))
-						})), l.a.createElement("div", null, l.a.createElement("div", null, t), l.a.createElement(Ft, null, l.a.createElement(k, {
+							})))
+						})), l.a.createElement("div", null, l.a.createElement("div", null, t), l.a.createElement(Rt, null, l.a.createElement(k, {
 							prevButtonEnabled: s,
 							prevTo: Object(m.a)(`${e.origin}${e.currentPage.url}`, {
-								page: Vt(e),
+								page: Qt(e),
 								after: null
 							}),
 							nextButtonEnabled: o,
 							nextTo: Object(m.a)(`${e.origin}${e.currentPage.url}`, {
-								page: Dt(e),
+								page: Vt(e),
 								after: e.loadMore
 							})
 						})))
@@ -1156,19 +1159,19 @@
 						props: e
 					} = this, t = e.modQueueListingItems && e.modQueueListingItems.length ? e.modQueueListingItems.map(e => e.id) : [], s = e.selectedItems.length;
 					return l.a.createElement("div", null, l.a.createElement(jt, {
-						endNumItems: Qt(e),
+						endNumItems: Ut(e),
 						numSelected: s,
 						numShowing: t.length,
 						isAnyItemSelected: this.isAnyItemSelected(),
 						isSelectAll: this.isAllSelected(t),
-						startNumItems: Ut(e),
+						startNumItems: Wt(e),
 						subredditId: e.subredditId,
 						toggleSelectAll: () => this.toggleSelectedItems(this.isAllSelected(t), t),
 						toggleSelectByFilter: this.toggleSelectByFilter
 					}), e.modQueueListingItems && e.modQueueListingItems.length ? this.renderItems(e) : e.modQueueListingItems ? l.a.createElement(we, null) : e.isModQueueListingPending ? l.a.createElement(Re, null) : null)
 				}
 			}
-			t.a = Rt(Bt(Kt))
+			t.a = Mt(At(Xt))
 		},
 		"./src/reddit/components/PaginationButtons/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2148,4 +2151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.2c6d284c0561f4a143cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.c139ebff963e7c6af010.js.map

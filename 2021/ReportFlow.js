@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.1d92e60b268c8cca2532.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.84931658e89cb780a7a9.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -44,7 +44,7 @@
 			})), n.d(t, "h", (function() {
 				return h
 			})), n.d(t, "g", (function() {
-				return R
+				return C
 			}));
 			var o = n("./src/lib/makeActionCreator/index.ts"),
 				s = n("./src/graphql/operations/FetchBlockedRedditorsInfo.json"),
@@ -66,7 +66,7 @@
 				b = Object(o.a)(c),
 				f = Object(o.a)(u),
 				x = Object(o.a)(p),
-				R = () => async (e, t, {
+				C = () => async (e, t, {
 					gqlContext: n
 				}) => {
 					const o = t(),
@@ -179,8 +179,8 @@
 				b = n("./src/reddit/models/Post/index.ts"),
 				f = n("./src/reddit/models/Toast/index.ts"),
 				x = n("./src/reddit/selectors/posts.ts"),
-				R = n("./src/reddit/selectors/user.ts"),
-				C = n("./src/lib/initializeClient/installReducer.ts"),
+				C = n("./src/reddit/selectors/user.ts"),
+				R = n("./src/lib/initializeClient/installReducer.ts"),
 				_ = n("./node_modules/redux/es/redux.js"),
 				O = n("./src/reddit/actions/reportFlow/constants.ts");
 			const w = {};
@@ -314,7 +314,7 @@
 						return e
 				}
 			};
-			var j = (e = !1, t) => {
+			var N = (e = !1, t) => {
 				switch (t.type) {
 					case O.g:
 						return t.payload;
@@ -324,11 +324,11 @@
 						return e
 				}
 			};
-			var N = Object(_.c)({
+			var j = Object(_.c)({
 				api: y,
 				openedFromModalPage: F,
 				postOrCommentId: k,
-				userIsMod: j,
+				userIsMod: N,
 				rulesCategory: (e = null, t) => {
 					switch (t.type) {
 						case O.b:
@@ -337,9 +337,9 @@
 					return e
 				}
 			});
-			Object(C.a)({
+			Object(R.a)({
 				features: {
-					reportFlow: N
+					reportFlow: j
 				}
 			});
 			const A = Object(s.a)(O.e),
@@ -385,17 +385,17 @@
 						p = Object(m.a)(e),
 						f = Object(h.a)(e);
 					if (!f && !p) return;
-					const C = p ? u.features.comments.models[e] : u.posts.models[e];
-					if (!C) return;
-					if (!Object(R.K)(s())) return o(Object(r.j)()), void o(Object(a.k)({
+					const R = p ? u.features.comments.models[e] : u.posts.models[e];
+					if (!R) return;
+					if (!Object(C.K)(s())) return o(Object(r.j)()), void o(Object(a.k)({
 						actionSource: a.a.Report,
-						redirectUrl: C.permalink
+						redirectUrl: R.permalink
 					}));
-					o(Object(c.y)(C.author));
-					const _ = Object(x.U)(u, {
+					o(Object(c.y)(R.author));
+					const _ = Object(x.P)(u, {
 							postId: p ? u.features.comments.models[e].postId : u.posts.models[e].id
 						}),
-						O = f && Object(b.n)(C) || p && W(C, u);
+						O = f && Object(b.n)(R) || p && W(R, u);
 					O || u.reportRules.sitewideRules && u.reportRules.sitewideRules.length || o(Object(i.d)()), !O || u.reportRules.liveStreamingRules && u.reportRules.liveStreamingRules.length || o(Object(i.c)()), _ && o(Object(l.o)(_.name, _.type)), o(M(e)), o(U(!!t)), n && o(B(n)), _ && o(K(_.name))
 				}, q = Object(s.a)(O.g), K = e => async (t, n, {
 					apiContext: o
@@ -486,9 +486,9 @@
 			})), n.d(t, "b", (function() {
 				return x
 			})), n.d(t, "c", (function() {
-				return R
-			})), n.d(t, "a", (function() {
 				return C
+			})), n.d(t, "a", (function() {
+				return R
 			})), n.d(t, "g", (function() {
 				return E
 			}));
@@ -537,7 +537,7 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, x = "USER_UNBLOCK__PENDING", R = "USER_UNBLOCK__SUCCESS", C = "USER_UNBLOCK__FAILED", _ = Object(s.a)(x), O = Object(s.a)(R), w = Object(s.a)(C), E = e => async (t, n, {
+				}, x = "USER_UNBLOCK__PENDING", C = "USER_UNBLOCK__SUCCESS", R = "USER_UNBLOCK__FAILED", _ = Object(s.a)(x), O = Object(s.a)(C), w = Object(s.a)(R), E = e => async (t, n, {
 					apiContext: s
 				}) => {
 					const c = n(),
@@ -614,7 +614,7 @@
 						[c.a.mIsOpen]: t
 					})
 				}, n)), "ArticleWrap", c.a),
-				R = p.a.wrapped(({
+				C = p.a.wrapped(({
 					className: e,
 					isOpen: t,
 					...n
@@ -623,7 +623,7 @@
 						[c.a.mIsOpen]: t
 					})
 				}, n)), "SectionHead", c.a),
-				C = p.a.div("Article", c.a);
+				R = p.a.div("Article", c.a);
 			class _ extends s.a.Component {
 				constructor() {
 					super(...arguments), this.handleClick = () => {
@@ -631,12 +631,12 @@
 					}
 				}
 				render() {
-					return s.a.createElement("div", null, s.a.createElement(h, null, this.props.open ? s.a.createElement(b, null) : s.a.createElement(f, null), s.a.createElement(R, {
+					return s.a.createElement("div", null, s.a.createElement(h, null, this.props.open ? s.a.createElement(b, null) : s.a.createElement(f, null), s.a.createElement(C, {
 						onClick: this.handleClick,
 						isOpen: this.props.open
 					}, this.props.title), s.a.createElement(x, {
 						isOpen: this.props.open
-					}, this.props.open ? s.a.createElement(C, null, this.props.children) : null)))
+					}, this.props.open ? s.a.createElement(R, null, this.props.children) : null)))
 				}
 			}
 			t.a = Object(r.b)(null, e => ({
@@ -882,8 +882,8 @@
 				b = n("./src/higherOrderComponents/asTooltip.tsx"),
 				f = n("./src/lib/classNames/index.ts"),
 				x = n("./src/reddit/controls/Button/index.tsx"),
-				R = n("./src/reddit/controls/Dropdown/index.tsx"),
-				C = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				C = n("./src/reddit/controls/Dropdown/index.tsx"),
+				R = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				_ = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				O = n("./src/reddit/components/ReportFlow/ReusableComponents/index.m.less"),
 				w = n.n(O);
@@ -902,10 +902,10 @@
 				v = c.a.div("Description", w.a),
 				T = c.a.wrapped(x.l, "CloseButton", w.a),
 				y = c.a.div("RadioOptionsSectionHeader", w.a),
-				I = c.a.wrapped(C.b, "DropdownRow", w.a),
+				I = c.a.wrapped(R.b, "DropdownRow", w.a),
 				F = c.a.div("PickerWrapper", w.a),
 				k = c.a.div("SelectARuleLabel", w.a),
-				j = ({
+				N = ({
 					className: e,
 					isChosen: t,
 					...n
@@ -914,10 +914,10 @@
 						[w.a.isChosen]: t
 					})
 				}, n)),
-				N = Object(b.a)(R.a),
-				A = c.a.wrapped(N, "Dropdown", w.a),
+				j = Object(b.a)(C.a),
+				A = c.a.wrapped(j, "Dropdown", w.a),
 				P = c.a.wrapped(_.b, "DropdownTriangle", w.a),
-				L = c.a.wrapped(C.b, "Row", w.a);
+				L = c.a.wrapped(R.b, "Row", w.a);
 			var D = n("./src/reddit/components/ReportFlow/FileAComplaint/index.m.less"),
 				M = n.n(D);
 			const U = c.a.div("LinkHolder", M.a),
@@ -1051,7 +1051,7 @@
 					}, r.a.createElement(L, {
 						displayText: d ? d.reasonTextToShow : "",
 						id: pe
-					}), r.a.createElement(P, null), r.a.createElement(j, {
+					}), r.a.createElement(P, null), r.a.createElement(N, {
 						isChosen: !!d
 					}, o.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -1130,13 +1130,13 @@
 				}))(he),
 				fe = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
 				xe = n("./src/reddit/selectors/subreddit.ts"),
-				Re = n("./src/reddit/components/ReportFlow/SubredditRulesPicker/index.m.less"),
-				Ce = n.n(Re);
+				Ce = n("./src/reddit/components/ReportFlow/SubredditRulesPicker/index.m.less"),
+				Re = n.n(Ce);
 			const _e = "ReportFlow--SubredditRules",
 				Oe = "Custom response",
-				we = c.a.wrapped(A, "Dropdown", Ce.a),
-				Ee = c.a.wrapped(I, "DropdownRow", Ce.a),
-				ge = c.a.wrapped(fe.i, "FreeFormTextArea", Ce.a),
+				we = c.a.wrapped(A, "Dropdown", Re.a),
+				Ee = c.a.wrapped(I, "DropdownRow", Re.a),
+				ge = c.a.wrapped(fe.i, "FreeFormTextArea", Re.a),
 				Se = Object(i.c)({
 					dropdownIsOpen: Object(ue.b)(_e),
 					freeFormReports: xe.E
@@ -1168,7 +1168,7 @@
 					}, r.a.createElement(L, {
 						displayText: n,
 						id: _e
-					}), r.a.createElement(P, null), r.a.createElement(j, {
+					}), r.a.createElement(P, null), r.a.createElement(N, {
 						isChosen: !!n
 					}, o.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -1211,8 +1211,8 @@
 				Ie = n("./src/reddit/models/Subreddit/index.ts"),
 				Fe = n("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
 				ke = n.n(Fe);
-			const je = c.a.wrapped(x.i, "SubmitButton", ke.a);
-			class Ne extends r.a.Component {
+			const Ne = c.a.wrapped(x.i, "SubmitButton", ke.a);
+			class je extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						rulesSequence: new ye.a
@@ -1286,7 +1286,7 @@
 						onClick: e.onClose
 					}, o.fbt._("Close", null, {
 						hk: "4gbyAA"
-					})), r.a.createElement(je, {
+					})), r.a.createElement(Ne, {
 						onClick: e.onSubmit,
 						disabled: !e.ruleIsChosen
 					}, e.submitButtonText ? e.submitButtonText : o.fbt._("Submit", null, {
@@ -1294,7 +1294,7 @@
 					}))))
 				}
 			}
-			var Ae = Ne,
+			var Ae = je,
 				Pe = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				Le = n("./src/reddit/components/ReportFlow/Title/index.m.less"),
 				De = n.n(Le);
@@ -1329,7 +1329,7 @@
 					rulesCategory: e => e.features.reportFlow.rulesCategory,
 					post: (e, {
 						postId: t
-					}) => t ? Object(ze.I)(e, {
+					}) => t ? Object(ze.D)(e, {
 						postId: t
 					}) : null,
 					reportedPending: e => e.features.reportFlow.api.pending,
@@ -1337,7 +1337,7 @@
 					sitewideRules: e => e.reportRules.sitewideRules,
 					subredditOrProfile: (e, {
 						postId: t
-					}) => t ? Object(ze.U)(e, {
+					}) => t ? Object(ze.P)(e, {
 						postId: t
 					}) : null,
 					subredditRules: e => e.subreddits.rules,
@@ -1527,11 +1527,11 @@
 				b = n("./src/reddit/actions/userBlocks.ts"),
 				f = n("./src/graphql/operations/ReportComment.json"),
 				x = n("./src/lib/makeGqlRequest/index.ts");
-			const R = (e, t) => Object(x.a)(e, {
+			const C = (e, t) => Object(x.a)(e, {
 				...f,
 				variables: t
 			});
-			var C = n("./src/reddit/endpoints/messages/index.ts"),
+			var R = n("./src/reddit/endpoints/messages/index.ts"),
 				_ = n("./src/graphql/operations/ReportPost.json");
 			const O = (e, t) => Object(x.a)(e, {
 				..._,
@@ -1547,9 +1547,9 @@
 				I = n("./src/reddit/selectors/user.ts"),
 				F = n("./src/lib/lessComponent.tsx"),
 				k = n("./src/reddit/components/ReportFlow/index.m.less"),
-				j = n.n(k);
-			const N = F.a.div("ReportLoaderWrapper", j.a),
-				A = F.a.img("LoadingIcon", j.a),
+				N = n.n(k);
+			const j = F.a.div("ReportLoaderWrapper", N.a),
+				A = F.a.img("LoadingIcon", N.a),
 				P = "2.0";
 			var L;
 			! function(e) {
@@ -1558,7 +1558,7 @@
 			const D = Object(c.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(y.I)(e, {
+					}) => t ? Object(y.D)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -1579,7 +1579,7 @@
 							postId: s
 						} = t, r = o ? Object(T.a)(e, {
 							commentId: o
-						}) : null, a = s ? Object(y.I)(e, {
+						}) : null, a = s ? Object(y.D)(e, {
 							postId: s
 						}) : null;
 						(r ? r.author : a ? a.author : null) || t.author;
@@ -1707,7 +1707,7 @@
 									commentId: r,
 									...u
 								};
-								p = () => R(n(), {
+								p = () => C(n(), {
 									input: t
 								});
 								break;
@@ -1716,7 +1716,7 @@
 									messageId: r,
 									...u
 								};
-								p = () => Object(C.a)(n(), {
+								p = () => Object(R.a)(n(), {
 									input: o
 								});
 								break;
@@ -1775,7 +1775,7 @@
 						onOpenCtlFlow: this.onOpenCtlFlow,
 						onBlockAuthor: () => this.onBlockAuthor(a),
 						onResize: this.props.onResize
-					}) : l.a.createElement(N, null, l.a.createElement(A, {
+					}) : l.a.createElement(j, null, l.a.createElement(A, {
 						src: e ? `${o.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${o.a.assetPath}/img/loader_2orbit_loop.gif`,
 						alt: "Loading"
 					}))
@@ -1953,9 +1953,9 @@
 			})), n.d(t, "a", (function() {
 				return f
 			})), n.d(t, "b", (function() {
-				return R
-			})), n.d(t, "c", (function() {
 				return C
+			})), n.d(t, "c", (function() {
+				return R
 			}));
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
@@ -2008,7 +2008,7 @@
 						[c.a.mInvalid]: e.state === b.Invalid
 					})
 				}, e.state === b.Valid && s.a.createElement(l.a, null), e.state === b.Invalid && s.a.createElement(h, null, "!")))),
-				R = e => {
+				C = e => {
 					const {
 						backgroundColorState: t,
 						className: n,
@@ -2034,7 +2034,7 @@
 						onKeyDown: d
 					})))
 				},
-				C = e => {
+				R = e => {
 					const {
 						backgroundColorState: t,
 						className: n,
@@ -2159,9 +2159,9 @@
 			})), n.d(t, "e", (function() {
 				return x
 			})), n.d(t, "b", (function() {
-				return R
-			})), n.d(t, "c", (function() {
 				return C
+			})), n.d(t, "c", (function() {
+				return R
 			})), n.d(t, "d", (function() {
 				return _
 			})), n.d(t, "j", (function() {
@@ -2182,8 +2182,8 @@
 				b = o.a.div("FormGroupDescription", r.a),
 				f = o.a.div("FormItem", r.a),
 				x = o.a.h3("FormElementTitle", r.a),
-				R = o.a.div("FormElementDescription", r.a),
-				C = o.a.div("FormElementError", r.a),
+				C = o.a.div("FormElementDescription", r.a),
+				R = o.a.div("FormElementError", r.a),
 				_ = o.a.div("FormElementSubGroup", r.a),
 				O = o.a.li("FormListItem", r.a)
 		},
@@ -2227,9 +2227,9 @@
 			})), n.d(t, "i", (function() {
 				return x
 			})), n.d(t, "h", (function() {
-				return R
-			})), n.d(t, "g", (function() {
 				return C
+			})), n.d(t, "g", (function() {
+				return R
 			}));
 			var o = n("./src/lib/lessComponent.tsx"),
 				s = n("./src/reddit/controls/Input/ModalInput.tsx"),
@@ -2246,8 +2246,8 @@
 				b = o.a.wrapped(r.a, "Checkbox", c.a),
 				f = o.a.wrapped(a.a, "CheckboxSelected", c.a),
 				x = o.a.textarea("Textarea", c.a),
-				R = o.a.label("StyledLabel", c.a),
-				C = o.a.input("StyledFileInput", c.a)
+				C = o.a.label("StyledLabel", c.a),
+				R = o.a.input("StyledFileInput", c.a)
 		},
 		"./src/reddit/contexts/ApiContext.tsx": function(e, t, n) {
 			"use strict";
@@ -2460,18 +2460,6 @@
 				data: {
 					raw_json: 1
 				}
-			})
-		},
-		"./src/reddit/endpoints/moderator/moderatingSubreddits.ts": function(e, t, n) {
-			"use strict";
-			var o = n("./src/lib/constants/index.ts"),
-				s = n("./src/lib/makeApiRequest/index.ts"),
-				r = n("./src/lib/omitHeaders/index.ts"),
-				a = n("./src/reddit/constants/headers.ts");
-			t.a = async e => Object(s.a)(Object(r.a)(e, [a.a]), {
-				endpoint: `${e.apiUrl}/subreddit_permissions`,
-				method: o.cb.GET,
-				traceRequestName: "get_subreddit_permissions"
 			})
 		},
 		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, n) {
@@ -2793,4 +2781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.1d92e60b268c8cca2532.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.84931658e89cb780a7a9.js.map

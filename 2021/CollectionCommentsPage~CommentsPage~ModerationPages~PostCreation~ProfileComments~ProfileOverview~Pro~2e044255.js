@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.0d0613d779b315a7766e.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.f8e0b0dd8031384ca5f1.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -371,7 +371,7 @@
 						style: t
 					}, e.children)
 				},
-				T = Object(i.b)(() => Object(c.a)(f.H, E.bb, (e, {
+				T = Object(i.b)(() => Object(c.a)(f.C, E.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(f.b)(e, s) : null, (e, t, s) => ({
@@ -618,10 +618,10 @@
 				_ = s.n(v);
 			const O = Object(c.c)({
 					autoplayPref: p.b,
-					consumed: h.b,
-					loadTimes: h.h,
-					metadata: h.j,
-					started: h.m
+					consumed: h.a,
+					loadTimes: h.f,
+					metadata: h.h,
+					started: h.k
 				}),
 				j = Object(a.b)(O, (e, {
 					postId: t
@@ -818,7 +818,7 @@
 				J = Object(a.c)({
 					isPinned: (e, {
 						post: t
-					}) => Object(v.r)(e, {
+					}) => Object(v.o)(e, {
 						postId: t.id
 					}),
 					modModeEnabled: h.Q
@@ -2483,47 +2483,49 @@
 		"./src/reddit/helpers/trackers/gallery.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return a
-			})), s.d(t, "c", (function() {
 				return c
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "c", (function() {
 				return d
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "b", (function() {
 				return l
+			})), s.d(t, "a", (function() {
+				return u
 			}));
 			var n = s("./src/reddit/constants/tracking.ts"),
 				r = s("./src/reddit/helpers/parseUrl.ts"),
-				o = s("./src/reddit/selectors/telemetry.ts");
-			const i = (e, t, s) => ({
-					gallery: o.gallery(e, t, s),
-					post: o.post(e, t),
-					...o.defaults(e)
+				o = s("./src/reddit/selectors/media.ts"),
+				i = s("./src/reddit/selectors/telemetry.ts");
+			const a = (e, t, s) => ({
+					gallery: i.gallery(e, t, s),
+					post: i.post(e, t),
+					...i.defaults(e)
 				}),
-				a = (e, t) => s => ({
-					...i(s, e, t),
+				c = (e, t) => s => ({
+					...a(s, e, t),
 					action: n.c.VIEW,
 					noun: "media",
 					source: "gallery",
-					media: o.media(s, e)
+					media: i.media(s, e)
 				}),
-				c = (e, t, s) => a => {
-					const c = Object(r.a)(t);
+				d = (e, t) => s => {
+					const c = Object(r.a)(t),
+						d = Object(o.b)(s, e) + 1;
 					return {
-						...i(a, e, s),
+						...a(s, e, d),
 						action: n.c.CLICK,
 						noun: "outbound_url",
 						source: "gallery",
 						media: {
-							...o.media(a, e),
+							...i.media(s, e),
 							outboundUrl: t,
 							outboundDomain: c ? c.hostname : void 0
 						}
 					}
 				},
-				d = (e, t) => u(e, !0, t),
-				l = (e, t) => u(e, !1, t),
-				u = (e, t, s) => r => ({
-					...i(r, e, s),
+				l = (e, t) => m(e, !0, t),
+				u = (e, t) => m(e, !1, t),
+				m = (e, t, s) => r => ({
+					...a(r, e, s),
 					action: n.c.CLICK,
 					noun: t ? "forward" : "backward",
 					source: "gallery"
@@ -2773,4 +2775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.0d0613d779b315a7766e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.f8e0b0dd8031384ca5f1.js.map

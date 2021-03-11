@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.bf3fe097955ff6a95bcc.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.dc2560c9b49c4d4c57ba.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -641,7 +641,7 @@
 					topSupporterTooltipId: Ie("CommentTopMeta--TopSupporter--"),
 					hasBadges: (e, {
 						comment: t
-					}) => !!Object(S.p)(e, t.subredditId, t.authorId).length,
+					}) => !!Object(S.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
 						const o = Object(J.I)(e, {
 							commentId: t.comment.id
@@ -2487,7 +2487,7 @@
 					blockedRedditorsPending: ye.b,
 					chatCommentLinks: xt.g,
 					isPending: xt.d,
-					liveCommentsWebsocket: Xt.G,
+					liveCommentsWebsocket: Xt.B,
 					moreCommentsLink: xt.D
 				}),
 				oo = Object(d.b)(to, (e, t) => ({
@@ -3281,4 +3281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.bf3fe097955ff6a95bcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.dc2560c9b49c4d4c57ba.js.map

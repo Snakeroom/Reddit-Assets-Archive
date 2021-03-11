@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.cdbd0712cd816671234f.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.7c5334c5464ba5f3ae25.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, i) {
@@ -1720,7 +1720,7 @@
 			const w = Object(d.a)(v.a, v.j, (e, {
 					isSponsored: t,
 					postId: i
-				}) => t && i ? Object(x.b)(e, i) : null, x.I, (e, t, i, n) => ({
+				}) => t && i ? Object(x.b)(e, i) : null, x.D, (e, t, i, n) => ({
 					allowClickTracking: e,
 					basePixelMetadata: i,
 					userId: t ? Object(_.a)(t.id) : null,
@@ -2637,4 +2637,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.cdbd0712cd816671234f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.7c5334c5464ba5f3ae25.js.map

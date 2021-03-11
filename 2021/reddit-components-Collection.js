@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.8a40629709b1ac14cd96.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.7a3405839d4dd8a691d3.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -365,9 +365,9 @@
 					galleryThumbnail: g.e,
 					isFutureEvent: g.i,
 					layout: C.O,
-					post: y.I,
+					post: y.D,
 					shouldShowCollectionPostEdits: g.s,
-					subredditOrProfile: y.U
+					subredditOrProfile: y.P
 				}), (e, {
 					collectionId: t,
 					postId: s,
@@ -413,11 +413,11 @@
 							postId: t
 						}),
 						s = o && (o.primaryPostId || o.postIds[0]);
-					return s && Object(y.I)(e, {
+					return s && Object(y.D)(e, {
 						postId: s
 					}) || null
 				},
-				post: y.I,
+				post: y.D,
 				shouldShowThumbnail: (e, {
 					postId: t
 				}) => {
@@ -725,4 +725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.8a40629709b1ac14cd96.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.7a3405839d4dd8a691d3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.7da792b625d854753905.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.c81b00d0f3c2251e8de2.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -698,17 +698,17 @@
 			})), n.d(t, "c", (function() {
 				return _
 			})), n.d(t, "d", (function() {
-				return k
+				return y
 			})), n.d(t, "e", (function() {
-				return S
+				return k
 			})), n.d(t, "f", (function() {
-				return I
+				return S
 			})), n.d(t, "g", (function() {
-				return w
+				return I
 			})), n.d(t, "h", (function() {
-				return D
+				return w
 			})), n.d(t, "i", (function() {
-				return T
+				return D
 			}));
 			var a = n("./node_modules/react/index.js"),
 				r = n.n(a),
@@ -837,18 +837,12 @@
 						} : {}
 					}
 				})),
-				C = n("./src/reddit/contexts/Post/index.tsx");
-
-			function y() {
-				const e = Object(a.useContext)(C.c);
-				if (!e) throw new Error("No Post context!");
-				return e
-			}
-			var k = e => {
+				C = n("./src/reddit/hooks/usePostContext.ts");
+			var y = e => {
 				const {
 					post: t,
 					subredditOrProfile: n
-				} = y(), s = Object(a.useMemo)(() => ({
+				} = Object(C.a)(), s = Object(a.useMemo)(() => ({
 					author: t.author,
 					approvedAtUTC: t.approvedAtUTC,
 					approvedBy: t.approvedBy,
@@ -880,12 +874,12 @@
 					data: s
 				})
 			};
-			var S = e => {
+			var k = e => {
 				const {
 					post: t,
 					subredditOrProfile: n,
 					isModerator: s
-				} = y(), i = Object(a.useMemo)(() => ({
+				} = Object(C.a)(), i = Object(a.useMemo)(() => ({
 					author: t.author,
 					isModerator: s,
 					post: {
@@ -903,11 +897,11 @@
 					data: i
 				})
 			};
-			var I = e => {
+			var S = e => {
 				const {
 					post: t,
 					subredditOrProfile: n
-				} = y(), s = Object(a.useMemo)(() => ({
+				} = Object(C.a)(), s = Object(a.useMemo)(() => ({
 					author: t.author,
 					approvedAtUTC: t.approvedAtUTC,
 					approvedBy: t.approvedBy,
@@ -936,7 +930,7 @@
 					data: s
 				})
 			};
-			var w = Object(s.b)(() => Object(i.c)({
+			var I = Object(s.b)(() => Object(i.c)({
 				subreddit: b.T
 			}))(e => r.a.createElement(h, {
 				className: e.className,
@@ -949,7 +943,7 @@
 					} : {}
 				}
 			}));
-			var D = Object(s.b)(() => Object(i.c)({
+			var w = Object(s.b)(() => Object(i.c)({
 				subredditOrProfile: (e, t) => Object(b.L)(e, {
 					identifier: t
 				})
@@ -964,7 +958,7 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var T = Object(s.b)(() => Object(i.c)({
+			var D = Object(s.b)(() => Object(i.c)({
 				subreddit: (e, {
 					subredditId: t
 				}) => t ? Object(b.T)(e, {
@@ -9136,4 +9130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.7da792b625d854753905.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.c81b00d0f3c2251e8de2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.a647930008a96f8c0d2a.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.34936df03110d53283ce.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -301,7 +301,7 @@
 			const q = Object(h.c)({
 				hasGifProduct: (e, {
 					subreddit: t
-				}) => Object(E.u)(e, t.id)
+				}) => Object(E.v)(e, t.id)
 			});
 			t.a = Object(u.c)(Object(l.b)(q, e => ({
 				showErrorToast: t => e(Object(p.e)({
@@ -498,4 +498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.a647930008a96f8c0d2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.34936df03110d53283ce.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation.40abccdcfdf3a40700fc.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation.7d81ec94b9b088b4c12d.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -985,6 +985,13 @@
 				return t.src_pseudo_letter = "(?:(?![><｜]|" + t.src_ZPCc + ")" + t.src_Any + ")", t.src_ip4 = "(?:(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)", t.src_auth = "(?:(?:(?!" + t.src_ZCc + "|[@/\\[\\]()]).)+@)?", t.src_port = "(?::(?:6(?:[0-4]\\d{3}|5(?:[0-4]\\d{2}|5(?:[0-2]\\d|3[0-5])))|[1-5]?\\d{1,4}))?", t.src_host_terminator = "(?=$|[><｜]|" + t.src_ZPCc + ")(?!-|_|:\\d|\\.-|\\.(?!$|" + t.src_ZPCc + "))", t.src_path = "(?:[/?#](?:(?!" + t.src_ZCc + "|[><｜]|[()[\\]{}.,\"'?!\\-]).|\\[(?:(?!" + t.src_ZCc + "|\\]).)*\\]|\\((?:(?!" + t.src_ZCc + "|[)]).)*\\)|\\{(?:(?!" + t.src_ZCc + '|[}]).)*\\}|\\"(?:(?!' + t.src_ZCc + '|["]).)+\\"|\\\'(?:(?!' + t.src_ZCc + "|[']).)+\\'|\\'(?=" + t.src_pseudo_letter + "|[-]).|\\.{2,3}[a-zA-Z0-9%/]|\\.(?!" + t.src_ZCc + "|[.]).|" + (e && e["---"] ? "\\-(?!--(?:[^-]|$))(?:-*)|" : "\\-+|") + "\\,(?!" + t.src_ZCc + ").|\\!(?!" + t.src_ZCc + "|[!]).|\\?(?!" + t.src_ZCc + "|[?]).)+|\\/)?", t.src_email_name = '[\\-;:&=\\+\\$,\\"\\.a-zA-Z0-9_]+', t.src_xn = "xn--[a-z0-9\\-]{1,59}", t.src_domain_root = "(?:" + t.src_xn + "|" + t.src_pseudo_letter + "{1,63})", t.src_domain = "(?:" + t.src_xn + "|(?:" + t.src_pseudo_letter + ")|(?:" + t.src_pseudo_letter + "(?:-(?!-)|" + t.src_pseudo_letter + "){0,61}" + t.src_pseudo_letter + "))", t.src_host = "(?:(?:(?:(?:" + t.src_domain + ")\\.)*" + t.src_domain + "))", t.tpl_host_fuzzy = "(?:" + t.src_ip4 + "|(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%)))", t.tpl_host_no_ip_fuzzy = "(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%))", t.src_host_strict = t.src_host + t.src_host_terminator, t.tpl_host_fuzzy_strict = t.tpl_host_fuzzy + t.src_host_terminator, t.src_host_port_strict = t.src_host + t.src_port + t.src_host_terminator, t.tpl_host_port_fuzzy_strict = t.tpl_host_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_port_no_ip_fuzzy_strict = t.tpl_host_no_ip_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_fuzzy_test = "localhost|www\\.|\\.\\d{1,3}\\.|(?:\\.(?:%TLDS%)(?:" + t.src_ZPCc + "|>|$))", t.tpl_email_fuzzy = "(^|[><｜]|\\(|" + t.src_ZCc + ")(" + t.src_email_name + "@" + t.tpl_host_fuzzy_strict + ")", t.tpl_link_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_fuzzy_strict + t.src_path + ")", t.tpl_link_no_ip_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_no_ip_fuzzy_strict + t.src_path + ")", t
 			}
 		},
+		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
+			e.exports = function(e, t) {
+				for (var n = -1, r = null == e ? 0 : e.length; ++n < r;)
+					if (!t(e[n], n, e)) return !1;
+				return !0
+			}
+		},
 		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
 			e.exports = function(e, t, n, r) {
 				var o = null == e ? 0 : e.length;
@@ -1001,6 +1008,15 @@
 			var r = n("./node_modules/lodash/_baseForOwnRight.js"),
 				o = n("./node_modules/lodash/_createBaseEach.js")(r, !0);
 			e.exports = o
+		},
+		"./node_modules/lodash/_baseEvery.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseEach.js");
+			e.exports = function(e, t) {
+				var n = !0;
+				return r(e, (function(e, r, o) {
+					return n = !!t(e, r, o)
+				})), n
+			}
 		},
 		"./node_modules/lodash/_baseExtremum.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/isSymbol.js");
@@ -1126,6 +1142,17 @@
 				return (e = o(e)) && s.test(e) ? e.replace(i, r) : e
 			}
 		},
+		"./node_modules/lodash/every.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_arrayEvery.js"),
+				o = n("./node_modules/lodash/_baseEvery.js"),
+				i = n("./node_modules/lodash/_baseIteratee.js"),
+				s = n("./node_modules/lodash/isArray.js"),
+				a = n("./node_modules/lodash/_isIterateeCall.js");
+			e.exports = function(e, t, n) {
+				var u = s(e) ? r : o;
+				return n && a(e, t, n) && (t = void 0), u(e, i(t, 3))
+			}
+		},
 		"./node_modules/lodash/filter.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_arrayFilter.js"),
 				o = n("./node_modules/lodash/_baseFilter.js"),
@@ -1213,6 +1240,16 @@
 				return o(l, 0, c).join("")
 			}
 		},
+		"./node_modules/lodash/union.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseFlatten.js"),
+				o = n("./node_modules/lodash/_baseRest.js"),
+				i = n("./node_modules/lodash/_baseUniq.js"),
+				s = n("./node_modules/lodash/isArrayLikeObject.js"),
+				a = o((function(e) {
+					return i(r(e, 1, s, !0))
+				}));
+			e.exports = a
+		},
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/toString.js"),
 				o = 0;
@@ -1220,6 +1257,18 @@
 				var t = ++o;
 				return r(e) + t
 			}
+		},
+		"./node_modules/lodash/xorWith.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_arrayFilter.js"),
+				o = n("./node_modules/lodash/_baseRest.js"),
+				i = n("./node_modules/lodash/_baseXor.js"),
+				s = n("./node_modules/lodash/isArrayLikeObject.js"),
+				a = n("./node_modules/lodash/last.js"),
+				u = o((function(e) {
+					var t = a(e);
+					return t = "function" == typeof t ? t : void 0, i(r(e, s), void 0, t)
+				}));
+			e.exports = u
 		},
 		"./node_modules/react-autosize-textarea/lib/TextareaAutosize.js": function(e, t, n) {
 			"use strict";
@@ -4136,4 +4185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.40abccdcfdf3a40700fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.7d81ec94b9b088b4c12d.js.map

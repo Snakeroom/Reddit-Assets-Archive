@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.7012de70ca019275fd30.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.1540fc6075a11033c605.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["SubredditWelcomeMessageModal", "EconHelperActions"], {
+	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
 			var n;
 			n = function() {
@@ -556,7 +556,7 @@
 						style: t
 					}, e.children)
 				},
-				k = Object(i.b)(() => Object(d.a)(x.H, g.bb, (e, {
+				k = Object(i.b)(() => Object(d.a)(x.C, g.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(x.b)(e, s) : null, (e, t, s) => ({
@@ -803,10 +803,10 @@
 				w = s.n(y);
 			const _ = Object(d.c)({
 					autoplayPref: p.b,
-					consumed: h.b,
-					loadTimes: h.h,
-					metadata: h.j,
-					started: h.m
+					consumed: h.a,
+					loadTimes: h.f,
+					metadata: h.h,
+					started: h.k
 				}),
 				j = Object(a.b)(_, (e, {
 					postId: t
@@ -1560,7 +1560,7 @@
 			})), s.d(t, "i", (function() {
 				return D
 			})), s.d(t, "e", (function() {
-				return H
+				return A
 			}));
 			var n = s("./src/lib/unicodeUtils/index.ts"),
 				r = s("./node_modules/lodash/reduce.js"),
@@ -1662,7 +1662,7 @@
 						i = n.length;
 					for (let a = 0; a < i; a++) {
 						const e = n[a];
-						o.push(e.e === p.w ? e.t : H(e, t, a))
+						o.push(e.e === p.w ? e.t : A(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
@@ -1781,7 +1781,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === p.A) n.push(A(r, o));
+						if (r.e === p.A) n.push(H(r, o));
 						else if (r.e === p.x) n.push(a.a.createElement(O.a, {
 							key: o
 						}, D(r.c, t, s)));
@@ -1797,14 +1797,14 @@
 									media: e
 								}))
 							}
-						} else n.push(H(r, s, o))
+						} else n.push(A(r, s, o))
 					}
 					return n
 				},
-				H = (e, t, s) => {
+				A = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
-							const n = A({
+							const n = H({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -1837,7 +1837,7 @@
 							}, e.t)
 					}
 				},
-				A = (e, t) => {
+				H = (e, t) => {
 					const {
 						f: s,
 						t: r
@@ -2448,4 +2448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.7012de70ca019275fd30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.1540fc6075a11033c605.js.map

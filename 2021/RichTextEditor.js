@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.932b8e74d348ad42f716.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.493aaae19f02075bb1df.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -948,7 +948,7 @@
 							commentsPageKey: t,
 							draftKey: o
 						}));
-						const s = Object(U.I)(b(), {
+						const s = Object(U.D)(b(), {
 							postId: e
 						});
 						u(Object(l.u)(s, f.a.CommentSubmitted))
@@ -2676,7 +2676,7 @@
 					draft: ke.i,
 					userCanUseGifs: (e, t) => {
 						const o = Object(ve.o)(e, t);
-						return Object(Oe.r)(e, o ? o.id : void 0, t.parentCommentId)
+						return Object(Oe.s)(e, o ? o.id : void 0, t.parentCommentId)
 					}
 				}), (e, t) => ({
 					cancelModalToggled: () => e(Object(_e.i)(Object(he.a)(t.draftKey)))
@@ -4510,4 +4510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.932b8e74d348ad42f716.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.493aaae19f02075bb1df.js.map

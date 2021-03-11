@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.9d0086d187e8a485e856.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.abbcaf27971d7fca800f.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -794,10 +794,10 @@
 				poll: te.e,
 				pollId: te.a,
 				pollReward: te.d,
-				post: re.I,
+				post: re.D,
 				resultsByVoters: te.c,
 				resultsByVotingPower: te.b,
-				subredditOrProfile: re.U
+				subredditOrProfile: re.P
 			});
 			t.default = Object(i.b)(xe)(Ce)
 		},
@@ -1329,4 +1329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.9d0086d187e8a485e856.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.abbcaf27971d7fca800f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f47e9b80bda0df01ada8.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.46b6df7c5c5b14d9df39.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -68,92 +68,91 @@
 						currentUser: t,
 						handleVote: s,
 						isExpanded: n,
-						isMeta: a,
-						inSubredditOrProfile: E,
-						eventFactory: N,
-						first: L,
-						flairStyleTemplate: M,
-						formatTitle: D,
-						hostPostId: B,
-						isActionBarAnimationEnabled: z,
-						isCheckboxSelected: q,
-						isCurrentUserProfilePost: $,
-						isFrontpage: K,
-						isGalleryTileLayoutDefault: G,
-						isLoggedIn: Z,
-						isOverlay: J,
-						imageGalleryCurrentItem: Q,
-						moderatorPermissions: Y,
-						modModeEnabled: X,
-						onClickPost: ee,
-						onIgnoreReports: te,
-						onOpenReportsDropdown: se,
-						poll: ne,
-						post: oe,
-						postId: re,
-						redditStyle: ie,
-						scrollerItemRef: ae,
-						showBulkActionCheckbox: de,
-						showEditFlair: ce,
-						showMedia: le,
-						subredditOrProfile: me,
-						toggleCheckbox: pe,
-						userIsOp: ue,
-						shouldShowGalleryTileOption: he
-					} = this.props, be = ie ? void 0 : M, xe = this.props.crosspost || void 0, ve = Object(R.a)(Y), fe = Object(S.a)(Y), ge = Object(T.a)(Y), Ee = X && R.a, Ce = !!oe.media && oe.media.type === I.o.RTJSON, ye = ue && Ce, Oe = E && !le, we = !!oe.media && Object(I.G)(oe.media), _e = {
-						flairStyleTemplate: be,
-						post: oe,
-						inSubredditOrProfile: E,
-						isCurrentUserProfilePost: $,
-						isOverlay: J,
-						shouldShowSubscribeButton: !(K && Z),
-						subredditOrProfile: me
-					}, Pe = Object(r.t)(oe, Q), {
-						source: ke
-					} = Pe, Ie = o.a.createElement(g.a, {
-						className: Object(i.a)(F.a.classicPostStyles, W.a.postContainer, Object(A.a)(this.props), L ? W.a.mFirst : void 0, e),
-						isOverlay: J,
+						inSubredditOrProfile: a,
+						eventFactory: E,
+						first: N,
+						flairStyleTemplate: L,
+						formatTitle: M,
+						hostPostId: D,
+						isActionBarAnimationEnabled: B,
+						isCheckboxSelected: z,
+						isCurrentUserProfilePost: q,
+						isFrontpage: $,
+						isGalleryTileLayoutDefault: K,
+						isLoggedIn: G,
+						isOverlay: Z,
+						imageGalleryCurrentItem: J,
+						moderatorPermissions: Q,
+						modModeEnabled: Y,
+						onClickPost: X,
+						onIgnoreReports: ee,
+						onOpenReportsDropdown: te,
+						poll: se,
+						post: ne,
+						postId: oe,
+						redditStyle: re,
+						scrollerItemRef: ie,
+						showBulkActionCheckbox: ae,
+						showEditFlair: de,
+						showMedia: ce,
+						subredditOrProfile: le,
+						toggleCheckbox: me,
+						userIsOp: pe,
+						shouldShowGalleryTileOption: ue
+					} = this.props, he = re ? void 0 : L, be = this.props.crosspost || void 0, xe = Object(R.a)(Q), ve = Object(S.a)(Q), fe = Object(T.a)(Q), ge = Y && R.a, Ee = !!ne.media && ne.media.type === I.o.RTJSON, Ce = pe && Ee, ye = a && !ce, Oe = !!ne.media && Object(I.G)(ne.media), we = {
+						flairStyleTemplate: he,
+						post: ne,
+						inSubredditOrProfile: a,
+						isCurrentUserProfilePost: q,
+						isOverlay: Z,
+						shouldShowSubscribeButton: !($ && G),
+						subredditOrProfile: le
+					}, _e = Object(r.t)(ne, J), {
+						source: Pe
+					} = _e, ke = o.a.createElement(g.a, {
+						className: Object(i.a)(F.a.classicPostStyles, W.a.postContainer, Object(A.a)(this.props), N ? W.a.mFirst : void 0, e),
+						isOverlay: Z,
 						style: {
 							...Object(A.d)(this.props),
 							...Object(A.b)(this.props.flairStyleTemplate)
 						},
-						post: oe,
-						onClick: ee,
-						eventFactory: N
+						post: ne,
+						onClick: X,
+						eventFactory: E
 					}, o.a.createElement(O.a, {
-						model: oe,
+						model: ne,
 						handleVote: s,
-						showBulkActionCheckbox: de,
-						isCheckboxSelected: q,
-						toggleCheckbox: pe,
-						flairStyleTemplate: be,
-						redditStyle: ie,
-						subreddit: me,
-						isActionBarAnimationEnabled: z,
-						postId: re
+						showBulkActionCheckbox: ae,
+						isCheckboxSelected: z,
+						toggleCheckbox: me,
+						flairStyleTemplate: he,
+						redditStyle: re,
+						subreddit: le,
+						isActionBarAnimationEnabled: B,
+						postId: oe
 					}), o.a.createElement(f.a, {
 						"data-click-id": "background",
-						flairStyleTemplate: be
+						flairStyleTemplate: he
 					}, o.a.createElement(p.a, {
 						className: W.a.eventMeta,
-						post: oe
+						post: ne
 					}), o.a.createElement("div", {
 						className: W.a.mainBody
 					}, o.a.createElement("div", {
-						className: Oe ? W.a.expandoContainer : W.a.thumbnailContainer
-					}, !Oe && o.a.createElement(j.a, {
+						className: ye ? W.a.expandoContainer : W.a.thumbnailContainer
+					}, !ye && o.a.createElement(j.a, {
 						className: W.a.classicThumbnail,
-						crosspost: xe && oe,
-						isMeta: a,
-						post: xe || oe,
-						redditStyle: ie,
-						templatePlaceholderImage: be && be.postPlaceholderImage,
-						removeLink: we
+						crosspost: be && ne,
+						isMeta: ne.isMeta,
+						post: be || ne,
+						redditStyle: re,
+						templatePlaceholderImage: he && he.postPlaceholderImage,
+						removeLink: Oe
 					}), o.a.createElement(u.a, {
-						crosspost: xe,
+						crosspost: be,
 						className: W.a.rightExpando,
 						isExpanded: !!n,
-						post: oe,
+						post: ne,
 						useMediaIcons: !1
 					})), o.a.createElement("div", {
 						className: W.a.content,
@@ -162,71 +161,71 @@
 							paddingBottom: `${U}px`
 						}
 					}, o.a.createElement(w.c, {
-						className: ne ? W.a.titleWithPoll : void 0,
-						format: D,
-						poll: ne,
-						post: oe,
-						redditStyle: ie,
+						className: se ? W.a.titleWithPoll : void 0,
+						format: M,
+						poll: se,
+						post: ne,
+						redditStyle: re,
 						size: w.b.Medium,
-						titleColor: be && be.postTitleColor,
-						isOverlay: J
-					}, oe.source && !xe && o.a.createElement(k.a, {
-						href: oe.source.url,
-						isSponsored: oe.isSponsored,
-						postId: oe.id,
-						source: oe.source
-					}, Object(d.a)(oe))), o.a.createElement(C.a, V({
+						titleColor: he && he.postTitleColor,
+						isOverlay: Z
+					}, ne.source && !be && o.a.createElement(k.a, {
+						href: ne.source.url,
+						isSponsored: ne.isSponsored,
+						postId: ne.id,
+						source: ne.source
+					}, Object(d.a)(ne))), o.a.createElement(C.a, V({
 						key: "PostMeta"
-					}, _e)), X && ve && Object(v.c)(oe) && o.a.createElement(x.a, {
-						onIgnoreReports: te,
-						reportable: oe
+					}, we)), Y && xe && Object(v.c)(ne) && o.a.createElement(x.a, {
+						onIgnoreReports: ee,
+						reportable: ne
 					}), o.a.createElement("div", {
 						className: W.a.spacer
-					}), oe.isSponsored && ke && ke.url && o.a.createElement(c.a, {
+					}), ne.isSponsored && Pe && Pe.url && o.a.createElement(c.a, {
 						className: W.a.adLinkWrapper
 					}, o.a.createElement(l.a, {
-						post: oe,
-						adLinkContent: Pe
+						post: ne,
+						adLinkContent: _e
 					})), o.a.createElement("div", {
 						className: W.a.flatlistContainer
 					}, o.a.createElement(u.a, {
 						className: W.a.leftExpando,
-						crosspost: xe,
+						crosspost: be,
 						isExpanded: !!n,
-						post: oe,
+						post: ne,
 						useMediaIcons: !1
 					}), o.a.createElement(m.a, {
 						className: W.a.horizontalVotes,
 						compact: !1,
-						flairStyleTemplate: be,
-						model: oe,
+						flairStyleTemplate: he,
+						model: ne,
 						onVoteClick: s
 					}), o.a.createElement(h.a, {
 						className: W.a.flatlistSeparator
 					}), o.a.createElement(h.c, {
 						className: W.a.flatlist,
 						currentUser: t,
-						hasModFlairPerms: fe,
-						hasModPostPerms: ve,
-						hasModFullPerms: ge,
-						hostPostId: B,
-						isActionBarAnimationEnabled: z,
-						isOverlay: !!J,
-						modModeEnabled: X,
-						onIgnoreReports: te,
-						onOpenReportsDropdown: se,
-						post: oe,
-						showEditPost: ye,
-						showEditFlair: ce,
-						tooltipType: J ? _.c.Lightbox : void 0,
+						hasModFlairPerms: ve,
+						hasModPostPerms: xe,
+						hasModFullPerms: fe,
+						hostPostId: D,
+						isActionBarAnimationEnabled: B,
+						isOverlay: !!Z,
+						modModeEnabled: Y,
+						onIgnoreReports: ee,
+						onOpenReportsDropdown: te,
+						post: ne,
+						showEditPost: Ce,
+						showEditFlair: de,
+						tooltipType: Z ? _.c.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(y.h)({
-							editPost: !Ee,
-							save: !Ee,
-							hide: !Ee,
-							report: !Ee
+							editPost: !ge,
+							save: !ge,
+							hide: !ge,
+							report: !ge
 						})
-					})), o.a.createElement(b.d, null))), H(oe, ae, n, he, G)));
-					return o.a.createElement(P.b, null, Ie)
+					})), o.a.createElement(b.d, null))), H(ne, ie, n, ue, K)));
+					return o.a.createElement(P.b, null, ke)
 				}
 			}
 			const H = (e, t, s, n, r) => s ? e.crosspostRootId ? o.a.createElement("div", {
@@ -503,12 +502,12 @@
 					modModeEnabled: U.Q,
 					postIsLocked: (e, {
 						comment: t
-					}) => Object(Q.D)(e, {
+					}) => Object(Q.y)(e, {
 						postId: t.postId
 					}),
 					postPermalink: (e, {
 						comment: t
-					}) => Object(Q.H)(e, {
+					}) => Object(Q.C)(e, {
 						postId: t.postId
 					}),
 					reportFlowIsOpen: (e, {
@@ -520,7 +519,7 @@
 					subreddit: U.q,
 					subredditOrProfile: (e, {
 						comment: t
-					}) => Object(Q.U)(e, {
+					}) => Object(Q.P)(e, {
 						postId: t.postId
 					}),
 					reportingRevampEnabled: X.a
@@ -1318,14 +1317,15 @@
 				h = s("./src/reddit/constants/componentSizes.ts"),
 				b = s("./src/reddit/helpers/getClickInfo.ts"),
 				x = s("./src/reddit/helpers/isComment.ts"),
-				v = s("./src/lib/LRUCache/index.ts"),
-				f = s("./src/telemetry/index.ts"),
-				g = s("./src/telemetry/models/Timer.ts"),
-				E = s("./src/reddit/components/PostList/index.m.less"),
-				C = s.n(E);
+				v = s("./src/reddit/contexts/Post/index.tsx"),
+				f = s("./src/lib/LRUCache/index.ts"),
+				g = s("./src/telemetry/index.ts"),
+				E = s("./src/telemetry/models/Timer.ts"),
+				C = s("./src/reddit/components/PostList/index.m.less"),
+				y = s.n(C);
 
-			function y() {
-				return (y = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -1333,47 +1333,47 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = 500,
-				w = new v.a(O),
-				_ = new v.a(O),
-				P = {
+			const w = 500,
+				_ = new f.a(w),
+				P = new f.a(w),
+				k = {
 					LARGE: 1,
 					MEDIUM: 1,
 					CLASSIC: 3,
 					COMPACT: 5
 				},
-				k = (e, t, s, n, o, r) => {
+				I = (e, t, s, n, o, r) => {
 					const i = `entered-${e}-${t}-${s?`last-${n}-${o}`:""}`;
-					let a = w.get(i);
+					let a = _.get(i);
 					return void 0 === a && (a = () => {
 						s && r.onBottomViewed(n, o), r.trackOnPostEnteredViewport(e, t)
-					}, w.set(i, a)), a
+					}, _.set(i, a)), a
 				},
-				I = (e, t) => {
+				j = (e, t) => {
 					const s = `click-${e}`;
-					let n = _.get(s);
+					let n = P.get(s);
 					return void 0 === n && (n = (e, s) => {
 						s.isSponsored && t.fireAdPixelsOfType(s, c.a.Click), s.isSponsored && s.source && s.source.outboundUrl ? Object(d.d)(s.source.outboundUrl, d.c.BLANK) : t.openPost({
 							postOrComment: s,
 							clickInfo: Object(b.a)(e)
 						})
-					}, _.set(s, n)), n
+					}, P.set(s, n)), n
 				};
-			class j extends i.a.Component {
+			class N extends i.a.Component {
 				constructor() {
-					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new v.a(O), this.updateScrollerRef = e => {
+					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new f.a(w), this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
 					}
 				}
 				UNSAFE_componentWillMount() {
-					this.timerId && f.c.cancel(this.timerId), this.props.itemIds.length && (this.timerId = f.c.start())
+					this.timerId && g.c.cancel(this.timerId), this.props.itemIds.length && (this.timerId = g.c.start())
 				}
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.timerId) {
-						const e = f.c.end(this.timerId);
-						setTimeout(() => Object(f.b)(a.l.Redesign, {
+						const e = g.c.end(this.timerId);
+						setTimeout(() => Object(g.b)(a.l.Redesign, {
 							type: "mount",
 							component: "overviewChronoList",
 							duration: e
@@ -1381,13 +1381,13 @@
 					}
 				}
 				UNSAFE_componentWillUpdate(e) {
-					this.timerId && f.c.cancel(this.timerId), e.itemIds.length && (this.timerId = f.c.start()), (e.listingKey !== this.props.listingKey || e.itemIds.length !== this.props.itemIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
+					this.timerId && g.c.cancel(this.timerId), e.itemIds.length && (this.timerId = g.c.start()), (e.listingKey !== this.props.listingKey || e.itemIds.length !== this.props.itemIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
 				}
 				componentDidUpdate(e) {
-					if (this.checkAndSendScreenview(), this.timerId && f.c.has(this.timerId)) {
-						const e = f.c.end(this.timerId);
+					if (this.checkAndSendScreenview(), this.timerId && g.c.has(this.timerId)) {
+						const e = g.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(f.b)(a.l.Redesign, {
+						setTimeout(() => Object(g.b)(a.l.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "overviewChronoList"
@@ -1395,7 +1395,7 @@
 					}
 				}
 				componentWillUnmount() {
-					this.timerId && f.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
+					this.timerId && g.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
 				}
 				isListLongEnough() {
 					const e = this.scrollerRef && Array.from(this.scrollerRef.children),
@@ -1408,7 +1408,7 @@
 						listingKey: t,
 						viewportDataLoaded: s
 					} = this.props;
-					return f.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
+					return g.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
 				}
 				checkAndSendScreenview() {
 					const {
@@ -1417,8 +1417,8 @@
 						sendEvent: s
 					} = this.props;
 					if (!this.shouldSendScreenview()) return;
-					const n = f.c.end(e);
-					setTimeout(() => s(t(n, g.TimerType.InApp)), 0)
+					const n = g.c.end(e);
+					setTimeout(() => s(t(n, E.TimerType.InApp)), 0)
 				}
 				showPlaceholder() {
 					const {
@@ -1458,7 +1458,7 @@
 						const {
 							inSubredditOrProfile: t,
 							itemIdToPostId: p
-						} = this.props, u = p[e], h = `overview-chrono-list-item-[layout: ${r}]-[itemId: ${e}]`, b = k(u, r, s, a, d, this.props), x = {
+						} = this.props, u = p[e], h = `overview-chrono-list-item-[layout: ${r}]-[itemId: ${e}]`, b = I(u, r, s, a, d, this.props), x = {
 							key: h,
 							eventFactory: c,
 							inSubredditOrProfile: t,
@@ -1468,15 +1468,17 @@
 							itemId: e,
 							last: s,
 							layout: r,
-							onClickPost: I(e, this.props),
+							onClickPost: j(e, this.props),
 							postId: u
-						}, v = this.props.itemComponent;
+						}, f = this.props.itemComponent;
 						m = {
 							estHeight: this.props.estimateItemHeight(e, r, n),
 							id: e,
 							isFocusable: !1,
 							trackOnEnteredViewport: b,
-							render: e => i.a.createElement(v, y({}, x, e))
+							render: e => i.a.createElement(v.a, {
+								postId: x.postId
+							}, i.a.createElement(f, O({}, x, e)))
 						}, this.scrollChildCache.set(l, m)
 					}
 					return m
@@ -1496,7 +1498,7 @@
 						onTryAgain: n
 					} = this.props;
 					return i.a.createElement("div", {
-						className: C.a.placeholder
+						className: y.a.placeholder
 					}, i.a.createElement(m.a, {
 						className: t,
 						isLoading: !e,
@@ -1514,11 +1516,11 @@
 						onLoadMore: n
 					} = this.props;
 					return i.a.createElement("div", {
-						className: C.a.placeholder
+						className: y.a.placeholder
 					}, i.a.createElement(l.a, {
 						isLoading: !!t,
 						layout: s,
-						countOverride: P[s]
+						countOverride: k[s]
 					}), !!e && i.a.createElement(p.a, {
 						apiError: e,
 						onTryAgain: n
@@ -1554,7 +1556,7 @@
 					}, r), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
-			t.a = j
+			t.a = N
 		},
 		"./src/reddit/components/ProfileNavMenu/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2469,12 +2471,8 @@
 					isActive: b.j,
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.k,
-					isExpanded: b.m,
+					isExpanded: b.l,
 					isLoggedIn: x.K,
-					isMeta: (e, {
-						postId: t
-					}) => Object(b.q)(e, t),
-					imageGalleryCurrentItem: b.i,
 					moderatorPermissions: u.h,
 					modModeEnabled: c.Q,
 					poll: (e, t) => {
@@ -2700,4 +2698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f47e9b80bda0df01ada8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.46b6df7c5c5b14d9df39.js.map

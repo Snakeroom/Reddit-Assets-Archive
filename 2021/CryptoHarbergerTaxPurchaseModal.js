@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.6b362b27f59e8202f4fc.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.48f9233cc425b1cdd57d.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -108,11 +108,11 @@
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return j
+				return O
 			})), r.d(t, "c", (function() {
-				return T
+				return P
 			})), r.d(t, "a", (function() {
-				return C
+				return M
 			}));
 			var n = r("./node_modules/react/index.js"),
 				a = r.n(n),
@@ -140,31 +140,44 @@
 				}),
 				g = r("./src/reddit/components/Badges/UserDisplay/index.m.less"),
 				E = r.n(g);
-			const y = "add-custom-badge-tooltip",
-				w = 100,
-				N = 2 * w;
-			class j extends a.a.Component {
+
+			function y() {
+				return (y = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var r = arguments[t];
+						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const w = "add-custom-badge-tooltip",
+				N = 100,
+				j = 2 * N;
+			class O extends a.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, w)), this.mouseOverTooltip = e
+						}, N)), this.mouseOverTooltip = e
 					}, this.handleMouseLeave = () => {
 						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
 							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
-						}, N)
+						}, j)
 					}
 				}
 				render() {
-					if (this.props.usePlaceholder && !this.props.badges.length) return a.a.createElement("img", {
+					const {
+						badges: e
+					} = this.props;
+					if (this.props.usePlaceholder && !e.length) return a.a.createElement("img", {
 						className: Object(c.a)(E.a.image, this.props.className),
 						src: `${i.a.assetPath}/img/badges/placeholder.png`
 					});
-					const e = `${y}-${this.props.uniqueIdentifier}`;
+					const t = `${w}-${this.props.uniqueIdentifier}`;
 					return a.a.createElement(n.Fragment, null, this.props.showAddCustom && a.a.createElement("div", {
 						className: E.a.wrapper,
-						id: e,
-						onMouseEnter: () => this.handleMouseEnter(e),
+						id: t,
+						onMouseEnter: () => this.handleMouseEnter(t),
 						onMouseLeave: () => this.handleMouseLeave()
 					}, a.a.createElement("button", {
 						className: E.a.addCustomLink,
@@ -175,10 +188,10 @@
 						className: E.a.badgeHovercard,
 						subredditId: this.props.subredditId,
 						targetPosition: ["left", "bottom"],
-						tooltipId: e,
+						tooltipId: t,
 						tooltipPosition: ["left", "top"],
 						onHideTooltip: () => this.props.onHideTooltip()
-					})), Object(b.a)(this.props.badges).map(e => {
+					})), Object(b.a)(e).map(e => {
 						const t = Object(f.d)(24, 24, e),
 							r = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
 						return a.a.createElement(n.Fragment, {
@@ -213,36 +226,49 @@
 					}))
 				}
 			}
-			const O = Object(o.c)({
-					badges: (e, {
+			const k = [],
+				_ = Object(o.c)({
+					badgeIds: (e, {
 						subredditId: t,
 						userId: r
 					}) => {
-						return ((e.users.appliedBadges[r] || {})[t] || []).map(t => e.badges.models[t]).filter(Boolean)
+						var n;
+						return (null === (n = e.users.appliedBadges[r]) || void 0 === n ? void 0 : n[t]) || k
 					},
+					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				k = Object(o.c)({
-					badges: (e, {
+				T = Object(o.c)({
+					badgeIds: (e, {
 						subredditId: t
 					}) => {
-						const r = e.user.account;
-						if (r) {
-							return ((e.users.appliedBadges[r.id] || {})[t] || []).map(t => e.badges.models[t]).filter(Boolean)
-						}
-						return []
+						var r;
+						const n = e.user.account;
+						return n && (null === (r = e.users.appliedBadges[n.id]) || void 0 === r ? void 0 : r[t]) || k
 					},
+					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				_ = e => ({
+				C = e => ({
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenUploadDialog: () => e(Object(d.j)())
-				}),
-				T = Object(s.b)(O, _)(j),
-				C = Object(s.b)(k, _)(j)
+				});
+
+			function I(e) {
+				const {
+					badgeIds: t,
+					allBadges: r,
+					...n
+				} = e, s = t.map(e => r[e]).filter(Boolean);
+				return a.a.createElement(O, y({
+					badges: s
+				}, n))
+			}
+			const P = Object(s.b)(_, C)(I),
+				M = Object(s.b)(T, C)(I)
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -585,16 +611,16 @@
 					}))))))
 				})),
 				I = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/index.m.less"),
-				M = r.n(I);
+				P = r.n(I);
 
-			function P(e) {
+			function M(e) {
 				return a.a.createElement("div", {
-					className: Object(i.a)(M.a.container, e.className)
+					className: Object(i.a)(P.a.container, e.className)
 				}, a.a.createElement(C, {
 					subredditId: e.subreddit.id,
 					subredditName: e.subreddit.name
 				}), a.a.createElement(w, {
-					className: M.a.controls,
+					className: P.a.controls,
 					subredditId: e.subreddit.id,
 					onPurchase: e.onPurchase
 				}))
@@ -828,7 +854,7 @@
 						className: te.a.title
 					}, re._("Buy Banner", null, {
 						hk: "PL5xv"
-					})), this.state.display === ne.Info && a.a.createElement(P, {
+					})), this.state.display === ne.Info && a.a.createElement(M, {
 						subreddit: t,
 						onPurchase: () => this.setState({
 							display: ne.Purchase
@@ -1858,4 +1884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.6b362b27f59e8202f4fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.48f9233cc425b1cdd57d.js.map

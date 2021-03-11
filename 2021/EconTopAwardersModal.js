@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d41634a770f0017a6dfd.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d2e04f50b8cde7146321.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -265,9 +265,9 @@
 						onCtaClick: c
 					}))) : null
 				},
-				G = t("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				S = t("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
-				D = t.n(S);
+				D = t("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				G = t("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
+				S = t.n(G);
 			var V = function(e) {
 					const {
 						showScore: a,
@@ -276,31 +276,31 @@
 						rank: s
 					} = e, o = t && !t.redditor.profile, c = t ? t.redditor.name : "—";
 					return r.a.createElement("div", {
-						className: Object(d.a)(n, D.a.winner, D.a[`winner${s}`], {
-							[D.a.winnerPlaceholder]: !t
+						className: Object(d.a)(n, S.a.winner, S.a[`winner${s}`], {
+							[S.a.winnerPlaceholder]: !t
 						})
 					}, r.a.createElement("div", {
-						className: D.a.iconContainer
+						className: S.a.iconContainer
 					}, r.a.createElement("div", {
-						className: D.a.iconWithBorder
+						className: S.a.iconWithBorder
 					}, t && r.a.createElement(y.a, {
-						className: D.a.icon,
+						className: S.a.icon,
 						iconUrl: t.redditor.icon ? t.redditor.icon.url : void 0,
 						isNSFW: !!t.redditor.profile && t.redditor.profile.isNsfw,
 						userName: c
 					})), r.a.createElement("div", {
-						className: D.a.rank
+						className: S.a.rank
 					}, s)), r.a.createElement("h3", {
-						className: D.a.name
+						className: S.a.name
 					}, t && !o ? r.a.createElement(T.a, {
 						user: c,
 						tooltipId: `topawarderwinner-userhovercard--${c}`,
 						sendHoverCardEvent: O.a,
-						wrapperClassName: D.a.hoverCardWrapper
+						wrapperClassName: S.a.hoverCardWrapper
 					}, c) : c), t && a && r.a.createElement("div", {
-						className: D.a.score
-					}, r.a.createElement(G.a, {
-						className: D.a.coinIcon
+						className: S.a.score
+					}, r.a.createElement(D.a, {
+						className: S.a.coinIcon
 					}), t.score))
 				},
 				X = t("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
@@ -350,7 +350,7 @@
 					pending: n,
 					post: null
 				};
-				const s = Object(f.I)(e, {
+				const s = Object(f.D)(e, {
 						postId: a
 					}),
 					o = Object(w.b)(e, a),
@@ -641,4 +641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d41634a770f0017a6dfd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d2e04f50b8cde7146321.js.map

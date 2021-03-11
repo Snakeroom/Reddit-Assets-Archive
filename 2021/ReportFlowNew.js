@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.56afa23920d016208b89.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.4b29dd8b2d24c36b6b23.js
+// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -292,8 +292,8 @@
 				x = o("./src/reddit/models/Toast/index.ts"),
 				y = o("./src/reddit/models/WhitelistAndBlocked.ts"),
 				F = o("./src/reddit/selectors/commentSelector.ts"),
-				I = o("./src/reddit/selectors/posts.ts"),
-				v = o("./src/reddit/selectors/user.ts"),
+				v = o("./src/reddit/selectors/posts.ts"),
+				I = o("./src/reddit/selectors/user.ts"),
 				E = o("./src/lib/lessComponent.tsx"),
 				S = o("./src/reddit/components/ReportFlow/index.m.less"),
 				A = o.n(S);
@@ -307,7 +307,7 @@
 			const N = Object(l.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(I.I)(e, {
+					}) => t ? Object(v.D)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -328,13 +328,13 @@
 							postId: s
 						} = t, n = r ? Object(F.a)(e, {
 							commentId: r
-						}) : null, i = s ? Object(I.I)(e, {
+						}) : null, i = s ? Object(v.D)(e, {
 							postId: s
 						}) : null;
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: v.V
+					isNightmodeOn: I.V
 				}),
 				P = Object(a.b)(N, (e, {
 					timestamp: t
@@ -662,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.56afa23920d016208b89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.4b29dd8b2d24c36b6b23.js.map
