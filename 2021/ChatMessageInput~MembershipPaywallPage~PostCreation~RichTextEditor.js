@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.99729967e90061c90a60.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f9ff3aa9b298789489c0.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -1345,21 +1345,21 @@
 		"./src/reddit/components/RichTextEditor/Toolbar/index.tsx": function(t, e, n) {
 			"use strict";
 			n.d(e, "c", (function() {
-				return L
+				return D
 			})), n.d(e, "g", (function() {
-				return N
-			})), n.d(e, "f", (function() {
-				return P
-			})), n.d(e, "h", (function() {
 				return U
-			})), n.d(e, "e", (function() {
+			})), n.d(e, "f", (function() {
 				return H
-			})), n.d(e, "a", (function() {
+			})), n.d(e, "h", (function() {
 				return z
-			})), n.d(e, "d", (function() {
+			})), n.d(e, "e", (function() {
 				return V
-			})), n.d(e, "b", (function() {
+			})), n.d(e, "a", (function() {
 				return W
+			})), n.d(e, "d", (function() {
+				return q
+			})), n.d(e, "b", (function() {
+				return G
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
 				s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1393,9 +1393,17 @@
 				k = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.m.less"),
 				T = n.n(k);
 			const v = a.a.wrapped(C.a, "ImageIcon", T.a),
-				j = a.a.wrapped(O.a, "VideoIcon", T.a),
-				w = a.a.input("HiddenInput", T.a);
-			class R extends r.Component {
+				j = ({
+					isFilled: t,
+					...e
+				}) => i.a.createElement(v, e),
+				w = a.a.wrapped(O.a, "VideoIcon", T.a),
+				R = ({
+					isFilled: t,
+					...e
+				}) => i.a.createElement(w, e),
+				_ = a.a.input("HiddenInput", T.a);
+			class B extends r.Component {
 				constructor() {
 					super(...arguments), this.hiddenInputEl = null, this.onFileInputChange = t => {
 						t.stopPropagation();
@@ -1420,7 +1428,7 @@
 						c = o ? t : n
 					}
 					return i.a.createElement(y.a, {
-						Icon: o ? v : j,
+						Icon: o ? j : R,
 						active: r.isActive,
 						enabled: r.isEnabled && c,
 						tooltip: o ? s.fbt._("Add an image", null, {
@@ -1429,7 +1437,7 @@
 							hk: "2dn6oZ"
 						}),
 						onClick: this.onButtonClick
-					}, i.a.createElement(w, {
+					}, i.a.createElement(_, {
 						multiple: !0,
 						innerRef: t => this.hiddenInputEl = t,
 						onChange: this.onFileInputChange,
@@ -1439,11 +1447,11 @@
 					}))
 				}
 			}
-			var _ = n("./src/reddit/components/RichTextEditor/Toolbar/index.m.less"),
-				B = n.n(_);
+			var I = n("./src/reddit/components/RichTextEditor/Toolbar/index.m.less"),
+				A = n.n(I);
 
-			function I() {
-				return (I = Object.assign || function(t) {
+			function K() {
+				return (K = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var n = arguments[e];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (t[o] = n[o])
@@ -1451,14 +1459,14 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const A = Object(E.f)(l.a),
-				K = Object(E.f)(d.a),
-				M = t => i.a.createElement(y.a, I({}, t, {
-					tooltipContentClass: B.a.tooltip
+			const M = Object(E.f)(l.a),
+				L = Object(E.f)(d.a),
+				F = t => i.a.createElement(y.a, K({}, t, {
+					tooltipContentClass: A.a.tooltip
 				})),
-				L = a.a.div("SectionSpacer", B.a),
-				F = a.a.div("Spacer", B.a),
-				D = (t, e, n, s, r) => {
+				D = a.a.div("SectionSpacer", A.a),
+				N = a.a.div("Spacer", A.a),
+				P = (t, e, n, s, r) => {
 					const {
 						name: c,
 						Icon: a,
@@ -1468,7 +1476,7 @@
 						const {
 							style: o
 						} = t;
-						return i.a.createElement(M, {
+						return i.a.createElement(F, {
 							Icon: a,
 							active: e.styles[o].isActive,
 							enabled: e.styles[o].isEnabled,
@@ -1483,7 +1491,7 @@
 						const {
 							block: l
 						} = t;
-						return i.a.createElement(M, {
+						return i.a.createElement(F, {
 							Icon: a,
 							active: e.blocks[l].isActive,
 							enabled: e.blocks[l].isEnabled,
@@ -1496,12 +1504,12 @@
 						})
 					}
 				},
-				N = (t, e, n, o, s) => t.map(t => D(t, e, n, o, s)),
-				P = [E.b, E.e],
-				U = [E.j, E.g, E.k, E.i],
-				H = [E.d, E.l, E.h, E.a, E.c],
-				z = t => i.a.createElement(M, {
-					Icon: A,
+				U = (t, e, n, o, s) => t.map(t => P(t, e, n, o, s)),
+				H = [E.b, E.e],
+				z = [E.j, E.g, E.k, E.i],
+				V = [E.d, E.l, E.h, E.a, E.c],
+				W = t => i.a.createElement(F, {
+					Icon: M,
 					active: t.controlsState.link.isActive,
 					enabled: t.controlsState.link.isEnabled,
 					tooltip: s.fbt._("Link", null, {
@@ -1511,8 +1519,8 @@
 						t.onLinkButtonClick(), t.trackOnClick("link", !0)
 					}
 				}),
-				V = t => i.a.createElement(M, {
-					Icon: K,
+				q = t => i.a.createElement(F, {
+					Icon: L,
 					active: t.controlsState.blocks[h.l].isActive,
 					enabled: t.controlsState.blocks[h.l].isEnabled,
 					tooltip: s.fbt._("Table", null, {
@@ -1522,7 +1530,7 @@
 						t.onChange(b(t.editorState, 3, 2)), t.trackOnClick("table", !0)
 					}
 				}),
-				W = t => {
+				G = t => {
 					const {
 						className: e,
 						allowMediaUploads: n = !1,
@@ -1537,31 +1545,31 @@
 						onMarkdownButtonClick: m
 					} = t, g = Object(p.a)(s);
 					return d && Object(p.b)(g), i.a.createElement("div", {
-						className: Object(c.a)(B.a.toolbarContent, e, {
-							[B.a.isSticky]: !r
+						className: Object(c.a)(A.a.toolbarContent, e, {
+							[A.a.isSticky]: !r
 						})
-					}, N(P, g, s, a, u), i.a.createElement(z, {
+					}, U(H, g, s, a, u), i.a.createElement(W, {
 						controlsState: g,
 						trackOnClick: u,
 						onLinkButtonClick: h
-					}), N(U, g, s, a, u), i.a.createElement(L, null), N(H, g, s, a, u), i.a.createElement(L, null), i.a.createElement(V, {
+					}), U(z, g, s, a, u), i.a.createElement(D, null), U(V, g, s, a, u), i.a.createElement(D, null), i.a.createElement(q, {
 						controlsState: g,
 						editorState: s,
 						trackOnClick: u,
 						onChange: a
-					}), n && i.a.createElement(R, {
+					}), n && i.a.createElement(B, {
 						destSubreddit: o,
 						controlsState: g,
 						onClick: () => u("image_upload"),
 						onFilesInput: l,
 						type: "image"
-					}), n && i.a.createElement(R, {
+					}), n && i.a.createElement(B, {
 						destSubreddit: o,
 						controlsState: g,
 						onClick: () => u("video_upload"),
 						onFilesInput: l,
 						type: "video"
-					}), i.a.createElement(F, null), i.a.createElement(x.a, {
+					}), i.a.createElement(N, null), i.a.createElement(x.a, {
 						onClick: m
 					}))
 				}
@@ -8520,4 +8528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.99729967e90061c90a60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f9ff3aa9b298789489c0.js.map

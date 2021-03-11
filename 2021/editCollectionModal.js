@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.59d2579f1a58dfece4af.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.fada893b5b6c0ea41831.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -826,7 +826,7 @@
 			t.a = ({
 				center: e,
 				className: t,
-				sizePx: n
+				sizePx: n = 10
 			}) => a.a.createElement("div", {
 				className: Object(o.a)(i.a.loadingIcon, t, {
 					[i.a.mCentered]: e
@@ -1014,4 +1014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.59d2579f1a58dfece4af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.fada893b5b6c0ea41831.js.map

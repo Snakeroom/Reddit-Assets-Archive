@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.c0d2840066b0191ae545.js
-// Retrieved at 3/11/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.79d4afc2f292ceefcd42.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -1341,7 +1341,7 @@
 			t.a = ({
 				center: e,
 				className: t,
-				sizePx: r
+				sizePx: r = 10
 			}) => s.a.createElement("div", {
 				className: Object(n.a)(d.a.loadingIcon, t, {
 					[d.a.mCentered]: e
@@ -1500,4 +1500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.c0d2840066b0191ae545.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.79d4afc2f292ceefcd42.js.map

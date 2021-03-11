@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.07a4dded2b34abccf329.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6a6701ab55594d5375f8.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -996,7 +996,7 @@
 			t.a = ({
 				center: e,
 				className: t,
-				sizePx: r
+				sizePx: r = 10
 			}) => n.a.createElement("div", {
 				className: Object(o.a)(s.a.loadingIcon, t, {
 					[s.a.mCentered]: e
@@ -1151,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.07a4dded2b34abccf329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6a6701ab55594d5375f8.js.map

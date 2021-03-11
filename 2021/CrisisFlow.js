@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.e5db4bb6caa8e65fa349.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.4fb1fcccaa11706f8106.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -373,7 +373,7 @@
 			s.a = ({
 				center: e,
 				className: s,
-				sizePx: t
+				sizePx: t = 10
 			}) => n.a.createElement("div", {
 				className: Object(i.a)(a.a.loadingIcon, s, {
 					[a.a.mCentered]: e
@@ -466,4 +466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.e5db4bb6caa8e65fa349.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.4fb1fcccaa11706f8106.js.map

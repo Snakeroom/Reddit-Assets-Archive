@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.1e66ac4ca708d885fceb.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.4a1b979bdfd7a05e66be.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -2316,9 +2316,17 @@
 				}).apply(this, arguments)
 			}
 			const f = b.a.wrapped(l.a, "Checkmark", h.a),
-				E = b.a.wrapped(u.a, "Plus", h.a),
-				g = b.a.div("ButtonSpacer", h.a);
-			class y extends r.a.Component {
+				E = ({
+					isFilled: e,
+					...t
+				}) => r.a.createElement(f, t),
+				g = b.a.wrapped(u.a, "Plus", h.a),
+				y = ({
+					isFilled: e,
+					...t
+				}) => r.a.createElement(g, t),
+				v = b.a.div("ButtonSpacer", h.a);
+			class _ extends r.a.Component {
 				constructor(e) {
 					super(e), this.onMouseEnter = () => {
 						this.setState({
@@ -2352,7 +2360,7 @@
 							size: p,
 							userIsSubscriber: h,
 							doNotHideOtherSubscribeButtons: b,
-							getEventFactory: E,
+							getEventFactory: f,
 							onSubscriptionsRequested: g,
 							...y
 						} = this.props, v = this.state.isHovered, _ = Object(m.a)({
@@ -2364,7 +2372,7 @@
 							priority: y.shouldReverseColor ? c.b.Primary : c.b.Secondary,
 							Icon: u || !u && !v ? e ? e => r.a.createElement(d.a, x({
 								name: "checkmark"
-							}, e)) : f : void 0,
+							}, e)) : E : void 0,
 							text: !u && _,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
@@ -2386,22 +2394,22 @@
 							userIsSubscriber: h,
 							doNotHideOtherSubscribeButtons: b,
 							getEventFactory: f,
-							onSubscriptionsRequested: g,
-							...y
+							onSubscriptionsRequested: E,
+							...g
 						} = this.props, v = Object(m.a)({
 							type: s.type,
 							key: "subscribe"
 						});
 						return r.a.createElement(c.q, x({
 							className: t,
-							priority: y.shouldReverseColor ? c.b.Secondary : c.b.Primary,
+							priority: g.shouldReverseColor ? c.b.Secondary : c.b.Primary,
 							Icon: e ? e => r.a.createElement(d.a, x({
 								name: "add"
-							}, e)) : E,
+							}, e)) : y,
 							size: p || (u ? c.c.XS : c.c.S),
 							text: !u && v,
 							onClick: this.onClick
-						}, y, {
+						}, g, {
 							id: `subscribe-button-${i}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -2420,10 +2428,10 @@
 						userIsSubscriber: t,
 						doNotHideOtherSubscribeButtons: s
 					} = this.props;
-					return t ? this.state.hasJustSubscribed || s ? r.a.createElement(a.b.Consumer, null, this.renderUnsubscribeButton) : e ? null : r.a.createElement(g, null) : r.a.createElement(a.b.Consumer, null, this.renderSubscribeButton)
+					return t ? this.state.hasJustSubscribed || s ? r.a.createElement(a.b.Consumer, null, this.renderUnsubscribeButton) : e ? null : r.a.createElement(v, null) : r.a.createElement(a.b.Consumer, null, this.renderSubscribeButton)
 				}
 			}
-			t.a = Object(i.a)(Object(o.c)(y))
+			t.a = Object(i.a)(Object(o.c)(_))
 		},
 		"./src/reddit/helpers/isRemoved.ts": function(e, t, s) {
 			"use strict";
@@ -2775,4 +2783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.1e66ac4ca708d885fceb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.4a1b979bdfd7a05e66be.js.map

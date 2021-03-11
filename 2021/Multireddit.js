@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.62016d03691bf75c9d55.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.860c58667c4c1c7e75a1.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -5351,7 +5351,7 @@
 			t.a = ({
 				center: e,
 				className: t,
-				sizePx: n
+				sizePx: n = 10
 			}) => r.a.createElement("div", {
 				className: Object(o.a)(a.a.loadingIcon, t, {
 					[a.a.mCentered]: e
@@ -6921,4 +6921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.62016d03691bf75c9d55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.860c58667c4c1c7e75a1.js.map

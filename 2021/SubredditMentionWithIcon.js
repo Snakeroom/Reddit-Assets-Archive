@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.12a87d7693f404e9ff86.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.f90987276691371b7dc7.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
@@ -1200,9 +1200,17 @@
 				}).apply(this, arguments)
 			}
 			const x = h.a.wrapped(l.a, "Checkmark", p.a),
-				O = h.a.wrapped(u.a, "Plus", p.a),
-				C = h.a.div("ButtonSpacer", p.a);
-			class _ extends i.a.Component {
+				O = ({
+					isFilled: e,
+					...t
+				}) => i.a.createElement(x, t),
+				C = h.a.wrapped(u.a, "Plus", p.a),
+				_ = ({
+					isFilled: e,
+					...t
+				}) => i.a.createElement(C, t),
+				I = h.a.div("ButtonSpacer", p.a);
+			class E extends i.a.Component {
 				constructor(e) {
 					super(e), this.onMouseEnter = () => {
 						this.setState({
@@ -1236,7 +1244,7 @@
 							size: m,
 							userIsSubscriber: p,
 							doNotHideOtherSubscribeButtons: h,
-							getEventFactory: O,
+							getEventFactory: x,
 							onSubscriptionsRequested: C,
 							..._
 						} = this.props, I = this.state.isHovered, E = Object(b.a)({
@@ -1248,7 +1256,7 @@
 							priority: _.shouldReverseColor ? a.b.Primary : a.b.Secondary,
 							Icon: u || !u && !I ? e ? e => i.a.createElement(d.a, f({
 								name: "checkmark"
-							}, e)) : x : void 0,
+							}, e)) : O : void 0,
 							text: !u && E,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
@@ -1270,22 +1278,22 @@
 							userIsSubscriber: p,
 							doNotHideOtherSubscribeButtons: h,
 							getEventFactory: x,
-							onSubscriptionsRequested: C,
-							..._
+							onSubscriptionsRequested: O,
+							...C
 						} = this.props, I = Object(b.a)({
 							type: s.type,
 							key: "subscribe"
 						});
 						return i.a.createElement(a.q, f({
 							className: t,
-							priority: _.shouldReverseColor ? a.b.Secondary : a.b.Primary,
+							priority: C.shouldReverseColor ? a.b.Secondary : a.b.Primary,
 							Icon: e ? e => i.a.createElement(d.a, f({
 								name: "add"
-							}, e)) : O,
+							}, e)) : _,
 							size: m || (u ? a.c.XS : a.c.S),
 							text: !u && I,
 							onClick: this.onClick
-						}, _, {
+						}, C, {
 							id: `subscribe-button-${o}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -1304,10 +1312,10 @@
 						userIsSubscriber: t,
 						doNotHideOtherSubscribeButtons: s
 					} = this.props;
-					return t ? this.state.hasJustSubscribed || s ? i.a.createElement(c.b.Consumer, null, this.renderUnsubscribeButton) : e ? null : i.a.createElement(C, null) : i.a.createElement(c.b.Consumer, null, this.renderSubscribeButton)
+					return t ? this.state.hasJustSubscribed || s ? i.a.createElement(c.b.Consumer, null, this.renderUnsubscribeButton) : e ? null : i.a.createElement(I, null) : i.a.createElement(c.b.Consumer, null, this.renderSubscribeButton)
 				}
 			}
-			t.a = Object(o.a)(Object(r.c)(_))
+			t.a = Object(o.a)(Object(r.c)(E))
 		},
 		"./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts": function(e, t, s) {
 			"use strict";
@@ -2395,4 +2403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.12a87d7693f404e9ff86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.f90987276691371b7dc7.js.map

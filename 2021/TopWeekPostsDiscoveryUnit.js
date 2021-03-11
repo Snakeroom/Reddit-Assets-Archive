@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.7ab556e0dca37da7e97e.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.cd84b33a4c90cd306e6d.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1977,9 +1977,17 @@
 				}).apply(this, arguments)
 			}
 			const f = h.a.wrapped(d.a, "Checkmark", b.a),
-				g = h.a.wrapped(m.a, "Plus", b.a),
-				C = h.a.div("ButtonSpacer", b.a);
-			class v extends r.a.Component {
+				g = ({
+					isFilled: e,
+					...t
+				}) => r.a.createElement(f, t),
+				C = h.a.wrapped(m.a, "Plus", b.a),
+				v = ({
+					isFilled: e,
+					...t
+				}) => r.a.createElement(C, t),
+				y = h.a.div("ButtonSpacer", b.a);
+			class E extends r.a.Component {
 				constructor(e) {
 					super(e), this.onMouseEnter = () => {
 						this.setState({
@@ -2013,7 +2021,7 @@
 							size: p,
 							userIsSubscriber: b,
 							doNotHideOtherSubscribeButtons: h,
-							getEventFactory: g,
+							getEventFactory: f,
 							onSubscriptionsRequested: C,
 							...v
 						} = this.props, y = this.state.isHovered, E = Object(u.a)({
@@ -2025,7 +2033,7 @@
 							priority: v.shouldReverseColor ? c.b.Primary : c.b.Secondary,
 							Icon: m || !m && !y ? e ? e => r.a.createElement(l.a, x({
 								name: "checkmark"
-							}, e)) : f : void 0,
+							}, e)) : g : void 0,
 							text: !m && E,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
@@ -2047,22 +2055,22 @@
 							userIsSubscriber: b,
 							doNotHideOtherSubscribeButtons: h,
 							getEventFactory: f,
-							onSubscriptionsRequested: C,
-							...v
+							onSubscriptionsRequested: g,
+							...C
 						} = this.props, y = Object(u.a)({
 							type: s.type,
 							key: "subscribe"
 						});
 						return r.a.createElement(c.q, x({
 							className: t,
-							priority: v.shouldReverseColor ? c.b.Secondary : c.b.Primary,
+							priority: C.shouldReverseColor ? c.b.Secondary : c.b.Primary,
 							Icon: e ? e => r.a.createElement(l.a, x({
 								name: "add"
-							}, e)) : g,
+							}, e)) : v,
 							size: p || (m ? c.c.XS : c.c.S),
 							text: !m && y,
 							onClick: this.onClick
-						}, v, {
+						}, C, {
 							id: `subscribe-button-${i}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -2081,10 +2089,10 @@
 						userIsSubscriber: t,
 						doNotHideOtherSubscribeButtons: s
 					} = this.props;
-					return t ? this.state.hasJustSubscribed || s ? r.a.createElement(o.b.Consumer, null, this.renderUnsubscribeButton) : e ? null : r.a.createElement(C, null) : r.a.createElement(o.b.Consumer, null, this.renderSubscribeButton)
+					return t ? this.state.hasJustSubscribed || s ? r.a.createElement(o.b.Consumer, null, this.renderUnsubscribeButton) : e ? null : r.a.createElement(y, null) : r.a.createElement(o.b.Consumer, null, this.renderSubscribeButton)
 				}
 			}
-			t.a = Object(i.a)(Object(a.c)(v))
+			t.a = Object(i.a)(Object(a.c)(E))
 		},
 		"./src/reddit/helpers/trackers/gallery.ts": function(e, t, s) {
 			"use strict";
@@ -2416,4 +2424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.7ab556e0dca37da7e97e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.cd84b33a4c90cd306e6d.js.map

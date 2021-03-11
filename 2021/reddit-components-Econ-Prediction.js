@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.025e5726b28432373ce0.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.6ed3e7a97c89e8ccd89d.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(i, a, r) {
@@ -297,7 +297,7 @@
 		"./src/reddit/components/Econ/Prediction/EducationMessage/index.tsx": function(i, a, r) {
 			"use strict";
 			r.d(a, "a", (function() {
-				return c
+				return p
 			}));
 			var x = r("./node_modules/react/index.js"),
 				t = r.n(x),
@@ -309,22 +309,25 @@
 				e = r.n(s);
 			const {
 				fbt: l
-			} = r("./node_modules/fbt/lib/FbtPublic.js");
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), c = ({
+				isFilled: i,
+				...a
+			}) => t.a.createElement(o.a, a);
 
-			function c({
+			function p({
 				message: i,
 				newBadge: a,
 				onClose: r,
-				onView: s,
-				storageKey: c = m.a.nonDismissable,
+				onView: o,
+				storageKey: s = m.a.nonDismissable,
 				title: p
 			}) {
-				const h = c !== m.a.nonDismissable,
-					[f, d] = Object(k.a)(c, !h || !1),
+				const h = s !== m.a.nonDismissable,
+					[f, d] = Object(k.a)(s, !h || !1),
 					[u, y] = Object(x.useState)(!1);
 				return Object(x.useEffect)(() => {
-					f || u || !s || (s(), y(!0))
-				}, [f, u, s]), h && f ? null : t.a.createElement("div", {
+					f || u || !o || (o(), y(!0))
+				}, [f, u, o]), h && f ? null : t.a.createElement("div", {
 					className: e.a.educationMessage
 				}, t.a.createElement("div", {
 					className: e.a.titleRow
@@ -341,7 +344,7 @@
 						hk: "2UjnU"
 					}),
 					className: e.a.closeButton,
-					Icon: o.a,
+					Icon: c,
 					onClick: () => {
 						d(!0), r && r()
 					},
@@ -1535,7 +1538,7 @@
 			a.a = ({
 				center: i,
 				className: a,
-				sizePx: r
+				sizePx: r = 10
 			}) => t.a.createElement("div", {
 				className: Object(k.a)(o.a.loadingIcon, a, {
 					[o.a.mCentered]: i
@@ -1895,4 +1898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.025e5726b28432373ce0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.6ed3e7a97c89e8ccd89d.js.map

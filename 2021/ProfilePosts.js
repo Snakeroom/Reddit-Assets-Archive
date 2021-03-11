@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.7dbbe081d43e5df3250e.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.8a3cd000a666a9e609f2.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6112,7 +6112,7 @@
 			t.a = ({
 				center: e,
 				className: t,
-				sizePx: n
+				sizePx: n = 10
 			}) => r.a.createElement("div", {
 				className: Object(o.a)(a.a.loadingIcon, t, {
 					[a.a.mCentered]: e
@@ -7091,4 +7091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.7dbbe081d43e5df3250e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.8a3cd000a666a9e609f2.js.map

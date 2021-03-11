@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.aab2668306ab185c12f2.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.d95ac369ed471039c8e1.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -3821,7 +3821,7 @@
 			t.a = ({
 				center: e,
 				className: t,
-				sizePx: n
+				sizePx: n = 10
 			}) => s.a.createElement("div", {
 				className: Object(o.a)(i.a.loadingIcon, t, {
 					[i.a.mCentered]: e
@@ -8272,4 +8272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.aab2668306ab185c12f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d95ac369ed471039c8e1.js.map

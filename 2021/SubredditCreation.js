@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.a0dac94b224fa7526390.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.b6369cd11aa7b6da463f.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2916,7 +2916,7 @@
 			t.a = ({
 				center: e,
 				className: t,
-				sizePx: n
+				sizePx: n = 10
 			}) => r.a.createElement("div", {
 				className: Object(o.a)(i.a.loadingIcon, t, {
 					[i.a.mCentered]: e
@@ -3799,4 +3799,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.a0dac94b224fa7526390.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.b6369cd11aa7b6da463f.js.map

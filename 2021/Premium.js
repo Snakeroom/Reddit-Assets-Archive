@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.97e746cd42f0c1870c29.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.591da85f82654513124b.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-helmet/es/Helmet.js": function(e, t, n) {
@@ -1321,7 +1321,7 @@
 			t.a = ({
 				center: e,
 				className: t,
-				sizePx: n
+				sizePx: n = 10
 			}) => a.a.createElement("div", {
 				className: Object(o.a)(s.a.loadingIcon, t, {
 					[s.a.mCentered]: e
@@ -2497,4 +2497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.97e746cd42f0c1870c29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.591da85f82654513124b.js.map

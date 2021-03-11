@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8212e5028d16a98c5c94.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.729d2067840ee88cb128.js
+// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -3967,9 +3967,17 @@
 				}).apply(this, arguments)
 			}
 			const E = f.a.wrapped(l.a, "Checkmark", b.a),
-				v = f.a.wrapped(u.a, "Plus", b.a),
-				_ = f.a.div("ButtonSpacer", b.a);
-			class O extends r.a.Component {
+				v = ({
+					isFilled: e,
+					...t
+				}) => r.a.createElement(E, t),
+				_ = f.a.wrapped(u.a, "Plus", b.a),
+				O = ({
+					isFilled: e,
+					...t
+				}) => r.a.createElement(_, t),
+				x = f.a.div("ButtonSpacer", b.a);
+			class y extends r.a.Component {
 				constructor(e) {
 					super(e), this.onMouseEnter = () => {
 						this.setState({
@@ -4003,7 +4011,7 @@
 							size: m,
 							userIsSubscriber: b,
 							doNotHideOtherSubscribeButtons: f,
-							getEventFactory: v,
+							getEventFactory: E,
 							onSubscriptionsRequested: _,
 							...O
 						} = this.props, x = this.state.isHovered, y = Object(p.a)({
@@ -4015,7 +4023,7 @@
 							priority: O.shouldReverseColor ? a.b.Primary : a.b.Secondary,
 							Icon: u || !u && !x ? e ? e => r.a.createElement(d.a, h({
 								name: "checkmark"
-							}, e)) : E : void 0,
+							}, e)) : v : void 0,
 							text: !u && y,
 							onClick: this.onClick,
 							onMouseEnter: this.onMouseEnter,
@@ -4037,22 +4045,22 @@
 							userIsSubscriber: b,
 							doNotHideOtherSubscribeButtons: f,
 							getEventFactory: E,
-							onSubscriptionsRequested: _,
-							...O
+							onSubscriptionsRequested: v,
+							..._
 						} = this.props, x = Object(p.a)({
 							type: n.type,
 							key: "subscribe"
 						});
 						return r.a.createElement(a.q, h({
 							className: t,
-							priority: O.shouldReverseColor ? a.b.Secondary : a.b.Primary,
+							priority: _.shouldReverseColor ? a.b.Secondary : a.b.Primary,
 							Icon: e ? e => r.a.createElement(d.a, h({
 								name: "add"
-							}, e)) : v,
+							}, e)) : O,
 							size: m || (u ? a.c.XS : a.c.S),
 							text: !u && x,
 							onClick: this.onClick
-						}, O, {
+						}, _, {
 							id: `subscribe-button-${i}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -4071,10 +4079,10 @@
 						userIsSubscriber: t,
 						doNotHideOtherSubscribeButtons: n
 					} = this.props;
-					return t ? this.state.hasJustSubscribed || n ? r.a.createElement(c.b.Consumer, null, this.renderUnsubscribeButton) : e ? null : r.a.createElement(_, null) : r.a.createElement(c.b.Consumer, null, this.renderSubscribeButton)
+					return t ? this.state.hasJustSubscribed || n ? r.a.createElement(c.b.Consumer, null, this.renderUnsubscribeButton) : e ? null : r.a.createElement(x, null) : r.a.createElement(c.b.Consumer, null, this.renderSubscribeButton)
 				}
 			}
-			t.a = Object(i.a)(Object(o.c)(O))
+			t.a = Object(i.a)(Object(o.c)(y))
 		},
 		"./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts": function(e, t, n) {
 			"use strict";
@@ -4231,7 +4239,7 @@
 			t.a = ({
 				center: e,
 				className: t,
-				sizePx: n
+				sizePx: n = 10
 			}) => r.a.createElement("div", {
 				className: Object(o.a)(c.a.loadingIcon, t, {
 					[c.a.mCentered]: e
@@ -5633,4 +5641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8212e5028d16a98c5c94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.729d2067840ee88cb128.js.map
