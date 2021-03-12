@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.79d4afc2f292ceefcd42.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.941b8cae3e7591e5daa9.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -289,7 +289,7 @@
 							const e = m.body.data.path.toLowerCase();
 							await s(Object(a.b)(e))
 						}
-						s(Object(b.e)({
+						s(Object(b.f)({
 							text: i.fbt._("Custom feed created!", null, {
 								hk: "258cY9"
 							})
@@ -357,7 +357,7 @@
 							multireddit: e,
 							multiredditsModelsState: l.multireddits.models,
 							userId: m.id
-						})), n(Object(b.e)({
+						})), n(Object(b.f)({
 							text: i.fbt._("Custom feed duplicated!", null, {
 								hk: "2u48X"
 							}),
@@ -366,7 +366,7 @@
 							}),
 							buttonAction: Object(a.b)(e.url)
 						}))
-					} else n(Q(O.error)), n(Object(b.e)({
+					} else n(Q(O.error)), n(Object(b.f)({
 						text: i.fbt._("Something went wrong duplicating {multiName}", [i.fbt._param("multiName", r)], {
 							hk: "4bzN2D"
 						})
@@ -402,7 +402,7 @@
 								identifier: t
 							}) || e && e.id || "",
 							a = r.map(e => Object(E.h)(m, e));
-						s(Object(u.f)()), s(Object(b.e)({
+						s(Object(u.f)()), s(Object(b.f)({
 							text: i.fbt._({
 								"*": "Successfully added {communityName} to {number} custom feeds!",
 								_1: "Successfully added {communityName} to 1 custom feed!"
@@ -424,7 +424,7 @@
 							hk: "2eguyW"
 						}) : j.body.reason === M.d.InvalidSrQuarantine && (e = i.fbt._("{communityname} is invalid because it is quarantined", [i.fbt._param("communityname", `${"subreddit"===t.type?o.d.subreddit:o.d.profile}${t.name}`)], {
 							hk: "407xmS"
-						}))), s(Object(b.e)({
+						}))), s(Object(b.f)({
 							text: e,
 							kind: F.b.Error
 						}))
@@ -453,7 +453,7 @@
 						id: e,
 						multipath: p,
 						type: s
-					})), n(Object(b.e)({
+					})), n(Object(b.f)({
 						text: i.fbt._("{subredditname} removed from your custom feed!", [i.fbt._param("subredditname", r)], {
 							hk: "uaWNe"
 						}),
@@ -467,7 +467,7 @@
 							},
 							multiredditNames: [t]
 						})
-					})), n(K())) : (n(se(j.error)), n(Object(b.e)({
+					})), n(K())) : (n(se(j.error)), n(Object(b.f)({
 						text: i.fbt._("Sorry, something went wrong removing {subredditName}.", [i.fbt._param("subredditName", r)], {
 							hk: "1E1rKm"
 						})
@@ -482,7 +482,7 @@
 						endpoint: Object(g.a)(`${e.apiUrl}/api/multi${t}`),
 						method: d.cb.DELETE
 					}))(s(), e);
-					o.ok ? (await t(oe(e)), t(Object(u.f)()), await t(Object(a.b)("/")), t(Object(b.e)({
+					o.ok ? (await t(oe(e)), t(Object(u.f)()), await t(Object(a.b)("/")), t(Object(b.f)({
 						text: i.fbt._("Custom feed deleted!", null, {
 							hk: "aWGMo"
 						})
@@ -522,11 +522,11 @@
 						multipath: r,
 						visibility: s
 					});
-					l.ok ? (await n(me(N(l.body.data))), n(Object(u.f)()), n(Object(b.e)({
+					l.ok ? (await n(me(N(l.body.data))), n(Object(u.f)()), n(Object(b.f)({
 						text: i.fbt._("Custom feed updated!", null, {
 							hk: "39R30f"
 						})
-					}))) : (n(le(l.error)), n(Object(b.e)({
+					}))) : (n(le(l.error)), n(Object(b.f)({
 						kind: F.b.Error,
 						text: i.fbt._("Something went wrong", null, {
 							hk: "1Y6lli"
@@ -633,7 +633,7 @@
 						k = `error-${e}`;
 					if (C.ok && S) {
 						const i = Object(x.a)(S);
-						if (!S.multireddit) return n && a(u.f(k)), void a(P({
+						if (!S.multireddit) return n && a(u.g(k)), void a(P({
 							...i,
 							error: {
 								type: l.E.NOT_FOUND_ERROR
@@ -646,13 +646,13 @@
 							...i,
 							account: i.account || Object(y.j)(f),
 							multiredditsModelsState: f.multireddits.models
-						})), n && a(u.f(k)), a(Object(o.recommendationsRequested)({
+						})), n && a(u.g(k)), a(Object(o.recommendationsRequested)({
 							multiredditName: r,
 							username: t
 						})), window.addEventListener("load", () => {
 							a(Object(_.b)(N.a.MULTIREDDIT))
 						})
-					} else n && a(u.e({
+					} else n && a(u.f({
 						id: k,
 						kind: O.b.Error,
 						text: i.fbt._("Sorry, we couldn't load posts for this page.", null, {
@@ -1500,4 +1500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.79d4afc2f292ceefcd42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.941b8cae3e7591e5daa9.js.map

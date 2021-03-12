@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.6f6e5eba8e43a7e5d7a1.js
-// Retrieved at 3/9/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.524bd08267ab8598f798.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -165,7 +165,7 @@
 				s = n("./src/reddit/models/Toast/index.ts");
 
 			function o(e, t) {
-				e(Object(r.e)({
+				e(Object(r.f)({
 					duration: 5e3,
 					kind: s.b.Error,
 					text: Object(a.a)(t)
@@ -290,7 +290,7 @@
 					u.ok ? (n(R({
 						...u.body,
 						subredditId: e.subredditId
-					})), n(Object(c.e)({
+					})), n(Object(c.f)({
 						kind: p.b.SuccessCommunity,
 						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(s.a)(e.amount)), r.fbt._param("tokenName", Object(v.n)(a(), {
 							subredditId: e.subredditId
@@ -876,7 +876,7 @@
 			}
 			var $ = Object(B.b)(Object(s.b)(void 0, e => ({
 				onGovernanceError: t => Object(T.a)(e, t),
-				onError: t => e(Object(G.e)({
+				onError: t => e(Object(G.f)({
 					duration: 5e3,
 					kind: U.b.Error,
 					text: t
@@ -1937,4 +1937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.6f6e5eba8e43a7e5d7a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.524bd08267ab8598f798.js.map

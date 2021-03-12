@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.6ed3e7a97c89e8ccd89d.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c53c74c0617b45f7cd60.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(i, a, r) {
@@ -734,7 +734,7 @@
 				userCoins: E.d
 			}), xi = {
 				getCoinPacks: l.c,
-				showToast: c.e
+				showToast: c.f
 			};
 			var ti = Object(k.b)(ri, xi)(Object(_.a)(({
 					getCoinPacks: i,
@@ -1293,7 +1293,7 @@
 			}), ia = {
 				onPredictionResolve: l.d,
 				onPredictionVote: l.e,
-				showToast: c.e
+				showToast: c.f
 			}, aa = Object(s.t)({
 				isCommentsPage: s.w,
 				isPredictionsPage: s.L
@@ -1898,4 +1898,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.6ed3e7a97c89e8ccd89d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c53c74c0617b45f7cd60.js.map

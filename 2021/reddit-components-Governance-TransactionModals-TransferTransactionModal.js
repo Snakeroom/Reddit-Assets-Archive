@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.be096376794ebc8d8c7f.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.a22c91f881a6db1bf4d4.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, n) {
@@ -232,7 +232,7 @@
 					onClose: o,
 					onTransactionSuccess: async e => {
 						o(), M(function(e) {
-							return Object(m.e)(Object(m.d)(r.fbt._("Sending your {pointsName}...", [r.fbt._param("pointsName", e)], {
+							return Object(m.f)(Object(m.e)(r.fbt._("Sending your {pointsName}...", [r.fbt._param("pointsName", e)], {
 								hk: "2LuiyB"
 							}), _.b.SuccessCommunity))
 						}(C)), async function(e, t, n, s, r, o) {
@@ -249,13 +249,13 @@
 							}))
 						}(M, F, e.hash, N, I, null == E ? void 0 : E.id).then(() => {
 							k(Object(O.b)("transfer", N, Y)), M(function(e) {
-								return Object(m.e)(Object(m.d)(r.fbt._("Your {pointsName} were sent!", [r.fbt._param("pointsName", e)], {
+								return Object(m.f)(Object(m.e)(r.fbt._("Your {pointsName} were sent!", [r.fbt._param("pointsName", e)], {
 									hk: "4yssJA"
 								}), _.b.SuccessCommunityGreen))
 							}(C))
 						}).catch(e => {
 							H(e.toString()), M(function(e) {
-								return Object(m.e)(Object(m.d)(r.fbt._("Failed to send your {pointsName}. Try again later", [r.fbt._param("pointsName", e)], {
+								return Object(m.f)(Object(m.e)(r.fbt._("Failed to send your {pointsName}. Try again later", [r.fbt._param("pointsName", e)], {
 									hk: "yeMQh"
 								}), _.b.Error))
 							}(C))
@@ -284,4 +284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.be096376794ebc8d8c7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.a22c91f881a6db1bf4d4.js.map

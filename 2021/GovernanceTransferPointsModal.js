@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.4a8e3f5e233580bdcc64.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.51f395a286e724684e30.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -734,7 +734,7 @@
 					u.ok ? (r(T({
 						...u.body,
 						subredditId: e.subredditId
-					})), r(Object(c.e)({
+					})), r(Object(c.f)({
 						kind: p.b.SuccessCommunity,
 						text: n.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [n.fbt._param("amount", Object(a.a)(e.amount)), n.fbt._param("tokenName", Object(v.n)(s(), {
 							subredditId: e.subredditId
@@ -2508,4 +2508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.4a8e3f5e233580bdcc64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.51f395a286e724684e30.js.map

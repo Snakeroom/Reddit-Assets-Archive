@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.1cbdf7979e1d557c9580.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.8df5bceb310178160c35.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1272,11 +1272,11 @@
 						key: e,
 						meta: i.meta,
 						...a.body
-					})), n(d.f(c))) : (n(L({
+					})), n(d.g(c))) : (n(L({
 						error: a.error,
 						key: e,
 						...a.body
-					})), 401 === a.status ? Object(j.a)(n, i) : n(d.e({
+					})), 401 === a.status ? Object(j.a)(n, i) : n(d.f({
 						id: c,
 						kind: T.b.Error,
 						text: r.fbt._("Sorry, we couldn't load posts for this page.", null, {
@@ -4214,9 +4214,9 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const s = e => r.bc.Enabled === Object(o.c)(e, {
+			const s = e => r.dc.Enabled === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: r.Vb
+				experimentName: r.Xb
 			})
 		},
 		"./src/reddit/selectors/experiments/inboxAppBadgingGql.ts": function(e, t, n) {
@@ -4230,11 +4230,11 @@
 				i = n("./src/reddit/selectors/experiments/utils.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Xb,
+					experimentName: o.Zb,
 					experimentEligibilitySelector: d
 				}), i.a),
 				d = e => Object(a.J)(e) || Object(a.K)(e),
-				u = Object(r.a)(c, e => e === o.dc.Enabled)
+				u = Object(r.a)(c, e => e === o.fc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -4246,8 +4246,10 @@
 				return f
 			})), n.d(t, "a", (function() {
 				return h
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return g
+			})), n.d(t, "e", (function() {
+				return v
 			}));
 			var r = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/reddit/constants/experiments.ts"),
@@ -4255,28 +4257,33 @@
 				i = n("./src/reddit/selectors/experiments/utils.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.ac,
+					experimentName: o.cc,
 					experimentEligibilitySelector: d
 				}), i.a),
 				d = e => Object(a.J)(e) || Object(a.K)(e),
-				u = Object(r.a)(c, e => e === o.gc.Redesign),
+				u = Object(r.a)(c, e => e === o.ic.Redesign),
 				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Zb,
+					experimentName: o.bc,
 					experimentEligibilitySelector: d
 				}), i.a),
-				p = Object(r.a)(l, e => e === o.fc.Enabled),
+				p = Object(r.a)(l, e => e === o.hc.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Yb,
+					experimentName: o.ac,
 					experimentEligibilitySelector: d
 				}), i.a),
-				f = Object(r.a)(m, e => e === o.ec.Enabled),
+				f = Object(r.a)(m, e => e === o.gc.Enabled),
 				b = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.R,
 					experimentEligibilitySelector: d
 				}), i.a),
-				h = Object(r.a)(b, e => e === o.db.NoOverflow),
-				g = Object(r.a)(b, e => e === o.db.UndoBar)
+				h = Object(r.a)(b, e => e === o.eb.NoOverflow),
+				g = Object(r.a)(b, e => e === o.eb.UndoBar),
+				y = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.T,
+					experimentEligibilitySelector: d
+				}), i.a),
+				v = Object(r.a)(u, y, (e, t) => e && t === o.gb.Enabled)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.1cbdf7979e1d557c9580.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.8df5bceb310178160c35.js.map

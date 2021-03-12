@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.860c58667c4c1c7e75a1.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.fed97243a61968b05a1a.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -539,7 +539,7 @@
 							const e = s.fbt._("You cannot follow yourself!", null, {
 								hk: "3tfSaq"
 							});
-							o(Object(l.e)(Object(l.d)(e, _.b.Error)))
+							o(Object(l.f)(Object(l.e)(e, _.b.Error)))
 						}
 						if (!e.length && !f.length) return
 					}
@@ -571,7 +571,7 @@
 							subscribe: t
 						})).ok) {
 						const n = 1 === e.length ? `${"subreddit"===e[0].type?i.d.subreddit:i.d.profile}${e[0].name}` : `${s.fbt.plural("community",e.length,{many:"communities",name:"communities",showCount:"yes"})}`;
-						o(Object(l.e)({
+						o(Object(l.f)({
 							text: 1 === e.length && "profile" === e[0].type ? s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "followed" : "unfollowed"), s.fbt._param("communityname", n)], {
 								hk: "1hY5KX"
 							}) : s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "joined" : "left"), s.fbt._param("communityname", n)], {
@@ -591,7 +591,7 @@
 						const r = s.fbt._("Something went wrong. Please try again!", null, {
 							hk: "1zlDeq"
 						});
-						o(Object(l.e)(Object(l.d)(r, _.b.Error)))
+						o(Object(l.f)(Object(l.e)(r, _.b.Error)))
 					}
 				}, D = Object(o.a)(d.f), M = e => async (t, n, {
 					apiContext: s
@@ -635,7 +635,7 @@
 						identifier: e,
 						subredditModels: g,
 						profileModels: y
-					})), t(Object(l.e)({
+					})), t(Object(l.f)({
 						text: j(),
 						kind: _.b.Error
 					}))))
@@ -644,7 +644,7 @@
 				}) => {
 					const o = n().multireddits.models,
 						i = () => {
-							t(Object(l.e)({
+							t(Object(l.f)({
 								text: j(),
 								kind: _.b.Error
 							}))
@@ -676,7 +676,7 @@
 						a = i.multireddits.models;
 					if (!Object(k.K)(i)) return;
 					const c = (e = !0) => {
-							t(Object(l.e)({
+							t(Object(l.f)({
 								text: s.fbt._("Sorry, failed to {followAction}", [s.fbt._param("followAction", e ? s.fbt._("follow", null, {
 									hk: "2I4uia"
 								}) : s.fbt._("unfollow", null, {
@@ -4583,12 +4583,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.dd.SmIcon:
+						case b.fd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.dd.SmIconHc:
+						case b.fd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6462,15 +6462,15 @@
 				ke = Object(c.b)(Se, (e, t) => ({
 					copyLink: () => {
 						if (Object(he.a)(pe.a.redditUrl + t.multireddit.url)) {
-							const t = Object(be.d)(s.fbt._("Copied link!", null, {
+							const t = Object(be.e)(s.fbt._("Copied link!", null, {
 								hk: "2IxdQz"
 							}), ve.b.SuccessCommunity);
-							e(Object(be.e)(t))
+							e(Object(be.f)(t))
 						} else {
-							const t = Object(be.d)(s.fbt._("Something went wrong", null, {
+							const t = Object(be.e)(s.fbt._("Something went wrong", null, {
 								hk: "GmeVt"
 							}), ve.b.Error);
-							e(Object(be.e)(t))
+							e(Object(be.f)(t))
 						}
 					},
 					toggleConfirmPublic: () => e(Object(O.i)("MULTIREDDIT_TOP_BAR_PUBLIC_CONFIRMATION")),
@@ -6737,9 +6737,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.bc.Enabled === Object(r.c)(e, {
+			const o = e => s.dc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Vb
+				experimentName: s.Xb
 			})
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
@@ -6755,15 +6755,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.tb
+						experimentName: s.vb
 					});
-					return !(!t || Object(s.wd)(t))
+					return !(!t || Object(s.yd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: s.tb
-					}) === s.Gb.ListingEnabled
+						experimentName: s.vb
+					}) === s.Ib.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -6893,12 +6893,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Yc
+						experimentName: s.ad
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.dd.SmIcon || t === s.dd.SmIconHc
+					return t === s.fd.SmIcon || t === s.fd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6921,4 +6921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.860c58667c4c1c7e75a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.fed97243a61968b05a1a.js.map

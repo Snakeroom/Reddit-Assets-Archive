@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.762ef7b9e24bcc31368a.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.8e2d43617253bacc29e3.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -341,14 +341,14 @@
 				}),
 				ee = Object(l.b)($, (e, t) => ({
 					onFetchSubredditMembership: () => e(Object(m.g)(t.subredditId, !0)),
-					onSuccess: () => e(Object(p.e)({
+					onSuccess: () => e(Object(p.f)({
 						duration: 1e4,
 						kind: T.b.SuccessCommunityGreen,
 						text: Z._("Your membership purchase was successful! Thank you for your support!", null, {
 							hk: "3do7sl"
 						})
 					})),
-					onError: t => e(Object(p.e)({
+					onError: t => e(Object(p.f)({
 						duration: 1e4,
 						kind: T.b.Error,
 						text: t || Z._("Something wen't wrong with the purchase. Please try again later.", null, {
@@ -1039,4 +1039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.762ef7b9e24bcc31368a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.8e2d43617253bacc29e3.js.map

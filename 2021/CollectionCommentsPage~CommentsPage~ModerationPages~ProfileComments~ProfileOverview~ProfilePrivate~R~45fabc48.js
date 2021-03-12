@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.0644d1fb19d4a5f5c23d.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.e7a1846db05819eebc82.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -123,7 +123,7 @@
 					} else t(g({
 						error: v.error,
 						key: b
-					})), t(Object(c.e)({
+					})), t(Object(c.f)({
 						kind: x.b.Error,
 						text: _()
 					}))
@@ -142,11 +142,11 @@
 								postId: e
 							}),
 							a = i && i.title || "";
-						t(Object(c.e)({
+						t(Object(c.f)({
 							kind: x.b.SuccessMod,
 							text: n()
 						}))
-					} else t(Object(c.e)({
+					} else t(Object(c.f)({
 						kind: x.b.Error,
 						text: _()
 					}))
@@ -176,11 +176,11 @@
 							h = () => o.fbt._("Following event time is updated successfully: {title}", [o.fbt._param("title", b)], {
 								hk: "1m1w1c"
 							});
-						s(Object(c.e)({
+						s(Object(c.f)({
 							kind: x.b.SuccessMod,
 							text: h()
 						}))
-					} else s(Object(c.e)({
+					} else s(Object(c.f)({
 						kind: x.b.Error,
 						text: _()
 					}))
@@ -330,7 +330,7 @@
 					const r = s().postCollection.subredditToIds || {};
 					if (Object.keys(r).length > 0) return;
 					const i = await v(n(), e);
-					i.ok ? t(F(i.body)) : t(Object(a.e)({
+					i.ok ? t(F(i.body)) : t(Object(a.f)({
 						kind: w.b.Error,
 						text: o.fbt._("Something went wrong. Just don't panic.", null, {
 							hk: "4Ck6Cm"
@@ -363,7 +363,7 @@
 								});
 							i && i.permalink && n(Object(E.a)(i.permalink))
 						}
-						n(Object(a.e)({
+						n(Object(a.f)({
 							kind: w.b.SuccessMod,
 							text: o.fbt._("Following post removed from collection successfully: {postTitle}", [o.fbt._param("postTitle", d)], {
 								hk: "8e1lV"
@@ -373,7 +373,7 @@
 							}),
 							buttonAction: W(e, t)
 						}))
-					} else n(Object(a.e)({
+					} else n(Object(a.f)({
 						kind: w.b.Error,
 						text: o.fbt._("Something went wrong. Just don't panic.", null, {
 							hk: "4Ck6Cm"
@@ -398,7 +398,7 @@
 								collectionId: e
 							}),
 							c = r && r.title || "";
-						s(Object(a.e)({
+						s(Object(a.f)({
 							kind: w.b.SuccessMod,
 							text: o.fbt._("Success! You added a post to the collection: {title}", [o.fbt._param("title", c)], {
 								hk: "3KNJWi"
@@ -408,7 +408,7 @@
 							}),
 							buttonAction: Object(E.a)(n.permalink)
 						}))
-					} else s(Object(a.e)({
+					} else s(Object(a.f)({
 						kind: w.b.Error,
 						text: o.fbt._("Something went wrong. Just don't panic.", null, {
 							hk: "4Ck6Cm"
@@ -427,13 +427,13 @@
 						s(G({
 							collectionId: e,
 							collection: c
-						})), s(t ? Object(n.c)(Object(r.a)(i, ["collection"])) : Object(n.b)(u)), s(Object(a.e)({
+						})), s(t ? Object(n.c)(Object(r.a)(i, ["collection"])) : Object(n.b)(u)), s(Object(a.f)({
 							kind: w.b.SuccessMod,
 							text: o.fbt._("Collection deleted successfully: {title}", [o.fbt._param("title", l)], {
 								hk: "4tcOKB"
 							})
 						}))
-					} else s(Object(a.e)({
+					} else s(Object(a.f)({
 						kind: w.b.Error,
 						text: o.fbt._("Something went wrong. Just don't panic.", null, {
 							hk: "4Ck6Cm"
@@ -448,7 +448,7 @@
 					if (i.ok) s(K({
 						collectionId: e,
 						newTitle: t
-					})), s(Object(a.e)({
+					})), s(Object(a.f)({
 						kind: w.b.SuccessMod,
 						text: o.fbt._("Collection title updated successfully", null, {
 							hk: "2hKzKl"
@@ -456,7 +456,7 @@
 					})), c = !0;
 					else {
 						const e = i.error;
-						s(H(e)), s(Object(a.e)({
+						s(H(e)), s(Object(a.f)({
 							kind: w.b.Error,
 							text: o.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
@@ -485,14 +485,14 @@
 						return i.ok ? (s(Z({
 							collectionId: e,
 							postIds: t
-						})), s(Object(a.e)({
+						})), s(Object(a.f)({
 							kind: w.b.SuccessMod,
 							text: o.fbt._("Collection order updated successfully", null, {
 								hk: "4ccHEL"
 							})
 						})), c = !0) : (s($({
 							error: i.error
-						})), s(Object(a.e)({
+						})), s(Object(a.f)({
 							kind: w.b.Error,
 							text: o.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
@@ -507,7 +507,7 @@
 						if (i.ok) s(z({
 							collectionId: e,
 							newDescription: t
-						})), s(Object(a.e)({
+						})), s(Object(a.f)({
 							kind: w.b.SuccessMod,
 							text: o.fbt._("Collection description updated successfully", null, {
 								hk: "1rIDCC"
@@ -515,7 +515,7 @@
 						})), c = !0;
 						else {
 							const e = i.error;
-							s(X(e)), s(Object(a.e)({
+							s(X(e)), s(Object(a.f)({
 								kind: w.b.Error,
 								text: o.fbt._("Something went wrong. Just don't panic.", null, {
 									hk: "4Ck6Cm"
@@ -532,7 +532,7 @@
 						if (i.ok) s(se({
 							collectionId: e,
 							newLayout: t
-						})), s(Object(a.e)({
+						})), s(Object(a.f)({
 							kind: w.b.SuccessMod,
 							text: o.fbt._("Collection layout updated successfully", null, {
 								hk: "1Rs19j"
@@ -540,7 +540,7 @@
 						})), c = !0;
 						else {
 							const e = i.error;
-							s(te(e)), s(Object(a.e)({
+							s(te(e)), s(Object(a.f)({
 								kind: w.b.Error,
 								text: o.fbt._("Something went wrong. Just don't panic.", null, {
 									hk: "4Ck6Cm"
@@ -646,7 +646,7 @@
 					const d = await v(n(), e),
 						l = !1 === d.body.success;
 					if (t(S(c.id)), d.ok && !l) {
-						t(Object(i.e)({
+						t(Object(i.f)({
 							kind: w.b.SuccessCommunity,
 							text: o.fbt._("Post successfully edited", null, {
 								hk: "xej5K"
@@ -4979,7 +4979,7 @@
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
 				experimentName: o.S
-			}) === o.eb.Enabled
+			}) === o.fb.Enabled
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -4996,4 +4996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.0644d1fb19d4a5f5c23d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.e7a1846db05819eebc82.js.map

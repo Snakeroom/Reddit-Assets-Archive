@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.c41be84136abc8dde783.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.9ef5cdc96b7d05e223b6.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -239,7 +239,7 @@
 						u(Z({
 							draftKey: n,
 							error: g.error
-						})), u(Object(p.e)({
+						})), u(Object(p.f)({
 							duration: p.a,
 							kind: F.b.Error,
 							text: t
@@ -331,7 +331,7 @@
 								draftKey: n,
 								content: t
 							})), o(Object(u.c)(e))
-						} else o(Object(u.a)(n)), o(Object(p.e)({
+						} else o(Object(u.a)(n)), o(Object(p.f)({
 							duration: p.a,
 							kind: F.b.Error,
 							text: s.fbt._("Something went wrong", null, {
@@ -635,7 +635,7 @@
 							s = o.fbt._("Undo", null, {
 								hk: "46OwLP"
 							});
-						t(Object(u.e)({
+						t(Object(u.f)({
 							text: n,
 							kind: y.b.Undo,
 							buttonText: s,
@@ -993,7 +993,7 @@
 						editorKey: e,
 						editorMode: t,
 						content: S.body.output
-					})), o(j(t))) : (o(p(R)), o(Object(r.e)({
+					})), o(j(t))) : (o(p(R)), o(Object(r.f)({
 						duration: r.a,
 						kind: u.b.Error,
 						text: s.fbt._("Something went wrong", null, {
@@ -1010,7 +1010,7 @@
 					}) : s.fbt._("You can set Fancy Pants as the default editor mode in the settings", null, {
 						hk: "4kQi5k"
 					});
-					t(Object(r.e)({
+					t(Object(r.f)({
 						buttonAction: async () => {
 							window.open("/settings/feed")
 						},
@@ -1337,7 +1337,7 @@
 						n(ne({
 							subredditId: e,
 							reason: r
-						})), n(Object(L.e)({
+						})), n(Object(L.f)({
 							kind: H.b.SuccessMod,
 							text: s.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
@@ -1360,7 +1360,7 @@
 					d.ok ? (n(ce({
 						subredditId: e,
 						reason: t
-					})), n(Object(L.e)({
+					})), n(Object(L.f)({
 						kind: H.b.SuccessMod,
 						text: s.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
@@ -1378,7 +1378,7 @@
 					d.ok ? (n(me({
 						subredditId: e,
 						reasonId: t
-					})), n(Object(L.e)({
+					})), n(Object(L.f)({
 						kind: H.b.SuccessMod,
 						text: s.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
@@ -1494,7 +1494,7 @@
 						m = i.user.account && i.user.account.displayText;
 					if (!m) return;
 					c(fe());
-					const u = Object(L.e)({
+					const u = Object(L.f)({
 							kind: H.b.SuccessMod,
 							text: s.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
@@ -1725,7 +1725,7 @@
 								experimentName: r.w,
 								expEventOverride: t
 							});
-							return !!(Object(r.wd)(n) ? void 0 : n)
+							return !!(Object(r.yd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2673,4 +2673,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.c41be84136abc8dde783.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.9ef5cdc96b7d05e223b6.js.map

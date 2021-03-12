@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.596a90a842796009789b.js
-// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.59259a67a79207ab6a5e.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -354,7 +354,7 @@
 							d(Object(r.a)(t.length));
 							const e = await Promise.all([...t].map(e => H(e, !0))),
 								n = e.reduce((e, t) => e + (t.success ? 1 : 0), 0);
-							n > 0 && (d(Object(r.h)(n)), a(Object(C.e)({
+							n > 0 && (d(Object(r.h)(n)), a(Object(C.f)({
 								duration: 5e3,
 								kind: R.b.SuccessMod,
 								text: s.fbt._({
@@ -365,7 +365,7 @@
 								})
 							})));
 							const i = e.length - n;
-							i > 0 && a(Object(C.e)({
+							i > 0 && a(Object(C.f)({
 								duration: 5e3,
 								kind: R.b.Error,
 								text: s.fbt._({
@@ -460,7 +460,7 @@
 							})({
 								subredditId: t,
 								emojiId: E.id
-							})), d(Object(r.b)(1)), k(null), a(Object(C.e)({
+							})), d(Object(r.b)(1)), k(null), a(Object(C.f)({
 								duration: 5e3,
 								kind: R.b.SuccessMod,
 								text: s.fbt._("Deleted custom emoji", null, {
@@ -468,7 +468,7 @@
 								})
 							}))
 						} catch (e) {
-							a(Object(C.e)({
+							a(Object(C.f)({
 								duration: 5e3,
 								kind: R.b.Error,
 								text: s.fbt._("Failed to delete custom emoji", null, {
@@ -735,4 +735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.596a90a842796009789b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.59259a67a79207ab6a5e.js.map

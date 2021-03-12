@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.b6369cd11aa7b6da463f.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.8fbd99fec0fd5cb3d9b3.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -3351,8 +3351,8 @@
 					})),
 					onSearchBarFocused: () => e((e, t) => {}),
 					onMaxTopicsHit: () => e((e, t) => {
-						e(Object(f.e)({
-							...Object(f.d)(s.fbt._("You can only add up to {max number of topics} community topics", [s.fbt._param("max number of topics", C.a.toString())], {
+						e(Object(f.f)({
+							...Object(f.e)(s.fbt._("You can only add up to {max number of topics} community topics", [s.fbt._param("max number of topics", C.a.toString())], {
 								hk: "1OySAh"
 							}), v.b.Error),
 							duration: f.a
@@ -3792,11 +3792,11 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Bb
+					experimentName: s.Db
 				});
-				return !(!t || Object(s.wd)(t))
+				return !(!t || Object(s.yd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.b6369cd11aa7b6da463f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.8fbd99fec0fd5cb3d9b3.js.map

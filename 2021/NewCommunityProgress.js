@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.bd7cb1426069060edb83.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.85004914d3cfffc6f21f.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/graphql/operations/DismissCommunityProgressCard.json": function(e) {
@@ -219,7 +219,7 @@
 				function g(e) {
 					! function(e) {
 						return "CommunityProgressShareButton" === e.__typename
-					}(e) ? ee(e) && e.url.match(/reddithelp\.com/) && E(f(_, t)): (Object(y.a)(`https://reddit.com${b}`), j(Object(F.e)(Object(F.d)("Copied community URL to clipboard!", z.b.SuccessCommunityGreen)))), x(Z.a.CTA_BUTTON_CLICK), E(p(_, t))
+					}(e) ? ee(e) && e.url.match(/reddithelp\.com/) && E(f(_, t)): (Object(y.a)(`https://reddit.com${b}`), j(Object(F.f)(Object(F.e)("Copied community URL to clipboard!", z.b.SuccessCommunityGreen)))), x(Z.a.CTA_BUTTON_CLICK), E(p(_, t))
 				}
 				return o.a.createElement("div", {
 					className: r.a.ncpCard
@@ -1277,4 +1277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.bd7cb1426069060edb83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.85004914d3cfffc6f21f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.04e604910d2ca33c0fa3.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.26bdb3dce48f09d99cef.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -126,7 +126,7 @@
 					t(c());
 					try {
 						if ((await Object(i.e)(n(), e.id)).error) throw new Error;
-						await t(Object(a.e)({
+						await t(Object(a.f)({
 							kind: o.b.SuccessAward,
 							duration: a.a,
 							text: s.fbt._("{award name} Award successfully reported for review.", [s.fbt._param("award name", e.name)], {
@@ -134,7 +134,7 @@
 							})
 						}))
 					} catch (d) {
-						await t(Object(a.e)({
+						await t(Object(a.f)({
 							kind: o.b.Error,
 							duration: a.a,
 							text: s.fbt._("Something went wrong. The report could not be created at this time.", null, {
@@ -343,13 +343,13 @@
 								awardId: t,
 								targetId: r
 							}
-						}))(a(), e, t)).error && r(Object(p.e)({
+						}))(a(), e, t)).error && r(Object(p.f)({
 							kind: h.b.Error,
 							duration: p.a,
 							text: o
 						}))
 					} catch (i) {
-						r(Object(p.e)({
+						r(Object(p.f)({
 							kind: h.b.Error,
 							duration: p.a,
 							text: o
@@ -932,7 +932,7 @@
 						t(Object(O.clickConfirmReportAward)(e.award, e.thing.id)), d(Object(Ie.a)(e.award)), e.onClose()
 					},
 					u = () => {
-						t(Object(O.clickConfirmFlagAwardUsage)(e.award, e.thing.id)), d(Object(p.e)(Object(p.d)(s.fbt._("{award name} Award successfully flagged for review.", [s.fbt._param("award name", e.award.name)], {
+						t(Object(O.clickConfirmFlagAwardUsage)(e.award, e.thing.id)), d(Object(p.f)(Object(p.e)(s.fbt._("{award name} Award successfully flagged for review.", [s.fbt._param("award name", e.award.name)], {
 							hk: "24QeOL"
 						}), h.b.SuccessAward))), e.onClose()
 					},
@@ -3138,15 +3138,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.tb
+						experimentName: s.vb
 					});
-					return !(!t || Object(s.wd)(t))
+					return !(!t || Object(s.yd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.tb
-					}) === s.Gb.ListingEnabled
+						experimentName: s.vb
+					}) === s.Ib.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3170,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.04e604910d2ca33c0fa3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.26bdb3dce48f09d99cef.js.map

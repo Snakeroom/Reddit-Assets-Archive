@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.d7a1db1350131a6e1005.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.15f3192dfdfff729a29a.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PennyPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -1011,7 +1011,7 @@
 						m.c.captureException(a)
 					}
 				}, W = Object(u.a)(f.N), V = Object(u.a)(f.O), H = Object(u.a)(f.P), J = e => async (t, n) => {
-					await t(W(e)), t(Object(d.e)({
+					await t(W(e)), t(Object(d.f)({
 						kind: h.b.Error,
 						duration: d.a,
 						text: e
@@ -1052,7 +1052,7 @@
 					t(U(e)), t(Object(C.f)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
-					})), t(Object(_.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.e)({
+					})), t(Object(_.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.f)({
 						kind: h.b.SuccessCommunityGreen,
 						duration: d.a,
 						text: r.fbt._({
@@ -1945,4 +1945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.d7a1db1350131a6e1005.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.15f3192dfdfff729a29a.js.map

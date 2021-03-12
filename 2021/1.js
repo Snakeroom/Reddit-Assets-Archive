@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.d0d8cc0f6a193227eed8.js
-// Retrieved at 3/10/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.fea8432196547e67a7b0.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -63,7 +63,7 @@
 					children: g
 				} = e, y = null !== (t = Object(r.e)(e => Object(v.T)(e, {
 					subredditId: o
-				}))) && void 0 !== t ? t : {}, b = Object(d.a)();
+				}))) && void 0 !== t ? t : {}, f = Object(d.a)();
 				return s.a.createElement("div", {
 					className: i.a.ratingCard
 				}, "PENDING" === (null == a ? void 0 : a.status) && s.a.createElement("div", {
@@ -78,11 +78,11 @@
 					className: i.a.banner,
 					style: {
 						background: Object(m.g)(Object(h.a)({
-							theme: b
+							theme: f
 						}).banner.backgroundColor, Object(h.a)({
-							theme: b
+							theme: f
 						}).banner.backgroundImage, Object(h.a)({
-							theme: b
+							theme: f
 						}).banner.backgroundImagePosition)
 					}
 				}, s.a.createElement(l.b, {
@@ -116,9 +116,9 @@
 				p = n("./src/reddit/actions/toaster.ts"),
 				g = n("./node_modules/fbt/lib/FbtPublic.js"),
 				y = n("./node_modules/lodash/range.js"),
-				b = n.n(y),
-				f = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
-				x = n.n(f),
+				f = n.n(y),
+				b = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
+				x = n.n(b),
 				w = n("./src/lib/classNames/index.ts");
 			var _ = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				E = n("./src/reddit/controls/Button/index.tsx"),
@@ -172,7 +172,7 @@
 					className: x.a.footer
 				}, l.a.createElement("div", {
 					className: x.a.progressBar
-				}, y > 1 && b()(y).map((e, t) => l.a.createElement("div", {
+				}, y > 1 && f()(y).map((e, t) => l.a.createElement("div", {
 					key: t,
 					className: Object(w.a)(x.a.progressSegment, {
 						[x.a.active]: t < p
@@ -261,28 +261,28 @@
 					subredditId: s,
 					survey: r,
 					onClose: o = (() => {})
-				} = e, [u, g] = Object(c.useState)({}), y = Object(d.d)(), b = Q(null == r ? void 0 : r.questions, u), [{
-					surveyState: f,
+				} = e, [u, g] = Object(c.useState)({}), y = Object(d.d)(), f = Q(null == r ? void 0 : r.questions, u), [{
+					surveyState: b,
 					activeSlide: x
 				}, w] = Object(c.useReducer)(({
 					activeSlide: e
 				}, t) => {
-					const n = "forward" === t ? Math.min(e + 1, b.length + 1) : Math.max(e - 1, 0);
+					const n = "forward" === t ? Math.min(e + 1, f.length + 1) : Math.max(e - 1, 0);
 					return {
-						surveyState: 0 === n ? D.Intro : n === b.length + 1 ? D.Tag : D.Survey,
+						surveyState: 0 === n ? D.Intro : n === f.length + 1 ? D.Tag : D.Survey,
 						activeSlide: n
 					}
 				}, {
 					surveyState: D.Intro,
 					activeSlide: 0
-				}), _ = b[x - 1], E = Object(M.a)();
+				}), _ = f[x - 1], E = Object(M.a)();
 				Object(c.useEffect)(() => {
 					switch (x) {
 						case 0:
 							return E(Object(L.c)());
 						case 1:
 							return E(Object(L.e)());
-						case b.length + 1:
+						case f.length + 1:
 							return E(Object(L.n)())
 					}
 					if (_) return E(Object(L.j)(_.pageType))
@@ -292,7 +292,7 @@
 					error: j
 				}] = Object(A.a)(I);
 				Object(c.useEffect)(() => {
-					j && (h.c.captureException(j), y(Object(p.e)(Object(p.d)(W._("An error occurred", null, {
+					j && (h.c.captureException(j), y(Object(p.f)(Object(p.e)(W._("An error occurred", null, {
 						hk: "1VDETi"
 					}), B.b.Error))))
 				}, [j, y]);
@@ -305,11 +305,11 @@
 				}
 				const Z = null !== (t = u[null == _ ? void 0 : _.id]) && void 0 !== t ? t : {},
 					F = (null !== (n = null == _ ? void 0 : _.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
-					P = f === D.Survey && x > 1;
+					P = b === D.Survey && x > 1;
 				return l.a.createElement(C, {
 					activeSlide: x,
 					advance: async function() {
-						if (f === D.Survey && x === b.length && O(function(e, t) {
+						if (b === D.Survey && x === f.length && O(function(e, t) {
 								var n;
 								let a = null,
 									s = [];
@@ -331,7 +331,7 @@
 									rating: a,
 									ratingReasons: s
 								}
-							}(r, u)), f === D.Tag) {
+							}(r, u)), b === D.Tag) {
 							if (N) return;
 							return E(Object(L.m)()), await k({
 								input: {
@@ -342,7 +342,7 @@
 										answerIds: U(e, u).map(e => e.id)
 									}))
 								}
-							}), y(Object(p.e)(Object(p.d)(W._("Thanks for setting up your Content Tag!", null, {
+							}), y(Object(p.f)(Object(p.e)(W._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
 							}), B.b.SuccessCommunityGreen))), y({
 								type: v.x,
@@ -359,9 +359,9 @@
 					},
 					onClose: o,
 					progressCurrent: P ? x - 1 : 0,
-					progressTotal: P ? b.length - 1 : 0,
-					disableNext: N || f === D.Survey && !F,
-					buttonText: K(f)
+					progressTotal: P ? f.length - 1 : 0,
+					disableNext: N || b === D.Survey && !F,
+					buttonText: K(b)
 				}, l.a.createElement("div", {
 					className: m.a.result
 				}, l.a.createElement("p", {
@@ -410,7 +410,7 @@
 					hk: "4tG83R"
 				})))], {
 					hk: "2x33OC"
-				})), b.map(e => {
+				})), f.map(e => {
 					var t;
 					return l.a.createElement(q, {
 						key: e.id,
@@ -702,4 +702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.d0d8cc0f6a193227eed8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.fea8432196547e67a7b0.js.map

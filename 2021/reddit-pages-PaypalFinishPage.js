@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.db2445cb90e377d0331a.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.c9dcb42edfdf97f35401.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./node_modules/react-helmet/es/Helmet.js": function(e, t, r) {
@@ -952,7 +952,7 @@
 						f.c.captureException(o)
 					}
 				}, F = Object(p.a)(b.N), H = Object(p.a)(b.O), W = Object(p.a)(b.P), Y = e => async (t, r) => {
-					await t(F(e)), t(Object(u.e)({
+					await t(F(e)), t(Object(u.f)({
 						kind: m.b.Error,
 						duration: u.a,
 						text: e
@@ -993,7 +993,7 @@
 					t(K(e)), t(Object(v.f)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
-					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(u.e)({
+					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(u.f)({
 						kind: m.b.SuccessCommunityGreen,
 						duration: u.a,
 						text: n.fbt._({
@@ -1283,4 +1283,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.db2445cb90e377d0331a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.c9dcb42edfdf97f35401.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.f90987276691371b7dc7.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9d8f68c0cfcc67e35ebd.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
@@ -258,7 +258,7 @@
 							const e = n.fbt._("You cannot follow yourself!", null, {
 								hk: "3tfSaq"
 							});
-							r(Object(l.e)(Object(l.d)(e, S.b.Error)))
+							r(Object(l.f)(Object(l.e)(e, S.b.Error)))
 						}
 						if (!e.length && !f.length) return
 					}
@@ -290,7 +290,7 @@
 							subscribe: t
 						})).ok) {
 						const s = 1 === e.length ? `${"subreddit"===e[0].type?o.d.subreddit:o.d.profile}${e[0].name}` : `${n.fbt.plural("community",e.length,{many:"communities",name:"communities",showCount:"yes"})}`;
-						r(Object(l.e)({
+						r(Object(l.f)({
 							text: 1 === e.length && "profile" === e[0].type ? n.fbt._("Sucсessfully {verb} {communityname}", [n.fbt._param("verb", t ? "followed" : "unfollowed"), n.fbt._param("communityname", s)], {
 								hk: "1hY5KX"
 							}) : n.fbt._("Sucсessfully {verb} {communityname}", [n.fbt._param("verb", t ? "joined" : "left"), n.fbt._param("communityname", s)], {
@@ -310,7 +310,7 @@
 						const i = n.fbt._("Something went wrong. Please try again!", null, {
 							hk: "1zlDeq"
 						});
-						r(Object(l.e)(Object(l.d)(i, S.b.Error)))
+						r(Object(l.f)(Object(l.e)(i, S.b.Error)))
 					}
 				}, B = Object(r.a)(d.f), R = e => async (t, s, {
 					apiContext: n
@@ -354,7 +354,7 @@
 						identifier: e,
 						subredditModels: O,
 						profileModels: C
-					})), t(Object(l.e)({
+					})), t(Object(l.f)({
 						text: N(),
 						kind: S.b.Error
 					}))))
@@ -363,7 +363,7 @@
 				}) => {
 					const r = s().multireddits.models,
 						o = () => {
-							t(Object(l.e)({
+							t(Object(l.f)({
 								text: N(),
 								kind: S.b.Error
 							}))
@@ -395,7 +395,7 @@
 						c = o.multireddits.models;
 					if (!Object(y.K)(o)) return;
 					const a = (e = !0) => {
-							t(Object(l.e)({
+							t(Object(l.f)({
 								text: n.fbt._("Sorry, failed to {followAction}", [n.fbt._param("followAction", e ? n.fbt._("follow", null, {
 									hk: "2I4uia"
 								}) : n.fbt._("unfollow", null, {
@@ -2403,4 +2403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.f90987276691371b7dc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9d8f68c0cfcc67e35ebd.js.map

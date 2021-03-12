@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.27cbb19c3da3c78f06df.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.12ce5ba68f065eb27008.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -810,7 +810,7 @@
 							const e = f.a[m];
 							t(_({
 								invitePolicy: e
-							})), t(Object(a.e)({
+							})), t(Object(a.f)({
 								kind: p.b.SuccessCommunity,
 								text: s.fbt._("Changes saved", null, {
 									hk: "4eTtdy"
@@ -901,13 +901,13 @@
 						error: e.error || Object(b.a)()
 					}));
 					const s = r().claimGold.api.error;
-					s && t(Object(a.e)({
+					s && t(Object(a.f)({
 						kind: c.b.Error,
 						duration: a.a,
 						text: s
 					}))
 				}, P = Object(n.a)(D), L = () => async (e, t) => {
-					e(P()), e(Object(a.e)({
+					e(P()), e(Object(a.f)({
 						kind: c.b.SuccessCommunity,
 						text: s.fbt._("You have redeemed your gift code successfully", null, {
 							hk: "18mkH2"
@@ -1225,7 +1225,7 @@
 					}))(n.apiContext(), _, y, l, p);
 					if (!h.ok) {
 						const s = Object(O.k)(a, h.error);
-						r(Object(b.i)(s)), r(Object(f.e)(x(e))), t && t.close()
+						r(Object(b.i)(s)), r(Object(f.f)(x(e))), t && t.close()
 					}
 					return h.ok
 				}, G = e => async (t, r, s) => {
@@ -1235,7 +1235,7 @@
 						emojiName: c,
 						settings: o
 					} = e;
-					if (t(Object(b.k)(n)), !n.websocketUrl) return t(Object(f.e)({
+					if (t(Object(b.k)(n)), !n.websocketUrl) return t(Object(f.f)({
 						text: "Could not upload emoji"
 					}));
 					let d;
@@ -1254,14 +1254,14 @@
 						} else {
 							const r = Object(y.a)(c),
 								s = Object(O.k)(n, r);
-							t(Object(b.i)(s)), t(Object(f.e)(x(e)))
+							t(Object(b.i)(s)), t(Object(f.f)(x(e)))
 						}
 						i.close()
 					}, i.onerror = r => {
 						d = !1;
 						const s = Object(y.a)(c),
 							a = Object(O.k)(n, s);
-						t(Object(b.i)(a)), t(Object(f.e)(x(e))), i.close()
+						t(Object(b.i)(a)), t(Object(f.f)(x(e))), i.close()
 					}, d
 				}, B = e => async (t, r, {
 					apiContext: s
@@ -1303,13 +1303,13 @@
 						r(A({
 							emojiName: e,
 							subredditId: t
-						})), r(f.e({
+						})), r(f.f({
 							kind: h.b.SuccessCommunityGreen,
 							text: s.fbt._("Emoji successfully deleted", null, {
 								hk: "1zMXEe"
 							})
 						}))
-					} else r(j(p.error)), r(f.e({
+					} else r(j(p.error)), r(f.f({
 						kind: h.b.Error,
 						text: s.fbt._("Something went wrong", null, {
 							hk: "22u7ha"
@@ -1334,7 +1334,7 @@
 							subredditId: e,
 							emojisEnabled: t
 						}))
-					} else r(f.e({
+					} else r(f.f({
 						kind: h.b.Error,
 						text: s.fbt._("Something went wrong", null, {
 							hk: "22u7ha"
@@ -1354,7 +1354,7 @@
 					}))(a(), l, t)).ok ? r(W({
 						subredditId: e,
 						emojiCustomSize: t
-					})) : r(f.e({
+					})) : r(f.f({
 						kind: h.b.Error,
 						text: s.fbt._("Try again later", null, {
 							hk: "4dziDF"
@@ -1381,12 +1381,12 @@
 						isSnoomoji: t,
 						settings: r,
 						subredditId: n
-					})), a(f.e({
+					})), a(f.f({
 						kind: h.b.SuccessCommunityGreen,
 						text: s.fbt._("Emoji permissions updated", null, {
 							hk: "4b2RIU"
 						})
-					}))) : a(f.e({
+					}))) : a(f.f({
 						kind: h.b.Error,
 						text: s.fbt._("Try again later", null, {
 							hk: "4dziDF"
@@ -1471,12 +1471,12 @@
 						l = c.structuredStyles.models[e],
 						p = await Object(n.a)(() => Promise.all([r.e("vendors~ExportTheme~ImportTheme"), r.e("ExportTheme")]).then(r.bind(null, "./src/reddit/helpers/exportTheme/index.ts"))).then(e => e.default),
 						b = await p(l, d);
-					b.ok ? (t(y()), t(Object(o.e)({
+					b.ok ? (t(y()), t(Object(o.f)({
 						kind: i.b.SuccessMod,
 						text: s.fbt._("Theme successfully exported", null, {
 							hk: "24KHqI"
 						})
-					}))) : (t(E(b.error)), t(Object(o.e)({
+					}))) : (t(E(b.error)), t(Object(o.f)({
 						kind: i.b.Error,
 						text: s.fbt._("Sorry, theme failed to export", null, {
 							hk: "2MC4jC"
@@ -1486,12 +1486,12 @@
 					t(m());
 					const u = await Object(n.a)(() => Promise.all([r.e("vendors~ExportTheme~ImportTheme"), r.e("ImportTheme")]).then(r.bind(null, "./src/reddit/helpers/importTheme/index.ts"))).then(e => e.default),
 						l = await u(e);
-					l.ok ? (t(_()), t(Object(o.e)({
+					l.ok ? (t(_()), t(Object(o.f)({
 						kind: i.b.SuccessMod,
 						text: s.fbt._("Theme successfully imported", null, {
 							hk: "42FErS"
 						})
-					})), 0 !== Object.keys(l.attributes).length && t(Object(c.d)(Object(d.j)(l.attributes)))) : (t(O(l.error)), t(Object(o.e)({
+					})), 0 !== Object.keys(l.attributes).length && t(Object(c.d)(Object(d.j)(l.attributes)))) : (t(O(l.error)), t(Object(o.f)({
 						kind: i.b.Error,
 						text: s.fbt._("Sorry, theme failed to import", null, {
 							hk: "4BqW32"
@@ -1642,7 +1642,7 @@
 				a = r("./src/reddit/models/Toast/index.ts");
 
 			function c(e, t) {
-				e(Object(s.e)({
+				e(Object(s.f)({
 					duration: 5e3,
 					kind: a.b.Error,
 					text: Object(n.a)(t)
@@ -1802,7 +1802,7 @@
 				}, D = "FEED_CHAINING__CHAIN_TOGGLED", T = (Object(c.a)(D), "FEED_CHAINING__CHAINING_TOGGLED"), v = Object(c.a)(T), A = () => async e => {
 					Object(f.pb)(!0), e(v({
 						isDismissed: !0
-					})), e(Object(l.e)(Object(l.d)(s.fbt._("You'll see this less often.", null, {
+					})), e(Object(l.f)(Object(l.e)(s.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), E.b.Undo, s.fbt._("Undo", null, {
 						hk: "4zFGDk"
@@ -2244,7 +2244,7 @@
 					})), n(w({
 						subredditId: e,
 						chatSettings: t
-					})), n(Object(u.e)({
+					})), n(Object(u.f)({
 						duration: u.a,
 						id: "CHAT_SETTING_UPDATE_ERROR",
 						kind: O.b.Error,
@@ -2693,7 +2693,7 @@
 			const v = e => S.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				A = e => !!Object(D.c)(e, {
 					experimentEligibilitySelector: Object(g.d)(Object(g.b)(...a.c)),
-					experimentName: b.Jc
+					experimentName: b.Lc
 				}),
 				j = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				w = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -3087,8 +3087,8 @@
 						const e = s.fbt._("Invalid subreddit", null, {
 								hk: "2iUXvs"
 							}),
-							r = Object(c.d)(e, u.b.Error);
-						return await t(Object(c.e)({
+							r = Object(c.e)(e, u.b.Error);
+						return await t(Object(c.f)({
 							...r,
 							duration: c.a
 						})), {
@@ -3105,8 +3105,8 @@
 						const e = s.fbt._("Could not fetch settings for {subredditName}", [s.fbt._param("subredditName", a.name)], {
 								hk: "2G8rnU"
 							}),
-							r = Object(c.d)(e, u.b.Error);
-						return await t(Object(c.e)({
+							r = Object(c.e)(e, u.b.Error);
+						return await t(Object(c.f)({
 							...r,
 							duration: c.a
 						})), {
@@ -3141,8 +3141,8 @@
 						const t = o.error && o.error.fields ? o.error.fields[0].msg : s.fbt._("Could not update community broadcasting settings", null, {
 								hk: "3Uw7zu"
 							}),
-							n = Object(c.d)(t, u.b.Error);
-						await r(Object(c.e)({
+							n = Object(c.e)(t, u.b.Error);
+						await r(Object(c.f)({
 							...n,
 							duration: c.a
 						})), r(_({
@@ -3152,8 +3152,8 @@
 					const l = s.fbt._("Community broadcasting settings saved", null, {
 							hk: "GTwrg"
 						}),
-						p = Object(c.d)(l, u.b.SuccessCommunity);
-					await r(Object(c.e)({
+						p = Object(c.e)(l, u.b.SuccessCommunity);
+					await r(Object(c.f)({
 						...p,
 						duration: c.a
 					})), r(m({
@@ -3998,7 +3998,7 @@
 					}));
 					const i = await Object(o.a)(n(), e),
 						u = `error-block-${e}`;
-					if (i.ok) i.body.name && t(f(i.body)), i.body.id && t(Object(a.f)(i.body.id)), t(c.f(u)), t(c.e({
+					if (i.ok) i.body.name && t(f(i.body)), i.body.id && t(Object(a.f)(i.body.id)), t(c.g(u)), t(c.f({
 						kind: d.b.SuccessCommunity,
 						text: s.fbt._("{username} is now blocked", [s.fbt._param("username", e)], {
 							hk: "MI2y8"
@@ -4009,7 +4009,7 @@
 							type: i.error ? i.error.type : "Unknown error",
 							username: e
 						};
-						t(y(r)), t(c.e({
+						t(y(r)), t(c.f({
 							id: u,
 							kind: d.b.Error,
 							text: s.fbt._("An error has occured. Please try again later", null, {
@@ -4032,12 +4032,12 @@
 						name: e
 					})), (await Object(o.c)(n(), p, e)).ok ? (t(I({
 						name: e
-					})), b && b.id && t(Object(a.h)(b.id)), t(c.e({
+					})), b && b.id && t(Object(a.h)(b.id)), t(c.f({
 						kind: d.b.SuccessCommunity,
 						text: s.fbt._("{username} is now unblocked", [s.fbt._param("username", e)], {
 							hk: "4CEi6N"
 						})
-					}))) : (t(c.e({
+					}))) : (t(c.f({
 						kind: d.b.Error,
 						text: s.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
@@ -4140,12 +4140,12 @@
 				}) => {
 					t(l());
 					const d = await Object(c.e)(n(), e);
-					d.ok ? d.body.name && (t(p(d.body)), t(a.e({
+					d.ok ? d.body.name && (t(p(d.body)), t(a.f({
 						kind: o.b.SuccessCommunity,
 						text: s.fbt._("Changes saved", null, {
 							hk: "3cOmlv"
 						})
-					}))) : (t(b()), t(a.e({
+					}))) : (t(b()), t(a.f({
 						kind: o.b.Error,
 						text: s.fbt._("An error has occured. Please try again later", null, {
 							hk: "3Dszn7"
@@ -4158,14 +4158,14 @@
 						name: e
 					})), (await Object(c.d)(n(), e)).ok ? (t(O({
 						name: e
-					})), t(a.e({
+					})), t(a.f({
 						kind: o.b.SuccessCommunity,
 						text: s.fbt._("Changes saved", null, {
 							hk: "2o6UcC"
 						})
 					}))) : (t(h({
 						name: e
-					})), t(a.e({
+					})), t(a.f({
 						kind: o.b.Error,
 						text: s.fbt._("An error has occured. Please try again later", null, {
 							hk: "3Dszn7"
@@ -23384,7 +23384,7 @@
 				l = e => e === n.G.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.wd)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.yd)(t))
 		},
 		"./src/reddit/selectors/experiments/inboxAppBadgingGql.ts": function(e, t, r) {
 			"use strict";
@@ -23397,11 +23397,11 @@
 				c = r("./src/reddit/selectors/experiments/utils.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.Xb,
+					experimentName: n.Zb,
 					experimentEligibilitySelector: i
 				}), c.a),
 				i = e => Object(o.J)(e) || Object(o.K)(e),
-				u = Object(s.a)(d, e => e === n.dc.Enabled)
+				u = Object(s.a)(d, e => e === n.fc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, r) {
 			"use strict";
@@ -23413,8 +23413,10 @@
 				return f
 			})), r.d(t, "a", (function() {
 				return E
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "f", (function() {
 				return m
+			})), r.d(t, "e", (function() {
+				return O
 			}));
 			var s = r("./node_modules/reselect/es/index.js"),
 				n = r("./src/reddit/constants/experiments.ts"),
@@ -23422,27 +23424,32 @@
 				c = r("./src/reddit/selectors/experiments/utils.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.ac,
+					experimentName: n.cc,
 					experimentEligibilitySelector: i
 				}), c.a),
 				i = e => Object(o.J)(e) || Object(o.K)(e),
-				u = Object(s.a)(d, e => e === n.gc.Redesign),
+				u = Object(s.a)(d, e => e === n.ic.Redesign),
 				l = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.Zb,
+					experimentName: n.bc,
 					experimentEligibilitySelector: i
 				}), c.a),
-				p = Object(s.a)(l, e => e === n.fc.Enabled),
+				p = Object(s.a)(l, e => e === n.hc.Enabled),
 				b = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: n.Yb,
+					experimentName: n.ac,
 					experimentEligibilitySelector: i
 				}), c.a),
-				f = Object(s.a)(b, e => e === n.ec.Enabled),
+				f = Object(s.a)(b, e => e === n.gc.Enabled),
 				y = Object(s.a)(e => Object(a.c)(e, {
 					experimentName: n.R,
 					experimentEligibilitySelector: i
 				}), c.a),
-				E = Object(s.a)(y, e => e === n.db.NoOverflow),
-				m = Object(s.a)(y, e => e === n.db.UndoBar)
+				E = Object(s.a)(y, e => e === n.eb.NoOverflow),
+				m = Object(s.a)(y, e => e === n.eb.UndoBar),
+				_ = Object(s.a)(e => Object(a.c)(e, {
+					experimentName: n.T,
+					experimentEligibilitySelector: i
+				}), c.a),
+				O = Object(s.a)(u, _, (e, t) => e && t === n.gb.Enabled)
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(e, t, r) {
 			"use strict";
@@ -23700,4 +23707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.27cbb19c3da3c78f06df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.12ce5ba68f065eb27008.js.map

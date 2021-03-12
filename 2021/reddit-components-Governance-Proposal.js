@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.2446b342bebb0c8468c4.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.c78da705d8c384d8e701.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -106,7 +106,7 @@
 				o = n("./src/reddit/models/Toast/index.ts");
 
 			function a(e, t) {
-				e(Object(r.e)({
+				e(Object(r.f)({
 					duration: 5e3,
 					kind: o.b.Error,
 					text: Object(s.a)(t)
@@ -231,7 +231,7 @@
 					u.ok ? (n(T({
 						...u.body,
 						subredditId: e.subredditId
-					})), n(Object(c.e)({
+					})), n(Object(c.f)({
 						kind: E.b.SuccessCommunity,
 						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(o.a)(e.amount)), r.fbt._param("tokenName", Object(_.n)(s(), {
 							subredditId: e.subredditId
@@ -1329,4 +1329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.2446b342bebb0c8468c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.c78da705d8c384d8e701.js.map

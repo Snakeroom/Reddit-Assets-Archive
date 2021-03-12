@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.4e631d6fc891e380c037.js
-// Retrieved at 3/11/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.345bad71a58f9a69e78d.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RequestToJoinPrivateSubredditModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less": function(e, t, a) {
@@ -55,7 +55,7 @@
 					q = n.fbt._("Request to join r/{subreddit} sent", [n.fbt._param("subreddit", h)], {
 						hk: "3Ro26f"
 					}),
-					w = Object(c.d)(q, C.b.SuccessCommunity);
+					w = Object(c.e)(q, C.b.SuccessCommunity);
 				return r.a.createElement(k, {
 					className: E.a.requestModal
 				}, r.a.createElement(u.h, null, r.a.createElement(f.a, null, r.a.createElement("div", null, r.a.createElement("div", {
@@ -86,7 +86,7 @@
 					hk: "2TSLl5"
 				})), r.a.createElement(u.q, {
 					onClick: () => {
-						e(Object(x.b)(v.b.ContentGate)), t(Object(d.n)(`r/${h}`, a, v.e.View)), j(), t(Object(c.e)(w))
+						e(Object(x.b)(v.b.ContentGate)), t(Object(d.n)(`r/${h}`, a, v.e.View)), j(), t(Object(c.f)(w))
 					}
 				}, n.fbt._("Send Request", null, {
 					hk: "1UMaEr"
@@ -273,4 +273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.4e631d6fc891e380c037.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.345bad71a58f9a69e78d.js.map

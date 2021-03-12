@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.8466b395c727f73a3bfd.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.19d100eb78d5cc49e932.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -75,7 +75,7 @@
 				b = n("./src/reddit/selectors/gov.ts"),
 				p = n("./node_modules/fbt/lib/FbtPublic.js");
 			const g = () => async (e, t) => {
-				e(Object(i.e)({
+				e(Object(i.f)({
 					kind: m.b.Error,
 					text: p.fbt._("Could not upload image", null, {
 						hk: "2t0F9P"
@@ -1210,4 +1210,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.8466b395c727f73a3bfd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.19d100eb78d5cc49e932.js.map

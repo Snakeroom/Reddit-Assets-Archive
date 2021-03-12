@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.44585aabf6e3ddc1fefe.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.7178f9f38941a0bb9786.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
@@ -167,7 +167,7 @@
 					const i = await Object(c.b)(s.gqlContext);
 					switch (Object(f.b)(), i) {
 						case c.a.Success:
-							v.k(o), e && t(Object(g.e)({
+							v.k(o), e && t(Object(g.f)({
 								kind: O.b.SuccessCommunity,
 								text: n.fbt._("Changes saved", null, {
 									hk: "wGH5U"
@@ -188,7 +188,7 @@
 					const i = await Object(l.a)();
 					if (i) {
 						const s = await i.pushManager.getSubscription();
-						s && (s.unsubscribe(), Object(f.b)(), e && t(Object(g.e)({
+						s && (s.unsubscribe(), Object(f.b)(), e && t(Object(g.f)({
 							kind: O.b.SuccessCommunity,
 							text: n.fbt._("Changes saved", null, {
 								hk: "wGH5U"
@@ -329,4 +329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.44585aabf6e3ddc1fefe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.7178f9f38941a0bb9786.js.map

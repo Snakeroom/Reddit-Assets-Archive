@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.c83ec3082cb2d277194c.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.67d979f7e9d424cf0136.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -179,7 +179,7 @@
 				o = n("./src/reddit/models/Toast/index.ts");
 
 			function i(e, t) {
-				e(Object(r.e)({
+				e(Object(r.f)({
 					duration: 5e3,
 					kind: o.b.Error,
 					text: Object(s.a)(t)
@@ -304,7 +304,7 @@
 					u.ok ? (n(T({
 						...u.body,
 						subredditId: e.subredditId
-					})), n(Object(c.e)({
+					})), n(Object(c.f)({
 						kind: f.b.SuccessCommunity,
 						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(o.a)(e.amount)), r.fbt._param("tokenName", Object(C.n)(s(), {
 							subredditId: e.subredditId
@@ -553,7 +553,7 @@
 					onWalletRemoved: () => {
 						e(Object(p.h)({
 							subredditId: t.subredditId
-						})), e(Object(j.e)({
+						})), e(Object(j.f)({
 							kind: M.b.SuccessCommunityGreen,
 							text: s.fbt._("Wallet removed successfully!", null, {
 								hk: "3LDwnT"
@@ -1724,4 +1724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.c83ec3082cb2d277194c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.67d979f7e9d424cf0136.js.map

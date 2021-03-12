@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c4976bcc766e0d3bf917.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ba8c88dc277981a7480c.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1220,16 +1220,16 @@
 								postIds: e,
 								posts: r
 							} = t, s = Object(W.d)(m, {
-								experimentName: l.qc
+								experimentName: l.sc
 							});
 							n(Object(a.a)(Object(d.c)(e, r, null == s ? void 0 : s.variant)))
 						}
-						n(L.f(y)), n(Object(Y.b)($.a.FRONTPAGE))
+						n(L.g(y)), n(Object(Y.b)($.a.FRONTPAGE))
 					} else n(ce({
 						error: g.error,
 						key: e,
 						...g.body
-					})), n(L.e({
+					})), n(L.f({
 						id: y,
 						kind: q.b.Error,
 						text: r.fbt._("Sorry, we couldn't load posts for this page.", null, {
@@ -1346,7 +1346,7 @@
 										postIds: e,
 										posts: n
 									} = _, r = Object(W.d)(s, {
-										experimentName: l.qc
+										experimentName: l.sc
 									});
 									t(Object(a.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 								}
@@ -2468,8 +2468,8 @@
 						return (!t || !n) && (!Object($e.b)(e) && function(e) {
 							return Object(Qe.c)(e, {
 								experimentEligibilitySelector: Xe.K,
-								experimentName: Ue.X
-							}) === Ue.Cb
+								experimentName: Ue.Y
+							}) === Ue.Eb
 						}(e))
 					}
 				}),
@@ -5819,7 +5819,7 @@
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: r.J
-				}) === r.ab.Treatment
+				}) === r.bb.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, n) {
 			"use strict";
@@ -5858,4 +5858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c4976bcc766e0d3bf917.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ba8c88dc277981a7480c.js.map

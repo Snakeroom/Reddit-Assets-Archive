@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.a912f12389f411e4de9a.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.89e481a12ba199bfaff5.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -1534,7 +1534,7 @@
 							});
 							d.body && "RESTRICTED_PAGE" === d.body.reason && (e = n.fbt._("Cannot create/edit restricted page", null, {
 								hk: "2pUIkm"
-							})), o(Object(p.e)({
+							})), o(Object(p.f)({
 								kind: E.b.Error,
 								text: e
 							}))
@@ -1898,7 +1898,7 @@
 				}),
 				H = Object(r.b)(L, e => ({
 					onCopyPageUrl: t => e((e => async t => {
-						Object(l.a)(e) && t(Object(m.e)(Object(m.d)(n.fbt._("Copied page URL", null, {
+						Object(l.a)(e) && t(Object(m.f)(Object(m.e)(n.fbt._("Copied page URL", null, {
 							hk: "4qKWjj"
 						}), f.b.SuccessCommunity)))
 					})(t))
@@ -2158,4 +2158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.a912f12389f411e4de9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.89e481a12ba199bfaff5.js.map

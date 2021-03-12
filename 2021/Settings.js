@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.d29ca84803574a01ab49.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.20fb66516372367c4ebb.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -577,7 +577,7 @@
 						p.c.captureException(a)
 					}
 				}, W = Object(m.a)(h.N), H = Object(m.a)(h.O), G = Object(m.a)(h.P), z = e => async (t, n) => {
-					await t(W(e)), t(Object(d.e)({
+					await t(W(e)), t(Object(d.f)({
 						kind: b.b.Error,
 						duration: d.a,
 						text: e
@@ -618,7 +618,7 @@
 					t(q(e)), t(Object(x.f)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
-					})), t(Object(y.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.e)({
+					})), t(Object(y.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.f)({
 						kind: b.b.SuccessCommunityGreen,
 						duration: d.a,
 						text: s.fbt._({
@@ -864,7 +864,7 @@
 						const e = s.fbt._("Connected accounts", null, {
 							hk: "bdpfW"
 						});
-						t(Object(h.e)({
+						t(Object(h.f)({
 							text: e
 						})), Object(I.b)(l)
 					}
@@ -6176,16 +6176,6 @@
 				dynamicTwoCol: "_3lhzE6Cg3SSeQGIHuLjILb"
 			}
 		},
-		"./src/reddit/models/NotificationSettingsLayout/index.ts": function(e, t, n) {
-			"use strict";
-			var s;
-			n.d(t, "a", (function() {
-					return s
-				})),
-				function(e) {
-					e.Email = "EMAIL", e.Push = "PUSH"
-				}(s || (s = {}))
-		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, n) {
 			"use strict";
 			var s, a, r;
@@ -6286,7 +6276,7 @@
 				H = Object(o.b)(W, e => ({
 					changeEmail: t => e(Object(_.t)(t)),
 					sendResetEmail: t => e(Object(_.w)(t)),
-					showErrorToast: t => e(Object(T.e)({
+					showErrorToast: t => e(Object(T.f)({
 						duration: T.a,
 						kind: D.b.Error,
 						text: t
@@ -7204,7 +7194,7 @@
 					stripeConnected: on.u
 				}),
 				bn = Object(o.b)(pn, e => ({
-					onError: t => e(Object(T.e)({
+					onError: t => e(Object(T.f)({
 						duration: 5e3,
 						kind: D.b.Error,
 						text: Object(an.a)(t)
@@ -7707,7 +7697,7 @@
 					savedPayments: on.p
 				}),
 				_s = Object(o.b)(Cs, e => ({
-					onError: t => e(Object(T.e)({
+					onError: t => e(Object(T.f)({
 						duration: 5e3,
 						kind: D.b.Error,
 						text: Object(an.a)(t)
@@ -9382,4 +9372,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d29ca84803574a01ab49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.20fb66516372367c4ebb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.a6ca2bbe5a17babfb9a5.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.db0e34c52571348fdbe0.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -960,7 +960,7 @@
 						u($({
 							draftKey: o,
 							error: v.error
-						})), u(Object(h.e)({
+						})), u(Object(h.f)({
 							duration: h.a,
 							kind: N.b.Error,
 							text: t
@@ -1052,7 +1052,7 @@
 								draftKey: o,
 								content: t
 							})), s(Object(u.c)(e))
-						} else s(Object(u.a)(o)), s(Object(h.e)({
+						} else s(Object(u.a)(o)), s(Object(h.f)({
 							duration: h.a,
 							kind: N.b.Error,
 							text: n.fbt._("Something went wrong", null, {
@@ -1356,7 +1356,7 @@
 							n = s.fbt._("Undo", null, {
 								hk: "46OwLP"
 							});
-						t(Object(u.e)({
+						t(Object(u.f)({
 							text: o,
 							kind: x.b.Undo,
 							buttonText: n,
@@ -1602,7 +1602,7 @@
 						editorKey: e,
 						editorMode: t,
 						content: C.body.output
-					})), s(_(t))) : (s(h(y)), s(Object(r.e)({
+					})), s(_(t))) : (s(h(y)), s(Object(r.f)({
 						duration: r.a,
 						kind: u.b.Error,
 						text: n.fbt._("Something went wrong", null, {
@@ -1619,7 +1619,7 @@
 					}) : n.fbt._("You can set Fancy Pants as the default editor mode in the settings", null, {
 						hk: "4kQi5k"
 					});
-					t(Object(r.e)({
+					t(Object(r.f)({
 						buttonAction: async () => {
 							window.open("/settings/feed")
 						},
@@ -4540,8 +4540,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.wc
-				}) === n.Fc.Enabled
+					experimentName: n.yc
+				}) === n.Hc.Enabled
 			}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4570,4 +4570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a6ca2bbe5a17babfb9a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.db0e34c52571348fdbe0.js.map

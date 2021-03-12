@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.11853c2056b39286b48c.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.b99c29a7c3737a76bea1.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -175,7 +175,7 @@
 						await y(x(e))
 					}
 				}, _ = Object(n.a)(O.i), E = Object(n.a)(O.h), x = e => async (t, r) => {
-					await t(E(e)), t(Object(o.e)({
+					await t(E(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
 						text: e
@@ -192,7 +192,7 @@
 					const d = a.fbt._("Community award successfully created!", null, {
 						hk: "3UvmDa"
 					});
-					r(Object(o.e)({
+					r(Object(o.f)({
 						kind: c.b.SuccessCommunity,
 						text: d
 					}))
@@ -247,7 +247,7 @@
 						t(D(e))
 					}
 				}, P = Object(n.a)(O.I), q = Object(n.a)(O.H), N = Object(n.a)(O.M), T = Object(n.a)(O.G), D = e => async (t, r) => {
-					await t(T(e)), t(Object(o.e)({
+					await t(T(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
 						text: e
@@ -345,7 +345,7 @@
 							const d = a.fbt._("{award name} Award successfully deleted!", [a.fbt._param("award name", i.name)], {
 								hk: "3ZQs5u"
 							});
-							r(Object(o.e)({
+							r(Object(o.f)({
 								kind: c.b.SuccessCommunity,
 								duration: o.a,
 								text: d
@@ -357,7 +357,7 @@
 						await r(W(e))
 					}
 				}, J = Object(n.a)(O.cb), B = Object(n.a)(O.db), H = Object(n.a)(O.bb), W = e => async (t, r) => {
-					await t(H(e)), t(Object(o.e)({
+					await t(H(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
 						text: e
@@ -381,7 +381,7 @@
 					} catch (b) {
 						i.c.captureException(b)
 					} finally {
-						await r(u), await r(Object(o.e)({
+						await r(u), await r(Object(o.f)({
 							text: s,
 							duration: o.a,
 							kind: l
@@ -406,7 +406,7 @@
 					} catch (b) {
 						i.c.captureException(b)
 					} finally {
-						await r(u), await r(Object(o.e)({
+						await r(u), await r(Object(o.f)({
 							text: s,
 							duration: o.a,
 							kind: l
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.11853c2056b39286b48c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.b99c29a7c3737a76bea1.js.map

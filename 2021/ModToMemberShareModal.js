@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.4e6922df23b3d461e88b.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.00c1199e130e4dbc8e2a.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -201,7 +201,7 @@
 				}),
 				F = Object(i.b)(v, (e, t) => ({
 					onClose: () => e(Object(c.f)()),
-					showSuccessToast: () => e(Object(m.e)({
+					showSuccessToast: () => e(Object(m.f)({
 						text: n.fbt._("Messages sent!", null, {
 							hk: "187c4y"
 						})
@@ -457,4 +457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.4e6922df23b3d461e88b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.00c1199e130e4dbc8e2a.js.map

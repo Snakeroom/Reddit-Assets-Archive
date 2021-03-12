@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.4fa1b132cba603a86ac0.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.c682d3c017b0695c6c46.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -310,7 +310,7 @@
 						const e = {
 							username: t.username
 						};
-						s(Object(l.e)({
+						s(Object(l.f)({
 							kind: g.b.SuccessMod,
 							text: n.fbt._("Successfully banned a user", null, {
 								hk: "1kORpS"
@@ -323,7 +323,7 @@
 						const e = a()(I, "body.json.errors[0][1]", n.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
-						s(Object(l.e)({
+						s(Object(l.f)({
 							kind: g.b.Error,
 							text: e,
 							duration: 3e3
@@ -345,7 +345,7 @@
 					if (d.ok) r(se({
 						subredditId: e,
 						userId: t
-					})), r(Object(l.e)({
+					})), r(Object(l.f)({
 						kind: g.b.SuccessMod,
 						text: n.fbt._("Successfully unbanned a user", null, {
 							hk: "OgqK6"
@@ -355,7 +355,7 @@
 						const e = a()(d, "body.json.errors[0][1]", n.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
-						r(Object(l.e)({
+						r(Object(l.f)({
 							kind: g.b.Error,
 							text: e,
 							duration: 3e3
@@ -2265,4 +2265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.4fa1b132cba603a86ac0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.c682d3c017b0695c6c46.js.map

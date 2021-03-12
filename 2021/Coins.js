@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.d8b6d4e456a26931e54a.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.8cd762f4acdac418b390.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -774,7 +774,7 @@
 							t = n.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
-						r(Object(u.e)({
+						r(Object(u.f)({
 							kind: y.b.Error,
 							duration: u.a,
 							text: e || t
@@ -1219,7 +1219,7 @@
 							})), e(Object(u.w)())
 						}
 					} catch (m) {
-						Object(r.b)() || console.error(m), e(Object(l.e)({
+						Object(r.b)() || console.error(m), e(Object(l.f)({
 							kind: d.b.Error,
 							text: n.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
@@ -2406,4 +2406,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.d8b6d4e456a26931e54a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.8cd762f4acdac418b390.js.map

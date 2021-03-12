@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c725d75bb25ac1a19e20.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.03399502e72590ede481.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -547,7 +547,7 @@
 					u.ok ? (r(k({
 						...u.body,
 						subredditId: e.subredditId
-					})), r(Object(o.e)({
+					})), r(Object(o.f)({
 						kind: p.b.SuccessCommunity,
 						text: n.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [n.fbt._param("amount", Object(l.a)(e.amount)), n.fbt._param("tokenName", Object(b.n)(a(), {
 							subredditId: e.subredditId
@@ -1160,10 +1160,10 @@
 					onClose: h,
 					onTransactionSuccess: async e => {
 						h(), u(function(e) {
-							const t = Object(M.d)(d.fbt._("Burning your {pointsName}...", [d.fbt._param("pointsName", e)], {
+							const t = Object(M.e)(d.fbt._("Burning your {pointsName}...", [d.fbt._param("pointsName", e)], {
 								hk: "2LoC1g"
 							}), A.b.SuccessCommunity);
-							return t.duration = U, Object(M.e)(t)
+							return t.duration = U, Object(M.f)(t)
 						}(c));
 						try {
 							await async function(e, t, r, n, a) {
@@ -1178,14 +1178,14 @@
 									subredditId: n
 								}))
 							}(u, o, e.hash, s.id, p), m(Object(O.b)("burn_link", f, E)), u(function(e) {
-								const t = Object(M.d)(d.fbt._("Your {pointsName} were burnt!", [d.fbt._param("pointsName", e)], {
+								const t = Object(M.e)(d.fbt._("Your {pointsName} were burnt!", [d.fbt._param("pointsName", e)], {
 									hk: "1BHX95"
 								}), A.b.SuccessCommunityGreen);
-								return t.duration = U, Object(M.e)(t)
+								return t.duration = U, Object(M.f)(t)
 							}(c))
 						} catch (t) {
 							F(t.toString()), u(function(e) {
-								return Object(M.e)(Object(M.d)(d.fbt._("There was an error while burning your {pointsName}. Please try again later", [d.fbt._param("pointsName", e)], {
+								return Object(M.f)(Object(M.e)(d.fbt._("There was an error while burning your {pointsName}. Please try again later", [d.fbt._param("pointsName", e)], {
 									hk: "48Un5w"
 								}), A.b.Error))
 							}(c))
@@ -2034,4 +2034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c725d75bb25ac1a19e20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.03399502e72590ede481.js.map

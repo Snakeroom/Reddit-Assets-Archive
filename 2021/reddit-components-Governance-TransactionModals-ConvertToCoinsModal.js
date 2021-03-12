@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.9aa67161fe6fe7623000.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.d58fda4c9d35ca47525c.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -778,7 +778,7 @@
 						p.c.captureException(a)
 					}
 				}, F = Object(m.a)(h.N), G = Object(m.a)(h.O), V = Object(m.a)(h.P), q = e => async (t, r) => {
-					await t(F(e)), t(Object(d.e)({
+					await t(F(e)), t(Object(d.f)({
 						kind: f.b.Error,
 						duration: d.a,
 						text: e
@@ -819,7 +819,7 @@
 					t(W(e)), t(Object(E.f)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
-					})), t(Object(x.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.e)({
+					})), t(Object(x.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.f)({
 						kind: f.b.SuccessCommunityGreen,
 						duration: d.a,
 						text: n.fbt._({
@@ -1050,7 +1050,7 @@
 					u.ok ? (r(k({
 						...u.body,
 						subredditId: e.subredditId
-					})), r(Object(i.e)({
+					})), r(Object(i.f)({
 						kind: h.b.SuccessCommunity,
 						text: n.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [n.fbt._param("amount", Object(s.a)(e.amount)), n.fbt._param("tokenName", Object(v.n)(a(), {
 							subredditId: e.subredditId
@@ -1316,7 +1316,7 @@
 				b = Object(i.a)(f.W),
 				v = Object(i.a)(f.V),
 				g = e => async (t, r) => {
-					await t(v(e)), t(Object(l.e)({
+					await t(v(e)), t(Object(l.f)({
 						kind: d.b.Error,
 						duration: l.a,
 						text: e
@@ -1856,10 +1856,10 @@
 					onClose: P,
 					onTransactionSuccess: async e => {
 						P(), w(function() {
-							const e = Object(l.d)(o.fbt._("Processing your conversion...", null, {
+							const e = Object(l.e)(o.fbt._("Processing your conversion...", null, {
 								hk: "4dA09t"
 							}), d.b.SuccessCommunity);
-							return e.duration = 15e3, Object(l.e)(e)
+							return e.duration = 15e3, Object(l.f)(e)
 						}()), async function(e, t, r, n, a) {
 							await Object(V.a)(t, r);
 							const s = Object(D.a)(n.id, n.name, {
@@ -1875,13 +1875,13 @@
 							}))
 						}(w, m, e.hash, u, E).then(() => {
 							N(Object(q.b)("coins", f, new S.a(I).dividedBy(x).toFixed())), w(function() {
-								const e = Object(l.d)(o.fbt._("Your Coins are ready!", null, {
+								const e = Object(l.e)(o.fbt._("Your Coins are ready!", null, {
 									hk: "7ewJ6"
 								}), d.b.SuccessCommunityGreen);
-								return e.duration = 15e3, Object(l.e)(e)
+								return e.duration = 15e3, Object(l.f)(e)
 							}())
 						}).catch(e => {
-							A(e.toString()), w(Object(l.e)(Object(l.d)(o.fbt._("There was an error while purchasing your Coins. Please try again later", null, {
+							A(e.toString()), w(Object(l.f)(Object(l.e)(o.fbt._("There was an error while purchasing your Coins. Please try again later", null, {
 								hk: "nEHTT"
 							}), d.b.Error)))
 						})
@@ -2831,4 +2831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.9aa67161fe6fe7623000.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.d58fda4c9d35ca47525c.js.map

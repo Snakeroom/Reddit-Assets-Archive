@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.da04281d79d3eed120bd.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e0f32cbc945ef29c0e80.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -45,16 +45,16 @@
 				const E = C && !m.displaySettings.isEnabled && !m.permissions.canAssignOwn;
 				(v !== m.permissions.canAssignOwn || E) && f.push(s(p(e, v)));
 				const x = (await Promise.all(f)).every(Boolean);
-				return x || s(Object(l.e)({
+				return x || s(Object(l.f)({
 					kind: u.b.Error,
 					text: a.fbt._("Something went wrong", null, {
 						hk: "4rfwXL"
 					})
 				})), x
 			}, v = e => async (t, s) => {
-				t(Object(n.a)(e) ? Object(l.e)(Object(l.d)(a.fbt._("Copied flair ID!", null, {
+				t(Object(n.a)(e) ? Object(l.f)(Object(l.e)(a.fbt._("Copied flair ID!", null, {
 					hk: "3xKLOo"
-				}), u.b.SuccessCommunity)) : Object(l.e)(Object(l.d)(a.fbt._("Something went wrong", null, {
+				}), u.b.SuccessCommunity)) : Object(l.f)(Object(l.e)(a.fbt._("Something went wrong", null, {
 					hk: "4rfwXL"
 				}), u.b.Error)))
 			}, E = Object(o.a)(f.a), x = Object(o.a)(f.b), T = (e, t) => async (s, a) => {
@@ -2069,4 +2069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.da04281d79d3eed120bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.e0f32cbc945ef29c0e80.js.map

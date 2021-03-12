@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6a6701ab55594d5375f8.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.c8f52f64e37da671a052.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -81,7 +81,7 @@
 							t = a.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
-						n(Object(p.e)({
+						n(Object(p.f)({
 							kind: j.b.Error,
 							duration: p.a,
 							text: e || t
@@ -723,7 +723,7 @@
 							})), e(Object(p.w)())
 						}
 					} catch (u) {
-						Object(n.b)() || console.error(u), e(Object(i.e)({
+						Object(n.b)() || console.error(u), e(Object(i.f)({
 							kind: l.b.Error,
 							text: a.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
@@ -842,7 +842,7 @@
 							kind: j.b.Error,
 							text: t
 						};
-						return e(Object(b.e)(r))
+						return e(Object(b.f)(r))
 					},
 					onPaymentSelected: t => e(Object(p.selectPaymentMethod)(t)),
 					requestPurchaseCatalog: t => e(Object(u.b)(t)),
@@ -1151,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6a6701ab55594d5375f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.c8f52f64e37da671a052.js.map

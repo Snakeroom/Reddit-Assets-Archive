@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.b8777dfba6de42ae20cc.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.06ba2eb621087c1757fc.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/graphql/operations/RequestUserDataExport.json": function(e) {
@@ -259,12 +259,12 @@
 					userDataRequestPageLoadingApiState: _.b
 				}),
 				S = Object(i.b)(y, e => ({
-					showError: t => e(o.e({
+					showError: t => e(o.f({
 						id: "requestUserDataExportErrorToast",
 						kind: E.b.Error,
 						text: t
 					})),
-					dismissErrorToast: () => e(o.f("requestUserDataExportErrorToast"))
+					dismissErrorToast: () => e(o.g("requestUserDataExportErrorToast"))
 				})),
 				k = "2005-06-23",
 				w = new Date,
@@ -552,4 +552,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.b8777dfba6de42ae20cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.06ba2eb621087c1757fc.js.map

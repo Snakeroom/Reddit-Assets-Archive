@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.591da85f82654513124b.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.054524f7a8f8774da3fc.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-helmet/es/Helmet.js": function(e, t, n) {
@@ -963,7 +963,7 @@
 							})), e(Object(m.w)())
 						}
 					} catch (u) {
-						Object(a.b)() || console.error(u), e(Object(l.e)({
+						Object(a.b)() || console.error(u), e(Object(l.f)({
 							kind: d.b.Error,
 							text: r.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
@@ -1741,7 +1741,7 @@
 				A = n("./src/reddit/components/TitleTagManager/index.tsx"),
 				L = n("./src/reddit/constants/experiments.ts"),
 				B = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const R = Object(B.a)(L.zb);
+			const R = Object(B.a)(L.Bb);
 			var G = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				F = n("./src/reddit/selectors/user.ts"),
 				U = n("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
@@ -2497,4 +2497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.591da85f82654513124b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.054524f7a8f8774da3fc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.696a925d2a8e0b05ee25.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.c2b78626200096e6fbc7.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -415,7 +415,7 @@
 				o = n("./src/reddit/models/Toast/index.ts");
 
 			function a(e, t) {
-				e(Object(s.e)({
+				e(Object(s.f)({
 					duration: 5e3,
 					kind: o.b.Error,
 					text: Object(r.a)(t)
@@ -1129,7 +1129,7 @@
 				subredditId: t
 			}) => ({
 				onDismissBanner: () => e(Object(u.a)(t, S.a.LFG)),
-				onError: t => e(Object(m.e)({
+				onError: t => e(Object(m.f)({
 					duration: 5e3,
 					kind: N.b.Error,
 					text: Object(x.a)(t)
@@ -2284,4 +2284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.696a925d2a8e0b05ee25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.c2b78626200096e6fbc7.js.map

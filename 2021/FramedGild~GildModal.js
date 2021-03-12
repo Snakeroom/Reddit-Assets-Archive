@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.df08b7a1bf9776d280d7.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f096d09595a5a01f6955.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -516,7 +516,7 @@
 						t().gild.api.pending && e(X())
 					}, 2e3)
 				}, $ = Object(r.a)(q.q), ee = e => async (t, s) => {
-					await t($(e)), t(Object(l.e)({
+					await t($(e)), t(Object(l.f)({
 						kind: j.b.Error,
 						duration: l.a,
 						text: e
@@ -602,7 +602,7 @@
 						minSize: 64,
 						postOrCommentId: m
 					});
-					t(Object(l.e)({
+					t(Object(l.f)({
 						customIconAsset: M,
 						kind: j.b.SuccessAward,
 						text: b > 0 ? g({
@@ -752,7 +752,7 @@
 							t = n.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
-						r(Object(u.e)({
+						r(Object(u.f)({
 							kind: w.b.Error,
 							duration: u.a,
 							text: e || t
@@ -1394,7 +1394,7 @@
 							})), e(Object(u.w)())
 						}
 					} catch (m) {
-						Object(r.b)() || console.error(m), e(Object(c.e)({
+						Object(r.b)() || console.error(m), e(Object(c.f)({
 							kind: l.b.Error,
 							text: n.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
@@ -2567,7 +2567,7 @@
 				},
 				purchaseCatalogRequested: t => e(Object(_.b)(t)),
 				selectAward: t => e(Object(j.a)(t)),
-				displayUnusableAwardError: () => e(Object(C.e)({
+				displayUnusableAwardError: () => e(Object(C.f)({
 					kind: g.b.Error,
 					duration: C.a,
 					text: i.fbt._("This award is not available on this content.", null, {
@@ -4209,12 +4209,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case b.dd.SmIcon:
+						case b.fd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.dd.SmIconHc:
+						case b.fd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5183,12 +5183,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Yc
+						experimentName: n.ad
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.dd.SmIcon || t === n.dd.SmIconHc
+					return t === n.fd.SmIcon || t === n.fd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5211,4 +5211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.df08b7a1bf9776d280d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f096d09595a5a01f6955.js.map

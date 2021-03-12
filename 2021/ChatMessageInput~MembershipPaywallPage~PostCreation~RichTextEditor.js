@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f9ff3aa9b298789489c0.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.7c757a1bde51cd01dd84.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -576,11 +576,11 @@
 						const {
 							uploads: r
 						} = s(), i = t.map(t => r[t]).filter(t => t.status === y.a.FAILED && !t.metadata.mimetype).map(t => t.error), a = i.length > e ? e - 1 : i.length, d = i.length - a;
-						i.slice(0, a).forEach(t => n(Object(l.e)({
+						i.slice(0, a).forEach(t => n(Object(l.f)({
 							duration: l.a,
 							kind: T.b.Error,
 							text: Object(c.a)(t)
-						}))), d > 0 && n(Object(l.e)({
+						}))), d > 0 && n(Object(l.f)({
 							duration: l.a,
 							kind: T.b.Error,
 							text: o.fbt._({
@@ -602,20 +602,20 @@
 					let h = !1,
 						m = t;
 					if (p) {
-						if (Object(k.v)(i)) return void n(Object(l.e)({
+						if (Object(k.v)(i)) return void n(Object(l.f)({
 							kind: T.b.Error,
 							text: o.fbt._("Please remove the existing video first. Videos aren't supported within galleries yet.", null, {
 								hk: "3lGxp4"
 							})
 						}));
-						m.some(t => Object(b.l)(t.type)) && n(Object(l.e)({
+						m.some(t => Object(b.l)(t.type)) && n(Object(l.f)({
 							kind: T.b.Error,
 							text: o.fbt._("Videos aren’t supported within galleries...yet", null, {
 								hk: "9Cl20"
 							})
 						})), m = m.filter(t => Object(b.k)(t.type));
 						const t = Math.max(0, u.b - c.length);
-						m.length > t && (n(Object(l.e)({
+						m.length > t && (n(Object(l.f)({
 							kind: T.b.Error,
 							text: o.fbt._("You have hit the limit of {images_limit} images", [o.fbt._param("images_limit", `${u.b}`)], {
 								hk: "6M4kX"
@@ -8458,7 +8458,7 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(o.rb)
+			const r = Object(s.a)(o.tb)
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(t, e, n) {
 			"use strict";
@@ -8528,4 +8528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f9ff3aa9b298789489c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.7c757a1bde51cd01dd84.js.map

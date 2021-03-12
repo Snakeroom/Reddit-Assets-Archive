@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.964369b8e0505e944fac.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.6b3401facc9625a43a68.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -269,7 +269,7 @@
 				}),
 				D = Object(o.b)(P, e => ({
 					onClose: () => e(Object(L.f)()),
-					showSuccessToast: () => e(Object(M.e)({
+					showSuccessToast: () => e(Object(M.f)({
 						text: r.fbt._("Crowd control settings saved!", null, {
 							hk: "1r4rS3"
 						})
@@ -1767,4 +1767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.964369b8e0505e944fac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.6b3401facc9625a43a68.js.map

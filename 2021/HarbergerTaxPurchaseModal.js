@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.244cbc333d1d7b79301a.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.68ef7f7c577556118fb3.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxPurchaseModal"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -115,7 +115,7 @@
 				b = r("./src/reddit/selectors/gov.ts"),
 				p = r("./node_modules/fbt/lib/FbtPublic.js");
 			const h = () => async (e, t) => {
-				e(Object(d.e)({
+				e(Object(d.f)({
 					kind: m.b.Error,
 					text: p.fbt._("Could not upload image", null, {
 						hk: "2t0F9P"
@@ -1202,4 +1202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.244cbc333d1d7b79301a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxPurchaseModal.68ef7f7c577556118fb3.js.map

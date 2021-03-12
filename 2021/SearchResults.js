@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.084c75dbccee32edb5d6.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.ef17c367f5c68f75d59f.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1417,7 +1417,7 @@
 					try {
 						await Object(o.g)("communityIcon", g, e.id)(n, i, u)
 					} catch (E) {
-						return Object(h.a)(Object(d.c)(v, "something went wrong with the uploading the image")), n(Object(a.e)({
+						return Object(h.a)(Object(d.c)(v, "something went wrong with the uploading the image")), n(Object(a.f)({
 							kind: m.b.Error,
 							text: y()
 						})), void n(x())
@@ -1425,13 +1425,13 @@
 					const C = Object(p.c)(i(), {
 						name: "communityIcon"
 					});
-					if (!C) return Object(h.a)(Object(d.c)(v, "image is null")), n(Object(a.e)({
+					if (!C) return Object(h.a)(Object(d.c)(v, "image is null")), n(Object(a.f)({
 						kind: m.b.Error,
 						text: y()
 					})), void n(x());
 					await Object(o.k)(e.id, {
 						communityIcon: C
-					}, c.b.idCard, s)(n, i, u), n(Object(a.e)({
+					}, c.b.idCard, s)(n, i, u), n(Object(a.f)({
 						kind: m.b.SuccessCommunity,
 						text: r.fbt._("Successfully updated Community Icon!", null, {
 							hk: "29LGdg"
@@ -9656,9 +9656,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.Rc.Treatment1 === Object(n.c)(e, {
+			const o = e => r.Tc.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Hc
+				experimentName: r.Jc
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -9767,4 +9767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.084c75dbccee32edb5d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.ef17c367f5c68f75d59f.js.map

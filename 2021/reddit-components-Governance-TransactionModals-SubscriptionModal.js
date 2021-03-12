@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.a6122e54a90931fa692e.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.2d20d86828c1710a1a2b.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -586,7 +586,7 @@
 							subredditId: r,
 							price: t,
 							providerArgs: s
-						})), N(Object(m.b)("subscribe", r, I)), o(Object(l.e)({
+						})), N(Object(m.b)("subscribe", r, I)), o(Object(l.f)({
 							duration: 1e4,
 							kind: b.b.SuccessCommunityGreen,
 							text: n.fbt._("Your purchase was successful! Thank you for your support!", null, {
@@ -609,4 +609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.a6122e54a90931fa692e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.2d20d86828c1710a1a2b.js.map

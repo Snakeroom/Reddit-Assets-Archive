@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.1ccc647b549e23dfd7cc.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.36aea0cb1ce796541ea3.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -110,7 +110,7 @@
 									return t
 							}
 						})(e, o);
-						t(Object(E.e)({
+						t(Object(E.f)({
 							kind: _.b.Error,
 							duration: E.a,
 							text: n
@@ -123,7 +123,7 @@
 					const a = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${r}`)], {
 						hk: "3cBrLk"
 					});
-					t(Object(E.e)({
+					t(Object(E.f)({
 						kind: _.b.SuccessCommunity,
 						text: a
 					}))
@@ -869,4 +869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.1ccc647b549e23dfd7cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.36aea0cb1ce796541ea3.js.map

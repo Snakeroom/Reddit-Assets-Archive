@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.4b29dd8b2d24c36b6b23.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.5d589b937b94569612c5.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -152,7 +152,7 @@
 					}));
 					const a = await Object(d.a)(s(), e),
 						l = `error-block-${e}`;
-					if (a.ok) a.body.name && t(b(a.body)), a.body.id && t(Object(n.f)(a.body.id)), t(i.f(l)), t(i.e({
+					if (a.ok) a.body.name && t(b(a.body)), a.body.id && t(Object(n.f)(a.body.id)), t(i.g(l)), t(i.f({
 						kind: c.b.SuccessCommunity,
 						text: r.fbt._("{username} is now blocked", [r.fbt._param("username", e)], {
 							hk: "MI2y8"
@@ -163,7 +163,7 @@
 							type: a.error ? a.error.type : "Unknown error",
 							username: e
 						};
-						t(h(o)), t(i.e({
+						t(h(o)), t(i.f({
 							id: l,
 							kind: c.b.Error,
 							text: r.fbt._("An error has occured. Please try again later", null, {
@@ -186,12 +186,12 @@
 						name: e
 					})), (await Object(d.c)(s(), u, e)).ok ? (t(R({
 						name: e
-					})), m && m.id && t(Object(n.h)(m.id)), t(i.e({
+					})), m && m.id && t(Object(n.h)(m.id)), t(i.f({
 						kind: c.b.SuccessCommunity,
 						text: r.fbt._("{username} is now unblocked", [r.fbt._param("username", e)], {
 							hk: "4CEi6N"
 						})
-					}))) : (t(i.e({
+					}))) : (t(i.f({
 						kind: c.b.Error,
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
@@ -345,7 +345,7 @@
 					onBlockUser: t => {
 						e(Object(h.h)(t))
 					},
-					showFailToast: () => e(Object(u.e)({
+					showFailToast: () => e(Object(u.f)({
 						kind: x.b.Error,
 						text: s.fbt._("Something went wrong!", null, {
 							hk: "1BEFhz"
@@ -662,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.4b29dd8b2d24c36b6b23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.5d589b937b94569612c5.js.map

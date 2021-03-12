@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.c7cff83333c7275edd56.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.4d7a11f7daa5138dc6a7.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -205,7 +205,7 @@
 						t().gild.api.pending && e(Q())
 					}, 2e3)
 				}, X = Object(a.a)(J.q), ee = e => async (t, s) => {
-					await t(X(e)), t(Object(l.e)({
+					await t(X(e)), t(Object(l.f)({
 						kind: y.b.Error,
 						duration: l.a,
 						text: e
@@ -291,7 +291,7 @@
 						minSize: 64,
 						postOrCommentId: m
 					});
-					t(Object(l.e)({
+					t(Object(l.f)({
 						customIconAsset: T,
 						kind: y.b.SuccessAward,
 						text: w > 0 ? f({
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.c7cff83333c7275edd56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.4d7a11f7daa5138dc6a7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.5ac28a61b4e47defccc7.js
-// Retrieved at 3/11/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.5b27e30537a6741f5173.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
@@ -424,7 +424,7 @@
 					try {
 						await Object(i.g)("communityIcon", f, e.id)(r, a, p)
 					} catch (k) {
-						return Object(b.a)(Object(c.c)(E, "something went wrong with the uploading the image")), r(Object(o.e)({
+						return Object(b.a)(Object(c.c)(E, "something went wrong with the uploading the image")), r(Object(o.f)({
 							kind: u.b.Error,
 							text: y()
 						})), void r(g())
@@ -432,13 +432,13 @@
 					const v = Object(m.c)(a(), {
 						name: "communityIcon"
 					});
-					if (!v) return Object(b.a)(Object(c.c)(E, "image is null")), r(Object(o.e)({
+					if (!v) return Object(b.a)(Object(c.c)(E, "image is null")), r(Object(o.f)({
 						kind: u.b.Error,
 						text: y()
 					})), void r(g());
 					await Object(i.k)(e.id, {
 						communityIcon: v
-					}, d.b.idCard, s)(r, a, p), r(Object(o.e)({
+					}, d.b.idCard, s)(r, a, p), r(Object(o.f)({
 						kind: u.b.SuccessCommunity,
 						text: n.fbt._("Successfully updated Community Icon!", null, {
 							hk: "29LGdg"
@@ -4728,12 +4728,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case h.dd.SmIcon:
+						case h.fd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.dd.SmIconHc:
+						case h.fd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7790,7 +7790,7 @@
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.J
-				}) === n.ab.Treatment
+				}) === n.bb.Treatment
 		},
 		"./src/reddit/selectors/experiments/downToChat.ts": function(e, t, s) {
 			"use strict";
@@ -7800,9 +7800,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const a = e => n.ob.Enabled === Object(r.c)(e, {
+			const a = e => n.qb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: i.K,
-				experimentName: n.nb
+				experimentName: n.pb
 			})
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, s) {
@@ -7828,12 +7828,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: n.Yc
+						experimentName: n.ad
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.dd.SmIcon || t === n.dd.SmIconHc
+					return t === n.fd.SmIcon || t === n.fd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7856,4 +7856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.5ac28a61b4e47defccc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.5b27e30537a6741f5173.js.map

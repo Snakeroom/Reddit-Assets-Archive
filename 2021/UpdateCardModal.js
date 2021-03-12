@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.ef5e3fbed8b86ef76ddd.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.7b4a8a7d4ff4e021c89d.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -903,7 +903,7 @@
 							})
 					}
 				}, T = e => async t => {
-					await t(R()), t(Object(b.e)({
+					await t(R()), t(Object(b.f)({
 						kind: C.b.Error,
 						duration: b.a,
 						text: e
@@ -913,7 +913,7 @@
 					const r = o.fbt._("You successfully updated your payment information!", null, {
 						hk: "3m4P1N"
 					});
-					t(Object(b.e)({
+					t(Object(b.f)({
 						kind: C.b.SuccessCommunity,
 						text: r
 					}))
@@ -1053,4 +1053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.ef5e3fbed8b86ef76ddd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.7b4a8a7d4ff4e021c89d.js.map

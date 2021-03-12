@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.35a8628e170042e7538d.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.36812df4d4399020d17a.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -439,7 +439,7 @@
 				a = r("./src/reddit/models/Toast/index.ts");
 
 			function o(e, t) {
-				e(Object(n.e)({
+				e(Object(n.f)({
 					duration: 5e3,
 					kind: a.b.Error,
 					text: Object(s.a)(t)
@@ -564,7 +564,7 @@
 					u.ok ? (r(M({
 						...u.body,
 						subredditId: e.subredditId
-					})), r(Object(c.e)({
+					})), r(Object(c.f)({
 						kind: f.b.SuccessCommunity,
 						text: n.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [n.fbt._param("amount", Object(a.a)(e.amount)), n.fbt._param("tokenName", Object(v.n)(s(), {
 							subredditId: e.subredditId
@@ -763,7 +763,7 @@
 					}),
 					onClose: t,
 					onTransactionSuccess: async e => {
-						t(), s(Object(f.e)(Object(f.d)(n.fbt._("Processing claim...", null, {
+						t(), s(Object(f.f)(Object(f.e)(n.fbt._("Processing claim...", null, {
 							hk: "46c8dF"
 						}), O.b.SuccessCommunity))), s(m({
 							subredditId: r
@@ -780,13 +780,13 @@
 							}))
 						}(s, M, e.hash, r, l).then(() => {
 							c(Object(N.b)("points_claim", r, S)), s(function(e) {
-								return Object(f.e)(Object(f.d)(n.fbt._("Your {pointsName} are ready!", [n.fbt._param("pointsName", e)], {
+								return Object(f.f)(Object(f.e)(n.fbt._("Your {pointsName} are ready!", [n.fbt._param("pointsName", e)], {
 									hk: "2LpLml"
 								}), O.b.SuccessCommunityGreen))
 							}(I))
 						}).catch(e => {
 							k(e.toString()), s(function(e) {
-								return Object(f.e)(Object(f.d)(n.fbt._("Failed to claim your {pointsName}. Try again later", [n.fbt._param("pointsName", e)], {
+								return Object(f.f)(Object(f.e)(n.fbt._("Failed to claim your {pointsName}. Try again later", [n.fbt._param("pointsName", e)], {
 									hk: "ch1Bl"
 								}), O.b.Error))
 							}(I))
@@ -1377,4 +1377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.35a8628e170042e7538d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.36812df4d4399020d17a.js.map

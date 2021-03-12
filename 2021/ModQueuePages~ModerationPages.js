@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.c8b0e4cef915f4159b19.js
-// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.0821a7b9c7556cdab92f.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./node_modules/lodash/includes.js": function(e, t, o) {
@@ -389,7 +389,7 @@
 							page: `${o.page||u.b}`,
 							response: b.body
 						}))
-					} else i(m(b.error)), i(Object(d.e)({
+					} else i(m(b.error)), i(Object(d.f)({
 						kind: h.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
@@ -410,7 +410,7 @@
 					const u = await Object(c.b)(n(), p, {
 						moderated_after: r
 					});
-					u.ok ? (t(F(u.body)), u.body.moderatedAfter ? t(B()) : t(V())) : t(Object(d.e)({
+					u.ok ? (t(F(u.body)), u.body.moderatedAfter ? t(B()) : t(V())) : t(Object(d.f)({
 						kind: h.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
@@ -576,7 +576,7 @@
 							e === u.a.Remove && m && O.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), i = Object(a.fetchReasonsAndOpenModal)(m, O));
-							const p = Object(d.d)(o, h.b.Undo, s.fbt._("UNDO", null, {
+							const p = Object(d.e)(o, h.b.Undo, s.fbt._("UNDO", null, {
 								hk: "49SEAI"
 							}), (() => async (e, t, {
 								apiContext: o
@@ -595,24 +595,24 @@
 									operation: i,
 									ids: a,
 									username: l
-								})) : (e(W(m.error)), e(Object(d.e)({
+								})) : (e(W(m.error)), e(Object(d.f)({
 									kind: h.b.Error,
 									text: s.fbt._("Oh no! Something went wrong!", null, {
 										hk: "16O2Sk"
 									})
 								})))
 							})(), t, i);
-							n(Object(d.e)(p))
+							n(Object(d.f)(p))
 						} else {
-							const e = Object(d.d)(o, h.b.SuccessMod);
-							n(Object(d.e)(e))
+							const e = Object(d.e)(o, h.b.SuccessMod);
+							n(Object(d.f)(e))
 						}
 					} else {
 						n(Object(r.a)(E.error));
-						const e = Object(d.d)(s.fbt._("Oh no! Something went wrong!", null, {
+						const e = Object(d.e)(s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
 						}), h.b.Error);
-						n(Object(d.e)(e))
+						n(Object(d.f)(e))
 					}
 				}, G = Object(i.a)(O.a), q = Object(i.a)(O.c), Q = Object(i.a)(O.d)
 		},
@@ -909,7 +909,7 @@
 						o(oe({
 							subredditId: e,
 							reason: i
-						})), o(Object(A.e)({
+						})), o(Object(A.f)({
 							kind: K.b.SuccessMod,
 							text: s.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
@@ -932,7 +932,7 @@
 					a.ok ? (o(re({
 						subredditId: e,
 						reason: t
-					})), o(Object(A.e)({
+					})), o(Object(A.f)({
 						kind: K.b.SuccessMod,
 						text: s.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
@@ -950,7 +950,7 @@
 					a.ok ? (o(le({
 						subredditId: e,
 						reasonId: t
-					})), o(Object(A.e)({
+					})), o(Object(A.f)({
 						kind: K.b.SuccessMod,
 						text: s.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
@@ -1066,7 +1066,7 @@
 						l = c.user.account && c.user.account.displayText;
 					if (!l) return;
 					r(be());
-					const m = Object(A.e)({
+					const m = Object(A.f)({
 							kind: K.b.SuccessMod,
 							text: s.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
@@ -4229,4 +4229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.c8b0e4cef915f4159b19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.0821a7b9c7556cdab92f.js.map

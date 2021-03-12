@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.23c393b0ccb5fbd07667.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.2450166772f5f65d4c1b.js
+// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -129,7 +129,7 @@
 				o = r("./src/reddit/models/Toast/index.ts");
 
 			function i(e, t) {
-				e(Object(n.e)({
+				e(Object(n.f)({
 					duration: 5e3,
 					kind: o.b.Error,
 					text: Object(s.a)(t)
@@ -254,7 +254,7 @@
 					l.ok ? (r(A({
 						...l.body,
 						subredditId: e.subredditId
-					})), r(Object(c.e)({
+					})), r(Object(c.f)({
 						kind: p.b.SuccessCommunity,
 						text: n.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [n.fbt._param("amount", Object(o.a)(e.amount)), n.fbt._param("tokenName", Object(E.n)(s(), {
 							subredditId: e.subredditId
@@ -902,4 +902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.23c393b0ccb5fbd07667.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.2450166772f5f65d4c1b.js.map
