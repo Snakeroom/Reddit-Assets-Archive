@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.59259a67a79207ab6a5e.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.7efb94c71848f09c090c.js
+// Retrieved at 3/11/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -330,7 +330,7 @@
 					}), q = D ? s.fbt._("Images under 128kb with a transparent background work the best.", null, {
 						hk: "c6yXl"
 					}) : K;
-				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", null, i.a.createElement("article", null, i.a.createElement("header", {
+				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", null, (D || V.length > 0) && i.a.createElement("article", null, i.a.createElement("header", {
 					className: M.a.emotePackTitle
 				}, i.a.createElement("span", null, D ? s.fbt._("Add up to 20 emojis", null, {
 					hk: "4kR3Q8"
@@ -735,4 +735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.59259a67a79207ab6a5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.7efb94c71848f09c090c.js.map
