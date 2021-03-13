@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.46e98504077997ba6ce0.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ff83785445b037225476.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -710,13 +710,13 @@
 			const st = "c1020",
 				at = "videos",
 				rt = Object(u.c)({
-					isMod: ze.L,
-					isLoggedIn: ze.J,
+					isMod: ze.K,
+					isLoggedIn: ze.I,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					trendingSubredditIds: Ce.cb,
-					currentUser: ze.j,
+					currentUser: ze.i,
 					frontpageLinks: et.b,
-					isOver18: ze.cb,
+					isOver18: ze.bb,
 					isUISimplificationAllItemsVariant: $e.b,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return He(e) === We.p.RotateEven
@@ -730,7 +730,7 @@
 							n = !!Object(Ce.O)(e, st);
 						return (!t || !n) && (!Object($e.b)(e) && function(e) {
 							return Object(Ze.c)(e, {
-								experimentEligibilitySelector: ze.K,
+								experimentEligibilitySelector: ze.J,
 								experimentName: We.Y
 							}) === We.Eb
 						}(e))
@@ -1964,4 +1964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.46e98504077997ba6ce0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.ff83785445b037225476.js.map

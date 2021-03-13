@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.c8f52f64e37da671a052.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9c2de463203f54fdd9a7.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -668,7 +668,7 @@
 				}) => {
 					t(b());
 					const i = r(),
-						l = Object(d.K)(i);
+						l = Object(d.J)(i);
 					try {
 						const r = !l,
 							a = await Object(s.b)({
@@ -804,7 +804,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const F = Object(c.c)({
+			const U = Object(c.c)({
 					activePage: P.p,
 					allowNavigationCallback: e => {
 						const t = Object(x.a)(e);
@@ -816,7 +816,7 @@
 					dealCoinPackages: C.f,
 					gildThingId: P.r,
 					isIframed: f.g,
-					nightmode: _.V,
+					nightmode: _.U,
 					savedCardsPending: P.v,
 					selectedAward: w.b,
 					selectedPayment: P.c,
@@ -828,11 +828,11 @@
 					purchasePackageId: P.s,
 					recommendedPackages: C.m,
 					userName: e => {
-						const t = Object(_.j)(e);
+						const t = Object(_.i)(e);
 						return `u/${Object(y.e)(t)}`
 					}
 				}),
-				L = Object(o.b)(F, (e, t) => ({
+				F = Object(o.b)(U, (e, t) => ({
 					closeModal: () => {
 						e(Object(l.a)()), e(Object(i.a)())
 					},
@@ -855,7 +855,7 @@
 					...r,
 					onCompletePurchaseClick: (r, a) => t.dispatchCompletePurchase(r, a, !!e.gildThingId, e.isIframed)
 				}));
-			class R extends n.a.Component {
+			class L extends n.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						const {
@@ -946,8 +946,8 @@
 					}))
 				}
 			}
-			const U = Object(s.a)(R);
-			t.default = L(Object(g.c)(class extends n.a.PureComponent {
+			const R = Object(s.a)(L);
+			t.default = F(Object(g.c)(class extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -968,7 +968,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return n.a.createElement(U, N({}, this.props, {
+					return n.a.createElement(R, N({}, this.props, {
 						className: A.a.coinPurchaseModal,
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1151,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.c8f52f64e37da671a052.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9c2de463203f54fdd9a7.js.map

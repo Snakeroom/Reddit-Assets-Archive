@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.93cbd699b7e6d488b2ad.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.bb2f78e66577b7865b0e.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -839,7 +839,7 @@
 							const e = n.body.data.createEconPayment;
 							if (e && e.errors && e.errors.length) return void s(Object(y.stripeApiError)(R(e.errors)));
 							if (e.ok && "PAID" !== e.payment.status) return void u();
-							const t = Object(g.j)(i());
+							const t = Object(g.i)(i());
 							t && s(J({
 								subredditId: r,
 								powerupsCount: a,
@@ -890,7 +890,7 @@
 						if (m && m.ok) {
 							const e = m.body.data.createEconPayment;
 							if (e && e.errors && e.errors.length) return o(Object(y.paypalApiError)(R(e.errors))), null;
-							const s = Object(g.j)(a());
+							const s = Object(g.i)(a());
 							if (e.ok) {
 								const {
 									status: a
@@ -1436,7 +1436,7 @@
 			const {
 				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), L = Object(s.c)({
-				currentUser: j.j,
+				currentUser: j.i,
 				isAnonymous: C.c,
 				powerupsCount: C.d,
 				productOffer: P.a
@@ -1661,7 +1661,7 @@
 				fbt: ue
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), pe = 100, me = Object(s.c)({
 				isAnonymous: C.c,
-				isNightmode: j.V,
+				isNightmode: j.U,
 				paypalErrorMessage: x.d,
 				powerups: C.i,
 				powerupsCount: C.d,
@@ -2435,4 +2435,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.93cbd699b7e6d488b2ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.bb2f78e66577b7865b0e.js.map

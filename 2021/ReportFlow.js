@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.9cf1e8118a9db68351d3.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.fbe13ef9103b52893229.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -387,7 +387,7 @@
 					if (!f && !p) return;
 					const R = p ? u.features.comments.models[e] : u.posts.models[e];
 					if (!R) return;
-					if (!Object(C.K)(s())) return o(Object(r.j)()), void o(Object(a.k)({
+					if (!Object(C.J)(s())) return o(Object(r.j)()), void o(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: R.permalink
 					}));
@@ -541,7 +541,7 @@
 					apiContext: s
 				}) => {
 					const c = n(),
-						u = Object(d.j)(c),
+						u = Object(d.i)(c),
 						p = u ? u.id : void 0,
 						m = c.user.blocked.data.filter(t => t.name === e)[0];
 					p && (t(_({
@@ -941,8 +941,8 @@
 				W = n("./src/reddit/icons/svgs/ProfileSlashed/index.tsx"),
 				z = n("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
 				V = n.n(z);
-			const Y = c.a.wrapped(h.a, "blockUserHolder", V.a),
-				J = c.a.wrapped(W.a, "BlockUserIcon", V.a),
+			const J = c.a.wrapped(h.a, "blockUserHolder", V.a),
+				Y = c.a.wrapped(W.a, "BlockUserIcon", V.a),
 				X = c.a.div("BlockUserHeader", V.a),
 				Q = c.a.div("OptionHolder", V.a),
 				Z = c.a.div("OptionHeader", V.a),
@@ -988,9 +988,9 @@
 						const {
 							props: e
 						} = this, t = this.getBlockUserHeaderText();
-						return r.a.createElement(Y, {
+						return r.a.createElement(J, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, r.a.createElement(J, null), r.a.createElement("div", null, r.a.createElement(X, null, t), r.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
+						}, r.a.createElement(Y, null), r.a.createElement("div", null, r.a.createElement(X, null, t), r.a.createElement($, null, o.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [o.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -1310,9 +1310,9 @@
 				We = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				ze = n("./src/reddit/selectors/posts.ts"),
 				Ve = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
-				Ye = n.n(Ve);
-			const Je = c.a.div("CloseWrapper", Ye.a),
-				Xe = c.a.wrapped(Pe.a, "Close", Ye.a),
+				Je = n.n(Ve);
+			const Ye = c.a.div("CloseWrapper", Je.a),
+				Xe = c.a.wrapped(Pe.a, "Close", Je.a),
 				Qe = Object(i.c)({
 					comment: (e, {
 						commentId: t
@@ -1465,7 +1465,7 @@
 					} = this;
 					if (t.crisisFlowEnabled && e.chosenRuleKind === ce.a.CrisisTextLine && e.showCTLPage) {
 						let e;
-						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(s.Fragment, null, r.a.createElement(Je, {
+						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(s.Fragment, null, r.a.createElement(Ye, {
 							onClick: this.handleReportFlowClose
 						}, r.a.createElement(Xe, null)), r.a.createElement(u.a, {
 							onCloseReportFlow: this.handleReportFlowClose,
@@ -1487,7 +1487,7 @@
 				}
 				render() {
 					return r.a.createElement("div", {
-						className: Ye.a.Wrapper
+						className: Je.a.Wrapper
 					}, this.getContent())
 				}
 			}
@@ -1585,7 +1585,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: I.V
+					isNightmodeOn: I.U
 				}),
 				M = Object(d.b)(D, (e, {
 					timestamp: t
@@ -2771,14 +2771,14 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => o.b.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: r.K,
+					experimentEligibilitySelector: r.J,
 					experimentName: o.g
 				}),
 				i = e => o.d.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: r.K,
+					experimentEligibilitySelector: r.J,
 					experimentName: o.j
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.9cf1e8118a9db68351d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.fbe13ef9103b52893229.js.map

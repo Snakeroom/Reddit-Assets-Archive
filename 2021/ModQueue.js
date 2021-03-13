@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.bd78e7d7a50563f84cc7.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.9c494e9d997a8e528ba3.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -56,7 +56,7 @@
 				}, O = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(u.K)(s())) return void t(Object(a.i)(c.a.LOGIN_MODAL_ID));
+					if (!Object(u.J)(s())) return void t(Object(a.i)(c.a.LOGIN_MODAL_ID));
 					const n = s().features.comments.models[e];
 					if (!n) return;
 					const r = n.isLocked ? i.j : i.d;
@@ -495,46 +495,50 @@
 		"./src/reddit/actions/pages/modQueue/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "modQueuePageRequested", (function() {
-				return b
+				return O
 			}));
 			var o = s("./node_modules/lodash/get.js"),
 				n = s.n(o),
 				r = s("./src/lib/constants/index.ts"),
-				a = s("./src/reddit/helpers/makeModQueueListingKey/index.ts"),
-				d = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				c = s("./src/reddit/helpers/trackers/screenview.ts"),
-				i = s("./src/reddit/actions/modQueue/index.ts"),
-				u = s("./src/reddit/selectors/platform.ts"),
-				m = s("./src/lib/initializeClient/installReducer.ts"),
-				l = s("./src/reddit/reducers/pages/modHub/index.ts");
-			Object(m.a)({
+				a = s("./src/lib/pageTitle.ts"),
+				d = s("./src/reddit/helpers/makeModQueueListingKey/index.ts"),
+				c = s("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				i = s("./src/reddit/helpers/trackers/screenview.ts"),
+				u = s("./src/reddit/actions/modQueue/index.ts"),
+				m = s("./src/reddit/actions/platform.ts"),
+				l = s("./src/reddit/selectors/platform.ts"),
+				b = s("./src/lib/initializeClient/installReducer.ts"),
+				p = s("./src/reddit/reducers/pages/modHub/index.ts");
+			Object(b.a)({
 				pages: {
-					modHub: l.a
+					modHub: p.a
 				}
 			});
-			const b = e => async (t, s, o) => {
-				var m;
+			const O = e => async (t, s, o) => {
+				var b;
 				const {
-					pageName: l
-				} = e.params, b = e.queryParams, {
-					page: p,
-					profile: O,
-					subreddit: f
-				} = b, _ = s();
-				if (!l) return;
-				const R = Object(a.a)({
-						onlyOfType: b.only,
-						profile: b.profile,
-						subreddit: b.subreddit
+					pageName: p
+				} = e.params, O = e.queryParams, {
+					page: f,
+					profile: _,
+					subreddit: R
+				} = O, S = s();
+				if (!p) return;
+				const j = Object(d.a)({
+						onlyOfType: O.only,
+						profile: O.profile,
+						subreddit: O.subreddit
 					}),
-					S = _.pages.modHub.modQueue[l].itemOrder[R],
-					j = !!(null === (m = null == S ? void 0 : S[p]) || void 0 === m ? void 0 : m.length),
-					E = _.pages.modHub.modQueue[l].api.error;
-				if (_.pages.modHub.modQueue[l].api.pending || j && !E) return;
-				Object(u.n)(_) || await Object(i.e)(R, l, b)(t, s, o);
-				const h = s();
-				if (n()(h.pages.modHub.modQueue[l].api.error, "type") === r.E.AUTHENTICATION_ERROR) return Object(d.a)(t, h);
-				Object(c.j)(h, f, O)
+					E = S.pages.modHub.modQueue[p].itemOrder[j],
+					h = !!(null === (b = null == E ? void 0 : E[f]) || void 0 === b ? void 0 : b.length),
+					A = S.pages.modHub.modQueue[p].api.error;
+				if (S.pages.modHub.modQueue[p].api.pending || h && !A) return;
+				Object(l.n)(S) || await Object(u.e)(j, p, O)(t, s, o);
+				const v = s();
+				if (n()(v.pages.modHub.modQueue[p].api.error, "type") === r.E.AUTHENTICATION_ERROR) return Object(c.a)(t, v);
+				Object(i.j)(v, R, _), t(m.l({
+					title: Object(a.d)()
+				}))
 			}
 		},
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
@@ -1068,4 +1072,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.bd78e7d7a50563f84cc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.9c494e9d997a8e528ba3.js.map

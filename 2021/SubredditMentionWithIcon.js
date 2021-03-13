@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9d8f68c0cfcc67e35ebd.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.6788381fdb5a91474b2d.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
@@ -247,10 +247,10 @@
 						name: `${i.Wb}${e.name}`,
 						type: e.type
 					});
-					if (!Object(y.K)(d())) return r(Object(a.k)({
+					if (!Object(y.J)(d())) return r(Object(a.k)({
 						actionSource: a.a.Subscribe
 					})), void r(Object(c.j)());
-					const O = Object(y.j)(d());
+					const O = Object(y.i)(d());
 					if (O) {
 						const t = f.length,
 							s = e.length;
@@ -393,7 +393,7 @@
 				}) => {
 					const o = s(),
 						c = o.multireddits.models;
-					if (!Object(y.K)(o)) return;
+					if (!Object(y.J)(o)) return;
 					const a = (e = !0) => {
 							t(Object(l.f)({
 								text: n.fbt._("Sorry, failed to {followAction}", [n.fbt._param("followAction", e ? n.fbt._("follow", null, {
@@ -1004,8 +1004,8 @@
 				fbt: ie
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), re = e => `subreddit-mention-${e}`, oe = Object(a.c)({
 				haveError: E.d,
-				hideNSFWPref: te.C,
-				isEmployee: te.H,
+				hideNSFWPref: te.B,
+				isEmployee: te.G,
 				isPending: E.c,
 				postIds: E.f,
 				subreddit: I.a,
@@ -2403,4 +2403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.9d8f68c0cfcc67e35ebd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.6788381fdb5a91474b2d.js.map

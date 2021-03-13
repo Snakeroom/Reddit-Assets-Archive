@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.b4d76cc04c6a2b530c14.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.e6ad11d808f3c43ec362.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -272,11 +272,11 @@
 				const k = Object(r.forwardRef)((e, t) => n.a.createElement(N, w({}, e, {
 						forwardedRef: t
 					}))),
-					j = Object(i.c)({
+					A = Object(i.c)({
 						redditUserId: b.g,
 						isMuxEnabled: h
 					});
-				return Object(a.b)(j, null, null, {
+				return Object(a.b)(A, null, null, {
 					forwardRef: !0
 				})(k)
 			}
@@ -895,7 +895,7 @@
 				apiContext: n
 			}) => {
 				const m = r();
-				if (Object(l.K)(m))
+				if (Object(l.J)(m))
 					if (Object(c.f)(m)) await Object(i.g)(n(), e, t);
 					else {
 						await Object(a.d)(e);
@@ -1015,11 +1015,11 @@
 					})
 				}, []);
 				Object(a.a)(y, k);
-				const j = Object(i.a)(s);
-				Object(r.useEffect)(() => (void 0 !== j && j !== s && O.current(s - j), () => {
+				const A = Object(i.a)(s);
+				Object(r.useEffect)(() => (void 0 !== A && A !== s && O.current(s - A), () => {
 					clearTimeout(T.current), clearTimeout(N.current), clearTimeout(I.current)
 				}), [s]);
-				const A = Object(r.useCallback)(() => g(!0), [g]),
+				const j = Object(r.useCallback)(() => g(!0), [g]),
 					R = 0 === C.length,
 					L = v || R;
 				return n.a.createElement("div", {
@@ -1032,7 +1032,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: A,
+						onTransitionEnd: j,
 						style: b && C.length > 0 && !v ? {
 							transform: `translateY(-${h&&r.length>1?100:100*(r.length-1)}%)`,
 							transitionDuration: `${(h?o.b.disjointAnimationDuration:o.b.animationIncrementDuration)/1e3}s`
@@ -1864,8 +1864,8 @@
 				T = s("./src/reddit/selectors/platform.ts"),
 				N = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				k = s("./src/reddit/selectors/user.ts"),
-				j = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				A = s("./src/reddit/components/Flatlist/index.tsx"),
+				A = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
+				j = s("./src/reddit/components/Flatlist/index.tsx"),
 				R = s("./src/reddit/components/Flatlist/constants.ts"),
 				L = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				D = s("./src/reddit/components/HlsVideo/index.tsx"),
@@ -1889,7 +1889,7 @@
 				playerName: "RPAN DU Video Player"
 			}), te = Object(a.b)(() => Object(i.c)({
 				autoplay: k.b,
-				isLoggedIn: k.K,
+				isLoggedIn: k.J,
 				isOverlayOpen: T.h,
 				location: (e, {
 					listingName: t
@@ -2159,7 +2159,7 @@
 						className: q.a.flatListContainer
 					}, n.a.createElement(oe, {
 						onClick: this.onHeaderClicked
-					}), n.a.createElement(A.a, {
+					}), n.a.createElement(j.a, {
 						className: q.a.flatlistSeparator
 					}), n.a.createElement("div", null, n.a.createElement(ce, {
 						onClick: this.onHideUnitClicked
@@ -2324,7 +2324,7 @@
 					null === (e = this.videoSessionManager) || void 0 === e || e.destroy()
 				}
 			}
-			const ie = e => n.a.createElement(j.a, {
+			const ie = e => n.a.createElement(A.a, {
 					className: Object(d.a)({
 						[q.a.verticalVotes]: e.isVertical,
 						[q.a.horizontalVotes]: !e.isVertical
@@ -2390,9 +2390,9 @@
 			})), s.d(t, "h", (function() {
 				return k
 			})), s.d(t, "f", (function() {
-				return j
-			})), s.d(t, "a", (function() {
 				return A
+			})), s.d(t, "a", (function() {
+				return j
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
@@ -2511,7 +2511,7 @@
 				}, a.a.createElement(E.a, null), a.a.createElement("span", null, r.fbt._("Share Video", null, {
 					hk: "FYgQy"
 				}))),
-				j = ({
+				A = ({
 					onClick: e
 				}) => a.a.createElement("button", {
 					className: x.a.promptButton,
@@ -2521,7 +2521,7 @@
 				}), a.a.createElement("span", null, r.fbt._("Crosspost", null, {
 					hk: "gORNr"
 				}))),
-				A = ({
+				j = ({
 					onClick: e
 				}) => a.a.createElement("button", {
 					className: `${x.a.promptButton} ${x.a.awardButton}`,
@@ -2686,8 +2686,8 @@
 				T = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				N = s("./src/reddit/icons/svgs/Link/index.tsx"),
 				k = s("./src/reddit/icons/svgs/Lock/index.tsx"),
-				j = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				A = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
+				A = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				j = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				L = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				D = s("./src/reddit/icons/svgs/Rules/index.tsx"),
@@ -2733,7 +2733,7 @@
 						a(!0), e()
 					},
 					className: B.a.joinButton
-				}, n.a.createElement(j.a, {
+				}, n.a.createElement(A.a, {
 					className: B.a.plusIcon
 				}), n.a.createElement("span", {
 					className: B.a.joinText
@@ -2877,7 +2877,7 @@
 				iconWrapperClassName: B.a.overflowItemIconWrapper,
 				key: `${ne}-rpanstudio`,
 				onClick: d
-			}, n.a.createElement(A.b, {
+			}, n.a.createElement(j.b, {
 				className: B.a.overflowItemIcon
 			})), n.a.createElement(v.b, {
 				className: B.a.overflowItem,
@@ -3152,7 +3152,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, r = Object(a.e)(e => Object(V.mb)(e, {
+				} = e, r = Object(a.e)(e => Object(V.lb)(e, {
 					userName: s
 				})), o = ye(r), c = o && Object(E.a)(r.accountIcon);
 				return n.a.createElement("div", {
@@ -3183,9 +3183,9 @@
 			}, n.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), ye = e => {
-				const t = Object(a.e)(V.j),
-					s = Object(a.e)(V.C),
-					r = Object(a.e)(V.cb);
+				const t = Object(a.e)(V.i),
+					s = Object(a.e)(V.B),
+					r = Object(a.e)(V.bb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!r && !s))))
 			}
 		},
@@ -3667,9 +3667,9 @@
 			})), s.d(t, "clickMessageInputEvent", (function() {
 				return k
 			})), s.d(t, "typeMessageInputEvent", (function() {
-				return j
-			})), s.d(t, "clickLearnMoreLinkEvent", (function() {
 				return A
+			})), s.d(t, "clickLearnMoreLinkEvent", (function() {
+				return j
 			})), s.d(t, "clickQuestionMarkEvent", (function() {
 				return R
 			})), s.d(t, "clickConfirmAwardEvent", (function() {
@@ -3798,13 +3798,13 @@
 					action: "click",
 					noun: "message_input"
 				}),
-				j = e => t => ({
+				A = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "type",
 					noun: "message_input"
 				}),
-				A = e => t => ({
+				j = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -4947,7 +4947,7 @@
 					minSize: t,
 					userName: s
 				}) => {
-					const r = Object(o.mb)(e, {
+					const r = Object(o.lb)(e, {
 						userName: s
 					});
 					if (r && r.awardedLastMonth && r.awardedLastMonth.topAward) return h(e, {
@@ -5068,4 +5068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b4d76cc04c6a2b530c14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.e6ad11d808f3c43ec362.js.map

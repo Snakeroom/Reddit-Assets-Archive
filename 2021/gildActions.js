@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.4d7a11f7daa5138dc6a7.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.1f45c9d865455a411365.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -217,7 +217,7 @@
 						postId: s
 					}) : Object(k.a)(e, {
 						commentId: s
-					}), a = Object(S.j)(e), d = e.gild, {
+					}), a = Object(S.i)(e), d = e.gild, {
 						isAnonymous: n
 					} = d, o = !n && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = r ? r.author : void 0, c = Object(G.J)(e, {
 						thingId: s
@@ -236,7 +236,7 @@
 						} = e,
 						h = Object(_.a)(a, u),
 						w = e.awardKarmaReceived,
-						p = Object(S.j)(a),
+						p = Object(S.i)(a),
 						k = Object(I.b)(a) || Object(N.d)(N.a.GildingFlow, !1);
 					if (Object(I.g)(a)) {
 						const e = "success.gild",
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.4d7a11f7daa5138dc6a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.1f45c9d865455a411365.js.map

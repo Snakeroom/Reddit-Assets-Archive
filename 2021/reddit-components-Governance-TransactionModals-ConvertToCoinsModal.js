@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.d58fda4c9d35ca47525c.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6bdf35424fc55ca813af.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -637,7 +637,7 @@
 							const e = n.body.data.createEconPayment;
 							if (e && e.errors && e.errors.length) return void c(Object(b.stripeApiError)(S(e.errors)));
 							if (e.ok && "PAID" !== e.payment.status) return void u();
-							const t = Object(g.j)(i());
+							const t = Object(g.i)(i());
 							t && c(J({
 								subredditId: r,
 								powerupsCount: s,
@@ -688,7 +688,7 @@
 						if (p && p.ok) {
 							const e = p.body.data.createEconPayment;
 							if (e && e.errors && e.errors.length) return a(Object(b.paypalApiError)(S(e.errors))), null;
-							const c = Object(g.j)(s());
+							const c = Object(g.i)(s());
 							if (e.ok) {
 								const {
 									status: s
@@ -2831,4 +2831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.d58fda4c9d35ca47525c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6bdf35424fc55ca813af.js.map

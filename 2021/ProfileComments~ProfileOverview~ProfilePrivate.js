@@ -1,7 +1,14 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.46b6df7c5c5b14d9df39.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f33f02d2191f3cfbc45d.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
+		"./node_modules/lodash/take.js": function(e, t, s) {
+			var n = s("./node_modules/lodash/_baseSlice.js"),
+				o = s("./node_modules/lodash/toInteger.js");
+			e.exports = function(e, t, s) {
+				return e && e.length ? (t = s || void 0 === t ? 1 : o(t), n(e, 0, t < 0 ? 0 : t)) : []
+			}
+		},
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "renderMedia", (function() {
@@ -80,8 +87,8 @@
 						isFrontpage: $,
 						isGalleryTileLayoutDefault: K,
 						isLoggedIn: G,
-						isOverlay: Z,
-						imageGalleryCurrentItem: J,
+						isOverlay: J,
+						imageGalleryCurrentItem: Z,
 						moderatorPermissions: Q,
 						modModeEnabled: Y,
 						onClickPost: X,
@@ -104,14 +111,14 @@
 						post: ne,
 						inSubredditOrProfile: a,
 						isCurrentUserProfilePost: q,
-						isOverlay: Z,
+						isOverlay: J,
 						shouldShowSubscribeButton: !($ && G),
 						subredditOrProfile: le
-					}, _e = Object(r.t)(ne, J), {
+					}, _e = Object(r.t)(ne, Z), {
 						source: Pe
 					} = _e, ke = o.a.createElement(g.a, {
 						className: Object(i.a)(F.a.classicPostStyles, W.a.postContainer, Object(A.a)(this.props), N ? W.a.mFirst : void 0, e),
-						isOverlay: Z,
+						isOverlay: J,
 						style: {
 							...Object(A.d)(this.props),
 							...Object(A.b)(this.props.flairStyleTemplate)
@@ -168,7 +175,7 @@
 						redditStyle: re,
 						size: w.b.Medium,
 						titleColor: he && he.postTitleColor,
-						isOverlay: Z
+						isOverlay: J
 					}, ne.source && !be && o.a.createElement(k.a, {
 						href: ne.source.url,
 						isSponsored: ne.isSponsored,
@@ -210,14 +217,14 @@
 						hasModFullPerms: fe,
 						hostPostId: D,
 						isActionBarAnimationEnabled: B,
-						isOverlay: !!Z,
+						isOverlay: !!J,
 						modModeEnabled: Y,
 						onIgnoreReports: ee,
 						onOpenReportsDropdown: te,
 						post: ne,
 						showEditPost: Ce,
 						showEditFlair: de,
-						tooltipType: Z ? _.c.Lightbox : void 0,
+						tooltipType: J ? _.c.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(y.h)({
 							editPost: !ge,
 							save: !ge,
@@ -440,8 +447,8 @@
 				$ = s("./src/reddit/helpers/trackers/lightbox.ts"),
 				K = s("./src/reddit/models/PostDraft/index.ts"),
 				G = s("./src/reddit/selectors/activeModalId.ts"),
-				Z = s("./src/reddit/selectors/comments.ts"),
-				J = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				J = s("./src/reddit/selectors/comments.ts"),
+				Z = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				Q = s("./src/reddit/selectors/posts.ts"),
 				Y = s("./src/reddit/selectors/tooltip.ts"),
 				X = s("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
@@ -489,16 +496,16 @@
 					}) => Object(G.a)(e) === Se(t.id),
 					isPendingDeletion: (e, {
 						comment: t
-					}) => Object(Z.z)(e, {
+					}) => Object(J.z)(e, {
 						commentId: t.postId
 					}),
-					isLoggedIn: ee.K,
+					isLoggedIn: ee.J,
 					moderatorPermissions: (e, {
 						comment: t
-					}) => Object(J.i)(e, {
+					}) => Object(Z.i)(e, {
 						subredditId: t.subredditId
 					}),
-					currentUser: ee.j,
+					currentUser: ee.i,
 					modModeEnabled: U.Q,
 					postIsLocked: (e, {
 						comment: t
@@ -752,14 +759,14 @@
 			const $e = ge.a.wrapped(We.a, "TopMeta", qe.a),
 				Ke = ge.a.div("ProfileCommentWrapper", qe.a),
 				Ge = ge.a.div("CommentBody", qe.a),
-				Ze = Object(r.b)(() => Object(i.c)({
+				Je = Object(r.b)(() => Object(i.c)({
 					comment: (e, t) => Object(ze.a)(e, t),
-					flair: Z.e
+					flair: J.e
 				})),
-				Je = Object(c.b)(e => ({
+				Ze = Object(c.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
-			t.a = Ze(e => {
+			t.a = Je(e => {
 				const {
 					comment: t,
 					commentsPageKey: s,
@@ -770,7 +777,7 @@
 				} = e, l = s => o.a.createElement(Ve.a, {
 					className: s,
 					content: Object(Ue.a)(t),
-					rtJsonElementProps: Je(e)
+					rtJsonElementProps: Ze(e)
 				});
 				return o.a.createElement(Ke, {
 					className: Object(a.a)({
@@ -1043,7 +1050,7 @@
 						return s && s.coinPrice >= d.g
 					})
 				},
-				isNightmodeOn: f.V
+				isNightmodeOn: f.U
 			}), e => ({
 				openPost: t => e(Object(m.E)(t))
 			}));
@@ -1614,7 +1621,7 @@
 				}),
 				L = Object(d.c)({
 					isDropdownMenuOpen: e => Object(w.a)(e) === S,
-					isOwnProfile: (e, t) => Object(_.O)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(_.N)(e, t.profileName),
 					isSnoovatar30Enabled: O.d.snoovatar30,
 					isSubscriptionsPinned: P.b
 				}),
@@ -2051,7 +2058,7 @@
 				b = s("./src/reddit/components/SidebarProfileModeratedSubreddits/index.m.less"),
 				x = s.n(b);
 			const v = Object(a.c)({
-					currentUser: h.j,
+					currentUser: h.i,
 					moderated: p.n,
 					subscriptions: u.f,
 					hasMoreModerated: p.d,
@@ -2217,7 +2224,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const s = Object(p.mb)(e, {
+					const s = Object(p.lb)(e, {
 							userName: t
 						}),
 						n = Object(m.e)(e);
@@ -2416,7 +2423,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(h.mb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(h.lb)(e, {
 					userName: t.name
 				}) : null
 			}), k = Object(r.b)(P, e => ({
@@ -2472,7 +2479,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.l,
-					isLoggedIn: x.K,
+					isLoggedIn: x.J,
 					moderatorPermissions: u.h,
 					modModeEnabled: c.Q,
 					poll: (e, t) => {
@@ -2698,4 +2705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.46b6df7c5c5b14d9df39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f33f02d2191f3cfbc45d.js.map

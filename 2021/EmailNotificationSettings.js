@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.24e867befb28a4677d5b.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.ffcd20df27878535ce24.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -28,9 +28,9 @@
 				r = s("./src/reddit/selectors/user.ts"),
 				d = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
 			const c = Object(a.c)({
-					hasError: r.q,
-					rows: r.X,
-					sections: r.Y
+					hasError: r.p,
+					rows: r.W,
+					sections: r.X
 				}),
 				l = Object(n.b)(c, e => ({
 					fetchNotificationSettings: () => e(Object(i.a)(o.a.Email)),
@@ -56,15 +56,15 @@
 				u = s("./src/reddit/components/Settings/Notifications/index.m.less"),
 				b = s.n(u);
 			const f = d.a.div("LoadingSectionHeader", b.a),
-				_ = d.a.div("LoadingToggleWrapper", b.a),
-				p = d.a.span("LoadingToggleName", b.a),
+				p = d.a.div("LoadingToggleWrapper", b.a),
+				_ = d.a.span("LoadingToggleName", b.a),
 				E = d.a.span("LoadingToggleButton", b.a),
 				N = () => r.a.createElement("div", {
 					role: "alert",
 					"aria-busy": "true"
-				}, r.a.createElement(f, null), i()(5, e => r.a.createElement(_, {
+				}, r.a.createElement(f, null), i()(5, e => r.a.createElement(p, {
 					key: e
-				}, r.a.createElement(p, null), r.a.createElement(E, null)))),
+				}, r.a.createElement(_, null), r.a.createElement(E, null)))),
 				T = e => {
 					Object(o.useEffect)(() => {
 						e.fetchNotificationSettings()
@@ -124,4 +124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.24e867befb28a4677d5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.ffcd20df27878535ce24.js.map

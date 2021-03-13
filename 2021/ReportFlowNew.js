@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.5d589b937b94569612c5.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.7a24aab17c721a2619bf.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -128,7 +128,7 @@
 			})), o.d(t, "a", (function() {
 				return w
 			})), o.d(t, "g", (function() {
-				return g
+				return j
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./src/lib/makeActionCreator/index.ts"),
@@ -175,11 +175,11 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), j = Object(s.a)(w), g = e => async (t, o, {
+				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), g = Object(s.a)(w), j = e => async (t, o, {
 					apiContext: s
 				}) => {
 					const l = o(),
-						p = Object(a.j)(l),
+						p = Object(a.i)(l),
 						u = p ? p.id : void 0,
 						m = l.user.blocked.data.filter(t => t.name === e)[0];
 					u && (t(C({
@@ -196,7 +196,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(j({
+					})), t(g({
 						name: e
 					}))))
 				}
@@ -286,8 +286,8 @@
 				...C,
 				variables: t
 			});
-			var j = o("./src/graphql/operations/ReportForm.json");
-			var g = o("./src/reddit/contexts/ApiContext.tsx"),
+			var g = o("./src/graphql/operations/ReportForm.json");
+			var j = o("./src/reddit/contexts/ApiContext.tsx"),
 				k = o("./src/reddit/models/Post/index.ts"),
 				x = o("./src/reddit/models/Toast/index.ts"),
 				y = o("./src/reddit/models/WhitelistAndBlocked.ts"),
@@ -334,9 +334,9 @@
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: I.V
+					isNightmodeOn: I.U
 				}),
-				P = Object(a.b)(N, (e, {
+				U = Object(a.b)(N, (e, {
 					timestamp: t
 				}) => ({
 					onCloseReportFlow: () => {
@@ -352,14 +352,14 @@
 						})
 					}))
 				})),
-				U = async (e, t, o, r) => {
+				P = async (e, t, o, r) => {
 					var s;
 					const n = await ((e, {
 						itemId: t,
 						formVersion: o,
 						hostAppName: r
 					}) => Object(O.a)(e, {
-						...j,
+						...g,
 						variables: {
 							itemId: t,
 							hostAppName: r,
@@ -487,7 +487,7 @@
 						gqlContext: t,
 						hostAppName: o
 					} = this.props;
-					U(t(), e, q, o).then(e => {
+					P(t(), e, q, o).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -530,7 +530,7 @@
 					}))
 				}
 			}
-			t.default = Object(g.b)(P(T))
+			t.default = Object(j.b)(U(T))
 		},
 		"./src/reddit/components/ReportFlow/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -662,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.5d589b937b94569612c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.7a24aab17c721a2619bf.js.map

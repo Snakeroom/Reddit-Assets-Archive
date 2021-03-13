@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.9f5cc4bc54d88f18cd4d.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.4cc9c316ed8251e09e84.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -25,7 +25,7 @@
 				})), await e(Object(o.g)(a.a.SNOOVATAR_MODAL))
 			}, u = e => async (t, n) => {
 				const r = n();
-				Object(i.a)(Object(c.a)(e)(r)), Object(d.K)(r) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
+				Object(i.a)(Object(c.a)(e)(r)), Object(d.J)(r) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
 			}
 		},
 		"./src/reddit/actions/subscription/constants.ts": function(e, t, n) {
@@ -167,10 +167,10 @@
 						name: `${s.Wb}${e.name}`,
 						type: e.type
 					});
-					if (!Object(k.K)(d())) return o(Object(c.k)({
+					if (!Object(k.J)(d())) return o(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void o(Object(a.j)());
-					const x = Object(k.j)(d());
+					const x = Object(k.i)(d());
 					if (x) {
 						const t = h.length,
 							n = e.length;
@@ -313,7 +313,7 @@
 				}) => {
 					const r = n(),
 						a = r.multireddits.models;
-					if (!Object(k.K)(r)) return;
+					if (!Object(k.J)(r)) return;
 					const c = (e = !0) => {
 							t(Object(l.f)({
 								text: i.fbt._("Sorry, failed to {followAction}", [i.fbt._param("followAction", e ? i.fbt._("follow", null, {
@@ -1399,7 +1399,7 @@
 					subredditId: t,
 					username: n
 				}) => {
-					const i = Object(r.mb)(e, {
+					const i = Object(r.lb)(e, {
 						userName: n
 					});
 					if (!i) return;
@@ -1438,4 +1438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.9f5cc4bc54d88f18cd4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.4cc9c316ed8251e09e84.js.map

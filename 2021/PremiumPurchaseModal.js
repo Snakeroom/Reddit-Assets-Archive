@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.55dabf755ec214fa10b9.js
-// Retrieved at 3/11/2021, 9:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.5eb9382bbaf05e05c9b6.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -1491,14 +1491,14 @@
 						const t = Object(v.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: C.V,
+					nightmode: C.U,
 					passthrough: _.e,
 					selectedPayment: _.c,
 					stripeErrorMessage: _.j,
 					stripeTokenPending: _.m,
 					paypalErrorMessage: _.d,
 					userName: e => {
-						const t = Object(C.j)(e);
+						const t = Object(C.i)(e);
 						return `u/${Object(g.e)(t)}`
 					}
 				}),
@@ -1849,4 +1849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.55dabf755ec214fa10b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.5eb9382bbaf05e05c9b6.js.map

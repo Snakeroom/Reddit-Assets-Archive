@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b601c58dace8e6dd2c50.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.fc0e7daade2d27525227.js
+// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, s) {
@@ -38,11 +38,11 @@
 				_ = s("./src/reddit/icons/fonts/index.tsx"),
 				E = s("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
 				f = s("./src/reddit/icons/svgs/Media/index.tsx"),
-				C = s("./src/reddit/selectors/subreddit.ts"),
-				g = s("./src/reddit/selectors/telemetry.ts"),
-				h = s("./src/reddit/selectors/user.ts"),
-				N = s("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				j = s.n(N);
+				g = s("./src/reddit/selectors/subreddit.ts"),
+				C = s("./src/reddit/selectors/telemetry.ts"),
+				N = s("./src/reddit/selectors/user.ts"),
+				h = s("./src/reddit/components/InFeedPostCreation/index.m.less"),
+				U = s.n(h);
 
 			function O() {
 				return (O = Object.assign || function(e) {
@@ -53,7 +53,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const U = l.a.wrapped(x.a, "CurrentUserIcon", j.a);
+			const j = l.a.wrapped(x.a, "CurrentUserIcon", U.a);
 			var w;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
@@ -79,9 +79,9 @@
 					}
 				},
 				k = Object(o.c)({
-					currentUser: h.j,
-					subredditAboutInfo: C.x,
-					subreddit: C.A
+					currentUser: N.i,
+					subredditAboutInfo: g.x,
+					subreddit: g.A
 				}),
 				P = Object(i.b)(k, e => ({
 					navigateTo: t => e(Object(a.b)(t)),
@@ -131,31 +131,31 @@
 							source: "post_composer_du",
 							action: "click",
 							noun: M(e),
-							...g.defaults(t)
+							...C.defaults(t)
 						}))
 					},
-					C = () => {
+					g = () => {
 						x(d.Lb.POST), a(u)
 					},
-					h = e ? c.a.createElement(I.a, {
-						className: j.a.UserIconWrapper,
+					N = e ? c.a.createElement(I.a, {
+						className: U.a.UserIconWrapper,
 						to: e.url
-					}, c.a.createElement(U, {
-						className: j.a.UserIcon
+					}, c.a.createElement(j, {
+						className: U.a.UserIcon
 					})) : null;
 				return c.a.createElement("div", {
-					className: j.a.Container
-				}, h, c.a.createElement("input", {
-					className: j.a.Input,
-					onChange: C,
-					onClick: C,
-					onKeyPress: C,
+					className: U.a.Container
+				}, N, c.a.createElement("input", {
+					className: U.a.Input,
+					onChange: g,
+					onClick: g,
+					onKeyPress: g,
 					placeholder: n.fbt._("Create Post", null, {
 						hk: "OcnKS"
 					}),
 					type: "text"
 				}), p.media && c.a.createElement(b.q, {
-					className: j.a.Button,
+					className: U.a.Button,
 					"aria-label": y(),
 					priority: b.b.Plain,
 					kind: b.a.InternalLink,
@@ -174,7 +174,7 @@
 					tooltipId: w.Media,
 					text: y()
 				})), p.link && c.a.createElement(b.q, {
-					className: j.a.Button,
+					className: U.a.Button,
 					priority: b.b.Plain,
 					kind: b.a.InternalLink,
 					size: b.c.M,
@@ -231,11 +231,11 @@
 				}).apply(this, arguments)
 			}
 			const _ = Object(i.c)({
-					currentUser: l.j,
-					isNightMode: l.V,
+					currentUser: l.i,
+					isNightMode: l.U,
 					isPresenceExpEnabled: d.a,
-					isPresenceUserPrefEnabled: l.hb,
-					shouldHideNSFW: l.C
+					isPresenceUserPrefEnabled: l.gb,
+					shouldHideNSFW: l.B
 				}),
 				E = Object(c.b)(_);
 			t.a = E(e => {
@@ -343,4 +343,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b601c58dace8e6dd2c50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.fc0e7daade2d27525227.js.map
