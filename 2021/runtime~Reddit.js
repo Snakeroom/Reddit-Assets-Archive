@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.504dc5783c97d9c7dc16.js
-// Retrieved at 3/15/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.e5bd27595b716823fce3.js
+// Retrieved at 3/15/2021, 2:20:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var d, a, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(n, a) && n[a] && b.push(n[a][0]), n[a] = 0;
@@ -594,8 +594,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "5f500eb745c36ba69e9b",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "9dbeca2de44fbb455c1d",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "c8458db0cda99d292c22",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "1530b9199da1e43daea8",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/pseudo_ext-json": "31d6cfe0d16ae931b73c",
 					"translations/pseudo_long-json": "31d6cfe0d16ae931b73c",
@@ -691,8 +691,8 @@
 					CrisisFlow: "70ed8d7c6f38eff4f913",
 					EmailInvitePaintedDoor: "e2e558b698b54df826be",
 					GifTooltip: "737dfc7d5f53f9f7fbc4",
-					PowerupsEmotesTooltip: "5f83af890c8bdcf9fe0a",
-					SpecialMembershipsEmotesTooltip: "3deaa74b1308bd0729d8",
+					PowerupsEmotesTooltip: "d2e64ea55bf183996f4b",
+					SpecialMembershipsEmotesTooltip: "f03c52f069e1bc9724ac",
 					SubredditPremiumBlockchainCheckoutModal: "fc4ce69ed1f6282cc84f",
 					"reddit-components-Governance-TransactionModals-SubscriptionModal": "1fe3f63ce452a851c0fb",
 					ChatEmpty: "51bb1b1da3aa6e2c9062",
@@ -1052,7 +1052,7 @@
 						CoinPurchaseModal: "9c2de463203f54fdd9a7",
 						Coins: "2b79c031203371cfb1cd",
 						CoinsMobile: "eafc69370a5cc9da858a",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "0887a8d81cf3e944c390",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "8a35a6bec942f3871551",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86": "e2a6eceb4a00d0eb396e",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "8cce9e0b85b4196092e3",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "82d4b9d4e45b7f4b4116",
@@ -1131,10 +1131,10 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "9ba62e32fd415c29f26a",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "49807d14fdf34410dccd",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "694b9e01d68e1d85ae75",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "33c55e0f4a91b99f6567",
 						"translations/de_DE-json": "bb923b879d61c7e072d6",
-						"translations/pseudo_ext-json": "92b51f0a5f1147afaa08",
+						"translations/pseudo_ext-json": "f121222a0ba28f95defb",
 						"translations/pseudo_long-json": "c8d9a38a311866c0e720",
 						"translations/pseudo_short-json": "5505853192842b53b8c5",
 						"translations/pt_BR-json": "14994d272522edba0b29",
@@ -1228,8 +1228,8 @@
 						CrisisFlow: "4fb1fcccaa11706f8106",
 						EmailInvitePaintedDoor: "b27a55884f564d5f65cf",
 						GifTooltip: "32e292fdf28232396751",
-						PowerupsEmotesTooltip: "e5ec0fc6945af8a8804f",
-						SpecialMembershipsEmotesTooltip: "cd43f09dc0ac4df90740",
+						PowerupsEmotesTooltip: "85766eb096161063fbe6",
+						SpecialMembershipsEmotesTooltip: "fa41e87fdcb65b0e6c01",
 						SubredditPremiumBlockchainCheckoutModal: "8e2d43617253bacc29e3",
 						"reddit-components-Governance-TransactionModals-SubscriptionModal": "2d20d86828c1710a1a2b",
 						ChatEmpty: "e288e91c6334c8b3e705",
@@ -1354,4 +1354,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.504dc5783c97d9c7dc16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e5bd27595b716823fce3.js.map

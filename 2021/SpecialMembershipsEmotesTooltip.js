@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.cd43f09dc0ac4df90740.js
-// Retrieved at 3/11/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.fa41e87fdcb65b0e6c01.js
+// Retrieved at 3/15/2021, 2:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, s) {
@@ -101,43 +101,44 @@
 			}(o || (o = {}));
 			const d = ({
 				className: e,
-				disabled: t,
-				id: s,
-				imagePath: c,
-				onClick: d,
-				onKeyDown: m,
-				title: p,
-				onClickDelete: h
+				imageClassName: t,
+				disabled: s,
+				id: c,
+				imagePath: d,
+				onClick: m,
+				onKeyDown: p,
+				title: h,
+				onClickDelete: u
 			}) => {
-				const u = Object(i.useRef)(o.Outside),
-					[E, b] = Object(i.useState)(!1);
+				const E = Object(i.useRef)(o.Outside),
+					[b, f] = Object(i.useState)(!1);
 				return n.a.createElement("div", {
 					className: l.a.container,
-					onMouseEnter: h ? () => {
-						u.current = o.Inside, setTimeout(() => {
-							u.current === o.Inside && b(!0)
-						}, 2e3)
+					onMouseEnter: u ? () => {
+						E.current = o.Inside, setTimeout(() => {
+							E.current === o.Inside && f(!0)
+						}, 750)
 					} : void 0,
-					onMouseLeave: h ? () => {
-						u.current = o.Outside, b(!1)
+					onMouseLeave: u ? () => {
+						E.current = o.Outside, f(!1)
 					} : void 0
-				}, E && n.a.createElement("button", {
+				}, b && n.a.createElement("button", {
 					className: l.a.deleteButton,
-					onClick: h
+					onClick: u
 				}, n.a.createElement(r.b, {
 					className: l.a.deleteIcon
 				})), n.a.createElement("button", {
 					className: Object(a.a)(l.a.emoteButton, e),
-					disabled: t,
-					id: s,
-					title: p,
-					onClick: d,
-					onKeyDown: m,
+					disabled: s,
+					id: c,
+					title: h,
+					onClick: m,
+					onKeyDown: p,
 					tabIndex: 1
 				}, n.a.createElement("div", {
-					className: l.a.emoteImage,
+					className: Object(a.a)(l.a.emoteImage, t),
 					style: {
-						backgroundImage: `url(${c})`
+						backgroundImage: `url(${d})`
 					}
 				})))
 			}
@@ -523,4 +524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.cd43f09dc0ac4df90740.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.fa41e87fdcb65b0e6c01.js.map
