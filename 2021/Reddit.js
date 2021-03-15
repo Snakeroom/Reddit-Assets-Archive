@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d3ed0bba54475a3ca79d.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b29c93fbae976fa33fb2.js
+// Retrieved at 3/15/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -8123,7 +8123,7 @@
 							key: e.key,
 							toast: t,
 							style: n,
-							sendViewEvent: () => bd("eu_essential_policy"),
+							sendViewEvent: () => this.props.sendEvent(bd("eu_essential_policy")),
 							onClose: e => {
 								switch (this.props.dismissToast(t.id)(), e) {
 									case "allow-all":
@@ -8137,7 +8137,7 @@
 							key: e.key,
 							toast: t,
 							style: n,
-							sendViewEvent: () => bd("eu_cookie_policy"),
+							sendViewEvent: () => this.props.sendEvent(bd("eu_cookie_policy")),
 							onClose: this.props.dismissToast(t.id)
 						});
 						if (t.kind === yd.b.AuthError) return u.a.createElement(Hd, {
@@ -17473,4 +17473,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d3ed0bba54475a3ca79d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b29c93fbae976fa33fb2.js.map
