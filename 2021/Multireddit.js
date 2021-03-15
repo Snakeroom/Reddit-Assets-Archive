@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.5437dfc875414a4a9ceb.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.23d43372534b2c6b6dd3.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5284,12 +5284,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.fd.SmIcon:
+						case b.id.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.fd.SmIconHc:
+						case b.id.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7383,9 +7383,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.dc.Enabled === Object(r.c)(e, {
+			const o = e => s.gc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Xb
+				experimentName: s.ac
 			})
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
@@ -7401,15 +7401,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.vb
+						experimentName: s.yb
 					});
-					return !(!t || Object(s.yd)(t))
+					return !(!t || Object(s.Bd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.vb
-					}) === s.Ib.ListingEnabled
+						experimentName: s.yb
+					}) === s.Lb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -7539,12 +7539,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.ad
+						experimentName: s.dd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.fd.SmIcon || t === s.fd.SmIconHc
+					return t === s.id.SmIcon || t === s.id.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7567,4 +7567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.5437dfc875414a4a9ceb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.23d43372534b2c6b6dd3.js.map

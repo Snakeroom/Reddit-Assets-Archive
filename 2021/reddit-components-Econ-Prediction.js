@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.5409250804fe0f980009.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a56d4c44fc0bf7c1e6b2.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(i, a, r) {
@@ -61,154 +61,197 @@
 		},
 		"./src/reddit/actions/economics/predictions/index.ts": function(i, a, r) {
 			"use strict";
-			r.d(a, "a", (function() {
-				return d
-			})), r.d(a, "c", (function() {
-				return u
-			})), r.d(a, "e", (function() {
-				return y
-			})), r.d(a, "d", (function() {
-				return G
-			})), r.d(a, "b", (function() {
+			r.d(a, "d", (function() {
+				return E
+			})), r.d(a, "f", (function() {
+				return A
+			})), r.d(a, "h", (function() {
 				return B
+			})), r.d(a, "g", (function() {
+				return D
+			})), r.d(a, "e", (function() {
+				return F
+			})), r.d(a, "b", (function() {
+				return g
+			})), r.d(a, "i", (function() {
+				return v
+			})), r.d(a, "c", (function() {
+				return P
+			})), r.d(a, "a", (function() {
+				return S
 			}));
-			r("./node_modules/uuid/index.js");
-			var x = r("./src/lib/initializeClient/installReducer.ts"),
-				t = r("./src/reddit/reducers/features/predictions/index.ts"),
-				k = r("./src/lib/makeActionCreator/index.ts"),
-				n = r("./src/reddit/endpoints/economics/predictions.ts"),
-				o = r("./src/reddit/selectors/experiments/econ/predictions.ts"),
-				m = r("./src/reddit/selectors/posts.ts"),
-				s = r("./src/reddit/selectors/subreddit.ts"),
-				e = r("./src/reddit/selectors/user.ts");
-			r("./src/reddit/selectors/postCreations.ts");
-			Object(x.a)({
+			var x = r("./node_modules/uuid/index.js"),
+				t = r.n(x),
+				k = r("./src/lib/initializeClient/installReducer.ts"),
+				n = r("./src/reddit/reducers/features/predictions/index.ts"),
+				o = r("./src/lib/makeActionCreator/index.ts"),
+				m = r("./src/reddit/endpoints/economics/predictions.ts"),
+				s = r("./src/reddit/models/Poll/index.ts"),
+				e = r("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				l = r("./src/reddit/selectors/posts.ts"),
+				c = r("./src/reddit/selectors/subreddit.ts"),
+				p = r("./src/reddit/selectors/user.ts"),
+				h = r("./src/reddit/selectors/features/predictions/creation/index.ts"),
+				f = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				d = r("./src/reddit/actions/economics/predictions/constants.ts");
+			Object(k.a)({
 				features: {
-					predictions: t.a
+					predictions: n.a
 				}
 			});
-			var l = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				c = r("./src/reddit/actions/economics/predictions/constants.ts");
-			Object(x.a)({
-				features: {
-					predictions: t.a
-				}
-			});
-			const p = Object(k.a)(c.d),
-				h = Object(k.a)(c.f),
-				f = Object(k.a)(c.e),
-				d = (i, a, r, x) => async (t, k, {
-					gqlContext: o
+			const u = Object(o.a)(d.d),
+				y = Object(o.a)(d.g),
+				G = Object(o.a)(d.f),
+				E = (i, a, r, x) => async (t, k, {
+					gqlContext: n
 				}) => {
-					const m = Object(e.J)(k()),
-						s = await Object(n.f)(o(), {
+					const o = Object(p.J)(k()),
+						s = await Object(m.f)(n(), {
 							subredditId: i,
 							period: a,
 							top: r,
-							includeCurrentRank: m,
+							includeCurrentRank: o,
 							tournamentId: x
 						});
 					if (s.error || !s.ok) throw new Error("Failed to fetch subreddit top predictors");
 					const {
-						subredditInfoById: l
+						subredditInfoById: e
 					} = s.body.data;
-					if (!l || !l.predictionWinners) throw new Error("Subreddit has no prediction winners");
+					if (!e || !e.predictionWinners) throw new Error("Subreddit has no prediction winners");
 					const {
-						predictionWinners: c
-					} = l, h = {
+						predictionWinners: l
+					} = e, c = {
 						subredditId: i,
-						...c
+						...l
 					};
-					return t(p(h)), h
-				}, u = i => async (a, r, {
+					return t(u(c)), c
+				}, A = i => async (a, r, {
 					gqlContext: x
 				}) => {
 					const t = r(),
-						k = Object(m.P)(t, {
+						k = Object(l.P)(t, {
 							postId: i,
 							disallowProfile: !0
 						});
 					if (!k) throw new Error("Post does not belong to a subreddit");
-					const s = await Object(n.e)(x(), k.name, Object(o.a)(t));
-					if (s.error || !s.ok) throw new Error("Failed to fetch coin packs");
+					const n = await Object(m.e)(x(), k.name, Object(e.d)(t));
+					if (n.error || !n.ok) throw new Error("Failed to fetch coin packs");
 					const {
-						subredditInfoByName: e
-					} = s.body.data;
-					if (!e || !e.predictionCoinPackages.length) throw new Error("Subreddit has no coin packs");
-					return e.predictionCoinPackages
-				}, y = ({
+						subredditInfoByName: o
+					} = n.body.data;
+					if (!o || !o.predictionCoinPackages.length) throw new Error("Subreddit has no coin packs");
+					return o.predictionCoinPackages
+				}, B = ({
 					coinPackageId: i,
 					optionId: a,
 					postId: r,
 					price: x
 				}) => async (t, k, {
-					gqlContext: o
+					gqlContext: n
 				}) => {
-					const m = await Object(n.j)(o(), {
+					const o = await Object(m.j)(n(), {
 						coinPackageId: i,
 						optionId: a,
 						postId: r,
 						price: x
 					});
-					if (m.error || !m.ok) throw new Error("Failed to make prediction");
+					if (o.error || !o.ok) throw new Error("Failed to make prediction");
 					const {
 						votePrediction: s
-					} = m.body.data;
+					} = o.body.data;
 					if (!s) throw new Error("Failed to create prediction vote");
-					return t(h({
+					return t(y({
 						pollId: r,
 						prediction: s.poll,
 						price: x
 					})), s.poll
-				}, G = ({
+				}, D = ({
 					optionId: i,
 					postId: a
 				}) => async (r, x, {
 					gqlContext: t
 				}) => {
-					const k = await Object(n.h)(t(), {
+					const k = await Object(m.h)(t(), {
 							optionId: i,
 							postId: a
 						}),
 						{
-							resolvePrediction: o
+							resolvePrediction: n
 						} = k.body.data;
-					if (!(null == o ? void 0 : o.poll)) throw new Error("Failed to resolve prediction");
-					return r(f({
+					if (!(null == n ? void 0 : n.poll)) throw new Error("Failed to resolve prediction");
+					return r(G({
 						pollId: a,
-						prediction: o.poll
-					})), o.poll
-				}, E = Object(k.a)(c.b), A = Object(k.a)(c.c), B = i => async (a, r, {
+						prediction: n.poll
+					})), n.poll
+				}, V = Object(o.a)(d.b), b = Object(o.a)(d.c), F = i => async (a, r, {
 					gqlContext: x
 				}) => {
 					const t = r(),
-						k = Object(s.F)(t, i);
-					if (Object(l.h)(t, {
+						k = Object(c.F)(t, i);
+					if (Object(f.h)(t, {
 							subredditId: k
-						})) return Object(l.f)(t, {
+						})) return Object(f.f)(t, {
 						subredditId: k
 					});
-					a(E({
+					a(V({
 						subredditId: k
 					}));
-					const o = await Object(n.g)(x(), {
+					const n = await Object(m.g)(x(), {
 						subredditName: i,
 						isLatestOnly: !0,
 						isIncludingPredictions: !0,
 						isIncludingParticipants: !0
 					});
-					if (o.error || !o.ok) throw new Error("Failed to fetch tournaments");
+					if (n.error || !n.ok) throw new Error("Failed to fetch tournaments");
 					const {
-						subredditInfoByName: m
-					} = o.body.data;
-					if (!m.predictionTournaments) return [];
-					const e = m.predictionTournaments;
-					return a(A({
+						subredditInfoByName: o
+					} = n.body.data;
+					if (!o.predictionTournaments) return [];
+					const s = o.predictionTournaments;
+					return a(b({
 						subredditId: k,
-						tournaments: e
-					})), e
+						tournaments: s
+					})), s
+				}, g = Object(o.a)(d.a), v = Object(o.a)(d.h), P = ({
+					subredditId: i
+				}) => async (a, r, {
+					gqlContext: x
+				}) => {
+					const t = r(),
+						k = Object(h.b)(t),
+						n = Object(e.a)(t);
+					if (!k) throw new Error("Failed to create tournament, no prediction drafts attached");
+					const o = await Object(m.c)(x(), {
+							name: "New Tournament",
+							isStartImmediately: !0,
+							subredditId: i,
+							predictionDrafts: k,
+							currency: n ? s.b.Coins : s.b.Tokens
+						}),
+						{
+							createPredictionTournament: l
+						} = o.body.data;
+					if (!(null == l ? void 0 : l.tournament)) throw new Error("Failed to resolve prediction");
+					return l.tournament
+				}, S = (i, a) => async (r, x, {
+					gqlContext: k
+				}) => {
+					const n = Object(h.b)(x());
+					if (!n) throw new Error("Failed to create prediction post, no prediction drafts attached");
+					const o = await Object(m.b)(k(), {
+							tournamentId: i,
+							isStartImmediately: !0,
+							iKey: `add-dfts-${t.a.v4()}`,
+							subredditId: a,
+							predictionDrafts: n
+						}),
+						{
+							addPredictionDrafts: s
+						} = o.body.data;
+					if (!(null == s ? void 0 : s.tournament)) throw new Error("Failed to create prediction");
+					return s.tournament
 				};
-			Object(k.a)(c.a), Object(k.a)(c.g), Object(k.a)(c.h)
+			Object(o.a)(d.i)
 		},
 		"./src/reddit/components/Econ/CoinsModalHeader/index.m.less": function(i, a, r) {
 			i.exports = {
@@ -577,8 +620,8 @@
 				O = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				C = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				N = r("./src/reddit/icons/svgs/Minus/index.tsx"),
-				j = r("./src/reddit/icons/svgs/Plus/index.tsx"),
-				w = r("./src/reddit/components/Econ/CoinsModalHeader/index.tsx"),
+				w = r("./src/reddit/icons/svgs/Plus/index.tsx"),
+				j = r("./src/reddit/components/Econ/CoinsModalHeader/index.tsx"),
 				I = r("./src/reddit/controls/Button/index.tsx"),
 				L = r("./src/reddit/icons/svgs/Close/index.tsx");
 
@@ -667,7 +710,7 @@
 				onCancel: i,
 				selectedCoinPack: a
 			}) {
-				const r = Object(k.e)(p.d),
+				const r = Object(k.e)(p.g),
 					n = Object(k.e)(E.d),
 					[m, s] = Object(x.useState)(null),
 					[l, c] = Object(x.useState)(!1);
@@ -696,7 +739,7 @@
 					className: W.a.leftStar
 				}), t.a.createElement(M, {
 					className: W.a.rightStar
-				})))) : t.a.createElement(w.a, {
+				})))) : t.a.createElement(j.a, {
 					onAddCoins: e.promptUserToBuyMoreCoins,
 					onCancel: i,
 					title: K._("Predict the Future", null, {
@@ -730,10 +773,10 @@
 			const {
 				fbt: ai
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ri = Object(n.c)({
-				isNewPredictionsSheet: p.d,
+				isNewPredictionsSheet: p.g,
 				userCoins: E.d
 			}), xi = {
-				getCoinPacks: l.c,
+				getCoinPacks: l.f,
 				showToast: c.f
 			};
 			var ti = Object(k.b)(ri, xi)(Object(_.a)(({
@@ -811,7 +854,7 @@
 						onClick: i => {
 							i.preventDefault(), u && (D || p(c + 1))
 						}
-					}, t.a.createElement(j.a, {
+					}, t.a.createElement(w.a, {
 						className: ii.a.wagerSelectorButtonIcon
 					}))), t.a.createElement("div", {
 						className: ii.a.amountMessage
@@ -1093,7 +1136,7 @@
 				hk: "3Wlnwj"
 			})], Ni = () => Ci[Math.floor(Math.random() * Ci.length)];
 
-			function ji({
+			function wi({
 				children: i,
 				endsAt: a,
 				isShowingVoteAnimation: r,
@@ -1149,8 +1192,8 @@
 					successMessage: y
 				}, i))
 			}
-			const wi = `${Fi.a.assetPath}/img/econ/predictions/waiting@2x.png`,
-				Ii = `\n  ${Fi.a.assetPath}/img/econ/predictions/waiting.png,\n  ${wi} 2x,\n  ${Fi.a.assetPath}/img/econ/predictions/waiting@3x.png 3x,\n`,
+			const ji = `${Fi.a.assetPath}/img/econ/predictions/waiting@2x.png`,
+				Ii = `\n  ${Fi.a.assetPath}/img/econ/predictions/waiting.png,\n  ${ji} 2x,\n  ${Fi.a.assetPath}/img/econ/predictions/waiting@3x.png 3x,\n`,
 				Li = Object(_.a)(({
 					background: i,
 					children: a,
@@ -1204,7 +1247,7 @@
 					}, t.a.createElement("img", {
 						className: _i.a.image,
 						srcSet: Ii,
-						src: wi,
+						src: ji,
 						alt: Oi._("Snoos gazing into a crystal ball", null, {
 							hk: "1XM1Zp"
 						})
@@ -1249,7 +1292,7 @@
 						subredditId: i
 					}));
 				if (Object(x.useEffect)(() => {
-						o || r(Object(l.b)(n.name))
+						o || r(Object(l.e)(n.name))
 					}, [r, o, n.name]), (null == m ? void 0 : m.tournamentId) !== a) return null;
 				const {
 					name: s,
@@ -1281,8 +1324,8 @@
 			const {
 				fbt: Qi
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), $i = Object(n.c)({
-				isEditing: y.F,
-				isVoteAnimationEnabled: p.b,
+				isEditing: y.K,
+				isVoteAnimationEnabled: p.e,
 				prediction: u.g,
 				pollId: u.a,
 				post: G.D,
@@ -1291,8 +1334,8 @@
 				userIsLoggedIn: E.J,
 				userId: E.nb
 			}), ia = {
-				onPredictionResolve: l.d,
-				onPredictionVote: l.e,
+				onPredictionResolve: l.g,
+				onPredictionVote: l.h,
 				showToast: c.f
 			}, aa = Object(s.t)({
 				isCommentsPage: s.w,
@@ -1315,9 +1358,9 @@
 				userIsLoggedIn: F
 			}) => {
 				var g;
-				const [v, P] = Object(x.useState)(!1), [_, O] = Object(x.useState)(null), [C, N] = Object(x.useState)(null), [j, w] = Object(x.useState)(!1), I = Object(f.a)(), L = Object(x.useCallback)(() => {
-					w(!1)
-				}, []), M = Object(k.e)(p.e);
+				const [v, P] = Object(x.useState)(!1), [_, O] = Object(x.useState)(null), [C, N] = Object(x.useState)(null), [w, j] = Object(x.useState)(!1), I = Object(f.a)(), L = Object(x.useCallback)(() => {
+					j(!1)
+				}, []), M = Object(k.e)(p.h);
 				if (!G || !y || !E) return t.a.createElement(b, null);
 				const {
 					creatorId: R,
@@ -1354,13 +1397,13 @@
 					storageKey: A.a.feature
 				}) : null, t.a.createElement("div", {
 					className: Ri.a.poll
-				}, U.map(i => t.a.createElement(ji, {
+				}, U.map(i => t.a.createElement(wi, {
 					endsAt: H,
 					key: `prediction-option-${i.id}`,
-					isShowingVoteAnimation: j && z === i.id,
+					isShowingVoteAnimation: w && z === i.id,
 					onAnimationEnd: L
 				}, t.a.createElement(li, {
-					disabled: j,
+					disabled: w,
 					isEnded: X,
 					isSelected: _ === i.id,
 					needsResolution: Z,
@@ -1401,7 +1444,7 @@
 								optionId: _,
 								postId: G,
 								price: i.coins
-							}), P(!1), O(null), s ? w(!0) : B({
+							}), P(!1), O(null), s ? j(!0) : B({
 								duration: 5e3,
 								kind: d.b.SuccessCommunity,
 								text: Qi._("Thanks! See if you're right in {timeToResult}", [Qi._param("timeToResult", Object(m.a)(new Date(H), !0))], {
@@ -1895,7 +1938,59 @@
 			}, t.a.createElement("path", {
 				d: "M10.3785 4.86328H14.9734C15.6086 4.86328 16.1221 4.3498 16.1221 3.71456V1.41713C16.1221 0.781889 15.6086 0.268413 14.9734 0.268413H10.3785H5.78363H1.18876C0.554665 0.268413 0.0400391 0.781889 0.0400391 1.41713V3.71456C0.0400391 4.3498 0.554665 4.86328 1.18876 4.86328H5.78363H10.3785Z"
 			})))
+		},
+		"./src/reddit/selectors/features/predictions/creation/index.ts": function(i, a, r) {
+			"use strict";
+			r.d(a, "b", (function() {
+				return n
+			})), r.d(a, "a", (function() {
+				return o
+			}));
+			var x = r("./src/lib/initializeClient/installReducer.ts"),
+				t = r("./src/reddit/reducers/features/predictions/index.ts"),
+				k = r("./src/reddit/selectors/postCreations.ts");
+			Object(x.a)({
+				features: {
+					predictions: t.a
+				}
+			});
+			const n = i => {
+					const a = (i => {
+						var a, r;
+						return null === (r = null === (a = i.features) || void 0 === a ? void 0 : a.predictions) || void 0 === r ? void 0 : r.creation
+					})(i);
+					return (null == a ? void 0 : a.length) ? null == a ? void 0 : a.map(a => {
+						const r = Object(k.cb)({
+								...i,
+								creations: {
+									...i.creations,
+									formData: a.formData,
+									formState: a.formState
+								}
+							}, {}),
+							x = a.formData.polls,
+							t = x.options.map(i => ({
+								text: i.text
+							})),
+							n = {};
+						return r.document ? n.richText = JSON.stringify({
+							document: r.document
+						}) : r.markdown && (n.markdown = r.markdown), {
+							title: r.title,
+							isLiveChat: r.isChatPost,
+							isNsfw: r.isNSFW,
+							isSpoiler: r.isSpoiler,
+							votingEndsAt: x.endDate.toISOString(),
+							body: n,
+							options: t
+						}
+					}) : []
+				},
+				o = i => {
+					var a, r;
+					return !!(null === (r = null === (a = i.features) || void 0 === a ? void 0 : a.predictions) || void 0 === r ? void 0 : r.creation.length)
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.5409250804fe0f980009.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a56d4c44fc0bf7c1e6b2.js.map

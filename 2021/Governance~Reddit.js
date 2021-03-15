@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7235fc16e7d0e630512d.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b435ceb8fcc17ba850dd.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2355,7 +2355,7 @@
 			const v = e => g.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(D.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.c)),
-					experimentName: b.Lc
+					experimentName: b.Oc
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				j = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -12452,8 +12452,8 @@
 							...a
 						}
 					}
+					case Nu.g:
 					case Nu.f:
-					case Nu.e:
 						const {
 							pollId: r, prediction: {
 								options: s,
@@ -12490,7 +12490,7 @@
 				switch (t.type) {
 					case m.k: {
 						const {
-							[Aa.b.ByVoters]: r, pollId: s
+							[Aa.c.ByVoters]: r, pollId: s
 						} = t.payload.pollResults;
 						return {
 							...e,
@@ -12532,7 +12532,7 @@
 							const t = Object.keys(r).reduce((e, t) => {
 								const s = r[t],
 									{
-										[Aa.b.ByVoters]: a,
+										[Aa.c.ByVoters]: a,
 										pollId: n
 									} = s.pollResults;
 								return e[n] = a, e
@@ -12581,7 +12581,7 @@
 					switch (t.type) {
 						case m.k: {
 							const {
-								[Aa.b.ByVotingPower]: r, pollId: s
+								[Aa.c.ByVotingPower]: r, pollId: s
 							} = t.payload.pollResults;
 							return {
 								...e,
@@ -12601,7 +12601,7 @@
 								const t = Object.keys(r).reduce((e, t) => {
 									const s = r[t],
 										{
-											[Aa.b.ByVotingPower]: a,
+											[Aa.c.ByVotingPower]: a,
 											pollId: n
 										} = s.pollResults;
 									return e[n] = a, e
@@ -19751,7 +19751,7 @@
 							coins: r
 						} : e
 					}
-					case Nu.f: {
+					case Nu.g: {
 						const {
 							price: r
 						} = t.payload;
@@ -21557,7 +21557,7 @@
 				l = e => e === a.G.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.yd)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.Bd)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -21712,4 +21712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7235fc16e7d0e630512d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b435ceb8fcc17ba850dd.js.map

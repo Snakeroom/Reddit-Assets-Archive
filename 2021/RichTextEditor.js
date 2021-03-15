@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.66970ae7948b35139b48.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.aed12ff6635b71963fe6.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -3284,8 +3284,8 @@
 					onChange: o => {
 						e(Object(c.c)(o)), t.onChange && t.onChange(o)
 					},
-					helpModalToggled: () => e(Object(c.w)(u.b)),
-					switchToRTEModalToggled: () => e(Object(c.w)(m.a.SWITCH_TO_RTE_MODAL_ID))
+					helpModalToggled: () => e(Object(c.x)(u.b)),
+					switchToRTEModalToggled: () => e(Object(c.x)(m.a.SWITCH_TO_RTE_MODAL_ID))
 				}));
 			class S extends r.a.Component {
 				constructor(e) {
@@ -3406,14 +3406,15 @@
 				a = o("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				i = o("./src/reddit/constants/keycodes.ts"),
 				c = o("./src/reddit/controls/Button/index.tsx"),
-				d = o("./src/reddit/controls/TextButton/index.tsx"),
-				l = o("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				u = o("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
-				m = o.n(u),
-				p = o("./src/lib/lessComponent.tsx");
-			const h = p.a.wrapped(c.i, "PrimaryButton", m.a),
-				b = p.a.wrapped(a.o, "ModalText", m.a);
-			class f extends s.a.PureComponent {
+				d = o("./src/reddit/controls/LoadingIcon/index.tsx"),
+				l = o("./src/reddit/controls/TextButton/index.tsx"),
+				u = o("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				m = o("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
+				p = o.n(m),
+				h = o("./src/lib/lessComponent.tsx");
+			const b = h.a.wrapped(c.i, "PrimaryButton", p.a),
+				f = h.a.wrapped(a.o, "ModalText", p.a);
+			class _ extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						e.keyCode === i.a.Escape && this.props.onClose()
@@ -3426,16 +3427,24 @@
 					document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				render() {
-					return s.a.createElement(a.d, null, s.a.createElement(a.h, null, s.a.createElement(l.a, null, s.a.createElement(a.p, null, this.props.titleText), s.a.createElement(d.a, {
+					const {
+						primaryButtonLoading: e,
+						secondaryButtonLoading: t
+					} = this.props;
+					return s.a.createElement(a.d, null, s.a.createElement(a.h, null, s.a.createElement(u.a, null, s.a.createElement(a.p, null, this.props.titleText), s.a.createElement(l.a, {
 						onClick: this.props.onClose
-					}, s.a.createElement(a.b, null)))), s.a.createElement(a.k, null, s.a.createElement(b, null, this.props.bodyText)), s.a.createElement(a.f, null, s.a.createElement(a.a, {
+					}, s.a.createElement(a.b, null)))), s.a.createElement(a.k, null, s.a.createElement(f, null, this.props.bodyText)), s.a.createElement(a.f, null, s.a.createElement(a.a, {
 						onClick: this.props.onSecondaryAction
-					}, this.props.secondaryButtonText), s.a.createElement(h, {
+					}, t ? s.a.createElement(d.a, {
+						sizePx: 16
+					}) : this.props.secondaryButtonText), s.a.createElement(b, {
 						onClick: this.props.onPrimaryAction
-					}, this.props.primaryButtonText)))
+					}, e ? s.a.createElement(d.a, {
+						sizePx: 16
+					}) : this.props.primaryButtonText)))
 				}
 			}
-			t.a = Object(r.a)(f)
+			t.a = Object(r.a)(_)
 		},
 		"./src/reddit/components/PostCreationForm/Prompt/index.tsx": function(e, t, o) {
 			"use strict";
@@ -3610,8 +3619,8 @@
 					errorMessages: _.j,
 					hasError: _.k,
 					markdownDraft: _.l,
-					pending: _.T,
-					postRequirements: _.ib,
+					pending: _.Y,
+					postRequirements: _.nb,
 					rteDraft: _.m,
 					subreddit: T.q,
 					uploads: e => e.uploads,
@@ -4540,8 +4549,8 @@
 			const r = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.yc
-				}) === n.Hc.Enabled
+					experimentName: n.Bc
+				}) === n.Kc.Enabled
 			}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4570,4 +4579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.66970ae7948b35139b48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.aed12ff6635b71963fe6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.c66953394b9a1a0950c1.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.f6f807b988203d5a052a.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1529,7 +1529,7 @@
 				f = p.a.ol("Ol", m.a),
 				x = p.a.div("Title", m.a),
 				g = Object(a.c)({
-					submissionType: l.fb
+					submissionType: l.kb
 				});
 			t.a = p.a.wrapped(Object(i.b)(g)(e => {
 				const {
@@ -1633,7 +1633,7 @@
 				},
 				M = Object(c.c)({
 					hasIdCardWidgetData: P,
-					isCreationPagePending: x.E,
+					isCreationPagePending: x.J,
 					profile: (e, {
 						pageLayer: t,
 						subredditOrProfileId: n
@@ -2942,12 +2942,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.fd.SmIcon:
+						case b.id.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.fd.SmIconHc:
+						case b.id.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -3205,7 +3205,7 @@
 			const {
 				fbt: m
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = Object(d.c)({
-				title: c.kb
+				title: c.pb
 			});
 			var h = Object(a.b)(p)(e => {
 					const {
@@ -4784,12 +4784,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.ad
+						experimentName: s.dd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.fd.SmIcon || t === s.fd.SmIconHc
+					return t === s.id.SmIcon || t === s.id.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4812,4 +4812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.c66953394b9a1a0950c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.f6f807b988203d5a052a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.6d4ee636bb5a3a6d209c.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b238b3afe7ca5ae7cdbb.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -733,7 +733,7 @@
 						return Object(a.a)(v)
 				}
 				const ee = s(),
-					te = !!C && Object(me.cb)(ee),
+					te = !!C && Object(me.hb)(ee),
 					se = Object(he.G)(ee),
 					ne = C ? Object(k.W)(ee, {
 						subredditName: C.toLowerCase()
@@ -21387,7 +21387,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				at = Object(i.b)(() => Object(d.a)(et, I.G, E.O, st, I.bb, w.cb, nt, tt, (e, t) => t.match.params.pageName, e => e, ({
+				at = Object(i.b)(() => Object(d.a)(et, I.G, E.O, st, I.bb, w.hb, nt, tt, (e, t) => t.match.params.pageName, e => e, ({
 					contentGateInfo: e
 				}, t, s, {
 					moderatorPermissions: n
@@ -22074,9 +22074,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Db
+					experimentName: n.Gb
 				});
-				return !(!t || Object(n.yd)(t))
+				return !(!t || Object(n.Bd)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -22309,4 +22309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6d4ee636bb5a3a6d209c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b238b3afe7ca5ae7cdbb.js.map

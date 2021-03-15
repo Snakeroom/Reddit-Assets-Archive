@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.7c757a1bde51cd01dd84.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f29ff4253265abee87eb.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -593,12 +593,12 @@
 					})(u)), d.filter(t => t.isValid).map(t => t.uploadKey)
 				}, P = (t, e) => async (n, s) => {
 					const r = s(),
-						i = Object(j.P)(r),
+						i = Object(j.U)(r),
 						{
 							items: c
 						} = i,
 						a = !c.length && 1 === t.length,
-						p = Object(j.G)(r) && !a;
+						p = Object(j.L)(r) && !a;
 					let h = !1,
 						m = t;
 					if (p) {
@@ -8528,4 +8528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.7c757a1bde51cd01dd84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f29ff4253265abee87eb.js.map

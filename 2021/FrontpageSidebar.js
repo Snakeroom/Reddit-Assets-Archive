@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ff83785445b037225476.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.2d51b95688114113f289.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -274,11 +274,11 @@
 				V = n("./src/reddit/contexts/ApiContext.tsx"),
 				J = n("./src/reddit/featureFlags/component.tsx"),
 				K = n("./src/reddit/helpers/localStorage/index.ts"),
-				Z = n("./src/reddit/helpers/name/index.ts"),
-				H = n("./src/lib/makeApiRequest/index.ts"),
+				H = n("./src/reddit/helpers/name/index.ts"),
+				Z = n("./src/lib/makeApiRequest/index.ts"),
 				X = n("./src/lib/omitHeaders/index.ts"),
 				Y = n("./src/reddit/constants/headers.ts");
-			const z = e => Object(H.a)(Object(X.a)(e, [Y.a]), {
+			const z = e => Object(Z.a)(Object(X.a)(e, [Y.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
 				method: q.cb.GET,
 				type: "json"
@@ -329,7 +329,7 @@
 						hk: "487Ffc"
 					})), c.a.createElement("div", {
 						className: ee.a.description
-					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", c.a.createElement("strong", null, e.map(Z.c).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", c.a.createElement("strong", null, e.map(H.c).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), c.a.createElement(k.k, {
 						className: ee.a.button,
@@ -691,11 +691,11 @@
 					noun: "community"
 				});
 			var Ke = n("./src/reddit/models/GoodContent/index.ts"),
-				Ze = n("./src/reddit/helpers/chooseVariant/index.ts");
+				He = n("./src/reddit/helpers/chooseVariant/index.ts");
 
-			function He(e) {
-				return Object(Ze.c)(e, {
-					experimentEligibilitySelector: Ze.a,
+			function Ze(e) {
+				return Object(He.c)(e, {
+					experimentEligibilitySelector: He.a,
 					experimentName: We.q
 				})
 			}
@@ -719,20 +719,20 @@
 					isOver18: ze.bb,
 					isUISimplificationAllItemsVariant: $e.b,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return He(e) === We.p.RotateEven
+						return Ze(e) === We.p.RotateEven
 					},
 					isInIcons2020: Xe.a,
-					bffsLeaderboardVariant: He,
+					bffsLeaderboardVariant: Ze,
 					inRpanTopVideoEntrypointExperiment: Ye.e,
 					rankings: e => Object(Ce.O)(e, st),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Ye.e)(e),
 							n = !!Object(Ce.O)(e, st);
 						return (!t || !n) && (!Object($e.b)(e) && function(e) {
-							return Object(Ze.c)(e, {
+							return Object(He.c)(e, {
 								experimentEligibilitySelector: ze.J,
 								experimentName: We.Y
-							}) === We.Eb
+							}) === We.Hb
 						}(e))
 					}
 				}),
@@ -1964,4 +1964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.ff83785445b037225476.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.2d51b95688114113f289.js.map

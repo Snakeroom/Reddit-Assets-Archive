@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.e2a6eceb4a00d0eb396e.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.b0a554dc409df30f9234.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.lc
+					experimentName: u.oc
 				});
-				return Object(u.yd)(t) ? void 0 : t
+				return Object(u.Bd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.mc
+					experimentName: u.pc
 				});
-				return Object(u.yd)(t) ? void 0 : t
-			}, (e, t) => e === u.nc.Enabled && t === u.nc.Enabled);
+				return Object(u.Bd)(t) ? void 0 : t
+			}, (e, t) => e === u.qc.Enabled && t === u.qc.Enabled);
 			var p = s("./src/config.ts");
 			var g = s("./src/reddit/selectors/user.ts");
 			const b = e => {
@@ -721,7 +721,7 @@
 				isCommentsPage: e,
 				poll: t,
 				postId: s
-			}) => t ? Object(r.f)(t) ? n.a.createElement(l.a, {
+			}) => t ? Object(r.g)(t) ? n.a.createElement(l.a, {
 				postId: s
 			}) : n.a.createElement(c.a, {
 				postId: s,
@@ -1095,7 +1095,7 @@
 					}),
 					isEditing: (e, {
 						post: t
-					}) => Object(J.F)(e, {
+					}) => Object(J.K)(e, {
 						postId: t.id
 					}),
 					shouldShowAltText: (e, t) => Object(Q.d)(e, t),
@@ -1256,7 +1256,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), e === V.ec.OCR ? o += `${oe}${t}` : s.title && (o += `${oe}${s.title}`), e === V.ec.ShortPostTitleOCR && (o += `${oe}${t}`), o.length > ne ? Object(v.a)(o, ne, h.bb) : o
+					return i && (o += i), e === V.hc.OCR ? o += `${oe}${t}` : s.title && (o += `${oe}${s.title}`), e === V.hc.ShortPostTitleOCR && (o += `${oe}${t}`), o.length > ne ? Object(v.a)(o, ne, h.bb) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(Y.j, this.state.viewportHeight),
@@ -1916,7 +1916,7 @@
 					const s = r(e, {
 						postId: t
 					});
-					return s && Object(n.f)(s) ? s : null
+					return s && Object(n.g)(s) ? s : null
 				},
 				l = (e, {
 					commentId: t
@@ -1953,4 +1953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.e2a6eceb4a00d0eb396e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.b0a554dc409df30f9234.js.map

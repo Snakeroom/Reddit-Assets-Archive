@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.8e23ea47a0ea11614348.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.2a83e7ee67f35ea80e26.js
+// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -167,9 +167,9 @@
 			})), s.d(t, "createRequested", (function() {
 				return V
 			})), s.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
-				return Q
-			})), s.d(t, "duplicateFailure", (function() {
 				return K
+			})), s.d(t, "duplicateFailure", (function() {
+				return Q
 			})), s.d(t, "duplicatePending", (function() {
 				return Z
 			})), s.d(t, "duplicateSuccess", (function() {
@@ -417,7 +417,7 @@
 							})
 						}))
 					} else i(G(m.error))
-				}, Q = () => async (e, t, {
+				}, K = () => async (e, t, {
 					apiContext: s
 				}) => {
 					const r = t(),
@@ -446,7 +446,7 @@
 						sort: u,
 						t: Object(N.a)(u, y)
 					}))
-				}, K = Object(c.a)(R.k), Z = Object(c.a)(R.l), Y = Object(c.a)(R.m), X = ({
+				}, Q = Object(c.a)(R.k), Z = Object(c.a)(R.l), Y = Object(c.a)(R.m), X = ({
 					description: e,
 					displayName: t,
 					fromName: s,
@@ -488,7 +488,7 @@
 							}),
 							buttonAction: Object(d.b)(e.url)
 						}))
-					} else n(K(O.error)), n(Object(p.f)({
+					} else n(Q(O.error)), n(Object(p.f)({
 						text: r.fbt._("Something went wrong duplicating {multiName}", [r.fbt._param("multiName", s)], {
 							hk: "4bzN2D"
 						})
@@ -536,7 +536,7 @@
 							id: n,
 							multipaths: d,
 							type: t.type
-						})), 1 === s.length && await i(Q())
+						})), 1 === s.length && await i(K())
 					} else {
 						i(ee(y.error));
 						let e = r.fbt._("Sorry, something went wrong adding {subredditName}.", [r.fbt._param("subredditName", t.name)], {
@@ -589,7 +589,7 @@
 							},
 							multiredditNames: [t]
 						})
-					})), n(Q())) : (n(ie(y.error)), n(Object(p.f)({
+					})), n(K())) : (n(ie(y.error)), n(Object(p.f)({
 						text: r.fbt._("Sorry, something went wrong removing {subredditName}.", [r.fbt._param("subredditName", s)], {
 							hk: "1E1rKm"
 						})
@@ -1188,8 +1188,8 @@
 				z = s.n(G),
 				H = s("./src/lib/lessComponent.tsx");
 			const V = H.a.div("SidebarTopSpacer", z.a),
-				Q = H.a.div("ModalTopSpacer", z.a),
-				K = H.a.div("SidebarTitleContainer", z.a),
+				K = H.a.div("ModalTopSpacer", z.a),
+				Q = H.a.div("SidebarTitleContainer", z.a),
 				Z = H.a.div("SidebarTitle", z.a),
 				Y = H.a.wrapped(P.a, "SidebarFlair", z.a),
 				X = H.a.div("Attributon", z.a),
@@ -1226,7 +1226,7 @@
 						multireddit: s,
 						onSeeMoreDetails: i,
 						subredditCategory: n
-					} = e, d = t === ee.Sidebar, [a, c] = d ? [V, X] : [Q, X], l = Object(B.f)(s) ? () => o.a.createElement(a, null, d && o.a.createElement(K, null, o.a.createElement(Z, null, s.displayText), s.visibility === B.e.Private && o.a.createElement(Y, {
+					} = e, d = t === ee.Sidebar, [a, c] = d ? [V, X] : [K, X], l = Object(B.f)(s) ? () => o.a.createElement(a, null, d && o.a.createElement(Q, null, o.a.createElement(Z, null, s.displayText), s.visibility === B.e.Private && o.a.createElement(Y, {
 						text: r.fbt._("Private", null, {
 							hk: "4Av1zq"
 						})
@@ -1653,8 +1653,8 @@
 				ze = s("./src/reddit/constants/zIndex.ts"),
 				He = s("./src/reddit/controls/TextButton/index.tsx"),
 				Ve = s("./src/reddit/helpers/trackers/idCard.ts"),
-				Qe = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				Ke = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Ke = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				Qe = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Ze = s("./src/reddit/components/MultiredditSidebar/index.m.less"),
 				Ye = s.n(Ze);
 
@@ -1669,7 +1669,7 @@
 			}
 			const $e = Object(l.a)(e => o.a.createElement(m.d, {
 					className: Ye.a.modalContainer
-				}, !e.shouldHideHeader && o.a.createElement(m.h, null, o.a.createElement(Qe.a, null, o.a.createElement(m.p, null, e.multireddit.displayText), o.a.createElement(He.a, {
+				}, !e.shouldHideHeader && o.a.createElement(m.h, null, o.a.createElement(Ke.a, null, o.a.createElement(m.p, null, e.multireddit.displayText), o.a.createElement(He.a, {
 					onClick: e.onCloseModal
 				}, o.a.createElement(m.b, null)))), o.a.createElement(m.k, null, o.a.createElement(te, {
 					mode: ee.Modal,
@@ -1686,7 +1686,7 @@
 					withOverlay: !0
 				})),
 				et = () => o.a.createElement(S.a, null, n()(5, e => o.a.createElement("div", {
-					className: Object(u.a)(Ye.a.placeholder, Object(Ke.a)({
+					className: Object(u.a)(Ye.a.placeholder, Object(Qe.a)({
 						isLoading: !0
 					})),
 					key: e
@@ -2048,7 +2048,7 @@
 		"./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return K
+				return Q
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				i = s("./node_modules/lodash/debounce.js"),
@@ -2263,7 +2263,7 @@
 			}
 			var H = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.m.less"),
 				V = s.n(H);
-			const Q = {
+			const K = {
 				[m.a.OWN_PROFILE]: () => r.fbt._("Your profile", null, {
 					hk: "1Qoy4P"
 				}),
@@ -2277,7 +2277,7 @@
 					hk: "uZtld"
 				})
 			};
-			class K extends o.a.PureComponent {
+			class Q extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.selectedEntryElement = null, this.containerElement = null, this.ignoreEntryOverEvents = !1, this.activateEntryOverEvents = n()(() => this.ignoreEntryOverEvents = !1, 100), this.setContainerRef = e => this.containerElement = e, this.onEntryUpdate = (e, t) => {
 						e === this.props.focusedIndex && (this.selectedEntryElement = t)
@@ -2333,7 +2333,7 @@
 								item: r
 							})))
 						});
-						const c = Q[i];
+						const c = K[i];
 						s.push(o.a.createElement(O, {
 							key: i,
 							title: c && c()
@@ -2633,10 +2633,10 @@
 			const n = e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.yc
-				}) === r.Hc.Enabled
+					experimentName: r.Bc
+				}) === r.Kc.Enabled
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.8e23ea47a0ea11614348.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.2a83e7ee67f35ea80e26.js.map
