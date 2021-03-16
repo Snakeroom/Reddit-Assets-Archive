@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.08ac45df15f178ecd529.js
-// Retrieved at 3/16/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f8111da754756e1ea75f.js
+// Retrieved at 3/16/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1447,11 +1447,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("129077"),
+				buildNumber: r("129083"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1615927340"),
+				})("1615929254"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3618,14 +3618,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c464e09de579bf95e37a4c64308934309ce272a3d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb83708e2917103e1e9a9be8f67b024b666f33e62-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "464e09de579bf95e37a4c64308934309ce272a3d-production",
+						release: "b83708e2917103e1e9a9be8f67b024b666f33e62-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4074,7 +4074,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "464e09de579bf95e37a4c64308934309ce272a3d-production",
+						releaseClient: "b83708e2917103e1e9a9be8f67b024b666f33e62-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -9029,7 +9029,9 @@
 						features: o,
 						subredditDescription: n.description || "",
 						subredditName: d,
-						isContributorRequestsDisabled: !!n.isContributorRequestsDisabled
+						isContributorRequestsDisabled: !!n.isContributorRequestsDisabled,
+						isContributorRequestTimestamp: n.isContributorRequestTimestamp ? parseInt(n.isContributorRequestTimestamp, 10) : void 0,
+						subredditId: n.id
 					}));
 					else if (r === G.d.QuarantinedSubreddit) {
 						const e = !n || void 0 === n.quarantineRequiresEmailOptin || n.quarantineRequiresEmailOptin;
@@ -12595,25 +12597,28 @@
 				}, Oe = (e, t, i) => async (n, r, {
 					apiContext: s
 				}) => {
-					const o = Object(W.F)(r(), e.substring(2)),
-						d = Object(H.i)(r()),
-						a = Object(q.c)(r());
-					if (d) {
-						const r = Object(L.e)(d),
-							l = {
-								to: `/${e}`,
-								subject: `${a?"[join] ":""}I would like to join ${e}`,
-								text: t + "\n\n   *To approve this user*, visit [the approved users page for " + e + "](https://www.reddit.com/" + e + "/about/contributors?user=" + r + ') and click "ADD USER".\n    Approving this user gives them permission to ' + i + ". You can change these community restrictions from the [community settings](/" + e + "/about/edit) page.\n\n   To get more information about this user, visit the profile page of [u/" + r + "](/u/" + r + ") or reply to this message to start a conversation."
-							};
-						if ((await Object(O.b)(s(), l)).ok && i !== k.e.View) {
+					var o;
+					const d = e.substring(2),
+						a = i === k.e.View ? null === (o = Object(H.e)(r(), d)) || void 0 === o ? void 0 : o.subredditId : Object(W.F)(r(), d),
+						l = Object(H.i)(r()),
+						c = Object(q.c)(r());
+					if (l && a) {
+						const e = ((e, t, i, n, r) => {
+							return {
+								to: `/r/${e}`,
+								subject: `${r?"[join] ":""}I would like to join ${e}`,
+								text: i + "\n\n   *To approve this user*, visit [the approved users page for r/" + e + "](https://www.reddit.com/r/" + e + "/about/contributors?user=" + t + ') and click "ADD USER".\n    Approving this user gives them permission to ' + n + ". You can change these community restrictions from the [community settings](/r/" + e + "/about/edit) page.\n\n   To get more information about this user, visit the profile page of [u/" + t + "](/u/" + t + ") or reply to this message to start a conversation."
+							}
+						})(d, Object(L.e)(l), t, i, c);
+						if ((await Object(O.b)(s(), e)).ok) {
 							const e = new Date,
 								t = {
 									isContributorRequestTimestamp: e.setDate(e.getDate())
 								};
 							n(Object(m.E)({
-								subredditId: o,
+								subredditId: a,
 								prefs: t
-							})), Object(x.h)(o, t, s()), n(Object(_.i)(w.a.CONTRIBUTOR_REQUEST_PENDING))
+							})), Object(x.h)(a, t, s()), i !== k.e.View && n(Object(_.i)(w.a.CONTRIBUTOR_REQUEST_PENDING))
 						}
 					}
 				}, Ie = e => async (t, i) => {
@@ -44780,4 +44785,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.08ac45df15f178ecd529.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f8111da754756e1ea75f.js.map

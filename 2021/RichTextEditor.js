@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.9a3c629ab5ec4a715b2c.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.27346e8672daa9b0aabf.js
+// Retrieved at 3/16/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -3028,36 +3028,31 @@
 				s = o("./node_modules/react/index.js"),
 				r = o.n(s),
 				a = o("./node_modules/react-redux/es/index.js"),
-				i = o("./node_modules/reselect/es/index.js"),
-				c = o("./src/lib/classNames/index.ts"),
-				d = o("./src/reddit/actions/modal.ts"),
-				l = o("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = o("./src/reddit/constants/modals.ts"),
-				m = o("./src/reddit/controls/Button/index.tsx"),
-				p = o("./src/reddit/helpers/trackers/privateCommunity.ts"),
-				h = o("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
-				b = o("./src/reddit/models/SubredditRestrictions/index.ts"),
-				f = o("./src/reddit/selectors/subreddit.ts"),
-				_ = o("./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less"),
-				x = o.n(_);
-			const g = Object(i.c)({
-					restrictions: f.p
+				i = o("./src/lib/classNames/index.ts"),
+				c = o("./src/reddit/actions/modal.ts"),
+				d = o("./src/reddit/components/TrackingHelper/index.tsx"),
+				l = o("./src/reddit/constants/modals.ts"),
+				u = o("./src/reddit/controls/Button/index.tsx"),
+				m = o("./src/reddit/helpers/trackers/privateCommunity.ts"),
+				p = o("./src/reddit/helpers/trackers/restrictedCommunity.ts"),
+				h = o("./src/reddit/models/SubredditRestrictions/index.ts"),
+				b = o("./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less"),
+				f = o.n(b);
+			const _ = () => ({
+				[h.b.Comment]: n.fbt._("Request to Comment", null, {
+					hk: "3KRhw5"
 				}),
-				y = () => ({
-					[b.b.Comment]: n.fbt._("Request to Comment", null, {
-						hk: "3KRhw5"
-					}),
-					[b.b.IdCard]: n.fbt._("Request to Post", null, {
-						hk: "2xsrGd"
-					}),
-					[b.b.PostSubmission]: n.fbt._("Request to Post", null, {
-						hk: "2xsrGd"
-					}),
-					[b.b.ContentGate]: n.fbt._("Request to Join", null, {
-						hk: "1nK8Vv"
-					})
-				});
-			class C extends r.a.Component {
+				[h.b.IdCard]: n.fbt._("Request to Post", null, {
+					hk: "2xsrGd"
+				}),
+				[h.b.PostSubmission]: n.fbt._("Request to Post", null, {
+					hk: "2xsrGd"
+				}),
+				[h.b.ContentGate]: n.fbt._("Request to Join", null, {
+					hk: "1nK8Vv"
+				})
+			});
+			class x extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onRequest = () => {
 						const {
@@ -3066,27 +3061,31 @@
 							openRequestToJoinSubredditModal: o,
 							openContributorRequestModal: n
 						} = this.props;
-						t === b.b.ContentGate ? (e(Object(p.a)(t)), o()) : (e(Object(h.a)(t)), n())
+						t === h.b.ContentGate ? (e(Object(m.a)(t)), o()) : (e(Object(p.a)(t)), n())
 					}
 				}
 				render() {
 					const {
 						eventSource: e,
 						smallButton: t,
-						className: o
+						className: o,
+						isContributorRequestPending: s
 					} = this.props;
-					return r.a.createElement(m.q, {
-						priority: e === b.b.ContentGate ? m.b.Secondary : m.b.Primary,
-						className: Object(c.a)(t ? null : x.a.RequestButton, o),
+					return r.a.createElement(u.q, {
+						priority: e === h.b.ContentGate ? u.b.Secondary : u.b.Primary,
+						className: Object(i.a)(t ? null : f.a.RequestButton, o),
 						onClick: this.onRequest,
-						size: t ? m.c.S : m.c.M
-					}, y()[e])
+						size: t ? u.c.S : u.c.M,
+						disabled: s
+					}, s ? n.fbt._("Request Pending", null, {
+						hk: "hVswi"
+					}) : _()[e])
 				}
 			}
-			t.default = Object(a.b)(g, e => ({
-				openContributorRequestModal: () => e(Object(d.i)(u.a.CONTRIBUTOR_REQUEST)),
-				openRequestToJoinSubredditModal: () => e(Object(d.i)(u.a.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT))
-			}))(Object(l.c)(C))
+			t.default = Object(a.b)(null, e => ({
+				openContributorRequestModal: () => e(Object(c.i)(l.a.CONTRIBUTOR_REQUEST)),
+				openRequestToJoinSubredditModal: () => e(Object(c.i)(l.a.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT))
+			}))(Object(d.c)(x))
 		},
 		"./src/reddit/components/Gold/PowerupEntryTooltip/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -4579,4 +4578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.9a3c629ab5ec4a715b2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.27346e8672daa9b0aabf.js.map
