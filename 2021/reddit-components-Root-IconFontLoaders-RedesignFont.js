@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Root-IconFontLoaders-RedesignFont.2227a2a5a36fb426e5af.js
-// Retrieved at 3/16/2021, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Root-IconFontLoaders-RedesignFont.7da8857262e505f2a5fb.js
+// Retrieved at 3/16/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Root-IconFontLoaders-RedesignFont"], {
 		"./src/reddit/components/Root/IconFontLoaders/RedesignFont.tsx": function(n, o, e) {
@@ -18,4 +18,4 @@
 		"./src/reddit/components/Root/IconFontLoaders/redesignFont.less": function(n, o, e) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Root-IconFontLoaders-RedesignFont.2227a2a5a36fb426e5af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Root-IconFontLoaders-RedesignFont.7da8857262e505f2a5fb.js.map
