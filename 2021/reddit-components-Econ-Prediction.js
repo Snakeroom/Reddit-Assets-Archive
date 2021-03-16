@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.0daa97d428fc45e9d1c6.js
-// Retrieved at 3/15/2021, 10:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.02df3ed7c8cbb3b50789.js
+// Retrieved at 3/16/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(i, a, r) {
@@ -41,6 +41,9 @@
 		"./src/graphql/operations/CreatePredictionTournament.json": function(i) {
 			i.exports = JSON.parse('{"id":"51591a693756"}')
 		},
+		"./src/graphql/operations/EndPredictionTournament.json": function(i) {
+			i.exports = JSON.parse('{"id":"f18ab01cee78"}')
+		},
 		"./src/graphql/operations/GetPredictionChipPackages.json": function(i) {
 			i.exports = JSON.parse('{"id":"3785e4a718f5"}')
 		},
@@ -71,20 +74,24 @@
 				return E
 			})), r.d(a, "f", (function() {
 				return A
-			})), r.d(a, "h", (function() {
+			})), r.d(a, "i", (function() {
 				return B
-			})), r.d(a, "g", (function() {
+			})), r.d(a, "h", (function() {
 				return D
 			})), r.d(a, "e", (function() {
 				return F
 			})), r.d(a, "b", (function() {
 				return g
-			})), r.d(a, "i", (function() {
+			})), r.d(a, "j", (function() {
 				return v
 			})), r.d(a, "c", (function() {
 				return P
 			})), r.d(a, "a", (function() {
 				return S
+			})), r.d(a, "k", (function() {
+				return O
+			})), r.d(a, "g", (function() {
+				return _
 			}));
 			var x = r("./node_modules/uuid/index.js"),
 				t = r.n(x),
@@ -194,7 +201,7 @@
 				}) => {
 					const t = r(),
 						k = Object(c.F)(t, i);
-					if (Object(f.h)(t, {
+					if (Object(f.i)(t, {
 							subredditId: k
 						})) return Object(f.f)(t, {
 						subredditId: k
@@ -228,7 +235,7 @@
 						n = Object(e.a)(t);
 					if (!k) throw new Error("Failed to create tournament, no prediction drafts attached");
 					const o = await Object(m.c)(x(), {
-							name: "New Tournament",
+							name: "Predictions Tournament",
 							isStartImmediately: !0,
 							subredditId: i,
 							predictionDrafts: k,
@@ -256,8 +263,36 @@
 						} = o.body.data;
 					if (!(null == s ? void 0 : s.tournament)) throw new Error("Failed to create prediction");
 					return s.tournament
-				};
-			Object(o.a)(d.i)
+				}, T = Object(o.a)(d.i), O = (i, a, r) => async (x, t, {
+					gqlContext: k
+				}) => {
+					const n = await Object(m.k)(k(), {
+							tournamentId: i,
+							name: r
+						}),
+						{
+							updatePredictionTournament: o
+						} = n.body.data;
+					if (!o.tournament) throw new Error("Failed to update prediction name");
+					return x(T({
+						subredditId: a,
+						tournament: o.tournament
+					})), o.tournament
+				}, _ = (i, a) => async (r, x, {
+					gqlContext: t
+				}) => {
+					const k = await Object(m.d)(t(), {
+							tournamentId: i
+						}),
+						{
+							endPredictionTournament: n
+						} = k.body.data;
+					if (!n.tournament) throw new Error("Failed to update prediction name");
+					return r(T({
+						subredditId: a,
+						tournament: n.tournament
+					})), n.tournament
+				}
 		},
 		"./src/reddit/components/Econ/CoinsModalHeader/index.m.less": function(i, a, r) {
 			i.exports = {
@@ -1291,7 +1326,7 @@
 					n = Object(k.e)(a => Object(Yi.T)(a, {
 						subredditId: i
 					})),
-					o = Object(k.e)(a => Object(Ki.g)(a, {
+					o = Object(k.e)(a => Object(Ki.h)(a, {
 						subredditId: i
 					})),
 					m = Object(k.e)(a => Object(Ki.b)(a, {
@@ -1340,8 +1375,8 @@
 				userIsLoggedIn: E.J,
 				userId: E.nb
 			}), ia = {
-				onPredictionResolve: l.g,
-				onPredictionVote: l.h,
+				onPredictionResolve: l.h,
+				onPredictionVote: l.i,
 				showToast: c.f
 			}, aa = Object(s.t)({
 				isCommentsPage: s.w,
@@ -1600,55 +1635,56 @@
 		"./src/reddit/endpoints/economics/predictions.ts": function(i, a, r) {
 			"use strict";
 			r.d(a, "f", (function() {
-				return h
-			})), r.d(a, "l", (function() {
 				return f
-			})), r.d(a, "j", (function() {
+			})), r.d(a, "l", (function() {
 				return d
-			})), r.d(a, "a", (function() {
+			})), r.d(a, "j", (function() {
 				return u
-			})), r.d(a, "h", (function() {
+			})), r.d(a, "a", (function() {
 				return y
-			})), r.d(a, "c", (function() {
+			})), r.d(a, "h", (function() {
 				return G
-			})), r.d(a, "i", (function() {
+			})), r.d(a, "c", (function() {
 				return E
-			})), r.d(a, "b", (function() {
+			})), r.d(a, "i", (function() {
 				return A
-			})), r.d(a, "k", (function() {
+			})), r.d(a, "b", (function() {
 				return B
-			})), r.d(a, "d", (function() {
+			})), r.d(a, "k", (function() {
 				return D
-			})), r.d(a, "e", (function() {
+			})), r.d(a, "d", (function() {
 				return V
-			})), r.d(a, "g", (function() {
+			})), r.d(a, "e", (function() {
 				return b
+			})), r.d(a, "g", (function() {
+				return F
 			}));
 			var x = r("./src/lib/makeGqlRequest/index.ts"),
 				t = r("./src/graphql/operations/AddPredictionDrafts.json"),
 				k = r("./src/graphql/operations/CreatePredictionTournament.json"),
-				n = r("./src/graphql/operations/GetPredictionChipPackages.json"),
-				o = r("./src/graphql/operations/GetPredictionCoinPackages.json"),
-				m = r("./src/graphql/operations/GetPredictionToken.json"),
-				s = r("./src/graphql/operations/GetTournaments.json"),
-				e = r("./src/graphql/operations/ResolvePrediction.json"),
-				l = r("./src/graphql/operations/SubredditTopPredictors.json"),
-				c = r("./src/graphql/operations/UpdatePredictionTournament.json"),
-				p = r("./src/graphql/operations/VotePrediction.json");
-			const h = (i, a, r) => Object(x.a)(i, {
-					...o,
+				n = r("./src/graphql/operations/EndPredictionTournament.json"),
+				o = r("./src/graphql/operations/GetPredictionChipPackages.json"),
+				m = r("./src/graphql/operations/GetPredictionCoinPackages.json"),
+				s = r("./src/graphql/operations/GetPredictionToken.json"),
+				e = r("./src/graphql/operations/GetTournaments.json"),
+				l = r("./src/graphql/operations/ResolvePrediction.json"),
+				c = r("./src/graphql/operations/SubredditTopPredictors.json"),
+				p = r("./src/graphql/operations/UpdatePredictionTournament.json"),
+				h = r("./src/graphql/operations/VotePrediction.json");
+			const f = (i, a, r) => Object(x.a)(i, {
+					...m,
 					variables: {
 						subredditName: a,
 						includeFreePackage: r
 					}
 				}),
-				f = (i, {
+				d = (i, {
 					postId: a,
 					optionId: r,
 					coinPackageId: t,
 					price: k
 				}) => Object(x.a)(i, {
-					...p,
+					...h,
 					variables: {
 						input: {
 							postId: a,
@@ -1658,11 +1694,11 @@
 						}
 					}
 				}),
-				d = (i, {
+				u = (i, {
 					postId: a,
 					optionId: r
 				}) => Object(x.a)(i, {
-					...e,
+					...l,
 					variables: {
 						input: {
 							postId: a,
@@ -1670,18 +1706,18 @@
 						}
 					}
 				});
-			var u;
+			var y;
 			! function(i) {
 				i.AllTime = "ALL_TIME", i.Monthly = "MONTHLY"
-			}(u || (u = {}));
-			const y = (i, {
+			}(y || (y = {}));
+			const G = (i, {
 					subredditId: a,
 					period: r,
 					top: t,
 					includeCurrentRank: k,
 					tournamentId: n
 				}) => Object(x.a)(i, {
-					...l,
+					...c,
 					variables: {
 						subredditId: a,
 						period: r,
@@ -1690,40 +1726,40 @@
 						tournamentId: n
 					}
 				}),
-				G = (i, a) => Object(x.a)(i, {
+				E = (i, a) => Object(x.a)(i, {
 					...k,
 					variables: {
 						input: a
 					}
 				}),
-				E = (i, a) => Object(x.a)(i, {
-					...s,
+				A = (i, a) => Object(x.a)(i, {
+					...e,
 					variables: a
 				}),
-				A = (i, a) => Object(x.a)(i, {
+				B = (i, a) => Object(x.a)(i, {
 					...t,
 					variables: {
 						input: a
 					}
 				}),
-				B = (i, a) => Object(x.a)(i, {
-					...c,
-					variables: {
-						input: a
-					}
-				}),
 				D = (i, a) => Object(x.a)(i, {
-					...c,
+					...p,
 					variables: {
 						input: a
 					}
 				}),
 				V = (i, a) => Object(x.a)(i, {
 					...n,
-					variables: a
+					variables: {
+						input: a
+					}
 				}),
 				b = (i, a) => Object(x.a)(i, {
-					...m,
+					...o,
+					variables: a
+				}),
+				F = (i, a) => Object(x.a)(i, {
+					...s,
 					variables: a
 				})
 		},
@@ -2013,4 +2049,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.0daa97d428fc45e9d1c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.02df3ed7c8cbb3b50789.js.map
