@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.013a707792b532415fa4.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.930fe1cf8c07bd53d4b4.js
+// Retrieved at 3/16/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -4444,13 +4444,12 @@
 					memo: r,
 					cta: s
 				} = e;
-				if (!(t && n && r && s)) throw new Error("subreddit, amount, and memo query params required for vault action");
-				return {
+				return t && n && r && s ? {
 					subreddit: t,
 					amount: n,
 					memo: r,
 					cta: s
-				}
+				} : (console.error("subreddit, amount, and memo query params required for vault action"), null)
 			}
 			n.d(t, "b", (function() {
 				return r
@@ -5915,4 +5914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.013a707792b532415fa4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.930fe1cf8c07bd53d4b4.js.map

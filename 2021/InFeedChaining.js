@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.8ff46370692b17796f72.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.2d67f31c783c42f6a878.js
+// Retrieved at 3/16/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4415,13 +4415,12 @@
 					memo: n,
 					cta: r
 				} = e;
-				if (!(t && s && n && r)) throw new Error("subreddit, amount, and memo query params required for vault action");
-				return {
+				return t && s && n && r ? {
 					subreddit: t,
 					amount: s,
 					memo: n,
 					cta: r
-				}
+				} : (console.error("subreddit, amount, and memo query params required for vault action"), null)
 			}
 			s.d(t, "b", (function() {
 				return n
@@ -4908,4 +4907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.8ff46370692b17796f72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.2d67f31c783c42f6a878.js.map
