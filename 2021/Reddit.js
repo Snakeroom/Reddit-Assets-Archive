@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c5124b8fe49ea9ab7236.js
-// Retrieved at 3/16/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.5e58b2ab24253fca4e83.js
+// Retrieved at 3/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -17016,11 +17016,11 @@
 		"./src/reddit/selectors/accountManager.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
+				return h
 			})), n.d(t, "b", (function() {
-				return v
+				return g
 			})), n.d(t, "c", (function() {
-				return x
+				return f
 			}));
 			var s = n("./src/config.ts"),
 				r = n("./node_modules/reselect/es/index.js"),
@@ -17029,22 +17029,17 @@
 				i = n("./src/reddit/constants/experiments.ts"),
 				c = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
 				d = n("./src/reddit/selectors/experiments/googleOneTap.ts"),
-				l = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				m = n("./src/reddit/selectors/experiments/utils.ts"),
+				l = n("./src/reddit/selectors/experiments/magicLink.ts"),
+				m = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				u = n("./src/reddit/selectors/user.ts");
-			const p = Object(r.a)(u.J, u.I, (e, t) => !e && !t),
-				b = Object(r.a)(e => Object(l.c)(e, {
+			const p = Object(r.a)(u.I, u.J, (e, t) => !e && !t);
+			var b = n("./src/reddit/selectors/responsiveSettings.ts");
+			const h = e => e.accountManagerModalData.actionSource,
+				g = e => e.accountManagerModalData.redirectUrl,
+				f = Object(r.a)((e, t) => t.path, (e, t) => t.uiMode, h, c.a, b.a, d.b, e => Object(m.c)(e, {
 					experimentEligibilitySelector: p,
-					experimentName: i.mc
-				}), m.a),
-				h = Object(r.a)(u.I, u.J, (e, t) => !e && !t);
-			var g = n("./src/reddit/selectors/responsiveSettings.ts");
-			const f = e => e.accountManagerModalData.actionSource,
-				v = e => e.accountManagerModalData.redirectUrl,
-				x = Object(r.a)((e, t) => t.path, (e, t) => t.uiMode, f, c.a, g.a, d.b, e => Object(l.c)(e, {
-					experimentEligibilitySelector: h,
 					experimentName: i.bd
-				}), b, (e, t, n, r, c, d, l, m) => {
+				}), l.a, (e, t, n, r, c, d, l, m) => {
 					let u = `${s.a.accountManagerOrigin}${e}`;
 					return u = Object(o.a)(u, {
 						experiment_d2x_2020ify_buttons: "enabled"
@@ -17472,4 +17467,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c5124b8fe49ea9ab7236.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5e58b2ab24253fca4e83.js.map

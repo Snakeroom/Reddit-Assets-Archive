@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9c2b578a2afe4c469d89.js
-// Retrieved at 3/16/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7194d3e295a24f6b13e2.js
+// Retrieved at 3/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1447,11 +1447,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("129051"),
+				buildNumber: r("129054"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1615917205"),
+				})("1615918206"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3618,14 +3618,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf88305de10750ca364365aa5f23d4baeb3810814-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9a59d572391a71db3deed05ed162a27f6b4f9fd3-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f88305de10750ca364365aa5f23d4baeb3810814-production",
+						release: "9a59d572391a71db3deed05ed162a27f6b4f9fd3-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4074,7 +4074,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "f88305de10750ca364365aa5f23d4baeb3810814-production",
+						releaseClient: "9a59d572391a71db3deed05ed162a27f6b4f9fd3-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -8070,60 +8070,61 @@
 		"./src/reddit/actions/login.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "h", (function() {
-				return a
-			})), i.d(t, "j", (function() {
 				return l
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "j", (function() {
 				return c
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "b", (function() {
 				return u
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "d", (function() {
 				return _
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "c", (function() {
 				return p
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "a", (function() {
 				return m
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "f", (function() {
 				return h
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "k", (function() {
 				return b
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "g", (function() {
 				return f
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "l", (function() {
 				return g
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "e", (function() {
 				return w
+			})), i.d(t, "i", (function() {
+				return y
 			}));
 			var n = i("./src/reddit/actions/modal.ts"),
 				r = i("./src/reddit/actions/preferences.ts"),
 				s = i("./src/reddit/constants/modals.ts"),
-				o = i("./src/reddit/constants/postLayout.ts");
-			const d = e => async (t, i) => {
+				o = i("./src/reddit/constants/postLayout.ts"),
+				d = i("./src/reddit/selectors/experiments/magicLink.ts");
+			const a = e => async (t, i) => {
 				t(Object(n.i)(e)), !i().user.prefs.layout && t(Object(r.w)(o.d.Card))
-			}, a = () => async (e, t) => {
-				e(d(s.a.LOGIN_MODAL_ID))
-			}, l = () => async e => {
-				e(d(s.a.REGISTER_MODAL_ID))
-			}, c = () => async e => {
-				e(d(s.a.CHANGE_PASSWORD_MODAL_ID))
+			}, l = () => async (e, t) => {
+				e(a(s.a.LOGIN_MODAL_ID)), Object(d.b)(t())
+			}, c = () => async (e, t) => {
+				e(a(s.a.REGISTER_MODAL_ID)), Object(d.b)(t())
 			}, u = () => async e => {
-				e(d(s.a.ENABLE_TWO_FACTOR))
+				e(a(s.a.CHANGE_PASSWORD_MODAL_ID))
 			}, _ = () => async e => {
-				e(d(s.a.DISABLE_TWO_FACTOR))
+				e(a(s.a.ENABLE_TWO_FACTOR))
 			}, p = () => async e => {
-				e(d(s.a.TWO_FACTOR_BACKUP_CODES))
+				e(a(s.a.DISABLE_TWO_FACTOR))
 			}, m = () => async e => {
-				e(d(s.a.LINK_APPLE_SSO))
+				e(a(s.a.TWO_FACTOR_BACKUP_CODES))
 			}, h = () => async e => {
-				e(d(s.a.UNLINK_APPLE_SSO))
+				e(a(s.a.LINK_APPLE_SSO))
 			}, b = () => async e => {
-				e(d(s.a.LINK_GOOGLE_SSO))
+				e(a(s.a.UNLINK_APPLE_SSO))
 			}, f = () => async e => {
-				e(d(s.a.UNLINK_GOOGLE_SSO))
+				e(a(s.a.LINK_GOOGLE_SSO))
 			}, g = () => async e => {
-				e(d(s.a.GOOGLE_ONE_TAP_MODAL_ID))
+				e(a(s.a.UNLINK_GOOGLE_SSO))
 			}, w = () => async e => {
-				e(d(s.a.ONBOARDING_MODAL_ID))
+				e(a(s.a.GOOGLE_ONE_TAP_MODAL_ID))
+			}, y = () => async e => {
+				e(a(s.a.ONBOARDING_MODAL_ID))
 			}
 		},
 		"./src/reddit/actions/media.ts": function(e, t, i) {
@@ -34358,6 +34359,29 @@
 				}),
 				h = e => e === s.Wb.SearchPostToPost || e === s.Wb.NlpPostToPost1 || e === s.Wb.NlpPostToPost2 || e === s.Wb.NlpPostToPost3
 		},
+		"./src/reddit/selectors/experiments/magicLink.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return l
+			})), i.d(t, "b", (function() {
+				return c
+			}));
+			var n = i("./node_modules/reselect/es/index.js"),
+				r = i("./src/reddit/constants/experiments.ts"),
+				s = i("./src/reddit/helpers/chooseVariant/index.ts"),
+				o = i("./src/reddit/selectors/experiments/utils.ts"),
+				d = i("./src/reddit/selectors/user.ts");
+			const a = Object(n.a)(d.J, d.I, (e, t) => !e && !t),
+				l = Object(n.a)(e => Object(s.c)(e, {
+					experimentEligibilitySelector: a,
+					experimentName: r.mc,
+					expEventOverride: !1
+				}), o.a),
+				c = e => Object(s.c)(e, {
+					experimentEligibilitySelector: a,
+					experimentName: r.mc
+				})
+		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
@@ -44744,4 +44768,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9c2b578a2afe4c469d89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7194d3e295a24f6b13e2.js.map
