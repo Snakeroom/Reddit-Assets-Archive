@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.03c07e4cc04cb1905f49.js
-// Retrieved at 3/16/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.7e1fa51c523b65639848.js
+// Retrieved at 3/16/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -70,28 +70,32 @@
 		},
 		"./src/reddit/actions/economics/predictions/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "f", (function() {
 				return O
-			})), n.d(t, "f", (function() {
-				return P
-			})), n.d(t, "i", (function() {
-				return v
 			})), n.d(t, "h", (function() {
-				return C
-			})), n.d(t, "e", (function() {
+				return P
+			})), n.d(t, "k", (function() {
+				return k
+			})), n.d(t, "j", (function() {
+				return v
+			})), n.d(t, "g", (function() {
 				return y
 			})), n.d(t, "b", (function() {
-				return I
-			})), n.d(t, "j", (function() {
 				return w
+			})), n.d(t, "l", (function() {
+				return I
 			})), n.d(t, "c", (function() {
 				return _
 			})), n.d(t, "a", (function() {
 				return S
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "m", (function() {
 				return N
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "i", (function() {
 				return q
+			})), n.d(t, "d", (function() {
+				return A
+			})), n.d(t, "e", (function() {
+				return F
 			}));
 			var r = n("./node_modules/uuid/index.js"),
 				o = n.n(r),
@@ -154,7 +158,7 @@
 					} = a.body.data;
 					if (!s || !s.predictionCoinPackages.length) throw new Error("Subreddit has no coin packs");
 					return s.predictionCoinPackages
-				}, v = ({
+				}, k = ({
 					coinPackageId: e,
 					optionId: t,
 					postId: n,
@@ -178,7 +182,7 @@
 						prediction: c.poll,
 						price: r
 					})), c.poll
-				}, C = ({
+				}, v = ({
 					optionId: e,
 					postId: t
 				}) => async (n, r, {
@@ -196,7 +200,7 @@
 						pollId: t,
 						prediction: a.poll
 					})), a.poll
-				}, E = Object(s.a)(h.b), k = Object(s.a)(h.c), y = e => async (t, n, {
+				}, C = Object(s.a)(h.b), E = Object(s.a)(h.c), y = e => async (t, n, {
 					gqlContext: r
 				}) => {
 					const o = n(),
@@ -206,7 +210,7 @@
 						})) return Object(f.f)(o, {
 						subredditId: i
 					});
-					t(E({
+					t(C({
 						subredditId: i
 					}));
 					const a = await Object(d.i)(r(), {
@@ -221,11 +225,11 @@
 					} = a.body.data;
 					if (!s.predictionTournaments) return [];
 					const c = s.predictionTournaments;
-					return t(k({
+					return t(E({
 						subredditId: i,
 						tournaments: c
 					})), c
-				}, I = Object(s.a)(h.a), w = Object(s.a)(h.h), _ = ({
+				}, w = Object(s.a)(h.a), I = Object(s.a)(h.h), _ = ({
 					subredditId: e
 				}) => async (t, n, {
 					gqlContext: r
@@ -292,6 +296,30 @@
 						subredditId: t,
 						tournament: a.tournament
 					})), a.tournament
+				}, A = e => async (t, n, {
+					gqlContext: r
+				}) => {
+					const o = await Object(d.e)(r(), {
+						postId: e
+					});
+					if (!o.ok || o.error) throw new Error("Failed to fetch prediction chip packages");
+					const {
+						postInfoById: i
+					} = o.body.data;
+					if (!i.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
+					return i.predictionChipPackages
+				}, F = e => async (t, n, {
+					gqlContext: r
+				}) => {
+					const o = await Object(d.g)(r(), {
+						tournamentId: e
+					});
+					if (!o.ok || o.error) throw new Error("Failed to fetch token balance");
+					const {
+						identity: i
+					} = o.body.data;
+					if (!i.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
+					return i.predictionTokens
 				}
 		},
 		"./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less": function(e, t, n) {
@@ -417,24 +445,24 @@
 					[n, b] = Object(o.useState)(""),
 					[h, g] = Object(o.useState)(!1),
 					[O, P] = Object(o.useState)(!1),
-					[v, C] = Object(o.useState)(!1),
-					[E, k] = Object(o.useState)(null),
+					[k, v] = Object(o.useState)(!1),
+					[C, E] = Object(o.useState)(null),
 					y = Object(a.e)(t => Object(m.b)(t, {
 						subredditId: e.id
 					})),
-					I = Object(a.e)(t => Object(m.i)(t, {
+					w = Object(a.e)(t => Object(m.i)(t, {
 						subredditId: e.id
 					})),
-					w = Object(a.e)(t => Object(m.g)(t, {
+					I = Object(a.e)(t => Object(m.g)(t, {
 						subredditId: e.id
 					}));
 				Object(o.useEffect)(() => {
-					t(Object(d.e)(e.name))
+					t(Object(d.g)(e.name))
 				}, [t, e.name]), Object(o.useEffect)(() => {
-					y && (b(y.name), k(j - y.name.length))
+					y && (b(y.name), E(j - y.name.length))
 				}, [y]);
-				const _ = Object(o.useCallback)(() => C(!0), []),
-					S = Object(o.useCallback)(() => C(!1), []),
+				const _ = Object(o.useCallback)(() => v(!0), []),
+					S = Object(o.useCallback)(() => v(!1), []),
 					T = !!n && ((null == y ? void 0 : y.name) !== n && n.length > 3);
 				return i.a.createElement("div", {
 					className: x.a.predictionsContent
@@ -454,14 +482,14 @@
 				})), i.a.createElement("input", {
 					name: "tournament-name",
 					className: x.a.input,
-					disabled: !y || I,
+					disabled: !y || w,
 					type: "text",
 					value: n,
 					onChange: e => {
 						const {
 							value: t
 						} = e.target;
-						t.length <= j && (b(t), k(j - t.length))
+						t.length <= j && (b(t), E(j - t.length))
 					},
 					placeholder: r.fbt._("/r/{subredditName} tournament", [r.fbt._param("subredditName", e.name)], {
 						hk: "bN9XA"
@@ -470,19 +498,19 @@
 					className: Object(s.a)(x.a.remainingCharacters, {
 						[x.a.maxCharacters]: (null == n ? void 0 : n.length) === j
 					})
-				}, y && y.name !== n && null !== E ? r.fbt._({
+				}, y && y.name !== n && null !== C ? r.fbt._({
 					"*": "{remaining characters} characters remaining",
 					_1: "1 character remaining"
-				}, [r.fbt._plural(E, "remaining characters")], {
+				}, [r.fbt._plural(C, "remaining characters")], {
 					hk: "1dBRgv"
 				}) : i.a.createElement(i.a.Fragment, null, " ")), i.a.createElement(l.i, {
 					className: x.a.button,
-					disabled: !n || !y || I || !T,
+					disabled: !n || !y || w || !T,
 					onClick: async () => {
 						if (!y || !n) return null;
 						g(!0);
 						try {
-							await t(Object(d.k)(y.tournamentId, e.id, n))
+							await t(Object(d.m)(y.tournamentId, e.id, n))
 						} catch (o) {
 							t(Object(c.f)({
 								kind: p.b.Error,
@@ -507,18 +535,18 @@
 					hk: "2AgZtm"
 				})), i.a.createElement(l.i, {
 					className: x.a.button,
-					disabled: !y || !w || I,
+					disabled: !y || !I || w,
 					onClick: _
 				}, r.fbt._("End", null, {
 					hk: "HWN7f"
-				})), v && i.a.createElement(f, {
+				})), k && i.a.createElement(f, {
 					isEnding: O,
 					onClose: S,
 					onConfirm: async () => {
-						if (!y || !w) return null;
+						if (!y || !I) return null;
 						P(!0);
 						try {
-							await t(Object(d.g)(y.tournamentId, e.id))
+							await t(Object(d.i)(y.tournamentId, e.id))
 						} catch (n) {
 							t(Object(c.f)({
 								kind: p.b.Error,
@@ -527,7 +555,7 @@
 								})
 							}))
 						}
-						P(!1), C(!1)
+						P(!1), v(!1)
 					}
 				}))))
 			}
@@ -549,13 +577,13 @@
 			})), n.d(t, "i", (function() {
 				return P
 			})), n.d(t, "b", (function() {
-				return v
-			})), n.d(t, "k", (function() {
-				return C
-			})), n.d(t, "d", (function() {
-				return E
-			})), n.d(t, "e", (function() {
 				return k
+			})), n.d(t, "k", (function() {
+				return v
+			})), n.d(t, "d", (function() {
+				return C
+			})), n.d(t, "e", (function() {
+				return E
 			})), n.d(t, "g", (function() {
 				return y
 			}));
@@ -636,25 +664,25 @@
 					...l,
 					variables: t
 				}),
-				v = (e, t) => Object(r.a)(e, {
+				k = (e, t) => Object(r.a)(e, {
 					...o,
 					variables: {
 						input: t
 					}
 				}),
-				C = (e, t) => Object(r.a)(e, {
+				v = (e, t) => Object(r.a)(e, {
 					...m,
 					variables: {
 						input: t
 					}
 				}),
-				E = (e, t) => Object(r.a)(e, {
+				C = (e, t) => Object(r.a)(e, {
 					...a,
 					variables: {
 						input: t
 					}
 				}),
-				k = (e, t) => Object(r.a)(e, {
+				E = (e, t) => Object(r.a)(e, {
 					...s,
 					variables: t
 				}),
@@ -717,4 +745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.03c07e4cc04cb1905f49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.7e1fa51c523b65639848.js.map

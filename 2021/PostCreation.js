@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7e03682f9454329301dd.js
-// Retrieved at 3/16/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.728817c10a6495811ced.js
+// Retrieved at 3/16/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1219,28 +1219,32 @@
 		},
 		"./src/reddit/actions/economics/predictions/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "f", (function() {
 				return E
-			})), n.d(t, "f", (function() {
-				return v
-			})), n.d(t, "i", (function() {
-				return _
 			})), n.d(t, "h", (function() {
+				return v
+			})), n.d(t, "k", (function() {
+				return _
+			})), n.d(t, "j", (function() {
 				return O
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return j
 			})), n.d(t, "b", (function() {
 				return S
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "l", (function() {
 				return I
 			})), n.d(t, "c", (function() {
 				return T
 			})), n.d(t, "a", (function() {
 				return w
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "m", (function() {
 				return N
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "i", (function() {
 				return M
+			})), n.d(t, "d", (function() {
+				return D
+			})), n.d(t, "e", (function() {
+				return L
 			}));
 			var s = n("./node_modules/uuid/index.js"),
 				o = n.n(s),
@@ -1441,6 +1445,30 @@
 						subredditId: t,
 						tournament: i.tournament
 					})), i.tournament
+				}, D = e => async (t, n, {
+					gqlContext: s
+				}) => {
+					const o = await Object(c.e)(s(), {
+						postId: e
+					});
+					if (!o.ok || o.error) throw new Error("Failed to fetch prediction chip packages");
+					const {
+						postInfoById: r
+					} = o.body.data;
+					if (!r.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
+					return r.predictionChipPackages
+				}, L = e => async (t, n, {
+					gqlContext: s
+				}) => {
+					const o = await Object(c.g)(s(), {
+						tournamentId: e
+					});
+					if (!o.ok || o.error) throw new Error("Failed to fetch token balance");
+					const {
+						identity: r
+					} = o.body.data;
+					if (!r.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
+					return r.predictionTokens
 				}
 		},
 		"./src/reddit/actions/economics/subredditPremium/constants.ts": function(e, t, n) {
@@ -18482,7 +18510,7 @@
 								}
 							})), await i(Object(hs.c)({
 								subredditId: p
-							})), n(!1), i(Object(a.q)()), i(Object(hs.j)()), i(Object(m.b)(`/r/${u}/predictions/`))
+							})), n(!1), i(Object(a.q)()), i(Object(hs.l)()), i(Object(m.b)(`/r/${u}/predictions/`))
 						},
 						onSecondaryAction: () => {
 							i(Object(hs.b)({
@@ -20813,7 +20841,7 @@
 					};
 				return Object(s.useEffect)(() => {
 					(async () => {
-						a && n(Object(hs.e)(a))
+						a && n(Object(hs.g)(a))
 					})()
 				}, [n, a]), a ? o.a.createElement("div", {
 					className: Object(ze.a)(Bd.a.tournamentPicker, e)
@@ -24048,4 +24076,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7e03682f9454329301dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.728817c10a6495811ced.js.map
