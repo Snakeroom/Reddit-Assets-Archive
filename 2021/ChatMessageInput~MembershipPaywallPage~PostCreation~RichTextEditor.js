@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f29ff4253265abee87eb.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.c425e84f89221e557a9a.js
+// Retrieved at 3/16/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -1644,41 +1644,42 @@
 				}
 				updatePositioning(t) {
 					if (!this.containerRef) return;
-					const e = this.containerRef.offsetWidth,
-						n = this.containerRef.offsetHeight,
-						o = this.state.positioning;
+					const e = this.containerRef.getBoundingClientRect(),
+						n = Math.round(e.width),
+						o = Math.round(e.height),
+						s = this.state.positioning;
 					if (!t) {
-						if (!o) return;
-						if (o.tooltipWidth === e && o.tooltipHeight === n) return
+						if (!s) return;
+						if (s.tooltipWidth === n && s.tooltipHeight === o) return
 					}
-					const s = t ? t.bottom : o.target.bottom,
-						r = t ? t.top : o.target.top,
-						i = t ? t.left : o.target.left,
-						a = Object(c.e)(this.containerRef);
-					let l, d, u;
-					if (a) {
-						const t = a.getBoundingClientRect();
-						l = t.bottom - (s || 0), d = i - t.left + a.scrollLeft, u = r - t.top + a.scrollTop
+					const r = t ? t.bottom : s.target.bottom,
+						i = t ? t.top : s.target.top,
+						a = t ? t.left : s.target.left,
+						l = Object(c.e)(this.containerRef);
+					let d, u, p;
+					if (l) {
+						const t = l.getBoundingClientRect();
+						d = t.bottom - (r || 0), u = a - t.left + l.scrollLeft, p = i - t.top + l.scrollTop
 					} else {
 						const t = document.documentElement,
 							e = window.pageYOffset || t.scrollTop;
-						d = i + (window.pageXOffset || t.scrollLeft), u = r + e
+						u = a + (window.pageXOffset || t.scrollLeft), p = i + e
 					}
-					const p = {
+					const h = {
 						target: {
-							top: r,
-							left: i
+							top: i,
+							left: a
 						},
-						tooltipWidth: e,
-						tooltipHeight: n,
+						tooltipWidth: n,
+						tooltipHeight: o,
 						tooltip: {
-							top: u,
-							left: d,
-							bottom: l
+							top: p,
+							left: u,
+							bottom: d
 						}
 					};
-					this.adjustPositionForTriangle(p, a), this.setState({
-						positioning: p
+					this.adjustPositionForTriangle(h, l), this.setState({
+						positioning: h
 					})
 				}
 				adjustPositionForTriangle(t, e) {
@@ -8528,4 +8529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f29ff4253265abee87eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.c425e84f89221e557a9a.js.map

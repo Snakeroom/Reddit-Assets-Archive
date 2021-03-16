@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.836d34064edb5c664cbc.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModStatsChart.55d41553b8fdd275d8e1.js
+// Retrieved at 3/16/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModStatsChart"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, s) {
@@ -313,8 +313,8 @@
 				a = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				c = s("./src/lib/prettyPrintNumber/index.ts"),
 				i = s("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
-				j = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				u = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				u = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				j = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
 				r = s("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
 				_ = s("./src/reddit/constants/colors.ts"),
 				h = s("./src/reddit/models/StructuredStyles/index.ts"),
@@ -522,7 +522,7 @@
 						h = e === r.b.Hour ? Object(r.k)(this.state.date) : Object(r.j)(this.state.date, e);
 					return m.a.createElement("div", {
 						className: v.a.chart
-					}, m.a.createElement(j.a, null, m.a.createElement(d.a, {
+					}, m.a.createElement(u.a, null, m.a.createElement(d.a, {
 						data: _,
 						height: 300,
 						width: 940,
@@ -538,7 +538,7 @@
 							className: v.a.legendLine,
 							key: e.label,
 							onClick: () => this.onClickLegend(o)
-						}, m.a.createElement(u.a, {
+						}, m.a.createElement(j.a, {
 							className: v.a.expandRight
 						}, m.a.createElement("div", {
 							className: v.a.legendBlock,
@@ -600,8 +600,8 @@
 				a = s("./src/reddit/components/RichTextEditor/Tooltip/index.m.less"),
 				c = s.n(a);
 			const i = 8,
-				j = 16,
-				u = 15 + j / 2;
+				u = 16,
+				j = 15 + u / 2;
 			var r;
 			! function(e) {
 				e[e.None = 0] = "None", e[e.Above = 1] = "Above", e[e.Below = 2] = "Below"
@@ -631,41 +631,42 @@
 				}
 				updatePositioning(e) {
 					if (!this.containerRef) return;
-					const o = this.containerRef.offsetWidth,
-						s = this.containerRef.offsetHeight,
-						t = this.state.positioning;
+					const o = this.containerRef.getBoundingClientRect(),
+						s = Math.round(o.width),
+						t = Math.round(o.height),
+						l = this.state.positioning;
 					if (!e) {
-						if (!t) return;
-						if (t.tooltipWidth === o && t.tooltipHeight === s) return
+						if (!l) return;
+						if (l.tooltipWidth === s && l.tooltipHeight === t) return
 					}
-					const l = e ? e.bottom : t.target.bottom,
-						n = e ? e.top : t.target.top,
-						m = e ? e.left : t.target.left,
-						a = Object(d.e)(this.containerRef);
-					let c, i, j;
-					if (a) {
-						const e = a.getBoundingClientRect();
-						c = e.bottom - (l || 0), i = m - e.left + a.scrollLeft, j = n - e.top + a.scrollTop
+					const n = e ? e.bottom : l.target.bottom,
+						m = e ? e.top : l.target.top,
+						a = e ? e.left : l.target.left,
+						c = Object(d.e)(this.containerRef);
+					let i, u, j;
+					if (c) {
+						const e = c.getBoundingClientRect();
+						i = e.bottom - (n || 0), u = a - e.left + c.scrollLeft, j = m - e.top + c.scrollTop
 					} else {
 						const e = document.documentElement,
 							o = window.pageYOffset || e.scrollTop;
-						i = m + (window.pageXOffset || e.scrollLeft), j = n + o
+						u = a + (window.pageXOffset || e.scrollLeft), j = m + o
 					}
-					const u = {
+					const r = {
 						target: {
-							top: n,
-							left: m
+							top: m,
+							left: a
 						},
-						tooltipWidth: o,
-						tooltipHeight: s,
+						tooltipWidth: s,
+						tooltipHeight: t,
 						tooltip: {
 							top: j,
-							left: i,
-							bottom: c
+							left: u,
+							bottom: i
 						}
 					};
-					this.adjustPositionForTriangle(u, a), this.setState({
-						positioning: u
+					this.adjustPositionForTriangle(r, c), this.setState({
+						positioning: r
 					})
 				}
 				adjustPositionForTriangle(e, o) {
@@ -675,8 +676,8 @@
 					if (!s) return;
 					const t = o ? o.offsetWidth : document.documentElement.offsetWidth,
 						l = t ? Math.max(e.tooltip.left + e.tooltipWidth - t, 0) : 0;
-					e.tooltip.left -= l + u;
-					const n = l + u - j / 2;
+					e.tooltip.left -= l + j;
+					const n = l + j - u / 2;
 					let m;
 					s === r.Above ? (e.tooltip.top += i, m = -i) : (e.tooltip.top -= e.tooltipHeight + i, m = e.tooltipHeight), e.triangle = {
 						top: m,
@@ -726,4 +727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.836d34064edb5c664cbc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.55d41553b8fdd275d8e1.js.map

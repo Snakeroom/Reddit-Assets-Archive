@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.fa41e87fdcb65b0e6c01.js
-// Retrieved at 3/15/2021, 2:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.6b2ebbaf9978a2d5a2cd.js
+// Retrieved at 3/16/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, s) {
@@ -66,8 +66,8 @@
 					if (!this.updateTooltipPosition || !this.props.isVisible) return;
 					const e = this.props.isSearching ? Object(r.a)() : this.emoteButtonEl && this.emoteButtonEl.getBoundingClientRect();
 					e && this.updateTooltipPosition({
-						left: e.left + e.width / 2,
-						top: e.top + 3
+						left: Math.round(e.left + e.width / 2),
+						top: Math.round(e.top) + 3
 					})
 				}
 				render() {
@@ -524,4 +524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.fa41e87fdcb65b0e6c01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.6b2ebbaf9978a2d5a2cd.js.map

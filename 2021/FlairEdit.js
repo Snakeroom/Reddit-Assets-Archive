@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.1bba471196e74f100f4b.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.4594bea6a264ad9b53d6.js
+// Retrieved at 3/16/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -1345,41 +1345,42 @@
 				}
 				updatePositioning(e) {
 					if (!this.containerRef) return;
-					const t = this.containerRef.offsetWidth,
-						o = this.containerRef.offsetHeight,
-						s = this.state.positioning;
+					const t = this.containerRef.getBoundingClientRect(),
+						o = Math.round(t.width),
+						s = Math.round(t.height),
+						i = this.state.positioning;
 					if (!e) {
-						if (!s) return;
-						if (s.tooltipWidth === t && s.tooltipHeight === o) return
+						if (!i) return;
+						if (i.tooltipWidth === o && i.tooltipHeight === s) return
 					}
-					const i = e ? e.bottom : s.target.bottom,
-						n = e ? e.top : s.target.top,
-						r = e ? e.left : s.target.left,
-						c = Object(a.e)(this.containerRef);
-					let l, d, p;
-					if (c) {
-						const e = c.getBoundingClientRect();
-						l = e.bottom - (i || 0), d = r - e.left + c.scrollLeft, p = n - e.top + c.scrollTop
+					const n = e ? e.bottom : i.target.bottom,
+						r = e ? e.top : i.target.top,
+						c = e ? e.left : i.target.left,
+						l = Object(a.e)(this.containerRef);
+					let d, p, m;
+					if (l) {
+						const e = l.getBoundingClientRect();
+						d = e.bottom - (n || 0), p = c - e.left + l.scrollLeft, m = r - e.top + l.scrollTop
 					} else {
 						const e = document.documentElement,
 							t = window.pageYOffset || e.scrollTop;
-						d = r + (window.pageXOffset || e.scrollLeft), p = n + t
+						p = c + (window.pageXOffset || e.scrollLeft), m = r + t
 					}
-					const m = {
+					const u = {
 						target: {
-							top: n,
-							left: r
+							top: r,
+							left: c
 						},
-						tooltipWidth: t,
-						tooltipHeight: o,
+						tooltipWidth: o,
+						tooltipHeight: s,
 						tooltip: {
-							top: p,
-							left: d,
-							bottom: l
+							top: m,
+							left: p,
+							bottom: d
 						}
 					};
-					this.adjustPositionForTriangle(m, c), this.setState({
-						positioning: m
+					this.adjustPositionForTriangle(u, l), this.setState({
+						positioning: u
 					})
 				}
 				adjustPositionForTriangle(e, t) {
@@ -1658,4 +1659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.1bba471196e74f100f4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.4594bea6a264ad9b53d6.js.map
