@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.63b88c0bb487f52e7866.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.c21c6dc0ddaf3a93c3b8.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -7405,7 +7405,7 @@
 				hasError: O.o,
 				hasWikiModPerms: (e, t) => {
 					const s = Object(C.A)(e, t);
-					return !!s && Object(_.f)(e, {
+					return !!s && Object(_.h)(e, {
 						subredditId: s.id
 					})
 				},
@@ -8575,7 +8575,7 @@
 			const L = Object(d.c)({
 					hasWikiModPerms: (e, t) => {
 						const s = Object(k.A)(e, t);
-						return !!s && Object(f.f)(e, {
+						return !!s && Object(f.h)(e, {
 							subredditId: s.id
 						})
 					},
@@ -8851,7 +8851,7 @@
 				flairStyleTemplate: c.S,
 				hideNSFWPref: b.B,
 				isActive: p.j,
-				moderatorPermissions: u.h,
+				moderatorPermissions: u.j,
 				modModeEnabled: c.Q,
 				showEditFlair: m.a
 			}), (e, {
@@ -10234,4 +10234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.63b88c0bb487f52e7866.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.c21c6dc0ddaf3a93c3b8.js.map

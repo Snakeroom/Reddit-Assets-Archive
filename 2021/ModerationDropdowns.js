@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.34cc1080bdc764651331.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.305576ba11ec4d239fbb.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -318,7 +318,7 @@
 				M = Object(c.c)({
 					flairData: v.d,
 					subreddit: _.T,
-					isMod: (e, t) => !!Object(f.i)(e, t)
+					isMod: (e, t) => !!Object(f.k)(e, t)
 				});
 			class R extends a.a.Component {
 				constructor(e) {
@@ -1524,4 +1524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.34cc1080bdc764651331.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.305576ba11ec4d239fbb.js.map

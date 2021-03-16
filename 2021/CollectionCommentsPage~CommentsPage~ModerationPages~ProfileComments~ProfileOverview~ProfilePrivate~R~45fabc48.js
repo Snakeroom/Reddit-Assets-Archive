@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.22c10ed11d630b7f81cf.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f91dc35ec0564b8e5581.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -2029,7 +2029,7 @@
 					}) => Object(w.a)(e, {
 						postId: t.id
 					}),
-					moderatorPermissions: (e, t) => Object(k.h)(e, {
+					moderatorPermissions: (e, t) => Object(k.j)(e, {
 						postId: t.post.id
 					})
 				}), (e, {
@@ -2623,7 +2623,7 @@
 				w = Object(a.c)({
 					flairData: _.d,
 					subreddit: O.T,
-					isMod: (e, t) => !!Object(v.i)(e, t)
+					isMod: (e, t) => !!Object(v.k)(e, t)
 				});
 			class I extends i.a.Component {
 				constructor(e) {
@@ -4996,4 +4996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.22c10ed11d630b7f81cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f91dc35ec0564b8e5581.js.map

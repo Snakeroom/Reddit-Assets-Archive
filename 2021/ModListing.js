@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.43b3ed1360768f022095.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.da9faa1b5a4073d4bc16.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3351,7 +3351,7 @@
 					match: t
 				}) => t.params.sort || d.P.HOT, (e, {
 					match: t
-				}) => Object(K.d)(t.path), Ce.g, Ce.c, (e, t, n, r, o) => {
+				}) => Object(K.d)(t.path), Ce.i, Ce.c, (e, t, n, r, o) => {
 					const i = s()([...Object(u.a)(e)]),
 						a = Ee.x in i && i[Ee.x].toUpperCase(),
 						c = "string" == typeof a && a in d.Ub ? d.Ub[a] : d.Vb,
@@ -3416,4 +3416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.43b3ed1360768f022095.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.da9faa1b5a4073d4bc16.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b238b3afe7ca5ae7cdbb.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a298d35901c564823a83.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -745,7 +745,7 @@
 					ge = ae || de;
 				ae && !Object(be.b)(q, ae) && await t(Object(R.g)(ae));
 				const fe = !!ae && Object(be.c)(ee, ae),
-					xe = Object(le.i)(ee, {
+					xe = Object(le.k)(ee, {
 						subredditId: ge
 					});
 				if (Object(l.a)(v, xe, te, se, fe)) {
@@ -6222,7 +6222,7 @@
 					isActive: y.j,
 					isExpanded: y.l,
 					layout: oe.O,
-					moderatorPermissions: C.h,
+					moderatorPermissions: C.j,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						if (s) return e.polls.models[s]
@@ -12691,7 +12691,7 @@
 						subredditId: t
 					}) => e.pages.modHub.moderators.models[t] || null,
 					moderatorsList: T,
-					moderatorPermissions: O.i,
+					moderatorPermissions: O.k,
 					isAddUserModalOpen: Object(y.b)("ModerationPage--Modal--AddModerator"),
 					isEditableListPending: (e, t) => {
 						const s = Object(k.d)(t.subredditId, t.afterEditable, t.beforeEditable);
@@ -18060,7 +18060,7 @@
 					isCurrentUserProfilePost: h.k,
 					isExpanded: h.l,
 					isLoggedIn: g.J,
-					moderatorPermissions: p.h,
+					moderatorPermissions: p.j,
 					modModeEnabled: l.Q,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -21375,7 +21375,7 @@
 						} = t.match.params, o = n ? Object(N.F)(e, n) : null === (s = Object(j.j)(e, {
 							profileName: a
 						})) || void 0 === s ? void 0 : s.id;
-						if (o) return Object(O.i)(e, {
+						if (o) return Object(O.k)(e, {
 							subredditId: o
 						})
 					}
@@ -22309,4 +22309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b238b3afe7ca5ae7cdbb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a298d35901c564823a83.js.map

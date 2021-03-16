@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1ff743135f7b27219a83.js
-// Retrieved at 3/16/2021, 12:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.b421ee456842becbd89f.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1256,7 +1256,7 @@
 				y = Object(d.a)(e => e && Object(u.c)(e)),
 				I = Object(o.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
-					isModerator: m.d
+					isModerator: m.f
 				}),
 				S = Object(i.b)(I);
 			class T extends a.a.Component {
@@ -5068,4 +5068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1ff743135f7b27219a83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b421ee456842becbd89f.js.map

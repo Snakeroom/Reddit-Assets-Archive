@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7ddef65da04d19fb7e7a.js
-// Retrieved at 3/16/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.aab7f203c0a28939d28e.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -5225,7 +5225,7 @@
 				k = Object(d.a)(e => e && Object(u.c)(e)),
 				j = Object(a.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
-					isModerator: m.d
+					isModerator: m.f
 				}),
 				S = Object(i.b)(j);
 			class I extends r.a.Component {
@@ -8145,7 +8145,7 @@
 				j = Object(c.c)({
 					flairData: x.d,
 					subreddit: v.T,
-					isMod: (e, t) => !!Object(C.i)(e, t)
+					isMod: (e, t) => !!Object(C.k)(e, t)
 				});
 			class S extends i.a.Component {
 				constructor(e) {
@@ -18731,7 +18731,7 @@
 					isDraftsFeatureEnabled: (e, t) => !Ks(e, t),
 					isDraftPending: S.g,
 					isMediaUploadPending: j.V,
-					isModeratorSomewhere: at.g,
+					isModeratorSomewhere: at.i,
 					isPostAsMetaMod: j.O,
 					isPostPending: j.mb,
 					isPostSubmitEnabled: Ys,
@@ -20814,7 +20814,7 @@
 					const {
 						subredditId: n
 					} = t;
-					return !!n && Object(at.e)(e, {
+					return !!n && Object(at.g)(e, {
 						subredditId: n
 					})
 				},
@@ -23943,7 +23943,7 @@
 						});
 					if (!n || !s || !o) return !1;
 					if (o.applied) return !0;
-					const i = Object(r.d)(e, {
+					const i = Object(r.f)(e, {
 							subredditId: t
 						}),
 						{
@@ -24012,4 +24012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7ddef65da04d19fb7e7a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.aab7f203c0a28939d28e.js.map

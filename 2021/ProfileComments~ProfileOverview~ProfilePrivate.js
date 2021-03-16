@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f33f02d2191f3cfbc45d.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.444d04cc3e215549a95c.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -502,7 +502,7 @@
 					isLoggedIn: ee.J,
 					moderatorPermissions: (e, {
 						comment: t
-					}) => Object(Z.i)(e, {
+					}) => Object(Z.k)(e, {
 						subredditId: t.subredditId
 					}),
 					currentUser: ee.i,
@@ -2480,7 +2480,7 @@
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.l,
 					isLoggedIn: x.J,
-					moderatorPermissions: u.h,
+					moderatorPermissions: u.j,
 					modModeEnabled: c.Q,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -2705,4 +2705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f33f02d2191f3cfbc45d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.444d04cc3e215549a95c.js.map

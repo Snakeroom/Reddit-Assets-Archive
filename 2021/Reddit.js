@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5e58b2ab24253fca4e83.js
-// Retrieved at 3/16/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.8da853d033c172f1f75f.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3225,7 +3225,7 @@
 				authorFlair: ft.b,
 				currentUser: Ct.i,
 				inContextAuthor: ft.c,
-				isMod: (e, t) => !!Object(vt.i)(e, t),
+				isMod: (e, t) => !!Object(vt.k)(e, t),
 				userFlairData: Ot.c
 			}), (e, t) => ({
 				activeFlairChanged: (n, s, r, o) => e(Object(it.f)(n, s, r, o.username, t.subredditId)),
@@ -7361,7 +7361,7 @@
 					isGoogleOneTapEnabled: jc.c,
 					isInboxAppBadgingGqlEnabled: Sc.a,
 					isInboxRedesignActive: er.d,
-					isModerator: vt.g,
+					isModerator: vt.i,
 					isNameEditable: Ct.L,
 					isResponsiveSettingsEnabled: zt.a,
 					shouldOpenEmailVerificationTooltip: (e, {
@@ -17467,4 +17467,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5e58b2ab24253fca4e83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8da853d033c172f1f75f.js.map

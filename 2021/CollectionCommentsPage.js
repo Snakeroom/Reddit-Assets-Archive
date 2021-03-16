@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e88e5919795baa77725e.js
-// Retrieved at 3/16/2021, 12:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.095ce27c7b03b56acb18.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -607,7 +607,7 @@
 											commentId: s
 										}),
 										r = (o.user.account && o.user.account.id) === (n && n.authorId),
-										d = !!e && !!Object(A.h)(o, {
+										d = !!e && !!Object(A.j)(o, {
 											postId: e
 										});
 									!n || n.isRemoved && n.isDeleted || r || d ? V[s] = O.REMOVE_COMMENT : i(D({
@@ -1903,7 +1903,7 @@
 					hasModeratorPostPermissions: (e, {
 						postId: t
 					}) => {
-						const s = Object(B.h)(e, {
+						const s = Object(B.j)(e, {
 							postId: t
 						});
 						return !!s && s.posts
@@ -1914,7 +1914,7 @@
 						postId: t
 					}) => {
 						const s = Object(W.r)(e),
-							o = !!Object(B.h)(e, {
+							o = !!Object(B.j)(e, {
 								postId: t
 							}),
 							n = Object(V.D)(e, {
@@ -3161,7 +3161,7 @@
 					isPendingDeletion: T.z,
 					moderatorPermissions: (e, t) => {
 						const s = Object(M.a)(e, t);
-						return s ? Object(N.i)(e, {
+						return s ? Object(N.k)(e, {
 							subredditId: s.subredditId
 						}) : null
 					},
@@ -3565,7 +3565,7 @@
 						});
 					if (!n) return !1;
 					const r = Object(R.r)(e),
-						i = !!Object(N.h)(e, {
+						i = !!Object(N.j)(e, {
 							postId: n.postId
 						}),
 						a = Object(F.D)(e, {
@@ -5220,7 +5220,7 @@
 					isCurrentUserProfilePost: V.k,
 					isExpanded: V.l,
 					post: V.D,
-					moderatorPermissions: D.h,
+					moderatorPermissions: D.j,
 					modModeEnabled: ge.Q,
 					isInCategoriesExperiment: N.a,
 					showAwardsPlaque: F.a,
@@ -8340,4 +8340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e88e5919795baa77725e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.095ce27c7b03b56acb18.js.map

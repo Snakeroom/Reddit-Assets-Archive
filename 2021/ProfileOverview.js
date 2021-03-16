@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.bfdfdc017303976c10dd.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.3b32a69bd8a9ba06aea2.js
+// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -1001,7 +1001,7 @@
 					isPostChainDismissed: P.c,
 					isPostChained: P.d,
 					listingBelowVariant: oe.b,
-					moderatorPermissions: v.h,
+					moderatorPermissions: v.j,
 					modModeEnabled: ee.Q,
 					posts: fe,
 					postHeightVariant: ce,
@@ -2126,7 +2126,7 @@
 				flairStyleTemplate: c.S,
 				hideNSFWPref: h.B,
 				isActive: u.j,
-				moderatorPermissions: m.h,
+				moderatorPermissions: m.j,
 				modModeEnabled: c.Q,
 				showEditFlair: p.a
 			}), (e, {
@@ -3366,4 +3366,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.bfdfdc017303976c10dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.3b32a69bd8a9ba06aea2.js.map
