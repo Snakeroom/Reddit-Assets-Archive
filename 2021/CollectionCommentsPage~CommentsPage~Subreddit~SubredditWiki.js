@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b65af6d2ea74c1049727.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5448257d50a389580659.js
+// Retrieved at 3/15/2021, 10:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -8,8 +8,14 @@
 		"./src/graphql/operations/CreatePredictionTournament.json": function(e) {
 			e.exports = JSON.parse('{"id":"51591a693756"}')
 		},
+		"./src/graphql/operations/GetPredictionChipPackages.json": function(e) {
+			e.exports = JSON.parse('{"id":"3785e4a718f5"}')
+		},
 		"./src/graphql/operations/GetPredictionCoinPackages.json": function(e) {
 			e.exports = JSON.parse('{"id":"6829c428155b"}')
+		},
+		"./src/graphql/operations/GetPredictionToken.json": function(e) {
+			e.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/graphql/operations/GetTournaments.json": function(e) {
 			e.exports = JSON.parse('{"id":"6cd935a036e1"}')
@@ -181,7 +187,7 @@
 					gqlContext: a
 				}) => {
 					const o = Object(p.J)(i()),
-						c = await Object(d.f)(a(), {
+						c = await Object(d.h)(a(), {
 							subredditId: e,
 							period: t,
 							top: r,
@@ -209,7 +215,7 @@
 							disallowProfile: !0
 						});
 					if (!i) throw new Error("Post does not belong to a subreddit");
-					const a = await Object(d.e)(s(), i.name, Object(l.d)(n));
+					const a = await Object(d.f)(s(), i.name, Object(l.d)(n));
 					if (a.error || !a.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: o
@@ -224,7 +230,7 @@
 				}) => async (n, i, {
 					gqlContext: a
 				}) => {
-					const o = await Object(d.j)(a(), {
+					const o = await Object(d.l)(a(), {
 						coinPackageId: e,
 						optionId: t,
 						postId: r,
@@ -246,7 +252,7 @@
 				}) => async (r, s, {
 					gqlContext: n
 				}) => {
-					const i = await Object(d.h)(n(), {
+					const i = await Object(d.j)(n(), {
 							optionId: e,
 							postId: t
 						}),
@@ -271,7 +277,7 @@
 					t(E({
 						subredditId: i
 					}));
-					const a = await Object(d.g)(s(), {
+					const a = await Object(d.i)(s(), {
 						subredditName: e,
 						isLatestOnly: !0,
 						isIncludingPredictions: !0,
@@ -2378,50 +2384,56 @@
 		},
 		"./src/reddit/endpoints/economics/predictions.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "e", (function() {
-				return u
-			})), r.d(t, "j", (function() {
-				return p
-			})), r.d(t, "h", (function() {
+			r.d(t, "f", (function() {
 				return b
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "l", (function() {
 				return h
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "j", (function() {
 				return x
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "a", (function() {
 				return g
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "h", (function() {
 				return f
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "c", (function() {
 				return A
 			})), r.d(t, "i", (function() {
 				return v
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "b", (function() {
 				return k
+			})), r.d(t, "k", (function() {
+				return y
+			})), r.d(t, "d", (function() {
+				return w
+			})), r.d(t, "e", (function() {
+				return E
+			})), r.d(t, "g", (function() {
+				return O
 			}));
 			var s = r("./src/lib/makeGqlRequest/index.ts"),
 				n = r("./src/graphql/operations/AddPredictionDrafts.json"),
 				i = r("./src/graphql/operations/CreatePredictionTournament.json"),
-				a = r("./src/graphql/operations/GetPredictionCoinPackages.json"),
-				o = r("./src/graphql/operations/GetTournaments.json"),
-				d = r("./src/graphql/operations/ResolvePrediction.json"),
-				c = r("./src/graphql/operations/SubredditTopPredictors.json"),
-				l = r("./src/graphql/operations/UpdatePredictionTournament.json"),
-				m = r("./src/graphql/operations/VotePrediction.json");
-			const u = (e, t, r) => Object(s.a)(e, {
-					...a,
+				a = r("./src/graphql/operations/GetPredictionChipPackages.json"),
+				o = r("./src/graphql/operations/GetPredictionCoinPackages.json"),
+				d = r("./src/graphql/operations/GetPredictionToken.json"),
+				c = r("./src/graphql/operations/GetTournaments.json"),
+				l = r("./src/graphql/operations/ResolvePrediction.json"),
+				m = r("./src/graphql/operations/SubredditTopPredictors.json"),
+				u = r("./src/graphql/operations/UpdatePredictionTournament.json"),
+				p = r("./src/graphql/operations/VotePrediction.json");
+			const b = (e, t, r) => Object(s.a)(e, {
+					...o,
 					variables: {
 						subredditName: t,
 						includeFreePackage: r
 					}
 				}),
-				p = (e, {
+				h = (e, {
 					postId: t,
 					optionId: r,
 					coinPackageId: n,
 					price: i
 				}) => Object(s.a)(e, {
-					...m,
+					...p,
 					variables: {
 						input: {
 							postId: t,
@@ -2431,11 +2443,11 @@
 						}
 					}
 				}),
-				b = (e, {
+				x = (e, {
 					postId: t,
 					optionId: r
 				}) => Object(s.a)(e, {
-					...d,
+					...l,
 					variables: {
 						input: {
 							postId: t,
@@ -2443,18 +2455,18 @@
 						}
 					}
 				});
-			var h;
+			var g;
 			! function(e) {
 				e.AllTime = "ALL_TIME", e.Monthly = "MONTHLY"
-			}(h || (h = {}));
-			const x = (e, {
+			}(g || (g = {}));
+			const f = (e, {
 					subredditId: t,
 					period: r,
 					top: n,
 					includeCurrentRank: i,
 					tournamentId: a
 				}) => Object(s.a)(e, {
-					...c,
+					...m,
 					variables: {
 						subredditId: t,
 						period: r,
@@ -2463,33 +2475,41 @@
 						tournamentId: a
 					}
 				}),
-				g = (e, t) => Object(s.a)(e, {
+				A = (e, t) => Object(s.a)(e, {
 					...i,
 					variables: {
 						input: t
 					}
 				}),
-				f = (e, t) => Object(s.a)(e, {
-					...o,
+				v = (e, t) => Object(s.a)(e, {
+					...c,
 					variables: t
 				}),
-				A = (e, t) => Object(s.a)(e, {
+				k = (e, t) => Object(s.a)(e, {
 					...n,
 					variables: {
 						input: t
 					}
 				}),
-				v = (e, t) => Object(s.a)(e, {
-					...l,
+				y = (e, t) => Object(s.a)(e, {
+					...u,
 					variables: {
 						input: t
 					}
 				}),
-				k = (e, t) => Object(s.a)(e, {
-					...l,
+				w = (e, t) => Object(s.a)(e, {
+					...u,
 					variables: {
 						input: t
 					}
+				}),
+				E = (e, t) => Object(s.a)(e, {
+					...a,
+					variables: t
+				}),
+				O = (e, t) => Object(s.a)(e, {
+					...d,
+					variables: t
 				})
 		},
 		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, r) {
@@ -2834,4 +2854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b65af6d2ea74c1049727.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5448257d50a389580659.js.map
