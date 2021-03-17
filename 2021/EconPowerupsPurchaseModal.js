@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b74342275f444946cec3.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.069c0dfbae5592db4d0a.js
+// Retrieved at 3/17/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -979,7 +979,7 @@
 					} catch (o) {
 						m.c.captureException(o)
 					}
-				}, V = Object(p.a)(h.N), z = Object(p.a)(h.O), W = Object(p.a)(h.P), U = e => async (t, r) => {
+				}, V = Object(p.a)(h.N), U = Object(p.a)(h.O), z = Object(p.a)(h.P), W = e => async (t, r) => {
 					await t(V(e)), t(Object(d.f)({
 						kind: f.b.Error,
 						duration: d.a,
@@ -988,7 +988,7 @@
 				}, H = (e, t, r) => async (o, a, {
 					gqlContext: s
 				}) => {
-					o(z({
+					o(U({
 						subredditId: t,
 						allocatedAt: r
 					}));
@@ -1004,16 +1004,16 @@
 								{
 									errors: n
 								} = e.data.cancelEconRecurringPayment;
-							if (n && n.length) return void o(U(n[0].message));
-							o(W({
+							if (n && n.length) return void o(W(n[0].message));
+							o(z({
 								subredditId: t,
 								allocatedAt: r
 							}))
-						} else o(U(n.fbt._("Something went wrong", null, {
+						} else o(W(n.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					} catch (c) {
-						m.c.captureException(c), o(U(n.fbt._("Something went wrong", null, {
+						m.c.captureException(c), o(W(n.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					}
@@ -1499,8 +1499,8 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = Object(s.c)({
 				isAnonymous: C.c,
 				isPending: C.b
-			}), z = Object(a.b)(V), W = 12;
-			var U = z((function(e) {
+			}), U = Object(a.b)(V), z = 12;
+			var W = U((function(e) {
 					const {
 						className: t,
 						isAnonymous: r,
@@ -1515,7 +1515,7 @@
 						disabled: n
 					}, n ? o.a.createElement(A.a, {
 						className: B.a.loadingIcon,
-						sizePx: W
+						sizePx: z
 					}) : D._("Apply Your Free Powerup", null, {
 						hk: "fwfCU"
 					}))
@@ -1758,25 +1758,30 @@
 						className: de.a.premiumIcon
 					})), o.a.createElement("span", null, ue._("Premium gives you one free Powerup", null, {
 						hk: "1Rlk9N"
-					}))), o.a.createElement(U, {
+					}))), o.a.createElement(W, {
 						className: de.a.button,
 						subredditId: p
 					})), o.a.createElement("p", {
 						className: de.a.description
-					}, ue._("Auto-renews monthly. To cancel, visit your settings and turn off auto-renewal at least 24 hours before your subscription period ends to avoid getting charged for the next month. No partial refunds. By continuing, you are agreeing to our {user agreement} , {previews terms of use} , and {privacy policy}", [ue._param("user agreement", o.a.createElement("a", {
+					}, ue._("By completing your purchase, you are agreeing to automatic payments for Powerups and Reddit's {=User Agreement}, {=Privacy Policy}, and {previews terms of use}. Your Powerups subscription will auto-renew monthly for {powerup price} (plus tax where applicable). Cancel anytime in {=User Settings}. Cancel at least 24 hours before your subscription ends to avoid getting charged for the next month. No partial refunds.", [ue._param("=User Agreement", o.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/user-agreement",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, ue._("User Agreement", null, {
-						hk: "n6txc"
-					}))), ue._param("previews terms of use", o.a.createElement(O.a, null)), ue._param("privacy policy", o.a.createElement("a", {
+						hk: "3U1KuA"
+					}))), ue._param("=Privacy Policy", o.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/privacy-policy",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, ue._("Privacy Policy", null, {
-						hk: "11oBec"
+						hk: "Z8otX"
+					}))), ue._param("previews terms of use", o.a.createElement(O.a, null)), ue._param("powerup price", ` $${T.toLocaleString()} `), ue._param("=User Settings", o.a.createElement("a", {
+						href: "/settings/premium",
+						target: "_blank"
+					}, ue._("User Settings", null, {
+						hk: "3TNXSe"
 					})))], {
-						hk: "3ZUHzF"
+						hk: "NLnVj"
 					})))))
 				})),
 				he = r("./src/reddit/components/Econ/PowerupsPurchaseModal/index.m.less"),
@@ -2435,4 +2440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b74342275f444946cec3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.069c0dfbae5592db4d0a.js.map
