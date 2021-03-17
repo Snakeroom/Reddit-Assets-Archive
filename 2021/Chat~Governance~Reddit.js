@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7324e0bc999cba29093a.js
-// Retrieved at 3/17/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f974b7eee01293bd0b68.js
+// Retrieved at 3/17/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1447,11 +1447,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("129190"),
+				buildNumber: r("129197"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1616007153"),
+				})("1616012646"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3618,14 +3618,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c3b12316ea803901d8817e296d3aeddf2e4d853a3-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c8030e87fcc485b975105e5a0575143ed57deed28-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3b12316ea803901d8817e296d3aeddf2e4d853a3-production",
+						release: "8030e87fcc485b975105e5a0575143ed57deed28-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4074,7 +4074,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "3b12316ea803901d8817e296d3aeddf2e4d853a3-production",
+						releaseClient: "8030e87fcc485b975105e5a0575143ed57deed28-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -24865,7 +24865,7 @@
 				}
 		},
 		"./src/reddit/helpers/survey/config.json": function(e) {
-			e.exports = JSON.parse('{"survey_cooldown_days":182,"active_surveys":[{"experiment_name":"nps_survey_scroll_trigger","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":2,"sample_factor":0.5}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"d2x_nps_survey_dismiss_post_trigger","trigger_event":"dismiss_post","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":3,"sample_factor":0.01}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"survey_demo_nps_1","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"survey_demo_combined_1","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]},{"experiment_name":"d2x_mods_survey","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]},{"experiment_name":"d2x_chat_survey","trigger_event":"chat_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.15}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","follow_up_question":"What is the primary reason for your score?"}]}]}')
+			e.exports = JSON.parse('{"survey_cooldown_days":182,"active_surveys":[{"experiment_name":"nps_survey_scroll_trigger","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":2,"sample_factor":0.5}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"d2x_nps_survey_dismiss_post_trigger","trigger_event":"dismiss_post","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":3,"sample_factor":0.01}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"survey_demo_nps_1","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"survey_demo_combined_1","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]},{"experiment_name":"d2x_search_survey","trigger_event":"search_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.05}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_chat_survey","trigger_event":"chat_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.15}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","follow_up_question":"What is the primary reason for your score?"}]}]}')
 		},
 		"./src/reddit/helpers/survey/index.ts": function(e, t, i) {
 			"use strict";
@@ -44785,4 +44785,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7324e0bc999cba29093a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f974b7eee01293bd0b68.js.map
