@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.a4298ae54c8289eeb456.js
-// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.4a303f73465ed42e8042.js
+// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -51,7 +51,7 @@
 					const o = t(),
 						n = Object(p.e)(o),
 						i = Object(p.d)(o),
-						c = Object(h.I)(o);
+						c = Object(h.J)(o);
 					if (n || !i) return;
 					e(g());
 					let u = !1;
@@ -126,7 +126,7 @@
 						a = Object(p.g)(i);
 					if (Object(p.f)(i) || null === a || "client" === a) {
 						const s = null === (o = null === (r = Object(u.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
-							a = Object(h.J)(i);
+							a = Object(h.K)(i);
 						return Object(n.i)(() => e(O()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -687,7 +687,7 @@
 						key: e
 					})), l.body.reason === E.a.DeletedProfile && r(Object(y.p)({
 						profileName: t
-					})), r(Object(C.m)(l.status))
+					})), r(Object(C.l)(l.status))
 				}, we = (e, t, s, r) => async (r, o, n) => {
 					const i = o(),
 						a = !!Object(b.f)(i, {
@@ -726,7 +726,7 @@
 						key: e
 					})), l.body.reason === E.a.DeletedProfile && r(Object(y.p)({
 						profileName: t
-					})), r(Object(C.m)(l.status))
+					})), r(Object(C.l)(l.status))
 				}, Se = e => async (t, s, r) => {
 					const {
 						queryParams: d,
@@ -738,38 +738,34 @@
 						profileName: y
 					} = u;
 					let O = !1;
-					const E = l.e[Object(p.O)(s(), {})],
-						S = y.toLowerCase(),
-						L = {
+					const C = l.e[Object(p.O)(s(), {})],
+						E = y.toLowerCase(),
+						S = {
 							...o()(e.queryParams, m.l),
 							sort: b,
-							layout: E,
+							layout: C,
 							t: g
 						},
-						k = [t(j.d(S))];
-					if (E === l.e[l.g.Compact]) {
-						const r = Object(w.a)(S, c.lb, b, e.queryParams);
-						s().pages.profileOverview.chrono.ids[r] ? O = !0 : k.push(t(we(r, S, L, !0)))
+						L = [t(j.d(E))];
+					if (C === l.e[l.g.Compact]) {
+						const r = Object(w.a)(E, c.lb, b, e.queryParams);
+						s().pages.profileOverview.chrono.ids[r] ? O = !0 : L.push(t(we(r, E, S, !0)))
 					} else {
-						const r = Object(w.a)(S, c.mb, b, e.queryParams);
-						s().listings.postOrder.ids[r] && !s().listings.postOrder.api.error[r] ? O = !0 : k.push(t(Ee(r, S, L, !0)))
+						const r = Object(w.a)(E, c.mb, b, e.queryParams);
+						s().listings.postOrder.ids[r] && !s().listings.postOrder.api.error[r] ? O = !0 : L.push(t(Ee(r, E, S, !0)))
 					}
-					if (k.push(t(Object(n.b)())), await Promise.all(k), O) return;
-					const N = s();
-					if (!N.platform.currentPage) return;
-					if (200 !== N.platform.currentPage.status) return;
-					const T = Object(h.m)(s(), S),
-						M = Object(f.mb)(N, {
+					if (L.push(t(Object(n.b)())), await Promise.all(L), O) return;
+					const k = s();
+					if (!k.platform.currentPage) return;
+					if (200 !== k.platform.currentPage.status) return;
+					const N = Object(h.m)(s(), E),
+						T = Object(f.nb)(k, {
 							userName: y
 						}).id;
-					t(C.l({
-						title: Le(s(), y)
-					})), Object(f.L)(N) && Object(f.N)(N, y) && t(Object(x.f)());
-					const _ = [t(Object(a.q)()), t(I.b(S, T)), t(j.b(S)), t(P.o(y)), t(j.g(y)), t(v.e(y, M))];
-					await Promise.all(_)
-				}, Le = (e, t) => Object(h.q)(e, {
-					profileName: t
-				})
+					Object(f.M)(k) && Object(f.O)(k, y) && t(Object(x.f)());
+					const M = [t(Object(a.q)()), t(I.b(E, N)), t(j.b(E)), t(P.o(y)), t(j.g(y)), t(v.e(y, T))];
+					await Promise.all(M)
+				}
 		},
 		"./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx": function(e, t, s) {
 			"use strict";
@@ -993,10 +989,10 @@
 				ge = Object(n.b)(() => Object(i.c)({
 					autoplayPref: C.b,
 					activeModalId: x.a,
-					hideNSFWPref: C.B,
+					hideNSFWPref: C.C,
 					flairStyleTemplate: ee.S,
 					isCurrentUserProfilePost: O.k,
-					isLoggedIn: C.J,
+					isLoggedIn: C.K,
 					isActive: O.j,
 					isPostChainDismissed: P.c,
 					isPostChained: P.d,
@@ -1960,7 +1956,7 @@
 				P = {
 					apiError: h.a,
 					apiPending: h.b,
-					currentUser: g.i,
+					currentUser: g.j,
 					layout: l.O,
 					loadMore: h.d,
 					subredditsById: b.ab,
@@ -2124,7 +2120,7 @@
 				crosspostRoot: u.d,
 				crosspostSubredditOrProfile: u.e,
 				flairStyleTemplate: c.S,
-				hideNSFWPref: h.B,
+				hideNSFWPref: h.C,
 				isActive: u.j,
 				moderatorPermissions: m.j,
 				modModeEnabled: c.Q,
@@ -2844,7 +2840,7 @@
 				fbt: At
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Bt = 320, Vt = 300, Kt = Object(d.c)({
 				arePinnedPostsLoaded: Q.a,
-				currentUser: jt.i,
+				currentUser: jt.j,
 				pinnedPostIds: Q.L
 			}), Wt = Object(a.b)(Kt, e => ({
 				openPost: t => e(Object(Ae.E)(t))
@@ -2924,13 +2920,14 @@
 			}
 			var Ht = Object(p.t)()(Wt(Dt)),
 				Ut = s("./src/reddit/components/ProfileSidebar/index.tsx"),
-				Gt = s("./src/reddit/helpers/trackers/screenview.ts"),
-				qt = s("./src/reddit/layout/page/Listing/index.tsx"),
-				zt = s("./src/reddit/models/ContentGate.ts"),
-				Jt = s("./src/reddit/pages/ErrorPages/index.tsx");
+				Gt = s("./src/reddit/components/TitleTagManager/index.tsx"),
+				qt = s("./src/reddit/helpers/trackers/screenview.ts"),
+				zt = s("./src/reddit/layout/page/Listing/index.tsx"),
+				Jt = s("./src/reddit/models/ContentGate.ts"),
+				Xt = s("./src/reddit/pages/ErrorPages/index.tsx");
 
-			function Xt() {
-				return (Xt = Object.assign || function(e) {
+			function Qt() {
+				return (Qt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -2938,11 +2935,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Qt = (e, {
+			const Zt = (e, {
 					location: t
 				}) => o()([...Object(c.a)(t.search)]),
-				Zt = Object(p.t)(),
-				$t = Object(d.a)(p.B, jt.cb, Qt, p.O, (e, {
+				$t = Object(p.t)(),
+				Yt = Object(d.a)(p.B, jt.db, Zt, p.O, (e, {
 					match: t
 				}) => t.params.profileName, (e, {
 					match: t
@@ -2950,20 +2947,29 @@
 					match: t
 				}) => Object(se.j)(e, {
 					profileName: t.params.profileName
-				}), (e, t) => Object(b.a)(e, Qt(0, t)), (e, {
+				}), (e, t) => Object(b.a)(e, Zt(0, t)), (e, {
 					match: t
 				}) => !Object(Q.m)(e, {
 					profileName: t.params.profileName
-				}), jt.J, (e, {
+				}), jt.K, (e, {
 					match: t
-				}) => Object(jt.e)(e, u.Wb + t.params.profileName), (e, t, s, r, o, n, i, {
+				}) => Object(jt.e)(e, u.Wb + t.params.profileName), (e, {
+					match: t
+				}) => {
+					const {
+						profileName: s
+					} = t.params;
+					return Object(se.q)(e, {
+						profileName: s
+					})
+				}, (e, t, s, r, o, n, i, {
 					sort: a,
 					t: d
-				}, c, l, p) => {
-					const h = r === ue.g.Compact ? u.lb : u.mb,
-						b = Object(m.a)(o, h, a, s),
+				}, c, l, p, h) => {
+					const b = r === ue.g.Compact ? u.lb : u.mb,
+						f = Object(m.a)(o, b, a, s),
 						{
-							sort: f
+							sort: g
 						} = s;
 					return {
 						contentGateInfo: p,
@@ -2972,14 +2978,15 @@
 						isOwnProfile: e,
 						isProfileNSFW: !!i && i.isNSFW,
 						layout: r,
-						listingKey: b,
+						listingKey: f,
+						pageTitle: h,
 						profileName: o,
-						shouldShowPinnedPostsSection: c && !f,
+						shouldShowPinnedPostsSection: c && !g,
 						sort: a,
 						timeSort: d
 					}
 				}),
-				Yt = Object(a.b)($t, (e, t) => ({
+				es = Object(a.b)(Yt, (e, t) => ({
 					onLoadMoreChronoItems: () => e((() => async (e, t, {
 						apiContext: s
 					}) => {
@@ -3049,7 +3056,7 @@
 						queryParams: o()([...Object(c.a)(t.location.search)])
 					}))
 				}));
-			class es extends i.a.Component {
+			class ts extends i.a.Component {
 				constructor() {
 					super(...arguments), this.renderNoPosts = () => i.a.createElement(k.c, {
 						profileName: this.props.profileName,
@@ -3060,6 +3067,14 @@
 					this.props.layout !== e.layout && e.onLayoutChange()
 				}
 				render() {
+					const {
+						pageTitle: e
+					} = this.props;
+					return i.a.createElement(i.a.Fragment, null, i.a.createElement(Gt.a, {
+						title: e
+					}), this.renderContent())
+				}
+				renderContent() {
 					const {
 						contentGateInfo: e,
 						layout: t,
@@ -3076,20 +3091,20 @@
 					} = this.props;
 					if (!d) return null;
 					if (e && e.profileDeleted) return i.a.createElement(L.default, {
-						contentGateType: zt.a.ProfileDeleted,
+						contentGateType: Jt.a.ProfileDeleted,
 						profileName: c
 					});
 					if (e && e.profileSuspended) return i.a.createElement(L.default, {
-						contentGateType: zt.a.ProfileSuspended,
+						contentGateType: Jt.a.ProfileSuspended,
 						profileName: c
 					});
 					if (451 === d.status || e && e.profileBlockedForLegalReason) return i.a.createElement(L.default, {
-						contentGateType: zt.a.ProfileBlockedForLegalReason,
+						contentGateType: Jt.a.ProfileBlockedForLegalReason,
 						profileName: c
 					});
-					if (403 === d.status) return i.a.createElement(Jt.a, null);
+					if (403 === d.status) return i.a.createElement(Xt.a, null);
 					if (404 === d.status) return i.a.createElement(L.default, {
-						contentGateType: zt.a.ProfileDoesNotExist,
+						contentGateType: Jt.a.ProfileDoesNotExist,
 						profileName: c
 					});
 					if (!c) return null;
@@ -3101,13 +3116,13 @@
 						};
 					if (!s && o && !r) return i.a.createElement(L.default, {
 						subredditName: c,
-						contentGateType: zt.a.Nsfw
+						contentGateType: Jt.a.Nsfw
 					});
 					const x = {
 							inSubredditOrProfile: !Object(l.a)(c),
 							listingKey: n,
 							listingName: b,
-							listingViewed: (e, t) => Object(Gt.q)(n, m, t, e, h),
+							listingViewed: (e, t) => Object(qt.q)(n, m, t, e, h),
 							noPostsComponent: this.renderNoPosts,
 							onTryAgain: a
 						},
@@ -3118,28 +3133,28 @@
 							timeSort: h
 						};
 					let P;
-					return P = t === ue.g.Compact ? i.a.createElement(D, Xt({}, x, {
+					return P = t === ue.g.Compact ? i.a.createElement(D, Qt({}, x, {
 						onLoadMore: this.props.onLoadMoreChronoItems,
 						onTryAgain: a
 					})) : i.a.createElement(i.a.Fragment, null, p && i.a.createElement(Ht, {
 						profileName: c
-					}), i.a.createElement(N.a, y), i.a.createElement(Me, Xt({}, x, {
+					}), i.a.createElement(N.a, y), i.a.createElement(Me, Qt({}, x, {
 						excludePinnedPosts: p,
 						onLoadMore: this.props.onLoadMoreConversationsItems
-					}))), i.a.createElement(qt.a, {
+					}))), i.a.createElement(zt.a, {
 						className: this.props.className,
 						fitPageToContent: !0,
 						contentNavBar: i.a.createElement(i.a.Fragment, null, i.a.createElement(_e.a, {
 							profileName: c
 						})),
 						content: i.a.createElement(i.a.Fragment, null, i.a.createElement(T.a, null), P),
-						sidebar: i.a.createElement(Ut.a, Xt({}, g, {
+						sidebar: i.a.createElement(Ut.a, Qt({}, g, {
 							profileName: c
 						}))
 					})
 				}
 			}
-			t.default = Zt(Yt(es))
+			t.default = $t(es(ts))
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
 			"use strict";
@@ -3254,7 +3269,7 @@
 				x = e => e.focusedVerticals.category,
 				y = e => e.focusedVerticals.lastLoadedEnv,
 				P = e => {
-					const t = Object(i.I)(e),
+					const t = Object(i.J)(e),
 						s = r.d.geoSubredditRecommendationDULoggedIn(e),
 						o = r.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && s || !t && o
@@ -3366,4 +3381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.a4298ae54c8289eeb456.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4a303f73465ed42e8042.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.f75f9552495a54cfc834.js
-// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.f1d7c02afceb6701b093.js
+// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -136,8 +136,8 @@
 				A = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				B = n("./src/reddit/controls/TextButton/index.tsx"),
 				K = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				G = n("./src/reddit/models/Gold/Premium/index.ts"),
-				F = n("./src/reddit/selectors/user.ts");
+				F = n("./src/reddit/models/Gold/Premium/index.ts"),
+				G = n("./src/reddit/selectors/user.ts");
 
 			function U() {
 				return (U = Object.assign || function(e) {
@@ -150,8 +150,8 @@
 			}
 			const W = 10,
 				X = Object(c.c)({
-					coinBalance: F.d,
-					isEmployee: F.G,
+					coinBalance: G.d,
+					isEmployee: G.H,
 					isPending: y.b,
 					recipientName: y.d
 				}),
@@ -182,7 +182,7 @@
 						isAnonymous: !0,
 						message: "",
 						messageTypeEventSent: !1,
-						selectedPackage: G.a.PREMIUM_1_MONTH
+						selectedPackage: F.a.PREMIUM_1_MONTH
 					}, this.handleEscapeKey = e => {
 						const {
 							closeModal: t
@@ -260,8 +260,8 @@
 						coinBalance: e,
 						isEmployee: t
 					} = this.props;
-					return Object(G.e)(e, t).map(e => ({
-						displayText: Object(G.f)(e),
+					return Object(F.e)(e, t).map(e => ({
+						displayText: Object(F.f)(e),
 						value: e
 					}))
 				}
@@ -276,7 +276,7 @@
 						isAnonymous: c,
 						message: i,
 						selectedPackage: d
-					} = this.state, u = Object(G.f)(d), p = a ? [l.a.messageInputOpen] : "";
+					} = this.state, u = Object(F.f)(d), p = a ? [l.a.messageInputOpen] : "";
 					return r.a.createElement(P.d, {
 						className: e
 					}, r.a.createElement(P.h, null, r.a.createElement(K.a, null, r.a.createElement(P.p, null, s.fbt._("Give Premium", null, {
@@ -869,4 +869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f75f9552495a54cfc834.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f1d7c02afceb6701b093.js.map

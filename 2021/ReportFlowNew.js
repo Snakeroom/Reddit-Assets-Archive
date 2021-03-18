@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.4b5ce9569833d153d77d.js
-// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.3fe0129c939f1062193d.js
+// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -128,7 +128,7 @@
 			})), o.d(t, "a", (function() {
 				return w
 			})), o.d(t, "g", (function() {
-				return j
+				return g
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./src/lib/makeActionCreator/index.ts"),
@@ -175,11 +175,11 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), g = Object(s.a)(w), j = e => async (t, o, {
+				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), j = Object(s.a)(w), g = e => async (t, o, {
 					apiContext: s
 				}) => {
 					const l = o(),
-						p = Object(a.i)(l),
+						p = Object(a.j)(l),
 						u = p ? p.id : void 0,
 						m = l.user.blocked.data.filter(t => t.name === e)[0];
 					u && (t(C({
@@ -196,7 +196,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(g({
+					})), t(j({
 						name: e
 					}))))
 				}
@@ -286,8 +286,8 @@
 				...C,
 				variables: t
 			});
-			var g = o("./src/graphql/operations/ReportForm.json");
-			var j = o("./src/reddit/contexts/ApiContext.tsx"),
+			var j = o("./src/graphql/operations/ReportForm.json");
+			var g = o("./src/reddit/contexts/ApiContext.tsx"),
 				k = o("./src/reddit/models/Post/index.ts"),
 				x = o("./src/reddit/models/Toast/index.ts"),
 				y = o("./src/reddit/models/WhitelistAndBlocked.ts"),
@@ -334,7 +334,7 @@
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: I.V
+					isNightmodeOn: I.W
 				}),
 				P = Object(a.b)(N, (e, {
 					timestamp: t
@@ -359,7 +359,7 @@
 						formVersion: o,
 						hostAppName: r
 					}) => Object(O.a)(e, {
-						...g,
+						...j,
 						variables: {
 							itemId: t,
 							hostAppName: r,
@@ -530,7 +530,7 @@
 					}))
 				}
 			}
-			t.default = Object(j.b)(P(T))
+			t.default = Object(g.b)(P(T))
 		},
 		"./src/reddit/components/ReportFlow/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -662,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.4b5ce9569833d153d77d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.3fe0129c939f1062193d.js.map

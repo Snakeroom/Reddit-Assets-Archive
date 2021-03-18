@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.42567767723250d4c826.js
-// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.749f0cad7b63a1e93d4e.js
+// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -574,7 +574,7 @@
 				apiContext: n
 			}) => {
 				const m = r();
-				if (Object(l.J)(m))
+				if (Object(l.K)(m))
 					if (Object(c.f)(m)) await Object(o.g)(n(), e, t);
 					else {
 						await Object(a.d)(e);
@@ -1694,7 +1694,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, r = Object(a.e)(e => Object(B.mb)(e, {
+				} = e, r = Object(a.e)(e => Object(B.nb)(e, {
 					userName: s
 				})), i = ke(r), c = i && Object(E.a)(r.accountIcon);
 				return n.a.createElement("div", {
@@ -1725,9 +1725,9 @@
 			}, n.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), ke = e => {
-				const t = Object(a.e)(B.i),
-					s = Object(a.e)(B.B),
-					r = Object(a.e)(B.cb);
+				const t = Object(a.e)(B.j),
+					s = Object(a.e)(B.C),
+					r = Object(a.e)(B.db);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!r && !s))))
 			}
 		},
@@ -2664,4 +2664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.42567767723250d4c826.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.749f0cad7b63a1e93d4e.js.map

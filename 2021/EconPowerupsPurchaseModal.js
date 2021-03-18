@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.47550b0a74dacad89039.js
-// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6e359f70c7b1c0bb9683.js
+// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -744,8 +744,8 @@
 				_ = r.n(v),
 				C = r("./src/graphql/operations/CancelEconRecurringPayment.json"),
 				P = r("./src/graphql/operations/ConfirmPaypalPayment.json"),
-				x = r("./src/graphql/operations/CreateEconOrder.json"),
-				j = r("./src/graphql/operations/CreatePaypalPayment.json"),
+				j = r("./src/graphql/operations/CreateEconOrder.json"),
+				x = r("./src/graphql/operations/CreatePaypalPayment.json"),
 				O = r("./src/graphql/operations/CreateStripePaymentWithProvidedCard.json"),
 				k = r("./src/graphql/operations/CreateStripePaymentWithProvidedNonAuthCard.json"),
 				S = r("./src/graphql/operations/CreateStripePaymentWithSavedCard.json"),
@@ -763,7 +763,7 @@
 						l = await ((e, t, r, n, o) => {
 							const a = new _.a(r.pricePackages[0].price).multipliedBy(n).toFixed();
 							return Object(T.a)(e, {
-								...x,
+								...j,
 								variables: {
 									input: {
 										nonce: t,
@@ -839,7 +839,7 @@
 							const e = n.body.data.createEconPayment;
 							if (e && e.errors && e.errors.length) return void s(Object(y.stripeApiError)(R(e.errors)));
 							if (e.ok && "PAID" !== e.payment.status) return void u();
-							const t = Object(g.i)(i());
+							const t = Object(g.j)(i());
 							t && s(J({
 								subredditId: r,
 								powerupsCount: a,
@@ -879,7 +879,7 @@
 							}),
 							p = c()(),
 							m = await ((e, t, r, n, o) => Object(T.a)(e, {
-								...j,
+								...x,
 								variables: {
 									nonce: t,
 									orderId: r,
@@ -890,7 +890,7 @@
 						if (m && m.ok) {
 							const e = m.body.data.createEconPayment;
 							if (e && e.errors && e.errors.length) return o(Object(y.paypalApiError)(R(e.errors))), null;
-							const s = Object(g.i)(a());
+							const s = Object(g.j)(a());
 							if (e.ok) {
 								const {
 									status: a
@@ -979,7 +979,7 @@
 					} catch (o) {
 						m.c.captureException(o)
 					}
-				}, V = Object(p.a)(h.N), U = Object(p.a)(h.O), z = Object(p.a)(h.P), W = e => async (t, r) => {
+				}, V = Object(p.a)(h.N), U = Object(p.a)(h.O), W = Object(p.a)(h.P), z = e => async (t, r) => {
 					await t(V(e)), t(Object(d.f)({
 						kind: f.b.Error,
 						duration: d.a,
@@ -1004,16 +1004,16 @@
 								{
 									errors: n
 								} = e.data.cancelEconRecurringPayment;
-							if (n && n.length) return void o(W(n[0].message));
-							o(z({
+							if (n && n.length) return void o(z(n[0].message));
+							o(W({
 								subredditId: t,
 								allocatedAt: r
 							}))
-						} else o(W(n.fbt._("Something went wrong", null, {
+						} else o(z(n.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					} catch (c) {
-						m.c.captureException(c), o(W(n.fbt._("Something went wrong", null, {
+						m.c.captureException(c), o(z(n.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					}
@@ -1068,7 +1068,7 @@
 			})), r.d(t, "savedCardsSuccess", (function() {
 				return P
 			})), r.d(t, "loadSavedCards", (function() {
-				return x
+				return j
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/sentry/index.ts"),
@@ -1114,7 +1114,7 @@
 					} catch (a) {
 						o.c.captureException(a)
 					}
-				}, C = Object(a.a)(c.y), P = Object(a.a)(c.z), x = () => async (e, t, {
+				}, C = Object(a.a)(c.y), P = Object(a.a)(c.z), j = () => async (e, t, {
 					apiContext: r
 				}) => {
 					e(C());
@@ -1424,8 +1424,8 @@
 				_ = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				C = r("./src/reddit/selectors/gold/powerups.ts"),
 				P = r("./src/reddit/selectors/gold/productOffers.ts"),
-				x = r("./src/reddit/selectors/goldPurchaseModals.ts"),
-				j = r("./src/reddit/selectors/user.ts"),
+				j = r("./src/reddit/selectors/goldPurchaseModals.ts"),
+				x = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
 				k = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				S = r("./src/reddit/components/StripePaymentForm/index.tsx"),
@@ -1436,7 +1436,7 @@
 			const {
 				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), L = Object(s.c)({
-				currentUser: j.i,
+				currentUser: x.j,
 				isAnonymous: C.c,
 				powerupsCount: C.d,
 				productOffer: P.a
@@ -1499,8 +1499,8 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = Object(s.c)({
 				isAnonymous: C.c,
 				isPending: C.b
-			}), U = Object(a.b)(V), z = 12;
-			var W = U((function(e) {
+			}), U = Object(a.b)(V), W = 12;
+			var z = U((function(e) {
 					const {
 						className: t,
 						isAnonymous: r,
@@ -1515,7 +1515,7 @@
 						disabled: n
 					}, n ? o.a.createElement(A.a, {
 						className: B.a.loadingIcon,
-						sizePx: z
+						sizePx: W
 					}) : D._("Apply Your Free Powerup", null, {
 						hk: "fwfCU"
 					}))
@@ -1631,8 +1631,8 @@
 				isAnonymous: C.c,
 				powerupsCount: C.d,
 				productOffer: P.a,
-				savedCardsPending: x.v,
-				stripeTokenPending: x.m
+				savedCardsPending: j.v,
+				stripeTokenPending: j.m
 			}), ce = Object(a.b)(se);
 			var ie = Object(h.injectStripe)(ce((function(e) {
 					const {
@@ -1661,8 +1661,8 @@
 				fbt: ue
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), pe = 100, me = Object(s.c)({
 				isAnonymous: C.c,
-				isNightmode: j.V,
-				paypalErrorMessage: x.d,
+				isNightmode: x.W,
+				paypalErrorMessage: j.d,
 				powerups: C.i,
 				powerupsCount: C.d,
 				productOffer: (e, {
@@ -1674,7 +1674,7 @@
 					});
 					return r && r[0]
 				},
-				stripeErrorMessage: x.j,
+				stripeErrorMessage: j.j,
 				userPowerupsData: C.s
 			});
 			var fe = Object(a.b)(me)((function(e) {
@@ -1693,13 +1693,13 @@
 					Object(n.useEffect)(() => {
 						_(Object(w.d)()), _(Object(v.selectPaymentMethod)(C))
 					}, []);
-					const x = Object(y.a)();
+					const j = Object(y.a)();
 					Object(n.useEffect)(() => {
-						x(Object(g.d)())
+						j(Object(g.d)())
 					}, []);
-					const j = d && d.pricePackages.length ? d.pricePackages[0].price : 0;
-					if (!j || !i) return s(), null;
-					const T = (l * j / 100).toFixed(2),
+					const x = d && d.pricePackages.length ? d.pricePackages[0].price : 0;
+					if (!x || !i) return s(), null;
+					const T = (l * x / 100).toFixed(2),
 						I = !!(null == m ? void 0 : m.freeCount);
 					return o.a.createElement(h.StripeProvider, {
 						apiKey: f.a.stripe.apiKey
@@ -1758,7 +1758,7 @@
 						className: de.a.premiumIcon
 					})), o.a.createElement("span", null, ue._("Premium gives you one free Powerup", null, {
 						hk: "1Rlk9N"
-					}))), o.a.createElement(W, {
+					}))), o.a.createElement(z, {
 						className: de.a.button,
 						subredditId: p
 					})), o.a.createElement("p", {
@@ -2088,12 +2088,12 @@
 				_ = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				C = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				P = r("./src/reddit/selectors/goldPurchaseModals.ts");
-			const x = Object(s.c)({
+			const j = Object(s.c)({
 					rememberCard: P.u,
 					savedCard: e => Object(P.w)(e)[0],
 					stripeInfoLoading: P.v
 				}),
-				j = Object(a.b)(x, (e, t) => ({
+				x = Object(a.b)(j, (e, t) => ({
 					onClickDeleteCard: r => t.shouldDeleteCardWithGql ? e(Object(v.c)(r)) : e(Object(_.deleteSavedCard)(r)),
 					onToggleRememberCard: () => e(Object(_.toggleRememberCard)())
 				}));
@@ -2123,7 +2123,7 @@
 					}))
 				}
 			}
-			t.a = j(O)
+			t.a = x(O)
 		},
 		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2440,4 +2440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.47550b0a74dacad89039.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6e359f70c7b1c0bb9683.js.map

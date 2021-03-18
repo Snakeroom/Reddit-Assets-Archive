@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.f0df987a57fe89123dd2.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.7a62e60d40cf8d1644ad.js
+// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip"], {
 		"./src/reddit/components/InboxTooltip/index.tsx": function(e, t, i) {
@@ -18,11 +18,11 @@
 				g = i("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				u = i("./src/reddit/selectors/notificationsInbox.tsx");
 			const x = Object(n.c)({
-					inboxBadgeCount: f.g,
+					inboxBadgeCount: f.h,
 					isInboxMarkAllAsReadEnabled: g.b,
 					isInboxPostEmbedEnabled: g.c,
 					isPending: u.e,
-					messagesBadgeCount: f.h,
+					messagesBadgeCount: f.i,
 					notifications: u.g
 				}),
 				p = Object(a.b)(x, e => ({
@@ -88,4 +88,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.f0df987a57fe89123dd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.7a62e60d40cf8d1644ad.js.map
