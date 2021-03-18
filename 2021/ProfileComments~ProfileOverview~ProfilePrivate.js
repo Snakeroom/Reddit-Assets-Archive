@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.444d04cc3e215549a95c.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.16de007ac1a41070df92.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -496,7 +496,7 @@
 					}) => Object(G.a)(e) === Se(t.id),
 					isPendingDeletion: (e, {
 						comment: t
-					}) => Object(J.z)(e, {
+					}) => Object(J.A)(e, {
 						commentId: t.postId
 					}),
 					isLoggedIn: ee.J,
@@ -1050,7 +1050,7 @@
 						return s && s.coinPrice >= d.g
 					})
 				},
-				isNightmodeOn: f.U
+				isNightmodeOn: f.V
 			}), e => ({
 				openPost: t => e(Object(m.E)(t))
 			}));
@@ -2224,7 +2224,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const s = Object(p.lb)(e, {
+					const s = Object(p.mb)(e, {
 							userName: t
 						}),
 						n = Object(m.e)(e);
@@ -2423,7 +2423,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(h.lb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(h.mb)(e, {
 					userName: t.name
 				}) : null
 			}), k = Object(r.b)(P, e => ({
@@ -2705,4 +2705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.444d04cc3e215549a95c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.16de007ac1a41070df92.js.map

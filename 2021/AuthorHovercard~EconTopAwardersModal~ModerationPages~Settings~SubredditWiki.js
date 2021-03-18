@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.4a5258f393a7d1d3a4b8.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.890ae4dfbb7289593b97.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -373,7 +373,7 @@
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(w.lb)(s, {
+						const n = Object(w.mb)(s, {
 							userName: t
 						});
 						if (!n) return;
@@ -560,7 +560,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(x.lb)(e, {
+				user: (e, t) => Object(x.mb)(e, {
 					userName: t.username
 				})
 			});
@@ -877,7 +877,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: x.lb,
+					user: x.mb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(h.c)(e, {
@@ -2265,4 +2265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.4a5258f393a7d1d3a4b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.890ae4dfbb7289593b97.js.map

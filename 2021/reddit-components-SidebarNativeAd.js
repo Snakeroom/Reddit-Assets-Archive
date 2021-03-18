@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ea0d01ed076f2991420d.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.69e0d35571d11c942d81.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -2282,7 +2282,7 @@
 					}) => Object(p.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: L.ab
+					shouldOpenPostInNewTab: L.bb
 				}),
 				H = e => {
 					const {
@@ -3335,20 +3335,6 @@
 				return Object(s.b)(t)
 			}
 		},
-		"./src/reddit/hooks/useIntersectionObserver.ts": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js");
-			t.a = function(e, t, r) {
-				Object(n.useEffect)(() => {
-					const n = e && e.current;
-					if (!n || "undefined" == typeof IntersectionObserver) return;
-					const o = new IntersectionObserver(t, r);
-					return o.observe(n), () => {
-						o.unobserve(n)
-					}
-				}, [e, t, r])
-			}
-		},
 		"./src/reddit/hooks/usePrevious.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -4180,7 +4166,7 @@
 					minSize: t,
 					userName: r
 				}) => {
-					const n = Object(a.lb)(e, {
+					const n = Object(a.mb)(e, {
 						userName: r
 					});
 					if (n && n.awardedLastMonth && n.awardedLastMonth.topAward) return m(e, {
@@ -4370,4 +4356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ea0d01ed076f2991420d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.69e0d35571d11c942d81.js.map

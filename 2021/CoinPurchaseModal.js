@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.be2fd8acc073c4bf494e.js
-// Retrieved at 3/16/2021, 12:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.baa8ea7ac95ec34953cb.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -804,7 +804,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const U = Object(c.c)({
+			const F = Object(c.c)({
 					activePage: P.p,
 					allowNavigationCallback: e => {
 						const t = Object(x.a)(e);
@@ -816,7 +816,7 @@
 					dealCoinPackages: C.f,
 					gildThingId: P.r,
 					isIframed: f.g,
-					nightmode: _.U,
+					nightmode: _.V,
 					savedCardsPending: P.v,
 					selectedAward: w.b,
 					selectedPayment: P.c,
@@ -832,7 +832,7 @@
 						return `u/${Object(y.e)(t)}`
 					}
 				}),
-				F = Object(o.b)(U, (e, t) => ({
+				L = Object(o.b)(F, (e, t) => ({
 					closeModal: () => {
 						e(Object(l.a)()), e(Object(i.a)())
 					},
@@ -855,7 +855,7 @@
 					...r,
 					onCompletePurchaseClick: (r, a) => t.dispatchCompletePurchase(r, a, !!e.gildThingId, e.isIframed)
 				}));
-			class L extends n.a.Component {
+			class R extends n.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						const {
@@ -946,8 +946,8 @@
 					}))
 				}
 			}
-			const R = Object(s.a)(L);
-			t.default = F(Object(g.c)(class extends n.a.PureComponent {
+			const U = Object(s.a)(R);
+			t.default = L(Object(g.c)(class extends n.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -968,7 +968,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return n.a.createElement(R, N({}, this.props, {
+					return n.a.createElement(U, N({}, this.props, {
 						className: A.a.coinPurchaseModal,
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1151,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.be2fd8acc073c4bf494e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.baa8ea7ac95ec34953cb.js.map

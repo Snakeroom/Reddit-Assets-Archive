@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.996e3cff7736b7347ff5.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.451e86a1404a03d1b193.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -1560,7 +1560,7 @@
 								experimentName: o.w,
 								expEventOverride: e
 							});
-							return !!(Object(o.Bd)(n) ? void 0 : n)
+							return !!(Object(o.Dd)(n) ? void 0 : n)
 						})(n)) || (t => !1 !== t.collapsed)(e)
 					})
 				}
@@ -2926,77 +2926,79 @@
 		"./src/reddit/selectors/comments.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "c", (function() {
-				return p
-			})), n.d(e, "d", (function() {
 				return E
-			})), n.d(e, "u", (function() {
+			})), n.d(e, "d", (function() {
 				return S
-			})), n.d(e, "w", (function() {
+			})), n.d(e, "u", (function() {
 				return O
-			})), n.d(e, "x", (function() {
+			})), n.d(e, "w", (function() {
 				return I
+			})), n.d(e, "x", (function() {
+				return T
 			})), n.d(e, "k", (function() {
-				return C
-			})), n.d(e, "g", (function() {
 				return y
-			})), n.d(e, "F", (function() {
+			})), n.d(e, "g", (function() {
 				return j
-			})), n.d(e, "n", (function() {
+			})), n.d(e, "G", (function() {
 				return D
-			})), n.d(e, "o", (function() {
+			})), n.d(e, "n", (function() {
 				return h
-			})), n.d(e, "j", (function() {
+			})), n.d(e, "o", (function() {
 				return L
-			})), n.d(e, "l", (function() {
+			})), n.d(e, "j", (function() {
 				return A
-			})), n.d(e, "h", (function() {
+			})), n.d(e, "l", (function() {
 				return R
-			})), n.d(e, "a", (function() {
+			})), n.d(e, "h", (function() {
 				return g
-			})), n.d(e, "b", (function() {
+			})), n.d(e, "a", (function() {
 				return U
-			})), n.d(e, "q", (function() {
+			})), n.d(e, "b", (function() {
 				return P
-			})), n.d(e, "m", (function() {
+			})), n.d(e, "q", (function() {
 				return N
-			})), n.d(e, "t", (function() {
+			})), n.d(e, "m", (function() {
 				return k
-			})), n.d(e, "y", (function() {
+			})), n.d(e, "t", (function() {
 				return F
-			})), n.d(e, "H", (function() {
+			})), n.d(e, "z", (function() {
 				return v
-			})), n.d(e, "s", (function() {
+			})), n.d(e, "I", (function() {
 				return M
-			})), n.d(e, "A", (function() {
+			})), n.d(e, "s", (function() {
 				return x
 			})), n.d(e, "B", (function() {
 				return w
-			})), n.d(e, "D", (function() {
-				return G
-			})), n.d(e, "r", (function() {
-				return B
-			})), n.d(e, "e", (function() {
-				return Y
-			})), n.d(e, "v", (function() {
-				return K
-			})), n.d(e, "I", (function() {
-				return q
-			})), n.d(e, "f", (function() {
-				return H
-			})), n.d(e, "i", (function() {
-				return W
-			})), n.d(e, "E", (function() {
-				return V
-			})), n.d(e, "z", (function() {
-				return $
-			})), n.d(e, "G", (function() {
-				return z
-			})), n.d(e, "p", (function() {
-				return Q
-			})), n.d(e, "J", (function() {
-				return X
 			})), n.d(e, "C", (function() {
+				return G
+			})), n.d(e, "E", (function() {
+				return B
+			})), n.d(e, "r", (function() {
+				return Y
+			})), n.d(e, "e", (function() {
+				return K
+			})), n.d(e, "v", (function() {
+				return q
+			})), n.d(e, "J", (function() {
+				return H
+			})), n.d(e, "f", (function() {
+				return W
+			})), n.d(e, "i", (function() {
+				return V
+			})), n.d(e, "F", (function() {
+				return $
+			})), n.d(e, "A", (function() {
+				return z
+			})), n.d(e, "H", (function() {
+				return Q
+			})), n.d(e, "p", (function() {
+				return X
+			})), n.d(e, "K", (function() {
 				return J
+			})), n.d(e, "D", (function() {
+				return Z
+			})), n.d(e, "y", (function() {
+				return tt
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/lodash/values.js"),
@@ -3008,39 +3010,40 @@
 				a = n("./src/reddit/models/Post/index.ts"),
 				u = n("./src/reddit/selectors/posts.ts"),
 				l = n("./src/reddit/selectors/subreddit.ts"),
-				m = n("./src/reddit/selectors/commentSelector.ts"),
-				b = n("./src/lib/initializeClient/installReducer.ts"),
-				f = n("./src/reddit/reducers/features/comments/index.ts"),
-				_ = n("./src/reddit/reducers/pages/comments/index.ts");
-			Object(b.a)({
+				m = n("./src/reddit/selectors/user.ts"),
+				b = n("./src/reddit/selectors/commentSelector.ts"),
+				f = n("./src/lib/initializeClient/installReducer.ts"),
+				_ = n("./src/reddit/reducers/features/comments/index.ts"),
+				p = n("./src/reddit/reducers/pages/comments/index.ts");
+			Object(f.a)({
 				features: {
-					comments: f.a
+					comments: _.a
 				},
 				pages: {
-					comments: _.a
+					comments: p.a
 				}
 			});
-			const p = (t, {
+			const E = (t, {
 					commentsPageKey: e
 				}) => t.pages.comments.api.error[e],
-				E = (t, {
-					commentsPageKey: e
-				}) => t.pages.comments.api.pending[e],
 				S = (t, {
 					commentsPageKey: e
+				}) => t.pages.comments.api.pending[e],
+				O = (t, {
+					commentsPageKey: e
 				}) => t.pages.comments.api.fullyLoaded[e],
-				O = (t, e) => t.pages.comments.keyToHeadCommentId[e.commentsPageKey],
-				I = (t, e) => {
-					const n = O(t, e);
-					if (n) return Object(m.a)(t, {
+				I = (t, e) => t.pages.comments.keyToHeadCommentId[e.commentsPageKey],
+				T = (t, e) => {
+					const n = I(t, e);
+					if (n) return Object(b.a)(t, {
 						commentId: n
 					})
 				},
-				T = [],
-				C = Object(c.a)((t, e) => {
-					const n = I(t, e),
+				C = [],
+				y = Object(c.a)((t, e) => {
+					const n = T(t, e),
 						s = n && n.id;
-					if (!s) return T;
+					if (!s) return C;
 					const {
 						commentsPageKey: r
 					} = e, o = t.pages.comments.keyToCommentThreadLinkSets[r], i = [];
@@ -3053,14 +3056,14 @@
 					} while (c);
 					return i
 				}),
-				y = (t, e) => O(t, e) ? t.pages.comments.keyToChatCommentLinks[e.commentsPageKey] : [],
-				j = (t, {
+				j = (t, e) => I(t, e) ? t.pages.comments.keyToChatCommentLinks[e.commentsPageKey] : [],
+				D = (t, {
 					commentsPageKey: e
 				}) => {
 					const n = t.pages.comments.keyToPostId[e];
 					return n ? t.posts.models[n] : null
 				},
-				D = (t, {
+				h = (t, {
 					commentId: e,
 					commentLink: n,
 					commentsPageKey: s
@@ -3068,14 +3071,14 @@
 					const r = t.pages.comments.keyToCommentThreadLinkSets[s];
 					return r ? n ? r[n.id] : e ? r[e] : null : null
 				},
-				h = (t, {
+				L = (t, {
 					commentsPageKey: e
 				}) => t.pages.comments.keyToCommentThreadLinkSets[e],
-				L = (t, e) => {
-					const n = e.commentsPageKey ? D(t, e) : null;
+				A = (t, e) => {
+					const n = e.commentsPageKey ? h(t, e) : null;
 					return n ? n.depth : null
 				},
-				A = (t, {
+				R = (t, {
 					commentLink: e
 				}) => {
 					const {
@@ -3093,7 +3096,7 @@
 							return null
 					}
 				},
-				R = (t, e) => {
+				g = (t, e) => {
 					if (t.platform.currentPage && t.platform.currentPage.urlParams && t.platform.currentPage.urlParams.partialPostId) {
 						const {
 							partialPostId: e
@@ -3102,39 +3105,39 @@
 					}
 					return []
 				},
-				g = (t, {
+				U = (t, {
 					commentsPageKey: e
 				}) => t.features.comments.collapsed[e],
-				U = t => t.moreComments.models,
-				P = t => t.features.comments.models,
-				N = (t, {
+				P = t => t.moreComments.models,
+				N = t => t.features.comments.models,
+				k = (t, {
 					commentId: e
 				}) => {
-					const n = Object(m.a)(t, {
+					const n = Object(b.a)(t, {
 						commentId: e
 					});
 					return n ? Object(i.a)(Object(u.C)(t, n), e) : ""
 				},
-				k = (t, {
+				F = (t, {
 					commentId: e
 				}) => !!(e && t.features.comments.focused && t.features.comments.focused[e]),
-				F = (t, {
-					commentId: e,
-					commentsPageKey: n
-				}) => !!(e && t.features.comments.isEditing[n] && t.features.comments.isEditing[n][e]),
 				v = (t, {
 					commentId: e,
 					commentsPageKey: n
-				}) => !!(e && t.features.comments.replyFormOpen[n] && t.features.comments.replyFormOpen[n][e]),
+				}) => !!(e && t.features.comments.isEditing[n] && t.features.comments.isEditing[n][e]),
 				M = (t, {
+					commentId: e,
+					commentsPageKey: n
+				}) => !!(e && t.features.comments.replyFormOpen[n] && t.features.comments.replyFormOpen[n][e]),
+				x = (t, {
 					commentsPageKey: e
 				}) => {
 					const n = e && t.features.comments.replyFormOpen[e] || {},
 						s = Object.keys(n).find(t => n[t]),
-						r = Object(m.a)(t, {
+						r = Object(b.a)(t, {
 							commentId: s
 						}),
-						o = r && L(t, {
+						o = r && A(t, {
 							commentId: r.id,
 							commentLink: void 0,
 							commentsPageKey: e
@@ -3144,13 +3147,13 @@
 						depth: o
 					}
 				},
-				x = (t, {
-					moreCommentsId: e
-				}) => t.moreComments.models[e],
 				w = (t, {
 					moreCommentsId: e
-				}) => !!t.moreComments.api.pending[e],
+				}) => t.moreComments.models[e],
 				G = (t, {
+					moreCommentsId: e
+				}) => !!t.moreComments.api.pending[e],
+				B = (t, {
 					commentsPageKey: e
 				}) => {
 					const n = t.pages.comments.keyToPostId[e];
@@ -3163,10 +3166,10 @@
 					}
 					return null
 				},
-				B = (t, {
+				Y = (t, {
 					id: e
 				}) => t.continueThreads.models[e],
-				Y = (t, {
+				K = (t, {
 					commentId: e
 				}) => {
 					const n = e ? t.features.comments.models[e] : void 0;
@@ -3174,44 +3177,53 @@
 					const s = t.authorFlair.models[n.subredditId];
 					return s ? s[n.author] : null
 				},
-				K = (t, {
+				q = (t, {
 					draftKey: e
 				}) => !!t.features.comments.submit.error[e],
-				q = (t, {
+				H = (t, {
 					draftKey: e
 				}) => {
 					const n = t.features.comments.submit.error[e];
 					return n && n.fields ? n.fields.map(t => t.msg) : []
 				},
-				H = (t, {
+				W = (t, {
 					draftKey: e
 				}) => {
 					const n = t.features.comments.drafts[e];
 					return !!n && n.autofocusDisabled
 				},
-				W = (t, {
+				V = (t, {
 					draftKey: e
 				}) => t.features.comments.drafts[e],
-				V = (t, {
+				$ = (t, {
 					commentId: e
 				}) => {
 					const n = e ? t.features.comments.submit.error[e] : void 0;
 					return n && n.fields ? n.fields.map(t => t.msg) : void 0
 				},
-				$ = (t, {
-					commentId: e
-				}) => !!e && t.features.comments.submit.pending[e],
 				z = (t, {
 					commentId: e
+				}) => !!e && t.features.comments.submit.pending[e],
+				Q = (t, {
+					commentId: e
 				}) => !!e && t.features.comments.models[e].sendReplies,
-				Q = t => t.features.comments.visitHighlightFilter,
-				X = (t, e) => {
-					const n = Object(m.a)(t, e);
+				X = t => t.features.comments.visitHighlightFilter,
+				J = (t, e) => {
+					const n = Object(b.a)(t, e);
 					if (n) return Object(l.Y)(t, n)
 				},
-				J = (t, {
+				Z = (t, {
 					postId: e
-				}) => t.features.comments.newCommentsCount[e] ? t.features.comments.newCommentsCount[e] : 0
+				}) => t.features.comments.newCommentsCount[e] ? t.features.comments.newCommentsCount[e] : 0,
+				tt = (t, {
+					commentId: e
+				}) => {
+					const n = Object(b.a)(t, {
+							commentId: e
+						}),
+						s = n && n.authorId || "";
+					return Object(m.R)(t, s)
+				}
 		},
 		"./src/reddit/selectors/inFeedChaining.ts": function(t, e, n) {
 			"use strict";
@@ -3318,4 +3330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.996e3cff7736b7347ff5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.451e86a1404a03d1b193.js.map

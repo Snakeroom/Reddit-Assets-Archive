@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.d21bd3e727fecb966a2d.js
-// Retrieved at 3/16/2021, 12:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.908209b31ebc76f2bde5.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -19,13 +19,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.oc
 				});
-				return Object(u.Bd)(t) ? void 0 : t
+				return Object(u.Dd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.pc
 				});
-				return Object(u.Bd)(t) ? void 0 : t
+				return Object(u.Dd)(t) ? void 0 : t
 			}, (e, t) => e === u.qc.Enabled && t === u.qc.Enabled);
 			var p = s("./src/config.ts");
 			var g = s("./src/reddit/selectors/user.ts");
@@ -1953,4 +1953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.d21bd3e727fecb966a2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.908209b31ebc76f2bde5.js.map

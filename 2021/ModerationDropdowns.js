@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.305576ba11ec4d239fbb.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.62fda9bb8cf98dde476d.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -510,7 +510,7 @@
 				F = () => void 0,
 				T = Object(a.c)({
 					crowdControlLevelEnabled: b.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => j.Fc.Enabled === Object(N.c)(e, {
+					postLevelCrowdControlEnabled: e => j.Gc.Enabled === Object(N.c)(e, {
 						experimentEligibilitySelector: D.K,
 						experimentName: j.wc
 					}),
@@ -1524,4 +1524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.305576ba11ec4d239fbb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.62fda9bb8cf98dde476d.js.map

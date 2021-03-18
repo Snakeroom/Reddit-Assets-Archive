@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.f1b047f5d5e59687c4ec.js
-// Retrieved at 3/16/2021, 12:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.0f5a26af85b318bd9f82.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -717,7 +717,7 @@
 					trendingSubredditIds: Ce.cb,
 					currentUser: $e.i,
 					frontpageLinks: tt.b,
-					isOver18: $e.bb,
+					isOver18: $e.cb,
 					isUISimplificationAllItemsVariant: et.b,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Xe(e) === Ge.p.RotateEven
@@ -1965,4 +1965,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.f1b047f5d5e59687c4ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.0f5a26af85b318bd9f82.js.map

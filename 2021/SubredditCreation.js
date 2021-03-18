@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.9f5d6ec113fab32ffaf0.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.ab52f98268182fe95ffc.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1245,7 +1245,7 @@
 				de = f.a.div("TickText", A.a),
 				pe = f.a.div("PreSubText", A.a),
 				ue = Object(r.c)({
-					isNightModeOn: L.U
+					isNightModeOn: L.V
 				}),
 				me = Object(o.b)(ue)(e => a.a.createElement(Y, {
 					last: e.last,
@@ -2751,7 +2751,7 @@
 					isCreatePending: $.k,
 					isEmailInviteExperimentEnabled: Z.a,
 					isEmployee: ee.G,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(ee.fb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(ee.gb)(e),
 					userIsSuspended: ee.O,
 					allTags: v.e,
 					existingTags: v.h,
@@ -3113,9 +3113,9 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: s.Gb
 				});
-				return !(!t || Object(s.Bd)(t))
+				return !(!t || Object(s.Dd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.9f5d6ec113fab32ffaf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ab52f98268182fe95ffc.js.map

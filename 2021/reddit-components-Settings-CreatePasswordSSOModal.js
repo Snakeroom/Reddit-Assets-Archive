@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.e17f05f1e0e4821e16ff.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.06f5a406aa57a2ff85b2.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, s, t) {
@@ -359,4 +359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.e17f05f1e0e4821e16ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.06f5a406aa57a2ff85b2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.8492e26328a6f78a041e.js
-// Retrieved at 3/16/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.24e2131fe898ab9f0432.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -2769,7 +2769,7 @@
 			const f = "create-community-button",
 				k = x.a.wrapped(c.c, "StyledTooltip", g.a),
 				v = Object(o.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.fb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.gb)(e),
 					userIsSuspended: b.O
 				});
 			t.a = Object(a.b)(v, (e, {
@@ -3491,7 +3491,7 @@
 				b = s.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				g = Object(r.b)(() => Object(a.c)({
-					isNightmodeOn: m.U
+					isNightmodeOn: m.V
 				}));
 			t.a = g(e => {
 				const t = {
@@ -3586,7 +3586,7 @@
 						style: t
 					}, e.children)
 				},
-				j = Object(a.b)(() => Object(d.a)(x.C, f.ab, (e, {
+				j = Object(a.b)(() => Object(d.a)(x.C, f.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(x.b)(e, s) : null, (e, t, s) => ({
@@ -5983,12 +5983,12 @@
 						rtJsonElementProps: r
 					});
 					switch (n) {
-						case h.id.SmIcon:
+						case h.kd.SmIcon:
 							return i.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: r
 							});
-						case h.id.SmIconHc:
+						case h.kd.SmIconHc:
 							return i.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -6871,7 +6871,7 @@
 				}, e.bottomButtonText)))),
 				P = Object(d.c)({
 					hideNSFWPref: w.B,
-					nightmode: w.U
+					nightmode: w.V
 				}),
 				T = Object(a.b)(P)(e => {
 					const t = Object(f.a)();
@@ -7060,10 +7060,10 @@
 						n = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						i = Object(x.U)(e);
+						i = Object(x.V)(e);
 					return n || i
 				},
-				nigtmode: x.U,
+				nigtmode: x.V,
 				subredditId: u.m,
 				topPostVariant: h.d
 			}));
@@ -10000,7 +10000,7 @@
 						match: t
 					}) => Object(W.e)(e, t.params.subredditName),
 					layout: v.O,
-					over18Pref: W.bb,
+					over18Pref: W.cb,
 					subreddit: (e, {
 						match: t
 					}) => Object(M.A)(e, {
@@ -10025,7 +10025,7 @@
 						contentGateInfo: t,
 						subreddit: s,
 						subredditName: n
-					} = this.props, r = !!s && s.isNSFW && !W.bb, a = Object(L.a)(t, r, n);
+					} = this.props, r = !!s && s.isNSFW && !W.cb, a = Object(L.a)(t, r, n);
 					if (a) return i.a.createElement(c.default, a);
 					const o = `/r/${n}/`;
 					return i.a.createElement(B.a, {
@@ -10092,12 +10092,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: n.dd
+						experimentName: n.fd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.id.SmIcon || t === n.id.SmIconHc
+					return t === n.kd.SmIcon || t === n.kd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -10252,4 +10252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8492e26328a6f78a041e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.24e2131fe898ab9f0432.js.map

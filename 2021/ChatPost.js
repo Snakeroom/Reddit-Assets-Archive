@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.7b11c07e6a7438070e91.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.f468f0bfbe6f7a7f8a7b.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2070,12 +2070,12 @@
 						})
 					},
 					comment: Ye.a,
-					errorMsgs: xt.E,
+					errorMsgs: xt.F,
 					flair: xt.e,
 					isActive: (e, {
 						commentId: t
 					}) => Boolean(e.shortcuts.activeCommentId && t === e.shortcuts.activeCommentId),
-					isEditing: xt.y,
+					isEditing: xt.z,
 					prediction: It.f,
 					subreddit: vt.q,
 					shouldRenderSystemMessages: _t
@@ -2488,7 +2488,7 @@
 					chatCommentLinks: xt.g,
 					isPending: xt.d,
 					liveCommentsWebsocket: Xt.B,
-					moreCommentsLink: xt.D
+					moreCommentsLink: xt.E
 				}),
 				oo = Object(d.b)(to, (e, t) => ({
 					onLiveCommentsSubscribe: (o, n, s) => e(Object(C.a)(o, n, s, t.subredditId)),
@@ -3281,4 +3281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.7b11c07e6a7438070e91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.f468f0bfbe6f7a7f8a7b.js.map

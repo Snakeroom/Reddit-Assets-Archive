@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotificationSettings.f89ccd2524dfd69f6391.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotificationSettings.d9be77385e5ac3f4b630.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -99,8 +99,8 @@
 				d = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
 			const c = Object(a.c)({
 					hasError: r.q,
-					rows: r.Y,
-					sections: r.Z
+					rows: r.Z,
+					sections: r.ab
 				}),
 				l = Object(n.b)(c, e => ({
 					fetchNotificationSettings: () => e(Object(i.a)(o.a.Push)),
@@ -124,4 +124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.f89ccd2524dfd69f6391.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.d9be77385e5ac3f4b630.js.map

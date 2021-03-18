@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.b8d3e066b203280c8374.js
-// Retrieved at 3/16/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.456fad114d0e99e5ac88.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1944,7 +1944,7 @@
 			const _ = "create-community-button",
 				x = g.a.wrapped(d.c, "StyledTooltip", f.a),
 				v = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.fb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.gb)(e),
 					userIsSuspended: h.O
 				});
 			t.a = Object(i.b)(v, (e, {
@@ -3184,7 +3184,7 @@
 				h = n.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.U
+					isNightmodeOn: m.V
 				}));
 			t.a = f(e => {
 				const t = {
@@ -3279,7 +3279,7 @@
 						style: t
 					}, e.children)
 				},
-				j = Object(i.b)(() => Object(c.a)(g.C, _.ab, (e, {
+				j = Object(i.b)(() => Object(c.a)(g.C, _.bb, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(g.b)(e, n) : null, (e, t, n) => ({
@@ -5302,12 +5302,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.id.SmIcon:
+						case b.kd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.id.SmIconHc:
+						case b.kd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5695,7 +5695,7 @@
 				}, e.bottomButtonText)))),
 				I = Object(c.c)({
 					hideNSFWPref: E.B,
-					nightmode: E.U
+					nightmode: E.V
 				}),
 				T = Object(i.b)(I)(e => {
 					const t = Object(_.a)();
@@ -7329,7 +7329,7 @@
 					listingKey: Je,
 					listingName: qe,
 					multireddit: B.d,
-					over18Prefs: H.bb,
+					over18Prefs: H.cb,
 					sort: We,
 					timeSort: Ke
 				});
@@ -7421,7 +7421,7 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: s.yb
 					});
-					return !(!t || Object(s.Bd)(t))
+					return !(!t || Object(s.Dd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -7557,12 +7557,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.dd
+						experimentName: s.fd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.id.SmIcon || t === s.id.SmIconHc
+					return t === s.kd.SmIcon || t === s.kd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7585,4 +7585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.b8d3e066b203280c8374.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.456fad114d0e99e5ac88.js.map

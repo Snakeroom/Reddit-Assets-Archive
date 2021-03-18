@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.55c40eaf2d777e4c7dfe.js
-// Retrieved at 3/16/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.cd2b6267328f0aeb4d98.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -788,7 +788,7 @@
 			const g = "create-community-button",
 				w = f.a.wrapped(c.c, "StyledTooltip", b.a),
 				k = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.fb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.gb)(e),
 					userIsSuspended: h.O
 				});
 			t.a = Object(o.b)(k, (e, {
@@ -2032,7 +2032,7 @@
 							return n && n.coinPrice >= c.g
 						})
 					},
-					isNightmodeOn: g.U
+					isNightmodeOn: g.V
 				}), e => ({
 					openPost: t => e(Object(h.E)(t))
 				}));
@@ -2356,4 +2356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.55c40eaf2d777e4c7dfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.cd2b6267328f0aeb4d98.js.map

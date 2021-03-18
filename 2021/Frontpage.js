@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.d07cf792303784fa6c09.js
-// Retrieved at 3/16/2021, 12:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f9c788f4fd55252f1e83.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1813,7 +1813,7 @@
 					trendingSubredditIds: Ne.cb,
 					currentUser: $e.i,
 					frontpageLinks: tt.b,
-					isOver18: $e.bb,
+					isOver18: $e.cb,
 					isUISimplificationAllItemsVariant: et.b,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ze(e) === Me.p.RotateEven
@@ -3546,7 +3546,7 @@
 				}, e.bottomButtonText)))),
 				P = Object(c.c)({
 					hideNSFWPref: O.B,
-					nightmode: O.U
+					nightmode: O.V
 				}),
 				w = Object(o.b)(P)(e => {
 					const t = Object(y.a)();
@@ -4915,7 +4915,7 @@
 			const l = Object(n.a)(c.a, (e, {
 					listingName: t
 				}) => {
-					const s = Object(a.tb)(e);
+					const s = Object(a.ub)(e);
 					if (!s) return !1;
 					let n;
 					if (-1 === [i.R, "r/popular"].indexOf(t)) {
@@ -5223,4 +5223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d07cf792303784fa6c09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f9c788f4fd55252f1e83.js.map

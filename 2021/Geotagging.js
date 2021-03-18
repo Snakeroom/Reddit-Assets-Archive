@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.718731f6fd716ca0ac77.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.e149b1127ff080452667.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -1133,10 +1133,10 @@
 						n = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						r = Object(f.U)(e);
+						r = Object(f.V)(e);
 					return n || r
 				},
-				nigtmode: f.U,
+				nigtmode: f.V,
 				subredditId: u.m,
 				topPostVariant: h.d
 			}));
@@ -1580,12 +1580,12 @@
 				fbt: K
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Y(e) {
+			function V(e) {
 				const t = Object(b.r)(Z) || [];
 				t.push(e), Object(b.jb)(Z, t)
 			}
 
-			function V(e) {
+			function Y(e) {
 				const {
 					subreddit: t,
 					onClose: s
@@ -1625,7 +1625,7 @@
 				}, t.prefixedName)), r.a.createElement("button", {
 					className: S.a.dismiss,
 					onClick: function() {
-						Y(t.id), E(R(t)), f(), s(t.id)
+						V(t.id), E(R(t)), f(), s(t.id)
 					}
 				}, r.a.createElement(Q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: S.a.questionContainer
@@ -1641,7 +1641,7 @@
 				}, "No"), r.a.createElement(_.i, {
 					className: S.a.verifyButton,
 					onClick: function() {
-						Y(t.id), E(D(t, t.geoPlace.id)), f(), s(t.id), y()
+						V(t.id), E(D(t, t.geoPlace.id)), f(), s(t.id), y()
 					}
 				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
@@ -1724,7 +1724,7 @@
 				}), r.a.createElement(a.a, {
 					isLoading: !0,
 					className: S.a.subredditGeotag
-				})) : i >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(O, null), s.map(e => r.a.createElement(V, {
+				})) : i >= s.length ? r.a.createElement(v, null) : r.a.createElement(r.a.Fragment, null, r.a.createElement(O, null), s.map(e => r.a.createElement(Y, {
 					key: e.id,
 					subreddit: e,
 					onClose: c
@@ -1760,4 +1760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.718731f6fd716ca0ac77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e149b1127ff080452667.js.map

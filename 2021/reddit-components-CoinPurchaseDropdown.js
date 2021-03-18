@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.f5cadc9de2ce9301d208.js
-// Retrieved at 3/16/2021, 12:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.bde4bb2bc5df63064cad.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown", "GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -1651,4 +1651,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.f5cadc9de2ce9301d208.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.bde4bb2bc5df63064cad.js.map

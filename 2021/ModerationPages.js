@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d6d217669cb573ae52d5.js
-// Retrieved at 3/16/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.79888aff832478f0e44d.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -7176,7 +7176,7 @@
 			const x = "create-community-button",
 				E = f.a.wrapped(l.c, "StyledTooltip", g.a),
 				v = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.fb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.gb)(e),
 					userIsSuspended: b.O
 				});
 			t.a = Object(r.b)(v, (e, {
@@ -15669,7 +15669,7 @@
 				ce = f.a.div("TickText", B.a),
 				ue = f.a.div("PreSubText", B.a),
 				me = Object(i.c)({
-					isNightModeOn: F.U
+					isNightModeOn: F.V
 				}),
 				pe = Object(o.b)(me)(e => a.a.createElement(X, {
 					last: e.last,
@@ -21455,7 +21455,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				at = Object(i.b)(() => Object(d.a)(et, I.G, E.O, st, I.bb, w.hb, nt, tt, (e, t) => t.match.params.pageName, e => e, ({
+				at = Object(i.b)(() => Object(d.a)(et, I.G, E.O, st, I.cb, w.hb, nt, tt, (e, t) => t.match.params.pageName, e => e, ({
 					contentGateInfo: e
 				}, t, s, {
 					moderatorPermissions: n
@@ -21782,7 +21782,7 @@
 					isCreatePending: $.k,
 					isEmailInviteExperimentEnabled: Z.a,
 					isEmployee: ee.G,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(ee.fb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(ee.gb)(e),
 					userIsSuspended: ee.O,
 					allTags: E.e,
 					existingTags: E.h,
@@ -22144,7 +22144,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.Gb
 				});
-				return !(!t || Object(n.Bd)(t))
+				return !(!t || Object(n.Dd)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -22377,4 +22377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d6d217669cb573ae52d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.79888aff832478f0e44d.js.map

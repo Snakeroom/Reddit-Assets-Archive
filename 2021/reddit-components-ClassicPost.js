@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4d7d218bfdc6a11ffb1f.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.43efff0f0d7440d81a0d.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -4383,7 +4383,7 @@
 								experimentName: o.w,
 								expEventOverride: t
 							});
-							return !!(Object(o.Bd)(n) ? void 0 : n)
+							return !!(Object(o.Dd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -5571,77 +5571,79 @@
 		"./src/reddit/selectors/comments.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return h
-			})), n.d(t, "d", (function() {
 				return E
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "d", (function() {
 				return _
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "u", (function() {
 				return x
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "w", (function() {
 				return v
+			})), n.d(t, "x", (function() {
+				return O
 			})), n.d(t, "k", (function() {
-				return y
-			})), n.d(t, "g", (function() {
 				return S
-			})), n.d(t, "F", (function() {
+			})), n.d(t, "g", (function() {
 				return g
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "G", (function() {
 				return C
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "n", (function() {
 				return T
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "o", (function() {
 				return j
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "j", (function() {
 				return k
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "l", (function() {
 				return I
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "h", (function() {
 				return w
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return P
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "b", (function() {
 				return A
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "q", (function() {
 				return L
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "m", (function() {
 				return N
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "t", (function() {
 				return R
-			})), n.d(t, "H", (function() {
+			})), n.d(t, "z", (function() {
 				return D
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "I", (function() {
 				return M
-			})), n.d(t, "A", (function() {
+			})), n.d(t, "s", (function() {
 				return U
 			})), n.d(t, "B", (function() {
 				return F
-			})), n.d(t, "D", (function() {
-				return B
-			})), n.d(t, "r", (function() {
-				return Y
-			})), n.d(t, "e", (function() {
-				return G
-			})), n.d(t, "v", (function() {
-				return W
-			})), n.d(t, "I", (function() {
-				return V
-			})), n.d(t, "f", (function() {
-				return H
-			})), n.d(t, "i", (function() {
-				return z
-			})), n.d(t, "E", (function() {
-				return q
-			})), n.d(t, "z", (function() {
-				return K
-			})), n.d(t, "G", (function() {
-				return X
-			})), n.d(t, "p", (function() {
-				return $
-			})), n.d(t, "J", (function() {
-				return J
 			})), n.d(t, "C", (function() {
+				return B
+			})), n.d(t, "E", (function() {
+				return Y
+			})), n.d(t, "r", (function() {
+				return G
+			})), n.d(t, "e", (function() {
+				return W
+			})), n.d(t, "v", (function() {
+				return V
+			})), n.d(t, "J", (function() {
+				return H
+			})), n.d(t, "f", (function() {
+				return z
+			})), n.d(t, "i", (function() {
+				return q
+			})), n.d(t, "F", (function() {
+				return K
+			})), n.d(t, "A", (function() {
+				return X
+			})), n.d(t, "H", (function() {
+				return $
+			})), n.d(t, "p", (function() {
+				return J
+			})), n.d(t, "K", (function() {
 				return Q
+			})), n.d(t, "D", (function() {
+				return Z
+			})), n.d(t, "y", (function() {
+				return ee
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/lodash/values.js"),
@@ -5653,39 +5655,40 @@
 				d = n("./src/reddit/models/Post/index.ts"),
 				l = n("./src/reddit/selectors/posts.ts"),
 				u = n("./src/reddit/selectors/subreddit.ts"),
-				m = n("./src/reddit/selectors/commentSelector.ts"),
-				p = n("./src/lib/initializeClient/installReducer.ts"),
-				f = n("./src/reddit/reducers/features/comments/index.ts"),
-				b = n("./src/reddit/reducers/pages/comments/index.ts");
-			Object(p.a)({
+				m = n("./src/reddit/selectors/user.ts"),
+				p = n("./src/reddit/selectors/commentSelector.ts"),
+				f = n("./src/lib/initializeClient/installReducer.ts"),
+				b = n("./src/reddit/reducers/features/comments/index.ts"),
+				h = n("./src/reddit/reducers/pages/comments/index.ts");
+			Object(f.a)({
 				features: {
-					comments: f.a
+					comments: b.a
 				},
 				pages: {
-					comments: b.a
+					comments: h.a
 				}
 			});
-			const h = (e, {
+			const E = (e, {
 					commentsPageKey: t
 				}) => e.pages.comments.api.error[t],
-				E = (e, {
-					commentsPageKey: t
-				}) => e.pages.comments.api.pending[t],
 				_ = (e, {
 					commentsPageKey: t
+				}) => e.pages.comments.api.pending[t],
+				x = (e, {
+					commentsPageKey: t
 				}) => e.pages.comments.api.fullyLoaded[t],
-				x = (e, t) => e.pages.comments.keyToHeadCommentId[t.commentsPageKey],
-				v = (e, t) => {
-					const n = x(e, t);
-					if (n) return Object(m.a)(e, {
+				v = (e, t) => e.pages.comments.keyToHeadCommentId[t.commentsPageKey],
+				O = (e, t) => {
+					const n = v(e, t);
+					if (n) return Object(p.a)(e, {
 						commentId: n
 					})
 				},
-				O = [],
-				y = Object(a.a)((e, t) => {
-					const n = v(e, t),
+				y = [],
+				S = Object(a.a)((e, t) => {
+					const n = O(e, t),
 						r = n && n.id;
-					if (!r) return O;
+					if (!r) return y;
 					const {
 						commentsPageKey: s
 					} = t, o = e.pages.comments.keyToCommentThreadLinkSets[s], i = [];
@@ -5698,14 +5701,14 @@
 					} while (a);
 					return i
 				}),
-				S = (e, t) => x(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
-				g = (e, {
+				g = (e, t) => v(e, t) ? e.pages.comments.keyToChatCommentLinks[t.commentsPageKey] : [],
+				C = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = e.pages.comments.keyToPostId[t];
 					return n ? e.posts.models[n] : null
 				},
-				C = (e, {
+				T = (e, {
 					commentId: t,
 					commentLink: n,
 					commentsPageKey: r
@@ -5713,14 +5716,14 @@
 					const s = e.pages.comments.keyToCommentThreadLinkSets[r];
 					return s ? n ? s[n.id] : t ? s[t] : null : null
 				},
-				T = (e, {
+				j = (e, {
 					commentsPageKey: t
 				}) => e.pages.comments.keyToCommentThreadLinkSets[t],
-				j = (e, t) => {
-					const n = t.commentsPageKey ? C(e, t) : null;
+				k = (e, t) => {
+					const n = t.commentsPageKey ? T(e, t) : null;
 					return n ? n.depth : null
 				},
-				k = (e, {
+				I = (e, {
 					commentLink: t
 				}) => {
 					const {
@@ -5738,7 +5741,7 @@
 							return null
 					}
 				},
-				I = (e, t) => {
+				w = (e, t) => {
 					if (e.platform.currentPage && e.platform.currentPage.urlParams && e.platform.currentPage.urlParams.partialPostId) {
 						const {
 							partialPostId: t
@@ -5747,39 +5750,39 @@
 					}
 					return []
 				},
-				w = (e, {
+				P = (e, {
 					commentsPageKey: t
 				}) => e.features.comments.collapsed[t],
-				P = e => e.moreComments.models,
-				A = e => e.features.comments.models,
-				L = (e, {
+				A = e => e.moreComments.models,
+				L = e => e.features.comments.models,
+				N = (e, {
 					commentId: t
 				}) => {
-					const n = Object(m.a)(e, {
+					const n = Object(p.a)(e, {
 						commentId: t
 					});
 					return n ? Object(i.a)(Object(l.C)(e, n), t) : ""
 				},
-				N = (e, {
+				R = (e, {
 					commentId: t
 				}) => !!(t && e.features.comments.focused && e.features.comments.focused[t]),
-				R = (e, {
-					commentId: t,
-					commentsPageKey: n
-				}) => !!(t && e.features.comments.isEditing[n] && e.features.comments.isEditing[n][t]),
 				D = (e, {
 					commentId: t,
 					commentsPageKey: n
-				}) => !!(t && e.features.comments.replyFormOpen[n] && e.features.comments.replyFormOpen[n][t]),
+				}) => !!(t && e.features.comments.isEditing[n] && e.features.comments.isEditing[n][t]),
 				M = (e, {
+					commentId: t,
+					commentsPageKey: n
+				}) => !!(t && e.features.comments.replyFormOpen[n] && e.features.comments.replyFormOpen[n][t]),
+				U = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = t && e.features.comments.replyFormOpen[t] || {},
 						r = Object.keys(n).find(e => n[e]),
-						s = Object(m.a)(e, {
+						s = Object(p.a)(e, {
 							commentId: r
 						}),
-						o = s && j(e, {
+						o = s && k(e, {
 							commentId: s.id,
 							commentLink: void 0,
 							commentsPageKey: t
@@ -5789,13 +5792,13 @@
 						depth: o
 					}
 				},
-				U = (e, {
-					moreCommentsId: t
-				}) => e.moreComments.models[t],
 				F = (e, {
 					moreCommentsId: t
-				}) => !!e.moreComments.api.pending[t],
+				}) => e.moreComments.models[t],
 				B = (e, {
+					moreCommentsId: t
+				}) => !!e.moreComments.api.pending[t],
+				Y = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = e.pages.comments.keyToPostId[t];
@@ -5808,10 +5811,10 @@
 					}
 					return null
 				},
-				Y = (e, {
+				G = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
-				G = (e, {
+				W = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.models[t] : void 0;
@@ -5819,45 +5822,54 @@
 					const r = e.authorFlair.models[n.subredditId];
 					return r ? r[n.author] : null
 				},
-				W = (e, {
+				V = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				V = (e, {
+				H = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.submit.error[t];
 					return n && n.fields ? n.fields.map(e => e.msg) : []
 				},
-				H = (e, {
+				z = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.drafts[t];
 					return !!n && n.autofocusDisabled
 				},
-				z = (e, {
+				q = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				q = (e, {
+				K = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
 					return n && n.fields ? n.fields.map(e => e.msg) : void 0
 				},
-				K = (e, {
-					commentId: t
-				}) => !!t && e.features.comments.submit.pending[t],
 				X = (e, {
 					commentId: t
+				}) => !!t && e.features.comments.submit.pending[t],
+				$ = (e, {
+					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				$ = e => e.features.comments.visitHighlightFilter,
-				J = (e, t) => {
-					const n = Object(m.a)(e, t);
+				J = e => e.features.comments.visitHighlightFilter,
+				Q = (e, t) => {
+					const n = Object(p.a)(e, t);
 					if (n) return Object(u.Y)(e, n)
 				},
-				Q = (e, {
+				Z = (e, {
 					postId: t
-				}) => e.features.comments.newCommentsCount[t] ? e.features.comments.newCommentsCount[t] : 0
+				}) => e.features.comments.newCommentsCount[t] ? e.features.comments.newCommentsCount[t] : 0,
+				ee = (e, {
+					commentId: t
+				}) => {
+					const n = Object(p.a)(e, {
+							commentId: t
+						}),
+						r = n && n.authorId || "";
+					return Object(m.R)(e, r)
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4d7d218bfdc6a11ffb1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.43efff0f0d7440d81a0d.js.map

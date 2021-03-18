@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f4f09ba53e4b20876494.js
-// Retrieved at 3/16/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.52cfc3b29ccabac4f2c9.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1847,7 +1847,7 @@
 			const g = "create-community-button",
 				v = f.a.wrapped(d.c, "StyledTooltip", x.a),
 				y = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.fb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.gb)(e),
 					userIsSuspended: h.O
 				});
 			t.a = Object(i.b)(y, (e, {
@@ -5674,7 +5674,7 @@
 				}),
 				Ts = Object(i.c)({
 					subreddit: j.A,
-					shouldSeeNSFW: We.bb
+					shouldSeeNSFW: We.cb
 				}),
 				Ns = Object(o.b)(Ts),
 				Ls = e => {
@@ -8967,9 +8967,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.Wc.Treatment1 === Object(n.c)(e, {
+			const o = e => r.Yc.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Mc
+				experimentName: r.Oc
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -9078,4 +9078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f4f09ba53e4b20876494.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.52cfc3b29ccabac4f2c9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.14d0344eb6c85f963938.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a9b47115a998570cc52e.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3042,7 +3042,7 @@
 				B = n.n(M);
 			const R = Object(p.a)(_.j, (e, {
 					profileName: t
-				}) => Object(C.sb)(e, t), (e, t) => ({
+				}) => Object(C.tb)(e, t), (e, t) => ({
 					awardeeKarma: t ? t.awardeeKarma : 0,
 					awarderKarma: t ? t.awarderKarma : 0,
 					commentKarma: t ? t.commentKarma : 0,
@@ -4887,7 +4887,7 @@
 				de = g.a.div("TickText", F.a),
 				ue = g.a.div("PreSubText", F.a),
 				me = Object(i.c)({
-					isNightModeOn: L.U
+					isNightModeOn: L.V
 				}),
 				pe = Object(a.b)(me)(e => s.a.createElement(Q, {
 					last: e.last,
@@ -7626,7 +7626,7 @@
 				te = Object(c.c)({
 					hasVerifiedEmail: P.z,
 					isFPR: P.H,
-					language: P.S,
+					language: P.T,
 					shouldShowCreatePasswordModal: j.d,
 					showLanguageSection: O.d.langSelect
 				}),
@@ -9220,7 +9220,7 @@
 				Zr = n.n(Kr);
 			const {
 				fbt: Xr
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), $r = 30, es = 200, ts = Object(c.a)(P.i, Jr.a, P.tb, Yr.n, me.a, (e, t, n, r, s) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), $r = 30, es = 200, ts = Object(c.a)(P.i, Jr.a, P.ub, Yr.n, me.a, (e, t, n, r, s) => {
 				const a = e && e.profileId,
 					o = a && r[a] ? r[a].bannerBackgroundImage : void 0;
 				return {
@@ -10586,4 +10586,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.14d0344eb6c85f963938.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a9b47115a998570cc52e.js.map

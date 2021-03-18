@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.bbec90dcf68e20c25f5b.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.0ff279196476cd75acdc.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -669,7 +669,7 @@
 				oe = p.a.wrapped(g.a, "SmallChatUserIcon", H.a),
 				ae = Object(d.b)(() => Object(l.c)({
 					draft: O.i,
-					errorMsgs: O.I,
+					errorMsgs: O.J,
 					hasError: O.v,
 					liveStreamingChatCharacterLimit: z.a,
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
@@ -1997,4 +1997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.bbec90dcf68e20c25f5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.0ff279196476cd75acdc.js.map

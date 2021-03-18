@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4da0cebee33e6c4c28d7.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.9e4ad2a315bafe4f48b0.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, r) {
@@ -972,7 +972,7 @@
 					}) => Object(m.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: F.ab
+					shouldOpenPostInNewTab: F.bb
 				}),
 				W = e => {
 					const {
@@ -1168,7 +1168,7 @@
 				g = r("./src/reddit/components/VerticalVotes/index.m.less"),
 				v = r.n(g);
 			const x = Object(i.c)({
-					isNightmode: h.U,
+					isNightmode: h.V,
 					totalDiscount: b.d,
 					variantAnimationConfig: b.e
 				}),
@@ -2244,20 +2244,6 @@
 				return Object(o.b)(t)
 			}
 		},
-		"./src/reddit/hooks/useIntersectionObserver.ts": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js");
-			t.a = function(e, t, r) {
-				Object(n.useEffect)(() => {
-					const n = e && e.current;
-					if (!n || "undefined" == typeof IntersectionObserver) return;
-					const s = new IntersectionObserver(t, r);
-					return s.observe(n), () => {
-						s.unobserve(n)
-					}
-				}, [e, t, r])
-			}
-		},
 		"./src/reddit/hooks/useOnClickOutside.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -2869,7 +2855,7 @@
 					minSize: t,
 					userName: r
 				}) => {
-					const n = Object(i.lb)(e, {
+					const n = Object(i.mb)(e, {
 						userName: r
 					});
 					if (n && n.awardedLastMonth && n.awardedLastMonth.topAward) return p(e, {
@@ -3059,4 +3045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4da0cebee33e6c4c28d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.9e4ad2a315bafe4f48b0.js.map

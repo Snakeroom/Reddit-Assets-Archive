@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.ef09971d4c364c6fe64b.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.d1a38b7f796e502fcf0e.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -1530,10 +1530,10 @@
 						i = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						n = Object(f.U)(e);
+						n = Object(f.V)(e);
 					return i || n
 				},
-				nigtmode: f.U,
+				nigtmode: f.V,
 				subredditId: h.m,
 				topPostVariant: b.d
 			}));
@@ -2077,4 +2077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.ef09971d4c364c6fe64b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.d1a38b7f796e502fcf0e.js.map

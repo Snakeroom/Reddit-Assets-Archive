@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.213fd88a1aab06a7948b.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fda24a5263a6823cb07e.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, o) {
@@ -3090,7 +3090,7 @@
 				}, e.bottomButtonText)))),
 				j = Object(d.c)({
 					hideNSFWPref: C.B,
-					nightmode: C.U
+					nightmode: C.V
 				}),
 				S = Object(r.b)(j)(e => {
 					const t = Object(v.a)();
@@ -3738,4 +3738,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.213fd88a1aab06a7948b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fda24a5263a6823cb07e.js.map

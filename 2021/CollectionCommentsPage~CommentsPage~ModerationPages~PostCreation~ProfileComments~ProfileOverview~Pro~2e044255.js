@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.ae67c51cffc6ae4e34be.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.7eef17249ed5c953be42.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -115,7 +115,7 @@
 				M = Object(c.c)({
 					isCurrentUserProfilePost: E.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Db.TOPIC),
-					shouldOpenPostInNewTab: g.ab
+					shouldOpenPostInNewTab: g.bb
 				}),
 				N = Object(i.b)(M);
 			t.a = Object(f.b)(N(e => {
@@ -276,7 +276,7 @@
 				h = s.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.U
+					isNightmodeOn: m.V
 				}));
 			t.a = x(e => {
 				const t = {
@@ -371,7 +371,7 @@
 						style: t
 					}, e.children)
 				},
-				T = Object(i.b)(() => Object(c.a)(f.C, E.ab, (e, {
+				T = Object(i.b)(() => Object(c.a)(f.C, E.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(f.b)(e, s) : null, (e, t, s) => ({
@@ -2260,12 +2260,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.id.SmIcon:
+						case b.kd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.id.SmIconHc:
+						case b.kd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2755,12 +2755,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.dd
+						experimentName: n.fd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.id.SmIcon || t === n.id.SmIconHc
+					return t === n.kd.SmIcon || t === n.kd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2783,4 +2783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.ae67c51cffc6ae4e34be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.7eef17249ed5c953be42.js.map

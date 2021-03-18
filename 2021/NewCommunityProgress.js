@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.2e7cafd1de356301d6c6.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.77a26b8411726ecf069f.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/graphql/operations/DismissCommunityProgressCard.json": function(e) {
@@ -161,11 +161,11 @@
 			G.a.wrapped(e => o.a.createElement("i", {
 				className: `${Object(D.b)("expandoMediaGif",e.isFilled)} ${e.className}`
 			}), "GifMediaIcon", $.a);
-			var U = n("./src/reddit/icons/fonts/Expandos/Media/Image/index.m.less"),
-				R = n.n(U);
+			var R = n("./src/reddit/icons/fonts/Expandos/Media/Image/index.m.less"),
+				U = n.n(R);
 			G.a.wrapped(e => o.a.createElement("i", {
 				className: `${Object(D.b)("expandoMediaImage",e.isFilled)} ${e.className}`
-			}), "ImageMediaIcon", R.a), n("./src/reddit/icons/fonts/Expandos/Media/Lightbox/index.tsx");
+			}), "ImageMediaIcon", U.a), n("./src/reddit/icons/fonts/Expandos/Media/Lightbox/index.tsx");
 			var P = n("./src/reddit/icons/fonts/Expandos/Media/Link/index.m.less"),
 				B = n.n(P);
 			G.a.wrapped(e => o.a.createElement("i", {
@@ -176,14 +176,14 @@
 			G.a.wrapped(e => o.a.createElement("i", {
 				className: `${Object(D.b)("expandoMediaText",e.isFilled)} ${e.className}`
 			}), "TextMediaIcon", H.a), n("./src/reddit/icons/fonts/Expandos/Media/Video/index.tsx"), n("./src/reddit/icons/fonts/Gif/index.tsx"), n("./src/reddit/icons/fonts/Gift/index.tsx");
-			var Q = n("./src/reddit/icons/fonts/Gild/index.m.less"),
-				V = n.n(Q);
+			var V = n("./src/reddit/icons/fonts/Gild/index.m.less"),
+				Q = n.n(V);
 			G.a.wrapped(e => o.a.createElement("i", {
 				className: `${Object(D.b)("gild",e.isFilled)} ${e.className}`,
 				id: e.id,
 				onMouseEnter: e.onMouseEnter,
 				onMouseLeave: e.onMouseLeave
-			}, o.a.createElement(D.a, null, e.desc)), "GildIcon", V.a), n("./src/reddit/icons/fonts/Hide/index.tsx"), n("./src/reddit/icons/fonts/IgnoreReport/index.tsx"), n("./src/reddit/icons/fonts/Info/index.tsx"), n("./src/reddit/icons/fonts/Link/index.tsx"), n("./src/reddit/icons/fonts/List/index.tsx"), n("./src/reddit/icons/fonts/Live/index.tsx"), n("./src/reddit/icons/fonts/Lock/index.tsx"), n("./src/reddit/icons/fonts/Menu/index.tsx"), n("./src/reddit/icons/fonts/ModActions/index.tsx"), n("./src/reddit/icons/fonts/ModSettings/index.tsx"), n("./src/reddit/icons/fonts/Op/index.tsx"), n("./src/reddit/icons/fonts/OutboundLink/index.tsx"), n("./src/reddit/icons/fonts/Pencil/index.tsx"), n("./src/reddit/icons/fonts/Photos/index.tsx");
+			}, o.a.createElement(D.a, null, e.desc)), "GildIcon", Q.a), n("./src/reddit/icons/fonts/Hide/index.tsx"), n("./src/reddit/icons/fonts/IgnoreReport/index.tsx"), n("./src/reddit/icons/fonts/Info/index.tsx"), n("./src/reddit/icons/fonts/Link/index.tsx"), n("./src/reddit/icons/fonts/List/index.tsx"), n("./src/reddit/icons/fonts/Live/index.tsx"), n("./src/reddit/icons/fonts/Lock/index.tsx"), n("./src/reddit/icons/fonts/Menu/index.tsx"), n("./src/reddit/icons/fonts/ModActions/index.tsx"), n("./src/reddit/icons/fonts/ModSettings/index.tsx"), n("./src/reddit/icons/fonts/Op/index.tsx"), n("./src/reddit/icons/fonts/OutboundLink/index.tsx"), n("./src/reddit/icons/fonts/Pencil/index.tsx"), n("./src/reddit/icons/fonts/Photos/index.tsx");
 			var W = n("./src/reddit/icons/fonts/Plus/index.tsx"),
 				X = (n("./src/reddit/icons/fonts/Premium/index.tsx"), n("./src/reddit/icons/fonts/Remove/index.tsx"), n("./src/reddit/icons/fonts/Report/index.tsx"), n("./src/reddit/icons/fonts/Save/index.tsx"), n("./src/reddit/icons/fonts/Share/index.tsx")),
 				Z = (n("./src/reddit/icons/fonts/Spam/index.tsx"), n("./src/reddit/icons/fonts/Sticky/index.tsx"), n("./src/reddit/icons/fonts/Tag/index.tsx"), n("./src/reddit/icons/fonts/Text/index.tsx"), n("./src/reddit/icons/fonts/Unpin/index.tsx"), n("./src/reddit/icons/fonts/Upvote/index.tsx"), n("./src/reddit/icons/fonts/Video/index.tsx"), n("./src/reddit/models/NewCommunityProgress/index.ts")),
@@ -321,7 +321,7 @@
 			}) {
 				const n = Object(t.useRef)(null),
 					[c, a] = Object(t.useState)(!0),
-					l = Object(i.e)(I.U),
+					l = Object(i.e)(I.V),
 					x = Object(i.e)(s => Object(N.Z)(s, e)),
 					p = Object(h.a)();
 				Object(t.useEffect)(() => {
@@ -1277,4 +1277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.2e7cafd1de356301d6c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.77a26b8411726ecf069f.js.map

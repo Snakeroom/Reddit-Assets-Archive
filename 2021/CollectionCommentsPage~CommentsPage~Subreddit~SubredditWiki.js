@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.236c64a3f1cf12f4f9fe.js
-// Retrieved at 3/16/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.9e8e0ff20f0122b59dce.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -985,8 +985,8 @@
 						className: U.a.powerupIcon
 					}), a))
 				},
-				H = r("./src/reddit/components/PowerupsSidebar/Supporters/index.m.less"),
-				V = r.n(H);
+				V = r("./src/reddit/components/PowerupsSidebar/Supporters/index.m.less"),
+				H = r.n(V);
 			const {
 				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = 100, z = 302, Y = 40, J = e => `${e.lastSupportedAt}__${e.score}`, G = (e, t) => ({
@@ -1025,7 +1025,7 @@
 						className: e
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(j.a)(V.a.container, e)
+						className: Object(j.a)(H.a.container, e)
 					}, s.a.createElement(C.TransitionMotion, {
 						willLeave: X,
 						willEnter: Q,
@@ -1040,16 +1040,16 @@
 					}, e => s.a.createElement(s.a.Fragment, null, e.map(e => {
 						const t = !e.data.isInitial && 1 === e.style.motionProgress;
 						return s.a.createElement("div", {
-							className: V.a.item,
+							className: H.a.item,
 							key: e.key,
 							style: {
 								zIndex: t ? 100 : "unset"
 							}
 						}, t && s.a.createElement("div", {
-							className: V.a.animation,
+							className: H.a.animation,
 							ref: Z
 						}), s.a.createElement("div", {
-							className: V.a.itemCropper,
+							className: H.a.itemCropper,
 							style: {
 								...e.style
 							}
@@ -1559,16 +1559,16 @@
 			}
 			var M = r("./src/lib/constants/index.ts");
 			const {
-				fbt: H
+				fbt: V
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			const V = Object(d.t)(),
+			const H = Object(d.t)(),
 				q = [M.Db.SUBREDDIT, M.Db.COMMENTS, M.Db.COLLECTION_COMMENTS],
 				K = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && q.indexOf(t.pageLayer.meta.name) > -1,
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.L)(t.pageLayer)
 				});
-			var z = V(Object(i.b)(K, (e, t) => ({
+			var z = H(Object(i.b)(K, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(m.p)({
 						subredditId: t.subredditId,
 						forceState: !1
@@ -1589,7 +1589,7 @@
 						onClick: e => {
 							r && (e.preventDefault(), o())
 						}
-					}, H._("Posts", null, {
+					}, V._("Posts", null, {
 						hk: "36nXSp"
 					}))
 				}))),
@@ -2135,7 +2135,7 @@
 				N = u.a.wrapped(o.a, "RawHTMLDisplay", v.a);
 			var I = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: g.l,
-					isNightmodeOn: f.U
+					isNightmodeOn: f.V
 				}))(e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -2163,8 +2163,8 @@
 				W = u.a.div("EventDate", P.a),
 				U = u.a.div("EventLocation", P.a),
 				M = u.a.div("EventDescription", P.a),
-				H = u.a.wrapped(j.a, "ToggleDescription", P.a);
-			class V extends s.a.Component {
+				V = u.a.wrapped(j.a, "ToggleDescription", P.a);
+			class H extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
 						this.setState({
@@ -2177,7 +2177,7 @@
 						props: e,
 						state: t
 					} = this;
-					return e.text.length > T ? s.a.createElement(M, null, t.isExpanded ? e.text : e.text.slice(0, T), s.a.createElement(H, {
+					return e.text.length > T ? s.a.createElement(M, null, t.isExpanded ? e.text : e.text.slice(0, T), s.a.createElement(V, {
 						onClick: this.toggleDescriptionView
 					}, t.isExpanded ? S.fbt._("read less", null, {
 						hk: "2KdNS6"
@@ -2202,7 +2202,7 @@
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
 				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(U, null, t.locationHtml ? s.a.createElement(B, {
 					html: t.locationHtml
-				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(V, {
+				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(H, {
 					text: t.description
 				})))),
 				K = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -2918,4 +2918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.236c64a3f1cf12f4f9fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.9e8e0ff20f0122b59dce.js.map

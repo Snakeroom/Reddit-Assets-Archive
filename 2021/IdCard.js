@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.72c366d10656e11364cd.js
-// Retrieved at 3/16/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.948a825d8f9b691d8220.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1530,7 +1530,7 @@
 			const x = "create-community-button",
 				_ = g.a.wrapped(c.c, "StyledTooltip", f.a),
 				E = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.fb)(e),
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.gb)(e),
 					userIsSuspended: b.O
 				});
 			t.a = Object(o.b)(E, (e, {
@@ -2379,8 +2379,8 @@
 				Bt = Object(u.c)({
 					isInIcons2020: We.a,
 					shouldShowFlairPicker: ct.b,
-					stylesDisabledForSubreddit: P.hb,
-					stylesDisabledGlobally: P.ib
+					stylesDisabledForSubreddit: P.ib,
+					stylesDisabledGlobally: P.jb
 				});
 			class Lt extends i.a.Component {
 				constructor(e) {
@@ -4658,4 +4658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.72c366d10656e11364cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.948a825d8f9b691d8220.js.map

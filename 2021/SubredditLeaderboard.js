@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.12f43ad4b2a40b1782bd.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.0fa3f8adc7b8f0e7d390.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -1135,10 +1135,10 @@
 						r = t.redditStyle || Object(b.l)(e, {
 							subredditId: n
 						}),
-						s = Object(f.U)(e);
+						s = Object(f.V)(e);
 					return r || s
 				},
-				nigtmode: f.U,
+				nigtmode: f.V,
 				subredditId: m.m,
 				topPostVariant: h.d
 			}));
@@ -1879,13 +1879,13 @@
 					})))))
 				}
 			}
-			var J = Object(m.c)(H(Q)),
-				V = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+			var V = Object(m.c)(H(Q)),
+				J = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				q = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				K = n.n(q);
 
-			function U() {
-				return (U = Object.assign || function(e) {
+			function z() {
+				return (z = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1893,7 +1893,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const z = e => {
+			const U = e => {
 				const {
 					category: t,
 					children: n,
@@ -1901,7 +1901,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(V.a, U({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(J.a, z({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -1961,7 +1961,7 @@
 						}
 					}, s, e && e.map((e, r) => {
 						const s = a + r * n;
-						return i.a.createElement(z, {
+						return i.a.createElement(U, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
@@ -2065,7 +2065,7 @@
 				ke = (e, {
 					match: t
 				}) => Object(h.b)(t.params.categoryName || ""),
-				Ce = Object(u.Ad)(g.g),
+				Ce = Object(u.Cd)(g.g),
 				Ee = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: Ce
@@ -2135,7 +2135,7 @@
 						d = this.props.categoryId ? this.props.categoryId : a ? g.l : g.b;
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(e, _.a.mainContent),
-						content: i.a.createElement(J, {
+						content: i.a.createElement(V, {
 							categoryId: d,
 							categoryName: o
 						}),
@@ -2183,4 +2183,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.12f43ad4b2a40b1782bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.0fa3f8adc7b8f0e7d390.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.74893add9e2ee483b7d9.js
-// Retrieved at 3/15/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.4f46061531cc7b1678f9.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -1585,7 +1585,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: I.U
+					isNightmodeOn: I.V
 				}),
 				M = Object(d.b)(D, (e, {
 					timestamp: t
@@ -2781,4 +2781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.74893add9e2ee483b7d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.4f46061531cc7b1678f9.js.map

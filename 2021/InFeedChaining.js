@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.eb6d707b69905ce48b9f.js
-// Retrieved at 3/16/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.848501e10360eaaa9493.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2412,7 +2412,7 @@
 				h = s.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(i.b)(() => Object(o.c)({
-					isNightmodeOn: m.U
+					isNightmodeOn: m.V
 				}));
 			t.a = f(e => {
 				const t = {
@@ -2507,7 +2507,7 @@
 						style: t
 					}, e.children)
 				},
-				S = Object(o.b)(() => Object(c.a)(v.C, x.ab, (e, {
+				S = Object(o.b)(() => Object(c.a)(v.C, x.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(v.b)(e, s) : null, (e, t, s) => ({
@@ -4125,12 +4125,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.id.SmIcon:
+						case b.kd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.id.SmIconHc:
+						case b.kd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4879,12 +4879,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.dd
+						experimentName: n.fd
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.id.SmIcon || t === n.id.SmIconHc
+					return t === n.kd.SmIcon || t === n.kd.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -4907,4 +4907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.eb6d707b69905ce48b9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.848501e10360eaaa9493.js.map

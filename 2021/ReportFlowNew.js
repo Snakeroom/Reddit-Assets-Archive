@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.7a24aab17c721a2619bf.js
-// Retrieved at 3/12/2021, 8:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.4b5ce9569833d153d77d.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -334,9 +334,9 @@
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: I.U
+					isNightmodeOn: I.V
 				}),
-				U = Object(a.b)(N, (e, {
+				P = Object(a.b)(N, (e, {
 					timestamp: t
 				}) => ({
 					onCloseReportFlow: () => {
@@ -352,7 +352,7 @@
 						})
 					}))
 				})),
-				P = async (e, t, o, r) => {
+				U = async (e, t, o, r) => {
 					var s;
 					const n = await ((e, {
 						itemId: t,
@@ -487,7 +487,7 @@
 						gqlContext: t,
 						hostAppName: o
 					} = this.props;
-					P(t(), e, q, o).then(e => {
+					U(t(), e, q, o).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -530,7 +530,7 @@
 					}))
 				}
 			}
-			t.default = Object(j.b)(U(T))
+			t.default = Object(j.b)(P(T))
 		},
 		"./src/reddit/components/ReportFlow/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -662,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.7a24aab17c721a2619bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.4b5ce9569833d153d77d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.5727a89115f33ea24300.js
-// Retrieved at 3/16/2021, 12:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.42567767723250d4c826.js
+// Retrieved at 3/18/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -1694,7 +1694,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, r = Object(a.e)(e => Object(B.lb)(e, {
+				} = e, r = Object(a.e)(e => Object(B.mb)(e, {
 					userName: s
 				})), i = ke(r), c = i && Object(E.a)(r.accountIcon);
 				return n.a.createElement("div", {
@@ -1727,7 +1727,7 @@
 			})), ke = e => {
 				const t = Object(a.e)(B.i),
 					s = Object(a.e)(B.B),
-					r = Object(a.e)(B.bb);
+					r = Object(a.e)(B.cb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!r && !s))))
 			}
 		},
@@ -2664,4 +2664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.5727a89115f33ea24300.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.42567767723250d4c826.js.map
