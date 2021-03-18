@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.9f47934244d43e94a602.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.168ad8c6e5ae5124a851.js
+// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -969,8 +969,8 @@
 				actionFont: "_3d3pCI-qoO6psmyxodxokk",
 				smallButtonFont: "_1LVr35fM7ddtvg2g2I4qJ7",
 				largeButtonFont: "_1jVGMlwau5yaN1vqhiSwEo",
-				tabFont: "_1leSu44tZ3i4KBsjGW_F9c",
 				strongTextFont: "_2oA70eNUJxOQ-eRN8TPT9s",
+				tabFont: "_1leSu44tZ3i4KBsjGW_F9c",
 				buttonFontXS: "_2hx9_-C2FZtpmqHzmEIAYR",
 				buttonFontXs: "_2hx9_-C2FZtpmqHzmEIAYR",
 				buttonFontS: "_87bVuwY1B7OXO-iDEwMpj",
@@ -1059,4 +1059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.9f47934244d43e94a602.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.168ad8c6e5ae5124a851.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.4bc0f7f273d6d63a86aa.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.2904dc63350ad3bcc356.js
+// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3321,4 +3321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4bc0f7f273d6d63a86aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.2904dc63350ad3bcc356.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.0f5a26af85b318bd9f82.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.653e92ca2d4710fec5a8.js
+// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -1020,8 +1020,8 @@
 				actionFont: "_2yOueT_7JFLAAiCNPTQjfk",
 				smallButtonFont: "_1j9G7RzwWzCEXRfBup8qCr",
 				largeButtonFont: "_21SizvLABo7WuGdVrlWB3E",
-				tabFont: "_1nbCityPGTvrop_yKHkhp_",
 				strongTextFont: "_1rRA9Vf6uOXrFjUcJJcmOL",
+				tabFont: "_1nbCityPGTvrop_yKHkhp_",
 				buttonFontXS: "_3RerbBqI5ohWwQKBd8_-Ku",
 				buttonFontXs: "_3RerbBqI5ohWwQKBd8_-Ku",
 				buttonFontS: "_2wKWEQ-jbYxfuGUxCG8h09",
@@ -1965,4 +1965,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.0f5a26af85b318bd9f82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.653e92ca2d4710fec5a8.js.map

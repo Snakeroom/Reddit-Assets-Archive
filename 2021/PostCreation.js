@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b6eff7eee0eba3b727a7.js
-// Retrieved at 3/18/2021, 5:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a7721e4fb9ee4330bfb7.js
+// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -8129,6 +8129,8 @@
 				pollIcon: "_1wjrzsZm0XSDAKK8PykcNE",
 				Container: "_3vyt9N_0jfZuOwByiKDi9x",
 				container: "_3vyt9N_0jfZuOwByiKDi9x",
+				Stretched: "zvJD12Xx7AKjzhwAslrBy",
+				stretched: "zvJD12Xx7AKjzhwAslrBy",
 				Tab: "Z1w8VkpQ23E1Wdq_My3U4",
 				tab: "Z1w8VkpQ23E1Wdq_My3U4",
 				isActive: "j1Q89sB76i7EBRDhnQhlr"
@@ -21725,19 +21727,20 @@
 				yu = n("./src/reddit/components/PostCreationForm/Tabs/index.m.less"),
 				ku = n.n(yu);
 			const ju = e => Je.a.wrapped(e, "Component", ku.a),
-				Su = ju(vu.a),
-				Iu = ju(_u.a),
-				Tu = Je.a.wrapped(Sl.a, "PollIcon", ku.a),
-				wu = ju(Ou.a),
-				Pu = Je.a.div("Container", ku.a),
-				Nu = e => o.a.createElement("button", {
+				Su = Je.a.wrapped(ot.a, "Stretched", ku.a),
+				Iu = ju(vu.a),
+				Tu = ju(_u.a),
+				wu = Je.a.wrapped(Sl.a, "PollIcon", ku.a),
+				Pu = ju(Ou.a),
+				Nu = Je.a.div("Container", ku.a),
+				Mu = e => o.a.createElement("button", {
 					className: Object(ze.a)(ku.a.Tab, e.className, {
 						[ku.a.isActive]: e.active
 					}),
 					disabled: e.disabled,
 					onClick: e.onClick
 				}, e.children),
-				Mu = Object(i.a)(j.d, j.e, j.h, j.Q, j.Z, _.q, (e, t) => {
+				Du = Object(i.a)(j.d, j.e, j.h, j.Q, j.Z, _.q, (e, t) => {
 					const n = Object(_.m)(e, t);
 					return !!n && Object(Ka.p)(e, {
 						subredditId: n
@@ -21756,18 +21759,18 @@
 						poll: !e || s && !Object(he.g)("polls")
 					}
 				}),
-				Du = Object(i.c)({
+				Lu = Object(i.c)({
 					canPostAsModerator: j.e,
 					destSubreddit: j.h,
 					govType: e => e.creations.formData.govType,
 					hasCreatedPredictionDrafts: Nd.a,
-					isTabsDisabled: Mu,
+					isTabsDisabled: Du,
 					pending: j.Z,
 					submissionType: j.a,
 					subreddit: _.q,
 					isImageGalleryCreationEnabled: j.L
 				}),
-				Lu = Object(r.b)(Du, (e, t) => ({
+				Ru = Object(r.b)(Lu, (e, t) => ({
 					onChange: (n, s) => {
 						e(a.g({
 							submissionType: n,
@@ -21779,7 +21782,7 @@
 						})(e, t.pageLayer, ["url", "media", "onlyTitle", "text", "selftext"])
 					}
 				}));
-			class Ru extends o.a.PureComponent {
+			class Fu extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onPostTabClick = () => {
 						this.props.isTabsDisabled.post || this.props.onChange(p.Lb.POST, {
@@ -21822,13 +21825,13 @@
 						hk: "uFHQ1"
 					}) : l && !c && (u = d.fbt._("Video", null, {
 						hk: "3w6DFr"
-					})), o.a.createElement(Pu, null, o.a.createElement(ot.a, null, o.a.createElement(Nu, {
+					})), o.a.createElement(Nu, null, o.a.createElement(Su, null, o.a.createElement(Mu, {
 						active: s === p.Lb.POST,
 						disabled: t || n.post,
 						onClick: this.onPostTabClick
-					}, o.a.createElement(wu, null), d.fbt._("Post", null, {
+					}, o.a.createElement(Pu, null), d.fbt._("Post", null, {
 						hk: "ozUj2"
-					})), o.a.createElement(Nu, {
+					})), o.a.createElement(Mu, {
 						active: s === p.Lb.MEDIA,
 						disabled: t || n.media,
 						onClick: this.onMediaTabClick
@@ -21836,36 +21839,36 @@
 						text: d.fbt._("Images and videos are not allowed in {subreddit name}", [d.fbt._param("subreddit name", `r/${i}`)], {
 							hk: "2uC6BP"
 						})
-					}), o.a.createElement(Iu, null), u), o.a.createElement(Nu, {
+					}), o.a.createElement(Tu, null), u), o.a.createElement(Mu, {
 						active: s === p.Lb.LINK_ONLY,
 						disabled: t || n.link,
 						onClick: this.onLinkTabClick
-					}, o.a.createElement(Su, null), d.fbt._("Link", null, {
+					}, o.a.createElement(Iu, null), d.fbt._("Link", null, {
 						hk: "1pbEKv"
-					})), o.a.createElement(Nu, {
+					})), o.a.createElement(Mu, {
 						active: s === p.Lb.POLL,
 						disabled: t || n.poll,
 						onClick: this.onPollTabClick
-					}, o.a.createElement(Tu, null), d.fbt._("Poll", null, {
+					}, o.a.createElement(wu, null), d.fbt._("Poll", null, {
 						hk: "SQdo4"
 					}))))
 				}
 			}
-			var Fu = Object(_.t)()(Lu(Ru)),
-				Au = n("./src/reddit/components/PostCreationForm/index.m.less"),
-				Bu = n.n(Au);
-			const Uu = Je.a.div("FormContent", Bu.a),
-				Vu = Je.a.wrapped(x.a, "CrosspostBox", Bu.a),
-				Wu = Je.a.div("FormContainer", Bu.a),
-				Gu = Je.a.div("TabContent", Bu.a),
-				Hu = Je.a.div("PostingGuidelines", Bu.a),
-				qu = Object(_.t)({
+			var Au = Object(_.t)()(Ru(Fu)),
+				Bu = n("./src/reddit/components/PostCreationForm/index.m.less"),
+				Uu = n.n(Bu);
+			const Vu = Je.a.div("FormContent", Uu.a),
+				Wu = Je.a.wrapped(x.a, "CrosspostBox", Uu.a),
+				Gu = Je.a.div("FormContainer", Uu.a),
+				Hu = Je.a.div("TabContent", Uu.a),
+				qu = Je.a.div("PostingGuidelines", Uu.a),
+				Ku = Object(_.t)({
 					draftId: _.u,
 					isPostCreationPage: _.D,
 					pageLayer: e => e,
 					sourcePostId: e => Object(_.U)(e).source_id
 				}),
-				Ku = Object(i.c)({
+				zu = Object(i.c)({
 					submissionType: j.a,
 					allowNavigationCallback: k.a,
 					contributorRequestPending: e => Object(I.g)(e, g.e.Post),
@@ -21904,7 +21907,7 @@
 					title: j.pb,
 					uploads: e => e.uploads
 				});
-			class zu extends o.a.Component {
+			class Ju extends o.a.Component {
 				constructor(e) {
 					super(e), this.postFieldValidationPending = null, this.sendStartTypingInputBodyEvent = u()(() => this.props.onStartTypingInput(f.l.BODY)), this.sendStartTypingInputTitleEvent = u()(() => this.props.onStartTypingInput(f.l.TITLE)), this.sendStartTypingInputUrlEvent = u()(() => this.props.onStartTypingInput(f.l.URL)), this.onExternalAccountConnected = () => {
 						this.props.onExternalAccountsDataRequested()
@@ -22015,7 +22018,7 @@
 							const {
 								sourcePostRoot: e
 							} = this.props;
-							return e && o.a.createElement(Vu, {
+							return e && o.a.createElement(Wu, {
 								postId: e.id,
 								mediaProps: {
 									isExpando: !1,
@@ -22062,13 +22065,13 @@
 						})
 					}
 					const b = a && a.guidelinesText && a.guidelinesText.trim() || "";
-					return o.a.createElement(Wu, null, o.a.createElement(Hc, {
+					return o.a.createElement(Gu, null, o.a.createElement(Hc, {
 						submissionType: u,
 						submitMode: m
 					}), o.a.createElement(go, {
 						includeUserProfile: n,
 						allowCrosspostableOnly: !!c
-					}), !!b && o.a.createElement(Hu, null, b), o.a.createElement(Uu, null, u !== p.Lb.CROSSPOST && o.a.createElement(Fu, null), o.a.createElement(Gu, null, o.a.createElement(Jl, {
+					}), !!b && o.a.createElement(qu, null, b), o.a.createElement(Vu, null, u !== p.Lb.CROSSPOST && o.a.createElement(Au, null), o.a.createElement(Hu, null, o.a.createElement(Jl, {
 						onChange: this.sendStartTypingInputTitleEvent,
 						onKeyDown: this.handleKeyDown,
 						onPostFieldValidation: this.onPostFieldValidation
@@ -22128,7 +22131,7 @@
 					}), o.a.createElement(qe, null))
 				}
 			}
-			var Ju = qu(Object(r.b)(Ku, (e, {
+			var Yu = Ku(Object(r.b)(zu, (e, {
 					draftId: t,
 					sourcePostId: n,
 					pageLayer: s
@@ -22189,32 +22192,32 @@
 					...n,
 					onClearErrors: n => t.onClearErrors(e.hasError || e.hasSubmitValidationError, n),
 					onDiscardPromptOnNavigationConfirmed: () => t.onDiscardPromptOnNavigationConfirmed(e.discardGoesBack, e.subreddit)
-				}))(zu)),
-				Yu = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				Zu = n("./src/reddit/layout/page/Listing/index.tsx"),
-				Qu = n("./src/lib/makePostCreationPageKey/index.ts"),
-				Xu = n("./src/reddit/helpers/trackers/screenview.ts"),
-				$u = n("./src/telemetry/models/Timer.ts");
-			const em = Object(i.c)({
+				}))(Ju)),
+				Zu = n("./src/reddit/components/PostingSidebar/index.tsx"),
+				Qu = n("./src/reddit/layout/page/Listing/index.tsx"),
+				Xu = n("./src/lib/makePostCreationPageKey/index.ts"),
+				$u = n("./src/reddit/helpers/trackers/screenview.ts"),
+				em = n("./src/telemetry/models/Timer.ts");
+			const tm = Object(i.c)({
 					destSubreddit: j.h,
 					user: T.i
 				}),
-				tm = Object(r.b)(em, (e, {
+				nm = Object(r.b)(tm, (e, {
 					pageLayer: t
 				}) => ({
 					onResetForm: () => e(a.o(!1, t))
 				})),
-				nm = Object(_.t)({
+				sm = Object(_.t)({
 					draftId: _.u,
 					pageLayer: e => e
 				});
-			class sm extends s.Component {
+			class om extends s.Component {
 				componentDidMount() {
 					document.documentElement.scrollTop = document.body.scrollTop = 0;
 					const e = this.props.pageLayer;
 					if (e) {
-						const t = Object(Qu.a)(e.urlParams);
-						D.c.has(t) && this.props.sendEvent(Object(Xu.l)(t, $u.TimerType.InApp, D.c.end(t)))
+						const t = Object(Xu.a)(e.urlParams);
+						D.c.has(t) && this.props.sendEvent(Object($u.l)(t, em.TimerType.InApp, D.c.end(t)))
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
@@ -22229,16 +22232,16 @@
 						if (!t) return o.a.createElement(C.b, null);
 						if (Object(me.e)(t).toLowerCase() !== e.name.toLowerCase()) return o.a.createElement(C.a, null)
 					}
-					return o.a.createElement(Zu.a, {
+					return o.a.createElement(Qu.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: o.a.createElement("div", null),
-						content: o.a.createElement(o.a.Fragment, null, o.a.createElement(c.a, null), o.a.createElement(Ju, null)),
-						sidebar: o.a.createElement(Yu.a, null)
+						content: o.a.createElement(o.a.Fragment, null, o.a.createElement(c.a, null), o.a.createElement(Yu, null)),
+						sidebar: o.a.createElement(Zu.a, null)
 					})
 				}
 			}
-			t.default = nm(tm(Object(ps.c)(sm)))
+			t.default = sm(nm(Object(ps.c)(om)))
 		},
 		"./src/reddit/reducers/economics/paymentSystems/index.ts": function(e, t, n) {
 			"use strict";
@@ -24120,4 +24123,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b6eff7eee0eba3b727a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a7721e4fb9ee4330bfb7.js.map

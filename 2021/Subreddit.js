@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5b4f62dfd4e76c885ada.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.97f80236037bb529e5a9.js
+// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2016,8 +2016,8 @@
 				actionFont: "_2yyPZbzMoNrAUtQO_SktBd",
 				smallButtonFont: "_2_b2a8o6wkToROG8VNRtMR",
 				largeButtonFont: "_3Ls4y5dDOPfsU8368YWswn",
-				tabFont: "_2TXH3iCv_qoKnRDI_q5ehB",
 				strongTextFont: "_1VYMlogcTatyZdJyEPfw1t",
+				tabFont: "_2TXH3iCv_qoKnRDI_q5ehB",
 				buttonFontXS: "BKPBSYK3yGS2AhF1fd1an",
 				buttonFontXs: "BKPBSYK3yGS2AhF1fd1an",
 				buttonFontS: "_1l-KcydphK1LZ0DY8WNS7-",
@@ -13621,4 +13621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5b4f62dfd4e76c885ada.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.97f80236037bb529e5a9.js.map

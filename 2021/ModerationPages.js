@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.79888aff832478f0e44d.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5bc95765ac75f0d69f62.js
+// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -8858,8 +8858,8 @@
 				actionFont: "_2GGs_1qJNsgRTBkJjB3JyV",
 				smallButtonFont: "_1wMkSw4TKFwpURuJjoijc8",
 				largeButtonFont: "_37n4mei_IKI2b0S9cUN6kj",
-				tabFont: "_2uzD_ZiaRuda1gPntdeFV-",
 				strongTextFont: "_3iiIycx9Jvd-wtbZRRlyrS",
+				tabFont: "_2uzD_ZiaRuda1gPntdeFV-",
 				buttonFontXS: "X1zM6CuE0STTL567u2KEr",
 				buttonFontXs: "X1zM6CuE0STTL567u2KEr",
 				buttonFontS: "_35xxostuR-t_KnCQpTxb0F",
@@ -10634,8 +10634,8 @@
 				actionFont: "v0ITosHo9F3Rl2_llDtrc",
 				smallButtonFont: "_3Sxxei5IvhyFBFPSQeJemM",
 				largeButtonFont: "_-8HW12kqXpCzSoPxOQgrN",
-				tabFont: "_2TpZx4pScQqA92z2QTYbIk",
 				strongTextFont: "jPwoQR2t4sGD2BGLwCS0o",
+				tabFont: "_2TpZx4pScQqA92z2QTYbIk",
 				buttonFontXS: "_3hhxR89D6EPPCn0stnyDtx",
 				buttonFontXs: "_3hhxR89D6EPPCn0stnyDtx",
 				buttonFontS: "_2geB6McFSdWvuGRz3nyzjb",
@@ -10737,8 +10737,8 @@
 				actionFont: "_1YoZx3mOGBx4yxG_aQD3dq",
 				smallButtonFont: "_3eWaIQ1VVjPR_5vUm4bU74",
 				largeButtonFont: "rBsu7j_nL4EsDsP9nsEx4",
-				tabFont: "_3WOHej9q3BPonP3nmtGWrh",
 				strongTextFont: "_1efJllSuh9p67WrocQmmWR",
+				tabFont: "_3WOHej9q3BPonP3nmtGWrh",
 				buttonFontXS: "_1MX_r3WunmJuovmTcVFbK2",
 				buttonFontXs: "_1MX_r3WunmJuovmTcVFbK2",
 				buttonFontS: "_2KcOk-_dCdoa6LYzk-AP_9",
@@ -10777,8 +10777,8 @@
 				actionFont: "bD7YA5ocXtmwPNG0x7gqi",
 				smallButtonFont: "wa3Y6CP3s2WY-9hiMRcK6",
 				largeButtonFont: "_1Td1TQRNZA20xRbI-LLHsA",
-				tabFont: "_3Bdl5CdTghtfz5X9Qkn7y0",
 				strongTextFont: "_2bBsKMYboYeah9nlKp4p8e",
+				tabFont: "_3Bdl5CdTghtfz5X9Qkn7y0",
 				buttonFontXS: "_2hkAgq5O_JUGmz41U0fhSZ",
 				buttonFontXs: "_2hkAgq5O_JUGmz41U0fhSZ",
 				buttonFontS: "zi9zhcyy9sg1XQb4uP15B",
@@ -10824,8 +10824,8 @@
 				actionFont: "_250q84vRQ0qeydB79AJun",
 				smallButtonFont: "_3QKadDpX2GixU1usvLUiww",
 				largeButtonFont: "_24SnRKi2v2z3Q8DfWx8Cfd",
-				tabFont: "_1y1SLpqv4ViOdLE8d7R03R",
 				strongTextFont: "_1bRU6ybRMZMA-zL-dR_BFc",
+				tabFont: "_1y1SLpqv4ViOdLE8d7R03R",
 				buttonFontXS: "_3WZjqmvG0dFKc8UjITKDDM",
 				buttonFontXs: "_3WZjqmvG0dFKc8UjITKDDM",
 				buttonFontS: "_2wD06G9nLrctZ6G6-fnvzn",
@@ -12215,8 +12215,8 @@
 				actionFont: "_1F_YPbXlF7ItI0z0j2Kdvy",
 				smallButtonFont: "Irj9r66tO2hdWqbJx-vWa",
 				largeButtonFont: "_26FBjOBHlTgNO9o-fMxWOX",
-				tabFont: "_1DLO-Qu2r3PHt-swAklwVx",
 				strongTextFont: "_2umiFjo_kHT370YVhqkBUV",
+				tabFont: "_1DLO-Qu2r3PHt-swAklwVx",
 				buttonFontXS: "_2v4AgLqNSVXbMZLYk9vcId",
 				buttonFontXs: "_2v4AgLqNSVXbMZLYk9vcId",
 				buttonFontS: "_2MZUL_NnTj8rQV3EzNYnUE",
@@ -14750,8 +14750,8 @@
 				actionFont: "_3RLwRjy5tGM8nl4kID8Tfg",
 				smallButtonFont: "nb_OfRzzHKNkGteZC-TyY",
 				largeButtonFont: "_2fhzAdDCEdDseFevwE6mBQ",
-				tabFont: "_3E-egg7Cy7bL6JzsZuFTcn",
 				strongTextFont: "_2vvi6WI_4yX2H2H-b2aBCF",
+				tabFont: "_3E-egg7Cy7bL6JzsZuFTcn",
 				buttonFontXS: "_2ubuuRpTK-U-kDLRRU6pyd",
 				buttonFontXs: "_2ubuuRpTK-U-kDLRRU6pyd",
 				buttonFontS: "_2fsKOual6xDsvmfB9Z_Gab",
@@ -16977,8 +16977,8 @@
 				actionFont: "_3USAKL0kbrc0ZhCvZS-J4j",
 				smallButtonFont: "_2JaNUow_hy9X8yw0QFNOSg",
 				largeButtonFont: "_2QdyaDMXRLLL3gChJ0NOE9",
-				tabFont: "_1bq9fxhlMVaxA2GQdVomf4",
 				strongTextFont: "_3qauH8UCZvDtHIr65uebN5",
+				tabFont: "_1bq9fxhlMVaxA2GQdVomf4",
 				buttonFontXS: "_7W4YggPAccJm6b7j_5tM_",
 				buttonFontXs: "_7W4YggPAccJm6b7j_5tM_",
 				buttonFontS: "_2ZBn3QtRUE4GU3UTdoCOzY",
@@ -17260,8 +17260,8 @@
 				actionFont: "_1HQtdMEzh4gag8do4e9j7Z",
 				smallButtonFont: "zWcRyj2-0oiXHbpM-5L1A",
 				largeButtonFont: "_2PIOcp6QTxVygtl2u9ji_a",
-				tabFont: "UtQUA6_scmmMeiLaweTg2",
 				strongTextFont: "_2adE8ldKa4w_dETRAs-vdP",
+				tabFont: "UtQUA6_scmmMeiLaweTg2",
 				buttonFontXS: "_10ruUMhuBmxZqA1yF_MlA9",
 				buttonFontXs: "_10ruUMhuBmxZqA1yF_MlA9",
 				buttonFontS: "_1TFRBw_YwgrsDelv1Pi-SM",
@@ -20476,8 +20476,8 @@
 				actionFont: "_2dfa5IRwlqKVb61Lr36T98",
 				smallButtonFont: "_20OTyO3PvAmgnQP4SoJgGt",
 				largeButtonFont: "_2nrHVa4dyedAaDcfRLLE5z",
-				tabFont: "_3Bpld0JoC9VmYlZZ5Dyms1",
 				strongTextFont: "_25hN89q-zD6Y-U11Y_e4aZ",
+				tabFont: "_3Bpld0JoC9VmYlZZ5Dyms1",
 				buttonFontXS: "_3XRjGQkKxJfyJwAacQAlPW",
 				buttonFontXs: "_3XRjGQkKxJfyJwAacQAlPW",
 				buttonFontS: "_1isM0DTxp9b21BN1s-ZwZ_",
@@ -22377,4 +22377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.79888aff832478f0e44d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5bc95765ac75f0d69f62.js.map
