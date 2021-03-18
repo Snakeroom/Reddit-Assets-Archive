@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.b83605783f189f194d8c.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.e76c26f12308cd325835.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -7,7 +7,7 @@
 			s.r(t), s.d(t, "renderMedia", (function() {
 				return G
 			})), s.d(t, "SearchResultsClassicPost", (function() {
-				return Z
+				return J
 			}));
 			var o = s("./node_modules/react/index.js"),
 				r = s.n(o),
@@ -78,8 +78,8 @@
 						isCheckboxSelected: z,
 						isCurrentUserProfilePost: K,
 						isFrontpage: H,
-						isGalleryTileLayoutDefault: Z,
-						isLoggedIn: J,
+						isGalleryTileLayoutDefault: J,
+						isLoggedIn: Z,
 						isOverlay: Q,
 						imageGalleryCurrentItem: Y,
 						moderatorPermissions: q,
@@ -105,7 +105,7 @@
 						inSubredditOrProfile: i,
 						isCurrentUserProfilePost: K,
 						isOverlay: Q,
-						shouldShowSubscribeButton: !(H && J),
+						shouldShowSubscribeButton: !(H && Z),
 						subredditOrProfile: le
 					}, ke = Object(a.t)(oe, Y), {
 						source: Se
@@ -224,7 +224,7 @@
 							hide: !Ce,
 							report: !Ce
 						})
-					})), r.a.createElement(h.d, null))), G(oe, ne, o, ue, Z)));
+					})), r.a.createElement(h.d, null))), G(oe, ne, o, ue, J)));
 					return r.a.createElement(S.b, null, je)
 				}
 			}
@@ -245,7 +245,7 @@
 					showFull: !0
 				}),
 				H = Object(i.a)(z),
-				Z = Object(_.b)(Object(w.a)(H));
+				J = Object(_.b)(Object(w.a)(H));
 			t.default = Object(T.a)(H)
 		},
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -279,7 +279,7 @@
 		"./src/reddit/components/CommentsPageNativeAd/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "SearchResultsCommentsPageNativeAd", (function() {
-				return Z
+				return J
 			}));
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -526,7 +526,7 @@
 				}
 			}
 			const H = Object(l.a)(K),
-				Z = Object(V.a)(H);
+				J = Object(V.a)(H);
 			t.default = Object(U.a)(G(H))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
@@ -601,7 +601,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: h.k,
 					isExpanded: h.l,
-					isLoggedIn: b.K,
+					isLoggedIn: b.J,
 					moderatorPermissions: u.j,
 					modModeEnabled: d.Q,
 					poll: (e, t) => {
@@ -727,4 +727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.b83605783f189f194d8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.e76c26f12308cd325835.js.map

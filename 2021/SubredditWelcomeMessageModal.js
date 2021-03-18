@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.dfa3496c6814468b4310.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.0a4abf2cfda3a4996da8.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -461,7 +461,7 @@
 				h = s.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.W
+					isNightmodeOn: m.V
 				}));
 			t.a = f(e => {
 				const t = {
@@ -556,7 +556,7 @@
 						style: t
 					}, e.children)
 				},
-				k = Object(i.b)(() => Object(d.a)(x.C, g.cb, (e, {
+				k = Object(i.b)(() => Object(d.a)(x.C, g.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(x.b)(e, s) : null, (e, t, s) => ({
@@ -1738,7 +1738,7 @@
 							{
 								H: n,
 								D: r
-							} = F(e.a),
+							} = W(e.a),
 							{
 								c: i = []
 							} = e;
@@ -1842,16 +1842,16 @@
 						f: s,
 						t: r
 					} = e, o = [];
-					if (!s) return W(0, r, t);
+					if (!s) return F(0, r, t);
 					const i = Object(n.a)(r);
 					let a = 0,
 						d = 0;
 					const c = s.length;
 					for (; a < c; a++) {
 						const [e, t, n] = s[a], c = t + n, l = i[t], u = i[c] - l;
-						l > d && o.push(W(0, r.substr(d, l - d), `between${a}`)), o.push(W(e, r.substr(l, u), a)), d = l + u
+						l > d && o.push(F(0, r.substr(d, l - d), `between${a}`)), o.push(F(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && o.push(W(0, r.substr(d), `remaining${a}`)), o
+					return d < r.length && o.push(F(0, r.substr(d), `remaining${a}`)), o
 				},
 				U = {
 					[p.j.monospace]: d.h,
@@ -1862,13 +1862,13 @@
 					[p.j.subscript]: d.l,
 					[p.j.superscript]: d.m
 				},
-				W = (e, t, s) => {
+				F = (e, t, s) => {
 					let n = t;
 					return n = o()(U, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
-				F = e => {
+				W = e => {
 					switch (e) {
 						case p.f:
 							return {
@@ -2067,7 +2067,7 @@
 				fbt: O
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = {}, k = Object(i.c)({
 				currentSubredditId: x.c,
-				user: v.j,
+				user: v.i,
 				prefersReducedAnimation: E.c,
 				subredditIcon: g.b,
 				welcomeMessageObject: y.b
@@ -2448,4 +2448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.dfa3496c6814468b4310.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.0a4abf2cfda3a4996da8.js.map

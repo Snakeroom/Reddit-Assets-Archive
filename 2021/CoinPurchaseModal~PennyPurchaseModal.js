@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.7ab2ebf9d43d9345f442.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.d1d432f14d01a0d1f2fb.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PennyPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -870,7 +870,7 @@
 							const e = r.body.data.createEconPayment;
 							if (e && e.errors && e.errors.length) return void s(Object(y.stripeApiError)(M(e.errors)));
 							if (e.ok && "PAID" !== e.payment.status) return void p();
-							const t = Object(b.j)(c());
+							const t = Object(b.i)(c());
 							t && s(Q({
 								subredditId: n,
 								powerupsCount: o,
@@ -921,7 +921,7 @@
 						if (m && m.ok) {
 							const e = m.body.data.createEconPayment;
 							if (e && e.errors && e.errors.length) return a(Object(y.paypalApiError)(M(e.errors))), null;
-							const s = Object(b.j)(o());
+							const s = Object(b.i)(o());
 							if (e.ok) {
 								const {
 									status: o
@@ -1945,4 +1945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.7ab2ebf9d43d9345f442.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.d1d432f14d01a0d1f2fb.js.map

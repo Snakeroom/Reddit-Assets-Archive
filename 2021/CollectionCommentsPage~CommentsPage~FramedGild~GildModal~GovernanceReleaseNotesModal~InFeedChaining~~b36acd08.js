@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.ed61ff8b1d2e9c5ec6f5.js
-// Retrieved at 3/18/2021, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.3614005ecaf1d02606db.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -1080,10 +1080,10 @@
 				Ke = 6e3,
 				Ze = 100,
 				Qe = Object(c.b)(() => Object(d.c)({
-					isLoggedIn: j.K,
+					isLoggedIn: j.J,
 					autoplayPref: j.b,
 					currentTime: A.c,
-					currentUser: j.j,
+					currentUser: j.i,
 					inVideoMegafailExperiment: B.a,
 					isOverlayOpen: H.h,
 					loadTimes: A.f,
@@ -1515,7 +1515,7 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = `Reddit/Version Build be5df9785a883aecf219a8ef939179d2ab09a37e-production ${t}`;
+									let s = `Reddit/Version Build fde8c099d0f768569f446352509756773167dad4-production ${t}`;
 									return n && (s += ` [${w.td}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
@@ -2420,4 +2420,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.ed61ff8b1d2e9c5ec6f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.3614005ecaf1d02606db.js.map

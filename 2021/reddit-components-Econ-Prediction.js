@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.5a133c29249aade4edf0.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.73056b380f0f0cb555c6.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -122,7 +122,7 @@
 				E = (a, i, r, x) => async (t, k, {
 					gqlContext: n
 				}) => {
-					const o = Object(p.K)(k()),
+					const o = Object(p.J)(k()),
 						s = await Object(m.h)(n(), {
 							subredditId: a,
 							period: i,
@@ -1714,8 +1714,8 @@
 				post: G.D,
 				subredditOrProfile: G.P,
 				userCoins: E.d,
-				userIsLoggedIn: E.K,
-				userId: E.pb
+				userIsLoggedIn: E.J,
+				userId: E.ob
 			}), oi = {
 				onPredictionResolve: l.j,
 				onPredictionVote: l.k,
@@ -1917,9 +1917,9 @@
 				subredditId: r
 			}) {
 				var x;
-				const p = Object(k.e)(c.W),
-					f = Object(k.e)(c.j),
-					d = Object(k.e)(c.C),
+				const p = Object(k.e)(c.V),
+					f = Object(k.e)(c.i),
+					d = Object(k.e)(c.B),
 					u = Object(k.e)(a => Object(l.b)(a, {
 						subredditId: r
 					}));
@@ -2399,4 +2399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.5a133c29249aade4edf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.73056b380f0f0cb555c6.js.map

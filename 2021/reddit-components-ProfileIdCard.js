@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cc692347f2a7e58d0cdb.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.959313f822c4dbbe0a53.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -50,7 +50,7 @@
 				})), await e(Object(a.g)(o.a.SNOOVATAR_MODAL))
 			}, m = e => async (t, r) => {
 				const i = r();
-				Object(n.a)(Object(d.a)(e)(i)), Object(c.K)(i) ? await t(Object(a.h)(o.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
+				Object(n.a)(Object(d.a)(e)(i)), Object(c.J)(i) ? await t(Object(a.h)(o.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
 			}
 		},
 		"./src/reddit/actions/subscription/constants.ts": function(e, t, r) {
@@ -192,10 +192,10 @@
 						name: `${s.Wb}${e.name}`,
 						type: e.type
 					});
-					if (!Object(N.K)(c())) return a(Object(d.k)({
+					if (!Object(N.J)(c())) return a(Object(d.k)({
 						actionSource: d.a.Subscribe
 					})), void a(Object(o.j)());
-					const h = Object(N.j)(c());
+					const h = Object(N.i)(c());
 					if (h) {
 						const t = v.length,
 							r = e.length;
@@ -338,7 +338,7 @@
 				}) => {
 					const i = r(),
 						o = i.multireddits.models;
-					if (!Object(N.K)(i)) return;
+					if (!Object(N.J)(i)) return;
 					const d = (e = !0) => {
 							t(Object(l.f)({
 								text: n.fbt._("Sorry, failed to {followAction}", [n.fbt._param("followAction", e ? n.fbt._("follow", null, {
@@ -678,7 +678,7 @@
 				F = r.n(L);
 			const B = Object(p.a)(I.j, (e, {
 					profileName: t
-				}) => Object(_.ub)(e, t), (e, t) => ({
+				}) => Object(_.tb)(e, t), (e, t) => ({
 					awardeeKarma: t ? t.awardeeKarma : 0,
 					awarderKarma: t ? t.awarderKarma : 0,
 					commentKarma: t ? t.commentKarma : 0,
@@ -751,8 +751,8 @@
 				X = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				Y = r("./src/reddit/icons/svgs/Settings/index.tsx"),
 				V = r("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.tsx"),
-				Q = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
-				J = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserBanner/index.tsx"),
+				J = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
+				Q = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserBanner/index.tsx"),
 				$ = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserName.tsx"),
 				ee = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserIcon/index.m.less"),
 				te = r.n(ee),
@@ -776,7 +776,7 @@
 					userCreated: v,
 					username: g,
 					url: h
-				}) => s.a.createElement(s.a.Fragment, null, s.a.createElement(J.a, {
+				}) => s.a.createElement(s.a.Fragment, null, s.a.createElement(Q.a, {
 					bannerBackgroundImage: e,
 					editMode: !!t,
 					isNSFW: d,
@@ -829,7 +829,7 @@
 					href: `${G.a.redditUrl}/premium`
 				}, s.a.createElement(X.a, {
 					className: te.a.premiumIcon
-				})), c && s.a.createElement(Q.a, {
+				})), c && s.a.createElement(J.a, {
 					currentUserHasSnoovatar: !1,
 					isOwnProfile: !0,
 					onClick: l
@@ -1097,8 +1097,8 @@
 				a = r("./src/reddit/actions/preferences.ts"),
 				i = r("./src/reddit/selectors/user.ts");
 			const o = Object(s.c)({
-					currentUser: i.j,
-					hideNSFWPref: i.C
+					currentUser: i.i,
+					hideNSFWPref: i.B
 				}),
 				d = Object(n.b)(o, e => ({
 					imageUpdateRequested: (t, r) => e(Object(a.B)(t, r))
@@ -1517,8 +1517,8 @@
 					coinsToSpend: x.d,
 					givePremiumModalIsOpen: R.c,
 					hasFetchedModerators: v.k,
-					isEmployee: x.H,
-					isLoggedIn: x.K,
+					isEmployee: x.G,
+					isLoggedIn: x.J,
 					profile: v.j,
 					crisisFlowEnabled: A.b
 				}),
@@ -1698,10 +1698,10 @@
 			const {
 				fbt: Y
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = Object(i.c)({
-				account: x.j,
+				account: x.i,
 				activeTooltipId: h.a,
 				currentUserHasSubreddit: x.f,
-				hideNSFWPref: x.C,
+				hideNSFWPref: x.B,
 				isModerator: v.f,
 				prefersReducedAnimations: C.c,
 				profile: v.j,
@@ -1715,16 +1715,16 @@
 				structuredStyle: (e, t) => Object(g.m)(e, Object(v.m)(e, t.profileName)),
 				userHasSubreddit: (e, {
 					profileName: t
-				}) => Object(x.ob)(e, {
+				}) => Object(x.nb)(e, {
 					userName: t
 				}),
 				user: (e, {
 					profileName: t
-				}) => Object(x.nb)(e, {
+				}) => Object(x.mb)(e, {
 					userName: t
 				}),
 				page: b.b
-			}), Q = ({
+			}), J = ({
 				username: e,
 				currentUserHasSubreddit: t
 			}) => s.a.createElement("div", {
@@ -1734,7 +1734,7 @@
 				to: t ? `/user/${e}/submit` : "/submit"
 			}, Y._("New Post", null, {
 				hk: "2VCZwF"
-			}))), J = ({
+			}))), Q = ({
 				profileName: e,
 				onToggleFollow: t,
 				userIsSubscriber: r
@@ -1815,10 +1815,10 @@
 					prefersReducedAnimations: !!x,
 					snoovatarUrl: N,
 					topAwardIcon: b,
-					actions: s.a.createElement(s.a.Fragment, null, S && !o && Q({
+					actions: s.a.createElement(s.a.Fragment, null, S && !o && J({
 						username: y,
 						currentUserHasSubreddit: r
-					}), !S && v && J({
+					}), !S && v && Q({
 						profileName: y,
 						onToggleFollow: c,
 						userIsSubscriber: L
@@ -2403,11 +2403,11 @@
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const i = e => n.b.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.K,
+					experimentEligibilitySelector: a.J,
 					experimentName: n.g
 				}),
 				o = e => n.d.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.K,
+					experimentEligibilitySelector: a.J,
 					experimentName: n.j
 				})
 		},
@@ -2438,4 +2438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cc692347f2a7e58d0cdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.959313f822c4dbbe0a53.js.map

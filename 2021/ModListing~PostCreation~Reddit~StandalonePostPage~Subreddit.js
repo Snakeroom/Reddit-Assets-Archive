@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.a4b06b8ecba63d18ce5c.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.ae691473d9bd7213aecb.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, i) {
@@ -871,7 +871,7 @@
 				O = Object(u.t)();
 			t.b = O(e => {
 				const t = Object(p.a)(),
-					i = Object(l.e)(g.W);
+					i = Object(l.e)(g.V);
 				let o, a, c;
 				if (e.subredditOrProfile) {
 					const {
@@ -1058,10 +1058,10 @@
 				}).apply(this, arguments)
 			}
 			const g = Object(s.c)({
-					currentUser: p.j,
-					isNightMode: p.W,
-					shouldHideNSFW: p.C,
-					user: p.nb
+					currentUser: p.i,
+					isNightMode: p.V,
+					shouldHideNSFW: p.B,
+					user: p.mb
 				}),
 				b = Object(l.b)(g);
 			t.a = b(e => {
@@ -1764,7 +1764,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const w = Object(d.a)(v.a, v.j, (e, {
+			const w = Object(d.a)(v.a, v.i, (e, {
 					isSponsored: t,
 					postId: i
 				}) => t && i ? Object(x.b)(e, i) : null, x.D, (e, t, i, n) => ({
@@ -2735,4 +2735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.a4b06b8ecba63d18ce5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.ae691473d9bd7213aecb.js.map

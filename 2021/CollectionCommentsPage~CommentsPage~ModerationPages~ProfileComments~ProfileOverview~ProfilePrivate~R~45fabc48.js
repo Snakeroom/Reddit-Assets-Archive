@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.a535c941b641d36197ff.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.20e2c35e7f46d19d1b87.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -939,7 +939,7 @@
 					isChatPost: C.d,
 					isPostSEOEligible: j.e,
 					postPermalink: E.C,
-					shouldOpenPostInNewTab: k.cb,
+					shouldOpenPostInNewTab: k.bb,
 					totalDiscount: g.a,
 					variantAnimationConfig: g.e
 				})),
@@ -1555,7 +1555,7 @@
 					claimedFreeAward: j.b,
 					isInIcons2020: le.a,
 					layout: W.O,
-					userIsOp: U.qb,
+					userIsOp: U.pb,
 					subreddit: W.q
 				}),
 				ge = Object(i.b)(Ce, (e, {
@@ -2286,7 +2286,7 @@
 				}) => t ? Object(I.T)(e, {
 					subredditId: t
 				}) : void 0,
-				user: y.j
+				user: y.i
 			});
 			class B extends i.a.PureComponent {
 				constructor() {
@@ -2915,7 +2915,7 @@
 						pageLayer: n
 					}) => Object(X.B)(e, {
 						pageLayer: n
-					}) && t && s && Object(me.ob)(e, {
+					}) && t && s && Object(me.nb)(e, {
 						userName: o.author
 					}),
 					hasSubredditRules: ue.j,
@@ -4990,10 +4990,10 @@
 				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
 			const i = e => o.e.Enabled === Object(n.c)(e, {
-				experimentEligibilitySelector: r.K,
+				experimentEligibilitySelector: r.J,
 				experimentName: o.i
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.a535c941b641d36197ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.20e2c35e7f46d19d1b87.js.map

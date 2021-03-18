@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f3770f96c08fcfd05d76.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.948a825d8f9b691d8220.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -782,10 +782,10 @@
 						name: `${r.Wb}${e.name}`,
 						type: e.type
 					});
-					if (!Object(O.K)(c())) return i(Object(d.k)({
+					if (!Object(O.J)(c())) return i(Object(d.k)({
 						actionSource: d.a.Subscribe
 					})), void i(Object(a.j)());
-					const x = Object(O.j)(c());
+					const x = Object(O.i)(c());
 					if (x) {
 						const t = f.length,
 							n = e.length;
@@ -928,7 +928,7 @@
 				}) => {
 					const o = n(),
 						a = o.multireddits.models;
-					if (!Object(O.K)(o)) return;
+					if (!Object(O.J)(o)) return;
 					const d = (e = !0) => {
 							t(Object(l.f)({
 								text: s.fbt._("Sorry, failed to {followAction}", [s.fbt._param("followAction", e ? s.fbt._("follow", null, {
@@ -1530,8 +1530,8 @@
 			const x = "create-community-button",
 				_ = g.a.wrapped(c.c, "StyledTooltip", f.a),
 				E = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.hb)(e),
-					userIsSuspended: b.P
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.gb)(e),
+					userIsSuspended: b.O
 				});
 			t.a = Object(o.b)(E, (e, {
 				eventSource: t
@@ -1964,7 +1964,7 @@
 				}).apply(this, arguments)
 			}
 			const B = Object(u.c)({
-				isLoggedIn: P.K
+				isLoggedIn: P.J
 			});
 			var L = Object(o.b)(B, e => ({
 				openLoginModal: () => {
@@ -2294,7 +2294,7 @@
 				Et = Object(it.a)("spBadges", st.a),
 				Ct = Object(u.c)({
 					badgesEnabled: Te.d.spBadges,
-					currentUser: P.j,
+					currentUser: P.i,
 					userFlairData: ct.c,
 					userHasBadge: (e, t) => {
 						const n = e.user.account;
@@ -2379,8 +2379,8 @@
 				Bt = Object(u.c)({
 					isInIcons2020: We.a,
 					shouldShowFlairPicker: ct.b,
-					stylesDisabledForSubreddit: P.jb,
-					stylesDisabledGlobally: P.kb
+					stylesDisabledForSubreddit: P.ib,
+					stylesDisabledGlobally: P.jb
 				});
 			class Lt extends i.a.Component {
 				constructor(e) {
@@ -2470,7 +2470,7 @@
 					isContributorRequestPending: e => Object(re.g)(e, qe.e.Post),
 					isInCategoriesExperiment: ze.a,
 					isInIcons2020: We.a,
-					isLoggedIn: P.K,
+					isLoggedIn: P.J,
 					isTopicLinksEnabled: Je.a,
 					moderatorPermissions: (e, t) => {
 						const n = Object(re.F)(e, t.listingName);
@@ -4569,7 +4569,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.H)(e) || s.A.Treatment1 === Object(r.c)(e, {
+				return Object(i.G)(e) || s.A.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.u
 				})
@@ -4658,4 +4658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f3770f96c08fcfd05d76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.948a825d8f9b691d8220.js.map

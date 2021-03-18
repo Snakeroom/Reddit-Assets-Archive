@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.c5f09b721835aa050a18.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.9e4ad2a315bafe4f48b0.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, r) {
@@ -972,7 +972,7 @@
 					}) => Object(m.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: F.cb
+					shouldOpenPostInNewTab: F.bb
 				}),
 				W = e => {
 					const {
@@ -1168,7 +1168,7 @@
 				g = r("./src/reddit/components/VerticalVotes/index.m.less"),
 				v = r.n(g);
 			const x = Object(i.c)({
-					isNightmode: h.W,
+					isNightmode: h.V,
 					totalDiscount: b.d,
 					variantAnimationConfig: b.e
 				}),
@@ -2855,7 +2855,7 @@
 					minSize: t,
 					userName: r
 				}) => {
-					const n = Object(i.nb)(e, {
+					const n = Object(i.mb)(e, {
 						userName: r
 					});
 					if (n && n.awardedLastMonth && n.awardedLastMonth.topAward) return p(e, {
@@ -3045,4 +3045,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.c5f09b721835aa050a18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.9e4ad2a315bafe4f48b0.js.map

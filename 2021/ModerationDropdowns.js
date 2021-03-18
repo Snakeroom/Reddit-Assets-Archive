@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.ac062fd787de4661530d.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.62fda9bb8cf98dde476d.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -497,8 +497,8 @@
 				R = s("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
 				j = s("./src/reddit/constants/experiments.ts"),
 				I = s("./src/reddit/endpoints/crowdControl/index.ts"),
-				L = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				N = s("./src/reddit/helpers/matchRedditUrls/index.ts"),
+				N = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				L = s("./src/reddit/helpers/matchRedditUrls/index.ts"),
 				P = s("./src/reddit/models/Post/index.ts"),
 				D = s("./src/reddit/selectors/user.ts");
 			var S = s("./src/reddit/icons/svgs/SettingsWithShield/index.tsx");
@@ -510,8 +510,8 @@
 				F = () => void 0,
 				T = Object(a.c)({
 					crowdControlLevelEnabled: b.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => j.Gc.Enabled === Object(L.c)(e, {
-						experimentEligibilitySelector: D.L,
+					postLevelCrowdControlEnabled: e => j.Gc.Enabled === Object(N.c)(e, {
+						experimentEligibilitySelector: D.K,
 						experimentName: j.wc
 					}),
 					shouldApplyPostLevelCrowdControl: (e, {
@@ -522,7 +522,7 @@
 						if (o && o !== I.a.Off) return !0;
 						if (t.crosspostRootId) return e.posts.isTrackingCrossposts[t.crosspostRootId];
 						if (t.source && t.source.url) {
-							const o = Object(N.a)(t.source.url);
+							const o = Object(L.a)(t.source.url);
 							if (o) {
 								const t = null === (s = o[0]) || void 0 === s ? void 0 : s.components;
 								if (t && t.hasOwnProperty("postID36")) {
@@ -557,14 +557,14 @@
 						onModToMemberShareOpened: k,
 						onSpamPost: j,
 						onStickyPost: I,
-						onSpoilerPost: L,
-						post: N
-					} = e, P = N.flair.filter(e => e.type !== M.f.Nsfw && e.type !== M.f.Spoiler).length > 0, D = Object(w.b)(N), T = !(!N.approvedBy || !D), A = !i && l === O.g.Compact, B = Object(g.a)(e.post), W = p ? y : F;
-					return n.a.createElement(R.e, null, o && n.a.createElement(n.a.Fragment, null, !N.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(R.c, {
+						onSpoilerPost: N,
+						post: L
+					} = e, P = L.flair.filter(e => e.type !== M.f.Nsfw && e.type !== M.f.Spoiler).length > 0, D = Object(w.b)(L), T = !(!L.approvedBy || !D), A = !i && l === O.g.Compact, B = Object(g.a)(e.post), W = p ? y : F;
+					return n.a.createElement(R.e, null, o && n.a.createElement(n.a.Fragment, null, !L.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(R.c, {
 						className: W(E.a.Approve, A),
 						displayText: T ? _.fbt._("reapprove", null, {
 							hk: "ZucfK"
-						}) : N.approvedBy ? _.fbt._("approved", null, {
+						}) : L.approvedBy ? _.fbt._("approved", null, {
 							hk: "nlSCc"
 						}) : _.fbt._("approve", null, {
 							hk: "4GoeOE"
@@ -572,7 +572,7 @@
 						onClick: m
 					}, n.a.createElement(R.a, null)), n.a.createElement(R.c, {
 						className: W(E.a.Remove, A),
-						displayText: N.isRemoved ? _.fbt._("removed", null, {
+						displayText: L.isRemoved ? _.fbt._("removed", null, {
 							hk: "cSGLt"
 						}) : _.fbt._("remove", null, {
 							hk: "4mKe0F"
@@ -580,7 +580,7 @@
 						onClick: v
 					}, n.a.createElement(R.g, null)), n.a.createElement(R.c, {
 						className: W(E.a.Spam, A),
-						displayText: N.isSpam ? _.fbt._("Removed as spam", null, {
+						displayText: L.isSpam ? _.fbt._("Removed as spam", null, {
 							hk: "2olZT7"
 						}) : _.fbt._("Remove as spam", null, {
 							hk: "4A9ZT8"
@@ -599,8 +599,8 @@
 							hk: "2XMBQE"
 						}),
 						onClick: k
-					}, n.a.createElement(R.d, null)), !N.isRemoved && !d && n.a.createElement(R.b, {
-						isSelected: N.isStickied,
+					}, n.a.createElement(R.d, null)), !L.isRemoved && !d && n.a.createElement(R.b, {
+						isSelected: L.isStickied,
 						onClick: I,
 						text: _.fbt._("Sticky post", null, {
 							hk: "3uXoIh"
@@ -612,31 +612,31 @@
 							hk: "3cCdJd"
 						})
 					}), n.a.createElement(R.b, {
-						isSelected: N.isLocked,
+						isSelected: L.isLocked,
 						onClick: h,
 						text: _.fbt._("Lock comments", null, {
 							hk: "YAV8n"
 						})
 					}), !B && n.a.createElement(R.b, {
-						isSelected: N.isOriginalContent,
+						isSelected: L.isOriginalContent,
 						onClick: b,
 						text: _.fbt._("Mark as OC", null, {
 							hk: "4yx2EO"
 						})
 					}), n.a.createElement(R.b, {
-						isSelected: N.isNSFW,
+						isSelected: L.isNSFW,
 						onClick: C,
 						text: _.fbt._("Mark as NSFW", null, {
 							hk: "8QQ2f"
 						})
-					}), s && "subreddit" === N.belongsTo.type && (e.shouldApplyPostLevelCrowdControl || e.crowdControlLevelEnabled && e.postLevelCrowdControlEnabled) && n.a.createElement(R.c, {
+					}), s && "subreddit" === L.belongsTo.type && (e.shouldApplyPostLevelCrowdControl || e.crowdControlLevelEnabled && e.postLevelCrowdControlEnabled) && n.a.createElement(R.c, {
 						displayText: _.fbt._("Adjust crowd Control", null, {
 							hk: "28dSIi"
 						}),
 						onClick: f
 					}, n.a.createElement(S.a, null)), n.a.createElement(R.b, {
-						isSelected: N.isSpoiler,
-						onClick: L,
+						isSelected: L.isSpoiler,
+						onClick: N,
 						text: _.fbt._("Mark as Spoiler", null, {
 							hk: "1IlEnE"
 						})
@@ -708,7 +708,7 @@
 						post: R,
 						sendEvent: j,
 						tooltipId: I
-					} = e, L = R.distinguishType === i.C.MODERATOR, N = L ? i.C.NONE : i.C.MODERATOR, P = Object(m.b)(R.id, c);
+					} = e, N = R.distinguishType === i.C.MODERATOR, L = N ? i.C.NONE : i.C.MODERATOR, P = Object(m.b)(R.id, c);
 					return n.a.createElement(z, {
 						className: W.a.dropdown,
 						isOpen: r,
@@ -717,7 +717,7 @@
 						canEditFlair: t,
 						hasModFullPerms: s,
 						hasModPostPerms: o,
-						isDistinguished: L,
+						isDistinguished: N,
 						isModToMemberShareEnabled: a,
 						isOverlay: c,
 						isPostAuthor: d,
@@ -734,7 +734,7 @@
 							O(), j(Object(f.i)("spam", R.id))
 						},
 						onDistinguishPost: () => {
-							h(N), j(Object(f.i)(L ? "undistinguish" : "distinguish", R.id))
+							h(L), j(Object(f.i)(N ? "undistinguish" : "distinguish", R.id))
 						},
 						onFlairPost: () => {
 							C(P), j(Object(f.i)("post_flair", R.id))
@@ -1524,4 +1524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.ac062fd787de4661530d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.62fda9bb8cf98dde476d.js.map

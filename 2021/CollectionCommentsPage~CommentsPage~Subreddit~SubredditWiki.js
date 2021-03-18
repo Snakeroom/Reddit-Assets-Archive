@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.993680af94c5b5e76829.js
-// Retrieved at 3/18/2021, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b7cdd424f3a378c77d71.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -197,7 +197,7 @@
 				v = (e, t, r, n) => async (s, i, {
 					gqlContext: a
 				}) => {
-					const o = Object(p.K)(i()),
+					const o = Object(p.J)(i()),
 						c = await Object(d.h)(a(), {
 							subredditId: e,
 							period: t,
@@ -985,8 +985,8 @@
 						className: U.a.powerupIcon
 					}), a))
 				},
-				H = r("./src/reddit/components/PowerupsSidebar/Supporters/index.m.less"),
-				V = r.n(H);
+				V = r("./src/reddit/components/PowerupsSidebar/Supporters/index.m.less"),
+				H = r.n(V);
 			const {
 				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = 100, z = 302, Y = 40, J = e => `${e.lastSupportedAt}__${e.score}`, G = (e, t) => ({
@@ -1025,7 +1025,7 @@
 						className: e
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(j.a)(V.a.container, e)
+						className: Object(j.a)(H.a.container, e)
 					}, s.a.createElement(C.TransitionMotion, {
 						willLeave: X,
 						willEnter: Q,
@@ -1040,16 +1040,16 @@
 					}, e => s.a.createElement(s.a.Fragment, null, e.map(e => {
 						const t = !e.data.isInitial && 1 === e.style.motionProgress;
 						return s.a.createElement("div", {
-							className: V.a.item,
+							className: H.a.item,
 							key: e.key,
 							style: {
 								zIndex: t ? 100 : "unset"
 							}
 						}, t && s.a.createElement("div", {
-							className: V.a.animation,
+							className: H.a.animation,
 							ref: Z
 						}), s.a.createElement("div", {
-							className: V.a.itemCropper,
+							className: H.a.itemCropper,
 							style: {
 								...e.style
 							}
@@ -1071,7 +1071,7 @@
 			const {
 				fbt: re
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(o.c)({
-				currentUser: g.j,
+				currentUser: g.i,
 				powerups: h.i,
 				subreddit: x.T,
 				topSupporters: h.k,
@@ -1534,7 +1534,7 @@
 			}) {
 				const t = Object(i.d)(),
 					r = Object(B.a)(),
-					a = Object(R.K)(r),
+					a = Object(R.L)(r),
 					[o, d] = Object(n.useState)(!1),
 					c = Object(i.e)(t => Object(D.T)(t, {
 						subredditId: e
@@ -1559,16 +1559,16 @@
 			}
 			var M = r("./src/lib/constants/index.ts");
 			const {
-				fbt: H
+				fbt: V
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			const V = Object(d.t)(),
+			const H = Object(d.t)(),
 				q = [M.Db.SUBREDDIT, M.Db.COMMENTS, M.Db.COLLECTION_COMMENTS],
 				K = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && q.indexOf(t.pageLayer.meta.name) > -1,
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.L)(t.pageLayer)
 				});
-			var z = V(Object(i.b)(K, (e, t) => ({
+			var z = H(Object(i.b)(K, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(m.p)({
 						subredditId: t.subredditId,
 						forceState: !1
@@ -1589,7 +1589,7 @@
 						onClick: e => {
 							r && (e.preventDefault(), o())
 						}
-					}, H._("Posts", null, {
+					}, V._("Posts", null, {
 						hk: "36nXSp"
 					}))
 				}))),
@@ -1680,36 +1680,6 @@
 				key: r,
 				menuItem: t
 			})))))))
-		},
-		"./src/reddit/components/TitleTagManager/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js"),
-				s = r.n(n),
-				i = r("./node_modules/react-helmet/es/Helmet.js"),
-				a = r("./node_modules/react-redux/es/index.js"),
-				o = r("./node_modules/reselect/es/index.js"),
-				d = r("./src/lib/pageTitle.ts"),
-				c = r("./src/reddit/helpers/tabBadging/index.ts"),
-				l = r("./src/reddit/selectors/appBadges.ts");
-			const m = Object(o.a)(l.c, e => ({
-				badgeCount: e
-			}));
-			class u extends n.Component {
-				constructor() {
-					super(...arguments), this.title = Object(d.c)().toString(), this.state = {
-						badgeCount: 0
-					}
-				}
-				getTitle() {
-					const e = this.props.title.length > 0 ? this.props.title : Object(d.c)().toString(),
-						t = this.props.badgeCount >= 100 ? "99+" : this.props.badgeCount;
-					return this.props.badgeCount > 0 ? `(${t}) ${this.props.title}` : e
-				}
-				render() {
-					return Object(c.b)(this.props.badgeCount > 0), s.a.createElement(i.b, null, s.a.createElement("title", null, this.getTitle()))
-				}
-			}
-			t.a = Object(a.b)(m)(u)
 		},
 		"./src/reddit/components/Widgets/Button/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2165,7 +2135,7 @@
 				N = u.a.wrapped(o.a, "RawHTMLDisplay", v.a);
 			var I = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: g.l,
-					isNightmodeOn: f.W
+					isNightmodeOn: f.V
 				}))(e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -2193,8 +2163,8 @@
 				W = u.a.div("EventDate", P.a),
 				U = u.a.div("EventLocation", P.a),
 				M = u.a.div("EventDescription", P.a),
-				H = u.a.wrapped(j.a, "ToggleDescription", P.a);
-			class V extends s.a.Component {
+				V = u.a.wrapped(j.a, "ToggleDescription", P.a);
+			class H extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
 						this.setState({
@@ -2207,7 +2177,7 @@
 						props: e,
 						state: t
 					} = this;
-					return e.text.length > T ? s.a.createElement(M, null, t.isExpanded ? e.text : e.text.slice(0, T), s.a.createElement(H, {
+					return e.text.length > T ? s.a.createElement(M, null, t.isExpanded ? e.text : e.text.slice(0, T), s.a.createElement(V, {
 						onClick: this.toggleDescriptionView
 					}, t.isExpanded ? S.fbt._("read less", null, {
 						hk: "2KdNS6"
@@ -2232,7 +2202,7 @@
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
 				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(U, null, t.locationHtml ? s.a.createElement(B, {
 					html: t.locationHtml
-				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(V, {
+				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(H, {
 					text: t.description
 				})))),
 				K = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -2950,4 +2920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.993680af94c5b5e76829.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b7cdd424f3a378c77d71.js.map

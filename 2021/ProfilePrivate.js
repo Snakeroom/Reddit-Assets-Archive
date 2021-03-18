@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.e16730506babf206fc55.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.7ea1ee1c228557036ab7.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/graphql/operations/ProfileDownvoted.json": function(e) {
@@ -791,7 +791,7 @@
 				y = {
 					apiError: h.a,
 					apiPending: h.b,
-					currentUser: b.j,
+					currentUser: b.i,
 					layout: c.O,
 					loadMore: h.d,
 					subredditsById: g.ab,
@@ -929,7 +929,7 @@
 				},
 				A = Object(n.c)({
 					...G,
-					currentUser: k.j,
+					currentUser: k.i,
 					commentsById: e => e.features.comments.models,
 					itemIds: (e, {
 						listingKey: t
@@ -979,7 +979,7 @@
 				V = s("./src/reddit/pages/ProfilePrivate/index.m.less"),
 				U = s.n(V);
 			const $ = Object(n.c)({
-					currentUser: k.j
+					currentUser: k.i
 				}),
 				z = Object(o.b)($, (e, t) => ({
 					onLoadMore: () => e(Object(d.moreProfilePrivateRequested)(t.match.params.listingType))
@@ -1146,4 +1146,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.e16730506babf206fc55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7ea1ee1c228557036ab7.js.map

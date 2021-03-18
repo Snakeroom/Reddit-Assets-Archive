@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4fa7748cb95f011b3d3d.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.672ca0228131a2c9135b.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -340,7 +340,7 @@
 			}
 			const {
 				fbt: $
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), ee = 7, ae = Object(o.a)(e => e, f.a, f.c, f.e, E.j, (e, a, t, n, r) => {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), ee = 7, ae = Object(o.a)(e => e, f.a, f.c, f.e, E.i, (e, a, t, n, r) => {
 				if (!a) return {
 					anonymousRank: void 0,
 					currentPostId: a,
@@ -644,4 +644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4fa7748cb95f011b3d3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.672ca0228131a2c9135b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.33edcf2c2aba1fe9044f.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.1780cc815d9e5f826808.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -897,7 +897,7 @@
 				}) => async (o, n) => {
 					const s = n();
 					if (!!s.features.comments.drafts[t])
-						if (Object(U.M)(s) && e) {
+						if (Object(U.L)(s) && e) {
 							const n = X({
 								hasFocus: e,
 								draftKey: t
@@ -1067,7 +1067,7 @@
 				}) => async (n, s) => {
 					const r = s(),
 						l = Object(a.a)(P.c.replyToComment, t);
-					if (!Object(U.K)(s())) return n(Object(c.j)()), void n(Object(d.k)({
+					if (!Object(U.J)(s())) return n(Object(c.j)()), void n(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(L.m)(s(), {
 							commentId: t
@@ -1107,7 +1107,7 @@
 							draftType: P.c.replyToComment,
 							rtJson: h,
 							text: ""
-						}, Object(U.M)(r)) {
+						}, Object(U.L)(r)) {
 						const o = ie({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -1335,7 +1335,7 @@
 				R = e => async (t, o, {
 					apiContext: n
 				}) => {
-					if (!Object(k.K)(o())) return t(Object(c.j)()), void t(Object(d.k)({
+					if (!Object(k.J)(o())) return t(Object(c.j)()), void t(Object(d.k)({
 						actionSource: d.a.Save,
 						redirectUrl: Object(C.m)(o(), {
 							commentId: e
@@ -2653,7 +2653,7 @@
 				Ne = Object(i.b)(() => Object(c.c)({
 					activeModalId: ke.a,
 					destSubreddit: (e, t) => {
-						const o = Object(ve.o)(e, t);
+						const o = Object(ve.p)(e, t);
 						return o ? {
 							name: o.name,
 							isProfile: o.type === je.e.User,
@@ -2662,7 +2662,7 @@
 					},
 					draft: we.i,
 					userCanUseGifs: (e, t) => {
-						const o = Object(ve.o)(e, t);
+						const o = Object(ve.p)(e, t);
 						return Object(Oe.s)(e, o ? o.id : void 0, t.parentCommentId)
 					}
 				}), (e, t) => ({
@@ -3602,7 +3602,7 @@
 					rteDraft: _.m,
 					subreddit: T.q,
 					uploads: e => e.uploads,
-					user: S.j,
+					user: S.i,
 					isCommentsPage: f.f
 				}),
 				q = Object(c.b)(H, (e, t) => ({
@@ -3975,10 +3975,10 @@
 				}).apply(this, arguments)
 			}
 			const f = Object(i.c)({
-					currentUser: d.j,
-					isNightMode: d.W,
-					isPresenceUserPrefEnabled: d.ib,
-					shouldHideNSFW: d.C
+					currentUser: d.i,
+					isNightMode: d.V,
+					isPresenceUserPrefEnabled: d.hb,
+					shouldHideNSFW: d.B
 				}),
 				_ = Object(a.b)(f);
 			t.a = _(e => {
@@ -4520,7 +4520,7 @@
 				s = o("./src/reddit/constants/experiments.ts"),
 				r = o("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = o("./src/reddit/selectors/user.ts");
-			const i = Object(n.a)(a.K, a.J, (e, t) => e || t),
+			const i = Object(n.a)(a.J, a.I, (e, t) => e || t),
 				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: i,
 					experimentName: s.x
@@ -4552,4 +4552,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.33edcf2c2aba1fe9044f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.1780cc815d9e5f826808.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.bd5a16ac34f0e06293e9.js
-// Retrieved at 3/18/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.06a70c1fa7dd69bf86b4.js
+// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -1475,8 +1475,8 @@
 				}))))
 			};
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1484,25 +1484,25 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const V = Object(s.c)({
+			const W = Object(s.c)({
 					activePremiumPackage: _.a,
 					activePage: _.n,
 					allowNavigationCallback: e => {
 						const t = Object(v.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: C.W,
+					nightmode: C.V,
 					passthrough: _.e,
 					selectedPayment: _.c,
 					stripeErrorMessage: _.j,
 					stripeTokenPending: _.m,
 					paypalErrorMessage: _.d,
 					userName: e => {
-						const t = Object(C.j)(e);
+						const t = Object(C.i)(e);
 						return `u/${Object(g.e)(t)}`
 					}
 				}),
-				D = Object(a.b)(V, (e, t) => ({
+				D = Object(a.b)(W, (e, t) => ({
 					closeModal: () => e(Object(m.closePremiumPurchaseModal)()),
 					onCloseModalClick: () => e(Object(m.closePremiumPurchaseModal)()),
 					onCompletePurchaseClick: t => e(Object(m.stripePremiumPurchaseRequested)(t)),
@@ -1588,7 +1588,7 @@
 					}
 				}
 				render() {
-					return o.a.createElement(K, W({}, this.props, {
+					return o.a.createElement(K, V({}, this.props, {
 						className: Object(l.a)(this.props.className, T.a.premiumPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -1849,4 +1849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.bd5a16ac34f0e06293e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.06a70c1fa7dd69bf86b4.js.map
