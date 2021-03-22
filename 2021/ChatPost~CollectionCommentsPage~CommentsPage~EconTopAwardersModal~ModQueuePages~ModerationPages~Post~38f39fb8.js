@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.957f5c36c4189d02a5e9.js
-// Retrieved at 3/22/2021, 6:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.81e6b7ccda238c8871be.js
+// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1995,7 +1995,7 @@
 						onMouseEnter: ie.show,
 						onMouseLeave: ie.hide,
 						onClick: () => {
-							F(Object(m.k)(M ? "post" : "postlist")), B(Object(p.b)())
+							F(Object(m.k)(M ? "post" : "postlist")), B(Object(p.c)())
 						},
 						ref: ie.target.ref
 					}, n.a.createElement(A.a, {
@@ -3140,7 +3140,7 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.yb
 					});
-					return !(!t || Object(s.Hd)(t))
+					return !(!t || Object(s.Fd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
@@ -3170,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.957f5c36c4189d02a5e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.81e6b7ccda238c8871be.js.map

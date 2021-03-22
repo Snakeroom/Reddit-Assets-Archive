@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fda24a5263a6823cb07e.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.faf4fb6f7f573a504a70.js
+// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, o) {
@@ -574,7 +574,7 @@
 			};
 
 			function c(e) {
-				return Object(i.c)(t => {
+				const t = t => {
 					const {
 						sendEvent: o,
 						eventFactory: i,
@@ -584,7 +584,8 @@
 					return s.a.createElement(e, a({}, c, {
 						afterClickTracking: l
 					}))
-				})
+				};
+				return t.displayName = `WithClickTracking(${e.displayName||e.name})`, Object(i.c)(t)
 			}
 			const l = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -1360,7 +1361,7 @@
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
-					openPowerupsModal: () => e(Object(c.b)()),
+					openPowerupsModal: () => e(Object(c.c)()),
 					openRemovalReasonModal: () => {
 						o.e("removalReasonActions").then(o.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(o => e(o.fetchReasonsAndOpenModal(t.comment.subredditId, [t.comment.id])))
 					}
@@ -3738,4 +3739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fda24a5263a6823cb07e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.faf4fb6f7f573a504a70.js.map

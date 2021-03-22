@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9d72422994ce22541d1f.js
-// Retrieved at 3/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6e46f4f8de5ce257954a.js
+// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -5599,7 +5599,7 @@
 					tooltipId: n,
 					defaultTooltipPosition: "top",
 					onClick: () => {
-						t(Object(i.b)()), E(!1)
+						t(Object(i.c)()), E(!1)
 					}
 				}, o.a.createElement("div", {
 					className: h.a.icon
@@ -13109,7 +13109,7 @@
 								experimentName: r.w,
 								expEventOverride: t
 							});
-							return !!(Object(r.Hd)(n) ? void 0 : n)
+							return !!(Object(r.Fd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -23410,14 +23410,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Ac
-					}) === s.Kc.Enabled
+						experimentName: s.yc
+					}) === s.Ic.Enabled
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.zc
-					}) === s.Jc.Enabled
+						experimentName: s.xc
+					}) === s.Hc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -24131,4 +24131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9d72422994ce22541d1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6e46f4f8de5ce257954a.js.map

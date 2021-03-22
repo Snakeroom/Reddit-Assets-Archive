@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7edd1e39e13d88c65554.js
-// Retrieved at 3/22/2021, 6:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.666edcf77ed5667c46fc.js
+// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1749,7 +1749,7 @@
 			};
 
 			function d(e) {
-				return Object(o.c)(t => {
+				const t = t => {
 					const {
 						sendEvent: n,
 						eventFactory: o,
@@ -1759,7 +1759,8 @@
 					return s.a.createElement(e, a({}, d, {
 						afterClickTracking: l
 					}))
-				})
+				};
+				return t.displayName = `WithClickTracking(${e.displayName||e.name})`, Object(o.c)(t)
 			}
 			const l = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -4425,7 +4426,7 @@
 								experimentName: o.w,
 								expEventOverride: t
 							});
-							return !!(Object(o.Hd)(n) ? void 0 : n)
+							return !!(Object(o.Fd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -5926,4 +5927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7edd1e39e13d88c65554.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.666edcf77ed5667c46fc.js.map

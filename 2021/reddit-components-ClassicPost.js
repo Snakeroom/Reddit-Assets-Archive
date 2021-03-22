@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0e03990c7c9ffee16dbe.js
-// Retrieved at 3/22/2021, 6:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0f5280769008278bacb1.js
+// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -755,10 +755,10 @@
 				w = "viewport",
 				P = "popper",
 				A = "reference",
-				L = T.reduce((function(e, t) {
+				N = T.reduce((function(e, t) {
 					return e.concat([t + "-" + j, t + "-" + k])
 				}), []),
-				N = [].concat(T, [C]).reduce((function(e, t) {
+				L = [].concat(T, [C]).reduce((function(e, t) {
 					return e.concat([t, t + "-" + j, t + "-" + k])
 				}), []),
 				R = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
@@ -1158,14 +1158,14 @@
 					C = e.elements[b ? x : p],
 					j = ee(a(C) ? C : C.contextElement || l(e.elements.popper), c, u),
 					k = s(v),
-					L = V({
+					N = V({
 						reference: k,
 						element: g,
 						strategy: "absolute",
 						placement: o
 					}),
-					N = Q(Object.assign(Object.assign({}, g), L)),
-					R = p === P ? N : k,
+					L = Q(Object.assign(Object.assign({}, g), N)),
+					R = p === P ? L : k,
 					D = {
 						top: j.top - R.top + _.top,
 						bottom: R.bottom - j.bottom + _.bottom,
@@ -1332,7 +1332,7 @@
 								r = e.name,
 								s = n.offset,
 								o = void 0 === s ? [0, 0] : s,
-								i = N.reduce((function(e, n) {
+								i = L.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
 										var r = Y(e),
 											s = [g, O].indexOf(r) >= 0 ? -1 : 1,
@@ -1378,9 +1378,9 @@
 												i = n.padding,
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
-												d = void 0 === c ? N : c,
+												d = void 0 === c ? L : c,
 												l = G(r),
-												u = (l ? a ? L : L.filter((function(e) {
+												u = (l ? a ? N : N.filter((function(e) {
 													return G(e) === l
 												})) : T).filter((function(e) {
 													return d.indexOf(e) >= 0
@@ -1484,17 +1484,17 @@
 								A = "function" == typeof h ? h(Object.assign(Object.assign({}, t.rects), {}, {
 									placement: t.placement
 								})) : h,
-								L = {
+								N = {
 									x: 0,
 									y: 0
 								};
 							if (I) {
 								if (o) {
-									var N = "y" === T ? O : g,
+									var L = "y" === T ? O : g,
 										R = "y" === T ? y : S,
 										D = "y" === T ? "height" : "width",
 										M = I[T],
-										U = I[T] + E[N],
+										U = I[T] + E[L],
 										F = I[T] - E[R],
 										B = p ? -P[D] / 2 : 0,
 										V = x === j ? w[D] : P[D],
@@ -1510,7 +1510,7 @@
 											bottom: 0,
 											left: 0
 										},
-										X = K[N],
+										X = K[L],
 										$ = K[R],
 										J = se(0, w[D], q[D]),
 										Q = C ? w[D] / 2 - B - J - X - A : V - J - X - A,
@@ -1521,16 +1521,16 @@
 										oe = I[T] + Q - ne - te,
 										ie = I[T] + Z - ne,
 										ae = se(p ? Math.min(U, oe) : U, M, p ? Math.max(F, ie) : F);
-									I[T] = ae, L[T] = ae - M
+									I[T] = ae, N[T] = ae - M
 								}
 								if (a) {
 									var ce = "x" === T ? O : g,
 										de = "x" === T ? y : S,
 										le = I[k],
 										ue = se(le + E[ce], le, le - E[de]);
-									I[k] = ue, L[k] = ue - le
+									I[k] = ue, N[k] = ue - le
 								}
-								t.modifiersData[r] = L
+								t.modifiersData[r] = N
 							}
 						},
 						requiresIfExists: ["offset"]
@@ -1749,7 +1749,7 @@
 			};
 
 			function d(e) {
-				return Object(o.c)(t => {
+				const t = t => {
 					const {
 						sendEvent: n,
 						eventFactory: o,
@@ -1759,7 +1759,8 @@
 					return s.a.createElement(e, a({}, d, {
 						afterClickTracking: l
 					}))
-				})
+				};
+				return t.displayName = `WithClickTracking(${e.displayName||e.name})`, Object(o.c)(t)
 			}
 			const l = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -2006,8 +2007,8 @@
 				w = "STRUCTURED_STYLES__POSTFLAIR_REORDERTEMPLATES_PENDING",
 				P = "STRUCTURED_STYLES__POSTFLAIR_REORDERTEMPLATES_FAILED",
 				A = Object(s.a)(w),
-				L = Object(s.a)("STRUCTURED_STYLES__POSTFLAIR_REORDERTEMPLATES_SUCCESS"),
-				N = Object(s.a)(P),
+				N = Object(s.a)("STRUCTURED_STYLES__POSTFLAIR_REORDERTEMPLATES_SUCCESS"),
+				L = Object(s.a)(P),
 				R = (e, t) => async (n, r, {
 					apiContext: s
 				}) => {
@@ -2115,13 +2116,13 @@
 							subredditId: t,
 							templateIds: e
 						})), (await Object(c.e)(o(), f, l.d.LinkFlair, e)).ok) {
-						n(L());
+						n(N());
 						const e = Object(a.e)(r.fbt._("Flair reorder saved.", null, {
 							hk: "1Xbuan"
 						}), u.b.SuccessMod);
 						n(Object(a.f)(e))
 					} else {
-						n(N({
+						n(L({
 							subredditId: t,
 							templateIds: d
 						}));
@@ -2251,7 +2252,7 @@
 				const I = [];
 				try {
 					(j = await Object(l.f)(u, E.a.FlairTemplates)) && (k = Object(l.m)(j)(r, o, a), I.push(...c()(j.imagesByKey)))
-				} catch (L) {
+				} catch (N) {
 					return !1
 				}
 				const w = await (async (e, t, n, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
@@ -2273,7 +2274,7 @@
 								t && t.kind === E.b.Uploaded && (e.url === r.postBackgroundImage ? r.postBackgroundImage = t.url : e.url === r.postPlaceholderImage && (r.postPlaceholderImage = t.url))
 							}), r
 						})(g, I, o())
-					} catch (L) {
+					} catch (N) {
 						e = null
 					} else e = g;
 					r(y({
@@ -2346,7 +2347,7 @@
 		"./src/reddit/actions/subscription/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "e", (function() {
-				return L
+				return N
 			})), n.d(t, "d", (function() {
 				return R
 			})), n.d(t, "c", (function() {
@@ -2424,7 +2425,7 @@
 				w = Object(o.a)(d.b),
 				P = Object(o.a)(d.a),
 				A = Object(o.a)(d.h),
-				L = (Object(o.a)(d.i), Object(o.a)(d.g), () => async (e, t, {
+				N = (Object(o.a)(d.i), Object(o.a)(d.g), () => async (e, t, {
 					gqlContext: n
 				}) => {
 					const r = t();
@@ -2438,7 +2439,7 @@
 						error: s.error
 					}))
 				}),
-				N = (e, t) => t.type === u.a.PROFILE && e.displayText === t.name.replace("u_", ""),
+				L = (e, t) => t.type === u.a.PROFILE && e.displayText === t.name.replace("u_", ""),
 				R = (e, t, n) => async (o, d, {
 					apiContext: b
 				}) => {
@@ -2458,7 +2459,7 @@
 					if (_) {
 						const t = h.length,
 							n = e.length;
-						if (h = h.filter(e => !N(_, e)), (e = e.filter(e => !N(_, e))).length !== n || h.length !== t) {
+						if (h = h.filter(e => !L(_, e)), (e = e.filter(e => !L(_, e))).length !== n || h.length !== t) {
 							const e = r.fbt._("You cannot follow yourself!", null, {
 								hk: "3tfSaq"
 							});
@@ -2891,8 +2892,8 @@
 				w = n("./src/reddit/connectors/ClassicPost/index.tsx"),
 				P = n("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
 				A = n("./src/reddit/contexts/Post/index.tsx"),
-				L = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				N = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				N = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
+				L = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				R = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				D = n("./src/reddit/helpers/styles/mixins/index.tsx"),
 				M = n("./src/reddit/helpers/styles/mixins/index.m.less"),
@@ -2951,7 +2952,7 @@
 						toggleCheckbox: ue,
 						userIsOp: me,
 						shouldShowGalleryTileOption: pe
-					} = this.props, fe = oe ? void 0 : P, be = this.props.crosspost || void 0, he = Object(R.a)(J), Ee = Object(L.a)(J), _e = Object(N.a)(J), xe = Q && R.a, ve = !!re.media && re.media.type === k.o.RTJSON, Oe = me && ve, ye = a && !de, Se = !!re.media && Object(k.G)(re.media), ge = {
+					} = this.props, fe = oe ? void 0 : P, be = this.props.crosspost || void 0, he = Object(R.a)(J), Ee = Object(N.a)(J), _e = Object(L.a)(J), xe = Q && R.a, ve = !!re.media && re.media.type === k.o.RTJSON, Oe = me && ve, ye = a && !de, Se = !!re.media && Object(k.G)(re.media), ge = {
 						flairStyleTemplate: fe,
 						post: re,
 						inSubredditOrProfile: a,
@@ -4383,7 +4384,7 @@
 								experimentName: o.w,
 								expEventOverride: t
 							});
-							return !!(Object(o.Hd)(n) ? void 0 : n)
+							return !!(Object(o.Fd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -5529,8 +5530,8 @@
 						return e
 				}
 			};
-			const L = {};
-			var N = (e = L, t) => {
+			const N = {};
+			var L = (e = N, t) => {
 				switch (t.type) {
 					case a.d:
 					case a.b:
@@ -5564,7 +5565,7 @@
 				keyToChatCommentLinks: S,
 				keyToCommentThreadLinkSets: w,
 				keyToHeadCommentId: A,
-				keyToPostId: N,
+				keyToPostId: L,
 				ads: i
 			})
 		},
@@ -5601,9 +5602,9 @@
 			})), n.d(t, "b", (function() {
 				return A
 			})), n.d(t, "q", (function() {
-				return L
-			})), n.d(t, "m", (function() {
 				return N
+			})), n.d(t, "m", (function() {
+				return L
 			})), n.d(t, "t", (function() {
 				return R
 			})), n.d(t, "z", (function() {
@@ -5754,8 +5755,8 @@
 					commentsPageKey: t
 				}) => e.features.comments.collapsed[t],
 				A = e => e.moreComments.models,
-				L = e => e.features.comments.models,
-				N = (e, {
+				N = e => e.features.comments.models,
+				L = (e, {
 					commentId: t
 				}) => {
 					const n = Object(p.a)(e, {
@@ -5872,4 +5873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0e03990c7c9ffee16dbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0f5280769008278bacb1.js.map

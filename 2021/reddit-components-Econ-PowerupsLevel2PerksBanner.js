@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.f51f1b9f26c68da8673c.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.cf5588f6d1d5f53187f0.js
+// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/PowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -260,7 +260,7 @@
 					v(Object(l.g)())
 				}, [m, v]);
 				const g = () => {
-					v(Object(l.f)()), p(Object(d.b)())
+					v(Object(l.f)()), p(Object(d.c)())
 				};
 				if (!o || 1 === o.tiersInfo.length || !u) return null;
 				const {
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.f51f1b9f26c68da8673c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsLevel2PerksBanner.cf5588f6d1d5f53187f0.js.map

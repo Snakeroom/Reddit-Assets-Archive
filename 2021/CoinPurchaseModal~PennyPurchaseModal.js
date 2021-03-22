@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.d1d432f14d01a0d1f2fb.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.83e47afd42150a929d6b.js
+// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PennyPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -1049,7 +1049,7 @@
 						})))
 					}
 				}, U = Object(u.a)(f.R), Q = e => async (t, n) => {
-					t(U(e)), t(Object(C.f)(e.subredditId, {
+					t(U(e)), t(Object(C.g)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(_.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.f)({
@@ -1945,4 +1945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.d1d432f14d01a0d1f2fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.83e47afd42150a929d6b.js.map

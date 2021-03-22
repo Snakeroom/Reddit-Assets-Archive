@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ff74dd8d3525bd61c753.js
-// Retrieved at 3/22/2021, 6:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.653fadcf2af7a1945f66.js
+// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -575,7 +575,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(H.d)(m, {
-								experimentName: l.tc
+								experimentName: l.rc
 							});
 							s(Object(a.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -705,7 +705,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(H.d)(r, {
-										experimentName: l.tc
+										experimentName: l.rc
 									});
 									t(Object(a.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -1967,7 +1967,7 @@
 						s = Object(st.d)(rt, it);
 					e(Object(p.a)(t, s))
 				},
-				subredditAboutRequested: t => e(Object(m.t)(t))
+				subredditAboutRequested: t => e(Object(m.u)(t))
 			}));
 			t.default = mt(ut)
 		},
@@ -5223,4 +5223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ff74dd8d3525bd61c753.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.653fadcf2af7a1945f66.js.map
