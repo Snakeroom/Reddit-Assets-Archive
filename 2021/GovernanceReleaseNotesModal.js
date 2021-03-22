@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.dd433fad1bf8669c79d5.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.e082b17cb8f30905d144.js
+// Retrieved at 3/22/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -762,20 +762,20 @@
 					post: e.releaseNote
 				})))
 			}
-			var k = n("./src/reddit/controls/Button/index.tsx"),
-				T = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+			var T = n("./src/reddit/controls/Button/index.tsx"),
+				k = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				C = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
 				N = n.n(C);
 
 			function S(e) {
 				return o.a.createElement("div", {
 					className: Object(p.a)(N.a.container, e.className)
-				}, !e.isFirst && o.a.createElement(k.l, {
+				}, !e.isFirst && o.a.createElement(T.l, {
 					className: N.a.prev,
 					onClick: e.onPrevSlide
-				}, o.a.createElement(T.a, {
+				}, o.a.createElement(k.a, {
 					className: N.a.arrow
-				})), o.a.createElement(k.i, {
+				})), o.a.createElement(T.i, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
 				}, e.isLast ? r.fbt._("done", null, {
 					hk: "2XjG3a"
@@ -1032,7 +1032,7 @@
 						style: t
 					}, e.children)
 				},
-				k = Object(i.b)(() => Object(d.a)(x.C, g.bb, (e, {
+				T = Object(i.b)(() => Object(d.a)(x.C, g.bb, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(x.b)(e, n) : null, (e, t, n) => ({
@@ -1040,7 +1040,7 @@
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n
 				})));
-			t.a = k(e => e.outboundUrl && !e.shouldBlur ? o.a.createElement("a", {
+			t.a = T(e => e.outboundUrl && !e.shouldBlur ? o.a.createElement("a", {
 				href: e.outboundUrl,
 				target: "_blank",
 				rel: u.a,
@@ -1051,7 +1051,7 @@
 				target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 				to: Object(m.a)(e.postPermalink)
 			}, C(e)) : C(e));
-			const T = (e, t) => o.a.createElement(j, {
+			const k = (e, t) => o.a.createElement(j, {
 					altText: t.altText,
 					className: Object(c.a)(t.imageClassName, {
 						[v.a]: !e
@@ -1078,7 +1078,7 @@
 						className: `${n?`${v.a} `:""}${t.className||""}`
 					}), t.isListing ? o.a.createElement("div", {
 						className: t.contentImageClassName
-					}, T(n, t)) : o.a.createElement("a", {
+					}, k(n, t)) : o.a.createElement("a", {
 						href: t.originalSource,
 						onClick: e,
 						style: s ? {
@@ -1086,7 +1086,7 @@
 						} : {},
 						target: "_blank",
 						rel: u.b
-					}, T(n, t)), t.isListing && !t.showFull && t.height > f.j && Object(f.I)(t.height, t.width) && o.a.createElement("div", {
+					}, k(n, t)), t.isListing && !t.showFull && t.height > f.j && Object(f.I)(t.height, t.width) && o.a.createElement("div", {
 						className: _.a.seeMore
 					}, r.fbt._("see full image", null, {
 						hk: "1Qygw5"
@@ -1627,9 +1627,9 @@
 			})), n.d(t, "n", (function() {
 				return I
 			})), n.d(t, "t", (function() {
-				return k
-			})), n.d(t, "p", (function() {
 				return T
+			})), n.d(t, "p", (function() {
+				return k
 			})), n.d(t, "o", (function() {
 				return C
 			})), n.d(t, "q", (function() {
@@ -1676,8 +1676,8 @@
 				O = d.a.sub("Sub", a.a),
 				j = d.a.sup("Sup", a.a),
 				I = d.a.table("Table", a.a),
-				k = d.a.tr("Tr", a.a),
-				T = d.a.td("Tdl", a.a),
+				T = d.a.tr("Tr", a.a),
+				k = d.a.td("Tdl", a.a),
 				C = d.a.td("Tdc", a.a),
 				N = d.a.td("Tdr", a.a),
 				S = d.a.th("Thl", a.a),
@@ -1762,7 +1762,7 @@
 						rtJsonElementProps: x,
 						useExplicitTextColor: v,
 						shouldBlur: _
-					} = e, j = r.document, I = [], k = e.mediaMetadata || null, T = O(j), C = E(j);
+					} = e, j = r.document, I = [], T = e.mediaMetadata || null, k = O(j), C = E(j);
 					if (_ && !s) return i.a.createElement(y, {
 						className: Object(a.a)(u.j, n)
 					}, i.a.createElement("div", {
@@ -1771,8 +1771,8 @@
 						className: g.a.unblurButton,
 						onClick: c
 					}, Object(l.a)(!!o, !!d))));
-					if (-1 !== T)
-						for (let i = T; i <= C; i++) {
+					if (-1 !== k)
+						for (let i = k; i <= C; i++) {
 							const e = j[i];
 							switch (e.e) {
 								case p.k:
@@ -1782,19 +1782,19 @@
 									I.push(f.d(i));
 									break;
 								case p.b:
-									I.push(f.a(e, k, x, i));
+									I.push(f.a(e, T, x, i));
 									break;
 								case p.c:
 									I.push(f.b(e, i));
 									break;
 								case p.p:
-									I.push(f.f(e, k, x, i));
+									I.push(f.f(e, T, x, i));
 									break;
 								case p.z:
-									I.push(f.h(e, k, x, i));
+									I.push(f.h(e, T, x, i));
 									break;
 								case p.u:
-									I.push(f.g(e, k, x, i));
+									I.push(f.g(e, T, x, i));
 									break;
 								case p.h:
 									I.push(Object(b.a)(e, i));
@@ -1802,7 +1802,7 @@
 								case p.m:
 								case p.a:
 								case p.D:
-									I.push(...Object(b.b)(e, i, k, h, m, t))
+									I.push(...Object(b.b)(e, i, T, h, m, t))
 							}
 						}
 					return v ? i.a.createElement(y, {
@@ -1863,7 +1863,7 @@
 			n.d(t, "a", (function() {
 				return I
 			})), n.d(t, "b", (function() {
-				return T
+				return k
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -1934,7 +1934,7 @@
 					showCentered: !0,
 					showFull: !0
 				}))),
-				k = (e, t, n) => {
+				T = (e, t, n) => {
 					const r = e.c;
 					let s = "";
 					return n && (n.e === p.s ? s = n.s.u : n.e === p.r ? s = n.s.gif : n.e === p.t && (s = (e => {
@@ -1946,9 +1946,9 @@
 						title: r
 					}, r || s) : null
 				},
-				T = (e, t, n, r, s, a) => {
+				k = (e, t, n, r, s, a) => {
 					const c = p.E(n, e.id);
-					if (r) return [k(e, t, c)];
+					if (r) return [T(e, t, c)];
 					const l = [];
 					return c ? c.e === p.s ? l.push((({
 						id: e,
@@ -2171,8 +2171,8 @@
 				O = n("./src/reddit/components/RichTextJson/media.tsx"),
 				j = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				I = n("./src/reddit/components/SubredditMention/index.tsx"),
-				k = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				T = n("./src/reddit/helpers/richTextJson/index.ts");
+				T = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
+				k = n("./src/reddit/helpers/richTextJson/index.ts");
 			const C = (e, t, n) => {
 					const r = e.c || [],
 						s = e.l,
@@ -2290,7 +2290,7 @@
 						key: e
 					}, a.a.createElement("br", null)))(r);
 					const s = e.c[0];
-					return s.e !== h.m && s.e !== h.a || !Object(T.f)(s.id) ? a.a.createElement(d.j, {
+					return s.e !== h.m && s.e !== h.a || !Object(k.f)(s.id) ? a.a.createElement(d.j, {
 						key: r
 					}, D(e.c, t, n)) : Object(O.b)(s, r, t)
 				},
@@ -2326,7 +2326,7 @@
 								t: e.t,
 								f: e.f
 							}, 0);
-							return Object(k.b)(e.u) ? a.a.createElement(d.w, {
+							return Object(T.b)(e.u) ? a.a.createElement(d.w, {
 								to: e.u,
 								key: n,
 								title: e.a
@@ -2526,12 +2526,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case b.kd.SmIcon:
+						case b.id.SmIcon:
 							return s.a.createElement(h, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.kd.SmIconHc:
+						case b.id.SmIconHc:
 							return s.a.createElement(h, {
 								subredditName: n,
 								isHoverable: !0,
@@ -3177,12 +3177,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.fd
+						experimentName: r.dd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.kd.SmIcon || t === r.kd.SmIconHc
+					return t === r.id.SmIcon || t === r.id.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -3205,4 +3205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.dd433fad1bf8669c79d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.e082b17cb8f30905d144.js.map

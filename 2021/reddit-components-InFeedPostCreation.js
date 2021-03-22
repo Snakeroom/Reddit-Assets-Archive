@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.47de622d8891364aefce.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.3aaa6d6d8d92c43c81db.js
+// Retrieved at 3/22/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, s) {
@@ -45,8 +45,8 @@
 				O = s("./src/reddit/components/InFeedPostCreation/index.m.less"),
 				C = s.n(O);
 
-			function L() {
-				return (L = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -54,12 +54,12 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
-			var k;
+			const k = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
+			var L;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
-			}(k || (k = {}));
-			const M = e => {
+			}(L || (L = {}));
+			const P = e => {
 					switch (e) {
 						case d.Lb.MEDIA:
 							return "?media=true";
@@ -69,7 +69,7 @@
 							return ""
 					}
 				},
-				P = e => {
+				M = e => {
 					switch (e) {
 						case d.Lb.MEDIA:
 							return "media_post";
@@ -135,7 +135,7 @@
 						o(t => ({
 							source: "post_composer_du",
 							action: "click",
-							noun: P(e),
+							noun: M(e),
 							...g.defaults(t)
 						}))
 					},
@@ -146,7 +146,7 @@
 					w = e ? c.a.createElement(I.a, {
 						className: C.a.UserIconWrapper,
 						to: e.url
-					}, c.a.createElement(j, {
+					}, c.a.createElement(k, {
 						className: C.a.UserIcon,
 						shouldShowPresenceIndicator: O
 					})) : null;
@@ -167,18 +167,18 @@
 					priority: x.b.Plain,
 					kind: x.a.InternalLink,
 					size: x.c.M,
-					id: k.Media,
+					id: L.Media,
 					onClick: () => N(d.Lb.MEDIA),
-					onMouseEnter: () => u(k.Media),
-					onMouseLeave: () => u(k.Media),
-					to: b + M(d.Lb.MEDIA),
-					Icon: p ? e => c.a.createElement(E.a, L({
+					onMouseEnter: () => u(L.Media),
+					onMouseLeave: () => u(L.Media),
+					to: b + P(d.Lb.MEDIA),
+					Icon: p ? e => c.a.createElement(E.a, j({
 						name: "image_post"
 					}, e)) : h.a,
 					isSquare: !0
 				}, c.a.createElement(m.c, {
 					caretOnTop: !0,
-					tooltipId: k.Media,
+					tooltipId: L.Media,
 					text: A()
 				})), v.link && c.a.createElement(x.q, {
 					className: C.a.Button,
@@ -186,18 +186,18 @@
 					kind: x.a.InternalLink,
 					size: x.c.M,
 					"aria-label": F(),
-					id: k.Link,
+					id: L.Link,
 					onClick: () => N(d.Lb.LINK_ONLY),
-					onMouseEnter: () => u(k.Link),
-					onMouseLeave: () => u(k.Link),
-					to: b + M(d.Lb.LINK_ONLY),
-					Icon: p ? e => c.a.createElement(E.a, L({
+					onMouseEnter: () => u(L.Link),
+					onMouseLeave: () => u(L.Link),
+					to: b + P(d.Lb.LINK_ONLY),
+					Icon: p ? e => c.a.createElement(E.a, j({
 						name: "link_post"
 					}, e)) : f.a,
 					isSquare: !0
 				}, c.a.createElement(m.c, {
 					caretOnTop: !0,
-					tooltipId: k.Media,
+					tooltipId: L.Media,
 					text: A()
 				})))
 			}))
@@ -303,16 +303,16 @@
 			const c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Cc
-					}) === n.Mc.Enabled
+						experimentName: n.Ac
+					}) === n.Kc.Enabled
 				},
 				o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Bc
-					}) === n.Lc.Enabled
+						experimentName: n.zc
+					}) === n.Jc.Enabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.47de622d8891364aefce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.3aaa6d6d8d92c43c81db.js.map

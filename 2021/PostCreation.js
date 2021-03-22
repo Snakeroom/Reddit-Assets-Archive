@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a7721e4fb9ee4330bfb7.js
-// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.88bb8bbbb11d66d91e64.js
+// Retrieved at 3/22/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -13106,7 +13106,7 @@
 								experimentName: r.w,
 								expEventOverride: t
 							});
-							return !!(Object(r.Dd)(n) ? void 0 : n)
+							return !!(Object(r.Bd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -23402,14 +23402,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Cc
-					}) === s.Mc.Enabled
+						experimentName: s.Ac
+					}) === s.Kc.Enabled
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Bc
-					}) === s.Lc.Enabled
+						experimentName: s.zc
+					}) === s.Jc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -24123,4 +24123,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a7721e4fb9ee4330bfb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.88bb8bbbb11d66d91e64.js.map
