@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.88bb8bbbb11d66d91e64.js
-// Retrieved at 3/22/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.998c0d9a8574ee6aeb39.js
+// Retrieved at 3/22/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -13106,7 +13106,7 @@
 								experimentName: r.w,
 								expEventOverride: t
 							});
-							return !!(Object(r.Bd)(n) ? void 0 : n)
+							return !!(Object(r.Fd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -16906,7 +16906,7 @@
 				y = e => e.hero ? o.a.createElement(o.a.Fragment, null, e.hero) : null;
 
 			function k(e) {
-				const t = e.trendingUnit ? "28px" : "0",
+				const t = e.trendingUnit && !e.noSidebarTopMargin ? "28px" : "0",
 					n = e.isPageSwapped ? {
 						marginRight: `${d.q}px`,
 						marginTop: t
@@ -24123,4 +24123,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.88bb8bbbb11d66d91e64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.998c0d9a8574ee6aeb39.js.map

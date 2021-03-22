@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.652bb2cb8b0b1a714056.js
-// Retrieved at 3/22/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.dd3529b5626ea55f5c8f.js
+// Retrieved at 3/22/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -1755,7 +1755,7 @@
 								experimentName: r.w,
 								expEventOverride: t
 							});
-							return !!(Object(r.Bd)(n) ? void 0 : n)
+							return !!(Object(r.Fd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2789,4 +2789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.652bb2cb8b0b1a714056.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.dd3529b5626ea55f5c8f.js.map

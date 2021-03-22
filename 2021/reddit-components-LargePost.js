@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.46f05275028e6857c924.js
-// Retrieved at 3/22/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ef2d03df5d7f98320ecc.js
+// Retrieved at 3/22/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2360,7 +2360,7 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: o
 						}
-					})(e), Re = !!ee && !Object(Q.Bd)(ee), De = (!y || Re) && !le.isSponsored, We = Object(k.t)(le, g), {
+					})(e), Re = !!ee && !Object(Q.Fd)(ee), De = (!y || Re) && !le.isSponsored, We = Object(k.t)(le, g), {
 						source: Ve
 					} = We, ze = o.a.createElement(o.a.Fragment, null, o.a.createElement(R.a, {
 						className: Object(_.a)(be.a.container, s, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -3632,9 +3632,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: r.sb
 				});
-				return !(!t || Object(r.Bd)(t))
+				return !(!t || Object(r.Fd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.46f05275028e6857c924.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ef2d03df5d7f98320ecc.js.map
