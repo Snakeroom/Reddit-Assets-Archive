@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d6ffb91b0e2b0f750334.js
-// Retrieved at 3/22/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3382b98f2a0cdc645819.js
+// Retrieved at 3/22/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3424,8 +3424,8 @@
 					className: r
 				} = e, i = n === wt.e.Silver ? _t.a.silverTierAttribution : n === wt.e.Gold ? _t.a.goldTierAttribution : _t.a.platinumTierAttribution;
 				return o.a.createElement("div", {
-					"aria-role": "presentation",
-					className: Object(d.a)(r, _t.a.tierAttribution, i)
+					className: Object(d.a)(r, _t.a.tierAttribution, i),
+					role: "presentation"
 				}, n !== wt.e.Silver && o.a.createElement(yt.a, {
 					className: _t.a.giverIcon,
 					userId: a,
@@ -3450,8 +3450,8 @@
 					className: a
 				} = e, n = s === wt.e.Silver ? jt.a.silverTierAwardIcon : s === wt.e.Gold ? jt.a.goldTierAwardIcon : jt.a.platinumTierAwardIcon, r = s !== wt.e.Silver, i = s === wt.e.Platinum;
 				return o.a.createElement("div", {
-					"aria-role": "presentation",
-					className: Object(d.a)(a, jt.a.tierAwardIcon)
+					className: Object(d.a)(a, jt.a.tierAwardIcon),
+					role: "presentation"
 				}, o.a.createElement("div", {
 					className: jt.a.awardIconContainer
 				}, r && o.a.createElement(o.a.Fragment, null, o.a.createElement(xt.a, {
@@ -3480,8 +3480,8 @@
 					giverName: n
 				} = e, r = St(t.coinPrice), i = t.icon128 ? t.icon128.url : t.icon.url;
 				return o.a.createElement("div", {
-					"aria-role": "presentation",
-					className: Object(d.a)(s, Pt.a.container)
+					className: Object(d.a)(s, Pt.a.container),
+					role: "presentation"
 				}, o.a.createElement(It, {
 					iconUrl: i,
 					tier: r,
@@ -3505,8 +3505,8 @@
 						giverId: a
 					} = this.props;
 					return e && a && s ? o.a.createElement("div", {
-						"aria-role": "presentation",
-						className: Object(d.a)(t, At.a.awardOverlay)
+						className: Object(d.a)(t, At.a.awardOverlay),
+						role: "presentation"
 					}, o.a.createElement(Lt, {
 						award: e,
 						giverId: a,
@@ -3578,8 +3578,8 @@
 					if (!s) return null;
 					const n = e.slice(a);
 					return n.length ? o.a.createElement("div", {
-						"aria-role": "presentation",
-						className: Object(d.a)(t, Ft.a.awardOverlaySpectacle)
+						className: Object(d.a)(t, Ft.a.awardOverlaySpectacle),
+						role: "presentation"
 					}, n.map(e => o.a.createElement(Vt, {
 						className: Ft.a.awardOverlay,
 						commentId: e.id,
@@ -4730,8 +4730,8 @@
 							a.push(c)
 						}
 					}), o.a.createElement("div", {
-						"aria-role": "presentation",
-						className: ka.a.awardBubbler
+						className: ka.a.awardBubbler,
+						role: "presentation"
 					}, a)
 				}
 			}
@@ -5783,4 +5783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d6ffb91b0e2b0f750334.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3382b98f2a0cdc645819.js.map
