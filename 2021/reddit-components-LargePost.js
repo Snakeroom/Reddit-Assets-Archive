@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ef2d03df5d7f98320ecc.js
-// Retrieved at 3/22/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.381b90d1baeba9278404.js
+// Retrieved at 3/22/2021, 6:00:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -897,11 +897,11 @@
 				return e.split("-")[0]
 			}
 
-			function z(e) {
+			function H(e) {
 				return e.split("-")[1]
 			}
 
-			function H(e) {
+			function z(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
@@ -910,7 +910,7 @@
 					r = e.element,
 					o = e.placement,
 					s = o ? V(o) : null,
-					i = o ? z(o) : null,
+					i = o ? H(o) : null,
 					a = n.x + n.width / 2 - r.width / 2,
 					c = n.y + n.height / 2 - r.height / 2;
 				switch (s) {
@@ -944,7 +944,7 @@
 							y: n.y
 						}
 				}
-				var d = s ? H(s) : null;
+				var d = s ? z(s) : null;
 				if (null != d) {
 					var l = "y" === d ? "height" : "width";
 					switch (i) {
@@ -1352,9 +1352,9 @@
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
 												d = void 0 === c ? A : c,
-												l = z(r),
+												l = H(r),
 												u = (l ? a ? I : I.filter((function(e) {
-													return z(e) === l
+													return H(e) === l
 												})) : P).filter((function(e) {
 													return d.indexOf(e) >= 0
 												})).reduce((function(t, n) {
@@ -1379,7 +1379,7 @@
 									}), []), y = t.rects.reference, E = t.rects.popper, S = new Map, T = !0, N = g[0], M = 0; M < g.length; M++) {
 									var L = g[M],
 										B = V(L),
-										F = z(L) === C,
+										F = H(L) === C,
 										R = [O, w].indexOf(B) >= 0,
 										D = R ? "width" : "height",
 										W = re(t, {
@@ -1389,11 +1389,11 @@
 											altBoundary: p,
 											padding: d
 										}),
-										H = R ? F ? j : k : F ? w : O;
-									y[D] > E[D] && (H = J(H));
-									var U = J(H),
+										z = R ? F ? j : k : F ? w : O;
+									y[D] > E[D] && (z = J(z));
+									var U = J(z),
 										q = [];
-									if (s && q.push(W[B] <= 0), a && q.push(W[H] <= 0, W[U] <= 0), q.every((function(e) {
+									if (s && q.push(W[B] <= 0), a && q.push(W[z] <= 0, W[U] <= 0), q.every((function(e) {
 											return e
 										}))) {
 										N = L, T = !1;
@@ -1447,9 +1447,9 @@
 									altBoundary: l
 								}),
 								x = V(t.placement),
-								g = z(t.placement),
+								g = H(t.placement),
 								_ = !g,
-								P = H(x),
+								P = z(x),
 								E = "x" === P ? "y" : "x",
 								S = t.modifiersData.popperOffsets,
 								T = t.rects.reference,
@@ -1517,7 +1517,7 @@
 								o = n.elements.arrow,
 								s = n.modifiersData.popperOffsets,
 								i = V(n.placement),
-								a = H(i),
+								a = z(i),
 								c = [k, j].indexOf(i) >= 0 ? "height" : "width";
 							if (o && s) {
 								var d = n.modifiersData[r + "#persistent"].padding,
@@ -2205,18 +2205,18 @@
 				D = n("./src/reddit/components/PostLeftRail/index.tsx"),
 				W = n("./src/reddit/components/PostMedia/index.tsx"),
 				V = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				z = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				H = n("./src/reddit/icons/fonts/Sticky/index.tsx"),
+				H = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
+				z = n("./src/reddit/icons/fonts/Sticky/index.tsx"),
 				U = n("./src/reddit/components/PostPinnedHeader/index.m.less"),
 				q = n.n(U);
 			const {
 				fbt: X
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var G = () => {
-					const e = Object(z.a)();
+					const e = Object(H.a)();
 					return o.a.createElement("div", {
 						className: q.a.container
-					}, o.a.createElement(H.a, {
+					}, o.a.createElement(z.a, {
 						className: q.a.pinnedIcon,
 						isFilled: e
 					}), o.a.createElement("span", {
@@ -2320,8 +2320,8 @@
 						isCommentsPage: O,
 						isCurrentUserProfilePost: w,
 						isFrontpage: j,
-						isGalleryTileLayoutDefault: z,
-						isLoggedIn: H,
+						isGalleryTileLayoutDefault: H,
+						isLoggedIn: z,
 						isOverlay: U,
 						isPostChainDismissed: q,
 						isPostChained: X,
@@ -2345,7 +2345,7 @@
 						isActionBarAnimationEnabled: Oe,
 						postId: we,
 						postIds: je
-					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], _e = ke ? void 0 : p, Pe = Object(d.a)(se), Ce = ie && Pe, Ee = Object(a.a)(se), Se = Object(c.a)(se), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Me = ye && Ne, Ie = n ? n - D.a : void 0, Ae = !(j && H || $), Le = (e => e === Q.Dc.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.Dc.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
+					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], _e = ke ? void 0 : p, Pe = Object(d.a)(se), Ce = ie && Pe, Ee = Object(a.a)(se), Se = Object(c.a)(se), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Me = ye && Ne, Ie = n ? n - D.a : void 0, Ae = !(j && z || $), Le = (e => e === Q.Dc.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.Dc.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2360,9 +2360,9 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: o
 						}
-					})(e), Re = !!ee && !Object(Q.Fd)(ee), De = (!y || Re) && !le.isSponsored, We = Object(k.t)(le, g), {
+					})(e), Re = !!ee && !Object(Q.Hd)(ee), De = (!y || Re) && !le.isSponsored, We = Object(k.t)(le, g), {
 						source: Ve
-					} = We, ze = o.a.createElement(o.a.Fragment, null, o.a.createElement(R.a, {
+					} = We, He = o.a.createElement(o.a.Fragment, null, o.a.createElement(R.a, {
 						className: Object(_.a)(be.a.container, s, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
 							[me.a.mUseRedditTheme]: ke,
 							promotedvideolink: le.isSponsored && !(le.media && b.a.has(le.media.type)),
@@ -2427,7 +2427,7 @@
 					}), o.a.createElement("div", {
 						className: be.a.postMediaWrapper
 					}, !Fe && o.a.createElement(W.a, {
-						isGalleryTileLayoutDefault: z,
+						isGalleryTileLayoutDefault: H,
 						isListing: !0,
 						isMediumHeight: Be,
 						isNotCardView: !!U,
@@ -2488,7 +2488,7 @@
 						postIds: null != je ? je : [],
 						subredditId: null == ge ? void 0 : ge.id
 					})));
-					return o.a.createElement(f.b, null, ze, X && !q && o.a.createElement(N.a, {
+					return o.a.createElement(f.b, null, He, X && !q && o.a.createElement(N.a, {
 						className: be.a.chain,
 						listingKey: te,
 						listingName: oe,
@@ -3632,9 +3632,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: r.sb
 				});
-				return !(!t || Object(r.Fd)(t))
+				return !(!t || Object(r.Hd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ef2d03df5d7f98320ecc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.381b90d1baeba9278404.js.map

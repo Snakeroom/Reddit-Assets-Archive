@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.c67029b192524c10fd5d.js
-// Retrieved at 3/22/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.a7214662fa8dfe5f71f6.js
+// Retrieved at 3/22/2021, 6:00:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -668,7 +668,7 @@
 					noHover: !0,
 					isSelected: !1
 				})), "Row", R.a),
-				V = ({
+				H = ({
 					disabled: e,
 					...t
 				}) => r.a.createElement("div", D({}, t, {
@@ -676,7 +676,7 @@
 						[R.a.isDisabled]: e
 					})
 				})),
-				H = T.a.div("DropdownRowDisabled", R.a),
+				V = T.a.div("DropdownRowDisabled", R.a),
 				K = Object(l.t)({
 					isFrontpage: l.y,
 					isProfilePage: l.G,
@@ -702,7 +702,7 @@
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(U, null, w.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), r.a.createElement(V, {
+				})), r.a.createElement(H, {
 					disabled: e.disabled
 				}, e.children || r.a.createElement(F, {
 					className: e.buttonClassName,
@@ -717,7 +717,7 @@
 					tooltipId: e.dropdownId || A
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(H, null, w.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(V, null, w.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, s, n, r) => {
 					const o = [h.P.HOT, h.P.NEW, h.P.TOP, h.P.RISING];
@@ -951,7 +951,7 @@
 				return r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(V, {
+				}, r.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
 				}, r.a.createElement(F, {
@@ -1120,7 +1120,7 @@
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(i.a)(ue.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(me) : e.onOpenDropdown(me)
-					}, r.a.createElement(V, {
+					}, r.a.createElement(H, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
 					}, r.a.createElement(F, {
@@ -1190,7 +1190,7 @@
 				}))(Object(d.c)(e => r.a.createElement(Ce, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(V, {
+				}, r.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: !1
 				}, r.a.createElement(F, {
@@ -1247,7 +1247,7 @@
 						sortOptions: i
 					}
 				});
-			class Ve extends r.a.Component {
+			class He extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(O.a)(e))
@@ -1348,7 +1348,7 @@
 					}) : r.a.createElement(Le.a, null)))))
 				}
 			}
-			var He = Ue(Object(o.b)(Fe)(Object(d.c)(Ve))),
+			var Ve = Ue(Object(o.b)(Fe)(Object(d.c)(He))),
 				Ke = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ge = s.n(Ke);
 			const We = Object(l.t)({
@@ -1399,7 +1399,7 @@
 						className: Object(i.a)(Ge.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, r.a.createElement(He, {
+					}, r.a.createElement(Ve, {
 						baseUrl: e,
 						disabled: n,
 						geopopularSort: s,
@@ -1541,7 +1541,7 @@
 				B = s.n(A);
 			const {
 				fbt: M
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = 500, F = new R.a(U), V = new R.a(U), H = new R.a(U), K = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = 500, F = new R.a(U), H = new R.a(U), V = new R.a(U), K = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
@@ -1554,13 +1554,13 @@
 				}, F.set(c, d)), d
 			}, z = (e, t, s, n, r) => {
 				const o = `left-${e}-${t}`;
-				let i = V.get(o);
+				let i = H.get(o);
 				return void 0 === i && (i = o => {
 					s.trackOnPostExitedViewport(e, t, o, n, r)
-				}, V.set(o, i)), i
+				}, H.set(o, i)), i
 			}, Z = (e, t) => {
 				const s = `click-${e}`;
-				let n = H.get(s);
+				let n = V.get(s);
 				return void 0 === n && (n = (e, s, n, r) => {
 					if (s.isSponsored) {
 						t.fireAdPixelsOfType(s, _.a.Click);
@@ -1575,7 +1575,7 @@
 						postOrComment: s,
 						clickInfo: Object(P.a)(e)
 					})
-				}, H.set(s, n)), n
+				}, V.set(s, n)), n
 			}, Y = (e, t) => {
 				const s = [...e];
 				return Object.keys(t).map(e => parseInt(e, 10)).sort((e, t) => t - e).forEach(e => {
@@ -2562,7 +2562,7 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: n.yb
 					});
-					return !(!t || Object(n.Fd)(t))
+					return !(!t || Object(n.Hd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -2677,4 +2677,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.c67029b192524c10fd5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.a7214662fa8dfe5f71f6.js.map
