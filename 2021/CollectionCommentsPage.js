@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.475e278e655e62159a11.js
-// Retrieved at 3/22/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.55eab94f6eaaff2ed4c6.js
+// Retrieved at 3/22/2021, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2569,9 +2569,9 @@
 				Object(y.a)(t, r, _);
 				const d = e.type;
 				return a.a.createElement("div", {
-					"aria-role": "presentation",
 					className: Object(l.a)(v.a.effectContainer, v.a[d + "EffectContainer"]),
-					ref: t
+					ref: t,
+					role: "presentation"
 				}, d === o.Lottie && a.a.createElement(C.a, {
 					assetUrl: e.assetUrl,
 					prefersReducedAnimation: e.prefersReducedAnimation,
@@ -3039,8 +3039,8 @@
 						hexColor: t
 					} = e;
 					return a.a.createElement("div", {
-						"aria-role": "presentation",
 						className: mt.a.glowHighlightContainer,
+						role: "presentation",
 						style: {
 							boxShadow: `#${t} 0px 0px 14px`
 						}
@@ -3049,8 +3049,8 @@
 				ut = s("./src/reddit/components/Comments/Comment/GradientHighlight/index.m.less"),
 				ht = s.n(ut);
 			var bt = a.a.memo(e => a.a.createElement("div", {
-					"aria-role": "presentation",
-					className: ht.a.gradientHighlightContainer
+					className: ht.a.gradientHighlightContainer,
+					role: "presentation"
 				})),
 				gt = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
 				ft = s("./src/reddit/components/Comments/PredictionComment/async.ts"),
@@ -8375,4 +8375,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.475e278e655e62159a11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.55eab94f6eaaff2ed4c6.js.map
