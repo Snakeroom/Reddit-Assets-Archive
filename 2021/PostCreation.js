@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fe2fc9f8735f2e0ef6c5.js
-// Retrieved at 3/22/2021, 6:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9d72422994ce22541d1f.js
+// Retrieved at 3/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -4682,23 +4682,26 @@
 				i = n("./src/reddit/components/Econ/Prediction/EducationMessage/index.tsx");
 
 			function a({
-				onClose: e,
-				onView: t,
-				storageKey: n
+				isTokens: e,
+				onClose: t,
+				onView: n,
+				storageKey: o
 			}) {
-				const o = s.fbt._("Predictions", null, {
+				const a = s.fbt._("Predictions", null, {
 						hk: "3X6mhV"
 					}),
-					a = s.fbt._("Redditors add coins to their answers, then everyone who gets it right splits the winnings", null, {
-						hk: "zV4JN"
+					c = e ? s.fbt._("Redditors add tokens to their answers, then everyone who gets it right splits the winnings", null, {
+						hk: "FDY0l"
+					}) : s.fbt._("Redditors add coins to their answers, then everyone who gets it right splits the winnings", null, {
+						hk: "4eP2MR"
 					});
 				return r.a.createElement("div", null, r.a.createElement(i.a, {
-					onClose: e,
-					onView: t,
-					title: o,
+					onClose: t,
+					onView: n,
+					title: a,
 					newBadge: !0,
-					message: a,
-					storageKey: n
+					message: c,
+					storageKey: o
 				}))
 			}
 		},
@@ -20792,41 +20795,43 @@
 				}).apply(this, arguments)
 			}
 
-			function Rd() {
-				const [e] = Object(Pd.a)(Cd.a.creation, !1), {
-					govType: t
-				} = Object(r.e)(j.s), n = Object(r.e)(Nd.a), s = Object(r.d)(), i = Object(ri.a)(), c = {
+			function Rd({
+				tournamentsEnabled: e
+			}) {
+				const [t] = Object(Pd.a)(Cd.a.creation, !1), {
+					govType: n
+				} = Object(r.e)(j.s), s = Object(r.e)(Nd.a), i = Object(r.d)(), c = Object(ri.a)(), l = {
 					backgroundClassName: Dd.a.buttonBackground,
 					colorTheme: "blue",
 					className: Object(ze.a)(Dd.a.button, Dd.a.pollTypePickerButton),
 					contentClassName: Dd.a.buttonContent,
-					disabled: n,
+					disabled: s,
 					isDarkDayMode: !1,
 					isNightMode: !1,
 					layout: gd.g.Compact
 				};
 				return o.a.createElement("div", {
 					className: Dd.a.pollTypePicker
-				}, o.a.createElement(Td, Ld({}, c, {
-					isActive: t === Q.a.GA || !t,
+				}, o.a.createElement(Td, Ld({}, l, {
+					isActive: n === Q.a.GA || !n,
 					onClick: () => {
-						s(Object(a.j)({
-							oldType: t,
+						i(Object(a.j)({
+							oldType: n,
 							type: Q.a.GA
-						})), i(wd.e)
+						})), c(wd.e)
 					},
 					title: d.fbt._("Poll", null, {
 						hk: "2uKNlH"
 					})
 				}), d.fbt._("Poll", null, {
 					hk: "1l7ZuP"
-				})), o.a.createElement(Td, Ld({}, c, {
-					isActive: t === Q.a.Prediction,
+				})), o.a.createElement(Td, Ld({}, l, {
+					isActive: n === Q.a.Prediction,
 					onClick: () => {
-						s(Object(a.j)({
-							oldType: t,
+						i(Object(a.j)({
+							oldType: n,
 							type: Q.a.Prediction
-						})), i(wd.f)
+						})), c(wd.f)
 					},
 					title: d.fbt._("Prediction", null, {
 						hk: "3wu0FO"
@@ -20835,13 +20840,14 @@
 					className: Dd.a.predictionLabel
 				}, d.fbt._("Prediction", null, {
 					hk: "1CbFag"
-				}), !e && t !== Q.a.Prediction && o.a.createElement(_d, {
+				}), !t && n !== Q.a.Prediction && o.a.createElement(_d, {
 					className: Dd.a.newBadge
-				}))), t === Q.a.Prediction && o.a.createElement("div", {
+				}))), n === Q.a.Prediction && o.a.createElement("div", {
 					className: Dd.a.education
 				}, o.a.createElement(Od.a, {
-					onClose: () => i(wd.c),
-					onView: () => i(wd.g),
+					isTokens: e,
+					onClose: () => c(wd.c),
+					onView: () => c(wd.g),
 					storageKey: Cd.a.creation
 				})))
 			}
@@ -20981,7 +20987,9 @@
 					} = this.props, a = !Object(Q.f)(s) && t && n, c = r === Q.a.Prediction;
 					return o.a.createElement("div", {
 						"data-testid": "poll-creator"
-					}, a && o.a.createElement(Rd, null), o.a.createElement("div", {
+					}, a && o.a.createElement(Rd, {
+						tournamentsEnabled: i
+					}), o.a.createElement("div", {
 						className: Object(ze.a)(e, Wd.a.container)
 					}, o.a.createElement("div", {
 						className: Wd.a.options
@@ -24123,4 +24131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fe2fc9f8735f2e0ef6c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9d72422994ce22541d1f.js.map
