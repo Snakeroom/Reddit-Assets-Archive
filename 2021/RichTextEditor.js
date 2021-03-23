@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.e4b6b92aecdeb28c293b.js
-// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.4625b18d5b92273f89d6.js
+// Retrieved at 3/23/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1681,6 +1681,8 @@
 		},
 		"./src/reddit/components/CommentCreation/FormFooter/index.m.less": function(e, t, o) {
 			e.exports = {
+				BaseFooterButton: "_2vw1scWo_wiHUpczRL3dho",
+				baseFooterButton: "_2vw1scWo_wiHUpczRL3dho",
 				SubmitButton: "_22S4OsoDdOqiM-hPTeOURa",
 				submitButton: "_22S4OsoDdOqiM-hPTeOURa",
 				LoadingIcon: "_2qsMO_C_HwxgUgktaOeqZ2",
@@ -1706,7 +1708,7 @@
 				l = o.n(d);
 			const {
 				fbt: u
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), m = a.a.div("FormFooterWrapper", l.a), p = a.a.wrapped(i.i, "SubmitButton", l.a), h = a.a.wrapped(c.a, "LoadingIcon", l.a), b = a.a.wrapped(i.l, "CancelButton", l.a), f = a.a.div("ButtonWrapper", l.a), _ = e => e.preventDefault();
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), m = a.a.div("FormFooterWrapper", l.a), p = a.a.wrapped(i.q, "SubmitButton", l.a), h = a.a.wrapped(c.a, "LoadingIcon", l.a), b = a.a.wrapped(i.q, "CancelButton", l.a), f = a.a.div("ButtonWrapper", l.a), _ = e => e.preventDefault();
 			t.a = ({
 				pending: e,
 				cancelButtonEnabled: t = !0,
@@ -1729,6 +1731,7 @@
 			}, e ? s.a.createElement(h, {
 				sizePx: 10
 			}) : a), t && s.a.createElement(b, {
+				priority: i.b.Secondary,
 				size: i.c.XS,
 				type: "reset",
 				disabled: e,
@@ -4552,4 +4555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.e4b6b92aecdeb28c293b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.4625b18d5b92273f89d6.js.map
