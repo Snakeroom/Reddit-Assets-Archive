@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.64c5c038abfdcf74f655.js
-// Retrieved at 3/23/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.9eeb041864a991844b42.js
+// Retrieved at 3/23/2021, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -252,7 +252,7 @@
 				Object(n.useEffect)(() => {
 					P(Object(m.h)(k))
 				}, []);
-				const z = t && t.rank > 0;
+				const L = t && t.rank > 0;
 				return r.a.createElement("div", {
 					className: Object(d.a)(x.a.container, {
 						[x.a.isTournament]: !!h
@@ -276,9 +276,9 @@
 					currentRank: t,
 					topPredictorsRank: l,
 					tournamentId: h
-				}), z && r.a.createElement("div", {
+				}), L && r.a.createElement("div", {
 					className: x.a.spacer
-				}, " ")), t && z && r.a.createElement(E.a, {
+				}, " ")), t && L && r.a.createElement(E.a, {
 					className: x.a.currentRank,
 					isCurrentUser: !0,
 					rank: t.rank,
@@ -302,6 +302,7 @@
 				rank: "_35mmwlcmeMehfyJXIsaV6P",
 				userIcon: "_12PvAVnV9Mni44vSgjcixP",
 				avatar: "KajS3NI16AuxmHTMwUM9Y",
+				name: "_1XaIj4-_6OJb20sL98YYiD",
 				score: "_3ebMVpO-ahVFbOZDTJpx9U",
 				coinIcon: "_1aYPVtVpXwl960I3DbyeEc",
 				tokenIcon: "_2kFr3_jRVVXfM5R1z3TgJI"
@@ -310,7 +311,7 @@
 		"./src/reddit/components/Econ/PredictionLeaderboard/Predictor/index.tsx": function(e, t, c) {
 			"use strict";
 			c.d(t, "a", (function() {
-				return L
+				return z
 			}));
 			var n = c("./node_modules/react/index.js"),
 				r = c.n(n),
@@ -367,10 +368,10 @@
 			var k = c("./src/reddit/components/Econ/PredictionLeaderboard/Predictor/index.m.less"),
 				j = c.n(k);
 			const {
-				fbt: z
+				fbt: L
 			} = c("./node_modules/fbt/lib/FbtPublic.js");
 
-			function L({
+			function z({
 				className: e,
 				isCurrentUser: t,
 				rank: c,
@@ -397,16 +398,18 @@
 					to: `/user/${E}`
 				}, r.a.createElement(v, {
 					place: c
-				}), r.a.createElement(l.a, {
+				}), r.a.createElement("div", null, r.a.createElement(l.a, {
 					className: Object(a.a)(j.a.userIcon, j.a.avatar),
 					iconUrl: null == b ? void 0 : b.url,
 					isNSFW: !!(null == h ? void 0 : h.isNsfw),
 					userName: null != E ? E : ""
-				}), r.a.createElement("div", null, r.a.createElement("div", {
+				})), r.a.createElement("div", {
+					className: j.a.name
+				}, r.a.createElement("div", {
 					className: j.a.userName
 				}, E), t && r.a.createElement("div", {
 					className: j.a.yourProfile
-				}, z._("Yep, thats you.", null, {
+				}, L._("Yep, thats you.", null, {
 					hk: "3DqdE1"
 				})))), r.a.createElement("div", {
 					className: j.a.score
@@ -428,7 +431,7 @@
 		"./src/reddit/components/Econ/PredictionLeaderboard/Sidebar/index.tsx": function(e, t, c) {
 			"use strict";
 			c.r(t), c.d(t, "PredictionLeaderboardSidebar", (function() {
-				return L
+				return z
 			}));
 			var n = c("./node_modules/fbt/lib/FbtPublic.js"),
 				r = c("./node_modules/react/index.js"),
@@ -463,9 +466,9 @@
 				j = {
 					fetchSubredditTopPredictors: o.f
 				},
-				z = Object(d.b)(k, j);
+				L = Object(d.b)(k, j);
 
-			function L({
+			function z({
 				className: e,
 				fetchSubredditTopPredictors: t,
 				leaderboard: c,
@@ -488,8 +491,8 @@
 				};
 				if (!(null === (o = null == c ? void 0 : c.topPredictorsRank) || void 0 === o ? void 0 : o.length) || x) return null;
 				const {
-					currentRank: z,
-					topPredictorsRank: L
+					currentRank: L,
+					topPredictorsRank: z
 				} = c;
 				return a.a.createElement(i.a, null, a.a.createElement(m.a, {
 					className: Object(s.a)(_.a.themedWidget, e),
@@ -499,8 +502,8 @@
 						hk: "3HCYxQ"
 					})
 				}, a.a.createElement(E.a, {
-					currentRank: z,
-					topPredictorsRank: L.slice(0, P),
+					currentRank: L,
+					topPredictorsRank: z.slice(0, P),
 					tournamentId: l
 				}), a.a.createElement("div", {
 					className: _.a.openModalButtonContainer
@@ -514,7 +517,7 @@
 					hk: "1Ozf02"
 				}))), f && a.a.createElement(h.a, {
 					className: _.a.modal,
-					currentRank: z,
+					currentRank: L,
 					onOverlayClick: j,
 					onClose: j,
 					subredditId: d,
@@ -523,7 +526,7 @@
 					withOverlay: !0
 				})))
 			}
-			t.default = z(L)
+			t.default = L(z)
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, c) {
 			"use strict";
@@ -621,4 +624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.64c5c038abfdcf74f655.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.9eeb041864a991844b42.js.map

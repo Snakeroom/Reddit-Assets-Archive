@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.99a487659e99824f7109.js
-// Retrieved at 3/23/2021, 4:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.fab1b692c956daaa87da.js
+// Retrieved at 3/23/2021, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2687,6 +2687,7 @@
 				rank: "_35mmwlcmeMehfyJXIsaV6P",
 				userIcon: "_12PvAVnV9Mni44vSgjcixP",
 				avatar: "KajS3NI16AuxmHTMwUM9Y",
+				name: "_1XaIj4-_6OJb20sL98YYiD",
 				score: "_3ebMVpO-ahVFbOZDTJpx9U",
 				coinIcon: "_1aYPVtVpXwl960I3DbyeEc",
 				tokenIcon: "_2kFr3_jRVVXfM5R1z3TgJI"
@@ -2782,12 +2783,14 @@
 					to: `/user/${f}`
 				}, r.a.createElement(_, {
 					place: n
-				}), r.a.createElement(i.a, {
+				}), r.a.createElement("div", null, r.a.createElement(i.a, {
 					className: Object(a.a)(O.a.userIcon, O.a.avatar),
 					iconUrl: null == h ? void 0 : h.url,
 					isNSFW: !!(null == g ? void 0 : g.isNsfw),
 					userName: null != f ? f : ""
-				}), r.a.createElement("div", null, r.a.createElement("div", {
+				})), r.a.createElement("div", {
+					className: O.a.name
+				}, r.a.createElement("div", {
 					className: O.a.userName
 				}, f), t && r.a.createElement("div", {
 					className: O.a.yourProfile
@@ -13730,4 +13733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.99a487659e99824f7109.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fab1b692c956daaa87da.js.map

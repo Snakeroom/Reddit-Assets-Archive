@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.002e862f3dad82967d59.js
-// Retrieved at 3/23/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6be38a79c67902d8c2e6.js
+// Retrieved at 3/23/2021, 5:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -20885,6 +20885,7 @@
 				}, d.fbt._("Tournament", null, {
 					hk: "1eyps5"
 				})), o.a.createElement("input", {
+					disabled: !0,
 					className: Bd.a.input,
 					readOnly: !0,
 					type: "text",
@@ -24134,4 +24135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.002e862f3dad82967d59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6be38a79c67902d8c2e6.js.map
