@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.96a6f16e483163304298.js
-// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.77f8108ddbd9c85e2347.js
+// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -584,7 +584,7 @@
 			};
 
 			function d(e) {
-				const t = t => {
+				return Object(o.c)(t => {
 					const {
 						sendEvent: s,
 						eventFactory: o,
@@ -594,8 +594,7 @@
 					return n.a.createElement(e, a({}, d, {
 						afterClickTracking: l
 					}))
-				};
-				return t.displayName = `WithClickTracking(${e.displayName||e.name})`, Object(o.c)(t)
+				})
 			}
 			const l = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -1362,7 +1361,7 @@
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
-					openPowerupsModal: () => e(Object(d.c)()),
+					openPowerupsModal: () => e(Object(d.b)()),
 					openRemovalReasonModal: () => {
 						s.e("removalReasonActions").then(s.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(s => e(s.fetchReasonsAndOpenModal(t.comment.subredditId, [t.comment.id])))
 					}
@@ -8968,9 +8967,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.Uc.Treatment1 === Object(n.c)(e, {
+			const o = e => r.Wc.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.Kc
+				experimentName: r.Mc
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -9079,4 +9078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.96a6f16e483163304298.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.77f8108ddbd9c85e2347.js.map

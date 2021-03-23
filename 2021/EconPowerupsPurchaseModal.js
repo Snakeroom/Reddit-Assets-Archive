@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.48e023003dbddcd3ea87.js
-// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.47550b0a74dacad89039.js
+// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1018,7 +1018,7 @@
 						})))
 					}
 				}, Z = Object(p.a)(h.R), J = e => async (t, r) => {
-					t(Z(e)), t(Object(E.g)(e.subredditId, {
+					t(Z(e)), t(Object(E.f)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(w.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.f)({
@@ -1509,7 +1509,7 @@
 					} = e, c = Object(a.d)();
 					return o.a.createElement(I.i, {
 						onClick: () => {
-							c(Object(E.d)(1)), c(Object(E.e)(s, 1, r))
+							c(Object(E.c)(1)), c(Object(E.d)(s, 1, r))
 						},
 						className: Object(d.a)(t, B.a.button),
 						disabled: n
@@ -1707,14 +1707,14 @@
 						className: de.a.progressControl,
 						count: l,
 						maxCount: I ? 1 : pe,
-						onChange: e => _(Object(E.d)(e)),
+						onChange: e => _(Object(E.c)(e)),
 						powerups: i
 					}), o.a.createElement("div", {
 						className: de.a.details
 					}, o.a.createElement(N.a, {
 						className: de.a.anonymousCheckbox,
 						isSelected: t,
-						onClick: () => (e => _(Object(E.b)(e)))(!t),
+						onClick: () => (e => _(Object(E.a)(e)))(!t),
 						text: ue._("Powerup anonymously", null, {
 							hk: "YXX31"
 						})
@@ -2440,4 +2440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.48e023003dbddcd3ea87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.47550b0a74dacad89039.js.map

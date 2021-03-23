@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5d0dc470f3c49ac5b321.js
-// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a73493ef9bb1d1526de4.js
+// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.mc
 				});
-				return Object(m.Fd)(t) ? void 0 : t
+				return Object(m.Hd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.nc
 				});
-				return Object(m.Fd)(t) ? void 0 : t
+				return Object(m.Hd)(t) ? void 0 : t
 			}, (e, t) => e === m.oc.Enabled && t === m.oc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -868,7 +868,7 @@
 						B = Object(K.J)(s());
 					if (D && "subreddit" === D.belongsTo.type) {
 						const e = D.belongsTo.id,
-							s = Object($.i)(() => t(Object(Q.g)(e, {
+							s = Object($.i)(() => t(Object(Q.f)(e, {
 								fullData: !0,
 								includeIdentity: B
 							})), {
@@ -5774,8 +5774,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: a.Lc
-				}) === a.Vc.Enabled
+					experimentName: a.Nc
+				}) === a.Xc.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -5783,4 +5783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5d0dc470f3c49ac5b321.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a73493ef9bb1d1526de4.js.map

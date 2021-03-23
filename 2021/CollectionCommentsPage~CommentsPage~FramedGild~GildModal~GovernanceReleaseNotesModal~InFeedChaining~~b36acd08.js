@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.40dd4ad2e65b89904fec.js
-// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.26c59443b94a4005d9f3.js
+// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -780,16 +780,16 @@
 				F = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				N = s("./src/reddit/selectors/experiments/utils.ts");
 			const k = Object(d.a)(e => Object(F.c)(e, {
-					experimentName: w.td,
+					experimentName: w.vd,
 					experimentEligibilitySelector: F.a
 				}), N.a),
 				R = Object(d.a)(k, (function(e) {
 					switch (e) {
-						case w.zd.BufferTwoSeconds:
+						case w.Bd.BufferTwoSeconds:
 							return 2;
-						case w.zd.BufferFiveSeconds:
+						case w.Bd.BufferFiveSeconds:
 							return 5;
-						case w.zd.BufferTenSeconds:
+						case w.Bd.BufferTenSeconds:
 							return 10;
 						default:
 							return
@@ -1517,8 +1517,8 @@
 									const {
 										appName: t
 									} = u.a;
-									let s = `Reddit/Version Build 4af89c94e58e1ea9ec51b428b5ec338113295912-production ${t}`;
-									return n && (s += ` [${w.td}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
+									let s = `Reddit/Version Build cf84e87666224e7083f898c5bbf88b1a6fb22b1f-production ${t}`;
+									return n && (s += ` [${w.vd}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
 								},
 								modifyRequestURL: e => e
 							}
@@ -2419,19 +2419,19 @@
 			}));
 			var i = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const n = e => i.Bd.Enabled === Object(a.c)(e, {
+			const n = e => i.Dd.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: i.yd
+				}),
+				o = e => i.Cd.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: i.wd
 				}),
-				o = e => i.Ad.Enabled === Object(a.c)(e, {
+				r = e => i.Ed.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.ud
-				}),
-				r = e => i.Cd.Enabled === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: i.xd
+					experimentName: i.zd
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.40dd4ad2e65b89904fec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.26c59443b94a4005d9f3.js.map

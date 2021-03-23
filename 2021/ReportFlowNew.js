@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.90da5f3b57948aac6e42.js
-// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.4b5ce9569833d153d77d.js
+// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -259,7 +259,7 @@
 		"./src/reddit/components/ReportFlow/_ReportFlowNew.tsx": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "ValidThingReportTypes", (function() {
-				return N
+				return B
 			}));
 			var r = o("./src/config.ts"),
 				s = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -288,8 +288,8 @@
 			});
 			var g = o("./src/graphql/operations/ReportForm.json");
 			var j = o("./src/reddit/contexts/ApiContext.tsx"),
-				x = o("./src/reddit/models/Post/index.ts"),
-				k = o("./src/reddit/models/Toast/index.ts"),
+				k = o("./src/reddit/models/Post/index.ts"),
+				x = o("./src/reddit/models/Toast/index.ts"),
 				y = o("./src/reddit/models/WhitelistAndBlocked.ts"),
 				F = o("./src/reddit/selectors/commentSelector.ts"),
 				v = o("./src/reddit/selectors/posts.ts"),
@@ -300,11 +300,11 @@
 			const L = E.a.div("ReportLoaderWrapper", A.a),
 				D = E.a.img("LoadingIcon", A.a),
 				q = "2.0";
-			var N;
+			var B;
 			! function(e) {
 				e.Post = "post", e.Comment = "comment", e.Message = "message"
-			}(N || (N = {}));
-			const B = Object(l.c)({
+			}(B || (B = {}));
+			const N = Object(l.c)({
 					post: (e, {
 						postId: t
 					}) => t ? Object(v.D)(e, {
@@ -319,7 +319,7 @@
 						postId: t
 					}) => {
 						const o = t && e.posts.models[t];
-						return !!o && Object(x.n)(o)
+						return !!o && Object(k.n)(o)
 					},
 					blockUserPending: e => e.user.blocked.api,
 					blockedUser: (e, t) => e.user.blocked.data.find(o => {
@@ -336,7 +336,7 @@
 					}),
 					isNightmodeOn: I.V
 				}),
-				P = Object(a.b)(B, (e, {
+				P = Object(a.b)(N, (e, {
 					timestamp: t
 				}) => ({
 					onCloseReportFlow: () => {
@@ -346,7 +346,7 @@
 						e(Object(h.h)(t))
 					},
 					showFailToast: () => e(Object(u.f)({
-						kind: k.b.Error,
+						kind: x.b.Error,
 						text: s.fbt._("Something went wrong!", null, {
 							hk: "1BEFhz"
 						})
@@ -384,11 +384,11 @@
 							messageId: o
 						} = this.props;
 						let r, s, n;
-						if (this.props.author && (n = this.props.author), t) r = t, s = N.Comment, this.props.comment && !n && (n = this.props.comment.author);
-						else if (e) r = e, s = N.Post, this.props.post && !n && (n = this.props.post.author);
+						if (this.props.author && (n = this.props.author), t) r = t, s = B.Comment, this.props.comment && !n && (n = this.props.comment.author);
+						else if (e) r = e, s = B.Post, this.props.post && !n && (n = this.props.post.author);
 						else {
 							if (!o) throw new Error("Invalid object type passed to reporting flow");
-							r = o, s = N.Message
+							r = o, s = B.Message
 						}
 						return {
 							itemId: r,
@@ -442,7 +442,7 @@
 						}
 						let u;
 						switch (d) {
-							case N.Post:
+							case B.Post:
 								const e = {
 									postId: n,
 									...p
@@ -451,7 +451,7 @@
 									input: e
 								});
 								break;
-							case N.Comment:
+							case B.Comment:
 								const t = {
 									commentId: n,
 									...p
@@ -460,7 +460,7 @@
 									input: t
 								});
 								break;
-							case N.Message:
+							case B.Message:
 								const r = {
 									messageId: n,
 									...p
@@ -570,14 +570,13 @@
 				d = Object(r.createContext)(i);
 
 			function c(e) {
-				const t = t => s.a.createElement(d.Consumer, null, ({
+				return t => s.a.createElement(d.Consumer, null, ({
 					apiContext: o,
 					gqlContext: r
 				}) => s.a.createElement(e, n({
 					apiContext: o,
 					gqlContext: r
-				}, t)));
-				return t.displayName = `WithApiContext(${e.displayName||e.name})`, t
+				}, t)))
 			}
 		},
 		"./src/reddit/endpoints/accounts/index.ts": function(e, t, o) {
@@ -663,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.90da5f3b57948aac6e42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.4b5ce9569833d153d77d.js.map

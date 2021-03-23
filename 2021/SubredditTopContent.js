@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.4b63c47b0493a462f82f.js
-// Retrieved at 3/22/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.522290f85cd51e744d1f.js
+// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -48,7 +48,7 @@
 			};
 
 			function l(e) {
-				const t = t => {
+				return Object(r.c)(t => {
 					const {
 						sendEvent: s,
 						eventFactory: r,
@@ -58,8 +58,7 @@
 					return a.a.createElement(e, o({}, l, {
 						afterClickTracking: d
 					}))
-				};
-				return t.displayName = `WithClickTracking(${e.displayName||e.name})`, Object(r.c)(t)
+				})
 			}
 			const d = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -925,9 +924,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				g = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.G)(e) || f.ld.ShowTopContent === Object(g.c)(e, {
+			const y = e => Object(C.G)(e) || f.nd.ShowTopContent === Object(g.c)(e, {
 				experimentEligibilitySelector: g.a,
-				experimentName: f.ed
+				experimentName: f.gd
 			});
 			var E = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1989,4 +1988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.4b63c47b0493a462f82f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.522290f85cd51e744d1f.js.map
