@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.420bdf62597ba02d182e.js
-// Retrieved at 3/23/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.99a487659e99824f7109.js
+// Retrieved at 3/23/2021, 4:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2378,6 +2378,15 @@
 				}
 			})
 		},
+		"./src/reddit/components/Econ/Prediction/EmptyPredictions/index.m.less": function(e, t, n) {
+			e.exports = {
+				primaryText: "_1bwD7kygv4bVZM8fDgSQv8",
+				mainContentWrapper: "_3-p7jwY9LowTxunslKskSz",
+				mainContent: "_2ckdQlwH_QZ38t7uWKUMLo",
+				backgroundPlaceholder: "s5jLEXcFLaQaE2Ck0qPJV",
+				component: "_2fO9Pa6g6JYBjRFkKsbzHI"
+			}
+		},
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -3140,6 +3149,54 @@
 				getComponent: () => n.e("SubredditPremiumNewUserWelcome").then(n.bind(null, "./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/index.tsx")).then(e => e.default)
 			});
 			t.a = Object(r.a)("spSpecialMemberships", a)
+		},
+		"./src/reddit/components/EmptySubredditPostList/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return h
+			}));
+			var s = n("./node_modules/react/index.js"),
+				r = n.n(s),
+				a = n("./src/reddit/constants/postLayout.ts"),
+				o = n("./src/reddit/components/PostList/Placeholder.tsx"),
+				i = n("./src/lib/classNames/index.ts"),
+				c = n("./src/lib/lessComponent.tsx"),
+				d = n("./src/reddit/components/Econ/Prediction/EmptyPredictions/index.m.less"),
+				l = n.n(d);
+			const {
+				fbt: u
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), m = c.a.wrapped(o.a, "backgroundPlaceholder", l.a);
+
+			function p() {
+				return r.a.createElement("div", {
+					className: Object(i.a)(l.a.component, l.a.emptyHomepage)
+				}, r.a.createElement(m, {
+					isLoading: !1,
+					layout: a.g.Classic
+				}), r.a.createElement("div", {
+					className: l.a.mainContentWrapper
+				}, r.a.createElement("div", {
+					className: l.a.mainContent
+				}, r.a.createElement("div", {
+					className: l.a.primaryText
+				}, u._("No prediction tournament posts", null, {
+					hk: "1gqn5x"
+				})))))
+			}
+			var b = n("./src/reddit/components/EmptySubreddit.tsx");
+
+			function h({
+				isPredictionsPage: e,
+				listingName: t,
+				sort: n,
+				subreddit: s
+			}) {
+				return e ? r.a.createElement(p, null) : r.a.createElement(b.a, {
+					listingName: t,
+					sort: n,
+					subreddit: s || void 0
+				})
+			}
 		},
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -11881,7 +11938,7 @@
 				N = n("./src/reddit/components/Econ/Tournament/Sidebar/index.tsx"),
 				L = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/async.tsx"),
 				A = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/async.tsx"),
-				B = n("./src/reddit/components/EmptySubreddit.tsx"),
+				B = n("./src/reddit/components/EmptySubredditPostList/index.tsx"),
 				D = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.tsx"),
 				R = n("./src/reddit/components/Governance/ClaimPointsBanner/async.ts"),
 				F = n("./src/reddit/components/Governance/WalletRegistration/Banner/async.tsx"),
@@ -12523,9 +12580,10 @@
 							listingName: ye,
 							listingViewed: (e, t) => Object(oe.f)(m, y, t, e, ce),
 							noPostsComponent: () => i.a.createElement(B.a, {
+								isPredictionsPage: Se,
 								listingName: ye,
 								sort: y,
-								subreddit: ne || void 0
+								subreddit: ne
 							}),
 							onLoadMore: qe,
 							inSubredditOrProfile: !Ee,
@@ -13672,4 +13730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.420bdf62597ba02d182e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.99a487659e99824f7109.js.map
