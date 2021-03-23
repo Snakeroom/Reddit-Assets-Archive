@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.cd2b6267328f0aeb4d98.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.9f8ac8c4737a6c68826f.js
+// Retrieved at 3/23/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1041,8 +1041,6 @@
 				sortLink: "M2Hk_S2yvXpsNPfZMBMur",
 				active: "_2VxDgoEy96XoqXUPsQooJk",
 				selected: "_1s79QnBguPbckxiiPvFXGP",
-				SortLabel: "_1lwNBHmCQJObvqs1fXKSYR",
-				sortLabel: "_1lwNBHmCQJObvqs1fXKSYR",
 				SortOverflowButton: "_2yF1lH154qN6wYff1cVkh6",
 				sortOverflowButton: "_2yF1lH154qN6wYff1cVkh6",
 				CountrySort: "VatfkH4hd3AcIOCT15Zai",
@@ -1725,6 +1723,7 @@
 							kind: Fe.a.InternalLink,
 							priority: Fe.b.Plain,
 							Icon: n => a.a.createElement(T, Re({}, n, {
+								className: Object(o.a)(Le.a.SortIcon, n.className),
 								sort: e,
 								isFilled: e === t
 							})),
@@ -2356,4 +2355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.cd2b6267328f0aeb4d98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.9f8ac8c4737a6c68826f.js.map

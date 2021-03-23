@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.1b4b0493898d1efa3db2.js
-// Retrieved at 3/23/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.429e7c6efab031830c44.js
+// Retrieved at 3/23/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2190,8 +2190,6 @@
 				sortLink: "M2Hk_S2yvXpsNPfZMBMur",
 				active: "_2VxDgoEy96XoqXUPsQooJk",
 				selected: "_1s79QnBguPbckxiiPvFXGP",
-				SortLabel: "_1lwNBHmCQJObvqs1fXKSYR",
-				sortLabel: "_1lwNBHmCQJObvqs1fXKSYR",
 				SortOverflowButton: "_2yF1lH154qN6wYff1cVkh6",
 				sortOverflowButton: "_2yF1lH154qN6wYff1cVkh6",
 				CountrySort: "VatfkH4hd3AcIOCT15Zai",
@@ -2874,6 +2872,7 @@
 							kind: Ie.a.InternalLink,
 							priority: Ie.b.Plain,
 							Icon: n => r.a.createElement(A, Re({}, n, {
+								className: Object(i.a)(De.a.SortIcon, n.className),
 								sort: e,
 								isFilled: e === t
 							})),
@@ -7766,4 +7765,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.1b4b0493898d1efa3db2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.429e7c6efab031830c44.js.map
