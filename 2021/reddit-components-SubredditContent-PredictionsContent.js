@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.a4f2a1634e77fd3316ca.js
-// Retrieved at 3/23/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.ba992b0b2f855c4898be.js
+// Retrieved at 3/24/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -79,9 +79,9 @@
 			})), n.d(t, "j", (function() {
 				return y
 			})), n.d(t, "g", (function() {
-				return C
-			})), n.d(t, "b", (function() {
 				return w
+			})), n.d(t, "b", (function() {
+				return C
 			})), n.d(t, "l", (function() {
 				return I
 			})), n.d(t, "c", (function() {
@@ -200,7 +200,7 @@
 						pollId: t,
 						prediction: a.poll
 					})), a.poll
-				}, P = Object(c.a)(h.b), _ = Object(c.a)(h.c), C = e => async (t, n, {
+				}, P = Object(c.a)(h.b), _ = Object(c.a)(h.c), w = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
@@ -229,7 +229,7 @@
 						subredditId: i,
 						tournaments: d
 					})), d
-				}, w = Object(c.a)(h.a), I = Object(c.a)(h.h), E = ({
+				}, C = Object(c.a)(h.a), I = Object(c.a)(h.h), E = ({
 					subredditId: e
 				}) => async (t, n, {
 					gqlContext: o
@@ -448,8 +448,8 @@
 					[h, O] = Object(r.useState)(""),
 					[k, v] = Object(r.useState)(!1),
 					[y, P] = Object(r.useState)(!1),
-					[_, C] = Object(r.useState)(!1),
-					[w, I] = Object(r.useState)(null),
+					[_, w] = Object(r.useState)(!1),
+					[C, I] = Object(r.useState)(null),
 					E = Object(a.e)(t => Object(f.b)(t, {
 						subredditId: e.id
 					})),
@@ -467,12 +467,9 @@
 					E && (O(E.name), I(x - E.name.length))
 				}, [E]);
 				const N = Object(r.useCallback)(() => {
-						n(Object(p.c)()), C(!0)
+						n(Object(p.c)()), w(!0)
 					}, [n]),
-					q = Object(r.useCallback)(() => {
-						n(Object(p.g)()), C(!1)
-					}, [n]),
-					A = !!h && ((null == E ? void 0 : E.name) !== h && h.length > 3);
+					q = !!h && ((null == E ? void 0 : E.name) !== h && h.length > 3);
 				return i.a.createElement("div", {
 					className: g.a.predictionsContent
 				}, i.a.createElement("h1", {
@@ -507,20 +504,20 @@
 					className: Object(c.a)(g.a.remainingCharacters, {
 						[g.a.maxCharacters]: (null == h ? void 0 : h.length) === x
 					})
-				}, E && E.name !== h && null !== w ? o.fbt._({
+				}, E && E.name !== h && null !== C ? o.fbt._({
 					"*": "{remaining characters} characters remaining",
 					_1: "1 character remaining"
-				}, [o.fbt._plural(w, "remaining characters")], {
+				}, [o.fbt._plural(C, "remaining characters")], {
 					hk: "1dBRgv"
 				}) : i.a.createElement(i.a.Fragment, null, " ")), i.a.createElement(u.i, {
 					className: g.a.button,
-					disabled: !h || !E || T || !A,
+					disabled: !h || !E || T || !q,
 					onClick: async () => {
 						if (!E || !h) return null;
-						v(!0);
+						n(Object(p.g)()), v(!0);
 						try {
 							await t(Object(s.m)(E.tournamentId, e.id, h))
-						} catch (n) {
+						} catch (r) {
 							t(Object(d.f)({
 								kind: b.b.Error,
 								text: o.fbt._("Failed to update tournament name, please try again later", null, {
@@ -550,7 +547,9 @@
 					hk: "HWN7f"
 				})), _ && i.a.createElement(j, {
 					isEnding: y,
-					onClose: q,
+					onClose: () => {
+						w(!1)
+					},
 					onConfirm: async () => {
 						if (!E || !S) return null;
 						P(!0);
@@ -564,7 +563,7 @@
 								})
 							}))
 						}
-						P(!1), C(!1)
+						P(!1), w(!1)
 					}
 				}))))
 			}
@@ -594,7 +593,7 @@
 			})), n.d(t, "e", (function() {
 				return _
 			})), n.d(t, "g", (function() {
-				return C
+				return w
 			}));
 			var o = n("./src/lib/makeGqlRequest/index.ts"),
 				r = n("./src/graphql/operations/AddPredictionDrafts.json"),
@@ -695,7 +694,7 @@
 					...c,
 					variables: t
 				}),
-				C = (e, t) => Object(o.a)(e, {
+				w = (e, t) => Object(o.a)(e, {
 					...d,
 					variables: t
 				})
@@ -985,4 +984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.a4f2a1634e77fd3316ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.ba992b0b2f855c4898be.js.map
