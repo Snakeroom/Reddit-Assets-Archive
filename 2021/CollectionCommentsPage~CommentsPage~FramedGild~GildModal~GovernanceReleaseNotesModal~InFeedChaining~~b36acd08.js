@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.675b3b6379f5192de409.js
-// Retrieved at 3/24/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.ccd56b92b97ea7ce74d1.js
+// Retrieved at 3/24/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -91,8 +91,8 @@
 			const T = r.a.div("Thumb", M.a),
 				L = r.a.div("ProgressBar", M.a),
 				_ = r.a.div("Floating", M.a),
-				B = r.a.video("PreviewVideo", M.a),
-				F = r.a.div("PreviewTime", M.a),
+				F = r.a.video("PreviewVideo", M.a),
+				B = r.a.div("PreviewTime", M.a),
 				N = r.a.div("VideoSeekbar", M.a);
 			class k extends n.a.PureComponent {
 				constructor(e) {
@@ -246,10 +246,10 @@
 						style: l
 					}), !this.props.controlBarIsHidden && n.a.createElement(_, {
 						innerRef: this.setPreviewThumbnailContainer
-					}, this.props.thumbSource && n.a.createElement(B, {
+					}, this.props.thumbSource && n.a.createElement(F, {
 						innerRef: this.setPreviewThumbnailVideo,
 						src: this.props.thumbSource
-					}), n.a.createElement(F, {
+					}), n.a.createElement(B, {
 						innerRef: this.setPreviewThumbnailTime
 					})))
 				}
@@ -743,7 +743,7 @@
 		"./src/reddit/components/HTML5StreamPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return Ae
+				return Re
 			}));
 			var i = s("./node_modules/bowser/src/bowser.js"),
 				a = s.n(i),
@@ -771,47 +771,28 @@
 				E = s("./src/reddit/components/Media/LoadingIcon/index.tsx"),
 				V = s("./src/reddit/components/PlayButton/index.tsx"),
 				C = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				w = s("./src/reddit/constants/experiments.ts"),
-				M = s("./src/reddit/constants/video.ts"),
-				T = s("./src/reddit/contexts/InsideOverlay.tsx"),
-				L = s("./src/reddit/featureFlags/debugVideoMegafail.ts"),
-				_ = s("./src/reddit/helpers/trackers/media.ts"),
-				B = s("./src/reddit/selectors/experiments/video.ts"),
-				F = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				N = s("./src/reddit/selectors/experiments/utils.ts");
-			const k = Object(d.a)(e => Object(F.c)(e, {
-					experimentName: w.vd,
-					experimentEligibilitySelector: F.a
-				}), N.a),
-				R = Object(d.a)(k, (function(e) {
-					switch (e) {
-						case w.Bd.BufferTwoSeconds:
-							return 2;
-						case w.Bd.BufferFiveSeconds:
-							return 5;
-						case w.Bd.BufferTenSeconds:
-							return 10;
-						default:
-							return
-					}
-				}));
-			var O = s("./src/reddit/selectors/media.ts"),
-				H = s("./src/reddit/selectors/platform.ts"),
-				I = s("./src/reddit/selectors/posts.ts"),
-				j = s("./src/reddit/selectors/user.ts"),
-				A = s("./src/reddit/selectors/video.ts"),
-				U = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
-				D = s.n(U),
-				W = s("./src/lib/lessComponent.tsx"),
-				z = W.a.img("Component", D.a),
-				G = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
-				Y = s("./node_modules/fbt/lib/FbtPublic.js"),
-				J = s("./src/reddit/icons/svgs/VideoCheckmark/index.tsx"),
-				K = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
-				Z = s.n(K);
+				w = s("./src/reddit/constants/video.ts"),
+				M = s("./src/reddit/contexts/InsideOverlay.tsx"),
+				T = s("./src/reddit/featureFlags/debugVideoMegafail.ts"),
+				L = s("./src/reddit/helpers/trackers/media.ts"),
+				_ = s("./src/reddit/selectors/experiments/video.ts"),
+				F = s("./src/reddit/selectors/media.ts"),
+				B = s("./src/reddit/selectors/platform.ts"),
+				N = s("./src/reddit/selectors/posts.ts"),
+				k = s("./src/reddit/selectors/user.ts"),
+				R = s("./src/reddit/selectors/video.ts"),
+				O = s("./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less"),
+				H = s.n(O),
+				I = s("./src/lib/lessComponent.tsx"),
+				j = I.a.img("Component", H.a),
+				A = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
+				U = s("./node_modules/fbt/lib/FbtPublic.js"),
+				D = s("./src/reddit/icons/svgs/VideoCheckmark/index.tsx"),
+				W = s("./src/reddit/components/HTML5StreamPlayer/SettingControl/index.m.less"),
+				z = s.n(W);
 
-			function Q() {
-				return (Q = Object.assign || function(e) {
+			function G() {
+				return (G = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -819,21 +800,21 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const q = 0,
-				X = [1080, 720],
-				$ = [...X, 480, 360, 240, q],
-				ee = e => l.a.createElement("button", {
+			const Y = 0,
+				J = [1080, 720],
+				K = [...J, 480, 360, 240, Y],
+				Z = e => l.a.createElement("button", {
 					"aria-checked": e.isChecked,
-					className: Z.a.SetAutoplayButton,
+					className: z.a.SetAutoplayButton,
 					onClick: e.onClick,
 					role: "checkbox",
 					tabIndex: 0
-				}, l.a.createElement(J.a, null), l.a.createElement("div", {
-					className: Z.a.AutoplayDescription
-				}, Y.fbt._("Autoplay", null, {
+				}, l.a.createElement(D.a, null), l.a.createElement("div", {
+					className: z.a.AutoplayDescription
+				}, U.fbt._("Autoplay", null, {
 					hk: "1x30w1"
 				}))),
-				te = e => {
+				Q = e => {
 					const {
 						resolution: t,
 						onClick: s,
@@ -841,32 +822,32 @@
 					} = e;
 					return l.a.createElement("button", {
 						"aria-checked": i,
-						className: Z.a.VideoResolutionButton,
+						className: z.a.VideoResolutionButton,
 						onClick: s,
 						role: "radio",
 						tabIndex: 0
-					}, l.a.createElement(J.a, null), l.a.createElement("div", {
-						className: Z.a.VideoResolutionDescription
-					}, t === q ? Y.fbt._("Auto", null, {
+					}, l.a.createElement(D.a, null), l.a.createElement("div", {
+						className: z.a.VideoResolutionDescription
+					}, t === Y ? U.fbt._("Auto", null, {
 						hk: "6zgZT"
-					}) : l.a.createElement(l.a.Fragment, null, l.a.createElement("span", null, t, "p"), X.includes(t) && l.a.createElement("span", {
-						className: Z.a.VideoHd
-					}, " ", Y.fbt._("HD", null, {
+					}) : l.a.createElement(l.a.Fragment, null, l.a.createElement("span", null, t, "p"), J.includes(t) && l.a.createElement("span", {
+						className: z.a.VideoHd
+					}, " ", U.fbt._("HD", null, {
 						hk: "2KjxjH"
 					})))))
 				},
-				se = ({
+				q = ({
 					isActive: e,
 					className: t,
 					innerRef: s,
 					...i
-				}) => l.a.createElement("div", Q({
-					className: Object(m.a)(Z.a.SettingControlContainer, t, {
-						[Z.a.mIsActive]: e
+				}) => l.a.createElement("div", G({
+					className: Object(m.a)(z.a.SettingControlContainer, t, {
+						[z.a.mIsActive]: e
 					}),
 					ref: s
 				}, i));
-			class ie extends r.Component {
+			class X extends r.Component {
 				constructor() {
 					super(...arguments), this.container = null, this.state = {
 						autoplayPref: this.props.autoplayPref
@@ -892,20 +873,20 @@
 						className: s,
 						isLoggedIn: i,
 						resolution: a
-					} = this.props, n = [...t.map(e => e.height), q];
-					return l.a.createElement(se, {
+					} = this.props, n = [...t.map(e => e.height), Y];
+					return l.a.createElement(q, {
 						innerRef: this.setContainerRef,
-						className: Object(m.a)(Z.a.VideoSettingContainer, s),
+						className: Object(m.a)(z.a.VideoSettingContainer, s),
 						isActive: e
 					}, i && l.a.createElement("div", {
-						className: Z.a.AutoplayContainer
-					}, l.a.createElement(ee, {
+						className: z.a.AutoplayContainer
+					}, l.a.createElement(Z, {
 						isChecked: this.state.autoplayPref,
 						onClick: this.setAutoplay
 					})), l.a.createElement("div", {
-						className: Z.a.VideoResolutionContainer,
+						className: z.a.VideoResolutionContainer,
 						role: "radiogroup"
-					}, $.map((e, t) => n.includes(e) ? l.a.createElement(te, {
+					}, K.map((e, t) => n.includes(e) ? l.a.createElement(Q, {
 						key: t,
 						resolution: e,
 						onClick: () => this.setResolution(e),
@@ -913,13 +894,13 @@
 					}) : null)))
 				}
 			}
-			var ae = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
-				ne = s("./src/reddit/icons/svgs/VideoSetting/index.tsx"),
-				oe = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
-				re = s.n(oe);
-			const le = W.a.wrapped(ae.a, "TooltipControl", re.a),
-				ce = W.a.wrapped(le, "ControlSetting", re.a);
-			class de extends r.Component {
+			var $ = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
+				ee = s("./src/reddit/icons/svgs/VideoSetting/index.tsx"),
+				te = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
+				se = s.n(te);
+			const ie = I.a.wrapped($.a, "TooltipControl", se.a),
+				ae = I.a.wrapped(ie, "ControlSetting", se.a);
+			class ne extends r.Component {
 				render() {
 					const {
 						autoplayPref: e,
@@ -932,79 +913,79 @@
 						settingRef: r,
 						toggleSetting: c
 					} = this.props;
-					return l.a.createElement(ce, {
+					return l.a.createElement(ae, {
 						key: "setting",
-						className: re.a.AnimatedSettingIconParent,
-						tooltip: Y.fbt._("Settings", null, {
+						className: se.a.AnimatedSettingIconParent,
+						tooltip: U.fbt._("Settings", null, {
 							hk: "1AhVBJ"
 						}),
-						disable: o === Ae.Settings
-					}, o === Ae.Settings && l.a.createElement(ie, {
-						className: re.a.VideoSettingContainer,
+						disable: o === Re.Settings
+					}, o === Re.Settings && l.a.createElement(X, {
+						className: se.a.VideoSettingContainer,
 						isLoggedIn: s,
 						autoplayPref: e,
-						active: o === Ae.Settings,
+						active: o === Re.Settings,
 						ref: e => r(e),
 						resolution: i,
 						setResolution: n,
 						setAutoplay: a,
 						bitrateInfo: t
 					}), l.a.createElement("button", {
-						"aria-expanded": o === Ae.Settings,
+						"aria-expanded": o === Re.Settings,
 						"aria-haspopup": !0,
-						"aria-label": Y.fbt._("Settings", null, {
+						"aria-label": U.fbt._("Settings", null, {
 							hk: "4jfIa6"
 						}),
-						className: re.a.button,
+						className: se.a.button,
 						onClick: c
-					}, l.a.createElement(ne.a, {
-						className: re.a.SettingIcon
+					}, l.a.createElement(ee.a, {
+						className: se.a.SettingIcon
 					})))
 				}
 			}
-			var he = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				ue = s("./src/reddit/selectors/telemetry.ts"),
-				me = s("./src/reddit/icons/svgs/VideoApplyNow/index.tsx"),
-				pe = s("./src/reddit/icons/svgs/VideoContactUs/index.tsx"),
-				ge = s("./src/reddit/icons/svgs/VideoGetAQuote/index.tsx"),
-				ve = s("./src/reddit/icons/svgs/VideoGetShowtimes/index.tsx"),
-				fe = s("./src/reddit/icons/svgs/VideoInstall/index.tsx"),
-				xe = s("./src/reddit/icons/svgs/VideoLearnMore/index.tsx"),
-				ye = s("./src/reddit/icons/svgs/VideoPlayNow/index.tsx"),
-				Se = s("./src/reddit/icons/svgs/VideoSeeMenu/index.tsx"),
-				Pe = s("./src/reddit/icons/svgs/VideoShopNow/index.tsx"),
-				be = s("./src/reddit/icons/svgs/VideoSignUp/index.tsx"),
-				Ee = s("./src/reddit/icons/svgs/VideoViewMore/index.tsx"),
-				Ve = s("./src/reddit/icons/svgs/VideoWatchNow/index.tsx"),
-				Ce = s("./src/reddit/components/VideoCTA/index.m.less"),
-				we = s.n(Ce);
-			const Me = {
-				"Apply Now": l.a.createElement(me.a, null),
-				"Contact Us": l.a.createElement(pe.a, null),
-				"Learn More": l.a.createElement(xe.a, null),
-				"Get a Quote": l.a.createElement(ge.a, null),
-				"Get Showtimes": l.a.createElement(ve.a, null),
-				Install: l.a.createElement(fe.a, null),
-				Download: l.a.createElement(fe.a, null),
-				"Learn More": l.a.createElement(xe.a, null),
-				"Play Now": l.a.createElement(ye.a, null),
-				"See Menu": l.a.createElement(Se.a, null),
-				"Shop Now": l.a.createElement(Pe.a, null),
-				"Sign Up": l.a.createElement(be.a, null),
-				"View More": l.a.createElement(Ee.a, null),
-				"Watch Now": l.a.createElement(Ve.a, null)
+			var oe = s("./src/reddit/controls/OutboundLink/styled.tsx"),
+				re = s("./src/reddit/selectors/telemetry.ts"),
+				le = s("./src/reddit/icons/svgs/VideoApplyNow/index.tsx"),
+				ce = s("./src/reddit/icons/svgs/VideoContactUs/index.tsx"),
+				de = s("./src/reddit/icons/svgs/VideoGetAQuote/index.tsx"),
+				he = s("./src/reddit/icons/svgs/VideoGetShowtimes/index.tsx"),
+				ue = s("./src/reddit/icons/svgs/VideoInstall/index.tsx"),
+				me = s("./src/reddit/icons/svgs/VideoLearnMore/index.tsx"),
+				pe = s("./src/reddit/icons/svgs/VideoPlayNow/index.tsx"),
+				ge = s("./src/reddit/icons/svgs/VideoSeeMenu/index.tsx"),
+				ve = s("./src/reddit/icons/svgs/VideoShopNow/index.tsx"),
+				fe = s("./src/reddit/icons/svgs/VideoSignUp/index.tsx"),
+				xe = s("./src/reddit/icons/svgs/VideoViewMore/index.tsx"),
+				ye = s("./src/reddit/icons/svgs/VideoWatchNow/index.tsx"),
+				Se = s("./src/reddit/components/VideoCTA/index.m.less"),
+				Pe = s.n(Se);
+			const be = {
+				"Apply Now": l.a.createElement(le.a, null),
+				"Contact Us": l.a.createElement(ce.a, null),
+				"Learn More": l.a.createElement(me.a, null),
+				"Get a Quote": l.a.createElement(de.a, null),
+				"Get Showtimes": l.a.createElement(he.a, null),
+				Install: l.a.createElement(ue.a, null),
+				Download: l.a.createElement(ue.a, null),
+				"Learn More": l.a.createElement(me.a, null),
+				"Play Now": l.a.createElement(pe.a, null),
+				"See Menu": l.a.createElement(ge.a, null),
+				"Shop Now": l.a.createElement(ve.a, null),
+				"Sign Up": l.a.createElement(fe.a, null),
+				"View More": l.a.createElement(xe.a, null),
+				"Watch Now": l.a.createElement(ye.a, null)
 			};
-			var Te = Object(C.c)(e => {
+			var Ee = Object(C.c)(e => {
 					const {
 						callToAction: t,
 						postId: s,
 						sendEvent: i,
 						source: a
 					} = e;
-					return l.a.createElement(he.a, {
-						className: we.a.ctaLink,
+					return l.a.createElement(oe.a, {
+						className: Pe.a.ctaLink,
 						onClick: e => i(e => ({
-							...Object(ue.defaults)(e),
+							...Object(re.defaults)(e),
 							source: "videoplayer",
 							action: "click",
 							noun: "callToAction"
@@ -1014,42 +995,42 @@
 						postId: s,
 						source: a
 					}, l.a.createElement("div", {
-						className: we.a.ctaWrapper
-					}, (e => Me[e = e || "Learn More"])(t), l.a.createElement("span", {
-						className: we.a.ctaText
+						className: Pe.a.ctaWrapper
+					}, (e => be[e = e || "Learn More"])(t), l.a.createElement("span", {
+						className: Pe.a.ctaText
 					}, t || "Learn More")))
 				}),
-				Le = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
-				_e = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
-				Be = s.n(_e);
-			const Fe = W.a.div("Centered", Be.a),
-				Ne = W.a.div("EndedOverlay", Be.a),
-				ke = W.a.span("ReplayText", Be.a),
-				Re = W.a.button("ReplayButton", Be.a);
-			var Oe = e => {
+				Ve = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
+				Ce = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
+				we = s.n(Ce);
+			const Me = I.a.div("Centered", we.a),
+				Te = I.a.div("EndedOverlay", we.a),
+				Le = I.a.span("ReplayText", we.a),
+				_e = I.a.button("ReplayButton", we.a);
+			var Fe = e => {
 					const {
 						onClick: t,
 						source: s,
 						callToAction: i,
 						postId: a
 					} = e;
-					return l.a.createElement(Ne, {
+					return l.a.createElement(Te, {
 						onClick: t
-					}, l.a.createElement(Fe, null, l.a.createElement(Re, null, l.a.createElement(Le.a, null), l.a.createElement(ke, {
+					}, l.a.createElement(Me, null, l.a.createElement(_e, null, l.a.createElement(Ve.a, null), l.a.createElement(Le, {
 						className: "replay-video"
-					}, Y.fbt._("Replay Video", null, {
+					}, U.fbt._("Replay Video", null, {
 						hk: "1iD2Wj"
-					}))), s && i && l.a.createElement(Te, {
+					}))), s && i && l.a.createElement(Ee, {
 						callToAction: i,
 						postId: a,
 						source: s
 					})))
 				},
-				He = s("./src/reddit/components/HTML5StreamPlayer/VideoContainer/index.m.less"),
-				Ie = s.n(He);
+				Be = s("./src/reddit/components/HTML5StreamPlayer/VideoContainer/index.m.less"),
+				Ne = s.n(Be);
 
-			function je() {
-				return (je = Object.assign || function(e) {
+			function ke() {
+				return (ke = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -1057,44 +1038,42 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Ae, Ue = ({
+			var Re, Oe = ({
 					className: e,
 					isVisible: t,
 					setRef: s,
 					...i
-				}) => l.a.createElement("div", je({
-					className: Object(m.a)(Ie.a.Component, e, {
-						[Ie.a.mIsNotVisible]: !t
+				}) => l.a.createElement("div", ke({
+					className: Object(m.a)(Ne.a.Component, e, {
+						[Ne.a.mIsNotVisible]: !t
 					}),
 					ref: s
 				}, i)),
-				De = s("./src/reddit/components/HTML5StreamPlayer/VideoOverlay/index.m.less"),
-				We = s.n(De),
-				ze = W.a.div("Component", We.a),
-				Ge = s("./src/reddit/components/HTML5StreamPlayer/index.m.less"),
-				Ye = s.n(Ge);
+				He = s("./src/reddit/components/HTML5StreamPlayer/VideoOverlay/index.m.less"),
+				Ie = s.n(He),
+				je = I.a.div("Component", Ie.a),
+				Ae = s("./src/reddit/components/HTML5StreamPlayer/index.m.less"),
+				Ue = s.n(Ae);
 			! function(e) {
 				e[e.SeekBar = 0] = "SeekBar", e[e.Settings = 1] = "Settings", e[e.Volume = 2] = "Volume"
-			}(Ae || (Ae = {}));
-			const Je = 3e3,
-				Ke = 6e3,
-				Ze = 100,
-				Qe = Object(c.b)(() => Object(d.c)({
-					isLoggedIn: j.J,
-					autoplayPref: j.b,
-					currentTime: A.c,
-					currentUser: j.i,
-					inVideoMegafailExperiment: B.a,
-					inVideoScrollPlaybackFixExperiment: B.b,
-					isOverlayOpen: H.h,
-					loadTimes: A.f,
-					metadata: A.h,
-					mutedInFeed: A.i,
-					postUrl: I.F,
-					started: A.k,
-					videoBufferTime: R,
-					videoBufferVariant: k,
-					volume: O.d
+			}(Re || (Re = {}));
+			const De = 3e3,
+				We = 6e3,
+				ze = 100,
+				Ge = Object(c.b)(() => Object(d.c)({
+					isLoggedIn: k.J,
+					autoplayPref: k.b,
+					currentTime: R.c,
+					currentUser: k.i,
+					inVideoMegafailExperiment: _.a,
+					inVideoScrollPlaybackFixExperiment: _.b,
+					isOverlayOpen: B.h,
+					loadTimes: R.f,
+					metadata: R.h,
+					mutedInFeed: R.i,
+					postUrl: N.F,
+					started: R.k,
+					volume: F.d
 				}), (e, {
 					postId: t
 				}) => ({
@@ -1114,8 +1093,8 @@
 							postId: t,
 							time: s
 						}))
-					}, M.k, {
-						maxWait: M.l
+					}, w.l, {
+						maxWait: w.m
 					}),
 					openLightbox: s => {
 						s ? e(Object(h.a)(s)) : y.c.withScope(e => {
@@ -1154,21 +1133,21 @@
 					},
 					setMutedInFeed: t => e(b.G(t))
 				}));
-			class qe extends r.Component {
+			class Ye extends r.Component {
 				constructor(e) {
 					super(e), this.isSeekingWithRetry = !1, this.percentagePixelsFired = {
-						[M.b]: !1,
-						[M.c]: !1,
-						[M.d]: !1,
-						[M.e]: !1,
-						[M.a]: !1
+						[w.b]: !1,
+						[w.c]: !1,
+						[w.d]: !1,
+						[w.e]: !1,
+						[w.a]: !1
 					}, this.timePixelsFired = {
-						[M.g]: !1,
-						[M.h]: !1,
-						[M.f]: !1
+						[w.g]: !1,
+						[w.h]: !1,
+						[w.f]: !1
 					}, this.sendEvent = (e, t, s = !1) => {
 						if (this.HTML5StreamPlayerVideo && null != this.props.postId) {
-							const i = s ? _.b(this.props.postId, e, t) : _.a(this.props.postId, e, t);
+							const i = s ? L.b(this.props.postId, e, t) : L.a(this.props.postId, e, t);
 							this.props.sendEvent(i)
 						}
 					}, this.resetMediaPlayer = () => {
@@ -1219,9 +1198,9 @@
 							volumeControl: s
 						} = this;
 						s && s.container && s.container.contains(e.target) ? (this.setState({
-							settingChange: Ae.Volume
+							settingChange: Re.Volume
 						}), s.handleMouseDown(e)) : t && t.parentRect && t.parentRect.contains(e.target) && (this.setState({
-							settingChange: Ae.SeekBar
+							settingChange: Re.SeekBar
 						}), t.handleMouseDown(e)), this.state.usingKeys && this.setState({
 							usingKeys: !1
 						})
@@ -1234,13 +1213,13 @@
 						switch (this.setState({
 							hasHovered: !0
 						}), t && t.contains(e.target) ? this.clearControlBarFadeTimer() : this.resetControlBarFadeTimer(), this.state.settingChange) {
-							case Ae.SeekBar:
+							case Re.SeekBar:
 								s && s.handleMouseMove(e);
 								break;
-							case Ae.Volume:
+							case Re.Volume:
 								i && i.handleMouseMove(e);
 								break;
-							case Ae.Settings:
+							case Re.Settings:
 						}
 					}, this.handleMouseUp = e => {
 						e.stopPropagation();
@@ -1250,19 +1229,19 @@
 							volumeControl: i
 						} = this;
 						switch (this.state.settingChange) {
-							case Ae.SeekBar:
+							case Re.SeekBar:
 								if (s) {
 									this.setState({
-										ignoreUnderrunsUntil: Date.now() + Ze
+										ignoreUnderrunsUntil: Date.now() + ze
 									}), s.handleMouseUp(e), this.sendEvent("click", "seek");
 									const t = this.HTML5StreamPlayerVideo;
 									this.state.videoEnded && t && t.currentTime !== t.duration && this.playVideo()
 								}
 								break;
-							case Ae.Volume:
+							case Re.Volume:
 								i && (i.handleMouseUp(e), this.sendEvent("click", "volume"));
 								break;
-							case Ae.Settings:
+							case Re.Settings:
 								if (t && t.contains(e.target)) return;
 								break;
 							default:
@@ -1281,9 +1260,9 @@
 						switch (this.clearControlBarFadeTimer(), this.setState({
 							hideControlBar: !0
 						}), this.state.settingChange) {
-							case Ae.SeekBar:
-							case Ae.Volume:
-							case Ae.Settings:
+							case Re.SeekBar:
+							case Re.Volume:
+							case Re.Settings:
 							default:
 								this.setState({
 									settingChange: void 0
@@ -1305,7 +1284,7 @@
 							controlBarFadeTimer: e
 						} = this;
 						e && clearTimeout(e)
-					}, this.resetControlBarFadeTimer = (e = Je) => {
+					}, this.resetControlBarFadeTimer = (e = De) => {
 						this.clearControlBarFadeTimer(), this.setState({
 							hideControlBar: !1
 						}), this.controlBarFadeTimer = window.setTimeout(() => {
@@ -1334,7 +1313,7 @@
 						e && e.pause()
 					}, this.resetVideo = e => {
 						this.isUnobscured && this.state.videoEnded && (this.resetVideoWithRetry(), this.sendEvent("click", "replay"), this.setState({
-							ignoreUnderrunsUntil: Date.now() + Ze,
+							ignoreUnderrunsUntil: Date.now() + ze,
 							videoEnded: !1,
 							videoManualPaused: !1
 						}), this.props.onVideoReset())
@@ -1378,7 +1357,7 @@
 							bitrateInfo: t
 						} = this.state;
 						if (t && this.dashPlayer) {
-							if (e === q) this.dashPlayer.updateSettings({
+							if (e === Y) this.dashPlayer.updateSettings({
 								streaming: {
 									abr: {
 										autoSwitchBitrate: {
@@ -1404,10 +1383,10 @@
 							})
 						}
 					}, this.toggleSetting = e => {
-						this.state.settingChange === Ae.Settings ? this.setState({
+						this.state.settingChange === Re.Settings ? this.setState({
 							settingChange: void 0
 						}) : this.setState({
-							settingChange: Ae.Settings
+							settingChange: Re.Settings
 						})
 					}, this.setVideoPos = e => {
 						const t = this.HTML5StreamPlayerVideo;
@@ -1436,7 +1415,7 @@
 					}, this.triggerAdWatchedPixels = (e, t, s) => {
 						const i = this.getWatchedPercentRange(e, t);
 						this.triggerPercentagePixels(i);
-						s / t >= .95 && this.triggerTimeWatchedPixels(M.f), this.triggerTimeWatchedPixels(s)
+						s / t >= .95 && this.triggerTimeWatchedPixels(w.f), this.triggerTimeWatchedPixels(s)
 					}, this.updateContinuousStartTime = e => {
 						this.props.onUpdateContinuousViewStartTime(e)
 					}, this.onVideoPlayable = e => {
@@ -1466,7 +1445,7 @@
 						})
 					}, this.videoRef = e => {
 						this.HTML5StreamPlayerVideo = e, this.HTML5StreamPlayerVideo && (this.HTML5StreamPlayerVideo.volume = this.state.volume)
-					}, qe.dashjs || (qe.dashjs = Object(x.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/build/es5/index.js", 7))));
+					}, Ye.dashjs || (Ye.dashjs = Object(x.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/build/es5/index.js", 7))));
 					const t = !!e.isListing && e.mutedInFeed;
 					this.state = {
 						bitrateInfo: [],
@@ -1478,7 +1457,7 @@
 						lastUpdate: null,
 						ignoreUnderrunsUntil: 0,
 						maxTimeServed: 0,
-						resolution: q,
+						resolution: Y,
 						scrubPosition: 0,
 						settingChange: void 0,
 						settingSeekBar: !1,
@@ -1501,58 +1480,54 @@
 					return this.props.isOverlay || !this.props.isOverlayOpen
 				}
 				componentDidMount() {
-					qe.dashjs.then(e => {
+					Ye.dashjs.then(e => {
 						var t, s;
 						const i = this.HTML5StreamPlayerVideo,
 							a = this.props.mpegDashSource;
-						if (!i || !a) return;
-						const n = this.props.videoBufferVariant;
-						this.dashPlayer = e.MediaPlayer().create(), Object(L.b)() && (console.log("🚨", this.props.postId, this.dashPlayer), this.dashPlayer.updateSettings({
-							debug: {
-								logLevel: e.Debug.LOG_LEVEL_DEBUG
-							}
-						})), this.dashPlayer.extend("RequestModifier", (function() {
-							return {
-								modifyRequestHeader(e) {
-									const {
-										appName: t
-									} = u.a;
-									let s = `Reddit/Version Build 1f497e5fe54486ac8b5818bd2964859fd0b82f54-production ${t}`;
-									return n && (s += ` [${w.vd}:${n}]`), e.setRequestHeader("X-Reddit-Agent", s), e
-								},
-								modifyRequestURL: e => e
-							}
-						}), !1);
-						try {
-							const {
-								videoBufferTime: e
-							} = this.props;
-							this.dashPlayer.initialize(i, a, i.autoplay || !i.paused), e && this.setBufferTime(e), this.dashPlayer.updateSettings({
-								streaming: {
-									fastSwitchEnabled: !0,
-									abr: {
-										initialBitrate: {
-											video: 999999999
-										},
-										autoSwitchBitrate: {
-											video: !0
+						if (i && a) {
+							this.dashPlayer = e.MediaPlayer().create(), Object(T.b)() && (console.log("🚨", this.props.postId, this.dashPlayer), this.dashPlayer.updateSettings({
+								debug: {
+									logLevel: e.Debug.LOG_LEVEL_DEBUG
+								}
+							})), this.dashPlayer.extend("RequestModifier", (function() {
+								return {
+									modifyRequestHeader(e) {
+										const {
+											appName: t
+										} = u.a, s = `Reddit/Version Build 77110c5747f0e5ef5a8f5b32806d37eab135be86-production ${t}`;
+										return e.setRequestHeader("X-Reddit-Agent", s), e
+									},
+									modifyRequestURL: e => e
+								}
+							}), !1);
+							try {
+								this.dashPlayer.initialize(i, a, i.autoplay || !i.paused), this.setBufferTime(w.i), this.dashPlayer.updateSettings({
+									streaming: {
+										fastSwitchEnabled: !0,
+										abr: {
+											initialBitrate: {
+												video: 999999999
+											},
+											autoSwitchBitrate: {
+												video: !0
+											}
 										}
 									}
-								}
-							})
-						} catch (o) {
-							return void(Object(L.b)() && console.error("🚨", this.props.postId, o))
-						}
-						null != this.props.postId && this.props.onLoadStarted(performance.now()), this.dashPlayer.on(e.MediaPlayer.events.STREAM_INITIALIZED, () => {
-							this.getVideoQualityList(), this.getAudioInfo(), null != this.props.postId && this.props.onPlayable(performance.now()), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(0)
-						}), this.dashPlayer.on(e.MediaPlayer.events.BUFFER_EMPTY, e => {
-							if (null != this.props.postId && Date.now() > this.state.ignoreUnderrunsUntil) {
-								const e = _.c(this.props.postId);
-								this.props.sendEvent(e), this.setState({
-									ignoreUnderrunsUntil: Date.now() + Ze
 								})
+							} catch (n) {
+								return void(Object(T.b)() && console.error("🚨", this.props.postId, n))
 							}
-						}), this.props.inVideoMegafailExperiment && i.addEventListener("error", this.resetMediaPlayer), null === (s = (t = this.props).onDashCreate) || void 0 === s || s.call(t, this.dashPlayer)
+							null != this.props.postId && this.props.onLoadStarted(performance.now()), this.dashPlayer.on(e.MediaPlayer.events.STREAM_INITIALIZED, () => {
+								this.getVideoQualityList(), this.getAudioInfo(), null != this.props.postId && this.props.onPlayable(performance.now()), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(0)
+							}), this.dashPlayer.on(e.MediaPlayer.events.BUFFER_EMPTY, e => {
+								if (null != this.props.postId && Date.now() > this.state.ignoreUnderrunsUntil) {
+									const e = L.c(this.props.postId);
+									this.props.sendEvent(e), this.setState({
+										ignoreUnderrunsUntil: Date.now() + ze
+									})
+								}
+							}), this.props.inVideoMegafailExperiment && i.addEventListener("error", this.resetMediaPlayer), null === (s = (t = this.props).onDashCreate) || void 0 === s || s.call(t, this.dashPlayer)
+						}
 					});
 					const e = this.HTML5StreamPlayerVideo;
 					document.addEventListener("webkitfullscreenchange", this.exitHandler, !1), document.addEventListener("fullscreenchange", this.exitHandler, !1), document.addEventListener("mozfullscreenchange", this.exitHandler, !1), document.addEventListener("MSFullscreenChange", this.exitHandler, !1), e && (f() ? e.play() : a.a.safari && !this.props.mpegDashSource && setTimeout(async () => {
@@ -1632,8 +1607,8 @@
 					this.state.usingKeys || this.setState({
 						usingKeys: !0
 					});
-					let t = Ke;
-					this.state.settingChange === Ae.Settings && (t = 5 * Ke), this.resetControlBarFadeTimer(t)
+					let t = We;
+					this.state.settingChange === Re.Settings && (t = 5 * We), this.resetControlBarFadeTimer(t)
 				}
 				setBuffered() {
 					const e = this.HTML5StreamPlayerVideo;
@@ -1676,15 +1651,15 @@
 				}
 				getWatchedPercentRange(e, t) {
 					const s = e / t;
-					return s >= 1 ? M.a : s >= .95 ? M.e : s >= .75 ? M.d : s >= .5 ? M.c : s >= .25 ? M.b : 0
+					return s >= 1 ? w.a : s >= .95 ? w.e : s >= .75 ? w.d : s >= .5 ? w.c : s >= .25 ? w.b : 0
 				}
 				triggerPercentagePixels(e) {
-					M.i.forEach(t => {
+					w.j.forEach(t => {
 						t <= e && !this.percentagePixelsFired[t] && (this.props.onWatchedPercent(t), this.percentagePixelsFired[t] = !0)
 					})
 				}
 				triggerTimeWatchedPixels(e) {
-					M.j.forEach(t => {
+					w.k.forEach(t => {
 						t <= e && !this.timePixelsFired[t] && (this.props.onWatchedSeconds(t), this.timePixelsFired[t] = !0)
 					})
 				}
@@ -1707,7 +1682,7 @@
 						settingChange: h,
 						videoEnded: u,
 						videoLoaded: p
-					} = this.state, g = this.HTML5StreamPlayerVideo, v = h === Ae.SeekBar, f = p || !t, x = f && g && 0 !== g.currentTime, y = !o && c, S = u && !v, P = {
+					} = this.state, g = this.HTML5StreamPlayerVideo, v = h === Re.SeekBar, f = p || !t, x = f && g && 0 !== g.currentTime, y = !o && c, S = u && !v, P = {
 						...this.props,
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
@@ -1718,9 +1693,9 @@
 						toggleSetting: this.toggleSetting
 					};
 					let b = this.isUnobscured && this.props.autoPlay;
-					return this.props.inVideoScrollPlaybackFixExperiment && (b = (this.props.isOverlay || !this.state.videoScrollPaused) && this.isUnobscured && this.props.autoPlay), l.a.createElement(Ue, {
+					return this.props.inVideoScrollPlaybackFixExperiment && (b = (this.props.isOverlay || !this.state.videoScrollPaused) && this.isUnobscured && this.props.autoPlay), l.a.createElement(Oe, {
 						setRef: this.setContainerRef,
-						className: Object(m.a)(e, this.state.videoFullScreen ? Ye.a.RedditVideoPlayerRoot__Fullscreen : Ye.a.RedditVideoPlayerRoot, this.state.usingKeys ? "using-keys" : null),
+						className: Object(m.a)(e, this.state.videoFullScreen ? Ue.a.RedditVideoPlayerRoot__Fullscreen : Ue.a.RedditVideoPlayerRoot, this.state.usingKeys ? "using-keys" : null),
 						isVisible: f,
 						onClick: this.handleClick,
 						onKeyDown: this.handleKeyDown,
@@ -1730,7 +1705,7 @@
 						onMouseLeave: this.handleMouseLeave,
 						onMouseMove: this.handleMouseMove,
 						onMouseUp: this.handleMouseUp
-					}, this.props.blurImageSrc && l.a.createElement(z, {
+					}, this.props.blurImageSrc && l.a.createElement(j, {
 						src: this.props.blurImageSrc
 					}), l.a.createElement("video", {
 						poster: d ? "" : this.props.posterUrl,
@@ -1740,20 +1715,20 @@
 						onTimeUpdate: this.updateTime,
 						preload: "metadata",
 						ref: this.combinedVideoRefs,
-						className: this.state.videoFullScreen ? Ye.a.HTML5StreamPlayer__VideoFullscreen : Ye.a.HTML5StreamPlayer__VideoRegular
+						className: this.state.videoFullScreen ? Ue.a.HTML5StreamPlayer__VideoFullscreen : Ue.a.HTML5StreamPlayer__VideoRegular
 					}, this.props.hlsSource && l.a.createElement("source", {
 						src: this.props.hlsSource,
 						type: "application/vnd.apple.mpegURL"
 					}), this.props.otherSource && l.a.createElement("source", {
 						src: this.props.otherSource
-					})), S ? l.a.createElement(Oe, {
+					})), S ? l.a.createElement(Fe, {
 						onClick: this.resetVideo,
 						postId: this.props.postId,
 						source: this.props.callToActionSource,
 						callToAction: this.props.callToActionText
-					}) : l.a.createElement(ze, null), d ? l.a.createElement(E.a, null) : this.state.videoWaiting ? x && l.a.createElement(E.a, null) : this.state.videoPaused && !S && l.a.createElement(V.a, {
+					}) : l.a.createElement(je, null), d ? l.a.createElement(E.a, null) : this.state.videoWaiting ? x && l.a.createElement(E.a, null) : this.state.videoPaused && !S && l.a.createElement(V.a, {
 						onClick: s ? void 0 : this.playPauseVideo
-					}), i && l.a.createElement(G.b, {
+					}), i && l.a.createElement(A.b, {
 						clickSnoo: this.clickSnoo,
 						controlBarRef: this.setControlBarRef,
 						currentTime: g ? g.currentTime : 0,
@@ -1769,7 +1744,7 @@
 						playPauseVideo: this.playPauseVideo,
 						postUrl: this.props.postUrl,
 						ref: this.setControlBarApi,
-						settingsButton: l.a.createElement(de, P),
+						settingsButton: l.a.createElement(ne, P),
 						scrubberThumbSource: this.props.scrubberThumbSource,
 						seekBarRef: this.setSeekBarRef,
 						settingChange: h,
@@ -1784,7 +1759,7 @@
 					}))
 				}
 			}
-			t.b = Qe(Object(C.c)(Object(T.b)(qe)))
+			t.b = Ge(Object(C.c)(Object(M.b)(Ye)))
 		},
 		"./src/reddit/components/Media/LoadingIcon/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2419,19 +2394,19 @@
 			}));
 			var i = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const n = e => i.Dd.Enabled === Object(a.c)(e, {
+			const n = e => i.Bd.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: i.xd
+				}),
+				o = e => i.Ad.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: i.vd
+				}),
+				r = e => i.Cd.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: i.yd
-				}),
-				o = e => i.Cd.Enabled === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: i.wd
-				}),
-				r = e => i.Ed.Enabled === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: i.zd
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.675b3b6379f5192de409.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.ccd56b92b97ea7ce74d1.js.map

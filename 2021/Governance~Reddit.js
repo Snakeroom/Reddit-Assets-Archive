@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6be127fd0ab7e4dcd0c8.js
-// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f6de6f808e9fc0bc31e3.js
+// Retrieved at 3/24/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -14442,7 +14442,7 @@
 								postId: r,
 								time: s
 							} = t.payload;
-							return e[r] && Math.abs(Math.floor(s.currentTime) - Math.floor(e[r].currentTime)) < db.k ? e : {
+							return e[r] && Math.abs(Math.floor(s.currentTime) - Math.floor(e[r].currentTime)) < db.l ? e : {
 								...e,
 								[r]: s
 							}
@@ -21657,7 +21657,7 @@
 				l = e => e === a.G.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.Hd)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.Fd)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -21834,4 +21834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6be127fd0ab7e4dcd0c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f6de6f808e9fc0bc31e3.js.map
