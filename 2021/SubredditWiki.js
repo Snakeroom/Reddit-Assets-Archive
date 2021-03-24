@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.ad6f2aa91a53f1d874ba.js
-// Retrieved at 3/24/2021, 2:50:30 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.7df273269902bb89b42c.js
+// Retrieved at 3/24/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -2154,6 +2154,11 @@
 					}) => Object(C.a)(e, {
 						subredditId: t
 					}),
+					tournamentsEnabled: (e, {
+						subredditId: t
+					}) => !!t && Object(O.N)(e, {
+						subredditId: t
+					}),
 					userIsSubscriber: (e, {
 						subredditName: t
 					}) => {
@@ -2206,7 +2211,7 @@
 					}) : t ? i.a.createElement(_, {
 						className: P.a.DefaultIcon
 					}) : i.a.createElement(T, null),
-					O = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
+					O = e.spPollsEnabled || e.tournamentsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
 					j = e.layout ? e.layout === h.g.Large ? "984px" : "100%" : "1086px";
 				return i.a.createElement("div", {
 					className: P.a.container,
@@ -10252,4 +10257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ad6f2aa91a53f1d874ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7df273269902bb89b42c.js.map

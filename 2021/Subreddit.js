@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1e9aa8218cb0151766d9.js
-// Retrieved at 3/24/2021, 2:50:30 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3bd66276976ab604a0dd.js
+// Retrieved at 3/24/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1386,6 +1386,11 @@
 					}) => Object(j.a)(e, {
 						subredditId: t
 					}),
+					tournamentsEnabled: (e, {
+						subredditId: t
+					}) => !!t && Object(S.N)(e, {
+						subredditId: t
+					}),
 					userIsSubscriber: (e, {
 						subredditName: t
 					}) => {
@@ -1438,7 +1443,7 @@
 					}) : t ? r.a.createElement(C, {
 						className: P.a.DefaultIcon
 					}) : r.a.createElement(T, null),
-					S = e.spPollsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
+					S = e.spPollsEnabled || e.tournamentsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
 					k = e.layout ? e.layout === h.g.Large ? "984px" : "100%" : "1086px";
 				return r.a.createElement("div", {
 					className: P.a.container,
@@ -13643,4 +13648,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1e9aa8218cb0151766d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3bd66276976ab604a0dd.js.map
