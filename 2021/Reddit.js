@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5e0f0a9769da6de65c32.js
-// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4012d62637d3b654836e.js
+// Retrieved at 3/24/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6606,13 +6606,15 @@
 					}, u.a.createElement(Ie.l, {
 						className: Qa.a.commonBtn,
 						"data-redditstyle": !0,
-						onClick: this.onChangeEmailModalOpen
+						onClick: this.onChangeEmailModalOpen,
+						type: "button"
 					}, r.fbt._("Update email", null, {
 						hk: "1Cxqkk"
 					})), u.a.createElement(Ie.i, {
 						className: Object(f.a)(Qa.a.commonBtn, Qa.a.primaryBtn),
 						"data-redditstyle": !0,
-						onClick: this.onResendEmailClick
+						onClick: this.onResendEmailClick,
+						type: "button"
 					}, r.fbt._("Got it", null, {
 						hk: "3IP9TO"
 					}))))
@@ -17469,4 +17471,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5e0f0a9769da6de65c32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4012d62637d3b654836e.js.map
