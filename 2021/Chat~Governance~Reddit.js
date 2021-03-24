@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d6ce7de8306520d8061c.js
-// Retrieved at 3/24/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d7eb41dd9917eb9025e0.js
+// Retrieved at 3/24/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1448,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("129629"),
+				buildNumber: r("129638"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1616602837"),
+				})("1616604354"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3621,14 +3621,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c30e3581d2e920cba15c09e1bad90293d5a09b977-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c0de6f6297c532f369b39981b89e00985b182e04b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "30e3581d2e920cba15c09e1bad90293d5a09b977-production",
+						release: "0de6f6297c532f369b39981b89e00985b182e04b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4077,7 +4077,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "30e3581d2e920cba15c09e1bad90293d5a09b977-production",
+						releaseClient: "0de6f6297c532f369b39981b89e00985b182e04b-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -19573,7 +19573,6 @@
 					keyColor: e.key_color,
 					language: e.language,
 					liveStreamingIsEnabled: e.live_streaming_is_enabled,
-					newPinnedPostPNsEnabled: e.new_pinned_post_pns_enabled,
 					over18: e.over_18,
 					publicDescription: e.public_description,
 					publicTraffic: e.public_traffic,
@@ -19593,7 +19592,6 @@
 					suggestedCommentSort: e.suggested_comment_sort,
 					title: e.title,
 					toxicityThresholdChatLevel: e.toxicity_threshold_chat_level,
-					userFlairPNsEnabled: e.user_flair_pns_enabled,
 					welcomeMessageEnabled: e.welcome_message_enabled,
 					welcomeMessageText: e.welcome_message_text,
 					wikiEditAge: e.wiki_edit_age,
@@ -19630,7 +19628,6 @@
 					lang: e.language,
 					link_type: e.contentOptions,
 					live_streaming_is_enabled: e.liveStreamingIsEnabled,
-					new_pinned_post_pns_enabled: e.newPinnedPostPNsEnabled,
 					over_18: e.over18,
 					public_description: e.publicDescription,
 					public_traffic: e.publicTraffic,
@@ -19650,7 +19647,6 @@
 					title: e.title,
 					toxicity_threshold_chat_level: e.toxicityThresholdChatLevel,
 					type: e.subredditType,
-					user_flair_pns_enabled: e.userFlairPNsEnabled,
 					welcome_message_enabled: e.welcomeMessageEnabled,
 					welcome_message_text: e.welcomeMessageText,
 					wiki_edit_age: e.wikiEditAge,
@@ -19681,7 +19677,6 @@
 					language: "lang",
 					liveStreamingIsEnabled: "live_streaming_is_enabled",
 					contentOptions: "link_type",
-					newPinnedPostPNsEnabled: "new_pinned_post_pns_enabled",
 					over18: "over_18",
 					publicDescription: "public_description",
 					publicTraffic: "public_traffic",
@@ -19700,7 +19695,6 @@
 					suggestedCommentSort: "suggested_comment_sort",
 					title: "title",
 					toxicityThresholdChatLevel: "toxicity_threshold_chat_level",
-					userFlairPNsEnabled: "user_flair_pns_enabled",
 					welcomeMessageEnabled: "welcome_message_enabled",
 					welcomeMessageText: "welcome_message_text",
 					wikiEditAge: "wiki_edit_age",
@@ -44811,4 +44805,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d6ce7de8306520d8061c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d7eb41dd9917eb9025e0.js.map
