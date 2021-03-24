@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6cd01d5b86382ac2369e.js
-// Retrieved at 3/24/2021, 12:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.81132f1ff472ddb3dea6.js
+// Retrieved at 3/24/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -565,7 +565,9 @@
 				y = (e, t, i, n) => `${p(e,i)}/user/${t}${n?"?"+Object(r.stringify)(n):""}`,
 				v = e => new RegExp("reddit.com").test(e) ? e.replace(/^.+reddit.com(\/r\/.+?\/).*$/g, "$1") : "",
 				E = e => {
-					return new RegExp(`^${n.a.redditUrl}/(r|user|u)/.+($|/)`, "i").test(e)
+					const t = new RegExp(`^${n.a.redditUrl}/(r|user|u)/.+($|/)`, "i"),
+						i = new RegExp(`^${n.a.oldRedditUrl}/(r|user|u)/.+($|/)`, "i");
+					return t.test(e) || i.test(e)
 				},
 				S = e => e.length ? `${n.a.redditUrl}/user/${e}` : n.a.redditUrl,
 				T = e => e.length ? `${n.a.redditUrl}/r/${e}` : n.a.redditUrl,
@@ -593,7 +595,7 @@
 					}
 				},
 				I = e => {
-					const t = e.replace(new RegExp(`^${n.a.redditUrl}/?`, "gi"), "").replace(/\/?\?.+/gi, "").replace(/\/$/gi, "").split("/"),
+					const t = e.replace(new RegExp(`^${n.a.oldRedditUrl}/?`, "gi"), "").replace(new RegExp(`^${n.a.redditUrl}/?`, "gi"), "").replace(/\/?\?.+/gi, "").replace(/\/$/gi, "").split("/"),
 						i = ("user" === t[0] || "u" === t[0] ? f.USER_PROFILE : f.SUBREDDIT) === f.SUBREDDIT ? d.c.POST : d.c.USER_POST;
 					switch (t.length) {
 						case b.SUBREDDIT_ID:
@@ -1446,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("129624"),
+				buildNumber: r("129627"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1616600171"),
+				})("1616601154"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3619,14 +3621,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c829bf4157bc1c7f6cbcfcf609fe03cd76e4879f4-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cbe55d7b121586aee3800976dd0fe6894611dbffb-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "829bf4157bc1c7f6cbcfcf609fe03cd76e4879f4-production",
+						release: "be55d7b121586aee3800976dd0fe6894611dbffb-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4075,7 +4077,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "829bf4157bc1c7f6cbcfcf609fe03cd76e4879f4-production",
+						releaseClient: "be55d7b121586aee3800976dd0fe6894611dbffb-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -44809,4 +44811,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6cd01d5b86382ac2369e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.81132f1ff472ddb3dea6.js.map
