@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.2df41164ed5bd53a71db.js
-// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.dd649b6ee222d27388ba.js
+// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6574,12 +6574,12 @@
 						rtJsonElementProps: a
 					});
 					switch (s) {
-						case h.jd.SmIcon:
+						case h.kd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.jd.SmIconHc:
+						case h.kd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -8283,7 +8283,7 @@
 								experimentName: a.w,
 								expEventOverride: t
 							});
-							return !!(Object(a.Cd)(n) ? void 0 : n)
+							return !!(Object(a.Dd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -13540,8 +13540,8 @@
 				a = n("./src/reddit/selectors/meta.ts");
 			const o = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(a.d)(e) && "US" === Object(a.b)(e),
-				experimentName: s.Nc
-			}) === s.Wc.Enabled
+				experimentName: s.Oc
+			}) === s.Xc.Enabled
 		},
 		"./src/reddit/selectors/experiments/second.ts": function(e, t, n) {
 			"use strict";
@@ -13552,13 +13552,13 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.hd.Enabled === Object(r.c)(e, {
+			const a = e => s.id.Enabled === Object(r.c)(e, {
+					experimentEligibilitySelector: r.a,
+					experimentName: s.ad
+				}),
+				o = e => s.hd.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.Zc
-				}),
-				o = e => s.gd.Enabled === Object(r.c)(e, {
-					experimentEligibilitySelector: r.a,
-					experimentName: s.Yc
 				})
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, n) {
@@ -13569,9 +13569,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const o = e => Object(a.G)(e) || !(s.qd.Holdout === Object(r.c)(e, {
+			const o = e => Object(a.G)(e) || !(s.rd.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.nd
+				experimentName: s.od
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -13586,17 +13586,17 @@
 				r = n("./src/reddit/featureFlags/utils.ts"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = ["AU", "CA", "GB", "US"],
-				i = new Set([s.Vb.AllItems, s.Vb.TrendingSearch]),
+				i = new Set([s.Wb.AllItems, s.Wb.TrendingSearch]),
 				c = e => {
 					const t = Object(a.c)(e, {
 						experimentEligibilitySelector: Object(r.d)(Object(r.b)(...o)),
-						experimentName: s.Wb
+						experimentName: s.Xb
 					});
 					return i.has(t)
 				},
-				d = e => s.Vb.AllItems === Object(a.c)(e, {
+				d = e => s.Wb.AllItems === Object(a.c)(e, {
 					experimentEligibilitySelector: Object(r.d)(Object(r.b)(...o)),
-					experimentName: s.Wb
+					experimentName: s.Xb
 				})
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
@@ -13622,12 +13622,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.cd
+						experimentName: s.dd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.jd.SmIcon || t === s.jd.SmIconHc
+					return t === s.kd.SmIcon || t === s.kd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -13650,4 +13650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2df41164ed5bd53a71db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.dd649b6ee222d27388ba.js.map

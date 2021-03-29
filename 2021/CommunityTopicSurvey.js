@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.7dd34416adcd2e34fcb0.js
-// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.20412fa345b4af9296a2.js
+// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -172,16 +172,16 @@
 				y = n("./src/reddit/components/StructuredStyles/StyledComponents/index.tsx"),
 				v = n("./src/reddit/controls/Button/index.tsx"),
 				O = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/react-uid/dist/es2015/hooks.js")),
-				j = n("./src/reddit/controls/ButtonGroup/index.m.less"),
-				T = n.n(j);
+				T = n("./src/reddit/controls/ButtonGroup/index.m.less"),
+				j = n.n(T);
 
-			function w(e) {
+			function k(e) {
 				const {
 					options: t,
 					onChange: n = (() => {})
 				} = e, r = Object(O.b)(), [i, d] = Object(s.useState)({});
 				return o.a.createElement("div", {
-					className: T.a.buttonGroup,
+					className: j.a.buttonGroup,
 					role: "group",
 					onClick: e => e.stopPropagation()
 				}, t.map(({
@@ -193,7 +193,7 @@
 					type: "checkbox",
 					id: r(s),
 					name: r(s),
-					className: T.a.checkbox,
+					className: j.a.checkbox,
 					checked: !!i[s],
 					onChange: () => (function(e) {
 						const r = t.find(t => t.id === e),
@@ -215,10 +215,10 @@
 					})(s)
 				}), o.a.createElement("label", {
 					htmlFor: r(s),
-					className: T.a.option
+					className: j.a.option
 				}, e))))
 			}
-			var k = n("./src/reddit/controls/TextButton/index.tsx"),
+			var w = n("./src/reddit/controls/TextButton/index.tsx"),
 				B = n("./src/reddit/components/SubredditMention/index.tsx"),
 				N = n("./src/reddit/constants/experiments.ts");
 
@@ -230,7 +230,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(B.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: N.jd.SmIconHc,
+					userVariant: N.kd.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -253,7 +253,7 @@
 					className: Object(I.a)(U.a.survey, i && U.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
-				}, o.a.createElement(k.a, {
+				}, o.a.createElement(w.a, {
 					className: U.a.closeButton,
 					onClick: () => d(t)
 				}, o.a.createElement(y.b, null), o.a.createElement("span", {
@@ -262,7 +262,7 @@
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
 					className: U.a.question
-				}, o.a.createElement(D, null, n)), o.a.createElement(w, {
+				}, o.a.createElement(D, null, n)), o.a.createElement(k, {
 					options: r,
 					onChange: function(n) {
 						var r;
@@ -297,7 +297,7 @@
 					className: Object(I.a)(U.a.survey, c && U.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
-				}, o.a.createElement(k.a, {
+				}, o.a.createElement(w.a, {
 					className: U.a.closeButton,
 					onClick: () => i(t)
 				}, o.a.createElement(y.b, null), o.a.createElement("span", {
@@ -308,7 +308,7 @@
 					className: U.a.question
 				}, o.a.createElement(D, null, n)), o.a.createElement("div", {
 					className: U.a.buttonGroup
-				}, o.a.createElement(w, {
+				}, o.a.createElement(k, {
 					onChange: function(n) {
 						var r;
 						u(n), null === (r = e.onSelect) || void 0 === r || r.call(e, t, n), d && e.onSubmit(t, n)
@@ -340,7 +340,7 @@
 						O && !y && u(p(O, n))
 					}, [u, O, y, n]), y) return null;
 				if (!O) return null;
-				async function j(e) {
+				async function T(e) {
 					l(m(), {
 						input: {
 							questionId: e,
@@ -358,7 +358,7 @@
 						payload: {}
 					})
 				}
-				async function T(e, t) {
+				async function j(e, t) {
 					await l(m(), {
 						input: {
 							questionId: e,
@@ -379,7 +379,7 @@
 					}))
 				}
 
-				function w(e, t) {
+				function k(e, t) {
 					u(f(O, t, n))
 				}
 				switch (O.type) {
@@ -389,9 +389,9 @@
 							questionId: O.id,
 							questionText: O.questionText,
 							answers: O.answerOptions,
-							onSubmit: T,
-							onSelect: w,
-							onClose: j,
+							onSubmit: j,
+							onSelect: k,
+							onClose: T,
 							inFeed: a
 						});
 					case g.c.SingleWithSubmit:
@@ -400,9 +400,9 @@
 							questionId: O.id,
 							questionText: O.questionText,
 							answers: O.answerOptions,
-							onSubmit: T,
-							onSelect: w,
-							onClose: j,
+							onSubmit: j,
+							onSelect: k,
+							onClose: T,
 							inFeed: a
 						});
 					case g.c.SingleNoSubmit:
@@ -411,9 +411,9 @@
 							questionId: O.id,
 							questionText: O.questionText,
 							answers: O.answerOptions,
-							onSubmit: T,
-							onSelect: w,
-							onClose: j,
+							onSubmit: j,
+							onSelect: k,
+							onClose: T,
 							inFeed: a,
 							noSubmit: !0
 						})
@@ -570,13 +570,13 @@
 			})), n.d(t, "n", (function() {
 				return O
 			})), n.d(t, "t", (function() {
-				return j
-			})), n.d(t, "p", (function() {
 				return T
+			})), n.d(t, "p", (function() {
+				return j
 			})), n.d(t, "o", (function() {
-				return w
-			})), n.d(t, "q", (function() {
 				return k
+			})), n.d(t, "q", (function() {
+				return w
 			})), n.d(t, "s", (function() {
 				return B
 			})), n.d(t, "r", (function() {
@@ -619,10 +619,10 @@
 				y = c.a.sub("Sub", d.a),
 				v = c.a.sup("Sup", d.a),
 				O = c.a.table("Table", d.a),
-				j = c.a.tr("Tr", d.a),
-				T = c.a.td("Tdl", d.a),
-				w = c.a.td("Tdc", d.a),
-				k = c.a.td("Tdr", d.a),
+				T = c.a.tr("Tr", d.a),
+				j = c.a.td("Tdl", d.a),
+				k = c.a.td("Tdc", d.a),
+				w = c.a.td("Tdr", d.a),
 				B = c.a.th("Thl", d.a),
 				N = c.a.th("Thc", d.a),
 				D = (c.a.th("Thr", d.a), c.a.wrapped(e => s.a.createElement(o.b, u({}, e, {
@@ -851,12 +851,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case f.jd.SmIcon:
+						case f.kd.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case f.jd.SmIconHc:
+						case f.kd.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1132,12 +1132,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.cd
+						experimentName: r.dd
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.jd.SmIcon || t === r.jd.SmIconHc
+					return t === r.kd.SmIcon || t === r.kd.SmIconHc
 				},
 				u = (e, {
 					subredditName: t
@@ -1160,4 +1160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.7dd34416adcd2e34fcb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.20412fa345b4af9296a2.js.map

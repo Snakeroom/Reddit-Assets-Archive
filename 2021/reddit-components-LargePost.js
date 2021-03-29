@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6ea59b1280cb8724f373.js
-// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0f3ff758323e9d3ef655.js
+// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2346,7 +2346,7 @@
 						isActionBarAnimationEnabled: Oe,
 						postId: we,
 						postIds: je
-					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], _e = ke ? void 0 : p, Pe = Object(d.a)(se), Ce = ie && Pe, Ee = Object(a.a)(se), Se = Object(c.a)(se), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Me = ye && Ne, Ie = n ? n - W.a : void 0, Ae = !(j && H || $), Le = (e => e === Q.Ac.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.Ac.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
+					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], _e = ke ? void 0 : p, Pe = Object(d.a)(se), Ce = ie && Pe, Ee = Object(a.a)(se), Se = Object(c.a)(se), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Me = ye && Ne, Ie = n ? n - W.a : void 0, Ae = !(j && H || $), Le = (e => e === Q.Bc.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.Bc.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2361,7 +2361,7 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: o
 						}
-					})(e), Re = !!ee && !Object(Q.Cd)(ee), We = (!y || Re) && !le.isSponsored, De = Object(k.t)(le, g), {
+					})(e), Re = !!ee && !Object(Q.Dd)(ee), We = (!y || Re) && !le.isSponsored, De = Object(k.t)(le, g), {
 						source: Ve
 					} = De, ze = o.a.createElement(o.a.Fragment, null, o.a.createElement(R.a, {
 						className: Object(_.a)(be.a.container, s, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -3633,9 +3633,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: r.sb
 				});
-				return !(!t || Object(r.Cd)(t))
+				return !(!t || Object(r.Dd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6ea59b1280cb8724f373.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0f3ff758323e9d3ef655.js.map
