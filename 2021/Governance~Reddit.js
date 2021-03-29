@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f6de6f808e9fc0bc31e3.js
-// Retrieved at 3/24/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d37f92c2ce58a74be4bf.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2406,7 +2406,7 @@
 			const v = e => g.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(D.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.c)),
-					experimentName: b.Oc
+					experimentName: b.Lc
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				j = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -3612,7 +3612,8 @@
 						sendEvent: r
 					}))
 				}
-				return t.displayName = "Tracked", t.WrappedComponent = e, t
+				const r = e.name || e.displayName;
+				return t.displayName = `Tracked(${r})`, t.WrappedComponent = e, t
 			}
 		},
 		"./src/reddit/constants/shortcuts.ts": function(e, t, r) {
@@ -21657,7 +21658,7 @@
 				l = e => e === a.G.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.Fd)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.Cd)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -21671,14 +21672,14 @@
 			const n = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ac
-					}) === s.Kc.Enabled
+						experimentName: s.xc
+					}) === s.Hc.Enabled
 				},
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.zc
-					}) === s.Jc.Enabled
+						experimentName: s.wc
+					}) === s.Gc.Enabled
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -21834,4 +21835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f6de6f808e9fc0bc31e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d37f92c2ce58a74be4bf.js.map

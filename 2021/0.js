@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.65dd9e56d7bff41ceda9.js
-// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.f67d847d5b2edcc4f61c.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./src/reddit/contexts/ApiContext.tsx": function(e, s, t) {
@@ -32,13 +32,14 @@
 				r = Object(a.createContext)(i);
 
 			function l(e) {
-				return s => n.a.createElement(r.Consumer, null, ({
+				const s = s => n.a.createElement(r.Consumer, null, ({
 					apiContext: t,
 					gqlContext: a
 				}) => n.a.createElement(e, c({
 					apiContext: t,
 					gqlContext: a
-				}, s)))
+				}, s)));
+				return s.displayName = `WithApiContext(${e.displayName||e.name})`, s
 			}
 		},
 		"./src/reddit/hooks/useGqlContext.ts": function(e, s, t) {
@@ -5180,4 +5181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.65dd9e56d7bff41ceda9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.f67d847d5b2edcc4f61c.js.map

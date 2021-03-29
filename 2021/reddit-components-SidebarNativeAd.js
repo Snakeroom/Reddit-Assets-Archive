@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.69e0d35571d11c942d81.js
-// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.59b92e43ec625d4324f8.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -487,10 +487,10 @@
 				M = j.reduce((function(e, t) {
 					return e.concat([t + "-" + C, t + "-" + k])
 				}), []),
-				L = [].concat(j, [S]).reduce((function(e, t) {
+				N = [].concat(j, [S]).reduce((function(e, t) {
 					return e.concat([t, t + "-" + C, t + "-" + k])
 				}), []),
-				N = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
+				L = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
 			function R(e) {
 				var t = new Map,
@@ -554,7 +554,7 @@
 								};
 								var o = function(e) {
 									var t = R(e);
-									return N.reduce((function(e, r) {
+									return L.reduce((function(e, r) {
 										return e.concat(t.filter((function(e) {
 											return e.phase === r
 										})))
@@ -893,13 +893,13 @@
 						strategy: "absolute",
 						placement: s
 					}),
-					L = J(Object.assign(Object.assign({}, x), M)),
-					N = m === P ? L : k,
+					N = J(Object.assign(Object.assign({}, x), M)),
+					L = m === P ? N : k,
 					R = {
-						top: C.top - N.top + y.top,
-						bottom: N.bottom - C.bottom + y.bottom,
-						left: C.left - N.left + y.left,
-						right: N.right - C.right + y.right
+						top: C.top - L.top + y.top,
+						bottom: L.bottom - C.bottom + y.bottom,
+						left: C.left - L.left + y.left,
+						right: L.right - C.right + y.right
 					},
 					D = e.modifiersData.offset;
 				if (m === P && D) {
@@ -1061,7 +1061,7 @@
 								n = e.name,
 								o = r.offset,
 								s = void 0 === o ? [0, 0] : o,
-								i = L.reduce((function(e, r) {
+								i = N.reduce((function(e, r) {
 									return e[r] = function(e, t, r) {
 										var n = G(e),
 											o = [x, E].indexOf(n) >= 0 ? -1 : 1,
@@ -1107,7 +1107,7 @@
 												i = r.padding,
 												a = r.flipVariations,
 												c = r.allowedAutoPlacements,
-												d = void 0 === c ? L : c,
+												d = void 0 === c ? N : c,
 												l = z(n),
 												u = (l ? a ? M : M.filter((function(e) {
 													return z(e) === l
@@ -1133,13 +1133,13 @@
 											allowedAutoPlacements: b
 										}) : r)
 									}), []), _ = t.rects.reference, k = t.rects.popper, I = new Map, T = !0, P = v[0], A = 0; A < v.length; A++) {
-									var N = v[A],
-										R = G(N),
-										D = z(N) === C,
+									var L = v[A],
+										R = G(L),
+										D = z(L) === C,
 										F = [E, O].indexOf(R) >= 0,
 										B = F ? "width" : "height",
 										U = ne(t, {
-											placement: N,
+											placement: L,
 											boundary: l,
 											rootBoundary: u,
 											altBoundary: p,
@@ -1152,10 +1152,10 @@
 									if (s && H.push(U[R] <= 0), a && H.push(U[V] <= 0, U[W] <= 0), H.every((function(e) {
 											return e
 										}))) {
-										P = N, T = !1;
+										P = L, T = !1;
 										break
 									}
-									I.set(N, H)
+									I.set(L, H)
 								}
 								if (T)
 									for (var q = function(e) {
@@ -1219,12 +1219,12 @@
 								};
 							if (I) {
 								if (s) {
-									var L = "y" === j ? E : x,
-										N = "y" === j ? O : w,
+									var N = "y" === j ? E : x,
+										L = "y" === j ? O : w,
 										R = "y" === j ? "height" : "width",
 										D = I[j],
-										F = I[j] + g[L],
-										B = I[j] - g[N],
+										F = I[j] + g[N],
+										B = I[j] - g[L],
 										U = m ? -P[R] / 2 : 0,
 										W = v === C ? T[R] : P[R],
 										H = v === C ? -P[R] : -T[R],
@@ -1239,8 +1239,8 @@
 											bottom: 0,
 											left: 0
 										},
-										X = K[L],
-										Q = K[N],
+										X = K[N],
+										Q = K[L],
 										Z = oe(0, T[R], Y[R]),
 										J = S ? T[R] / 2 - U - Z - X - A : W - Z - X - A,
 										$ = S ? -T[R] / 2 + U + Z + Q + A : H + Z + Q + A,
@@ -1475,7 +1475,7 @@
 			};
 
 			function d(e) {
-				return Object(s.c)(t => {
+				const t = t => {
 					const {
 						sendEvent: r,
 						eventFactory: s,
@@ -1485,7 +1485,8 @@
 					return o.a.createElement(e, a({}, d, {
 						afterClickTracking: l
 					}))
-				})
+				};
+				return t.displayName = `WithClickTracking(${e.displayName||e.name})`, Object(s.c)(t)
 			}
 			const l = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -2195,9 +2196,9 @@
 					}))
 				})),
 				M = r("./src/reddit/components/SEOTitle/index.tsx"),
-				L = r("./src/reddit/selectors/user.ts"),
-				N = r("./src/reddit/components/PostTitle/index.m.less"),
-				R = r.n(N),
+				N = r("./src/reddit/selectors/user.ts"),
+				L = r("./src/reddit/components/PostTitle/index.m.less"),
+				R = r.n(L),
 				D = r("./src/config.ts"),
 				F = r("./src/reddit/hooks/usePostContext.ts"),
 				B = r("./src/reddit/hooks/useTheme.ts");
@@ -2282,7 +2283,7 @@
 					}) => Object(p.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: L.bb
+					shouldOpenPostInNewTab: N.bb
 				}),
 				H = e => {
 					const {
@@ -2576,21 +2577,21 @@
 					}
 				}
 			}
-			var L = r("./src/reddit/components/SidebarNativeAd/index.m.less"),
-				N = r.n(L);
-			const R = p.a.wrapped(d.d, "PostTopMeta", N.a),
-				D = p.a.div("BannerAdContainer", N.a),
+			var N = r("./src/reddit/components/SidebarNativeAd/index.m.less"),
+				L = r.n(N);
+			const R = p.a.wrapped(d.d, "PostTopMeta", L.a),
+				D = p.a.div("BannerAdContainer", L.a),
 				F = ({
 					children: e
 				}) => s.a.createElement("div", null, e),
-				B = p.a.div("PromotedPostContainer", N.a),
-				U = p.a.wrapped(x.a, "OutboundLinkIcon", N.a),
-				G = p.a.div("SourceLinkWrapper", N.a),
-				z = p.a.div("TopLine", N.a),
-				V = p.a.wrapped(c.c, "PostTitle", N.a),
-				W = p.a.div("PostMediaWrapper", N.a),
-				H = p.a.div("BackgroundWrapper", N.a),
-				q = p.a.wrapped(h.a, "PostContainer", N.a),
+				B = p.a.div("PromotedPostContainer", L.a),
+				U = p.a.wrapped(x.a, "OutboundLinkIcon", L.a),
+				G = p.a.div("SourceLinkWrapper", L.a),
+				z = p.a.div("TopLine", L.a),
+				V = p.a.wrapped(c.c, "PostTitle", L.a),
+				W = p.a.div("PostMediaWrapper", L.a),
+				H = p.a.div("BackgroundWrapper", L.a),
+				q = p.a.wrapped(h.a, "PostContainer", L.a),
 				Y = 640,
 				K = e => Object(w.a)(e.title, 100),
 				X = e => {
@@ -2924,9 +2925,9 @@
 			})), r.d(t, "clickQuestionMarkEvent", (function() {
 				return M
 			})), r.d(t, "clickConfirmAwardEvent", (function() {
-				return L
-			})), r.d(t, "clickGetPremiumEvent", (function() {
 				return N
+			})), r.d(t, "clickGetPremiumEvent", (function() {
+				return L
 			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
 				return R
 			})), r.d(t, "clickNextButtonEvent", (function() {
@@ -3067,7 +3068,7 @@
 					action: "click",
 					noun: "question"
 				}),
-				L = (e, t) => r => ({
+				N = (e, t) => r => ({
 					...u(r, e),
 					source: "give_gold",
 					action: "click",
@@ -3077,7 +3078,7 @@
 						...l(t)
 					}
 				}),
-				N = (e, t) => r => ({
+				L = (e, t) => r => ({
 					...u(r, e),
 					source: "give_gold",
 					action: "click",
@@ -4356,4 +4357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.69e0d35571d11c942d81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.59b92e43ec625d4324f8.js.map

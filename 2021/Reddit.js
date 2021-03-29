@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b7361aad4367216307bb.js
-// Retrieved at 3/24/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e7c76eacf85fd5fc1e32.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6039,9 +6039,9 @@
 				Yo = n("./src/reddit/helpers/trackers/searchResults.ts"),
 				Xo = n("./src/reddit/selectors/experiments/trending.ts"),
 				$o = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const ea = e => Object(Ct.G)(e) || Vt.ud.Treatment1 === Object($o.c)(e, {
+			const ea = e => Object(Ct.G)(e) || Vt.rd.Treatment1 === Object($o.c)(e, {
 				experimentEligibilitySelector: $o.a,
-				experimentName: Vt.rd
+				experimentName: Vt.od
 			});
 			var ta = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				na = n("./src/reddit/selectors/searchResults.ts"),
@@ -6886,7 +6886,7 @@
 						}), e(Object(Ci.b)(!0))) : window.location.host = "old.reddit.com"
 					},
 					requestAwardKarma: () => {
-						t.user && e(Object(yi.f)(Object(gt.e)(t.user)))
+						t.user && !t.user.totalKarma && e(Object(yi.f)(Object(gt.e)(t.user)))
 					},
 					dispatchOpenLoginModal: () => e(Object(ja.h)()),
 					logoutUser: () => {
@@ -11485,13 +11485,14 @@
 				i = Object(s.createContext)(a);
 
 			function c(e) {
-				return t => r.a.createElement(i.Consumer, null, ({
+				const t = t => r.a.createElement(i.Consumer, null, ({
 					apiContext: n,
 					gqlContext: s
 				}) => r.a.createElement(e, o({
 					apiContext: n,
 					gqlContext: s
-				}, t)))
+				}, t)));
+				return t.displayName = `WithApiContext(${e.displayName||e.name})`, t
 			}
 		},
 		"./src/reddit/contexts/ThrottlingContext/index.tsx": function(e, t, n) {
@@ -14547,8 +14548,8 @@
 			const Dt = {
 					displayDelay: 15,
 					displayOnRoutes: [g.Db.SUBREDDIT, g.Db.COMMENTS],
-					experimentName: At.Sb,
-					experimentVariant: At.Vb.On,
+					experimentName: At.Rb,
+					experimentVariant: At.Ub.On,
 					isSEOOnly: !0,
 					samplingRate: 25,
 					seed: Math.random()
@@ -17038,20 +17039,20 @@
 				g = e => e.accountManagerModalData.redirectUrl,
 				f = Object(r.a)((e, t) => t.path, (e, t) => t.uiMode, h, c.a, b.a, d.b, e => Object(m.c)(e, {
 					experimentEligibilitySelector: p,
-					experimentName: i.dd
+					experimentName: i.ad
 				}), l.a, (e, t, n, r, c, d, l, m) => {
 					let u = `${s.a.accountManagerOrigin}${e}`;
 					return u = Object(o.a)(u, {
 						experiment_d2x_2020ify_buttons: "enabled"
 					}), l && (u = Object(o.a)(u, {
-						[`experiment_${i.dd}`]: l
+						[`experiment_${i.ad}`]: l
 					})), e === a.c.GoogleOneTap ? Object(o.a)(u, {
 						[i.N]: d
 					}) : (r && (u = Object(o.a)(u, {
 						[i.lb]: r,
 						uiMode: t
 					})), m && (u = Object(o.a)(u, {
-						[`experiment_${i.kc}`]: m
+						[`experiment_${i.jc}`]: m
 					})), c && (u = Object(o.a)(u, {
 						mweb_responsive_settings: "treatment"
 					})), e === a.c.Index || e === a.c.ChangePassword ? u : u = Object(o.a)(u, {
@@ -17180,7 +17181,7 @@
 					experimentEligibilitySelector: o.J,
 					experimentName: s.Fb
 				});
-				return !(!t || Object(s.Fd)(t))
+				return !(!t || Object(s.Cd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -17230,13 +17231,13 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.kd.Enabled === Object(r.c)(e, {
+			const o = e => s.hd.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.cd
+					experimentName: s.Zc
 				}),
-				a = e => s.jd.Enabled === Object(r.c)(e, {
+				a = e => s.gd.Enabled === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.bd
+					experimentName: s.Yc
 				})
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, n) {
@@ -17247,9 +17248,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(o.G)(e) || !(s.td.Holdout === Object(r.c)(e, {
+			const a = e => Object(o.G)(e) || !(s.qd.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.qd
+				experimentName: s.nd
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -17264,17 +17265,17 @@
 				r = n("./src/reddit/featureFlags/utils.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = ["AU", "CA", "GB", "US"],
-				i = new Set([s.Wb.AllItems, s.Wb.TrendingSearch]),
+				i = new Set([s.Vb.AllItems, s.Vb.TrendingSearch]),
 				c = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: Object(r.d)(Object(r.b)(...a)),
-						experimentName: s.Xb
+						experimentName: s.Wb
 					});
 					return i.has(t)
 				},
-				d = e => s.Wb.AllItems === Object(o.c)(e, {
+				d = e => s.Vb.AllItems === Object(o.c)(e, {
 					experimentEligibilitySelector: Object(r.d)(Object(r.b)(...a)),
-					experimentName: s.Xb
+					experimentName: s.Wb
 				})
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -17471,4 +17472,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b7361aad4367216307bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e7c76eacf85fd5fc1e32.js.map

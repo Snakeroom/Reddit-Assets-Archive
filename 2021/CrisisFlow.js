@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.4fb1fcccaa11706f8106.js
-// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.ff2eb81435723221c417.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -93,16 +93,16 @@
 				}))),
 				T = t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx"),
 				R = t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"),
-				j = t("./src/reddit/icons/svgs/Person/index.tsx"),
-				y = t("./src/reddit/icons/svgs/TickCircled/index.tsx"),
+				y = t("./src/reddit/icons/svgs/Person/index.tsx"),
+				j = t("./src/reddit/icons/svgs/TickCircled/index.tsx"),
 				A = t("./src/reddit/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
 				D = t.n(A);
 			const {
 				fbt: O
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = w.a.div("CrisisImageContainer", g.a), N = w.a.h2("CrisisTitle", g.a), z = w.a.p("CrisisDescription", g.a), S = w.a.div("CrisisOtherActions", D.a), V = w.a.h4("CrisisOtherActionsTitle", D.a), H = w.a.div("CrisisLinkIconContainer", D.a), Y = w.a.div("CrisisLinkText", D.a), W = w.a.h3("CrisisLinkTitle", D.a), M = w.a.p("CrisisLinkDescription", D.a);
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = w.a.div("CrisisImageContainer", g.a), N = w.a.h2("CrisisTitle", g.a), z = w.a.p("CrisisDescription", g.a), S = w.a.div("CrisisOtherActions", D.a), V = w.a.h4("CrisisOtherActionsTitle", D.a), H = w.a.div("CrisisLinkIconContainer", D.a), W = w.a.div("CrisisLinkText", D.a), Y = w.a.h3("CrisisLinkTitle", D.a), M = w.a.p("CrisisLinkDescription", D.a);
 			var B = e => n.a.createElement("div", {
 					className: D.a.CrisisThankYouPage
-				}, n.a.createElement(I, null, n.a.createElement(y.a, {
+				}, n.a.createElement(I, null, n.a.createElement(j.a, {
 					className: D.a.CrisisTickImage
 				})), n.a.createElement(N, null, O._("Thanks for caring about your fellow redditor", null, {
 					hk: "1ePh84"
@@ -114,7 +114,7 @@
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank",
 					className: D.a.CrisisLink
-				}, n.a.createElement(H, null, n.a.createElement(R.a, null)), n.a.createElement(Y, null, n.a.createElement(W, null, O._("Learn how to help someone in crisis", null, {
+				}, n.a.createElement(H, null, n.a.createElement(R.a, null)), n.a.createElement(W, null, n.a.createElement(Y, null, O._("Learn how to help someone in crisis", null, {
 					hk: "3HohFx"
 				})), n.a.createElement(M, null, O._("Get advice on what you can say and how to be supportive.", null, {
 					hk: "1NHS5d"
@@ -124,7 +124,7 @@
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
 					target: "_blank",
 					className: D.a.CrisisLink
-				}, n.a.createElement(H, null, n.a.createElement(j.a, null)), n.a.createElement(Y, null, n.a.createElement(W, null, O._("Get yourself support", null, {
+				}, n.a.createElement(H, null, n.a.createElement(y.a, null)), n.a.createElement(W, null, n.a.createElement(Y, null, O._("Get yourself support", null, {
 					hk: "kTT0U"
 				})), n.a.createElement(M, null, O._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 					hk: "37R4JZ"
@@ -335,13 +335,14 @@
 				a = Object(r.createContext)(o);
 
 			function l(e) {
-				return s => n.a.createElement(a.Consumer, null, ({
+				const s = s => n.a.createElement(a.Consumer, null, ({
 					apiContext: t,
 					gqlContext: r
 				}) => n.a.createElement(e, i({
 					apiContext: t,
 					gqlContext: r
-				}, s)))
+				}, s)));
+				return s.displayName = `WithApiContext(${e.displayName||e.name})`, s
 			}
 		},
 		"./src/reddit/controls/Link/index.m.less": function(e, s, t) {
@@ -466,4 +467,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.4fb1fcccaa11706f8106.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.ff2eb81435723221c417.js.map

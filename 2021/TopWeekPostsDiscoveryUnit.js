@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.c95d731afbd784fec93c.js
-// Retrieved at 3/23/2021, 9:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.043edf051054c10f4db4.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -48,7 +48,7 @@
 			};
 
 			function l(e) {
-				return Object(r.c)(t => {
+				const t = t => {
 					const {
 						sendEvent: s,
 						eventFactory: r,
@@ -58,7 +58,8 @@
 					return a.a.createElement(e, o({}, l, {
 						afterClickTracking: d
 					}))
-				})
+				};
+				return t.displayName = `WithClickTracking(${e.displayName||e.name})`, Object(r.c)(t)
 			}
 			const d = {
 					anchorsAndButtons: ["A", "BUTTON"],
@@ -499,8 +500,8 @@
 				},
 				D = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				F = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				U = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
-				W = s("./src/reddit/constants/posts.ts"),
+				W = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
+				U = s("./src/reddit/constants/posts.ts"),
 				A = s("./src/reddit/controls/Button/index.tsx"),
 				B = s("./src/reddit/controls/InternalLink/index.tsx"),
 				R = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Header/index.m.less"),
@@ -512,7 +513,7 @@
 						onSubredditOrProfileClick: n,
 						shouldShowSubscribeButton: r,
 						subredditOrProfile: o
-					} = e, c = Object(b.g)(o) ? W.a.PROFILE : W.a.SUBREDDIT;
+					} = e, c = Object(b.g)(o) ? U.a.PROFILE : U.a.SUBREDDIT;
 					return a.a.createElement("div", {
 						className: Object(i.a)(H.a.header, t)
 					}, a.a.createElement(B.a, {
@@ -530,7 +531,7 @@
 						"data-redditstyle": !0,
 						to: o.url,
 						onMouseDown: n
-					}, Object(U.b)(o.displayText || o.name, c))), r && a.a.createElement(F.a, {
+					}, Object(W.b)(o.displayText || o.name, c))), r && a.a.createElement(F.a, {
 						className: H.a.subscribe,
 						"data-redditstyle": !0,
 						getEventFactory: s,
@@ -737,8 +738,8 @@
 				M = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				D = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				F = s("./src/reddit/components/PostContainer/index.tsx"),
-				U = s("./src/reddit/components/PostTitle/index.tsx"),
-				W = s("./src/reddit/connectors/miniCardPost.ts"),
+				W = s("./src/reddit/components/PostTitle/index.tsx"),
+				U = s("./src/reddit/connectors/miniCardPost.ts"),
 				A = s("./src/reddit/contexts/Post/index.tsx"),
 				B = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				R = s("./src/reddit/helpers/styles/mixins/index.tsx"),
@@ -831,12 +832,12 @@
 					}, S)), C && E && r.a.createElement(O, Y({
 						created: p.created,
 						author: p.author
-					}, S)), r.a.createElement(U.c, {
+					}, S)), r.a.createElement(W.c, {
 						className: N ? Z.a.postTitle : Z.a.postTitleCompact,
 						disableFlair: !0,
 						hideSourceLink: !0,
 						post: p,
-						size: U.b.Large,
+						size: W.b.Large,
 						titleColor: o && o.postTitleColor
 					}), y && E && r.a.createElement(T.a, {
 						className: Z.a.metaLine,
@@ -873,7 +874,7 @@
 					}))))), r.a.createElement(I.d, null))
 				}
 			}
-			const $ = Object(A.b)(Object(W.a)(Object(f.a)(X)));
+			const $ = Object(A.b)(Object(U.a)(Object(f.a)(X)));
 			class ee extends r.a.Component {
 				render() {
 					return r.a.createElement($, this.props)
@@ -1608,8 +1609,8 @@
 				M = s("./src/reddit/selectors/user.ts"),
 				D = s("./src/reddit/components/PostTitle/index.m.less"),
 				F = s.n(D),
-				U = s("./src/config.ts"),
-				W = s("./src/reddit/hooks/usePostContext.ts"),
+				W = s("./src/config.ts"),
+				U = s("./src/reddit/hooks/usePostContext.ts"),
 				A = s("./src/reddit/hooks/useTheme.ts");
 
 			function B() {
@@ -1832,7 +1833,7 @@
 					}), r.a.createElement("div", {
 						className: F.a.postTitleVisibility,
 						dangerouslySetInnerHTML: {
-							__html: `\n              <img alt="" src="${U.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
+							__html: `\n              <img alt="" src="${W.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
 						}
 					}), this.getDynamicStyleTags())
 				}
@@ -1840,7 +1841,7 @@
 			t.c = r.a.memo((function(e) {
 				const t = Object(u.Z)(),
 					s = Object(u.v)(t),
-					n = Object(W.a)(),
+					n = Object(U.a)(),
 					a = Object(i.e)(a => z(a, {
 						...n,
 						...e,
@@ -2410,4 +2411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.c95d731afbd784fec93c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.043edf051054c10f4db4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.76ed00f3143ea010db0e.js
-// Retrieved at 3/24/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c3bdeaebd46ff6f839fa.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1125,7 +1125,7 @@
 				}, s.a.createElement(k.i, {
 					className: te.a.button,
 					onClick: () => {
-						x(Object(c.i)()), h(Object(l.b)())
+						x(Object(c.i)()), h(Object(l.c)())
 					}
 				}, g ? re._("Apply Your Free Powerup", null, {
 					hk: "3HJ66L"
@@ -3156,4 +3156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.76ed00f3143ea010db0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c3bdeaebd46ff6f839fa.js.map

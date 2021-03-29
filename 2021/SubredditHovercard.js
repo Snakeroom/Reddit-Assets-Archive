@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.13ea6ec155cfb6a5a97e.js
-// Retrieved at 3/24/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.d523d4c0842fa4589b0d.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, s) {
@@ -204,7 +204,7 @@
 					onOpenUserDropdown: async () => {
 						e(Object(a.f)({
 							tooltipId: t.tooltipId
-						})), t.authorOrSubredditName && e(Object(p.t)(t.authorOrSubredditName))
+						})), t.authorOrSubredditName && e(Object(p.u)(t.authorOrSubredditName))
 					}
 				})),
 				h = s("./src/reddit/components/Hovercards/HoverDiv/index.m.less"),
@@ -874,7 +874,7 @@
 								experimentName: o.w,
 								expEventOverride: t
 							});
-							return !!(Object(o.Fd)(s) ? void 0 : s)
+							return !!(Object(o.Cd)(s) ? void 0 : s)
 						})(s)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -1719,4 +1719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.13ea6ec155cfb6a5a97e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.d523d4c0842fa4589b0d.js.map

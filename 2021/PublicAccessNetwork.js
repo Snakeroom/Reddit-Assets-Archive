@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.90815a979f70c3a1c53e.js
-// Retrieved at 3/24/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.dfdf0c431f28f25e88d4.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.mc
+					experimentName: m.lc
 				});
-				return Object(m.Fd)(t) ? void 0 : t
+				return Object(m.Cd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.nc
+					experimentName: m.mc
 				});
-				return Object(m.Fd)(t) ? void 0 : t
-			}, (e, t) => e === m.oc.Enabled && t === m.oc.Enabled);
+				return Object(m.Cd)(t) ? void 0 : t
+			}, (e, t) => e === m.nc.Enabled && t === m.nc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -868,7 +868,7 @@
 						B = Object(K.J)(s());
 					if (D && "subreddit" === D.belongsTo.type) {
 						const e = D.belongsTo.id,
-							s = Object($.i)(() => t(Object(Q.f)(e, {
+							s = Object($.i)(() => t(Object(Q.g)(e, {
 								fullData: !0,
 								includeIdentity: B
 							})), {
@@ -5774,8 +5774,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: a.Nc
-				}) === a.Xc.Enabled
+					experimentName: a.Kc
+				}) === a.Uc.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -5783,4 +5783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.90815a979f70c3a1c53e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.dfdf0c431f28f25e88d4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.4fdf2483a59c2bff8af9.js
-// Retrieved at 3/24/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.15d7f152efc30aac5fdd.js
+// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -1863,7 +1863,7 @@
 						})))
 					}
 				}, V = Object(m.a)(h.R), Y = e => async (t, n) => {
-					t(V(e)), t(Object(x.f)(e.subredditId, {
+					t(V(e)), t(Object(x.g)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(y.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.f)({
@@ -2103,7 +2103,7 @@
 				} = e.params;
 				if (g === a.Qb.Gold) return void t(Object(s.c)("/settings/premium"));
 				const v = [];
-				g === a.Qb.Profile && (v.push(t(Object(P.a)())), v.push(t(Object(N.g)()))), g === a.Qb.Account && v.push(t(Object(p.o)())), g === a.Qb.Notifications && v.push(t(S())), g !== a.Qb.Privacy && g !== a.Qb.Messaging || v.push(t(Object(l.b)())), g === a.Qb.Premium && (v.push(t(Object(P.a)())), v.push(t(Object(b.g)(!0)))), await Promise.all(v); {
+				g === a.Qb.Profile && (v.push(t(Object(P.a)())), v.push(t(Object(N.g)()))), g === a.Qb.Account && v.push(t(Object(p.o)())), g === a.Qb.Notifications && v.push(t(S())), g !== a.Qb.Privacy && g !== a.Qb.Messaging || v.push(t(Object(l.b)())), g === a.Qb.Premium && (v.push(t(Object(P.a)())), v.push(t(Object(b.h)(!0)))), await Promise.all(v); {
 					const e = n(),
 						a = e.platform.currentPage,
 						{
@@ -3944,7 +3944,7 @@
 						hk: "2EKYNO"
 					}))), o.a.createElement(y.f, null, o.a.createElement(y.q, {
 						onClick: () => {
-							n.isPremium ? a(Object(v.d)(s.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : a(Object(x.a)(n.id, s.id, n.allocatedAt)), r()
+							n.isPremium ? a(Object(v.e)(s.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : a(Object(x.a)(n.id, s.id, n.allocatedAt)), r()
 						},
 						"data-redditstyle": !0
 					}, w._("Confirm", null, {
@@ -10586,4 +10586,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4fdf2483a59c2bff8af9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.15d7f152efc30aac5fdd.js.map
