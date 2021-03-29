@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.d37f92c2ce58a74be4bf.js
-// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.df4bbfa6aca13785b502.js
+// Retrieved at 3/29/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -12484,7 +12484,8 @@
 						}
 						const a = {};
 						return Object.keys(s).forEach(e => {
-							s[e].pollData && (a[e] = (e => {
+							var t;
+							(null === (t = s[e]) || void 0 === t ? void 0 : t.pollData) && (a[e] = (e => {
 								if (!e.pollData) return null;
 								const {
 									id: t,
@@ -12617,8 +12618,9 @@
 							}
 						}
 						const a = Object.keys(s).reduce((e, t) => {
-							if (!s[t].pollData) return e;
-							const r = (e => {
+							var r;
+							if (!(null === (r = s[t]) || void 0 === r ? void 0 : r.pollData)) return e;
+							const a = (e => {
 								const {
 									options: t,
 									totalVoteCount: r,
@@ -12639,7 +12641,7 @@
 									totalVotes: r.toString()
 								}
 							})(s[t].pollData);
-							return r ? (e[t] = r, e) : e
+							return a ? (e[t] = a, e) : e
 						}, {});
 						return Object.keys(a).length ? {
 							...e,
@@ -13344,7 +13346,10 @@
 									...t
 								}
 							}
-							const a = Object.keys(s).reduce((e, t) => s[t].pollData ? (e[t] = t, e) : e, {});
+							const a = Object.keys(s).reduce((e, t) => {
+								var r;
+								return (null === (r = s[t]) || void 0 === r ? void 0 : r.pollData) ? (e[t] = t, e) : e
+							}, {});
 							return {
 								...e,
 								...a
@@ -21835,4 +21840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d37f92c2ce58a74be4bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.df4bbfa6aca13785b502.js.map
