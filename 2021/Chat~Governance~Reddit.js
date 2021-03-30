@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3abd0c41785fe1572325.js
-// Retrieved at 3/29/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f5769ee3503ebea4e475.js
+// Retrieved at 3/30/2021, 9:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1448,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("129866"),
+				buildNumber: r("129909"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1617056546"),
+				})("1617110279"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3624,14 +3624,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c0155291a4fc725924c876cc57c399747a582aad9-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c73c1163859af88bce0d58e22497737a6c30e541c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0155291a4fc725924c876cc57c399747a582aad9-production",
+						release: "73c1163859af88bce0d58e22497737a6c30e541c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4080,7 +4080,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "0155291a4fc725924c876cc57c399747a582aad9-production",
+						releaseClient: "73c1163859af88bce0d58e22497737a6c30e541c-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -16456,13 +16456,13 @@
 			})), i.d(t, "Ad", (function() {
 				return yn
 			})), i.d(t, "k", (function() {
-				return vn
-			})), i.d(t, "Jb", (function() {
 				return En
-			})), i.d(t, "Cd", (function() {
+			})), i.d(t, "Jb", (function() {
 				return Sn
-			})), i.d(t, "lc", (function() {
+			})), i.d(t, "Cd", (function() {
 				return Tn
+			})), i.d(t, "lc", (function() {
+				return On
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			const n = "typeahead_redesign",
@@ -16578,7 +16578,7 @@
 			}(it || (it = {}));
 			const nt = "enabled",
 				rt = e => e === it.Control1 || e === it.Control2;
-			var st, ot, dt, at, lt, ct, ut, _t, pt, mt, ht, bt, ft, gt, wt, yt, vt, Et, St, Tt, Ot, It, jt, Ft, Rt, xt, Ct, Dt, Nt, At, Pt, kt, Bt, Lt, Ut, Mt, Gt, qt, Vt, Wt, Ht, $t, zt, Kt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ci, ui, _i, pi, mi, hi, bi, fi, gi, wi, yi, vi, Ei, Si, Ti, Oi, Ii, ji, Fi, Ri, xi, Ci, Di, Ni, Ai, Pi, ki, Bi, Li, Ui, Mi, Gi, qi, Vi, Wi, Hi, $i, zi, Ki, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, cn, un, _n, pn, mn, hn, bn, fn, gn, wn, yn;
+			var st, ot, dt, at, lt, ct, ut, _t, pt, mt, ht, bt, ft, gt, wt, yt, vt, Et, St, Tt, Ot, It, jt, Ft, Rt, xt, Ct, Dt, Nt, At, Pt, kt, Bt, Lt, Ut, Mt, Gt, qt, Vt, Wt, Ht, $t, zt, Kt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ci, ui, _i, pi, mi, hi, bi, fi, gi, wi, yi, vi, Ei, Si, Ti, Oi, Ii, ji, Fi, Ri, xi, Ci, Di, Ni, Ai, Pi, ki, Bi, Li, Ui, Mi, Gi, qi, Vi, Wi, Hi, $i, zi, Ki, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, cn, un, _n, pn, mn, hn, bn, fn, gn, wn, yn, vn;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(st || (st = {})),
@@ -16947,8 +16947,11 @@
 			}(wn || (wn = {})),
 			function(e) {
 				e.Enabled = "enabled"
-			}(yn || (yn = {}));
-			const vn = {
+			}(yn || (yn = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(vn || (vn = {}));
+			const En = {
 					[tt]: [yn.Enabled],
 					[et]: [wn.Enabled],
 					[Ze]: [gn.Enabled],
@@ -16999,6 +17002,7 @@
 					[M]: [ci.Enabled],
 					d2x_sso_settings: [ui.SSO],
 					[U]: [li.Enabled],
+					web_econ_short_supporters_widget: [vn.Enabled],
 					[L]: [wt.Enabled],
 					[q]: [ut.Enabled],
 					[V]: [_t.Enabled],
@@ -17061,9 +17065,9 @@
 					[Qe]: [hn.Enabled],
 					[Je]: [bn.Enabled]
 				},
-				En = new Set([v, a, S, B, "guest_d2x_subreddit_subreddit_links_url", ee, ve, te, ne, se, ce, _e, pe, ge, we, Z, "d2x_language_selector", Be, Xe]),
-				Sn = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
-				Tn = Sn(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"])
+				Sn = new Set([v, a, S, B, "guest_d2x_subreddit_subreddit_links_url", ee, ve, te, ne, se, ce, _e, pe, ge, we, Z, "d2x_language_selector", Be, Xe]),
+				Tn = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
+				On = Tn(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"])
 		},
 		"./src/reddit/constants/featureThrottling.ts": function(e, t, i) {
 			"use strict";
@@ -44733,4 +44737,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3abd0c41785fe1572325.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f5769ee3503ebea4e475.js.map
