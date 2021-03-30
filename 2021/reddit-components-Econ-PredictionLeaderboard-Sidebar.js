@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.4cf1760d75ad9d2e9b0e.js
-// Retrieved at 3/23/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.d23201ff5a37d013b4ea.js
+// Retrieved at 3/30/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -244,13 +244,13 @@
 				tournamentId: h
 			}) {
 				const _ = Object(p.a)(),
-					k = Object(u.a)(),
-					v = Object(l.w)(k),
+					v = Object(u.a)(),
+					k = Object(l.w)(v),
 					L = Object(r.e)(e => Object(f.e)(e, {
 						subredditId: c
 					}));
 				Object(a.useEffect)(() => {
-					_(h ? Object(m.u)() : Object(m.q)(v))
+					_(h ? Object(m.u)() : Object(m.q)(k))
 				}, []);
 				const z = t && t.rank > 0;
 				return n.a.createElement("div", {
@@ -299,6 +299,7 @@
 				userLink: "_34lqpm8WEQ2vCBLoneB-q5",
 				userName: "Lm2HlDnjd61FFIUJMsqY1",
 				yourProfile: "_3NXCPZBcTL9t1VpyqYkpAi",
+				leaderboardIcon: "cr2gm4FK2Pvd3jSNEt1aM",
 				rank: "_35mmwlcmeMehfyJXIsaV6P",
 				userIcon: "_12PvAVnV9Mni44vSgjcixP",
 				avatar: "KajS3NI16AuxmHTMwUM9Y",
@@ -354,7 +355,7 @@
 					}
 				};
 
-			function k({
+			function v({
 				place: e
 			}) {
 				const t = e && _[e];
@@ -365,8 +366,8 @@
 					srcSet: t.srcSet
 				}) : null
 			}
-			var v = c("./src/reddit/components/Econ/PredictionLeaderboard/Predictor/index.m.less"),
-				L = c.n(v);
+			var k = c("./src/reddit/components/Econ/PredictionLeaderboard/Predictor/index.m.less"),
+				L = c.n(k);
 			const {
 				fbt: z
 			} = c("./node_modules/fbt/lib/FbtPublic.js");
@@ -396,13 +397,15 @@
 						targetUserId: a.id
 					})),
 					to: `/user/${b}`
-				}, n.a.createElement(k, {
-					place: c
-				}), n.a.createElement("div", null, n.a.createElement(s.a, {
+				}, n.a.createElement("div", {
+					className: L.a.leaderboardIcon
+				}, n.a.createElement(s.a, {
 					className: Object(r.a)(L.a.userIcon, L.a.avatar),
 					iconUrl: null == E ? void 0 : E.url,
 					isNSFW: !!(null == h ? void 0 : h.isNsfw),
 					userName: null != b ? b : ""
+				}), n.a.createElement(v, {
+					place: c
 				})), n.a.createElement("div", {
 					className: L.a.name
 				}, n.a.createElement("div", {
@@ -456,8 +459,8 @@
 			var x = c("./src/reddit/components/Econ/PredictionLeaderboard/List/index.tsx"),
 				P = c("./src/reddit/components/Econ/PredictionLeaderboard/Modal/index.tsx"),
 				_ = c("./src/reddit/components/Econ/PredictionLeaderboard/Sidebar/index.m.less"),
-				k = c.n(_);
-			const v = 4,
+				v = c.n(_);
+			const k = 4,
 				L = 25,
 				z = Object(s.c)({
 					leaderboard: (e, t) => {
@@ -496,10 +499,10 @@
 				if (!(null === (i = null == c ? void 0 : c.topPredictorsRank) || void 0 === i ? void 0 : i.length) || z) return null;
 				const {
 					currentRank: g,
-					topPredictorsRank: O
+					topPredictorsRank: I
 				} = c;
 				return r.a.createElement(o.a, null, r.a.createElement(m.a, {
-					className: Object(l.a)(k.a.themedWidget, e),
+					className: Object(l.a)(v.a.themedWidget, e),
 					title: s ? a.fbt._("Tournament leaderboard", null, {
 						hk: "1WFLrI"
 					}) : a.fbt._("Top Predictors", null, {
@@ -507,12 +510,12 @@
 					})
 				}, r.a.createElement(x.a, {
 					currentRank: g,
-					topPredictorsRank: O.slice(0, v),
+					topPredictorsRank: I.slice(0, k),
 					tournamentId: s
 				}), r.a.createElement("div", {
-					className: k.a.openModalButtonContainer
+					className: v.a.openModalButtonContainer
 				}, r.a.createElement(u.i, {
-					className: k.a.openModalButton,
+					className: v.a.openModalButton,
 					isFullWidth: !0,
 					onClick: () => {
 						s && b(Object(f.f)()), _(!0)
@@ -520,7 +523,7 @@
 				}, a.fbt._("See All", null, {
 					hk: "1Ozf02"
 				}))), h && r.a.createElement(P.a, {
-					className: k.a.modal,
+					className: v.a.modal,
 					currentRank: g,
 					onOverlayClick: N,
 					onClose: N,
@@ -534,4 +537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.4cf1760d75ad9d2e9b0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.d23201ff5a37d013b4ea.js.map

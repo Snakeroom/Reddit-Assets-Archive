@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.dd649b6ee222d27388ba.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.5dc07d5adfbeee8a6a48.js
+// Retrieved at 3/30/2021, 2:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2689,6 +2689,7 @@
 				userLink: "_34lqpm8WEQ2vCBLoneB-q5",
 				userName: "Lm2HlDnjd61FFIUJMsqY1",
 				yourProfile: "_3NXCPZBcTL9t1VpyqYkpAi",
+				leaderboardIcon: "cr2gm4FK2Pvd3jSNEt1aM",
 				rank: "_35mmwlcmeMehfyJXIsaV6P",
 				userIcon: "_12PvAVnV9Mni44vSgjcixP",
 				avatar: "KajS3NI16AuxmHTMwUM9Y",
@@ -2786,13 +2787,15 @@
 						targetUserId: s.id
 					})),
 					to: `/user/${f}`
-				}, r.a.createElement(_, {
-					place: n
-				}), r.a.createElement("div", null, r.a.createElement(i.a, {
+				}, r.a.createElement("div", {
+					className: O.a.leaderboardIcon
+				}, r.a.createElement(i.a, {
 					className: Object(a.a)(O.a.userIcon, O.a.avatar),
 					iconUrl: null == h ? void 0 : h.url,
 					isNSFW: !!(null == g ? void 0 : g.isNsfw),
 					userName: null != f ? f : ""
+				}), r.a.createElement(_, {
+					place: n
 				})), r.a.createElement("div", {
 					className: O.a.name
 				}, r.a.createElement("div", {
@@ -13650,4 +13653,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.dd649b6ee222d27388ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5dc07d5adfbeee8a6a48.js.map
