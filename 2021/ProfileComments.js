@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.db1624aa214036ec16b5.js
-// Retrieved at 3/30/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.7f554e9a9c0ac63e329f.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -44,9 +44,9 @@
 				P = r("./src/lib/makeApiRequest/index.ts"),
 				h = r("./src/reddit/models/Comment/addProfileImgParam.ts"),
 				w = r("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				L = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const v = (e, t, r, s) => {
-				let o = Object(x.a)(Object(w.a)(Object(L.a)(`${g.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`)));
+				v = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const L = (e, t, r, s) => {
+				let o = Object(x.a)(Object(w.a)(Object(v.a)(`${g.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`)));
 				return s && (o = Object(h.a)(o)), Object(P.a)(e, {
 					data: r,
 					endpoint: o,
@@ -85,7 +85,7 @@
 						}
 						return
 					}
-					const L = {
+					const v = {
 						...a()(e.queryParams, [...y.l, y.h]),
 						sort: i,
 						t: Object(I.a)(i, j)
@@ -93,7 +93,7 @@
 					t(T({
 						key: x
 					}));
-					const _ = await Object(N.a)("profileComments", () => v(s.apiContext(), g, L, Object(E.a)(r())));
+					const _ = await Object(N.a)("profileComments", () => L(s.apiContext(), g, v, Object(E.a)(r())));
 					if (!_.ok) return t(A({
 						account: _.body.data ? _.body.data.account : null,
 						error: _.body.reason ? {
@@ -141,7 +141,7 @@
 						key: f,
 						fetchedToken: b.token
 					}));
-					const C = await v(r(), u, {
+					const C = await L(r(), u, {
 						after: b.token,
 						dist: b.dist,
 						sort: m,
@@ -207,8 +207,8 @@
 				P = r("./src/reddit/components/OverviewChronoList/ListItem.tsx"),
 				h = r("./src/reddit/components/OverviewCommentPost/index.tsx"),
 				w = r("./src/reddit/components/OverviewConversationsPost/Border/index.tsx"),
-				L = r("./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.tsx"),
-				v = r("./src/reddit/constants/postLayout.ts"),
+				v = r("./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.tsx"),
+				L = r("./src/reddit/constants/postLayout.ts"),
 				I = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				N = r("./src/reddit/helpers/styles/mixins/index.tsx"),
 				E = r("./src/reddit/selectors/commentSelector.ts"),
@@ -257,7 +257,7 @@
 					profileName: i,
 					allowModToolsUnderComments: c
 				} = e;
-				if (n === v.g.Compact) return a.a.createElement(P.a, e);
+				if (n === L.g.Compact) return a.a.createElement(P.a, e);
 				const {
 					height: d,
 					width: m,
@@ -265,7 +265,7 @@
 				} = e;
 				return a.a.createElement(M, l, s && a.a.createElement(w.a, {
 					isFirst: !0
-				}, n === v.g.Large ? a.a.createElement(T, S({}, e, {
+				}, n === L.g.Large ? a.a.createElement(T, S({}, e, {
 					availableWidth: m,
 					inSubredditOrProfile: !1,
 					isOverlay: !1
@@ -274,7 +274,7 @@
 					profileName: i
 				}))), a.a.createElement(w.a, {
 					isLast: o
-				}, a.a.createElement(L.a, {
+				}, a.a.createElement(v.a, {
 					commentId: r,
 					depth: t.parentId ? 1 : 0,
 					isFirst: !0,
@@ -300,11 +300,11 @@
 				J = r("./src/reddit/actions/comment/list.ts"),
 				H = r("./src/reddit/actions/post.ts"),
 				U = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				W = r("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				V = r("./src/reddit/helpers/trackers/post.ts"),
-				$ = r("./src/reddit/featureFlags/index.ts"),
-				Q = r("./src/reddit/selectors/comments.ts"),
-				X = r("./src/reddit/selectors/posts.ts"),
+				V = r("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				W = r("./src/reddit/helpers/trackers/post.ts"),
+				X = r("./src/reddit/featureFlags/index.ts"),
+				$ = r("./src/reddit/selectors/comments.ts"),
+				Q = r("./src/reddit/selectors/posts.ts"),
 				Z = r("./src/reddit/selectors/profileComments.ts"),
 				z = r("./src/reddit/selectors/subreddit.ts"),
 				Y = r("./src/reddit/selectors/tracking.ts"),
@@ -314,31 +314,31 @@
 					apiError: Z.a,
 					apiPending: Z.b,
 					currentUser: ee.i,
-					measureScrollFPS: $.d.measureScrollFPS,
+					measureScrollFPS: X.d.measureScrollFPS,
 					layout: I.O,
 					loadMore: Z.d,
 					subredditsById: z.ab,
 					viewportDataLoaded: Y.a,
-					commentsById: Q.q,
+					commentsById: $.q,
 					itemIds: Z.f,
 					itemIdToPostId: Z.e,
-					postsById: X.G,
+					postsById: Q.G,
 					estimateItemHeight: e => (e, t, r) => {
 						if (r) switch (t) {
-							case v.g.Medium:
+							case L.g.Medium:
 								return 174;
-							case v.g.Classic:
+							case L.g.Classic:
 								return 129;
-							case v.g.Compact:
+							case L.g.Compact:
 								return 120;
 							default:
 								return 140
 						}
 						switch (t) {
-							case v.g.Medium:
-							case v.g.Classic:
+							case L.g.Medium:
+							case L.g.Classic:
 								return 90;
-							case v.g.Compact:
+							case L.g.Compact:
 								return 80;
 							default:
 								return 90
@@ -360,8 +360,8 @@
 					...e,
 					...t,
 					...r,
-					postClickEventFactory: (e, t) => Object(V.f)(e, t),
-					postComponentForLayout: W.b
+					postClickEventFactory: (e, t) => Object(W.f)(e, t),
+					postComponentForLayout: V.b
 				}));
 
 			function ne() {
@@ -408,7 +408,7 @@
 					profileName: t.params.profileName
 				}), ee.J, (e, {
 					match: t
-				}) => Object(ee.e)(e, d.Wb + t.params.profileName), (e, t, r, s, o, n, a, i) => {
+				}) => Object(ee.e)(e, d.Xb + t.params.profileName), (e, t, r, s, o, n, a, i) => {
 					const {
 						sort: c,
 						t: d
@@ -478,7 +478,7 @@
 				const C = {
 					sort: p,
 					baseUrl: g,
-					sortOptions: d.ub,
+					sortOptions: d.vb,
 					timeSort: u
 				};
 				return a.a.createElement(pe.a, {
@@ -507,4 +507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.db1624aa214036ec16b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.7f554e9a9c0ac63e329f.js.map

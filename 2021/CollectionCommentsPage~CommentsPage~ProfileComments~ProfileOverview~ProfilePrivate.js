@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.faf4fb6f7f573a504a70.js
-// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.f4cc8a3a361b278e3a7a.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, o) {
@@ -2012,7 +2012,7 @@
 					let u, b;
 					if (this.state.mounted || p === i.a.Live) u = function(e, t, o) {
 						const n = Object(i.e)(e, t),
-							s = new Date(e * a.Hb);
+							s = new Date(e * a.Ib);
 						let c;
 						return n === i.a.Live || o ? r.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -3739,4 +3739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.faf4fb6f7f573a504a70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.f4cc8a3a361b278e3a7a.js.map

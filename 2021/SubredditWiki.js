@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.0c45e56053fd7e11551e.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f254bc8c51b3d8afd147.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -983,7 +983,7 @@
 						const {
 							pageName: t
 						} = e;
-						_ = t === o.Sb.WikiContributors, C = t === o.Sb.WikiBanned
+						_ = t === o.Tb.WikiContributors, C = t === o.Tb.WikiBanned
 					}
 					const O = r(),
 						I = (v || s) && !ze(O, d),
@@ -6266,7 +6266,7 @@
 				be = s.n(pe);
 			const he = 10,
 				ge = Object(c.a)((e, t) => t.subredditName, e => Object(O.a)(e, l.P.TOP, {
-					t: l.Ub.WEEK
+					t: l.Vb.WEEK
 				})),
 				xe = Object(c.c)({
 					discoveryUnit: e => Object(ue.c)(e, {
@@ -6344,7 +6344,7 @@
 					loadMorePosts: () => e(Object(j.r)({
 						sort: l.P.TOP,
 						subredditName: t,
-						t: l.Ub.WEEK
+						t: l.Vb.WEEK
 					}))
 				}))(Object(oe.c)(fe)),
 				ve = s("./src/config.ts"),
@@ -10257,4 +10257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.0c45e56053fd7e11551e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f254bc8c51b3d8afd147.js.map

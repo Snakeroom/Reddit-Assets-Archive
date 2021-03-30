@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.677f56a52500a614a84c.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0260b451f1fb4e669cc5.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2449,7 +2449,7 @@
 						type: e.type
 					} : {
 						id: Object(g.m)(d(), e.name),
-						name: `${s.Wb}${e.name}`,
+						name: `${s.Xb}${e.name}`,
 						type: e.type
 					});
 					if (!Object(j.J)(d())) return o(Object(c.k)({
@@ -3256,7 +3256,7 @@
 					let p, f;
 					if (this.state.mounted || m === o.a.Live) p = function(e, t, n) {
 						const r = Object(o.e)(e, t),
-							s = new Date(e * a.Hb);
+							s = new Date(e * a.Ib);
 						let d;
 						return r === o.a.Live || n ? i.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -5873,4 +5873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.677f56a52500a614a84c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0260b451f1fb4e669cc5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.fa7e56812086a0ba2f3b.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.b0b8f0467788fe61d843.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -434,7 +434,7 @@
 						})
 					}, n.a.createElement(m.a, {
 						onClick: this.onClick,
-						to: h(i, s, d.Nb.Relevance, d.Ub.DAY),
+						to: h(i, s, d.Ob.Relevance, d.Vb.DAY),
 						children: r
 					}))
 				}
@@ -2252,4 +2252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.fa7e56812086a0ba2f3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.b0b8f0467788fe61d843.js.map

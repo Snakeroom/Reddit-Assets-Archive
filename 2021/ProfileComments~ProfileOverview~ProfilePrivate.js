@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.bdc60b123802538e545d.js
-// Retrieved at 3/30/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1d4044c99720ef8f6b7a.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -50,10 +50,10 @@
 				T = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				R = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				A = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				D = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				F = s.n(D),
-				B = s("./src/reddit/components/ClassicPost/index.m.less"),
-				W = s.n(B);
+				F = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				B = s.n(F),
+				D = s("./src/reddit/components/ClassicPost/index.m.less"),
+				W = s.n(D);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -80,8 +80,8 @@
 						first: N,
 						flairStyleTemplate: L,
 						formatTitle: M,
-						hostPostId: D,
-						isActionBarAnimationEnabled: B,
+						hostPostId: F,
+						isActionBarAnimationEnabled: D,
 						isCheckboxSelected: z,
 						isCurrentUserProfilePost: q,
 						isFrontpage: $,
@@ -117,7 +117,7 @@
 					}, _e = Object(r.t)(ne, Z), {
 						source: Pe
 					} = _e, ke = o.a.createElement(g.a, {
-						className: Object(i.a)(F.a.classicPostStyles, W.a.postContainer, Object(A.a)(this.props), N ? W.a.mFirst : void 0, e),
+						className: Object(i.a)(B.a.classicPostStyles, W.a.postContainer, Object(A.a)(this.props), N ? W.a.mFirst : void 0, e),
 						isOverlay: J,
 						style: {
 							...Object(A.d)(this.props),
@@ -135,7 +135,7 @@
 						flairStyleTemplate: he,
 						redditStyle: re,
 						subreddit: le,
-						isActionBarAnimationEnabled: B,
+						isActionBarAnimationEnabled: D,
 						postId: oe
 					}), o.a.createElement(f.a, {
 						"data-click-id": "background",
@@ -215,8 +215,8 @@
 						hasModFlairPerms: ve,
 						hasModPostPerms: xe,
 						hasModFullPerms: fe,
-						hostPostId: D,
-						isActionBarAnimationEnabled: B,
+						hostPostId: F,
+						isActionBarAnimationEnabled: D,
 						isOverlay: !!J,
 						modModeEnabled: Y,
 						onIgnoreReports: ee,
@@ -435,9 +435,9 @@
 				T = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.tsx"),
 				R = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/RestrictedButton.tsx"),
 				A = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				D = s("./src/reddit/components/DistinguishCommentDropdown/index.tsx"),
-				F = s("./src/reddit/components/ModActionsMenu/index.tsx"),
-				B = s("./src/reddit/components/ModModeReports/helpers.ts"),
+				F = s("./src/reddit/components/DistinguishCommentDropdown/index.tsx"),
+				B = s("./src/reddit/components/ModActionsMenu/index.tsx"),
+				D = s("./src/reddit/components/ModModeReports/helpers.ts"),
 				W = s("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
 				V = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				U = s("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -480,7 +480,7 @@
 				_e = ge.a.wrapped(be.a, "SavedIcon", fe.a),
 				Pe = ge.a.wrapped(te.b, "OverflowMenu", fe.a),
 				ke = ge.a.wrapped(T.a, "ModToolsFlatlist", fe.a),
-				Ie = ge.a.wrapped(F.a, "ModActionsMenu", fe.a),
+				Ie = ge.a.wrapped(B.a, "ModActionsMenu", fe.a),
 				je = ge.a.wrapped(ie.b, "DropdownRow", fe.a),
 				Ne = ge.a.wrapped(de.a, "Flatlist", fe.a),
 				Le = ge.a.button("Button", fe.a),
@@ -489,7 +489,7 @@
 				Te = e => `Distinguish--Dropdown--${e}`,
 				Re = (e, t) => `${e}--${t}-overflow-menu`,
 				Ae = e => `View--Reports--${e}`,
-				De = Object(i.c)({
+				Fe = Object(i.c)({
 					activeTooltipId: Y.a,
 					isConfirmModalOpen: (e, {
 						comment: t
@@ -531,7 +531,7 @@
 					}),
 					reportingRevampEnabled: X.a
 				});
-			class Fe extends o.a.PureComponent {
+			class Be extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleDistinguishToggle = () => {
 						this.props.sendEvent(Object(ae.a)("mod_distinguish_menu", this.props.comment.id)), this.props.onToggleDistinguishDropdown()
@@ -587,8 +587,8 @@
 						comment: e,
 						modModeEnabled: t,
 						showModTools: s
-					} = this.props, n = Object(B.a)(e);
-					if (s && Object(B.c)(e) && !t) return o.a.createElement(R.a, {
+					} = this.props, n = Object(D.a)(e);
+					if (s && Object(D.c)(e) && !t) return o.a.createElement(R.a, {
 						text: `${n}`,
 						onClick: this.handleRestrictedButtonClick,
 						selected: this.props.activeTooltipId === Ae(e.id),
@@ -611,7 +611,7 @@
 					if (i && d && !e.bannedBy && (c || a && !n)) return o.a.createElement(R.a, {
 						onClick: this.handleDistinguishToggle,
 						selected: this.props.activeTooltipId === Te(e.id)
-					}, o.a.createElement(Ee.a, null), o.a.createElement(D.a, {
+					}, o.a.createElement(Ee.a, null), o.a.createElement(F.a, {
 						isAdminDistinguished: e.isAdmin,
 						isDropdownOpen: this.props.activeTooltipId === Te(e.id),
 						isModDistinguished: e.isMod,
@@ -705,7 +705,7 @@
 					}), this.renderModTools(), this.renderDistinguishDropdown()), this.props.reportFlowIsOpen && this.renderReportFlow())
 				}
 			}
-			var Be = Me(Object(r.b)(De, (e, {
+			var De = Me(Object(r.b)(Fe, (e, {
 					comment: t,
 					commentsPageKey: s
 				}) => ({
@@ -749,7 +749,7 @@
 						e(Object(q.a)(s)), e(Object(k.g)(o))
 					},
 					toggleDeleteCommentModal: () => e(Object(N.i)(Se(t.id)))
-				}))(Object(re.c)(Object(V.b)(Fe)))),
+				}))(Object(re.c)(Object(V.b)(Be)))),
 				We = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
 				Ve = s("./src/reddit/components/RichTextJson/index.tsx"),
 				Ue = s("./src/reddit/helpers/getRichTextContent/index.ts"),
@@ -792,9 +792,9 @@
 					flair: n,
 					renderedInOverlay: !1
 				}), o.a.createElement("div", null, !t.isDeleted && o.a.createElement(Ge, null, r ? l() : o.a.createElement(g, {
-					height: d.Jb,
+					height: d.Kb,
 					isExpanded: r
-				}, l)), !t.isDeleted && i && o.a.createElement(Be, {
+				}, l)), !t.isDeleted && i && o.a.createElement(De, {
 					comment: t,
 					commentsPageKey: s,
 					showModTools: c
@@ -855,10 +855,10 @@
 			var x = ({
 				className: e,
 				profileName: t,
-				timeSort: s = i.Ub.ALL
+				timeSort: s = i.Vb.ALL
 			}) => r.a.createElement(b, {
 				className: e
-			}, s === i.Ub.ALL ? n.fbt._("hmm... {profileName} hasn't commented on anything", [n.fbt._param("profileName", `u/${t}`)], {
+			}, s === i.Vb.ALL ? n.fbt._("hmm... {profileName} hasn't commented on anything", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "1MHn3t"
 			}) : n.fbt._("hmm... {profileName} hasn't commented recently", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "qN3uL"
@@ -866,10 +866,10 @@
 			var v = ({
 				className: e,
 				profileName: t,
-				timeSort: s = i.Ub.ALL
+				timeSort: s = i.Vb.ALL
 			}) => r.a.createElement(b, {
 				className: e
-			}, s === i.Ub.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", `u/${t}`)], {
+			}, s === i.Vb.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "28vBEd"
 			}) : n.fbt._("hmm... {profileName} hasn't posted recently", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "38GhqN"
@@ -1666,7 +1666,7 @@
 						className: I.a.dropdown,
 						isOpen: e,
 						tooltipId: S
-					}, D({
+					}, F({
 						profileName: n,
 						isOwnProfile: t,
 						routeName: o,
@@ -1730,7 +1730,7 @@
 				}) => {
 					const i = t ? [{
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.Saved,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.Saved,
 						key: "profile.mainmenu.saved",
 						text: n.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -1739,7 +1739,7 @@
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.Hidden,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: n.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -1748,7 +1748,7 @@
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.Upvoted,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: n.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -1757,7 +1757,7 @@
 					}, {
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.Downvoted,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: n.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -1767,7 +1767,7 @@
 					t ? (i.push({
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.ReceivedGildings,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: n.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -1776,7 +1776,7 @@
 					}), i.push({
 						hideOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.GivenGildings,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: n.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -1794,7 +1794,7 @@
 					});
 					const a = r ? [{
 						internal: !0,
-						isActive: s === p.Db.PROFILE_SNOOBUILDER,
+						isActive: s === p.Eb.PROFILE_SNOOBUILDER,
 						key: "profile.mainmenu.snoobuilder",
 						text: n.fbt._("Snoobuilder", null, {
 							hk: "3SSKff"
@@ -1803,7 +1803,7 @@
 					}] : [];
 					return [{
 						internal: !0,
-						isActive: s === p.Db.PROFILE_OVERVIEW,
+						isActive: s === p.Eb.PROFILE_OVERVIEW,
 						key: "profile.mainmenu.overview",
 						text: n.fbt._("Overview", null, {
 							hk: "2IBbqy"
@@ -1811,7 +1811,7 @@
 						url: `/user/${e}/`
 					}, {
 						internal: !0,
-						isActive: s === p.Db.PROFILE_POSTS,
+						isActive: s === p.Eb.PROFILE_POSTS,
 						key: "profile.mainmenu.posts",
 						text: n.fbt._("Posts", null, {
 							hk: "a1BoF"
@@ -1819,7 +1819,7 @@
 						url: `/user/${e}/posts/`
 					}, {
 						internal: !0,
-						isActive: s === p.Db.PROFILE_COMMENTS,
+						isActive: s === p.Eb.PROFILE_COMMENTS,
 						key: "profile.mainmenu.comments",
 						text: n.fbt._("Comments", null, {
 							hk: "2VwjOc"
@@ -1827,7 +1827,7 @@
 						url: `/user/${e}/comments/`
 					}, ...a, ...i]
 				},
-				D = ({
+				F = ({
 					profileName: e,
 					isOwnProfile: t,
 					routeName: s,
@@ -1836,7 +1836,7 @@
 					const r = t ? [{
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.Hidden,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.Hidden,
 						key: "profile.dropdownmenu.hidden",
 						text: n.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -1845,7 +1845,7 @@
 					}, {
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.Upvoted,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.Upvoted,
 						key: "profile.dropdownmenu.upvoted",
 						text: n.fbt._("Upvoted", null, {
 							hk: "J0TzC"
@@ -1854,7 +1854,7 @@
 					}, {
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.Downvoted,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.Downvoted,
 						key: "profile.dropdownmenu.downvoted",
 						text: n.fbt._("Downvoted", null, {
 							hk: "2sxum6"
@@ -1864,7 +1864,7 @@
 					return t ? (r.push({
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.ReceivedGildings,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.ReceivedGildings,
 						key: "profile.dropdownmenu.receiverGildings",
 						text: n.fbt._("Awards received", null, {
 							hk: "31obau"
@@ -1873,7 +1873,7 @@
 					}), r.push({
 						showOnNarrow: !0,
 						internal: !0,
-						isActive: s === p.Db.PROFILE_PRIVATE && o === y.a.GivenGildings,
+						isActive: s === p.Eb.PROFILE_PRIVATE && o === y.a.GivenGildings,
 						key: "profile.dropdownmenu.givenGildings",
 						text: n.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -2033,7 +2033,7 @@
 				}
 			}
 			b.defaultProps = {
-				minimizedLength: d.Ib
+				minimizedLength: d.Jb
 			}, t.a = b
 		},
 		"./src/reddit/components/SidebarProfileModeratedSubreddits/index.m.less": function(e, t, s) {
@@ -2706,4 +2706,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.bdc60b123802538e545d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1d4044c99720ef8f6b7a.js.map

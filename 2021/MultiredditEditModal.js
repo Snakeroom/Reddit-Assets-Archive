@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.3ca2a3c706ccc68ac7b4.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.301456bfa8847c63cec3.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -40,11 +40,11 @@
 			})), i.d(t, "duplicateFailure", (function() {
 				return B
 			})), i.d(t, "duplicatePending", (function() {
-				return $
-			})), i.d(t, "duplicateSuccess", (function() {
 				return V
-			})), i.d(t, "duplicateRequested", (function() {
+			})), i.d(t, "duplicateSuccess", (function() {
 				return X
+			})), i.d(t, "duplicateRequested", (function() {
+				return $
 			})), i.d(t, "addSubredditPending", (function() {
 				return Z
 			})), i.d(t, "addSubredditSuccess", (function() {
@@ -137,8 +137,8 @@
 								displayName: r.toLowerCase()
 							}
 						}).sort((e, t) => e.displayName.localeCompare(t.displayName)),
-						s = r.filter(e => !e.displayName.startsWith(a.Wb)).map(e => e.id),
-						n = r.filter(e => e.displayName.startsWith(a.Wb)).map(e => e.id);
+						s = r.filter(e => !e.displayName.startsWith(a.Xb)).map(e => e.id),
+						n = r.filter(e => e.displayName.startsWith(a.Xb)).map(e => e.id);
 					return {
 						created: e.created_utc,
 						description: e.description_md,
@@ -307,7 +307,7 @@
 						} = o,
 						y = Object(c.a)(h, u, x),
 						g = b.x in x && x[b.x].toUpperCase() || "",
-						O = a.Ub[g] || !1,
+						O = a.Vb[g] || !1,
 						j = Object(I.i)(r);
 					(f || j && j.displayText) && await e(Object(m.multiredditFeedRequested)(y, (f || j.displayText).toLowerCase(), p.toLowerCase(), {
 						...n()(x, b.l),
@@ -315,7 +315,7 @@
 						sort: u,
 						t: Object(M.a)(u, O)
 					}))
-				}, B = Object(l.a)(q.k), $ = Object(l.a)(q.l), V = Object(l.a)(q.m), X = ({
+				}, B = Object(l.a)(q.k), V = Object(l.a)(q.l), X = Object(l.a)(q.m), $ = ({
 					description: e,
 					displayName: t,
 					fromName: i,
@@ -327,7 +327,7 @@
 						m = Object(I.i)(c);
 					if (!m || !m.displayText) return;
 					const b = Object(T.h)((s || m.displayText).toLowerCase(), i.toLowerCase());
-					n($());
+					n(V());
 					const g = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(y.a)(`${e.apiUrl}/api/multi/copy`),
 						data: {
@@ -344,7 +344,7 @@
 					});
 					if (g.ok) {
 						const e = S(g.body.data);
-						n(Object(u.f)()), n(V({
+						n(Object(u.f)()), n(X({
 							multireddit: e,
 							multiredditsModelsState: c.multireddits.models,
 							userId: m.id
@@ -380,7 +380,7 @@
 					} = c;
 					if (!m) return;
 					const b = i.map(e => `/user/${m.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
-						g = `${"profile"===t.type?a.Wb:""}${t.name}`,
+						g = `${"profile"===t.type?a.Xb:""}${t.name}`,
 						O = await ((e, t, i) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(y.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
 							data: {
@@ -436,7 +436,7 @@
 					}));
 					const {
 						displayText: m
-					} = c, b = Object(T.h)(m, t), g = `${"profile"===s?a.Wb:""}${i}`, O = await ((e, t, i) => Object(f.a)(Object(h.a)(e, [x.a]), {
+					} = c, b = Object(T.h)(m, t), g = `${"profile"===s?a.Xb:""}${i}`, O = await ((e, t, i) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(y.a)(`${e.apiUrl}/api/multi${i}r/${t}`),
 						method: a.cb.DELETE
 					}))(o(), g, b);
@@ -690,7 +690,7 @@
 						v = f.listings.postOrder.api.error[y],
 						w = f.listings.postOrder.api.pending[y],
 						T = b.x in e.queryParams && e.queryParams[b.x].toUpperCase() || "",
-						E = T in c.Ub && c.Ub[T];
+						E = T in c.Vb && c.Vb[T];
 					if (w || O && !v && !t) return void(O && (i(u.l({
 						title: Object(_.f)(r(), m)
 					})), f.sidebarPromotedPosts.firstFetch || i(Object(k.b)(N.a.MULTIREDDIT))));
@@ -1543,4 +1543,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.3ca2a3c706ccc68ac7b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.301456bfa8847c63cec3.js.map

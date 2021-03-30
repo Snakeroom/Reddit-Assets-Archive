@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.e1de1de22134bacbb204.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.8b8f99e4a437b51b6063.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -24,13 +24,13 @@
 			})), r.d(t, "myMultiredditsPending", (function() {
 				return U
 			})), r.d(t, "myMultiredditsReceived", (function() {
-				return W
-			})), r.d(t, "myMultiredditsRequested", (function() {
 				return z
-			})), r.d(t, "createFailure", (function() {
+			})), r.d(t, "myMultiredditsRequested", (function() {
 				return A
-			})), r.d(t, "createPending", (function() {
+			})), r.d(t, "createFailure", (function() {
 				return H
+			})), r.d(t, "createPending", (function() {
+				return W
 			})), r.d(t, "createSuccess", (function() {
 				return K
 			})), r.d(t, "createRequested", (function() {
@@ -40,11 +40,11 @@
 			})), r.d(t, "duplicateFailure", (function() {
 				return Q
 			})), r.d(t, "duplicatePending", (function() {
-				return B
-			})), r.d(t, "duplicateSuccess", (function() {
 				return V
-			})), r.d(t, "duplicateRequested", (function() {
+			})), r.d(t, "duplicateSuccess", (function() {
 				return X
+			})), r.d(t, "duplicateRequested", (function() {
+				return B
 			})), r.d(t, "addSubredditPending", (function() {
 				return Y
 			})), r.d(t, "addSubredditSuccess", (function() {
@@ -137,8 +137,8 @@
 								displayName: i.toLowerCase()
 							}
 						}).sort((e, t) => e.displayName.localeCompare(t.displayName)),
-						s = i.filter(e => !e.displayName.startsWith(a.Wb)).map(e => e.id),
-						d = i.filter(e => e.displayName.startsWith(a.Wb)).map(e => e.id);
+						s = i.filter(e => !e.displayName.startsWith(a.Xb)).map(e => e.id),
+						d = i.filter(e => e.displayName.startsWith(a.Xb)).map(e => e.id);
 					return {
 						created: e.created_utc,
 						description: e.description_md,
@@ -222,7 +222,7 @@
 						...F.body,
 						...Object(C.a)(c, b, k)
 					}))
-				}, U = Object(c.a)(M.t), W = Object(c.a)(M.u), z = (e, t = !1) => async (r, i, {
+				}, U = Object(c.a)(M.t), z = Object(c.a)(M.u), A = (e, t = !1) => async (r, i, {
 					apiContext: s,
 					gqlContext: d
 				}) => {
@@ -239,12 +239,12 @@
 					if (a.ok) {
 						const e = a.body.data.identity.allMultireddits.edges.map(e => e.node),
 							t = Object(F.b)(e);
-						r(W({
+						r(z({
 							...t,
 							multiredditsModelsState: n.multireddits.models
 						}))
 					}
-				}, A = Object(c.a)(M.e), H = Object(c.a)(M.f), K = Object(c.a)(M.g), J = ({
+				}, H = Object(c.a)(M.e), W = Object(c.a)(M.f), K = Object(c.a)(M.g), J = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: r
@@ -254,7 +254,7 @@
 					const c = d(),
 						l = Object(q.i)(c);
 					if (!l) return;
-					s(H());
+					s(W());
 					const m = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi`),
 						data: {
@@ -285,7 +285,7 @@
 								hk: "258cY9"
 							})
 						}))
-					} else s(A(m.error))
+					} else s(H(m.error))
 				}, $ = () => async (e, t, {
 					apiContext: r
 				}) => {
@@ -307,7 +307,7 @@
 						} = o,
 						O = Object(l.a)(h, u, x),
 						g = b.x in x && x[b.x].toUpperCase() || "",
-						j = a.Ub[g] || !1,
+						j = a.Vb[g] || !1,
 						y = Object(q.i)(i);
 					(f || y && y.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || y.displayText).toLowerCase(), p.toLowerCase(), {
 						...d()(x, b.l),
@@ -315,7 +315,7 @@
 						sort: u,
 						t: Object(I.a)(u, j)
 					}))
-				}, Q = Object(c.a)(M.k), B = Object(c.a)(M.l), V = Object(c.a)(M.m), X = ({
+				}, Q = Object(c.a)(M.k), V = Object(c.a)(M.l), X = Object(c.a)(M.m), B = ({
 					description: e,
 					displayName: t,
 					fromName: r,
@@ -327,7 +327,7 @@
 						m = Object(q.i)(l);
 					if (!m || !m.displayText) return;
 					const b = Object(N.h)((s || m.displayText).toLowerCase(), r.toLowerCase());
-					d(B());
+					d(V());
 					const g = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi/copy`),
 						data: {
@@ -344,7 +344,7 @@
 					});
 					if (g.ok) {
 						const e = k(g.body.data);
-						d(Object(u.f)()), d(V({
+						d(Object(u.f)()), d(X({
 							multireddit: e,
 							multiredditsModelsState: l.multireddits.models,
 							userId: m.id
@@ -380,7 +380,7 @@
 					} = l;
 					if (!m) return;
 					const b = r.map(e => `/user/${m.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
-						g = `${"profile"===t.type?a.Wb:""}${t.name}`,
+						g = `${"profile"===t.type?a.Xb:""}${t.name}`,
 						j = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(O.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
 							data: {
@@ -436,7 +436,7 @@
 					}));
 					const {
 						displayText: m
-					} = l, b = Object(N.h)(m, t), g = `${"profile"===s?a.Wb:""}${r}`, j = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
+					} = l, b = Object(N.h)(m, t), g = `${"profile"===s?a.Xb:""}${r}`, j = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi${r}r/${t}`),
 						method: a.cb.DELETE
 					}))(o(), g, b);
@@ -690,7 +690,7 @@
 						C = f.listings.postOrder.api.error[O],
 						F = f.listings.postOrder.api.pending[O],
 						N = b.x in e.queryParams && e.queryParams[b.x].toUpperCase() || "",
-						T = N in l.Ub && l.Ub[N];
+						T = N in l.Vb && l.Vb[N];
 					if (F || j && !C && !t) return void(j && (r(u.l({
 						title: Object(_.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(S.b)(E.a.MULTIREDDIT))));
@@ -1277,4 +1277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.e1de1de22134bacbb204.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.8b8f99e4a437b51b6063.js.map

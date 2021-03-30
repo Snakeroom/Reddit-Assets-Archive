@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.06a70c1fa7dd69bf86b4.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.541a536f8edda2147b3b.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -839,7 +839,7 @@
 					apiContext: r
 				}) => {
 					const a = Object(m.a)(n()),
-						s = (null == a ? void 0 : a.pennies) || i.pb,
+						s = (null == a ? void 0 : a.pennies) || i.qb,
 						d = Object(u.c)(u.a.GoldPayment);
 					t(Object(l.stripeTokenPending)());
 					const h = await t(Object(l.validateAndCreateStripeToken)(e));
@@ -1361,7 +1361,7 @@
 					} = this.props;
 					return o.a.createElement("div", {
 						className: T.a.premiumPurchaseSelectPaymentFooter
-					}, n === d.yb && o.a.createElement(A, {
+					}, n === d.zb && o.a.createElement(A, {
 						buttonId: t,
 						className: T.a.premiumPurchaseButton,
 						customField: e,
@@ -1371,7 +1371,7 @@
 						title: E.fbt._("Continue to PayPal", null, {
 							hk: "2TCl83"
 						})
-					}), n === d.xb && o.a.createElement(B.i, {
+					}), n === d.yb && o.a.createElement(B.i, {
 						className: T.a.premiumPurchaseButton,
 						"data-redditstyle": !0,
 						disabled: r,
@@ -1382,7 +1382,7 @@
 				}
 			}
 			var L = Object(R.injectStripe)(Object(h.c)(F));
-			var U = e => o.a.createElement("div", {
+			var q = e => o.a.createElement("div", {
 				className: T.a.premiumPurchaseHeader,
 				style: {
 					backgroundImage: `url("${i.a.assetPath}/img/gold/premium-hero-g.jpg")`
@@ -1407,7 +1407,7 @@
 				className: T.a.closeIcon,
 				"data-redditstyle": !0
 			})));
-			var q = e => {
+			var U = e => {
 				const t = (e.total / 100).toLocaleString(),
 					n = e.isAnnualPremium ? E.fbt._("yearly", null, {
 						hk: "10Ao7X"
@@ -1421,7 +1421,7 @@
 					});
 				return o.a.createElement(R.StripeProvider, {
 					apiKey: i.a.stripe.apiKey
-				}, o.a.createElement(R.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(U, {
+				}, o.a.createElement(R.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(q, {
 					onCloseClick: e.onCloseModal,
 					userName: e.userName
 				}), o.a.createElement("div", {
@@ -1431,7 +1431,7 @@
 					nightmode: e.nightmode,
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected
-				}), e.selectedPayment === d.xb && o.a.createElement(M.a, {
+				}), e.selectedPayment === d.yb && o.a.createElement(M.a, {
 					className: T.a.creditCard
 				}), o.a.createElement("div", {
 					className: T.a.checkoutFooter
@@ -1439,16 +1439,16 @@
 					className: T.a.premiumPurchaseTotal
 				}, E.fbt._("Total: {Price}/{Membership Term}", [E.fbt._param("Price", `$${t}`), E.fbt._param("Membership Term", n)], {
 					hk: "1islUR"
-				})), e.selectedPayment === d.xb && o.a.createElement("a", {
+				})), e.selectedPayment === d.yb && o.a.createElement("a", {
 					href: "https://stripe.com",
 					target: "_blank",
 					rel: "noopener noreferrer"
 				}, o.a.createElement("img", {
 					className: T.a.poweredByStripeIcon,
 					src: `${i.a.assetPath}/img/payment-icons/powered-by-stripe.png`
-				}))), e.selectedPayment === d.yb && e.paypalErrorMessage && o.a.createElement("div", {
+				}))), e.selectedPayment === d.zb && e.paypalErrorMessage && o.a.createElement("div", {
 					className: T.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === d.xb && e.stripeErrorMessage && o.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === d.yb && e.stripeErrorMessage && o.a.createElement("div", {
 					className: T.a.errorMessage
 				}, e.stripeErrorMessage), o.a.createElement("div", {
 					className: T.a.membershipDescription
@@ -1553,7 +1553,7 @@
 					} = this.props;
 					return o.a.createElement("div", {
 						className: n
-					}, "selectPayment" === e && o.a.createElement(q, {
+					}, "selectPayment" === e && o.a.createElement(U, {
 						nightmode: r,
 						onCloseModal: l,
 						onCompletePurchaseClick: s,
@@ -1565,7 +1565,7 @@
 						stripeErrorMessage: m,
 						stripeTokenPending: h,
 						paypalErrorMessage: f,
-						total: t ? t.pennies : d.pb,
+						total: t ? t.pennies : d.qb,
 						userName: y
 					}), "paymentCompleted" === e && o.a.createElement(N, {
 						onCloseClick: l
@@ -1849,4 +1849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.06a70c1fa7dd69bf86b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.541a536f8edda2147b3b.js.map

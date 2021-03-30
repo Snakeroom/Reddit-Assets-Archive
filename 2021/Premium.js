@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.bf9c42c652afba274bf8.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.6d534f965355e4b65289.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -181,7 +181,7 @@
 					apiContext: n
 				}) => {
 					const i = Object(p.a)(a()),
-						s = (null == i ? void 0 : i.pennies) || o.pb,
+						s = (null == i ? void 0 : i.pennies) || o.qb,
 						m = Object(u.c)(u.a.GoldPayment);
 					t(Object(l.stripeTokenPending)());
 					const h = await t(Object(l.validateAndCreateStripeToken)(e));
@@ -1496,7 +1496,7 @@
 						sendEvent: n
 					} = this.props;
 					e.length || t || a(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const r = m.Db.PREMIUM;
+					const r = m.Eb.PREMIUM;
 					w.c.has(r) && (n(Object(E.n)(x.TimerType.InApp, w.c.end(r))), n(Object(E.m)())), Object(u.a)()
 				}
 				render() {
@@ -1661,7 +1661,7 @@
 						sendEvent: n
 					} = this.props;
 					e.length || t || a(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const r = m.Db.PREMIUM;
+					const r = m.Eb.PREMIUM;
 					w.c.has(r) && (n(Object(E.n)(x.TimerType.InApp, w.c.end(r))), n(Object(E.m)())), Object(u.a)()
 				}
 				render() {
@@ -1812,4 +1812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.bf9c42c652afba274bf8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.6d534f965355e4b65289.js.map

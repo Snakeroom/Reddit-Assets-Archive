@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.59b92e43ec625d4324f8.js
-// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e2090bfbe70d1588df0d.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1536,9 +1536,9 @@
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/constants/index.ts");
-			const s = [o.dc, o.hb, o.x, o.J, o.db, o.Hb],
+			const s = [o.ec, o.ib, o.x, o.J, o.db, o.Ib],
 				i = {
-					[o.Hb]: e => n.fbt._({
+					[o.Ib]: e => n.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [n.fbt._plural(e, "number")], {
@@ -1562,13 +1562,13 @@
 					}, [n.fbt._plural(e, "number")], {
 						hk: "3zIGRH"
 					}),
-					[o.hb]: e => n.fbt._({
+					[o.ib]: e => n.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[o.dc]: e => n.fbt._({
+					[o.ec]: e => n.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [n.fbt._plural(e, "number")], {
@@ -1576,7 +1576,7 @@
 					})
 				},
 				a = {
-					[o.Hb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
+					[o.Ib]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[o.db]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
@@ -1588,16 +1588,16 @@
 					[o.x]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
 					}),
-					[o.hb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[o.ib]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.dc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[o.ec]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
-					[o.hb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[o.ib]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.dc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[o.ec]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -1606,12 +1606,12 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[o.dc]: "",
-						[o.hb]: "",
+						[o.ec]: "",
+						[o.ib]: "",
 						[o.x]: "",
 						[o.J]: "",
 						[o.db]: "",
-						[o.Hb]: ""
+						[o.Ib]: ""
 					};
 				let u = d - c;
 				if (u <= 0) return n.fbt._("a moment", null, {
@@ -2568,7 +2568,7 @@
 						} = e.media;
 					if (!t || !r) return null;
 					switch (r) {
-						case k.ib.IMAGE:
+						case k.jb.IMAGE:
 							return s.a.createElement(A, {
 								src: t
 							});
@@ -3187,7 +3187,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, h = s.b(e), g = h ? Object(u.getAwardTypeFromAward)(h) : null, y = b ? g : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(m.a)(r) ? "comment" : "post" : void 0, _ = l || a.s(e), E = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === _)[0], O = t.offerContext || (h && 0 === h.coinPrice ? o.a.StorefrontFreeAward : Object(o.c)(E, b)), w = E ? Math.round(1e4 * (E.baselinePennies - E.pennies) / E.baselinePennies) / 100 : 0, x = E ? Math.round(1e4 * (E.coins - E.baselineCoins) / E.coins) / 100 : 0, S = E ? E.baselinePennies !== E.pennies ? `${w}_percent_price` : E.baselineCoins !== E.coins ? `${x}_percent_bonus` : void 0 : void 0, j = y === d.GoldPurchaseType.Premium ? n.pb : E ? E.pennies : void 0;
+					} = t, b = !!r, h = s.b(e), g = h ? Object(u.getAwardTypeFromAward)(h) : null, y = b ? g : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(m.a)(r) ? "comment" : "post" : void 0, _ = l || a.s(e), E = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === _)[0], O = t.offerContext || (h && 0 === h.coinPrice ? o.a.StorefrontFreeAward : Object(o.c)(E, b)), w = E ? Math.round(1e4 * (E.baselinePennies - E.pennies) / E.baselinePennies) / 100 : 0, x = E ? Math.round(1e4 * (E.coins - E.baselineCoins) / E.coins) / 100 : 0, S = E ? E.baselinePennies !== E.pennies ? `${w}_percent_price` : E.baselineCoins !== E.coins ? `${x}_percent_bonus` : void 0 : void 0, j = y === d.GoldPurchaseType.Premium ? n.qb : E ? E.pennies : void 0;
 					return {
 						...c.defaults(e),
 						comment: r ? c.comment(e, r) : null,
@@ -4357,4 +4357,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.59b92e43ec625d4324f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e2090bfbe70d1588df0d.js.map

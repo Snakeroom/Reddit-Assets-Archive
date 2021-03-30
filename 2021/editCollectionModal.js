@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.0f68afb2af4d67001c8f.js
-// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.384eb3f8ec7669dedf3b.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -161,8 +161,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = 10,
-				I = ({
+			const I = 10,
+				D = ({
 					label: e,
 					...t
 				}) => i.a.createElement("div", {
@@ -229,7 +229,7 @@
 					displayLayout: r
 				}) => i.a.createElement("div", {
 					className: O.a.editCollectionWrapper
-				}, i.a.createElement(I, {
+				}, i.a.createElement(D, {
 					label: s.fbt._("Title", null, {
 						hk: "1cdKLH"
 					}),
@@ -240,7 +240,7 @@
 					maxLength: v.e,
 					rows: 1,
 					value: a
-				}), i.a.createElement(I, {
+				}), i.a.createElement(D, {
 					label: s.fbt._("Description", null, {
 						hk: "iNZtt"
 					}),
@@ -426,7 +426,7 @@
 						disabled: !c || e
 					}, e ? i.a.createElement(f.a, {
 						className: O.a.loadingIcon,
-						sizePx: D
+						sizePx: I
 					}) : s.fbt._("Save", null, {
 						hk: "26UTYg"
 					}))))
@@ -506,7 +506,7 @@
 					let p, h;
 					if (this.state.mounted || m === o.a.Live) p = function(e, t, n) {
 						const s = Object(o.e)(e, t),
-							a = new Date(e * i.Hb);
+							a = new Date(e * i.Ib);
 						let d;
 						return s === o.a.Live || n ? r.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -1014,4 +1014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.0f68afb2af4d67001c8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.384eb3f8ec7669dedf3b.js.map

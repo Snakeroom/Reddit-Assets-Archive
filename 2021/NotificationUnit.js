@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.b5f733ecb1567bb0a5ee.js
-// Retrieved at 3/18/2021, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.46432ac5668433a91a85.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/index.tsx": function(e, t, a) {
@@ -100,8 +100,8 @@
 					fill: "inherit"
 				})), "NotifIcon", N.a),
 				C = r.a.wrapped(v, "NotifIcon", N.a),
-				H = r.a.wrapped(b, "NotifIcon", N.a),
-				y = r.a.wrapped(g, "NotifIcon", N.a),
+				y = r.a.wrapped(b, "NotifIcon", N.a),
+				H = r.a.wrapped(g, "NotifIcon", N.a),
 				S = r.a.wrapped(f, "NotifIcon", N.a),
 				U = `${o.a.assetPath}/img/cake_day.png`,
 				R = e => {
@@ -126,9 +126,9 @@
 							case h.b.SortRising:
 								return i.a.createElement(C, null);
 							case h.b.SortTop:
-								return i.a.createElement(H, null);
-							case h.b.Trophy:
 								return i.a.createElement(y, null);
+							case h.b.Trophy:
+								return i.a.createElement(H, null);
 							case h.b.Upvote:
 								return i.a.createElement(S, null);
 							default:
@@ -372,7 +372,7 @@
 						title: u
 					} = e, E = a || o || r || c, v = Object(l.a)(N.a.menuButton, {
 						[N.a.isOpen]: s
-					}), b = Date.parse(m) / le.Hb;
+					}), b = Date.parse(m) / le.Ib;
 					return i.a.createElement("span", {
 						className: N.a.topBar
 					}, i.a.createElement("span", null, i.a.createElement("span", {
@@ -422,7 +422,7 @@
 					readAt: O,
 					sentAt: M,
 					title: I
-				} = c, A = E && E.messageType, _ = E && E.comment && E.comment.parent && E.comment.parent.id, C = E && E.post && E.post.id, H = E && E.post, y = E && E.subreddit && E.subreddit.id, S = null == E ? void 0 : E.isBodyHidden, U = null == E ? void 0 : E.isPostHidden, k = !O, L = `notif-${r?"tooltip":""}-menu-${T}`, D = L === s, j = A === h.a.CommentReply ? _ : C, P = Object(l.a)(e.className, N.a.notificationItem, {
+				} = c, A = E && E.messageType, _ = E && E.comment && E.comment.parent && E.comment.parent.id, C = E && E.post && E.post.id, y = E && E.post, H = E && E.subreddit && E.subreddit.id, S = null == E ? void 0 : E.isBodyHidden, U = null == E ? void 0 : E.isPostHidden, k = !O, L = `notif-${r?"tooltip":""}-menu-${T}`, D = L === s, j = A === h.a.CommentReply ? _ : C, P = Object(l.a)(e.className, N.a.notificationItem, {
 					[N.a.unread]: k
 				}), B = {
 					id: T,
@@ -445,7 +445,7 @@
 				}, i.a.createElement(me.a, {
 					className: N.a.link,
 					onClick: e => {
-						(null == H ? void 0 : H.removedByCategory) ? (e.preventDefault(), a(Object(Ee.f)({
+						(null == y ? void 0 : y.removedByCategory) ? (e.preventDefault(), a(Object(Ee.f)({
 							kind: ve.b.Error,
 							text: "Sorry, this content is no longer available.",
 							duration: Ee.a
@@ -472,9 +472,9 @@
 					sentAt: M,
 					setActiveOverflowMenuId: d,
 					title: I
-				}), o && H && !U && i.a.createElement(ie, {
+				}), o && y && !U && i.a.createElement(ie, {
 					isUnread: k,
-					post: H
+					post: y
 				}), o && !S && i.a.createElement("span", {
 					className: N.a.body
 				}, u), !o && i.a.createElement("span", {
@@ -492,14 +492,14 @@
 					},
 					hideSubredditNotifications: () => {
 						const t = pe.b.HideSubreddit;
-						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideSubredditNotifications(y, () => F(t)), z(t)
+						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideSubredditNotifications(H, () => F(t)), z(t)
 					},
 					isInTooltip: r,
 					isHideNotifEligible: b,
 					isOpen: D,
 					isToggleMessageTypeEligible: !(!g || !A),
 					isToggleNotificationUpdateEligible: f,
-					isToggleUpdateFromSubredditEligible: !(!w || !y),
+					isToggleUpdateFromSubredditEligible: !(!w || !H),
 					sendInboxViewOverflow: () => t(Object(pe.o)(B)),
 					tooltipId: L
 				}), i.a.createElement(n.a, {
@@ -691,4 +691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.b5f733ecb1567bb0a5ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.46432ac5668433a91a85.js.map

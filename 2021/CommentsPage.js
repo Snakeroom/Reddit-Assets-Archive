@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.528e947b034f94f54617.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.2370c467fbd640771357.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1004,7 +1004,7 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: m
 									},
-									range: h.Ub.WEEK.toUpperCase(),
+									range: h.Vb.WEEK.toUpperCase(),
 									sort: h.I.TOP,
 									subredditName: i.name
 								},
@@ -5787,7 +5787,7 @@
 					}, m.a.createElement(E.a, {
 						className: R.a.seeMorePostsText,
 						to: Object(p.a)(y, {
-							type: b.Pb.Posts
+							type: b.Qb.Posts
 						})
 					}, D._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -6029,7 +6029,7 @@
 				}));
 			class H extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.P.TOP, t, e, l.Ub.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.P.TOP, t, e, l.Vb.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(k.c)("recommended_footer"))
 					}
 				}
@@ -6040,7 +6040,7 @@
 						subredditOrProfile: s
 					} = this.props;
 					return e && t && t.id ? Object(p.a)(t.id) : Object(u.a)(s.name, l.P.TOP, {
-						t: l.Ub.WEEK
+						t: l.Vb.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -7299,7 +7299,7 @@
 							this.props.isOverlay || Object(O.d)(O.c.CommentsPage, o)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
-						v.Cb.includes(e) && Object(Ke.a)(e)
+						v.Db.includes(e) && Object(Ke.a)(e)
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
@@ -8060,4 +8060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.528e947b034f94f54617.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.2370c467fbd640771357.js.map

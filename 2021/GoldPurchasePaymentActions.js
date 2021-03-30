@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.a8edba3c4f258908a44e.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.a06e53c84d0f919ce8db.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
@@ -134,7 +134,7 @@
 					apiContext: n
 				}) => {
 					const o = Object(b.a)(r()),
-						c = (null == o ? void 0 : o.pennies) || i.pb,
+						c = (null == o ? void 0 : o.pennies) || i.qb,
 						u = Object(l.c)(l.a.GoldPayment);
 					t(Object(s.stripeTokenPending)());
 					const m = await t(Object(s.validateAndCreateStripeToken)(e));
@@ -333,4 +333,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.a8edba3c4f258908a44e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.a06e53c84d0f919ce8db.js.map

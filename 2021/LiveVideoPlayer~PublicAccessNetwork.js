@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.c7cefee3b4aaba5c85c4.js
-// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.efaf0704b7679c757023.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -602,7 +602,7 @@
 					userId: t
 				} = e, {
 					processingAvatarImageUrl: s
-				} = r.a, n = (e => e.replace(c.zb.Account + "_", ""))(t), {
+				} = r.a, n = (e => e.replace(c.Ab.Account + "_", ""))(t), {
 					avatar: a,
 					color: o
 				} = (e => {
@@ -1231,8 +1231,8 @@
 				L = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				T = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Remove/index.tsx"),
-				D = s("./src/reddit/icons/svgs/Report/index.tsx"),
-				A = s("./src/reddit/icons/svgs/Rules/index.tsx"),
+				A = s("./src/reddit/icons/svgs/Report/index.tsx"),
+				D = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
 				P = s("./src/reddit/models/Vote/index.ts"),
 				V = s("./src/reddit/selectors/subreddit.ts"),
@@ -1409,7 +1409,7 @@
 				iconWrapperClassName: H.a.overflowItemIconWrapper,
 				key: `${ne}-rules`,
 				onClick: () => Object(c.d)(l.S, c.c.BLANK)
-			}, n.a.createElement(A.a, {
+			}, n.a.createElement(D.a, {
 				className: H.a.overflowItemIcon
 			})), n.a.createElement(f.b, {
 				className: H.a.overflowItem,
@@ -1459,7 +1459,7 @@
 				iconWrapperClassName: H.a.overflowItemIconWrapper,
 				key: `${ne}-report`,
 				onClick: s
-			}, n.a.createElement(D.a, {
+			}, n.a.createElement(A.a, {
 				className: H.a.overflowItemIcon
 			})), n.a.createElement(f.b, {
 				className: H.a.overflowItem,
@@ -1918,9 +1918,9 @@
 			})), s.d(t, "d", (function() {
 				return R
 			})), s.d(t, "e", (function() {
-				return D
-			})), s.d(t, "v", (function() {
 				return A
+			})), s.d(t, "v", (function() {
+				return D
 			})), s.d(t, "E", (function() {
 				return M
 			})), s.d(t, "f", (function() {
@@ -2179,14 +2179,14 @@
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				D = (e, t) => s => ({
+				A = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: c(s, e, t),
 					...i(s, e)
 				}),
-				A = (e, t) => s => ({
+				D = (e, t) => s => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
@@ -2448,9 +2448,9 @@
 			})), s.d(t, "h", (function() {
 				return R
 			})), s.d(t, "k", (function() {
-				return D
-			})), s.d(t, "c", (function() {
 				return A
+			})), s.d(t, "c", (function() {
+				return D
 			})), s.d(t, "f", (function() {
 				return M
 			})), s.d(t, "a", (function() {
@@ -2605,8 +2605,8 @@
 				}),
 				T = Object(n.a)(Object(r.a)(O, x, (e, t) => e ? t[e] : void 0)),
 				R = Object(n.a)(Object(r.a)(j, x, (e, t) => e ? t[e] : void 0)),
-				D = Object(n.a)(Object(r.a)(L, x, (e, t) => e ? t[e] : void 0)),
-				A = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
+				A = Object(n.a)(Object(r.a)(L, x, (e, t) => e ? t[e] : void 0)),
+				D = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
 				})))), Object(r.a)(O, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
@@ -2664,4 +2664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.c7cefee3b4aaba5c85c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.efaf0704b7679c757023.js.map

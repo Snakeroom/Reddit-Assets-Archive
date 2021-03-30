@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.bde4bb2bc5df63064cad.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.e4cb50766754332160d8.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown", "GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -475,7 +475,7 @@
 					apiContext: n
 				}) => {
 					const a = Object(b.a)(r()),
-						s = (null == a ? void 0 : a.pennies) || i.pb,
+						s = (null == a ? void 0 : a.pennies) || i.qb,
 						l = Object(m.c)(m.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const p = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -807,7 +807,7 @@
 							sendEvent: o
 						} = this.props;
 						t && t(), o(l.c());
-						const a = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === P.Db.PREMIUM;
+						const a = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === P.Eb.PREMIUM;
 						r(this.correlationId, a)
 					}, this.handleClickFreeAward = () => {
 						const {
@@ -1651,4 +1651,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.bde4bb2bc5df63064cad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.e4cb50766754332160d8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.8545c1675a2047fc4d28.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.6e2703aeafd204123bdc.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -97,7 +97,7 @@
 					} = e, [r, c] = Object(a.useState)([0, 0]), [i, l] = Object(a.useState)([]), [d, m] = Object(a.useState)(!1), u = Object(a.useCallback)(async () => {
 						m(!0), setTimeout(() => {
 							m(!1)
-						}, 10 * g.Hb);
+						}, 10 * g.Ib);
 						const e = await (e => Object(v.a)(Object(O.a)(e, [x.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
 							method: g.cb.GET
@@ -159,10 +159,10 @@
 				P = () => s.fbt._("Sorry, this username is taken. Try another.", null, {
 					hk: "2HkykK"
 				}),
-				H = () => s.fbt._("Username must be between 3 and 20 characters.", null, {
+				J = () => s.fbt._("Username must be between 3 and 20 characters.", null, {
 					hk: "1V72yV"
 				}),
-				J = () => s.fbt._("Sorry, something went wrong. Try again later.", null, {
+				H = () => s.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "48Ga9f"
 				}),
 				V = {
@@ -176,7 +176,7 @@
 			class Y extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = V, this.checkUsername = async e => e.length < L || e.length > Q ? {
-						error: H(),
+						error: J(),
 						state: C.a.Invalid
 					} : e === this.props.initialUsername ? F : await this.validateUsername(e), this.validateUsername = async e => {
 						const {
@@ -191,7 +191,7 @@
 							error: s.error.fields[0].msg,
 							state: C.a.Invalid
 						} : {
-							error: J(),
+							error: H(),
 							state: C.a.Invalid
 						}
 					}, this.callCheckUsername = async e => {
@@ -821,4 +821,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.8545c1675a2047fc4d28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.6e2703aeafd204123bdc.js.map

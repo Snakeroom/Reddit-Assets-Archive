@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.fd18b0de9fdd84472de2.js
-// Retrieved at 3/24/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.012d130eaa978408913c.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1095,7 +1095,7 @@
 						subredditChannelCount: t || 0,
 						subredditMentionCount: n || 0
 					} : await p(o, r)) && !c()(o.messages.unread, i) && await a(m(i))
-				}, o.Hb, {
+				}, o.Ib, {
 					leading: !0
 				})
 		},
@@ -1668,7 +1668,7 @@
 				o = "TOAST__UPDATE_TOAST",
 				i = Object(a.a)(o),
 				l = e => async (t, n) => {
-					setTimeout(() => t(c()), e * s.Hb)
+					setTimeout(() => t(c()), e * s.Ib)
 				}
 		},
 		"./src/chat/actions/tooltip.ts": function(e, t, n) {
@@ -2420,7 +2420,7 @@
 					t(f(e)), (e => {
 						if (!m(e)) {
 							const t = [...Object(l.a)("chat.promo") || [], e];
-							Object(l.c)("chat.promo", t, d.dc)
+							Object(l.c)("chat.promo", t, d.ec)
 						}
 					})(e)
 				};
@@ -4272,7 +4272,7 @@
 				constructor(e) {
 					super(e), this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = jr()((e = "") => {
 						this.props.fetchSubredditChannelUsers(e)
-					}, d.Hb, {
+					}, d.Ib, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -9488,7 +9488,7 @@
 							const t = e.getState();
 							e.dispatch(Object(d.sizeChanged)(h.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === o.Db.CHAT_MINIMIZE && e.dispatch(Object(l.N)());
+							a && a.meta && a.meta.name === o.Eb.CHAT_MINIMIZE && e.dispatch(Object(l.N)());
 							const {
 								action: s,
 								noun: r,
@@ -9568,7 +9568,7 @@
 					const n = e(t);
 					switch (t.type) {
 						case r.a:
-							Object(a.c)(o, t.payload.channelId, s.hb)
+							Object(a.c)(o, t.payload.channelId, s.ib)
 					}
 					return n
 				}
@@ -9633,7 +9633,7 @@
 			const E = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === p.a.MINIMIZED || n === p.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === r.Db.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === r.Db.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === r.Eb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === r.Eb.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -9653,7 +9653,7 @@
 					})(n) : s()(() => e.dispatch(Object(d.m)()))
 				};
 				let a;
-				Object(g.a)(e.getState()) === r.Db.CHAT_MINIMIZE ? s()(async () => {
+				Object(g.a)(e.getState()) === r.Eb.CHAT_MINIMIZE ? s()(async () => {
 					E(e.getState()) ? n() : (await e.dispatch(Object(d.m)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.b)()))
 				}) : n();
 				return i => f => {
@@ -9900,7 +9900,7 @@
 			let l, d;
 			const u = s()(e => {
 				Object(o.c)(l, e, 5 * i.db)
-			}, 5 * i.Hb, {
+			}, 5 * i.Ib, {
 				leading: !1,
 				trailing: !0
 			});
@@ -10148,7 +10148,7 @@
 						userId: r
 					} = e, {
 						processingAvatarImageUrl: o
-					} = a.a, l = (e => e.replace(i.zb.Account + "_", ""))(r), {
+					} = a.a, l = (e => e.replace(i.Ab.Account + "_", ""))(r), {
 						avatar: d,
 						color: u
 					} = (e => {
@@ -10367,7 +10367,7 @@
 
 			function c(e) {
 				if (e.contact_account_id || e.id) return {
-					id: e.contact_account_id || `${a.zb.Account}_${e.id}`,
+					id: e.contact_account_id || `${a.Ab.Account}_${e.id}`,
 					name: e.name,
 					lastInteraction: e.last_interaction,
 					created: e.created_utc,
@@ -10714,7 +10714,7 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/convertToCamelCase/index.ts");
-			const r = `${a.zb.Account}_`,
+			const r = `${a.Ab.Account}_`,
 				c = e => {
 					const t = {};
 					for (const n in e) t[n] = o({
@@ -12164,7 +12164,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Db.CHAT
+						name: s.Eb.CHAT
 					},
 					path: "/chat/"
 				},
@@ -12195,7 +12195,7 @@
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.Db.CHAT_EMPTY
+						name: s.Eb.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -12226,7 +12226,7 @@
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.Db.CHAT_MINIMIZE
+						name: s.Eb.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
@@ -12237,7 +12237,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Db.CHAT
+						name: s.Eb.CHAT
 					},
 					path: m
 				},
@@ -12248,7 +12248,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Db.CHAT
+						name: s.Eb.CHAT
 					},
 					path: b
 				};
@@ -12262,7 +12262,7 @@
 				chunk: a.p.CHAT,
 				exact: !0,
 				meta: {
-					name: a.Db.CHAT
+					name: a.Eb.CHAT
 				},
 				path: "/chat/*"
 			};
@@ -12653,7 +12653,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(v.h)(t)), this.dispatch(Object(_.e)({
 							toast: w.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Hb);
+						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Ib);
 						this.dispatch(Object(E.s)(!0)), this.dispatch(Object(u.D)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
@@ -14498,4 +14498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.fd18b0de9fdd84472de2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.012d130eaa978408913c.js.map

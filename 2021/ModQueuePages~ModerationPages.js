@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.ab5d16b19a8427bcc1ee.js
-// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.bb674e9bdf81387066d0.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, o) {
@@ -340,8 +340,8 @@
 				T = Object(i.a)(O.n),
 				w = Object(i.a)(O.m),
 				y = Object(i.a)(O.l),
-				j = Object(i.a)(O.q),
-				P = Object(i.a)(O.p),
+				P = Object(i.a)(O.q),
+				j = Object(i.a)(O.p),
 				M = Object(i.a)(O.o),
 				A = Object(i.a)(O.w),
 				N = Object(i.a)(O.v),
@@ -351,19 +351,19 @@
 				}) => {
 					let l, m, p;
 					switch (t) {
-						case n.jb.Edited:
+						case n.kb.Edited:
 							l = E, m = R, p = _;
 							break;
-						case n.jb.Modqueue:
+						case n.kb.Modqueue:
 							l = I, m = k, p = S;
 							break;
-						case n.jb.Reports:
+						case n.kb.Reports:
 							l = T, m = y, p = w;
 							break;
-						case n.jb.Spam:
-							l = j, m = M, p = P;
+						case n.kb.Spam:
+							l = P, m = M, p = j;
 							break;
-						case n.jb.Unmoderated:
+						case n.kb.Unmoderated:
 							l = A, m = L, p = N;
 							break;
 						default:
@@ -822,8 +822,8 @@
 				T = o("./src/reddit/actions/bulkActions/index.ts"),
 				w = o("./src/reddit/actions/comment/index.ts"),
 				y = o("./src/reddit/actions/comment/authoring.ts"),
-				j = o("./src/reddit/actions/comment/moderation.ts"),
-				P = o("./src/reddit/actions/modal.ts"),
+				P = o("./src/reddit/actions/comment/moderation.ts"),
+				j = o("./src/reddit/actions/modal.ts"),
 				M = o("./src/reddit/actions/post.ts"),
 				A = o("./src/reddit/actions/toaster.ts"),
 				N = o("./src/reddit/constants/modals.ts"),
@@ -951,7 +951,7 @@
 					i.features.removalReasons.reasonOrder[e] && i.features.removalReasons.reasonOrder[e].length > 0 || o(ee(e)), o(ue({
 						subredditId: e,
 						itemIds: t
-					})), o(Object(P.i)(N.a.ADD_REMOVAL_REASON))
+					})), o(Object(j.i)(N.a.ADD_REMOVAL_REASON))
 				}, be = Object(E.a)("REMOVALREASONS__SUBMIT_PENDING"), fe = Object(E.a)("REMOVALREASONS__SUBMIT_SUCCESS"), Ce = Object(E.a)("REMOVALREASONS__SUBMIT_FAILED"), xe = Object(E.a)("REMOVALREASONS__MESSAGE_PENDING"), ge = Object(E.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), ve = Object(E.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), Oe = Object(E.a)("REMOVALREASONS__MESSAGE_FAILED"), Ie = (e, t, o, s, n) => async (i, r, {
 					apiContext: a
 				}) => {
@@ -1010,7 +1010,7 @@
 												draftKey: o
 											}));
 											const s = d.postStickiedComments.data[l];
-											i(Object(j.f)({
+											i(Object(P.f)({
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: n
@@ -1225,8 +1225,8 @@
 				T = o("./src/reddit/icons/svgs/Show/index.tsx"),
 				w = o("./src/reddit/components/Comments/Comment/ModToolsFlatlist/RestrictedButton.tsx"),
 				y = o("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.m.less"),
-				j = o.n(y);
-			const P = Object(f.t)(),
+				P = o.n(y);
+			const j = Object(f.t)(),
 				M = e => `Distinguish--Dropdown--${e}`,
 				A = Object(a.c)({
 					currentUser: I.i,
@@ -1261,7 +1261,7 @@
 						tooltipId: M(t.id)
 					}))
 				}));
-			t.a = P(N(l.a.wrapped(Object(b.c)(({
+			t.a = j(N(l.a.wrapped(Object(b.c)(({
 				className: e,
 				comment: t,
 				currentUser: o,
@@ -1279,7 +1279,7 @@
 				sendEvent: I,
 				...y
 			}) => {
-				const P = Object(C.a)(a),
+				const j = Object(C.a)(a),
 					A = Object(h.b)(t),
 					N = t.isApproved && A,
 					L = !!o && o.isEmployee,
@@ -1298,7 +1298,7 @@
 						m(), V("approve")
 					}
 				}, i.a.createElement(S.a, {
-					className: j.a.icon
+					className: P.a.icon
 				})), D && i.a.createElement(i.a.Fragment, null, i.a.createElement(w.a, {
 					text: t.bannedBy === c.k ? s.fbt._("Confirm Removal", null, {
 						hk: "3JozXJ"
@@ -1309,7 +1309,7 @@
 						f(), t.bannedBy === c.k ? V("confirm_remove") : V("remove")
 					}
 				}, i.a.createElement(_.a, {
-					className: j.a.icon
+					className: P.a.icon
 				})), i.a.createElement(w.a, {
 					text: s.fbt._("Spam", null, {
 						hk: "1jEVwZ"
@@ -1318,7 +1318,7 @@
 						v(), V("spam")
 					}
 				}, i.a.createElement(R.a, {
-					className: j.a.icon
+					className: P.a.icon
 				}))), i.a.createElement(w.a, {
 					text: t.isLocked ? s.fbt._("Unlock", null, {
 						hk: "KGYeO"
@@ -1329,10 +1329,10 @@
 						b(), V(t.isLocked ? "unlock" : "lock")
 					}
 				}, i.a.createElement(E.a, {
-					className: j.a.icon
+					className: P.a.icon
 				})), n && !L && !t.bannedBy && i.a.createElement(w.a, {
 					className: Object(d.a)({
-						[j.a.selected]: y.isDistinguishDropdownOpen
+						[P.a.selected]: y.isDistinguishDropdownOpen
 					}),
 					onClick: () => {
 						V("mod_distinguish_menu"), O()
@@ -1344,7 +1344,7 @@
 					isStickied: t.isStickied,
 					isTopLevelComment: !t.parentId,
 					isUserEmployee: L,
-					isUserMod: P,
+					isUserMod: j,
 					onDistinguishComment: p,
 					sendEventWithName: V,
 					tooltipId: M(t.id)
@@ -1356,9 +1356,9 @@
 						g()
 					}
 				}, i.a.createElement(T.a, {
-					className: Object(d.a)(j.a.icon, j.a.Show)
+					className: Object(d.a)(P.a.icon, P.a.Show)
 				})))
-			}), "CommentModToolsFlatlist", j.a)))
+			}), "CommentModToolsFlatlist", P.a)))
 		},
 		"./src/reddit/components/Comments/Comment/TopMeta/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -1453,8 +1453,8 @@
 				T = o("./src/reddit/selectors/economics.ts"),
 				w = o("./src/reddit/helpers/isRemoved.ts"),
 				y = o("./src/reddit/helpers/modTooltipTemplates/index.ts"),
-				j = o("./src/reddit/helpers/showReportIndicator/index.ts"),
-				P = o("./src/reddit/actions/comment/index.ts"),
+				P = o("./src/reddit/helpers/showReportIndicator/index.ts"),
+				j = o("./src/reddit/actions/comment/index.ts"),
 				M = o("./src/reddit/models/AutomatedReporting/index.ts"),
 				A = o("./src/reddit/models/Comment/index.ts"),
 				N = o("./src/reddit/models/Flair/index.ts"),
@@ -1531,10 +1531,10 @@
 				ye = () => s.fbt._("Reddit contractor", null, {
 					hk: "3APwEh"
 				}),
-				je = () => s.fbt._("Powerups Top Supporter", null, {
+				Pe = () => s.fbt._("Powerups Top Supporter", null, {
 					hk: "1GLWsz"
 				}),
-				Pe = Object(r.b)(() => Object(a.c)({
+				je = Object(r.b)(() => Object(a.c)({
 					adminTooltipId: ke("CommentTopMeta--Admin--"),
 					cakedayTooltipId: ke("CommentTopMeta--cakeday--"),
 					adminEmeritusTooltipId: ke("CommentTopMeta--AdEm--"),
@@ -1569,9 +1569,9 @@
 					onCreatedClick: () => {
 						window.addEventListener("focus", (function o() {
 							((e, t, o) => {
-								window.removeEventListener("focus", o), e(Object(P.f)({
+								window.removeEventListener("focus", o), e(Object(j.f)({
 									commentListNodeId: t
-								})), window.setTimeout(() => e(Object(P.f)({
+								})), window.setTimeout(() => e(Object(j.f)({
 									commentListNodeId: t
 								})), 5e3)
 							})(e, t.comment.id, o)
@@ -1586,7 +1586,7 @@
 						o.e("removalReasonActions").then(o.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(o => e(o.fetchReasonsAndOpenModal(t.comment.subredditId, [t.comment.id])))
 					}
 				}));
-			t.a = Pe(e => {
+			t.a = je(e => {
 				const {
 					adminEmeritusTooltipId: t,
 					adminTooltipId: o,
@@ -1607,8 +1607,8 @@
 					isAvatarsInCommentsEnabled: T,
 					isInIcons2020: w,
 					isLivestreaming: y,
-					ignoreFlairPosition: j,
-					ignoreLock: P,
+					ignoreFlairPosition: P,
+					ignoreLock: j,
 					lockedTooltipId: M,
 					modTooltipId: L,
 					onHideTooltip: D,
@@ -1635,7 +1635,7 @@
 						[$.a.collapsed]: l
 					})
 				}));
-				const Y = !j && k === N.b.Left;
+				const Y = !P && k === N.b.Left;
 				return i.a.createElement("div", {
 					className: Object(p.a)(c, $.a.container, {
 						[$.a.collapsed]: l,
@@ -1714,7 +1714,7 @@
 					comment: h,
 					approveTooltipId: s,
 					automodTooltipId: n,
-					ignoreLock: P,
+					ignoreLock: j,
 					lockedTooltipId: M,
 					onHideTooltip: D,
 					onShowTooltip: F,
@@ -1898,18 +1898,18 @@
 						name: "powerup",
 						isFilled: !0,
 						className: $.a.TopSupporterIcon,
-						"aria-label": je(),
+						"aria-label": Pe(),
 						id: o.topSupporterTooltipId,
 						onMouseEnter: this.onShowTopSupporterTooltip,
 						onMouseLeave: o.onHideTooltip,
 						onClick: o.openPowerupsModal
 					}) : i.a.createElement(ae, {
-						desc: je(),
+						desc: Pe(),
 						id: o.topSupporterTooltipId,
 						onMouseEnter: this.onShowTopSupporterTooltip,
 						onMouseLeave: o.onHideTooltip,
 						onClick: o.openPowerupsModal
-					})), o.renderTopSupporterBadge && Ue(o.topSupporterTooltipId, je()))
+					})), o.renderTopSupporterBadge && Ue(o.topSupporterTooltipId, Pe()))
 				}
 			}
 			class Be extends i.a.PureComponent {
@@ -1979,13 +1979,13 @@
 						key: o.automodTooltipId,
 						onMouseEnter: this.onShowAutomodTooltip,
 						onMouseLeave: o.onHideTooltip
-					})), ("AutoModerator" === e.bannedBy || "AutoModerator" === e.approvedBy) && Ue(o.automodTooltipId, y.b), Object(j.a)(e) && i.a.createElement(me, {
+					})), ("AutoModerator" === e.bannedBy || "AutoModerator" === e.approvedBy) && Ue(o.automodTooltipId, y.b), Object(P.a)(e) && i.a.createElement(me, {
 						desc: Object(y.d)(e.numReports),
 						id: o.reportTooltipId,
 						onMouseEnter: this.onShowReportTooltip,
 						onMouseLeave: o.onHideTooltip,
 						isFilled: t
-					}), Object(j.a)(e) && Ue(o.reportTooltipId, Object(y.d)(e.numReports)), r && i.a.createElement(Ie, null, s.fbt._("• Removed by the Automated {filterName}", [s.fbt._param("filterName", r)], {
+					}), Object(P.a)(e) && Ue(o.reportTooltipId, Object(y.d)(e.numReports)), r && i.a.createElement(Ie, null, s.fbt._("• Removed by the Automated {filterName}", [s.fbt._param("filterName", r)], {
 						hk: "3C408F"
 					})))
 				}
@@ -2053,13 +2053,13 @@
 				T = E.a.div("CommentContentWrapper", k.a),
 				w = E.a.div("CommentBody", k.a),
 				y = E.a.div("ParentPostTitle", k.a),
-				j = E.a.div("CommentParentWrapper", k.a),
-				P = Object(r.c)({
+				P = E.a.div("CommentParentWrapper", k.a),
+				j = Object(r.c)({
 					comment: (e, t) => Object(O.a)(e, t),
 					flair: v.e,
 					subreddit: I.I
 				}),
-				M = Object(i.b)(P, (e, {
+				M = Object(i.b)(j, (e, {
 					commentId: t,
 					trackClick: o
 				}) => ({
@@ -2097,7 +2097,7 @@
 					isCheckboxSelected: r,
 					toggleCheckbox: O,
 					subreddit: g
-				}), n.a.createElement(_, null, n.a.createElement(R, null, n.a.createElement(j, null, o.postTitle && n.a.createElement(y, null, o.postTitle), o.postAuthor && n.a.createElement(h.a, {
+				}), n.a.createElement(_, null, n.a.createElement(R, null, n.a.createElement(P, null, o.postTitle && n.a.createElement(y, null, o.postTitle), o.postAuthor && n.a.createElement(h.a, {
 					comment: o
 				})), n.a.createElement(T, null, n.a.createElement(p.a, {
 					comment: o
@@ -2876,7 +2876,7 @@
 				}
 			}
 			var y = o("./src/reddit/components/Scroller/getDocumentTop.ts");
-			class j {
+			class P {
 				constructor({
 					top: e,
 					height: t,
@@ -2903,19 +2903,19 @@
 					return e.bottom < this.top
 				}
 			}
-			const P = ({
+			const j = ({
 				buffer: e,
 				container: t
 			} = {}) => {
 				const o = r()(e) ? 1e3 : e;
 				if ("undefined" != typeof window && t) {
 					const e = t === document ? Object(y.a)() : t.scrollTop;
-					return new j({
+					return new P({
 						top: e,
 						height: window.innerHeight
 					})
 				}
-				return new j({
+				return new P({
 					top: 0,
 					height: o
 				})
@@ -3089,7 +3089,7 @@
 						}
 						const o = t.offsetTop + this.parentOffsetTop,
 							s = t.getBoundingClientRect().height,
-							n = new j({
+							n = new P({
 								top: o,
 								height: s,
 								heightWithSuffix: `${s}px`
@@ -3339,19 +3339,19 @@
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
-						this.viewport = P({
+						this.viewport = j({
 							buffer: 0,
 							container: this.scrollContainer
 						});
 						const {
 							viewportTopPadding: e = 0
 						} = this.props, t = window.innerHeight - e, o = 2 * t;
-						this.mountableViewport = new j({
+						this.mountableViewport = new P({
 							top: this.viewport.top - o,
 							height: this.viewport.height + 2 * o
 						});
 						const s = 4 * t;
-						this.renderableViewport = new j({
+						this.renderableViewport = new P({
 							top: this.viewport.top - s,
 							height: this.viewport.height + 2 * s
 						})
@@ -4185,4 +4185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.ab5d16b19a8427bcc1ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.bb674e9bdf81387066d0.js.map

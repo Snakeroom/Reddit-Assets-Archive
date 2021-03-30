@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.95d6f179717ef75b0fcf.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.e1ad2e399a9759fa8608.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -239,19 +239,19 @@
 				}) => {
 					let u, m, l;
 					switch (t) {
-						case n.jb.Edited:
+						case n.kb.Edited:
 							u = k, m = y, l = g;
 							break;
-						case n.jb.Modqueue:
+						case n.kb.Modqueue:
 							u = h, m = v, l = A;
 							break;
-						case n.jb.Reports:
+						case n.kb.Reports:
 							u = I, m = L, l = N;
 							break;
-						case n.jb.Spam:
+						case n.kb.Spam:
 							u = x, m = P, l = C;
 							break;
-						case n.jb.Unmoderated:
+						case n.kb.Unmoderated:
 							u = M, m = T, l = D;
 							break;
 						default:
@@ -1072,4 +1072,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.95d6f179717ef75b0fcf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.e1ad2e399a9759fa8608.js.map

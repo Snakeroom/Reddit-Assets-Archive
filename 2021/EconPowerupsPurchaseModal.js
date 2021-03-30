@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.48e023003dbddcd3ea87.js
-// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c4db38a524b4acad096e.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -744,8 +744,8 @@
 				_ = r.n(v),
 				C = r("./src/graphql/operations/CancelEconRecurringPayment.json"),
 				P = r("./src/graphql/operations/ConfirmPaypalPayment.json"),
-				x = r("./src/graphql/operations/CreateEconOrder.json"),
-				j = r("./src/graphql/operations/CreatePaypalPayment.json"),
+				j = r("./src/graphql/operations/CreateEconOrder.json"),
+				x = r("./src/graphql/operations/CreatePaypalPayment.json"),
 				O = r("./src/graphql/operations/CreateStripePaymentWithProvidedCard.json"),
 				k = r("./src/graphql/operations/CreateStripePaymentWithProvidedNonAuthCard.json"),
 				S = r("./src/graphql/operations/CreateStripePaymentWithSavedCard.json"),
@@ -763,7 +763,7 @@
 						l = await ((e, t, r, n, o) => {
 							const a = new _.a(r.pricePackages[0].price).multipliedBy(n).toFixed();
 							return Object(T.a)(e, {
-								...x,
+								...j,
 								variables: {
 									input: {
 										nonce: t,
@@ -879,7 +879,7 @@
 							}),
 							p = c()(),
 							m = await ((e, t, r, n, o) => Object(T.a)(e, {
-								...j,
+								...x,
 								variables: {
 									nonce: t,
 									orderId: r,
@@ -979,7 +979,7 @@
 					} catch (o) {
 						m.c.captureException(o)
 					}
-				}, V = Object(p.a)(h.N), U = Object(p.a)(h.O), z = Object(p.a)(h.P), W = e => async (t, r) => {
+				}, V = Object(p.a)(h.N), z = Object(p.a)(h.O), U = Object(p.a)(h.P), W = e => async (t, r) => {
 					await t(V(e)), t(Object(d.f)({
 						kind: f.b.Error,
 						duration: d.a,
@@ -988,7 +988,7 @@
 				}, H = (e, t, r) => async (o, a, {
 					gqlContext: s
 				}) => {
-					o(U({
+					o(z({
 						subredditId: t,
 						allocatedAt: r
 					}));
@@ -1005,7 +1005,7 @@
 									errors: n
 								} = e.data.cancelEconRecurringPayment;
 							if (n && n.length) return void o(W(n[0].message));
-							o(z({
+							o(U({
 								subredditId: t,
 								allocatedAt: r
 							}))
@@ -1068,7 +1068,7 @@
 			})), r.d(t, "savedCardsSuccess", (function() {
 				return P
 			})), r.d(t, "loadSavedCards", (function() {
-				return x
+				return j
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/sentry/index.ts"),
@@ -1114,7 +1114,7 @@
 					} catch (a) {
 						o.c.captureException(a)
 					}
-				}, C = Object(a.a)(c.y), P = Object(a.a)(c.z), x = () => async (e, t, {
+				}, C = Object(a.a)(c.y), P = Object(a.a)(c.z), j = () => async (e, t, {
 					apiContext: r
 				}) => {
 					e(C());
@@ -1424,8 +1424,8 @@
 				_ = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				C = r("./src/reddit/selectors/gold/powerups.ts"),
 				P = r("./src/reddit/selectors/gold/productOffers.ts"),
-				x = r("./src/reddit/selectors/goldPurchaseModals.ts"),
-				j = r("./src/reddit/selectors/user.ts"),
+				j = r("./src/reddit/selectors/goldPurchaseModals.ts"),
+				x = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
 				k = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				S = r("./src/reddit/components/StripePaymentForm/index.tsx"),
@@ -1436,7 +1436,7 @@
 			const {
 				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), L = Object(s.c)({
-				currentUser: j.i,
+				currentUser: x.i,
 				isAnonymous: C.c,
 				powerupsCount: C.d,
 				productOffer: P.a
@@ -1499,8 +1499,8 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = Object(s.c)({
 				isAnonymous: C.c,
 				isPending: C.b
-			}), U = Object(a.b)(V), z = 12;
-			var W = U((function(e) {
+			}), z = Object(a.b)(V), U = 12;
+			var W = z((function(e) {
 					const {
 						className: t,
 						isAnonymous: r,
@@ -1515,7 +1515,7 @@
 						disabled: n
 					}, n ? o.a.createElement(A.a, {
 						className: B.a.loadingIcon,
-						sizePx: z
+						sizePx: U
 					}) : D._("Apply Your Free Powerup", null, {
 						hk: "fwfCU"
 					}))
@@ -1631,8 +1631,8 @@
 				isAnonymous: C.c,
 				powerupsCount: C.d,
 				productOffer: P.a,
-				savedCardsPending: x.v,
-				stripeTokenPending: x.m
+				savedCardsPending: j.v,
+				stripeTokenPending: j.m
 			}), ce = Object(a.b)(se);
 			var ie = Object(h.injectStripe)(ce((function(e) {
 					const {
@@ -1661,8 +1661,8 @@
 				fbt: ue
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), pe = 100, me = Object(s.c)({
 				isAnonymous: C.c,
-				isNightmode: j.V,
-				paypalErrorMessage: x.d,
+				isNightmode: x.V,
+				paypalErrorMessage: j.d,
 				powerups: C.i,
 				powerupsCount: C.d,
 				productOffer: (e, {
@@ -1674,7 +1674,7 @@
 					});
 					return r && r[0]
 				},
-				stripeErrorMessage: x.j,
+				stripeErrorMessage: j.j,
 				userPowerupsData: C.s
 			});
 			var fe = Object(a.b)(me)((function(e) {
@@ -1689,17 +1689,17 @@
 						stripeErrorMessage: u,
 						subredditId: p,
 						userPowerupsData: m
-					} = e, _ = Object(a.d)(), [C, P] = Object(n.useState)(b.yb);
+					} = e, _ = Object(a.d)(), [C, P] = Object(n.useState)(b.zb);
 					Object(n.useEffect)(() => {
 						_(Object(w.d)()), _(Object(v.selectPaymentMethod)(C))
 					}, []);
-					const x = Object(y.a)();
+					const j = Object(y.a)();
 					Object(n.useEffect)(() => {
-						x(Object(g.d)())
+						j(Object(g.d)())
 					}, []);
-					const j = d && d.pricePackages.length ? d.pricePackages[0].price : 0;
-					if (!j || !i) return s(), null;
-					const T = (l * j / 100).toFixed(2),
+					const x = d && d.pricePackages.length ? d.pricePackages[0].price : 0;
+					if (!x || !i) return s(), null;
+					const T = (l * x / 100).toFixed(2),
 						I = !!(null == m ? void 0 : m.freeCount);
 					return o.a.createElement(h.StripeProvider, {
 						apiKey: f.a.stripe.apiKey
@@ -1736,18 +1736,18 @@
 						onPaymentSelected: e => {
 							P(e), _(Object(v.selectPaymentMethod)(e))
 						}
-					}), C === b.xb && u && o.a.createElement("div", {
+					}), C === b.yb && u && o.a.createElement("div", {
 						className: de.a.errorMessage
-					}, u), C === b.yb && c && o.a.createElement("div", {
+					}, u), C === b.zb && c && o.a.createElement("div", {
 						className: de.a.errorMessage
-					}, c), C === b.xb && o.a.createElement(S.a, {
+					}, c), C === b.yb && o.a.createElement(S.a, {
 						nightmode: r,
 						className: de.a.stripeForm,
 						shouldDeleteCardWithGql: !0
-					}), C === b.yb && o.a.createElement(q, {
+					}), C === b.zb && o.a.createElement(q, {
 						className: de.a.button,
 						subredditId: p
-					}), C === b.xb && o.a.createElement(ie, {
+					}), C === b.yb && o.a.createElement(ie, {
 						className: de.a.button,
 						subredditId: p
 					})), I && o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
@@ -2088,12 +2088,12 @@
 				_ = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				C = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				P = r("./src/reddit/selectors/goldPurchaseModals.ts");
-			const x = Object(s.c)({
+			const j = Object(s.c)({
 					rememberCard: P.u,
 					savedCard: e => Object(P.w)(e)[0],
 					stripeInfoLoading: P.v
 				}),
-				j = Object(a.b)(x, (e, t) => ({
+				x = Object(a.b)(j, (e, t) => ({
 					onClickDeleteCard: r => t.shouldDeleteCardWithGql ? e(Object(v.c)(r)) : e(Object(_.deleteSavedCard)(r)),
 					onToggleRememberCard: () => e(Object(_.toggleRememberCard)())
 				}));
@@ -2123,7 +2123,7 @@
 					}))
 				}
 			}
-			t.a = j(O)
+			t.a = x(O)
 		},
 		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2440,4 +2440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.48e023003dbddcd3ea87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c4db38a524b4acad096e.js.map

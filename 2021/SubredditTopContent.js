@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.75913f0da191bd54ca76.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.07dec84838e7470efd50.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -102,9 +102,9 @@
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/constants/index.ts");
-			const r = [a.dc, a.hb, a.x, a.J, a.db, a.Hb],
+			const r = [a.ec, a.ib, a.x, a.J, a.db, a.Ib],
 				i = {
-					[a.Hb]: e => n.fbt._({
+					[a.Ib]: e => n.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [n.fbt._plural(e, "number")], {
@@ -128,13 +128,13 @@
 					}, [n.fbt._plural(e, "number")], {
 						hk: "3zIGRH"
 					}),
-					[a.hb]: e => n.fbt._({
+					[a.ib]: e => n.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[a.dc]: e => n.fbt._({
+					[a.ec]: e => n.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [n.fbt._plural(e, "number")], {
@@ -142,7 +142,7 @@
 					})
 				},
 				o = {
-					[a.Hb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
+					[a.Ib]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[a.db]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
@@ -154,16 +154,16 @@
 					[a.x]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
 					}),
-					[a.hb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[a.ib]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[a.dc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[a.ec]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
-					[a.hb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[a.ib]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[a.dc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[a.ec]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -172,12 +172,12 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[a.dc]: "",
-						[a.hb]: "",
+						[a.ec]: "",
+						[a.ib]: "",
 						[a.x]: "",
 						[a.J]: "",
 						[a.db]: "",
-						[a.Hb]: ""
+						[a.Ib]: ""
 					};
 				let m = l - c;
 				if (m <= 0) return n.fbt._("a moment", null, {
@@ -1989,4 +1989,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.75913f0da191bd54ca76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.07dec84838e7470efd50.js.map

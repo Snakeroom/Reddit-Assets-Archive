@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.1e30d4370d77438263a2.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.98832b45ae7baed18b30.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1946,7 +1946,7 @@
 						userId: l.authorId
 					}), [R, l.authorId]), Z = Object(a.e)($), se = Object(s.useCallback)(e => Object(J.d)(e, {
 						subredditId: R
-					}), [R]), ae = Object(a.e)(se), oe = Object(f.a)(X), ie = Object(f.a)(X), de = d && d.meta && d.meta.name === i.Db.COMMENTS, ce = Object(h.a)(l), le = ae === D.b.Left, ue = l.authorIsContractor && !!N && N.type === z.e.EmployeesOnly, me = !!N && Z, pe = !r && !de, he = () => n.a.createElement(te, {
+					}), [R]), ae = Object(a.e)(se), oe = Object(f.a)(X), ie = Object(f.a)(X), de = d && d.meta && d.meta.name === i.Eb.COMMENTS, ce = Object(h.a)(l), le = ae === D.b.Left, ue = l.authorIsContractor && !!N && N.type === z.e.EmployeesOnly, me = !!N && Z, pe = !r && !de, he = () => n.a.createElement(te, {
 						className: e.metaSeparatorClassName
 					}, "•"), be = n.a.createElement(n.a.Fragment, null, !ce && n.a.createElement(re, {
 						style: {
@@ -3170,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.1e30d4370d77438263a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.98832b45ae7baed18b30.js.map

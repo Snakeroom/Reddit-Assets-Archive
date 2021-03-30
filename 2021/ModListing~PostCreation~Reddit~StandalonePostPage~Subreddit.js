@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.ae691473d9bd7213aecb.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.6b8c34922f1d33396f71.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, i) {
@@ -738,15 +738,15 @@
 			}(o || (o = {}));
 			var c = i("./src/lib/constants/index.ts"),
 				d = i("./src/reddit/helpers/postCollection.ts");
-			const u = [c.Db.COMMENTS, c.Db.COLLECTION_COMMENTS],
+			const u = [c.Eb.COMMENTS, c.Eb.COLLECTION_COMMENTS],
 				f = (e, t) => {
 					if (!e) return [];
 					const i = u.includes(e),
-						o = e === c.Db.COLLECTION_COMMENTS || t && Object(d.a)(t),
+						o = e === c.Eb.COLLECTION_COMMENTS || t && Object(d.a)(t),
 						r = c.O.has(e),
-						l = c.tb.has(e),
-						s = e === c.Db.SUBREDDIT,
-						a = e === c.Db.TOPIC;
+						l = c.ub.has(e),
+						s = e === c.Eb.SUBREDDIT,
+						a = e === c.Eb.TOPIC;
 					let f, p, _;
 					return r && !s || l ? f = n.HeaderSelector : o ? f = n.Collection : i ? f = n.PostComments : a && (f = n.TopicHeader), (r || l || o || i) && (p = n.Widget), (r || i) && (_ = n.PostItem), [f, p, _]
 				};
@@ -2735,4 +2735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.ae691473d9bd7213aecb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.6b8c34922f1d33396f71.js.map

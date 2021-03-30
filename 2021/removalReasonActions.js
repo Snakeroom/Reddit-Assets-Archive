@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.e3441b84990a95722df8.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.b462603712d4b7b7e34e.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -232,7 +232,7 @@
 						});
 						u(Object(m.u)(o, O.a.CommentSubmitted))
 					} else {
-						g.error && g.error.type === o.Ab && N.g(y, se(r), e);
+						g.error && g.error.type === o.Bb && N.g(y, se(r), e);
 						const t = g.error && g.error.fields && g.error.fields[0] ? g.error.fields[0].msg : s.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -299,7 +299,7 @@
 						depth: d + 1
 					}));
 					else {
-						if (j.error && j.error.type === o.Ab) {
+						if (j.error && j.error.type === o.Bb) {
 							const e = Object(B.a)(l, {
 								commentId: r
 							});
@@ -2789,4 +2789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.e3441b84990a95722df8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.b462603712d4b7b7e34e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e51502a55b4f0cf0dd47.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.eb30941bbe996fa01b18.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -941,9 +941,9 @@
 				R = r("./src/reddit/components/UserIcon/index.tsx"),
 				B = r("./src/reddit/controls/InternalLink/index.tsx"),
 				F = r("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
-				D = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx"),
-				W = r("./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less"),
-				U = r.n(W);
+				W = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx"),
+				D = r("./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less"),
+				U = r.n(D);
 			var M = function(e) {
 					var t, r;
 					const {
@@ -961,7 +961,7 @@
 					if (!d) return null;
 					const c = null === (t = null == o ? void 0 : o.icon) || void 0 === t ? void 0 : t.url,
 						l = !!(null === (r = null == o ? void 0 : o.profile) || void 0 === r ? void 0 : r.isNsfw),
-						u = a === T.b ? F.a : a < T.c ? y.a : D.a,
+						u = a === T.b ? F.a : a < T.c ? y.a : W.a,
 						m = s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 							className: U.a.userIconContainer
 						}, s.a.createElement(R.a, {
@@ -1208,7 +1208,7 @@
 						return e.sidebarPromotedPosts.models[Object(f.a)(r, s, n)]
 					},
 					pending: e => !e.sidebarPromotedPosts.firstFetch,
-					isSubredditOrCommentsPage: e => Object(v.p)(e) === E.Db.SUBREDDIT || Object(v.p)(e) === E.Db.COMMENTS
+					isSubredditOrCommentsPage: e => Object(v.p)(e) === E.Eb.SUBREDDIT || Object(v.p)(e) === E.Eb.COMMENTS
 				}),
 				S = Object(l.b)(I),
 				C = O.a.wrapped(p.a, "BannerAd", w.a),
@@ -1231,7 +1231,7 @@
 					img: "/img/house-ads/castiron.png",
 					href: "/r/castiron"
 				}],
-				D = Object(x.c)(class extends c.a.Component {
+				W = Object(x.c)(class extends c.a.Component {
 					shouldComponentUpdate(e, t) {
 						const {
 							className: r,
@@ -1266,7 +1266,7 @@
 						})))
 					}
 				});
-			class W extends c.a.Component {
+			class D extends c.a.Component {
 				constructor(e) {
 					super(e), this.incrementRefreshCounter = this.incrementRefreshCounter.bind(this), this.state = {
 						refreshCount: 0
@@ -1304,7 +1304,7 @@
 						redditStyle: m
 					}, c.a.createElement(L, {
 						"data-before-content": A
-					}))) : b ? c.a.createElement(D, {
+					}))) : b ? c.a.createElement(W, {
 						className: e,
 						redditStyle: m,
 						placement: d,
@@ -1339,7 +1339,7 @@
 					})))
 				}
 			}
-			t.a = S(W)
+			t.a = S(D)
 		},
 		"./src/reddit/components/SubredditNav/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1524,8 +1524,8 @@
 				R = r("./src/reddit/contexts/PageLayer/selectors.ts"),
 				B = r("./src/reddit/helpers/trackers/predictions.ts"),
 				F = r("./src/reddit/hooks/usePageLayer.ts"),
-				D = r("./src/reddit/hooks/useTracking.ts"),
-				W = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				W = r("./src/reddit/hooks/useTracking.ts"),
+				D = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				U = r("./src/reddit/selectors/subreddit.ts");
 			const {
 				fbt: M
@@ -1536,7 +1536,7 @@
 			}) {
 				const t = Object(i.d)(),
 					r = Object(F.a)(),
-					a = Object(D.a)(),
+					a = Object(W.a)(),
 					o = Object(R.L)(r),
 					[d, c] = Object(n.useState)(!1),
 					l = Object(i.e)(t => Object(U.T)(t, {
@@ -1545,7 +1545,7 @@
 					u = Object(i.e)(t => Object(U.N)(t, {
 						subredditId: e
 					})),
-					m = Object(i.e)(t => Object(W.d)(t, {
+					m = Object(i.e)(t => Object(D.d)(t, {
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
@@ -1567,7 +1567,7 @@
 				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const K = Object(d.t)(),
-				z = [H.Db.SUBREDDIT, H.Db.COMMENTS, H.Db.COLLECTION_COMMENTS],
+				z = [H.Eb.SUBREDDIT, H.Eb.COMMENTS, H.Eb.COLLECTION_COMMENTS],
 				Y = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && z.indexOf(t.pageLayer.meta.name) > -1,
@@ -1643,7 +1643,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, i = !!n && !!n.meta && n.meta.name === H.Db.SUBREDDIT_WIKI, a = `wiki/${ne.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!n && !!n.meta && n.meta.name === H.Eb.SUBREDDIT_WIKI, a = `wiki/${ne.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(k, {
 					isActive: i,
 					isTopBannerVariant: r,
@@ -2164,8 +2164,8 @@
 				},
 				B = m.a.wrapped(o.a, "RawHTMLDisplay", P.a),
 				F = m.a.div("EventContainer", P.a),
-				D = m.a.div("EventTitle", P.a),
-				W = m.a.div("EventDate", P.a),
+				W = m.a.div("EventTitle", P.a),
+				D = m.a.div("EventDate", P.a),
 				U = m.a.div("EventLocation", P.a),
 				M = m.a.div("EventDescription", P.a),
 				V = m.a.wrapped(j.a, "ToggleDescription", P.a);
@@ -2198,9 +2198,9 @@
 					widgetKind: e.widget.kind
 				}, e.widget.data.map((t, r) => s.a.createElement(F, {
 					key: `${r}-${t.title}`
-				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(B, {
+				}, s.a.createElement(W, null, t.titleHtml ? s.a.createElement(B, {
 					html: t.titleHtml
-				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(W, null, Object(C.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
+				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(D, null, Object(C.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
 					const t = new Date(1e3 * e),
 						r = t.getHours(),
 						n = t.getMinutes();
@@ -3156,4 +3156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e51502a55b4f0cf0dd47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.eb30941bbe996fa01b18.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4f8ea958aa7e135b3ecb.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f811adb36e21f0c05d09.js
+// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -479,7 +479,7 @@
 										benefit: O.a.HdVideo
 									}),
 									u = c ? 2 * i.Y : i.Y;
-								if (e.size > u) return K(i.ac);
+								if (e.size > u) return K(i.bc);
 								let p;
 								try {
 									p = await Object(b.h)(a, !0)
@@ -511,8 +511,14 @@
 									});
 									return K(i.M, t)
 								}
-								if (p.height < i.fb || p.width < i.gb) {
-									const t = o.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [o.fbt._param("min_video_width", i.gb.toString()), o.fbt._param("min_video_height", i.fb.toString())], {
+								if (p.duration < i.fb) {
+									const t = o.fbt._("Video is too short. Minimum video length is {duration} seconds.", [o.fbt._param("duration", i.fb.toString())], {
+										hk: "49PSW8"
+									});
+									return K(i.M, t)
+								}
+								if (p.height < i.gb || p.width < i.hb) {
+									const t = o.fbt._("Videos must be {min_video_width}x{min_video_height} pixels or larger.", [o.fbt._param("min_video_width", i.hb.toString()), o.fbt._param("min_video_height", i.gb.toString())], {
 										hk: "2HSUGl"
 									});
 									return K(i.M, t)
@@ -8528,4 +8534,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4f8ea958aa7e135b3ecb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.f811adb36e21f0c05d09.js.map
