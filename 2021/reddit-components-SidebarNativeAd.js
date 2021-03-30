@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e2090bfbe70d1588df0d.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5a9636cc625cd1be75b8.js
+// Retrieved at 3/30/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -478,17 +478,17 @@
 				x = "left",
 				S = "auto",
 				j = [E, O, w, x],
-				C = "start",
-				k = "end",
+				k = "start",
+				C = "end",
 				I = "clippingParents",
 				T = "viewport",
 				P = "popper",
 				A = "reference",
 				M = j.reduce((function(e, t) {
-					return e.concat([t + "-" + C, t + "-" + k])
+					return e.concat([t + "-" + k, t + "-" + C])
 				}), []),
 				N = [].concat(j, [S]).reduce((function(e, t) {
-					return e.concat([t, t + "-" + C, t + "-" + k])
+					return e.concat([t, t + "-" + k, t + "-" + C])
 				}), []),
 				L = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
@@ -704,10 +704,10 @@
 				if (null != d) {
 					var l = "y" === d ? "height" : "width";
 					switch (i) {
-						case C:
+						case k:
 							t[d] = Math.floor(t[d]) - Math.floor(r[l] / 2 - n[l] / 2);
 							break;
-						case k:
+						case C:
 							t[d] = Math.floor(t[d]) + Math.ceil(r[l] / 2 - n[l] / 2)
 					}
 				}
@@ -885,21 +885,21 @@
 					_ = e.elements.reference,
 					x = e.rects.popper,
 					S = e.elements[b ? v : m],
-					C = ee(a(S) ? S : S.contextElement || l(e.elements.popper), c, u),
-					k = o(_),
+					k = ee(a(S) ? S : S.contextElement || l(e.elements.popper), c, u),
+					C = o(_),
 					M = W({
-						reference: k,
+						reference: C,
 						element: x,
 						strategy: "absolute",
 						placement: s
 					}),
 					N = J(Object.assign(Object.assign({}, x), M)),
-					L = m === P ? N : k,
+					L = m === P ? N : C,
 					R = {
-						top: C.top - L.top + y.top,
-						bottom: L.bottom - C.bottom + y.bottom,
-						left: C.left - L.left + y.left,
-						right: L.right - C.right + y.right
+						top: k.top - L.top + y.top,
+						bottom: L.bottom - k.bottom + y.bottom,
+						left: k.left - L.left + y.left,
+						right: L.right - k.right + y.right
 					},
 					D = e.modifiersData.offset;
 				if (m === P && D) {
@@ -1132,10 +1132,10 @@
 											flipVariations: f,
 											allowedAutoPlacements: b
 										}) : r)
-									}), []), _ = t.rects.reference, k = t.rects.popper, I = new Map, T = !0, P = v[0], A = 0; A < v.length; A++) {
+									}), []), _ = t.rects.reference, C = t.rects.popper, I = new Map, T = !0, P = v[0], A = 0; A < v.length; A++) {
 									var L = v[A],
 										R = G(L),
-										D = z(L) === C,
+										D = z(L) === k,
 										F = [E, O].indexOf(R) >= 0,
 										B = F ? "width" : "height",
 										U = ne(t, {
@@ -1146,7 +1146,7 @@
 											padding: d
 										}),
 										V = F ? D ? w : x : D ? O : E;
-									_[B] > k[B] && (V = K(V));
+									_[B] > C[B] && (V = K(V));
 									var W = K(V),
 										H = [];
 									if (s && H.push(U[R] <= 0), a && H.push(U[V] <= 0, U[W] <= 0), H.every((function(e) {
@@ -1206,7 +1206,7 @@
 								v = z(t.placement),
 								S = !v,
 								j = V(y),
-								k = "x" === j ? "y" : "x",
+								C = "x" === j ? "y" : "x",
 								I = t.modifiersData.popperOffsets,
 								T = t.rects.reference,
 								P = t.rects.popper,
@@ -1226,8 +1226,8 @@
 										F = I[j] + g[N],
 										B = I[j] - g[L],
 										U = m ? -P[R] / 2 : 0,
-										W = v === C ? T[R] : P[R],
-										H = v === C ? -P[R] : -T[R],
+										W = v === k ? T[R] : P[R],
+										H = v === k ? -P[R] : -T[R],
 										q = t.elements.arrow,
 										Y = m && q ? b(q) : {
 											width: 0,
@@ -1255,9 +1255,9 @@
 								if (a) {
 									var ce = "x" === j ? E : x,
 										de = "x" === j ? O : w,
-										le = I[k],
+										le = I[C],
 										ue = oe(le + g[ce], le, le - g[de]);
-									I[k] = ue, M[k] = ue - le
+									I[C] = ue, M[C] = ue - le
 								}
 								t.modifiersData[n] = M
 							}
@@ -1288,9 +1288,9 @@
 									v = d[u],
 									S = g - l[c] - d[p],
 									j = g / 2 - l[c] / 2 + y,
-									C = oe(v, j, S),
-									k = a;
-								r.modifiersData[n] = ((t = {})[k] = C, t.centerOffset = C - j, t)
+									k = oe(v, j, S),
+									C = a;
+								r.modifiersData[n] = ((t = {})[C] = k, t.centerOffset = k - j, t)
 							}
 						},
 						effect: function(e) {
@@ -2171,9 +2171,9 @@
 				x = r("./src/reddit/components/FlairWrapper/index.tsx"),
 				S = r("./node_modules/fbt/lib/FbtPublic.js"),
 				j = r("./src/lib/prettyPrintNumber/index.ts"),
-				C = r("./src/reddit/components/Poll/MetaData/index.tsx"),
-				k = r("./src/reddit/components/Governance/PostPollMetaData/index.m.less"),
-				I = r.n(k);
+				k = r("./src/reddit/components/Poll/MetaData/index.tsx"),
+				C = r("./src/reddit/components/Governance/PostPollMetaData/index.m.less"),
+				I = r.n(C);
 			const T = Object(c.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
 				resultsByVoters: (e, t) => e.polls.results.byVoters[t.pollId]
@@ -2190,7 +2190,7 @@
 						_1: "{count} vote"
 					}, [S.fbt._param("count", Object(j.a)(n)), S.fbt._plural(parseInt(n))], {
 						hk: "4rP1VK"
-					})), t && s.a.createElement(C.a, {
+					})), t && s.a.createElement(k.a, {
 						className: I.a.proposalMetaDataTime,
 						poll: t
 					}))
@@ -2547,8 +2547,8 @@
 				x = r("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				S = r("./src/reddit/models/NewStructuredStyles/index.ts"),
 				j = r("./src/reddit/models/Theme/index.ts"),
-				C = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				k = r("./src/lib/constants/index.ts"),
+				k = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				C = r("./src/lib/constants/index.ts"),
 				I = r("./src/reddit/models/Media/index.ts"),
 				T = r("./src/reddit/components/NativeBannerAd/index.m.less"),
 				P = r.n(T);
@@ -2568,7 +2568,7 @@
 						} = e.media;
 					if (!t || !r) return null;
 					switch (r) {
-						case k.jb.IMAGE:
+						case C.jb.IMAGE:
 							return s.a.createElement(A, {
 								src: t
 							});
@@ -2603,7 +2603,7 @@
 					}
 				},
 				Q = e => ({
-					background: Object(j.g)(Object(C.a)(e).body, null, null) || ""
+					background: Object(j.g)(Object(k.a)(e).body, null, null) || ""
 				});
 			class Z extends s.a.Component {
 				constructor() {
@@ -2911,9 +2911,9 @@
 			})), r.d(t, "clickConfirmReportAward", (function() {
 				return j
 			})), r.d(t, "viewGildModalEvent", (function() {
-				return C
-			})), r.d(t, "clickSelectAwardEvent", (function() {
 				return k
+			})), r.d(t, "clickSelectAwardEvent", (function() {
+				return C
 			})), r.d(t, "triggerAnonymousEvent", (function() {
 				return I
 			})), r.d(t, "clickMessageInputEvent", (function() {
@@ -3021,7 +3021,7 @@
 				x = y("report_community_award"),
 				S = y("cancel_report_community_award"),
 				j = y("confirm_report_community_award"),
-				C = (e, t, r) => n => ({
+				k = (e, t, r) => n => ({
 					...u(n, r),
 					source: "give_gold",
 					action: "view",
@@ -3031,7 +3031,7 @@
 						defaultAnonymous: t
 					}
 				}),
-				k = (e, t, r) => n => ({
+				C = (e, t, r) => n => ({
 					...u(n, t),
 					source: "give_gold",
 					action: "click",
@@ -3348,18 +3348,6 @@
 				return Object(n.useEffect)(() => {
 					t.current = e
 				}), t.current
-			}
-		},
-		"./src/reddit/hooks/useTheme.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return s
-			}));
-			var n = r("./node_modules/react/index.js"),
-				o = r("./src/lib/CSSVariableProvider/index.tsx");
-
-			function s() {
-				return Object(n.useContext)(o.b)
 			}
 		},
 		"./src/reddit/hooks/useTooltip.ts": function(e, t, r) {
@@ -4240,9 +4228,9 @@
 			})), r.d(t, "l", (function() {
 				return j
 			})), r.d(t, "j", (function() {
-				return C
-			})), r.d(t, "m", (function() {
 				return k
+			})), r.d(t, "m", (function() {
+				return C
 			})), r.d(t, "e", (function() {
 				return I
 			})), r.d(t, "d", (function() {
@@ -4281,8 +4269,8 @@
 				x = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				S = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				j = e => e.features.goldPurchase.payment.cardValidation.postalCode,
-				C = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				k = e => e.features.goldPurchase.payment.stripeToken.pending,
+				k = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				C = e => e.features.goldPurchase.payment.stripeToken.pending,
 				I = e => e.features.goldPurchase.payment.paypal.passthrough,
 				T = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
@@ -4357,4 +4345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e2090bfbe70d1588df0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.5a9636cc625cd1be75b8.js.map
