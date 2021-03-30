@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.4009f100111a4a3ec434.js
-// Retrieved at 3/29/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.643344ddd1e786c71e90.js
+// Retrieved at 3/30/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2175,18 +2175,19 @@
 		"./src/reddit/endpoints/page/profileOverviewPage.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return d
-			})), s.d(t, "a", (function() {
 				return c
+			})), s.d(t, "a", (function() {
+				return l
 			}));
 			var r = s("./src/config.ts"),
 				o = s("./src/lib/addAllowQuarantinedParam/index.ts"),
 				n = s("./src/lib/constants/index.ts"),
 				i = s("./src/lib/makeApiRequest/index.ts"),
-				a = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const d = (e, t, s) => Object(i.a)(e, {
+				a = s("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				d = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const c = (e, t, s) => Object(i.a)(e, {
 					data: s,
-					endpoint: Object(o.a)(Object(a.a)(`${r.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)),
+					endpoint: Object(o.a)(Object(a.a)(Object(d.a)(`${r.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`))),
 					traceRequestName: "get_profile_conversations",
 					method: n.cb.GET
 				}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
@@ -2196,9 +2197,9 @@
 						pinned: e.body.postIds.filter(t => e.body.posts[t] && e.body.posts[t].isPinned).reverse()
 					}
 				} : e),
-				c = (e, t, s) => Object(i.a)(e, {
+				l = (e, t, s) => Object(i.a)(e, {
 					data: s,
-					endpoint: Object(o.a)(Object(a.a)(`${r.a.gatewayUrl}/desktopapi/v1/user/${t}/overview`)),
+					endpoint: Object(o.a)(Object(d.a)(`${r.a.gatewayUrl}/desktopapi/v1/user/${t}/overview`)),
 					method: n.cb.GET
 				}).then(e => "pinned" in e.body ? e : "overviewIds" in e.body ? {
 					...e,
@@ -3366,4 +3367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4009f100111a4a3ec434.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.643344ddd1e786c71e90.js.map
