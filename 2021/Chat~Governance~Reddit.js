@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a5361734aedb5ab190a4.js
-// Retrieved at 3/31/2021, 4:10:21 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6c95b33596431c37d4e4.js
+// Retrieved at 3/31/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1448,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("130065"),
+				buildNumber: r("130086"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1617220537"),
+				})("1617224842"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3627,14 +3627,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c9605ac035caacb5818cd4fb262d41a82acc358d2-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c48a451ba65c236849ea84ad71ac6ffeb23651c49-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "9605ac035caacb5818cd4fb262d41a82acc358d2-production",
+						release: "48a451ba65c236849ea84ad71ac6ffeb23651c49-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4083,7 +4083,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "9605ac035caacb5818cd4fb262d41a82acc358d2-production",
+						releaseClient: "48a451ba65c236849ea84ad71ac6ffeb23651c49-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -34844,82 +34844,82 @@
 		"./src/reddit/selectors/features/predictions/tournaments/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "g", (function() {
-				return a
-			})), i.d(t, "i", (function() {
 				return l
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "i", (function() {
 				return c
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return u
+			})), i.d(t, "d", (function() {
+				return _
 			})), i.d(t, "a", (function() {
-				return p
-			})), i.d(t, "c", (function() {
 				return m
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return h
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "b", (function() {
 				return b
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "k", (function() {
 				return f
+			})), i.d(t, "j", (function() {
+				return g
 			})), i.d(t, "f", (function() {
-				return w
-			})), i.d(t, "h", (function() {
 				return y
+			})), i.d(t, "h", (function() {
+				return v
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/lib/initializeClient/installReducer.ts"),
 				s = i("./src/reddit/reducers/features/predictions/index.ts"),
 				o = i("./src/reddit/models/Poll/index.ts"),
-				d = i("./src/reddit/selectors/posts.ts");
-			i("./src/reddit/selectors/subreddit.ts");
+				d = i("./src/reddit/selectors/posts.ts"),
+				a = (i("./src/reddit/selectors/subreddit.ts"), i("./src/reddit/selectors/user.ts"));
 			Object(r.a)({
 				features: {
 					predictions: s.a
 				}
 			});
-			const a = (e, t) => {
+			const l = (e, t) => {
 					var i, n;
 					return !!(null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId])
 				},
-				l = (e, t) => {
+				c = (e, t) => {
 					var i, n, r;
 					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.isFetching) || !1
 				},
-				c = (e, t) => {
+				u = (e, t) => {
 					var i, n, r;
 					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.tournaments) || []
 				},
-				u = (e, t) => {
-					const i = c(e, t);
+				_ = (e, t) => {
+					const i = u(e, t);
 					return i.length ? i[i.length - 1] : null
 				},
-				_ = Object(n.a)(c, e => e.filter(e => e.status === o.d.Live || e.status === o.d.LiveInProgress)),
-				p = (e, t) => _(e, t)[0],
-				m = (e, t) => !!c(e, t).length,
-				h = (e, t) => !!_(e, t).length,
-				b = Object(n.a)(u, d.h, d.G, (e, t, i) => {
-					var n;
-					return (null === (n = null == e ? void 0 : e.predictionPosts) || void 0 === n ? void 0 : n.length) ? null == e ? void 0 : e.predictionPosts.reduce((e, {
-						id: n
+				p = Object(n.a)(u, e => e.filter(e => e.status === o.d.Live || e.status === o.d.LiveInProgress)),
+				m = (e, t) => p(e, t)[0],
+				h = (e, t) => !!u(e, t).length,
+				b = (e, t) => !!p(e, t).length,
+				f = Object(n.a)(_, d.h, d.G, a.B, (e, t, i, n) => {
+					var r;
+					return (null === (r = null == e ? void 0 : e.predictionPosts) || void 0 === r ? void 0 : r.length) ? null == e ? void 0 : e.predictionPosts.reduce((e, {
+						id: r
 					}) => {
-						if (t.includes(n)) return e;
-						const r = i[n];
-						return r && (e[n] = r), e
+						if (t.includes(r)) return e;
+						const s = i[r];
+						return !s || n && s.isNSFW || (e[r] = s), e
 					}, {}) : {}
 				}),
-				f = Object(n.a)(u, b, (e, t) => {
+				g = Object(n.a)(_, f, (e, t) => {
 					var i;
 					return (null === (i = null == e ? void 0 : e.predictionPosts) || void 0 === i ? void 0 : i.length) ? e.predictionPosts.map(({
 						id: e
 					}) => e).filter(e => e in t) : []
 				}),
-				g = Object(n.a)(f, d.w, (e, t) => e.length ? t.filter(t => e.includes(t)) : []),
-				w = Object(n.a)(p, e => {
+				w = Object(n.a)(g, d.w, (e, t) => e.length ? t.filter(t => e.includes(t)) : []),
+				y = Object(n.a)(m, e => {
 					var t;
 					return null !== (t = null === (null == e ? void 0 : e.predictionPosts) || 0 === (null == e ? void 0 : e.predictionPosts.length) || (null == e ? void 0 : e.predictionPosts.every(e => !!e.poll.resolvedOptionId))) && void 0 !== t && t
 				}),
-				y = Object(n.a)(u, e => !!e && e.status === o.d.LiveInProgress);
-			Object(n.a)(f, g, (e, t) => {
+				v = Object(n.a)(_, e => !!e && e.status === o.d.LiveInProgress);
+			Object(n.a)(g, w, (e, t) => {
 				const i = e[0];
 				return !!i && !t.find(e => e === i)
 			})
@@ -44719,4 +44719,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a5361734aedb5ab190a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6c95b33596431c37d4e4.js.map

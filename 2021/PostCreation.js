@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.612b7f99cb45413c2575.js
-// Retrieved at 3/31/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.be1f58fac001fa122e85.js
+// Retrieved at 3/31/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -6592,7 +6592,8 @@
 		},
 		"./src/reddit/components/PostCreationForm/ControlRow/AddTournamentPredictionButton/index.m.less": function(e, t, n) {
 			e.exports = {
-				addTournamentPredictionButton: "_379A0ry8uhFTCCqbGtPG08"
+				addTournamentPredictionButton: "_379A0ry8uhFTCCqbGtPG08",
+				tooltip: "NKpm2s1DjP3vbRrlx4pxe"
 			}
 		},
 		"./src/reddit/components/PostCreationForm/ControlRow/PostModifiers/OCDisclaimer/index.m.less": function(e, t, n) {
@@ -18738,38 +18739,48 @@
 					d = Object(r.e)(k.t),
 					[l, u] = Object(s.useState)(!1),
 					[p, h] = Object(s.useState)(!1),
-					b = Object(r.e)(k.x),
-					f = Object(r.e)(k.w),
-					g = Object(fs.a)(),
-					C = Object(r.e)(e => Object(yt.n)(e, {
-						pageLayer: g
+					b = Object(r.e)(k.D),
+					f = Object(r.e)(k.x),
+					g = Object(r.e)(k.w),
+					C = Object(fs.a)(),
+					x = Object(r.e)(e => Object(yt.n)(e, {
+						pageLayer: C
 					})),
-					x = Object(r.e)(e => Object(S.T)(e, {
-						subredditId: C
+					E = Object(r.e)(e => Object(S.T)(e, {
+						subredditId: x
 					})),
-					E = Object(r.e)(e => Object(xs.a)(e, {
-						subredditId: C
+					v = Object(r.e)(e => Object(xs.a)(e, {
+						subredditId: x
 					})),
-					v = Object(r.e)(Cs.b);
-				return o.a.createElement(o.a.Fragment, null, o.a.createElement($e.i, {
-					disabled: p || t || !b || !f,
+					_ = Object(r.e)(Cs.b);
+				return o.a.createElement("div", {
+					className: Object(ze.a)(ys.a.addTournamentPredictionButton, e)
+				}, o.a.createElement($e.i, {
+					disabled: p || t || !f || !g,
 					onClick: () => {
-						E && !v ? (async () => {
+						v && !_ ? (async () => {
 							h(!0), n(Object(hs.b)({
 								prediction: {
 									formData: c,
 									formState: d
 								}
-							})), await n(Object(hs.a)(E.tournamentId, C)), n(Object(a.q)()), n(Object(m.b)(`/r/${x.name}/predictions/`)), h(!1)
+							})), await n(Object(hs.a)(v.tournamentId, x)), n(Object(a.q)()), n(Object(hs.l)()), n(Object(m.b)(`/r/${E.name}/predictions/`)), h(!1)
 						})() : (i(Object(bs.e)()), u(!0))
-					},
-					className: Object(ze.a)(ys.a.addTournamentPredictionButton, e)
+					}
 				}, p ? o.a.createElement(tt.a, {
 					sizePx: 16
-				}) : E ? js._("Post", null, {
+				}) : v ? js._("Post", null, {
 					hk: "12GkA5"
 				}) : js._("Next", null, {
 					hk: "2m41ub"
+				})), o.a.createElement("div", {
+					className: ys.a.tooltip
+				}, b ? f ? g ? null : js._("End must be at least one hour from now", null, {
+					hk: "lWM41"
+				}) : js._("Options cannot be empty", null, {
+					hk: "2BR1pQ"
+				}) : js._("A title is required", null, {
+					hk: "2hoEW2"
 				})), l && o.a.createElement(_s, {
 					onClose: () => u(!1)
 				}))
@@ -24297,4 +24308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.612b7f99cb45413c2575.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.be1f58fac001fa122e85.js.map
