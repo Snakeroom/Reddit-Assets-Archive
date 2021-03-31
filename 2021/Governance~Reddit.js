@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7ee5cf1dbe9bb1a432f7.js
-// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.192e6f66661e28d0f40e.js
+// Retrieved at 3/31/2021, 1:10:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -12532,7 +12532,8 @@
 					case ee.i:
 					case je.f:
 					case $.b:
-					case $.f: {
+					case $.f:
+					case Uu.f: {
 						const {
 							governance: r,
 							posts: s
@@ -12592,8 +12593,8 @@
 							...a
 						}
 					}
+					case Uu.h:
 					case Uu.g:
-					case Uu.f:
 						const {
 							pollId: r, prediction: {
 								options: s,
@@ -13396,7 +13397,8 @@
 						case ee.i:
 						case je.f:
 						case $.b:
-						case $.f: {
+						case $.f:
+						case Uu.f: {
 							const {
 								governance: r,
 								posts: s
@@ -13563,7 +13565,8 @@
 					case rd.TOPIC_DATA_LOADED:
 					case rd.MORE_POSTS_LOADED:
 					case ed.c:
-					case ed.d: {
+					case ed.d:
+					case Uu.f: {
 						const r = Jl(t.payload.meta);
 						return {
 							...e,
@@ -19868,7 +19871,7 @@
 							coins: r
 						} : e
 					}
-					case Uu.g: {
+					case Uu.h: {
 						const {
 							price: r
 						} = t.payload;
@@ -21864,4 +21867,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7ee5cf1dbe9bb1a432f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.192e6f66661e28d0f40e.js.map

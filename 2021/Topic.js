@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.c8909efe95c6ed0224b7.js
-// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.015f5f296ab07547153d.js
+// Retrieved at 3/31/2021, 1:10:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -424,8 +424,8 @@
 			}
 			const P = "view--layout--FUE",
 				j = "LayoutSwitch--picker",
-				w = Object(c.a)(f.a),
-				N = {
+				N = Object(c.a)(f.a),
+				w = {
 					[h.d.Card]: E.a,
 					[h.d.Classic]: _.a,
 					[h.d.Compact]: y.a
@@ -493,7 +493,7 @@
 							layout: r,
 							onLayoutClick: n,
 							postLayout: o
-						} = this.props, a = r || h.e[o], c = e === a, l = s ? k[e] : N[e], u = R[e];
+						} = this.props, a = r || h.e[o], c = e === a, l = s ? k[e] : w[e], u = R[e];
 						return i.a.createElement(v.b, I({}, t, {
 							className: Object(d.a)(O.a.LayoutItem, {
 								[O.a.selected]: c
@@ -514,7 +514,7 @@
 						const {
 							dropdownIsOpen: t
 						} = this.props;
-						return i.a.createElement(w, I({}, e, {
+						return i.a.createElement(N, I({}, e, {
 							className: O.a.Dropdown,
 							isOpen: t,
 							renderContentsHidden: !0,
@@ -556,7 +556,7 @@
 		"./src/reddit/components/PostList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return q
+				return K
 			})), s.d(t, "a", (function() {
 				return Q
 			}));
@@ -589,8 +589,8 @@
 				I = s("./src/reddit/helpers/getClickInfo.ts"),
 				P = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				j = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				w = s("./src/reddit/models/Media/index.ts"),
-				N = s("./src/reddit/helpers/brandSafety/index.ts"),
+				N = s("./src/reddit/models/Media/index.ts"),
+				w = s("./src/reddit/helpers/brandSafety/index.ts"),
 				k = s("./src/lib/LRUCache/index.ts"),
 				R = s("./src/telemetry/index.ts"),
 				F = s("./src/telemetry/models/Timer.ts"),
@@ -609,13 +609,13 @@
 				return void 0 === d && (d = () => {
 					s && o.onBottomViewed(r, n), o.trackOnPostEnteredViewport(e, t, a)
 				}, A.set(c, d)), d
-			}, K = (e, t, s, r, n) => {
+			}, q = (e, t, s, r, n) => {
 				const i = `left-${e}-${t}`;
 				let o = W.get(i);
 				return void 0 === o && (o = i => {
 					s.trackOnPostExitedViewport(e, t, i, r, n)
 				}, W.set(i, o)), o
-			}, q = (e, t) => {
+			}, K = (e, t) => {
 				const s = `click-${e}`;
 				let r = D.get(s);
 				return void 0 === r && (r = (e, s, r, n) => {
@@ -661,7 +661,7 @@
 						r.forEach(e => n.push(e.id));
 						const i = n.map(e => t[e]).filter(Boolean),
 							o = i.map(e => s[e.belongsTo.id]).filter(e => void 0 !== e);
-						this.props.adBrandSafetyStatusReceived(Object(N.a)(i, o))
+						this.props.adBrandSafetyStatusReceived(Object(w.a)(i, o))
 					}, b.d, {
 						leading: !0
 					})
@@ -798,7 +798,7 @@
 						const {
 							inSubredditOrProfile: O,
 							postsById: I
-						} = this.props, j = I[e], N = j.crosspostRootId && I[j.crosspostRootId] ? I[j.crosspostRootId] : j;
+						} = this.props, j = I[e], w = j.crosspostRootId && I[j.crosspostRootId] ? I[j.crosspostRootId] : j;
 						j.crosspostRootId && !I[j.crosspostRootId] && x.c.withScope(e => {
 							e.setExtra("errorType", b.q.API), e.setExtra("description", `Post ${j.id} is crosspost of ${j.crosspostRootId}, but ` + `${j.crosspostRootId} details are missing in the state`), x.c.captureMessage("Crosspost parent details are missing")
 						});
@@ -806,17 +806,17 @@
 								isCrosspost: !!j.crosspostRootId,
 								isFirstPost: T,
 								layout: r,
-								post: N
+								post: w
 							}),
 							R = `post-list-item-[layout: ${r}]-[postId: ${e}]`,
 							F = z(e, r, s, p, m, g, this.props, t),
-							B = K(e, r, this.props, t, h),
-							M = q(e, this.props),
-							H = N.media && N.media.type === w.o.EMBED ? N.media.provider : null;
+							B = q(e, r, this.props, t, h),
+							M = K(e, this.props),
+							H = w.media && w.media.type === N.o.EMBED ? w.media.provider : null;
 						L = {
 							estHeight: Object(P.c)(j, r),
 							id: e,
-							isFocusable: !(!N.media || !(r === C.g.Large || r === C.g.Classic && Object(w.G)(N.media))) && (w.d.has(N.media.type) && (!H || !w.s.has(H)) && !N.isSpoiler && !N.isNSFW),
+							isFocusable: !(!w.media || !(r === C.g.Large || r === C.g.Classic && Object(N.G)(w.media))) && (N.d.has(w.media.type) && (!H || !N.s.has(H)) && !w.isSpoiler && !w.isNSFW),
 							trackOnEnteredViewport: F,
 							trackOnExitedViewport: B,
 							render: ({
@@ -1439,7 +1439,7 @@
 			}
 			var P = Object(h.b)(O)(Object(d.c)(I)),
 				j = s("./src/reddit/helpers/styles/mixins/loading.ts");
-			var w = e => {
+			var N = e => {
 					const {
 						className: t
 					} = e, s = Object(j.b)({
@@ -1461,13 +1461,13 @@
 						className: L.a.SubscribeButton
 					}))
 				},
-				N = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
-				k = s.n(N);
+				w = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
+				k = s.n(w);
 			const {
 				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, B = Array.from({
 				length: F
-			}).map((e, t) => n.a.createElement(w, {
+			}).map((e, t) => n.a.createElement(N, {
 				className: k.a.Subreddit,
 				key: t
 			})), M = {
@@ -1593,10 +1593,18 @@
 					apiPending: _.d,
 					measureScrollFPS: f.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(m.O)(e, t),
-					loadMore: (e, t) => t.isPredictionsPage && !Object(x.a)(e, t.listingKey) ? null : Object(_.g)(e, t),
-					postsById: (e, t) => Object(y.N)(e, {
-						...t
-					}),
+					loadMore: (e, t) => t.isPredictionsPage ? null : Object(_.g)(e, t),
+					postsById: (e, t) => {
+						if (t.isPredictionsPage) {
+							const s = Object(E.F)(e, t.listingName);
+							return Object(x.k)(e, {
+								subredditId: s
+							})
+						}
+						return Object(y.N)(e, {
+							...t
+						})
+					},
 					postIds: Object(i.a)((e, {
 						listingKey: t,
 						listingName: s,
@@ -1604,10 +1612,9 @@
 						inSubredditOrProfile: n
 					}) => {
 						if (r) {
-							const r = Object(E.F)(e, s);
-							return Object(x.l)(e, {
-								subredditId: r,
-								listingKey: t
+							const t = Object(E.F)(e, s);
+							return Object(x.j)(e, {
+								subredditId: t
 							})
 						}
 						return Object(y.A)(e, t, s, n)
@@ -2016,8 +2023,8 @@
 				I = s("./src/reddit/helpers/trackers/screenview.ts"),
 				P = s("./src/reddit/layout/page/Listing/index.tsx"),
 				j = s("./src/reddit/pages/ErrorPages/index.tsx"),
-				w = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				N = s("./src/reddit/controls/Button/index.tsx"),
+				N = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				w = s("./src/reddit/controls/Button/index.tsx"),
 				k = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
 				R = s.n(k);
 			class F extends n.a.Component {
@@ -2131,8 +2138,8 @@
 				G = s.n(U);
 			const {
 				fbt: z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = 5;
-			class q extends n.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
+			class K extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2148,7 +2155,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return n.a.createElement(y, {
-						limit: K,
+						limit: q,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2158,10 +2165,10 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < K ? null : n.a.createElement(w.a, {
+					return t.length < q ? null : n.a.createElement(N.a, {
 						onClick: this.onClick,
 						to: "#"
-					}, n.a.createElement(N.o, {
+					}, n.a.createElement(w.o, {
 						className: G.a.SeeAllRelatedTopics
 					}, z._("See all {=[Topic name plural]}", [z._param("=[Topic name plural]", n.a.createElement("span", {
 						className: G.a.TopicName
@@ -2172,7 +2179,7 @@
 					})))
 				}
 			}
-			var Y = q,
+			var Y = K,
 				Q = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2345,10 +2352,10 @@
 				Oe = s.n(Le);
 			const {
 				fbt: Ie
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Pe = Object(O.t)(), je = (e, t) => t.match.params.sort || a.Q, we = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Pe = Object(O.t)(), je = (e, t) => t.match.params.sort || a.Q, Ne = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(W.Posts), e.hasSubreddits && t.push(W.Communities), e.childRelationships.length && t.push(W.RelatedTopics), t) : t
-			}, Ne = Object(d.b)(() => Object(i.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
+			}, we = Object(d.b)(() => Object(i.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Ce.c)(e, {
 				topicSlug: t.match.params.topicSlug
@@ -2365,7 +2372,7 @@
 				siblingRelatedTopics: n,
 				sort: o,
 				status: a || 200,
-				tabs: we(s),
+				tabs: Ne(s),
 				timeSort: void 0,
 				topic: s,
 				topicName: e,
@@ -2478,7 +2485,7 @@
 						}))),
 						O = f !== W.RelatedTopics,
 						I = f !== W.Communities && a.includes(W.Communities),
-						w = n.a.createElement("div", {
+						N = n.a.createElement("div", {
 							className: Oe.a.WidgetsContainer
 						}, I && n.a.createElement(S.a, {
 							onSeeMoreCommunities: this.openCommunitiesTab,
@@ -2500,7 +2507,7 @@
 							key: "right",
 							className: Oe.a.SidebarRight,
 							listingName: v
-						}, w)],
+						}, N)],
 						navBar: n.a.createElement(J, {
 							activeTab: f,
 							layout: b,
@@ -2512,7 +2519,7 @@
 					}))
 				}
 			}
-			t.default = Pe(Ne(Re))
+			t.default = Pe(we(Re))
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -2620,4 +2627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c8909efe95c6ed0224b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.015f5f296ab07547153d.js.map

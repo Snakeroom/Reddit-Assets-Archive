@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.41cf02b8ea86af0ff3f0.js
-// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d1c38b5aefbab53989ef.js
+// Retrieved at 3/31/2021, 1:10:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -6300,10 +6300,18 @@
 					apiPending: x.d,
 					measureScrollFPS: f.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(u.O)(e, t),
-					loadMore: (e, t) => t.isPredictionsPage && !Object(v.a)(e, t.listingKey) ? null : Object(x.g)(e, t),
-					postsById: (e, t) => Object(C.N)(e, {
-						...t
-					}),
+					loadMore: (e, t) => t.isPredictionsPage ? null : Object(x.g)(e, t),
+					postsById: (e, t) => {
+						if (t.isPredictionsPage) {
+							const s = Object(_.F)(e, t.listingName);
+							return Object(v.k)(e, {
+								subredditId: s
+							})
+						}
+						return Object(C.N)(e, {
+							...t
+						})
+					},
 					postIds: Object(r.a)((e, {
 						listingKey: t,
 						listingName: s,
@@ -6311,10 +6319,9 @@
 						inSubredditOrProfile: n
 					}) => {
 						if (o) {
-							const o = Object(_.F)(e, s);
-							return Object(v.l)(e, {
-								subredditId: o,
-								listingKey: t
+							const t = Object(_.F)(e, s);
+							return Object(v.j)(e, {
+								subredditId: t
 							})
 						}
 						return Object(C.A)(e, t, s, n)
@@ -8057,4 +8064,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.41cf02b8ea86af0ff3f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d1c38b5aefbab53989ef.js.map

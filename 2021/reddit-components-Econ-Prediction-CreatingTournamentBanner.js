@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.202624e04a2379be83c5.js
-// Retrieved at 3/29/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.f197aa8dcc8764bbceb1.js
+// Retrieved at 3/31/2021, 1:10:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CreatingTournamentBanner"], {
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less": function(e, t, n) {
@@ -16,12 +16,12 @@
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return j
+				return p
 			}));
 			var i = n("./node_modules/react/index.js"),
 				s = n.n(i),
-				d = n("./node_modules/react-redux/es/index.js"),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n("./node_modules/react-redux/es/index.js"),
+				d = n("./src/lib/classNames/index.ts"),
 				a = n("./src/reddit/actions/economics/predictions/index.ts"),
 				o = n("./src/reddit/actions/subreddit.ts"),
 				c = n("./src/reddit/controls/Button/index.tsx"),
@@ -30,38 +30,34 @@
 				m = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				b = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				_ = n("./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less"),
-				g = n.n(_);
+				x = n.n(_);
 			const {
-				fbt: x
+				fbt: g
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function j({
+			function p({
 				subreddit: e
 			}) {
-				const t = Object(d.d)(),
+				const t = Object(r.d)(),
 					[n, _] = Object(i.useState)(!1),
-					j = Object(d.e)(t => !!e && Object(m.j)(t, {
+					p = Object(r.e)(t => !!e && Object(m.h)(t, {
 						subredditId: e.id
-					})),
-					p = Object(d.e)(t => !!e && Object(m.i)(t, {
-						subredditId: e.id,
-						listingKey: e.name
 					}));
-				return Object(d.e)(t => !!e && Object(b.g)(t, {
+				return Object(r.e)(t => !!e && Object(b.g)(t, {
 					subredditId: e.id
-				})) && (j || p) ? s.a.createElement("div", {
-					className: g.a.creatingTournamentBanner
+				})) && p ? s.a.createElement("div", {
+					className: x.a.creatingTournamentBanner
 				}, s.a.createElement("h1", {
-					className: g.a.title
-				}, x._("Creating predictions posts...", null, {
+					className: x.a.title
+				}, g._("Creating predictions posts...", null, {
 					hk: "2r0wY9"
 				})), s.a.createElement("p", {
-					className: g.a.description
-				}, x._("This may take up to a few minutes. No progress will be lost if you leave", null, {
+					className: x.a.description
+				}, g._("This may take up to a few minutes. No progress will be lost if you leave", null, {
 					hk: "3vuTHr"
 				})), s.a.createElement(c.i, {
-					className: Object(r.a)(g.a.button, g.a.reloadButton, {
-						[g.a.isLoading]: n
+					className: Object(d.a)(x.a.button, x.a.reloadButton, {
+						[x.a.isLoading]: n
 					}),
 					onClick: async () => {
 						if (!e || n) return null;
@@ -70,13 +66,13 @@
 						})), _(!1)
 					}
 				}, n ? s.a.createElement(l.a, {
-					className: g.a.loadingSpinner,
+					className: x.a.loadingSpinner,
 					sizePx: 16
-				}) : x._("Reload", null, {
+				}) : g._("Reload", null, {
 					hk: "2MIb6e"
 				}))) : null
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.202624e04a2379be83c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.f197aa8dcc8764bbceb1.js.map
