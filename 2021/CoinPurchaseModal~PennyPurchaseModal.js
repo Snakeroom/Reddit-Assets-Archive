@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.c9490a236ebd63ba8240.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.3f67edd40f29f6c7dd9a.js
+// Retrieved at 3/31/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PennyPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -749,7 +749,7 @@
 			})), n.d(t, "c", (function() {
 				return D
 			})), n.d(t, "a", (function() {
-				return G
+				return U
 			})), n.d(t, "e", (function() {
 				return Q
 			}));
@@ -1016,7 +1016,7 @@
 						duration: d.a,
 						text: e
 					}))
-				}, G = (e, t, n) => async (a, o, {
+				}, U = (e, t, n) => async (a, o, {
 					gqlContext: s
 				}) => {
 					a(V({
@@ -1048,20 +1048,11 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, U = Object(u.a)(f.R), Q = e => async (t, n) => {
-					t(U(e)), t(Object(C.g)(e.subredditId, {
+				}, G = Object(u.a)(f.R), Q = e => async (t, n) => {
+					t(G(e)), t(Object(C.g)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
-					})), t(Object(_.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.f)({
-						kind: h.b.SuccessCommunityGreen,
-						duration: d.a,
-						text: r.fbt._({
-							"*": "Purchase of {number of Powerups} Powerups is complete.",
-							_1: "Purchase of 1 Powerup is complete."
-						}, [r.fbt._plural(e.powerupsCount, "number of Powerups")], {
-							hk: "28cBuw"
-						})
-					}))
+					})), t(Object(_.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(_.h)(l.a.ECON_POWERUPS_SUCCESS))
 				}
 		},
 		"./src/reddit/components/CheckoutForm/index.m.less": function(e, t, n) {
@@ -1945,4 +1936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.c9490a236ebd63ba8240.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.3f67edd40f29f6c7dd9a.js.map

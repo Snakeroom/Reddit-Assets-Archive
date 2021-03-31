@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.cbdc92672c672b39fdb9.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f961adcbec97b9a66034.js
+// Retrieved at 3/31/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -819,16 +819,7 @@
 					t(W(e)), t(Object(E.g)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
-					})), t(Object(x.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(d.f)({
-						kind: f.b.SuccessCommunityGreen,
-						duration: d.a,
-						text: n.fbt._({
-							"*": "Purchase of {number of Powerups} Powerups is complete.",
-							_1: "Purchase of 1 Powerup is complete."
-						}, [n.fbt._plural(e.powerupsCount, "number of Powerups")], {
-							hk: "28cBuw"
-						})
-					}))
+					})), t(Object(x.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(x.h)(l.a.ECON_POWERUPS_SUCCESS))
 				}
 		},
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
@@ -2831,4 +2822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.cbdc92672c672b39fdb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f961adcbec97b9a66034.js.map

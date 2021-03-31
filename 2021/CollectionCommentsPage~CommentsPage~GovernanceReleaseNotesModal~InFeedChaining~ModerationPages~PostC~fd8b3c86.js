@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.cb70b65fbef947c77511.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.d16e02770b30180cbe49.js
+// Retrieved at 3/31/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -271,7 +271,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => Promise.all([s.e("vendors~ClaimFreeAwardModal~CollectionCommentsPage~CommentsPage~Subreddit~SubredditWelcomeMessageMod~d61175c4"), s.e("EconHelperActions~reddit-components-Econ-Prediction"), s.e("reddit-components-Econ-Prediction")]).then(s.bind(null, "./src/reddit/components/Econ/Prediction/index.tsx")),
+				importAsync: () => Promise.all([s.e("vendors~ClaimFreeAwardModal~CollectionCommentsPage~CommentsPage~PowerupSuccessModal~SubredditWelcome~45b89832"), s.e("EconHelperActions~reddit-components-Econ-Prediction"), s.e("reddit-components-Econ-Prediction")]).then(s.bind(null, "./src/reddit/components/Econ/Prediction/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -502,7 +502,7 @@
 			}), e.currentSlide, "/", e.totalSlides), R = (e, t = 4) => {
 				let s = e - t;
 				return s < 0 && (s = 0), s
-			}, D = (e, t, s = 4) => {
+			}, P = (e, t, s = 4) => {
 				let i = e + s;
 				return i > t - 1 && (i = t - 1), i
 			};
@@ -516,7 +516,7 @@
 						isSponsored: O,
 						isTileLayout: T,
 						mediaMetadata: L = {},
-						post: P,
+						post: D,
 						postId: A,
 						postTitle: V,
 						shouldShowTileLayoutOption: k,
@@ -534,7 +534,7 @@
 					Q = Object(r.a)(W),
 					X = Object(r.a)(F);
 				Object(i.useEffect)(() => {
-					(void 0 !== Q && Q !== W && W && $ < 0 && J < 0 || void 0 !== X && X !== F && W && ($ > F || J < F)) && (z(R(F, 1)), q(D(F, p.length, 1)))
+					(void 0 !== Q && Q !== W && W && $ < 0 && J < 0 || void 0 !== X && X !== F && W && ($ > F || J < F)) && (z(R(F, 1)), q(P(F, p.length, 1)))
 				}, [Q, F, W, $, J, X, p.length, A]);
 				const Z = Object(i.useRef)(),
 					ee = Object(i.useCallback)(e => {
@@ -543,7 +543,7 @@
 								isIntersecting: t
 							} = e;
 							t ? ($ < 0 || J - $ == 0) && (Z.current = setTimeout(() => {
-								const e = D(J, p.length);
+								const e = P(J, p.length);
 								e !== J && q(e)
 							}, 1e3)) : ($ < 0 || J - $ == 0) && clearTimeout(Z.current)
 						})
@@ -556,8 +556,8 @@
 						}))
 					}, [t, A]),
 					se = Object(i.useCallback)(() => {
-						t(Object(f.u)(P, E.a.GalleryItemImpression))
-					}, [t, P]),
+						t(Object(f.u)(D, E.a.GalleryItemImpression))
+					}, [t, D]),
 					ie = Object(i.useCallback)(() => {
 						t(Object(x.i)({
 							postId: A,
@@ -568,7 +568,7 @@
 						if (!U) return;
 						const e = F + 1;
 						if (e + 1 >= J) {
-							const e = D(J, p.length);
+							const e = P(J, p.length);
 							e !== J && q(e)
 						}
 						te(e), G(u.b(A, e)), G(u.d(A, e + 1)), se()
@@ -1010,8 +1010,8 @@
 				N = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
 				_ = s("./src/reddit/components/Media/VideoBox/index.tsx"),
 				R = s("./src/reddit/components/PlayButton/index.tsx"),
-				D = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
-				P = s("./src/reddit/components/RichTextJson/index.tsx"),
+				P = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
+				D = s("./src/reddit/components/RichTextJson/index.tsx"),
 				A = s("./src/reddit/constants/componentSizes.ts"),
 				V = s("./src/reddit/constants/experiments.ts"),
 				k = s("./src/reddit/constants/screenWidths.ts"),
@@ -1432,7 +1432,7 @@
 								isTitleOnly: u,
 								postId: m.id,
 								showFull: p
-							}, l.a.createElement(P.a, {
+							}, l.a.createElement(D.a, {
 								altText: this.getAltText(),
 								content: v,
 								flairStyleTemplate: s,
@@ -1466,7 +1466,7 @@
 									"data-click-id": "text",
 									isCommentsPage: n,
 									showFull: p
-								}, l.a.createElement(D.a, {
+								}, l.a.createElement(P.a, {
 									flairStyleTemplate: s,
 									html: m.isMeta ? Object(G.a)(m.media.content, m.id, te.a.hiddenLink) : m.media.content
 								})), l.a.createElement(j.a, {
@@ -1955,4 +1955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.cb70b65fbef947c77511.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.d16e02770b30180cbe49.js.map

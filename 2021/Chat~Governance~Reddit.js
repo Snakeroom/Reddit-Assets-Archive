@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8a5961b70f33da38563d.js
-// Retrieved at 3/30/2021, 8:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2b13608564b324978312.js
+// Retrieved at 3/31/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1448,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("129996"),
+				buildNumber: r("130026"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1617147496"),
+				})("1617197746"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3627,14 +3627,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ca78a810d27dc3d0377e28fc079e1b0efd1dc07f3-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2fc00117292e43d6731a58a1f5a3d8ba7991027c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a78a810d27dc3d0377e28fc079e1b0efd1dc07f3-production",
+						release: "2fc00117292e43d6731a58a1f5a3d8ba7991027c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4083,7 +4083,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "a78a810d27dc3d0377e28fc079e1b0efd1dc07f3-production",
+						releaseClient: "2fc00117292e43d6731a58a1f5a3d8ba7991027c-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7508,13 +7508,13 @@
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./src/lib/makeActionCreator/index.ts"),
 				s = i("./src/lib/sentry/index.ts"),
-				o = i("./src/reddit/constants/modals.ts"),
-				d = i("./src/reddit/helpers/localStorage/index.ts"),
-				a = i("./src/reddit/actions/login.ts"),
-				l = i("./src/reddit/actions/modal.ts"),
-				c = i("./src/reddit/actions/toaster.ts"),
-				u = i("./src/reddit/models/Toast/index.ts"),
-				_ = i("./src/reddit/endpoints/gold/powerups.ts"),
+				o = i("./src/reddit/actions/login.ts"),
+				d = i("./src/reddit/actions/modal.ts"),
+				a = i("./src/reddit/actions/toaster.ts"),
+				l = i("./src/reddit/constants/modals.ts"),
+				c = i("./src/reddit/endpoints/gold/powerups.ts"),
+				u = i("./src/reddit/helpers/localStorage/index.ts"),
+				_ = i("./src/reddit/models/Toast/index.ts"),
 				p = i("./src/reddit/selectors/gold/powerups.ts"),
 				m = i("./src/reddit/selectors/user.ts"),
 				h = i("./src/reddit/actions/gold/constants.ts");
@@ -7527,7 +7527,7 @@
 					hk: "1IJNeH"
 				});
 				try {
-					const e = await Object(_.h)(r());
+					const e = await Object(c.h)(r());
 					if (e.ok) {
 						const i = e.body;
 						if (i.errors && i.errors.length) return void(await t(y(o)));
@@ -7540,9 +7540,9 @@
 					s.c.captureException(d), await t(y(o))
 				}
 			}, f = Object(r.a)(h.ub), g = Object(r.a)(h.tb), w = Object(r.a)(h.sb), y = e => async (t, i) => {
-				await t(w(e)), t(Object(c.f)({
-					kind: u.b.Error,
-					duration: c.a,
+				await t(w(e)), t(Object(a.f)({
+					kind: _.b.Error,
+					duration: a.a,
 					text: e
 				}))
 			}, v = (e, t) => async (e, i, {
@@ -7555,7 +7555,7 @@
 					hk: "1IJNeH"
 				});
 				try {
-					const i = await Object(_.e)(r(), t);
+					const i = await Object(c.e)(r(), t);
 					if (i.ok) {
 						const n = i.body;
 						if (n.errors && n.errors.length) return void(await e(O(d)));
@@ -7570,9 +7570,9 @@
 					s.c.captureException(a), await e(O(d))
 				}
 			}, E = Object(r.a)(h.ab), S = Object(r.a)(h.Z), T = Object(r.a)(h.Y), O = e => async (t, i) => {
-				await t(T(e)), t(Object(c.f)({
-					kind: u.b.Error,
-					duration: c.a,
+				await t(T(e)), t(Object(a.f)({
+					kind: _.b.Error,
+					duration: a.a,
 					text: e
 				}))
 			}, I = (e, t) => async (i, r, {
@@ -7586,7 +7586,7 @@
 						subredditId: e
 					})) && !t.forceLoad) return;
 				i(F());
-				const l = t.fullData ? _.g : _.f;
+				const l = t.fullData ? c.g : c.f;
 				try {
 					const n = await l(o(), e, !!t.includeIdentity);
 					if (n.ok) {
@@ -7607,8 +7607,8 @@
 							}))
 						}
 					}
-				} catch (c) {
-					s.c.captureException(c), await i(N(n.fbt._("Something went wrong", null, {
+				} catch (u) {
+					s.c.captureException(u), await i(N(n.fbt._("Something went wrong", null, {
 						hk: "1IJNeH"
 					})))
 				}
@@ -7628,21 +7628,21 @@
 					userPowerups: c
 				}))
 			}, F = Object(r.a)(h.kb), R = Object(r.a)(h.jb), x = Object(r.a)(h.ib), C = Object(r.a)(h.hb), N = e => async (t, i) => {
-				await t(C(e)), t(Object(c.f)({
-					kind: u.b.Error,
-					duration: c.a,
+				await t(C(e)), t(Object(a.f)({
+					kind: _.b.Error,
+					duration: a.a,
 					text: e
 				}))
 			}, A = Object(r.a)(h.S), D = Object(r.a)(h.T), P = Object(r.a)(h.U), k = e => async (t, i) => {
-				await t(A(e)), t(Object(c.f)({
-					kind: u.b.Error,
-					duration: c.a,
+				await t(A(e)), t(Object(a.f)({
+					kind: _.b.Error,
+					duration: a.a,
 					text: e
 				}))
-			}, B = (e, t, i, r) => async (d, a, {
+			}, B = (e, t, i, r) => async (o, u, {
 				gqlContext: p
 			}) => {
-				d(D({
+				o(D({
 					subredditId: e,
 					powerupsCount: t,
 					isAnonymous: i,
@@ -7654,7 +7654,7 @@
 							powerupsCount: t,
 							isAnonymous: i
 						},
-						h = await Object(_.d)(p(), {
+						h = await Object(c.d)(p(), {
 							input: s
 						});
 					let b = !1,
@@ -7663,17 +7663,15 @@
 						const e = h.body;
 						b = e.data.reallocatePowerups.ok, f = e.data.reallocatePowerups.errors
 					}
-					const g = Object(m.i)(a());
-					if (b && g) await d((e => async (t, i) => {
+					const g = Object(m.i)(u());
+					if (b && g) await o((e => async (t, i) => {
 						t(P(e)), t(I(e.subredditId, {
 							forceLoad: !0,
 							fullData: !1
-						})), e.powerupsCount && (t(Object(l.g)(o.a.ECON_POWERUPS_PURCHASE)), t(Object(c.f)({
-							kind: u.b.SuccessCommunityGreen,
-							duration: c.a,
-							text: e.powerupsCount > 0 ? n.fbt._("Your free Powerup has been applied.", null, {
-								hk: "1qt70H"
-							}) : n.fbt._("Your free Powerup subscription has been canceled.", null, {
+						})), e.powerupsCount && (t(Object(d.g)(l.a.ECON_POWERUPS_PURCHASE)), e.powerupsCount > 0 ? t(Object(d.h)(l.a.ECON_POWERUPS_SUCCESS)) : t(Object(a.f)({
+							kind: _.b.SuccessCommunityGreen,
+							duration: a.a,
+							text: n.fbt._("Your free Powerup subscription has been canceled.", null, {
 								hk: "15U3sb"
 							})
 						})))
@@ -7688,7 +7686,7 @@
 						const e = f && f[0] && f[0].message || n.fbt._("An unknown error occurred", null, {
 							hk: "2oAbwZ"
 						});
-						await d(k(e))
+						await o(k(e))
 					}
 				} catch (h) {
 					s.c.captureException(h);
@@ -7696,9 +7694,9 @@
 						t = e && e.message || n.fbt._("An unknown error occurred", null, {
 							hk: "2oAbwZ"
 						});
-					await d(k(t))
+					await o(k(t))
 				}
-			}, L = Object(r.a)(h.F), U = Object(r.a)(h.Q), M = () => async (e, t) => Object(m.i)(t()) ? Object(d.v)(o.a.ECON_POWERUPS_MARKETING) ? e(Object(l.h)(o.a.ECON_POWERUPS_PURCHASE)) : e(Object(l.h)(o.a.ECON_POWERUPS_MARKETING)) : e(Object(a.h)())
+			}, L = Object(r.a)(h.F), U = Object(r.a)(h.Q), M = () => async (e, t) => Object(m.i)(t()) ? Object(u.v)(l.a.ECON_POWERUPS_MARKETING) ? e(Object(d.h)(l.a.ECON_POWERUPS_PURCHASE)) : e(Object(d.h)(l.a.ECON_POWERUPS_MARKETING)) : e(Object(o.h)())
 		},
 		"./src/reddit/actions/gold/tooltips.ts": function(e, t, i) {
 			"use strict";
@@ -17201,7 +17199,7 @@
 					return r
 				})),
 				function(e) {
-					e.ADD_REMOVAL_REASON = "add_removal_reason", e.ALPHA_CONSUMER = "alpha_consumer", e.BADGE_PICKER = "badge_picker", e.BADGE_PURCHASE = "badge_purchase", e.BAN_USER = "ban_user", e.BLADE_NIGHTMODE = "blade_nightmode", e.BLADE_UNSAVED_CHANGES = "blade_unsaved_changes", e.CHANGE_PASSWORD_MODAL_ID = "account_manager_change_password", e.CONFETTI_ANIMATION_OVERLAY = "confetti_animation_overlay", e.CONFIRM_CLOSE_COIN_MODAL_ID = "confirm_close_coin_modal_id", e.CONFIRM_CLOSE_PREMIUM_MODAL_ID = "confirm_close_premium_modal_id", e.CONTRIBUTOR_REQUEST = "contributor_request", e.CONTRIBUTOR_REQUEST_PENDING = "contributor_request_pending", e.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT = "contributor_request_private_subreddit", e.CONVERT_TO_COINS = "convert_to_coins", e.CRYPTO_BURN_POINTS = "crypto_burn_points", e.DISABLE_TWO_FACTOR = "disable_2fa_modal", e.DOWN_TO_CHAT_PENDING_MODAL = "down_to_chat_pending_modal", e.ECON_CLAIM_FREE_AWARD_MODAL = "econ_claim_free_award_modal", e.ECON_COIN_PURCHASE = "econ_coin_purchase", e.ECON_COIN_PACKAGE_OFFER = "econ_coin_package_offer", e.ECON_POWERUPS_MARKETING = "econ_powerups_marketing", e.ECON_POWERUPS_PURCHASE = "econ_powerups_purchase", e.ECON_TOP_AWARDERS = "econ_top_awarders", e.ENABLE_TWO_FACTOR = "enable_2fa_modal", e.GOLD_GILD_ANIMATION_OVERLAY = "gold_gild_animation_overlay", e.GOLD_GILD_MODAL = "gold_gild_modal", e.GOLD_TARGETED_OFFER_MODAL = "gold_targeted_offer", e.GOOGLE_ONE_TAP_MODAL_ID = "google_one_tap_modal_id", e.GOVERNANCE_OPT_OUT = "governance_opt_out", e.GOVERNANCE_RELEASE_NOTES = "governance_release_notes", e.HARBERGER_TAX_CRYPTO_BANNER_MANAGE = "harberger_tax_crypto_banner_manage", e.HARBERGER_TAX_CRYPTO_BANNER_PURCHASE = "hargerger_tax_crypto_banner_purchase", e.HARBERGER_TAX_BANNER_MANAGE = "harberger_tax_banner_manage", e.HARBERGER_TAX_BANNER_PURCHASE = "harberger_tax_banner_purchase", e.KEYBOARD_SHORTCUTS = "keyboard_shortcuts", e.LINK_APPLE_SSO = "link_apple_sso", e.LINK_GOOGLE_SSO = "link_google_sso", e.LOGIN_MODAL_ID = "account_manager_login", e.MOD_TO_MEMBER_SHARE = "mod_to_member_share", e.CROWD_CONTROL = "crowd_control", e.MULTIREDDIT_ADD_SUBREDDIT = "multireddit_add_subreddit", e.MULTIREDDIT_CREATE = "multireddit_create", e.MULTIREDDIT_DUPLICATE = "multireddit_duplicate", e.MULTIREDDIT_EDIT = "multireddit_edit", e.MUTE_USER = "mute_user", e.ONBOARDING_MODAL_ID = "account_manager_onboarding", e.PINNED_POSTS_LIMIT_REACHED = "pinned_posts_limit_reached", e.REDESIGN_MODAL = "redesign_modal", e.REGISTER_MODAL_ID = "account_manager_register", e.SNOOVATAR_MODAL = "snoovatar_modal", e.SPEZ_MODAL = "spez_modal", e.SUBREDDIT_PREMIUM_BADGE_MANAGEMENT = "subreddit_premium_badge_management", e.SUBREDDIT_PREMIUM_GIFT_MODAL = "subreddit_premium_gift", e.SUBREDDIT_PREMIUM_UPLOAD_MODAL = "subreddit_premium_upload", e.SUBREDDIT_WELCOME_MESSAGE = "subreddit_welcome_message", e.TRANSFER_POINTS = "community_points_transfer", e.TWO_FACTOR_BACKUP_CODES = "two_factor_backup_codes", e.UNLINK_APPLE_SSO = "unlink_apple_sso", e.UNLINK_GOOGLE_SSO = "unlink_google_sso", e.USER_FLAIR_MODAL_ID = "user_flair_modal", e.WALLET_REGISTRATION_MODAL = "wallet_registration_modal"
+					e.ADD_REMOVAL_REASON = "add_removal_reason", e.ALPHA_CONSUMER = "alpha_consumer", e.BADGE_PICKER = "badge_picker", e.BADGE_PURCHASE = "badge_purchase", e.BAN_USER = "ban_user", e.BLADE_NIGHTMODE = "blade_nightmode", e.BLADE_UNSAVED_CHANGES = "blade_unsaved_changes", e.CHANGE_PASSWORD_MODAL_ID = "account_manager_change_password", e.CONFETTI_ANIMATION_OVERLAY = "confetti_animation_overlay", e.CONFIRM_CLOSE_COIN_MODAL_ID = "confirm_close_coin_modal_id", e.CONFIRM_CLOSE_PREMIUM_MODAL_ID = "confirm_close_premium_modal_id", e.CONTRIBUTOR_REQUEST = "contributor_request", e.CONTRIBUTOR_REQUEST_PENDING = "contributor_request_pending", e.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT = "contributor_request_private_subreddit", e.CONVERT_TO_COINS = "convert_to_coins", e.CRYPTO_BURN_POINTS = "crypto_burn_points", e.DISABLE_TWO_FACTOR = "disable_2fa_modal", e.DOWN_TO_CHAT_PENDING_MODAL = "down_to_chat_pending_modal", e.ECON_CLAIM_FREE_AWARD_MODAL = "econ_claim_free_award_modal", e.ECON_COIN_PURCHASE = "econ_coin_purchase", e.ECON_COIN_PACKAGE_OFFER = "econ_coin_package_offer", e.ECON_POWERUPS_MARKETING = "econ_powerups_marketing", e.ECON_POWERUPS_PURCHASE = "econ_powerups_purchase", e.ECON_POWERUPS_SUCCESS = "econ_powerups_success", e.ECON_TOP_AWARDERS = "econ_top_awarders", e.ENABLE_TWO_FACTOR = "enable_2fa_modal", e.GOLD_GILD_ANIMATION_OVERLAY = "gold_gild_animation_overlay", e.GOLD_GILD_MODAL = "gold_gild_modal", e.GOLD_TARGETED_OFFER_MODAL = "gold_targeted_offer", e.GOOGLE_ONE_TAP_MODAL_ID = "google_one_tap_modal_id", e.GOVERNANCE_OPT_OUT = "governance_opt_out", e.GOVERNANCE_RELEASE_NOTES = "governance_release_notes", e.HARBERGER_TAX_CRYPTO_BANNER_MANAGE = "harberger_tax_crypto_banner_manage", e.HARBERGER_TAX_CRYPTO_BANNER_PURCHASE = "hargerger_tax_crypto_banner_purchase", e.HARBERGER_TAX_BANNER_MANAGE = "harberger_tax_banner_manage", e.HARBERGER_TAX_BANNER_PURCHASE = "harberger_tax_banner_purchase", e.KEYBOARD_SHORTCUTS = "keyboard_shortcuts", e.LINK_APPLE_SSO = "link_apple_sso", e.LINK_GOOGLE_SSO = "link_google_sso", e.LOGIN_MODAL_ID = "account_manager_login", e.MOD_TO_MEMBER_SHARE = "mod_to_member_share", e.CROWD_CONTROL = "crowd_control", e.MULTIREDDIT_ADD_SUBREDDIT = "multireddit_add_subreddit", e.MULTIREDDIT_CREATE = "multireddit_create", e.MULTIREDDIT_DUPLICATE = "multireddit_duplicate", e.MULTIREDDIT_EDIT = "multireddit_edit", e.MUTE_USER = "mute_user", e.ONBOARDING_MODAL_ID = "account_manager_onboarding", e.PINNED_POSTS_LIMIT_REACHED = "pinned_posts_limit_reached", e.REDESIGN_MODAL = "redesign_modal", e.REGISTER_MODAL_ID = "account_manager_register", e.SNOOVATAR_MODAL = "snoovatar_modal", e.SPEZ_MODAL = "spez_modal", e.SUBREDDIT_PREMIUM_BADGE_MANAGEMENT = "subreddit_premium_badge_management", e.SUBREDDIT_PREMIUM_GIFT_MODAL = "subreddit_premium_gift", e.SUBREDDIT_PREMIUM_UPLOAD_MODAL = "subreddit_premium_upload", e.SUBREDDIT_WELCOME_MESSAGE = "subreddit_welcome_message", e.TRANSFER_POINTS = "community_points_transfer", e.TWO_FACTOR_BACKUP_CODES = "two_factor_backup_codes", e.UNLINK_APPLE_SSO = "unlink_apple_sso", e.UNLINK_GOOGLE_SSO = "unlink_google_sso", e.USER_FLAIR_MODAL_ID = "user_flair_modal", e.WALLET_REGISTRATION_MODAL = "wallet_registration_modal"
 				}(n || (n = {}));
 			const r = [n.GOOGLE_ONE_TAP_MODAL_ID]
 		},
@@ -33524,7 +33522,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!i.m[t]
 					},
-					importAsync: () => Promise.all([i.e("vendors~ClaimFreeAwardModal~CollectionCommentsPage~CommentsPage~Subreddit~SubredditWelcomeMessageMod~d61175c4"), i.e("vendors~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac"), i.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Frontpage~ModListing~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/pages/Subreddit/index.tsx")),
+					importAsync: () => Promise.all([i.e("vendors~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac"), i.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Frontpage~ModListing~Subreddit"), i.e("Subreddit~SubredditWiki"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/pages/Subreddit/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -33541,7 +33539,7 @@
 				c = "/r/:subredditName/predictions",
 				u = ["/r/:subredditName", c, ...l],
 				_ = {
-					action: Object(d.a)(() => Promise.all([i.e("vendors~ClaimFreeAwardModal~CollectionCommentsPage~CommentsPage~Subreddit~SubredditWelcomeMessageMod~d61175c4"), i.e("vendors~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac"), i.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Frontpage~ModListing~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
+					action: Object(d.a)(() => Promise.all([i.e("vendors~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), i.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac"), i.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Frontpage~ModListing~Subreddit"), i.e("Subreddit~SubredditWiki"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
 					chunk: o.p.SUBREDDIT,
 					component: a,
 					exact: !0,
@@ -44740,4 +44738,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8a5961b70f33da38563d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2b13608564b324978312.js.map
