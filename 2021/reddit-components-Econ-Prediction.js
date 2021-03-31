@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b3853a68c1373a47d8dd.js
-// Retrieved at 3/31/2021, 1:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a9699794abd63b89ecda.js
+// Retrieved at 3/31/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -581,7 +581,6 @@
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less": function(a, i, r) {
 			a.exports = {
-				pseudoBorder: "_3aRGYI2hkv62WrGKPwx7rG",
 				optionButtonWrapper: "_34jfwxE2y_snkXA3q3aaQf",
 				optionButton: "_2ntp-JcW8WtkgytaV4Ulhf",
 				canVote: "_1fbJ_nQTE-D4anabkE96oz",
@@ -607,7 +606,6 @@
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less": function(a, i, r) {
 			a.exports = {
-				container: "_2N8sOpL8HjMfaKS_SGauz6",
 				statusBar: "_3UgGKQLpMCbhSbdPqloGc4",
 				coinIcon: "_1O2NC4MPtXkD58WXlRCpZF",
 				divider: "SZcaijbNtMWo_Hks5p9cB",
@@ -1508,9 +1506,7 @@
 					resolvedOptionId: i,
 					totalStakeAmount: r,
 					isCoins: x
-				}) => t.a.createElement("div", {
-					className: _a.a.container
-				}, r > 0 && x && t.a.createElement("div", {
+				}) => t.a.createElement("div", null, r > 0 && x && t.a.createElement("div", {
 					className: _a.a.statusBar
 				}, t.a.createElement(N.a, {
 					className: _a.a.coinIcon
@@ -1872,19 +1868,7 @@
 					storageKey: V.a.feature
 				}) : null, t.a.createElement("div", {
 					className: ii.a.poll
-				}, t.a.createElement("div", {
-					className: ii.a.predictionsCount
-				}, ia && J > 0 && ei._({
-					"*": "{total voters} predictions made",
-					_1: "{total voters} prediction made"
-				}, [ei._param("total voters", Object(e.b)(J)), ei._plural(J)], {
-					hk: "2u2Nv8"
-				}), t.a.createElement(ja, {
-					isCoins: !ia,
-					endsAt: W,
-					resolvedOptionId: K,
-					totalStakeAmount: Y
-				})), U.map(a => t.a.createElement(Xa, {
+				}, U.map(a => t.a.createElement(Xa, {
 					endsAt: W,
 					key: `prediction-option-${a.id}`,
 					isShowingVoteAnimation: N && Z === a.id,
@@ -1903,7 +1887,19 @@
 					userSelection: Z,
 					userIsLoggedOut: !g,
 					votePercentage: (Z || aa) && a.voteCount ? Math.floor(a.voteCount / J * 100) : null
-				})))), !!xa && t.a.createElement(ya, {
+				}))), t.a.createElement("div", {
+					className: ii.a.predictionsCount
+				}, ia && J > 0 && ei._({
+					"*": "{total voters} predictions made",
+					_1: "{total voters} prediction made"
+				}, [ei._param("total voters", Object(e.b)(J)), ei._plural(J)], {
+					hk: "2u2Nv8"
+				}), t.a.createElement(ja, {
+					isCoins: !ia,
+					endsAt: W,
+					resolvedOptionId: K,
+					totalStakeAmount: Y
+				}))), !!xa && t.a.createElement(ya, {
 					className: ii.a.modal,
 					isCreatingVote: S,
 					onOverlayClick: H,
@@ -2646,4 +2642,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b3853a68c1373a47d8dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a9699794abd63b89ecda.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d5941fc4863786f1fa4f.js
-// Retrieved at 3/31/2021, 1:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.612b7f99cb45413c2575.js
+// Retrieved at 3/31/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -6293,7 +6293,8 @@
 				endDatePicker: "_11No5LInq3EU9b_SdtgV5r",
 				title: "_2OgmT0eiv8yeZkNv_R4vFy",
 				dateTime: "_24VUErhy8JiR-xw9cMsdx0",
-				timeZone: "jHZVOve2QGoctU0iDnnCI"
+				timeZone: "jHZVOve2QGoctU0iDnnCI",
+				timeInput: "_1YzViNj-rqobl3wArJ3k_"
 			}
 		},
 		"./src/reddit/components/PollCreator/Option/index.m.less": function(e, t, n) {
@@ -20750,15 +20751,18 @@
 					}),
 					min: id(),
 					max: Object(rd.a)(),
-					value: n
+					value: n,
+					required: !0
 				}), o.a.createElement(od.a, {
+					className: ud.a.timeInput,
 					"aria-label": d.fbt._("Prediction end time", null, {
 						hk: "1idFl4"
 					}),
 					onChange: e => l({
 						time: e
 					}),
-					value: s
+					value: s,
+					required: !0
 				}), a && o.a.createElement("div", {
 					className: ud.a.timeZone
 				}, a.abbreviation)))
@@ -24293,4 +24297,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d5941fc4863786f1fa4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.612b7f99cb45413c2575.js.map
