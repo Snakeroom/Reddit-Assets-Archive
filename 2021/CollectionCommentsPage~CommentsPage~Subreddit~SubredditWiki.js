@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ec47acb4ac38cde0d103.js
-// Retrieved at 3/31/2021, 1:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.570de3728b05e748dbe4.js
+// Retrieved at 3/31/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -337,7 +337,13 @@
 							createPredictionTournament: c
 						} = o.body.data;
 					if (!(null == c ? void 0 : c.tournament)) throw new Error("Failed to resolve prediction");
-					return c.tournament
+					const {
+						tournament: m
+					} = c;
+					return t(k({
+						subredditId: e,
+						tournaments: [m]
+					})), m
 				}, T = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
@@ -3147,4 +3153,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ec47acb4ac38cde0d103.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.570de3728b05e748dbe4.js.map

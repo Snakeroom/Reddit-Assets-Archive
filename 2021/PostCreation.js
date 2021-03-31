@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.be1f58fac001fa122e85.js
-// Retrieved at 3/31/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.39a96fd624cd15d0e50f.js
+// Retrieved at 3/31/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1390,7 +1390,13 @@
 							createPredictionTournament: d
 						} = a.body.data;
 					if (!(null == d ? void 0 : d.tournament)) throw new Error("Failed to resolve prediction");
-					return d.tournament
+					const {
+						tournament: m
+					} = d;
+					return t(k({
+						subredditId: e,
+						tournaments: [m]
+					})), m
 				}, N = (e, t) => async (n, s, {
 					gqlContext: r
 				}) => {
@@ -24308,4 +24314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.be1f58fac001fa122e85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.39a96fd624cd15d0e50f.js.map
