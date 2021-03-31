@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.0ad9281b66b377b59fe8.js
-// Retrieved at 3/30/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.4a87102dc94c2ff916e8.js
+// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -2201,9 +2201,9 @@
 			}));
 			var i = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => i.ec.Enabled === Object(n.c)(e, {
+			const r = e => i.dc.Enabled === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: i.Yb
+				experimentName: i.Xb
 			})
 		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, s) {
@@ -2264,4 +2264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.0ad9281b66b377b59fe8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.4a87102dc94c2ff916e8.js.map

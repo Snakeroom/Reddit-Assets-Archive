@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7f286e181f2b38de92c6.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2c5b819775493f972b18.js
+// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1244,7 +1244,7 @@
 							}
 						}
 						const d = be(!1, s(), m),
-							c = Object(ne.c)(s()),
+							c = Object(ne.b)(s()),
 							l = O;
 						if (ge(l, d)) {
 							Object(Y.d)(Y.a.LinkedPosts);
@@ -6268,7 +6268,6 @@
 					isChatPost: w.d,
 					isGQLLoggedIn: S.I,
 					isLoggedIn: S.J,
-					listingBelowMonthlyVariant: P.c,
 					listingBelowVariant: P.b,
 					shouldShowSubredditUpsell: z
 				}),
@@ -6307,7 +6306,7 @@
 						style: {
 							color: r
 						}
-					}, e && !Object(y.Dd)(e) ? Object(P.a)(e) ? o.fbt._("More posts like this", null, {
+					}, e && !Object(y.Cd)(e) ? Object(P.a)(e) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -6333,23 +6332,21 @@
 						isChatPost: t,
 						isGQLLoggedIn: s,
 						isLoggedIn: o,
-						listingBelowMonthlyVariant: n,
-						listingBelowVariant: i,
-						post: d,
-						shouldShowSubredditUpsell: c,
-						subredditOrProfile: l
-					} = this.props, m = d && Object(v.a)(d), p = !!i && !Object(y.Dd)(i), u = d && d.id;
-					return s || o || t || m || !c ? null : a.a.createElement("div", {
+						listingBelowVariant: n,
+						post: i,
+						shouldShowSubredditUpsell: d,
+						subredditOrProfile: c
+					} = this.props, l = i && Object(v.a)(i), m = !!n && !Object(y.Cd)(n), p = i && i.id;
+					return s || o || t || l || !d ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
 						className: V.a.postList,
 						disablePlaceholder: !0,
 						forcedLayout: x.g.Large,
 						getScrollContainer: this.scrollContainer,
-						hostPostId: u,
+						hostPostId: p,
 						isTruncated: !0,
-						listingBelowMonthlyVariant: n,
-						listingBelowVariant: i,
+						listingBelowVariant: n,
 						listingKey: this.listingKey(),
 						listingName: C.c.PostDetail,
 						listingViewed: this.onViewed,
@@ -6363,8 +6360,8 @@
 					}), a.a.createElement(D, {
 						className: V.a.footer,
 						onClick: this.onFooterClick,
-						shouldDisplaySeeMore: p,
-						subredditOrProfile: l
+						shouldDisplaySeeMore: m,
+						subredditOrProfile: c
 					}))
 				}
 			}
@@ -6610,7 +6607,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(b.f)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant, void 0, s.listingBelowMonthlyVariant),
+					postClickEventFactory: (e, t) => Object(b.f)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant, void 0),
 					postComponentForLayout: e => Object(h.b)({
 						...e
 					})
@@ -8212,7 +8209,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.M
 				});
-				return !!t && !Object(o.Dd)(t)
+				return !!t && !Object(o.Cd)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -8227,7 +8224,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.sb
 				});
-				return !(!t || Object(o.Dd)(t))
+				return !(!t || Object(o.Cd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -8240,8 +8237,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.Oc
-			}) === o.Xc.Enabled
+				experimentName: o.Nc
+			}) === o.Wc.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -8361,8 +8358,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: o.Lc
-				}) === o.Vc.Enabled
+					experimentName: o.Kc
+				}) === o.Uc.Enabled
 			})(e) && (e => {
 				const t = Object(r.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -8386,4 +8383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7f286e181f2b38de92c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2c5b819775493f972b18.js.map

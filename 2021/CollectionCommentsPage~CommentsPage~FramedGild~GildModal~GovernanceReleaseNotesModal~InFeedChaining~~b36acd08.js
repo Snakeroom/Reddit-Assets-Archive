@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.8f73fda28614a24a7f6b.js
-// Retrieved at 3/31/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.6a8c3d5c2e3ec0bb4524.js
+// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -1494,7 +1494,7 @@
 									modifyRequestHeader(e) {
 										const {
 											appName: t
-										} = u.a, s = `Reddit/Version Build 2fc00117292e43d6731a58a1f5a3d8ba7991027c-production ${t}`;
+										} = u.a, s = `Reddit/Version Build ef302f3e3552b02e698c983a245f1d350e2cc0b6-production ${t}`;
 										return e.setRequestHeader("X-Reddit-Agent", s), e
 									},
 									modifyRequestURL: e => e
@@ -2394,19 +2394,19 @@
 			}));
 			var i = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const n = e => i.zd.Enabled === Object(a.c)(e, {
+			const n = e => i.yd.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: i.ud
+				}),
+				o = e => i.xd.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: i.sd
+				}),
+				r = e => i.zd.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: i.vd
-				}),
-				o = e => i.yd.Enabled === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: i.td
-				}),
-				r = e => i.Ad.Enabled === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: i.wd
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.8f73fda28614a24a7f6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.6a8c3d5c2e3ec0bb4524.js.map

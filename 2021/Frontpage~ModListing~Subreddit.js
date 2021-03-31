@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.51d984c9a5c29d6f0ebc.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.3914b2cda53b36795a82.js
+// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -472,7 +472,7 @@
 						}))
 					}
 				},
-				D = {
+				R = {
 					[b.d.Card]: () => n.fbt._("card", null, {
 						hk: "4qOOHu"
 					}),
@@ -483,7 +483,7 @@
 						hk: "1N7pcz"
 					})
 				},
-				R = Object(h.t)(),
+				D = Object(h.t)(),
 				A = Object(a.c)({
 					dropdownIsOpen: Object(O.b)(N),
 					isInIcons2020: _.a,
@@ -518,7 +518,7 @@
 							layout: n,
 							onLayoutClick: r,
 							postLayout: i
-						} = this.props, a = n || b.e[i], c = e === a, l = s ? T[e] : L[e], u = D[e];
+						} = this.props, a = n || b.e[i], c = e === a, l = s ? T[e] : L[e], u = R[e];
 						return o.a.createElement(w.b, P({}, t, {
 							className: Object(d.a)(E.a.LayoutItem, {
 								[E.a.selected]: c
@@ -570,7 +570,7 @@
 					}), o.a.createElement(g.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = R(B(Object(m.c)(Object(l.a)(M))))
+			t.a = D(B(Object(m.c)(Object(l.a)(M))))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -647,10 +647,10 @@
 				j = s("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
 				L = s("./src/reddit/components/ListingSort/index.m.less"),
 				T = s.n(L),
-				D = s("./src/lib/lessComponent.tsx");
+				R = s("./src/lib/lessComponent.tsx");
 
-			function R() {
-				return (R = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -659,22 +659,22 @@
 				}).apply(this, arguments)
 			}
 			const A = "ListingSort--SortPicker",
-				B = Object(S.a)(D.a.wrapped(x.a, "Dropdown", T.a)),
-				M = D.a.wrapped(j.a, "ListingSortIcon", T.a),
-				V = (D.a.wrapped(k.b, "DropdownTriangle", T.a), D.a.div("Title", T.a)),
-				F = D.a.wrapped(e => r.a.createElement(_.b, R({}, e, {
+				B = Object(S.a)(R.a.wrapped(x.a, "Dropdown", T.a)),
+				M = R.a.wrapped(j.a, "ListingSortIcon", T.a),
+				V = (R.a.wrapped(k.b, "DropdownTriangle", T.a), R.a.div("Title", T.a)),
+				F = R.a.wrapped(e => r.a.createElement(_.b, D({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", T.a),
 				H = ({
 					disabled: e,
 					...t
-				}) => r.a.createElement("div", R({}, t, {
+				}) => r.a.createElement("div", D({}, t, {
 					className: Object(i.a)(T.a.SortWrapper, t.className, {
 						[T.a.isDisabled]: e
 					})
 				})),
-				U = D.a.div("DropdownRowDisabled", T.a),
+				U = R.a.div("DropdownRowDisabled", T.a),
 				K = Object(l.t)({
 					isFrontpage: l.y,
 					isProfilePage: l.G,
@@ -695,7 +695,7 @@
 						tooltipId: t || A
 					}))
 				}));
-			var z = D.a.wrapped(K(W(Object(d.c)(e => r.a.createElement("div", {
+			var z = R.a.wrapped(K(W(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(V, null, w.fbt._("Sort", null, {
@@ -709,7 +709,7 @@
 					showDropdownTriangle: !0
 				}, r.a.createElement(M, {
 					sort: e.sort
-				}))), r.a.createElement(v.a.Consumer, null, t => r.a.createElement(B, R({
+				}))), r.a.createElement(v.a.Consumer, null, t => r.a.createElement(B, D({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: e.dropdownId || A
@@ -910,7 +910,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const $ = D.a.wrapped(x.a, "_Dropdown", Q.a),
+			const $ = R.a.wrapped(x.a, "_Dropdown", Q.a),
 				ee = Object(S.a)($),
 				te = e => {
 					return e.indexOf("_") > 0 && ne(e) === h.w.UnitedStates
@@ -944,7 +944,7 @@
 						e(Object(g.b)(t)), e(Object(c.u)(h.w.UnitedStates + "_" + s))
 					}
 				}));
-			var ce = D.a.wrapped(oe(ae(e => {
+			var ce = R.a.wrapped(oe(ae(e => {
 				const t = `${e.baseUrl}?${q.h}=${h.w.UnitedStates}`;
 				return r.a.createElement("div", {
 					className: e.className,
@@ -1176,7 +1176,7 @@
 						[q.x]: s
 					})
 				},
-				Ce = D.a.div("ListingSortContainer", ye.a),
+				Ce = R.a.div("ListingSortContainer", ye.a),
 				Oe = Object(l.t)(),
 				ke = Object(m.c)({
 					dropdownIsOpen: Object(I.b)("TimeSort--SortPicker")
@@ -1215,10 +1215,10 @@
 				je = s("./src/reddit/icons/fonts/index.tsx"),
 				Le = s("./src/reddit/icons/fonts/Menu/index.tsx"),
 				Te = s("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
-				De = s.n(Te);
+				Re = s.n(Te);
 
-			function Re() {
-				return (Re = Object.assign || function(e) {
+			function De() {
+				return (De = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -1262,11 +1262,11 @@
 							sort: t
 						} = this.props;
 						return r.a.createElement(Ne.q, {
-							className: Object(i.a)(De.a.SortLink, e === t && De.a.selected),
+							className: Object(i.a)(Re.a.SortLink, e === t && Re.a.selected),
 							kind: Ne.a.InternalLink,
 							priority: Ne.b.Plain,
-							Icon: s => r.a.createElement(M, Re({}, s, {
-								className: Object(i.a)(De.a.SortIcon, s.className),
+							Icon: s => r.a.createElement(M, De({}, s, {
+								className: Object(i.a)(Re.a.SortIcon, s.className),
 								sort: e,
 								isFilled: e === t
 							})),
@@ -1286,16 +1286,16 @@
 							key: e
 						}, this.renderSortButton(e), i && r.a.createElement(ge, {
 							baseUrl: Pe.c[Pe.b.Popular],
-							buttonClassName: De.a.DropdownButton,
-							className: De.a.CountrySort,
+							buttonClassName: Re.a.DropdownButton,
+							className: Re.a.CountrySort,
 							disabled: t,
-							dropdownClassName: De.a.Dropdown,
-							rowClassName: De.a.DropdownRow,
-							rowSelectedClassName: De.a.DropdownRowSelected,
-							wrapperClassName: De.a.DropdownSortWrapper,
+							dropdownClassName: Re.a.Dropdown,
+							rowClassName: Re.a.DropdownRow,
+							rowSelectedClassName: Re.a.DropdownRowSelected,
+							wrapperClassName: Re.a.DropdownSortWrapper,
 							showStateAbbreviations: !0,
 							sort: s,
-							stateSortClassName: De.a.StateSort
+							stateSortClassName: Re.a.StateSort
 						}))
 					}
 				}
@@ -1310,37 +1310,37 @@
 					} = this.props, c = !t && Ae.has(n), d = Be.has(n), l = o.filter(e => !Be.has(e)), u = o.filter(e => Be.has(e) && e !== n);
 					return r.a.createElement(Ie.b.Consumer, null, ({
 						icons2020: t
-					}) => r.a.createElement(r.a.Fragment, null, r.a.createElement(z, Re({}, this.props, {
-						buttonClassName: De.a.DropdownButton,
-						className: Object(i.a)(De.a.SortDropdown, e),
-						rowClassName: De.a.DropdownRow,
-						rowIconClassName: De.a.DropdownRowIcon,
-						rowSelectedClassName: De.a.DropdownRowSelected,
+					}) => r.a.createElement(r.a.Fragment, null, r.a.createElement(z, De({}, this.props, {
+						buttonClassName: Re.a.DropdownButton,
+						className: Object(i.a)(Re.a.SortDropdown, e),
+						rowClassName: Re.a.DropdownRow,
+						rowIconClassName: Re.a.DropdownRowIcon,
+						rowSelectedClassName: Re.a.DropdownRowSelected,
 						showTitle: !1
 					})), r.a.createElement("div", {
-						className: Object(i.a)(De.a.SortButtons, e)
+						className: Object(i.a)(Re.a.SortButtons, e)
 					}, l.map(this.renderSort)), d && this.renderSort(n), c && r.a.createElement(Ee, {
 						baseUrl: this.getSortUrl(n),
-						buttonClassName: De.a.DropdownButton,
-						className: De.a.TimeSort,
-						dropdownClassName: De.a.Dropdown,
+						buttonClassName: Re.a.DropdownButton,
+						className: Re.a.TimeSort,
+						dropdownClassName: Re.a.Dropdown,
 						listingSort: n,
 						onChange: s,
-						rowClassName: De.a.DropdownRow,
-						rowSelectedClassName: De.a.DropdownRowSelected,
+						rowClassName: Re.a.DropdownRow,
+						rowSelectedClassName: Re.a.DropdownRowSelected,
 						timeSort: a || h.Wb,
-						wrapperClassName: De.a.DropdownSortWrapper
-					}), u.length > 0 && r.a.createElement(z, Re({}, this.props, {
-						className: Object(i.a)(De.a.SortOverflow, e),
-						dropdownClassName: De.a.Dropdown,
+						wrapperClassName: Re.a.DropdownSortWrapper
+					}), u.length > 0 && r.a.createElement(z, De({}, this.props, {
+						className: Object(i.a)(Re.a.SortOverflow, e),
+						dropdownClassName: Re.a.Dropdown,
 						dropdownId: Me,
-						rowClassName: De.a.DropdownRow,
-						rowIconClassName: De.a.DropdownRowIcon,
-						rowSelectedClassName: De.a.DropdownRowSelected,
+						rowClassName: Re.a.DropdownRow,
+						rowIconClassName: Re.a.DropdownRowIcon,
+						rowSelectedClassName: Re.a.DropdownRowSelected,
 						showTitle: !1,
 						sortOptions: u
 					}), r.a.createElement("button", {
-						className: De.a.SortOverflowButton,
+						className: Re.a.SortOverflowButton,
 						id: Me
 					}, t ? r.a.createElement(je.a, {
 						name: "overflow_horizontal"
@@ -1534,8 +1534,8 @@
 				j = s("./src/reddit/models/Media/index.ts"),
 				L = s("./src/reddit/helpers/brandSafety/index.ts"),
 				T = s("./src/lib/LRUCache/index.ts"),
-				D = s("./src/telemetry/index.ts"),
-				R = s("./src/telemetry/models/Timer.ts"),
+				R = s("./src/telemetry/index.ts"),
+				D = s("./src/telemetry/models/Timer.ts"),
 				A = s("./src/reddit/components/PostList/index.m.less"),
 				B = s.n(A);
 			const {
@@ -1609,12 +1609,12 @@
 					})
 				}
 				UNSAFE_componentWillMount() {
-					this.timerId && D.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = D.c.start())
+					this.timerId && R.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = R.c.start())
 				}
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.viewportHeight = window.innerHeight, this.timerId) {
-						const e = D.c.end(this.timerId);
-						setTimeout(() => Object(D.b)(h.l.Redesign, {
+						const e = R.c.end(this.timerId);
+						setTimeout(() => Object(R.b)(h.l.Redesign, {
 							type: "mount",
 							component: "postList",
 							duration: e
@@ -1622,14 +1622,14 @@
 					}
 				}
 				UNSAFE_componentWillUpdate(e) {
-					this.timerId && D.c.cancel(this.timerId), e.postIds.length && (this.timerId = D.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
+					this.timerId && R.c.cancel(this.timerId), e.postIds.length && (this.timerId = R.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
 				}
 				componentDidUpdate(e) {
 					var t, s;
-					if (g.a.read(() => this.checkAndSendScreenview()), this.timerId && D.c.has(this.timerId)) {
-						const e = D.c.end(this.timerId);
+					if (g.a.read(() => this.checkAndSendScreenview()), this.timerId && R.c.has(this.timerId)) {
+						const e = R.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(D.b)(h.l.Redesign, {
+						setTimeout(() => Object(R.b)(h.l.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "postList"
@@ -1640,7 +1640,7 @@
 					n && n !== (null === (s = e.postIds) || void 0 === s ? void 0 : s[0]) && this.props.onFirstPostChanged(n)
 				}
 				componentWillUnmount() {
-					this.timerId && D.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
+					this.timerId && R.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
 				}
 				isListLongEnough() {
 					const e = this.scrollerRef && Array.from(this.scrollerRef.children),
@@ -1653,7 +1653,7 @@
 						listingKey: t,
 						viewportDataLoaded: s
 					} = this.props;
-					return D.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
+					return R.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
 				}
 				checkAndSendScreenview() {
 					const {
@@ -1662,9 +1662,9 @@
 						sendEvent: s
 					} = this.props;
 					if (!this.shouldSendScreenview()) return;
-					const n = D.c.end(e);
+					const n = R.c.end(e);
 					setTimeout(() => {
-						s(t(n, R.TimerType.InApp))
+						s(t(n, D.TimerType.InApp))
 					}, 0)
 				}
 				showPlaceholder() {
@@ -1750,8 +1750,8 @@
 								layout: n,
 								post: L
 							}),
-							D = `post-list-item-[layout: ${n}]-[postId: ${e}]`,
-							R = z(e, n, s, p, m, g, this.props, t),
+							R = `post-list-item-[layout: ${n}]-[postId: ${e}]`,
+							D = z(e, n, s, p, m, g, this.props, t),
 							A = q(e, n, this.props, t, b),
 							B = Z(e, this.props),
 							M = L.media && L.media.type === j.o.EMBED ? L.media.provider : null;
@@ -1759,7 +1759,7 @@
 							estHeight: Object(I.c)(N, n),
 							id: e,
 							isFocusable: !(!L.media || !(n === O.g.Large || n === O.g.Classic && Object(j.G)(L.media))) && (j.d.has(L.media.type) && (!M || !j.s.has(M)) && !L.isSpoiler && !L.isNSFW),
-							trackOnEnteredViewport: R,
+							trackOnEnteredViewport: D,
 							trackOnExitedViewport: A,
 							render: ({
 								className: t,
@@ -1771,7 +1771,7 @@
 							}) => u.a.createElement(T, {
 								className: t,
 								currentProfileName: r,
-								key: D,
+								key: R,
 								availableWidth: h,
 								eventFactory: f,
 								first: _,
@@ -2040,7 +2040,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(h.f)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant, void 0, s.listingBelowMonthlyVariant),
+					postClickEventFactory: (e, t) => Object(h.f)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant, void 0),
 					postComponentForLayout: e => Object(b.b)({
 						...e
 					})
@@ -2561,7 +2561,7 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: n.zb
 					});
-					return !(!t || Object(n.Dd)(t))
+					return !(!t || Object(n.Cd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -2676,4 +2676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.51d984c9a5c29d6f0ebc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.3914b2cda53b36795a82.js.map

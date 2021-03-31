@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.664d3203a658bb01fb31.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.1b4bbf31a46424b6d44f.js
+// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5301,12 +5301,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.kd.SmIcon:
+						case b.jd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.kd.SmIconHc:
+						case b.jd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5921,7 +5921,7 @@
 					...e,
 					...t,
 					...n,
-					postClickEventFactory: (e, t) => Object(b.f)(e, t, "post", n.listingKey, n.hostPostId, n.listingBelowVariant, void 0, n.listingBelowMonthlyVariant),
+					postClickEventFactory: (e, t) => Object(b.f)(e, t, "post", n.listingKey, n.hostPostId, n.listingBelowVariant, void 0),
 					postComponentForLayout: e => Object(h.b)({
 						...e
 					})
@@ -7400,9 +7400,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.ec.Enabled === Object(r.c)(e, {
+			const o = e => s.dc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Yb
+				experimentName: s.Xb
 			})
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
@@ -7420,7 +7420,7 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: s.zb
 					});
-					return !(!t || Object(s.Dd)(t))
+					return !(!t || Object(s.Cd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -7556,12 +7556,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.dd
+						experimentName: s.cd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.kd.SmIcon || t === s.kd.SmIconHc
+					return t === s.jd.SmIcon || t === s.jd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7584,4 +7584,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.664d3203a658bb01fb31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.1b4bbf31a46424b6d44f.js.map
