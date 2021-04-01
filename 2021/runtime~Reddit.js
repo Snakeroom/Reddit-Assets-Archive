@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.bf74f7e06023671200d4.js
-// Retrieved at 4/1/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d97ff277523d7fe7903b.js
+// Retrieved at 4/1/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var d, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(a, n) && a[n] && b.push(a[n][0]), a[n] = 0;
@@ -606,8 +606,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "cfe1f3c1829983eea9bb",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "4150dbd5f4c6dd6e08ca",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "ff79d7ac06a8a69954f2",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "3bb9b1f4245308ae3dec",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/fr_FR-json": "31d6cfe0d16ae931b73c",
@@ -729,7 +729,7 @@
 					"reddit-components-Governance-CommunityCard": "322854175a9475bbffc2",
 					"reddit-components-Governance-Leaderboard": "235f3d835bf1f00ba9ee",
 					"reddit-pages-CommentsPage-OtherDiscussions": "5cad224fadef40eda022",
-					ChatMessageInput: "7bab9af28ddec9179e82",
+					ChatMessageInput: "282c5e311465d1ff9ebf",
 					RichTextEditor: "14ff00cdef443c7e0f4f",
 					EmailNotificationSettings: "4d06820a8034046fefc8",
 					PushNotificationSettings: "4d06820a8034046fefc8",
@@ -1080,7 +1080,7 @@
 						CoinPurchaseModal: "f14484673ec8e005508b",
 						Coins: "dc2e24e48d1a941b466d",
 						CoinsMobile: "e41f04c6d115641c0e4d",
-						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "13878ed651f010e61a35",
+						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "3a6e5fe55d8a044156d1",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86": "be77e577b67dee57c9a9",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "c186fd5cbaca9f374813",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "dc7b69bd0eed657bb357",
@@ -1159,13 +1159,13 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "57ae4436bf6efd2642a3",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "c6375bdcc7603fc68dcb",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "32019e8d8908c2a6d59f",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "fbddd378f8a6fd7cd8af",
 						"translations/de_DE-json": "e66c010c1cc5d29fc3ec",
 						"translations/es_ES-json": "f6f9d90cf58b49844045",
 						"translations/fr_FR-json": "6eb0648b083943aa9961",
 						"translations/it_IT-json": "a240b0e21366a8889c65",
-						"translations/pseudo_ext-json": "db1c45fb4cde9d718033",
+						"translations/pseudo_ext-json": "8c140f3842a5f471dec7",
 						"translations/pseudo_long-json": "be4e3de7cd171bc3e270",
 						"translations/pseudo_short-json": "e54b9b6c756a3a38b942",
 						"translations/pt_BR-json": "0432bebdc162411d0a6d",
@@ -1282,7 +1282,7 @@
 						"reddit-components-Governance-CommunityCard": "688fa8f976d15160c5ee",
 						"reddit-components-Governance-Leaderboard": "b22d03b24ab14ec550fa",
 						"reddit-pages-CommentsPage-OtherDiscussions": "cf962a9346d2ad743cff",
-						ChatMessageInput: "22f208522ef5cc33c0a2",
+						ChatMessageInput: "37813f52a38dd0e64f77",
 						RichTextEditor: "bef676889e331bc4019b",
 						EmailNotificationSettings: "a758bc1fc1d75a660cf1",
 						PushNotificationSettings: "d9be77385e5ac3f4b630",
@@ -1390,4 +1390,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.bf74f7e06023671200d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d97ff277523d7fe7903b.js.map
