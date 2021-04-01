@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.7860127b3b7bfb14b135.js
-// Retrieved at 4/1/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.ecdbad91219cd641786b.js
+// Retrieved at 4/1/2021, 4:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -737,7 +737,9 @@
 				HTML5StreamPlayer: "zRGpGBNtA_hojI_RK9ouQ",
 				html5StreamPlayer: "zRGpGBNtA_hojI_RK9ouQ",
 				HTML5StreamPlayer__VideoRegular: "_1EQJpXY7ExS04odI1YBBlj",
-				html5StreamPlayerVideoRegular: "_1EQJpXY7ExS04odI1YBBlj"
+				html5StreamPlayerVideoRegular: "_1EQJpXY7ExS04odI1YBBlj",
+				VideoBackgroundStyles: "_14LIEiRn-naKqUT7DJ8vwV",
+				videoBackgroundStyles: "_14LIEiRn-naKqUT7DJ8vwV"
 			}
 		},
 		"./src/reddit/components/HTML5StreamPlayer/index.tsx": function(e, t, s) {
@@ -1494,7 +1496,7 @@
 									modifyRequestHeader(e) {
 										const {
 											appName: t
-										} = u.a, s = `Reddit/Version Build 5c3beebcc073c1e3ea3e27c67a3589250a4ba0f2-production ${t}`;
+										} = u.a, s = `Reddit/Version Build 4d929a326f5187c48e887e9822cde57d41802256-production ${t}`;
 										return e.setRequestHeader("X-Reddit-Agent", s), e
 									},
 									modifyRequestURL: e => e
@@ -1708,7 +1710,9 @@
 					}, this.props.blurImageSrc && l.a.createElement(j, {
 						src: this.props.blurImageSrc
 					}), l.a.createElement("video", {
-						poster: d ? "" : this.props.posterUrl,
+						style: {
+							backgroundImage: d ? "" : `url(${this.props.posterUrl})`
+						},
 						loop: this.props.isGif,
 						autoPlay: b,
 						muted: c,
@@ -2409,4 +2413,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.7860127b3b7bfb14b135.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.ecdbad91219cd641786b.js.map
