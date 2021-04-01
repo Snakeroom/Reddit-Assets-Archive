@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.d1c38b5aefbab53989ef.js
-// Retrieved at 3/31/2021, 1:10:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.f1a12fa4b4535d4aacb0.js
+// Retrieved at 4/1/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -4716,23 +4716,28 @@
 				fbt: Pe
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), je = () => Pe._("To keep Reddit and its communities safe, the Anti-Evil Operations team removes posts that violate Reddit's {=User Agreement} and {=Content Policy} .", [Pe._param("=User Agreement", i.a.createElement("a", {
 				className: Ee.a.link,
-				href: "https://www.redditinc.com/policies/user-agreement\\"
+				href: "https://www.redditinc.com/policies/user-agreement"
 			}, Pe._("User Agreement", null, {
 				hk: "3MHgRl"
 			}))), Pe._param("=Content Policy", i.a.createElement("a", {
 				className: Ee.a.link,
-				href: "https://www.redditinc.com/policies/content-policy\\"
+				href: "https://www.redditinc.com/policies/content-policy"
 			}, Pe._("Content Policy", null, {
 				hk: "3UZthQ"
 			})))], {
 				hk: "4g3zuW"
-			}), Ie = () => Pe._("This content was removed for a violation of Reddit's {=Content Policy} .", [Pe._param("=Content Policy", i.a.createElement("a", {
+			}), Ie = () => Pe._("Reddit administrators occasionally remove posts that violate Reddit's {=User Agreement} and {=Content Policy} .", [Pe._param("=User Agreement", i.a.createElement("a", {
 				className: Ee.a.link,
-				href: "https://www.redditinc.com/policies/content-policy\\"
+				href: "https://www.redditinc.com/policies/user-agreement"
+			}, Pe._("User Agreement", null, {
+				hk: "yMHtU"
+			}))), Pe._param("=Content Policy", i.a.createElement("a", {
+				className: Ee.a.link,
+				href: "https://www.redditinc.com/policies/content-policy"
 			}, Pe._("Content Policy", null, {
-				hk: "2X6v1w"
+				hk: "2dCXGu"
 			})))], {
-				hk: "4DbEQC"
+				hk: "2DLuNP"
 			});
 			var Se = e => {
 				const {
@@ -4763,8 +4768,8 @@
 								hk: "34nHWu"
 							});
 						case T.f.ContentTakedown:
-							return Pe._("This post was removed by Reddit's Legal Operations team.", null, {
-								hk: "1wmhiC"
+							return Pe._("This post was removed by Reddit.", null, {
+								hk: "3uR3iw"
 							});
 						case T.f.CopyrightTakedown:
 							return Pe._("This post was removed by Reddit's Legal Operations team.", null, {
@@ -4806,8 +4811,8 @@
 								hk: "3fs5lF"
 							});
 						case T.f.ContentTakedown:
-							return Pe._("Sorry, this post was removed by Reddit's Legal Operations team.", null, {
-								hk: "jiKO8"
+							return Pe._("Sorry, this post was removed by Reddit.", null, {
+								hk: "3XSuKc"
 							});
 						case T.f.CopyrightTakedown:
 							return Pe._("Sorry, this post was removed by Reddit's Legal Operations team.", null, {
@@ -4843,7 +4848,8 @@
 							return Pe._("To keep Reddit and its communities safe, the Community team occasionally removes posts from feeds. To learn more, {=just ask} .", [Pe._param("=just ask", i.a.createElement("a", {
 								className: Ee.a.link,
 								href: `${Ce.a.redditUrl}/message/compose/?to=r/reddit.com`,
-								target: "_blank"
+								target: "_blank",
+								rel: "noopener noreferrer"
 							}, Pe._("just ask", null, {
 								hk: "jn9ip"
 							})))], {
@@ -4881,7 +4887,8 @@
 							return Pe._("This post is currently awaiting approval by the moderators of {=[subreddit name]} before it can appear in the subreddit.", [Pe._param("=[subreddit name]", i.a.createElement("a", {
 								className: Ee.a.link,
 								href: `${Ce.a.redditUrl}/r/${t}`,
-								target: "_blank"
+								target: "_blank",
+								rel: "noopener noreferrer"
 							}, Pe._("{subreddit name}", [Pe._param("subreddit name", `r/${t}`)], {
 								hk: "2o22vl"
 							})))], {
@@ -8064,4 +8071,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d1c38b5aefbab53989ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f1a12fa4b4535d4aacb0.js.map
