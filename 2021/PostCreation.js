@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.67737e4200931c0f7acf.js
-// Retrieved at 4/1/2021, 2:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9959024e153425b20b1b.js
+// Retrieved at 4/1/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -18990,6 +18990,7 @@
 					hasSubmitValidationError: k.v,
 					destSubreddit: k.h,
 					destSubredditAboutInfo: k.g,
+					govType: e => e.creations.formData.govType,
 					isAddingToTournament: (e, {
 						subredditId: t
 					}) => !!t && Object(k.E)(e, {
@@ -19125,96 +19126,97 @@
 						className: r,
 						destSubreddit: i,
 						destSubredditAboutInfo: a,
-						hasError: c,
-						hasSubmitValidationError: l,
-						isEditingScheduledPost: u,
-						errorMsgs: m,
-						isAddingToTournament: h,
-						isContestMode: b,
-						isCreatingTournamentPrediction: C,
-						isDraftsFeatureEnabled: x,
-						isDraftPending: E,
-						isPoll: v,
-						isMediaUploadPending: _,
-						isPostAsMetaMod: O,
-						isPostPending: y,
-						isSaveDraftEnabled: j,
-						isScheduledPost: k,
-						onPostFieldValidation: I,
-						onScheduledPostSettingsChange: S,
-						onSaveDraft: T,
-						onSubmit: w,
-						postSchedule: P,
-						sendEvent: N,
-						showContributorRequestFlow: M,
-						showScheduledPosts: D,
-						stickyPosition: L,
-						submissionType: R,
-						submitMode: F,
-						subredditGovMeta: A,
-						suggestedSort: B,
-						togglePostSchedulePicker: U
+						govType: c,
+						hasError: l,
+						hasSubmitValidationError: u,
+						isEditingScheduledPost: m,
+						errorMsgs: h,
+						isAddingToTournament: b,
+						isContestMode: C,
+						isCreatingTournamentPrediction: x,
+						isDraftsFeatureEnabled: E,
+						isDraftPending: v,
+						isPoll: _,
+						isMediaUploadPending: O,
+						isPostAsMetaMod: y,
+						isPostPending: j,
+						isSaveDraftEnabled: k,
+						isScheduledPost: I,
+						onPostFieldValidation: S,
+						onScheduledPostSettingsChange: T,
+						onSaveDraft: w,
+						onSubmit: P,
+						postSchedule: N,
+						sendEvent: M,
+						showContributorRequestFlow: D,
+						showScheduledPosts: L,
+						stickyPosition: R,
+						submissionType: F,
+						submitMode: A,
+						subredditGovMeta: B,
+						suggestedSort: U,
+						togglePostSchedulePicker: V
 					} = this.props, {
-						isSaved: V
-					} = this.state, W = E || y || _, G = F === f.q.Post && _, q = F === f.q.Draft && _, {
-						collectionsEnabled: H = !1
-					} = a || {}, K = W, z = Object(ze.a)(Ss.a.ButtonLayout, {
-						[Ss.a.autoWidth]: v || M || D
-					}), J = C || h;
+						isSaved: W
+					} = this.state, G = v || j || O, q = A === f.q.Post && O, H = A === f.q.Draft && O, {
+						collectionsEnabled: K = !1
+					} = a || {}, z = G, J = Object(ze.a)(Ss.a.ButtonLayout, {
+						[Ss.a.autoWidth]: _ || D || L
+					}), Y = c === Q.a.Prediction && (x || b);
 					return o.a.createElement(As, {
 						className: r
 					}, o.a.createElement(ss, {
 						className: Ss.a.postModifiers,
-						disabled: W,
-						onPostFieldValidation: I
+						disabled: G,
+						onPostFieldValidation: S
 					}), o.a.createElement(Us, null, o.a.createElement(Vs, null, o.a.createElement("div", {
-						className: z
-					}, M ? o.a.createElement(Ze.default, {
+						className: J
+					}, D ? o.a.createElement(Ze.default, {
 						eventSource: g.b.PostSubmission,
 						smallButton: !0
-					}) : J ? o.a.createElement(ks, {
+					}) : Y ? o.a.createElement(ks, {
 						disabled: this.shouldDisablePostButton()
 					}) : o.a.createElement(mt, {
 						disabled: this.shouldDisablePostButton(),
-						onClick: w,
-						className: Object(ze.a)(D && Ss.a.removeRightBorderRadius)
-					}, y || G ? o.a.createElement(qs, {
+						onClick: P,
+						className: Object(ze.a)(L && Ss.a.removeRightBorderRadius)
+					}, j || q ? o.a.createElement(qs, {
 						sizePx: Fs
-					}) : o.a.createElement(s.Fragment, null, v && A && A.polls && A.polls.price && i.id ? o.a.createElement(s.Fragment, null, Ts(), o.a.createElement(Ks, {
+					}) : o.a.createElement(s.Fragment, null, _ && B && B.polls && B.polls.price && i.id ? o.a.createElement(s.Fragment, null, Ts(), o.a.createElement(Ks, {
 						subredditId: i.id
-					}), Object(Ye.a)(A.polls.price)) : k ? so(u) : Ts())), D && !J && o.a.createElement(mt, {
+					}), Object(Ye.a)(B.polls.price)) : I ? so(m) : Ts())), L && !Y && o.a.createElement(mt, {
 						title: d.fbt._("Make a scheduled post", null, {
 							hk: "3TBSMs"
 						}),
 						disabled: this.shouldDisablePostScheduleButton(),
 						onClick: this.openPostSchedulePickerModal,
 						className: Ss.a.postScheduleButton,
-						Icon: P ? Object($e.r)(st.a, Ss.a.postScheduleIcon) : Object($e.r)(nt.a, Ss.a.postScheduleIcon)
+						Icon: N ? Object($e.r)(st.a, Ss.a.postScheduleIcon) : Object($e.r)(nt.a, Ss.a.postScheduleIcon)
 					})), e === f.n && o.a.createElement(Xe.a, {
-						isContestMode: b,
-						isPostAsMetaMod: O,
-						sendEvent: N,
-						schedule: P,
-						stickyPosition: L,
-						suggestedSort: B,
-						onChange: S,
-						onClose: U
-					}), x && R !== p.Mb.MEDIA && R !== p.Mb.POLL && !k ? o.a.createElement(Gs, null, o.a.createElement(pt, {
-						disabled: !j || W || V,
-						onClick: T
-					}, E || q ? o.a.createElement(Hs, {
+						isContestMode: C,
+						isPostAsMetaMod: y,
+						sendEvent: M,
+						schedule: N,
+						stickyPosition: R,
+						suggestedSort: U,
+						onChange: T,
+						onClose: V
+					}), E && F !== p.Mb.MEDIA && F !== p.Mb.POLL && !I ? o.a.createElement(Gs, null, o.a.createElement(pt, {
+						disabled: !k || G || W,
+						onClick: w
+					}, v || H ? o.a.createElement(Hs, {
 						sizePx: Fs
 					}) : this.getSaveDraftButtonText())) : o.a.createElement(Ws, null, o.a.createElement(pt, {
-						disabled: W || V,
+						disabled: G || W,
 						onClick: this.onCancel
-					}, ws())), H && t && o.a.createElement(ms, {
-						disabled: K,
+					}, ws())), K && t && o.a.createElement(ms, {
+						disabled: z,
 						isToggled: !!n,
 						onClick: this.handleDestCollectionClick
-					})), o.a.createElement(vt, null), !!(c || m.length || l) && o.a.createElement(et.a, {
+					})), o.a.createElement(vt, null), !!(l || h.length || u) && o.a.createElement(et.a, {
 						className: Ss.a.errorMessages,
-						messages: m,
-						fallbackMessage: l ? Ls() : Rs()
+						messages: h,
+						fallbackMessage: u ? Ls() : Rs()
 					})))
 				}
 			}
@@ -24314,4 +24316,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.67737e4200931c0f7acf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9959024e153425b20b1b.js.map
