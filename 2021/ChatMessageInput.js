@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.37813f52a38dd0e64f77.js
-// Retrieved at 4/1/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.7ea56a32242538892b8a.js
+// Retrieved at 4/1/2021, 2:50:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1295,15 +1295,15 @@
 					screen: a.screen(t),
 					...i(t, e)
 				}),
-				A = e => e => {
-					const t = i(e);
+				A = e => t => {
+					const s = i(t, e);
 					return {
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: a.profile(e),
-						screen: a.screen(e),
-						...t
+						profile: a.profile(t),
+						screen: a.screen(t),
+						...s
 					}
 				},
 				I = e => t => ({
@@ -1998,4 +1998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.37813f52a38dd0e64f77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.7ea56a32242538892b8a.js.map
