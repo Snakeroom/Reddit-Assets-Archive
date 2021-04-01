@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e80e6268f59932aaa628.js
-// Retrieved at 3/30/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4d1539f04447bae231b2.js
+// Retrieved at 4/1/2021, 7:20:19 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1038,10 +1038,13 @@
 						}))(a(), r);
 						if (null == e ? void 0 : e.ok) {
 							const n = e.body.data;
-							n.comments && (n.comments = n.comments.map(e => ({
-								...e,
-								type: c.c.COMMENT
-							}))), n.posts && (n.posts = n.posts.map(e => ({
+							n.comments && (n.comments = n.comments.map(e => {
+								var t;
+								return (null === (t = null == e ? void 0 : e.postInfo) || void 0 === t ? void 0 : t.subreddit) && {
+									...e,
+									type: c.c.COMMENT
+								}
+							})), n.posts && (n.posts = n.posts.map(e => ({
 								...e,
 								type: c.c.POST
 							}))), n.userPosts && (n.userPosts = n.userPosts.map(e => ({
@@ -13761,7 +13764,7 @@
 			}
 		},
 		"./src/graphql/operations/ChatUnitDetails.json": function(e) {
-			e.exports = JSON.parse('{"id":"b4ac6ec4d1ed"}')
+			e.exports = JSON.parse('{"id":"10d167243317"}')
 		},
 		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
 			e.exports = JSON.parse('{"id":"197650c1946c"}')
@@ -14501,4 +14504,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e80e6268f59932aaa628.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4d1539f04447bae231b2.js.map
