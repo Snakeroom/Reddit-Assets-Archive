@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9959024e153425b20b1b.js
-// Retrieved at 4/1/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ae4e869c859ea512cd63.js
+// Retrieved at 4/1/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1355,9 +1355,17 @@
 					if (!a.predictionTournaments) return [];
 					const l = a.predictionTournaments.map(e => {
 							var t, n;
+							const s = null !== (n = null === (t = e.predictionPosts) || void 0 === t ? void 0 : t.map(e => {
+								const t = Object(d.e)(e),
+									n = t.pollData;
+								return {
+									...t,
+									pollData: n
+								}
+							})) && void 0 !== n ? n : [];
 							return {
 								...e,
-								predictionPosts: null !== (n = null === (t = e.predictionPosts) || void 0 === t ? void 0 : t.map(d.e)) && void 0 !== n ? n : []
+								predictionPosts: s
 							}
 						}),
 						u = l.reduce((e, t) => (t.predictionPosts.length && t.predictionPosts.forEach(t => {
@@ -24316,4 +24324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9959024e153425b20b1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ae4e869c859ea512cd63.js.map

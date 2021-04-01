@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.570de3728b05e748dbe4.js
-// Retrieved at 3/31/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e5bcadc61d2bf15557eb.js
+// Retrieved at 4/1/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -302,9 +302,17 @@
 					if (!o.predictionTournaments) return [];
 					const l = o.predictionTournaments.map(e => {
 							var t, r;
+							const n = null !== (r = null === (t = e.predictionPosts) || void 0 === t ? void 0 : t.map(e => {
+								const t = Object(c.e)(e),
+									r = t.pollData;
+								return {
+									...t,
+									pollData: r
+								}
+							})) && void 0 !== r ? r : [];
 							return {
 								...e,
-								predictionPosts: null !== (r = null === (t = e.predictionPosts) || void 0 === t ? void 0 : t.map(c.e)) && void 0 !== r ? r : []
+								predictionPosts: n
 							}
 						}),
 						u = l.reduce((e, t) => (t.predictionPosts.length && t.predictionPosts.forEach(t => {
@@ -3153,4 +3161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.570de3728b05e748dbe4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e5bcadc61d2bf15557eb.js.map

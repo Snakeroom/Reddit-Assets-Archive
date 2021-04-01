@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.0e3117c99b2907dadbfe.js
-// Retrieved at 3/31/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7b7f9bca285619fed9da.js
+// Retrieved at 4/1/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -227,9 +227,17 @@
 					if (!o.predictionTournaments) return [];
 					const e = o.predictionTournaments.map(a => {
 							var i, r;
+							const x = null !== (r = null === (i = a.predictionPosts) || void 0 === i ? void 0 : i.map(a => {
+								const i = Object(s.e)(a),
+									r = i.pollData;
+								return {
+									...i,
+									pollData: r
+								}
+							})) && void 0 !== r ? r : [];
 							return {
 								...a,
-								predictionPosts: null !== (r = null === (i = a.predictionPosts) || void 0 === i ? void 0 : i.map(s.e)) && void 0 !== r ? r : []
+								predictionPosts: x
 							}
 						}),
 						l = e.reduce((a, i) => (i.predictionPosts.length && i.predictionPosts.forEach(i => {
@@ -2648,4 +2656,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.0e3117c99b2907dadbfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7b7f9bca285619fed9da.js.map
