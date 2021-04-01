@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bcab620bd54f5976ef37.js
-// Retrieved at 4/1/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8f9a3eb24250cbd4c5b6.js
+// Retrieved at 4/1/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1448,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("130189"),
+				buildNumber: r("130192"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1617303148"),
+				})("1617304165"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3510,33 +3510,34 @@
 		"./src/lib/initializeClient/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return K
+				return Q
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				r = i("./node_modules/@reddit/i18n-tools/runtime/client/index.js"),
-				s = i("./node_modules/@sentry/browser/esm/sdk.js"),
-				o = i("./node_modules/@sentry/browser/esm/index.js"),
-				d = i("./node_modules/@sentry/minimal/esm/index.js"),
-				a = i("./node_modules/history/esm/history.js"),
-				l = i("./node_modules/js-cookie/src/js.cookie.js"),
-				c = i.n(l),
-				u = i("./node_modules/raf/index.js"),
-				_ = i.n(u),
-				p = i("./node_modules/react/index.js"),
-				m = i.n(p),
-				h = i("./node_modules/react-dom/index.js"),
-				b = i.n(h),
-				f = i("./node_modules/react-redux/es/index.js"),
-				g = i("./node_modules/react-router-redux/es/index.js"),
-				w = i("./node_modules/redux/es/redux.js"),
-				y = (i("./node_modules/redux-immutable-state-invariant/dist/index.js"), i("./src/config.ts")),
-				v = (i("./src/lib/consoleAdvert/index.ts"), i("./src/lib/constants/index.ts"));
-			const E = "mov-2-h";
-			var S = i("./node_modules/react-router/esm/react-router.js");
+				s = i("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/fbt.js"),
+				o = i("./node_modules/@sentry/browser/esm/sdk.js"),
+				d = i("./node_modules/@sentry/browser/esm/index.js"),
+				a = i("./node_modules/@sentry/minimal/esm/index.js"),
+				l = i("./node_modules/history/esm/history.js"),
+				c = i("./node_modules/js-cookie/src/js.cookie.js"),
+				u = i.n(c),
+				_ = i("./node_modules/raf/index.js"),
+				p = i.n(_),
+				m = i("./node_modules/react/index.js"),
+				h = i.n(m),
+				b = i("./node_modules/react-dom/index.js"),
+				f = i.n(b),
+				g = i("./node_modules/react-redux/es/index.js"),
+				w = i("./node_modules/react-router-redux/es/index.js"),
+				y = i("./node_modules/redux/es/redux.js"),
+				v = (i("./node_modules/redux-immutable-state-invariant/dist/index.js"), i("./src/config.ts")),
+				E = (i("./src/lib/consoleAdvert/index.ts"), i("./src/lib/constants/index.ts"));
+			const S = "mov-2-h";
+			var T = i("./node_modules/react-router/esm/react-router.js");
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var i = arguments[t];
 						for (var n in i) Object.prototype.hasOwnProperty.call(i, n) && (e[n] = i[n])
@@ -3545,7 +3546,7 @@
 				}).apply(this, arguments)
 			}
 
-			function O({
+			function I({
 				loadingPage: e,
 				routes: t
 			}) {
@@ -3554,55 +3555,55 @@
 					...t
 				}, i) {
 					const n = {
-						component: t => void 0 !== e ? m.a.createElement(e, T({}, t, {
+						component: t => void 0 !== e ? h.a.createElement(e, O({}, t, {
 							fallback: i
 						})) : null,
 						exact: t.exact,
 						path: t.path
 					};
-					return m.a.createElement(S.d, T({
+					return h.a.createElement(T.d, O({
 						key: Array.isArray(t.path) ? t.path[0] : t.path
 					}, n))
 				})(t, e))
 			}
-			var I = e => t => m.a.createElement(S.e, {
+			var j = e => t => h.a.createElement(T.e, {
 					history: e,
 					children: t.children
 				}),
-				j = i("./src/lib/CSSVariableProvider/index.tsx"),
-				F = i("./src/lib/DeprecatedBrowserProvider/index.tsx"),
-				R = i("./src/lib/initializeClient/combineReducersDynamic.ts"),
-				x = i("./src/lib/initializeClient/installReducer.ts"),
-				C = i("./src/lib/logs/errors.ts"),
-				N = i("./src/lib/matchRoute/index.ts"),
-				A = i("./src/lib/performanceTimings/index.tsx"),
-				D = i("./src/lib/sample/index.ts"),
-				P = i("./src/lib/sentry/index.ts"),
-				k = i("./src/reddit/helpers/localStorage/index.ts"),
-				B = i("./src/reddit/selectors/user.ts"),
-				L = i("./src/telemetry/helpers/sendCounter.ts"),
-				U = i("./src/lib/logSafeJSONStringify/index.ts");
-			const M = e => setTimeout(() => {
+				F = i("./src/lib/CSSVariableProvider/index.tsx"),
+				R = i("./src/lib/DeprecatedBrowserProvider/index.tsx"),
+				x = i("./src/lib/initializeClient/combineReducersDynamic.ts"),
+				C = i("./src/lib/initializeClient/installReducer.ts"),
+				N = i("./src/lib/logs/errors.ts"),
+				A = i("./src/lib/matchRoute/index.ts"),
+				D = i("./src/lib/performanceTimings/index.tsx"),
+				P = i("./src/lib/sample/index.ts"),
+				k = i("./src/lib/sentry/index.ts"),
+				B = i("./src/reddit/helpers/localStorage/index.ts"),
+				L = i("./src/reddit/selectors/user.ts"),
+				U = i("./src/telemetry/helpers/sendCounter.ts"),
+				M = i("./src/lib/logSafeJSONStringify/index.ts");
+			const G = e => setTimeout(() => {
 					throw e
 				}, 0),
-				G = new Set(["displayText", "email", "profileId", "url"].map(e => e.toLowerCase()));
-			var q = e => t => i => n => {
-				"object" == typeof n && P.c.addBreadcrumb({
+				q = new Set(["displayText", "email", "profileId", "url"].map(e => e.toLowerCase()));
+			var V = e => t => i => n => {
+				"object" == typeof n && k.c.addBreadcrumb({
 					message: n.type,
 					category: "redux-action"
 				});
 				const r = t.getState(),
 					s = i(n),
 					o = t.getState();
-				return P.c.setExtra("pageInfo", JSON.parse(Object(U.a)(o.platform))), r.user !== o.user && P.c.setUser(JSON.parse(Object(U.a)(o.user, G))), !e && s instanceof Promise && s.catch(M), s
+				return k.c.setExtra("pageInfo", JSON.parse(Object(M.a)(o.platform))), r.user !== o.user && k.c.setUser(JSON.parse(Object(M.a)(o.user, q))), !e && s instanceof Promise && s.catch(G), s
 			};
-			const V = !1;
+			const W = !1;
 
-			function W(e) {
-				return "ChunkLoadError" !== e.type || Object(D.a)(1)
+			function H(e) {
+				return "ChunkLoadError" !== e.type || Object(P.a)(1)
 			}
-			_.a.polyfill();
-			const H = () => {
+			p.a.polyfill();
+			const $ = () => {
 					if (!(() => {
 							try {
 								return window.history.state || {}
@@ -3617,50 +3618,50 @@
 						}, "", t)
 					}
 				},
-				$ = () => {
-					(document.cookie.match(/loid=/g) || []).length > 1 && (c.a.set("loid", "", {
+				z = () => {
+					(document.cookie.match(/loid=/g) || []).length > 1 && (u.a.set("loid", "", {
 						expires: 0,
 						path: "/"
-					}), c.a.set("loid_created", "", {
+					}), u.a.set("loid_created", "", {
 						expires: 0,
 						path: "/"
 					}))
 				},
-				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c4c91e6bc7412b7dc3b3c3a44b5b3f52965681f36-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+				K = (e, t, i) => {
+					console.log("%cStarting Raven %crelease %c5c3beebcc073c1e3ea3e27c67a3589250a4ba0f2-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
-					n = [new RegExp(`^${y.a.assetPath}`, "i")];
-					s.e({
+					n = [new RegExp(`^${v.a.assetPath}`, "i")];
+					o.e({
 						attachStacktrace: !0,
-						dsn: y.a.sentryClientPublicURL,
+						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4c91e6bc7412b7dc3b3c3a44b5b3f52965681f36-production",
+						release: "5c3beebcc073c1e3ea3e27c67a3589250a4ba0f2-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
-						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
+						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
 							console: !1
-						}), new o.Integrations.GlobalHandlers({
+						}), new d.Integrations.GlobalHandlers({
 							onerror: !0,
 							onunhandledrejection: !1
 						})],
-						beforeSend: e => (e = Object(P.b)(e), Object(P.f)(e) ? null : e.exception && e.exception.values && (e.exception.values = e.exception.values.filter(W), 0 === e.exception.values.length) ? null : (Object(C.sendRavenError)(i(), e), Object(P.e)(e)))
-					}), t.tags && d.j(t.tags), d.i("app", e)
+						beforeSend: e => (e = Object(k.b)(e), Object(k.f)(e) ? null : e.exception && e.exception.values && (e.exception.values = e.exception.values.filter(H), 0 === e.exception.values.length) ? null : (Object(N.sendRavenError)(i(), e), Object(k.e)(e)))
+					}), t.tags && a.j(t.tags), a.i("app", e)
 				};
-			async function K(e) {
+			async function Q(e) {
 				let t;
-				Object(A.e)(A.b.InitClientStart), document.documentElement && "object" == typeof document.documentElement && "string" == typeof document.documentElement.innerHTML && (t = document.documentElement.innerHTML.length);
-				const s = Object(n.b)(() => {}, {
+				Object(D.e)(D.b.InitClientStart), document.documentElement && "object" == typeof document.documentElement && "string" == typeof document.documentElement.innerHTML && (t = document.documentElement.innerHTML.length);
+				const o = Object(n.b)(() => {}, {
 					namespace: e.appName
 				});
-				$(), H();
-				const o = e.history || Object(a.a)(),
-					l = Object(N.a)(o.location.pathname, e.routes),
-					c = l && l.route && l.route.chunk ? l.route.chunk : "unknown";
-				let u = e => e.children;
-				e.raven && (z(e.appName, e.raven, e.apiContext), u = class extends m.a.Component {
+				z(), $();
+				const d = e.history || Object(l.a)(),
+					c = Object(A.a)(d.location.pathname, e.routes),
+					u = c && c.route && c.route.chunk ? c.route.chunk : "unknown";
+				let _ = e => e.children;
+				e.raven && (K(e.appName, e.raven, e.apiContext), _ = class extends h.a.Component {
 					componentDidCatch(e, t) {
-						d.l(i => {
-							i.setExtra("info", t), d.c(e)
+						a.l(i => {
+							i.setExtra("info", t), a.c(e)
 						}), this.setState({
 							errorInfo: t
 						})
@@ -3669,76 +3670,76 @@
 						return this.props.children
 					}
 				});
-				const _ = null === window.onunhandledrejection;
+				const p = null === window.onunhandledrejection;
 				window.onunhandledrejection = e => {
 					try {
-						d.l(t => {
-							t.setExtra("reason", JSON.stringify(e.reason)), d.d(`Unhandled rejection: ${e.reason}`)
+						a.l(t => {
+							t.setExtra("reason", JSON.stringify(e.reason)), a.d(`Unhandled rejection: ${e.reason}`)
 						})
 					} catch (t) {
-						d.l(i => {
-							i.setExtra("lastChance", t.message), d.d(`Unhandled rejection: ${e.reason}`)
+						a.l(i => {
+							i.setExtra("lastChance", t.message), a.d(`Unhandled rejection: ${e.reason}`)
 						})
 					}
 				};
-				const p = window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__({
+				const m = window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__({
 						shouldHotReload: !1
 					}) : e => e,
-					h = [!1, Object(g.d)(o), ...e.customMiddleware || []].filter(Boolean);
-				e.raven && h.unshift(q(_));
-				let y = window.___r || {};
+					b = [!1, Object(w.d)(d), ...e.customMiddleware || []].filter(Boolean);
+				e.raven && b.unshift(V(p));
+				let v = window.___r || {};
 				delete window.___r;
-				const S = document.getElementById("data");
-				S && S.parentNode && S.parentNode.removeChild(S), e.modifyInitialData && (y = e.modifyInitialData({
-					initialData: y,
-					browserHistory: o
+				const T = document.getElementById("data");
+				T && T.parentNode && T.parentNode.removeChild(T), e.modifyInitialData && (v = e.modifyInitialData({
+					initialData: v,
+					browserHistory: d
 				}));
-				const T = Object(R.a)(e.reducerMap),
-					C = Object(w.e)(T, y, Object(w.d)(Object(w.a)(...h), p, e.storeEnhancer || (e => e)));
-				Object(x.b)(e.appName, C, e.reducerMap);
-				const D = Object(r.loadTranslations)(document.documentElement.getAttribute("lang"), async e => (await i("./src/i18n/translatedFbts lazy recursive ^\\.\\/.*\\.json$")(`./${e}.json`)).default),
-					P = y.user && y.user.account ? y.user.account.id : null;
-				Object(k.M)(P);
+				const O = Object(x.a)(e.reducerMap),
+					N = Object(y.e)(O, v, Object(y.d)(Object(y.a)(...b), m, e.storeEnhancer || (e => e)));
+				Object(C.b)(e.appName, N, e.reducerMap);
+				const P = Object(r.loadTranslations)(Object(s.isoLocaleToFbtLocale)(document.documentElement.getAttribute("lang") || "en_US"), async e => (await i("./src/i18n/translatedFbts lazy recursive ^\\.\\/.*\\.json$")(`./${e}.json`)).default),
+					k = v.user && v.user.account ? v.user.account.id : null;
+				Object(B.M)(k);
 				const {
-					routes: U
+					routes: M
 				} = e;
-				let M = {};
-				e.preRender && (M = e.preRender({
-					browserHistory: o,
-					routes: U,
-					store: C,
+				let G = {};
+				e.preRender && (G = e.preRender({
+					browserHistory: d,
+					routes: M,
+					store: N,
 					flags: {
-						DEBUG: V,
-						SUPPORTS_REJECTION_EVENTS: _
+						DEBUG: W,
+						SUPPORTS_REJECTION_EVENTS: p
 					}
-				})), Object(A.e)(A.b.CreateRouteCompsStart);
-				const G = O({
-					routes: U,
+				})), Object(D.e)(D.b.CreateRouteCompsStart);
+				const q = I({
+					routes: M,
 					loadingPage: e.staticPages ? e.staticPages.loading : void 0
 				});
-				await s, Object(A.e)(A.b.ReactHydrateStart), await D,
+				await o, Object(D.e)(D.b.ReactHydrateStart), await P,
 					function(e) {
-						const t = Array.from(e.getElementsByClassName(E));
-						for (const i of t) document.head.appendChild(i), i.classList.remove(E)
-					}(e.target), await new Promise(t => (e.ssr ? b.a.hydrate : b.a.render)(m.a.createElement(u, null, m.a.createElement(f.a, {
-						store: C
-					}, m.a.createElement(j.a, null, m.a.createElement(F.b, {
-						userAgent: y.meta.userAgent
-					}, e.appFactory(I(o), G))))), e.target, t)), Object(A.e)(A.b.ReactHydrateEnd), e.postRender && e.postRender({
-						browserHistory: o,
-						routes: U,
+						const t = Array.from(e.getElementsByClassName(S));
+						for (const i of t) document.head.appendChild(i), i.classList.remove(S)
+					}(e.target), await new Promise(t => (e.ssr ? f.a.hydrate : f.a.render)(h.a.createElement(_, null, h.a.createElement(g.a, {
+						store: N
+					}, h.a.createElement(F.a, null, h.a.createElement(R.b, {
+						userAgent: v.meta.userAgent
+					}, e.appFactory(j(d), q))))), e.target, t)), Object(D.e)(D.b.ReactHydrateEnd), e.postRender && e.postRender({
+						browserHistory: d,
+						routes: M,
 						serverDocumentLength: t,
-						store: C,
-						localStorageData: M.localStorageData
+						store: N,
+						localStorageData: G.localStorageData
 					});
-				const W = Object(B.J)(C.getState());
-				if (Object(A.e)(A.b.InitClientEnd), e.appName === v.l.Redesign) {
+				const H = Object(L.J)(N.getState());
+				if (Object(D.e)(D.b.InitClientEnd), e.appName === E.l.Redesign) {
 					let t = null;
-					e.perfExperimentNameSelector && (t = e.perfExperimentNameSelector(C)), Object(L.b)(v.l.Redesign, {
-						type: L.a.ClientScreenview,
+					e.perfExperimentNameSelector && (t = e.perfExperimentNameSelector(N)), Object(U.b)(E.l.Redesign, {
+						type: U.a.ClientScreenview,
 						data: {
-							pageName: c,
-							loggedIn: W,
+							pageName: u,
+							loggedIn: H,
 							...t ? {
 								perf: t
 							} : {}
@@ -3746,7 +3747,7 @@
 					})
 				}
 				return {
-					store: C
+					store: N
 				}
 			}
 		},
@@ -4083,7 +4084,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "4c91e6bc7412b7dc3b3c3a44b5b3f52965681f36-production",
+						releaseClient: "5c3beebcc073c1e3ea3e27c67a3589250a4ba0f2-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -20052,7 +20053,6 @@
 						const t = Object(m.d)(e);
 						return !!t && f.has(t.toLowerCase())
 					},
-					urlLocaleParam: Object(l.e)(l.g, l.h),
 					__requiredDoNotRemove: l.k
 				},
 				I = o()(O, (e, t) => i => {
@@ -44721,4 +44721,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bcab620bd54f5976ef37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8f9a3eb24250cbd4c5b6.js.map
