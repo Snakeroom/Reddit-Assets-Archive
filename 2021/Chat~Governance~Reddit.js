@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ca083cfd13cd564c6923.js
-// Retrieved at 4/1/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.afca8ae8ea45462a4ea6.js
+// Retrieved at 4/1/2021, 1:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1448,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("130139"),
+				buildNumber: r("130157"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1617289199"),
+				})("1617294966"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3627,14 +3627,14 @@
 					}))
 				},
 				z = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c3ee4c138a0ea27bb6d9250da341fa45dfc76b6b5-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca312290c59adf72d42d2d0ab24f65912b2566ddc-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					s.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "3ee4c138a0ea27bb6d9250da341fa45dfc76b6b5-production",
+						release: "a312290c59adf72d42d2d0ab24f65912b2566ddc-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new o.Integrations.Breadcrumbs({
@@ -4083,7 +4083,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "3ee4c138a0ea27bb6d9250da341fa45dfc76b6b5-production",
+						releaseClient: "a312290c59adf72d42d2d0ab24f65912b2566ddc-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11317,21 +11317,21 @@
 		"./src/reddit/actions/profileConversations.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "f", (function() {
-				return g
-			})), i.d(t, "e", (function() {
 				return w
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return y
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "d", (function() {
 				return v
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return E
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return S
+			})), i.d(t, "a", (function() {
+				return T
 			})), i.d(t, "h", (function() {
-				return x
-			})), i.d(t, "g", (function() {
 				return C
+			})), i.d(t, "g", (function() {
+				return N
 			}));
 			var n = i("./node_modules/lodash/difference.js"),
 				r = i.n(n),
@@ -11345,22 +11345,23 @@
 				_ = i("./src/config.ts"),
 				p = i("./src/lib/makeApiRequest/index.ts"),
 				m = i("./src/reddit/models/RichTextJson/addRTJParam.ts"),
-				h = i("./src/reddit/models/Comment/addProfileImgParam.ts");
-			var b = i("./src/reddit/helpers/makeProfileListingKey/index.ts"),
-				f = i("./src/reddit/selectors/experiments/avatarsInComments.ts");
-			const g = "PROFILE_OVERVIEW_CONVERSATIONS__MORE_POSTS_PENDING",
-				w = "PROFILE_OVERVIEW_CONVERSATIONS__MORE_POSTS_LOADED",
-				y = "PROFILE_OVERVIEW_CONVERSATIONS__MORE_POSTS_FAILED",
-				v = "PROFILE__EXTRACOMMENTS_PENDING",
-				E = "PROFILE__EXTRACOMMENTS_LOADED",
-				S = "PROFILE__EXTRACOMMENTS_FAILED",
-				T = Object(a.a)(g),
+				h = i("./src/reddit/models/Comment/addProfileImgParam.ts"),
+				b = i("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts");
+			var f = i("./src/reddit/helpers/makeProfileListingKey/index.ts"),
+				g = i("./src/reddit/selectors/experiments/avatarsInComments.ts");
+			const w = "PROFILE_OVERVIEW_CONVERSATIONS__MORE_POSTS_PENDING",
+				y = "PROFILE_OVERVIEW_CONVERSATIONS__MORE_POSTS_LOADED",
+				v = "PROFILE_OVERVIEW_CONVERSATIONS__MORE_POSTS_FAILED",
+				E = "PROFILE__EXTRACOMMENTS_PENDING",
+				S = "PROFILE__EXTRACOMMENTS_LOADED",
+				T = "PROFILE__EXTRACOMMENTS_FAILED",
 				O = Object(a.a)(w),
 				I = Object(a.a)(y),
-				j = Object(a.a)(E),
-				F = Object(a.a)(v),
-				R = Object(a.a)(S),
-				x = () => async (e, t, {
+				j = Object(a.a)(v),
+				F = Object(a.a)(S),
+				R = Object(a.a)(E),
+				x = Object(a.a)(T),
+				C = () => async (e, t, {
 					apiContext: i
 				}) => {
 					const n = t(),
@@ -11373,18 +11374,18 @@
 						params: u
 					} = s.routeMatch.match, {
 						sort: h,
-						t: f
+						t: b
 					} = Object(l.a)(n, a), {
 						profileName: g
-					} = u, w = g.toLowerCase(), y = Object(b.a)(w, d.nb, h, a), v = n.listings.postOrder.loadMore[y];
+					} = u, w = g.toLowerCase(), y = Object(f.a)(w, d.nb, h, a), v = n.listings.postOrder.loadMore[y];
 					if (!v) return;
 					const E = n.listings.postOrder.api.pending[y],
 						{
 							fetchedTokens: S
 						} = n.listings.postOrder,
-						j = !(!S[y] || !S[y][v.token]);
-					if (E || j) return;
-					e(T({
+						T = !(!S[y] || !S[y][v.token]);
+					if (E || T) return;
+					e(O({
 						key: y,
 						fetchedToken: v.token
 					}));
@@ -11397,7 +11398,7 @@
 						after: v.token,
 						dist: v.dist,
 						sort: h,
-						t: f,
+						t: b,
 						...o()(a, c.l)
 					});
 					if (F.ok) {
@@ -11406,32 +11407,32 @@
 								...F.body,
 								postIds: r()(F.body.postIds, t)
 							};
-						e(O({
+						e(I({
 							fetchedToken: v.token,
 							key: y,
 							meta: n.meta,
 							profileName: g,
 							...i
 						}))
-					} else e(I({
+					} else e(j({
 						error: F.error,
 						fetchedToken: v.token,
 						key: y,
 						account: F.body.data ? F.body.data.account : null
 					}))
-				}, C = (e, t, i) => async (n, r, {
+				}, N = (e, t, i) => async (n, r, {
 					apiContext: s
 				}) => {
 					const o = r();
 					if (o.pages.profileOverview.conversations.extraComments.api.pending[i]) return;
-					n(F({
+					n(R({
 						extraCommentsId: i
 					}));
 					let a = t;
 					t.startsWith(u.b) && (a = t.slice(u.b.length));
 					const l = i.split("-")[1],
 						c = await ((e, t, i, n, r) => {
-							let s = Object(m.a)(`${_.a.gatewayUrl}/desktopapi/v1/user/${t}/morecomments/${i}`);
+							let s = Object(m.a)(Object(b.a)(`${_.a.gatewayUrl}/desktopapi/v1/user/${t}/morecomments/${i}`));
 							return r && (s = Object(h.a)(s)), Object(p.a)(e, {
 								endpoint: s,
 								method: d.cb.GET,
@@ -11441,12 +11442,12 @@
 									limit: 14
 								}
 							})
-						})(s(), e, a, l, Object(f.a)(o));
-					c.ok ? n(j({
+						})(s(), e, a, l, Object(g.a)(o));
+					c.ok ? n(F({
 						profileName: e,
 						extraCommentsId: i,
 						...c.body
-					})) : n(R(c.body))
+					})) : n(x(c.body))
 				}
 		},
 		"./src/reddit/actions/profileOverviewChrono/constants.ts": function(e, t, i) {
@@ -44719,4 +44720,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ca083cfd13cd564c6923.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.afca8ae8ea45462a4ea6.js.map
