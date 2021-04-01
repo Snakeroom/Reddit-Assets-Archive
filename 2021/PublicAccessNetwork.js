@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.92b60dc7f5ebae8218aa.js
-// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d06e7cafbcc584144ef6.js
+// Retrieved at 4/1/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4401,7 +4401,7 @@
 						onClickShare: () => {
 							this.onShareLink({
 								source: Hs.EndScreen
-							}), this.source = Hs.EndScreen, this.props.onToggleVideoShareModal()
+							}), this.source = Hs.EndScreen
 						},
 						onClickCrosspost: () => {
 							this.onCrosspost({
@@ -5783,4 +5783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.92b60dc7f5ebae8218aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d06e7cafbcc584144ef6.js.map
