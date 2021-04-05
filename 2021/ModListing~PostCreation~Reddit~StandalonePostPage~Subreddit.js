@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.2c64752a550870708e7d.js
-// Retrieved at 3/31/2021, 4:10:21 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.2fa73da5b4ec2c81a968.js
+// Retrieved at 4/5/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"], {
 		"./src/higherOrderComponents/addOverlayEvents.tsx": function(e, t, i) {
@@ -1074,20 +1074,21 @@
 					user: p,
 					userName: _,
 					onPresenceIndicatorInViewport: g,
-					...b
-				} = e, x = !!t && Object(c.e)(t) === _, v = x ? t : p, y = v && v.accountIcon || i, w = p ? p.isNSFW : l, k = Object(a.a)(y);
-				return r.a.createElement("div", {
+					isCommentsPageAd: b,
+					...x
+				} = e, v = !!t && Object(c.e)(t) === _, y = v ? t : p, w = y && y.accountIcon || i, k = p ? p.isNSFW : l, C = Object(a.a)(w), j = r.a.createElement(f.a, h({}, x, {
+					iconUrl: w,
+					isCurrentUser: v,
+					isNSFW: k
+				}));
+				return b ? j : r.a.createElement("div", {
 					className: Object(n.a)(m.a.userIconWrapper, {
-						[m.a.hasHeadShotWrapper]: k
+						[m.a.hasHeadShotWrapper]: C
 					})
-				}, k ? r.a.createElement(u.a, {
-					headshot: y,
+				}, C ? r.a.createElement(u.a, {
+					headshot: w,
 					className: e.className
-				}) : r.a.createElement(f.a, h({}, b, {
-					iconUrl: y,
-					isCurrentUser: x,
-					isNSFW: w
-				})), s && r.a.createElement(d.a, {
+				}) : j, s && r.a.createElement(d.a, {
 					showPresence: !0,
 					isHighlighted: o,
 					onceInViewport: g
@@ -2735,4 +2736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.2c64752a550870708e7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.2fa73da5b4ec2c81a968.js.map
