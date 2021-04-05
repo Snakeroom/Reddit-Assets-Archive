@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.524d1cf3dbb5f5aabc23.js
-// Retrieved at 4/1/2021, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.941a634e192880d6e1ce.js
+// Retrieved at 4/5/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -227,8 +227,8 @@
 				o = c("./src/reddit/icons/svgs/Close/index.tsx"),
 				m = c("./src/reddit/helpers/trackers/predictions.ts"),
 				u = c("./src/reddit/hooks/usePageLayer.ts"),
-				p = c("./src/reddit/hooks/useTracking.ts"),
-				f = c("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				f = c("./src/reddit/hooks/useTracking.ts"),
+				p = c("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				E = c("./src/reddit/components/Econ/PredictionLeaderboard/List/index.tsx"),
 				b = c("./src/reddit/components/Econ/PredictionLeaderboard/Predictor/index.tsx"),
 				h = c("./src/reddit/components/Econ/PredictionLeaderboard/Modal/index.m.less"),
@@ -243,10 +243,10 @@
 				topPredictorsRank: s,
 				tournamentId: h
 			}) {
-				const _ = Object(p.a)(),
+				const _ = Object(f.a)(),
 					v = Object(u.a)(),
 					k = Object(l.w)(v),
-					L = Object(r.e)(e => Object(f.d)(e, {
+					L = Object(r.e)(e => Object(p.d)(e, {
 						subredditId: c
 					}));
 				Object(a.useEffect)(() => {
@@ -324,10 +324,10 @@
 				o = c("./src/reddit/helpers/trackers/predictions.ts"),
 				m = c("./src/reddit/hooks/useTracking.ts"),
 				u = c("./node_modules/fbt/lib/FbtPublic.js"),
-				p = c("./src/config.ts"),
-				f = c("./src/reddit/components/Econ/PredictionLeaderboard/Predictor/PlaceBadge/index.m.less"),
-				E = c.n(f);
-			const b = `${p.a.assetPath}/img/econ/predictions/leaderboard`,
+				f = c("./src/config.ts"),
+				p = c("./src/reddit/components/Econ/PredictionLeaderboard/Predictor/PlaceBadge/index.m.less"),
+				E = c.n(p);
+			const b = `${f.a.assetPath}/img/econ/predictions/leaderboard`,
 				h = `${b}/first@2x.png`,
 				x = `${b}/second@2x.png`,
 				P = `${b}/third@2x.png`,
@@ -378,9 +378,9 @@
 				rank: c,
 				redditor: a,
 				score: u,
-				tournamentId: p
+				tournamentId: f
 			}) {
-				const f = Object(m.a)();
+				const p = Object(m.a)();
 				if (!a) return null;
 				const {
 					icon: E,
@@ -393,7 +393,7 @@
 					className: L.a.rank
 				}, c), n.a.createElement(l.a, {
 					className: L.a.userLink,
-					onClick: () => f(Object(o.d)({
+					onClick: () => p(Object(o.d)({
 						targetUserId: a.id
 					})),
 					to: `/user/${b}`
@@ -416,7 +416,7 @@
 					hk: "3DqdE1"
 				})))), n.a.createElement("div", {
 					className: L.a.score
-				}, p ? n.a.createElement(d.a, {
+				}, f ? n.a.createElement(d.a, {
 					className: L.a.tokenIcon
 				}) : n.a.createElement(i.a, {
 					className: L.a.coinIcon
@@ -428,7 +428,8 @@
 				themedWidget: "_3uxjfiwzc4v4BiMEQHtZ3J",
 				openModalButtonContainer: "Phr96vmtPy_VTwey6qWL_",
 				openModalButton: "_1wSRscxdBnLN2r_D5XZhbe",
-				modal: "PxqE9oFD_60_KiA_nA9CV"
+				modal: "PxqE9oFD_60_KiA_nA9CV",
+				list: "_3DfAiOLDfE9ufqbW_M8d4G"
 			}
 		},
 		"./src/reddit/components/Econ/PredictionLeaderboard/Sidebar/index.tsx": function(e, t, c) {
@@ -446,8 +447,8 @@
 				o = c("./src/reddit/components/SidebarSpacer/index.tsx"),
 				m = c("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
 				u = c("./src/reddit/controls/Button/index.tsx"),
-				p = c("./src/reddit/endpoints/economics/predictions.ts"),
-				f = c("./src/reddit/helpers/trackers/predictions.ts"),
+				f = c("./src/reddit/endpoints/economics/predictions.ts"),
+				p = c("./src/reddit/helpers/trackers/predictions.ts"),
 				E = c("./src/reddit/hooks/useTracking.ts"),
 				b = c("./src/lib/initializeClient/installReducer.ts"),
 				h = c("./src/reddit/reducers/features/predictions/index.ts");
@@ -487,7 +488,7 @@
 				Object(n.useEffect)(() => {
 					(async () => {
 						if (!c) try {
-							await t(d, p.a.AllTime, L, s)
+							await t(d, f.a.AllTime, L, s)
 						} catch (e) {
 							j(!0)
 						}
@@ -509,6 +510,7 @@
 						hk: "3HCYxQ"
 					})
 				}, r.a.createElement(x.a, {
+					className: v.a.list,
 					currentRank: g,
 					topPredictorsRank: I.slice(0, k),
 					tournamentId: s
@@ -518,7 +520,7 @@
 					className: v.a.openModalButton,
 					isFullWidth: !0,
 					onClick: () => {
-						s && b(Object(f.f)()), _(!0)
+						s && b(Object(p.f)()), _(!0)
 					}
 				}, a.fbt._("See All", null, {
 					hk: "1Ozf02"
@@ -537,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.524d1cf3dbb5f5aabc23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.941a634e192880d6e1ce.js.map
