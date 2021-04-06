@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~reddit-components-FormBuilder.7ee7b92639a3249a20c9.js
-// Retrieved at 3/10/2021, 9:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~reddit-components-FormBuilder.e612a5e10a1e99f46476.js
+// Retrieved at 4/6/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~reddit-components-FormBuilder"], {
 		"./node_modules/formik/dist/formik.esm.js": function(e, t, r) {
@@ -12,7 +12,7 @@
 				return qn
 			}));
 			var n = r("./node_modules/react/index.js"),
-				o = r("./node_modules/formik/node_modules/react-fast-compare/index.js"),
+				o = r("./node_modules/react-fast-compare/index.js"),
 				a = r.n(o),
 				i = function(e) {
 					return function(e) {
@@ -1677,51 +1677,6 @@
 			};
 			n.Component, n.Component
 		},
-		"./node_modules/formik/node_modules/react-fast-compare/index.js": function(e, t, r) {
-			"use strict";
-			var n = Array.isArray,
-				o = Object.keys,
-				a = Object.prototype.hasOwnProperty,
-				i = "undefined" != typeof Element;
-			e.exports = function(e, t) {
-				try {
-					return function e(t, r) {
-						if (t === r) return !0;
-						if (t && r && "object" == typeof t && "object" == typeof r) {
-							var u, c, l, s = n(t),
-								f = n(r);
-							if (s && f) {
-								if ((c = t.length) != r.length) return !1;
-								for (u = c; 0 != u--;)
-									if (!e(t[u], r[u])) return !1;
-								return !0
-							}
-							if (s != f) return !1;
-							var d = t instanceof Date,
-								p = r instanceof Date;
-							if (d != p) return !1;
-							if (d && p) return t.getTime() == r.getTime();
-							var v = t instanceof RegExp,
-								b = r instanceof RegExp;
-							if (v != b) return !1;
-							if (v && b) return t.toString() == r.toString();
-							var h = o(t);
-							if ((c = h.length) !== o(r).length) return !1;
-							for (u = c; 0 != u--;)
-								if (!a.call(r, h[u])) return !1;
-							if (i && t instanceof Element && r instanceof Element) return t === r;
-							for (u = c; 0 != u--;)
-								if (!("_owner" === (l = h[u]) && t.$$typeof || e(t[l], r[l]))) return !1;
-							return !0
-						}
-						return t != t && r != r
-					}(e, t)
-				} catch (r) {
-					if (r.message && r.message.match(/stack|recursion/i) || -2146828260 === r.number) return console.warn("Warning: react-fast-compare does not handle circular references.", r.name, r.message), !1;
-					throw r
-				}
-			}
-		},
 		"./node_modules/lodash-es/_cloneBuffer.js": function(e, t, r) {
 			"use strict";
 			(function(e) {
@@ -1784,6 +1739,51 @@
 			"use strict";
 			t.a = function() {
 				return !1
+			}
+		},
+		"./node_modules/react-fast-compare/index.js": function(e, t, r) {
+			"use strict";
+			var n = Array.isArray,
+				o = Object.keys,
+				a = Object.prototype.hasOwnProperty,
+				i = "undefined" != typeof Element;
+			e.exports = function(e, t) {
+				try {
+					return function e(t, r) {
+						if (t === r) return !0;
+						if (t && r && "object" == typeof t && "object" == typeof r) {
+							var u, c, l, s = n(t),
+								f = n(r);
+							if (s && f) {
+								if ((c = t.length) != r.length) return !1;
+								for (u = c; 0 != u--;)
+									if (!e(t[u], r[u])) return !1;
+								return !0
+							}
+							if (s != f) return !1;
+							var d = t instanceof Date,
+								p = r instanceof Date;
+							if (d != p) return !1;
+							if (d && p) return t.getTime() == r.getTime();
+							var v = t instanceof RegExp,
+								b = r instanceof RegExp;
+							if (v != b) return !1;
+							if (v && b) return t.toString() == r.toString();
+							var h = o(t);
+							if ((c = h.length) !== o(r).length) return !1;
+							for (u = c; 0 != u--;)
+								if (!a.call(r, h[u])) return !1;
+							if (i && t instanceof Element && r instanceof Element) return t === r;
+							for (u = c; 0 != u--;)
+								if (!("_owner" === (l = h[u]) && t.$$typeof || e(t[l], r[l]))) return !1;
+							return !0
+						}
+						return t != t && r != r
+					}(e, t)
+				} catch (r) {
+					if (r.message && r.message.match(/stack|recursion/i) || -2146828260 === r.number) return console.warn("Warning: react-fast-compare does not handle circular references.", r.name, r.message), !1;
+					throw r
+				}
 			}
 		},
 		"./node_modules/scheduler/cjs/scheduler.production.min.js": function(e, t, r) {
@@ -2056,4 +2056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-FormBuilder.7ee7b92639a3249a20c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-FormBuilder.e612a5e10a1e99f46476.js.map

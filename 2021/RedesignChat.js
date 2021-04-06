@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.3edc85d5324b52230c00.js
-// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.c1f2fc052b4d991345cb.js
+// Retrieved at 4/6/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(t, e, n) {
@@ -598,63 +598,44 @@
 		"./src/reddit/selectors/appBadges.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "b", (function() {
-				return o
+				return a
 			})), n.d(e, "e", (function() {
-				return d
+				return i
 			})), n.d(e, "d", (function() {
-				return u
+				return o
 			})), n.d(e, "c", (function() {
-				return b
+				return d
 			})), n.d(e, "f", (function() {
-				return l
+				return u
 			})), n.d(e, "a", (function() {
-				return h
+				return b
 			})), n.d(e, "h", (function() {
-				return m
+				return l
 			})), n.d(e, "g", (function() {
-				return f
+				return h
 			})), n.d(e, "j", (function() {
-				return j
+				return m
 			})), n.d(e, "i", (function() {
-				return p
+				return f
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/reddit/selectors/chat.ts"),
-				r = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts"),
-				a = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
-				i = n("./src/reddit/selectors/user.ts");
-			const o = t => t.appBadges.badges,
-				d = Object(s.a)(r.a, o, c.a, (t, e, n) => t ? e && e.directMessages && e.directMessages.count || 0 : n),
-				u = Object(s.a)(o, t => t && t.chatRooms && t.chatRooms.count || 0),
-				b = Object(s.a)(o, t => t && t.chatRoomMentions && t.chatRoomMentions.count || 0),
-				l = Object(s.a)(r.a, c.a, d, u, b, (t, e, n, s, c) => {
+				r = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts");
+			const a = t => t.appBadges.badges,
+				i = Object(s.a)(r.a, a, c.a, (t, e, n) => t ? e && e.directMessages && e.directMessages.count || 0 : n),
+				o = Object(s.a)(a, t => t && t.chatRooms && t.chatRooms.count || 0),
+				d = Object(s.a)(a, t => t && t.chatRoomMentions && t.chatRoomMentions.count || 0),
+				u = Object(s.a)(r.a, c.a, i, o, d, (t, e, n, s, c) => {
 					if (t) {
 						return n + s + c > 0
 					}
 					return e > 0
 				}),
-				h = Object(s.a)(o, t => t && t.activityTab && t.activityTab.count || 0),
-				m = Object(s.a)(o, t => t && t.messageTab && t.messageTab.count || 0),
-				f = Object(s.a)(h, m, (t, e) => t + e),
-				j = Object(s.a)(d, m, (t, e) => t + e),
-				p = Object(s.a)(d, f, (t, e) => t + e);
-			Object(s.a)(i.J, r.a, p, j, m, i.E, d, c.a, a.d, (t, e, n, s, c, r, a, i, o) => {
-				if (!t) return 0;
-				const d = () => {
-					return {
-						inboxCount: e ? c : r || 0,
-						basicChannelCount: e ? a : i || 0
-					}
-				};
-				let u = 0;
-				return u = e ? o ? n : s : (() => {
-					const {
-						inboxCount: t,
-						basicChannelCount: e
-					} = d();
-					return t + e
-				})()
-			})
+				b = Object(s.a)(a, t => t && t.activityTab && t.activityTab.count || 0),
+				l = Object(s.a)(a, t => t && t.messageTab && t.messageTab.count || 0),
+				h = Object(s.a)(b, l, (t, e) => t + e),
+				m = Object(s.a)(i, l, (t, e) => t + e),
+				f = Object(s.a)(i, h, (t, e) => t + e)
 		},
 		"./src/reddit/selectors/chat.ts": function(t, e, n) {
 			"use strict";
@@ -747,4 +728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.3edc85d5324b52230c00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.c1f2fc052b4d991345cb.js.map
