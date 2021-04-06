@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e16e0a5d032e6a9c3bb8.js
-// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c908a068d10fbd103705.js
+// Retrieved at 4/6/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -223,7 +223,7 @@
 				return e.isExternal || e.isLivestreaming ? n.a.createElement("a", {
 					className: t,
 					href: `${o.a.redditUrl}/user/${e.author}`,
-					rel: "nofollow",
+					rel: "noopener noreferrer",
 					target: "_blank"
 				}, e.children) : e.isAuthorDeleted ? n.a.createElement("span", {
 					className: Object(a.a)(c.a.deletedAuthorLink, e.className)
@@ -3170,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e16e0a5d032e6a9c3bb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c908a068d10fbd103705.js.map
