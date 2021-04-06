@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.10a486d39b29d1ba28d2.js
-// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.d465319434dba6c4c109.js
+// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2267,10 +2267,10 @@
 				Ke = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Je = Object(u.a)(P.J, P.I, (e, t) => !e && !t),
 				Ye = e => Object(Ke.b)(e, {
-					experimentName: Ve.Z,
+					experimentName: Ve.W,
 					experimentEligibilitySelector: Je,
 					expEventOverride: !1
-				}) === Ve.jb.Enabled;
+				}) === Ve.fb.Enabled;
 			var Xe = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				Qe = n("./src/reddit/selectors/structuredStyles.ts"),
 				Ze = n("./src/reddit/selectors/subscriptions.ts"),
@@ -4587,9 +4587,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.dc.Enabled === Object(r.c)(e, {
+			const i = e => s.Zb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Xb
+				experimentName: s.Tb
 			})
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
@@ -4663,4 +4663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.10a486d39b29d1ba28d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.d465319434dba6c4c109.js.map

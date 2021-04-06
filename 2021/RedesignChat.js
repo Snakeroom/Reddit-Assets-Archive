@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.c1f2fc052b4d991345cb.js
-// Retrieved at 4/6/2021, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.0388c49569e1747dbfcd.js
+// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(t, e, n) {
@@ -13,7 +13,7 @@
 		"./src/chat/initializer.ts": function(t, e, n) {
 			"use strict";
 			n.r(e), n.d(e, "default", (function() {
-				return J
+				return W
 			}));
 			var s = n("./node_modules/history/esm/history.js"),
 				c = n("./node_modules/js-cookie/src/js.cookie.js"),
@@ -144,7 +144,7 @@
 				}),
 				H = Object(b.a)($.apiContext);
 
-			function J(t, e, n = "/chat/minimize") {
+			function W(t, e, n = "/chat/minimize") {
 				const c = document.getElementById("2x-container"),
 					r = document.createElement("div");
 				return c.appendChild(r), Object(o.a)({
@@ -672,11 +672,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.Zb,
+					experimentName: c.Vb,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = t => Object(i.I)(t) || Object(i.J)(t),
-				u = Object(s.a)(o, t => t === c.fc.Enabled)
+				u = Object(s.a)(o, t => t === c.bc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(t, e, n) {
 			"use strict";
@@ -699,33 +699,33 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.cc,
+					experimentName: c.Yb,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = t => Object(i.I)(t) || Object(i.J)(t),
-				u = Object(s.a)(o, t => t === c.ic.Redesign),
+				u = Object(s.a)(o, t => t === c.ec.Redesign),
 				b = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.bc,
+					experimentName: c.Xb,
 					experimentEligibilitySelector: d
 				}), a.a),
-				l = Object(s.a)(b, t => t === c.hc.Enabled),
+				l = Object(s.a)(b, t => t === c.dc.Enabled),
 				h = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.ac,
+					experimentName: c.Wb,
 					experimentEligibilitySelector: d
 				}), a.a),
-				m = Object(s.a)(h, t => t === c.gc.Enabled),
+				m = Object(s.a)(h, t => t === c.cc.Enabled),
 				f = Object(s.a)(t => Object(r.c)(t, {
 					experimentName: c.R,
 					experimentEligibilitySelector: d
 				}), a.a),
-				j = Object(s.a)(f, t => t === c.eb.NoOverflow),
-				p = Object(s.a)(f, t => t === c.eb.UndoBar),
+				j = Object(s.a)(f, t => t === c.bb.NoOverflow),
+				p = Object(s.a)(f, t => t === c.bb.UndoBar),
 				O = Object(s.a)(t => Object(r.c)(t, {
 					experimentName: c.T,
 					experimentEligibilitySelector: d
 				}), a.a),
-				g = Object(s.a)(u, O, (t, e) => t && e === c.gb.Enabled)
+				g = Object(s.a)(u, O, (t, e) => t && e === c.db.Enabled)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.c1f2fc052b4d991345cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.0388c49569e1747dbfcd.js.map

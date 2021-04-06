@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.42f040c59c790f97f4d9.js
-// Retrieved at 3/31/2021, 11:00:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.4f6d18b6075b841a8688.js
+// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, a) {
@@ -1061,7 +1061,7 @@
 				S = a("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
 				A = a("./src/reddit/constants/experiments.ts"),
 				T = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const B = Object(T.a)(A.Fb);
+			const B = Object(T.a)(A.Bb);
 			var G = a("./src/reddit/selectors/goldPurchaseModals.ts"),
 				L = a("./src/reddit/selectors/user.ts"),
 				R = a("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
@@ -1812,4 +1812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.42f040c59c790f97f4d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.4f6d18b6075b841a8688.js.map

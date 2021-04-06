@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.0b5c4b0e6567015e9bf1.js
-// Retrieved at 4/6/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.45e93e9ef3c486da6871.js
+// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -1496,7 +1496,7 @@
 									modifyRequestHeader(e) {
 										const {
 											appName: t
-										} = u.a, s = `Reddit/Version Build 80534e3980a64db27179e77aad1198739ed588ac-production ${t}`;
+										} = u.a, s = `Reddit/Version Build 252f8d08755a6d6e8af274e087407428aa868b20-production ${t}`;
 										return e.setRequestHeader("X-Reddit-Agent", s), e
 									},
 									modifyRequestURL: e => e
@@ -2398,19 +2398,19 @@
 			}));
 			var i = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const n = e => i.yd.Enabled === Object(a.c)(e, {
+			const n = e => i.ud.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.ud
+					experimentName: i.qd
 				}),
-				o = e => i.xd.Enabled === Object(a.c)(e, {
+				o = e => i.td.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.sd
+					experimentName: i.od
 				}),
-				r = e => i.zd.Enabled === Object(a.c)(e, {
+				r = e => i.vd.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.vd
+					experimentName: i.rd
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.0b5c4b0e6567015e9bf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.45e93e9ef3c486da6871.js.map
