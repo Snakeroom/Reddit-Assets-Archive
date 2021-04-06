@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.382ef873c609c1d2da83.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f97119fcb66cffe48207.js
+// Retrieved at 4/6/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -3168,73 +3168,75 @@
 				const {
 					className: t,
 					flairStyleTemplate: n,
-					hideAwards: r,
-					hideNSFWPref: y,
-					hostPostId: j,
-					iconClassName: k,
-					inSubredditOrProfile: _,
-					isCommentsPage: P,
-					isCompactPinnedPost: C,
-					isCurrentUserProfilePost: E,
-					isOverlay: S,
-					isTopicPage: T,
-					listingKey: N,
-					post: M,
-					shouldShowSubscribeButton: I,
-					showCornerOutboundLink: A,
-					showSubreddit: L,
-					showSubredditIcon: B,
-					subredditOrProfile: F
-				} = e, R = r || T;
+					forceOpenInNewTab: r,
+					hideAwards: y,
+					hideNSFWPref: j,
+					hostPostId: k,
+					iconClassName: _,
+					inSubredditOrProfile: P,
+					isCommentsPage: C,
+					isCompactPinnedPost: E,
+					isCurrentUserProfilePost: S,
+					isOverlay: T,
+					isTopicPage: N,
+					listingKey: M,
+					post: I,
+					shouldShowSubscribeButton: A,
+					showCornerOutboundLink: L,
+					showSubreddit: B,
+					showSubredditIcon: F,
+					subredditOrProfile: R
+				} = e, W = y || N;
 				return o.a.createElement(w, {
 					className: t
-				}, L && F && o.a.createElement("div", {
+				}, B && R && o.a.createElement("div", {
 					className: O.a.subredditIconWrapper
 				}, o.a.createElement(u.a, {
 					"data-click-id": "subreddit",
-					to: F.url
-				}, B && o.a.createElement(l.b, {
-					className: Object(s.a)(O.a.subredditIcon, k),
-					shouldHideNsfwIcon: y,
-					subredditOrProfile: F
+					to: R.url
+				}, F && o.a.createElement(l.b, {
+					className: Object(s.a)(O.a.subredditIcon, _),
+					shouldHideNsfwIcon: j,
+					subredditOrProfile: R
 				}))), o.a.createElement("div", {
 					className: O.a.everythingElseWrapper
-				}, L && o.a.createElement(a.h, {
-					type: M.belongsTo.type,
-					id: M.belongsTo.id
+				}, B && o.a.createElement(a.h, {
+					type: I.belongsTo.type,
+					id: I.belongsTo.id
 				}), o.a.createElement(d.d, {
 					className: O.a.postTopMeta,
+					forceOpenInNewTab: r,
 					flairStyleTemplate: n,
-					tooltipType: S ? d.c.Lightbox : void 0,
-					post: M,
-					showSub: L,
-					subredditOrProfile: F
+					tooltipType: T ? d.c.Lightbox : void 0,
+					post: I,
+					showSub: B,
+					subredditOrProfile: R
 				}), o.a.createElement(c.a, {
 					className: O.a.postBadges,
-					displayText: F ? F.displayText : null,
-					inSubredditOrProfile: _,
-					isCompactPinnedPost: C,
-					post: M,
-					tooltipType: S ? d.c.Lightbox : void 0
-				}), !R && o.a.createElement(i.a, {
-					isPostDetail: P,
-					thing: M,
-					tooltipType: S ? d.c.Lightbox : void 0
-				})), F && L && I && !E && o.a.createElement(p.a, {
+					displayText: R ? R.displayText : null,
+					inSubredditOrProfile: P,
+					isCompactPinnedPost: E,
+					post: I,
+					tooltipType: T ? d.c.Lightbox : void 0
+				}), !W && o.a.createElement(i.a, {
+					isPostDetail: C,
+					thing: I,
+					tooltipType: T ? d.c.Lightbox : void 0
+				})), R && B && A && !S && o.a.createElement(p.a, {
 					className: O.a.SubscribeButton,
-					getEventFactory: e => Object(h.f)(M.id, e ? "unsubscribe" : "subscribe", "post", N, j),
+					getEventFactory: e => Object(h.f)(I.id, e ? "unsubscribe" : "subscribe", "post", M, k),
 					identifier: {
-						name: F.name,
-						type: Object(g.g)(F) ? m.a.PROFILE : m.a.SUBREDDIT
+						name: R.name,
+						type: Object(g.g)(R) ? m.a.PROFILE : m.a.SUBREDDIT
 					},
-					postId: M.id,
+					postId: I.id,
 					size: f.c.XS
-				}), A && o.a.createElement(b.b, {
+				}), L && o.a.createElement(b.b, {
 					className: O.a.OutboundLink,
-					isSponsored: M.isSponsored,
-					postId: M.id,
+					isSponsored: I.isSponsored,
+					postId: I.id,
 					href: Object(x.D)(e.post),
-					source: M.source
+					source: I.source
 				}, o.a.createElement(v.a, {
 					className: O.a.outboundLinkIcon
 				})))
@@ -3638,4 +3640,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.382ef873c609c1d2da83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f97119fcb66cffe48207.js.map
