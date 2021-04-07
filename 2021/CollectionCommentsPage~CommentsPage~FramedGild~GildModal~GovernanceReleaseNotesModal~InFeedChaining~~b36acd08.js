@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.f9043d98abec7aa4ec5d.js
-// Retrieved at 4/6/2021, 6:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.0a25a044af61536930cd.js
+// Retrieved at 4/7/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -1274,7 +1274,7 @@
 					}, this.setContainerRef = e => this.HTML5StreamPlayerContainer = e, this.setControlBarRef = e => this.controlBar = e, this.setControlBarApi = e => this.controlBarApi = e, this.setVolumeRef = e => this.volumeControl = e, this.setSeekBarRef = e => this.seekBar = e, this.setSettingRef = e => this.settingControl = e, this.onCanPlay = () => {
 						if (this.HTML5StreamPlayerVideo && !this.state.videoLoaded) {
 							let e = this.isUnobscured;
-							if (this.props.inVideoScrollPlaybackFixExperiment && (e = (this.props.isOverlay || !this.state.videoScrollPaused) && this.isUnobscured), this.setState({
+							if (this.props.inVideoScrollPlaybackFixExperiment && (e = (!this.props.isListing || this.props.isOverlay || !this.state.videoScrollPaused) && this.isUnobscured), this.setState({
 									videoLoaded: !0,
 									videoWaiting: !1
 								}), this.props.playFromStart) return this.setVideoPos(0), void(e && this.playVideo());
@@ -1586,8 +1586,10 @@
 						try {
 							let s = m && e.autoPlay;
 							if (this.props.inVideoScrollPlaybackFixExperiment) {
-								const t = !i && this.state.videoScrollPaused;
-								s = (e.isOverlay || !t) && m && e.autoPlay
+								let {
+									videoScrollPaused: t
+								} = this.state;
+								this.props.isListing && !i || (t = !1), s = (e.isOverlay || !t) && m && e.autoPlay
 							}
 							t.setAutoPlay(s), t.attachSource(e.mpegDashSource)
 						} catch (p) {}
@@ -1684,7 +1686,7 @@
 						toggleSetting: this.toggleSetting
 					};
 					let V = this.isUnobscured && this.props.autoPlay;
-					return this.props.inVideoScrollPlaybackFixExperiment && (V = (this.props.isOverlay || !this.state.videoScrollPaused) && this.isUnobscured && this.props.autoPlay), l.a.createElement(Re, {
+					return this.props.inVideoScrollPlaybackFixExperiment && (V = (!this.props.isListing || this.props.isOverlay || !this.state.videoScrollPaused) && this.isUnobscured && this.props.autoPlay), l.a.createElement(Re, {
 						setRef: this.setContainerRef,
 						className: Object(u.a)(e, this.state.videoFullScreen ? Ae.a.RedditVideoPlayerRoot__Fullscreen : Ae.a.RedditVideoPlayerRoot, this.state.usingKeys ? "using-keys" : null),
 						isVisible: f,
@@ -2402,4 +2404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.f9043d98abec7aa4ec5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.0a25a044af61536930cd.js.map
