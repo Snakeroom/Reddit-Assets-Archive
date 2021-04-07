@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.dd1eb34a1bf847fb5305.js
-// Retrieved at 4/6/2021, 6:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.e319c0334b0286002673.js
+// Retrieved at 4/6/2021, 8:20:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -606,8 +606,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "edd6f54ab44e899a82cc",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "3df8862b746e7fe19747",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "d3d702732895db8ebfd3",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "9a94d7ce00a5ce8ae9ec",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/fr_FR-json": "31d6cfe0d16ae931b73c",
@@ -1085,14 +1085,14 @@
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "aee162ad4b31a49b8339",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "4e0a6dade0dc5fb9a320",
 						"CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc": "5fe864563456c158e9be",
-						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "fc2708d4b6e293370d56",
+						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "12489e27d00d4c73103f",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "1d4044c99720ef8f6b7a",
 						"ProfileComments~ProfileOverview": "c750d12916cee8fb9719",
 						ProfileComments: "7f554e9a9c0ac63e329f",
 						ProfileOverview: "93282c1dd24d0c8a1ee9",
 						ProfilePrivate: "187620cccf893d628bdf",
-						SearchResults: "0ed38ade9c83bbb1cc42",
-						"ModQueuePages~ModerationPages": "8db12cbe2b2a3c5eee05",
+						SearchResults: "d0d559a3df546fac8240",
+						"ModQueuePages~ModerationPages": "6ecfe18f884707c573fd",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "641b76c95636bfe82210",
 						ModQueuePages: "709a294d3ca4313eb683",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "ba6c408b73d24ab62528",
@@ -1159,13 +1159,13 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "be678ae7f5570f3e8a06",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "e46d27a0e5e7f843da58",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "816b8338803f3f3858e0",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "55c32121ee07132ed432",
 						"translations/de_DE-json": "1211bea41850e46ed697",
 						"translations/es_ES-json": "0099cafc32fbe6ec5ba1",
 						"translations/fr_FR-json": "473eba25199015559c0e",
 						"translations/it_IT-json": "0040f72c3ea7ff062bbc",
-						"translations/pseudo_ext-json": "be1b50e8b90f3086e75e",
+						"translations/pseudo_ext-json": "6ccdeda756090c711261",
 						"translations/pseudo_long-json": "0492f371c6585ca7109e",
 						"translations/pseudo_short-json": "642ec9a07975f8c04f19",
 						"translations/pt_BR-json": "08afd5f5193e5b06f874",
@@ -1271,7 +1271,7 @@
 						ChatPage: "86863bf7c87f03003f7d",
 						ChatReportFlow: "8178e3213d617e04bc98",
 						"ChatMessageInput~ChatPost": "955c6b080cf736340db8",
-						ChatPost: "3e477760e9db36a77b4f",
+						ChatPost: "714978143dc23e174a12",
 						CommentsPageNativeAd: "ffc0ceabe591304c64cf",
 						EconomicsSubredditPremiumSidebarCards: "58cd33dd28bc0a7220fd",
 						HarbergerTaxBannerPurchaseCTA: "d1f5f840445386a69322",
@@ -1390,4 +1390,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.dd1eb34a1bf847fb5305.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e319c0334b0286002673.js.map

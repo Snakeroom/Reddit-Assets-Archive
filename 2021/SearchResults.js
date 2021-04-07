@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.0ed38ade9c83bbb1cc42.js
-// Retrieved at 4/6/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d0d559a3df546fac8240.js
+// Retrieved at 4/6/2021, 8:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1801,7 +1801,14 @@
 					subredditDisplayText: F,
 					topSupporterTooltipId: A,
 					isInIcons2020: v
-				})), !u && o.a.createElement(o.a.Fragment, null, o.a.createElement(H, {
+				})), !u && o.a.createElement(o.a.Fragment, null, !a.isDeleted && !E && o.a.createElement(o.a.Fragment, null, o.a.createElement(k.b, {
+					className: we.a.metaText,
+					isScoreHidden: a.isScoreHidden,
+					score: a.score
+				}), o.a.createElement(k.c, {
+					className: we.a.metaText,
+					key: "scoreCreatedSeparator"
+				})), o.a.createElement(H, {
 					key: "Created",
 					className: we.a.MetaLink,
 					comment: a,
@@ -9285,4 +9292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0ed38ade9c83bbb1cc42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d0d559a3df546fac8240.js.map

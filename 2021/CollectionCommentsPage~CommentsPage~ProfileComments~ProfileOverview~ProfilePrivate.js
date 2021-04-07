@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fc2708d4b6e293370d56.js
-// Retrieved at 4/6/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.12489e27d00d4c73103f.js
+// Retrieved at 4/6/2021, 8:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1800,7 +1800,14 @@
 					subredditDisplayText: P,
 					topSupporterTooltipId: F,
 					isInIcons2020: E
-				})), !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(V, {
+				})), !u && r.a.createElement(r.a.Fragment, null, !a.isDeleted && !_ && r.a.createElement(r.a.Fragment, null, r.a.createElement(O.b, {
+					className: Me.a.metaText,
+					isScoreHidden: a.isScoreHidden,
+					score: a.score
+				}), r.a.createElement(O.c, {
+					className: Me.a.metaText,
+					key: "scoreCreatedSeparator"
+				})), r.a.createElement(V, {
 					key: "Created",
 					className: Me.a.MetaLink,
 					comment: a,
@@ -3938,4 +3945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fc2708d4b6e293370d56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.12489e27d00d4c73103f.js.map

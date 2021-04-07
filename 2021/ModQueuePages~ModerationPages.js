@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.8db12cbe2b2a3c5eee05.js
-// Retrieved at 4/6/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.6ecfe18f884707c573fd.js
+// Retrieved at 4/6/2021, 8:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -404,7 +404,7 @@
 							hk: "16O2Sk"
 						})
 					}))
-				}, U = Object(r.a)(O.t), H = Object(r.a)(O.s), W = Object(r.a)(O.r), z = (e, t, n) => async (o, r, {
+				}, H = Object(r.a)(O.t), U = Object(r.a)(O.s), W = Object(r.a)(O.r), z = (e, t, n) => async (o, r, {
 					apiContext: g
 				}) => {
 					o(Object(i.c)());
@@ -569,7 +569,7 @@
 							}), (() => async (e, t, {
 								apiContext: n
 							}) => {
-								e(U());
+								e(H());
 								const o = t(),
 									r = Object.keys(o.pages.modHub.modQueue.bulkAction.undoLastAction)[0],
 									a = o.pages.modHub.modQueue.bulkAction.undoLastAction[r],
@@ -578,7 +578,7 @@
 								const m = await Object(c.a)(n(), r, {
 									ids: a
 								});
-								m.ok ? e(H({
+								m.ok ? e(U({
 									...m.body,
 									operation: r,
 									ids: a,
@@ -841,13 +841,13 @@
 						mod_note: t.modNote
 					}
 				}),
-				U = (e, t, n) => Object(L.a)(Object(D.a)(e, [F.a]), {
+				H = (e, t, n) => Object(L.a)(Object(D.a)(e, [F.a]), {
 					endpoint: Object(V.a)(`${e.apiUrl}/api/v1/modactions/removal_${n}_message/`),
 					method: k.cb.POST,
 					type: "json",
 					data: t
 				});
-			var H = n("./src/reddit/helpers/isPost.ts"),
+			var U = n("./src/reddit/helpers/isPost.ts"),
 				W = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				z = n("./src/reddit/helpers/routeKey/index.ts"),
 				G = n("./src/reddit/models/ModQueue/index.ts"),
@@ -958,7 +958,7 @@
 					const d = i(),
 						c = d.user.account && d.user.account.displayText,
 						l = e[0],
-						m = Object(H.a)(l) ? q.e.Post : q.e.Comment,
+						m = Object(U.a)(l) ? q.e.Post : q.e.Comment,
 						u = m === q.e.Post ? d.posts.models[l] : d.features.comments.models[l],
 						p = m === q.e.Post ? T.L : j.h;
 					if (!u || !c) return !1;
@@ -984,7 +984,7 @@
 									title: t.title,
 									type: s
 								},
-								i = await U(a(), Object(q.h)(o, m), m);
+								i = await H(a(), Object(q.h)(o, m), m);
 							if (i.ok) {
 								if (s === q.f.Public) {
 									if (r(ve()), i.body) {
@@ -1086,7 +1086,7 @@
 									title: t.title,
 									type: o
 								},
-								r = await U(d(), Object(q.h)(s, q.e.Bulk), q.e.Bulk);
+								r = await H(d(), Object(q.h)(s, q.e.Bulk), q.e.Bulk);
 							r.ok ? (i(ge()), i(m)) : i(Oe(r.error))
 						} else i(m)
 					} else i(Ce(p.error))
@@ -1555,8 +1555,8 @@
 			};
 			var V = n("./src/lib/addQueryParams/index.ts"),
 				B = n("./src/lib/humanizeDateTime/index.ts"),
-				U = n("./src/lib/timeAgo/index.ts"),
-				H = n("./src/reddit/actions/comment/index.ts");
+				H = n("./src/lib/timeAgo/index.ts"),
+				U = n("./src/reddit/actions/comment/index.ts");
 			const W = e => {
 					const {
 						className: t,
@@ -1581,7 +1581,7 @@
 						onMouseLeave: c,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, Object(U.d)(n.created, {
+					}, Object(H.d)(n.created, {
 						noPostfix: s,
 						shortenedUnit: s
 					}), r.a.createElement(M.c, {
@@ -1595,9 +1595,9 @@
 					}))
 				},
 				G = (e, t, n) => {
-					window.removeEventListener("focus", n), e(Object(H.f)({
+					window.removeEventListener("focus", n), e(Object(U.f)({
 						commentListNodeId: t
-					})), window.setTimeout(() => e(Object(H.f)({
+					})), window.setTimeout(() => e(Object(U.f)({
 						commentListNodeId: t
 					})), 5e3)
 				};
@@ -1619,7 +1619,7 @@
 				editedAt: t
 			}) => r.a.createElement(S.a, {
 				className: Z.a.editedText
-			}, Y._("edited {time}", [Y._param("time", Object(U.d)(t, {
+			}, Y._("edited {time}", [Y._param("time", Object(H.d)(t, {
 				noPostfix: e,
 				shortenedUnit: e
 			}))], {
@@ -1868,10 +1868,10 @@
 					comment: n,
 					renderedInOverlay: s
 				}) => N(e, n.id, s),
-				Ue = () => s.fbt._("Reddit admin, speaking officially", null, {
+				He = () => s.fbt._("Reddit admin, speaking officially", null, {
 					hk: "3vg8wE"
 				}),
-				He = () => s.fbt._("Reddit admin emeritus", null, {
+				Ue = () => s.fbt._("Reddit admin emeritus", null, {
 					hk: "1Md5AV"
 				}),
 				We = e => s.fbt._("Moderator of {subredditDisplayText}, speaking officially", [s.fbt._param("subredditDisplayText", e)], {
@@ -2020,7 +2020,14 @@
 					subredditDisplayText: L,
 					topSupporterTooltipId: D,
 					isInIcons2020: g
-				})), !u && r.a.createElement(r.a.Fragment, null, r.a.createElement(W, {
+				})), !u && r.a.createElement(r.a.Fragment, null, !a.isDeleted && !O && r.a.createElement(r.a.Fragment, null, r.a.createElement(S.b, {
+					className: Pe.a.metaText,
+					isScoreHidden: a.isScoreHidden,
+					score: a.score
+				}), r.a.createElement(S.c, {
+					className: Pe.a.metaText,
+					key: "scoreCreatedSeparator"
+				})), r.a.createElement(W, {
 					key: "Created",
 					className: Pe.a.MetaLink,
 					comment: a,
@@ -2130,17 +2137,17 @@
 						isInIcons2020: t,
 						renderedInOverlay: n
 					}), e.isAdmin && r.a.createElement(Te, {
-						desc: Ue(),
+						desc: He(),
 						id: s.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
 						onMouseLeave: s.onHideTooltip,
 						isFilled: t
-					}), e.isAdmin && Ze(s.adminTooltipId, Ue()), e.distinguishType === u.C.ALUMNI_ADMIN && r.a.createElement(Ae, {
-						"aria-label": He(),
+					}), e.isAdmin && Ze(s.adminTooltipId, He()), e.distinguishType === u.C.ALUMNI_ADMIN && r.a.createElement(Ae, {
+						"aria-label": Ue(),
 						id: s.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
 						onMouseLeave: s.onHideTooltip
-					}, "Δ"), e.distinguishType === u.C.ALUMNI_ADMIN && Ze(s.adminEmeritusTooltipId, He()), e.isMod && (t ? r.a.createElement(T.a, {
+					}, "Δ"), e.distinguishType === u.C.ALUMNI_ADMIN && Ze(s.adminEmeritusTooltipId, Ue()), e.isMod && (t ? r.a.createElement(T.a, {
 						name: "mod",
 						isFilled: !0,
 						className: Pe.a.ModeratorIcon,
@@ -3118,8 +3125,8 @@
 				F = n("./src/telemetry/helpers/sendEvent.ts"),
 				V = n("./src/telemetry/helpers/sendTiming.ts"),
 				B = n("./src/reddit/components/Scroller/Simple.m.less"),
-				U = n.n(B);
-			const H = A.g,
+				H = n.n(B);
+			const U = A.g,
 				W = 5 * p.G,
 				z = 3,
 				G = Object(u.c)({
@@ -3387,14 +3394,14 @@
 						const n = this.childMap.get(e);
 						if (!n || !n.el) return;
 						const s = n.el.firstChild;
-						s && (t !== n.el.style.height && (n.el.style.height = t), s.classList.add(U.a.Hidden), this.hiddenChildren[e] = t, n.loaded && h.a.write(() => {
+						s && (t !== n.el.style.height && (n.el.style.height = t), s.classList.add(H.a.Hidden), this.hiddenChildren[e] = t, n.loaded && h.a.write(() => {
 							n.itemRef && (n.loaded = !1, n.focused = !1, n.itemRef.unmountContent())
 						}))
 					}, this.showChild = e => {
 						const t = this.childMap.get(e);
 						if (!t || !t.el) return;
 						const n = t.el.firstChild;
-						n && (this.remeasureWhenShown[t.id] && (this.measurementsInvalid = !0, this.remeasureWhenShown[t.id] = void 0), t.el.style.height = "", n.classList.remove(U.a.Hidden), void 0 !== this.hiddenChildren[e] && (this.hiddenChildren[e] = void 0))
+						n && (this.remeasureWhenShown[t.id] && (this.measurementsInvalid = !0, this.remeasureWhenShown[t.id] = void 0), t.el.style.height = "", n.classList.remove(H.a.Hidden), void 0 !== this.hiddenChildren[e] && (this.hiddenChildren[e] = void 0))
 					}, this.getStylesForOuterWrapper = e => {
 						if (void 0 !== this.hiddenChildren[e]) return {
 							height: this.hiddenChildren[e]
@@ -3619,7 +3626,7 @@
 						ref: this.getWrapperRefFN(e.id),
 						style: this.getStylesForOuterWrapper(e.id)
 					}, d.a.createElement("div", {
-						className: this.hiddenChildren[e.id] ? U.a.Hidden : void 0
+						className: this.hiddenChildren[e.id] ? H.a.Hidden : void 0
 					}, e.render({
 						className: N.k,
 						height: e.estHeight,
@@ -3628,7 +3635,7 @@
 						scrollToAndRemeasure: this.scrollToChild,
 						setScrollerChildRef: this.getChildRefFn(e.id),
 						shouldLoadInitially: t < ee,
-						width: H
+						width: U
 					})))), !!e && d.a.createElement(T.a, {
 						containerRef: e,
 						onResize: this.handleContentContainerResize
@@ -4384,4 +4391,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.8db12cbe2b2a3c5eee05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.6ecfe18f884707c573fd.js.map

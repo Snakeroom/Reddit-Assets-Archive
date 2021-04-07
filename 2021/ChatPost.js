@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.3e477760e9db36a77b4f.js
-// Retrieved at 4/6/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.714978143dc23e174a12.js
+// Retrieved at 4/6/2021, 8:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1109,7 +1109,14 @@
 					subredditDisplayText: P,
 					topSupporterTooltipId: B,
 					isInIcons2020: g
-				})), !p && a.a.createElement(a.a.Fragment, null, a.a.createElement(V, {
+				})), !p && a.a.createElement(a.a.Fragment, null, !i.isDeleted && !_ && a.a.createElement(a.a.Fragment, null, a.a.createElement(T.b, {
+					className: je.a.metaText,
+					isScoreHidden: i.isScoreHidden,
+					score: i.score
+				}), a.a.createElement(T.c, {
+					className: je.a.metaText,
+					key: "scoreCreatedSeparator"
+				})), a.a.createElement(V, {
 					key: "Created",
 					className: je.a.MetaLink,
 					comment: i,
@@ -3480,4 +3487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.3e477760e9db36a77b4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.714978143dc23e174a12.js.map
