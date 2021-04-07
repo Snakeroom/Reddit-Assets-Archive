@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1684d13caeeede01b9fb.js
-// Retrieved at 4/7/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5f759891eac479d152e6.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1448,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("130642"),
+				buildNumber: r("130651"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1617814454"),
+				})("1617817612"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -1570,7 +1570,7 @@
 			e.exports = JSON.parse('{"id":"cbcafcbff9c6"}')
 		},
 		"./src/graphql/operations/GetSubredditQuestions.json": function(e) {
-			e.exports = JSON.parse('{"id":"8ba5c621ab48"}')
+			e.exports = JSON.parse('{"id":"15c4ad40a0bc"}')
 		},
 		"./src/graphql/operations/GetSubredditWelcomeMessage.json": function(e) {
 			e.exports = JSON.parse('{"id":"ba4eb4e2972f"}')
@@ -1621,7 +1621,7 @@
 			e.exports = JSON.parse('{"id":"d8e8b72bd46f"}')
 		},
 		"./src/graphql/operations/SubredditPageExtra.json": function(e) {
-			e.exports = JSON.parse('{"id":"04c7a91b4d7c"}')
+			e.exports = JSON.parse('{"id":"6e779628485e"}')
 		},
 		"./src/graphql/operations/SubredditPostFlairStyleTemplates.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a87d9b91dc4"}')
@@ -3628,14 +3628,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c37ae8aecb8f480970d3acd23637d5762adeb127e-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c474f721bb1f361e1a2aaa2e90c2389c1024b2301-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "37ae8aecb8f480970d3acd23637d5762adeb127e-production",
+						release: "474f721bb1f361e1a2aaa2e90c2389c1024b2301-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -4084,7 +4084,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "37ae8aecb8f480970d3acd23637d5762adeb127e-production",
+						releaseClient: "474f721bb1f361e1a2aaa2e90c2389c1024b2301-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -12631,48 +12631,46 @@
 				return r
 			})), i.d(t, "c", (function() {
 				return s
-			})), i.d(t, "k", (function() {
-				return o
 			})), i.d(t, "j", (function() {
-				return d
-			})), i.d(t, "s", (function() {
-				return a
-			})), i.d(t, "r", (function() {
-				return l
-			})), i.d(t, "n", (function() {
-				return c
-			})), i.d(t, "m", (function() {
-				return u
-			})), i.d(t, "l", (function() {
-				return _
-			})), i.d(t, "q", (function() {
-				return p
-			})), i.d(t, "p", (function() {
-				return m
-			})), i.d(t, "o", (function() {
-				return h
+				return o
 			})), i.d(t, "i", (function() {
-				return b
+				return d
+			})), i.d(t, "r", (function() {
+				return a
+			})), i.d(t, "q", (function() {
+				return l
+			})), i.d(t, "m", (function() {
+				return c
+			})), i.d(t, "l", (function() {
+				return u
+			})), i.d(t, "k", (function() {
+				return _
+			})), i.d(t, "p", (function() {
+				return p
+			})), i.d(t, "o", (function() {
+				return m
+			})), i.d(t, "n", (function() {
+				return h
 			})), i.d(t, "h", (function() {
-				return f
+				return b
 			})), i.d(t, "g", (function() {
-				return g
-			})), i.d(t, "u", (function() {
-				return w
-			})), i.d(t, "t", (function() {
-				return y
-			})), i.d(t, "v", (function() {
-				return v
-			})), i.d(t, "w", (function() {
-				return E
-			})), i.d(t, "x", (function() {
-				return S
+				return f
 			})), i.d(t, "f", (function() {
-				return T
+				return g
+			})), i.d(t, "t", (function() {
+				return w
+			})), i.d(t, "s", (function() {
+				return y
+			})), i.d(t, "u", (function() {
+				return v
+			})), i.d(t, "v", (function() {
+				return E
+			})), i.d(t, "w", (function() {
+				return S
 			})), i.d(t, "e", (function() {
-				return O
+				return T
 			})), i.d(t, "d", (function() {
-				return I
+				return O
 			}));
 			const n = "SUBREDDIT__ADD_TOP_SUBREDDIT_MODELS",
 				r = "SUBREDDIT__ADD_TOP_SUBREDDIT_RANKINGS",
@@ -12696,8 +12694,7 @@
 				E = "SUBREDDIT_QUESTIONS_LOADED",
 				S = "SUBREDDIT_SURVEY_ANSWERED",
 				T = "SUBREDDIT_SURVEY_DISMISSED",
-				O = "SUBREDDIT_SURVEY_DISMISS",
-				I = "DISMISS_NCP_CARD"
+				O = "SUBREDDIT_SURVEY_DISMISS"
 		},
 		"./src/reddit/actions/subreddit/questions.ts": function(e, t, i) {
 			"use strict";
@@ -12727,7 +12724,7 @@
 					r = null == i ? void 0 : i.contentRatingSurvey,
 					o = null == i ? void 0 : i.communityProgressModule;
 				(n || r || o) && e({
-					type: s.w,
+					type: s.v,
 					payload: {
 						id: t,
 						questions: n,
@@ -44677,4 +44674,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1684d13caeeede01b9fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5f759891eac479d152e6.js.map

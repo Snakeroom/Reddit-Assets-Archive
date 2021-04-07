@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.2a0e67ed4559aed84dee.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7934a241a8f21d755be0.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5739,16 +5739,27 @@
 		},
 		"./src/reddit/models/NewCommunityProgress/index.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "b", (function() {
+			r.d(t, "c", (function() {
 				return s
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "d", (function() {
 				return a
+			})), r.d(t, "a", (function() {
+				return n
+			})), r.d(t, "b", (function() {
+				return o
 			}));
-			const s = ["CommunityProgressShareButton", "CommunityProgressUrlButton", "CommunityProgressMakePostButton"];
-			var a;
+			const s = "new_community_setup",
+				a = ["CommunityProgressShareButton", "CommunityProgressUrlButton", "CommunityProgressMakePostButton"];
+			var n, c, o;
 			! function(e) {
+				e.INITIAL = "INITIAL", e.ACTIONED = "ACTIONED", e.DISMISSED = "DISMISSED", e.COMPLETED = "COMPLETED"
+			}(n || (n = {})),
+			function(e) {
+				e[e.FILLED = 0] = "FILLED", e[e.NUMBERED = 1] = "NUMBERED"
+			}(c || (c = {})),
+			function(e) {
 				e.HIDE_BUTTON_CLICK = "HIDE_BUTTON_CLICK", e.CTA_BUTTON_CLICK = "CTA_BUTTON_CLICK"
-			}(a || (a = {}))
+			}(o || (o = {}))
 		},
 		"./src/reddit/models/WhitelistAndBlocked.ts": function(e, t, r) {
 			"use strict";
@@ -10849,7 +10860,7 @@
 						case Z.e:
 						case X.MORE_POSTS_FAILED:
 						case X.MORE_POSTS_LOADED:
-						case cd.k:
+						case cd.j:
 						case td.b:
 						case td.a:
 						case ee.i:
@@ -10867,7 +10878,7 @@
 								[r]: !1
 							}
 						}
-						case cd.s: {
+						case cd.r: {
 							if (!t.payload || !t.payload.length) return e;
 							const r = {};
 							for (const e of t.payload) {
@@ -11017,7 +11028,7 @@
 						case je.b:
 						case Le.b:
 						case Y.SUBREDDIT_LOADED:
-						case cd.k:
+						case cd.j:
 						case td.b:
 						case ke.e:
 						case X.PROFILE_POSTS_LOADED:
@@ -11033,7 +11044,7 @@
 								[r]: s
 							}
 						}
-						case cd.s: {
+						case cd.r: {
 							if (!t.payload || !t.payload.length) return e;
 							const r = {};
 							for (const e of t.payload) {
@@ -13559,7 +13570,7 @@
 					case je.f:
 					case Z.e:
 					case "RECOMMENDED_POSTS_LOADED":
-					case cd.k:
+					case cd.j:
 					case ee.i:
 					case xe.b:
 					case rd.TOPIC_DATA_LOADED:
@@ -13573,7 +13584,7 @@
 							...xt()(t.payload.posts, np([r, sp, ap, ep, tp(e), rp(e)]))
 						}
 					}
-					case cd.s: {
+					case cd.r: {
 						if (!t.payload || !t.payload.length) return e;
 						const r = {};
 						for (const s of t.payload) {
@@ -16824,8 +16835,8 @@
 					}
 					case Lc.g:
 					case OE.f:
-					case cd.h:
-					case cd.p: {
+					case cd.g:
+					case cd.o: {
 						const {
 							subredditsAboutInfo: r
 						} = t.payload;
@@ -16989,10 +17000,10 @@
 				});
 			var PE = (e = !1, t) => {
 					switch (t.type) {
-						case cd.u:
-							return !0;
-						case cd.v:
 						case cd.t:
+							return !0;
+						case cd.u:
+						case cd.s:
 							return !1;
 						default:
 							return e
@@ -17061,12 +17072,12 @@
 			const GE = {};
 			var FE = (e = GE, t) => {
 					switch (t.type) {
+						case cd.f:
 						case cd.g:
-						case cd.h:
 							return {
 								...e, [t.payload.key]: !1
 							};
-						case cd.i:
+						case cd.h:
 							return {
 								...e, [t.payload.key]: !0
 							};
@@ -17105,14 +17116,14 @@
 				});
 			var KE = (e = null, t) => {
 				switch (t.type) {
-					case cd.l: {
+					case cd.k: {
 						const {
 							error: e
 						} = t.payload;
 						return e || null
 					}
-					case cd.n:
 					case cd.m:
+					case cd.l:
 						return null;
 					default:
 						return e
@@ -17120,10 +17131,10 @@
 			};
 			var WE = (e = !1, t) => {
 					switch (t.type) {
-						case cd.n:
-							return !0;
 						case cd.m:
+							return !0;
 						case cd.l:
+						case cd.k:
 							return !1;
 						default:
 							return e
@@ -17163,12 +17174,12 @@
 			const ZE = {};
 			var eO = (e = ZE, t) => {
 					switch (t.type) {
+						case cd.n:
 						case cd.o:
-						case cd.p:
 							return {
 								...e, [t.payload.key]: !1
 							};
-						case cd.q:
+						case cd.p:
 							return {
 								...e, [t.payload.key]: !0
 							};
@@ -17653,8 +17664,8 @@
 					case ee.f:
 					case ee.i:
 					case cd.a:
-					case cd.h:
-					case cd.p:
+					case cd.g:
+					case cd.o:
 					case rd.TOPIC_DATA_LOADED:
 					case rd.MORE_POSTS_LOADED:
 						return XO(e, t.payload.subreddits || {});
@@ -17824,7 +17835,7 @@
 			const n_ = {};
 			var c_ = (e = n_, t) => {
 				switch (t.type) {
-					case cd.h: {
+					case cd.g: {
 						const {
 							key: r,
 							subredditIds: s
@@ -18105,19 +18116,24 @@
 			const D_ = {};
 			var T_ = (e = D_, t) => {
 				switch (t.type) {
-					case cd.w: {
+					case cd.v: {
 						const {
 							id: r,
 							progressModule: s
 						} = t.payload;
-						if (!s) return e;
-						const a = s.cards.filter(({
+						if (!s) {
+							const t = {
+								...e
+							};
+							return delete t[r], t
+						}
+						const a = (e => e.filter(({
 							id: e
 						}) => "invite_contributor" !== e).filter(({
 							buttons: e
 						}) => e.every(({
 							__typename: e
-						}) => S_.b.includes(e)));
+						}) => S_.d.includes(e))))(s.cards);
 						return {
 							...e,
 							[r]: {
@@ -18125,13 +18141,6 @@
 								cards: a
 							}
 						}
-					}
-					case cd.d: {
-						const {
-							subredditId: r,
-							cardId: s
-						} = t.payload;
-						return Object(F.updateIn)(e, [r, "cards"], e => e.filter(e => e.id !== s))
 					}
 					default:
 						return e
@@ -18141,7 +18150,7 @@
 			var w_ = (e = v_, t) => {
 				var r, s;
 				switch (t.type) {
-					case cd.w: {
+					case cd.v: {
 						const {
 							id: r,
 							questions: s
@@ -18162,14 +18171,14 @@
 						}
 						return 0 === Object.keys(a).length ? e : Object(F.assign)(e, a)
 					}
-					case cd.e: {
+					case cd.d: {
 						const {
 							subredditId: r,
 							questionId: a
 						} = t.payload, n = null !== (s = e[r]) && void 0 !== s ? s : [];
 						return Object(F.setIn)(e, [r], n.filter(e => e.id !== a))
 					}
-					case cd.f:
+					case cd.e:
 						return v_;
 					default:
 						return e
@@ -18313,7 +18322,7 @@
 			const x_ = {};
 			var U_ = (e = x_, t) => {
 				switch (t.type) {
-					case cd.p: {
+					case cd.o: {
 						const {
 							key: r,
 							subredditIds: s
@@ -18330,7 +18339,7 @@
 			const M_ = {};
 			var G_ = (e = M_, t) => {
 				switch (t.type) {
-					case cd.w: {
+					case cd.v: {
 						const {
 							id: r,
 							survey: s
@@ -18340,7 +18349,7 @@
 							[r]: s
 						}
 					}
-					case cd.x: {
+					case cd.w: {
 						const {
 							id: r,
 							response: s
@@ -21867,4 +21876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2a0e67ed4559aed84dee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7934a241a8f21d755be0.js.map

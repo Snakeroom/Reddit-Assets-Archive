@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.48497f8f003ee57b1491.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.16d616173d93318bec1b.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -747,9 +747,9 @@
 					let e = t.subredditIds.join(",");
 					return t.count && (e += `--[count:'${t.count}']`), t.variant && (e += `--[variant:'${t.variant}']`), e.toLowerCase()
 				},
-				b = Object(r.a)(o.q),
-				f = Object(r.a)(o.p),
-				_ = Object(r.a)(o.o),
+				b = Object(r.a)(o.p),
+				f = Object(r.a)(o.o),
+				_ = Object(r.a)(o.n),
 				p = t => async (e, n, {
 					apiContext: s
 				}) => {
@@ -1009,10 +1009,10 @@
 				k = n("./src/reddit/actions/imageOCRAltText/constants.ts");
 			const F = Object(r.a)(k.b),
 				v = Object(r.a)(k.a),
-				M = Object(r.a)(j.k),
-				x = Object(r.a)(j.j),
-				w = Object(r.a)(j.s),
-				G = Object(r.a)(j.r),
+				M = Object(r.a)(j.j),
+				x = Object(r.a)(j.i),
+				w = Object(r.a)(j.r),
+				G = Object(r.a)(j.q),
 				B = t => async (e, n, {
 					gqlContext: s
 				}) => {
@@ -3330,4 +3330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.48497f8f003ee57b1491.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.16d616173d93318bec1b.js.map

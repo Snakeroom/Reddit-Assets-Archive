@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.39f7638fc35d2f73caa2.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.7167bd81c5e97a496f7b.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -747,9 +747,9 @@
 				o = s("./src/reddit/endpoints/subreddit/local.ts"),
 				a = s("./src/reddit/endpoints/subreddit/topSubreddits.ts"),
 				c = s("./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts");
-			const d = Object(n.a)(r.n),
-				l = Object(n.a)(r.m),
-				u = Object(n.a)(r.l),
+			const d = Object(n.a)(r.m),
+				l = Object(n.a)(r.l),
+				u = Object(n.a)(r.k),
 				m = Object(n.a)(r.a),
 				p = Object(n.a)(r.b),
 				b = Object(n.a)(r.c),
@@ -5223,4 +5223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.39f7638fc35d2f73caa2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.7167bd81c5e97a496f7b.js.map

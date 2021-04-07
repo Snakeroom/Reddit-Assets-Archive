@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.fea8432196547e67a7b0.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.a9a126f4a012cb32e2e6.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -147,7 +147,7 @@
 				}, v ? l.a.createElement(k.a, {
 					className: x.a.headerButton,
 					onClick: d
-				}, l.a.createElement(j.f, {
+				}, l.a.createElement(j.i, {
 					className: x.a.backIcon
 				}), l.a.createElement("div", null, g.fbt._("Back", null, {
 					hk: "39TCGR"
@@ -345,7 +345,7 @@
 							}), y(Object(p.f)(Object(p.e)(W._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
 							}), B.b.SuccessCommunityGreen))), y({
-								type: v.x,
+								type: v.w,
 								payload: {
 									id: s,
 									response: S
@@ -702,4 +702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.fea8432196547e67a7b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.a9a126f4a012cb32e2e6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.72288fc55b1f0a9e6f46.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b86ba4fdbd4174d6d9bb.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -348,13 +348,13 @@
 							skip: !0
 						}
 					}).catch(), I({
-						type: E.e,
+						type: E.d,
 						payload: {
 							subredditId: n,
 							questionId: e
 						}
 					}), u(x(O, n)), v(!0), I({
-						type: E.f,
+						type: E.e,
 						payload: {}
 					})
 				}
@@ -366,7 +366,7 @@
 							skip: !1
 						}
 					}), I({
-						type: E.e,
+						type: E.d,
 						payload: {
 							subredditId: n,
 							questionId: e
@@ -1160,4 +1160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.72288fc55b1f0a9e6f46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b86ba4fdbd4174d6d9bb.js.map

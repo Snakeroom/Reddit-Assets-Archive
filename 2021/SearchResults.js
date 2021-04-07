@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d0d559a3df546fac8240.js
-// Retrieved at 4/6/2021, 8:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.7334d1712abc4f2340f3.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -755,9 +755,9 @@
 				u = s("./src/reddit/selectors/structuredStyles.ts"),
 				p = s("./src/reddit/selectors/subreddit.ts"),
 				h = s("./src/telemetry/index.ts");
-			const b = Object(n.a)(i.u),
-				x = Object(n.a)(i.v),
-				f = Object(n.a)(i.t),
+			const b = Object(n.a)(i.t),
+				x = Object(n.a)(i.u),
+				f = Object(n.a)(i.s),
 				g = (e, t, s) => async (r, n, o) => {
 					const i = Object(p.A)(n(), {
 						subredditName: e
@@ -9292,4 +9292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d0d559a3df546fac8240.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7334d1712abc4f2340f3.js.map

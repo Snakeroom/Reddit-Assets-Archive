@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.3a96f3062785caee7f10.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.e11aa5cd800f14c2dcfc.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -84,9 +84,9 @@
 				m = n("./src/reddit/selectors/structuredStyles.ts"),
 				p = n("./src/reddit/selectors/subreddit.ts"),
 				b = n("./src/telemetry/index.ts");
-			const h = Object(r.a)(o.u),
-				x = Object(r.a)(o.v),
-				g = Object(r.a)(o.t),
+			const h = Object(r.a)(o.t),
+				x = Object(r.a)(o.u),
+				g = Object(r.a)(o.s),
 				f = (e, t, n) => async (s, r, i) => {
 					const o = Object(p.A)(r(), {
 						subredditName: e
@@ -5113,4 +5113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.3a96f3062785caee7f10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.e11aa5cd800f14c2dcfc.js.map

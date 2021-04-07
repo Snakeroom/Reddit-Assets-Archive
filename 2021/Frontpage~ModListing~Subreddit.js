@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.ec14137695e28d577015.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.4c29491623e9a7dc63e3.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -490,13 +490,13 @@
 					postLayout: h.O,
 					redditStyle: h.A
 				}),
-				B = Object(i.b)(A, e => ({
+				M = Object(i.b)(A, e => ({
 					onListingLayoutChange: (t, s) => e(Object(u.x)(t, s)),
 					openDropdown: () => e(Object(p.h)({
 						tooltipId: I
 					}))
 				}));
-			class M extends o.a.Component {
+			class B extends o.a.Component {
 				constructor() {
 					super(...arguments), this.changeLayout = e => {
 						const {
@@ -570,7 +570,7 @@
 					}), o.a.createElement(g.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = D(B(Object(m.c)(Object(l.a)(M))))
+			t.a = D(M(Object(m.c)(Object(l.a)(B))))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -659,8 +659,8 @@
 				}).apply(this, arguments)
 			}
 			const A = "ListingSort--SortPicker",
-				B = Object(S.a)(R.a.wrapped(x.a, "Dropdown", T.a)),
-				M = R.a.wrapped(N.a, "ListingSortIcon", T.a),
+				M = Object(S.a)(R.a.wrapped(x.a, "Dropdown", T.a)),
+				B = R.a.wrapped(N.a, "ListingSortIcon", T.a),
 				V = (R.a.wrapped(k.b, "DropdownTriangle", T.a), R.a.div("Title", T.a)),
 				F = R.a.wrapped(e => r.a.createElement(_.b, D({}, e, {
 					noHover: !0,
@@ -707,9 +707,9 @@
 					displayText: Object(y.a)(e.sort),
 					id: e.dropdownId || A,
 					showDropdownTriangle: !0
-				}, r.a.createElement(M, {
+				}, r.a.createElement(B, {
 					sort: e.sort
-				}))), r.a.createElement(v.a.Consumer, null, t => r.a.createElement(B, D({
+				}))), r.a.createElement(v.a.Consumer, null, t => r.a.createElement(M, D({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: e.dropdownId || A
@@ -731,7 +731,7 @@
 					}) : Object(C.a)(e.baseUrl, `${t}/`),
 					isSelected: e.sort === t,
 					key: t
-				}, r.a.createElement(M, {
+				}, r.a.createElement(B, {
 					className: e.rowIconClassName,
 					sort: t
 				}))))))))), "ListingSort", T.a),
@@ -1227,8 +1227,8 @@
 				}).apply(this, arguments)
 			}
 			const Ae = new Set([h.P.CONTROVERSIAL, h.P.TOP]),
-				Be = new Set([h.P.CONTROVERSIAL, h.P.RISING]),
-				Me = "ListingSort--Overflow",
+				Me = new Set([h.P.CONTROVERSIAL, h.P.RISING]),
+				Be = "ListingSort--Overflow",
 				Ve = Object(l.t)({
 					isFrontpage: l.y,
 					isProfilePage: l.G,
@@ -1265,7 +1265,7 @@
 							className: Object(i.a)(Re.a.SortLink, e === t && Re.a.selected),
 							kind: Ie.a.InternalLink,
 							priority: Ie.b.Plain,
-							Icon: s => r.a.createElement(M, De({}, s, {
+							Icon: s => r.a.createElement(B, De({}, s, {
 								className: Object(i.a)(Re.a.SortIcon, s.className),
 								sort: e,
 								isFilled: e === t
@@ -1307,7 +1307,7 @@
 						sort: n,
 						sortOptions: o,
 						timeSort: a
-					} = this.props, c = !t && Ae.has(n), d = Be.has(n), l = o.filter(e => !Be.has(e)), u = o.filter(e => Be.has(e) && e !== n);
+					} = this.props, c = !t && Ae.has(n), d = Me.has(n), l = o.filter(e => !Me.has(e)), u = o.filter(e => Me.has(e) && e !== n);
 					return r.a.createElement(je.b.Consumer, null, ({
 						icons2020: t
 					}) => r.a.createElement(r.a.Fragment, null, r.a.createElement(z, De({}, this.props, {
@@ -1333,7 +1333,7 @@
 					}), u.length > 0 && r.a.createElement(z, De({}, this.props, {
 						className: Object(i.a)(Re.a.SortOverflow, e),
 						dropdownClassName: Re.a.Dropdown,
-						dropdownId: Me,
+						dropdownId: Be,
 						rowClassName: Re.a.DropdownRow,
 						rowIconClassName: Re.a.DropdownRowIcon,
 						rowSelectedClassName: Re.a.DropdownRowSelected,
@@ -1341,7 +1341,7 @@
 						sortOptions: u
 					}), r.a.createElement("button", {
 						className: Re.a.SortOverflowButton,
-						id: Me
+						id: Be
 					}, t ? r.a.createElement(Ne.a, {
 						name: "overflow_horizontal"
 					}) : r.a.createElement(Le.a, null)))))
@@ -1537,15 +1537,15 @@
 				R = s("./src/telemetry/index.ts"),
 				D = s("./src/telemetry/models/Timer.ts"),
 				A = s("./src/reddit/components/PostList/index.m.less"),
-				B = s.n(A);
+				M = s.n(A);
 			const {
-				fbt: M
+				fbt: B
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), V = 500, F = new T.a(V), H = new T.a(V), U = new T.a(V), G = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
 				COMPACT: 5
-			}, K = f.a.div("SeeMore", B.a), W = f.a.wrapped(I.a, "ArrowRight", B.a), z = (e, t, s, n, r, o, i, a) => {
+			}, K = f.a.div("SeeMore", M.a), W = f.a.wrapped(I.a, "ArrowRight", M.a), z = (e, t, s, n, r, o, i, a) => {
 				const c = `entered-${e}-${t}-${s?`last-${n}-${r}`:""}-${o}`;
 				let d = F.get(c);
 				return void 0 === d && (d = () => {
@@ -1753,12 +1753,12 @@
 							R = `post-list-item-[layout: ${n}]-[postId: ${e}]`,
 							D = z(e, n, s, p, m, g, this.props, t),
 							A = q(e, n, this.props, t, b),
-							B = Z(e, this.props),
-							M = L.media && L.media.type === N.o.EMBED ? L.media.provider : null;
+							M = Z(e, this.props),
+							B = L.media && L.media.type === N.o.EMBED ? L.media.provider : null;
 						k = {
 							estHeight: Object(j.c)(I, n),
 							id: e,
-							isFocusable: !(!L.media || !(n === O.g.Large || n === O.g.Classic && Object(N.G)(L.media))) && (N.d.has(L.media.type) && (!M || !N.s.has(M)) && !L.isSpoiler && !L.isNSFW),
+							isFocusable: !(!L.media || !(n === O.g.Large || n === O.g.Classic && Object(N.G)(L.media))) && (N.d.has(L.media.type) && (!B || !N.s.has(B)) && !L.isSpoiler && !L.isNSFW),
 							trackOnEnteredViewport: D,
 							trackOnExitedViewport: A,
 							render: ({
@@ -1788,7 +1788,7 @@
 								listingName: m,
 								pageLayer: b,
 								last: s,
-								onClickPost: B,
+								onClickPost: M,
 								onSizeChanged: g,
 								postId: e,
 								postIds: x,
@@ -1820,7 +1820,7 @@
 					if (s) return;
 					const i = o;
 					return u.a.createElement("div", {
-						className: B.a.placeholder
+						className: M.a.placeholder
 					}, u.a.createElement(i, {
 						className: t,
 						isLoading: !e,
@@ -1840,7 +1840,7 @@
 						onLoadMore: o
 					} = this.props;
 					if (!s) return u.a.createElement("div", {
-						className: B.a.placeholder
+						className: M.a.placeholder
 					}, u.a.createElement(y.a, {
 						className: r,
 						isLoading: !!t,
@@ -1874,7 +1874,7 @@
 						S = w || o;
 					return u.a.createElement(l.Fragment, null, u.a.createElement(x.b, {
 						innerRef: this.updateScrollerRef,
-						className: S ? B.a.truncatedPostList : Object(b.a)(B.a.postList, this.props.className),
+						className: S ? M.a.truncatedPostList : Object(b.a)(M.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -1890,13 +1890,13 @@
 						trackingName: f,
 						viewportTopPadding: C.f
 					}, g), w && u.a.createElement(K, {
-						className: B.a.seeMoreButton
+						className: M.a.seeMoreButton
 					}, u.a.createElement(k.a, {
-						className: B.a.seeMorePostsText,
+						className: M.a.seeMorePostsText,
 						to: Object(p.a)(w, {
 							type: h.Qb.Posts
 						})
-					}, M._("See More Posts", null, {
+					}, B._("See More Posts", null, {
 						hk: "3o0CqI"
 					}), u.a.createElement(W, null))), this.isLoadingMore() && this.renderLoadMore())
 				}
@@ -2507,15 +2507,16 @@
 		"./src/reddit/pages/Subreddit/SurveyUnit.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return l
+				return u
 			}));
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				r = s("./node_modules/react/index.js"),
 				o = s.n(r),
 				i = s("./node_modules/react-redux/es/index.js"),
 				a = s("./src/reddit/components/CommunityTopicSurvey/async.tsx"),
-				c = s("./src/reddit/components/ContentSurvey/ContentRatingSurveyBanner.tsx");
-			const d = Object(n.a)({
+				c = s("./src/reddit/components/ContentSurvey/ContentRatingSurveyBanner.tsx"),
+				d = s("./src/reddit/constants/postLayout.ts");
+			const l = Object(n.a)({
 				resolved: {},
 				chunkName: () => "NewCommunityProgress",
 				isReady(e) {
@@ -2536,20 +2537,22 @@
 				}
 			});
 
-			function l({
-				subredditId: e
+			function u({
+				postLayout: e,
+				subredditId: t
 			}) {
-				var t;
-				const s = Object(i.e)(t => t.subreddits.survey[e]),
-					n = Object(i.e)(t => t.subreddits.progressModule[e]);
-				return (null === (t = null == n ? void 0 : n.cards) || void 0 === t ? void 0 : t.length) > 0 ? o.a.createElement(d, {
-					subredditId: e,
-					progressModule: n
-				}) : (null == s ? void 0 : s.isEligible) && !(null == s ? void 0 : s.response) ? o.a.createElement(c.a, {
-					subredditId: e,
-					survey: s
+				var s;
+				const n = Object(i.e)(e => e.subreddits.survey[t]),
+					r = Object(i.e)(e => e.subreddits.progressModule[t]);
+				return (null === (s = null == r ? void 0 : r.cards) || void 0 === s ? void 0 : s.length) > 0 ? o.a.createElement(l, {
+					closeModuleOnMount: !!e && e !== d.g.Large,
+					subredditId: t,
+					progressModule: r
+				}) : e !== d.g.Large ? null : (null == n ? void 0 : n.isEligible) && !(null == n ? void 0 : n.response) ? o.a.createElement(c.a, {
+					subredditId: t,
+					survey: n
 				}) : o.a.createElement(a.a, {
-					subredditId: e
+					subredditId: t
 				})
 			}
 		},
@@ -2683,4 +2686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.ec14137695e28d577015.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.4c29491623e9a7dc63e3.js.map

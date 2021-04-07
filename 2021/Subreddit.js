@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c4adb7f55927fd0c29e2.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.269ca646b61f810da10c.js
+// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -7315,11 +7315,12 @@
 								className: Object(u.a)(e, We),
 								subredditId: ne.id
 							})
-						}), ne && d === ee.g.Large && (He[0] = {
+						}), ne && (He[0] = {
 							estHeight: 175,
 							id: `community-survey-${d}-${m}`,
 							render: () => i.a.createElement(Se.a, {
-								subredditId: ne.id
+								subredditId: ne.id,
+								postLayout: d
 							})
 						}), s && ae === X.f && v === E.P.AWARDED && (He[0] = {
 							estHeight: 180,
@@ -8563,4 +8564,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c4adb7f55927fd0c29e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.269ca646b61f810da10c.js.map
