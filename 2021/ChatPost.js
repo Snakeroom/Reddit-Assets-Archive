@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.714978143dc23e174a12.js
-// Retrieved at 4/6/2021, 8:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.db9137305d020858109e.js
+// Retrieved at 4/7/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1007,134 +1007,135 @@
 				const {
 					adminEmeritusTooltipId: t,
 					adminTooltipId: o,
-					className: n,
-					collapsed: s,
-					collapsedBecauseCrowdControl: r,
-					comment: i,
-					commentsPageKey: d,
-					contractorTooltipId: l,
-					compact: p,
-					flair: u,
-					flairPosition: C,
-					hasBadges: v,
-					isCommentHeaderRedesignEnabled: x,
-					isInIcons2020: g,
-					isLivestreaming: f,
-					isPostComment: _,
-					ignoreFlairPosition: y,
-					ignoreLock: O,
-					modTooltipId: M,
-					onHideTooltip: w,
-					onShowTooltip: j,
-					opTooltipId: N,
-					openPowerupsModal: L,
-					renderContractorBadge: R,
-					renderedInOverlay: A,
-					subredditDisplayText: P,
-					topSupporterTooltipId: B
-				} = e, D = Object(c.a)(), F = a.a.createElement(a.a.Fragment, null, a.a.createElement(fe.b, {
-					commentId: i.id
+					children: n,
+					className: s,
+					collapsed: r,
+					collapsedBecauseCrowdControl: i,
+					comment: d,
+					commentsPageKey: l,
+					contractorTooltipId: p,
+					compact: u,
+					flair: C,
+					flairPosition: v,
+					hasBadges: x,
+					isCommentHeaderRedesignEnabled: g,
+					isInIcons2020: f,
+					isLivestreaming: _,
+					isPostComment: y,
+					ignoreFlairPosition: O,
+					ignoreLock: M,
+					modTooltipId: w,
+					onHideTooltip: j,
+					onShowTooltip: N,
+					opTooltipId: L,
+					openPowerupsModal: R,
+					renderContractorBadge: A,
+					renderedInOverlay: P,
+					subredditDisplayText: B,
+					topSupporterTooltipId: D
+				} = e, F = Object(c.a)(), U = a.a.createElement(a.a.Fragment, null, a.a.createElement(fe.b, {
+					commentId: d.id
 				}), a.a.createElement(fe.a, {
-					commentId: i.id,
-					commentsPageKey: d
+					commentId: d.id,
+					commentsPageKey: l
 				}));
-				if (_ && x) return a.a.createElement(a.a.Fragment, null, a.a.createElement(ge, {
-					className: Object(m.a)(n, {
-						[je.a.collapsed]: s
+				if (y && g) return a.a.createElement(a.a.Fragment, null, a.a.createElement(ge, {
+					className: Object(m.a)(s, {
+						[je.a.collapsed]: r
 					}),
-					collapsedBecauseCrowdControl: r,
-					comment: i,
-					flair: u || null,
-					ignoreLock: O,
-					isInIcons2020: g,
-					isLivestreaming: f,
-					renderedInOverlay: A
-				}), F);
-				if (i.isDeleted) return a.a.createElement(Ze, Se({}, e, {
-					className: Object(m.a)(n, je.a.container, {
-						[je.a.collapsed]: s
+					collapsedBecauseCrowdControl: i,
+					comment: d,
+					flair: C || null,
+					ignoreLock: M,
+					isInIcons2020: f,
+					isLivestreaming: _,
+					renderedInOverlay: P
+				}), U);
+				if (d.isDeleted) return a.a.createElement(Ze, Se({}, e, {
+					className: Object(m.a)(s, je.a.container, {
+						[je.a.collapsed]: r
 					})
 				}));
-				if (s) return a.a.createElement(Ge, Se({}, e, {
-					className: Object(m.a)(n, je.a.container, {
-						[je.a.collapsed]: s
+				if (r) return a.a.createElement(Ge, Se({}, e, {
+					className: Object(m.a)(s, je.a.container, {
+						[je.a.collapsed]: r
 					})
 				}));
-				const U = !y && C === Ee.b.Left;
+				const W = !O && v === Ee.b.Left;
 				return a.a.createElement("div", {
-					className: Object(m.a)(n, je.a.container, {
-						[je.a.collapsed]: s,
-						[je.a.hasBadges]: v,
-						[je.a.liveStreaming]: f
+					className: Object(m.a)(s, je.a.container, {
+						[je.a.collapsed]: r,
+						[je.a.hasBadges]: x,
+						[je.a.liveStreaming]: _
 					}),
 					"data-testid": "comment-top-meta"
-				}, u && U && a.a.createElement(E.b, {
-					flair: u,
-					forceSmallEmojis: p
-				}), a.a.createElement(S, {
-					comment: i,
-					isLivestreaming: f,
-					isStrong: !!p,
-					renderedInOverlay: A
-				}), r && a.a.createElement(J, null), r && a.a.createElement(T.c, {
+				}, C && W && a.a.createElement(E.b, {
+					flair: C,
+					forceSmallEmojis: u
+				}), n && n, a.a.createElement(S, {
+					comment: d,
+					isLivestreaming: _,
+					isStrong: !!u,
+					renderedInOverlay: P
+				}), i && a.a.createElement(J, null), i && a.a.createElement(T.c, {
 					className: je.a.metaText,
 					key: "crowdControlSeparator"
-				}), u && !U && a.a.createElement(Ne, {
-					flair: u,
-					forceSmallEmojis: p
-				}), !p && a.a.createElement(I.a, {
+				}), C && !W && a.a.createElement(Ne, {
+					flair: C,
+					forceSmallEmojis: u
+				}), !u && a.a.createElement(I.a, {
 					className: je.a.publicPoints,
-					contentId: i.id,
+					contentId: d.id,
 					metaSeparator: a.a.createElement(T.c, {
 						className: je.a.metaText
 					}),
-					subredditId: i.subredditId,
-					userId: i.authorId,
-					username: i.author
-				}), a.a.createElement(a.a.Fragment, null, F, a.a.createElement(Ye, {
-					comment: i,
-					compact: p,
+					subredditId: d.subredditId,
+					userId: d.authorId,
+					username: d.author
+				}), a.a.createElement(a.a.Fragment, null, U, a.a.createElement(Ye, {
+					comment: d,
+					compact: u,
 					adminTooltipId: o,
 					adminEmeritusTooltipId: t,
-					contractorTooltipId: l,
-					modTooltipId: M,
-					onHideTooltip: w,
-					onShowTooltip: j,
+					contractorTooltipId: p,
+					modTooltipId: w,
+					onHideTooltip: j,
+					onShowTooltip: N,
 					openPowerupsModal: () => {
-						D(Object(h.k)("comment")), L()
+						F(Object(h.k)("comment")), R()
 					},
-					opTooltipId: N,
-					renderContractorBadge: R,
-					renderedInOverlay: A,
-					subredditDisplayText: P,
-					topSupporterTooltipId: B,
-					isInIcons2020: g
-				})), !p && a.a.createElement(a.a.Fragment, null, !i.isDeleted && !_ && a.a.createElement(a.a.Fragment, null, a.a.createElement(T.b, {
+					opTooltipId: L,
+					renderContractorBadge: A,
+					renderedInOverlay: P,
+					subredditDisplayText: B,
+					topSupporterTooltipId: D,
+					isInIcons2020: f
+				})), !u && a.a.createElement(a.a.Fragment, null, !d.isDeleted && !y && a.a.createElement(a.a.Fragment, null, a.a.createElement(T.b, {
 					className: je.a.metaText,
-					isScoreHidden: i.isScoreHidden,
-					score: i.score
+					isScoreHidden: d.isScoreHidden,
+					score: d.score
 				}), a.a.createElement(T.c, {
 					className: je.a.metaText,
 					key: "scoreCreatedSeparator"
 				})), a.a.createElement(V, {
 					key: "Created",
 					className: je.a.MetaLink,
-					comment: i,
-					renderedInOverlay: A
-				}), i.isStickied && a.a.createElement(a.a.Fragment, null, a.a.createElement(T.c, {
+					comment: d,
+					renderedInOverlay: P
+				}), d.isStickied && a.a.createElement(a.a.Fragment, null, a.a.createElement(T.c, {
 					className: je.a.separator
-				}), a.a.createElement(Ce, null)), i.editedAt && a.a.createElement(a.a.Fragment, null, a.a.createElement(T.c, {
+				}), a.a.createElement(Ce, null)), d.editedAt && a.a.createElement(a.a.Fragment, null, a.a.createElement(T.c, {
 					className: je.a.separator
 				}), a.a.createElement($, {
-					editedAt: i.editedAt
+					editedAt: d.editedAt
 				}))), a.a.createElement(pe, {
-					comment: i,
-					ignoreLock: O,
-					isInIcons2020: g,
-					renderedInOverlay: A
+					comment: d,
+					ignoreLock: M,
+					isInIcons2020: f,
+					renderedInOverlay: P
 				}), a.a.createElement(b.a, {
-					thing: i,
-					tooltipType: A ? k.c.Lightbox : void 0
+					thing: d,
+					tooltipType: P ? k.c.Lightbox : void 0
 				}))
 			});
 			const Ze = e => {
@@ -3487,4 +3488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.714978143dc23e174a12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.db9137305d020858109e.js.map

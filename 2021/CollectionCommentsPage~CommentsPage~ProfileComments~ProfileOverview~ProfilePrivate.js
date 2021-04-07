@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.12489e27d00d4c73103f.js
-// Retrieved at 4/6/2021, 8:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.c2803072a41de6c54487.js
+// Retrieved at 4/7/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1698,134 +1698,135 @@
 				const {
 					adminEmeritusTooltipId: t,
 					adminTooltipId: n,
-					className: o,
-					collapsed: s,
-					collapsedBecauseCrowdControl: i,
-					comment: a,
-					commentsPageKey: d,
-					contractorTooltipId: l,
-					compact: u,
-					flair: p,
-					flairPosition: x,
-					hasBadges: f,
-					isCommentHeaderRedesignEnabled: v,
-					isInIcons2020: E,
-					isLivestreaming: g,
-					isPostComment: _,
-					ignoreFlairPosition: I,
-					ignoreLock: w,
-					modTooltipId: j,
-					onHideTooltip: T,
-					onShowTooltip: M,
-					opTooltipId: N,
-					openPowerupsModal: A,
-					renderContractorBadge: L,
-					renderedInOverlay: B,
-					subredditDisplayText: P,
-					topSupporterTooltipId: F
-				} = e, R = Object(c.a)(), D = r.a.createElement(r.a.Fragment, null, r.a.createElement(ge.b, {
-					commentId: a.id
+					children: o,
+					className: s,
+					collapsed: i,
+					collapsedBecauseCrowdControl: a,
+					comment: d,
+					commentsPageKey: l,
+					contractorTooltipId: u,
+					compact: p,
+					flair: x,
+					flairPosition: f,
+					hasBadges: v,
+					isCommentHeaderRedesignEnabled: E,
+					isInIcons2020: g,
+					isLivestreaming: _,
+					isPostComment: I,
+					ignoreFlairPosition: w,
+					ignoreLock: j,
+					modTooltipId: T,
+					onHideTooltip: M,
+					onShowTooltip: N,
+					opTooltipId: A,
+					openPowerupsModal: L,
+					renderContractorBadge: B,
+					renderedInOverlay: P,
+					subredditDisplayText: F,
+					topSupporterTooltipId: R
+				} = e, D = Object(c.a)(), H = r.a.createElement(r.a.Fragment, null, r.a.createElement(ge.b, {
+					commentId: d.id
 				}), r.a.createElement(ge.a, {
-					commentId: a.id,
-					commentsPageKey: d
+					commentId: d.id,
+					commentsPageKey: l
 				}));
-				if (_ && v) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Ee, {
-					className: Object(m.a)(o, {
-						[Me.a.collapsed]: s
+				if (I && E) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Ee, {
+					className: Object(m.a)(s, {
+						[Me.a.collapsed]: i
 					}),
-					collapsedBecauseCrowdControl: i,
-					comment: a,
-					flair: p || null,
-					ignoreLock: w,
-					isInIcons2020: E,
-					isLivestreaming: g,
-					renderedInOverlay: B
-				}), D);
-				if (a.isDeleted) return r.a.createElement(Je, Se({}, e, {
-					className: Object(m.a)(o, Me.a.container, {
-						[Me.a.collapsed]: s
+					collapsedBecauseCrowdControl: a,
+					comment: d,
+					flair: x || null,
+					ignoreLock: j,
+					isInIcons2020: g,
+					isLivestreaming: _,
+					renderedInOverlay: P
+				}), H);
+				if (d.isDeleted) return r.a.createElement(Je, Se({}, e, {
+					className: Object(m.a)(s, Me.a.container, {
+						[Me.a.collapsed]: i
 					})
 				}));
-				if (s) return r.a.createElement(qe, Se({}, e, {
-					className: Object(m.a)(o, Me.a.container, {
-						[Me.a.collapsed]: s
+				if (i) return r.a.createElement(qe, Se({}, e, {
+					className: Object(m.a)(s, Me.a.container, {
+						[Me.a.collapsed]: i
 					})
 				}));
-				const H = !I && x === Ce.b.Left;
+				const U = !w && f === Ce.b.Left;
 				return r.a.createElement("div", {
-					className: Object(m.a)(o, Me.a.container, {
-						[Me.a.collapsed]: s,
-						[Me.a.hasBadges]: f,
-						[Me.a.liveStreaming]: g
+					className: Object(m.a)(s, Me.a.container, {
+						[Me.a.collapsed]: i,
+						[Me.a.hasBadges]: v,
+						[Me.a.liveStreaming]: _
 					}),
 					"data-testid": "comment-top-meta"
-				}, p && H && r.a.createElement(C.b, {
-					flair: p,
-					forceSmallEmojis: u
-				}), r.a.createElement(S, {
-					comment: a,
-					isLivestreaming: g,
-					isStrong: !!u,
-					renderedInOverlay: B
-				}), i && r.a.createElement(Z, null), i && r.a.createElement(O.c, {
+				}, x && U && r.a.createElement(C.b, {
+					flair: x,
+					forceSmallEmojis: p
+				}), o && o, r.a.createElement(S, {
+					comment: d,
+					isLivestreaming: _,
+					isStrong: !!p,
+					renderedInOverlay: P
+				}), a && r.a.createElement(Z, null), a && r.a.createElement(O.c, {
 					className: Me.a.metaText,
 					key: "crowdControlSeparator"
-				}), p && !H && r.a.createElement(Ne, {
-					flair: p,
-					forceSmallEmojis: u
-				}), !u && r.a.createElement(k.a, {
+				}), x && !U && r.a.createElement(Ne, {
+					flair: x,
+					forceSmallEmojis: p
+				}), !p && r.a.createElement(k.a, {
 					className: Me.a.publicPoints,
-					contentId: a.id,
+					contentId: d.id,
 					metaSeparator: r.a.createElement(O.c, {
 						className: Me.a.metaText
 					}),
-					subredditId: a.subredditId,
-					userId: a.authorId,
-					username: a.author
-				}), r.a.createElement(r.a.Fragment, null, D, r.a.createElement(Qe, {
-					comment: a,
-					compact: u,
+					subredditId: d.subredditId,
+					userId: d.authorId,
+					username: d.author
+				}), r.a.createElement(r.a.Fragment, null, H, r.a.createElement(Qe, {
+					comment: d,
+					compact: p,
 					adminTooltipId: n,
 					adminEmeritusTooltipId: t,
-					contractorTooltipId: l,
-					modTooltipId: j,
-					onHideTooltip: T,
-					onShowTooltip: M,
+					contractorTooltipId: u,
+					modTooltipId: T,
+					onHideTooltip: M,
+					onShowTooltip: N,
 					openPowerupsModal: () => {
-						R(Object(b.k)("comment")), A()
+						D(Object(b.k)("comment")), L()
 					},
-					opTooltipId: N,
-					renderContractorBadge: L,
-					renderedInOverlay: B,
-					subredditDisplayText: P,
-					topSupporterTooltipId: F,
-					isInIcons2020: E
-				})), !u && r.a.createElement(r.a.Fragment, null, !a.isDeleted && !_ && r.a.createElement(r.a.Fragment, null, r.a.createElement(O.b, {
+					opTooltipId: A,
+					renderContractorBadge: B,
+					renderedInOverlay: P,
+					subredditDisplayText: F,
+					topSupporterTooltipId: R,
+					isInIcons2020: g
+				})), !p && r.a.createElement(r.a.Fragment, null, !d.isDeleted && !I && r.a.createElement(r.a.Fragment, null, r.a.createElement(O.b, {
 					className: Me.a.metaText,
-					isScoreHidden: a.isScoreHidden,
-					score: a.score
+					isScoreHidden: d.isScoreHidden,
+					score: d.score
 				}), r.a.createElement(O.c, {
 					className: Me.a.metaText,
 					key: "scoreCreatedSeparator"
 				})), r.a.createElement(V, {
 					key: "Created",
 					className: Me.a.MetaLink,
-					comment: a,
-					renderedInOverlay: B
-				}), a.isStickied && r.a.createElement(r.a.Fragment, null, r.a.createElement(O.c, {
+					comment: d,
+					renderedInOverlay: P
+				}), d.isStickied && r.a.createElement(r.a.Fragment, null, r.a.createElement(O.c, {
 					className: Me.a.separator
-				}), r.a.createElement(xe, null)), a.editedAt && r.a.createElement(r.a.Fragment, null, r.a.createElement(O.c, {
+				}), r.a.createElement(xe, null)), d.editedAt && r.a.createElement(r.a.Fragment, null, r.a.createElement(O.c, {
 					className: Me.a.separator
 				}), r.a.createElement($, {
-					editedAt: a.editedAt
+					editedAt: d.editedAt
 				}))), r.a.createElement(ue, {
-					comment: a,
-					ignoreLock: w,
-					isInIcons2020: E,
-					renderedInOverlay: B
+					comment: d,
+					ignoreLock: j,
+					isInIcons2020: g,
+					renderedInOverlay: P
 				}), r.a.createElement(h.a, {
-					thing: a,
-					tooltipType: B ? y.c.Lightbox : void 0
+					thing: d,
+					tooltipType: P ? y.c.Lightbox : void 0
 				}))
 			});
 			const Je = e => {
@@ -3945,4 +3946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.12489e27d00d4c73103f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.c2803072a41de6c54487.js.map
