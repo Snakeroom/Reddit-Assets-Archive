@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e33db0080d0caa5cb29d.js
-// Retrieved at 4/7/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.df44246a58f4ea7945ea.js
+// Retrieved at 4/7/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -606,8 +606,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "956e28aacba6d12a3725",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "c273eb078dc40193e74e",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "0d05e6dc7d8cfe5bd9c4",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "1ddf21881d54e2643e4b",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/fr_FR-json": "31d6cfe0d16ae931b73c",
@@ -1159,13 +1159,13 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "9b95bad566ef4d084705",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "07618340b2dcffd428a1",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "649947fbe170ad241a49",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "349e2597dc44bf5d9a15",
 						"translations/de_DE-json": "19fe4673ef55c8837718",
 						"translations/es_ES-json": "41edca78fc4381b9aff0",
 						"translations/fr_FR-json": "32eb8db6978ada526c0c",
 						"translations/it_IT-json": "89bf4b62e9e8064d7f92",
-						"translations/pseudo_ext-json": "5a540d6138b07d852e24",
+						"translations/pseudo_ext-json": "0324e46389a00c7dcf6b",
 						"translations/pseudo_long-json": "12db1ca11be3adf0aa39",
 						"translations/pseudo_short-json": "6b50fba437bb011863e8",
 						"translations/pt_BR-json": "9b054a03d3b724e0f713",
@@ -1390,4 +1390,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e33db0080d0caa5cb29d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.df44246a58f4ea7945ea.js.map
