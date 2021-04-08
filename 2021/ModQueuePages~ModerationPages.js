@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.e7d298763bfd42bbc3a0.js
-// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.0fbe2139859d170b3c72.js
+// Retrieved at 4/8/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -1489,32 +1489,31 @@
 				P = n.n(j);
 			const w = ({
 				authorClassName: e,
-				children: t,
-				comment: n,
-				isLivestreaming: s,
-				isStrong: o,
-				renderedInOverlay: i
-			}) => r.a.createElement(r.a.Fragment, null, !Object(O.e)(n) && r.a.createElement(_.b, {
+				comment: t,
+				isLivestreaming: n,
+				isStrong: s,
+				renderedInOverlay: o
+			}) => r.a.createElement(r.a.Fragment, null, !Object(O.e)(t) && r.a.createElement(_.b, {
 				className: P.a.userBadges,
 				showAddCustom: !0,
-				subredditId: n.subredditId,
-				userId: n.authorId,
-				uniqueIdentifier: n.id
+				subredditId: t.subredditId,
+				userId: t.authorId,
+				uniqueIdentifier: t.id
 			}), r.a.createElement(R.b, {
 				className: P.a.authorHoverCard,
-				postOrComment: n,
-				tooltipType: i ? k.c.Lightbox : void 0
+				postOrComment: t,
+				tooltipType: o ? k.c.Lightbox : void 0
 			}, r.a.createElement(y.b, {
-				ignore: Object(O.e)(n) || n.distinguishType !== u.C.NONE,
-				subredditId: n.subredditId,
-				userId: n.authorId
+				ignore: Object(O.e)(t) || t.distinguishType !== u.C.NONE,
+				subredditId: t.subredditId,
+				userId: t.authorId
 			}, r.a.createElement(v, {
 				className: e,
-				comment: n,
-				isLivestreaming: s,
-				isStrong: o,
-				isAuthorDeleted: Object(O.e)(n)
-			}, t))));
+				comment: t,
+				isLivestreaming: n,
+				isStrong: s,
+				isAuthorDeleted: Object(O.e)(t)
+			}))));
 			var M = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				T = n("./src/reddit/icons/fonts/index.tsx"),
 				A = n("./src/reddit/icons/svgs/Cake/index.tsx");
@@ -4392,4 +4391,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.e7d298763bfd42bbc3a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.0fbe2139859d170b3c72.js.map

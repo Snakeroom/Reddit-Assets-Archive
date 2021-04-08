@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.1e9f3892effc566b95cc.js
-// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.4caae20b13e1bb73d52a.js
+// Retrieved at 4/8/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -578,32 +578,31 @@
 				j = o.n(w);
 			const S = ({
 				authorClassName: e,
-				children: t,
-				comment: o,
-				isLivestreaming: n,
-				isStrong: s,
-				renderedInOverlay: r
-			}) => a.a.createElement(a.a.Fragment, null, !Object(_.e)(o) && a.a.createElement(y.b, {
+				comment: t,
+				isLivestreaming: o,
+				isStrong: n,
+				renderedInOverlay: s
+			}) => a.a.createElement(a.a.Fragment, null, !Object(_.e)(t) && a.a.createElement(y.b, {
 				className: j.a.userBadges,
 				showAddCustom: !0,
-				subredditId: o.subredditId,
-				userId: o.authorId,
-				uniqueIdentifier: o.id
+				subredditId: t.subredditId,
+				userId: t.authorId,
+				uniqueIdentifier: t.id
 			}), a.a.createElement(M.b, {
 				className: j.a.authorHoverCard,
-				postOrComment: o,
-				tooltipType: r ? k.c.Lightbox : void 0
+				postOrComment: t,
+				tooltipType: s ? k.c.Lightbox : void 0
 			}, a.a.createElement(O.b, {
-				ignore: Object(_.e)(o) || o.distinguishType !== p.C.NONE,
-				subredditId: o.subredditId,
-				userId: o.authorId
+				ignore: Object(_.e)(t) || t.distinguishType !== p.C.NONE,
+				subredditId: t.subredditId,
+				userId: t.authorId
 			}, a.a.createElement(f, {
 				className: e,
-				comment: o,
-				isLivestreaming: n,
-				isStrong: s,
-				isAuthorDeleted: Object(_.e)(o)
-			}, t))));
+				comment: t,
+				isLivestreaming: o,
+				isStrong: n,
+				isAuthorDeleted: Object(_.e)(t)
+			}))));
 			var N = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				L = o("./src/reddit/icons/fonts/index.tsx"),
 				R = o("./src/reddit/icons/svgs/Cake/index.tsx");
@@ -3488,4 +3487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.1e9f3892effc566b95cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4caae20b13e1bb73d52a.js.map

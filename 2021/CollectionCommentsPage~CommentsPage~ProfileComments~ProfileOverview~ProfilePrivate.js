@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1dc3e278be3011195e47.js
-// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.e5c1bec11e079585365f.js
+// Retrieved at 4/8/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1269,32 +1269,31 @@
 				M = n.n(T);
 			const S = ({
 				authorClassName: e,
-				children: t,
-				comment: n,
-				isLivestreaming: o,
-				isStrong: s,
-				renderedInOverlay: i
-			}) => r.a.createElement(r.a.Fragment, null, !Object(_.e)(n) && r.a.createElement(I.b, {
+				comment: t,
+				isLivestreaming: n,
+				isStrong: o,
+				renderedInOverlay: s
+			}) => r.a.createElement(r.a.Fragment, null, !Object(_.e)(t) && r.a.createElement(I.b, {
 				className: M.a.userBadges,
 				showAddCustom: !0,
-				subredditId: n.subredditId,
-				userId: n.authorId,
-				uniqueIdentifier: n.id
+				subredditId: t.subredditId,
+				userId: t.authorId,
+				uniqueIdentifier: t.id
 			}), r.a.createElement(j.b, {
 				className: M.a.authorHoverCard,
-				postOrComment: n,
-				tooltipType: i ? y.c.Lightbox : void 0
+				postOrComment: t,
+				tooltipType: s ? y.c.Lightbox : void 0
 			}, r.a.createElement(w.b, {
-				ignore: Object(_.e)(n) || n.distinguishType !== u.C.NONE,
-				subredditId: n.subredditId,
-				userId: n.authorId
+				ignore: Object(_.e)(t) || t.distinguishType !== u.C.NONE,
+				subredditId: t.subredditId,
+				userId: t.authorId
 			}, r.a.createElement(g, {
 				className: e,
-				comment: n,
-				isLivestreaming: o,
-				isStrong: s,
-				isAuthorDeleted: Object(_.e)(n)
-			}, t))));
+				comment: t,
+				isLivestreaming: n,
+				isStrong: o,
+				isAuthorDeleted: Object(_.e)(t)
+			}))));
 			var N = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				A = n("./src/reddit/icons/fonts/index.tsx"),
 				L = n("./src/reddit/icons/svgs/Cake/index.tsx");
@@ -3946,4 +3945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1dc3e278be3011195e47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.e5c1bec11e079585365f.js.map

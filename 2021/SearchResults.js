@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.0ae5a6888935684476a5.js
-// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.6e215f423d512aa4cccd.js
+// Retrieved at 4/8/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1270,32 +1270,31 @@
 				w = s.n(P);
 			const N = ({
 				authorClassName: e,
-				children: t,
-				comment: s,
-				isLivestreaming: r,
-				isStrong: n,
-				renderedInOverlay: i
-			}) => o.a.createElement(o.a.Fragment, null, !Object(E.e)(s) && o.a.createElement(j.b, {
+				comment: t,
+				isLivestreaming: s,
+				isStrong: r,
+				renderedInOverlay: n
+			}) => o.a.createElement(o.a.Fragment, null, !Object(E.e)(t) && o.a.createElement(j.b, {
 				className: w.a.userBadges,
 				showAddCustom: !0,
-				subredditId: s.subredditId,
-				userId: s.authorId,
-				uniqueIdentifier: s.id
+				subredditId: t.subredditId,
+				userId: t.authorId,
+				uniqueIdentifier: t.id
 			}), o.a.createElement(S.b, {
 				className: w.a.authorHoverCard,
-				postOrComment: s,
-				tooltipType: i ? _.c.Lightbox : void 0
+				postOrComment: t,
+				tooltipType: n ? _.c.Lightbox : void 0
 			}, o.a.createElement(I.b, {
-				ignore: Object(E.e)(s) || s.distinguishType !== u.C.NONE,
-				subredditId: s.subredditId,
-				userId: s.authorId
+				ignore: Object(E.e)(t) || t.distinguishType !== u.C.NONE,
+				subredditId: t.subredditId,
+				userId: t.authorId
 			}, o.a.createElement(y, {
 				className: e,
-				comment: s,
-				isLivestreaming: r,
-				isStrong: n,
-				isAuthorDeleted: Object(E.e)(s)
-			}, t))));
+				comment: t,
+				isLivestreaming: s,
+				isStrong: r,
+				isAuthorDeleted: Object(E.e)(t)
+			}))));
 			var T = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				L = s("./src/reddit/icons/fonts/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Cake/index.tsx");
@@ -9293,4 +9292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0ae5a6888935684476a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.6e215f423d512aa4cccd.js.map
