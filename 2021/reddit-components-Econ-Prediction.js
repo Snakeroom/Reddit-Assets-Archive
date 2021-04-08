@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.584a05ff49ef1c287503.js
-// Retrieved at 4/6/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b6c247d37173422ad383.js
+// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -1827,135 +1827,135 @@
 				className: a,
 				isCommentsPage: i,
 				isEditing: r,
-				isPredictionsPage: n,
-				isVoteAnimationEnabled: o,
-				onPredictionResolve: c,
-				onPredictionVote: h,
-				post: f,
-				prediction: E,
-				pollId: A,
-				subredditOrProfile: B,
-				showToast: D,
-				userCoins: b,
-				userId: F,
-				userIsLoggedIn: g
+				isPredictionsPage: k,
+				isVoteAnimationEnabled: n,
+				onPredictionResolve: o,
+				onPredictionVote: c,
+				post: h,
+				prediction: f,
+				pollId: d,
+				subredditOrProfile: E,
+				showToast: A,
+				userCoins: B,
+				userId: D,
+				userIsLoggedIn: b
 			}) => {
-				var P;
-				const [S, T] = Object(x.useState)(!1), [_, j] = Object(x.useState)(null), [w, I] = Object(x.useState)(null), [N, L] = Object(x.useState)(!1), M = Object(y.a)(), z = Object(x.useCallback)(() => {
-					L(!1)
-				}, []), R = Object(k.e)(d.h), H = Object(x.useCallback)(() => {
-					j(null), I(null)
+				var F;
+				const [g, P] = Object(x.useState)(!1), [S, T] = Object(x.useState)(null), [_, j] = Object(x.useState)(null), [w, I] = Object(x.useState)(!1), N = Object(y.a)(), L = Object(x.useCallback)(() => {
+					I(!1)
+				}, []), M = Object(x.useCallback)(() => {
+					T(null), j(null)
 				}, []);
-				if (!A || !E || !B) return t.a.createElement(v, null);
+				if (!d || !f || !E) return t.a.createElement(v, null);
 				const {
-					creatorId: q,
-					endsAt: W,
-					options: U,
-					resolvedOptionId: K,
-					totalStakeAmount: Y,
-					totalVoters: J,
-					tournamentId: X,
-					userSelection: Z,
-					userWonAmount: Q
-				} = E, $ = q === F, aa = W < Date.now(), ia = !m()(X), ra = aa && $ && !K, xa = U.find(({
+					creatorId: z,
+					endsAt: R,
+					options: H,
+					resolvedOptionId: q,
+					totalStakeAmount: W,
+					totalVoters: U,
+					tournamentId: K,
+					userSelection: Y,
+					userWonAmount: J
+				} = f, X = z === D, Z = R < Date.now(), Q = !m()(K), $ = Z && X && !q, aa = H.find(({
 					id: a
-				}) => a === _), ta = i ? Object(s.a)(a, ii.a.container, ii.a.forCommentsPage, {
+				}) => a === S), ia = i ? Object(s.a)(a, ii.a.container, ii.a.forCommentsPage, {
 					[ii.a.isEditing]: r
 				}) : Object(s.a)(a, ii.a.container);
 				return t.a.createElement("div", {
-					className: ta,
+					className: ia,
 					onClick: a => {
-						E && a.stopPropagation()
+						f && a.stopPropagation()
 					}
-				}, i ? aa ? K ? t.a.createElement(Pa, {
-					didParticipate: !!Z,
-					isTokens: ia,
-					isWinner: K === Z,
-					predictedAmount: Z && (null === (P = U.find(({
+				}, i ? Z ? q ? t.a.createElement(Pa, {
+					didParticipate: !!Y,
+					isTokens: Q,
+					isWinner: q === Y,
+					predictedAmount: Y && (null === (F = H.find(({
 						id: a
-					}) => a === Z)) || void 0 === P ? void 0 : P.userStakeAmount) || 0,
-					wonAmount: Q
-				}) : ra ? t.a.createElement(Ea, null) : t.a.createElement(O, {
-					didParticipate: !!Z
+					}) => a === Y)) || void 0 === F ? void 0 : F.userStakeAmount) || 0,
+					wonAmount: J
+				}) : $ ? t.a.createElement(Ea, null) : t.a.createElement(O, {
+					didParticipate: !!Y
 				}) : t.a.createElement(C.a, {
-					isTokens: ia,
+					isTokens: Q,
 					storageKey: V.a.feature
 				}) : null, t.a.createElement("div", {
 					className: ii.a.poll
-				}, U.map(a => t.a.createElement(Xa, {
-					endsAt: W,
+				}, H.map(a => t.a.createElement(Xa, {
+					endsAt: R,
 					key: `prediction-option-${a.id}`,
-					isShowingVoteAnimation: N && Z === a.id,
-					onAnimationEnd: z
+					isShowingVoteAnimation: w && Y === a.id,
+					onAnimationEnd: L
 				}, t.a.createElement(ba, {
-					disabled: N,
-					isEnded: aa,
-					isSelected: _ === a.id,
-					needsResolution: ra,
+					disabled: w,
+					isEnded: Z,
+					isSelected: S === a.id,
+					needsResolution: $,
 					option: a,
 					onClick: () => (a => {
-						(ra || !aa && !Z) && (ra ? I(a.id) : j(a.id))
+						($ || !Z && !Y) && ($ ? j(a.id) : T(a.id))
 					})(a),
-					resolvedOptionId: K,
-					tournamentId: X,
-					userSelection: Z,
-					userIsLoggedOut: !g,
-					votePercentage: (Z || aa) && a.voteCount ? Math.floor(a.voteCount / J * 100) : null
+					resolvedOptionId: q,
+					tournamentId: K,
+					userSelection: Y,
+					userIsLoggedOut: !b,
+					votePercentage: (Y || Z) && a.voteCount ? Math.floor(a.voteCount / U * 100) : null
 				}))), t.a.createElement("div", {
 					className: ii.a.predictionsCount
-				}, ia && J > 0 && ei._({
+				}, Q && U > 0 && ei._({
 					"*": "{total voters} predictions made",
 					_1: "{total voters} prediction made"
-				}, [ei._param("total voters", Object(e.b)(J)), ei._plural(J)], {
+				}, [ei._param("total voters", Object(e.b)(U)), ei._plural(U)], {
 					hk: "2u2Nv8"
 				}), t.a.createElement(ja, {
-					isCoins: !ia,
-					endsAt: W,
-					resolvedOptionId: K,
-					totalStakeAmount: Y
-				}))), !!xa && t.a.createElement(ya, {
+					isCoins: !Q,
+					endsAt: R,
+					resolvedOptionId: q,
+					totalStakeAmount: W
+				}))), !!aa && t.a.createElement(ya, {
 					className: ii.a.modal,
-					isCreatingVote: S,
-					onOverlayClick: H,
-					onCancel: H,
+					isCreatingVote: g,
+					onOverlayClick: M,
+					onCancel: M,
 					onPredict: async ({
 						coinPackage: a,
 						chipPackage: i
 					}) => {
-						if (a && a.coins > b) return Object(p.promptUserToBuyMoreCoins)(), void M(u.a);
+						if (a && a.coins > B) return Object(p.promptUserToBuyMoreCoins)(), void N(u.a);
 						const r = i ? i.id : a.id,
 							x = i ? i.amount : a.coins;
-						if (aa) return D({
+						if (Z) return A({
 							duration: 5e3,
 							kind: G.b.Error,
 							text: ei._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})
-						}), void j(null);
-						if (!A || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						T(!0), M(X ? Object(u.m)({
-							pollId: A,
+						}), void T(null);
+						if (!d || !S) throw new Error("Invalid arguments, optionId and pollId must be strings");
+						P(!0), N(K ? Object(u.m)({
+							pollId: d,
 							selectedNumberTokens: x
 						}) : Object(u.l)({
-							pollId: A,
+							pollId: d,
 							selectedNumberCoins: x,
-							totalStakeAmount: Y
+							totalStakeAmount: W
 						}));
 						try {
-							await h({
+							await c({
 								coinPackageId: r,
-								optionId: _,
-								postId: A,
+								optionId: S,
+								postId: d,
 								price: x
-							}), T(!1), j(null), o ? L(!0) : D({
+							}), P(!1), T(null), n ? I(!0) : A({
 								duration: 5e3,
 								kind: G.b.SuccessCommunity,
-								text: ei._("Thanks! See if you're right in {timeToResult}", [ei._param("timeToResult", Object(l.a)(new Date(W), !0))], {
+								text: ei._("Thanks! See if you're right in {timeToResult}", [ei._param("timeToResult", Object(l.a)(new Date(R), !0))], {
 									hk: "3ZSdoo"
 								})
 							})
 						} catch (t) {
-							T(!1), j(null), D({
+							P(!1), T(null), A({
 								duration: 5e3,
 								kind: G.b.Error,
 								text: ei._("Error: Failed to make prediction, please try again later", null, {
@@ -1964,25 +1964,25 @@
 							})
 						}
 					},
-					option: xa,
-					pollId: A,
-					subredditId: f.belongsTo.id,
-					tournamentId: X,
+					option: aa,
+					pollId: d,
+					subredditId: h.belongsTo.id,
+					tournamentId: K,
 					withOverlay: !0
-				}), ra && w && t.a.createElement(La, {
-					isResolving: S,
-					isTokens: ia,
-					onOverlayClick: H,
-					onCancel: H,
+				}), $ && _ && t.a.createElement(La, {
+					isResolving: g,
+					isTokens: Q,
+					onOverlayClick: M,
+					onCancel: M,
 					onResolve: async () => {
-						if (T(!0), !w) throw new Error("Failed to create prediction, missing selected option");
+						if (P(!0), !_) throw new Error("Failed to create prediction, missing selected option");
 						try {
-							await c({
-								optionId: w,
-								postId: A
+							await o({
+								optionId: _,
+								postId: d
 							})
 						} catch (a) {
-							D({
+							A({
 								duration: 5e3,
 								kind: G.b.Error,
 								text: ei._("Error: Failed to resolve prediction, please try again later", null, {
@@ -1990,12 +1990,12 @@
 								})
 							})
 						}
-						I(null), T(!1)
+						j(null), P(!1)
 					},
 					withOverlay: !0
-				}), !n && R && X && t.a.createElement(si, {
-					subredditId: f.belongsTo.id,
-					tournamentId: X
+				}), !k && K && t.a.createElement(si, {
+					subredditId: h.belongsTo.id,
+					tournamentId: K
 				}))
 			};
 			i.default = pi(Object(k.b)(li, ci)(hi))
@@ -2656,4 +2656,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.584a05ff49ef1c287503.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b6c247d37173422ad383.js.map

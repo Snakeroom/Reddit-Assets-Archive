@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.3a93d324797b83e02841.js
-// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.5803bd699407620eb9c1.js
+// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -263,8 +263,8 @@
 			}
 			var B = A,
 				L = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
-				R = n("./src/reddit/components/SidebarContainer/index.tsx"),
-				D = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				D = n("./src/reddit/components/SidebarContainer/index.tsx"),
+				R = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				W = n("./node_modules/lodash/sampleSize.js"),
 				G = n.n(W),
 				U = n("./node_modules/request-idle-callback/index.js"),
@@ -641,13 +641,13 @@
 						className: Be.a.bannerText
 					}, t))
 				},
-				Re = e => `/t/${e}?activeTab=communities`,
-				De = e => {
+				De = e => `/t/${e}?activeTab=communities`,
+				Re = e => {
 					const t = e.topic.getName();
 					return c.a.createElement("div", {
 						className: Be.a.itemContainer
 					}, c.a.createElement(we.a, {
-						to: Re(e.topic.url),
+						to: De(e.topic.url),
 						onClick: () => e.sendEvent(Object(Ie.c)(t))
 					}, t))
 				};
@@ -665,7 +665,7 @@
 						widgetKind: e.widget && e.widget.kind
 					}, c.a.createElement(Le, null), c.a.createElement("div", {
 						className: Be.a.container
-					}, n.map(e => c.a.createElement(De, {
+					}, n.map(e => c.a.createElement(Re, {
 						key: e.url,
 						topic: e,
 						sendEvent: t
@@ -733,7 +733,7 @@
 							return Object(He.c)(e, {
 								experimentEligibilitySelector: $e.J,
 								experimentName: Ge.V
-							}) === Ge.Eb
+							}) === Ge.Db
 						}(e))
 					}
 				}),
@@ -813,7 +813,7 @@
 						category: b,
 						categories: g
 					} = this.state, _ = !d, k = !d, f = this.getVideoSubredditIds();
-					return c.a.createElement(R.a, {
+					return c.a.createElement(D.a, {
 						className: t
 					}, _ && c.a.createElement(oe.a, {
 						categories: g,
@@ -844,7 +844,7 @@
 						listingName: i
 					})), dt(this.props) && c.a.createElement(Ne, null), n && k && c.a.createElement(h.a, null, c.a.createElement(B, {
 						links: n
-					})), c.a.createElement(D.a, {
+					})), c.a.createElement(R.a, {
 						adComponent: c.a.createElement(L.a, {
 							placement: q.c.BELOW_THE_FOLD,
 							listingName: i,
@@ -1965,4 +1965,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.3a93d324797b83e02841.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.5803bd699407620eb9c1.js.map

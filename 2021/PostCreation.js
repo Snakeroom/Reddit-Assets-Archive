@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.17583a5b9750b130d127.js
-// Retrieved at 4/8/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0ac515715831c0fabafe.js
+// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -13141,7 +13141,7 @@
 								experimentName: r.w,
 								expEventOverride: t
 							});
-							return !!(Object(r.yd)(n) ? void 0 : n)
+							return !!(Object(r.xd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -21109,9 +21109,9 @@
 				},
 				tournamentsEnabled: (e, {
 					subredditId: t
-				}) => !!t && (Object(Cs.h)(e) && Object(S.N)(e, {
+				}) => !!t && Object(S.N)(e, {
 					subredditId: t
-				})),
+				}),
 				votingLengthDropdownIsOpen: e => e.tooltipId === Kd
 			});
 			class Qd extends o.a.Component {
@@ -23603,14 +23603,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.tc
-					}) === s.Dc.Enabled
+						experimentName: s.sc
+					}) === s.Cc.Enabled
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.sc
-					}) === s.Cc.Enabled
+						experimentName: s.rc
+					}) === s.Bc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -24324,4 +24324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.17583a5b9750b130d127.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0ac515715831c0fabafe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.0388c49569e1747dbfcd.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.fc509ca631cb2e027026.js
+// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(t, e, n) {
@@ -672,11 +672,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.Vb,
+					experimentName: c.Ub,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = t => Object(i.I)(t) || Object(i.J)(t),
-				u = Object(s.a)(o, t => t === c.bc.Enabled)
+				u = Object(s.a)(o, t => t === c.ac.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(t, e, n) {
 			"use strict";
@@ -699,21 +699,21 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.Yb,
-					experimentEligibilitySelector: d
-				}), a.a),
-				d = t => Object(i.I)(t) || Object(i.J)(t),
-				u = Object(s.a)(o, t => t === c.ec.Redesign),
-				b = Object(s.a)(t => Object(r.c)(t, {
 					experimentName: c.Xb,
 					experimentEligibilitySelector: d
 				}), a.a),
-				l = Object(s.a)(b, t => t === c.dc.Enabled),
-				h = Object(s.a)(t => Object(r.c)(t, {
+				d = t => Object(i.I)(t) || Object(i.J)(t),
+				u = Object(s.a)(o, t => t === c.dc.Redesign),
+				b = Object(s.a)(t => Object(r.c)(t, {
 					experimentName: c.Wb,
 					experimentEligibilitySelector: d
 				}), a.a),
-				m = Object(s.a)(h, t => t === c.cc.Enabled),
+				l = Object(s.a)(b, t => t === c.cc.Enabled),
+				h = Object(s.a)(t => Object(r.c)(t, {
+					experimentName: c.Vb,
+					experimentEligibilitySelector: d
+				}), a.a),
+				m = Object(s.a)(h, t => t === c.bc.Enabled),
 				f = Object(s.a)(t => Object(r.c)(t, {
 					experimentName: c.R,
 					experimentEligibilitySelector: d
@@ -728,4 +728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.0388c49569e1747dbfcd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.fc509ca631cb2e027026.js.map

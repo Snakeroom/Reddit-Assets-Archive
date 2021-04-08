@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1a21fccf41869a0a1f0d.js
-// Retrieved at 4/8/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.19047c5d0083179d657e.js
+// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.hc
+					experimentName: m.gc
 				});
-				return Object(m.yd)(t) ? void 0 : t
+				return Object(m.xd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.ic
+					experimentName: m.hc
 				});
-				return Object(m.yd)(t) ? void 0 : t
-			}, (e, t) => e === m.jc.Enabled && t === m.jc.Enabled);
+				return Object(m.xd)(t) ? void 0 : t
+			}, (e, t) => e === m.ic.Enabled && t === m.ic.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -5774,8 +5774,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: a.Gc
-				}) === a.Qc.Enabled
+					experimentName: a.Fc
+				}) === a.Pc.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -5783,4 +5783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.1a21fccf41869a0a1f0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.19047c5d0083179d657e.js.map

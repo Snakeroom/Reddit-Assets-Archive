@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.0a25a044af61536930cd.js
-// Retrieved at 4/7/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.6b8496e1cd1a3b77011c.js
+// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"], {
 		"./src/reddit/components/HTML5StreamPlayer/BlurImage/index.m.less": function(e, t, s) {
@@ -2389,19 +2389,19 @@
 			}));
 			var i = s("./src/reddit/constants/experiments.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const n = e => i.ud.Enabled === Object(a.c)(e, {
+			const n = e => i.td.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: i.pd
+				}),
+				o = e => i.sd.Enabled === Object(a.c)(e, {
+					experimentEligibilitySelector: a.a,
+					experimentName: i.nd
+				}),
+				r = e => i.ud.Enabled === Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: i.qd
-				}),
-				o = e => i.td.Enabled === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: i.od
-				}),
-				r = e => i.vd.Enabled === Object(a.c)(e, {
-					experimentEligibilitySelector: a.a,
-					experimentName: i.rd
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.0a25a044af61536930cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08.6b8496e1cd1a3b77011c.js.map

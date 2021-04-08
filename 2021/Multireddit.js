@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.4e381bab670b677db7cb.js
-// Retrieved at 4/8/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.2f0e31f08c413453ecb9.js
+// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5298,12 +5298,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.fd.SmIcon:
+						case b.ed.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.fd.SmIconHc:
+						case b.ed.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7404,9 +7404,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.Zb.Enabled === Object(r.c)(e, {
+			const o = e => s.Yb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Tb
+				experimentName: s.Sb
 			})
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
@@ -7424,13 +7424,13 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: s.vb
 					});
-					return !(!t || Object(s.yd)(t))
+					return !(!t || Object(s.xd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
 						experimentName: s.vb
-					}) === s.Hb.ListingEnabled
+					}) === s.Gb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -7560,12 +7560,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Yc
+						experimentName: s.Xc
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.fd.SmIcon || t === s.fd.SmIconHc
+					return t === s.ed.SmIcon || t === s.ed.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7588,4 +7588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4e381bab670b677db7cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.2f0e31f08c413453ecb9.js.map
