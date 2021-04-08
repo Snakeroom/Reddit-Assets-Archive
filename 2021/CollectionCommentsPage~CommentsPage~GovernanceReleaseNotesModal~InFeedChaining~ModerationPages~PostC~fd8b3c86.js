@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.e3417984ace31fe44040.js
-// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.f9fd8badea678cd5d4e5.js
+// Retrieved at 4/8/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -499,10 +499,10 @@
 				} : void 0
 			}, e.toggleTileLayout && n.a.createElement(g.a, {
 				className: S.a.tileIcon
-			}), e.currentSlide, "/", e.totalSlides), P = (e, t = 4) => {
+			}), e.currentSlide, "/", e.totalSlides), R = (e, t = 4) => {
 				let s = e - t;
 				return s < 0 && (s = 0), s
-			}, R = (e, t, s = 4) => {
+			}, P = (e, t, s = 4) => {
 				let i = e + s;
 				return i > t - 1 && (i = t - 1), i
 			};
@@ -534,7 +534,7 @@
 					Q = Object(r.a)(W),
 					X = Object(r.a)(F);
 				Object(i.useEffect)(() => {
-					(void 0 !== Q && Q !== W && W && $ < 0 && J < 0 || void 0 !== X && X !== F && W && ($ > F || J < F)) && (z(P(F, 1)), q(R(F, p.length, 1)))
+					(void 0 !== Q && Q !== W && W && $ < 0 && J < 0 || void 0 !== X && X !== F && W && ($ > F || J < F)) && (z(R(F, 1)), q(P(F, p.length, 1)))
 				}, [Q, F, W, $, J, X, p.length, A]);
 				const Z = Object(i.useRef)(),
 					ee = Object(i.useCallback)(e => {
@@ -543,7 +543,7 @@
 								isIntersecting: t
 							} = e;
 							t ? ($ < 0 || J - $ == 0) && (Z.current = setTimeout(() => {
-								const e = R(J, p.length);
+								const e = P(J, p.length);
 								e !== J && q(e)
 							}, 1e3)) : ($ < 0 || J - $ == 0) && clearTimeout(Z.current)
 						})
@@ -568,7 +568,7 @@
 						if (!U) return;
 						const e = F + 1;
 						if (e + 1 >= J) {
-							const e = R(J, p.length);
+							const e = P(J, p.length);
 							e !== J && q(e)
 						}
 						te(e), G(u.b(A, e)), G(u.d(A, e + 1)), se()
@@ -577,7 +577,7 @@
 						if (!H) return;
 						const e = F - 1;
 						if (e - 1 <= $) {
-							const e = P($);
+							const e = R($);
 							e !== $ && z(e)
 						}
 						const t = F + 1;
@@ -1009,8 +1009,8 @@
 				M = s("./src/reddit/components/Media/RichTextContainer/index.tsx"),
 				N = s("./src/reddit/components/Media/TwitterEmbed/index.tsx"),
 				_ = s("./src/reddit/components/Media/VideoBox/index.tsx"),
-				P = s("./src/reddit/components/PlayButton/index.tsx"),
-				R = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
+				R = s("./src/reddit/components/PlayButton/index.tsx"),
+				P = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
 				D = s("./src/reddit/components/RichTextJson/index.tsx"),
 				A = s("./src/reddit/constants/componentSizes.ts"),
 				V = s("./src/reddit/constants/experiments.ts"),
@@ -1466,7 +1466,7 @@
 									"data-click-id": "text",
 									isCommentsPage: n,
 									showFull: p
-								}, l.a.createElement(R.a, {
+								}, l.a.createElement(P.a, {
 									flairStyleTemplate: s,
 									html: m.isMeta ? Object(G.a)(m.media.content, m.id, te.a.hiddenLink) : m.media.content
 								})), l.a.createElement(j.a, {
@@ -1496,7 +1496,7 @@
 								shouldBlur: Z,
 								source: m.preview.url,
 								originalSource: m.preview.url
-							})), l.a.createElement(P.a, null)))) : Y.h.has(m.media.provider) ? m.media.provider === Y.v.Twitter ? l.a.createElement(N.a, {
+							})), l.a.createElement(R.a, null)))) : Y.h.has(m.media.provider) ? m.media.provider === Y.v.Twitter ? l.a.createElement(N.a, {
 								canLoadContent: f,
 								embedBoxChildRef: this.storeChildRef,
 								media: m.media,
@@ -1542,7 +1542,7 @@
 								width: o ? void 0 : t,
 								postId: m.id,
 								shouldLoad: !0,
-								shouldPause: this.state.shouldPause,
+								shouldPause: r && V,
 								source: B,
 								originalSource: m.media.content
 							}))))
@@ -1566,7 +1566,7 @@
 								shouldBlur: Z,
 								source: e,
 								originalSource: e
-							})), l.a.createElement(P.a, null))));
+							})), l.a.createElement(R.a, null))));
 							const s = l.a.createElement(L.a, se({}, X, {
 								alwaysWrapMedia: !0,
 								isVideo: !0
@@ -1955,4 +1955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.e3417984ace31fe44040.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.f9fd8badea678cd5d4e5.js.map
