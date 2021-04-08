@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.046139e751ac414aaef2.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.363f85e9de0e0135f384.js
+// Retrieved at 4/8/2021, 10:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -15774,7 +15774,10 @@
 					onChange: s,
 					...o
 				}) => {
-					const r = Object(n.useCallback)(e => s(e.target.value), [s]);
+					const r = Object(n.useCallback)(e => s(e.target.value), [s]),
+						{
+							items: i
+						} = o;
 					return a.a.createElement(X, {
 						disabled: e
 					}, a.a.createElement(K, null, a.a.createElement(q, null, o.label), a.a.createElement(V, null, o.subtext)), a.a.createElement("div", {
@@ -15788,13 +15791,10 @@
 						disabled: e || o.inputDisabled,
 						onChange: r,
 						value: o.selected
-					}, o.items.map(({
-						value: e,
-						text: t
-					}) => a.a.createElement("option", {
+					}, Object.keys(i).map(e => a.a.createElement("option", {
 						key: e,
 						value: e
-					}, t)))))
+					}, i[e].displayName)))))
 				},
 				Oe = e => a.a.createElement(X, {
 					className: e.className,
@@ -22371,4 +22371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.046139e751ac414aaef2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.363f85e9de0e0135f384.js.map

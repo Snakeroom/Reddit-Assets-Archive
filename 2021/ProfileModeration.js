@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.965f9529af018c90729b.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.120a4962a5041c88e1d1.js
+// Retrieved at 4/8/2021, 10:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -373,8 +373,8 @@
 			var S = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				N = n("./src/reddit/controls/Typography/index.tsx"),
 				O = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				T = n("./src/reddit/icons/svgs/Circle/index.tsx"),
-				j = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				j = n("./src/reddit/icons/svgs/Circle/index.tsx"),
+				T = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				R = n("./node_modules/lodash/range.js"),
 				I = n.n(R),
 				L = n("./src/reddit/controls/Button/index.tsx"),
@@ -395,7 +395,7 @@
 				}).apply(this, arguments)
 			}
 			const G = Object(d.a)(h.a),
-				A = x.a.wrapped(T.a, "Circle", B.a),
+				A = x.a.wrapped(j.a, "Circle", B.a),
 				z = x.a.h3("Label", B.a),
 				U = x.a.wrapped(N.c, "Subtext", B.a),
 				q = x.a.wrapped(m.a, "HoverTooltip", B.a),
@@ -425,7 +425,7 @@
 				})),
 				K = x.a.a("Link", B.a),
 				Z = x.a.wrapped(K, "SubtextLink", B.a),
-				X = x.a.wrapped(j.a, "LinkIcon", B.a),
+				X = x.a.wrapped(T.a, "LinkIcon", B.a),
 				$ = x.a.button("LinkButton", B.a),
 				ee = x.a.wrapped(O.a, "ArrowRight", B.a),
 				te = e => r.a.createElement(J, {
@@ -587,7 +587,10 @@
 					onChange: n,
 					...s
 				}) => {
-					const o = Object(a.useCallback)(e => n(e.target.value), [n]);
+					const o = Object(a.useCallback)(e => n(e.target.value), [n]),
+						{
+							items: l
+						} = s;
 					return r.a.createElement(J, {
 						disabled: e
 					}, r.a.createElement(Y, null, r.a.createElement(z, null, s.label), r.a.createElement(U, null, s.subtext)), r.a.createElement("div", {
@@ -601,13 +604,10 @@
 						disabled: e || s.inputDisabled,
 						onChange: o,
 						value: s.selected
-					}, s.items.map(({
-						value: e,
-						text: t
-					}) => r.a.createElement("option", {
+					}, Object.keys(l).map(e => r.a.createElement("option", {
 						key: e,
 						value: e
-					}, t)))))
+					}, l[e].displayName)))))
 				},
 				ke = e => r.a.createElement(J, {
 					className: e.className,
@@ -1786,4 +1786,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.965f9529af018c90729b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.120a4962a5041c88e1d1.js.map

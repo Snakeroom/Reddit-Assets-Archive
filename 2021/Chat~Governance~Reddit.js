@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2714c34b4462e25c42ff.js
-// Retrieved at 4/7/2021, 7:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2a16bff3d77e2fcf2484.js
+// Retrieved at 4/8/2021, 10:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1448,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("130680"),
+				buildNumber: r("130752"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1617838019"),
+				})("1617889058"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3628,14 +3628,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c294139eb55481029cd494cbb082f46081b81a4eb-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7665bb56ace5fe1c43eb5f4badec880ff40d2714-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "294139eb55481029cd494cbb082f46081b81a4eb-production",
+						release: "7665bb56ace5fe1c43eb5f4badec880ff40d2714-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -4084,7 +4084,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "294139eb55481029cd494cbb082f46081b81a4eb-production",
+						releaseClient: "7665bb56ace5fe1c43eb5f4badec880ff40d2714-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -10472,478 +10472,479 @@
 		"./src/reddit/actions/preferences.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return U
-			})), i.d(t, "i", (function() {
 				return M
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "i", (function() {
 				return G
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "g", (function() {
 				return q
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "h", (function() {
 				return V
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "p", (function() {
 				return W
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return H
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "d", (function() {
 				return $
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "m", (function() {
 				return z
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "f", (function() {
 				return K
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "o", (function() {
 				return Q
+			})), i.d(t, "r", (function() {
+				return Y
 			})), i.d(t, "t", (function() {
-				return ee
+				return te
 			})), i.d(t, "c", (function() {
-				return se
-			})), i.d(t, "v", (function() {
 				return oe
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "v", (function() {
 				return de
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "w", (function() {
 				return ae
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "x", (function() {
 				return le
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "u", (function() {
 				return ce
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "y", (function() {
 				return ue
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "F", (function() {
 				return _e
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "D", (function() {
 				return pe
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "a", (function() {
 				return me
+			})), i.d(t, "q", (function() {
+				return he
 			})), i.d(t, "E", (function() {
-				return ge
-			})), i.d(t, "H", (function() {
 				return we
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "H", (function() {
 				return ye
+			})), i.d(t, "j", (function() {
+				return ve
 			})), i.d(t, "l", (function() {
-				return Te
+				return Oe
 			})), i.d(t, "k", (function() {
-				return Ie
+				return je
 			})), i.d(t, "z", (function() {
-				return Fe
-			})), i.d(t, "C", (function() {
 				return Re
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "C", (function() {
 				return xe
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "s", (function() {
 				return Ce
+			})), i.d(t, "B", (function() {
+				return Ne
 			})), i.d(t, "A", (function() {
-				return Ae
-			})), i.d(t, "n", (function() {
 				return De
+			})), i.d(t, "n", (function() {
+				return Pe
 			})), i.d(t, "G", (function() {
-				return Be
-			})), i.d(t, "J", (function() {
 				return Le
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "J", (function() {
 				return Ue
+			})), i.d(t, "I", (function() {
+				return Me
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = i("./src/config.ts"),
-				r = i("./node_modules/fbt/lib/FbtPublic.js"),
-				s = i("./node_modules/js-cookie/src/js.cookie.js"),
-				o = i.n(s),
-				d = i("./node_modules/lodash/isEmpty.js"),
-				a = i.n(d),
-				l = i("./node_modules/lodash/omit.js"),
-				c = i.n(l),
-				u = i("./node_modules/lodash/pick.js"),
-				_ = i.n(u),
-				p = i("./src/lib/constants/index.ts"),
-				m = i("./src/lib/makeActionCreator/index.ts"),
-				h = i("./src/lib/omitHeaders/index.ts"),
-				b = i("./src/reddit/actions/chat/toggle.ts"),
-				f = i("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				g = i("./src/reddit/actions/users.ts"),
-				w = i("./src/reddit/constants/cookie.ts"),
-				y = i("./src/reddit/constants/headers.ts"),
-				v = i("./src/reddit/endpoints/user/preferences.ts"),
-				E = i("./src/reddit/helpers/cookies/index.ts"),
-				S = i("./src/reddit/endpoints/moderator/structuredStyles.ts"),
-				T = i("./src/lib/makeApiRequest/index.ts"),
-				O = i("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				I = i("./src/reddit/actions/imageUploads.ts"),
-				j = i("./src/reddit/actions/toaster.ts"),
-				F = i("./src/reddit/constants/preferences.ts"),
-				R = i("./src/reddit/endpoints/subreddit/settings.ts"),
-				x = i("./src/reddit/helpers/media/index.ts"),
-				C = i("./src/reddit/helpers/trackers/profileSettings.ts"),
-				N = i("./src/reddit/models/Image/index.tsx"),
-				A = i("./src/reddit/models/Toast/index.ts"),
-				D = i("./src/reddit/models/User/index.ts"),
-				P = i("./src/reddit/selectors/imageUploads.ts"),
-				k = i("./src/reddit/selectors/structuredStyles.ts"),
-				B = i("./src/reddit/selectors/subreddit.ts"),
-				L = i("./src/reddit/selectors/user.ts");
-			const U = "PREFERENCES__AUTOPLAY_TOGGLED",
-				M = "PREFERENCES__NIGHTMODE_TOGGLED",
-				G = "PREFERENCES__LANGUAGE_CHANGED",
-				q = "PREFERENCES__LAYOUT_CHANGED",
-				V = "PREFERENCES__SUBREDDIT_LAYOUT_CHANGED",
-				W = "PREFERENCES__CUSTOMIZE_FLYOUT_SHOWN",
-				H = "PREFERENCES__CUSTOMIZE_FLYOUT_DISMISSED",
-				$ = "PREFERENCES__PROFILE_LAYOUT_CHANGED",
-				z = "PREFERENCES__HAMBURGER_TRAY_TOGGLED",
-				K = "PREFERENCES__RPAN_DU_DISMISSED",
-				Q = "PREFERENCES__TOP_CONTENT_DISMISSAL_PREF_SET",
-				Y = Object(m.a)(G),
-				J = Object(m.a)(q),
-				X = Object(m.a)(V),
-				Z = Object(m.a)(W),
-				ee = Object(m.a)(H),
-				te = Object(m.a)(K),
-				ie = Object(m.a)(Q),
-				ne = (Object(m.a)($), Object(m.a)(U)),
-				re = Object(m.a)(M),
-				se = (Object(m.a)(z), "PREFERENCES__COLLAPSED_TRAY_TOGGLED"),
-				oe = (Object(m.a)(se), e => async (t, i, {
-					apiContext: n
+			var n = i("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/fbt.js"),
+				r = i("./src/config.ts"),
+				s = i("./node_modules/fbt/lib/FbtPublic.js"),
+				o = i("./node_modules/js-cookie/src/js.cookie.js"),
+				d = i.n(o),
+				a = i("./node_modules/lodash/isEmpty.js"),
+				l = i.n(a),
+				c = i("./node_modules/lodash/omit.js"),
+				u = i.n(c),
+				_ = i("./node_modules/lodash/pick.js"),
+				p = i.n(_),
+				m = i("./src/lib/constants/index.ts"),
+				h = i("./src/lib/makeActionCreator/index.ts"),
+				b = i("./src/lib/omitHeaders/index.ts"),
+				f = i("./src/reddit/actions/chat/toggle.ts"),
+				g = i("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				w = i("./src/reddit/actions/users.ts"),
+				y = i("./src/reddit/constants/cookie.ts"),
+				v = i("./src/reddit/constants/headers.ts"),
+				E = i("./src/reddit/endpoints/user/preferences.ts"),
+				S = i("./src/reddit/helpers/cookies/index.ts"),
+				T = i("./src/reddit/endpoints/moderator/structuredStyles.ts"),
+				O = i("./src/lib/makeApiRequest/index.ts"),
+				I = i("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				j = i("./src/reddit/actions/imageUploads.ts"),
+				F = i("./src/reddit/actions/toaster.ts"),
+				R = i("./src/reddit/constants/preferences.ts"),
+				x = i("./src/reddit/endpoints/subreddit/settings.ts"),
+				C = i("./src/reddit/helpers/media/index.ts"),
+				N = i("./src/reddit/helpers/trackers/profileSettings.ts"),
+				A = i("./src/reddit/models/Image/index.tsx"),
+				D = i("./src/reddit/models/Toast/index.ts"),
+				P = i("./src/reddit/models/User/index.ts"),
+				k = i("./src/reddit/selectors/imageUploads.ts"),
+				B = i("./src/reddit/selectors/structuredStyles.ts"),
+				L = i("./src/reddit/selectors/subreddit.ts"),
+				U = i("./src/reddit/selectors/user.ts");
+			const M = "PREFERENCES__AUTOPLAY_TOGGLED",
+				G = "PREFERENCES__NIGHTMODE_TOGGLED",
+				q = "PREFERENCES__LANGUAGE_CHANGED",
+				V = "PREFERENCES__LAYOUT_CHANGED",
+				W = "PREFERENCES__SUBREDDIT_LAYOUT_CHANGED",
+				H = "PREFERENCES__CUSTOMIZE_FLYOUT_SHOWN",
+				$ = "PREFERENCES__CUSTOMIZE_FLYOUT_DISMISSED",
+				z = "PREFERENCES__PROFILE_LAYOUT_CHANGED",
+				K = "PREFERENCES__HAMBURGER_TRAY_TOGGLED",
+				Q = "PREFERENCES__RPAN_DU_DISMISSED",
+				Y = "PREFERENCES__TOP_CONTENT_DISMISSAL_PREF_SET",
+				J = Object(h.a)(q),
+				X = Object(h.a)(V),
+				Z = Object(h.a)(W),
+				ee = Object(h.a)(H),
+				te = Object(h.a)($),
+				ie = Object(h.a)(Q),
+				ne = Object(h.a)(Y),
+				re = (Object(h.a)(z), Object(h.a)(M)),
+				se = Object(h.a)(G),
+				oe = (Object(h.a)(K), "PREFERENCES__COLLAPSED_TRAY_TOGGLED"),
+				de = (Object(h.a)(oe), e => async (t, i, {
+					apiContext: r
 				}) => {
-					const r = n(),
-						s = await Object(T.a)(Object(h.a)(r, [y.a]), {
+					const s = r(),
+						o = await Object(O.a)(Object(b.a)(s, [v.a]), {
 							data: {
-								lang: e.replace("-", "_")
+								lang: Object(n.isoLocaleToFbtLocale)(e)
 							},
-							endpoint: `${r.apiUrl}/api/v1/me/prefs`,
-							method: p.cb.PATCH,
+							endpoint: `${s.apiUrl}/api/v1/me/prefs`,
+							method: m.cb.PATCH,
 							type: "json"
 						});
-					if (s.ok) {
-						const e = s.body.lang;
-						t(Y(e))
+					if (o.ok) {
+						const e = o.body.lang;
+						t(J(e))
 					}
 				}),
-				de = e => async (t, i, {
+				ae = e => async (t, i, {
 					apiContext: n
 				}) => {
-					t(J({
+					t(X({
 						layout: e
-					})), t(Object(g.o)())
-				}, ae = (e, t) => async (i, n, {
+					})), t(Object(w.o)())
+				}, le = (e, t) => async (i, n, {
 					apiContext: r
 				}) => {
 					const s = n(),
-						o = Object(L.fb)(s),
+						o = Object(U.fb)(s),
 						{
 							hasSeenCustomizeFlyout: d
 						} = s.user.prefs;
-					d || i(Z()), t && o ? (i(X({
+					d || i(ee()), t && o ? (i(Z({
 						subredditId: t,
 						layout: e
-					})), i(Le(t, {
+					})), i(Ue(t, {
 						layout: e
-					}, !1)), d || i(we({
+					}, !1)), d || i(ye({
 						hasSeenCustomizeFlyout: !0
-					}, !1))) : (i(de(e)), i(we(d ? {
+					}, !1))) : (i(ae(e)), i(ye(d ? {
 						layout: e
 					} : {
 						layout: e,
 						hasSeenCustomizeFlyout: !0
 					}, !1)))
-				}, le = e => async (t, i, {
+				}, ce = e => async (t, i, {
 					apiContext: n
 				}) => {
-					i().user.account && await Object(v.d)(e, n())
-				}, ce = e => async (t, i, {
-					apiContext: s
+					i().user.account && await Object(E.d)(e, n())
+				}, ue = e => async (t, i, {
+					apiContext: n
 				}) => {
-					const d = i();
-					Object(k.i)(d) ? t(Object(j.f)({
-						kind: A.b.Error,
-						text: r.fbt._("In order to continue styling your community, Night Mode must be turned off.", null, {
+					const o = i();
+					Object(B.i)(o) ? t(Object(F.f)({
+						kind: D.b.Error,
+						text: s.fbt._("In order to continue styling your community, Night Mode must be turned off.", null, {
 							hk: "1yZidT"
 						})
-					})) : (d.user.account ? await Object(v.e)(e, s()) : Object(E.a)({
+					})) : (o.user.account ? await Object(E.e)(e, n()) : Object(S.a)({
 						prefs: {
 							nightmode: e
 						}
-					}), t(re({
+					}), t(se({
 						nightmode: e
-					})), t(Object(b.f)(e)), o.a.remove(w.c, {
-						domain: n.a.cookieDomain
+					})), t(Object(f.f)(e)), d.a.remove(y.c, {
+						domain: r.a.cookieDomain
 					}))
-				}, ue = () => async (e, t, {
+				}, _e = () => async (e, t, {
 					apiContext: i
 				}) => {
 					const n = t(),
-						s = n.user.prefs.topContentTimesDismissed + 1,
+						r = n.user.prefs.topContentTimesDismissed + 1,
 						o = Date.now();
-					n.user.account ? e(we({
+					n.user.account ? e(ye({
 						topContentDismissalTime: o,
-						topContentTimesDismissed: s
-					}, !1)) : Object(E.a)({
+						topContentTimesDismissed: r
+					}, !1)) : Object(S.a)({
 						prefs: {
-							[F.d]: o,
-							[F.e]: s
+							[R.d]: o,
+							[R.e]: r
 						}
-					}), e(ie({
+					}), e(ne({
 						topContentDismissalTime: o,
-						topContentTimesDismissed: s
-					})), e(Object(j.f)({
-						kind: A.b.SuccessCommunity,
-						text: r.fbt._("Got it! We will show you less of this", null, {
+						topContentTimesDismissed: r
+					})), e(Object(F.f)({
+						kind: D.b.SuccessCommunity,
+						text: s.fbt._("Got it! We will show you less of this", null, {
 							hk: "4op5Wa"
 						})
 					}))
-				}, _e = (e, t, {
+				}, pe = (e, t, {
 					showToast: i = !0
-				} = {}) => async (n, s, {
+				} = {}) => async (n, r, {
 					apiContext: o
 				}) => {
-					const d = -1 === [f.R, "r/popular"].indexOf(e),
-						a = s();
+					const d = -1 === [g.R, "r/popular"].indexOf(e),
+						a = r();
 					if (a.user.account)
 						if (d) {
 							const i = e.replace(/^r\//, ""),
-								r = Object(B.F)(a, i);
-							n(Le(r, {
+								r = Object(L.F)(a, i);
+							n(Ue(r, {
 								rpanDuDismissalTime: t
 							}, !1))
-						} else n(we({
+						} else n(ye({
 							rpanDuDismissalTime: t
 						}, !1));
-					else Object(E.a)({
+					else Object(S.a)({
 						prefs: {
-							[F.b]: t
+							[R.b]: t
 						}
 					});
 					if (i) {
-						const e = r.fbt._("Got it! We will show you less of this", null, {
+						const e = s.fbt._("Got it! We will show you less of this", null, {
 							hk: "4op5Wa"
 						});
-						n(Object(j.f)({
-							kind: A.b.SuccessCommunity,
+						n(Object(F.f)({
+							kind: D.b.SuccessCommunity,
 							text: e
 						}))
 					}
-					n(te(t))
-				}, pe = "SETTINGS__ACCOUNT_PREFS_UPDATE_SUCCESS", me = "SETTINGS__SUBREDDIT_PREFS_UPDATED", he = Object(m.a)("SETTINGS__UPDATE_PENDING"), be = Object(m.a)("SETTINGS__UPDATE_FAILURE"), fe = Object(m.a)(pe), ge = Object(m.a)(me), we = (e, t = !0, i = "") => async (n, s, {
+					n(ie(t))
+				}, me = "SETTINGS__ACCOUNT_PREFS_UPDATE_SUCCESS", he = "SETTINGS__SUBREDDIT_PREFS_UPDATED", be = Object(h.a)("SETTINGS__UPDATE_PENDING"), fe = Object(h.a)("SETTINGS__UPDATE_FAILURE"), ge = Object(h.a)(me), we = Object(h.a)(he), ye = (e, t = !0, i = "") => async (n, r, {
 					apiContext: o
 				}) => {
-					n(he());
-					const d = c()(e, F.a),
-						l = _()(e, F.a),
-						u = [];
-					a()(d) || u.push(Object(v.g)(d, o())), a()(l) || u.push(Object(v.b)(l, o())), (await Promise.all(u)).every(e => e.ok) ? (n(fe({
+					n(be());
+					const d = u()(e, R.a),
+						a = p()(e, R.a),
+						c = [];
+					l()(d) || c.push(Object(E.g)(d, o())), l()(a) || c.push(Object(E.b)(a, o())), (await Promise.all(c)).every(e => e.ok) ? (n(ge({
 						preferences: e
-					})), t && n(Object(j.f)({
-						kind: A.b.SuccessCommunity,
-						text: i || r.fbt._("Changes saved", null, {
+					})), t && n(Object(F.f)({
+						kind: D.b.SuccessCommunity,
+						text: i || s.fbt._("Changes saved", null, {
 							hk: "2isjrZ"
 						})
-					}))) : (n(be()), t && n(Object(j.f)({
-						kind: A.b.Error,
-						text: r.fbt._("Changes failed to save", null, {
+					}))) : (n(fe()), t && n(Object(F.f)({
+						kind: D.b.Error,
+						text: s.fbt._("Changes failed to save", null, {
 							hk: "XrtIq"
 						})
 					})))
-				}, ye = "SETTINGS__SUCCESS", ve = Object(m.a)("SETTINGS__PENDING"), Ee = Object(m.a)("SETTINGS__FAILURE"), Se = Object(m.a)(ye), Te = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", Oe = Object(m.a)(Te), Ie = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", je = Object(m.a)(Ie), Fe = e => async (t, i, {
-					apiContext: r
+				}, ve = "SETTINGS__SUCCESS", Ee = Object(h.a)("SETTINGS__PENDING"), Se = Object(h.a)("SETTINGS__FAILURE"), Te = Object(h.a)(ve), Oe = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", Ie = Object(h.a)(Oe), je = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", Fe = Object(h.a)(je), Re = e => async (t, i, {
+					apiContext: n
 				}) => {
-					t(ve());
-					const s = await ((e, t) => Object(T.a)(e, {
-						endpoint: Object(O.a)(`${n.a.gatewayUrl}/desktopapi/v1/prefs`),
-						method: p.cb.GET,
+					t(Ee());
+					const s = await ((e, t) => Object(O.a)(e, {
+						endpoint: Object(I.a)(`${r.a.gatewayUrl}/desktopapi/v1/prefs`),
+						method: m.cb.GET,
 						data: {
 							timestamp: t ? Date.now() : void 0
 						}
-					}))(r(), e);
-					s.ok ? t(Se(s.body)) : t(Ee())
-				}, Re = e => async (t, i, {
+					}))(n(), e);
+					s.ok ? t(Te(s.body)) : t(Se())
+				}, xe = e => async (t, i, {
 					apiContext: n
 				}) => {
-					if (i().user.account) await Object(v.a)(e, n());
+					if (i().user.account) await Object(E.a)(e, n());
 					else {
-						const e = o.a.get(w.d);
+						const e = d.a.get(y.d);
 						if (e) {
 							const t = JSON.parse(decodeURIComponent(e));
-							t.pref_quarantine_optin = !0, o.a.set(w.d, JSON.stringify(encodeURIComponent(t)), p.y)
+							t.pref_quarantine_optin = !0, d.a.set(y.d, JSON.stringify(encodeURIComponent(t)), m.y)
 						} else {
 							const e = JSON.stringify({
 								pref_quarantine_optin: !0
 							});
-							o.a.set(w.d, e, p.y)
+							d.a.set(y.d, e, m.y)
 						}
 					}
-				}, xe = e => async (t, i, {
+				}, Ce = e => async (t, i, {
 					apiContext: n
 				}) => {
-					i().user.account && await Object(v.c)(e, n()), t(ne({
+					i().user.account && await Object(E.c)(e, n()), t(re({
 						autoplayVideo: e
 					}))
-				}, Ce = (e, t) => async (i, n, r) => {
-					await Ne(e, t)(i, n, r)
-				}, Ne = (e, t) => async (i, n, s) => {
+				}, Ne = (e, t) => async (i, n, r) => {
+					await Ae(e, t)(i, n, r)
+				}, Ae = (e, t) => async (i, n, r) => {
 					const {
 						apiContext: o
-					} = s, d = Object(L.i)(n());
+					} = r, d = Object(U.i)(n());
 					if (!d || !d.profileId) return;
-					i(Object(I.k)(e));
-					const a = Object(D.e)(d),
-						l = p.Xb + a,
-						c = await Object(S.d)(o(), l, e.file.name, t, await Object(x.g)(e.file));
+					i(Object(j.k)(e));
+					const a = Object(P.e)(d),
+						l = m.Xb + a,
+						c = await Object(T.d)(o(), l, e.file.name, t, await Object(C.g)(e.file));
 					if (c.ok) {
 						let p;
 						try {
-							if (!(p = await Object(I.g)(n(), c, e, N.a.Profiles))) return void i(Object(j.f)({
-								kind: A.b.Error,
-								text: r.fbt._("Changes failed to save", null, {
+							if (!(p = await Object(j.g)(n(), c, e, A.a.Profiles))) return void i(Object(F.f)({
+								kind: D.b.Error,
+								text: s.fbt._("Changes failed to save", null, {
 									hk: "3QlXrl"
 								})
 							}));
-							i(Object(I.j)(p))
+							i(Object(j.j)(p))
 						} catch (u) {
-							return void i(Object(I.i)(u))
+							return void i(Object(j.i)(u))
 						}
 						let m = null,
 							h = null;
 						try {
-							(m = await Object(I.f)(n(), N.a.Profiles)) && (h = Object(I.m)(m)(i, n, s))
+							(m = await Object(j.f)(n(), A.a.Profiles)) && (h = Object(j.m)(m)(i, n, r))
 						} catch (_) {
-							return void i(Object(j.f)({
-								kind: A.b.Error,
-								text: r.fbt._("Changes failed to save", null, {
+							return void i(Object(F.f)({
+								kind: D.b.Error,
+								text: s.fbt._("Changes failed to save", null, {
 									hk: "3QlXrl"
 								})
 							}))
 						}
 						const b = decodeURIComponent(p.url);
-						if (i(Oe({
+						if (i(Ie({
 								imageUrl: b,
 								key: t,
 								subredditId: d.profileId,
 								username: a
-							})), (await Object(S.e)(o(), l, {
+							})), (await Object(T.e)(o(), l, {
 								[t]: b
 							})).ok) {
 							if (h) try {
 								await h
 							} catch (_) {}
-							i(Object(j.f)({
-								kind: A.b.SuccessCommunity,
-								text: r.fbt._("Changes saved", null, {
+							i(Object(F.f)({
+								kind: D.b.SuccessCommunity,
+								text: s.fbt._("Changes saved", null, {
 									hk: "xEVHp"
 								})
-							})), Object(C.g)(n(), t);
-							const s = Object(P.a)(n(), e);
-							i(Oe({
-								imageUrl: s ? s.url : p.url,
+							})), Object(N.g)(n(), t);
+							const r = Object(k.a)(n(), e);
+							i(Ie({
+								imageUrl: r ? r.url : p.url,
 								key: t,
 								subredditId: d.profileId,
 								username: a
 							}))
-						} else i(Object(j.f)({
-							kind: A.b.Error,
-							text: r.fbt._("Changes failed to save", null, {
+						} else i(Object(F.f)({
+							kind: D.b.Error,
+							text: s.fbt._("Changes failed to save", null, {
 								hk: "1y1wAY"
 							})
 						}))
 					} else {
 						const e = "profileBanner" === t ? "1280x384" : "256x256";
-						i(Object(j.f)({
-							kind: A.b.Error,
-							text: r.fbt._("There was an error uploading your image. Please verify that the size of your image is {maxImageSize} and less than 500KB.", [r.fbt._param("maxImageSize", e)], {
+						i(Object(F.f)({
+							kind: D.b.Error,
+							text: s.fbt._("There was an error uploading your image. Please verify that the size of your image is {maxImageSize} and less than 500KB.", [s.fbt._param("maxImageSize", e)], {
 								hk: "I6lfz"
 							})
 						}))
 					}
-				}, Ae = e => async (t, i, {
+				}, De = e => async (t, i, {
 					apiContext: n
 				}) => {
-					const s = Object(L.i)(i());
-					if (!s || !s.profileId) return;
-					const o = Object(D.e)(s),
-						d = p.Xb + o,
+					const r = Object(U.i)(i());
+					if (!r || !r.profileId) return;
+					const o = Object(P.e)(r),
+						d = m.Xb + o,
 						a = {
 							profileIcon: "icon",
 							profileBanner: "banner"
 						} [e],
-						l = await Object(R.b)(n(), d, a);
+						l = await Object(x.b)(n(), d, a);
 					if (l.ok) {
 						const n = l.body[a + "_img"];
-						t(je({
+						t(Fe({
 							imageUrl: n,
 							key: e,
-							subredditId: s.profileId,
+							subredditId: r.profileId,
 							username: o
-						})), t(Object(j.f)({
-							kind: A.b.SuccessCommunity,
-							text: r.fbt._("Changes saved", null, {
+						})), t(Object(F.f)({
+							kind: D.b.SuccessCommunity,
+							text: s.fbt._("Changes saved", null, {
 								hk: "xEVHp"
 							})
-						})), Object(C.f)(i(), e)
-					} else t(Object(j.f)({
-						kind: A.b.Error,
-						text: r.fbt._("Changes failed to save", null, {
+						})), Object(N.f)(i(), e)
+					} else t(Object(F.f)({
+						kind: D.b.Error,
+						text: s.fbt._("Changes failed to save", null, {
 							hk: "1y1wAY"
 						})
 					}))
-				}, De = "SETTINGS__PROFILE_SETTINGS_UPDATE_SUCCESS", Pe = Object(m.a)(De), ke = Object(m.a)("SETTINGS__PROFILE_SETTINGS_UPDATE_FAILED"), Be = (e, t) => async (i, n, {
-					apiContext: s
+				}, Pe = "SETTINGS__PROFILE_SETTINGS_UPDATE_SUCCESS", ke = Object(h.a)(Pe), Be = Object(h.a)("SETTINGS__PROFILE_SETTINGS_UPDATE_FAILED"), Le = (e, t) => async (i, n, {
+					apiContext: r
 				}) => {
-					const o = Object(L.i)(n());
+					const o = Object(U.i)(n());
 					if (!o || !o.profileId) return !1;
 					const d = [],
 						a = {
 							...n().subreddits.settings[o.profileId],
 							...e
 						};
-					d.push(Object(R.f)(s(), o.profileId, a));
+					d.push(Object(x.f)(r(), o.profileId, a));
 					const {
 						showActiveCommunities: l,
 						prevShowActiveCommunities: c
 					} = t;
-					return l !== c && d.push(Object(v.g)({
+					return l !== c && d.push(Object(E.g)({
 						showActiveCommunities: l
-					}, s())), (await Promise.all(d)).every(e => e.ok) ? (i(Pe({
+					}, r())), (await Promise.all(d)).every(e => e.ok) ? (i(ke({
 						settings: e,
 						additional: t,
 						subredditId: o.profileId
-					})), Object(C.i)(n()), i(Object(j.f)({
-						kind: A.b.SuccessCommunity,
-						text: r.fbt._("Changes saved", null, {
+					})), Object(N.i)(n()), i(Object(F.f)({
+						kind: D.b.SuccessCommunity,
+						text: s.fbt._("Changes saved", null, {
 							hk: "xEVHp"
 						})
-					})), !0) : (i(ke()), i(Object(j.f)({
-						kind: A.b.Error,
-						text: r.fbt._("Changes failed to save", null, {
+					})), !0) : (i(Be()), i(Object(F.f)({
+						kind: D.b.Error,
+						text: s.fbt._("Changes failed to save", null, {
 							hk: "1y1wAY"
 						})
 					})), !1)
-				}, Le = (e, t, i = !0) => async (n, s, {
+				}, Ue = (e, t, i = !0) => async (n, r, {
 					apiContext: o
 				}) => {
-					const d = s().user.prefs.subreddit[e];
-					n(ge({
+					const d = r().user.prefs.subreddit[e];
+					n(we({
 						subredditId: e,
 						prefs: t
-					})), (await Object(v.h)(e, t, o())).ok ? i && n(Object(j.f)({
-						kind: A.b.SuccessCommunity,
-						text: r.fbt._("Changes saved", null, {
+					})), (await Object(E.h)(e, t, o())).ok ? i && n(Object(F.f)({
+						kind: D.b.SuccessCommunity,
+						text: s.fbt._("Changes saved", null, {
 							hk: "xEVHp"
 						})
-					})) : (d && n(ge({
+					})) : (d && n(we({
 						subredditId: e,
 						prefs: d
-					})), i && n(Object(j.f)({
-						kind: A.b.Error,
-						text: r.fbt._("Changes failed to save", null, {
+					})), i && n(Object(F.f)({
+						kind: D.b.Error,
+						text: s.fbt._("Changes failed to save", null, {
 							hk: "1y1wAY"
 						})
 					})))
-				}, Ue = (e, t) => async (i, n, {
+				}, Me = (e, t) => async (i, n, {
 					apiContext: r
 				}) => {
 					const s = n();
-					Object(B.T)(s, {
+					Object(L.T)(s, {
 						subredditId: e
-					}) && s.user.prefs.rememberCommunitySort && i(Le(e, {
+					}) && s.user.prefs.rememberCommunitySort && i(Ue(e, {
 						sort: t
 					}, !1))
 				}
@@ -44674,4 +44675,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2714c34b4462e25c42ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2a16bff3d77e2fcf2484.js.map

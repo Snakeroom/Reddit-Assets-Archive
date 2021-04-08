@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.b2e4bf0cba6e5af480e4.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.39d843f83db524f88f84.js
+// Retrieved at 4/8/2021, 10:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -915,7 +915,10 @@
 					onChange: n,
 					...s
 				}) => {
-					const o = Object(r.useCallback)(e => n(e.target.value), [n]);
+					const o = Object(r.useCallback)(e => n(e.target.value), [n]),
+						{
+							items: l
+						} = s;
 					return a.a.createElement(K, {
 						disabled: e
 					}, a.a.createElement(q, null, a.a.createElement(V, null, s.label), a.a.createElement(z, null, s.subtext)), a.a.createElement("div", {
@@ -929,13 +932,10 @@
 						disabled: e || s.inputDisabled,
 						onChange: o,
 						value: s.selected
-					}, s.items.map(({
-						value: e,
-						text: t
-					}) => a.a.createElement("option", {
+					}, Object.keys(l).map(e => a.a.createElement("option", {
 						key: e,
 						value: e
-					}, t)))))
+					}, l[e].displayName)))))
 				},
 				Ne = e => a.a.createElement(K, {
 					className: e.className,
@@ -1767,4 +1767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.b2e4bf0cba6e5af480e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.39d843f83db524f88f84.js.map

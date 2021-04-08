@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.1046a1758daa485042f4.js
-// Retrieved at 4/6/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.18909f0c52240ebece4d.js
+// Retrieved at 4/8/2021, 10:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1356,7 +1356,10 @@
 					onChange: n,
 					...o
 				}) => {
-					const i = Object(s.useCallback)(e => n(e.target.value), [n]);
+					const i = Object(s.useCallback)(e => n(e.target.value), [n]),
+						{
+							items: r
+						} = o;
 					return a.a.createElement(Y, {
 						disabled: e
 					}, a.a.createElement(J, null, a.a.createElement(V, null, o.label), a.a.createElement(K, null, o.subtext)), a.a.createElement("div", {
@@ -1370,13 +1373,10 @@
 						disabled: e || o.inputDisabled,
 						onChange: i,
 						value: o.selected
-					}, o.items.map(({
-						value: e,
-						text: t
-					}) => a.a.createElement("option", {
+					}, Object.keys(r).map(e => a.a.createElement("option", {
 						key: e,
 						value: e
-					}, t)))))
+					}, r[e].displayName)))))
 				},
 				_e = e => a.a.createElement(Y, {
 					className: e.className,
@@ -3118,4 +3118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.1046a1758daa485042f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.18909f0c52240ebece4d.js.map
