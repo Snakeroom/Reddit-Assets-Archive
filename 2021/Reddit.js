@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.277f6b1730d41bf77109.js
-// Retrieved at 4/8/2021, 10:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.37104bfb0af4508a4142.js
+// Retrieved at 4/8/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -12659,82 +12659,62 @@
 		"./src/reddit/helpers/trackers/commentsPage.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return u
+				return l
 			})), n.d(t, "g", (function() {
-				return p
+				return m
 			})), n.d(t, "b", (function() {
-				return b
+				return u
 			})), n.d(t, "e", (function() {
-				return h
+				return p
 			})), n.d(t, "a", (function() {
-				return g
+				return b
 			})), n.d(t, "c", (function() {
-				return f
+				return h
 			})), n.d(t, "d", (function() {
-				return v
+				return g
 			}));
-			var s = n("./src/reddit/constants/tracking.ts"),
-				r = n("./src/reddit/selectors/telemetry.ts"),
-				o = n("./src/reddit/selectors/userFlair.ts");
-
-			function a(e) {
-				const t = Object(r.subreddit)(e);
-				if (!t || !t.id) return;
-				const n = Object(o.c)(e, {
-					subredditId: t.id
-				});
-				if (!(null == n ? void 0 : n.displaySettings.isUserEnabled) || !(null == n ? void 0 : n.applied)) return {
-					isActive: !1
-				};
-				const s = n.applied.templateId;
-				return s ? {
-					isActive: !0,
-					title: n.templates[s].text
-				} : {
-					isActive: !0
-				}
-			}
-			var i = n("./src/reddit/models/PostDraft/index.ts"),
-				c = n("./src/reddit/selectors/comments.ts"),
-				d = n("./src/reddit/selectors/platform.ts"),
-				l = n("./src/telemetry/index.ts");
-			const m = e => {
-					const t = Object(d.m)(e);
+			var s = n("./src/telemetry/index.ts"),
+				r = n("./src/reddit/constants/tracking.ts"),
+				o = n("./src/reddit/models/PostDraft/index.ts"),
+				a = n("./src/reddit/selectors/comments.ts"),
+				i = n("./src/reddit/selectors/platform.ts"),
+				c = n("./src/reddit/selectors/telemetry.ts");
+			const d = e => {
+					const t = Object(i.m)(e);
 					return {
 						source: "comment_composer",
-						action: s.c.CLICK,
-						...Object(r.defaults)(e),
-						screen: Object(r.screen)(e),
-						subreddit: Object(r.subreddit)(e),
-						post: t ? Object(r.post)(e, t) : null,
-						profile: Object(r.profile)(e)
+						action: r.c.CLICK,
+						...Object(c.defaults)(e),
+						screen: Object(c.screen)(e),
+						subreddit: Object(c.subreddit)(e),
+						post: t ? Object(c.post)(e, t) : null,
+						profile: Object(c.profile)(e)
 					}
 				},
-				u = (e, t, n, s) => {
+				l = (e, t, n, r) => {
 					const o = {
-							commentId: s,
+							commentId: r,
 							commentsPageKey: n
 						},
-						i = s && Object(c.j)(e, o) || 0;
-					return Object(l.a)({
+						i = r && Object(a.j)(e, o) || 0;
+					return Object(s.a)({
 						noun: "comment",
-						...m(e),
-						comment: s ? Object(r.comment)(e, s) : null,
-						listing: Object(r.listing)(e, void 0, {
+						...d(e),
+						comment: r ? Object(c.comment)(e, r) : null,
+						listing: Object(c.listing)(e, void 0, {
 							depth: i
 						}),
 						commentComposer: {
 							editorMode: t
-						},
-						userFlair: a(e)
+						}
 					})
 				},
-				p = (e, t, n, s) => {
-					const r = m(e);
-					return Object(l.a)({
-						...r,
+				m = (e, t, n, r) => {
+					const o = d(e);
+					return Object(s.a)({
+						...o,
 						actionInfo: {
-							...r.actionInfo,
+							...o.actionInfo,
 							reason: "karma_rate_limit"
 						},
 						source: "backend",
@@ -12742,37 +12722,37 @@
 						noun: "comment",
 						comment: {
 							bodyText: t,
-							parentId: s,
+							parentId: r,
 							postId: n
 						}
 					})
 				},
-				b = e => Object(l.a)({
+				u = e => Object(s.a)({
 					noun: "cancel",
-					...m(e)
+					...d(e)
 				}),
-				h = (e, t) => {
-					t === i.c.replyToPost && Object(l.a)({
+				p = (e, t) => {
+					t === o.c.replyToPost && Object(s.a)({
 						noun: "input",
-						...m(e)
+						...d(e)
 					})
 				},
-				g = (e, t) => Object(l.a)({
+				b = (e, t) => Object(s.a)({
 					source: "comment",
 					noun: "delete",
 					action: "click",
-					...Object(r.defaults)(t),
-					screen: Object(r.screen)(t),
-					subreddit: Object(r.subreddit)(t),
-					post: Object(r.post)(t, e)
+					...Object(c.defaults)(t),
+					screen: Object(c.screen)(t),
+					subreddit: Object(c.subreddit)(t),
+					post: Object(c.post)(t, e)
 				}),
-				f = e => Object(l.a)({
+				h = e => Object(s.a)({
 					noun: "edit",
-					...m(e)
+					...d(e)
 				}),
-				v = e => Object(l.a)({
+				g = e => Object(s.a)({
 					noun: "save_edit",
-					...m(e)
+					...d(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/customFeeds.ts": function(e, t, n) {
@@ -17538,4 +17518,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.277f6b1730d41bf77109.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.37104bfb0af4508a4142.js.map
