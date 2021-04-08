@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1efab0e97026b5175371.js
-// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.e0cd9698b219c9831937.js
+// Retrieved at 4/8/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2835,7 +2835,7 @@
 			}))), se = o.a.wrapped(_.a, "menuIcon", B.a), re = e => {
 				let t = 186;
 				if (e) {
-					t += 74 + 39
+					t += 111 + 40
 				}
 				return t
 			}, ne = "rpan-overlay-menu", ae = ({
@@ -5054,4 +5054,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1efab0e97026b5175371.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.e0cd9698b219c9831937.js.map
