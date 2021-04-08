@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ef735d041e25df24f06f.js
-// Retrieved at 4/6/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6b49f11753cf8cdd1683.js
+// Retrieved at 4/8/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -4787,7 +4787,9 @@
 				ClassicThumbnail: "_2yiWJ30hPmljAALgG9InUz",
 				classicThumbnail: "_2yiWJ30hPmljAALgG9InUz",
 				ThumbLink: "_3SCgQPuxXigmV7fEOhNHCN",
-				thumbLink: "_3SCgQPuxXigmV7fEOhNHCN"
+				thumbLink: "_3SCgQPuxXigmV7fEOhNHCN",
+				VideoProcessingStatus: "_16S8F-ykERyNWpmVnAU9y0",
+				videoProcessingStatus: "_16S8F-ykERyNWpmVnAU9y0"
 			}
 		},
 		"./src/reddit/components/PostContent/index.tsx": function(e, t, s) {
@@ -5234,88 +5236,85 @@
 				},
 				Re = s("./src/reddit/components/PostContent/index.m.less"),
 				De = s.n(Re);
-			const Be = p.a.wrapped(le.c, "PostTitle", De.a),
-				Ve = p.a.wrapped(G.a, "ExpandoButton", De.a),
-				ze = p.a.wrapped(S, "ClassicExpandoMotion", De.a),
-				We = p.a.wrapped(Q.c, "FullWidthFlatlist", De.a),
-				Ue = p.a.wrapped(K.a, "ClassicThumbnail", De.a),
-				He = Object(ge.t)({
-					isCommentsPage: ge.w,
-					pageLayer: e => e
-				}),
-				Ke = Object(a.b)(() => Object(c.c)({
-					activeModalId: A.a,
-					flairStyleTemplate: ge.S,
-					currentUser: z.i,
-					crosspost: V.d,
-					hideNSFWPref: z.B,
-					imageGalleryCurrentItem: V.i,
-					isAdminOrMod: (e, t) => {
-						const s = Object(V.P)(e, {
-							postId: t.postId
-						});
-						return !!s && Object(R.a)(e, {
-							subredditId: s.id
-						})
-					},
-					isCurrentUserProfilePost: V.k,
-					isExpanded: V.l,
-					post: V.D,
-					moderatorPermissions: D.j,
-					modModeEnabled: ge.Q,
-					isInCategoriesExperiment: N.a,
-					showAwardsPlaque: F.a,
-					showEditFlair: ye.a,
-					subredditOrProfile: V.P,
-					isEditing: B.K,
-					userIsOp: z.pb
-				}), (e, {
-					pageLayer: t,
-					postId: s
-				}) => ({
-					onIgnoreReports: () => e(Object(h.S)(s)),
-					onOpenReportsDropdown: t => e(Object(k.h)({
-						tooltipId: t
-					})),
-					onVoteClick: t => {
-						const o = t === M.a.upvoted ? Object(h.U)(s) : Object(h.r)(s);
-						e(o)
-					},
-					fireAdPixelsOfType: (t, s) => e(Object(h.u)(t, s)),
-					openPost: t => e(Object(h.E)(t))
+			const {
+				fbt: Be
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ve = p.a.wrapped(le.c, "PostTitle", De.a), ze = p.a.wrapped(G.a, "ExpandoButton", De.a), We = p.a.wrapped(S, "ClassicExpandoMotion", De.a), Ue = p.a.wrapped(Q.c, "FullWidthFlatlist", De.a), He = p.a.wrapped(K.a, "ClassicThumbnail", De.a), Ke = i.a.createElement("p", {
+				className: De.a.VideoProcessingStatus
+			}, Be._("Your video is processing. We'll send you a notification when it's done.", null, {
+				hk: "1R8rKB"
+			})), qe = Object(ge.t)({
+				isCommentsPage: ge.w,
+				pageLayer: e => e
+			}), Ge = Object(a.b)(() => Object(c.c)({
+				activeModalId: A.a,
+				flairStyleTemplate: ge.S,
+				currentUser: z.i,
+				crosspost: V.d,
+				hideNSFWPref: z.B,
+				imageGalleryCurrentItem: V.i,
+				isAdminOrMod: (e, t) => {
+					const s = Object(V.P)(e, {
+						postId: t.postId
+					});
+					return !!s && Object(R.a)(e, {
+						subredditId: s.id
+					})
+				},
+				isCurrentUserProfilePost: V.k,
+				isExpanded: V.l,
+				post: V.D,
+				moderatorPermissions: D.j,
+				modModeEnabled: ge.Q,
+				isInCategoriesExperiment: N.a,
+				showAwardsPlaque: F.a,
+				showEditFlair: ye.a,
+				subredditOrProfile: V.P,
+				isEditing: B.K,
+				userIsOp: z.pb
+			}), (e, {
+				pageLayer: t,
+				postId: s
+			}) => ({
+				onIgnoreReports: () => e(Object(h.S)(s)),
+				onOpenReportsDropdown: t => e(Object(k.h)({
+					tooltipId: t
 				})),
-				qe = p.a.wrapped(d.a, "ThumbLink", De.a),
-				Ge = ({
+				onVoteClick: t => {
+					const o = t === M.a.upvoted ? Object(h.U)(s) : Object(h.r)(s);
+					e(o)
+				},
+				fireAdPixelsOfType: (t, s) => e(Object(h.u)(t, s)),
+				openPost: t => e(Object(h.E)(t))
+			})), Ye = p.a.wrapped(d.a, "ThumbLink", De.a), Qe = ({
+				post: e,
+				templatePlaceholderImage: t
+			}) => e.source ? i.a.createElement(He, {
+				post: e,
+				forceShowNSFW: !0,
+				templatePlaceholderImage: t
+			}) : i.a.createElement(Ye, {
+				to: Object(C.b)(e.permalink)
+			}, i.a.createElement(He, {
+				post: e,
+				forceShowNSFW: !0
+			})), Je = ({
+				post: e,
+				isExpanded: t,
+				scrollerItemRef: s
+			}) => i.a.createElement(We, {
+				content: i.a.createElement(i.a.Fragment, null, i.a.createElement(ae.a, {
+					className: De.a.ClassicPostMedia,
+					isListing: !1,
+					isNotCardView: !0,
 					post: e,
-					templatePlaceholderImage: t
-				}) => e.source ? i.a.createElement(Ue, {
-					post: e,
-					forceShowNSFW: !0,
-					templatePlaceholderImage: t
-				}) : i.a.createElement(qe, {
-					to: Object(C.b)(e.permalink)
-				}, i.a.createElement(Ue, {
-					post: e,
-					forceShowNSFW: !0
-				})),
-				Ye = ({
-					post: e,
-					isExpanded: t,
+					shouldLoad: !0,
+					showFull: !0,
+					showCentered: !0,
 					scrollerItemRef: s
-				}) => i.a.createElement(ze, {
-					content: i.a.createElement(i.a.Fragment, null, i.a.createElement(ae.a, {
-						className: De.a.ClassicPostMedia,
-						isListing: !1,
-						isNotCardView: !0,
-						post: e,
-						shouldLoad: !0,
-						showFull: !0,
-						showCentered: !0,
-						scrollerItemRef: s
-					})),
-					shouldExpand: !!t
-				});
-			t.a = He(Ke(e => {
+				})),
+				shouldExpand: !!t
+			});
+			t.a = qe(Ge(e => {
 				const {
 					className: t,
 					crosspost: s,
@@ -5369,7 +5368,7 @@
 					} = Pe,
 					Se = R.removedByCategory === T.f.Reddit && Object(u.e)(R.created) > 24,
 					Te = R.removedByCategory && R.removedByCategory !== T.f.Reddit || Se,
-					Me = i.a.createElement(Be, {
+					Me = i.a.createElement(Ve, {
 						post: R,
 						size: le.b.ExtraLarge,
 						showCategoryTag: P,
@@ -5426,17 +5425,17 @@
 					reportable: R
 				}), i.a.createElement(J.d, null), i.a.createElement("div", {
 					className: De.a.FlatlistContainer
-				}, i.a.createElement(Ve, {
+				}, i.a.createElement(ze, {
 					crosspost: s || void 0,
 					isExpanded: !!j,
 					post: R,
 					useMediaIcons: !1
-				}), Ye(e), V && i.a.createElement(H.a, {
+				}), Je(e), V && i.a.createElement(H.a, {
 					awardsPlaqueStyle: !0,
 					isPostDetail: !0,
 					thing: R,
 					tooltipType: P ? pe.c.Lightbox : void 0
-				}), i.a.createElement(We, {
+				}), i.a.createElement(Ue, {
 					currentUser: o,
 					hasModFlairPerms: oe,
 					hasModFullPerms: ne,
@@ -5451,7 +5450,7 @@
 					useFlatlistBreakpoints: Oe,
 					isActionBarAnimationEnabled: h,
 					isForceSelected: !P && h
-				}))), Object(b.a)(R) && i.a.createElement(Ge, {
+				}))), Object(b.a)(R) && i.a.createElement(Qe, {
 					post: R,
 					templatePlaceholderImage: d && d.postPlaceholderImage
 				})));
@@ -5487,7 +5486,7 @@
 					}), Me, R.source && i.a.createElement(ue.a, {
 						post: R,
 						isCommentsPage: O
-					}), i.a.createElement(Y.a, {
+					}), Object(L.L)(R) && Ke, i.a.createElement(Y.a, {
 						className: O ? De.a.leftPadding : void 0,
 						post: R,
 						showCategoryTag: e.isInCategoriesExperiment && O,
@@ -8389,4 +8388,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ef735d041e25df24f06f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6b49f11753cf8cdd1683.js.map
