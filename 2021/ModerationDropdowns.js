@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.8bb4f5be79e624c38952.js
-// Retrieved at 4/12/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.c3794f5b50c7298fd72a.js
+// Retrieved at 4/12/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -1524,4 +1524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.8bb4f5be79e624c38952.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.c3794f5b50c7298fd72a.js.map

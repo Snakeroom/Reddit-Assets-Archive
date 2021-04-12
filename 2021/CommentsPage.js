@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.085e3a1582afd9c2d1e4.js
-// Retrieved at 4/12/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.2bc53026a7cb96d15c62.js
+// Retrieved at 4/12/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7315,7 +7315,7 @@
 						style: {
 							color: o
 						}
-					}, e && !Object(x.ud)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(x.sd)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -7345,7 +7345,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.ud)(r), u = i && i.id;
+					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.sd)(r), u = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -11100,7 +11100,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.M
 				});
-				return !!t && !Object(n.ud)(t)
+				return !!t && !Object(n.sd)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -11115,7 +11115,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.ob
 				});
-				return !(!t || Object(n.ud)(t))
+				return !(!t || Object(n.sd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -11326,4 +11326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.085e3a1582afd9c2d1e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.2bc53026a7cb96d15c62.js.map
