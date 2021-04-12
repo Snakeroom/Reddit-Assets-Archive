@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f3ba7c2f233c775ab8bf.js
-// Retrieved at 4/12/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.dd7582216bf13ea84cde.js
+// Retrieved at 4/12/2021, 4:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1700,7 +1700,7 @@
 			})), n.d(t, "i", (function() {
 				return z
 			})), n.d(t, "g", (function() {
-				return K
+				return Z
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
@@ -1733,7 +1733,7 @@
 				_ = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				k = n("./src/reddit/selectors/notificationPrefs.ts"),
 				I = n("./src/reddit/selectors/notificationsInbox.tsx");
-			const N = Object(r.a)(i.d),
+			const N = Object(r.a)(i.e),
 				M = Object(r.a)(i.b),
 				T = Object(r.a)(i.a),
 				A = e => async (t, n, {
@@ -1814,7 +1814,7 @@
 					a && a !== o && n(U({
 						index: a
 					}))
-				}, U = Object(r.a)(i.f), G = (Object(r.a)(i.g), Object(r.a)(i.e)), B = e => async (t, n, {
+				}, U = Object(r.a)(i.g), G = (Object(r.a)(i.h), Object(r.a)(i.f)), B = e => async (t, n, {
 					gqlContext: r
 				}) => {
 					const o = [e];
@@ -1920,7 +1920,7 @@
 					}), S.b.SuccessCommunityGreen))) : t(Object(d.f)(Object(d.e)(s.fbt._("Failed to turn off updates on this, please try again", null, {
 						hk: "1zhpEy"
 					}), S.b.Error)))
-				}, W = Object(r.a)(i.c), Q = (e, t) => async (n, s, {
+				}, W = Object(r.a)(i.d), Q = (e, t) => async (n, s, {
 					apiContext: r
 				}) => {
 					let a;
@@ -1973,31 +1973,40 @@
 							n = t && t.data && t.data.updateInboxActivitySeenState && t.data.updateInboxActivitySeenState.badgeIndicators;
 						n && (e(Object(o.a)(n)), e(Object(c.d)()))
 					}
-				}, K = () => async (e, t, {
+				}, K = Object(r.a)(i.c), Z = () => async (e, t, {
 					apiContext: n
 				}) => {
-					if ((await ((e, t) => Object(g.a)(Object(f.a)(e, [v.a]), {
-							endpoint: Object(x.a)(`${e.apiUrl}/api/read_all_messages`),
-							method: h.cb.POST,
-							data: {
-								filter_type: t
-							}
-						}))(n())).ok) {
-						const t = Object(o.e)({
-								count: 0,
-								key: P.c.MessageTab
-							}),
-							n = Object(o.e)({
-								count: 0,
-								key: P.c.ActivityTab
-							});
-						e(Object(o.a)({
-							...t,
-							...n
-						}))
-					} else e(Object(d.f)(Object(d.e)(s.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
-						hk: "VW7c3"
-					}), S.b.Error)))
+					const {
+						notificationsInbox: {
+							markAllAsReadTimestamp: r
+						}
+					} = t(), a = new Date;
+					if (!r || a.getTime() - new Date(r).getTime() > 15e3) {
+						if ((await ((e, t) => Object(g.a)(Object(f.a)(e, [v.a]), {
+								endpoint: Object(x.a)(`${e.apiUrl}/api/read_all_messages`),
+								method: h.cb.POST,
+								data: {
+									filter_types: null == t ? void 0 : t.join(",")
+								}
+							}))(n(), [C.Activity, C.Messages])).ok) {
+							const t = Object(o.e)({
+									count: 0,
+									key: P.c.MessageTab
+								}),
+								n = Object(o.e)({
+									count: 0,
+									key: P.c.ActivityTab
+								});
+							e(Object(o.a)({
+								...t,
+								...n
+							})), e(K({
+								now: a.toISOString()
+							}))
+						} else e(Object(d.f)(Object(d.e)(s.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
+							hk: "VW7c3"
+						}), S.b.Error)))
+					}
 				}
 		},
 		"./src/reddit/actions/page.ts": function(e, t, n) {
@@ -17560,4 +17569,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f3ba7c2f233c775ab8bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.dd7582216bf13ea84cde.js.map
