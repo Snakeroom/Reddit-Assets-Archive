@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.d42a3def9bbcb5325f21.js
-// Retrieved at 4/12/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.5af449b4f84f92466265.js
+// Retrieved at 4/12/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -89,8 +89,8 @@
 				v = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var x = n("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
 				_ = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
-				C = n("./src/reddit/models/GqlTopLevelField.ts"),
-				g = n("./src/reddit/models/User/index.ts");
+				g = n("./src/reddit/models/GqlTopLevelField.ts"),
+				C = n("./src/reddit/models/User/index.ts");
 
 			function I(e) {
 				const t = [],
@@ -101,7 +101,7 @@
 						followedRedditorsInfo: o
 					} = e.identity;
 				for (const a of o.edges) {
-					if (a.node.__typename !== g.c.AvailableRedditor) continue;
+					if (a.node.__typename !== C.c.AvailableRedditor) continue;
 					const e = Object(x.a)(a.node.profile);
 					i[e.id] = e;
 					const {
@@ -113,7 +113,7 @@
 					subscribedSubreddits: r
 				} = e.identity;
 				for (const a of r.edges) {
-					if (a.node.__typename !== C.a.Subreddit) continue;
+					if (a.node.__typename !== g.a.Subreddit) continue;
 					const e = Object(_.a)(a.node);
 					s[e.id] = e;
 					const {
@@ -254,14 +254,14 @@
 						subredditModels: x,
 						profileModels: _
 					}));
-					const C = {
+					const g = {
 							type: e.type,
 							name: r.name
 						},
-						g = () => Object(w.gb)(n(), {
-							identifier: C
+						C = () => Object(w.gb)(n(), {
+							identifier: g
 						});
-					(g() || (await t(F([C], !0)), g())) && ((await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
+					(C() || (await t(F([g], !0)), C())) && ((await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
 						method: s.cb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
@@ -524,16 +524,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = {},
-				g = "",
+			const g = {},
+				C = "",
 				I = 0,
 				O = "200px";
 			class y extends o.a.Component {
 				constructor() {
 					super(...arguments), this.container = o.a.createRef(), this.state = {
-						notificationHeights: C
+						notificationHeights: g
 					}, this.resetOverflowMenu = () => {
-						this.props.activeOverflowMenuId.length > I && this.props.setActiveOverflowMenuId(g)
+						this.props.activeOverflowMenuId.length > I && this.props.setActiveOverflowMenuId(C)
 					}, this.getContainerHeight = () => {
 						const {
 							notificationHeights: e
@@ -777,6 +777,7 @@
 			e.exports = {
 				notificationItem: "_3mUSJN4kdLCGjq-K-JLJw",
 				unread: "_2n4UrzwZ3VBdRmFUYAHF_9",
+				isNightMode: "_3ds5pVvIyBrh1GgQ2O7AFd",
 				contextContainer: "_3T3J7R8JnlSfiFdB5bxe5h",
 				link: "_1tpiOc0IxpDU113wUs4zi1",
 				avatarContainer: "_2WN4-UdVoyjpLQ8mpNTQA",
@@ -906,9 +907,9 @@
 			})), n.d(t, "q", (function() {
 				return _
 			})), n.d(t, "j", (function() {
-				return C
-			})), n.d(t, "i", (function() {
 				return g
+			})), n.d(t, "i", (function() {
+				return C
 			})), n.d(t, "e", (function() {
 				return I
 			})), n.d(t, "d", (function() {
@@ -1111,7 +1112,7 @@
 						type: e
 					}
 				}),
-				C = e => t => ({
+				g = e => t => ({
 					...c.defaults(t),
 					action: a.c.CLICK,
 					noun: "notification_app_settings",
@@ -1121,7 +1122,7 @@
 						pageType: e
 					}
 				}),
-				g = () => e => ({
+				C = () => e => ({
 					...c.defaults(e),
 					action: a.c.CLICK,
 					noun: "see_all",
@@ -1446,4 +1447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.d42a3def9bbcb5325f21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5af449b4f84f92466265.js.map

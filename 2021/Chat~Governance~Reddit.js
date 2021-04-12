@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c484648be9774df94f38.js
-// Retrieved at 4/12/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bd22687fd0a70951354a.js
+// Retrieved at 4/12/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1448,11 +1448,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("131012"),
+				buildNumber: r("131028"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1618253789"),
+				})("1618257546"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3628,14 +3628,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cbef6c718ebb8623dc326863de8aaefdf1f2d14f7-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ccd23ea71d618869f6630cae13a63aa4c06d5c0f4-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bef6c718ebb8623dc326863de8aaefdf1f2d14f7-production",
+						release: "cd23ea71d618869f6630cae13a63aa4c06d5c0f4-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -4084,7 +4084,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "bef6c718ebb8623dc326863de8aaefdf1f2d14f7-production",
+						releaseClient: "cd23ea71d618869f6630cae13a63aa4c06d5c0f4-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -27293,6 +27293,7 @@
 					postTransparent20: Object(n.l)(.2, m.post),
 					postError: Object(n.c)(.1, "#FF0000", m.post),
 					activeAlpha10: Object(n.g)(m.active, .1),
+					activeAlpha20: Object(n.g)(m.active, .2),
 					activeAlpha50: Object(n.g)(m.active, .5),
 					activeLight60: Object(n.h)(.6, m.active),
 					activeTinted05: Object(n.j)(.05, m.active),
@@ -27446,6 +27447,7 @@
 				y = {
 					...w,
 					activeAlpha10: Object(n.g)(w.active, .1),
+					activeAlpha20: Object(n.g)(w.active, .2),
 					activeAlpha50: Object(n.g)(w.active, .1),
 					activeLight60: Object(n.h)(.6, w.active),
 					activeTinted05: Object(n.j)(.05, w.active),
@@ -27456,6 +27458,7 @@
 				E = e => ({
 					...O,
 					activeAlpha10: e.active ? Object(n.g)(e.active, .1) : y.activeAlpha10,
+					activeAlpha20: e.active ? Object(n.g)(e.active, .2) : y.activeAlpha20,
 					activeAlpha50: e.active ? Object(n.g)(e.active, .5) : y.activeAlpha50,
 					activeLight60: e.active ? Object(n.h)(.6, e.active) : y.activeLight60,
 					activeTinted05: e.active ? Object(n.j)(.05, e.active) : y.activeTinted05,
@@ -27479,6 +27482,7 @@
 							bodyTextShaded20: Object(n.i)(.2, r),
 							bodyTextTinted20: Object(n.j)(.2, r),
 							activeAlpha10: e.active ? Object(n.g)(e.active, .1) : h.activeAlpha10,
+							activeAlpha20: e.active ? Object(n.g)(e.active, .2) : h.activeAlpha20,
 							activeAlpha50: e.active ? Object(n.g)(e.active, .5) : h.activeAlpha50,
 							activeLight60: e.active ? Object(n.h)(.6, e.active) : h.activeLight60,
 							activeTinted05: e.active ? Object(n.j)(.05, e.active) : h.activeTinted05,
@@ -27512,6 +27516,7 @@
 						postTransparent20: Object(n.l)(.2, h.post),
 						postError: Object(n.c)(.1, "#FF0000", h.post),
 						activeAlpha10: h.activeAlpha10,
+						activeAlpha20: h.activeAlpha20,
 						activeAlpha50: h.activeAlpha50,
 						activeLight60: h.activeLight60,
 						activeTinted05: h.activeTinted05,
@@ -44619,4 +44624,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c484648be9774df94f38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bd22687fd0a70951354a.js.map
