@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.e498b13a0d9f613b0b33.js
-// Retrieved at 4/12/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.7f1ed9d599431d4e7c1a.js
+// Retrieved at 4/12/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1167,8 +1167,8 @@
 				G = f.a.wrapped(I.a, "Circle", A.a),
 				V = f.a.h3("Label", A.a),
 				K = f.a.wrapped(S.c, "Subtext", A.a),
-				Q = f.a.wrapped(u.a, "HoverTooltip", A.a),
-				q = f.a.div("ControlContainer", A.a),
+				q = f.a.wrapped(u.a, "HoverTooltip", A.a),
+				Q = f.a.div("ControlContainer", A.a),
 				J = f.a.div("TextContainer", A.a),
 				z = f.a.div("ActionContainer", A.a),
 				Y = ({
@@ -1228,7 +1228,7 @@
 						last: e.last
 					}, a.a.createElement(J, null, a.a.createElement(P.a, null, a.a.createElement("label", {
 						htmlFor: t
-					}, a.a.createElement(V, null, e.label))), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(q, null, e.tooltip && a.a.createElement(Q, {
+					}, a.a.createElement(V, null, e.label))), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(q, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), a.a.createElement(T.a, {
@@ -1289,7 +1289,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(J, null, a.a.createElement(P.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(q, null, a.a.createElement(R.l, {
+				}, a.a.createElement(J, null, a.a.createElement(P.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, a.a.createElement(R.l, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				xe = e => a.a.createElement(Y, {
@@ -2704,8 +2704,8 @@
 				G = n("./src/reddit/icons/svgs/Eye/index.tsx"),
 				V = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				K = n("./src/reddit/icons/svgs/Lock/index.tsx"),
-				Q = n("./src/reddit/icons/svgs/User/index.tsx"),
-				q = n("./src/reddit/models/Subreddit/index.ts"),
+				q = n("./src/reddit/icons/svgs/User/index.tsx"),
+				Q = n("./src/reddit/models/Subreddit/index.ts"),
 				J = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				z = n("./src/config.ts"),
 				Y = n("./src/reddit/pages/SubredditCreation/Layout/index.m.less"),
@@ -2740,7 +2740,7 @@
 				re = se.a.wrapped(V.a, "Info", ne.a),
 				le = se.a.wrapped(M.a, "RadioOption", ne.a),
 				ce = se.a.wrapped(T.c, "Tooltip", ne.a),
-				de = se.a.wrapped(Q.a, "Public", ne.a),
+				de = se.a.wrapped(q.a, "Public", ne.a),
 				pe = se.a.wrapped(G.a, "Restricted", ne.a),
 				ue = se.a.wrapped(K.a, "Private", ne.a),
 				me = se.a.wrapped(H.a, "Employee", ne.a),
@@ -2882,34 +2882,34 @@
 							n = e.type;
 						if ("name" === t) {
 							if ("NO_TEXT" === n) return {
-								name: s.fbt._("A Community Name is required", null, {
-									hk: "2ocQBg"
+								name: s.fbt._("A community name is required", null, {
+									hk: "QIlYS"
 								})
 							};
 							if ("BAD_SR_NAME" === n) return {
-								name: s.fbt._("Make sure your Community Name follows all of the formatting rules", null, {
-									hk: "2pGksk"
+								name: s.fbt._("Make sure your community name follows all of the formatting rules", null, {
+									hk: "1yzUHm"
 								})
 							};
 							if ("SUBREDDIT_EXISTS" === n) return {
-								name: s.fbt._("This Community Name is already taken", null, {
-									hk: "1aiGKw"
+								name: s.fbt._("This community name is already taken", null, {
+									hk: "3xeE7r"
 								})
 							};
 							if ("SUBREDDIT_UNAVAILABLE" === n) return {
-								name: s.fbt._("This Community Name is unavailable", null, {
-									hk: "2Dl0j6"
+								name: s.fbt._("This community name is unavailable", null, {
+									hk: "15j6BB"
 								})
 							}
 						} else {
 							if ("public_description" === t) return {
-								publicDescription: s.fbt._("A Community Description is required", null, {
-									hk: "tO1GW"
+								publicDescription: s.fbt._("A community description is required", null, {
+									hk: "32uyXy"
 								})
 							};
 							if ("topics" === t && "TOPICS_MISSING" === n) return {
-								topics: s.fbt._("A Primary Topic is required", null, {
-									hk: "2DJ9vR"
+								topics: s.fbt._("A primary topic is required", null, {
+									hk: "2W8L8A"
 								})
 							}
 						}
@@ -2919,7 +2919,7 @@
 					}, this.state = {
 						name: "",
 						description: "",
-						type: q.e.Public,
+						type: Q.e.Public,
 						over18: !1,
 						waitingForSuccessfulCommunity: !1,
 						restrictCommenting: !1,
@@ -3079,15 +3079,16 @@
 						className: Object(c.a)(ne.a.buttonContainer, {
 							[ne.a.isOverlay]: r
 						})
-					}, r && o.a.createElement(j.l, {
+					}, r && o.a.createElement(j.q, {
 						disabled: n,
 						className: ne.a.createButton,
 						onClick: () => {
 							l(t.state[I.a.CloseLocation]), u(Object(A.a)())
-						}
+						},
+						priority: j.b.Secondary
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(j.i, {
+					})), o.a.createElement(j.q, {
 						disabled: n,
 						className: ne.a.createButton,
 						onClick: this.onCreateCommunityClick
@@ -3118,4 +3119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.e498b13a0d9f613b0b33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.7f1ed9d599431d4e7c1a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.f185d571e8a42f73f454.js
-// Retrieved at 4/12/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ab39a739bb7b2abfa39f.js
+// Retrieved at 4/12/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2975,7 +2975,7 @@
 						Object(f.a)(Object(p.c)(E, e, a)(y)), t(h({
 							subredditName: m
 						})), window.location.href = `${s.a.redditUrl}${r.path}new`, Object(l.b)(l.a.SubredditCreation)
-					} else O.error && Object(f.a)(Object(p.d)(O.error.type)(y)), t(I({
+					} else O.error && Object(f.a)(Object(p.d)(O.error.type, m)(y)), t(I({
 						subredditName: m,
 						error: O.error
 					}))
@@ -5654,13 +5654,14 @@
 					actionInfo: a.actionInfo(e),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				}),
-				d = e => t => ({
+				d = (e, t) => r => ({
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...a.defaults(t),
-					actionInfo: a.actionInfo(t, {
-						reason: e
+					...a.defaults(r),
+					actionInfo: a.actionInfo(r, {
+						reason: e,
+						settingValue: t
 					}),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				})
@@ -21876,4 +21877,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f185d571e8a42f73f454.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ab39a739bb7b2abfa39f.js.map

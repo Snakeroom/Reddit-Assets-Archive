@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.fbd426d964b99150f7b8.js
-// Retrieved at 4/12/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f7f50508a3ebba9d5750.js
+// Retrieved at 4/12/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -24281,34 +24281,34 @@
 							s = e.type;
 						if ("name" === t) {
 							if ("NO_TEXT" === s) return {
-								name: n.fbt._("A Community Name is required", null, {
-									hk: "2ocQBg"
+								name: n.fbt._("A community name is required", null, {
+									hk: "QIlYS"
 								})
 							};
 							if ("BAD_SR_NAME" === s) return {
-								name: n.fbt._("Make sure your Community Name follows all of the formatting rules", null, {
-									hk: "2pGksk"
+								name: n.fbt._("Make sure your community name follows all of the formatting rules", null, {
+									hk: "1yzUHm"
 								})
 							};
 							if ("SUBREDDIT_EXISTS" === s) return {
-								name: n.fbt._("This Community Name is already taken", null, {
-									hk: "1aiGKw"
+								name: n.fbt._("This community name is already taken", null, {
+									hk: "3xeE7r"
 								})
 							};
 							if ("SUBREDDIT_UNAVAILABLE" === s) return {
-								name: n.fbt._("This Community Name is unavailable", null, {
-									hk: "2Dl0j6"
+								name: n.fbt._("This community name is unavailable", null, {
+									hk: "15j6BB"
 								})
 							}
 						} else {
 							if ("public_description" === t) return {
-								publicDescription: n.fbt._("A Community Description is required", null, {
-									hk: "tO1GW"
+								publicDescription: n.fbt._("A community description is required", null, {
+									hk: "32uyXy"
 								})
 							};
 							if ("topics" === t && "TOPICS_MISSING" === s) return {
-								topics: n.fbt._("A Primary Topic is required", null, {
-									hk: "2DJ9vR"
+								topics: n.fbt._("A primary topic is required", null, {
+									hk: "2W8L8A"
 								})
 							}
 						}
@@ -24478,15 +24478,16 @@
 						className: Object(l.a)(se.a.buttonContainer, {
 							[se.a.isOverlay]: i
 						})
-					}, i && o.a.createElement(N.l, {
+					}, i && o.a.createElement(N.q, {
 						disabled: s,
 						className: se.a.createButton,
 						onClick: () => {
 							d(t.state[j.a.CloseLocation]), m(Object(U.a)())
-						}
+						},
+						priority: N.b.Secondary
 					}, n.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(N.i, {
+					})), o.a.createElement(N.q, {
 						disabled: s,
 						className: se.a.createButton,
 						onClick: this.onCreateCommunityClick
@@ -24745,4 +24746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fbd426d964b99150f7b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f7f50508a3ebba9d5750.js.map

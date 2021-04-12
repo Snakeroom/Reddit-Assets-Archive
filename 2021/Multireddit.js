@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.e15a4508c53937032bbe.js
-// Retrieved at 4/12/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.ef28a9582003b96e173a.js
+// Retrieved at 4/12/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6302,13 +6302,14 @@
 					actionInfo: r.actionInfo(e),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				}),
-				c = e => t => ({
+				c = (e, t) => n => ({
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...r.defaults(t),
-					actionInfo: r.actionInfo(t, {
-						reason: e
+					...r.defaults(n),
+					actionInfo: r.actionInfo(n, {
+						reason: e,
+						settingValue: t
 					}),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				})
@@ -7588,4 +7589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e15a4508c53937032bbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ef28a9582003b96e173a.js.map

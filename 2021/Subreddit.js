@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b51c258bb6f4792e06e2.js
-// Retrieved at 4/12/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c236848c4523872742c7.js
+// Retrieved at 4/12/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -6203,13 +6203,14 @@
 					actionInfo: r.actionInfo(e),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				}),
-				c = e => t => ({
+				c = (e, t) => n => ({
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...r.defaults(t),
-					actionInfo: r.actionInfo(t, {
-						reason: e
+					...r.defaults(n),
+					actionInfo: r.actionInfo(n, {
+						reason: e,
+						settingValue: t
 					}),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				})
@@ -8564,4 +8565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b51c258bb6f4792e06e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c236848c4523872742c7.js.map
