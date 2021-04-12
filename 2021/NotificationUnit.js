@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.ace8e4b2fbee0ed0bbc0.js
-// Retrieved at 4/12/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.9dca3869c85f2aaade45.js
+// Retrieved at 4/12/2021, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/index.tsx": function(e, t, a) {
@@ -400,114 +400,115 @@
 			t.default = e => {
 				const t = Object(ue.a)(),
 					a = Object(V.d)(),
-					s = Object(V.e)(be.V),
+					r = Object(V.e)(be.V),
+					[o, c] = Object(s.useState)(!1),
 					{
-						activeOverflowMenuId: r,
-						isInboxPostEmbedEnabled: o,
-						isInTooltip: c,
-						notification: d,
-						setActiveOverflowMenuId: m,
-						onItemClick: p
+						activeOverflowMenuId: d,
+						isInboxPostEmbedEnabled: m,
+						isInTooltip: p,
+						notification: u,
+						setActiveOverflowMenuId: E,
+						onItemClick: v
 					} = e;
-				if (!d) return null;
+				if (!u) return null;
 				const {
-					avatar: u,
-					body: E,
-					context: v,
-					deeplinkUrl: b,
-					isHideNotifEligible: g,
-					isToggleMessageTypeEligible: f,
-					isToggleNotificationUpdateEligible: w,
-					isToggleUpdateFromSubredditEligible: x,
-					icon: T,
-					id: O,
-					readAt: M,
-					sentAt: I,
-					title: A
-				} = d, _ = v && v.messageType, C = v && v.comment && v.comment.parent && v.comment.parent.id, y = v && v.post && v.post.id, H = v && v.post, S = v && v.subreddit && v.subreddit.id, U = null == v ? void 0 : v.isBodyHidden, k = null == v ? void 0 : v.isPostHidden, L = !M, D = `notif-${c?"tooltip":""}-menu-${O}`, j = D === r, P = _ === h.a.CommentReply ? C : y, B = Object(l.a)(e.className, N.a.notificationItem, {
-					[N.a.unread]: L,
-					[N.a.isNightMode]: s
-				}), z = {
-					id: O,
-					isClicked: !!M,
+					avatar: b,
+					body: g,
+					context: f,
+					deeplinkUrl: w,
+					isHideNotifEligible: x,
+					isToggleMessageTypeEligible: T,
+					isToggleNotificationUpdateEligible: O,
+					isToggleUpdateFromSubredditEligible: M,
+					icon: I,
+					id: A,
+					readAt: _,
+					sentAt: C,
+					title: y
+				} = u, H = f && f.messageType, S = f && f.comment && f.comment.parent && f.comment.parent.id, U = f && f.post && f.post.id, k = f && f.post, L = f && f.subreddit && f.subreddit.id, D = null == f ? void 0 : f.isBodyHidden, j = null == f ? void 0 : f.isPostHidden, P = !_, B = `notif-${p?"tooltip":""}-menu-${A}`, z = B === d, F = H === h.a.CommentReply ? S : U, Z = Object(l.a)(e.className, N.a.notificationItem, {
+					[N.a.unread]: P,
+					[N.a.isNightMode]: r
+				}), W = {
+					id: A,
+					isClicked: !!_,
 					isViewed: !0,
-					type: _
-				}, F = e => t(Object(pe.h)({
-					...z,
+					type: H
+				}, K = e => t(Object(pe.h)({
+					...W,
 					actionInfoType: e
-				})), Z = e => {
+				})), G = e => {
 					t(Object(pe.q)({
-						...z,
+						...W,
 						actionInfoType: e
 					}))
-				}, W = () => {
-					e.markNotificationAsRead(O, _)
+				}, $ = () => {
+					e.markNotificationAsRead(A, H)
 				};
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("li", {
-					className: B
+					className: Z
 				}, i.a.createElement(me.a, {
 					className: N.a.link,
 					onClick: e => {
-						(null == H ? void 0 : H.removedByCategory) ? (e.preventDefault(), a(Object(Ee.f)({
+						(null == k ? void 0 : k.removedByCategory) ? (e.preventDefault(), a(Object(Ee.f)({
 							kind: ve.b.Error,
 							text: "Sorry, this content is no longer available.",
 							duration: Ee.a
-						}))) : c && p && p(), t(Object(pe.f)(z))
+						}))) : p && v && v(), t(Object(pe.f)(W))
 					},
-					onMouseDown: W,
-					onKeyDown: W,
-					to: b
+					onMouseDown: $,
+					onKeyDown: $,
+					to: w
 				}, i.a.createElement(R, {
-					avatar: u,
-					iconType: T,
-					messageType: _
+					avatar: b,
+					iconType: I,
+					messageType: H
 				}), i.a.createElement("span", {
 					className: N.a.contentContainer
 				}, i.a.createElement(de, {
-					dropdownId: D,
-					isHideNotifEligible: g,
-					isInTooltip: c,
-					isOverflowMenuOpen: j,
-					isToggleMessageTypeEligible: f,
-					isToggleNotificationUpdateEligible: w,
-					isToggleUpdateFromSubredditEligible: x,
-					sendInboxClickOverflow: () => t(Object(pe.g)(z)),
-					sentAt: I,
-					setActiveOverflowMenuId: m,
-					title: A
-				}), o && H && !k && i.a.createElement(ie, {
-					isUnread: L,
-					post: H
-				}), o && !U && i.a.createElement("span", {
+					dropdownId: B,
+					isHideNotifEligible: x,
+					isInTooltip: p,
+					isOverflowMenuOpen: z,
+					isToggleMessageTypeEligible: T,
+					isToggleNotificationUpdateEligible: O,
+					isToggleUpdateFromSubredditEligible: M,
+					sendInboxClickOverflow: () => t(Object(pe.g)(W)),
+					sentAt: C,
+					setActiveOverflowMenuId: E,
+					title: y
+				}), m && k && !j && i.a.createElement(ie, {
+					isUnread: P,
+					post: k
+				}), m && !D && i.a.createElement("span", {
 					className: N.a.body
-				}, E), !o && i.a.createElement("span", {
+				}, g), !m && i.a.createElement("span", {
 					className: N.a.body
-				}, E)))), i.a.createElement(Y, {
+				}, g)))), i.a.createElement(Y, {
 					disableMessageTypeNotifications: () => {
 						const t = pe.b.DisableNotificationType;
-						e.isInTooltip && e.setActiveOverflowMenuId(""), e.disableMessageTypeNotifications(_, () => Z(t)), F(t)
+						e.isInTooltip && e.setActiveOverflowMenuId(""), e.disableMessageTypeNotifications(H, () => G(t)), K(t)
 					},
 					disableNotificationUpdates: () => {
-						e.isInTooltip && e.setActiveOverflowMenuId(""), e.disableNotificationUpdates(P), F(pe.b.HideSubreddit)
+						e.isInTooltip && e.setActiveOverflowMenuId(""), e.disableNotificationUpdates(F), K(pe.b.HideSubreddit)
 					},
 					hideNotification: () => {
-						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideNotification(O), F(pe.b.HideUpdates)
+						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideNotification(A), K(pe.b.HideUpdates)
 					},
 					hideSubredditNotifications: () => {
 						const t = pe.b.HideSubreddit;
-						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideSubredditNotifications(S, () => Z(t)), F(t)
+						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideSubredditNotifications(L, () => G(t)), K(t)
 					},
-					isInTooltip: c,
-					isHideNotifEligible: g,
-					isOpen: j,
-					isToggleMessageTypeEligible: !(!f || !_),
-					isToggleNotificationUpdateEligible: w,
-					isToggleUpdateFromSubredditEligible: !(!x || !S),
-					sendInboxViewOverflow: () => t(Object(pe.o)(z)),
-					tooltipId: D
+					isInTooltip: p,
+					isHideNotifEligible: x,
+					isOpen: z,
+					isToggleMessageTypeEligible: !(!T || !H),
+					isToggleNotificationUpdateEligible: O,
+					isToggleUpdateFromSubredditEligible: !(!M || !L),
+					sendInboxViewOverflow: () => t(Object(pe.o)(W)),
+					tooltipId: B
 				}), i.a.createElement(n.a, {
 					onChange: e => {
-						e.isIntersecting && t(Object(pe.n)(z))
+						e.isIntersecting && !o && (t(Object(pe.n)(W)), c(!0))
 					},
 					rootMargin: "0px 0px 0px 0px",
 					threshold: .5
@@ -694,4 +695,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.ace8e4b2fbee0ed0bbc0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.9dca3869c85f2aaade45.js.map
