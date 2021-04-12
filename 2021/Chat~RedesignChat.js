@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4d1539f04447bae231b2.js
-// Retrieved at 4/1/2021, 7:20:19 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9cee0e219cf50186e9b4.js
+// Retrieved at 4/12/2021, 5:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -5172,7 +5172,7 @@
 								const e = Po()(this.props.selectedContacts);
 								if (e && e.name) {
 									const t = this.bubbleRefs[e.name];
-									t && t.current && t.current.focus()
+									t && t.focus()
 								}
 							}
 					}
@@ -5195,7 +5195,9 @@
 						key: `selected-contact-${t}`,
 						tabIndex: 0,
 						onKeyDown: Object(Ea.a)(this.onBubbleKey(e)),
-						innerRef: this.bubbleRefs[e.name]
+						innerRef: t => {
+							t && (this.bubbleRefs[e.name] = t)
+						}
 					}, e.name)), c.a.createElement(Go, {
 						key: "search-bar",
 						type: "text",
@@ -14504,4 +14506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4d1539f04447bae231b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9cee0e219cf50186e9b4.js.map
