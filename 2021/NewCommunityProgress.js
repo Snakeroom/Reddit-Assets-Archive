@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.be2f0b9f4f588a2886e4.js
-// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.e99f60145e5a8d40c9b1.js
+// Retrieved at 4/12/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/graphql/operations/CompleteCommunityProgressCard.json": function(C) {
@@ -16,19 +16,28 @@
 		},
 		"./src/lib/colors/constants.ts": function(C, e, t) {
 			"use strict";
-			t.d(e, "a", (function() {
+			t.d(e, "d", (function() {
 				return s
 			})), t.d(e, "b", (function() {
 				return a
-			})), t.d(e, "c", (function() {
+			})), t.d(e, "a", (function() {
 				return n
+			})), t.d(e, "c", (function() {
+				return l
+			})), t.d(e, "e", (function() {
+				return c
+			})), t.d(e, "f", (function() {
+				return i
 			}));
 			const s = "#FFF",
-				a = {
+				a = "#FF4500",
+				n = "#0079D3",
+				l = "#46D160",
+				c = {
 					black: "#000",
 					white: s,
-					orangered: "#FF4500",
-					alienblue: "#0079D3",
+					orangered: a,
+					alienblue: n,
 					tone1: "#1A1A1B",
 					tone2: "#6A6D6F",
 					tone3: "#878A8C",
@@ -38,21 +47,21 @@
 					tone7: "#FFFFFF",
 					primary: "#24A0ED",
 					secondary: "#006CBF",
-					upvote: "#FF4500",
+					upvote: a,
 					downvote: "#7193FF",
-					positive: "#46D160",
+					positive: l,
 					negative: "#EA0027",
 					caution: "#FFB000",
-					admin: "#FF4500",
+					admin: a,
 					moderator: "#46D160",
 					self: "#0DD3BB",
 					coins: "#DDBD37",
-					live: "#FF4500",
+					live: a,
 					nsfw: "#FF585B",
 					spoiler: "#1A1A1B"
 				},
-				n = {
-					...a,
+				i = {
+					...c,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -1466,7 +1475,7 @@
 					const b = Object(n.d)(),
 						v = Object(j.a)(),
 						I = null !== (x = EC[s]) && void 0 !== x ? x : Q.c,
-						w = L ? G.c : G.b,
+						w = L ? G.f : G.e,
 						D = null !== (u = w[o]) && void 0 !== u ? u : w.downvote;
 
 					function P(e) {
@@ -2822,4 +2831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.be2f0b9f4f588a2886e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.e99f60145e5a8d40c9b1.js.map

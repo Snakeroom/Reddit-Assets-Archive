@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.30f69e5779e6996d44fa.js
-// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.d809c2f5329ad10e4475.js
+// Retrieved at 4/12/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3972,18 +3972,6 @@
 				})
 			}
 		},
-		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return r
-			}));
-			var n = s("./src/reddit/models/WhitelistStatus/index.ts");
-			const r = (e, t) => {
-				const s = e.some(e => e.isNSFW),
-					r = t.some(e => e.wls === n.b.NO_ADS);
-				return !s && !r
-			}
-		},
 		"./src/reddit/helpers/createBannerProperties/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -5223,4 +5211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.30f69e5779e6996d44fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d809c2f5329ad10e4475.js.map

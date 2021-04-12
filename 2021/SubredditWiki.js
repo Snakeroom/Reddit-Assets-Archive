@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.2b4a1b50229e4d30332a.js
-// Retrieved at 4/6/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.38e8f2ac548f5303a8a2.js
+// Retrieved at 4/12/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -4542,6 +4542,18 @@
 				variables: t
 			})
 		},
+		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return n
+			}));
+			var s = i("./src/reddit/models/WhitelistStatus/index.ts");
+			const n = (e, t) => {
+				const i = e.some(e => e.isNSFW),
+					n = t.some(e => e.wls === s.b.NO_ADS);
+				return !i && !n
+			}
+		},
 		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, i) {
 			e.exports = {
 				loadingBackground: "fzTkuBRFT8iIn1XnJX_Yn",
@@ -5145,4 +5157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.2b4a1b50229e4d30332a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.38e8f2ac548f5303a8a2.js.map

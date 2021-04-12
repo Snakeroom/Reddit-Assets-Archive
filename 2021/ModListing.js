@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.7fcd7402feb6a4503df6.js
-// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.fe03b9a30c37bdb244f5.js
+// Retrieved at 4/12/2021, 9:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -502,9 +502,9 @@
 			})), n.d(t, "hideSubredditFailed", (function() {
 				return q
 			})), n.d(t, "unhideSubredditSuccess", (function() {
-				return W
-			})), n.d(t, "unhideSubredditPending", (function() {
 				return G
+			})), n.d(t, "unhideSubredditPending", (function() {
+				return W
 			})), n.d(t, "unhideSubredditFailed", (function() {
 				return Q
 			})), n.d(t, "toggleHiddenSubreddit", (function() {
@@ -659,15 +659,15 @@
 			const K = Object(a.a)(w.c),
 				V = Object(a.a)(w.b),
 				q = Object(a.a)(w.a),
-				W = Object(a.a)(w.l),
-				G = Object(a.a)(w.k),
+				G = Object(a.a)(w.l),
+				W = Object(a.a)(w.k),
 				Q = Object(a.a)(w.j),
 				J = (e, t) => async (n, r, {
 					apiContext: s
 				}) => {
 					const o = r(),
 						i = Object(T.i)(o),
-						[a, c, d, u] = t ? [V, K, q, x] : [G, W, Q, E];
+						[a, c, d, u] = t ? [V, K, q, x] : [W, G, Q, E];
 					if (!i || !i.displayText) return;
 					const {
 						currentPage: l
@@ -1273,18 +1273,6 @@
 				mIsVoteable: "_3edNsMs0PNfyQYofMNVhsG"
 			}
 		},
-		"./src/reddit/helpers/brandSafety/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			}));
-			var r = n("./src/reddit/models/WhitelistStatus/index.ts");
-			const s = (e, t) => {
-				const n = e.some(e => e.isNSFW),
-					s = t.some(e => e.wls === r.b.NO_ADS);
-				return !n && !s
-			}
-		},
 		"./src/reddit/helpers/isListingFocused/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1394,7 +1382,7 @@
 			})), n.d(t, "v", (function() {
 				return q
 			})), n.d(t, "g", (function() {
-				return W
+				return G
 			}));
 			var r = n("./src/reddit/constants/tracking.ts"),
 				s = n("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -1680,7 +1668,7 @@
 						action: Object(m.getToggleAction)(t)
 					})
 				},
-				W = (e, t, n) => {
+				G = (e, t, n) => {
 					Object(l.a)({
 						...f(e),
 						...B(e, t),
@@ -1728,7 +1716,7 @@
 			})), n.d(t, "w", (function() {
 				return q
 			})), n.d(t, "e", (function() {
-				return W
+				return G
 			})), n.d(t, "d", (function() {
 				return Q
 			})), n.d(t, "u", (function() {
@@ -1873,7 +1861,7 @@
 							break
 						}
 						case o.Eb.SUBREDDIT_WIKI:
-							Object(E.a)(G(n, r)(t));
+							Object(E.a)(W(n, r)(t));
 							break;
 						case o.Eb.COINS:
 							Object(E.a)(D(n, r)(t)), Object(E.a)(B()(t));
@@ -1897,7 +1885,7 @@
 							b && R(t, u ? u.subredditName : null, u ? u.profileName : null);
 							break;
 						case o.Eb.SUBREDDIT_LEADERBOARD:
-							b && Object(E.a)(W()(t));
+							b && Object(E.a)(G()(t));
 							break;
 						case o.Eb.SEARCH_RESULTS:
 							if (b) {
@@ -2203,13 +2191,13 @@
 					noun: "screen",
 					...x.defaults(e)
 				}),
-				W = () => e => ({
+				G = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
 					...x.defaults(e)
 				}),
-				G = (e, t) => n => ({
+				W = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3163,9 +3151,9 @@
 			var K = n("./src/reddit/routes/modListing/index.ts");
 			const V = e => e.modListingPage.filteredSubreddits.api.pending;
 			var q = n("./src/reddit/constants/keycodes.ts"),
-				W = n("./src/reddit/layout/row/Inline/index.tsx"),
-				G = n("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
-				Q = n.n(G);
+				G = n("./src/reddit/layout/row/Inline/index.tsx"),
+				W = n("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
+				Q = n.n(W);
 			const J = Object(c.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
 				isApiPending: V
@@ -3192,7 +3180,7 @@
 					const {
 						props: e
 					} = this;
-					return i.a.createElement(i.a.Fragment, null, i.a.createElement(W.a, null, i.a.createElement("input", {
+					return i.a.createElement(i.a.Fragment, null, i.a.createElement(G.a, null, i.a.createElement("input", {
 						className: Q.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
@@ -3417,4 +3405,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.7fcd7402feb6a4503df6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.fe03b9a30c37bdb244f5.js.map
