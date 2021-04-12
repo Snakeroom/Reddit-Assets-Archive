@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bfa9cc180962e5a01b02.js
-// Retrieved at 4/12/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.66dc400a04d7054c0dba.js
+// Retrieved at 4/12/2021, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7566,7 +7566,7 @@
 						style: {
 							color: o
 						}
-					}, e && !Object(x.yd)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
+					}, e && !Object(x.wd)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "2s2Xil"
@@ -7596,7 +7596,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.yd)(r), u = i && i.id;
+					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.wd)(r), u = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -10657,7 +10657,7 @@
 					isAvatarsInCommentsEnabled: oe.a,
 					isChatPost: $.d,
 					isCommentsListTruncated: se.a,
-					isInVideoRemoveScrollingThrottleExperiment: ce.c,
+					isInVideoRemoveScrollingThrottleExperiment: ce.b,
 					isLoggedIn: ge.J,
 					isNightmodeOn: ge.V,
 					isRealtimeCommentsExperimentEnabled: pe.a,
@@ -11435,7 +11435,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.M
 				});
-				return !!t && !Object(n.yd)(t)
+				return !!t && !Object(n.wd)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -11450,7 +11450,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.ob
 				});
-				return !(!t || Object(n.yd)(t))
+				return !(!t || Object(n.wd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -11661,4 +11661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bfa9cc180962e5a01b02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.66dc400a04d7054c0dba.js.map
