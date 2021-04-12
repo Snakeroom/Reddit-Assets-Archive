@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.c3794f5b50c7298fd72a.js
-// Retrieved at 4/12/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.cc4e65c865bfa23b13ad.js
+// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -510,9 +510,9 @@
 				F = () => void 0,
 				T = Object(a.c)({
 					crowdControlLevelEnabled: b.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => j.xc.Enabled === Object(N.c)(e, {
+					postLevelCrowdControlEnabled: e => j.zc.Enabled === Object(N.c)(e, {
 						experimentEligibilitySelector: D.K,
-						experimentName: j.nc
+						experimentName: j.pc
 					}),
 					shouldApplyPostLevelCrowdControl: (e, {
 						post: t
@@ -655,7 +655,7 @@
 					}) => Object(v.b)(t)(e),
 					isModToMemberShareEnabled: b.d.modToMemberShare
 				}),
-				H = Object(r.b)(V, (e, {
+				z = Object(r.b)(V, (e, {
 					post: t
 				}) => ({
 					onApprovePost: () => e(Object(d.n)(t.id)),
@@ -680,8 +680,8 @@
 					onSpoilerPost: () => e(Object(d.Q)(t.id)),
 					onStickyPost: () => e(Object(d.T)(t.id))
 				})),
-				z = Object(p.a)(C.a),
-				K = G(H(Object(u.c)(e => {
+				H = Object(p.a)(C.a),
+				K = G(z(Object(u.c)(e => {
 					const {
 						canEditFlair: t,
 						hasModFullPerms: s,
@@ -709,7 +709,7 @@
 						sendEvent: j,
 						tooltipId: I
 					} = e, N = R.distinguishType === i.C.MODERATOR, L = N ? i.C.NONE : i.C.MODERATOR, P = Object(m.b)(R.id, c);
-					return n.a.createElement(z, {
+					return n.a.createElement(H, {
 						className: W.a.dropdown,
 						isOpen: r,
 						tooltipId: I
@@ -1524,4 +1524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.c3794f5b50c7298fd72a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.cc4e65c865bfa23b13ad.js.map

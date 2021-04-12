@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.44da991458d5fe9edb08.js
-// Retrieved at 4/12/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.0eb799a0798dfc8690e2.js
+// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2937,7 +2937,7 @@
 						isActionBarAnimationEnabled: ve,
 						postId: we,
 						postIds: Ce
-					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], Oe = ke ? void 0 : m, Pe = Object(d.a)(oe), Ee = ae && Pe, je = Object(i.a)(oe), Se = Object(c.a)(oe), Ie = Object(A.c)(le), Le = !!le.media && le.media.type === b.o.RTJSON, Ne = ye && Le, Fe = s ? s - M.a : void 0, De = !(C && H || $), Te = (e => e === Q.wc.OnlyTitles)(me) && !Object(se.a)(le), Ae = (e => e === Q.wc.MediumHeight)(me) && !Object(se.a)(le), Be = (e => {
+					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], Oe = ke ? void 0 : m, Pe = Object(d.a)(oe), Ee = ae && Pe, je = Object(i.a)(oe), Se = Object(c.a)(oe), Ie = Object(A.c)(le), Le = !!le.media && le.media.type === b.o.RTJSON, Ne = ye && Le, Fe = s ? s - M.a : void 0, De = !(C && H || $), Te = (e => e === Q.yc.OnlyTitles)(me) && !Object(se.a)(le), Ae = (e => e === Q.yc.MediumHeight)(me) && !Object(se.a)(le), Be = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -2952,7 +2952,7 @@
 							hasBottomCompactPostStyles: o,
 							showPinnnedHeader: n
 						}
-					})(e), Re = !!ee && !Object(Q.sd)(ee), Me = (!y || Re) && !le.isSponsored, ze = Object(k.t)(le, x), {
+					})(e), Re = !!ee && !Object(Q.ud)(ee), Me = (!y || Re) && !le.isSponsored, ze = Object(k.t)(le, x), {
 						source: Ue
 					} = ze, Ve = n.a.createElement(n.a.Fragment, null, n.a.createElement(R.a, {
 						className: Object(O.a)(be.a.container, o, pe.a.largeAndMediumPostStyles, pe.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -5511,7 +5511,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: r.ob
 				});
-				return !(!t || Object(r.sd)(t))
+				return !(!t || Object(r.ud)(t))
 			}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -5724,4 +5724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.44da991458d5fe9edb08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.0eb799a0798dfc8690e2.js.map

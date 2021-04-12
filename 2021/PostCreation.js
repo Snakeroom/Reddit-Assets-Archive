@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2d4aed1ac23c33489643.js
-// Retrieved at 4/12/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.01f0e6377658934b0bbf.js
+// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -13145,7 +13145,7 @@
 								experimentName: r.w,
 								expEventOverride: t
 							});
-							return !!(Object(r.sd)(n) ? void 0 : n)
+							return !!(Object(r.ud)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -23610,14 +23610,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.tc
-					}) === s.Dc.Enabled
+						experimentName: s.vc
+					}) === s.Fc.Enabled
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.sc
-					}) === s.Cc.Enabled
+						experimentName: s.uc
+					}) === s.Ec.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -24331,4 +24331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2d4aed1ac23c33489643.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.01f0e6377658934b0bbf.js.map
